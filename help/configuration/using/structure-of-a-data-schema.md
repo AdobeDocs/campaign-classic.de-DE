@@ -17,7 +17,7 @@ ht-degree: 10%
 
 ![](../../assets/v7-only.svg)
 
-Die Struktur eines Datenschemas wird in Form einer Baumstruktur dargestellt. Um es grafisch in der Adobe Campaign-Clientkonsole anzuzeigen, wählen Sie das Zielschema aus und klicken Sie auf die Unterregisterkarte **[!UICONTROL Struktur]** .
+Die Struktur eines Datenschemas wird in Form einer Baumstruktur dargestellt. Um es grafisch in der Adobe Campaign-Clientkonsole anzuzeigen, wählen Sie das Zielschema aus und klicken Sie auf **[!UICONTROL Struktur]** Unterregisterkarte.
 
 ![](assets/d_ncs_integration_schema_arbo.png)
 

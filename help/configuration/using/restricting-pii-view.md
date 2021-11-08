@@ -58,7 +58,7 @@ Die Verwendung dieses Attributs in Campaign hat folgende Folgen:
 
 ## Empfehlungen {#recommendations}
 
-In jedem Versand werden E-Mail-Adressen in die Tabellen **[!UICONTROL broadLog]** und **[!UICONTROL forecastLog]** kopiert: Daher müssen auch diese Felder geschützt werden.
+Bei jedem Versand werden die E-Mail-Adressen in die **[!UICONTROL broadLog]** und **[!UICONTROL forecastLog]** Tabellen: Daher müssen auch diese Felder geschützt werden.
 
 Nachfolgend finden Sie ein Beispiel für die Erweiterung der Protokolltabelle, um Folgendes zu implementieren:
 

@@ -17,10 +17,10 @@ ht-degree: 78%
 
 ![](../../assets/v7-only.svg)
 
-Verwenden Sie die Option Campaign [Federated Data Access](../../installation/using/about-fda.md) (FDA) , um in externen Datenbanken gespeicherte Informationen zu verarbeiten. Gehen Sie wie folgt vor, um den Zugriff auf Microsoft Azure synapse Analytics zu konfigurieren.
+Verwenden von Campaign [Federated Data Access](../../installation/using/about-fda.md) (FDA), um in externen Datenbanken gespeicherte Informationen zu verarbeiten. Gehen Sie wie folgt vor, um den Zugriff auf Microsoft Azure synapse Analytics zu konfigurieren.
 
-1. Azure synapse unter [CentOS](#azure-centos), [Windows](#azure-windows) oder [Debian](#azure-debian) konfigurieren
-1. Azure synapse [externes Konto](#azure-external) in Campaign konfigurieren
+1. Konfigurieren von Azure synapse on [CentOS](#azure-centos), [Windows](#azure-windows) oder [Debian](#azure-debian)
+1. Azure synapse konfigurieren [externes Konto](#azure-external) in Campaign
 
 ## Azure Synapse unter CentOS {#azure-centos}
 
@@ -87,7 +87,7 @@ Gehen Sie wie folgt vor, um Azure synapse unter CentOS zu konfigurieren:
    /opt/mssql-tools/bin/sqlcmd -S yourServer -U yourUserName -P yourPassword -q "your query" # for example -q "select 1"
    ```
 
-1. In Campaign können Sie dann Ihr externes [!DNL Azure Synapse]-Konto konfigurieren. Weiterführende Informationen zur Konfiguration Ihres externen Kontos finden Sie in [diesem Abschnitt](#azure-external).
+1. In Campaign können Sie dann Ihre [!DNL Azure Synapse] externes Konto. Weitere Informationen zur Konfiguration Ihres externen Kontos finden Sie unter [diesem Abschnitt](#azure-external).
 
 1. Da Azure Synapse Analytics über den TCP-Port 1433 kommuniziert, müssen Sie diesen Port in Ihrer Firewall öffnen. Verwenden Sie den folgenden Befehl:
 
@@ -114,7 +114,7 @@ Gehen Sie wie folgt vor, um Azure synapse unter CentOS zu konfigurieren:
 
 So konfigurieren Sie Azure Synapse unter Windows:
 
-1. Installieren Sie zunächst den Microsoft ODBC-Treiber. Sie finden ihn auf [dieser Seite](https://www.microsoft.com/en-us/download/details.aspx?id=50420).
+1. Installieren Sie zunächst den Microsoft ODBC-Treiber. Sie finden sie unter [diese Seite](https://www.microsoft.com/en-us/download/details.aspx?id=50420).
 
 1. Wählen Sie die folgenden zu installierenden Dateien aus:
 
@@ -124,7 +124,7 @@ So konfigurieren Sie Azure Synapse unter Windows:
 
 1. Sobald der ODBC-Treiber installiert ist, können Sie ihn bei Bedarf testen. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](https://docs.microsoft.com/en-us/sql/connect/odbc/windows/system-requirements-installation-and-driver-files?view=sql-server-ver15#installing-microsoft-odbc-driver-for-sql-server).
 
-1. In Campaign Classic können Sie dann Ihr externes [!DNL Azure Synapse]-Konto konfigurieren. Weiterführende Informationen zur Konfiguration Ihres externen Kontos finden Sie in [diesem Abschnitt](#azure-external).
+1. In Campaign Classic können Sie dann Ihr externes [!DNL Azure Synapse]-Konto konfigurieren. Weitere Informationen zur Konfiguration Ihres externen Kontos finden Sie unter [diesem Abschnitt](#azure-external).
 
 1. Da Azure Synapse Analytics über den TCP-Port 1433 kommuniziert, müssen Sie diesen Port in der Windows Defender Firewall öffnen. Weitere Informationen hierzu finden Sie in der [Windows-Dokumentation](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-outbound-program-or-service-rule).
 
@@ -179,7 +179,7 @@ So konfigurieren Sie Azure Synapse unter Debian:
    /opt/mssql-tools/bin/sqlcmd -S yourServer -U yourUserName -P yourPassword -q "your query" # for example -q "select 1"
    ```
 
-1. In Campaign Classic können Sie nun Ihr externes [!DNL Azure Synapse]-Konto konfigurieren. Weiterführende Informationen zur Konfiguration Ihres externen Kontos finden Sie in [diesem Abschnitt](#azure-external).
+1. In Campaign Classic können Sie nun Ihr externes [!DNL Azure Synapse]-Konto konfigurieren. Weitere Informationen zur Konfiguration Ihres externen Kontos finden Sie unter [diesem Abschnitt](#azure-external).
 
 1. Um &quot;iptables&quot; unter Debian zu konfigurieren und die Verbindung mit Azure Synapse Analytics sicherzustellen, aktivieren Sie mit dem folgenden Befehl den ausgehenden TCP-Port 1433 für Ihren Hostname:
 
@@ -196,9 +196,9 @@ So konfigurieren Sie Azure Synapse unter Debian:
 
 Über das externe [!DNL Azure Synapse]-Konto können Sie Ihre Campaign-Instanz mit Ihrer externen Azure Synapse-Datenbank verbinden.
 
-Gehen Sie wie folgt vor, um Ihr externes [!DNL Azure Synapse]-Konto zu erstellen:
+So erstellen Sie Ihre [!DNL Azure Synapse] Gehen Sie wie folgt vor:
 
-1. Klicken Sie in Campaign **[!UICONTROL Explorer]** auf **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Plattform]** &#39;>&#39; **[!UICONTROL Externe Konten]**.
+1. Von Campaign **[!UICONTROL Explorer]** klicken **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Plattform]** &#39;>&#39; **[!UICONTROL Externe Konten]**.
 
 1. Wählen Sie **[!UICONTROL Neu]** aus.
 

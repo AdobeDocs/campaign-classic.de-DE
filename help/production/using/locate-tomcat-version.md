@@ -17,13 +17,13 @@ ht-degree: 0%
 
 ![](../../assets/v7-only.svg)
 
-Adobe Campaign verwendet ein **eingebettetes Webservlet namens Apache Tomcat**, um HTTP/HTTPS-Anforderungen zwischen der Anwendung und einer beliebigen externen Schnittstelle zu verarbeiten (einschließlich Client-Konsole, getrackte URL-Links, SOAP-Aufrufe und andere). Oft liegt ein externer Webserver (normalerweise IIS oder Apache) vor diesem für alle externen Adobe Campaign-Instanzen.
+Adobe Campaign verwendet eine **eingebettetes Webservlet namens Apache Tomcat** zur Verarbeitung von HTTP/HTTPS-Anforderungen zwischen der Anwendung und einer beliebigen externen Schnittstelle (einschließlich Client-Konsole, getrackte URL-Links, SOAP-Aufrufe und andere). Oft liegt ein externer Webserver (normalerweise IIS oder Apache) vor diesem für alle externen Adobe Campaign-Instanzen.
 
-Gehen Sie wie folgt vor, um die genaue Version von Tomcat zu ermitteln, die in einer **On-Premise-Campaign Classic-Instanz** verwendet wird, um Probleme zu beheben.
+Gehen Sie wie folgt vor, um die genaue Version von Tomcat zu ermitteln, die in einer **On-Premise-Instanz des Campaign Classic** um die Fehlerbehebung zu unterstützen.
 
 ## Tomcat wird in Adobe Campaign verwendet
 
-Tomcat läuft auf Java und erfordert die Installation von JDK. Weitere Informationen finden Sie unter Java Development Kit (JDK) im Abschnitt [Campaign Compatibility Matrix](../../rn/using/compatibility-matrix.md) .
+Tomcat läuft auf Java und erfordert die Installation von JDK. Weitere Informationen finden Sie unter Java Development Kit (JDK) im [Campaign-Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md) Abschnitt.
 
 Der in Adobe Campaign verwendete Tomcat ist eine angepasste eingebettete Version, die nicht alle Funktionen der vollständigen allgemein verfügbaren Version von Tomcat nutzt und möglicherweise nicht alle Verwundbarkeiten der Vollversion leidet. Der Tomcat sollte auch nicht für das externe Internet verfügbar sein, und alle Adobe Campaign-Instanzen, die verfügbar gemacht werden, sollten über einen externen Webserver verfügen (IIS, Apache usw.). vor dem Tomcat, um ihn zu schützen.
 
@@ -37,11 +37,11 @@ Gehen Sie wie folgt vor, um die Version des eingebetteten Tomcat in einer Instan
 >
 >Sie müssen Zugriff auf die Dateien auf dem Adobe Campaign-Server haben, den Sie überprüfen müssen. Das unten beschriebene Verfahren gilt nur für **On-Premise-Hosting-Modelle**.
 
-1. Navigieren Sie zum Unterordner *\tomcat-7\lib* im Adobe Campaign-Installationsordner (z. B. *C:\Program Files\ [Installation_folder]* unter Windows oder */usr/local/neolane/nl6* unter Linux).
+1. Navigieren Sie zum *\tomcat-7\lib* Unterordner im Adobe Campaign-Installationsordner (z. B. *C:\Program Files\ [Installation_folder]* unter Windows oder */usr/local/neolane/nl6* in Linux).
 
    Wenn Sie eine ältere Version von Adobe Campaign mit Tomcat v6 ausführen, verwenden Sie *\tomcat-6\lib*.
 
-1. Kopieren Sie die Datei *catalina.jar* in einen externen temporären Ordner (z. B. Ihren Desktop) und benennen Sie die Erweiterung von .jar in .zip um.
+1. Datei kopieren *catalina.jar* in einen externen temporären Ordner (z. B. Ihren Desktop) und benennen Sie die Erweiterung von .jar in .zip um.
 
 1. Entpacken Sie die kopierte Datei. Dies führt zu vielen Unterordnern und Dateien.
 
@@ -49,13 +49,13 @@ Gehen Sie wie folgt vor, um die Version des eingebetteten Tomcat in einer Instan
 
 1. Löschen Sie nach Abschluss die von Ihnen erstellten temporären Dateien, wenn sie sich auf einem Servercomputer befinden.
 
-Beispielsweise enthält die Datei *ServerInfo.properties* für Adobe Campaign die folgenden Informationen, die Tomcat v8.5.X angeben:
+Beispiel: *ServerInfo.properties* -Datei für Adobe Campaign enthält die folgenden Informationen, die Tomcat v8.5.X angeben:
 
 *server.info=Apache Tomcat/8.5.X*
 
 *server.number=8.5.X.Y*
 
-*server.built=MM DD YYY :MM:HHSS*
+*server.built=MM DD YYY HH:MM:SS*
 
 Sobald Sie die exakte Version von Tomcat ermitteln können, die in einer bestimmten Instanz verwendet wird, kann es Ihnen bei der Fehlerbehebung von Tomcat-bezogenen Problemen helfen.
 

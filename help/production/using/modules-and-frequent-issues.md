@@ -40,12 +40,12 @@ Im Folgenden finden Sie eine Liste der Module, die von häufigen Problemen betro
   </tr> 
   <tr> 
    <td> inMail </td> 
-   <td> Lesen des Bounce Message Box<br /> </td> 
-   <td> Überprüfen Sie dieses Modul, wenn keine Bounce Messages mehr weitergeleitet werden.<br /> </td> 
+   <td> Bounce Message Box lesen<br /> </td> 
+   <td> Überprüfen Sie dieses Modul, wenn Bounce Messages nicht mehr weitergeleitet werden.<br /> </td> 
   </tr> 
   <tr> 
    <td> mta </td> 
-   <td> Sendungen per E-Mail<br /> </td> 
+   <td> E-Mails versenden<br /> </td> 
    <td> Prüfen Sie dieses Modul, wenn keine E-Mails mehr gesendet werden.<br /> </td> 
   </tr> 
   <tr> 
@@ -55,17 +55,17 @@ Im Folgenden finden Sie eine Liste der Module, die von häufigen Problemen betro
   </tr> 
   <tr> 
    <td> syslogd </td> 
-   <td> Protokollschreiben<br /> </td> 
-   <td> Wenn einige Protokolle in den Protokolldateien fehlen, überprüfen Sie, ob das Modul Port 666 verwendet. Siehe <a href="../../production/using/general-architecture.md#list-of-open-ports" target="_blank">Liste der geöffneten Ports</a>.<br /> </td> 
+   <td> Schreiben von Protokollen<br /> </td> 
+   <td> Wenn einige Protokolle in den Protokolldateien fehlen, überprüfen Sie, ob das Modul Port 666 verwendet. Siehe <a href="../../production/using/general-architecture.md#list-of-open-ports" target="_blank">Liste offener Ports</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> tracking </td> 
-   <td> Konsolidieren und Abrufen von Trackinglogs<br /> </td> 
+   <td> Trackinglogs konsolidieren und abrufen<br /> </td> 
    <td> Überprüfen Sie dieses Modul, ob Trackinglogs nicht mehr weitergeleitet werden.<br /> </td> 
   </tr> 
   <tr> 
    <td> trackinglogd </td> 
-   <td> Tracking-Protokollschreibungs- und Bereinigungs-Server<br /> </td> 
+   <td> Tracking von Protokollschreibungs- und Bereinigungs-Server<br /> </td> 
    <td> Überprüfen Sie dieses Modul, ob Trackinglogs nicht mehr weitergeleitet werden und es keine Protokolle in den Dateien auf dem Server gibt. Siehe <a href="../../production/using/tracking-logs-issues.md" target="_blank">Probleme mit Trackinglogs</a>.<br /> </td> 
   </tr> 
   <tr> 
@@ -76,12 +76,12 @@ Im Folgenden finden Sie eine Liste der Module, die von häufigen Problemen betro
   <tr> 
    <td> Web </td> 
    <td> Anwendungsserver (HTTP und SOAP)<br /> </td> 
-   <td> Überprüfen Sie dieses Modul, ob die Konsolen- und Webverbindungen nicht funktionieren und Trigger einen <strong>xtk:session</strong> -Typfehler<br /> </td> 
+   <td> Überprüfen Sie dieses Modul, ob die Konsolen- und Webverbindungen nicht funktionieren und Trigger und <strong>xtk:session</strong> Typfehler<br /> </td> 
   </tr> 
   <tr> 
    <td> wfserver </td> 
    <td> Steuert die Ausführung der Workflow-Instanz.<br /> </td> 
-   <td> Wenn Probleme auftreten, starten Sie dieses Modul neu. Wenden Sie bei Bedarf das Verfahren an, um die Genauigkeit der Protokolle zu erhöhen, die im Abschnitt <a href="../../production/using/log-precision.md" target="_blank">Protokollgenauigkeit</a> beschrieben werden.<br /> </td> 
+   <td> Wenn Probleme auftreten, starten Sie dieses Modul neu. Wenden Sie bei Bedarf das Verfahren an, um die Genauigkeit der Protokolle zu erhöhen, die im Abschnitt <a href="../../production/using/log-precision.md" target="_blank">Protokollgenauigkeit</a> Abschnitt.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

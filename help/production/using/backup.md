@@ -30,11 +30,11 @@ Die meisten Daten befinden sich in der Datenbank. Dies entspricht 99 % der zu si
 
 Dateien sind in mehrere Kategorien unterteilt:
 
-* Konfigurationsdateien in **nl6/conf**
+* Konfigurationsdateien im **nl6/conf**
 
    Damit können Sie Adobe Campaign sehr schnell neu konfigurieren.
 
-* Weiterleitungsdateien ** nl6/var/`<instancename>`/redir**
+* Weiterleitungsdateien ** nl6/var/`<instancename>`/redir*
 
    Diese befinden sich auf den Tracking-Servern (häufig als &quot;frontal&quot; bezeichnet) und umfassen alle vorherigen Kampagnen-Umleitungen. Sie werden weiterhin von früheren Kampagnen verwendet.
 

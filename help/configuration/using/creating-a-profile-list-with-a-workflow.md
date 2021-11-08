@@ -17,31 +17,31 @@ ht-degree: 13%
 
 ![](../../assets/v7-only.svg)
 
-Um eine auf der neuen Empfängertabelle basierende Liste vom Typ **[!UICONTROL Liste]** zu erstellen, müssen Sie einen Zielgruppen-Workflow erstellen, der die Liste generiert.
+So erstellen Sie eine **[!UICONTROL Liste]** Listen basierend auf der neuen Empfängertabelle eingeben, müssen Sie einen Zielgruppen-Workflow erstellen, der die Liste generiert.
 
-Weiterführende Informationen zu Listen in Campaign finden Sie in [diesem Abschnitt](../../platform/using/creating-and-managing-lists.md#about-lists-in-adobe-campaign).
+Weitere Informationen zu Listen in Campaign finden Sie unter [diesem Abschnitt](../../platform/using/creating-and-managing-lists.md#about-lists-in-adobe-campaign).
 
 ![](assets/do-not-localize/how-to-video.png) [Entdecken Sie diese Funktion im Video](../../platform/using/creating-and-managing-lists.md#create-list-in-a-wf-video).
 
 Gehen Sie wie folgt vor, um einen Zielgruppen-Workflow zu erstellen und Empfänger in einer benutzerdefinierten Empfängertabelle zu aktualisieren:
 
-1. Gehen Sie zum Knoten **[!UICONTROL Profile und Zielgruppen > Vorgänge > Zielgruppen-Workflows]** des Explorer.
+1. Navigieren Sie zu **[!UICONTROL Profile und Zielgruppen > Vorgänge > Zielgruppen-Workflows]** -Knoten des Explorer.
 1. Erstellen Sie einen neuen Zielgruppen-Workflow.
-1. Platzieren Sie eine **Abfrage** -Aktivität gefolgt von einer **Listen-Update** -Aktivität.
+1. Platzieren Sie eine **Abfrage** -Aktivität, gefolgt von **Listen-Update** Aktivität.
 
    ![](assets/mapping_create_list_workflow01.png)
 
-1. Doppelklicken Sie auf die Aktivität **Abfrage** und klicken Sie dann auf **[!UICONTROL Abfrage bearbeiten]** , um eine Zielgruppendimension auszuwählen, die auf dem Schema der neuen Empfängertabelle basiert (in unserem Beispiel: **Individuell**). Klicken Sie zur Bestätigung auf **[!UICONTROL Beenden]**.
+1. Doppelklicken Sie auf die **Abfrage** Aktivität und klicken Sie auf **[!UICONTROL Abfrage bearbeiten]** , um eine Zielgruppendimension basierend auf dem Schema der neuen Empfängertabelle zu wählen (im vorliegenden Beispiel: **Individuum**). Klicken Sie zur Bestätigung auf **[!UICONTROL Beenden]**.
 
    ![](assets/mapping_create_list_workflow03.png)
 
-1. Doppelklicken Sie auf die Aktivität **Listen-Update** und wählen Sie dann die Optionsschaltfläche **[!UICONTROL Liste bei Bedarf erstellen (Berechneter Name)]** aus.
+1. Doppelklicken Sie auf die **Listen-Update** -Aktivität und wählen Sie dann die **[!UICONTROL Erstellen Sie bei Bedarf die Liste (berechneter Name).]** Optionsfeld.
 
    ![](assets/mapping_create_list_workflow02.png)
 
 1. Wählen Sie den Erstellungsordner für die neue Liste aus.
 1. Führen Sie den Workflow aus, um die Liste zu erstellen.
-1. Zeigen Sie das Ergebnis im Knoten des Baums an, den Sie während der Aktivität **[!UICONTROL Listen-Update]** ausgewählt haben.
+1. Zeigen Sie das Ergebnis im Knoten des Baums an, den Sie während der **[!UICONTROL Listen-Update]** Aktivität.
 
    Das Dashboard gibt das Schema an, auf dem die Liste basiert, wie unten dargestellt:
 

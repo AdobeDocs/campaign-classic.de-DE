@@ -17,10 +17,10 @@ ht-degree: 80%
 
 ![](../../assets/v7-only.svg)
 
-Verwenden Sie die Option Campaign [Federated Data Access](../../installation/using/about-fda.md) (FDA) , um in externen Datenbanken gespeicherte Informationen zu verarbeiten. Gehen Sie wie folgt vor, um den Zugriff auf Netezza zu konfigurieren.
+Verwenden von Campaign [Federated Data Access](../../installation/using/about-fda.md) (FDA), um in externen Datenbanken gespeicherte Informationen zu verarbeiten. Gehen Sie wie folgt vor, um den Zugriff auf Netezza zu konfigurieren.
 
-1. Installieren und konfigurieren Sie [Netezza-Treiber](#netezza-config)
-1. Netezza [externes Konto](#netezza-external) in Campaign konfigurieren
+1. Installieren und Konfigurieren [Netezza-Treiber](#netezza-config)
+1. Netezza konfigurieren [externes Konto](#netezza-external) in Campaign
 
 ## Netezza-Konfiguration {#netezza-config}
 
@@ -73,7 +73,7 @@ Die Verbindung zu einer externen Netezza-Datenbank über die FDA-Option erforder
 
 Mit dem externen Netezza-Konto können Sie Ihre Campaign-Instanz mit Ihrer externen Netezza-Datenbank verbinden.
 
-1. Klicken Sie in Campaign **[!UICONTROL Explorer]** auf **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Plattform]** &#39;>&#39; **[!UICONTROL Externe Konten]**.
+1. Von Campaign **[!UICONTROL Explorer]** klicken **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Plattform]** &#39;>&#39; **[!UICONTROL Externe Konten]**.
 
 1. Klicken Sie auf **[!UICONTROL Neu]** und wählen Sie **[!UICONTROL Externe Datenbank]** als **[!UICONTROL Typ]** aus.
 

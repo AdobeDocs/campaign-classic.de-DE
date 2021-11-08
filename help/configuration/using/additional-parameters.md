@@ -24,7 +24,7 @@ Ihre Adobe Campaign-Plattform bietet standardmäßig zwei Webtrackingparameter v
 * **amount**: den Transaktionsbetrag darstellt,
 * **Artikel**: stellt die Anzahl der Elemente in einer Transaktion dar.
 
-Diese Parameter werden im Schema **nms:webTrackingLog** definiert und sind einige der Indikatoren, die in der Berichterstellung angezeigt werden.
+Diese Parameter werden im Abschnitt **nms:webTrackingLog** und sind einige der Indikatoren, die in Berichten angezeigt werden.
 
 Um zusätzliche Parameter zu definieren, müssen Sie dieses Schema erweitern.
 
@@ -52,11 +52,11 @@ In der Serverkonfiguration können Sie die maximale Zeichenanzahl definieren, di
 >
 >Eine Erhöhung der maximal zu berücksichtigenden Zeichenanzahl kann sich auf die Webtracking-Leistung Ihrer Plattform auswirken.
 
-Ändern Sie dazu das Attribut **webTrackingParamSize** des Elements **`<trackinglogd>`** in der Datei **serverConf.xml**. Diese Datei wird im Unterverzeichnis **conf** des Adobe Campaign-Installationsordners gespeichert.
+Ändern Sie dazu die **webTrackingParamSize** -Attribut **`<trackinglogd>`** -Element im **serverConf.xml** -Datei. Diese Datei wird im **conf** -Unterverzeichnis des Adobe Campaign-Installationsordners.
 
 **Beispiel**:
 
-Der Standardwert ist 64 Zeichen. Mit diesem Wert können Sie die Standardparameter **amount** und **article** (&quot;amount=xxxxxxxx&amp;article=xxxxxxxxxx&quot;) berücksichtigen.
+Der Standardwert ist 64 Zeichen. Dieser Wert ermöglicht es, die **amount** und **Artikel** (&quot;amount=xxxxxxxxxx&amp;article=xxxxxxxxxx&quot;) Standardparameter.
 
 Unter Berücksichtigung der beiden im Beispiel des Erweiterungsschemas angegebenen Parameter (Größe des Namens + Größe des Werts) können Sie die Konfiguration so ändern, dass 100 Zeichen berücksichtigt werden (&quot;amount=xxxxxxxxxx&amp;article=xxxxxxxxxxxx&amp;mode=xxxxxxxxxx&amp;code=xxxxxxx&quot;).
 
@@ -70,14 +70,14 @@ webTrackingParamSize="64"/>
 Nachdem die Konfiguration geändert wurde, müssen Sie:
 
 * Beenden Sie den Webserver, der das Weiterleitungsmodul hostet (Apache, IIS usw.),
-* Beenden Sie den Adobe Campaign-Server: **net stop nlserver6** in Windows, **/etc/init.d/nlserver6 stop** in Linux
+* Beenden Sie den Adobe Campaign-Server: **net stop nlserver6** unter Windows: **/etc/init.d/nlserver6 stop** unter Linux:
 
    >[!NOTE]
    >
    >Ab Version 20.1 wird empfohlen, stattdessen den folgenden Befehl zu verwenden (für Linux): **systemctl stop nlserver**
 
-* Löschen Sie unter Linux die freigegebenen Speichersegmente mit dem Befehl **ipcrm**,
-* Starten Sie den Adobe Campaign-Server neu: **net start nlserver6** in Windows, **/etc/init.d/nlserver6 start** in Linux
+* Löschen Sie unter Linux die freigegebenen Speichersegmente mithilfe der **ipcrm** Befehl,
+* Starten Sie den Adobe Campaign-Server neu: **net start nlserver6** unter Windows: **/etc/init.d/nlserver6 start** unter Linux:
 
    >[!NOTE]
    >
@@ -111,4 +111,4 @@ adobe@selma:~$ systemctl start apache2
 
 >[!NOTE]
 >
->Wenn Sie unter Linux die Größe der Parameter **webTrackingParamSize** oder **maxSharedLogs** erhöhen, müssen Sie möglicherweise die Größe des gemeinsamen Speichers (SHM) erhöhen.
+>Wenn Sie für Linux die Größe der **webTrackingParamSize** oder **maxSharedLogs** -Parameter, müssen Sie möglicherweise die Größe des gemeinsamen Speichers (SHM) erhöhen.

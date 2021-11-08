@@ -27,7 +27,7 @@ Kein(e)
 
 ## Übergeordnete Elemente {#parents-6}
 
-`<srcschema>`  ,   `<element>`   ,    `<attribute>`    ,     `<enumeration>`     ,      `<value>`      ,      `<param />`,       `<method />`
+`<srcschema>`  ,  `<element>`   ,   `<attribute>`    ,    `<enumeration>`     ,     `<value>`      ,     `<param />`,      `<method />`
 
 ## Untergeordnetes Element {#children-6}
 
@@ -35,7 +35,7 @@ Kein(e)
 
 ## Beschreibung {#description-6}
 
-Dieses Element ermöglicht die Beschreibung eines `<element>` oder `<attribute>`   -Element. Sie darf nur Text enthalten und wird in XML in der Datenbank gespeichert.
+Dieses Element ermöglicht die Beschreibung einer `<element>`  oder  `<attribute>`   -Element. Sie darf nur Text enthalten und wird in XML in der Datenbank gespeichert.
 
 ## Attributbeschreibung {#attribute-description-6}
 

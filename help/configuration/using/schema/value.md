@@ -46,7 +46,7 @@ Mit diesem Element können Sie die in einer Auflistung gespeicherten Werte defin
 ## Attributbeschreibung {#attribute-description-16}
 
 * **applyIf (string)**: Mit diesem Attribut können Sie einen Auflistungswert optional machen. Er erhält einen XTK-Ausdruck.
-* **desc (string)**: Beschreibung des Auflistungswerts.
+* **desc (Zeichenfolge)**: Beschreibung des Auflistungswerts.
 * **enabledIf (Zeichenfolge)**: -Bedingung zum Aktivieren des Auflistungswerts.
 * **img (Zeichenfolge)**: Bild, das mit der Auflistung im Formular &quot;namespace:image_name&quot;verknüpft ist. Das Bild muss auf den Anwendungsserver importiert werden.
 * **label (string)**: Titel des Auflistungswerts.

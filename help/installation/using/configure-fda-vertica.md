@@ -17,10 +17,10 @@ ht-degree: 19%
 
 ![](../../assets/v7-only.svg)
 
-Verwenden Sie die Option Campaign **Federated Data Access** (FDA) , um in einer externen Datenbank gespeicherte Informationen zu verarbeiten. Gehen Sie wie folgt vor, um den Zugriff auf [!DNL Vertica] zu konfigurieren.
+Verwenden von Campaign **Federated Data Access** (FDA), um in einer externen Datenbank gespeicherte Informationen zu verarbeiten. Gehen Sie wie folgt vor, um den Zugriff auf [!DNL Vertica].
 
-1. [!DNL Vertica] unter [CentOS](#vertica-centos), [Windows](#vertica-windows) oder [Debian](#vertica-debian) konfigurieren
-1. Konfigurieren Sie das externe [!DNL Vertica] [Konto](#vertica-external) in Campaign.
+1. Konfigurieren [!DNL Vertica] on [CentOS](#vertica-centos), [Windows](#vertica-windows) oder [Debian](#vertica-debian)
+1. Konfigurieren Sie die [!DNL Vertica] [externes Konto](#vertica-external) in Campaign
 
 
 >[!NOTE]
@@ -31,9 +31,9 @@ Verwenden Sie die Option Campaign **Federated Data Access** (FDA) , um in einer 
 
 ## Vertica auf CentOS {#vertica-centos}
 
-Gehen Sie wie folgt vor, um [!DNL Vertica] unter CentOS zu konfigurieren:
+So konfigurieren Sie [!DNL Vertica] Gehen Sie unter CentOS wie folgt vor:
 
-1. Laden Sie die ODBC-Treiber für [!DNL Vertica] herunter. [Klicken Sie ](https://www.vertica.com/download/vertica/client-drivers/) hier und laden Sie den neuesten Linux RPM herunter.
+1. Laden Sie die ODBC-Treiber für [!DNL Vertica] herunter. [Hier klicken](https://www.vertica.com/download/vertica/client-drivers/) und laden Sie den neuesten Linux RPM herunter.
 
 1. Anschließend müssen Sie unixODBC mit dem folgenden Befehl installieren:
 
@@ -42,7 +42,7 @@ Gehen Sie wie folgt vor, um [!DNL Vertica] unter CentOS zu konfigurieren:
    yum install unixODBC.x86_64
    ```
 
-1. Wenn Sie den Server [!DNL Vertica] bereits installiert haben, wird bereits ein ODBC-Treiber installiert. Aktualisieren Sie in diesem Fall das Laufwerk wie folgt:
+1. Wenn Sie zuvor die [!DNL Vertica] Server wird bereits ein ODBC-Treiber installiert. Aktualisieren Sie in diesem Fall das Laufwerk wie folgt:
 
    ```
    #Switch to root
@@ -81,7 +81,7 @@ Gehen Sie wie folgt vor, um [!DNL Vertica] unter CentOS zu konfigurieren:
    rm vertica-client-x.x.x-x.x86_64.rpm
    ```
 
-1. In Adobe Campaign können Sie dann Ihr externes [!DNL Vertica]-Konto konfigurieren. Weiterführende Informationen zur Konfiguration Ihres externen Kontos finden Sie in [diesem Abschnitt](#vertica-external).
+1. In Adobe Campaign können Sie dann Ihre [!DNL Vertica] externes Konto. Weitere Informationen zur Konfiguration Ihres externen Kontos finden Sie unter [diesem Abschnitt](#vertica-external).
 
 ## Vertikal unter Windows {#vertica-windows}
 
@@ -89,7 +89,7 @@ Gehen Sie wie folgt vor, um [!DNL Vertica] unter CentOS zu konfigurieren:
 
 1. Konfigurieren Sie den ODBC-Treiber unter Windows. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](https://www.vertica.com/docs/9.2.x/HTML/Content/Authoring/ConnectingToVertica/ClientODBC/SettingUpADSN.htm)
 
-1. In Adobe Campaign können Sie dann Ihr externes [!DNL Vertica]-Konto konfigurieren. Weiterführende Informationen zur Konfiguration Ihres externen Kontos finden Sie in [diesem Abschnitt](#vertical-external).
+1. In Adobe Campaign können Sie dann Ihre [!DNL Vertica] externes Konto. Weitere Informationen zur Konfiguration Ihres externen Kontos finden Sie unter [diesem Abschnitt](#vertical-external).
 
 ## Vertica auf Debian {#vertica-debian}
 
@@ -101,7 +101,7 @@ Gehen Sie wie folgt vor, um [!DNL Vertica] unter CentOS zu konfigurieren:
    apt-get install unixODBC
    ```
 
-1. Wenn Sie den Server [!DNL Vertica] bereits installiert haben, wird bereits ein ODBC-Treiber installiert. Aktualisieren Sie in diesem Fall das Laufwerk wie folgt:
+1. Wenn Sie zuvor die [!DNL Vertica] Server wird bereits ein ODBC-Treiber installiert. Aktualisieren Sie in diesem Fall das Laufwerk wie folgt:
 
    ```
    #Switch to root
@@ -143,19 +143,19 @@ Gehen Sie wie folgt vor, um [!DNL Vertica] unter CentOS zu konfigurieren:
    Port = 5433
    ```
 
-1. In Adobe Campaign können Sie dann Ihr externes [!DNL Vertica]-Konto konfigurieren. Weiterführende Informationen zur Konfiguration Ihres externen Kontos finden Sie in [diesem Abschnitt](#vertica-external).
+1. In Adobe Campaign können Sie dann Ihre [!DNL Vertica] externes Konto. Weitere Informationen zur Konfiguration Ihres externen Kontos finden Sie unter [diesem Abschnitt](#vertica-external).
 
 ## Externes vertikales Konto {#vertica-external}
 
-Sie müssen ein externes [!DNL Vertica]-Konto erstellen, um Ihre Campaign-Instanz mit Ihrer externen [!DNL Vertica]-Datenbank zu verbinden.
+Sie müssen eine [!DNL Vertica] externes Konto, um Ihre Campaign-Instanz mit Ihrer [!DNL Vertica] externe Datenbank.
 
-1. Klicken Sie in Campaign **[!UICONTROL Explorer]** auf **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Plattform]** &#39;>&#39; **[!UICONTROL Externe Konten]**.
+1. Von Campaign **[!UICONTROL Explorer]** klicken **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Plattform]** &#39;>&#39; **[!UICONTROL Externe Konten]**.
 
 1. Wählen Sie **[!UICONTROL Neu]** aus.
 
 1. Wählen Sie **[!UICONTROL Externe Datenbank]** als **[!UICONTROL Typ]** Ihres externen Kontos aus.
 
-1. Konfigurieren Sie das externe **[!UICONTROL Vertikale]**-Konto. Geben Sie dazu Folgendes an:
+1. Konfigurieren Sie die **[!UICONTROL Vertikal]** externes Konto angeben:
 
    * **[!UICONTROL Typ]**: [!DNL Vertica Analytics]
 

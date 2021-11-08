@@ -30,11 +30,11 @@ Die meisten Leistungsprobleme hängen mit der Datenbankwartung zusammen. Im Folg
 
 >[!NOTE]
 >
->Einblicke finden Sie im [Handbuch zur Hardwarebemessung von Adobe Campaign](https://helpx.adobe.com/de/campaign/kb/hardware-sizing-guide.html).
+>Weitere Informationen finden Sie unter [Handbuch zur Hardwarebemessung von Adobe Campaign](https://helpx.adobe.com/de/campaign/kb/hardware-sizing-guide.html) für Einblicke.
 
 ## Plattformkonfiguration {#platform-configuration}
 
-Eine unangemessene Konfiguration kann sich auf die Leistung der Plattform auswirken. Es wird empfohlen, die Netzwerkkonfiguration, die Bereitstellungsoptionen der Plattform sowie die MTA-Konfiguration in der Datei **serverConf.xml** zu überprüfen.
+Eine unangemessene Konfiguration kann sich auf die Leistung der Plattform auswirken. Es wird empfohlen, die Netzwerkkonfiguration, die Optionen für die Zustellbarkeit von Plattformen sowie die MTA-Konfiguration im Abschnitt **serverConf.xml** -Datei.
 
 ## Wartung der Datenbank {#database-maintenance}
 
@@ -60,9 +60,9 @@ Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../prod
 
 Bitte überprüfen Sie Anzahl und Größe der Arbeitstabellen. Wenn sie eine bestimmte Größe überschreiten, wirkt sich dies auf die Datenbankleistung aus. Diese Tabellen werden durch Workflows und Sendungen erstellt. Sie bleiben in der Datenbank, während Workflows und Sendungen aktiv sind. Um die Größe von Arbeitstabellen zu begrenzen, können Sie die folgenden Aktionen durchführen:
 
-* Sendungen mit den folgenden Status anhalten oder löschen: **[!UICONTROL Failed]**, **[!UICONTROL In progress]**, **[!UICONTROL Bereit für Bereitstellung]** oder **[!UICONTROL Paused]**.
+* Sendungen mit den folgenden Status anhalten oder löschen: **[!UICONTROL Fehlgeschlagen]**, **[!UICONTROL In Bearbeitung]**, **[!UICONTROL Versandbereit]** oder **[!UICONTROL Angehalten]**.
 * Workflows, die aufgrund eines Fehlers ausgesetzt wurden, beenden oder löschen.
-* Beenden Sie alle Workflows, die für Tests verwendet werden, die keine **[!UICONTROL Ende]** -Aktivität enthalten und deren Status deshalb **[!UICONTROL Ausgesetzt]** bleibt.
+* Beenden Sie alle Workflows, die für Tests verwendet werden, die keine **[!UICONTROL Ende]** Tätigkeit, deren Status somit erhalten bleibt **[!UICONTROL Angehalten]**.
 
 >[!IMPORTANT]
 >
@@ -73,7 +73,7 @@ Bitte überprüfen Sie Anzahl und Größe der Arbeitstabellen. Wenn sie eine bes
 Abhängig von den Adobe Campaign-Installationseinstellungen können für die Plattformüberwachung zwei Tools verwendet werden:
 
 * Die Produktionsseite der Instanz. Weitere Informationen hierzu finden Sie unter [Manuelle Überwachung](../../production/using/monitoring-processes.md#manual-monitoring).
-* Das Skript *netreport* . Weitere Informationen hierzu finden Sie unter [Automatische Überwachung über Adobe Campaign-Skripte](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts).
+* Die *netreport* Skript. Weitere Informationen hierzu finden Sie unter [Automatische Überwachung über Adobe Campaign-Skripte](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts).
 
 ## Spezifikationen {#specifics}
 

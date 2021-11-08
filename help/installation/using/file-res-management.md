@@ -19,27 +19,27 @@ ht-degree: 0%
 
 ## Dateiformat des Uploads begrenzen {#limiting-uploadable-files}
 
-Verwenden Sie das Attribut **uploadWhiteList** , um die für den Upload auf den Adobe Campaign-Server verfügbaren Dateitypen zu beschränken.
+Verwenden Sie die **uploadWhiteList** -Attribut, um die für den Upload auf den Adobe Campaign-Server verfügbaren Dateitypen zu beschränken.
 
-Dieses Attribut ist im Element **dataStore** der Datei **serverConf.xml** verfügbar. Alle in **serverConf.xml** verfügbaren Parameter sind in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md) aufgeführt.
+Dieses Attribut ist im **dataStore** -Element **serverConf.xml** -Datei. Alle in der **serverConf.xml** sind in dieser [Abschnitt](../../installation/using/the-server-configuration-file.md).
 
-Der Standardwert dieses Attributs ist **.+** und ermöglicht das Hochladen beliebiger Dateitypen.
+Der Standardwert dieses Attributs ist **.+** und ermöglicht den Upload beliebiger Dateitypen.
 
 Um die möglichen Formate einzuschränken, ersetzen Sie den Attributwert durch einen gültigen regulären Java-Ausdruck. Sie können mehrere Werte eingeben, indem Sie sie durch ein Komma trennen.
 
-Beispiel: **uploadWhiteList=&quot;.*.png,*.jpg&quot;** ermöglicht das Hochladen von PNG- und JPG-Formaten auf den Server. Es werden keine anderen Formate akzeptiert.
+Beispiel: **uploadWhiteList=&quot;.*.png,*.jpg&quot;** ermöglicht Ihnen das Hochladen von PNG- und JPG-Formaten auf den Server. Es werden keine anderen Formate akzeptiert.
 
 >[!NOTE]
 >
 >In Internet Explorer muss der vollständige Dateipfad durch den regulären Ausdruck überprüft werden.
 
-Sie können auch verhindern, dass wichtige Dateien hochgeladen werden, indem Sie den Webserver konfigurieren. [Weitere Informationen](web-server-configuration.md)   
+Sie können auch verhindern, dass wichtige Dateien hochgeladen werden, indem Sie den Webserver konfigurieren. [Weitere Informationen](web-server-configuration.md)
 
 ## Proxy-Verbindungskonfiguration {#proxy-connection-configuration}
 
-Sie können den Campaign-Server über einen Proxy mit einem externen System verbinden, indem Sie beispielsweise die Workflow-Aktivität **Dateiübertragung** verwenden. Um dies zu erreichen, müssen Sie den Abschnitt **proxyConfig** der Datei **serverConf.xml** über einen bestimmten Befehl konfigurieren. Alle in **serverConf.xml** verfügbaren Parameter sind in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md) aufgeführt.
+Sie können den Campaign-Server über einen Proxy mit einem externen System verbinden, indem Sie eine **Dateiübertragung** Workflow-Aktivität. Dazu müssen Sie die **proxyConfig** Abschnitt **serverConf.xml** Datei über einen bestimmten Befehl. Alle in der Variablen **serverConf.xml** sind in dieser [Abschnitt](../../installation/using/the-server-configuration-file.md).
 
-Die folgenden Proxy-Verbindungen sind möglich: HTTP, HTTPS, FTP, SFTP. Bitte beachten Sie, dass ab Campaign-Version 20.2 die HTTP- und HTTPS-Protokollparameter **nicht mehr verfügbar** sind. Diese Parameter werden weiter unten erwähnt, da sie in früheren Builds - einschließlich 9032 - weiterhin verfügbar sind.
+Die folgenden Proxy-Verbindungen sind möglich: HTTP, HTTPS, FTP, SFTP. Bitte beachten Sie, dass ab Campaign-Version 20.2 die HTTP- und HTTPS-Protokollparameter **nicht mehr verfügbar**. Diese Parameter werden weiter unten erwähnt, da sie in früheren Builds - einschließlich 9032 - weiterhin verfügbar sind.
 
 >[!CAUTION]
 >
@@ -109,23 +109,23 @@ Wenn Sie den iOS HTTP/2-Connector über einen Proxy verwenden müssen, werden di
 * HTTP ohne Authentifizierung
 * Grundlegende HTTP-Authentifizierung
 
-Um den Proxy-Modus zu aktivieren, muss die folgende Änderung in der Datei `serverconf.xml` vorgenommen werden:
+Um den Proxy-Modus zu aktivieren, muss die folgende Änderung im `serverconf.xml` Datei:
 
 ```
 <nmac useHTTPProxy="true">
 ```
 
-Weitere Informationen zu diesem iOS HTTP/2-Connector finden Sie auf dieser [Seite](../../delivery/using/about-mobile-app-channel.md).
+Weitere Informationen zu diesem iOS HTTP/2-Connector finden Sie in diesem [page](../../delivery/using/about-mobile-app-channel.md).
 
 ## Verwalten öffentlicher Ressourcen {#managing-public-resources}
 
 Um öffentlich verfügbar zu sein, müssen die Bilder, die in E-Mails und öffentlichen Ressourcen verwendet werden, die mit Kampagnen verknüpft sind, auf einem extern zugänglichen Server vorhanden sein. Sie können dann externen Empfängern oder Benutzern zur Verfügung stehen. [Weitere Informationen](../../installation/using/deploying-an-instance.md#managing-public-resources).
 
-Öffentliche Ressourcen werden im Ordner **/var/res/instance** des Adobe Campaign-Installationsordners gespeichert.
+Öffentliche Ressourcen werden im **/var/res/instance** Ordner des Adobe Campaign-Installationsordners.
 
-Die entsprechende URL lautet: **http://server/res/instance** wobei **instance** der Name der Tracking-Instanz ist.
+Die entsprechende URL lautet: **http://server/res/instance** where **instance** ist der Name der Tracking-Instanz.
 
-Sie können einen anderen Ordner angeben, indem Sie der Datei **conf-`<instance>`.xml** einen Knoten hinzufügen, um den Speicher auf dem Server zu konfigurieren. Dies bedeutet, dass die folgenden Zeilen hinzugefügt werden:
+Sie können einen anderen Ordner angeben, indem Sie dem **conf-`<instance>`.xml** -Datei, um den Speicher auf dem Server zu konfigurieren. Dies bedeutet, dass die folgenden Zeilen hinzugefügt werden:
 
 ```
 <serverconf>

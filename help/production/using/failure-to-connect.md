@@ -19,7 +19,7 @@ ht-degree: 4%
 
 Die Gründe für ein Verbindungsproblem können mehrere sein und hängen von verschiedenen Kontexten ab.
 
-Sie können die folgenden Tests durchführen. Wenn der Verbindungsfehler weiterhin auftritt, wenden Sie sich an die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+Sie können die folgenden Tests durchführen. Wenn der Verbindungsfehler weiterhin auftritt, wenden Sie sich an den [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 
 
@@ -45,23 +45,23 @@ Sie können die folgenden Tests durchführen. Wenn der Verbindungsfehler weiterh
 </tr>
 <tr> 
 <td>Wurde Adobe Campaign ordnungsgemäß integriert?</td> 
-<td>Melden Sie sich bei an: <b>http(s)://&lt;urlserver&gt;/r/test</b> URL. Der Server sollte den folgenden Nachrichtentyp zurückgeben: &lt;redir status='OK' date='YYYY/MM/DD HH:MM:SS' build='XXXX' host='&lt;Hostname&gt;' localHost='&lt;Server&gt;'/&gt;
-Wenn Sie dieses Ergebnis nicht erhalten, überprüfen Sie in Ihrer Webserverkonfiguration, ob die Integration berücksichtigt wird.</td>
+<td>Melden Sie sich bei an: <b>http(s)://&lt;urlserver&gt;/r/test</b> URL. Der Server sollte den folgenden Nachrichtentyp zurückgeben: &lt;redir status="OK" date="YYYY/MM/DD HH&lt;span id="0" translate="no"/&gt;SS" build="XXXX" host="&lt;hostname&gt;" localhost="&lt;server&gt;" /&gt;
+Wenn Sie dieses Ergebnis nicht erhalten, überprüfen Sie in Ihrer Webserverkonfiguration, ob die Integration berücksichtigt wird.:MM:</td>
 </tr>
 <tr> 
-<td>Stellen Sie eine Verbindung zur folgenden URL her: <b>http(s)://&lt;URLSERVER&gt;/nl/jsp/logon.jsp</b></td>
+<td>Stellen Sie eine Verbindung zur folgenden URL her: <b>http(s)://&lt;urlserver&gt;/nl/jsp/logon.jsp</b></td>
 <td>Wenn Sie einen Tomcat-Java-Fehler erhalten, überprüfen Sie, ob die JAVA-Integration ordnungsgemäß durchgeführt wurde. Es ist in die Datei [Anwendungspfad]/nl6/customer.sh integriert.</td>
 </tr>
 <tr> 
-<td>Stellen Sie eine Verbindung zur folgenden URL her: <b>http(s)://&lt;URLSERVER&gt;/nl/jsp/logon.jsp</b></td>
+<td>Stellen Sie eine Verbindung zur folgenden URL her: <b>http(s)://&lt;urlserver&gt;/nl/jsp/logon.jsp</b></td>
 <td>Wenn Sie eine leere Seite erhalten, überprüfen Sie, ob das Adobe Campaign-Webmodul gestartet wurde. Der Befehl nlserver pdump sollte den Anwendungsserver für Adobe Campaign Classic (7.X YY.R Build XXX@SHA1) von TT/MM/JJJJ zurückgeben. Wenn nicht, starten Sie das Modul mit dem Befehl nlserver start web neu.</td>
 </tr>
 <tr>
 <td>Überprüfen Sie die allgemeine Konfiguration der Sicherheitszonen.</td>
-<td>Weitere Informationen zum Konfigurieren von Sicherheitszonen finden Sie in <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configuring-campaign-server.html?lang=en#configuring-campaign-server"/>diesem Abschnitt.</a></td>
+<td>Weitere Informationen zum Konfigurieren von Sicherheitszonen finden Sie unter <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configuring-campaign-server.html?lang=en#configuring-campaign-server"/>diesen Abschnitt.</a></td>
 </tr>
 <tr>
-<td>Der Befehl nlserver pdump gibt <b>Keine Aufgaben</b> zurück.</td>
+<td>Der Befehl nlserver pdump gibt <b>Keine Aufgaben</b></td>
 <td>Sie müssen die gesamte Adobe Campaign-Anwendung neu starten. Verwenden Sie dazu den folgenden Befehl: <b>nlserver watchdog -svc -noconsole</b></td>
 </tr>
 </tbody> 

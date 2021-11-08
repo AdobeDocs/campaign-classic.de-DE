@@ -23,20 +23,20 @@ ht-degree: 2%
 >
 >Die LDAP-Konfiguration ist nur für On-Premise- oder Hybridinstallationen möglich.
 
-Die LDAP-Konfiguration wird im Softwareverteilungs-Assistenten durchgeführt. Die Option **[!UICONTROL LDAP-Integration]** muss während des ersten Konfigurationsschritts ausgewählt werden. Siehe [Softwareverteilungs-Assistent](../../installation/using/deploying-an-instance.md#deployment-wizard).
+Die LDAP-Konfiguration wird im Softwareverteilungs-Assistenten durchgeführt. Die **[!UICONTROL LDAP-Integration]** muss im ersten Konfigurationsschritt ausgewählt werden. Siehe [Implementierungsassistent](../../installation/using/deploying-an-instance.md#deployment-wizard).
 
 Im Fenster können Sie die Identifizierung von Adobe Campaign-Benutzern über den angegebenen LDAP-Ordner konfigurieren.
 
 ![](assets/s_ncs_install_deployment_wiz_ldap_01.png)
 
-* Geben Sie die Adresse des LDAP-Servers im Feld **[!UICONTROL LDAP server]** an. Sie können die Portnummer hinzufügen. Standardmäßig wird der Port 389 verwendet.
+* Geben Sie die Adresse des LDAP-Servers im **[!UICONTROL LDAP-Server]** -Feld. Sie können die Portnummer hinzufügen. Standardmäßig wird der Port 389 verwendet.
 * Wählen Sie in der Dropdown-Liste die Authentifizierungsmethode für Benutzer aus:
 
    * Verschlüsseltes Kennwort (**md5**)
 
       Standardmodus.
 
-   * Nur-Text-Kennwort + SSL (**TLS**)
+   * Nur Text Passwort + SSL (**TLS**)
 
       Das gesamte Authentifizierungsverfahren (einschließlich Kennwort) ist verschlüsselt. Der sichere Port 636 darf in diesem Modus nicht verwendet werden: Adobe Campaign wechselt automatisch in den abgesicherten Modus.
 
@@ -56,7 +56,7 @@ Im Fenster können Sie die Identifizierung von Adobe Campaign-Benutzern über de
 
       Keine Verschlüsselung (nur zur Verwendung in Testphasen).
 
-* Wählen Sie den Authentifizierungsmodus für den Benutzer aus: **[!UICONTROL Berechnet automatisch die Unique User-ID]** (siehe Schritt [Berechnung des Distinguished Name](#distinguished-name-calculation)) oder **[!UICONTROL Suchen Sie die eindeutige Benutzer-ID im Verzeichnis]** (siehe Schritt [Suchen nach Identifikatoren](#searching-for-identifiers)).
+* Wählen Sie den Authentifizierungsmodus für den Benutzer aus: **[!UICONTROL Automatische Berechnung der eindeutigen Benutzerkennung]** (siehe Schritt [Berechnung des Distinguished Name](#distinguished-name-calculation)) oder **[!UICONTROL Suchen Sie die eindeutige Benutzer-ID im Verzeichnis .]** (siehe Schritt [Suchen nach Identifikatoren](#searching-for-identifiers)).
 
 ## Kompatibilität {#compatibility}
 
@@ -82,7 +82,7 @@ Die kompatiblen Systeme hängen vom ausgewählten Authentifizierungsmechanismus 
    <td> Windows, Linux<br /> </td> 
   </tr> 
   <tr> 
-   <td> NTLM &amp; DPA<br /> </td> 
+   <td> NTLM und DPA<br /> </td> 
    <td> </td> 
    <td> Windows<br /> </td> 
   </tr> 
@@ -100,17 +100,17 @@ Wenn Sie die Kennungen des Distinguished Name (DN) berechnen möchten, können S
 
 ![](assets/s_ncs_install_deployment_wiz_ldap_02.png)
 
-* Geben Sie die eindeutige Kennung des Benutzers im Verzeichnis (Distinguished Name - DN) im Feld **[!UICONTROL Distinguished Name]** an.
+* Geben Sie die eindeutige Kennung des Benutzers im Verzeichnis (Distinguished Name - DN) im **[!UICONTROL Distinguished Name]** -Feld.
 
-   **[!UICONTROL (Anmeldung)]** wird durch die Kennung des Adobe Campaign-Benutzers ersetzt.
+   **[!UICONTROL (Anmeldung)]** durch die Kennung des Adobe Campaign-Operators ersetzt.
 
    >[!CAUTION]
    >
-   >Die Einstellung **[!UICONTROL dc]** muss in Kleinbuchstaben eingegeben werden.
+   >Die **[!UICONTROL dc]** -Einstellung muss in Kleinbuchstaben erfolgen.
 
-* Wählen Sie die Option **[!UICONTROL Synchronisierung der Benutzerrechte aus Berechtigungen und Gruppen im Ordner]** aktivieren, um die Gruppen- und Benutzerverknüpfungen im LDAP-Ordner sowie die Gruppen- und Benutzerverknüpfungen in Adobe Campaign zu synchronisieren.
+* Auswählen der Option **[!UICONTROL Aktivieren der Synchronisierung von Benutzerrechten aus Berechtigungen und Gruppen im Ordner]** um die Gruppen- und Benutzerzuordnungen im LDAP-Ordner sowie die Gruppen- und Benutzerzuordnungen in Adobe Campaign zu synchronisieren.
 
-   Wenn Sie diese Option auswählen, ist der für die Suche verwendete **[!UICONTROL Anwendungslevel DN]** und das **[!UICONTROL Kennwort für die Anwendungsanmeldung]** aktiviert.
+   Wenn Sie diese Option auswählen, wird die **[!UICONTROL DN der Anwendungsebene, der für die Suche verwendet wird]** und **[!UICONTROL Passwort der Anwendungsanmeldung]** aktiviert sind.
 
    Wenn Sie diese beiden Felder ausfüllen, stellt Adobe Campaign eine Verbindung zum LDAP-Server mit seinem eigenen Login und Passwort her. Wenn sie leer sind, stellt Adobe Campaign anonym eine Verbindung zum Server her.
 
@@ -118,8 +118,8 @@ Wenn Sie die Kennungen des Distinguished Name (DN) berechnen möchten, können S
 
 Wenn Sie nach einer Kennung suchen, können Sie mit dem Softwareverteilungs-Assistenten die Suche konfigurieren.
 
-* Geben Sie in den Feldern **[!UICONTROL Anwendungsstufe DN für die Suche]** und **[!UICONTROL Kennwort für die Anwendungsanmeldung]** die Kennung und das Kennwort ein, mit denen Adobe Campaign eine Verbindung zur Suche nach der Kennung herstellen wird. Wenn sie leer sind, stellt Adobe Campaign anonym eine Verbindung zum Server her.
-* Geben Sie die Felder **[!UICONTROL Basiskennung]** und **[!UICONTROL Suchbereich]** an, um eine Teilmenge des LDAP-Ordners zu bestimmen, aus dem die Suche gestartet werden soll.
+* Im **[!UICONTROL DN der Anwendungsebene, der für die Suche verwendet wird]** und **[!UICONTROL Passwort der Anwendungsanmeldung]** Geben Sie die Kennung und das Kennwort an, mit denen Adobe Campaign eine Verbindung zur Suche nach der Kennung herstellen wird. Wenn sie leer sind, stellt Adobe Campaign anonym eine Verbindung zum Server her.
+* Geben Sie die **[!UICONTROL Basis-ID]** und **[!UICONTROL Suchbereich]** -Felder, um eine Teilmenge des LDAP-Ordners zu bestimmen, aus dem die Suche gestartet werden soll.
 
    Wählen Sie in der Dropdown-Liste den gewünschten Modus aus:
 
@@ -129,7 +129,7 @@ Wenn Sie nach einer Kennung suchen, können Sie mit dem Softwareverteilungs-Assi
 
       Der LDAP-Ordner wird vollständig durchsucht, beginnend mit einer bestimmten Ebene.
 
-   1. **[!UICONTROL Begrenzt auf die Basis]**.
+   1. **[!UICONTROL Beschränkt auf die Basis]**.
 
       Alle Attribute sind in der Suche enthalten.
 
@@ -137,35 +137,35 @@ Wenn Sie nach einer Kennung suchen, können Sie mit dem Softwareverteilungs-Assi
 
       Die Suche wird für alle Attribute des Ordners durchgeführt und beginnt ab der ersten Ebene des Attributs.
 
-* Im Feld **[!UICONTROL Filter]** können Sie ein Element angeben, um den Suchbereich zu verfeinern.
+* Die **[!UICONTROL Filter]** -Feld können Sie ein Element angeben, um den Suchbereich zu verfeinern.
 
 ## Konfigurieren von LDAP-Berechtigungen {#configuring-ldap-authorizations}
 
-Dieses Fenster wird angezeigt, wenn Sie die Option **[!UICONTROL Synchronisierung der Benutzerrechte aus Berechtigungen und Gruppen im Verzeichnis]** aktivieren.
+Dieses Fenster wird angezeigt, wenn Sie die **[!UICONTROL Aktivieren der Synchronisierung von Benutzerrechten aus Berechtigungen und Gruppen im Ordner]** -Option.
 
 ![](assets/s_ncs_install_deployment_wiz_ldap_04.png)
 
 Sie müssen mehrere Parameter angeben, um die Gruppe(n), zu der/denen der Benutzer gehört, und die entsprechenden Berechtigungen zu finden, d. h.:
 
-* das Feld **[!UICONTROL Datenbank-ID]** ,
-* das Feld **[!UICONTROL Suchbereich]** ,
+* die **[!UICONTROL Datenbank-ID]** -Feld,
+* die **[!UICONTROL Suchbereich]** -Feld,
 
    >[!NOTE]
    >
-   >Wenn Sie sich für die Suche nach dem DN entschieden haben, können Sie **[!UICONTROL die DN-Suchparameter]** wiederverwenden, um die ausgewählten Werte für den DN und den Suchbereich aus dem vorherigen Bildschirm zu übernehmen.
+   >Wenn Sie nach dem DN suchen möchten, können Sie **[!UICONTROL Verwenden Sie die DN-Suchparameter erneut.]** um die ausgewählten Werte für den DN und den Suchbereich vom vorherigen Bildschirm zu übernehmen.
 
-* das Feld **[!UICONTROL Berechtigungssuchfilter]**, basierend auf dem Login und dem Distinguished Name des Benutzers;
-* das Attribut **[!UICONTROL Attribut, das das Feld für die Gruppe oder den Autorisierungsnamen]** für den Benutzer enthält,
-* das Feld **[!UICONTROL Zuordnungsmaske]** , das die Extraktion des Gruppennamen in Adobe Campaign und der zugehörigen Berechtigungen ermöglicht. Sie können reguläre Ausdrücke verwenden, um nach dem Namen zu suchen.
-* Wählen Sie **[!UICONTROL Aktivieren Sie die Verbindung von im LDAP-Ordner deklarierten Benutzern, wenn der Benutzer nicht in Adobe Campaign]** deklariert ist, damit dem Benutzer automatisch Zugriffsberechtigungen für die Verbindung zugewiesen werden.
+* die **[!UICONTROL Berechtigungssuchfilter]** -Feld basierend auf dem Login und dem Distinguished Name des Benutzers;
+* die **[!UICONTROL Attribut, das den Gruppen- oder Autorisierungsnamen enthält]** -Feld für den Benutzer,
+* die **[!UICONTROL Zuordnungsmaske]** -Feld, das die Extraktion des Gruppennamen in Adobe Campaign und der zugehörigen Berechtigungen ermöglicht. Sie können reguläre Ausdrücke verwenden, um nach dem Namen zu suchen.
+* Auswählen **[!UICONTROL Aktivieren Sie die Verbindung von im LDAP-Ordner deklarierten Benutzern, wenn der Benutzer nicht in Adobe Campaign deklariert ist.]** damit dem Benutzer automatisch Zugriffsberechtigungen für die Verbindung gewährt werden.
 
-Klicken Sie auf **[!UICONTROL Save]** , um die Konfiguration der Instanz abzuschließen.
+Klicken **[!UICONTROL Speichern]** , um die Konfiguration der Instanz abzuschließen.
 
 ## Benutzer verwalten {#managing-operators}
 
 Nachdem Sie die Konfiguration bestätigt haben, müssen Sie festlegen, welche Adobe Campaign-Operatoren über den LDAP-Ordner verwaltet werden.
 
-Um den LDAP-Ordner zum Authentifizieren eines Benutzers zu verwenden, bearbeiten Sie das entsprechende Profil und klicken Sie auf den Link **[!UICONTROL Zugriffsparameter bearbeiten]** . Wählen Sie die Option **[!UICONTROL LDAP für Authentifizierung verwenden]** aus: Das Feld **[!UICONTROL Kennwort]** ist für diesen Operator grau dargestellt.
+Um den LDAP-Ordner zum Authentifizieren eines Benutzers zu verwenden, bearbeiten Sie das entsprechende Profil und klicken Sie auf die **[!UICONTROL Zugriffsparameter bearbeiten]** Link. Wählen Sie die **[!UICONTROL LDAP für Authentifizierung verwenden]** Option: Die **[!UICONTROL Passwort]** für diesen Operator ausgegraut wurde.
 
 ![](assets/s_ncs_install_operator_in_ldap.png)
 
@@ -175,7 +175,7 @@ In diesem Abschnitt finden Sie einige einfache Anwendungsfälle, mit denen Sie d
 
 1. Ein Benutzer wurde im LDAP-Ordner erstellt, jedoch nicht in Adobe Campaign.
 
-   Adobe Campaign kann so konfiguriert werden, dass der Anwender über seine LDAP-Authentifizierung auf die Plattform zugreift. Adobe Campaign muss in der Lage sein, die Gültigkeit der ID/Kennwort-Kombination im LDAP-Ordner zu steuern, damit der Benutzer in Adobe Campaign spontan erstellt werden kann. Aktivieren Sie dazu die Option **[!UICONTROL Aktivieren Sie die Verbindung von im LDAP-Ordner deklarierten Benutzern, wenn der Benutzer nicht in Adobe Campaign]** deklariert ist. In diesem Fall muss auch die Gruppensynchronisierung konfiguriert werden: Die Option **[!UICONTROL Synchronisierung von Benutzerrechten aus Berechtigungen und Gruppen im Verzeichnis]** aktivieren muss ausgewählt werden.
+   Adobe Campaign kann so konfiguriert werden, dass der Anwender über seine LDAP-Authentifizierung auf die Plattform zugreift. Adobe Campaign muss in der Lage sein, die Gültigkeit der ID/Kennwort-Kombination im LDAP-Ordner zu steuern, damit der Benutzer in Adobe Campaign spontan erstellt werden kann. Überprüfen Sie dazu die **[!UICONTROL Aktivieren Sie die Verbindung von im LDAP-Ordner deklarierten Benutzern, wenn der Benutzer nicht in Adobe Campaign deklariert ist.]** -Option. In diesem Fall muss auch die Gruppensynchronisierung konfiguriert werden: die **[!UICONTROL Aktivieren der Synchronisierung von Benutzerrechten aus Berechtigungen und Gruppen im Ordner]** ausgewählt werden.
 
 1. Der Benutzer wurde in Adobe Campaign erstellt, jedoch nicht im LDAP-Ordner.
 
@@ -183,7 +183,7 @@ In diesem Abschnitt finden Sie einige einfache Anwendungsfälle, mit denen Sie d
 
 1. Im LDAP-Ordner befindet sich eine Gruppe, die nicht in Adobe Campaign vorhanden ist.
 
-   Diese Gruppe wird nicht in Adobe Campaign erstellt. Erstellen Sie die Gruppe und synchronisieren Sie die Gruppen, um eine Übereinstimmung über die Option **[!UICONTROL Aktivieren Sie die Synchronisierung der Benutzerrechte aus Berechtigungen und Gruppen im Verzeichnis]** zu ermöglichen.
+   Diese Gruppe wird nicht in Adobe Campaign erstellt. Sie müssen die Gruppe erstellen und die Gruppen synchronisieren, um eine Übereinstimmung über die **[!UICONTROL Aktivieren der Synchronisierung von Benutzerrechten aus Berechtigungen und Gruppen im Ordner]** -Option.
 
 1. Gruppen sind in Adobe Campaign vorhanden und der LDAP-Ordner wird nach dem Ereignis aktiviert: Benutzergruppen in Adobe Campaign werden nicht automatisch durch den Inhalt von LDAP-Gruppen ersetzt. Wenn eine Gruppe nur in Adobe Campaign vorhanden ist, können auch keine LDAP-Benutzer hinzugefügt werden, bis die Gruppe in LDAP erstellt und synchronisiert wurde.
 

@@ -45,7 +45,7 @@ Die folgende Liste enthält nur die Tabellen, die am stärksten fragmentiert sin
   <tr> 
    <td> NmsDeliveryPart<br /> </td> 
    <td> Mittel<br /> </td> 
-   <td> Einfügungen, Aktualisierungen, Löschungen<br /> </td> 
+   <td> Einfügen, Aktualisieren, Löschen<br /> </td> 
    <td> Arbeitstabelle, in welche Datensätze bei der Versandvorbereitung eingefügt werden. Diese werden dann während des Versands aktualisiert und nach Abschluss des Versands gelöscht.<br /> Diese Tabelle neigt dazu, schnell zu fragmentieren, obwohl ihre durchschnittliche Größe recht begrenzt ist.<br /> </td> 
   </tr> 
   <tr> 
@@ -57,7 +57,7 @@ Die folgende Liste enthält nur die Tabellen, die am stärksten fragmentiert sin
   <tr> 
    <td> NmsDeliveryStat<br /> </td> 
    <td> Mittel<br /> </td> 
-   <td> Einfügungen, Aktualisierungen, Löschungen<br /> </td> 
+   <td> Einfügen, Aktualisieren, Löschen<br /> </td> 
    <td> Diese Tabelle enthält Statistiken zum Versandprozess. Ihre Aufzeichnungen werden regelmäßig aktualisiert. <br /> </td> 
   </tr> 
   <tr> 
@@ -75,25 +75,25 @@ Die folgende Liste enthält nur die Tabellen, die am stärksten fragmentiert sin
   <tr> 
    <td> XtkWorkflowTask<br /> </td> 
    <td> Klein<br /> </td> 
-   <td> Einfügungen, Aktualisierungen, Löschungen<br /> </td> 
+   <td> Einfügen, Aktualisieren, Löschen<br /> </td> 
    <td> Jede Ausführung einer Workflow-Aktivität führt zur Erstellung eines Datensatzes in dieser Tabelle. Der Bereinigungsmechanismus löscht sie, sobald sie abgelaufen sind.<br /> </td> 
   </tr> 
   <tr> 
    <td> XtkWorkflowEvent<br /> </td> 
    <td> Klein<br /> </td> 
-   <td> Einfügungen, Aktualisierungen, Löschungen<br /> </td> 
+   <td> Einfügen, Aktualisieren, Löschen<br /> </td> 
    <td> Jede Transition, die zwischen Aufgaben in einem Workflow aktiviert wird, führt zur Erstellung eines Datensatzes in dieser Tabelle. Der Bereinigungsmechanismus löscht sie, sobald sie abgelaufen sind. <br /> </td> 
   </tr> 
   <tr> 
    <td> XtkWorkflowJob<br /> </td> 
    <td> Sehr klein <br /> </td> 
-   <td> Einfügungen, Aktualisierungen, Löschungen<br /> </td> 
-   <td> Diese Tabelle ist spezifisch für die Workflow-Engine. Dies ermöglicht das Senden von Befehlen an Workflows (z. B. Start, Stopp, Pause). Obwohl diese Tabelle klein ist, wird sie bei der Bereinigung der mit Workflows verknüpften Transaktionstabellen berücksichtigt.<br /> </td> 
+   <td> Einfügen, Aktualisieren, Löschen<br /> </td> 
+   <td> Diese Tabelle ist spezifisch für die Workflow-Engine. Dies ermöglicht das Senden von Befehlen an Workflows (z. B. Start, Stopp, Pause). Diese Tabelle ist zwar klein, wird aber bei der Bereinigung der mit Workflows verknüpften Transaktionstabellen berücksichtigt.<br /> </td> 
   </tr> 
   <tr> 
    <td> NmsBroadLog<br /> </td> 
-   <td> Größer<br /> </td> 
-   <td> Einfügungen, Aktualisierungen, Löschungen<br /> </td> 
+   <td> Größter<br /> </td> 
+   <td> Einfügen, Aktualisieren, Löschen<br /> </td> 
    <td> Dies ist die größte Tabelle im System. Pro gesendeter Nachricht wird ein Datensatz gesendet. Diese Datensätze werden eingefügt, aktualisiert, um den Versandstatus zu verfolgen, und beim Löschen des Verlaufs gelöscht. <br /> </td> 
   </tr> 
   <tr> 
@@ -111,25 +111,25 @@ Die folgende Liste enthält nur die Tabellen, die am stärksten fragmentiert sin
   <tr> 
    <td> NmsEmailErrorStat<br /> </td> 
    <td> Mittel<br /> </td> 
-   <td> Einfügungen, Aktualisierungen, Löschungen<br /> </td> 
+   <td> Einfügen, Aktualisieren, Löschen<br /> </td> 
    <td> Diese Tabelle enthält die Aggregate für SMTP-Fehler, sortiert nach Domain. Er enthält zunächst detaillierte Informationen, die von der Bereinigungsaufgabe aggregiert werden, sobald sie veraltet ist. <br /> </td> 
   </tr> 
   <tr> 
    <td> NmsBroadLogMid (auf einer Mid-Sourcing-Instanz)<br /> </td> 
    <td> Groß<br /> </td> 
-   <td> Einfügungen, Aktualisierungen, Löschungen<br /> </td> 
+   <td> Einfügen, Aktualisieren, Löschen<br /> </td> 
    <td> Nur wenn die Instanz 5.10 (oder höher) als Mid-Sourcing-Instanz verwendet wird. Dies ist eine der größten Tabellen in der Datenbank. Pro gesendeter Nachricht wird ein Datensatz gesendet. Diese Datensätze werden eingefügt, aktualisiert, um den Versandstatus zu verfolgen, und beim Löschen des Verlaufs gelöscht. Bei der Verwendung von Mid-Sourcing besteht die Empfehlung darin, den Verlauf zu begrenzen (in der Regel weniger als zwei Monate). Daher bleibt diese Tabelle im Hinblick auf die Größe vernünftig (weniger als 30 Go for 60 Millionen rows, data+index). Es ist jedoch sehr wichtig, sie von Zeit zu Zeit neu zu erstellen. <br /> </td> 
   </tr> 
   <tr> 
    <td> NmsBroadLogRcp (wenn die NmsRecipient-Tabelle verwendet wird) <br /> </td> 
    <td> Groß<br /> </td> 
-   <td> Einfügungen, Aktualisierungen, Löschungen<br /> </td> 
+   <td> Einfügen, Aktualisieren, Löschen<br /> </td> 
    <td> Dies ist die größte Tabelle im System. Pro gesendeter Nachricht wird ein Datensatz gesendet. Diese Datensätze werden eingefügt, aktualisiert, um den Versandstatus zu verfolgen, und beim Löschen des Verlaufs gelöscht. Beachten Sie, dass diese Tabelle in Version 5.10 kleiner ist als die Entsprechung in Version 4.05 (NmsBroadLog), da der SMTP-Nachrichtentext in der Tabelle NmsBroadLogMsg in Version 5.10 faktorisiert ist. Es ist jedoch nach wie vor wichtig, diese Tabelle regelmäßig neu zu indizieren (alle zwei Wochen zu Beginn) und sie von Zeit zu Zeit (einmal im Monat oder bei beeinträchtigter Leistung) vollständig neu zu erstellen. <br /> </td> 
   </tr> 
   <tr> 
    <td> YyyBroadLogXx (wenn eine externe Empfängertabelle verwendet wird)<br /> </td> 
    <td> Groß<br /> </td> 
-   <td> Einfügungen, Aktualisierungen, Löschungen<br /> </td> 
+   <td> Einfügen, Aktualisieren, Löschen<br /> </td> 
    <td> Entspricht NmsBroadLogRcp aber mit einer externen Empfängertabelle. Passen Sie YYY und XXX an die Werte in Ihrem Versand-Mapping an. <br /> </td> 
   </tr> 
   <tr> 
@@ -147,50 +147,50 @@ Die folgende Liste enthält nur die Tabellen, die am stärksten fragmentiert sin
   <tr> 
    <td> NmsBroadLogRtEvent (Message Center-Ausführungsinstanz)<br /> </td> 
    <td> Groß<br /> </td> 
-   <td> Einfügungen, Aktualisierungen, Löschungen<br /> </td> 
-   <td> Ähnlich wie die anderen Broadlog-Tabellen, jedoch mit dem NmsRtEvent anstelle von NmsRecipient.<br /> </td> 
+   <td> Einfügen, Aktualisieren, Löschen<br /> </td> 
+   <td> Ähnlich wie bei anderen Broadlog-Tabellen, jedoch mit dem NmsRtEvent anstelle von NmsRecipient.<br /> </td> 
   </tr> 
   <tr> 
    <td> NmsTrackingLogRtEvent( Message Center-Ausführungsinstanz)<br /> </td> 
    <td> Groß<br /> </td> 
    <td> Einfügungen, Löschungen<br /> </td> 
-   <td> Ähnlich wie die anderen trackingLog-Tabellen, jedoch mit der NmsRtEvent-Tabelle anstelle von NmsRecipient.<br /> </td> 
+   <td> Ähnlich wie bei anderen trackingLog -Tabellen, jedoch mit der NmsRtEvent -Tabelle anstelle von NmsRecipient .<br /> </td> 
   </tr> 
   <tr> 
    <td> NmsRtEvent (Message Center-Ausführungsinstanz)<br /> </td> 
    <td> Groß<br /> </td> 
-   <td> Einfügungen, Aktualisierungen, Löschungen<br /> </td> 
+   <td> Einfügen, Aktualisieren, Löschen<br /> </td> 
    <td> Tabelle, die die Message-Center-Ereigniswarteschlange enthält. Der Status dieser Ereignisse wird von Message Center bei der Verarbeitung aktualisiert. Löschungen werden während der Bereinigung durchgeführt. Wir empfehlen Ihnen, den Index dieser Tabelle regelmäßig neu zu erstellen und neu zu erstellen.<br /> </td> 
   </tr> 
   <tr> 
    <td> NmsEventHisto (Message Center-Kontrollinstanz)<br /> </td> 
    <td> Groß<br /> </td> 
-   <td> Einfügungen, Aktualisierungen, Löschungen<br /> </td> 
+   <td> Einfügen, Aktualisieren, Löschen<br /> </td> 
    <td> Ähnlich wie NmsRtEvent. Diese Tabelle archiviert alle Ereignisse aus allen Ausführungsinstanzen. Sie wird nicht in Echtzeit, sondern nur von Berichten verwendet.<br /> </td> 
   </tr> 
   <tr> 
    <td> NmsMobileApp<br /> </td> 
    <td> Sehr klein<br /> </td> 
-   <td> Einfügungen, Aktualisierungen, Löschungen<br /> </td> 
+   <td> Einfügen, Aktualisieren, Löschen<br /> </td> 
    <td> Tabellen mit Mobile Apps und deren Konfiguration.<br /> </td> 
   </tr> 
   <tr> 
    <td> NmsAppSubscriptionRcp<br /> </td> 
    <td> Groß<br /> </td> 
-   <td> Inserts, updates<br /> </td> 
+   <td> Einfügungen, Aktualisierungen<br /> </td> 
    <td> Tabelle mit den Kennungen der Mobilgeräte (Adressen), die zum Senden der Benachrichtigung verwendet werden (ähnlich wie bei einer Empfängertabelle).<br /> </td> 
   </tr> 
   <tr> 
    <td> NmsBroadLogAppSubRcp<br /> </td> 
    <td> Groß<br /> </td> 
-   <td> Einfügungen, Aktualisierungen, Löschungen<br /> </td> 
-   <td> Ähnlich wie die anderen Broadlog-Tabellen, jedoch mit NmsappSubscriptionRcp anstelle von NmsRecipient.<br /> </td> 
+   <td> Einfügen, Aktualisieren, Löschen<br /> </td> 
+   <td> Ähnlich wie bei anderen Broadlog-Tabellen, jedoch mit NmsappSubscriptionRcp anstelle von NmsRecipient.<br /> </td> 
   </tr> 
   <tr> 
    <td> NmsTrackingLogAppSubRcp<br /> </td> 
    <td> Groß<br /> </td> 
    <td> Einfügungen, Löschungen<br /> </td> 
-   <td> Ähnlich wie die anderen trackingLog-Tabellen, jedoch mit der Tabelle NmsappSubscriptionRcp anstelle von NmsRecipient.<br /> </td> 
+   <td> Ähnlich wie bei anderen trackingLog-Tabellen, jedoch mit der Tabelle NmsappSubscriptionRcp anstelle von NmsRecipient.<br /> </td> 
   </tr> 
   <tr> 
    <td> XtkSessionInfo<br /> </td> 

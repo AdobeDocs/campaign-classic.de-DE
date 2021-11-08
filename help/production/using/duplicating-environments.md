@@ -35,13 +35,13 @@ Gehen Sie hierzu wie folgt vor:
 
 1. Erstellen Sie eine Kopie der Datenbanken auf allen Instanzen in der Quellumgebung,
 1. Stellen Sie diese Kopien auf allen Instanzen der Zielumgebung wieder her,
-1. Führen Sie das Warnskript **nms:freezeInstance.js** in der Zielumgebung aus, bevor Sie es starten.
+1. Führen Sie die **nms:freezeInstance.js** Warnhinweisskript für die Zielumgebung erstellen, bevor sie gestartet wird.
 
    Dieser Prozess hat keine Auswirkungen auf die Server und deren Konfiguration.
 
    >[!NOTE]
    >
-   >Im Kontext von Adobe Campaign werden bei einer **Bluterguss** Aktionen kombiniert, die es ermöglichen, alle Prozesse zu stoppen, die mit der Außenwelt interagieren: Protokolle, Tracking, Sendungen, Kampagnen-Workflows usw.\
+   >Im Kontext von Adobe Campaign wird eine **Bluterguss** kombiniert Aktionen, mit denen Sie alle Prozesse stoppen können, die mit der Außenwelt interagieren: Protokolle, Tracking, Sendungen, Kampagnen-Workflows usw.\
    >Dieser Schritt ist erforderlich, um zu verhindern, dass Nachrichten mehrmals gesendet werden (einmal in der nominalen Umgebung und einmal in der duplizierten Umgebung).
 
    >[!IMPORTANT]
@@ -61,14 +61,14 @@ Damit dieser Prozess funktioniert, müssen die Quell- und Zielumgebungen über d
 
 ### Übermittlungsverfahren {#transfer-procedure}
 
-In diesem Abschnitt erfahren Sie, wie Sie mithilfe einer Fallstudie eine Quellumgebung in eine Zielumgebung übertragen können: Unser Ziel besteht hier darin, eine Produktionsumgebung (**prod** Instanz) in einer Entwicklungsumgebung (**dev** Instanz) wiederherzustellen, um in einem Kontext zu arbeiten, der der &quot;Live&quot;-Plattform so nahe wie möglich ist.
+In diesem Abschnitt erfahren Sie, wie Sie mithilfe einer Fallstudie eine Quellumgebung in eine Zielumgebung übertragen können: Unser Ziel ist es, die Produktionsumgebung wiederherzustellen (**prod** Instanz) in eine Entwicklungsumgebung (**dev** -Instanz), um in einem Kontext zu arbeiten, der der &quot;Live&quot;-Plattform so nahe wie möglich ist.
 
 Die folgenden Schritte müssen mit großer Sorgfalt ausgeführt werden: Einige Prozesse werden möglicherweise noch ausgeführt, wenn die Datenbanken der Quellumgebung kopiert werden. Durch die Vorsicht (Schritt 3 unten) wird verhindert, dass Nachrichten zweimal gesendet werden, und die Datenkonsistenz wird gewahrt.
 
 >[!IMPORTANT]
 >
 >* Das folgende Verfahren ist in der Sprache PostgreSQL gültig. Wenn die SQL-Sprache unterschiedlich ist (z. B. Oracle), müssen die SQL-Abfragen angepasst werden.
->* Die folgenden Befehle gelten im Kontext einer **prod**-Instanz und einer **dev**-Instanz unter PostgreSQL.
+>* Die folgenden Befehle gelten im Kontext eines **prod** Instanz und **dev** -Instanz unter PostgreSQL.
 
 >
 
@@ -95,8 +95,8 @@ Mit diesem Export können Sie die Entwicklungskonfiguration beibehalten und nur 
 
 Führen Sie dazu einen Package-Export für die folgenden beiden Elemente durch:
 
-* Exportieren Sie die Tabelle **xtk:option** in eine Datei &quot;options_dev.xml&quot;, ohne dass die Datensätze die folgenden internen Namen aufweisen: &#39;WdbcTimeZone&#39;, &#39;NmsServer_LastPostUpgrade&#39; und &#39;NmsBroadcast_RegexRules&#39;.
-* Exportieren Sie in einer Datei &quot;extaccount_dev.xml&quot;die Tabelle **nms:extAccount** für alle Datensätze, deren Kennung nicht 0 ist (@id &lt;> 0).
+* Exportieren Sie die **xtk:option** in eine &quot;options_dev.xml&quot;-Datei ohne die Datensätze mit den folgenden internen Namen konvertieren: &#39;WdbcTimeZone&#39;, &#39;NmsServer_LastPostUpgrade&#39; und &#39;NmsBroadcast_RegexRules&#39;.
+* Exportieren Sie in einer Datei &quot;extaccount_dev.xml&quot;die **nms:extAccount** für alle Datensätze, deren Kennung nicht 0 ist (@id &lt;> 0).
 
 Überprüfen Sie, ob die Anzahl der exportierten Optionen/Konten der Anzahl der Zeilen entspricht, die in jeder Datei exportiert werden sollen.
 
@@ -138,14 +138,14 @@ nlserver pdump
 
 >[!NOTE]
 >
->Unter Windows kann der Prozess **webmdl** weiterhin aktiv sein, ohne andere Vorgänge zu beeinträchtigen.
+>Unter Windows wird die **webmdl** -Prozess kann weiterhin aktiv sein, ohne andere Vorgänge zu beeinträchtigen.
 
 Sie können auch überprüfen, ob noch keine Systemprozesse ausgeführt werden.
 
 Gehen Sie dazu wie folgt vor:
 
-* Windows: Öffnen Sie den **Task Manager** und überprüfen Sie, ob keine **nlserver.exe**-Prozesse vorhanden sind.
-* Unter Linux: Führen Sie die **ps-aux aus. | grep nlserver** Befehl und vergewissern Sie sich, dass keine **nlserver**-Prozesse vorhanden sind.
+* Windows: Öffnen Sie die **Task Manager** und überprüfen Sie, dass keine **nlserver.exe** Prozesse.
+* Unter Linux: ausführen **ps aux | grep nlserver** und überprüfen Sie, ob **nlserver** Prozesse.
 
 ### Schritt 4: Wiederherstellen der Datenbanken in der Zielumgebung (dev) {#step-4---restore-the-databases-in-the-target-environment--dev-}
 
@@ -192,9 +192,9 @@ Starten Sie in der Zielumgebung die Adobe Campaign-Prozesse für alle Server neu
 
 >[!NOTE]
 >
->Bevor Sie Adobe Campaign in der **dev**-Umgebung neu starten, können Sie ein zusätzliches Sicherheitsverfahren anwenden: Starten Sie nur das Modul **web** .
+>Vor dem Neustart von Adobe Campaign auf der **dev** -Umgebung verwenden, können Sie ein zusätzliches Sicherheitsverfahren anwenden: starten **Web** nur -Modul.
 >  
->Bearbeiten Sie dazu die Konfigurationsdatei Ihrer Instanz (**config-dev.xml**) und fügen Sie dann das Zeichen &quot;_&quot;vor den Optionen autoStart=&quot;true&quot; für jedes Modul (mta, stat usw.) hinzu.
+>Bearbeiten Sie dazu die Konfigurationsdatei Ihrer Instanz (**config-dev.xml**), und fügen Sie dann das Zeichen &quot;_&quot;vor den Optionen autoStart=&quot;true&quot; für jedes Modul (mta, stat usw.) hinzu.
 
 Führen Sie den folgenden Befehl aus, um den Webprozess zu starten:
 
@@ -223,11 +223,11 @@ So importieren Sie die Konfiguration aus der Zielumgebungsdatenbank (dev):
 1. Öffnen Sie die Admin Console der Datenbank und bereinigen Sie die externen Konten (Tabelle nms:extAccount), deren Kennung nicht 0 (@id &lt;> 0) ist.
 1. Importieren Sie in der Adobe Campaign-Konsole das Package options_dev.xml , das Sie zuvor über die Package-Import-Funktion erstellt haben.
 
-   Überprüfen Sie, ob die Optionen tatsächlich im Knoten **[!UICONTROL Administration > Plattform > Optionen]** aktualisiert wurden.
+   Überprüfen Sie, ob die Optionen tatsächlich im Abschnitt **[!UICONTROL Administration > Plattform > Optionen]** Knoten.
 
 1. Importieren Sie in der Adobe Campaign-Konsole die zuvor über die Import-Paketfunktion erstellte Datei &quot;extaccount_dev.xml&quot;.
 
-   Überprüfen Sie, ob externe Datenbanken tatsächlich in **[!UICONTROL Administration > Plattform > Externe Konten]** importiert wurden.
+   Überprüfen Sie, ob externe Datenbanken tatsächlich in die **[!UICONTROL Administration > Plattform > Externe Konten]** .
 
 ### Schritt 9: Alle Prozesse neu starten und Benutzer ändern (dev) {#step-9---restart-all-processes-and-change-users--dev-}
 

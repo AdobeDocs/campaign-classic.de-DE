@@ -19,8 +19,7 @@ ht-degree: 100%
 
 Auf den Adobe Campaign-Explorer kann über das entsprechende Symbol in der Symbolleiste zugegriffen werden. Mit seiner Hilfe gelangen Sie zu allen Adobe Campaign-Funktionen und in die verschiedenen Konfigurationsbildschirme der Adobe Campaign-Plattform und können einige Plattformelemente im Detail anzeigen.
 
-Die **[!UICONTROL Explorer]**-Arbeitsbereich ist in drei Bereiche unterteilt:
-
+Der **[!UICONTROL Explorer]**-Arbeitsbereich ist in drei Bereiche unterteilt:
 
 ![](assets/s_ncs_user_navigation.png)
 
@@ -77,7 +76,8 @@ Adobe empfiehlt für optimale Navigation und Nutzung eine Bildschirmauflösung v
 >
 >Auflösungen von weniger als 1.600 x 900 Pixeln werden von Adobe Campaign nicht unterstützt.
 
-Wenn im **[!UICONTROL Explorer]** Arbeitsbereich einige Teile des Bereichs **[!UICONTROL Details]** abgeschnitten sind, erweitern Sie den Bereich mit dem Pfeil am oberen Rand oder klicken Sie auf die Schaltfläche **[!UICONTROL Vergrößern]**.
+Wenn im **[!UICONTROL Explorer]**-Arbeitsbereich einige Teile des Bereichs **[!UICONTROL Details]** abgeschnitten sind, erweitern Sie den Bereich mit dem Pfeil am oberen Rand oder klicken Sie auf die Schaltfläche **[!UICONTROL Vergrößern]**.
+
 
 ![](assets/s_ncs_user_resolution.png)
 

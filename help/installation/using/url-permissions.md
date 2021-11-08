@@ -23,13 +23,13 @@ Standardmäßig sind Instanzen nicht berechtigt, eine Verbindung zu externen URL
 
 >[!NOTE]
 >
->Dieses Verfahren ist auf **On-Premise** -Implementierungen beschränkt.
+>Dieses Verfahren beschränkt sich auf **On-Premise** -Implementierungen.
 >
->Als Kunde von **gehostet** können Sie, wenn Sie auf [Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de) zugreifen können, die Benutzeroberfläche für URL-Genehmigungen zur Selbstbedienung verwenden. [Weitere Informationen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=de)   
+>Als **gehostet** Kunden, wenn Sie auf [Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de), können Sie die Benutzeroberfläche für die URL-Genehmigungen zur Selbstbedienung verwenden. [Weitere Informationen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=de)
 >
->Andere **hybride/gehostete** -Kunden müssen sich an das Adobe Support-Team wenden, um IP zur Zulassungsliste hinzuzufügen.
+>Sonstiges **hybrid/gehostet** Kunden müssen sich an das Adobe Support-Team wenden, um IP zur Zulassungsliste hinzuzufügen.
 
-Bei **Hybrid**- und **On-Premise**-Bereitstellungen muss der Administrator in der Datei **serverConf.xml** auf eine neue **urlPermission** verweisen.
+Für **Hybrid** und **On-Premise** -Implementierungen muss der Administrator auf eine neue **urlPermission** im **serverConf.xml** -Datei.
 
 
 Drei Verbindungsschutzmodi sind verfügbar:
@@ -48,9 +48,9 @@ Drei Verbindungsschutzmodi sind verfügbar:
 
 >[!IMPORTANT]
 >
->Standardmäßig verwenden neue Implementierungen den Modus **Blocking** .
+>Standardmäßig verwenden neue Implementierungen die **Blockieren** -Modus.
 >
->Als bestehender Kunde, der aus einer Migration stammt, können Sie den Modus **Warnung** vorübergehend verwenden. Analysieren Sie den ausgehenden Traffic, bevor Sie die URLs zulassen. Sobald die Liste der zulässigen URLs definiert ist, können Sie die URLs zur Zulassungsliste hinzufügen und den Modus **Blocking** aktivieren.
+>Als bestehender Kunde, der aus einer Migration stammt, können Sie die **Warnung** -Modus. Analysieren Sie den ausgehenden Traffic, bevor Sie die URLs zulassen. Sobald die Liste der zulässigen URLs definiert ist, können Sie die URLs zur Zulassungsliste hinzufügen und die **Blockieren** -Modus.
 
 Weitere Informationen finden Sie in den folgenden Abschnitten:
 

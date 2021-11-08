@@ -21,7 +21,7 @@ Sie können ein verlorenes Passwort ändern oder wiederherstellen.
 Es gibt zwei mögliche Szenarien:
 
 * [Passwort, das von einem Adobe Campaign-Benutzer verloren geht](#password-lost-by-campaign-operator)
-* [Internes Kennwort verloren](#internal-password-lost)  (nur On-Premise-Kunden)
+* [Internes Kennwort verloren](#internal-password-lost) (nur On-Premise-Kunden)
 
 ## Passwort, das von einem Campaign-Benutzer verloren geht {#password-lost-by-campaign-operator}
 
@@ -30,7 +30,7 @@ Gehen Sie dazu wie folgt vor:
 
 1. Verbindung über einen Benutzer mit Administratorrechten
 1. Klicken Sie mit der rechten Maustaste auf einen Operator.
-1. Wählen Sie **[!UICONTROL Aktionen]** > **[!UICONTROL Kennwort zurücksetzen]** aus.
+1. Auswählen **[!UICONTROL Aktionen]** > **[!UICONTROL Kennwort zurücksetzen]**.
 
    ![](assets/operator-passwd.png)
 
@@ -45,9 +45,9 @@ Gehen Sie dazu wie folgt vor:
 Wenn das interne Kennwort verloren geht, müssen Sie es erneut initialisieren.
 Gehen Sie dazu wie folgt vor:
 
-1. Bearbeiten Sie die Datei **/usr/local/neolane/nl6/conf/serverConf.xml**.
+1. Bearbeiten Sie die **/usr/local/neolane/nl6/conf/serverConf.xml** -Datei.
 
-1. Wechseln Sie zur Zeile **internalPassword** .
+1. Navigieren Sie zu **internalPassword** Linie.
 
    ```
    <!-- XTK authentication mode internalPassword : Password of internal account -->
@@ -77,4 +77,4 @@ Gehen Sie dazu wie folgt vor:
    Confirmation 
    ```
 
-1. Sie können jetzt Ihr neues Kennwort verwenden, um eine Verbindung im Modus **Internal** herzustellen.
+1. Sie können jetzt Ihr neues Kennwort verwenden, um eine Verbindung herzustellen in **intern** -Modus.

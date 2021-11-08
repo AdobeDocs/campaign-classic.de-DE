@@ -26,7 +26,7 @@ Adobe Campaign-APIs werden in JavaScript innerhalb der Anwendung und in SOAP au�
 >[!IMPORTANT]
 >
 >Die Anzahl der pro Tag zulässigen Engine-Aufrufe hängt von Ihrem Lizenzvertrag ab. Weitere Informationen hierzu finden Sie auf [dieser Seite](https://helpx.adobe.com/de/legal/product-descriptions/adobe-campaign-classic---product-description.html).\
->Eine Liste aller APIs einschließlich ihrer vollständigen Beschreibung finden Sie in [dieser speziellen Dokumentation](https://docs.adobe.com/content/help/de-DE/campaign-classic/technicalresources/api/index.html).
+>Eine Liste aller APIs einschließlich ihrer vollständigen Beschreibung finden Sie unter [diese spezielle Dokumentation](https://docs.adobe.com/content/help/de-DE/campaign-classic/technicalresources/api/index.html).
 
 ## Voraussetzungen {#prerequisites}
 
@@ -92,13 +92,13 @@ Weitere Informationen finden Sie unter [ExecuteQuery (xtk:queryDef)](../../confi
 </SOAP-ENV:Envelope>
 ```
 
-Das Element `<soap-env:envelope>` ist das erste Element der Nachricht, das den SOAP-Umschlag darstellt.
+Die `<soap-env:envelope>` element ist das erste Element der Nachricht, das den SOAP-Umschlag darstellt.
 
-Das Element `<soap-env:body>` ist das erste untergeordnete Element des Umschlags. Sie enthält die Beschreibung der Nachricht, d. h. den Inhalt der Abfrage oder der Antwort.
+Die `<soap-env:body>` -Element ist das erste untergeordnete Element des Umschlags. Sie enthält die Beschreibung der Nachricht, d. h. den Inhalt der Abfrage oder der Antwort.
 
-Die aufzurufende Methode wird im Element `<executequery>` aus dem Text der SOAP-Nachricht eingegeben.
+Die aufzurufende Methode wird im `<executequery>` -Element aus dem Text der SOAP-Nachricht.
 
-In SOAP werden die Parameter in der Reihenfolge ihres Erscheinungsbilds erkannt. Der erste Parameter `<__sessiontoken>` übernimmt die Authentifizierungskette, der zweite Parameter die XML-Beschreibung der Abfrage aus dem `<querydef>`-Element.
+In SOAP werden die Parameter in der Reihenfolge ihres Erscheinungsbilds erkannt. Der erste Parameter, `<__sessiontoken>`, nimmt die Authentifizierungskette und der zweite Parameter ist die XML-Beschreibung der Abfrage aus der `<querydef>` -Element.
 
 ### SOAP-Antwort {#soap-response}
 
@@ -115,7 +115,7 @@ In SOAP werden die Parameter in der Reihenfolge ihres Erscheinungsbilds erkannt.
 </SOAP-ENV:Envelope>
 ```
 
-Das Ergebnis der Abfrage wird aus dem Element `<pdomoutput>` eingegeben.
+Das Ergebnis der Abfrage wird aus dem `<pdomoutput>` -Element.
 
 ## Umgang mit Fehlern       {#error-management}
 
@@ -135,7 +135,7 @@ ODBC error: [Microsoft][ODBC SQL Server Driver][SQL Server]The statement has bee
 </SOAP-ENV:Envelope>
 ```
 
-Das Element `<soap-env:fault>` im Textkörper der SOAP-Nachricht wird verwendet, um die bei der Verarbeitung des Webdienstes auftretenden Fehlersignale zu übermitteln. Dies setzt sich aus den folgenden Unterelementen zusammen:
+Die `<soap-env:fault>` -Element im Textkörper der SOAP-Nachricht verwendet wird, um die bei der Verarbeitung des Webdienstes auftretenden Fehlersignale zu übermitteln. Dies setzt sich aus den folgenden Unterelementen zusammen:
 
 * `<faultcode>` : gibt den Fehlertyp an. Die Fehlertypen sind:
 
@@ -147,7 +147,7 @@ Das Element `<soap-env:fault>` im Textkörper der SOAP-Nachricht wird verwendet,
 * `<faultstring>` : Fehlermeldung
 * `<detail>` : Lange Fehlermeldung
 
-Der Erfolg oder Misserfolg des Dienstaufrufs wird bei der Überprüfung des Elements `<faultcode>` identifiziert.
+Der Erfolg oder Misserfolg des Dienstaufrufs wird identifiziert, wenn die Variable `<faultcode>` -Element überprüft wird.
 
 >[!IMPORTANT]
 >
@@ -177,4 +177,4 @@ Die Server-URL lautet wie folgt:
 
 https://serverName/nl/jsp/soaprouter.jsp
 
-Mit **`<server>`** dem Adobe Campaign-Anwendungsserver (**nlserver web**).
+Mit **`<server>`** der Adobe Campaign-Anwendungsserver (**nlserver web**).

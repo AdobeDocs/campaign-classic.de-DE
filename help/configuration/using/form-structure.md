@@ -63,7 +63,7 @@ Das Eingabefeld passt sich automatisch dem gewählten Datentyp an und verwendet 
 
 >[!NOTE]
 >
->Sie können die im Datenschema definierte Bezeichnung überschreiben, indem Sie das Attribut **label** zum Element `<input>` hinzufügen:\
+>Sie können die im Datenschema definierte Bezeichnung überschreiben, indem Sie die **label** -Attribut `<input>` element:\
 >`<input label="E-mail address" xpath="@name" />`
 
 Standardmäßig wird jedes Feld, je nach Datentyp, einzeilig über den gesamten verfügbaren Platz angezeigt.
@@ -185,7 +185,7 @@ Der Haupt-Container wird durch das Attribut **type=&quot;Notebook&quot;** defini
 
 >[!NOTE]
 >
->Die Funktion **style=&quot;down|up**(standardmäßig)**&quot;** erzwingt die vertikale Positionierung von Registerkartenbeschriftungen unter oder über dem Steuerelement. Hierbei handelt es sich um eine optionale Funktion.
+>A **style=&quot;down|up**(standardmäßig)**&quot;** erzwingt die vertikale Positionierung von Registerkartenbeschriftungen unter oder über dem Steuerelement. Hierbei handelt es sich um eine optionale Funktion.
 >![](assets/d_ncs_integration_form_exemple7.png)
 >`<container style="down" type="notebook">  ... </container>`
 

@@ -24,7 +24,7 @@ Jede Seite der Site, die Sie verfolgen möchten, muss in Ihrer Adobe Campaign-Pl
 
 ## Definieren der URLs, die in der Anwendung verfolgt werden sollen {#defining-the-urls-to-be-tracked-in-the-application}
 
-Mit dieser Methode können Sie die zu verfolgenden Seiten manuell definieren und dann ein Beispiel für das zugehörige Webtrackingtag generieren. Dieser Vorgang wird im Knoten **[!UICONTROL Kampagnenausführung>Ressourcen>Web-Tracking-Tags]** der Clientkonsole definiert.
+Mit dieser Methode können Sie die zu verfolgenden Seiten manuell definieren und dann ein Beispiel für das zugehörige Webtrackingtag generieren. Dieser Vorgang wird im **[!UICONTROL Kampagnenausführung > Ressourcen > Webtracking-Tags]** -Knoten der Clientkonsole.
 
 ![](assets/d_ncs_integration_webtracking_screen.png)
 
@@ -33,13 +33,13 @@ So generieren Sie den HTML-Code, der in die Seite eingefügt werden soll:
 * Geben Sie den Titel des Tags ein: wird es in den Trackinglogs angezeigt,
 * Geben Sie die Quell-URL an: Dieses Feld dient zu Informationszwecken und ermöglicht die Angabe der verfolgten Seite (optional).
 * Geben Sie bei Bedarf einen Gültigkeitszeitraum an.
-* Klicken Sie auf **[!UICONTROL HTML-Code generieren]**.
+* Klicken **[!UICONTROL Erzeugen]** HTML-Code.
 
 Kopieren Sie dann den generierten Code und fügen Sie ihn in die zu verfolgende Seite ein.
 
 ## spontane Erstellung von zu verfolgenden URLs {#on-the-fly-creation-of-urls-to-be-tracked}
 
-Sie können die Web-Tracking-URLs direkt erstellen, indem Sie dem Wert des Parameters **tagid** Informationen hinzufügen:
+Sie können die Web-Tracking-URLs direkt erstellen, indem Sie dem Wert der Variablen **tagid** Parameter:
 
 * Typ der verfolgten Seite: &quot;w&quot;für WEB oder &quot;t&quot;für TRANSAKTION,
 * Der interne Name des Ordners, in dem die URL erstellt werden muss.
@@ -52,7 +52,7 @@ tagid=<identifier>|<type>|<foldername>
 
 >[!IMPORTANT]
 >
->Denken Sie daran, den Wert des Parameters **tagid** zu kodieren, wenn er als URL-Parameter verwendet wird.
+>Denken Sie daran, den Wert der **tagid** -Parameter, wenn er als URL-Parameter verwendet wird.
 
 **Beispiel**: Erstellung einer Webtracking-URL vom Typ Transaktion.
 

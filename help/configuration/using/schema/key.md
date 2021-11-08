@@ -48,7 +48,7 @@ Eine Tabelle muss mindestens einen Schlüssel haben.
 
 In der Regel werden Schlüssel nach dem Hauptelement des Schemas und der Indizes deklariert.
 
-Ein Schlüssel wird als Verbund bezeichnet, wenn er mehrere Felder enthält (d. h. mehrere `<keyfield>` untergeordnete Elemente). Verwenden Sie keinen zusammengesetzten Schlüssel, um einen Primärschlüssel zu definieren.
+Ein Schlüssel wird als Verbund bezeichnet, wenn er mehrere Felder enthält (d. h. mehrere `<keyfield>` Kinder). Verwenden Sie keinen zusammengesetzten Schlüssel, um einen Primärschlüssel zu definieren.
 
 Wenn das Hauptelement des Schemas das Attribut &quot;@autopk=true&quot; enthält, ist der Primärschlüssel eindeutig. Pro Schema kann nur ein Primärschlüssel verwendet werden.
 
@@ -74,7 +74,7 @@ Deklaration eines zusammengesetzten Schlüssels, der das Leeren des Felds &quot;
  </key>
 ```
 
-Deklaration eines Primärschlüssels im Feld &quot;Name&quot; des STRING-Typs in einem `<srcschema>` und der entsprechenden SQL-Abfrage:
+Deklaration eines Primärschlüssels im Feld &quot;Name&quot;des STRING-Typs in einer `<srcschema>`  und der entsprechenden SQL-Abfrage:
 
 ```
  

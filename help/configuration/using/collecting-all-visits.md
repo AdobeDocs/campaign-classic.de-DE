@@ -29,11 +29,11 @@ Ein Benutzer, der der Plattform bekannt ist, ist ein Empfänger, der bereits in 
 
 ## Konfiguration des Servers {#server-configuration}
 
-Die Server werden durch Überladen bestimmter Elemente der Datei **serverConf.xml** konfiguriert. Diese Dateien werden im Unterverzeichnis **conf** des Adobe Campaign-Installationsordners gespeichert.
+Die Server werden konfiguriert, indem bestimmte Elemente der **serverConf.xml** -Datei. Diese Dateien werden im **conf** -Unterverzeichnis des Adobe Campaign-Installationsordners.
 
 ### Weiterleitungsserver {#redirection-server}
 
-Setzen Sie für den Weiterleitungsserver das Attribut **trackWebVisitors** des Elements **redirection** auf **true**.
+Legen Sie für den Weiterleitungsserver die **trackWebVisitors** -Attribut **Umleitung** Element zu **true**.
 
 ```
 <redirection P3PCompactPolicy="CAO DSP COR CURa DEVa TAIa OUR BUS IND UNI COM NAV"
@@ -46,7 +46,7 @@ trackingPassword=""
 
 Um Tracking-Informationen über Ihre Clientkonsole anzuzeigen, müssen Sie:
 
-* Erstellen Sie einen **Platzhalterversand** (das Versand-Mapping muss mit dem Mapping des Zielschemas identisch sein),
-* Geben Sie den internen Namen **a1/> dieses Versands in die Option** NmsTracking_WebTrackingDelivery **ein.**
+* Erstellen Sie eine **Platzhalterversand** (Das Versand-Mapping muss mit dem Mapping des Zielschemas identisch sein),
+* Geben Sie die **interner Name** des Versands im **NmsTracking_WebTrackingDelivery** -Option.
 
 Alle Site-Tracking-Informationen, die nicht direkt auf einen Klick in einer E-Mail folgen, können im erstellten Platzhalterversand angezeigt werden.

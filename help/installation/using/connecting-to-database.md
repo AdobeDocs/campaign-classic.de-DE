@@ -94,7 +94,7 @@ Gehen Sie in der Abfrageaktivität zur Erstellung einer periodischen Verbindung 
 
 Sie können durch das Konfigurieren eines externen FDA-Kontos eine sichere Verbindung für den Zugriff auf eine externe Datenbank herstellen.
 
-Fügen Sie dazu &quot;**:ssl**&quot;hinter der Serveradresse und -adresse des verwendeten Ports hinzu. Beispiel: **192.168.0.52:4501:ssl**.
+Fügen Sie dazu &quot;**:ssl**&quot; nach der Serveradresse und Adresse des verwendeten Ports. Beispiel: **192 168 0,52:4501:ssl**.
 
 Die Daten werden dadurch unter Verwendung des sicheren SSL-Protokolls gesendet.
 

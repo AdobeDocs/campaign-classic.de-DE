@@ -6,7 +6,7 @@ exl-id: e044b35a-b49f-408a-900d-2afe8ff10212
 source-git-commit: 1a9e0f8bf374e10af938d15dcebe943819ae327b
 workflow-type: tm+mt
 source-wordcount: '2141'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 ## Was hat sich geändert?
 
-2021 führte Apple neue Datenschutzfunktionen für seine native Mail-App ein. Diese App enthält jetzt die Apple-Funktion zum Datenschutz bei E-Mails. Im Grunde können Absender keine Tracking-Pixel mehr verwenden, um Informationen über Empfänger zu erfassen, die sich für die Aktivierung der Apple-Datenschutzfunktion für E-Mails entschieden haben. [Mehr dazu](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html){target=&quot;_blank&quot;}.
+2021 führte Apple neue Datenschutzfunktionen für seine native Mail-App ein. Diese App enthält jetzt die Apple-Funktion zum Datenschutz bei E-Mails. Im Grunde können Absender keine Tracking-Pixel mehr verwenden, um Informationen über Empfänger zu erfassen, die sich für die Aktivierung der Apple-Datenschutzfunktion für E-Mails entschieden haben. [Mehr dazu](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=de){target=&quot;_blank&quot;}.
 
 ## Wie wirkt sich dies auf meine Kampagnen aus?
 
@@ -39,7 +39,7 @@ Speichern Sie Ihre Daten und konsolidieren Sie Ihr aktuelles Wissen auf Geräten
 Archivieren Sie Ihre Trackinglogs über den Aufbewahrungszeitraum von Adobe Campaign hinaus:
 
 1. Überprüfen Sie die Dauer des Aufbewahrungszeitraums in Ihrer Kampagneninstanz.
-1. Überprüfen Sie Ihre aktiven Zielgruppen-Mappings. Bestimmen Sie, ob Sie zusätzlich zur nativen Profiltabelle (`nmsRecipient`) benutzerdefinierte Profiltabellen verwenden.
+1. Überprüfen Sie Ihre aktiven Zielgruppen-Mappings. Bestimmen Sie, ob Sie zusätzlich zur nativen Profiltabelle benutzerdefinierte Profiltabellen verwenden (`nmsRecipient`).
 1. Exportieren Sie Ihre Trackinglogs aus Adobe Campaign. Schließen Sie die Protokolle ein, die Daten zum Benutzeragenten und zum Betriebssystem enthalten.
 
 ### Bewertung des aktuellen Trends bei den Öffnungsraten
@@ -59,7 +59,7 @@ Es wird empfohlen, dass Sie die derzeit verfügbaren Daten untersuchen und die K
 
 Um Einblicke aus Adobe Campaign-Daten zu gewinnen, können Sie vordefinierte Berichte verwenden:
 
-* **[!UICONTROL Betriebssystem-]** Bericht
+* **[!UICONTROL Betriebssysteme]** Bericht
 
    Verwenden Sie diesen Bericht, um den Besucheranteil nach Betriebssystem und Version zu ermitteln. [Mehr dazu](../../reporting/using/global-reports.md#operating-systems)
 
@@ -71,7 +71,7 @@ Um Einblicke aus Adobe Campaign-Daten zu gewinnen, können Sie vordefinierte Ber
 
    ![](../../reporting/using/assets/s_ncs_user_os_report2.png)
 
-* **[!UICONTROL Verteilung des]** Opensreport
+* **[!UICONTROL Öffnungsverteilung]** Bericht
 
    Verwenden Sie diesen Bericht, um den Anteil der E-Mail-Öffnungen nach Betriebssystem zu ermitteln. [Mehr dazu](../../reporting/using/global-reports.md#breakdown-of-opens)
 
@@ -81,7 +81,7 @@ Um Einblicke aus Adobe Campaign-Daten zu gewinnen, können Sie vordefinierte Ber
 
 Sie können die Workflows identifizieren, in denen E-Mail-Öffnungen als Kriterium für Segmentierung, Zielgruppenbestimmung und Retargeting verwendet werden.
 
-Dazu können Sie das Attribut **[!UICONTROL type]** der getrackten Link-URL (**[!UICONTROL url/@type]**) verwenden. Bei E-Mail-Öffnungen ist dieses Attribut auf **[!UICONTROL Öffnen]** gesetzt. Dieses Attribut ist im Abfrageeditor, in der Aktivität **[!UICONTROL Abfrage]** in einem Workflow sowie in vordefinierten Filtern verfügbar. Sie können dieses Attribut als Targeting-Kriterium für Marketing-Kampagnen verwenden.
+Zu diesem Zweck können Sie die **[!UICONTROL type]** -Attribut der getrackten Link-URL (**[!UICONTROL url/@type]**). Bei E-Mail-Öffnungen ist dieses Attribut auf **[!UICONTROL Öffnen]**. Dieses Attribut ist im Abfrageeditor verfügbar, dem **[!UICONTROL Abfrage]** Aktivitäten in einem Workflow und vordefinierten Filtern. Sie können dieses Attribut als Targeting-Kriterium für Marketing-Kampagnen verwenden.
 
 ![](assets/identify-email-open-tracking-1.png)
 
@@ -89,7 +89,7 @@ In diesem Beispiel möchte ein Marketing-Experte ein Prämienangebot an die Empf
 
 * Sie können E-Mail-Öffnungen als Targeting-Kriterium in einer Abfrage verwenden.
 
-   Sie können als Filterbedingung festlegen, dass der URL-Typ der Trackinglogs eines bestimmten Versands auf **[!UICONTROL Öffnen]** gesetzt werden muss.
+   Sie können als Filterbedingung festlegen, dass der URL-Typ der Trackinglogs eines bestimmten Versands auf **[!UICONTROL Öffnen]**.
 
    ![](assets/identify-email-open-tracking-2.png)
 
@@ -105,7 +105,7 @@ In diesem Beispiel möchte ein Marketing-Experte ein Prämienangebot an die Empf
    >
    >Über einen Workflow lassen sich die Targeting-Kriterien eines vordefinierten Filters nicht anzeigen.
 
-Um die Liste der Workflows abzurufen, in denen E-Mail-Öffnungen als Targeting-Kriterium verwendet werden, müssen Sie das Schema `xtk:workflow` abfragen. Der Inhalt des Workflows wird im Feld **[!UICONTROL XML Memo (data)]** im XML-Format gespeichert.
+Um die Liste der Workflows abzurufen, in denen E-Mail-Öffnungen als Targeting-Kriterium verwendet werden, müssen Sie die `xtk:workflow` Schema. Der Inhalt des Workflows wird im **[!UICONTROL XML-Memo (data)]** im XML-Format.
 
 ![](assets/identify-email-open-tracking-5.png)
 
@@ -113,7 +113,7 @@ Sie können festlegen, dass die Workflows diesen Inhalt enthalten müssen:
 
 `expr="[url/@type] = 2"`
 
-Dieses Targeting-Kriterium bedeutet, dass der Typ der getrackten URL auf **[!UICONTROL Öffnen]** gesetzt werden muss.
+Dieses Targeting-Kriterium bedeutet, dass der Typ der getrackten URL auf **[!UICONTROL Öffnen]**.
 
 ![](assets/identify-email-open-tracking-6.png)
 
@@ -138,13 +138,13 @@ Dieses Beispiel zeigt eine benutzerdefinierte Implementierung in einem einzelnen
 >
 >Es wird dringend empfohlen, dieses Paket in einer Nicht-Produktionsumgebung zu testen und zu validieren.
 
-Laden Sie das [Beispielpaket](assets/PKG_Search_workflows_using_Opens_in_queries_V1.xml) herunter und installieren Sie es. [Weitere Informationen](../../platform/using/working-with-data-packages.md#importing-packages).
+Laden Sie die [Beispielpaket](assets/PKG_Search_workflows_using_Opens_in_queries_V1.xml) und installieren Sie es. [Weitere Informationen](../../platform/using/working-with-data-packages.md#importing-packages).
 
 Nachdem Sie das Paket installiert haben, können Sie über den Ordner auf den Workflow zugreifen, der die vordefinierten technischen Workflows in Ihrer Instanz enthält:
 
 `/Administration/Production/Technical workflows/nmsTechnicalWorkflow`
 
-Wählen Sie in der Benutzeroberfläche **[!UICONTROL Administration]** > **[!UICONTROL Produktion]** > **[!UICONTROL Technische Workflows]**.
+Wählen Sie in der Benutzeroberfläche die Option **[!UICONTROL Administration]** > **[!UICONTROL Produktion]** > **[!UICONTROL Technische Workflows]**.
 
 ![](assets/identify-email-open-tracking-8.png)
 
@@ -158,7 +158,7 @@ Der Workflow umfasst die folgenden Hauptschritte:
 
 Der Workflow umfasst die folgenden detaillierten Schritte:
 
-1. Die erste Aktivität ist eine Abfrageaktivität im Schema `xtk:workflow` . Diese Aktivität wird verwendet, um in der entsprechenden Instanz die expliziten Workflow-Abfragen zu finden, die E-Mail-Öffnungen als Targeting-Kriterium enthalten.
+1. Die erste Aktivität ist eine Abfrageaktivität im `xtk:workflow` Schema. Diese Aktivität wird verwendet, um in der entsprechenden Instanz die expliziten Workflow-Abfragen zu finden, die E-Mail-Öffnungen als Targeting-Kriterium enthalten.
 
    ![](assets/identify-email-open-tracking-9.png)
 
@@ -339,11 +339,11 @@ Um Tracking-Daten beizubehalten, müssen Sie sie aus Adobe Campaign in Ihr Infor
 
 >[!IMPORTANT]
 >
->Das folgende Beispiel konzentriert sich auf das vordefinierte `nms:Recipient`-Schema, das das standardmäßige Profilschema ist. Wenn Sie zusätzliche benutzerdefinierte Zielgruppen-Mappings verwenden, die an benutzerdefinierte Profile angehängt sind, empfehlen wir, diese Exportstrategie auf alle benutzerdefinierten Protokolltabellen zu erweitern. [Mehr dazu](../../configuration/using/target-mapping.md)
+>Im folgenden Beispiel wird der vordefinierte `nms:Recipient` schema, das das standardmäßige Profilschema ist. Wenn Sie zusätzliche benutzerdefinierte Zielgruppen-Mappings verwenden, die an benutzerdefinierte Profile angehängt sind, empfehlen wir, diese Exportstrategie auf alle benutzerdefinierten Protokolltabellen zu erweitern. [Mehr dazu](../../configuration/using/target-mapping.md)
 
 ##### Funktionsprinzip
 
-Standardmäßig ist das Schema `nms:Recipient` mit drei Schemata verknüpft, die Sie exportieren müssen:
+Standardmäßig wird die `nms:Recipient` -Schema mit drei Schemata verknüpft ist, die Sie exportieren müssen:
 
 | Schema | Content |
 | --- | --- |
@@ -381,11 +381,11 @@ In diesem Beispiel wird gezeigt, wie Sie Tracking-Daten aus Adobe Campaign expor
    Die erste Abfrage wird verwendet, um die Trackinglogs für die letzten drei Monate abzurufen.
 Sie können eine inkrementelle Abfrage verwenden, um nur die Datensätze zu extrahieren, die Sie noch nicht exportiert haben.
 
-   Fügen Sie alle erforderlichen Informationen aus dem Knoten **[!UICONTROL Zusätzliche Daten]** hinzu.
+   Fügen Sie alle erforderlichen Informationen aus der **[!UICONTROL Zusätzliche Daten]** Knoten.
 
    ![](assets/export-tracking-data-2.png)
 
-1. Fügen Sie die Aktivität **[!UICONTROL Extraktion (Datei)]** hinzu. Ordnen Sie alle Daten aus der Abfrage einem Extraktionsdateiformat zu.
+1. Hinzufügen einer **[!UICONTROL Extraktion (Datei)]** Aktivität. Ordnen Sie alle Daten aus der Abfrage einem Extraktionsdateiformat zu.
 
    ![](assets/export-tracking-data-3.png)
 
@@ -424,14 +424,14 @@ Diese Beispiele zeigen, wie Sie mithilfe von Workflows Datensätze nach iOS-Ger�
 
 * Der erste Beispiel-Workflow umfasst die folgenden Aktivitäten:
 
-   1. Die erste **[!UICONTROL Abfrage]** -Aktivität wird verwendet, um alle E-Mail-Öffnungen in den letzten drei Monaten auszuwählen.
-   1. Die Aktivität **[!UICONTROL Aufspaltung]** wird verwendet, um die Auswahl nach E-Mail-Anwendung, Browser, Betriebssystem und Gerät aufzuteilen.
+   1. Die erste **[!UICONTROL Abfrage]** -Aktivität verwendet, um alle E-Mail-Öffnungen in den letzten drei Monaten auszuwählen.
+   1. A **[!UICONTROL Aufspaltung]** -Aktivität wird verwendet, um die Auswahl nach E-Mail-Anwendung, Browser, Betriebssystem und Gerät aufzuteilen.
 
-   1. Eine **[!UICONTROL Deduplizierung]** -Aktivität folgt jeder **[!UICONTROL Aufspaltung]** -Aktivität. Die Aktivität **[!UICONTROL Deduplizierung]** wird verwendet, um doppelte E-Mail-Adressen zu entfernen.
+   1. A **[!UICONTROL Deduplizierung]** -Aktivität folgt jedem **[!UICONTROL Aufspaltung]** Aktivität. Die **[!UICONTROL Deduplizierung]** -Aktivität wird verwendet, um doppelte E-Mail-Adressen zu entfernen.
 
-      Die Aktivität **[!UICONTROL Deduplizierung]** wird nach der Aktivität **[!UICONTROL Aufspaltung]** positioniert, um zu verhindern, dass Informationen zu Empfängern verloren gehen, die verschiedene Geräte verwenden.
+      Die **[!UICONTROL Deduplizierung]** Aktivität wird nach der **[!UICONTROL Aufspaltung]** -Aktivität verwenden, um den Verlust von Informationen über Empfänger zu vermeiden, die verschiedene Geräte verwenden.
 
-   1. Eine **[!UICONTROL Ende]** -Aktivität folgt jeder **[!UICONTROL Deduplizierung]** -Aktivität.
+   1. Ein **[!UICONTROL Ende]** -Aktivität folgt jedem **[!UICONTROL Deduplizierung]** Aktivität.
 
    Dieser Workflow ist nützlich, wenn Sie Empfänger nur in der nativen Empfängertabelle für die Zielgruppenbestimmung speichern.
 
@@ -439,13 +439,13 @@ Diese Beispiele zeigen, wie Sie mithilfe von Workflows Datensätze nach iOS-Ger�
 
 * Der zweite Beispiel-Workflow umfasst die folgenden Aktivitäten:
 
-   1. Die erste **[!UICONTROL Abfrage]** -Aktivität wird verwendet, um alle E-Mail-Öffnungen in den letzten drei Monaten auszuwählen.
-   1. Die Aktivität **[!UICONTROL Deduplizierung]** wird verwendet, um doppelte E-Mail-Adressen zu entfernen.
-   1. Eine **[!UICONTROL Verzweigung]** -Aktivität wird verwendet:
+   1. Die erste **[!UICONTROL Abfrage]** -Aktivität verwendet, um alle E-Mail-Öffnungen in den letzten drei Monaten auszuwählen.
+   1. A **[!UICONTROL Deduplizierung]** -Aktivität wird verwendet, um doppelte E-Mail-Adressen zu entfernen.
+   1. A **[!UICONTROL Verzweigung]** -Aktivität verwendet wird:
 
-      * In einer Transition wird die Aktivität **[!UICONTROL Dimensionsänderung]** verwendet, um die Empfänger zu finden, auf die sich das Trackinglog bezieht.
-      * In der anderen Transition wird die Aktivität **[!UICONTROL Aufspaltung]** verwendet, um die Auswahl nach E-Mail-Anwendung, Browser, Betriebssystem und Gerät aufzuteilen.
-   1. Die Aktivität **[!UICONTROL Ende]** folgt jeder Transition nach der Aktivität **[!UICONTROL Aufspaltung]** .
+      * In einer Transition wird die **[!UICONTROL Dimensionsänderung]** -Aktivität verwendet wird, um die Empfänger zu finden, auf die sich das Trackinglog bezieht.
+      * In der anderen Transition wird die **[!UICONTROL Aufspaltung]** -Aktivität wird verwendet, um die Auswahl nach E-Mail-Anwendung, Browser, Betriebssystem und Gerät aufzuteilen.
+   1. Ein **[!UICONTROL Ende]** -Aktivität folgt jeder Transition nach **[!UICONTROL Aufspaltung]** Aktivität.
 
    Dieser Workflow ist nützlich, wenn Sie Empfänger in einer anderen Tabelle als der nativen Empfängertabelle speichern.
 

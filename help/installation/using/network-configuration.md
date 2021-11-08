@@ -25,7 +25,7 @@ Verwenden Sie den eingebetteten Apache Tomcat-Port als Priorität (standardmäß
 
 ### Versandserver {#delivery-server}
 
-Für den Versandserver (**nlserver mta**) müssen die folgenden Ports geöffnet sein:
+Für den Versandserver (**nlserver mta**), müssen die folgenden Ports geöffnet sein:
 
 <table> 
  <tbody> 
@@ -37,21 +37,21 @@ Für den Versandserver (**nlserver mta**) müssen die folgenden Ports geöffnet 
   <tr> 
    <td> 25/tcp (smtp)<br /> </td> 
    <td> Anywhere<br /> </td> 
-   <td> SMTP-Traffic für E-Mail-Sendungen.<br /> </td> 
+   <td> SMTP-Traffic für den E-Mail-Rundfunk.<br /> </td> 
   </tr> 
   <tr> 
-   <td> 53/udp (domain)<br /> </td> 
+   <td> 53/udp (Domäne)<br /> </td> 
    <td> DNS-Server<br /> </td> 
    <td> DNS-Abfragen.<br /> </td> 
   </tr> 
   <tr> 
-   <td> 38000/tcp (Standardport)<br /> </td> 
-   <td> SMS Gateway<br /> </td> 
-   <td> Wird zum Senden von SMS-Traffic an den NetSize-SMS-Router verwendet [Option].<br /> </td> 
+   <td> 38000/tcp (Standardanschluss)<br /> </td> 
+   <td> SMS-Gateway<br /> </td> 
+   <td> Wird verwendet, um SMS-Traffic an den NetSize-SMS-Router zu senden [Option].<br /> </td> 
   </tr> 
   <tr> 
    <td> 7777/udp<br /> </td> 
-   <td> Statistischer Server<br /> </td> 
+   <td> Statistikserver<br /> </td> 
    <td> Zugriff auf den Statistikserver.<br /> </td> 
   </tr> 
  </tbody> 
@@ -59,7 +59,7 @@ Für den Versandserver (**nlserver mta**) müssen die folgenden Ports geöffnet 
 
 ### Eingehende E-Mails {#inbound-mail}
 
-Für den Wiederherstellungsprozess von eingehenden E-Mails (**nlserver inMail**) müssen die folgenden Ports geöffnet sein:
+Für den Wiederherstellungsprozess von eingehenden E-Mails (**nlserver inMail**), müssen die folgenden Ports geöffnet sein:
 
 <table> 
  <tbody> 
@@ -76,14 +76,14 @@ Für den Wiederherstellungsprozess von eingehenden E-Mails (**nlserver inMail**)
   <tr> 
    <td> 25/tcp (smtp)<br /> </td> 
    <td> Interner Mail-Server<br /> </td> 
-   <td> SMTP-Traffic zum Senden verbleibender Bounce-Nachrichten, die nicht automatisch von den vordefinierten Regeln verarbeitet werden.<br /> </td> 
+   <td> SMTP-Traffic zum Senden der verbleibenden Bounce-Nachrichten, die nicht automatisch von den vordefinierten Regeln verarbeitet werden.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### Anwendungs-Server {#application-server}
 
-Für den Anwendungsserver (**nlserver web**) müssen die folgenden Ports geöffnet sein:
+Für den Anwendungsserver (**nlserver web**), müssen die folgenden Ports geöffnet sein:
 
 <table> 
  <tbody> 
@@ -104,7 +104,7 @@ Wenn mehrere Anwendungsserver einer Adobe Campaign-Plattform miteinander kommuni
 
 ### SMS-Versandstatus {#sms-delivery-status}
 
-Um SMS-Sendungen (**nlserver sms**) zu verfolgen, muss der folgende Port geöffnet sein:
+So verfolgen Sie SMS-Sendungen (**nlserver sms**), muss der folgende Port geöffnet sein:
 
 <table> 
  <tbody> 
@@ -114,8 +114,8 @@ Um SMS-Sendungen (**nlserver sms**) zu verfolgen, muss der folgende Port geöffn
    <td> Erklärung<br /> </td> 
   </tr> 
   <tr> 
-   <td> 38000/tcp (Standardport)<br /> </td> 
-   <td> SMS Gateway<br /> </td> 
+   <td> 38000/tcp (Standardanschluss)<br /> </td> 
+   <td> SMS-Gateway<br /> </td> 
    <td> Fragt den Status der Versandwarteschlange ab, der vom NetSize-SMS-Gateway verwaltet wird [Option].<br /> </td> 
   </tr> 
  </tbody> 
@@ -123,7 +123,7 @@ Um SMS-Sendungen (**nlserver sms**) zu verfolgen, muss der folgende Port geöffn
 
 ### Rich-Client {#rich-client}
 
-Für den Rich-Client von Adobe Campaign (**nlclient**) müssen die folgenden Ports geöffnet sein:
+Für den Rich-Client von Adobe Campaign (**nlclient**), müssen die folgenden Ports geöffnet sein:
 
 <table> 
  <tbody> 
@@ -182,7 +182,7 @@ Darüber hinaus müssen bestimmte Komponenten über das öffentliche Internet zu
 <table> 
  <tbody> 
   <tr> 
-   <td> Listening-Port<br /> </td> 
+   <td> Listening-Anschluss<br /> </td> 
    <td> Location<br /> </td> 
   </tr> 
   <tr> 
@@ -199,8 +199,8 @@ Dieser Server hostet Webformulare, Mirrorseiten usw. Die folgenden Ports müssen
 <table> 
  <tbody> 
   <tr> 
-   <td> Listening-Port<br /> </td> 
-   <td> Location<br /> </td> 
+   <td> Listening-Anschluss<br /> </td> 
+   <td> Standort<br /> </td> 
   </tr> 
   <tr> 
    <td><p> 80/tcp (http)</p><p> 443/tcp (https)</p><br /> </td> 
@@ -214,8 +214,8 @@ Dieser Server hostet Webformulare, Mirrorseiten usw. Die folgenden Ports müssen
 <table> 
  <tbody> 
   <tr> 
-   <td> Listening-Port<br /> </td> 
-   <td> Location<br /> </td> 
+   <td> Listening-Anschluss<br /> </td> 
+   <td> Standort<br /> </td> 
   </tr> 
   <tr> 
    <td><p> 80/tcp (http)</p><p> 443/tcp (https)</p><br /> </td> 
@@ -226,12 +226,12 @@ Dieser Server hostet Webformulare, Mirrorseiten usw. Die folgenden Ports müssen
 
 ## Integration mit Adobe Experience Manager {#integration-with-adobe-experience-manager}
 
-Die Integration zwischen Adobe Campaign und Adobe Experience Manager erfordert das Öffnen mehrerer Ports, wenn die Installation &quot;On-Premise&quot;ist. Weitere Informationen zur Konfiguration dieser Integration finden Sie in der [ausführlichen Dokumentation](../../integrations/using/about-adobe-experience-manager.md).
+Die Integration zwischen Adobe Campaign und Adobe Experience Manager erfordert das Öffnen mehrerer Ports, wenn die Installation &quot;On-Premise&quot;ist. Weiterführende Informationen zur Konfiguration dieser Integration finden Sie im Abschnitt [Detaillierte Dokumentation](../../integrations/using/about-adobe-experience-manager.md).
 
 <table> 
  <tbody> 
   <tr> 
-   <td> Listening-Port<br /> </td> 
+   <td> Listening-Anschluss<br /> </td> 
    <td> Beschreibung<br /> </td> 
   </tr> 
   <tr> 

@@ -19,7 +19,7 @@ ht-degree: 58%
 
 In diesem Kapitel wird beschrieben, wie Sie Erweiterungsschemata konfigurieren, um das konzeptionelle Datenmodell der Adobe Campaign-Datenbank zu erweitern.
 
-Ein besseres Verständnis der in Campaign integrierten Tabellen und ihrer Interaktion finden Sie im [Campaign Classic-Datenmodell](https://helpx.adobe.com/de/campaign/kb/acc-datamodel.html).
+Die in Campaign integrierten Tabellen und deren Interaktion werden im Abschnitt [Campaign Classic-Datenmodell](https://helpx.adobe.com/de/campaign/kb/acc-datamodel.html).
 
 Die physische und logische Struktur der im Programm übertragenen Daten wird in XML beschrieben. Sie folgt einer Adobe Campaign-spezifischen Grammatik namens **Schema**.
 
@@ -84,5 +84,5 @@ Der Identifikationsschlüssel eines Schemas ist eine Zeichenfolge, die mithilfe 
 >
 >Kennungen dürfen nicht mit numerischen Zeichen beginnen.
 >
->Die folgenden Namespaces sind für Beschreibungen der Systementitäten reserviert, die für den Betrieb der Adobe Campaign-Anwendung erforderlich sind, und dürfen nicht verwendet werden: **xtk**, **nl**, **nms**, **ncm**, **temp**, **ncl**, **crm&lt;a1 3/>,** xxl **.**
+>Die folgenden Namespaces sind für Beschreibungen der Systementitäten reserviert, die für den Betrieb der Adobe Campaign-Anwendung erforderlich sind, und dürfen nicht verwendet werden: **xtk**, **nl**, **nms**, **ncm**, **temp**, **ncl**, **crm**, **xxl**.
 

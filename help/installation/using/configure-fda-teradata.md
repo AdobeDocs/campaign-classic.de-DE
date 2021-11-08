@@ -17,11 +17,11 @@ ht-degree: 76%
 
 ![](../../assets/v7-only.svg)
 
-Verwenden Sie die Option Campaign [Federated Data Access](../../installation/using/about-fda.md) (FDA) , um in externen Datenbanken gespeicherte Informationen zu verarbeiten. Gehen Sie wie folgt vor, um den Zugriff auf Teradata zu konfigurieren.
+Verwenden von Campaign [Federated Data Access](../../installation/using/about-fda.md) (FDA), um in externen Datenbanken gespeicherte Informationen zu verarbeiten. Gehen Sie wie folgt vor, um den Zugriff auf Teradata zu konfigurieren.
 
-1. Installieren und konfigurieren Sie [Teradata-Treiber](#teradata-config)
-1. Konfigurieren des externen Teradata [a1/> in Campaign](#teradata-external)
-1. [zusätzliche Konfiguration](#teradata-additional-configurations) für Teradata- und Campaign-Server einrichten
+1. Installieren und Konfigurieren [Teradata](#teradata-config)
+1. Konfigurieren des Teradata [externes Konto](#teradata-external) in Campaign
+1. Einrichten [zusätzliche Konfiguration](#teradata-additional-configurations) für Teradata und Campaign-Server
 
 ## Teradata-Konfiguration {#teradata-config}
 
@@ -74,7 +74,7 @@ Sie müssen Treiber installieren, damit Teradata die Verbindung zu Campaign hers
 
 Über das externe Teradata-Konto können Sie Ihre Kampagneninstanz mit Ihrer externen Teradata-Datenbank verbinden.
 
-1. Klicken Sie in Campaign **[!UICONTROL Explorer]** auf **[!UICONTROL Administration]** / **[!UICONTROL Plattform]** / **[!UICONTROL Externe Konten]**.
+1. Von Campaign **[!UICONTROL Explorer]** klicken **[!UICONTROL Administration]** / **[!UICONTROL Plattform]** / **[!UICONTROL Externe Konten]**.
 
 1. Klicken Sie auf **[!UICONTROL Neu]** und wählen Sie **[!UICONTROL Externe Datenbank]** als **[!UICONTROL Typ]** aus.
 
@@ -82,19 +82,19 @@ Sie müssen Treiber installieren, damit Teradata die Verbindung zu Campaign hers
 
 1. Zum Konfigurieren des externen **[!UICONTROL Teradata]**-Kontos müssen Sie Folgendes angeben:
 
-   * **[!UICONTROL Typ]**: Wählen Sie den  **** Teradatatatatyp aus.
+   * **[!UICONTROL Typ]**: Wählen Sie die **[!UICONTROL Teradata]** Typ.
 
    * **[!UICONTROL Server]**: URL oder Name Ihres Teradata-Servers
 
    * **[!UICONTROL Konto]**: Name des Kontos, das für den Zugriff auf die Teradata-Datenbank verwendet wird
 
-   * **[!UICONTROL Kennwort]**: Kennwort für die Verbindung mit der Teradata-Datenbank
+   * **[!UICONTROL Passwort]**: Kennwort für die Verbindung mit der Teradata-Datenbank
 
    * **[!UICONTROL Datenbank]**: Name der Datenbank (optional)
 
    * **[!UICONTROL Optionen]**: Optionen, die über Teradata weitergegeben werden sollen. Verwenden Sie das folgende Format: &#39;parameter=value&#39;. Verwenden Sie eine halbe Spalte als Trennzeichen zwischen Werten.
 
-   * **[!UICONTROL Zeitzone]**: Die in Teradata festgelegte Zeitzone. [Weitere Informationen](#timezone)   
+   * **[!UICONTROL Zeitzone]**: Die in Teradata festgelegte Zeitzone. [Weitere Informationen](#timezone)
 
 ### Query Banding
 
@@ -110,9 +110,9 @@ Wenn diese Option konfiguriert ist, sendet Adobe Campaign jedes Mal, wenn ein Ca
 
 Gehen Sie wie folgt vor, um Query Banding zu konfigurieren:
 
-1. Verwenden Sie **[!UICONTROL Default]**, um einen standardmäßigen Query Banding einzugeben, der verwendet wird, wenn einem Benutzer kein Query Banding zugeordnet ist. Wenn dieses Feld leer gelassen wird, können Benutzer ohne Query Banding Teradata nicht verwenden.
+1. Verwenden Sie die  **[!UICONTROL Standard]** , um einen Standardwert für Query Banding einzugeben, der verwendet wird, wenn einem Benutzer kein Query Banding zugeordnet ist. Wenn dieses Feld leer gelassen wird, können Benutzer ohne Query Banding Teradata nicht verwenden.
 
-1. Verwenden Sie das Feld **[!UICONTROL Benutzer]** , um einen Query Banding für jeden Benutzer anzugeben. Sie können so viele Schlüssel/Wert-Paare hinzufügen, wie Sie benötigen, z. B. priority=1;workload=high. Wenn dem Benutzer kein Query Banding zugewiesen ist, wird das Feld **[!UICONTROL Default]** angewendet.
+1. Verwenden Sie die **[!UICONTROL Benutzer]** -Feld, um einen Query Banding für jeden Benutzer anzugeben. Sie können so viele Schlüssel/Wert-Paare hinzufügen, wie Sie benötigen, z. B. priority=1;workload=high. Wenn dem Benutzer kein Query Banding zugewiesen ist, wird die **[!UICONTROL Standard]** wird angewendet.
 
 1. Markieren Sie die Option **[!UICONTROL Aktiv]**, um diese Funktion zu aktivieren.
 
@@ -124,7 +124,7 @@ Der Fehler **ODB-240000 ODBC-Fehler: [Microsoft][ODBC Driver Manager]-Datenquell
 
 * Ab Campaign 18.10 können Sie ODBCDriverName=&quot;Teradata Database ODBC Driver 16.10&quot; in den Optionen des externen Kontos hinzufügen. Die Versionsnummer kann sich ändern. Führen Sie odbcad32.exe aus und gehen Sie zum Treiber-Tab, um den genauen Namen abzurufen.
 
-* Wenn Sie eine ältere Campaign-Version verwenden, müssen Sie den von der Treiberinstallation erstellten Teradata von odbcinst.ini in einen neuen Abschnitt mit dem Namen Teradata kopieren. In diesem Fall kann Regedit verwendet werden. Wenn Ihre Basis in latin1 ist, müssen Sie **APICharSize=1** in den Optionen hinzufügen.
+* Wenn Sie eine ältere Campaign-Version verwenden, müssen Sie den von der Treiberinstallation erstellten Teradata von odbcinst.ini in einen neuen Abschnitt mit dem Namen Teradata kopieren. In diesem Fall kann Regedit verwendet werden. Wenn Ihre Basis in latin1 ist, müssen Sie **APICharSize=1** in den Optionen.
 
 ## Ergänzende Konfigurationen {#teradata-additional-configurations}
 

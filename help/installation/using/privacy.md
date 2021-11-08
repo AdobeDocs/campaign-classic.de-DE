@@ -21,7 +21,7 @@ ht-degree: 45%
 
 Adobe Campaign bietet eine Reihe von Tools, die Sie bei der Einhaltung von Datenschutzbestimmungen wie DSGVO und CCPA unterstützen.
 
-Allgemeine Informationen dazu, was unter Datenschutzverwaltung zu verstehen ist, und zu den Implementierungsschritten in Adobe Campaign finden Sie auf [dieser Seite](../../platform/using/privacy-management.md) . Darüber hinaus finden Sie Best Practices und einen Überblick über den Benutzerprozess und die Rollen.
+Siehe [diese Seite](../../platform/using/privacy-management.md) für allgemeine Informationen zu den Funktionen der Datenschutzverwaltung und den Implementierungsschritten in Adobe Campaign. Darüber hinaus finden Sie Best Practices und einen Überblick über den Benutzerprozess und die Rollen.
 
 ## URL-Personalisierung {#url-personalization}
 
@@ -35,7 +35,7 @@ Wenn Sie personalisierte Links zu Ihrem Inhalt hinzufügen, achten Sie darauf, d
 
 ### Empfehlung
 
-Um zu überprüfen und sicherzustellen, dass Sie oben nicht verwenden, führen Sie eine Abfrage zur Tracking-URL-Tabelle über den [Generischen Abfrage-Editor für Kampagnen](../../platform/using/steps-to-create-a-query.md) aus oder erstellen Sie einen Workflow mit Filterkriterien in der [Abfrageaktivität](../../workflow/using/query.md).
+Um zu überprüfen und sicherzustellen, dass Sie oben nicht verwenden, führen Sie eine Abfrage zur Tracking-URL-Tabelle über aus. [Generischer Kampagnenabfrage-Editor](../../platform/using/steps-to-create-a-query.md) oder erstellen Sie einen Workflow mit Filterkriterien im [Abfrageaktivität](../../workflow/using/query.md).
 
 Beispiel:
 
@@ -57,11 +57,11 @@ Um die Sicherheit zu verbessern, wurde ein Signaturmechanismus für das Tracking
 >
 >Wenn auf eine fehlerhafte signierte URL geklickt wird, wird dieser Fehler zurückgegeben: &quot;Angeforderte URL &#39;...&#39; wurde nicht gefunden.&quot;
 
-Darüber hinaus können Sie seit Campaign-Version 20.2 und der [!DNL Gold Standard]-Version eine Verbesserung verwenden, um in früheren Builds generierte URLs zu deaktivieren. Diese Funktion ist standardmäßig deaktiviert. Sie können sich an [Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) wenden, um diese Funktion zu aktivieren.
+Außerdem wurde seit Campaign 20.2 und der [!DNL Gold Standard] -Version verwenden, können Sie eine Verbesserung verwenden, um in früheren Builds generierte URLs zu deaktivieren. Diese Funktion ist standardmäßig deaktiviert. Sie können sich an [Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) um diese Funktion zu aktivieren.
 
-Wenn Sie [!DNL Gold Standard] 19.1.4 ausführen, kann es zu Problemen mit Push-Benachrichtigungsversand über Tracking-Links oder zu Sendungen über Anker-Tags kommen. In diesem Fall wird empfohlen, die URL-Signatur zu deaktivieren.
+Wenn Sie [!DNL Gold Standard] 19.1.4 können Probleme beim Versand von Push-Benachrichtigungen mithilfe von Tracking-Links oder bei Sendungen mit Anker-Tags auftreten. In diesem Fall wird empfohlen, die URL-Signatur zu deaktivieren.
 
-Unabhängig davon, ob Sie Campaign in Ihrem Unternehmen oder in einer Hybridarchitektur ausführen, müssen Sie sich an [Kundenunterstützung](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html) wenden, damit die URL-Signatur deaktiviert wird.
+Unabhängig davon, ob Sie Campaign vor Ort oder in einer Hybridarchitektur ausführen, müssen Sie sich an folgende Adresse wenden: [Kundenunterstützung](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html) , damit die URL-Signatur deaktiviert wird.
 
 Wenn Sie Campaign in einer Hybridarchitektur ausführen, stellen Sie vor der Aktivierung der URL-Signatur sicher, dass die gehostete Mid-Sourcing-Instanz wie folgt aktualisiert wurde:
 * Vor der lokalen Marketinginstanz
@@ -152,7 +152,7 @@ Mit dieser Einschränkung können Sie Passwortfelder entfernen, das externe Kont
 
    >[!NOTE]
    >
-   >Sie können `$(loginId) = 0 or $(login) = 'admin'` durch `hasNamedRight('admin')` ersetzen, damit alle Benutzer mit Administratorrechten diese Kennwörter sehen können.
+   >Sie können `$(loginId) = 0 or $(login) = 'admin'` mit `hasNamedRight('admin')` , damit alle Benutzer mit Administratorrechten diese Passwörter sehen können.
 
 ## Schutz von Seiten, die personenbezogene Daten enthalten
 
@@ -174,12 +174,12 @@ Führen Sie die folgenden Schritte aus, um Ihre Seiten zu schützen:
    *Disallow: /
    ```
 
-   Informationen zu IIS finden Sie auf [dieser Seite](https://docs.microsoft.com/en-us/iis/extensions/iis-search-engine-optimization-toolkit/managing-robotstxt-and-sitemap-files).
+   Informationen zu IIS finden Sie unter [diese Seite](https://docs.microsoft.com/en-us/iis/extensions/iis-search-engine-optimization-toolkit/managing-robotstxt-and-sitemap-files).
 
-   Für Apache können Sie die Datei in **/var/www/robots.txt** (Debian) platzieren.
+   Für Apache können Sie die Datei in **/var/www/robots.txt** (Debian).
 
-1. Manchmal reicht das Hinzufügen einer **robots.txt**-Datei aus Sicherheitsgründen nicht aus. Wenn beispielsweise eine andere Website einen Link zu Ihrer Seite enthält, kann diese in einem Suchergebnis angezeigt werden.
+1. Manchmal wird eine **robots.txt** -Datei ist im Hinblick auf die Sicherheit nicht ausreichend. Wenn beispielsweise eine andere Website einen Link zu Ihrer Seite enthält, kann diese in einem Suchergebnis angezeigt werden.
 
 Es ist deshalb empfehlenswert, neben der **robots.txt**-Datei einen **X-Robots-Tag**-Header hinzuzufügen. Dies ist sowohl in Apache als auch in IIS sowie in der Konfigurationsdatei **serverConf.xml** möglich.
 
-Weitere Informationen finden Sie in [diesem Artikel](https://developers.google.com/search/reference/robots_meta_tag).
+Weitere Informationen finden Sie unter [diesem Artikel](https://developers.google.com/search/reference/robots_meta_tag).

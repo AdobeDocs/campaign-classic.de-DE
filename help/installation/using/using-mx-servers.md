@@ -34,7 +34,7 @@ Wenn Sie eine E-Mail senden, stellt der Software-Server eine Verbindung zum Empf
 
 Im Verbindungsprotokoll müssen Regeln eingehalten werden, um das Spamming und Monopolisieren von Servern zu verhindern. Die wichtigsten sind:
 
-* **Maximale Anzahl erlaubter** Verbindungen: Wenn diese Zahl eingehalten wird, befinden sich IPs nicht auf der Blockierungsliste und E-Mails werden aufgrund zusätzlicher Verbindungen nicht verweigert.
+* **Maximale Anzahl erlaubter Verbindungen**: Wenn diese Zahl eingehalten wird, befinden sich IPs nicht auf der Blockierungsliste und E-Mails werden aufgrund zusätzlicher Verbindungen nicht verweigert.
 * **Maximale Nachrichtenanzahl**: Während der Verbindung muss die Anzahl der zu sendenden Nachrichten definiert werden. Wenn diese Zahl nicht definiert ist, sendet der Server so viele wie möglich. Dies führt dazu, dass der ISP als Spammer identifiziert und der Blockierungsliste hinzugefügt wird.
 * **Nachrichten pro Stunde**: Um Ihre E-Reputation zu wahren, steuert Adobe Campaign die Anzahl der E-Mails, die Ihre IPs pro Stunde senden können. Dieses System schützt Sie vor E-Mail-Verweigerung oder Blockierungsliste.
 
@@ -48,7 +48,7 @@ Dies ist der Prozess, der von Adobe Campaign zur Verarbeitung von Fehlern währe
 
 Die Fehleradresse verarbeitet Bounces, die von ISPs zurückgesendet werden. Der Prozess analysiert verschiedene SMTP-Fehlercodes und wendet die richtige Aktion gemäß dem RegEx-Standard an.
 
-Beispielsweise hat eine E-Mail-Adresse ein Feedback &quot;550 Benutzer unbekannt&quot;, das von einem ISP gesendet wurde. Dieser Fehlercode wird von der Adobe Campaign-Fehleradresse verarbeitet (Rückgabepfad-Adresse). Dieser Fehler wird dann mit dem RegEx-Standard verglichen und die richtige Regel wird angewendet. Die E-Mail gilt als *Hardbounce* (entspricht dem Typ) und dann *Unbekannter Nutzer* (entspricht dem Grund) und wird nach der ersten Schleife in das System unter Quarantäne gestellt.
+Beispielsweise hat eine E-Mail-Adresse ein Feedback &quot;550 Benutzer unbekannt&quot;, das von einem ISP gesendet wurde. Dieser Fehlercode wird von der Adobe Campaign-Fehleradresse verarbeitet (Rückgabepfad-Adresse). Dieser Fehler wird dann mit dem RegEx-Standard verglichen und die richtige Regel wird angewendet. Die E-Mail gilt als *Hardbounce* (entspricht dem Typ) und dann *Benutzer unbekannt* (entsprechend dem Grund) und nach der ersten Schleife in das System unter Quarantäne gestellt werden.
 
 ### Wie wird sie von Adobe Campaign verwaltet?
 
@@ -62,7 +62,7 @@ Adobe Campaign verwaltet diesen Prozess mit einer Übereinstimmung zwischen eine
 
 >[!NOTE]
 >
->Weiterführende Informationen zu Typen und Ursachen für fehlgeschlagene Sendungen finden Sie in diesem [Abschnitt](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+>Weiterführende Informationen zu Typen und Ursachen für fehlgeschlagene Sendungen finden Sie in diesem Abschnitt [Abschnitt](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
 
 ## Zustellbarkeitsinstanz
 
@@ -78,12 +78,12 @@ Der benutzerdefinierte Modus richtet sich an fortgeschrittene Clients, die eigen
 
 ## Bounce-Beispiele
 
-* **Unbekannter Nutzer**  (Hardbounce): 550 5.1.1 ... Benutzer ist unbekannt {mx003}
-* **Postfach voll**  (Softbounce): 550 5.2.2 Benutzerquote überschritten
-* **Inaktives Postfach**  (Softbounce): 550 5.7.1 : Empfängeradresse abgelehnt: Inaktive MailBox, nicht länger als 6 Monate geöffnet
-* **Domäne ungültig**  (Softbounce): DNS-Abfrage für &#39;ourdan.com&#39; fehlgeschlagen
-* **Abgelehnt**  (Softbounce): Eingehender E-Mail-Bounce (Regel &#39;Feedback_loop_Hotmail&#39; entspricht diesem Bounce)
-* **Unerreichbar**  (Softbounce): 421 4.16.55  [TS01] Nachrichten von x.x.x.x wurden aufgrund übermäßiger Benutzerbeschwerden vorübergehend zurückgestellt
+* **Unbekannter Nutzer** (Hardbounce): 550 5.1.1 ... Benutzer ist unbekannt {mx003}
+* **Postfach voll** (Softbounce): 550 5.2.2 Benutzerquote überschritten
+* **Inaktives Postfach** (Softbounce): 550 5.7.1 : Empfängeradresse abgelehnt: Inaktive MailBox, nicht länger als 6 Monate geöffnet
+* **Domäne ungültig** (Softbounce): DNS-Abfrage für &#39;ourdan.com&#39; fehlgeschlagen
+* **Abgelehnt** (Softbounce): Eingehender E-Mail-Bounce (Regel &#39;Feedback_loop_Hotmail&#39; entspricht diesem Bounce)
+* **Unerreichbar** (Softbounce): 421 4,16,55 [TS01] Nachrichten von x.x.x.x werden aufgrund übermäßiger Benutzerbeschwerden vorübergehend verschoben
 
 **Verwandte Themen:**
 * [MX-Konfiguration](../../installation/using/email-deliverability.md#mx-configuration)

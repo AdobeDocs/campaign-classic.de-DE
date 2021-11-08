@@ -21,7 +21,7 @@ Die Business-API ist für jeden Objekttyp spezifisch. Sie wirken sich auf Folgen
 
 * Sendungen:
 
-   * Erstellen einer Versandaktion, siehe [SubmitDelivery (nms:delivery)](#submitdelivery--nms-delivery-),
+   * Versandaktionen, siehe [SubmitDelivery (nms:delivery)](#submitdelivery--nms-delivery-),
    * Versand einer Kampagne (Start, Pause, Stopp, Testversand),
    * Abruf der Versandlogs.
 
@@ -33,14 +33,14 @@ Die Business-API ist für jeden Objekttyp spezifisch. Sie wirken sich auf Folgen
       Siehe [SOAP-Methoden in JavaScript](../../configuration/using/soap-methods-in-javascript.md).
 
 * Content Management
-* Abonnementverwaltung, siehe [Abonnieren (nms:subscription)](#subscribe--nms-subscription-) und [Abmelden (nms:subscription)](#unsubscribe--nms-subscription-).
+* Abonnementverwaltung, siehe [Abonnieren (nms:subscription)](#subscribe--nms-subscription-) und [Abmeldung (nms:subscription)](#unsubscribe--nms-subscription-).
 * Datenprozesse: Importe, Exporte.
 
 In diesem Abschnitt wird die Verwendung der Dienste &quot;Abonnieren&quot;, &quot;Abmelden&quot;und &quot;SendenVersand&quot;beschrieben.
 
 >[!IMPORTANT]
 >
->[Die JSAPI-](https://docs.adobe.com/content/help/de-DE/campaign-classic/technicalresources/api/index.html) Dokumentation von Campaign enthält zusätzliche Informationen zu SOAP-Aufrufen und zur Verwendung von JavaScript in Adobe Campaign sowie einen vollständigen Verweis auf alle in der Anwendung verwendeten Methoden und Funktionen.
+>[Dokumentation zu Campaign JSAPI](https://docs.adobe.com/content/help/de-DE/campaign-classic/technicalresources/api/index.html) enthält zusätzliche Informationen zu SOAP-Aufrufen und zur Verwendung von JavaScript in Adobe Campaign sowie einen vollständigen Verweis auf alle in der Anwendung verwendeten Methoden und Funktionen.
 
 ## Abonnieren (nms:subscription) {#subscribe--nms-subscription-}
 
@@ -65,7 +65,7 @@ Beschreibung der Methode &quot;subscribe&quot;im Schema &quot;nms:subscription&q
 </method>
 ```
 
-Die Definition des Abstimmschlüssels muss über das Attribut _**key** im Element `<recipient>` des XML-Dokuments eingegeben werden. Der Inhalt dieses Attributs ist eine kommagetrennte XPath-Liste.
+Die Definition des Abstimmschlüssels muss über _ eingegeben werden **key** -Attribut auf `<recipient>` -Element des XML-Dokuments. Der Inhalt dieses Attributs ist eine kommagetrennte XPath-Liste.
 
 Dieser Aufruf gibt außer Fehlern keine Daten zurück.
 
@@ -136,7 +136,7 @@ Beschreibung der Methode &quot;Unsubscribe&quot;im Schema &quot;nms:subscription
 </method>
 ```
 
-Die Definition des Abstimmschlüssels muss über das Attribut _key im Element `<recipient>` des XML-Dokuments erfolgen. Der Inhalt dieses Attributs ist eine kommagetrennte XPath-Liste.
+Die Definition des Abstimmschlüssels muss über das Attribut _key im `<recipient>` -Element des XML-Dokuments. Der Inhalt dieses Attributs ist eine kommagetrennte XPath-Liste.
 
 Wenn der Empfänger nicht in der Datenbank vorhanden ist oder nicht den entsprechenden Informationsdienst abonniert hat, führt der Dienst keine Aktion durch und erzeugt keinen Fehler.
 
@@ -207,7 +207,7 @@ Dieser Aufruf gibt außer Fehlern keine Daten zurück.
 
 ### Beispiel für XML-Dokument {#xml-document-example}
 
-Dieses Beispiel basiert auf einer benutzerdefinierten Versandvorlage aus einer externen Datenquelle (in diesem Fall eine Datei). Die Konfiguration wird in der Versandvorlage ausführlich beschrieben, sodass beim Aufrufen nur der Inhalt der Datei aus dem Element `<externalsource>` gesendet werden muss.
+Dieses Beispiel basiert auf einer benutzerdefinierten Versandvorlage aus einer externen Datenquelle (in diesem Fall eine Datei). Die Konfiguration wird in der Versandvorlage ausführlich beschrieben, sodass nur der Inhalt der Datei aus dem `<externalsource>` -Element.
 
 ```
 <delivery>

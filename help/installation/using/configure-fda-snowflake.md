@@ -17,10 +17,10 @@ ht-degree: 72%
 
 ![](../../assets/v7-only.svg)
 
-Verwenden Sie die Option Campaign **Federated Data Access** (FDA) , um in einer externen Datenbank gespeicherte Informationen zu verarbeiten. Gehen Sie wie folgt vor, um den Zugriff auf [!DNL Snowflake] zu konfigurieren.
+Verwenden von Campaign **Federated Data Access** (FDA), um in einer externen Datenbank gespeicherte Informationen zu verarbeiten. Gehen Sie wie folgt vor, um den Zugriff auf [!DNL Snowflake].
 
-1. [!DNL Snowflake] unter [CentOS](#snowflake-centos), [Windows](#snowflake-windows) oder [Debian](#snowflake-debian) konfigurieren
-1. Konfigurieren Sie das externe [!DNL Snowflake] [Konto](#snowflake-external) in Campaign.
+1. Konfigurieren [!DNL Snowflake] on [CentOS](#snowflake-centos), [Windows](#snowflake-windows) oder [Debian](#snowflake-debian)
+1. Konfigurieren Sie die [!DNL Snowflake] [externes Konto](#snowflake-external) in Campaign
 
 
 >[!NOTE]
@@ -31,7 +31,7 @@ Verwenden Sie die Option Campaign **Federated Data Access** (FDA) , um in einer 
 
 ## Snowflake unter CentOS {#snowflake-centos}
 
-Gehen Sie wie folgt vor, um [!DNL Snowflake] unter CentOS zu konfigurieren:
+So konfigurieren Sie [!DNL Snowflake] Gehen Sie unter CentOS wie folgt vor:
 
 1. Laden Sie die ODBC-Treiber für [!DNL Snowflake] herunter. [Klicken Sie hier](https://sfc-repo.snowflakecomputing.com/odbc/linux/latest/snowflake-odbc-2.20.2.x86_64.rpm), um mit dem Herunterladen zu beginnen.
 1. Installieren Sie anschließend die ODBC-Treiber mit folgendem Befehl in CentOS:
@@ -48,7 +48,7 @@ Gehen Sie wie folgt vor, um [!DNL Snowflake] unter CentOS zu konfigurieren:
    /etc/init.d/nlserver6 start
    ```
 
-1. In Campaign können Sie dann Ihr externes [!DNL Snowflake]-Konto konfigurieren. Weiterführende Informationen zur Konfiguration Ihres externen Kontos finden Sie in [diesem Abschnitt](#snowflake-external).
+1. In Campaign können Sie dann Ihre [!DNL Snowflake] externes Konto. Weitere Informationen zur Konfiguration Ihres externen Kontos finden Sie unter [diesem Abschnitt](#snowflake-external).
 
 ## Snowflake unter Windows {#snowflake-windows}
 
@@ -56,7 +56,7 @@ Gehen Sie wie folgt vor, um [!DNL Snowflake] unter CentOS zu konfigurieren:
 
 1. Konfigurieren Sie den ODBC-Treiber. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](https://docs.snowflake.net/manuals/user-guide/odbc-windows.html#step-2-configure-the-odbc-driver)
 
-1. In Campaign können Sie dann Ihr externes [!DNL Snowflake]-Konto konfigurieren. Weiterführende Informationen zur Konfiguration Ihres externen Kontos finden Sie in [diesem Abschnitt](#snowflake-external).
+1. In Campaign können Sie dann Ihre [!DNL Snowflake] externes Konto. Weitere Informationen zur Konfiguration Ihres externen Kontos finden Sie unter [diesem Abschnitt](#snowflake-external).
 
 ## Snowflake unter Debian {#snowflake-debian}
 
@@ -76,13 +76,13 @@ Gehen Sie wie folgt vor, um [!DNL Snowflake] unter CentOS zu konfigurieren:
    systemctl start nlserver.service
    ```
 
-1. In Campaign können Sie dann Ihr externes [!DNL Snowflake]-Konto konfigurieren. Weiterführende Informationen zur Konfiguration Ihres externen Kontos finden Sie in [diesem Abschnitt](#snowflake-external).
+1. In Campaign können Sie dann Ihre [!DNL Snowflake] externes Konto. Weitere Informationen zur Konfiguration Ihres externen Kontos finden Sie unter [diesem Abschnitt](#snowflake-external).
 
 ## Externes Snowflake-Konto {#snowflake-external}
 
-Sie müssen ein externes [!DNL Snowflake]-Konto erstellen, um Ihre Campaign-Instanz mit Ihrer externen [!DNL Snowflake]-Datenbank zu verbinden.
+Sie müssen eine [!DNL Snowflake] externes Konto, um Ihre Campaign-Instanz mit Ihrer [!DNL Snowflake] externe Datenbank.
 
-1. Klicken Sie in Campaign **[!UICONTROL Explorer]** auf **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Plattform]** &#39;>&#39; **[!UICONTROL Externe Konten]**.
+1. Von Campaign **[!UICONTROL Explorer]** klicken **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Plattform]** &#39;>&#39; **[!UICONTROL Externe Konten]**.
 
 1. Wählen Sie **[!UICONTROL Neu]** aus.
 

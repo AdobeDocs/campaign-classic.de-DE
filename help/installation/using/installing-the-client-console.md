@@ -28,11 +28,11 @@ Bevor Sie mit der Installation der Client Console beginnen, müssen Sie Folgende
 Die Installation oder Aktualisierung der Clientkonsole hängt von Ihrer Implementierung von Adobe Campaign Classic ab.
 Lesen Sie die folgenden Details, um zu verstehen, was für Ihre Implementierung erforderlich ist.
 
-![](assets/do-not-localize/how-to-video.png) Erfahren Sie im  [Video, wie Sie den Adobe Campaign Client installieren und einrichten](#video)
+![](assets/do-not-localize/how-to-video.png) Erfahren Sie, wie Sie den Adobe Campaign Client installieren und einrichten in [Video](#video)
 
 >[!CAUTION]
 >
->Die Campaign Client-Konsole und der Campaign-Anwendungsserver müssen **für dieselbe Produktversion** ausführen. Adobe empfiehlt außerdem dringend, **denselben Produkterstellung** zu verwenden. Erfahren Sie, wie Sie Ihre Campaign-Client- und -Server-Versionen in [diesem Abschnitt](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version) überprüfen.
+>Die Campaign Client-Konsole und der Campaign-Anwendungsserver müssen ausgeführt werden **auf derselben Produktversion**. Adobe empfiehlt außerdem dringend die Verwendung der **derselbe Produktaufbau**. Erfahren Sie, wie Sie Ihre Campaign-Client- und -Server-Versionen überprüfen in [diesem Abschnitt](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
 ## Von Adobe gehostete Implementierungen {#hosted-customers}
 
@@ -40,9 +40,9 @@ Werdet einen gehosteten Kunden, haben Sie zwei Möglichkeiten, Ihre Client-Konso
 
 1. Adobe kann direkt bereitgestellt werden. Nach der Aktualisierung der Konsole werden Benutzer aufgefordert, die neueste Clientkonsolenversion in einem Popup-Fenster herunterzuladen.
 
-1. Sie können von [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) auf Ihre Client-Konsole(n) herunterladen.
+1. Sie können von auf Ihre Client-Konsole(n) herunterladen [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html)
 
-   **Benutzer benötigen Administratorzugriff, um die Aktualisierung abzuschließen. Wenn die Benutzer keine Administratorrechte haben, muss ein Systemadministrator für alle Clientkonsolen** bereitstellen
+   **Benutzer benötigen Administratorzugriff, um die Aktualisierung abzuschließen. Wenn die Benutzer keine Administratorrechte haben, muss ein Systemadministrator für alle Clientkonsolen bereitstellen**
 
 ## Hybride und On-Premise-Implementierungen {#hybrid-onprem-customers}
 
@@ -56,7 +56,7 @@ Dazu müssen Sie:
 
 1. Wählen Sie das Paket aus, das das Konsoleninstallationsprogramm enthält.
 
-   Diese Datei wird als setup-client-7.X.XXXX.exe für v7 oder setup-client-6.X.XXXX.exe für v6.1 bezeichnet, wobei X die Unterversion von Adobe Campaign ist und XXXX der Build ist.   Zahl.
+   Diese Datei wird als setup-client-7.X.XXXX.exe für v7 oder setup-client-6.X.XXXX.exe für v6.1 bezeichnet, wobei X die Unterversion von Adobe Campaign ist und XXXX die Build-Nummer.
 
 1. Kopieren Sie dieses Paket und fügen Sie es in den Adobe Campaign-Installationsordner (auf dem Marketing-Server für hybride Installationen) unter /datakit/nl/eng/jsp ein.
 
@@ -65,11 +65,11 @@ Dazu müssen Sie:
 
 ### Option &quot;Frage nicht mehr stellen&quot;
 
-Adobe empfiehlt, die Option **[!UICONTROL Diese Frage nicht mehr stellen]** nicht ausgewählt zu lassen, um sicherzustellen, dass alle Benutzer benachrichtigt werden, wenn eine neue Konsolenversion verfügbar ist.  Wenn diese Option aktiviert ist, wird der Anwender nicht über neue verfügbare Versionen informiert.
+Adobe empfiehlt, die Option zu verlassen **[!UICONTROL Diese Frage stellen Sie nicht mehr]** nicht ausgewählt ist, um sicherzustellen, dass alle Benutzer benachrichtigt werden, wenn eine neue Version der Konsole verfügbar ist.  Wenn diese Option aktiviert ist, wird der Anwender nicht über neue verfügbare Versionen informiert.
 
-Wenn **[!UICONTROL Diese Frage nicht mehr stellen]** ausgewählt wurde, können Sie diese Eingabeaufforderung zurücksetzen. Nur Systemadministratoren, die mit der Bearbeitung von Windows Registry vertraut sind, sollten diese Änderungen vornehmen:
+Wenn **[!UICONTROL Diese Frage stellen Sie nicht mehr]**  ausgewählt wurde, können Sie diese Eingabeaufforderung zurücksetzen. Nur Systemadministratoren, die mit der Bearbeitung von Windows Registry vertraut sind, sollten diese Änderungen vornehmen:
 
-1. Öffnen Sie den Registrierungs-Editor mit dem Befehl **regedit** im Menü **[!UICONTROL Start > Ausführen]** .
+1. Öffnen Sie den Registrierungs-Editor mithilfe der **regedit** -Befehl aus dem **[!UICONTROL Start > Ausführen]** Menü.
 
 1. Suchen Sie nach dem Knoten und erweitern Sie ihn.
 
@@ -77,7 +77,7 @@ Wenn **[!UICONTROL Diese Frage nicht mehr stellen]** ausgewählt wurde, können 
    \HKEY_CURRENT_USER\Software\Neolane\NL_6\nlclient
    ```
 
-1. Löschen Sie den Eintrag **confAdvisedUpgrade** und schließen Sie den Registrierungs-Editor.
+1. Löschen Sie die **confAdvisedUpgrade** Registrieren Sie sich und schließen Sie den Registrierungs-Editor.
 
 >[!NOTE]
 >
@@ -87,7 +87,7 @@ Wenn **[!UICONTROL Diese Frage nicht mehr stellen]** ausgewählt wurde, können 
 
 Sobald die Konsole im Ordner Campaign-Server verfügbar ist, werden die Benutzer aufgefordert, die neueste Clientkonsoleversion in einem Popup-Fenster herunterzuladen.
 
-**Benutzer benötigen Administratorzugriff, um die Aktualisierung abzuschließen. Wenn die Benutzer keine Administratorrechte haben, muss ein Systemadministrator für alle Clientkonsolen** bereitstellen
+**Benutzer benötigen Administratorzugriff, um die Aktualisierung abzuschließen. Wenn die Benutzer keine Administratorrechte haben, muss ein Systemadministrator für alle Clientkonsolen bereitstellen**
 
 
 ### Herunterladen der Konsole für eine neue Implementierung{#download-the-client-console}
@@ -104,15 +104,15 @@ Benutzer sollten jetzt die Konsole herunterladen und installieren, indem sie die
 
    Verwenden Sie bei Bedarf die Anmeldeinformationen des bei der Instanzerstellung definierten internen Kontos.
 
-1. Klicken Sie auf der Installationsseite auf den Link **[!UICONTROL Download]** .
+1. Klicken Sie auf **[!UICONTROL Download]** auf der Installationsseite.
 1. Laden Sie die Client-Setup-Datei herunter und speichern Sie sie.
-1. Führen Sie die heruntergeladene Datei auf einem Computer unter Windows aus: Die Installation beginnt. Der Standardinstallationspfad der Clientkonsole ist **$PROGRAMFILES$/Adobe/Adobe Campaign Classic vX Client**, wobei &quot;X&quot;entsprechend Ihrer Adobe Campaign-Version &quot;6&quot;oder &quot;7&quot;ist.
+1. Führen Sie die heruntergeladene Datei auf einem Computer unter Windows aus: Die Installation beginnt. Der standardmäßige Installationspfad der Clientkonsole lautet **$PROGRAMFILES$/Adobe/Adobe Campaign Classic vX Client**, wobei &quot;X&quot;&quot;6&quot;oder &quot;7&quot;ist, gemäß Ihrer Adobe Campaign-Version.
 
 ### Erstellen der Verbindung - nur Erstbenutzer{#create-the-connection}
 
 Nachdem die Client-Konsole installiert wurde, führen Sie die folgenden Schritte aus, um die Verbindung zum Anwendungsserver herzustellen:
 
-1. Starten Sie die Konsole über das Menü Windows **[!UICONTROL Start]** in der Programmgruppe **Adobe Campaign**.
+1. Starten Sie die Konsole über Windows. **[!UICONTROL Starten]** im Menü **Adobe Campaign** Programmgruppe.
 
 1. Klicken Sie in der oberen rechten Ecke der Felder mit den Anmeldedaten auf den Link, um das Fenster für die Verbindungskonfiguration aufzurufen.
 
@@ -126,7 +126,7 @@ Nachdem die Client-Konsole installiert wurde, führen Sie die folgenden Schritte
 
    Sie können beispielsweise eine URL vom Typ [`https://<machine>.<domain>.com`](https://myserver.adobe.com) eingeben.
 
-1. Wenn Adobe IMS für Ihr Unternehmen konfiguriert ist, aktivieren Sie die Option **[!UICONTROL Verbindung mit einer Adobe ID herstellen]**
+1. Wenn Adobe IMS für Ihr Unternehmen konfiguriert ist, aktivieren Sie die Option **[!UICONTROL Verbindung zu einer Adobe ID herstellen]**
 
 1. Klicken Sie auf **[!UICONTROL OK]**, um Ihre Einstellungen zu speichern.
 
@@ -140,7 +140,7 @@ Sie können so viele Verbindungen wie erforderlich hinzufügen, um z. B. Verbind
 
 Gehen Sie wie folgt vor, um sich bei einer vorhandenen Instanz anzumelden:
 
-1. Starten Sie die Konsole über das Menü Windows **[!UICONTROL Start]** in der Programmgruppe **Adobe Campaign**.
+1. Starten Sie die Konsole über Windows. **[!UICONTROL Starten]** im Menü **Adobe Campaign** Programmgruppe.
 
 1. Klicken Sie in der oberen rechten Ecke der Felder mit den Anmeldedaten auf den Link, um das Fenster für die Verbindungskonfiguration aufzurufen.
 
@@ -156,7 +156,7 @@ Gehen Sie wie folgt vor, um sich bei einer vorhandenen Instanz anzumelden:
 * [Erstellen einer Instanz und Anmelden](../../installation/using/creating-an-instance-and-logging-on.md).
 * [Kompatibilitätsmatrix](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html)
 
-## Anleitungsvideo
+## Tutorial-Video
 
 In diesem Video wird gezeigt, wie der Adobe Campaign-Client installiert und eingerichtet wird.
 

@@ -23,8 +23,8 @@ Sie können diesen integrierten Tomcat-Server verwenden, um HTTP-Anforderungen z
 
 In diesem Fall:
 
-* Der standardmäßige Listening-Anschluss ist 8080. Weiterführende Informationen dazu finden Sie in [diesem Abschnitt](../../installation/using/configure-tomcat.md).
-* Der Client Konsolen stellt dann die Verbindung über eine URL wie [https:// `<computer>`:8080](https://myserver.adobe.com:8080) her.
+* Der standardmäßige Listening-Anschluss ist 8080. Informationen zu ihrer Änderung finden Sie unter [diesem Abschnitt](../../installation/using/configure-tomcat.md).
+* Die Clientkonsole Konsolen und dann die Verbindung über eine URL wie [https:// `<computer>`:8080](https://myserver.adobe.com:8080).
 
 Aus Sicherheits- und Verwaltungsgründen empfehlen wir jedoch die Verwendung eines dedizierten Webservers als Haupteinstiegspunkt für HTTP-Traffic, wenn der Computer, auf dem Adobe Campaign ausgeführt wird, im Internet verfügbar ist und Sie den Zugriff auf die Konsole außerhalb Ihres Netzwerks öffnen möchten.
 
@@ -42,7 +42,7 @@ Das Konfigurationsverfahren für einen IIS-Webserver ist größtenteils grafisch
 
 Die folgenden Abschnitte beschreiben die Konfiguration in IIS 7. Die Konfiguration für IIS8 ist im Grunde identisch.
 
-Wenn der Web IIS-Server noch nicht auf Ihrem Computer installiert ist, können Sie ihn über das Menü **[!UICONTROL Hinzufügen > Software > Windows-Funktionen aktivieren oder deaktivieren]** installieren.
+Wenn der Web IIS-Server noch nicht auf Ihrem Computer installiert ist, können Sie ihn über die **[!UICONTROL Hinzufügen > Programme entfernen > Windows-Funktionen aktivieren oder deaktivieren]** Menü.
 
 In IIS 7 müssen Sie zusätzlich zu den Standarddiensten die ISAPI-Erweiterungen und ISAPI-Filter installieren.
 
@@ -52,7 +52,7 @@ In IIS 7 müssen Sie zusätzlich zu den Standarddiensten die ISAPI-Erweiterungen
 
 Befolgen Sie zur Konfiguration die nachstehenden Etappen:
 
-1. Öffnen Sie den IIS über das Menü **[!UICONTROL Systemsteuerung > Verwaltung > Dienste]** .
+1. Öffnen Sie den IIS über die **[!UICONTROL Control Panel > Administrative Tools > Services]** Menü.
 1. Erstellen und konfigurieren Sie die Site (z. B. Adobe Campaign) entsprechend den Netzwerkparametern (TCP-Verbindungsport, DNS-Host, IP-Adresse).
 
    ![](assets/s_ncs_install_iis7_add_site.png)
@@ -65,7 +65,7 @@ Befolgen Sie zur Konfiguration die nachstehenden Etappen:
 
    ![](assets/s_ncs_install_iis7_parameters_step1.png)
 
-1. Ein **VBS**-Skript ermöglicht es Ihnen, die vom Adobe Campaign-Server verwendeten Ressourcen automatisch im soeben erstellten virtuellen Verzeichnis zu konfigurieren. Doppelklicken Sie zum Starten auf die Datei **is_neolane_setup.vbs** im Ordner `[INSTALL]\conf` , wobei `[INSTALL]` der Pfad für den Zugriff auf den Adobe Campaign-Installationsordner ist.
+1. A **VBS** -Skript ermöglicht es Ihnen, die vom Adobe Campaign-Server verwendeten Ressourcen automatisch in dem virtuellen Verzeichnis zu konfigurieren, das wir gerade erstellt haben. Doppelklicken Sie auf das **is_neolane_setup.vbs** Datei im `[INSTALL]\conf` Ordner, wobei `[INSTALL]` ist der Pfad für den Zugriff auf den Adobe Campaign-Installationsordner.
 
    ![](assets/s_ncs_install_iis7_parameters_step2.png)
 
@@ -73,7 +73,7 @@ Befolgen Sie zur Konfiguration die nachstehenden Etappen:
    >
    >Bei einer Installation auf Windows Server 2008/IIS7 müssen Sie als Administrator angemeldet sein, um das VBS-Skript auszuführen oder das Skript als Administrator auszuführen.
 
-   Klicken Sie auf **[!UICONTROL OK]** , wenn der Webserver als Tracking-Weiterleitungsserver verwendet wird, klicken Sie andernfalls auf **[!UICONTROL Abbrechen]**.
+   Klicken **[!UICONTROL OK]** Wenn der Webserver als Tracking-Weiterleitungsserver verwendet wird, klicken Sie andernfalls auf **[!UICONTROL Abbrechen]**.
 
    Wenn auf dem Webserver bereits mehrere Sites konfiguriert sind, wird eine Zwischenseite angezeigt, auf der angegeben wird, für welche Website die Installation gilt: Geben Sie die mit der Site verknüpfte Nummer ein und klicken Sie auf **[!UICONTROL OK]**.
 
@@ -83,7 +83,7 @@ Befolgen Sie zur Konfiguration die nachstehenden Etappen:
 
    ![](assets/s_ncs_install_iis7_parameters_step7.png)
 
-1. Vergewissern Sie sich auf der Registerkarte **[!UICONTROL Inhaltsansicht]** , dass die Website korrekt mit den Adobe Campaign-Ressourcen konfiguriert ist:
+1. Im **[!UICONTROL Inhaltsansicht]** überprüfen Sie, ob die Website korrekt mit den Adobe Campaign-Ressourcen konfiguriert ist:
 
    ![](assets/s_ncs_install_iis7_parameters_step6.png)
 
@@ -95,11 +95,11 @@ Als Nächstes müssen Sie die Sicherheitseinstellungen für die ISAPI-DLL und di
 
 Gehen Sie hierzu wie folgt vor:
 
-1. Wählen Sie die Registerkarte **[!UICONTROL Funktionsansicht]** aus und doppelklicken Sie auf den Link **Authentifizierung** .
+1. Wählen Sie die **[!UICONTROL Funktionsansicht]** und doppelklicken Sie auf die **Authentifizierung** Link.
 
    ![](assets/s_ncs_install_iis7_parameters_step8.png)
 
-1. Stellen Sie im Tab **Verzeichnissicherheit** der Website sicher, dass der anonyme Zugriff aktiviert ist. Klicken Sie bei Bedarf auf den Link **[!UICONTROL Bearbeiten]** , um die Einstellungen zu ändern.
+1. Im **Verzeichnissicherheit** auf der Website ein, stellen Sie sicher, dass der anonyme Zugriff aktiviert ist. Klicken Sie bei Bedarf auf das **[!UICONTROL Bearbeiten]** -Link, um die Einstellungen zu ändern.
 
    ![](assets/s_ncs_install_iis7_parameters_step9.png)
 
@@ -109,7 +109,7 @@ Sie müssen nun testen, ob die Konfiguration korrekt ist.
 
 Gehen Sie dazu wie folgt vor:
 
-1. Starten Sie den IIS-Server mit der Befehlszeile **iisreset** neu.
+1. Starten Sie den IIS-Server mit dem **iisreset** Befehlszeile.
 
 1. Starten Sie den Adobe Campaign-Dienst und stellen Sie sicher, dass er ausgeführt wird.
 
@@ -142,7 +142,7 @@ Sie können auch sicherstellen, dass die ISAPI-DLL richtig geladen ist.
 
 Gehen Sie hierzu wie folgt vor:
 
-1. Bearbeiten Sie die ISAPI-Filter für die Adobe Campaign-Site, indem Sie auf das Symbol **[!UICONTROL Treiberzuordnung]** klicken.
+1. Bearbeiten Sie die ISAPI-Filter für die Adobe Campaign-Site, indem Sie auf die **[!UICONTROL Treiberzuordnung]** Symbol.
 1. Überprüfen Sie den Inhalt des ISAPI-Filters:
 
    ![](assets/s_ncs_install_iis7_parameters_step11.png)
@@ -155,19 +155,19 @@ Beim Konfigurieren des IIS-Webservers wird für bestimmte Dateien, die auf den S
 
 Dies kann sich auf Adobe Campaign auswirken, insbesondere wenn Sie Dateien hochladen möchten, die diese Beschränkung überschreiten.
 
-Wenn Sie beispielsweise die Aktivität **Laden (Datei)** in einem Workflow verwenden, um eine 50 MB große Datei zu importieren, wird die ordnungsgemäße Ausführung des Workflows durch einen Fehler verhindert.
+Wenn Sie beispielsweise eine **Laden (Datei)** Aktivität in einen Workflow eingeben, um eine 50 MB große Datei zu importieren. Ein Fehler verhindert die ordnungsgemäße Ausführung des Workflows.
 
 In diesem Fall müssen Sie diese Grenze erhöhen:
 
-1. Öffnen Sie den IIS über das Menü **[!UICONTROL Start > (Control Panel) > Administrations-Tools]** .
-1. Wählen Sie im Bereich **Verbindungen** die für Ihre Adobe-Installation erstellte Site aus und doppelklicken Sie dann im Hauptbereich auf **Anforderungsfilterung**.
-1. Wählen Sie im Bereich **Aktionen** die Option **Funktionseinstellungen bearbeiten** aus, um den Wert im Feld **Maximale zulässige Inhaltsgröße (Byte)** bearbeiten zu können.
+1. Öffnen Sie den IIS über die **[!UICONTROL Start > (Control Panel) > Administrationstools]** Menü.
+1. Im **Verbindungen** , wählen Sie die für Ihre Adobe erstellte Site aus und doppelklicken Sie auf **Anforderungsfilterung** im Hauptbereich.
+1. Im **Aktionen** Bereich, wählen Sie **Funktionseinstellungen bearbeiten** , um den Wert im **Maximale zulässige Inhaltsgröße (Byte)** -Feld.
 
    Um beispielsweise das Hochladen von Dateien mit 50 MB zu genehmigen, müssen Sie einen Wert von mehr als &quot;52428800&quot;Byte angeben.
 
 >[!NOTE]
 >
->Weiterführende Informationen zu dieser IIS-Option finden Sie im Abschnitt &quot;How To&quot;(Anleitung) der [offiziellen Dokumentation](https://www.iis.net/configreference/system.webserver/security/requestfiltering/requestlimits).
+>Weitere Informationen zu dieser IIS-Option finden Sie im Abschnitt &quot;Anleitung&quot;des [amtliche Dokumentation](https://www.iis.net/configreference/system.webserver/security/requestfiltering/requestlimits).
 
 ### Anzeige der HTTP-Fehlermeldung konfigurieren {#configuring-http-error-message-display}
 
@@ -175,9 +175,9 @@ Wenn Sie einen IIS-Server der Version 6.1 verwenden, können die erzeugten Fehle
 
 Um dies zu beheben und den Fehler korrekt anzuzeigen, wenden Sie die folgende Konfiguration an:
 
-1. Öffnen Sie den IIS über das Menü **[!UICONTROL Start > Systemsteuerung > Verwaltung > Werkzeuge]** .
-1. Wählen Sie im Bereich **Verbindungen** die für Ihre Adobe Campaign-Installation erstellte Site aus und doppelklicken Sie dann im Hauptbereich auf **Konfigurationseditor** .
-1. Wählen Sie in der Dropdownliste **Abschnitt** **system.webServer** > **httpErrors** aus.
-1. Wählen Sie den Wert **PassThrough** in der Zeile **existingResponse** aus.
+1. Öffnen Sie den IIS über die **[!UICONTROL Start > Systemsteuerung > Verwaltung]** Menü.
+1. Im **Verbindungen** , wählen Sie die für Ihre Adobe Campaign-Installation erstellte Site aus und doppelklicken Sie dann auf **Konfigurationseditor** im Hauptbereich.
+1. Im **Abschnitt** Dropdown-Liste auswählen **system.webServer** > **httpErrors**.
+1. Wählen Sie die **PassThrough** Wert am **existingResponse** Linie.
 
 ![](assets/ins_iis_httperrors.png)

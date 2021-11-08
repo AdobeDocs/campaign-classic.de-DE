@@ -58,13 +58,13 @@ Diese Art von Konfiguration kann eine große Anzahl von Empfängern (500.000 bis
 
 ### Anwendungsserver installieren {#installing-the-application-server}
 
-Führen Sie die Schritte aus, um eine eigenständige Instanz vom Adobe Campaign-Anwendungsserver zur Erstellung der Datenbank zu installieren (Schritt 12). Siehe [Installation und Konfiguration (Einzelmaschine)](../../installation/using/standalone-deployment.md#installing-and-configuring--single-machine-).
+Führen Sie die Schritte aus, um eine eigenständige Instanz vom Adobe Campaign-Anwendungsserver zur Erstellung der Datenbank zu installieren (Schritt 12). Siehe [Installation und Konfiguration (ein Computer)](../../installation/using/standalone-deployment.md#installing-and-configuring--single-machine-).
 
 Da es sich bei dem Computer nicht um einen Tracking-Server handelt, sollten Sie die Integration mit dem Webserver nicht berücksichtigen.
 
 In den folgenden Beispielen sind die Parameter der Instanz:
 
-* Name der Instanz: **demo**
+* Name der Instanz: **Demo**
 * DNS-Maske: **console.campaign.net*** (nur für Client-Konsolenverbindungen und für Berichte)
 * Sprache: englisch
 * Datenbank: **campaign:demo@dbsrv**
@@ -77,14 +77,14 @@ Zusammenfassend sind folgende Etappen zu durchlaufen:
 
 1. Installieren Sie den Adobe Campaign-Server.
 
-   Weitere Informationen hierzu finden Sie unter [Voraussetzungen für die Campaign-Installation unter Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md) (Linux) und [Voraussetzungen für die Campaign-Installation unter Windows](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) (Windows).
+   Weitere Informationen hierzu finden Sie unter [Voraussetzungen für die Installation von Campaign unter Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md) (Linux) und [Voraussetzungen für die Installation von Campaign unter Windows](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) (Windows).
 
 1. Befolgen Sie das in den folgenden Abschnitten beschriebene Verfahren zur Webserverintegration (IIS, Apache):
 
    * Für Linux: [Integration in einen Webserver für Linux](../../installation/using/integration-into-a-web-server-for-linux.md)
    * Windows: [Integration in einen Webserver für Windows](../../installation/using/integration-into-a-web-server-for-windows.md)
 
-1. Erstellen Sie die Instanz **demo** . Dazu gibt es zwei Möglichkeiten:
+1. Erstellen Sie die **Demo** -Instanz. Dazu gibt es zwei Möglichkeiten:
 
    * Erstellen Sie die Instanz über die Konsole:
 
@@ -100,12 +100,12 @@ Zusammenfassend sind folgende Etappen zu durchlaufen:
       nlserver config -addinstance:demo/tracking.campaign.net*
       ```
 
-      Weitere Informationen hierzu finden Sie unter [Instanz erstellen](../../installation/using/command-lines.md#creating-an-instance).
+      Weitere Informationen hierzu finden Sie unter [Erstellen einer Instanz](../../installation/using/command-lines.md#creating-an-instance).
    Der Name der Instanz entspricht dem des Anwendungsservers.
 
-   Die Verbindung zum Server mit dem Modul **nlserver web** (Mirrorseiten, Abmeldung) erfolgt über die URL des Lastenausgleichs (tracking.campaign.net).
+   Die Verbindung zum Server mit der **nlserver web** -Modul (Mirrorseiten, Abmeldung) wird über die URL des Lastenausgleichs (tracking.campaign.net) durchgeführt.
 
-1. Ändern Sie **internal** in dasselbe wie der Anwendungsserver.
+1. Ändern Sie die **intern** auf den Anwendungsserver.
 
    Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
@@ -115,11 +115,11 @@ Zusammenfassend sind folgende Etappen zu durchlaufen:
    nlserver config -setdblogin:PostgreSQL:campaign:demo@dbsrv -instance:demo
    ```
 
-1. Aktivieren Sie in den Dateien **config-default.xml** und **config-demo.xml** die Module **web**, **trackinglogd** und **mta**.
+1. Im **config-default.xml** und **config-demo.xml** -Dateien, aktivieren Sie die **Web**, **trackinglogd** und **mta** Module.
 
    Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#enabling-processes).
 
-1. Bearbeiten Sie die Datei **serverConf.xml** und füllen Sie Folgendes aus:
+1. Bearbeiten Sie die **serverConf.xml** Datei und füllen Sie:
 
    * die DNS-Konfiguration des MTA-Moduls:
 
@@ -129,7 +129,7 @@ Zusammenfassend sind folgende Etappen zu durchlaufen:
 
       >[!NOTE]
       >
-      >Der Parameter **nameServers** wird nur in Windows verwendet.
+      >Die **nameServers** wird nur unter Windows verwendet.
 
       Weitere Informationen hierzu finden Sie unter [Versandeinstellungen](configure-delivery-settings.md).
 
@@ -140,7 +140,7 @@ Zusammenfassend sind folgende Etappen zu durchlaufen:
       <spareServer enabledIf="$(hostname)!='front_srv2'" id="2" url="https://front_srv2:8080"/>
       ```
 
-      Weitere Informationen hierzu finden Sie unter [Redundant tracking](configuring-campaign-server.md#redundant-tracking).
+      Weitere Informationen hierzu finden Sie unter [Redundantes Tracking](configuring-campaign-server.md#redundant-tracking).
 
 1. Starten Sie die Website und testen Sie die Weiterleitung über die URL: [https://tracking.campaign.net/r/test](https://tracking.campaign.net/r/test).
 
@@ -158,11 +158,11 @@ Zusammenfassend sind folgende Etappen zu durchlaufen:
 
    Weiterführende Informationen hierzu finden Sie in den folgenden Abschnitten:
 
-   * Für Linux: [Starten des Webservers und Testen der Konfiguration](../../installation/using/integration-into-a-web-server-for-linux.md#launching-the-web-server-and-testing-the-configuration)
-   * Windows: [Starten des Webservers und Testen der Konfiguration](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration)
+   * Für Linux: [Webserver starten und Konfiguration testen](../../installation/using/integration-into-a-web-server-for-linux.md#launching-the-web-server-and-testing-the-configuration)
+   * Windows: [Webserver starten und Konfiguration testen](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration)
 
 1. Starten Sie den Adobe Campaign-Server.
-1. Stellen Sie in der Adobe Campaign-Konsole eine Verbindung mit der Anmeldung **admin** ohne Kennwort her und starten Sie den Softwareverteilungs-Assistenten.
+1. Stellen Sie in der Adobe Campaign-Konsole mithilfe der **admin** ohne Kennwort anmelden und den Softwareverteilungs-Assistenten starten.
 
    Weitere Informationen hierzu finden Sie unter [Bereitstellen einer Instanz](../../installation/using/deploying-an-instance.md).
 
@@ -176,4 +176,4 @@ Zusammenfassend sind folgende Etappen zu durchlaufen:
 
    >[!NOTE]
    >
-   >Wir verwenden die vorhandene Instanz der beiden zuvor erstellten Tracking-Server und verwenden die Anmeldung **internal**.
+   >Wir verwenden die vorhandene Instanz der beiden zuvor erstellten Tracking-Server und verwenden die **intern** anmelden.

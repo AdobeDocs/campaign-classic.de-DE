@@ -19,7 +19,7 @@ ht-degree: 1%
 
 Mit Adobe Campaign können Sie einen Webtracking-Modus auswählen, der definiert, wie Trackinglogs in der Anwendung verarbeitet werden.
 
-Es gibt drei verfügbare Webtracking-Modi: **&quot;Session tracking&quot;**,**&quot;Permanentes Tracking&quot;** und **&quot;Anonymes Tracking&quot;**.
+Es gibt drei verfügbare Webtracking-Modi: **&quot;Sitzungs-Tracking&quot;**,**&quot;Dauerhaftes Tracking&quot;** und **&quot;Anonym-Tracking&quot;**.
 
 ![](assets/s_ncs_install_deployment_wiz_tracking_mode.png)
 
@@ -31,7 +31,7 @@ Jeder Modus weist bestimmte Eigenschaften auf. Der permanente Webtracking-Modus 
 >
 >Der Standardmodus kann jederzeit im Instanzbereitstellungsassistenten geändert werden.
 
-Beachten Sie, dass bei Verwendung des Trackingmodus **permanente Web** oder **anonymous** der Spalte &quot;sourceID&quot;(uuid230) in den Tracking-Tabellen (trackingLogXXX) ein Index hinzugefügt werden muss:
+Beachten Sie Folgendes: Wenn Sie die **permanentes Web** oder **anonymous** Tracking-Modus müssen Sie der Spalte &quot;sourceID&quot;(uuid230) in den Tracking-Tabellen (trackingLogXXX) einen Index hinzufügen:
 
 1. Identifizieren Sie die vom permanenten Tracking betroffenen Tracking-Tabellen.
 1. Erweitern Sie die Schemata, die diesen Tabellen entsprechen, indem Sie die folgenden Zeilen hinzufügen:
@@ -42,11 +42,11 @@ Beachten Sie, dass bei Verwendung des Trackingmodus **permanente Web** oder **an
 </dbindex>
 ```
 
-**** Die Tracking-Modi Dauerhaft und  **** AnonymousWeb beinhalten zwei Optionen:  **Erzwungener** Versand und  **letzter Versand**.
+**Ständig** und **Anonym** Web-Tracking-Modi umfassen zwei Optionen: **Erzwungener Versand** und **Letzter Versand**.
 
-Mit der Option **Erzwungener Versand** können Sie die Versandkennung (@jobid) während des Trackings angeben.
+Die **Erzwungener Versand** -Option ermöglicht die Angabe der Versandkennung (@jobid) während des Trackings.
 
-Mit der Option **Letzter Versand** können Sie das aktuelle Trackinglog mit dem zuletzt verfolgten Versand verknüpfen.
+Die **Letzter Versand** ermöglicht die Verknüpfung des aktuellen Trackinglogs mit dem zuletzt verfolgten Versand.
 
 **Eigenschaften des Sitzungs-Webtrackings:**
 
@@ -81,7 +81,7 @@ Dieser Modus ist in Bezug auf Berechnung und Volumen am kostspieligsten.
 
 >[!NOTE]
 >
->Wenn das Paket **[!UICONTROL Leads]** installiert ist, müssen Sie dasselbe für die Aktivitätstabelle tun (**crm:incomingLead**).
+>Wenn die Variable **[!UICONTROL Leads]** installiert ist, müssen Sie dasselbe für die Aktivitätstabelle tun (**crm:incomingLead**)
 
 Das folgende Schema fasst die Funktionen aller drei Webtracking-Modi zusammen:
 

@@ -130,7 +130,7 @@ Folgende Regeln müssen eingehalten werden:
 
 Der Datentyp wird über das Attribut **type** in den Elementen **`<attribute>`** und **`<element>`** eingegeben.
 
-Eine detaillierte Liste finden Sie in der Beschreibung des Elements [`<attribute>` ](../../configuration/using/schema/attribute.md) und des Elements [`<element>`](../../configuration/using/schema/element.md) .
+Eine detaillierte Liste finden Sie in der Beschreibung der [`<attribute>` element](../../configuration/using/schema/attribute.md) und [`<element>` element](../../configuration/using/schema/element.md)).
 
 Wenn dieses Attribut nicht gefüllt wird, ist **string** der Standarddatentyp, es sei denn, das Element enthält untergeordnete Elemente. Wenn es gefüllt ist, wird es nur zur hierarchischen Strukturierung der Elemente verwendet (Element **`<location>`** in unserem Beispiel).
 
@@ -151,7 +151,7 @@ Die folgenden Datentypen werden in Schemata unterstützt:
 
    >[!NOTE]
    >
-   >Um ein **uuid** -Feld in anderen Engines als Microsoft SQL Server zu enthalten, muss die Funktion &quot;newuid()&quot;hinzugefügt und mit dem Standardwert ausgefüllt werden.
+   >So enthalten Sie eine **uuid** in anderen Engines als Microsoft SQL Server muss die Funktion &quot;newuid()&quot; hinzugefügt und mit dem Standardwert ausgefüllt werden.
 
 Im Folgenden finden Sie unser Schema mit den eingegebenen Typen:
 
@@ -185,7 +185,7 @@ In der folgenden Tabelle sind die Zuordnungen für die Datentypen aufgeführt, d
   <tr> 
    <td> String <br /> </td> 
    <td> VARCHAR(255)<br /> </td> 
-   <td> VARCHAR2 (NVARCHAR2 bei Unicode)<br /> </td> 
+   <td> VARCHAR2 (NVARCHAR2, falls Unicode vorhanden)<br /> </td> 
    <td> VARCHAR (VARCHARZEICHENSATZ UNICODE, falls Unicode vorhanden)<br /> </td> 
    <td> VARCHAR<br /> </td> 
    <td> VARCHAR (NVARCHAR, falls unicode)<br /> </td> 
@@ -216,11 +216,11 @@ In der folgenden Tabelle sind die Zuordnungen für die Datentypen aufgeführt, d
   </tr> 
   <tr> 
    <td> Doppelt<br /> </td> 
-   <td> DOPPELPRÄZISION<br /> </td> 
-   <td> FLOAT<br /> </td> 
-   <td> FLOAT<br /> </td> 
+   <td> DOPPELPRÄZISE<br /> </td> 
+   <td> FLUSS<br /> </td> 
+   <td> FLUSS<br /> </td> 
    <td> DOUBLE<br /> </td> 
-   <td> FLOAT<br /> </td> 
+   <td> FLUSS<br /> </td> 
   </tr> 
   <tr> 
    <td> Lang<br /> </td> 
@@ -242,47 +242,47 @@ In der folgenden Tabelle sind die Zuordnungen für die Datentypen aufgeführt, d
    <td> Datum<br /> </td> 
    <td> DATUM<br /> </td> 
    <td> DATUM<br /> </td> 
-   <td> TIMESTAMP<br /> </td> 
+   <td> ZEITSTEMPEL<br /> </td> 
    <td> DATUM<br /> </td> 
    <td> DATETIME<br /> </td> 
   </tr> 
   <tr> 
    <td> Zeit<br /> </td> 
    <td> UHRZEIT<br /> </td> 
-   <td> FLOAT<br /> </td> 
+   <td> FLUSS<br /> </td> 
    <td> UHRZEIT<br /> </td> 
    <td> UHRZEIT<br /> </td> 
-   <td> FLOAT<br /> </td> 
+   <td> FLUSS<br /> </td> 
   </tr> 
   <tr> 
    <td> Datum/Uhrzeit<br /> </td> 
    <td> TIMESTAMPZ<br /> </td> 
    <td> DATUM<br /> </td> 
-   <td> TIMESTAMP<br /> </td> 
-   <td> TIMESTAMP<br /> </td> 
+   <td> ZEITSTEMPEL<br /> </td> 
+   <td> ZEITSTEMPEL<br /> </td> 
    <td> MS SQL &lt; 2008: DATETIME<br /> MS SQL &gt;= 2012: DATETIMEOFFSET<br /> </td> 
   </tr> 
   <tr> 
    <td> Datetimenotz<br /> </td> 
    <td> TIMESTAMPZ<br /> </td> 
    <td> DATUM<br /> </td> 
-   <td> TIMESTAMP<br /> </td> 
-   <td> TIMESTAMP<br /> </td> 
+   <td> ZEITSTEMPEL<br /> </td> 
+   <td> ZEITSTEMPEL<br /> </td> 
    <td> MS SQL &lt; 2008: DATETIME<br /> MS SQL &gt;= 2012: DATETIME2<br /> </td> 
   </tr> 
   <tr> 
-   <td> Timespan<br /> </td> 
-   <td> DOPPELPRÄZISION<br /> </td> 
-   <td> FLOAT<br /> </td> 
-   <td> FLOAT<br /> </td> 
+   <td> Zeitbereich<br /> </td> 
+   <td> DOPPELPRÄZISE<br /> </td> 
+   <td> FLUSS<br /> </td> 
+   <td> FLUSS<br /> </td> 
    <td> DOUBLE<br /> </td> 
-   <td> FLOAT<br /> </td> 
+   <td> FLUSS<br /> </td> 
   </tr> 
   <tr> 
    <td> Memo<br /> </td> 
    <td> TEXT<br /> </td> 
-   <td> CLOB (NCLOB bei Unicode)<br /> </td> 
-   <td> CLOB (CLOB CHARACTER SET UNICODE if Unicode)<br /> </td> 
+   <td> CLOB (NCLOB, wenn Unicode)<br /> </td> 
+   <td> CLOB (CLOB-ZEICHENSATZ UNICODE, falls Unicode)<br /> </td> 
    <td> CLOB(6M)<br /> </td> 
    <td> TEXT (NTEXT bei Unicode)<br /> </td> 
   </tr> 
@@ -299,7 +299,7 @@ In der folgenden Tabelle sind die Zuordnungen für die Datentypen aufgeführt, d
 
 ## Eigenschaften {#properties}
 
-Die Elemente **`<elements>`** und **`<attributes>`** des Datenschemas können mit verschiedenen Eigenschaften angereichert werden. Sie können ein Label ausfüllen, um das aktuelle Element zu beschreiben.
+Die **`<elements>`** und **`<attributes>`** -Elemente des Datenschemas können mit verschiedenen Eigenschaften angereichert werden. Sie können ein Label ausfüllen, um das aktuelle Element zu beschreiben.
 
 ### Labels und Beschreibungen {#labels-and-descriptions}
 
@@ -337,7 +337,7 @@ Die Elemente **`<elements>`** und **`<attributes>`** des Datenschemas können mi
 
 Mit der Eigenschaft **default** können Sie einen Ausdruck definieren, der bei der Inhaltserstellung einen Standardwert zurückgibt.
 
-Der Wert muss ein mit der XPath-Sprache kompatibler Ausdruck sein. Weitere Informationen hierzu finden Sie unter [Referenzierung mit XPath](../../configuration/using/schema-structure.md#referencing-with-xpath).
+Der Wert muss ein mit der XPath-Sprache kompatibler Ausdruck sein. Weitere Informationen hierzu finden Sie unter [Verweisen mit XPath](../../configuration/using/schema-structure.md#referencing-with-xpath).
 
 **Beispiel**:
 

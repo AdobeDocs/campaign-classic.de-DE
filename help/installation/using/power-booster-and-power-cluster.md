@@ -51,7 +51,7 @@ Die Power Booster- und Power Cluster-Optionen können von den folgenden Anwendun
   </tr> 
   <tr> 
    <td> E-Mail-Kampagnen und ausgehende Interaktionen<br /> </td> 
-   <td> Bis zu ca. 30 Millionen E-Mails pro Monat<br /> </td> 
+   <td> Bis zu 30 Millionen E-Mails pro Monat<br /> </td> 
    <td> 30 bis 100 Millionen E-Mails pro Monat<br /> </td> 
    <td> Mehr als 100 Millionen E-Mails pro Monat<br /> </td> 
   </tr> 
@@ -63,13 +63,13 @@ Die Power Booster- und Power Cluster-Optionen können von den folgenden Anwendun
   </tr> 
   <tr> 
    <td> Verfügbarkeit<br /> </td> 
-   <td> Die primäre Datenbank<br /> </td> 
+   <td> der Primärdatenbank<br /> </td> 
    <td> 24/7 außer Wartungsfenster und Ausfallzeiten für die Ausführungsinstanz<br /> </td> 
-   <td> 24/7/365 Service possible<br /> </td> 
+   <td> 24/7/365 Service möglich<br /> </td> 
   </tr> 
   <tr> 
    <td> Sicherheit<br /> </td> 
-   <td> Der Zugriff auf das Datamart ist potenziell über das öffentliche Internet möglich<br /> </td> 
+   <td> Der Zugriff auf das Datamart ist potenziell über das öffentliche Internet möglich.<br /> </td> 
    <td> Datamart wird von frontalen, internetorientierten Komponenten isoliert<br /> </td> 
    <td> Datamart wird von frontalen, internetorientierten Komponenten isoliert<br /> </td> 
   </tr> 
@@ -77,13 +77,13 @@ Die Power Booster- und Power Cluster-Optionen können von den folgenden Anwendun
    <td> Bereitstellungsvorlage<br /> </td> 
    <td> Alle auf einer Site (kann On-Premise oder in der Cloud sein)<br /> </td> 
    <td> Marketing vor Ort mit Ausführung in der Cloud möglich<br /> </td> 
-   <td> Marketing vor Ort mit Ausführung in der Cloud; Ausführung in verschiedenen Geos möglich<br /> </td> 
+   <td> Marketing vor Ort mit Ausführung in der Cloud; Ausführung in verschiedenen Geografien möglich<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Empfehlungen {#recommendations}
 
-* Eine Ausführungsinstanz muss einem Dienst zugewiesen sein. Sie können kein Paket für einen Dienst installieren, für den Sie sich nicht angemeldet haben. Wenn Sie beispielsweise die Option **Power Booster** für den Dienst **Message Center** abonnieren, dürfen Sie nur das Package **[!UICONTROL Ausführung von Transaktionsnachrichten]** auf der dedizierten Ausführungsinstanz installieren. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
-* Da dedizierte Instanzen (oder Cluster) Adobe Campaign-Instanzen sind, sind die Empfehlungen mit denen einer Hauptinstanz identisch. Weitere Informationen hierzu finden Sie in [diesem Dokument](../../production/using/foreword.md).
+* Eine Ausführungsinstanz muss einem Dienst zugewiesen sein. Sie können kein Paket für einen Dienst installieren, für den Sie sich nicht angemeldet haben. Wenn Sie beispielsweise die **Power Booster** -Option für die **Message Center** -Dienst, dürfen Sie nur die **[!UICONTROL Ausführung von Transaktionsnachrichten]** auf der dedizierten Ausführungsinstanz. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
+* Da dedizierte Instanzen (oder Cluster) Adobe Campaign-Instanzen sind, sind die Empfehlungen mit denen einer Hauptinstanz identisch. Weitere Informationen hierzu finden Sie unter [dieses Dokuments](../../production/using/foreword.md).
 * Wenden Sie sich an Adobe Campaign Professional Services, um die Instanz in einer Datenbank/Hardwarekomponente ordnungsgemäß zu konfigurieren.

@@ -17,14 +17,14 @@ ht-degree: 12%
 
 ![](../../assets/v7-only.svg)
 
-Die für die Installation von Adobe Campaign erforderliche technische Konfiguration und Software finden Sie in der [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md).
+Die für die Installation von Adobe Campaign erforderliche technische Konfiguration und Software wird im Abschnitt [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md).
 
-Der Adobe Campaign-Serverinstallationsprozess für die Verwendung mehrerer Instanzen wird nachfolgend unter [Installieren des Servers](../../installation/using/installing-the-server.md) beschrieben.
+Der Adobe Campaign-Serverinstallationsprozess für die Verwendung mehrerer Instanzen wird nachfolgend beschrieben in [Installieren des Servers](../../installation/using/installing-the-server.md).
 
 Die wichtigsten Schritte sind:
 
 1. Installieren Sie den Anwendungsserver, siehe [Ausführen des Installationsprogramms](../../installation/using/installing-the-server.md#executing-the-installation-program).
-1. Integration in einen Webserver (optional, je nach bereitgestellter Komponente), siehe [Konfigurieren des IIS-Webservers](../../installation/using/integration-into-a-web-server-for-windows.md#configuring-the-iis-web-server).
+1. Integration in einen Webserver (optional, je nach bereitgestellter Komponente); siehe [Konfigurieren des IIS-Webservers](../../installation/using/integration-into-a-web-server-for-windows.md#configuring-the-iis-web-server).
 
 Nach Abschluss der Installationsschritte müssen Sie die Instanzen, die Datenbank und den Server konfigurieren. Weitere Informationen hierzu finden Sie unter [Über die Erstkonfiguration](../../installation/using/about-initial-configuration.md).
 

@@ -54,7 +54,7 @@ Um SQL-Injections zu vermeiden, müssen der Zulassungsliste SQL-Funktionen hinzu
 
 >[!IMPORTANT]
 >
->Wenn Sie einen älteren Build als 8140 verwenden, kann die Option **XtkPassUnknownSQLFunctionsToRDBMS** auf &quot;1&quot;gesetzt sein. Wenn Sie Ihre Datenbank sichern möchten, löschen Sie diese Option (oder legen Sie sie auf &quot;0&quot;fest).
+>Wenn Sie einen Build verwenden, der älter als 8140 ist, wird die Variable **XtkPassUnknownSQLFunctionsToRDBMS** -Option auf &quot;1&quot;gesetzt werden. Wenn Sie Ihre Datenbank sichern möchten, löschen Sie diese Option (oder legen Sie sie auf &quot;0&quot;fest).
 
 Wenn Sie Benutzereingaben zur Erstellung von Filtern in Abfragen oder SQL-Anweisungen verwenden, müssen Sie sie immer escapen (siehe die [JSAPI-Dokumentation für Campaign](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html) - Schutz von Daten: Escape-Funktionen). Diese Funktionen sind:
 
@@ -104,7 +104,7 @@ Zusätzlich zum ordnerbasierten Sicherheitsmodell können Sie Benutzeraktionen a
 
 Wenn Sie vertrauliche Daten (Teil eines Schemas) je nach Zugriffsebene des Benutzers schützen müssen, sollten Sie sie nicht in der Formulardefinition ausblenden (Bedingungen enabledIf/visibleIf ).
 
-Die gesamte Entität wird vom Bildschirm geladen. Sie können sie auch in der Spaltendefinition anzeigen. Erstellen Sie hierzu eine Überlauftabelle. Weitere Informationen finden Sie auf [dieser Seite](../../configuration/using/examples-of-schemas-edition.md#overflow-table).
+Die gesamte Entität wird vom Bildschirm geladen. Sie können sie auch in der Spaltendefinition anzeigen. Erstellen Sie hierzu eine Überlauftabelle. Siehe [diese Seite](../../configuration/using/examples-of-schemas-edition.md#overflow-table).
 
 ## Hinzufügen von Captchas in Webanwendungen
 
@@ -116,7 +116,7 @@ Im Allgemeinen wird ein Captcha im DCE hinzugefügt, indem ein Gestaltungsbauste
 
 1. Gehen Sie zu **[!UICONTROL Ressourcen]** > **[!UICONTROL Kampagnenverwaltung]** > **[!UICONTROL Gestaltungsbausteine]** und erstellen Sie einen neuen Gestaltungsbaustein.
 
-1. Verwenden Sie den Content-Typ **[!UICONTROL Webanwendung]** und aktivieren Sie **[!UICONTROL Sichtbar in den Personalisierungsmenüs]**.
+1. Verwenden Sie die **[!UICONTROL Webanwendung]** Inhaltstyp und Prüfung **[!UICONTROL In den Personalisierungsmenüs sichtbar]**.
 
    Weitere Informationen dazu finden Sie auf [dieser Seite](../../delivery/using/personalization-blocks.md).
 
@@ -146,27 +146,27 @@ Im Allgemeinen wird ein Captcha im DCE hinzugefügt, indem ein Gestaltungsbauste
    * Bevor Sie Google reCAPTCHA verwenden, müssen Sie sich bei Google registrieren und eine neue reCAPTCHA-Site erstellen.
 
       `<div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>`
-   Sie sollten die Validierungsschaltfläche deaktivieren können, aber da wir keine Standardschaltfläche/keinen Standardlink haben, ist es besser, dies auf der HTML selbst zu tun. Weiterführende Informationen dazu finden Sie auf [dieser Seite](https://developers.google.com/recaptcha/).
+   Sie sollten die Validierungsschaltfläche deaktivieren können, aber da wir keine Standardschaltfläche/keinen Standardlink haben, ist es besser, dies auf der HTML selbst zu tun. Informationen hierzu finden Sie unter [diese Seite](https://developers.google.com/recaptcha/).
 
 ### Webanwendung aktualisieren
 
-1. Greifen Sie auf die Eigenschaften Ihrer Webanwendung zu, um eine boolesche Variable namens **captchaValid** hinzuzufügen.
+1. Greifen Sie auf die Eigenschaften Ihrer Webanwendung zu, um eine boolesche Variable mit dem Namen **captchaValid**.
 
    ![](assets/scripting-captcha.png)
 
-1. Fügen Sie zwischen der letzten Seite und der Aktivität **[!UICONTROL Storage]** ein **[!UICONTROL Script]** und einen **[!UICONTROL Test]** hinzu.
+1. Zwischen der letzten Seite und der **[!UICONTROL Speicherung]** Aktivität, fügen Sie eine **[!UICONTROL Skript]** und **[!UICONTROL Test]**.
 
-   Verbinden Sie den Zweig **[!UICONTROL True]** mit dem **[!UICONTROL Speicher]** und den anderen mit der Seite, die das Captcha enthalten wird.
+   Zweig anschließen **[!UICONTROL True]** der **[!UICONTROL Speicherung]** und der andere auf der Seite, die das Captcha haben wird.
 
    ![](assets/scripting-captcha2.png)
 
-1. Bearbeiten Sie die Bedingung der Verzweigung True mit `"[vars/captchaValid]"` gleich True .
+1. Bearbeiten Sie die Bedingung des Zweigs True mit `"[vars/captchaValid]"` entspricht True.
 
    ![](assets/scripting-captcha3.png)
 
-1. Bearbeiten Sie die Aktivität **[!UICONTROL Script]** . Der Inhalt hängt von der ausgewählten Captcha-Engine ab.
+1. Bearbeiten Sie die **[!UICONTROL Skript]** Aktivität. Der Inhalt hängt von der ausgewählten Captcha-Engine ab.
 
-1. Schließlich können Sie Ihren personalisierten Baustein auf der Seite hinzufügen: siehe [diese Seite](../../web/using/editing-content.md).
+1. Schließlich können Sie Ihren personalisierten Baustein auf der Seite hinzufügen: verweisen auf [diese Seite](../../web/using/editing-content.md).
 
    ![](assets/scripting-captcha4.png)
 
@@ -174,7 +174,7 @@ Im Allgemeinen wird ein Captcha im DCE hinzugefügt, indem ein Gestaltungsbauste
 
 >[!IMPORTANT]
 >
->Für die reCAPTCHA-Integration müssen Sie clientseitiges JavaScript in der HTML hinzufügen (in `<head>...</head>`):
+>Für die reCAPTCHA-Integration müssen Sie clientseitiges JavaScript im HTML hinzufügen (in `<head>...</head>`):
 >
 >`<script src="https://www.google.com/recaptcha/api.js" async defer></script>`
 
@@ -198,7 +198,7 @@ Zeile 6: Sie können eine beliebige Fehlermeldung eingeben.
 
 ### Google recaptcha
 
-Weitere Informationen finden Sie in der [offiziellen Dokumentation](https://developers.google.com/recaptcha/docs/verify).
+Weitere Informationen finden Sie unter [amtliche Dokumentation](https://developers.google.com/recaptcha/docs/verify).
 
 ```javascript
 ctx.vars.captchaValid = false

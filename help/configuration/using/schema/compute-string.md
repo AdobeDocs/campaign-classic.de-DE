@@ -35,11 +35,11 @@ Kein(e)
 
 ## Beschreibung {#description-1}
 
-Mit dem Element `<compute-string>` können Sie eine Zeichenfolge generieren, die auf einem XTK-Ausdruck basiert und eine &quot;integrierte&quot;Bezeichnung in der Benutzeroberfläche anzeigt, die auf mehreren Werten basiert.
+Die `<compute-string>` -Element ermöglicht es Ihnen, eine auf einem XTK-Ausdruck basierende Zeichenfolge zu generieren, um in der Benutzeroberfläche eine &quot;integrierte&quot;Bezeichnung anzuzeigen, die auf mehreren Werten basiert.
 
 ## Verwendung und Verwendungskontext {#use-and-context-of-use-1}
 
-Wenn kein `<compute-string>` definiert ist, wird standardmäßig ein `<compute-string>` -Element mit den Werten des Primärschlüssels im Schema eingegeben.
+Wenn nicht `<compute-string>` definiert wird, wird ein `<compute-string>` -Element standardmäßig mit den Werten des Primärschlüssels im Schema eingegeben.
 
 ## Attributbeschreibung {#attribute-description-1}
 

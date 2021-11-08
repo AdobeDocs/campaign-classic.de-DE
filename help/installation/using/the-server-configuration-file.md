@@ -17,13 +17,13 @@ ht-degree: 31%
 
 ![](../../assets/v7-only.svg)
 
-Die Gesamtkonfiguration von Adobe Campaign wird in der Datei **serverConf.xml** definiert, die sich im Ordner **conf** des Installationsordners befindet. In diesem Abschnitt werden alle verschiedenen Knoten und Parameter der Datei **serverConf.xml** aufgelistet.
+Die Gesamtkonfiguration von Adobe Campaign wird im Abschnitt **serverConf.xml** -Datei, die sich im **conf** -Ordner des Installationsordners. In diesem Abschnitt werden alle verschiedenen Knoten und Parameter der **serverConf.xml** -Datei.
 
 >[!NOTE]
 >
->Serverseitige Konfigurationen können nur von Adobe für Bereitstellungen durchgeführt werden, die von Adobe gehostet werden. Weitere Informationen zu den verschiedenen Bereitstellungen finden Sie im Abschnitt [Hosting-Modelle](../../installation/using/hosting-models.md) oder auf [dieser Seite](../../installation/using/capability-matrix.md). Die Installations- und Konfigurationsschritte für gehostete und hybride Modelle werden in diesem [Abschnitt](../../installation/using/hosting-models.md) beschrieben.
+>Serverseitige Konfigurationen können nur von Adobe für Bereitstellungen durchgeführt werden, die von Adobe gehostet werden. Weitere Informationen zu den verschiedenen Implementierungen finden Sie im Abschnitt [Hosting-Modelle](../../installation/using/hosting-models.md) oder [diese Seite](../../installation/using/capability-matrix.md). Die Installations- und Konfigurationsschritte für gehostete und hybride Modelle werden in diesem Abschnitt beschrieben. [Abschnitt](../../installation/using/hosting-models.md).
 
-Die ersten Parameter befinden sich im Knoten **shared** . Diese beziehen sich auf die Instanz. Sie werden potenziell von allen nlserver-Befehlen verwendet (nlserver web, nlserver wfserver usw.). Die anderen Abschnitte beziehen sich auf einen bestimmten nlserver-Unterbefehl.
+Die ersten Parameter befinden sich innerhalb der **shared** Knoten. Diese beziehen sich auf die Instanz. Sie werden potenziell von allen nlserver-Befehlen verwendet (nlserver web, nlserver wfserver usw.). Die anderen Abschnitte beziehen sich auf einen bestimmten nlserver-Unterbefehl.
 
 **Freigegebene Parameter**
 
@@ -63,7 +63,7 @@ Die ersten Parameter befinden sich im Knoten **shared** . Diese beziehen sich au
 
 ## Authentifizierung {#authentication}
 
-Im Folgenden finden Sie die verschiedenen Parameter des Knotens **authentication** :
+Im Folgenden finden Sie die verschiedenen Parameter der **Authentifizierung** node:
 
 <table> 
  <thead> 
@@ -116,7 +116,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **authentication
 
 ### XTK {#xtk}
 
-Im Folgenden finden Sie die verschiedenen Parameter des Knotens **authentication > XTK** :
+Im Folgenden finden Sie die verschiedenen Parameter der **Authentifizierung > XTK** node:
 
 <table> 
  <thead> 
@@ -136,16 +136,16 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **authentication
   </tr> 
   <tr> 
    <td> internalSecurityZone<br /> </td> 
-   <td> Sicherheitszone des internen Kontos: autorisierte Zone für das interne Konto.<br /> </td> 
+   <td> Sicherheitszone des internen Kontos: die zulässige Zone für das interne Konto.<br /> </td> 
    <td> String <br /> </td> 
-   <td> 'lan'<br /> </td> 
+   <td> "lan"<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## dataStore {#datastore}
 
-Im Folgenden finden Sie die verschiedenen Parameter des Knotens **dataStore** . Hier werden die Server-Datenquellen definiert.
+Im Folgenden finden Sie die verschiedenen Parameter der **dataStore** Knoten. Hier werden die Server-Datenquellen definiert.
 
 <table> 
  <thead> 
@@ -167,7 +167,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **dataStore** . 
    <td> extraSandboxedDirectories<br /> </td> 
    <td> Zusätzliche Ordner mit Sandboxes: andere Pfade, die in die Sandbox hinzugefügt werden sollen (durch Kommas getrennt).<br /> </td> 
    <td> String <br /> </td> 
-   <td> '/home/customer/,/sftp/' <br /> </td> 
+   <td> '/home/Customers/,/sftp/' <br /> </td> 
   </tr> 
   <tr> 
    <td> formCacheTimeToLive<br /> </td> 
@@ -183,13 +183,13 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **dataStore** . 
   </tr> 
   <tr> 
    <td> interactionCacheTimeToLive<br /> </td> 
-   <td> Interaction JSSP-Cache-Ablaufverzögerung: Zeitüberschreitung in Sekunden, nach der ein Cache-Eintrag ungültig gemacht wird. Ein negativer Wert bedeutet, dass der Cache immer invalidiert wird. '0', leere oder ungültige Werte werden als 60 betrachtet.<br /> </td> 
+   <td> Interaction JSSP-Cache-Ablaufverzögerung: Zeitüberschreitung in Sekunden, nach der ein Cache-Eintrag ungültig gemacht wird. Ein negativer Wert bedeutet, dass der Cache immer invalidiert wird. "0", leere oder ungültige Werte werden als 60 betrachtet.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 300<br /> </td> 
   </tr> 
   <tr> 
    <td> lang<br /> </td> 
-   <td> Instanzsprache (Auflistung). Mögliche Werte sind 'fr_FR' (Français), 'en_GB' (Englisch (UK)), 'en_US' (Englisch (US)), 'de_DE' (Deutsch) und 'ja_JP' (Japanisch).<br /> </td> 
+   <td> Instanzsprache (Auflistung). Mögliche Werte sind "fr_FR"(Français), "en_GB"(Englisch (UK)), "en_US"(Englisch (US)), "de_DE"(Deutsch) und "ja_JP"(Japanisch).<br /> </td> 
    <td> String <br /> </td> 
    <td> "en_US"<br /> </td> 
   </tr> 
@@ -201,13 +201,13 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **dataStore** . 
   </tr> 
   <tr> 
    <td> uploadAllowlist<br /> </td> 
-   <td> Dateien, die hochgeladen werden dürfen, durch ',' getrennt. String muss ein gültiger regulärer Java-Ausdruck sein. Siehe <a href="file-res-management.md" target="_blank">Eingrenzen der hochladbaren Dateien</a>.<br /> </td> 
+   <td> Dateien, die hochgeladen werden dürfen, durch ',' getrennt. String muss ein gültiger regulärer Java-Ausdruck sein. Siehe <a href="file-res-management.md" target="_blank">Eingrenzen hochladbarer Dateien</a>.<br /> </td> 
    <td> String <br /> </td> 
    <td> '.+' <br /> </td> 
   </tr> 
   <tr> 
    <td> useVault<br /> </td> 
-   <td> Geheimnisse im Vault speichern: Hashicorp Vault verwenden.<br /> </td> 
+   <td> Geheimnisse im Vault speichern: Verwenden Sie Hashicorp Vault.<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -231,7 +231,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **dataStore** . 
   </tr> 
   <tr> 
    <td> viewCacheTimeToLive<br /> </td> 
-   <td> Gültigkeitszeitraum des Ansichtscache: Zeitüberschreitung in Sekunden, nach der ein Cache-Eintrag ungültig gemacht wird. Ein negativer Wert bedeutet, dass der Cache immer invalidiert wird. '0', leere oder ungültige Werte werden als 60 betrachtet.<br /> </td> 
+   <td> Gültigkeitszeitraum des Ansichtscache: Zeitüberschreitung in Sekunden, nach der ein Cache-Eintrag ungültig gemacht wird. Ein negativer Wert bedeutet, dass der Cache immer invalidiert wird. "0", leere oder ungültige Werte werden als 60 betrachtet.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
@@ -246,7 +246,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **dataStore** . 
 
 ### proxyAdjust {#proxyadjust}
 
-Im Folgenden finden Sie die verschiedenen Parameter des Knotens **dataStore > proxyAdjust** . URLs, die mit dem regulären Ausdruck übereinstimmen, werden basierend auf der in urlBase definierten URL neu generiert.
+Im Folgenden finden Sie die verschiedenen Parameter der **dataStore > proxyAdjust** Knoten. URLs, die mit dem regulären Ausdruck übereinstimmen, werden basierend auf der in urlBase definierten URL neu generiert.
 
 <table> 
  <thead> 
@@ -272,7 +272,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **dataStore > pr
 
 ### dataSource {#datasource}
 
-Im Folgenden finden Sie die verschiedenen Parameter des Knotens **dataStore > dataSource** .
+Im Folgenden finden Sie die verschiedenen Parameter der **dataStore > dataSource** Knoten.
 
 <table> 
  <thead> 
@@ -286,14 +286,14 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **dataStore > da
  <tbody> 
   <tr> 
    <td> name<br /> </td> 
-   <td> Name der Datenquelle<br /> </td> 
+   <td> Datenquellenname<br /> </td> 
    <td> String <br /> </td> 
    <td> Standard<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Konfigurieren Sie im Knoten **dataStore > dataSource > dbcnx** die Verbindungseinstellungen:
+Im **dataStore > dataSource > dbcnx** -Knoten konfigurieren Sie die Verbindungseinstellungen:
 
 <table> 
  <thead> 
@@ -318,7 +318,7 @@ Konfigurieren Sie im Knoten **dataStore > dataSource > dbcnx** die Verbindungsei
    <td> </td> 
   </tr> 
   <tr> 
-   <td> vercrypted<br /> </td> 
+   <td> verschlüsselt<br /> </td> 
    <td> Verschlüsseltes Kennwort<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> </td> 
@@ -349,7 +349,7 @@ Konfigurieren Sie im Knoten **dataStore > dataSource > dbcnx** die Verbindungsei
   </tr> 
   <tr> 
    <td> timezone<br /> </td> 
-   <td> Zeitzone: siehe <a href="../../installation/using/time-zone-management.md" target="_blank">Zeitzonen-Management</a>.<br /> </td> 
+   <td> Zeitzone: see <a href="../../installation/using/time-zone-management.md" target="_blank">Zeitzonen-Management</a>.<br /> </td> 
    <td> String <br /> </td> 
    <td> </td> 
   </tr> 
@@ -361,14 +361,14 @@ Konfigurieren Sie im Knoten **dataStore > dataSource > dbcnx** die Verbindungsei
   </tr> 
   <tr> 
    <td> useTimestampTZ<br /> </td> 
-   <td> Datumsfelder mit Zeitzone: siehe <a href="../../installation/using/time-zone-management.md" target="_blank">Zeitzonen-Management</a>.<br /> </td> 
+   <td> Datumsfelder mit Zeitzone: see <a href="../../installation/using/time-zone-management.md" target="_blank">Zeitzonen-Management</a>.<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Konfigurieren Sie im Knoten **dataStore > dataSource > sqlParams** die SQL-Parameter:
+Im **dataStore > dataSource > sqlParams** -Knoten konfigurieren Sie die SQL-Parameter:
 
 <table> 
  <thead> 
@@ -387,7 +387,7 @@ Konfigurieren Sie im Knoten **dataStore > dataSource > sqlParams** die SQL-Param
  </tbody> 
 </table>
 
-Konfigurieren Sie im Knoten **dataStore > dataSource > pool** die Parameter des zugehörigen Verbindungspools:
+Im **dataStore > dataSource > pool** -Knoten konfigurieren Sie die Parameter des zugehörigen Verbindungspools:
 
 <table> 
  <thead> 
@@ -410,7 +410,7 @@ Konfigurieren Sie im Knoten **dataStore > dataSource > pool** die Parameter des 
   </tr> 
   <tr> 
    <td> maxCnx<br /> </td> 
-   <td> Maximale Anzahl von zulässigen Verbindungen, bevor der Zugriff verweigert wird Siehe diese <a href="https://helpx.adobe.com/campaign/kb/how-to-increase-the-maximum-number-of-database-connections-from-.html">Technote</a>.<br /> </td> 
+   <td> Maximale Anzahl von zulässigen Verbindungen, bevor der Zugriff verweigert wird Siehe dies <a href="https://helpx.adobe.com/campaign/kb/how-to-increase-the-maximum-number-of-database-connections-from-.html">Technote</a>.<br /> </td> 
    <td> Kurz<br /> </td> 
   </tr> 
   <tr> 
@@ -423,7 +423,7 @@ Konfigurieren Sie im Knoten **dataStore > dataSource > pool** die Parameter des 
 
 ### virtualDir {#virtualdir}
 
-Im Folgenden finden Sie die verschiedenen Parameter des Knotens **dataStore > virtualDir** . Dies ist die Konfiguration des virtuellen Verzeichnisses in das tatsächliche Verzeichnis-Mapping.
+Im Folgenden finden Sie die verschiedenen Parameter der **dataStore > virtualDir** Knoten. Dies ist die Konfiguration des virtuellen Verzeichnisses in das tatsächliche Verzeichnis-Mapping.
 
 Weitere Informationen finden Sie unter [Verwaltung öffentlicher Ressourcen](file-res-management.md).
 
@@ -459,7 +459,7 @@ Dies ist die Standardkonfiguration:
 
 ### preprocessCommand {#preprocesscommand}
 
-Im Folgenden finden Sie die verschiedenen Parameter des Knotens **dataStore > preprocessCommand** . Dies sind die autorisierten Befehle zur Vorverarbeitung der Workflow-Aktivität &quot;Datei laden&quot;.
+Im Folgenden finden Sie die verschiedenen Parameter der **dataStore > preprocessCommand** Knoten. Dies sind die autorisierten Befehle zur Vorverarbeitung der Workflow-Aktivität &quot;Datei laden&quot;.
 
 <table> 
  <thead> 
@@ -476,7 +476,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **dataStore > pr
    <td> String <br /> </td> 
   </tr> 
   <tr> 
-   <td> label<br /> </td> 
+   <td> Titel<br /> </td> 
    <td> Titel der Befehlszeile<br /> </td> 
    <td> String <br /> </td> 
   </tr> 
@@ -497,7 +497,7 @@ Dies ist die Standardkonfiguration:
 
 ## dnsConfig {#dnsconfig}
 
-Im Folgenden finden Sie die verschiedenen Parameter des Knotens **dnsConfig** (DNS-Konfiguration) .
+Im Folgenden finden Sie die verschiedenen Parameter der **dnsConfig** (DNS-Konfiguration).
 
 Weitere Informationen finden Sie in diesem Abschnitt [Abschnitt](../../installation/using/configuring-campaign-server.md).
 
@@ -524,7 +524,7 @@ Weitere Informationen finden Sie in diesem Abschnitt [Abschnitt](../../installat
    <td> <br /> </td> 
   </tr> 
   <tr> 
-   <td> retry<br /> </td> 
+   <td> Wiederholen<br /> </td> 
    <td> Anzahl weiterer Versuche für eine DNS-Abfrage.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 4<br /> </td> 
@@ -540,13 +540,13 @@ Weitere Informationen finden Sie in diesem Abschnitt [Abschnitt](../../installat
 
 >[!NOTE]
 >
->Hinweis zu **nameServer**: verwendet standardmäßig das Netzwerk
+>Hinweis: **nameServer**: verwendet standardmäßig das Netzwerk
 >Parameter der ersten unter Windows deklarierten Netzwerkschnittstelle
 >nicht in UNIX definiert. Definiert die Domänennamenserver (DNS)
 >wird vom MTA verwendet, um den E-Mail-Ausdrucksserver zu erhalten, der für
 >eine Domäne.
 >
->Wenn dieser Wert nicht definiert ist, sucht der MTA diese Informationen in der Host-Netzwerkkonfiguration. Wenn mehrere DNS-Adressen möglich sind, müssen die verschiedenen DNS-Adressen durch ein Komma getrennt werden (Beispiel: 212.155.207.1&#39;212.155.207.2). Wenn Ihr Versandserver über mehrere Netzwerkschnittstellen verfügt, ist die vom MTA verwendete DNS-Liste die erste. In diesem Fall wird empfohlen, den Parameter **nameServer** anzugeben, um Unklarheiten zu vermeiden.
+>Wenn dieser Wert nicht definiert ist, sucht der MTA diese Informationen in der Host-Netzwerkkonfiguration. Wenn mehrere DNS-Adressen möglich sind, müssen die verschiedenen DNS-Adressen durch ein Komma getrennt werden (Beispiel: 212.155.207.1&#39;212.155.207.2). Wenn Ihr Versandserver über mehrere Netzwerkschnittstellen verfügt, ist die vom MTA verwendete DNS-Liste die erste. In diesem Fall wird empfohlen, die Variable **nameServer** -Parameter, um Unklarheiten zu vermeiden.
 
 >[!CAUTION]
 >
@@ -554,9 +554,9 @@ Weitere Informationen finden Sie in diesem Abschnitt [Abschnitt](../../installat
 
 ## exec {#exec}
 
-Im Folgenden finden Sie die verschiedenen Parameter des Knotens **exec** (Befehlsausführung) .
+Im Folgenden finden Sie die verschiedenen Parameter der **exec** (Befehlsausführung).
 
-Weitere Informationen finden Sie unter [Eingrenzen autorisierter externer Befehle](../../installation/using/configuring-campaign-server.md#restricting-authorized-external-commands).
+Weitere Informationen finden Sie unter [Einschränken autorisierter externer Befehle](../../installation/using/configuring-campaign-server.md#restricting-authorized-external-commands).
 
 <table> 
  <thead> 
@@ -574,7 +574,7 @@ Weitere Informationen finden Sie unter [Eingrenzen autorisierter externer Befehl
   </tr> 
   <tr> 
    <td> Benutzer<br /> </td> 
-   <td> Führen Sie Befehle als einen anderen Benutzer aus.<br /> </td> 
+   <td> Führen Sie Befehle als anderen Benutzer aus.<br /> </td> 
    <td> String <br /> </td> 
   </tr> 
  </tbody> 
@@ -582,7 +582,7 @@ Weitere Informationen finden Sie unter [Eingrenzen autorisierter externer Befehl
 
 ## htmlToPdf {#htmltopdf}
 
-Im Folgenden finden Sie die verschiedenen Parameter des Knotens **htmlToPdf** . Dies ist die Konfiguration des Diensts zum Konvertieren von Webseiten in PDF-Dokumente.
+Im Folgenden finden Sie die verschiedenen Parameter der **htmlToPdf** Knoten. Dies ist die Konfiguration des Diensts zum Konvertieren von Webseiten in PDF-Dokumente.
 
 <table> 
  <thead> 
@@ -596,13 +596,13 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **htmlToPdf** . 
  <tbody> 
   <tr> 
    <td> command<br /> </td> 
-   <td> Befehlszeile zum Ausführen der Konvertierung (im 'anderen' Modus).<br /> </td> 
+   <td> Befehlszeile zum Ausführen der Konvertierung (im Modus "Sonstige").<br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessusCount<br /> </td> 
-   <td> Max. Anzahl der gleichzeitig auf einem Computer zulässigen Konvertierungsprozesse.<br /> </td> 
+   <td> Max. Anzahl der Konvertierungsprozesse, die gleichzeitig auf einem Computer zulässig sind.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 5<br /> </td> 
   </tr> 
@@ -614,7 +614,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **htmlToPdf** . 
   </tr> 
   <tr> 
    <td> timeout<br /> </td> 
-   <td> Zeitüberschreitung für eine Konversion: maximale Konvertierungsdauer in Sekunden. Jenseits dieses Schwellenwerts wird der Konvertierungsprozess angehalten und ein Fehler erzeugt.<br /> </td> 
+   <td> Zeitüberschreitung für eine Konversion: maximale Konvertierungsdauer in Sekunden. Über diesen Schwellenwert hinaus wird der Konvertierungsprozess angehalten und ein Fehler erzeugt.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 120<br /> </td> 
   </tr> 
@@ -641,7 +641,7 @@ phantomjs - -ignore-ssl-errors=true '$(XTK_INSTALL_DIR)/bin/htmlToPdf.js' '-out:
 
 ## ims {#ims}
 
-Im Folgenden finden Sie die verschiedenen Parameter des Knotens **ims** . Dies ist die Konfiguration für Campaign, die mit [IMS](../../integrations/using/about-adobe-id.md) eine Verbindung zu einem anderen Dienst herstellt.
+Im Folgenden finden Sie die verschiedenen Parameter der **ims** Knoten. Dies ist die Konfiguration für die Verbindung von Campaign mit einem anderen Dienst mithilfe von [IMS](../../integrations/using/about-adobe-id.md).
 
 <table> 
  <thead> 
@@ -706,9 +706,9 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **ims** . Dies i
 
 ## JavaScript {#javascript}
 
-Im Folgenden finden Sie die verschiedenen Parameter des Knotens **javaScript** . Dies ist die Konfiguration des JavaScript-Interpreters.
+Im Folgenden finden Sie die verschiedenen Parameter der **javaScript** Knoten. Dies ist die Konfiguration des JavaScript-Interpreters.
 
-Weitere Informationen finden Sie in der [Dokumentation zur Berichterstellung](../../reporting/using/actions-on-reports.md#memory-allocation) und dieser [Technote](https://helpx.adobe.com/campaign/kb/out-of-memory-error-in-js-code-activity-in-workflows.html).
+Weitere Informationen finden Sie im Abschnitt [Berichtdokumentation](../../reporting/using/actions-on-reports.md#memory-allocation) und dies [Technote](https://helpx.adobe.com/campaign/kb/out-of-memory-error-in-js-code-activity-in-workflows.html).
 
 <table> 
  <thead> 
@@ -737,7 +737,7 @@ Weitere Informationen finden Sie in der [Dokumentation zur Berichterstellung](..
 
 ## mailExchanger {#mailexchanger}
 
-Im Folgenden finden Sie die verschiedenen Parameter des Knotens **mailExchange** . Dies ist die Konfiguration des SMTP-Servers.
+Im Folgenden finden Sie die verschiedenen Parameter der **mailExchanger** Knoten. Dies ist die Konfiguration des SMTP-Servers.
 
 <table> 
  <thead> 
@@ -757,7 +757,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **mailExchange**
   </tr> 
   <tr> 
    <td> mxPort<br /> </td> 
-   <td> TCP-Port des für die E-Mail-Übertragung verwendeten SMTP-Servers.<br /> </td> 
+   <td> TCP-Port des SMTP-Servers, der für die E-Mail-Übertragung verwendet wird.<br /> </td> 
    <td> String <br /> </td> 
    <td> 25<br /> </td> 
   </tr> 
@@ -766,7 +766,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **mailExchange**
 
 ## Modul {#module}
 
-Im Folgenden finden Sie die verschiedenen Parameter des Knotens **module** . Dies ist die Konfiguration für das Namensraum-Einschränkungsmodul xtk.
+Im Folgenden finden Sie die verschiedenen Parameter der **Modul** Knoten. Dies ist die Konfiguration für das Namensraum-Einschränkungsmodul xtk.
 
 <table> 
  <thead> 
@@ -789,7 +789,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **module** . Die
 
 ## Monitoring {#monitoring}
 
-Im Folgenden finden Sie die verschiedenen Parameter des Knotens **monitoring** . Dies ist die Konfiguration des Überwachungsdienstes.
+Im Folgenden finden Sie die verschiedenen Parameter der **Monitoring** Knoten. Dies ist die Konfiguration des Überwachungsdienstes.
 
 <table> 
  <thead> 
@@ -803,7 +803,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **monitoring** .
  <tbody> 
   <tr> 
    <td> maxPreparationJobsSec<br /> </td> 
-   <td> Maximale Vorbereitungszeit: Dauer in Sekunden, nach der keine Versandaktion mehr vorbereitet werden soll.<br /> </td> 
+   <td> Maximale Vorbereitungszeit: Dauer in Sekunden, nach der eine Versandaktion nicht mehr vorbereitet werden soll.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 3600<br /> </td> 
   </tr> 
@@ -824,7 +824,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **monitoring** .
 
 ## ooconv {#ooconv}
 
-Im Folgenden finden Sie die verschiedenen Parameter des Knotens **ooconv** . Dies ist die Konfiguration des Dokumentkonvertierungsservers.
+Im Folgenden finden Sie die verschiedenen Parameter der **ooconv** Knoten. Dies ist die Konfiguration des Dokumentkonvertierungsservers.
 
 <table> 
  <thead> 
@@ -865,7 +865,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **ooconv** . Die
 
 ## proxyConfig {#proxyconfig}
 
-Im Folgenden finden Sie die verschiedenen Parameter des Knotens **proxyConfig** . Dies ist die Konfiguration von Proxy-Parametern.
+Im Folgenden finden Sie die verschiedenen Parameter der **proxyConfig** Knoten. Dies ist die Konfiguration von Proxy-Parametern.
 
 Weitere Informationen finden Sie unter [Proxy-Verbindungskonfiguration](file-res-management.md).
 
@@ -902,7 +902,7 @@ Weitere Informationen finden Sie unter [Proxy-Verbindungskonfiguration](file-res
 
 ### HTTP-Proxy/sicherer Proxy {#http-proxy---secure-proxy-}
 
-Konfigurieren Sie im Knoten **proxyConfig > HTTP Proxy/Secure Proxy** die folgenden Parameter.
+Im **proxyConfig > HTTP-Proxy/Secure Proxy** Knoten konfigurieren Sie die folgenden Parameter.
 
 Weitere Informationen finden Sie unter [Proxy-Verbindungskonfiguration](file-res-management.md).
 
@@ -940,7 +940,7 @@ Weitere Informationen finden Sie unter [Proxy-Verbindungskonfiguration](file-res
 
 ## threadPool {#threadpool}
 
-Im Folgenden finden Sie die verschiedenen Parameter des Knotens **threadPool** .
+Im Folgenden finden Sie die verschiedenen Parameter der **threadPool** Knoten.
 
 <table> 
  <thead> 
@@ -963,7 +963,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **threadPool** .
 
 ## urlPermission {#urlpermission}
 
-Im Folgenden finden Sie die verschiedenen Parameter des Knotens **urlPermission** . Dies ist die Liste der URLs, auf die der JavaScript-Code zugreifen kann.
+Im Folgenden finden Sie die verschiedenen Parameter der **urlPermission** Knoten. Dies ist die Liste der URLs, auf die der JavaScript-Code zugreifen kann.
 
 Liste der Domänen und regulären Ausdrücke, die angeben, ob eine URL im JavaScript-Code vom Adobe Campaign-Server verwendet werden kann oder nicht.
 
@@ -985,7 +985,7 @@ Weitere Informationen finden Sie unter [Schutz der ausgehenden Verbindung](../..
    <td> Aktion<br /> </td> 
    <td> Standardaktion, wenn die URL nicht in der Liste der zulässigen Werte (Auflistung) enthalten ist. Mögliche Werte sind "ignore"(autorisieren ohne Warnmeldung, dies erfordert die Deaktivierung des Schutzes), "warn"(autorisieren und geben Sie eine Warnmeldung) und "deny"(verbieten Sie den Zugriff auf die URL).<br /> </td> 
    <td> String <br /> </td> 
-   <td> deny<br /> </td> 
+   <td> Ablehnen<br /> </td> 
   </tr> 
   <tr> 
    <td> debugTrace<br /> </td> 
@@ -998,7 +998,7 @@ Weitere Informationen finden Sie unter [Schutz der ausgehenden Verbindung](../..
 
 ### url {#url}
 
-Fügen Sie für jede URL einen **url** -Knoten mit den folgenden Parametern hinzu:
+Fügen Sie für jede URL eine **url** Knoten mit den folgenden Parametern:
 
 Weitere Informationen finden Sie unter [Schutz der ausgehenden Verbindung](../../installation/using/configuring-campaign-server.md#url-permissions).
 
@@ -1013,18 +1013,18 @@ Weitere Informationen finden Sie unter [Schutz der ausgehenden Verbindung](../..
  <tbody> 
   <tr> 
    <td> dnsSuffix<br /> </td> 
-   <td> Domänenname oder übergeordnete Domäne, die von der URL betroffen sind: die Domäne der URL vollständig oder teilweise zu überprüfen, um die Verifizierung zu beschleunigen. Die URL wird nur im Hinblick auf den regulären Ausdruck überprüft, wenn die Domäne dsnSuffix enthält.<br /> </td> 
+   <td> Domänenname oder übergeordnete Domäne, die von der URL betroffen sind: die Domäne der URL vollständig oder teilweise zu überprüfen, um die Verifizierung zu beschleunigen. Die URL wird nur in Bezug auf den regulären Ausdruck überprüft, wenn die Domäne dsnSuffix enthält.<br /> </td> 
    <td> String <br /> </td> 
   </tr> 
   <tr> 
    <td> urlRegEx<br /> </td> 
-   <td> Regulärer Ausdruck zur Verfeinerung der Validierung von URLs, die zu dieser Domäne gehören: regulärer Ausdruck, den die URL überprüfen muss, sollte sie mit dnsSuffix übereinstimmen.<br /> </td> 
+   <td> Regulärer Ausdruck zur Verfeinerung der Validierung von URLs, die zu dieser Domäne gehören: regulären Ausdruck, den die URL überprüfen muss, sollte sie mit dnsSuffix übereinstimmen.<br /> </td> 
    <td> String <br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Wenn ein Datensatz **dnsSuffix**, aber nicht **urlRegEx** erfüllt, wird der folgende Datensatz geprüft.
+Wenn ein Datensatz **dnsSuffix** aber nicht **urlRegEx**, wird der folgende Datensatz geprüft.
 
 Um beispielsweise den Zugriff auf alle URLs der Domain &quot;business.com&quot;zu erlauben, können wir zwei Datensätze definieren:
 
@@ -1055,7 +1055,7 @@ Dies ist die Standardkonfiguration:
 
 ## xtkJobs {#xtkjobs}
 
-Im Folgenden finden Sie die verschiedenen Parameter des Knotens **xtkJobs** . Dies ist die Konfiguration der Serveraufträge.
+Im Folgenden finden Sie die verschiedenen Parameter der **xtkJobs** Knoten. Dies ist die Konfiguration der Serveraufträge.
 
 <table> 
  <thead> 
@@ -1069,7 +1069,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **xtkJobs** . Di
  <tbody> 
   <tr> 
    <td> purgeLogsPeriod<br /> </td> 
-   <td> Aktualisierungszeitraum des Speicherstatus für die Serververarbeitung (in ms).<br /> </td> 
+   <td> Aktualisierungszeitraum für den Speicherstatus der Serververarbeitung (in ms).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 500<br /> </td> 
   </tr> 
@@ -1078,7 +1078,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **xtkJobs** . Di
 
 ## Archivierung {#archiving}
 
-Im Folgenden finden Sie die verschiedenen Parameter des Knotens **Archivierung** . Dies ist die Konfiguration der ausgeführten Archivierungsvorgänge im Hintergrund.
+Im Folgenden finden Sie die verschiedenen Parameter der **Archivierung** Knoten. Dies ist die Konfiguration der ausgeführten Archivierungsvorgänge im Hintergrund.
 
 Weitere Informationen finden Sie unter [Aktivieren der E-Mail-Archivierung (vor Ort)](../../installation/using/email-archiving.md#activating-email-archiving--on-premise-).
 
@@ -1100,7 +1100,7 @@ Weitere Informationen finden Sie unter [Aktivieren der E-Mail-Archivierung (vor 
   </tr> 
   <tr> 
    <td> archivingType<br /> </td> 
-   <td> Archivierungsstrategie für gesendete Nachrichten (Auflistung). Mögliche Werte sind '0' (keine Archivierung) und '1' (Übertragung der Archivierung gesendeter Nachrichten an einen SMTP-Server).<br /> </td> 
+   <td> Archivierungsstrategie für gesendete Nachrichten (Auflistung). Mögliche Werte sind "0"(keine Archivierung) und "1" (Übertragung der Archivierung gesendeter Nachrichten an einen SMTP-Server).<br /> </td> 
    <td> Byte<br /> </td> 
    <td> 0<br /> </td> 
   </tr> 
@@ -1124,13 +1124,13 @@ Weitere Informationen finden Sie unter [Aktivieren der E-Mail-Archivierung (vor 
   </tr> 
   <tr> 
    <td> compressionFormat<br /> </td> 
-   <td> Komprimierungsformat, das bei der Archivierung (Auflistung) verwendet wird. Mögliche Werte sind '0' (keine Komprimierung) und '1' (komprimieren gesendeter Nachrichten im ZIP-Format).<br /> </td> 
+   <td> Komprimierungsformat, das bei der Archivierung (Auflistung) verwendet wird. Mögliche Werte sind "0"(keine Komprimierung) und "1"(komprimieren gesendeter Nachrichten im ZIP-Format).<br /> </td> 
    <td> Byte<br /> </td> 
    <td> 1<br /> </td> 
   </tr> 
   <tr> 
    <td> expirationDelay<br /> </td> 
-   <td> Verzögerung vor der automatischen Archivierung nicht verarbeiteter E-Mails: Anzahl der Tage, bevor nicht verarbeitete E-Mails archiviert werden.<br /> </td> 
+   <td> Verzögerung vor der automatischen Archivierung nicht verarbeiteter E-Mails: Anzahl der Tage vor der Archivierung nicht verarbeiteter E-Mails.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 2<br /> </td> 
   </tr> 
@@ -1148,7 +1148,7 @@ Weitere Informationen finden Sie unter [Aktivieren der E-Mail-Archivierung (vor 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> Warnung zur Speicherbelegung: Warnung bezüglich der von einem bestimmten Prozess verbrauchten RAM-Menge (in MB).<br /> </td> 
+   <td> Warnung zur Speicherbelegung: Warnung bezüglich der von einem bestimmten Prozess verbrauchten RAM (in MB).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
@@ -1162,7 +1162,7 @@ Weitere Informationen finden Sie unter [Aktivieren der E-Mail-Archivierung (vor 
    <td> processRestartTime<br /> </td> 
    <td> Zeitpunkt des automatischen Neustarts des Prozesses. Siehe <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatischer Prozess-Neustart</a>.<br /> </td> 
    <td> String <br /> </td> 
-   <td> '06:00:00' <br /> </td> 
+   <td> "06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> purgeArchivesDelay<br /> </td> 
@@ -1211,7 +1211,7 @@ Weitere Informationen finden Sie unter [Aktivieren der E-Mail-Archivierung (vor 
 
 ## inMail {#inmail}
 
-Im Folgenden finden Sie die verschiedenen Parameter des Knotens **inMail** . Dies ist die Konfiguration des Moduls E-Mail-Management.
+Im Folgenden finden Sie die verschiedenen Parameter der **inMail** Knoten. Dies ist die Konfiguration des Moduls E-Mail-Management.
 
 <table> 
  <thead> 
@@ -1273,7 +1273,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **inMail** . Die
   </tr> 
   <tr> 
    <td> maxBroadLog<br /> </td> 
-   <td> Maximale Anzahl der zu aktualisierenden Protokolle: definiert die maximale Anzahl von Protokollmeldungen, die vor der Datenbankaktualisierung im Speicher bleiben sollen.<br /> </td> 
+   <td> Maximale Anzahl der zu aktualisierenden Protokolle: definiert die maximale Anzahl von Protokollmeldungen, die im Speicher aufbewahrt werden sollen, bevor die Datenbank aktualisiert wird.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 20<br /> </td> 
   </tr> 
@@ -1291,7 +1291,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **inMail** . Die
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> Warnung zur Speicherbelegung: Warnung bezüglich der von einem bestimmten Prozess verbrauchten RAM-Menge (in MB).<br /> </td> 
+   <td> Warnung zur Speicherbelegung: Warnung bezüglich der von einem bestimmten Prozess verbrauchten RAM (in MB).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
@@ -1323,7 +1323,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **inMail** . Die
    <td> processRestartTime<br /> </td> 
    <td> Zeitpunkt des automatischen Neustarts des Prozesses. Siehe <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatischer Prozess-Neustart</a>.<br /> </td> 
    <td> String <br /> </td> 
-   <td> '06:00:00' <br /> </td> 
+   <td> "06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> reloadPeriodSec<br /> </td> 
@@ -1342,7 +1342,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **inMail** . Die
 
 ### msgDump {#msgdump}
 
-Konfigurieren Sie im Knoten **inMail > msgDump** die folgenden Parameter. Dies ist die Konfiguration des Dump verarbeiteter Nachrichten.
+Im **inMail > msgDump** Knoten konfigurieren Sie die folgenden Parameter. Dies ist die Konfiguration des Dump verarbeiteter Nachrichten.
 
 <table> 
  <thead> 
@@ -1371,7 +1371,7 @@ Konfigurieren Sie im Knoten **inMail > msgDump** die folgenden Parameter. Dies i
 
 ## interactiond {#interactiond}
 
-Im Folgenden finden Sie die verschiedenen Parameter des Knotens **interactiond** . Dies ist die Konfiguration des SchreibDaemons für eingehende Interaktionsereignisse.
+Im Folgenden finden Sie die verschiedenen Parameter der **interactiond** Knoten. Dies ist die Konfiguration des SchreibDaemons für eingehende Interaktionsereignisse.
 
 Weitere Informationen finden Sie unter [Interaction - Datenpuffer](../../installation/using/interaction---data-buffer.md).
 
@@ -1417,7 +1417,7 @@ Weitere Informationen finden Sie unter [Interaction - Datenpuffer](../../install
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> Warnung zur Speicherbelegung: Warnung bezüglich der von einem bestimmten Prozess verbrauchten RAM-Menge (in MB).<br /> </td> 
+   <td> Warnung zur Speicherbelegung: Warnung bezüglich der von einem bestimmten Prozess verbrauchten RAM (in MB).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
@@ -1429,7 +1429,7 @@ Weitere Informationen finden Sie unter [Interaction - Datenpuffer](../../install
   </tr> 
   <tr> 
    <td> nextOffersSize<br /> </td> 
-   <td> Maximale Anzahl von geeigneten Angeboten, die direkt nach Vorschlägen sortiert werden und für Statistiken gespeichert werden.<br /> </td> 
+   <td> Maximale Anzahl an geeigneten Angeboten, die direkt nach Vorschlägen sortiert und für Statistiken gespeichert werden.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 0<br /> </td> 
   </tr> 
@@ -1437,7 +1437,7 @@ Weitere Informationen finden Sie unter [Interaction - Datenpuffer](../../install
    <td> processRestartTime<br /> </td> 
    <td> Zeitpunkt des automatischen Neustarts des Prozesses. Siehe <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatischer Prozess-Neustart</a>.<br /> </td> 
    <td> String <br /> </td> 
-   <td> '06:00:00' <br /> </td> 
+   <td> "06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
@@ -1447,7 +1447,7 @@ Weitere Informationen finden Sie unter [Interaction - Datenpuffer](../../install
   </tr> 
   <tr> 
    <td> statsPeriod<br /> </td> 
-   <td> Aggregationsdauer in Sekunden für die Zeitstatistiken der Antwort. 0 bedeutet, dass der statistische Speicher deaktiviert wurde.<br /> </td> 
+   <td> Aggregationsdauer in Sekunden für die Zeitstatistiken der Antwort. 0 bedeutet, dass die statistische Speicherung deaktiviert wurde.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
@@ -1462,7 +1462,7 @@ Weitere Informationen finden Sie unter [Interaction - Datenpuffer](../../install
 
 ## mta {#mta}
 
-Im Folgenden finden Sie die verschiedenen Parameter des Knotens **mta** . Dies ist die Konfiguration der Versandagenten.
+Im Folgenden finden Sie die verschiedenen Parameter der **mta** Knoten. Dies ist die Konfiguration der Versandagenten.
 
 <table> 
  <thead> 
@@ -1530,7 +1530,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **mta** . Dies i
   </tr> 
   <tr> 
    <td> maxMemoryMb<br /> </td> 
-   <td> Maximale Speichergröße (in MB), die ein MTA-Prozess verwenden kann. Über dieser Grenze hinaus wird der Prozess neu gestartet, sodass der verwendete Speicher in das System freigegeben wird.<br /> </td> 
+   <td> Maximale Speichergröße (in MB), die ein MTA-Prozess verwenden kann. Über dieser Grenze hinaus wird der Prozess neu gestartet, sodass der verwendete Speicher auf das System freigegeben wird.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1024<br /> </td> 
   </tr> 
@@ -1542,19 +1542,19 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **mta** . Dies i
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> Warnung zur Speicherbelegung: Warnung bezüglich der von einem bestimmten Prozess verbrauchten RAM-Menge (in MB).<br /> </td> 
+   <td> Warnung zur Speicherbelegung: Warnung bezüglich der von einem bestimmten Prozess verbrauchten RAM (in MB).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
   <tr> 
    <td> minConnectionsToLog<br /> </td> 
-   <td> Verbindungsschwellenwert zur Berücksichtigung. Fehlerstatistiken werden für einen bestimmten Pfad nicht generiert, wenn die Gesamtzahl der Verbindungen für den von errorPeriodSec angegebenen Zeitraum streng unter dem Schwellenwert liegt.<br /> </td> 
+   <td> Verbindungsschwellenwert zur Berücksichtigung. Fehlerstatistiken werden für einen bestimmten Pfad nicht generiert, wenn die Gesamtanzahl der Verbindungen für den von errorPeriodSec angegebenen Zeitraum streng unter dem Schwellenwert liegt.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 100<br /> </td> 
   </tr> 
   <tr> 
    <td> minErrorsToLog<br /> </td> 
-   <td> Zu berücksichtigender Fehlerschwellenwert: Fehlerstatistiken werden für einen bestimmten Pfad nicht generiert, wenn die Gesamtzahl der Fehler für den von errorPeriodSec angegebenen Zeitraum streng unter dem Schwellenwert liegt.<br /> </td> 
+   <td> Zu berücksichtigender Fehlerschwellenwert: Fehlerstatistiken werden für einen bestimmten Pfad nicht generiert, wenn die Gesamtzahl der Fehler für den von errorPeriodSec angegebenen Zeitraum strikt unter dem Schwellenwert liegt.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1<br /> </td> 
   </tr> 
@@ -1574,7 +1574,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **mta** . Dies i
    <td> processRestartTime<br /> </td> 
    <td> Zeitpunkt des automatischen Neustarts des Prozesses. Siehe <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatischer Prozess-Neustart</a>.<br /> </td> 
    <td> String <br /> </td> 
-   <td> '06:00:00' <br /> </td> 
+   <td> "06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> purgeDataLogDelay<br /> </td> 
@@ -1584,7 +1584,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **mta** . Dies i
   </tr> 
   <tr> 
    <td> retryLostMessages<br /> </td> 
-   <td> Verlorene Nachrichten wiederholen: Teile eines Versands werden erneut versucht, wenn der untergeordnete Prozess tot ist.<br /> </td> 
+   <td> Verlorene Nachrichten wiederholen: Teile von Sendungen werden wiederholt, wenn der untergeordnete Prozess tot ist.<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> true<br /> </td> 
   </tr> 
@@ -1603,15 +1603,15 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **mta** . Dies i
   <tr> 
    <td> statServerAddress<br /> </td> 
    <td> Adresse des Versandstatistiken-Servers, angegeben als 
-    &lt;dns or ip&gt; 
+    &lt;dns or="" ip=""&gt; 
       <code>[</code>: 
-     &lt;Anschluss&gt; 
+     &lt;port&gt; 
        <code>]</code>. Siehe 
       <a href="../../installation/using/email-deliverability.md#coordinates-of-the-statistics-server" target="_blank">Koordinaten des Statistikservers</a>. 
       <br /> 
      </td> 
    <td> String <br /> </td> 
-   <td> Falls nicht definiert, ist der Standardanschluss 7777.<br /> </td> 
+   <td> Wenn der Standardanschluss nicht definiert ist, ist 7777.<br /> </td> 
   </tr> 
   <tr> 
    <td> statServerTLSSupport<br /> </td> 
@@ -1627,25 +1627,25 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **mta** . Dies i
   </tr> 
   <tr> 
    <td> useMomentum<br /> </td> 
-   <td> Wenn auf "true"gesetzt, verwendet Ihre Instanz den <a href="../../delivery/using/sending-with-enhanced-mta.md" target="_blank">Enhanced MTA</a>.<br />. </td> 
+   <td> Wenn auf "true"gesetzt, verwendet Ihre Instanz die <a href="../../delivery/using/sending-with-enhanced-mta.md" target="_blank">Verbesserter MTA</a>.<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> <br /> </td>b 
   </tr>
   <tr> 
    <td> verifyMode<br /> </td> 
-   <td> Überprüfungsmodus: aktiviert den Überprüfungsmodus (keine physische Übertragung von Nachrichten; wird für Simulation und Tests verwendet).<br /> </td> 
+   <td> Überprüfungsmodus: aktiviert den Überprüfungsmodus (keine physische Übertragung von Nachrichten; für Simulationen und Tests verwendet werden).<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> workingPath<br /> </td> 
-   <td> Arbeitsverzeichnis: Speicherort temporärer Dateien, die vom MTA zur Kommunikation mit seinen untergeordneten Prozessen verwendet werden.<br /> </td> 
+   <td> Arbeitsverzeichnis: Speicherort der temporären Dateien, die vom MTA zur Kommunikation mit seinen untergeordneten Prozessen verwendet werden.<br /> </td> 
    <td> String <br /> </td> 
    <td> '$(XTK_INSTALL_DIR)/var/$(INSTANCE_NAME)/mta/' <br /> </td> 
   </tr> 
   <tr> 
    <td> xMailer<br /> </td> 
-   <td> X-Mailer-Feld: Wert des Felds "X-Mailer"im SMTP-Mail-Header.<br /> </td> 
+   <td> X-Mailer-Feld: Wert des Felds 'X-Mailer' im SMTP-Mail-Header.<br /> </td> 
    <td> String <br /> </td> 
    <td> 'nlserver, Build $(PRODUCT_VERSION)'<br /> </td> 
   </tr>  
@@ -1654,7 +1654,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **mta** . Dies i
 
 ### cache {#cache}
 
-Konfigurieren Sie im Knoten **cache** die folgenden Parameter. Dies ist die Konfiguration des lokalen Datei-Cache.
+Im **cache** Knoten konfigurieren Sie die folgenden Parameter. Dies ist die Konfiguration des lokalen Datei-Cache.
 
 <table> 
  <thead> 
@@ -1668,13 +1668,13 @@ Konfigurieren Sie im Knoten **cache** die folgenden Parameter. Dies ist die Konf
  <tbody> 
   <tr> 
    <td> maxPeriodSec<br /> </td> 
-   <td> Recycling nach: Punkt, in Sekunden angegeben, nach dem die Datei automatisch aus dem Cache gelöscht wird, um den Speicher wiederherzustellen.<br /> </td> 
+   <td> Recycling nach: Punkt in Sekunden, nach dem die Datei automatisch aus dem Cache gelöscht wird, um den Speicher wiederherzustellen.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 244800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxSizeOnDiskMb<br /> </td> 
-   <td> Maximale Cachegröße (Mb).<br /> </td> 
+   <td> Maximale Cachegröße (MB).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1024<br /> </td> 
   </tr> 
@@ -1689,7 +1689,7 @@ Konfigurieren Sie im Knoten **cache** die folgenden Parameter. Dies ist die Konf
 
 ### Relais {#relay}
 
-Konfigurieren Sie im Knoten **mta > relay** die folgenden Parameter. Dies ist die Konfiguration des E-Mail-Servers für den Nachrichtenversand.
+Im **mta > relay** Knoten konfigurieren Sie die folgenden Parameter. Dies ist die Konfiguration des E-Mail-Servers für den Nachrichtenversand.
 
 Die Liste wird auf die gleiche Weise wie eine Liste von MX gehandhabt, die von einer MX-DNS-Abfrage zurückgegeben wird. Normalerweise wird der erste MX verwendet, solange er verfügbar ist, dann der nächste verwendet und so weiter.
 
@@ -1706,7 +1706,7 @@ Weitere Informationen finden Sie unter [SMTP-Relais](../../installation/using/co
  </thead> 
  <tbody> 
   <tr> 
-   <td> address<br /> </td> 
+   <td> Adresse<br /> </td> 
    <td> Kommagetrennte Liste von DNS-Namen oder IP-Adressen der zu verwendenden SMTP-Relais. <br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
@@ -1722,7 +1722,7 @@ Weitere Informationen finden Sie unter [SMTP-Relais](../../installation/using/co
 
 ### Übergeordnet {#master}
 
-Konfigurieren Sie im Knoten **mta > Übergeordnet** die folgenden Parameter. Dies ist die Konfiguration des Hauptservers.
+Im **mta > Übergeordnet** Knoten konfigurieren Sie die folgenden Parameter. Dies ist die Konfiguration des Hauptservers.
 
 Weitere Informationen finden Sie in diesem Abschnitt [Abschnitt](../../installation/using/configuring-campaign-server.md#mta-child-processes).
 
@@ -1756,7 +1756,7 @@ Weitere Informationen finden Sie in diesem Abschnitt [Abschnitt](../../installat
   </tr> 
   <tr> 
    <td> maxSpareServers<br /> </td> 
-   <td> Maximale Anzahl an untergeordneten Servern Stellt die maximale Anzahl der ausgeführten Server dar. Es wird empfohlen, diese Anzahl auf eine optimale Weise zu begrenzen, die mit den Serverspeicherressourcen kompatibel ist. Dies kann während eines Versands überprüft werden. Der verwendete Speicher darf nicht mehr als ein Drittel des verfügbaren physischen Speichers betragen. Andernfalls wird der Swap verwendet. Siehe <a href="../../installation/using/configuring-campaign-server.md#mta-child-processes" target="_blank">untergeordnete MTA-Prozesse</a>.<br /> </td> 
+   <td> Maximale Anzahl an untergeordneten Servern Stellt die maximale Anzahl der ausgeführten Server dar. Es wird empfohlen, diese Anzahl auf eine optimale Weise zu begrenzen, die mit den Serverspeicherressourcen kompatibel ist. Dies kann während eines Versands überprüft werden. Der verwendete Speicher darf nicht mehr als ein Drittel des verfügbaren physischen Speichers betragen. Andernfalls wird der Swap verwendet. Siehe <a href="../../installation/using/configuring-campaign-server.md#mta-child-processes" target="_blank">Untergeordnete MTA-Prozesse</a>.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 2<br /> </td> 
   </tr> 
@@ -1777,7 +1777,7 @@ Weitere Informationen finden Sie in diesem Abschnitt [Abschnitt](../../installat
 
 ### child {#child}
 
-Konfigurieren Sie im Knoten **mta > child** die folgenden Parameter. Dies ist die Konfiguration der untergeordneten Server.
+Im **mta > child** Knoten konfigurieren Sie die folgenden Parameter. Dies ist die Konfiguration der untergeordneten Server.
 
 Weitere Informationen finden Sie unter [Optimierung des E-Mail-Versands](../../installation/using/email-deliverability.md#email-sending-optimization).
 
@@ -1805,7 +1805,7 @@ Weitere Informationen finden Sie unter [Optimierung des E-Mail-Versands](../../i
   </tr> 
   <tr> 
    <td> maxAgeSec<br /> </td> 
-   <td> Maximale Dauer der Nachrichtenaufbewahrung. Wenn eine vorbereitete Nachricht aufgrund der Drosselung nicht gesendet werden konnte oder nicht in der Lage war, eine Verbindung zum MTA der Zielgruppe herzustellen, wird die Nachricht abgebrochen und beim nächsten Versuch verarbeitet.<br /> </td> 
+   <td> Maximale Dauer der Nachrichtenaufbewahrung. Wenn eine vorbereitete Nachricht aufgrund der Drosselung nicht gesendet werden konnte oder nicht in der Lage war, eine Verbindung zum MTA der Zielgruppe herzustellen, wird die Nachricht abgebrochen und beim nächsten erneuten Versuch verarbeitet.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
@@ -1854,7 +1854,7 @@ Weitere Informationen finden Sie unter [Optimierung des E-Mail-Versands](../../i
  </tbody> 
 </table>
 
-Konfigurieren Sie im Knoten **mta > child > smtp** die folgenden Parameter. Dies ist die Konfiguration von SMTP-Sitzungen.
+Im **mta > child > smtp** Knoten konfigurieren Sie die folgenden Parameter. Dies ist die Konfiguration von SMTP-Sitzungen.
 
 <table> 
  <thead> 
@@ -1893,7 +1893,7 @@ Konfigurieren Sie im Knoten **mta > child > smtp** die folgenden Parameter. Dies
  </tbody> 
 </table>
 
-Konfigurieren Sie im Knoten **mta > child > smtp > IPAffinity** die folgenden Parameter. Dies ist die Konfiguration der Verwaltung von Affinitäten mit IP-Adressen für optimierten ausgehenden SMTP-Traffic.
+Im **mta > child > smtp > IPAffinity** Knoten konfigurieren Sie die folgenden Parameter. Dies ist die Konfiguration der Verwaltung von Affinitäten mit IP-Adressen für optimierten ausgehenden SMTP-Traffic.
 
 Weitere Informationen finden Sie unter [Liste der zu verwendenden IP-Adressen](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use) und [Verwalten des ausgehenden SMTP-Traffics mit Affinitäten](../../installation/using/configuring-campaign-server.md#managing-outbound-smtp-traffic-with-affinities).
 
@@ -1913,13 +1913,13 @@ Weitere Informationen finden Sie unter [Liste der zu verwendenden IP-Adressen](.
   </tr> 
   <tr> 
    <td> name<br /> </td> 
-   <td> Logischer Name: Namen, die von Benutzern mit der Affinität verknüpft sind. Namen werden durch Semikolons getrennt;<br /> </td> 
+   <td> Logischer Name: Namen, die von Benutzern mit der Affinität verknüpft sind. Namen werden durch Semikolons getrennt.<br /> </td> 
    <td> String <br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Konfigurieren Sie im Knoten **mta > child > smtp > IP** die folgenden Parameter.
+Im **mta > child > smtp > IP** Knoten konfigurieren Sie die folgenden Parameter.
 
 Weitere Informationen finden Sie unter [Liste der zu verwendenden IP-Adressen](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use).
 
@@ -1933,7 +1933,7 @@ Weitere Informationen finden Sie unter [Liste der zu verwendenden IP-Adressen](.
  </thead> 
  <tbody> 
   <tr> 
-   <td> address<br /> </td> 
+   <td> Adresse<br /> </td> 
    <td> Zugehörige physische Adresse. z: "192.168.0.1"<br /> </td> 
    <td> String <br /> </td> 
   </tr> 
@@ -1967,7 +1967,7 @@ Weitere Informationen finden Sie unter [Liste der zu verwendenden IP-Adressen](.
 
 ## nmac {#nmac}
 
-Im Folgenden finden Sie die verschiedenen Parameter des Knotens **nmac** . Dies ist die Konfiguration von für Push-Benachrichtigungsversand.
+Im Folgenden finden Sie die verschiedenen Parameter der **nmac** Knoten. Dies ist die Konfiguration von für Push-Benachrichtigungsversand.
 
 <table> 
  <thead> 
@@ -1990,7 +1990,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **nmac** . Dies 
 
 ### Relais {#relay-1}
 
-Im Folgenden finden Sie die verschiedenen Parameter des Knotens **nmac > relay** . Dadurch wird die Verwendung eines Relais für den Nachrichtenversand (iOS HTTP2-Connector) konfiguriert.
+Im Folgenden finden Sie die verschiedenen Parameter der **nmac > relay** Knoten. Dadurch wird die Verwendung eines Relais für den Nachrichtenversand (iOS HTTP2-Connector) konfiguriert.
 
 <table> 
  <thead> 
@@ -2003,14 +2003,14 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **nmac > relay**
  </thead> 
  <tbody> 
   <tr> 
-   <td> address<br /> </td> 
+   <td> Adresse<br /> </td> 
    <td> DNS-Adresse oder Name des zu verwendenden Relais. <br /> </td> 
    <td> String <br /> </td> 
    <td> </td> 
   </tr> 
   <tr> 
    <td> Port<br /> </td> 
-   <td> Relativer Port<br /> </td> 
+   <td> Relationship Port<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 443<br /> </td> 
   </tr> 
@@ -2025,7 +2025,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **nmac > relay**
 
 ## pipelined {#pipelined}
 
-Im Folgenden finden Sie die verschiedenen Parameter des Knotens **pipelined** . Dies ist die Konfiguration des Ereignisverarbeitungsmoduls für Pipeline-Dienste.
+Im Folgenden finden Sie die verschiedenen Parameter der **pipelined** Knoten. Dies ist die Konfiguration des Ereignisverarbeitungsmoduls für Pipeline-Dienste.
 
 <table> 
  <thead> 
@@ -2105,7 +2105,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **pipelined** . 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> Warnung zur Speicherbelegung: Warnung bezüglich der von einem bestimmten Prozess verbrauchten RAM-Menge (in MB).<br /> </td> 
+   <td> Warnung zur Speicherbelegung: Warnung bezüglich der von einem bestimmten Prozess verbrauchten RAM (in MB).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
@@ -2117,13 +2117,13 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **pipelined** . 
   </tr> 
   <tr> 
    <td> pointerFlushMessageCount<br /> </td> 
-   <td> Der Zeiger wird jedes Mal in der Datenbank gespeichert, wenn diese Anzahl von Nachrichten verarbeitet wird.<br /> </td> 
+   <td> Der Zeiger wird jedes Mal, wenn diese Anzahl von Nachrichten verarbeitet wird, in der Datenbank gespeichert.<br /> </td> 
    <td> <br /> </td> 
    <td> 1000<br /> </td> 
   </tr> 
   <tr> 
    <td> pointerFlushPeriodSec<br /> </td> 
-   <td> Verzögerung vor der Speicherung des Zeigers: Der Zeiger wird während dieses Zeitraums mindestens einmal in der Datenbank gespeichert (nützlich bei geringer Aktivität).<br /> </td> 
+   <td> Verzögerung vor der Speicherung des Zeigers: Der Zeiger wird mindestens einmal während dieses Zeitraums in der Datenbank gespeichert (nützlich bei geringer Aktivität).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 5<br /> </td> 
   </tr> 
@@ -2131,7 +2131,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **pipelined** . 
    <td> processRestartTime<br /> </td> 
    <td> Zeitpunkt des automatischen Neustarts des Prozesses. Siehe <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatischer Prozess-Neustart</a>.<br /> </td> 
    <td> String <br /> </td> 
-   <td> '06:00:00' <br /> </td> 
+   <td> "06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> processingJSThreads<br /> </td> 
@@ -2168,7 +2168,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **pipelined** . 
 
 ## Reparatur {#repair}
 
-Im Folgenden finden Sie die verschiedenen Parameter des Knotens **reparieren** . Dies ist die Konfiguration des Datenbankreparaturmoduls.
+Im Folgenden finden Sie die verschiedenen Parameter der **Reparatur** Knoten. Dies ist die Konfiguration des Datenbankreparaturmoduls.
 
 <table> 
  <thead> 
@@ -2191,7 +2191,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **reparieren** .
 
 ## securityZone {#securityzone}
 
-Im Folgenden finden Sie die verschiedenen Parameter des Knotens **securityZone** .
+Im Folgenden finden Sie die verschiedenen Parameter der **securityZone** Knoten.
 
 Weitere Informationen finden Sie unter [Sicherheitszonen definieren](../../installation/using/security-zones.md).
 
@@ -2236,7 +2236,7 @@ Weitere Informationen finden Sie unter [Sicherheitszonen definieren](../../insta
    <td> false<br /> </td> 
   </tr> 
   <tr> 
-   <td> label<br /> </td> 
+   <td> Titel<br /> </td> 
    <td> Titel<br /> </td> 
    <td> String <br /> </td> 
    <td> NewLabel()<br /> </td> 
@@ -2289,7 +2289,7 @@ Dies ist die Standardkonfiguration:
 
 ### subNetwork {#subnetwork}
 
-Im Folgenden finden Sie die verschiedenen Parameter des Knotens **securityZone > subNetwork** .
+Im Folgenden finden Sie die verschiedenen Parameter der **securityZone > subNetwork** Knoten.
 
 Weitere Informationen finden Sie unter [Sicherheitszonen definieren](../../installation/using/security-zones.md).
 
@@ -2304,7 +2304,7 @@ Weitere Informationen finden Sie unter [Sicherheitszonen definieren](../../insta
  </thead> 
  <tbody> 
   <tr> 
-   <td> label<br /> </td> 
+   <td> Titel<br /> </td> 
    <td> Titel<br /> </td> 
    <td> String <br /> </td> 
    <td> NewLabel()<br /> </td> 
@@ -2322,17 +2322,17 @@ Weitere Informationen finden Sie unter [Sicherheitszonen definieren](../../insta
    <td> NewName() <br /> </td> 
   </tr> 
   <tr> 
-   <td> proxy<br /> </td> 
+   <td> Proxy<br /> </td> 
    <td> Maske oder Adresse des vom Sub-Netzwerk verwendeten (Reverse) Proxys, um auf die Instanz zuzugreifen. In diesem Fall wird der Header 'X-Forwarded-For' anstelle des Proxys getestet.<br /> </td> 
    <td> String <br /> </td> 
-   <td> 127.0.0.1 <br /> </td> 
+   <td> 127,0,0,1 <br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## sms {#sms}
 
-Im Folgenden finden Sie die verschiedenen Parameter des Knotens **sms** . Dies ist die Konfiguration des eingehenden SMS-Verwaltungsmoduls.
+Im Folgenden finden Sie die verschiedenen Parameter der **sms** Knoten. Dies ist die Konfiguration des eingehenden SMS-Verwaltungsmoduls.
 
 <table> 
  <thead> 
@@ -2358,7 +2358,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **sms** . Dies i
   </tr> 
   <tr> 
    <td> dataRetentionDays<br /> </td> 
-   <td> Maximale Anzahl der Tage, in denen Dateien bearbeitet werden, die vom SMPP-Connector aufbewahrt werden.<br /> </td> 
+   <td> Maximale Anzahl der Tage, in denen Dateien vom SMPP-Connector gespeichert werden.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 60<br /> </td> 
   </tr> 
@@ -2376,7 +2376,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **sms** . Dies i
   </tr> 
   <tr> 
    <td> keepAlivePeriod<br /> </td> 
-   <td> Wiederholung des Sitzungskontinuitätsrahmens: max. Zeitraum in Sekunden zwischen zwei Frames für die Benachrichtigung, dass die Empfangs-Sitzung weiterhin aktiviert ist.<br /> </td> 
+   <td> Wiederholung des Sitzungskontinuitätsrahmens: max. Zeitraum in Sekunden zwischen zwei Frames, um darauf hinzuweisen, dass die empfangende Sitzung weiterhin aktiviert ist.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 25<br /> </td> 
   </tr> 
@@ -2388,13 +2388,13 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **sms** . Dies i
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> Warnung zur Speicherbelegung: Warnung bezüglich der von einem bestimmten Prozess verbrauchten RAM-Menge (in MB).<br /> </td> 
+   <td> Warnung zur Speicherbelegung: Warnung bezüglich der von einem bestimmten Prozess verbrauchten RAM (in MB).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
   <tr> 
    <td> pollPeriod<br /> </td> 
-   <td> Suchhäufigkeit: Umfragezeitraum für SMS-Konten.<br /> </td> 
+   <td> Suchhäufigkeit: Zeitraum der SMS-Kontoabfrage.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 300<br /> </td> 
   </tr> 
@@ -2402,7 +2402,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **sms** . Dies i
    <td> processRestartTime<br /> </td> 
    <td> Zeitpunkt des automatischen Neustarts des Prozesses. Siehe <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatischer Prozess-Neustart</a>.<br /> </td> 
    <td> String <br /> </td> 
-   <td> '06:00:00' <br /> </td> 
+   <td> "06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> reloadPeriod<br /> </td> 
@@ -2433,7 +2433,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **sms** . Dies i
 
 ### netsize {#netsize}
 
-Im Folgenden finden Sie die verschiedenen Parameter des Knotens **sms > netsize** .
+Im Folgenden finden Sie die verschiedenen Parameter der **sms > netsize** Knoten.
 
 <table> 
  <thead> 
@@ -2447,7 +2447,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **sms > netsize*
  <tbody> 
   <tr> 
    <td> netsizeConnectionTimeout<br /> </td> 
-   <td> Zeitüberschreitung in Sekunden bei der Herstellung einer Verbindung mit Netsize.<br /> </td> 
+   <td> Zeitüberschreitung bei der Herstellung einer Verbindung mit Netsize in Sekunden.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 30<br /> </td> 
   </tr> 
@@ -2456,7 +2456,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **sms > netsize*
 
 ## stat {#stat}
 
-Im Folgenden finden Sie die verschiedenen Parameter des Knotens **stat** . Dies ist die Konfiguration des MTA-Statistikmoduls.
+Im Folgenden finden Sie die verschiedenen Parameter der **stat** Knoten. Dies ist die Konfiguration des MTA-Statistikmoduls.
 
 <table> 
  <thead> 
@@ -2494,7 +2494,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **stat** . Dies 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> Warnung zur Speicherbelegung: Warnung bezüglich der von einem bestimmten Prozess verbrauchten RAM-Menge (in MB).<br /> </td> 
+   <td> Warnung zur Speicherbelegung: Warnung bezüglich der von einem bestimmten Prozess verbrauchten RAM (in MB).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
@@ -2508,7 +2508,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **stat** . Dies 
    <td> processRestartTime<br /> </td> 
    <td> Zeitpunkt des automatischen Neustarts des Prozesses. Siehe <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatischer Prozess-Neustart</a>.<br /> </td> 
    <td> String <br /> </td> 
-   <td> '06:00:00' <br /> </td> 
+   <td> "06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
@@ -2521,7 +2521,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **stat** . Dies 
 
 ## syslogd {#syslogd}
 
-Im Folgenden finden Sie die verschiedenen Parameter des Knotens **syslogd** . Dies ist die Konfiguration des Protokollverwaltungsmoduls.
+Im Folgenden finden Sie die verschiedenen Parameter der **syslogd** Knoten. Dies ist die Konfiguration des Protokollverwaltungsmoduls.
 
 <table> 
  <thead> 
@@ -2571,7 +2571,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **syslogd** . Di
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> Warnung zur Speicherbelegung: Warnung bezüglich der von einem bestimmten Prozess verbrauchten RAM-Menge (in MB).<br /> </td> 
+   <td> Warnung zur Speicherbelegung: Warnung bezüglich der von einem bestimmten Prozess verbrauchten RAM (in MB).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
@@ -2579,7 +2579,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **syslogd** . Di
    <td> processRestartTime<br /> </td> 
    <td> Zeitpunkt des automatischen Neustarts des Prozesses. Siehe <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatischer Prozess-Neustart</a>.<br /> </td> 
    <td> String <br /> </td> 
-   <td> '06:00:00' <br /> </td> 
+   <td> "06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
@@ -2592,7 +2592,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **syslogd** . Di
 
 ## tracking {#tracking}
 
-Im Folgenden finden Sie die verschiedenen Parameter des Knotens **tracking** . Dies ist die Konfiguration des Tracking-Servers.
+Im Folgenden finden Sie die verschiedenen Parameter der **tracking** Knoten. Dies ist die Konfiguration des Tracking-Servers.
 
 <table> 
  <thead> 
@@ -2630,7 +2630,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **tracking** . D
   </tr> 
   <tr> 
    <td> dedupOpenPeriodMin<br /> </td> 
-   <td> Öffnungen deduplizieren: Entfernen Sie doppelte offene Trackinglogs, um die Auswirkungen von E-Mail-Vorschauen in E-Mail-Lesern wie Outlook zu begrenzen.<br /> </td> 
+   <td> Öffnungen deduplizieren: Entfernen Sie doppelte Öffnungs-Trackinglogs, um die Auswirkungen von E-Mail-Vorschauen in E-Mail-Lesern wie Outlook zu begrenzen.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1<br /> </td> 
   </tr> 
@@ -2672,7 +2672,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **tracking** . D
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> Warnung zur Speicherbelegung: Warnung bezüglich der von einem bestimmten Prozess verbrauchten RAM-Menge (in MB).<br /> </td> 
+   <td> Warnung zur Speicherbelegung: Warnung bezüglich der von einem bestimmten Prozess verbrauchten RAM (in MB).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
@@ -2684,7 +2684,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **tracking** . D
   </tr> 
   <tr> 
    <td> phishbowlServiceEndpoint<br /> </td> 
-   <td> Endpunkt für die Phishbowl Service-Endpoint-Integration. Dies schützt die Umleitung von falsch formatierten URLs, die aus älteren Builds generiert wurden.<br /> </td> 
+   <td> Endpunkt für die Phishbowl Service-Endpoint-Integration. Dadurch wird die Umleitung von falsch formatierten URLs geschützt, die aus älteren Builds generiert wurden.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -2692,7 +2692,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **tracking** . D
    <td> processRestartTime<br /> </td> 
    <td> Zeitpunkt des automatischen Neustarts des Prozesses. Siehe <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatischer Prozess-Neustart</a>.<br /> </td> 
    <td> String <br /> </td> 
-   <td> '06:00:00' <br /> </td> 
+   <td> "06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
@@ -2702,7 +2702,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **tracking** . D
   </tr> 
   <tr> 
    <td> trackingIgnorePercent<br /> </td> 
-   <td> Ignorieren Sie bis zu X % des Trackings: Aktualisieren Sie die Trackingindikatoren nicht, solange das Verhältnis der nicht bereits berücksichtigten Journale diesen Wert nicht erreicht.<br /> </td> 
+   <td> Ignorieren Sie bis zu X % des Trackings: Aktualisieren Sie die Trackingindikatoren nicht, solange das Verhältnis der nicht bereits berücksichtigten Zeitschriften diesen Wert nicht erreicht.<br /> </td> 
    <td> Byte<br /> </td> 
    <td> 1<br /> </td> 
   </tr> 
@@ -2723,7 +2723,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **tracking** . D
 
 ## trackinglogd {#trackinglogd}
 
-Im Folgenden finden Sie die verschiedenen Parameter des Knotens **trackinglogd** . Dies ist die Konfiguration des Trackinglog-SchreibDaemons.
+Im Folgenden finden Sie die verschiedenen Parameter der **trackinglogd** Knoten. Dies ist die Konfiguration des Trackinglog-SchreibDaemons.
 
 <table> 
  <thead> 
@@ -2773,7 +2773,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **trackinglogd**
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> Warnung zur Speicherbelegung: Warnung bezüglich der von einem bestimmten Prozess verbrauchten RAM-Menge (in MB).<br /> </td> 
+   <td> Warnung zur Speicherbelegung: Warnung bezüglich der von einem bestimmten Prozess verbrauchten RAM (in MB).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
@@ -2787,11 +2787,11 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **trackinglogd**
    <td> processRestartTime<br /> </td> 
    <td> Zeitpunkt des automatischen Neustarts des Prozesses. Siehe <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatischer Prozess-Neustart</a>.<br /> </td> 
    <td> String <br /> </td> 
-   <td> '06:00:00' <br /> </td> 
+   <td> "06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> purgeLogsPeriod<br /> </td> 
-   <td> Anzahl der Protokolle vor der Bereinigung: Anzahl der Protokolle, die vor Beginn der Bereinigung der Protokolldateien eingefügt wurden. Darf nicht kleiner als 50000 sein.<br /> </td> 
+   <td> Anzahl der Protokolle vor der Bereinigung: Anzahl der Protokolle, die vor Beginn der Bereinigung der Protokolldateien eingefügt wurden. Darf nicht unter 50000 liegen.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 50000<br /> </td> 
   </tr> 
@@ -2812,7 +2812,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **trackinglogd**
 
 ## Web {#web}
 
-Im Folgenden finden Sie die verschiedenen Parameter des Knotens **web** . Dies ist die Konfiguration des Webmoduls.
+Im Folgenden finden Sie die verschiedenen Parameter der **Web** Knoten. Dies ist die Konfiguration des Webmoduls.
 
 Weitere Informationen finden Sie in diesem Abschnitt [Abschnitt](configuring-campaign-server.md#default-port-for-tomcat).
 
@@ -2858,13 +2858,13 @@ Weitere Informationen finden Sie in diesem Abschnitt [Abschnitt](configuring-cam
   </tr> 
   <tr> 
    <td> controlPort<br /> </td> 
-   <td> Überwachungsanschluss von Tomcat: Siehe <a href="configure-tomcat.md" target="_blank">Konfigurieren von Tomcat</a>.<br /> </td> 
+   <td> Überwachungsanschluss von Tomcat: verweisen auf <a href="configure-tomcat.md" target="_blank">Tomcat konfigurieren</a>.<br /> </td> 
    <td> Kurz<br /> </td> 
    <td> 8005<br /> </td> 
   </tr> 
   <tr> 
    <td> httpPort<br /> </td> 
-   <td> Tomcat HTTP-Listening-Port: Siehe <a href="configure-tomcat.md" target="_blank">Konfigurieren von Tomcat</a>.<br /> </td> 
+   <td> Tomcat HTTP-Listening-Port: verweisen auf <a href="configure-tomcat.md" target="_blank">Tomcat konfigurieren</a>.<br /> </td> 
    <td> Kurz<br /> </td> 
    <td> 8080<br /> </td> 
   </tr> 
@@ -2876,7 +2876,7 @@ Weitere Informationen finden Sie in diesem Abschnitt [Abschnitt](configuring-cam
   </tr> 
   <tr> 
    <td> maxDeliveryQueueSize<br /> </td> 
-   <td> Größe der Warteschlange für SubmitDelivery-Aufrufe: maximale Anzahl von SOAP-Aufrufen von SubmitDelivery, die in die Warteschlange gestellt werden können.<br /> </td> 
+   <td> Größe der Warteschlange für SubmitDelivery-Aufrufe: Maximale Anzahl der SOAP-Aufrufe von SubmitDelivery, die in die Warteschlange gestellt werden können.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 50<br /> </td> 
   </tr> 
@@ -2888,7 +2888,7 @@ Weitere Informationen finden Sie in diesem Abschnitt [Abschnitt](configuring-cam
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> Warnung zur Speicherbelegung: Warnung bezüglich der von einem bestimmten Prozess verbrauchten RAM-Menge (in MB)<br /> </td> 
+   <td> Warnung zur Speicherbelegung: Warnhinweis bezüglich der von einem bestimmten Prozess verbrauchten RAM (in MB)<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
@@ -2902,7 +2902,7 @@ Weitere Informationen finden Sie in diesem Abschnitt [Abschnitt](configuring-cam
    <td> processRestartTime<br /> </td> 
    <td> Zeitpunkt des automatischen Neustarts des Prozesses. Siehe <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatischer Prozess-Neustart</a>.<br /> </td> 
    <td> String <br /> </td> 
-   <td> '06:00:00' <br /> </td> 
+   <td> "06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
@@ -2921,7 +2921,7 @@ Weitere Informationen finden Sie in diesem Abschnitt [Abschnitt](configuring-cam
 
 ### jsp {#jsp}
 
-Im Folgenden finden Sie die verschiedenen Parameter des Knotens **web > jsp** . Dies ist die Konfiguration der von den JSPs verwendeten Parameter.
+Im Folgenden finden Sie die verschiedenen Parameter der **web > jsp** Knoten. Dies ist die Konfiguration der von den JSPs verwendeten Parameter.
 
 <table> 
  <thead> 
@@ -2960,7 +2960,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **web > jsp** . 
  </tbody> 
 </table>
 
-Der Knoten **web > jsp > classpath** enthält die Liste aller Klassenpfade, die beim Starten von JVM verwendet werden sollen. Dies ist die Standardkonfiguration:
+Die **web > jsp > classpath** -Knoten enthält die Liste aller Klassenpfade, die beim Starten von JVM verwendet werden sollen. Dies ist die Standardkonfiguration:
 
 ```
 '$(XTK_INSTALL_DIR)/tomcat-8/bin/bootstrap.jar
@@ -3001,7 +3001,7 @@ Der Knoten **web > jsp > classpath** enthält die Liste aller Klassenpfade, die 
 
 ### jssp {#jssp}
 
-Im Folgenden finden Sie die verschiedenen Parameter des Knotens **web > jssp** . Dies ist die Konfiguration der von den JSSPs verwendeten Parameter.
+Im Folgenden finden Sie die verschiedenen Parameter der **web > jssp** Knoten. Dies ist die Konfiguration der von den JSSPs verwendeten Parameter.
 
 <table> 
  <thead> 
@@ -3028,11 +3028,11 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **web > jssp** .
  </tbody> 
 </table>
 
-Der Knoten **web > jsp > classpath** enthält die Liste aller Klassenpfade, die beim Starten von JVM verwendet werden sollen.
+Die **web > jsp > classpath** -Knoten enthält die Liste aller Klassenpfade, die beim Starten von JVM verwendet werden sollen.
 
 ### Relais {#relay-2}
 
-Im Folgenden finden Sie die verschiedenen Parameter des Knotens **web > relay** . Dies ist die Konfiguration des Relais für HTTP-Anfragen zwischen zwei Zonen.
+Im Folgenden finden Sie die verschiedenen Parameter der **web > relay** Knoten. Dies ist die Konfiguration des Relais für HTTP-Anfragen zwischen zwei Zonen.
 
 Weitere Informationen finden Sie in diesem Abschnitt [Abschnitt](../../installation/using/deploying-an-instance.md#synchronizing-public-resources).
 
@@ -3054,7 +3054,7 @@ Weitere Informationen finden Sie in diesem Abschnitt [Abschnitt](../../installat
   </tr> 
   <tr> 
    <td> forbiddenCharsInAuthority<br /> </td> 
-   <td> Verbotene Zeichen (Domäne): Liste der unzulässigen Zeichen im Abschnitt 'Authority' eines URI.<br /> </td> 
+   <td> Verbotene Zeichen (Domäne): Liste der unzulässigen Zeichen im Abschnitt "Authority"eines URI.<br /> </td> 
    <td> String <br /> </td> 
    <td> '.?#@/:' <br /> </td> 
   </tr> 
@@ -3091,7 +3091,7 @@ Weitere Informationen finden Sie in diesem Abschnitt [Abschnitt](../../installat
  </tbody> 
 </table>
 
-Fügen Sie für jede URL, die weitergeleitet werden soll, einen Knoten **web > relay > url** hinzu (die Einfügereihenfolge definiert die Priorität) mit den folgenden Parametern.
+Hinzufügen einer **web > relay > url** Knoten für jede URL, die weitergeleitet werden soll (Einfügereihenfolge definiert Priorität) mit den folgenden Parametern.
 
 Weitere Informationen finden Sie unter [Dynamische Seitensicherheit und Relais](../../installation/using/configuring-campaign-server.md#dynamic-page-security-and-relays) und [Abschnitt](../../installation/using/deploying-an-instance.md#synchronizing-public-resources).
 
@@ -3112,7 +3112,7 @@ Weitere Informationen finden Sie unter [Dynamische Seitensicherheit und Relais](
    <td> <br /> </td> 
   </tr> 
   <tr> 
-   <td> deny<br /> </td> 
+   <td> Ablehnen<br /> </td> 
    <td> Verweigert den Zugriff auf diese URLs (gibt HTTP 403 Fehler aus)<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> <br /> </td> 
@@ -3131,7 +3131,7 @@ Weitere Informationen finden Sie unter [Dynamische Seitensicherheit und Relais](
   </tr> 
   <tr> 
    <td> relayHost<br /> </td> 
-   <td> Hinzufügen des ursprünglichen Hosts: Verwenden Sie den HTTP-Header "Host"der ursprünglichen Anforderung bei der Wiedergabe.<br /> </td> 
+   <td> Hinzufügen des ursprünglichen Hosts: verwenden den HTTP-Header "Host"der ursprünglichen Anfrage bei der Wiedergabe.<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -3143,19 +3143,19 @@ Weitere Informationen finden Sie unter [Dynamische Seitensicherheit und Relais](
   </tr> 
   <tr> 
    <td> status<br /> </td> 
-   <td> Synchronisierungsstatus einer öffentlichen Ressource (Auflistung). Mögliche Werte sind 'normal' (normale Ausführung), 'Blacklist' (URL, die im Fall von Fehler 404 zur Blockierungsliste hinzugefügt wird) und 'reserve' (Datei-Upload auf Reserveserver, falls vorhanden).<br /> </td> 
+   <td> Synchronisierungsstatus einer öffentlichen Ressource (Auflistung). Mögliche Werte sind "normal"(normale Ausführung), "Blacklist"(URL, die im Fall von Fehler 404 zur Blockierungsliste hinzugefügt wird) und "reserve"(Datei-Upload auf Reserveserver, falls vorhanden).<br /> </td> 
    <td> String <br /> </td> 
    <td> normal<br /> </td> 
   </tr> 
   <tr> 
    <td> targetUrl<br /> </td> 
-   <td> URL der Zielseite: Siehe <a href="configure-tomcat.md" target="_blank">Konfigurieren von Tomcat</a>.<br /> </td> 
+   <td> URL der Zielseite: verweisen auf <a href="configure-tomcat.md" target="_blank">Tomcat konfigurieren</a>.<br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> timeout<br /> </td> 
-   <td> Maximale Ausführungszeit (in Sekunden) der zu sendenden Anforderung.<br /> </td> 
+   <td> Maximale Ausführungszeit (in Sekunden) der zu wiederholenden Anfrage.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -3233,7 +3233,7 @@ Dies ist die Standardkonfiguration:
      timeout="" status="spare" httpAllowed="true" urlPath="/*.jpg"/>
 ```
 
-Fügen Sie für jeden HTTP-Header einen Knoten **web > relay > responseHeader** hinzu, der zu den an den Relais weitergeleiteten Antworten hinzugefügt werden soll.
+Hinzufügen einer **web > relay > responseHeader** Knoten für jeden HTTP-Header, der zu den an den Relais weitergeleiteten Antworten hinzugefügt werden soll.
 
 Weitere Informationen finden Sie unter [Verwalten von HTTP-Headern](../../installation/using/configuring-campaign-server.md#managing-http-headers).
 
@@ -3267,7 +3267,7 @@ Dies ist die Standardkonfiguration:
 
 ### Umleitung {#redirection}
 
-Im Folgenden finden Sie die verschiedenen Parameter des Knotens **web > redirection** . Dies ist die Konfiguration des Umleitungsmoduls.
+Im Folgenden finden Sie die verschiedenen Parameter der **web > redirection** Knoten. Dies ist die Konfiguration des Umleitungsmoduls.
 
 Weitere Informationen finden Sie in diesem Abschnitt [Abschnitt](../../installation/using/deploying-an-instance.md#synchronizing-public-resources).
 
@@ -3283,7 +3283,7 @@ Weitere Informationen finden Sie in diesem Abschnitt [Abschnitt](../../installat
  <tbody> 
   <tr> 
    <td> IMSOrgId<br /> </td> 
-   <td> Organisationskennung des Identity Management-Systems (IMS): eindeutige Organisationskennung innerhalb der Adobe Experience Cloud, die insbesondere für den Besucher-ID-Dienst und die IMS-SSO verwendet wird. <br /> </td> 
+   <td> Organisationskennung des Identity Management-Systems (IMS): eindeutige Organisationskennung innerhalb der Adobe Experience Cloud, die insbesondere für den VisitorID-Dienst und die IMS-SSO verwendet wird. <br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -3350,9 +3350,9 @@ Weitere Informationen finden Sie in diesem Abschnitt [Abschnitt](../../installat
  </tbody> 
 </table>
 
-Im Folgenden finden Sie die verschiedenen Parameter des Knotens **web > redirection > reserveServer** .
+Im Folgenden finden Sie die verschiedenen Parameter der **web > redirection > reserveServer** Knoten.
 
-Weitere Informationen finden Sie unter [Redundante Verfolgung](../../installation/using/configuring-campaign-server.md#redundant-tracking).
+Weitere Informationen finden Sie unter [Redundantes Tracking](../../installation/using/configuring-campaign-server.md#redundant-tracking).
 
 <table> 
  <thead> 
@@ -3387,7 +3387,7 @@ Weitere Informationen finden Sie unter [Redundante Verfolgung](../../installatio
 
 ### spamCheck {#spamcheck}
 
-Im Folgenden finden Sie die verschiedenen Parameter des Knotens **web > spamCheck** . Dies ist die Konfiguration der Bewertungsparameter E-Mail-Anti-Spam-Bewertung .
+Im Folgenden finden Sie die verschiedenen Parameter der **web > spamCheck** Knoten. Dies ist die Konfiguration der Bewertungsparameter E-Mail-Anti-Spam-Bewertung .
 
 Weitere Informationen finden Sie unter [SpamAssassin konfigurieren](../../installation/using/configuring-spamassassin.md).
 
@@ -3410,7 +3410,7 @@ Weitere Informationen finden Sie unter [SpamAssassin konfigurieren](../../instal
 
 ## wfserver {#wfserver}
 
-Im Folgenden finden Sie die verschiedenen Parameter des Knotens **wfserver** . Dies ist die Workflow-Prozesskonfiguration.
+Im Folgenden finden Sie die verschiedenen Parameter der **wfserver** Knoten. Dies ist die Workflow-Prozesskonfiguration.
 
 Weitere Informationen finden Sie unter [Workflows und Affinitäten mit hoher Verfügbarkeit](../../installation/using/configuring-campaign-server.md#high-availability-workflows-and-affinities).
 
@@ -3462,7 +3462,7 @@ Weitere Informationen finden Sie unter [Workflows und Affinitäten mit hoher Ver
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> Warnung zur Speicherbelegung: Warnung bezüglich der von einem bestimmten Prozess verbrauchten RAM-Menge (in MB).<br /> </td> 
+   <td> Warnung zur Speicherbelegung: Warnung bezüglich der von einem bestimmten Prozess verbrauchten RAM (in MB).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
@@ -3476,7 +3476,7 @@ Weitere Informationen finden Sie unter [Workflows und Affinitäten mit hoher Ver
    <td> processRestartTime<br /> </td> 
    <td> Zeitpunkt des automatischen Neustarts des Prozesses. Siehe <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatischer Prozess-Neustart</a>.<br /> </td> 
    <td> String <br /> </td> 
-   <td> '06:00:00' <br /> </td> 
+   <td> "06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 

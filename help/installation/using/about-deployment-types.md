@@ -25,4 +25,4 @@ Bei einer Konfiguration auf mehreren Computern müssen Sie nicht überall dassel
 >
 >Die wichtigsten Installationskonfigurationsschritte können nur von Adobe für Bereitstellungen ausgeführt werden, die von Adobe gehostet werden, um beispielsweise die Server- und Instanzkonfigurationsdateien zu konfigurieren.
 >
->Weitere Informationen zu den Hauptunterschieden zwischen Bereitstellungen finden Sie im Abschnitt [Hosting-Modelle](../../installation/using/hosting-models.md) oder den [Funktionsunterschieden bei gehosteten und On-Premise-Bereitstellungen](../../installation/using/capability-matrix.md).
+>Weitere Informationen zu den Hauptunterschieden zwischen -Implementierungen finden Sie im Abschnitt [Hosting-Modelle](../../installation/using/hosting-models.md) oder [Funktionsunterschiede bei gehosteten und On-Premise-Implementierungen](../../installation/using/capability-matrix.md).

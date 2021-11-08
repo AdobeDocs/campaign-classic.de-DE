@@ -17,7 +17,7 @@ ht-degree: 13%
 
 ![](../../assets/v7-only.svg)
 
-In Adobe Campaign erhalten Sie über das **[!UICONTROL Audit-Protokoll]** Zugriff auf den vollständigen Verlauf der in Ihrer Instanz vorgenommenen Änderungen.
+In Adobe Campaign wird die **[!UICONTROL Audit-Protokoll]** gibt Ihnen Zugriff auf den vollständigen Verlauf der Änderungen, die in Ihrer Instanz vorgenommen wurden.
 
 **[!UICONTROL Das Audit-Protokoll erfasst in Echtzeit eine umfassende Liste von Aktionen und Ereignissen, die in Ihrer Adobe Campaign-Instanz auftreten.]** Es bietet eine Self-Service-Möglichkeit, auf einen Datenverlauf zuzugreifen, um Fragen zu beantworten, z. B.: was mit Ihren Workflows passiert ist und wer sie zuletzt aktualisiert hat oder was Ihre Benutzer in der Instanz getan haben.
 
@@ -30,7 +30,7 @@ Audit-Protokoll besteht aus drei Komponenten:
 
 * **Schema-Audit-Protokoll**: Überprüfen Sie die Aktivitäten und letzten Änderungen an Ihren Schemas.
 
-   Weiterführende Informationen zu Schemata finden Sie auf dieser [Seite](../../configuration/using/data-schemas.md).
+   Weiterführende Informationen zu Schemata finden Sie in diesem Abschnitt [page](../../configuration/using/data-schemas.md).
 
 * **Workflow-Audit-Protokoll**: Überprüfen Sie Aktivitäten und letzte Änderungen an Workflows sowie zusätzlich den Status Ihrer Workflows, z. B.:
 
@@ -43,20 +43,20 @@ Audit-Protokoll besteht aus drei Komponenten:
    * Wakeup, der der Aktion Ausstehende Aufgaben jetzt ausführen entspricht
    * Unbedingter Stopp
 
-   Weiterführende Informationen zu Workflows finden Sie auf dieser [Seite](../../workflow/using/about-workflows.md).
+   Weiterführende Informationen zu Workflows finden Sie in diesem Abschnitt [page](../../workflow/using/about-workflows.md).
 
-   Weiterführende Informationen zur Überwachung von Workflows finden Sie im Abschnitt [Dediziertes ](../../workflow/using/monitoring-workflow-execution.md).
+   Weiterführende Informationen zur Überwachung von Workflows finden Sie im Abschnitt [dedizierter Abschnitt](../../workflow/using/monitoring-workflow-execution.md).
 
 * **Option-Audit-Protokoll**: Überprüfen Sie die Aktivitäten und zuletzt vorgenommenen Änderungen an Ihren Optionen.
 
-   Weiterführende Informationen zu den Optionen finden Sie auf dieser [Seite](../../installation/using/configuring-campaign-options.md).
+   Weiterführende Informationen zu Optionen finden Sie in diesem Abschnitt [page](../../installation/using/configuring-campaign-options.md).
 
 ## Zugriff auf das Audit-Protokoll {#accessing-audit-trail}
 
-So greifen Sie auf das **[!UICONTROL Audit-Protokoll]** Ihrer Instanz zu:
+So greifen Sie auf die **[!UICONTROL Audit-Protokoll]** :
 
-1. Rufen Sie das Menü **[!UICONTROL Explorer]** Ihrer Instanz auf.
-1. Wählen Sie im Menü **[!UICONTROL Administration]** die Option **[!UICONTROL Audit]** .
+1. Zugriff auf **[!UICONTROL Explorer]** -Menü Ihrer Instanz.
+1. Unter dem **[!UICONTROL Administration]** Menü auswählen **[!UICONTROL Prüfung]** .
 
    ![](assets/audit_trail_1.png)
 
@@ -66,7 +66,7 @@ So greifen Sie auf das **[!UICONTROL Audit-Protokoll]** Ihrer Instanz zu:
 
    ![](assets/audit_trail_2.png)
 
-1. Das Fenster **[!UICONTROL Auditstelle]** enthält detailliertere Informationen zur ausgewählten Entität, z. B.:
+1. Die **[!UICONTROL Prüfstelle]** enthält detailliertere Informationen zur ausgewählten Entität, z. B.:
 
    * **[!UICONTROL Typ]** : Workflow, Optionen oder Schemas.
    * **[!UICONTROL Entität]** : Interner Name Ihrer Aktivitäten.
@@ -80,7 +80,7 @@ So greifen Sie auf das **[!UICONTROL Audit-Protokoll]** Ihrer Instanz zu:
 
 >[!NOTE]
 >
->Standardmäßig ist die Aufbewahrungsfrist für **[!UICONTROL Auditprotokolle]** auf 180 Tage eingestellt. Weiterführende Informationen zur Änderung des Aufbewahrungszeitraums finden Sie auf dieser [Seite](../../production/using/database-cleanup-workflow.md#deployment-wizard).
+>Standardmäßig ist die Aufbewahrungsfrist auf 180 Tage für **[!UICONTROL Auditprotokolle]** . Weiterführende Informationen zur Änderung des Aufbewahrungszeitraums finden Sie in diesem [page](../../production/using/database-cleanup-workflow.md#deployment-wizard).
 
 ## Audit-Protokoll aktivieren/deaktivieren {#enable-disable-audit-trail}
 
@@ -88,8 +88,8 @@ Das Audit-Protokoll kann für eine bestimmte Aktivität einfach aktiviert oder d
 
 Gehen Sie dabei folgendermaßen vor:
 
-1. Rufen Sie das Menü **[!UICONTROL Explorer]** Ihrer Instanz auf.
-1. Wählen Sie im Menü **[!UICONTROL Administration]** **[!UICONTROL Plattform]** und dann **[!UICONTROL Optionen]** aus.
+1. Zugriff auf **[!UICONTROL Explorer]** -Menü Ihrer Instanz.
+1. Unter dem **[!UICONTROL Administration]** Menü auswählen **[!UICONTROL Plattform]** then **[!UICONTROL Optionen]** .
 
    ![](assets/audit_trail_4.png)
 
@@ -102,7 +102,7 @@ Gehen Sie dabei folgendermaßen vor:
 
    ![](assets/audit_trail_5.png)
 
-1. Ändern Sie den Wert **[!UICONTROL Wert]** in 1, wenn Sie die Entität aktivieren möchten, oder in 0 , wenn Sie sie deaktivieren möchten.
+1. Ändern Sie die **[!UICONTROL Wert]** auf 1 gesetzt, wenn Sie die Entität aktivieren möchten, oder auf 0, wenn Sie sie deaktivieren möchten.
 
    ![](assets/audit_trail_6.png)
 

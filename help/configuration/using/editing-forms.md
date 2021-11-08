@@ -17,7 +17,7 @@ ht-degree: 56%
 
 ![](../../assets/v7-only.svg)
 
-Auf den Bildschirm zur Erstellung und Konfiguration des Formulars können Sie über den Ordner **[!UICONTROL Administration] > [!UICONTROL Configuration] > [!UICONTROL Input forms]** in der Adobe Campaign-Clientkonsole zugreifen:
+Auf den Bildschirm zur Erstellung und Konfiguration des Formulars können Sie über das Menü **[!UICONTROL Administration] > [!UICONTROL Konfiguration] > [!UICONTROL Formulare]** Ordner der Adobe Campaign-Clientkonsole:
 
 ![](assets/d_ncs_integration_form_arbo.png)
 

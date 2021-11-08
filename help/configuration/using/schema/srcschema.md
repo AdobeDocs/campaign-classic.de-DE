@@ -43,22 +43,22 @@ Kein(e)
 
 ## Beschreibung {#description-14}
 
-`<srcschema>` ist das Stammelement eines Schemas. Dies ist der Eingabepunkt für die Definition des Schemas.
+Die `<srcschema>` ist das Stammelement eines Schemas. Dies ist der Eingabepunkt für die Definition des Schemas.
 
 ## Verwendung und Verwendungskontext {#use-and-context-of-use-9}
 
-Die Schemadarstellung ist in [Über die Schemareferenz](../../../configuration/using/about-schema-reference.md) und [Schemastruktur](../../../configuration/using/schema-structure.md) verfügbar.
+Die Schemapräsentation ist verfügbar in [Über Schemareferenz](../../../configuration/using/about-schema-reference.md) und [Schemastruktur](../../../configuration/using/schema-structure.md).
 
 ## Attributbeschreibung {#attribute-description-14}
 
 * **created (datetime)**: Dieses Attribut liefert Informationen zum Datum und zur Uhrzeit der Schemaerstellung. Es enthält das Formular &quot;Datum/Uhrzeit&quot;. Die angezeigten Werte werden vom Server übernommen. Die Uhrzeit wird im UTC-Format angezeigt.
 * **createdBy-id (long)**: ist die Kennung des Operators, der das Schema erstellt hat.
-* **desc (string)**: Schemabeschreibung
-* **entitySchema (string)**: Basisschema, auf dem Syntax und Genehmigung basieren (standardmäßig für Adobe Campaign: xtk:srcSchema). Wenn Sie das aktuelle Schema speichern, validiert Adobe Campaign seine Grammatik mit dem im Attribut @xtkschema deklarierten Schema.
-* **extendedSchema (string)**: empfängt den Namen des nativen Schemas, auf dem die aktuelle Schemaerweiterung basiert. Das Formular lautet &quot;namespace:name&quot;.
+* **desc (Zeichenfolge)**: Schemabeschreibung
+* **entitySchema (Zeichenfolge)**: Basisschema, auf dem Syntax und Genehmigung basieren (standardmäßig für Adobe Campaign: xtk:srcSchema). Wenn Sie das aktuelle Schema speichern, validiert Adobe Campaign seine Grammatik mit dem im Attribut @xtkschema deklarierten Schema.
+* **extendedSchema (Zeichenfolge)**: empfängt den Namen des nativen Schemas, auf dem die aktuelle Schemaerweiterung basiert. Das Formular lautet &quot;namespace:name&quot;.
 * **img (Zeichenfolge)**: mit dem Schema verknüpfte Symbol (kann im Assistenten zur Schemaerstellung definiert werden).
 * **label (string)**: Schemabezeichnung.
-* **labelSingular (string)**: label (Singular) für die Anzeige in der Benutzeroberfläche.
+* **labelSingular (Zeichenfolge)**: label (Singular) für die Anzeige in der Benutzeroberfläche.
 * **lastModified (datetime)**: Dieses Attribut enthält Informationen zum Datum und zur Uhrzeit der letzten Änderung. Es enthält das Formular &quot;Datum/Uhrzeit&quot;. Die angezeigten Werte werden vom Server übernommen. Die Uhrzeit wird im UTC-Format angezeigt.
 * **Bibliothek (boolesch)**: Verwendung des Schemas als Bibliothek und keine Entität. Dieses Schema kann daher durch andere Schemata referenziert werden, die den Attributen &quot;@ref&quot; und &quot;@template&quot; entsprechen.
 * **mappingType (string)**:
@@ -73,7 +73,7 @@ Die Schemadarstellung ist in [Über die Schemareferenz](../../../configuration/u
 * **namespace (string)**: Namespace des Schemas (Standard: nms, xtk, nl). Beim Erstellen eines neuen Schemas für ein Projekt wird empfohlen, einen dedizierten Namespace zu verwenden.
 * **useRecycleBin (boolean)**: Aktiviert die Papierkorbsfunktion in der Anwendung. Gelöschte Datensätze werden vor der endgültigen Löschung in den Papierkorb gelegt. Diese Funktion ist nur im Versandmodus verfügbar.
 * **view (boolean)**: Wenn es aktiviert ist (@view=&quot;true&quot;), wird das Schema als Ansicht verwendet. Der Assistent zur Aktualisierung der Datenbankstruktur berücksichtigt das Schema nicht. Diese Option wird hauptsächlich für die Referenzierung externer Tabellen verwendet.
-* **xtkschema (string)**: Name des Schemas, das die Schemakompatibilität definiert (standardmäßig xtk:srcSchema).
+* **xtkschema (Zeichenfolge)**: Name des Schemas, das die Schemakompatibilität definiert (standardmäßig xtk:srcSchema).
 
 ## Beispiele {#examples-11}
 

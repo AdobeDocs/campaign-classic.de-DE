@@ -17,19 +17,19 @@ ht-degree: 0%
 
 ![](../../assets/v7-only.svg)
 
-Adobe Campaign verwendet ein **eingebettetes Webservlet namens Apache Tomcat**, um HTTP/HTTPS-Anforderungen zwischen der Anwendung und einer beliebigen externen Schnittstelle zu verarbeiten (einschließlich Client-Konsole, getrackte URL-Links, SOAP-Aufrufe und andere). Oft liegt ein externer Webserver (normalerweise IIS oder Apache) vor diesem für alle externen Adobe Campaign-Instanzen.
+Adobe Campaign verwendet eine **eingebettetes Webservlet namens Apache Tomcat** zur Verarbeitung von HTTP/HTTPS-Anforderungen zwischen der Anwendung und einer beliebigen externen Schnittstelle (einschließlich Client-Konsole, getrackte URL-Links, SOAP-Aufrufe und andere). Oft liegt ein externer Webserver (normalerweise IIS oder Apache) vor diesem für alle externen Adobe Campaign-Instanzen.
 
-Erfahren Sie mehr über Tomcat in Campaign und wie Sie Ihre Tomcat-Version in [dieser Seite](../../production/using/locate-tomcat-version.md) finden.
+Erfahren Sie mehr über Tomcat in Campaign und wie Sie Ihre Tomcat-Version finden in [diese Seite](../../production/using/locate-tomcat-version.md).
 
 >[!NOTE]
 >
->Dieses Verfahren ist auf **On-Premise** -Implementierungen beschränkt.
+>Dieses Verfahren beschränkt sich auf **On-Premise** -Implementierungen.
 
 ## Standardanschluss für Apache Tomcat {#default-port-for-tomcat}
 
-Wenn der 8080-Listening-Port des Tomcat-Servers bereits mit einer anderen für Ihre Konfiguration erforderlichen Anwendung besetzt ist, müssen Sie den 8080-Port durch einen freien ersetzen (z. B. 8090). Um sie zu ändern, bearbeiten Sie die Datei **server.xml**, die im Ordner **/tomcat-8/conf** des Adobe Campaign-Installationsordners gespeichert ist.
+Wenn der 8080-Listening-Port des Tomcat-Servers bereits mit einer anderen für Ihre Konfiguration erforderlichen Anwendung besetzt ist, müssen Sie den 8080-Port durch einen freien ersetzen (z. B. 8090). Um sie zu ändern, bearbeiten Sie die **server.xml** in der Datei **/tomcat-8/conf** Ordner des Adobe Campaign-Installationsordners.
 
-Ändern Sie dann den Port der JSP-Relais-Seiten. Ändern Sie dazu die Datei **serverConf.xml**, die im Ordner **/conf** des Adobe Campaign-Installationsordners gespeichert ist.
+Ändern Sie dann den Port der JSP-Relais-Seiten. Ändern Sie dazu die **serverConf.xml** in der Datei **/conf** Ordner des Adobe Campaign-Installationsordners.
 
 ```
 <serverConf>
@@ -40,7 +40,7 @@ Wenn der 8080-Listening-Port des Tomcat-Servers bereits mit einer anderen für I
 
 ## Ordner in Apache Tomcat zuordnen {#mapping-a-folder-in-tomcat}
 
-Um kundenspezifische Einstellungen zu definieren, können Sie eine Datei **user_contexts.xml** im Ordner **/tomcat-8/conf** erstellen, die auch die Datei **contexts.xml** enthält.
+Um kundenspezifische Einstellungen zu definieren, können Sie eine **user_contexts.xml** in der Datei **/tomcat-8/conf** -Ordner, der auch den **contexts.xml** -Datei.
 
 Diese Datei enthält die folgenden Informationen:
 

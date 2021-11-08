@@ -23,7 +23,7 @@ Installieren Sie für eine Windows-32-Bit-Plattform Adobe Campaign 32 Bit. Insta
 
 Die Installationsschritte für den Adobe Campaign-Server lauten wie folgt:
 
-1. Führen Sie die Datei **setup.exe** aus.
+1. Datei ausführen **setup.exe**.
 
    ![](assets/s_ncs_install_installer_01.png)
 
@@ -38,7 +38,7 @@ Die Installationsschritte für den Adobe Campaign-Server lauten wie folgt:
    * **[!UICONTROL Installation eines Clients]** : Installation der erforderlichen Komponenten für den Adobe Campaign-Client.
    * **[!UICONTROL Benutzerdefinierte Installation]** : Der Benutzer wählt die zu installierenden Elemente aus.
 
-   Wählen Sie **Installation eines Anwendungsservers** und gehen Sie wie unten gezeigt durch die verschiedenen Schritte:
+   Auswählen **Installation eines Anwendungsservers** und führen Sie die verschiedenen Schritte durch, wie unten dargestellt:
 
    ![](assets/s_ncs_install_installer_02.png)
 
@@ -46,7 +46,7 @@ Die Installationsschritte für den Adobe Campaign-Server lauten wie folgt:
 
    ![](assets/s_ncs_install_installer_03.png)
 
-1. Klicken Sie auf **[!UICONTROL Finish]** , um die Installation zu starten:
+1. Klicken **[!UICONTROL Beenden]** um die Installation zu starten:
 
    ![](assets/s_ncs_install_installer_04.png)
 
@@ -62,7 +62,7 @@ Die Installationsschritte für den Adobe Campaign-Server lauten wie folgt:
    >
    >Nach Abschluss der Serverinstallation ist ein Neustart des Servers erforderlich, um mögliche Netzwerkprobleme zu vermeiden.
 
-   Starten Sie nach Abschluss der Installation Adobe Campaign, um die Konfigurationsdateien zu erstellen. Siehe [Erster Start des Servers](#first-start-up-of-the-server).
+   Starten Sie nach Abschluss der Installation Adobe Campaign, um die Konfigurationsdateien zu erstellen. Siehe [Erstmaliger Start des Servers](#first-start-up-of-the-server).
 
 ## Zusammenfassungstests {#summary-installation-testing}
 
@@ -80,7 +80,7 @@ No task
 
 ## Erstmaliger Start des Servers {#first-start-up-of-the-server}
 
-Öffnen Sie nach Abschluss des Installationstests über das Menü **[!UICONTROL Start > Programme > Adobe Campaign]** eine Eingabeaufforderung und geben Sie den folgenden Befehl ein:
+Sobald der Installationstest abgeschlossen ist, öffnen Sie eine Eingabeaufforderung über die **[!UICONTROL Start > Programme > Adobe Campaign]** und geben Sie den folgenden Befehl ein:
 
 ```
 nlserver web
@@ -102,7 +102,7 @@ Die folgenden Informationen werden angezeigt:
 15:30:12 >   Web server stop (pid=664, tid=4188)...
 ```
 
-Drücken Sie **Strg+C**, um den Prozess zu beenden, und geben Sie dann den folgenden Befehl ein:
+Presse **Strg+C** um den Prozess zu beenden, geben Sie folgenden Befehl ein:
 
 ```
 nlserver start web
@@ -137,7 +137,7 @@ Die folgenden Informationen werden angezeigt:
 
 ## Kennwort für die interne Kennung {#password-for-the-internal-identifier}
 
-Der Adobe Campaign-Server definiert eine technische Anmeldung mit dem Namen **internal**, die alle Berechtigungen für alle Instanzen besitzt. Kurz nach der Installation hat die Anmeldung kein Passwort. Es ist erforderlich, eine zu definieren.
+Der Adobe Campaign-Server definiert eine technische Anmeldung mit dem Namen **intern** , das alle Rechte für alle Instanzen hat. Kurz nach der Installation hat die Anmeldung kein Passwort. Es ist erforderlich, eine zu definieren.
 
 Weiterführende Informationen finden Sie in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
@@ -157,7 +157,7 @@ net stop nlserver6
 
 ## Installieren von LibreOffice {#installing-libreoffice}
 
-Laden Sie LibreOffice herunter, z. B. von [https://www.libreoffice.org/download/libreoffice-fresh/](https://www.libreoffice.org/download/libreoffice-fresh/) und führen Sie die regulären Installationsschritte aus.
+Laden Sie LibreOffice herunter, z. B. aus [https://www.libreoffice.org/download/libreoffice-fresh/](https://www.libreoffice.org/download/libreoffice-fresh/) und folgen Sie den regulären Installationsschritten.
 
 Fügen Sie die folgende Umgebungsvariable hinzu:
 

@@ -24,9 +24,9 @@ ht-degree: 2%
 ## Warnhinweise {#warnings}
 
 * Der Migrationsprozess darf nur von erfahrenen Benutzern durchgeführt werden. Sie müssen von mindestens einem Datenbankexperten, einem Systemadministrator und einem Anwendungsentwickler von Adobe Campaign unterstützt werden.
-* Bevor Sie mit der Migration beginnen, überprüfen Sie, ob die von Ihnen verwendeten Systeme und Systemkomponenten tatsächlich mit v7 kompatibel sind. Konsultieren Sie die [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md).
+* Bevor Sie mit der Migration beginnen, überprüfen Sie, ob die von Ihnen verwendeten Systeme und Systemkomponenten tatsächlich mit v7 kompatibel sind. Lesen Sie die [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md).
 * Wenn Sie Adobe Campaign Cloud Messaging (Mid-Sourcing) verwenden, wenden Sie sich an Adobe , bevor Sie mit dem gesamten Migrationsverfahren beginnen.
-* Bevor Sie einen Migrationsprozess starten, müssen Sie **Ihre Daten sichern.**
+* Bevor Sie einen Migrationsprozess starten, **must** Sichern Sie Ihre Daten.
 * Der Migrationsprozess kann mehrere Tage in Anspruch nehmen.
 * Adobe Campaign v7 ist hinsichtlich der Konfiguration strenger als die Versionen 5.11 und 6.02. Dies dient hauptsächlich dazu, Probleme wie Datenbeschädigung zu vermeiden und die Datenintegrität in der Datenbank zu wahren. Folglich funktionieren bestimmte Funktionen, die in den Versionen 5.11 und v6.02 angeboten werden, möglicherweise nicht mehr in v7 und müssen daher nach der Migration möglicherweise angepasst werden. Bevor Sie etwas in die Produktionsumgebung übernehmen, sollten Sie alle Konfigurationen, insbesondere Workflows, die für die Verwendung von Adobe Campaign erforderlich sind, systematisch testen.
 
@@ -34,11 +34,11 @@ ht-degree: 2%
 
 Vor der Migration sollten Sie den neuesten Build der aktuellen Version installieren, die Sie verwenden.
 
-Überprüfen Sie die Version auf Ihrem Server, indem Sie das Menü **[!UICONTROL Hilfe> Versionsinformationen]** in der Clientkonsole mit dem Befehl **nlserver pdump** aufrufen.
+Überprüfen Sie die Version auf Ihrem Server, indem Sie zum **[!UICONTROL Hilfe > Info]** in der Clientkonsole mithilfe der **nlserver pdump** Befehl.
 
 ### Datensicherung {#data-backup}
 
-Bevor Sie einen Migrationsprozess starten, müssen Sie **Ihre Daten sichern.**
+Bevor Sie einen Migrationsprozess starten, **must** Sichern Sie Ihre Daten.
 
 ### Umgebung {#environment}
 
@@ -51,17 +51,17 @@ Da der Migrationsprozess sensibel ist, empfehlen wir dringend, dieses Dokument g
 
 ## Migrationsschritte {#migration-steps}
 
-Das Migrationsverfahren muss auf **allen**-Servern und in einer bestimmten Reihenfolge durchgeführt werden.
+Das Migrationsverfahren muss **all** Server und in einer bestimmten Reihenfolge.
 
-* Im Fall einer **eigenständigen Plattform** (Einzelmodus) wird die Anwendung vollständig migriert.
-* Bei einer **Standardplattform** (Unternehmen) sind die Migrationsschritte wie folgt:
+* Im Falle einer **Standalone-Plattform** (Einzelmodus-Modus), wird die Anwendung vollständig migriert.
+* Im Falle einer **Standardplattform** (Unternehmen) werden die folgenden Migrationsschritte ausgeführt:
 
    1. Migrieren Sie den Marketing-Server.
    1. Migrieren Sie den Mailserver (mta).
    1. Migrieren Sie die Umleitungs- und Tracking-Server (Apache/IIS).
 
-* Bei einer **Cloud Messaging-Plattform** werden die Ausführungsserver in Adobe Campaign gehostet. Wenden Sie sich an Adobe Campaign, um die Migration zwischen verschiedenen Servern zu koordinieren.
-* Bei einer **Power Booster- oder Power Cluster-Plattform** sind die Migrationsschritte wie folgt:
+* Im Falle einer **Cloud Messaging-Plattform**, werden die Ausführungsserver in Adobe Campaign gehostet. Wenden Sie sich an Adobe Campaign, um die Migration zwischen verschiedenen Servern zu koordinieren.
+* Im Falle einer **Power Booster- oder Power Cluster-Plattform** werden die folgenden Migrationsschritte ausgeführt:
 
    1. Migrieren Sie die Umleitungs- und Tracking-Server (Apache/IIS).
    1. Migrieren Sie die Power Booster-/Cluster-Server.
@@ -69,7 +69,7 @@ Das Migrationsverfahren muss auf **allen**-Servern und in einer bestimmten Reihe
 
 ## Benutzerkennwörter {#user-passwords}
 
-In v7 muss die Benutzerverbindung für **internal** und **admin** durch ein Kennwort gesichert werden. Es wird dringend empfohlen, diesen Konten und allen Benutzerkonten **vor der Migration** Passwörter zuzuweisen. Wenn Sie kein Kennwort für **internal** angegeben haben, können Sie keine Verbindung herstellen. Geben Sie den folgenden Befehl ein, um **internal** ein Kennwort zuzuweisen:
+In v7 **intern** und **admin** Die Verbindung des Benutzers muss durch ein Kennwort gesichert werden. Es wird dringend empfohlen, diesen Konten und allen Benutzerkonten Kennwörter zuzuweisen. **vor der Migration**. Wenn Sie kein Kennwort für **intern**, können Sie keine Verbindung herstellen. So weisen Sie ein Kennwort zu **intern** Geben Sie den folgenden Befehl ein:
 
 ```
 nlserver config -internalpassword
@@ -77,4 +77,4 @@ nlserver config -internalpassword
 
 >[!IMPORTANT]
 >
->Das Kennwort **internal** muss für alle Tracking-Server identisch sein. Weitere Informationen finden Sie in den Abschnitten [Interne Kennung](../../installation/using/configuring-campaign-server.md#internal-identifier) und [Berechtigungen](../../platform/using/access-management.md) .
+>Die **intern** Das Kennwort muss für alle Tracking-Server identisch sein. Weitere Informationen finden Sie im Abschnitt [Interne Kennung](../../installation/using/configuring-campaign-server.md#internal-identifier) und [Berechtigungen](../../platform/using/access-management.md) Abschnitte.

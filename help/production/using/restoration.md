@@ -26,4 +26,4 @@ Auf einem sauberen Server sieht das Wiederherstellungsverfahren wie folgt aus:
 * die Datenbank erstellen und neu erstellen,
 * Starten Sie Adobe Campaign.
 
-Weitere Informationen finden Sie im **Installationshandbuch**.
+Weitere Informationen finden Sie im Abschnitt **Installationsanleitung**.

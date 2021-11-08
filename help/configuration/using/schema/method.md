@@ -54,8 +54,8 @@ Die &quot;@library&quot;ist zum Deklarieren einer neuen Methode (nicht nativ) er
 
 ## Attributbeschreibung {#attribute-description-10}
 
-* **access (string)**: Dieses Attribut definiert die Zugriffskontrolle für die Verwendung der -Methode. Wenn dieses Attribut fehlt, ist eine Identifizierung erforderlich. Verfügbare Werte sind: &#39;anonymous&#39;, &#39;admin&#39; und &#39;sql&#39;.
-* **const (boolean)**: Wenn es aktiviert ist, bedeutet dieses Attribut, dass die deklarierte Methode die Entität ändert
+* **access (Zeichenfolge)**: Dieses Attribut definiert die Zugriffskontrolle für die Verwendung der -Methode. Wenn dieses Attribut fehlt, ist eine Identifizierung erforderlich. Verfügbare Werte sind: &#39;anonymous&#39;, &#39;admin&#39; und &#39;sql&#39;.
+* **const (boolesch)**: Wenn es aktiviert ist, bedeutet dieses Attribut, dass die deklarierte Methode die Entität ändert
 * **label (string)**: Titel der Methode.
 * **library (string)**: Diese Methode ist nicht nativ für die Anwendung. Dieses Attribut nimmt den Wert der Methodenbibliothek an, in der die Methodendefinition gefunden wird (nms:mylibrary.js).
 * **name (MNTOKEN)**: eindeutiger Methodenname.

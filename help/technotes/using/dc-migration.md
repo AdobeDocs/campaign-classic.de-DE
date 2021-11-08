@@ -7,7 +7,7 @@ role: User
 level: Beginner
 exl-id: 2b282221-d048-4f6e-b52e-f8e584af2c0e
 source-git-commit: 1a9e0f8bf374e10af938d15dcebe943819ae327b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1572'
 ht-degree: 100%
 
@@ -78,7 +78,7 @@ Das Programm verfolgt drei Hauptziele:
 
 Die Migration von betroffenen Konten zu Adobe Managed Services (Public Cloud) erfolgt im Jahr 2020/2021. Adobe begleitet Ihr Unternehmen durch diesen Prozess.
 
-Zu Beginn dieses Vorgangs erhalten Kunden, für die eine Migration vorgesehen ist, eine E-Mail-Mitteilung von Adobe mit einem Zeitplan und einem Zugriff auf die Dokumentation. 
+Zu Beginn dieses Vorgangs erhalten Kunden, für die eine Migration vorgesehen ist, eine E-Mail-Mitteilung von Adobe mit einem Zeitplan und einem Zugriff auf die Dokumentation. This will be your notification that your account is scheduled to be migrated.
 
 Sie können die Migration durch das [Erstellen eines neuen Support-Tickets bei der Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign#support) einleiten. Geben Sie in der Betreffzeile &quot;Migrate to AWS&quot; (Migration zu AWS) ein.
 
@@ -105,7 +105,7 @@ Wir haben große Anstrengungen unternommen, um Technologien zu entwickeln, mithi
 
 * Eine gewisse Ausfallzeit der Plattform ist bei der Migration unvermeidlich. Das Ziel dieses Plans ist es, Ihnen zu helfen, die Ausfallzeit möglichst gering zu halten.
 * IP-Änderung für Datenintegrationen.
-* Ramp-up der Zustellbarkeit neuer Sende-IPs. Es ist jedoch geplant, diesen Vorgang für Ihr Unternehmen transparent zu gestalten, anders als der während des Go-Live erfolgte ursprüngliche Ramp-up.
+* Ramp-up der Zustellbarkeit neuer Sende-IPs. Es ist jedoch geplant, diesen Vorgang für Ihr Unternehmen transparent zu gestalten, anders als beim während des Go-Live erfolgten ursprünglichen Ramp-up.
 
 Weitere Informationen finden Sie in den häufig gestellten Fragen zur Campaign-Migration zur [Public Cloud](dc-migration-faq.md).
 
@@ -128,7 +128,7 @@ Adobe führt die meisten Aktionen durch. Wir benötigen Sie nur zur Validierung 
 
 **Datenbank**
 
-Die Datenbank wird aus dem alten Rechenzentrum entfernt und in der Public Cloud (AWS) wiederhergestellt. Beim Neustart im neuen Rechenzentrum wird die Anwendung genau in dem Zustand fortgesetzt, in dem sie sich vor dem Herunterfahren befand. Die Benutzer werden keinen Unterschied bemerken, außer dass sich einige geplante Aufgaben verzögert haben werden.
+Die Datenbank wird aus dem alten Rechenzentrum entfernt und in der Public Cloud (AWS) wiederhergestellt. Beim Neustart im neuen Rechenzentrum wird die Anwendung genau in dem Zustand fortgesetzt, in dem sie sich vor dem Herunterfahren befand. Die Benutzer werden keinen Unterschied bemerken, außer dass sich einige geplante Aufgaben verzögern.
 
 **IPs für den E-Mail-Versand**
 

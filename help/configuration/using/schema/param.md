@@ -47,12 +47,12 @@ Mit diesem Element können Sie einen Parameter zum Aufrufen einer SOAP-Methode d
 
 ## Attributbeschreibung {#attribute-description-12}
 
-* **desc (string)**: Beschreibung, die das  `<param>` Element betrifft.
-* **inout (string)**: Dieses Attribut definiert, ob sich der Parameter an der Eingabe (in) oder Ausgabe (out) des SOAP-Aufrufs befindet. Wenn dieses Attribut nicht angegeben ist, lautet der Standardparameter input (&quot;@inout=in&quot;).
-* **label (string)**:  `<param>` label
+* **desc (Zeichenfolge)**: Beschreibung, die sich auf die `<param>` -Element.
+* **inout (Zeichenfolge)**: Dieses Attribut definiert, ob sich der Parameter an der Eingabe (in) oder Ausgabe (out) des SOAP-Aufrufs befindet. Wenn dieses Attribut nicht angegeben ist, lautet der Standardparameter input (&quot;@inout=in&quot;).
+* **label (string)**: `<param>` label
 * **localizable (string)**: Wenn es aktiviert ist, weist dieses Attribut das Tool zur Sammlung an, den Wert des Attributs &quot;@label&quot;für die Übersetzung abzurufen (interne Verwendung).
-* **name (MNTOKEN)**: interner Name des  `<param>`
-* **type (string)**: Dieses Attribut definiert den Typ des  `<param>` Elements
+* **name (MNTOKEN)**: interner Name des `<param>`
+* **type (string)**: Dieses Attribut definiert den Typ von `<param>` element
 
    Liste der verfügbaren Typen:
 

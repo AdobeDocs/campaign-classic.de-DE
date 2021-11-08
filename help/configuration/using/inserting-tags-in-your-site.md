@@ -19,7 +19,7 @@ ht-degree: 5%
 
 ## Einfache Methode {#simple-method}
 
-Diese Methode besteht darin, einen HTTP-Aufruf an den Weiterleitungsserver zu senden, indem ein **`<img>`** -HTML-Tag in den HTML-Quellcode der Webseite eingefügt wird, die Sie verfolgen möchten.
+Diese Methode besteht darin, einen HTTP-Aufruf an den Weiterleitungsserver zu senden, indem eine **`<img>`** HTML-Tag im HTML-Quellcode der Webseite, die Sie verfolgen möchten.
 
 >[!IMPORTANT]
 >
@@ -128,7 +128,7 @@ Wenn Ihre Webseiten dynamisch generiert werden, können Sie das Webtrackingtag z
 
 Wenn Sie die an den Weiterleitungsserver gesendeten Informationen steuern möchten, ist die zuverlässigste Möglichkeit, die HTTP-Abfrage synchron selbst mithilfe einer Sprache zur Seitenerstellung durchzuführen.
 
-Die URL, die Sie erstellen, muss den im [Web-Tracking-Tag definierten Syntaxregeln entsprechen: definition](../../configuration/using/web-tracking-tag--definition.md).
+Die URL, die Sie erstellen, muss den in [Webtrackingtag: Definition](../../configuration/using/web-tracking-tag--definition.md).
 
 ![](assets/d_ncs_integration_webtracking_structure3.png)
 

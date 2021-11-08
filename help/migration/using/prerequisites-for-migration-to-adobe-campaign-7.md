@@ -17,7 +17,7 @@ ht-degree: 22%
 
 ![](../../assets/v7-only.svg)
 
-Lesen Sie vor der Ausführung einer Migration die Abschnitte [Vor der Migration](../../migration/using/before-starting-migration.md) und [Konfigurieren Ihrer Plattform](../../migration/using/configuring-your-platform.md) .
+Lesen Sie vor der Ausführung einer Migration die Informationen unter [Vor Beginn der Migration](../../migration/using/before-starting-migration.md) und [Plattform konfigurieren](../../migration/using/configuring-your-platform.md) Abschnitte.
 
 Bei der Migration von v6.02 zu Adobe Campaign v7 werden einige Dateien, die zuvor bereitgestellt wurden, nicht bereitgestellt.
 

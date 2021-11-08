@@ -41,18 +41,18 @@ Ermöglicht die Definition der Felder, die eine Verknüpfung zwischen SQL-Tabell
 
 ## Verwendung und Verwendungskontext {#use-and-context-of-use-5}
 
-Ein Element `<join>` kann nur verwendet werden, wenn das übergeordnete Element `<element>` vom Typ &quot;Link&quot;ist. Das bedeutet, dass für das übergeordnete Element das Attribut &quot;@type=link&quot;deklariert sein muss.
+A `<join>`  -Element kann nur verwendet werden, wenn das übergeordnete Element  `<element>`  -Element vom Typ &#39;link&#39; ist. Das bedeutet, dass für das übergeordnete Element das Attribut &quot;@type=link&quot;deklariert sein muss.
 
-Es ist nicht erforderlich, den Namen und Namespace der Remote-Tabelle im Element `<join>` anzugeben. Sie müssen im übergeordneten `<element>` angegeben werden.
+Es ist nicht erforderlich, den Namen und Namespace der Remote-Tabelle im `<join>`  -Element. Sie müssen im übergeordneten Element angegeben werden  `<element>`.
 
 Standardmäßig werden Links am Ende des Schemas definiert.
 
-Wenn das Element `<join>` bei der Definition des Relationstypelements nicht angegeben ist, wird der Link automatisch in die Primärschlüssel der beiden Tabellen eingefügt.
+Wenn die Variable `<join>` -Element bei der Definition des Relationstypelements nicht angegeben ist, wird der Link automatisch auf die Primärschlüssel der beiden Tabellen gesetzt.
 
 ## Attributbeschreibung {#attribute-description-7}
 
 * **dstFilterExpr (Zeichenfolge)**: Mit diesem Attribut können Sie die Anzahl der zulässigen Werte in der Remote-Tabelle einschränken.
-* **xpath-dst (string)**: Dieses Attribut erhält einen Xpath (@name -Attribut der Remote-Tabelle).
+* **xpath-dst (Zeichenfolge)**: Dieses Attribut erhält einen Xpath (@name -Attribut der Remote-Tabelle).
 * **xpath-src (Zeichenfolge)**: Dieses Attribut erhält einen Xpath (@name -Attribut im aktuellen Schema).
 
 ## Beispiele {#examples-6}

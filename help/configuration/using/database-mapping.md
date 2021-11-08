@@ -126,7 +126,7 @@ Ein Index wird aus dem Hauptelement des Datenschemas deklariert.
 Indizes folgen den folgenden Regeln:
 
 * Ein Index kann auf ein oder mehrere Felder in der Tabelle verweisen.
-* Ein Index kann in allen Feldern eindeutig sein (um Duplikate zu vermeiden), wenn das Attribut **unique** den Wert &quot;true&quot;enthält.
+* Ein Index kann in allen Feldern eindeutig sein (um Duplikate zu vermeiden), wenn die Variable **eindeutig** -Attribut den Wert &quot;true&quot;enthält.
 * Der SQL-Name des Index wird anhand des SQL-Namens der Tabelle und des Indexnamens bestimmt.
 
 >[!NOTE]
@@ -194,7 +194,7 @@ Für Schlüssel gelten folgende Regeln:
 
 * Ein Schlüssel kann auf ein oder mehrere Felder in der Tabelle verweisen.
 * Ein Schlüssel wird als &quot;primary&quot; (primär) (oder &quot;priority&quot; (Priorität)) bezeichnet, wenn an erster Stelle im auszufüllenden Schema steht oder das Attribut **internal** (intern) mit dem Wert &quot;true&quot; enthält.
-* Für jede Schlüsseldefinition wird implizit ein eindeutiger Index deklariert. Die Erstellung eines Index für den Schlüssel kann durch Hinzufügen des Attributs **noDbIndex** mit dem Wert &quot;true&quot;verhindert werden.
+* Für jede Schlüsseldefinition wird implizit ein eindeutiger Index deklariert. Die Erstellung eines Index für den Schlüssel kann durch Hinzufügen der **noDbIndex** -Attribut mit dem Wert &quot;true&quot;.
 
 >[!NOTE]
 >
@@ -291,13 +291,13 @@ Für Schlüssel gelten folgende Regeln:
 
 ### Automatischer inkrementeller Schlüssel {#auto-incremental-key}
 
-Der Primärschlüssel der meisten Adobe Campaign-Tabellen ist eine von der Datenbank-Engine automatisch generierte 32-Bit-Ganzzahl. Die Berechnung des Schlüsselwerts hängt von einer Sequenz ab (standardmäßig die SQL-Funktion **XtkNewId** ), die eine in der gesamten Datenbank eindeutige Zahl generiert. Der Inhalt des Schlüssels wird beim Einfügen des Datensatzes automatisch eingegeben.
+Der Primärschlüssel der meisten Adobe Campaign-Tabellen ist eine von der Datenbank-Engine automatisch generierte 32-Bit-Ganzzahl. Die Berechnung des Schlüsselwerts hängt von einer Sequenz ab (standardmäßig ist die **XtkNewId** SQL-Funktion) Generieren einer eindeutigen Zahl in der gesamten Datenbank. Der Inhalt des Schlüssels wird beim Einfügen des Datensatzes automatisch eingegeben.
 
 Der Vorteil eines inkrementellen Schlüssels besteht darin, dass er einen nicht änderbaren technischen Schlüssel für die Joins zwischen Tabellen bereitstellt. Darüber hinaus belegt dieser Schlüssel nicht viel Speicher, da er eine Double-Byte-Ganzzahl verwendet.
 
-Sie können im Quellschema den Namen der Sequenz angeben, die mit dem Attribut **pkSequence** verwendet werden soll. Wenn dieses Attribut nicht im Quellschema angegeben ist, wird die Standardsequenz **XtkNewId** verwendet. Die Anwendung verwendet dedizierte Sequenzen für die Schemas **nms:broadLog** und **nms:trackingLog** (**NmsBroadLogId** bzw. **NmsTrackingLogId**), da diese die meisten Datensätze enthalten.
+Sie können im Quellschema den Namen der Sequenz angeben, die mit der **pkSequence** -Attribut. Wenn dieses Attribut nicht im Quellschema angegeben ist, wird die **XtkNewId** wird die Standardsequenz verwendet. Die Anwendung verwendet dedizierte Sequenzen für die **nms:broadLog** und **nms:trackingLog** Schemas (**NmsBroadLogId** und **NmsTrackingLogId** ), da dies die Tabellen sind, die die meisten Datensätze enthalten.
 
-Ab ACC 18.10 ist **XtkNewId** nicht mehr der Standardwert für die Sequenz in den nativen Schemas. Sie können jetzt ein Schema erstellen oder ein vorhandenes Schema mit einer dedizierten Sequenz erweitern.
+Ab ACC 18.10 **XtkNewId** ist nicht mehr der Standardwert für die Sequenz in den nativen Schemas. Sie können jetzt ein Schema erstellen oder ein vorhandenes Schema mit einer dedizierten Sequenz erweitern.
 
 >[!IMPORTANT]
 >
@@ -305,9 +305,9 @@ Ab ACC 18.10 ist **XtkNewId** nicht mehr der Standardwert für die Sequenz in de
 
 >[!NOTE]
 >
->Eine Sequenz, die in einem Adobe Campaign-Schema referenziert wird (**NmsTrackingLogId** zum Beispiel), muss mit einer SQL-Funktion verknüpft sein, die die Anzahl der IDs in den Parametern zurückgibt, getrennt durch Kommas. Diese Funktion muss **GetNew** XXX **Ids** heißen, wobei **XXX** der Name der Sequenz ist (**GetNewNmsTrackingLogIds** zum Beispiel). Zeigen Sie die Dateien **postgres-nms.sql**, **mssql-nms.sql** oder **oracle-nms.sql** an, die mit der Anwendung im Verzeichnis **datakit/nms/eng/sql/** bereitgestellt werden, um das Beispiel einer &quot;Nms&quot;wiederherzustellen. Die Sequenzerstellung von TrackingLogId für jede Datenbank-Engine.
+>Eine Sequenz, auf die in einem Adobe Campaign-Schema (**NmsTrackingLogId** Beispielsweise) muss mit einer SQL-Funktion verknüpft sein, die die Anzahl der IDs in den Parametern durch Kommas getrennt zurückgibt. Diese Funktion muss aufgerufen werden **GetNew** XXX **IDs**, wobei **XXX** ist der Name der Sequenz (**GetNewNmsTrackingLogIds** zum Beispiel). Anzeigen der **postgres-nms.sql**, **mssql-nms.sql** oder **oracle-nms.sql** -Dateien, die mit der Anwendung im **datakit/nms/eng/sql/** -Verzeichnis, um das Beispiel einer &quot;NmsTrackingLogId&quot;-Sequenzerstellung für jede Datenbank-Engine abzurufen.
 
-Um einen eindeutigen Schlüssel zu deklarieren, füllen Sie das Attribut **autopk** (mit dem Wert &quot;true&quot;) im Hauptelement des Datenschemas aus.
+Um einen eindeutigen Schlüssel zu deklarieren, füllen Sie die **autopk** -Attribut (mit dem Wert &quot;true&quot;) auf das Hauptelement des Datenschemas.
 
 **Beispiel**:
 
@@ -368,7 +368,7 @@ Für Join-Beziehungen mit Federated Database Access:
 * ![](assets/join_fda_11.png): 1-1-Kardinalität
 * ![](assets/join_fda_1m.png): 1-N-Kardinalität
 
-Weitere Informationen zu FDA-Tabellen finden Sie unter [Zugriff auf eine externe Datenbank](../../installation/using/about-fda.md).
+Weitere Informationen zu FDA-Tabellen finden Sie unter [Zugriff auf externe Datenbanken](../../installation/using/about-fda.md).
 
 In dem Schema, das den Fremdschlüssel der Tabelle enthält, muss über das Hauptelement eine Relation angegeben werden:
 

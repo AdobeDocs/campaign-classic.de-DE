@@ -25,7 +25,7 @@ Adobe Campaign verwendet eine ID-Sequenz, die entsprechend verwendet werden muss
 
 Wenn die Sequenz mehr als 2 Milliarden erreicht (2.147.483.648 ist die genaue Zahl), geht sie zurück auf null. Es muss vermieden werden und es gibt Probleme, weshalb diese Reihenfolge überwacht werden muss.
 
-Um dies bei großen Tabellen zu verhindern, sollten Sie eine bestimmte Sequenz verwenden. Dies kann mit dem Attribut **pkSequence** im Schema durchgeführt werden.
+Um dies bei großen Tabellen zu verhindern, sollten Sie eine bestimmte Sequenz verwenden. Dies kann mit der **pkSequence** -Attribut im Schema.
 
 Hochfrequente Workflows, die viele Protokolle erstellen, verbrauchen viele IDs. Es wird daher dringend empfohlen, zu viele Protokolle und hohe Frequenzen in Workflows zu vermeiden.
 
@@ -47,13 +47,13 @@ Sendungen, die älter als zwei Jahre sind, sollten aus der Instanz gelöscht wer
 
 Die Anzahl der Dateien auf der Festplatte des Anwendungsservers sollte nicht unbegrenzt steigen.
 
-Import-Workflows erstellen Dateien und verursachen so eine Festplattenerweiterung. Dies kann durch die Verwendung der standardmäßigen [Datei-Wächter](../../workflow/using/file-collector.md) -Aktivität verhindert werden. Der Datei-Wächter verschiebt Dateien in einen temporären Ordner und löscht sie automatisch.
+Import-Workflows erstellen Dateien und verursachen so eine Festplattenerweiterung. Dies lässt sich durch Verwendung des Standards [Datei-Wächter](../../workflow/using/file-collector.md) Aktivität. Der Datei-Wächter verschiebt Dateien in einen temporären Ordner und löscht sie automatisch.
 
 Wenn ein Workflow Dateien importiert und nicht die Standardfunktionen nutzt, muss er bereinigt werden, um Speicherplatz auf ein Minimum zu beschränken.
 
 ## Transaktionsdaten und -protokolle {#transactional-data-and-logs}
 
-Jeder [Workflow](../../workflow/using/data-life-cycle.md#work-table), der Daten in Adobe Campaign importiert, bewirkt, dass die Datenbankgröße zunimmt.
+Alle [Workflow](../../workflow/using/data-life-cycle.md#work-table) -Import von Daten in Adobe Campaign bewirkt, dass die Datenbankgröße zunimmt.
 
 Vergewissern Sie sich, dass die Bereinigungs- oder Bereinigungs-Workflows ausgeführt werden und dass die Datensätze effektiv bereinigt werden. Alle Transaktionsdaten und -protokolle müssen bereinigt werden. Die Bereinigungsaufgabe bereinigt nur die Standardtabellen: Tracking und Broadlogs. Bestimmte Tabellen müssen durch bestimmte Workflows bereinigt werden. Weitere Informationen finden Sie in [diesem Abschnitt](../../workflow/using/monitoring-workflow-execution.md#purging-the-logs).
 

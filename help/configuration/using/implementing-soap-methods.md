@@ -32,7 +32,7 @@ Das Erstellen einer Methodenbibliothek umfasst zwei Phasen:
 
 ### Erklärung {#declaration}
 
-Deklarieren Sie zunächst die Methoden in den Schemas (weitere Informationen zum Erstellen und Bearbeiten von Schemas finden Sie in [diesem Abschnitt](../../configuration/using/about-schema-edition.md)).
+Deklarieren Sie zunächst die Methoden in den Schemas (weitere Informationen zum Erstellen und Bearbeiten von Schemas finden Sie unter [diesem Abschnitt](../../configuration/using/about-schema-edition.md)).
 
 Ihre Deklaration ähnelt der nativen Methoden, allerdings müssen Sie das Attribut &quot;library&quot;hinzufügen, das den Namen der Methodenbibliothek angibt, in der sich die Definition befindet.
 
@@ -83,13 +83,13 @@ function nms_recipient_testLog(message)
  }
 ```
 
-**2. Signature**
+**2. Unterschrift**
 
 Die Signatur der Funktion muss ein -Argument für jeden &quot;in&quot;- oder &quot;inout&quot;-Parameter der Deklaration enthalten.
 
 Sonderfälle:
 
-* **nichtstatische Methoden**: Die -Funktion muss zunächst ein zusätzliches -Argument enthalten, das mit der XML-Entität übereinstimmt, die in Form eines Objekts vom Typ &quot;xml&quot;(E4X) übergeben wurde.
+* **nicht statische Methoden**: Die -Funktion muss zunächst ein zusätzliches -Argument enthalten, das mit der XML-Entität übereinstimmt, die in Form eines Objekts vom Typ &quot;xml&quot;(E4X) übergeben wurde.
 * **Methoden vom Typ &quot;Nur Schlüssel&quot;**: Die Funktion muss zuerst ein zusätzliches -Argument enthalten, das mit dem in Form von Zeichenfolgen übergebenen Schlüssel übereinstimmt.
 
 **3. Zurückgegebene Werte**

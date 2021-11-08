@@ -32,7 +32,7 @@ Wenn das Programm auf die Daten einer existierenden Tabelle, einer SQL-Ansicht o
 Gehen Sie wie folgt vor, um das entsprechende Schema zu erstellen:
 
 1. Bearbeiten Sie den Knoten **[!UICONTROL Administration > Konfiguration > Datenschemata]** in der Adobe Campaign-Struktur und klicken Sie auf **[!UICONTROL Neu]** .
-1. Wählen Sie die Option **[!UICONTROL Zugreifen auf Daten aus einer vorhandenen Tabelle oder einer SQL-Ansicht]** und klicken Sie auf **[!UICONTROL Weiter]** .
+1. Wählen Sie die **[!UICONTROL Auf Daten aus einer vorhandenen Tabelle oder einer SQL-Ansicht zugreifen]** und klicken Sie auf **[!UICONTROL Nächste]** .
 
    ![](assets/s_ncs_configuration_extand_a_schema.png)
 
@@ -44,7 +44,7 @@ Gehen Sie wie folgt vor, um das entsprechende Schema zu erstellen:
 
    ![](assets/s_ncs_configuration_view_create_schema.png)
 
-   Das Schema muss mit dem Attribut view=&quot;true&quot; im Stammelement `<srcSchema>` gefüllt werden, damit kein SQL-Skript zur Tabellenerstellung generiert werden kann.
+   Das Schema muss mit dem Attribut view=&quot;true&quot; im `<srcSchema>` root -Element, um kein SQL-Skript zur Tabellenerstellung zu generieren.
 
 **Beispiel** :
 
@@ -61,6 +61,6 @@ Gehen Sie wie folgt vor, um das entsprechende Schema zu erstellen:
 
 ## Zugriff auf externe Datenbanken {#accessing-an-external-database}
 
-Die Option **Federated Data Access - FDA** bietet Zugriff auf die in einer externen Datenbank gespeicherten Daten.
+Die **Federated Data Access - FDA** ermöglicht Ihnen Zugriff auf die in einer externen Datenbank gespeicherten Daten.
 
-Die Konfiguration, die für den Zugriff auf Daten in einer externen Datenbank durchgeführt werden soll, wird auf [dieser Seite](../../installation/using/creating-data-schema.md) beschrieben.
+Die Konfiguration der Schemata für den Zugriff auf Daten in einer externen Datenbank wird im Abschnitt [diese Seite](../../installation/using/creating-data-schema.md).

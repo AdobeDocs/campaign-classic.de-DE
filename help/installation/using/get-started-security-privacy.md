@@ -70,7 +70,7 @@ Außerdem müssen Sie die Sicherheit Ihrer Datenbank-Engine unbedingt befolgen.
 
 >[!CAUTION]
 >
->Ab dem 14. Juli 2021 verlieren Client-Systeme, die das TLS 1.2-Protokoll nicht unterstützen, den Zugriff auf alle Adobe-Produkte und -Dienste. Stellen Sie sicher, dass alle Benutzer- und Client-Systeme vor diesem Datum TLS 1.2-konform sind. [Weitere Informationen](https://helpx.adobe.com/x-productkb/multi/eol-tls-support.html)   
+>Ab dem 14. Juli 2021 verlieren Client-Systeme, die das TLS 1.2-Protokoll nicht unterstützen, den Zugriff auf alle Adobe-Produkte und -Dienste. Stellen Sie sicher, dass alle Benutzer- und Client-Systeme vor diesem Datum TLS 1.2-konform sind. [Weitere Informationen](https://helpx.adobe.com/x-productkb/multi/eol-tls-support.html)
 
 ## Konfiguration des Servers
 
@@ -80,13 +80,13 @@ Alle Server müssen konfiguriert werden. Die Konfigurationsdateien sind vom Typ 
 
 * **Sicherheitszonen**: Konfigurieren Sie Sicherheitszonen, damit die IP-Adressen von Clients eines Proxys automatisch berücksichtigt werden.
 
-* **Schutz beim Datei-Upload**: beschränken Sie die Dateitypen, die mit einem neuen uploadAllowList -Attribut auf den Adobe Campaign-Server hochgeladen werden können. Dies kann in der Serverkonfigurationsdatei verwendet werden.
+* **Schutz vor Datei-Uploads**: beschränken Sie die Dateitypen, die mit einem neuen uploadAllowList -Attribut auf den Adobe Campaign-Server hochgeladen werden können. Dies kann in der Serverkonfigurationsdatei verwendet werden.
 
 * **Relais**: Optimieren Sie die Relais-Konfiguration, indem Sie die Relais-Regeln für nicht verwendete Module/Anwendungen deaktivieren.
 
 * **Schutz vor ausgehenden Verbindungen** und **Einschränkung der Befehle** (serverseitig)
 
-* Sie können auch zusätzliche HTTP-Header hinzufügen und checkIPConsistent, enableTLS, sessionTimeOutSec aktivieren etc. Weitere Informationen finden Sie in der [Dokumentation zur Konfiguration des Campaign-Servers](../../installation/using/configuring-campaign-server.md) und der [Beschreibung der Serverkonfigurationsdatei](../../installation/using/the-server-configuration-file.md) .
+* Sie können auch zusätzliche HTTP-Header hinzufügen und checkIPConsistent, enableTLS, sessionTimeOutSec aktivieren etc. Siehe Abschnitt [Dokumentation zur Konfiguration des Campaign-Servers](../../installation/using/configuring-campaign-server.md) und [Beschreibung der Serverkonfigurationsdatei](../../installation/using/the-server-configuration-file.md) für weitere Informationen.
 
 [Mehr dazu](../../installation/using/server-configuration.md)
 

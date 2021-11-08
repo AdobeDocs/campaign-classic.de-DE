@@ -25,8 +25,8 @@ Gehen Sie wie folgt vor, um die neue Empfängertabelle in der Benutzeroberfläch
 
 Adobe Campaign verwendet eine globale Variable &quot;Nms_DefaultRcpSchema&quot;, um ein Dialogfeld mit der standardmäßigen Empfängerdatenbank (nms:recipient) zu erstellen. Diese Variable muss daher geändert werden.
 
-1. Wechseln Sie zum Knoten **[!UICONTROL Administration>Plattform>Optionen]** des Explorer.
-1. Ändern Sie den Wert der Variablen **Nms_DefaultRcpSchema** durch den Namen des Schemas, das mit der externen Empfängertabelle übereinstimmt (in diesem Fall: cus:einzeln).
+1. Navigieren Sie zu **[!UICONTROL Administration > Plattform > Optionen]** -Knoten des Explorer.
+1. Ändern Sie den Wert der **Nms_DefaultRcpSchema** mit dem Namen des Schemas, das mit der externen Empfängertabelle übereinstimmt (in diesem Fall: cus:einzeln).
 1. Speichern Sie Ihre Änderungen.
 
 ## Neues Formular erstellen {#creating-a-new-form-}
@@ -37,15 +37,15 @@ Die Erstellung eines neuen Formulars ermöglicht die Anzeige und Bearbeitung der
 >
 >Der Name des Formulars muss mit dem Namen des Schemas übereinstimmen, auf das es sich bezieht.
 
-1. Wechseln Sie zum Knoten **Administration > Konfiguration > Formulare** des Explorer.
-1. Erstellen Sie eine neue **xtk:form** Typ **Formular**-Datei.
+1. Navigieren Sie zu **Administration > Konfiguration > Formulare** -Knoten des Explorer.
+1. Erstellen Sie eine neue **xtk:form** type **Formular** -Datei.
 1. Beschreiben Sie alle Überwachungs- und Felder, die Sie je nach Tabellenvorlage benötigen.
 
    >[!NOTE]
    >
-   >Weitere Informationen zu **Formular**-Dateien finden Sie auf [dieser Seite](../../configuration/using/identifying-a-form.md).
+   >Weitere Informationen finden Sie unter **Formular** Dateitypen, siehe [diese Seite](../../configuration/using/identifying-a-form.md).
 
-   In unserem aktuellen Beispiel muss die Datei **form** auf dem Schema **cus:einzeln** basieren und daher das folgende Layout aufweisen:
+   In unserem aktuellen Beispiel wird die **Formular** -Datei muss auf der **cus:einzeln** Schema und haben daher das folgende Layout:
 
    ```
    <container colspan="2">
@@ -64,15 +64,15 @@ Die Erstellung eines neuen Formulars ermöglicht die Anzeige und Bearbeitung der
 
 ## Erstellen eines neuen Ordnertyps in der Navigationshierarchie {#creating-a-new-type-of-folder-in-the-navigation-hierarchy}
 
-1. Wechseln Sie zum Knoten **[!UICONTROL Administration>Konfiguration>Navigationshierarchien]** .
-1. Erstellen Sie ein neues Dokument **xtk:navtree** vom Typ **navtree** .
+1. Navigieren Sie zu **[!UICONTROL Administration > Konfiguration > Navigationshierarchien]** Knoten.
+1. Erstellen Sie eine neue **xtk:navtree** type **navtree** Dokument.
 1. Beschreiben Sie alle Überwachungs- und Felder, die Sie je nach Tabellenvorlage benötigen.
 
    >[!NOTE]
    >
-   >Weitere Informationen zu **navtree**-Dateien finden Sie auf [dieser Seite](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy).
+   >Weitere Informationen unter **navtree** Dateitypen, siehe [diese Seite](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy).
 
-   Im aktuellen Beispiel muss die Datei **navtree** auf dem Schema **cus:einzeln** basieren und daher das folgende Format aufweisen:
+   Im aktuellen Beispiel wird die **navtree** -Datei muss auf der **cus:einzeln** Schema und haben daher die folgende Form:
 
    ```
     <model name="root">

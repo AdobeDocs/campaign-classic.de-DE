@@ -17,7 +17,7 @@ ht-degree: 3%
 
 ![](../../assets/v7-only.svg)
 
-Im folgenden Abschnitt wird die zusätzliche Konfiguration beschrieben, die für die Migration von v6.02 erforderlich ist. Sie sollten auch die Einstellungen konfigurieren, die im Abschnitt [Allgemeine Konfigurationen](../../migration/using/general-configurations.md) beschrieben werden.
+Im folgenden Abschnitt wird die zusätzliche Konfiguration beschrieben, die für die Migration von v6.02 erforderlich ist. Sie sollten auch die Einstellungen konfigurieren, die im Abschnitt [Allgemeine Konfigurationen](../../migration/using/general-configurations.md) Abschnitt.
 
 ## Web-Anwendungen {#web-applications}
 
@@ -37,13 +37,13 @@ Wenn Sie diese Webanwendungen nicht verwendet haben, führen Sie das folgende Be
 Nlserver javascript -instance:[instance_name] -file [installation_path]/datakit/xtk/fra/js/removeOldWebApp.js
 ```
 
-Wenn Sie diese Webanwendungen geändert haben und sie weiterhin in v7 verwenden möchten, müssen Sie die Option **allowSQLInjection** in Ihren verschiedenen Sicherheitszonen aktivieren und das Postupgrade neu starten. Weitere Informationen hierzu finden Sie im Abschnitt [SQLData](../../migration/using/general-configurations.md#sqldata) .
+Wenn Sie diese Webanwendungen geändert haben und sie weiterhin in v7 verwenden möchten, müssen Sie die **allowSQLInjection** in Ihren verschiedenen Sicherheitszonen und starten Sie das Postupgrade neu. Siehe Abschnitt [SQLData](../../migration/using/general-configurations.md#sqldata) finden Sie weitere Informationen dazu.
 
 ## Benutzerfreundlichkeit: Startseite und Navigation {#user-friendliness--home-page-and-navigation}
 
 >[!IMPORTANT]
 >
->Wenn Sie Webanwendungen vom Typ &quot;Übersicht&quot;von v6.02 weiterhin verwenden möchten, müssen Sie die Option **allowSQLInjection** in Ihren verschiedenen Sicherheitszonen vor dem Postupgrade aktivieren. Siehe [Webanwendungen](#web-applications).
+>Wenn Sie Webanwendungen vom Typ &quot;Übersicht&quot;von v6.02 weiterhin verwenden möchten, müssen Sie die **allowSQLInjection** in den verschiedenen Sicherheitszonen vor dem Postupgrade. Siehe [Webanwendungen](#web-applications).
 
 Nach der Migration von Version 6.02 wird die Adobe Campaign v6.02-Homepage nicht mehr angezeigt, ist aber weiterhin mit Adobe Campaign v7 verfügbar und kompatibel.
 
@@ -51,9 +51,9 @@ Um die Homepage v6.02 weiterhin zu verwenden, müssen Sie nach der Migration ein
 
 Importieren Sie dazu das Kompatibilitätspaket:
 
-Klicken Sie auf **[!UICONTROL Tools > Erweitert > Package importieren]** und wählen Sie das Paket **campaignMigration.xml** im Paket **`\nl\datakit\nms\[Your language]\package\optional`** aus.
+Klicken **[!UICONTROL Tools > Erweitert > Package importieren]** und wählen Sie die **campaignMigration.xml** -Paket im **`\nl\datakit\nms\[Your language]\package\optional`**.
 
-Um den Zugriff auf die Schnittstellen vom Typ Web Application (v6.02) zu ermöglichen, muss die Konfigurationsoption **sessionTokenOnly** des Servers in der Datei **serverConf.xml** aktiviert sein:
+Um den Zugriff auf die Schnittstellen vom Typ Web Application (v6.02) zu ermöglichen, muss die **sessionTokenOnly** Die Server-Konfigurationsoption muss in der **serverConf.xml** Datei:
 
 ```
 sessionTokenOnly="true"
@@ -79,4 +79,4 @@ Wenn Sie eine weitere Übersicht hinzufügen möchten, die in v6.02 konfiguriert
 
 Nach der Migration der Kontrollinstanz von Message Center müssen Sie die Transaktionsnachrichten-Vorlagen erneut veröffentlichen, damit sie funktionieren.
 
-In v7 haben sich die Namen der Transaktionsnachrichten-Vorlagen auf Ausführungsinstanzen geändert. Sie erhalten derzeit das Präfix des Operatornamens, der der Kontrollinstanz entspricht, auf der sie erstellt werden, z. B. **control1_template1_rt** (wobei **control1** der Name des Operators ist). Wenn Sie eine große Menge an Vorlagen haben, empfehlen wir, alte Vorlagen in Kontrollinstanzen zu löschen.
+In v7 haben sich die Namen der Transaktionsnachrichten-Vorlagen auf Ausführungsinstanzen geändert. Sie erhalten derzeit das Präfix des Operatornamens, der der Kontrollinstanz entspricht, auf der sie erstellt werden, z. B. **control1_template1_rt** , **control1** der Name des Benutzers). Wenn Sie eine große Menge an Vorlagen haben, empfehlen wir, alte Vorlagen in Kontrollinstanzen zu löschen.

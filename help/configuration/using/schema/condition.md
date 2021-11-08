@@ -41,11 +41,11 @@ In diesem Element können Sie eine Filterbedingung definieren.
 
 ## Verwendung und Verwendungskontext {#use-and-context-of-use-2}
 
-Ein `<sysfiler>` -Element kann mehrere Filterbedingungen enthalten.
+One `<sysfiler>`  -Element kann mehrere Filterbedingungen enthalten.
 
 ## Attributbeschreibung {#attribute-description-2}
 
-* **boolOperator (string)**: Wenn mehrere  `<conditions>` Elemente innerhalb desselben   `<sysfilter>` Elements definiert sind, können Sie sie mit diesem Attribut kombinieren. Standardmäßig ist die logische Verknüpfung zwischen `<condition>` -Elementen &quot;AND&quot;. Mit dem Attribut &quot;@boolOperator&quot; können Sie Links vom Typ &quot;OR&quot; und &quot;AND&quot; kombinieren.
+* **boolOperator (Zeichenfolge)**: wenn mehrere `<conditions>` innerhalb desselben  `<sysfilter>` -Element enthält, können Sie sie mithilfe dieses Attributs kombinieren. Standardmäßig befindet sich die logische Verknüpfung zwischen `<condition>` -Elemente ist &quot;AND&quot;. Mit dem Attribut &quot;@boolOperator&quot; können Sie Links vom Typ &quot;OR&quot; und &quot;AND&quot; kombinieren.
 * **enabledIf (Zeichenfolge)**: Bedingungsaktivierungstest.
 * **expr (Zeichenfolge)**: ein XTK-Ausdruck.
 

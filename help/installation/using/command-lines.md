@@ -27,9 +27,9 @@ Die Instanzerstellung kann mithilfe von Befehlszeilen mit der folgenden Syntax a
 nlserver config -addinstance:instance/masques DNS[/lang]
 ```
 
-(wobei **eng** und **fra** mögliche Werte für den Parameter `[lang]` sind)
+, **eng** und **fra** sind mögliche Werte für `[lang]` Parameter)
 
-Mit dem Befehl **nlserver config -addinstance:instance1/demo*/eng** können Sie eine Instanz mit dem Namen **instance1** in englischer Sprache mit der DNS-Maske demo* erstellen.
+Der Befehl **nlserver config -addinstance:instance1/demo*/eng** ermöglicht Ihnen die Erstellung einer Instanz mit dem Namen **instance1** Englisch mit der DNS-Maske demo*.
 
 ## Datenbank deklarieren {#declaring-a-database}
 
@@ -39,14 +39,14 @@ Sie können eine vorhandene Datenbank über die Befehlszeile mit einer Instanz v
 nlserver config -setdblogin:[rbdms:]account[:database][/password]@server
 ```
 
-Die folgenden Werte sind für den Parameter **`[rdbms]`** möglich:
+Die folgenden Werte sind für die **`[rdbms]`** Parameter:
 
 * **postgresql**: für PostgreSQL,
 * **oracle**: für Oracle,
 * **mssql**: für Microsoft SQL Server,
 * **DB2**: für die DB2-Engine.
 
-Mit dem folgenden Befehl wird die **demo**-Instanz mit dem SQL-Typ-Server namens **base6** konfiguriert, der mit dem **campaign** -Konto verknüpft ist, und dem **password** auf dem **dbsrv**-Server:
+Der folgende Befehl konfiguriert die **Demo** -Instanz mit dem SQL-Typ-Server, bekannt als **base6**, verknüpft mit der **Kampagne** und **password** auf **dbsrv** server:
 
 ```
  nlserver config -setdblogin:db:campaign:myBase/password@dbServer -instance:demo

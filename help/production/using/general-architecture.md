@@ -45,7 +45,7 @@ Die Verteilung der Module über mehrere Maschinen bietet große Flexibilität be
 
 >[!NOTE]
 >
->Weitere Informationen zu den verschiedenen Architekturen finden Sie in [diesem Abschnitt](../../installation/using/general-architecture.md).
+>Weitere Informationen zu den verschiedenen Architekturen finden Sie unter [diesem Abschnitt](../../installation/using/general-architecture.md).
 
 ## Liste offener Ports {#list-of-open-ports}
 

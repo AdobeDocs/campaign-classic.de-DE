@@ -17,7 +17,7 @@ ht-degree: 49%
 
 ![](../../assets/v7-only.svg)
 
-Um die Änderungen an den Schemas anzuwenden, starten Sie den Datenbankaktualisierungs-Assistenten. Auf diesen Assistenten können Sie über **[!UICONTROL Tools > Erweitert > Datenbankstruktur aktualisieren]** zugreifen. Er prüft, ob die physische Struktur der Datenbank mit ihrer logischen Beschreibung übereinstimmt, und führt die SQL-Aktualisierungs-Scripts aus.
+Um die Änderungen an den Schemas anzuwenden, starten Sie den Datenbankaktualisierungs-Assistenten. Auf diesen Assistenten kann über **[!UICONTROL Tools > Erweitert > Datenbankstruktur aktualisieren]** . Er prüft, ob die physische Struktur der Datenbank mit ihrer logischen Beschreibung übereinstimmt, und führt die SQL-Aktualisierungs-Scripts aus.
 
 ![](assets/d_ncs_integration_schema_update.png)
 
@@ -25,9 +25,9 @@ Die Module in der Datenbank werden automatisch ausgefüllt und aktiviert.
 
 ![](assets/d_ncs_integration_schema_update_select.png)
 
-Die Optionen **[!UICONTROL Gespeicherte Prozeduren hinzufügen]** und **[!UICONTROL Initialisierungsdaten importieren]** werden verwendet, um die ersten SQL-Skripte und die bei der Erstellung der Datenbank ausgeführten Datenpackages zu starten.
+Die **[!UICONTROL Gespeicherte Prozeduren hinzufügen]** und **[!UICONTROL Initialisierungsdaten importieren]** -Optionen werden verwendet, um die ursprünglichen SQL-Skripte und die bei der Erstellung der Datenbank ausgeführten Datenpackages zu starten.
 
-Sie können einen Datensatz aus einem externen Datenpaket importieren. Wählen Sie dazu **[!UICONTROL Package importieren]** aus und geben Sie die XML-Datei des Pakets ein.
+Sie können einen Datensatz aus einem externen Datenpaket importieren. Wählen Sie dazu **[!UICONTROL Package importieren]** und geben Sie die XML-Datei des Pakets ein.
 
 Führen Sie die Schritte aus und sehen Sie sich das SQL-Script für Datenbank-Update an:
 

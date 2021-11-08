@@ -21,11 +21,11 @@ Die Protokolldateien sind wie folgt organisiert:
 
 ![](assets/d_ncs_directory.png)
 
-Jedes **nlserver**-Modul generiert eine Protokolldatei, die im folgenden Verzeichnis gespeichert ist: **`<installation directory>`/var/`<instance>`/log/`<module>`.log**.
+Jeder **nlserver** generiert eine Protokolldatei, die im folgenden Verzeichnis gespeichert ist: **`<installation directory>`/var/`<instance>`/log/`<module>`.log**.
 
-Das Modul **nlserver syslogd** speichert die Protokolle auf der Festplatte. Dieses Modul ähnelt dem Unix **syslog-Daemon**, wurde jedoch für die Kompatibilität zwischen Unix und Windows angepasst. Die anderen Adobe Campaign-Module speichern ihre Protokolle nicht auf der Festplatte. Sie delegieren diese Aufgabe an das Modul **syslogd**, indem sie es UDP-Pakete senden.
+Die **nlserver syslogd** speichert die Protokolle auf der Festplatte. Dieses Modul ähnelt dem Unix-Modul **syslog daemon**, wurde jedoch für die Kompatibilität zwischen Unix und Windows angepasst. Die anderen Adobe Campaign-Module speichern ihre Protokolle nicht auf der Festplatte. Sie delegieren diese Aufgabe an die **syslogd** -Modul durch Senden von UDP-Paketen.
 
-Standardmäßig ist auf der Adobe Campaign-Plattform das Modul **syslogd** installiert. Es ist jedoch möglich, einen anderen **syslog-Daemon** zu verwenden. Dieses Modul erstellt die Protokolldateien im Verzeichnis **log**.
+Standardmäßig verfügt die Adobe Campaign-Plattform über die **syslogd** -Modul installiert ist, es jedoch möglich ist, ein anderes **syslog daemon**. Dieses Modul erstellt die Protokolldateien im **log** Verzeichnis.
 
 Die Protokolle von Modulen mit mehreren Instanzen werden im folgenden Verzeichnis gespeichert: **`<installation directory>`/var/default/log/**. Dieselbe Protokolldatei wird von allen Instanzen (z. B. **web.log**).
 
@@ -53,14 +53,14 @@ Die Protokolldateien der Mono-Instanz sind in der folgenden Tabelle aufgeführt:
 
 >[!IMPORTANT]
 >
->Der Ordner **redir** existiert nur auf Umleitungsservern. Das Unterverzeichnis **url** enthält die Übereinstimmungen mit den URLs, die umgeleitet werden sollen, und das Unterverzeichnis **log** enthält die Trackinglogs. Um Trackinglogs zu generieren, muss das Modul **trackinglogd** ausgeführt werden.
+>Die **redir** -Ordner existiert nur auf Umleitungsservern. Die **url** -Unterverzeichnis enthält die Übereinstimmungen mit den URLs, die umgeleitet werden sollen, und das -Unterverzeichnis **log** enthält die Trackinglogs. Um Trackinglogs zu generieren, muss die **trackinglogd** -Modul ausgeführt werden.
 
-Zur Optimierung der Leistung und des Speicherplatzes wird die Datei &quot;login.log&quot;in mehrere Dateien aufgeteilt, wobei jeder Tag (login.yy-mm-dd.log) mit maximal 365 Dateien gespeichert wird. Die Anzahl der Tage kann in der Datei serverConf.xml unter syslogd geändert werden (**maxNumberOfLoginsFiles** Option). Weitere Informationen finden Sie in der Dokumentation zur Konfigurationsdatei [Server](../../installation/using/the-server-configuration-file.md#syslogd).
+Zur Optimierung der Leistung und des Speicherplatzes wird die Datei &quot;login.log&quot;in mehrere Dateien aufgeteilt, wobei jeder Tag (login.yy-mm-dd.log) mit maximal 365 Dateien gespeichert wird. Die Anzahl der Tage kann in der Datei serverConf.xml unter syslogd (**maxNumberOfLoginsFiles** -Option). Weitere Informationen finden Sie in der Dokumentation unter [Serverkonfigurationsdatei](../../installation/using/the-server-configuration-file.md#syslogd).
 
 Standardmäßig sind die Protokolle auf zwei 10 MB Dateien pro Modul und Instanz beschränkt. Die zweite Datei heißt: **`<modulename>`_2.log**. Die Größe der Protokolle ist daher auf 2 x 10 MB pro Modul und Instanz beschränkt.
 
-Sie können jedoch größere Dateien beibehalten. Um dies zu aktivieren, ändern Sie den Wert der Einstellung **maxFileSizeMb=&quot;10&quot;** im Knoten **syslogd** der Datei **conf/serverConf.xml**. Dieser Wert stellt die maximale Größe einer Protokolldatei in MB dar.
+Sie können jedoch größere Dateien beibehalten. Um dies zu aktivieren, ändern Sie den Wert der **maxFileSizeMb=&quot;10&quot;** -Einstellung in **syslogd** Knoten der **conf/serverConf.xml** -Datei. Dieser Wert stellt die maximale Größe einer Protokolldatei in MB dar.
 
-Wenn Sie weitere Detailstufen in den Protokollen beibehalten möchten, können Sie die Adobe Campaign-Module mit dem Parameter **-verbose** starten:
+Wenn Sie weitere Details in den Protokollen beibehalten möchten, können Sie die Adobe Campaign-Module mit der **-verbose** Parameter:
 
-**nlserver start  `<MODULE>`@`<INSTANCE>` -verbose**
+**nlserver-Beginn `<MODULE>`@`<INSTANCE>` -verbose**

@@ -9,7 +9,7 @@ exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
 source-git-commit: 00b8a9b4a693920aa6b4be9e7c41f08c2e53a0c6
 workflow-type: tm+mt
 source-wordcount: '1208'
-ht-degree: 22%
+ht-degree: 24%
 
 ---
 
@@ -31,7 +31,7 @@ Integrierte Pakete enthalten eine Reihe von Funktionen, die je nach Ihren Anford
 
 So installieren Sie ein integriertes Paket:
 
-1. Greifen Sie über **[!UICONTROL Tools > Erweitert > Package importieren]** in der Adobe Campaign-Clientkonsole auf den Package-Import-Assistenten zu.
+1. Greifen Sie über **[!UICONTROL Tools > Erweitert > Package-Import...]** in der Adobe Campaign-Client-Konsole auf den Package-Import-Assistenten zu.
 1. Wählen Sie **[!UICONTROL Standard-Package installieren]** aus.
 1. Überprüfen Sie in der Paketliste die Pakete, die Sie installieren möchten.
    >[!NOTE]
@@ -60,7 +60,7 @@ In der folgenden Tabelle sind alle in Campaign integrierten Packages aufgeführt
  <tbody> 
   <tr> 
    <td> Versand<br /> </td> 
-   <td> Überprüft Sendungen und etwaige Probleme beim Nachrichtenversand. <a href="../../delivery/using/about-delivery-monitoring.md">Weitere Informationen</a><br />    </td> 
+   <td> Überprüft Sendungen und etwaige Probleme beim Nachrichtenversand. <a href="../../delivery/using/about-delivery-monitoring.md">Weitere Informationen</a><br /> </td> 
    <td> Alle</td> 
   </tr> 
   <tr> 
@@ -195,7 +195,7 @@ In der folgenden Tabelle sind alle in Campaign integrierten Packages aufgeführt
    <td> Marketing </td> 
   </tr> 
   <tr> 
-   <td> AEM Integration<br /> </td> 
+   <td> AEM<br /> </td> 
    <td> Ermöglicht die direkte Verwaltung des Inhalts Ihres E-Mail-Versands und Ihrer Formulare in Adobe Experience Manager, um von AEM Inhaltsbearbeitungsfunktionen sowie den Versandkapazitäten von Adobe Campaign zu profitieren. <a href="../../integrations/using/about-adobe-experience-manager.md">Weitere Informationen</a> <br /> </td> 
    <td> Marketing</td> 
   </tr> 
@@ -215,7 +215,7 @@ In der folgenden Tabelle sind alle in Campaign integrierten Packages aufgeführt
    <td> Alle</td> 
   </tr> 
   <tr> 
-   <td> Sendung an Mid-Sourcing <br /> </td> 
+   <td> Sendung an Mid-Sourcing-Server <br /> </td> 
    <td> Details zur Installation und Konfiguration eines Mid-Sourcing-Servers sowie zur Bereitstellung einer Instanz, die es Dritten ermöglicht, Nachrichten im Mid-Sourcing-Modus zu senden. Optional. <a href="../../installation/using/mid-sourcing-server.md">Weitere Informationen</a> <br /> </td> 
    <td> Marketing </td> 
   </tr> 
@@ -241,14 +241,14 @@ In der folgenden Tabelle sind alle in Campaign integrierten Packages aufgeführt
 
 Sie müssen Versandkanäle (E-Mail, Mobile-Kanal, Mobile-App-Kanal usw.) installieren. vor der Installation von Transaktionsnachrichten (Message Center-Package). Wenn Sie ein E-Mail-spezifisches Message-Center-Projekt gestartet haben und danach einen neuen Kanal hinzufügen müssen, müssen Sie die folgenden Schritte ausführen:
 
-1. Installieren Sie den neuen Kanal, z. B. den Mobile-Kanal **, mithilfe des Package-Import-Assistenten (**[!UICONTROL  Tools > Erweitert > Package importieren > Adobe Campaign-Package ]**).**
-1. Importieren Sie die Datei ( **[!UICONTROL Werkzeuge > Erweitert > Package importieren > Datei]**) und wählen Sie Folgendes aus:
+1. Installieren Sie den neuen Kanal, z. B. die **Mobile Kanal**&#x200B;über den Package-Import-Assistenten ( **[!UICONTROL Tools > Erweitert > Package importieren > Adobe Campaign-Package]**).
+1. Importieren Sie die Datei ( **[!UICONTROL Tools > Erweitert > Package importieren > Datei]**) und wählen Sie:
 
    ```
    \datakit\nms\[Your language]\package\messageCenter.xml
    ```
 
-1. Behalten Sie im **[!UICONTROL zu importierenden XML-Dateninhalt]** nur die Message Center-Versandvorlage bei, die dem zugehörigen Kanal entspricht. Wenn Sie beispielsweise das Element **Mobile channel** hinzugefügt haben, behalten Sie nur das Element **entity** bei, das der Vorlage **[!UICONTROL Mobile Transaktionsnachricht]** (smsTriggerMessage) entspricht. Wenn Sie den **Mobile-App-Kanal** hinzugefügt haben, behalten Sie nur die Vorlagen **iOS-Transaktionsnachricht** (iosTriggerMessage) und **Android-Transaktionsnachricht** (androidTriggerMessage) bei.
+1. Im **[!UICONTROL Zu importierender XML-Dateninhalt]** beibehalten, sollten Sie nur die Nachrichtencenter-Versandvorlage beibehalten, die dem entsprechenden Kanal entspricht. Wenn Sie beispielsweise die Variable **Mobile Kanal**, behalten Sie nur die **entity** Element, das dem **[!UICONTROL Mobile Transaktionsnachricht]** (smsTriggerMessage). Wenn Sie die **Mobile App Channel**, behalten Sie nur die **iOS-Transaktionsnachricht** templates (iosTriggerMessage) und **Android-Transaktionsnachricht** (androidTriggerMessage).
 
    ![](assets/messagecenter_install_channel.png)
 

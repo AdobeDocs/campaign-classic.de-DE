@@ -49,7 +49,7 @@ Auflistungen werden zu Beginn eines Schemas definiert (bevor das Hauptelement de
 
 ## Attributbeschreibung {#attribute-description-5}
 
-* **basetype (string**): Typ der in der Auflistung gespeicherten Werte.
+* **basetype (string)**: Typ der in der Auflistung gespeicherten Werte.
 
    Liste der verfügbaren Typen:
 
@@ -83,10 +83,10 @@ Auflistungen werden zu Beginn eines Schemas definiert (bevor das Hauptelement de
    * uuid
 
 * **default (string)**: Standardwert. Der Standardwert kann auch einer der in der Auflistung definierten Werte sein.
-* **desc (string)**: Auflistungsbeschreibung.
+* **desc (Zeichenfolge)**: Auflistungsbeschreibung.
 * **label (string)**: Auflistungsbezeichnung.
 * **name (string)**: interner Name der Auflistung.
-* **template (string)**: Dieses Attribut definiert einen Verweis auf ein  `<enumeration>` Element, das von mehreren Schemas gemeinsam genutzt wird. Die Definition wird automatisch in das aktuelle Schema kopiert.
+* **template (string)**: Dieses Attribut definiert einen Verweis auf eine `<enumeration>` -Element, das von mehreren Schemas gemeinsam genutzt wird. Die Definition wird automatisch in das aktuelle Schema kopiert.
 
 ## Beispiele {#examples-4}
 

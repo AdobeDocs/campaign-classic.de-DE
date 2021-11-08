@@ -41,7 +41,7 @@ Dieses Element definiert die Felder, die in einen Index oder einen Schlüssel in
 ## Attributbeschreibung {#attribute-description-9}
 
 * **xlink (MNTOKEN)**: ermöglicht die automatische Referenzierung von Fremdschlüsseln, die im Join für eine Relationstabelle definiert sind (N-N-Link).
-* **xpath (MNTOKEN)**: Definition eines Index oder eines Schlüssels für ein  `<attribute>`  Element. Dieses Attribut erhält einen Xpath , der den Pfad zum Schemaattribut definiert, das den Schlüssel oder den Index definiert.
+* **xpath (MNTOKEN)**: Definition eines Index oder eines Schlüssels auf einem `<attribute>`  -Element. Dieses Attribut erhält einen Xpath , der den Pfad zum Schemaattribut definiert, das den Schlüssel oder den Index definiert.
 
 ## Beispiele {#examples-}
 

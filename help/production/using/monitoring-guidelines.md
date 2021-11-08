@@ -19,7 +19,7 @@ ht-degree: 30%
 
 ## Instanz-Monitoring-Dashboard {#instance-monitoring-dashboard}
 
-Die Registerkarte **[!UICONTROL Monitoring]** , auf die von der Campaign Classic-Startseite aus zugegriffen werden kann, ist der Haupteinstiegspunkt, der Sie bei der Überwachung Ihrer Instanz unterstützt.
+Die **[!UICONTROL Überwachung]** tab, auf den über die Startseite von Campaign Classic zugegriffen werden kann, ist der Haupteinstiegspunkt, der Sie bei der Überwachung Ihrer Instanz unterstützt.
 
 Es bietet ein Dashboard, was auf Ihrer Instanz geschieht: Status (Build-Version, installierte Pakete usw.), Systemindikatoren, Protokolle, derzeit ausgeführte Workflows, Status der letzten gesendeten Sendungen usw.
 
@@ -30,7 +30,7 @@ Detaillierte Informationen finden Sie [hier](../../production/using/monitoring-p
 ## Überwachen von Campaign Classic-Prozessen {#monitoring-campaign-classic-processes}
 
 <table>
-<tr><td><img src="assets/do-not-localize/icon_system.svg" width="60px"><p><a href="#monitoring-instance">Überwachen der Instanz</a></p></td>
+<tr><td><img src="assets/do-not-localize/icon_system.svg" width="60px"><p><a href="#monitoring-instance">Überwachen einer Instanz</a></p></td>
 <td><img src="assets/do-not-localize/icon_workflows.svg" width="60px"><p><a href="#monitoring-workflows">Überwachen von Workflows</a></p></td>
 <td><img src="assets/do-not-localize/icon_send.svg" width="60px"><p><a href="#monitoring-deliveries">Sendungen überwachen</a></p></td>
 <td><img src="assets/do-not-localize/icon_database.svg" width="60px"><p><a href="#monitoring-database">Überwachen der Datenbank</a></p></td></tr>
@@ -92,18 +92,18 @@ Die Einhaltung von Richtlinien und Best Practices bei der Verwendung von Workflo
 
 **SMTP-Berichte**
 
-SMTP-Berichte zeigen Versandstatistiken und SMTP-Fehler nach Domain an. [Weitere Informationen](../../production/using/monitoring-processes.md)   
+SMTP-Berichte zeigen Versandstatistiken und SMTP-Fehler nach Domain an. [Weitere Informationen](../../production/using/monitoring-processes.md)
 
 **Best Practices**
 
-[Best Practices für den Versand und die ](../../delivery/using/delivery-best-practices.md) Erstellung von Nachrichten können Ihnen dabei helfen, ihre Leistung zu verbessern.
+[Best Practices für Versand und Entwurf](../../delivery/using/delivery-best-practices.md) kann Ihnen dabei helfen, ihre Leistung zu verbessern.
 
-**Fehlerbehebung**
-beim VersandSpezifische Aktionen können bei Problemen mit Sendungen durchgeführt werden:
+**Fehlerbehebung beim Versand**
+Bei Problemen mit Sendungen können spezifische Aktionen durchgeführt werden:
 * [Probleme mit der Zustellbarkeit](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
 * [Probleme mit der Bildanzeige](../../production/using/image-display-issues.md)
 * [Leistungsprobleme beim Versand](../../delivery/using/delivery-performances.md)
-* [Probleme mit temporären Dateien](../../production/using/temporary-files.md)  - nur  *On-Premise-Hosting-Modelle*
+* [Probleme mit temporären Dateien](../../production/using/temporary-files.md) - *Nur On-Premise-Hosting-Modelle*
 
 ### Überwachen der Datenbank {#monitoring-database}
 
@@ -127,7 +127,7 @@ Es wird empfohlen, die Datenbankwartung regelmäßig durchzuführen, um zu verme
 
 *Nur On-Premise- und Hybrid-Hosting-Modelle*
 
-Eine Sicherung ist unerlässlich, um zu verhindern, dass Daten im Falle eines (physischen oder systembezogenen) Problems auf einem Computer verloren gehen. [Klicken Sie hier](../../production/using/backup.md), um weitere Informationen zu erhalten. Das Wiederherstellungsverfahren wird in [diesem Abschnitt](../../production/using/restoration.md) beschrieben.
+Eine Sicherung ist unerlässlich, um zu verhindern, dass Daten im Falle eines (physischen oder systembezogenen) Problems auf einem Computer verloren gehen. [Klicken Sie hier](../../production/using/backup.md), um weitere Informationen zu erhalten. Das Wiederherstellungsverfahren wird unter [diesem Abschnitt](../../production/using/restoration.md).
 
 ## Technische Campaign Classic {#campaign-classic-technical-principles}
 

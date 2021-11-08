@@ -19,9 +19,9 @@ ht-degree: 2%
 
 ## Tabellen erweitern {#extending-a-table}
 
-Gehen Sie wie folgt vor, um die Schema-Empfängertabelle **nms:recipient** zu erweitern:
+So erweitern Sie die **nms:recipient** Schema-Empfängertabelle verwenden:
 
-1. Erstellen Sie das Erweiterungsschema (**cus:extension**) mit den folgenden Daten:
+1. Erstellen Sie das Erweiterungsschema (**cus:extension**) unter Verwendung der folgenden Daten:
 
    ```
    <srcSchema mappingType="sql" name="extension" namespace="cus" xtkschema="xtk:srcSchema" extendedSchema="nms:recipient">  
@@ -42,13 +42,13 @@ Gehen Sie wie folgt vor, um die Schema-Empfängertabelle **nms:recipient** zu er
    </srcSchema>
    ```
 
-   In diesem Beispiel wird ein indiziertes Feld (**Treue**) hinzugefügt und das Element **location** (das bereits im Schema **nms:recipient** vorhanden ist) wird durch ein Aufzählungsfeld (**Bereich**) ergänzt.
+   In diesem Beispiel wird ein indiziertes Feld (**Treue**) hinzugefügt wird und die **location** -Element (das bereits im **nms:recipient** schema) durch ein Aufzählungsfeld (**area**).
 
    >[!IMPORTANT]
    >
-   >Denken Sie daran, das Attribut **extendedSchema** hinzuzufügen, um auf das Erweiterungsschema zu verweisen.
+   >Denken Sie daran, die **extendedSchema** -Attribut, um auf das Erweiterungsschema zu verweisen.
 
-1. Überprüfen Sie, ob das erweiterte Schema das Schema **nms:recipient** ist und ob die zusätzlichen Daten vorhanden sind:
+1. Überprüfen Sie, ob das erweiterte Schema der **nms:recipient** und dass die zusätzlichen Daten vorhanden sind:
 
    ```
    <schema dependingSchemas="cus:extension" mappingType="sql" name="recipient" namespace="nms" xtkschema="xtk:schema">
@@ -103,7 +103,7 @@ Quellschema der Bestelltabelle:
 </srcSchema>
 ```
 
-Der Tabellentyp ist **autopk**, um einen automatisch generierten Primärschlüssel zu erstellen, der vom Join des Links zur Empfängertabelle verwendet wird.
+Der Tabellentyp lautet **autopk** um einen automatisch generierten Primärschlüssel zu erstellen, der vom Join des Links zur Empfängertabelle verwendet wird.
 
 Schema generiert:
 
@@ -155,7 +155,7 @@ Mit einer Erweiterungstabelle können Sie den Inhalt einer existierenden Tabelle
 
 Mit einer Erweiterungstabelle sollen Begrenzungen der Anzahl der in einer Tabelle unterstützten Felder vermieden oder der für die Daten belegte Speicherplatz optimiert werden, der bei Bedarf genutzt wird.
 
-Erstellen des Erweiterungstabellenschemas (**cus:feature**):
+Erstellen des Tabellen-Schemas für die Erweiterung (**cus:feature**):
 
 ```
 <srcSchema mappingType="sql" name="feature" namespace="cus" xtkschema="xtk:srcSchema">  
@@ -303,7 +303,7 @@ CREATE INDEX CusRcpGrpRel_recipientId ON CusRcpGrpRel(iRecipientId);
 
 Dieser Anwendungsfall zeigt, wie Sie eine vorhandene Referenztabelle als Alternative zu den integrierten Adobe Campaign-Auflistungsmechanismen (enum, userEnum oder dbEnum) verwenden können.
 
-Sie können auch eine vorhandene Referenztabelle als Auflistung in Ihren Schemas verwenden. Dies lässt sich erreichen, indem eine Relation zwischen einer Tabelle und der Referenztabelle erstellt und das Attribut **displayAsField=&quot;true&quot;** hinzugefügt wird.
+Sie können auch eine vorhandene Referenztabelle als Auflistung in Ihren Schemas verwenden. Dies kann durch Erstellen einer Relation zwischen einer Tabelle und der Referenztabelle und Hinzufügen des Attributs erreicht werden **displayAsField=&quot;true&quot;**.
 
 In diesem Beispiel enthält die Referenztabelle eine Liste von Banknamen und Kennungen:
 
@@ -321,7 +321,7 @@ xtkschema="xtk:srcSchema">
 </srcSchema>
 ```
 
-Definieren Sie in jeder Tabelle, die diese Referenztabelle verwendet, einen Link und fügen Sie das Attribut **displayAsField=&quot;true&quot;** hinzu.
+Definieren Sie in jeder Tabelle, die diese Referenztabelle verwendet, einen Link und fügen Sie die **displayAsField=&quot;true&quot;** -Attribut.
 
 ```
 <element displayAsField="true" label="Bank" name="bank" target="cus:bank" type="link" noDbIndex="true"/>
@@ -333,7 +333,7 @@ In der Benutzeroberfläche wird kein Link, sondern ein Feld angezeigt. Wenn Benu
 
 * Damit sie automatisch ausgefüllt werden kann, müssen Sie eine Compute-String in der Referenztabelle definieren.
 
-* Fügen Sie das Attribut **noDbIndex=&quot;true&quot;** in der Link-Definition hinzu, um zu verhindern, dass Adobe Campaign einen Index für die in der Quelltabelle des Links gespeicherten Werte erstellt.
+* Fügen Sie die **noDbIndex=&quot;true&quot;** -Attribut in der Link-Definition verwenden, um zu verhindern, dass Adobe Campaign einen Index für die in der Quelltabelle des Links gespeicherten Werte erstellt.
 
 ## Verwandte Themen
 

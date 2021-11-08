@@ -33,9 +33,9 @@ XML-Dokumente werden in Feldern vom Typ MEMO der Datenbank gespeichert.
 
 Sie müssen mit dem Adobe Campaign-Datenmodell vertraut sein, um die Datenbankfelder in Ihren Skripten ansprechen zu können.
 
-Eine Darstellung des Datenmodells finden Sie in der [Beschreibung des Adobe Campaign-Datenmodells](../../configuration/using/data-model-description.md).
+Eine Darstellung des Datenmodells finden Sie im Abschnitt [Beschreibung des Adobe Campaign-Datenmodells](../../configuration/using/data-model-description.md).
 
-Informationen zum Generieren der Struktur finden Sie in diesem Artikel: [So generieren Sie ein Datenmodell oder ein Datenwörterbuch](https://helpx.adobe.com/campaign/kb/generate-data-model.html).
+Informationen zum Generieren der Struktur finden Sie in diesem Artikel: [Generieren eines Datenmodells oder eines Datenwörterbuchs](https://helpx.adobe.com/campaign/kb/generate-data-model.html).
 
 ## Abfrage und Writer {#query-and-writer}
 
@@ -51,17 +51,17 @@ Auf diese Weise können Sie die zugrunde liegende SQL isolieren. Die Abfragespra
 
 Weitere Informationen hierzu finden Sie unter [Beispiel für die Methode &#39;ExecuteQuery&#39; des Schemas &#39;xtk:queryDef&#39;](../../configuration/using/web-service-calls.md#example-on-the--executequery--method-of-schema--xtk-querydef-).
 
-Die Methode **ExecuteQuery** wird unter [ExecuteQuery (xtk:queryDef)](#executequery--xtk-querydef-) beschrieben.
+Die **ExecuteQuery** -Methode wird in [ExecuteQuery (xtk:queryDef)](#executequery--xtk-querydef-).
 
 ### Schreiben {#write}
 
 Mit Schreibbefehlen können Sie einfache oder komplexe Dokumente mit Einträgen in einer oder mehreren Tabellen der Basis schreiben.
 
-Mit Transaktions-APIs können Sie Abstimmungen über den Befehl **updateOrInsert** verwalten: Mit einem Befehl können Sie Daten erstellen oder aktualisieren. Sie können auch die Änderungszusammenführung (**merge**) konfigurieren: In diesem Betriebsmodus können Sie Teilaktualisierungen zulassen.
+Mit Transaktions-APIs können Sie Abstimmungen über das **updateOrInsert** command: Mit einem Befehl können Sie Daten erstellen oder aktualisieren. Sie können auch die Änderungszusammenführung konfigurieren (**merge**): In diesem Betriebsmodus können Sie Teilaktualisierungen zulassen.
 
 Die XML-Struktur bietet eine logische Ansicht der Daten und ermöglicht es Ihnen, die physische Struktur der SQL-Tabelle zu umgehen.
 
-Die Write-Methode wird unter [Write/WriteCollection (xtk:session)](#write---writecollection--xtk-session-) beschrieben.
+Die Write-Methode wird im Abschnitt [Write/WriteCollection (xtk:session)](#write---writecollection--xtk-session-).
 
 ## ExecuteQuery (xtk:queryDef) {#executequery--xtk-querydef-}
 
@@ -115,9 +115,9 @@ Die Struktur des XML-Dokuments der Abfrage wird im Schema &quot;xtk:queryDef &qu
 </queryDef>
 ```
 
-Eine Unterabfrage ( `<subquery>` ) kann in einem `<condition> ` -Element definiert werden. Die Syntax für eine   `<subquery> `   -Element basiert auf der Syntax eines    `<querydef>`.
+Eine Unterabfrage ( `<subquery>`  ) in einer  `<condition> `  -Element. Die Syntax für eine   `<subquery> `   -Element basiert auf der Syntax eines    `<querydef>`.
 
-Beispiel eines `<subquery>  : </subquery>`
+Beispiel einer `<subquery>  : </subquery>`
 
 ```
 <condition setOperator="NOT IN" expr="@id" enabledIf="$(/ignored/@ownerType)=1">
@@ -133,16 +133,16 @@ Beispiel eines `<subquery>  : </subquery>`
   
 ```
 
-Eine Abfrage muss auf ein Startschema aus dem Attribut **schema** verweisen.
+Eine Abfrage muss auf ein Startschema aus dem **schema** -Attribut.
 
-Der gewünschte Vorgangstyp wird im Attribut **operation** eingegeben und enthält einen der folgenden Werte:
+Der gewünschte Vorgangstyp wird im Feld **operation** -Attribut und enthält einen der folgenden Werte:
 
 * **get**: ruft einen Datensatz aus der Tabelle ab und gibt einen Fehler zurück, wenn die Daten nicht vorhanden sind.
 * **getIfExists**: Ruft einen Datensatz aus der Tabelle ab und gibt ein leeres Dokument zurück, wenn die Daten nicht vorhanden sind;
-* **auswählen**: erstellt einen Cursor, um mehrere Datensätze zurückzugeben, und gibt ein leeres Dokument zurück, wenn keine Daten vorhanden sind;
+* **select**: erstellt einen Cursor, um mehrere Datensätze zurückzugeben, und gibt ein leeres Dokument zurück, wenn keine Daten vorhanden sind;
 * **count**: gibt eine Datenanzahl zurück.
 
-Die Syntax **XPath** wird verwendet, um Daten basierend auf dem Eingabeschema zu lokalisieren. Weitere Informationen zu XPaths finden Sie unter [Datenschemata](../../configuration/using/data-schemas.md).
+Die **XPath** -Syntax verwendet wird, um Daten basierend auf dem Eingabeschema zu suchen. Weitere Informationen zu XPaths finden Sie unter [Datenschemata](../../configuration/using/data-schemas.md).
 
 #### Beispiel mit dem &quot;get&quot;-Vorgang {#example-with-the--get--operation}
 
@@ -190,7 +190,7 @@ Gibt die Liste der Empfänger zurück, die nach einem Ordner gefiltert wurden, s
 
 Ausdrücke können einfache Felder oder komplexe Ausdrücke sein, wie arithmetische Vorgänge oder die Verkettung von Zeichenfolgen.
 
-Um die Anzahl der zurückzugebenden Datensätze zu begrenzen, fügen Sie das Attribut **lineCount** zum Element `<querydef>` hinzu.
+Um die Anzahl der zurückzugebenden Datensätze zu begrenzen, fügen Sie die **lineCount** -Attribut `<querydef>` -Element.
 
 So begrenzen Sie die Anzahl der von der Abfrage zurückgegebenen Datensätze auf 100:
 
@@ -199,7 +199,7 @@ So begrenzen Sie die Anzahl der von der Abfrage zurückgegebenen Datensätze auf
 ...
 ```
 
-Um die nächsten 100 Datensätze abzurufen, führen Sie dieselbe Abfrage erneut aus und fügen Sie das Attribut **startLine** hinzu.
+Um die nächsten 100 Datensätze abzurufen, führen Sie dieselbe Abfrage erneut aus und fügen Sie die **startLine** -Attribut.
 
 ```
 <queryDef schema="nms:recipient" operation="select" lineCount="100" startLine="100">
@@ -221,7 +221,7 @@ So zählen Sie die Anzahl an Datensätzen in einer Abfrage:
 
 >[!NOTE]
 >
->Auch hier verwenden wir die Bedingung aus dem vorherigen Beispiel. Die `<select>`- und -Klauseln werden nicht verwendet. `</select>`
+>Auch hier verwenden wir die Bedingung aus dem vorherigen Beispiel. Die `<select>` und -Klauseln nicht verwendet werden. `</select>`
 
 #### Nach welchen Kriterien werden die Daten gruppiert {#data-grouping}
 
@@ -247,7 +247,7 @@ So rufen Sie E-Mail-Adressen ab, auf die mehrmals verwiesen wird:
 </queryDef>
 ```
 
-Die Abfrage kann vereinfacht werden, indem das Attribut **groupBy** direkt zum zu gruppierenden Feld hinzugefügt wird:
+Die Abfrage kann durch Hinzufügen der **groupBy** direkt dem zu gruppierenden Feld zuordnen:
 
 ```
 <select>
@@ -257,7 +257,7 @@ Die Abfrage kann vereinfacht werden, indem das Attribut **groupBy** direkt zum z
 
 >[!NOTE]
 >
->Es ist nicht mehr erforderlich, das Element `<groupby>` zu füllen.
+>Es ist nicht mehr erforderlich, die `<groupby>` -Element.
 
 #### Bremsung unter Bedingungen {#bracketing-in-conditions}
 
@@ -271,7 +271,7 @@ Im Folgenden finden Sie zwei Beispiele für die Verwendung von Klammern für die
    </where>
    ```
 
-* Die strukturierte Version mit `<condition>` -Elementen:
+* Die strukturierte Version mit `<condition>` -Elemente:
 
    ```
    <where>
@@ -322,7 +322,7 @@ Diese Syntax vereinfacht die Abfrage, wenn mehr als zwei Daten in der Bedingung 
    </select>
    ```
 
-* Sammlungslinks (1N): Die Filterung der Felder einer Kollektionstabelle muss über den Operator **EXISTS** oder **NOT EXISTS** erfolgen.
+* Sammlungslinks (1N): Die Filterung der Felder einer Kollektionstabelle muss über die **VORHANDEN** oder **NICHT VORHANDEN** Operator.
 
    So filtern Sie die Empfänger, die den Informationsdienst &#39;Newsletter&#39; abonniert haben:
 
@@ -334,7 +334,7 @@ Diese Syntax vereinfacht die Abfrage, wenn mehr als zwei Daten in der Bedingung 
    </where>
    ```
 
-   Es wird nicht empfohlen, die Felder eines Kollektionslinks direkt aus der `<select>`-Klausel abzurufen, da die Abfrage ein Kardinalprodukt zurückgibt. Sie wird nur verwendet, wenn die verknüpfte Tabelle nur einen Datensatz enthält (Beispiel: `<node expr="">`).
+   Direkter Abruf der Felder eines Sammlungslinks aus dem `<select>` wird nicht empfohlen, da die Abfrage ein Kardinalprodukt zurückgibt. Sie wird nur verwendet, wenn die verknüpfte Tabelle nur einen Datensatz enthält (Beispiel `<node expr="">`).
 
    Beispiel für den Kollektionslink &quot;Abonnement&quot;:
 
@@ -344,9 +344,9 @@ Diese Syntax vereinfacht die Abfrage, wenn mehr als zwei Daten in der Bedingung 
    </select>
    ```
 
-   Es ist möglich, eine Unterliste abzurufen, die die Elemente eines Kollektionslinks in der `<select>`-Klausel enthält. Die XPaths der referenzierten Felder sind kontextuell aus dem Kollektionselement.
+   Es ist möglich, eine Unterliste abzurufen, die die Elemente eines Kollektions-Links im `<select>` -Klausel. Die XPaths der referenzierten Felder sind kontextuell aus dem Kollektionselement.
 
-   Die Elemente zum Filtern ( `<orderby>` ) und zur Einschränkung ( `<where>` ) können dem Kollektionselement hinzugefügt werden.
+   Die Filterung ( `<orderby>`  ) und Einschränkungen (  `<where>`  ) können dem Kollektionselement hinzugefügt werden.
 
    In diesem Beispiel gibt die Abfrage für jeden Empfänger die E-Mail-Adresse und die Liste der Informationsdienste zurück, die der Empfänger abonniert:
 
@@ -374,7 +374,7 @@ Diese Syntax vereinfacht die Abfrage, wenn mehr als zwei Daten in der Bedingung 
 
 Durch die Bindung von Parametern kann die Engine die Werte der in der Abfrage verwendeten Parameter festlegen. Dies ist sehr nützlich, da die Engine für die Maskierung von Werten verantwortlich ist und es den zusätzlichen Vorteil eines Caches gibt, damit die Parameter abgerufen werden können.
 
-Wenn eine Abfrage erstellt wird, werden die &quot;gebundenen&quot; Werte durch ein Zeichen (? in ODBC, `#[index]#` in postgres..) im Text der SQL-Abfrage.
+Wenn eine Abfrage erstellt wird, werden die &quot;gebundenen&quot; Werte durch ein Zeichen (? in ODBC, `#[index]#` in postgres...) im Text der SQL-Abfrage.
 
 ```
 <select>
@@ -393,7 +393,7 @@ Um das Binden eines Parameters zu vermeiden, muss das Attribut &quot;noSqlBind&q
 
 #### Tipp zur Erstellung von Abfragen: {#query-building-tip-}
 
-Um die Syntax einer Abfrage zu vereinfachen, können Sie die Abfrage mit dem generischen Abfrageeditor in der Adobe Campaign-Clientkonsole ( **[!UICONTROL Tools/ Generischer Abfrageeditor..) schreiben.]** Menü). Gehen Sie dazu wie folgt vor:
+Um die Syntax einer Abfrage zu unterstützen, können Sie die Abfrage mit dem generischen Abfrageeditor in der Adobe Campaign-Clientkonsole ( **[!UICONTROL Tools/ Generischer Abfrageeditor...]** Menü). Gehen Sie dazu wie folgt vor:
 
 1. Wählen Sie die abzurufenden Daten aus:
 
@@ -436,7 +436,7 @@ Beispiel eines für den Vorgang vom Typ &quot;count&quot; zurückgegebenen Dokum
 
 #### Alias {#alias}
 
-Mit einem Alias können Sie den Speicherort der Daten im Ausgabedokument ändern. Das Attribut **alias** muss einen XPath im entsprechenden Feld angeben.
+Mit einem Alias können Sie den Speicherort der Daten im Ausgabedokument ändern. Die **alias** -Attribut muss einen XPath für das entsprechende Feld angeben.
 
 ```
 <queryDef schema="nms:recipient" operation="get">
@@ -537,17 +537,17 @@ Definition der Methoden &quot;Write&quot;und &quot;WriteCollection&quot;im Schem
 
 Die Abstimmung der Daten basiert auf der Definition der im zugehörigen Schema eingegebenen Schlüssel. Beim Schreiben wird basierend auf den im Eingabedokument eingegebenen Daten nach dem ersten geeigneten Schlüssel gesucht. Die Entität wird je nach ihrer Existenz in der Datenbank hinzugefügt oder aktualisiert.
 
-Der Schlüssel des Schemas der zu aktualisierenden Entität wird anhand des Attributs **xtkschema** abgeschlossen.
+Der Schlüssel des Schemas der zu aktualisierenden Entität wird basierend auf dem **xtkschema** -Attribut.
 
-Der Abstimmschlüssel kann daher mit dem Attribut **_key** erzwungen werden, das die Liste der XPaths enthält, aus denen der Schlüssel besteht (durch Kommas getrennt).
+Der Abstimmschlüssel kann daher mit der **_key** -Attribut, das die Liste der XPaths enthält, aus denen der Schlüssel besteht (durch Kommas getrennt).
 
-Sie können den Vorgangstyp erzwingen, indem Sie das Attribut **_operation** mit den folgenden Werten ausfüllen:
+Es ist möglich, die Art des Vorgangs zu erzwingen, indem Sie die Variable **_operation** -Attribut mit den folgenden Werten verwenden:
 
 * **insert**: erzwingt das Einfügen des Datensatzes (der Abstimmschlüssel wird nicht verwendet);
 * **insertOrUpdate**: aktualisiert oder fügt den Datensatz je nach Abstimmschlüssel ein (Standardmodus),
 * **update**: aktualisiert den Datensatz; nichts ausführt, wenn die Daten nicht vorhanden sind,
-* **Löschen**: löscht die Datensätze,
-* **none**: wird nur zur Abstimmung der Relationen verwendet, ohne Aktualisierung oder Einfügung.
+* **delete**: löscht die Datensätze,
+* **Keine**: wird nur zur Abstimmung der Relationen verwendet, ohne Aktualisierung oder Einfügung.
 
 ### Beispiel mit der Methode &quot;Write&quot; {#example-with-the--write--method}
 
@@ -595,7 +595,7 @@ Zuordnung des Ordners zu einem Empfänger basierend auf seinem internen Namen (@
 
 Die Attribute &quot;_key&quot;und &quot;_operation&quot;können in einem verknüpften Element eingegeben werden. Das Verhalten dieses Elements ist mit dem des Hauptelements des Eingabeschemas identisch.
 
-Die Definition des Schlüssels der Hauptentität (&quot;nms:recipient&quot;) besteht aus einem Feld aus einer verknüpften Tabelle (Element `<folder>` Schema &quot;xtk:folder&quot;) und der E-Mail.
+Die Definition des Schlüssels der Hauptentität (&quot;nms:recipient&quot;) besteht aus einem Feld einer verknüpften Tabelle (Element) `<folder>`  Schema &quot;xtk:folder&quot;) und der E-Mail.
 
 >[!NOTE]
 >
@@ -625,7 +625,7 @@ Hinzufügen eines Empfängers zu einer Gruppe mit der Gruppierungstabelle (&quot
 
 >[!NOTE]
 >
->Die Definition des Schlüssels wird nicht im Element `<rcpgroup>` eingegeben, da ein impliziter Schlüssel, der auf dem Gruppennamen basiert, im Schema &quot;nms:group&quot;definiert ist.
+>Die Definition des Schlüssels wird nicht in der Variablen `<rcpgroup>` -Element, da ein auf dem Gruppennamen basierender impliziter Schlüssel im Schema &quot;nms:group&quot;definiert ist.
 
 ### XML-Kollektionselemente {#xml-collection-elements}
 

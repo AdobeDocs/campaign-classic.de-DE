@@ -21,9 +21,9 @@ In diesem Kapitel werden serverseitige Konfigurationen beschrieben, die entsprec
 
 ## Einschränkungen
 
-Diese Verfahren sind auf **On-Premise**/**hybride** -Implementierungen beschränkt und erfordern Administratorberechtigungen.
+Diese Verfahren beschränken sich auf **On-Premise**/**hybrid** Implementierungen und erfordern Administratorberechtigungen.
 
-Bei **gehosteten** -Bereitstellungen können serverseitige Einstellungen nur von Adobe konfiguriert werden. Einige Einstellungen können jedoch innerhalb von [Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=de) eingerichtet werden, z. B. die Verwaltung von IP-Zulassungslisten oder URL-Berechtigungen. [Weitere Informationen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=de).
+Für **gehostet** -Bereitstellungen können nur von Adobe konfiguriert werden. Einige Einstellungen können jedoch in  [Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=de), wie die Verwaltung von IP-Zulassungslisten oder URL-Berechtigungen. [Weitere Informationen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=de).
 
 Weitere Informationen finden Sie in den folgenden Abschnitten:
 
@@ -33,26 +33,26 @@ Weitere Informationen finden Sie in den folgenden Abschnitten:
 
 ## Konfigurationsdateien
 
-Campaign Classic-Konfigurationsdateien werden im Ordner **conf** des Adobe Campaign-Installationsordners gespeichert. Die Konfiguration umfasst zwei Dateien:
+Campaign Classic-Konfigurationsdateien werden im **conf** Ordner des Adobe Campaign-Installationsordners. Die Konfiguration umfasst zwei Dateien:
 
-* **serverConf.xml**: allgemeine Konfiguration für alle Instanzen. Diese Datei kombiniert die technischen Parameter des Adobe Campaign-Servers: Diese werden von allen Instanzen gemeinsam genutzt. Die Beschreibung einiger dieser Parameter wird nachfolgend beschrieben. Die verschiedenen Knoten und Parameter, die in diesem Abschnitt [Abschnitt](../../installation/using/the-server-configuration-file.md) aufgeführt sind.
-* **config-`<instance>`.xml**  (wobei  **** instanceName der Instanz ist): spezifische Konfiguration der Instanz. Wenn Sie Ihren Server auf mehrere Instanzen aufteilen, geben Sie die für jede Instanz spezifischen Parameter in die entsprechende Datei ein.
+* **serverConf.xml**: allgemeine Konfiguration für alle Instanzen. Diese Datei kombiniert die technischen Parameter des Adobe Campaign-Servers: Diese werden von allen Instanzen gemeinsam genutzt. Die Beschreibung einiger dieser Parameter wird nachfolgend beschrieben. Die verschiedenen Knoten und Parameter, die in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md).
+* **config-`<instance>`.xml** , **instance** ist der Name der Instanz): spezifische Konfiguration der Instanz. Wenn Sie Ihren Server auf mehrere Instanzen aufteilen, geben Sie die für jede Instanz spezifischen Parameter in die entsprechende Datei ein.
 
 ## Konfigurationsbereich
 
 Konfigurieren oder passen Sie den Campaign-Server entsprechend Ihren Anforderungen und Ihrer Konfiguration an. Sie haben folgende Möglichkeiten:
 
-* Sichern Sie die [Interne Kennung](#internal-identifier).
-* [Kampagnenprozesse](#enabling-processes) aktivieren
-* [URL-Berechtigungen](url-permissions.md) konfigurieren
-* Definieren Sie [Sicherheitszonen](security-zones.md)
-* [Tomcat-Einstellungen](configure-tomcat.md) konfigurieren
-* [Versandparameter](configure-delivery-settings.md) anpassen
-* Definieren Sie [Dynamische Seitensicherheit und Relais](#dynamic-page-security-and-relays)
-* Schränken Sie die Liste der zulässigen externen Befehle [a1/> ein.](#restricting-authorized-external-commands)
-* [Redundantes Tracking](#redundant-tracking) einrichten
-* Verwalten Sie [Hohe Verfügbarkeit und Workflow-Affinitäten](#high-availability-workflows-and-affinities)
-* Dateiverwaltung konfigurieren - [Weitere Informationen](file-res-management.md)
+* Sichern Sie die [Interne Kennung](#internal-identifier)
+* Aktivieren [Kampagnenprozesse](#enabling-processes)
+* Konfigurieren [URL-Berechtigungen](url-permissions.md)
+* Definieren [Sicherheitszonen](security-zones.md)
+* Konfigurieren [Tomcat-Einstellungen](configure-tomcat.md)
+* Anpassen [Versandparameter](configure-delivery-settings.md)
+* Definieren [Dynamische Seitensicherheit und Relais](#dynamic-page-security-and-relays)
+* Schränken Sie die Liste der [Zulässige externe Befehle](#restricting-authorized-external-commands)
+* Einrichten [Redundantes Tracking](#redundant-tracking)
+* Verwalten [Hohe Verfügbarkeit und Workflow-Affinitäten](#high-availability-workflows-and-affinities)
+* Konfigurieren der Dateiverwaltung - [Weitere Infos](file-res-management.md)
    * Format für Upload-Dateien begrenzen
    * Zugriff auf öffentliche Ressourcen aktivieren
    * Proxy-Verbindung konfigurieren
@@ -61,7 +61,7 @@ Konfigurieren oder passen Sie den Campaign-Server entsprechend Ihren Anforderung
 
 ## Interne Kennung {#internal-identifier}
 
-Die **internal**-Kennung ist ein technisches Login, das für Installations-, Administrations- und Wartungszwecke verwendet wird. Diese Anmeldung ist keiner Instanz zugeordnet.
+Die **intern** identifier ist ein technisches Login, das für Installations-, Administrations- und Wartungszwecke verwendet wird. Diese Anmeldung ist keiner Instanz zugeordnet.
 
 Benutzer, die mit dieser Anmeldung verbunden sind, haben alle Rechte auf allen Instanzen. Bei einer Neuinstallation wird dieses Login kein Passwort enthalten. Sie müssen dieses Kennwort manuell definieren.
 
@@ -85,15 +85,15 @@ Confirmation: XXXX
 
 ## Prozesse aktivieren {#enabling-processes}
 
-Adobe Campaign-Prozesse auf dem Server sind über die Dateien **config-default.xml** und **`config-<instance>.xml`** aktiviert (und deaktiviert).
+Adobe Campaign-Prozesse auf dem Server sind über die **config-default.xml** und **`config-<instance>.xml`** Dateien.
 
-Um die Änderungen auf diese Dateien anzuwenden, müssen Sie beim Starten des Adobe Campaign-Dienstes den Befehl **nlserver config -reload** ausführen.
+Wenn der Adobe Campaign-Dienst gestartet wird, müssen Sie die **nlserver config -reload** Befehl.
 
 Es gibt zwei Arten von Prozessen: mehrere Instanzen und eine einzelne Instanz.
 
-* **mehrere Instanzen**: Ein einzelner Prozess wird für alle Instanzen gestartet. Dies gilt für die Prozesse **web**, **syslogd** und **trackinglogd**.
+* **mehrere Instanzen**: Ein einzelner Prozess wird für alle Instanzen gestartet. Dies gilt für **Web**, **syslogd** und **trackinglogd** Prozesse.
 
-   Die Aktivierung kann über die Datei **config-default.xml** konfiguriert werden.
+   Die Aktivierung kann über das Menü **config-default.xml** -Datei.
 
    Deklarieren eines Adobe Campaign-Servers für den Zugriff auf Clientkonsolen und für die Weiterleitung (Tracking):
 
@@ -104,9 +104,9 @@ Es gibt zwei Arten von Prozessen: mehrere Instanzen und eine einzelne Instanz.
    <trackinglogd autoStart="true"/>
    ```
 
-   In diesem Beispiel wird die Datei unter Linux mit einem **vi**-Befehl bearbeitet. Sie kann mit einem beliebigen **.txt**- oder **.xml**-Editor bearbeitet werden.
+   In diesem Beispiel wird die Datei mit einer **vi** -Befehl in Linux. Er kann mit einer beliebigen **.txt** oder **.xml** Editor.
 
-* **Mono-Instanz**: Für jede Instanz wird ein Prozess gestartet (Module:  **mta**,  **wfserver**,  **inMail**,  **** smsand  **stat**).
+* **Mono-Instanz**: Für jede Instanz wird ein Prozess gestartet (Module: **mta**, **wfserver**, **inMail**, **sms** und **stat**).
 
    Die Aktivierung kann mithilfe der Konfigurationsdatei der Instanz konfiguriert werden:
 
@@ -125,26 +125,26 @@ Es gibt zwei Arten von Prozessen: mehrere Instanzen und eine einzelne Instanz.
 
 **Datenspeicherung in Campaign**
 
-Sie können den Speicherordner (**var** -Ordner) der Adobe Campaign-Daten (Protokolle, Downloads, Weiterleitungen usw.) konfigurieren. Verwenden Sie dazu die Systemvariable **XTK_VAR_DIR**:
+Sie können den Speicherordner konfigurieren (**var** Verzeichnis) von Adobe Campaign-Daten (Protokolle, Downloads, Weiterleitungen usw.). Verwenden Sie dazu die **XTK_VAR_DIR** Systemvariable:
 
-* Geben Sie unter Windows den folgenden Wert in der Systemvariable **XTK_VAR_DIR** an
+* Geben Sie unter Windows den folgenden Wert in der **XTK_VAR_DIR** Systemvariable
 
    ```
    D:\log\AdobeCampaign
    ```
 
-* Wechseln Sie unter Linux zur Datei **customer.sh** und geben Sie Folgendes an: **export XTK_VAR_DIR=/app/log/AdobeCampaign**.
+* Navigieren Sie unter Linux zum **customer.sh** und geben Sie an: **export XTK_VAR_DIR=/app/log/AdobeCampaign**.
 
    Weitere Informationen hierzu finden Sie unter [Parameter personalisieren](../../installation/using/installing-packages-with-linux.md#personalizing-parameters).
 
 
 ## Dynamische Seitensicherheit und Relais {#dynamic-page-security-and-relays}
 
-Standardmäßig sind alle dynamischen Seiten automatisch mit dem **lokalen** Tomcat-Server des Computers verbunden, dessen Webmodul gestartet wurde. Diese Konfiguration wird im Abschnitt **`<url>`** der Query Relais-Konfiguration für die Datei **ServerConf.xml** eingegeben.
+Standardmäßig werden alle dynamischen Seiten automatisch mit dem **lokal** Tomcat-Server des Computers, dessen Webmodul gestartet wurde. Diese Konfiguration wird im **`<url>`** Abschnitt der Abfrageweiterleitungskonfiguration für die **ServerConf.xml** -Datei.
 
-Sie können die Ausführung der dynamischen Seite auf einem **Remote**-Server weiterleiten. wenn das Webmodul auf dem Computer nicht aktiviert ist. Dazu müssen Sie **localhost** durch den Namen des Remote-Computers für JSP und JSSP, Webanwendungen, Berichte und Zeichenfolgen ersetzen.
+Sie können die Ausführung der dynamischen Seite auf eine **remote** Server; wenn das Webmodul auf dem Computer nicht aktiviert ist. Dazu müssen Sie die **localhost** mit dem Namen des Remote-Computers für JSP und JSSP, Webanwendungen, Berichte und Zeichenfolgen.
 
-Weiterführende Informationen zu den verfügbaren Parametern finden Sie in der Konfigurationsdatei **serverConf.xml** .
+Die verfügbaren Parameter werden im Abschnitt **serverConf.xml** Konfigurationsdatei.
 
 Für JSP-Seiten lautet die Standardkonfiguration:
 
@@ -166,7 +166,7 @@ Die für den Mobile-App-Kanal verwendeten JSSPs lauten wie folgt:
 
 **Beispiel:**
 
-Es ist möglich, Clientmaschinenverbindungen von außen zu verhindern. Schränken Sie dazu einfach die Ausführung von **soaprouter.jsp** ein und genehmigen Sie nur die Ausführung von Mirrorseiten, viralen Links, Webformularen und öffentlichen Ressourcen.
+Es ist möglich, Clientmaschinenverbindungen von außen zu verhindern. Schränken Sie dazu einfach die Ausführung von **soaprouter.jsp** und nur die Ausführung von Mirrorseiten, viralen Links, Webformularen und öffentlichen Ressourcen zulassen.
 
 Die Parameter lauten wie folgt:
 
@@ -184,7 +184,7 @@ Die Parameter lauten wie folgt:
 <url IPMask=""               deny="true" hostMask="" relayHost="false" relayPath="false" targetUrl="http://localhost:8080" timeout="" urlPath="*.jssp"/>
 ```
 
-In diesem Beispiel entspricht der Wert **`<IP_addresses>`** der Liste der IP-Adressen (getrennt durch Kommas), die zur Verwendung des Relais-Moduls für diese Maske berechtigt sind.
+In diesem Beispiel wird die **`<IP_addresses>`** -Wert entspricht der Liste der IP-Adressen (getrennt durch Kommas), die zur Verwendung des Relais-Moduls für diese Maske berechtigt sind.
 
 >[!NOTE]
 >
@@ -194,12 +194,12 @@ In diesem Beispiel entspricht der Wert **`<IP_addresses>`** der Liste der IP-Adr
 
 Standardmäßig werden nicht alle HTTP-Header weitergeleitet. Sie können bestimmte Header zu den Antworten hinzufügen, die per Relais gesendet werden. Gehen Sie dazu wie folgt vor:
 
-1. Wechseln Sie zur Datei **serverConf.xml** .
-1. Navigieren Sie im Knoten **`<relay>`** zur Liste der wiedergegebenen HTTP-Header.
-1. Fügen Sie ein **`<responseheader>`** -Element mit den folgenden Attributen hinzu:
+1. Navigieren Sie zu **serverConf.xml** -Datei.
+1. Im **`<relay>`** Knoten, wechseln Sie zur Liste der wiedergegebenen HTTP-Header.
+1. Hinzufügen einer **`<responseheader>`** -Element mit den folgenden Attributen:
 
    * **name**: Kopfzeilenname
-   * **Wert**: Wertname.
+   * **value**: Wertname.
 
    Beispiel:
 
@@ -230,9 +230,9 @@ sh
 >
 >Diese Liste ist nicht vollständig.
 
-Im Knoten **exec** der Server-Konfigurationsdatei müssen Sie auf die zuvor erstellte Datei im Attribut **blacklistFile** verweisen.
+Im **exec** -Knoten der Server-Konfigurationsdatei verwenden, müssen Sie auf die zuvor erstellte Datei im **blacklistFile** -Attribut.
 
-**Nur** für Linux: In der Serverkonfigurationsdatei empfehlen wir, einen Benutzer für die Ausführung externer Befehle anzugeben, um Ihre Sicherheitskonfiguration zu verbessern. Dieser Benutzer wird im Knoten **exec** der Konfigurationsdatei festgelegt. Alle in **serverConf.xml** verfügbaren Parameter sind in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md) aufgeführt.
+**Nur für Linux**: In der Serverkonfigurationsdatei empfehlen wir, einen Benutzer für die Ausführung externer Befehle anzugeben, um Ihre Sicherheitskonfiguration zu verbessern. Dieser Benutzer wird im **exec** -Knoten der Konfigurationsdatei. Alle in der **serverConf.xml** sind in dieser [Abschnitt](../../installation/using/the-server-configuration-file.md).
 
 >[!NOTE]
 >
@@ -261,7 +261,7 @@ Wenn mehrere Server für die Weiterleitung verwendet werden, müssen sie über S
 >
 >Bei Verwendung der Standard- oder Unternehmensarchitektur muss der Hauptanwendungsserver berechtigt sein, Tracking-Informationen auf jeden Computer hochzuladen.
 
-Die URLs der redundanten Server müssen in der Umleitungskonfiguration über die Datei **serverConf.xml** angegeben werden.
+Die URLs der redundanten Server müssen in der Umleitungskonfiguration über die **serverConf.xml** -Datei.
 
 **Beispiel:**
 
@@ -270,7 +270,7 @@ Die URLs der redundanten Server müssen in der Umleitungskonfiguration über die
 <spareserver enabledIf="$(hostname)!='front_srv2'" id="2" url="http://front_srv2:8080" />
 ```
 
-Die Eigenschaft **enableIf** ist optional (standardmäßig leer) und ermöglicht es Ihnen, die Verbindung nur zu aktivieren, wenn das Ergebnis wahr ist. Auf diese Weise erhalten Sie auf allen Weiterleitungsservern eine identische Konfiguration.
+Die **enableIf** -Eigenschaft ist optional (standardmäßig leer) und ermöglicht es Ihnen, die Verbindung nur zu aktivieren, wenn das Ergebnis wahr ist. Auf diese Weise erhalten Sie auf allen Weiterleitungsservern eine identische Konfiguration.
 
 Um den Hostnamen des Computers abzurufen, führen Sie den folgenden Befehl aus: **hostname -s**.
 
@@ -280,13 +280,13 @@ Um den Hostnamen des Computers abzurufen, führen Sie den folgenden Befehl aus: 
 
 Sie können mehrere Workflow-Server (wfserver) konfigurieren und auf zwei oder mehr Computern verteilen. Wenn Sie diesen Architekturtyp auswählen, konfigurieren Sie den Verbindungsmodus der Lastenausgleichsmodule entsprechend dem Adobe Campaign-Zugriff.
 
-Wählen Sie für den Zugriff über das Internet den Modus **Load Balancer** aus, um die Verbindungszeiten zu begrenzen.
+Wählen Sie für den Zugriff über das Internet die **Lastenausgleich** -Modus, um die Verbindungszeiten zu begrenzen.
 
-Wählen Sie beim Zugriff über die Adobe Campaign-Konsole den Modus **hash** oder **sticky ip**. Dadurch können Sie die Verbindung zwischen dem Rich-Client und dem Server beibehalten und verhindern, dass eine Benutzersitzung beispielsweise während eines Import- oder Exportvorgangs unterbrochen wird.
+Wählen Sie beim Zugriff über die Adobe Campaign-Konsole **Hash** oder **Sticky-ip** -Modus. Dadurch können Sie die Verbindung zwischen dem Rich-Client und dem Server beibehalten und verhindern, dass eine Benutzersitzung beispielsweise während eines Import- oder Exportvorgangs unterbrochen wird.
 
 Sie können die Ausführung eines Workflows oder einer Workflow-Aktivität auf einem bestimmten Computer erzwingen. Hierzu müssen Sie eine oder mehrere Affinitäten für den betreffenden Workflow oder die betreffende Aktivität definieren.
 
-1. Erstellen Sie die Affinitäten des Workflows oder der Aktivität, indem Sie sie in das Feld **[!UICONTROL Affinität]** eingeben.
+1. Erstellen Sie die Affinitäten des Workflows oder der Aktivität, indem Sie sie in die **[!UICONTROL Affinität]** -Feld.
 
    Sie können einen beliebigen Affinitätsnamen wählen, stellen Sie jedoch sicher, dass Sie keine Leerzeichen oder Satzzeichen verwenden. Wenn Sie verschiedene Server verwenden, geben Sie unterschiedliche Namen an.
 
@@ -296,8 +296,8 @@ Sie können die Ausführung eines Workflows oder einer Workflow-Aktivität auf e
 
    Die Dropdown-Liste enthält zuvor verwendete Affinitäten. Sie wird mit der Zeit mit den verschiedenen eingegebenen Werten ergänzt.
 
-1. Öffnen Sie die Datei **nl6/conf/config-`<instance>.xml`** .
-1. Ändern Sie die Zeile, die mit dem Modul **[!UICONTROL wfserver]** übereinstimmt, wie folgt:
+1. Öffnen Sie die **nl6/conf/config-`<instance>.xml`** -Datei.
+1. Ändern Sie die Zeile, die der **[!UICONTROL wfserver]** -Modul wie folgt:
 
    ```
    <wfserver autoStart="true" affinity="XXX,"/>
@@ -323,9 +323,9 @@ Standardmäßig werden die verschiedenen Adobe Campaign-Prozesse täglich um 6 U
 
 Sie können diese Konfiguration jedoch ändern.
 
-Wechseln Sie dazu zur Datei **serverConf.xml** im Repository **conf** Ihrer Installation.
+Gehen Sie dazu zum **serverConf.xml** -Datei, die sich im **conf** Repository Ihrer Installation.
 
-Jeder in dieser Datei konfigurierte Prozess hat ein **processRestartTime** -Attribut. Sie können den Wert dieses Attributs ändern, um die Startzeit jedes Prozesses entsprechend Ihren Anforderungen anzupassen.
+Jeder in dieser Datei konfigurierte Prozess verfügt über eine **processRestartTime** -Attribut. Sie können den Wert dieses Attributs ändern, um die Startzeit jedes Prozesses entsprechend Ihren Anforderungen anzupassen.
 
 >[!IMPORTANT]
 >

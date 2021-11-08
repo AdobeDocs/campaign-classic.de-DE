@@ -82,11 +82,11 @@ In den folgenden Beispielen sind die Parameter der Instanz:
 
 Die Schritte zur Installation des ersten Servers sind:
 
-1. Befolgen Sie das Installationsverfahren für den Adobe Campaign-Server: **nlserver**-Paket unter Linux oder **setup.exe** unter Windows.
+1. Befolgen Sie das Installationsverfahren für den Adobe Campaign-Server: **nlserver** Paket unter Linux oder **setup.exe** unter Windows.
 
-   Weitere Informationen hierzu finden Sie unter [Voraussetzungen für die Campaign-Installation unter Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md) (Linux) und [Voraussetzungen für die Campaign-Installation unter Windows](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) (Windows).
+   Weitere Informationen hierzu finden Sie unter [Voraussetzungen für die Installation von Campaign unter Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md) (Linux) und [Voraussetzungen für die Installation von Campaign unter Windows](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) (Windows).
 
-1. Nachdem der Adobe Campaign-Server installiert ist, starten Sie den Anwendungsserver (Web) mit dem Befehl **nlserver web -tomcat** (das Webmodul ermöglicht es Ihnen, Tomcat im eigenständigen Webservermodus zu starten, der auf Port 8080 lauscht) und sicherzustellen, dass Tomcat ordnungsgemäß gestartet wird:
+1. Nachdem der Adobe Campaign-Server installiert ist, starten Sie den Anwendungsserver (Web) mit dem Befehl . **nlserver web -tomcat** (Mit dem Webmodul können Sie Tomcat im eigenständigen Webserver-Modus starten, der Port 8080 überwacht) und sicherstellen, dass Tomcat ordnungsgemäß gestartet wird:
 
    ```
    12:08:18 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
@@ -98,16 +98,16 @@ Die Schritte zur Installation des ersten Servers sind:
 
    >[!NOTE]
    >
-   >Beim ersten Ausführen des Webmoduls werden die Dateien **config-default.xml** und **serverConf.xml** im Ordner **conf** unter dem Installationsordner erstellt. Alle in **serverConf.xml** verfügbaren Parameter sind in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md) aufgeführt.
+   >Beim ersten Ausführen des Webmoduls wird die **config-default.xml** und **serverConf.xml** -Dateien in **conf** Ordner unter dem Installationsordner. Alle in der **serverConf.xml** sind in dieser [Abschnitt](../../installation/using/the-server-configuration-file.md).
 
-   Drücken Sie **Strg+C**, um den Server zu stoppen.
+   Presse **Strg+C** , um den Server anzuhalten.
 
    Weiterführende Informationen hierzu finden Sie in den folgenden Abschnitten:
 
-   * Für Linux: [Erststart des Servers](../../installation/using/installing-packages-with-linux.md#first-start-up-of-the-server)
-   * Windows: [Erststart des Servers](../../installation/using/installing-the-server.md#first-start-up-of-the-server)
+   * Für Linux: [Erstmaliger Start des Servers](../../installation/using/installing-packages-with-linux.md#first-start-up-of-the-server)
+   * Windows: [Erstmaliger Start des Servers](../../installation/using/installing-the-server.md#first-start-up-of-the-server)
 
-1. Ändern Sie das Kennwort **internal** mithilfe des Befehls:
+1. Ändern Sie die **intern** Kennwort mithilfe des Befehls:
 
    ```
    nlserver config -internalpassword
@@ -115,7 +115,7 @@ Die Schritte zur Installation des ersten Servers sind:
 
    Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
-1. Erstellen Sie die Instanz **demo** mit den DNS-Masken für das Tracking (in diesem Fall **tracking.campaign.net**) und greifen Sie auf Clientkonsolen zu (in diesem Fall **console.campaign.net**). Dazu gibt es zwei Möglichkeiten:
+1. Erstellen Sie die **Demo** Instanz mit den DNS-Masken für die Verfolgung (in diesem Fall **tracking.campaign.net**) und Zugriff auf Client-Konsolen (in diesem Fall **console.campaign.net**). Dazu gibt es zwei Möglichkeiten:
 
    * Erstellen Sie die Instanz über die Konsole:
 
@@ -131,9 +131,9 @@ Die Schritte zur Installation des ersten Servers sind:
       nlserver config -addinstance:demo/tracking.campaign.net*,console.campaign.net*
       ```
 
-      Weitere Informationen hierzu finden Sie unter [Instanz erstellen](../../installation/using/command-lines.md#creating-an-instance).
+      Weitere Informationen hierzu finden Sie unter [Erstellen einer Instanz](../../installation/using/command-lines.md#creating-an-instance).
 
-1. Bearbeiten Sie die Datei **config-demo.xml** (die über den vorherigen Befehl erstellt wurde und sich neben der Datei **config-default.xml** befindet), überprüfen Sie, ob die Datei **mta** (delivery), **wfserver** (workflow), **inMail** (rebound mails) und **stat** (statistics) Prozesse aktiviert sind, konfigurieren Sie dann die Adresse des **app** Statistikservers:
+1. Bearbeiten Sie die **config-demo.xml** -Datei (erstellt über den vorherigen Befehl und befindet sich neben dem **config-default.xml** ), überprüfen Sie, ob die **mta** (Versand), **wfserver** (Workflow), **inMail** (rebound mails) und **stat** (Statistiken) Prozesse aktiviert sind, konfigurieren Sie dann die Adresse der **App** Statistikserver:
 
    ```
    <?xml version='1.0'?>
@@ -153,7 +153,7 @@ Die Schritte zur Installation des ersten Servers sind:
 
    Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#enabling-processes).
 
-1. Bearbeiten Sie die Datei **serverConf.xml** und geben Sie die Bereitstellungsdomäne an. Geben Sie dann die IP- (oder Host-)Adressen der DNS-Server an, die vom MTA-Modul zur Beantwortung von DNS-Abfragen vom MX-Typ verwendet werden.
+1. Bearbeiten Sie die **serverConf.xml** und geben Sie die Versanddomäne an. Geben Sie dann die IP- (oder Host-)Adressen der DNS-Server an, die vom MTA-Modul zur Beantwortung von DNS-Abfragen vom MX-Typ verwendet werden.
 
    ```
    <dnsConfig localDomain="campaign.com" nameServers="192.0.0.1, 192.0.0.2"/>
@@ -161,13 +161,13 @@ Die Schritte zur Installation des ersten Servers sind:
 
    >[!NOTE]
    >
-   >Die Parameter **nameServers** werden nur in Windows verwendet.
+   >Die **nameServers** -Parameter werden nur unter Windows verwendet.
 
    Weitere Informationen hierzu finden Sie unter [Campaign-Serverkonfiguration](../../installation/using/configuring-campaign-server.md).
 
-1. Kopieren Sie das Clientkonsole-Installationsprogramm (**setup-client-7.XX**, **YYYY.exe** für v7 oder **setup-client-6.XX**, **YYYY.exe** für v6.1) in **/datakit/nl eng/jsp** Ordner. [Weitere Informationen](../../installation/using/client-console-availability-for-windows.md).
+1. Kopieren Sie das Clientkonsole-Installationsprogramm (**setup-client-7.XX**, **YYYY.exe** für v7 oder **setup-client-6.XX**, **YYYY.exe** für v6.1) auf **/datakit/nl/eng/jsp** Ordner. [Weitere Informationen](../../installation/using/client-console-availability-for-windows.md).
 
-1. Starten Sie den Adobe Campaign-Server (**net start nlserver6** in Windows, **/etc/init.d/nlserver6 start** in Linux) und führen Sie den Befehl **nlserver pdump** erneut aus, um zu überprüfen, ob alle aktivierten Module vorhanden sind.
+1. Starten Sie den Adobe Campaign-Server (**net start nlserver6** unter Windows: **/etc/init.d/nlserver6 start** in Linux) und führen Sie den Befehl aus. **nlserver pdump** erneut auf das Vorhandensein aller aktivierten Module überprüfen.
 
    >[!NOTE]
    >
@@ -187,11 +187,11 @@ Die Schritte zur Installation des ersten Servers sind:
 
    Mit diesem Befehl erfahren Sie auch die Version und die Build-Nummer des auf dem Computer installierten Adobe Campaign-Servers.
 
-1. Testen Sie das Modul **nlserver web** mithilfe der URL: [https://console.campaign.net/nl/jsp/logon.jsp](https://tracking.campaign.net/r/test).
+1. Testen Sie die **nlserver web** -Modul mithilfe der URL: [https://console.campaign.net/nl/jsp/logon.jsp](https://tracking.campaign.net/r/test).
 
    Diese URL ermöglicht Ihnen den Zugriff auf die Download-Seite für das Client-Setup-Programm. [Weitere Informationen](../../installation/using/client-console-availability-for-windows.md).
 
-   Geben Sie die **interne**-Anmeldung und das zugehörige Kennwort ein, wenn Sie die Seite &quot;Zugriffskontrolle&quot;erreichen.
+   Geben Sie die **intern** Anmelden und zugehöriges Passwort, wenn Sie die Seite &quot;Zugriffskontrolle&quot;erreichen.
 
    ![](assets/s_ncs_install_access_client.png)
 
@@ -204,14 +204,14 @@ Gehen Sie wie folgt vor:
 
    Wir behalten denselben Instanznamen wie der Anwendungsserver 1 bei.
 
-1. Ändern Sie **internal** in denselben Wert wie für den Anwendungsserver 1.
+1. Ändern Sie die **intern** auf den gleichen Wert wie der Anwendungsserver 1.
 1. Verknüpfen Sie die Datenbank mit der Instanz:
 
    ```
    nlserver config -setdblogin:PostgreSQL:campaign:demo@dbsrv -instance:demo
    ```
 
-1. Bearbeiten Sie die Datei **config-demo.xml** (die über den vorherigen Befehl erstellt wurde und sich neben der Datei **config-default.xml** befindet), überprüfen Sie, ob die Datei **mta** (delivery), **wfserver** (workflow), **inMail** (rebound mails) und **stat** (statistics) Prozesse aktiviert sind, konfigurieren Sie dann die Adresse des **app** Statistikservers:
+1. Bearbeiten Sie die **config-demo.xml** -Datei (erstellt über den vorherigen Befehl und befindet sich neben dem **config-default.xml** ), überprüfen Sie, ob die **mta** (Versand), **wfserver** (Workflow), **inMail** (rebound mails) und **stat** (Statistiken) Prozesse aktiviert sind, konfigurieren Sie dann die Adresse der **App** Statistikserver:
 
    ```
    <?xml version='1.0'?>
@@ -231,7 +231,7 @@ Gehen Sie wie folgt vor:
 
    Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#enabling-processes).
 
-1. Bearbeiten Sie die Datei **serverConf.xml** und füllen Sie die DNS-Konfiguration des MTA-Moduls aus:
+1. Bearbeiten Sie die **serverConf.xml** Datei und füllen Sie die DNS-Konfiguration des MTA-Moduls:
 
    ```
    <dnsConfig localDomain="campaign.com" nameServers="192.0.0.1, 192.0.0.2"/>
@@ -239,7 +239,7 @@ Gehen Sie wie folgt vor:
 
    >[!NOTE]
    >
-   >Der Parameter **nameServers** wird nur in Windows verwendet.
+   >Die **nameServers** wird nur unter Windows verwendet.
 
    Weitere Informationen hierzu finden Sie unter [Campaign-Serverkonfiguration](../../installation/using/configuring-campaign-server.md).
 
@@ -247,8 +247,8 @@ Gehen Sie wie folgt vor:
 
    Weiterführende Informationen hierzu finden Sie in den folgenden Abschnitten:
 
-   * Für Linux: [Erststart des Servers](../../installation/using/installing-packages-with-linux.md#first-start-up-of-the-server)
-   * Windows: [Erststart des Servers](../../installation/using/installing-the-server.md#first-start-up-of-the-server)
+   * Für Linux: [Erstmaliger Start des Servers](../../installation/using/installing-packages-with-linux.md#first-start-up-of-the-server)
+   * Windows: [Erstmaliger Start des Servers](../../installation/using/installing-the-server.md#first-start-up-of-the-server)
 
 ### Installieren und Konfigurieren der Frontserver {#installing-and-configuring-the-frontal-servers}
 
@@ -262,8 +262,8 @@ Zusammenfassend sind folgende Etappen zu durchlaufen:
    * Für Linux: [Integration in einen Webserver für Linux](../../installation/using/integration-into-a-web-server-for-linux.md),
    * Windows: [Integration in einen Webserver für Windows](../../installation/using/integration-into-a-web-server-for-windows.md).
 
-1. Kopieren Sie die Dateien **config-demo.xml** und **serverConf.xml**, die während der Installation erstellt wurden. Aktivieren Sie in der Datei **config-demo.xml** den Prozess **trackinglogd** und deaktivieren Sie den Prozess **mta**, **inmail**, **wfserver** und **stat** Prozesse.
-1. Bearbeiten Sie die Datei **serverConf.xml** und füllen Sie die redundanten Tracking-Server in die Parameter der Umleitung:
+1. Kopieren Sie die **config-demo.xml** und **serverConf.xml** Dateien, die während der Installation erstellt wurden. Im **config-demo.xml** -Datei, aktivieren Sie die **trackinglogd** verarbeiten und deaktivieren Sie die **mta**, **Inmail**, **wfserver** und **stat** Prozesse.
+1. Bearbeiten Sie die **serverConf.xml** Datei und füllen Sie die redundanten Tracking-Server in die Parameter der Umleitung:
 
    ```
    <spareServer enabledIf="$(hostname)!='front_srv1'" id="1" url="https://front_srv1:8080"/>
@@ -286,7 +286,7 @@ Zusammenfassend sind folgende Etappen zu durchlaufen:
 
    Weiterführende Informationen hierzu finden Sie in den folgenden Abschnitten:
 
-   * Für Linux: [Starten des Webservers und Testen der Konfiguration](../../installation/using/integration-into-a-web-server-for-linux.md#launching-the-web-server-and-testing-the-configuration),
-   * Windows: [Starten des Webservers und Testen der Konfiguration](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration).
+   * Für Linux: [Webserver starten und Konfiguration testen](../../installation/using/integration-into-a-web-server-for-linux.md#launching-the-web-server-and-testing-the-configuration),
+   * Windows: [Webserver starten und Konfiguration testen](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration).
 
 1. Starten Sie den Adobe Campaign-Server.

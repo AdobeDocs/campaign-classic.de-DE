@@ -27,9 +27,9 @@ Nähere Erläuterungen zu den in Campaign integrierten Tabellen und ihrer Intera
 
 ## Erweitern oder Erstellen von Schemata {#extending-or-creating-schemas}
 
-Um ein Feld, einen Index oder ein anderes Element zu einem der Kerndatenschemata in Campaign hinzuzufügen, z. B. die Empfängertabelle (nms:recipient), müssen Sie dieses Schema erweitern. Weitere Informationen hierzu finden Sie im Abschnitt [Erweitern eines Schemas](../../configuration/using/extending-a-schema.md) .
+Um ein Feld, einen Index oder ein anderes Element zu einem der Kerndatenschemata in Campaign hinzuzufügen, z. B. die Empfängertabelle (nms:recipient), müssen Sie dieses Schema erweitern. Weitere Informationen hierzu finden Sie im Abschnitt [Schema erweitern](../../configuration/using/extending-a-schema.md) Abschnitt.
 
-Um einen komplett neuen Datentyp hinzuzufügen, der in Adobe Campaign nicht standardmäßig zur Verfügung gestellt wird (z. B. eine Vertragstabelle), können Sie direkt ein benutzerdefiniertes Schema erstellen. Weitere Informationen hierzu finden Sie im Abschnitt [Datenschemata](../../configuration/using/data-schemas.md) .
+Um einen komplett neuen Datentyp hinzuzufügen, der in Adobe Campaign nicht standardmäßig zur Verfügung gestellt wird (z. B. eine Vertragstabelle), können Sie direkt ein benutzerdefiniertes Schema erstellen. Weitere Informationen hierzu finden Sie im Abschnitt [Datenschemata](../../configuration/using/data-schemas.md) Abschnitt.
 
 ![](assets/schemaextension_getting_started_1.png)
 
@@ -60,7 +60,7 @@ type="string" enum="exTransactionTypeEnum"/>
 >
 >Sie können auch benutzerseitig verwaltete Auflistungen verwenden (in der Regel unter **[!UICONTROL Administration]** > **[!UICONTROL Platform]**), um die Werte für ein bestimmtes Feld anzugeben. Dabei handelt es sich um globale Auflistungen. Sie sind besser geeignet, wenn Ihre Auflistung außerhalb des von Ihnen eingesetzten Schemas verwendet werden kann.
 
-Weiterführende Informationen zu Auflistungen finden Sie in den Abschnitten [Auflistungen](../../configuration/using/schema-structure.md#enumerations) und [`<enumeration>` Element](../../configuration/using/schema/enumeration.md) .
+Weiterführende Informationen zu Auflistungen finden Sie im Abschnitt [Auflistungen](../../configuration/using/schema-structure.md#enumerations) und [`<enumeration>` element](../../configuration/using/schema/enumeration.md) Abschnitte.
 
 ## Index {#index}
 
@@ -83,17 +83,17 @@ Beispiele:
 </dbindex>
 ```
 
-Das Attribut **xpath** verweist auf das Feld in Ihrem Schema, das Sie indizieren möchten.
+Die **xpath** -Attribut auf das Feld in Ihrem Schema verweist, das Sie indizieren möchten.
 
 >[!IMPORTANT]
 >
 >Es ist wichtig zu beachten, dass die von Indizes bereitgestellten Leistungsverbesserungen bei der SQL-Abfrage auch Leistungseinbußen beim Schreiben von Datensätzen verursachen. Die Indizes sollten daher mit Vorsicht verwendet werden.
 
-Weiterführende Informationen zu Indizes finden Sie im Abschnitt [Indizierte Felder](../../configuration/using/database-mapping.md#indexed-fields) .
+Weitere Informationen zu Indizes finden Sie im Abschnitt [Indexierte Felder](../../configuration/using/database-mapping.md#indexed-fields) Abschnitt.
 
 ## Schlüssel {#keys}
 
-Jede Tabelle muss über mindestens einen Schlüssel verfügen. Oft wird sie im Hauptelement des Schemas automatisch mithilfe des Attributs **@autopk=true** erstellt, das auf &quot;true&quot;gesetzt ist.
+Jede Tabelle muss über mindestens einen Schlüssel verfügen. Oft wird sie im Hauptelement des Schemas mithilfe der Variablen **@autopk=true** auf &quot;true&quot;gesetzt ist.
 
 Der Primärschlüssel kann auch mit dem Attribut **internal** definiert werden.
 
@@ -105,21 +105,21 @@ Beispiel:
 </key>
 ```
 
-In diesem Beispiel legen wir unseren eigenen Primärschlüssel &quot;budgetId&quot;fest, anstatt das Attribut **@autopk** einen standardmäßigen Primärschlüssel namens &quot;id&quot;erstellen zu lassen.
+In diesem Beispiel wird die **@autopk** -Attribut einen standardmäßigen Primärschlüssel mit dem Namen &quot;id&quot;erstellen, geben wir unseren eigenen Primärschlüssel &quot;budgetId&quot;an.
 
 >[!IMPORTANT]
 >
 >Beim Anlegen eines neuen Schemas oder bei einer Schema-Erweiterung müssen Sie für das gesamte Schema den gleichen Wert für die Primärschlüsselfolge (@pkSequence) beibehalten.
 
-Weiterführende Informationen zu Schlüsseln finden Sie im Abschnitt [Verwaltung von Schlüsseln](../../configuration/using/database-mapping.md#management-of-keys) .
+Weitere Informationen zu Schlüsseln finden Sie im Abschnitt [Schlüsselverwaltung](../../configuration/using/database-mapping.md#management-of-keys) Abschnitt.
 
 ## Attribute (Felder) {#attributes--fields-}
 
-Mit Attributen können Sie die Felder definieren, aus denen Ihr Datenobjekt besteht. Klicken Sie in der Symbolleiste zur Schemabearbeitung auf **[!UICONTROL Einfügen]**, um leere Attributvorlagen an der Stelle in Ihrer XML abzulegen, an der sich Ihr Cursor befindet. Weitere Informationen hierzu finden Sie im Abschnitt [Datenschemata](../../configuration/using/data-schemas.md) .
+Mit Attributen können Sie die Felder definieren, aus denen Ihr Datenobjekt besteht. Klicken Sie in der Symbolleiste zur Schemabearbeitung auf **[!UICONTROL Einfügen]**, um leere Attributvorlagen an der Stelle in Ihrer XML abzulegen, an der sich Ihr Cursor befindet. Weitere Informationen hierzu finden Sie im Abschnitt [Datenschemata](../../configuration/using/data-schemas.md) Abschnitt.
 
 ![](assets/schemaextension_getting_started_2.png)
 
-Die vollständige Liste der Attribute finden Sie im Abschnitt [`<attribute>` element](../../configuration/using/schema/attribute.md) . Im Folgenden finden Sie einige der am häufigsten verwendeten Attribute:
+Die vollständige Liste der Attribute ist im [`<attribute>` element](../../configuration/using/schema/attribute.md) Abschnitt. Im Folgenden finden Sie einige der am häufigsten verwendeten Attribute:
 
 * **@advanced**
 * **@dataPolicy**
@@ -127,7 +127,7 @@ Die vollständige Liste der Attribute finden Sie im Abschnitt [`<attribute>` ele
 * **@desc**
 * **@enum**
 * **@expr**
-* **@label**
+* **@Titel**
 * **@length**
 * **@name**
 * **@notNull**
@@ -136,9 +136,9 @@ Die vollständige Liste der Attribute finden Sie im Abschnitt [`<attribute>` ele
 * **@xml**
 * **@type**
 
-   Eine Tabelle mit den Zuordnungen der von Adobe Campaign für die verschiedenen Datenbankverwaltungssysteme generierten Datentypen finden Sie im Abschnitt [Zuordnen der Datentypen von Adobe Campaign/DBMS](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data) .
+   Eine Tabelle mit den Zuordnungen der Datentypen, die von Adobe Campaign für die verschiedenen Datenbankverwaltungssysteme generiert wurden, finden Sie im Abschnitt [Mapping der Adobe Campaign/DBMS-Datentypen](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data) Abschnitt.
 
-Weiterführende Informationen zu den einzelnen Attributen finden Sie im Abschnitt [Attributbeschreibung](../../configuration/using/schema/attribute.md) .
+Weitere Informationen zu den einzelnen Attributen finden Sie im Abschnitt [Attributbeschreibung](../../configuration/using/schema/attribute.md) Abschnitt.
 
 ### Beispiele {#examples}
 
@@ -224,4 +224,4 @@ Weiterführende Informationen finden Sie im Abschnitt [Datenbankstruktur aktuali
 
 >[!NOTE]
 >
->Wenn Änderungen sich nicht auf die Datenbankstruktur auswirken, müssen Sie nur die Schemata neu erstellen. Wählen Sie dazu die zu aktualisierenden Schemata aus, klicken Sie mit der rechten Maustaste und wählen Sie **[!UICONTROL Aktionen > Ausgewählte Schemata wiederherstellen...]**. Weitere Informationen hierzu finden Sie im Abschnitt [Regenerieren von Schemata](../../configuration/using/regenerating-schemas.md) .
+>Wenn Änderungen sich nicht auf die Datenbankstruktur auswirken, müssen Sie nur die Schemata neu erstellen. Wählen Sie dazu die zu aktualisierenden Schemata aus, klicken Sie mit der rechten Maustaste und wählen Sie **[!UICONTROL Aktionen > Ausgewählte Schemata wiederherstellen...]**. Weitere Informationen hierzu finden Sie im Abschnitt [Regenerieren von Schemata](../../configuration/using/regenerating-schemas.md) Abschnitt.

@@ -41,7 +41,7 @@ Adobe Campaign basiert auf einer Service-orientierten Architektur (SOA) und umfa
 
 >[!CAUTION]
 >
->Sofern nicht ausdrücklich anders angegeben, obliegt die Installation, Aktualisierung und Wartung auf allen Komponenten einer Adobe Campaign-Plattform dem/den Maschinadministrator(en), der/die diese Komponenten hostet. Dazu gehört die Implementierung der Voraussetzungen für Adobe Campaign-Anwendungen sowie die Einhaltung der Campaign [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md) zwischen Komponenten.
+>Sofern nicht ausdrücklich anders angegeben, obliegt die Installation, Aktualisierung und Wartung auf allen Komponenten einer Adobe Campaign-Plattform dem/den Maschinadministrator(en), der/die diese Komponenten hostet. Dazu gehört die Implementierung der Voraussetzungen für Adobe Campaign-Anwendungen sowie die Einhaltung von Campaign [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md) zwischen Komponenten.
 
 ## Präsentationsschicht {#presentation-layer}
 
@@ -119,7 +119,7 @@ Dieser Prozess erstellt Statistiken zur Anzahl von Verbindungen, zu an die einze
 
 >[!NOTE]
 >
->Die vollständige Liste der Adobe Campaign-Module finden Sie in [diesem Dokument](../../production/using/operating-principle.md).
+>Die vollständige Liste der Adobe Campaign-Module finden Sie unter [dieses Dokuments](../../production/using/operating-principle.md).
 
 ## Persistenzschicht {#persistence-layer}
 

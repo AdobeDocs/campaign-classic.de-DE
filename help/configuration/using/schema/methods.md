@@ -35,7 +35,7 @@ method
 
 ## Beschreibung {#description-11}
 
-Mit diesem Element können Sie ein Element `<method>` definieren. Die Angabe einer Methode ist zwingend erforderlich.
+Mit diesem Element können Sie eine `<method>`  -Element. Die Angabe einer Methode ist zwingend erforderlich.
 
 ## Attributbeschreibung {#attribute-description-11}
 

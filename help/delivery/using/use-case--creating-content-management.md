@@ -104,7 +104,7 @@ Gehen Sie wie folgt vor, um ein Datenschema zu erstellen:
    <td> Title<br /> </td> 
    <td> Attribut<br /> </td> 
    <td> String <br /> </td> 
-   <td> Title<br /> </td> 
+   <td> Titel<br /> </td> 
   </tr> 
   <tr> 
    <td> Untertitel<br /> </td> 

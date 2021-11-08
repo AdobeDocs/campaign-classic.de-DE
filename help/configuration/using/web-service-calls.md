@@ -31,7 +31,7 @@ Mit Webdiensten können Sie viele Anwendungen aus einem Drittanbietersystem erst
 
 Die Definition der auf dem Adobe Campaign-Anwendungsserver implementierten Webdienste ist in den Datenschemata verfügbar.
 
-Ein Webdienst wird in der Grammatik der Datenschemata beschrieben und ist im Element **`<methods>`** verfügbar.
+Ein Webdienst wird in der Grammatik der Datenschemata beschrieben und ist im Abschnitt **`<methods>`** -Element.
 
 ```
 <methods>
@@ -46,15 +46,15 @@ Ein Webdienst wird in der Grammatik der Datenschemata beschrieben und ist im Ele
 </methods>
 ```
 
-Hier finden Sie ein Beispiel für die Definition der Methode **GenerateForm**.
+Hier haben wir ein Beispiel für die Definition der Methode namens **GenerateForm**.
 
-Die Beschreibung des Dienstes beginnt mit dem Element `<method>` . Die Liste der Parameter der Methode wird aus dem Element `<parameters>` ausgefüllt. Jeder Parameter wird durch einen Namen, einen Typ (Boolesch, Zeichenfolge, DOMElement usw.) und eine Beschreibung. Mit dem Attribut &quot;inout&quot;mit dem Wert &quot;out&quot;können Sie angeben, dass sich der Parameter &quot;result&quot;in der SOAP-Aufrufausgabe befindet.
+Die Beschreibung des Dienstes beginnt mit der `<method>` -Element. Die Liste der Parameter der Methode wird aus dem  `<parameters>` -Element. Jeder Parameter wird durch einen Namen, einen Typ (Boolesch, Zeichenfolge, DOMElement usw.) und eine Beschreibung. Mit dem Attribut &quot;inout&quot;mit dem Wert &quot;out&quot;können Sie angeben, dass sich der Parameter &quot;result&quot;in der SOAP-Aufrufausgabe befindet.
 
 Das Attribut &quot;static&quot;(mit dem Wert &quot;true&quot;) beschreibt diese Methode als statisch, d. h., alle Parameter der Methode müssen deklariert werden.
 
 Eine &quot;const&quot;-Methode hat implizit ein XML-Dokument im Format seines zugehörigen Schemas als Eingabe.
 
-Eine vollständige Beschreibung des Elements `<method>` eines Adobe Campaign-Schemas finden Sie im Kapitel &quot;Schema references&quot;unter [Method](../../configuration/using/schema/method.md)
+Eine vollständige Beschreibung der `<method>` -Element eines Adobe Campaign-Schemas ist im Kapitel &quot;Schemaverweise&quot;unter [Methode](../../configuration/using/schema/method.md)
 
 Beispiel der Methode &quot;const&quot;-type &quot;ExecuteQuery&quot; aus dem Schema &quot;xtk:queryDef&quot;:
 
@@ -94,7 +94,7 @@ Eine WSDL-Beschreibung beginnt mit der Definition der Typen, die zum Erstellen v
 
 #### Typen {#types}
 
-Typdefinitionen basieren auf XML-Schemata. In unserem Beispiel nimmt die Methode &quot;ExecuteQuery&quot;eine Zeichenfolge &quot;s:string&quot;und ein XML-Dokument (`<s:complextype>`) als Parameter an. Der Rückgabewert der Methode (&quot;ExecuteQueryResponse&quot;) ist ein XML-Dokument ( `<s:complextype>`).
+Typdefinitionen basieren auf XML-Schemata. In unserem Beispiel nimmt die Methode &quot;ExecuteQuery&quot;eine Zeichenfolge &quot;s:string&quot;und ein XML-Dokument (`<s:complextype>`) als Parameter. Der Rückgabewert der Methode (&quot;ExecuteQueryResponse&quot;) ist ein XML-Dokument (  `<s:complextype>`).
 
 ```
 <types>
@@ -130,7 +130,7 @@ Typdefinitionen basieren auf XML-Schemata. In unserem Beispiel nimmt die Methode
 
 #### Nachrichten {#messages}
 
-`<message>` beschreibt die Namen und Typen eines Satzes von zu sendenden Feldern. Die Methode verwendet zwei Nachrichten, die als Parameter (&quot;ExecuteQueryIn&quot;) und als Rückgabewert (&quot;ExecuteQueryOut&quot;) übergeben werden.
+Die `<message>` beschreibt die Namen und Typen eines Satzes von zu sendenden Feldern. Die Methode verwendet zwei Nachrichten, die als Parameter (&quot;ExecuteQueryIn&quot;) und als Rückgabewert (&quot;ExecuteQueryOut&quot;) übergeben werden.
 
 ```
 <message name="ExecuteQueryIn">
@@ -144,7 +144,7 @@ Typdefinitionen basieren auf XML-Schemata. In unserem Beispiel nimmt die Methode
 
 #### PortType {#porttype}
 
-Der `<porttype>` verknüpft die Nachrichten mit dem Vorgang &quot;ExecuteQuery&quot;, der durch die Abfrage (&quot;input&quot;) ausgelöst wird, die eine Antwort (&quot;output&quot;) generiert.
+Die `<porttype>` verknüpft die Nachrichten des Vorgangs &quot;ExecuteQuery&quot;, der durch die Abfrage (&quot;input&quot;) ausgelöst wird, die eine Antwort (&quot;output&quot;) generiert.
 
 ```
 <portType name="queryDefMethodsSoap">
@@ -157,7 +157,7 @@ Der `<porttype>` verknüpft die Nachrichten mit dem Vorgang &quot;ExecuteQuery&q
 
 #### Bindung {#binding}
 
-Der Teil `<binding>` gibt das SOAP-Kommunikationsprotokoll ( `<soap:binding>` ), den Datentransport über HTTP (Wert des Attributs &quot;transport&quot;) und das Datenformat für den Vorgang &quot;ExecuteQuery&quot; an. Der Textkörper des SOAP-Umschlags enthält die Nachrichtensegmente direkt ohne Umwandlung.
+Die `<binding>` Teil gibt das SOAP-Kommunikationsprotokoll ( `<soap:binding>` ), Datenübertragung über HTTP (Wert des Attributs &quot;transport&quot;) und Datenformat für den Vorgang &quot;ExecuteQuery&quot;. Der Textkörper des SOAP-Umschlags enthält die Nachrichtensegmente direkt ohne Umwandlung.
 
 ```
 <binding name="queryDefMethodsSoap" type="tns:queryDefMethodsSoap">
@@ -176,7 +176,7 @@ Der Teil `<binding>` gibt das SOAP-Kommunikationsprotokoll ( `<soap:binding>` ),
 
 #### Service {#service}
 
-Der Teil `<service>` beschreibt den Dienst &quot;XtkQueryDef&quot;mit seinem URI auf der URL des Adobe Campaign-Anwendungsservers.
+Die `<service>` -Teil beschreibt den Dienst &quot;XtkQueryDef&quot;mit seinem URI auf der URL des Adobe Campaign-Anwendungsservers.
 
 ```
 <service name="XtkQueryDef">
@@ -188,15 +188,15 @@ Der Teil `<service>` beschreibt den Dienst &quot;XtkQueryDef&quot;mit seinem URI
 
 ## Konnektivität {#connectivity}
 
-Adobe Campaign hat die Sicherheit für Authentifizierungsmechanismen erhöht, indem [Sicherheitszonen](../../installation/using/security-zones.md) und Sitzungsverwaltungseinstellungen eingeführt wurden.
+Adobe Campaign hat die Authentifizierungsmechanismen durch Einführung von [Sicherheitszonen](../../installation/using/security-zones.md) und Sitzungsverwaltungseinstellungen.
 
 Es stehen zwei Authentifizierungsmodi zur Verfügung:
 
-* **über einen Aufruf von logon method()**. Dieser Modus generiert ein Sitzungstoken und ein Sicherheits-Token. Dies ist der sicherste Modus und daher der am besten empfohlene.
+* **über einen Aufruf der Anmeldemethode()**. Dieser Modus generiert ein Sitzungstoken und ein Sicherheits-Token. Dies ist der sicherste Modus und daher der am besten empfohlene.
 
 oder
 
-* **über das Adobe Campaign-Login +** Kennwort, mit dem ein Sitzungstoken erstellt wird. Das Sitzungstoken läuft nach einem festgelegten Zeitraum automatisch ab. Dieser Modus wird nicht empfohlen und erfordert eine Reduzierung der Sicherheitseinstellungen der Anwendung für einige Zoneneinstellungen (allowUserPassword=&quot;true&quot; und sessionTokenOnly=&quot;true&quot;).
+* **über Adobe Campaign Login + Passwort** , das ein Sitzungstoken erstellt. Das Sitzungstoken läuft nach einem festgelegten Zeitraum automatisch ab. Dieser Modus wird nicht empfohlen und erfordert eine Reduzierung der Sicherheitseinstellungen der Anwendung für einige Zoneneinstellungen (allowUserPassword=&quot;true&quot; und sessionTokenOnly=&quot;true&quot;).
 
 ### Eigenschaften des Sitzungstokens {#session-token-characteristics}
 
@@ -240,7 +240,7 @@ Aus einem SOAP-Aufruf:
 
 ### Aufrufbeispiele {#call-examples}
 
-* Verwenden von **HttpSoapConnection/SoapService**:
+* Verwenden **HttpSoapConnection/SoapService**:
 
 ```
   
@@ -273,11 +273,11 @@ Aus einem SOAP-Aufruf:
   logInfo(queryRes[0].toXMLString())
 ```
 
-* Verwenden von **HttpServletRequest**:
+* Verwenden **HttpServletRequest**:
 
 >[!NOTE]
 >
->Die URLs, die in den folgenden **HttpServletRequest** -Aufrufen verwendet werden, müssen im Abschnitt &quot;URL-Berechtigungen&quot;der Datei **serverConf.xml** auf Zulassungsliste sein. Dies gilt auch für die URL des Servers selbst.
+>Die in den folgenden URLs verwendeten URLs **HttpServletRequest** -Aufrufe müssen im Abschnitt &quot;URL-Berechtigungen&quot;der **serverConf.xml** -Datei. Dies gilt auch für die URL des Servers selbst.
 
 Logon execution():
 
