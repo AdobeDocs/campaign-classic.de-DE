@@ -6,9 +6,9 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 exl-id: 228ee9e4-46a0-4d82-b8ba-b019bc0e7cac
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 9ba2199eabf91381e87661f30c9af8aa0ce4cc26
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: '729'
 ht-degree: 3%
 
 ---
@@ -164,7 +164,9 @@ Die folgenden Ausdrücke werden gesucht (Groß-/Kleinschreibung beachten):
    <td> crmDeploymentType="onpremise"<br /> </td> 
    <td> PU-0007<br /> </td> 
    <td> Fehler<br /> </td> 
-   <td> Diese Art der Bereitstellung wird nicht mehr unterstützt. Der Bereitstellungstyp des CRM-Connectors für Office 365 und On-Premise Microsoft ist jetzt veraltet.</a>. Informationen zum Ändern der Web-API-Bereitstellung finden Sie unter <a href="../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft" target="_blank">Webanwendungen</a>.<br /> </td>
+   <td> Diese Art der Bereitstellung wird nicht mehr unterstützt. Der Bereitstellungstyp des CRM-Connectors für Office 365 und On-Premise Microsoft wurde eingestellt. 
+   </br>Wenn Sie einen dieser veralteten Bereitstellungstypen in einem externen Konto verwenden, sollte dieses externe Konto gelöscht werden. Anschließend sollten Sie die <b>postupgrade</b> Befehl. 
+   </br>Informationen zum Ändern der Web-API-Bereitstellung finden Sie unter <a href="../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft" target="_blank">Webanwendungen</a>.<br /> </td>
   </tr> 
  </tbody> 
 </table>

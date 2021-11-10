@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 5806690f764d2e5dfb5651597ff68b33bb399b44
 workflow-type: tm+mt
 source-wordcount: '3428'
 ht-degree: 100%
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 # Druckregeln{#pressure-rules}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 ## Über Marketing-Müdigkeit {#about-marketing-fatigue}
 
@@ -159,7 +159,7 @@ Eine Druckregel zum Beispiel, die eine Schwelle von 2 Nachrichten pro Woche und 
 >  oder
 >
 >* **7T** in das Feld **[!UICONTROL Betroffener Zeitraum]** eingeben UND die Option **[!UICONTROL Sendungen im Planungskalender einbeziehen]**\
->prüfen: In dieser Berechnung werden Sendungen berücksichtigt, die bis zu sieben Tage vor dem Verfügbarkeitsdatum und bis zu sieben Tage nach dem Verfügbarkeitsdatum, an dem die Regel angewendet wird, durchgeführt werden.
+   >prüfen: In dieser Berechnung werden Sendungen berücksichtigt, die bis zu sieben Tage vor dem Verfügbarkeitsdatum und bis zu sieben Tage nach dem Verfügbarkeitsdatum, an dem die Regel angewendet wird, durchgeführt werden.
 >
 >Das Anfangsdatum des Zeitraums hängt von der Konfiguration der Datenbank ab.
 

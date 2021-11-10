@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 exl-id: a4d12445-5680-4704-9c67-e43e0ea6631b
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 5806690f764d2e5dfb5651597ff68b33bb399b44
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 100%
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 # Filterregeln{#filtering-rules}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 Filterregeln ermöglichen es, auszuschließende Nachrichten nach in einer Abfrage definierten Kriterien zu bestimmen. Diese Regeln werden mit einer Zielgruppendimension verknüpft.
 
