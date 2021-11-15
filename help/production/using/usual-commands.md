@@ -29,7 +29,6 @@ Der Parameter **`<command>`** dem Modul entspricht.
 >
 >* Auf jeden Fall können Sie die **-noconsole** -Argument zum Löschen von Kommentaren, die nach dem Start der Module angezeigt werden.
 >* Umgekehrt können Sie das -Argument hinzufügen **-verbose** um weitere Informationen anzuzeigen.
-
 >
 
 

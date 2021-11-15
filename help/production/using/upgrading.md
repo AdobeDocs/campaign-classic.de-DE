@@ -24,7 +24,6 @@ Ermitteln und bestätigen Sie vor dem Starten des Aktualisierungsprozesses, auf 
 >* Adobe empfiehlt dringend, vor der Aktualisierung eine Datenbanksicherung für jede Instanz durchzuführen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../production/using/backup.md).
 >* Um eine Aktualisierung durchzuführen, stellen Sie sicher, dass Sie über die Möglichkeit und die Berechtigung zum Zugriff auf Instanzen und Protokolle verfügen.
 >* Lesen [diesem Abschnitt](../../installation/using/general-architecture.md) und [Build-Aktualisierung](https://helpx.adobe.com/de/campaign/kb/acc-build-upgrade.html) Kapitel vor dem Start.
-
 >
 
 
@@ -50,6 +49,7 @@ Um alle Dateien durch die neue Version zu ersetzen, müssen Sie alle Instanzen d
       **iisreset /stop**
 
    * Adobe-Campaign-Dienst: **net stop nlserver6**
+
    >[!IMPORTANT]
    >
    >Sie müssen auch sicherstellen, dass der Weiterleitungsserver (webmdl) angehalten wird, damit die Variable **nlsrvmod.dll** -Datei, die von IIS verwendet wird, kann durch die neue Version ersetzt werden.
@@ -172,9 +172,8 @@ Führen Sie dazu den folgenden Befehl aus:
 >
 >* Ihr Skript kann **httpd** anstelle von **apache**.
 >* Sie MÜSSEN diesen Befehl ausführen, bis Sie die folgende Antwort erhalten:
-
-   >
-   >   Dieser Vorgang ist erforderlich, damit Apache die neue Bibliothek anwendet.
+>
+>   Dieser Vorgang ist erforderlich, damit Apache die neue Bibliothek anwendet.
 
 
 Starten Sie dann Apache neu:

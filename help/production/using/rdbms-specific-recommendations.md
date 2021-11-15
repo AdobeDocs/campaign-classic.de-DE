@@ -153,7 +153,6 @@ REINDEX TABLE nmsmirrorpageinfo;
 >* Die VACUUM - und REINDEX -Anweisungen sperren die Tabelle, wodurch einige Prozesse während der Wartung angehalten werden.
 >* Bei sehr großen Tabellen (in der Regel über 5 GB) kann die VACUUM FULL-Anweisung sehr ineffizient werden und sehr lange dauern. Adobe rät davon ab, sie für die **YyyNmsBroadLogXxx** Tabelle.
 >* Dieser Wartungsvorgang kann mithilfe eines Adobe Campaign-Workflows implementiert werden. **[!UICONTROL SQL]** Aktivität. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../workflow/using/architecture.md). Stellen Sie sicher, dass Sie die Wartung für eine niedrige Aktivitätsdauer planen, die nicht mit Ihrem Sicherungsfenster kollidiert.
-
 >
 
 

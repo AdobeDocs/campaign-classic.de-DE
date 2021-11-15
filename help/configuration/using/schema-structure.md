@@ -486,7 +486,6 @@ Elemente werden mit ihren Namen bezeichnet, während den Namen von Attributen ei
 >
 >* **location/@city** ist nicht gültig; verwenden Sie **`[location/@city]`**
 >* **`[@email]`** und **@email** entsprechen einander
-
 >
 
 
