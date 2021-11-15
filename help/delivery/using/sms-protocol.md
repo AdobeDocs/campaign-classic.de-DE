@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: configuring-channels
 exl-id: fded088a-11a2-4b87-a368-7b197334aca4
 source-git-commit: 4d789ad0138f65134d3c1592ef5d5517d39fc0f7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '8460'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -233,7 +233,7 @@ Diese PDU quittiert, dass die Verbindung aktiv ist.
 
 >[!IMPORTANT]
 >
-> Adobe Campaign unterstützt nur mehrteilige SMS oder lange SMS zum Senden. UDH und `message_payload` für eingehende SMS (MO) nicht unterstützt werden, was bedeutet, dass MO auf 160 Zeichen begrenzt ist.
+> Adobe Campaign unterstützt beim Senden nur mehrteilige SMS oder lange SMS. UDH und `message_payload` werden für eingehende SMS (MO) nicht unterstützt, was bedeutet, dass MO auf 160 Zeichen begrenzt sind.
 
 Mehrteilige SMS oder lange SMS sind SMS, die in mehreren Teilen gesendet werden. Aufgrund technischer Einschränkungen im Mobilfunknetzprotokoll kann eine SMS nicht größer als 140 Byte sein. Andernfalls muss sie aufgeteilt werden. Weitere Informationen zur Anzahl der Zeichen, die in eine SMS passen, finden Sie im Abschnitt [SMS-Textkodierung](sms-protocol.md#sms-text-encoding).
 
