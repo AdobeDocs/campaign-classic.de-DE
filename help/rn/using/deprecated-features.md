@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 89494165a59c0ba6119f37d41893fd0e8733f47d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1657'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ Kunden wird empfohlen, die Nutzung der Funktionen in ihrer aktuellen Implementie
   <td>Adobe Analytics Data Connector<br></td>
    <td><p>Ab Campaign Version 21.1.3 wird der Adobe Analytics Data Connector nicht mehr unterstützt.</p>
    <p>Wenn Sie diesen Connector nutzen, müssen Sie Ihre Implementierung entsprechend anpassen. <a href="../../platform/using/adobe-analytics-connector.md">Weitere Informationen</a></p>
-  <p><em>Geplantes Entfernungsdatum: August 2022</em></p>
+  <p><em>Geplantes Datum für die Entfernung: August 2022</em></p>
   </td>
  </tr>
     <tr>
