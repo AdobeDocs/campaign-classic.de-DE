@@ -6,10 +6,10 @@ audience: configuration
 content-type: reference
 topic-tags: api
 exl-id: e6638870-3141-4f12-b904-db436127c0d1
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
 workflow-type: tm+mt
-source-wordcount: '635'
-ht-degree: 4%
+source-wordcount: '632'
+ht-degree: 2%
 
 ---
 
@@ -40,7 +40,7 @@ In diesem Abschnitt wird die Verwendung der Dienste &quot;Abonnieren&quot;, &quo
 
 >[!IMPORTANT]
 >
->[Dokumentation zu Campaign JSAPI](https://docs.adobe.com/content/help/de-DE/campaign-classic/technicalresources/api/index.html) enthält zusätzliche Informationen zu SOAP-Aufrufen und zur Verwendung von JavaScript in Adobe Campaign sowie einen vollständigen Verweis auf alle in der Anwendung verwendeten Methoden und Funktionen.
+>[Dokumentation zu Campaign JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/index.html) enthält zusätzliche Informationen zu SOAP-Aufrufen und zur Verwendung von JavaScript in Adobe Campaign sowie einen vollständigen Verweis auf alle in der Anwendung verwendeten Methoden und Funktionen.
 
 ## Abonnieren (nms:subscription) {#subscribe--nms-subscription-}
 

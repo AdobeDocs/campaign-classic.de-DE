@@ -1,19 +1,19 @@
 ---
 product: campaign
-title: E-Mail-Inhalt in Adobe Campaign Classic festlegen
+title: E-Mail-Inhalt in Adobe Campaign Classic definieren
 description: Erfahren Sie, wie Sie den E-Mail-Inhalt mit Adobe Campaign Classic festlegen.
 audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 3b8d685642fc74d918a0e312c66d5e4f7b424192
 workflow-type: tm+mt
-source-wordcount: '2066'
-ht-degree: 100%
+source-wordcount: '2064'
+ht-degree: 99%
 
 ---
 
-# E-Mail-Inhalt erstellen {#defining-the-email-content}
+# E-Mail-Inhalte erstellen {#defining-the-email-content}
 
 ![](../../assets/common.svg)
 
@@ -237,7 +237,7 @@ Durch Ankreuzen der Option **[!UICONTROL Bilder in die E-Mail einschließen (mul
 >
 >Wenn in der Nachricht lokale Bilder enthalten sind, ist die Änderung des Quellcodes der Nachricht zu bestätigen.
 
-## Barcode in eine E-Mail einfügen{#inserting-a-barcode-in-an-email}
+## Personalisierten Barcode einfügen{#insert-a-barcode}
 
 Die Barcode-Lösung bietet die Möglichkeit, verschiedene ein- oder zweidimensionale Code-Typen in den gängigsten Normen zu erstellen.
 

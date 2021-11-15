@@ -1,19 +1,19 @@
 ---
 product: campaign
-title: Briefpost-Inhalt definieren
-description: Briefpost-Inhalt definieren
+title: Erstellen Sie den Briefpost-Inhalt
+description: Erstellen Sie den Briefpost-Inhalt
 audience: delivery
 content-type: reference
 topic-tags: sending-direct-mail
 exl-id: 585b2017-9408-4953-8505-2f6d9db8032f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 3b8d685642fc74d918a0e312c66d5e4f7b424192
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 100%
 
 ---
 
-# Briefpost-Inhalt definieren{#defining-the-direct-mail-content}
+# Erstellen Sie den Briefpost-Inhalt{#defining-the-direct-mail-content}
 
 ![](../../assets/common.svg)
 

@@ -6,10 +6,10 @@ audience: configuration
 content-type: reference
 topic-tags: api
 exl-id: 7aa2aef1-2eb6-48a6-82fa-4451bed66216
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
 workflow-type: tm+mt
-source-wordcount: '658'
-ht-degree: 8%
+source-wordcount: '655'
+ht-degree: 7%
 
 ---
 
@@ -26,7 +26,7 @@ Adobe Campaign-APIs werden in JavaScript innerhalb der Anwendung und in SOAP au�
 >[!IMPORTANT]
 >
 >Die Anzahl der pro Tag zulässigen Engine-Aufrufe hängt von Ihrem Lizenzvertrag ab. Weitere Informationen hierzu finden Sie auf [dieser Seite](https://helpx.adobe.com/de/legal/product-descriptions/adobe-campaign-classic---product-description.html).\
->Eine Liste aller APIs einschließlich ihrer vollständigen Beschreibung finden Sie unter [diese spezielle Dokumentation](https://docs.adobe.com/content/help/de-DE/campaign-classic/technicalresources/api/index.html).
+>Eine Liste aller APIs einschließlich ihrer vollständigen Beschreibung finden Sie unter [diese spezielle Dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/index.html.
 
 ## Voraussetzungen {#prerequisites}
 

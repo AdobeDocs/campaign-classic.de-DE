@@ -6,10 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 00b8a9b4a693920aa6b4be9e7c41f08c2e53a0c6
+source-git-commit: 6c23dadb5b6523e17e242de43a908ca86ed7cc23
 workflow-type: tm+mt
-source-wordcount: '1208'
-ht-degree: 24%
+source-wordcount: '1223'
+ht-degree: 23%
 
 ---
 
@@ -28,6 +28,8 @@ Integrierte Pakete enthalten eine Reihe von Funktionen, die je nach Ihren Anford
 >Die Installation eines neuen Packages kann sich auf Ihre gesamte Plattform auswirken: Sie muss vor der endgültigen Bereitstellung getestet und validiert werden.
 >
 >Nachdem ein Paket installiert wurde, kann es nicht mehr deinstalliert werden.
+>
+>Wenden Sie sich als gehosteter oder hybrider Kunde an die Adobe, um ein neues integriertes Paket bereitzustellen.
 
 So installieren Sie ein integriertes Paket:
 

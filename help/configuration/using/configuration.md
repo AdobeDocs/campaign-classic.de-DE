@@ -6,10 +6,10 @@ audience: configuration
 content-type: reference
 topic-tags: navigation-hierarchy
 exl-id: c7ae7240-0c12-4420-bbb3-4268c9ade3e7
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
 workflow-type: tm+mt
-source-wordcount: '1212'
-ht-degree: 3%
+source-wordcount: '1206'
+ht-degree: 1%
 
 ---
 
@@ -95,7 +95,7 @@ Die Befehle werden in derselben Reihenfolge angezeigt wie im XML-Dokument deklar
 
 Mithilfe eines Befehlstrennzeichens können Sie eine Trennleiste zwischen Befehlen anzeigen. Sie wird durch die Variable **&#39;-&#39;** -Wert, der in der Befehlsbeschriftung enthalten ist.
 
-Die optionale Präsenz der **`<soapcall>`** -Tag mit seinen Eingabeparametern definiert den Aufruf einer auszuführenden SOAP-Methode. Weitere Informationen zur SOAP-API finden Sie unter [Dokumentation zu Campaign JSAPI](https://docs.adobe.com/content/help/de-DE/campaign-classic/technicalresources/api/index.html).
+Die optionale Präsenz der **`<soapcall>`** -Tag mit seinen Eingabeparametern definiert den Aufruf einer auszuführenden SOAP-Methode. Weitere Informationen zur SOAP-API finden Sie unter [Dokumentation zu Campaign JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/index.html).
 
 Der Formularkontext kann bei der Initialisierung aus dem **`<enter>`** -Tag. Weitere Informationen zu diesem Tag finden Sie in der Dokumentation zu Formularen.
 
@@ -268,7 +268,7 @@ Die Befehle werden in derselben Reihenfolge angezeigt wie im XML-Dokument deklar
 
 Mithilfe eines Befehlstrennzeichens können Sie eine Trennleiste zwischen Befehlen anzeigen. Sie wird durch die Variable **&#39;-&#39;** -Wert, der in der Befehlsbeschriftung enthalten ist.
 
-Die optionale Präsenz der **`<soapcall>`** -Tag mit seinen Eingabeparametern definiert den Aufruf einer auszuführenden SOAP-Methode. Weitere Informationen zu SOAP-APIs finden Sie unter [Dokumentation zu Campaign JSAPI](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html).
+Die optionale Präsenz der **`<soapcall>`** -Tag mit seinen Eingabeparametern definiert den Aufruf einer auszuführenden SOAP-Methode. Weitere Informationen zu SOAP-APIs finden Sie unter [Dokumentation zu Campaign JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/index.html).
 
 Der Formularkontext kann bei der Initialisierung über die **`<enter>`** -Tag. Weitere Informationen zu diesem Tag finden Sie in der Dokumentation zum Formular.
 

@@ -6,7 +6,7 @@ title: Campaign Classic v7 – Handbuch
 user-guide-description: Mit Adobe Campaign können Sie umfangreiche Kundendaten verwenden, um dynamische Kampagnen, die Kunden tatsächlich wünschen, zu erstellen, zu koordinieren und bereitzustellen. Über E-Mail, mobile Kanäle, Offline-Kanäle und mehr.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 23c5892189c59008f82ec453c97d24efe82fd2ae
+source-git-commit: 3b8d685642fc74d918a0e312c66d5e4f7b424192
 workflow-type: tm+mt
 source-wordcount: '2566'
 ht-degree: 100%
@@ -166,8 +166,8 @@ ht-degree: 100%
    + Briefpost senden {#sending-direct-mail}
       + [Über den Briefpost-Kanal](delivery/using/about-direct-mail-channel.md)
       + [Briefpostversand erstellen](delivery/using/creating-a-direct-mail-delivery.md)
-      + [Briefpost-Inhalt definieren](delivery/using/defining-the-direct-mail-content.md)
-      + [Validierung](delivery/using/validating.md)
+      + [Erstellen Sie den Briefpost-Inhalt](delivery/using/defining-the-direct-mail-content.md)
+      + [Validieren](delivery/using/validating.md)
    + Versandvorlagen verwenden{#using-delivery-templates}
       + [Über Vorlagen](delivery/using/about-templates.md)
       + [Versandvorlage erstellen](delivery/using/creating-a-delivery-template.md)

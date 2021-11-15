@@ -6,10 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 1f96c3df-0ef2-4f5f-9c36-988cbcc0769f
-source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
+source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
 workflow-type: tm+mt
-source-wordcount: '772'
-ht-degree: 41%
+source-wordcount: '766'
+ht-degree: 39%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 41%
 
 ## Scripts
 
-Weiterführende Informationen finden Sie in der [JSAPI-Dokumentation für Campaign](https://docs.adobe.com/content/help/de-DE/campaign-classic/technicalresources/api/index.html).
+Weiterführende Informationen finden Sie in der [JSAPI-Dokumentation für Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/index.html).
 
 Wenn Sie Scripts mit Workflows, Webanwendungen und JSSP verwenden, folgen Sie diesen Best Practices:
 
@@ -56,7 +56,7 @@ Um SQL-Injections zu vermeiden, müssen der Zulassungsliste SQL-Funktionen hinzu
 >
 >Wenn Sie einen Build verwenden, der älter als 8140 ist, wird die Variable **XtkPassUnknownSQLFunctionsToRDBMS** -Option auf &quot;1&quot;gesetzt werden. Wenn Sie Ihre Datenbank sichern möchten, löschen Sie diese Option (oder legen Sie sie auf &quot;0&quot;fest).
 
-Wenn Sie Benutzereingaben zur Erstellung von Filtern in Abfragen oder SQL-Anweisungen verwenden, müssen Sie sie immer escapen (siehe die [JSAPI-Dokumentation für Campaign](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html) - Schutz von Daten: Escape-Funktionen). Diese Funktionen sind:
+Wenn Sie Benutzereingaben zur Erstellung von Filtern in Abfragen oder SQL-Anweisungen verwenden, müssen Sie sie immer escapen (siehe die [JSAPI-Dokumentation für Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/index.html) - Schutz von Daten: Escape-Funktionen). Diese Funktionen sind:
 
 * NL.XML.escape(data)
 * NL.SQL.escape(data)
