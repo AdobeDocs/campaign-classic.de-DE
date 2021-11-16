@@ -6,22 +6,22 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-target
 exl-id: 6177f57b-534c-4d86-8f73-d96980c48a77
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: b6e24c63ece12f25b7dafe3fede9e38b3aab2427
 workflow-type: tm+mt
-source-wordcount: '902'
-ht-degree: 100%
+source-wordcount: '881'
+ht-degree: 88%
 
 ---
 
-# Dynamische Inhalte aus Target einfügen {#inserting-a-dynamic-image}
+# Dynamischen Inhalt aus Target einfügen {#inserting-a-dynamic-image}
 
 ![](../../assets/common.svg)
 
-In diesem Dokument erfahren Sie, wie Sie ein dynamisches Angebot von Target in eine E-Mail in Adobe Campaign integrieren können.
+Auf dieser Seite erfahren Sie, wie Sie ein dynamisches Angebot von Adobe Target in eine E-Mail in Adobe Campaign integrieren.
 
-Wir möchten einen Versand erstellen, der einen Bild-Baustein enthält, der sich entsprechend dem Land des Empfängers dynamisch ändert. Die Daten werden bei jeder mbox-Abfrage gesendet und sind abhängig von der IP-Adresse des Besuchers.
+Ziel ist die Erstellung eines Versands mit einem Bildblock, der sich je nach Land des Empfängers dynamisch ändert: die Daten werden mit jeder Mbox-Anfrage gesendet und hängen von der IP-Adresse des Empfängers ab.
 
-Wir möchten, dass eines der Bilder in dieser E-Mail entsprechend den folgenden Benutzererlebnissen dynamisch angepasst wird:
+In dieser Nachricht können Bilder je nach den folgenden Benutzererlebnissen dynamisch variieren:
 
 * Die E-Mail wird in Frankreich geöffnet.
 * Die E-Mail wird in den USA geöffnet.
@@ -29,15 +29,15 @@ Wir möchten, dass eines der Bilder in dieser E-Mail entsprechend den folgenden 
 
 ![](assets/target_4.png)
 
-Gehen Sie zur Umsetzung unseres Beispiels in Adobe Campaign und Target wie folgt vor:
+Gehen Sie dazu wie folgt vor:
 
-1. [Einfügen des dynamischen Angebots in eine E-Mail](../../integrations/using/inserting-a-dynamic-image.md#inserting-dynamic-offer)
-1. [Erstellen von Umleitungsangeboten](../../integrations/using/inserting-a-dynamic-image.md#create-redirect-offers)
-1. [Erstellen von Audiences](../../integrations/using/inserting-a-dynamic-image.md#audiences-target)
-1. [Erstellen einer Experience Targeting-Aktivität](../../integrations/using/inserting-a-dynamic-image.md#creating-targeting-activity)
-1. [Erstellen der Vorschau und Senden der E-Mail](../../integrations/using/inserting-a-dynamic-image.md#preview-send-email)
+1. [Dynamisches Angebot in eine E-Mail einfügen](../../integrations/using/inserting-a-dynamic-image.md#inserting-dynamic-offer)
+1. [Umleitungsangebote erstellen](../../integrations/using/inserting-a-dynamic-image.md#create-redirect-offers)
+1. [Audiences erstellen](../../integrations/using/inserting-a-dynamic-image.md#audiences-target)
+1. [Experience Targeting-Aktivität erstellen](../../integrations/using/inserting-a-dynamic-image.md#creating-targeting-activity)
+1. [Vorschau erstellen und E-Mail senden](../../integrations/using/inserting-a-dynamic-image.md#preview-send-email)
 
-## Einfügen des dynamischen Angebots in eine E-Mail {#inserting-dynamic-offer}
+## Dynamisches Angebot in eine E-Mail einfügen {#inserting-dynamic-offer}
 
 Sobald Sie mit der Definition der Zielgruppe und des Inhalts Ihrer E-Mail in Adobe Campaign fertig sind, können Sie ein dynamisches Bild aus Target einfügen.
 
@@ -53,7 +53,7 @@ In Adobe Campaign gibt es zwei Möglichkeiten, ein dynamisches Bild von Target i
 
    ![](assets/target_12.png)
 
-### Definieren der Bildparameter {#defining-image-parameters}
+### Bildparameter definieren {#defining-image-parameters}
 
 * URL des **[!UICONTROL Standardbilds]**: Dieses Bild wird angezeigt, wenn keine der Bedingungen erfüllt ist. Sie können auch ein Bild aus Ihrer Assets-Bibliothek verwenden.
 * **[!UICONTROL Speicherort in Target]**: Geben Sie einen Namen für den Speicherort Ihres dynamischen Angebots ein. Sie müssen diesen Speicherort später in Ihrer Target-Aktivität auswählen.
@@ -64,7 +64,7 @@ Wenn Sie in Ihren Einstellungen in Adobe Target Unternehmensberechtigungen verwe
 
 ![](assets/target_13.png)
 
-## Erstellen von Umleitungsangeboten {#create-redirect-offers}
+## Umleitungsangebote erstellen {#create-redirect-offers}
 
 In Target können Sie für ein Angebot unterschiedliche Versionen erstellen. Für jedes Benutzererlebnis können Sie ein spezifisches Umleitungsangebot definieren und ein anderes Bild wählen.
 
@@ -82,7 +82,7 @@ In unserem Fall benötigen wir zwei Umleitungsangebote. Das dritte (das Standard
 
 1. Führen Sie dieselben Schritte für das andere Umleitungsangebot durch. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html?lang=de).
 
-## Erstellen von Audiences {#audiences-target}
+## Audiences erstellen {#audiences-target}
 
 Erstellen Sie in Target die zwei Audiences, in die die Besucher Ihres Angebots unterteilt werden und denen die unterschiedlichen Inhalte präsentiert werden. Fügen Sie für jede Audience eine Regel hinzu, um festzulegen, wer das Angebot sehen kann.
 
@@ -98,7 +98,7 @@ Erstellen Sie in Target die zwei Audiences, in die die Besucher Ihres Angebots u
 
 1. Führen Sie dieselben Schritte für die anderen Audiences durch.
 
-## Erstellen einer Experience Targeting-Aktivität {#creating-targeting-activity}
+## Experience Targeting-Aktivität erstellen {#creating-targeting-activity}
 
 Wir müssen in Target eine Experience Targeting-Aktivität erstellen, die diversen Erlebnisse definieren und sie mit den entsprechenden Angeboten verknüpfen.
 
@@ -120,7 +120,7 @@ Wir müssen in Target eine Experience Targeting-Aktivität erstellen, die divers
 
 1. Erstellen Sie ein weiteres Erlebnis durch Klicken auf **[!UICONTROL Experience Targeting hinzufügen]**.
 
-### Definieren des Speicherorts und Inhalts {#defining-location-content}
+### Speicherort und Inhalt definieren {#defining-location-content}
 
 Fügen Sie für jede Audience Inhalt hinzu:
 
@@ -138,7 +138,7 @@ Fügen Sie für jede Audience Inhalt hinzu:
 
 1. Führen Sie dieselben Schritte für das zweite Erlebnis aus.
 
-### Definieren der Aktivität {#defining-activity}
+### Aktivität definieren {#defining-activity}
 
 Im Fenster **[!UICONTROL Target]** finden Sie einen Überblick über Ihre Aktivitäten. Bei Bedarf können Sie weitere Erlebnisse hinzufügen.
 
@@ -150,7 +150,7 @@ Im Abschnitt **[!UICONTROL Einstellungen für die Berichterstellung]** können S
 
 ![](assets/target_experience_2.png)
 
-## Erstellen einer Vorschau und Senden der E-Mail in Campaign Classic {#preview-send-email}
+## Vorschau erstellen und E-Mail senden {#preview-send-email}
 
 Sie können nun in Adobe Campaign Ihre E-Mail in der Vorschau ansehen und ihre Darstellung bei verschiedenen Empfängern testen. Sie werden bemerken, dass sich das Bild entsprechend den unterschiedlichen Erlebnissen ändert. Weiterführende Informationen zur Erstellung von E-Mails finden Sie auf dieser [Seite](../../delivery/using/defining-the-email-content.md).
 

@@ -6,16 +6,21 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-target
 exl-id: ae8c680f-52a6-4d00-91cd-44d1c3807546
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: b6e24c63ece12f25b7dafe3fede9e38b3aab2427
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 100%
+source-wordcount: '217'
+ht-degree: 62%
 
 ---
 
 # Integration mit Adobe Target konfigurieren{#configuring-the-integration-with-adobe-target}
 
 ![](../../assets/common.svg)
+
+
+>[!CAUTION]
+>
+> Wenden Sie sich als gehosteter oder hybrider Kunde an Ihren Adobe-Support-Mitarbeiter, um diese Integration zu konfigurieren. Die folgenden Schritte gelten nur für On-Premise-Kunden.
 
 ## Voraussetzungen {#prerequisites}
 
@@ -28,14 +33,18 @@ Um die aus der Integration von Adobe Campaign und Adobe Target resultierenden Fu
 
 Gehen Sie wie folgt vor:
 
-1. Installieren Sie das Standard-Package **[!UICONTROL Integration mit Adobe Experience Cloud]**. Die Integrations-Package-Installation entspricht der Installation eines Standard-Packages, die im Abschnitt [Package-Import](../../platform/using/working-with-data-packages.md#importing-packages) beschrieben wird. Dies ermöglicht den Zugriff auf über Digital Asset Manager freigegebene Assets.
-1. Aktivieren Sie die Verbindung über IMS (Adobe ID-Verbindungsservice), wenn Sie in Ihren E-Mails freigegebene Bilder von Adobe Experience Cloud verwenden möchten. Lesen Sie diesbezüglich den Abschnitt [IMS](../../integrations/using/about-adobe-id.md).
-1. Gehen Sie in den Knoten **[!UICONTROL Administration > Platform > Options]** und konfigurieren Sie die Server- und Organisations (Mandanten)-Optionen für Adobe Target:
+1. Installieren Sie die **[!UICONTROL Integration in Adobe Experience Cloud]** natives Paket. [Weitere Informationen](../../platform/using/working-with-data-packages.md#importing-packages)
+
+   Mit diesem Paket erhalten Sie über Digital Asset Manager Zugriff auf die freigegebenen Assets.
+
+1. Aktivieren Sie die Verbindung über IMS (Adobe ID-Verbindungsdienst), um in Ihren E-Mails freigegebene Bilder von Adobe Experience Cloud zu verwenden. [Weitere Informationen](../../integrations/using/about-adobe-id.md)
+1. Navigieren Sie zu **[!UICONTROL Administration > Plattform > Optionen]** So konfigurieren Sie die Server- und Organisationsoptionen (Mandanten) für Adobe Target:
+
+   ![](assets/tar_options.png)
 
    * **[!UICONTROL TNT_EdgeServer]** - für die Integration verwendeter Adobe-Target-Server. Diese Option ist standardmäßig ausgefüllt. Dieser Wert entspricht der Adobe-Target-**[!UICONTROL Server-Domain]** und wird vom Wert **/m2** gefolgt. Zum Beispiel: **tt.omtrdc.net/m2**.
    * **[!UICONTROL TNT_TenantName]** - Name der Adobe-Target-Organisation. Dieser Wert entspricht dem Adobe-Target-**[!UICONTROL Client]**-Namen.
 
-   ![](assets/tar_options.png)
 
 >[!CAUTION]
 >
