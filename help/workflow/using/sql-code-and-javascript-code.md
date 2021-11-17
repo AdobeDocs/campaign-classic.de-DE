@@ -6,10 +6,10 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: 729a2010-c2d8-481b-8c9e-780b9e5f97ef
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8e6ebec9af0b7865616cf3904c8d400094567bdb
 workflow-type: tm+mt
-source-wordcount: '291'
-ht-degree: 100%
+source-wordcount: '297'
+ht-degree: 95%
 
 ---
 
@@ -33,7 +33,10 @@ Die Aktivität **[!UICONTROL SQL-Code]** führt ein SQL-Script in Form eines JST
 
 ## JavaScript-Code und erweiterter JavaScript-Code {#javascript-code}
 
-Aktivitäten mit **[!UICONTROL JavaScript-Code]** und **[!UICONTROL erweitertem JavaScript-Code]** führen im Kontext von Workflows ein JavaScript-Skript aus. Weitere Informationen zur Skripterstellung finden Sie im Abschnitt [Scripts/JavaScript-Templates](javascript-scripts-and-templates.md).
+Aktivitäten mit **[!UICONTROL JavaScript-Code]** und **[!UICONTROL erweitertem JavaScript-Code]** führen im Kontext von Workflows ein JavaScript-Skript aus. Weitere Informationen zur Skripterstellung finden Sie in den folgenden Abschnitten:
+
+* [JavaScript-Scripts und -Vorlagen](javascript-scripts-and-templates.md)
+* [Beispiele für JavaScript-Code in Workflows](javascript-in-workflows.md)
 
 ### Ausführungsverzögerung {#exec-delay}
 
