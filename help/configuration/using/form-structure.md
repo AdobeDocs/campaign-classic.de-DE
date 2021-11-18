@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: e61f2b63-06d3-4b8c-867f-1c729176d2da
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '2402'
 ht-degree: 94%
@@ -38,7 +38,7 @@ Standardmäßig ist ein Formular mit dem Datenschema verknüpft, das denselben N
   </enumeration>
 
   <element name="recipient">
-    <attribute name="email" type="string" length="80" label="Email" desc="E-mail address of recipient"/>
+    <attribute name="email" type="string" length="80" label="Email" desc="Email address of recipient"/>
     <attribute name="birthDate" type="datetime" label="Date"/>
     <attribute name="gender" type="byte" label="Gender" enum="gender"/>
   </element>
@@ -64,7 +64,7 @@ Das Eingabefeld passt sich automatisch dem gewählten Datentyp an und verwendet 
 >[!NOTE]
 >
 >Sie können die im Datenschema definierte Bezeichnung überschreiben, indem Sie die **label** -Attribut `<input>` element:\
->`<input label="E-mail address" xpath="@name" />`
+>`<input label="Email address" xpath="@name" />`
 
 Standardmäßig wird jedes Feld, je nach Datentyp, einzeilig über den gesamten verfügbaren Platz angezeigt.
 
@@ -126,7 +126,7 @@ Ein **`<static>`**-Element kann zum Formatieren des Formulars verwendet werden:
   <input xpath="@gender"/>
   <input xpath="@birthDate"/>
   <input xpath="@email" colspan="2"/>
-  <static type="help" label="General information about recipient with date of birth, gender, and e-mail address." colspan="2"/>
+  <static type="help" label="General information about recipient with date of birth, gender, and email address." colspan="2"/>
 </form>
 ```
 

@@ -6,10 +6,10 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 3405efb8-a37c-4622-a271-63d7a4148751
-source-git-commit: 00b8a9b4a693920aa6b4be9e7c41f08c2e53a0c6
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '1570'
-ht-degree: 86%
+ht-degree: 83%
 
 ---
 
@@ -476,7 +476,7 @@ Elemente werden mit ihren Namen bezeichnet, während den Namen von Attributen ei
 
 * **@email**: wählt die E-Mail-Adresse aus,
 * **location/@city**: wählt das Attribut &quot;city&quot; unter dem Element **`<location>`** aus,
-* **../@email**: wählt die E-Mail-Adresse aus dem übergeordneten Element des aktuellen Elements aus,
+* **../@email**: wählt die E-Mail-Adresse aus dem übergeordneten Element des aktuellen Elements aus
 * **group`[1]/@label`**: wählt das Attribut &quot;label&quot; aus, das dem ersten **`<group>`**- Kollektionselement untergeordnet ist,
 * **group`[@label='test1']`**: wählt das Attribut &quot;label&quot; aus, das dem Element **`<group>`** untergeordnet ist und den Wert &quot;test1&quot; enthält.
 
@@ -486,13 +486,14 @@ Elemente werden mit ihren Namen bezeichnet, während den Namen von Attributen ei
 >
 >* **location/@city** ist nicht gültig; verwenden Sie **`[location/@city]`**
 >* **`[@email]`** und **@email** entsprechen einander
+
 >
 
 
 Es ist auch möglich, komplexe Ausdrücke wie die folgenden arithmetischen Operationen zu definieren:
 
 * **@gender+1**: fügt 1 zum Inhalt des Attributs **gender** hinzu,
-* **@email + &#39;(&#39;+@created+&#39;)&#39;**: erstellt eine Zeichenfolge unter Verwendung des Werts der E-Mail-Adresse, zu der das Erstellungsdatum zwischen Klammern hinzugefügt wird (für den Typ &quot;string&quot; muss die Konstante in Anführungszeichen gesetzt werden).
+* **@email + &#39;(&#39;+@created+&#39;)&#39;**: erstellt einen String, indem der Wert der E-Mail-Adresse, die zum Erstellungsdatum hinzugefügt wurde, zwischen Klammern steht (setzen Sie die Konstante für den String-Typ in Anführungszeichen).
 
 Die Ausdrücke wurden um Funktionen auf hoher Ebene erweitert, um das Potenzial dieser Sprache zu erweitern.
 
@@ -504,7 +505,7 @@ In der Adobe Campaign-Client-Konsole können Sie über einen beliebigen Ausdruck
 
 * **GetDate()**: gibt das aktuelle Datum zurück,
 * **Year(@created)**: gibt das Jahr des Datums zurück, das im Attribut &quot;created&quot; enthalten ist,
-* **GetEmailDomain(@email)**: gibt die Domain der E-Mail-Adresse zurück.
+* **GetEmailDomain(@email)**: gibt die Domäne der E-Mail-Adresse zurück.
 
 ## Erstellen einer Zeichenfolge über den Compute string {#building-a-string-via-the-compute-string}
 

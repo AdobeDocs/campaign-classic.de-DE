@@ -6,10 +6,10 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: c60c4f86-a957-4c44-a0fe-39b6e3f0e5d6
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '1994'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
@@ -72,11 +72,11 @@ Um eine Dienstleistungsvorlage zu erstellen und ihren Inhalt zu bestimmen, gehen
 
    ![](assets/s_ncs_user_supplier_node_create_template.png)
 
-1. Erstellen Sie Kostenstellen für jeden Vorgangstyp (z. B. Briefpost- oder E-Mail-Versand, Aufgabe etc.). Gehen Sie hierzu in den Tab **[!UICONTROL Kostenstellen]** und klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**. Erfassen Sie die Parameter jeder Kostenstelle.
+1. Erstellen Sie die Kostenstellen für jeden Prozesstyp (Briefpost-/E-Mail-Versand etc.). oder Aufgabe). Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Kostenstellen]** und dann die **[!UICONTROL Hinzufügen]** und geben Sie die Parameter jeder Kostenstelle an.
 
    ![](assets/s_ncs_user_supplier_node_03.png)
 
-   * Geben Sie einen Titel für die Kostenstelle an und wählen Sie den betreffenden Vorgangstyp aus: **[!UICONTROL Brief-Versand]**, **[!UICONTROL E-Mail]**, **[!UICONTROL Mobiltelefon]**, **[!UICONTROL Telefon]** oder **[!UICONTROL Aufgabe]**.
+   * Geben Sie einen Titel für diese Kostenstelle an und wählen Sie den betreffenden Vorgangstyp aus: Versand nach **[!UICONTROL Briefpost]**, **[!UICONTROL Email]**, **[!UICONTROL Mobile]**, **[!UICONTROL Telefon]** oder **[!UICONTROL Aufgabe]**.
    * Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**, um die mit dieser Kostenstelle verbunden Kostentypen zu bestimmen.
    * Bei Bedarf können Sie jedem Kostentyp eine Lagerposition hinzufügen, um den bestehenden Lagern automatisch die verwendeten Mengen anzurechnen.
 
@@ -151,7 +151,7 @@ Klicken Sie auf den Tab **[!UICONTROL Vorgänge]**, um die Übermittlung von Inf
 
    ![](assets/s_ncs_user_supplier_node_02a.png)
 
-* Im Abschnitt **[!UICONTROL Benachrichtigungs-E-Mail]** wird die Vorlage der Benachrichtigung ausgewählt, die dem Dienstleister nach der Dateiextraktion geschickt wird. Auch die Empfänger der Benachrichtigung werden an dieser Stelle festgelegt.
+* Die **[!UICONTROL Benachrichtigungs-E-Mail]** -Bereich können Sie die Vorlage für die Benachrichtigung von Dienstleistern nach dem Versand der Dateien angeben. Wählen Sie die zur Erstellung der Warnmeldung verwendete Vorlage und die Empfängergruppe aus.
 
    Die Versandvorlagen der Benachrichtigungen werden standardmäßig im Knoten **[!UICONTROL Administration > Kampagnen > Vorlagen technischer Sendungen]** des Explorers gespeichert.
 
@@ -161,11 +161,11 @@ Klicken Sie auf den Tab **[!UICONTROL Vorgänge]**, um die Übermittlung von Inf
 
 Dienstleistungen werden Kampagnen über Sendungen oder Aufgaben zugeordnet. Damit in einer Sendung bestimmte Dienstleistungen zur Anwendung kommen können, sind die entsprechenden Dienstleister in der genutzten Versandvorlage anzugeben.
 
-Wenn eine Dienstleistung ausgewählt wird, werden die dem Versandtyp (Briefpost, E-Mail usw.) entsprechenden Kostenstellen automatisch in der zentralen Tabelle angegeben, ebenso wie die bereits definierten Vorgangsoptionen.
+Bei Auswahl eines Dienstes werden die dem Versandtyp entsprechenden Kostenstellen (Briefpost, E-Mail usw.) automatisch in der zentralen Tabelle angegeben, zusammen mit den definierten Verarbeitungsoptionen.
 
 >[!NOTE]
 >
->Sollte bei der Auswahl einer Dienstleistung keine Kostenstelle angezeigt werden, bedeutet dies, dass keine Kostenstelle für diesen Vorgangstyp festgelegt wurde. Wenn beispielsweise keine Kostenstelle vom Typ **[!UICONTROL E-Mail]** bestimmt wurde, hätte die Auswahl einer Dienstleistung in einem E-Mail-Versand keinerlei Auswirkung, da keine entsprechende Kostenstelle vorhanden ist.
+>Wenn bei der Auswahl einer Dienstleistung keine Kostenstelle angezeigt wird, bedeutet dies, dass für diese Art von Prozess keine Kostenstelle definiert wurde. Beispiel: Bei einem E-Mail-Versand, falls nicht **[!UICONTROL Email]** Kostenstelle wurde definiert, es wird keine Kategorie angezeigt und die Auswahl des Dienstes hat keine Auswirkungen.
 
 * In Briefpost-Sendungen können Sie eine Dienstleistung über das Konfigurationsfenster auswählen.
 

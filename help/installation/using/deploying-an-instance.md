@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '3193'
 ht-degree: 5%
@@ -63,7 +63,7 @@ Folgende Optionen stehen zur Verfügung:
 
 * **[!UICONTROL Email-Kanal]** : , um den E-Mail-Versand zu aktivieren. Siehe [E-Mail-Kanal-Parameter](#email-channel-parameters).
 * **[!UICONTROL Tracking]** : Aktivierung der Nachverfolgung der Zielpopulation (Öffnungen und Klicks). Siehe [Tracking-Konfiguration](#tracking-configuration).
-* **[!UICONTROL Bounce Messages verwalten]** : Um das POP-Konto zu definieren, das zum Abruf eingehender E-Mails verwendet wird. Siehe [Bounce Messages verwalten](#managing-bounced-emails).
+* **[!UICONTROL Bounce Messages verwalten]** : Definiert das POP-Konto, das zum Abruf der eingehenden E-Mail verwendet wird. Siehe [Bounce Messages verwalten](#managing-bounced-emails).
 * **[!UICONTROL LDAP-Integration]** : Konfigurieren der Benutzerauthentifizierung über einen LDAP-Ordner. Siehe [Verbindung über LDAP](../../installation/using/connecting-through-ldap.md).
 
 ## Parameter für den E-Mail-Kanal {#email-channel-parameters}
@@ -86,7 +86,7 @@ Geben Sie die folgenden Parameter an:
 
 Darüber hinaus können Sie die **Masken** für die Absenderadresse und die Fehleradresse autorisiert. Bei Angabe von mehr als einer Maske sind die Masken durch Kommata zu trennen. Hierbei handelt es sich um eine optionale Konfiguration. Wenn Felder eingegeben werden, prüft Adobe Campaign zum Zeitpunkt des Versands (während der Analyse, ob die Adresse keine Variablen enthält), ob die Adressen gültig sind. Dieser Betriebsmodus stellt sicher, dass keine Adressen verwendet werden, die Probleme beim Versand von Triggern verursachen könnten. Absenderadressen sind auf dem Versandserver zu konfigurieren.
 
-### In Adressen zugelassene Zeichen {#characters-authorized-in-addresses}
+### Zulässige Zeichen in den Adressen {#characters-authorized-in-addresses}
 
 <!--This window enables you to define, for all email campaigns, the delivery and address-quality management options.-->
 
@@ -113,7 +113,7 @@ Folgende Optionen stehen zur Verfügung:
 
 ### Wiederholungsparameter {#retry-parameters}
 
-Die Informationen über Wiedereinziehungen sind im Abschnitt **Wiederherstellungsfristen** und **Anzahl der Wiedereinziehungen** -Felder: Wenn ein Empfänger nicht erreichbar ist, z. B. wenn sein Posteingang voll ist, versucht das Programm standardmäßig 5-mal, ihn zu kontaktieren, wobei zwischen jedem Versuch (während der maximalen Versandzeit) ein einstündiger Zeitraum liegen muss. Diese Werte können Ihren Bedürfnissen entsprechend geändert werden.
+Die Informationen über Wiedereinziehungen sind im Abschnitt **Wiederherstellungsfristen** und **Anzahl der Wiedereinziehungen** -Felder: Wenn ein Empfänger nicht erreichbar ist, z. B. wenn sein Posteingang voll ist, versucht das Programm standardmäßig, ihn fünfmal zu kontaktieren, wobei zwischen jedem Versuch (während der maximalen Versandzeit) ein Zeitintervall von einer Stunde eingehalten wird. Diese Werte können Ihren Bedürfnissen entsprechend geändert werden.
 
 ### Quarantäneparameter {#quarantine-parameters}
 
@@ -270,14 +270,14 @@ Im nächsten Schritt werden die Standardeinstellungen für den Mobiltelefon-Vers
 
 ![](assets/s_ncs_install_deployment_wiz_12.png)
 
-### Standardkonto für SMS-Versand {#default-account-for-sms-delivery}
+### Standardkonto für das SMS-Routing {#default-account-for-sms-delivery}
 
 Folgende Angaben sind erforderlich:
 
 * **[!UICONTROL Titel]** : Geben Sie einen Namen für dieses SMS-/Wap Push-Konto ein. Beispielsweise können Sie den Namen Ihres Routers verwenden.
 * Für **[!UICONTROL Server]**, **[!UICONTROL Port]**, **[!UICONTROL Konto]**, **[!UICONTROL Passwort]**, **[!UICONTROL Connector]**, **[!UICONTROL Send Endpoint]**, **[!UICONTROL Reception Endpoint]**, **[!UICONTROL Benachrichtigungsendpunkt]** -Felder: Wenden Sie sich für die erforderlichen Einstellungen an Ihren Dienstleister.
 
-### Parameter der gesendeten SMS {#parameters-of-sms-sent}
+### Parameter für ausgehende SMS {#parameters-of-sms-sent}
 
 Im **Priorität** Dropdown-Liste: Wählen Sie &quot;Normal&quot;, &quot;Hoch&quot;oder &quot;Dringend&quot; aus, um sie auf die zu sendenden Nachrichten anzuwenden.
 

@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: api
 exl-id: a392c55e-541a-40b1-a910-4a6dc79abd2d
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '1885'
 ht-degree: 1%
@@ -146,7 +146,7 @@ Die **XPath** -Syntax verwendet wird, um Daten basierend auf dem Eingabeschema z
 
 #### Beispiel mit dem &quot;get&quot;-Vorgang {#example-with-the--get--operation}
 
-Ruft den Vor- und Nachnamen eines Empfängers ( Schema &quot;nms:recipient&quot;) mit einem Filter für die E-Mail ab.
+Ruft den Vor- und Nachnamen eines Empfängers (Schema &quot;nms:recipient&quot;) mit einem Filter für die E-Mail ab.
 
 ```
 <queryDef schema="nms:recipient" operation="get">
@@ -212,7 +212,7 @@ So zählen Sie die Anzahl an Datensätzen in einer Abfrage:
 
 ```
 <queryDef schema="nms:recipient" operation="count"">
-  <!-- condition on the folder and domain of the e-mail -->
+  <!-- condition on the folder and domain of the email -->
   <where>  
     <condition expr="[@folder-id] = 1234" and @domain like 'Adobe%'"/>
   </where>
@@ -234,7 +234,7 @@ So rufen Sie E-Mail-Adressen ab, auf die mehrmals verwiesen wird:
     <node expr="count(@email)"/>
   </select>
 
-  <!-- e-mail grouping clause -->
+  <!-- email grouping clause -->
   <groupby>
     <node expr="@email"/>
   </groupby>
@@ -407,7 +407,7 @@ Um die Syntax einer Abfrage zu unterstützen, können Sie die Abfrage mit dem ge
 
    ![](assets/s_ncs_integration_webservices_queyr3.png)
 
-### Output Document Format {#output-document-format}
+### Ausgabedokumentformat {#output-document-format}
 
 Der Parameter return ist ein XML-Dokument im Format des Schemas, das der Abfrage zugeordnet ist.
 

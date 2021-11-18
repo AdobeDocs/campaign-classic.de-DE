@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 50bed489-2a0f-4123-a326-3d68c8295662
-source-git-commit: cfba72840f7a0d335516d38be24363865d83d18d
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '768'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -47,7 +47,7 @@ Lesen Sie zusätzlich zum [Adobe-Handbuch mit den Best Practices zur Zustellbark
 
 ## Wie kann ich die Inhaltsvalidierung implementieren? {#how-can-i-implement-content-approval-}
 
-Campaign ermöglicht den Einsatz von kollaborativen Validierungsprozessen für die wichtigsten Etappen einer Marketingkampagne. Sie können in jeder Kampagne die Zielgruppe der Sendungen, ihren Inhalt sowie die anfallenden Kosten validieren. Adobe Campaign-Benutzer können per E-Mail von der ausstehenden Validierung benachrichtigt werden und diese über die Konsole oder eine Web-Schnittstelle akzeptieren oder ablehnen.
+Campaign ermöglicht die Einrichtung von Validierungsprozessen für die wichtigsten Etappen einer Marketingkampagne im kollaborativen Modus. Für jede Kampagne können Zielgruppe, Inhalt und Kosten des Versands validiert werden. Adobe Campaign-Benutzer, die für die Validierung verantwortlich sind, können per E-Mail benachrichtigt werden und die Validierung über die Konsole oder eine Webverbindung akzeptieren oder ablehnen.
 
 [Hier erfahren Sie mehr darüber](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries) und lesen, wie Sie die Inhaltsvalidierung in Campaign implementieren können.
 

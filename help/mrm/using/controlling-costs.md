@@ -6,10 +6,10 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: 6765e307-915a-44d2-a486-85c64e8ec52e
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '2539'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -337,7 +337,7 @@ Bei aktivierter Validierung kann das Budget über einen Link im Kampagnen-Dashbo
 
 ![](assets/s_user_cost_mgmt_sample_19.png)
 
-Sie können die Validierung über diesen Link akzeptieren oder ablehnen. Wenn Benachrichtigungen für die Kampagne aktiviert wurden, kann die Validierung zudem über die Benachrichtigungs-E-Mail erfolgen.
+Sie können dann auf den Link klicken, um die Validierung zu erteilen oder abzulehnen, oder den Link in der Benachrichtigungs-E-Mail verwenden, wenn die Benachrichtigung für diese Kampagne aktiviert wurde.
 
 Nach Budgetvalidierung und Abschluss des Versands werden die Kosten automatisch über einen speziellen technischen Workflow weiter verarbeitet.
 

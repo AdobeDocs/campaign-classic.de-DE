@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 4582b524-2b6d-484c-bace-29d2e69f60e9
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
 workflow-type: tm+mt
 source-wordcount: '1103'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -177,7 +177,7 @@ Gehen Sie wie folgt vor:
    * Die Option **[!UICONTROL Duplikataverwaltung]** ist im Modus **[!UICONTROL Aktualisieren]** beizubehalten, um die in der Datenbank enthaltenen Datensätze den in der Textdatei enthaltenen Informationen entsprechend anzupassen.
    * Markieren Sie den Knoten **[!UICONTROL Nachname (@lastName)]** und wählen Sie die Option **[!UICONTROL Nur aktualisieren, wenn das Zielfeld leer ist]** aus.
    * Wiederholen Sie diesen Schritt für den Knoten **[!UICONTROL Firma (@company)]**.
-   * Markieren Sie die Felder **[!UICONTROL Geburtsdatum]**, **[!UICONTROL E-Mail]** und **[!UICONTROL Vorname]** und ordnen Sie ihnen einen Abstimmschlüssel zu.
+   * Weisen Sie den Feldern einen Abstimmschlüssel zu **[!UICONTROL Geburtsdatum]**, **[!UICONTROL Email]** und **[!UICONTROL Vorname]**.
 
       ![](assets/s_ncs_user_import_example04_03.png)
 
@@ -225,7 +225,7 @@ Im folgenden Beispiel enthalten teilweise die Felder der Datenbank Werte, währe
    * Wählen Sie im Feld **[!UICONTROL Dublettenverwaltung]** die Option **[!UICONTROL Entität zurückweisen]** aus.
    * Die Option **[!UICONTROL Duplikataverwaltung]** ist im Modus **[!UICONTROL Aktualisieren]** beizubehalten, um die in der Datenbank enthaltenen Datensätze den in der Textdatei enthaltenen Informationen entsprechend anzupassen.
    * Markieren Sie den Knoten **[!UICONTROL Kundennummer (@account)]** und wählen Sie die Option **[!UICONTROL Aktualisieren (löschen), wenn der Quelldatensatz leer ist]** aus.
-   * Markieren Sie die Felder **[!UICONTROL Geburtsdatum]**, **[!UICONTROL E-Mail]** und **[!UICONTROL Vorname]** und ordnen Sie ihnen einen Abstimmschlüssel zu.
+   * Felder auswählen **[!UICONTROL Geburtsdatum]**, **[!UICONTROL Email]** und **[!UICONTROL Vorname]** und weisen Sie ihnen einen Abstimmschlüssel zu.
 
       ![](assets/s_ncs_user_import_example04_04.png)
 
