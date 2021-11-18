@@ -33,7 +33,7 @@ Zur Nutzung der Budget-Verwaltung mit MRM sind folgende Etappen umzusetzen:
 
 1. Bestimmung des Kostenberechnungsmodus;
 
-   Kostenstrukturen werden für Dienstleister bestimmt. Siehe [Erstellen eines Dienstleisters und seiner Kostenstellen](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
+   Kostenstrukturen werden für Dienstleister bestimmt. Siehe [Erstellen eines Dienstleisters und seiner Kostenkategorien](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
 
 1. Bestimmung der Kampagnenkosten (Sendungen/Aufgaben);
 
@@ -146,7 +146,7 @@ Ausgabezeilen werden dem Budget automatisch hinzugefügt. Sie werden bei der Ver
 
 ![](assets/s_ncs_user_budget_line_edit.png)
 
-Die für Kampagnen, Sendungen oder Aufgaben anfallenden Kosten werden in den Ausgabenzeilen des Budgets, dem sie zugeteilt sind, zusammengefasst. Diese Ausgabenzeilen werden abhängig von den Kostenstellen des beteiligten Dienstleisters erstellt und ausgehend von den verbundenen Kostenstrukturen berechnet.
+Die für Kampagnen, Sendungen oder Aufgaben anfallenden Kosten werden in den Ausgabenzeilen des Budgets, dem sie zugeteilt sind, zusammengefasst. Diese Ausgabenzeilen werden abhängig von den Kostenkategorien des beteiligten Dienstleisters erstellt und ausgehend von den verbundenen Kostenstrukturen berechnet.
 
 Damit enthält jede Ausgabenzeile folgende Informationen:
 
@@ -154,21 +154,21 @@ Damit enthält jede Ausgabenzeile folgende Informationen:
 * den ausgehend von den Kostenstrukturen oder den Plankosten berechneten Betrag;
 * die tatsächlichen Kosten der Sendung oder der betreffenden Aufgabe;
 * die entsprechende Rechnungszeile (ausschließlich in MRM);
-* die Liste der berechneten Kosten je Kostenstelle (wenn eine Kostenstruktur existiert).
+* die Liste der berechneten Kosten je Kostenkategorie (wenn eine Kostenstruktur existiert).
 
 Im unten stehenden Beispiel entspricht die bearbeitete Ausgabenzeile den für den Versand **Sonderangebot Schreibwaren** der Kampagne **Sonderangebot Büromaterialien** berechneten Kosten. Wenn der Versand geöffnet wird, kann im **[!UICONTROL Briefpost]**-Tab der Berechnungsmodus der Ausgabenzeile eingesehen werden.
 
-Als Grundlage der Kostenberechnung für diesen Versand dienen die für den betroffenen Dienstleister ausgewählten Kostenstellen.
+Als Grundlage der Kostenberechnung für diesen Versand dienen die für den betroffenen Dienstleister ausgewählten Kostenkategorien.
 
 ![](assets/s_user_edit_del_supplier_costs.png)
 
-Abhängig von diesen Kostenstellen werden die entsprechenden Kostenstrukturen zur Berechnung der Ausgabenzeilen angewandt. Im vorliegenden Beispiel handelt es sich um folgenden Kostenstrukturen für den betroffenen Dienstleister:
+Abhängig von diesen Kostenkategorien werden die entsprechenden Kostenstrukturen zur Berechnung der Ausgabenzeilen angewandt. Im vorliegenden Beispiel handelt es sich um folgenden Kostenstrukturen für den betroffenen Dienstleister:
 
 ![](assets/s_user_edit_node_supplier_costs.png)
 
 >[!NOTE]
 >
->Kostenstellen und -strukturen werden unter [Erstellen eines Dienstleisters und seiner Kostenstellen](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories) beschrieben.
+>Kostenkategorien und -strukturen werden unter [Erstellen eines Dienstleisters und seiner Kostenkategorien](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories) beschrieben.
 
 ## Entstehung, Berechnung und Anrechnung von Kosten {#cost-commitment--calculation-and-charging}
 
@@ -231,17 +231,17 @@ Im Folgenden wird eine Kampagne mit folgenden Elementen erstellt:
 
 #### Schritt 2: Dienstleister konfigurieren und Kostenstrukturen festlegen {#step-2---configuring-the-service-provider-and-defining-the-cost-structures}
 
-1. Erstellen Sie einen Dienstleister sowie eine Dienstleistungsvorlage mit Kostenstruktur über den Knoten **[!UICONTROL Administration > Kampagnen > Dienstleister]**. Weitere Informationen hierzu finden Sie unter [Erstellen eines Dienstleisters und seiner Kostenstellen](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
+1. Erstellen Sie einen Dienstleister sowie eine Dienstleistungsvorlage mit Kostenstruktur über den Knoten **[!UICONTROL Administration > Kampagnen > Dienstleister]**. Weitere Informationen hierzu finden Sie unter [Erstellen eines Dienstleisters und seiner Kostenkategorien](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
 
-   Erstellen Sie für die Briefpost-Sendungen **[!UICONTROL Briefumschläge]**-Kostenstellen (Typen 114x229 und 162x229), **[!UICONTROL Porto und Versand]** und **[!UICONTROL Farbdruck]** (Typen A3 und A4). Erstellen Sie dann die folgenden Kostenstrukturen:
+   Erstellen Sie für die Briefpost-Sendungen **[!UICONTROL Briefumschläge]**-Kostenkategorien (Typen 114x229 und 162x229), **[!UICONTROL Porto und Versand]** und **[!UICONTROL Farbdruck]** (Typen A3 und A4). Erstellen Sie dann die folgenden Kostenstrukturen:
 
    ![](assets/s_user_cost_mgmt_sample_2.png)
 
-1. Fügen Sie in den Kostenstellen Fixkosten vom Typ &quot;Festpreis&quot; hinzu, deren Betrag in der entsprechenden Kostenstruktur leer ist. (Dieser wird einzeln für jeden Versand angegeben.)
+1. Fügen Sie in den Kostenkategorien Fixkosten vom Typ &quot;Festpreis&quot; hinzu, deren Betrag in der entsprechenden Kostenstruktur leer ist. (Dieser wird einzeln für jeden Versand angegeben.)
 
    ![](assets/s_user_cost_mgmt_sample_5.png)
 
-   Erstellen Sie für die Aufgaben die folgenden zwei Kostenstellen:
+   Erstellen Sie für die Aufgaben die folgenden zwei Kostenkategorien:
 
    * **[!UICONTROL Raumreservierung]** (Typen Kleiner Saal und Großer Saal) mit einer **Pauschale** von 300 und 500 Euro.
 
@@ -271,7 +271,7 @@ Im Folgenden wird eine Kampagne mit folgenden Elementen erstellt:
 
 1. Erstellen einen Kampagnen-Workflow mit einer Abfrage zur Zielgruppenbestimmung. Stellen Sie sicher, dass die Postadresse der ausgewählten Empfänger angegeben ist.
 
-1. Erstellen Sie nun einen Briefpost-Versand und wählen Sie den im zweiten Schritt erstellten Dienstleister aus: Die Kostenstellen werden automatisch angezeigt.
+1. Erstellen Sie nun einen Briefpost-Versand und wählen Sie den im zweiten Schritt erstellten Dienstleister aus: Die Kostenkategorien werden automatisch angezeigt.
 
 1. Überschreiben Sie die Kosten der Briefumschläge und fügen Sie Fixkosten hinzu. Wählen Sie zudem die von diesen Kosten betroffenen Kategorien aus.
 
@@ -279,13 +279,13 @@ Im Folgenden wird eine Kampagne mit folgenden Elementen erstellt:
 
    >[!NOTE]
    >
-   >Wenn eine der Kostenstellen nicht verwendet wird, fallen durch diese keinerlei Ausgaben an.
+   >Wenn eine der Kostenkategorien nicht verwendet wird, fallen durch diese keinerlei Ausgaben an.
 
 1. Starten Sie den gerade erstellten Workflow, um die Analyse zu beginnen und die Kosten zu berechnen.
 
    ![](assets/s_user_cost_mgmt_sample_10.png)
 
-1. Wenn die Budgetvalidierung für diese Kampagne aktiviert wurde, validieren Sie das Budget über das Dashboard. Sie können an dieser Stelle auch die Validierung der Kostenstellen überprüfen.
+1. Wenn die Budgetvalidierung für diese Kampagne aktiviert wurde, validieren Sie das Budget über das Dashboard. Sie können an dieser Stelle auch die Validierung der Kostenkategorien überprüfen.
 
    ![](assets/s_user_cost_mgmt_sample_10b.png)
 
@@ -305,7 +305,7 @@ Zu dieser Kampagne fügen wir die beiden Aufgaben hinzu, für die die Kostenstru
 
 1. Konfigurieren Sie sie wie folgt:
 
-1. Klicken Sie auf **[!UICONTROL Eigenschaften]**, um die Dienstleistung sowie die entsprechende Kostenstelle auszuwählen:
+1. Klicken Sie auf **[!UICONTROL Eigenschaften]**, um die Dienstleistung sowie die entsprechende Kostenkategorie auszuwählen:
 
    ![](assets/s_user_cost_mgmt_sample_14.png)
 

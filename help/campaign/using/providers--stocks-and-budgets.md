@@ -31,9 +31,9 @@ Diverse, in Sendungen zu realisierende Vorgänge werden von Dienstleistern ausge
 
    Siehe [Hinzufügen eines Dienstleisters](#adding-a-service-provider).
 
-1. Definition der Kostenstellen und -strukturen der dem Dienstleister zugeordneten Dienstleistungsvorlagen.
+1. Definition der Kostenkategorien und -strukturen der dem Dienstleister zugeordneten Dienstleistungsvorlagen.
 
-   Siehe [Bestimmung der Kostenstellen](#defining-cost-categories) und [Bestimmung der Kostenstruktur](#defining-the-cost-structure).
+   Siehe [Bestimmung der Kostenkategorien](#defining-cost-categories) und [Bestimmung der Kostenstruktur](#defining-the-cost-structure).
 
 1. Konfiguration der Vorgänge.
 
@@ -43,7 +43,7 @@ Diverse, in Sendungen zu realisierende Vorgänge werden von Dienstleistern ausge
 
    Siehe [Zuordnung von Dienstleistungen zu Kampagnen](#associating-a-service-with-a-campaign).
 
-### Erstellen eines Dienstleisters und seiner Kostenstellen {#creating-a-service-provider-and-its-cost-categories}
+### Erstellen eines Dienstleisters und seiner Kostenkategorien {#creating-a-service-provider-and-its-cost-categories}
 
 #### Hinzufügen eines Dienstleisters {#adding-a-service-provider}
 
@@ -56,15 +56,15 @@ Sie können so viele Dienstleister erstellen, wie für Ihre Sendungen notwendig 
 
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Speichern]**, um ihn der Liste hinzuzufügen.
 
-#### Bestimmung der Kostenstellen {#defining-cost-categories}
+#### Bestimmung der Kostenkategorien {#defining-cost-categories}
 
-Jedem Dienstleister müssen Dienstleistungsvorlagen zugeordnet werden. In diesen Vorlagen werden zunächst die unterschiedlichen Kostenstellen und bei Bedarf die betroffenen Lager angegeben. Daraufhin müssen über die Kostenstrukturen Regeln zur Kostenberechnung für jeden Kostentyp erstellt werden.
+Jedem Dienstleister müssen Dienstleistungsvorlagen zugeordnet werden. In diesen Vorlagen werden zunächst die unterschiedlichen Kostenkategorien und bei Bedarf die betroffenen Lager angegeben. Daraufhin müssen über die Kostenstrukturen Regeln zur Kostenberechnung für jeden Kostentyp erstellt werden.
 
 >[!NOTE]
 >
 >Lesen Sie diesbezüglich auch den Abschnitt [Bestimmung der Kostenstruktur](#defining-the-cost-structure).
 
-Eine Kostenstelle ist eine Einheit, die die für einen bestimmten Versandtyp (E-Mail, Briefpost usw.) oder für eine Aufgabe anfallenden Kosten enthält. Kostenstellen werden in Dienstleistungsvorlagen zusammengefasst, die wiederum Dienstleistern zugeordnet werden. Jeder Dienstleister kann eine oder mehrere Dienstleistungsvorlagen referenzieren.
+Eine Kostenkategorie ist eine Einheit, die die für einen bestimmten Versandtyp (E-Mail, Briefpost usw.) oder für eine Aufgabe anfallenden Kosten enthält. Kostenkategorien werden in Dienstleistungsvorlagen zusammengefasst, die wiederum Dienstleistern zugeordnet werden. Jeder Dienstleister kann eine oder mehrere Dienstleistungsvorlagen referenzieren.
 
 Um eine Dienstleistungsvorlage zu erstellen und ihren Inhalt zu bestimmen, gehen Sie wie folgt vor:
 
@@ -77,7 +77,7 @@ Um eine Dienstleistungsvorlage zu erstellen und ihren Inhalt zu bestimmen, gehen
    ![](assets/s_ncs_user_supplier_node_03.png)
 
    * Geben Sie einen Titel für diese Kostenstelle an und wählen Sie den betreffenden Vorgangstyp aus: Versand nach **[!UICONTROL Briefpost]**, **[!UICONTROL Email]**, **[!UICONTROL Mobile]**, **[!UICONTROL Telefon]** oder **[!UICONTROL Aufgabe]**.
-   * Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**, um die mit dieser Kostenstelle verbunden Kostentypen zu bestimmen.
+   * Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**, um die mit dieser Kostenkategorie verbunden Kostentypen zu bestimmen.
    * Bei Bedarf können Sie jedem Kostentyp eine Lagerposition hinzufügen, um den bestehenden Lagern automatisch die verwendeten Mengen anzurechnen.
 
       >[!NOTE]
@@ -85,7 +85,7 @@ Um eine Dienstleistungsvorlage zu erstellen und ihren Inhalt zu bestimmen, gehen
       >Die Lagerpositionen werden im Knoten **[!UICONTROL Lagerverwaltung]** definiert.\
       >Weitere Informationen finden Sie unter [Verwaltung von Lagern und Lagerergänzungen](#stock-and-order-management).
 
-1. Sie können für diese Kostenstelle einen der Werte als Standard festlegen. Dies vermeidet die Anzeige eines leeren Werts in den Kostenstellen des Dienstleisters. Kreuzen Sie hierzu die Spalte **[!UICONTROL Ausgewählt]** für den betreffenden Kostentyp an:
+1. Sie können für diese Kostenkategorie einen der Werte als Standard festlegen. Dies vermeidet die Anzeige eines leeren Werts in den Kostenkategorien des Dienstleisters. Kreuzen Sie hierzu die Spalte **[!UICONTROL Ausgewählt]** für den betreffenden Kostentyp an:
 
    ![](assets/s_ncs_user_supplier_cost_structure_defaut.png)
 
@@ -95,15 +95,15 @@ Um eine Dienstleistungsvorlage zu erstellen und ihren Inhalt zu bestimmen, gehen
 
 ### Bestimmung der Kostenstruktur {#defining-the-cost-structure}
 
-Eine Kostenstruktur gibt für jede Kostenstelle die anzuwendenden Berechnungsregeln an.
+Eine Kostenstruktur gibt für jede Kostenkategorie die anzuwendenden Berechnungsregeln an.
 
-Klicken Sie auf den Tab **[!UICONTROL Kostenstruktur]**, um die Kostenberechnung für jede Kostenstelle und jeden Kostentyp zu konfigurieren. Klicken Sie auf **[!UICONTROL Hinzufügen]** und erfassen Sie die Kostenstruktur.
+Klicken Sie auf den Tab **[!UICONTROL Kostenstruktur]**, um die Kostenberechnung für jede Kostenkategorie und jeden Kostentyp zu konfigurieren. Klicken Sie auf **[!UICONTROL Hinzufügen]** und erfassen Sie die Kostenstruktur.
 
 ![](assets/s_ncs_user_supplier_node_04.png)
 
-* Um die Kostenstruktur zu erstellen, wählen Sie in den Dropdown-Listen den Nachrichtentyp, die betreffende Kostenstelle sowie den Kostentyp aus, auf den die Berechnungsregel angewandt wird. Der Inhalt dieser Dropdown-Listen übernimmt die im Tab **[!UICONTROL Kostenstellen]** angegebenen Informationen.
+* Um die Kostenstruktur zu erstellen, wählen Sie in den Dropdown-Listen den Nachrichtentyp, die betreffende Kostenkategorie sowie den Kostentyp aus, auf den die Berechnungsregel angewandt wird. Der Inhalt dieser Dropdown-Listen übernimmt die im Tab **[!UICONTROL Kostenkategorien]** angegebenen Informationen.
 
-   Die Kostenstruktur muss benannt werden. Standardmäßig setzt sich ihr Titel wie folgt zusammen: **Kostenstelle - Kostentyp**.
+   Die Kostenstruktur muss benannt werden. Standardmäßig setzt sich ihr Titel wie folgt zusammen: **Kostenkategorie - Kostentyp**.
 
    Dieser kann jedoch angepasst werden: Erfassen Sie den gewünschten Wert direkt im Feld **[!UICONTROL Titel]**.
 
@@ -178,7 +178,7 @@ Bei Auswahl eines Dienstes werden die dem Versandtyp entsprechenden Kostenstelle
 
 Über die Spalte **[!UICONTROL Zu belastender Betrag]** können Kosten für diese Stelle im Kontext des betreffenden Versands oder der Aufgabe hinzugefügt werden.
 
-Sie können die Auswahl eines Kostentyps bei der Bestimmung der Kostenstellen in einem Versand obligatorisch machen: Aktivieren Sie hierzu die Option **[!UICONTROL Auswahl eines Werts aus der Kostentypliste erforderlich]**.
+Sie können die Auswahl eines Kostentyps bei der Bestimmung der Kostenkategorien in einem Versand obligatorisch machen: Aktivieren Sie hierzu die Option **[!UICONTROL Auswahl eines Werts aus der Kostentypliste erforderlich]**.
 
 ![](assets/s_ncs_user_supplier_cost_structure_select.png)
 
@@ -243,9 +243,9 @@ Klicken Sie auf die Schaltfläche **[!UICONTROL Erstellen]**, um die Parameter d
 
 * Geben Sie im Feld **[!UICONTROL Meldebestand]** die Schwelle an, bei der die Benutzer von einer notwendigen Lagerergänzung benachrichtigt werden sollen. Mit Erreichen des Meldebestands wird im Validierungsfenster der Sendungen, die auf dieses Lager zugreifen, ein Warnhinweis angezeigt.
 
-#### Lagerpositionen zu Kostenstellen zuordnen {#associating-a-stock-with-cost-categories}
+#### Lagerpositionen zu Kostenkategorien zuordnen {#associating-a-stock-with-cost-categories}
 
-Folgendes Beispiel zeigt, wie Lagerpositionen in Dienstleistungen über die Kostenstellen zugeordnet werden können:
+Folgendes Beispiel zeigt, wie Lagerpositionen in Dienstleistungen über die Kostenkategorien zugeordnet werden können:
 
 ![](assets/s_ncs_user_stocks_select_from_supplier.png)
 
