@@ -101,7 +101,7 @@ Die Verwendung einer benutzerdefinierten Empfängertabelle bietet folgende Vorte
 
 * **Datenspeicherort** - Wenn sich Daten in einer externen vorhandenen Marketing-Datenbank befinden, kann es zu viel Aufwand erfordern, die native Empfängertabelle zu verwenden. Die Erstellung einer neuen Struktur auf der Grundlage einer vorhandenen Struktur ist einfacher.
 
-* **Einfache Migration** - Es ist keine Wartung erforderlich, um sicherzustellen, dass alle Erweiterungen nach der Aktualisierung weiterhin gültig sind.
+* **Einfache Migration** - Es ist keine Wartung erforderlich, um zu überprüfen, ob alle Erweiterungen nach der Aktualisierung weiterhin gültig sind.
 
 >[!IMPORTANT]
 >

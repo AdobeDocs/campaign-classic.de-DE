@@ -86,4 +86,4 @@ Die Power Booster- und Power Cluster-Optionen können von den folgenden Anwendun
 
 * Eine Ausführungsinstanz muss einem Dienst zugewiesen sein. Sie können kein Paket für einen Dienst installieren, für den Sie sich nicht angemeldet haben. Wenn Sie beispielsweise die **Power Booster** -Option für die **Message Center** -Dienst, dürfen Sie nur die **[!UICONTROL Ausführung von Transaktionsnachrichten]** auf der dedizierten Ausführungsinstanz. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
 * Da dedizierte Instanzen (oder Cluster) Adobe Campaign-Instanzen sind, sind die Empfehlungen mit denen einer Hauptinstanz identisch. Weitere Informationen hierzu finden Sie unter [dieses Dokuments](../../production/using/foreword.md).
-* Wenden Sie sich an Adobe Campaign Professional Services, um die Instanz in einer Datenbank/Hardwarekomponente ordnungsgemäß zu konfigurieren.
+* Wenden Sie sich an Adobe Campaign Professional Services, um die Instanz in einer Datenbank/Hardwarekomponenten ordnungsgemäß zu konfigurieren.

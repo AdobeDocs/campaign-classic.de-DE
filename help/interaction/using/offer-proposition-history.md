@@ -13,11 +13,11 @@ ht-degree: 100%
 
 ---
 
-# Angebotsverlauf{#offer-proposition-history}
+# Angebotsvorschlagsverlauf{#offer-proposition-history}
 
 ![](../../assets/v7-only.svg)
 
-Nach Unterbreitung von Angeboten haben Sie die Möglichkeit, Verlauf und Ergebnisse zu verfolgen.
+Nach der Unterbreitung von Angeboten haben Sie die Möglichkeit, den Verlauf der Unterbreitung einzusehen.
 
 >[!NOTE]
 >

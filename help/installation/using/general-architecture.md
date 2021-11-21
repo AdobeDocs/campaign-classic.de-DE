@@ -49,7 +49,7 @@ Der Zugriff auf die Anwendung ist je nach den Anforderungen der Benutzer auf unt
 
 * **Rich-Client**: Die Hauptbenutzeroberfläche des Programms ist ein Rich-Client, d. h. eine native Anwendung (Windows), die ausschließlich mit Standardinternetprotokollen (SOAP, HTTP usw.) mit dem Adobe Campaign-Anwendungsserver kommuniziert. Diese Konsole bietet eine hervorragende Benutzerfreundlichkeit für die Produktivität, verwendet sehr wenig Bandbreite (durch die Verwendung eines lokalen Caches) und ist für eine einfache Implementierung konzipiert. Diese Konsole kann über einen Internetbrowser bereitgestellt werden, kann automatisch aktualisiert werden und erfordert keine spezifische Netzwerkkonfiguration, da sie nur HTTP(S)-Traffic generiert.
 * **Thin Client**: Bestimmte Anwendungsbereiche können über einen einfachen Webbrowser über eine HTML-Benutzeroberfläche aufgerufen werden. Dazu gehören das Berichtsmodul, Etappen der Versandvalidierung, Funktionen des Moduls Dezentrales Marketing (zentrales/lokales), Instanzüberwachung usw. Auf diese Weise können Adobe Campaign-Funktionen in ein Intranet oder ein Extranet integriert werden.
-* **Integration über APIs**: In bestimmten Fällen kann das System mithilfe der Web-Services-APIs, die über das SOAP-Protokoll verfügbar gemacht werden, aus einer externen Anwendung aufgerufen werden.
+* **Integration über APIs**: In bestimmten Fällen kann das System mithilfe der Web-Services-APIs, die über das SOAP-Protokoll verfügbar gemacht werden, über eine externe Anwendung aufgerufen werden.
 
 ## Logische Anwendungsschicht {#logical-application-layer}
 

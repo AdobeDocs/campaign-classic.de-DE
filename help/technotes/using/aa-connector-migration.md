@@ -4,7 +4,7 @@ title: Migrieren zum Adobe Analytics Connector
 description: Häufig gestellte Fragen zum Campaign und Analytics Connector
 exl-id: 5bf61654-3d68-4560-a93f-7a768a2c5be4
 source-git-commit: 18b31ae504e1f1d13980bdf38925b38279b3be8c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '855'
 ht-degree: 100%
 
@@ -36,7 +36,7 @@ Eine neue Integration zwischen Campaign Classic v7 und Adobe Analytics ist jetzt
 
 * Die integrierten technischen Workflows und ihr Verhalten bleiben unverändert. Es wurden nur die Backend-APIs geändert, die von den Workflows zum Push/Pull von Daten zu/von Adobe Analytics verwendet werden.
 
-* Beachten Sie, dass der `nlserver`-Prozess mit dem Benutzer des technischen IMS-Kontos konfiguriert werden muss, damit der neue Connector funktioniert. Diese Änderung muss von Adobe vorgenommen werden. Wenden Sie sich zur Implementierung an die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+* Beachten Sie, dass der `nlserver`-Prozess mit dem Benutzer des technischen IMS-Kontos konfiguriert werden muss, damit der neue Connector funktioniert. Diese Änderung muss von Adobe vorgenommen werden. Wenden Sie sich zur Implementierung an die [Adobe-Kundenunterstützung](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 * Wenn Sie Adobe Genesis-APIs in benutzerdefinierten Workflows zum Abrufen und Übertragen (Pull/Push) der Daten aus Adobe Analytics verwendet haben, müssen Sie jetzt die neuen Adobe Analytics 1.4/2.0-APIs verwenden. [Weitere Informationen](https://adobeexchangeec.zendesk.com/hc/de-de/articles/360047148832-Replacements-for-Data-Connector-API-calls)
 
@@ -82,7 +82,7 @@ Die Integration beruht für die tägliche Verwendung auf Daten aus dem Token fü
 
 Wenn Details einer Analytics-Komponente abgefragt werden (z. B. Metriken/Dimensionen/Segmente/Report Suites), gibt die API diese Komponenten nicht im Ergebnis zurück (was so aussehen kann, als würde etwas auf der Analytics-Seite gelöscht oder wäre nicht vorhanden). Die Analytics-API lehnt diese Anfragen ab und gibt eine Fehlermeldung zurück.
 
-Die Lösung besteht darin, das **Produktprofil** im Analytics-Benutzer-Kontext des technischen Benutzer-Tokens mit den neu erstellten/fehlenden Komponenten zu aktualisieren, indem diese Komponenten in der [Adobe Admin Console](https://adminconsole.adobe.com/) hinzugefügt werden. Weitere Informationen erhalten Sie bei der [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+Die Lösung besteht darin, das **Produktprofil** im Analytics-Benutzer-Kontext des technischen Benutzer-Tokens mit den neu erstellten/fehlenden Komponenten zu aktualisieren, indem diese Komponenten in der [Adobe Admin Console](https://adminconsole.adobe.com/) hinzugefügt werden. Weitere Informationen erhalten Sie bei der [Adobe-Kundenunterstützung](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 ## Nützliche Links
 

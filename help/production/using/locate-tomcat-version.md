@@ -57,7 +57,7 @@ Beispiel: *ServerInfo.properties* -Datei für Adobe Campaign enthält die folgen
 
 *server.built=MM DD YYY HH:MM:SS*
 
-Sobald Sie die exakte Version von Tomcat ermitteln können, die in einer bestimmten Instanz verwendet wird, kann es Ihnen bei der Fehlerbehebung von Tomcat-bezogenen Problemen helfen.
+Sobald Sie die genaue Version von Tomcat ermitteln können, die in einer bestimmten Instanz verwendet wird, kann es Ihnen bei der Fehlerbehebung von Tomcat-bezogenen Problemen helfen.
 
 >[!NOTE]
 >

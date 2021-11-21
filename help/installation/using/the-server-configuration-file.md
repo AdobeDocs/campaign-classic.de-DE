@@ -9,7 +9,7 @@ exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
 source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
 source-wordcount: '7969'
-ht-degree: 31%
+ht-degree: 39%
 
 ---
 
@@ -476,7 +476,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **dataStore > preprocess
    <td> String <br /> </td> 
   </tr> 
   <tr> 
-   <td> Titel<br /> </td> 
+   <td> label<br /> </td> 
    <td> Titel der Befehlszeile<br /> </td> 
    <td> String <br /> </td> 
   </tr> 
@@ -916,7 +916,7 @@ Weitere Informationen finden Sie unter [Proxy-Verbindungskonfiguration](file-res
  </thead> 
  <tbody> 
   <tr> 
-   <td> address<br /> </td> 
+   <td> Adresse<br /> </td> 
    <td> Adresse des Proxy-Servers<br /> </td> 
    <td> String <br /> </td> 
   </tr> 
@@ -983,7 +983,7 @@ Weitere Informationen finden Sie unter [Schutz der ausgehenden Verbindung](../..
  <tbody> 
   <tr> 
    <td> Aktion<br /> </td> 
-   <td> Standardaktion, wenn die URL nicht in der Liste der zulässigen Werte (Auflistung) enthalten ist. Mögliche Werte sind "ignore"(autorisieren ohne Warnmeldung, dies erfordert die Deaktivierung des Schutzes), "warn"(autorisieren und geben Sie eine Warnmeldung) und "deny"(verbieten Sie den Zugriff auf die URL).<br /> </td> 
+   <td> Standardaktion, wenn die URL nicht in der Liste der zulässigen Werte (Auflistung) enthalten ist. Mögliche Werte sind "ignore"(autorisieren ohne Warnmeldung, dies erfordert die Deaktivierung des Schutzes), "warn"(erlauben und geben Sie eine Warnmeldung) und "deny"(verbieten Sie den Zugriff auf die URL).<br /> </td> 
    <td> String <br /> </td> 
    <td> Ablehnen<br /> </td> 
   </tr> 
@@ -1094,7 +1094,7 @@ Weitere Informationen finden Sie unter [Aktivieren der E-Mail-Archivierung (vor 
  <tbody> 
   <tr> 
    <td> acquisitionLimit<br /> </td> 
-   <td> Anzahl der gleichzeitig zu verarbeitenden EMLs<br /> </td> 
+   <td> Anzahl gleichzeitig zu verarbeitender EML<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 100<br /> </td> 
   </tr> 
@@ -1154,7 +1154,7 @@ Weitere Informationen finden Sie unter [Aktivieren der E-Mail-Archivierung (vor 
   </tr> 
   <tr> 
    <td> pollDelay<br /> </td> 
-   <td> Verzögerung (in Sekunden) zwischen jedem Update-Ereignis.<br /> </td> 
+   <td> Intervall in Sekunden zwischen 2 Archivierungsvorgängen.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 60<br /> </td> 
   </tr> 
@@ -1166,7 +1166,7 @@ Weitere Informationen finden Sie unter [Aktivieren der E-Mail-Archivierung (vor 
   </tr> 
   <tr> 
    <td> purgeArchivesDelay<br /> </td> 
-   <td> Anzahl der Tage, bevor nicht verarbeitete E-Mails gelöscht werden.<br /> </td> 
+   <td> Anzahl Tage vor der Löschung der archivierten E-Mails.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 7<br /> </td> 
   </tr> 
@@ -1429,7 +1429,7 @@ Weitere Informationen finden Sie unter [Interaction - Datenpuffer](../../install
   </tr> 
   <tr> 
    <td> nextOffersSize<br /> </td> 
-   <td> Maximale Anzahl an geeigneten Angeboten, die direkt nach Vorschlägen sortiert und für Statistiken gespeichert werden.<br /> </td> 
+   <td> Maximale Anzahl an geeigneten Angeboten, die direkt im Anschluss an die Vorschläge kommen; zu statistischen Zwecken zu speichern.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 0<br /> </td> 
   </tr> 
@@ -1447,7 +1447,7 @@ Weitere Informationen finden Sie unter [Interaction - Datenpuffer](../../install
   </tr> 
   <tr> 
    <td> statsPeriod<br /> </td> 
-   <td> Aggregationsdauer in Sekunden für die Zeitstatistiken der Antwort. 0 bedeutet, dass die statistische Speicherung deaktiviert wurde.<br /> </td> 
+   <td> Aggregationsdauer in Sekunden für die Antwortzeit-Statistiken. 0 bedeutet, dass die statistische Speicherung deaktiviert wurde.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
@@ -1518,7 +1518,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **mta** Knoten. Dies ist
   </tr> 
   <tr> 
    <td> logEmailErrors<br /> </td> 
-   <td> Erstellen Sie Fehlerstatistiken und speichern Sie sie in der Datenbank.<br /> </td> 
+   <td> Erzeugt Fehlerstatistiken und speichert sie in der Datenbank<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> true<br /> </td> 
   </tr> 
@@ -1530,7 +1530,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **mta** Knoten. Dies ist
   </tr> 
   <tr> 
    <td> maxMemoryMb<br /> </td> 
-   <td> Maximale Speichergröße (in MB), die ein MTA-Prozess verwenden kann. Über dieser Grenze hinaus wird der Prozess neu gestartet, sodass der verwendete Speicher auf das System freigegeben wird.<br /> </td> 
+   <td> Maximale Speicherkapazität in Megabyte, die ein MTA-Prozess verbrauchen darf. Bei Überschreiten muss der Vorgang gestoppt werden, um die Speicherkapazität freizugeben.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1024<br /> </td> 
   </tr> 
@@ -1548,7 +1548,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **mta** Knoten. Dies ist
   </tr> 
   <tr> 
    <td> minConnectionsToLog<br /> </td> 
-   <td> Verbindungsschwellenwert zur Berücksichtigung. Fehlerstatistiken werden für einen bestimmten Pfad nicht generiert, wenn die Gesamtanzahl der Verbindungen für den von errorPeriodSec angegebenen Zeitraum streng unter dem Schwellenwert liegt.<br /> </td> 
+   <td> Zu berücksichtigende Verbindungsschwelle. Fehlerstatistiken werden für einen bestimmten Pfad nicht erzeugt, wenn die Gesamtzahl an Verbindungen seit der von errorPeriodSec bestimmten Dauer streng kleiner als diese Schwelle ist.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 100<br /> </td> 
   </tr> 
@@ -1560,7 +1560,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **mta** Knoten. Dies ist
   </tr> 
   <tr> 
    <td> minMessagesToLog<br /> </td> 
-   <td> Meldeschwelle, die berücksichtigt werden soll. Fehlerstatistiken werden für einen bestimmten Pfad nicht generiert, wenn die Gesamtzahl der gesendeten Nachrichten für den von errorPeriodSec angegebenen Zeitraum streng unter dem Schwellenwert liegt.<br /> </td> 
+   <td> Zu berücksichtigende Nachrichtenschwelle. Fehlerstatistiken werden für einen bestimmten Pfad nicht erzeugt, wenn die Gesamtzahl an gesendeten Nachrichten seit der von errorPeriodSec bestimmten Dauer streng kleiner als diese Schwelle ist.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1000<br /> </td> 
   </tr> 
@@ -1674,7 +1674,7 @@ Im **cache** Knoten konfigurieren Sie die folgenden Parameter. Dies ist die Konf
   </tr> 
   <tr> 
    <td> maxSizeOnDiskMb<br /> </td> 
-   <td> Maximale Cachegröße (MB).<br /> </td> 
+   <td> Maximale Größe des Cache-Speichers (MB)<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1024<br /> </td> 
   </tr> 
@@ -1744,25 +1744,25 @@ Weitere Informationen finden Sie in diesem Abschnitt [Abschnitt](../../installat
   </tr> 
   <tr> 
    <td> dataBaseRetryDelaySec<br /> </td> 
-   <td> Wartezeit nach fehlgeschlagener Verbindung mit der Datenbank Ein Fehler bei der Datenbankverbindung wird normalerweise vom Datenbankserver selbst verursacht. Der Server kann beispielsweise auch zu Wartungszwecken angehalten werden. Der Parameter DataBaseRetryDelay definiert die Dauer zwischen zwei Verbindungsversuchen im Fall eines Fehlers der Datenbankverbindung.<br /> </td> 
+   <td> Wartezeit nach fehlgeschlagener Verbindung mit der Datenbank Sollte die Verbindung mit der Datenbank fehlschlagen, handelt es sich zumeist um ein Problem mit dem Datenbankserver. Er kann z. B. wegen Instandhaltungsmaßnahmen gestoppt worden sein. Der Parameter DataBaseRetryDelay legt die Wartezeit in Sekunden fest, bevor ein erneuter Anmeldeversuch unternommen wird.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 60<br /> </td> 
   </tr> 
   <tr> 
    <td> domainKeysReloadPeriodSec<br /> </td> 
-   <td> Gültigkeitszeitraum für den Cache privater Schlüssel (DomainKeys). Die für die Signatur gemäß der DomainKeys-Empfehlung (http://antispam.yahoo.com/domainkeys) verwendeten privaten Schlüssel werden in der Datenbank in Form von Optionen gespeichert. Der Parameter domainKeysReloadPeriodSec gibt an, wie lange der MTA diese Schlüssel im Cache speichern darf (in Sekunden). Nach Ablauf dieser Dauer müssen alle Schlüssel erneut aus der Datenbank geladen werden<br /> </td> 
+   <td> Gültigkeit des Cache-Speichers der privaten Schlüssel (DomainKeys). Die für die Signatur gemäß der DomainKeys-Empfehlung (http://antispam.yahoo.com/domainkeys) verwendeten privaten Schlüssel werden in der Datenbank in Form von Optionen gespeichert. Der Parameter domainKeysReloadPeriodSec gibt an, wie lange der MTA diese Schlüssel im Cache speichern darf (in Sekunden). Nach Ablauf dieser Dauer müssen alle Schlüssel erneut aus der Datenbank geladen werden<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
   <tr> 
    <td> maxSpareServers<br /> </td> 
-   <td> Maximale Anzahl an untergeordneten Servern Stellt die maximale Anzahl der ausgeführten Server dar. Es wird empfohlen, diese Anzahl auf eine optimale Weise zu begrenzen, die mit den Serverspeicherressourcen kompatibel ist. Dies kann während eines Versands überprüft werden. Der verwendete Speicher darf nicht mehr als ein Drittel des verfügbaren physischen Speichers betragen. Andernfalls wird der Swap verwendet. Siehe <a href="../../installation/using/configuring-campaign-server.md#mta-child-processes" target="_blank">Untergeordnete MTA-Prozesse</a>.<br /> </td> 
+   <td> Maximale Anzahl an untergeordneten Servern Bezeichnet die maximale Anzahl an laufenden Servern. Es ist nicht empfehlenswert, ohne wirklichen Bedarf eine zu große Anzahl festzulegen, da dies unnötig Speicherkapazität beansprucht. Durch Analyse der Speicherkapazität während eines Versands können Sie feststellen, ob der angegebene Wert dem Bedarf entspricht. Die beanspruchte Kapazität darf nie ein Drittel des insgesamt verfügbaren Speichers Ihres Geräts übersteigen, da andernfalls Ihr SWAP einbezogen wird. Siehe <a href="../../installation/using/configuring-campaign-server.md#mta-child-processes" target="_blank">Untergeordnete MTA-Prozesse</a>.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 2<br /> </td> 
   </tr> 
   <tr> 
    <td> minSpareServers<br /> </td> 
-   <td> Minimale Anzahl an untergeordneten Servern Der MTA versucht, mindestens diese Anzahl von Servern auszuführen. Wenn weniger vorhanden ist, werden alle Sekunden neue Server neu gestartet, bis dieser Wert erreicht ist.<br /> </td> 
+   <td> Minimale Anzahl an untergeordneten Servern Der MTA versucht, mindestens die verfügbaren Server im Betrieb zu halten. Wenn weniger Server laufen, werden neue im Rhythmus von einem Server pro Sekunde gestartet, bis die angegebene Anzahl erreicht ist.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 0<br /> </td> 
   </tr> 
@@ -1805,7 +1805,7 @@ Weitere Informationen finden Sie unter [Optimierung des E-Mail-Versands](../../i
   </tr> 
   <tr> 
    <td> maxAgeSec<br /> </td> 
-   <td> Maximale Dauer der Nachrichtenaufbewahrung. Wenn eine vorbereitete Nachricht aufgrund der Drosselung nicht gesendet werden konnte oder nicht in der Lage war, eine Verbindung zum MTA der Zielgruppe herzustellen, wird die Nachricht abgebrochen und beim nächsten erneuten Versuch verarbeitet.<br /> </td> 
+   <td> Maximale Rückhaltedauer einer Nachricht. Wenn eine vorbereitete Nachricht aufgrund der Flusskontrolle oder von MTA-Verbindungsproblemen nicht gesendet werden kann, wird sie bis zum nächsten Sendeversuch ausgesetzt.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
@@ -1841,13 +1841,13 @@ Weitere Informationen finden Sie unter [Optimierung des E-Mail-Versands](../../i
   </tr> 
   <tr> 
    <td> startWithFirstMX<br /> </td> 
-   <td> Beginnen Sie immer mit der höchsten Priorität MX.<br /> </td> 
+   <td> Immer mit dem prioritären MX beginnen.<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> timeToLive<br /> </td> 
-   <td> Maximale Anzahl aufeinander folgender Versuche bei Wiederaufnahme.<br /> </td> 
+   <td> Maximale Anzahl an aufeinanderfolgenden Versuchen<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 48<br /> </td> 
   </tr> 
@@ -1868,13 +1868,13 @@ Im **mta > child > smtp** Knoten konfigurieren Sie die folgenden Parameter. Dies
  <tbody> 
   <tr> 
    <td> enableTLS<br /> </td> 
-   <td> Aktiviert den Versand von E-Mails im abgesicherten Modus (STARTTLS/SMTPS), wenn er vom Remote-Server unterstützt wird.<br /> </td> 
+   <td> Aktiviert den gesicherten E-Mail-Versand (STARTTLS/SMTPS), wenn vom Remote-Server unterstützt<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> idleSessionTimeoutSec<br /> </td> 
-   <td> Timeout inaktiver Sitzungen Dieser Parameter wird nur verwendet, wenn die Sitzung zum Senden mehrerer Nachrichten an eine bestimmte Domäne wiederverwendet wird. Wenn der MTA die Nachrichtenübertragung abgeschlossen hat, wird die verwendete SMTP-Sitzung nicht systematisch geschlossen. Wenn eine Nachricht für dieselbe Domain gesendet werden kann, wird dieselbe SMTP-Sitzung wiederverwendet, weshalb die Sitzung nicht automatisch geschlossen wird. Mit dem Parameter IdleSessionTimeout können Sie den Zeitraum definieren, während dem eine SMTP-Sitzung aktiv bleiben kann, um auf eine andere Nachricht zu warten. Sobald die Dauer abgelaufen ist, wird die Sitzung automatisch geschlossen.<br /> </td> 
+   <td> Timeout inaktiver Sitzungen Dieser Parameter wird nur verwendet, wenn eine Sitzung zur Übertragung verschiedener Nachrichten an eine Domain genutzt wird. Die vom MTA verwendete SMTP-Sitzung wird nach erfolgter Nachrichtenübermittlung nicht automatisch geschlossen. Wenn eine Nachricht für dieselbe Domain versandfertig ist, wird dieselbe SMTP-Sitzung wiederverwendet und der MTA schließt die Sitzung nicht. Der Parameter IdleSessionTimeout gibt an, wie lange eine SMTP-Sitzung in Erwartung einer weiteren Nachrichtenübermittlung aktiv bleiben kann. Läuft die festgelegte Dauer ohne erneute Übertragung ab, wird die Sitzung automatisch geschlossen.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 5<br /> </td> 
   </tr> 
@@ -1934,7 +1934,7 @@ Weitere Informationen finden Sie unter [Liste der zu verwendenden IP-Adressen](.
  <tbody> 
   <tr> 
    <td> Adresse<br /> </td> 
-   <td> Zugehörige physische Adresse. z: "192.168.0.1"<br /> </td> 
+   <td> Zugeordnete physische Adresse, z. B. '192.168.0.1'<br /> </td> 
    <td> String <br /> </td> 
   </tr> 
   <tr> 
@@ -2051,13 +2051,13 @@ Im Folgenden finden Sie die verschiedenen Parameter der **pipelined** Knoten. Di
   </tr> 
   <tr> 
    <td> authGatewayEndpoint<br /> </td> 
-   <td> URL zum Abrufen eines Gateway-Tokens.<br /> </td> 
+   <td> URL für den Erhalt eines Gateway-Tokens.<br /> </td> 
    <td> String <br /> </td> 
    <td> "https://api.omniture.com' <br /> </td> 
   </tr> 
   <tr> 
    <td> authPrivateKey<br /> </td> 
-   <td> Privater Schlüssel zum Abrufen von Token (in AES mit der XtkKey-Option verschlüsselt).<br /> </td> 
+   <td> Privater Schlüssel für den Erhalt der Tokens (mit AES verschlüsselt, XtkKey-Option).<br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -2075,7 +2075,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **pipelined** Knoten. Di
   </tr> 
   <tr> 
    <td> discoverPipelineEndpoint<br /> </td> 
-   <td> URL zur Erkennung der Pipeline Services-URL.<br /> </td> 
+   <td> URL zum Auffinden der Pipeline-Services-URL.<br /> </td> 
    <td> String <br /> </td> 
    <td> "https://producer-pipeline-pnw.adobe.net'<br /> </td> 
   </tr> 
@@ -2117,7 +2117,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **pipelined** Knoten. Di
   </tr> 
   <tr> 
    <td> pointerFlushMessageCount<br /> </td> 
-   <td> Der Zeiger wird jedes Mal, wenn diese Anzahl von Nachrichten verarbeitet wird, in der Datenbank gespeichert.<br /> </td> 
+   <td> Zeiger wird bei Erreichen der angegebenen Nachrichtenanzahl in der Datenbank gespeichert.<br /> </td> 
    <td> <br /> </td> 
    <td> 1000<br /> </td> 
   </tr> 
@@ -2135,7 +2135,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **pipelined** Knoten. Di
   </tr> 
   <tr> 
    <td> processingJSThreads<br /> </td> 
-   <td> Anzahl der Threads für die Ereignisverarbeitung mit einem personalisierten JavaScript-Connector.<br /> </td> 
+   <td> Anzahl an Threads für die Verarbeitung von Ereignissen mit einem personalisierten JavaScript-Connector<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 4<br /> </td> 
   </tr> 
@@ -2147,7 +2147,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **pipelined** Knoten. Di
   </tr> 
   <tr> 
    <td> retryPeriodSec<br /> </td> 
-   <td> Verzögerung zwischen der Verarbeitung bei einem Fehler.<br /> </td> 
+   <td> Intervall zwischen Verarbeitungsversuchen im Fall eines Fehlschlags.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 30<br /> </td> 
   </tr> 
@@ -2236,7 +2236,7 @@ Weitere Informationen finden Sie unter [Sicherheitszonen definieren](../../insta
    <td> false<br /> </td> 
   </tr> 
   <tr> 
-   <td> Titel<br /> </td> 
+   <td> label<br /> </td> 
    <td> Titel<br /> </td> 
    <td> String <br /> </td> 
    <td> NewLabel()<br /> </td> 
@@ -2304,7 +2304,7 @@ Weitere Informationen finden Sie unter [Sicherheitszonen definieren](../../insta
  </thead> 
  <tbody> 
   <tr> 
-   <td> Titel<br /> </td> 
+   <td> label<br /> </td> 
    <td> Titel<br /> </td> 
    <td> String <br /> </td> 
    <td> NewLabel()<br /> </td> 
@@ -2358,13 +2358,13 @@ Im Folgenden finden Sie die verschiedenen Parameter der **sms** Knoten. Dies ist
   </tr> 
   <tr> 
    <td> dataRetentionDays<br /> </td> 
-   <td> Maximale Anzahl der Tage, in denen Dateien vom SMPP-Connector gespeichert werden.<br /> </td> 
+   <td> Maximale Rückhaltedauer der Arbeitsdateien des SMPP-Connectors (in Tagen)<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 60<br /> </td> 
   </tr> 
   <tr> 
    <td> dataSizeMo<br /> </td> 
-   <td> Maximale Größe der SMPP-Arbeitsdateien in MB.<br /> </td> 
+   <td> Maximale Größe in MB der SMPP-Arbeitsdateien<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 512<br /> </td> 
   </tr> 
@@ -2424,7 +2424,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **sms** Knoten. Dies ist
   </tr> 
   <tr> 
    <td> timeout<br /> </td> 
-   <td> Zeitüberschreitung bei der Kommunikation mit dem SMS-Gateway.<br /> </td> 
+   <td> Kommunikations-Timeout mit dem SMS-Gateway<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 300<br /> </td> 
   </tr> 
@@ -2447,7 +2447,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **sms > netsize** Knoten
  <tbody> 
   <tr> 
    <td> netsizeConnectionTimeout<br /> </td> 
-   <td> Zeitüberschreitung bei der Herstellung einer Verbindung mit Netsize in Sekunden.<br /> </td> 
+   <td> Timeout (in Sekunden) beim Netsize-Verbindungsaufbau.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 30<br /> </td> 
   </tr> 
@@ -3032,7 +3032,7 @@ Die **web > jsp > classpath** -Knoten enthält die Liste aller Klassenpfade, die
 
 ### Relais {#relay-2}
 
-Im Folgenden finden Sie die verschiedenen Parameter der **web > relay** Knoten. Dies ist die Konfiguration des Relais für HTTP-Anfragen zwischen zwei Zonen.
+Im Folgenden finden Sie die verschiedenen Parameter der **web > relay** Knoten. Dies ist die Konfiguration des Relais für HTTP-Anfragen zwischen zwei Bereichen.
 
 Weitere Informationen finden Sie in diesem Abschnitt [Abschnitt](../../installation/using/deploying-an-instance.md#synchronizing-public-resources).
 
@@ -3125,7 +3125,7 @@ Weitere Informationen finden Sie unter [Dynamische Seitensicherheit und Relais](
   </tr> 
   <tr> 
    <td> httpAllowed<br /> </td> 
-   <td> HTTP-Zugriff unabhängig von der Sicherheitszone (wie webApps) autorisiert. <br /> </td> 
+   <td> HTTP-Zugriff unabhängig von der Sicherheitszone zulässig (wie bei WebApps). <br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -3301,7 +3301,7 @@ Weitere Informationen finden Sie in diesem Abschnitt [Abschnitt](../../installat
   </tr> 
   <tr> 
    <td> databaseId<br /> </td> 
-   <td> Datenbank-ID, die mit der Tracking-Instanz verknüpft ist.<br /> </td> 
+   <td> Kennung der der Trackinginstanz zugeordneten Datenbank.<br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -3331,7 +3331,7 @@ Weitere Informationen finden Sie in diesem Abschnitt [Abschnitt](../../installat
   </tr> 
   <tr> 
    <td> startRedirectionInModule<br /> </td> 
-   <td> Starten Sie den Weiterleitungsdienst im Modulmodus.<br /> </td> 
+   <td> Startet den Weiterleitungsdienst im Modulmodus<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> true<br /> </td> 
   </tr> 

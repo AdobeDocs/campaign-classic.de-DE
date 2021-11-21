@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Production troubleshooting
+title: Fehlerbehebung bei der Produktion
 description: Entdecken Sie die Verfahren zur Fehlerbehebung bei der Produktion in Bezug auf Adobe Campaign-Konfiguration, Überwachung, Upgrade-Prozess, Datenverarbeitung und Datenbankwartung.
 audience: production
 content-type: reference
@@ -17,21 +17,21 @@ ht-degree: 20%
 
 ![](../../assets/v7-only.svg)
 
-In diesem Abschnitt finden Sie Schritte zur Fehlerbehebung bei allgemeinen Adobe Campaign-Produktionsproblemen, wie z. B. Versand- und Workflow-Ausführung, Überwachung, Datenbankwartung, Verbindung usw.
+In diesem Abschnitt finden Sie Schritte zur Fehlerbehebung bei allgemeinen Adobe Campaign-Produktionsproblemen wie Versand- und Workflow-Ausführung, Überwachung, Datenbankwartung, Verbindung usw.
 
 ## Allgemeine Probleme {#common-and-general-issues}
 
-* This [page](../../production/using/modules-and-frequent-issues.md) presents the most frequent issues encountered for the listed modules.
+* Diese [page](../../production/using/modules-and-frequent-issues.md) enthält die häufigsten Probleme, die bei den aufgeführten Modulen aufgetreten sind.
 * Diese [page](../../production/using/workflow-execution.md) listet allgemeine Verfahren zur Fehlerbehebung auf, die Sie bei Problemen mit der Workflow-Ausführung anwenden sollten.
 * Diese [page](../../production/using/lost-password.md) gibt an, wie ein verlorenes Kennwort geändert oder wiederhergestellt werden kann.
 * Diese [page](../../production/using/console-update.md) beschreibt, wie die Aktualisierungsanforderung der Konsole reaktiviert werden kann, wenn Sie die entsprechende Option deaktiviert haben.
 
 ## Fehlerbehebung beim Versand {#delivery-troubleshooting}
 
-Specific actions can be performed when having troubles with deliveries:
+Bei Problemen mit Sendungen können spezifische Aktionen durchgeführt werden:
 * [Probleme mit der Zustellbarkeit](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
 * [Probleme mit der Bildanzeige](../../production/using/image-display-issues.md)
-* [Image missing](../../production/using/images-missing.md)
+* [Bild fehlt](../../production/using/images-missing.md)
 * [Probleme mit temporären Dateien](../../production/using/temporary-files.md) (*Nur On-Premise-Hosting-Modelle*)
 
 **Verwandtes Thema**:
@@ -43,7 +43,7 @@ Specific actions can be performed when having troubles with deliveries:
 Im Folgenden finden Sie einige Tipps zur Verbesserung Ihres Erlebnisses mit Protokollen:
 
 * [Protokollgenauigkeit](../../production/using/log-precision.md)
-* [Tracking log issues](../../production/using/tracking-logs-issues.md)
+* [Probleme mit Trackinglogs](../../production/using/tracking-logs-issues.md)
 
 ## Probleme in Bezug auf die Datenbank {#database-issues}
 
@@ -61,7 +61,7 @@ Falls Verbindungsprobleme auftreten, finden Sie hier einige Möglichkeiten, dies
 
 ## Behebung technischer Probleme {#technical-troubleshooting}
 
-Go to the sections below to read about more specific issues:
+Gehen Sie zu den folgenden Abschnitten, um mehr über spezifische Probleme zu erfahren:
 
 * [Stack Trace in Linux](../../production/using/stack-trace-in-linux.md)
 * [JSP-Verhalten](../../production/using/jsp-behavior.md)

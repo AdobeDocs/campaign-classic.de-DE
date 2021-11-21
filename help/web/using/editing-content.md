@@ -137,6 +137,7 @@ Gestaltungsbausteine und Felder können nur in Bausteine vom Typ &quot;Text&quot
 >* Neues Fenster (_blank)
 >* Aktuelles Fenster (_self)
 >* Standard-Navigationseinstellungen
+
 >
 
 

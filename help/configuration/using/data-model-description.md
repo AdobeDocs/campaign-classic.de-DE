@@ -9,7 +9,7 @@ exl-id: fc0fd23c-f9ea-4e30-b47b-a84143d882ca
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2379'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -182,9 +182,9 @@ Die folgenden Indikatoren werden während der Ausführung der Hypothese automati
 * Reaktionsrate der Kontrollgruppe: **dProofReactRate**. Reaktionsrate der Hypothesenkontrollgruppe.
 * Gesamtumsatz Kontakte: **dContactReactTotalAmount**. Gesamtumsatz der Kontakte in der Hypothese.
 * Durchschnittlicher Umsatz Kontrollgruppe: **dContactReactAvgAmount**. Durchschnittlicher Umsatz der Zielgruppenkontakte in der Hypothese.
-* Gesamtumsatz der Kontrollgruppe: **dProofReactTotalAmount**. Gesamtumsatz der Hypothesenkontrollgruppe.
+* Gesamtumsatz der Kontrollgruppe: **dProofReactTotalAmount**. Gesamtumsatz der in der Hypothese bestimmten Kontrollgruppe.
 * Durchschnittlicher Umsatz Kontrollgruppe: **dProofReactAvgAmount**. Durchschnittlicher Umsatz der Hypothesenkontrollgruppe.
-* Gesamtspanne Kontakte: **dContactReactTotalMargin**. Gesamtspanne Kontakte, die in der Hypothese berücksichtigt wurden.
+* Gesamtspanne Kontakte: **dContactReactTotalMargin**. Gesamtspanne der in der Hypothese bestimmten Kontakte.
 * Durchschnittliche Spanne Kontakte: **dContactReactAvgMargin**. Durchschnittliche Spanne Kontakte, die in der Hypothese berücksichtigt werden.
 * Gesamtspanne der Kontrollgruppe: **dProofReactTotalMargin**. Gesamtspanne der in der Hypothese enthaltenen Kontrollgruppe.
 * Durchschnittliche Spanne der Kontrollgruppe: **dProofReactAvgMargin**. Durchschnittliche Spanne der in der Hypothese enthaltenen Kontrollgruppe.
@@ -203,7 +203,7 @@ Es enthält einen Datensatz, der die Reaktion einer Person auf eine bestimmte Hy
 
 ## Simulation und Versand {#simulation-and-delivery}
 
-Dieser Tabellensatz ist mit der Variablen **Simulation** -Modul, mit dem die Verteilung der Angebote einer Kategorie oder einer Umgebung getestet werden kann, bevor der Vorschlag an die Empfänger gesendet wird. Weitere Informationen hierzu finden Sie unter [Über die Angebotssimulation](../../interaction/using/about-offers-simulation.md).
+Dieser Tabellensatz ist mit der Variablen **Simulation** -Modul, mit dem die Verteilung von Angeboten aus einer Kategorie oder einer Umgebung getestet werden kann, bevor der Vorschlag an Empfänger gesendet wird. Weitere Informationen hierzu finden Sie unter [Über die Angebotssimulation](../../interaction/using/about-offers-simulation.md).
 
 ![](assets/data-model_simulation.png)
 

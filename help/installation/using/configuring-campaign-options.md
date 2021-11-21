@@ -9,7 +9,7 @@ exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
 source-git-commit: 4661a65c83f3b9b7da9ea902f387155c5933e59f
 workflow-type: tm+mt
 source-wordcount: '3994'
-ht-degree: 11%
+ht-degree: 12%
 
 ---
 
@@ -150,7 +150,7 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_ExpOrganisation</span> <br /> </td> 
-   <td> Allgemeiner Name des Kunden. Wird in einigen Warnmeldungen verwendet, die den Empfängern angezeigt werden.<br /> "Sie erhalten diese Nachricht, weil Sie mit **** oder einem verbundenen Unternehmen in Kontakt gekommen sind. So empfangen Sie keine Nachrichten mehr von ****".<br /> </td> 
+   <td> Gebrauchsname des Kunden. Wird in einigen Warnmeldungen verwendet, die den Empfängern angezeigt werden.<br /> "Sie erhalten diese Nachricht, weil Sie mit **** oder einem verbundenen Unternehmen in Kontakt gekommen sind. So empfangen Sie keine Nachrichten mehr von ****".<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_FromName</span> <br /> </td> 
@@ -536,11 +536,11 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventQueueAlert</span> <br /> </td> 
-   <td> Schwellenwert vor kritischer Bedingung für die Warteschlange ausstehender Echtzeit-Ereignisse.<br /> </td> 
+   <td> Warnschwelle für Echtzeit-Ereignisse in der Warteschlange<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventQueueWarning</span> <br /> </td> 
-   <td> Schwellenwert vor Warnung für die Warteschlange ausstehender Echtzeit-Ereignisse.<br /> </td> 
+   <td> Hinweisschwelle für Echtzeit-Ereignisse in der Warteschlange<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventThroughputAlert</span> <br /> </td> 
@@ -820,7 +820,7 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsServer_CustomerId</span> <br /> </td> 
-   <td> Kundenkennung, die beim Senden des Abrechnungsberichts verwendet wird.<br /> </td> 
+   <td> Zum Versand des Fakturaberichts verwendete Kundenkennung.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsServer_IntranetURL</span> <br /> </td> 
@@ -857,7 +857,7 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_ClickFormula</span> <br /> </td> 
-   <td> Berechnungsskript für getrackte URLs.<br /> </td> 
+   <td> Berechnungs-Script der getrackten URLs.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_ExtAccount</span> <br /> </td> 
@@ -873,7 +873,7 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_OpenFormula</span> <br /> </td> 
-   <td> Öffnen Sie das URL-Berechnungsskript.<br /> </td> 
+   <td> Script zur Berechnung der Öffnungs-URL.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_Password</span> <br /> </td> 

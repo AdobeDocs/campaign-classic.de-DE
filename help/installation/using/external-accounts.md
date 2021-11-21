@@ -420,7 +420,7 @@ Informationen darüber, wo Sie die Kennung des Zugriffsschlüssels und den gehei
 
 ### Azur Blob-Speicherung {#azure-blob-external-account}
 
-Die **Azure Blob Storage** Ein externes Konto kann verwendet werden, um Daten mithilfe einer **[!UICONTROL Dateiübertragung]** Workflow-Aktivität. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../workflow/using/file-transfer.md).
+Die **Azure Blob Storage** kann zum Importieren oder Exportieren von Daten in Adobe Campaign mithilfe eines **[!UICONTROL Dateiübertragung]** Workflow-Aktivität. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../workflow/using/file-transfer.md).
 
 ![](assets/ext_account_23.png)
 

@@ -29,6 +29,7 @@ Der Parameter **`<command>`** dem Modul entspricht.
 >
 >* Auf jeden Fall können Sie die **-noconsole** -Argument zum Löschen von Kommentaren, die nach dem Start der Module angezeigt werden.
 >* Umgekehrt können Sie das -Argument hinzufügen **-verbose** um weitere Informationen anzuzeigen.
+
 >
 
 
@@ -60,7 +61,7 @@ Datasource Server Provider Login
 default xxxxx myserver myprovider test400
 ```
 
-Ein weiterer nützlicher Befehl ist **nlserver-Monitor**. Sie listet die XML-Überwachungsdatei auf (abgerufen im Adobe Campaign-Client oder über die **monitor.jsp** Webseite).
+Ein weiterer nützlicher Befehl ist **nlserver-Monitor**. Sie listet die (im Adobe Campaign-Client oder über die **monitor.jsp** Webseite).
 
 Sie können den Parameter hinzufügen **-missing** , um die fehlenden Module aufzulisten (Fehler in Modulen, heruntergefahren von Modulen usw.)
 

@@ -254,7 +254,7 @@ Bei dieser Aufgabe werden die von Sendungen verwendeten Web-Ressourcen (Mirrorse
 
    where **$(curDate)** ist das aktuelle Server-Datum.
 
-1. Die **NmsMirrorPageInfo** -Tabelle wird dann gegebenenfalls mithilfe der Kennung des zuvor wiederhergestellten Versands bereinigt. Die Massenlöschung wird verwendet, um die folgenden Abfragen zu generieren:
+1. Die **NmsMirrorPageInfo** -Tabelle wird dann bei Bedarf mithilfe der Kennung des zuvor wiederhergestellten Versands bereinigt. Die Massenlöschung wird verwendet, um die folgenden Abfragen zu generieren:
 
    ```
    DELETE FROM NmsMirrorPageInfo WHERE iMirrorPageInfoId IN (SELECT iMirrorPageInfoId FROM NmsMirrorPageInfo WHERE iDeliveryId = $(dl)) LIMIT 5000)

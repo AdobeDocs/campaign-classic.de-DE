@@ -37,17 +37,17 @@ Auch das Feld **[!UICONTROL Besucherordner]** enthält bereits den Ordner **[!UI
 
 ## Angebotskataloge für anonyme Interaktionen {#offer-catalog-for-anonymous-interactions}
 
-Wie bei ausgehenden spielt der Angebotskatalog auch bei eingehenden Interaktionen eine zentrale Rolle. Er enthält alle nach Kategorien geordneten Angebote.
+Genau wie die ausgehenden Interaktionen werden die eingehenden Interaktionen in einem Angebotskatalog organisiert, der aus Kategorien und Angeboten besteht.
 
 Wenden Sie zum Erstellen von Kategorien und Platzierungen denselben Prozess an wie für identifizierte Besucher (siehe [Angebotskategorien](../../interaction/using/creating-offer-categories.md) und [Angebotsumgebungen](../../interaction/using/live-design-environments.md#creating-an-offer-environment)).
 
 ## Anonyme Besucher {#anonymous-visitors}
 
-Anonyme Besucher können beim Web-Seiten-Aufruf einem Identifizierungsversuch durch Cookies unterzogen werden. Diese implizite Erkennung beruht auf dem Navigationsverlauf des Besuchers.
+Anonyme Besucher können einem Cookie-Identifizierungsprozess unterzogen werden, wenn sie eine Verbindung herstellen. Diese implizite Erkennung basiert auf dem Navigationsverlauf des Besuchers.
 
 In diesem Schritt werden die von den Cookies abgerufenen Daten mit denen in Ihrer Datenbank verglichen. In einigen Fällen werden Besucher erkannt (sie werden dann implizit identifiziert), in anderen Fällen werden sie nicht erkannt (und bleiben daher anonym).
 
-Wählen Sie für die Platzierung das Feld **[!UICONTROL Person implizit über den Navigationsverlauf identifizieren]**, wenn Sie diese Möglichkeit nutzen wollen.
+Kreuzen Sie in der Platzierung das Feld **[!UICONTROL Person implizit über den Navigationsverlauf identifizieren]** an, wenn Sie diese Möglichkeit nutzen wollen.
 
 ![](assets/identification_anonymous_visitors.png)
 

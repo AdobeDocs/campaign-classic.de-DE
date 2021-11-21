@@ -69,7 +69,7 @@ Gehen Sie hierzu wie folgt vor:
 
 1. Geben Sie die Affinitäten im **`<ipaffinity>`** Abschnitt **serverConf.xml** -Datei.
 
-   Eine Affinität kann mehrere unterschiedliche Namen haben: , um sie zu trennen, verwenden Sie die **;** Zeichen.
+   Eine Affinität kann mehrere verschiedene Namen haben: , um sie zu trennen, verwenden Sie die **;** Zeichen.
 
    Beispiel:
 

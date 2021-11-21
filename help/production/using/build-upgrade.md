@@ -40,7 +40,7 @@ Sobald das System für die Aktualisierung bereit ist, wird ein Build-Upgrade dur
 
 Für das Build-Upgrade sind die folgenden Ressourcen erforderlich:
 
-* ein Adobe Architect: Erläuterung der Datenbankstrukturen (vordefinierte Schemata und alle hinzugefügten zusätzlichen Schemas, Kampagnenentwürfe und alle wichtigen Pfadfunktionen, die in einer bestimmten Reihenfolge gestartet und getestet werden müssen).
+* ein Adobe Architect: Erläuterung der Datenbankstrukturen (vordefinierte Schemas und alle hinzugefügten zusätzlichen Schemata, Kampagnenentwürfe und alle wichtigen Pfadfunktionen, die in einer bestimmten Reihenfolge gestartet und getestet werden müssen).
 * Projektmanager - Wenn das Build-Upgrade viele verschiedene Instanzen (Produktion, Staging, Tests) und andere Drittanbieter-Server und -Anwendungen (Datenbanken, SFTP-Sites, Messaging-Service-Provider) umfasst, gilt ein Projektmanager zur Koordinierung aller Tests als Best Practice.
 * ein Adobe-Campaign-Administrator: Er kennt die Konfiguration des Servers, u. a. Anforderungen in Bezug auf Sicherheit, Ordneraufbau, Reporting und den Import und Export. Bitte nehmen Sie kein Build-Upgrade ohne Ihren Administrator vor.
 * ein Adobe Campaign-Benutzer (Marketing-Benutzer): Ein erfolgreiches Upgrade hängt von der Fähigkeit des Benutzers ab, seine täglichen Aufgaben erfolgreich durchzuführen. Aus diesem Grund sollten Sie mindestens einen Ihrer täglichen Benutzer in Ihre Tests der aktualisierten Server einbeziehen.
@@ -263,7 +263,7 @@ Im Kontext einer Mid-Sourcing-Umgebung müssen Sie die folgenden zusätzlichen S
 
 Sie müssen das Synchronisierungsergebnis überprüfen. Dieser Schritt wird nur von On-Premise-Kunden ausgeführt. Für gehostete Kunden übernimmt diese Aufgabe das Hosting-Team. Es gibt zwei Möglichkeiten, das Synchronisationsergebnis anzuzeigen:
 
-In der Befehlszeilenschnittstelle werden Fehler durch ein dreifaches Chevron &quot;>>>&quot;materialisiert und die Synchronisation wird automatisch angehalten. Warnungen werden durch ein doppeltes Chevron &quot;>>&quot;materialisiert und müssen nach Abschluss der Synchronisation behoben werden. Am Ende des Postupgrades wird an der Eingabeaufforderung eine Zusammenfassung angezeigt. Sie kann wie folgt aussehen:
+In der Befehlszeilenschnittstelle werden Fehler durch ein dreifaches Chevron &quot;>>>&quot;materialisiert und die Synchronisation wird automatisch angehalten. Warnungen werden durch ein doppeltes Chevron &quot;>>&quot;erzeugt und müssen nach Abschluss der Synchronisation behoben werden. Am Ende des Postupgrades wird an der Eingabeaufforderung eine Zusammenfassung angezeigt. Sie kann wie folgt aussehen:
 
 ```
 YYYY-MM-DD HH:MM:SS.749Z 00002E7A 1 info log =========Summary of the update==========
@@ -400,7 +400,7 @@ So nehmen Sie eine komplexe Zusammenführung vor:
 1. Fügen Sie ihn in die benutzerdefinierte Version ein
 1. Prüfung auf Nichtregressionen der Anpassung
 1. Überprüfen Sie die Funktionsfähigkeit der Änderungen
-1. Durchführen von Benutzerakzeptanztests
+1. Durchführen des Benutzerakzeptanztests
 1. Führen Sie die Zusammenführung in einer Testumgebung durch.
 
 

@@ -65,7 +65,7 @@ Dieser Modus ist kostengünstig in Bezug auf das Volumen (begrenzte Anzahl von D
 
 **Eigenschaften des permanenten Webtracking-Modus:**
 
-Mit diesem Webtracking-Modus können Sie ein Trackinglog erstellen, das auf dem permanenten Cookie uuid230 basiert. Wenn ein Besucher seine Sitzung schließt, verwendet Adobe Campaign das permanente Cookie, um Informationen zu ihm aus vorherigen Trackinglogs abzurufen. Adobe Campaign fügt ein Trackinglog erneut ein, wenn uuid230 der aktuellen Sitzung denselben Wert wie uuid230 aufweist, der bereits in der Trackingtabelle gespeichert ist.
+Mit diesem Webtracking-Modus können Sie ein Trackinglog erstellen, das auf dem permanenten Cookie uuid230 basiert. Wenn ein Besucher seine Sitzung schließt, verwendet Adobe Campaign das permanente Cookie, um Informationen zu ihm aus vorherigen Trackinglogs abzurufen. Adobe Campaign fügt ein Trackinglog erneut ein, wenn die uuid230 der aktuellen Sitzung denselben Wert wie eine uuid230 aufweist, die bereits in der Tracking-Tabelle gespeichert ist.
 
 Das bedeutet, dass der Besucher zuvor in Adobe Campaign (über einen Versand) identifiziert werden muss, um eine Abstimmung der uuid230-Werte zu ermöglichen.
 

@@ -17,7 +17,7 @@ ht-degree: 100%
 
 ![](../../assets/v7-only.svg)
 
-Der **[!UICONTROL Angebotsanalyse]**-Bericht bietet eine Zusammenfassung der akzeptierten und abgelehnten Vorschläge.
+Der Bericht **[!UICONTROL Angebotsanalyse]** bietet eine Zusammenfassung der akzeptierten und abgelehnten Vorschläge.
 
 >[!NOTE]
 >

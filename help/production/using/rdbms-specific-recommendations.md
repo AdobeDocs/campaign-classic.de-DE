@@ -153,6 +153,7 @@ REINDEX TABLE nmsmirrorpageinfo;
 >* Die VACUUM - und REINDEX -Anweisungen sperren die Tabelle, wodurch einige Prozesse während der Wartung angehalten werden.
 >* Bei sehr großen Tabellen (in der Regel über 5 GB) kann die VACUUM FULL-Anweisung sehr ineffizient werden und sehr lange dauern. Adobe rät davon ab, sie für die **YyyNmsBroadLogXxx** Tabelle.
 >* Dieser Wartungsvorgang kann mithilfe eines Adobe Campaign-Workflows implementiert werden. **[!UICONTROL SQL]** Aktivität. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../workflow/using/architecture.md). Stellen Sie sicher, dass Sie die Wartung für eine niedrige Aktivitätsdauer planen, die nicht mit Ihrem Sicherungsfenster kollidiert.
+
 >
 
 
@@ -486,6 +487,6 @@ Mit der Option **WdbcOptions_TempDbName** können Sie eine separate Datenbank f�
 
 Diese Option kann verwendet werden, wenn Arbeitstabellen (z. B. die bei Ausführung eines Workflows erstellten Tabellen) in einer anderen Datenbank erstellt werden sollen.
 
-Wenn Sie die Option auf &quot;tempdb.dbo.&quot;setzen, werden die Arbeitstabellen in der temporären Standarddatenbank von Microsoft SQL Server erstellt. Der Datenbankadministrator muss Schreibzugriff auf die tempdb-Datenbank zulassen.
+Wenn Sie die Option auf &quot;tempdb.dbo.&quot;festlegen, werden die Arbeitstabellen in der temporären Standarddatenbank von Microsoft SQL Server erstellt. Der Datenbankadministrator muss Schreibzugriff auf die tempdb-Datenbank zulassen.
 
 Wenn die Option festgelegt ist, wird sie in allen in Adobe Campaign konfigurierten Microsoft SQL Server-Datenbanken (Hauptdatenbank und externe Konten) verwendet. Beachten Sie, dass Konflikte auftreten können, wenn zwei externe Konten denselben Server teilen (da die tempdb-Datei eindeutig ist). Wenn zwei Campaign-Instanzen denselben MSSQL-Server verwenden, kann es auf die gleiche Weise zu Konflikten kommen, wenn sie dasselbe tempdb verwenden.

@@ -106,7 +106,7 @@ Reverse-Proxys in einer DMZ-Lastenausgleichsfunktion des Traffics auf die Adobe 
 
 Opt-in/Opt-out-Funktion für Abonnements und Funktionen von Präferenzzentren können von Campaign oder Ihrer eigenen Website bereitgestellt werden. Wenn Sie diese Funktion auf Ihrer Website implementieren möchten, müssen Sie sicherstellen, dass die Voreinstellungs- und Abonnementinformationen an die Marketing-Datenbank von Campaign weitergeleitet werden. Dies geschieht normalerweise durch die automatische Erstellung von Extraktionsdateien, die von Campaign-Workflows hochgeladen werden.
 
-Der Speicherplatzverbrauch auf den Anwendungsservern hängt von der Aufbewahrungsdauer der Dateien ab, die mit Drittanbietern des Dienstes ausgetauscht werden (z. B. Druckanbieter für Briefpost), sowie von der Größe und Aufbewahrung importierter Flat-Dateien, z. B. Anmelde- oder Vorlieben-Updates von Ihrer Website oder Auszügen aus Ihren eigenen CRM- oder Marketingsystemen.
+Der Speicherplatzverbrauch auf Anwendungsservern hängt von der Aufbewahrungsfrist von Dateien ab, die mit Drittanbietern ausgetauscht werden (z. B. Druckanbieter für Briefpost), sowie von der Größe und Aufbewahrung importierter Flat Files, wie z. B. Anmelde- oder Vorlieben-Updates von Ihrer Website, oder von Auszügen aus Ihren eigenen CRM- oder Marketingsystemen.
 
 ### Datenbank
 

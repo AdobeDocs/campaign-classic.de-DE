@@ -149,7 +149,7 @@ Sie müssen jetzt den Softwareverteilungs-Assistenten starten, um die Konfigurat
 
 Die Verbindungseinstellungen für die mit der Instanz verknüpfte Datenbank werden in der Datei gespeichert **`/conf/config-<instance>.xml`** im Installationsverzeichnis von Adobe Campaign.
 
-Beispiel einer Microsoft SQL Server-Konfiguration auf Basis der Datenbank base61, die mit dem &#39;campaign&#39;-Konto und seinem verschlüsselten Kennwort verknüpft ist:
+Beispiel einer Microsoft SQL Server-Konfiguration für die Datenbank base61, die mit dem &#39;campaign&#39;-Konto und seinem verschlüsselten Kennwort verknüpft ist:
 
 ```
 <dbcnx encrypted="1" login="campaign:myBase" password="myPassword" provider="DB" server="dbServer"/>
@@ -240,7 +240,7 @@ Sie müssen jetzt den Softwareverteilungs-Assistenten starten, um die Konfigurat
 
 Die Verbindungseinstellungen für die mit der Instanz verknüpfte Datenbank werden in der Datei gespeichert **`/conf/config-<instance>.xml`** im Installationsverzeichnis von Adobe Campaign.
 
-Beispiel einer Microsoft SQL Server-Konfiguration auf Basis der Datenbank base61, die mit dem &#39;campaign&#39;-Konto und seinem verschlüsselten Kennwort verknüpft ist:
+Beispiel einer Microsoft SQL Server-Konfiguration für die Datenbank base61, die mit dem &#39;campaign&#39;-Konto und seinem verschlüsselten Kennwort verknüpft ist:
 
 ```
 <dbcnx encrypted="1" login="campaign:myBase" password="myPassword" provider="DB" server="dbServer"/>

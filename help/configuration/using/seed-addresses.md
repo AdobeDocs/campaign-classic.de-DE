@@ -82,7 +82,7 @@ Gehen Sie wie folgt vor:
    >    * Im **nms:seedMember** Erweiterung, muss das Feld, das die E-Mail-Adresse enthält, **name=&quot;email&quot;** als Attribut. Der SQL-Name muss sich von &quot;sEmail&quot;unterscheiden, der bereits für das Empfängerschema verwendet wird. Dieses Attribut muss sofort unter der **`<element name="custom_cus_person" />`** -Element.
 
 
-1. Ändern Sie die **[!UICONTROL seedMember]** dementsprechend die neue Registerkarte &quot;Interner Empfänger&quot;im **[!UICONTROL Testadressen]** Fenster. Weitere Informationen hierzu finden Sie unter [Formularstruktur](../../configuration/using/form-structure.md).
+1. Ändern Sie die **[!UICONTROL seedMember]** Formular , um einen neuen Tab &quot;Interner Empfänger&quot;im **[!UICONTROL Testadressen]** Fenster. Weitere Informationen hierzu finden Sie unter [Formularstruktur](../../configuration/using/form-structure.md).
 
    ```
    <container colcount="2" label="Internal recipient" name="internal"

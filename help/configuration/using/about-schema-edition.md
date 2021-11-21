@@ -87,7 +87,7 @@ Die **xpath** -Attribut auf das Feld in Ihrem Schema verweist, das Sie indiziere
 
 >[!IMPORTANT]
 >
->Es ist wichtig zu beachten, dass die von Indizes bereitgestellten Leistungsverbesserungen bei der SQL-Abfrage auch Leistungseinbußen beim Schreiben von Datensätzen verursachen. Die Indizes sollten daher mit Vorsicht verwendet werden.
+>Es ist wichtig zu beachten, dass die von Indizes bereitgestellten Leistungsverbesserungen bei der SQL-Abfrage auch beim Schreiben von Datensätzen zu Leistungseinbußen führen. Die Indizes sollten daher mit Vorsicht verwendet werden.
 
 Weitere Informationen zu Indizes finden Sie im Abschnitt [Indexierte Felder](../../configuration/using/database-mapping.md#indexed-fields) Abschnitt.
 
@@ -127,14 +127,14 @@ Die vollständige Liste der Attribute ist im [`<attribute>` element](../../confi
 * **@desc**
 * **@enum**
 * **@expr**
-* **@Titel**
+* **@label**
 * **@length**
 * **@name**
 * **@notNull**
 * **@required**
 * **@ref**
 * **@xml**
-* **@type**
+* **@Typ**
 
    Eine Tabelle mit den Zuordnungen der Datentypen, die von Adobe Campaign für die verschiedenen Datenbankverwaltungssysteme generiert wurden, finden Sie im Abschnitt [Mapping der Adobe Campaign/DBMS-Datentypen](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data) Abschnitt.
 

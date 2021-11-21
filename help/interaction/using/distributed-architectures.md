@@ -56,7 +56,7 @@ Für jedes externe Konto und jede Umgebung wird ein Synchronisations-Workflow er
 
 ## Package-Konfiguration {#packages-configuration}
 
-Eventuelle Schemaerweiterungen in direktem Zusammenhang mit **Interaction** (beispielsweise Angebots-, Vorschlags- oder Empfängerschema) sind auf die Ausführungsinstanzen freizugeben.
+Eventuelle Schemaerweiterungen in direktem Zusammenhang mit **Interaktion** (beispielsweise Angebots-, Vorschlags- oder Empfängerschema) sind auf die Ausführungsinstanzen freizugeben.
 
 Das Interaction-Package muss auf allen Instanzen installiert werden (Kontroll- und Ausführungsinstanzen). Zwei weitere Packages sind je nach Instanzart zu installieren, eins auf den Kontrollinstanzen, das zweite auf allen Ausführungsinstanzen.
 

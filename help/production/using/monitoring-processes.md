@@ -163,7 +163,7 @@ Die Liste der Systemindikatoren ermöglicht die Anzeige von Informationen über 
 
    **[!UICONTROL Warnung]** : Dieser Indikator wird angezeigt, wenn die Anzahl der Speichersegmente 1 erreicht.
 
-   **[!UICONTROL Warnhinweis]** : Dieser Indikator wird angezeigt, wenn die Anzahl der Speichersegmente 2 erreicht.
+   **[!UICONTROL Warnhinweis]** : Diese Anzeige wird angezeigt, wenn die Anzahl der Speichersegmente 2 erreicht.
 
 * **[!UICONTROL Anzahl der Prozesse zu alt]** : Informationen zu Prozessen, die seit mehr als einem Tag aktiv sind.
 
