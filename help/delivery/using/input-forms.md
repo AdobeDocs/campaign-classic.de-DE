@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: 8ec52c96-44a2-4544-93b6-9ba251510682
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: cf4e316e9c9bce467e2bd2bd04097f55b3dbb9c7
 workflow-type: tm+mt
-source-wordcount: '820'
-ht-degree: 100%
+source-wordcount: '828'
+ht-degree: 99%
 
 ---
 
@@ -25,9 +25,9 @@ Weiterführende Informationen zu Formularen finden Sie in [diesem Abschnitt](../
 
 Das XML-Dokument eines Formulars muss die Wurzel **`<form>`** mit den Attributen **name** und **namespace** zur Angabe des Formularnamens und des Namespace enthalten.
 
-```
+```xml
 <form name="form_name" namespace="name_space">
-...
+…
 </form>
 ```
 
@@ -39,7 +39,7 @@ Nachfolgend wird die Struktur eines Formulars anhand des Datenschemas &quot;cus:
 
 Das entsprechende XML-Dokument stellt sich wie folgt dar:
 
-```
+```xml
 <form name="book" namespace="cus" type="contentForm">
   <input xpath="@name"/>
   <input xpath="@date"/>
@@ -89,7 +89,7 @@ Dieses Steuerelement zeigt eine Liste mit editierbaren Spalten und einer Symboll
 
 ![](assets/d_ncs_content_form4.png)
 
-```
+```xml
 <input xpath="chapter" type="list">
   <input xpath="@name"/>
   <input xpath="@number"/>
@@ -108,7 +108,7 @@ Standardmäßig werden die Schaltflächen der Symbolleiste vertikal ausgerichtet
 
 ![](assets/d_ncs_content_form5.png)
 
-```
+```xml
 <input nolabel="true" toolbarCaption="List of chapters" type="list" xpath="chapter">
   <input xpath="@name"/>
   <input xpath="@number"/>
@@ -133,7 +133,7 @@ Dies ist in folgenden Fällen zu empfehlen:
 
 ![](assets/d_ncs_content_form7.png)
 
-```
+```xml
 <input nolabel="true" toolbarCaption="List of chapters" type="list" xpath="chapter" zoom="true" zoomOnAdd="true">
   <input xpath="@name"/>
   <input xpath="@number"/>
@@ -160,7 +160,7 @@ In dieser Art Liste werden die Kollektionselemente in Form von verschiedenen Tab
 
 ![](assets/d_ncs_content_form6.png)
 
-```
+```xml
 <container toolbarCaption="List of chapters" type="notebooklist" xpath="chapter" xpath-label="@name">
   <container colcount="2">
     <input xpath="@name"/>
@@ -197,3 +197,5 @@ Der XML-Code des Formulars wird im Editor erfasst:
 Im **[!UICONTROL Vorschau]**-Tab können Sie das so erstellte Formular prüfen.
 
 ![](assets/d_ncs_content_form13.png)
+
+Mehr dazu [Formulare bearbeiten](../../configuration/using/editing-forms.md) und [Formularstruktur](../../configuration/using/form-structure.md).
