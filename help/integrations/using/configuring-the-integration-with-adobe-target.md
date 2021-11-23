@@ -9,18 +9,18 @@ exl-id: ae8c680f-52a6-4d00-91cd-44d1c3807546
 source-git-commit: af40fe822c69979a478604595790d4deefd6d5b0
 workflow-type: tm+mt
 source-wordcount: '208'
-ht-degree: 51%
+ht-degree: 100%
 
 ---
 
-# Integration mit Adobe Target konfigurieren{#configuring-the-integration-with-adobe-target}
+# Konfigurieren der Integration mit Adobe Target{#configuring-the-integration-with-adobe-target}
 
 ![](../../assets/v7-only.svg)
 
 
 >[!CAUTION]
 >
-> Wenden Sie sich als gehosteter oder hybrider Kunde an Ihren Adobe-Support-Mitarbeiter, um diese Integration zu konfigurieren. Die folgenden Schritte gelten nur für On-Premise-Kunden.
+> Wenden Sie sich als Kunde mit gehostetem oder hybridem System an Ihren Adobe-Support-Mitarbeiter, um diese Integration zu konfigurieren. Die folgenden Schritte gelten nur für On-Premise-Kunden.
 
 Diese Integration erfordert:
 
@@ -29,12 +29,12 @@ Diese Integration erfordert:
 
 Gehen Sie wie folgt vor, um diese Integration in Adobe Campaign zu konfigurieren:
 
-1. Installieren Sie die **[!UICONTROL Integration in Adobe Experience Cloud]** natives Paket. [Weitere Informationen](../../platform/using/working-with-data-packages.md#importing-packages)
+1. Installieren Sie das integrierte Paket **[!UICONTROL Integration mit Adobe Experience Cloud]**. [Weitere Informationen](../../platform/using/working-with-data-packages.md#importing-packages)
 
    Mit diesem Paket erhalten Sie über Digital Asset Manager Zugriff auf die freigegebenen Assets.
 
-1. Aktivieren Sie die Verbindung über IMS (Adobe ID-Verbindungsdienst), um in Ihren E-Mails freigegebene Bilder von Adobe Experience Cloud zu verwenden. [Weitere Informationen](../../integrations/using/about-adobe-id.md)
-1. Navigieren Sie zu **[!UICONTROL Administration > Plattform > Optionen]** So konfigurieren Sie die Server- und Organisationsoptionen (Mandanten) für Adobe Target:
+1. Aktivieren Sie die Verbindung über IMS (Adobe ID-Verbindungs-Service), wenn Sie in Ihren E-Mails freigegebene Bilder von Adobe Experience Cloud verwenden möchten. [Weitere Informationen](../../integrations/using/about-adobe-id.md)
+1. Navigieren Sie zu **[!UICONTROL Administration > Plattform > Optionen]** und konfigurieren Sie die Server- und Organisations (Mandanten)-Optionen für Adobe Target:
 
    ![](assets/tar_options.png)
 

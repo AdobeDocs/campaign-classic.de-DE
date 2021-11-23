@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Arbeiten mit Adobe Campaign und Adobe Target
-description: Erfahren Sie, wie Sie Adobe Campaign mit Adobe Target integrieren.
+title: 'Verwenden von Adobe Campaign und Adobe Target '
+description: Hier erfahren Sie, wie Sie Adobe Campaign mit Adobe Target integrieren
 audience: integrations
 content-type: reference
 topic-tags: adobe-target
@@ -9,11 +9,11 @@ exl-id: 2e29d090-b87b-4cff-a703-58e1da082f04
 source-git-commit: af40fe822c69979a478604595790d4deefd6d5b0
 workflow-type: tm+mt
 source-wordcount: '198'
-ht-degree: 35%
+ht-degree: 100%
 
 ---
 
-# Campaign und Target verwenden{#integrating-with-adobe-target}
+# Verwenden von Campaign und Target{#integrating-with-adobe-target}
 
 ![](../../assets/common.svg)
 
@@ -21,7 +21,7 @@ Verwenden Sie Adobe Campaign mit Adobe Target zur Optimierung des E-Mail-Inhalts
 
 Um Ihren E-Mail-Inhalt zu optimieren, können Sie ein Umleitungsangebot in Adobe Target erstellen und dann die E-Mail-Angebote mit Adobe Campaign verwalten. Beispielsweise können Sie für männliche und weibliche Empfänger unterschiedliche Angebote anzeigen.
 
-Die Integration erfolgt beim Öffnen der E-Mail. Wenn der Kunde die E-Mail öffnet, wird Target aufgerufen und eine dynamische Version des Inhalts wird angezeigt. Der Inhalt besteht aus einem statischen Bild, das von allen Browsern unterstützt wird. Target verfolgt die Reaktion auf das Angebot auf Zielgruppen- oder Sitzungsebene und stellt fest, dass Daten in Target-Berichten verfügbar sind. [Weitere Informationen finden Sie in der Dokumentation zu Adobe Target .](https://experienceleague.adobe.com/docs/target/using/integrate/campaign-and-target.html?lang=de).
+Die Integration erfolgt beim Öffnen der E-Mail. Wenn der Kunde die E-Mail öffnet, wird Target aufgerufen und eine dynamische Version des Inhalts wird angezeigt. Der Inhalt besteht aus einem statischen Bild, das von allen Browsern unterstützt wird. Target verfolgt die Reaktion auf das Angebot auf Audience- oder Sitzungsebene und stellt fest, dass Daten in Target-Berichten verfügbar sind. [Weitere Informationen finden Sie in der Dokumentation zu Adobe Target](https://experienceleague.adobe.com/docs/target/using/integrate/campaign-and-target.html?lang=de).
 
 
 >[!NOTE]

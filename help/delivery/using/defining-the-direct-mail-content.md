@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Erstellen Sie den Briefpost-Inhalt
-description: Erstellen Sie den Briefpost-Inhalt
+title: Definieren des Direkt-Mail-Inhalts
+description: Definieren des Direkt-Mail-Inhalts
 audience: delivery
 content-type: reference
 topic-tags: sending-direct-mail
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 ---
 
-# Erstellen Sie den Briefpost-Inhalt{#defining-the-direct-mail-content}
+# Definieren des Direkt-Mail-Inhalts{#defining-the-direct-mail-content}
 
 ![](../../assets/common.svg)
 

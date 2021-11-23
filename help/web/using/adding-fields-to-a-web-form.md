@@ -9,7 +9,7 @@ exl-id: 827b6575-7206-4dfc-b2c6-b95a6d5730b1
 source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
 workflow-type: tm+mt
 source-wordcount: '2461'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -367,7 +367,7 @@ Sie können ein Upload-Feld zu einer Seite hinzufügen. Diese Funktion kann z. B
 
 Um ein Upload-Feld in eine Formularseite einzufügen, wählen Sie in der Symbolleiste des Seiteneditors die Schaltfläche **[!UICONTROL Erweiterte Steuerelemente > Datei...]** aus.
 
-Standardmäßig werden die hochgeladenen Dateien in Ressourcendateien gespeichert, die über das Menü **[!UICONTROL Ressourcen > Online > Öffentliche Ressourcen]** zugänglich sind. Sie können ein Skript verwenden, um dieses Verhalten zu ändern. Dieses Skript kann die in der [Campaign JSAPI-Dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/index.html) definierten Funktionen verwenden, einschließlich derjenigen zur Dateibearbeitung.
+Standardmäßig werden die hochgeladenen Dateien in Ressourcendateien gespeichert, die über das Menü **[!UICONTROL Ressourcen > Online > Öffentliche Ressourcen]** zugänglich sind. Sie können ein Skript verwenden, um dieses Verhalten zu ändern. Dieses Skript kann die in der [Campaign JSAPI-Dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=de) definierten Funktionen verwenden, einschließlich derjenigen zur Dateibearbeitung.
 
 Sie können den Link zu diesen Dateien in einer lokalen Variablen oder in einem Datenbankfeld speichern. Beispielsweise können Sie das Empfängerschema erweitern und einen Link zu dateibasierten Ressourcen hinzufügen.
 

@@ -51,7 +51,7 @@ Zunächst muss der Versand durch Angabe der Parameter identifiziert werden. Gehe
 
 Der Versandinhalt ist bereit zur Konfiguration. Die Definition des Versandinhalts erfolgt für jeden Kanal einzeln. Weiterführende Informationen dazu finden Sie im entsprechenden Abschnitt:
 
-* [E-Mail-Inhalte erstellen](defining-the-email-content.md)
-* [SMS-Inhalt erstellen](sms-create.md#defining-the-sms-content)
-* [Erstellen Sie den Briefpost-Inhalt](defining-the-direct-mail-content.md)
+* [Definieren des E-Mail-Inhalts](defining-the-email-content.md)
+* [Definieren des SMS-Inhalts](sms-create.md#defining-the-sms-content)
+* [Definieren des Direkt-Mail-Inhalts](defining-the-direct-mail-content.md)
 * [Push-Benachrichtigungen ](about-mobile-app-channel.md)

@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: E-Mail-Inhalt in Adobe Campaign Classic definieren
-description: Erfahren Sie, wie Sie den E-Mail-Inhalt mit Adobe Campaign Classic festlegen.
+title: Definieren des E-Mail-Inhalts in Adobe Campaign Classic
+description: Hier erfahren Sie, wie Sie mit Adobe Campaign Classic den E-Mail-Inhalt definieren können.
 audience: delivery
 content-type: reference
 topic-tags: sending-emails
@@ -9,11 +9,11 @@ exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
 source-git-commit: 3b8d685642fc74d918a0e312c66d5e4f7b424192
 workflow-type: tm+mt
 source-wordcount: '2064'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# E-Mail-Inhalte erstellen {#defining-the-email-content}
+# Definieren des E-Mail-Inhalts {#defining-the-email-content}
 
 ![](../../assets/common.svg)
 
@@ -112,9 +112,9 @@ Standardmäßig werden die Nachrichten den Angaben des Empfängers entsprechend 
    ![](assets/s_ncs_user_wizard_email01_142.png)
 
 
-## Interaktive Inhalte definieren {#amp-for-email-format}
+## Definieren interaktiver Inhalte {#amp-for-email-format}
 
-Mit Adobe Campaign können Sie das neue interaktive Format [AMP für E-Mail](https://amp.dev/about/email/) testen, das unter bestimmten Bedingungen das Senden dynamischer E-Mails ermöglicht.
+Mit Adobe Campaign können Sie das neue interaktive Format [AMP für E-Mail](https://amp.dev/de/about/email/) testen, das unter bestimmten Bedingungen das Senden dynamischer E-Mails ermöglicht.
 
 Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](defining-interactive-content.md).
 
@@ -237,7 +237,7 @@ Durch Ankreuzen der Option **[!UICONTROL Bilder in die E-Mail einschließen (mul
 >
 >Wenn in der Nachricht lokale Bilder enthalten sind, ist die Änderung des Quellcodes der Nachricht zu bestätigen.
 
-## Personalisierten Barcode einfügen{#insert-a-barcode}
+## Einfügen eines personalisierten Barcodes{#insert-a-barcode}
 
 Die Barcode-Lösung bietet die Möglichkeit, verschiedene ein- oder zweidimensionale Code-Typen in den gängigsten Normen zu erstellen.
 

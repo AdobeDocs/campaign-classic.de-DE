@@ -1,19 +1,19 @@
 ---
 product: campaign
-title: Barcode in eine E-Mail einfügen
-description: Barcode in eine E-Mail einfügen
+title: Einfügen eines Barcodes in eine E-Mail
+description: Einfügen eines Barcodes in eine E-Mail
 audience: delivery
 content-type: reference
 topic-tags: sending-emails
 source-git-commit: 3b8d685642fc74d918a0e312c66d5e4f7b424192
 workflow-type: tm+mt
 source-wordcount: '526'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 
-# Barcode in eine E-Mail einfügen{#insert-a-barcode-in-an-email}
+# Einfügen eines Barcodes in eine E-Mail{#insert-a-barcode-in-an-email}
 
 ![](../../assets/common.svg)
 

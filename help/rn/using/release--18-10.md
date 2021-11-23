@@ -9,7 +9,7 @@ exl-id: 57996f77-4ac2-402a-95db-b75d4bea4eeb
 source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
 workflow-type: tm+mt
 source-wordcount: '2366'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -146,7 +146,7 @@ _15. April 2019_
 
 **Neuheiten**
 
-* Campaign-Classic-APIs sind jetzt auf einer [eigenen Seite](https://experienceleague.adobe.com/developer/campaign-api/api/index.html) verfügbar. Wenn Sie die Jsapi.chm-Datei verwendet haben, sollten Sie jetzt die neue Online-Version nutzen.
+* Campaign-Classic-APIs sind jetzt auf einer [eigenen Seite](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=de) verfügbar. Wenn Sie die Jsapi.chm-Datei verwendet haben, sollten Sie jetzt die neue Online-Version nutzen.
 * PostgreSQL 10, Debian 9 und Teradata 16.20 werden jetzt unterstützt. Weiterführende Informationen dazu finden Sie in der [Kompatibilitätsmatrix](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html).
 * Bei der Erstellung einer SFTP-Verbindung kann jetzt Proxy-Authentifizierung verwendet werden. Weiterführende Informationen dazu finden Sie im [entsprechenden Handbuch](../../installation/using/file-res-management.md). (NEO-9868)
 * Bei der Erstellung eines einzelnen Versands unter Verwendung der Briefpost-Versandvorlage ist jetzt in den Versandeigenschaften eine Option mit einer **Datumsberechnungsformel** verfügbar. (NEO-9792)

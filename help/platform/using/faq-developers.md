@@ -9,7 +9,7 @@ exl-id: 20552812-5c58-4d48-9636-d5135197685d
 source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
 workflow-type: tm+mt
 source-wordcount: '523'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -65,4 +65,4 @@ Das Prinzip der Datenpackages besteht darin, eine Datenkonfiguration zu exportie
 
 ## Wo finde ich die Liste der Campaign Classic-APIs? {#where-can-i-find-the-list-of-campaign-classic-apis}
 
-Alle Campaign-APIs inklusive vollständiger Beschreibung finden Sie in dieser speziellen [Dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/index.html).
+Alle Campaign-APIs inklusive vollständiger Beschreibung finden Sie in dieser speziellen [Dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=de).

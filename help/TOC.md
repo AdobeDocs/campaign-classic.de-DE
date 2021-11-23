@@ -121,7 +121,7 @@ ht-degree: 99%
    + Die wichtigsten Schritte beim Erstellen eines Versands {#key-steps-when-creating-a-delivery}
       + [Erste Schritte mit Sendungen](delivery/using/steps-about-delivery-creation-steps.md)
       + [Versand erstellen und identifizieren](delivery/using/steps-create-and-identify-the-delivery.md)
-      + [Audience festlegen](delivery/using/steps-defining-the-target-population.md)
+      + [Definieren der Audience](delivery/using/steps-defining-the-target-population.md)
       + [Versand validieren](delivery/using/steps-validating-the-delivery.md)
       + [Versand durchführen](delivery/using/steps-sending-the-delivery.md)
       + Best Practices beim Versand {#delivery-bestpractices}
@@ -135,8 +135,8 @@ ht-degree: 99%
    + E-Mails senden {#sending-emails}
       + [Über den E-Mail-Kanal](delivery/using/about-email-channel.md)
       + [E-Mail-Versand erstellen](delivery/using/creating-an-email-delivery.md)
-      + [E-Mail-Inhalte erstellen](delivery/using/defining-the-email-content.md)
-      + [Interaktive Inhalte definieren](delivery/using/defining-interactive-content.md)
+      + [Definieren des E-Mail-Inhalts](delivery/using/defining-the-email-content.md)
+      + [Definieren interaktiver Inhalte](delivery/using/defining-interactive-content.md)
       + E-Mail-Versand senden {#sending-an-email}
          + [Wichtigste Schritte zum Senden einer E-Mail](delivery/using/sending-messages.md)
          + [E-Mail-Parameter](delivery/using/email-parameters.md)
@@ -166,7 +166,7 @@ ht-degree: 99%
    + Briefpost senden {#sending-direct-mail}
       + [Über den Briefpost-Kanal](delivery/using/about-direct-mail-channel.md)
       + [Briefpostversand erstellen](delivery/using/creating-a-direct-mail-delivery.md)
-      + [Erstellen Sie den Briefpost-Inhalt](delivery/using/defining-the-direct-mail-content.md)
+      + [Definieren des Direkt-Mail-Inhalts](delivery/using/defining-the-direct-mail-content.md)
       + [Validieren](delivery/using/validating.md)
    + Versandvorlagen verwenden{#using-delivery-templates}
       + [Über Vorlagen](delivery/using/about-templates.md)
@@ -373,13 +373,13 @@ ht-degree: 99%
       + [Konfiguration des Zugriffs auf  [!DNL Assets]](integrations/using/configuring-access-to-assets.md)
       + [Ein gemeinsam genutztes Asset einfügen](integrations/using/inserting-a-shared-asset.md)
    + Adobe Experience Manager {#adobe-experience-manager}
-      + [Arbeiten mit [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
+      + [Arbeiten mit  [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
       + [Integration konfigurieren](integrations/using/configuring-the-integration.md)
       + [Erstellen eines [!DNL Experience Manager] Newsletters](integrations/using/creating-an-experience-manager-newsletter.md)
    + Adobe Target {#adobe-target}
-      + [Arbeiten mit [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
+      + [Arbeiten mit  [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
       + [Integration konfigurieren mit [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)
-      + [Dynamisches Bild einfügen](integrations/using/inserting-a-dynamic-image.md)
+      + [Einfügen eines dynamischen Bilds](integrations/using/inserting-a-dynamic-image.md)
    + ACS Connector {#acs-connector}
       + [[!DNL ACS Connector] Grundlagen und Datenzyklus](integrations/using/acs-connector-principles-and-data-cycle.md)
       + [Profile synchronisieren](integrations/using/synchronizing-profiles.md)
@@ -387,7 +387,7 @@ ht-degree: 99%
       + [Web-Anwendungen synchronisieren](integrations/using/synchronizing-web-applications.md)
       + [Fehlerbehebung bei [!DNL ACS Connector]](integrations/using/troubleshooting-the-acs-connector.md)
    + Adobe Experience Cloud Triggers {#experience-triggers}
-      + [Arbeiten mit [!DNL Experience Cloud Triggers]](integrations/using/about-triggers.md)
+      + [Arbeiten mit  [!DNL Experience Cloud Triggers]](integrations/using/about-triggers.md)
       + [Pipeline konfigurieren](integrations/using/configuring-pipeline.md)
       + [Adobe I/O konfigurieren für [!DNL Experience Cloud Triggers]](integrations/using/configuring-adobe-io.md)
       + [Ereignisse für benutzerdefinierte Implementierungen konfigurieren](integrations/using/events.md)
