@@ -1,15 +1,15 @@
 ---
 product: campaign
 title: Auf Twitter veröffentlichen
-description: Auf Twitter publizieren
+description: Auf Twitter veröffentlichen
 audience: social
 content-type: reference
 topic-tags: publishing-on-facebook-twitter
 exl-id: e030c029-d1ee-4749-94e3-6bdfc8d89a34
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: d11c918213e72fe4bf6adb464e516fac19b63d54
 workflow-type: tm+mt
-source-wordcount: '1026'
-ht-degree: 100%
+source-wordcount: '1008'
+ht-degree: 89%
 
 ---
 
@@ -56,7 +56,7 @@ Wählen Sie die Konten aus, an die Sie Tweets senden möchten.
 
 ### Testversand-Zielgruppe auswählen {#selecting-the-target-of-the-proof}
 
-Über den Tab **[!UICONTROL Testversand-Zielgruppe]** können Sie das Twitter-Konto festlegen, das Sie vor dem endgültigen Versand für Testsendungen verwenden möchten. Wir empfehlen Ihnen daher, ein privates Twitter-Konto nur für Testsendungen zu erstellen. Weitere Informationen zum Erstellen eines privaten Twitter-Kontos finden Sie unter [Testkonto in Twitter erstellen](../../social/using/configuring-publishing-on-twitter.md#creating-a-test-account-on-twitter). Die Schritte zur Auswahl der Testversand-Zielgruppe entsprechen denen zur Auswahl der Hauptzielgruppe. Siehe [Testkonto in Twitter erstellen](../../social/using/configuring-publishing-on-twitter.md#creating-a-test-account-on-twitter).
+Über den Tab **[!UICONTROL Testversand-Zielgruppe]** können Sie das Twitter-Konto festlegen, das Sie vor dem endgültigen Versand für Testsendungen verwenden möchten. Wir empfehlen Ihnen daher, ein privates Twitter-Konto nur für Testsendungen zu erstellen. Weitere Informationen zum Erstellen eines privaten Twitter-Kontos finden Sie unter [diesem Abschnitt](../../social/using/configuring-publishing-on-twitter.md#creating-a-test-account-on-twitter). Die Schritte zur Auswahl der Testversand-Zielgruppe entsprechen denen zur Auswahl der Hauptzielgruppe. Weitere Informationen finden Sie in [diesem Abschnitt](../../social/using/configuring-publishing-on-twitter.md#creating-a-test-account-on-twitter).
 
 ![](assets/social_twitter_delivery_004.png)
 
@@ -70,7 +70,7 @@ Geben Sie den Inhalt Ihres Tweets im Tab **[!UICONTROL Inhalt]** ein.
 
 ![](assets/social_twitter_delivery_005.png)
 
-### Vorschau anzeigen {#viewing-the-preview}
+### Vorschau der Nachricht erzeugen {#viewing-the-preview}
 
 Im Tab **[!UICONTROL Vorschau]** können Sie das Rendering des Tweets anzeigen.
 
@@ -83,9 +83,9 @@ Im Tab **[!UICONTROL Vorschau]** können Sie das Rendering des Tweets anzeigen.
 
 >[!NOTE]
 >
->Die Vorschau unterscheidet sich möglicherweise geringfügig vom endgültigen Tweet. Es wird dringend empfohlen, vor dem endgültigen Versand einen Testversand abzuschicken, um ein genaues Rendering des Tweet anzuzeigen. Siehe [Testversand durchführen](#sending-the-proof).
+>Die Vorschau unterscheidet sich möglicherweise geringfügig vom endgültigen Tweet. Es wird dringend empfohlen, vor dem endgültigen Versand einen Testversand abzuschicken, um ein genaues Rendering des Tweet anzuzeigen. Weitere Informationen finden Sie in [diesem Abschnitt](#sending-the-proof).
 
-### Tracking-Konfiguration {#configuring-tracking}
+### Tracking konfigurieren {#configuring-tracking}
 
 Tracking kann in den Versandberichten und im Tab **[!UICONTROL Bearbeiten > Tracking]** des Versands und des Dienstes eingesehen werden.
 
@@ -95,17 +95,17 @@ Die Tracking-Konfiguration ist dieselbe wie bei einem E-Mail-Versand. Weiterfüh
 >
 >In der Versandvorlage **[!UICONTROL Tweet]** ist Tracking standardmäßig aktiviert.
 
->[!IMPORTANT]
+>[!CAUTION]
 >
 >Wir können nicht zwischen Robotern, die Tweets analysieren, und Benutzern, die tatsächlich klicken, unterscheiden.
 
 ### Testversand durchführen {#sending-the-proof}
 
-Es wird dringend empfohlen, vor dem endgültigen Versand einen Testversand Ihrer Veröffentlichung durchzuführen, um das genaue Rendering der Veröffentlichung einer privaten Twitter-Testseite anzuzeigen. Weitere Informationen zum Erstellen eines privaten Twitter-Kontos finden Sie unter [Testkonto in Twitter erstellen](../../social/using/configuring-publishing-on-twitter.md#creating-a-test-account-on-twitter). Die Schritte zur Auswahl der Zielgruppe für den Testversand werden unter [Testversand-Zielgruppe auswählen](#selecting-the-target-of-the-proof) beschrieben.
+Es wird dringend empfohlen, vor dem endgültigen Versand einen Testversand Ihrer Veröffentlichung durchzuführen, um das genaue Rendering der Veröffentlichung einer privaten Twitter-Testseite anzuzeigen. Weitere Informationen zum Erstellen eines privaten Twitter-Kontos finden Sie unter [diesem Abschnitt](../../social/using/configuring-publishing-on-twitter.md#creating-a-test-account-on-twitter). Die Schritte zur Auswahl der Testversand-Zielgruppe werden im Abschnitt [diesem Abschnitt](#selecting-the-target-of-the-proof).
 
 Der Testversand ist mit dem E-Mail-Versand identisch. Siehe [diesen Abschnitt](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
 
-### Nachricht senden {#sending-the-message}
+### Senden Sie die Nachricht {#sending-the-message}
 
 1. Nachdem der Inhalt validiert wurde, klicken Sie auf die Schaltfläche **[!UICONTROL Senden]**.
 1. Wählen Sie **[!UICONTROL Sendungen schnellstmöglich abschicken]** aus und klicken Sie auf die Schaltfläche **[!UICONTROL Analysieren]**.
@@ -125,7 +125,7 @@ Der Testversand ist mit dem E-Mail-Versand identisch. Siehe [diesen Abschnitt](.
 
 ### Grundprinzip {#operating-principle}
 
-Der Workflow **[!UICONTROL Twitter-Konten synchronisieren]** (siehe [Twitter-Konten synchronisieren](../../social/using/configuring-publishing-on-twitter.md#synchronizing-twitter-accounts)) stellt die Liste der Twitter-Abonnenten wieder her, damit Sie ihnen Direktnachrichten senden können. Die wiederhergestellten Follower werden in einer spezifischen Tabelle gespeichert: der Besuchertabelle. Um die Liste der Twitter-Follower anzuzeigen, gehen Sie zum Knoten **[!UICONTROL Profile und Zielgruppen > Besucher]**.
+Die **[!UICONTROL Twitter-Konten synchronisieren]** workflow (siehe [Weitere Infos](../../social/using/configuring-publishing-on-twitter.md#synchronizing-twitter-accounts)) stellt die Liste der Twitter-Abonnenten wieder her, damit Sie ihnen Direktnachrichten senden können. Die wiederhergestellten Follower werden in einer spezifischen Tabelle gespeichert: der Besuchertabelle. Um die Liste der Twitter-Follower anzuzeigen, gehen Sie zum Knoten **[!UICONTROL Profile und Zielgruppen > Besucher]**.
 
 ![](assets/social_twitter_visitors_001.png)
 
@@ -194,7 +194,7 @@ Wählen Sie die Follower aus, an die Sie Ihre Direktnachricht senden möchten.
 >
 >Wenn Sie alle Ihre Testsendungen für Direktnachrichten an denselben Twitter-Follower senden möchten, können Sie die Testversand-Zielgruppe in der Versandvorlage für **[!UICONTROL Twittern (Direct Message)]** speichern, die über den Knoten **[!UICONTROL Ressourcen > Vorlagen > Versandvorlagen]** aufgerufen wird. Die Testversand-Zielgruppe wird dann standardmäßig bei jedem neuen Versand eingegeben.
 
-### Nachrichteninhalt festlegen {#defining-message-content-}
+### Nachrichteninhalt definieren {#defining-message-content-}
 
 Geben Sie den Inhalt des Tweets im Tab **[!UICONTROL Inhalt]** ein.
 

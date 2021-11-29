@@ -3,10 +3,10 @@ product: campaign
 title: Migrieren zum Adobe Analytics Connector
 description: Häufig gestellte Fragen zum Campaign und Analytics Connector
 exl-id: 5bf61654-3d68-4560-a93f-7a768a2c5be4
-source-git-commit: 18b31ae504e1f1d13980bdf38925b38279b3be8c
+source-git-commit: d11c918213e72fe4bf6adb464e516fac19b63d54
 workflow-type: tm+mt
 source-wordcount: '855'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 Ab Campaign Classic Version v7 21.1.3 wird der Adobe Analytics Data Connector nicht mehr unterstützt. [Weitere Informationen](https://experienceleague.adobe.com/docs/analytics/import/dataconnectors/data-connectors-eol.html?lang=de)
 
-Am 1. August 2021 wurde Adobe Campaign Classic aus der veralteten Daten-Connectoren-Benutzeroberfläche entfernt. Vorhandene Campaign-Integrationen können jedoch noch bis August 2022 weiterhin Daten erfassen und an Adobe Analytics weitergeben. Nach diesem Datum wird die Integration die Erfassung und Weitergabe von Daten an Adobe Analytics einstellen.
+Am 1. August 2021 wurde Adobe Campaign Classic aus der alten Data Connectors-Benutzeroberfläche entfernt. Vorhandene Campaign-Integrationen werden jedoch bis zum 17. August 2022 weiterhin Daten erfassen und an Adobe Analytics weitergeben. Nach diesem Datum wird die Integration die Erfassung und Weitergabe von Daten an Adobe Analytics einstellen.
 
 Sie müssen die neue Adobe Analytics-Connector-Integration in Adobe Exchange **implementieren**, die die veraltete Daten-Connector-Integration ersetzt. Weitere Informationen zum Adobe Analytics-Connector finden Sie auf [dieser Seite](../../platform/using/adobe-analytics-connector.md).
 
@@ -48,7 +48,7 @@ Wenn Sie den vorhandenen Adobe Analytics Data Connector (früher Genesis-Integra
 
 ## Wie wird die Aktualisierung durchgeführt?
 
-Sie müssen **vor August 2022** ein Upgrade auf Campaign 21.1.3 (oder höher) vornehmen.
+Sie müssen auf Campaign 21.1.3 (oder höher) aktualisieren. **vor dem 17. August 2022**.
 
 Wenn Sie ein gehosteter Kunde sind, wird Adobe in Kürze auf Sie zukommen, um für Ihre Instanz(en) das Upgrade auf die neuere Version vorzunehmen. Anschließend können Sie den [Adobe Analytics-Connector](../../platform/using/adobe-analytics-connector.md) verwenden.
 

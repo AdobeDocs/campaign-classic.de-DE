@@ -1,15 +1,15 @@
 ---
 product: campaign
 title: Auf Facebook-Pinnwänden veröffentlichen
-description: Auf Facebook-Pinnwänden publizieren
+description: Auf Facebook-Pinnwänden veröffentlichen
 audience: social
 content-type: reference
 topic-tags: configuration
 exl-id: 2135a836-245f-406e-b351-c27d38e0f9fd
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: d11c918213e72fe4bf6adb464e516fac19b63d54
 workflow-type: tm+mt
-source-wordcount: '1063'
-ht-degree: 100%
+source-wordcount: '1029'
+ht-degree: 92%
 
 ---
 
@@ -37,7 +37,7 @@ Erstellen Sie zunächst ein Facebook-Konto und mehrere Seiten: Diese werden zum 
 
 ## Facebook-Testseite erstellen {#creating-a-test-facebook-page}
 
-Es wird empfohlen, eine private Facebook-Seite zu erstellen, um Testsendungen für die Veröffentlichung durchzuführen (weitere Informationen hierzu finden Sie unter [Testversand durchführen](../../social/using/publishing-on-facebook.md#sending-the-proof).
+Es wird empfohlen, eine private Facebook-Seite zu erstellen, um Testsendungen für die Veröffentlichung durchzuführen (weitere Informationen hierzu finden Sie unter [diesem Abschnitt](../../social/using/publishing-on-facebook.md#sending-the-proof).
 
 1. Melden Sie sich bei dem Facebook-Konto an, mit dem Sie Ihre Seiten verwalten.
 1. Erstellen Sie eine neue Facebook-Seite.
@@ -47,14 +47,14 @@ Es wird empfohlen, eine private Facebook-Seite zu erstellen, um Testsendungen f�
 
 ![](assets/social_facebook_test_page.png)
 
-## Erstellen einer Facebook-Anwendung {#creating-a-facebook-application}
+## Facebook-Anwendung erstellen {#creating-a-facebook-application}
 
 Damit Adobe Campaign auf den Pinnwänden Ihrer Seiten veröffentlichen kann, müssen Sie eine Facebook-Anwendung erstellen. Gehen Sie hierzu wie folgt vor:
 
 1. Melden Sie sich bei dem Facebook-Konto an, mit dem Sie Seiten verwalten.
 1. Geben Sie folgende Adresse in Ihren Browser ein: [https://developers.facebook.com/apps](https://developers.facebook.com/apps).
 
-   >[!IMPORTANT]
+   >[!CAUTION]
    >
    >Je nach dem von Ihnen verwendeten Kontotyp können eine oder mehrere Autorisierungen erforderlich sein.
    >
@@ -82,7 +82,7 @@ Um den Schreibzugriff zum Posten auf den Pinnwänden Ihrer Seiten an Adobe Camp
 
 Dieser Schritt erfordert Zugriff auf Ihre Adobe Campaign-Konsole und einen Internet-Browser, der beim Facebook-Konto angemeldet ist, das Sie für die Seitenverwaltung verwenden:
 
->[!IMPORTANT]
+>[!CAUTION]
 >
 >Der Adobe Campaign-Benutzer muss über Administratorrechte verfügen, um diese Konfiguration durchführen zu können.
 
@@ -102,7 +102,7 @@ Dieser Schritt erfordert Zugriff auf Ihre Adobe Campaign-Konsole und einen Inte
 
    ![](assets/social_facebook_external_account_006.png)
 
-   >[!IMPORTANT]
+   >[!CAUTION]
    >
    >Sie dürfen unter keinen Umständen die unsichere URL verwenden.
 
@@ -121,7 +121,7 @@ Dieser Schritt erfordert Zugriff auf Ihre Adobe Campaign-Konsole und einen Inte
    >
    >Das Feld **[!UICONTROL Marketing-URL]** ist optional.
 
-1. Klicken Sie in der Adobe Campaign-Konsole auf den Link **[!UICONTROL Zulassung von der Anwendung einholen]** unten im Tab **[!UICONTROL Connector]**. Der Workflow **[!UICONTROL Facebook-Seiten-Synchronisation]** wird automatisch ausgelöst und erfasst alle vom Administrator verwalteten Facebook-Seiten. Weitere Informationen hierzu finden Sie unter [Facebook-Seiten-Synchronisation](#synchronizing-facebook-pages).
+1. Klicken Sie in der Adobe Campaign-Konsole auf den Link **[!UICONTROL Zulassung von der Anwendung einholen]** unten im Tab **[!UICONTROL Connector]**. Der Workflow **[!UICONTROL Facebook-Seiten-Synchronisation]** wird automatisch ausgelöst und erfasst alle vom Administrator verwalteten Facebook-Seiten. [Weitere Informationen](#synchronizing-facebook-pages).
 
    ![](assets/social_facebook_external_account_004.png)
 
@@ -143,14 +143,16 @@ Dieser Schritt erfordert Zugriff auf Ihre Adobe Campaign-Konsole und einen Inte
 >
 >Wenn das Facebook-Konto mehrere Seiten verwaltet, konfigurieren Sie einfach ein externes Konto, um auf einer beliebigen Seite des Facebook-Kontos zu schreiben. Für jedes neue Facebook-Konto müssen Sie ein neues externes **[!UICONTROL Routing]**-Konto erstellen.
 
-Der Workflow für die **[!UICONTROL Facebook-Seiten-Synchronisation]** synchronisiert alle vom Facebook-Konto verwalteten Seiten, damit Sie direkt über Adobe Campaign auf der Pinnwand posten können. Weitere Informationen hierzu finden Sie unter [Facebook-Seiten-Synchronisation](#synchronizing-facebook-pages).
+Der Workflow für die **[!UICONTROL Facebook-Seiten-Synchronisation]** synchronisiert alle vom Facebook-Konto verwalteten Seiten, damit Sie direkt über Adobe Campaign auf der Pinnwand posten können. [Weitere Informationen](#synchronizing-facebook-pages).
 
 ## Facebook-Seiten-Synchronisation {#synchronizing-facebook-pages}
 
-Mit dem Workflow für die **[!UICONTROL Facebook-Seiten-Synchronisation]**, der über den Knoten **[!UICONTROL Administration > Produktion > Technische Workflows > Social Marketing]** aufgerufen wird, können Sie die Seiten des zuvor konfigurierten Facebook-Kontos (in Adobe Campaign) synchronisieren. Standardmäßig ist dieser Workflow so konfiguriert, dass er einmal am Tag oder immer dann ausgeführt wird, wenn ein Administrator auf den Link **[!UICONTROL Zulassung von der Anwendung einholen]** im Bildschirm zur Dienstkonfiguration klickt (siehe [Schreibzugriff an Adobe Campaign delegieren](#delegating-write-access-to-adobe-campaign)).
+Mit dem Workflow für die **[!UICONTROL Facebook-Seiten-Synchronisation]**, der über den Knoten **[!UICONTROL Administration > Produktion > Technische Workflows > Social Marketing]** aufgerufen wird, können Sie die Seiten des zuvor konfigurierten Facebook-Kontos (in Adobe Campaign) synchronisieren. Standardmäßig ist dieser Workflow so konfiguriert, dass er einmal täglich oder immer dann ausgeführt wird, wenn ein Administrator auf die **[!UICONTROL Antrag auf Genehmigung]** im Dienstkonfigurationsbildschirm. [Weitere Informationen](#delegating-write-access-to-adobe-campaign).
 
-Nach Abschluss der Synchronisation werden die erfassten Seiten im Dienstordner angezeigt, der in das externe Konto eingegeben wurde (siehe [Schreibzugriff an Adobe Campaign delegieren](#delegating-write-access-to-adobe-campaign)). Standardmäßig werden die Seiten dem Stammordner des **[!UICONTROL Facebook]**-Dienstordners hinzugefügt, der über das Menü **[!UICONTROL Profile und Zielgruppen > Dienste und Abonnements]** verfügbar ist.
+Nach Abschluss der Synchronisation werden die erfassten Seiten im Dienstordner angezeigt, der im externen Konto eingegeben wurde. [Weitere Informationen](#delegating-write-access-to-adobe-campaign).
+
+Standardmäßig werden die Seiten dem Stammordner des **[!UICONTROL Facebook]**-Dienstordners hinzugefügt, der über das Menü **[!UICONTROL Profile und Zielgruppen > Dienste und Abonnements]** verfügbar ist.
 
 ![](assets/social_facebook_service_002.png)
 
-Sie können jetzt direkt über Adobe Campaign auf den Pinnwänden Ihrer Facebook-Seiten veröffentlichen. Weitere Informationen hierzu finden Sie unter [Auf Facebook veröffentlichen](#publishing-on-facebook-walls).
+Sie können jetzt direkt über Adobe Campaign auf den Pinnwänden Ihrer Facebook-Seiten veröffentlichen. [Weitere Informationen](#publishing-on-facebook-walls).

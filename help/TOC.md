@@ -6,9 +6,9 @@ title: Campaign Classic v7 – Handbuch
 user-guide-description: Mit Adobe Campaign können Sie umfangreiche Kundendaten verwenden, um dynamische Kampagnen, die Kunden tatsächlich wünschen, zu erstellen, zu koordinieren und bereitzustellen. Über E-Mail, mobile Kanäle, Offline-Kanäle und mehr.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: cf4e316e9c9bce467e2bd2bd04097f55b3dbb9c7
+source-git-commit: d11c918213e72fe4bf6adb464e516fac19b63d54
 workflow-type: tm+mt
-source-wordcount: '2571'
+source-wordcount: '2575'
 ht-degree: 99%
 
 ---
@@ -596,7 +596,7 @@ ht-degree: 99%
       + [Facebook-Anwendung erstellen](social/using/creating-a-facebook-application.md)
       + [Veröffentlichung auf Twitter konfigurieren](social/using/configuring-publishing-on-twitter.md)
    + In Social Media veröffentlichen {#publishing-on-facebook-twitter}
-      + [Übersicht](social/using/overview.md)
+      + [Erste Schritte mit Social Media](social/using/overview.md)
       + [Auf Facebook veröffentlichen](social/using/publishing-on-facebook.md)
       + [Auf Twitter veröffentlichen](social/using/publishing-on-twitter.md)
    + Anhänge {#annexes}

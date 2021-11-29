@@ -1,15 +1,15 @@
 ---
 product: campaign
 title: Auf Facebook veröffentlichen
-description: Auf Facebook publizieren
+description: Erfahren Sie, wie Sie in Facebook veröffentlichen
 audience: social
 content-type: reference
 topic-tags: publishing-on-facebook-twitter
 exl-id: 84d6cb2e-c7f9-43d7-a98c-22613d456193
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: d11c918213e72fe4bf6adb464e516fac19b63d54
 workflow-type: tm+mt
-source-wordcount: '1253'
-ht-degree: 100%
+source-wordcount: '1243'
+ht-degree: 92%
 
 ---
 
@@ -54,7 +54,7 @@ Wählen Sie die Seiten aus, auf denen Sie Ihre Veröffentlichung posten möchten
 
 ## Testversand-Zielgruppe auswählen {#selecting-the-proof-target}
 
-Über den Tab **[!UICONTROL Testversand-Zielgruppe]** können Sie die Facebook-Seite festlegen, die Sie zum Testen der Sendungen verwenden möchten, bevor Sie diese abschicken. Es wird empfohlen, hierfür eine eigene private Facebook-Seite zu erstellen. Weitere Informationen zum Erstellen einer privaten Facebook-Seite finden Sie unter [Facebook-Testseite erstellen](../../social/using/publishing-on-facebook-walls.md#creating-a-test-facebook-page). Gehen Sie zur Auswahl der Testversand-Zielgruppe genauso vor, wie zur Auswahl der Hauptzielgruppe: [Hauptzielgruppe auswählen](#selecting-the-main-target).
+Über den Tab **[!UICONTROL Testversand-Zielgruppe]** können Sie die Facebook-Seite festlegen, die Sie zum Testen der Sendungen verwenden möchten, bevor Sie diese abschicken. Es wird empfohlen, hierfür eine eigene private Facebook-Seite zu erstellen. Weitere Informationen zum Erstellen einer privaten Facebook-Seite finden Sie unter [diese Seite](../../social/using/publishing-on-facebook-walls.md#creating-a-test-facebook-page). Gehen Sie zur Auswahl der Testversand-Zielgruppe genauso vor wie für die Hauptzielgruppe. [Weitere Informationen](#selecting-the-main-target)
 
 ![](assets/social_facebook_delivery_004.png)
 
@@ -62,7 +62,7 @@ Wählen Sie die Seiten aus, auf denen Sie Ihre Veröffentlichung posten möchten
 >
 >Wenn Sie dieselbe Facebook-Testseite für alle Sendungen verwenden, können Sie die Testversand-Zielgruppe in der Versandvorlage **[!UICONTROL Auf einer Markenseite veröffentlichen]** speichern, auf die über den Knoten **[!UICONTROL Ressourcen > Vorlagen > Versandvorlagen]** zugegriffen werden kann. Die Testversand-Zielgruppe wird dann standardmäßig bei jedem neuen Versand eingegeben.
 
-## Audience definieren {#defining-the-audience}
+## Definieren der Audience {#defining-the-audience}
 
 Wenn Sie lokale Segmente verwenden möchten, um zu verfeinern, welcher Teil der Öffentlichkeit die Veröffentlichung anzeigen darf, empfehlen wir, eine Facebook-Seite pro Segment zu erstellen (z. B.: Adobe Campaign Paris, Adobe Campaign London usw.).
 
@@ -73,13 +73,13 @@ Es ist jedoch auch möglich, die von Facebook verwendeten Zielgruppenfilter zu v
 * **[!UICONTROL Städte]**
 * **[!UICONTROL Sprachen]**
 
->[!IMPORTANT]
+>[!CAUTION]
 >
 >Verwenden Sie diese Funktion mit Vorsicht. In Versandberichten berücksichtigt die **[!UICONTROL Anz. Fans]** diese Facebook-Filter nicht.
 >
 >Facebook kann die Liste der Zielgruppenfilter sowie deren Werte ändern.
 
-## Nachrichteninhalt festlegen {#defining-message-content}
+## Nachrichteninhalt definieren {#defining-message-content}
 
 Wählen Sie den Veröffentlichungstyp über das Dropdown-Menü **[!UICONTROL Inhaltstyp]** aus.
 
@@ -110,7 +110,7 @@ Ein Versand vom Typ „Status mit Link“ kann Text, Bilder und einen Link entha
 
 Geben Sie die verschiedenen Felder ein:
 
->[!IMPORTANT]
+>[!CAUTION]
 >
 >Alle URLs müssen mit **„http://“** oder **„https://“** beginnen.
 
@@ -131,7 +131,7 @@ Geben Sie die verschiedenen Felder ein:
 
 1. Geben Sie im Feld **[!UICONTROL Bild]** die URL des Bildes ein, das links neben der Veröffentlichung angezeigt wird.
 
-   >[!IMPORTANT]
+   >[!CAUTION]
    >
    >Das Bild muss auf einer öffentlichen Internet-Seite gehostet werden, damit Facebook es hochladen kann.
 
@@ -148,7 +148,7 @@ Mit diesem Inhaltstyp können Sie einen Link zu einem YouTube-Video veröffentli
 
 Geben Sie die verschiedenen Felder ein:
 
->[!IMPORTANT]
+>[!CAUTION]
 >
 >Alle URLs müssen mit **„http://“** oder **„https://“** beginnen.
 
@@ -175,7 +175,7 @@ Geben Sie die verschiedenen Felder ein:
 
 ![](assets/social_facebook_delivery_photos.png)
 
-## Vorschau anzeigen {#previewing}
+## Vorschau {#previewing}
 
 Im Tab **[!UICONTROL Vorschau]** können Sie das Rendering der Veröffentlichung anzeigen.
 
@@ -188,9 +188,9 @@ Im Tab **[!UICONTROL Vorschau]** können Sie das Rendering der Veröffentlichung
 
 >[!NOTE]
 >
->Die Vorschau unterscheidet sich möglicherweise geringfügig von der endgültigen Facebook-Veröffentlichung. Es wird dringend empfohlen, vor dem endgültigen Versand einen Testversand abzuschicken, um ein genaues Rendering der Veröffentlichung zu sehen. Siehe [Testversand durchführen](#sending-the-proof).
+>Die Vorschau unterscheidet sich möglicherweise geringfügig von der endgültigen Facebook-Veröffentlichung. Es wird dringend empfohlen, vor dem endgültigen Versand einen Testversand abzuschicken, um ein genaues Rendering der Veröffentlichung zu sehen. [Weitere Informationen](#sending-the-proof).
 
-## Tracking-Konfiguration {#configuring-tracking}
+## Tracking konfigurieren {#configuring-tracking}
 
 Tracking kann in den Versandberichten und im Tab **[!UICONTROL Bearbeiten > Tracking]** des Versands und des Dienstes eingesehen werden.
 
@@ -204,11 +204,11 @@ Die Tracking-Konfiguration ist dieselbe wie bei einem E-Mail-Versand. Weiterfüh
 
 ## Testversand durchführen {#sending-the-proof}
 
-Es wird dringend empfohlen, vor dem endgültigen Versand einen Testversand Ihrer Veröffentlichung durchzuführen, um das genaue Rendering der Veröffentlichung einer privaten Facebook-Testseite anzuzeigen. Weitere Informationen zum Erstellen einer privaten Facebook-Testseite finden Sie unter [Facebook-Testseite erstellen](../../social/using/publishing-on-facebook-walls.md#creating-a-test-facebook-page). Die Schritte zur Auswahl der Zielgruppe für den Testversand werden unter [Testversand-Zielgruppe auswählen](#selecting-the-proof-target) beschrieben.
+Es wird dringend empfohlen, vor dem endgültigen Versand einen Testversand Ihrer Veröffentlichung durchzuführen, um das genaue Rendering der Veröffentlichung einer privaten Facebook-Testseite anzuzeigen. Weitere Informationen zum Erstellen einer privaten Facebook-Testseite finden Sie unter [diese Seite](../../social/using/publishing-on-facebook-walls.md#creating-a-test-facebook-page). Die Schritte zur Auswahl des Zielversands werden im Abschnitt [diesem Abschnitt](#selecting-the-proof-target).
 
 Der Testversand ist mit dem E-Mail-Versand identisch. Siehe [diesen Abschnitt](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
 
-## Nachricht senden {#sending-the-message}
+## Senden Sie die Nachricht {#sending-the-message}
 
 1. Nachdem der Inhalt validiert wurde, klicken Sie auf die Schaltfläche **[!UICONTROL Senden]**.
 1. Wählen Sie **[!UICONTROL Sendungen schnellstmöglich abschicken]** aus und klicken Sie auf die Schaltfläche **[!UICONTROL Analysieren]**.

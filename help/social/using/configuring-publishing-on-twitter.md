@@ -6,14 +6,14 @@ audience: social
 content-type: reference
 topic-tags: configuration
 exl-id: 2d2a6e32-587d-4a7b-ba1c-d9140da53f64
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: d11c918213e72fe4bf6adb464e516fac19b63d54
 workflow-type: tm+mt
-source-wordcount: '794'
-ht-degree: 100%
+source-wordcount: '784'
+ht-degree: 60%
 
 ---
 
-# Konfigurieren der Veröffentlichung auf Twitter{#configuring-publishing-on-twitter}
+# Konfigurationsschritte zur Veröffentlichung auf Twitter{#configuring-publishing-on-twitter}
 
 ![](../../assets/v7-only.svg)
 
@@ -30,26 +30,25 @@ Damit Adobe Campaign Tweets an Ihre Twitter-Konten senden kann, müssen Sie für
 
 Erstellen Sie zunächst ein oder mehrere Twitter-Konten, an die Ihre Tweets gesendet werden sollen.
 
-Um ein Twitter-Konto zu erstellen, navigieren Sie zu [https://twitter.com ](https://twitter.com).
+Um ein Twitter-Konto zu erstellen, navigieren Sie zu [https://twitter.com](https://twitter.com){target=&quot;_blank&quot;}.
 
 ## Testkonto in Twitter erstellen {#creating-a-test-account-on-twitter}
 
-Es wird außerdem empfohlen, ein privates Twitter-Konto zu erstellen, das für den Tweet-Testversand verwendet werden kann (weitere Informationen hierzu finden Sie unter [Testversand](../../social/using/publishing-on-twitter.md#sending-the-proof)):
+Erstellen Sie ein privates Twitter-Konto, das zum Senden verwendet werden kann. [Tweet-Testsendungen](../../social/using/publishing-on-twitter.md#sending-the-proof). Gehen Sie wie folgt vor, um ein privates Twitter-Konto zu erstellen:
 
-* Erstellen Sie ein neues Twitter-Konto.
-* Klicken Sie auf das Menü in der oberen rechten Ecke und wählen Sie **[!UICONTROL Einstellungen]**.
-* Wählen Sie den Tab **[!UICONTROL Sicherheit und Datenschutz]** und aktivieren Sie das Kästchen **[!UICONTROL Meine Tweets schützen]**.
-* Klicken Sie unten auf der Seite auf die Schaltfläche **[!UICONTROL Änderungen speichern]**.
+1. Erstellen Sie ein neues Twitter-Konto.
+1. Zugriff auf das Konto  **[!UICONTROL Einstellungen]**.
+1. Navigieren Sie zu **[!UICONTROL Datenschutz und Sicherheit]** und **[!UICONTROL Zielgruppe und Tagging]** und überprüfen Sie die **[!UICONTROL Protect Ihre Tweets]** -Option. Ihre Tweets und andere Kontoinformationen sind nur für Personen sichtbar, die Ihnen folgen.
 
 ![](assets/social_twitter_test_page.png)
 
-## Anwendung auf Twitter erstellen {#creating-an-application-on-twitter}
+## Erstellen einer Anwendung in Twitter {#creating-an-application-on-twitter}
 
 Damit Adobe Campaign Tweets an Ihre Twitter-Konten senden kann, müssen Sie pro Twitter-Konto eine Twitter-Anwendung erstellen. Gehen Sie hierzu wie folgt vor:
 
 1. Melden Sie sich bei Ihrem Twitter-Konto an.
-1. Geben Sie folgende Adresse in Ihren Browser ein: [https://apps.twitter.com/](https://apps.twitter.com/).
-1. Klicken Sie dann auf der rechten Seite auf die Schaltfläche **[!UICONTROL Neue App erstellen]**.
+1. Geben Sie folgende Adresse in Ihren Browser ein: [https://developer.twitter.com/en/apps](https://developer.twitter.com/en/apps).
+1. Klicken Sie anschließend auf **[!UICONTROL App erstellen]** rechts.
 
    ![](assets/social_create_twitter_app_001.png)
 
@@ -65,11 +64,13 @@ Für jede Twitter-Anwendung müssen Sie einen eigenen **[!UICONTROL Twitter]**-D
 
 Dieser Schritt erfordert gleichzeitigen Zugriff auf Ihre Adobe Campaign-Konsole und einen Internet-Browser, der bei Ihrem Twitter-Konto angemeldet ist:
 
-* **Twitter**: Wählen Sie die zuvor erstellte Anwendung aus ([https://dev.twitter.com/apps](https://dev.twitter.com/apps)) und klicken Sie auf den Tab **[!UICONTROL Schlüssel und Zugriffstoken]**.
+* in **Twitter**: von [diese Seite](https://developer.twitter.com/en/portal/projects-and-apps), wählen Sie die zuvor erstellte App aus und bearbeiten Sie die **App-Berechtigungen**.
 
    ![](assets/social_twitter_service_002.png)
 
-* **Adobe Campaign**: Wechseln Sie zum Tab **[!UICONTROL Profile und Zielgruppen]**, klicken Sie auf den Link **[!UICONTROL Dienste und Abonnements]** und klicken Sie auf die Schaltfläche **[!UICONTROL Erstellen]**.
+   Bearbeiten Sie die **Schlüssel und Token** Registerkarte , um auf Ihre App-Details zuzugreifen.
+
+* in **Adobe Campaign**: gehen Sie zu **[!UICONTROL Profile und Zielgruppen]** klicken Sie auf die **[!UICONTROL Dienste und Abonnements]** und klicken Sie auf **[!UICONTROL Erstellen]** Schaltfläche.
 
    ![](assets/social_twitter_service_007.png)
 
@@ -91,42 +92,43 @@ Dieser Schritt erfordert gleichzeitigen Zugriff auf Ihre Adobe Campaign-Konsole 
 
    * Wählen Sie die Schaltfläche **[!UICONTROL Speichern]** aus.
    * Klicken Sie in der Übersicht der Dienste auf den soeben erstellten Twitter-Dienst.
-   * Wählen Sie den Tab **[!UICONTROL Twitter-Seite]**. Das Twitter-Konto sollte angezeigt werden.
 
-      ![](assets/social_twitter_service_010.png)
+   <!-- * Select the **[!UICONTROL Twitter page]** tab. The Twitter account should be displayed. 
+    
+      ![](assets/social_twitter_service_010.png)-->
 
-1. Wählen Sie im Feld **[!UICONTROL Besucherordner]** den Besucherordner aus, in dem die Follower erstellt werden sollen. Weitere Informationen hierzu finden Sie im Abschnitt [Grundprinzip](../../social/using/publishing-on-twitter.md#operating-principle). Standardmäßig werden Follower im Stammordner des Ordners **[!UICONTROL Besucher]** erstellt.
+1. Im **[!UICONTROL Besucherordner]** -Feld den Ordner auswählen, in dem die Follower erstellt werden sollen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../social/using/publishing-on-twitter.md#operating-principle). Standardmäßig werden Follower im **[!UICONTROL Besucher]** Ordner.
 
    ![](assets/social_twitter_service_010_b.png)
 
-1. Kopieren Sie auf Twitter den Inhalt der Felder **[!UICONTROL Consumer Key (API Key)]** und **[!UICONTROL Consumer Secret (API Secret)]** und fügen Sie ihn in die Felder **[!UICONTROL Consumer Key]** und **[!UICONTROL Consumer Secret]** der Konsole ein.
+1. Kopieren Sie in Twitter den Inhalt der **[!UICONTROL Consumer Key (API Key)]** und **[!UICONTROL Kundengeheimnis (API-Geheimnis)]** und fügen Sie sie in das **[!UICONTROL Consumer key]** und **[!UICONTROL Verbrauchergeheimnis]** Felder der Campaign-Clientkonsole.
 
    ![](assets/social_twitter_service_012.png)
 
-1. Kopieren Sie auf Twitter den Inhalt der Felder **[!UICONTROL Zugriffstoken]** und **[!UICONTROL Zugriffstoken-Geheimnis]** und fügen Sie ihn in die Felder **[!UICONTROL Zugriffstoken]** und **[!UICONTROL Zugriffstoken-Geheimnis]** der Konsole ein.
+1. Kopieren Sie in Twitter den Inhalt der **[!UICONTROL Zugriffstoken]** und **[!UICONTROL Geheimer Zugriffstoken]** und fügen Sie sie in das **[!UICONTROL Zugriffstoken]** und **[!UICONTROL Zugriffstoken-Geheimnis]** Felder der Campaign-Clientkonsole.
 
    ![](assets/social_twitter_service_013.png)
 
-1. Klicken Sie in der Adobe Campaign-Konsole auf **[!UICONTROL Speichern]**. Die Delegierung des Schreibzugriffs an Adobe Campaign ist nun abgeschlossen.
+1. Klicken Sie in der Campaign-Clientkonsole auf **[!UICONTROL Speichern]**. Sie haben jetzt Schreibzugriff auf Adobe Campaign delegiert.
 
    ![](assets/social_twitter_service_014.png)
 
 >[!NOTE]
 >
->Sie müssen einen **[!UICONTROL Twitter]**-Dienst pro Twitter-Anwendung erstellen.
+>Sie müssen eine **[!UICONTROL Twitter]** Service pro Twitter-Anwendung.
 
-Der Workflow für die **[!UICONTROL Twitter-Konto-Synchronisation]** sorgt für das Synchronisieren von Twitter-Konten in Adobe Campaign. Weitere Informationen hierzu finden Sie unter [Facebook-Seiten-Synchronisation](../../social/using/publishing-on-facebook-walls.md#synchronizing-facebook-pages).
+Der Workflow für die **[!UICONTROL Twitter-Konto-Synchronisation]** sorgt für das Synchronisieren von Twitter-Konten in Adobe Campaign. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../social/using/publishing-on-facebook-walls.md#synchronizing-facebook-pages).
 
-## Twitter-Konto-Synchronisation {#synchronizing-twitter-accounts}
+## Twitter-Konten synchronisieren {#synchronizing-twitter-accounts}
 
 >[!IMPORTANT]
 >
->Damit der Workflow die Liste der Twitter-Abonnenten wiederherstellen kann, muss im Bearbeitungsbereich des mit dem Konto verknüpften Dienstes das Feld für die **[!UICONTROL Twitter-Konto-Synchronisation]** markiert sein. Weitere Informationen hierzu finden Sie unter [Delegieren von Schreibzugriff an Adobe Campaign](#delegating-write-access-to-adobe-campaign).
+>Damit der Workflow die Liste der Twitter-Abonnenten wiederherstellen kann, muss im Bearbeitungsbereich des mit dem Konto verknüpften Dienstes das Feld für die **[!UICONTROL Twitter-Konto-Synchronisation]** markiert sein. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](#delegating-write-access-to-adobe-campaign).
 
 Mit dem Workflow für die **[!UICONTROL Twitter-Konto-Synchronisation]**, der über den Knoten **[!UICONTROL Administration > Betreibung > Technische Workflows > Social Marketing]** aufgerufen wird, können Sie zuvor mit Adobe Campaign konfigurierte Twitter-Konten synchronisieren. Standardmäßig wird dieser Workflow jeden Donnerstag um 7.30 Uhr ausgelöst.
 
 >[!NOTE]
 >
->Der Workflow kann jederzeit durch Ausführung der erwarteten Aufgabenverarbeitung gestartet werden. Sie können auch die Planung bearbeiten, um die Häufigkeit der Auslösung des Workflows zu ändern. Weiterführende Informationen zur Planung finden Sie in [diesem Abschnitt](../../workflow/using/scheduler.md).
+>Sie können den Workflow jederzeit starten, indem Sie die erwartete Aufgabenverarbeitung ausführen. Sie können auch die Planung bearbeiten, um die Häufigkeit der Auslösung des Workflows zu ändern. Weiterführende Informationen zur Planung finden Sie in [diesem Abschnitt](../../workflow/using/scheduler.md).
 
-Sie können nun Tweets an Ihre Twitter-Konten und Direktnachrichten an Ihre Follower senden. Weiterführende Informationen finden Sie unter [Veröffentlichen auf Twitter](../../social/using/publishing-on-twitter.md).
+Sie können nun Tweets an Ihre Twitter-Konten und Direktnachrichten an Ihre Follower senden. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../social/using/publishing-on-twitter.md).
