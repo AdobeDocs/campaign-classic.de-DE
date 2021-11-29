@@ -6,7 +6,7 @@ audience: social
 content-type: reference
 topic-tags: configuration
 exl-id: 2135a836-245f-406e-b351-c27d38e0f9fd
-source-git-commit: d11c918213e72fe4bf6adb464e516fac19b63d54
+source-git-commit: b5334de18eca8fc1147ae0c42fe23a6932bf71d2
 workflow-type: tm+mt
 source-wordcount: '1029'
 ht-degree: 92%
@@ -145,7 +145,7 @@ Dieser Schritt erfordert Zugriff auf Ihre Adobe Campaign-Konsole und einen Inte
 
 Der Workflow für die **[!UICONTROL Facebook-Seiten-Synchronisation]** synchronisiert alle vom Facebook-Konto verwalteten Seiten, damit Sie direkt über Adobe Campaign auf der Pinnwand posten können. [Weitere Informationen](#synchronizing-facebook-pages).
 
-## Facebook-Seiten-Synchronisation {#synchronizing-facebook-pages}
+## Facebook-Seiten synchronisieren {#synchronizing-facebook-pages}
 
 Mit dem Workflow für die **[!UICONTROL Facebook-Seiten-Synchronisation]**, der über den Knoten **[!UICONTROL Administration > Produktion > Technische Workflows > Social Marketing]** aufgerufen wird, können Sie die Seiten des zuvor konfigurierten Facebook-Kontos (in Adobe Campaign) synchronisieren. Standardmäßig ist dieser Workflow so konfiguriert, dass er einmal täglich oder immer dann ausgeführt wird, wenn ein Administrator auf die **[!UICONTROL Antrag auf Genehmigung]** im Dienstkonfigurationsbildschirm. [Weitere Informationen](#delegating-write-access-to-adobe-campaign).
 
