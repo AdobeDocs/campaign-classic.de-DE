@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 235e8abcaed2659d745ebfeca24dc2f0278a6e5a
+source-git-commit: f7c4603e389b19c057ee72bb50ed30d03b60f4bc
 workflow-type: tm+mt
-source-wordcount: '600'
-ht-degree: 100%
+source-wordcount: '652'
+ht-degree: 96%
 
 ---
 
@@ -40,8 +40,9 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 <tr> 
 <td>CentOs</td>
 <td>
-<p>8.x (64 Bit)</p>
+<p>8.x (64 Bit) </br><strong>Wichtig:</strong> CentOS Linux 8 wird am 31. Dezember 2021 das Ende der Lebensdauer (End of Life, EOL) erreichen. Weitere Informationen finden Sie im Abschnitt <a href="../../rn/using/deprecated-features.md">Eingestellte Funktionen</a> Seite.</p>
 <p>7.x (64 Bit)</p>
+<p><strong>Wichtig:</strong> Wenn Sie RHEL verwenden, müssen Sie SELinux deaktivieren oder Ihre Programmierer benutzerdefinierte SELinux-Regeln schreiben lassen, um zu überprüfen, ob ein aktiviertes SELinux keine Probleme mit Campaign-Vorgängen verursacht.</p>
 </td>
 </tr>
 <tr>
@@ -153,7 +154,7 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 <p>2016</p>
 <p>2014</p>
 <p>2012 – SP1 und SP2</p>
-<p><strong>Wichtig:</strong> Microsoft SQL Server wird nicht als primäre Datenbank unterstützt, wenn der Campaign-Server auf Linux läuft. [Weitere Informationen](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers).</p>
+<p><strong>Wichtig:</strong> Microsoft SQL Server wird nicht als primäre Datenbank unterstützt, wenn der Campaign-Server auf Linux läuft. <a href="../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers">Weitere Informationen</a>.</p>
 </td>
 </tr>
 </tbody>
