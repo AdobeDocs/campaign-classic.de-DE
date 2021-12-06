@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: filtering-data
 exl-id: 85ded096-7d27-41b3-8ef2-93f5ca8def82
 source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '276'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -51,10 +51,10 @@ Gehen Sie wie folgt vor:
    ![](assets/s_ncs_user_filter_parameters.png)
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**, um den Filter den vordefinierten Filtern für diesen Listentyp hinzuzufügen.
-1. Sie können diesen Filter jetzt im **[!UICONTROL Abonnements]** Tab des Empfängerprofils; Sie können auf den Filter &quot;Unbekanntes E-Mail-Format&quot;zugreifen, indem Sie auf **[!UICONTROL Filter]** Schaltfläche.
+1. Der Filter &quot;Unbekanntes E-Mail-Format&quot; kann nun in der Registerkarte **[!UICONTROL Abonnements]** des Empfängerprofils angewendet werden und ist über die Schaltfläche **[!UICONTROL Filter]** zugänglich.
 
    ![](assets/s_ncs_user_filter_on_events.png)
 
-   Der Name des aktuellen Filters wird oberhalb der Liste angezeigt. Um den Filter aufzuheben, klicken Sie auf das Symbol **[!UICONTROL Filter entfernen]**.
+   Der Name des aktuellen Filters wird oberhalb der Liste angezeigt. Um den Filter aufzuheben, klicken Sie auf das Symbol **[!UICONTROL Diesen Filter entfernen]**.
 
    ![](assets/s_ncs_user_filter_on_subscriptions.png)
