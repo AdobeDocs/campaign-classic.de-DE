@@ -509,7 +509,7 @@ ht-degree: 99%
    + Fortgeschrittene Optionen {#advanced-management}
       + [Workflow-Eigenschaften](workflow/using/workflow-properties.md)
       + [Erweiterte Parameter](workflow/using/advanced-parameters.md)
-      + [JavaScript-Scripts und -Vorlagen](workflow/using/javascript-scripts-and-templates.md)
+      + [JavaScript-Skripte und -Vorlagen](workflow/using/javascript-scripts-and-templates.md)
       + [Beispiele für JavaScript-Code in Workflows](workflow/using/javascript-in-workflows.md)
       + [Auf eine externe Datenbank zugreifen](workflow/using/accessing-an-external-database--fda-.md)
       + [Verwalten von Berechtigungen](workflow/using/managing-rights.md)
@@ -790,8 +790,8 @@ ht-degree: 99%
       + [Regenerieren von Schemata](configuration/using/regenerating-schemas.md)
       + [Beispiele für Schemabearbeitung](configuration/using/examples-of-schemas-edition.md)
    + Formulare {#input-forms}
-      + [Formular identifizieren](configuration/using/identifying-a-form.md)
-      + [Formulare bearbeiten](configuration/using/editing-forms.md)
+      + [Identifizieren eines Formulars](configuration/using/identifying-a-form.md)
+      + [Bearbeiten von Formularen](configuration/using/editing-forms.md)
       + [Formularstruktur](configuration/using/form-structure.md)
    + API {#api}
       + [Über Web-Dienste](configuration/using/about-web-services.md)
