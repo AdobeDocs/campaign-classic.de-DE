@@ -5,10 +5,11 @@ description: Diese Beispiele zeigen, wie Sie JavaScript-Code in einem Workflow v
 audience: workflow
 content-type: reference
 topic-tags: advanced-management
-source-git-commit: fa3a3e1801738928876734aa42342f0a5b49e320
-workflow-type: tm+mt
+exl-id: 7213ea64-3dec-4b16-9d93-4ae941ddfaa7
+source-git-commit: c86559d5ab40b206d701c46bb01d3ba61c835e8b
+workflow-type: ht
 source-wordcount: '1775'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
@@ -18,52 +19,52 @@ ht-degree: 3%
 
 Diese Beispiele zeigen, wie Sie JavaScript-Code in einem Workflow verwenden können:
 
-* [In die Datenbank schreiben](#write-example)
-* [Abfrage der Datenbank](#read-example)
-* [Trigger eines Workflows mit einer statischen SOAP-Methode](#trigger-example)
-* [Interagieren Sie mit der Datenbank mithilfe einer nicht statischen SOAP-Methode.](#interact-example)
+* [Schreiben in die Datenbank](#write-example)
+* [Abfragen der Datenbank](#read-example)
+* [Auslösen eines Workflows mit einer statischen SOAP-Methode](#trigger-example)
+* [Interagieren mit der Datenbank mithilfe einer nicht statischen SOAP-Methode](#interact-example)
 
-[Weitere Infos](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=de) über statische und nicht statische SOAP-Methoden.
+[Weitere Informationen](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=de) über statische und nicht statische SOAP-Methoden.
 
 In diesen Beispielen wird die Erweiterung ECMAScript for XML (E4X) verwendet. Mit dieser Erweiterung können Sie JavaScript-Aufrufe und XML-Primitive im selben Skript kombinieren.
 
 Gehen Sie wie folgt vor, um diese Beispiele auszuprobieren:
 
-1. Erstellen Sie einen Workflow und fügen Sie dem Workflow diese Aktivitäten hinzu:
-   1. Aktivität starten
+1. Erstellen Sie einen Workflow und fügen Sie die folgenden Aktivitäten zum Workflow hinzu:
+   1. Startaktivität
    1. JavaScript-Code-Aktivität
    1. Endaktivität
 
-   [Weitere Infos](building-a-workflow.md) über das Erstellen von Workflows.
+   [Weitere Informationen](building-a-workflow.md) über das Erstellen von Workflows.
 
-1. Fügen Sie einer Aktivität den JavaScript-Code hinzu. [Weitere Informationen](advanced-parameters.md).
+1. Fügen Sie den JavaScript-Code zu einer Aktivität hinzu. [Weitere Informationen](advanced-parameters.md).
 1. Speichern Sie den Workflow.
 1. Testen Sie die Beispiele:
-   1. Workflow starten. [Weitere Informationen](starting-a-workflow.md).
-   1. Öffnen Sie das Journal. [Weitere Informationen](monitoring-workflow-execution.md#displaying-logs).
+   1. Starten Sie den Workflow. [Weitere Informationen](starting-a-workflow.md).
+   1. Öffnen Sie das Protokoll. [Weitere Informationen](monitoring-workflow-execution.md#displaying-logs).
 
-## Beispiel 1: in die Datenbank schreiben{#write-example}
+## Beispiel 1: In Datenbank schreiben{#write-example}
 
-Zum Schreiben in die Datenbank können Sie die statische `Write` -Methode `xtk:session` schema:
+Zum Schreiben in die Datenbank können Sie die statische `Write`-Methode mit dem `xtk:session`-Schema verwenden:
 
-1. Erstellen Sie eine Schreibanforderung in XML.
+1. Erstellen Sie eine Schreibabfrage in XML.
 
 1. Schreiben Sie den Datensatz:
 
-   1. Rufen Sie die `Write` -Methode `xtk:session` Schema.
+   1. Rufen Sie die `Write`-Methode mit dem `xtk:session`-Schema auf.
 
       >[!IMPORTANT]
-      > Wenn Sie Adobe Campaign v8 verwenden, empfehlen wir, den Staging-Mechanismus mit dem **Aufnahme** und **Datenaktualisierung/-löschung** APIs für die `Write` -Methode in einer Snowflake-Tabelle. [Mehr dazu](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target=&quot;_blank&quot;}.
+      > Wenn Sie Adobe Campaign v8 verwenden, empfehlen wir, den Staging-Mechanismus mit den **Aufnahme**- und **Datenaktualisierungs/-löschungs**-APIs für die `Write`-Methode in einer Snowflake-Tabelle zu verwenden. [Weitere Informationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html?lang=de){target=&quot;_blank&quot;}.
 
-   1. Übergeben Sie den XML-Code als Argument für die Schreibanforderung.
+   1. Übergeben Sie den XML-Code als Argument für die Schreibabfrage.
 
-### Schritt 1: Erstellen einer Schreibanforderung
+### Schritt 1: Erstellen einer Schreibabfrage
 
 Sie können Datensätze hinzufügen, aktualisieren und löschen.
 
-#### Datensatz einfügen
+#### Einfügen eines Datensatzes
 
-Da die `insert` -Vorgang der Standardvorgang ist, müssen Sie ihn nicht angeben.
+Da der `insert`-Vorgang der Standardvorgang ist, müssen Sie ihn nicht angeben.
 
 Geben Sie diese Informationen als XML-Attribute an:
 
@@ -79,9 +80,9 @@ var myXML = <recipient xtkschema="nms:recipient"
     email="isabel.garcia@mycompany.com"/>
 ```
 
-#### Datensatz aktualisieren
+#### Aktualisieren eines Datensatzes
 
-Verwenden Sie die `_update` Vorgang. [Weitere Informationen](../../configuration/using/data-oriented-apis.md).
+Verwenden Sie den `_update`-Vorgang. [Weitere Informationen](../../configuration/using/data-oriented-apis.md).
 
 Geben Sie diese Informationen als XML-Attribute an:
 
@@ -99,14 +100,14 @@ var myXML = <recipient xtkschema="nms:recipient"
     _key="@email"/>
 ```
 
-#### Datensatz löschen
+#### Löschen eines Datensatzes
 
-Verwenden Sie die `DeleteCollection` -Methode. [Weitere Informationen](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html).
+Verwenden Sie die `DeleteCollection`-Methode. [Weitere Informationen](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html?lang=de).
 
 Geben Sie diese Informationen an:
 
 * Das Schema der zu ändernden Tabelle
-* Die `where` -Klausel, die erforderlich ist, um den zu aktualisierenden Datensatz in Form eines XML-Elements zu identifizieren
+* Die `where`-Klausel, die erforderlich ist, um den zu aktualisierenden Datensatz in Form eines XML-Elements zu identifizieren
 
 Beispiel:
 
@@ -120,9 +121,9 @@ xtk.session.DeleteCollection(
     )
 ```
 
-### Schritt 2: den Datensatz schreiben
+### Schritt 2: Datensatz schreiben
 
-Rufen Sie die nicht-statischen `Write` -Methode `xtk:session` schema:
+Rufen Sie die nicht statische `Write`-Methode mit dem `xtk:session`-Schema auf:
 
 ```javascript
 xtk.session.Write(myXML)
@@ -130,7 +131,7 @@ xtk.session.Write(myXML)
 
 Für diese Methode wird kein Wert zurückgegeben.
 
-Fügen Sie einer JavaScript-Code-Aktivität im Workflow den vollständigen Code hinzu:
+Fügen Sie zu einer JavaScript-Code-Aktivität im Workflow den vollständigen Code hinzu:
 
 ```javascript
 var myXML = <recipient xtkschema="nms:recipient"
@@ -146,7 +147,7 @@ In diesem Video wird gezeigt, wie in die Datenbank geschrieben wird:
 
 ## Beispiel 2: Datenbank abfragen{#read-example}
 
-Um die Datenbank abzufragen, können Sie die nicht-statische `xtk:queryDef` Instanzmethode:
+Um die Datenbank abzufragen, können Sie die nicht statische `xtk:queryDef`-Instanzmethode verwenden:
 
 1. Erstellen Sie eine Abfrage in XML.
 1. Erstellen Sie ein Abfrageobjekt.
@@ -154,7 +155,7 @@ Um die Datenbank abzufragen, können Sie die nicht-statische `xtk:queryDef` Inst
 
 ### Schritt 1: Abfrage erstellen
 
-Geben Sie den XML-Code für eine `queryDef` Entität.
+Geben Sie den XML-Code für eine `queryDef`-Entität an.
 
 Syntax:
 
@@ -168,22 +169,22 @@ Geben Sie diese Informationen an:
 
 * Das Schema der zu lesenden Tabelle
 * Der Vorgang
-* Die zurückzugebenden Spalten in einer `select` clause
-* Die Bedingungen in einer `where` clause
-* Die Filterkriterien in einer `orderBy` clause
+* Die zurückzugebenden Spalten in einer `select`-Klausel
+* Die Bedingungen in einer `where`-Klausel
+* Die Filterkriterien in einer `orderBy`-Klausel
 
 Sie können die folgenden Vorgänge verwenden:
 
-| Prinzip | Ergebnis |
+| Vorgang | Ergebnis |
 | --- | --- |
-| `select` | Null oder mehr Elemente werden als Sammlung zurückgegeben. |
+| `select` | Null oder mehr Elemente werden als Kollektion zurückgegeben. |
 | `getIfExists` | Ein Element wird zurückgegeben. Wenn kein Übereinstimmungselement vorhanden ist, wird ein leeres Element zurückgegeben. |
 | `get` | Ein Element wird zurückgegeben. Wenn kein Übereinstimmungselement vorhanden ist, wird ein Fehler zurückgegeben. |
-| `count` | Die Anzahl der übereinstimmenden Datensätze wird in Form eines Elements mit einer `count` -Attribut. |
+| `count` | Die Anzahl der übereinstimmenden Datensätze wird in Form eines Elements mit einem `count`-Attribut zurückgegeben. |
 
-Schreiben Sie die `select`, `where`und `orderBy` als XML-Elemente:
+Schreiben Sie die `select`-, `where`- und `orderBy`-Klauseln als XML-Elemente:
 
-* `select` clause
+* `select`-Klausel
 
    Geben Sie die zurückzugebenden Spalten an. Um beispielsweise den Vor- und Nachnamen der Person auszuwählen, schreiben Sie folgenden Code:
 
@@ -194,15 +195,15 @@ Schreiben Sie die `select`, `where`und `orderBy` als XML-Elemente:
    </select>
    ```
 
-   Mit dem `nms:recipient` -Schema, werden Elemente in diesem Formular zurückgegeben:
+   Mit dem `nms:recipient`-Schema werden Elemente in der folgenden Form zurückgegeben:
 
    ```xml
    <recipient firstName="Bo" lastName="Didley"/>
    ```
 
-* `where` clause
+* `where`-Klausel
 
-   Um Bedingungen festzulegen, verwenden Sie eine `where` -Klausel. Um beispielsweise die Datensätze auszuwählen, die sich im **Schulung** -Ordner können Sie diesen Code schreiben:
+   Um Bedingungen festzulegen, verwenden Sie eine `where`-Klausel. Um beispielsweise die Datensätze auszuwählen, die sich im Ordner **Training** befinden, können Sie den folgenden Code schreiben:
 
    ```xml
    <where>
@@ -210,16 +211,16 @@ Schreiben Sie die `select`, `where`und `orderBy` als XML-Elemente:
    </where>
    ```
 
-   Verwenden Sie beim Kombinieren mehrerer Ausdrücke den booleschen Operator im ersten Ausdruck. Um beispielsweise alle Personen mit Namen Isabel Garcia auszuwählen, können Sie diesen Code schreiben:
+   Verwenden Sie beim Kombinieren mehrerer Ausdrücke den booleschen Operator im ersten Ausdruck. Um beispielsweise alle Personen mit Namen Isabel Garcia auszuwählen, können Sie den folgenden Code schreiben:
 
    ```xml
    <condition boolOperator="AND" expr="@firstName='Isabel'"/>
    <condition expr="@lastName='Garcia'"/>
    ```
 
-* `orderBy` clause
+* `orderBy`-Klausel
 
-   Um die Ergebnismenge zu sortieren, geben Sie die `orderBy` -Klausel als XML-Element mit dem `sortDesc` -Attribut. Um beispielsweise die Nachnamen in aufsteigender Reihenfolge zu sortieren, können Sie diesen Code schreiben:
+   Um die Ergebnismenge zu sortieren, geben Sie die `orderBy`-Klausel als XML-Element mit dem `sortDesc`-Attribut an. Um beispielsweise die Nachnamen in aufsteigender Reihenfolge zu sortieren, können Sie den folgenden Code schreiben:
 
    ```xml
    <orderBy>
@@ -229,7 +230,7 @@ Schreiben Sie die `select`, `where`und `orderBy` als XML-Elemente:
 
 ### Schritt 2: Abfrageobjekt erstellen
 
-Um eine Entität aus dem XML-Code zu erstellen, verwenden Sie die `create(`*`content`*`)` -Methode:
+Um eine Entität aus dem XML-Code zu erstellen, verwenden Sie die `create(`*`content`*`)`-Methode:
 
 ```javascript
 var query = xtk.queryDef.create(
@@ -238,28 +239,28 @@ var query = xtk.queryDef.create(
     </queryDef>)
 ```
 
-Präfix `create(`*`content`*`)` -Methode mit dem Schema der zu erstellenden Entität.
+Stellen Sie der `create(`*`content`*`)`-Methode das Schema der zu erstellenden Entität als Präfix voran.
 
-Die *`content`* -Argument ist ein Zeichenfolgenargument und optional. Dieses Argument enthält den XML-Code, der die Entität beschreibt.
+Das *`content`*-Argument ist ein Zeichenfolgenargument und optional. Dieses Argument enthält den XML-Code, der die Entität beschreibt.
 
 ### Schritt 3: Abfrage ausführen
 
 Führen Sie folgende Schritte aus:
 
-1. Rufen Sie die `ExecuteQuery` -Methode `queryDef` entity:
+1. Rufen Sie die `ExecuteQuery`-Methode mit der `queryDef`-Entität auf:
 
    ```javascript
    var res = query.ExecuteQuery()
    ```
 
 1. Verarbeiten Sie die Ergebnisse:
-   1. Über die Ergebnisse der `select` -Vorgang mithilfe eines Schleifenkonstrukts.
-   1. Testen Sie die Ergebnisse mithilfe des `getIfExists` Vorgang.
-   1. Zählen Sie die Ergebnisse mithilfe der `count` Vorgang.
+   1. Iterieren Sie über die Ergebnisse des `select`-Vorgangs mithilfe eines Schleifenkonstrukts.
+   1. Testen Sie die Ergebnisse mithilfe des `getIfExists`-Vorgangs.
+   1. Zählen Sie die Ergebnisse mithilfe des `count`-Vorgangs.
 
-#### Ergebnisse einer `select` operation
+#### Ergebnisse eines `select`-Vorgangs
 
-Alle Übereinstimmungen werden als Sammlung zurückgegeben:
+Alle Übereinstimmungen werden als Kollektion zurückgegeben:
 
 ```xml
 <recipient-collection>
@@ -268,16 +269,16 @@ Alle Übereinstimmungen werden als Sammlung zurückgegeben:
 </recipient-collection>
 ```
 
-Um die Ergebnisse zu durchlaufen, verwenden Sie die `for each` loop:
+Um die Ergebnisse zu durchlaufen, verwenden Sie die `for each`-Schleife:
 
 ```javascript
 for each (var rcp in res:recipient)
     logInfo(rcp.@email)
 ```
 
-Die Schleife enthält eine lokale Empfängervariable. Für jeden Empfänger, der in der Empfängersammlung zurückgegeben wird, wird die E-Mail des Empfängers ausgegeben. [Weitere Infos](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html) über die `logInfo` -Funktion.
+Die Schleife enthält eine lokale Empfängervariable. Für jeden Empfänger, der in der Empfängerkollektion zurückgegeben wird, wird die E-Mail des Empfängers ausgedruckt. [Weitere Informationen](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html?lang=de) über die `logInfo`-Funktion.
 
-#### Ergebnisse einer `getIfExists` operation
+#### Ergebnisse eines `getIfExists`-Vorgangs
 
 Jede Übereinstimmung wird als Element zurückgegeben:
 
@@ -291,7 +292,7 @@ Wenn keine Übereinstimmung vorliegt, wird ein leeres Element zurückgegeben:
 <recipient/>
 ```
 
-Sie können auf den Primärschlüsselknoten verweisen, z. B. auf die `@id` Attribut:
+Sie können auf den Primärschlüsselknoten verweisen, z. B. das `@id`-Attribut:
 
 ```javascript
 if (res.@id !=undefined)
@@ -300,7 +301,7 @@ if (res.@id !=undefined)
     }
 ```
 
-#### Ergebnis eines `get` operation
+#### Ergebnis eines `get`-Vorgangs
 
 Eine Übereinstimmung wird als Element zurückgegeben:
 
@@ -312,17 +313,17 @@ Wenn keine Übereinstimmung vorliegt, wird ein Fehler zurückgegeben.
 
 >[!TIP]
 >
->Wenn Sie wissen, dass eine Übereinstimmung vorliegt, verwenden Sie die `get` Vorgang. Verwenden Sie andernfalls die `getIfExists` Vorgang. Wenn Sie diese Best Practice verwenden, zeigen Fehler unerwartete Probleme. Wenn Sie `get` -Vorgang verwenden, verwenden Sie nicht die `try…catch` -Anweisung. Das Problem wird durch den Fehlerverarbeitungsprozess des Workflows behoben.
+>Wenn Sie wissen, dass eine Übereinstimmung vorliegt, verwenden Sie den `get`-Vorgang. Verwenden Sie andernfalls den `getIfExists`-Vorgang. Wenn Sie diese Best Practice verwenden, zeigt das Auftreten von Fehlern, dass unerwartete Probleme vorliegen. Wenn Sie den `get`-Vorgang verwenden, verwenden Sie nicht die Anweisung `try…catch`. Das Problem wird durch den Fehlerverarbeitungsprozess des Workflows behoben.
 
-#### Ergebnis eines `count` operation
+#### Ergebnis eines `count`-Vorgangs
 
-Ein Element mit dem `count` -Attribut zurückgegeben wird:
+Ein Element mit dem `count`-Attribut wird zurückgegeben:
 
 ```xml
 <recipient count="200">
 ```
 
-Informationen zur Verwendung des Ergebnisses finden Sie im Abschnitt `@count` Attribut:
+Um das Ergebnis zu verwenden, verweisen Sie auf das `@count`-Attribut:
 
 ```javascript
 if (res.@count > 0)
@@ -331,7 +332,7 @@ if (res.@count > 0)
     }
 ```
 
-Für `select` -Operation, fügen Sie diesen Code einer JavaScript-Code -Aktivität im Workflow hinzu:
+Fügen Sie für den `select`-Vorgang den folgenden Code zu einer JavaScript-Code-Aktivität im Workflow hinzu:
 
 ```javascript
 var myXML =
@@ -350,34 +351,34 @@ for each (var rcp in res.recipient)
     logInfo(rcp.@firstName + " " + rcp.@lastName)
 ```
 
-Da die `select` -Vorgang der Standardvorgang ist, müssen Sie ihn nicht angeben.
+Da der `select`-Vorgang der Standardvorgang ist, müssen Sie ihn nicht angeben.
 
 In diesem Video wird gezeigt, wie aus der Datenbank gelesen wird:
 >[!VIDEO](https://video.tv.adobe.com/v/18475/?learn=on)
 
-## Trigger eines Workflows {#trigger-example}
+## Auslösen eines Workflows {#trigger-example}
 
-Sie können Workflows programmgesteuert beispielsweise in technischen Workflows oder zur Verarbeitung von Informationen verwenden, die ein Benutzer auf einer Webanwendungsseite eingegeben hat.
+Sie können Workflows programmgesteuert auslösen, beispielsweise in technischen Workflows oder zur Verarbeitung von Informationen, die ein Benutzer auf einer Web-Anwendungsseite eingegeben hat.
 
-Die Auslösung von Workflows funktioniert durch die Verwendung von Ereignissen. Sie können diese Funktionen für Ereignisse verwenden:
+Das Auslösen von Workflows erfolgt durch die Verwendung von Ereignissen. Sie können die folgenden Funktionen für Ereignisse verwenden:
 
-* Um ein Ereignis zu posten, können Sie das statische `PostEvent` -Methode. [Weitere Informationen](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html).
-* Um ein Ereignis zu erhalten, können Sie die **[!UICONTROL Externes Signal]** Aktivität. [Weitere Informationen](external-signal.md).
+* Um ein Ereignis zu posten, können Sie die statische `PostEvent`-Methode verwenden. [Weitere Informationen](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html?lang=de).
+* Um ein Ereignis zu erhalten, können Sie die Aktivität **[!UICONTROL Externes Signal]** verwenden. [Weitere Informationen](external-signal.md).
 
-Sie haben verschiedene Möglichkeiten, Workflows Trigger:
+Sie haben verschiedene Möglichkeiten, Workflows auszulösen:
 
-* Sie können einen Workflow inline, d. h. aus dem Hauptskript eines **[!UICONTROL JavaScript-Code]** Aktivität.
-* Sie können einen Workflow nach Abschluss eines anderen Triggers ausführen:
-   * Fügen Sie dem **[!UICONTROL Ende]** Aktivität des ersten Workflows.
-   * Fügen Sie die **[!UICONTROL Externes Signal]** -Aktivität am Anfang des Zielgruppen-Workflows.
+* Sie können einen Workflow inline auslösen, d. h. vom Hauptskript einer **[!UICONTROL JavaScript-Code]**-Aktivität aus.
+* Sie können einen Workflow nach Abschluss eines anderen auslösen:
+   * Fügen Sie zur **[!UICONTROL Endaktivität]** des ersten Workflows ein Initialisierungsscript hinzu.
+   * Fügen Sie die Aktivität **[!UICONTROL Externes Signal]** am Beginn des Ziel-Workflows hinzu.
 
       Nach Abschluss des ersten Workflows wird ein Ereignis gepostet. Die ausgehende Transition wird aktiviert und die Ereignisvariablen werden ausgefüllt. Anschließend wird das Ereignis vom Ziel-Workflow empfangen.
 
       >[!TIP]
       >
-      >Wenn Sie ein Skript zu einer Aktivität hinzufügen, empfiehlt es sich, den Aktivitätsnamen in doppelte Bindestriche einzuschließen, beispielsweise `-- end --`. [Weitere Infos](workflow-best-practices.md) Best Practices für Workflows.
+      >Wenn Sie ein Script zu einer Aktivität hinzufügen, empfiehlt es sich, den Aktivitätsnamen in doppelte Bindestriche einzuschließen, beispielsweise `-- end --`. [Weitere Informationen](workflow-best-practices.md) zu Best Practices für Workflows.
 
-Syntax der `PostEvent` -Methode:
+Syntax der `PostEvent`-Methode:
 
 ```javascript
 PostEvent(
@@ -389,7 +390,7 @@ PostEvent(
 )
 ```
 
-In diesem Beispiel wird nach Abschluss des Workflows ein kurzer Text an die **Signal** der **wkfExampleReceiver** workflow:
+In diesem Beispiel wird nach Abschluss des Workflows ein kurzer Text an die **Signalaktivität** des Workflows **wkfExampleReceiver** übergeben:
 
 ```javascript
 var strLabel = "Adobe Campaign, Marketing that delivers"
@@ -401,41 +402,41 @@ xtk.workflow.PostEvent(
     false)
 ```
 
-Da der letzte Parameter auf `false`, die **wkfExampleReceiver** Der Workflow wird jedes Mal ausgelöst, wenn der erste Workflow abgeschlossen ist.
+Da der letzte Parameter auf `false` festgelegt ist, wird der Workflow **wkfExampleReceiver** jedes Mal ausgelöst, wenn der erste Workflow abgeschlossen ist.
 
-Beachten Sie beim Trigger von Workflows die folgenden Grundsätze:
+Beachten Sie beim Auslösen eines Workflows die folgenden Grundsätze:
 
-* Die `PostEvent` -Befehl wird asynchron ausgeführt. Der Befehl wird in die Serverwarteschlange gestellt. Die Methode gibt nach der Veröffentlichung des Ereignisses zurück.
-* Der Zielgruppen-Workflow muss gestartet werden. Andernfalls wird ein Fehler in die Protokolldatei geschrieben.
-* Wenn der Zielgruppen-Workflow ausgesetzt wird, wird die `PostEvent` in die Warteschlange gestellt, bis der Workflow fortgesetzt wird.
-* Die ausgelöste Aktivität erfordert nicht, dass eine Aufgabe ausgeführt wird.
+* Der Befehl `PostEvent` wird asynchron ausgeführt. Der Befehl wird in die Server-Warteschlange eingefügt. Die Methode gibt nach der Veröffentlichung des Ereignisses etwas zurück.
+* Der Ziel-Workflow muss gestartet werden. Andernfalls wird ein Fehler in die Protokolldatei geschrieben.
+* Wenn der Ziel-Workflow ausgesetzt wird, wird der Befehl `PostEvent` in die Warteschlange aufgenommen, bis der Workflow fortgesetzt wird.
+* Die ausgelöste Aktivität erfordert nicht, dass eine Aufgabe in Bearbeitung ist.
 
-In diesem Video wird gezeigt, wie statische API-Methoden verwendet werden:
+In diesem Video wird gezeigt, wie statische API-Methoden verwendet werden können:
 >[!VIDEO](https://video.tv.adobe.com/v/18481/?learn=on)
 
-In diesem Video wird gezeigt, wie Trigger-Workflows ausgeführt werden:
+In diesem Video wird gezeigt, wie Workflows ausgelöst werden:
 >[!VIDEO](https://video.tv.adobe.com/v/18485/?learn=on)
 
 ## Interagieren mit der Datenbank {#interact-example}
 
 Diese Beispiele zeigen, wie Sie diese Aktionen durchführen:
 
-* Verwenden Sie die `get` und `create` Methoden für Schemata zur Verwendung nicht statischer SOAP-Methoden
+* Verwenden Sie die Methoden `get` und `create` für Schemas zur Verwendung nicht statischer SOAP-Methoden
 * Erstellen von Methoden zum Ausführen von SQL-Abfragen
-* Verwenden Sie die `write` Methode zum Einfügen, Aktualisieren und Löschen von Datensätzen
+* Verwenden Sie die `write`-Methode zum Einfügen, Aktualisieren und Löschen von Datensätzen
 
 Führen Sie folgende Schritte aus:
 
 1. Definieren Sie die Abfrage:
 
-   * Abrufen einer Entität mithilfe der `create` -Methode für das entsprechende Schema - z. B. die `xtk:workflow` Schema. [Weitere Informationen](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html).
-   * Verwenden Sie die `queryDef` -Methode, um eine SQL-Abfrage auszugeben.
+   * Rufen Sie eine Entität mithilfe der `create`-Methode für das entsprechende Schema ab, z. B. das `xtk:workflow`-Schema. [Weitere Informationen](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html?lang=de).
+   * Verwenden Sie die `queryDef`-Methode, um eine SQL-Abfrage auszugeben.
 
-1. Führen Sie die Abfrage mit der `ExecuteQuery` -Methode. [Weitere Informationen](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html).
+1. Führen Sie die Abfrage mithilfe der `ExecuteQuery`-Methode aus. [Weitere Informationen](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html?lang=de).
 
-   Verwenden Sie die `for each` Schleife zum Abrufen der Ergebnisse.
+   Verwenden Sie die `for each`-Schleife zum Abrufen der Ergebnisse.
 
-### Syntax der `queryDef` -Methode mit `select` clause
+### Syntax der `queryDef`-Methode mit der `select`-Klausel
 
 ```xml
 <queryDef schema="schema_key" operation="operation_type">
@@ -462,11 +463,11 @@ Führen Sie folgende Schritte aus:
 </queryDef>
 ```
 
-### `Create` method
+### `Create`-Methode
 
 #### Beispiel 1: Datensätze auswählen und in das Protokoll schreiben
 
-Die internen Namen der Workflows, die sich im **wfExample** -Ordner ausgewählt sind. Die Ergebnisse werden nach internem Namen in aufsteigender Reihenfolge sortiert und in das Journal geschrieben.
+Die internen Namen der Workflows, die sich im Ordner **wfExamples** befinden, werden ausgewählt. Die Ergebnisse werden nach internem Namen in aufsteigender Reihenfolge sortiert und in das Protokoll geschrieben.
 
 ```javascript
 var query = xtk.queryDef.create(
@@ -488,9 +489,9 @@ for each (var w in res.workflow)
     logInfo(w.@internalName)
 ```
 
-#### Beispiel 2: Löschen von Datensätzen
+#### Beispiel 2: Datensätze löschen
 
-Vorname, Nachname, E-Mail-Adresse und Kennung aller Empfänger mit dem Namen Chris Smith werden ausgewählt. Die Ergebnisse werden nach E-Mail, aufsteigender Reihenfolge sortiert und in das Journal geschrieben. A `delete` wird zum Löschen der ausgewählten Datensätze verwendet.
+Vorname, Nachname, E-Mail-Adresse und Kennung aller Empfänger mit dem Namen Chris Smith werden ausgewählt. Die Ergebnisse werden nach E-Mail-Adresse in aufsteigender Reihenfolge sortiert und in das Protokoll geschrieben. Ein `delete`-Vorgang wird zum Löschen der ausgewählten Datensätze verwendet.
 
 ```javascript
 // Build the query, create a query object and hold the object in a variable
@@ -526,7 +527,7 @@ for each (var rec in res.recipient)
 
 #### Beispiel 3: Datensätze auswählen und in das Protokoll schreiben
 
-In diesem Beispiel wird eine nicht statische Methode verwendet. Die E-Mail-Adresse und das Geburtsjahr aller Empfänger, deren Informationen in der Variablen **1234** und deren E-Mail-Domainname mit &quot;adobe&quot;beginnt, ausgewählt werden. Die Ergebnisse werden nach Geburtsdatum in absteigender Reihenfolge sortiert. Die E-Mail der Empfänger wird in das Protokoll geschrieben.
+In diesem Beispiel wird eine nicht statische Methode verwendet. Die E-Mail-Adresse und das Geburtsjahr aller Empfänger, deren Informationen im Ordner **1234** gespeichert sind und deren E-Mail-Domain-Name mit &quot;adobe&quot; beginnt, werden ausgewählt. Die Ergebnisse werden nach Geburtsdatum in absteigender Reihenfolge sortiert. Die E-Mail-Adressen der Empfänger werden in das Protokoll geschrieben.
 
 ```javascript
 var query = xtk.queryDef.create(
@@ -551,19 +552,19 @@ for each (var w in res.recipient)
     logInfo(w.@email)
 ```
 
-### `Write` method
+### `Write`-Methode
 
-Sie können Datensätze einfügen, aktualisieren und löschen. Sie können die `Write` -Methode für ein beliebiges Schema in Adobe Campaign verwenden. Da diese Methode statisch ist, müssen Sie kein Objekt erstellen. Sie können die folgenden Vorgänge verwenden:
+Sie können Datensätze einfügen, aktualisieren und löschen. Sie können die `Write`-Methode für ein beliebiges Schema in Adobe Campaign verwenden. Da diese Methode statisch ist, müssen Sie kein Objekt erstellen. Sie können die folgenden Vorgänge verwenden:
 
-* Die `update` operation
-* Die `insertOrUpdate` -Vorgang mit dem `_key` -Argument zur Identifizierung des zu aktualisierenden Datensatzes
+* Der `update`-Vorgang
+* Der `insertOrUpdate`-Vorgang mit dem `_key`-Argument zur Identifizierung des zu aktualisierenden Datensatzes
 
-   Wenn Sie die **Empfänger** -Ordner, und wenn eine Übereinstimmung vorhanden ist, wird der Datensatz in einem beliebigen Unterordner aktualisiert. Andernfalls wird der Datensatz im Stammverzeichnis erstellt **Empfänger** Ordner.
+   Wenn Sie den Ordner **Empfänger** nicht angeben und eine Übereinstimmung vorhanden ist, wird der Datensatz in allen Unterordnern aktualisiert. Andernfalls wird der Datensatz im Stammverzeichnis des Ordners **Empfänger** erstellt.
 
-* Die `delete` operation
+* Der `delete`-Vorgang
 
 >[!IMPORTANT]
-> Wenn Sie Adobe Campaign v8 verwenden, empfehlen wir, den Staging-Mechanismus mit dem **Aufnahme** und **Datenaktualisierung/-löschung** APIs für die `Write` -Methode in einer Snowflake-Tabelle. [Mehr dazu](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target=&quot;_blank&quot;}.
+> Wenn Sie Adobe Campaign v8 verwenden, empfehlen wir, den Staging-Mechanismus mit den **Aufnahme**- und **Datenaktualisierungs/-löschungs**-APIs für die `Write`-Methode in einer Snowflake-Tabelle zu verwenden. [Weitere Informationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html?lang=de){target=&quot;_blank&quot;}.
 
 #### Beispiel 1: Datensatz einfügen oder aktualisieren
 
@@ -579,7 +580,7 @@ xtk.session.Write(
 )
 ```
 
-#### Beispiel 2: Löschen von Datensätzen
+#### Beispiel 2: Datensätze löschen
 
 In diesem Beispiel werden eine statische Methode und eine nicht statische Methode kombiniert.
 
@@ -603,7 +604,7 @@ xtk.session.Write(
 }
 ```
 
-In diesem Video wird gezeigt, wie nichtstatische API-Methoden verwendet werden:
+In diesem Video wird gezeigt, wie nicht statische API-Methoden verwendet werden:
 >[!VIDEO](https://video.tv.adobe.com/v/18477/?learn=on)
 
 In diesem Video wird ein Beispiel für die Verwendung einer nicht statischen API-Methode in einem Workflow gezeigt:
@@ -612,16 +613,16 @@ In diesem Video wird ein Beispiel für die Verwendung einer nicht statischen API
 ## Verwandte Themen
 
 * [Datenorientierte APIs](../../configuration/using/data-oriented-apis.md)
-* [JavaScript-Scripts und -Vorlagen](javascript-scripts-and-templates.md)
+* [JavaScript-Skripte und -Vorlagen](javascript-scripts-and-templates.md)
 * [SOAP-Methoden in JavaScript](../../configuration/using/soap-methods-in-javascript.md)
 
-### API-Handbuch
+### API-Dokumentation
 
-* [Beispiele für SOAP-Aufrufe](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html)
+* [Beispiele für SOAP-Aufrufe](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=de)
 * Methoden:
-   * [Erstellen](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html)
-   * [DeleteCollection](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html)
-   * [ExecuteQuery](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html)
-   * [PostEvent](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html)
-   * [Schreiben](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-Write.html)
-* [logInfo-Funktion](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html)
+   * [Create](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html?lang=de)
+   * [DeleteCollection](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html?lang=de)
+   * [ExecuteQuery](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html?lang=de)
+   * [PostEvent](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html?lang=de)
+   * [Write](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-Write.html?lang=de)
+* [logInfo-Funktion](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html?lang=de)
