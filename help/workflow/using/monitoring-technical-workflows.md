@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: use-cases
 exl-id: 5e77d196-5c71-438e-8dae-10c6a6e4f29c
 source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '545'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -93,7 +93,7 @@ Die Überwachung kann möglichst effizient gestaltet werden, indem Workflows in 
 
 Durch die Automatisierung der Überwachung können Kosten für Ressourcen eingespart und Aufgaben in geeigneten Intervallen geplant werden.
 
-Sie können einen Monitoring-Workflow erstellen, um eine E-Mail zu senden, wenn bestimmte Aufgaben fehlschlagen oder eine kritische Tabelle zu groß wird.
+Sie können einen Monitoring-Workflow einrichten, der eine E-Mail sendet, wenn gewisse Aufgaben fehlschlagen oder eine kritische Tabelle zu groß wird.
 
 Sie können eine Ansicht erstellen, in der alle Workflows eines funktionellen Bereichs oder im gesamten System überwacht werden können.
 
