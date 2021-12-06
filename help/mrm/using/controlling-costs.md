@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: 6765e307-915a-44d2-a486-85c64e8ec52e
 source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2539'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -333,11 +333,11 @@ Der Status eines konfigurierten Budgets kann aktualisiert werden: Setzen Sie hie
 
 #### Validierung von Budgets {#budget-approval}
 
-Bei aktivierter Validierung kann das Budget über einen Link im Kampagnen-Dashboard validiert werden. Der Link wird angezeigt, sobald der Zielgruppen-Workflow gestartet und wenn ein Briefpost-Versand zu validieren ist.
+Bei aktivierter Validierung kann das Budget über einen speziellen Link im Kampagnen-Dashboard validiert werden. Der Link wird angezeigt, sobald der Zielgruppenbestimmungs-Workflow gestartet wurde und ein Direkt-Mail-Versand validiert werden muss.
 
 ![](assets/s_user_cost_mgmt_sample_19.png)
 
-Sie können dann auf den Link klicken, um die Validierung zu erteilen oder abzulehnen, oder den Link in der Benachrichtigungs-E-Mail verwenden, wenn die Benachrichtigung für diese Kampagne aktiviert wurde.
+Sie können dann die Validierung über diesen Link akzeptieren oder ablehnen. Wenn Benachrichtigungen für die Kampagne aktiviert wurden, können Sie den Link auch in der Benachrichtigungs-E-Mail verwenden.
 
 Nach Budgetvalidierung und Abschluss des Versands werden die Kosten automatisch über einen speziellen technischen Workflow weiter verarbeitet.
 
