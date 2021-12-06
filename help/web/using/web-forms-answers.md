@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: web-forms
 exl-id: 5d48bb27-1884-47f1-acb7-dff5113565bc
 source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '892'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -123,13 +123,13 @@ Sie haben zwei Möglichkeiten, diese Komponente zu verwenden:
 
    >[!CAUTION]
    >
-   >Diese Option überschreibt die Benutzerdaten, einschließlich der E-Mail-Adresse, wenn ein Feld vorhanden ist, in das sie eingegeben werden können. Sie kann nicht zum Erstellen neuer Profile verwendet werden und erfordert die Verwendung einer Vorausfüllen-Komponente im Formular.
+   >Mit dieser Option werden die Benutzerdaten, einschließlich der E-Mail-Adresse, überschrieben, wenn ein Feld vorhanden ist, über das eine neue Eingabe getätigt werden kann. Diese Option kann nicht zur Erstellung neuer Profile verwendet werden und erfordert die Verwendung eines Felds zum Vorausfüllen im Formular.
 
-* Um Empfängerdaten in der Datenbank anzureichern, bearbeiten Sie die Komponente &quot;Speicherung&quot; und wählen Sie den Abstimmschlüssel aus. Wählen Sie die Abstimmfelder für die interne Verwendung (normalerweise für das Intranet) oder für ein Formular zum Erstellen neuer Profile aus. In der Komponente sind alle Datenbankfelder vorhanden, die auf den Seiten der Webanwendung verwendet werden:
+* Um Empfängerdaten in der Datenbank anzureichern, bearbeiten Sie das Feld &quot;Speicherung&quot; und wählen Sie den Abstimmschlüssel aus. Wählen Sie die Abstimmfelder für die interne Verwendung (normalerweise für das Intranet) oder für ein Formular zum Erstellen neuer Profile aus. In dem Feld sind alle Datenbankfelder vorhanden, die auf den verschiedenen Seiten der Web-Anwendung verwendet werden:
 
    ![](assets/s_ncs_admin_survey_save_box_edit.png)
 
-Standardmäßig werden die Daten von einem **[!UICONTROL Aktualisieren oder einfügen]** -Vorgang: Wenn es in der Datenbank vorhanden ist, wird das Element aktualisiert (z. B. der ausgewählte Newsletter oder die eingegebene E-Mail-Adresse). Wenn sie nicht vorhanden ist, werden die Informationen hinzugefügt.
+Standardmäßig werden die Daten über den Vorgang **[!UICONTROL Aktualisieren oder einfügen]** in die Datenbank importiert: Wenn ein Element bereits in der Datenbank vorhanden ist, wird es aktualisiert (z. B. der ausgewählte Newsletter oder die eingegebene E-Mail-Adresse). Wenn es noch nicht existiert, werden die Informationen hinzugefügt.
 
 Sie können dieses Verhalten jedoch auch verändern. Wählen Sie dazu die Wurzel des Elements aus und danach aus der Dropdown-Liste den auszuführenden Vorgang.
 
