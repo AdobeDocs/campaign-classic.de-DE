@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: content-management
 exl-id: 8ec52c96-44a2-4544-93b6-9ba251510682
 source-git-commit: cf4e316e9c9bce467e2bd2bd04097f55b3dbb9c7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '828'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -198,4 +198,4 @@ Im **[!UICONTROL Vorschau]**-Tab können Sie das so erstellte Formular prüfen.
 
 ![](assets/d_ncs_content_form13.png)
 
-Mehr dazu [Formulare bearbeiten](../../configuration/using/editing-forms.md) und [Formularstruktur](../../configuration/using/form-structure.md).
+Weitere Informationen zum [Bearbeiten von Formularen](../../configuration/using/editing-forms.md) und zur [Formularstruktur](../../configuration/using/form-structure.md).
