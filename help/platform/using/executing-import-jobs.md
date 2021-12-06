@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 05909ea6-2c93-42ff-9142-1dd14fa6fdec
 source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3201'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -207,7 +207,7 @@ Für die Felder der vom Import betroffenen Tabellen stehen folgende Optionen zur
 
 Für die Deduplizierung ist die Angabe von mindestens einem Abstimmschlüssel erforderlich.
 
-Ein Abstimmschlüssel ist ein Satz von Feldern, mit denen ein Datensatz identifiziert wird. Zum Import von Empfängern kann der Abstimmschlüssel beispielsweise die Kundennummer, das Feld &quot;E-Mail&quot; oder die Felder &quot;Nachname, Vorname, Firma&quot; sein.
+Unter einem Abstimmschlüssel versteht man eine Kombination von Feldern, die die eindeutige Identifizierung eines Datensatzes ermöglicht. Beim Import von Empfängern können z. B. die Kundennummer, die E-Mail-Adresse oder eine Kombination aus Vor- und Nachname sowie Firma als Abstimmschlüssel verwendet werden.
 
 Die Import-Engine vergleicht für jedes Feld des Abstimmschlüssels die Werte der Quelldatei mit denen der Datenbank, um bereits existierende Datensätze zu identifizieren. Je spezifischer die Felder für einen Datensatz sind, desto genauer lassen sich Quell- und Zieldaten vergleichen und desto besser kann die Integrität der Daten nach erfolgtem Import gewährleistet werden. Es besteht die Möglichkeit, einen zweiten Abstimmschlüssel für eine Tabelle anzugeben. Dieser kommt bei den Datensätzen zum Tragen, bei denen die Felder des ersten Schlüssels leer sind.
 
@@ -246,7 +246,7 @@ Die Optionen **[!UICONTROL Zurückweisen]** und **[!UICONTROL Ignorieren]** arbe
 
 ### Beim Auftreten von Fehlern {#behavior-in-the-event-of-an-error}
 
-Die meisten Datenübertragungsvorgänge erzeugen verschiedene Fehlertypen (inkohärentes Zeilenformat, ungültige E-Mail-Adresse usw.). Alle von der Import-Engine erzeugten Fehler und Warnungen werden gespeichert und mit der Importinstanz verknüpft.
+Beim Datentransfer treten häufig Fehler auf, die von verschiedener Natur sein können (inkohärentes Zeilenformat, ungültige E-Mail-Adresse usw.). Alle von der Import-Engine erzeugten Fehlermeldungen und Warnhinweise werden gespeichert und mit der Importinstanz verknüpft.
 
 ![](assets/s_ncs_user_import_general_tab.png)
 
