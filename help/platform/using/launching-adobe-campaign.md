@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 4d9c5b24-83a2-4495-a56c-5bc376d69703
 source-git-commit: 8491b3a5d1333f4445f90a8a051cd1f5149691bc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '569'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -101,7 +101,7 @@ Das Menü **[!UICONTROL Hilfe > Versionsinformationen…]** liefert folgende Inf
 
 Wenn Sie mit dem Team der Adobe-Kundenunterstützung Kontakt aufnehmen, müssen Sie die Versionsnummer und die Build-Nummer Ihrer Adobe Campaign-Client-Konsole und des Anwendungs-Servers angeben.
 
-Wenn Sie mit der [Campaign  [!DNL Gold Standard] -Version](../../rn/using/gold-standard.md) arbeiten, müssen Sie auch die SHA/1-Zeichen angeben, die im Feld **[!UICONTROL Versionsinformationen]** angezeigt werden. Beispiel: für die **Gold Standard 12** -Version, kann diese Build-Nummer angezeigt werden: &quot;build 9032@554dbcd&quot;.
+Wenn Sie mit der [Campaign  [!DNL Gold Standard] -Version](../../rn/using/gold-standard.md) arbeiten, müssen Sie auch die SHA/1-Zeichen angeben, die im Feld **[!UICONTROL Versionsinformationen]** angezeigt werden. Beispiel: für die **Gold Standard 12**-Version, kann diese Build-Nummer angezeigt werden: &quot;build 9032@554dbcd&quot;.
 
 ![](assets/about-acc-gs.png)
 
