@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
 source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1552'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -69,7 +69,7 @@ Weiterführende Informationen finden Sie unter [Extraktionsdatei validieren](../
 
 **2. Schritt - Nachricht an den Dienstleister validieren**
 
-* Nach Validierung der Extraktionsdatei können Sie den Testversand der Benachrichtigungs-E-Mail des Routers erzeugen. Diese E-Mail-Nachricht wird basierend auf einer Versandvorlage erstellt. Es muss genehmigt werden.
+* Nachdem die Extraktionsdatei validiert wurde, kann der Testversand der Benachrichtigungs-E-Mail an den Router erzeugt werden. Diese E-Mail wird auf der Grundlage einer Versandvorlage erstellt und muss validiert werden.
 
    >[!NOTE]
    >
