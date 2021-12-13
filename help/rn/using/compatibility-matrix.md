@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: f7c4603e389b19c057ee72bb50ed30d03b60f4bc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '652'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 <tr> 
 <td>CentOs</td>
 <td>
-<p>8.x (64 Bit) </br><strong>Wichtig:</strong> CentOS Linux 8 wird am 31. Dezember 2021 das Ende der Lebensdauer (End of Life, EOL) erreichen. Weitere Informationen finden Sie im Abschnitt <a href="../../rn/using/deprecated-features.md">Eingestellte Funktionen</a> Seite.</p>
+<p>8.x (64 Bit) </br><strong>Wichtig:</strong> CentOS Linux 8 wird am 31. Dezember 2021 das Ende der Lebensdauer (End of Life, EOL) erreichen. Weiterführende Informationen dazu finden Sie auf der Seite <a href="../../rn/using/deprecated-features.md">Eingestellte Funktionen</a>.</p>
 <p>7.x (64 Bit)</p>
 <p><strong>Wichtig:</strong> Wenn Sie RHEL verwenden, müssen Sie SELinux deaktivieren oder Ihre Programmierer benutzerdefinierte SELinux-Regeln schreiben lassen, um zu überprüfen, ob ein aktiviertes SELinux keine Probleme mit Campaign-Vorgängen verursacht.</p>
 </td>
