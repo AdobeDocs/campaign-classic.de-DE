@@ -1,19 +1,19 @@
 ---
 product: campaign
-title: Auf Facebook veröffentlichen
-description: Erfahren Sie, wie Sie in Facebook veröffentlichen
+title: Veröffentlichen auf Facebook
+description: Hier erfahren Sie, wie Sie auf Facebook Veröffentlichungen vornehmen können
 audience: social
 content-type: reference
 topic-tags: publishing-on-facebook-twitter
 exl-id: 84d6cb2e-c7f9-43d7-a98c-22613d456193
 source-git-commit: b5334de18eca8fc1147ae0c42fe23a6932bf71d2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1243'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
-# Auf Facebook veröffentlichen{#publishing-on-facebook}
+# Veröffentlichen auf Facebook{#publishing-on-facebook}
 
 ![](../../assets/v7-only.svg)
 
@@ -26,13 +26,13 @@ Die folgenden Einschränkungen gelten für Facebook.
 * Nachrichten dürfen nicht länger als 1.000 Zeichen sein.
 * HTML wird nicht unterstützt.
 
-## Versand erstellen {#creating-the-delivery}
+## Erstellen des Versands {#creating-the-delivery}
 
 Erstellen Sie mit der Versandvorlage **[!UICONTROL Auf einer Markenseite veröffentlichen]** einen neuen Versand.
 
 ![](assets/social_facebook_delivery_001.png)
 
-## Hauptzielgruppe auswählen {#selecting-the-main-target}
+## Auswählen der Hauptzielgruppe       {#selecting-the-main-target}
 
 Wählen Sie die Seiten aus, auf denen Sie Ihre Veröffentlichung posten möchten.
 
@@ -52,9 +52,9 @@ Wählen Sie die Seiten aus, auf denen Sie Ihre Veröffentlichung posten möchten
 
    ![](assets/social_facebook_delivery_013.png)
 
-## Testversand-Zielgruppe auswählen {#selecting-the-proof-target}
+## Auswählen der Zielgruppe für den Testversand {#selecting-the-proof-target}
 
-Über den Tab **[!UICONTROL Testversand-Zielgruppe]** können Sie die Facebook-Seite festlegen, die Sie zum Testen der Sendungen verwenden möchten, bevor Sie diese abschicken. Es wird empfohlen, hierfür eine eigene private Facebook-Seite zu erstellen. Weitere Informationen zum Erstellen einer privaten Facebook-Seite finden Sie unter [diese Seite](../../social/using/publishing-on-facebook-walls.md#creating-a-test-facebook-page). Gehen Sie zur Auswahl der Testversand-Zielgruppe genauso vor wie für die Hauptzielgruppe. [Weitere Informationen](#selecting-the-main-target)
+Über den Tab **[!UICONTROL Testversand-Zielgruppe]** können Sie die Facebook-Seite festlegen, die Sie zum Testen der Sendungen verwenden möchten, bevor Sie diese abschicken. Es wird empfohlen, hierfür eine eigene private Facebook-Seite zu erstellen. Weitere Informationen zum Erstellen einer privaten Facebook-Seite finden Sie auf [dieser Seite](../../social/using/publishing-on-facebook-walls.md#creating-a-test-facebook-page). Gehen Sie zur Auswahl der Zielgruppe für den Testversand genauso vor wie zur Auswahl der Hauptzielgruppe. [Weitere Informationen](#selecting-the-main-target)
 
 ![](assets/social_facebook_delivery_004.png)
 
@@ -79,7 +79,7 @@ Es ist jedoch auch möglich, die von Facebook verwendeten Zielgruppenfilter zu v
 >
 >Facebook kann die Liste der Zielgruppenfilter sowie deren Werte ändern.
 
-## Nachrichteninhalt definieren {#defining-message-content}
+## Definieren des Nachrichteninhalts {#defining-message-content}
 
 Wählen Sie den Veröffentlichungstyp über das Dropdown-Menü **[!UICONTROL Inhaltstyp]** aus.
 
@@ -92,7 +92,7 @@ Folgende Versandtypen sind möglich:
 * **[!UICONTROL Status mit YouTube-Link]**
 * **[!UICONTROL Fotoalbum]**
 
-### Status veröffentlichen {#publishing-a-status}
+### Veröffentlichen eines Status {#publishing-a-status}
 
 Ein Versand vom Typ „Status“ kann nur Text enthalten, wie im folgenden Beispiel:
 
@@ -102,7 +102,7 @@ Geben Sie den Veröffentlichungsstatus in das Eingabefeld ein.
 
 ![](assets/social_facebook_delivery_015.png)
 
-### Status mit Link veröffentlichen {#publishing-a-status-with-a-link}
+### Veröffentlichen eines Status mit einem Link {#publishing-a-status-with-a-link}
 
 Ein Versand vom Typ „Status mit Link“ kann Text, Bilder und einen Link enthalten. Im folgenden Abschnitt wird die Symmetrie zwischen den Feldern des Bearbeitungsbildschirms des Versands und der endgültigen Veröffentlichung auf Facebook erläutert:
 
@@ -140,7 +140,7 @@ Geben Sie die verschiedenen Felder ein:
 
 ![](assets/social_facebook_delivery_005.png)
 
-### Status mit YouTube-Link veröffentlichen {#publishing-a-status-with-a-youtube-link}
+### Veröffentlichen eines Status mit einem YouTube-Link {#publishing-a-status-with-a-youtube-link}
 
 Mit diesem Inhaltstyp können Sie einen Link zu einem YouTube-Video veröffentlichen. Genau wie bei einem Status mit einem regulären Link können Sie einen Status, einen Namen, eine Beschriftung, eine Beschreibung und einen zusätzlichen Link definieren. Das Bild wird von Facebook automatisch hinzugefügt. Die Symmetrien zwischen den Feldern des Bearbeitungsbildschirms des Versands und der endgültigen Veröffentlichung auf Facebook sind nachfolgend aufgeführt:
 
@@ -160,7 +160,7 @@ Geben Sie die verschiedenen Felder ein:
 
 ![](assets/social_facebook_delivery_youtube.png)
 
-### Fotoalbum veröffentlichen {#publishing-a-photo-album}
+### Veröffentlichen eines Fotoalbums {#publishing-a-photo-album}
 
 Mit diesem Inhaltstyp können Sie ein Fotoalbum veröffentlichen. Sie können einen Namen und eine Beschreibung für das Album sowie eine Beschriftung für jedes Foto hinzufügen. Die Symmetrien zwischen den Feldern des Bearbeitungsbildschirms des Versands und der endgültigen Veröffentlichung auf Facebook sind nachfolgend aufgeführt:
 
@@ -190,7 +190,7 @@ Im Tab **[!UICONTROL Vorschau]** können Sie das Rendering der Veröffentlichung
 >
 >Die Vorschau unterscheidet sich möglicherweise geringfügig von der endgültigen Facebook-Veröffentlichung. Es wird dringend empfohlen, vor dem endgültigen Versand einen Testversand abzuschicken, um ein genaues Rendering der Veröffentlichung zu sehen. [Weitere Informationen](#sending-the-proof).
 
-## Tracking konfigurieren {#configuring-tracking}
+## Konfigurieren des Trackings {#configuring-tracking}
 
 Tracking kann in den Versandberichten und im Tab **[!UICONTROL Bearbeiten > Tracking]** des Versands und des Dienstes eingesehen werden.
 
@@ -202,13 +202,13 @@ Die Tracking-Konfiguration ist dieselbe wie bei einem E-Mail-Versand. Weiterfüh
 >
 >In der Versandvorlage **[!UICONTROL Auf einer Markenseite veröffentlichen]** ist Tracking standardmäßig aktiviert.
 
-## Testversand durchführen {#sending-the-proof}
+## Durchführen des Testversands {#sending-the-proof}
 
-Es wird dringend empfohlen, vor dem endgültigen Versand einen Testversand Ihrer Veröffentlichung durchzuführen, um das genaue Rendering der Veröffentlichung einer privaten Facebook-Testseite anzuzeigen. Weitere Informationen zum Erstellen einer privaten Facebook-Testseite finden Sie unter [diese Seite](../../social/using/publishing-on-facebook-walls.md#creating-a-test-facebook-page). Die Schritte zur Auswahl des Zielversands werden im Abschnitt [diesem Abschnitt](#selecting-the-proof-target).
+Es wird dringend empfohlen, vor dem endgültigen Versand Ihrer Veröffentlichung einen Testversand durchzuführen, um auf einer privaten Facebook-Testseite genau zu sehen, wie die Veröffentlichung gerendert wird. Weitere Informationen zum Erstellen einer privaten Facebook-Testseite finden Sie auf [dieser Seite](../../social/using/publishing-on-facebook-walls.md#creating-a-test-facebook-page). Die Schritte zur Auswahl des Testversands werden in [diesem Abschnitt](#selecting-the-proof-target) genau beschrieben.
 
 Der Testversand ist mit dem E-Mail-Versand identisch. Siehe [diesen Abschnitt](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
 
-## Senden Sie die Nachricht {#sending-the-message}
+## Senden der Nachricht {#sending-the-message}
 
 1. Nachdem der Inhalt validiert wurde, klicken Sie auf die Schaltfläche **[!UICONTROL Senden]**.
 1. Wählen Sie **[!UICONTROL Sendungen schnellstmöglich abschicken]** aus und klicken Sie auf die Schaltfläche **[!UICONTROL Analysieren]**.
