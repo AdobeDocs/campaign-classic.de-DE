@@ -7,39 +7,39 @@ content-type: reference
 topic-tags: configuration
 exl-id: 5c11bd0f-2df7-4c7f-b682-955fedf8e664
 source-git-commit: b5334de18eca8fc1147ae0c42fe23a6932bf71d2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '996'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
-# Facebook-Anwendung erstellen{#creating-a-facebook-application}
+# Erstellen einer Facebook-Anwendung{#creating-a-facebook-application}
 
 ![](../../assets/v7-only.svg)
 
-Mit Webanwendungen können Sie mit dem Campaign Social Marketing-Modul personalisierte Inhalte in Ihren Facebook-Anwendungen anzeigen, um potenzielle Kunden über diese Social Media zu gewinnen. Weitere Beispiele für Webanwendungen vom Typ Facebook finden Sie unter [diese Seite](../../social/using/examples-of-facebook-apps.md).
+Mit dem Social-Media-Marketing-Modul von Campaign können Sie über Web-Anwendungen personalisierte Inhalte in Ihren Facebook-Anwendungen anzeigen. Dadurch wird es einfacher, über dieses soziale Netzwerk potenzielle Kunden zu gewinnen. Weitere Beispiele von Web-Anwendungen für Facebook finden Sie auf [dieser Seite](../../social/using/examples-of-facebook-apps.md).
 
 >[!NOTE]
 >
->Sie können Adobe Campaign auch in eine von einem Partner entwickelte Facebook-Anwendung integrieren. In diesem Fall müssen Sie die Adobe Campaign-Webanwendung nicht verwenden, um Facebook-Profile zu gewinnen. [Weitere Informationen](#configuring-external-accounts).
+>Es ist auch möglich, Adobe Campaign in eine von einem Partner entwickelte Facebook-Anwendung zu integrieren. In diesem Fall ist es nicht nötig, die Web-Anwendung von Adobe Campaign zu verwenden, um Facebook-Profile zu erhalten. [Weitere Informationen](#configuring-external-accounts).
 
 ![](assets/social_webapp_fb_000.png)
 
-Konfigurationsschritte sind:
+Die Konfigurationsschritte sind:
 
 1. Erstellen Sie eine oder mehrere Facebook-Anwendungen. [Weitere Informationen](../../social/using/publishing-on-facebook-walls.md#creating-a-facebook-application)
 1. Geben Sie die Links für die **[!UICONTROL Nutzungsbedingungen]** und **[!UICONTROL Datenschutzbestimmungen]** ein, die auf dem Facebook-Bildschirm für Berechtigungsanfragen angezeigt werden sollen. [Weitere Informationen](#entering-the-terms-of-service-and-privacy-policy-links)
 1. Erstellen Sie für jede Facebook-Anwendung ein externes **[!UICONTROL Facebook Connect]**-Konto. [Weitere Informationen](#configuring-external-accounts)
-1. Erstellen Sie für jede Facebook-Anwendung in Adobe Campaign eine Webanwendung vom Typ „Facebook“. [Weitere Informationen](#creating-a-facebook-type-web-application)
+1. Erstellen Sie für jede Facebook-Anwendung in Adobe Campaign eine Web-Anwendung vom Typ &quot;Facebook&quot;. [Weitere Informationen](#creating-a-facebook-type-web-application)
 1. Konfigurieren Sie Ihre Facebook-Anwendungen so, dass sie als Tabs auf Ihrer Facebook-Seite angezeigt werden. [Weitere Informationen](#configuring-facebook-tabs)
 
-## Externe Konten konfigurieren {#configuring-external-accounts}
+## Konfigurieren externer Konten {#configuring-external-accounts}
 
 Für jede Facebook-Anwendung müssen Sie ein externes **[!UICONTROL Facebook Connect]**-Konto erstellen.
 
 Dieser Schritt erfordert Zugriff auf Ihre Adobe Campaign-Konsole und Ihr Facebook-Administratorkonto:
 
-* on **Facebook**: Wählen Sie die zuvor erstellte Anwendung ( [https://developers.facebook.com/apps](https://developers.facebook.com/apps)) und wählen Sie die **[!UICONTROL Einstellungen]** > **[!UICONTROL Allgemein]** Registerkarte.
+* In **Facebook**: Wählen Sie die zuvor erstellte Anwendung ([https://developers.facebook.com/apps](https://developers.facebook.com/apps)) aus und klicken Sie auf die Registerkarte **[!UICONTROL Einstellungen]** > **[!UICONTROL Einfach]**.
 
    ![](assets/social_webapp_fb_008.png)
 
@@ -47,11 +47,11 @@ Dieser Schritt erfordert Zugriff auf Ihre Adobe Campaign-Konsole und Ihr Faceboo
    >
    >Wenn der Abschnitt **[!UICONTROL Facebook-Web-Spiele]** nicht angezeigt wird, klicken Sie auf die Schaltfläche **[!UICONTROL Plattform hinzufügen]** unten auf der Seite und wählen Sie **[!UICONTROL Facebook-Web-Spiele]** aus.
 
-* on **Adobe Campaign**: Durchsuchen nach **[!UICONTROL Administration > Plattform > Externe Konten]** und klicken Sie auf **[!UICONTROL Neu]**.
+* In **Adobe Campaign**: Navigieren Sie zu **[!UICONTROL Administration > Plattform > Externe Konten]** und klicken Sie auf **[!UICONTROL Neu]**.
 
    ![](assets/social_webapp_fb_005.png)
 
-1. Geben Sie einen Titel und einen internen Namen ein und wählen Sie die **[!UICONTROL Facebook Connect]** Typ.
+1. Geben Sie einen Titel und einen internen Namen ein und wählen Sie den Typ **[!UICONTROL Facebook Connect]** aus.
 
    ![](assets/social_webapp_fb_006.png)
 
@@ -88,11 +88,11 @@ Dieser Schritt erfordert Zugriff auf Ihre Adobe Campaign-Konsole und Ihr Faceboo
    ![](assets/social_facebook_external_account_008.png)
 
 1. Klicken Sie auf Facebook unten auf der Seite auf die Schaltfläche **[!UICONTROL Änderungen speichern]**.
-1. Klicken Sie in der Adobe Campaign-Konsole auf die Schaltfläche **[!UICONTROL Abonnieren]**, damit Adobe Campaign die Daten jedes Mal, wenn ein Fan über diese Anwendung eincheckt, in Echtzeit abrufen kann.  [Weitere Informationen](../../social/using/examples-of-facebook-apps.md)
+1. Klicken Sie in der Adobe Campaign-Konsole auf die Schaltfläche **[!UICONTROL Abonnieren]**, damit Adobe Campaign die Daten jedes Mal in Echtzeit abrufen kann, wenn ein Fan über diese Anwendung eincheckt. [Weitere Informationen](../../social/using/examples-of-facebook-apps.md)
 
    ![](assets/social_webapp_fb_013.png)
 
-## Links für Nutzungsbedingungen und Datenschutzbestimmungen eingeben {#entering-the-terms-of-service-and-privacy-policy-links}
+## Eingeben der Links für Nutzungsbedingungen und Datenschutzbestimmungen {#entering-the-terms-of-service-and-privacy-policy-links}
 
 Es wird empfohlen, die Links für die **[!UICONTROL Nutzungsbedingungen]** und **[!UICONTROL Datenschutzbestimmungen]** hinzuzufügen, die auf dem Facebook-Bildschirm für Berechtigungsanfragen angezeigt werden sollen.
 
@@ -105,7 +105,7 @@ Die Konfiguration stellt sich wie folgt dar:
 
    ![](assets/social_fb_terms_of_services.png)
 
-## Webanwendung vom Typ Facebook erstellen {#creating-a-facebook-type-web-application}
+## Erstellen einer Web-Anwendung für Facebook. {#creating-a-facebook-type-web-application}
 
 Mit der Facebook-Anwendung von Adobe Campaign können Sie personalisierte Inhalte in Ihrer Facebook-Anwendung anzeigen. Für jede Facebook-Anwendung müssen Sie eine Webanwendung in Adobe Campaign erstellen. Erstellen einer Facebook-Webanwendung:
 
@@ -131,11 +131,11 @@ Mit der Facebook-Anwendung von Adobe Campaign können Sie personalisierte Inhalt
 
    ![](assets/social_webapp_005.png)
 
-1. Wählen Sie den Tab **[!UICONTROL Bearbeiten]** aus und bearbeiten Sie dann die Webanwendung. [Weitere Informationen](../../social/using/examples-of-facebook-apps.md)
+1. Wählen Sie den Tab **[!UICONTROL Bearbeiten]** aus und bearbeiten Sie dann die Web-Anwendung. [Weitere Informationen](../../social/using/examples-of-facebook-apps.md)
 
    ![](assets/social_webapp_003.png)
 
-1. Nachdem die Webanwendung abgeschlossen ist, wählen Sie den Tab **[!UICONTROL Dashboard]** aus und klicken Sie dann auf **[!UICONTROL Veröffentlichen]**, um online zu veröffentlichen.
+1. Nachdem die Web-Anwendung fertig ist, wählen Sie den Tab **[!UICONTROL Dashboard]** aus und klicken Sie dann auf **[!UICONTROL Veröffentlichen]**, um sie online zu veröffentlichen.
 
    ![](assets/social_webapp_004.png)
 
@@ -155,7 +155,7 @@ Sie können Ihre Facebook-Anwendungen so konfigurieren, dass sie als Tabs auf Ih
 
    ![](assets/social_webapp_fb_001.png)
 
-1. Geben Sie im Feld **[!UICONTROL Sichere Seiten-Tab-URL]** die öffentliche URL der Webanwendung ein, auf die über den Tab **[!UICONTROL Dashboard]** der Webanwendung zugegriffen werden kann. Weitere Informationen zum Erstellen von Webanwendungen vom Typ Facebook finden Sie unter [diesem Abschnitt](#creating-a-facebook-type-web-application).
+1. Geben Sie im Feld **[!UICONTROL Sichere Seiten-Tab-URL]** die öffentliche URL der Webanwendung ein, auf die über den Tab **[!UICONTROL Dashboard]** der Webanwendung zugegriffen werden kann. Weiterführende Informationen zur Erstellung von Web-Anwendungen für Facebook finden Sie in [diesem Abschnitt](#creating-a-facebook-type-web-application).
 
    ![](assets/social_webapp_fb_002.png)
 
