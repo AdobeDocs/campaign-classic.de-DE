@@ -1,20 +1,20 @@
 ---
 product: campaign
-title: Formulare bearbeiten
-description: Formulare bearbeiten
+title: Bearbeiten von Formularen
+description: Bearbeiten von Formularen
 audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: 49a98ec82b1d62f3af19260888da8eb24e460938
+source-git-commit: 42717f3ef3bcda4108dad6a4c0ece752ada579a2
 workflow-type: tm+mt
-source-wordcount: '1679'
+source-wordcount: '1680'
 ht-degree: 2%
 
 ---
 
 
-# Formulare bearbeiten{#editing-forms}
+# Bearbeiten von Formularen{#editing-forms}
 
 ![](../../assets/common.svg)
 
@@ -322,7 +322,7 @@ So ändern Sie den Typ eines vorhandenen Formulars in `iconbox`führen Sie die f
       ```
    Alternativ können Sie die `type="frame"` -Attribut aus dem vorhandenen `<container>` -Elemente.
 
-### Erstellen Sie eine `notebook` Formular
+### Notebook-Formular erstellen
 
 Verwenden Sie die `notebook` Formulartyp zum Anzeigen von Registerkarten oben im Formular, über die Benutzer zu verschiedenen Seiten gelangen.
 
