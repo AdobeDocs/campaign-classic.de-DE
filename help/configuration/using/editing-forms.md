@@ -6,10 +6,10 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: 1ab984d12c9beb0ba3378bbfb49d1d7d07e870f6
+source-git-commit: e712298a07ecfe345c0b53a4f07f6bc4c19106f7
 workflow-type: tm+mt
-source-wordcount: '1319'
-ht-degree: 2%
+source-wordcount: '1225'
+ht-degree: 3%
 
 ---
 
@@ -416,11 +416,4 @@ Gehen Sie wie folgt vor, um ein Factory-Formular zu ändern:
       >[!CAUTION]
       > Ändern Sie nicht die Originaldaten in einem Factory-Namespace, sondern erweitern Sie sie stattdessen in einen benutzerdefinierten Namespace. Der Grund dafür ist, dass bei Softwareaktualisierungen alle Daten in den Factory-Namespaces überschrieben werden. Beispielsweise werden die Daten im `xtk`, `ncm`und `nms` Factory-Namespaces werden überschrieben. Die Daten in Ihren benutzerdefinierten Namespaces werden nicht geändert.
 
-1. Ändern Sie das Factory-Eingabeformular:
 
-   1. Wählen Sie im Menü **[!UICONTROL Administration]** > **[!UICONTROL Konfiguration]** > **[!UICONTROL Formulare]**.
-   1. Wählen Sie ein Formular aus und ändern Sie es.
-
-   Sie können Factory-Datenschemata erweitern, Sie können jedoch keine Factory-Eingabeformulare erweitern. Es wird empfohlen, werksmäßige Eingabeformulare direkt zu ändern, ohne sie neu zu erstellen. Bei Softwareaktualisierungen werden Ihre Änderungen in den Werkseingangsformularen mit den Upgrades zusammengeführt. Wenn die automatische Zusammenführung fehlschlägt, können Sie die Konflikte lösen. [Mehr dazu](../../production/using/upgrading.md#resolving-conflicts)
-
-   Wenn Sie beispielsweise ein Factory-Schema mit einem zusätzlichen Feld erweitern, können Sie dieses Feld zum zugehörigen Factory-Formular hinzufügen.
