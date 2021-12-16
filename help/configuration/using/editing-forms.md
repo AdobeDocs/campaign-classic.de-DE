@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: e712298a07ecfe345c0b53a4f07f6bc4c19106f7
+source-git-commit: 0d132f56e7888ad810e309b97b9337ec56fe1ee0
 workflow-type: tm+mt
-source-wordcount: '1225'
+source-wordcount: '1172'
 ht-degree: 3%
 
 ---
@@ -413,7 +413,6 @@ Gehen Sie wie folgt vor, um ein Factory-Formular zu ändern:
    1. Wählen Sie im Menü **[!UICONTROL Administration]** > **[!UICONTROL Konfiguration]** > **[!UICONTROL Datenschemata]**.
    1. Wählen Sie ein Datenschema aus und erweitern Sie es. Sie können beispielsweise Felder hinzufügen. [Mehr dazu](extending-a-schema.md)
 
-      >[!CAUTION]
-      > Ändern Sie nicht die Originaldaten in einem Factory-Namespace, sondern erweitern Sie sie stattdessen in einen benutzerdefinierten Namespace. Der Grund dafür ist, dass bei Softwareaktualisierungen alle Daten in den Factory-Namespaces überschrieben werden. Beispielsweise werden die Daten im `xtk`, `ncm`und `nms` Factory-Namespaces werden überschrieben. Die Daten in Ihren benutzerdefinierten Namespaces werden nicht geändert.
+
 
 
