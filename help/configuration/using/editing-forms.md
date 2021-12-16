@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: b06e7b3d2dcb172e6a10c383b5f9800960e7a074
+source-git-commit: d8cd7910798f62cbab8aa0d7cfcc31010ed02297
 workflow-type: tm+mt
-source-wordcount: '1001'
+source-wordcount: '970'
 ht-degree: 3%
 
 ---
@@ -360,10 +360,3 @@ So ändern Sie den Typ eines vorhandenen Formulars in `notebook`führen Sie die 
    ```
 
    Alternativ können Sie die `type="frame"` -Attribut aus dem vorhandenen `<container>` -Elemente.
-
-### Verschachteln von Formularen {#nest-forms}
-
-Sie können Formulare in anderen Formularen verschachteln. Sie können beispielsweise Notebook-Formulare in iconbox-Formularen verschachteln.
-
-Die Ebene der Verschachtelung steuert die Navigation. Benutzer können ein Drilldown zu Teilformularen durchführen.
-
