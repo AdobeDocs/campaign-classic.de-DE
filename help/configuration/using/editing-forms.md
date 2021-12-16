@@ -6,10 +6,10 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: 0dfce3b514fefef490847d669846e515b714d222
+source-git-commit: 1ab984d12c9beb0ba3378bbfb49d1d7d07e870f6
 workflow-type: tm+mt
-source-wordcount: '1130'
-ht-degree: 3%
+source-wordcount: '1319'
+ht-degree: 2%
 
 ---
 
@@ -403,3 +403,24 @@ Dieses Beispiel zeigt ein komplexes Formular:
 Daher wird die **Allgemein** -Seite des äußeren Formulars zeigt die **Name** und **Kontakt** Registerkarten.
 
 ![](assets/nested_forms_preview.png)
+
+## Ändern eines Factory-Eingabeformulars {#modify-factory-form}
+
+Gehen Sie wie folgt vor, um ein Factory-Formular zu ändern:
+
+1. Erweitern Sie optional das zugehörige Datenschema:
+
+   1. Wählen Sie im Menü **[!UICONTROL Administration]** > **[!UICONTROL Konfiguration]** > **[!UICONTROL Datenschemata]**.
+   1. Wählen Sie ein Datenschema aus und erweitern Sie es. Sie können beispielsweise Felder hinzufügen. [Mehr dazu](extending-a-schema.md)
+
+      >[!CAUTION]
+      > Ändern Sie nicht die Originaldaten in einem Factory-Namespace, sondern erweitern Sie sie stattdessen in einen benutzerdefinierten Namespace. Der Grund dafür ist, dass bei Softwareaktualisierungen alle Daten in den Factory-Namespaces überschrieben werden. Beispielsweise werden die Daten im `xtk`, `ncm`und `nms` Factory-Namespaces werden überschrieben. Die Daten in Ihren benutzerdefinierten Namespaces werden nicht geändert.
+
+1. Ändern Sie das Factory-Eingabeformular:
+
+   1. Wählen Sie im Menü **[!UICONTROL Administration]** > **[!UICONTROL Konfiguration]** > **[!UICONTROL Formulare]**.
+   1. Wählen Sie ein Formular aus und ändern Sie es.
+
+   Sie können Factory-Datenschemata erweitern, Sie können jedoch keine Factory-Eingabeformulare erweitern. Es wird empfohlen, werksmäßige Eingabeformulare direkt zu ändern, ohne sie neu zu erstellen. Bei Softwareaktualisierungen werden Ihre Änderungen in den Werkseingangsformularen mit den Upgrades zusammengeführt. Wenn die automatische Zusammenführung fehlschlägt, können Sie die Konflikte lösen. [Mehr dazu](../../production/using/upgrading.md#resolving-conflicts)
+
+   Wenn Sie beispielsweise ein Factory-Schema mit einem zusätzlichen Feld erweitern, können Sie dieses Feld zum zugehörigen Factory-Formular hinzufügen.
