@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: c08a4b3540da6370584e32e13723bee352402914
+source-git-commit: 31cf8dca13d53a3d6c450c04b45f8ed7e32f95b6
 workflow-type: tm+mt
-source-wordcount: '1143'
+source-wordcount: '1135'
 ht-degree: 3%
 
 ---
@@ -405,7 +405,4 @@ Daher wird die **Allgemein** -Seite des äußeren Formulars zeigt die **Name** u
 ![](assets/nested_forms_preview.png)
 
 ## Ändern eines Factory-Eingabeformulars {#modify-factory-form}
-
-Gehen Sie wie folgt vor, um ein Factory-Formular zu ändern:
-
 
