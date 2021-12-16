@@ -6,10 +6,10 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: a6549ad4d94b93d65752df66aeec39b90e4c3ec5
+source-git-commit: f4b9ac3300094a527b5ec1b932d204f0e8e5ee86
 workflow-type: tm+mt
-source-wordcount: '259'
-ht-degree: 5%
+source-wordcount: '503'
+ht-degree: 4%
 
 ---
 
@@ -83,3 +83,91 @@ Sie können verschiedene Arten von Eingabeformularen erstellen. Der Formulartyp 
 
    Dieses Formular zeigt eine Liste von Elementen an.
 
+## Container
+
+In Formularen können Sie Container für verschiedene Zwecke verwenden:
+
+* Organisieren von Inhalten in Formularen
+* Zugriff auf Eingabefelder definieren
+* Verschachteln von Formularen in anderen Formularen
+
+[Mehr dazu](form-structure.md#containers)
+
+### Inhalt organisieren
+
+Verwenden Sie Container zum Organisieren von Inhalten in Formularen:
+
+* Sie können Felder in Abschnitten gruppieren.
+* Sie können mehrseitigen Formularen Seiten hinzufügen.
+
+Verwenden Sie zum Einfügen eines Containers die `<container>` -Element. [Mehr dazu](form-structure.md#containers)
+
+#### Gruppenfelder
+
+Verwenden Sie Container, um Eingabefelder in organisierte Abschnitte zu gruppieren.
+
+Verwenden Sie dieses Element, um einen Abschnitt in ein Formular einzufügen: `<container type="frame">`. Wenn Sie optional einen Abschnittstitel hinzufügen möchten, verwenden Sie die `label` -Attribut.
+
+Syntax: `<container type="frame" label="`*section_title*`"> […] </container>`
+
+In diesem Beispiel definiert ein Container die **Erstellung** -Abschnitt, der die **[!UICONTROL Erstellt von]** und **[!UICONTROL Name]** Eingabefelder:
+
+```xml
+<form _cs="Coupons (nms)" entitySchema="xtk:form" img="xtk:form.png" label="Coupons"
+      name="coupon" namespace="nms" type="default" xtkschema="xtk:form">
+  <input xpath="@code"/>
+  <input xpath="@type"/>
+  <container label="Creation" type="frame">
+    <input xpath="createdBy"/>
+    <input xpath="createdBy/@name"/>
+  </container>
+</form>
+```
+
+![](assets/console_screen_form.png)
+
+#### Hinzufügen von Seiten zu mehrseitigen Formularen
+
+Verwenden Sie für mehrseitige Formulare einen Container, um eine Formularseite zu erstellen.
+
+Dieses Beispiel zeigt Container für **Allgemein** und **Details** Seiten eines Formulars:
+
+```xml
+<container img="ncm:book.png" label="General">
+[…]
+</container>
+<container img="ncm:detail.png" label="Details">
+[…]
+</container>
+```
+
+### Zugriff auf Felder definieren
+
+Verwenden Sie Container, um zu definieren, was sichtbar ist, und um den Zugriff auf Felder zu definieren. Sie können Gruppen von Feldern aktivieren oder deaktivieren.
+
+### Verschachteln von Formularen
+
+Verwenden Sie Container zum Verschachteln von Formularen in anderen Formularen. [Mehr dazu](#add-pages-to-multipage-forms)
+
+## Verweise auf Bilder
+
+Um Bilder zu suchen, wählen Sie **[!UICONTROL Administration]** > **[!UICONTROL Konfiguration]** > **[!UICONTROL Bilder]** aus dem Menü.
+
+Um ein Bild mit einem Element im Formular zu verknüpfen, z. B. einem Symbol, können Sie einem Bild einen Verweis hinzufügen. Verwenden Sie die `img` -Attribut, beispielsweise im `<container>` -Element.
+
+Syntax: `img="`*`namespace`*`:`*`filename`*`.`*`extension`*`"`
+
+Dieses Beispiel zeigt Verweise auf die `book.png` und `detail.png` Bilder aus `ncm` namespace:
+
+```xml
+<container img="ncm:book.png" label="General">
+[…]
+</container>
+<container img="ncm:detail.png" label="Details">
+[…]
+</container>
+```
+
+Diese Bilder werden für Symbole verwendet, auf die Benutzer klicken, um in einem mehrseitigen Formular zu navigieren:
+
+![](assets/nested_forms_preview.png)
