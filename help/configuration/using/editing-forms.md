@@ -6,10 +6,10 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: 214f6874f87fce5518651f6ff818e99d5edea7e0
+source-git-commit: daecbdecde0b80b47c113acc80618aee314c5434
 workflow-type: tm+mt
-source-wordcount: '1130'
-ht-degree: 3%
+source-wordcount: '1727'
+ht-degree: 2%
 
 ---
 
@@ -403,3 +403,150 @@ Dieses Beispiel zeigt ein komplexes Formular:
 Daher wird die **Allgemein** -Seite des äußeren Formulars zeigt die **Name** und **Kontakt** Registerkarten.
 
 ![](assets/nested_forms_preview.png)
+
+Um ein Formular in einem anderen Formular zu verschachteln, fügen Sie eine `<container>` -Element und legen Sie die `type` dem Formulartyp zuordnen. Für Formulare der obersten Ebene können Sie den Formulartyp in einem äußeren Container oder im `<form>` -Element.
+
+### Beispiel
+
+Dieses Beispiel zeigt ein komplexes Formular:
+
+* Das Formular der obersten Ebene ist ein Iconbox-Formular. Dieses Formular umfasst zwei Behälter mit der Bezeichnung **Allgemein** und **Details**.
+
+   Daher zeigt das äußere Formular die **Allgemein** und **Details** Seiten auf der obersten Ebene. Um auf diese Seiten zuzugreifen, klicken Benutzer auf die Symbole links im Formular.
+
+* Das Teilformular ist ein Notebook-Formular, das innerhalb der **Allgemein** Container. Das Teilformular besteht aus zwei Containern mit der Beschriftung **Name** und **Kontakt**.
+
+```xml
+<form _cs="Profile (nms)" entitySchema="xtk:form" img="xtk:form.png" label="Profile" name="profile" namespace="nms" xtkschema="xtk:form">
+  <container type="iconbox">
+    <container img="ncm:general.png" label="General">
+      <container type="notebook">
+        <container label="Name">
+          <input xpath="@firstName"/>
+          <input xpath="@lastName"/>
+        </container>
+        <container label="Contact">
+          <input xpath="@email"/>
+        </container>
+      </container>
+    </container>
+    <container img="ncm:detail.png" label="Details">
+      <input xpath="@birthDate"/>
+    </container>
+  </container>
+</form>
+```
+
+Daher wird die **Allgemein** -Seite des äußeren Formulars zeigt die **Name** und **Kontakt** Registerkarten.
+
+![](assets/nested_forms_preview.png)
+
+
+
+## Ändern eines Factory-Eingabeformulars {#modify-factory-form}
+
+Gehen Sie wie folgt vor, um ein Factory-Formular zu ändern:
+
+1. Ändern Sie das Factory-Eingabeformular:
+
+   1. Wählen Sie im Menü **[!UICONTROL Administration]** > **[!UICONTROL Konfiguration]** > **[!UICONTROL Formulare]**.
+   1. Wählen Sie ein Formular aus und ändern Sie es.
+
+   Sie können Factory-Datenschemata erweitern, Sie können jedoch keine Factory-Eingabeformulare erweitern. Es wird empfohlen, werksmäßige Eingabeformulare direkt zu ändern, ohne sie neu zu erstellen. Bei Softwareaktualisierungen werden Ihre Änderungen in den Werkseingangsformularen mit den Upgrades zusammengeführt. Wenn die automatische Zusammenführung fehlschlägt, können Sie die Konflikte lösen. [Mehr dazu](../../production/using/upgrading.md#resolving-conflicts)
+
+   Wenn Sie beispielsweise ein Factory-Schema mit einem zusätzlichen Feld erweitern, können Sie dieses Feld zum zugehörigen Factory-Formular hinzufügen.
+
+## Formulare überprüfen {#validate-forms}
+
+Sie können Überprüfungssteuerelemente in Formulare aufnehmen.
+
+### Schreibgeschützten Zugriff auf Felder gewähren
+
+Um Lesezugriff auf ein Feld zu gewähren, verwenden Sie die `readOnly="true"` -Attribut. Beispielsweise können Sie den Primärschlüssel eines Datensatzes anzeigen, jedoch mit schreibgeschütztem Zugriff. [Mehr dazu](form-structure.md#non-editable-fields)
+
+In diesem Beispiel wird der Primärschlüssel (`iRecipientId`) `nms:recipient` Schema wird in schreibgeschütztem Zugriff angezeigt:
+
+```xml
+<value xpath="@iRecipientId" readOnly="true"/>
+```
+
+### Pflichtfelder aktivieren
+
+Sie können obligatorische Informationen überprüfen:
+
+* Verwenden Sie die `required="true"` -Attribut für die erforderlichen Felder.
+* Verwenden Sie die `<leave>` -Knoten, um diese Felder zu überprüfen und Fehlermeldungen anzuzeigen.
+
+In diesem Beispiel ist die E-Mail-Adresse erforderlich und es wird eine Fehlermeldung angezeigt, wenn der Benutzer diese Informationen nicht angegeben hat:
+
+```xml
+<input xpath="@email" required="true"/>
+<leave>
+  <check expr="@email!=''">
+    <error>The email address is required.</error>
+  </check>
+</leave>
+```
+
+Mehr dazu [Ausdrucksfelder](form-structure.md#expression-field) und [Formularkontext](form-structure.md#context-of-forms).
+
+### Werte überprüfen
+
+Sie können JavaScript-SOAP-Aufrufe verwenden, um Formulardaten aus der Konsole zu überprüfen. Verwenden Sie diese Aufrufe zur komplexen Validierung, um beispielsweise einen Wert mit einer Liste zulässiger Werte zu vergleichen. [Mehr dazu](form-structure.md#soap-methods)
+
+1. Erstellen Sie eine Validierungsfunktion in einer JS-Datei.
+
+   Beispiel:
+
+   ```js
+   function nms_recipient_checkValue(value)
+   {
+     logInfo("checking value " + value)
+     if (…)
+     {
+       logError("Value " + value + " is not valid")
+     }
+     return 1
+   }
+   ```
+
+   In diesem Beispiel erhält die Funktion den Namen `checkValue`. Mit dieser Funktion wird die `recipient` Datentyp in der `nms` Namespace. Der Wert, der überprüft wird, wird protokolliert. Wenn der Wert nicht gültig ist, wird eine Fehlermeldung protokolliert. Wenn der Wert gültig ist, wird der Wert 1 zurückgegeben.
+
+   Sie können den zurückgegebenen Wert verwenden, um das Formular zu ändern.
+
+1. Fügen Sie im Formular die `<soapCall>` -Element zu `<leave>` -Element.
+
+   In diesem Beispiel wird ein SOAP-Aufruf verwendet, um die `@valueToCheck` Zeichenfolge:
+
+   ```xml
+   <form name="recipient" (…)>
+   (…)
+     <leave>
+       <soapCall name="checkValue" service="nms:recipient">
+         <param exprIn="@valueToCheck" type="string"/>
+       </soapCall>
+     </leave>
+   </form>
+   ```
+
+   In diesem Beispiel wird die `checkValue` und `nms:recipient` -Dienst wird verwendet:
+
+   * Der Dienst ist der Namespace und der Datentyp.
+   * Die Methode ist der Funktionsname. Beim Namen wird zwischen Groß- und Kleinschreibung unterschieden.
+
+   Der Aufruf wird synchron ausgeführt.
+
+   Alle Ausnahmen werden angezeigt. Wenn Sie `<leave>` -Element verwenden, können Benutzer das Formular erst dann speichern, wenn die eingegebenen Informationen validiert wurden.
+
+Dieses Beispiel zeigt, wie Sie Dienstaufrufe in Formularen durchführen können:
+
+```xml
+<enter>
+  <soapCall name="client" service="c4:ybClient">
+    <param exprIn="@id" type="string"/>
+    <param type="boolean" xpathOut="/tmp/@count"/>
+  </soapCall>
+</enter>
+```
+
+In diesem Beispiel ist die Eingabe eine ID, die ein Primärschlüssel ist. Wenn Benutzer das Formular für diese ID ausfüllen, wird ein SOAP-Aufruf mit dieser ID als Eingabeparameter durchgeführt. Die Ausgabe ist ein boolescher Wert, der in dieses Feld geschrieben wird: `/tmp/@count`. Sie können diesen booleschen Wert innerhalb des Formulars verwenden. Mehr dazu [Formularkontext](form-structure.md#context-of-forms).
