@@ -6,10 +6,10 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: f4b9ac3300094a527b5ec1b932d204f0e8e5ee86
+source-git-commit: 0dfce3b514fefef490847d669846e515b714d222
 workflow-type: tm+mt
-source-wordcount: '503'
-ht-degree: 4%
+source-wordcount: '1130'
+ht-degree: 3%
 
 ---
 
@@ -169,5 +169,237 @@ Dieses Beispiel zeigt Verweise auf die `book.png` und `detail.png` Bilder aus `n
 ```
 
 Diese Bilder werden für Symbole verwendet, auf die Benutzer klicken, um in einem mehrseitigen Formular zu navigieren:
+
+![](assets/nested_forms_preview.png)
+
+
+## Einfaches Formular erstellen {#create-simple-form}
+
+Gehen Sie wie folgt vor, um ein Formular zu erstellen:
+
+1. Wählen Sie im Menü **[!UICONTROL Administration]** > **[!UICONTROL Konfiguration]** > **[!UICONTROL Formulare]**.
+1. Klicken Sie auf **[!UICONTROL Neu]** rechts oben in der Liste.
+
+   ![](assets/input-form-create-1.png)
+
+1. Geben Sie die Formulareigenschaften an:
+
+   * Geben Sie den Formularnamen und den Namespace an.
+
+      Der Formularname und der Namespace können mit dem zugehörigen Datenschema übereinstimmen.  Dieses Beispiel zeigt ein Formular für die `cus:order` Datenschema:
+
+      ```xml
+      <form entitySchema="xtk:form" img="xtk:form.png" label="Order" name="order" namespace="cus" type="iconbox" xtkschema="xtk:form">
+        […]
+      </form>
+      ```
+
+      Alternativ können Sie das Datenschema explizit im `entity-schema` -Attribut.
+
+      ```xml
+      <form entity-schema="cus:stockLine" entitySchema="xtk:form" img="xtk:form.png" label="Stock order" name="stockOrder" namespace="cus" xtkschema="xtk:form">
+        […]
+      </form>
+      ```
+
+   * Geben Sie den Titel an, der im Formular angezeigt werden soll.
+   * Geben Sie optional den Formulartyp an. Wenn Sie keinen Formulartyp angeben, wird standardmäßig der Konsolenbildschirmtyp verwendet.
+
+      ![](assets/input-form-create-2.png)
+
+      Wenn Sie ein mehrseitiges Formular entwerfen, können Sie den Formulartyp im `<form>` -Element und geben Sie den Typ in einem Container an.
+
+1. Klicken Sie auf **[!UICONTROL Speichern]**.
+
+1. Fügen Sie die Formularelemente ein.
+
+   Um beispielsweise ein Eingabefeld einzufügen, verwenden Sie die `<input>` -Element. Legen Sie die `xpath` -Attribut der Feldreferenz als XPath-Ausdruck zuweisen. [Mehr dazu](schema-structure.md#referencing-with-xpath)
+
+   Dieses Beispiel zeigt Eingabefelder, die auf dem `nms:recipient` Schema.
+
+   ```xml
+   <input xpath="@firstName"/>
+   <input xpath="@lastName"/>
+   ```
+
+1. Wenn das Formular auf einem bestimmten Schematyp basiert, können Sie die Felder für dieses Schema nachschlagen:
+
+   1. Klicken **[!UICONTROL Einfügen]** > **[!UICONTROL Dokumentfelder]**.
+
+      ![](assets/input-form-create-4.png)
+
+   1. Wählen Sie das Feld aus und klicken Sie auf **[!UICONTROL OK]**.
+
+      ![](assets/input-form-create-5.png)
+
+1. Geben Sie optional den Feld-Editor an.
+
+   Jedem Datentyp ist ein standardmäßiger Feldeditor zugeordnet:
+   * Bei einem Feld vom Typ Datum zeigt das Formular einen Eingabekalender an.
+   * Bei einem Auflistungsfeld zeigt das Formular eine Auswahlliste an.
+
+   Sie können die folgenden Editor-Typen für Felder verwenden:
+
+   | Feldeditor | Formularattribut |
+   | --- | --- |
+   | Radiobutton | `type="radiobutton"` |
+   | Checkbox | `type="checkbox"` |
+   | Bearbeitungsstruktur | `type="tree"` |
+
+   Mehr dazu [Speicherlistensteuerelemente](form-structure.md#memory-list-controls).
+
+1. Definieren Sie optional den Zugriff auf die Felder:
+
+   | Element | Attribut | Beschreibung |
+   | --- | --- | --- |
+   | `<input>` | `read-only:"true"` | Ermöglicht schreibgeschützten Zugriff auf ein Feld |
+   | `<container>` | `type="visibleGroup" visibleIf="`*edit-expr*`"` | Zeigt eine Feldergruppe bedingt an |
+   | `<container>` | `type="enabledGroup" enabledIf="`*edit-expr*`"` | Bedingte Aktivierung einer Feldergruppe |
+
+   Beispiel:
+
+   ```xml
+   <container type="enabledGroup" enabledIf="@gender=1">
+     […]
+   </container>
+   <container type="enabledGroup" enabledIf="@gender=2">
+     […]
+   </container>
+   ```
+
+1. Verwenden Sie optional Container, um Felder in Abschnitte zu gruppieren.
+
+   ```xml
+   <container type="frame" label="Name">
+      <input xpath="@firstName"/>
+      <input xpath="@lastName"/>
+   </container>
+   <container type="frame" label="Contact details">
+      <input xpath="@email"/>
+      <input xpath="@phone"/>
+   </container>
+   ```
+
+   ![](assets/input-form-create-3.png)
+
+## Mehrseitige Formulare erstellen {#create-multipage-form}
+
+Sie können mehrseitige Formulare erstellen. Sie können Formulare auch in anderen Formularen verschachteln.
+
+### Erstellen Sie eine `iconbox` Formular
+
+Verwenden Sie die `iconbox` Formulartyp zum Anzeigen von Symbolen auf der linken Seite des Formulars, über die Benutzer zu verschiedenen Seiten im Formular gelangen.
+
+![](assets/iconbox_form_preview.png)
+
+So ändern Sie den Typ eines vorhandenen Formulars in `iconbox`führen Sie die folgenden Schritte aus:
+
+1. Ändern Sie die `type` -Attribut `<form>` Element zu `iconbox`:
+
+   ```xml
+   <form […] type="iconbox">
+   ```
+
+1. Legen Sie für jede Formularseite einen Container fest:
+
+   1. Hinzufügen einer `<container>` -Element als untergeordnetes Element des `<form>` -Element.
+   1. Um eine Beschriftung und ein Bild für das Symbol zu definieren, verwenden Sie die `label` und `img` -Attribute.
+
+      ```xml
+      <form entitySchema="xtk:form" name="Service provider" namespace="nms" type="iconbox" xtkschema="xtk:form">
+          <container img="xtk:properties.png" label="General">
+              <input xpath="@label"/>
+              <input xpath="@name"/>
+              […]
+          </container>
+          <container img="nms:msgfolder.png" label="Details">
+              <input xpath="@address"/>
+              […]
+          </container>
+          <container img="nms:supplier.png" label="Services">
+              […]
+          </container>
+      </form>
+      ```
+   Alternativ können Sie die `type="frame"` -Attribut aus dem vorhandenen `<container>` -Elemente.
+
+### Notebook-Formular erstellen
+
+Verwenden Sie die `notebook` Formulartyp zum Anzeigen von Registerkarten oben im Formular, über die Benutzer zu verschiedenen Seiten gelangen.
+
+![](assets/notebook_form_preview.png)
+
+So ändern Sie den Typ eines vorhandenen Formulars in `notebook`führen Sie die folgenden Schritte aus:
+
+1. Ändern Sie die `type` -Attribut `<form>` Element zu `notebook`:
+
+   ```xml
+   <form […] type="notebook">
+   ```
+
+1. Fügen Sie für jede Formularseite einen Container hinzu:
+
+   1. Hinzufügen einer `<container>` -Element als untergeordnetes Element des `<form>` -Element.
+   1. Um den Titel und das Bild für das Symbol zu definieren, verwenden Sie die `label` und `img` -Attribute.
+
+   ```xml
+     <form entitySchema="xtk:form" name="Service provider" namespace="nms" type="notebook" xtkschema="xtk:form">
+         <container label="General">
+             <input xpath="@label"/>
+             <input xpath="@name"/>
+             […]
+         </container>
+         <container label="Details">
+             <input xpath="@address"/>
+             […]
+         </container>
+         <container label="Services">
+             […]
+         </container>
+     </form>
+   ```
+
+   Alternativ können Sie die `type="frame"` -Attribut aus dem vorhandenen `<container>` -Elemente.
+
+### Verschachteln von Formularen {#nest-forms}
+
+Sie können Formulare in anderen Formularen verschachteln. Sie können beispielsweise Notebook-Formulare in iconbox-Formularen verschachteln.
+
+Die Ebene der Verschachtelung steuert die Navigation. Benutzer können ein Drilldown zu Teilformularen durchführen.
+
+Um ein Formular in einem anderen Formular zu verschachteln, fügen Sie eine `<container>` -Element und legen Sie die `type` dem Formulartyp zuordnen. Für Formulare der obersten Ebene können Sie den Formulartyp in einem äußeren Container oder im `<form>` -Element.
+
+### Beispiel
+
+Dieses Beispiel zeigt ein komplexes Formular:
+
+* Das Formular der obersten Ebene ist ein Iconbox-Formular. Dieses Formular umfasst zwei Behälter mit der Bezeichnung **Allgemein** und **Details**.
+
+   Daher zeigt das äußere Formular die **Allgemein** und **Details** Seiten auf der obersten Ebene. Um auf diese Seiten zuzugreifen, klicken Benutzer auf die Symbole links im Formular.
+
+* Das Teilformular ist ein Notebook-Formular, das innerhalb der **Allgemein** Container. Das Teilformular besteht aus zwei Containern mit der Beschriftung **Name** und **Kontakt**.
+
+```xml
+<form _cs="Profile (nms)" entitySchema="xtk:form" img="xtk:form.png" label="Profile" name="profile" namespace="nms" xtkschema="xtk:form">
+  <container type="iconbox">
+    <container img="ncm:general.png" label="General">
+      <container type="notebook">
+        <container label="Name">
+          <input xpath="@firstName"/>
+          <input xpath="@lastName"/>
+        </container>
+        <container label="Contact">
+          <input xpath="@email"/>
+        </container>
+      </container>
+    </container>
+    <container img="ncm:detail.png" label="Details">
+      <input xpath="@birthDate"/>
+    </container>
+  </container>
+</form>
+```
+
+Daher wird die **Allgemein** -Seite des äußeren Formulars zeigt die **Name** und **Kontakt** Registerkarten.
 
 ![](assets/nested_forms_preview.png)
