@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: dcfa6d1e5623792c852d164d636ebe19a7aaa614
+source-git-commit: b06e7b3d2dcb172e6a10c383b5f9800960e7a074
 workflow-type: tm+mt
-source-wordcount: '1114'
+source-wordcount: '1001'
 ht-degree: 3%
 
 ---
@@ -361,23 +361,9 @@ So ändern Sie den Typ eines vorhandenen Formulars in `notebook`führen Sie die 
 
    Alternativ können Sie die `type="frame"` -Attribut aus dem vorhandenen `<container>` -Elemente.
 
-## Verschachteln von Formularen {#nest-forms}
+### Verschachteln von Formularen {#nest-forms}
 
 Sie können Formulare in anderen Formularen verschachteln. Sie können beispielsweise Notebook-Formulare in iconbox-Formularen verschachteln.
 
 Die Ebene der Verschachtelung steuert die Navigation. Benutzer können ein Drilldown zu Teilformularen durchführen.
-
-Um ein Formular in einem anderen Formular zu verschachteln, fügen Sie eine `<container>` -Element und legen Sie die `type` dem Formulartyp zuordnen. Für Formulare der obersten Ebene können Sie den Formulartyp in einem äußeren Container oder im `<form>` -Element.
-
-### Beispiel
-
-Dieses Beispiel zeigt ein komplexes Formular:
-
-* Das Formular der obersten Ebene ist ein Iconbox-Formular. Dieses Formular umfasst zwei Behälter mit der Bezeichnung **Allgemein** und **Details**.
-
-   Daher zeigt das äußere Formular die **Allgemein** und **Details** Seiten auf der obersten Ebene. Um auf diese Seiten zuzugreifen, klicken Benutzer auf die Symbole links im Formular.
-
-* Das Teilformular ist ein Notebook-Formular, das innerhalb der **Allgemein** Container. Das Teilformular besteht aus zwei Containern mit der Beschriftung **Name** und **Kontakt**.
-
-
 
