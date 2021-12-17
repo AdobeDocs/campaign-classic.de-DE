@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: ebd5b04c30c54142433056904a5d80f5a8744ded
+source-git-commit: 5261021bde11bc9450a429f26aa493ca2398dbc7
 workflow-type: tm+mt
-source-wordcount: '2459'
-ht-degree: 100%
+source-wordcount: '2531'
+ht-degree: 97%
 
 ---
 
@@ -28,10 +28,11 @@ _8. Oktober 2021_
 
 **Patches**
 
+* Die im Build 9342 verfügbare Behebung des Abrechnungs-Workflows wurde verbessert, sodass der Workflow manuell neu gestartet werden musste, damit die Fehlerbehebung angewendet werden konnte. Jetzt startet das Postupgrade automatisch den Workflow neu.
+
 * Fehlerkorrektur - Die ordnungsgemäße Angebotsverwaltung bei Verwendung des Moduls **Interaction** mit der Option [Power Booster](../../installation/using/power-booster-and-power-cluster.md) ist jetzt möglich. (NEO-39263)
 
 * Fehlerkorrektur - Beim Versand mit mehr als einer IP-Affinität in einer Multi-Mid-Sourcing-Instanz tritt jetzt der Fehler &#39;IP-Affinität xxx nicht in Mid-Server xxx gefunden&#39; nicht mehr auf. (NEO-37514)
-
 
 ## ![](assets/do-not-localize/orange_2.png) Version 21.1.4 – Build 9342 {#release-21-1-4-build-9342}
 
@@ -49,9 +50,9 @@ _7. September 2021_
 
 **Sonstige Änderungen**
 
+* Fehlerkorrektur - Es wurde eine Regression behoben, die in Version 21.1.3 mit dem neuen Limits des Abrechnungs-Workflows eingeführt wurde. Der Abrechnungs-Workflow wurde auf falschen Instanzen ausgeführt und beim Versuch abgestürzt, den nicht generierten Abrechnungsbericht zu senden. Sie müssen den Workflow manuell neu starten, damit die Fehlerbehebung angewendet wird.
 * Bereits veraltete Microsoft CRM-Connectoren (Office 365- und On-Premise-Implementierungen) wurden aus der Benutzeroberfläche entfernt. [Mehr dazu](../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft)
 * Nach der Migration zu Tomcat 8 wurde das IIS-Setup-Skript aktualisiert, um Probleme mit der IIS-Integration zu beheben. (NEO-31019)
-* Es wurde ein Schutzmechanismus hinzugefügt, mit dem nur der [technische Workflow &quot;Abrechnung&quot;](../../production/using/monitoring-processes.md#billing-report) auf der Marketing-Instanz ausgeführt werden kann.
 * In den Daten- und Schema-Tabs des Fensters **Population ansehen** der Workflow-Transitionen wurde die Identifizierung der Datenquelle verbessert.
 * Fehlende Datenbankindizes wurden den folgenden Schemas hinzugefügt, um Probleme bei der Datenbankaktualisierung zu vermeiden: xtk:rights, nms:dlvExclusion, nms:seedMember, nms:trackingUrl
 
@@ -193,6 +194,7 @@ Weitere Informationen finden Sie auf der Seite [Eingestellte und entfernte Funkt
 
 **Sonstige Änderungen**
 
+* Es wurde ein Schutzmechanismus hinzugefügt, mit dem nur der [technische Workflow &quot;Abrechnung&quot;](../../production/using/monitoring-processes.md#billing-report) auf der Marketing-Instanz ausgeführt werden kann.
 * Der Drittanbieter openssl für Windows wurde auf Version 1.1.1h aktualisiert.
 * In der Debian-Kit-Beschreibung wurde &quot;nlserver&quot; in &quot;Adobe Campaign Classic-Server&quot; geändert.
 
