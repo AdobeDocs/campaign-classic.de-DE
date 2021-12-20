@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: f7c4603e389b19c057ee72bb50ed30d03b60f4bc
-workflow-type: ht
-source-wordcount: '652'
-ht-degree: 100%
+source-git-commit: eb0e572f0bb6196a58a7dab4999df784d5c4851f
+workflow-type: tm+mt
+source-wordcount: '727'
+ht-degree: 89%
 
 ---
 
@@ -48,6 +48,7 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 <tr>
 <td>Debian</td>
 <td>
+<p>11 (64 Bit)</p>
 <p>10 (64 Bit)</p>
 <p>9 (64 Bit)</p>
 </td>
@@ -63,6 +64,7 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 <tr>
 <td>Windows Server</td>
 <td>
+<p>2019</p>
 <p>2016</p>
 <p>2012 R2</p>
 <p>2012</p>
@@ -141,8 +143,6 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 <p>11.x</p>
 <p>10.x</p>
 <p>9.6.x</p>
-<p>9.5.x</p>
-<p>9.4.x</p>
 <p><strong>Hinweis:</strong> Sie können für PostgreSQL auch Amazon RDS mit den oben angegebenen Versionen verwenden.</p>
 </td>
 </tr>
@@ -191,24 +191,41 @@ Unten finden Sie die mit Adobe Campaign kompatiblen CRM-Systeme (Customer Relati
 ## Federated Data Access (FDA){#FederatedDataAccessFDA}
 
 Die folgenden externen Datenbanken sind mit dem [Federated Data Access-Modul](../../installation/using/about-fda.md) von Adobe Campaign kompatibel:
-
 <table>
 <tbody>
+<td><strong>Connector</strong></td>
+<td><strong>Versionskompatibilität</strong></td>
+<td><strong>Hosting-Modell-Kompatibilität</strong></td>
+<td><strong>Build-Kompatibilität</strong></td>
 <tr>
+<tr>
+<td>Snowflake</td>
+<td> </td>
+<td>Managed Services, Hybrid und On-Premise</td>
+<td>21.1.5 Minimum</td>
+</tr>
 <td>Vertica</td>
 <td> </td>
+<td>Nur Hybrid und On-Premise</td>
+<td>Mindestens 19.1.4</td>
 </tr>
 <tr>
 <td>Google BigQuery</td>
 <td> </td>
+<td>Managed Services, Hybrid und On-Premise</td>
+<td>21.1.5 Minimum</td>
 </tr>
 <tr>
 <td>Microsoft Azure Synapse Analytics</td>
 <td> </td>
+<td>Hybrid und On-Premise</td>
+<td>Mindestens 19.1.4</td>
 </tr>
 <tr>
 <td>Amazon Redshift</td>
 <td><p> </p>
+<td>Managed Services, Hybrid und On-Premise</td>
+<td>Mindestens 19.1.4</td>
 </td>
 </tr>
 <tr>
@@ -219,6 +236,8 @@ Die folgenden externen Datenbanken sind mit dem [Federated Data Access-Modul](..
 <p>12c</p>
 <p>11g</p>
 </td>
+<td>Nur Hybrid und On-Premise</td>
+<td>V6.11 Minimum</td>
 </tr>
 <tr>
 <td>PostgreSQL</td>
@@ -231,6 +250,8 @@ Die folgenden externen Datenbanken sind mit dem [Federated Data Access-Modul](..
 <p>9.5.x</p>
 <p>9.4.x</p>
 </td>
+<td>Managed Services, Hybrid und On-Premise</td>
+<td>Mindestens 19.1.4</td>
 </tr>
 <tr><td>SQL-Server</td>
 <td>
@@ -240,11 +261,15 @@ Die folgenden externen Datenbanken sind mit dem [Federated Data Access-Modul](..
 <p>2014</p>
 <p>2012 SP1 und SP2</p>
 </td>
+<td>Nur Hybrid und On-Premise</td>
+<td>V6.11 Minimum</td>
 </tr>
 <tr><td>MySQL</td>
 <td>
 <p>5.7</p>
 </td>
+<td>Nur Hybrid und On-Premise</td>
+<td>V6.11 Minimum</td>
 </tr>
 <tr>
 <td>Teradata</td>
@@ -254,12 +279,16 @@ Die folgenden externen Datenbanken sind mit dem [Federated Data Access-Modul](..
 <p>15.10</p>
 <p>15.0</p>
 </td>
+<td>Nur Hybrid und On-Premise</td>
+<td>V6.11 Minimum</td>
 </tr>
 <tr>
 <td>Netezza</td>
 <td>
 <p>7.2</p>
 </td>
+<td>Nur Hybrid und On-Premise</td>
+<td>V6.11 Minimum</td>
 </tr>
 <tr>
 <td>Sybase</td>
@@ -267,12 +296,16 @@ Die folgenden externen Datenbanken sind mit dem [Federated Data Access-Modul](..
 <p>IQ 16</p>
 <p>ASE 15.7</p>
 </td>
+<td>Nur Hybrid und On-Premise</td>
+<td>V6.11 Minimum</td>
 </tr>
 <tr>
 <td>SAP HANA</td>
 <td>
 <p>Version 1 SPS 12</p>
 </td>
+<td>Nur Hybrid und On-Premise</td>
+<td>V6.11 Minimum</td>
 </tr>
 <tr><td>Hadoop über HiveSQL</td>
 <td>
@@ -280,13 +313,12 @@ Die folgenden externen Datenbanken sind mit dem [Federated Data Access-Modul](..
 <p>HDInsight 3.4 (HDP 2.4), 3.5 (HDP 2.5), 3.6 (HDP 2.6)</p>
 <p>Cloudera CDH6.x</p>
 </td>
-</tr>
-<tr>
-<td>Snowflake</td>
-<td> </td>
+<td>Nur Hybrid und On-Premise</td>
+<td>V6.11 Minimum</td>
 </tr>
 </tbody>
 </table>
+
 
 ## Client-Konsole {#ClientConsoleoperatingsystems}
 

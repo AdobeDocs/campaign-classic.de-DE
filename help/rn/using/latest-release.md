@@ -1,15 +1,15 @@
 ---
 product: campaign
 title: Aktuelle Version
-description: Aktuelle Version von Campaign Classic        Anmerkungen
+description: Neueste Versionshinweise zu Campaign Classic v7
 feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 5261021bde11bc9450a429f26aa493ca2398dbc7
+source-git-commit: eb0e572f0bb6196a58a7dab4999df784d5c4851f
 workflow-type: tm+mt
-source-wordcount: '2531'
-ht-degree: 97%
+source-wordcount: '2561'
+ht-degree: 88%
 
 ---
 
@@ -17,12 +17,14 @@ ht-degree: 97%
 
 ![](../../assets/v7-only.svg)
 
-Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der **aktuellen Campaign Classic-Version** aufgelistet.
+Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen aufgelistet, die mit der **neueste Campaign Classic v7-Version**. Jeder neue Build weist einen Status auf, der durch eine Farbe dargestellt wird. Erfahren Sie mehr über den Build-Status von Campaign Classic v7 in [diese Seite](rn-overview.md).
 
-Grundlegendes zum Build-Status von Campaign finden Sie auf [dieser Seite](rn-overview.md).
+## Version 7.1 (21.1)
 
+>[!CAUTION]
+>Kampagne **[!UICONTROL Hilfe > Versionsinformationen..]** -Menü können Sie Ihre [Version und Build-Nummer](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Beachten Sie jedoch, dass für alle Builds zwischen 9277 und 9343, die auf dieser Seite aufgelistet sind, die Versionsnummer auf 7,0 statt auf 7,1 festgelegt ist.
 
-## ![](assets/do-not-localize/green_2.png) Version 21.1.4 – Build 9343 {#release-21-1-4-build-9343}
+### ![](assets/do-not-localize/green_2.png) Version 21.1.4 – Build 9343 {#release-21-1-4-build-9343}
 
 _8. Oktober 2021_
 
@@ -34,7 +36,7 @@ _8. Oktober 2021_
 
 * Fehlerkorrektur - Beim Versand mit mehr als einer IP-Affinität in einer Multi-Mid-Sourcing-Instanz tritt jetzt der Fehler &#39;IP-Affinität xxx nicht in Mid-Server xxx gefunden&#39; nicht mehr auf. (NEO-37514)
 
-## ![](assets/do-not-localize/orange_2.png) Version 21.1.4 – Build 9342 {#release-21-1-4-build-9342}
+### ![](assets/do-not-localize/orange_2.png) Version 21.1.4 – Build 9342 {#release-21-1-4-build-9342}
 
 _7. September 2021_
 
@@ -68,7 +70,7 @@ _7. September 2021_
 * Fehlerkorrektur – Variablen können jetzt in einer Workflow-Aktivität vom Typ **Anreicherung** verwendet werden, wenn die eingehende Transition aus einer FDA-Datenquelle stammt.
 * Fehlerkorrektur – URLs in E-Mail-Nachrichten werden jetzt nicht mehr beschädigt.
 
-## ![](assets/do-not-localize/orange_2.png) Version 21.1.3 – Build 9330 {#release-21-1-3-build-9330}
+### ![](assets/do-not-localize/orange_2.png) Version 21.1.3 – Build 9330 {#release-21-1-3-build-9330}
 
 _5. Juni 2021_
 
@@ -179,18 +181,18 @@ Weiterführende Informationen finden Sie in der [Campaign-Kompatibilitätsmatrix
 
 **Eingestellte Funktionen**
 
-* Ab Campaign Version 21.1 wird der Adobe Analytics Data Connector nicht mehr unterstützt. Wenn Sie diesen Connector verwenden, müssen Sie Ihre Implementierung auf den neuen Adobe Analytics Connector anpassen.
-Weitere Informationen finden Sie im [entsprechenden Handbuch](../../technotes/using/aa-connector-migration.md).
-* Debian 8 wird jetzt nicht mehr unterstützt.
-* Nach der Einstellung von Oracle CRM in Version 20.3 wurde das zugehörige externe Konto aus der Benutzeroberfläche entfernt.
+* ODBC-Treiber werden jetzt direkt mit Adobe Campaign-Drittanbietern installiert. Für die Installation der Treiber sind keine manuellen Schritte mehr erforderlich.
+* Google Big Query ist jetzt für gehostete Bereitstellungen verfügbar.
 
-Weitere Informationen finden Sie auf der Seite [Eingestellte und entfernte Funktionen ](../../rn/using/deprecated-features.md).
+[Mehr dazu](../../installation/using/configure-fda.md)
 
 **Verbesserungen**
 
-* Beim Speichern eines Workflows wurden zusätzliche Prüfungen hinzugefügt, um sicherzustellen, dass Aktivitätsnamen eindeutig sind und dass auf Transitionen immer eine Aktivität folgt.
-* Der technische Workflow **Abrechnung (Billing)** enthält jetzt die Aufgaben, die ursprünglich vom mittlerweile entfernten Workflow **Zählung aktiver Profile** (billingActiveContactCount) ausgeführt wurden. Der monatlich vom Workflow gesendete E-Mail-Bericht enthält jetzt Informationen zur Anzahl der aktiven Profile in der Instanz. [Mehr dazu](../../workflow/using/about-technical-workflows.md)
-* Es wurde das neue Attribut **_keyOnMData** hinzugefügt, um einen Schlüssel für Vorgänge zu Memo-Daten verwenden zu können.
+* Kritische Fehlerbehebungen wurden bezüglich der Web-API des Microsoft Dynamics Connector vorgenommen:
+   * Fehlerkorrektur - Der Datenimport aus Microsoft CRM funktioniert jetzt, wenn die Filterbedingung Suchfelder enthält.
+   * Fehlerkorrektur - Beim Import, der durch einen Workflow ausgelöst wird, werden jetzt die Nullwerte von Feldern vom Typ Zeichenfolge als Null statt als leere Werte gespeichert.
+   * Fehlerkorrektur - Beim Datenimport oder -export mithilfe von Web-API-Aufrufen tritt jetzt folgender Fehler mehr auf: &quot;Ungültiger URI: Das URI-Schema ist zu lang.&quot;
+   * Fehlerkorrektur - Beim Import aus Microsoft Dynamics 365 tritt jetzt kein Fehler mehr auf, der den Import von Daten aus Suchfeldern verhinderte.
 
 **Sonstige Änderungen**
 
@@ -224,14 +226,14 @@ Weitere Informationen finden Sie auf der Seite [Eingestellte und entfernte Funkt
 * Fehlerkorrektur – Das Durchführen eines Versandes mit einer Gruppe von Testsendungen ist jetzt zuverlässig möglich. Ein bestimmter Verbindungsmechanismus führte dazu, dass die Versandpersonalisierung fehlschlug. (NEO-14391)
 * Fehlerkorrektur – Die Warnungsaktivität sendet jetzt einen Warnhinweis, wenn eine Abfrage und eine Anreicherungsaktivität an die Versandtabelle gerichtet ist. (NEO-25157)
 
-## ![](assets/do-not-localize/red_2.png) Version 21.1.2 – Build 9282 {#release-21-1-2-build-9282}
+### ![](assets/do-not-localize/red_2.png) Version 21.1.2 – Build 9282 {#release-21-1-2-build-9282}
 
 _15. April 2021_
 
 * Die Verwaltung von Passwörtern wurde verbessert, um die Sicherheit zu optimieren.
 * Fehlerkorrektur – Es wurde ein Problem behoben, das zum Absturz des MTA führen konnte.
 
-## ![](assets/do-not-localize/red_2.png) Version 21.1.1 – Build 9277 {#release-21-1-1-build-9277}
+### ![](assets/do-not-localize/red_2.png) Version 21.1.1 – Build 9277 {#release-21-1-1-build-9277}
 
 _22. Februar 2021_
 

@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: f7c4603e389b19c057ee72bb50ed30d03b60f4bc
-workflow-type: ht
-source-wordcount: '1700'
-ht-degree: 100%
+source-git-commit: eb0e572f0bb6196a58a7dab4999df784d5c4851f
+workflow-type: tm+mt
+source-wordcount: '1737'
+ht-degree: 98%
 
 ---
 
@@ -85,6 +85,12 @@ In diesem Abschnitt werden Funktionen und Leistungsmerkmale aufgelistet, die aus
   <tr> 
    <td><strong>Bereich – Funktion</strong></td>
    <td><strong>Ersatz</strong></td> 
+  </tr>
+ <tr>  
+   <td>CRM-Connectoren activities<br></td>
+   <td><p> Die Aktionsaktivitäten Microsoft CRM, Salesforce und Oracle CRM On Demand sind nicht mehr verfügbar.</p>
+   <p>Um die Datensynchronisation zwischen Adobe Campaign und einem CRM-System zu konfigurieren, können Sie die Aktivität CRM-Connector verwenden.</p>
+   <p><a href="../../workflow/using/crm-connector.md">Mehr dazu</a></p>
   </tr>
   <tr>  
    <td>Reporting<br></td>
