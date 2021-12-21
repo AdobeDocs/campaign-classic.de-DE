@@ -9,7 +9,7 @@ exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: cbafd70f5b5e964256edad0ce2965f3ed4650500
 workflow-type: tm+mt
 source-wordcount: '2558'
-ht-degree: 88%
+ht-degree: 91%
 
 ---
 
@@ -30,7 +30,7 @@ _8. Oktober 2021_
 
 **Patches**
 
-* Die im Build 9342 verfügbare Behebung des Abrechnungs-Workflows wurde verbessert, sodass der Workflow manuell neu gestartet werden musste, damit die Fehlerbehebung angewendet werden konnte. Jetzt startet das Postupgrade automatisch den Workflow neu.
+* Die Fehlerkorrektur des Abrechnungs-Workflows im Build 9342 wurde weiter verbessert. Der Workflow muss jetzt nicht mehr manuell neu gestartet werden, damit die Fehlerbehebung angewendet werden kann. Jetzt startet das Postupgrade automatisch den Workflow neu.
 
 * Fehlerkorrektur - Die ordnungsgemäße Angebotsverwaltung bei Verwendung des Moduls **Interaction** mit der Option [Power Booster](../../installation/using/power-booster-and-power-cluster.md) ist jetzt möglich. (NEO-39263)
 
@@ -52,7 +52,7 @@ _7. September 2021_
 
 **Sonstige Änderungen**
 
-* Fehlerkorrektur - Es wurde eine Regression behoben, die in Version 21.1.3 mit dem neuen Limits des Abrechnungs-Workflows eingeführt wurde. Der Abrechnungs-Workflow wurde auf falschen Instanzen ausgeführt und beim Versuch abgestürzt, den nicht generierten Abrechnungsbericht zu senden. Sie müssen den Workflow manuell neu starten, damit die Fehlerbehebung angewendet wird.
+* Es wurde eine Fehlfunktion behoben, die in Version 21.1.3 mit der Einführung der neuen Schutzeinrichtung des Abrechnungs-Workflows auftrat. Der Abrechnungs-Workflow wurde auf falschen Instanzen ausgeführt und stürzte beim Versuch ab, den nicht generierten Abrechnungsbericht zu senden. Sie müssen den Workflow manuell neu starten, damit die Fehlerbehebung angewendet wird.
 * Bereits veraltete Microsoft CRM-Connectoren (Office 365- und On-Premise-Implementierungen) wurden aus der Benutzeroberfläche entfernt. [Mehr dazu](../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft)
 * Nach der Migration zu Tomcat 8 wurde das IIS-Setup-Skript aktualisiert, um Probleme mit der IIS-Integration zu beheben. (NEO-31019)
 * In den Daten- und Schema-Tabs des Fensters **Population ansehen** der Workflow-Transitionen wurde die Identifizierung der Datenquelle verbessert.
@@ -196,7 +196,7 @@ Weiterführende Informationen finden Sie in der [Campaign-Kompatibilitätsmatrix
 
 **Sonstige Änderungen**
 
-* Es wurde ein Schutzmechanismus hinzugefügt, mit dem nur der [technische Workflow &quot;Abrechnung&quot;](../../production/using/monitoring-processes.md#billing-report) auf der Marketing-Instanz ausgeführt werden kann.
+* Es wurde ein Schutzmechanismus hinzugefügt, der sicherstellt, dass nur der [technische Abrechnungs-Workflow](../../production/using/monitoring-processes.md#billing-report) auf der Marketing-Instanz ausgeführt wird.
 * Der Drittanbieter openssl für Windows wurde auf Version 1.1.1h aktualisiert.
 * In der Debian-Kit-Beschreibung wurde &quot;nlserver&quot; in &quot;Adobe Campaign Classic-Server&quot; geändert.
 
