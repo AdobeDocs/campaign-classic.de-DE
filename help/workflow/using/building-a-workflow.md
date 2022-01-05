@@ -6,10 +6,10 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 exl-id: 8ba20ccd-b03f-4c4f-87c1-a21e80d8e4be
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 638b259462d3e01d744567e56d67a120359dc34a
 workflow-type: tm+mt
-source-wordcount: '1679'
-ht-degree: 100%
+source-wordcount: '1680'
+ht-degree: 99%
 
 ---
 
@@ -96,7 +96,10 @@ Die Darstellung und das Layout des Diagramms kann mithilfe der folgenden Element
 
    ![](assets/s_user_segmentation_toolbar.png)
 
-   Die Symbole zum Start und zur Verfolgung von erweiterten Zielgruppen-Workflows werden in diesem [Abschnitt](../../campaign/using/marketing-campaign-deliveries.md#creating-a-targeting-workflow) beschrieben.
+   Die Symbole zum Fortschritt und zur Anzeige der Protokolle werden in den folgenden Abschnitten beschrieben:
+
+   * [Fortschritt anzeigen](../../workflow/using/monitoring-workflow-execution.md#displaying-progress)
+   * [Protokoll anzeigen](../../workflow/using/monitoring-workflow-execution.md#displaying-logs)
 
 * **Objektausrichtung**
 

@@ -5,10 +5,10 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: 50d326b0-3c23-4dbf-9df6-d32b48e30f69
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: b174b8283d77a1b5eb535c0c46ba4a428bd66eef
 workflow-type: tm+mt
-source-wordcount: '871'
-ht-degree: 100%
+source-wordcount: '892'
+ht-degree: 97%
 
 ---
 
@@ -95,6 +95,8 @@ Sie haben folgende Möglichkeiten:
 * Verbinden Sie in der von Ihnen ausgewählten [Typologie](../../campaign-opt/using/about-campaign-typologies.md) im Feld **[!UICONTROL Verwaltung der IP-Adressen-Affinitäten]** die Sendungen mit dem Versand-Server (MTA), in dem die betreffende Affinität verwaltet wird. [Weitere Informationen](../../campaign-opt/using/applying-rules.md#control-outgoing-smtp-traffic).
 
 * Prüfen Sie nach dem Versand der E-Mail den Header, um festzustellen, von welcher IP-Adresse aus der Versand erfolgte. Ihr E-Mail-Administrator ist Ihnen beim Feststellen der Header-Informationen behilflich.
+
+* Stellen Sie bei SMS-Sendungen sicher, dass der SMS-Kanal über eine dedizierte Affinität verfügt, die auf Folgendes beschränkt ist: **one** Anwendungsserver-Container. [Weitere Informationen](../../installation/using/configure-delivery-settings.md#managing-outbound-smtp-traffic-with-affinities)
 
 >[!NOTE]
 >

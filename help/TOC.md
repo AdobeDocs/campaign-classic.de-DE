@@ -6,9 +6,9 @@ title: Campaign Classic v7 – Handbuch
 user-guide-description: Mit Adobe Campaign können Sie umfangreiche Kundendaten verwenden, um dynamische Kampagnen, die Kunden tatsächlich wünschen, zu erstellen, zu koordinieren und bereitzustellen. Über E-Mail, mobile Kanäle, Offline-Kanäle und mehr.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 5bcc0c06b5c189c4481366d0d283199d6813ecd3
+source-git-commit: e142bcc18dd22179d83c54b9e79d3e3339b005fa
 workflow-type: tm+mt
-source-wordcount: '2581'
+source-wordcount: '2599'
 ht-degree: 99%
 
 ---
@@ -597,6 +597,7 @@ ht-degree: 99%
    + Anhänge {#annexes}
       + [Beispiele für Facebook-Anwendungen](social/using/examples-of-facebook-apps.md)
       + [Tracking](social/using/tracking.md)
++ [Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de)
 + Handbuch zur Installation und Konfiguration {#installing-campaign-classic}
    + Architektonische Grundsätze {#architecture-and-hosting-models}
       + [Allgemeine Architektur](installation/using/general-architecture.md)
@@ -854,3 +855,4 @@ ht-degree: 99%
    + Migration zu Adobe Managed Services{#dc-migration}
       + [Migration zur Public Cloud](technotes/using/dc-migration.md)
       + [Häufig gestellte Fragen](technotes/using/dc-migration-faq.md)
++ [Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)
