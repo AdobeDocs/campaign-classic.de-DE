@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: cbafd70f5b5e964256edad0ce2965f3ed4650500
+source-git-commit: 0a7cdd53640bb3d96ff9bc2de4aa4c1849e32c83
 workflow-type: tm+mt
-source-wordcount: '2558'
-ht-degree: 91%
+source-wordcount: '2582'
+ht-degree: 96%
 
 ---
 
@@ -181,18 +181,18 @@ Weiterführende Informationen finden Sie in der [Campaign-Kompatibilitätsmatrix
 
 **Eingestellte Funktionen**
 
-* ODBC-Treiber werden jetzt direkt mit Adobe Campaign-Drittanbietern installiert. Für die Installation der Treiber sind keine manuellen Schritte mehr erforderlich.
-* Google Big Query ist jetzt für gehostete Bereitstellungen verfügbar.
+* Ab Campaign Version 21.1 wird der Adobe Analytics Data Connector nicht mehr unterstützt. Wenn Sie diesen Connector verwenden, müssen Sie Ihre Implementierung auf den neuen Adobe Analytics Connector anpassen.
+Weitere Informationen finden Sie im [entsprechenden Handbuch](../../technotes/using/aa-connector-migration.md).
+* Debian 8 wird jetzt nicht mehr unterstützt.
+* Nach der Einstellung von Oracle CRM in Version 20.3 wurde das zugehörige externe Konto aus der Benutzeroberfläche entfernt.
 
-[Mehr dazu](../../installation/using/configure-fda.md)
+Weitere Informationen finden Sie auf der Seite [Eingestellte und entfernte Funktionen ](../../rn/using/deprecated-features.md).
 
 **Verbesserungen**
 
-* Kritische Fehlerbehebungen wurden bezüglich der Web-API des Microsoft Dynamics Connector vorgenommen:
-   * Fehlerkorrektur - Der Datenimport aus Microsoft CRM funktioniert jetzt, wenn die Filterbedingung Suchfelder enthält.
-   * Fehlerkorrektur - Beim Import, der durch einen Workflow ausgelöst wird, werden jetzt die Nullwerte von Feldern vom Typ Zeichenfolge als Null statt als leere Werte gespeichert.
-   * Fehlerkorrektur - Beim Datenimport oder -export mithilfe von Web-API-Aufrufen tritt jetzt folgender Fehler mehr auf: &quot;Ungültiger URI: Das URI-Schema ist zu lang.&quot;
-   * Fehlerkorrektur - Beim Import aus Microsoft Dynamics 365 tritt jetzt kein Fehler mehr auf, der den Import von Daten aus Suchfeldern verhinderte.
+* Beim Speichern eines Workflows wurden zusätzliche Prüfungen hinzugefügt, um sicherzustellen, dass Aktivitätsnamen eindeutig sind und dass auf Transitionen immer eine Aktivität folgt.
+* Der technische Workflow **Abrechnung (Billing)** enthält jetzt die Aufgaben, die ursprünglich vom mittlerweile entfernten Workflow **Zählung aktiver Profile** (billingActiveContactCount) ausgeführt wurden. Der monatlich vom Workflow gesendete E-Mail-Bericht enthält jetzt Informationen zur Anzahl der aktiven Profile in der Instanz. [Mehr dazu](../../workflow/using/about-technical-workflows.md)
+* Es wurde das neue Attribut **_keyOnMData** hinzugefügt, um einen Schlüssel für Vorgänge zu Memo-Daten verwenden zu können.
 
 **Sonstige Änderungen**
 

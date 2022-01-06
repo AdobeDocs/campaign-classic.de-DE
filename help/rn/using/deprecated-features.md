@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 8789571c9cf9ca857777fe5c03c355200c466789
+source-git-commit: 0a7cdd53640bb3d96ff9bc2de4aa4c1849e32c83
 workflow-type: tm+mt
-source-wordcount: '1744'
-ht-degree: 97%
+source-wordcount: '1707'
+ht-degree: 99%
 
 ---
 
@@ -84,14 +84,7 @@ In diesem Abschnitt werden Funktionen und Leistungsmerkmale aufgelistet, die aus
  <tbody>
   <tr> 
    <td><strong>Bereich – Funktion</strong></td>
-   <td><strong>Ersatz</strong></td> 
-  </tr>
- <tr>  
-   <td>CRM-Connectoren activities<br></td>
-   <td><p> Die Aktionsaktivitäten Microsoft CRM, Salesforce und Oracle CRM On Demand sind nicht mehr verfügbar.</p>
-   <p>Um die Datensynchronisation zwischen Adobe Campaign und einem CRM-System zu konfigurieren, können Sie die Aktivität CRM-Connector verwenden.</p>
-   <p><a href="../../workflow/using/crm-connector.md">Mehr dazu</a></p>
-  </tr>
+   <td><strong>Ersatz</strong></td>
   <tr>  
    <td>Reporting<br></td>
    <td><p>Nach dem End-of-Life von Adobe Flash Player sind der Tacho-Bericht und die Rendering-Engine für Grafiken nicht mehr verfügbar. <a href="../../reporting/using/creating-a-new-report.md">Weitere Informationen</a>   </p>
