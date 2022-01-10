@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: e4dfdd32c07753ee9e202ab4e4bf815485e47d8b
+source-git-commit: 630a62c5e5c9782c5c55fdebd651493a2d68fc54
 workflow-type: tm+mt
-source-wordcount: '1034'
-ht-degree: 17%
+source-wordcount: '1058'
+ht-degree: 16%
 
 ---
 
@@ -30,7 +30,7 @@ An den FDA-Konten wurden verschiedene Sicherheitsverbesserungen vorgenommen:
 * ODBC-Treiber werden jetzt direkt mit Adobe Campaign-Drittanbietern installiert. Für die Installation dieser Treiber sind keine manuellen Schritte mehr erforderlich.
 * Bei der Konfiguration Ihres externen FDA-Kontos können Sie sich jetzt mit der Schlüsselpaar-Authentifizierung bei Ihrem Snowflake-Konto anmelden, um die Authentifizierungssicherheit zu verbessern. [Mehr dazu](../../installation/using/configure-fda-snowflake.md)
 * Beim Konfigurieren Ihres externen FDA-Kontos können Sie sich jetzt mit der systemzugewiesenen verwalteten Identität bei Ihrem Azure synapse Analytics-Konto anmelden. [Mehr dazu](../../installation/using/configure-fda-synapse.md#azure-external)
-
+* Alle Verweise auf die Bibliothek log4j wurden aus Campaign entfernt, um eine optimale Sicherheit zu gewährleisten.
 
 **Verbesserungen**
 
@@ -55,6 +55,7 @@ An den FDA-Konten wurden verschiedene Sicherheitsverbesserungen vorgenommen:
 * Eine neue Option wurde im **Umgang mit Fehlern** Eigenschaften von Workflow-Aktivitäten: Die **Abbruch bei Fehler** wird der Workflow automatisch angehalten. Danach können Sie es nicht mehr neu starten (NEO-29661). [Mehr dazu](../../workflow/using/advanced-parameters.md#in-case-of-errors)
 * Die Primärschlüssel der nmsGroup -Tabelle werden jetzt in einer speziellen Sequenz erzeugt, die zur Erstellung statistischer Empfängergruppen verwendet wird. Zuvor wurde die Sequenz &quot;xtknownId&quot;verwendet. (NEO-30832)
 * Unterstützung für Batch-Aktualisierungsvorgänge mit der Aktivität CRM-Connector hinzugefügt.
+* Verbesserte Leistung bei der Verarbeitungszeit für Transaktionsnachrichten. (NEO-40370)
 
 **Patches**
 
