@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 7f9eda15-76e8-40a1-8302-004cea085778
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 648b6c0982e15716b11bdbc5954ce88491582e7d
 workflow-type: tm+mt
-source-wordcount: '1615'
-ht-degree: 100%
+source-wordcount: '1627'
+ht-degree: 98%
 
 ---
 
@@ -170,7 +170,11 @@ Gehen Sie bei der Konfiguration der **[!UICONTROL CRM-Connector]**-Aktivität wi
    >
    >Die Exportfunktion der Aktivität **[!UICONTROL CRM-Connector]** kann Felder auf der CRM-Seite einfügen oder aktualisieren. Um Feldaktualisierungen im CRM zu aktivieren, müssen Sie den Primärschlüssel der Remote-Tabelle angeben. Wenn der Schlüssel fehlt, werden Daten eingefügt (anstatt dass sie aktualisiert werden).
 
-1. Geben Sie im Abschnitt **[!UICONTROL Mapping]** die zu exportierenden Adobe-Campaign-Felder und die entsprechenden CRM-Felder an.
+1. Überprüfen **[!UICONTROL In Batches exportieren]** wenn Sie schnellere Exporte benötigen.
+
+   ![](assets/crm_export_config_2.png)
+
+1. Im **[!UICONTROL Zuordnung]** Abschnitt, klicken Sie auf **[!UICONTROL Neu]** um die zu exportierenden Felder und deren Zuordnung im CRM anzugeben.
 
    ![](assets/crm_export_config.png)
 

@@ -6,10 +6,10 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: 965c4a6a-6535-454d-bd37-e9c8312b4d13
-source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
+source-git-commit: fb4b4c42b907e86813ea570f912312fccf893bfe
 workflow-type: tm+mt
 source-wordcount: '489'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -28,7 +28,7 @@ Interaction arbeitet mit zwei Angebotsumgebungstypen:
 
 Jeder **[!UICONTROL Design-Umgebung]** entspricht eine **[!UICONTROL Live-Umgebung]**. Nach Erstellung eines Angebots unterlaufen sein Inhalt und die konfigurierten Eignungsregeln einen Validierungszyklus, nach dessen erfolgreichem Abschluss das Angebot automatisch für die **[!UICONTROL Live-Umgebung]** freigegeben wird. Nun kann es in Sendungen verwendet werden.
 
-Standardmäßig sind im Interaction-Package bereits eine **[!UICONTROL Design-Umgebung]** und ihre entsprechende **[!UICONTROL Live-Umgebung]** enthalten. Beide sind werksmäßig dahin gehend konfiguriert, die native Empfängertabelle zu mappen.
+Standardmäßig enthält Interaction eine **[!UICONTROL Design]** Umwelt und **[!UICONTROL Live]** verknüpfte Umgebung. Beide Umgebungen sind für die integrierte Empfängertabelle vorkonfiguriert.
 
 >[!NOTE]
 >

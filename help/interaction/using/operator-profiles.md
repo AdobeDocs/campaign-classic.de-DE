@@ -6,10 +6,10 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: e11fb28c-d530-45a2-862a-ff1c20975577
-source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 100%
+source-wordcount: '408'
+ht-degree: 86%
 
 ---
 
@@ -43,7 +43,7 @@ Die dem Angebotsverantwortlichen zugewiesenen Berechtigungen erlauben ihm folgen
 
    >[!NOTE]
    >
-   >Der Angebotsverantwortliche kann nur die Angebote validieren, für die kein anderer Validierer konfiguriert oder in deren Angebotsvorlage er als Validierer bezeichnet wurde. Letzteres erfolgt durch den für die Vorlagenerstellung zuständigen Administrator, der in diesem Fall über die spezifische Berechtigung zur &quot;Validierungsadministration&quot; verfügen muss.
+   >Der Angebotsverantwortliche kann ein Angebot nur in zwei bestimmten Fällen validieren. Der erste ist, wenn niemand speziell als Validierer angegeben wurde, der zweite, wenn der für die Erstellung von Vorlagen zuständige Benutzer (mit der Berechtigung, Validierungsverantwortliche zuzuweisen) sie in der Angebotsvorlage, auf der das Angebot basierte, als Validierer spezifiziert hat.
 
 ## Versandverantwortliche Benutzer {#delivery-manager}
 

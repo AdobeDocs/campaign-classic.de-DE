@@ -6,10 +6,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
 workflow-type: tm+mt
-source-wordcount: '851'
-ht-degree: 100%
+source-wordcount: '935'
+ht-degree: 85%
 
 ---
 
@@ -35,17 +35,17 @@ In der Mitte des Fensters haben Sie die Möglichkeit, auf die Online-Dokumentati
 
 ### Zugriff über Client-Konsole versus Web-Zugriff {#console-and-web-access}
 
-Auf die Adobe-Campaign-Plattform kann entweder über eine Clientkonsole oder über einen Webbrowser zugegriffen werden.
+Auf die Adobe-Campaign-Plattform kann entweder über eine Clientkonsole oder über einen Webbrowser zugegriffen werden. Die kompatiblen Browser finden Sie im Abschnitt [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md#Browsers).
 
-Der Webzugriff bietet eine der Clientkonsole ähnliche Bedieneroberfläche mit eingeschränkten Funktionalitäten.
+Die Web-Zugriffsschnittstelle ähnelt der Benutzeroberfläche der Konsole. Von einem Browser aus können Sie dieselben Navigations- und Anzeigefunktionen wie in der Konsole verwenden, aber Sie können nur einen reduzierten Satz von Aktionen für Kampagnen durchführen. Sie können beispielsweise Kampagnen anzeigen und abbrechen, aber keine Kampagnen ändern. Für einen bestimmten Benutzer wird eine Kampagne mit den folgenden Optionen in der Konsole angezeigt:
 
-So wird z. B. für einen Benutzer eine Kampagne in der Clientkonsole mit folgenden Optionen angezeigt:
+![Über das Dashboard einer Kampagne kann der Benutzer eine Kampagne anzeigen und abbrechen, sie aber auch ändern und Sendungen, Dokumente und Aufgaben hinzufügen.](assets/operation_from_console.png)
 
-![](assets/operation_from_console.png)
+Beim Webzugriff ermöglichen die Optionen vor allem die Anzeige:
 
-Beim Webzugriff ermöglichen die Optionen vor allem die Anzeige von:
+![Derselbe Benutzer kann von einem Browser aus nur die Kampagne anzeigen und abbrechen.](assets/operation_from_web.png)
 
-![](assets/operation_from_web.png)
+Weitere Informationen [über die Webschnittstelle](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-).
 
 ### Sprachen {#languages}
 

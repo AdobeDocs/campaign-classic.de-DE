@@ -6,10 +6,10 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: cc1200fa-f6d8-4f41-aed1-d1a7f229447a
-source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
 source-wordcount: '3898'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -103,7 +103,7 @@ Sie werden über das Symbol **[!UICONTROL Ressourcen]** in der Menüleiste der A
 
 Klicken Sie auf **[!UICONTROL Ok]** und geben Sie die Auslastung an: Diese entspricht dem Arbeitsaufwand des jeweiligen Benutzers während der Aufgabenerfüllung. Die Angabe erfolgt in Prozent und hat lediglich informativen Charakter.
 
-Beispiel: Für eine Aufgabe wird eine Erfüllungsplanung von 10 Tagen festgelegt und einem Benutzer eine Auslastung von 50 % zugewiesen. Der Benutzer wird demnach für eine Dauer von 10 Tagen während der Hälfte seiner Arbeitszeit für die Aufgabenerfüllung eingesetzt.
+Beispiel: Für eine Aufgabe, deren Ausführungsplanung auf 10 Tage festgelegt ist, wird ein Benutzer, dessen Nutzungsprozentsatz 50 % beträgt, für die Hälfte seiner Arbeitszeit für die 10 Tage für diese Aufgabe mobilisiert.
 
 Zudem ist es möglich, für jeden Benutzer einen geplanten sowie einen realisierten Arbeitsaufwand festzulegen. Diese Angaben dienen ebenfalls nur informativen Zwecken.
 
@@ -325,7 +325,7 @@ Bestimmen Sie im Feld **[!UICONTROL Marketing-Ressource]** die Ressource, die Si
 
 Die Option **[!UICONTROL Marketing-Ressource veröffentlichen]** ermöglicht die automatische Veröffentlichung einer Ressource: Wenn die Aufgabe **[!UICONTROL Abgeschlossen]** ist, ändert sich der Status der Ressource automatisch in **[!UICONTROL Veröffentlicht]**, auch wenn diese weder validiert noch zur Validierung unterbreitet wurde. Dies gilt auch dann, wenn der Validierer der Aufgabe nicht dem Validierer des Ressourceninhalts entspricht.
 
-Die Schaltfläche **[!UICONTROL Ressource veröffentlichen]** wird verfügbar und der Validierer der Veröffentlichung der Kampagne wird per E-Mail benachrichtigt, dass die Ressource zur Veröffentlichung bereitsteht. Im Tab **[!UICONTROL Bearbeiten > Verfolgung]** der Ressource erscheinen die Validierung und die Veröffentlichung durch den Validierer. Wenn ein Post-Prozess-Workflow bestimmt wurde, wird dieser nun ausgeführt.
+Die **[!UICONTROL Ressource veröffentlichen]** -Schaltfläche verfügbar gemacht und der Validierer für die Veröffentlichung der Ressource erhält eine Benachrichtigungs-E-Mail, um ihm mitzuteilen, dass er zur Veröffentlichung bereit ist. Im **[!UICONTROL Bearbeiten > Tracking]** -Tab, werden die Überprüfung und Veröffentlichung durch den Aufgabenvalidierer angezeigt. Wenn ein Nachbearbeitungs-Workflow für Ressourcen definiert wurde, wird er jetzt ausgeführt.
 
 ![](assets/mrm_resource_audit_tab.png)
 
@@ -436,6 +436,7 @@ Eine Aufgabe kann folgende Status haben: **[!UICONTROL Geplant]**, **[!UICONTROL
 >
 >* Der Status der Aufgabe wird automatisch aktualisiert.
 >* Eine Aufgabe, die nicht von ihrem Verantwortlichen geschlossen wurde, erscheint auch nach Ablauf ihres Gültigkeitszeitraums in den laufenden Aufgaben. In diesem Fall informiert ein Warnhinweis die Benutzer darüber, dass die Aufgabe überfällig ist.
+
 >
 
 
@@ -473,7 +474,7 @@ Im Folgenden werden die Etappen des vollständigen Zyklus einer Aufgabe dargeste
 
    ![](assets/s_ncs_user_task_percentage_done_op.png)
 
-1. Der Verantwortliche wird bei jedem Teilabschluss der Aufgabe durch einen Beteiligten benachrichtigt.
+1. Der Validierer erhält eine Benachrichtigungs-E-Mail, in der er darüber informiert wird, dass der Benutzer den ihm zugewiesenen Bereich abgeschlossen hat.
 
    Er kann den Fortschritt der Aufgabe im Aufgaben-Dashboard verfolgen.
 

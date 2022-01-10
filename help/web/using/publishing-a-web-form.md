@@ -6,10 +6,10 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 1c66b8e8-7590-4767-9b2f-a9a509df4508
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
-source-wordcount: '1026'
-ht-degree: 100%
+source-wordcount: '1024'
+ht-degree: 97%
 
 ---
 
@@ -69,7 +69,7 @@ Mit der Option **[!UICONTROL Referenzierte Daten werden automatisch in das Formu
 
 Mit der Option **[!UICONTROL Ladung zusätzlicher Daten]** können Sie Felder mit Daten vorausfüllen, auch wenn diese Informationen nicht auf den Seiten des Formulars verwendet werden.
 
-So können Sie beispielsweise das Geschlecht des Empfängers vorausfüllen und ihn über eine Test-Komponente automatisch zur entsprechenden Seite weiterleiten.
+Sie können beispielsweise das Geschlecht des Empfängers vorab laden und ihn über eine Testbox automatisch zur entsprechenden Seite weiterleiten.
 
 ![](assets/s_ncs_admin_survey_preload_ex.png)
 

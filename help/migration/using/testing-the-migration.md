@@ -6,14 +6,14 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 exl-id: 228ee9e4-46a0-4d82-b8ba-b019bc0e7cac
-source-git-commit: 9ba2199eabf91381e87661f30c9af8aa0ce4cc26
+source-git-commit: 59a2bc62b4c03ef0702cb57bd9dc808e7d0b444b
 workflow-type: tm+mt
-source-wordcount: '729'
-ht-degree: 3%
+source-wordcount: '755'
+ht-degree: 2%
 
 ---
 
-# Testen der Migration{#testing-the-migration}
+# Migrationstests{#testing-the-migration}
 
 ![](../../assets/v7-only.svg)
 
@@ -21,7 +21,7 @@ ht-degree: 3%
 
 Je nach Konfiguration gibt es mehrere Möglichkeiten, Migrationstests durchzuführen.
 
-Sie sollten über eine Test-/Entwicklungsumgebung verfügen, um Migrationstests durchzuführen. Entwicklungsumgebungen unterliegen einer Lizenz: Überprüfen Sie Ihren Lizenzvertrag oder kontaktieren Sie den Vertriebsdienst von Adobe Campaign.
+Sie sollten über eine Test-/Entwicklungsumgebung verfügen, um Migrationstests durchzuführen. Adobe Campaign-Umgebungen unterliegen einer Lizenz: Überprüfen Sie Ihren Lizenzvertrag oder kontaktieren Sie Ihren Kundenbetreuer für Adobe.
 
 1. Stoppen Sie alle laufenden Entwicklungen und übertragen Sie sie in die Produktionsumgebung.
 1. Erstellen Sie eine Sicherungskopie der Datenbank der Entwicklungsumgebung.
@@ -39,18 +39,12 @@ Sie sollten über eine Test-/Entwicklungsumgebung verfügen, um Migrationstests 
 
 1. Stellen Sie sicher, dass Ihre Sicherungen korrekt sind, indem Sie versuchen, sie wiederherzustellen. Stellen Sie sicher, dass Sie Zugriff auf Ihre Datenbank, Ihre Tabellen, Ihre Daten usw. haben.
 1. Testen Sie das Migrationsverfahren in der Entwicklungsumgebung.
-
-   Die vollständigen Verfahren sind im Abschnitt [Voraussetzungen für die Migration auf Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md) Abschnitt.
-
 1. Wenn die Migration der Entwicklungsumgebung erfolgreich ist, können Sie die Produktionsumgebung migrieren.
 
->[!IMPORTANT]
+>[!CAUTION]
 >
 >Aufgrund von Änderungen an der Datenstruktur ist der Import und Export von Datenpaketen zwischen einer v5-Plattform und einer v7-Plattform nicht möglich.
 
->[!NOTE]
->
->Der Adobe Campaign-Aktualisierungsbefehl (**postupgrade**) ermöglicht die Synchronisierung von Ressourcen und die Aktualisierung von Schemata und der Datenbank. Dieser Vorgang kann nur einmal auf dem Anwendungsserver ausgeführt werden. Nach der Synchronisierung der Ressourcen wird die **postupgrade** -Befehl können Sie erkennen, ob die Synchronisation Fehler oder Warnungen erzeugt.
 
 ## Migrationswerkzeuge {#migration-tools}
 
@@ -70,9 +64,11 @@ Mithilfe verschiedener Optionen können Sie die Auswirkungen einer Migration mes
 
 >[!NOTE]
 >
->Sie müssen die **-instance:`<instanceame>`** -Option. Es wird empfohlen, die Variable **-allinstances** -Option.
+>* Sie müssen die **-instance:`<instanceame>`** -Option. Es wird empfohlen, die Variable **-allinstances** -Option.
+>* Der Adobe Campaign-Aktualisierungsbefehl (**postupgrade**) ermöglicht die Synchronisierung von Ressourcen und die Aktualisierung von Schemata und der Datenbank. Dieser Vorgang kann nur einmal auf dem Anwendungsserver ausgeführt werden. Nach der Synchronisierung der Ressourcen wird die **postupgrade** -Befehl können Sie erkennen, ob die Synchronisation Fehler oder Warnungen erzeugt.
 
-### -showCustomEntities und -showDeletedEntities-Optionen {#showcustomentities-and--showdeletedentities-options}
+
+### Nicht standardmäßige oder fehlende Objekte
 
 * Die **-showCustomEntities** zeigt die Liste aller Objekte an, die nicht dem Standard entsprechen:
 
@@ -110,7 +106,7 @@ nlserver.exe config -postupgrade -check -instance:<instanceName>
 
 >[!NOTE]
 >
->Bitte ignorieren Sie alle Warnungen und Fehler mit dem JST-310040-Code.
+>Mit dem JST-310040-Code können Sie alle Warnungen und Fehler ignorieren.
 
 Die folgenden Ausdrücke werden gesucht (Groß-/Kleinschreibung beachten):
 
@@ -158,7 +154,7 @@ Die folgenden Ausdrücke werden gesucht (Groß-/Kleinschreibung beachten):
    <td> SQLDATA<br /> </td> 
    <td> PU-0006<br /> </td> 
    <td> Fehler<br /> </td> 
-   <td> Dieser Fehlertyp führt zu einem Migrationsfehler. Siehe <a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>. Wenn Sie Fehlerprotokolle für Webanwendungen vom Typ Übersicht erhalten (Migration von v6.02), lesen Sie den Abschnitt <a href="../../migration/using/specific-configurations-in-v6-02.md#web-applications" target="_blank">Campaign konfigurieren</a>.<br /> </td> 
+   <td> Dieser Fehlertyp führt zu einem Migrationsfehler. Siehe <a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>. Wenn Sie Fehlerprotokolle für Webanwendungen vom Typ Übersicht erhalten (Migration von v6.02), lesen Sie den Abschnitt <a href="../../migration/using/configuring-your-platform.md#specific-configurations-in-v5-11" target="_blank">Campaign konfigurieren</a>.<br /> </td> 
   </tr>
   <tr> 
    <td> crmDeploymentType="onpremise"<br /> </td> 
@@ -167,6 +163,12 @@ Die folgenden Ausdrücke werden gesucht (Groß-/Kleinschreibung beachten):
    <td> Diese Art der Bereitstellung wird nicht mehr unterstützt. Der Bereitstellungstyp des CRM-Connectors für Office 365 und On-Premise Microsoft wurde eingestellt. 
    </br>Wenn Sie einen dieser veralteten Bereitstellungstypen in einem externen Konto verwenden, sollte dieses externe Konto gelöscht werden. Anschließend sollten Sie die <b>postupgrade</b> Befehl. 
    </br>Informationen zum Ändern der Web-API-Bereitstellung finden Sie unter <a href="../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft" target="_blank">Webanwendungen</a>.<br /> </td>
+  </tr> 
+  <tr> 
+   <td> CRM v1(mscrmWorkflow/sfdcWorkflow)<br /> </td> 
+   <td> PU-0008<br /> </td> 
+   <td> Fehler<br /> </td> 
+   <td> Die Aktionsaktivitäten Microsoft CRM, Salesforce und Oracle CRM On Demand sind nicht mehr verfügbar. Um die Datensynchronisation zwischen Adobe Campaign und einem CRM-System zu konfigurieren, müssen Sie die <a href="../../workflow/using/crm-connector.md" target="_blank">CRM-Connector</a> Targeting-Aktivität.<br /> </td>
   </tr> 
  </tbody> 
 </table>

@@ -6,10 +6,10 @@ audience: campaign
 content-type: reference
 topic-tags: about-marketing-campaigns
 exl-id: 1278bda1-f83c-4d38-8042-e6611755cf36
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 89c007775d4df7c6d50951283efe764c3c424d91
 workflow-type: tm+mt
-source-wordcount: '1064'
-ht-degree: 100%
+source-wordcount: '1289'
+ht-degree: 84%
 
 ---
 
@@ -161,6 +161,35 @@ Sie haben die Möglichkeit, über einen Webbrowser auf die Adobe-Campaign-Konsol
 1. Über die unterschiedlichen Rubriken besteht Zugriff auf Listen und weitere Navigationselemente.
 
    ![](assets/s_ncs_user_interface_web_campaign_01.png)
+
+Neben der Navigation durch Kampagnen und deren Anzeige können Sie auch die folgenden Aufgaben ausführen:
+
+* Überwachen von Aktivitäten in einer Instanz
+* Nehmen Sie an Validierungsprozessen teil, beispielsweise an der Validierung von Versandinhalten
+* Andere Schnellaktionen durchführen, z. B. einen Workflow anhalten
+* Zugriff auf alle Berichterstellungsfunktionen
+* Teilnahme an Forumsdiskussionen
+
+Diese Tabelle fasst die Aktionen zusammen, die Sie für Kampagnen über einen Browser durchführen können:
+
+| Seite  | Aktion |
+| --- | --- |
+| Liste der Kampagnen, Sendungen, Angebote usw. | Löschen von Listenelementen |
+| Campaign | Abbrechen einer Kampagne |
+| Versand | Inhalt und Zielgruppe des Versands validieren<br/>Versandinhalt übermitteln<br/>Versand bestätigen<br/>Versand anhalten und stoppen |
+| Webanwendung | Webanwendung erstellen<br/>Bearbeiten des Anwendungsinhalts und der Eigenschaften<br/>Anwendungsinhalt als Vorlage speichern<br/>Anwendung veröffentlichen |
+| Angebot | Inhalt und Eignung des Angebots validieren<br/>Online-Angebot deaktivieren |
+| Aufgabe | Aufgabe abschließen<br/>Aufgabe abbrechen |
+| Marketing-Ressourcen | Ressource validieren<br/>Ressource sperren und entsperren |
+| Kampagnenkit | Einreichen eines Packages zur Genehmigung<br/>Ein Paket genehmigen oder ablehnen<br/>Abbrechen von Kits |
+| Kampagnenbestellung | Bestellung erstellen<br/>Bestellung annehmen oder ablehnen <!-- Je n'ai pas pu créer de campaign order pour vérifier cela. Peut-on accéder à ces fonctionnalités depuis l'accès web ? --> |
+| Lager | Lagerpositionen löschen |
+| Angebotssimulation | Simulation starten und stoppen |
+| Targeting workflow | Workflow starten, anhalten und anhalten |
+| Bericht | Aktuelle Daten im Berichtsverlauf speichern |
+| Forum | Diskussion hinzufügen<br/>Eine Nachricht in einer Diskussion beantworten<br/>Folgen Sie einer Diskussion und melden Sie sich ab. |
+
+### Validierungen
 
 Validierungen (beispielsweise einer Zielgruppe oder des Inhalts eines Versands) können über die Web-Schnittstelle erfolgen.
 

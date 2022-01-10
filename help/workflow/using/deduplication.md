@@ -6,10 +6,10 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: 38add4fe-6238-45de-863e-895ebca189b7
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: def4f7fb46c838e9fe620820cf387dd3e2b8a55b
 workflow-type: tm+mt
 source-wordcount: '1146'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -33,7 +33,7 @@ Die Aktivität **[!UICONTROL Deduplizierung]** kann eine ganze Zeile als den ein
 -----|----------|------------|-------|--------------|------
 | 3.2.2020 | Bob | Tisner | bob@mycompany.com | 444-444-4444 | 888-888-8888 |
 
-Der ausgewählte übergeordnete Datensatz leitet die Daten weiter, ohne dass Felddaten mit anderen relevanten Daten in den Duplikat-Zeilen zusammengeführt werden.
+Der ausgewählte Hauptdatensatz leitet die Daten weiter, ohne dass Felddaten mit anderen relevanten Daten in den doppelten Zeilen zusammengeführt werden.
 
 Komplement:
 

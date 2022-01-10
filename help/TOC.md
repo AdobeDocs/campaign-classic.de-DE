@@ -6,10 +6,10 @@ title: Campaign Classic v7 – Handbuch
 user-guide-description: Mit Adobe Campaign können Sie umfangreiche Kundendaten verwenden, um dynamische Kampagnen, die Kunden tatsächlich wünschen, zu erstellen, zu koordinieren und bereitzustellen. Über E-Mail, mobile Kanäle, Offline-Kanäle und mehr.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: e142bcc18dd22179d83c54b9e79d3e3339b005fa
+source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
 workflow-type: tm+mt
-source-wordcount: '2599'
-ht-degree: 99%
+source-wordcount: '2556'
+ht-degree: 98%
 
 ---
 
@@ -22,10 +22,8 @@ ht-degree: 99%
    + [Erste Schritte mit Upgrades](rn/using/rn-overview.md)
    + [Aktuelle Version](rn/using/latest-release.md)
    + Frühere Versionen {#previous-releases}
-      + [!DNL Gold Standard]-Version {#gs-release}
-         + [Was ist  [!DNL Gold Standard]](rn/using/gs-overview.md)
-         + [[!DNL Gold Standard]-Versionshinweise](rn/using/gold-standard.md)
-         + [[!DNL Gold Standard]-Kompatibilitätsmatrix](rn/using/compatibility-matrix-gs.md)
+      + [[!DNL Gold Standard]](rn/using/gold-standard.md)
+      + [2021](rn/using/release--2021.md)
       + [2020](rn/using/release--2020.md)
       + [2019](rn/using/release--2019.md)
       + [2018](rn/using/release--2018.md)
@@ -597,7 +595,6 @@ ht-degree: 99%
    + Anhänge {#annexes}
       + [Beispiele für Facebook-Anwendungen](social/using/examples-of-facebook-apps.md)
       + [Tracking](social/using/tracking.md)
-+ [Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de)
 + Handbuch zur Installation und Konfiguration {#installing-campaign-classic}
    + Architektonische Grundsätze {#architecture-and-hosting-models}
       + [Allgemeine Architektur](installation/using/general-architecture.md)
@@ -821,23 +818,15 @@ ht-degree: 99%
       + [Erfassen aller Besuche](configuration/using/collecting-all-visits.md)
       + [Anonym-Tracking](configuration/using/anonymous-tracking.md)
 + Migrationshandbuch {#migrating-to-a-new-version}
-   + Migrationsübersicht {#migration-overview}
-      + [Über die Migration](migration/using/about-migration.md)
-      + [Migrationsmethode](migration/using/migration-method.md)
-      + [Migrationswarnungen](migration/using/migration-warnings.md)
+   + [Migration zu Adobe Campaign v7](migration/using/about-migration.md)
    + Migrationsverfahren {#migration-procedure}
-      + [Vor Beginn der Migration](migration/using/before-starting-migration.md)
-      + [Testen der Migration](migration/using/testing-the-migration.md)
-      + [Konfigurieren der Plattform](migration/using/configuring-your-platform.md)
-   + Migration zu Adobe Campaign 7 {#migrating-to-adobe-campaign-7}
-      + [Voraussetzungen für die Migration zu Adobe Campaign 7](migration/using/prerequisites-for-migration-to-adobe-campaign-7.md)
-      + [Migration in Windows zu Adobe Campaign 7](migration/using/migrating-in-windows-for-adobe-campaign-7.md)
-      + [Migration in Linux zu Adobe Campaign v7](migration/using/migrating-in-linux-for-adobe-campaign-v7.md)
-   + Konfiguration {#configuration}
-      + [Allgemeine Konfigurationen](migration/using/general-configurations.md)
-      + [Spezifische Konfigurationen in v5.11](migration/using/specific-configurations-in-v5-11.md)
-      + [Spezifische Konfigurationen in v6.02](migration/using/specific-configurations-in-v6-02.md)
-      + [Spezifische Konfigurationen in v6.10](migration/using/specific-configurations-in-v6-10.md)
+      + [Voraussetzungen](migration/using/before-starting-migration.md)
+      + [Über Migrationstests](migration/using/testing-the-migration.md)
+      + [Anpassen der Konfiguration](migration/using/configuring-your-platform.md)
+   + Migration starten {#migrating-to-adobe-campaign-7}
+      + [Migrieren einer Microsoft Windows-Plattform](migration/using/migrating-in-windows-for-adobe-campaign-7.md)
+      + [Migrieren einer Linux-Plattform](migration/using/migrating-in-linux-for-adobe-campaign-v7.md)
+      + [Konfigurieren der Plattform](migration/using/general-configurations.md)
    + [Rollback-Verfahren](migration/using/about-rollback.md)
 + Technotes {#technotes}
    + [Empfehlungen zur Hardware-Dimensionierung](technotes/using/hardware-sizing.md)
@@ -855,4 +844,4 @@ ht-degree: 99%
    + Migration zu Adobe Managed Services{#dc-migration}
       + [Migration zur Public Cloud](technotes/using/dc-migration.md)
       + [Häufig gestellte Fragen](technotes/using/dc-migration-faq.md)
-+ [Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)
++ [Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de)

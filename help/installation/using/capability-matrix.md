@@ -6,10 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: architecture-and-hosting-models
 exl-id: a2c425a8-9bde-4259-9140-5ada5397ed5f
-source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
+source-git-commit: 1f8a51fc7760e8dcdf369cb759de724b0e7bea0c
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 45%
+source-wordcount: '293'
+ht-degree: 46%
 
 ---
 
@@ -47,8 +47,7 @@ Adobe Campaign bietet die Option **Federated Data Access** (FDA), um in externen
 
 >[!CAUTION]
 >
->Der Zugriff auf eine externe Datenbank über FDA ist nur für On-Premise- oder Hybridinstallationen möglich, außer bei der [Snowflake-Connector](../../installation/using/configure-fda-snowflake.md).
-
+>Kompatible externe Datenbanksysteme hängen von Ihrem Hosting-Modell ab. Weitere Informationen finden Sie unter [Campaign-Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md).
 
 **Siehe auch**
 
@@ -57,4 +56,3 @@ Adobe Campaign bietet die Option **Federated Data Access** (FDA), um in externen
 * [Campaign Classic-Upgrades](../../rn/using/rn-overview.md)
 * [Eingestellte und entfernte Funktionen](../../rn/using/deprecated-features.md)
 * [[!DNL Gold Standard]-Versionen ](../../rn/using/gold-standard.md)
-* [[!DNL Gold Standard]-Programm](../../rn/using/gs-overview.md)

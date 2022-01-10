@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: eb0e572f0bb6196a58a7dab4999df784d5c4851f
+source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
 workflow-type: tm+mt
-source-wordcount: '727'
-ht-degree: 89%
+source-wordcount: '720'
+ht-degree: 90%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 89%
 
 In diesem Dokument werden alle Systeme und Komponenten aufgelistet, die für den [aktuellen Build](../../rn/using/latest-release.md) von **Adobe Campaign Classic v7** unterstützt werden. Produkte und Versionen, die nicht in dieser Liste enthalten sind, sind nicht mit Adobe Campaign kompatibel.
 
-Wenn Sie ein [!DNL Gold Standard]-Benutzer sind, sehen Sie in der [[!DNL Gold Standard] -Kompatibilitätsmatrix](../../rn/using/compatibility-matrix-gs.md) nach.
+Wenn Sie ein [!DNL Gold Standard]-Benutzer sind, sehen Sie in der [[!DNL Gold Standard] -Kompatibilitätsmatrix](../../rn/using/gold-standard.md#compatibility-matrix-gs) nach.
 
 ## Wichtige Hinweise{#important-notes}
 
@@ -48,7 +48,6 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 <tr>
 <td>Debian</td>
 <td>
-<p>11 (64 Bit)</p>
 <p>10 (64 Bit)</p>
 <p>9 (64 Bit)</p>
 </td>
@@ -64,7 +63,6 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 <tr>
 <td>Windows Server</td>
 <td>
-<p>2019</p>
 <p>2016</p>
 <p>2012 R2</p>
 <p>2012</p>
@@ -190,54 +188,31 @@ Unten finden Sie die mit Adobe Campaign kompatiblen CRM-Systeme (Customer Relati
 
 ## Federated Data Access (FDA){#FederatedDataAccessFDA}
 
-Die folgenden externen Datenbanken sind mit dem [Federated Data Access-Modul](../../installation/using/about-fda.md) von Adobe Campaign kompatibel:
+Die folgenden externen Datenbanken sind mit dem [Federated Data Access-Modul](../../installation/using/about-fda.md) von Adobe Campaign kompatibel: Die Kompatibilität hängt von Ihrer [Hosting-Modell](../../installation/using/hosting-models.md).
+
+**Managed Services** (gehostet), **Hybrid** und **On-Premise** Umgebungen können Campaign mit den folgenden externen Datenbanksystemen verbinden:
+
 <table>
 <tbody>
-<td><strong>Connector</strong></td>
-<td><strong>Versionskompatibilität</strong></td>
-<td><strong>Hosting-Modell-Kompatibilität</strong></td>
-<td><strong>Build-Kompatibilität</strong></td>
+<td><strong>Datenbanksystem</strong></td>
+<td><strong>Datenbankversion</strong></td>
+<td><strong>Campaign-Version</strong></td>
 <tr>
 <tr>
 <td>Snowflake</td>
 <td> </td>
-<td>Managed Services, Hybrid und On-Premise</td>
-<td>21.1.5 Minimum</td>
-</tr>
-<td>Vertica</td>
-<td> </td>
-<td>Nur Hybrid und On-Premise</td>
-<td>Mindestens 19.1.4</td>
+<td>7.2.1 Minimum</td>
 </tr>
 <tr>
 <td>Google BigQuery</td>
 <td> </td>
-<td>Managed Services, Hybrid und On-Premise</td>
-<td>21.1.5 Minimum</td>
-</tr>
-<tr>
-<td>Microsoft Azure Synapse Analytics</td>
-<td> </td>
-<td>Hybrid und On-Premise</td>
-<td>Mindestens 19.1.4</td>
+<td>7.2.1 Minimum</td>
 </tr>
 <tr>
 <td>Amazon Redshift</td>
 <td><p> </p>
-<td>Managed Services, Hybrid und On-Premise</td>
-<td>Mindestens 19.1.4</td>
+<td>v7.0 19.1.4 Minimum</td>
 </td>
-</tr>
-<tr>
-<td>Oracle</td>
-<td>
-<p>19c</p>
-<p>18c</p>
-<p>12c</p>
-<p>11g</p>
-</td>
-<td>Nur Hybrid und On-Premise</td>
-<td>V6.11 Minimum</td>
 </tr>
 <tr>
 <td>PostgreSQL</td>
@@ -250,8 +225,37 @@ Die folgenden externen Datenbanken sind mit dem [Federated Data Access-Modul](..
 <p>9.5.x</p>
 <p>9.4.x</p>
 </td>
-<td>Managed Services, Hybrid und On-Premise</td>
-<td>Mindestens 19.1.4</td>
+<td>mindestens v7.0 19.1.4</td>
+</tr>
+</tbody>
+</table>
+
+Darüber hinaus **Hybrid** und **On-Premise** Umgebungen können Campaign auch mit folgenden Geräten verbinden:
+
+<table>
+<tbody>
+<td><strong>Datenbanksystem</strong></td>
+<td><strong>Datenbankversion</strong></td>
+<td><strong>Campaign-Version</strong></td>
+<tr>
+<td>Vertica</td>
+<td> </td>
+<td>mindestens v7.0 19.1.4</td>
+</tr>
+<tr>
+<td>Microsoft Azure Synapse Analytics</td>
+<td> </td>
+<td>mindestens v7.0 19.1.4</td>
+</tr>
+<tr>
+<td>Oracle</td>
+<td>
+<p>19c</p>
+<p>18c</p>
+<p>12c</p>
+<p>11g</p>
+</td>
+<td>Mindestens v7.0</td>
 </tr>
 <tr><td>SQL-Server</td>
 <td>
@@ -261,15 +265,13 @@ Die folgenden externen Datenbanken sind mit dem [Federated Data Access-Modul](..
 <p>2014</p>
 <p>2012 SP1 und SP2</p>
 </td>
-<td>Nur Hybrid und On-Premise</td>
-<td>V6.11 Minimum</td>
+<td>Mindestens v7.0</td>
 </tr>
 <tr><td>MySQL</td>
 <td>
 <p>5.7</p>
 </td>
-<td>Nur Hybrid und On-Premise</td>
-<td>V6.11 Minimum</td>
+<td>Mindestens v7.0</td>
 </tr>
 <tr>
 <td>Teradata</td>
@@ -279,16 +281,14 @@ Die folgenden externen Datenbanken sind mit dem [Federated Data Access-Modul](..
 <p>15.10</p>
 <p>15.0</p>
 </td>
-<td>Nur Hybrid und On-Premise</td>
-<td>V6.11 Minimum</td>
+<td>Mindestens v7.0</td>
 </tr>
 <tr>
 <td>Netezza</td>
 <td>
 <p>7.2</p>
 </td>
-<td>Nur Hybrid und On-Premise</td>
-<td>V6.11 Minimum</td>
+<td>Mindestens v7.0</td>
 </tr>
 <tr>
 <td>Sybase</td>
@@ -296,16 +296,14 @@ Die folgenden externen Datenbanken sind mit dem [Federated Data Access-Modul](..
 <p>IQ 16</p>
 <p>ASE 15.7</p>
 </td>
-<td>Nur Hybrid und On-Premise</td>
-<td>V6.11 Minimum</td>
+<td>Mindestens v7.0</td>
 </tr>
 <tr>
 <td>SAP HANA</td>
 <td>
 <p>Version 1 SPS 12</p>
 </td>
-<td>Nur Hybrid und On-Premise</td>
-<td>V6.11 Minimum</td>
+<td>Mindestens v7.0</td>
 </tr>
 <tr><td>Hadoop über HiveSQL</td>
 <td>
@@ -313,11 +311,13 @@ Die folgenden externen Datenbanken sind mit dem [Federated Data Access-Modul](..
 <p>HDInsight 3.4 (HDP 2.4), 3.5 (HDP 2.5), 3.6 (HDP 2.6)</p>
 <p>Cloudera CDH6.x</p>
 </td>
-<td>Nur Hybrid und On-Premise</td>
-<td>V6.11 Minimum</td>
+<td>Mindestens v7.0</td>
 </tr>
 </tbody>
 </table>
+
+
+
 
 
 ## Client-Konsole {#ClientConsoleoperatingsystems}

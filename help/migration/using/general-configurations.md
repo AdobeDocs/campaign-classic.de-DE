@@ -6,9 +6,9 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
-source-git-commit: eef2a12738ce299686857720c3dc8456ffdd0c80
+source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
 workflow-type: tm+mt
-source-wordcount: '2719'
+source-wordcount: '2680'
 ht-degree: 3%
 
 ---
@@ -17,12 +17,12 @@ ht-degree: 3%
 
 ![](../../assets/v7-only.svg)
 
-In diesem Abschnitt wird die Konfiguration beschrieben, die in Adobe Campaign v7 bei einer Migration von Version 5.11 oder v6.02 durchgeführt werden soll.
+In diesem Abschnitt wird die Konfiguration beschrieben, die in Adobe Campaign v7 bei der Migration von v5.11 oder v6.02 durchgeführt werden soll.
 
 Achten Sie außerdem auf Folgendes:
 
-* Wenn Sie von Version 5.11 migrieren, müssen Sie auch die Konfiguration durchführen, die im Abschnitt [Spezifische Konfigurationen in v5.11](../../migration/using/specific-configurations-in-v5-11.md) Abschnitt.
-* Wenn Sie von v6.02 migrieren, müssen Sie auch die im Abschnitt [Spezifische Konfigurationen in v6.02](../../migration/using/specific-configurations-in-v6-02.md) Abschnitt.
+* Wenn Sie von Version 5.11 migrieren, müssen Sie auch die Konfiguration durchführen, die im Abschnitt [diesem Abschnitt](../../migration/using/configuring-your-platform.md#specific-configurations-in-v5-11).
+* Wenn Sie von v6.02 migrieren, müssen Sie auch die unter [diesem Abschnitt](../../migration/using/configuring-your-platform.md#specific-configurations-in-v6-02).
 
 ## Zeitzonen {#time-zones}
 
@@ -662,12 +662,3 @@ sessionTokenOnly="false"
 ### Anonyme Webanwendungen {#anonymous-web-applications}
 
 Wenn Probleme auftreten, veröffentlichen Sie die Webanwendung erneut.
-
-## Red-Hat {#red-hat}
-
-Wenn native Schemas in v6.02 oder v5.11 gelöscht wurden, können Sie Ihre Schemas nach dem Postupgrade möglicherweise nicht mehr bearbeiten. In diesem Fall führen Sie den Befehl aus:
-
-```
-su - neolane
-nlserver config -postupgrade -instance:<instance name> -force
-```

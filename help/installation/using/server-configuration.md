@@ -6,10 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: e1aff73a-54fb-444e-b183-df11c9b3df31
-source-git-commit: 4661a65c83f3b9b7da9ea902f387155c5933e59f
+source-git-commit: e55fff99fd5dec8da998310dc7026c1a506abadc
 workflow-type: tm+mt
-source-wordcount: '624'
-ht-degree: 35%
+source-wordcount: '627'
+ht-degree: 34%
 
 ---
 
@@ -66,7 +66,7 @@ Vorhandene Kunden, die aus einer Migration stammen, können den Warnmodus für e
 
 ## Einschränkung der Befehle (serverseitig)
 
-Mehrere Befehle sind auf der Blacklist und können nicht mit der Funktion execCommand ausgeführt werden. Ein spezieller Unix-Benutzer stellt zusätzliche Sicherheit bereit, um externe Befehle auszuführen. Bei gehosteten Installationen wird diese Einschränkung automatisch angewendet. Bei On-Premise-Installationen können Sie diese Einschränkung manuell einrichten, indem Sie den Anweisungen unter [diese Seite](../../installation/using/configuring-campaign-server.md#restricting-authorized-external-commands). Darüber hinaus **[!UICONTROL Skript]** und **[!UICONTROL Externe Aufgabe]** Workflow-Aktivitäten sind nicht verfügbar (neu installierte Instanzen).
+Mehrere Befehle sind in der Blockierungsliste enthalten und können nicht mit der Funktion execCommand ausgeführt werden. Ein spezieller Unix-Benutzer stellt zusätzliche Sicherheit bereit, um externe Befehle auszuführen. Bei gehosteten Installationen wird diese Einschränkung automatisch angewendet. Bei On-Premise-Installationen können Sie diese Einschränkung manuell einrichten, indem Sie den Anweisungen unter [diese Seite](../../installation/using/configuring-campaign-server.md#restricting-authorized-external-commands). Darüber hinaus **[!UICONTROL Skript]** und **[!UICONTROL Externe Aufgabe]** Workflow-Aktivitäten sind nicht verfügbar (neu installierte Instanzen).
 
 ## Sonstige Konfigurationen
 

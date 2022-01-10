@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 exl-id: 091648b8-bf2d-4595-8be3-287f1ac48edd
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
 source-wordcount: '913'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -23,7 +23,7 @@ In unserem Anwendungsbeispiel versendet die Webseite **Mein Online-Buchshop** je
 
 In Absprache mit der Einkaufsabteilung hat der versandverantwortliche Benutzer einen Newsletter für Kunden erstellt, die in der Vergangenheit bereits Kriminalromane bestellt haben.
 
-Damit die Kollegen der Einkaufsabteilung das Ergebnis ihrer Zusammenarbeit sehen können, fügt sie der Versandverantwortliche als Testadressen zu den Versandempfängern hinzu. Durch die Verwendung einer dynamischen Bedingung lassen sich der Konfigurationsaufwand und die Adressaktualisierung optimieren.
+Um das Endergebnis der Zusammenarbeit mit ihnen zu teilen, entscheidet der Versandverantwortliche, seine Kollegen aus der Einkaufsabteilung als Testadressen zum Versand hinzuzufügen. Durch die Verwendung einer dynamischen Bedingung sparen Sie Zeit bei der Konfiguration und Aktualisierung von Adressen.
 
 Zur Verwendung von dynamischen Bedingungen benötigen Sie:
 

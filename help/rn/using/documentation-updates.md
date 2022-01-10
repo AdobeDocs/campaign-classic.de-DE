@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: f2cb3323bc5df3aae16a4ae4cf80c30bf53b006e
+source-git-commit: 87067a0cca1a4a7f8ea1137ece6d513d58fcdb42
 workflow-type: tm+mt
-source-wordcount: '4725'
-ht-degree: 97%
+source-wordcount: '4816'
+ht-degree: 95%
 
 ---
 
@@ -21,7 +21,31 @@ Auf dieser Seite werden alle neuen Funktionen und Dokumentationsaktualisierungen
 
 Die entsprechenden Aktualisierungen finden Sie in den [Versionshinweisen zu Adobe Campaign Classic](../../rn/using/latest-release.md).
 
-## Dezember 2021{#dec-2021}
+## 2022
+
+### Januar
+
+**Dokumentationsaktualisierungen in Version 7.2.1**
+
+Aktualisierte Kompatibilitätsmatrix. [Mehr dazu](compatibility-matrix.md)
+
+Aktualisierter Abschnitt zu Versionshinweisen . [Mehr dazu](rn-overview.md)
+
+Die Konfiguration des externen FDA-Kontos für Snowflake wurde aktualisiert. [Mehr dazu](../../installation/using/configure-fda-snowflake.md)
+
+Die Konfiguration des externen FDA-Kontos für Azure synapse Analytics wurde aktualisiert. [Mehr dazu](../../installation/using/configure-fda-synapse.md#azure-external)
+
+Google BigQuery FDA Connector aktualisiert. [Mehr dazu](../../installation/using/configure-fda-google-big-query.md)
+
+Nach der Einstellung wurden die Aktionsaktivitäten Microsoft CRM, Salesforce und Oracle CRM On Demand aus der Dokumentation entfernt.
+
+Neue Option **Abbruch bei Fehler** wurde zum Abschnitt Umgang mit Workflow-Fehlern hinzugefügt. [Mehr dazu](../../workflow/using/advanced-parameters.md#in-case-of-errors)
+
+Die Option Batch-Aktualisierung wurde in der CRM-Connector-Aktivität hinzugefügt. [Mehr dazu](../../workflow/using/crm-connector.md)
+
+## 2021
+
+### Dezember 2021{#dec-2021}
 
 Campaign Classic v7 Versionshinweise wurden neu organisiert, um die Navigation zu vereinfachen. [Mehr dazu](rn-overview.md)
 
@@ -29,7 +53,7 @@ Die Dokumentation zur Formularbearbeitung in Campaign wurde aktualisiert und ver
 
 CentOS 8 hat das Ende der Lebensdauer erreicht und wird jetzt von Adobe Campaign Classic nicht mehr unterstützt. [Mehr dazu](deprecated-features.md)
 
-## November 2021{#nov-2021}
+### November 2021{#nov-2021}
 
 Es wurde eine Beschränkung für eingehende SMS (MO) hinzugefügt. [Mehr dazu](../../delivery/using/sms-protocol.md#multipart)
 
@@ -46,13 +70,13 @@ Es wurde ein Abschnitt hinzugefügt, in dem beschrieben wird, wie Sie mit JavaSc
 Beispiele für die Implementierung von JavaScript-Codes in Workflows wurden hinzugefügt. [Mehr dazu](../../workflow/using/javascript-in-workflows.md)
 
 
-## Oktober 2021{#oct-2021}
+### Oktober 2021{#oct-2021}
 
 Vorhandene Technotes wurden in den neuen Abschnitt **Technote** gruppiert.
 
 Die Seite **Empfehlungen zur Hardware-Dimensionierung** wurde aktualisiert und zum Abschnitt **Technotes** hinzugefügt. [Mehr dazu](../../technotes/using/hardware-sizing.md)
 
-## September 2021{#sept-2021}
+### September 2021{#sept-2021}
 
 **Dokumentationsaktualisierungen in Version 21.1.4**
 
@@ -62,7 +86,7 @@ Screenshots und Parameter von Berichten und Web-Anwendungen wurden nach der Entf
 
 Die Beschreibung des technischen Workflows [Rechnungsstellung](../../production/using/monitoring-processes.md#billing-report) wurde mit einem neuen Limit aktualisiert.
 
-## August 2021{#aug-2021}
+### August 2021{#aug-2021}
 
 Neue Workflow-Aktivität hinzugefügt: Datenquelle ändern – [Mehr dazu](../../workflow/using/change-data-source.md)
 
@@ -71,12 +95,12 @@ Den Dokumentationsseiten wurden Anwendungs-Kennzeichen hinzugefügt: **Gilt für
 Es wurde ein Hinweis zur Integration zwischen Campaign und AEM Assets hinzugefügt, die seit Adobe Experience Manager 6.4 nicht mehr unterstützt wird. [Mehr dazu](../../integrations/using/configuring-access-to-assets.md)
 
 
-## Juli 2021 {#july-2021}
+### Juli 2021 {#july-2021}
 
 Die [Campaign-Version 21.1.3](../../rn/using/latest-release.md#release-21-1-3-build-9330) ist jetzt allgemein verfügbar (General Availability, GA).
 
 
-## Juni 2021 {#june-2021}
+### Juni 2021 {#june-2021}
 
 Der Abschnitt **Transaktionsnachrichten** wurde umstrukturiert und mit dem neuen Abschnitt &quot;Erste Schritte&quot;, einschließlich eines [erweiterten Schemas](../../message-center/using/about-transactional-messaging.md#transactional-messaging-operating-principle), klarer gestaltet, um den Prozess besser verständlich zu machen. [Mehr dazu](../../message-center/using/about-transactional-messaging.md)
 
@@ -88,11 +112,11 @@ Verbesserungen am LINE-Kanal – [Mehr dazu](../../delivery/using/line-channel.m
 
 Neuer Vertica FDA-Connector – [Mehr dazu](../../installation/using/configure-fda-vertica.md)
 
-Neuer Google BigQuery FDA-Connector – [Mehr dazu](../../installation/using/configure-fda-google-big-query.md)
+Neuer Google BigQuery FDA-Connector - [Weitere Infos](../../installation/using/configure-fda-google-big-query.md)
 
 Die Beschreibung des technischen Workflows &quot;Abrechnung (Billing)&quot; enthält jetzt die Aufgaben, die ursprünglich vom Workflow &quot;Zählung aktiver Profile (Billing) (billingActiveContactCount)&quot; ausgeführt wurden. [Mehr dazu](../../workflow/using/about-technical-workflows.md)
 
-## Mai 2021 {#may-2021}
+### Mai 2021 {#may-2021}
 
 Die Dokumentation zum Workflow-Heatmap-Bericht wurde aktualisiert und verbessert. [Mehr dazu](../../workflow/using/heatmap.md)
 
@@ -102,13 +126,13 @@ Die Installationsschritte für die Client-Konsole von Campaign wurden verbessert
 
 Es wurde eine neue Technote zum Signaturproblem für getrackte URLs erstellt. [Mehr dazu](../../technotes/using/tracked-urls.md)
 
-## April 2021 {#april-2021}
+### April 2021 {#april-2021}
 
 Ein neuer Abschnitt beschreibt die Verwendung von Adobe Experience Platform-Quellen und -Zielen, um Daten zwischen Campaign Classic und der Echtzeit-Kundendatenplattform (RTCDP) von Adobe auszutauschen. [Mehr dazu](../../integrations/using/get-started-sources-destinations.md)
 
 Es wurde eine neue Technote erstellt, in der erklärt wird, wie die Bounce-Qualifizierung nach einem ISP-Ausfall aktualisiert werden kann. [Mehr dazu](../../delivery/using/update-bounce-qualification.md)
 
-## März 2021 {#march-2021}
+### März 2021 {#march-2021}
 
 Der Abschnitt [Erste Schritte mit SMS](../../delivery/using/sms-channel.md) wurde neu organisiert und verbessert. In speziellen Abschnitten erfahren Sie nun, wie Sie [den SMS-Kanal konfigurieren](../../delivery/using/sms-set-up.md), [eine SMS erstellen](../../delivery/using/sms-create.md) sowie [SMS senden und verfolgen](../../delivery/using/sms-send.md) können.
 
@@ -129,15 +153,15 @@ Im Abschnitt zur Aktivität **[!UICONTROL Erweitertes JavaScript]** finden Sie I
 
 Der Abschnitt [Zustellbarkeit](../../delivery/using/about-deliverability.md) wurde aktualisiert und enthält nun Links zum neuen [Adobe-Handbuch mit Best Practices zur Zustellbarkeit](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=de). Alle allgemeinen Informationen zur Zustellbarkeit, die für verschiedene Adobe-Lösungen gelten können, wurden in den [Anhang des Handbuchs mit Best Practices](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html?lang=de#additional-resources) verschoben.
 
-## Februar 2021 {#release-21.1}
+### Februar 2021 {#release-21.1}
 
 **Dokumentationsaktualisierungen zu Version 21.1**
 
-Die neue Funktion **Email Feedback Service** (private Betaversion) ist [hier](../../delivery/using/sending-with-enhanced-mta.md#email-feedback-service) dokumentiert.
+Die neue Funktion **E-Mail-Feedback-Service** (private Betaversion) ist [hier](../../delivery/using/sending-with-enhanced-mta.md#email-feedback-service) dokumentiert.
 
 Der Abschnitt **Server-Konfigurationsdatei** wurde mit den Konfigurationsparametern aktualisiert, die für die Verbindung von Campaign mit einem anderen Service über IMS erforderlich sind. [Mehr dazu](../../installation/using/the-server-configuration-file.md#ims)
 
-In der Liste der Versandstatus wurde die Beschreibung für **Vom Dienstleister berücksichtigt** aktualisiert: Dieser Status wird nun auch für E-Mail-Sendungen verwendet, die über den [Email Feedback Service](../../delivery/using/sending-with-enhanced-mta.md#email-feedback-service) versendet werden. [Mehr dazu](../../delivery/using/delivery-statuses.md#list-delivery-statuses)
+In der Liste der Versandstatus wurde die Beschreibung für **Vom Dienstleister berücksichtigt** aktualisiert: Dieser Status wird nun auch für E-Mail-Sendungen verwendet, die über den [E-Mail-Feedback-Service](../../delivery/using/sending-with-enhanced-mta.md#email-feedback-service) versendet werden. [Mehr dazu](../../delivery/using/delivery-statuses.md#list-delivery-statuses)
 
 Die Tastaturkürzel, die auf dem neuen Anmeldebildschirm zur Verbindung mit Adobe Campaign verfügbar sind, sind jetzt dokumentiert. [Mehr dazu](../../platform/using/launching-adobe-campaign.md#connecting-to-adobe-campaign)
 
@@ -155,7 +179,7 @@ Der Abschnitt **E-Mail-Versand** wurde in neue Unterabschnitte umorganisiert und
 
 Es wurden Informationen zum Hinzufügen von Links in E-Mails hinzugefügt, die personalisiert werden können und das Tracking unterstützen. [Mehr dazu](../../delivery/using/tracking-personalized-links.md).
 
-## Januar 2021 {#jan-2021}
+### Januar 2021 {#jan-2021}
 
 Der Abschnitt zur **[!UICONTROL Verzweigungsaktivität]** wurde um Best Practices erweitert. [Mehr dazu](../../workflow/using/fork.md)
 
@@ -173,7 +197,14 @@ Der Abschnitt zur Fehlerbehebung im **Überwachungshandbuch** wurde neu struktur
 
 Es wurde ein neuer Abschnitt zum **Datenimport und -export** einschließlich neuer Seiten mit Best Practices für Workflows, Datenkomprimierung, Verschlüsselung und Import ergänzt. [Mehr dazu](../../platform/using/get-started-data-import-export.md)
 
-## Dezember 2020 {#dec-2020}
+
+
+
+
+
+## 2020
+
+### Dezember 2020 {#dec-2020}
 
 Der Bereich **Versand-Monitoring** wurde nach Themenbereichen strukturiert. [Mehr dazu](../../delivery/using/about-delivery-monitoring.md)
 
@@ -187,7 +218,7 @@ Die vollständige Beschreibung des SMS-Connector-Protokolls und der Einstellungs
 
 Der Abschnitt **Transaktionsnachrichten** wurde um ein Hinweis dazu ergänzt, dass die Ereignis-Ordner nicht als Ansichten für die Ausführungsinstanzen festgelegt werden dürfen, da dies zu Problemen mit Zugriffsrechten führt. [Mehr dazu](../../message-center/using/about-event-processing.md#event-collection)
 
-## November 2020 {#nov-2020}
+### November 2020 {#nov-2020}
 
 Die Übersicht über das Datenmodell von Campaign wurde verbessert und neu organisiert. [Mehr dazu](../../configuration/using/about-data-model.md).
 
@@ -207,7 +238,7 @@ Der Abschnitt über persönliche Daten und Personen wurde um ein Verwendungsfall
 
 Ein neuer Abschnitt mit häufig gestellten Fragen zum Datenschutz wurde hinzugefügt – [mehr dazu](../../platform/using/privacy-faq.md)
 
-## Oktober 2020 {#oct-2020}
+### Oktober 2020 {#oct-2020}
 
 **Neue Funktionen in Version 20.3**
 
@@ -221,8 +252,8 @@ Die Kompatibilitätsmatrix wurde aktualisiert. [Mehr dazu](../../rn/using/compat
 
 Die Seite mit veralteten und entfernten Funktionen wurde aktualisiert. [Mehr dazu](../../rn/using/deprecated-features.md)
 
-Versionshinweise und Kompatibilitätsmatrix für die [!DNL Gold Standard]-Version sind jetzt in einem speziellen Abschnitt verfügbar.
-[Mehr dazu](../../rn/using/gold-standard.md#gs-11)
+Versionshinweise und Kompatibilitätsmatrix für [!DNL Gold Standard] -Version ist jetzt auf einer eigenen Seite verfügbar.
+[Mehr dazu](../../rn/using/gold-standard.md)
 
 Die Triggers-Integration, die ursprünglich auf der oAUTH-Authentifizierung basierte und für den Zugriff auf die Pipeline eingerichtet wurde, wurde geändert und in Adobe I/O verschoben. [Mehr dazu](../../integrations/using/configuring-adobe-io.md)
 
@@ -246,7 +277,7 @@ Die Seite mit den Berichtseigenschaften wurde neu organisiert und erweitert, um 
 
 Es wurde eine neue Technote mit Details zur Migration vom Legacy-Binärprotokoll zur HTTP/2-basierten APNs Provider-API erstellt – [Mehr dazu](https://helpx.adobe.com/de/campaign/kb/migrate-to-apns-http2.html)
 
-## September 2020 {#september-2020}
+### September 2020 {#september-2020}
 
 Es wurde ein Hinweis hinzugefügt, dass die Anzahl der aktiven Profile nur für Marketing-Instanzen verfügbar ist – [Mehr dazu](../../platform/using/about-profiles.md#active-profiles)
 
@@ -254,7 +285,7 @@ Es wurde ein neues Beispiel zur Schemabearbeitung hinzugefügt, um ein Feld mit 
 
 Es wurde ein Hinweis zur Verwendung zusätzlicher Daten mit Testadressen in Sendungen hinzugefügt – [Mehr dazu](../../delivery/using/creating-seed-addresses.md#defining-addresses)
 
-## August 2020 {#aug-2020}
+### August 2020 {#aug-2020}
 
 Informationen zu Best Practices im Zusammenhang mit der Versandgestaltung und dem Versand mit Campaign finden Sie in einem eigenen Abschnitt – [Mehr dazu](../../delivery/using/delivery-best-practices.md)
 
@@ -293,7 +324,7 @@ In der Liste der [Workflow-Anwendungsfälle](../../workflow/using/about-workflow
 
 Der Abschnitt über die **[!UICONTROL Und-Verknüpfungsaktivität]** wurde um zusätzliche Informationen über deren Verwendung sowie um einen Hinweis zur Verwendung von Variablen erweitert – [Mehr dazu](../../workflow/using/and-join.md)
 
-## Juli 2020 {#july-2020}
+### Juli 2020 {#july-2020}
 
 Den Workflow-Anwendungsfällen wurde ein Anwendungsfall zum automatischen Aktualisieren einer Liste mithilfe einer inkrementellen Abfrage hinzugefügt. [Mehr dazu](../../workflow/using/about-workflow-use-cases.md)
 
@@ -311,7 +342,7 @@ Es wurden Informationen zu Sub-Workflow-Protokollen und dem Verhalten im Fehlerf
 
 Im Abschnitt **[!UICONTROL Planungsaktivität]** wurden Best Practices hinzugefügt. [Mehr dazu](../../workflow/using/scheduler.md)
 
-## Juni 2020 {#june-2020}
+### Juni 2020 {#june-2020}
 
 Der Abschnitt über das Entfernen einer unter Quarantäne gestellten Adresse wurde aktualisiert. Dies umfasst eine Klarstellung der Fälle, in denen Adressen automatisch aus der Quarantäneliste entfernt werden. [Mehr dazu](../../delivery/using/understanding-quarantine-management.md#removing-a-quarantined-address)
 
@@ -319,7 +350,7 @@ Es wurden Anwendungsfälle zum [Verschlüsseln](../../platform/using/zip-encrypt
 
 Die Seite über die Integration von Experience Cloud Triggers und Adobe Campaign Classic wurde [hierher](../../integrations/using/about-triggers.md) verschoben.
 
-## Juli 2020 {#release-20-2}
+### Juli 2020 {#release-20-2}
 
 **Neue Funktionen in Version 20.2**
 
@@ -351,7 +382,7 @@ Der Abschnitt &quot;Spam Assassin-Installation&quot; wurde mit dem Namen der neu
 
 Der Abschnitt zur Duplizierung von Umgebungen wurde aktualisiert. [Weitere Informationen](../../production/using/duplicating-environments.md#step-2---export-the-target-environment-configuration--dev-)
 
-## Mai 2020 {#may-2020}
+### Mai 2020 {#may-2020}
 
 Der Abschnitt zum Monitoring der Zustellbarkeit wurde an eine andere Stelle verschoben und überarbeitet. [Mehr dazu](../../delivery/using/monitoring-deliverability.md)
 
@@ -363,7 +394,7 @@ Der Abschnitt zum Senden von Transaktions-E-Mails mit Anhängen wurde an eine an
 
 Der Abschnitt mit Best Practices für Datenpackages wurde verschoben und überarbeitet. [Mehr dazu](../../platform/using/working-with-data-packages.md#data-package-best-practices)
 
-## April 2020 {#april-2020}
+### April 2020 {#april-2020}
 
 Die Tabelle mit den FDA-Berechtigungen wurde in die Dokumentation „Zugriff auf eine externe Datenbank (FDA)“ verschoben. [Mehr dazu](../../installation/using/remote-database-access-rights.md)
 
@@ -379,7 +410,7 @@ Die Abschnitte [Bounce-Message-Qualifizierung](../../delivery/using/understandin
 
 Der Artikel zum Adobe Campaign Enhanced MTA wurde aktualisiert. Er gilt jetzt nur für Campaign Classic. [Mehr dazu](https://helpx.adobe.com/de/campaign/kb/acc-campaign-enhanced-mta.html)
 
-## März 2020 {#march-2020}
+### März 2020 {#march-2020}
 
 Die Seite mit Best Practices für das Datenmodell enthält jetzt neue Abschnitte wie [Sequenzen](../../configuration/using/data-model-best-practices.md#sequences), [Leistung](../../configuration/using/data-model-best-practices.md#performance) und [große Tabellen](../../configuration/using/data-model-best-practices.md#large-tables). [Mehr dazu](../../configuration/using/data-model-best-practices.md)
 
@@ -393,7 +424,7 @@ Ein neuer Abschnitt mit den verschiedenen Sprachen, die in Adobe Campaign verfü
 
 Die Seite zu Richtlinien für die Zugriffsverwaltung enthält jetzt zusätzliche Informationen zu spezifischen Berechtigungen. [Mehr dazu](../../platform/using/access-management-named-rights.md)
 
-## Februar 2020 {#february-2020}
+### Februar 2020 {#february-2020}
 
 Es gibt jetzt einen neuen Abschnitt, in dem Best Practices und wichtige Empfehlungen zum Entwerfen des Adobe Campaign-Datenmodells erläutert werden. [Mehr dazu](../../configuration/using/data-model-best-practices.md)
 
@@ -405,7 +436,7 @@ AMP for E-Mail wird jetzt von neuen E-Mail-Anbietern unterstützt: Die zugehöri
 
 Der Abschnitt zur E-Mail-Archivierung wurde verbessert. [Mehr dazu](../../installation/using/email-archiving.md#recommendations-and-limitations)
 
-## Januar 2020 {#release-20-1}
+### Januar 2020 {#release-20-1}
 
 **Neue Funktionen in Version 20.1**
 
@@ -465,7 +496,9 @@ Das Reporting-Handbuch wurde aktualisiert und neu organisiert. [Mehr dazu](../..
 
 Es wurde ein Beispiel für die Verwendung einer Instanzvariablen in einem Workflow hinzugefügt. [Mehr dazu](../../workflow/using/javascript-scripts-and-templates.md)
 
-## Dezember 2019 {#december-2019}
+## 2019
+
+### Dezember 2019 {#december-2019}
 
 Die Option „WdbcOptions_TempDbName“ wurde der Liste der Kampagnenoptionen hinzugefügt. [Mehr dazu](../../installation/using/configuring-campaign-options.md)
 
@@ -503,7 +536,7 @@ In der Schemadefinition wurde eine Empfehlung für das Attribut **sqlDefault** h
 
 Die Integration zwischen Adobe Campaign und der Adobe Echtzeit-Kundendatenplattform wird jetzt im Handbuch **Integration mit Adobe Experience Cloud** beschrieben. [Mehr dazu](../../integrations/using/about-campaign-integrations.md)
 
-## November 2019 {#november-2019}
+### November 2019 {#november-2019}
 
 Den Abschnitten [Multiplexing des Mid-Sourcing-Servers](../../installation/using/mid-sourcing-server.md#multiplexing-the-mid-sourcing-server) und [Mehrere Kontrollinstanzen](../../message-center/using/transactional-messaging-architecture.md#supporting-several-control-instances) wurde eine Warnung hinzugefügt, die darauf hinweist, dass diese Implementierungen für vollständig gehostete und hybride Clients nicht unterstützt werden.
 
@@ -517,7 +550,7 @@ Die Control Panel-Dokumentation wurde in den neuen kollaborativen Dokumentations
 
 Die ersten Schritte zum Thema Best Practices für den Versand wurden aktualisiert. [Mehr dazu](../../delivery/using/delivery-best-practices.md)
 
-## Oktober 2019 {#october-2019}
+### Oktober 2019 {#october-2019}
 
 Die Liste der Fehlermeldungen für Campaign wurde aktualisiert – [Mehr dazu](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=de)
 
@@ -535,7 +568,7 @@ In der Dokumentation zur Planungsaktivität wurden Informationen darüber hinzug
 
 Die Schritte zum Konfigurieren des Inbox Renderings für On-Premise-Installationen wurden der Dokumentation hinzugefügt. [Mehr dazu](../../delivery/using/inbox-rendering.md#activating-inbox-rendering)
 
-## September 2019 {#september-2019}
+### September 2019 {#september-2019}
 
 Eine neue Seite wurde hinzugefügt, um allgemeine Richtlinien für die Wartung von Campaign Classic bereitzustellen. [Mehr dazu](../../production/using/monitoring-guidelines.md)
 
@@ -545,7 +578,7 @@ Eine neue Seite mit allgemeinen Richtlinien für das Tracking in Adobe Campaign
 
 Die Best Practices für die Leistungsverbesserung von Workflows und Sendungen wurden aktualisiert. [Weitere Informationen zu Workflows](../../workflow/using/workflow-best-practices.md) und [Sendungen](../../delivery/using/delivery-performances.md#best-practices-performance).
 
-## Mai 2019 {#release-19-1}
+### Mai 2019 {#release-19-1}
 
 **Neue Funktionen in Version 19.1**
 
@@ -620,7 +653,7 @@ Das Handbuch zur Dimensionierung von Hardware für Campaign wurde aktualisiert. 
 
 Informationen zum Query Banding für das externe Teradata-Konto wurden hinzugefügt. [Mehr dazu](../../installation/using/external-accounts.md)
 
-## Januar 2019{#release-doc-16-01-2019}
+### Januar 2019{#release-doc-16-01-2019}
 
 Die Technote zu den Marketing Cloud-Triggers wurde aktualisiert. [Mehr dazu](../../integrations/using/about-triggers.md)
 

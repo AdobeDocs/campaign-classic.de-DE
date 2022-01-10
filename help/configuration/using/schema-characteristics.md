@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 exl-id: 099161b4-b4cb-433c-aed6-71157269a536
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: fb4b4c42b907e86813ea570f912312fccf893bfe
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 2%
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 # Schemamerkmale{#schema-characteristics}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 Die Merkmale eines Schemas, das auf eine vorhandene Tabelle verweist, lauten wie folgt:
 
@@ -25,7 +25,7 @@ Die Merkmale eines Schemas, das auf eine vorhandene Tabelle verweist, lauten wie
 
 >[!IMPORTANT]
 >
->Löschen Sie keine Felder in der Standard-Empfängertabelle, auch wenn sie nutzlos sind. Dies kann zu Verhaltensfehlern in der Adobe Campaign-Datenbank führen.
+>Löschen Sie keine Felder in der integrierten Empfängertabelle, auch wenn sie nutzlos sind. Dies kann zu Verhaltensfehlern in der Adobe Campaign-Datenbank führen.
 
 ## Das Ansichtsattribut {#the-view-attribute}
 

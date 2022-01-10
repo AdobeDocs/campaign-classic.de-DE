@@ -6,9 +6,9 @@ audience: migration
 content-type: reference
 topic-tags: rollback
 exl-id: 5120a7c4-3760-48d9-94da-d587d333e8d8
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '293'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Nach einer Migration müssen Sie bei Problemen möglicherweise zur vorherigen Ve
 
 Das Rollback-Verfahren hängt von Ihrer ursprünglichen Version von Campaign ab.
 
-## Wiederherstellen von v6.1
+## Wiederherstellen auf Campaign v6.1
 
 Im Folgenden finden Sie das Verfahren zum Wiederherstellen einer v6.1 von v7.
 

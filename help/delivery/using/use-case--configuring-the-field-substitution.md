@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 exl-id: 3f567b2d-6f98-4831-af84-7db17fd12c6e
-source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
+source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
 workflow-type: tm+mt
 source-wordcount: '454'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -25,7 +25,7 @@ Auf diese Weise ist es nicht erforderlich, jede Testadresse manuell zu ergänzen
 
 In diesem Anwendungsbeispiel versendet die Website **Meine Online-Bücherei** je nach bevorzugtem Genre verschiedene Rabattangebote an ihre Kunden.
 
-Der Versandverantwortliche hat in seine E-Mail ein Personalisierungsfeld eingefügt, das mit dem bevorzugten Genre verknüpft ist. Ziel ist es, einige Testadressen zu verwenden: Diese Testadressen enthalten das Personalisierungsfeld in ihrer Tabelle, dort wird aber kein Wert gespeichert.
+Der Versandverantwortliche hat ein mit dem bevorzugten Genre verknüpftes Personalisierungsfeld in seine E-Mail eingefügt. Ziel ist es, einige Testadressen zu verwenden: Diese Testadressen enthalten das Personalisierungsfeld in ihrer Tabelle, dort wird aber kein Wert gespeichert.
 
 Zur Verwendung der zufälligen Wertersetzung benötigen Sie:
 

@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '902'
 ht-degree: 45%
 
 ---
@@ -59,7 +59,7 @@ Um die Sicherheit zu verbessern, wurde ein Signaturmechanismus für das Tracking
 
 Außerdem wurde seit Campaign 20.2 und der [!DNL Gold Standard] -Version verwenden, können Sie eine Verbesserung verwenden, um in früheren Builds generierte URLs zu deaktivieren. Diese Funktion ist standardmäßig deaktiviert. Sie können sich an [Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) um diese Funktion zu aktivieren.
 
-Wenn Sie [!DNL Gold Standard] 19.1.4 können Probleme beim Versand von Push-Benachrichtigungen mithilfe von Tracking-Links oder bei Sendungen mit Anker-Tags auftreten. In diesem Fall wird empfohlen, die URL-Signatur zu deaktivieren.
+Wenn Sie Build 19.1.4 ausführen, treten möglicherweise Probleme beim Versand von Push-Benachrichtigungen über Tracking-Links oder bei Sendungen mit Anker-Tags auf. In diesem Fall wird empfohlen, die URL-Signatur zu deaktivieren.
 
 Unabhängig davon, ob Sie Campaign vor Ort oder in einer Hybridarchitektur ausführen, müssen Sie sich an folgende Adresse wenden: [Kundenunterstützung](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html) , damit die URL-Signatur deaktiviert wird.
 

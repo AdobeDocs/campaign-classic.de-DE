@@ -6,7 +6,7 @@ audience: interaction
 content-type: reference
 topic-tags: simulating-offers
 exl-id: e2dea4a0-9ed8-47b6-a16b-eeee653d2290
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 7728826eea199d2367fcbf556c01ec9d6cae466f
 workflow-type: tm+mt
 source-wordcount: '162'
 ht-degree: 100%
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 # Ausführungsparameter{#execution-settings}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 Bei Erstellung einer Simulation haben Sie die Möglichkeit, Ausführungsparameter anzugeben. Auf diese Weise können Sie die Ausführung der Simulation in Abhängigkeit von ihrer Prioritätsstufe auf einen Zeitpunkt mit geringer Auslastung verschieben und die SQL-Abfragen im Protokoll speichern.
 

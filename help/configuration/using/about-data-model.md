@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 655b5928-b005-442f-b026-2f1b0c1abb99
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: fb4b4c42b907e86813ea570f912312fccf893bfe
 workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 28%
@@ -83,7 +83,7 @@ Weitere Informationen zum Konfigurieren von Erweiterungsschemata zum Erweitern d
 
 ## Verwenden einer benutzerdefinierten Empfängertabelle {#custom-recipient-table}
 
-Beim Entwerfen Ihres Adobe Campaign-Datenmodells können Sie die [vordefinierte Empfängertabelle](#default-recipient-table)oder erstellen Sie eine [benutzerdefinierte Empfängertabelle](../../configuration/using/about-custom-recipient-table.md) zum Speichern Ihrer Marketing-Profile.
+Beim Entwerfen Ihres Adobe Campaign-Datenmodells können Sie die [integrierte Empfängertabelle](#default-recipient-table)oder erstellen Sie eine [benutzerdefinierte Empfängertabelle](../../configuration/using/about-custom-recipient-table.md) zum Speichern Ihrer Marketing-Profile.
 
 Wenn Ihr Datenmodell nicht zur empfängerorientierten Struktur passt, können Sie andere Tabellen als Zielgruppendimension in Adobe Campaign einrichten. Dies kann z. B. relevant sein, wenn Sie Haushalte, Konten (wie Mobiltelefone) und Unternehmen/Sites anvisieren müssen und nicht nur Empfänger.
 
@@ -95,11 +95,11 @@ Alle bei der Verwendung einer benutzerdefinierten Empfängertabelle erforderlich
 
 Die Verwendung einer benutzerdefinierten Empfängertabelle bietet folgende Vorteile:
 
-* **Flexibles Datenmodell** - Die vordefinierte Empfängertabelle ist nutzlos, wenn Sie die meisten Tabellenfelder der Empfänger nicht benötigen oder wenn das Datenmodell nicht empfängerzentriert ist.
+* **Flexibles Datenmodell** - Die integrierte Empfängertabelle ist nutzlos, wenn Sie die meisten Tabellenfelder der Empfänger nicht benötigen oder wenn das Datenmodell nicht empfängerzentriert ist.
 
-* **Skalierbarkeit** - Große Volumina erfordern für ein effizientes Design eine optimierte Tabelle mit wenigen Feldern. Die vordefinierte Empfängertabelle hätte zu viele nutzlose Felder, was sich auf die Leistung auswirken und die Effizienz beeinträchtigen könnte.
+* **Skalierbarkeit** - Große Volumina erfordern für ein effizientes Design eine optimierte Tabelle mit wenigen Feldern. Die integrierte Empfängertabelle hätte zu viele nutzlose Felder, was sich auf die Leistung auswirken und die Effizienz beeinträchtigen könnte.
 
-* **Datenspeicherort** - Wenn sich Daten in einer externen vorhandenen Marketing-Datenbank befinden, kann es zu viel Aufwand erfordern, die native Empfängertabelle zu verwenden. Die Erstellung einer neuen Struktur auf der Grundlage einer vorhandenen Struktur ist einfacher.
+* **Datenspeicherort** - Wenn sich Daten in einer externen vorhandenen Marketing-Datenbank befinden, kann die Verwendung der integrierten Empfängertabelle zu aufwändig sein. Die Erstellung einer neuen Struktur auf der Grundlage einer vorhandenen Struktur ist einfacher.
 
 * **Einfache Migration** - Es ist keine Wartung erforderlich, um zu überprüfen, ob alle Erweiterungen nach der Aktualisierung weiterhin gültig sind.
 
