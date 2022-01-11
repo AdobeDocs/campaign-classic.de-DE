@@ -61,7 +61,7 @@ Bei einem vom Knoten **[!UICONTROL Vorgänge]** ausgehenden Export wird standard
 
    ![](assets/s_ncs_user_export_wizard02_b.png)
 
-   Hier ist die Angabe des Datums der letzten Änderung erforderlich. Dies geschieht durch Auswahl des entsprechenden Tabellenfelds.
+   Hier ist die Angabe des Datums der letzten Änderung erforderlich. Dies geschieht durch Abruf aus einem Feld oder durch Berechnung.
 
 ## 3. Schritt – Ausgabeformat bestimmen {#step-3---defining-the-output-format}
 

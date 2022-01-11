@@ -71,7 +71,7 @@ Attribute und Elemente des Inhalts werden wie JavaScript-Objekte dargestellt und
 * **content.@name**: gibt den Wert des Attributs „name“ des Hauptelements aus.
 * **Inhalt.@`['name']`**: identisch mit dem **Inhalt.@name**-Syntax
 * **content.chapter.length**: gibt die Anzahl an Elementen des Kollektionselements `<chapter` aus
-* **content.chapter`[0]`.@name**: gibt den Namen des ersten Elements von `<chapter>` aus
+* **content.chapter`[0]`.@name**: ruft den Namen des ersten Elements von `<chapter>` ab
 * **chapter.name()**: gibt den Namen des Elements `<chapter>` aus
 * **chapter.parent().name()**: gibt den Namen des übergeordneten Elements von `<chapter>` aus
 

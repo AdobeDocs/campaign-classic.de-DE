@@ -69,7 +69,7 @@ Durch Klick auf die Schaltfläche **[!UICONTROL Abbrechen]** kann die Aktualisie
 
 Die Option **[!UICONTROL Ausgewählte Zeilen fusionieren...]** ermöglicht die Fusion von zwei zuvor ausgewählten Empfängerprofilen. Ein Assistent ermöglicht es Ihnen, die Zusammenführung zu konfigurieren und zu starten.
 
-Der Assistent listet die Werte aller in mindestens einem der Quelldatensätze ausgefüllten Felder. Bei unterschiedlichen Werten in den jeweiligen Quellen werden diese im Abschnitt **[!UICONTROL Konfliktliste]** angezeigt. Geben Sie unter Verwendung der unter der Liste zur Verfügung stehenden Radiobuttons das Quellprofil an, dessen Werte im Konfliktfall übernommen werden sollen.
+Der Assistent listet die abgerufenen Werte aller in mindestens einem der Quelldatensätze ausgefüllten Felder. Bei unterschiedlichen Werten in den jeweiligen Quellen werden diese im Abschnitt **[!UICONTROL Konfliktliste]** angezeigt. Geben Sie unter Verwendung der unter der Liste zur Verfügung stehenden Radiobuttons das Quellprofil an, dessen Werte im Konfliktfall übernommen werden sollen.
 
 ![](assets/s_ncs_user_merge_wizard01_1.png)
 

@@ -9,7 +9,7 @@ exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 source-git-commit: 87067a0cca1a4a7f8ea1137ece6d513d58fcdb42
 workflow-type: tm+mt
 source-wordcount: '913'
-ht-degree: 81%
+ht-degree: 87%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 81%
 
 ## Versionsstatus{#rn-statuses}
 
-Jeder neue Build weist einen Status auf, der durch eine Farbe dargestellt wird.
+Jeder neue Build weist einen Status auf, der durch eine bestimmte Farbe dargestellt wird.
 
 ![](assets/do-not-localize/green3.png) **Allgemeine Verfügbarkeit** (GA) – In der Produktion validiert und von Adobe empfohlen.
 
@@ -41,9 +41,9 @@ Als gehosteter Kunde profitieren Sie automatisch von der Aktualisierung mit der 
 
 ## Empfehlungen{#recommendations}
 
-Um eine stabile Konfiguration sicherzustellen, wird empfohlen, **denselben stabilen Build** auf allen Servern, die in derselben Client-Konfiguration ausgeführt werden.
+Um eine stabile Konfiguration sicherzustellen, sollten Sie **denselben stabilen Build** auf allen Servern installieren, die dieselbe Client-Konfiguration besitzen.
 
-Darüber hinaus muss sich die Client-Konsole auf demselben Build befinden wie die Server-Instanz.
+Darüber hinaus muss die Client-Konsole denselben Build haben wie die Server-Instanz.
 
 Um Ihre Implementierung auf dem neuesten Stand zu halten, lesen Sie bei jeder neuen Version die Seiten [Eingestellte und entfernte Funktionen](../../rn/using/deprecated-features.md) und [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md).
 
@@ -136,7 +136,7 @@ Wir werden dafür sorgen, dass Sie über alle nötigen Projekt- und Kontaktinfor
 
 ## Zusätzliche Ressourcen{#support}
 
-* [Campaign-Version suchen](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+* [Finden Sie Ihre Campaign-Version](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 * [Hilfe und Support](../../support.md)
 * [Control Panel-Versionen](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=de)
 * [Aktuelle Dokumentationsaktualisierungen](../../rn/using/documentation-updates.md)

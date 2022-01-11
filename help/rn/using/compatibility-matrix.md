@@ -201,12 +201,12 @@ Die folgenden externen Datenbanken sind mit dem [Federated Data Access-Modul](..
 <tr>
 <td>Snowflake</td>
 <td> </td>
-<td>7.2.1 Minimum</td>
+<td>Mindestens 7.2.1</td>
 </tr>
 <tr>
 <td>Google BigQuery</td>
 <td> </td>
-<td>7.2.1 Minimum</td>
+<td>Mindestens 7.2.1</td>
 </tr>
 <tr>
 <td>Amazon Redshift</td>

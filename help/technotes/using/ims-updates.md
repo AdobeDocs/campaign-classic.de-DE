@@ -4,7 +4,7 @@ title: 'Technote: Aktualisieren Ihrer Umgebung zur Verbindung von Adobe Campaign
 description: Campaign – IMS-Aktualisierungen
 exl-id: ecb5a258-a150-46a3-8b83-2b2c06d873ee
 source-git-commit: 70240d5f62fd3d7b755389b5ad8c4b499c94657d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '587'
 ht-degree: 100%
 
@@ -75,7 +75,7 @@ Die folgende Warnmeldung wird Benutzern angezeigt, wenn sie ihre Client-Konsole 
 
 ![](../../integrations/using/assets/do-not-localize/errorMsg.png)
 
-Wenn eine solche Warnung angezeigt wird, stellen Sie sicher, dass Sie die neuesten Updates des verwendeten Betriebssystems installieren. [Weitere Informationen](https://helpx.adobe.com/de/x-productkb/global/update-operating-system-and-browser.html)
+Wenn eine solche Warnung angezeigt wird, stellen Sie sicher, dass Sie die neuesten Updates des verwendeten Betriebssystems installieren. [Weitere Informationen](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)
 
 Wenn Sie Ihre Internet Explorer-Version nicht aktualisiert haben, wird die folgende Meldung angezeigt und Sie können keine Verbindung mehr zu Adobe Campaign herstellen:
 

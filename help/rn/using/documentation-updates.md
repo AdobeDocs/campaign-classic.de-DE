@@ -9,7 +9,7 @@ exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 87067a0cca1a4a7f8ea1137ece6d513d58fcdb42
 workflow-type: tm+mt
 source-wordcount: '4816'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -47,9 +47,9 @@ Die Option Batch-Aktualisierung wurde in der CRM-Connector-Aktivität hinzugefü
 
 ### Dezember 2021{#dec-2021}
 
-Campaign Classic v7 Versionshinweise wurden neu organisiert, um die Navigation zu vereinfachen. [Mehr dazu](rn-overview.md)
+Die Versionshinweise zu Campaign Classic v7 wurden neu geordnet, um die Navigation zu vereinfachen. [Mehr dazu](rn-overview.md)
 
-Die Dokumentation zur Formularbearbeitung in Campaign wurde aktualisiert und verbessert - [Mehr dazu](../../configuration/using/editing-forms.md)
+Die Dokumentation zur Formularbearbeitung in Campaign wurde aktualisiert und verbessert. [Mehr dazu](../../configuration/using/editing-forms.md)
 
 CentOS 8 hat das Ende der Lebensdauer erreicht und wird jetzt von Adobe Campaign Classic nicht mehr unterstützt. [Mehr dazu](deprecated-features.md)
 
@@ -59,15 +59,15 @@ Es wurde eine Beschränkung für eingehende SMS (MO) hinzugefügt. [Mehr dazu](.
 
 Die Details der Migrationsprozess-Protokolle für die Bereitstellung des CRM-Connectors wurden aktualisiert. [Mehr dazu](../../migration/using/testing-the-migration.md#verification-process)
 
-Es wurden Anforderungen bezüglich der IMS-Berechtigungen zur Implementierung der Adobe Campaign-Adobe Analytics-Integration hinzugefügt. [Mehr dazu](../../platform/using/adobe-analytics-provisioning.md)
+Es wurden Anforderungen bezüglich der IMS-Berechtigungen zur Implementierung der Integration zwischen Adobe Campaign und Adobe Analytics hinzugefügt. [Mehr dazu](../../platform/using/adobe-analytics-provisioning.md)
 
-Das Datum für die Einstellung der Unterstützung für Adobe Analytics Data Connector wurde vom 1. März 2022 bis zum 17. August 2022 aktualisiert. [Mehr dazu](deprecated-features.md)
+Das Datum für das Auslaufen von Adobe Analytics Data Connector wurde vom 1. März 2022 auf den 17. August 2022 geändert. [Mehr dazu](deprecated-features.md)
 
-Es wurde ein Link zur Adobe Experience Platform Mobile SDK-Dokumentation hinzugefügt, der beschreibt, wie die Campaign-Erweiterung in Adobe Launch konfiguriert werden kann. [Mehr dazu](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
+Es wurde ein Link zur Adobe Experience Platform Mobile SDK-Dokumentation hinzugefügt, in dem beschrieben wird, wie die Campaign-Erweiterung in Adobe Launch konfiguriert werden kann. [Mehr dazu](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
 
 Es wurde ein Abschnitt hinzugefügt, in dem beschrieben wird, wie Sie mit JavaScript Werte berechnen, Daten austauschen und bestimmte Vorgänge mithilfe von SOAP-Aufrufen ausführen können.[Mehr dazu](../../workflow/using/javascript-scripts-and-templates.md)
 
-Beispiele für die Implementierung von JavaScript-Codes in Workflows wurden hinzugefügt. [Mehr dazu](../../workflow/using/javascript-in-workflows.md)
+Es wurden Beispiele für die Implementierung von JavaScript-Codes in Workflows hinzugefügt. [Mehr dazu](../../workflow/using/javascript-in-workflows.md)
 
 
 ### Oktober 2021{#oct-2021}

@@ -53,7 +53,7 @@ Weitere Informationen hierzu finden Sie unter [Beispiel für die Methode &#39;Ex
 
 Die **ExecuteQuery** -Methode wird in [ExecuteQuery (xtk:queryDef)](#executequery--xtk-querydef-).
 
-### Schreiben {#write}
+### Write {#write}
 
 Mit Schreibbefehlen können Sie einfache oder komplexe Dokumente mit Einträgen in einer oder mehreren Tabellen der Basis schreiben.
 

@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Formular identifizieren
-description: Formular identifizieren
+title: Identifizieren eines Formulars
+description: Identifizieren eines Formulars
 audience: configuration
 content-type: reference
 topic-tags: input-forms
@@ -9,11 +9,11 @@ exl-id: 0d22b0bc-8fbc-4269-af9e-cee27e29bb27
 source-git-commit: cf4e316e9c9bce467e2bd2bd04097f55b3dbb9c7
 workflow-type: tm+mt
 source-wordcount: '62'
-ht-degree: 45%
+ht-degree: 59%
 
 ---
 
-# Formular identifizieren{#identifying-a-form}
+# Identifizieren eines Formulars{#identifying-a-form}
 
 ![](../../assets/common.svg)
 

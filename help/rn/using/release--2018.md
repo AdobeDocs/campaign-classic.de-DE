@@ -4,7 +4,7 @@ title: Campaign Classic-Versionen 2018
 description: Weiterführende Informationen zu Campaign Classic-Versionen 2018
 exl-id: f70fceba-4bbf-4f33-8746-e4405a1cdae6
 source-git-commit: 96f2ae67a5b47b80533e759713cf5b36baa8cf36
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '5452'
 ht-degree: 100%
 
@@ -81,7 +81,7 @@ _15. April 2019_
 
 >[!CAUTION]
 >
->Dieser Build wurde zurückgerufen. Bitte [aktualisieren Sie auf den neuesten Build](../../production/using/build-upgrade.md) oder wenden Sie sich an die [Adobe Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Dieser Build wurde zurückgerufen. Bitte [aktualisieren Sie auf den neuesten Build](../../production/using/build-upgrade.md) oder wenden Sie sich an die [Adobe Kundenunterstützung](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Neuheiten**
 
@@ -103,7 +103,7 @@ _15. April 2019_
 
 >[!CAUTION]
 >
->Dieser Build wurde zurückgerufen. Bitte [aktualisieren Sie auf den neuesten Build](../../production/using/build-upgrade.md) oder wenden Sie sich an die [Adobe Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Dieser Build wurde zurückgerufen. Bitte [aktualisieren Sie auf den neuesten Build](../../production/using/build-upgrade.md) oder wenden Sie sich an die [Adobe Kundenunterstützung](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Neue Funktionen?**
 
@@ -248,7 +248,7 @@ Durch diese Indexänderungen kann es vorkommen, dass die Durchführung des Postu
 
 >[!CAUTION]
 >
->Dieser Build wurde zurückgerufen. Bitte [aktualisieren Sie auf den neuesten Build](../../production/using/build-upgrade.md) oder wenden Sie sich an die [Adobe Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Dieser Build wurde zurückgerufen. Bitte [aktualisieren Sie auf den neuesten Build](../../production/using/build-upgrade.md) oder wenden Sie sich an die [Adobe Kundenunterstützung](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Neue Funktionen?**
 
@@ -304,7 +304,7 @@ _25. Juni 2018_
 
 >[!CAUTION]
 >
->Dieser Build wurde zurückgerufen. Bitte führen Sie eine [Aktualisierung auf den aktuellen Build](../../production/using/build-upgrade.md) durch oder kontaktieren Sie den [technischen Support](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Dieser Build wurde zurückgerufen. Bitte führen Sie eine [Aktualisierung auf den aktuellen Build](../../production/using/build-upgrade.md) durch oder kontaktieren Sie den [technischen Support](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Neue Funktionen?**
 
@@ -322,7 +322,7 @@ _25. Juni 2018_
   </tr> 
   <tr> 
    <td> Unterstützung von Windows Server 2016<br /> </td> 
-   <td> Adobe Campaign ist jetzt mit Windows Server 2016 kompatibel. Weiterführende Informationen dazu finden Sie in der <a href="https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html">Kompatibilitätsmatrix von Campaign Classic</a>.<br /> </td> 
+   <td> Adobe Campaign ist jetzt mit Windows Server 2016 kompatibel. Weiterführende Informationen dazu finden Sie in der <a href="https://helpx.adobe.com/campaign/kb/compatibility-matrix.html">Kompatibilitätsmatrix von Campaign Classic</a>.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -339,7 +339,7 @@ Für Bestandskunden ist das Verhalten dieser Funktion unverändert. Wir empfehle
 
 decryptPassword
 
-Die **decryptPassword**-Funktion wurde hinzugefügt. Hiermit können Sie ein in einem externen Konto gespeichertes Passwort entschlüsseln. Weitere Informationen finden Sie in der [JSAPI](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html)-Dokumentation.
+Die **decryptPassword**-Funktion wurde hinzugefügt. Hiermit können Sie ein in einem externen Konto gespeichertes Passwort entschlüsseln. Weitere Informationen finden Sie in der [JSAPI](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)-Dokumentation.
 
 Datei-APIs
 

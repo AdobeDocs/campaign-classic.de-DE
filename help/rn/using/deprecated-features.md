@@ -9,7 +9,7 @@ exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 0a7cdd53640bb3d96ff9bc2de4aa4c1849e32c83
 workflow-type: tm+mt
 source-wordcount: '1707'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -54,7 +54,7 @@ Kunden wird empfohlen, die Nutzung der Funktionen in ihrer aktuellen Implementie
   <td>Adobe Analytics Data Connector<br></td>
    <td><p>Ab Campaign Version 21.1.3 wird der Adobe Analytics Data Connector nicht mehr unterstützt.</p>
    <p>Wenn Sie diesen Connector nutzen, müssen Sie Ihre Implementierung entsprechend anpassen. <a href="../../platform/using/adobe-analytics-connector.md">Weitere Informationen</a></p>
-  <p><em>Target-Entfernungsdatum: 17. August 2022</em></p>
+  <p><em>Geplantes Entfernungsdatum: 17. August 2022</em></p>
   </td>
  </tr>
     <tr>
@@ -62,7 +62,7 @@ Kunden wird empfohlen, die Nutzung der Funktionen in ihrer aktuellen Implementie
    <td><p>Ab Campaign-Version 21.1 wird der Bericht zum technischen Zustellbarkeits-Monitoring nicht mehr unterstützt.</p>
    <p>Bei Bedarf können Sie diesen Bericht bis zum Datum der Entfernung der Funktion täglich per E-Mail erhalten. Erstellen Sie zum Anfordern ein entsprechendes <a href="https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">Support-Ticket</a> und geben Sie den Namen der Instanz und die E-Mail-Adresse(n) an, an die der Bericht gesendet werden soll.</p> 
    <p>Adobe empfiehlt Ihnen, sich mit dem Zustellbarkeits-Team in Verbindung zu setzen, um die besten Tools zur Überwachung der Zustellbarkeit Ihrer Instanz zu finden.</p>
-  <p><em>Geplantes Entfernungsdatum: Anfang 2022</em></p>
+  <p><em>Geplantes Entfernungsdatum: Frühjahr 2022</em></p>
   </td>
  </tr>
   <tr>

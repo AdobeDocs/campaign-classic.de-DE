@@ -9,7 +9,7 @@ exl-id: c7ae7240-0c12-4420-bbb3-4268c9ade3e7
 source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
 workflow-type: tm+mt
 source-wordcount: '1206'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -95,7 +95,7 @@ Die Befehle werden in derselben Reihenfolge angezeigt wie im XML-Dokument deklar
 
 Mithilfe eines Befehlstrennzeichens können Sie eine Trennleiste zwischen Befehlen anzeigen. Sie wird durch die Variable **&#39;-&#39;** -Wert, der in der Befehlsbeschriftung enthalten ist.
 
-Die optionale Präsenz der **`<soapcall>`** -Tag mit seinen Eingabeparametern definiert den Aufruf einer auszuführenden SOAP-Methode. Weitere Informationen zur SOAP-API finden Sie unter [Dokumentation zu Campaign JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/index.html).
+Die optionale Präsenz der **`<soapcall>`** -Tag mit seinen Eingabeparametern definiert den Aufruf einer auszuführenden SOAP-Methode. Weitere Informationen zur SOAP-API finden Sie unter [Dokumentation zu Campaign JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=de).
 
 Der Formularkontext kann bei der Initialisierung aus dem **`<enter>`** -Tag. Weitere Informationen zu diesem Tag finden Sie in der Dokumentation zu Formularen.
 

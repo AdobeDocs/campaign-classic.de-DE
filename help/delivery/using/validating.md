@@ -35,7 +35,7 @@ Mit der Absendebestätigung wird die Extraktion der Daten in die angegebene Date
 
 Nun können Sie den Assistenten schließen und die Logs im **[!UICONTROL Versand]**-Tab ansehen, auf den Sie über die Detailansicht des Versands zugreifen können.
 
-Sie können den Feedback-Modus der Versandlogs im **[!UICONTROL Analyse]**-Tab der Versandeigenschaften konfigurieren.
+Sie können den Abrufmodus der Versandlogs auf der Registerkarte **[!UICONTROL Analyse]** der Versandeigenschaften konfigurieren.
 
 Dabei stehen zwei Modi zur Verfügung:
 

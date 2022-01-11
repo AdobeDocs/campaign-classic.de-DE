@@ -197,7 +197,7 @@ Diese Konfiguration erfolgt im Campaign-Explorer:
    ![](assets/enum_securityzone.png)
 
 1. Klicken Sie für jede in der Konfigurationsdatei des Servers definierte Sicherheitszone auf die **[!UICONTROL Hinzufügen]** Schaltfläche.
-1. Im **[!UICONTROL Interner Name]** Geben Sie den Namen der im Feld **serverConf.xml** -Datei. Sie entspricht dem **@name** -Attribut `<securityzone>`  -Element. Geben Sie den Titel ein, der mit dem internen Namen verknüpft ist.  **Titel**-Feld.
+1. Im **[!UICONTROL Interner Name]** Geben Sie den Namen der im Feld **serverConf.xml** -Datei. Sie entspricht dem **@name** -Attribut `<securityzone>`  -Element. Geben Sie im Feld  **Titel**-Feld.
 
    ![](assets/enum_addsecurityvalue.png)
 

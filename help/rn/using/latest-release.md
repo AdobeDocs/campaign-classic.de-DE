@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Aktuelle Version
-description: Neueste Versionshinweise zu Campaign Classic v7
+description: Aktuelle Versionshinweise von Campaign Classic v7
 feature: Overview
 role: User
 level: Beginner
@@ -9,7 +9,7 @@ exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 630a62c5e5c9782c5c55fdebd651493a2d68fc54
 workflow-type: tm+mt
 source-wordcount: '1058'
-ht-degree: 16%
+ht-degree: 30%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 16%
 
 ![](../../assets/v7-only.svg)
 
-Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen aufgelistet, die mit der **neueste Campaign Classic v7-Version**. Jeder neue Build weist einen Status auf, der durch eine Farbe dargestellt wird. Erfahren Sie mehr über den Build-Status von Campaign Classic v7 in [diese Seite](rn-overview.md).
+Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der **aktuellen Version Campaign Classic v7** aufgelistet. Jeder neue Build weist einen Status auf, der durch eine bestimmte Farbe dargestellt wird. Sie erfahren mehr über den Build-Status von Campaign Classic v7 auf [dieser Seite](rn-overview.md).
 
 ## ![](assets/do-not-localize/green_2.png) Version 7.2.1 – Build 9346 {#release-7-2-1}
 
@@ -27,7 +27,7 @@ _10. Januar 2022_
 
 An den FDA-Konten wurden verschiedene Sicherheitsverbesserungen vorgenommen:
 
-* ODBC-Treiber werden jetzt direkt mit Adobe Campaign-Drittanbietern installiert. Für die Installation dieser Treiber sind keine manuellen Schritte mehr erforderlich.
+* ODBC-Treiber werden jetzt direkt bei Adobe Campaign-Drittanbietern installiert. Für die Installation dieser Treiber sind keine manuellen Schritte mehr erforderlich.
 * Bei der Konfiguration Ihres externen FDA-Kontos können Sie sich jetzt mit der Schlüsselpaar-Authentifizierung bei Ihrem Snowflake-Konto anmelden, um die Authentifizierungssicherheit zu verbessern. [Mehr dazu](../../installation/using/configure-fda-snowflake.md)
 * Beim Konfigurieren Ihres externen FDA-Kontos können Sie sich jetzt mit der systemzugewiesenen verwalteten Identität bei Ihrem Azure synapse Analytics-Konto anmelden. [Mehr dazu](../../installation/using/configure-fda-synapse.md#azure-external)
 * Alle Verweise auf die Bibliothek log4j wurden aus Campaign entfernt, um eine optimale Sicherheit zu gewährleisten.
@@ -36,10 +36,10 @@ An den FDA-Konten wurden verschiedene Sicherheitsverbesserungen vorgenommen:
 
 * Microsoft Dynamics CRM 365 Connector
 
-   Kritische Fehlerbehebungen wurden bezüglich der Web-API des Microsoft Dynamics Connector vorgenommen:
+   Es wurden kritische Fehlerbehebungen bei der Web-API des Microsoft Dynamics-Connectors vorgenommen:
 
-   * Fehlerkorrektur - Beim Import, der durch einen Workflow ausgelöst wird, werden jetzt die Nullwerte von Feldern vom Typ Zeichenfolge als Null statt als leere Werte gespeichert.
-   * Fehlerkorrektur - Beim Datenimport oder -export mithilfe von Web-API-Aufrufen tritt jetzt folgender Fehler mehr auf: &quot;Ungültiger URI: Das URI-Schema ist zu lang.&quot;
+   * Fehlerkorrektur – Beim Import, der durch einen Workflow ausgelöst wird, werden jetzt die Nullwerte von Feldern vom Typ Zeichenfolge als leere Werte statt als Null gespeichert.
+   * Fehlerkorrektur – Beim Datenimport oder -export mithilfe von Web-API-Aufrufen tritt jetzt nicht mehr der Fehler „Ungültiger URI: Das URI-Schema ist zu lang“ auf:
    * Es wurden verschiedene Probleme beim Importieren von Daten mit Suchfeldern aus Microsoft Dynamics 365 behoben.
 
 * Google BigQuery FDA-Connector
@@ -49,7 +49,7 @@ An den FDA-Konten wurden verschiedene Sicherheitsverbesserungen vorgenommen:
 
 **Sonstige Änderungen**
 
-* Nach der Einstellung wurden die Aktionsaktivitäten Microsoft CRM, Salesforce und Oracle CRM On Demand aus der Benutzeroberfläche entfernt. Um die Datensynchronisation zwischen Adobe Campaign und einem CRM-System zu konfigurieren, können Sie die Aktivität CRM-Connector verwenden. [Mehr dazu](../../workflow/using/crm-connector.md)
+* Nach der Einstellung wurden die Aktionsaktivitäten Microsoft CRM, Salesforce und Oracle CRM On Demand aus der Benutzeroberfläche entfernt. Um die Datensynchronisation zwischen Adobe Campaign und einem CRM-System zu konfigurieren, können Sie die Aktivität „CRM-Connector“ verwenden. [Mehr dazu](../../workflow/using/crm-connector.md)
 * Die **[!UICONTROL Verschlüsselte Kennung]** wurde dem Besucherschema (nms:visitor) hinzugefügt. Dieses Feld wird berechnet und ist für Web-Programme vorgesehen. Dies gilt, wenn der Kanal Line in der Mid-Sourcing-Instanz konfiguriert ist.
 * CRM-Datenquellen können jetzt mit der **Datenquelle ändern** Aktivität.
 * Eine neue Option wurde im **Umgang mit Fehlern** Eigenschaften von Workflow-Aktivitäten: Die **Abbruch bei Fehler** wird der Workflow automatisch angehalten. Danach können Sie es nicht mehr neu starten (NEO-29661). [Mehr dazu](../../workflow/using/advanced-parameters.md#in-case-of-errors)

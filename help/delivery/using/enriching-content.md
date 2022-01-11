@@ -43,7 +43,8 @@ Das **`<collection-recipient>`**-Element stellt das Eingabeelement des Dokuments
 
 Ein Assistent führt Sie durch die einzelnen Schritte zur Konfiguration Ihrer Abfrage.
 
-1. Geben Sie im ersten Schritt den Titel und das die gesuchten Daten enthaltene Schema an.
+1. Geben Sie im ersten Schritt den Titel und das Schema an, das die abzurufenden Daten enthält.
+
 
    ![](assets/d_ncs_content_query1.png)
 

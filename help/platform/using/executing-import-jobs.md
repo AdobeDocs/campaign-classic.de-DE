@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 05909ea6-2c93-42ff-9142-1dd14fa6fdec
 source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3201'
 ht-degree: 100%
 
@@ -33,7 +33,7 @@ Der Import-Assistent wird nach der Erstellung eines neuen Importvorgangs angezei
 
 ## Quelldatei {#source-file}
 
-Jede Zeile der Quelldatei entspricht einem Datensatz. Die einzelnen Daten innerhalb des Datensatzes werden durch Trennzeichen (Leerzeichen, Tabstopp oder andere Zeichen) voneinander abgegrenzt. Die Daten werden somit in Form von Spalten importiert und jede Spalte wird einem Datenbankfeld zugeordnet.
+Jede Zeile der Quelldatei entspricht einem Datensatz. Die einzelnen Daten innerhalb des Datensatzes werden durch Trennzeichen (Leerzeichen, Tabstopp oder andere Zeichen) voneinander abgegrenzt. Die Daten werden somit in Form von Spalten abgerufen und jede Spalte wird einem Datenbankfeld zugeordnet.
 
 ## 1. Schritt – Importvorlage auswählen {#step-1---choosing-the-import-template}
 

@@ -172,13 +172,13 @@ Daher sollten Sie bis zum Ende des Gültigkeitszeitraums warten, um den endgült
 
 <!--The fact that the Success percentage will go to 100% very quickly indicates that your instance has been upgraded to the Enhanced MTA.-->
 
-### Email Feedback Service (Betaversion) {#email-feedback-service}
+### E-Mail-Feedback-Service (Betaversion) {#email-feedback-service}
 
-Mit der EFS-Funktion (Email Feedback Service) wird der Status jeder E-Mail genau gemeldet, da Feedback direkt vom erweiterten MTA (Message Transfer Agent) erfasst wird.
+Mit der EFS-Funktion (E-Mail-Feedback-Service) wird der Status jeder E-Mail genau gemeldet, da Feedback direkt vom erweiterten MTA (Message Transfer Agent) erfasst wird.
 
 >[!IMPORTANT]
 >
->Der Email Feedback Service ist derzeit als Funktion der Betaversion verfügbar.
+>Der E-Mail-Feedback-Service ist derzeit als Funktion der Betaversion verfügbar.
 >
 >Wenn Sie an diesem Betaversion teilnehmen möchten, füllen Sie [dieses Formular](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4Rol2vQGupxItW9_BerXV6VUQTJPN1Q5WUI4OFNTWkYzQjg3WllUSDAxWi4u) aus, und wir werden uns bei Ihnen melden.
 
@@ -209,7 +209,7 @@ Wenn Softbounces vom Enhanced MTA zurückgemeldet werden, bleibt ihr Log-Status 
 
 Die folgenden Tabellen zeigen die Änderungen der KPIs und Versandlogstatus, die durch die EFS-Funktion eingeführt wurden.
 
-**Mit Email Feedback Service**
+**Mit E-Mail-Feedback-Service**
 
 | Schritt im Versandprozess | KPI-Zusammenfassung | Versandlogstatus |
 |--- |--- |--- |
@@ -219,7 +219,7 @@ Die folgenden Tabellen zeigen die Änderungen der KPIs und Versandlogstatus, die
 | Weitere Zustellversuche von Nachrichten, bei denen ein Softbounce aufgetreten ist, sind erfolgreich | **[!UICONTROL Erfolgsprozentsatz]** wird entsprechend erhöht | Gesendet |
 | Weitere Zustellversuche von Nachrichten, bei denen ein Softbounce aufgetreten ist, schlagen fehl | Keine Änderung des **[!UICONTROL Erfolgsprozentsatzes]** | Fehlgeschlagen |
 
-**Ohne Email Feedback Service**
+**Ohne E-Mail-Feedback-Service**
 
 | Schritt im Versandprozess | KPI-Zusammenfassung | Versandlogstatus |
 |--- |--- |--- |

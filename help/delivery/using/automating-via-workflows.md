@@ -188,7 +188,8 @@ Der zu veröffentlichende Inhalt wird in der eingehenden Transition angegeben.
 
 Die Aktivität endet mit der Erzeugung des Inhalts unter Verwendung des angegebenen Veröffentlichungsverzeichnisses.
 
-Die Aktivität **JavaScript-Code** speichert den kompletten Namen jeder erzeugten Datei.
+Die Aktivität **JavaScript-Code** ruft den kompletten Namen jeder erzeugten Datei ab.
+
 
 ![](assets/d_ncs_content_workflow9.png)
 

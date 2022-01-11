@@ -9,7 +9,7 @@ exl-id: 1f96c3df-0ef2-4f5f-9c36-988cbcc0769f
 source-git-commit: 5d9e2f7d7cea9e6d1243b0e3a790f3990772e603
 workflow-type: tm+mt
 source-wordcount: '766'
-ht-degree: 39%
+ht-degree: 40%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 39%
 
 ## Scripts
 
-Weiterführende Informationen finden Sie in der [JSAPI-Dokumentation für Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/index.html).
+Weiterführende Informationen finden Sie in der [JSAPI-Dokumentation für Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=de).
 
 Wenn Sie Scripts mit Workflows, Webanwendungen und JSSP verwenden, folgen Sie diesen Best Practices:
 

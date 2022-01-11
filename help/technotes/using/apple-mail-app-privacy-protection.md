@@ -16,11 +16,11 @@ ht-degree: 2%
 
 ## Was hat sich geändert?
 
-2021 führte Apple neue Datenschutzfunktionen für seine native Mail-App ein. Diese App enthält jetzt die Apple-Funktion zum Datenschutz bei E-Mails. Im Grunde können Absender keine Tracking-Pixel mehr verwenden, um Informationen über Empfänger zu erfassen, die sich für die Aktivierung der Apple-Datenschutzfunktion für E-Mails entschieden haben. [Mehr dazu](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=de){target=&quot;_blank&quot;}.
+2021 führte Apple neue Datenschutzfunktionen für seine native Mail-App ein. Diese App enthält jetzt die Apple-Funktion zum Datenschutz bei E-Mails. Im Grunde können Absender keine Tracking-Pixel mehr verwenden, um Informationen über Empfänger zu erfassen, die sich für die Aktivierung der Apple-Datenschutzfunktion für E-Mails entschieden haben. [Weitere Informationen](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=de){target=&quot;_blank&quot;}.
 
 ## Wie wirkt sich dies auf meine Kampagnen aus?
 
-Adobe Campaign bietet die Möglichkeit, Tracking-Pixel zur Verfolgung von E-Mail-Öffnungen zu verwenden. Sie können diese Funktion nicht nur für Targeting und Kampagnen, sondern auch für Metriken verwenden. Sie können beispielsweise Öffnungsraten für E-Mails verwenden, um die Effektivität der Kampagne und die Benutzerinteraktion zu messen. Kurz gesagt, die Segmentierung, das Targeting und die Metriken können sich auf Ihre Kampagnen auswirken. [Mehr dazu](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html#in-addition-to-measuring-opens%2C-what-else-is-impacted%3F){target=&quot;_blank&quot;}.
+Adobe Campaign bietet die Möglichkeit, Tracking-Pixel zur Verfolgung von E-Mail-Öffnungen zu verwenden. Sie können diese Funktion nicht nur für Targeting und Kampagnen, sondern auch für Metriken verwenden. Sie können beispielsweise Öffnungsraten für E-Mails verwenden, um die Effektivität der Kampagne und die Benutzerinteraktion zu messen. Kurz gesagt, die Segmentierung, das Targeting und die Metriken können sich auf Ihre Kampagnen auswirken. [Weitere Informationen](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html#in-addition-to-measuring-opens%2C-what-else-is-impacted%3F){target=&quot;_blank&quot;}.
 
 ## Welche Maßnahmen sollte ich ergreifen?
 

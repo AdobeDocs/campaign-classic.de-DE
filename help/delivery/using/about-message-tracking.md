@@ -61,7 +61,8 @@ Mit den Tracking-Funktionen von Campaign Classic können Sie Links in E-Mails ei
 
 **Trackinglogs**
 
-Der technische Tracking-Workflow verfolgt die Tracking-Daten, sobald der Versand ausgeführt und das Tracking aktiviert wurde. Diese Daten finden Sie auf der Registerkarte &quot;Tracking&quot; Ihres Versands. [Weitere Informationen](accessing-the-tracking-logs.md)
+Der technische Tracking-Workflow ruft die Tracking-Daten ab, sobald der Versand ausgeführt und das Tracking aktiviert wurde.
+Diese Daten finden Sie auf der Registerkarte &quot;Tracking&quot; Ihres Versands. [Weitere Informationen](accessing-the-tracking-logs.md)
 
 **Tracking testen**
 

@@ -68,7 +68,7 @@ Nach Erzeugung der Relation sind die Empfänger und das Aggregat Teil desselben 
 1. Gehen Sie in den **[!UICONTROL Teilmengen]**-Tab, kreuzen Sie die Option **[!UICONTROL Filterbedingung für die Eingangspopulation hinzufügen]** an und klicken Sie auf **[!UICONTROL Bearbeiten...]**.
 1. Setzen Sie im Ausdruckseditor das Erstellungsdatum der Empfänger mit dem vom Aggregat berechneten Datum gleich.
 
-   Datumsfelder werden in der Datenbank in der Regel auf die Millisekunde genau gespeichert. Die Datumsangaben müssen daher auf den ganzen Tag ausgedehnt werden, um nicht nur die Empfänger zu berücksichtigen, die in derselben Millisekunde erstellt wurden.
+   Datumsfelder werden in der Datenbank in der Regel auf die Millisekunde genau gespeichert. Die Datumsangaben müssen daher auf den ganzen Tag ausgedehnt werden, um nicht nur die Empfänger abzurufen, die in derselben Millisekunde erstellt wurden.
 
    Im Ausdruckseditor steht hierzu die Funktion **ToDate** zur Verfügung, die Datumsangaben mit Uhrzeit in einfache Daten konvertiert.
 

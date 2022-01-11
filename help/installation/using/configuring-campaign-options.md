@@ -577,7 +577,7 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">NmsCleanup_LastCleanup</span> <br /> </td> 
-   <td> Defines the last time the cleanup process was run.<br /> </td> 
+   <td> Definiert, wann der Bereinigungsprozess zuletzt ausgeführt wurde.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsCleanup_BroadLogPurgeDelay</span> <br /> </td> 
@@ -649,7 +649,7 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcOptions_TableSpaceWork</span> <br /> </td> 
-   <td> Tablespace-Name für die Arbeitstabellen-Daten in Adobe Campaign.<br />See <a href="../../installation/using/creating-and-configuring-the-database.md">Creating and configuring the database</a>.</td> 
+   <td> Tablespace-Name für die Arbeitstabellen-Daten in Adobe Campaign.<br />Siehe <a href="../../installation/using/creating-and-configuring-the-database.md">Datenbank erstellen und konfigurieren</a>.</td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcOptions_TableSpaceWorkIndex</span> <br /> </td> 
@@ -762,7 +762,7 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcCapabilities_Hive</span> <br /> </td> 
-   <td> Hive connector options.<br /> </td> 
+   <td> Ausblenden von Connector-Optionen.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

@@ -89,7 +89,7 @@ Die Aktivität **Versand** wird je nach Kontext zur Konfiguration oder zum Start
 
    * **[!UICONTROL Ausgehende Transition erzeugen]**
 
-      Erzeugt eine ausgehende Transition im Anschluss an die Aktivität. Sie haben die Wahl, die Zielgruppe der Versandaktion in der Transition zu übermitteln, oder nicht.
+      Erzeugt eine ausgehende Transition im Anschluss an die Aktivität. Sie haben die Wahl, die Zielgruppe der Versandaktion in der Transition abzurufen, oder nicht.
 
    * **[!UICONTROL Zielgruppe nicht übermitteln]**
 
