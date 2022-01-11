@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: sending-messages-on-mobiles
 exl-id: a2783a5e-6d38-41a1-b5c6-24ab489116f8
 source-git-commit: b174b8283d77a1b5eb535c0c46ba4a428bd66eef
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1801'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Folgende Voraussetzungen müssen gegeben sein, um Sendungen an Mobiltelefone ric
 
 >[!NOTE]
 >
-> Für SMS-Sendungen sollte die Typologie eine bestimmte SMS-Affinität verwenden, die in **one** dedizierter Anwendungsservercontainer. [Weitere Informationen](../../installation/using/configure-delivery-settings.md#managing-outbound-smtp-traffic-with-affinities)
+> Für SMS-Sendungen sollte die Typologie eine bestimmte SMS-Affinität verwenden, die in **einem** dedizierten Anwendungs-Server-Container erstellt wurde. [Weitere Informationen](../../installation/using/configure-delivery-settings.md#managing-outbound-smtp-traffic-with-affinities)
 
 ## Externes SMPP-Konto erstellen {#creating-an-smpp-external-account}
 
