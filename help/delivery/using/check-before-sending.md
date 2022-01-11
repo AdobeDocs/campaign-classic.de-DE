@@ -6,9 +6,9 @@ content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: 50d326b0-3c23-4dbf-9df6-d32b48e30f69
 source-git-commit: b174b8283d77a1b5eb535c0c46ba4a428bd66eef
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '892'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -96,7 +96,7 @@ Sie haben folgende Möglichkeiten:
 
 * Prüfen Sie nach dem Versand der E-Mail den Header, um festzustellen, von welcher IP-Adresse aus der Versand erfolgte. Ihr E-Mail-Administrator ist Ihnen beim Feststellen der Header-Informationen behilflich.
 
-* Stellen Sie bei SMS-Sendungen sicher, dass der SMS-Kanal über eine dedizierte Affinität verfügt, die auf Folgendes beschränkt ist: **one** Anwendungsserver-Container. [Weitere Informationen](../../installation/using/configure-delivery-settings.md#managing-outbound-smtp-traffic-with-affinities)
+* Stellen Sie bei SMS-Sendungen sicher, dass der SMS-Kanal über eine dedizierte Affinität verfügt, die auf **einen** Anwendungs-Server-Container beschränkt ist. [Weitere Informationen](../../installation/using/configure-delivery-settings.md#managing-outbound-smtp-traffic-with-affinities)
 
 >[!NOTE]
 >
