@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: -general-operation
 exl-id: 8ba20ccd-b03f-4c4f-87c1-a21e80d8e4be
 source-git-commit: 638b259462d3e01d744567e56d67a120359dc34a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1680'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -96,10 +96,10 @@ Die Darstellung und das Layout des Diagramms kann mithilfe der folgenden Element
 
    ![](assets/s_user_segmentation_toolbar.png)
 
-   Die Symbole zum Fortschritt und zur Anzeige der Protokolle werden in den folgenden Abschnitten beschrieben:
+   Die Symbole zur Anzeige des Fortschritts und der Protokolle werden in den folgenden Abschnitten beschrieben:
 
-   * [Fortschritt anzeigen](../../workflow/using/monitoring-workflow-execution.md#displaying-progress)
-   * [Protokoll anzeigen](../../workflow/using/monitoring-workflow-execution.md#displaying-logs)
+   * [Anzeige des Fortschritts](../../workflow/using/monitoring-workflow-execution.md#displaying-progress)
+   * [Anzeige von Protokollen](../../workflow/using/monitoring-workflow-execution.md#displaying-logs)
 
 * **Objektausrichtung**
 
