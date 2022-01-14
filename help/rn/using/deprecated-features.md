@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 0a7cdd53640bb3d96ff9bc2de4aa4c1849e32c83
+source-git-commit: 966da123b30278817ca465ac5dfe1f733c4d6c5c
 workflow-type: tm+mt
 source-wordcount: '1707'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -70,7 +70,7 @@ Kunden wird empfohlen, die Nutzung der Funktionen in ihrer aktuellen Implementie
   <td><p> Ab Campaign-Version 20.3 wurde die Authentifizierung für die Triggers-Integration, die ursprünglich auf der oAUTH-Authentifizierung basierte und für den Zugriff auf die Pipeline eingerichtet wurde, geändert und in Adobe I/O verschoben <p>
   <p>Wenn Sie die Triggers-Integration nutzen, müssen Sie Ihre Implementierung entsprechend anpassen. <a href="../../integrations/using/configuring-adobe-io.md">Weitere Informationen</a></p> 
   <p>Weitere Informationen zur Einstellung der OAuth-Authentifizierung finden Sie auf dieser <a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md">Seite</a>.</p> 
-  <p><em>Geplantes Entfernungsdatum: 20. Oktober 2021. Gehostete Umgebungen profitieren von einer Verlängerung bis zum 23. Februar 2022. </em></p>
+  <p><em>Geplantes Entfernungsdatum: 20. Oktober 2021. Gehostete Umgebungen profitieren von einer Erweiterung bis zum 25. Mai 2022. </em></p>
   </td>
   </tr>
  </tbody> 
