@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 source-git-commit: babb585438a6e467afad74391035059f7b12a6ec
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2542'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 99%
 ## Version 7.1 (21.1)
 
 >[!CAUTION]
->Verwenden Sie die **[!UICONTROL Hilfe > Versionsinformationen..]** Menü zum Überprüfen Ihres Adobe Campaign [Version und Build-Nummer](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version). Beachten Sie jedoch, dass für alle auf dieser Seite aufgelisteten Builds zwischen 9277 und 9343 als Versionsnummer 7.0 statt 7.1 angezeigt wird.
+>Verwenden Sie das Menü **[!UICONTROL Hilfe > Über…]**, um Ihre Adobe Campaign[-Version und -Build-Nummer](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version) herauszufinden. Beachten Sie jedoch, dass für alle auf dieser Seite aufgelisteten Builds zwischen 9277 und 9343 als Versionsnummer 7.0 statt 7.1 angezeigt wird.
 
 ### ![](assets/do-not-localize/limited_2.png) Version 21.1.4 – Build 9343 {#release-21-1-4-build-9343}
 
