@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: web-forms
 exl-id: 827b6575-7206-4dfc-b2c6-b95a6d5730b1
 source-git-commit: a5f6478d3c0780464974053e389923614abba582
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2461'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -383,7 +383,7 @@ Sie können den Link zu diesen Dateien in einer lokalen Variablen oder in einem 
 
 ## Ausgeblendete Konstante einfügen {#inserting-a-hidden-constant}
 
-Wenn der Benutzer eine Seite des Formulars validiert, können Sie einen bestimmten Wert auf ein Feld seines Profils oder auf eine Variable setzen.
+Wenn der Benutzer eine der Seiten des Formulars validiert, können Sie einen bestimmten Wert in einem Feld seines Profils oder in einer Variable setzen.
 
 Dieses Feld ist nicht sichtbar für den Benutzer, kann aber für die Anreicherung der Daten im Benutzerprofil verwendet werden.
 
