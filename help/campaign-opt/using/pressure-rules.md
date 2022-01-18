@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: campaign-optimization
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
 source-git-commit: 52aa7b268d5eb83354c3a4d8687ced95300538e2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3460'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -65,7 +65,7 @@ Um eine Typologieregel vom Typ **[!UICONTROL Druck]** zu erstellen und zu konfig
    >
    >Die geplanten Sendungen werden nur berücksichtigt, wenn die Option **[!UICONTROL Sendungen im Planungskalender einbeziehen]** ausgewählt wurde. Lesen Sie diesbezüglich auch den Abschnitt [Festlegen des Zeitraums](#setting-the-period).
    >
-   >Diese Option ist in Campaign v8 nicht verfügbar.
+   >Diese Funktion ist in Campaign v8 nicht verfügbar.
 
 1. Geben Sie den Berechnungsmodus der maximalen Nachrichtenanzahl an.
 
@@ -151,7 +151,7 @@ Der Gruppierungstyp ermöglicht die Erweiterung des Werts im Feld **[!UICONTROL 
 
 Eine Druckregel zum Beispiel, die eine Schwelle von 2 Nachrichten pro Woche und eine Gruppierung nach Kalendermonaten berechnet, verhindert den Versand von mehr als zwei Sendungen in der gleichen Woche UND im gleichen Kalendermonat für den gesamten betroffenen Zeitraum. Achtung: Wenn der Zeitraum zwei Monate übergreift, berücksichtigt die Schwellenberechnung alle Sendungen beider Kalendermonate. Dadurch könnten neue Sendungen während des zweiten Monats verhindert werden.
 
-Beachten Sie, dass bei der Schwellenberechnung standardmäßig nur die bereits durchgeführten Sendungen berücksichtigt werden. Überprüfen Sie in Campaign Classic v7 die **[!UICONTROL Berücksichtigung der Sendungen im Planungskalender]** , wenn Sie auch die für den betroffenen Zeitraum geplanten Sendungen berücksichtigen möchten. In diesem Fall wird der Bezugszeitraum verdoppelt, um sowohl künftige als auch frühere Sendungen einbeziehen zu können.
+Beachten Sie, dass bei der Schwellenwertberechnung standardmäßig nur die bereits durchgeführten Sendungen berücksichtigt werden. Überprüfen Sie in Campaign Classic v7 die Option **[!UICONTROL Sendungen im Planungskalender einbeziehen]**, wenn Sie auch die für den betroffenen Zeitraum geplanten Sendungen berücksichtigen möchten. Der ausgewählte Zeitraum wird in diesem Fall verdoppelt, damit sowohl künftige als auch vorhergegangene Sendungen einbezogen werden können.
 
 Um die berücksichtigten Sendungen auf einen Zeitraum von 15 Tagen zu begrenzen, können Sie entweder
 
@@ -162,7 +162,7 @@ oder
 1. **7T** in das Feld **[!UICONTROL Betroffener Zeitraum]** eingeben UND die Option **[!UICONTROL Sendungen im Planungskalender einbeziehen]** prüfen: In dieser Berechnung werden Sendungen berücksichtigt, die bis zu sieben Tage vor dem Verfügbarkeitsdatum und bis zu sieben Tage nach dem Verfügbarkeitsdatum, an dem die Regel angewendet wird, durchgeführt werden.
 
    >[!AVAILABILITY]
-   >Diese Methode ist in Campaign v8 nicht verfügbar.
+   >Diese Funktion ist in Campaign v8 nicht verfügbar.
 
 Das Anfangsdatum des Zeitraums hängt von der Konfiguration der Datenbank ab.
 
