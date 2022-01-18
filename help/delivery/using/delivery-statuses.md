@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
 source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '640'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ Weitere Informationen zu den verschiedenen fehlgeschlagenen Sendungen und deren 
   </tr> 
   <tr> 
    <td> Ignoriert<br /> </td> 
-   <td> Der Versand wurde wegen eines Adressfehlers nicht an den Empfänger gesendet. Sie war entweder in einer Blockierungsliste, unter Quarantäne gestellt, nicht angegeben oder ein Duplikat. <br /> </td> 
+   <td> Der Versand wurde aufgrund eines Fehlers in der Adresse des Empfängers nicht an diesen geschickt. Die Adresse war entweder auf einer Blockierungsliste, unter Quarantäne gestellt, nicht angegeben oder ein Duplikat. <br /> </td> 
   </tr> 
   <tr> 
    <td> Fehlgeschlagen<br /> </td> 
