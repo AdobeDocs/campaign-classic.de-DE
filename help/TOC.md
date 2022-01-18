@@ -7,9 +7,9 @@ user-guide-description: Mit Adobe Campaign können Sie umfangreiche Kundendaten 
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2556'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 99%
       + Häufig gestellte Fragen {#faq}
          + [Die häufigsten Fragen](platform/using/common-questions.md)
          + [Globale Konzepte](platform/using/faq-key-concepts.md)
-         + [Build-Aktualisierung](platform/using/faq-build-upgrade.md)
+         + [Build-Upgrade](platform/using/faq-build-upgrade.md)
          + [Datenschutz](platform/using/privacy-faq.md)
          + [Audiences](platform/using/faq-audiences.md)
          + [Erstellen von Nachrichten](platform/using/faq-designing.md)
@@ -515,7 +515,7 @@ ht-degree: 99%
       + [Glossar](interaction/using/glossary.md)
       + [Best Practices für Interaction](interaction/using/interaction-best-practices.md)
    + Allgemeine Funktionsweise {#general-operation}
-      + [Umsetzung](interaction/using/implementation-steps.md)
+      + [Implementierungsschritte](interaction/using/implementation-steps.md)
       + [Grundprinzipien](interaction/using/fundamental-principles.md)
    + Umgebungen verwalten {#managing-environments}
       + [Umgebungen – Übersicht](interaction/using/environments-overview.md)
@@ -553,7 +553,7 @@ ht-degree: 99%
       + [Zusätzliche Daten](interaction/using/additional-data.md)
       + [Beispiel einer Erweiterung](interaction/using/extension-example.md)
       + [Testumgebung erstellen](interaction/using/creating-a-test-environment.md)
-      + [Standardverhalten der Engine ändern](interaction/using/hooks.md)
+      + [Ändern des Standardverhaltens der Engine](interaction/using/hooks.md)
       + [Verteilte Architekturmodelle](interaction/using/distributed-architectures.md)
       + [Konfiguration des Datenpuffers](installation/using/interaction---data-buffer.md)
    + Anwendungsbeispiel {#case-study}
@@ -818,12 +818,12 @@ ht-degree: 99%
       + [Erfassen aller Besuche](configuration/using/collecting-all-visits.md)
       + [Anonym-Tracking](configuration/using/anonymous-tracking.md)
 + Migrationshandbuch {#migrating-to-a-new-version}
-   + [Migration zu Adobe Campaign v7](migration/using/about-migration.md)
+   + [Migrieren zu Adobe Campaign v7](migration/using/about-migration.md)
    + Migrationsverfahren {#migration-procedure}
       + [Voraussetzungen](migration/using/before-starting-migration.md)
       + [Über Migrationstests](migration/using/testing-the-migration.md)
       + [Anpassen der Konfiguration](migration/using/configuring-your-platform.md)
-   + Migration starten {#migrating-to-adobe-campaign-7}
+   + Starten der Migration {#migrating-to-adobe-campaign-7}
       + [Migrieren einer Microsoft Windows-Plattform](migration/using/migrating-in-windows-for-adobe-campaign-7.md)
       + [Migrieren einer Linux-Plattform](migration/using/migrating-in-linux-for-adobe-campaign-v7.md)
       + [Konfigurieren der Plattform](migration/using/general-configurations.md)
