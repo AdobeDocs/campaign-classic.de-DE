@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: connectors
 exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
 source-git-commit: 2cdcd45fc142eb9ae9e32c17a67beb4eaf2d2953
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1129'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -199,7 +199,7 @@ Campaign und Microsoft Dynamics sind nun miteinander verbunden. Sie können eine
 
 >[!NOTE]
 >
-> Fügen Sie der Zulassungsliste unbedingt zwei URLs hinzu: die Server-URL und `login.microsoftonline.com` in der Server-Konfiguration. Weitere Informationen zum Konfigurieren von URL-Berechtigungen finden Sie in diesem [page](../../installation/using/url-permissions.md).
+> Fügen Sie der Zulassungsliste unbedingt zwei URLs hinzu: die Server-URL und `login.microsoftonline.com` in der Server-Konfiguration. Weitere Informationen zur Konfiguration der URL-Berechtigungen finden Sie auf dieser [Seite](../../installation/using/url-permissions.md).
 
 ## Unterstützte Felddatentypen {#ms-dyn-supported-types}
 
