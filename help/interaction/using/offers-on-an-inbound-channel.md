@@ -1,19 +1,19 @@
 ---
 product: campaign
-title: Eingehender Kanal
-description: Eingehender Kanal
+title: Angebot auf einem Inbound-Kanal
+description: Angebot auf einem Inbound-Kanal
 audience: interaction
 content-type: reference
 topic-tags: case-study
 exl-id: 90afced3-465d-4370-8a33-51a7e4356135
 source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2154'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Eingehender Kanal{#offers-on-an-inbound-channel}
+# Angebot auf einem Inbound-Kanal{#offers-on-an-inbound-channel}
 
 ![](../../assets/v7-only.svg)
 
@@ -163,7 +163,7 @@ Es wird von folgendem Szenario ausgegangen:
 
    ![](assets/offer_inbound_fallback_example_051.png)
 
-1. Der Neobank-Kunde meldet sich mit seinen Anmeldedaten an.
+1. Da es sich bei dem Besucher um einen Neobank-Kunden handelt, meldet er sich mit seinen Kontodaten an.
 
    ![](assets/offer_inbound_fallback_example_052.png)
 
