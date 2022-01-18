@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '720'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -188,9 +188,9 @@ Unten finden Sie die mit Adobe Campaign kompatiblen CRM-Systeme (Customer Relati
 
 ## Federated Data Access (FDA){#FederatedDataAccessFDA}
 
-Die folgenden externen Datenbanken sind mit dem [Federated Data Access-Modul](../../installation/using/about-fda.md) von Adobe Campaign kompatibel: Die Kompatibilität hängt von Ihrer [Hosting-Modell](../../installation/using/hosting-models.md).
+Die externen Datenbanken, die mit dem [Federated Data Access-Modul](../../installation/using/about-fda.md) von Adobe Campaign kompatibel sind, werden nachfolgend gelistet. Die Kompatibilität hängt von Ihrem [Hosting-Modell](../../installation/using/hosting-models.md) ab.
 
-**Managed Services** (gehostet), **Hybrid** und **On-Premise** Umgebungen können Campaign mit den folgenden externen Datenbanksystemen verbinden:
+**Managed Services** (gehostet), **Hybrid**- und **On-Premise**-Umgebungen können Campaign mit den folgenden externen Datenbanksystemen verbinden:
 
 <table>
 <tbody>
@@ -211,7 +211,7 @@ Die folgenden externen Datenbanken sind mit dem [Federated Data Access-Modul](..
 <tr>
 <td>Amazon Redshift</td>
 <td><p> </p>
-<td>v7.0 19.1.4 Minimum</td>
+<td>Mindestens v7.0 19.1.4</td>
 </td>
 </tr>
 <tr>
@@ -225,12 +225,12 @@ Die folgenden externen Datenbanken sind mit dem [Federated Data Access-Modul](..
 <p>9.5.x</p>
 <p>9.4.x</p>
 </td>
-<td>mindestens v7.0 19.1.4</td>
+<td>Mindestens v7.0 19.1.4</td>
 </tr>
 </tbody>
 </table>
 
-Darüber hinaus **Hybrid** und **On-Premise** Umgebungen können Campaign auch mit folgenden Geräten verbinden:
+Darüber hinaus kann bei **Hybrid**- und **On-Premise**-Umgebungen auch eine Verbindung hergestellt werden von Campaign zu:
 
 <table>
 <tbody>
@@ -240,12 +240,12 @@ Darüber hinaus **Hybrid** und **On-Premise** Umgebungen können Campaign auch m
 <tr>
 <td>Vertica</td>
 <td> </td>
-<td>mindestens v7.0 19.1.4</td>
+<td>Mindestens v7.0 19.1.4</td>
 </tr>
 <tr>
 <td>Microsoft Azure Synapse Analytics</td>
 <td> </td>
-<td>mindestens v7.0 19.1.4</td>
+<td>Mindestens v7.0 19.1.4</td>
 </tr>
 <tr>
 <td>Oracle</td>
