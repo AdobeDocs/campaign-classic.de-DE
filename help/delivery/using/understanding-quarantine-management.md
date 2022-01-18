@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
 source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2703'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -37,13 +37,13 @@ Zusätzlich helfen Ihnen Quarantänen, die Kosten des SMS-Versands zu senken, in
 
 Eine **Quarantäne** bezieht sich immer nur auf die Adresse, nicht aber auf das Profil selbst. Sollten zwei Profile dieselbe E-Mail-Adresse verwenden, sind beide von der Quarantäne betroffen.
 
-Auch ein Profil, dessen E-Mail-Adresse unter Quarantäne gestellt wurde, könnte sein Profil aktualisieren und eine neue Adresse eingeben. Danach könnte es erneut durch Versandaktionen kontaktiert werden.
+Falls jedoch ein Profil mit einer E-Mail-Adresse in Quarantäne aktualisiert und dabei eine neue Adresse angegeben wird, kann das Profil erneut in Versandzielgruppen aufgenommen werden.
 
 Die Aufnahme in die **Blockierungsliste** führt dagegen dazu, dass das Profil vom Versand ausgeschlossen wird. Dies ist z. B. nach einer Abmeldung (Opt-out) der Fall.
 
 >[!NOTE]
 >
->Wenn ein Benutzer auf eine SMS-Nachricht mit einem Schlüsselwort wie &quot;STOPP&quot;antwortet, um sich vom SMS-Versand abzumelden, wird sein Profil nicht wie im E-Mail-Abmeldevorgang zur Blockierungsliste hinzugefügt. Die Telefonnummer des Profils wird unter Quarantäne gestellt, sodass der Benutzer weiterhin E-Mail-Nachrichten erhält.
+>Wenn ein Benutzer auf eine SMS-Nachricht mit einem Schlüsselwort wie &quot;STOPP&quot; antwortet, um sich vom SMS-Versand abzumelden, wird sein Profil nicht wie bei einem E-Mail-Abmeldevorgang auf die Blockierungsliste gesetzt. Die Telefonnummer des Profils wird unter Quarantäne gestellt, sodass der Benutzer weiterhin E-Mail-Nachrichten erhält.
 
 ## In Quarantäne befindliche Adressen identifizieren   {#identifying-quarantined-addresses}
 
