@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 20552812-5c58-4d48-9636-d5135197685d
 source-git-commit: a5f6478d3c0780464974053e389923614abba582
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '523'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ Lesen Sie das [Erste-Schritte-Handbuch zu Tabellen und Schemata](../../configura
 
 ## Wie wird eine benutzerdefinierte Empfängertabelle verwendet? {#how-to-use-a-custom-recipient-table-}
 
-Sie können eine nicht integrierte Empfängertabelle in Campaign erstellen und implementieren, um Ihre Nachrichten zu senden.
+Sie können eine benutzerdefinierte Empfängertabelle in Campaign erstellen und implementieren, um Nachrichten zu senden.
 
 [Hier erfahren Sie mehr darüber](../../configuration/using/about-custom-recipient-table.md)
 
