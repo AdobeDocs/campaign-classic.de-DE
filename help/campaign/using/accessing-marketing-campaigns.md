@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: about-marketing-campaigns
 exl-id: 1278bda1-f83c-4d38-8042-e6611755cf36
 source-git-commit: 89c007775d4df7c6d50951283efe764c3c424d91
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1289'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -162,32 +162,32 @@ Sie haben die Möglichkeit, über einen Webbrowser auf die Adobe-Campaign-Konsol
 
    ![](assets/s_ncs_user_interface_web_campaign_01.png)
 
-Neben der Navigation durch Kampagnen und deren Anzeige können Sie auch die folgenden Aufgaben ausführen:
+Neben dem Navigieren durch und Ansehen von Kampagnen können Sie auch die folgenden Aufgaben ausführen:
 
 * Überwachen von Aktivitäten in einer Instanz
-* Nehmen Sie an Validierungsprozessen teil, beispielsweise an der Validierung von Versandinhalten
-* Andere Schnellaktionen durchführen, z. B. einen Workflow anhalten
-* Zugriff auf alle Berichterstellungsfunktionen
+* Teilnahme an Validierungsprozessen, beispielsweise an der Validierung von Versandinhalten
+* Durchführen anderer Schnellaktionen, z. B. Pausieren eines Workflows
+* Zugriff auf alle Reporting-Funktionen
 * Teilnahme an Forumsdiskussionen
 
-Diese Tabelle fasst die Aktionen zusammen, die Sie für Kampagnen über einen Browser durchführen können:
+Diese Tabelle fasst die Aktionen zusammen, die Sie über einen Browser für Kampagnen durchführen können:
 
 | Seite  | Aktion |
 | --- | --- |
 | Liste der Kampagnen, Sendungen, Angebote usw. | Löschen von Listenelementen |
-| Campaign | Abbrechen einer Kampagne |
+| Kampagne | Abbrechen einer Kampagne |
 | Versand | Inhalt und Zielgruppe des Versands validieren<br/>Versandinhalt übermitteln<br/>Versand bestätigen<br/>Versand anhalten und stoppen |
-| Webanwendung | Webanwendung erstellen<br/>Bearbeiten des Anwendungsinhalts und der Eigenschaften<br/>Anwendungsinhalt als Vorlage speichern<br/>Anwendung veröffentlichen |
+| Web-Programm | Web-Programm erstellen<br/>Bearbeiten des Programminhalts und der Eigenschaften<br/>Programminhalt als Vorlage speichern<br/>Programm veröffentlichen |
 | Angebot | Inhalt und Eignung des Angebots validieren<br/>Online-Angebot deaktivieren |
 | Aufgabe | Aufgabe abschließen<br/>Aufgabe abbrechen |
 | Marketing-Ressourcen | Ressource validieren<br/>Ressource sperren und entsperren |
-| Kampagnenkit | Einreichen eines Packages zur Genehmigung<br/>Ein Paket genehmigen oder ablehnen<br/>Abbrechen von Kits |
+| Kampagnenkit | Kit zur Genehmigung einreichen<br/>Kit genehmigen oder ablehnen<br/>Kit abbrechen |
 | Kampagnenbestellung | Bestellung erstellen<br/>Bestellung annehmen oder ablehnen <!-- Je n'ai pas pu créer de campaign order pour vérifier cela. Peut-on accéder à ces fonctionnalités depuis l'accès web ? --> |
-| Lager | Lagerpositionen löschen |
+| Lager | Lagerposition löschen |
 | Angebotssimulation | Simulation starten und stoppen |
-| Targeting workflow | Workflow starten, anhalten und anhalten |
+| Zielgruppenbestimmungs-Workflow | Workflow starten, pausieren und stoppen |
 | Bericht | Aktuelle Daten im Berichtsverlauf speichern |
-| Forum | Diskussion hinzufügen<br/>Eine Nachricht in einer Diskussion beantworten<br/>Folgen Sie einer Diskussion und melden Sie sich ab. |
+| Forum | Diskussion hinzufügen<br/>Eine Nachricht in einer Diskussion beantworten<br/>Einer Diskussion folgen und das Abonnement beenden |
 
 ### Validierungen
 
