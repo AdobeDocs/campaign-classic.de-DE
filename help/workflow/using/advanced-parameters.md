@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: advanced-management
 exl-id: 6c90ac2f-0d2b-48b0-9245-3e5e3a3d027c
 source-git-commit: 7a1b8a1cd3ad434dac5c324056113d7ec15ddd8a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '541'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -71,10 +71,10 @@ In diesem Feld können Sie die Zeitzone der Aktivität auswählen. Weiterführen
 
 ## Fehler {#in-case-of-errors}
 
-In diesem Feld wird angegeben, wie mit Fehlern umgegangen werden soll. Zwei Optionen stehen zur Verfügung:
+In diesem Feld wird angegeben, wie mit Fehlern bei der Aktivität umgegangen werden soll. Zwei Optionen stehen zur Verfügung:
 
-* **[!UICONTROL Prozess aussetzen]**: Der Workflow wird automatisch angehalten. Der Status ändert sich in **[!UICONTROL Fehlgeschlagen]**. Sobald das Problem gelöst ist, starten Sie den Workflow neu.
-* **[!UICONTROL Ignorieren]** - die den Fehler verursachende Aufgabe sowie alle folgenden im selben Zweig werden nicht ausgeführt. Diese Konfiguration empfiehlt sich bei wiederkehrenden Aufgaben. Wenn der Workflow-Zweig eine Planungsaktivität enthält, löst diese automatisch zum nächsten geplanten Zeitpunkt die nächste Ausführung aus.
+* **[!UICONTROL Prozess aussetzen]**: Der Workflow wird automatisch angehalten. Der Status ändert sich in **[!UICONTROL Fehlgeschlagen]**. Nach Lösung des Problems kann der Workflow neu gestartet werden.
+* **[!UICONTROL Ignorieren]**: Diese Aufgabe sowie alle folgenden Aufgaben (in derselben Verzweigung) werden nicht ausgeführt. Diese Konfiguration empfiehlt sich bei wiederkehrenden Aufgaben. Wenn die Verzweigung im weiteren Verlauf eine Planungsaktivität enthält, wird diese automatisch zum nächsten geplanten Zeitpunkt ausgelöst.
 * **[!UICONTROL Abbruch bei Fehler]**: Der Workflow wird automatisch angehalten und kann nicht neu gestartet werden. Der Status ändert sich in **[!UICONTROL Fehlgeschlagen]**.
 
 ## Initialisierungsskript {#initialization-script}
