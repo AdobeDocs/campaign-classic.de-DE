@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 1a79da3b-2abc-4bfc-a0ee-8471c478638d
 source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '739'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Gehen Sie dazu folgendermaßen vor:
    >
    >Das Control Panel steht allen Administratoren zur Verfügung. Die Schritte, um einem Benutzer Administratorzugriff zu gewähren, finden Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=de#discover-control-panel).
    >
-   >Beachten Sie, dass Ihre Instanz auf AWS gehostet und mit dem [aktuelle GA-Version](../../rn/using/rn-overview.md). Erfahren Sie in [diesem Abschnitt](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version), wie Sie Ihre Version überprüfen. Um zu überprüfen, ob Ihre Instanz auf AWS gehostet wird, folgen Sie den Schritten auf [dieser Seite](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=de).
+   >Beachten Sie, dass Ihre Instanz auf AWS gehostet und mit dem [neuesten GA-Build](../../rn/using/rn-overview.md) aktualisiert werden muss. Erfahren Sie in [diesem Abschnitt](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version), wie Sie Ihre Version überprüfen. Um zu überprüfen, ob Ihre Instanz auf AWS gehostet wird, folgen Sie den Schritten auf [dieser Seite](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=de).
 
 1. Wenn Ihre Adobe Campaign-Installation von Adobe gehostet wird, wenden Sie sich an die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html), damit die nötigen öffentlichen Dienste auf dem Server installiert werden.
 1. Wenn Sie eine On-Premise-Installation von Adobe Campaign haben: Installieren Sie den gewünschten öffentlichen Dienst (z. B.: GPG, GZIP) sowie die nötigen Schlüssel (zur Verschlüsselung) auf dem Anwendungs-Server.
@@ -56,7 +56,7 @@ In diesem Anwendungsfall erstellen wir einen Workflow, um Daten, die in einem ex
 
 Die Schritte zum Ausführen dieses Anwendungsfalls lauten wie folgt:
 
-1. Verwenden Sie das Control Panel, um ein Schlüsselpaar (öffentlich/privat) zu generieren. Ausführliche Anweisungen finden Sie in der [Control Panel-Dokumentation](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data).
+1. Verwenden Sie das Control Panel, um ein Schlüsselpaar (öffentlich/privat) zu generieren. Ausführliche Anweisungen finden Sie in der [Control Panel-Dokumentation](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=de#decrypting-data).
 
    * Der öffentliche Schlüssel wird mit dem externen System geteilt, das ihn zum Verschlüsseln der an Campaign zu sendenden Daten verwendet.
    * Der private Schlüssel wird von Campaign Classic verwendet, um die eingehenden verschlüsselten Daten zu entschlüsseln.
