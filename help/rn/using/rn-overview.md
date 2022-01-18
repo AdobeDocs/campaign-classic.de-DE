@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 source-git-commit: 87067a0cca1a4a7f8ea1137ece6d513d58fcdb42
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '913'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -33,11 +33,11 @@ Jeder neue Build weist einen Status auf, der durch eine bestimmte Farbe dargeste
 
 ## Versionszyklus
 
-Adobe Campaign wird regelmäßig aktualisiert. Dieser regelmäßige Aktualisierungsrhythmus zielt darauf ab, Ihnen die neuesten und besten Funktionen bereitzustellen, Ihre Umgebung sicher zu halten und Ihre Produkterfahrung zu verbessern.
+Adobe Campaign wird regelmäßig aktualisiert. Dieser regelmäßige Aktualisierungsrhythmus zielt darauf ab, Ihnen die neuesten und besten Funktionen bereitzustellen, Ihre Umgebung sicher zu halten und Ihr Produkterlebnis zu verbessern.
 
-Deshalb halten wir es für wichtig, dass Sie **die neueste stabile Version ausführen** von Adobe Campaign. Dadurch wird auch Ihre Supporterfahrung verbessert, da das Erkennen, Reproduzieren und Beheben eines Problems in einem kürzlich erstellten Build normalerweise viel schneller erfolgt. Außerdem wurden viele potenzielle Probleme bereits in den letzten Builds behoben.
+Deshalb ist es außerordentlich wichtig, dass Sie **die aktuelleste stabile Version** von Adobe Campaign verwenden. Dadurch wird auch Ihre Supporterfahrung verbessert, da das Erkennen, Reproduzieren und Beheben eines Problems in einem kürzlich erstellten Build normalerweise viel schneller erfolgt. Außerdem wurden viele potenzielle Probleme bereits in den letzten Builds behoben.
 
-Als gehosteter Kunde profitieren Sie automatisch von der Aktualisierung mit der neuesten stabilen Version, ohne Maßnahmen ergreifen zu müssen. Weitere Informationen finden Sie unter [Abschnitt &quot;Jährliche Aktualisierung&quot;](#yearly-upgrade). Wenn Sie von einem alten Build migrieren, empfiehlt Adobe, zuerst auf diese Version zu aktualisieren.
+Als gehosteter Kunde profitieren Sie automatisch von Aktualisierungen mit der neuesten stabilen Version, ohne aktiv werden zu müssen. Weitere Informationen finden Sie im [Abschnitt zur jährlichen Aktualisierung](#yearly-upgrade). Wenn Sie von einem alten Build migrieren, empfiehlt Adobe, zunächst ein Upgrade auf diese Version durchzuführen.
 
 ## Empfehlungen{#recommendations}
 
@@ -53,19 +53,19 @@ Als gehosteter Kunde (Managed Services oder Hybrid) müssen Sie sich an das Team
 
 Als On-Premise-Benutzer können Sie das Upgrade durchführen. Dazu müssen Sie den [neuesten stabilen Build herunterladen](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) und alle Ihre Umgebungen aktualisieren. Erfahren Sie mehr über den [Upgrade-Prozess](../../production/using/build-upgrade.md) und lesen Sie die [häufig gestellte Fragen zu Build-Upgrades](../../platform/using/faq-build-upgrade.md).
 
-## Jährliches Upgrade {#yearly-upgrade}
+## Jährliche Aktualisierung {#yearly-upgrade}
 
 Adobe und Adobe Campaign sind bestrebt, Ihnen mit unseren Softwarelösungen das bestmögliche Erlebnis und den optimalen Nutzen zu bieten. Adobe stellt sicher, dass Sie Zugriff auf die aktuellen Versionen der in unseren Lösungen verwendeten Technologien haben.
 
 Adobe Campaign Classic verwendet spezielle Technologien, um Mehrwert zu erzielen. Diese Kombination von Technologien erfordert eine regelmäßige Aktualisierung Ihrer Campaign Classic-Instanzen, um sicherzustellen, dass Sie die aktuellsten Versionen verwenden und über maximale Sicherheit, Stabilität und Leistung verfügen.
 
-Als gehosteter Benutzer profitieren Sie automatisch vom Upgrade mit dem neuesten stabilen Build, ohne dass Maßnahmen ergriffen werden müssen. Weitere Informationen finden Sie in den FAQs unten.
+Als gehosteter Benutzer profitieren Sie automatisch von der Aktualisierung mit dem aktuellsten stabilen Build, ohne dass Sie aktiv werden müssen. Weitere Informationen finden Sie in den häufig gestellten Fragen weiter unten.
 
 ### Warum benötigt meine Organisation dieses Upgrade?
 
 Als gehosteter Kunde werden Sie von Adobe direkt benachrichtigt, wenn für Ihr Konto ein Upgrade einer oder mehrerer Technologien im Zusammenhang mit Campaign Classic sowie eine Aktualisierung des aktuellen Builds und/oder der Version erforderlich ist.
 
-Als On-Premise- oder Hybrid-Kunde, der auf einer älteren Version ausgeführt wird, empfiehlt Ihnen Adobe, zum neuesten stabilen Build zu wechseln.
+Wenn Sie als On-Premise- oder Hybrid-Kunde mit einer älteren Version arbeiten, empfiehlt Ihnen Adobe, zur aktuellsten stabilen Version zu wechseln.
 
 Dadurch wird sichergestellt, dass Ihr Konto vor Sicherheitslücken geschützt ist und die aktuelle Technologie verwendet wird. Außerdem wird Ihr Konto durch dieses Upgrade in Zukunft auf einfachere, regelmäßige Upgrades vorbereitet, die weniger manuelle Arbeit und Eingriffe erfordern.
 
@@ -141,6 +141,6 @@ Wir werden dafür sorgen, dass Sie über alle nötigen Projekt- und Kontaktinfor
 * [Control Panel-Versionen](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=de)
 * [Aktuelle Dokumentationsaktualisierungen](../../rn/using/documentation-updates.md)
 * [Eingestellte und entfernte Funktionen](../../rn/using/deprecated-features.md)
-* [Häufig gestellte Fragen zum Build-Upgrade](../../platform/using/faq-build-upgrade.md)
+* [Häufig gestellte Fragen zur Build-Aktualisierung](../../platform/using/faq-build-upgrade.md)
 
 Abonnieren Sie das [Prioritätsprodukt-Update von Adobe](https://www.adobe.com/de/subscription/priority-product-update.html), um über neue Versionen der Experience Cloud-Lösungen informiert zu werden.
