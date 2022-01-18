@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 2b282221-d048-4f6e-b52e-f8e584af2c0e
 source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1557'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 93%
 
 ## Kontext
 
-Wir sind bestrebt, unseren geschätzten Kunden die optimale Nutzung von Adobe Campaign Classic zu ermöglichen und den maximalen Wert zu bieten. Im Laufe der Jahre hat sich das Hosting unserer Kunden in der Cloud als überaus effizient und zuverlässig erwiesen.  Als Teil unserer [Jährliche Upgrade-Initiative](../../rn/using/rn-overview.md#yearly-upgrade), verschieben wir alle unsere Kunden zu Adobe Managed Services (Public Cloud on AWS), um bessere und zuverlässigere Dienste bereitzustellen.
+Wir sind bestrebt, unseren geschätzten Kunden die optimale Nutzung von Adobe Campaign Classic zu ermöglichen und den maximalen Wert zu bieten. Im Laufe der Jahre hat sich das Hosting unserer Kunden in der Cloud als überaus effizient und zuverlässig erwiesen.  Im Rahmen unserer [Initiative mit jährlichen Aktualisierungen](../../rn/using/rn-overview.md#yearly-upgrade) transferieren wir jetzt alle unsere Kunden zu Adobe Managed Services (Public Cloud auf AWS), um bessere und zuverlässigere Services bereitstellen zu können.
 
 Das Programm verfolgt drei Hauptziele:
 
@@ -31,7 +31,7 @@ Das Programm verfolgt drei Hauptziele:
 
 * **Build-Upgrade**: Vorgang, bei dem die Adobe Campaign Classic-Software auf die aktuellste, sichere Build-Nummer aktualisiert wird, während die Versionsnummer unverändert bleibt. Beispiel: von Campaign v7 20.2.3 Version 9182 auf Campaign v7 21.2.5 Version 9188. [Weitere Informationen](../../platform/using/faq-build-upgrade.md).
 * **MID/RT**: Auf Adobe Cloud gehostete Nachrichten-Ausführungs-Server (MID für Batch-Kampagnen und RT für einzelne Nachrichten in Echtzeit)
-* **Jährliches Upgrade-Programm** - Dieses Programm bietet mehr Sicherheit, bessere Unterstützung, bessere Wartung und Stabilität. Es erleichtert auch zukünftige Upgrades und bietet Zugriff auf neue Funktionen in Campaign.  [Weitere Informationen](../../rn/using/rn-overview.md#yearly-upgrade).
+* **Programm mit jährlichen Aktualisierungen**: Dieses Programm bietet mehr Sicherheit, bessere Unterstützung sowie verbesserte Wartung und Stabilität. Es erleichtert auch zukünftige Upgrades und bietet Zugriff auf neue Funktionen in Campaign.  [Weitere Informationen](../../rn/using/rn-overview.md#yearly-upgrade).
 * **AWS**: Amazon Web Services (Amazon Public Cloud)
 * **SFTP**: Secure File Transfer Protocol [Weitere Informationen](../../platform/using/sftp-server-usage.md).
 
@@ -59,7 +59,7 @@ Das Programm verfolgt drei Hauptziele:
 
 * Verbesserte E-Mail-Kapazität
 * Größere Datenbanken
-* Testversandte Kampagnenversion
+* Getestete Campaign-Version
 
 **Eine stabile und zuverlässige Lösung für Kunden von Adobe Campaign Classic**
 
@@ -67,10 +67,10 @@ Das Programm verfolgt drei Hauptziele:
 1. Höhere E-Mail-Sendekapazität. Die im neuen Rechenzentrum gehosteten Instanzen profitieren von einer speziellen Infrastruktur für die E-Mail-Zustellung. Dadurch kann die E-Mail-Zustellung beschleunigt oder die Anzahl von Versand-IPs verringert werden.
 1. Verbesserte Hardware-Skalierbarkeit. Hardware-Ressourcen können wesentlich schneller aufgestockt werden. Die Dauer dafür würde anstelle mehrerer Tage nur mehr eine Stunde betragen.
 
-**Jährliche Upgrades erleichtern zukünftige Upgrades**
+**Jährliche Aktualisierungen erleichtern zukünftige Aktualisierungen**
 
 1. Je länger Ihr Unternehmen mit der Aktualisierung wartet, desto komplexer wird Ihr Upgrade. Gleichzeitig steigt das Risiko von Sicherheitslücken (insbesondere beim Wechsel von einer älteren Version).
-1. Mit der jährlichen Campaign-Aktualisierung (als Gold Standard-Initiative) wird Ihre Instanz modernisiert und kann jetzt automatisiertere und regelmäßige Aktualisierungen mit weniger manuellen Eingriffen und weniger Ressourcen erhalten.
+1. Mit jährlichen Campaign-Aktualisierungen (ehemals als &quot;Gold Standard-Initiative&quot; bezeichnet) wird Ihre Instanz auf den aktuellen Stand gebracht und kann mit weniger manuellen Eingriffen und weniger Ressourcen stärker automatisiert und regelmäßig aktualisiert werden.
 
 ![](assets/GSMigrations.png)
 
@@ -78,13 +78,13 @@ Das Programm verfolgt drei Hauptziele:
 
 Die Migration von betroffenen Konten zu Adobe Managed Services (Public Cloud) erfolgt im Jahr 2020/2021. Adobe begleitet Ihr Unternehmen durch diesen Prozess.
 
-Zu Beginn dieses Vorgangs erhalten Kunden, für die eine Migration vorgesehen ist, eine E-Mail-Mitteilung von Adobe mit einem Zeitplan und einem Zugriff auf die Dokumentation. This will be your notification that your account is scheduled to be migrated.
+Zu Beginn dieses Vorgangs erhalten Kunden, für die eine Migration vorgesehen ist, eine E-Mail-Mitteilung von Adobe mit einem Zeitplan und einem Zugriff auf die Dokumentation. 
 
 Sie können die Migration durch das [Erstellen eines neuen Support-Tickets bei der Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign#support) einleiten. Geben Sie in der Betreffzeile &quot;Migrate to AWS&quot; (Migration zu AWS) ein.
 
 ### Ist diese Migration obligatorisch?
 
-Diese Migration in die Cloud ist **den ersten Schritt zum [jährliches Aktualisierungsprogramm](../../rn/using/rn-overview.md#yearly-upgrade)** Ihrer Adobe Campaign-Instanzen. Diese Migration ist obligatorisch, wenn Sie in einem anderen Rechenzentrum als der Public Cloud (AWS) gehostet werden.
+Diese Migration in die Cloud ist **der erste Schritt zum [Programm mit jährlichen Aktualisierungen](../../rn/using/rn-overview.md#yearly-upgrade)** Ihrer Adobe Campaign-Instanzen. Diese Migration ist obligatorisch, wenn Sie in einem anderen Rechenzentrum als der Public Cloud (AWS) gehostet werden.
 
 Die Adobe Managed Services-Cloud wird auf Amazon Web Services (AWS) gehostet, einer modernen, sicheren und optimierten Umgebung. [Weitere Informationen zu AWS](https://aws.amazon.com/application-hosting/benefits/).
 
@@ -105,7 +105,7 @@ Wir haben große Anstrengungen unternommen, um Technologien zu entwickeln, mithi
 
 * Eine gewisse Ausfallzeit der Plattform ist bei der Migration unvermeidlich. Das Ziel dieses Plans ist es, Ihnen zu helfen, die Ausfallzeit möglichst gering zu halten.
 * IP-Änderung für Datenintegrationen.
-* Ramp-up der Zustellbarkeit neuer Sende-IPs. Es ist jedoch geplant, diesen Vorgang für Ihr Unternehmen transparent zu gestalten, anders als beim während des Go-Live erfolgten ursprünglichen Ramp-up.
+* Ramp-up der Zustellbarkeit neuer Sende-IPs. Es ist jedoch geplant, diesen Vorgang für Ihr Unternehmen transparent zu gestalten, anders als beim der ursprünglichen Anfangsphase bei der Live-Schaltung.
 
 Weitere Informationen finden Sie in den häufig gestellten Fragen zur Campaign-Migration zur [Public Cloud](dc-migration-faq.md).
 
@@ -210,5 +210,5 @@ Bisher wurde die Domain, die zum Senden von E-Mails in Campaign verwendet wurde 
 ## Support und andere nützliche Links{#support}
 
 * [Häufig gestellte Fragen zur Migration zu Adobe Managed Services (Public Cloud)](dc-migration-faq.md)
-* [Jährliche Campaign-Upgrades](../../rn/using/rn-overview.md)
-* [Häufig gestellte Fragen zum Build-Upgrade](../../platform/using/faq-build-upgrade.md)
+* [Jährliche Campaign-Aktualisierungen](../../rn/using/rn-overview.md)
+* [Häufig gestellte Fragen zur Build-Aktualisierung](../../platform/using/faq-build-upgrade.md)
