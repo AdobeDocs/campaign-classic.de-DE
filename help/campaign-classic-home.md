@@ -4,9 +4,9 @@ product: campaign
 title: Produktdokumentation zu Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
 source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '259'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 98%
 
 ## Neue Funktionen
 
-* **[Januar Release ist live!](rn/using/latest-release.md)**<br/> In den Versionshinweisen finden Sie neue Funktionen, Verbesserungen und Fehlerbehebungen.
+* **[Die Version Januar ist live!](rn/using/latest-release.md)**<br/> In den Versionshinweisen finden Sie neue Funktionen, Verbesserungen und Fehlerbehebungen.
 
 * **[Häufig gestellte Fragen zum Datenschutz bei Apple Mail](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=de)** und **[Technote](technotes/using/apple-mail-app-privacy-protection.md)**<br/> Erste Anleitungen als Reaktion auf die Apple-Ankündigung zu iOS 15
 
@@ -49,7 +49,7 @@ ht-degree: 98%
   </td>
    <td>
     <a href="production/using/build-upgrade.md">
-      <img alt="Build-Aktualisierung" src="platform/using/assets/upgrade.png" />
+      <img alt="Build-Upgrade" src="platform/using/assets/upgrade.png" />
     </a>
     <div>
       <a href="production/using/build-upgrade.md">
@@ -83,6 +83,6 @@ ht-degree: 98%
 | [Versionshinweise](rn/using/latest-release.md) | [Liste von Fehlernachrichten](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=de) |
 | [Anleitungsvideos](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de) | [Campaign-Datenmodell](configuration/using/about-data-model.md) |
 | [Kompatibilitätsmatrix](rn/using/compatibility-matrix.md) | [Campaign-JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html?lang=de) |
-| [Erste Schritte mit Upgrades](rn/using/rn-overview.md) | [Tracking-Handbuch](https://helpx.adobe.com/de/campaign/kb/acc-tracking.html) |
+| [Erste Schritte mit Aktualisierungen](rn/using/rn-overview.md) | [Tracking-Handbuch](https://helpx.adobe.com/de/campaign/kb/acc-tracking.html) |
 | [Eingestellte Funktionen](rn/using/deprecated-features.md) | [Checkliste für Sicherheit und Datenschutz](https://helpx.adobe.com/de/campaign/kb/acc-security.html) |
 | [Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de) | [Richtlinien für das Monitoring](production/using/monitoring-guidelines.md) |
