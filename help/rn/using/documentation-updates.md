@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 87067a0cca1a4a7f8ea1137ece6d513d58fcdb42
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4816'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -29,19 +29,19 @@ Die entsprechenden Aktualisierungen finden Sie in den [Versionshinweisen zu Adob
 
 Aktualisierte Kompatibilitätsmatrix. [Mehr dazu](compatibility-matrix.md)
 
-Aktualisierter Abschnitt zu Versionshinweisen . [Mehr dazu](rn-overview.md)
+Der Abschnitt zu Versionshinweisen wurde aktualisiert. [Mehr dazu](rn-overview.md)
 
 Die Konfiguration des externen FDA-Kontos für Snowflake wurde aktualisiert. [Mehr dazu](../../installation/using/configure-fda-snowflake.md)
 
-Die Konfiguration des externen FDA-Kontos für Azure synapse Analytics wurde aktualisiert. [Mehr dazu](../../installation/using/configure-fda-synapse.md#azure-external)
+Die Konfiguration des externen FDA-Kontos für Azure Synapse Analytics wurde aktualisiert. [Mehr dazu](../../installation/using/configure-fda-synapse.md#azure-external)
 
-Google BigQuery FDA Connector aktualisiert. [Mehr dazu](../../installation/using/configure-fda-google-big-query.md)
+Der Google BigQuery FDA-Connector wurde aktualisiert. [Mehr dazu](../../installation/using/configure-fda-google-big-query.md)
 
-Nach der Einstellung wurden die Aktionsaktivitäten Microsoft CRM, Salesforce und Oracle CRM On Demand aus der Dokumentation entfernt.
+Nach der Einstellung wurden die Aktionsaktivitäten für Microsoft CRM, Salesforce und Oracle CRM On Demand aus der Dokumentation entfernt.
 
-Neue Option **Abbruch bei Fehler** wurde zum Abschnitt Umgang mit Workflow-Fehlern hinzugefügt. [Mehr dazu](../../workflow/using/advanced-parameters.md#in-case-of-errors)
+Die neue Option **Abbruch bei Fehler** wurde zum Abschnitt zum Umgang mit Fehlern im Workflow hinzugefügt. [Mehr dazu](../../workflow/using/advanced-parameters.md#in-case-of-errors)
 
-Die Option Batch-Aktualisierung wurde in der CRM-Connector-Aktivität hinzugefügt. [Mehr dazu](../../workflow/using/crm-connector.md)
+Die Option zur Stapel-Aktualisierung wurde in der CRM-Connector-Aktivität hinzugefügt. [Mehr dazu](../../workflow/using/crm-connector.md)
 
 ## 2021
 
@@ -112,7 +112,7 @@ Verbesserungen am LINE-Kanal – [Mehr dazu](../../delivery/using/line-channel.m
 
 Neuer Vertica FDA-Connector – [Mehr dazu](../../installation/using/configure-fda-vertica.md)
 
-Neuer Google BigQuery FDA-Connector - [Weitere Infos](../../installation/using/configure-fda-google-big-query.md)
+Neuer Google BigQuery FDA-Connector – [Weitere Informationen](../../installation/using/configure-fda-google-big-query.md)
 
 Die Beschreibung des technischen Workflows &quot;Abrechnung (Billing)&quot; enthält jetzt die Aufgaben, die ursprünglich vom Workflow &quot;Zählung aktiver Profile (Billing) (billingActiveContactCount)&quot; ausgeführt wurden. [Mehr dazu](../../workflow/using/about-technical-workflows.md)
 
@@ -252,7 +252,7 @@ Die Kompatibilitätsmatrix wurde aktualisiert. [Mehr dazu](../../rn/using/compat
 
 Die Seite mit veralteten und entfernten Funktionen wurde aktualisiert. [Mehr dazu](../../rn/using/deprecated-features.md)
 
-Versionshinweise und Kompatibilitätsmatrix für [!DNL Gold Standard] -Version ist jetzt auf einer eigenen Seite verfügbar.
+Versionshinweise und Kompatibilitätsmatrix für die Version [!DNL Gold Standard] sind jetzt auf einer speziellen Seite verfügbar.
 [Mehr dazu](../../rn/using/gold-standard.md)
 
 Die Triggers-Integration, die ursprünglich auf der oAUTH-Authentifizierung basierte und für den Zugriff auf die Pipeline eingerichtet wurde, wurde geändert und in Adobe I/O verschoben. [Mehr dazu](../../integrations/using/configuring-adobe-io.md)
@@ -450,7 +450,7 @@ Die Anleitungen für [Installation](../../installation/using/general-architectur
 
 Das Installationshandbuch wurde aktualisiert und mit der neuesten Version der Kompatibilitätsmatrix synchronisiert. Neue unterstützte Systeme wurden hinzugefügt. Vorkommen von veralteten und nicht mehr unterstützten Systemen wurden entfernt. [Mehr dazu](../../installation/using/general-architecture.md)
 
-Die Kompatibilitätsmatrix wurde mit den Hadoop 3.0- und Snowflake-FDA-Connectoren aktualisiert. [Mehr dazu](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+Die Kompatibilitätsmatrix wurde mit den Hadoop 3.0- und Snowflake-FDA-Connectoren aktualisiert. [Mehr dazu](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html)
 
 Eine Best Practice zur IP-Affinität wurde dem Installationshandbuch hinzugefügt. [Mehr dazu](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
@@ -468,7 +468,7 @@ Der neue Parameter für die URL-Berichtkonfiguration wird [hier](../../reporting
 
 Die **On-Premise- und Hosted-Leistungsmatrix von Campaign Classic** wurde mit den neuen FDA-Connectoren aktualisiert. [Mehr dazu](../../installation/using/capability-matrix.md).
 
-Die Seite mit der **Campaign Classic-Leistungsmatrix** wurde aktualisiert. [Mehr dazu](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+Die Seite mit der **Campaign Classic-Leistungsmatrix** wurde aktualisiert. [Mehr dazu](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html)
 
 Der neue Workflow zur **[!UICONTROL Bereinigung von Nmsaddress]** wird [hier](../../production/using/database-cleanup-workflow.md#cleanup-of-nmsaddress) erläutert.
 
@@ -520,7 +520,7 @@ Sicherer SMS-Versand (TLS) – [mehr dazu](https://helpx.adobe.com/de/campaign/k
 
 **Weitere Dokumentationsaktualisierungen zu dieser Version**
 
-Die Adobe Campaign Enhanced MTA-Dokumentation ist jetzt verfügbar. [Mehr dazu](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)
+Die Adobe Campaign Enhanced MTA-Dokumentation ist jetzt verfügbar. [Mehr dazu](https://helpx.adobe.com/de/campaign/kb/acc-campaign-enhanced-mta.html)
 
 Es wurde ein neuer Abschnitt hinzugefügt, in dem beschrieben wird, wie Sie Fehler in einem Workflow beheben können, der im Status „Schnellstmöglicher Start“ in einer Kampagne verbleibt.  [Mehr dazu](../../production/using/workflow-execution.md#start-as-soon-as-possible-in-campaigns)
 
@@ -582,7 +582,7 @@ Die Best Practices für die Leistungsverbesserung von Workflows und Sendungen wu
 
 **Neue Funktionen in Version 19.1**
 
-Control Panel – [mehr dazu](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)
+Control Panel – [mehr dazu](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de)
 
 Audit-Protokoll – [mehr dazu](../../production/using/audit-trail.md)
 
@@ -606,7 +606,7 @@ Die Beschreibung der Workflow-Option für die Vorab-Bearbeitung wurde aktualisie
 
 Die Technote zu den Marketing Cloud-Triggers wurde aktualisiert. [Mehr dazu](../../integrations/using/about-triggers.md)
 
-Die Liste der Fehlermeldungen wurde aktualisiert. [Mehr dazu](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html)
+Die Liste der Fehlermeldungen wurde aktualisiert. [Mehr dazu](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=de)
 
 Es wurden weitere Informationen zu SOAP-Authentifizierungsmethoden für Transaktionsnachrichten hinzugefügt. [Mehr dazu](../../message-center/using/event-description.md)
 
@@ -641,7 +641,7 @@ Es wurden Informationen zum Billing-Bericht hinzugefügt. [Mehr dazu](../../prod
 Die Dokumentation zur Integration freigegebener Audiences wurde aktualisiert.
 [Mehr dazu](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
 
-Die folgenden Technotes wurden aktualisiert: [SMS-Connector-Protokoll und Einstellungen](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html) und [Automatische Erzeugung von Sequenzen](https://helpx.adobe.com/de/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence).
+Die folgenden Technotes wurden aktualisiert: [SMS-Connector-Protokoll und Einstellungen](https://helpx.adobe.com/de/campaign/kb/sms-connector-protocol-and-settings.html) und [Automatische Erzeugung von Sequenzen](https://helpx.adobe.com/de/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence).
 
 Der Abschnitt „Technische Workflows“ wurde aktualisiert. [Mehr dazu](../../workflow/using/about-technical-workflows.md)
 
