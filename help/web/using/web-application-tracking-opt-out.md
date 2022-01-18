@@ -1,19 +1,19 @@
 ---
 product: campaign
-title: Opt-out vom Webanwendungs-Tracking
-description: Opt-out vom Webanwendungs-Tracking
+title: Opt-out vom Web-Anwendungs-Tracking
+description: Opt-out vom Web-Anwendungs-Tracking
 audience: web
 content-type: reference
 topic-tags: web-applications
 exl-id: 4bff6b55-3335-433e-a2ff-5d8c83e8f0d3
 source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '670'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# Opt-out vom Webanwendungs-Tracking{#web-application-tracking-opt-out}
+# Opt-out vom Web-Anwendungs-Tracking{#web-application-tracking-opt-out}
 
 ![](../../assets/common.svg)
 
@@ -86,7 +86,7 @@ Die verfügbaren clientseitigen APIs zur individuellen Anpassung des Banners sin
 
    bannerDomElt {DOMElement}: Das Wurzel-DOM-Element des Cookie-Banners, das entfernt werden muss
 
-* **NL.ClientWebTracking.hasUserPrefs()**: Gibt &quot;true&quot;zurück, wenn der Benutzer seine Voreinstellungen für das Webtracking ausgewählt hat.
+* **NL.ClientWebTracking.hasUserPrefs()**: Gibt &quot;true&quot; zurück, wenn der Besucher Einstellungen für das Webtracking ausgewählt hat.
 * **NL.ClientWebTracking.getUserPrefs()**: Gibt den Opt-out-Cookie-Wert zurück, der die Eigenschaften des Benutzers definiert.
 
 Zum Schreiben einer JSSP (JavaScript Server Page) stehen serverseitige APIs zur Verfügung:
