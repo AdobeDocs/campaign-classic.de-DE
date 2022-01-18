@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: c7688c2a-f0a7-4c51-a4cf-bf96fe8bf9b6
 source-git-commit: 71a5433db3ce2af5a25e5f861bd6f1dfb9aa8934
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2572'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -281,7 +281,7 @@ Rufen Sie dann die Datenschutz-API auf:
 
    * Sie können eine **queryDef** im Schema **nms:gdprRequest** verwenden, um den Status der Zugriffsanfrage zu überprüfen.
    * Mit einer **queryDef** im Schema **nms:gdprRequestData** können Sie das Ergebnis der Zugriffsanfrage abrufen.
-   * So können Sie die XML-Datei von herunterladen **&quot;$(serverUrl)&#39;/nms/gdpr.jssp?id=&#39;@id&quot;** müssen Sie angemeldet sein und von einer in der Zulassungsliste enthaltenen IP-Adresse darauf zugreifen. Erstellen Sie dazu eine Web-Anwendung für den Zugriff auf die von der JSSP generierte Datei.
+   * Um die XML-Datei von **&quot;$(serverUrl)&#39;/nms/gdpr.jssp?id=&#39;@id&quot;** herunterladen zu können, müssen Sie angemeldet sein und der Zugriff muss von einer in der Zulassungsliste enthaltenen IP-Adresse erfolgen. Erstellen Sie dazu ein Web-Programm für den Zugriff auf die von der JSSP generierte Datei.
 
 ### Die API über ein JS abrufen {#invoking-api-from-js}
 
