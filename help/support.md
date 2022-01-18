@@ -5,9 +5,9 @@ description: Benötigen Sie Unterstützung für Campaign Classic? Hier sind Sie 
 hidefromtoc: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
 source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '793'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ Wie wird ein Upgrade auf einen neuen Build durchgeführt? Wie lässt sich die Wo
         <li><a href="platform/using/faq-key-concepts.md">Schlüsselkonzepte</a></li>
         <li><a href="platform/using/faq-campaign-config.md">Campaign-Einstellungen</a></li>
         <li><a href="platform/using/faq-reporting.md">Reporting</a></li>
-        <li><a href="platform/using/faq-build-upgrade.md">Build-Aktualisierung</a></li>
+        <li><a href="platform/using/faq-build-upgrade.md">Build-Upgrade</a></li>
         <li><a href="platform/using/faq-messages.md">Testen, Versand und Tracking von Nachrichten</a></li>
         <li><a href="platform/using/faq-workflows.md">Workflows</a></li>
         <li><a href="platform/using/faq-developers.md">Entwickler</a></li>
@@ -99,7 +99,7 @@ Das Campaign Control Panel ermöglicht Produktadministratoren von Adobe Campaign
 >
 >Das Control Panel steht allen Administratoren zur Verfügung. Die Schritte, um einem Benutzer Administratorzugriff zu gewähren, finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=de#discover-control-panel).
 >
->Beachten Sie, dass Ihre Instanz auf AWS gehostet und mit der neuesten Version aktualisiert werden muss. [GA-Build](rn/using/rn-overview.md). Erfahren Sie in [diesem Abschnitt](platform/using/launching-adobe-campaign.md#getting-your-campaign-version), wie Sie Ihre Version überprüfen. Um zu überprüfen, ob Ihre Instanz auf AWS gehostet wird, folgen Sie den Schritten auf [dieser Seite](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=de).
+>Beachten Sie, dass Ihre Instanz auf AWS gehostet und mit dem neuesten [GA-Build](rn/using/rn-overview.md) aktualisiert werden muss. Erfahren Sie in [diesem Abschnitt](platform/using/launching-adobe-campaign.md#getting-your-campaign-version), wie Sie Ihre Version überprüfen. Um zu überprüfen, ob Ihre Instanz auf AWS gehostet wird, folgen Sie den Schritten auf [dieser Seite](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=de).
 
 ### Zugriff auf das Control Panel
 
@@ -107,7 +107,7 @@ Das Control Panel ist direkt über Adobe Experience Cloud verfügbar. Es steht n
 
 ### Control Panel – häufig gestellte Fragen
 
-[Klicken Sie hier](https://experienceleague.adobe.com/docs/control-panel/using/faq.html), um die häufig gestellten Fragen zum Campaign Control Panel aufzurufen.
+[Klicken Sie hier](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=de), um die häufig gestellten Fragen zum Campaign Control Panel aufzurufen.
 
 ### SFTP-Verwaltung
 
@@ -147,4 +147,4 @@ Weitere Informationen zum neuen Download-Center finden Sie [auf dieser Seite](ht
 
 Durch das Erstellen eines Tickets können Sie sich an das Adobe-Supportteam wenden, wenn Probleme mit Ihren Adobe-Produkten auftreten. Sie können in der Adobe Admin Console mit dem Adobe-Support chatten, um Ihre Probleme zu lösen.
 
-Um in diesem neuen System ein Ticket zu erstellen oder eine Chat-Sitzung zu starten, stellen Sie eine Verbindung zur [Adobe Admin Console](https://adminconsole.adobe.com/overview) her. Befolgen Sie das auf [dieser Seite](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) beschriebene Verfahren.
+Um in diesem neuen System ein Ticket zu erstellen oder eine Chat-Sitzung zu starten, stellen Sie eine Verbindung zur [Adobe Admin Console](https://adminconsole.adobe.com/overview) her. Befolgen Sie das auf [dieser Seite](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html) beschriebene Verfahren.
