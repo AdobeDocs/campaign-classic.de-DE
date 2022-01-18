@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: 222853c5-c754-4c0b-8ee4-a64b2f8677a4
 source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '804'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -75,7 +75,7 @@ Sie haben die Möglichkeit, eine Nachricht im persönlichen Forum eines Benutzer
 Es gibt folgende Möglichkeiten, auf ein Benutzerforum zuzugreifen:
 
 * Wählen Sie, wenn Sie über die entsprechenden Berechtigungen verfügen, im Knoten **[!UICONTROL Administration > Zugriffe > Benutzer]** das Dashboard des gewünschten Benutzers aus und klicken Sie auf die Schaltfläche **[!UICONTROL Forum]** oben rechts.
-* Wenn nicht, suchen Sie den Namen des Benutzers in Adobe Campaign (über eine von diesem Benutzer im Forum gepostete Nachricht, eine ihm zugewiesene Aufgabe) und klicken Sie auf diesen, um auf sein Dashboard zuzugreifen. Sie können Ihren Administrator auch bitten, eine Ansicht des Benutzerordners zu erstellen.
+* Wenn nicht, suchen Sie den Namen des Benutzers in Adobe Campaign (über eine von diesem Benutzer im Forum gepostete Nachricht, eine ihm zugewiesene Aufgabe) und klicken Sie darauf, um auf sein Dashboard zuzugreifen. Sie können Ihren Administrator auch bitten, eine Ansicht des Benutzerordners zu erstellen.
 
 ## Forum abonnieren {#subscribing-to-a-forum}
 
