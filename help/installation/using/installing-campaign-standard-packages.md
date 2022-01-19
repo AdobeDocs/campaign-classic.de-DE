@@ -6,10 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 6c23dadb5b6523e17e242de43a908ca86ed7cc23
+source-git-commit: 035297523c25061f28751c28df86d562f40f45ea
 workflow-type: tm+mt
-source-wordcount: '1223'
-ht-degree: 23%
+source-wordcount: '1289'
+ht-degree: 22%
 
 ---
 
@@ -241,7 +241,7 @@ In der folgenden Tabelle sind alle in Campaign integrierten Packages aufgeführt
 
 ### Message Center Package {#message-center-package}
 
-Sie müssen Versandkanäle (E-Mail, Mobile-Kanal, Mobile-App-Kanal usw.) installieren. vor der Installation von Transaktionsnachrichten (Message Center-Package). Wenn Sie ein E-Mail-spezifisches Message-Center-Projekt gestartet haben und danach einen neuen Kanal hinzufügen müssen, müssen Sie die folgenden Schritte ausführen:
+Sie müssen Versandkanäle (E-Mail, Mobile-Kanal, Mobile-App-Kanal, LINE usw.) installieren. vor der Installation von Transaktionsnachrichten (Message Center-Package). Wenn Sie ein E-Mail-spezifisches Message-Center-Projekt gestartet haben und danach einen neuen Kanal hinzufügen müssen, müssen Sie die folgenden Schritte ausführen:
 
 1. Installieren Sie den neuen Kanal, z. B. die **Mobile Kanal**&#x200B;über den Package-Import-Assistenten ( **[!UICONTROL Tools > Erweitert > Package importieren > Adobe Campaign-Package]**).
 1. Importieren Sie die Datei ( **[!UICONTROL Tools > Erweitert > Package importieren > Datei]**) und wählen Sie:
@@ -254,6 +254,19 @@ Sie müssen Versandkanäle (E-Mail, Mobile-Kanal, Mobile-App-Kanal usw.) install
 
    ![](assets/messagecenter_install_channel.png)
 
+
+### [!DNL LINE] Kanaleinrichtung{#line-package}
+
+So richten Sie die [!DNL LINE] -Kanal, müssen Sie zunächst die [!DNL LINE] Paket.
+
+Im Kontext einer Mid-Sourcing-Konfiguration müssen Sie:
+
+* Installieren Sie die [!DNL LINE] -Paket auf der Marketing- und der MID-Instanz
+
+* Richten Sie die [!DNL LINE] externes Konto auf der Mkt-Instanz, um durch Änderung des Versandmodus auf die Mid-Instanz zu verweisen. [Weitere Informationen](../../delivery/using/line-channel.md#configure-line-external)
+
+* Richten Sie die [!DNL LINE] Anmeldedaten im externen Konto auf der MID-Instanz.
+
 >[!CAUTION]
 >
->Die Message-Center-Versandvorlagen für LINE sind nicht verfügbar, wenn die Message-Center-Packages vor LINE installiert sind.
+>Die Message Center-Versandvorlagen für [!DNL LINE] Der Kanal ist nicht verfügbar, wenn die Message Center-Pakete zuvor installiert wurden. [!DNL LINE].
