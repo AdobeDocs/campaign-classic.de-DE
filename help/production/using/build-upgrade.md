@@ -409,7 +409,7 @@ So nehmen Sie eine komplexe Zusammenführung vor:
 
 **Verwandte Themen** 
 
-* [Häufig gestellte Fragen zum Build-Upgrade](../../platform/using/faq-build-upgrade.md)
+* [Häufig gestellte Fragen zur Build-Aktualisierung](../../platform/using/faq-build-upgrade.md)
 * [Versionshinweise zu Campaign Classic](../../rn/using/rn-overview.md)
 * [Hilfe- und Support-Optionen für Campaign Classic](../../support.md)
 * [Jährliches Upgrade-Programm für Campaign](../../rn/using/rn-overview.md)

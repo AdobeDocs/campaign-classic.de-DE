@@ -53,7 +53,7 @@ _15. April 2019_
 
 ### Version 18.10.3 – Build 8981{#release-18-10-3-build-8981}
 
-&#x200B;29. Januar 2019
+29. Januar 2019
 
 >[!CAUTION]
 >
@@ -77,7 +77,7 @@ _15. April 2019_
 
 ### Version 18.10.2 – Build 8978{#release-18-10-2-build-8978}
 
-&#x200B;6. Dezember 2018
+6. Dezember 2018
 
 >[!CAUTION]
 >
@@ -99,7 +99,7 @@ _15. April 2019_
 
 ### Version 18.10.1 – Build 8977{#release-18-10-build-8977}
 
-&#x200B;5. November 2018
+5. November 2018
 
 >[!CAUTION]
 >
@@ -244,7 +244,7 @@ Durch diese Indexänderungen kann es vorkommen, dass die Durchführung des Postu
 
 ### Version 18.6.2 – Build 8949{#release-18-6-3-build-8949}
 
-&#x200B;22. August 2018
+22. August 2018
 
 >[!CAUTION]
 >

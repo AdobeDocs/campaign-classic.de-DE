@@ -145,7 +145,7 @@ Geben Sie die Parameter an, mit denen eine Verbindung zum Konto zum Abrufen eing
 
 Nachdem die POP-Einstellungen angegeben wurden, klicken Sie auf **Test** um sicherzustellen, dass sie korrekt sind.
 
-### Nicht verarbeitete Bounce Messages {#unprocessed-bounce-mails}
+### Unverarbeitete Bounce-E-Mails {#unprocessed-bounce-mails}
 
 Absprünge werden automatisch von Adobe Campaign verarbeitet, wobei die im Abschnitt **Administration > Kampagnenverwaltung > Unzustellbarkeitsverwaltung > Versandlogqualifizierung** Knoten. Weitere Informationen hierzu finden Sie unter [Bounce-Message-Verwaltung](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management).
 

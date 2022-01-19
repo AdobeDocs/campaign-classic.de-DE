@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: web-forms
 exl-id: 827b6575-7206-4dfc-b2c6-b95a6d5730b1
 source-git-commit: a5f6478d3c0780464974053e389923614abba582
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2461'
 ht-degree: 100%
 
@@ -377,6 +377,7 @@ Sie können den Link zu diesen Dateien in einer lokalen Variablen oder in einem 
 >* Adobe Campaign kontrolliert nicht die Größe oder den Typ der hochgeladenen Ressource. Deshalb empfehlen wir dringend, Upload-Felder ausschließlich für sichere Intranet-Sites zu verwenden.
 >* Wenn mehrere Server mit der Instanz verbunden sind (Architektur mit Lastausgleich), müssen Sie darauf achten, dass Abfragen zum Webformular auf demselben Server erfolgen.
 >* Diese Implementierungen erfordern die Hilfe des Adobe Campaign-Teams.
+
 >
 
 

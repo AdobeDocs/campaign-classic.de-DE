@@ -7,7 +7,7 @@ role: User
 level: Beginner
 exl-id: 2b282221-d048-4f6e-b52e-f8e584af2c0e
 source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1557'
 ht-degree: 100%
 
@@ -78,7 +78,7 @@ Das Programm verfolgt drei Hauptziele:
 
 Die Migration von betroffenen Konten zu Adobe Managed Services (Public Cloud) erfolgt im Jahr 2020/2021. Adobe begleitet Ihr Unternehmen durch diesen Prozess.
 
-Zu Beginn dieses Vorgangs erhalten Kunden, für die eine Migration vorgesehen ist, eine E-Mail-Mitteilung von Adobe mit einem Zeitplan und einem Zugriff auf die Dokumentation. 
+Zu Beginn dieses Vorgangs erhalten Kunden, für die eine Migration vorgesehen ist, eine E-Mail-Mitteilung von Adobe mit einem Zeitplan und einem Zugriff auf die Dokumentation. This will be your notification that your account is scheduled to be migrated.
 
 Sie können die Migration durch das [Erstellen eines neuen Support-Tickets bei der Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign#support) einleiten. Geben Sie in der Betreffzeile &quot;Migrate to AWS&quot; (Migration zu AWS) ein.
 
