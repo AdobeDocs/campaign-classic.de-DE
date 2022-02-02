@@ -7,10 +7,10 @@ feature: Overview
 role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
-source-git-commit: 671e29425e8962ced833c10303b6edce7afda462
+source-git-commit: 9ee95f6d60500b18e242c6d648488615f47a4459
 workflow-type: tm+mt
-source-wordcount: '645'
-ht-degree: 100%
+source-wordcount: '746'
+ht-degree: 96%
 
 ---
 
@@ -141,10 +141,21 @@ Ihr Produktprofil ist jetzt konfiguriert. Anschließend müssen Sie das Adobe I/
 
    ![](assets/do-not-localize/triggers_12.png)
 
-1. Fügen Sie diese Anmeldedaten für das Dienstkonto mithilfe des folgenden Befehls in den nlserver ein:
+1. Verwenden Sie den in Schritt 6 generierten privaten Schlüssel.
+
+   Wenn Sie Trigger bereits mit diesen Anmeldedaten eingerichtet haben, muss der private Schlüssel für diese Connector-Konfiguration identisch sein.
+
+1. Codieren Sie den privaten Schlüssel mit dem folgenden Befehl: `base64 ./private.key > private.key.base64`. Dadurch wird der base64-Inhalt in einer neuen Datei `private.key.base64` gespeichert.
+
+   >[!NOTE]
+   >
+   >Manchmal werden beim Kopieren/Einfügen des privaten Schlüssels automatisch zusätzliche Zeilen hinzugefügt. Vergessen Sie nicht, diese zu entfernen, bevor Sie Ihren privaten Schlüssel codieren.
+
+1. Kopieren Sie die Inhalte aus der Datei `private.key.base64`.
+
+1. Melden Sie sich über SSH bei jedem Container an, in dem die Adobe Campaign-Instanz installiert ist, und fügen Sie die Projektanmeldeinformationen in Adobe Campaign hinzu, indem Sie den folgenden Befehl als `neolane`-Benutzer ausführen. Dadurch werden die Anmeldeinformationen für das **[!UICONTROL Technische Konto]** in die Konfigurationsdatei der Instanz eingefügt.
 
    ```
-   nlserver config -instance:<instanceName> -setimsjwtauth::<ImsOrgId>/<ClientId>/<TechnicalAccountId>/<ClientSecret>/<$(base64 -w0 /path/to/private.key)>
+   nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID/<Client_Secret>/<Base64_encoded_Private_Key>
    ```
-
 Sie können jetzt mit der Verwendung des Analytics-Connectors beginnen und Ihr Kundenverhalten verfolgen.
