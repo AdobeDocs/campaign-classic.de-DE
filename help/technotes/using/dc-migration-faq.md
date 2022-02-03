@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
-source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
+source-git-commit: 60fc0fd2a10f05abb77843ef0cb69e44f35a9648
 workflow-type: tm+mt
-source-wordcount: '2243'
-ht-degree: 100%
+source-wordcount: '2216'
+ht-degree: 97%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 ![](../../assets/v7-only.svg)
 
-Im Rahmen der [Gold Standard Initiative](../../rn/using/gold-standard.md) wird das alte Rechenzentrum von Adobe eingestellt. Campaign Classic-Instanzen müssen deshalb zur Public Cloud Amazon Web Services (AWS) übertragen werden. [Erfahren Sie mehr über diese Initiative](dc-migration.md).
+Adobe beendet das alte Rechenzentrum: Campaign Classic-Instanzen müssen in Public Cloud Amazon Web Services (AWS) übertragen werden. [Erfahren Sie mehr über diese Initiative](dc-migration.md).
 
 Nachstehend finden Sie eine Reihe allgemeiner Fragen zu diesem Projekt und zu den Auswirkungen auf Ihre Campaign-Umgebungen sowie weitere nützliche Informationsquellen.
 
@@ -47,7 +47,7 @@ Die globalen Auswirkungen auf die Datenbank und Infrastruktur sind nachstehend a
 
    Als ersten Schritt werden wir den Campaign Classic-Build bei der Migration beibehalten.
 
-   In einem weiteren Schritt werden wir mit dem Upgrade auf den neuesten Campaign Classic GA-Build fortfahren. Weitere Informationen hierzu finden Sie in den [häufig gestellten Fragen zum Build-Upgrade](../../platform/using/faq-build-upgrade.md) und in den [Versionshinweisen für Campaign Gold Standard](../../rn/using/gold-standard.md).
+   In einem weiteren Schritt werden wir mit dem Upgrade auf den neuesten Campaign Classic GA-Build fortfahren. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../rn/using/rn-overview.md).
 
 * **Was ist der Plan zur Behebung von Problemen nach der Migration?**
 
@@ -63,7 +63,7 @@ Die globalen Auswirkungen auf IPs, Blockierungsliste, Subdomains und URLs sind u
 
    Die IP-Adresse der Adobe-Server wird sich ändern. Deshalb müssen Kunden diese neuen IP-Adressen möglicherweise in ihrem System auf die Zulassungsliste setzen.
 
-   [Klicken Sie hier](#config), um weitere Informationen zu IPs auf der Zulassungsliste zu erhalten.
+   [Weitere Infos](#config) über IP auf der Zulassungsliste.
 
 * **Wie werden Ports gehandhabt, die für den SFTP-/FTP-Zugriff auf die Zulassungsliste gesetzt werden?**
 
@@ -73,7 +73,7 @@ Die globalen Auswirkungen auf IPs, Blockierungsliste, Subdomains und URLs sind u
 
    Die IP-Adresse der Adobe-Server wird sich ändern. Deshalb müssen Kunden diese neuen IP-Adressen möglicherweise in ihrem System auf die Zulassungsliste setzen.
 
-   [Klicken Sie hier](#config), um weitere Informationen zu IPs auf der Zulassungsliste zu erhalten.
+   [Weitere Infos](#config) über IP auf der Zulassungsliste.
 
 * **Wie wird die Zuordnung von Subdomains gehandhabt?**
 
@@ -155,7 +155,7 @@ Globale Auswirkungen auf die Konfiguration, die Konnektivität mit anderen Syste
 
    Die IP-Adresse der Adobe-Server wird sich ändern. Deshalb müssen Kunden diese neuen IP-Adressen möglicherweise in ihrem System auf die Zulassungsliste setzen.
 
-   [Klicken Sie hier](#config), um weitere Informationen zu IPs auf der Zulassungsliste zu erhalten.
+   [Weitere Infos](#config) über IP auf der Zulassungsliste.
 
 * **Stellt Adobe sicher, dass alle JavaScript-Speicherkonfigurationsparameter nach der Migration korrekt eingestellt sind?**
 
@@ -169,7 +169,7 @@ Globale Auswirkungen auf die Konfiguration, die Konnektivität mit anderen Syste
 
    Sie kann sich je nach dem Standort des neuen Servers ändern. Die Kunden können jedoch ihre aktuelle Zeitzone beibehalten.
 
-   [Klicken Sie hier](../../workflow/using/managing-time-zones.md), um weitere Informationen zur Zeitzonenverwaltung in Adobe Campaign Classic v7 zu erhalten.
+   [Weitere Infos](../../workflow/using/managing-time-zones.md) über die Zeitzonenverwaltung in Adobe Campaign Classic v7.
 
 
 ## Sicherheit und Berechtigungen
