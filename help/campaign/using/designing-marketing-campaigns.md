@@ -1,12 +1,10 @@
 ---
 product: campaign
 title: Entwerfen und Ausführen von Marketing-Kampagnen
-description: Sie können Marketing-Kampagnen entwerfen, optimieren, ausführen und analysieren.
-audience: campaign
-content-type: reference
-topic-tags: about-marketing-campaigns
+description: Sie können Marketing-Kampagnen entwerfen, optimieren, ausführen und analysieren
+feature: Campaigns
 exl-id: 4e0df18f-3623-4dfb-a2f8-ad293dbc4dd5
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: d3f5c56078ddac7597925191fd347bdcab61714d
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 100%

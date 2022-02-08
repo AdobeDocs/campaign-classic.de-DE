@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: 87067a0cca1a4a7f8ea1137ece6d513d58fcdb42
+source-git-commit: 9d8eae6b9c31d98d5e7e14b61f3abcf46311304d
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 100%
+source-wordcount: '917'
+ht-degree: 91%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 Jeder neue Build weist einen Status auf, der durch eine bestimmte Farbe dargestellt wird.
 
-![](assets/do-not-localize/green3.png) **Allgemeine Verfügbarkeit** (GA) – In der Produktion validiert und von Adobe empfohlen.
+![](assets/do-not-localize/green3.png) **Allgemeine Verfügbarkeit** (GA) - Neuester stabiler Build, in der Produktion validiert und von Adobe empfohlen.
 
 ![](assets/do-not-localize/limited3.png) **Eingeschränkte Verfügbarkeit** (LA) – Implementierung nur auf Anfrage.
 
@@ -41,7 +41,7 @@ Als gehosteter Kunde profitieren Sie automatisch von Aktualisierungen mit der ne
 
 ## Empfehlungen{#recommendations}
 
-Um eine stabile Konfiguration sicherzustellen, sollten Sie **denselben stabilen Build** auf allen Servern installieren, die dieselbe Client-Konfiguration besitzen.
+Um eine stabile Konfiguration sicherzustellen, wird empfohlen, **denselben Build** auf allen Servern, die in derselben Client-Konfiguration ausgeführt werden.
 
 Darüber hinaus muss die Client-Konsole denselben Build haben wie die Server-Instanz.
 
@@ -51,7 +51,7 @@ Um Ihre Implementierung auf dem neuesten Stand zu halten, lesen Sie bei jeder ne
 
 Als gehosteter Kunde (Managed Services oder Hybrid) müssen Sie sich an das Team der Kundenunterstützung wenden, um Ihre Umgebung aktualisieren zu lassen.
 
-Als On-Premise-Benutzer können Sie das Upgrade durchführen. Dazu müssen Sie den [neuesten stabilen Build herunterladen](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) und alle Ihre Umgebungen aktualisieren. Erfahren Sie mehr über den [Upgrade-Prozess](../../production/using/build-upgrade.md) und lesen Sie die [häufig gestellte Fragen zu Build-Upgrades](../../platform/using/faq-build-upgrade.md).
+Als On-Premise-Benutzer können Sie das Upgrade durchführen. Dazu müssen Sie [den neuesten stabilen Build herunterladen (GA)](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) und aktualisieren Sie alle Ihre Umgebungen. Erfahren Sie mehr über den [Upgrade-Prozess](../../production/using/build-upgrade.md) und lesen Sie die [häufig gestellte Fragen zu Build-Upgrades](../../platform/using/faq-build-upgrade.md).
 
 ## Jährliche Aktualisierung {#yearly-upgrade}
 
@@ -59,13 +59,13 @@ Adobe und Adobe Campaign sind bestrebt, Ihnen mit unseren Softwarelösungen das 
 
 Adobe Campaign Classic verwendet spezielle Technologien, um Mehrwert zu erzielen. Diese Kombination von Technologien erfordert eine regelmäßige Aktualisierung Ihrer Campaign Classic-Instanzen, um sicherzustellen, dass Sie die aktuellsten Versionen verwenden und über maximale Sicherheit, Stabilität und Leistung verfügen.
 
-Als gehosteter Benutzer profitieren Sie automatisch von der Aktualisierung mit dem aktuellsten stabilen Build, ohne dass Sie aktiv werden müssen. Weitere Informationen finden Sie in den häufig gestellten Fragen weiter unten.
+Als gehosteter -Benutzer profitieren Sie automatisch vom -Upgrade mit dem aktuellen GA--Build, ohne dass Sie aktiv werden müssen. Weitere Informationen finden Sie in den häufig gestellten Fragen weiter unten.
 
 ### Warum benötigt meine Organisation dieses Upgrade?
 
 Als gehosteter Kunde werden Sie von Adobe direkt benachrichtigt, wenn für Ihr Konto ein Upgrade einer oder mehrerer Technologien im Zusammenhang mit Campaign Classic sowie eine Aktualisierung des aktuellen Builds und/oder der Version erforderlich ist.
 
-Wenn Sie als On-Premise- oder Hybrid-Kunde mit einer älteren Version arbeiten, empfiehlt Ihnen Adobe, zur aktuellsten stabilen Version zu wechseln.
+Als On-Premise- oder Hybrid-Kunde, der auf einer älteren Version ausgeführt wird, empfiehlt Adobe, zum neuesten stabilen Build (GA) zu wechseln.
 
 Dadurch wird sichergestellt, dass Ihr Konto vor Sicherheitslücken geschützt ist und die aktuelle Technologie verwendet wird. Außerdem wird Ihr Konto durch dieses Upgrade in Zukunft auf einfachere, regelmäßige Upgrades vorbereitet, die weniger manuelle Arbeit und Eingriffe erfordern.
 
