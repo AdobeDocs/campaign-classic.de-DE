@@ -1,15 +1,13 @@
 ---
 product: campaign
 title: Über die Zustellbarkeit in Adobe Campaign Classic
-description: Erfahren Sie mehr über die Verwaltung der Zustellbarkeit in Adobe Campaign Classic.
-audience: delivery
-content-type: reference
-topic-tags: deliverability-management
+description: Erfahren Sie mehr über die Verwaltung der Zustellbarkeit in Adobe Campaign 
+feature: Deliverability
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
-source-wordcount: '774'
-ht-degree: 100%
+source-wordcount: '772'
+ht-degree: 97%
 
 ---
 
@@ -31,7 +29,7 @@ Weitere Tipps zur Optimierung der Zustellbarkeit beim Entwerfen von Inhalten fin
 
 >[!NOTE]
 >
->Weitere Informationen zum Bearbeiten von E-Mail-Inhalten finden Sie unter [E-Mail-Inhalte erstellen](defining-the-email-content.md) und [Personalisierte Inhalte erstellen](design-and-personalize.md).
+>Weitere Informationen zum Bearbeiten von E-Mail-Inhalten finden Sie unter [E-Mail-Inhalt definieren](defining-the-email-content.md) und [Personalisierte Inhalte erstellen](design-and-personalize.md).
 
 ## Absenderadresse {#sender-address}
 
@@ -39,9 +37,9 @@ Bestimmte Internet-Anbieter überprüfen die Gültigkeit der Absenderadresse (**
 
 Sie müssen sicherstellen, dass auf Instanzebene (Menü **[!UICONTROL Tools > Erweitert > Softwareverteilungs-Assistent...]**) oder in den am häufigsten verwendeten Szenarien eine richtige Adresse angegeben wird.
 
-Weiterführende Informationen dazu finden Sie unter [Sender definieren](defining-the-email-content.md).
+Weitere Informationen hierzu finden Sie auf [dieser Seite](defining-the-email-content.md).
 
-## Personalisierung             {#personalization}
+## Personalisierung {#personalization}
 
 Um das Nutzererlebnis zu verbessern und Empfänger dazu zu bewegen, Ihre E-Mail zu öffnen, ermöglicht Adobe Campaign Ihnen, Ihre Nachrichten zu personalisieren.
 

@@ -2,14 +2,12 @@
 product: campaign
 title: Funktionsweise der Quarantäneverwaltung
 description: Funktionsweise der Quarantäneverwaltung
-audience: delivery
-content-type: reference
-topic-tags: monitoring-deliveries
+feature: Monitoring
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
+source-git-commit: ff35cef03ba35c7a6693a65dc7d2482b916c5bdb
 workflow-type: tm+mt
-source-wordcount: '2703'
-ht-degree: 100%
+source-wordcount: '2702'
+ht-degree: 97%
 
 ---
 
@@ -17,17 +15,15 @@ ht-degree: 100%
 
 ![](../../assets/common.svg)
 
-## Über Quarantänen {#about-quarantines}
-
 Adobe Campaign erlaubt die Verwaltung von Quarantäne-Adressen. Empfänger, deren Adresse in Quarantäne ist, werden standardmäßig zum Zeitpunkt der Versandanalyse ausgeschlossen und fließen somit nicht in die Berechnung der Zielgruppe ein. Eine E-Mail-Adresse kann in Quarantäne kommen, weil z. B. das Postfach voll ist oder die Adresse nicht existiert. Nachfolgend werden die Regeln, die eine Quarantäne auslösen, näher erläutert.
 
 >[!NOTE]
 >
 >Dieser Abschnitt gilt für Online-Kanäle: E-Mail, SMS, Push-Benachrichtigungen.
 
-### Zustellbarkeit durch Quarantänen optimieren   {#optimizing-your-delivery-through-quarantines}
+## Optimieren Ihres Versands durch die Quarantäneverwaltung {#optimizing-your-delivery-through-quarantines}
 
-Die Profile, deren E-Mail-Adressen oder Telefonnummern unter Quarantäne sind, werden während der Nachrichtenvorbereitung automatisch ausgeschlossen (siehe [Für einen Versand in Quarantäne befindliche Adressen identifizieren](#identifying-quarantined-addresses-for-a-delivery)). Dies beschleunigt die Zustellung, da sich die Fehlerrate maßgeblich auf die Zustellgeschwindigkeit auswirkt.
+Profile, deren E-Mail-Adressen oder Telefonnummern unter Quarantäne stehen, werden bei der Nachrichtenvorbereitung automatisch ausgeschlossen (siehe [Für einen Versand in Quarantäne befindliche Adressen identifizieren](#identifying-quarantined-addresses-for-a-delivery)). Dies beschleunigt die Zustellung, da sich die Fehlerrate maßgeblich auf die Zustellgeschwindigkeit auswirkt.
 
 Teilweise werden E-Mails von Providern automatisch als Spam eingestuft, wenn die Anzahl ungültiger Adressen zu hoch ist. Durch die Quarantäne können Sie also vermeiden, von diesen Providern auf eine Blockierungsliste gesetzt zu werden.
 
@@ -45,15 +41,15 @@ Die Aufnahme in die **Blockierungsliste** führt dagegen dazu, dass das Profil v
 >
 >Wenn ein Benutzer auf eine SMS-Nachricht mit einem Schlüsselwort wie &quot;STOPP&quot; antwortet, um sich vom SMS-Versand abzumelden, wird sein Profil nicht wie bei einem E-Mail-Abmeldevorgang auf die Blockierungsliste gesetzt. Die Telefonnummer des Profils wird unter Quarantäne gestellt, sodass der Benutzer weiterhin E-Mail-Nachrichten erhält.
 
-## In Quarantäne befindliche Adressen identifizieren   {#identifying-quarantined-addresses}
+## In Quarantäne befindliche Adressen identifizieren {#identifying-quarantined-addresses}
 
 Die in Quarantäne befindlichen Adressen können für einen bestimmten Versand oder für die gesamte Plattform angezeigt werden.
 
-### Für einen Versand in Quarantäne befindliche Adressen identifizieren   {#identifying-quarantined-addresses-for-a-delivery}
+### Für einen Versand in Quarantäne befindliche Adressen identifizieren {#identifying-quarantined-addresses-for-a-delivery}
 
 Die für einen bestimmten Versand in Quarantäne befindlichen Adressen werden während der Versandvorbereitung in den Versandlogs des Versand-Dashboards angezeigt (siehe [Protokolle und Versandverlauf](delivery-dashboard.md#delivery-logs-and-history)).
 
-### Für die gesamte Plattform in Quarantäne befindliche Adressen identifizieren   {#identifying-quarantined-addresses-for-the-entire-platform}
+### Für die gesamte Plattform in Quarantäne befindliche Adressen identifizieren {#identifying-quarantined-addresses-for-the-entire-platform}
 
 Administratoren können die für die gesamte Plattform in Quarantäne befindlichen Adressen im Knoten **[!UICONTROL Administration > Kampagnenverwaltung > Unzustellbarkeitsverwaltung > Adressen unzustellbarer Sendungen]** anzeigen.
 
@@ -70,9 +66,9 @@ Folgende Informationen stehen für jede Adresse zur Verfügung:
 >Mit zunehmendem Alter der Datenbank steigt auch die Zahl der Adressen in Quarantäne. Wenn man beispielsweise davon ausgeht, dass eine E-Mail-Adresse eine Lebensdauer von etwa drei Jahren hat und dass die Empfängertabelle pro Jahr um 50 % wächst, lässt sich der Quarantänezuwachs wie folgt berechnen:
 >
 >Ende 1. Jahr: (1 x 0,33) / (1 + 0,5) = 22 %.
->Ende von Jahr 2: ((1,22*0,33)+0,33)/(1,5+0,75)=32,5 %.
+Ende von Jahr 2: ((1,22*0,33)+0,33)/(1,5+0,75)=32,5 %.
 
-### In Versandberichten in Quarantäne befindliche Adressen identifizieren {#identifying-quarantined-addresses-in-delivery-reports}
+### In Versandberichten unter Quarantäne gestellte Adressen identifizieren {#identifying-quarantined-addresses-in-delivery-reports}
 
 Folgende Berichte enthalten Informationen zu Adressen in Quarantäne:
 
@@ -92,7 +88,7 @@ Sie können für jeden Empfänger den Status seiner E-Mail-Adresse prüfen. Klic
 
 ![](assets/tech_quarant_recipients_filter.png)
 
-### Adresse aus der Quarantäne nehmen {#removing-a-quarantined-address}
+### Eine unter Quarantäne gestellte Adresse entfernen {#removing-a-quarantined-address}
 
 Bei Bedarf können Sie eine Adresse manuell aus der Quarantäneliste entfernen. Darüber hinaus werden Adressen, die bestimmten Bedingungen entsprechen, durch den **[!UICONTROL Datenbankbereinigungs]**-Workflow automatisch aus der Quarantäneliste gelöscht.
 
@@ -113,7 +109,7 @@ In den folgenden Fällen werden die Adressen automatisch aus der Quarantänelist
 Ihr Status ändert sich dann in **[!UICONTROL Gültig]**.
 
 >[!IMPORTANT]
->Empfänger mit einer Adresse in **[!UICONTROL Quarantäne]** oder dem Status **[!UICONTROL Auf Blockierungsliste]** werden niemals entfernt, auch wenn sie eine E-Mail erhalten.
+Empfänger mit einer Adresse in **[!UICONTROL Quarantäne]** oder dem Status **[!UICONTROL Auf Blockierungsliste]** werden niemals entfernt, auch wenn sie eine E-Mail erhalten.
 
 Sie können die Anzahl der Fehler und den Zeitraum zwischen zwei Fehlern ändern. Ändern Sie dazu die entsprechenden Einstellungen im Softwareverteilungs-Assistenten (**[!UICONTROL E-Mail-Kanal]** > **[!UICONTROL Erweiterte Parameter]**). Weiterführende Informationen zum Softwareverteilungs-Assistenten finden Sie in [diesem Abschnitt](../../installation/using/deploying-an-instance.md).
 
@@ -253,11 +249,12 @@ Der **[!UICONTROL mobileAppOptOutMgt]**-Workflow wird alle sechs Stunden zur Akt
 Während der Versandanalyse werden alle Geräte, die von der Zielgruppe ausgeschlossen werden, automatisch zur Tabelle **excludeLogAppSubRcp** hinzugefügt.
 
 >[!NOTE]
->Im Folgenden finden Sie die unterschiedlichen Fehlertypen für den Baidu-Connector:
->* Verbindungsproblem zu Beginn des Versands: Fehlertyp **[!UICONTROL Undefiniert]**, Grund **[!UICONTROL Unerreichbar]**, Neuversuch wird unternommen.
->* Verbindung während des Versands unterbrochen: Softbounce, Grund für den Fehler **[!UICONTROL Abgelehnt]**, Neuversuch wird unternommen.
->* Während des Versands von Baidu synchroner Fehler zurückgegeben: Hardbounce, Grund für den Fehler **[!UICONTROL Abgelehnt]**, es wird kein Neuversuch unternommen.
->Adobe Campaign kontaktiert den Baidu-Server alle zehn Minuten, um den Status der versendeten Nachrichten abzurufen, und aktualisiert die Versandlogs. Wenn eine Nachricht als gesendet gemeldet wird, ändert sich der Status der Nachricht in den Versandlogs in **[!UICONTROL Erhalten]**. Wenn Baidu einen Fehler meldet, wird der Status auf **[!UICONTROL Fehlgeschlagen]** gesetzt.
+Im Folgenden finden Sie die unterschiedlichen Fehlertypen für den Baidu-Connector:
+* Verbindungsproblem zu Beginn des Versands: Fehlertyp **[!UICONTROL Undefiniert]**, Grund **[!UICONTROL Unerreichbar]**, Neuversuch wird unternommen.
+* Verbindung während des Versands unterbrochen: Softbounce, Grund für den Fehler **[!UICONTROL Abgelehnt]**, Neuversuch wird unternommen.
+* Während des Versands von Baidu synchroner Fehler zurückgegeben: Hardbounce, Grund für den Fehler **[!UICONTROL Abgelehnt]**, es wird kein Neuversuch unternommen.
+>
+Adobe Campaign kontaktiert den Baidu-Server alle zehn Minuten, um den Status der versendeten Nachrichten abzurufen, und aktualisiert die Versandlogs. Wenn eine Nachricht als gesendet gemeldet wird, ändert sich der Status der Nachricht in den Versandlogs in **[!UICONTROL Erhalten]**. Wenn Baidu einen Fehler meldet, wird der Status auf **[!UICONTROL Fehlgeschlagen]** gesetzt.
 
 **Für Android V2**
 
@@ -475,7 +472,7 @@ Der Quarantänemechanismus für Android V2 verwendet denselben Prozess wie für 
 Der Quarantänemechanismus für SMS-Nachrichten ist global gesehen mit dem allgemeinen Prozess identisch. Näheres dazu erfahren Sie unter [Über Quarantänen](#about-quarantines). Die Besonderheiten bei SMS-Nachrichten sind unten aufgeführt.
 
 >[!NOTE]
->Die Tabelle **[!UICONTROL Versandlogqualifizierung]** gilt nicht für den Connector **Erweitertes allgemeines SMPP**.
+Die Tabelle **[!UICONTROL Versandlogqualifizierung]** gilt nicht für den Connector **Erweitertes allgemeines SMPP**.
 
 <table> 
  <tbody> 
@@ -533,8 +530,8 @@ Der SMPP-Connector ruft zum Filtern des Inhalts mithilfe regulärer Ausdrücke (
 Bevor ein neuer Fehlertyp qualifiziert wird, wird der Fehlergrund immer standardmäßig auf **Abgelehnt** gesetzt.
 
 >[!NOTE]
->Die Typen und Ursachen für Fehlschläge sind dieselben wie für E-Mails. Siehe [Typen und Ursachen für fehlgeschlagene Sendungen](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
->Erkundigen Sie sich bei Ihrem Provider nach einer Liste mit Status- und Fehlercodes, um in der Versandlogqualifizierungs-Tabelle die korrekten Fehlertypen und -ursachen anzugeben.
+Die Typen und Ursachen für Fehlschläge sind dieselben wie für E-Mails. Siehe [Typen und Ursachen für fehlgeschlagene Sendungen](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+Erkundigen Sie sich bei Ihrem Provider nach einer Liste mit Status- und Fehlercodes, um in der Versandlogqualifizierungs-Tabelle die korrekten Fehlertypen und -ursachen anzugeben.
 
 Beispiel einer generierten Nachricht:
 

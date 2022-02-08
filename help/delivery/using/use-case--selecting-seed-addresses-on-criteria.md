@@ -2,18 +2,16 @@
 product: campaign
 title: '"Anwendungsbeispiel: Auswahl von Testadressen nach Kriterien"'
 description: '"Anwendungsbeispiel: Auswahl von Testadressen nach Kriterien"'
-audience: delivery
-content-type: reference
-topic-tags: using-seed-addresses
+feature: Seed Address
 exl-id: 091648b8-bf2d-4595-8be3-287f1ac48edd
-source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 100%
+source-wordcount: '912'
+ht-degree: 92%
 
 ---
 
-# Anwendungsbeispiel: Auswahl von Testadressen nach Kriterien{#use-case-selecting-seed-addresses-on-criteria}
+# Anwendungsbeispiel: Auswählen von Testadressen nach Kriterien{#use-case-selecting-seed-addresses-on-criteria}
 
 ![](../../assets/common.svg)
 
@@ -32,19 +30,19 @@ Zur Verwendung von dynamischen Bedingungen benötigen Sie:
 
 ## Schritt 1: Erstellen eines Versands {#step-1---creating-a-delivery}
 
-Die Schritte zum Erstellen eines Versands finden Sie im Abschnitt [E-Mail-Versand erstellen](creating-an-email-delivery.md).
+Die Schritte zur Erstellung eines Versands werden im Abschnitt [E-Mail-Versand erstellen](creating-an-email-delivery.md) Abschnitt.
 
 Im vorliegenden Beispiel hat der Versandverantwortliche zunächst den Newsletter erstellt und die Zielgruppe ausgewählt.
 
 ![](assets/dlv_seeds_usecase_01.png)
 
-## Schritt 2: Gemeinsamen Wert definieren {#step-2---creating-a-common-value}
+## 2. Schritt - Gemeinsamen Wert erstellen {#step-2---creating-a-common-value}
 
 Das Hinzufügen des Felds &quot;Abteilung&quot;, das den gemeinsamen Wert aufnehmen soll, erfordert eine Erweiterung des **Datenschemas** der Testadressen und die Anpassung des entsprechenden Formulars.
 
 ### Datenschema erweitern {#extending-the-data-schema}
 
-Weiterführende Informationen zur Schemaerweiterung entnehmen Sie bitte dem [Konfigurationshandbuch](../../configuration/using/data-schemas.md).
+Weitere Informationen zu Schemaerweiterungen finden Sie unter [diesem Abschnitt](../../configuration/using/data-schemas.md).
 
 1. Klicken Sie im Knoten **[!UICONTROL Administration > Konfiguration > Datenschemata]** auf die Schaltfläche **[!UICONTROL Neu]**.
 1. Kreuzen Sie im Fenster **[!UICONTROL Datenschemaerstellung]** die Option **[!UICONTROL Schemaerweiterung]** an und klicken Sie auf **[!UICONTROL Weiter]**.
@@ -95,9 +93,9 @@ Weiterführende Informationen zur Schemaerweiterung entnehmen Sie bitte dem [Kon
 
    Nach Abschluss der Aktualisierung können Sie den Assistenten schließen.
 
-1. Melden Sie sich von Adobe Campaign ab und verbinden Sie sich erneut. Die im Testadressen-Schema vorgenommenen Änderungen sind nun effektiv. Damit sie im Eingabefenster der Testadressen sichtbar werden, ist eine Anpassung des **[!UICONTROL entsprechenden Formulars]** erforderlich. Weitere Informationen finden Sie im Abschnitt [Testadressen-Formular aktualisieren](#updating-the-input-form).
+1. Melden Sie sich von Adobe Campaign ab und verbinden Sie sich erneut. Die im Testadressen-Schema vorgenommenen Änderungen sind nun effektiv. Damit sie im Eingabefenster der Testadressen sichtbar werden, ist eine Anpassung des **[!UICONTROL entsprechenden Formulars]** erforderlich. Siehe Abschnitt [Aktualisieren des Formulars](#updating-the-input-form) Abschnitt.
 
-#### Datenschema ausgehend von einer verbundenen Tabelle erweitern {#extending-the-data-schema-from-a-linked-table}
+#### Datenschema aus einer verknüpften Tabelle erweitern {#extending-the-data-schema-from-a-linked-table}
 
 Das Testadressen-Schema kann auch Werte aus einer mit dem Empfängerschema verbundenen Tabelle übernehmen.
 
@@ -131,9 +129,9 @@ Auf diese Weise:
 
 Befolgen Sie im Anschluss die im Abschnitt beschriebene Vorgehensweise ab dem **Schritt 5** und passen Sie dann das Formular **[!UICONTROL Testadressen]** an.
 
-Weitere Informationen finden Sie im Abschnitt [Testadressen-Formular aktualisieren](#updating-the-input-form).
+Siehe Abschnitt [Aktualisieren des Formulars](#updating-the-input-form) Abschnitt.
 
-#### Testadressen-Formular aktualisieren {#updating-the-input-form}
+#### Aktualisieren des Formulars {#updating-the-input-form}
 
 1. Gehen Sie in den Knoten **[!UICONTROL Administration > Konfiguration > Formulare]** und öffnen Sie das Testadressen-Formular.
 
@@ -154,7 +152,7 @@ Weitere Informationen finden Sie im Abschnitt [Testadressen-Formular aktualisier
 
 1. Geben Sie nun in den Testadressen, die Sie für den Versand verwenden möchten, im Feld **[!UICONTROL Abteilung]** den Wert **Einkauf** ein.
 
-## Schritt 3: Bedingung bestimmen {#step-3---defining-the-condition}
+## 3. Schritt - Bedingung definieren {#step-3---defining-the-condition}
 
 Sie können nun die dynamische Bedingung für die Testadressen-Auswahl definieren. Gehen Sie wie folgt vor:
 

@@ -2,14 +2,12 @@
 product: campaign
 title: Druckregeln
 description: Druckregeln
-audience: campaign
-content-type: reference
-topic-tags: campaign-optimization
+feature: Fatigue Management, Typology Rules
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
-source-git-commit: 52aa7b268d5eb83354c3a4d8687ced95300538e2
+source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
 workflow-type: tm+mt
 source-wordcount: '3460'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -95,7 +93,7 @@ Um eine Typologieregel vom Typ **[!UICONTROL Druck]** zu erstellen und zu konfig
 
 1. Im Tab **[!UICONTROL Typologien]** können die Kampagnentypologien eingesehen werden, die diese Regel anwenden. Die Regel kann hier außerdem einer oder mehreren vorhandenen Typologien zugeordnet werden. Näheres hierzu finden Sie im Abschnitt [Anwenden von Typologien](about-campaign-typologies.md#applying-typologies).
 
-## Definieren von Schwellen und Grenzwerten {#defining-thresholds-and-weights}
+## Definieren von Schwellenwerten und Gewichtungen {#defining-thresholds-and-weights}
 
 ### Maximale Nachrichtenanzahl {#maximum-number-of-messages}
 
@@ -141,7 +139,7 @@ Im folgenden Beispiel wird die Gewichtung von Musik-Newslettern abhängig von de
 
 1. Wenden Sie diese Regel auf Nachrichten wie Newsletter, Sonderangebote etc. an. Die Gewichtung dieser Sendungen, also ihre Priorität, hängt folglich von den Neigungswerten des einzelnen Empfängers ab.
 
-## Festlegen des Zeitraums {#setting-the-period}
+## Zeitraum festlegen {#setting-the-period}
 
 Die Druckregeln werden für bewegliche Zeiträume von **n** Tagen bestimmt.
 
@@ -219,7 +217,7 @@ Bei Überschreiten der Schwelle werden die in der Kampagnentypologie bestimmten 
 
 ## Anwendungsbeispiele für Druckregeln {#use-cases-on-pressure-rules}
 
-### Anpassen der Schwelle auf Basis von Kriterien {#adapting-the-threshold-based-on-criterion}
+### Anpassen der Schwelle auf der Grundlage des Kriteriums {#adapting-the-threshold-based-on-criterion}
 
 Das vorliegende Beispiel zeigt eine Typologieregel, die die Anzahl der wöchentlich gesendeten Nachrichten an Kunden auf vier und an Interessenten auf zwei begrenzt.
 
@@ -289,7 +287,7 @@ Bei der Versandanalyse werden Empfänger ausgeschlossen, wenn sie bereits eine b
 
    ![](assets/campaign_opt_pressure_sample_1_10.png)
 
-### Versandgewichtung nach Empfängerverhalten berechnen {#calculating-the-delivery-weight-based-on-behavior}
+### Versandgewichtung nach Verhalten berechnen {#calculating-the-delivery-weight-based-on-behavior}
 
 Druckregeln können dem Empfängerverhalten entsprechend festgelegt werden. Auf diese Weise kann die Gewichtung eines Versands von einem Empfänger zum anderen nuanciert werden. Der Versand einer bestimmten Nachricht kann beispielsweise bevorzugt werden, je nachdem, ob ein Empfänger Ihre Seite besucht, in eine bestimmte Rubrik des letzten Newsletters geklickt oder einen Informationsdienst abonniert hat oder nicht. Auch Antworten auf Umfragen oder Onlinespiele etc. können berücksichtigt werden.
 
@@ -335,7 +333,7 @@ Konfigurieren Sie zuerst die Druckregel.
 
    ![](assets/campaign_opt_pressure_example_1.png)
 
-   In dieser Berechnung werden Sendungen berücksichtigt, die bis zu sieben Tage vor dem Verfügbarkeitsdatum und bis zu sieben Tage nach dem Verfügbarkeitsdatum durchgeführt werden. Lesen Sie diesbezüglich auch den Abschnitt [Festlegen des Zeitraums](#setting-the-period).
+   In dieser Berechnung werden Sendungen berücksichtigt, die bis zu sieben Tage vor dem Verfügbarkeitsdatum und bis zu sieben Tage nach dem Verfügbarkeitsdatum durchgeführt werden. Weitere Informationen hierzu finden Sie unter [Zeitraum festlegen](#setting-the-period).
 
    >[!AVAILABILITY]
    >Geplante Sendungen können in Campaign v8 nicht berücksichtigt werden.

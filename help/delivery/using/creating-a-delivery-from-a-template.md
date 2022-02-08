@@ -1,15 +1,12 @@
 ---
 product: campaign
 title: Versand aus einer Vorlage erstellen
-description: Versand aus einer Vorlage erstellen
-audience: delivery
-content-type: reference
-topic-tags: using-delivery-templates
+description: Erfahren Sie, wie Sie einen Versand aus einer Vorlage erstellen
 exl-id: 7ffb649e-801f-4568-a86b-7982448e3c30
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
-source-wordcount: '193'
-ht-degree: 100%
+source-wordcount: '196'
+ht-degree: 84%
 
 ---
 
@@ -17,7 +14,7 @@ ht-degree: 100%
 
 ![](../../assets/common.svg)
 
-## Vorlage einem Versand zuordnen {#linking-the-template-to-a-delivery}
+## Vorlage mit einem Versand verknüpfen {#linking-the-template-to-a-delivery}
 
 Um einen Versand auf Basis einer existierenden Vorlage zu erstellen, wählen Sie diese aus der Liste der Versandvorlagen aus.
 
@@ -45,4 +42,4 @@ Der Versand wird daraufhin in dem der Vorlage entsprechenden Ordner erstellt. De
 
 >[!NOTE]
 >
->Weitere Informationen zum Konfigurieren eines Versands finden Sie unter [E-Mail-Inhalt erstellen](defining-the-email-content.md).
+>Weitere Informationen zur Konfiguration eines Versands finden Sie unter [E-Mail-Inhalt definieren](defining-the-email-content.md).

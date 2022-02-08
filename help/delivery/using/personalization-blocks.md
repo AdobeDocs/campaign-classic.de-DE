@@ -1,15 +1,13 @@
 ---
 product: campaign
-title: Gestaltungsbausteine
-description: Gestaltungsbausteine
-audience: delivery
-content-type: reference
-topic-tags: personalizing-deliveries
+title: 'Gestaltungsbausteine '
+description: Erfahren Sie, wie Sie Gestaltungsbausteine verwenden
+feature: Personalization
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '965'
-ht-degree: 100%
+source-wordcount: '969'
+ht-degree: 92%
 
 ---
 
@@ -23,7 +21,7 @@ Gestaltungsbausteine sind dynamisch und personalisierbar und weisen ein spezifis
 
 Auf Gestaltungsbausteine kann im Adobe Campaign-Explorer über den Knoten **[!UICONTROL Ressourcen > Kampagnenverwaltung > Gestaltungsbausteine]** zugegriffen werden. Standardmäßig sind verschiedene Bausteine verfügbar (siehe [Native Gestaltungsbausteine](#out-of-the-box-personalization-blocks)).
 
-Sie haben die Möglichkeit, neue Bausteine zu definieren, mit denen Sie die Personalisierung Ihrer Sendungen verbessern können. Weitere Informationen finden Sie unter [Benutzerdefinierte Gestaltungsbausteine definieren](#defining-custom-personalization-blocks).
+Sie haben die Möglichkeit, neue Bausteine zu definieren, mit denen Sie die Personalisierung Ihrer Sendungen verbessern können. Weitere Informationen hierzu finden Sie unter [Benutzerdefinierte Gestaltungsbausteine definieren](#defining-custom-personalization-blocks).
 
 >[!NOTE]
 >
@@ -38,7 +36,7 @@ Gehen Sie folgendermaßen vor, um Gestaltungsbausteine in eine Nachricht einzuf�
 
    ![](assets/s_ncs_user_personalized_block01.png)
 
-1. Das Menü **[!UICONTROL Sonstige...]** bietet Ihnen Zugriff auf alle nativen und benutzerdefinierten Gestaltungsbausteine (siehe [Native Gestaltungsbausteine](#out-of-the-box-personalization-blocks) und [Benutzerdefinierte Gestaltungsbausteine definieren](#defining-custom-personalization-blocks)).
+1. Die **[!UICONTROL Sonstige...]** bietet Zugriff auf alle nativen und benutzerdefinierten Gestaltungsbausteine (siehe [Native Gestaltungsbausteine](#out-of-the-box-personalization-blocks) und [Benutzerdefinierte Gestaltungsbausteine definieren](#defining-custom-personalization-blocks)).
 
    ![](assets/s_ncs_user_personalized_block02.png)
 
@@ -70,7 +68,7 @@ Zu diesem Zweck müssen wir folgende Gestaltungsbausteine einfügen:
 
 >[!NOTE]
 >
->Weitere Informationen zur Erstellung der Mirror-Seite finden Sie unter [Mirror-Seite erstellen](sending-messages.md#generating-the-mirror-page).
+>Weitere Informationen zur Erstellung der Mirrorseite finden Sie unter [Mirrorseite erzeugen](sending-messages.md#generating-the-mirror-page).
 
 1. Erstellen Sie einen neuen Versand oder öffnen Sie einen existierenden E-Mail-Versand.
 1. Klicken Sie im Versand-Assistenten auf den **[!UICONTROL Betreff]**-Link, um einen Betreff einzugeben.
@@ -102,7 +100,7 @@ Standardmäßig ist eine Liste mit Gestaltungsbausteinen verfügbar, um den Inha
 
    >[!NOTE]
    >
-   >Weitere Informationen zur Erstellung der Mirror-Seite finden Sie unter [Mirror-Seite erstellen](sending-messages.md#generating-the-mirror-page).
+   >Weitere Informationen zur Erstellung der Mirrorseite finden Sie unter [Mirrorseite erzeugen](sending-messages.md#generating-the-mirror-page).
 
 * **[!UICONTROL Mirrorseiten-Link]**: Hiermit wird der Link zur Mirrorseite &quot;Wenn die Nachricht nicht richtig angezeigt wird, bitte hier klicken&quot; eingefügt.
 * **[!UICONTROL Abmelde-Link]**: Hiermit wird ein Link zur Abmeldung von allen Nachrichten (Blockierungsliste) eingefügt.

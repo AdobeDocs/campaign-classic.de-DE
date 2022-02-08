@@ -1,12 +1,9 @@
 ---
 product: campaign
 title: Auf die Versandliste zugreifen
-description: Erfahren Sie, wie Sie auf die Liste der erstellten Sendungen zugreifen können.
-audience: delivery
-content-type: reference
-topic-tags: monitoring-deliveries
+description: Erfahren Sie, wie Sie auf die Liste der erstellten Sendungen zugreifen können
 exl-id: 6c0fd76f-3d79-4b69-b911-f8d99dd18c4b
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
 source-wordcount: '174'
 ht-degree: 100%

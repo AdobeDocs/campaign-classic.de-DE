@@ -1,15 +1,12 @@
 ---
 product: campaign
-title: Validieren des Versands
-description: Validieren des Versands
-audience: delivery
-content-type: reference
-topic-tags: about-deliveries-and-channels
+title: Versand validieren
+description: Erfahren Sie, wie Sie einen Versand validieren
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '1804'
-ht-degree: 100%
+source-wordcount: '1807'
+ht-degree: 98%
 
 ---
 
@@ -23,7 +20,7 @@ Gehen Sie dazu wie folgt vor:
 
 1. **Versand analysieren** – hier erfolgt die Vorbereitung der zu sendenden Nachrichten. [Weitere Informationen](#analyzing-the-delivery).
 
-   Die während der Analyse angewendeten Regeln werden in [diesem Abschnitt](#validation-process-with-typologies) erläutert. Die verfügbaren Validierungsmodi werden unter [Validierungsmodus ändern](#changing-the-approval-mode) detailliert beschrieben.
+   Die während der Analyse angewendeten Regeln werden in [diesem Abschnitt](#validation-process-with-typologies) erläutert. Die verfügbaren Validierungsmodi werden im Abschnitt [Validierungsmodus ändern](#changing-the-approval-mode) Abschnitt.
 
 1. **Testsendungen durchführen** – hier erfolgt die Überprüfung von Inhalt, URLs, Personalisierung usw. Weitere Informationen finden Sie unter [Testversand auslösen](steps-validating-the-delivery.md#sending-a-proof) und [Spezifische Testversand-Zielgruppe definieren](steps-defining-the-target-population.md#defining-a-specific-proof-target).
 

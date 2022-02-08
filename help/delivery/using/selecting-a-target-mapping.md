@@ -1,19 +1,16 @@
 ---
 product: campaign
-title: Zielgruppen-Mapping wählen
-description: Zielgruppen-Mapping wählen
-audience: delivery
-content-type: reference
-topic-tags: using-delivery-templates
+title: Zielgruppen-Mapping auswählen
+description: Erfahren Sie, wie Sie Zielgruppen-Mapping
 exl-id: b5514fa3-1e65-45dc-8e40-d1ba3b673e7a
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
 source-wordcount: '181'
-ht-degree: 100%
+ht-degree: 89%
 
 ---
 
-# Zielgruppen-Mapping wählen{#selecting-a-target-mapping}
+# Zielgruppen-Mapping auswählen{#selecting-a-target-mapping}
 
 ![](../../assets/common.svg)
 
@@ -35,4 +32,4 @@ Folgende Mappings sind vorhanden:
 
 >[!NOTE]
 >
->Es besteht die Möglichkeit, weitere Zielgruppen-Mappings zu erstellen. Dies sollte jedoch erfahrenen Nutzern vorbehalten bleiben. Weiterführende Informationen finden Sie im [Konfigurationshandbuch](../../configuration/using/target-mapping.md).
+>Sie können auch neue Zielgruppen-Mappings erstellen. Dieser Vorgang ist erfahrenen Benutzern vorbehalten. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../configuration/using/target-mapping.md).

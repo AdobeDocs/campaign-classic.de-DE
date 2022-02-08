@@ -2,11 +2,9 @@
 product: campaign
 title: Erste Schritte mit dem Campaign Classic-Datenmodell
 description: Erfahren Sie, wie Sie das Datenmodell von Campaign erweitern, Schemata bearbeiten, APIs verwenden und vieles mehr.
-audience: configuration
-content-type: reference
-topic-tags: schema-reference
+feature: Data Model
 exl-id: 655b5928-b005-442f-b026-2f1b0c1abb99
-source-git-commit: fb4b4c42b907e86813ea570f912312fccf893bfe
+source-git-commit: 8fa50d17a9ff36ccc310860ac93771590cfd76fd
 workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 28%

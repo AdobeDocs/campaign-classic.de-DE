@@ -2,14 +2,12 @@
 product: campaign
 title: Monitoring der Zustellbarkeit in Adobe Campaign Classic
 description: Erfahren Sie mehr über Tools und Richtlinien zum Monitoring der Zustellbarkeit in Adobe Campaign Classic.
-audience: delivery
-content-type: reference
-topic-tags: deliverability-management
+feature: Deliverability
 exl-id: e4caa316-242f-46cd-a20b-a5eee5a0c456
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
-source-wordcount: '552'
-ht-degree: 100%
+source-wordcount: '554'
+ht-degree: 97%
 
 ---
 
@@ -19,12 +17,12 @@ ht-degree: 100%
 
 Im Folgenden finden Sie Details zu den verschiedenen Monitoring-Tools, die Adobe Campaign zur Verfügung stellt, sowie einige zusätzliche Richtlinien zur Nutzung der von Adobe Campaign angebotenen Funktionen zur Überwachung der Zustellbarkeit Ihrer Plattform.
 
-## Zustellbarkeits-Monitoring {#configuration}
+## Über die Zustellbarkeits-Überwachung {#about-deliverability-monitoring}
 
 Diese Funktion ist über ein dediziertes Package in Adobe Campaign verfügbar. Damit Sie es verwenden können, muss dieses Package installiert sein. Starten Sie nach Abschluss des Vorgangs den Server neu, damit das Package berücksichtigt wird.
 * Für gehostete und hybride Clients wird das **Zustellbarkeits-Monitoring** auf Ihrer Instanz vom technischen Support und von Beratern von Adobe konfiguriert. Weiterführende Informationen dazu erhalten Sie von Ihrem Adobe-Kundenbetreuer.
 
-* Bei On-Premise-Installationen müssen Sie das Package **[!UICONTROL Zustellbarkeits-Monitoring (Email Deliverability)]** über das Menü **[!UICONTROL Tools]** > **[!UICONTROL Erweitert]** > **[!UICONTROL Package-Import]** installieren. Weitere Informationen hierzu finden Sie unter [Installieren von nativen Campaign Classic-Packages](../../installation/using/installing-campaign-standard-packages.md).
+* Bei On-Premise-Installationen müssen Sie das Package **[!UICONTROL Zustellbarkeits-Monitoring (Email Deliverability)]** über das Menü **[!UICONTROL Tools]** > **[!UICONTROL Erweitert]** > **[!UICONTROL Package-Import]** installieren. Weitere Informationen hierzu finden Sie unter [Installieren von Campaign Classic-Standardpaketen](../../installation/using/installing-campaign-standard-packages.md).
 
 In Adobe Campaign Classic wird das **Zustellbarkeits-Monitoring** über den Workflow **[!UICONTROL Zustellbarkeit]** verwaltet. Er wird standardmäßig auf allen Instanzen installiert und ermöglicht es Ihnen, die Liste der Regeln für die Bounce-Message-Qualifizierung, die Liste der Domains und die Liste der MXs zu initialisieren. Sobald das Package **[!UICONTROL Zustellbarkeits-Monitoring (Email Deliverability)]** installiert ist, wird dieser Workflow nächtlich ausgeführt, um die Regelliste regelmäßig zu aktualisieren und die Zustellbarkeit der Plattform aktiv zu verwalten.
 
@@ -59,7 +57,3 @@ Im Folgenden finden Sie einige zusätzliche Richtlinien zum Zustellbarkeits-Moni
 * Wenn der Versand in [Schüben](steps-sending-the-delivery.md#sending-using-multiple-waves) erfolgt, stellen Sie sicher, dass genügend Zeit vorhanden ist, damit ein Schub fertiggestellt werden kann, bevor der nächste beginnt.
 * Prüfen Sie, ob die Anzahl der Fehler und der neuen [Quarantänen](understanding-quarantine-management.md) der anderer Sendungen entspricht.
 * Prüfen Sie in den [Versandlogs](delivery-dashboard.md#delivery-logs-and-history) sorgfältig die Art der hervorgehobenen Fehler (Blockierungsliste, DNS-Probleme, Anti-Spam-Regeln usw.).
-
-<!--### Delivery Reports - Broadcast Statistics {#broadcast-statistics}
-
-Each delivery will generate a broadcast statistics report when you open a delivery in the “Deliveries List”, which includes some reputation metrics that may impact your deliverability.-->

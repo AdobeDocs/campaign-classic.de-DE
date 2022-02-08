@@ -1,32 +1,29 @@
 ---
 product: campaign
-title: '"Anwendungsbeispiele: Verwenden des Content Managements"'
-description: '"Anwendungsbeispiel: Verwenden des Content-Managements"'
-audience: delivery
-content-type: reference
-topic-tags: content-management
+title: '"Anwendungsfall: Content Management erstellen"'
+description: '"Anwendungsfall: Content Management erstellen"'
 exl-id: b0d1cf0e-656e-4d24-9a31-16fef4cd40d0
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
 source-wordcount: '1216'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
-# Anwendungsbeispiel: Verwenden des Content-Managements{#use-case-creating-content-management}
+# Anwendungsfall: Content Management erstellen{#use-case-creating-content-management}
 
 ![](../../assets/common.svg)
 
 Folgende Schritte sind zur Verwendung des Content Managements zu durchlaufen:
 
-* [Schritt 1: Anforderungsanalyse bezüglich des zu erstellenden Inhalts](#step-1---analyzing-the-content-to-be-produced),
-* [Schritt 2: Erstellung des Datenschemas](#step-2---creating-the-data-schema),
-* [Schritt 3: Erstellung des Formulars](#step-3---creating-the-input-form),
-* [Schritt 4: Erstellung der Umwandlungsvorlagen](#step-4---creating-the-construction-template),
-* [Schritt 5: Erstellung der Veröffentlichungsvorlage](#step-5---creating-the-publication-template),
-* [Schritt 6: Erstellung des Inhalts](#step-6---creating-contents).
+* [1. Schritt - Anforderungsanalyse bezüglich des zu erstellenden Inhalts](#step-1---analyzing-the-content-to-be-produced),
+* [2. Schritt - Datenschema erstellen](#step-2---creating-the-data-schema),
+* [3. Schritt - Formular erstellen](#step-3---creating-the-input-form),
+* [4. Schritt - Erstellung der Umwandlungsvorlage](#step-4---creating-the-construction-template),
+* [5. Schritt - Erstellung der Veröffentlichungsvorlage](#step-5---creating-the-publication-template),
+* [6. Schritt - Inhalt erstellen](#step-6---creating-contents).
 
-## Schritt 1: Anforderungsanalyse bezüglich des zu erstellenden Inhalts {#step-1---analyzing-the-content-to-be-produced}
+## 1. Schritt - Anforderungsanalyse bezüglich des zu erstellenden Inhalts {#step-1---analyzing-the-content-to-be-produced}
 
 Zu Beginn sollten Sie genauestens analysieren, welche Art von Inhalten zu erstellen ist, d. h. die anzuzeigenden Elemente und ihre Typen bestimmen, mögliche diesbezügliche Einschränkungen identifizieren usw. Dabei gilt es, statische und variable Inhaltselemente zu unterscheiden.
 
@@ -52,7 +49,7 @@ Die verschiedenen Elemente dieses Newsletters werden entsprechend den in einem J
 
 Die Elemente selbst werden mithilfe eines dedizierten Schemas erstellt, welches für jeden Inhalt Titel, Namen, Typ, Größe und andere, für die Verwendung in Adobe Campaign erforderliche Informationen enthält.
 
-## Schritt 2: Erstellung des Datenschemas {#step-2---creating-the-data-schema}
+## 2. Schritt - Datenschema erstellen {#step-2---creating-the-data-schema}
 
 Ein Datenschema ist ein mit einem Inhalt verknüpftes XML-Dokument zur Beschreibung der Struktur der Inhaltsdaten.
 
@@ -162,7 +159,7 @@ Das Schema stellt sich also wie folgt dar:
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Erstellung des Datenschemas abzuschließen.
 
-## Schritt 3: Erstellung des Formulars {#step-3---creating-the-input-form}
+## 3. Schritt - Formular erstellen {#step-3---creating-the-input-form}
 
 Formulare ermöglichen die Bearbeitung einer Inhaltsinstanz über eine Eingabeschnittstelle der Adobe-Campaign-Clientkonsole.
 
@@ -214,7 +211,7 @@ Gehen Sie wie folgt vor, um ein Formular für das Content Management zu erstelle
 
 1. Klicken Sie nun auf **[!UICONTROL Speichern]**, um die Formularerstellung abzuschließen.
 
-## Schritt 4: Erstellung der Umwandlungsvorlagen {#step-4---creating-the-construction-template}
+## 4. Schritt - Erstellung der Umwandlungsvorlage {#step-4---creating-the-construction-template}
 
 Die XSLT-Programmiersprache ermöglicht die Umwandlung eines XML-Dokuments in ein Ausgabedokument eines anderen Formats. Diese Umwandlung wird in einem XML-Stylesheet beschrieben.
 
@@ -326,7 +323,7 @@ Gehen Sie wie folgt vor, um ein JavaScript-Template in Adobe Campaign zu erstell
    </html>
    ```
 
-   Der Funktionsaufruf zu Beginn des Templates steuert die Personalisierung des Dokuments und verweist auf Informationen, die in der Adobe Campaign-Datenbank gespeichert sind (hier recipient.firstName und recipient.lastName). Bei Durchführung eines Versands, der auf diesem Template beruht, werden diese Daten dynamisch ersetzt. Weitere Informationen hierzu finden Sie unter [Verwendung von JavaScript-Templates](formatting.md#including-a-javascript-template).
+   Der Funktionsaufruf zu Beginn des Templates steuert die Personalisierung des Dokuments und verweist auf Informationen, die in der Adobe Campaign-Datenbank gespeichert sind (hier recipient.firstName und recipient.lastName). Bei Durchführung eines Versands, der auf diesem Template beruht, werden diese Daten dynamisch ersetzt. Weitere Informationen hierzu finden Sie unter [JavaScript-Vorlage einschließen](formatting.md#including-a-javascript-template).
 
    Im vorliegenden Beispiel enthält die Funktion folgenden Code:
 
@@ -349,7 +346,7 @@ Gehen Sie wie folgt vor, um ein JavaScript-Template in Adobe Campaign zu erstell
 
    ![](assets/contentmgt_jscode_perso_sample.png)
 
-## Schritt 5: Erstellung der Veröffentlichungsvorlage {#step-5---creating-the-publication-template}
+## 5. Schritt - Erstellung der Veröffentlichungsvorlage {#step-5---creating-the-publication-template}
 
 In diesem Schritt wird die Vorlage erstellt, die die Relation zwischen Schema, Formular und Umwandlungsvorlage herstellt. In der Veröffentlichungsvorlage können Sie zwischen verschiedenen Ausgabeformaten wählen.
 
@@ -375,13 +372,13 @@ Gehen Sie wie folgt vor:
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Vorlagenerstellung abzuschließen.
 
-## Schritt 6: Erstellung des Inhalts {#step-6---creating-contents}
+## 6. Schritt - Inhalt erstellen {#step-6---creating-contents}
 
 Nun können Sie auf der zuvor erstellten Veröffentlichungsvorlage beruhende Inhalte erstellen.
 
 >[!NOTE]
 >
->Weitere Informationen zum Erstellen von Inhalten finden Sie unter [Verwendung von Inhaltsvorlagen](using-a-content-template.md).
+>Weiterführende Informationen zur Inhaltserstellung finden Sie im Abschnitt [Inhaltsvorlage verwenden](using-a-content-template.md).
 
 ### Inhaltserstellung im Versand-Assistenten {#creating-content-in-the-delivery-wizard}
 

@@ -2,22 +2,17 @@
 product: campaign
 title: SpamAssassin
 description: Erfahren Sie, wie Sie mit SpamAssassin die Erkennung von Spam-E-Mails einrichten
-audience: delivery
-content-type: reference
-topic-tags: deliverability-management
 exl-id: 8be6836d-f7dc-4199-b2b2-b6a9cac9d162
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
 source-wordcount: '264'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
 # SpamAssassin{#spamassassin}
 
 ![](../../assets/common.svg)
-
-## Über SpamAssassin {#about-spamassassin}
 
 Adobe Campaign bietet die Möglichkeit der Nutzung von [SpamAssassin](https://spamassassin.apache.org), einem Drittanbieterdienst zum Filtern von E-Mail-Spam. Mit diesem Filterprogramm wird E-Mails eine Punktzahl zugeordnet. Diese gibt Auskunft über die Wahrscheinlichkeit, von Anti-Spam-Programmen als unerwünscht eingestuft zu werden.
 
@@ -35,7 +30,7 @@ SpamAssassin nutzt eine Vielzahl von Spam-Erkennungs-Methoden, darunter:
 >
 >Die Regeln, mit denen bestimmt wird, ob ein Element Spam ist oder nicht, werden über SpamAssassin verwaltet und können von einem Administrator mit den entsprechenden Berechtigungen bearbeitet werden.
 
-## Verwendung von SpamAssassin {#using-spamassassin}
+## SpamAssassin in Campaign verwenden {#using-spamassassin}
 
 Nachdem Sie Ihren E-Mail-Versand erstellt und seinen Inhalt definiert haben, folgen Sie den unten stehenden Schritten, um die Risiken zu evaluieren.
 

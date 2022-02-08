@@ -1,19 +1,16 @@
 ---
 product: campaign
-title: Filter erstellen
-description: Filter erstellen
-audience: configuration
-content-type: reference
-topic-tags: use-a-custom-recipient-table
+title: Erstellen von Filtern
+description: Erfahren Sie, wie Sie Filter für eine benutzerdefinierte Tabelle erstellen
 exl-id: 6fad3dac-9af0-4796-adcf-d1de4b255aca
-source-git-commit: fb4b4c42b907e86813ea570f912312fccf893bfe
+source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
 workflow-type: tm+mt
-source-wordcount: '98'
-ht-degree: 6%
+source-wordcount: '105'
+ht-degree: 3%
 
 ---
 
-# Filter erstellen{#creating-filters}
+# Erstellen von Filtern{#creating-filters}
 
 ![](../../assets/common.svg)
 

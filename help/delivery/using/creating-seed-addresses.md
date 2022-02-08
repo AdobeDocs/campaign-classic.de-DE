@@ -2,14 +2,12 @@
 product: campaign
 title: Testadressen erstellen
 description: Erfahren Sie, wie Sie Testadressen erstellen und verwenden.
-audience: delivery
-content-type: reference
-topic-tags: using-seed-addresses
+feature: Seed Address
 exl-id: f7dc97f0-3423-4b6f-88e2-08180f9adf8a
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
 source-wordcount: '440'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -19,11 +17,11 @@ ht-degree: 100%
 
 Testadressen werden separat von Standard-Profilen und -Zielgruppen im Knoten **[!UICONTROL Ressourcen > Kampagnenverwaltung > Testadressen]** verwaltet.
 
-Zur besseren Übersicht können Sie Unterordner anlegen. Klicken Sie hierfür mit der rechten Maustaste auf den **[!UICONTROL Testadressen]**-Knoten und wählen Sie die Option **[!UICONTROL Testadressen-Ordner hinzufügen]** aus. Benennen Sie den neuen Ordner und bestätigen Sie die Eingabe mit **[!UICONTROL Enter]**. Nun können Sie neue Testadressen erstellen oder existierende Adressen in diesen Unterordner kopieren. Weitere Informationen hierzu finden Sie im Abschnitt [Adressen konfigurieren](#defining-addresses).
+Zur besseren Übersicht können Sie Unterordner anlegen. Klicken Sie hierfür mit der rechten Maustaste auf den **[!UICONTROL Testadressen]**-Knoten und wählen Sie die Option **[!UICONTROL Testadressen-Ordner hinzufügen]** aus. Benennen Sie den neuen Ordner und bestätigen Sie die Eingabe mit **[!UICONTROL Enter]**. Nun können Sie neue Testadressen erstellen oder existierende Adressen in diesen Unterordner kopieren. Weitere Informationen hierzu finden Sie unter [Definieren von Adressen](#defining-addresses).
 
-Adobe Campaign bietet auch die Möglichkeit, Testadressenvorlagen zu erstellen, die in Sendungen oder Kampagnen importiert und deren spezifischen Bedürfnissen angepasst werden. Weitere Informationen finden Sie unter [Testadressenvorlagen erstellen](#creating-seed-address-templates).
+Adobe Campaign bietet auch die Möglichkeit, Testadressenvorlagen zu erstellen, die in Sendungen oder Kampagnen importiert und deren spezifischen Bedürfnissen angepasst werden. Siehe [Testadressenvorlagen erstellen](#creating-seed-address-templates).
 
-## Adressen konfigurieren {#defining-addresses}
+## Definieren von Adressen {#defining-addresses}
 
 Gehen Sie zur Erstellung von Testadressen wie folgt vor:
 

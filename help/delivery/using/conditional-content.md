@@ -1,15 +1,13 @@
 ---
 product: campaign
 title: Bedingter Inhalt
-description: Bedingter Inhalt
-audience: delivery
-content-type: reference
-topic-tags: personalizing-deliveries
+description: Erfahren Sie, wie Sie bedingte Inhalte hinzufügen
+feature: Personalization
 exl-id: 12595ee4-6a52-4e06-b80d-85fe633a5a11
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '493'
-ht-degree: 100%
+source-wordcount: '497'
+ht-degree: 97%
 
 ---
 
@@ -22,7 +20,7 @@ Die Konfiguration bedingter Inhalte erlaubt eine dynamische Personalisierung, be
 ![](assets/do-not-localize/how-to-video.png) [Mehr zu dieser Funktion erfahren Sie im Video.](#conditionnal-content-video).
 
 
-## Bedingungen in einer E-Mail verwenden {#using-conditions-in-an-email}
+## Nutzungsbedingungen in einer E-Mail {#using-conditions-in-an-email}
 
 Im folgenden Beispiel erfahren Sie, wie Sie eine Nachricht erstellen und entsprechend dem Geschlecht und den Interessen des Empfängers dynamisch personalisieren können.
 

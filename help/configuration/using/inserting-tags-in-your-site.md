@@ -1,19 +1,16 @@
 ---
 product: campaign
-title: Einfügen von Tags in Ihre Site
-description: Einfügen von Tags in Ihre Site
-audience: configuration
-content-type: reference
-topic-tags: setting-up-web-tracking
+title: Webtracking-Tags in Ihre Site einfügen
+description: Erfahren Sie, wie Sie Web-Tracking-Tags in Ihre Site einfügen
 exl-id: e7fcec75-82fe-45ff-8d45-7d6e95baeb14
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
-source-wordcount: '319'
-ht-degree: 5%
+source-wordcount: '328'
+ht-degree: 0%
 
 ---
 
-# Einfügen von Tags in Ihre Site{#inserting-tags-in-your-site}
+# Einfügen von Web-Tracking-Tags in Ihre Site{#inserting-tags-in-your-site}
 
 ![](../../assets/v7-only.svg)
 

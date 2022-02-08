@@ -1,19 +1,16 @@
 ---
 product: campaign
-title: Versand konfigurieren und senden
-description: Versand konfigurieren und senden
-audience: delivery
-content-type: reference
-topic-tags: about-deliveries-and-channels
+title: Konfigurieren und Senden des Versands
+description: Erfahren Sie, wie Sie den Versand konfigurieren und versenden.
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '1617'
-ht-degree: 100%
+source-wordcount: '1622'
+ht-degree: 96%
 
 ---
 
-# Versand konfigurieren und senden {#configuring-and-sending-the-delivery}
+# Konfigurieren und Senden des Versands {#configuring-and-sending-the-delivery}
 
 ![](../../assets/common.svg)
 
@@ -45,11 +42,11 @@ Vor der Durchführung des Versands können Sie im Tab **[!UICONTROL Versand]** d
 
 * **[!UICONTROL E-Mail-BCC]**: Mit dieser Option können Sie E-Mails in einem externen System speichern, indem Sie einfach eine BCC-E-Mail-Adresse zu Ihrer Versandzielgruppe hinzufügen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](sending-messages.md#archiving-emails).
 
-## Versand bestätigen {#confirming-delivery}
+## Bestätigen Sie die Absendung der Nachrichten {#confirming-delivery}
 
 Wenn der Versand konfiguriert wurde und versandbereit ist, stellen Sie sicher, dass Sie die Versandanalyse ausgeführt haben.
 
-Klicken Sie dazu auf **[!UICONTROL Senden]**, wählen Sie die gewünschte Aktion aus und klicken Sie auf **[!UICONTROL Analysieren]**. Weitere Informationen dazu finden Sie unter [Analyse starten](steps-validating-the-delivery.md#analyzing-the-delivery).
+Klicken Sie dazu auf **[!UICONTROL Senden]**, wählen Sie die gewünschte Aktion aus und klicken Sie auf **[!UICONTROL Analysieren]**. Weitere Informationen hierzu finden Sie unter [Analyse starten](steps-validating-the-delivery.md#analyzing-the-delivery).
 
 ![](assets/s_ncs_user_email_del_send.png)
 
@@ -59,8 +56,8 @@ Nun können Sie den Versand-Assistenten schließen und die Durchführung im **[!
 
 Nach dem Nachrichtenversand können Sie Ihre Sendungen überwachen und verfolgen. Lesen Sie diesbezüglich auch diese Abschnitte:
 
-* [Sendungen überwachen](about-delivery-monitoring.md)
-* [Ursachen von fehlgeschlagenen Sendungen](understanding-delivery-failures.md)
+* [Überwachen von Sendungen](about-delivery-monitoring.md)
+* [Ursachen für das Fehlschlagen von Sendungen](understanding-delivery-failures.md)
 * [Über das Nachrichten-Tracking](about-message-tracking.md)
 
 ## Versandzeitpunkt planen {#scheduling-the-delivery-sending}
@@ -167,7 +164,7 @@ Im Folgenden finden Sie die häufigsten Anwendungsbeispiele für Schübe.
 
    ![](assets/s_ncs_user_wizard_waves_call_center.png)
 
-## Konfiguration weiterer Zustellversuche {#configuring-retries}
+## Neuversuche konfigurieren {#configuring-retries}
 
 Vorübergehend nicht zustellbare Nachrichten aufgrund eines **Softbounce** oder eines **ignorierten Fehlers** werden automatisch für einen erneuten Versuch vorgesehen. Die Typen und Ursachen für fehlgeschlagene Sendungen finden Sie in diesem [Abschnitt](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
 
@@ -179,9 +176,9 @@ Bei On-Premise-Installationen und gehosteten/hybriden Installationen, die den be
 
 ![](assets/s_ncs_user_wizard_retry_param.png)
 
-Standardmäßig sind innerhalb der ersten 24 Stunden des Versands fünf erneute Versuche im Abstand von mindestens einer Stunde vorgesehen. An den folgenden Tagen und bis zum Ablauf der Versandgültigkeit, die im Tab **[!UICONTROL Gültigkeit]** angegeben ist, wird jeweils ein Versuch unternommen (siehe [Gültigkeitszeitraum bestimmen](#defining-validity-period)).
+Standardmäßig sind innerhalb der ersten 24 Stunden fünf erneute Versuche im Abstand von mindestens einer Stunde vorgesehen. An den folgenden Tagen und bis zum Ablauf der Versandgültigkeit, die im Tab **[!UICONTROL Gültigkeit]** angegeben wird, wird jeweils ein Zustellversuch unternommen. Siehe [Gültigkeitszeitraum definieren](#defining-validity-period).
 
-## Gültigkeitszeitraum bestimmen {#defining-validity-period}
+## Gültigkeitszeitraum definieren {#defining-validity-period}
 
 Der Nachrichtenversand inklusive aller Neuversuche erfolgt innerhalb eines bestimmten Zeitraums, der ausgehend vom Startdatum im Tab **[!UICONTROL Gültigkeit]** der Versandeigenschaften festgelegt wird.
 

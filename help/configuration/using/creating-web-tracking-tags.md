@@ -1,19 +1,16 @@
 ---
 product: campaign
-title: Erstellen von Webtracking-Tags
-description: Erstellen von Webtracking-Tags
-audience: configuration
-content-type: reference
-topic-tags: setting-up-web-tracking
+title: Webtrackingtags erstellen
+description: Erfahren Sie, wie Sie Web-Tracking-Tags erstellen
 exl-id: 160df6e1-43e5-4eb9-ad2f-5db444e314ea
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
 workflow-type: tm+mt
-source-wordcount: '269'
-ht-degree: 4%
+source-wordcount: '272'
+ht-degree: 0%
 
 ---
 
-# Erstellen von Webtracking-Tags{#creating-web-tracking-tags}
+# Webtrackingtags erstellen{#creating-web-tracking-tags}
 
 ![](../../assets/v7-only.svg)
 

@@ -1,14 +1,13 @@
 ---
 product: campaign
 title: Nachrichten verfolgen und überwachen
-audience: delivery
-content-type: reference
-topic-tags: deliveries-best-practices
+description: Erfahren Sie, wie Sie Nachrichten tracken und überwachen.
+feature: Monitoring
 exl-id: a039a288-2e7b-4f35-9885-ead3ed4347af
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 100%
+source-wordcount: '438'
+ht-degree: 94%
 
 ---
 
@@ -37,13 +36,13 @@ Tipp: Prüfen Sie die Konfiguration der Traffic-Verwaltung (IP-Affinität). Weit
 >
 >Diese Schritte können nur von einem erfahrenen Benutzer durchgeführt werden.
 
-## Tracking {#tracking-deliveries}
+## Tracking-Verhalten {#track-behaviour}
 
 Um das Verhalten Ihrer Empfänger besser kennenzulernen, können Sie ihre Reaktion auf einen Versand verfolgen: Empfang, Öffnung, Klicks auf Links, Abmeldungen usw. In Campaign Classic werden diese Informationen auf der Registerkarte „Tracking“ der Empfänger, auf die der Versand abzielt, und auf der Registerkarte „Tracking“ des Versands angezeigt.
 
 **Tipp**: Das Nachrichten-Tracking ist standardmäßig aktiviert. Um URLs zu konfigurieren, wählen Sie im unteren Bereich des Versandassistenten die Option „URLs anzeigen“ aus. Sie können für jede URL der Nachricht festlegen, ob Sie Tracking aktivieren möchten.
 
-Weitere Informationen hierzu finden Sie im Abschnitt [Konfigurieren des Tracking](how-to-configure-tracked-links.md) und in der Beschreibung der [Tracking-Indikatoren](../../reporting/using/delivery-reports.md#tracking-indicators).
+Weitere Informationen hierzu finden Sie im Abschnitt [Tracking konfigurieren](how-to-configure-tracked-links.md) und [Trackingindikatoren](../../reporting/using/delivery-reports.md#tracking-indicators) Beschreibung.
 
 ## Versandleistung {#delivery-performances}
 

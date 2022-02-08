@@ -1,19 +1,16 @@
 ---
 product: campaign
 title: E-Mail-Versand auf japanische Mobiltelefone mit Adobe Campaign Classic
-description: Erfahren Sie, wie Sie E-Mails konfigurieren, entwerfen und versenden, die auf einem japanischen Mobilgerät gelesen werden.
-audience: delivery
-content-type: reference
-topic-tags: sending-emails
+description: Erfahren Sie, wie Sie E-Mails konfigurieren, entwerfen und versenden, die auf einem japanischen Mobilgerät gelesen werden
 exl-id: 44634227-2340-49c4-b330-740c739ea551
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
 source-wordcount: '799'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
-# E-Mail-Versand auf japanische Mobiltelefone {#sending-emails-on-japanese-mobiles}
+# E-Mails an japanische Mobiltelefone senden {#sending-emails-on-japanese-mobiles}
 
 ![](../../assets/common.svg)
 
@@ -52,7 +49,7 @@ Aus diesem Grund müssen Sie:
 
 ## E-Mail-Inhalt testen {#testing-the-email-content}
 
-### Nachricht in der Vorschau betrachten {#previewing-the-message}
+### Vorschau der Nachricht {#previewing-the-message}
 
 In Adobe Campaign haben Sie die Möglichkeit zu prüfen, ob das Format Ihrer Nachricht dem Versand an japanische Mobiltelefone angepasst ist.
 
@@ -76,7 +73,7 @@ Zusätzlich zur Vorschauprüfung wird eine zweite Prüfung durchgeführt, die an
 
 Mithilfe dieser Regel können Sie sich vergewissern, ob bei der Sendung die von den japanischen Anbietern vorgegebenen [Formateinschränkungen](#limitations-and-recommendations) respektiert werden, insbesondere im Hinblick auf die Gesamtgröße der E-Mail, die jeweilige Größe ihrer HTML- und Textanteile, die Anzahl an Bildern in der Nachricht sowie die Tags des HTML-Inhalts.
 
-### Testversand durchführen {#sending-proofs}
+### Durchführen eines Testversands {#sending-proofs}
 
 Sie können Testsendungen durchführen, um Ihren Versand zu testen. Wenn Sie dabei Ersatzadressen verwenden, geben Sie bitte die Adressen ein, die dem E-Mail-Format des verwendeten Profils entsprechen.
 
@@ -84,7 +81,7 @@ Beispielsweise können Sie die Adresse eines Profils durch test@softbank.ne.jp e
 
 ![](assets/deco-mail_05.png)
 
-## Nachrichten senden {#sending-messages}
+## Senden von Nachrichten {#sending-messages}
 
 Für den Versand einer E-Mail an Empfänger mit japanischen E-Mail-Formaten mit Campaign haben Sie zwei Möglichkeiten:
 

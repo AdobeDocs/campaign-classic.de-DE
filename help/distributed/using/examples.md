@@ -1,29 +1,27 @@
 ---
 product: campaign
-title: Beispiele
-description: Beispiele
-audience: campaign
-content-type: reference
-topic-tags: distributed-marketing
+title: Beispiele für verteiltes Marketing
+description: Beispiele für verteiltes Marketing
+feature: Distributed Marketing
 exl-id: 2bef6b5e-887e-4c56-bb4b-3583472ca333
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '1374'
-ht-degree: 100%
+source-wordcount: '1371'
+ht-degree: 97%
 
 ---
 
-# Beispiele{#examples}
+# Beispiele für verteiltes Marketing{#distributed-marketing-samples}
 
 ![](../../assets/v7-only.svg)
 
-## Erstellung einer lokalen Kampagne (Standardformular) {#creating-a-local-campaign--by-form-}
+## Lokale Kampagne erstellen (Formular) {#creating-a-local-campaign--by-form-}
 
 Der Web-Schnittstellentyp **Standardformular** impliziert die Nutzung einer **Web-Anwendung**. Diese kann entsprechend ihrer Konfiguration unterschiedliche anzupassende Elemente enthalten. Beispielsweise besteht die Möglichkeit, der Lokalstelle Links zur Evaluierung von Zielgruppe, Budget und Inhalt über dedizierte APIs zur Verfügung zu stellen.
 
 >[!NOTE]
 >
->Die diversen APIs werden in einem separaten Dokument beschrieben, auf das je nach Lizenzvertrag Zugriff besteht, siehe [APIs](../../configuration/using/about-web-services.md).
+>Die APIs werden in einem eigenen Dokument beschrieben. [Weitere Informationen](../../configuration/using/about-web-services.md).
 >
 >Die in diesem Beispiel verwendete Web-Anwendung ist nicht standardmäßig in Adobe Campaign vorhanden. Um in einer Kampagne ein Formular benutzen zu können, muss vorab die entsprechende Web-Anwendung erstellt werden.
 
@@ -73,7 +71,7 @@ Im vorliegenden Beispiel werden die folgenden APIs verwendet:
    var res = nms.localOrder.EvaluateContent(ctx.localOrder, ctx.@deliveryId, "html", resSeed.@id);
    ```
 
-## Erstellung einer partizipativen Kampagne (Zielgruppenvalidierung) {#creating-a-collaborative-campaign--by-target-approval-}
+## Partizipative Kampagne erstellen (Zielgruppenvalidierung) {#creating-a-collaborative-campaign--by-target-approval-}
 
 ### Einleitung {#introduction}
 
@@ -118,7 +116,7 @@ Nach den Validierungen kann die Kampagne automatisch beginnen.
 
 ### Zuständige Zentralstelle {#central-entity-side}
 
-#### Datenverteilungs-Aktivität erstellen {#creating-a-data-distribution-activity}
+#### Datenverteilungsaktivität erstellen {#creating-a-data-distribution-activity}
 
 1. Um eine partizipative Kampagne mit Zielgruppenvalidierung zu implementieren, muss zunächst eine **[!UICONTROL Datenverteilung]** erstellt werden. Klicken Sie im Knoten **[!UICONTROL Ressourcen > Kampagnenverwaltung > Datenverteilung]** auf das Symbol **[!UICONTROL Neu]**.
 
@@ -142,7 +140,7 @@ Nach den Validierungen kann die Kampagne automatisch beginnen.
 
 1. Speichern Sie die neue Datenverteilung.
 
-#### Partizipative Kampagne erstellen {#creating-a-collaborative-campaign}
+#### Partizipative Kampagnen erstellen {#creating-a-collaborative-campaign}
 
 1. Erstellen Sie vom Knoten **[!UICONTROL Kampagnenverwaltung > Kampagnen]** aus eine neue Referenzkampagne unter Verwendung der Vorlage **[!UICONTROL Partizipative Kampagne (Zielgruppenvalidierung)]**.
 1. Erstellen Sie im Tab **[!UICONTROL Zielbestimmungen und Workflows]** einen Workflow für die Kampagne. Dieser muss eine Aktivität vom Typ **Aufspaltung** enthalten, deren **[!UICONTROL Begrenzung der Anzahl von Datensätzen]** durch die **[!UICONTROL Datenverteilung]** festgelegt wird.
@@ -159,7 +157,7 @@ Nach den Validierungen kann die Kampagne automatisch beginnen.
 
 1. Speichern Sie die Kampagne.
 
-#### Kampagne veröffentlichen {#publishing-the-campaign}
+#### Veröffentlichen Sie die Kampagne {#publishing-the-campaign}
 
 Fügen Sie nun über den Tab **[!UICONTROL Kampagnen]** ein **Kampagnenkit** hinzu.
 
@@ -178,7 +176,7 @@ Fügen Sie nun über den Tab **[!UICONTROL Kampagnen]** ein **Kampagnenkit** hin
 
    ![](assets/mkg_dist_use_case_target_valid2.png)
 
-## Erstellung einer partizipativen Kampagne (Formular) {#creating-a-collaborative-campaign--by-form-}
+## Partizipative Kampagne erstellen (Formular) {#creating-a-collaborative-campaign--by-form-}
 
 ### Einleitung {#introduction-1}
 

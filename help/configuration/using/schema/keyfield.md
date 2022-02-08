@@ -1,15 +1,12 @@
 ---
 product: campaign
-title: Elemente und Attribute
-description: Elemente und Attribute
-audience: configuration
-content-type: reference
-topic-tags: schema-reference
+title: Schemaelemente und -attribute
+description: keyfield-Element
 exl-id: fb0862f9-5dcc-49f2-b99b-9822aaf3a680
-source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
 source-wordcount: '101'
-ht-degree: 10%
+ht-degree: 4%
 
 ---
 

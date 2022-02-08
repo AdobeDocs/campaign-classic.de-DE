@@ -1,23 +1,19 @@
 ---
 product: campaign
-title: Bestimmen der Zielpopulation
-description: Bestimmen der Zielpopulation
-audience: delivery
-content-type: reference
-topic-tags: about-deliveries-and-channels
+title: Zielpopulation bestimmen
+description: Weitere Informationen zur Definition der Zielpopulation
+feature: Audiences
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '1746'
-ht-degree: 100%
+source-wordcount: '1745'
+ht-degree: 95%
 
 ---
 
-# Bestimmen der Zielpopulation {#defining-the-target-population}
+# Zielpopulation bestimmen {#defining-the-target-population}
 
 ![](../../assets/common.svg)
-
-## Über Zielpopulationen {#about-target-populations}
 
 Für jeden Versand können verschiedene Zielpopulationen bestimmt werden:
 
@@ -112,7 +108,7 @@ Gehen Sie dazu wie folgt vor:
 >
 >Schließen Sie bei einem externen E-Mail-Versand bei der Inhaltserstellung keinen Mirrorseite-Link ein. Die Seite kann bei dieser Versandart nicht erstellt werden.
 
-### Ausschlussparameter einstellen {#customizing-exclusion-settings}
+### Ausschlusseinstellungen definieren {#define-exclusion-settings}
 
 Fehlerhafte Adressen und der Qualitätsindex werden vom Dienstleister übermittelt. Diese Informationen werden nach Durchführung des Versands und dem Laden der Ergebnisdatei des Dienstleisters automatisch im Empfängerprofil aktualisiert. Hier werden sie angezeigt, können aber nicht geändert werden.
 
@@ -213,7 +209,7 @@ Gehen Sie dazu wie folgt vor:
 
    Konfigurieren Sie so viele Ersatzadressen wie nötig.
 
-## Testadressen als Zielgruppe verwenden {#using-seed-addresses-as-proof}
+## Testadressen als Testversand verwenden {#using-seed-addresses-as-proof}
 
 Sie können **[!UICONTROL Testadressen]** als Testversand-Zielgruppe verwenden: Mit dieser Option können Sie eine Testadressenliste verwenden oder importieren.
 
@@ -227,9 +223,9 @@ Mit der Option **[!UICONTROL Spezifische Zielgruppe und Testadressen]** können 
 
 Siehe auch:
 
-* [Testversand-Zielgruppe auswählen](#selecting-the-proof-target)
+* [Auswählen der Zielgruppe für den Testversand](#selecting-the-proof-target)
 * [Über Testadressen](about-seed-addresses.md)
-* [Anwendungsbeispiel: Auswahl von Testadressen nach Kriterien](use-case--selecting-seed-addresses-on-criteria.md)
+* [Anwendungsbeispiel: Auswählen von Testadressen nach Kriterien](use-case--selecting-seed-addresses-on-criteria.md)
 
 ## Anleitungsvideo {#seeds-and-proofs-video}
 

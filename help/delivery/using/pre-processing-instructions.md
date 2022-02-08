@@ -1,12 +1,9 @@
 ---
 product: campaign
 title: Anweisungen zur Vorab-Bearbeitung von getrackten URLs
-description: Erfahren Sie mehr über Anweisungen zur Vorab-Bearbeitung, mit denen Sie die URL einer E-Mail skripten und dennoch tracken können.
-audience: delivery
-content-type: reference
-topic-tags: tracking-messages
+description: Erfahren Sie mehr über Anweisungen zur Vorab-Bearbeitung, mit denen Sie die URL einer E-Mail skripten und dennoch tracken können
 exl-id: 9d3f5c74-377a-4e24-81e5-bb605f69cf8a
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 100%

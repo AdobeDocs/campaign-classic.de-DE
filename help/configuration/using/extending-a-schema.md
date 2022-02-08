@@ -1,19 +1,17 @@
 ---
 product: campaign
-title: Erweitern eines Schemas
+title: Schema erweitern
 description: Erfahren Sie, wie Sie ein Schema erweitern
-audience: configuration
-content-type: reference
-topic-tags: editing-schemas
+feature: Schema Extension
 exl-id: 6e3e666d-6ab3-4346-93ca-fb0155a4660d
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 10%
+source-wordcount: '327'
+ht-degree: 11%
 
 ---
 
-# Erweitern eines Schemas{#extending-a-schema}
+# Schema erweitern{#extending-a-schema}
 
 ![](../../assets/v7-only.svg)
 
@@ -63,5 +61,5 @@ Es gibt zwei Methoden zum Erweitern eines vorhandenen Schemas:
 
 >[!IMPORTANT]
 >
->Damit die Änderungen berücksichtigt werden, müssen Sie die Schemata neu generieren. Weitere Informationen hierzu finden Sie im Abschnitt [Regenerieren von Schemata](../../configuration/using/regenerating-schemas.md) Abschnitt.\
->Wenn sich die Änderungen auf die Struktur der Datenbank auswirken, müssen Sie eine Aktualisierung ausführen. Weiterführende Informationen finden Sie im Abschnitt [Datenbankstruktur aktualisieren](../../configuration/using/updating-the-database-structure.md).
+>Damit die Änderungen berücksichtigt werden, müssen Sie die Schemata neu generieren. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../configuration/using/regenerating-schemas.md).\
+>Wenn sich die Änderungen auf die Struktur der Datenbank auswirken, müssen Sie eine Aktualisierung ausführen. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../configuration/using/updating-the-database-structure.md).

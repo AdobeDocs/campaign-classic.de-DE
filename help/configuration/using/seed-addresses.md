@@ -2,14 +2,12 @@
 product: campaign
 title: Testadressen
 description: Testadressen
-audience: configuration
-content-type: reference
-topic-tags: use-a-custom-recipient-table
+feature: Seed Address
 exl-id: a16103bf-0498-4f59-ad96-8bfdeea26577
-source-git-commit: fb4b4c42b907e86813ea570f912312fccf893bfe
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 3%
+source-wordcount: '332'
+ht-degree: 8%
 
 ---
 
@@ -44,7 +42,7 @@ Definition des erweiterten Empfängerschemas der Empfängertabelle:
 
 Gehen Sie wie folgt vor:
 
-1. Erstellen Sie eine Erweiterung der **nms:seedMember** Schema. Weitere Informationen hierzu finden Sie unter [Schema erweitern](../../configuration/using/extending-a-schema.md).
+1. Erstellen Sie eine Erweiterung der **nms:seedMember** Schema. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../configuration/using/extending-a-schema.md).
 1. Fügen Sie in dieser neuen Erweiterung ein neues Element am Stammverzeichnis von hinzu. **[!UICONTROL seedMember]** mit den folgenden Parametern:
 
    ```
@@ -82,7 +80,7 @@ Gehen Sie wie folgt vor:
    >    * Im **nms:seedMember** Erweiterung, muss das Feld, das die E-Mail-Adresse enthält, **name=&quot;email&quot;** als Attribut. Der SQL-Name muss sich von &quot;sEmail&quot;unterscheiden, der bereits für das Empfängerschema verwendet wird. Dieses Attribut muss sofort unter der **`<element name="custom_cus_person" />`** -Element.
 
 
-1. Ändern Sie die **[!UICONTROL seedMember]** Formular , um einen neuen Tab &quot;Interner Empfänger&quot;im **[!UICONTROL Testadressen]** Fenster. Weitere Informationen hierzu finden Sie unter [Formularstruktur](../../configuration/using/form-structure.md).
+1. Ändern Sie die **[!UICONTROL seedMember]** Formular , um einen neuen Tab &quot;Interner Empfänger&quot;im **[!UICONTROL Testadressen]** Fenster. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../configuration/using/form-structure.md).
 
    ```
    <container colcount="2" label="Internal recipient" name="internal"

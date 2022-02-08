@@ -1,15 +1,13 @@
 ---
 product: campaign
 title: Personalisierte Gutscheine
-description: Personalisierte Gutscheine
-audience: delivery
-content-type: reference
-topic-tags: personalizing-deliveries
+description: Erfahren Sie, wie Sie personalisierte Gutscheine erstellen und einfügen
+feature: Personalization
 exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
-source-git-commit: 0deb18bb0376fc5e94d063145280426ff54db786
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '960'
-ht-degree: 100%
+source-wordcount: '966'
+ht-degree: 95%
 
 ---
 
@@ -54,7 +52,7 @@ Bevor Sie die folgenden Schritte ausführen, entscheiden Sie sich für einen Gut
    1. Geben Sie für den individuellen Gutschein einen eindeutigen Code ein, wenn Sie vom Pop-up dazu aufgefordert werden.
    1. Klicken Sie auf **[!UICONTROL Speichern]**, um den Gutschein zu erstellen.
 
-   Weitere Informationen zum Tab „Coupons“ finden Sie unter [Individuelle Gutscheine konfigurieren](#configuring-individual-coupons).
+   Weitere Informationen zur Registerkarte &quot;Coupons&quot;finden Sie unter [Individuelle Gutscheine konfigurieren](#configuring-individual-coupons).
 
    >[!NOTE]
    >
@@ -136,7 +134,7 @@ Im folgenden Beispiel wird von der Startseite aus ein Versand erstellt. Weiterf�
 
 >[!NOTE]
 >
->Eine Anleitung zur Vorgehensweise, wenn nicht genügend Coupons für einen Versand vorhanden sind, finden Sie unter [Ungenügende Anzahl von Gutscheinen verwalten](#managing-insufficient-coupons)
+>Anweisungen zum Verwalten unzureichender Gutscheine für einen Versand finden Sie unter [Ungenügende Anzahl von Gutscheinen verwalten](#managing-insufficient-coupons)
 
 So prüfen Sie, ob der Versand erfolgreich war:
 

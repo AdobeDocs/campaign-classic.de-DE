@@ -1,15 +1,13 @@
 ---
 product: campaign
 title: Datenschemata
-description: Datenschemata
-audience: configuration
-content-type: reference
-topic-tags: editing-schemas
+description: Erste Schritte mit Campaign-Datenschemata
+feature: Schema Extension
 exl-id: d4446035-3988-4d89-b7df-7b8528c2e371
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 64%
+source-wordcount: '411'
+ht-degree: 67%
 
 ---
 
@@ -19,11 +17,11 @@ ht-degree: 64%
 
 ## Grundsätze {#principles}
 
-Um Schemata zu bearbeiten, zu erstellen und zu konfigurieren, klicken Sie in der Client-Konsole von Adobe Campaign auf den Knoten **[!UICONTROL Administration > Konfiguration > Datenschemata]**.
+Um Schemata zu bearbeiten, zu erstellen und zu konfigurieren, klicken Sie in der Client-Konsole von Adobe Campaign auf den Knoten **[!UICONTROL Administration > Konfiguration > Datenschemas]**.
 
 >[!NOTE]
 >
->Vordefinierte Datenschemata können nur von einem Administrator Ihrer Adobe Campaign Classic-Konsole gelöscht werden.
+>Native Schemata können nur von einem Administrator Ihrer Adobe Campaign Classic-Konsole verwaltet werden.
 
 ![](assets/d_ncs_integration_schema_navtree.png)
 

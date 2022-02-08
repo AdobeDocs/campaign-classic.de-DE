@@ -2,12 +2,12 @@
 product: campaign
 title: Sendungen für eine Marketing-Kampagne
 description: Erfahren Sie mehr über Sendungen zur Marketing-Kampagne
-audience: campaign
+feature: Resource Management, Cross Channel Orchestration
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
-source-git-commit: d3f5c56078ddac7597925191fd347bdcab61714d
+source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
 workflow-type: tm+mt
 source-wordcount: '1552'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -29,11 +29,11 @@ Um einen mit einer Kampagne verknüpften Versand zu erstellen, klicken Sie auf d
 
 Die vorgeschlagenen Konfigurationen sind an die unterschiedlichen Versandtypen angepasst: Briefpost, E-Mail, Mobile-Kanäle. [Weitere Informationen](../../delivery/using/steps-about-delivery-creation-steps.md).
 
-## Starten eines Versands {#starting-a-delivery}
+## Startet einen Versand {#starting-a-delivery}
 
 Sobald alle Validierungen erteilt wurden, kann der Versand gestartet werden. Der Versandvorgang hängt dann von der Art des Versands ab. Informationen zu E-Mail- oder Mobile-Kanal-Sendungen finden Sie unter [Starten eines Online-Versands](#starting-an-online-delivery) und zu Briefpost-Sendungen unter [Starten eines Offline-Versands](#starting-an-offline-delivery).
 
-### Starten eines Online-Versands {#starting-an-online-delivery}
+### Online-Versand starten {#starting-an-online-delivery}
 
 Wenn alle Validierungsanfragen akzeptiert wurden, erhält der Versand den Status **[!UICONTROL Zu bestätigen]** und kann von einem Benutzer gestartet werden. Gegebenenfalls wird der Adobe-Campaign-Benutzer (oder die Benutzergruppe), der für die Validierung des Versandstarts zuständig ist, über den startbereiten Versand informiert.
 
@@ -63,7 +63,7 @@ Wenn alle Validierungen akzeptiert wurden, erhält der Versand den Status **[!UI
 
 Wenn der Extraktions-Workflow korrekt ausgeführt wurde, muss die Extrationsdatei validiert werden (sofern die Validierung der Extraktionsdatei in der Versandkonfiguration aktiviert wurde).
 
-Weiterführende Informationen finden Sie unter [Extraktionsdatei validieren](../../campaign/using/marketing-campaign-approval.md#approving-an-extraction-file).
+Weitere Informationen hierzu finden Sie unter [Extraktionsdatei validieren](../../campaign/using/marketing-campaign-approval.md#approving-an-extraction-file).
 
 **2. Schritt - Nachricht an den Dienstleister validieren**
 
@@ -114,7 +114,7 @@ Die Dateiextraktion startet zwei Vorgänge: die Berechnung der Budgets und die B
 >
 >Weiterführende Informationen zu Kostenberechnungen und Lagerverwaltung finden Sie unter [Dienstleister, Lager und Budgets](../../campaign/using/providers--stocks-and-budgets.md).
 
-## Zugeordnete Dokumente verwalten {#managing-associated-documents}
+## Verwalten der zugehörigen Dokumente {#managing-associated-documents}
 
 Sie können einer Kampagne verschiedene Dokumente zuordnen: Bericht, Foto, Web-Seite, Diagramm usw. Diese Dokumente können in jedem beliebigen Format vorliegen (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF usw.). [In diesem Abschnitt](../../campaign/using/marketing-campaign-assets.md) erfahren Sie, wie Sie Dokumente mit einer Kampagne verknüpfen.
 
@@ -126,9 +126,9 @@ Sie haben auch die Möglichkeit, externe Elemente in Kampagnen zu referenzieren,
 
 >[!NOTE]
 >
->MRM ermöglicht Ihnen zudem die Verwaltung einer Ressourcenbibliothek, in der mehrere Benutzer partizipativ arbeiten können. Lesen Sie diesbezüglich [Verwalten von Marketing-Ressourcen](../../mrm/using/managing-marketing-resources.md).
+>MRM ermöglicht Ihnen zudem die Verwaltung einer Ressourcenbibliothek, in der mehrere Benutzer partizipativ arbeiten können. Siehe [Verwalten von Marketing-Ressourcen](../../mrm/using/managing-marketing-resources.md).
 
-### Hinzufügen von Dokumenten {#adding-documents}
+### Dokumente hinzufügen {#adding-documents}
 
 Dokumente können einer Kampagne (kontextrelevante Dokumente) oder einem Programm (allgemeine Dokumente) zugeordnet werden.
 
@@ -167,7 +167,7 @@ Der bestimmte Elemente umfassende Versandentwurf wird einem Versand angefügt: I
 
 Versandentwürfe ermöglichen es, in Kampagnen externe Elemente zu strukturieren, die einem Versand nach bestimmten Kriterien hinzugefügt werden: bewilligtes Sonderangebot, Einladung zu einem lokalen Event etc.
 
-#### Versandentwurf erstellen {#creating-an-outline}
+#### Erstellen eines Versandentwurfs {#creating-an-outline}
 
 Um einen Versandentwurf zu erstellen, klicken Sie auf den Untertab **[!UICONTROL Versandentwürfe]** im Tab **[!UICONTROL Bearbeiten > Dokumente]** der betreffenden Kampagne.
 
@@ -205,7 +205,7 @@ Ein Versandentwurf kann Artikel, Personalisierungsfelder, Ressourcen und Angebot
    >
    >Weiterführende Informationen zu Marketing-Ressourcen finden Sie unter [Verwalten von Marketing-Ressourcen](../../mrm/using/managing-marketing-resources.md).
 
-#### Einen Versandentwurf auswählen {#selecting-an-outline}
+#### Auswählen eines Versandentwurfs {#selecting-an-outline}
 
 Sie können für jeden Versand über den Bereich der Extraktionskonfiguration einen Entwurf auswählen, wie im folgenden Beispiel:
 

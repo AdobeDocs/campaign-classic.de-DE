@@ -1,15 +1,12 @@
 ---
 product: campaign
-title: Elemente und Attribute
-description: Elemente und Attribute
-audience: configuration
-content-type: reference
-topic-tags: schema-reference
+title: Schemaelemente und -attribute
+description: Methodenelement
 exl-id: 0fb74318-fe09-473c-8e33-1f3afd66b4cc
-source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
+source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
 workflow-type: tm+mt
 source-wordcount: '205'
-ht-degree: 4%
+ht-degree: 1%
 
 ---
 

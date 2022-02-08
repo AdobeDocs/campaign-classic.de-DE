@@ -1,15 +1,12 @@
 ---
 product: campaign
 title: Kampagnensimulation
-description: Kampagnensimulation
-audience: campaign
-content-type: reference
-topic-tags: campaign-optimization
+description: Erste Schritte mit Campaign-Simulationen
 exl-id: 709c64a8-34bf-43fa-a820-238295fb26b8
-source-git-commit: 5806690f764d2e5dfb5651597ff68b33bb399b44
+source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
 workflow-type: tm+mt
-source-wordcount: '1373'
-ht-degree: 100%
+source-wordcount: '1376'
+ht-degree: 98%
 
 ---
 
@@ -129,7 +126,7 @@ Sobald der Perimeter der Simulation definiert wurde, kann sie ausgeführt werden
 
    Ein Beispiel zur Erstellung einer Analysetabelle findet sich im Anschluss an den Abschnitt [Ergebnisse analysieren](#exploring-results).
 
-### Ergebnisse einsehen {#viewing-results}
+### Ergebnisse anzeigen {#viewing-results}
 
 #### Verfolgung {#audit}
 

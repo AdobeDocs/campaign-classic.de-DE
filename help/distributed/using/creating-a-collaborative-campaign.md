@@ -1,25 +1,23 @@
 ---
 product: campaign
-title: Partizipative Kampagne erstellen
-description: Partizipative Kampagne erstellen
-audience: campaign
-content-type: reference
-topic-tags: distributed-marketing
+title: Partizipative Kampagnen erstellen
+description: Erfahren Sie, wie Sie eine partizipative Kampagne erstellen.
+feature: Distributed Marketing
 exl-id: 17313fe5-ad42-45ca-a35a-1e7aa89380ef
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
-source-wordcount: '987'
-ht-degree: 100%
+source-wordcount: '990'
+ht-degree: 98%
 
 ---
 
-# Partizipative Kampagne erstellen{#creating-a-collaborative-campaign-intro}
+# Partizipative Kampagnen erstellen{#creating-a-collaborative-campaign-intro}
 
 ![](../../assets/v7-only.svg)
 
 Partizipative Kampagnen werden von Zentralstellen auf Basis der Kampagnenvorlagen des **dezentralen Marketings** erstellt. Lesen Sie hierzu [diese Seite](about-distributed-marketing.md#collaborative-campaign).
 
-## Partizipative Kampagne erstellen {#creating-a-collaborative-campaign}
+## Partizipative Kampagnen erstellen {#creating-a-collaborative-campaign}
 
 Partizipative Kampagnen beruhen jeweils auf einer Referenzkampagne, die von der Zentralstelle zu erstellen ist. Dies geschieht ausgehend vom Knoten **[!UICONTROL Kampagnenverwaltung > Kampagnen]** durch Klick auf das **[!UICONTROL Neu]**-Symbol.
 
@@ -156,7 +154,7 @@ Im automatischen Modus wird die Lokalstelle automatisch für die Kampagne angeme
 
 Die Konfiguration der Benachrichtigungen entspricht der für lokale Kampagnen. Siehe hierzu [diesen Abschnitt](creating-a-local-campaign.md#notifications).
 
-## Kampagne bestellen {#ordering-a-campaign}
+## Bestellen einer Kampagne {#ordering-a-campaign}
 
 Wenn der Kampagnenkit-Liste eine partizipative Kampagne hinzugefügt wird, werden die Lokalstellen, die dem von der Zentralstelle bestimmten Publikum angehören, hiervon per E-Mail informiert (**partizipative Kampagnen mit Zielgruppenvalidierung** haben kein vordefiniertes Publikum). Die Benachrichtigungs-E-Mail enthält einen Link zur Bestellung der Kampagne, wie im folgenden Beispiel:
 
@@ -174,6 +172,6 @@ Nach Speicherung der Bestellung erhält der validierungsverantwortliche Benutzer
 
 Weitere Informationen hierzu finden Sie im Abschnitt [Validierungsprozess](creating-a-local-campaign.md#approval-process).
 
-## Bestellung bestätigen {#approving-an-order}
+## Bestellung validieren {#approving-an-order}
 
 Die Validierung der Bestellung eines partizipativen Kampagnenkits entspricht der von lokalen Kampagnen. Siehe hierzu [diesen Abschnitt](creating-a-local-campaign.md#approving-an-order).

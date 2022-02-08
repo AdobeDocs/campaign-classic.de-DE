@@ -2,14 +2,11 @@
 product: campaign
 title: Veröffentlichungsvorlagen
 description: Publikationsvorlagen
-audience: delivery
-content-type: reference
-topic-tags: content-management
 exl-id: 3b6e4974-4551-4da2-8eca-577c4f9cbd91
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
 workflow-type: tm+mt
 source-wordcount: '843'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -35,7 +32,7 @@ Der Identifikationsschlüssel eines Stylesheets ist eine Zeichenkette, die den N
 >
 >Es wird empfohlen, für Schema, Formular und Veröffentlichungsvorlage den gleichen Schlüssel zu verwenden.
 
-## Erstellung und Konfiguration der Vorlagen {#creating-and-configuring-the-template}
+## Erstellen und Konfigurieren der Vorlage {#creating-and-configuring-the-template}
 
 Standardmäßig werden Veröffentlichungsvorlagen im Knoten **[!UICONTROL Administration > Konfiguration > Veröffentlichungsvorlagen]** gespeichert. Klicken Sie dort zur Erstellung einer neuen Vorlage auf die Schaltfläche **[!UICONTROL Neu]**.
 
@@ -87,7 +84,7 @@ Des Weiteren können folgende Veröffentlichungsparameter konfiguriert werden:
 
    >[!NOTE]
    >
-   >Weitere Informationen zur Inhaltserstellung finden Sie unter [Erstellung einer Inhaltsinstanz](using-a-content-template.md#creating-a-content-instance).
+   >Weitere Informationen zur Inhaltserstellung finden Sie unter [Erstellen einer Inhaltsinstanz](using-a-content-template.md#creating-a-content-instance).
 
 ### Versand {#delivery}
 
@@ -97,7 +94,7 @@ In diesem Tab kann eine Versandvorlage ausgewählt werden, um direkt einen Versa
 
 >[!NOTE]
 >
->Ein Beispiel für einen Versand, der einen im Content-Management erstellten Inhalt verwendet, finden Sie im Abschnitt [Versand einer Inhaltsinstanz](using-a-content-template.md#delivering-a-content-instance).
+>Ein Beispiel für die Inhaltserstellung eines Versands finden Sie unter [Bereitstellen einer Inhaltsinstanz](using-a-content-template.md#delivering-a-content-instance).
 
 ### Aggregator {#aggregator}
 

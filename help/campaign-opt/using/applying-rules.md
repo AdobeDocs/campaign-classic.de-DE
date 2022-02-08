@@ -2,22 +2,19 @@
 product: campaign
 title: Regeln anwenden
 description: Regeln anwenden
-audience: campaign
-content-type: reference
-topic-tags: campaign-optimization
 exl-id: 09ec0fc0-76ed-4c73-8bdf-c931e2103aa9
-source-git-commit: 5806690f764d2e5dfb5651597ff68b33bb399b44
+source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
 workflow-type: tm+mt
-source-wordcount: '1041'
-ht-degree: 100%
+source-wordcount: '1042'
+ht-degree: 98%
 
 ---
 
-# Regeln anwenden{#applying-rules}
+# Typologieregeln anwenden{#applying-rules}
 
 ![](../../assets/common.svg)
 
-## Typologien auf Sendungen anwenden {#applying-a-typology-to-a-delivery}
+## Typologie auf einen Versand anwenden {#applying-a-typology-to-a-delivery}
 
 Um die von Ihnen erstellten Typologieregeln anzuwenden, müssen Sie sie mit einer Typologie verknüpfen und diese in Ihrer Sendung referenzieren. Gehen Sie hierzu wie folgt vor:
 
@@ -40,7 +37,7 @@ Um die von Ihnen erstellten Typologieregeln anzuwenden, müssen Sie sie mit eine
    >
    >Die Typologie kann auf Ebene der Versandvorlage festgelegt werden, um sie automatisch auf alle mit der jeweiligen Vorlage erstellten Sendungen anzuwenden.
 
-## Anwendungskriterien bestimmen {#defining-application-conditions}
+## Anwendungsbedingungen definieren {#defining-application-conditions}
 
 Es besteht die Möglichkeit, das Anwendungsfeld einer Regel Ihren Bedürfnissen entsprechend einzuschränken (mit Ausnahme von Kontrollregeln).
 
