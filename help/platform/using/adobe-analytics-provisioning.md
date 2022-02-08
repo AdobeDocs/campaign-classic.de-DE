@@ -8,9 +8,9 @@ role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
 source-git-commit: 9ee95f6d60500b18e242c6d648488615f47a4459
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '746'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -143,7 +143,7 @@ Ihr Produktprofil ist jetzt konfiguriert. Anschließend müssen Sie das Adobe I/
 
 1. Verwenden Sie den in Schritt 6 generierten privaten Schlüssel.
 
-   Wenn Sie Trigger bereits mit diesen Anmeldedaten eingerichtet haben, muss der private Schlüssel für diese Connector-Konfiguration identisch sein.
+   Wenn Sie Triggers bereits mit diesen Anmeldedaten eingerichtet haben, muss der private Schlüssel für diese Connector-Konfiguration identisch sein.
 
 1. Codieren Sie den privaten Schlüssel mit dem folgenden Befehl: `base64 ./private.key > private.key.base64`. Dadurch wird der base64-Inhalt in einer neuen Datei `private.key.base64` gespeichert.
 
