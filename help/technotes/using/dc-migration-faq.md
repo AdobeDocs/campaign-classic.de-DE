@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
 source-git-commit: 60fc0fd2a10f05abb77843ef0cb69e44f35a9648
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2216'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 97%
 
 ![](../../assets/v7-only.svg)
 
-Adobe beendet das alte Rechenzentrum: Campaign Classic-Instanzen müssen in Public Cloud Amazon Web Services (AWS) übertragen werden. [Erfahren Sie mehr über diese Initiative](dc-migration.md).
+Adobe nutzt das alte Rechenzentrum nicht länger: Campaign Classic-Instanzen müssen in Public Cloud Amazon Web Services (AWS) übertragen werden. [Erfahren Sie mehr über diese Initiative](dc-migration.md).
 
 Nachstehend finden Sie eine Reihe allgemeiner Fragen zu diesem Projekt und zu den Auswirkungen auf Ihre Campaign-Umgebungen sowie weitere nützliche Informationsquellen.
 
@@ -63,7 +63,7 @@ Die globalen Auswirkungen auf IPs, Blockierungsliste, Subdomains und URLs sind u
 
    Die IP-Adresse der Adobe-Server wird sich ändern. Deshalb müssen Kunden diese neuen IP-Adressen möglicherweise in ihrem System auf die Zulassungsliste setzen.
 
-   [Weitere Infos](#config) über IP auf der Zulassungsliste.
+   [Weitere Informationen](#config) über IP auf der Zulassungsliste.
 
 * **Wie werden Ports gehandhabt, die für den SFTP-/FTP-Zugriff auf die Zulassungsliste gesetzt werden?**
 
@@ -73,7 +73,7 @@ Die globalen Auswirkungen auf IPs, Blockierungsliste, Subdomains und URLs sind u
 
    Die IP-Adresse der Adobe-Server wird sich ändern. Deshalb müssen Kunden diese neuen IP-Adressen möglicherweise in ihrem System auf die Zulassungsliste setzen.
 
-   [Weitere Infos](#config) über IP auf der Zulassungsliste.
+   [Weitere Informationen](#config) über IP auf der Zulassungsliste.
 
 * **Wie wird die Zuordnung von Subdomains gehandhabt?**
 
@@ -155,7 +155,7 @@ Globale Auswirkungen auf die Konfiguration, die Konnektivität mit anderen Syste
 
    Die IP-Adresse der Adobe-Server wird sich ändern. Deshalb müssen Kunden diese neuen IP-Adressen möglicherweise in ihrem System auf die Zulassungsliste setzen.
 
-   [Weitere Infos](#config) über IP auf der Zulassungsliste.
+   [Weitere Informationen](#config) über IP auf der Zulassungsliste.
 
 * **Stellt Adobe sicher, dass alle JavaScript-Speicherkonfigurationsparameter nach der Migration korrekt eingestellt sind?**
 
@@ -169,7 +169,7 @@ Globale Auswirkungen auf die Konfiguration, die Konnektivität mit anderen Syste
 
    Sie kann sich je nach dem Standort des neuen Servers ändern. Die Kunden können jedoch ihre aktuelle Zeitzone beibehalten.
 
-   [Weitere Infos](../../workflow/using/managing-time-zones.md) über die Zeitzonenverwaltung in Adobe Campaign Classic v7.
+   [Weitere Informationen](../../workflow/using/managing-time-zones.md) über die Zeitzonenverwaltung in Adobe Campaign Classic v7.
 
 
 ## Sicherheit und Berechtigungen
