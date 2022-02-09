@@ -6,10 +6,10 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: 0d3e7046-313a-42a6-9155-3365e8d60bac
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 3b523e53440ba6ae107b597c7ebf226195126bde
 workflow-type: tm+mt
 source-wordcount: '282'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -24,7 +24,7 @@ Jeweils zu Beginn einer neuen Saison werden geeignete sportliche Aktivitäten be
 ![](assets/incremental_query_example.png)
 
 1. Erstellen Sie einen neuen Workflow und positionieren Sie eine inkrementelle Abfrage mit anschließendem Listen-Update im Diagramm.
-1. Konfigurieren Sie in der Aktivität den Tab **[!UICONTROL Inkrementelle Abfrage]** (wie im Abschnitt [Abfragen erstellen](query.md#creating-a-query) beschrieben).
+1. Konfigurieren Sie die **[!UICONTROL Inkrementelle Abfrage]** Registerkarte der Aktivität, wie in [Abfragen erstellen](query.md#creating-a-query).
 1. Gehen Sie in den Tab **[!UICONTROL Planung &amp; Verlauf]** und geben Sie einen Verlaufsumfang von 270 Tagen an. Ein bereits angesprochener Empfänger wird innerhalb der nächsten 270 Tage, also ungefähr 9 Monate, nicht mehr im Rahmen dieser Kampagne kontaktiert.
 
    Klicken Sie dann auf die Schaltfläche **[!UICONTROL Ändern...]**.

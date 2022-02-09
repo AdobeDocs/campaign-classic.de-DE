@@ -1,19 +1,17 @@
 ---
 product: campaign
-title: Workflow erstellen
+title: Erstellen eines Workflows
 description: Erfahren Sie, wie Sie einen Workflow erstellen.
-audience: workflow
-content-type: reference
-topic-tags: -general-operation
+feature: Workflows
 exl-id: 8ba20ccd-b03f-4c4f-87c1-a21e80d8e4be
-source-git-commit: 638b259462d3e01d744567e56d67a120359dc34a
+source-git-commit: 3b523e53440ba6ae107b597c7ebf226195126bde
 workflow-type: tm+mt
-source-wordcount: '1680'
-ht-degree: 100%
+source-wordcount: '1678'
+ht-degree: 96%
 
 ---
 
-# Workflow erstellen {#building-a-workflow}
+# Erstellen eines Workflows {#building-a-workflow}
 
 ![](../../assets/common.svg)
 
@@ -27,7 +25,7 @@ In diesem Abschnitt werden die wichtigsten Grundsätze und Best Practices für d
 * Technische Workflows aufrufen und anlegen, siehe [Technische Workflows](#technical-workflows).
 * Workflows mit Vorlagen erstellen, siehe [Workflow-Vorlagen](#workflow-templates).
 
-## Neuen Workflow erstellen {#creating-a-new-workflow}
+## Erstellen Sie einen neuen Workflow {#creating-a-new-workflow}
 
 Öffnen Sie in **[!UICONTROL Explorer]** einen Workflow-Ordner. Standardmäßig können Sie **[!UICONTROL Profile und Zielgruppen]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Zielgruppen-Workflow]** verwenden.
 
@@ -45,7 +43,7 @@ Benennen Sie den Workflow und klicken Sie auf **[!UICONTROL Speichern]**.
 >
 >Vergewissern Sie sich bei der Änderung des internen Namens einer Workflow-Aktivität bzw. eines Workflows, dass Sie den Workflow speichern, bevor Sie ihn schließen, damit der neue interne Name richtig berücksichtigt wird.
 
-## Aktivitäten hinzufügen und verbinden {#adding-and-linking-activities}
+## Aktivitäten hinzufügen und verknüpfen {#adding-and-linking-activities}
 
 In diesem Schritt werden die Aktivitäten im Diagramm positioniert, konfiguriert und miteinander in Beziehung gesetzt. Bisher zeigt das Workflow-Fenster nur den Titel und den Status des Workflows an (In Bearbeitung). Der untere Bereich des Fensters dient der Konzeption des Diagramms. Er enthält eine Symbolleiste, eine Palette mit den verfügbaren Aktivitäten (links) und das Diagramm selbst (rechts).
 
@@ -82,11 +80,11 @@ So erstellen Sie das Diagramm
 
 >[!CAUTION]
 >
->Sie können Aktivitäten innerhalb eines Workflows kopieren und einfügen. Wir raten jedoch davon ab, Aktivitäten über verschiedene Workflows hinweg zu kopieren und einzufügen. Einige Einstellungen, die Aktivitäten wie Sendungen und Planung betreffen, können zu Konflikten und Fehlern beim Ausführen des Ziel-Workflows führen. Stattdessen empfehlen wir, Workflows zu **duplizieren**. Weitere Informationen finden Sie unter [Workflows duplizieren ](#duplicating-workflows).
+>Sie können Aktivitäten innerhalb eines Workflows kopieren und einfügen. Wir raten jedoch davon ab, Aktivitäten über verschiedene Workflows hinweg zu kopieren und einzufügen. Einige Einstellungen, die Aktivitäten wie Sendungen und Planung betreffen, können zu Konflikten und Fehlern beim Ausführen des Ziel-Workflows führen. Stattdessen empfehlen wir, Workflows zu **duplizieren**. Weitere Informationen finden Sie unter [Workflows duplizieren](#duplicating-workflows).
 
 Die Darstellung und das Layout des Diagramms kann mithilfe der folgenden Elemente angepasst werden:
 
-* **Symbolleiste**
+* **Symbolleiste verwenden**
 
    Über die Symbolleiste des Workflow-Editors besteht Zugriff auf Funktionen zur Formatierung und Ausführung der Workflows.
 
@@ -109,7 +107,7 @@ Die Darstellung und das Layout des Diagramms kann mithilfe der folgenden Element
 
 * **Hintergrundbild und Symbole**
 
-   Das Hintergrundbild des Diagramms und die Symbole der einzelnen Aktivitäten können personalisiert werden. Siehe [Bilder für Aktivitäten verwalten](managing-activity-images.md).
+   Das Hintergrundbild des Diagramms und die Symbole der einzelnen Aktivitäten können personalisiert werden. Siehe [Aktivitätsbilder ändern](managing-activity-images.md).
 
 ## Aktivitäten konfigurieren {#configuring-activities}
 
@@ -147,9 +145,9 @@ Im Gegensatz dazu werden die im Rahmen einer Kampagne erstellten Zielgruppen-Wor
 
 In den folgenden Abschnitten finden Sie Details zum Erstellen eines Zielgruppen-Workflows:
 
-1. **Identifizieren** von Daten in der Datenbank, siehe [Abfragen erstellen](targeting-data.md#creating-queries)
-1. **Vorbereiten** von Daten auf die Versandanforderungen, siehe [Daten anreichern und ändern](targeting-data.md#enriching-and-modifying-data)
-1. **Verwenden** von Daten für Aktualisierungen oder in einem Versand, siehe [Datenbankstruktur aktualisieren](how-to-use-workflow-data.md#updating-the-database)
+1. **Identifizieren** Daten in der Datenbank - siehe [Abfragen erstellen](targeting-data.md#creating-queries)
+1. **Vorbereiten** Daten zur Erfüllung von Versandanforderungen - siehe [Daten anreichern und ändern](targeting-data.md#enriching-and-modifying-data)
+1. **Verwendung** Daten zur Durchführung von Aktualisierungen oder innerhalb eines Versands - siehe [Datenbank aktualisieren](how-to-use-workflow-data.md#updating-the-database)
 
 Die Ergebnisse der Anreicherungen werden gespeichert und können über Personalisierungsfelder beispielsweise zur Gestaltung individueller Nachrichten verwendet werden. Weitere Informationen hierzu finden Sie unter [Zielgruppendaten](data-life-cycle.md#target-data)
 
@@ -239,7 +237,7 @@ Die duplizierte Funktion steht in der Ansicht einer Kampagne nicht direkt zur Ve
 
 Sie können jedoch eine Ansicht erstellen, die alle Workflows in Ihrer Instanz anzeigt. In dieser Ansicht können Sie Workflows mit **Duplizieren in** duplizieren.
 
-**Erstellen wir zunächst eine Ansicht:**
+**Erstellen einer Ansicht**
 
 1. Navigieren Sie in **Explorer** zu dem Ordner, in dem Sie Ihre Ansicht erstellen müssen.
 1. Klicken Sie mit der rechten Maustaste und gehen Sie zu **Neuen Ordner hinzufügen** > **Prozess**, wählen Sie **Workflows** aus.
@@ -255,7 +253,7 @@ Der neue Ordner **Workflows** wird erstellt.
 
 Der Ordner wird nun mit allen Workflows Ihrer Instanz gefüllt.
 
-**Kampagnen-Workflows duplizieren**
+**Kampagnen-Workflow duplizieren**
 
 1. Wählen Sie in der Workflow-Ansicht einen Kampagnen-Workflow aus.
 1. Klicken Sie mit der rechten Maustaste auf **Duplizieren in**.

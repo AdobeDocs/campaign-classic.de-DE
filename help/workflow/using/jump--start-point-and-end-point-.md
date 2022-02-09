@@ -6,10 +6,10 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 exl-id: 0d2d04e7-cb86-4456-b7cf-513c71210355
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 3b523e53440ba6ae107b597c7ebf226195126bde
 workflow-type: tm+mt
 source-wordcount: '117'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -31,4 +31,4 @@ Ein Workflow kann mehrere derartige Sprung-Paare aufweisen. Sprung-Paare werden 
 
 ![](assets/s_user_segmentation_jump_in.png)
 
-Für eine bessere Lesbarkeit des Diagramms können Sie das den Sprüngen zugeordnete Symbol durch die entsprechende Ziffer ersetzen. Siehe [Bilder für Aktivitäten verwalten](managing-activity-images.md).
+Für eine bessere Lesbarkeit des Diagramms können Sie das den Sprüngen zugeordnete Symbol durch die entsprechende Ziffer ersetzen. Siehe [Aktivitätsbilder ändern](managing-activity-images.md).

@@ -4,10 +4,10 @@ title: Abfrage
 description: Erfahren Sie mehr über die Workflow-Aktivität "Abfrage".
 feature: Query Editor
 exl-id: 20d03627-cd56-46da-bc02-73b48a02a350
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 3b523e53440ba6ae107b597c7ebf226195126bde
 workflow-type: tm+mt
 source-wordcount: '1692'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -26,7 +26,7 @@ Weitere Informationen zu Beispielen für Abfragen finden Sie in diesem [Abschnit
 
 ![](assets/s_user_segmentation_wizard_9.png)
 
-Weitere Informationen zum Verwenden und Umgang mit Zusatzdaten finden Sie unter [Daten hinzufügen](#adding-data).
+Weitere Informationen zur Verwendung und Verwaltung von Zusatzdaten finden Sie unter [Daten hinzufügen](#adding-data).
 
 Klicken Sie auf den Link **[!UICONTROL Abfrage bearbeiten...]** und gehen Sie wie folgt vor, um Zielgruppentyp, Beschränkungen und Auswahlkriterien der anzusprechenden Population zu definieren:
 
@@ -90,7 +90,7 @@ Gehen Sie folgendermaßen vor, um Daten aus der Adobe-Campaign-Datenbank hinzuzu
 
    Hinzugefügt werden können des Weiteren:
 
-   * Aus Daten der Zielpopulation berechnete Felder oder Aggregate (z. B. Anzahl an ausstehenden Käufen im vergangenen Monat, durchschnittlicher Warenkorb usw.). Ein Beispiel finden Sie unter [Datenauswahl](targeting-data.md#selecting-data).
+   * Aus Daten der Zielpopulation berechnete Felder oder Aggregate (z. B. Anzahl an ausstehenden Käufen im vergangenen Monat, durchschnittlicher Warenkorb usw.). Ein Beispiel finden Sie unter [Daten auswählen](targeting-data.md#selecting-data).
    * Neue Felder (über die Schaltfläche **[!UICONTROL Hinzufügen]** rechts von der Liste der Ausgabespalten).
 
       Es ist darüber hinaus möglich, Informationskollektionen hinzuzufügen, beispielsweise eine Vertragsliste, die letzten fünf Sendungen usw. Kollektionen entsprechen Feldern, die für ein Profil mehrere Werte aufweisen können (1:n-Relation). Weitere Informationen hierzu finden Sie unter [Zusätzliche Daten bearbeiten](targeting-data.md#editing-additional-data).

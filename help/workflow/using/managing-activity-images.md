@@ -1,19 +1,16 @@
 ---
 product: campaign
-title: Bilder für Aktivitäten verwalten
-description: Bilder für Aktivitäten verwalten
-audience: workflow
-content-type: reference
-topic-tags: advanced-management
+title: Aktivitätsbilder ändern
+description: Erfahren Sie, wie Sie das Aktivitätsbild ändern
 exl-id: cafdbc10-9c10-4d42-a485-c9880df8d371
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 3b523e53440ba6ae107b597c7ebf226195126bde
 workflow-type: tm+mt
-source-wordcount: '168'
-ht-degree: 100%
+source-wordcount: '172'
+ht-degree: 92%
 
 ---
 
-# Bilder für Aktivitäten verwalten{#managing-activity-images}
+# Aktivitätsbilder ändern{#change-activity-images}
 
 ![](../../assets/common.svg)
 
