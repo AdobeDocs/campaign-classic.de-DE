@@ -2,11 +2,8 @@
 product: campaign
 title: Über die Angebotssimulation
 description: Über die Angebotssimulation
-audience: interaction
-content-type: reference
-topic-tags: simulating-offers
 exl-id: facaa88e-1fa2-4189-9d8f-348aaef3e235
-source-git-commit: d835da6c7b55d9bf70b6b5dc58880718e12211d5
+source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 100%
@@ -50,7 +47,8 @@ Gehen Sie wie folgt vor, um eine Angebotssimulation zu erstellen:
 
    ![](assets/offer_simulation_004.png)
 
-1. Fügen Sie gegebenenfalls Berichtsachsen hinzu, um den Bericht **[!UICONTROL Angebotsverteilung nach Rang]** anzureichern (optional).
+1. Fügen Sie gegebenenfalls Berichtsachsen hinzu, um den Bericht **[!UICONTROL Angebotsverteilung nach Ranking]** anzureichern (optional).
+
 
    Weitere Informationen hierzu finden Sie unter [Berichtsachsen hinzufügen](../../interaction/using/simulation-scope.md#adding-reporting-axes).
 

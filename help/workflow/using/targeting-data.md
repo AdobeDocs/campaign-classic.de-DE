@@ -2,14 +2,12 @@
 product: campaign
 title: Zielgruppendaten
 description: Weitere Informationen zu Zielgruppendaten in einem Workflow.
-audience: workflow
-content-type: reference
-topic-tags: -general-operation
+feature: Query Editor, Data Management
 exl-id: 74b82019-bdab-4442-84cf-5ad18d0db788
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
 workflow-type: tm+mt
 source-wordcount: '2031'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -19,7 +17,7 @@ ht-degree: 100%
 
 ## Abfragen erstellen {#creating-queries}
 
-### Datenauswahl {#selecting-data}
+### Daten auswählen {#selecting-data}
 
 Mit einer **[!UICONTROL Abfrageaktivität]** können Sie grundlegende Daten zum Aufbau der Zielpopulation auswählen. Weitere Informationen hierzu finden Sie unter [Abfragen erstellen](query.md#creating-a-query).
 
@@ -79,9 +77,9 @@ Als Filterbedingungen können hier entweder nur die Zusatzdaten oder Zusatzdaten
 
 Weitere Informationen hierzu finden Sie unter [Teilmengen mithilfe der Aufspaltungs-Aktivität erstellen](#creating-subsets-using-the-split-activity).
 
-## Daten segmentieren {#segmenting-data}
+## Segmentdaten {#segmenting-data}
 
-### Populationen vereinen (Vereinigung) {#combining-several-targets--union-}
+### Mehrere Ziele kombinieren (Union) {#combining-several-targets--union-}
 
 Über die Vereinigungsaktivität lassen sich die Ergebnisse verschiedener Aktivitäten in einer Transition zusammenfassen. Dabei müssen die Mengen nicht zwingend homogen sein.
 
@@ -119,7 +117,7 @@ Zur Abstimmung der Daten stehen folgende Optionen zur Verfügung:
 
    ![](assets/join_limit_nb_priority.png)
 
-### Gemeinsame Daten aus Populationen extrahieren (Schnittmenge) {#extracting-joint-data--intersection-}
+### Gemeinsame Daten extrahieren (Schnittmenge) {#extracting-joint-data--intersection-}
 
 ![](assets/traitements.png)
 
@@ -129,7 +127,7 @@ Es ist außerdem möglich, nur eine Auswahl an Spalten oder nur die Spalten, die
 
 Die Schnittmengenaktivität wird im Abschnitt [Schnittmenge](intersection.md) detailliert beschrieben.
 
-### Populationen ausschließen (Ausschluss) {#excluding-a-population--exclusion-}
+### Exclude a population (Exclusion) {#excluding-a-population--exclusion-}
 
 Über die Ausschlussaktivität lassen sich Elemente aus einer Population ausschließen, die auch in mindestens einer anderen Population enthalten sind. Die Zielgruppendimension am Aktivitätsausgang entspricht der der Hauptmenge.
 
@@ -139,7 +137,7 @@ Die Abstimmung der Daten kann über die Kennungen, eine Achsenänderung oder ein
 
 ![](assets/exclusion_edit_add_rule_01.png)
 
-### Teilmengen mithilfe der Aufspaltungs-Aktivität erstellen {#creating-subsets-using-the-split-activity}
+### Teilmengen mithilfe der Aufspaltung erstellen {#creating-subsets-using-the-split-activity}
 
 Bei der Aktivität **[!UICONTROL Aufspaltung]** handelt es sich um eine Standardaktivität, die die unbegrenzte Erstellung von Teilmengen mit einer oder mehreren Filterdimensionen ermöglicht. Es kann eine gemeinsame ausgehende Transition oder eine Transition pro Teilmenge erzeugt werden.
 
@@ -215,7 +213,7 @@ Dies ist beispielsweise dann interessant, wenn Sie eine einzige Versandaktivitä
 
 Teilmengen können auch mithilfe der Aktivität **[!UICONTROL Segmente]** erstellt werden. Weitere Informationen hierzu finden Sie im Abschnitt [Segmente](cells.md).
 
-### Verwendung der gefilterten Daten {#using-targeted-data}
+### Use targeted data {#using-targeted-data}
 
 Nach Identifizierung und Aufbereitung der Daten können diese in folgenden Kontexten verwendet werden:
 

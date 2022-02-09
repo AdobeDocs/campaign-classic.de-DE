@@ -2,20 +2,16 @@
 product: campaign
 title: Über Workflow-Anwendungsfälle
 description: Erfahren Sie mehr über Anwendungsfälle, die Sie mit Workflows in Campaign Classic ausführen können.
-audience: workflow
-content-type: reference
-topic-tags: about-workflows-and-data-management
-internal: n
-snippet: y
+feature: Workflows, Data Management
 exl-id: 7c093b34-6b0e-4403-9d9d-fba9ba39ea41
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
 workflow-type: tm+mt
-source-wordcount: '207'
+source-wordcount: '206'
 ht-degree: 100%
 
 ---
 
-# Über Workflow-Anwendungsfälle {#about-workflow-use-cases}
+# Anwendungsfälle für Workflows {#about-workflow-use-cases}
 
 ![](../../assets/common.svg)
 

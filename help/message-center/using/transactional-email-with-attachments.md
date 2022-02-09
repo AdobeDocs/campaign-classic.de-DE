@@ -1,14 +1,12 @@
 ---
 product: campaign
 title: Transaktions-E-Mails mit Anhängen senden
-description: Erfahren Sie, wie Sie mit Adobe Campaign Classic Transaktions-E-Mails mit individuellen und/oder personalisierten Anhängen versenden können.
-audience: message-center
-content-type: reference
-topic-tags: use-case
+description: Erfahren Sie, wie Sie mit Adobe Campaign Transaktions-E-Mails mit individuellen und/oder personalisierten Anhängen versenden können.
+feature: Transactional Messaging
 exl-id: 755d2364-f6c4-4943-97e8-3ed52a0f2665
-source-git-commit: 7f4bbf3e79d6cdaf17987b9307ebf12801abad22
+source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
 workflow-type: tm+mt
-source-wordcount: '628'
+source-wordcount: '627'
 ht-degree: 100%
 
 ---
