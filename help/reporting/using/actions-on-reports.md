@@ -2,14 +2,11 @@
 product: campaign
 title: Mit Berichten arbeiten
 description: Mit Berichten arbeiten
-audience: reporting
-content-type: reference
-topic-tags: creating-new-reports
 exl-id: b30cdeaf-4ad6-473d-bdbc-91984755b609
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '573'
-ht-degree: 100%
+source-wordcount: '571'
+ht-degree: 97%
 
 ---
 
@@ -25,7 +22,7 @@ Die Symbolleiste bietet die Möglichkeit, den Bericht zu exportieren, zu drucken
 
 ![](assets/s_ncs_advuser_report_wizard_04.png)
 
-## Berichtexport {#exporting-a-report}
+## Bericht exportieren {#exporting-a-report}
 
 Wählen Sie in der Dropdown-Liste das Format aus, in dem der Bericht exportiert werden soll: .xls, .pdf oder .ods.
 
@@ -41,7 +38,7 @@ Passen Sie die Parameter **[!UICONTROL Papier]** und **[!UICONTROL Rand]** Ihren
 
 ![](assets/s_ncs_advuser_report_wizard_021.png)
 
-### Nach Microsoft Excel exportieren {#exporting-into-microsoft-excel}
+### Exportieren in Microsoft Excel {#exporting-into-microsoft-excel}
 
 Für Berichte vom Typ **[!UICONTROL Liste mit Gruppierung]**, die im Excel-Format exportiert werden sollen, gelten folgende Empfehlungen und Einschränkungen:
 
@@ -56,7 +53,7 @@ Für Berichte vom Typ **[!UICONTROL Liste mit Gruppierung]**, die im Excel-Forma
 * Die Berichte dürfen keine spezifische Zellenformatierung aufweisen. Es empfiehlt sich, das **[!UICONTROL Formular-Rendering]** zu verwenden, um das Format der Zellen der Tabelle zu definieren. Der Zugriff auf das **[!UICONTROL Formular-Rendering]** erfolgt im Knoten **[!UICONTROL Administration > Konfiguration > Formular-Rendering]**.
 * Es wird empfohlen, keinen HTML-Inhalt einzufügen.
 * Wenn ein Bericht mehrere Elemente vom Typ Tabelle, Grafik etc. enthält, werden diese untereinander exportiert.
-* Sie können den Zeilenumbruch in Zellen erzwingen: Diese Konfiguration wird in Excel beibehalten. Weitere Informationen hierzu finden Sie unter [Zellenformat bestimmen](../../reporting/using/creating-a-table.md#defining-cell-format).
+* Sie können den Zeilenumbruch in Zellen erzwingen: Diese Konfiguration wird in Excel beibehalten. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../reporting/using/creating-a-table.md#defining-cell-format).
 
 ### Export verzögern {#postpone-the-export}
 
@@ -84,7 +81,7 @@ Weiterführende Informationen zur Datei **serverConf.xml** finden Sie in [diesem
 
 Weiterführende Informationen zum **nlserver**-Service finden Sie in [diesem Abschnitt](../../production/using/administration.md).
 
-## Berichte drucken {#printing-a-report}
+## Bericht drucken {#printing-a-report}
 
 Sie haben die Möglichkeit, Ihren Bericht zu drucken. Klicken Sie hierzu auf das Drucker-Symbol. Das Druck-Dialogfenster öffnet sich.
 

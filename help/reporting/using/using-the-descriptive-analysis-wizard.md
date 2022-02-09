@@ -1,19 +1,16 @@
 ---
 product: campaign
-title: Analyse-Assistenten (deskriptiv) verwenden
-description: Analyse-Assistenten (deskriptiv) verwenden
-audience: reporting
-content-type: reference
-topic-tags: analyzing-populations
+title: Verwenden des Assistenten für deskriptive Analysen
+description: Verwenden des Assistenten für deskriptive Analysen
 exl-id: 848d67c7-d1dc-4eba-bcb8-672e76d8ce87
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
 source-wordcount: '1644'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
-# Analyse-Assistenten (deskriptiv) verwenden{#using-the-descriptive-analysis-wizard}
+# Verwenden des Assistenten für deskriptive Analysen{#using-the-descriptive-analysis-wizard}
 
 ![](../../assets/common.svg)
 
@@ -51,19 +48,19 @@ Dort kann er über einen Rechtsklick auf die jeweilige Auswahl gestartet werden.
 
    Der Abschnitt [Qualitative Datenanalyse](../../reporting/using/use-cases.md#qualitative-data-analysis) enthält ein Beispiel einer deskriptiven Analyse der Empfänger.
 
-* Platzieren Sie im Kontext eines **Workflows** den Cursor auf eine Transition, die auf die Empfängertabelle zeigt, klicken Sie mit der rechten Maustaste und wählen Sie **[!UICONTROL Zielgruppe analysieren]** aus. Weitere Informationen hierzu finden Sie im Beispiel unter [Analyse der Zielgruppe einer Workflow-Transition](../../reporting/using/use-cases.md#analyzing-a-transition-target-in-a-workflow).
+* Platzieren Sie im Kontext eines **Workflows** den Cursor auf eine Transition, die auf die Empfängertabelle zeigt, klicken Sie mit der rechten Maustaste und wählen Sie **[!UICONTROL Zielgruppe analysieren]** aus. Weitere Informationen hierzu finden Sie im Beispiel unter [Analyse der Zielgruppe einer Transition in einem Workflow](../../reporting/using/use-cases.md#analyzing-a-transition-target-in-a-workflow).
 * Um **Listen** zu analysieren, wählen Sie eine oder mehrere aus und befolgen Sie die gleiche Vorgehensweise wie bei der Empfängeranalyse.
 * Im Kontext eines **Versands** können Sie die Zielgruppen einer oder mehrerer Sendungen analysieren, indem Sie die jeweiligen Sendungen markieren und dann per Rechtsklick **[!UICONTROL Aktionen > Analysieren...]** im Kontextmenü auswählen, wie im folgenden Beispiel:
 
    ![](assets/reporting_descriptive_from_deliveries.png)
 
-   Beispiele für deskriptive Analysen für Sendungen finden Sie unter [Populationen analysieren](../../reporting/using/use-cases.md#analyzing-a-population) und unter [Analyse der Empfänger-Trackinglogs](../../reporting/using/use-cases.md#analyzing-recipient-tracking-logs).
+   Beispiele für deskriptive Analysen für Sendungen finden Sie hier: [Population analysieren](../../reporting/using/use-cases.md#analyzing-a-population) und hier: [Empfänger-Trackinglogs analysieren](../../reporting/using/use-cases.md#analyzing-recipient-tracking-logs).
 
 ## Vorlage &quot;Qualitative Verteilung&quot; konfigurieren {#configuring-the-qualitative-distribution-template}
 
 Die Vorlage **[!UICONTROL Qualitative Verteilung]** ermöglicht Statistiken über alle Datentypen (Firmenname, E-Mail-Domain etc.).
 
-Die Konfigurationsoptionen, die für einen Bericht verfügbar sind, der über die Vorlage für die **[!UICONTROL Qualitative Verteilung]** erstellt wird, werden unter [Datenanzeige in der Tabelle](#displaying-data-in-the-table) beschrieben. Ein vollständiges Beispiel wird in [Populationen analysieren](../../reporting/using/use-cases.md#analyzing-a-population) beschrieben.
+Konfigurationsoptionen für einen Bericht, der über das **[!UICONTROL Qualitative Verteilung]** Vorlagen werden im Abschnitt [Daten in der Tabelle anzeigen](#displaying-data-in-the-table). Ein vollständiges Beispiel wird im Abschnitt [Population analysieren](../../reporting/using/use-cases.md#analyzing-a-population).
 
 Folgende Optionen stehen, abhängig von den gewählten Parametern, bei Nutzung der qualitativen Datenanalyse zur Verfügung:
 
@@ -108,7 +105,7 @@ Die vorgeschlagenen Optionen können abhängig vom Inhalt dieses Felds variieren
 
    ![](assets/reporting_descriptive_initialize_modulo_result.png)
 
-### Datenanzeige in der Tabelle {#displaying-data-in-the-table}
+### Daten in der Tabelle anzeigen {#displaying-data-in-the-table}
 
 Über die Symbolleiste kann die Anzeige der Variablen in der Tabelle angepasst werden: Spalten löschen, Daten in Zeilen statt in Spalten anzeigen, Reihenfolge der Daten ändern, Werteberechnung einsehen oder ändern.
 
@@ -118,7 +115,7 @@ Im oberen Bereich des Fensters wird die Anzeige konfiguriert.
 
 Sie können den Namen der Statistiken und Zwischensummen anzeigen oder ausblenden und die Orientierung der Statistiken wählen. Weitere Informationen finden Sie unter [Anzeigeparameter des Analyseberichts](../../reporting/using/processing-a-report.md#analysis-report-display-settings).
 
-### Datenanzeige in der Grafik {#displaying-data-in-the-chart}
+### Daten in der Grafik anzeigen {#displaying-data-in-the-chart}
 
 Im ersten Schritt des Analyse-Assistenten können Sie angeben, die Daten nur in grafischer Form und nicht in tabellarischer anzeigen zu lassen. In diesem Fall werden die Variablen im Zuge der Grafikkonfiguration ausgewählt. Wählen Sie zunächst die Anzahl der anzuzeigenden Variablen sowie die betroffenen Datenbankfelder aus.
 
@@ -182,7 +179,7 @@ Folgende Funktionen stehen zur Auswahl:
 
       ![](assets/report_compute_data_sample4.png)
 
-### Anzeige des Berichts {#displaying-the-report}
+### Bericht anzeigen {#displaying-the-report}
 
 Im letzten Schritt des Assistenten wird der Bericht angezeigt, d. h. die zuvor konfigurierte Tabelle und/oder Grafik.
 
@@ -198,7 +195,7 @@ Wenn der Bericht eine Grafik enthält, können die angezeigten Informationen mit
 
 ![](assets/report_display_data_in_graph.png)
 
-## Vorlage &quot;Quantitative Verteilung&quot; konfigurieren {#configuring-the-quantitative-distribution-template}
+## Vorlage für die quantitative Verteilung konfigurieren {#configuring-the-quantitative-distribution-template}
 
 Um eine deskriptive Analyse eigenständig zu verwalten, kreuzen Sie die Option **Neue deskriptive Analyse basierend auf einer Vorlage** an, sofern sie nicht bereits standardmäßig ausgewählt ist.
 

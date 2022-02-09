@@ -1,19 +1,16 @@
 ---
 product: campaign
-title: Grafiken erstellen
-description: Grafiken erstellen
-audience: reporting
-content-type: reference
-topic-tags: creating-new-reports
+title: Diagramm erstellen
+description: Erfahren Sie, wie Sie ein Diagramm erstellen
 exl-id: d32b614f-82c1-4363-816c-4ebedaa5cfe9
-source-git-commit: 7fa8cea04fb4e25187c48ad19330815e9b522b37
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 100%
+source-wordcount: '549'
+ht-degree: 98%
 
 ---
 
-# Grafiken erstellen{#creating-a-chart}
+# Diagramm erstellen{#creating-a-chart}
 
 ![](../../assets/common.svg)
 

@@ -2,13 +2,10 @@
 product: campaign
 title: Versandberichte
 description: Versandberichte
-audience: reporting
-content-type: reference
-topic-tags: accessing-built-in-reports
 exl-id: dcbf280c-3040-4218-a453-1497662fef2e
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '211'
 ht-degree: 100%
 
 ---
@@ -27,7 +24,6 @@ Folgende Berichttypen stehen zur Verfügung:
 
 Der Zugriff auf Berichte ist über die Startseite der Clientkonsole, das Bericht-Dashboard oder die Versandliste möglich. Der Anzeigemodus eines Berichts hängt vom Kontext ab. Die wichtigsten Berichte stehen auf der Startseite zur Verfügung und ermöglichen einen schnellen Zugang zu Versanddaten. Die zugrunde liegende Liste kann Ihren Bedürfnissen entsprechend angepasst werden. Weitere Informationen dazu finden Sie in [diesem Abschnitt](../../reporting/using/about-reports-creation-in-campaign.md).
 
-## Berichte verwenden {#using-reports}
 
 Im Bericht-Dashboard ermöglicht ein Filterfeld das schnelle Auffinden eines bestimmten Berichts aus der Liste.
 

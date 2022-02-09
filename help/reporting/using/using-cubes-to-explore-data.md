@@ -2,14 +2,11 @@
 product: campaign
 title: Cubes zur Datenanalyse verwenden
 description: Cubes zur Datenanalyse verwenden
-audience: reporting
-content-type: reference
-topic-tags: designing-reports-with-cubes
 exl-id: 32696bbf-1415-4214-837f-5437fdb8b4d4
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
 source-wordcount: '991'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -19,23 +16,23 @@ ht-degree: 100%
 
 Marketing Analytics ermöglicht es, auf vereinfachte Weise Berichte zu erstellen und Daten aus der Datenbank mithilfe von Cubes zu identifizieren und auszuwählen. Folgende Möglichkeiten stehen zur Verfügung:
 
-* Erstellung von Cube-basierten Berichten. Der Prozess wird hier detailliert beschrieben: [Daten eines Berichts analysieren](#exploring-the-data-in-a-report).
-* Abruf von Daten der Datenbank und Gruppierung in Listen, um beispielsweise Ziele und Sendungen zu identifizieren und zu erstellen. Weitere Informationen finden Sie unter [Zielpopulation erstellen](#building-a-target-population).
-* Fügen Sie eine Pivot-Tabelle in einen Bericht ein und verweisen Sie auf einen darin vorhandenen Cube. Weitere Informationen finden Sie unter [Pivot-Tabellen in Berichte einfügen](#inserting-a-pivot-table-into-a-report).
+* Erstellung von Cube-basierten Berichten. Der Prozess wird hier beschrieben: [Daten eines Berichts durchsuchen](#exploring-the-data-in-a-report).
+* Abruf von Daten der Datenbank und Gruppierung in Listen, um beispielsweise Ziele und Sendungen zu identifizieren und zu erstellen. Weitere Informationen hierzu finden Sie unter [Zielpopulation erstellen](#building-a-target-population).
+* Fügen Sie eine Pivot-Tabelle in einen Bericht ein und verweisen Sie auf einen darin vorhandenen Cube. Weitere Informationen hierzu finden Sie unter [Pivot-Tabellen in Berichte einfügen](#inserting-a-pivot-table-into-a-report).
 
 >[!NOTE]
 >
 >Marketing Analytics ist erforderlich, um Cubes zu erstellen oder zu ändern. Weitere Informationen finden Sie unter [Über Cubes](../../reporting/using/about-cubes.md).
 
-## Daten eines Berichts analysieren {#exploring-the-data-in-a-report}
+## Daten eines Berichts durchsuchen {#exploring-the-data-in-a-report}
 
-### 1. Schritt – Erstellung eines Cube-basierten Berichts {#step-1---creating-a-report-based-on-a-cube}
+### Schritt 1: Cube-basierten Bericht erstellen {#step-1---creating-a-report-based-on-a-cube}
 
 Klicken Sie zum Erstellen eines Cube-basierten Berichts auf die Schaltfläche **[!UICONTROL Erstellen]** im Tab **[!UICONTROL Berichte]** und wählen Sie den gewünschten Cube.
 
-Der Prozess wird hier detailliert beschrieben: [Cube-basierten Bericht erstellen](../../reporting/using/creating-indicators.md#creating-a-report-based-on-a-cube).
+Der Prozess wird hier beschrieben: [Cube-basierten Bericht erstellen](../../reporting/using/creating-indicators.md#creating-a-report-based-on-a-cube).
 
-### 2. Schritt – Auswahl der Zeilen und Spalten {#step-2---selecting-lines-and-columns}
+### 2. Schritt - Zeilen und Spalten auswählen {#step-2---selecting-lines-and-columns}
 
 Die Standardanzeige beinhaltet die ersten beiden Dimensionen des Cubes (in unserem Beispiel: Alter und Stadt).
 
@@ -54,7 +51,7 @@ Die Standardanzeige beinhaltet die ersten beiden Dimensionen des Cubes (in unser
 
    Die Parameter hängen vom Datentyp und der gewählten Dimension ab.
 
-   Beispielsweise können für Daten mehrere Ebenen verfügbar sein. Weitere Informationen finden Sie unter [Kennzahlen anzeigen](../../reporting/using/concepts-and-methodology.md#displaying-measures).
+   Beispielsweise können für Daten mehrere Ebenen verfügbar sein. Weitere Informationen hierzu finden Sie unter [Anzeigemessungen](../../reporting/using/concepts-and-methodology.md#displaying-measures).
 
    Folgende Optionen stehen zur Verfügung:
 
@@ -74,7 +71,7 @@ Die Standardanzeige beinhaltet die ersten beiden Dimensionen des Cubes (in unser
 
    ![](assets/s_advuser_cube_in_report_04c.png)
 
-### 3. Schritt – Konfiguration der anzuzeigenden Kennzahlen {#step-3---configuring-the-measures-to-display}
+### 3. Schritt - Anzuzeigende Kennzahlen konfigurieren {#step-3---configuring-the-measures-to-display}
 
 Geben Sie nach der Positionierung der Zeilen und Spalten die anzuzeigenden Kennzahlen sowie ihren Anzeigemodus an.
 
@@ -96,7 +93,7 @@ Standardmäßig wird nur eine Kennzahl angezeigt. Um Kennzahlen hinzuzufügen od
 
    ![](assets/s_advuser_cube_in_report_config_02.png)
 
-   Sie können insbesondere bestimmen, ob die Titel der Kennzahlen angezeigt werden sollen. Weitere Informationen finden Sie unter [Anzeige konfigurieren](../../reporting/using/concepts-and-methodology.md#configuring-the-display).
+   Sie können insbesondere bestimmen, ob die Titel der Kennzahlen angezeigt werden sollen. Weitere Informationen hierzu finden Sie unter [Anzeige konfigurieren](../../reporting/using/concepts-and-methodology.md#configuring-the-display).
 
 1. Sie können neue Kennzahlen auf Basis von bereits existierenden erstellen. Klicken Sie hierzu auf die Schaltfläche **[!UICONTROL Kennzahl erstellen]** und geben Sie ihre Konfiguration an.
 

@@ -1,19 +1,16 @@
 ---
 product: campaign
-title: Zu analysierende Daten abrufen
-description: Zu analysierende Daten abrufen
-audience: reporting
-content-type: reference
-topic-tags: creating-new-reports
+title: Daten zur Analyse erfassen
+description: Daten zur Analyse erfassen
 exl-id: cf621374-88f9-4def-8bea-87e0ea69ecd3
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
 source-wordcount: '526'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
-# Zu analysierende Daten abrufen{#collecting-data-to-analyze}
+# Daten zur Analyse erfassen{#collecting-data-to-analyze}
 
 ![](../../assets/common.svg)
 
@@ -33,7 +30,7 @@ In jedem Fall werden die Daten über eine Aktivität vom Typ **[!UICONTROL Abfra
 
 Dieser Datenauswahl-Modus empfiehlt sich dann, wenn die Daten des Berichts über die Datenbank abgerufen oder erstellt werden. In bestimmten Fällen ist es auch möglich, die Daten direkt über die im Bericht verwendeten Elemente auszuwählen: Beim Einfügen einer Grafik beispielsweise können Sie die Quelldaten direkt auswählen. Weitere Informationen finden Sie unter [Kontext verwenden](../../reporting/using/using-the-context.md).
 
-## Datenbankschemata benutzen {#using-the-data-from-a-schema}
+## Daten aus einem Schema verwenden {#using-the-data-from-a-schema}
 
 Um direkt die mit einem Schema der Datenbank verbundenen Daten zu verwenden, wählen Sie die entsprechende Option im Abfrage-Editor aus und konfigurieren Sie die anzuwendende Abfrage.
 
@@ -41,7 +38,7 @@ Im folgenden Beispiel wird die Empfängeranzahl pro Land aus den Profilen der Da
 
 ![](assets/reporting_query_from_schema.png)
 
-## Importierte Listen benutzen {#using-an-imported-list}
+## Importierte Liste verwenden {#using-an-imported-list}
 
 Sie haben die Möglichkeit, eine Liste mit importierten Daten als Basis für Ihren Bericht zu verwenden.
 
@@ -51,7 +48,7 @@ Aktivieren Sie hierzu die Option **[!UICONTROL Importierte Liste verwenden]** in
 
 Klicken Sie auf den Link **[!UICONTROL Abfrage bearbeiten...]**, um zu bestimmen, welche Elemente aus der Liste für die Berichtserstellung abzurufen sind.
 
-## Cubes benutzen {#using-a-cube}
+## Cubes verwenden {#using-a-cube}
 
 Sie können einen Cube zur Definition der Abfrage auswählen.
 
@@ -75,7 +72,7 @@ Die Option **[!UICONTROL Mit dem Ordner filtern]** ermöglicht es, durch Angabe 
 
 ![](assets/reporting_control_folder.png)
 
-### Umfang der abgerufenen Daten begrenzen {#limiting-the-amount-of-data-collected}
+### Beschränken der Menge der erfassten Daten {#limiting-the-amount-of-data-collected}
 
 Konfigurieren Sie die Anzahl der über eine Abfrage zu extrahierenden Daten mithilfe der Optionen zur Ergebnisbegrenzung:
 

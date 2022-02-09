@@ -2,14 +2,12 @@
 product: campaign
 title: Best Practices für das Reporting
 description: Best Practices für Kampagnenberichte
-audience: reporting
-content-type: reference
-topic-tags: reporting-in-adobe-campaign
+feature: Reporting
 exl-id: 0c7f00f3-b16d-41c5-a7b1-f5a59201bf8c
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '839'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -62,7 +60,7 @@ Zur Optimierung von Erstellung, Verwendung und Beständigkeit eines Berichts mü
 
    Datenvolumen und -aktualisierung können gegebenenfalls die Anzeige des Berichts beeinträchtigen. Um Verzögerungen u. Ä. zu vermeiden, sollten entsprechende Problematiken zuvor aufmerksam überprüft werden. In diesem Zusammenhang wird empfohlen, Aggregate zu erstellen, um bestimmte Daten außerhalb des Berichts vorzuberechnen. Tracking- und Versandlogs enthaltende Tabellen können beispielsweise Millionen von Datensätzen erreichen: Diese Daten müssen in Workflows aggregiert werden, um in Berichten genutzt werden zu können.
 
-## Berichterstellung optimieren{#optimizing-report-creation}
+## Berichtsdesign optimieren{#optimizing-report-creation}
 
 ### Datenvolumen {#data-volume}
 
@@ -112,6 +110,6 @@ Adobe Campaign empfiehlt Ihnen zusätzlich die folgenden Verbesserungsmöglichke
 
    Weiterführende Informationen zur Bereinigung und Datenspeicherung finden Sie in [diesem Abschnitt](../../configuration/using/data-model-best-practices.md#data-retention).
 
-### Berichtexport {#exporting-reports}
+### Berichte exportieren {#exporting-reports}
 
 Die mit dem Export von Berichten zusammenhängenden Empfehlungen finden sich in [diesem Abschnitt](../../reporting/using/actions-on-reports.md#exporting-a-report).

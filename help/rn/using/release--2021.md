@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 0cd6bf20-da72-4cf0-9f5d-d4e8acdd324d
-source-git-commit: 1e2c20befebf2343cb0f781aa7f2bd1ed6b3f383
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '2542'
-ht-degree: 100%
+source-wordcount: '2545'
+ht-degree: 99%
 
 ---
 
@@ -215,7 +215,7 @@ Weitere Informationen finden Sie auf der Seite [Eingestellte und entfernte Funkt
 * Fehlerkorrektur – Bei der Verwendung von Web-Anwendungen werden von Trackingtags jetzt keine falschen Primärschlüssel mehr im **nms:trackingURL**-Schema erzeugt. (NEO-27931)
 * Die Kompatibilität mit ODBC 3.x wurde verbessert, um die Richtigkeit von Fehlermeldungen sicherzustellen.
 * Fehlerkorrektur – Jetzt stürzt die Konsole nicht mehr ab, wenn benutzerdefinierte Inhaltsvorlagen in E-Mail-Sendungen verwendet werden. (NEO-31547)
-* Fehlerkorrektur – Tomcat sendet jetzt auch bei langsamen Verbindungen oder einer großen Antwortgröße gültige Antworten.
+* Fehlerkorrektur – Tomcat sendet jetzt auch bei langsamen Verbindungen oder einer großen Antwortgröße gültige Antworten. (NEO-30858)
 * Fehlerkorrektur – Beim Lesen der UUID aus einer PostgreSQL-Datenbank tritt jetzt kein Fehler mehr auf.
 * Fehlerkorrektur – Die Suche nach Vorschlagsdaten in Verbindung mit Angeboten führt nicht mehr zu Leistungsproblemen. (NEO-27554)
 * Fehlerkorrektur – Der Web-Prozess reagiert jetzt auch, wenn der IMS-Dienst aktiviert ist, aber nicht reagiert.
@@ -277,7 +277,7 @@ Wenn Sie an dieser privaten Betaversion teilnehmen möchten, füllen Sie dieses 
 * Fehlerkorrektur – Jetzt werden beim erneuten Öffnen einer zuvor erstellten und gespeicherten Web-Anwendung keine Zeichen im Quellcode mehr geändert. (NEO-27597)
 * Fehlerkorrektur – Beim Aktualisieren auf einen Build, der den neuen Signaturmechanismus zum Tracking von Links bereitstellt (ab Build 19.1.4 und Campaign 20.2), tritt jetzt kein Problem mehr auf. Wenn mehrere Vorlagen mit einem Ereignis verknüpft waren, konnte die Aktualisierung zuvor dazu führen, dass beim Senden der Transaktionsnachricht die falsche Vorlage ausgewählt wurde. (NEO-28326)
 * Fehlerkorrektur – Mit dem MTA tritt jetzt kein Problem mehr auf. Zuvor konnte es passieren, dass er nicht mehr reagierte und keine Sendungen mehr verarbeiten konnte, sodass er neu gestartet werden musste. (NEO-27455)
-* Fehlerkorrektur – In der MSSQL-Datenbank tritt jetzt während Massenladevorgängen kein Problem mehr mit der Zeitstempelverwaltung in einer Spalte vom Typ &quot;Datum/Uhrzeit&quot; auf.
+* Fehlerkorrektur - Es wurde ein Problem in der MSSQL-Datenbank behoben, das im Zusammenhang mit der Zeitzonenverwaltung während Massenladevorgängen für eine Spalte vom Typ Datum steht. (NEO-27375)
 * Fehlerkorrektur – Die Workflow-Abfrage funktioniert bei Verwendung von Redshift-xtk-Funktionen jetzt fehlerfrei. Die SubDays-, SubSeconds-, SubMinutes- und SubHours-Funktionen akzeptieren nun beide Redshift-Zeitstempeltypen (NEO-24962).
 * Fehlerkorrektur – Jetzt wird keine Skript-Fehlermeldung mehr angezeigt, wenn versucht wird, eine Vorschau eines Berichts mit anonymem Zugriff zu erstellen. (NEO-27081)
 * Fehlerkorrektur – Bei der Durchführung der Versandanalyse wird die Speichernutzung auf dem Server nicht mehr verringert.

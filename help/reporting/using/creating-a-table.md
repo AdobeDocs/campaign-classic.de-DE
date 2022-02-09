@@ -1,19 +1,16 @@
 ---
 product: campaign
-title: Tabellen erstellen
-description: Tabellen erstellen
-audience: reporting
-content-type: reference
-topic-tags: creating-new-reports
+title: Tabelle erstellen
+description: Tabelle erstellen
 exl-id: 05f76bdf-6dcd-4360-9e72-0ba6a4dd0d5e
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
 source-wordcount: '2643'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
-# Tabellen erstellen{#creating-a-table}
+# Tabelle erstellen{#creating-a-table}
 
 ![](../../assets/common.svg)
 
@@ -21,13 +18,13 @@ Sie haben die Möglichkeit, in Berichten je nach anzuzeigenden Daten verschieden
 
 ![](assets/s_advuser_report_page_activity_05.png)
 
-## Liste mit Gruppierung erstellen {#creating-a-list-with-group}
+## Liste mit Gruppe erstellen {#creating-a-list-with-group}
 
 Eine **[!UICONTROL Liste mit Gruppierung]** ermöglicht es, bestimmte Daten in der Tabelle zusammenzufassen und Statistiken über die enthaltenen Daten zu erzeugen. Sie können beispielsweise Summen und Zwischensummen erstellen. Jede Gruppierung enthält eine Header-, Detail- und Footer-Zeile.
 
 >[!CAUTION]
 >
->Der die Tabelle enthaltenden **[!UICONTROL Seite]**-Aktivität muss eine **[!UICONTROL Abfrage]**- oder **[!UICONTROL Script]**-Aktivität vorangehen, um die Daten abzurufen, die im Bericht analysiert werden sollen. Weitere Informationen zu diesen Aktivitäten finden Sie unter [Zu analysierende Daten abrufen](../../reporting/using/collecting-data-to-analyze.md) und [Script-Aktivität](../../reporting/using/advanced-functionalities.md#script-activity).
+>Der die Tabelle enthaltenden **[!UICONTROL Seite]**-Aktivität muss eine **[!UICONTROL Abfrage]**- oder **[!UICONTROL Script]**-Aktivität vorangehen, um die Daten abzurufen, die im Bericht analysiert werden sollen. Weiterführende Informationen zu diesen Aktivitäten finden Sie im Abschnitt [Zu analysierende Daten erfassen](../../reporting/using/collecting-data-to-analyze.md) und [Script-Aktivität](../../reporting/using/advanced-functionalities.md#script-activity).
 
 ### Grundprinzip {#operating-principle}
 
@@ -45,7 +42,7 @@ Ein Beispiel für die vollständige Implementierung finden Sie hier: [Anwendungs
 
 Im Folgenden werden die Etappen zur Erstellung einer Tabelle vom Typ &quot;Liste mit Gruppierung&quot; kurz zusammengefasst:
 
-1. Gehen Sie zur Grafik des Berichts und platzieren Sie eine **[!UICONTROL Abfrageaktivität]**. Siehe [Zu analysierende Daten abrufen](../../reporting/using/collecting-data-to-analyze.md).
+1. Gehen Sie zur Grafik des Berichts und platzieren Sie eine **[!UICONTROL Abfrageaktivität]**. Siehe [Zu analysierende Daten erfassen](../../reporting/using/collecting-data-to-analyze.md).
 1. Geben Sie die Quelltabelle an und wählen Sie die Felder der Tabelle aus, auf die sich die Statistiken beziehen sollen.
 1. Platzieren Sie eine **[!UICONTROL Seitenaktivität]** in der Grafik. Weitere Informationen finden Sie unter [Statische Elemente](../../reporting/using/creating-a-new-report.md#static-elements).
 1. Fügen Sie ein Diagramm vom Typ **[!UICONTROL Liste mit Gruppierung]** in die Seite ein.
@@ -54,7 +51,7 @@ Im Folgenden werden die Etappen zur Erstellung einer Tabelle vom Typ &quot;Liste
    Diese Etappe ist zwingend erforderlich, um die Felder der Quelltabelle zu finden und sie in die Zellen der Tabelle einzufügen.
 
 1. Erstellen Sie die Tabelle und Ihren Inhalt.
-1. Überprüfen Sie im Tab **[!UICONTROL Vorschau]** den erstellten Bericht. Er kann nun veröffentlicht und bei Bedarf in einem anderen Format exportiert werden. Weitere Informationen finden Sie unter [Berichtexport](../../reporting/using/actions-on-reports.md#exporting-a-report).
+1. Überprüfen Sie im Tab **[!UICONTROL Vorschau]** den erstellten Bericht. Er kann nun veröffentlicht und bei Bedarf in einem anderen Format exportiert werden. Weitere Informationen hierzu finden Sie unter [Bericht exportieren](../../reporting/using/actions-on-reports.md#exporting-a-report).
 
 ### Zeilen und Spalten hinzufügen {#adding-lines-and-columns}
 
@@ -94,7 +91,7 @@ Die Breite der Spalten kann über den Menüpunkt **[!UICONTROL Spaltenformat]** 
 
 ![](assets/s_advuser_ergo_listgroup_007.png)
 
-### Zelleninhalt bestimmen {#defining-cell-content}
+### Zelleninhalt definieren {#defining-cell-content}
 
 Um eine Zeile der Tabelle zu bearbeiten und Inhalt und Format zu definieren, klicken Sie in die Zelle und nutzen Sie das Kontextmenü.
 
@@ -118,7 +115,7 @@ Wählen Sie den Menüpunkt **[!UICONTROL Ausdruck]**, um die anzuzeigenden Werte
 
    ![](assets/s_advuser_ergo_listgroup_008.png)
 
-### Zellenformat bestimmen {#defining-cell-format}
+### Zellenformat definieren {#defining-cell-format}
 
 ![](assets/s_advuser_ergo_listgroup_017.png)
 
@@ -126,7 +123,7 @@ Um das Zellenformat zu definieren, ermöglicht der Menüpunkt **[!UICONTROL Zell
 
 Diese Optionen erlauben es, die spätere Darstellung des Berichts anzupassen und die Lesbarkeit der enthaltenen Informationen zu optimieren.
 
-Das Feld **[!UICONTROL Zeilenumbruch]** ist im Rahmen eines Datenexports im Excel-Format von Nutzen: Wählen Sie den Wert **[!UICONTROL Ja]** aus, um den Zeilenumbruch zu forcieren. Dieser Wert wird beim Export berücksichtigt. Weitere Informationen finden Sie unter [Berichtexport](../../reporting/using/actions-on-reports.md#exporting-a-report).
+Das Feld **[!UICONTROL Zeilenumbruch]** ist im Rahmen eines Datenexports im Excel-Format von Nutzen: Wählen Sie den Wert **[!UICONTROL Ja]** aus, um den Zeilenumbruch zu forcieren. Dieser Wert wird beim Export berücksichtigt. Weitere Informationen hierzu finden Sie unter [Bericht exportieren](../../reporting/using/actions-on-reports.md#exporting-a-report).
 
 Über das Fenster **[!UICONTROL Zellen formatieren]** erhalten Sie Zugriff auf den folgenden Tab:
 
@@ -448,7 +445,7 @@ Es werden eine zweite Abfrage und eine zweite Seite hinzugefügt, um die Details
 
    Die zweite Seite ist nun konfiguriert.
 
-### 6. Schritt – Bericht überprüfen {#step-6---viewing-the-report}
+### 6. Schritt - Bericht anzeigen {#step-6---viewing-the-report}
 
 Um das Ergebnis der Konfiguration zu überprüfen, klicken Sie auf den Tab **[!UICONTROL Vorschau]** und wählen Sie die Option **[!UICONTROL Allgemein]** aus.
 

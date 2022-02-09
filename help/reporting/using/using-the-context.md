@@ -1,27 +1,24 @@
 ---
 product: campaign
-title: Kontext verwenden
-description: Kontext verwenden
-audience: reporting
-content-type: reference
-topic-tags: creating-new-reports
+title: Verwenden des Kontexts in Ihren Berichten
+description: Erfahren Sie, wie Sie den Kontext in Ihren Berichten verwenden
 exl-id: a19e2843-d3f9-48c3-af72-cc1bc54f6360
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
 workflow-type: tm+mt
-source-wordcount: '510'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Kontext verwenden{#using-the-context}
+# Verwenden des Kontexts in Ihren Berichten{#using-the-context}
 
 ![](../../assets/common.svg)
 
-Wenn Sie Daten in Form von **[!UICONTROL Tabellen]** oder **[!UICONTROL Diagrammen]** darstellen möchten, können sie aus zwei Quellen stammen: einer neuen Abfrage (siehe [Direkten Datenfilter definieren](#defining-a-direct-filter-on-data)) oder dem Berichtskontext (siehe [Kontextdaten verwenden](#using-context-data)).
+Wenn Sie Daten in Form von **[!UICONTROL Tabellen]** oder **[!UICONTROL charts]**, kann er aus zwei Quellen stammen: eine neue Abfrage (siehe [Direkten Datenfilter definieren](#defining-a-direct-filter-on-data)) oder dem Berichtskontext (siehe [Kontextdaten verwenden](#using-context-data)).
 
 ## Direkten Datenfilter definieren {#defining-a-direct-filter-on-data}
 
-### Datenfilter {#filtering-data}
+### Daten filtern {#filtering-data}
 
 Die Nutzung einer Aktivität vom Typ **[!UICONTROL Abfrage]** bei der Erstellung eines Berichts ist nicht obligatorisch. Die Daten können alternativ direkt in den Tabellen und Grafiken des Berichts gefiltert werden.
 
