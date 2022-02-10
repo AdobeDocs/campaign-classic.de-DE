@@ -1,16 +1,16 @@
 ---
 product: campaign
-title: Installieren von nativen Campaign Classic-Packages
+title: Native Campaign Classic-Packages installieren
 description: Erfahren Sie, wie Sie native Campaign-Pakete installieren.
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: c54102b2ec32fbea89ce41dd3c9fedb98e612996
 workflow-type: tm+mt
 source-wordcount: '1289'
 ht-degree: 22%
 
 ---
 
-# Installieren von nativen Campaign Classic-Packages{#installing-campaign-standard-packages}
+# Native Campaign Classic-Packages installieren{#installing-campaign-standard-packages}
 
 ![](../../assets/v7-only.svg)
 

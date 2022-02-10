@@ -1,23 +1,19 @@
 ---
 product: campaign
-title: Grundlagen und Datenzyklus von ACS Connector
+title: Erste Schritte mit ACS Connector
 description: Grundlagen und Datenzyklus von ACS Connector
-audience: integrations
-content-type: reference
-topic-tags: acs-connector
+feature: ACS Connector
 exl-id: 689b6117-5143-4f85-8582-2c74cae72ca2
-source-git-commit: f007dcbf63d7a69a6d532d0be99b0fa90f4f6d7a
+source-git-commit: c54102b2ec32fbea89ce41dd3c9fedb98e612996
 workflow-type: tm+mt
-source-wordcount: '2044'
-ht-degree: 100%
+source-wordcount: '2041'
+ht-degree: 96%
 
 ---
 
-# Grundlagen und Datenzyklus von ACS Connector{#acs-connector-principles-and-data-cycle}
+# Erste Schritte mit ACS Connector{#acs-connector-gs}
 
 ![](../../assets/v7-only.svg)
-
-## Einleitung {#introduction}
 
 ACS Connector ist das Bindeglied zwischen Adobe Campaign v7 und Adobe Campaign Standard. Diese in Campaign v7 integrierte Funktion repliziert automatisch Daten nach Campaign Standard und vereint somit das Beste beider Anwendungen. Campaign v7 verfügt über fortschrittliche Tools zur Verwaltung der primären Marketing-Datenbank. Durch die Replikation der Daten von Campaign v7 nach Campaign Standard können diese in einer benutzerfreundlichen Umgebung verwendet werden.
 
@@ -37,9 +33,9 @@ In diesem Dokument wird ACS Connector beschrieben. In den folgenden Abschnitten 
 
 * [Prozesse](#process): Überblick über ACS Connector und die Verwaltung der Datenreplikation
 * [Implementierung](#implementation): Erste Schritte mit ACS Connector und eine Anleitung zur Replikation einfacher und erweiterter Datensätze
-* [Synchronisieren von Profilen](../../integrations/using/synchronizing-profiles.md): Anleitung zur Replikation von Profilen und zur Erstellung von Sendungen mit diesen Profilen
-* [Synchronisieren von Audiences](../../integrations/using/synchronizing-audiences.md): Anleitung zum Auswählen einer Empfängerliste in Campaign v7 und zur Replikation dieser Liste als Audience in Campaign Standard
-* [Synchronisieren von Webanwendungen](../../integrations/using/synchronizing-web-applications.md): Anleitung zur Verknüpfung von Webanwendungen in Campaign v7 mit Campaign Standard
+* [Profile synchronisieren](../../integrations/using/synchronizing-profiles.md): Anleitung zur Replikation von Profilen und zur Erstellung von Sendungen mit diesen Profilen.
+* [Zielgruppen synchronisieren](../../integrations/using/synchronizing-audiences.md): Anleitung zum Auswählen einer Empfängerliste in Campaign v7 und zur Replikation dieser Liste an Campaign Standard als Audience.
+* [Webanwendungen synchronisieren](../../integrations/using/synchronizing-web-applications.md): Anleitung zur Verknüpfung von Campaign v7-Webanwendungen mit Campaign Standard.
 * [Fehlerbehebung bei ACS Connector](../../integrations/using/troubleshooting-the-acs-connector.md): Antworten auf häufige Probleme.
 
 >[!NOTE]
@@ -122,7 +118,7 @@ Mit der **einfachen Implementierung** können Sie Empfänger (vordefinierte Feld
 
 Die **erweiterte Implementierung** kann für komplexere Anwendungsfälle verwendet werden, beispielsweise wenn Sie zusätzliche Empfängerfelder oder benutzerdefinierte Empfängertabellen verwenden (z. B. eine Transaktionstabelle). Siehe [Erweiterte Implementierung](#advanced-implementation).
 
-### Package-Installation {#installing-the-package}
+### Installieren des Package {#installing-the-package}
 
 Damit Sie diese Funktion verwenden können, muss das **[!UICONTROL ACS Connector]** Package installiert sein. Dies wird vom technischen Adobe-Administrator oder Consultant vorgenommen.
 

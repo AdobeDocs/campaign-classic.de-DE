@@ -1,15 +1,13 @@
 ---
 product: campaign
 title: Profile synchronisieren
-description: Profile synchronisieren
-audience: integrations
-content-type: reference
-topic-tags: acs-connector
+description: Erfahren Sie, wie Sie Profile mit ACS Connector synchronisieren.
+feature: ACS Connector
 exl-id: 27970a6f-fb22-4418-b29c-c687fd62a78e
-source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
+source-git-commit: c54102b2ec32fbea89ce41dd3c9fedb98e612996
 workflow-type: tm+mt
-source-wordcount: '1258'
-ht-degree: 100%
+source-wordcount: '1264'
+ht-degree: 89%
 
 ---
 
@@ -21,7 +19,7 @@ ACS Connector repliziert Daten von Campaign v7 nach Campaign Standard. Die von C
 
 * **Neue Empfänger hinzufügen**: Erstellen Sie in Campaign v7 einen neuen Empfänger und vergewissern Sie sich, dass ein entsprechendes Profil nach Campaign Standard repliziert wurde. Siehe [Neuen Empfänger erstellen](#creating-a-new-recipient).
 * **Empfänger aktualisieren**: Bearbeiten Sie einen neuen Empfänger in Campaign v7 und vergewissern Sie sich in Campaign Standard, dass die Änderung repliziert wurde. Siehe [Empfänger bearbeiten](#editing-a-recipient).
-* **Workflow in Campaign Standard erstellen**: Erstellen Sie einen Workflow in Campaign Standard, der eine Abfrage mit einer Zielgruppe oder mit Profilen enthält, die aus Campaign v7 repliziert wurden. Lesen Sie diesbezüglich auch den Abschnitt [Workflows erstellen](#creating-a-workflow).
+* **Workflow in Campaign Standard erstellen**: Erstellen Sie einen Workflow in Campaign Standard, der eine Abfrage mit einer Zielgruppe oder mit Profilen enthält, die aus Campaign v7 repliziert wurden. Siehe [Workflow erstellen](#creating-a-workflow).
 * **Versand in Campaign Standard erstellen**: Führen Sie den Workflow aus und schließen Sie ihn mit einem Versand ab. Siehe [Versand erstellen](#creating-a-delivery).
 * **Abmelde-Link verifizieren**: Verifizieren Sie mit einer Campaign v7-Webanwendung, dass die Entscheidung des Empfängers, sich von einem Dienst abzumelden, an die Datenbank von Campaign v7 gesendet wurde. Die Entscheidung, diesen Dienst nicht mehr in Anspruch zu nehmen, wird nach Campaign Standard repliziert. Siehe [Abmelde-Link ändern](#changing-the-unsubscription-link).
 
@@ -43,7 +41,7 @@ Wenn ein Empfänger in einer von Campaign Standard gesendeten E-Mail einen Abmel
 
 ## Neuen Empfänger erstellen {#creating-a-new-recipient}
 
-1. Erstellen Sie in Campaign v7 einen neuen Empfänger für die Replikation nach Campaign Standard. Geben Sie so viele Informationen wie möglich ein, einschließlich Nachname, Vorname, E-Mail-Adresse und Postanschrift des Empfängers. Wählen Sie jedoch keine **[!UICONTROL Anrede]** aus, da diese im nächsten Abschnitt [Empfänger bearbeiten](#editing-a-recipient) hinzugefügt wird. Weitere Informationen hierzu finden Sie unter [Empfänger hinzufügen](../../platform/using/adding-profiles.md).
+1. Erstellen Sie in Campaign v7 einen neuen Empfänger für die Replikation nach Campaign Standard. Geben Sie so viele Informationen wie möglich ein, einschließlich Nachname, Vorname, E-Mail-Adresse und Postanschrift des Empfängers. Wählen Sie jedoch keine **[!UICONTROL Anrede]** da es im nächsten Abschnitt hinzugefügt wird, [Empfänger bearbeiten](#editing-a-recipient). Weitere Informationen finden Sie unter [Empfänger hinzufügen](../../platform/using/adding-profiles.md).
 
    ![](assets/acs_connect_profile_sync_01.png)
 
@@ -57,7 +55,7 @@ Wenn ein Empfänger in einer von Campaign Standard gesendeten E-Mail einen Abmel
 
 Die folgenden Schritte zum Ändern eines einzelnen Datenpunkts veranschaulichen auf einfache Weise, wie Campaign v7 bei Verwendung von Datenreplikation zur primären Datenbank für Campaign Standard wird. Das Ändern oder Löschen replizierter Daten in Campaign v7 hat dieselbe Wirkung auf die entsprechenden Daten in Campaign Standard.
 
-1. Wählen Sie unter [Neuen Empfänger erstellen](#creating-a-new-recipient) den neu erstellten Empfänger aus und bearbeiten Sie seinen Namen. Wählen Sie beispielsweise eine **[!UICONTROL Anrede]** für den Empfänger (z. B. Herr oder Frau). Weitere Informationen finden Sie unter [Profile bearbeiten](../../platform/using/editing-a-profile.md).
+1. Wählen Sie den neu erstellten Empfänger aus [Neuen Empfänger erstellen](#creating-a-new-recipient) und den Namen des Empfängers bearbeiten. Wählen Sie beispielsweise eine **[!UICONTROL Anrede]** für den Empfänger (z. B. Herr oder Frau). Weitere Informationen finden Sie unter [Profil bearbeiten](../../platform/using/editing-a-profile.md).
 
    ![](assets/acs_connect_profile_sync_03.png)
 
@@ -65,9 +63,9 @@ Die folgenden Schritte zum Ändern eines einzelnen Datenpunkts veranschaulichen 
 
    ![](assets/acs_connect_profile_sync_04.png)
 
-   Standardmäßig wird für den ACS Connector alle 15 Minuten eine Replikation durchgeführt. Weitere Informationen finden Sie unter [Datenreplikation](../../integrations/using/acs-connector-principles-and-data-cycle.md#data-replication).
+   Standardmäßig wird für den ACS Connector alle 15 Minuten eine Replikation durchgeführt. Weiterführende Informationen finden Sie unter [Datenreplikation](../../integrations/using/acs-connector-principles-and-data-cycle.md#data-replication).
 
-## Workflow erstellen       {#creating-a-workflow}
+## Erstellen eines Workflows {#creating-a-workflow}
 
 Marketer können die umfassenden von Campaign v7 replizierten Profile und Dienste in Campaign Standard nutzen. Die folgende Anleitung zeigt, wie eine Abfrage zu einem Campaign-Standard-Workflow hinzugefügt wird und mit der replizierten Datenbank genutzt wird.
 
@@ -87,11 +85,11 @@ Weiterführende Informationen und die vollständige Anleitung zu Campaign Standa
    * Ziehen Sie **[!UICONTROL Profile]** in den Arbeitsbereich. Wählen Sie über das Pulldown-Menü die Option **[!UICONTROL Ist erweiterungsfähige externe Ressource]** aus, um Profile zu finden, die von Campaign v7 repliziert wurden.
    * Schränken Sie die Zielgruppe weiter ein, indem Sie weitere Abfrageparameter in den Arbeitsbereich ziehen.
 
-## Versanderstellung {#creating-a-delivery}
+## Erstellen eines Versands {#creating-a-delivery}
 
 >[!NOTE]
 >
->In der Anleitung zur Erstellung des Versands wird der Workflow fortgesetzt, der im Abschnitt ](#creating-a-workflow)Workflow erstellen[ begonnen wurde.
+>Die Anweisungen zur Erstellung des Versands führen den Workflow fort, der mit [Workflow erstellen](#creating-a-workflow).
 
 Marketer können mit einer Campaign v7-Webanwendung verifizieren, dass die Entscheidung eines Empfängers, sich von einem Dienst abzumelden, an die Datenbank von Campaign v7 gesendet wurde. Nachdem der Empfänger auf den Abmelde-Link geklickt hat, wird die Entscheidung, diesen Dienst nicht mehr in Anspruch zu nehmen, von Campaign v7 nach Campaign Standard repliziert. Weitere Informationen finden Sie unter [Abmelde-Link ändern](#changing-the-unsubscription-link).
 
@@ -158,9 +156,9 @@ Folgen Sie den unten beschriebenen Schritten, um einem bestehenden Workflow eine
 
    ![](assets/acs_connect_profile_sync_19.png)
 
-## Abmelde-Service verifizieren {#verifying-the-unsubscription-service}
+## Überprüfen des Abmeldedienstes {#verifying-the-unsubscription-service}
 
-Befolgen Sie die Anweisungen unter [Workflow erstellen](#creating-a-workflow) und [Versand erstellen](#creating-a-delivery), bevor Sie mit den unten stehenden Schritten fortfahren.
+Befolgen Sie die Anweisungen unter [Workflow erstellen](#creating-a-workflow) und [Versand erstellen](#creating-a-delivery) bevor Sie zu den unten aufgeführten Schritten wechseln.
 
 1. Der Empfänger klickt auf den Abmelde-Link in der E-Mail.
 

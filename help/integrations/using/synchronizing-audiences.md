@@ -1,19 +1,17 @@
 ---
 product: campaign
-title: Synchronisieren von Audiences
-description: Synchronisieren von Audiences
-audience: integrations
-content-type: reference
-topic-tags: acs-connector
+title: Audiences synchronisieren
+description: Erfahren Sie, wie Sie Audiences mit ACS Connector synchronisieren.
+feature: ACS Connector
 exl-id: 88e581cf-43cd-4c43-9347-d016c62fdf42
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: c54102b2ec32fbea89ce41dd3c9fedb98e612996
 workflow-type: tm+mt
-source-wordcount: '1204'
-ht-degree: 100%
+source-wordcount: '1210'
+ht-degree: 99%
 
 ---
 
-# Synchronisieren von Audiences{#synchronizing-audiences}
+# Audiences synchronisieren{#synchronizing-audiences}
 
 ![](../../assets/v7-only.svg)
 

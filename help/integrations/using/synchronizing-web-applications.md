@@ -1,19 +1,17 @@
 ---
 product: campaign
-title: Webanwendungen synchronisieren
-description: Webanwendungen synchronisieren
-audience: integrations
-content-type: reference
-topic-tags: acs-connector
+title: Web-Anwendungen synchronisieren
+description: Erfahren Sie, wie Sie Webanwendungen mit ACS Connector synchronisieren
+feature: ACS Connector
 exl-id: 975bdc94-5da4-45ae-a3bd-e8674b447098
-source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
+source-git-commit: c54102b2ec32fbea89ce41dd3c9fedb98e612996
 workflow-type: tm+mt
-source-wordcount: '857'
-ht-degree: 100%
+source-wordcount: '864'
+ht-degree: 96%
 
 ---
 
-# Webanwendungen synchronisieren{#synchronizing-web-applications}
+# Web-Anwendungen synchronisieren{#synchronizing-web-applications}
 
 ![](../../assets/v7-only.svg)
 
@@ -25,11 +23,11 @@ Wenn Sie über zahlreiche Dienste und Webanwendungen in Campaign v7 verfügen, i
 
 Dazu ist Folgendes erforderlich:
 
-* Empfänger, die in der Campaign v7-Datenbank gespeichert und mit Campaign Standard synchronisiert werden. Siehe Abschnitt [Profile synchronisieren](../../integrations/using/synchronizing-profiles.md).
+* Empfänger, die in der Campaign v7-Datenbank gespeichert und mit Campaign Standard synchronisiert werden. Siehe Abschnitt [Profile synchronisieren](../../integrations/using/synchronizing-profiles.md) Abschnitt.
 * Ein Dienst und eine Webanwendung, die in Campaign v7 erstellt und veröffentlicht wurden.
 * Die Webanwendung muss die Aktivität **[!UICONTROL Vorausfüllen]** enthalten, die die Verschlüsselungsmethode **[!UICONTROL Adobe-Campaign-Verschlüsselung]** verwendet.
 
-## Web-Anwendung und Service erstellen {#creating-the-web-application-and-service}
+## Webanwendung und Dienst erstellen {#creating-the-web-application-and-service}
 
 Sie können in Campaign v7 Webanwendungen erstellen, mit denen sich Empfänger für einen Dienst anmelden können. Die Webanwendung und der Dienst werden in Campaign v7 konzipiert und gespeichert und Sie können diesen Dienst über eine Campaign Standard-Kommunikation aktualisieren. Weiterführende Informationen zu Webanwendungen in Campaign v7 finden Sie in [diesem Abschnitt](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes).
 
@@ -82,11 +80,11 @@ Um zu überprüfen, ob die Daten korrekt repliziert wurden, gehen Sie in Campaig
 
    ![](assets/acs_connect_lp_10.png)
 
-## E-Mail konzipieren und senden {#designing-and-sending-the-email}
+## E-Mail erstellen und senden {#designing-and-sending-the-email}
 
 In diesem Abschnitt erfahren Sie, wie in eine E-Mail in Campaign Standard ein Link eingefügt wird, der zu einer Landingpage weist, die von einer Campaign v7-Webanwendung repliziert wurde.
 
-Die Schritte für die Erstellung, die Konzeption und den Versand der E-Mail erfolgen wie üblich. Siehe das [Adobe Campaign Standard](https://helpx.adobe.com/de/support/campaign/standard.html)-Handbuch.
+Die Schritte für die Erstellung, die Konzeption und den Versand der E-Mail erfolgen wie üblich. Siehe das [Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/campaign-standard-home.html?lang=de)-Handbuch.
 
 1. Erstellen Sie eine neue E-Mail und wählen Sie mindestens ein repliziertes Profil als Zielgruppe.
 1. Bearbeiten Sie den Inhalt und fügen Sie einen **[!UICONTROL Link zu einer Landingpage]** hinzu.
