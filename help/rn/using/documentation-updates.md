@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 87067a0cca1a4a7f8ea1137ece6d513d58fcdb42
+source-git-commit: 31c7e41e747475ab98bcc8ffea90933a05aeaa97
 workflow-type: tm+mt
-source-wordcount: '4816'
-ht-degree: 100%
+source-wordcount: '4888'
+ht-degree: 98%
 
 ---
 
@@ -23,7 +23,15 @@ Die entsprechenden Aktualisierungen finden Sie in den [Versionshinweisen zu Adob
 
 ## 2022
 
-### Januar
+### Februar 2022 {#february-2022}
+
+Die **Dateiversand** Aktivitätsabschnitt mit einer Erinnerung, um die Größe des archivierten Inhalts im SFTP-Verzeichnis manuell zu überwachen, falls die **Quelldateien nach der Übertragung löschen** nicht ausgewählt ist. [Mehr dazu](../../workflow/using/file-transfer.md#properties)
+
+Der Abschnitt Quarantäne vs. Blockierungsliste wurde klarer formuliert. [Mehr dazu](../../delivery/using/understanding-quarantine-management.md#quarantine-vs-denylist)
+
+Die Abschnitte zum Senden einer Adresse unter Quarantäne und zum Entfernen von Adressen aus der Quarantäneliste wurden aktualisiert - [Mehr dazu](../../delivery/using/understanding-quarantine-management.md#removing-a-quarantined-address)
+
+### Januar 2022 {#january-2022}
 
 **Dokumentationsaktualisierungen in Version 7.2.1**
 

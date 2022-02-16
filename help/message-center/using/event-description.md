@@ -6,10 +6,10 @@ audience: message-center
 content-type: reference
 topic-tags: introduction
 exl-id: 9f7f4b6c-2ee8-4091-847d-f616d6abeb6b
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: c30d64e6930cb97f4a3c15acd97654d57d1bbf85
 workflow-type: tm+mt
-source-wordcount: '752'
-ht-degree: 100%
+source-wordcount: '762'
+ht-degree: 98%
 
 ---
 
@@ -34,6 +34,8 @@ Die WSDL-Zugriffspfade der zwei Methoden lauten:
 
 * **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:rtEvent**, um auf das Echtzeit-Schema zuzugreifen;
 * **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:batchEvent**, um auf das Batch-Schema zuzugreifen.
+
+Weitere Informationen zum Generieren einer WSDL-Datei finden Sie unter [diesem Abschnitt](../../configuration/using/web-service-calls.md#web-service-description--wsdl).
 
 Beide Methoden enthalten ein **`<urn:sessiontoken>`**-Element zum Anmelden beim Modul für den Transaktionsnachrichtenversand. Wir empfehlen die Verwendung einer Authentifizierungsmethode über vertrauenswürdige IP-Adressen. Um das Sitzungstoken abzurufen, führen Sie einen SOAP-Aufruf zur Anmeldung und dann ein GET-Token gefolgt von einer Abmeldung durch. Verwenden Sie dasselbe Token für mehrere RT-Aufrufe. Die in diesem Abschnitt enthaltenen Beispiele verwenden die Sitzungstoken-Methode, wobei es sich um das empfohlene Verfahren handelt.
 

@@ -6,10 +6,10 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 5e77d196-5c71-438e-8dae-10c6a6e4f29c
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: 1a4fd75a90667e57149772497a7b1bd14b251db3
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 100%
+source-wordcount: '531'
+ht-degree: 97%
 
 ---
 
@@ -43,9 +43,8 @@ In diesem [Abschnitt](about-technical-workflows.md) erfahren Sie, was jeder tech
 
 **[!UICONTROL Datenbankbereinigungs-Workflow (‘cleanup’)]**:
 
-1. Vergewissern Sie sich, dass der Workflow **[!UICONTROL Datenbankbereinigung]** täglich ausgeführt und erfolgreich abgeschlossen wird. Weiterführende Informationen dazu finden Sie auf dieser [Seite](delivery.md).
+1. Vergewissern Sie sich, dass der Workflow **[!UICONTROL Datenbankbereinigung]** täglich ausgeführt und erfolgreich abgeschlossen wird. Weiterführende Informationen dazu finden Sie auf dieser [Seite](../../production/using/database-cleanup-workflow.md)..
 1. Vergewissern Sie sich im Protokoll, dass die Ausführungsdauer auch langfristig ungefähr konstant bleibt und andere Workflows nicht stört.
-1. Weiterführende Informationen erfahren Sie auf dieser [Seite](../../production/using/database-cleanup-workflow.md).
 
 **[!UICONTROL Tracking-Workflow (‘tracking’)]**:
 
@@ -53,7 +52,7 @@ Vergewissern Sie sich, dass der Tracking-Workflow plangemäß ausgeführt wird (
 
 **[!UICONTROL Aktualisierung der Zustellbarkeit (‘deliverabilityUpdate’)]**:
 
-1. Vergewissern Sie sich, dass der **[!UICONTROL Zustellbarkeits-Workflow]** täglich ausgeführt und erfolgreich abgeschlossen wird. Weiterführende Informationen dazu finden Sie auf dieser [Seite](delivery.md).
+1. Stellen Sie sicher, dass die **[!UICONTROL Aktualisierung der Zustellbarkeit]** Der Workflow wird täglich erfolgreich ausgeführt und abgeschlossen.
 1. Prüfen Sie im Protokoll, ob die Regeln regelmäßig aktualisiert werden.
 
 **[!UICONTROL Kampagnenprozesse (&#39;operationMgt&#39;, &#39;deliveryMgt‘ etc.)]**:

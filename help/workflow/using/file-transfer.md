@@ -6,9 +6,9 @@ audience: workflow
 content-type: reference
 topic-tags: event-activities
 exl-id: 8025d207-3bc0-400f-b6a4-a72765e5a9d2
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 47cc5bc2f16ea87b6a12f6bf500c1e8d1f406876
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '652'
 ht-degree: 100%
 
 ---
@@ -81,7 +81,7 @@ Der Link **[!UICONTROL Erweiterte Parameter...]** bietet Zugriff auf folgende Op
 
 * **[!UICONTROL Quelldateien nach der Übertragung löschen]**
 
-   Löscht die Dateien auf dem Remote-Server.
+   Löscht die Dateien auf dem Remote-Server. Wenn Sie diese Option deaktiviert lassen, achten Sie darauf, die Größe des archivierten Inhalts im SFTP-Verzeichnis manuell zu überwachen.
 
 * **[!UICONTROL SSL verwenden]**
 

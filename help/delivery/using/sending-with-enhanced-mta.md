@@ -3,10 +3,10 @@ product: campaign
 title: Mit dem Enhanced MTA in Adobe Campaign Classic senden
 description: Erfahren Sie mehr über den Umfang und die Besonderheiten des E-Mail-Versands mit dem Enhanced MTA in Adobe Campaign
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
+source-git-commit: 8ac6cddad04d1142b84a735ab8083e732c17714b
 workflow-type: tm+mt
-source-wordcount: '1991'
-ht-degree: 100%
+source-wordcount: '2016'
+ht-degree: 98%
 
 ---
 
@@ -135,6 +135,10 @@ Weitere Informationen zur Bounce-Qualifizierung finden Sie in [diesem Abschnitt]
 Das Diagramm für den Campaign-Versanddurchsatz zeigt nicht mehr den Durchsatz an Ihre E-Mail-Empfänger an. Dieses Diagramm zeigt jetzt die Durchsatzgeschwindigkeit für die Weiterleitung Ihrer Nachrichten von Campaign an den Enhanced MTA an.
 
 Weitere Informationen zum Versanddurchsatz finden Sie in [diesem Abschnitt](../../reporting/using/global-reports.md#delivery-throughput).
+
+>[!NOTE]
+>
+>Mit dem [Email Feedback Service](#email-feedback-service) (EFS-Funktion) (derzeit als Beta-Version verfügbar), zeigt das Diagramm Kampagnenversanddurchsatz weiterhin den Durchsatz an Ihre E-Mail-Empfänger an.
 
 ### Gültigkeitszeitraum
 

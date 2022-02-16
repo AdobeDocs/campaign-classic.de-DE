@@ -4,10 +4,10 @@ title: Funktionsweise der Quarantäneverwaltung
 description: Funktionsweise der Quarantäneverwaltung
 feature: Monitoring
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: ff35cef03ba35c7a6693a65dc7d2482b916c5bdb
+source-git-commit: afe4329fd230f30e48bfbf5ac2073ca95a6fd04e
 workflow-type: tm+mt
-source-wordcount: '2702'
-ht-degree: 97%
+source-wordcount: '2931'
+ht-degree: 88%
 
 ---
 
@@ -27,19 +27,25 @@ Profile, deren E-Mail-Adressen oder Telefonnummern unter Quarantäne stehen, wer
 
 Teilweise werden E-Mails von Providern automatisch als Spam eingestuft, wenn die Anzahl ungültiger Adressen zu hoch ist. Durch die Quarantäne können Sie also vermeiden, von diesen Providern auf eine Blockierungsliste gesetzt zu werden.
 
-Zusätzlich helfen Ihnen Quarantänen, die Kosten des SMS-Versands zu senken, indem fehlerhafte Telefonnummern aus dem Versand ausgeschlossen werden. Weiterführende Informationen zu Best Practices zur Durchführung und Optimierung von Sendungen finden Sie auf [dieser Seite](delivery-best-practices.md) .
+Zusätzlich helfen Ihnen Quarantänen, die Kosten des SMS-Versands zu senken, indem fehlerhafte Telefonnummern aus dem Versand ausgeschlossen werden.
+
+Weiterführende Informationen zu Best Practices zur Durchführung und Optimierung von Sendungen finden Sie auf [dieser Seite](delivery-best-practices.md).
 
 ### Quarantäne vs. Blockierungsliste {#quarantine-vs-denylist}
 
-Eine **Quarantäne** bezieht sich immer nur auf die Adresse, nicht aber auf das Profil selbst. Sollten zwei Profile dieselbe E-Mail-Adresse verwenden, sind beide von der Quarantäne betroffen.
+Die Quarantäne und die Blockierungsliste gelten nicht für dasselbe Objekt:
 
-Falls jedoch ein Profil mit einer E-Mail-Adresse in Quarantäne aktualisiert und dabei eine neue Adresse angegeben wird, kann das Profil erneut in Versandzielgruppen aufgenommen werden.
+* Die **Quarantäne** bezieht sich nur auf eine **Adresse** (oder Telefonnummer usw.), nicht aber auf das Profil selbst. Beispielsweise kann ein Profil, dessen E-Mail-Adresse unter Quarantäne gestellt wurde, sein Profil aktualisieren und eine neue Adresse eingeben, woraufhin erneut Nachrichten an Sendungen gesendet werden können. Wenn zwei Profile dieselbe Telefonnummer haben, sind beide betroffen, wenn die Nummer unter Quarantäne gestellt wird.
 
-Die Aufnahme in die **Blockierungsliste** führt dagegen dazu, dass das Profil vom Versand ausgeschlossen wird. Dies ist z. B. nach einer Abmeldung (Opt-out) der Fall.
+   Die unter Quarantäne gestellten Adressen oder Telefonnummern werden in den [Ausschlusslogs](#identifying-quarantined-addresses-for-a-delivery) (für einen Versand) oder in der [Quarantäneliste](#identifying-quarantined-addresses-for-the-entire-platform) (für die gesamte Plattform) angezeigt.
+
+* Die Aufnahme in die **Blockierungsliste** führt dagegen dazu, dass das **Profil** vom Versand ausgeschlossen wird. Dies ist z. B. nach einer Abmeldung (Opt-out) von einem Kanal der Fall. Wenn beispielsweise ein Profil, das auf der Blockierungsliste für den E-Mail-Kanal steht, zwei E-Mail-Adressen hat, werden beide Adressen vom Versand ausgeschlossen.
+
+   Sie können für einen oder mehrere Kanäle in der **[!UICONTROL No longer contact]** Abschnitt des Profils **[!UICONTROL Allgemein]** Registerkarte. Weitere Informationen finden Sie in [diesem Abschnitt](../../platform/using/editing-a-profile.md#general-tab).
 
 >[!NOTE]
 >
->Wenn ein Benutzer auf eine SMS-Nachricht mit einem Schlüsselwort wie &quot;STOPP&quot; antwortet, um sich vom SMS-Versand abzumelden, wird sein Profil nicht wie bei einem E-Mail-Abmeldevorgang auf die Blockierungsliste gesetzt. Die Telefonnummer des Profils wird unter Quarantäne gestellt, sodass der Benutzer weiterhin E-Mail-Nachrichten erhält.
+>Die Quarantäne umfasst eine **[!UICONTROL Auf die Blockierungsliste gesetzt]** Status, der zutrifft, wenn Empfänger Ihre Nachricht als Spam melden oder auf eine SMS mit einem Schlüsselwort wie &quot;STOP&quot; antworten. In diesem Fall wird die betroffene Adresse oder Telefonnummer des Profils unter Quarantäne gestellt und die **[!UICONTROL Auf die Blockierungsliste gesetzt]** Status. Weiterführende Informationen zur Verwaltung von STOPP-SMS-Nachrichten finden Sie in [diesem Abschnitt](../../delivery/using/sms-send.md#processing-inbound-messages).
 
 ## In Quarantäne befindliche Adressen identifizieren {#identifying-quarantined-addresses}
 
@@ -90,9 +96,12 @@ Sie können für jeden Empfänger den Status seiner E-Mail-Adresse prüfen. Klic
 
 ### Eine unter Quarantäne gestellte Adresse entfernen {#removing-a-quarantined-address}
 
-Bei Bedarf können Sie eine Adresse manuell aus der Quarantäneliste entfernen. Darüber hinaus werden Adressen, die bestimmten Bedingungen entsprechen, durch den **[!UICONTROL Datenbankbereinigungs]**-Workflow automatisch aus der Quarantäneliste gelöscht.
+Bei Bedarf können Sie eine Adresse manuell aus der Quarantäneliste entfernen. Darüber hinaus werden Adressen, die bestimmten Bedingungen entsprechen, durch den [Datenbankbereinigungs](../../production/using/database-cleanup-workflow.md)-Workflow automatisch aus der Quarantäneliste gelöscht.
 
-Manuelles Entfernen einer Adresse aus der Quarantäneliste:
+Führen Sie einen der folgenden Schritte aus, um eine Adresse manuell aus der Quarantäneliste zu entfernen.
+
+>[!IMPORTANT]
+Das manuelle Löschen einer E-Mail-Adresse aus der Quarantäne bedeutet, dass Sie den Versand an diese Adresse wieder aufnehmen. Dies kann sich daher erheblich auf Ihre Zustellbarkeit und IP-Reputation auswirken und letztendlich dazu führen, dass Ihre IP-Adresse oder Versand-Domain blockiert wird. Gehen Sie besonders vorsichtig vor, wenn Sie erwägen, eine Adresse aus der Quarantäne zu nehmen. Wenden Sie sich im Zweifel an einen Zustellbarkeitsexperten.
 
 * Sie können den Status der Adresse über den Knoten **[!UICONTROL Administration > Kampagnenverwaltung > Unzustellbarkeitsverwaltung > Adressen unzustellbarer Sendungen]** in **[!UICONTROL Gültig]** ändern.
 
@@ -109,21 +118,26 @@ In den folgenden Fällen werden die Adressen automatisch aus der Quarantänelist
 Ihr Status ändert sich dann in **[!UICONTROL Gültig]**.
 
 >[!IMPORTANT]
-Empfänger mit einer Adresse in **[!UICONTROL Quarantäne]** oder dem Status **[!UICONTROL Auf Blockierungsliste]** werden niemals entfernt, auch wenn sie eine E-Mail erhalten.
+Empfänger mit einer Adresse in einer **[!UICONTROL Quarantäne]** oder **[!UICONTROL Auf die Blockierungsliste gesetzt]** wird nie entfernt, selbst wenn der Empfänger eine E-Mail erhält.
 
-Sie können die Anzahl der Fehler und den Zeitraum zwischen zwei Fehlern ändern. Ändern Sie dazu die entsprechenden Einstellungen im Softwareverteilungs-Assistenten (**[!UICONTROL E-Mail-Kanal]** > **[!UICONTROL Erweiterte Parameter]**). Weiterführende Informationen zum Softwareverteilungs-Assistenten finden Sie in [diesem Abschnitt](../../installation/using/deploying-an-instance.md).
+Wenn Sie bei gehosteten oder hybriden Installationen ein Upgrade auf [Verbesserter MTA](sending-with-enhanced-mta.md)die maximale Anzahl weiterer Versuche, die im Falle von **[!UICONTROL Fehlerhaft]** -Status und die minimale Verzögerung zwischen Wiederholungen basieren jetzt darauf, wie gut eine IP-Adresse sowohl historisch als auch aktuell in einer bestimmten Domain abschneidet.
 
-## Ursachen für Quarantänen   {#conditions-for-sending-an-address-to-quarantine}
+Bei On-Premise-Installationen und gehosteten/hybriden Installationen, die den veralteten Campaign MTA verwenden, können Sie die Anzahl der Fehler und den Zeitraum zwischen zwei Fehlern ändern. Ändern Sie dazu die entsprechenden Einstellungen im [Bereitstellungsassistent](../../installation/using/deploying-an-instance.md) (**[!UICONTROL Email-Kanal]** > **[!UICONTROL Erweiterte Parameter]**) oder [auf Versandebene](../../delivery/using/steps-sending-the-delivery.md#configuring-retries).
 
-Adobe Campaign verwaltet die Quarantäne je nach dem Typ des Versandfehlers und dem Grund, der bei der Qualifizierung von Fehlermeldungen (siehe [Bounce-Message-Qualifizierung](understanding-delivery-failures.md#bounce-mail-qualification) und [Typen und Ursachen für fehlgeschlagene Sendungen](understanding-delivery-failures.md#delivery-failure-types-and-reasons)) zugewiesen wurde.
+## Ursachen für Quarantänen {#conditions-for-sending-an-address-to-quarantine}
+
+Adobe Campaign verwaltet Quarantänen entsprechend dem Fehlertyp und dem Grund, der bei der Qualifizierung von Fehlermeldungen zugewiesen wurde (siehe [Bounce-Message-Qualifizierung](understanding-delivery-failures.md#bounce-mail-qualification) und [Typen und Ursachen für fehlgeschlagene Sendungen](understanding-delivery-failures.md#delivery-failure-types-and-reasons)).
 
 * **Ignorierter Fehler**: Bei ignorierten Fehlern wird eine Adresse nicht unter Quarantäne gestellt.
 * **Hardbounce**: Die E-Mail-Adresse kommt sofort in Quarantäne.
 * **Softbounce**: In diesem Fall wird die Adresse nicht sofort unter Quarantäne gestellt, sondern der Fehlerzähler nur hinaufgesetzt. Weitere Informationen hierzu finden Sie unter [Verwaltung von Softbounces](#soft-error-management).
 
-Wenn ein Benutzer eine E-Mail als Spam kennzeichnet ([Feedback Loop](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=de#feedback-loops)), wird die Nachricht automatisch an ein von Adobe verwaltetes technisches Postfach weitergeleitet. Die E-Mail-Adresse des Benutzers wird dann automatisch unter Quarantäne gestellt.
+Wenn ein Benutzer eine E-Mail als Spam kennzeichnet ([Feedback Loop](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=de#feedback-loops)), wird die Nachricht automatisch an ein von Adobe verwaltetes technisches Postfach weitergeleitet. Die E-Mail-Adresse des Benutzers wird dann automatisch unter Quarantäne gestellt und die **[!UICONTROL Auf die Blockierungsliste gesetzt]** Status. Der Status bezieht sich ausschließlich auf die Adresse und das Profil wird nicht auf die Blockierungsliste gesetzt, sodass der Empfänger nach wie vor SMS-Nachrichten und Push-Benachrichtigungen erhält.
 
-Bei Adressen in Quarantäne zeigt das Feld **[!UICONTROL Fehlerursache]** an, was die Quarantäne ausgelöst hat. Bei der Quarantänefunktion in Adobe Campaign wird die Groß-/Kleinschreibung beachtet. Achten Sie darauf, E-Mail-Adressen in Kleinbuchstaben zu importieren, damit sie später nicht erneut verwendet werden.
+>[!NOTE]
+Bei der Quarantänefunktion in Adobe Campaign wird die Groß-/Kleinschreibung beachtet. Achten Sie darauf, E-Mail-Adressen in Kleinbuchstaben zu importieren, damit sie später nicht erneut verwendet werden.
+
+In der Liste der unter Quarantäne gestellten Adressen (siehe [Für die gesamte Plattform in Quarantäne befindliche Adressen identifizieren](#identifying-quarantined-addresses-for-the-entire-platform)), die **[!UICONTROL Fehler-Grund]** gibt an, warum die ausgewählte Adresse unter Quarantäne gestellt wurde.
 
 ![](assets/tech_quarant_error_reasons.png)
 
@@ -131,11 +145,9 @@ Bei Adressen in Quarantäne zeigt das Feld **[!UICONTROL Fehlerursache]** an, wa
 
 Im Gegensatz zu Hardbounces senden Softbounces eine Adresse nicht sofort in die Quarantäne, sondern erhöhen stattdessen einen Fehlerzähler.
 
-* Wenn der Zähler eine festgelegte Schwelle überschreitet, kommt die Adresse in Quarantäne.
-* Die Standardkonfiguration sieht eine Schwelle von fünf Fehlern vor, die jeweils in einem Abstand von mindestens 24 Stunden auf den vorhergehenden folgen müssen, um berücksichtigt zu werden. Beim fünften Fehler kommt die Adresse in Quarantäne.
-* Die Schwelle für den Fehlerzähler ist einstellbar. Weitere Informationen hierzu finden Sie unter [Weitere Zustellversuche nach einem vorübergehend fehlgeschlagenen Versand](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure).
+Während der [Versandlaufzeit](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period) werden noch weitere Zustellversuche durchgeführt. Sollte der Zähler eine festgelegte Schwelle überschreiten, wird die Adresse unter Quarantäne gestellt. Weitere Informationen hierzu finden Sie unter [Weitere Zustellversuche nach einem vorübergehend fehlgeschlagenen Versand](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure).
 
-Der Fehlerzähler wird erneut initialisiert, wenn der letzte signifikante Fehler vor mehr als 10 Tagen aufgetreten ist. Der Status der Adresse wird auf **Gültig** gesetzt und mithilfe des Workflows **Datenbankbereinigung** wird die Adresse aus der Quarantäneliste gelöscht.
+Der Fehlerzähler wird erneut initialisiert, wenn der letzte signifikante Fehler vor mehr als 10 Tagen aufgetreten ist. Der Status der Adresse wird auf **Gültig** gesetzt und mithilfe des Workflows [Datenbankbereinigung](../../production/using/database-cleanup-workflow.md) wird die Adresse aus der Quarantäneliste gelöscht.
 
 ## Quarantäne für Push-Benachrichtigungen {#push-notification-quarantines}
 
