@@ -1,11 +1,11 @@
 ---
 product: campaign
 title: Senden einer Geburtstags-E-Mail
-description: Erfahren Sie, wie Sie eine Geburtstags-E-Mail mit einem Workflow senden.
+description: Erfahren Sie, wie Sie mit einem Workflow eine Geburtstags-E-Mail senden
 feature: Workflows
 exl-id: 38006cca-e945-4b9d-8e2d-ed537b8541d9
 source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '934'
 ht-degree: 100%
 
