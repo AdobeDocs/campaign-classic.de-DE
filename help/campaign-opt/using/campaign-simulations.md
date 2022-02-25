@@ -1,16 +1,16 @@
 ---
 product: campaign
-title: Kampagnensimulation
+title: Campaign-Simulationen
 description: Erste Schritte mit Campaign-Simulationen
 exl-id: 709c64a8-34bf-43fa-a820-238295fb26b8
 source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1376'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# Kampagnensimulation{#campaign-simulations}
+# Campaign-Simulationen{#campaign-simulations}
 
 ![](../../assets/common.svg)
 
@@ -28,9 +28,9 @@ Mithilfe der Simulation können die voraussichtlichen Auswirkungen von Sendungen
 
 ![](assets/simu_campaign_select_delivery_mode.png)
 
-## Simulation einrichten {#setting-up-a-simulation}
+## Einrichten einer Simulation {#setting-up-a-simulation}
 
-### Simulation erstellen {#creating-a-simulation}
+### Erstellen einer Simulation {#creating-a-simulation}
 
 Folgen Sie den nachstehenden Schritten, um eine Simulation zu erstellen:
 
@@ -94,9 +94,9 @@ Im Tab **[!UICONTROL Allgemein]** der Simulation können Sie ihre Ausführungspa
 * Die **[!UICONTROL Priorität]** entspricht der Dringlichkeit, die der Simulation zugeteilt wird, um sie schnellstmöglich durchzuführen oder ihren Start zu verzögern.
 * Option **[!UICONTROL SQL-Abfragen im Protokoll speichern]**: SQL-Logs dienen dazu, fehlerhafte oder zu langsame Simulationen zu diagnostizieren. Die entsprechenden Logs sind nach der Simulation im Untertab **[!UICONTROL SQL-Logs]** des Tabs **[!UICONTROL Verfolgung]** verfügbar.
 
-## Simulation ausführen {#executing-a-simulation}
+## Ausführen einer Simulation {#executing-a-simulation}
 
-### Simulation starten {#starting-a-simulation}
+### Starten einer Simulation {#starting-a-simulation}
 
 Sobald der Perimeter der Simulation definiert wurde, kann sie ausgeführt werden.
 
@@ -126,7 +126,7 @@ Sobald der Perimeter der Simulation definiert wurde, kann sie ausgeführt werden
 
    Ein Beispiel zur Erstellung einer Analysetabelle findet sich im Anschluss an den Abschnitt [Ergebnisse analysieren](#exploring-results).
 
-### Ergebnisse anzeigen {#viewing-results}
+### Anzeigen von Ergebnissen {#viewing-results}
 
 #### Verfolgung {#audit}
 
@@ -134,7 +134,7 @@ Sobald der Perimeter der Simulation definiert wurde, kann sie ausgeführt werden
 
 ![](assets/simu_campaign_opti_11.png)
 
-#### Ergebnisse analysieren {#exploring-results}
+#### Analysieren von Ergebnissen {#exploring-results}
 
 Der Untertab **[!UICONTROL Ausschlussanalyse]** ermöglicht die Analyse der aus der Simulation resultierenden Daten.
 
@@ -164,7 +164,7 @@ Um Berichte zu öffnen, klicken Sie auf den für die jeweilige Simulation im Das
 
 Klicken Sie auf den Link **[!UICONTROL Berichte]** auf dem Dashboard der entsprechenden Simulation, um auf die Berichte zuzugreifen.
 
-### Simulationen vergleichen {#comparing-simulations-}
+### Vergleich von Simulationen {#comparing-simulations-}
 
 Bei wiederholter Ausführung einer Simulation wird das vorherige Ergebnis durch das neu berechnete Ergebnis ersetzt; die Ergebnisse unterschiedlicher Ausführungen können daher nicht angezeigt und miteinander verglichen werden.
 
