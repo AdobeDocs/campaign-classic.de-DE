@@ -1,13 +1,13 @@
 ---
 product: campaign
-title: '"Anwendungsbeispiel: Anzeigen eines Berichts zu Antworten auf eine Online-Umfrage"'
-description: '"Anwendungsbeispiel: Anzeigen eines Berichts zu Antworten auf eine Online-Umfrage"'
+title: '"Anwendungsbeispiel: Anzeigen eines Berichts über Antworten auf eine Online-Umfrage"'
+description: '"Anwendungsbeispiel: Anzeigen eines Berichts über Antworten auf eine Online-Umfrage"'
 feature: Reporting, Surveys
 exl-id: 6be12518-86d1-4a13-bbc2-b2ec5141b505
 source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '503'
+ht-degree: 100%
 
 ---
 
