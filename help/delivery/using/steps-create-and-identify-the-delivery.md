@@ -1,16 +1,16 @@
 ---
 product: campaign
-title: Versand erstellen und identifizieren
-description: Versand erstellen und identifizieren
+title: 'Erstellen und Identifizieren des Versands '
+description: 'Erstellen und Identifizieren des Versands '
 exl-id: 6e37bc14-b1a9-42af-8c28-ae4b5bcaa055
 source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '279'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
-# Versand erstellen und identifizieren {#create-and-identify-the-delivery}
+# Erstellen und Identifizieren des Versands  {#create-and-identify-the-delivery}
 
 ![](../../assets/common.svg)
 
@@ -31,7 +31,7 @@ Die Plattform enthält für jeden installierten Kanal (Briefpost, E-Mail, Fax, T
 
 Sie können neue Versandvorlagen erstellen, um bestimmte Parameter vorab an Ihre Anforderungen anzupassen. Weiterführende Informationen zu Vorlagen finden Sie in [diesem Abschnitt](about-templates.md).
 
-## Versand identifizieren {#identifying-the-delivery}
+## Identifizieren des Versands {#identifying-the-delivery}
 
 Zunächst muss der Versand durch Angabe der Parameter identifiziert werden. Gehen Sie dazu wie folgt vor:
 
