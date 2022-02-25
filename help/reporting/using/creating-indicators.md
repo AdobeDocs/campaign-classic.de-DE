@@ -1,16 +1,16 @@
 ---
 product: campaign
-title: Indikatoren erstellen
-description: Indikatoren erstellen
+title: Erstellen von Indikatoren
+description: Erstellen von Indikatoren
 exl-id: e4806bb8-de9d-47e4-8b37-d6c0565b7f5a
 source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '748'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
-# Indikatoren erstellen{#creating-indicators}
+# Erstellen von Indikatoren{#creating-indicators}
 
 ![](../../assets/common.svg)
 
@@ -18,16 +18,16 @@ Um einen Cube nutzen zu können, müssen zunächst die erforderlichen Dimensione
 
 Ein Cube wird in folgenden Schritten konfiguriert:
 
-1. Wählen Sie die Arbeitstabelle aus. Siehe [Arbeitstabelle auswählen](#selecting-the-work-table).
-1. Definieren Sie Dimensionen. Siehe [Dimensionen definieren](#defining-dimensions).
-1. Definieren Sie Kennzahlen. Siehe [Buildindikatoren](#building-indicators).
-1. Erstellen Sie Aggregate (optional). Siehe [Aggregate berechnen und verwenden](../../reporting/using/concepts-and-methodology.md#calculating-and-using-aggregates).
+1. Wählen Sie die Arbeitstabelle aus. Siehe [Auswahl der Arbeitstabelle](#selecting-the-work-table).
+1. Definieren von Dimensionen. Siehe [Definieren von Dimensionen](#defining-dimensions).
+1. Definieren von Kennzahlen. Siehe [Erstellen von Indikatoren](#building-indicators).
+1. Erstellen von Aggregaten (optional). Siehe [Berechnen und Verwenden von Aggregaten](../../reporting/using/concepts-and-methodology.md#calculating-and-using-aggregates).
 
 Das nachstehende Beispiel zeigt, wie schnell ein einfacher Cube erstellt und in einem Bericht zur Kennzahlenanalyse verwendet werden kann.
 
 Die Durchführungsschritte werden im Nachstehenden beschrieben, die verschiedenen Optionen und ihre Beschreibungen werden in den anderen Abschnitten dieses Kapitels ausführlich dargestellt.
 
-## Wählen Sie die Arbeitstabelle aus {#selecting-the-work-table}
+## Wählen der Arbeitstabelle {#selecting-the-work-table}
 
 Um einen Cube zu erstellen, klicken Sie auf die oberhalb der Cube-Liste gelegene Schaltfläche **[!UICONTROL Neu]**.
 
@@ -43,7 +43,7 @@ Klicken Sie auf den Link **[!UICONTROL Quelldaten filtern...]**, wenn Sie die Be
 
 ![](assets/s_advuser_cube_wz_03.png)
 
-## Dimensionen definieren {#defining-dimensions}
+## Definieren von Dimensionen {#defining-dimensions}
 
 Dimensionen sind die Analyseachsen, die für jeden Cube entsprechend dem Faktenschema, auf das er sich bezieht, bestimmt werden. Es handelt sich um die analysierten Dimensionen, wie zum Beispiel die Zeit (Jahr, Monat, Tag etc.), eine Produkt- oder Vertragsnomenklatur (Familie, Referenz etc.), ein Populationssegment (nach Stadt, Altersgruppe, Status etc).
 
@@ -89,7 +89,7 @@ Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**, um eine neue Dim
 
    Weitere Informationen hierzu finden Sie unter [Klassen dynamisch verwalten](../../reporting/using/concepts-and-methodology.md#dynamically-managing-bins).
 
-## Buildindikatoren {#building-indicators}
+## Erstellen von Indikatoren {#building-indicators}
 
 Nach der Definition der Dimensionen muss der Berechnungsmodus der Werte bestimmt werden, die in den Zellen angezeigt werden sollen. Erstellen Sie hierzu die jeweiligen Kennzahlen im gleichnamigen Tab: Die Anzahl der Kennzahlen muss der Anzahl der Spalten entsprechen, die im Bericht angezeigt werden.****
 
@@ -102,7 +102,7 @@ Gehen Sie hierzu wie folgt vor:
 
    ![](assets/s_advuser_cube_wz_11.png)
 
-   Über den Link **[!UICONTROL Kennzahldaten filtern...]** gelangen Sie in das Abfragefenster, das die Beschränkung der zu berücksichtigenden Werte auf Frauen ermöglicht. Die Kennzahlen und die verfügbaren Optionen werden im Abschnitt [Kennzahlen definieren](../../reporting/using/concepts-and-methodology.md#defining-measures).
+   Über den Link **[!UICONTROL Kennzahldaten filtern...]** gelangen Sie in das Abfragefenster, das die Beschränkung der zu berücksichtigenden Werte auf Frauen ermöglicht. Weitere Informationen zur Bestimmung von Kennzahlen und den verfügbaren Optionen finden Sie unter [Definieren von Kennzahlen](../../reporting/using/concepts-and-methodology.md#defining-measures).
 
    ![](assets/s_advuser_cube_wz_12.png)
 
@@ -112,7 +112,7 @@ Gehen Sie hierzu wie folgt vor:
 
 1. Speichern Sie den Cube.
 
-## Cube-basierten Bericht erstellen {#creating-a-report-based-on-a-cube}
+## Erstellen eines Berichts basierend auf einem Cube {#creating-a-report-based-on-a-cube}
 
 Nach der Konfiguration des Cubes kann er als Vorlage für einen neuen Bericht verwendet werden.
 
@@ -128,7 +128,7 @@ Gehen Sie dazu wie folgt vor:
 
    ![](assets/s_advuser_cube_wz_15.png)
 
-1. Sie können die Dimensionen von einer Achse in die andere verschieben, sie löschen, neue Kennzahlen hinzufügen etc. Mögliche Vorgänge werden im Abschnitt [diese Seite](../../reporting/using/using-cubes-to-explore-data.md).
+1. Sie können die Dimensionen von einer Achse in die andere verschieben, sie löschen, neue Kennzahlen hinzufügen etc. Die möglichen Operationen werden auf [dieser Seite](../../reporting/using/using-cubes-to-explore-data.md) beschrieben.
 
    Verwenden Sie hierzu die entsprechenden Symbole.
 
