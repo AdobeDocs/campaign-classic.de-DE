@@ -1,13 +1,13 @@
 ---
 product: campaign
-title: Nachrichten verfolgen und überwachen
-description: Erfahren Sie, wie Sie Nachrichten tracken und überwachen.
+title: Nachverfolgen und Überwachen von Nachrichten
+description: Erfahren Sie, wie Sie Nachrichten nachverfolgen und überwachen
 feature: Monitoring
 exl-id: a039a288-2e7b-4f35-9885-ead3ed4347af
 source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '438'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 94%
 
 Sie haben auf die Schaltfläche **Senden** geklickt? Lassen Sie uns sehen, was dann passiert. Nach dem Versand der Nachrichten ermöglicht es Ihnen Adobe Campaign die gesendeten Nachrichten zu verfolgen und festzustellen, wie Ihre Empfänger darauf reagieren. Dadurch können Sie den zukünftigen Versand verbessern und Ihre nächsten Kampagnen optimieren.
 
-## Sendungen überwachen {#monitoring-deliveries}
+## Überwachen von Sendungen {#monitoring-deliveries}
 
 Um Ihre Kampagnen steuern zu können, müssen Sie zunächst sichergehen, dass Ihre Nachricht bei Ihren Empfängern tatsächlich angekommen ist.
 
@@ -36,13 +36,13 @@ Tipp: Prüfen Sie die Konfiguration der Traffic-Verwaltung (IP-Affinität). Weit
 >
 >Diese Schritte können nur von einem erfahrenen Benutzer durchgeführt werden.
 
-## Tracking-Verhalten {#track-behaviour}
+## Nachverfolgen von Verhaltensmustern {#track-behaviour}
 
 Um das Verhalten Ihrer Empfänger besser kennenzulernen, können Sie ihre Reaktion auf einen Versand verfolgen: Empfang, Öffnung, Klicks auf Links, Abmeldungen usw. In Campaign Classic werden diese Informationen auf der Registerkarte „Tracking“ der Empfänger, auf die der Versand abzielt, und auf der Registerkarte „Tracking“ des Versands angezeigt.
 
-**Tipp**: Das Nachrichten-Tracking ist standardmäßig aktiviert. Um URLs zu konfigurieren, wählen Sie im unteren Bereich des Versandassistenten die Option „URLs anzeigen“ aus. Sie können für jede URL der Nachricht festlegen, ob Sie Tracking aktivieren möchten.
+**Tipp**: Das Nachverfolgen von Nachrichten ist standardmäßig aktiviert. Um URLs zu konfigurieren, wählen Sie im unteren Bereich des Versand-Assistenten die Option „URLs anzeigen“ aus. Sie können für jede URL der Nachricht festlegen, ob Sie die Nachverfolgung aktivieren möchten.
 
-Weitere Informationen hierzu finden Sie im Abschnitt [Tracking konfigurieren](how-to-configure-tracked-links.md) und [Trackingindikatoren](../../reporting/using/delivery-reports.md#tracking-indicators) Beschreibung.
+Mehr dazu finden Sie im Abschnitt [Konfigurieren der Nachverfolgung](how-to-configure-tracked-links.md) und in der Beschreibung der [Indikatoren für die Nachverfolgung](../../reporting/using/delivery-reports.md#tracking-indicators).
 
 ## Versandleistung {#delivery-performances}
 
