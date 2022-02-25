@@ -4,9 +4,9 @@ title: Elemente anordnen
 description: Elemente anordnen
 exl-id: 79d5c901-905b-4a0e-adb9-91fd6acb186f
 source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '432'
+ht-degree: 100%
 
 ---
 
@@ -14,13 +14,13 @@ ht-degree: 0%
 
 ![](../../assets/common.svg)
 
-Zusätzlich zu den verschiedenen Diagrammen detailliert [here](../../reporting/using/creating-a-chart.md#chart-types-and-variants)können Sie die Anzeige anpassen und Elemente zu den Berichtsseiten hinzufügen.
+Zusätzlich zu den verschiedenen Diagrammen, die [hier](../../reporting/using/creating-a-chart.md#chart-types-and-variants) beschrieben sind, können Sie die Anzeige anpassen und Elemente zu den Berichtsseiten hinzufügen.
 
 Sie können beispielsweise Container verwenden: Diese ermöglichen es, mehrere Elemente einer Seite zu gruppieren und in Spalten oder Zellen anzuordnen. Nähere Informationen zu ihrer Konfiguration werden in [diesem Abschnitt](../../web/using/defining-web-forms-layout.md#creating-containers) erläutert.
 
 Sie können das Layout des Berichts in der Seite konfigurieren (an der Wurzel des Navigationsbaums) und es für jeden Container überschreiben. Sowohl Seiten als auch Container sind in Spalten organisiert. Nur statische Elemente und Grafiken sind in Zellen organisiert.
 
-## Optionen für jede Seite definieren {#defining-the-options-for-each-page}
+## Definieren der Optionen für jede Seite {#defining-the-options-for-each-page}
 
 Für jede Berichtseite können unterschiedliche Optionen konfiguriert werden.
 
@@ -34,7 +34,7 @@ Die Optionen der **[!UICONTROL Anzeigeparameter]** ermöglichen es, die Position
 
 Konfigurieren Sie die unterschiedlichen Optionen des Abschnitts **[!UICONTROL Navigation]**, um einen Übergang zwischen den Seiten des Berichts zu erlauben oder nicht. Bei Aktivierung der Option **[!UICONTROL Rückkehr zur vorhergehenden Seite nicht zulassen]** oder der Option **[!UICONTROL Weiter zur nächsten Seite nicht zulassen]** sind die Schaltflächen **[!UICONTROL Weiter]** oder **[!UICONTROL Zurück]** in der Berichtseite nicht mehr verfügbar.
 
-## Kopf- und Fußzeile hinzufügen {#adding-a-header-and-a-footer}
+## Hinzufügen einer Kopf- und einer Fußzeile {#adding-a-header-and-a-footer}
 
 Die Berichtseigenschaften bieten die Möglichkeit, Layout-Elemente wie einen Fenstertitel oder den HTML-Inhalt des Headers und des Footers zu konfigurieren.
 
