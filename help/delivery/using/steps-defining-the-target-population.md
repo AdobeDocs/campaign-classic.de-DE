@@ -1,17 +1,17 @@
 ---
 product: campaign
-title: Zielpopulation bestimmen
+title: Bestimmen der Zielpopulation
 description: Weitere Informationen zur Definition der Zielpopulation
 feature: Audiences, Proofs
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
 source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1745'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
-# Zielpopulation bestimmen {#defining-the-target-population}
+# Bestimmen der Zielpopulation {#defining-the-target-population}
 
 ![](../../assets/common.svg)
 
@@ -22,7 +22,7 @@ Für jeden Versand können verschiedene Zielpopulationen bestimmt werden:
 * **Testadressen**: Empfänger, die nicht zur Zielgruppe des Versands gehören, aber den Versand erhalten (nur im Rahmen einer Marketing-Kampagne). [Weitere Informationen](about-seed-addresses.md)
 * **Kontrollgruppen**: Population, die den Versand nicht erhält und verwendet wird, um das Verhalten und die Auswirkungen der Kampagne zu verfolgen (nur im Rahmen einer Marketing-Kampagne). [Weitere Informationen](../../campaign/using/marketing-campaign-target.md#defining-a-control-group).
 
-## Hauptempfänger des Versands auswählen {#selecting-the-main-target}
+## Auswahl der Hauptempfänger des Versands {#selecting-the-main-target}
 
 Meistens wird die Hauptzielgruppe aus der Adobe Campaign-Datenbank extrahiert (Standardmodus). Empfänger können aber auch in einer externen Datei gespeichert werden. Weiterführende Informationen finden Sie in diesem [Abschnitt](steps-defining-the-target-population.md#selecting-external-recipients).
 
@@ -35,7 +35,7 @@ Um die Versandempfänger auszuwählen, gehen Sie wie folgt vor:
 
 1. Wählen Sie Zielgruppen-Mapping aus der Dropdown-Liste **[!UICONTROL Zielgruppen-Mapping]** aus. Die Adobe-Campaign-Standardeinstellung für Zielgruppen-Mapping ist **[!UICONTROL Empfänger]**, basierend auf dem Schema **nms:recipient**.
 
-   Es sind weitere Zielgruppen-Mappings verfügbar, von denen sich einige auf Ihre spezifische Konfiguration beziehen können. Weitere Informationen zu Zielgruppen-Mappings finden Sie unter [Zielgruppen-Mapping wählen](selecting-a-target-mapping.md).
+   Es sind weitere Zielgruppen-Zuordnungen verfügbar, von denen sich einige auf Ihre spezifische Konfiguration beziehen können. Weitere Informationen zu Zielgruppen-Zuordnungen finden Sie unter [Auswahl einer Zielgruppen-Zuordnung](selecting-a-target-mapping.md).
 
 1. Wählen Sie zur Konfiguration von Einschränkungsfiltern die Schaltfläche **[!UICONTROL Hinzufügen]** aus.
 
@@ -83,7 +83,7 @@ Um die Versandempfänger auszuwählen, gehen Sie wie folgt vor:
 
    ![](assets/s_ncs_user_wizard_email02h.png)
 
-### Externe Empfänger auswählen {#selecting-external-recipients}
+### Auswahl externer Empfänger {#selecting-external-recipients}
 
 Sie haben die Möglichkeit, einen Versand an Empfänger zu richten, deren Profile nicht in der Datenbank, sondern in einer externen Datei gespeichert sind. In unserem Beispiel führen wir einen Versand an Empfänger durch, die aus einer Textdatei importiert wurden.
 
@@ -94,7 +94,7 @@ Gehen Sie dazu wie folgt vor:
 
    ![](assets/s_ncs_user_wizard_external_recipients.png)
 
-1. Standardmäßig werden Empfänger in die Datenbank importiert. Sie müssen das **[!UICONTROL Zielgruppen-Mapping]** auswählen. Weitere Informationen zu Zielgruppen-Mappings finden Sie unter [Zielgruppen-Mapping wählen](selecting-a-target-mapping.md)
+1. Standardmäßig werden Empfänger in die Datenbank importiert. Sie müssen das **[!UICONTROL Zielgruppen-Mapping]** auswählen. Weitere Informationen zu Zielgruppen-Zuordnungen finden Sie unter [Auswahl einer Zielgruppen-Zuordnung](selecting-a-target-mapping.md).
 
    Sie können auch **[!UICONTROL Empfänger nicht in die Datenbank importieren]** auswählen.
 
@@ -108,7 +108,7 @@ Gehen Sie dazu wie folgt vor:
 >
 >Schließen Sie bei einem externen E-Mail-Versand bei der Inhaltserstellung keinen Mirrorseite-Link ein. Die Seite kann bei dieser Versandart nicht erstellt werden.
 
-### Ausschlusseinstellungen definieren {#define-exclusion-settings}
+### Definieren von Ausschlusseinstellungen {#define-exclusion-settings}
 
 Fehlerhafte Adressen und der Qualitätsindex werden vom Dienstleister übermittelt. Diese Informationen werden nach Durchführung des Versands und dem Laden der Ergebnisdatei des Dienstleisters automatisch im Empfängerprofil aktualisiert. Hier werden sie angezeigt, können aber nicht geändert werden.
 
@@ -144,21 +144,21 @@ Folgende Optionen stehen zur Verfügung:
       ![](assets/s_ncs_user_wizard_email02j.png)
 
 * **[!UICONTROL Schließen Sie Empfänger aus, die nicht mehr kontaktiert]** werden möchten, d. h. Empfänger, deren E-Mail-Adressen sich auf einer Blockierungsliste (&quot;Opt-out&quot;) befinden. Diese Option muss ausgewählt bleiben, um die Berufsethik des E-Marketings und die Gesetze hinsichtlich E-Commerce einzuhalten.
-* **[!UICONTROL Adressen in Quarantäne ausschließen]**: schließt die Empfänger aus, für die frühere Zustellversuche fehlgeschlagen sind. Es wird dringend empfohlen, diese Option NICHT ABZUWÄHLEN.
+* **[!UICONTROL Adressen in Quarantäne ausschließen]**: Mit dieser Option können Sie alle Adressen von Profilen aus der Zielgruppe ausschließen, die nicht antworten. Es wird dringend empfohlen, diese Option aktiviert zu lassen.
 
    >[!NOTE]
    >
    >Weitere Informationen zur Quarantäneverwaltung finden Sie unter [Funktionsweise der Quarantäneverwaltung](understanding-quarantine-management.md).
 
-* **[!UICONTROL Begrenzung des Versands]** auf eine gewisse Anzahl an Nachrichten: Es wird höchstens die angegebene Anzahl an Nachrichten gesendet, wobei die auszuschließenden Empfänger zufällig aus der Zielgruppe ausgewählt werden.
+* **[!UICONTROL Begrenzung des Versands]** auf eine bestimmte Anzahl an Nachrichten: Mit dieser Option können Sie die maximale Anzahl der zu versendenden Nachrichten eingeben. Wenn der Inhalt der Zielgruppe die angegebene Anzahl von Nachrichten überschreitet, wird eine Zufallsauswahl auf die Zielgruppe angewendet.
 
-### Größe der Zielpopulation verringern {#reducing-the-size-of-the-target-population}
+### Verringern der Größe der Zielpopulation {#reducing-the-size-of-the-target-population}
 
 Sie können die Größe der Zielpopulation verringern. Geben Sie dazu die Anzahl der Empfänger an, die im Feld **[!UICONTROL Anz. abzurufender Datensätze]** exportiert werden sollen.
 
 ![](assets/s_ncs_user_edit_del_exe_tab.png)
 
-## Empfänger von Testversandnachrichten auswählen {#selecting-the-proof-target}
+## Auswählen der Empfänger von Testversandnachrichten {#selecting-the-proof-target}
 
 Ein Testversand ist eine spezifische Nachricht, die den eigentlichen Versand prüft, bevor er an die Hauptzielgruppe gesendet wird. Die Testversand-Empfänger sind verantwortlich für die Überprüfung des Inhalts und der Form von Sendungen.
 
@@ -175,17 +175,17 @@ Um die Testversand-Zielgruppe auszuwählen, gehen Sie wie folgt vor:
 >
 >Im Regelfall kann die Testversand-Zielgruppe in die Hauptzielgruppe eingeschlossen werden. Kreuzen Sie hierfür die entsprechende Option im unteren Bereich des **[!UICONTROL Hauptzielgruppe]**-Tabs an.
 
-## Spezifische Testversand-Zielgruppe definieren {#defining-a-specific-proof-target}
+## Definieren einer spezifischen Testversand-Zielgruppe {#defining-a-specific-proof-target}
 
 Bei der Auswahl der Testversand-Zielgruppe können Sie über die Option **[!UICONTROL Bestimmung einer speziellen Testversand-Zielgruppe]** die Empfänger des Testversands aus den Profilen in der Datenbank auswählen.
 
-Wählen Sie diese Option aus, um mit der Schaltfläche **[!UICONTROL Hinzufügen]** Empfänger ähnlich der Definition der Hauptzielgruppe auszuwählen. Siehe [Hauptzielgruppe auswählen](steps-defining-the-target-population.md#selecting-the-main-target).
+Wählen Sie diese Option aus, um mit der Schaltfläche **[!UICONTROL Hinzufügen]** Empfänger ähnlich der Definition der Hauptzielgruppe auszuwählen. Siehe [Auswählen der Hauptzielgruppe](steps-defining-the-target-population.md#selecting-the-main-target).
 
 ![](assets/s_ncs_user_wizard_email01_143.png)
 
 Weiterführende Informationen zum Testversand finden Sie in [diesem Abschnitt](steps-validating-the-delivery.md#sending-a-proof).
 
-### Adressersetzung beim Testversand verwenden {#using-address-substitution-in-proof}
+### Verwenden der Adressersetzung beim Testversand {#using-address-substitution-in-proof}
 
 Anstatt bestimmte Empfänger in der Datenbank auszuwählen, können Sie die Option **[!UICONTROL Adressersetzung]** verwenden.
 
@@ -209,7 +209,7 @@ Gehen Sie dazu wie folgt vor:
 
    Konfigurieren Sie so viele Ersatzadressen wie nötig.
 
-## Testadressen als Testversand verwenden {#using-seed-addresses-as-proof}
+## Verwenden von Testadressen für den Testversand {#using-seed-addresses-as-proof}
 
 Sie können **[!UICONTROL Testadressen]** als Testversand-Zielgruppe verwenden: Mit dieser Option können Sie eine Testadressenliste verwenden oder importieren.
 
