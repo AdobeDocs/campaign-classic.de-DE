@@ -1,16 +1,16 @@
 ---
 product: campaign
-title: Konfigurieren und Senden des Versands
-description: Erfahren Sie, wie Sie den Versand konfigurieren und versenden.
+title: Konfigurieren und Durchführen des Versands
+description: Erfahren Sie, wie Sie den Versand konfigurieren und versenden
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
 source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1622'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# Konfigurieren und Senden des Versands {#configuring-and-sending-the-delivery}
+# Konfigurieren und Durchführen des Versands {#configuring-and-sending-the-delivery}
 
 ![](../../assets/common.svg)
 
@@ -32,7 +32,7 @@ Vor der Durchführung des Versands können Sie im Tab **[!UICONTROL Versand]** d
    >
    >Bei Duplizierung eines Versands wird dieser Parameter automatisch auf 0 zurückgesetzt.
 
-* **[!UICONTROL In mehreren Schüben versenden]**: Weitere Informationen hierzu finden Sie unter [In mehreren Schüben versenden](#sending-using-multiple-waves).
+* **[!UICONTROL In mehreren Schüben versenden]**: Weitere Informationen hierzu finden Sie unter [Versenden in mehreren Schüben](#sending-using-multiple-waves).
 
 * **[!UICONTROL SMTP-Versand testen]**: Mit dieser Option können Sie das Senden über SMTP testen. Der Versand wird bis zur Verbindung mit dem SMTP-Server verarbeitet, jedoch nicht gesendet.
 
@@ -42,11 +42,11 @@ Vor der Durchführung des Versands können Sie im Tab **[!UICONTROL Versand]** d
 
 * **[!UICONTROL E-Mail-BCC]**: Mit dieser Option können Sie E-Mails in einem externen System speichern, indem Sie einfach eine BCC-E-Mail-Adresse zu Ihrer Versandzielgruppe hinzufügen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](sending-messages.md#archiving-emails).
 
-## Bestätigen Sie die Absendung der Nachrichten {#confirming-delivery}
+## Bestätigen des Versands {#confirming-delivery}
 
 Wenn der Versand konfiguriert wurde und versandbereit ist, stellen Sie sicher, dass Sie die Versandanalyse ausgeführt haben.
 
-Klicken Sie dazu auf **[!UICONTROL Senden]**, wählen Sie die gewünschte Aktion aus und klicken Sie auf **[!UICONTROL Analysieren]**. Weitere Informationen hierzu finden Sie unter [Analyse starten](steps-validating-the-delivery.md#analyzing-the-delivery).
+Klicken Sie dazu auf **[!UICONTROL Senden]**, wählen Sie die gewünschte Aktion aus und klicken Sie auf **[!UICONTROL Analysieren]**. Weitere Informationen dazu finden Sie unter [Starten der Analyse](steps-validating-the-delivery.md#analyzing-the-delivery).
 
 ![](assets/s_ncs_user_email_del_send.png)
 
@@ -60,7 +60,7 @@ Nach dem Nachrichtenversand können Sie Ihre Sendungen überwachen und verfolgen
 * [Ursachen für das Fehlschlagen von Sendungen](understanding-delivery-failures.md)
 * [Über das Nachrichten-Tracking](about-message-tracking.md)
 
-## Versandzeitpunkt planen {#scheduling-the-delivery-sending}
+## Planen des Versandzeitpunkts {#scheduling-the-delivery-sending}
 
 Sie können das Senden der Nachrichten auf einen späteren Zeitpunkt verschieben, um z. B. den Werbedruck auf eine bestimmte Population zu kontrollieren.
 
@@ -102,7 +102,7 @@ Wenn Sie also beispielsweise einen Versand für 8 Uhr Brüsseler Zeit terminiere
 
 ![](assets/s_ncs_user_email_del_plan_calendar_timezone.png)
 
-## In mehreren Schüben versenden {#sending-using-multiple-waves}
+## Versenden in mehreren Schüben {#sending-using-multiple-waves}
 
 Um eine gleichmäßige Auslastung der Kapazitäten zu gewährleisten, können Sie Sendungen in mehrere Schübe unterteilen. Konfigurieren Sie die Anzahl der Schübe und ihre Größe in Bezug auf den gesamten Versand.
 
@@ -164,7 +164,7 @@ Im Folgenden finden Sie die häufigsten Anwendungsbeispiele für Schübe.
 
    ![](assets/s_ncs_user_wizard_waves_call_center.png)
 
-## Neuversuche konfigurieren {#configuring-retries}
+## Konfigurieren der weiteren Zustellversuche {#configuring-retries}
 
 Vorübergehend nicht zustellbare Nachrichten aufgrund eines **Softbounce** oder eines **ignorierten Fehlers** werden automatisch für einen erneuten Versuch vorgesehen. Die Typen und Ursachen für fehlgeschlagene Sendungen finden Sie in diesem [Abschnitt](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
 
@@ -176,9 +176,9 @@ Bei On-Premise-Installationen und gehosteten/hybriden Installationen, die den be
 
 ![](assets/s_ncs_user_wizard_retry_param.png)
 
-Standardmäßig sind innerhalb der ersten 24 Stunden fünf erneute Versuche im Abstand von mindestens einer Stunde vorgesehen. An den folgenden Tagen und bis zum Ablauf der Versandgültigkeit, die im Tab **[!UICONTROL Gültigkeit]** angegeben wird, wird jeweils ein Zustellversuch unternommen. Siehe [Gültigkeitszeitraum definieren](#defining-validity-period).
+Standardmäßig sind innerhalb der ersten 24 Stunden fünf erneute Zustellversuche im Abstand von mindestens einer Stunde vorgesehen. An den folgenden Tagen wird bis zum Ablauf der Versandgültigkeit, die auf der Registerkarte **[!UICONTROL Gültigkeit]** festgelegt wird, jeweils ein Zustellversuch unternommen. Siehe [Definieren des Gültigkeitszeitraums](#defining-validity-period).
 
-## Gültigkeitszeitraum definieren {#defining-validity-period}
+## Definieren des Gültigkeitszeitraums {#defining-validity-period}
 
 Der Nachrichtenversand inklusive aller Neuversuche erfolgt innerhalb eines bestimmten Zeitraums, der ausgehend vom Startdatum im Tab **[!UICONTROL Gültigkeit]** der Versandeigenschaften festgelegt wird.
 
