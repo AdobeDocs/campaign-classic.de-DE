@@ -1,12 +1,12 @@
 ---
 product: campaign
-title: Personen, Personen und Empfänger
-description: Personen, Personen und Empfänger
+title: Personen und Empfänger
+description: Personen und Empfänger
 exl-id: 69b810f3-aa8b-4ab5-95c1-831257d7fcb9
 source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '770'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
