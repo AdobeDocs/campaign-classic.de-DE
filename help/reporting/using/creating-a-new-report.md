@@ -4,9 +4,9 @@ title: Neue Berichte erstellen
 description: Wichtige Schritte zum Erstellen eines neuen Berichts
 exl-id: 4c2aad47-0e2d-4d0b-8898-b437f4a05e11
 source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '961'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Gehen Sie wie folgt vor, um einen Bericht zu erstellen:
 
 1. Speichern Sie den Bericht.
 
-## Diagramm modellieren {#modelizing-the-chart}
+## Modellieren des Diagramms {#modelizing-the-chart}
 
 Nach der Speicherung des Berichts wird dieser angezeigt. Sie können nun das Diagramm Ihres Berichts erstellen.
 
@@ -58,7 +58,7 @@ Um den Bericht entsprechend seiner Art und seines Verwendungskontexts zu konstru
 
 1. Fügen Sie eine oder mehrere **[!UICONTROL Abfrage]**-Aktivitäten hinzu, um die für die Erstellung des Berichts nützlichen Daten abzurufen. Die Daten können direkt über eine Abfrage eines Schemas der Datenbank, eine importierte Liste oder einen existierenden Cube abgerufen werden.
 
-   Weitere Informationen hierzu finden Sie unter [Zu analysierende Daten erfassen](../../reporting/using/collecting-data-to-analyze.md).
+   Weitere Informationen finden Sie unter [Erfassen der zu analysierenden Daten](../../reporting/using/collecting-data-to-analyze.md).
 
    Diese Daten werden je nach Seitenkonfiguration im Bericht angezeigt oder nicht.
 
@@ -88,7 +88,7 @@ Es ist jedoch möglich, mehrere Zweige zu positionieren, wobei nur einer von ihn
 
 ## Erstellen einer Seite {#creating-a-page}
 
-Der Inhalt wird über die im Diagramm platzierten Aktivitäten konfiguriert. Weitere Informationen hierzu finden Sie unter [Diagramm modellieren](#modelizing-the-chart).
+Der Inhalt wird über die im Diagramm platzierten Aktivitäten konfiguriert. Weitere Informationen finden Sie unter [Modellieren des Diagramms](#modelizing-the-chart).
 
 Doppelklicken Sie auf das Symbol einer Aktivität, um sie zu konfigurieren.
 
@@ -106,7 +106,7 @@ Alternativ können Sie einen Rechtsklick auf den Knoten machen, um eine der verf
 
 >[!CAUTION]
 >
->Wenn der Bericht für den Export im Excel-Format vorgesehen ist, sollten Sie keine komplexe HTML-Formatierung verwenden. Weitere Informationen hierzu finden Sie unter [Bericht exportieren](../../reporting/using/actions-on-reports.md#exporting-a-report).
+>Wenn der Bericht für den Export im Excel-Format vorgesehen ist, sollten Sie keine komplexe HTML-Formatierung verwenden. Weitere Informationen finden Sie unter [Exportieren eines Berichts](../../reporting/using/actions-on-reports.md#exporting-a-report).
 
 Eine **[!UICONTROL Seite]** kann folgende Elemente enthalten:
 
@@ -130,7 +130,7 @@ Statische Elemente ermöglichen die Anzeige von Informationen, grafischen Elemen
 
 ![](assets/s_advuser_report_page_activity_03.png)
 
-### Informationen in einem Bericht filtern {#filtering-information-in-a-report}
+### Filtern von Informationen in einem Bericht {#filtering-information-in-a-report}
 
 Anhand von Eingabe- und Auswahldialogen können die im Bericht angezeigten Informationen gefiltert werden. Weitere Informationen zur Implementierung dieses Filtertyps finden Sie unter [Filteroptionen in Abfragen](../../reporting/using/collecting-data-to-analyze.md#filtering-options-in-the-queries).
 
