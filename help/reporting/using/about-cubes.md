@@ -5,9 +5,9 @@ description: Erste Schritte mit Cubes
 feature: Reporting
 exl-id: ade4c857-9233-4bc8-9ba1-2fec84b7c3e6
 source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '735'
+ht-degree: 100%
 
 ---
 
@@ -27,41 +27,41 @@ Nach ihrer Erstellung und Konfiguration werden die Cubes in den Abfrage-Aktivit�
 >
 >**Marketing Analytics** ist ein Adobe-Campaign-Modul. Es muss auf Ihrer Instanz installiert sein, damit Sie die unten beschriebenen Funktionen nutzen können.
 
-Verwenden Sie das Modul Marketing Analytics von Campaign, um:
+Verwenden Sie das Marketing Analytics-Modul von Campaign, um:
 
-1. Cubes erstellen
+1. Cubes zu erstellen
 
-   * Daten in einer Arbeitstabelle aggregieren und speichern, um Indikatoren anhand der Benutzeranforderungen vorab zu berechnen;
-   * das Datenvolumen in den verschiedenen Berechnungen, die für Berichte und Abfragen verwendet werden, zu reduzieren und so die Berechnungszeiten der Indikatoren deutlich zu optimieren;
-   * den Datenzugriff zu vereinfachen und Benutzern die Möglichkeit zu geben, Daten (unabhängig davon, ob sie voraggregiert wurden oder nicht) in Abhängigkeit von verschiedenen Dimensionen zu bearbeiten.
+   * Daten zu aggregieren und in einer Arbeitstabelle zu speichern, um Indikatoren auf der Grundlage von Benutzeranforderungen im Voraus zu berechnen,
+   * das in den verschiedenen Berechnungen der Berichte und Abfragen bewegte Datenenvolumen zu reduzieren und dadurch die Berechnungszeit der Indikatoren deutlich zu optimieren,
+   * den Zugriff auf die Daten zu vereinfachen und den Benutzern die Möglichkeit zu geben, die Daten (ob voraggregiert oder nicht) in Abhängigkeit von verschiedenen Dimensionen zu bearbeiten.
 
-   Weitere Informationen hierzu finden Sie unter [Indikatoren erstellen](../../reporting/using/creating-indicators.md).
+   Weiterführende Informationen hierzu finden Sie unter [Erstellen von Indikatoren](../../reporting/using/creating-indicators.md).
 
-1. Pivot-Tabellen erstellen
+1. Erstellen von Pivot-Tabellen
 
-   * berechnete Daten und konfigurierte Kennzahlen analysieren,
-   * die anzuzeigenden Daten sowie ihren Anzeigemodus auswählen,
-   * die verwendeten Kennzahlen zu personalisieren,
-   * Benutzern mit nicht technischem Hintergrund interaktive Analysewerkzeuge anbieten.
+   * berechnete Daten und konfigurierte Kennzahlen zu analysieren,
+   * die anzuzeigenden Daten sowie ihren Anzeigemodus auszuwählen,
+   * die verwendeten Kennzahlen und Indikatoren zu personalisieren,
+   * Benutzern mit nichttechnischem Hintergrund interaktive Tools zur Analyse anzubieten.
 
-   Weitere Informationen hierzu finden Sie unter [Cubes zur Datenanalyse verwenden](../../reporting/using/using-cubes-to-explore-data.md).
+   Weitere Informationen hierzu finden Sie unter [Verwenden von Cubes zur Datenanalyse](../../reporting/using/using-cubes-to-explore-data.md).
 
 1. Die Erstellung von Abfragen über in einem Cube berechnete und aggregierte Daten.
 1. Die Identifizierung von Populationen und deren Referenzierung in Listen.
 
 ## Terminologie {#terminology}
 
-Unten finden Sie spezifische Begriffe bei der Arbeit mit Cubes.
+Unten finden Sie eine Liste der spezifischen Begriffe bei der Arbeit mit Cubes.
 
-* **Cube** - Ein Cube ist eine Darstellung multidimensionaler Informationen: Es bietet Endbenutzern Strukturen, die für die interaktive Datenanalyse entwickelt wurden.
+* **Cube** – Ein Cube ist eine Darstellung mehrdimensionaler Informationen: Er bietet Endnutzern Strukturen für die interaktive Datenanalyse.
 
-* **Faktentabelle/-schema** - Die Faktentabelle (oder das Faktenschema) enthält die Roh- oder Elementardaten, auf denen die Analysen basieren. Hierbei handelt es sich hauptsächlich um Tabellen mit großen Volumen (möglicherweise mit verknüpften Tabellen) mit potenziell langen Berechnungen. Die Broadlog- oder die Bestelltabelle sind Beispiele für Faktentabellen.
+* **Faktentabelle/-schema** – Die Faktentabelle (oder das Faktenschema) enthält die Roh- oder Elementardaten, auf denen die Analysen basieren. Hierbei handelt es sich hauptsächlich um Tabellen mit großen Volumen (möglicherweise mit verknüpften Tabellen) und potenziell langen Berechnungen. Die Broadlog- oder die Bestelltabelle sind Beispiele für Faktentabellen.
 
-* **Dimension** - Mit Dimensionen können Sie Daten in Gruppen unterteilen: Nach ihrer Erstellung dienen die Dimensionen als Analyseachsen. In den meisten Fällen werden für eine bestimmte Dimension mehrere Ebenen definiert. Für eine zeitliche Dimension beispielsweise sind die Ebenen Monate, Tage, Stunden, Minuten usw. Dieser Satz von Ebenen stellt die Dimensionshierarchie dar und ermöglicht verschiedene Ebenen der Datenanalyse.
+* **Dimension** – Mit Dimensionen können Sie Daten in Gruppen unterteilen: Nach ihrer Erstellung dienen die Dimensionen als Analyseachsen. In den meisten Fällen werden für eine bestimmte Dimension mehrere Ebenen definiert. Für eine zeitliche Dimension beispielsweise sind die Ebenen Monate, Tage, Stunden, Minuten usw. Dieser Satz von Ebenen stellt die Dimensionshierarchie dar und ermöglicht verschiedene Ebenen der Datenanalyse.
 
-* **Klassierung** - Für einige Felder können Sie eine Klassierung definieren, um Werte zu gruppieren und die Lesbarkeit der Informationen zu vereinfachen. Die Klassierung wird auf Ebenen angewendet. Es wird empfohlen, eine Klassierung zu definieren, wenn es viele verschiedene Werte gibt.
+* **Klassierung** – Für einige Felder können Sie eine Klassierung definieren, um Werte zu gruppieren und die Lesbarkeit der Informationen zu vereinfachen. Die Klassierung wird auf Ebenen angewendet. Es wird empfohlen, eine Klassierung zu definieren, wenn es viele verschiedene mögliche Werte gibt.
 
-* **Maßnahme** - Die häufigsten Kennzahlen sind Summe, Durchschnitt, Maximum, Minimum, Standardabweichung etc. Kennzahlen können berechnet werden: Zum Beispiel wäre die Annahmerate eines Angebots das Verhältnis von der Anzahl der Vorschläge dieses Angebots zu der Anzahl von Annahmen.
+* **Kennzahlen** – Gängige Kennzahlen sind Summe, Durchschnitt, Maximum, Minimum, Standardabweichung etc. Kennzahlen können berechnet werden: Zum Beispiel bezeichnet die Annahmerate eines Angebots das Verhältnis der Anzahl der unterbreiteten Angebote verglichen mit der Anzahl der angenommenen Angebote.
 
 ## Arbeitsbereich Cube {#cube-workspace}
 
@@ -91,4 +91,4 @@ Die hauptsächlichen Verwendungskontexte der Cubes sind folgende:
 
    ![](assets/s_advuser_cube_in_report.png)
 
-   Weitere Informationen hierzu finden Sie unter [Daten eines Berichts durchsuchen](../../reporting/using/using-cubes-to-explore-data.md#exploring-the-data-in-a-report).
+   Weitere Informationen hierzu finden Sie unter [Erkunden der Daten in einem Bericht](../../reporting/using/using-cubes-to-explore-data.md#exploring-the-data-in-a-report).
