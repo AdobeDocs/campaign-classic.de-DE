@@ -5,13 +5,13 @@ description: Erfahren Sie, wie Sie mit einer n:n-Relation Abfragen durchführen 
 feature: Query Editor
 exl-id: e1d40ba1-2493-45c1-bd54-af9cb332028d
 source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '469'
 ht-degree: 100%
 
 ---
 
-# Abfrage mit einer n:n-Relation {#querying-using-a-many-to-many-relationship}
+# Abfrage mit einer Viele-zu-viele-Beziehung {#querying-using-a-many-to-many-relationship}
 
 ![](../../assets/common.svg)
 
