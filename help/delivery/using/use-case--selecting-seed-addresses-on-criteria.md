@@ -5,9 +5,9 @@ description: '"Anwendungsbeispiel: Auswahl von Testadressen nach Kriterien"'
 feature: Seed Address
 exl-id: 091648b8-bf2d-4595-8be3-287f1ac48edd
 source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '912'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -30,17 +30,17 @@ Zur Verwendung von dynamischen Bedingungen benötigen Sie:
 
 ## Schritt 1: Erstellen eines Versands {#step-1---creating-a-delivery}
 
-Die Schritte zur Erstellung eines Versands werden im Abschnitt [E-Mail-Versand erstellen](creating-an-email-delivery.md) Abschnitt.
+Die Schritte zum Erstellen eines Versands finden Sie im Abschnitt [Erstellen eines E-Mail-Versands](creating-an-email-delivery.md).
 
 Im vorliegenden Beispiel hat der Versandverantwortliche zunächst den Newsletter erstellt und die Zielgruppe ausgewählt.
 
 ![](assets/dlv_seeds_usecase_01.png)
 
-## 2. Schritt - Gemeinsamen Wert erstellen {#step-2---creating-a-common-value}
+## Schritt 2: Erstellen eines gemeinsamen Werts {#step-2---creating-a-common-value}
 
-Das Hinzufügen des Felds &quot;Abteilung&quot;, das den gemeinsamen Wert aufnehmen soll, erfordert eine Erweiterung des **Datenschemas** der Testadressen und die Anpassung des entsprechenden Formulars.
+Um einen gemeinsamen Wert wie den in unserem Beispiel (Einkaufsabteilung) zu erstellen, muss zunächst das **Datenschema** Ihrer Testadressen erweitert und das zugehörige Eingabeformular bearbeitet werden.
 
-### Datenschema erweitern {#extending-the-data-schema}
+### Erweitern des Datenschemas {#extending-the-data-schema}
 
 Weitere Informationen zu Schemaerweiterungen finden Sie unter [diesem Abschnitt](../../configuration/using/data-schemas.md).
 
@@ -93,9 +93,9 @@ Weitere Informationen zu Schemaerweiterungen finden Sie unter [diesem Abschnitt]
 
    Nach Abschluss der Aktualisierung können Sie den Assistenten schließen.
 
-1. Melden Sie sich von Adobe Campaign ab und verbinden Sie sich erneut. Die im Testadressen-Schema vorgenommenen Änderungen sind nun effektiv. Damit sie im Eingabefenster der Testadressen sichtbar werden, ist eine Anpassung des **[!UICONTROL entsprechenden Formulars]** erforderlich. Siehe Abschnitt [Aktualisieren des Formulars](#updating-the-input-form) Abschnitt.
+1. Melden Sie sich von Adobe Campaign ab und verbinden Sie sich erneut. Die im Testadressen-Schema vorgenommenen Änderungen sind nun effektiv. Damit sie im Eingabefenster der Testadressen sichtbar werden, ist eine Anpassung des **[!UICONTROL entsprechenden Formulars]** erforderlich. Weitere Informationen finden Sie im Abschnitt [Aktualisieren des Eingabeformulars](#updating-the-input-form).
 
-#### Datenschema aus einer verknüpften Tabelle erweitern {#extending-the-data-schema-from-a-linked-table}
+#### Erweitern des Datenschemas ausgehend von einer verknüpften Tabelle {#extending-the-data-schema-from-a-linked-table}
 
 Das Testadressen-Schema kann auch Werte aus einer mit dem Empfängerschema verbundenen Tabelle übernehmen.
 
@@ -129,9 +129,9 @@ Auf diese Weise:
 
 Befolgen Sie im Anschluss die im Abschnitt beschriebene Vorgehensweise ab dem **Schritt 5** und passen Sie dann das Formular **[!UICONTROL Testadressen]** an.
 
-Siehe Abschnitt [Aktualisieren des Formulars](#updating-the-input-form) Abschnitt.
+Weitere Informationen finden Sie im Abschnitt [Aktualisieren des Eingabeformulars](#updating-the-input-form).
 
-#### Aktualisieren des Formulars {#updating-the-input-form}
+#### Aktualisieren des Eingabeformulars {#updating-the-input-form}
 
 1. Gehen Sie in den Knoten **[!UICONTROL Administration > Konfiguration > Formulare]** und öffnen Sie das Testadressen-Formular.
 
@@ -152,7 +152,7 @@ Siehe Abschnitt [Aktualisieren des Formulars](#updating-the-input-form) Abschnit
 
 1. Geben Sie nun in den Testadressen, die Sie für den Versand verwenden möchten, im Feld **[!UICONTROL Abteilung]** den Wert **Einkauf** ein.
 
-## 3. Schritt - Bedingung definieren {#step-3---defining-the-condition}
+## Schritt 3: Definieren der Bedingung {#step-3---defining-the-condition}
 
 Sie können nun die dynamische Bedingung für die Testadressen-Auswahl definieren. Gehen Sie wie folgt vor:
 
