@@ -1,26 +1,26 @@
 ---
 product: campaign
-title: Bedingte Inhalte definieren
-description: Bedingte Inhalte definieren
+title: Definieren von bedingten Inhalten
+description: Definieren von bedingten Inhalten
 exl-id: efee50f7-d917-4c71-add2-116c4b8f7013
 source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '254'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
-# Bedingte Inhalte definieren{#defining-a-conditional-content}
+# Definieren von bedingten Inhalten{#defining-a-conditional-content}
 
 ![](../../assets/common.svg)
 
 Sie können die Anzeige bestimmter Elemente in einem Bericht oder einer Berichtsseite an Bedingungen knüpfen.
 
-Um für einzelne Elemente Bedingungen zu erstellen, passen Sie deren Sichtbarkeitseinstellungen an. Weitere Informationen hierzu finden Sie unter [Anzeige von Bedingungselementen](#conditioning-item-display).
+Um für einzelne Elemente Bedingungen zu erstellen, passen Sie deren Sichtbarkeitseinstellungen an. Weitere Informationen hierzu finden Sie unter [Bedingungen zur Anzeige von Elementen definieren](#conditioning-item-display).
 
-Um die Anzeige einer oder mehrerer Seiten an Bedingungen zu knüpfen, verwenden Sie eine Aktivität vom Typ **[!UICONTROL Test]**. Weitere Informationen hierzu finden Sie unter [Anzeige von Bedingungsseiten](#conditioning-page-display).
+Um die Anzeige einer oder mehrerer Seiten an Bedingungen zu knüpfen, verwenden Sie eine Aktivität vom Typ **[!UICONTROL Test]**. Weitere Informationen hierzu finden Sie unter [Bedingungen zur Anzeige von Seiten definieren](#conditioning-page-display).
 
-## Anzeige von Bedingungselementen {#conditioning-item-display}
+## Bedingungen zur Anzeige von Elementen definieren {#conditioning-item-display}
 
 Die Anzeige von Berichtelementen wird über Sichtbarkeitsbedingungen gesteuert. Wenn diese Bedingungen nicht erfüllt sind, werden die entsprechenden Elemente nicht angezeigt.
 
@@ -32,7 +32,7 @@ Im folgenden Beispiel hängt die Anzeige von der Sprache ab:
 
 ![](assets/reporting_display_condition.png)
 
-## die Anzeige von Seiten abhängig von einer Bedingung zu machen {#conditioning-page-display}
+## Bedingungen zur Anzeige von Seiten definieren {#conditioning-page-display}
 
 Im Diagramm eines Berichts ermöglicht die Aktivität **[!UICONTROL Test]** es, die Abfolge der Berichtseiten von Bedingungen abhängig zu machen.
 
