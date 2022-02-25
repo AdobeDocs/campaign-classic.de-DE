@@ -1,38 +1,38 @@
 ---
 product: campaign
-title: Cubes zur Datenanalyse verwenden
-description: Cubes zur Datenanalyse verwenden
+title: Verwenden von Cubes zur Datenanalyse
+description: Verwenden von Cubes zur Datenanalyse
 exl-id: 32696bbf-1415-4214-837f-5437fdb8b4d4
 source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '991'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
-# Cubes zur Datenanalyse verwenden{#using-cubes-to-explore-data}
+# Verwenden von Cubes zur Datenanalyse{#using-cubes-to-explore-data}
 
 ![](../../assets/common.svg)
 
 Marketing Analytics ermöglicht es, auf vereinfachte Weise Berichte zu erstellen und Daten aus der Datenbank mithilfe von Cubes zu identifizieren und auszuwählen. Folgende Möglichkeiten stehen zur Verfügung:
 
-* Erstellung von Cube-basierten Berichten. Der Prozess wird hier beschrieben: [Daten eines Berichts durchsuchen](#exploring-the-data-in-a-report).
-* Abruf von Daten der Datenbank und Gruppierung in Listen, um beispielsweise Ziele und Sendungen zu identifizieren und zu erstellen. Weitere Informationen hierzu finden Sie unter [Zielpopulation erstellen](#building-a-target-population).
-* Fügen Sie eine Pivot-Tabelle in einen Bericht ein und verweisen Sie auf einen darin vorhandenen Cube. Weitere Informationen hierzu finden Sie unter [Pivot-Tabellen in Berichte einfügen](#inserting-a-pivot-table-into-a-report).
+* Erstellung von Cube-basierten Berichten. Der Prozess wird hier detailliert beschrieben: [Erkunden der Daten in einem Bericht](#exploring-the-data-in-a-report).
+* Sammeln Sie die Daten in der Datenbank und gruppieren Sie sie in Listen, um beispielsweise Zielgruppen und Sendungen zu identifizieren und zu erstellen. Weitere Informationen finden Sie unter [Erstellen von Zielgruppen](#building-a-target-population).
+* Fügen Sie eine Pivot-Tabelle in einen Bericht ein und verweisen Sie auf einen darin vorhandenen Cube. Weitere Informationen hierzu finden Sie unter [Einfügen einer Pivot-Tabelle in einen Bericht](#inserting-a-pivot-table-into-a-report).
 
 >[!NOTE]
 >
 >Marketing Analytics ist erforderlich, um Cubes zu erstellen oder zu ändern. Weitere Informationen finden Sie unter [Über Cubes](../../reporting/using/about-cubes.md).
 
-## Daten eines Berichts durchsuchen {#exploring-the-data-in-a-report}
+## Erkunden der Daten in einem Bericht {#exploring-the-data-in-a-report}
 
-### Schritt 1: Cube-basierten Bericht erstellen {#step-1---creating-a-report-based-on-a-cube}
+### Schritt 1: Erstellen eines Cube-basierten Berichts {#step-1---creating-a-report-based-on-a-cube}
 
-Klicken Sie zum Erstellen eines Cube-basierten Berichts auf die Schaltfläche **[!UICONTROL Erstellen]** im Tab **[!UICONTROL Berichte]** und wählen Sie den gewünschten Cube.
+Klicken Sie zum Erstellen eines Berichts auf der Grundlage eines Cubes auf die Schaltfläche **[!UICONTROL Erstellen]** auf der Registerkarte **[!UICONTROL Berichte]** und wählen Sie den gewünschten Cube.
 
-Der Prozess wird hier beschrieben: [Cube-basierten Bericht erstellen](../../reporting/using/creating-indicators.md#creating-a-report-based-on-a-cube).
+Der Prozess wird hier detailliert beschrieben: [Erstellen eines Berichts auf der Grundlage eines Cubes](../../reporting/using/creating-indicators.md#creating-a-report-based-on-a-cube).
 
-### 2. Schritt - Zeilen und Spalten auswählen {#step-2---selecting-lines-and-columns}
+### Schritt 2: Auswahl der Zeilen und Spalten {#step-2---selecting-lines-and-columns}
 
 Die Standardanzeige beinhaltet die ersten beiden Dimensionen des Cubes (in unserem Beispiel: Alter und Stadt).
 
@@ -51,7 +51,7 @@ Die Standardanzeige beinhaltet die ersten beiden Dimensionen des Cubes (in unser
 
    Die Parameter hängen vom Datentyp und der gewählten Dimension ab.
 
-   Beispielsweise können für Daten mehrere Ebenen verfügbar sein. Weitere Informationen hierzu finden Sie unter [Anzeigemessungen](../../reporting/using/concepts-and-methodology.md#displaying-measures).
+   Beispielsweise können für Daten mehrere Ebenen verfügbar sein. Weitere Informationen hierzu finden Sie unter [Anzeigen von Kennzahlen](../../reporting/using/concepts-and-methodology.md#displaying-measures).
 
    Folgende Optionen stehen zur Verfügung:
 
@@ -71,7 +71,7 @@ Die Standardanzeige beinhaltet die ersten beiden Dimensionen des Cubes (in unser
 
    ![](assets/s_advuser_cube_in_report_04c.png)
 
-### 3. Schritt - Anzuzeigende Kennzahlen konfigurieren {#step-3---configuring-the-measures-to-display}
+### Schritt 3: Konfiguration der anzuzeigenden Kennzahlen {#step-3---configuring-the-measures-to-display}
 
 Geben Sie nach der Positionierung der Zeilen und Spalten die anzuzeigenden Kennzahlen sowie ihren Anzeigemodus an.
 
@@ -93,7 +93,7 @@ Standardmäßig wird nur eine Kennzahl angezeigt. Um Kennzahlen hinzuzufügen od
 
    ![](assets/s_advuser_cube_in_report_config_02.png)
 
-   Sie können insbesondere bestimmen, ob die Titel der Kennzahlen angezeigt werden sollen. Weitere Informationen hierzu finden Sie unter [Anzeige konfigurieren](../../reporting/using/concepts-and-methodology.md#configuring-the-display).
+   Sie können insbesondere bestimmen, ob die Titel der Kennzahlen angezeigt werden sollen. Weitere Informationen hierzu finden Sie unter [Konfigurieren der Anzeige](../../reporting/using/concepts-and-methodology.md#configuring-the-display).
 
 1. Sie können neue Kennzahlen auf Basis von bereits existierenden erstellen. Klicken Sie hierzu auf die Schaltfläche **[!UICONTROL Kennzahl erstellen]** und geben Sie ihre Konfiguration an.
 
@@ -117,7 +117,7 @@ Standardmäßig wird nur eine Kennzahl angezeigt. Um Kennzahlen hinzuzufügen od
 
    Klicken Sie anschließend auf die Schaltfläche **[!UICONTROL Dynamische Kennzahl bearbeiten]**, um auf die Einstellungen zuzugreifen.
 
-## Zielpopulation erstellen {#building-a-target-population}
+## Erstellen einer Zielpopulation {#building-a-target-population}
 
 Die basierend auf Cubes erstellten Berichte ermöglichen den Abruf von Daten aus der Datenbank und deren Speicherung in einer Liste.
 
@@ -153,7 +153,7 @@ Gehen Sie wie folgt vor, um eine Population in einer Liste zusammenzufassen:
 
    ![](assets/s_advuser_cube_in_report_config_02g.png)
 
-## Pivot-Tabellen in Berichte einfügen {#inserting-a-pivot-table-into-a-report}
+## Einfügen von Pivot-Tabellen in Berichte {#inserting-a-pivot-table-into-a-report}
 
 Gehen Sie wie folgt vor:
 
