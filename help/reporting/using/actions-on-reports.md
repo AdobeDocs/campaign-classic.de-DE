@@ -4,9 +4,9 @@ title: Mit Berichten arbeiten
 description: Mit Berichten arbeiten
 exl-id: b30cdeaf-4ad6-473d-bdbc-91984755b609
 source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '571'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Die Symbolleiste bietet die Möglichkeit, den Bericht zu exportieren, zu drucken
 
 ![](assets/s_ncs_advuser_report_wizard_04.png)
 
-## Bericht exportieren {#exporting-a-report}
+## Exportieren eines Berichts {#exporting-a-report}
 
 Wählen Sie in der Dropdown-Liste das Format aus, in dem der Bericht exportiert werden soll: .xls, .pdf oder .ods.
 
@@ -38,7 +38,7 @@ Passen Sie die Parameter **[!UICONTROL Papier]** und **[!UICONTROL Rand]** Ihren
 
 ![](assets/s_ncs_advuser_report_wizard_021.png)
 
-### Exportieren in Microsoft Excel {#exporting-into-microsoft-excel}
+### Exportieren nach Microsoft Excel {#exporting-into-microsoft-excel}
 
 Für Berichte vom Typ **[!UICONTROL Liste mit Gruppierung]**, die im Excel-Format exportiert werden sollen, gelten folgende Empfehlungen und Einschränkungen:
 
@@ -81,7 +81,7 @@ Weiterführende Informationen zur Datei **serverConf.xml** finden Sie in [diesem
 
 Weiterführende Informationen zum **nlserver**-Service finden Sie in [diesem Abschnitt](../../production/using/administration.md).
 
-## Bericht drucken {#printing-a-report}
+## Drucken eines Berichts {#printing-a-report}
 
 Sie haben die Möglichkeit, Ihren Bericht zu drucken. Klicken Sie hierzu auf das Drucker-Symbol. Das Druck-Dialogfenster öffnet sich.
 
@@ -89,7 +89,7 @@ Um das Druckergebnis zu optimieren, öffnen Sie die Druckoptionen von Internet E
 
 ![](assets/s_ncs_advuser_report_print_options.png)
 
-## Berichtverläufe erstellen {#creating-report-archives}
+## Erstellen von Berichtsarchiven {#creating-report-archives}
 
 Die Erstellung eines Verlaufs ermöglicht es Ihnen, die Entwicklung der Berichtsdaten über die Zeit zu beobachten. Zudem können Statistiken eines bestimmten Zeitpunkts eingesehen werden.
 
