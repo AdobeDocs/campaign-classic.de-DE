@@ -5,13 +5,13 @@ description: Auf Kampagnen zugreifen
 feature: Distributed Marketing
 exl-id: 5534bd5b-6888-4bf6-8a39-109c6fc0f6c3
 source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '170'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# Auf Kampagnen zugreifen{#accessing-campaigns}
+# Zugriff auf Kampagnen{#accessing-campaigns}
 
 ![](../../assets/v7-only.svg)
 
@@ -19,7 +19,7 @@ Sobald eine Kampagne bestellt, die Bestellung validiert und das Verfügbarkeitsd
 
 Je nach Kampagnentyp und ausgewählten Optionen geschieht dies auf zentraler oder lokaler Ebene.
 
-## Auf die Kampagne zugreifen {#accessing-the-campaign}
+## Zugriff auf eine Kampagne {#accessing-the-campaign}
 
 Nach abgeschlossener Validierung und Erreichen des Verfügbarkeitsdatums wird die Kampagne lokal erstellt und die lokalen Benutzer werden über die Verfügbarkeit per E-Mail informiert.
 
