@@ -1,23 +1,23 @@
 ---
 product: campaign
-title: Partizipative Kampagnen erstellen
-description: Erfahren Sie, wie Sie eine partizipative Kampagne erstellen.
+title: Erstellen einer partizipativen Kampagne
+description: Erfahren Sie, wie Sie eine partizipative Kampagne erstellen
 feature: Distributed Marketing
 exl-id: 17313fe5-ad42-45ca-a35a-1e7aa89380ef
 source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '990'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# Partizipative Kampagnen erstellen{#creating-a-collaborative-campaign-intro}
+# Erstellen einer partizipativen Kampagne{#creating-a-collaborative-campaign-intro}
 
 ![](../../assets/v7-only.svg)
 
-Partizipative Kampagnen werden von Zentralstellen auf Basis der Kampagnenvorlagen des **dezentralen Marketings** erstellt. Lesen Sie hierzu [diese Seite](about-distributed-marketing.md#collaborative-campaign).
+Partizipative Kampagnen werden von der Zentralstelle auf Basis der Kampagnenvorlagen des **verteilten Marketings** erstellt. Lesen Sie hierzu [diese Seite](about-distributed-marketing.md#collaborative-campaign).
 
-## Partizipative Kampagnen erstellen {#creating-a-collaborative-campaign}
+## Erstellen einer partizipativen Kampagne {#creating-a-collaborative-campaign}
 
 Partizipative Kampagnen beruhen jeweils auf einer Referenzkampagne, die von der Zentralstelle zu erstellen ist. Dies geschieht ausgehend vom Knoten **[!UICONTROL Kampagnenverwaltung > Kampagnen]** durch Klick auf das **[!UICONTROL Neu]**-Symbol.
 
@@ -172,6 +172,6 @@ Nach Speicherung der Bestellung erhält der validierungsverantwortliche Benutzer
 
 Weitere Informationen hierzu finden Sie im Abschnitt [Validierungsprozess](creating-a-local-campaign.md#approval-process).
 
-## Bestellung validieren {#approving-an-order}
+## Validieren einer Bestellung {#approving-an-order}
 
-Die Validierung der Bestellung eines partizipativen Kampagnenkits entspricht der von lokalen Kampagnen. Siehe hierzu [diesen Abschnitt](creating-a-local-campaign.md#approving-an-order).
+Die Validierung der Bestellung eines partizipativen Kampagnen-Kits entspricht der von lokalen Kampagnen. Siehe hierzu [diesen Abschnitt](creating-a-local-campaign.md#approving-an-order).
