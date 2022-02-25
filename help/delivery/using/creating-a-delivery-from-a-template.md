@@ -1,20 +1,20 @@
 ---
 product: campaign
-title: Versand aus einer Vorlage erstellen
+title: Erstellen eines Versands aus einer Vorlage
 description: Erfahren Sie, wie Sie einen Versand aus einer Vorlage erstellen
 exl-id: 7ffb649e-801f-4568-a86b-7982448e3c30
 source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '196'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
-# Versand aus einer Vorlage erstellen{#creating-a-delivery-from-a-template}
+# Erstellen eines Versands aus einer Vorlage{#creating-a-delivery-from-a-template}
 
 ![](../../assets/common.svg)
 
-## Vorlage mit einem Versand verknüpfen {#linking-the-template-to-a-delivery}
+## Verknüpfen der Vorlage mit einem Versand {#linking-the-template-to-a-delivery}
 
 Um einen Versand auf Basis einer existierenden Vorlage zu erstellen, wählen Sie diese aus der Liste der Versandvorlagen aus.
 
@@ -28,7 +28,7 @@ Wählen Sie im Feld **[!UICONTROL Ordner]** das gesuchte Verzeichnis aus oder kl
 
 Wählen Sie dann die zu verwendende Versandvorlage aus und klicken Sie auf **[!UICONTROL OK]**.
 
-## Vorlage ausführen {#executing-the-template}
+## Ausführen der Vorlage {#executing-the-template}
 
 Sie haben die Möglichkeit, eine Vorlage direkt aus der Vorlagenliste heraus auszuführen, ohne zuvor einen Versand zu erstellen. Markieren Sie hierfür die auszuführende Vorlage und klicken Sie mit der rechten Maustaste. Wählen Sie die Option **[!UICONTROL Aktionen > Ausgewählte Versandvorlage ausführen...]**.
 
@@ -42,4 +42,4 @@ Der Versand wird daraufhin in dem der Vorlage entsprechenden Ordner erstellt. De
 
 >[!NOTE]
 >
->Weitere Informationen zur Konfiguration eines Versands finden Sie unter [E-Mail-Inhalt definieren](defining-the-email-content.md).
+>Weitere Informationen zum Konfigurieren eines Versands finden Sie unter [Definieren des E-Mail-Inhalts](defining-the-email-content.md).
