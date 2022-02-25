@@ -5,9 +5,9 @@ description: Erfahren Sie, wie Sie Filterregeln verwenden
 feature: Typology Rules
 exl-id: a4d12445-5680-4704-9c67-e43e0ea6631b
 source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '528'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Filterregeln ermöglichen es, auszuschließende Nachrichten nach in einer Abfrag
 
 Filterregeln können mit anderen Regeltypen (Kontrolle, Druck usw.) in Typologien kombiniert oder in einer spezifischen **Filtertypologie** zusammengefasst werden. Weitere Informationen finden Sie unter [Filtertypologien erstellen und anwenden](#creating-and-using-a-filtering-typology).
 
-## Filterregel erstellen {#creating-a-filtering-rule}
+## Erstellen einer Filterregel {#creating-a-filtering-rule}
 
 Sie können beispielsweise die Abonnenten Ihrer Newsletter filtern, um keine Nachrichten an minderjährige Empfänger zu senden.
 
@@ -45,7 +45,7 @@ Bei Anwendung dieser Regel in einem Versand werden minderjährige Abonnenten aut
 
 ![](assets/campaign_opt_create_filter_05.png)
 
-## Bedingung für eine Filterregel {#conditioning-a-filtering-rule}
+## Erstellen von Bedingungen für eine Filterregel {#conditioning-a-filtering-rule}
 
 Die Anwendungskriterien einer Filterregel können dem Versand oder dem verknüpften Versandentwurf entsprechend eingeschränkt werden.
 
@@ -59,7 +59,7 @@ In diesem Fall wird die Regel nur auf die Sendungen angewandt, die den Kriterien
 >
 >Typologien und Filterregeln können auch im Rahmen eines Workflows über die Aktivität **[!UICONTROL Versandentwurf]** verwendet werden. Näheres hierzu finden Sie in [diesem Abschnitt](../../workflow/using/delivery-outline.md).
 
-## Filtertypologie erstellen und verwenden {#creating-and-using-a-filtering-typology}
+## Erstellen und Verwenden einer Filtertypologie {#creating-and-using-a-filtering-typology}
 
 Sie haben die Möglichkeit, Typologien zu erstellen, die nur Filterregeln enthalten.****
 
