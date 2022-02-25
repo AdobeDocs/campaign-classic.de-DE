@@ -5,9 +5,9 @@ description: Erfahren Sie, wie Sie personalisierte Gutscheine erstellen und einf
 feature: Personalization
 exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
 source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '966'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Durch das Hinzufügen von Gutscheinen können Sie Ihren Empfängern Produkte und
 >
 >Gutscheindaten können im CSV- und XML-Format importiert und exportiert werden. Weiterführende Informationen zum Importieren und Exportieren finden Sie in [diesem Abschnitt](../../platform/using/get-started-data-import-export.md).
 
-## Gutscheine erstellen {#creating-a-coupon}
+## Erstellen eines Gutscheins {#creating-a-coupon}
 
 Für die Erstellung von Gutscheinen bietet Ihnen das Gutscheinmodul zwei Möglichkeiten:
 
@@ -52,13 +52,13 @@ Bevor Sie die folgenden Schritte ausführen, entscheiden Sie sich für einen Gut
    1. Geben Sie für den individuellen Gutschein einen eindeutigen Code ein, wenn Sie vom Pop-up dazu aufgefordert werden.
    1. Klicken Sie auf **[!UICONTROL Speichern]**, um den Gutschein zu erstellen.
 
-   Weitere Informationen zur Registerkarte &quot;Coupons&quot;finden Sie unter [Individuelle Gutscheine konfigurieren](#configuring-individual-coupons).
+   Weitere Informationen zum Tab „Gutscheine“ finden Sie unter [Konfigurieren von individuellen Gutscheinen](#configuring-individual-coupons).
 
    >[!NOTE]
    >
    >Individuelle Gutscheine können gesammelt importiert werden. Weiterführende Informationen zum Importieren und Exportieren finden Sie in [diesem Abschnitt](../../platform/using/get-started-data-import-export.md).
 
-### Individuelle Gutscheine konfigurieren {#configuring-individual-coupons}
+### Konfigurieren von individuellen Gutscheinen {#configuring-individual-coupons}
 
 ![](assets/deliv_coup_03.png)
 
@@ -71,7 +71,7 @@ Der Coupons-Tab erscheint nur bei individuellen Gutscheinen. Nach der Verknüpfu
 
 Die Werte für **[!UICONTROL Status]**, **[!UICONTROL Kanal]** und **[!UICONTROL Adresse]** werden automatisch ausgefüllt. Nur die Werte für **[!UICONTROL Eingelöst am]** werden nicht von Campaign abgerufen. Sie können aber durch den Import einer Datei eingefügt werden, in der die Details für die Gutscheineinlösung enthalten sind.
 
-## Gutschein in einen E-Mail-Versand einfügen {#inserting-a-coupon-into-an-email-delivery}
+## Einfügen eines Gutscheins in einen E-Mail-Versand {#inserting-a-coupon-into-an-email-delivery}
 
 Im folgenden Beispiel wird von der Startseite aus ein Versand erstellt. Weiterführende Informationen zum Erstellen eines Versands finden Sie in [diesem Abschnitt](about-email-channel.md). Sie können auch in einem Workflow einem Versand einen Gutschein hinzufügen.
 
@@ -134,7 +134,7 @@ Im folgenden Beispiel wird von der Startseite aus ein Versand erstellt. Weiterf�
 
 >[!NOTE]
 >
->Anweisungen zum Verwalten unzureichender Gutscheine für einen Versand finden Sie unter [Ungenügende Anzahl von Gutscheinen verwalten](#managing-insufficient-coupons)
+>Eine Anleitung zur Vorgehensweise, wenn nicht genügend Coupons für einen Versand vorhanden sind, finden Sie unter [Verwalten bei unzureichender Anzahl von Gutscheinen](#managing-insufficient-coupons).
 
 So prüfen Sie, ob der Versand erfolgreich war:
 
@@ -151,7 +151,7 @@ So prüfen Sie, ob der Versand erfolgreich war:
 >
 > [Auf dieser Seite](../../configuration/using/about-custom-recipient-table.md) erfahren Sie, wie Sie eine benutzerdefinierte Empfängertabelle verwenden.
 
-## Ungenügende Anzahl von Gutscheinen verwalten {#managing-insufficient-coupons}
+## Verwalten bei unzureichender Anzahl von Gutscheinen {#managing-insufficient-coupons}
 
 Die Versandanalyse wird angehalten, wenn es weniger Gutscheine als Nachrichten gibt. In diesem Fall können Sie zusätzliche Gutscheine importieren oder die Anzahl der Nachrichten beschränken. Im Folgenden erfahren Sie, wie Sie die Anzahl der Nachrichten beschränken können.
 
