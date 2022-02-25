@@ -4,9 +4,9 @@ title: Verwenden des Kontexts in Ihren Berichten
 description: Erfahren Sie, wie Sie den Kontext in Ihren Berichten verwenden
 exl-id: a19e2843-d3f9-48c3-af72-cc1bc54f6360
 source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '522'
+ht-degree: 100%
 
 ---
 
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 ![](../../assets/common.svg)
 
-Wenn Sie Daten in Form von **[!UICONTROL Tabellen]** oder **[!UICONTROL charts]**, kann er aus zwei Quellen stammen: eine neue Abfrage (siehe [Direkten Datenfilter definieren](#defining-a-direct-filter-on-data)) oder dem Berichtskontext (siehe [Kontextdaten verwenden](#using-context-data)).
+Wenn Sie Daten in Form von **[!UICONTROL Tabellen]** oder **[!UICONTROL Diagrammen]** darstellen möchten, können diese aus zwei Quellen stammen: einer neuen Abfrage (siehe [Definieren eines direkten Filters auf Daten](#defining-a-direct-filter-on-data)) oder dem Berichtskontext (siehe [Verwenden von Kontextdaten](#using-context-data)).
 
-## Direkten Datenfilter definieren {#defining-a-direct-filter-on-data}
+## Definieren eines direkten Filters auf Daten {#defining-a-direct-filter-on-data}
 
-### Daten filtern {#filtering-data}
+### Filtern von Daten {#filtering-data}
 
 Die Nutzung einer Aktivität vom Typ **[!UICONTROL Abfrage]** bei der Erstellung eines Berichts ist nicht obligatorisch. Die Daten können alternativ direkt in den Tabellen und Grafiken des Berichts gefiltert werden.
 
@@ -61,7 +61,7 @@ Somit werden nur die den Filterbedingungen entsprechenden Empfänger im Bericht 
 
 ![](assets/s_ncs_advuser_report_display_04.png)
 
-## Kontextdaten verwenden {#using-context-data}
+## Verwenden von Kontextdaten {#using-context-data}
 
 Die im Bericht anzuzeigenden Daten können aus dem Berichtkontext stammen und in Form von **[!UICONTROL Tabellen]** oder **[!UICONTROL Grafiken]** dargestellt werden.
 
@@ -69,7 +69,7 @@ Im Tab **[!UICONTROL Daten]** der die Grafik oder die Tabelle enthaltenden Seite
 
 ![](assets/s_ncs_advuser_report_datasource_3.png)
 
-* Mit der Option **[!UICONTROL Neue Abfrage]** können Sie eine Abfrage zur Datenerfassung erstellen. Weitere Informationen hierzu finden Sie unter [Direkten Datenfilter definieren](#defining-a-direct-filter-on-data).
+* Mit der Option **[!UICONTROL Neue Abfrage]** können Sie eine Abfrage zur Datenerfassung erstellen. Weitere Informationen hierzu finden Sie unter [Definieren eines direkten Filters auf Daten](#defining-a-direct-filter-on-data).
 * Die Option **[!UICONTROL Kontextdaten]** ermöglicht die Verwendung der Eingangsdaten: Der Kontext des Berichts entspricht den Informationen, die von der eingehenden Transition der die Grafik oder die Tabelle enthaltenen Seite übertragen werden. Dieser Kontext kann beispielsweise Daten enthalten, die über die vor der Aktivität **[!UICONTROL Seite]** positionierte Aktivität **[!UICONTROL Abfrage]** abgerufen werden. In dieser Aktivität werden zudem die Tabelle und die Felder angegeben, auf die sich der Bericht beziehen soll.
 
 Erstellen Sie in einer Abfrage-Aktivität zum Beispiel folgende Abfrage über die Empfänger:
