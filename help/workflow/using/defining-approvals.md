@@ -1,17 +1,17 @@
 ---
 product: campaign
-title: Genehmigungen definieren
-description: Validierungen bieten Benutzern die Gelegenheit, an bestimmten Etappen des Workflows Entscheidungen zu treffen oder einen Vorgang zur Ausführung freizugeben
+title: Definieren von Validierungen
+description: Validierungen ermöglichen Benutzern, in Bezug auf einen Workflow Entscheidungen zu treffen oder seine Ausführung zu bestätigen.
 feature: Approvals
 exl-id: 4d413d51-ae5d-4e5e-bfaf-4160a6075281
 source-git-commit: 3af4f259b80b3e03c81ee278b470ef6ffe3fe4d0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '871'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# Genehmigungen definieren {#defining-approvals}
+# Definieren von Validierungen {#defining-approvals}
 
 ![](../../assets/common.svg)
 
@@ -27,7 +27,7 @@ In Kampagnen ist der Validierungsablauf für alle Aktivitäten identisch.
 
 ![](assets/validation-1-in-op.png)
 
-Beispiele für Validierungen finden Sie unter [diesem Abschnitt](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries).
+In [diesem Abschnitt](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries) finden Sie weitere Beispiele zu Validierungen.
 
 Zur Validierung können Benutzer entweder den Webzugriff mithilfe des in der Benachrichtigung enthaltenen Links nutzen oder aber die Clientkonsole.
 
@@ -35,7 +35,7 @@ Zur Validierung können Benutzer entweder den Webzugriff mithilfe des in der Ben
 >
 >Nach Speicherung der Antwort kann diese nicht mehr geändert werden.
 
-## Genehmigungen per E-Mail {#sending-emails}
+## Validierungen per E-Mail {#sending-emails}
 
 Benutzer werden durch den Versand einer E-Mail-Benachrichtigung zur Validierung der ihnen zugewiesenen Vorgänge aufgefordert. Die E-Mail enthält einen Link, der den Webzugriff auf die Plattform ermöglicht. Die E-Mail-Adresse des Benutzers muss in seinem Profil gespeichert werden. Bei fehlender Adresse hat der Benutzer trotz allem die Möglichkeit, direkt über die Clientkonsole zu antworten.
 
@@ -45,7 +45,7 @@ E-Mail-Benachrichtigen werden über eine fortlaufende Versandaktion gesteuert. D
 
 Auf der genannten Vorlage basierende Sendungen werden im Knoten **[!UICONTROL Administration > Betreibung > Automatisch erstellte Objekte > Technische Sendungen > Workflow-Benachrichtigungen]** gespeichert.
 
-## Validierungen über die Konsole {#approval-via-the-console}
+## Validierungen in der Client-Konsole {#approval-via-the-console}
 
 In Kampagnen sind die ausstehenden Validierungen im Dashboard ersichtlich.
 
