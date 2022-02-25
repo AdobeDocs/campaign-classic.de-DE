@@ -1,13 +1,13 @@
 ---
 product: campaign
 title: Angebote in Interaction
-description: Erfahren Sie, wie Sie basierend auf Eignungsregeln die besten Angebote an Ihre Kontakte senden.
+description: Erfahren Sie, wie Sie Ihren Kontakten die besten Angebote auf der Grundlage von Eignungsregeln senden können
 feature: Interaction, Offers
 exl-id: 62b8fdcd-8423-496c-8407-ab89a3a70721
 source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '289'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
