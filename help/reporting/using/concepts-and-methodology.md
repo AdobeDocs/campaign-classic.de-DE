@@ -4,9 +4,9 @@ title: Best Practices für Cubes
 description: Best Practices für Cubes
 exl-id: 5f22fa2c-b648-4126-9a24-1798adfa8f34
 source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '1567'
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Sie können jede Klasse manuell erstellen oder sie mit einer existierenden Aufli
 
 Adobe Campaign bietet zudem einen Assistenten, um die Klassen automatisch zu erzeugen: Die Werte können in n Klassen verteilt oder nach den am häufigsten in der Datenbank vertretenen Werten gruppiert werden.
 
-### Klassen definieren {#defining-each-bin}
+### Definieren der einzelnen Klassen {#defining-each-bin}
 
 Um jede Klasse einzeln zu erstellen, aktivieren Sie die Option **[!UICONTROL Klassen manuell definieren]** und nutzen Sie die Tabelle, um die verschiedenen Klassen zu bestimmen.
 
@@ -65,7 +65,7 @@ Gehen Sie wie folgt vor, um diesen Klassierungstyp zu erstellen:
 
    Bei Aktualisierung der Auflistungswerte werden die Klassen automatisch angepasst, ohne benutzerseitige Intervention.
 
-### Wertebereiche erstellen {#creating-value-ranges}
+### Erstellen von Wertebereichen {#creating-value-ranges}
 
 Sie können die Werte nach benutzerdefinierten Intervallen gruppieren.
 
@@ -75,7 +75,7 @@ Um die Intervalle manuell zu bestimmen, klicken Sie auf die Schaltfläche **[!UI
 
 Geben Sie anschließend die oberen und unteren Grenzwerte an und klicken Sie zur Bestätigung auf **[!UICONTROL OK]**.
 
-### Klassen automatisch generieren {#generating-bins-automatically}
+### Automatisches Erzeugen von Klassen {#generating-bins-automatically}
 
 Es besteht auch die Möglichkeit, die Klassen automatisch zu erzeugen. Klicken Sie hierzu auf den Link **[!UICONTROL Klassen erzeugen...]**.
 
@@ -119,7 +119,7 @@ Die Auflistung **[!UICONTROL Domains (domains)]** wird zur Erzeugung der nativen
 
 Sie können weitere, der Klassierung vorbehaltene Auflistungen erstellen und diese in anderen Cubes verwenden: Alle Alias-Werte werden in den im ersten Tab der Auflistung definierten Klassen gruppiert.
 
-## Aggregate berechnen und verwenden {#calculating-and-using-aggregates}
+## Berechnen und Verwenden von Aggregaten {#calculating-and-using-aggregates}
 
 Cubes bieten die Möglichkeit, Daten vor der eigentlichen Verwendung zu aggregieren.
 
@@ -155,7 +155,7 @@ Gehen Sie wie folgt vor, um ein neues Aggregat zu erstellen:
 
       ![](assets/s_advuser_cube_agregate_05.png)
 
-## Definieren Sie Kennzahlen {#defining-measures}
+## Definieren von Kennzahlen {#defining-measures}
 
 Die zu berechnenden Kennzahlentypen werden im Tab **[!UICONTROL Kennzahlen]** des Cubes festgelegt. Es können Summen, Durchschnitte, Abweichungen und mehr berechnet werden.
 
@@ -179,13 +179,13 @@ Gehen Sie wie folgt vor, um eine neue Kennzahl zu definieren:
 
 1. Geben Sie den Titel der Kennzahl an und fügen Sie eine Beschreibung hinzu. Klicken Sie dann auf **[!UICONTROL Beenden]**, um die Erstellung abzuschließen.
 
-## Anzeigemessungen {#displaying-measures}
+## Anzeigen von Kennzahlen {#displaying-measures}
 
 Die Anzeige der Kennzahlen in der Tabelle kann nach Bedarf konfiguriert werden. Folgende Parameter sind verfügbar:
 
 * Anzeigereihenfolge der Kennzahlen (siehe [Anzeigereihenfolge](#display-sequence)),
-* Ein-/Ausblenden von Berichtinformationen (siehe [Anzeige konfigurieren](#configuring-the-display))
-* Auswahl des Anzeigeformats: Prozent, Insgesamt, Anzahl Dezimalstellen etc. (siehe [Änderung des angezeigten Kennzahlentyps](#changing-the-type-of-measure-displayed)).
+* die Informationen, die im Bericht angezeigt/ausgeblendet werden sollen (siehe [Anzeige konfigurieren](#configuring-the-display)),
+* die anzuzeigenden Kennzahlen: Prozentsatz, Gesamtbetrag, Anzahl der Dezimalstellen etc. (siehe [Ändern des angezeigten Kennzahlentyps](#changing-the-type-of-measure-displayed)).
 
 ### Anzeigereihenfolge {#display-sequence}
 
@@ -195,7 +195,7 @@ Ihre Anzeigereihenfolge kann durch Verschieben der Zeilen geändert werden. Im n
 
 ![](assets/s_advuser_cube_in_report_config_04.png)
 
-### Anzeige konfigurieren {#configuring-the-display}
+### Konfigurieren der Anzeige {#configuring-the-display}
 
 Die Konfiguration der angezeigten Kennzahlen, Zeilen und Spalten kann für jede Kennzahl einzeln oder global durchgeführt werden. Ein spezifisches Symbol ermöglicht den Zugriff auf die Auswahl der Anzeigemodi.
 
@@ -209,13 +209,13 @@ Mithilfe der Farbwahl können die wichtigsten Werte visuell hervorgehoben werden
 
 ![](assets/s_advuser_cube_in_report_config_06.png)
 
-### Änderung des angezeigten Kennzahlentyps {#changing-the-type-of-measure-displayed}
+### Ändern des angezeigten Kennzahlentyps {#changing-the-type-of-measure-displayed}
 
 Sie können für jede Kennzahl die anzuwendende Einheit und Formatierung festlegen.
 
 ![](assets/s_advuser_cube_in_report_config_07.png)
 
-## Bericht freigeben {#sharing-a-report}
+## Freigeben des Berichts {#sharing-a-report}
 
 Nach der Konfiguration des Berichts können Sie diesen beibehalten und gegebenenfalls mit anderen Benutzern teilen.
 
