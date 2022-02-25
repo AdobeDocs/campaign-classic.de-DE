@@ -5,21 +5,21 @@ description: Erfahren Sie, wie Sie Testadressen erstellen und verwenden.
 feature: Seed Address
 exl-id: f7dc97f0-3423-4b6f-88e2-08180f9adf8a
 source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '440'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
-# Testadressen erstellen{#creating-seed-addresses}
+# Erstellen von Testadressen{#creating-seed-addresses}
 
 ![](../../assets/common.svg)
 
 Testadressen werden separat von Standard-Profilen und -Zielgruppen im Knoten **[!UICONTROL Ressourcen > Kampagnenverwaltung > Testadressen]** verwaltet.
 
-Zur besseren Übersicht können Sie Unterordner anlegen. Klicken Sie hierfür mit der rechten Maustaste auf den **[!UICONTROL Testadressen]**-Knoten und wählen Sie die Option **[!UICONTROL Testadressen-Ordner hinzufügen]** aus. Benennen Sie den neuen Ordner und bestätigen Sie die Eingabe mit **[!UICONTROL Enter]**. Nun können Sie neue Testadressen erstellen oder existierende Adressen in diesen Unterordner kopieren. Weitere Informationen hierzu finden Sie unter [Definieren von Adressen](#defining-addresses).
+Zur besseren Übersicht können Sie Unterordner anlegen. Klicken Sie hierfür mit der rechten Maustaste auf den **[!UICONTROL Testadressen]**-Knoten und wählen Sie die Option **[!UICONTROL Testadressen-Ordner hinzufügen]** aus. Benennen Sie den neuen Ordner und bestätigen Sie die Eingabe mit **[!UICONTROL Enter]**. Nun können Sie neue Testadressen erstellen oder existierende Adressen in diesen Unterordner kopieren. Weitere Informationen hierzu finden Sie im Abschnitt [Definieren von Adressen](#defining-addresses).
 
-Adobe Campaign bietet auch die Möglichkeit, Testadressenvorlagen zu erstellen, die in Sendungen oder Kampagnen importiert und deren spezifischen Bedürfnissen angepasst werden. Siehe [Testadressenvorlagen erstellen](#creating-seed-address-templates).
+Adobe Campaign bietet auch die Möglichkeit, Testadressenvorlagen zu erstellen, die in Sendungen oder Kampagnen importiert und deren spezifischen Bedürfnissen angepasst werden. Weitere Informationen finden Sie unter [Erstellen von Testadressenvorlagen](#creating-seed-address-templates).
 
 ## Definieren von Adressen {#defining-addresses}
 
@@ -58,4 +58,4 @@ Gehen Sie wie folgt vor, um einen Vorlagenordner zu konfigurieren:
 
    ![](assets/s_ncs_user_seedlist_folder_is_model.png)
 
-   Die in diesem Ordner gespeicherten Adressen können nun als Vorlage verwendet werden. Sie können sie in Sendungen oder Kampagnen importieren und an die jeweiligen Bedürfnisse Ihrer Sendungen und Kampagnen anpassen (siehe [Testadressen hinzufügen](adding-seed-addresses.md)).
+   Die in diesem Ordner gespeicherten Adressen können nun als Vorlage verwendet werden. Sie können sie in Sendungen oder Kampagnen importieren und entsprechend anpassen (siehe [Hinzufügen von Testadressen](adding-seed-addresses.md)).
