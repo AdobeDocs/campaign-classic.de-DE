@@ -1,16 +1,16 @@
 ---
 product: campaign
-title: Verfolgen einer Kampagne
-description: Erfahren Sie, wie Sie eine Kampagne mit Campaign Distributed Marketing verfolgen.
+title: Nachverfolgen einer Kampagne
+description: Erfahren Sie, wie Sie eine Kampagne mit Campaign Distributed Marketing nachverfolgen.
 exl-id: 87d1909c-d2eb-47ce-a860-0e78a64d2914
 source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '440'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# Verfolgen einer Kampagne{#tracking-a-campaign}
+# Nachverfolgen einer Kampagne{#tracking-a-campaign}
 
 ![](../../assets/v7-only.svg)
 
@@ -21,7 +21,7 @@ Folgende Funktionen stehen ihnen hierzu zur Verfügung:
 * [Filtern von Kits](#filter-packages),
 * [Bearbeiten von Kits](#edit-packages),
 * [Abbrechen von Kits](#cancel-a-package),
-* [Zurücksetzen eines Pakets](#reinitializing-a-package).
+* [Zurücksetzen eines Packages](#reinitializing-a-package).
 
 ## Filtern von Kits {#filter-packages}
 
@@ -83,7 +83,7 @@ Auf Niveau einer **partizipativen Kampagne** hat der Abbruch eines Kits folgende
 
 Die Zentralstelle kann nach dem Abbruch immer noch auf das Kit zugreifen und es bei Bedarf zurücksetzen. Damit das Kit den Lokalstellen wieder zur Verfügung gestellt werden kann, muss es erneut validiert und gestartet werden. Die Zurücksetzung eines Kampagnenkits wird im Folgenden beschrieben.
 
-## Zurücksetzen eines Pakets {#reinitializing-a-package}
+## Zurücksetzen eines Packages {#reinitializing-a-package}
 
 Das Zurücksetzen eines Kampagnenkits dient dazu, dieses zu bearbeiten und anschließend den Lokalstellen erneut zur Verfügung zu stellen.
 
