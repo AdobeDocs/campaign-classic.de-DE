@@ -1,12 +1,12 @@
 ---
 product: campaign
-title: Email-Parameter
+title: E-Mail-Parameter
 description: Erfahren Sie mehr zu den Optionen und Einstellungen, die spezifisch für den E-Mail-Versand sind
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
 source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '978'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
