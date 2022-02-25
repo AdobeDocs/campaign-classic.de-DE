@@ -4,9 +4,9 @@ title: Kohärenzregeln
 description: Kohärenzregeln
 exl-id: 757328fa-4698-4f85-a5fa-074b5152ec45
 source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '815'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 93%
 
 Adobe Campaign ermöglicht die Sicherstellung der Kohärenz Ihrer Marketingkommunikation mithilfe einer Reihe von in den Kampagnentypologien enthaltenen Regeln. Diese dienen dazu, die an die Empfänger übermittelten Sendungen in Bezug auf ihr Volumen, ihre Art, ihre Relevanz etc. zu kontrollieren.
 
-Mithilfe von **Kapazitätsregeln** kann etwa verhindert werden, dass die Plattform, die den Versand verarbeitet, überlastet wird. Zum Beispiel dürfen Sonderangebote mit einem Download-Link nicht an eine zu große Population gesendet werden, um den Server nicht zu überladen; eine Telefonkampagne darf die Verarbeitungskapazität der Telefonzentrale nicht überschreiten usw. Weitere Informationen hierzu finden Sie unter [Kontrollkapazität](#controlling-capacity).
+Mithilfe von **Kapazitätsregeln** kann etwa verhindert werden, dass die Plattform, die den Versand verarbeitet, überlastet wird. Zum Beispiel dürfen Sonderangebote mit einem Download-Link nicht an eine zu große Population gesendet werden, um den Server nicht zu überladen; eine Telefonkampagne darf die Verarbeitungskapazität der Telefonzentrale nicht überschreiten usw. Weitere Informationen hierzu finden Sie unter [Kontrollieren der Kapazität](#controlling-capacity).
 
-## Kontrollkapazität {#controlling-capacity}
+## Kontrollieren der Kapazität {#controlling-capacity}
 
 Stellen Sie vor dem Versand von Nachrichten sicher, dass Ihre physische Infrastruktur über ausreichende Kapazitäten verfügt, um sowohl ausgehende als auch eingehende Nachrichten (z. B. Antworten, Bounces, Anrufe im Callcenter etc.) verarbeiten zu können.
 
@@ -52,9 +52,9 @@ Gehen Sie wie folgt vor, um eine neue Kapazitätsregel zu erstellen:
 
    Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](#monitoring-consumption).
 
-## Maximale Auslastung definieren {#defining-the-maximum-load}
+## Festlegen der maximalen Auslastung {#defining-the-maximum-load}
 
-Um die maximale Auslastung zu definieren, müssen Sie Verfügbarkeitszeilen festlegen. Dazu stehen zwei Optionen zur Verfügung: Sie können manuell eine oder mehrere Verfügbarkeitszeilen erstellen (siehe [Verfügbarkeitszeilen einzeln hinzufügen](#adding-availability-lines-one-by-one)) oder erstellen Sie Verfügbarkeitsbereiche. Die Häufigkeit dieser Zeiträume kann automatisiert werden (siehe [Mehrere Verfügbarkeitszeilen hinzufügen](#add-a-set-of-availability-lines)).
+Um die maximale Auslastung zu definieren, müssen Sie Verfügbarkeitszeilen festlegen. Dazu stehen zwei Optionen zur Verfügung: Sie können manuell eine oder mehrere Verfügbarkeitszeilen erstellen (siehe [Verfügbarkeitszeilen einzeln hinzufügen](#adding-availability-lines-one-by-one)) oder Verfügbarkeitsbereiche erstellen. Die Häufigkeit dieser Zeiträume kann automatisiert werden (siehe [Mehrere Verfügbarkeitszeilen hinzufügen](#add-a-set-of-availability-lines)).
 
 ### Verfügbarkeitszeilen einzeln hinzufügen {#adding-availability-lines-one-by-one}
 
@@ -110,7 +110,7 @@ Die Anzahl der zu verarbeitenden Nachrichten ist gleichmäßig über den gesamte
 
 ![](assets/campaign_opt_create_capacity_06.png)
 
-## Verbrauch überwachen {#monitoring-consumption}
+## Überwachen des Verbrauchs {#monitoring-consumption}
 
 Kapazitätsregeln dienen standardmäßig lediglich Informationszwecken. Wählen Sie die Option **[!UICONTROL Die die Kapazität übersteigenden Nachrichten aus der Zielgruppe ausschließen]**, damit die festgelegte Menge nicht überschritten werden kann. Überschüssige Nachrichten werden dann automatisch von Sendungen ausgeschlossen, die diese Typologieregel anwenden.
 
