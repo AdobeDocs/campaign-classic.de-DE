@@ -4,9 +4,9 @@ title: Technote - Adobe Campaign-Konfigurationsaktualisierungen
 description: Adobe Campaign-Konfigurationsaktualisierungen
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
 source-git-commit: 0f31ee570ba6e763f48902e91c5d823ac297fc24
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1137'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -101,7 +101,7 @@ Sobald alle Instanzen aktualisiert wurden, muss auch die Client-Konsole auf dies
 
 ## Integration mit Experience Cloud-Triggern {#acc-triggers-updates}
 
-Der ältere OAuth-Authentifizierungsdienst hat das Lebenszyklusende erreicht. Die Authentifizierung für die Triggers-Integration, die ursprünglich auf der OAuth-Authentifizierung für den Zugriff auf die Pipeline basierte, wurde zu Adobe I/O verschoben. Die alte OAuth-Authentifizierungsmethode mit Campaign wurde im **September 2021** [eingestellt](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411?profile.language=de). Gehostete Umgebungen profitieren von einer Erweiterung, bis  **23. Februar 2022**. Wenden Sie sich als On-Premise- oder Hybrid-Kunde an die Kundenunterstützung von Adobe, um den Support bis Februar 2022 zu erweitern. Dazu müssen Sie Adobe [die AppID der OAuth-Anwendung](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) nennen.
+Der ältere OAuth-Authentifizierungsdienst hat das Lebenszyklusende erreicht. Die Authentifizierung für die Triggers-Integration, die ursprünglich auf der OAuth-Authentifizierung für den Zugriff auf die Pipeline basierte, wurde zu Adobe I/O verschoben. Die alte OAuth-Authentifizierungsmethode mit Campaign wurde im **September 2021** [eingestellt](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411?profile.language=de). Gehostete Umgebungen profitieren von einer Verlängerung bis zum **23. Februar 2022**. Wenden Sie sich als On-Premise- oder Hybrid-Kunde an die Kundenunterstützung von Adobe, um den Support bis Februar 2022 zu verlängern. Dazu müssen Sie Adobe [die AppID der OAuth-Anwendung](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) nennen.
 
 **Sind Sie betroffen?**
 
