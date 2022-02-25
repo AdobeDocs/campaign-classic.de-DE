@@ -1,16 +1,16 @@
 ---
 product: campaign
-title: Diagramm erstellen
+title: Erstellen eines Diagramms
 description: Erfahren Sie, wie Sie ein Diagramm erstellen
 exl-id: d32b614f-82c1-4363-816c-4ebedaa5cfe9
 source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '549'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# Diagramm erstellen{#creating-a-chart}
+# Erstellen eines Diagramms{#creating-a-chart}
 
 ![](../../assets/common.svg)
 
@@ -124,7 +124,7 @@ Die möglichen Interaktionstypen und ihre jeweilige Konfiguration werden in [die
 
 ![](assets/s_ncs_advuser_report_wizard_017.png)
 
-## Statistiken berechnen {#calculating-statistics}
+## Berechnen von Statistiken {#calculating-statistics}
 
 Sie können in den Grafiken Statistiken über die abgerufenen Daten anzeigen.
 
