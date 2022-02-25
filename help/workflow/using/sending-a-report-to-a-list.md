@@ -4,7 +4,7 @@ title: Senden eines Berichts an eine Liste
 description: Erfahren Sie, wie Sie mit einem Workflow einen Bericht an eine Liste senden.
 exl-id: cb24aea5-f3c7-4b17-8899-1792ea18c235
 source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '719'
 ht-degree: 100%
 
