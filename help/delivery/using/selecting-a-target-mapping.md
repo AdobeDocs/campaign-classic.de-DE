@@ -1,16 +1,16 @@
 ---
 product: campaign
-title: Zielgruppen-Mapping auswählen
-description: Erfahren Sie, wie Sie Zielgruppen-Mapping
+title: Auswählen eines Zielgruppen-Mappings
+description: Erfahren Sie, wie man ein Zielgruppen-Mapping durchführt
 exl-id: b5514fa3-1e65-45dc-8e40-d1ba3b673e7a
 source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '181'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
-# Zielgruppen-Mapping auswählen{#selecting-a-target-mapping}
+# Auswählen eines Zielgruppen-Mappings{#selecting-a-target-mapping}
 
 ![](../../assets/common.svg)
 
