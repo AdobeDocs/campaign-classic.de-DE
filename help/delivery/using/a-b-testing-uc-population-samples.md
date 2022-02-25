@@ -1,10 +1,10 @@
 ---
 product: campaign
-title: Testpopulation konfigurieren
+title: Konfigurieren der Testpopulation
 description: Erfahren Sie anhand eines speziellen Anwendungsbeispiels, wie Sie A/B-Tests durchführen
 exl-id: 1ca01cab-734a-4299-b112-04eec51222fb
 source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '191'
 ht-degree: 100%
 
