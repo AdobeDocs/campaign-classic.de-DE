@@ -5,13 +5,13 @@ description: '"Anwendungsbeispiel: Wertersetzung konfigurieren"'
 feature: Seed Address
 exl-id: 3f567b2d-6f98-4831-af84-7db17fd12c6e
 source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '454'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
-# Anwendungsbeispiel: Konfigurieren der Feldersetzung{#use-case-configuring-the-field-substitution}
+# Anwendungsbeispiel: Konfigurieren der Feld-Ersetzung{#use-case-configuring-the-field-substitution}
 
 ![](../../assets/common.svg)
 
@@ -32,13 +32,13 @@ Zur Verwendung der zufälligen Wertersetzung benötigen Sie:
 
 ## Erstellen eines Versands {#step-1---creating-a-delivery}
 
-Die Schritte zur Erstellung eines Versands werden im Abschnitt [E-Mail-Versand erstellen](creating-an-email-delivery.md) Abschnitt.
+Die Schritte zum Erstellen eines Versands finden Sie im Abschnitt [Erstellen eines E-Mail-Versands](creating-an-email-delivery.md).
 
-Im vorliegenden Beispiel wurde der unten gezeigte Newsletter erstellt :
+Im vorliegenden Beispiel wurde vom Versand-Manager der unten gezeigte Newsletter erstellt.
 
 ![](assets/dlv_seeds_usecase_24.png)
 
-## Testadressen-Datenschema bearbeiten {#editing-the-seed-addresses-data-schema}
+## Bearbeiten des Testadressen-Datenschemas {#editing-the-seed-addresses-data-schema}
 
 Die einzelnen Schritte der Schemaerweiterung werden im Abschnitt beschrieben.
 
@@ -51,7 +51,7 @@ Im vorliegenden Beispiel übernimmt das Testadressen-Schema einen im Datenschema
 
 Diese Auflistung ermöglicht es dem Benutzer, das bevorzugte literarische Genre der Kunden anzugeben.
 
-Damit diese Änderung des Datenschemas im **Eingabeformular** für Testadressen angezeigt werden kann, müssen Sie es aktualisieren. Siehe Abschnitt [Aktualisieren des Formulars](use-case--selecting-seed-addresses-on-criteria.md#updating-the-input-form) Abschnitt.
+Damit diese Änderung des Datenschemas im **Eingabeformular** für Testadressen angezeigt werden kann, müssen Sie es aktualisieren. Weitere Informationen finden Sie im Abschnitt [Aktualisieren des Eingabeformulars](use-case--selecting-seed-addresses-on-criteria.md#updating-the-input-form).
 
 ## Personalisierung konfigurieren {#configuring-personalization}
 
@@ -61,7 +61,7 @@ Damit diese Änderung des Datenschemas im **Eingabeformular** für Testadressen 
 
    ![](assets/dlv_seeds_usecase_25.png)
 
-1. Konfigurieren Sie Ihre Versandliste und die Testadressen. Siehe [Zielpopulationen identifizieren](steps-defining-the-target-population.md).
+1. Konfigurieren Sie Ihre Versandliste und die Testadressen. Siehe [Identifizieren von Zielpopulationen](steps-defining-the-target-population.md).
 
    Im vorliegenden Beispiel soll der Versand an alle Kunden mit dem bevorzugten Genre **Science-Fiction** adressiert werden.
 
@@ -73,7 +73,7 @@ Damit diese Änderung des Datenschemas im **Eingabeformular** für Testadressen 
 
    >[!NOTE]
    >
-   >Weitere Informationen über **[!UICONTROL Dynamische Bedingung bearbeiten..]** -Link, siehe [Anwendungsfall: Testadressen anhand von Kriterien auswählen](use-case--selecting-seed-addresses-on-criteria.md).
+   >Weitere Informationen zum Link **[!UICONTROL Bearbeiten der dynamischen Bedingung....]** finden Sie unter [Anwendungsbeispiel: Auswahl von Testadressen nach Kriterien](use-case--selecting-seed-addresses-on-criteria.md).
 
 1. Klicken Sie auf den **[!UICONTROL Vorschau]**-Tab und wählen Sie eine Testadresse aus, um die Personalisierung zu testen.
 
