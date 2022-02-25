@@ -1,16 +1,16 @@
 ---
 product: campaign
-title: Aktivitätsbilder ändern
+title: Ändern von Aktivitätsbildern
 description: Erfahren Sie, wie Sie das Aktivitätsbild ändern
 exl-id: cafdbc10-9c10-4d42-a485-c9880df8d371
 source-git-commit: 3b523e53440ba6ae107b597c7ebf226195126bde
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '172'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
-# Aktivitätsbilder ändern{#change-activity-images}
+# Ändern von Aktivitätsbildern{#change-activity-images}
 
 ![](../../assets/common.svg)
 
