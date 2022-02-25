@@ -1,16 +1,16 @@
 ---
 product: campaign
-title: Emoticon-Liste personalisieren
-description: Erfahren Sie, wie Sie die Emoticon-Liste unter Verwendung von Adobe Campaign Classic anpassen können
+title: Personalisieren der Emoticon-Liste
+description: Erfahren Sie, wie Sie die Emoticon-Liste unter Verwendung von Adobe Campaign Classic personalisieren können
 exl-id: b8642df3-1960-4f2c-8273-c3988a3e85f0
 source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '474'
 ht-degree: 100%
 
 ---
 
-# Emoticon-Liste personalisieren {#customize-emoticons}
+# Personalisieren der Emoticon-Liste {#customize-emoticons}
 
 ![](../../assets/common.svg)
 
