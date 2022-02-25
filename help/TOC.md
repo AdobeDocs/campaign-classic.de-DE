@@ -7,9 +7,9 @@ user-guide-description: Mit Adobe Campaign können Sie umfangreiche Kundendaten 
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: c54102b2ec32fbea89ce41dd3c9fedb98e612996
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2555'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -506,7 +506,7 @@ ht-degree: 99%
       + [Beispiele für JavaScript-Code in Workflows](workflow/using/javascript-in-workflows.md)
       + [Auf eine externe Datenbank zugreifen](workflow/using/accessing-an-external-database--fda-.md)
       + [Verwalten von Berechtigungen](workflow/using/managing-rights.md)
-      + [Aktivitätsbilder ändern](workflow/using/managing-activity-images.md)
+      + [Ändern von Aktivitätsbildern](workflow/using/managing-activity-images.md)
       + [Verwalten von Zeitzonen](workflow/using/managing-time-zones.md)
       + [Technische Workflows](workflow/using/about-technical-workflows.md)
 + Verwalten von Angeboten {#managing-offers}
