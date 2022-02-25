@@ -1,20 +1,20 @@
 ---
 product: campaign
-title: Typologieregeln anwenden
-description: Erfahren Sie, wie Sie Typologieregeln anwenden
+title: Anwenden von Typologieregeln
+description: Hier erfahren Sie, wie Sie Typologieregeln anwenden
 exl-id: 09ec0fc0-76ed-4c73-8bdf-c931e2103aa9
 source-git-commit: 808f459a0b77b1787fc017c031247ab268b5aafa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1047'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Typologieregeln anwenden{#applying-rules}
+# Anwenden von Typologieregeln{#applying-rules}
 
 ![](../../assets/common.svg)
 
-## Typologie auf einen Versand anwenden {#applying-a-typology-to-a-delivery}
+## Anwenden von Typologien auf Sendungen {#applying-a-typology-to-a-delivery}
 
 Um die von Ihnen erstellten Typologieregeln anzuwenden, müssen Sie sie mit einer Typologie verknüpfen und diese in Ihrer Sendung referenzieren. Gehen Sie hierzu wie folgt vor:
 
@@ -37,7 +37,7 @@ Um die von Ihnen erstellten Typologieregeln anzuwenden, müssen Sie sie mit eine
    >
    >Die Typologie kann auf Ebene der Versandvorlage festgelegt werden, um sie automatisch auf alle mit der jeweiligen Vorlage erstellten Sendungen anzuwenden.
 
-## Anwendungsbedingungen definieren {#defining-application-conditions}
+## Definieren der Anwendungsbedingungen {#defining-application-conditions}
 
 Es besteht die Möglichkeit, das Anwendungsfeld einer Regel Ihren Bedürfnissen entsprechend einzuschränken (mit Ausnahme von Kontrollregeln).
 
@@ -53,7 +53,7 @@ Bestimmen Sie nun im Abfrage-Editor die Filterbedingungen. Im unten stehenden Be
 >
 >Für Filterregeln kann der Anwendungskontext der Filterkriterien ausgewählt werden: Sie können versandabhängig oder entwurfsabhängig sein. Weitere Informationen finden Sie unter [Bedingungen für Filterregeln erstellen](filtering-rules.md#conditioning-a-filtering-rule).
 
-## Berechnungsfrequenz anpassen {#adjusting-calculation-frequency}
+## Anpassen der Berechnungsfrequenz {#adjusting-calculation-frequency}
 
 Schlichtungen werden jede Nacht automatisch durch den Datenbankbereinigungs-Workflow neu ausgeführt. Bereits berechnete Werte, die sich nicht täglich verändern, können jedoch beibehalten werden, um die Datenbank nicht zu überlasten.
 
