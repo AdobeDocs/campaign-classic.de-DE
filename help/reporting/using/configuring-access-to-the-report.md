@@ -1,16 +1,16 @@
 ---
 product: campaign
-title: Zugriff auf den Bericht konfigurieren
-description: Zugriff auf den Bericht konfigurieren
+title: Konfigurieren des Zugriffs auf den Bericht
+description: Konfigurieren des Zugriffs auf den Bericht
 exl-id: 1e5ab922-481c-4dce-a05e-a58408002e24
 source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '794'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# Zugriff auf den Bericht konfigurieren{#configuring-access-to-the-report}
+# Konfigurieren des Zugriffs auf den Bericht{#configuring-access-to-the-report}
 
 ![](../../assets/common.svg)
 
@@ -58,7 +58,7 @@ Der Bericht kann auch mit bestimmten Benutzern oder Benutzergruppen geteilt werd
 
 ![](assets/s_ncs_advuser_report_visibility_8.png)
 
-### Filteroptionen definieren {#defining-the-filtering-options}
+### Definieren der Filteroptionen {#defining-the-filtering-options}
 
 Im Tab **[!UICONTROL Berichte]** werden alle in der Plattform verfügbaren Berichte anzeigt, auf die der angemeldete Benutzer Zugriff hat.
 
@@ -74,7 +74,7 @@ Um einen Bericht einer Kategorie zuzuordnen, wählen Sie diese im Tab **[!UICONT
 
 Sie können eine neue Kategorie erfassen, die dann in die Liste der verfügbaren Kategorien aufgenommen wird. Die entsprechende Auflistung wird automatisch aktualisiert.
 
-## Link zu einem Bericht erstellen {#creating-a-link-to-a-report-}
+## Erstellen eines Links zu einem Bericht {#creating-a-link-to-a-report-}
 
 Sie können einen Bericht über einen spezifischen Knoten im Navigationsbaum wie eine Liste, einen Empfänger, einen Versand o. Ä. zugänglich machen. Erstellen Sie hierzu einfach eine Verknüpfung zum betreffenden Bericht und geben Sie die Entität an, in der dieser verfügbar gemacht werden soll.
 
@@ -120,7 +120,7 @@ Es stehen zudem Parameter zur Verfügung, die eine Kontrolle der Fehler ermögli
 
 Die Funktionsweise dieser Parameter wird im Abschnitt zur Definition von **Webformular-Eigenschaften** des Kapitels [Webformulare](../../web/using/about-web-forms.md) beschrieben.
 
-## Bericht veröffentlichen {#publishing-the-report}
+## Veröffentlichen des Berichts {#publishing-the-report}
 
 Das Veröffentlichen des Berichts ist obligatorisch, wenn Sie ihn mit anderen Benutzern teilen und in der Liste der verfügbaren Berichte anzeigen möchten (siehe auch [Anzeigekontext von Berichten](#report-display-context)). Dieser Vorgang muss bei jeder Änderung des Berichts erneut durchgeführt werden.
 
