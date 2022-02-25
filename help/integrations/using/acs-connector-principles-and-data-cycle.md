@@ -1,17 +1,17 @@
 ---
 product: campaign
-title: Erste Schritte mit ACS Connector
-description: Grundlagen und Datenzyklus von ACS Connector
+title: Erste Schritte mit dem ACS-Connector
+description: Grundlagen und Datenzyklus des ACS-Connectors
 feature: ACS Connector
 exl-id: 689b6117-5143-4f85-8582-2c74cae72ca2
 source-git-commit: c54102b2ec32fbea89ce41dd3c9fedb98e612996
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2041'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# Erste Schritte mit ACS Connector{#acs-connector-gs}
+# Erste Schritte mit dem ACS-Connector{#acs-connector-gs}
 
 ![](../../assets/v7-only.svg)
 
@@ -33,10 +33,10 @@ In diesem Dokument wird ACS Connector beschrieben. In den folgenden Abschnitten 
 
 * [Prozesse](#process): Überblick über ACS Connector und die Verwaltung der Datenreplikation
 * [Implementierung](#implementation): Erste Schritte mit ACS Connector und eine Anleitung zur Replikation einfacher und erweiterter Datensätze
-* [Profile synchronisieren](../../integrations/using/synchronizing-profiles.md): Anleitung zur Replikation von Profilen und zur Erstellung von Sendungen mit diesen Profilen.
-* [Zielgruppen synchronisieren](../../integrations/using/synchronizing-audiences.md): Anleitung zum Auswählen einer Empfängerliste in Campaign v7 und zur Replikation dieser Liste an Campaign Standard als Audience.
-* [Webanwendungen synchronisieren](../../integrations/using/synchronizing-web-applications.md): Anleitung zur Verknüpfung von Campaign v7-Webanwendungen mit Campaign Standard.
-* [Fehlerbehebung bei ACS Connector](../../integrations/using/troubleshooting-the-acs-connector.md): Antworten auf häufige Probleme.
+* [Synchronisieren von Profilen](../../integrations/using/synchronizing-profiles.md): Anleitung zur Replikation von Profilen und zur Erstellung von Sendungen mit diesen Profilen.
+* [Synchronisieren von Audiences](../../integrations/using/synchronizing-audiences.md): Anleitung zum Auswählen einer Empfängerliste in Campaign v7 und zur Replikation dieser Liste als Audience in Campaign Standard.
+* [Synchronisieren von Web-Programmen](../../integrations/using/synchronizing-web-applications.md): Anleitung zur Verknüpfung von Web-Programmen in Campaign v7 mit Campaign Standard.
+* [Fehlerbehebung bei ACS-Connectoren](../../integrations/using/troubleshooting-the-acs-connector.md): Antworten auf häufige Probleme.
 
 >[!NOTE]
 >
@@ -83,7 +83,7 @@ ACS Connector synchronisiert Quarantänen zwischen Campaign v7 und Campaign Stan
 
 Beispiel: Ein von Campaign v7 nach Campaign Standard repliziertes Profil enthält eine E-Mail-Adresse. Wenn diese E-Mail-Adresse von Campaign Standard unter Quarantäne gestellt wird, werden diese Daten bei der nächsten Synchronisation an Campaign v7 weitergegeben. Weiterführende Informationen zu Quarantänen finden Sie unter [Quarantäne-Verwaltung](../../delivery/using/understanding-quarantine-management.md) und [Quarantäne in Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=de).
 
-### Replizierte Profile verwenden {#using-replicated-profiles}
+### Verwenden von replizierten Profilen {#using-replicated-profiles}
 
 Replizierte Profile können von Campaign Standard und Campaign v7 für Zielgruppen-Workflows in Marketing-Kampagnen verwendet werden.
 
@@ -97,7 +97,7 @@ Replizierte Profile sind zwar unmittelbar für Sendungen verfügbar, unterliegen
 * **In Campaign Standard erstellte Profile**: ACS Connector repliziert Empfängerdaten in nur eine Richtung, nämlich von Campaign v7 nach Campaign Standard. Deshalb werden von Campaign Standard stammende Profile nicht nach Campaign v7 repliziert.
 * **Grundlegende Empfängerdaten für Campaign Standard**: ACS Connector repliziert für Campaign Standard geeignete Daten. Dazu zählen der Empfängername, die Adresse, die E-Mail-Adresse, die Mobiltelefonnummer, die Privatnummer und sonstige relevante Kontaktinformationen. Wenn Sie für Ihren Workflow zusätzliche in Campaign v7 verfügbare Empfängerfelder und benutzerdefinierte Tabellen für die Zielgruppenbestimmung benötigen, wenden Sie sich bitte an Ihren Consultant.
 * **Importieren unter Quarantäne gestellter Profile**: Listen mit Profilen, die nicht kontaktiert werden möchten, können in Campaign v7 oder Campaign Standard als unter Quarantäne gestellte Profile importiert werden. Der Status der Profile ist in der Quarantänesynchronisation zwischen den Anwendungen enthalten, weshalb diese Profile nicht in Sendungen eingeschlossen werden.
-* **Abmelden von einem Dienst in Campaign Standard**: Abmeldungen von einem Dienst werden nicht von Campaign Standard nach Campaign v7 synchronisiert. Sie können jedoch einen Versand in Campaign Standard so konfigurieren, dass der Abmelde-Link zu Campaign v7 weist. Dann wird das Profil eines Empfängers, der auf den Abmelde-Link klickt, in Campaign v7 aktualisiert und diese Daten werden anschließend nach Campaign Standard repliziert. Siehe [Abmelde-Link ändern](../../integrations/using/synchronizing-profiles.md#changing-the-unsubscription-link).
+* **Abmelden von einem Dienst in Campaign Standard**: Abmeldungen von einem Dienst werden nicht von Campaign Standard nach Campaign v7 synchronisiert. Sie können jedoch einen Versand in Campaign Standard so konfigurieren, dass der Abmelde-Link zu Campaign v7 weist. Dann wird das Profil eines Empfängers, der auf den Abmelde-Link klickt, in Campaign v7 aktualisiert und diese Daten werden anschließend nach Campaign Standard repliziert. Siehe [Ändern des Abmelde-Links](../../integrations/using/synchronizing-profiles.md#changing-the-unsubscription-link).
 * Nur E-Mail-Broadlogs und -Trackinglogs werden von Campaign Standard nach Campaign v7 repliziert.
 
 ### Fakturierung {#billing}
