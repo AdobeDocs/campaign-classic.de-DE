@@ -4,9 +4,9 @@ title: Berichteigenschaften
 description: Weiterführende Informationen zu den Einstellungen der Berichteigenschaften
 exl-id: dfa9d329-1086-4f6d-9d03-df159cad5495
 source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '451'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Auf dem Tab **[!UICONTROL Allgemein]** der Berichteigenschaften können Sie die 
 
 * Die Parameter der **Zugriffskontrolle**. Diese Einstellungen werden nachfolgend beschrieben.
 
-## Zugriff auf den Bericht steuern {#report-accessibility}
+## Kontrollieren des Zugriffs auf den Bericht {#report-accessibility}
 
 Auf einen Bericht kann über die Adobe Campaign-Konsole oder einen Webbrowser zugegriffen werden. In dem Fall kann es erforderlich sein, wie unten dargestellt die Zugriffskontrolle für den Bericht zu konfigurieren.
 
@@ -49,7 +49,7 @@ Mögliche Optionen sind:
 * **[!UICONTROL Zugriffskontrolle]**: Diese Option bietet Adobe Campaign-Benutzern nach der Anmeldung Zugriff auf den Bericht.
 * **[!UICONTROL Spezifisches Konto nutzen]**: Diese Option ermöglicht die Ausführung des Berichts mit den Berechtigungen des im Feld **[!UICONTROL Benutzer]** ausgewählten Benutzers.
 
-## Bericht übersetzen {#report-localization}
+## Übersetzen des Berichts {#report-localization}
 
 Die Sprachen, in die der Bericht übersetzt werden soll, können konfiguriert werden. Klicken Sie hierzu auf den Tab **[!UICONTROL Lokalisierung]**.
 
@@ -63,7 +63,7 @@ Die Arbeitssprache entspricht der Sprache, in der Sie den Bericht verfassen. Bei
 >
 >Weiterführende Informationen zur Lokalisierung von Web-Seiten in Campaign finden Sie in [diesem Abschnitt](../../web/using/translating-a-web-form.md).
 
-## HTML-Rendering personalisieren {#personalizing-html-rendering}
+## Personalisieren des HTML-Renderings {#personalizing-html-rendering}
 
 Im Tab **[!UICONTROL Rendering]** haben Sie die Möglichkeit, den Anzeigemodus der Daten auf der Seite anzupassen. Folgende Elemente können ausgewählt werden:
 
