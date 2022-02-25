@@ -7,7 +7,7 @@ exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
 source-git-commit: afe4329fd230f30e48bfbf5ac2073ca95a6fd04e
 workflow-type: tm+mt
 source-wordcount: '2931'
-ht-degree: 88%
+ht-degree: 90%
 
 ---
 
@@ -23,7 +23,7 @@ Adobe Campaign erlaubt die Verwaltung von Quarantäne-Adressen. Empfänger, dere
 
 ## Optimieren Ihres Versands durch die Quarantäneverwaltung {#optimizing-your-delivery-through-quarantines}
 
-Profile, deren E-Mail-Adressen oder Telefonnummern unter Quarantäne stehen, werden bei der Nachrichtenvorbereitung automatisch ausgeschlossen (siehe [Für einen Versand in Quarantäne befindliche Adressen identifizieren](#identifying-quarantined-addresses-for-a-delivery)). Dies beschleunigt die Zustellung, da sich die Fehlerrate maßgeblich auf die Zustellgeschwindigkeit auswirkt.
+Die Profile, deren E-Mail-Adressen oder Telefonnummern unter Quarantäne sind, werden während der Nachrichtenvorbereitung automatisch ausgeschlossen (siehe [Identifizieren von für einen Versand in Quarantäne befindlichen Adressen](#identifying-quarantined-addresses-for-a-delivery)). Dies beschleunigt die Zustellung, da sich die Fehlerrate maßgeblich auf die Zustellgeschwindigkeit auswirkt.
 
 Teilweise werden E-Mails von Providern automatisch als Spam eingestuft, wenn die Anzahl ungültiger Adressen zu hoch ist. Durch die Quarantäne können Sie also vermeiden, von diesen Providern auf eine Blockierungsliste gesetzt zu werden.
 
@@ -47,15 +47,15 @@ Die Quarantäne und die Blockierungsliste gelten nicht für dasselbe Objekt:
 >
 >Die Quarantäne umfasst eine **[!UICONTROL Auf die Blockierungsliste gesetzt]** Status, der zutrifft, wenn Empfänger Ihre Nachricht als Spam melden oder auf eine SMS mit einem Schlüsselwort wie &quot;STOP&quot; antworten. In diesem Fall wird die betroffene Adresse oder Telefonnummer des Profils unter Quarantäne gestellt und die **[!UICONTROL Auf die Blockierungsliste gesetzt]** Status. Weiterführende Informationen zur Verwaltung von STOPP-SMS-Nachrichten finden Sie in [diesem Abschnitt](../../delivery/using/sms-send.md#processing-inbound-messages).
 
-## In Quarantäne befindliche Adressen identifizieren {#identifying-quarantined-addresses}
+## Identifizieren von in Quarantäne befindlichen Adressen {#identifying-quarantined-addresses}
 
 Die in Quarantäne befindlichen Adressen können für einen bestimmten Versand oder für die gesamte Plattform angezeigt werden.
 
-### Für einen Versand in Quarantäne befindliche Adressen identifizieren {#identifying-quarantined-addresses-for-a-delivery}
+### Identifizieren von für einen Versand in Quarantäne befindlichen Adressen {#identifying-quarantined-addresses-for-a-delivery}
 
-Die für einen bestimmten Versand in Quarantäne befindlichen Adressen werden während der Versandvorbereitung in den Versandlogs des Versand-Dashboards angezeigt (siehe [Protokolle und Versandverlauf](delivery-dashboard.md#delivery-logs-and-history)).
+Die für einen bestimmten Versand in Quarantäne befindlichen Adressen werden während der Versandvorbereitung in den Versandlogs des Versand-Dashboards angezeigt (siehe [Versandlogs und Versandverlauf](delivery-dashboard.md#delivery-logs-and-history)).
 
-### Für die gesamte Plattform in Quarantäne befindliche Adressen identifizieren {#identifying-quarantined-addresses-for-the-entire-platform}
+### Identifizieren von für die gesamte Plattform in Quarantäne befindlichen Adressen {#identifying-quarantined-addresses-for-the-entire-platform}
 
 Administratoren können die für die gesamte Plattform in Quarantäne befindlichen Adressen im Knoten **[!UICONTROL Administration > Kampagnenverwaltung > Unzustellbarkeitsverwaltung > Adressen unzustellbarer Sendungen]** anzeigen.
 
@@ -74,7 +74,7 @@ Folgende Informationen stehen für jede Adresse zur Verfügung:
 >Ende 1. Jahr: (1 x 0,33) / (1 + 0,5) = 22 %.
 Ende von Jahr 2: ((1,22*0,33)+0,33)/(1,5+0,75)=32,5 %.
 
-### In Versandberichten unter Quarantäne gestellte Adressen identifizieren {#identifying-quarantined-addresses-in-delivery-reports}
+### Identifizieren von in Quarantäne befindlichen Adressen in Versandberichten {#identifying-quarantined-addresses-in-delivery-reports}
 
 Folgende Berichte enthalten Informationen zu Adressen in Quarantäne:
 
@@ -88,13 +88,13 @@ Folgende Berichte enthalten Informationen zu Adressen in Quarantäne:
 
 Diese Informationen stehen für alle Sendungen der Plattform (**[!UICONTROL Startseite > Berichte]**) oder versandspezifisch zur Verfügung. Sie haben auch die Möglichkeit, benutzerdefinierte Berichte zu erstellen und die dort angezeigten Daten Ihren Bedürfnissen entsprechend zu konfigurieren.
 
-### Für einen Empfänger in Quarantäne befindliche Adressen identifizieren {#identifying-quarantined-addresses-for-a-recipient}
+### Identifizieren von für einen Empfänger in Quarantäne befindlichen Adressen {#identifying-quarantined-addresses-for-a-recipient}
 
-Sie können für jeden Empfänger den Status seiner E-Mail-Adresse prüfen. Klicken Sie hierfür im Empfängerprofil auf die Registerkarte **[!UICONTROL Sendungen]**. Für jeden an den Empfänger gerichteten Versand wird angezeigt, ob er fehlgeschlagen ist, die Adresse während der Analyse unter Quarantäne gestellt wurde etc. Es besteht des Weiteren die Möglichkeit, nur die Empfänger anzuzeigen, deren Adresse in Quarantäne ist, indem Sie den Anwendungsfilter **[!UICONTROL E-Mail-Adresse in Quarantäne]** nutzen.
+Sie können für jeden Empfänger den Status seiner E-Mail-Adresse prüfen. Klicken Sie hierfür im Empfängerprofil auf die Registerkarte **[!UICONTROL Sendungen]**. Für jeden an den Empfänger gerichteten Versand wird angezeigt, ob er fehlgeschlagen ist, die Adresse während der Analyse unter Quarantäne gestellt wurde usw. Für jeden Ordner besteht außerdem die Möglichkeit, nur die Empfänger anzuzeigen, deren Adresse in Quarantäne ist, indem Sie den Anwendungsfilter **[!UICONTROL E-Mail-Adresse in Quarantäne]** nutzen.
 
 ![](assets/tech_quarant_recipients_filter.png)
 
-### Eine unter Quarantäne gestellte Adresse entfernen {#removing-a-quarantined-address}
+### Entfernen einer Adresse aus der Quarantäne {#removing-a-quarantined-address}
 
 Bei Bedarf können Sie eine Adresse manuell aus der Quarantäneliste entfernen. Darüber hinaus werden Adressen, die bestimmten Bedingungen entsprechen, durch den [Datenbankbereinigungs](../../production/using/database-cleanup-workflow.md)-Workflow automatisch aus der Quarantäneliste gelöscht.
 
