@@ -1,21 +1,21 @@
 ---
 product: campaign
-title: Personalisierte PDF-Dokumente erstellen
+title: Erstellen von personalisierten PDF-Dokumenten
 description: Erfahren Sie, wie Sie personalisierte PDF-Dokumente erstellen
 feature: Personalization
 exl-id: e5239d99-256b-412b-be20-f64f822da9c3
 source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '480'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
-# Personalisierte PDF-Dokumente erstellen{#generating-personalized-pdf-documents}
+# Erstellen von personalisierten PDF-Dokumenten{#generating-personalized-pdf-documents}
 
 ![](../../assets/common.svg)
 
-## Über PDF-Dateien mit Variablen {#about-variable-pdf-documents}
+## Über variable PDF-Dateien {#about-variable-pdf-documents}
 
 Mit Adobe Campaign können Sie aus LibreOffice- oder Microsoft Word-Dokumenten variable PDF-Dokumente für E-Mail-Anhänge erstellen.
 
@@ -23,7 +23,7 @@ Unterstützt werden die Formate &quot;.docx&quot;, &quot;.doc&quot; und &quot;.o
 
 Um die entsprechenden Dokumente zu personalisieren, stehen Ihnen die gleichen JavaScript-Funktionen zur Verfügung, die auch bei E-Mails Verwendung finden.
 
-Aktivieren Sie bei der Erstellung des E-Mail-Anhangs die Option **[!UICONTROL Dateiinhalt wird zum Zeitpunkt der Absendung für jede Nachricht personalisiert und in PDF konvertiert]**. Weitere Informationen zum Anhängen einer berechneten Datei finden Sie im Abschnitt [Dateien anhängen](attaching-files.md) Abschnitt.
+Aktivieren Sie bei der Erstellung des E-Mail-Anhangs die Option **[!UICONTROL Dateiinhalt wird zum Zeitpunkt der Absendung für jede Nachricht personalisiert und in PDF konvertiert]**. Weitere Informationen zum Anhängen einer berechneten Datei finden Sie im Abschnitt [Anhängen von Dateien](attaching-files.md).
 
 Beispiel der Personalisierung eines Rechnungskopfes:
 
@@ -31,7 +31,7 @@ Beispiel der Personalisierung eines Rechnungskopfes:
 
 Die Erzeugung dynamischer Tabellen und der Einschluss von Bildern über URLs wird nachfolgend dargestellt.
 
-## Dynamische Tabellen generieren {#generating-dynamic-tables}
+## Erzeugen von dynamischen Tabellen {#generating-dynamic-tables}
 
 Gehen Sie wie folgt vor, um eine dynamische Tabelle zu erzeugen:
 
@@ -45,13 +45,13 @@ Gehen Sie wie folgt vor, um eine dynamische Tabelle zu erzeugen:
 
    ![](assets/s_ncs_pdf_table.png)
 
-## Externe Bilder einfügen {#inserting-external-images}
+## Einfügen externer Bilder {#inserting-external-images}
 
 Sie haben die Möglichkeit, ein Dokument mit Bildern zu personalisieren, deren URL in einem Feld des Empfängerprofils gespeichert ist.
 
 Konfigurieren Sie hierzu einen Gestaltungsbaustein und verweisen Sie auf diesen im angehängten Dokument.
 
-**Beispiel: je nach Land des Empfängers ein personalisiertes Logo einfügen**
+**Anwendungsbeispiel: Einfügen eines personalisierten Logos in Abhängigkeit vom Herkunftsland des Empfängers**
 
 **1. Schritt: Erstellung des Anhangs**
 
