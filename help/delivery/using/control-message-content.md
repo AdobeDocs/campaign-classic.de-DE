@@ -5,13 +5,13 @@ description: Erfahren Sie mehr Ã¼ber die Verwaltung der Zustellbarkeit in AdobeÂ
 feature: Deliverability
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
 source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '772'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Steuern des Nachrichteninhalts{#control-message-content}
+# Steuern der Nachrichteninhalte{#control-message-content}
 
 ![](../../assets/common.svg)
 
@@ -29,7 +29,7 @@ Weitere Tipps zur Optimierung der Zustellbarkeit beim Entwerfen von Inhalten fin
 
 >[!NOTE]
 >
->Weitere Informationen zum Bearbeiten von E-Mail-Inhalten finden Sie unter [E-Mail-Inhalt definieren](defining-the-email-content.md) und [Personalisierte Inhalte erstellen](design-and-personalize.md).
+>Weitere Informationen zum Bearbeiten von E-Mail-Inhalten finden Sie unter [Definieren der E-Mail-Inhalte](defining-the-email-content.md) und [Erstellen personalisierter Inhalte](design-and-personalize.md).
 
 ## Absenderadresse {#sender-address}
 
