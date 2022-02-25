@@ -4,13 +4,13 @@ title: Workflow starten
 description: Erfahren Sie, wie Sie einen Workflow starten, und lernen Sie die Symbolleiste sowie das Kontextmenü für Workflow-Aktionen kennen
 exl-id: d345ba62-c2fb-43df-a2a1-e9e4292d301a
 source-git-commit: 3b523e53440ba6ae107b597c7ebf226195126bde
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '854'
 ht-degree: 100%
 
 ---
 
-# Workflow starten {#starting-a-workflow}
+# Starten eines Workflows {#starting-a-workflow}
 
 ![](../../assets/common.svg)
 
