@@ -5,7 +5,7 @@ description: Erfahren Sie mehr über die Status, die in Ihrem Versand-Dashboard 
 feature: Monitoring
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
 source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '642'
 ht-degree: 100%
 
