@@ -1,16 +1,16 @@
 ---
 product: campaign
 title: E-Mail-Versand auf japanische Mobiltelefone mit Adobe Campaign Classic
-description: Erfahren Sie, wie Sie E-Mails konfigurieren, entwerfen und versenden, die auf einem japanischen Mobilgerät gelesen werden
+description: Erfahren Sie, wie Sie E-Mails konfigurieren, entwerfen und versenden, die auf einem japanischen Mobilgerät gelesen werden sollen
 exl-id: 44634227-2340-49c4-b330-740c739ea551
 source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '799'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# E-Mails an japanische Mobiltelefone senden {#sending-emails-on-japanese-mobiles}
+# Senden von E-Mails auf japanischen Mobiltelefonen {#sending-emails-on-japanese-mobiles}
 
 ![](../../assets/common.svg)
 
@@ -47,7 +47,7 @@ Aus diesem Grund müssen Sie:
 >* Weiterführende Informationen zu Softbank finden Sie auf [dieser Seite](https://www.support.softbankmobile.co.jp/partner/home_tech3/index.cfm).
 
 
-## E-Mail-Inhalt testen {#testing-the-email-content}
+## Testen des E-Mail-Inhalts {#testing-the-email-content}
 
 ### Vorschau der Nachricht {#previewing-the-message}
 
@@ -63,7 +63,7 @@ Verwenden Sie hierzu im **[!UICONTROL Vorschau]**-Tab des Fensters zur Inhaltsbe
 
    ![](assets/deco-mail_06.png)
 
-### Typologieregel ausführen {#running-typology-rule}
+### Ausführen der Typologieregel {#running-typology-rule}
 
 Zusätzlich zur Vorschauprüfung wird eine zweite Prüfung durchgeführt, die an einen Testversand oder einen normalen Versand gekoppelt ist: Eine spezifische Typologieregel, die **[!UICONTROL Deco-mail-Analyse]**, kommt im Zuge der Analyse zur Anwendung.
 
@@ -88,7 +88,7 @@ Für den Versand einer E-Mail an Empfänger mit japanischen E-Mail-Formaten mit 
 * Erstellen Sie zwei Sendungen, eine nur für japanische Empfänger und die andere für alle anderen Empfänger. Weitere Informationen dazu finden Sie in [diesem Abschnitt](#designing-a-specific-delivery-for-japanese-formats).
 * Erstellen Sie einen einzigen Versand und Adobe Campaign erkennt das Format automatisch. Weitere Informationen dazu finden Sie in [diesem Abschnitt](#designing-a-delivery-for-all-formats).
 
-### Spezifischen Versand für japanische Formate erstellen {#designing-a-specific-delivery-for-japanese-formats}
+### Entwerfen eines spezifischen Versands für japanische Formate {#designing-a-specific-delivery-for-japanese-formats}
 
 Erstellen Sie einen Workflow mit zwei Sendungen: einen Versand, der für japanische Mobiltelefone bestimmt ist, und einen zweiten für Empfänger mit einem Standard-E-Mail-Format.
 
@@ -98,7 +98,7 @@ Verwenden Sie hierfür eine **[!UICONTROL Aufspaltung]**-Aktivität in Ihrem Wor
 
 ![](assets/deco-mail_07.png)
 
-### Versand für alle Formate erstellen {#designing-a-delivery-for-all-formats}
+### Entwerfen eines Versands für alle Formate {#designing-a-delivery-for-all-formats}
 
 Wenn Adobe Campaign die Formate dynamisch in Abhängigkeit von der Domain verwaltet (Profile mit E-Mail-Format **[!UICONTROL Unbekannt]**, **[!UICONTROL HTML]** oder **[!UICONTROL Text]**), können Sie für alle Empfänger denselben Versand verwenden.
 
