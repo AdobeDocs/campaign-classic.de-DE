@@ -5,9 +5,9 @@ description: Weitere Informationen zu Zielgruppendaten in einem Workflow.
 feature: Query Editor, Data Management
 exl-id: 74b82019-bdab-4442-84cf-5ad18d0db788
 source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2031'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -15,9 +15,9 @@ ht-degree: 98%
 
 ![](../../assets/common.svg)
 
-## Abfragen erstellen {#creating-queries}
+## Erstellen von Abfragen {#creating-queries}
 
-### Daten auswählen {#selecting-data}
+### Auswählen von Daten {#selecting-data}
 
 Mit einer **[!UICONTROL Abfrageaktivität]** können Sie grundlegende Daten zum Aufbau der Zielpopulation auswählen. Weitere Informationen hierzu finden Sie unter [Abfragen erstellen](query.md#creating-a-query).
 
@@ -25,7 +25,7 @@ Sie können auch mithilfe der folgenden Aktivitäten Daten aus der Datenbank abf
 
 Es ist möglich, zusätzliche Daten zu sammeln, die während des gesamten Lebenszyklus des Workflows weitergeleitet und verarbeitet werden. Weitere Informationen hierzu finden Sie unter [Daten hinzufügen ](query.md#adding-data)und [Zusätzliche Daten bearbeiten](#editing-additional-data).
 
-### Zusätzliche Daten bearbeiten {#editing-additional-data}
+### Bearbeiten zusätzlicher Daten {#editing-additional-data}
 
 Nach Hinzufügung der zusätzlichen Daten können Sie diese bearbeiten oder zur Verfeinerung der in der Abfrageaktivität definierten Zielgruppe verwenden.
 
@@ -51,13 +51,13 @@ Kollektionen werden im gleichnamigen Untertab angezeigt. Durch Klick auf die Sch
 
 ![](assets/query_add_columns_collection.png)
 
-### Zielgruppe mithilfe zusätzlicher Daten einschränken {#refining-the-target-using-additional-data}
+### Einschränken der Zielgruppe mithilfe zusätzlicher Daten {#refining-the-target-using-additional-data}
 
-Die abgerufenen Zusatzdaten können zur weiteren Einschränkung der Daten aus der Datenbank herangezogen werden. Klicken Sie hierzu auf den Link **[!UICONTROL Zielgruppe mithilfe zusätzlicher Daten einschränken...]**.
+Die abgerufenen Zusatzdaten können zur weiteren Einschränkung der Daten aus der Datenbank herangezogen werden. Klicken Sie dazu auf den Link **[!UICONTROL Zielgruppe mithilfe zusätzlicher Daten einschränken...]**: Damit können Sie dank der zusätzlichen Daten genauer filtern.
 
 ![](assets/wf_add_data_use_additional_data.png)
 
-### Daten vereinheitlichen {#homogenizing-data}
+### Vereinheitlichen von Daten {#homogenizing-data}
 
 In den Aktivitäten vom Typ **[!UICONTROL Vereinigung]** und **[!UICONTROL Schnittmenge]** haben Sie die Möglichkeit, nur die gemeinsamen Zusatzdaten beizubehalten, um eine homogene Datenbasis zu erhalten. In diesem Fall enthält die resultierende temporäre Arbeitstabelle der entsprechenden Aktivität nur die Zusatzdaten, die in allen eingehenden Mengen enthalten sind.
 
@@ -69,7 +69,7 @@ In den Aktivitäten **[!UICONTROL Vereinigung]**, **[!UICONTROL Schnittmenge]** 
 
 ![](assets/select-column-and-join.png)
 
-### Teilmengen erstellen {#creating-subsets}
+### Erstellen von Teilmengen {#creating-subsets}
 
 Über die **[!UICONTROL Aufspaltungsaktivität]** lassen sich gemäß bestimmten Kriterien entsprechende Teilmengen erstellen. Aktivieren Sie hierfür in der Teilmenge die Option zur Erstellung von Filterbedingungen und definieren Sie im sich öffnenden Abfragefenster die Kriterien zur Zielgruppensegmentierung.
 
@@ -77,9 +77,9 @@ Als Filterbedingungen können hier entweder nur die Zusatzdaten oder Zusatzdaten
 
 Weitere Informationen hierzu finden Sie unter [Teilmengen mithilfe der Aufspaltungs-Aktivität erstellen](#creating-subsets-using-the-split-activity).
 
-## Segmentdaten {#segmenting-data}
+## Segmentieren von Daten {#segmenting-data}
 
-### Mehrere Ziele kombinieren (Union) {#combining-several-targets--union-}
+### Kombinieren mehrerer Zielgruppen (Vereinigung) {#combining-several-targets--union-}
 
 Über die Vereinigungsaktivität lassen sich die Ergebnisse verschiedener Aktivitäten in einer Transition zusammenfassen. Dabei müssen die Mengen nicht zwingend homogen sein.
 
@@ -117,7 +117,7 @@ Zur Abstimmung der Daten stehen folgende Optionen zur Verfügung:
 
    ![](assets/join_limit_nb_priority.png)
 
-### Gemeinsame Daten extrahieren (Schnittmenge) {#extracting-joint-data--intersection-}
+### Extrahieren gemeinsamer Daten (Schnittmenge) {#extracting-joint-data--intersection-}
 
 ![](assets/traitements.png)
 
@@ -127,7 +127,7 @@ Es ist außerdem möglich, nur eine Auswahl an Spalten oder nur die Spalten, die
 
 Die Schnittmengenaktivität wird im Abschnitt [Schnittmenge](intersection.md) detailliert beschrieben.
 
-### Exclude a population (Exclusion) {#excluding-a-population--exclusion-}
+### Ausschließen von Populationen (Ausschluss) {#excluding-a-population--exclusion-}
 
 Über die Ausschlussaktivität lassen sich Elemente aus einer Population ausschließen, die auch in mindestens einer anderen Population enthalten sind. Die Zielgruppendimension am Aktivitätsausgang entspricht der der Hauptmenge.
 
@@ -137,7 +137,7 @@ Die Abstimmung der Daten kann über die Kennungen, eine Achsenänderung oder ein
 
 ![](assets/exclusion_edit_add_rule_01.png)
 
-### Teilmengen mithilfe der Aufspaltung erstellen {#creating-subsets-using-the-split-activity}
+### Erstellen von Teilmengen mithilfe der Aufspaltungs-Aktivität {#creating-subsets-using-the-split-activity}
 
 Bei der Aktivität **[!UICONTROL Aufspaltung]** handelt es sich um eine Standardaktivität, die die unbegrenzte Erstellung von Teilmengen mit einer oder mehreren Filterdimensionen ermöglicht. Es kann eine gemeinsame ausgehende Transition oder eine Transition pro Teilmenge erzeugt werden.
 
@@ -213,7 +213,7 @@ Dies ist beispielsweise dann interessant, wenn Sie eine einzige Versandaktivitä
 
 Teilmengen können auch mithilfe der Aktivität **[!UICONTROL Segmente]** erstellt werden. Weitere Informationen hierzu finden Sie im Abschnitt [Segmente](cells.md).
 
-### Use targeted data {#using-targeted-data}
+### Verwenden von Zielgruppendaten {#using-targeted-data}
 
 Nach Identifizierung und Aufbereitung der Daten können diese in folgenden Kontexten verwendet werden:
 
@@ -249,7 +249,7 @@ Hierfür bietet Adobe Campaign:
 >  
 >Zum Beispiel zieht das Löschen eines Empfängers mithilfe eines Workflows nicht das Löschen seines Versandverlaufs nach sich. Wird ein Empfänger jedoch direkt im &#39;Empfänger&#39;-Ordner des Navigationsbaums gelöscht, werden auch alle anderen auf ihn bezogenen Daten gelöscht.
 
-### Daten anreichern und ändern {#enriching-and-modifying-data}
+### Anreichern und Ändern von Daten {#enriching-and-modifying-data}
 
 Ergänzend zur Zielgruppendimension ermöglicht es die Filterdimension, die Art der abgerufenen Daten zu präzisieren. Siehe [Zielgruppen- und Filterdimensionen](building-a-workflow.md#targeting-and-filtering-dimensions).
 
