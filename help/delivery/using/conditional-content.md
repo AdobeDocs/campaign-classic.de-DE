@@ -1,13 +1,13 @@
 ---
 product: campaign
 title: Bedingter Inhalt
-description: Erfahren Sie, wie Sie bedingte Inhalte hinzufügen
+description: Erfahren Sie, wie bedingter Inhalt hinzugefügt wird
 feature: Personalization, Multilingual Messages
 exl-id: 12595ee4-6a52-4e06-b80d-85fe633a5a11
 source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '497'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Die Konfiguration bedingter Inhalte erlaubt eine dynamische Personalisierung, be
 ![](assets/do-not-localize/how-to-video.png) [Mehr zu dieser Funktion erfahren Sie im Video.](#conditionnal-content-video).
 
 
-## Nutzungsbedingungen in einer E-Mail {#using-conditions-in-an-email}
+## Verwenden von Bedingungen in einer E-Mail {#using-conditions-in-an-email}
 
 Im folgenden Beispiel erfahren Sie, wie Sie eine Nachricht erstellen und entsprechend dem Geschlecht und den Interessen des Empfängers dynamisch personalisieren können.
 
@@ -75,7 +75,7 @@ Klicken Sie nun auf den **[!UICONTROL Vorschau]**-Tab und wählen Sie einen Empf
 
 ![](assets/s_ncs_user_conditional_content08.png)
 
-## Mehrsprachige E-Mail erstellen {#creating-multilingual-email}
+## Erstellen einer mehrsprachigen E-Mail {#creating-multilingual-email}
 
 Im folgenden Beispiel erfahren Sie, wie Sie eine mehrsprachige E-Mail erstellen. Inhalte werden in der bevorzugten Sprache des Empfängers angezeigt.
 
