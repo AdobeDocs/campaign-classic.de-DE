@@ -5,9 +5,9 @@ description: Erfahren Sie mehr über Sendungen zur Marketing-Kampagne
 feature: Resource Management, Cross Channel Orchestration
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
 source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1552'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Wenn Sendungen aus einer Kampagne erstellt werden, werden sie mit dieser Kampagn
 
 ![](assets/do-not-localize/how-to-video.png)[ Funktion im Video kennenlernen](#create-email-video).
 
-## Sendungen erstellen {#creating-deliveries}
+## Erstellen von Sendungen {#creating-deliveries}
 
 Um einen mit einer Kampagne verknüpften Versand zu erstellen, klicken Sie auf den Link **[!UICONTROL Versand hinzufügen]** im Dashboard der Kampagne.
 
@@ -29,11 +29,11 @@ Um einen mit einer Kampagne verknüpften Versand zu erstellen, klicken Sie auf d
 
 Die vorgeschlagenen Konfigurationen sind an die unterschiedlichen Versandtypen angepasst: Briefpost, E-Mail, Mobile-Kanäle. [Weitere Informationen](../../delivery/using/steps-about-delivery-creation-steps.md).
 
-## Startet einen Versand {#starting-a-delivery}
+## Starten eines Versands {#starting-a-delivery}
 
 Sobald alle Validierungen erteilt wurden, kann der Versand gestartet werden. Der Versandvorgang hängt dann von der Art des Versands ab. Informationen zu E-Mail- oder Mobile-Kanal-Sendungen finden Sie unter [Starten eines Online-Versands](#starting-an-online-delivery) und zu Briefpost-Sendungen unter [Starten eines Offline-Versands](#starting-an-offline-delivery).
 
-### Online-Versand starten {#starting-an-online-delivery}
+### Starten eines Online-Versands {#starting-an-online-delivery}
 
 Wenn alle Validierungsanfragen akzeptiert wurden, erhält der Versand den Status **[!UICONTROL Zu bestätigen]** und kann von einem Benutzer gestartet werden. Gegebenenfalls wird der Adobe-Campaign-Benutzer (oder die Benutzergruppe), der für die Validierung des Versandstarts zuständig ist, über den startbereiten Versand informiert.
 
@@ -63,9 +63,9 @@ Wenn alle Validierungen akzeptiert wurden, erhält der Versand den Status **[!UI
 
 Wenn der Extraktions-Workflow korrekt ausgeführt wurde, muss die Extrationsdatei validiert werden (sofern die Validierung der Extraktionsdatei in der Versandkonfiguration aktiviert wurde).
 
-Weitere Informationen hierzu finden Sie unter [Extraktionsdatei validieren](../../campaign/using/marketing-campaign-approval.md#approving-an-extraction-file).
+Weitere Informationen hierzu finden Sie unter [Validieren einer Extraktionsdatei](../../campaign/using/marketing-campaign-approval.md#approving-an-extraction-file).
 
-**2. Schritt - Nachricht an den Dienstleister validieren**
+**Schritt 2: Validieren der Nachricht an den Dienstleister**
 
 * Nachdem die Extraktionsdatei validiert wurde, kann der Testversand der Benachrichtigungs-E-Mail an den Router erzeugt werden. Diese E-Mail wird auf der Grundlage einer Versandvorlage erstellt und muss validiert werden.
 
@@ -126,7 +126,7 @@ Sie haben auch die Möglichkeit, externe Elemente in Kampagnen zu referenzieren,
 
 >[!NOTE]
 >
->MRM ermöglicht Ihnen zudem die Verwaltung einer Ressourcenbibliothek, in der mehrere Benutzer partizipativ arbeiten können. Siehe [Verwalten von Marketing-Ressourcen](../../mrm/using/managing-marketing-resources.md).
+>Wenn Sie MRM verwenden, können Sie auch eine Bibliothek von Marketing-Ressourcen verwalten, die mehreren Teilnehmern für die gemeinsame Arbeit zur Verfügung stehen. Siehe [Verwaltung von Marketing-Ressourcen](../../mrm/using/managing-marketing-resources.md).
 
 ### Dokumente hinzufügen {#adding-documents}
 
