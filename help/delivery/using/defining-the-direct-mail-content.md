@@ -1,12 +1,12 @@
 ---
 product: campaign
-title: Definieren des Direkt-Mail-Inhalts
-description: Erfahren Sie, wie Sie den Briefpost-Inhalt definieren
+title: Definieren des Briefpostinhalts
+description: Erfahren Sie, wie Sie Briefpostinhalt definieren
 exl-id: 585b2017-9408-4953-8505-2f6d9db8032f
 source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '183'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
