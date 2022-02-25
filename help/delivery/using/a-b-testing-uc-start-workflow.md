@@ -1,10 +1,10 @@
 ---
 product: campaign
-title: Workflow starten
+title: Starten des Workflows
 description: Erfahren Sie anhand eines speziellen Anwendungsbeispiels, wie Sie A/B-Tests durchführen
 exl-id: 9528b67a-8ba7-45d6-a2c0-06ac117d5324
 source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '86'
 ht-degree: 100%
 
