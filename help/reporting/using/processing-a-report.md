@@ -1,16 +1,16 @@
 ---
 product: campaign
-title: Analyseberichte verwenden
-description: Analyseberichte verwenden
+title: Verwenden eines Analyseberichts
+description: Verwenden eines Analyseberichts
 exl-id: d133efec-33e1-4711-a90f-e40385059386
 source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '876'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
-# Analyseberichte verwenden{#processing-a-report}
+# Verwenden eines Analyseberichts{#processing-a-report}
 
 ![](../../assets/common.svg)
 
@@ -20,7 +20,7 @@ Wenn Sie über die entsprechenden Berechtigungen verfügen, können Sie einen er
 
 Um Ihren Bericht zu speichern, klicken Sie auf **[!UICONTROL Speichern]** und benennen Sie den Bericht.
 
-Aktivieren Sie die Option **[!UICONTROL Auch die Daten speichern]**, wenn Sie einen Verlauf Ihres Berichts speichern und die zum Zeitpunkt der Speicherung zugrunde liegenden Daten später wieder aufrufen möchten. Weitere Informationen hierzu finden Sie unter [Analyseberichte archivieren](#archiving-analysis-reports).
+Aktivieren Sie die Option **[!UICONTROL Auch die Daten speichern]**, wenn Sie einen Verlauf Ihres Berichts speichern und die zum Zeitpunkt der Speicherung zugrunde liegenden Daten später wieder aufrufen möchten. Weitere Informationen hierzu finden Sie im Abschnitt [Archivieren von Analyseberichten](#archiving-analysis-reports).
 
 Mit Aktivierung der Option **[!UICONTROL Bericht freigeben]** wird der Bericht für andere Benutzer zugänglich.
 
@@ -30,7 +30,7 @@ Sobald der Bericht gespeichert ist, kann er zur Erzeugung anderer Analysebericht
 
 ![](assets/s_ncs_user_report_wizard_08a.png)
 
-Um den Bericht zu ändern, öffnen Sie den Knoten **[!UICONTROL Administration > Konfiguration > Berichte]** des Navigationsbaums (oder den ersten Ordner vom Typ „Berichte“, für den der Benutzer Schreibrechte hat). Weitere Informationen hierzu finden Sie unter [Layout eines deskriptiven Analyseberichts konfigurieren](#configuring-the-layout-of-a-descriptive-analysis-report).
+Um den Bericht zu ändern, öffnen Sie den Knoten **[!UICONTROL Administration > Konfiguration > Berichte]** des Navigationsbaums (oder den ersten Ordner vom Typ „Berichte“, für den der Benutzer Schreibrechte hat). Weitere Informationen hierzu finden Sie unter [Konfigurieren des Layouts eines beschreibenden Analyseberichts](#configuring-the-layout-of-a-descriptive-analysis-report).
 
 ## Zusätzliche Einstellungen für Analyseberichte {#analysis-report-additional-settings}
 
@@ -40,7 +40,7 @@ Nachdem Sie einen Analysebericht gespeichert haben, können Sie seine Eigenschaf
 
 Diese Optionen entsprechen denen von Standardberichten. Sie werden auf [dieser Seite](../../reporting/using/properties-of-the-report.md) beschrieben.
 
-## Layout eines deskriptiven Analyseberichts konfigurieren {#configuring-the-layout-of-a-descriptive-analysis-report}
+## Konfigurieren des Layouts eines beschreibenden Analyseberichts {#configuring-the-layout-of-a-descriptive-analysis-report}
 
 Sie können die Anzeige und Anordnung Ihrer Daten in den Grafiken und Tabellen anpassen. Gehen Sie hierzu ausgehend vom Explorer in den Tab **[!UICONTROL Bearbeiten]** des Berichts, den Sie anpassen möchten.
 
@@ -114,7 +114,7 @@ Folgende Optionen stehen zur Verfügung:
 
    ![](assets/s_ncs_advuser_report_wizard_3d.png)
 
-## Analyseberichte exportieren {#exporting-an-analysis-report}
+## Exportieren eines Analyseberichts {#exporting-an-analysis-report}
 
 Um Analyseberichte zu exportieren, wählen Sie in der Dropdown-Liste das gewünschte Ausgabeformat aus.
 
@@ -122,7 +122,7 @@ Um Analyseberichte zu exportieren, wählen Sie in der Dropdown-Liste das gewüns
 
 Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../reporting/using/actions-on-reports.md).
 
-## Vorhandene Berichte und Analysen erneut verwenden {#re-using-existing-reports-and-analyses}
+## Erneute Verwendung von bestehenden Berichten und Analysen {#re-using-existing-reports-and-analyses}
 
 Sie können neue Berichte mit deskriptiven Analysen auf bereits existierenden, in Adobe Campaign gespeicherten Berichten basieren. Dieser Verwendungsmodus ist möglich, wenn die Analysen gespeichert oder die Berichte dahingehend erstellt und konfiguriert wurden, dass sie für den Assistenten zugänglich sind.
 
@@ -135,7 +135,7 @@ Um einen deskriptiven Analysebericht zu erstellen, muss der deskriptive Analyse-
 
    ![](assets/s_ncs_user_report_wizard_01.png)
 
-## Analyseberichte archivieren {#archiving-analysis-reports}
+## Archivieren von Analyseberichten {#archiving-analysis-reports}
 
 Wenn Sie eine deskriptive Analyse basierend auf einer existierenden Analyse erstellen, haben Sie die Möglichkeit, Verläufe zu erstellen. Dies erlaubt die Speicherung der Daten von einer Analyse zur anderen und den Vergleich der unterschiedlichen Ergebnisse Ihrer Berichte.
 
