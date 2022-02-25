@@ -5,9 +5,9 @@ description: Erfahren Sie mehr über die Workflow-Aktivität "Abfrage".
 feature: Query Editor
 exl-id: 20d03627-cd56-46da-bc02-73b48a02a350
 source-git-commit: 3b523e53440ba6ae107b597c7ebf226195126bde
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1692'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 97%
 
 ![](../../assets/common.svg)
 
-## Abfragen erstellen {#creating-a-query}
+## Erstellen einer Abfrage {#creating-a-query}
 
 Über Abfragen lassen sich Zielgruppen anhand von Filterkriterien bestimmen. Es besteht die Möglichkeit, dem Abfrageergebnis einen Segment-Code zuzuweisen und es mit Zusatzdaten zu ergänzen.
 Weitere Informationen zu Beispielen für Abfragen finden Sie in diesem [Abschnitt](querying-recipient-table.md).
@@ -26,7 +26,7 @@ Weitere Informationen zu Beispielen für Abfragen finden Sie in diesem [Abschnit
 
 ![](assets/s_user_segmentation_wizard_9.png)
 
-Weitere Informationen zur Verwendung und Verwaltung von Zusatzdaten finden Sie unter [Daten hinzufügen](#adding-data).
+Weitere Informationen zum Verwenden und Verwalten zusätzlicher Daten finden Sie unter [Hinzufügen von Daten](#adding-data).
 
 Klicken Sie auf den Link **[!UICONTROL Abfrage bearbeiten...]** und gehen Sie wie folgt vor, um Zielgruppentyp, Beschränkungen und Auswahlkriterien der anzusprechenden Population zu definieren:
 
@@ -60,7 +60,7 @@ Klicken Sie auf den Link **[!UICONTROL Abfrage bearbeiten...]** und gehen Sie wi
 
    ![](assets/s_user_segmentation_query_advanced.png)
 
-## Daten hinzufügen {#adding-data}
+## Hinzufügen von Daten {#adding-data}
 
 Es besteht die Möglichkeit, in Workflows zusätzliche Informationen über die Zielgruppe zu verwenden. Dies können beispielsweise Versicherungsnummern, Abonnements von bestimmten Newslettern oder die Herkunft der Empfänger sein. Diese Informationen können entweder aus der Adobe-Campaign-Datenbank oder aus externen Datenbanken stammen.
 
@@ -73,7 +73,7 @@ Wählen Sie im ersten Fenster des Assistenten zunächst den Typ der hinzuzufüge
 ![](assets/wf_add_data_1st_option.png)
 
 * Die Option **[!UICONTROL Daten in Relation mit der Filterdimension]** erlaubt den Zugriff auf Daten aus der Adobe-Campaign-Datenbank.
-* Die Option **[!UICONTROL Externe Daten]** erlaubt den Zugriff auf Daten aus einer externen Datenbank. Für diese Option benötigen Sie das optionale Modul **Federated Data Access**. Weitere Informationen hierzu finden Sie unter [Zugriff auf externe Datenbanken (FDA)](accessing-an-external-database--fda-.md).
+* Die Option **[!UICONTROL Externe Daten]** erlaubt den Zugriff auf Daten aus einer externen Datenbank. Für diese Option benötigen Sie das optionale Modul **Federated Data Access**. Weitere Informationen hierzu finden Sie unter [Zugriff auf eine externe Datenbank (FDA)](accessing-an-external-database--fda-.md).
 * Die Option **[!UICONTROL Angebotsvorschlag]** erlaubt den Zugriff auf den jeweils besten, vom Angebotsmodul erzeugten Vorschlag. Hierfür benötigen Sie das optionale Modul **Interaction**.
 
 Wenn keines der o. g. Module auf Ihrer Plattform installiert ist, überspringt der Assistent das Auswahlfenster. Sie werden direkt zum nächsten Schritt weitergeleitet.
@@ -90,10 +90,10 @@ Gehen Sie folgendermaßen vor, um Daten aus der Adobe-Campaign-Datenbank hinzuzu
 
    Hinzugefügt werden können des Weiteren:
 
-   * Aus Daten der Zielpopulation berechnete Felder oder Aggregate (z. B. Anzahl an ausstehenden Käufen im vergangenen Monat, durchschnittlicher Warenkorb usw.). Ein Beispiel finden Sie unter [Daten auswählen](targeting-data.md#selecting-data).
+   * Aus Daten der Zielpopulation berechnete Felder oder Aggregate (z. B. Anzahl an ausstehenden Käufen im vergangenen Monat, durchschnittlicher Warenkorb usw.). Ein Beispiel finden Sie unter [Auswählen von Daten](targeting-data.md#selecting-data).
    * Neue Felder (über die Schaltfläche **[!UICONTROL Hinzufügen]** rechts von der Liste der Ausgabespalten).
 
-      Es ist darüber hinaus möglich, Informationskollektionen hinzuzufügen, beispielsweise eine Vertragsliste, die letzten fünf Sendungen usw. Kollektionen entsprechen Feldern, die für ein Profil mehrere Werte aufweisen können (1:n-Relation). Weitere Informationen hierzu finden Sie unter [Zusätzliche Daten bearbeiten](targeting-data.md#editing-additional-data).
+      Es ist darüber hinaus möglich, Informationskollektionen hinzuzufügen, beispielsweise eine Vertragsliste, die letzten fünf Sendungen usw. Kollektionen entsprechen Feldern, die für ein Profil mehrere Werte aufweisen können (1:n-Relation). Weitere Informationen hierzu finden Sie unter [Bearbeiten zusätzlicher Daten](targeting-data.md#editing-additional-data).
 
 Gehen Sie folgendermaßen vor, um eine mit einer Zielpopulation verknüpfte Informationskollektion hinzuzufügen:
 
