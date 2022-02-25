@@ -1,17 +1,17 @@
 ---
 product: campaign
-title: Web-Anwendungen synchronisieren
-description: Erfahren Sie, wie Sie Webanwendungen mit ACS Connector synchronisieren
+title: Synchronisieren von Web-Programmen
+description: Erfahren Sie, wie Sie Web-Programme mit dem ACS-Connector synchronisieren
 feature: ACS Connector
 exl-id: 975bdc94-5da4-45ae-a3bd-e8674b447098
 source-git-commit: c54102b2ec32fbea89ce41dd3c9fedb98e612996
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '864'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# Web-Anwendungen synchronisieren{#synchronizing-web-applications}
+# Synchronisieren von Web-Programmen{#synchronizing-web-applications}
 
 ![](../../assets/v7-only.svg)
 
@@ -23,11 +23,11 @@ Wenn Sie über zahlreiche Dienste und Webanwendungen in Campaign v7 verfügen, i
 
 Dazu ist Folgendes erforderlich:
 
-* Empfänger, die in der Campaign v7-Datenbank gespeichert und mit Campaign Standard synchronisiert werden. Siehe Abschnitt [Profile synchronisieren](../../integrations/using/synchronizing-profiles.md) Abschnitt.
+* Empfänger, die in der Campaign v7-Datenbank gespeichert und mit Campaign Standard synchronisiert werden. Siehe den Abschnitt [Synchronisieren von Profilen](../../integrations/using/synchronizing-profiles.md).
 * Ein Dienst und eine Webanwendung, die in Campaign v7 erstellt und veröffentlicht wurden.
 * Die Webanwendung muss die Aktivität **[!UICONTROL Vorausfüllen]** enthalten, die die Verschlüsselungsmethode **[!UICONTROL Adobe-Campaign-Verschlüsselung]** verwendet.
 
-## Webanwendung und Dienst erstellen {#creating-the-web-application-and-service}
+## Erstellen von Web-Programm und -Service {#creating-the-web-application-and-service}
 
 Sie können in Campaign v7 Webanwendungen erstellen, mit denen sich Empfänger für einen Dienst anmelden können. Die Webanwendung und der Dienst werden in Campaign v7 konzipiert und gespeichert und Sie können diesen Dienst über eine Campaign Standard-Kommunikation aktualisieren. Weiterführende Informationen zu Webanwendungen in Campaign v7 finden Sie in [diesem Abschnitt](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes).
 
@@ -56,7 +56,7 @@ In Campaign v7 wurden die folgenden Objekte erstellt:
 
    ![](assets/acs_connect_lp_6.png)
 
-## Daten replizieren {#replicating-the-data}
+## Replizieren der Daten {#replicating-the-data}
 
 Um die erforderlichen Daten zwischen Campaign v7 und Campaign Standard zu replizieren, stehen verschiedene Workflow-Vorlagen für die Replikation zur Verfügung. Der Workflow für die **[!UICONTROL Profilreplikation]** repliziert automatisch alle Campaign v7-Empfänger nach Campaign Standard. Siehe [Technische und Replikations-Workflows](../../integrations/using/acs-connector-principles-and-data-cycle.md#technical-and-replication-workflows). Der Workflow für die **[!UICONTROL Landingpage-Replikation]** ermöglicht eine Replikation der Webanwendungen, die wir in Campaign Standard nutzen möchten.
 
@@ -80,7 +80,7 @@ Um zu überprüfen, ob die Daten korrekt repliziert wurden, gehen Sie in Campaig
 
    ![](assets/acs_connect_lp_10.png)
 
-## E-Mail erstellen und senden {#designing-and-sending-the-email}
+## Entwerfen und Versenden der E-Mail {#designing-and-sending-the-email}
 
 In diesem Abschnitt erfahren Sie, wie in eine E-Mail in Campaign Standard ein Link eingefügt wird, der zu einer Landingpage weist, die von einer Campaign v7-Webanwendung repliziert wurde.
 
