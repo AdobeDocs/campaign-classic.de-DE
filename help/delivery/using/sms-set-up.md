@@ -1,12 +1,12 @@
 ---
 product: campaign
-title: Campaign-SMS-Kanal konfigurieren
-description: Erfahren Sie, wie Sie den SMS-Kanal in Campaign konfigurieren.
+title: Konfigurieren des SMS-Kanals in Campaign
+description: Erfahren Sie, wie Sie den SMS-Kanal in Campaign konfigurieren
 exl-id: a2783a5e-6d38-41a1-b5c6-24ab489116f8
 source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1800'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
