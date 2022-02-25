@@ -4,7 +4,7 @@ title: Konfigurieren der iOS-Mobile-App in Adobe Campaign
 description: Erfahren Sie, wie Sie Ihre Mobile App für iOS einrichten.
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
 source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '739'
 ht-degree: 100%
 
