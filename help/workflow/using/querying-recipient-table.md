@@ -5,13 +5,13 @@ description: Erfahren Sie, wie Sie die Empfängertabelle abfragen
 feature: Query Editor
 exl-id: 5b037798-b092-4c98-9f6a-4af7fc7941c6
 source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '452'
 ht-degree: 100%
 
 ---
 
-# Abfrage zur Empfängertabelle {#querying-recipient-table}
+# Abfrage der Empfängertabelle {#querying-recipient-table}
 
 ![](../../assets/common.svg)
 
