@@ -1,16 +1,16 @@
 ---
 product: campaign
-title: Briefpostversand erstellen
-description: Erfahren Sie, wie Sie einen Briefpost-Versand erstellen
+title: Erstellen eines Briefpostversands
+description: Erfahren Sie, wie Sie einen Briefpostversand erstellen
 exl-id: 964cc600-19b8-449e-bac6-dc9da2b5ea12
 source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '87'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
-# Briefpostversand erstellen{#creating-a-direct-mail-delivery}
+# Erstellen eines Briefpostversands{#creating-a-direct-mail-delivery}
 
 ![](../../assets/common.svg)
 
