@@ -1,13 +1,13 @@
 ---
 product: campaign
 title: Erste Schritte mit der Zustellbarkeit in Campaign
-description: Lernen Sie Best Practices zur Zustellbarkeit kennen.
+description: Lernen Sie Best Practices zur Zustellbarkeit kennen
 feature: Deliverability
 exl-id: f301b34c-244c-4279-b23f-8224ea8eedbe
 source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '724'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Probleme mit der Zustellbarkeit hängen in der Regel mit Maßnahmen zum Schutz v
 
 >[!NOTE]
 >
->Da Internet-Anbieter gezwungen sind, ständig neue, ausgereifte Filtertechniken zu entwickeln, um ihre Kunden vor Spammern zu schützen, ändern sich die für die Zustellbarkeit von E-Mails geltenden Kriterien und Regeln sehr oft. Konsultieren Sie deshalb das [Adobe-Handbuch mit Best Practices zur Zustellbarkeit](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html), das regelmäßig aktualisiert wird.
+>Da Internet-Anbieter gezwungen sind, ständig neue, ausgereifte Filtertechniken zu entwickeln, um ihre Kunden vor Spammern zu schützen, ändern sich die für die Zustellbarkeit von E-Mails geltenden Kriterien und Regeln sehr oft. Konsultieren Sie deshalb das [Adobe-Handbuch mit Best Practices zur Zustellbarkeit](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=de), das regelmäßig aktualisiert wird.
 
 ### Zustellrate
 
@@ -44,7 +44,7 @@ Bei Adobe Campaign hängt die Zustellrate von zahlreichen Faktoren ab, insbesond
 * Reputation Ihrer IP-Adresse: siehe [IP-Strategie](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=de#ip-strategy).
 * Qualität der Zieladressen: siehe [Quarantäne-Management](optimize-delivery.md#quarantine-management).
 * Ein niedriger Anteil von [Beschwerden](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/complaints.html?lang=de) und [Hardbounces](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html?lang=de#hard-bounces).
-* Ihr Nachrichteninhalt: see [E-Mail-Inhalt steuern](control-message-content.md).
+* Inhalt Ihrer Nachricht: Siehe [Kontrollieren von E-Mail-Inhalten](control-message-content.md).
 * Nachrichtenauthentifizierung (SPF, DKIM, DMARC): siehe [diesen Abschnitt](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=de#authentication).
 * Reputation des Absenders: Informationen darüber, wie die wichtigsten Internet-Anbieter die Reputation eines Absenders bewerten, finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/internet-service-provider-specifics/overview.html?lang=de).
 
@@ -58,7 +58,7 @@ Adobe Campaign bietet verschiedene Tools zur Verfolgung und Verbesserung der Zus
 Befolgen Sie beim Konfigurieren, Entwerfen und Testen Ihrer Nachricht die in den folgenden Abschnitten aufgeführten Best Practices. Die Nutzung aller von Adobe Campaign bereitgestellten Funktionen hilft Ihnen, die Zustellbarkeit zu verbessern.
 
 * [Best Practices beim Versand](delivery-best-practices.md)
-* [E-Mail-Inhalt steuern](control-message-content.md)
+* [Kontrollieren von E-Mail-Inhalten](control-message-content.md)
 * [Inbox Rendering](inbox-rendering.md)
 * [Durchführen eines Testversands](steps-validating-the-delivery.md#sending-a-proof)
 
@@ -92,6 +92,6 @@ Mit Adobe Campaign können Sie die Leistung Ihrer Sendungen anhand einer Reihe i
 
 Weiterführende Informationen hierzu finden Sie in den folgenden Abschnitten:
 
-* [Zustellbarkeit überwachen](monitoring-deliverability.md)
-* [Erste Schritte mit dem Versand-Monitoring](about-delivery-monitoring.md)
-* [Erste Schritte mit nativen Campaign-Berichten](../../reporting/using/about-campaign-built-in-reports.md)
+* [Überwachen der Zustellbarkeit](monitoring-deliverability.md)
+* [Erste Schritte mit dem Überwachen des Versands](about-delivery-monitoring.md)
+* [Erste Schritte mit den integrierten Berichten von Campaign](../../reporting/using/about-campaign-built-in-reports.md)
