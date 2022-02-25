@@ -4,9 +4,9 @@ title: Veröffentlichungsvorlagen
 description: Publikationsvorlagen
 exl-id: 3b6e4974-4551-4da2-8eca-577c4f9cbd91
 source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '843'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -88,13 +88,13 @@ Des Weiteren können folgende Veröffentlichungsparameter konfiguriert werden:
 
 ### Versand {#delivery}
 
-In diesem Tab kann eine Versandvorlage ausgewählt werden, um direkt einen Versand mit dem erstellten Inhalt durchzuführen. Der E-Mail-Inhalt wird automatisch in den konfigurierten Formaten - HTML oder Text - eingefügt.
+In diesem Tab kann ein Szenario ausgewählt werden, um direkt einen Versand mit dem erstellten Inhalt durchzuführen. Der E-Mail-Inhalt wird automatisch in den konfigurierten Formaten – HTML oder Text – eingefügt.
 
 ![](assets/d_ncs_content_model3.png)
 
 >[!NOTE]
 >
->Ein Beispiel für die Inhaltserstellung eines Versands finden Sie unter [Bereitstellen einer Inhaltsinstanz](using-a-content-template.md#delivering-a-content-instance).
+>Ein Beispiel für eine Versanderstellung basierend auf Inhalten finden Sie im Abschnitt [Versenden einer Inhaltsinstanz](using-a-content-template.md#delivering-a-content-instance).
 
 ### Aggregator {#aggregator}
 
