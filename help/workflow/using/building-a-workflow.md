@@ -1,13 +1,13 @@
 ---
 product: campaign
 title: Erstellen eines Workflows
-description: Erfahren Sie, wie Sie einen Workflow erstellen.
+description: Erfahren Sie, wie Sie einen Workflow erstellen
 feature: Workflows
 exl-id: 8ba20ccd-b03f-4c4f-87c1-a21e80d8e4be
 source-git-commit: 3b523e53440ba6ae107b597c7ebf226195126bde
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1678'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ In diesem Abschnitt werden die wichtigsten Grundsätze und Best Practices für d
 * Technische Workflows aufrufen und anlegen, siehe [Technische Workflows](#technical-workflows).
 * Workflows mit Vorlagen erstellen, siehe [Workflow-Vorlagen](#workflow-templates).
 
-## Erstellen Sie einen neuen Workflow {#creating-a-new-workflow}
+## Erstellen eines neuen Workflows {#creating-a-new-workflow}
 
 Öffnen Sie in **[!UICONTROL Explorer]** einen Workflow-Ordner. Standardmäßig können Sie **[!UICONTROL Profile und Zielgruppen]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Zielgruppen-Workflow]** verwenden.
 
@@ -43,7 +43,7 @@ Benennen Sie den Workflow und klicken Sie auf **[!UICONTROL Speichern]**.
 >
 >Vergewissern Sie sich bei der Änderung des internen Namens einer Workflow-Aktivität bzw. eines Workflows, dass Sie den Workflow speichern, bevor Sie ihn schließen, damit der neue interne Name richtig berücksichtigt wird.
 
-## Aktivitäten hinzufügen und verknüpfen {#adding-and-linking-activities}
+## Hinzufügen und Verknüpfen von Aktivitäten {#adding-and-linking-activities}
 
 In diesem Schritt werden die Aktivitäten im Diagramm positioniert, konfiguriert und miteinander in Beziehung gesetzt. Bisher zeigt das Workflow-Fenster nur den Titel und den Status des Workflows an (In Bearbeitung). Der untere Bereich des Fensters dient der Konzeption des Diagramms. Er enthält eine Symbolleiste, eine Palette mit den verfügbaren Aktivitäten (links) und das Diagramm selbst (rechts).
 
@@ -80,11 +80,11 @@ So erstellen Sie das Diagramm
 
 >[!CAUTION]
 >
->Sie können Aktivitäten innerhalb eines Workflows kopieren und einfügen. Wir raten jedoch davon ab, Aktivitäten über verschiedene Workflows hinweg zu kopieren und einzufügen. Einige Einstellungen, die Aktivitäten wie Sendungen und Planung betreffen, können zu Konflikten und Fehlern beim Ausführen des Ziel-Workflows führen. Stattdessen empfehlen wir, Workflows zu **duplizieren**. Weitere Informationen finden Sie unter [Workflows duplizieren](#duplicating-workflows).
+>Sie können Aktivitäten innerhalb eines Workflows kopieren und einfügen. Wir raten jedoch davon ab, Aktivitäten über verschiedene Workflows hinweg zu kopieren und einzufügen. Einige Einstellungen, die Aktivitäten wie Sendungen und Planung betreffen, können zu Konflikten und Fehlern beim Ausführen des Ziel-Workflows führen. Stattdessen empfehlen wir, Workflows zu **duplizieren**. Weitere Informationen finden Sie unter [Duplizieren von Workflows](#duplicating-workflows).
 
 Die Darstellung und das Layout des Diagramms kann mithilfe der folgenden Elemente angepasst werden:
 
-* **Symbolleiste verwenden**
+* **Verwenden der Symbolleiste**
 
    Über die Symbolleiste des Workflow-Editors besteht Zugriff auf Funktionen zur Formatierung und Ausführung der Workflows.
 
@@ -107,9 +107,9 @@ Die Darstellung und das Layout des Diagramms kann mithilfe der folgenden Element
 
 * **Hintergrundbild und Symbole**
 
-   Das Hintergrundbild des Diagramms und die Symbole der einzelnen Aktivitäten können personalisiert werden. Siehe [Aktivitätsbilder ändern](managing-activity-images.md).
+   Das Hintergrundbild des Diagramms und die Symbole der einzelnen Aktivitäten können personalisiert werden. Siehe [Ändern der Bilder für Aktivitäten](managing-activity-images.md).
 
-## Aktivitäten konfigurieren {#configuring-activities}
+## Konfigurieren von Aktivitäten {#configuring-activities}
 
 Doppelklicken Sie auf eine Aktivität, um sie zu konfigurieren oder klicken Sie mit der rechten Maustaste und wählen Sie im Kontextmenü die Option **[!UICONTROL Öffnen...]** aus.
 
@@ -145,9 +145,9 @@ Im Gegensatz dazu werden die im Rahmen einer Kampagne erstellten Zielgruppen-Wor
 
 In den folgenden Abschnitten finden Sie Details zum Erstellen eines Zielgruppen-Workflows:
 
-1. **Identifizieren** Daten in der Datenbank - siehe [Abfragen erstellen](targeting-data.md#creating-queries)
-1. **Vorbereiten** Daten zur Erfüllung von Versandanforderungen - siehe [Daten anreichern und ändern](targeting-data.md#enriching-and-modifying-data)
-1. **Verwendung** Daten zur Durchführung von Aktualisierungen oder innerhalb eines Versands - siehe [Datenbank aktualisieren](how-to-use-workflow-data.md#updating-the-database)
+1. **Identifizieren** von Daten in der Datenbank – Siehe [Erstellen von Abfragen](targeting-data.md#creating-queries)
+1. **Vorbereiten** der Daten auf die Versandanforderungen – Siehe [Anreichern und Ändern von Daten](targeting-data.md#enriching-and-modifying-data)
+1. **Verwenden** von Daten zur Durchführung von Aktualisierungen oder innerhalb eines Versands – Siehe [Aktualisieren der Datenbank](how-to-use-workflow-data.md#updating-the-database)
 
 Die Ergebnisse der Anreicherungen werden gespeichert und können über Personalisierungsfelder beispielsweise zur Gestaltung individueller Nachrichten verwendet werden. Weitere Informationen hierzu finden Sie unter [Zielgruppendaten](data-life-cycle.md#target-data)
 
@@ -217,7 +217,7 @@ Neben den gängigen Workflow-Parametern können Sie in den Workflow-Eigenschafte
 
 ![](assets/s_advuser_wf_template_properties.png)
 
-## Workflows duplizieren {#duplicating-workflows}
+## Duplizieren von Workflows {#duplicating-workflows}
 
 Sie können verschiedene Typen von Workflows duplizieren. Nach dem Duplizieren werden Änderungen des Workflows nicht in die Kopie des Workflows übernommen.
 
@@ -253,7 +253,7 @@ Der neue Ordner **Workflows** wird erstellt.
 
 Der Ordner wird nun mit allen Workflows Ihrer Instanz gefüllt.
 
-**Kampagnen-Workflow duplizieren**
+**Duplizieren von Kampagnen-Workflows**
 
 1. Wählen Sie in der Workflow-Ansicht einen Kampagnen-Workflow aus.
 1. Klicken Sie mit der rechten Maustaste auf **Duplizieren in**.
