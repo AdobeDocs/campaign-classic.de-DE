@@ -4,9 +4,9 @@ title: Erweiterte Parameter
 description: Erweiterte Parameter
 exl-id: 6c90ac2f-0d2b-48b0-9245-3e5e3a3d027c
 source-git-commit: 3b523e53440ba6ae107b597c7ebf226195126bde
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '541'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Dieses Feld enthält den internen Namen der Aktivität.
 
 ## Bild {#image}
 
-In diesem Feld können Sie das mit einer Aktivität verknüpfte Bild ändern. Weitere Informationen hierzu finden Sie unter [Aktivitätsbilder ändern](managing-activity-images.md).
+In diesem Feld können Sie das mit einer Aktivität verknüpfte Bild ändern. Weiterführende Informationen finden Sie unter [Ändern von Aktivitäts-Bildern](managing-activity-images.md).
 
 ## Ausführung {#execution}
 
@@ -64,7 +64,7 @@ In diesem Feld wird das Verhalten des Workflows im Fall von asynchronen Aufgaben
 
 ## Zeitzone {#time-zone}
 
-In diesem Feld können Sie die Zeitzone der Aktivität auswählen. Weitere Informationen hierzu finden Sie unter: [Zeitzonen verwalten](managing-time-zones.md).
+In diesem Feld können Sie die Zeitzone der Aktivität auswählen. Weiterführende Informationen finden Sie unter [Verwalten von Zeitzonen](managing-time-zones.md).
 
 ## Fehler {#in-case-of-errors}
 
