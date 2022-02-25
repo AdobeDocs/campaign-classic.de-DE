@@ -4,7 +4,7 @@ title: Sendungen konfigurieren
 description: Erfahren Sie anhand eines speziellen Anwendungsbeispiels, wie Sie A/B-Tests durchführen
 exl-id: 809de30b-7d08-40de-bf3e-dc80d62eae80
 source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '244'
 ht-degree: 100%
 
