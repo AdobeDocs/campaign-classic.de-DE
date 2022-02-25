@@ -5,9 +5,9 @@ description: Erfahren Sie, wie Sie die Ursachen von fehlgeschlagenen Sendungen e
 feature: Monitoring
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
 source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2665'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -190,7 +190,7 @@ Wenn die Zustellung vorübergehend wegen eines **Softbounce** oder eines **ignor
 
 Gehen Sie bei On-Premise-Installationen und gehosteten/hybriden Installationen mit dem bestehenden Campaign-MTA zum Ändern der Versandlaufzeit zu den erweiterten Parametern des Versands oder der Versandvorlage und geben Sie die gewünschte Laufzeit in das entsprechende Feld ein. Weitere Informationen finden Sie unter [Gültigkeitszeitraum bestimmen](steps-sending-the-delivery.md#defining-validity-period).
 
-Standardmäßig sind innerhalb der ersten 24 Stunden fünf Versuche im Abstand von mindestens einer Stunde vorgesehen, an den vier folgenden Tagen je ein Versuch. Die Anzahl weiterer Versuche kann global (kontaktieren Sie Ihren technischen Adobe-Administrator) oder einzeln für jeden Versand oder jede Versandvorlage geändert werden. Siehe [Neuversuche konfigurieren](steps-sending-the-delivery.md#configuring-retries).
+Standardmäßig sind innerhalb der ersten 24 Stunden fünf Versuche im Abstand von mindestens einer Stunde vorgesehen, an den vier folgenden Tagen je ein Versuch. Die Anzahl weiterer Versuche kann global (kontaktieren Sie Ihren technischen Adobe-Administrator) oder einzeln für jeden Versand oder jede Versandvorlage geändert werden. Siehe [Konfigurieren von weiteren Zustellversuchen](steps-sending-the-delivery.md#configuring-retries).
 
 ## Synchrone und asynchrone Fehler     {#synchronous-and-asynchronous-errors}
 
