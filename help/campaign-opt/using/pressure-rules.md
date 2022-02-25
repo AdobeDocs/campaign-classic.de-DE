@@ -5,9 +5,9 @@ description: Druckregeln
 feature: Fatigue Management, Typology Rules
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
 source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3460'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -139,7 +139,7 @@ Im folgenden Beispiel wird die Gewichtung von Musik-Newslettern abhängig von de
 
 1. Wenden Sie diese Regel auf Nachrichten wie Newsletter, Sonderangebote etc. an. Die Gewichtung dieser Sendungen, also ihre Priorität, hängt folglich von den Neigungswerten des einzelnen Empfängers ab.
 
-## Zeitraum festlegen {#setting-the-period}
+## Festlegen des Zeitraums {#setting-the-period}
 
 Die Druckregeln werden für bewegliche Zeiträume von **n** Tagen bestimmt.
 
@@ -217,7 +217,7 @@ Bei Überschreiten der Schwelle werden die in der Kampagnentypologie bestimmten 
 
 ## Anwendungsbeispiele für Druckregeln {#use-cases-on-pressure-rules}
 
-### Anpassen der Schwelle auf der Grundlage des Kriteriums {#adapting-the-threshold-based-on-criterion}
+### Anpassen des Schwellenwerts auf Basis von Kriterien {#adapting-the-threshold-based-on-criterion}
 
 Das vorliegende Beispiel zeigt eine Typologieregel, die die Anzahl der wöchentlich gesendeten Nachrichten an Kunden auf vier und an Interessenten auf zwei begrenzt.
 
@@ -287,7 +287,7 @@ Bei der Versandanalyse werden Empfänger ausgeschlossen, wenn sie bereits eine b
 
    ![](assets/campaign_opt_pressure_sample_1_10.png)
 
-### Versandgewichtung nach Verhalten berechnen {#calculating-the-delivery-weight-based-on-behavior}
+### Berechnen der Versandgewichtung basierend auf dem Empfängerverhalten {#calculating-the-delivery-weight-based-on-behavior}
 
 Druckregeln können dem Empfängerverhalten entsprechend festgelegt werden. Auf diese Weise kann die Gewichtung eines Versands von einem Empfänger zum anderen nuanciert werden. Der Versand einer bestimmten Nachricht kann beispielsweise bevorzugt werden, je nachdem, ob ein Empfänger Ihre Seite besucht, in eine bestimmte Rubrik des letzten Newsletters geklickt oder einen Informationsdienst abonniert hat oder nicht. Auch Antworten auf Umfragen oder Onlinespiele etc. können berücksichtigt werden.
 
@@ -313,7 +313,7 @@ Befolgen Sie zur Konfiguration die nachstehenden Etappen:
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Beenden]** und speichern Sie die Regel.
 1. Fügen Sie die erstellte Regel einer Kampagnentypologie hinzu und verweisen Sie in einem Versand auf die jeweilige Typologie, um ihre Funktionsweise zu überprüfen.
 
-### Nur die Nachrichten mit der höchsten Gewichtung senden {#sending-only-the-highest-weighted-messages}
+### Senden der Nachrichten mit der höchsten Gewichtung {#sending-only-the-highest-weighted-messages}
 
 Angenommen, Sie möchten an jeden Ihrer Empfänger pro Woche höchstens zwei Nachrichten senden, wobei pro Tag höchstens zwei Nachrichten verschickt werden sollen. Außerdem sollen nur höher gewichtete Nachrichten gesendet werden.
 
@@ -321,19 +321,19 @@ Zu diesem Zweck müssen Sie für denselben Empfänger mehrere Sendungen mit unte
 
 Konfigurieren Sie zuerst die Druckregel.
 
-1. Erstellen Sie eine Druckregel. Weitere Informationen hierzu finden Sie unter [Druckregel erstellen](#creating-a-pressure-rule).
+1. Erstellen Sie eine Druckregel. Weitere Informationen hierzu finden Sie unter [Erstellen einer Druckregel](#creating-a-pressure-rule).
 1. Wählen Sie im Tab **[!UICONTROL Allgemein]** die Option **[!UICONTROL Zu Beginn der Personalisierung Regel erneut anwenden]** aus.
 
    ![](assets/campaign_opt_pressure_example_5.png)
 
-   Diese Option überschreibt den im Feld **[!UICONTROL Frequenz]** definierten Wert und wendet die Regel während der Personalisierung automatisch an. Weitere Informationen hierzu finden Sie unter [Berechnungsfrequenz anpassen](applying-rules.md#adjusting-calculation-frequency).
+   Diese Option überschreibt den im Feld **[!UICONTROL Frequenz]** definierten Wert und wendet die Regel während der Personalisierung automatisch an. Weitere Informationen hierzu finden Sie unter [Anpassen der Berechnungshäufigkeit](applying-rules.md#adjusting-calculation-frequency).
 
 1. Wählen Sie im Tab **[!UICONTROL Druck]** die Option **[!UICONTROL 7T]** als **[!UICONTROL Betroffener Zeitraum]** und **[!UICONTROL Nach Kalendertag]** als **[!UICONTROL Gruppierungstyp]** aus.
 1. Wählen Sie die Option **[!UICONTROL Sendungen im Planungskalender einbeziehen]** aus, um die geplanten Sendungen einzubeziehen.
 
    ![](assets/campaign_opt_pressure_example_1.png)
 
-   In dieser Berechnung werden Sendungen berücksichtigt, die bis zu sieben Tage vor dem Verfügbarkeitsdatum und bis zu sieben Tage nach dem Verfügbarkeitsdatum durchgeführt werden. Weitere Informationen hierzu finden Sie unter [Zeitraum festlegen](#setting-the-period).
+   In dieser Berechnung werden Sendungen berücksichtigt, die bis zu sieben Tage vor dem Verfügbarkeitsdatum und bis zu sieben Tage nach dem Verfügbarkeitsdatum durchgeführt werden. Weitere Informationen hierzu finden Sie unter [Festlegen des Zeitraums](#setting-the-period).
 
    >[!AVAILABILITY]
    >Geplante Sendungen können in Campaign v8 nicht berücksichtigt werden.
