@@ -1,16 +1,16 @@
 ---
 product: campaign
-title: URL-Tracking-Optionen konfigurieren
+title: Konfigurieren von URL-Tracking-Optionen
 description: Erfahren Sie, wie Sie URL-Tracking-Optionen konfigurieren
 exl-id: 3277726a-fd92-4720-8871-3d0422c7db70
 source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '174'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
-# URL-Tracking-Optionen konfigurieren{#personalizing-url-tracking}
+# Konfigurieren von URL-Tracking-Optionen{#personalizing-url-tracking}
 
 ![](../../assets/common.svg)
 
@@ -18,7 +18,7 @@ Erweiterte Tracking-Parameter können im Versand-Assistenten konfiguriert werden
 
 >[!NOTE]
 >
->Auch die Einstellungen bezüglich der in E-Mails enthaltenen Bilder werden in diesem Fenster vorgenommen. Siehe [Bilder hinzufügen](defining-the-email-content.md#adding-images).
+>Auch die Einstellungen bezüglich der in E-Mails enthaltenen Bilder werden in diesem Fenster vorgenommen. Siehe [Hinzufügen von Bildern](defining-the-email-content.md#adding-images).
 
 ![](assets/s_ncs_user_email_del_tracking_ico.png)
 
