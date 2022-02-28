@@ -5,10 +5,10 @@ description: Erste Schritte mit der Implementierung von Adobe Experience Cloud T
 audience: integrations
 content-type: reference
 exl-id: 0e337620-a49f-4e14-8c67-9279d74736f1
-source-git-commit: af40fe822c69979a478604595790d4deefd6d5b0
+source-git-commit: 0a59b0dbdbe70cf8993ce7153b8f3c049c1f1108
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 100%
+source-wordcount: '235'
+ht-degree: 88%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 >[!CAUTION]
 >
->Diese Funktion ist im Lieferumfang des Produkts nicht verfügbar. Die Implementierung erfordert die Einbindung von Adobe Consulting. Wenden Sie sich an Ihren Adobe-Support-Mitarbeiter, um weitere Informationen zu erhalten
+>Diese Funktion ist im Lieferumfang des Produkts nicht verfügbar. Für diese Implementierung müssen Sie zunächst ein Ticket beim Support für Adoben öffnen. Anschließend können Sie die in diesem Abschnitt beschriebenen Schritte ausführen [page](../../integrations/using/configuring-pipeline.md#prerequisites).
 
 [!DNL Triggers] führen nach der Aktion eines Benutzers in einem kurzen Zeitraum Marketing-Aktionen aus. Die typische Reaktionszeit beträgt weniger als eine Stunde.
 
