@@ -5,7 +5,7 @@ description: Lernen Sie Best Practices zur Zustellbarkeit kennen
 feature: Deliverability
 exl-id: f301b34c-244c-4279-b23f-8224ea8eedbe
 source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '724'
 ht-degree: 100%
 
@@ -31,7 +31,7 @@ Probleme mit der Zustellbarkeit hängen in der Regel mit Maßnahmen zum Schutz v
 
 >[!NOTE]
 >
->Da Internet-Anbieter gezwungen sind, ständig neue, ausgereifte Filtertechniken zu entwickeln, um ihre Kunden vor Spammern zu schützen, ändern sich die für die Zustellbarkeit von E-Mails geltenden Kriterien und Regeln sehr oft. Konsultieren Sie deshalb das [Adobe-Handbuch mit Best Practices zur Zustellbarkeit](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=de), das regelmäßig aktualisiert wird.
+>Da Internet-Anbieter gezwungen sind, ständig neue, ausgereifte Filtertechniken zu entwickeln, um ihre Kunden vor Spammern zu schützen, ändern sich die für die Zustellbarkeit von E-Mails geltenden Kriterien und Regeln sehr oft. Konsultieren Sie deshalb das [Adobe-Handbuch mit Best Practices zur Zustellbarkeit](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html), das regelmäßig aktualisiert wird.
 
 ### Zustellrate
 
@@ -93,5 +93,5 @@ Mit Adobe Campaign können Sie die Leistung Ihrer Sendungen anhand einer Reihe i
 Weiterführende Informationen hierzu finden Sie in den folgenden Abschnitten:
 
 * [Überwachen der Zustellbarkeit](monitoring-deliverability.md)
-* [Erste Schritte mit dem Überwachen des Versands](about-delivery-monitoring.md)
+* [Erste Schritte bei der Überwachung eines Versands](about-delivery-monitoring.md)
 * [Erste Schritte mit den integrierten Berichten von Campaign](../../reporting/using/about-campaign-built-in-reports.md)

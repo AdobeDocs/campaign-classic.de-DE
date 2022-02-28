@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: acs-connector
 exl-id: 4693dca1-ee55-43f0-b3dc-62a5b67a8058
 source-git-commit: c54102b2ec32fbea89ce41dd3c9fedb98e612996
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '812'
 ht-degree: 100%
 
@@ -78,7 +78,7 @@ Je nach der Art der Implementierung können verschiedene Probleme auftreten.
 
    Abgesehen davon werden keine Daten standardmäßig nach Campaign Standard synchronisiert, die mit Empfängern verknüpft und in nms:recipients-Empfängertabellen gespeichert sind.
 
-   Um dennoch verknüpfte Daten verwenden zu können, nehmen Sie das Targeting in Campaign v7 vor und fügen Sie zusätzliche Daten wie in Abschnitt [Synchronisieren von Audiences](../../integrations/using/synchronizing-audiences.md) beschrieben hinzu. Andernfalls können Sie sich auch an Ihren Berater wenden, um Anpassungsmöglichkeiten zu prüfen.
+   Um dennoch verknüpfte Daten verwenden zu können, nehmen Sie die Zielgruppenbestimmung in Campaign v7 vor und fügen Sie zusätzliche Daten wie in Abschnitt  [Synchronisieren von Audiences](../../integrations/using/synchronizing-audiences.md) beschrieben hinzu. Andernfalls können Sie sich auch an Ihren Berater wenden, um Anpassungsmöglichkeiten zu prüfen.
 
 * **Ich verwende in Campaign v7 eine andere Profildimension als die Standardtabelle nms:recipient. Wie kann ich diese Profildimension mit Campaign Standard synchronisieren?**
 
