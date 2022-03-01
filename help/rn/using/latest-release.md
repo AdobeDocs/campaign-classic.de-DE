@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: fc49c0ec80c8741b01ea150c3bc7362b73357607
-workflow-type: ht
-source-wordcount: '1037'
-ht-degree: 100%
+source-git-commit: 8278228a6610e99f9400343bc967e16f2759dfbe
+workflow-type: tm+mt
+source-wordcount: '1259'
+ht-degree: 83%
 
 ---
 
@@ -18,6 +18,24 @@ ht-degree: 100%
 ![](../../assets/v7-only.svg)
 
 Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der **aktuellen Version Campaign Classic v7** aufgelistet. Jeder neue Build weist einen Status auf, der durch eine bestimmte Farbe dargestellt wird. Sie erfahren mehr über den Build-Status von Campaign Classic v7 auf [dieser Seite](rn-overview.md).
+
+## ![](assets/do-not-localize/green_2.png) Version 7.2.2 – Build 4349 {#release-7-2-2}
+
+_1. März 2022_
+
+**Patches**
+
+* Fehlerkorrektur - Beim Konfigurieren der **Web Analytics** externes Konto, wodurch der Integrationsstatus immer &quot;Integration erfolgreich&quot;angezeigt wurde, selbst wenn Fehler aufgetreten sind. (NEO-36672)
+* Fehlerkorrektur - diverse Postupgrade-Fehler im Zusammenhang mit dem Sequenz-ID-Mechanismus bei negativen IDs wurden behoben. (NEO-43205, NEO-42846, NEO-42845)
+* Es wurde ein Problem bei der Verwendung der **Web Analytics** externes Konto mit wiederkehrenden und kontinuierlichen Sendungen, wodurch Daten aus dem externen Konto teilweise verloren gingen. (NEO-38548)
+* Fehlerkorrektur - Postupgrade wird jetzt nicht mehr verlangsamt, wenn die NmsActiveContact -Tabelle aktualisiert wird. (NEO-43206)
+* Fehlerkorrektur - Es wurde ein Problem mit einem Postupgrade behoben, das auftrat, wenn native Ordner aus dem **Administration** Knoten an einen anderen Speicherort. (NEO-42875)
+* Fehlerkorrektur - Die Verwendung von **Daten aktualisieren** Workflow-Aktivität, die verhindern könnte, dass das Empfängerschema mit Empfängerdaten aus einer externen Google Cloud-Datenbank aktualisiert wird. (NEO-42343)
+* Fehlerkorrektur - Beim Postupgrade tritt jetzt kein Fehler mehr im Zusammenhang mit dem Adobe Analytics-Connector auf. (NEO-43318, NEO-38136)
+* Fehlerkorrektur - Es wurde ein Problem behoben, bei dem die CUID während des Postupgrades durch &#39;VALUE_TO_CHANGE&#39; überschrieben wurde. (NEO-43267)
+* Fehlerkorrektur - Beim Synchronisieren der Mid-Sourcing- und Marketing-Instanzen in einer Multi-Mid-Konfiguration treten jetzt keine Fehler mehr auf. (NEO-10432)
+* Fehlerkorrektur - Beim Aktualisieren des Zustellbarkeits-Workflows tritt jetzt kein Fehler mehr auf, wenn mehr als 1000 Broadlogs gleichzeitig verwendet werden. (NEO-40276)
+* Fehlerkorrektur - Die Versandindikatoren Öffnungsverhältnis und Klick-Verhältnis werden jetzt automatisch aktualisiert. (NEO-43253)
 
 ## ![](assets/do-not-localize/green_2.png) Version 7.2.1 – Build 9346 {#release-7-2-1}
 
