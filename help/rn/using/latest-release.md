@@ -6,7 +6,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 8278228a6610e99f9400343bc967e16f2759dfbe
+source-git-commit: 830d91dc5f6663a24d9fb8c2afeb03cdb93d4eec
 workflow-type: tm+mt
 source-wordcount: '1259'
 ht-degree: 83%
@@ -37,7 +37,7 @@ _1. März 2022_
 * Fehlerkorrektur - Beim Aktualisieren des Zustellbarkeits-Workflows tritt jetzt kein Fehler mehr auf, wenn mehr als 1000 Broadlogs gleichzeitig verwendet werden. (NEO-40276)
 * Fehlerkorrektur - Die Versandindikatoren Öffnungsverhältnis und Klick-Verhältnis werden jetzt automatisch aktualisiert. (NEO-43253)
 
-## ![](assets/do-not-localize/green_2.png) Version 7.2.1 – Build 9346 {#release-7-2-1}
+## ![](assets/do-not-localize/limited_2.png) Version 7.2.1 – Build 9346 {#release-7-2-1}
 
 _10. Januar 2022_
 
