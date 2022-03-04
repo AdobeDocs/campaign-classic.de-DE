@@ -1,12 +1,13 @@
 ---
 product: campaign
-title: E-Mail-Versand auf japanische Mobiltelefone mit Adobe Campaign Classic
+title: E-Mails mit Adobe Campaign Classic auf japanischen Mobiltelefonen versenden
 description: Erfahren Sie, wie Sie E-Mails konfigurieren, entwerfen und versenden, die auf einem japanischen Mobilgerät gelesen werden sollen
+feature: Email, Email Design
 exl-id: 44634227-2340-49c4-b330-740c739ea551
-source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
-workflow-type: ht
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+workflow-type: tm+mt
 source-wordcount: '799'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 

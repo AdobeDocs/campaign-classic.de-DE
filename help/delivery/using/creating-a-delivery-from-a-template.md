@@ -2,9 +2,10 @@
 product: campaign
 title: Erstellen eines Versands aus einer Vorlage
 description: Erfahren Sie, wie Sie einen Versand aus einer Vorlage erstellen
+feature: Delivery Templates
 exl-id: 7ffb649e-801f-4568-a86b-7982448e3c30
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
-workflow-type: ht
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 100%
 

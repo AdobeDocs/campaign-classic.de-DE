@@ -2,9 +2,10 @@
 product: campaign
 title: Indikatorberechnung
 description: Indikatorberechnung
+feature: Reporting
 exl-id: 52ca1595-16b3-4323-9122-d1ac13c08147
-source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
-workflow-type: ht
+source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
+workflow-type: tm+mt
 source-wordcount: '3021'
 ht-degree: 100%
 
@@ -608,7 +609,7 @@ Dieser Bericht basiert auf den Tabellen **[!UICONTROL Versand- und Trackingstati
    <td> count(Iif([url/@type]=4 oder [url/@type]=5, @id, 0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> Transactions<br /> </td> 
+   <td> Transaktionen<br /> </td> 
    <td> @transaction<br /> </td> 
    <td> Zählung aller @id mit URL-Typ "Transaktion".<br /> </td> 
    <td> count(Iif([url/@type]=5, @id, 0))<br /> </td> 
@@ -809,7 +810,7 @@ Dieser Bericht basiert auf der Tabelle **[!UICONTROL Versand]** (nms:delivery).
  </thead> 
  <tbody> 
   <tr> 
-   <td> Transactions<br /> </td> 
+   <td> Transaktionen<br /> </td> 
    <td> @transactions<br /> </td> 
    <td> Summe aller @totalClicks, deren URL-Typ gleich "Transaktion" ist.<br /> </td> 
    <td> sum(Iif([url/@type] = 5, @totalClicks, 0))<br /> </td> 

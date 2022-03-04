@@ -1,19 +1,17 @@
 ---
 product: campaign
-title: Verwendung von Inhaltsvorlagen
-description: Verwendung von Inhaltsvorlagen
-audience: delivery
-content-type: reference
-topic-tags: content-management
+title: Inhaltsvorlage verwenden
+description: Inhaltsvorlage verwenden
+feature: Templates
 exl-id: e43dd68e-2e95-4367-9029-4622fbcb1759
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 100%
 
 ---
 
-# Verwendung von Inhaltsvorlagen{#using-a-content-template}
+# Inhaltsvorlage verwenden{#using-a-content-template}
 
 ![](../../assets/common.svg)
 

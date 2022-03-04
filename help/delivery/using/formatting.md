@@ -2,9 +2,10 @@
 product: campaign
 title: Formatierung
 description: Formatierung
+feature: Email Design
 exl-id: d9688dc4-20c6-4a9a-990f-465f39b2faa2
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
-workflow-type: ht
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+workflow-type: tm+mt
 source-wordcount: '1458'
 ht-degree: 100%
 
@@ -66,7 +67,7 @@ Attribute und Elemente des Inhalts werden wie JavaScript-Objekte dargestellt und
 **Beispiel**:
 
 * **content.@name**: gibt den Wert des Attributs „name“ des Hauptelements aus.
-* **content.@`['name']`**: identisch mit dem **Inhalt.@name**-Syntax
+* **Inhalt.@`['name']`**: identisch mit dem **Inhalt.@name**-Syntax
 * **content.chapter.length**: gibt die Anzahl an Elementen des Kollektionselements `<chapter` aus
 * **content.chapter`[0]`.@name**: ruft den Namen des ersten Elements von `<chapter>` ab
 * **chapter.name()**: gibt den Namen des Elements `<chapter>` aus

@@ -1,19 +1,17 @@
 ---
 product: campaign
-title: Layout eines Webformulars definieren
-description: Layout eines Webformulars definieren
-audience: web
-content-type: reference
-topic-tags: web-forms
+title: Layout eines Web-Formulars definieren
+description: Layout eines Web-Formulars definieren
+feature: Web Forms
 exl-id: 23ca17f8-de1a-4f9c-8357-3965dc3329b1
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
 workflow-type: tm+mt
 source-wordcount: '528'
 ht-degree: 100%
 
 ---
 
-# Layout eines Webformulars definieren{#defining-web-forms-layout}
+# Layout eines Web-Formulars definieren{#defining-web-forms-layout}
 
 ![](../../assets/common.svg)
 

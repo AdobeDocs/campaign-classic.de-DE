@@ -1,12 +1,13 @@
 ---
 product: campaign
-title: Workflow starten
+title: Starten eines Workflows
 description: Erfahren Sie, wie Sie einen Workflow starten, und lernen Sie die Symbolleiste sowie das Kontextmenü für Workflow-Aktionen kennen
+feature: Workflows
 exl-id: d345ba62-c2fb-43df-a2a1-e9e4292d301a
-source-git-commit: 3b523e53440ba6ae107b597c7ebf226195126bde
-workflow-type: ht
-source-wordcount: '854'
-ht-degree: 100%
+source-git-commit: 9126e2cc088ef0e5761cc20bd19980d323f3a3ea
+workflow-type: tm+mt
+source-wordcount: '879'
+ht-degree: 91%
 
 ---
 
@@ -46,7 +47,9 @@ Die Symbolleiste wird in diesem [Abschnitt](../../campaign/using/marketing-campa
 
    Dieser Befehl hält die Ausführung eines laufenden Workflows an. Der Status der Workflow-Instanz wechselt zu **Abgeschlossen**. Laufende Vorgänge werden nach Möglichkeit unterbrochen. Gestartete Importe oder SQL-Abfragen werden sofort abgebrochen.
 
-   Das Anhalten eines Workflows ist ein asynchroner Prozess, d. h. der jeweilige Befehl wird gespeichert und der oder die Server brechen die laufenden Vorgänge ab. Das Anhalten einer Workflow-Instanz kann daher eine geraume Zeit dauern, insbesondere wenn der Workflow über verschiedene Server verteilt ist. In diesem Fall muss jeder Server den Prozess übernehmen und die laufenden Aufgaben abbrechen.
+   >[!IMPORTANT]
+   >
+   >Das Anhalten eines Workflows ist ein asynchroner Prozess: Die Anfrage wird registriert und der oder die Workflow-Server brechen die laufenden Vorgänge ab. Das Anhalten einer Workflow-Instanz kann daher einige Zeit in Anspruch nehmen, insbesondere wenn der Workflow auf mehreren Servern ausgeführt wird, von denen jeder die Kontrolle übernehmen muss, um die laufenden Aufgaben abzubrechen. Um Probleme zu vermeiden, warten Sie, bis der Stopp-Vorgang abgeschlossen ist, und führen Sie nicht mehrere Stopp-Anfragen für denselben Workflow durch.
 
 * **[!UICONTROL Neu starten]**
 

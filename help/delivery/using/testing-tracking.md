@@ -2,9 +2,10 @@
 product: campaign
 title: Testen des Nachrichten-Trackings
 description: Erfahren Sie, wie Sie das Tracking von Nachrichten testen
+feature: Monitoring
 exl-id: 16ad36b7-c13e-4b77-86ca-41c9ef174172
-source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
-workflow-type: ht
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 100%
 

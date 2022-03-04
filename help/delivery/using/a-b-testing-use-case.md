@@ -1,11 +1,11 @@
 ---
 product: campaign
 title: Anwendungsbeispiell für A/B-Tests
-description: Erfahren Sie anhand eines speziellen Anwendungsbeispiels, wie Sie A/B-Tests durchführen.
+description: Erfahren Sie anhand eines speziellen Anwendungsbeispiels, wie Sie A/B-Tests durchführen
 feature: A/B Testing
 exl-id: 4eb139a0-5342-4084-9f6d-d736e05bf1c6
-source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
-workflow-type: ht
+source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+workflow-type: tm+mt
 source-wordcount: '246'
 ht-degree: 100%
 

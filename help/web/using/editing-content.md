@@ -1,19 +1,17 @@
 ---
 product: campaign
-title: Bearbeiten von Inhalten
-description: Bearbeiten von Inhalten
-audience: web
-content-type: reference
-topic-tags: editing-html-content
+title: Inhalte bearbeiten
+description: Inhalte bearbeiten
+feature: Web Apps, Web Forms, Landing Pages
 exl-id: 968430d6-b1dd-47f8-8b31-39aaa18bc05c
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
 workflow-type: tm+mt
 source-wordcount: '1239'
 ht-degree: 100%
 
 ---
 
-# Bearbeiten von Inhalten{#editing-content}
+# Inhalte bearbeiten{#editing-content}
 
 ![](../../assets/common.svg)
 

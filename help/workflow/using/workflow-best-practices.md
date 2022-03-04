@@ -2,14 +2,12 @@
 product: campaign
 title: Best Practices bei Workflows
 description: Machen Sie sich mit Best Practices bei Campaign-Workflows vertraut.
-audience: workflow
-content-type: reference
-topic-tags: -general-operation
+feature: Workflows
 exl-id: 39c57f61-2629-4214-91e4-cb97dc039deb
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 9126e2cc088ef0e5761cc20bd19980d323f3a3ea
 workflow-type: tm+mt
-source-wordcount: '1658'
-ht-degree: 100%
+source-wordcount: '1733'
+ht-degree: 93%
 
 ---
 
@@ -56,9 +54,9 @@ Informationen zum Bereinigen der Logs finden Sie in dieser [Dokumentation](start
 
 ### Workflow-Ausführung {#workflow-execution}
 
-Es wird empfohlen, Workflows nicht öfter als alle 15 Minuten auszuführen, da die Gesamtleistung des Systems beeinträchtigt werden kann und Blöcke in der Datenbank entstehen können.
+**Führen Sie einen Workflow nicht öfter als alle 15 Minuten aus.** weil dies die Gesamtleistung des Systems beeinträchtigen und Blöcke in der Datenbank erstellen kann.
 
-Ihre Workflows sollten nicht ausgesetzt werden. Wenn Sie einen temporären Workflow erstellen, achten Sie darauf, dass dieser ordnungsgemäß beendet wird und nicht im Status **[!UICONTROL Ausgesetzt]** verharrt. Bei ausgesetzten Workflows werden die temporären Tabellen gespeichert, was die Größe der Datenbank erhöhen würde. Weisen Sie unter „Workflow-Eigenschaften“ Workflow-Supervisoren zu, um eine Warnung zu senden, wenn ein Workflow fehlschlägt oder vom System ausgesetzt wird.
+**** Ihre Workflows sollten nicht ausgesetzt werden. Wenn Sie einen temporären Workflow erstellen, achten Sie darauf, dass dieser ordnungsgemäß beendet wird und nicht im Status **[!UICONTROL Ausgesetzt]** verharrt. Bei ausgesetzten Workflows werden die temporären Tabellen gespeichert, was die Größe der Datenbank erhöhen würde. Weisen Sie unter „Workflow-Eigenschaften“ Workflow-Supervisoren zu, um eine Warnung zu senden, wenn ein Workflow fehlschlägt oder vom System ausgesetzt wird.
 
 So vermeiden Sie, dass Workflows ausgesetzt werden:
 
@@ -66,9 +64,11 @@ So vermeiden Sie, dass Workflows ausgesetzt werden:
 * Bauen Sie Ihre Workflows möglichst einfach auf, indem Sie beispielsweise große Workflows in mehrere kleine unterteilen. Mit der Aktivität **[!UICONTROL Externes Signal]** können Sie Workflows durch andere Workflows auslösen.
 * Vermeiden Sie es, Aktivitäten mit Flüssen in Ihren Workflows zu deaktivieren, die Threads offen lassen und zu vielen temporären Tabellen führen, die viel Platz verbrauchen können. Behalten Sie in Ihren Workflows keine Aktivitäten im Status **[!UICONTROL Nicht aktivieren]** oder **[!UICONTROL Aktivieren, aber nicht ausführen]**.
 
-Beenden Sie außerdem nicht verwendete Workflows. Workflows, die weiterhin ausgeführt werden, halten Verbindungen zur Datenbank aufrecht.
+**Nicht verwendete Workflows stoppen**. Workflows, die weiterhin ausgeführt werden, halten Verbindungen zur Datenbank aufrecht.
 
-Verwenden Sie den unbedingten Stopp so selten wie möglich. Verwenden Sie diese Aktion nicht regelmäßig. Wenn Verbindungen, die von Workflows zur Datenbank erzeugt werden, nicht sauber geschlossen werden, beeinträchtigt dies die Leistung.
+**Verwenden Sie den unbedingten Stopp so selten wie möglich**. Verwenden Sie diese Aktion nicht regelmäßig. Wenn Verbindungen, die von Workflows zur Datenbank erzeugt werden, nicht sauber geschlossen werden, beeinträchtigt dies die Leistung.
+
+**Führen Sie nicht mehrere Stopp-Anfragen für denselben Workflow aus.**. Das Anhalten eines Workflows ist ein asynchroner Prozess: Die Anfrage wird registriert und der oder die Workflow-Server brechen die laufenden Vorgänge ab. Das Anhalten einer Workflow-Instanz kann daher einige Zeit in Anspruch nehmen, insbesondere wenn der Workflow auf mehreren Servern ausgeführt wird, von denen jeder die Kontrolle übernehmen muss, um die laufenden Aufgaben abzubrechen. Um Probleme zu vermeiden, warten Sie, bis der Stopp-Vorgang abgeschlossen ist, und vermeiden Sie, einen Workflow mehrmals zu stoppen.
 
 ### In der Engine ausführen {#execute-in-the-engine-option}
 

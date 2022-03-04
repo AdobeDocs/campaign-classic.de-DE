@@ -2,11 +2,9 @@
 product: campaign
 title: Anreicherung
 description: Erfahren Sie mehr über die Workflow-Aktivität "Anreicherung".
-audience: workflow
-content-type: reference
-topic-tags: targeting-activities
+feature: Workflows, Enrichment Activity, Targeting Activity
 exl-id: 4c7bc0f3-5877-47dc-bd72-dc94fb7bd479
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
 workflow-type: tm+mt
 source-wordcount: '1421'
 ht-degree: 100%
@@ -206,9 +204,11 @@ Gehen Sie dazu wie folgt vor:
    >
    >Die Anzahl an für die Vorschau verfügbaren Vorschlägen hängt von den im Versand konfigurierten Parametern ab.
 
-## Rang und Gewichtung von Angeboten speichern {#storing-offer-rankings-and-weights}
+## Ranking und Gewichtung von Angeboten speichern
+ {#storing-offer-rankings-and-weights}
 
-Standardmäßig werden Rang und Gewichtung bei Verwendung der Aktivität **Anreicherung** nicht in der Vorschlagstabelle gespeichert.
+Standardmäßig werden Ranking und Gewichtung bei Verwendung der Aktivität **Anreicherung** nicht in der Vorschlagstabelle gespeichert.
+
 
 Die Aktivität **[!UICONTROL Angebotsmodul]** speichert diese Informationen standardmäßig.
 
@@ -219,10 +219,12 @@ Gehen Sie wie folgt vor, wenn Sie diese Informationen dennoch speichern möchten
 
    ![](assets/ita_enrichment_rankweight_1.png)
 
-1. Fügen Sie für den Rang die Spalte **[!UICONTROL @rank]** und die Gewichtung die Spalte **[!UICONTROL @weight]** hinzu.
+1. Fügen Sie für das Ranking die Spalte **[!UICONTROL @rank]** und für die Gewichtung die Spalte **[!UICONTROL @weight]** hinzu.
+
 
    ![](assets/ita_enrichment_rankweight_2.png)
 
 1. Bestätigen Sie Ihre Wahl und speichern Sie den Workflow.
 
-Der Versand speichert nun automatisch Rang und Gewichtung der Angebote. Die Informationen können im Tab **[!UICONTROL Angebote]** des Versands eingesehen werden.
+Der Versand speichert nun automatisch Ranking und Gewichtung der Angebote. Die Informationen können im Tab **[!UICONTROL Angebote]** des Versands eingesehen werden.
+
