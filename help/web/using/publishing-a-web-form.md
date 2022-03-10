@@ -1,17 +1,17 @@
 ---
 product: campaign
-title: Web-Formular veröffentlichen
-description: Web-Formular veröffentlichen
+title: Veröffentlichen eines Web-Formulars
+description: Veröffentlichen eines Web-Formulars
 feature: Web Forms
 exl-id: 1c66b8e8-7590-4767-9b2f-a9a509df4508
 source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1024'
 ht-degree: 100%
 
 ---
 
-# Web-Formular veröffentlichen{#publishing-a-web-form}
+# Veröffentlichen eines Web-Formulars{#publishing-a-web-form}
 
 ![](../../assets/common.svg)
 
