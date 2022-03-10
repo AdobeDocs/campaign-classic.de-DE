@@ -5,7 +5,7 @@ description: Erfahren Sie mehr über die Workflow-Aktivitäten für SQL- und Jav
 feature: Workflows
 exl-id: 729a2010-c2d8-481b-8c9e-780b9e5f97ef
 source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '297'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ Die Aktivität **[!UICONTROL SQL-Code]** führt ein SQL-Script in Form eines JST
 
 * **[!UICONTROL Script]**
 
-   Das Skript wird in den zentralen Bereich des Editors eingefügt. Da es sich beim Skript um ein JST-Template handelt, kann es dem Workflow-Kontext entsprechend konfiguriert werden.
+   Das Script wird in den zentralen Bereich des Editors eingefügt. Da es sich beim Script um ein JST-Template handelt, kann es dem Workflow-Kontext entsprechend konfiguriert werden.
 
 * **[!UICONTROL Fehler verarbeiten]**
 
@@ -31,9 +31,9 @@ Die Aktivität **[!UICONTROL SQL-Code]** führt ein SQL-Script in Form eines JST
 
 ## JavaScript-Code und erweiterter JavaScript-Code {#javascript-code}
 
-Aktivitäten mit **[!UICONTROL JavaScript-Code]** und **[!UICONTROL erweitertem JavaScript-Code]** führen im Kontext von Workflows ein JavaScript-Skript aus. Weitere Informationen zur Skripterstellung finden Sie in diesen Abschnitten:
+Aktivitäten mit **[!UICONTROL JavaScript-Code]** und **[!UICONTROL erweitertem JavaScript-Code]** führen im Kontext von Workflows ein JavaScript-Script aus. Weitere Informationen zur Scripterstellung finden Sie in diesen Abschnitten:
 
-* [JavaScript-Skripte und -Vorlagen](javascript-scripts-and-templates.md)
+* [JavaScript-Scripte und -Vorlagen](javascript-scripts-and-templates.md)
 * [Beispiele für JavaScript-Code in Workflows](javascript-in-workflows.md)
 
 ### Ausführungsverzögerung {#exec-delay}
@@ -48,7 +48,7 @@ Um diese Begrenzung zu ignorieren, müssen Sie den Wert auf **0** setzen.
 
 ![](assets/javascript_code.png)
 
-* **[!UICONTROL Script]**: Das auszuführende Skript wird in den zentralen Bereich des Editors eingefügt.
+* **[!UICONTROL Script]**: Das auszuführende Script wird in den zentralen Bereich des Editors eingefügt.
 
 * **[!UICONTROL Fehler verarbeiten]**: Siehe [Fehler verarbeiten](monitoring-workflow-execution.md#processing-errors).
 
@@ -56,8 +56,8 @@ Um diese Begrenzung zu ignorieren, müssen Sie den Wert auf **0** setzen.
 
 ![](assets/advanced_javascript_code.png)
 
-* **[!UICONTROL Erster Aufruf]**: Das beim ersten Aufruf auszuführende Skript wird im oberen Bereich des Editors eingefügt.
-* **[!UICONTROL Nächste Aufrufe]**: Das bei allen weiteren Aufrufen auszuführende Skript wird im unteren Bereich des Editors eingefügt.
+* **[!UICONTROL Erster Aufruf]**: Das beim ersten Aufruf auszuführende Script wird im oberen Bereich des Editors eingefügt.
+* **[!UICONTROL Nächste Aufrufe]**: Das bei allen weiteren Aufrufen auszuführende Script wird im unteren Bereich des Editors eingefügt.
 * **[!UICONTROL Transitionen]**: Es ist möglich, mehrere aus dieser Aktivität ausgehende Transitionen zu definieren.
 * **[!UICONTROL Zeitplan]** Im Tab **[!UICONTROL Planung]** können der Ausführungszeitpunkt und -rhythmus der Aktivität definiert werden.
 
