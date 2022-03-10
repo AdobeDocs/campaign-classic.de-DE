@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 9126e2cc088ef0e5761cc20bd19980d323f3a3ea
+source-git-commit: deb658fee9a668fd98aebfd1852252114ffb6edc
 workflow-type: tm+mt
-source-wordcount: '4907'
+source-wordcount: '4923'
 ht-degree: 99%
 
 ---
@@ -32,6 +32,8 @@ Der Abschnitt &quot;Quarantäne vs. Blockierungsliste&quot; wurde klarer formuli
 Die Abschnitte darüber, wie eine Adresse in Quarantäne gesendet wird und wie Adressen aus der Quarantäneliste entfernt werden, wurden aktualisiert. [Weitere Informationen](../../delivery/using/understanding-quarantine-management.md#removing-a-quarantined-address)
 
 Es wurde eine Workflow-Best Practice hinzugefügt, die empfiehlt, nicht mehrere Stopp-Anfragen für denselben Workflow durchzuführen. [Weitere Informationen](../../workflow/using/workflow-best-practices.md)
+
+Es wurden Informationen darüber hinzugefügt, wie verhindert werden kann, dass ein wiederkehrender Versand innerhalb einer Kampagne ausgeführt wird. [Weitere Informationen](../../workflow/using/recurring-delivery.md)
 
 ### Januar 2022 {#january-2022}
 

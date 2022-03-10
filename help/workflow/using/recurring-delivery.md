@@ -4,10 +4,10 @@ title: Wiederkehrender Versand
 description: Erfahren Sie mehr über die Workflow-Aktivität "Wiederkehrender Versand".
 feature: Workflows
 exl-id: efd2cdfb-2e5f-4672-8be8-a424481b11ed
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
+source-git-commit: 6f0479cfe6c6801eb44fcc7a35bdac1241ec3be6
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 100%
+source-wordcount: '280'
+ht-degree: 82%
 
 ---
 
@@ -39,9 +39,12 @@ Ein **wiederkehrender Versand** erstellt bei jeder Ausführung eine neue Versand
 
 ![Wiederkehrender Versand](assets/delivery_recurring.jpg)
 
+Wenn Sie die Ausführung eines wiederkehrenden Versands stoppen möchten, sollten Sie die Kampagne vollständig abbrechen oder den Workflow, mit dem sie ausgeführt wird, stoppen. Wird der Versand über das Kampagnen-Dashboard gestoppt, wird der Versand nur gestoppt: Die nächsten Instanzen des wiederkehrenden Versands werden bei jeder Workflow-Ausführung weiterhin erstellt.
+
 >[!NOTE]
 >
->Die Durchführung von Testsendungen ist in der Aktivität **[!UICONTROL Wiederkehrender Versand]** nicht möglich.\
+>Die Durchführung von Testsendungen ist in der Aktivität **[!UICONTROL Wiederkehrender Versand]** nicht möglich.
+> 
 >Nutzen Sie zur direkten Erstellung von Sendungen in Kampagnen-Workflows die vorkonfigurierten kanalspezifischen Versandaktionen, wie z. B. **[!UICONTROL E-Mail-Versand]**.
 
 ## Anleitungsvideo (#recurring-delivery-video)
