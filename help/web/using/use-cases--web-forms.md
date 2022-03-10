@@ -5,7 +5,7 @@ description: '"Anwendungsbeispiele: Webformulare"'
 feature: Web Forms
 exl-id: 7aa4646d-1325-47c2-b553-6fe375c48973
 source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '992'
 ht-degree: 100%
 
@@ -110,7 +110,7 @@ Gehen Sie dazu wie folgt vor:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6bbis.png)
 
-   Mit der zweiten **[!UICONTROL Script]**-Aktivität werden Sendungen an die Besucher genehmigt. Außerdem ermöglicht sie die Anmeldung zum Newsletter. Die letzten beiden Zeilen des Skripts ermöglichen Ihnen den Transfer Ihrer Empfänger vom temporären Ordner in einen anderen Ordner und die Abstimmung mit vorhandenen Profilen, sobald die Anmeldung bestätigt wurde.
+   Mit der zweiten **[!UICONTROL Script]**-Aktivität werden Sendungen an die Besucher genehmigt. Außerdem ermöglicht sie die Anmeldung zum Newsletter. Die letzten beiden Zeilen des Scripts ermöglichen Ihnen den Transfer Ihrer Empfänger vom temporären Ordner in einen anderen Ordner und die Abstimmung mit vorhandenen Profilen, sobald die Anmeldung bestätigt wurde.
 
    ```
    ctx.recipient.@blackList=0
