@@ -1,17 +1,17 @@
 ---
 product: campaign
-title: Layout eines Web-Formulars definieren
-description: Layout eines Web-Formulars definieren
+title: Definieren des Layouts eines Web-Formulars
+description: Definieren des Layouts eines Web-Formulars
 feature: Web Forms
 exl-id: 23ca17f8-de1a-4f9c-8357-3965dc3329b1
 source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '528'
 ht-degree: 100%
 
 ---
 
-# Layout eines Web-Formulars definieren{#defining-web-forms-layout}
+# Definieren des Layouts eines Web-Formulars{#defining-web-forms-layout}
 
 ![](../../assets/common.svg)
 
