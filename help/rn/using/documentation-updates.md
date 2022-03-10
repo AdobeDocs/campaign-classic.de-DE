@@ -31,7 +31,7 @@ Der Abschnitt &quot;Quarantäne vs. Blockierungsliste&quot; wurde klarer formuli
 
 Die Abschnitte darüber, wie eine Adresse in Quarantäne gesendet wird und wie Adressen aus der Quarantäneliste entfernt werden, wurden aktualisiert. [Weitere Informationen](../../delivery/using/understanding-quarantine-management.md#removing-a-quarantined-address)
 
-Es wurde eine Workflow-Best Practice hinzugefügt, die empfiehlt, nicht mehrere Stopp-Anfragen für denselben Workflow durchzuführen. [Weitere Informationen](../../workflow/using/workflow-best-practices.md)
+Es wurde eine Best Practice für Workflows hinzugefügt, in der empfohlen wird, nicht mehrere Stopp-Anfragen für denselben Workflow durchzuführen. [Weitere Informationen](../../workflow/using/workflow-best-practices.md)
 
 Es wurden Informationen darüber hinzugefügt, wie verhindert werden kann, dass ein wiederkehrender Versand innerhalb einer Kampagne ausgeführt wird. [Weitere Informationen](../../workflow/using/recurring-delivery.md)
 
