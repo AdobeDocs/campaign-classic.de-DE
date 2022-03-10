@@ -1,17 +1,17 @@
 ---
 product: campaign
-title: Web-Formular übersetzen
-description: Web-Formular übersetzen
+title: Übersetzen eines Web-Formulars
+description: Übersetzen eines Web-Formulars
 feature: Web Forms
 exl-id: 72959141-ca18-4512-80c7-239efd31f711
 source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1662'
 ht-degree: 100%
 
 ---
 
-# Web-Formular übersetzen{#translating-a-web-form}
+# Übersetzen eines Web-Formulars{#translating-a-web-form}
 
 ![](../../assets/common.svg)
 
