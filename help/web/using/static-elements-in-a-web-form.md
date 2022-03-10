@@ -5,7 +5,7 @@ description: Statische Elemente in einem Webformular
 feature: Web Forms
 exl-id: 364d90af-4b18-4104-8b6a-be80cfde3b0b
 source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1074'
 ht-degree: 100%
 
@@ -24,11 +24,11 @@ Folgende Feldtypen sind verfügbar:
 * Wert auf der Basis der zuvor eingegebenen Antworten (im Kontext des Formulars) oder der Datenbank.
 * Hypertext-Link, HTML, horizontaler Balken. Siehe [HTML-Inhalt einfügen](#inserting-html-content).
 * Bild, das in der Ressourcenbibliothek oder auf einem für Benutzer zugänglichen Server gespeichert ist. Siehe [Bilder einfügen](#inserting-images).
-* Skript, das Client- und/oder Server-seitig ausgeführt wird. Es muss in JavaScript verfasst und mit den gängigen Browsern kompatibel sein, um die korrekte Ausführung beim Client zu gewährleisten.
+* Script, das Client- und/oder Server-seitig ausgeführt wird. Es muss in JavaScript verfasst und mit den gängigen Browsern kompatibel sein, um die korrekte Ausführung beim Client zu gewährleisten.
 
    >[!NOTE]
    >
-   >Auf der Serverseite kann das Skript die in der [Campaign JSAPI-Dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=de) definierten Funktionen verwenden.
+   >Auf der Serverseite kann das Script die in der [Campaign JSAPI-Dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=de) definierten Funktionen verwenden.
 
 ## HTML-Inhalt einfügen {#inserting-html-content}
 
