@@ -1,17 +1,17 @@
 ---
 product: campaign
-title: Eigenschaften eines Web-Formulars definieren
-description: Eigenschaften eines Web-Formulars definieren
+title: Definieren der Eigenschaften von Web-Formularen
+description: Definieren der Eigenschaften von Web-Formularen
 feature: Web Forms
 exl-id: 37aaaa03-0656-4a9b-bcae-74de33e3737b
 source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1263'
 ht-degree: 100%
 
 ---
 
-# Eigenschaften eines Webformulars definieren{#defining-web-forms-properties}
+# Definieren der Eigenschaften von Web-Formularen{#defining-web-forms-properties}
 
 ![](../../assets/common.svg)
 
