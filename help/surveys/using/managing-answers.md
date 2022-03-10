@@ -5,7 +5,7 @@ description: Erfahren Sie, wie Sie Umfrageantworten verwalten
 feature: Surveys
 exl-id: 0b5dc602-e16f-4bf1-bd8f-352e0bc78996
 source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '895'
 ht-degree: 100%
 
@@ -128,7 +128,7 @@ Die Punkte werden kumuliert und auf dem Server gespeichert, wenn die Seite best�
 >
 >Sie können dafür positive oder negative sowie ganzzahlige oder nicht-ganzzahlige Werte verwenden.
 
-Die Punktzahl kann in Tests oder Skripts verwendet werden.
+Die Punktzahl kann in Tests oder Scripts verwendet werden.
 
 >[!CAUTION]
 >
@@ -138,7 +138,7 @@ Die Punktzahl kann in Tests oder Skripts verwendet werden.
 
    ![](assets/s_ncs_admin_survey_score_in_a_test.png)
 
-* Sie können die Punktzahl in einem Skript verwenden.
+* Sie können die Punktzahl in einem Script verwenden.
 
 **Beispiel**: Berechnen Sie eine Punktzahl und verwenden Sie sie als Bedingung für die Anzeige der nächsten Seite:
 
