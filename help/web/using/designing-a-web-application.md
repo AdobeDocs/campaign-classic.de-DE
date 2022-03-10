@@ -1,11 +1,11 @@
 ---
 product: campaign
-title: Web-Anwendung konzipieren
-description: Web-Anwendung konzipieren
+title: Entwerfen eines Web-Programms
+description: Entwerfen eines Web-Programms
 feature: Web Apps
 exl-id: dcdf6afc-321e-4027-a350-fff6bbf22e71
 source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '264'
 ht-degree: 100%
 
