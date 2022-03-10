@@ -5,7 +5,7 @@ description: Versand (fortlaufend)
 feature: Workflows, Channels Activity
 exl-id: 9c228cdb-331e-476e-a24c-3c7e23add3bf
 source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '374'
 ht-degree: 100%
 
@@ -19,7 +19,7 @@ Mit einer Aktion vom Typ **Versand (fortlaufend)** können Sie einem bestehenden
 
 ![](assets/do-not-localize/how-to-video.png) [Funktion im Video kennenlernen](#continuous-delivery-video).
 
-Auf der Ebene der Versandvorlagen können Sie ein Skript zur Berechnung der Beschriftung (und des Kampagnenordners) des zugehörigen Versands angeben. Wenn das Skript einen Versand berechnet, der noch nicht vorhanden ist, wird er sofort erstellt.
+Auf der Ebene der Versandvorlagen können Sie ein Script zur Berechnung der Beschriftung (und des Kampagnenordners) des zugehörigen Versands angeben. Wenn das Script einen Versand berechnet, der noch nicht vorhanden ist, wird er sofort erstellt.
 
 ![](assets/edit_diffusion_fil.png)
 
