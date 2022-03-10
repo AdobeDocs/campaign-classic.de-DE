@@ -5,7 +5,7 @@ description: Erfahren Sie mehr über die erweiterten Funktionen bei der Arbeit m
 feature: Reporting
 exl-id: 8b51d0fc-1692-41cd-9aa8-3bb8f4ee454e
 source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '654'
 ht-degree: 100%
 
@@ -27,9 +27,9 @@ Als technischer Benutzer können Sie zusätzlich zu den [allgemeinen Eigenschaft
 
 * Fügen Sie Variablen hinzu, die im Kontext des Berichts verwendet werden. [Mehr dazu](#adding-variables)
 
-## Arbeiten mit Skripts {#adding-a-script}
+## Arbeiten mit Scripts {#adding-a-script}
 
-### Externe Skripts referenzieren {#external-script}
+### Externe Scripts referenzieren {#external-script}
 
 Sie können JavaScript-Codes referenzieren, die beim Aufruf der Berichtseite Client- und/oder Server-seitig ausgeführt werden.
 
@@ -45,7 +45,7 @@ Gehen Sie dazu wie folgt vor:
 
 Die referenzierten Scripts müssen in JavaScript verfasst und mit gängigen Browsern kompatibel sein, damit sie Client-seitig korrekt ausgeführt werden. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../web/using/web-forms-answers.md).
 
-### Skript-Aktivität hinzufügen {#script-activity}
+### Script-Aktivität hinzufügen {#script-activity}
 
 Verwenden Sie beim [Entwerfen Ihres Berichts](../../reporting/using/creating-a-new-report.md#modelizing-the-chart) die **[!UICONTROL Script]**-Aktivität, um Daten zu verarbeiten und ganz leicht komplexe Abfragen zu erstellen, die keine SQL-Sprache aktivieren. Sie können Ihre Abfrage direkt im Script-Fenster eingeben.
 
