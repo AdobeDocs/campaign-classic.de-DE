@@ -1,11 +1,11 @@
 ---
 product: campaign
-title: Testadressen hinzufügen
-description: Testadressen hinzufügen
+title: Hinzufügen von Testadressen
+description: Hinzufügen von Testadressen
 feature: Seed Address
 exl-id: ae6eb4b0-b419-4661-9d63-e758f0242a0f
 source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '346'
 ht-degree: 100%
 
