@@ -1,17 +1,17 @@
 ---
 product: campaign
-title: Landingpage erstellen
-description: Landingpage erstellen
+title: Erstellen einer Landingpage
+description: Erstellen einer Landingpage
 feature: Landing Pages
 exl-id: 71c737c2-b0d6-4ae8-a5df-28a08dff82d7
 source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '767'
 ht-degree: 100%
 
 ---
 
-# Landingpage erstellen{#creating-a-landing-page}
+# Erstellen einer Landingpage{#creating-a-landing-page}
 
 ![](../../assets/common.svg)
 
