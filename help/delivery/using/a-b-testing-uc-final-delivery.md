@@ -1,11 +1,11 @@
 ---
 product: campaign
-title: Endgültigen Versand definieren
+title: Definieren des endgültigen Versandes
 description: Erfahren Sie anhand eines speziellen Anwendungsbeispiels, wie Sie A/B-Tests durchführen
 feature: A/B Testing
 exl-id: bc23a444-a872-48fb-8bba-64b301541089
 source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '118'
 ht-degree: 100%
 
