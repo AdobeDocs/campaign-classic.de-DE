@@ -1,17 +1,17 @@
 ---
 product: campaign
-title: Felder zu einem Web-Formular hinzufügen
-description: Felder zu einem Web-Formular hinzufügen
+title: Hinzufügen von Feldern zu einem Web-Formular
+description: Hinzufügen von Feldern zu einem Web-Formular
 feature: Web Forms, Landing Pages
 exl-id: 827b6575-7206-4dfc-b2c6-b95a6d5730b1
 source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2461'
 ht-degree: 100%
 
 ---
 
-# Felder zu einem Web-Formular hinzufügen{#adding-fields-to-a-web-form}
+# Hinzufügen von Feldern zu einem Web-Formular{#adding-fields-to-a-web-form}
 
 ![](../../assets/common.svg)
 
@@ -365,7 +365,7 @@ Sie können ein Upload-Feld zu einer Seite hinzufügen. Diese Funktion kann z. B
 
 Um ein Upload-Feld in eine Formularseite einzufügen, wählen Sie in der Symbolleiste des Seiteneditors die Schaltfläche **[!UICONTROL Erweiterte Steuerelemente > Datei...]** aus.
 
-Standardmäßig werden die hochgeladenen Dateien in Ressourcendateien gespeichert, die über das Menü **[!UICONTROL Ressourcen > Online > Öffentliche Ressourcen]** zugänglich sind. Sie können ein Skript verwenden, um dieses Verhalten zu ändern. Dieses Skript kann die in der [Campaign JSAPI-Dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=de) definierten Funktionen verwenden, einschließlich derjenigen zur Dateibearbeitung.
+Standardmäßig werden die hochgeladenen Dateien in Ressourcendateien gespeichert, die über das Menü **[!UICONTROL Ressourcen > Online > Öffentliche Ressourcen]** zugänglich sind. Sie können ein Script verwenden, um dieses Verhalten zu ändern. Dieses Script kann die in der [Campaign JSAPI-Dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=de) definierten Funktionen verwenden, einschließlich derjenigen zur Dateibearbeitung.
 
 Sie können den Link zu diesen Dateien in einer lokalen Variablen oder in einem Datenbankfeld speichern. Beispielsweise können Sie das Empfängerschema erweitern und einen Link zu dateibasierten Ressourcen hinzufügen.
 
