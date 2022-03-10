@@ -5,9 +5,9 @@ description: Versandberichte
 feature: Reporting
 exl-id: 74feb13f-0994-4a6a-ae4f-2538b07cc9c0
 source-git-commit: 64d97c7879320296a5f8efc5bb5bc2bea8663c08
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1636'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -63,7 +63,7 @@ Dieser Bericht enthält die wichtigsten Indikatoren, die die Verfolgung des Empf
 >
 >Die Prozentsätze werden in Bezug auf die erfolgreich zugestellten Nachrichten berechnet.
 
-* **[!UICONTROL Unique Opens der erreichten Population]** : Schätzung der Zielgruppenempfänger, die mindestens einmal eine Nachricht geöffnet haben. Klicks auf getrackte URLs werden berücksichtigt, da E-Mails geöffnet werden müssen, um auf einen Link zu klicken.
+* **[!UICONTROL Unterschiedene Öffnungen für die erreichte Population]**: Schätzung der Anzahl der Zielgruppenempfänger, die eine Nachricht mindestens einmal geöffnet haben. Klicks auf getrackte URLs werden berücksichtigt, da E-Mails geöffnet werden müssen, damit auf einen Link geklickt werden kann.
 * **[!UICONTROL Summe der Öffnungen in Bezug auf die erreichte Population]**: Schätzung der Gesamt-Öffnungszahl durch Zielgruppenempfänger.
 * **[!UICONTROL Klicks auf den Abmelde-Link]**: Anzahl der Klicks auf den Abmelde-Link.
 * **[!UICONTROL Klicks auf den Mirrorseite-Link]**: Anzahl der Klicks auf den Mirrorseite-Link. Um berücksichtigt zu werden, muss der Link im Versand-Assistenten als solcher definiert worden sein (getrackte URLs). Weiterführende Informationen dazu finden Sie auf dieser [Seite](../../delivery/using/about-delivery-monitoring.md).
