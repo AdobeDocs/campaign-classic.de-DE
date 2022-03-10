@@ -1,13 +1,13 @@
 ---
 product: campaign
-title: Anwendungsfall - E-Mail-Versand erstellen
-description: Anwendungsfall - E-Mail-Versand erstellen
+title: 'Anwendungsfall: Erstellen eines E-Mail-Versands'
+description: 'Anwendungsfall: Erstellen eines E-Mail-Versands'
 feature: Web Apps, Web Forms, Landing Pages
 exl-id: e2679f12-459b-466d-9c82-60a28363b104
 source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '783'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
