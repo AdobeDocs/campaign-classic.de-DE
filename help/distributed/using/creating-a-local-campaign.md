@@ -1,17 +1,17 @@
 ---
 product: campaign
-title: Lokale Kampagnen erstellen
-description: Lokale Kampagnen erstellen
+title: Erstellen einer lokalen Kampagne
+description: Erstellen einer lokalen Kampagne
 feature: Distributed Marketing
 exl-id: 17b5865a-5e04-4b3b-8b6a-12d5c1a9c1da
 source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1696'
 ht-degree: 100%
 
 ---
 
-# Lokale Kampagnen erstellen{#creating-a-local-campaign}
+# Erstellen einer lokalen Kampagne{#creating-a-local-campaign}
 
 ![](../../assets/v7-only.svg)
 
