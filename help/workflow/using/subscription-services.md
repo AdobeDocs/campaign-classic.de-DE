@@ -5,7 +5,7 @@ description: Erfahren Sie mehr über die Workflow-Aktivität "Anmeldedienste".
 feature: Workflows, Targeting Activity, Subscription Services Activity
 exl-id: 1b526d1c-4a33-45a1-98f4-dcb803c8d228
 source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '427'
 ht-degree: 100%
 
