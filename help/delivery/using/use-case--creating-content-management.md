@@ -5,7 +5,7 @@ description: '„Anwendungsfall: Erstellen des Content-Managements“'
 feature: Delivery Templates
 exl-id: b0d1cf0e-656e-4d24-9a31-16fef4cd40d0
 source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1216'
 ht-degree: 100%
 
@@ -102,7 +102,7 @@ Gehen Sie wie folgt vor, um ein Datenschema zu erstellen:
    <td> Title<br /> </td> 
    <td> Attribut<br /> </td> 
    <td> String <br /> </td> 
-   <td> Titel<br /> </td> 
+   <td> Title<br /> </td> 
   </tr> 
   <tr> 
    <td> Untertitel<br /> </td> 
