@@ -1,11 +1,11 @@
 ---
 product: campaign
-title: Neue Web-Anwendung erstellen
-description: Neue Web-Anwendung erstellen
+title: Erstellen eines neuen Web-Programms
+description: Erstellen eines neuen Web-Programms
 feature: Web Apps
 exl-id: 5ccf5a21-48aa-4c0d-8cc8-457eb07d9f74
 source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '364'
 ht-degree: 100%
 
