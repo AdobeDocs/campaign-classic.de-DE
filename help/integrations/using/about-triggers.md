@@ -6,9 +6,9 @@ audience: integrations
 content-type: reference
 exl-id: 0e337620-a49f-4e14-8c67-9279d74736f1
 source-git-commit: 0a59b0dbdbe70cf8993ce7153b8f3c049c1f1108
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '235'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 88%
 
 >[!CAUTION]
 >
->Diese Funktion ist im Lieferumfang des Produkts nicht verfügbar. Für diese Implementierung müssen Sie zunächst ein Ticket beim Support für Adoben öffnen. Anschließend können Sie die in diesem Abschnitt beschriebenen Schritte ausführen [page](../../integrations/using/configuring-pipeline.md#prerequisites).
+>Diese Funktion ist nicht im Produkt vorkonfiguriert. Für diese Implementierung müssen Sie zunächst ein Ticket beim Adobe-Support öffnen. Sie können dann die auf dieser [Seite](../../integrations/using/configuring-pipeline.md#prerequisites) beschriebenen Schritte durchführen.
 
 [!DNL Triggers] führen nach der Aktion eines Benutzers in einem kurzen Zeitraum Marketing-Aktionen aus. Die typische Reaktionszeit beträgt weniger als eine Stunde.
 
