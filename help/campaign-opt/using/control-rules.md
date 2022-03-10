@@ -5,7 +5,7 @@ description: Kontrollregeln
 feature: Typology Rules
 exl-id: 5a5f26f6-38da-4488-aadb-81fcb5359331
 source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '382'
 ht-degree: 100%
 
@@ -44,11 +44,11 @@ Gehen Sie wie folgt vor:
 
    ![](assets/campaign_opt_create_control_01.png)
 
-1. Geben Sie im Tab **[!UICONTROL Code]** wie folgt das Skript zur Anwendung der gewünschten Schwelle ein:
+1. Geben Sie im Tab **[!UICONTROL Code]** wie folgt das Script zur Anwendung der gewünschten Schwelle ein:
 
    ![](assets/campaign_opt_create_control_02.png)
 
-   Das Skript erzeugt nun eine Warnung, sobald die Zielgruppe des Versands 100 Empfänger übersteigt:
+   Das Script erzeugt nun eine Warnung, sobald die Zielgruppe des Versands 100 Empfänger übersteigt:
 
    ```
    if( delivery.FCP == false && delivery.properties.toDeliver > 100 ) { logWarning("Significant number of SMS to deliver (" + delivery.properties.toDeliver + "). Please make sure the target is correct.") return false; } return true
