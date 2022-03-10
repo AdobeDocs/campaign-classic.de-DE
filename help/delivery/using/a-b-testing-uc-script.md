@@ -1,25 +1,25 @@
 ---
 product: campaign
-title: Skript erstellen
+title: Erstellen des Scripts
 description: Erfahren Sie anhand eines speziellen Anwendungsbeispiels, wie Sie A/B-Tests durchführen
 feature: A/B Testing
 exl-id: 4143d1b7-0e2b-4672-ad57-e4d7f8fea028
 source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '337'
 ht-degree: 100%
 
 ---
 
-# Skript erstellen {#step-5--creating-the-script}
+# Script erstellen {#step-5--creating-the-script}
 
 ![](../../assets/common.svg)
 
-Die Auswahl der Inhaltsversion, die an die verbleibende Population gesendet wird, erfolgt mithilfe eines Skripts. Das Skript ruft die Information bezüglich der höchsten Öffnungsrate ab und kopiert den Inhalt der Siegerversion in den endgültigen Versand.
+Die Auswahl der Inhaltsversion, die an die verbleibende Population gesendet wird, erfolgt mithilfe eines Scripts. Das Script ruft die Information bezüglich der höchsten Öffnungsrate ab und kopiert den Inhalt der Siegerversion in den endgültigen Versand.
 
-## Skript-Beispiel {#example-of-a-script}
+## Script-Beispiel {#example-of-a-script}
 
-Das folgende Skript kann wie im Zielgruppenbestimmungs-Workflow verwendet werden. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](#implementation).
+Das folgende Script kann wie im Zielgruppenbestimmungs-Workflow verwendet werden. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](#implementation).
 
 ```
  // query the database to find the winner (best open rate)
@@ -65,16 +65,16 @@ Das folgende Skript kann wie im Zielgruppenbestimmungs-Workflow verwendet werden
    vars.deliveryId = delivery.id
 ```
 
-Eine detaillierte Erklärung des Skripts finden Sie in [diesem Abschnitt](#details-of-the-script).
+Eine detaillierte Erklärung des Scripts finden Sie in [diesem Abschnitt](#details-of-the-script).
 
 ## Implementierung {#implementation}
 
 1. Öffnen Sie die **[!UICONTROL JavaScript-Code]**-Aktivität.
-1. Kopieren Sie das in [Skript-Beispiel](#example-of-a-script) angebotene Skript in das Fenster **[!UICONTROL JavaScript-Code]**.
+1. Kopieren Sie das in [Script-Beispiel](#example-of-a-script) angebotene Script in das Fenster **[!UICONTROL JavaScript-Code]**.
 
    ![](assets/use_case_abtesting_configscript_002.png)
 
-1. Geben Sie im Feld **[!UICONTROL Titel]** den Skript-Titel ein, d. h.
+1. Geben Sie im Feld **[!UICONTROL Titel]** den Script-Titel ein, d. h.
 
    ```
    <%= vars.deliveryId %>
@@ -85,11 +85,11 @@ Eine detaillierte Erklärung des Skripts finden Sie in [diesem Abschnitt](#detai
 1. Schließen Sie die **[!UICONTROL JavaScript-Code]**-Aktivität.
 1. Speichern Sie den Workflow.
 
-## Skript-Details {#details-of-the-script}
+## Script-Details {#details-of-the-script}
 
-Im Folgenden werden die verschiedenen Skript-Abschnitte und deren Funktionsweise erläutert.
+Im Folgenden werden die verschiedenen Script-Abschnitte und deren Funktionsweise erläutert.
 
-* Der erste Abschnitt des Skripts ist eine Abfrage. Mit dem **queryDef**-Befehl werden aus der Tabelle **NmsDelivery** die durch die Ausführung des Workflows erstellten Sendungen abgerufen und nach ihren geschätzten Öffnungsraten geordnet. Im Anschluss werden die Informationen des Versands abgerufen, der die beste Öffnungsrate erzielt hat.
+* Der erste Abschnitt des Scripts ist eine Abfrage. Mit dem **queryDef**-Befehl werden aus der Tabelle **NmsDelivery** die durch die Ausführung des Workflows erstellten Sendungen abgerufen und nach ihren geschätzten Öffnungsraten geordnet. Im Anschluss werden die Informationen des Versands abgerufen, der die beste Öffnungsrate erzielt hat.
 
    ```
    // query the database to find the winner (best open rate)
@@ -158,7 +158,7 @@ Im Folgenden werden die verschiedenen Skript-Abschnitte und deren Funktionsweise
 
 ## Andere Auswahlkriterien {#other-selection-criteria}
 
-Im zuvor dargestellten Beispiel wird die endgültige Version anhand der Öffnungsraten der Testversionen bestimmt. Es besteht jedoch die Möglichkeit, andere Kriterien zu verwenden und das Skript entsprechend anzupassen:
+Im zuvor dargestellten Beispiel wird die endgültige Version anhand der Öffnungsraten der Testversionen bestimmt. Es besteht jedoch die Möglichkeit, andere Kriterien zu verwenden und das Script entsprechend anzupassen:
 
 * Höchste Klickrate: `[indicators/@recipientClickRatio]`,
 * Höchste Reaktionsrate (Öffnung der E-Mail und Klicks in der Nachricht): `[indicators/@reactivity]`,
