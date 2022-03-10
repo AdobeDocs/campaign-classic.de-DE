@@ -1,21 +1,21 @@
 ---
 product: campaign
-title: Seitenreihenfolge eines Webformulars definieren
-description: Seitenreihenfolge eines Webformulars definieren
+title: Definieren der Seitenreihenfolge von Web-Formularen
+description: Definieren der Seitenreihenfolge von Web-Formularen
 feature: Web Forms
 exl-id: c5b5c398-c13b-4ebe-88b2-8ff84741422e
 source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '739'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Seitenreihenfolge eines Webformulars definieren{#defining-web-forms-page-sequencing}
+# Definieren der Seitenreihenfolge von Web-Formularen{#defining-web-forms-page-sequencing}
 
 ![](../../assets/common.svg)
 
-Das Formular kann eine oder mehrere Seiten enthalten. Es wird mithilfe eines Diagramms erstellt, das die Abfolge von Seiten, Tests, Skriptausführung, Sprüngen zu Seiten und Aufzeichnungsschritten ermöglicht. Der globale Designmodus für Diagramme ist identisch mit dem für einen Campaign-Workflow.
+Das Formular kann eine oder mehrere Seiten enthalten. Es wird mithilfe eines Diagramms erstellt, das die Abfolge von Seiten, Tests, Scriptausführung, Sprüngen zu Seiten und Aufzeichnungsschritten ermöglicht. Der globale Designmodus für Diagramme ist identisch mit dem für einen Campaign-Workflow.
 
 ## Die Schaltflächen &quot;Weiter&quot; und &quot;Zurück&quot; {#about-previous-page-and-next-page}
 
@@ -109,9 +109,9 @@ Definieren Sie dann die Seitenreihenfolge, wenn eine der Bedingungen wahr ist, z
 
 Sie können die Seitenreihenfolge auch gemäß den Initialisierungsparametern des Webformulars oder den in der Datenbank gespeicherten Werten festlegen. Siehe [Parameter der Formular-URL](defining-web-forms-properties.md#form-url-parameters).
 
-## Skripts hinzufügen {#adding-scripts}
+## Scripts hinzufügen {#adding-scripts}
 
-Mit dem Objekt **[!UICONTROL Skript]** können Sie ein JavaScript-Element direkt einfügen, z. B. um den Wert eines Feldes zu ändern, um Daten aus der Datenbank abzurufen oder um eine Adobe Campaign-API aufzurufen.
+Mit dem Objekt **[!UICONTROL Script]** können Sie ein JavaScript-Element direkt einfügen, z. B. um den Wert eines Feldes zu ändern, um Daten aus der Datenbank abzurufen oder um eine Adobe Campaign-API aufzurufen.
 
 ## Endseite personalisieren {#personalizing-the-end-page}
 
