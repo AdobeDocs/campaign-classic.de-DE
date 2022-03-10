@@ -1,17 +1,17 @@
 ---
 product: campaign
-title: Inhaltsvorlage verwenden
-description: Inhaltsvorlage verwenden
+title: Verwenden einer Inhaltsvorlage
+description: Verwenden einer Inhaltsvorlage
 feature: Templates
 exl-id: e43dd68e-2e95-4367-9029-4622fbcb1759
 source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '439'
 ht-degree: 100%
 
 ---
 
-# Inhaltsvorlage verwenden{#using-a-content-template}
+# Verwenden einer Inhaltsvorlage{#using-a-content-template}
 
 ![](../../assets/common.svg)
 
