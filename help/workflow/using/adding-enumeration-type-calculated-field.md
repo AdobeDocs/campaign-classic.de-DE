@@ -1,20 +1,20 @@
 ---
 product: campaign
-title: Berechnetes Feld vom Typ Auflistung hinzufügen
-description: Erfahren Sie, wie Sie ein berechnetes Auflistungsfeld hinzufügen
+title: Hinzufügen eines berechneten Felds vom Typ "Aufzählung"
+description: Erfahren Sie, wie Sie ein berechnetes Feld vom Typ "Aufzählung" hinzufügen
 audience: workflow
 content-type: reference
 topic-tags: use-cases
 feature: Workflows, Data Management
 exl-id: 3f606d3a-0af5-4315-bb08-1b21a71f1721
 source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '495'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Berechnetes Feld vom Typ Auflistung hinzufügen {#adding-an-enumeration-type-calculated-field}
+# Hinzufügen eines berechneten Felds vom Typ &quot;Aufzählung&quot; {#adding-an-enumeration-type-calculated-field}
 
 ![](../../assets/common.svg)
 
