@@ -1,11 +1,11 @@
 ---
 product: campaign
 title: Abfrage mit Gruppierungsverwaltung
-description: Erfahren Sie, wie Sie mit Gruppierungsbedingungen Abfragen durchführen können
+description: Erfahren Sie, wie Sie Abfragen mit Hilfe der Gruppierungsverwaltung durchführen können
 feature: Query Editor
 exl-id: 23bccb48-60ab-46c9-be26-2fa35243d61e
 source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '309'
 ht-degree: 100%
 
