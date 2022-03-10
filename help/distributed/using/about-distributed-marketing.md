@@ -1,11 +1,11 @@
 ---
 product: campaign
-title: Erste Schritte mit dezentralem Marketing
+title: Erste Schritte mit verteiltem Marketing
 description: Erste Schritte mit dezentralem Marketing
 feature: Distributed Marketing
 exl-id: c166409b-e040-491e-840a-a41310935d75
 source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1180'
 ht-degree: 100%
 
