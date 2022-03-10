@@ -1,17 +1,17 @@
 ---
 product: campaign
-title: Inhalte bearbeiten
-description: Inhalte bearbeiten
+title: Bearbeiten von Inhalten
+description: Bearbeiten von Inhalten
 feature: Web Apps, Web Forms, Landing Pages
 exl-id: 968430d6-b1dd-47f8-8b31-39aaa18bc05c
 source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1239'
 ht-degree: 100%
 
 ---
 
-# Inhalte bearbeiten{#editing-content}
+# Bearbeiten von Inhalten{#editing-content}
 
 ![](../../assets/common.svg)
 
@@ -209,7 +209,7 @@ Mit dem Digital Content Editor können Sie **alle Arten von Bildern** bearbeiten
 
 >[!CAUTION]
 >
->Externe Dateien dürfen nicht in einem **Skript**-Tag der HTML-Seite aufgerufen werden. Diese Dateien werden nicht in den Adobe Campaign-Server importiert.
+>Externe Dateien dürfen nicht in einem **Script**-Tag der HTML-Seite aufgerufen werden. Diese Dateien werden nicht in den Adobe Campaign-Server importiert.
 
 ### Bild hinzufügen/löschen/duplizieren {#adding---deleting---duplicating-an-image}
 
