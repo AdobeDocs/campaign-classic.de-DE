@@ -5,7 +5,7 @@ description: Erfahren Sie mehr über die Workflow-Aktivität "SQL-Daten-Manageme
 feature: Workflows
 exl-id: cada78cb-658f-4b9e-8136-31c17cb1d82f
 source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '452'
 ht-degree: 100%
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 ![](../../assets/common.svg)
 
-Die Aktivität **SQL-Daten-Management** ermöglicht Ihnen das Schreiben eigener SQL-Skripts zum Erstellen und Auffüllen von Arbeitstabellen.
+Die Aktivität **SQL-Daten-Management** ermöglicht Ihnen das Schreiben eigener SQL-Scripts zum Erstellen und Auffüllen von Arbeitstabellen.
 
 ## Voraussetzungen {#prerequisites}
 
@@ -41,19 +41,19 @@ Vor der Konfiguration der Aktivität müssen folgende Voraussetzungen gegeben se
    >
    >Das Outbound-Schema ist unveränderlich und kann nicht bearbeitet werden.
 
-1. Fügen Sie das SQL-Skript hinzu.
+1. Fügen Sie das SQL-Script hinzu.
 
    >[!CAUTION]
    >
-   >Der Codierer des SQL-Skripts ist dafür verantwortlich, dass das SQL-Skript funktioniert und seine Referenzen (Feldnamen etc.) dem Outbound-Schema entsprechen.
+   >Der Codierer des SQL-Scripts ist dafür verantwortlich, dass das SQL-Script funktioniert und seine Referenzen (Feldnamen etc.) dem Outbound-Schema entsprechen.
 
-   Wenn Sie einen vorhandenen SQL-Code laden möchten, wählen Sie die Option **[!UICONTROL Der SQL-Code ist in einer in der Datenbank gespeicherten Entität enthalten]** aus. SQL-Skripts müssen im Menü **[!UICONTROL Administration]** / **[!UICONTROL Konfiguration]** / **[!UICONTROL SQL-Scripts]** erstellt und gespeichert werden.
+   Wenn Sie einen vorhandenen SQL-Code laden möchten, wählen Sie die Option **[!UICONTROL Der SQL-Code ist in einer in der Datenbank gespeicherten Entität enthalten]** aus. SQL-Scripts müssen im Menü **[!UICONTROL Administration]** / **[!UICONTROL Konfiguration]** / **[!UICONTROL SQL-Scripts]** erstellt und gespeichert werden.
 
-   Andernfalls können Sie Ihr SQL-Skript auch in den dafür vorgesehenen Bereich kopieren.
+   Andernfalls können Sie Ihr SQL-Script auch in den dafür vorgesehenen Bereich kopieren.
 
    ![](assets/sql_datamanagement.png)
 
-   Mithilfe der Aktivität können Sie die folgenden Variablen im Skript verwenden:
+   Mithilfe der Aktivität können Sie die folgenden Variablen im Script verwenden:
 
    * **activity.tableName**: SQL-Name der ausgehenden Arbeitstabelle.
    * **task.incomingTransitionByName(‘name’).tableName**: SQL-Name der Arbeitstabelle der zu verwendenden eingehenden Transition (die Transition wird durch den Namen identifiziert).
@@ -62,24 +62,24 @@ Vor der Konfiguration der Aktivität müssen folgende Voraussetzungen gegeben se
       >
       >Der Wert (&#39;name&#39;) entspricht dem Feld **[!UICONTROL Name]** in den Transition-Eigenschaften.
 
-1. Wenn das SQL-Skript bereits Befehle zum Erstellen einer ausgehenden Arbeitstabelle enthält, deselektieren Sie die Option **[!UICONTROL Arbeitstabelle automatisch erstellen]**. Andernfalls wird automatisch eine Arbeitstabelle erstellt, wenn der Workflow ausgeführt wird.
+1. Wenn das SQL-Script bereits Befehle zum Erstellen einer ausgehenden Arbeitstabelle enthält, deselektieren Sie die Option **[!UICONTROL Arbeitstabelle automatisch erstellen]**. Andernfalls wird automatisch eine Arbeitstabelle erstellt, wenn der Workflow ausgeführt wird.
 1. Wählen Sie **[!UICONTROL Ok]** aus, um die Konfiguration der Aktivität zu bestätigen.
 
 Die Aktivität ist jetzt konfiguriert und kann im Workflow ausgeführt werden.
 
 >[!CAUTION]
 >
->Nachdem die Aktivität ausgeführt wurde, ist die Anzahl der gezählten Datensätze in der ausgehenden Transition nur als Richtwert zu erachten. Dieser kann je nach Komplexität des SQL-Skripts variieren.
+>Nachdem die Aktivität ausgeführt wurde, ist die Anzahl der gezählten Datensätze in der ausgehenden Transition nur als Richtwert zu erachten. Dieser kann je nach Komplexität des SQL-Scripts variieren.
 >  
->Wenn die Aktivität erneut gestartet wird, wird das gesamte Skript unabhängig vom Ausführungsstatus von vorn ausgeführt.
+>Wenn die Aktivität erneut gestartet wird, wird das gesamte Script unabhängig vom Ausführungsstatus von vorn ausgeführt.
 
-## Muster für SQL-Skripts {#sql-script-samples}
+## Muster für SQL-Scripts {#sql-script-samples}
 
 >[!NOTE]
 >
->Die Skript-Muster in diesem Abschnitt müssen unter PostgreSQL ausgeführt werden.
+>Die Script-Muster in diesem Abschnitt müssen unter PostgreSQL ausgeführt werden.
 
-Mit diesem Skript können Sie eine Arbeitstabelle erstellen und Daten darin einfügen.
+Mit diesem Script können Sie eine Arbeitstabelle erstellen und Daten darin einfügen.
 
 ```
 CREATE UNLOGGED TABLE <%= activity.tableName %> (
@@ -96,7 +96,7 @@ FROM nmsRecipient
 GROUP BY iRecipientId, sFirstName, sMiddleName, sLastName, sEmail;
 ```
 
-Mit diesem Skript können Sie eine CTAS-Operation ausführen (CREATE TABLE AS SELECT) und einen Arbeitstabellenindex erstellen:
+Mit diesem Script können Sie eine CTAS-Operation ausführen (CREATE TABLE AS SELECT) und einen Arbeitstabellenindex erstellen:
 
 ```
 CREATE TABLE <%= activity.tableName %>
@@ -110,7 +110,7 @@ CREATE INDEX ON <%= activity.tableName %> (sEmail);
 ANALYZE <%= activity.tableName %> (sEmail);
 ```
 
-Mit diesem Skript können Sie zwei Arbeitstabellen verbinden:
+Mit diesem Script können Sie zwei Arbeitstabellen verbinden:
 
 ```
 CREATE TABLE <%= activity.tableName %>
