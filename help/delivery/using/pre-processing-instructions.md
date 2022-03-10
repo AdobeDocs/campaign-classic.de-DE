@@ -5,7 +5,7 @@ description: Erfahren Sie mehr über die Vorab-Bearbeitungsanweisung, mit der Si
 feature: Monitoring
 exl-id: 9d3f5c74-377a-4e24-81e5-bb605f69cf8a
 source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '642'
 ht-degree: 100%
 
@@ -75,10 +75,10 @@ Wobei:
 Objekt kann sein:
    * **[!DNL delivery]**: für den aktuellen Versand (siehe Details und Einschränkungen im Unterabschnitt unten).
    * **[!DNL provider]**: für den aktuellen Versand-Provider bzw. das aktuelle Versand-Routing (nms:externalAccount).
-   * Ein zusätzliches Skriptobjekt: wenn ein Objekt im Kontext geladen wird: **Eigenschaften** > **Personalisierung** > **Objekte im Ausführungskontext hinzufügen**.
+   * Ein zusätzliches Scriptobjekt: wenn ein Objekt im Kontext geladen wird: **Eigenschaften** > **Personalisierung** > **Objekte im Ausführungskontext hinzufügen**.
    * Element der foreach-Schleife: siehe Abschnitt [Foreach](#foreach) weiter unten.
 * **[!DNL xpath]**: Pfad (XPath) des Felds.
-* **[!DNL index]** (optional): wenn **[!DNL object]** ein Array ist (für zusätzliche Skriptobjekte), Elementindex im Array (beginnt bei 0).
+* **[!DNL index]** (optional): wenn **[!DNL object]** ein Array ist (für zusätzliche Scriptobjekte), Elementindex im Array (beginnt bei 0).
 
 ### [!DNL delivery] Objekt {#delivery-object}
 
@@ -141,7 +141,7 @@ Syntax:
 
 Wobei:
 
-* **[!DNL object]**: Name des Objekts, von dem aus gestartet werden soll, normalerweise ein zusätzliches Skriptobjekt, es kann sich jedoch auch um einen Versand handeln.
+* **[!DNL object]**: Name des Objekts, von dem aus gestartet werden soll, normalerweise ein zusätzliches Scriptobjekt, es kann sich jedoch auch um einen Versand handeln.
 * **[!DNL xpath]** (optional): Pfad (XPath) der Kollektion, über die eine Schleife ausgeführt werden soll. Der Standardwert ist &quot;.&quot;, d. h., das Objekt ist das Array, über das eine Schleife ausgeführt werden soll.
 * **[!DNL index]** (optional): wenn &quot;xpath&quot; nicht &quot;.&quot; und &quot;object&quot; selbst ein Array ist, Elementindex des Objekts (beginnt bei 0).
 * **[!DNL item]** (optional): Name eines neuen Objekts, auf das mit dem Wert &quot;&lt;%@&quot; innerhalb der foreach-Schleife zugegriffen werden kann. Standardeinstellung mit dem Link-Namen im Schema.
@@ -165,7 +165,7 @@ Bei dieser Lösung werden die Links zu allen Artikeln ohne Differenzierung verfo
 
 Die Lösung ist:
 
-1. Laden Sie alle möglichen Artikel in einem zusätzlichen Skript-Array des Versands – articleList[] – vorab, was bedeutet, dass eine endliche Anzahl möglicher Artikel vorhanden sein muss.
+1. Laden Sie alle möglichen Artikel in einem zusätzlichen Script-Array des Versands – articleList[] – vorab, was bedeutet, dass eine endliche Anzahl möglicher Artikel vorhanden sein muss.
 1. Schreiben Sie eine JavaScript-Funktion am Anfang des Inhalts.
 
    ```
