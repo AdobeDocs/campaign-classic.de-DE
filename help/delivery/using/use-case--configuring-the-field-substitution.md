@@ -1,11 +1,11 @@
 ---
 product: campaign
-title: '"Anwendungsbeispiel: Konfigurieren der Feld-Ersetzung"'
-description: '"Anwendungsbeispiel: Konfigurieren der Feld-Ersetzung"'
+title: '"Anwendungsbeispiel: Konfigurieren der Wertersetzung"'
+description: '"Anwendungsbeispiel: Konfigurieren der Wertersetzung"'
 feature: Seed Address
 exl-id: 3f567b2d-6f98-4831-af84-7db17fd12c6e
 source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '454'
 ht-degree: 100%
 
