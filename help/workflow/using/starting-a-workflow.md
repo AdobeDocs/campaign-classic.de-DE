@@ -5,9 +5,9 @@ description: Erfahren Sie, wie Sie einen Workflow starten, und lernen Sie die Sy
 feature: Workflows
 exl-id: d345ba62-c2fb-43df-a2a1-e9e4292d301a
 source-git-commit: 9126e2cc088ef0e5761cc20bd19980d323f3a3ea
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '879'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ Die Symbolleiste wird in diesem [Abschnitt](../../campaign/using/marketing-campa
 
    >[!IMPORTANT]
    >
-   >Das Anhalten eines Workflows ist ein asynchroner Prozess: Die Anfrage wird registriert und der oder die Workflow-Server brechen die laufenden Vorgänge ab. Das Anhalten einer Workflow-Instanz kann daher einige Zeit in Anspruch nehmen, insbesondere wenn der Workflow auf mehreren Servern ausgeführt wird, von denen jeder die Kontrolle übernehmen muss, um die laufenden Aufgaben abzubrechen. Um Probleme zu vermeiden, warten Sie, bis der Stopp-Vorgang abgeschlossen ist, und führen Sie nicht mehrere Stopp-Anfragen für denselben Workflow durch.
+   >Das Anhalten eines Workflows ist ein asynchroner Prozess: Die Anfrage wird registriert und der oder die Workflow-Server brechen die laufenden Vorgänge ab. Das Anhalten einer Workflow-Instanz kann daher einige Zeit in Anspruch nehmen, insbesondere wenn der Workflow auf mehreren Servern ausgeführt wird, von denen jeder die laufenden Aufgaben abbrechen muss. Um Probleme zu vermeiden, warten Sie, bis der Stopp-Vorgang abgeschlossen ist, und führen Sie nicht mehrere Stopp-Anfragen für denselben Workflow durch.
 
 * **[!UICONTROL Neu starten]**
 
