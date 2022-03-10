@@ -5,7 +5,7 @@ description: Erstellen einer Tabelle
 feature: Reporting
 exl-id: 05f76bdf-6dcd-4360-9e72-0ba6a4dd0d5e
 source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2643'
 ht-degree: 100%
 
@@ -25,7 +25,7 @@ Eine **[!UICONTROL Liste mit Gruppierung]** ermöglicht es, bestimmte Daten in d
 
 >[!CAUTION]
 >
->Der die Tabelle enthaltenden **[!UICONTROL Seite]**-Aktivität muss eine **[!UICONTROL Abfrage]**- oder **[!UICONTROL Script]**-Aktivität vorangehen, um die Daten abzurufen, die im Bericht analysiert werden sollen. Weitere Informationen zu diesen Aktivitäten finden Sie unter [Sammeln von Daten zur Analyse](../../reporting/using/collecting-data-to-analyze.md) und [Skript-Aktivität](../../reporting/using/advanced-functionalities.md#script-activity).
+>Der die Tabelle enthaltenden **[!UICONTROL Seite]**-Aktivität muss eine **[!UICONTROL Abfrage]**- oder **[!UICONTROL Script]**-Aktivität vorangehen, um die Daten abzurufen, die im Bericht analysiert werden sollen. Weitere Informationen zu diesen Aktivitäten finden Sie unter [Sammeln von Daten zur Analyse](../../reporting/using/collecting-data-to-analyze.md) und [Script-Aktivität](../../reporting/using/advanced-functionalities.md#script-activity).
 
 ### Grundprinzip {#operating-principle}
 
