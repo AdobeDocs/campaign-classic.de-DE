@@ -1,11 +1,11 @@
 ---
 product: campaign
-title: Erstellen eines Zielgruppenbestimmungs-Workflows
+title: Erstellen eines Zielgruppen-Workflows
 description: Erfahren Sie anhand eines speziellen Anwendungsbeispiels, wie Sie A/B-Tests durchführen
 feature: A/B Testing
 exl-id: aa21fa33-aef9-484a-b454-0cd5a6868a98
 source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '163'
 ht-degree: 100%
 
