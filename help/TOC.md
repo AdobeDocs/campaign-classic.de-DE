@@ -6,10 +6,10 @@ title: Campaign Classic v7 – Handbuch
 user-guide-description: Mit Adobe Campaign können Sie umfangreiche Kundendaten verwenden, um dynamische Kampagnen, die Kunden tatsächlich wünschen, zu erstellen, zu koordinieren und bereitzustellen. Über E-Mail, mobile Kanäle, Offline-Kanäle und mehr.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: c54102b2ec32fbea89ce41dd3c9fedb98e612996
-workflow-type: ht
-source-wordcount: '2555'
-ht-degree: 100%
+source-git-commit: d891a235002d465f3b00fafa375d87d42ebafaa6
+workflow-type: tm+mt
+source-wordcount: '2548'
+ht-degree: 99%
 
 ---
 
@@ -502,7 +502,7 @@ ht-degree: 100%
    + Fortgeschrittene Optionen {#advanced-management}
       + [Workflow-Eigenschaften](workflow/using/workflow-properties.md)
       + [Erweiterte Parameter](workflow/using/advanced-parameters.md)
-      + [JavaScript-Skripte und -Vorlagen](workflow/using/javascript-scripts-and-templates.md)
+      + [JavaScript-Scripte und -Vorlagen](workflow/using/javascript-scripts-and-templates.md)
       + [Beispiele für JavaScript-Code in Workflows](workflow/using/javascript-in-workflows.md)
       + [Auf eine externe Datenbank zugreifen](workflow/using/accessing-an-external-database--fda-.md)
       + [Verwalten von Berechtigungen](workflow/using/managing-rights.md)
@@ -585,14 +585,12 @@ ht-degree: 100%
    + [Über Social Marketing](social/using/about-social-marketing.md)
    + Konfiguration {#configuration}
       + [Workflows starten](social/using/starting-workflows.md)
-      + [Auf Facebook-Pinnwänden veröffentlichen](social/using/publishing-on-facebook-walls.md)
       + [Facebook-Anwendung erstellen](social/using/creating-a-facebook-application.md)
       + [Veröffentlichung auf Twitter konfigurieren](social/using/configuring-publishing-on-twitter.md)
-   + In Social Media veröffentlichen {#publishing-on-facebook-twitter}
-      + [Erste Schritte mit Social Media](social/using/overview.md)
-      + [Auf Facebook veröffentlichen](social/using/publishing-on-facebook.md)
-      + [Auf Twitter veröffentlichen](social/using/publishing-on-twitter.md)
-   + Anhänge {#annexes}
+   + Veröffentlichen auf Twitter {#publishing-on-facebook-twitter}
+      + [Erste Schritte mit Twitter](social/using/overview.md)
+      + [Veröffentlichen auf Twitter](social/using/publishing-on-twitter.md)
+   + Facebook-Kontakte gewinnen {#annexes}
       + [Beispiele für Facebook-Anwendungen](social/using/examples-of-facebook-apps.md)
       + [Tracking](social/using/tracking.md)
 + Handbuch zur Installation und Konfiguration {#installing-campaign-classic}
