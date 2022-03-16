@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: 9d8eae6b9c31d98d5e7e14b61f3abcf46311304d
-workflow-type: ht
-source-wordcount: '917'
-ht-degree: 100%
+source-git-commit: 329cf80ff021322e57a63cf86f4b4e206f6385d1
+workflow-type: tm+mt
+source-wordcount: '924'
+ht-degree: 97%
 
 ---
 
@@ -43,7 +43,7 @@ Als gehosteter Kunde profitieren Sie automatisch von Aktualisierungen mit der ne
 
 Um eine stabile Konfiguration sicherzustellen, sollten Sie **denselben stabilen Build** auf allen Servern installieren, die dieselbe Client-Konfiguration besitzen.
 
-Darüber hinaus muss die Client-Konsole denselben Build haben wie die Server-Instanz.
+Sofern in den Versionshinweisen nicht anders angegeben, muss die Client-Konsole außerdem aktiviert sein. **denselben Build** als Serverinstanz.
 
 Um Ihre Implementierung auf dem neuesten Stand zu halten, lesen Sie bei jeder neuen Version die Seiten [Eingestellte und entfernte Funktionen](../../rn/using/deprecated-features.md) und [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md).
 
