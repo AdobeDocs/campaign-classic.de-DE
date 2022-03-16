@@ -1,16 +1,16 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Adobe Analytics-Connector
-description: Erfahren Sie mehr über den Adobe Analytics-Connector. Bereitstellung
+title: Adobe Analytics-Connector-Bereitstellung
+description: Erfahren Sie mehr über die Adobe Analytics-Connector-Bereitstellung
 feature: Overview
 role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
-source-git-commit: 9ee95f6d60500b18e242c6d648488615f47a4459
-workflow-type: ht
-source-wordcount: '746'
-ht-degree: 100%
+source-git-commit: 36b10a49fe92853f98beeb9e7d2fea3f59b10b6f
+workflow-type: tm+mt
+source-wordcount: '747'
+ht-degree: 98%
 
 ---
 
@@ -158,5 +158,4 @@ Ihr Produktprofil ist jetzt konfiguriert. Anschließend müssen Sie das Adobe I/
    ```
    nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID/<Client_Secret>/<Base64_encoded_Private_Key>
    ```
-
 Sie können jetzt mit der Verwendung des Analytics-Connectors beginnen und Ihr Kundenverhalten verfolgen.

@@ -1,15 +1,15 @@
 ---
 product: campaign
-title: Datenschutz und Einverständniserklärung
-description: Weitere Informationen zu Datenschutz und Einverständniserklärung.
+title: Häufig gestellte Fragen zu Datenschutz und Einverständniserklärung
+description: Häufig gestellte Fragen zu Datenschutz und Einverständniserklärung
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: ce2c90cd-46d9-4365-8013-5c1273b6c176
-source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
+source-git-commit: 36b10a49fe92853f98beeb9e7d2fea3f59b10b6f
 workflow-type: tm+mt
-source-wordcount: '796'
-ht-degree: 100%
+source-wordcount: '795'
+ht-degree: 98%
 
 ---
 
