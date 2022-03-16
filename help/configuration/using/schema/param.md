@@ -1,12 +1,12 @@
 ---
 product: campaign
-title: Schemaelemente und -attribute
+title: Schemaelemente und Attribute - Parameter-Element
 description: param-Element
 exl-id: d8960a2e-6900-4346-9f06-e7dd9d7b5139
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
 workflow-type: tm+mt
-source-wordcount: '175'
-ht-degree: 8%
+source-wordcount: '177'
+ht-degree: 7%
 
 ---
 

@@ -1,14 +1,14 @@
 ---
 product: campaign
-title: Allgemeine Architektur
-description: Erfahren Sie, wie Sie Campaign Classic installieren und konfigurieren können.
+title: Allgemeine Architektur des Campaign Classic
+description: Erfahren Sie, wie Sie Campaign Classic installieren und konfigurieren können
 audience: installation
 content-type: reference
 topic-tags: architecture-and-hosting-models
 exl-id: 04e6dc17-427b-4745-84cc-bf45c03dbf81
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
 workflow-type: tm+mt
-source-wordcount: '1340'
+source-wordcount: '1342'
 ht-degree: 51%
 
 ---

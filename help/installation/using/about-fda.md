@@ -1,13 +1,13 @@
 ---
 product: campaign
-title: Zugriff auf externe Datenbanken
+title: Erste Schritte mit Federated Data Access
 description: Erfahren Sie, wie Sie Daten in einer externen Datenbank aufrufen und verarbeiten können
 feature: Federated Data Access
 exl-id: 9d8d1e9c-63e4-40c4-8338-b921d08ea405
-source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
+source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
 workflow-type: tm+mt
-source-wordcount: '161'
-ht-degree: 50%
+source-wordcount: '163'
+ht-degree: 47%
 
 ---
 

@@ -1,15 +1,12 @@
 ---
 product: campaign
-title: Zugriff auf externe Datenbanken
-description: Zugriff auf externe Datenbanken
-audience: platform
-content-type: reference
-topic-tags: connectors
+title: Erstellen des Datenschemas für FDA
+description: Erfahren Sie, wie Sie das Datenschema für FDA erstellen
 exl-id: 8702499b-1700-4d1f-a0e0-f7a9dfb4b88f
-source-git-commit: d2d0ff575edbee18febb5ec895fcec1e0ae34de7
+source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
 workflow-type: tm+mt
-source-wordcount: '192'
-ht-degree: 45%
+source-wordcount: '199'
+ht-degree: 40%
 
 ---
 
