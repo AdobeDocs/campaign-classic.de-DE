@@ -4,10 +4,10 @@ title: Konfigurieren und Durchführen des Versands
 description: Erfahren Sie, wie Sie den Versand konfigurieren und versenden
 feature: Channel Configuration
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
-workflow-type: ht
-source-wordcount: '1622'
-ht-degree: 100%
+source-git-commit: dfee069240c590846f7dda3134c07ad3ec514a26
+workflow-type: tm+mt
+source-wordcount: '1652'
+ht-degree: 94%
 
 ---
 
@@ -33,13 +33,16 @@ Vor der Durchführung des Versands können Sie im Tab **[!UICONTROL Versand]** d
    >
    >Bei Duplizierung eines Versands wird dieser Parameter automatisch auf 0 zurückgesetzt.
 
-* **[!UICONTROL In mehreren Schüben versenden]**: Weitere Informationen hierzu finden Sie unter [Versenden in mehreren Schüben](#sending-using-multiple-waves).
+* **[!UICONTROL In mehreren Schüben versenden]**: Verwenden Sie diese Option, um Ihre Nachrichten in mehreren Schüben und nicht an Ihre gesamte Zielgruppe zu senden. Konfigurieren Sie die Anzahl der Batches und ihren Anteil. [Weitere Informationen](#sending-using-multiple-waves).
 
-* **[!UICONTROL SMTP-Versand testen]**: Mit dieser Option können Sie das Senden über SMTP testen. Der Versand wird bis zur Verbindung mit dem SMTP-Server verarbeitet, jedoch nicht gesendet.
+* **[!UICONTROL SMTP-Versand testen]**: Verwenden Sie diese Option, um den Versand per SMTP zu testen. Der Versand wird bis zur Verbindung mit dem SMTP-Server verarbeitet, aber nicht gesendet: Für jeden Empfänger des Versands stellt Campaign eine Verbindung zum SMTP-Provider-Server her, führt den SMTP-Befehl RCPT TO aus und schließt die Verbindung vor dem SMTP-DATA-Befehl.
 
    >[!NOTE]
    >
-   >Bei Mid-Sourcing-Installationen ist von der Verwendung dieser Option abzuraten, damit der MTA nicht aufgerufen wird. Weitere Informationen zur Konfiguration eines SMTP-Servers finden Sie in [diesem Abschnitt](../../installation/using/configure-delivery-settings.md).
+   >* Diese Option wird beim Mid-Sourcing nicht empfohlen.
+   >
+   >* Weitere Informationen zur SMTP-Serverkonfiguration finden Sie unter [diesem Abschnitt](../../installation/using/configure-delivery-settings.md).
+
 
 * **[!UICONTROL E-Mail-BCC]**: Mit dieser Option können Sie E-Mails in einem externen System speichern, indem Sie einfach eine BCC-E-Mail-Adresse zu Ihrer Versandzielgruppe hinzufügen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](sending-messages.md#archiving-emails).
 
