@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: introduction
 exl-id: c8fd5f75-9386-42dd-bfb6-8086a86aa324
 source-git-commit: d891a235002d465f3b00fafa375d87d42ebafaa6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '126'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Mit der Anwendung **Social Marketing** zur Verwaltung sozialer Netzwerke können
 
 **Neue Kontakte gewinnen**
 
-Adobe Campaign Social Marketing erleichtert den Erwerb neuer Kontakte über Facebook: Kontaktieren Sie Benutzer und fragen Sie sie, ob sie ihre Profilinformationen teilen möchten. Wenn sie zustimmen, stellt Adobe Campaign die Daten automatisch wieder her, sodass Sie zielgerichtete Kampagnen durchführen und nach Möglichkeit kanalübergreifende Strategien implementieren können.
+Mit Social-Media-Marketing von Adobe Campaign können Sie einfach neue Kontakte über Facebook gewinnen: Kontaktieren Sie die Benutzer und fragen Sie sie, ob sie ihre Profilinformationen freigeben möchten. Wenn sie zustimmen, stellt Adobe Campaign die Daten automatisch wieder her, sodass Sie zielgerichtete Kampagnen durchführen und nach Möglichkeit kanalübergreifende Strategien implementieren können.
 
 >[!IMPORTANT]
 >
