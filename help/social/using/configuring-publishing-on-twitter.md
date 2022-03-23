@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: configuration
 exl-id: 2d2a6e32-587d-4a7b-ba1c-d9140da53f64
 source-git-commit: d891a235002d465f3b00fafa375d87d42ebafaa6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '776'
 ht-degree: 100%
 
@@ -117,7 +117,7 @@ Dieser Schritt erfordert gleichzeitigen Zugriff auf Ihre Adobe Campaign-Konsole 
 >
 >Sie müssen für jede Twitter-Anwendung einen eigenen **[!UICONTROL Twitter]**-Service erstellen.
 
-Der Workflow für die **[!UICONTROL Twitter-Konto-Synchronisation]** sorgt für das Synchronisieren von Twitter-Konten in Adobe Campaign.
+Der Workflow für die **[!UICONTROL Twitter-Konto-Synchronisation]** synchronisiert Twitter-Konten in Adobe Campaign.
 
 ## Synchronisieren von Twitter-Konten {#synchronizing-twitter-accounts}
 
