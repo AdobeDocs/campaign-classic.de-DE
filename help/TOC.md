@@ -7,9 +7,9 @@ user-guide-description: Mit Adobe Campaign können Sie umfangreiche Kundendaten 
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: d891a235002d465f3b00fafa375d87d42ebafaa6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2548'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -590,7 +590,7 @@ ht-degree: 99%
    + Veröffentlichen auf Twitter {#publishing-on-facebook-twitter}
       + [Erste Schritte mit Twitter](social/using/overview.md)
       + [Veröffentlichen auf Twitter](social/using/publishing-on-twitter.md)
-   + Facebook-Kontakte gewinnen {#annexes}
+   + Akquirieren von Facebook-Kontakten {#annexes}
       + [Beispiele für Facebook-Anwendungen](social/using/examples-of-facebook-apps.md)
       + [Tracking](social/using/tracking.md)
 + Handbuch zur Installation und Konfiguration {#installing-campaign-classic}
