@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 4fe661cf6a0fef8126fd24a68b1021760a5d0bfd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4955'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -26,9 +26,9 @@ Die entsprechenden Aktualisierungen finden Sie in den [Versionshinweisen zu Adob
 
 ### März 2022 {#mar-2022}
 
-Eine detaillierte Beschreibung für die **[!UICONTROL SMTP-Versand testen]** -Option. [Mehr dazu](../../delivery/using/steps-sending-the-delivery.md#delivery-additiona-parameters)
+Eine detaillierte Beschreibung für die Option **[!UICONTROL SMTP-Versand testen]** wurde hinzugefügt. [Mehr dazu](../../delivery/using/steps-sending-the-delivery.md#delivery-additiona-parameters)
 
-Die Seite Erste Schritte mit Upgrades wurde aktualisiert, um die Upgrade-Richtlinien für die Campaign Console zu erläutern. [Mehr dazu](../../rn/using/rn-overview.md)
+Die Seite &quot;Erste Schritte mit Upgrades&quot; wurde aktualisiert, um die Upgrade-Richtlinien für die Campaign-Konsole zu erläutern. [Mehr dazu](../../rn/using/rn-overview.md)
 
 Der neue Campaign-Build v7.2.2 ist jetzt verfügbar. [Mehr dazu](../../rn/using/latest-release.md)
 
@@ -69,7 +69,7 @@ Die Option zur Stapel-Aktualisierung wurde in der CRM-Connector-Aktivität hinzu
 
 ### Dezember 2021{#dec-2021}
 
-Die Campaign Classic v7-Versionshinweise wurden neu organisiert, um die Navigation zu vereinfachen. [Mehr dazu](rn-overview.md)
+Die Versionshinweise zu Campaign Classic v7 wurden neu geordnet, um die Navigation zu vereinfachen. [Mehr dazu](rn-overview.md)
 
 Die Dokumentation zur Formularbearbeitung in Campaign wurde aktualisiert und verbessert. [Mehr dazu](../../configuration/using/editing-forms.md)
 
@@ -124,7 +124,7 @@ Die [Campaign-Version 21.1.3](../../rn/using/latest-release.md#release-21-1-3-b
 
 ### Juni 2021 {#june-2021}
 
-Die **Transaktionsnachrichten** wurde neu organisiert und mit einem neuen Abschnitt Erste Schritte , einschließlich einer [erweitertes Schema](../../message-center/using/about-transactional-messaging.md#transactional-messaging-operating-principle) für ein besseres Verständnis des Prozesses. [Mehr dazu](../../message-center/using/about-transactional-messaging.md)
+Der Abschnitt **Transaktionsnachrichten** wurde umstrukturiert. Zusätzlich wurde der Abschnitt &quot;Erste Schritte&quot; einschließlich eines [erweiterten Schemas](../../message-center/using/about-transactional-messaging.md#transactional-messaging-operating-principle) hinzugefügt, um den Prozess besser verständlich zu machen. [Mehr dazu](../../message-center/using/about-transactional-messaging.md)
 
 **Dokumentationsaktualisierungen zu Version 21.1.3**
 
@@ -156,7 +156,7 @@ Es wurde eine neue Technote erstellt, in der erklärt wird, wie die Bounce-Quali
 
 ### März 2021 {#march-2021}
 
-Der Abschnitt [Erste Schritte mit SMS](../../delivery/using/sms-channel.md) wurde neu organisiert und verbessert. Sie können jetzt lernen, wie [SMS-Kanal konfigurieren](../../delivery/using/sms-set-up.md), [SMS erstellen](../../delivery/using/sms-create.md), [SMS senden und tracken](../../delivery/using/sms-send.md) in speziellen Abschnitten.
+Der Abschnitt [Erste Schritte mit SMS](../../delivery/using/sms-channel.md) wurde neu organisiert und verbessert. In speziellen Abschnitten erfahren Sie nun, wie Sie [den SMS-Kanal konfigurieren](../../delivery/using/sms-set-up.md), [eine SMS erstellen](../../delivery/using/sms-create.md) sowie [SMS senden und verfolgen](../../delivery/using/sms-send.md) können.
 
 Die Seite &quot;Hilfe und Support-Optionen&quot; für Campaign Standard wurde in die Hauptdokumentation integriert. [Mehr dazu](../../support.md)
 
@@ -344,7 +344,7 @@ In der Liste der [Workflow-Anwendungsfälle](../../workflow/using/about-workflow
 * Aufrufen von Instanzvariablen in Abfragen
 * Anwenden einer prozentualen Aufspaltung auf eine Population
 
-Die **[!UICONTROL Und-Verknüpfung]** Der Abschnitt &quot;Aktivität&quot;wurde um zusätzliche Informationen zur Verwendung der Aktivität und einen Hinweis zur Verwendung von Variablen erweitert. [Mehr dazu](../../workflow/using/and-join.md)
+Der Abschnitt über die **[!UICONTROL Und-Verknüpfungsaktivität]** wurde um zusätzliche Informationen über deren Verwendung und um einen Hinweis zur Verwendung von Variablen erweitert. [Mehr dazu](../../workflow/using/and-join.md)
 
 ### Juli 2020 {#july-2020}
 
@@ -472,7 +472,7 @@ Die Anleitungen für [Installation](../../installation/using/general-architectur
 
 Das Installationshandbuch wurde aktualisiert und mit der neuesten Version der Kompatibilitätsmatrix synchronisiert. Neue unterstützte Systeme wurden hinzugefügt. Vorkommen von veralteten und nicht mehr unterstützten Systemen wurden entfernt. [Mehr dazu](../../installation/using/general-architecture.md)
 
-Die Kompatibilitätsmatrix wurde mit den Hadoop 3.0- und Snowflake-FDA-Connectoren aktualisiert. [Mehr dazu](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+Die Kompatibilitätsmatrix wurde mit den Hadoop 3.0- und Snowflake-FDA-Connectoren aktualisiert. [Mehr dazu](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html)
 
 Eine Best Practice zur IP-Affinität wurde dem Installationshandbuch hinzugefügt. [Mehr dazu](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
@@ -490,7 +490,7 @@ Der neue Parameter für die URL-Berichtkonfiguration wird [hier](../../reporting
 
 Die **On-Premise- und Hosted-Leistungsmatrix von Campaign Classic** wurde mit den neuen FDA-Connectoren aktualisiert. [Mehr dazu](../../installation/using/capability-matrix.md).
 
-Die Seite mit der **Campaign Classic-Leistungsmatrix** wurde aktualisiert. [Mehr dazu](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+Die Seite mit der **Campaign Classic-Leistungsmatrix** wurde aktualisiert. [Mehr dazu](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html)
 
 Der neue Workflow zur **[!UICONTROL Bereinigung von Nmsaddress]** wird [hier](../../production/using/database-cleanup-workflow.md#cleanup-of-nmsaddress) erläutert.
 
@@ -542,7 +542,7 @@ Sicherer SMS-Versand (TLS) – [mehr dazu](https://helpx.adobe.com/de/campaign/k
 
 **Weitere Dokumentationsaktualisierungen zu dieser Version**
 
-Die Adobe Campaign Enhanced MTA-Dokumentation ist jetzt verfügbar. [Mehr dazu](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)
+Die Adobe Campaign Enhanced MTA-Dokumentation ist jetzt verfügbar. [Mehr dazu](https://helpx.adobe.com/de/campaign/kb/acc-campaign-enhanced-mta.html)
 
 Es wurde ein neuer Abschnitt hinzugefügt, in dem beschrieben wird, wie Sie Fehler in einem Workflow beheben können, der im Status „Schnellstmöglicher Start“ in einer Kampagne verbleibt.  [Mehr dazu](../../production/using/workflow-execution.md#start-as-soon-as-possible-in-campaigns)
 
@@ -604,7 +604,7 @@ Die Best Practices für die Leistungsverbesserung von Workflows und Sendungen wu
 
 **Neue Funktionen in Version 19.1**
 
-Control Panel – [mehr dazu](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)
+Control Panel – [mehr dazu](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de)
 
 Audit-Protokoll – [mehr dazu](../../production/using/audit-trail.md)
 
@@ -612,7 +612,7 @@ Audit-Protokoll – [mehr dazu](../../production/using/audit-trail.md)
 
 Es wurden neue häufig gestellte Fragen zur Build-Aktualisierung erstellt. [Mehr dazu](https://helpx.adobe.com/de/campaign/kb/build-upgrade-faq.html)
 
-Die [Kompatibilitätsmatrix](compatibility-matrix.md) wurde aktualisiert. Die Liste der unterstützten Datenbanksysteme wurde aktualisiert, Android-/iOS-Versionen und zugehörige SDKs wurden aktualisiert. Die Kompatibilitätsmatrix 19.0 wurde archiviert.
+Die [Kompatibilitätsmatrix](compatibility-matrix.md) wurde aktualisiert. Die Liste der unterstützten Datenbanksysteme, Android-/iOS-Versionen und zugehörigen SDKs wurde aktualisiert. Die Kompatibilitätsmatrix 19.0 wurde archiviert.
 
 Die Seite mit veralteten und entfernten Funktionen in Campaign Classic wurde aktualisiert. [Mehr dazu](deprecated-features.md)
 
@@ -626,9 +626,9 @@ Die ersten Schritte zum Thema [Sicherheit](https://helpx.adobe.com/de/campaign/k
 
 Die Beschreibung der Workflow-Option für die Vorab-Bearbeitung wurde aktualisiert, um Produktänderungen widerzuspiegeln. [Mehr dazu](../../workflow/using/data-loading--file-.md)
 
-Die Technote zu Experience Cloud Trigger wurde aktualisiert - [Mehr dazu](../../integrations/using/about-triggers.md)
+Die Technote zu Experience Cloud Triggers wurde aktualisiert. [Mehr dazu](../../integrations/using/about-triggers.md)
 
-Die Liste der Fehlermeldungen wurde aktualisiert. [Mehr dazu](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html)
+Die Liste der Fehlermeldungen wurde aktualisiert. [Mehr dazu](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=de)
 
 Es wurden weitere Informationen zu SOAP-Authentifizierungsmethoden für Transaktionsnachrichten hinzugefügt. [Mehr dazu](../../message-center/using/event-description.md)
 
@@ -663,7 +663,7 @@ Es wurden Informationen zum Billing-Bericht hinzugefügt. [Mehr dazu](../../prod
 Die Dokumentation zur Integration freigegebener Audiences wurde aktualisiert.
 [Mehr dazu](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
 
-Die folgenden Technotes wurden aktualisiert: [SMS-Connector-Protokoll und Einstellungen](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html) und [Automatische Erzeugung von Sequenzen](https://helpx.adobe.com/de/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence).
+Die folgenden Technotes wurden aktualisiert: [SMS-Connector-Protokoll und Einstellungen](https://helpx.adobe.com/de/campaign/kb/sms-connector-protocol-and-settings.html) und [Automatische Erzeugung von Sequenzen](https://helpx.adobe.com/de/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence).
 
 Der Abschnitt „Technische Workflows“ wurde aktualisiert. [Mehr dazu](../../workflow/using/about-technical-workflows.md)
 
@@ -677,7 +677,7 @@ Informationen zum Query Banding für das externe Teradata-Konto wurden hinzugef�
 
 ### Januar 2019{#release-doc-16-01-2019}
 
-Die Technote zu Experience Cloud Trigger wurde aktualisiert - [Mehr dazu](../../integrations/using/about-triggers.md)
+Die Technote zu Experience Cloud Triggers wurde aktualisiert. [Mehr dazu](../../integrations/using/about-triggers.md)
 
 Im Abschnitt über die Angebotsvalidierung wurde ein Hinweis hinzugefügt, dass die Aussage „Validierter Inhalt“ darauf hinweist, dass der Prozess der Inhaltsvalidierung abgeschlossen wurde, unabhängig davon, ob alle Angebote aktiviert/validiert wurden oder nicht. [Mehr dazu](../../interaction/using/offer-catalog-overview.md)
 
