@@ -4,9 +4,9 @@ title: Campaign-Webkomponenten und Version 100 in Chrome Firefox und Edge-Browse
 description: Campaign-Webkomponenten und Version 100 in Chrome-, Firefox- und Edge-Browsern
 hide: true
 hidefromtoc: true
-source-git-commit: 48c9aab4f7e5f1f204a003a4d53f8d975247b867
+source-git-commit: ffcba5d7b4a5e5eb140dbe8e4daad072bb1d2400
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '634'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Google, Mozilla warnen, dass Chrome und Firefox aufgrund der kommenden 3-stellig
 
 Chrome v100 ist für die Veröffentlichung auf **29. März 2022** und Firefox v100 on **3. Mai 2022**.
 
-Beachten Sie, dass Microsoft Edge ihre Version 100 Anfang März 2022 veröffentlicht hat.
+Microsoft hat Edge v100 Anfang März 2022 veröffentlicht.
 
 Die Änderung der Versionsnummer von 2 auf 3 Stellen kann beim Besuch von Websites, die für diese Änderung nicht vorbereitet sind, zu Problemen führen. Einige Webseiten werden in diesen neuen Browserversionen möglicherweise nicht mehr korrekt angezeigt.
 
