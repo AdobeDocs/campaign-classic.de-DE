@@ -1,21 +1,21 @@
 ---
 product: campaign
 title: Campaign-Webkomponenten und Version 100 in Chrome Firefox und Edge-Browsern
-description: Campaign-Webkomponenten und Version 100 in Chrome-, Firefox- und Edge-Browsern
+description: Campaign web components and version 100 in Chrome, Firefox, and Edge browsers
 hide: true
 hidefromtoc: true
-source-git-commit: ffcba5d7b4a5e5eb140dbe8e4daad072bb1d2400
+source-git-commit: 8b790141342f85769aa6c9663c2e9a34b504e2c5
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---
 
 # Die dreistellige Browserversion wirkt sich auf die Campaign-Webkomponenten aus {#version-100}
 
-Google, Mozilla warnen, dass Chrome und Firefox aufgrund der kommenden 3-stelligen Versionen einige Websites beschädigen könnten.
+Google und Mozilla warnen, dass Chrome und Firefox aufgrund der kommenden 3-stelligen Versionen einige Websites beschädigen könnten.
 
-Chrome v100 ist für die Veröffentlichung auf **29. März 2022** und Firefox v100 on **3. Mai 2022**.
+Chrome v100 is set for release on **March 29, 2022**, and Firefox v100 on **May 3, 2022**.
 
 Microsoft hat Edge v100 Anfang März 2022 veröffentlicht.
 
@@ -23,15 +23,15 @@ Die Änderung der Versionsnummer von 2 auf 3 Stellen kann beim Besuch von Websit
 
 Die Kompatibilität der wichtigsten Websites wurde bereits früher getestet. Wenn es Probleme mit Sites gibt, die nicht behoben werden können, bevor diese Versionen veröffentlicht werden, verfügen Unternehmen über Backup-Pläne, die sicherstellen, dass die Sites nicht betroffen sind.
 
-Potenzielle Probleme oder Funktionsverluste auf der Website stammen aus der Benutzeragenten-Zeichenfolge, die Browser an besuchte Websites senden: Der Benutzeragent ist eine Zeichenfolge, die vom Browser an die Website gesendet wird, um der Site mitzuteilen, welcher Browser und welche Version Sie verwenden, und die zugehörige Technologie. Wenn Ihr Browser eine Anforderung an eine Website sendet, identifiziert er sich mit der Benutzeragenten-Zeichenfolge, bevor der angeforderte Inhalt abgerufen wird. Die Daten in der Benutzeragenten-Zeichenfolge helfen der Website, den Inhalt in einem Format bereitzustellen, das Ihrem Browser entspricht. Die Version des Benutzeragenten wird inkrementiert und entspricht der Versionsnummer des Browsers. Das Wechseln von 2 zu 3 Stellen kann zu Problemen führen.
+Potenzielle Probleme oder Funktionsverluste auf der Website stammen aus der Benutzeragenten-Zeichenfolge, die Browser an besuchte Websites senden: Der Benutzeragent ist eine Zeichenfolge, die vom Browser an die Website gesendet wird, um der Site mitzuteilen, welcher Browser und welche Version Sie verwenden, und die zugehörige Technologie. Wenn Ihr Browser eine Anforderung an eine Website sendet, identifiziert er sich mit der Benutzeragenten-Zeichenfolge, bevor der angeforderte Inhalt abgerufen wird. The data in the user agent string help the website to deliver the content in a format that suits your browser. The version of the user agent is incremented to match the browser version number. Moving from 2 to 3-digits can cause issues.
 
 ## Sind Sie betroffen?{#version-100-impact}
 
-Adobe empfiehlt, Ihre Campaign-Webanwendungen, einschließlich Webformulare und Umfragen, zu testen, um sicherzustellen, dass sie mit diesen neuen Browserversionen weiterhin problemlos funktionieren.
+Adobe recommends you to test your Campaign web applications, including web forms and surveys, to make sure they will still work fine with these new browser versions.
 
 Diese Empfehlung gilt für alle Webanwendungen, insbesondere wenn Sie JavaScript-Code eingefügt haben.
 
-Sie müssen beide Browser, Mobile und Desktop, verwenden.
+You must check both with all browsers, mobile and desktop.
 
 ## Wie testen Sie?{#version-100-test}
 
@@ -44,7 +44,7 @@ Mit diesen Einstellungen sendet der Browser die neue Benutzeragenten-Zeichenfolg
 Um Ihre Webseiten mit Mozilla Firefox 100 zu testen, können Sie die bevorstehende Änderung des Benutzeragenten in Ihren Web-Apps simulieren, indem Sie die Zeichenfolge Ihres Benutzeragenten manuell ändern.
 
 1. Öffnen Sie Firefox, geben Sie ein. `about:config` in der Adressleiste und drücken Sie die Eingabetaste.
-1. Suchen Sie nach `general.useragent.override`.
+1. Search for `general.useragent.override`.
 1. Wählen Sie &quot;String&quot;und klicken Sie auf das Pluszeichen (+).
 
    ![](assets/force-user-agent-firefox.png)
@@ -55,7 +55,7 @@ Um Ihre Webseiten mit Mozilla Firefox 100 zu testen, können Sie die bevorstehen
    Mozilla/5.0 (Windows NT 10.0; rv:100.0) Gecko/20100101 Firefox/100.0
    ```
 
-1. Klicken Sie auf die blaue Markierungsschaltfläche, um die Einstellung zu speichern.
+1. Click on the blue checkmark button to save the setting.
 1. Schließen Sie den Browser und starten Sie ihn neu.
 
 Wenn Sie Ihren Benutzeragenten wieder auf die Standardeinstellung zurücksetzen möchten, gehen Sie einfach zurück zu `about:config` und suchen Sie nach `general.useragent.override` wieder einstellen.  Wenn es angezeigt wird, klicken Sie auf das Papierkorbsymbol, um die Einstellung zu löschen, und starten Sie den Browser neu.
@@ -69,10 +69,10 @@ Um den Google Chrome 100-Benutzeragenten in Ihren eigenen Web-Apps zu testen, k�
 
    ![](assets/force-user-agent-chrome.png)
 
-1. Starten Sie den Browser neu.
+1. Restart the browser.
 1. Schließen Sie die `chrome://flags` Registerkarte.
 
-Um den Benutzeragenten wieder auf die Standardeinstellung zu setzen, führen Sie diesen Prozess aus und ändern Sie die Einstellung des Kennzeichens in `Default` und starten Sie den Browser neu.
+To change user agent back to its default, simply follow this process and change the flag&#39;s setting to `Default` and restart the browser.
 
 
 ### Testen mit Microsoft Edge 100{#test-ms-edge-100}
