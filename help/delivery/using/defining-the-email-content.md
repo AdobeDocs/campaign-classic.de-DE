@@ -4,8 +4,8 @@ title: Definieren des E-Mail-Inhalts in Adobe Campaign Classic
 description: Hier erfahren Sie, wie Sie mit Adobe Campaign Classic den E-Mail-Inhalt definieren können.
 feature: Email Design
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
-workflow-type: ht
+source-git-commit: f5bd8c1806440b47225130070e166d90d99dcc75
+workflow-type: tm+mt
 source-wordcount: '2064'
 ht-degree: 100%
 
@@ -65,7 +65,7 @@ Mit dem Popup-Fenster **[!UICONTROL Emoticon einfügen]** können Sie auch Emoti
 
 Der eigentliche Nachrichteninhalt wird im unteren Bereich des Versandkonfigurationsfensters erfasst.
 
-Standardmäßig werden die Nachrichten den Angaben des Empfängers entsprechend im HTML- oder Textformat versandt. Um die korrekte Anzeige in allen E-Mail-Systemen zu gewährleisten, wird empfohlen, jeweils sowohl HTML- als auch Textinhalte zu erstellen. Weitere Informationen hierzu finden Sie unter [Wahl des Nachrichtenformats](#selecting-message-formats).
+Standardmäßig werden die Nachrichten den Angaben des Empfängers entsprechend im HTML- oder Textformat versandt. Um die korrekte Anzeige in allen E-Mail-Systemen zu gewährleisten, wird empfohlen, jeweils sowohl HTML- als auch Textinhalte zu erstellen. Weitere Informationen hierzu finden Sie unter [Wahl des Nachrichtenformats](email-parameters.md#selecting-message-formats).
 
 * Verwenden Sie die Schaltfläche **[!UICONTROL Öffnen]**, um HTML-Inhalt zu importieren. Sie haben auch die Möglichkeit, den Quellcode direkt in den Tab **[!UICONTROL Quelle]** einzufügen.
 
