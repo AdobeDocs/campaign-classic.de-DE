@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 3405efb8-a37c-4622-a271-63d7a4148751
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: 1bb1365ce5a4eb89447c5d736a42cd470c7f3bba
 workflow-type: tm+mt
-source-wordcount: '1570'
+source-wordcount: '1568'
 ht-degree: 83%
 
 ---
@@ -175,12 +175,10 @@ In der folgenden Tabelle sind die Zuordnungen für die Datentypen aufgeführt, d
 <table> 
  <tbody> 
   <tr> 
-   <td> <strong>Adobe Campaign</strong><br /> </td> 
    <td> <strong>PosgreSQL</strong><br /> </td> 
    <td> <strong>Oracle</strong><br /> </td> 
-   <td> <strong>Teradata</strong><br /> </td> 
-   <td> <strong>DB2</strong><br /> </td> 
    <td> <strong>MS SQL</strong><br /> </td> 
+   <td> <strong>Adobe Campaign</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> String <br /> </td> 
@@ -486,7 +484,6 @@ Elemente werden mit ihren Namen bezeichnet, während den Namen von Attributen ei
 >
 >* **location/@city** ist nicht gültig; verwenden Sie **`[location/@city]`**
 >* **`[@email]`** und **@email** entsprechen einander
-
 >
 
 

@@ -4,10 +4,10 @@ title: Erste Schritte mit dem ACS-Connector
 description: Grundlagen und Datenzyklus des ACS-Connectors
 feature: ACS Connector
 exl-id: 689b6117-5143-4f85-8582-2c74cae72ca2
-source-git-commit: c54102b2ec32fbea89ce41dd3c9fedb98e612996
-workflow-type: ht
-source-wordcount: '2041'
-ht-degree: 100%
+source-git-commit: 1bb1365ce5a4eb89447c5d736a42cd470c7f3bba
+workflow-type: tm+mt
+source-wordcount: '2094'
+ht-degree: 97%
 
 ---
 
@@ -147,6 +147,11 @@ Die folgenden Replikations-Workflows sind als gebrauchsfertige Vorlagen verfügb
 * **[!UICONTROL `[ACS] New replication`]** (newReplication): Dieser inkrementelle Workflow ist ein Beispiel, das zur Replikation einer benutzerdefinierten Tabelle verwendet werden kann. Siehe [Erweiterte Implementierung](#advanced-implementation).
 * **[!UICONTROL `[ACS] Delivery-message replication`]** (newDlvMsgQualification): Dieser inkrementelle Workflow repliziert Versandnachrichten von Campaign Standard nach Campaign v7.
 * **[!UICONTROL `[ACS] Profile delivery log replication`]** (newRcpDeliveryLogReplication): Dieser inkrementelle Workflow repliziert Versandkennungen, E-Mail-Broadlogs und E-Mail-Trackinglogs von Campaign Standard nach Campaign v7. Dabei werden nur Sendungen berücksichtigt, die von Campaign Standard an Profile gesendet werden, die in der Tabelle „nms:recipients“ von Campaign v7 enthalten sind.
+
+   >[!NOTE]
+   >
+   > Wenn sowohl Campaign Classic- als auch Campaign Standard-Instanzen zum Senden von E-Mails mit getrackten URLs verwendet werden, kann während der Synchronisierung ein Problem mit doppelten URL-Tag-IDs auftreten. Um dies zu verhindern, aktualisieren Sie die **Aktualisieren von Tracking-URLs** (writerTrackingUrls) im Workflow und fügen Sie dem Quellausdruck @tagId das Präfix &quot;ACS&quot;hinzu.
+
 * **[!UICONTROL `[ACS] New delivery log replication`]** (newRcpDeliveryLogReplication): Dieser inkrementelle Workflow repliziert Versandkennungen, E-Mail-Broadlogs und E-Mail-Trackinglogs von Campaign Standard nach Campaign v7. Dabei werden nur Sendungen berücksichtigt, die von Campaign Standard an Profile gesendet werden, die in einer bestimmten Tabelle (zu definieren, nicht „nms:recipients“) von Campaign v7 enthalten sind.
 
 ### Standard-Empfängerfelder {#default-recipient-fields}
