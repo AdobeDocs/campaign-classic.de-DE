@@ -1,50 +1,50 @@
 ---
 product: campaign
-title: Campaign-Webkomponenten und Version 100 in Chrome Firefox und Edge-Browsern
-description: Campaign-Webkomponenten und Version 100 in Chrome-, Firefox- und Edge-Browsern
+title: Campaign-Web-Komponenten und Version 100 in Chrome-, Firefox- und Edge-Browsern
+description: Campaign-Web-Komponenten und Version 100 in Chrome-, Firefox- und Edge-Browsern
 exl-id: 2016279a-7b02-4399-b2ed-9a15456de816
 source-git-commit: b8329e24f07ec8b3dd89f655b47699f130266008
 workflow-type: tm+mt
 source-wordcount: '634'
-ht-degree: 0%
+ht-degree: 98%
 
 ---
 
-# Die dreistellige Browserversion wirkt sich auf die Campaign-Webkomponenten aus {#version-100}
+# Die dreistellige Browser-Version hat Einfluss auf Campaign-Web-Komponenten {#version-100}
 
-Google und Mozilla warnen, dass Chrome und Firefox aufgrund der kommenden 3-stelligen Versionen einige Websites beschädigen könnten.
+Google und Mozilla warnen, dass Chrome und Firefox aufgrund der kommenden dreistelligen Versionen einige Websites beschädigen könnten.
 
-Chrome v100 ist für die Veröffentlichung auf **29. März 2022** und Firefox v100 on **3. Mai 2022**.
+Chrome v100 soll am **29. März 2022** und Firefox v100 soll am **3. Mai 2022** veröffentlicht werden.
 
-Microsoft hat Edge v100 Anfang März 2022 veröffentlicht.
+Microsoft hat Edge v100 bereits Anfang März 2022 veröffentlicht.
 
-Die Änderung der Versionsnummer von 2 auf 3 Stellen kann beim Besuch von Websites, die für diese Änderung nicht vorbereitet sind, zu Problemen führen. Einige Webseiten werden in diesen neuen Browserversionen möglicherweise nicht mehr korrekt angezeigt.
+Die Änderung der Versionsnummer von zwei auf drei Stellen kann beim Besuch von Websites, die für diese Änderung nicht ausgelegt sind, zu Problemen führen. Einige Web-Seiten werden in diesen neuen Browser-Versionen möglicherweise nicht mehr korrekt angezeigt.
 
-Die Kompatibilität der wichtigsten Websites wurde bereits früher getestet. Wenn es Probleme mit Sites gibt, die nicht behoben werden können, bevor diese Versionen veröffentlicht werden, verfügen Unternehmen über Backup-Pläne, die sicherstellen, dass die Sites nicht betroffen sind.
+Die Kompatibilität der wichtigsten Websites wurde im Voraus getestet. Wenn es Probleme mit Sites gibt, die nicht behoben werden können, bevor diese Versionen veröffentlicht werden, haben Unternehmen Backup-Pläne, die sicherstellen, dass die Sites nicht betroffen sind.
 
-Potenzielle Probleme oder Funktionsverluste auf der Website stammen aus der Benutzeragenten-Zeichenfolge, die Browser an besuchte Websites senden: Der Benutzeragent ist eine Zeichenfolge, die vom Browser an die Website gesendet wird, um der Site mitzuteilen, welcher Browser und welche Version Sie verwenden, und die zugehörige Technologie. Wenn Ihr Browser eine Anforderung an eine Website sendet, identifiziert er sich mit der Benutzeragenten-Zeichenfolge, bevor der angeforderte Inhalt abgerufen wird. Die Daten in der Benutzeragenten-Zeichenfolge helfen der Website, den Inhalt in einem Format bereitzustellen, das Ihrem Browser entspricht. Die Version des Benutzeragenten wird inkrementiert und entspricht der Versionsnummer des Browsers. Das Wechseln von 2 zu 3 Stellen kann zu Problemen führen.
+Potenzielle Probleme oder Funktionsverluste auf der Website stammen aus der Benutzeragenten-Zeichenfolge, die Browser an besuchte Websites senden: Der Benutzeragent ist eine Zeichenfolge, die vom Browser an die Website gesendet wird, um der Site mitzuteilen, welchen Browser, welche Version und welche zugehörige Technologie Sie verwenden. Wenn Ihr Browser eine Anfrage an eine Website sendet, identifiziert er sich mit der Benutzeragenten-Zeichenfolge, bevor der angeforderte Inhalt abgerufen wird. Die Daten in der Benutzeragenten-Zeichenfolge helfen der Website, den Inhalt in einem Format bereitzustellen, das zu Ihrem Browser passt. Die Version des Benutzeragenten wird inkrementiert, sodass sie der Versionsnummer des Browsers entspricht. Das Wechseln von zwei auf drei Stellen kann zu Problemen führen.
 
 ## Sind Sie betroffen?{#version-100-impact}
 
-Adobe empfiehlt, Ihre Campaign-Webanwendungen, einschließlich Webformulare und Umfragen, zu testen, um sicherzustellen, dass sie mit diesen neuen Browserversionen weiterhin problemlos funktionieren.
+Adobe empfiehlt, Ihre Campaign-Web-Programme, einschließlich Web-Formularen und Umfragen, zu testen, um sicherzustellen, dass sie mit diesen neuen Browser-Versionen weiterhin problemlos funktionieren.
 
-Diese Empfehlung gilt für alle Webanwendungen, insbesondere wenn Sie JavaScript-Code eingefügt haben.
+Diese Empfehlung gilt für alle Web-Programme, insbesondere wenn Sie JavaScript-Code eingebunden haben.
 
 Sie müssen mit allen Browsern, Mobilgeräten und Desktops suchen.
 
-## Wie testen Sie?{#version-100-test}
+## Wie testen Sie dies?{#version-100-test}
 
-Sie können Ihre Browser so konfigurieren, dass die Version jetzt als 100 gemeldet wird und dann alle Probleme, auf die Sie stoßen, melden und korrigieren.
+Sie können Ihre Browser so konfigurieren, dass die Version schon jetzt als 100 angenommen wird. Dann können Sie alle Probleme, auf die Sie stoßen, erfassen und korrigieren.
 
-Mit diesen Einstellungen sendet der Browser die neue Benutzeragenten-Zeichenfolge an Websites und gibt an, dass der Browser v100 ist. Wenn Probleme mit Ihren Webformularen auftreten, sollten Sie einen Fehler für den Browser-Editor erstellen. Erwägen Sie, diese Webformulare neu zu erstellen, bevor diese Aktualisierungen allgemein verfügbar sind.
+Mit diesen Einstellungen sendet der Browser die neue Benutzeragenten-Zeichenfolge an Websites und gibt an, dass der Browser v100 hat. Wenn Probleme mit Ihren Web-Formularen auftreten, sollten Sie einen Fehler für den Browser-Editor erstellen. Wir empfehlen, diese Web-Formulare neu zu erstellen, bevor diese Aktualisierungen allgemein verfügbar sind.
 
 ### Testen mit Firefox 100{#test-firefox-100}
 
-Um Ihre Webseiten mit Mozilla Firefox 100 zu testen, können Sie die bevorstehende Änderung des Benutzeragenten in Ihren Web-Apps simulieren, indem Sie die Zeichenfolge Ihres Benutzeragenten manuell ändern.
+Um Ihre Web-Seiten mit Mozilla Firefox 100 zu testen, können Sie die bevorstehende Änderung des Benutzeragenten in Ihren Web-Apps simulieren, indem Sie Ihre Benutzeragenten-Zeichenfolge manuell ändern.
 
-1. Öffnen Sie Firefox, geben Sie ein. `about:config` in der Adressleiste und drücken Sie die Eingabetaste.
+1. Öffnen Sie Firefox, geben Sie `about:config` in der Adressleiste ein und drücken Sie die Eingabetaste.
 1. Suchen Sie nach `general.useragent.override`.
-1. Wählen Sie &quot;String&quot;und klicken Sie auf das Pluszeichen (+).
+1. Wählen Sie &quot;Zeichenfolge&quot; aus und klicken Sie auf das Pluszeichen (+).
 
    ![](assets/force-user-agent-firefox.png)
 
@@ -54,36 +54,36 @@ Um Ihre Webseiten mit Mozilla Firefox 100 zu testen, können Sie die bevorstehen
    Mozilla/5.0 (Windows NT 10.0; rv:100.0) Gecko/20100101 Firefox/100.0
    ```
 
-1. Klicken Sie auf die blaue Markierungsschaltfläche, um die Einstellung zu speichern.
+1. Klicken Sie auf das blaue Häkchen, um die Einstellung zu speichern.
 1. Schließen Sie den Browser und starten Sie ihn neu.
 
-Wenn Sie Ihren Benutzeragenten wieder auf die Standardeinstellung zurücksetzen möchten, gehen Sie einfach zurück zu `about:config` und suchen Sie nach `general.useragent.override` wieder einstellen.  Wenn es angezeigt wird, klicken Sie auf das Papierkorbsymbol, um die Einstellung zu löschen, und starten Sie den Browser neu.
+Wenn Sie Ihren Benutzeragenten wieder auf die Standardeinstellung zurücksetzen möchten, gehen Sie einfach zurück zu `about:config` und suchen Sie wieder nach der Einstellung `general.useragent.override`.  Wenn sie angezeigt wird, klicken Sie auf das Papierkorbsymbol, um die Einstellung zu löschen, und starten Sie den Browser neu.
 
-### Test mit Chrome 100{#test-chrome-100}
+### Testen mit Chrome 100{#test-chrome-100}
 
 Um den Google Chrome 100-Benutzeragenten in Ihren eigenen Web-Apps zu testen, können Sie diesen Test mit den folgenden Schritten aktivieren:
 
-1. Chrome öffnen, eingeben `chrome://flags` in der Adressleiste und drücken Sie die Eingabetaste.
-1. Suche `Force major version to 100 in User-Agent` in das Suchfeld ein und aktivieren Sie es wie unten dargestellt.
+1. Öffnen Sie Chrome, geben Sie `chrome://flags` in der Adressleiste ein und drücken Sie die Eingabetaste.
+1. Suchen Sie `Force major version to 100 in User-Agent` im Suchfeld und aktivieren Sie die Einstellung wie unten dargestellt.
 
    ![](assets/force-user-agent-chrome.png)
 
 1. Starten Sie den Browser neu.
-1. Schließen Sie die `chrome://flags` Registerkarte.
+1. Schließen Sie die Registerkarte `chrome://flags`.
 
-Um den Benutzeragenten wieder auf die Standardeinstellung zu setzen, führen Sie diesen Prozess aus und ändern Sie die Einstellung des Kennzeichens in `Default` und starten Sie den Browser neu.
+Um den Benutzeragenten wieder in die Standardeinstellung zu ändern, führen Sie diesen Prozess aus, ändern Sie die Einstellung des Flags in `Default` und starten Sie den Browser neu.
 
 
 ### Testen mit Microsoft Edge 100{#test-ms-edge-100}
 
-Ab Version 97 können Site-Eigentümer diese Version emulieren, indem sie das Experiment-Flag aktivieren.  `#force-major-version-to-100` in `edge://flags`.
+Ab Version 97 können Site-Besitzer diese Version emulieren, indem sie die Experiment-Flag `#force-major-version-to-100` in `edge://flags` aktivieren.
 
-1. Microsoft Edge öffnen, eingeben `edge://flags` in der Adressleiste und drücken Sie die Eingabetaste.
-1. Suchen Sie nach `force-major-version-to-100` und aktivieren Sie es wie unten dargestellt.
+1. Öffnen Sie Microsoft Edge, geben Sie `edge://flags` in der Adressleiste ein und drücken Sie die Eingabetaste.
+1. Suchen Sie nach `force-major-version-to-100` und aktivieren Sie die Einstellung wie unten dargestellt.
 
    ![](assets/force-user-agent-edge.png)
 
 1. Starten Sie den Browser neu.
-1. Schließen Sie die `edge://flags` Registerkarte.
+1. Schließen Sie die Registerkarte `edge://flags`.
 
-Um den Benutzeragenten wieder auf die Standardeinstellung zu setzen, führen Sie diesen Prozess aus und ändern Sie die Einstellung des Kennzeichens in `Default` und starten Sie den Browser neu.
+Um den Benutzeragenten wieder in die Standardeinstellung zu ändern, führen Sie diesen Prozess aus, ändern Sie die Einstellung des Flags in `Default` und starten Sie den Browser neu.
