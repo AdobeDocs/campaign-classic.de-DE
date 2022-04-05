@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 46c8ed46-0947-47fb-abda-6541b12b6f0c
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 294309239bc476669e9e017c27bd1b51a0bdaf8c
 workflow-type: tm+mt
 source-wordcount: '1580'
 ht-degree: 3%
@@ -23,7 +23,7 @@ In diesem Kapitel werden serverseitige Konfigurationen beschrieben, die entsprec
 
 Diese Verfahren beschränken sich auf **On-Premise**/**hybrid** Implementierungen und erfordern Administratorberechtigungen.
 
-Für **gehostet** -Bereitstellungen können nur von Adobe konfiguriert werden. Einige Einstellungen können jedoch in  [Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=de), wie die Verwaltung von IP-Zulassungslisten oder URL-Berechtigungen. [Weitere Informationen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=de).
+Für **gehostet** -Bereitstellungen können nur von Adobe konfiguriert werden. Einige Einstellungen können jedoch in [Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=de), wie die Verwaltung von IP-Zulassungslisten oder URL-Berechtigungen. [Weitere Informationen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=de).
 
 Weitere Informationen finden Sie in den folgenden Abschnitten:
 
