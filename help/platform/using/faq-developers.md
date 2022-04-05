@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 20552812-5c58-4d48-9636-d5135197685d
-source-git-commit: 36b10a49fe92853f98beeb9e7d2fea3f59b10b6f
-workflow-type: ht
-source-wordcount: '522'
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
+workflow-type: tm+mt
+source-wordcount: '517'
 ht-degree: 100%
 
 ---
@@ -25,7 +25,7 @@ Das konzeptionelle Datenmodell der Adobe Campaign-Datenbank besteht aus einer Re
 
 [Hier erfahren Sie mehr zum Datenmodell von Campaign](https://helpx.adobe.com/de/campaign/kb/acc-datamodel.html).
 
-Best Practices werden [in diesem Artikel](https://helpx.adobe.com/de/campaign/kb/acc-data-model-best-practices.html) beschrieben.
+Best Practices werden [in diesem Artikel](../../configuration/using/data-model-best-practices.md) beschrieben.
 
 ## Wie funktionieren Schemata in Campaign? {#how-to-work-with-campaign-schemas-}
 

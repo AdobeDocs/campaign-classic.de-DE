@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: a025026e-688e-4ec1-abc4-40ee040d2b3b
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '600'
+source-wordcount: '598'
 ht-degree: 16%
 
 ---
@@ -41,7 +41,7 @@ Gehen Sie wie folgt vor, um eine neue Instanz zu erstellen:
 
 1. Geben Sie per URL eine Verbindung zum Adobe Campaign-Anwendungs-Server an. Verwenden Sie entweder einen DNS oder einen Alias des Computers oder Ihre IP-Adresse.
 
-   Sie können beispielsweise eine URL vom Typ [`https://<machine>.<domain>.com`](https://myserver.adobe.com) eingeben.
+   Sie können beispielsweise eine URL vom Typ `https://<machine>.<domain>.com` eingeben.
 
    >[!CAUTION]
    >
@@ -61,7 +61,7 @@ Gehen Sie wie folgt vor, um eine neue Instanz zu erstellen:
 
    Sie können eine Liste mit durch Kommas getrennten Werten definieren.
 
-   Nach der Validierung werden am Ende der eingegebenen URL automatisch die Zeichen ? und * Zeichen können als Platzhalter verwendet werden, um ein oder mehrere Zeichen (DNS, Port usw.) zu ersetzen. Beispielsweise wird die **demo*** -Wert funktioniert mit &quot;https://demo&quot;, da er mit &quot;https://demo:8080&quot;und sogar &quot;https://demo2&quot;funktioniert.
+   Nach der Validierung werden am Ende der eingegebenen URL automatisch die Zeichen ? und &#42; -Zeichen können als Platzhalter verwendet werden, um ein oder mehrere Zeichen (DNS, Port usw.) zu ersetzen. Beispielsweise wird die **Demo&#42;** -Wert funktioniert mit &quot;https://demo&quot;, da er mit &quot;https://demo:8080&quot;und sogar &quot;https://demo2&quot;funktioniert.
 
    Die verwendeten Namen müssen in Ihrem DNS definiert sein. Sie können auch die Korrespondenz zwischen einem DNS-Namen und einer IP-Adresse in der **c:/windows/system32/driver/etc/hosts** Datei unter Windows und in der Datei **/etc/hosts** Datei in Linux. Daher müssen Sie die Verbindungseinstellungen ändern, um diesen DNS-Namen zu verwenden, um eine Verbindung mit Ihrer ausgewählten Instanz herzustellen.
 

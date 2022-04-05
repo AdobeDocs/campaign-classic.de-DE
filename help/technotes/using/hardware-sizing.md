@@ -3,7 +3,7 @@ product: campaign
 title: Empfehlungen zur Hardware-Größe für Campaign Classic v7
 description: Empfehlungen zur Hardware-Größe für Campaign Classic v7
 exl-id: c47e73a0-dbd8-43f5-a363-7e6783dc7685
-source-git-commit: ee296e0ce25570d1fe62238e505f978df17c1f24
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
 source-wordcount: '2512'
 ht-degree: 1%
@@ -252,7 +252,7 @@ Cluster-Server, z. B. redundante Anwendungsserver unter einem Lastverteilungs-Pr
 Die empfohlene RAID-Konfiguration muss aus Gründen der Datenbanksicherheit beibehalten werden, um sicherzustellen, dass Datenverluste durch den Verlust eines Speichergeräts nicht zu Datenverlusten führen.
 
 * **I/O-Leistung**
-Die empfohlene IOPS-Bewertung für die Datenbankspeicherung muss eingehalten werden. Cloud-Dienste wie Amazon EC2 bieten möglicherweise nicht die erforderliche Leistung und müssen sorgfältig ausgewertet werden. Beispielsweise werden von Amazon EC2 bereitgestellte SSD-Volumes derzeit mit jeweils 20.000 IOPS bewertet. Weitere Informationen finden Sie unter [Amazon-Dokumentation](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html), sodass eine 4-Volume-RAID-Konfiguration mit 80.000 IOPS bewertet würde, was möglicherweise nicht ausreicht.
+Die empfohlene IOPS-Bewertung für die Datenbankspeicherung muss eingehalten werden. Cloud-Dienste wie Amazon EC2 bieten möglicherweise nicht die erforderliche Leistung und müssen sorgfältig ausgewertet werden. Beispielsweise werden von Amazon EC2 bereitgestellte SSD-Volumes derzeit mit jeweils 20.000 IOPS bewertet. Weitere Informationen finden Sie unter [Amazon-Dokumentation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html)), sodass eine 4-Volume-RAID-Konfiguration mit 80.000 IOPS bewertet würde, was möglicherweise nicht ausreicht.
 
 Adobe empfiehlt Leistungstests für jede virtualisierte Implementierung von Adobe Campaign, bevor das System in die Produktion aufgenommen wird.
 

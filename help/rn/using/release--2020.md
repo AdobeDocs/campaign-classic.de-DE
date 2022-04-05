@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: e2eb7e04-faaa-4df0-913d-471c291eeb03
-source-git-commit: c228f827e91f25ee3a837f7fe6549ae4e5714ba3
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '6628'
+source-wordcount: '6610'
 ht-degree: 100%
 
 ---
@@ -282,7 +282,7 @@ _Mittwoch, 22. Juli 2020_
 * Der iOS-HTTP2-Connector wurde verbessert (Updates von Drittanbietern und Fehlerverwaltung). (NEO-25904, NEO-25903)
 * Die Liste &quot;jarsToSkip&quot; in &quot;catalina.properties&quot; wurde aktualisiert, um den Verweis auf eine nicht mehr verwendete JAR-Datei zu entfernen (iOS-Benachrichtigungen).
 * Fehlerkorrektur – Es wurde ein Problem behoben, das die Versandvorbereitung nach einem Postupgrade blockierte.
-* Nach dem Wechsel zum [neuen Sequenz-ID-Mechanismus](https://helpx.adobe.com/de/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence) werden alle Webanwendungen, die die Empfänger-Tabelle aktualisieren, während des Postupgrads erneut veröffentlicht.
+* Nach dem Wechsel zum neuen Sequenz-ID-Mechanismus werden alle Web-Anwendungen, die die Empfänger-Tabelle aktualisieren, während des Postupgrades erneut veröffentlicht.
 * Es wurde eine potenzielle XSS-Schwachstelle in Versandinhalt behoben. (NEO-17987, NEO-26073)
 
 ![](assets/do-not-localize/cp-icon.png) **Neue Control Panel-Version im Juni** mit der Überwachung aktiver Profile, der Prüfung der Subdomain-Zustellbarkeit und der GPG-Schlüsselverwaltung. [Weitere Informationen](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html).
@@ -611,7 +611,7 @@ _Montag, 17. Februar 2020_
 
 * Unter Linux verwendet der Start des nlserver-Dienstes jetzt eine systemd-Einheit anstelle des Scripts /etc/init.d/nlserver6. Die Migration zum neuen Startschema wird automatisch ausgeführt, wenn Sie das Package 20.1 installieren. Der Befehl /etc/init.d/nlserver6 ist weiterhin verfügbar, dient aber zum Interagieren mit dem nlserver-Dienst (Start, Neustart, Anhalten usw.). Wir empfehlen, direkt den Befehl systemctl zu verwenden.
 
-* Die verbrauchsintensivsten benutzerdefinierten Tabellen wurden von der Sequenz **xtkNewId** in dedizierte Sequenzen verschoben. [mehr dazu](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
+* Die verbrauchsintensivsten benutzerdefinierten Tabellen wurden von der Sequenz **xtkNewId** in dedizierte Sequenzen verschoben.
 
 * Die Abfrageleistung, die zuvor durch unnötige Datenbankverbindungen beeinträchtigt sein konnte, wurde verbessert.
 

@@ -3,9 +3,9 @@ product: campaign
 title: Technote - Adobe Campaign-Konfigurationsaktualisierungen
 description: Adobe Campaign-Konfigurationsaktualisierungen
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: 0f31ee570ba6e763f48902e91c5d823ac297fc24
-workflow-type: ht
-source-wordcount: '1137'
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
+workflow-type: tm+mt
+source-wordcount: '1125'
 ht-degree: 100%
 
 ---
@@ -140,7 +140,7 @@ Wenn Ihre Instanzen auf einer **älteren Version als Campaign 21.1** ausgeführt
 
 Wenn Sie als gehosteter Kunde ein Upgrade auf den neuen Build durchgeführt haben, hat Adobe Ihre Instanz(en) bereits auf die HTTP/2-basierte API aktualisiert.
 
-Als On-Premise-/Hybrid-Kunde müssen Sie Ihre Konfiguration aktualisieren. [Erfahren Sie, wie Sie zu HTTP/2 migrieren](https://helpx.adobe.com/de/campaign/kb/migrate-to-apns-http2.html).
+Als On-Premise-/Hybrid-Kunde müssen Sie Ihre Konfiguration aktualisieren.
 
 ### Aktualisierungen des APNs-Stammzertifikats
 

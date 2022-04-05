@@ -4,9 +4,9 @@ title: Best Practices für Datenmodelle
 description: Erfahren Sie, wie Sie mit dem Campaign Classic-Datenmodell arbeiten.
 feature: Data Model
 exl-id: 9c59b89c-3542-4a17-a46f-3a1e58de0748
-source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '4024'
+source-wordcount: '4005'
 ht-degree: 56%
 
 ---
@@ -148,9 +148,7 @@ Wenn in Adobe Campaign eine benutzerdefinierte Tabelle mit einem Primärschlüss
 
 Standardmäßig hat eine benutzerdefinierte Sequenz Werte zwischen +1.000 und +2,1 BB. Technisch gesehen ist es möglich, einen vollständigen Bereich von 4BB zu erhalten, indem negative IDs aktiviert werden. Dies sollte mit Vorsicht verwendet werden und eine ID geht beim Übergang von negativen zu positiven Werten verloren: Der Datensatz 0 wird normalerweise von Adobe Campaign in generierten SQL-Abfragen ignoriert.
 
-**Verwandte Themen:**
-* Weitere Informationen finden Sie unter **Automatische Sequenzgenerierung** -Funktion, siehe [dieses Dokuments](https://helpx.adobe.com/de/campaign/kb/sequence_auto_generation.html).
-* Weitere Informationen zur Erschöpfung von Sequenzen finden Sie unter [dieses Video](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html).
+Weitere Informationen zur Erschöpfung von Sequenzen finden Sie unter [dieses Video](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html).
 
 ## Indizes {#indexes}
 
@@ -327,5 +325,3 @@ In diesem Beispiel:
 * Die *Produkt* und *Store* -Tabellen sind kleiner: weniger als 10.000.
 * Das Produktetikett und die Referenz wurden im *Produkt* Tabelle.
 * Die *Transaktionselement* -Tabelle enthält nur einen Link zum *Produkt* -Tabelle, die numerisch ist.
-
-<!--For more detailed best practices on how to optimize the database design for larger volumes, see [Campaign Classic Data model Best practices](https://helpx.adobe.com/campaign/kb/acc-data-model-best-practices.html).-->

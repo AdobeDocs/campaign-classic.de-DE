@@ -3,10 +3,10 @@ product: campaign
 title: Campaign Classic-Versionen 2018
 description: Weiterführende Informationen zu Campaign Classic-Versionen 2018
 exl-id: f70fceba-4bbf-4f33-8746-e4405a1cdae6
-source-git-commit: 96f2ae67a5b47b80533e759713cf5b36baa8cf36
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '5452'
-ht-degree: 100%
+source-wordcount: '5423'
+ht-degree: 99%
 
 ---
 
@@ -53,7 +53,7 @@ _15. April 2019_
 
 ### Version 18.10.3 – Build 8981{#release-18-10-3-build-8981}
 
-&#x200B;29. Januar 2019
+29. Januar 2019
 
 >[!CAUTION]
 >
@@ -77,7 +77,7 @@ _15. April 2019_
 
 ### Version 18.10.2 – Build 8978{#release-18-10-2-build-8978}
 
-&#x200B;6. Dezember 2018
+6. Dezember 2018
 
 >[!CAUTION]
 >
@@ -99,7 +99,7 @@ _15. April 2019_
 
 ### Version 18.10.1 – Build 8977{#release-18-10-build-8977}
 
-&#x200B;5. November 2018
+5. November 2018
 
 >[!CAUTION]
 >
@@ -122,7 +122,7 @@ _15. April 2019_
      <li> <p>Tracken stiller Benachrichtigungen unter iOS </p> </li> 
      <li> <p>Implementieren von Feedback zu Registrierungsaufrufen unter iOS</p> </li> 
      <li> <p>Beschleunigte iOS-Versandvorbereitung</p> </li> 
-    </ul> <p>Aufgrund der Beendigung von GCM durch Google ermöglicht der Android-V2-Connector jetzt nur Verbindungen zum FCM-Server.</p><p>Weiterführende Informationen finden Sie in der <a href="../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md">ausführlichen Dokumentation</a>. Das manuelle Upgrade auf FCM wird in diesem <a href="https://helpx.adobe.com/de/campaign/kb/migrate-to-fcm.html">Artikel</a> beschrieben. </p> </td> 
+    </ul> <p>Aufgrund der Beendigung von GCM durch Google ermöglicht der Android-V2-Connector jetzt nur Verbindungen zum FCM-Server.</p><p>Weitere Informationen finden Sie in der <a href="../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md">entsprechenden Dokumentation</a>.</p> </td> 
   </tr> 
   <tr> 
    <td> SQL-Data-Management-Aktivität<br /> </td> 
@@ -244,7 +244,7 @@ Durch diese Indexänderungen kann es vorkommen, dass die Durchführung des Postu
 
 ### Version 18.6.2 – Build 8949{#release-18-6-3-build-8949}
 
-&#x200B;22. August 2018
+22. August 2018
 
 >[!CAUTION]
 >
@@ -466,7 +466,7 @@ _24. April 2018_
 **Neuheiten**
 
 * **LINE-Kanal - verbesserte Architektur**: Der LINE-Kanal wird jetzt wie alle anderen Kanäle in Adobe Campaign in allen Installationstypen unterstützt: gehostet, Hybrid und On-Premise.
-* **Automatische Erzeugung von Sequenzen**: Der Mechanismus zur ID-Erzeugung wurde verbessert, sodass nun die Lebensdauer von Campaign-Instanzen bei großen Objektmengen verlängert ist. Weiterführende Informationen finden Sie in dieser [Technote](https://helpx.adobe.com/de/campaign/kb/sequence_auto_generation.html).
+* **Automatische Sequenzgenerierung**: Der ID-Generierungsmechanismus wurde verbessert, um die Lebensdauer von Campaign-Instanzen mit großen Objektmengen zu erhöhen.
 
 **Sonstige Änderungen**
 

@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 1bb1365ce5a4eb89447c5d736a42cd470c7f3bba
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '4984'
+source-wordcount: '4915'
 ht-degree: 99%
 
 ---
@@ -297,8 +297,6 @@ Die Funktionsmatrix pro Campaign-Hosting-Modell wurde aktualisiert und in das In
 Der Abschnitt mit den erweiterten Funktionen von Campaign Reporting wurde verbessert, um genau zu zeigen, wie sich URL-Parameter und Variablen in benutzerspezifischen Berichten verwenden lassen – [Mehr dazu](../../reporting/using/advanced-functionalities.md)
 
 Die Seite mit den Berichtseigenschaften wurde neu organisiert und erweitert, um die Konfiguration zu erleichtern – [Mehr dazu](../../reporting/using/properties-of-the-report.md)
-
-Es wurde eine neue Technote mit Details zur Migration vom Legacy-Binärprotokoll zur HTTP/2-basierten APNs Provider-API erstellt – [Mehr dazu](https://helpx.adobe.com/de/campaign/kb/migrate-to-apns-http2.html)
 
 ### September 2020 {#september-2020}
 
@@ -664,13 +662,11 @@ Es wurden Informationen zum Billing-Bericht hinzugefügt. [Mehr dazu](../../prod
 Die Dokumentation zur Integration freigegebener Audiences wurde aktualisiert.
 [Mehr dazu](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
 
-Die folgenden Technotes wurden aktualisiert: [SMS-Connector-Protokoll und Einstellungen](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html) und [Automatische Erzeugung von Sequenzen](https://helpx.adobe.com/de/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence).
+Die folgende Technote wurde aktualisiert: [Protokoll und Einstellungen des SMS-Connectors](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html).
 
 Der Abschnitt „Technische Workflows“ wurde aktualisiert. [Mehr dazu](../../workflow/using/about-technical-workflows.md)
 
 Die Namenseinrichtung für die Campaign-Domain wurde verbessert und aktualisiert.
-
-Das Migrationsverfahren für Android-Apps von Google Cloud Messaging (GCM) zu Firebase Cloud Messaging (FCM) wurde aktualisiert. [Mehr dazu](https://helpx.adobe.com/de/campaign/kb/migrate-to-fcm.html)
 
 Das Handbuch zur Dimensionierung von Hardware für Campaign wurde aktualisiert. [Mehr dazu](https://helpx.adobe.com/de/campaign/kb/hardware-sizing-guide.html)
 

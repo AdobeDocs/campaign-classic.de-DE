@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-source-git-commit: 6b7ec6b39a79e9b1e6e2bba3d5193765094cf4fd
+source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
-source-wordcount: '7969'
+source-wordcount: '7961'
 ht-degree: 39%
 
 ---
@@ -708,7 +708,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **ims** Knoten. Dies ist
 
 Im Folgenden finden Sie die verschiedenen Parameter der **javaScript** Knoten. Dies ist die Konfiguration des JavaScript-Interpreters.
 
-Weitere Informationen finden Sie im Abschnitt [Berichtdokumentation](../../reporting/using/actions-on-reports.md#memory-allocation) und dies [Technote](https://helpx.adobe.com/campaign/kb/out-of-memory-error-in-js-code-activity-in-workflows.html).
+Weitere Informationen finden Sie im Abschnitt [Berichtdokumentation](../../reporting/using/actions-on-reports.md#memory-allocation).
 
 <table> 
  <thead> 
@@ -982,7 +982,7 @@ Weitere Informationen finden Sie unter [Schutz der ausgehenden Verbindung](../..
  </thead> 
  <tbody> 
   <tr> 
-   <td> Aktion<br /> </td> 
+   <td> action<br /> </td> 
    <td> Standardaktion, wenn die URL nicht in der Liste der zulässigen Werte (Auflistung) enthalten ist. Mögliche Werte sind "ignore"(autorisieren ohne Warnmeldung, dies erfordert die Deaktivierung des Schutzes), "warn"(erlauben und geben Sie eine Warnmeldung) und "deny"(verbieten Sie den Zugriff auf die URL).<br /> </td> 
    <td> String <br /> </td> 
    <td> Ablehnen<br /> </td> 
@@ -1028,11 +1028,11 @@ Wenn ein Datensatz **dnsSuffix** aber nicht **urlRegEx**, wird der folgende Date
 
 Um beispielsweise den Zugriff auf alle URLs der Domain &quot;business.com&quot;zu erlauben, können wir zwei Datensätze definieren:
 
-dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;http://.*&quot;
+dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;http://.&#42;&quot;
 
 and
 
-dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.*&quot;
+dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
 
 Dies ist die Standardkonfiguration:
 
