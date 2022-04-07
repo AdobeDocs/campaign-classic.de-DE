@@ -4,9 +4,9 @@ title: Campaign-Web-Komponenten und Version 100 in Chrome-, Firefox- und Edge-Br
 description: Campaign-Web-Komponenten und Version 100 in Chrome-, Firefox- und Edge-Browsern
 exl-id: 2016279a-7b02-4399-b2ed-9a15456de816
 source-git-commit: b8329e24f07ec8b3dd89f655b47699f130266008
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '634'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Adobe empfiehlt, Ihre Campaign-Web-Programme, einschließlich Web-Formularen und
 
 Diese Empfehlung gilt für alle Web-Programme, insbesondere wenn Sie JavaScript-Code eingebunden haben.
 
-Sie müssen mit allen Browsern, Mobilgeräten und Desktops suchen.
+Sie müssen dies in allen Browsern (mobil und Desktop) prüfen.
 
 ## Wie testen Sie dies?{#version-100-test}
 
