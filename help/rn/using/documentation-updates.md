@@ -32,7 +32,7 @@ Die entsprechenden Aktualisierungen finden Sie in den [Versionshinweisen zu Adob
 
 * Der neue Campaign-Build v7.2.2 ist jetzt verfügbar. [Mehr dazu](../../rn/using/latest-release.md)
 * Es wurden Informationen zur Fehlerbehebung im Zusammenhang mit dem ACS-Connector hinzugefügt. [Mehr dazu](../../integrations/using/troubleshooting-the-acs-connector.md)
-* Legacy-PostgreSQL-Versionen, die das Ende des Lebenszyklus erreicht haben, wurden zum [Eingestellte und entfernte Funktionen](../../rn/using/deprecated-features.md#dbe-eol) Seite.
+* Legacy-PostgreSQL-Versionen, die das Ende des Lebenszyklus erreicht haben, wurden zur Seite [Eingestellte und entfernte Funktionen](../../rn/using/deprecated-features.md#dbe-eol) hinzugefügt.
 
 ### Februar 2022 {#february-2022}
 
