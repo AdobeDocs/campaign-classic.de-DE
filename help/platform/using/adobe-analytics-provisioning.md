@@ -157,4 +157,5 @@ Ihr Produktprofil ist jetzt konfiguriert. Anschließend müssen Sie das Adobe I/
    ```
    nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID/<Client_Secret>/<Base64_encoded_Private_Key>
    ```
+
 Sie können jetzt mit der Verwendung des Analytics-Connectors beginnen und Ihr Kundenverhalten verfolgen.
