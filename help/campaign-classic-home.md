@@ -3,9 +3,9 @@ keywords: Campaign Standard;Startseite;beliebte Themen
 product: campaign
 title: Produktdokumentation zu Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 62f19239ac3b3ea909e26d6424338213b4d91479
-workflow-type: ht
-source-wordcount: '243'
+source-git-commit: 29fae1305a6d2b8debbc2aa705c047eaf3730457
+workflow-type: tm+mt
+source-wordcount: '235'
 ht-degree: 100%
 
 ---
@@ -83,6 +83,6 @@ ht-degree: 100%
 | [Versionshinweise](rn/using/latest-release.md) | [Liste von Fehlernachrichten](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=de) |
 | [Anleitungsvideos](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de) | [Campaign-Datenmodell](configuration/using/about-data-model.md) |
 | [Kompatibilitätsmatrix](rn/using/compatibility-matrix.md) | [Campaign-JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/p-1.html?lang=de) |
-| [Erste Schritte mit Aktualisierungen](rn/using/rn-overview.md) | [Tracking-Handbuch](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/tracking-messages/about-message-tracking.html?lang=de) |
+| [Erste Schritte mit Aktualisierungen](rn/using/rn-overview.md) | [Tracking-Handbuch](delivery/using/about-message-tracking.md) |
 | [Eingestellte Funktionen](rn/using/deprecated-features.md) | [Checkliste für Sicherheit und Datenschutz](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/security-privacy/get-started-security-privacy.html?lang=de) |
 | [Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de) | [Richtlinien für das Monitoring](production/using/monitoring-guidelines.md) |

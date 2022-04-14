@@ -4,10 +4,10 @@ title: Erste Schritte mit dem Tracking
 description: Weitere Informationen finden Sie in den allgemeinen Richtlinien zum Tracking in Adobe Campaign Classic
 feature: Monitoring, Email
 exl-id: 43779505-9917-4e99-af25-b00a9d29a645
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
-workflow-type: ht
-source-wordcount: '686'
-ht-degree: 100%
+source-git-commit: 29fae1305a6d2b8debbc2aa705c047eaf3730457
+workflow-type: tm+mt
+source-wordcount: '685'
+ht-degree: 96%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 ![](../../assets/common.svg)
 
-Dank der Tracking-Funktionen können Sie mit Adobe Campaign die versendeten Nachrichten verfolgen und das Verhalten der Empfänger überprüfen: Öffnung, Klicks auf Links, Abmeldung usw.
+Dank der Tracking-Funktionen ermöglicht es Adobe Campaign, die gesendeten Nachrichten zu verfolgen und das Verhalten der Empfänger zu überprüfen: Öffnen, Klicks auf Links, Abmeldung usw.
 
 Diese Informationen werden auf der Registerkarte **[!UICONTROL Tracking]** des Profils jedes Versandempfängers abgerufen. Auf dieser Registerkarte werden alle verfolgten URL-Links angezeigt, auf die der in der Liste ausgewählte Empfänger geklickt hat. Dies ist die Akkumulation aller URLs, die in den Sendungen verfolgt werden, die noch im Versandbildschirm vorhanden sind. Die Liste kann konfiguriert werden und enthält normalerweise die angeklickte URL, das Datum und die Uhrzeit des Klicks sowie das Dokument, in dem die URL gefunden wurde. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../platform/using/editing-a-profile.md#tracking-tab).
 
