@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 1ce89c3a-1fe6-4ed6-9547-2eb9713a0ec3
 source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '421'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ Wenn beispielsweise das Feld **Produktkontext** nicht angezeigt wird, sollte der
 
 **[!UICONTROL IMS-Server-URL]**
 
-In der Kampagne **Adobe Marketing Cloud** externes Konto, überprüfen Sie, ob die **[!UICONTROL IMS-Server-URL]** ist `adobeid-na1.services.adobe.com` oder `ims-na1.adobelogin.com`. Stellen Sie sicher, dass sowohl Staging- als auch Produktionsinstanzen auf denselben IMS-Produktionsendpunkt verweisen.
+Prüfen Sie im externen Konto von Campaign für **Adobe Marketing Cloud**, ob die **[!UICONTROL IMS-Server-URL]** `adobeid-na1.services.adobe.com` oder `ims-na1.adobelogin.com` ist. Stellen Sie sicher, dass sowohl Staging- als auch Produktionsinstanzen auf denselben IMS-Produktionsendpunkt verweisen.
 
 **Zuordnungsmaske**
 
