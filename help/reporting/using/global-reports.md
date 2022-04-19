@@ -5,9 +5,9 @@ description: Allgemeine Berichte
 feature: Reporting, Monitoring
 exl-id: 6839fd7e-ecf4-4504-90a8-0207bc3991e4
 source-git-commit: 294309239bc476669e9e017c27bd1b51a0bdaf8c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2498'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -51,7 +51,7 @@ Sie können die Anzeige durch Änderung des Parameters (z. B. 1 Stunde, 3 Stunde
 
 >[!NOTE]
 >
->Wenn Ihre Instanz auf AWS gehostet wird, können Sie auch die Anzahl der pro Stunde gesendeten Sendungen mithilfe des Campaign Classic überwachen [Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html?lang=de). Um zu überprüfen, ob Ihre Instanz auf AWS gehostet wird, folgen Sie den Schritten auf [dieser Seite](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=de).
+>Wenn Ihre Instanz auf AWS gehostet wird, können Sie auch die Anzahl der pro Stunde durchgeführten Sendungen mithilfe des Campaign Classic [Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html?lang=de) überwachen. Um zu überprüfen, ob Ihre Instanz auf AWS gehostet wird, folgen Sie den Schritten auf [dieser Seite](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=de).
 >
 >Das Control Panel steht allen Administratoren zur Verfügung. Die Schritte, um einem Benutzer Administratorzugriff zu gewähren, finden Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=de#discover-control-panel).
 >
