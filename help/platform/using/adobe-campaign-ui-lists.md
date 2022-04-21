@@ -4,8 +4,8 @@ title: Verwalten und Anpassen von Listen
 description: Erfahren Sie, wie Sie Listen durchsuchen und konfigurieren.
 feature: Audiences, Data Management
 exl-id: 21656cc2-15a1-4156-8897-ea4fe3e9b97f
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
-workflow-type: ht
+source-git-commit: fdb840a9e6349f074378899e07f794b62fb5b054
+workflow-type: tm+mt
 source-wordcount: '1198'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Verwalten und Anpassen von Listen{#manage-and-customize-lists}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Sie können mit dem Explorer auf die Listen von Datensätzen in der Campaign-Datenbank zugreifen. Sie können diese Listen filtern, Suchvorgänge durchführen und Informationen hinzufügen sowie Daten filtern und sortieren.
 

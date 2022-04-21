@@ -6,10 +6,10 @@ title: Campaign Classic v7 – Handbuch
 user-guide-description: Mit Adobe Campaign können Sie umfangreiche Kundendaten verwenden, um dynamische Kampagnen, die Kunden tatsächlich wünschen, zu erstellen, zu koordinieren und bereitzustellen. Über E-Mail, mobile Kanäle, Offline-Kanäle und mehr.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: dd7217bd508d718d84c417fcdf7610a5582ef204
-workflow-type: ht
-source-wordcount: '2552'
-ht-degree: 100%
+source-git-commit: a8044037e889f59d4288a0746001e84d319f6bcf
+workflow-type: tm+mt
+source-wordcount: '2571'
+ht-degree: 99%
 
 ---
 
@@ -53,7 +53,11 @@ ht-degree: 100%
    + Datenschutz {#privacy}
       + [Datenschutz und Einverständniserklärung](platform/using/privacy-and-recommendations.md)
       + [Datenschutzverwaltung](platform/using/privacy-management.md)
-      + [Datenschutzanfragen](platform/using/privacy-requests.md)
+      + Datenschutzanfragen {#privacy-requests}
+         + [Datenschutzanfragen](platform/using/privacy-requests.md)
+         + [Erstellen und Verwalten von Datenschutzanfragen](platform/using/privacy-requests-ui.md)
+         + [Automatischer Prozess für Datenschutzanfragen](platform/using/privacy-requests-api.md)
+         + [Opt-out aus dem Verkauf von personenbezogenen Daten](platform/using/privacy-requests-ccpa.md)
    + Profilverwaltung {#profile-management}
       + [Über Profile](platform/using/about-profiles.md)
       + [Bearbeiten von Profilen](platform/using/editing-a-profile.md)

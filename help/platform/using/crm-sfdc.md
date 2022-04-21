@@ -4,7 +4,7 @@ title: Campaign-Salesforce CRM-Connector
 description: Erfahren Sie, wie Sie Campaign und Salesforce verbinden
 feature: Salesforce Integration
 exl-id: 94a1f00d-e952-4edd-9012-f71c87b897ca
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: fdb840a9e6349f074378899e07f794b62fb5b054
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 100%
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Campaign und Salesforce.com verbinden{#connect-to-sfdc}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Auf dieser Seite erfahren Sie, wie Sie Campaign Classic mit **Salesforce** verbinden.
 

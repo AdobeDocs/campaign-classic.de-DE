@@ -4,8 +4,8 @@ title: Campaign – Microsoft Dynamics CRM-Connector
 description: Erfahren Sie, wie Sie Campaign und Microsoft Dynamics verbinden
 feature: Microsoft CRM Integration
 exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
-workflow-type: ht
+source-git-commit: fdb840a9e6349f074378899e07f794b62fb5b054
+workflow-type: tm+mt
 source-wordcount: '1132'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Campaign und Microsoft Dynamics 365 verbinden{#connect-to-msdyn}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Auf dieser Seite erfahren Sie, wie Sie Campaign Classic mit **Microsoft Dynamics CRM 365** verbinden.
 
