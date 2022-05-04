@@ -1,14 +1,15 @@
 ---
 product: campaign
-title: Datenschutzanfragen erstellen
+title: Erstellen von Datenschutzanfragen
 description: Erfahren Sie, wie Sie Datenschutzanfragen erstellen und verwalten
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-source-git-commit: a8044037e889f59d4288a0746001e84d319f6bcf
-workflow-type: tm+mt
+exl-id: 73b90d79-88b6-4aaf-8103-4564de5e06be
+source-git-commit: 42b420d7dae7d38e9f4df442146d3b484c25e831
+workflow-type: ht
 source-wordcount: '831'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -16,9 +17,9 @@ ht-degree: 95%
 
 ![](../../assets/v7-only.svg)
 
-In diesem Abschnitt wird beschrieben, wie Sie Zugriffs- und Löschanfragen erstellen und wie Adobe Campaign diese verarbeitet.
+In diesem Abschnitt wird beschrieben, wie Sie Zugriffs- und Löschanfragen erstellen und wie sie in Adobe Campaign verarbeitet werden.
 
-## Datenschutzanfrage erstellen {#create-privacy-request-ui}
+## Erstellen einer Datenschutzanfrage {#create-privacy-request-ui}
 
 Mit der **Adobe Campaign-Oberfläche** können Sie Ihre Datenschutzanfragen erstellen und ihren Fortschritt verfolgen. Gehen Sie wie folgt vor, um eine neue Datenschutzanfrage zu erstellen:
 
