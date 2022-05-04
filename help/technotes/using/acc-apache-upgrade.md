@@ -1,61 +1,62 @@
 ---
 product: campaign
-title: Technote - Adobe Campaign - Aktualisierung der Apache-Versionssicherheit
-description: Adobe Campaign - Aktualisierung der Apache-Versionssicherheit
+title: Technote – Adobe Campaign – Apache-Sicherheits-Update
+description: Adobe Campaign – Sicherheits-Update der Apache-Version
 hide: true
 hidefromtoc: true
-source-git-commit: 41aa16e3ac6f150b9a048a22729b4cc4b9ccc10a
-workflow-type: tm+mt
+exl-id: 3d2f5d1d-4b31-4cc6-b6fb-13589856e00c
+source-git-commit: 2ff406e02e6de8cd30bdb4e9f045e1ef87a39301
+workflow-type: ht
 source-wordcount: '450'
-ht-degree: 6%
+ht-degree: 100%
 
 ---
 
-# Adobe Campaign - Aktualisierung der Apache-Versionssicherheit {#apache-update}
+# Adobe Campaign – Sicherheits-Update der Apache-Version {#apache-update}
 
 Campaign Classic arbeitet mit Tools von Drittanbietern. Die Kompatibilität wird regelmäßig aktualisiert, um nur unterstützte Versionen zu implementieren und von den neuesten Fehlerbehebungen und Verbesserungen zu profitieren.
 
-Adobe Campaign enthält Apache Tomcat, der über HTTP als Einstiegspunkt im Anwendungsserver fungiert und mit dem Apache-Webserver integriert ist. Die Apache Software Foundation hat Apache HTTP Server 2.4.53 veröffentlicht. Diese Version behebt Schwachstellen, die es einem entfernten Angreifer ermöglichen könnten, die Kontrolle über ein betroffenes System zu übernehmen. Weitere Informationen finden Sie unter [Apache 2.4.53 - Ankündigung](https://downloads.apache.org/httpd/Announcement2.4.html){target=&quot;_blank&quot;}.
+Adobe Campaign nutzt Apache Tomcat, das über HTTP als Einstiegspunkt im Programm-Server fungiert und mit dem Apache-Webserver integriert ist. Die Apache Software Foundation hat Apache HTTP Server 2.4.53 veröffentlicht. Diese Version behebt Schwachstellen, die es einem Angreifer ermöglichen könnte, die Kontrolle über ein System zu übernehmen. Weitere Informationen finden Sie unter [Apache 2.4.53 – Ankündigung](https://downloads.apache.org/httpd/Announcement2.4.html){target=&quot;_blank&quot;}.
 
-Das Adobe Campaign-Team führt die Sicherheitsaktualisierung der Apache-Version durch **31. Mai 2022** um diese Apache-Schwachstelle zu beheben und Ihre Instanzumgebung sicherer zu machen. Dieses Upgrade gilt für alle Managed Services-Kunden, die eine verwundbare Version des Apache HTTP-Servers verwenden. Wenn Sie betroffen sind, hat sich Adobe bereits mit Ihnen in Verbindung gesetzt, um Sie über dieses Upgrade zu informieren.
+Das Adobe Campaign-Team führt das Sicherheits-Update der Apache-Version bis spätestens **31. Mai 2022** durch, um diese Apache-Schwachstelle zu beheben und für Sicherheit in Ihrer Instanzumgebung zu sorgen. Von diesem Upgrade sind alle Managed Services-Kunden betroffen, die eine Version des Apache-HTTP-Servers verwenden, die Schwachstellen aufweist. Falls Sie betroffen sind, hat sich Adobe bereits mit Ihnen in Verbindung gesetzt, um Sie über dieses Upgrade zu informieren.
 
-Es wird erwartet, dass dieses Upgrade außerhalb Ihrer normalen Geschäftszeiten automatisch ausgeführt wird, damit Sie den Campaign-Dienst ohne Unterbrechung weiter verwenden können.
+Dieses Upgrade wird voraussichtlich außerhalb Ihrer normalen Geschäftszeiten automatisch ausgeführt, damit Sie den Campaign-Service ohne Unterbrechung weiter verwenden können.
 
-Ihre Nicht-Produktionsinstanz(en) werden von unseren Teams zuerst aktualisiert, bevor wir Ihre Produktionsinstanz(en) aktualisieren. Da es sich um einen automatischen Aktualisierungsprozess im Besitz von Adobe handelt, ist von Ihrer Seite aus keine Aktion erforderlich. Sollten dennoch Probleme auftreten, wenden Sie sich an [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign#support).
+Vor der Aktualisierung Ihrer Produktionsinstanzen werden Ihre Nicht-Produktionsinstanzen von unseren Teams aktualisiert. Da es sich um einen automatischen Aktualisierungsprozess durch Adobe handelt, ist von Ihrer Seite aus keine Aktion erforderlich. Sollten dennoch Probleme auftreten, wenden Sie sich bitte an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign#support).
 
 
 >[!NOTE]
->Für dieses Upgrade ist ein Neustart des Apache-Webservers erforderlich. Die Ausfallzeit beträgt innerhalb des unten genannten Zeitfensters nicht mehr als 10 Minuten.
+>Für dieses Upgrade ist ein Neustart des Apache-Webservers erforderlich. Die Ausfallzeit beträgt innerhalb des unten genannten Zeitfensters maximal 10 Minuten.
 
 ## Häufig gestellte Fragen {#apache-faq}
 
-* **Warum ist dies ein obligatorisches Upgrade?**
+* **Warum ist dieses Upgrade obligatorisch?**
 
-   Die aktuelle Apache-Version ist anfällig und hat eine potenzielle Sicherheitsbedrohung. Es ist wichtig, dass Ihre Campaign-Instanz(en) auf die neueste anwendbare Apache-Version aktualisiert wird, um das Sicherheitsrisiko zu beheben.
-
-
-* **Welche Kunden sind für Sicherheitsaktualisierungen vorgesehen?**
-
-   Alle Kunden, die Campaign-Umgebungen verwenden, die in älteren Apache-Versionen implementiert sind, werden auf die neueste anwendbare Apache-Version aktualisiert.
-
-* **Wie hoch ist die erwartete Ausfallzeit?**
-
-   Die erwartete Ausfallzeit liegt unter 10 Minuten.
+   Die aktuelle Apache-Version hat eine Schwachstelle und ist eine potenzielle Sicherheitsbedrohung. Ihre Campaign-Instanzen müssen auf die neueste Apache-Version aktualisiert werden, um dieses Sicherheitsrisiko zu beheben.
 
 
-* **Gibt es Maßnahmen, die der Kunde für dieses Sicherheitsupdate benötigt?**
+* **Welche Kunden erhalten diese Sicherheits-Updates?**
+
+   Alle Kunden, die Campaign-Umgebungen verwenden, die in älteren Apache-Versionen implementiert sind, erhalten ein Upgrade auf die neueste Apache-Version.
+
+* **Mit welcher Ausfallzeit ist zu rechnen?**
+
+   Die erwartete Ausfallzeit liegt bei maximal 10 Minuten.
+
+
+* **Gibt es Maßnahmen, die der Kunde für dieses Sicherheits-Update treffen muss?**
 
    Es sind keine Aktionen erforderlich, da das Sicherheits-Upgrade automatisch ausgeführt wird.
 
 
 * **Welche Validierungen müssen von den Kunden ausgeführt werden?**
 
-   Für dieses Sicherheitsupdate sind keine spezifischen Tests erforderlich. Falls ein Problem beobachtet wird, wenden Sie sich bitte an [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign#support)
+   Für dieses Sicherheits-Update sind keine spezifischen Tests erforderlich. Falls ein Problem festgestellt wird, wenden Sie sich bitte an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign#support)
 
 
-* **Kann ich eine Änderung des Datums-/Uhrzeitwerts für den geplanten Zeitfenster für die Aktualisierung der Sicherheit anfordern?**
+* **Kann ich eine Änderung des geplanten Zeitfensters für das Sicherheits-Update anfordern?**
 
-   Da es sich um eine Sicherheitskorrektur handelt, empfehlen wir dringend, sich an den vorhandenen Zeitplan anzupassen.
+   Da es sich um die Behebung einer Schwachstelle handelt, empfehlen wir dringend, sich an den vorgegebenen Zeitplan zu halten.
 
 
 Für alle anderen Fragen wenden Sie sich bitte an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign#support).
