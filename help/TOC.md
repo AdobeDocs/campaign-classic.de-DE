@@ -7,9 +7,9 @@ user-guide-description: Mit Adobe Campaign können Sie umfangreiche Kundendaten 
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 490ba0102f54e2d82e0bff1aa72b67ac118bf7a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2570'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -834,7 +834,7 @@ ht-degree: 99%
    + [Empfehlungen zur Hardware-Dimensionierung](technotes/using/hardware-sizing.md)
    + Aktualisierungen und Kompatibilität{#technote-migration}
       + [Technotes](technotes/using/technote.md)
-      + [Apache Security Upgrade](technotes/using/acc-apache-upgrade.md)
+      + [Apache-Sicherheits-Update](technotes/using/acc-apache-upgrade.md)
       + [Konfigurations-Aktualisierungen in Campaign](technotes/using/acc-config-updates.md)
       + [IMS-Aktualisierungen](technotes/using/ims-updates.md)
       + [Beendigung der Unterstützung für TLS 1.0 und 1.1](technotes/using/eol-tls-support.md)
