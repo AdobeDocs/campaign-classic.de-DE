@@ -5,10 +5,10 @@ description: Erfahren Sie, wie Sie die Pipeline konfigurieren.
 audience: integrations
 content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
-source-git-commit: b8f74c290106d57630c5d486c04b8424132e3297
+source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
 workflow-type: tm+mt
-source-wordcount: '914'
-ht-degree: 100%
+source-wordcount: '919'
+ht-degree: 98%
 
 ---
 
@@ -34,8 +34,8 @@ Bevor Sie mit dieser Konfiguration beginnen, überprüfen Sie, ob Sie Folgendes 
 Sie benötigen außerdem:
 
 * Projektauthentifizierung für Adobe I/O
-* eine gültige IMSOrgId; die Kennung des Experience Cloud-Kunden, wobei Adobe Analytics hinzugefügt sein muss
-* Entwicklerzugriff auf die IMS-Organisation
+* Eine gültige Organisations-ID - Informationen zum Auffinden Ihrer Organisations-ID finden Sie unter [diese Seite](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=de){_blank}
+* ein Entwicklerzugriff auf Ihr Unternehmen
 * Trigger-Konfiguration, ausgeführt in Adobe Analytics
 
 ## Authentifizierung und Konfigurationsdateien {#authentication-configuration}

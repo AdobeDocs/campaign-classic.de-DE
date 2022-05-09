@@ -6,10 +6,10 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: b70ca220-1c81-4b23-b07a-a2cd694877fe
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
 workflow-type: tm+mt
-source-wordcount: '361'
-ht-degree: 100%
+source-wordcount: '357'
+ht-degree: 61%
 
 ---
 
@@ -25,12 +25,12 @@ ht-degree: 100%
 
 Für die Integration mit IMS:
 
-* benötigen Sie eine Adobe Experience Cloud-Organisation und IMS-Kennungen (werden bereitgestellt, wenn sie Ihre erste Verbindung zu Adobe Experience Cloud herstellen).
-* müssen Sie in Experience Cloud Benutzer hinzufügen. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=de).
+* Sie müssen über einen Namen und eine Kennung der Adobe Experience Cloud-Organisation verfügen. Die Organisations-ID finden Sie unter [diese Seite](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=de){_blank}.
+* müssen Sie in Experience Cloud Benutzer hinzufügen. Weitere Informationen hierzu finden Sie unter [diese Seite](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html){_blank}.
 
 >[!NOTE]
 >
->Vergewissern Sie sich, dass Ihre Benutzer mit Adobe Experience Cloud-Gruppen verknüpft sind, die mit Adobe Campaign synchronisiert werden. Siehe [Konfiguration des externen Kontos](#configuring-the-external-account).
+>Vergewissern Sie sich, dass Ihre Benutzer mit Adobe Experience Cloud-Gruppen verknüpft sind, die mit Adobe Campaign synchronisiert werden. [Weitere Informationen](#configuring-the-external-account).
 
 ## Konsole aktualisieren {#updating-the-console}
 
@@ -38,7 +38,7 @@ Die Nutzung dieser Funktion setzt die Installation der neuesten Version der Kons
 
 ## Package-Installation {#installing-the-package}
 
-Sie müssen das Package **[!UICONTROL Integration mit Adobe Experience Cloud]** installieren. Die Installation eines Integrations-Packages entspricht der Installation eines Standard-Packages, die auf [dieser Seite](../../installation/using/installing-campaign-standard-packages.md) beschrieben wird.
+Sie müssen das integrierte **[!UICONTROL Integration in Adobe Experience Cloud]** Paket. Die Installation eines Integrationspakets entspricht der Installation eines Standard-Packages, die im Abschnitt [diese Seite](../../installation/using/installing-campaign-standard-packages.md).
 
 ![](assets/ims_6.png)
 
@@ -58,8 +58,8 @@ Folgende Angaben sind erforderlich:
 
    Die **[!UICONTROL Callback-Server]**-Adresse muss in **https** angegeben werden. Dieses Feld enthält die URL zum Zugriff auf Ihre Adobe Campaign-Instanz.
 
-* Kennung der IMS-Organisations-ID (organization ID): Sie ist in Adobe Experience Cloud verfügbar (über **[!UICONTROL Administration > Experience Cloud Details]**). Diese Informationen erhalten Sie bei der Anmeldung zu Adobe Experience Cloud.
-* Zuordnungsmaske: Dieses Feld dient dazu, die Syntax zu definieren, die die Synchronisation der Konfigurationsnamen aus dem Enterprise Dashboard mit den Adobe Campaign-Gruppen ermöglicht. Wenn Sie die Syntax &quot;Campaign - tenant_id - (.*)&quot; verwenden, wird die in Adobe Campaign erstellte Sicherheitsgruppe dem Konfigurationsnamen &quot;Campaign - tenant_id - internal_name&quot; im Enterprise Dashboard zugeordnet.
+* Organisations-ID: Ihre Organisations-ID finden Sie unter [diese Seite](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html){_blank}.
+* Zuordnungsmaske: In diesem Feld können Sie die Syntax definieren, mit der Konfigurationsnamen im Enterprise Dashboard mit den Gruppen in Adobe Campaign synchronisiert werden können. Wenn Sie die Syntax &quot;Campaign - tenant_id - (.&#42;)&quot;, wird die in Adobe Campaign erstellte Sicherheitsgruppe mit dem Konfigurationsnamen &quot;Campaign - tenant_id - internal_name&quot;im Enterprise Dashboard verknüpft.
 
    >[!CAUTION]
    >

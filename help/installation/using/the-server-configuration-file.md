@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
+source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
 workflow-type: tm+mt
-source-wordcount: '7961'
+source-wordcount: '7957'
 ht-degree: 39%
 
 ---
@@ -3282,7 +3282,7 @@ Weitere Informationen finden Sie in diesem Abschnitt [Abschnitt](../../installat
  <tbody> 
   <tr> 
    <td> IMSOrgId<br /> </td> 
-   <td> Organisationskennung des Identity Management-Systems (IMS): eindeutige Organisationskennung innerhalb der Adobe Experience Cloud, die insbesondere für den VisitorID-Dienst und die IMS-SSO verwendet wird. <br /> </td> 
+   <td> Organisations-ID: eindeutige Organisationskennung innerhalb der Adobe Experience Cloud, die insbesondere für den VisitorID-Dienst und die IMS-SSO verwendet wird. <br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 

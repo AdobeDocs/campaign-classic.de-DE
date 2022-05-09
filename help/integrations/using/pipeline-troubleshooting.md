@@ -5,10 +5,10 @@ description: 'Fehlerbehebung bei Pipelines '
 audience: integrations
 content-type: reference
 exl-id: 76645a6f-9536-49d6-b12a-fdd6113d31fa
-source-git-commit: 36b10a49fe92853f98beeb9e7d2fea3f59b10b6f
-workflow-type: ht
-source-wordcount: '693'
-ht-degree: 100%
+source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
+workflow-type: tm+mt
+source-wordcount: '707'
+ht-degree: 92%
 
 ---
 
@@ -30,11 +30,11 @@ Legen Sie in der Option **NmsPipeline_Config** die JSON-Konfiguration fest. Sieh
 
 **Pipelined schlägt fehl mit der Fehlermeldung &quot;the subject must be a valid organization or client&quot;**
 
-Die Konfiguration der Organisationskennung ist ungültig.
+Die Konfiguration der Organisations-ID ist ungültig.
 
-1. Überprüfen Sie, ob die IMSOrgId in der Datei &quot;serverConf.xml&quot; festgelegt ist.
-1. Suchen Sie in der Konfigurationsdatei der Instanz nach einer leeren IMSOrgId, die den Standard überschreiben kann. Wenn vorhanden, entfernen Sie den Standard.
-1. Überprüfen Sie, ob die IMSOrgId mit der des Kunden in Experience Cloud übereinstimmt.
+1. Überprüfen Sie, ob die Organisations-ID (ImsOrgId) in der Datei serverConf.xml festgelegt ist.
+1. Überprüfen Sie, ob eine leere Organisations-ID in der Konfigurationsdatei der Instanz die standardmäßige überschreiben könnte. Wenn vorhanden, entfernen Sie den Standard.
+1. Überprüfen Sie, ob die Organisations-ID korrekt ist. Die Organisations-ID finden Sie unter [diese Seite](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=de){_blank}
 
 **Pipelined schlägt fehl mit der Fehlermeldung &quot;invalid key&quot;**
 
