@@ -5,10 +5,10 @@ description: Adobe Campaign – Sicherheits-Update der Apache-Version
 hide: true
 hidefromtoc: true
 exl-id: 3d2f5d1d-4b31-4cc6-b6fb-13589856e00c
-source-git-commit: 209e3ffc5b11a776a8d16ab210097e5ee4e48b0d
+source-git-commit: ef34decdb33cdfd095c437abd5d1eb029f8a0648
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '476'
+ht-degree: 79%
 
 ---
 
@@ -21,7 +21,7 @@ Adobe Campaign arbeitet mit Tools von Drittanbietern. Die Kompatibilität wird r
 
 Adobe Campaign nutzt Apache Tomcat, das über HTTP als Einstiegspunkt im Programm-Server fungiert und mit dem Apache-Webserver integriert ist. Die Apache Software Foundation hat Apache HTTP Server 2.4.53 veröffentlicht. Diese Version behebt Schwachstellen, die es einem Angreifer ermöglichen könnte, die Kontrolle über ein System zu übernehmen. Weitere Informationen finden Sie unter [Apache 2.4.53 – Ankündigung](https://downloads.apache.org/httpd/Announcement2.4.html){target=&quot;_blank&quot;}.
 
-Das Adobe Campaign-Team führt das Sicherheits-Update der Apache-Version bis spätestens **31. Mai 2022** durch, um diese Apache-Schwachstelle zu beheben und für Sicherheit in Ihrer Instanzumgebung zu sorgen. Dieses Upgrade gilt für alle Campaign Classic v7 Managed Services-Kunden, Campaign v8- und Campaign Standard-Kunden, die eine verwundbare Version von Apache HTTP Server verwenden. Falls Sie betroffen sind, hat sich Adobe bereits mit Ihnen in Verbindung gesetzt, um Sie über dieses Upgrade zu informieren.
+Das Adobe Campaign-Team führt die Sicherheitsaktualisierung der Apache-Version durch **15. Juni 2022** um diese Apache-Schwachstelle zu beheben und Ihre Instanzumgebung sicherer zu machen. Dieses Upgrade gilt für alle Campaign Classic v7 Managed Services-Kunden, Campaign v8- und Campaign Standard-Kunden, die eine verwundbare Version von Apache HTTP Server verwenden. Falls Sie betroffen sind, hat sich Adobe bereits mit Ihnen in Verbindung gesetzt, um Sie über dieses Upgrade zu informieren.
 
 Dieses Upgrade wird voraussichtlich außerhalb Ihrer normalen Geschäftszeiten automatisch ausgeführt, damit Sie den Campaign-Service ohne Unterbrechung weiter verwenden können.
 
