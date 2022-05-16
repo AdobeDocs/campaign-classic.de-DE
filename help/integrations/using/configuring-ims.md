@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: b70ca220-1c81-4b23-b07a-a2cd694877fe
 source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '357'
-ht-degree: 61%
+ht-degree: 100%
 
 ---
 
@@ -23,10 +23,10 @@ ht-degree: 61%
 
 ## Voraussetzungen {#prerequisites}
 
-Für die Integration mit IMS:
+Damit Sie die Integration mit IMS nutzen können:
 
-* Sie müssen über einen Namen und eine Kennung der Adobe Experience Cloud-Organisation verfügen. Die Organisations-ID finden Sie unter [diese Seite](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=de){_blank}.
-* müssen Sie in Experience Cloud Benutzer hinzufügen. Weitere Informationen hierzu finden Sie unter [diese Seite](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html){_blank}.
+* Müssen Sie über einen Organisationsnamen und eine Organisations-ID für Adobe Experience Cloud verfügen. Auf [dieser Seite](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=de){_blank} erfahren Sie, wie Sie Ihre Organisations-ID finden.
+* Müssen Sie in Experience Cloud Benutzer hinzufügen. Weitere Informationen hierzu finden Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=de){_blank}.
 
 >[!NOTE]
 >
@@ -38,7 +38,7 @@ Die Nutzung dieser Funktion setzt die Installation der neuesten Version der Kons
 
 ## Package-Installation {#installing-the-package}
 
-Sie müssen das integrierte **[!UICONTROL Integration in Adobe Experience Cloud]** Paket. Die Installation eines Integrationspakets entspricht der Installation eines Standard-Packages, die im Abschnitt [diese Seite](../../installation/using/installing-campaign-standard-packages.md).
+Sie müssen das integrierte Paket **[!UICONTROL Integration mit Adobe Experience Cloud]** installieren. Die Installation eines Integrationspakets erfolgt auf die gleiche Weise wie die Installation eines Standardpakets, was auf [dieser Seite](../../installation/using/installing-campaign-standard-packages.md) beschrieben wird.
 
 ![](assets/ims_6.png)
 
@@ -58,8 +58,8 @@ Folgende Angaben sind erforderlich:
 
    Die **[!UICONTROL Callback-Server]**-Adresse muss in **https** angegeben werden. Dieses Feld enthält die URL zum Zugriff auf Ihre Adobe Campaign-Instanz.
 
-* Organisations-ID: Ihre Organisations-ID finden Sie unter [diese Seite](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html){_blank}.
-* Zuordnungsmaske: In diesem Feld können Sie die Syntax definieren, mit der Konfigurationsnamen im Enterprise Dashboard mit den Gruppen in Adobe Campaign synchronisiert werden können. Wenn Sie die Syntax &quot;Campaign - tenant_id - (.&#42;)&quot;, wird die in Adobe Campaign erstellte Sicherheitsgruppe mit dem Konfigurationsnamen &quot;Campaign - tenant_id - internal_name&quot;im Enterprise Dashboard verknüpft.
+* Organisations-ID: Auf [dieser Seite](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=de){_blank} erfahren Sie, wie Sie Ihre Organisations-ID finden.
+* Zuordnungsmaske: In diesem Feld können Sie die Syntax festlegen, mit der Konfigurationsnamen in Enterprise Dashboard mit den Gruppen in Adobe Campaign synchronisiert werden können. Wenn Sie die Syntax &quot;Campaign - tenant_id - (.&#42;)&quot; verwenden, wird die in Adobe Campaign erstellte Sicherheitsgruppe mit dem Konfigurationsnamen &quot;Campaign - tenant_id - internal_name&quot; in Enterprise Dashboard verknüpft.
 
    >[!CAUTION]
    >
