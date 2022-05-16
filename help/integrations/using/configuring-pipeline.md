@@ -6,9 +6,9 @@ audience: integrations
 content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
 source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '919'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -34,9 +34,9 @@ Bevor Sie mit dieser Konfiguration beginnen, überprüfen Sie, ob Sie Folgendes 
 Sie benötigen außerdem:
 
 * Projektauthentifizierung für Adobe I/O
-* Eine gültige Organisations-ID - Informationen zum Auffinden Ihrer Organisations-ID finden Sie unter [diese Seite](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=de){_blank}
+* eine gültige Organisations-ID. Auf [dieser Seite](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=de){_blank} erfahren Sie, wie Sie Ihre Organisations-ID finden.
 * ein Entwicklerzugriff auf Ihr Unternehmen
-* Trigger-Konfiguration, ausgeführt in Adobe Analytics
+* Triggers-Konfiguration, ausgeführt in Adobe Analytics
 
 ## Authentifizierung und Konfigurationsdateien {#authentication-configuration}
 
