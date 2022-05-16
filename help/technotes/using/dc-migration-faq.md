@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
 source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2215'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -143,9 +143,9 @@ Globale Auswirkungen auf die Konfiguration, die Konnektivität mit anderen Syste
 
    Auf der Zulassungsliste werden IP-Adressen in der externen Lösung benötigt, da sich die IP der Anwendungs-Server ändert. Diese Informationen werden bereitgestellt. Andere Teile der Integration sind IMS-basiert und sollten unverändert funktionieren.
 
-* **Was ist mit Kunden, die für die IMS-Integration nicht mit der Organisations-ID verknüpft sind?**
+* **Was ist mit Kunden, die keine Organisations-ID für die IMS-Integration haben?**
 
-   Kunden, die nicht über IMS verfügen, erhalten eine: wird eine Organisations-ID an ihre Instanz angehängt.
+   Kunden, die noch nicht in das IMS integriert sind, erhalten eine Organisations-ID, die mit ihrer Instanz verknüpft ist.
 
 * **Sind Multi-Branding-Konfigurationen von der Migration betroffen?**
 
