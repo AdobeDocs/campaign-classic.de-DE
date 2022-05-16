@@ -9,9 +9,9 @@ internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
 source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '741'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -32,12 +32,12 @@ Diese Integration gilt nur ab **Campaign Classic-Version 20.2.4 und höher, 19.1
 
 Bevor Sie mit dieser Implementierung beginnen, überprüfen Sie, ob Folgendes vorhanden ist:
 
-* ein gültiges **Organisationskennung**: Die Organisations-ID ist die eindeutige Kennung innerhalb der Adobe Experience Cloud, die beispielsweise für den Besucher-ID-Dienst und die IMS-Single-Sign-On (SSO) verwendet wird. [Weitere Informationen](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=de)
-* ein **Entwicklerzugriff** auf Ihr Unternehmen. Der Systemadministrator der Organisation muss dem **Entwickler zu einem einzelnen Produktprofil hinzufügen** detailliertes Verfahren [auf dieser Seite](https://helpx.adobe.com/de/enterprise/using/manage-developers.html) , um Entwicklerzugriff für `Analytics - {tenantID}` Produktprofil des mit Triggern verknüpften Adobe Analytics-Produkts.
+* eine gültige **Organisationskennung**: Die Organisations-ID ist die eindeutige Kennung innerhalb der Adobe Experience Cloud, die zum Beispiel für den VisitorID-Dienst und das IMS Single-Sign On (SSO) verwendet wird. [Weitere Informationen](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=de)
+* ein **Entwicklerzugriff** auf Ihr Unternehmen. Der Systemadministrator der Organisation muss das Verfahren zum **Hinzufügen von Entwicklern zu einem einzelnen Produktprofil** befolgen, das [auf dieser Seite](https://helpx.adobe.com/de/enterprise/using/manage-developers.html?lang=de) beschrieben wird. Damit ermöglicht er den Entwicklerzugriff für das `Analytics - {tenantID}` Produktprofil des Adobe Analytics-Produkts, das mit Triggers verbunden ist.
 
 ## Schritt 1: Erstellen/Aktualisieren eines Adobe I/O-Projekts {#creating-adobe-io-project}
 
-1. Zugriff [!DNL Adobe I/O] und melden Sie sich mit dem Entwicklerzugriff Ihrer Organisation an.
+1. Greifen Sie auf [!DNL Adobe I/O] zu und melden Sie sich mit den Entwicklerzugangsdaten Ihrer Organisation an.
 
    >[!NOTE]
    >
