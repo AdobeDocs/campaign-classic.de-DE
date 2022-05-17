@@ -5,17 +5,17 @@ description: Adobe Campaign – Sicherheits-Update der Apache-Version
 hide: true
 hidefromtoc: true
 exl-id: 3d2f5d1d-4b31-4cc6-b6fb-13589856e00c
-source-git-commit: e0f4cc33ea715d013596afa12894cc8e5023154b
+source-git-commit: a3eae4e253f66f5a651ffe0458f60b1f8bdf2258
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 87%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Adobe Campaign – Sicherheits-Update der Apache-Version {#apache-update}
 
 >[!CAUTION]
->Dieser Artikel gilt für: Campaign Classic v7 Managed Services-Kunden, Campaign v8-Kunden und Campaign Standard-Kunden.
+>Dieser Artikel gilt für: **Campaign Classic v7 Managed Services** Kunden, **Campaign v8** Kunden und **Campaign Standard** -Kunden.
 
 Adobe Campaign arbeitet mit Tools von Drittanbietern zusammen. Diese Kompatibilität wird regelmäßig aktualisiert, damit Sie nur unterstützte Versionen implementieren und von den neuesten Korrekturen und Verbesserungen profitieren können.
 
@@ -25,7 +25,7 @@ Das Adobe Campaign-Team wird bis zum **15. Juni 2022** ein Sicherheits-Upgrade d
 
 Dieses Upgrade wird voraussichtlich außerhalb Ihrer normalen Geschäftszeiten automatisch ausgeführt, damit Sie den Campaign-Service ohne Unterbrechung weiter verwenden können.
 
-Vor der Aktualisierung Ihrer Produktionsinstanzen werden Ihre Nicht-Produktionsinstanzen von unseren Teams aktualisiert. Da es sich um einen automatischen Aktualisierungsprozess durch Adobe handelt, ist von Ihrer Seite aus keine Aktion erforderlich. Sollten dennoch Probleme auftreten, wenden Sie sich bitte an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign#support).
+Ihre Nicht-Produktionsinstanz(en) werden zuerst von Adobe aktualisiert, dann werden Ihre Produktionsinstanz(en) aktualisiert. Da es sich um einen automatischen Aktualisierungsprozess durch Adobe handelt, ist von Ihrer Seite aus keine Aktion erforderlich. Sollten dennoch Probleme auftreten, wenden Sie sich bitte an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign#support).
 
 
 >[!NOTE]
