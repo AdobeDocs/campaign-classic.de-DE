@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 1bb1365ce5a4eb89447c5d736a42cd470c7f3bba
-workflow-type: ht
-source-wordcount: '721'
-ht-degree: 100%
+source-git-commit: 5ce8e765866d84781b1000511e9aea4636ebd91d
+workflow-type: tm+mt
+source-wordcount: '733'
+ht-degree: 96%
 
 ---
 
@@ -227,7 +227,7 @@ Die externen Datenbanken, die mit dem [Federated Data Access-Modul](../../instal
 </tbody>
 </table>
 
-Darüber hinaus kann bei **Hybrid**- und **On-Premise**-Umgebungen auch eine Verbindung hergestellt werden von Campaign zu:
+Darüber hinaus **Hybrid** und **On-Premise** Umgebungen können Campaign auch mit den folgenden externen Datenbanksystemen verbinden. Diese Systeme **nicht kompatibel** mit Campaign **Managed Services** (gehostete) Umgebungen.
 
 <table>
 <tbody>
@@ -420,13 +420,7 @@ Die folgenden Browser sind mit Campaign für [Web-Zugriff](../../campaign/using/
 <p>Neueste Version</p>
 </td>
 </tr>
-<tr>
-<td>
-<p>Microsoft Internet Explorer</p>
-</td>
-<td>
-<p>11</p>
-</td>
+
 </tr>
 </tbody>
 </table>
