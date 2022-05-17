@@ -5,10 +5,10 @@ description: Adobe Campaign – Sicherheits-Update der Apache-Version
 hide: true
 hidefromtoc: true
 exl-id: 3d2f5d1d-4b31-4cc6-b6fb-13589856e00c
-source-git-commit: ef34decdb33cdfd095c437abd5d1eb029f8a0648
-workflow-type: ht
-source-wordcount: '476'
-ht-degree: 100%
+source-git-commit: 7ee1cc501342aa59d1752259bf7228ea47a8cccb
+workflow-type: tm+mt
+source-wordcount: '541'
+ht-degree: 87%
 
 ---
 
@@ -37,7 +37,6 @@ Vor der Aktualisierung Ihrer Produktionsinstanzen werden Ihre Nicht-Produktionsi
 
    Die aktuelle Apache-Version hat eine Schwachstelle und ist eine potenzielle Sicherheitsbedrohung. Ihre Campaign-Instanzen müssen auf die neueste Apache-Version aktualisiert werden, um dieses Sicherheitsrisiko zu beheben.
 
-
 * **Welche Kunden erhalten diese Sicherheits-Updates?**
 
    Alle Kunden, die Campaign-Umgebungen verwenden, die in älteren Apache-Versionen implementiert sind, erhalten ein Upgrade auf die neueste Apache-Version.
@@ -49,6 +48,10 @@ Vor der Aktualisierung Ihrer Produktionsinstanzen werden Ihre Nicht-Produktionsi
 * **Gibt es Maßnahmen, die der Kunde für dieses Sicherheits-Update treffen muss?**
 
    Es sind keine Aktionen erforderlich, da das Sicherheits-Upgrade automatisch ausgeführt wird.
+
+* **Welche Auswirkungen hat das Wartungsfenster auf die laufenden Kampagnen/Workflows?**
+
+   Während des Wartungsfensters werden der Workflow und die E-Mail-Dienste angehalten und die geplanten Aktivitäten werden nicht ausgeführt. Alle laufenden Aktivitäten oder laufenden Prozesse werden während der Ausfallzeit angehalten, bis der Server neu gestartet wird. Nachdem die Aktivität abgeschlossen und der Server neu gestartet wurde, werden alle Dienste fortgesetzt.
 
 * **Welche Validierungen müssen von den Kunden ausgeführt werden?**
 
