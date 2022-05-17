@@ -5,7 +5,7 @@ description: Adobe Campaign – Sicherheits-Update der Apache-Version
 hide: true
 hidefromtoc: true
 exl-id: 3d2f5d1d-4b31-4cc6-b6fb-13589856e00c
-source-git-commit: 7ee1cc501342aa59d1752259bf7228ea47a8cccb
+source-git-commit: e0f4cc33ea715d013596afa12894cc8e5023154b
 workflow-type: tm+mt
 source-wordcount: '541'
 ht-degree: 87%
@@ -55,7 +55,7 @@ Vor der Aktualisierung Ihrer Produktionsinstanzen werden Ihre Nicht-Produktionsi
 
 * **Welche Validierungen müssen von den Kunden ausgeführt werden?**
 
-   Für dieses Sicherheits-Update sind keine spezifischen Tests erforderlich. Falls ein Problem festgestellt wird, wenden Sie sich bitte an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign#support)
+   Für dieses Sicherheits-Update sind keine spezifischen Tests erforderlich. Falls ein Problem festgestellt wird, wenden Sie sich bitte an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign#support).
 
 
 * **Kann ich eine Änderung des geplanten Zeitfensters für das Sicherheits-Update anfordern?**
