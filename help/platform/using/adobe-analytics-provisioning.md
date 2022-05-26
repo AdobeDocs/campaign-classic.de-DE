@@ -7,9 +7,9 @@ role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
 source-git-commit: bb806da3d865e0d05e7823b2609227ea8effd875
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '746'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -95,7 +95,7 @@ Ihr Produktprofil ist jetzt konfiguriert. Anschließend müssen Sie das Adobe I/
 
 ## Erstellen eines Adobe I/O-Projekts {#create-adobe-io}
 
-1. Zugriff auf Adobe I/O und Anmeldung als **Systemadministrator** Ihrer Organisation.
+1. Greifen Sie auf Adobe I/O zu und melden Sie sich als **Systemadministrator** Ihrer Organisation an.
 
    Weiterführende Informationen zu Administratorrollen finden Sie auf dieser [Seite](https://helpx.adobe.com/de/enterprise/using/admin-roles.html).
 
