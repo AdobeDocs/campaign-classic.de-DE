@@ -6,16 +6,16 @@ hide: true
 hidefromtoc: true
 exl-id: 3d2f5d1d-4b31-4cc6-b6fb-13589856e00c
 source-git-commit: a3eae4e253f66f5a651ffe0458f60b1f8bdf2258
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '541'
+ht-degree: 100%
 
 ---
 
 # Adobe Campaign – Sicherheits-Update der Apache-Version {#apache-update}
 
 >[!CAUTION]
->Dieser Artikel gilt für: **Campaign Classic v7 Managed Services** Kunden, **Campaign v8** Kunden und **Campaign Standard** -Kunden.
+>Dieser Artikel gilt für Kunden von **Campaign Classic v7 Managed Services**, **Campaign v8** und **Campaign Standard**.
 
 Adobe Campaign arbeitet mit Tools von Drittanbietern zusammen. Diese Kompatibilität wird regelmäßig aktualisiert, damit Sie nur unterstützte Versionen implementieren und von den neuesten Korrekturen und Verbesserungen profitieren können.
 
@@ -25,7 +25,7 @@ Das Adobe Campaign-Team wird bis zum **15. Juni 2022** ein Sicherheits-Upgrade d
 
 Dieses Upgrade wird voraussichtlich außerhalb Ihrer normalen Geschäftszeiten automatisch ausgeführt, damit Sie den Campaign-Service ohne Unterbrechung weiter verwenden können.
 
-Ihre Nicht-Produktionsinstanz(en) werden zuerst von Adobe aktualisiert, dann werden Ihre Produktionsinstanz(en) aktualisiert. Da es sich um einen automatischen Aktualisierungsprozess durch Adobe handelt, ist von Ihrer Seite aus keine Aktion erforderlich. Sollten dennoch Probleme auftreten, wenden Sie sich bitte an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign#support).
+Zuerst werden Ihre Nicht-Produktionsinstanzen von Adobe aktualisiert, danach werden Ihre Produktionsinstanzen aktualisiert. Da es sich um einen automatischen Aktualisierungsprozess durch Adobe handelt, ist von Ihrer Seite aus keine Aktion erforderlich. Sollten dennoch Probleme auftreten, wenden Sie sich bitte an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign#support).
 
 
 >[!NOTE]
@@ -51,7 +51,7 @@ Ihre Nicht-Produktionsinstanz(en) werden zuerst von Adobe aktualisiert, dann wer
 
 * **Welche Auswirkungen hat das Wartungsfenster auf die laufenden Kampagnen/Workflows?**
 
-   Während des Wartungsfensters werden der Workflow und die E-Mail-Dienste angehalten und die geplanten Aktivitäten werden nicht ausgeführt. Alle laufenden Aktivitäten oder laufenden Prozesse werden während der Ausfallzeit angehalten, bis der Server neu gestartet wird. Nachdem die Aktivität abgeschlossen und der Server neu gestartet wurde, werden alle Dienste fortgesetzt.
+   Während des Wartungsfensters werden der Workflow und die E-Mail-Services angehalten und die geplanten Aktivitäten werden nicht ausgeführt. Alle laufenden Aktivitäten oder Prozesse werden während der Ausfallzeit angehalten, bis der Server neu gestartet wird. Nachdem die Aktivität abgeschlossen und der Server neu gestartet wurde, werden alle Services fortgesetzt.
 
 * **Welche Validierungen müssen von den Kunden ausgeführt werden?**
 
