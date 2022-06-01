@@ -4,8 +4,8 @@ title: Protokoll und Einstellungen des SMS-Connectors
 description: Erfahren Sie mehr über den SMS-Connector und dessen Konfiguration
 feature: SMS
 exl-id: fded088a-11a2-4b87-a368-7b197334aca4
-source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
-workflow-type: ht
+source-git-commit: 2c145829517a6961d502cc3e7b904547f8c71602
+workflow-type: tm+mt
 source-wordcount: '8460'
 ht-degree: 100%
 
@@ -410,7 +410,7 @@ Die Anzahl der Verbindungen pro untergeordnetem MTA-Element ist über den SMPP-C
 
 In Adobe Campaign Classic kann die Zahl der Receiver-Verbindungen von der Zahl der Transmitter-Verbindungen abweichen:
 
-* **Transmitter-Verbindungen = Anzahl untergeordneter MTA-Verbindungen x Anzahl untergeordneter MTA-Prozesse x Anzahl der MTAs (wenn automatische Antwort eingestellt ist) + Anzahl untergeordneter MTA-Verbindungen**
+* **</br>Transmitter-Verbindungen = Anzahl untergeordneter MTA-Verbindungen x Anzahl untergeordneter MTA-Prozesse x Anzahl der MTAs (wenn automatische Antwort eingestellt ist) + Anzahl untergeordneter MTA-Verbindungen**
 
 Wie oben dargelegt, öffnet der SMS-Prozess von Adobe Campaign Classic mehr Transmitter-Verbindungen, wenn die automatische Antwort aktiviert ist. Diese zusätzlichen Verbindungen dienen zum Senden der automatischen Antworten.
 
