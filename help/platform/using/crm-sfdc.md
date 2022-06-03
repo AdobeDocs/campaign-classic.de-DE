@@ -4,10 +4,10 @@ title: Campaign-Salesforce CRM-Connector
 description: Erfahren Sie, wie Sie Campaign und Salesforce verbinden
 feature: Salesforce Integration
 exl-id: 94a1f00d-e952-4edd-9012-f71c87b897ca
-source-git-commit: fdb840a9e6349f074378899e07f794b62fb5b054
-workflow-type: ht
+source-git-commit: 9a6010d824794b01224f40bb2912a9a80fc0fb88
+workflow-type: tm+mt
 source-wordcount: '357'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -32,7 +32,7 @@ Gehen Sie wie folgt vor, um CRM-Connector für Salesforce zu konfigurieren:
    Um dieses externe Konto für die gemeinsame Verwendung mit Adobe Campaign zu konfigurieren, müssen Sie die folgenden Informationen eingeben:
 
    * **[!UICONTROL Konto]**
-Konto, mit dem die Anmeldung bei Salesforce CRM erfolgt
+Konto für die Anmeldung bei Salesforce CRM.
 
    * **[!UICONTROL Passwort]**
 Passwort, mit dem die Anmeldung bei Salesforce CRM erfolgt.
