@@ -4,10 +4,10 @@ title: Schnittmenge
 description: Schnittmenge
 feature: Workflows, Targeting Activity
 exl-id: f426bf02-9899-49eb-b699-728d51b57c64
-source-git-commit: eb7a8cd2c9ff476a830dcc6e8e7c29ccd72c24f0
+source-git-commit: 389e5a87ea195024707c3c58e63899ad7949f025
 workflow-type: tm+mt
-source-wordcount: '463'
-ht-degree: 88%
+source-wordcount: '448'
+ht-degree: 93%
 
 ---
 
@@ -16,7 +16,8 @@ ht-degree: 88%
 >[!CONTEXTUALHELP]
 >id="ac_workflow_intersection"
 >title="Schnittmenge Aktivität"
->abstract="Die Aktivität Schnittmenge erzeugt ausgehend von der Schnittmenge eine Zielgruppe. Über eine Schnittmenge lassen sich nur die Populationen extrahieren, die in allen eingehenden Aktivitätsergebnissen enthalten sind. Die Zielgruppe wird mit allen erhaltenen Ergebnissen erstellt: Alle vorherigen Aktivitäten müssen daher beendet sein, bevor die Schnittmenge ausgeführt werden kann."
+>abstract="Die Aktivität Schnittmenge erzeugt ausgehend von der Schnittmenge eine Zielgruppe. Über eine Schnittmenge lassen sich nur die Populationen extrahieren, die in allen eingehenden Aktivitätsergebnissen enthalten sind."
+>additional-url="https://video.tv.adobe.com/v/329373" text="Demovideo ansehen"
 
 
 ![](../../assets/common.svg)
