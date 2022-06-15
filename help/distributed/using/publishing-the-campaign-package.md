@@ -4,8 +4,8 @@ title: Veröffentlichen des Kampagnenkits
 description: Veröffentlichen des Kampagnenkits
 feature: Distributed Marketing
 exl-id: e96add16-cbc8-43af-acff-06a95d5b7749
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
-workflow-type: ht
+source-git-commit: d36e1881726af6238c4e0caecb7b299b594691f2
+workflow-type: tm+mt
 source-wordcount: '479'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Veröffentlichen des Kampagnenkits{#publishing-the-campaign-package}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 Die Benutzer der Zentralstelle veröffentlichen in der **[!UICONTROL Kampagnenkit-Liste]** die Kits, die den Lokalstellen zur Verfügung gestellt werden sollen.
 

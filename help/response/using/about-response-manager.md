@@ -3,8 +3,8 @@ product: campaign
 title: Über die Reaktionsverwaltung
 description: Über die Reaktionsverwaltung
 exl-id: b5c0e960-2afe-4a98-b82c-d47a74659703
-source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
-workflow-type: ht
+source-git-commit: d36e1881726af6238c4e0caecb7b299b594691f2
+workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 100%
 
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # Erste Schritte mit Campaign Response Manager{#about-response-manager}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 Adobe Campaign bietet ein Add-on zur Reaktionsverwaltung (Response Manager), mit dem Sie den Erfolg und die Rentabilität von Marketing-Kampagnen oder Angebotsvorschlägen über alle Kommunikationskanäle hinweg messen können: E-Mail, Mobilgeräte, Briefpost usw.
 

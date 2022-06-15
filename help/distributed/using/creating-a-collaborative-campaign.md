@@ -4,8 +4,8 @@ title: Erstellen einer partizipativen Kampagne
 description: Erfahren Sie, wie Sie eine partizipative Kampagne erstellen
 feature: Distributed Marketing
 exl-id: 17313fe5-ad42-45ca-a35a-1e7aa89380ef
-source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
-workflow-type: ht
+source-git-commit: d36e1881726af6238c4e0caecb7b299b594691f2
+workflow-type: tm+mt
 source-wordcount: '990'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Erstellen einer partizipativen Kampagne{#creating-a-collaborative-campaign-intro}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 Partizipative Kampagnen werden von der Zentralstelle auf Basis der Kampagnenvorlagen des **verteilten Marketings** erstellt. Lesen Sie hierzu [diese Seite](about-distributed-marketing.md#collaborative-campaign).
 
