@@ -5,8 +5,8 @@ description: Erste Schritte mit verteiltem Marketing
 feature: Distributed Marketing
 exl-id: c166409b-e040-491e-840a-a41310935d75
 source-git-commit: d36e1881726af6238c4e0caecb7b299b594691f2
-workflow-type: tm+mt
-source-wordcount: '1180'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
