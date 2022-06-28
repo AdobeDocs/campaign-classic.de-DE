@@ -4,7 +4,7 @@ title: Migration zum neuen Zustellbarkeits-Server
 description: Erfahren Sie, wie Sie den Zustellbarkeits-Server von Campaign implementieren.
 hide: true
 hidefromtoc: true
-source-git-commit: a2590a6d8df1e73d77bbdef7b8cf3b2d6efe207f
+source-git-commit: cd2fa2450f6e8389e9c47c412da8943a5c8bb7f3
 workflow-type: tm+mt
 source-wordcount: '952'
 ht-degree: 38%
@@ -30,7 +30,7 @@ Dieser neue Server garantiert eine hohe Verfügbarkeit (99.9) &#x200B; und biete
 
 ## Sind Sie betroffen?{#acc-deliverability-impacts}
 
-Wenn Sie den bestehenden Adobe Campaign-Zustellbarkeits-Server verwenden und Ihre Umgebung auf einem niedrigeren Build als Campaign 21.1.1 implementiert wurde, sind Sie betroffen. Sie müssen auf Campaign 21.1 (oder höher) aktualisieren.
+Wenn Sie den alten Adobe Campaign-Zustellbarkeits-Server verwenden und Ihre Umgebung auf einem niedrigeren Build als Campaign 21.1.1 implementiert wurde, sind Sie betroffen. Sie müssen auf Campaign 21.1 (oder höher) aktualisieren.
 
 [In diesem Abschnitt](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version) erfahren Sie, wie Sie Ihre Version überprüfen.
 
