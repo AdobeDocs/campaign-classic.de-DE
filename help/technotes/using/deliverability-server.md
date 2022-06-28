@@ -4,7 +4,7 @@ title: Migration zum neuen Zustellbarkeits-Server
 description: Erfahren Sie, wie Sie den Zustellbarkeits-Server von Campaign implementieren.
 hide: true
 hidefromtoc: true
-source-git-commit: cd2fa2450f6e8389e9c47c412da8943a5c8bb7f3
+source-git-commit: 65ab862ec568647dd06c1f7b7b83e5b921353cc7
 workflow-type: tm+mt
 source-wordcount: '952'
 ht-degree: 38%
