@@ -4,10 +4,10 @@ title: Push-Benachrichtigungen für iOS-Geräte erstellen
 description: Erfahren Sie, wie Sie Push-Benachrichtigungen für iOS erstellen.
 feature: Push
 exl-id: 4520504a-0d9f-4ea7-a5a8-0c07948af4f0
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
-workflow-type: ht
-source-wordcount: '856'
-ht-degree: 100%
+source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
+workflow-type: tm+mt
+source-wordcount: '1064'
+ht-degree: 92%
 
 ---
 
@@ -43,7 +43,7 @@ Gehen Sie wie folgt vor, um eine Push-Benachrichtigung für iOS-Geräte zu erste
 
    ![](assets/nmac_delivery_ios_3.png)
 
-1. Kreuzen Sie den gewünschten Benachrichtigungstyp (Hinweisstil) an: **[!UICONTROL Hinweis]**, **[!UICONTROL Kennzeichen]**, **[!UICONTROL Hinweis und Kennzeichen]** oder **[!UICONTROL Silent Push]**.
+1. Wählen Sie Ihre **[!UICONTROL Art der Benachrichtigung]** aus **[!UICONTROL Allgemeine Benachrichtigung (Warnung, Ton, Badge)]** oder **[!UICONTROL Stille Benachrichtigung]**.
 
    ![](assets/nmac_delivery_ios_4.png)
 
@@ -51,32 +51,67 @@ Gehen Sie wie folgt vor, um eine Push-Benachrichtigung für iOS-Geräte zu erste
    >
    >Im Modus **Silent Push** kann eine &quot;stille&quot; Benachrichtigung an eine Mobile App gesendet werden. Dem Benutzer wird das Eintreffen der Benachrichtigung nicht mitgeteilt. Sie wird direkt an die Mobile App übertragen.
 
-1. Geben Sie im Feld **[!UICONTROL Titel]** die Bezeichnung an, die auf der Benachrichtigung erscheinen soll. Dieser Titel wird nur in der im Benachrichtigungszentrum zur Verfügung stehenden Benachrichtigungsliste angezeigt. In diesem Feld können Sie den Wert des **title**-Parameters der iOS-Benachrichtigungs-Nutzdaten definieren.
+1. Geben Sie in das Feld **[!UICONTROL Titel]** die Bezeichnung ein, die in der Liste der im Benachrichtigungscenter verfügbaren Benachrichtigungen erscheinen soll.
 
-1. Wenn Sie den HTTP/2-Connector verwenden, können Sie einen Untertitel hinzufügen (Wert des Parameters **subtitle** der iOS-Benachrichtigungs-Nutzdaten). Weitere Informationen finden Sie in [diesem Abschnitt](configuring-the-mobile-application.md).
+   In diesem Feld können Sie den Wert des Parameters **title** der iOS-Benachrichtigungs-Payload definieren.
 
-1. Geben Sie nun, je nach gewähltem Benachrichtigungstyp (Hinweisstil), die **[!UICONTROL Nachricht]** und den **[!UICONTROL Kennzeichenwert]** ein.
+1. Sie können einen **[!UICONTROL Untertitel]** hinzufügen, den Wert des Parameters subtitle der iOS-Benachrichtigungs-Payload. Weitere Informationen finden Sie in [diesem Abschnitt](configuring-the-mobile-application.md).
+
+1. Geben Sie den Inhalt der Nachricht im Abschnitt **[!UICONTROL Nachrichteninhalt]** des Assistenten ein. Die Verwendung von Personalisierungsfeldern wird im Abschnitt [Über die Personalisierung](about-personalization.md) beschrieben.
 
    ![](assets/nmac_delivery_ios_5.png)
 
-   >[!NOTE]
-   >
-   >Bei Benachrichtigungen bzw. Hinweisen vom Typ **[!UICONTROL Kennzeichen]** und **[!UICONTROL Hinweis und Kennzeichen]** haben Sie die Möglichkeit, den Kennzeichenwert (Ziffer, die über dem Mobile-App-Logo angezeigt wird) zu ändern. Zur Zurücksetzung des Kennzeichens genügt es, 0 als Wert anzugeben. Wenn das Feld leer ist, wird der Wert des Kennzeichens nicht geändert.
-
 1. Klicken Sie auf das Symbol **[!UICONTROL Emoticon einfügen]**, um Ihrer Push-Benachrichtigung Emoticons hinzuzufügen. Informationen zum Anpassen der Emoticon-Liste finden Sie in [diesem Abschnitt](customizing-emoticon-list.md).
 
-1. Im Feld **[!UICONTROL Aktionsschaltfläche]** können Sie den Text der Aktionsschaltfläche angeben, die auf Benachrichtigungen vom Typ Warnung erscheint (Feld **action_loc_key** der Nutzdaten). Wenn Ihre iOS-Anwendung die Lokalisierung von Text unterstützt (**Localizable.strings**), ist in diesem Feld der entsprechende Schlüssel anzugeben. Wenn dies nicht der Fall ist, geben Sie direkt den Text an, der auf der Aktionsschaltfläche erscheinen soll. Lesen Sie für weiterführende Informationen hierzu die [Apple-Dokumentation](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/CreatingtheNotificationPayload.html#//apple_ref/doc/uid/TP40008194-CH10-SW1) .
-1. Wählen Sie im Feld **[!UICONTROL Ton abspielen]** die Melodie aus, die bei Erhalt einer Nachricht abgespielt werden soll.
+1. In der Registerkarte **[!UICONTROL Ton und Badge]** können Sie die folgenden Optionen bearbeiten:
 
+   * **[!UICONTROL Badge entfernen]**: Aktivieren Sie diese Optionen, um den Badge-Wert zu aktualisieren.
+
+   * **[!UICONTROL Wert]**: Legen Sie eine Zahl fest, mit der die Anzahl der neuen ungelesenen Informationen direkt auf dem Anwendungssymbol angezeigt wird.
+
+   * **[!UICONTROL Kritischer Alarmmodus]**: Aktivieren Sie diese Option, um Ihrer Benachrichtigung einen Ton hinzuzufügen, selbst wenn das Handy des Benutzers im Fokusmodus eingestellt ist oder wenn das iPhone stummgeschaltet ist.
+
+   * **[!UICONTROL Name]**: Wählen Sie den Ton aus, der beim Erhalt der Benachrichtigung vom Mobilgerät abgespielt werden soll.
+
+   * **[!UICONTROL Lautstärke]**: Lautstärke Ihres Tons auf einer Skala von 0 bis 100.
    >[!NOTE]
    >
    >Töne müssen in die App integriert und zum Zeitpunkt der Erstellung des entsprechenden Dienstes konfiguriert werden. Weitere Informationen finden Sie in [diesem Abschnitt](configuring-the-mobile-application.md#configuring-external-account-ios).
 
-1. Geben Sie im Feld **[!UICONTROL Anwendungsvariablen]** für jede Variable den zugehörigen Wert an. Variablen dienen zur Konfiguration des Anwendungsverhaltens infolge des Erhalts einer Benachrichtigung. So können Sie einen speziellen Bildschirm anzeigen lassen, wenn der Nutzer auf die App tippt.
+   ![](assets/nmac_delivery_ios_6.png)
 
-   >[!NOTE]
-   >
-   >Anwendungsvariablen müssen im Code der Mobile App definiert und bei der Diensterstellung eingegeben werden. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](configuring-the-mobile-application.md).
+1. Ihre **[!UICONTROL Anwendungsvariablen]** werden automatisch von der Registerkarte **[!UICONTROL Anwendungsvariablen]** hinzugefügt. Damit können Sie beispielsweise das Benachrichtigungsverhalten definieren. So können Sie einen speziellen Anwendungsbildschirm konfigurieren, der angezeigt wird, wenn der Benutzer die Benachrichtigung aktiviert.
+
+   Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](configuring-the-mobile-application.md).
+
+1. Auf der Registerkarte **[!UICONTROL Erweitert]** können Sie die folgenden allgemeinen Optionen bearbeiten:
+
+   * **[!UICONTROL Veränderlicher Inhalt]**: Aktivieren Sie diese Option, damit die Mobile App Medieninhalte herunterladen kann.
+
+   * **[!UICONTROL Thread-ID]**: Kennung, die verwendet wird, um verknüpfte Benachrichtigungen zu gruppieren.
+
+   * **[!UICONTROL Kategorie]**: Name Ihrer Kategorie-ID, über die Aktionsschaltflächen angezeigt werden. Mit diesen Benachrichtigungen können Benutzer rascher unterschiedliche Aufgaben ausführen, ohne die Anwendung öffnen oder darin navigieren zu müssen.
+
+   ![](assets/nmac_delivery_ios_7.png)
+
+1. Für zeitabhängige Benachrichtigungen können Sie die folgenden Optionen spezifizieren:
+
+   * **[!UICONTROL ID des Zielinhalts]**: Kennung, die angibt, welches Anwendungsfenster beim Öffnen der Benachrichtigung in den Vordergrund gebracht werden soll.
+
+   * **[!UICONTROL Startbild]**: Name der anzuzeigenden Startbilddatei. Wenn der Benutzer Ihre Anwendung starten möchte, wird das ausgewählte Bild anstelle des Startbildschirms Ihrer Anwendung angezeigt.
+
+   * **[!UICONTROL Unterbrechungsgrad]**:
+
+      * **[!UICONTROL Aktiv]**: Ist dies als Standardeinstellung festgelegt, wird die Benachrichtigung sofort angezeigt, der Bildschirm wird beleuchtet und eventuell wird ein Ton abgespielt. Benachrichtigungen umgehen nicht den Fokusmodus.
+
+      * **[!UICONTROL Passiv]**: Die Benachrichtigung wird zur Benachrichtigungsliste hinzugefügt, ohne dass der Bildschirm beleuchtet oder ein Ton abgespielt wird. Benachrichtigungen umgehen nicht den Fokusmodus.
+
+      * **[!UICONTROL Zeitlich sensibel]**: Das System zeigt die Benachrichtigung sofort an, beleuchtet den Bildschirm, kann einen Ton abspielen und den Fokusmodus durchbrechen. Für diese Stufe ist keine spezielle Berechtigung von Apple erforderlich.
+
+      * **[!UICONTROL Kritisch]**: Das System zeigt die Benachrichtigung sofort an, beleuchtet den Bildschirm und umgeht den Stummschaltungs- oder Fokusmodus. Beachten Sie, dass für diese Ebene eine spezielle Berechtigung von Apple erforderlich ist.
+   * **[!UICONTROL Relevanzwert]**: Legen Sie einen Relevanzwert auf der Skala von 0 bis 100 fest. Das System verwendet diesen Wert, um die Benachrichtigungen in der Benachrichtigungszusammenfassung zu sortieren.
+
+   ![](assets/nmac_delivery_ios_8.png)
 
 1. Klicken Sie nach Angabe aller erforderlichen Benachrichtigungsparameter auf den **[!UICONTROL Vorschau]**-Tab, um das Rendering der Benachrichtigung zu prüfen.
 
@@ -88,14 +123,13 @@ Gehen Sie wie folgt vor, um eine Push-Benachrichtigung für iOS-Geräte zu erste
    >
    >In der Vorschau wird das Erscheinungsbild von iOS 10 verwendet.
 
-Testsendungen und der endgültige Start des Versands werden analog zum E-Mail-Versand durchgeführt.
+Testsendungen und der endgültige Start des Versands werden analog zum E-Mail-Versand durchgeführt. [Weitere Informationen](steps-validating-the-delivery.md)
 
 Nach dem Nachrichtenversand können Sie Ihre Sendungen überwachen und verfolgen. Lesen Sie diesbezüglich auch diese Abschnitte:
 
 * [Quarantäne für Push-Benachrichtigungen](understanding-quarantine-management.md#push-notification-quarantines)
 * [Sendungen überwachen](about-delivery-monitoring.md)
 * [Ursachen von fehlgeschlagenen Sendungen](understanding-delivery-failures.md)
-
 
 ## Erstellen einer Rich-Benachrichtigung für iOS {#creating-ios-delivery}
 
@@ -118,7 +152,6 @@ Erstellen Sie dann einen neuen Versand und verknüpfen Sie ihn mit der von Ihnen
 1. Wählen Sie im Fenster **[!UICONTROL Zieltyp]** die Option **[!UICONTROL Abonnenten einer iOS-Mobile-App (iPhone, iPad)]** und klicken Sie auf **[!UICONTROL Weiter]**.
 
 1. Wählen Sie in der Dropdown-Liste **[!UICONTROL Dienst]** den zuvor erstellten Dienst und dann die gewünschte Zielgruppe aus und klicken Sie auf **[!UICONTROL Beenden]**.
-Die **[!UICONTROL Anwendungsvariablen]** werden je nachdem, was bei den Konfigurationsschritten hinzugefügt wurde, automatisch hinzugefügt.
 
    ![](assets/nmac_ios_6.png)
 
@@ -126,10 +159,22 @@ Die **[!UICONTROL Anwendungsvariablen]** werden je nachdem, was bei den Konfigur
 
    ![](assets/nmac_ios_7.png)
 
-1. Aktivieren Sie im Fenster zur Benachrichtigungsbearbeitung die Option **[!UICONTROL Veränderlicher Inhalt]** an. Dadurch kann die Mobile App Medieninhalte herunterladen.
+1. Aus dem **[!UICONTROL Anwendungsvariablen]** Registerkarte, **[!UICONTROL Anwendungsvariablen]** werden automatisch hinzugefügt, je nachdem, was während der Konfigurationsschritte hinzugefügt wurde.
+
+   >[!NOTE]
+   >
+   >Anwendungsvariablen müssen im Code der Mobile App definiert und bei der Diensterstellung eingegeben werden. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](configuring-the-mobile-application.md).
+
+   ![](assets/nmac_ios_10.png)
+
+1. Aus dem **[!UICONTROL Erweitert]** Registerkarte, überprüfen Sie die **[!UICONTROL Veränderlicher Inhalt]** aktivieren, damit die Mobile App Medieninhalte herunterladen kann.
 
 1. Klicken Sie auf **[!UICONTROL Speichern]** und führen Sie den Versand durch.
 
 Auf iOS-Mobilgeräten der Abonnenten sollten das Bild und die Web-Seite in der Push-Benachrichtigung angezeigt werden.
 
 ![](assets/nmac_ios_8.png)
+
+
+
+

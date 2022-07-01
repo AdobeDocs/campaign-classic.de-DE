@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: e3ff5bb55e108c163dcf395da84076201f09e61c
-workflow-type: ht
-source-wordcount: '1283'
-ht-degree: 100%
+source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
+workflow-type: tm+mt
+source-wordcount: '1935'
+ht-degree: 71%
 
 ---
 
@@ -18,6 +18,72 @@ ht-degree: 100%
 ![](../../assets/v7-only.svg)
 
 Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der **aktuellen Version Campaign Classic v7** aufgelistet. Jeder neue Build weist einen Status auf, der durch eine bestimmte Farbe dargestellt wird. Sie erfahren mehr über den Build-Status von Campaign Classic v7 auf [dieser Seite](rn-overview.md).
+
+## ![](assets/do-not-localize/limited_2.png) Version 7.3.1 – Build 9352 {#release-7-3-1}
+
+_1. Juli 2022_
+
+**Neue Funktionen**
+
+<table> 
+<thead>
+<tr> 
+<th> <strong>Zeitkritische Benachrichtigungen</strong><br /> </th> 
+</tr> 
+</thead> 
+<tbody> 
+<tr> 
+<td> <p>In iOS 15 fügte Apple das Konzept der „Dringlichen Mitteilungen“ hinzu, das dem App-Entwickler die Möglichkeit gibt, den Fokusmodus zu umgehen, wenn eine Benachrichtigung als dringlich eingestuft wird und den Benutzer in Echtzeit erreichen muss.</p>
+<p>Erfahren Sie im Abschnitt <a href="../../delivery/using/create-notifications-ios.md">Detaillierte Dokumentation</a>.</p>
+</td> 
+</tr> 
+</tbody> 
+</table>
+
+**Aktualisierungen zur Kompatibilität**
+
+* Das Adobe Campaign SDK unterstützt jetzt Android 12 und iOS 15 für Push-Benachrichtigungen.
+* Adobe Campaign ist jetzt mit MySQL 8 kompatibel.
+* Adobe Campaign ist jetzt mit Windows 11 kompatibel.
+* Adobe Campaign ist jetzt mit Debian 11 kompatibel.
+
+Weitere Informationen finden Sie in der [Kompatibilitätsmatrix für Campaign](../../rn/using/compatibility-matrix.md#OperatingSystems).
+
+**Verbesserungen**
+
+* Nach dem Ende der Nutzungsdauer von Internet Explorer 11 verwendet die HTML-Rendering-Engine der Konsole jetzt Edge Chromium.
+* Die Datenbankverbindungsverwaltung in Adobe Campaign wurde verbessert, um die Stabilität zu optimieren.
+* Die Microsoft Exchange Online OAuth 2.0-Authentifizierung für POP3 wird jetzt in Campaign unterstützt. [Mehr dazu](../../installation/using/external-accounts.md#bounce-mails-external-account)
+* Fehlerkorrektur - Bei der Verwendung einer Anreicherungs-Workflow-Aktivität mit externen Daten treten jetzt keine Fehler mehr auf. (NEO-38069)
+* Der SAP Hana FDA-Connector wurde aktualisiert, um mit der neuesten SAP Hana-Datenbankversion (2.x) zu funktionieren.
+* Der Teradata FDA-Connector wurde aktualisiert, um mit der neuesten Teradata (17) zu funktionieren.
+* In Version 20.2 wurde die Unterstützung der Token-basierten Authentifizierung für iOS-Sendungen für neue Sendungen und Versandvorlagen eingeführt. In 7.2 wurde dem Poststugrade ein Patch hinzugefügt, um die Token-basierte Authentifizierungsunterstützung auf maximal 10.000 zuvor erstellte Sendungen und Versandvorlagen anzuwenden. In Version 7.3 wurde das Pflaster verbessert und die Grenze wurde entfernt.
+
+**Patches**
+
+* Fehlerkorrektur - die Größe der IMS-Anmeldeseite kann nun auch im vorherigen Build geändert werden.
+* Fehlerkorrektur - bei der Installation des Content Manager-Packages auf einer vorhandenen Instanz tritt kein Fehler mehr auf.
+* Es wurde ein Problem im **Kampagnen** Menü, in dem die Meldung &quot;Vorgang läuft&quot; kontinuierlich angezeigt wurde.
+* Bei aktiviertem Adobe Analytics wurde ein Problem behoben, bei dem BID (Broadlog ID) und CID (Kampagnen-ID) aus der URL entfernt wurden, wenn eine E-Mail mit einer URL gesendet wurde, ohne den Versand zu speichern.
+* Fehlerkorrektur - Beim Hochladen eines Bildes im Ordner Öffentliche Ressourcen in einer Instanz mit Message Center-spezifischer Konfiguration tritt jetzt kein Fehler mehr auf. Die folgende Fehlermeldung wird angezeigt: &quot;Bilder können nicht auf die Tracking-Server hochgeladen werden&quot;.
+* Es wurde ein Problem behoben, das zum Absturz des Systems führte, wenn die Konfiguration im Falle von fehlerhaften Konfigurationsdateien neu generiert wurde.
+* Fehlerkorrektur - jetzt werden Versandindikatoren korrekt aktualisiert. (NEO-44827)
+* Fehlerkorrektur - bei der Verwendung komplexer Abfragen tritt kein Postupgrade-Fehler mehr auf. (NEO-43648)
+* Fehlerkorrektur - Die Vorschau von webApps funktioniert jetzt. (NEO-43242)
+* Fehlerkorrektur - Die Versandvorbereitung schlägt jetzt nicht mehr fehl, wenn eine externe Zielgruppen-Mapping-Datei in einem Workflow mit der Aktivität Laden (Datei) verwendet wird. (NEO-43691)
+* Es wurde ein Problem behoben, das zu Abstürzen führen konnte und einen vollständigen Neustart der Instanz erforderlich machte. (NEO-44645)
+* Fehlerkorrektur - Workflow-Heatmap lädt jetzt Ergebnisse. (NEO-43360)
+* Fehlerkorrektur - Bei der Verwendung des externen FDA-Connectors treten jetzt keine Verbindungsprobleme mehr auf. (NEO-42722)
+* Fehlerkorrektur - Bei Testsendungen tritt jetzt kein Fehler mehr auf, wenn Adressersetzung und Ausschluss von Kontrollgruppen verwendet werden. (NEO-39695)
+* Fehlerkorrektur - Workflow-Fehler werden jetzt nicht mehr aufgrund eines Snowflake-Connector-Problems verursacht. (NEO-46299)
+* Fehlerkorrektur - Die Clientkonsole wird jetzt aufgrund eines ungültigen Zeichens in einem Gestaltungsbaustein nicht mehr gesperrt. (NEO-45761)
+* Fehlerkorrektur - Beim Erstellen eines externen Kontos für Snowflake als externe Datenbank treten jetzt keine Verbindungsprobleme mehr auf. (NEO-45744)
+* Fehlerkorrektur - Tabelleninformationen werden jetzt nicht mehr durch ein visibleIf -Attribut geschützt angezeigt. (NEO-37865)
+* Fehlerkorrektur - Die Fehlermeldung &quot;$ is not defined&quot; wird jetzt in der Versandanalysephase angezeigt. (NEO-32940)
+* Fehlerkorrektur - Sendungen werden jetzt nicht mehr mit einem falschen eventType-Wert verknüpft. (NEO-45743)
+* Fehlerkorrektur - Es wurde ein Problem behoben, das zu Abstürzen aufgrund zeitweiliger Core-Dumps führen konnte. (NEO-30549)
+* Fehlerkorrektur - Bei der Verwendung von HTML-Code mit Fehlern in einem Versand kommt es nicht mehr zu Abstürzen. (NEO-40385)
+* Fehlerkorrektur - Benutzer ohne Administratorrechte können jetzt auf die **Analyse** in den Versandeigenschaften. (NEO-34025)
 
 ## ![](assets/do-not-localize/green_2.png) Version 7.2.2 – Build 9349 {#release-7-2-2}
 
@@ -40,7 +106,6 @@ _1. März 2022_
 * Fehlerkorrektur – Beim Synchronisieren der Mid-Sourcing- und Marketing-Instanzen in einer Multi-Mid-Konfiguration treten jetzt keine Fehler mehr auf. (NEO-10432)
 * Fehlerkorrektur – Beim Aktualisieren des Zustellbarkeits-Workflows tritt jetzt kein Fehler mehr auf, auch wenn mehr als 1.000 Broadlogs gleichzeitig verwendet werden. (NEO-40276)
 * Fehlerkorrektur – Die Versandindikatoren &quot;Öffnungsverhältnis&quot; und &quot;Klick-Verhältnis&quot; werden jetzt automatisch aktualisiert. (NEO-43253)
-
 
 ## ![](assets/do-not-localize/limited_2.png) Version 7.2.1 – Build 9346 {#release-7-2-1}
 
@@ -71,7 +136,7 @@ Adobe Campaign ist jetzt mit Windows Server 2019 kompatibel. Weitere Information
 * Google BigQuery FDA-Connector
 
    * Der Google BigQuery FDA-Connector ist jetzt für gehostete Bereitstellungen verfügbar. [Mehr dazu](../../installation/using/configure-fda-google-big-query.md)
-   * Es wurde Unterstützung zum Aktivieren von Verbindungen zu einem Proxy-Server für den Google BigQuery FDA-Connector hinzugefügt. Die erforderlichen Proxy-Optionen können über das Feld &quot;Optionen&quot; in der Konfiguration des externen Kontos festgelegt werden. [mehr dazu](../../installation/using/configure-fda-google-big-query.md#google-external)
+   * Es wurde Unterstützung zum Aktivieren von Verbindungen zu einem Proxy-Server für den Google BigQuery FDA-Connector hinzugefügt. Die erforderlichen Proxy-Optionen können über das Feld &quot;Optionen&quot; in der Konfiguration des externen Kontos festgelegt werden. [Weitere Informationen](../../installation/using/configure-fda-google-big-query.md#google-external)
 
 **Sonstige Änderungen**
 

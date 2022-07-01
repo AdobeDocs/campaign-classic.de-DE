@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: ebaad59f-0607-4090-92d0-e457fbf9a348
-source-git-commit: 5d2ec0836fe5f106e0c56e5abbe7bab9332d7e18
+source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
 workflow-type: tm+mt
-source-wordcount: '836'
-ht-degree: 10%
+source-wordcount: '829'
+ht-degree: 9%
 
 ---
 
@@ -193,11 +193,11 @@ Sie müssen eine [!DNL Google BigQuery] Externes Konto zum Verbinden Ihrer Adobe
 
 Der Connector unterstützt die folgenden Optionen:
 
-| Option | Wert | Beschreibung |
-|:-:|:-:|:-:|
-| ProxyType | Zeichenfolge | Typ des Proxys, der verwendet wird, um über ODBC- und SDK-Connectoren eine Verbindung zu BigQuery herzustellen. </br>HTTP (Standard), http_no_tunnel, socks4 und socks5 werden derzeit unterstützt. |
-| ProxyHost | Zeichenfolge | Hostname oder IP-Adresse, an der der Proxy erreicht werden kann. |
-| ProxyPort | number | Anschlussnummer, auf der der Proxy ausgeführt wird, z. B. 8080 |
-| ProxyUid | Zeichenfolge | Benutzername, der für den authentifizierten Proxy verwendet wird |
-| ProxyPwd | Zeichenfolge | ProxyUid-Kennwort |
-| bqpath | Zeichenfolge | Beachten Sie, dass dies nur für Tools mit Massenladevorgang (Cloud SDK) gilt. </br> Um die Verwendung der PATH-Variablen zu vermeiden oder den Ordner google-cloud-sdk an einen anderen Speicherort zu verschieben, können Sie mit dieser Option den genauen Pfad zum Ordner &quot;cloud sdk bin&quot;auf dem Server angeben. |
+| Option | Beschreibung  |
+|:-:|:-:|
+| ProxyType | Typ des Proxys, der verwendet wird, um über ODBC- und SDK-Connectoren eine Verbindung zu BigQuery herzustellen. </br>HTTP (Standard), http_no_tunnel, socks4 und socks5 werden derzeit unterstützt. |
+| ProxyHost | Hostname oder IP-Adresse, an der der Proxy erreicht werden kann. |
+| ProxyPort | Anschlussnummer, auf der der Proxy ausgeführt wird, z. B. 8080 |
+| ProxyUid | Benutzername, der für den authentifizierten Proxy verwendet wird |
+| ProxyPwd | ProxyUid-Kennwort |
+| bqpath | Beachten Sie, dass dies nur für Tools mit Massenladevorgang (Cloud SDK) gilt. </br> Um die Verwendung der PATH-Variablen zu vermeiden oder den Ordner google-cloud-sdk an einen anderen Speicherort zu verschieben, können Sie mit dieser Option den genauen Pfad zum Ordner &quot;cloud sdk bin&quot;auf dem Server angeben. |

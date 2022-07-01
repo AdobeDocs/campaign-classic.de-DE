@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 3a5856c3-b642-4722-97ff-6ae7107efdbe
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
 workflow-type: tm+mt
-source-wordcount: '1639'
-ht-degree: 76%
+source-wordcount: '1824'
+ht-degree: 70%
 
 ---
 
@@ -95,6 +95,27 @@ Sie müssen Treiber installieren, damit Teradata die Verbindung zu Campaign hers
    * **[!UICONTROL Optionen]**: Optionen, die über Teradata weitergegeben werden sollen. Verwenden Sie das folgende Format: &#39;parameter=value&#39;. Verwenden Sie eine halbe Spalte als Trennzeichen zwischen Werten.
 
    * **[!UICONTROL Zeitzone]**: Die in Teradata festgelegte Zeitzone. [Weitere Informationen](#timezone)
+
+Der Connector unterstützt die folgenden Optionen:
+
+| Option | Beschreibung  |
+|---|---|
+| TD_MAX_SESSIONS | Gibt die maximale Anzahl von Anmeldungssitzungen an, die der Teradata Parallel Transporter für einen Operatorauftrag abrufen kann. <br>Weiterführende Informationen hierzu finden Sie auf dieser [Seite](https://documentation.sas.com/doc/en/pgmsascdc/9.4_3.5/ds2ref/p1naft0um1kn3vn1ubgkrjdf7c3a.html). |
+| TimeZoneName | Name der Zeitzone des Servers. |
+| CharacterSet | Wird zum Konfigurieren eines Teradata-Zeichensatzes verwendet. <br>Weiterführende Informationen hierzu finden Sie auf dieser [Seite](https://docs.teradata.com/r/ODBC-Driver-for-Teradata-User-Guide/May-2017/Configuration-of-odbc.ini-in-UNIX/Linux-and-Apple-OS-X/Teradata-DSN-Options#rub1478609534082__table_N102D3_N102B6_N102B3_N10001). |
+| IANAAppCodePage | ODBC-Anwendungs-Code-Seite. <br>Weiterführende Informationen hierzu finden Sie auf dieser [Seite](https://docs.teradata.com/r/ODBC-Driver-for-Teradata-User-Guide/May-2017/ODBC-Driver-for-Teradata-Application-Development/International-Character-Set-Support/Application-Code-Page) |
+
+### Zusätzliche externe ODBC-Konten hinzufügen {#add-external}
+
+>[!NOTE]
+>
+> Diese Option ist nicht für Builds verfügbar, die älter als Version 7.3.1 sind.
+
+Der Teradata-Treiber stellt eine eigene ODBC-Bibliothek bereit, diese Bibliothek ist jedoch möglicherweise nicht mit anderen externen ODBC-Konten kompatibel.
+
+Wenn Sie ein anderes externes Konto konfigurieren möchten, das auch ODBC verwendet, z. B. Snowflake, müssen Sie eine ODBCLib-Option hinzufügen, die auf den Pfad der standardmäßigen ODBC-Bibliothek (`/usr/lib/x86_64-linux-gnu/libodbc.so` auf Debian und `/usr/lib64/libodbc.so` auf RHEL/CentOS).
+
+![](assets/ext_account_24.png)
 
 ### Query Banding
 

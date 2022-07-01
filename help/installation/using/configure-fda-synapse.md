@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 59d0277a-7588-4504-94e3-50f87b60da8a
-source-git-commit: 9265d389da53e51889c2b7a8cd330c1866a030d9
+source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
 workflow-type: tm+mt
-source-wordcount: '753'
-ht-degree: 75%
+source-wordcount: '794'
+ht-degree: 72%
 
 ---
 
@@ -236,3 +236,9 @@ So erstellen Sie Ihre [!DNL Azure Synapse] Gehen Sie wie folgt vor:
 
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
+
+Der Connector unterstützt die folgenden Optionen:
+
+| Option | Beschreibung  |
+|---|---|
+| Authentifizierung | Vom Connector unterstützte Authentifizierungstyp. Aktuell unterstützter Wert: ActiveDirectoryMSI. </br>Weitere Informationen finden Sie unter [SQL doc](https://docs.microsoft.com/en-us/sql/connect/odbc/using-azure-active-directory?view=sql-server-ver15#example-connection-strings) (Beispiel für Verbindungszeichenfolgen n°8). |

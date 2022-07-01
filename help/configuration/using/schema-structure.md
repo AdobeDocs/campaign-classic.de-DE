@@ -6,10 +6,10 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 3405efb8-a37c-4622-a271-63d7a4148751
-source-git-commit: 1bb1365ce5a4eb89447c5d736a42cd470c7f3bba
+source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
 workflow-type: tm+mt
-source-wordcount: '1568'
-ht-degree: 83%
+source-wordcount: '1526'
+ht-degree: 85%
 
 ---
 
@@ -175,33 +175,27 @@ In der folgenden Tabelle sind die Zuordnungen für die Datentypen aufgeführt, d
 <table> 
  <tbody> 
   <tr> 
+   <td> <strong>Adobe Campaign</strong><br /> </td> 
    <td> <strong>PosgreSQL</strong><br /> </td> 
    <td> <strong>Oracle</strong><br /> </td> 
    <td> <strong>MS SQL</strong><br /> </td> 
-   <td> <strong>Adobe Campaign</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> String <br /> </td> 
    <td> VARCHAR(255)<br /> </td> 
    <td> VARCHAR2 (NVARCHAR2, falls Unicode vorhanden)<br /> </td> 
-   <td> VARCHAR (VARCHARZEICHENSATZ UNICODE, falls Unicode vorhanden)<br /> </td> 
-   <td> VARCHAR<br /> </td> 
    <td> VARCHAR (NVARCHAR, falls unicode)<br /> </td> 
   </tr> 
   <tr> 
    <td> Boolesch<br /> </td> 
    <td> SMALLINT<br /> </td> 
    <td> NUMBER(3)<br /> </td> 
-   <td> NUMERISCH(3)<br /> </td> 
-   <td> SMALLINT<br /> </td> 
    <td> TINYINT<br /> </td> 
   </tr> 
   <tr> 
    <td> Byte<br /> </td> 
    <td> SMALLINT<br /> </td> 
    <td> NUMBER(3)<br /> </td> 
-   <td> NUMERISCH(3)<br /> </td> 
-   <td> SMALLINT<br /> </td> 
    <td> TINYINT<br /> </td> 
   </tr> 
   <tr> 
@@ -209,38 +203,28 @@ In der folgenden Tabelle sind die Zuordnungen für die Datentypen aufgeführt, d
    <td> SMALLINT<br /> </td> 
    <td> NUMBER(5)<br /> </td> 
    <td> SMALLINT<br /> </td> 
-   <td> SMALLINT<br /> </td> 
-   <td> SMALLINT<br /> </td> 
   </tr> 
   <tr> 
    <td> Doppelt<br /> </td> 
    <td> DOPPELPRÄZISE<br /> </td> 
    <td> FLUSS<br /> </td> 
    <td> FLUSS<br /> </td> 
-   <td> DOUBLE<br /> </td> 
-   <td> FLUSS<br /> </td> 
   </tr> 
   <tr> 
    <td> Lang<br /> </td> 
    <td> INTEGER<br /> </td> 
    <td> NUMBER(10)<br /> </td> 
-   <td> INTEGER<br /> </td> 
-   <td> INTEGER<br /> </td> 
    <td> INT<br /> </td> 
   </tr> 
   <tr> 
    <td> Int64<br /> </td> 
    <td> BIGINT<br /> </td> 
    <td> NUMBER(20)<br /> </td> 
-   <td> NUMERISCH(20)<br /> </td> 
-   <td> BIGINT<br /> </td> 
    <td> BIGINT<br /> </td> 
   </tr> 
   <tr> 
    <td> Datum<br /> </td> 
    <td> DATUM<br /> </td> 
-   <td> DATUM<br /> </td> 
-   <td> ZEITSTEMPEL<br /> </td> 
    <td> DATUM<br /> </td> 
    <td> DATETIME<br /> </td> 
   </tr> 
@@ -248,24 +232,18 @@ In der folgenden Tabelle sind die Zuordnungen für die Datentypen aufgeführt, d
    <td> Zeit<br /> </td> 
    <td> UHRZEIT<br /> </td> 
    <td> FLUSS<br /> </td> 
-   <td> UHRZEIT<br /> </td> 
-   <td> UHRZEIT<br /> </td> 
    <td> FLUSS<br /> </td> 
   </tr> 
   <tr> 
    <td> Datum/Uhrzeit<br /> </td> 
    <td> TIMESTAMPZ<br /> </td> 
    <td> DATUM<br /> </td> 
-   <td> ZEITSTEMPEL<br /> </td> 
-   <td> ZEITSTEMPEL<br /> </td> 
    <td> MS SQL &lt; 2008: DATETIME<br /> MS SQL &gt;= 2012: DATETIMEOFFSET<br /> </td> 
   </tr> 
   <tr> 
    <td> Datetimenotz<br /> </td> 
    <td> TIMESTAMPZ<br /> </td> 
    <td> DATUM<br /> </td> 
-   <td> ZEITSTEMPEL<br /> </td> 
-   <td> ZEITSTEMPEL<br /> </td> 
    <td> MS SQL &lt; 2008: DATETIME<br /> MS SQL &gt;= 2012: DATETIME2<br /> </td> 
   </tr> 
   <tr> 
@@ -273,23 +251,17 @@ In der folgenden Tabelle sind die Zuordnungen für die Datentypen aufgeführt, d
    <td> DOPPELPRÄZISE<br /> </td> 
    <td> FLUSS<br /> </td> 
    <td> FLUSS<br /> </td> 
-   <td> DOUBLE<br /> </td> 
-   <td> FLUSS<br /> </td> 
   </tr> 
   <tr> 
    <td> Memo<br /> </td> 
    <td> TEXT<br /> </td> 
    <td> CLOB (NCLOB, wenn Unicode)<br /> </td> 
-   <td> CLOB (CLOB-ZEICHENSATZ UNICODE, falls Unicode)<br /> </td> 
-   <td> CLOB(6M)<br /> </td> 
    <td> TEXT (NTEXT bei Unicode)<br /> </td> 
   </tr> 
   <tr> 
    <td> Blob<br /> </td> 
    <td> BLOB<br /> </td> 
    <td> BLOB<br /> </td> 
-   <td> BLOB<br /> </td> 
-   <td> BLOB(4M)<br /> </td> 
    <td> BILD<br /> </td> 
   </tr> 
  </tbody> 
