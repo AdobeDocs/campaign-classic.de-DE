@@ -4,10 +4,10 @@ title: Erstellen einer Landingpage
 description: Erstellen einer Landingpage
 feature: Landing Pages
 exl-id: 71c737c2-b0d6-4ae8-a5df-28a08dff82d7
-source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
-workflow-type: ht
-source-wordcount: '767'
-ht-degree: 100%
+source-git-commit: 4ff86349d6b8966273585bf2a1ea0d785a7e87cb
+workflow-type: tm+mt
+source-wordcount: '764'
+ht-degree: 92%
 
 ---
 
@@ -88,7 +88,7 @@ Wiederholen Sie diese Schritte für jede Seite der Webanwendung.
 
 >[!CAUTION]
 >
->**Der DCE führt für jede geladene HTML-Seite den JavaScript-Code aus.** In der Adobe Campaign-Benutzeroberfläche können JavaScript-Fehler in der HTML-Vorlage angezeigt werden. Diese Fehler haben nichts mit dem Editor zu tun. Um sicherzugehen, dass in den importierten Dateien keine Fehler vorhanden sind, wird empfohlen, sie in einem Browser zu testen (Internet Explorer/Firefox/Chrome), bevor die Dateien in den DCE importiert werden.
+>**Der DCE führt den JavaScript-Code für die geladene HTML-Seite aus.** JavaScript-Fehler in der HTML-Vorlage, die in der Adobe Campaign-Benutzeroberfläche angezeigt werden können. Diese Fehler beziehen sich nicht auf den Editor. Um sicherzustellen, dass die importierten Dateien keine Fehler enthalten, sollten Sie sie in einem Webbrowser testen, bevor Sie die Dateien in den DCE importieren.
 
 ## Schritt 2: Konfigurieren des Inhalts {#step-2---configuring-the-content}
 

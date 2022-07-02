@@ -4,9 +4,9 @@ title: Mit Berichten arbeiten
 description: Mit Berichten arbeiten
 feature: Reporting
 exl-id: b30cdeaf-4ad6-473d-bdbc-91984755b609
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
-workflow-type: ht
-source-wordcount: '571'
+source-git-commit: 4ff86349d6b8966273585bf2a1ea0d785a7e87cb
+workflow-type: tm+mt
+source-wordcount: '570'
 ht-degree: 100%
 
 ---
@@ -86,7 +86,7 @@ Weiterführende Informationen zum **nlserver**-Service finden Sie in [diesem Abs
 
 Sie haben die Möglichkeit, Ihren Bericht zu drucken. Klicken Sie hierzu auf das Drucker-Symbol. Das Druck-Dialogfenster öffnet sich.
 
-Um das Druckergebnis zu optimieren, öffnen Sie die Druckoptionen von Internet Explorer und aktivieren Sie die Option **[!UICONTROL Farben und Hintergrundbilder drucken]**.
+Um das Druckergebnis zu optimieren, öffnen Sie die Druckoptionen von Explorer und aktivieren Sie die Option **[!UICONTROL Farben und Hintergrundbilder drucken]**.
 
 ![](assets/s_ncs_advuser_report_print_options.png)
 
