@@ -4,16 +4,17 @@ title: Migration zum neuen Zustellbarkeits-Server
 description: Erfahren Sie, wie Sie den Zustellbarkeits-Server von Campaign implementieren.
 hide: true
 hidefromtoc: true
-source-git-commit: 65ab862ec568647dd06c1f7b7b83e5b921353cc7
-workflow-type: tm+mt
+exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
+source-git-commit: cc13afe3b65864ced1141034344c8243a1939834
+workflow-type: ht
 source-wordcount: '952'
-ht-degree: 38%
+ht-degree: 100%
 
 ---
 
-# Campaign Deliverability Server {#acc-deliverability}
+# Campaign Zustellbarkeits-Server {#acc-deliverability}
 
-Ab Campaign Classic-Version 21.1 bietet Adobe Campaign einen neuen Zustellbarkeits-Server, der hohe Verfügbarkeit bietet und Probleme mit der Einhaltung von Sicherheitsanforderungen behebt. Campaign Classic synchronisiert nun die Zustellbarkeitsregeln, Broadlogs und Unterdrückungsadressen vom und auf den neuen Zustellbarkeits-Server.
+Mit der Veröffentlichung von Campaign Classic v7 21.1 stellt Adobe Campaign einen neuen Zustellbarkeits-Server bereit, der eine hohe Verfügbarkeit bietet und Probleme mit der Einhaltung von Sicherheitsvorschriften löst. Campaign Classic synchronisiert nun die Zustellbarkeitsregeln, Broadlogs und Unterdrückungsadressen mit dem neuen Zustellbarkeits-Server.
 
 Als Campaign Classic-Kunde müssen Sie den neuen Zustellbarkeits-Server implementieren
 
@@ -23,47 +24,48 @@ Als Campaign Classic-Kunde müssen Sie den neuen Zustellbarkeits-Server implemen
 
 ## Was hat sich geändert?{#acc-deliverability-changes}
 
-Adobe beendet ältere Rechenzentren aus Gründen der Sicherheitskonformität. Adobe Campaign Classic-Clients müssen zum neuen Zustellbarkeitsdienst migrieren, der auf Amazon Web Service (AWS) gehostet wird.
+Aus Sicherheitsgründen nimmt Adobe ältere Rechenzentren außer Betrieb. Adobe Campaign Classic-Kunden müssen zum neuen Zustellbarkeits-Service migrieren, der auf Amazon Web Service (AWS) gehostet wird.
 
-Dieser neue Server garantiert eine hohe Verfügbarkeit (99.9) &#x200B; und bietet sichere und authentifizierte Endpunkte, damit Kampagnenserver die erforderlichen Daten abrufen können: Anstatt für jede Anfrage eine Verbindung zur Datenbank herzustellen, speichert der neue Zustellbarkeits-Server die Daten zwischen, um die Anforderungen zu erfüllen. Dieser Mechanismus verbessert die Reaktionszeit. &#x200B;
+Dieser neue Server garantiert hohe Verfügbarkeit (99,9) und bietet sichere, authentifizierte Endpunkte, damit Campaign-Server die erforderlichen Daten abrufen können. Anstatt für jede Anfrage eine Verbindung zur Datenbank herzustellen, bewahrt der neue Zustellbarkeits-Server die Daten in einem Zwischenspeicher auf, um die Anfragen nach Möglichkeit zu beantworten. Dieser Mechanismus verbessert die Reaktionszeit.
 
 
 ## Sind Sie betroffen?{#acc-deliverability-impacts}
 
-Wenn Sie den alten Adobe Campaign-Zustellbarkeits-Server verwenden und Ihre Umgebung auf einem niedrigeren Build als Campaign 21.1.1 implementiert wurde, sind Sie betroffen. Sie müssen auf Campaign 21.1 (oder höher) aktualisieren.
+Wenn Sie den alten Zustellbarkeits-Server von Adobe Campaign verwenden und Ihre Umgebung mit einem niedrigeren Build als Campaign 21.1.1 implementiert wurde, sind Sie davon betroffen. Sie müssen auf Campaign 21.1 (oder höher) aktualisieren.
 
 [In diesem Abschnitt](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version) erfahren Sie, wie Sie Ihre Version überprüfen.
 
 ## Wie wird die Aktualisierung durchgeführt?{#acc-deliverability-update}
 
-Wenn Sie ein gehosteter Kunde sind, wird Adobe in Kürze auf Sie zukommen, um für Ihre Instanz(en) das Upgrade auf die neuere Version vorzunehmen.
+Wenn Sie ein gehosteter Kunde sind, wird Adobe das Upgrade für Ihre Instanz(en) auf die neuere Version vornehmen.
 
-Als On-Premise-/Hybrid-Kunde müssen Sie auf eine der neueren Versionen aktualisieren, um von dem neuen Zustellbarkeits-Server profitieren zu können.
-Sobald alle Instanzen aktualisiert wurden, können Sie [die neue Integration implementieren](#implementation-steps) auf den Zustellbarkeitsserver der Adobe zu gelangen und einen nahtlosen Übergang zu gewährleisten.
+Als On-Premise-/Hybrid-Kunde müssen Sie das Upgrade auf eine der neueren Versionen vornehmen, um von dem neuen Zustellbarkeits-Server profitieren zu können
+.
+Sobald alle Instanzen das Upgrade erhalten haben, können Sie [die neue Integration](#implementation-steps) zum Adobe Zustellbarkeits-Server implementieren und so einen nahtlosen Übergang sicherstellen.
 
 ## Implementierungsschritte (Hybrid- und On-Premise-Kunden) {#implementation-steps}
 
 >[!IMPORTANT]
 >
->Diese Schritte sollten nur von Hybrid- und On-Premise-Implementierungen durchgeführt werden.
+>Diese Schritte sollten nur bei Hybrid- und On-Premise-Implementierungen durchgeführt werden.
 >
->Bei gehosteten Implementierungen wenden Sie sich an [Adobe-Kundenunterstützung](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Bei gehosteten Implementierungen wenden Sie sich an die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 ### Voraussetzungen{#prerequisites}
 
-Im Rahmen der neuen Integration des Zustellbarkeitsservers muss Campaign über eine IMS-basierte Authentifizierung (Identity Management Service) mit Adobe Shared Services kommunizieren. Die bevorzugte Methode ist die Verwendung des Adobe Developer-basierten Gateway-Tokens (auch als Token für technische Konten oder Adobe IO JWT bezeichnet).
+Im Rahmen der Integration des neuen Zustellbarkeits-Servers muss Campaign mit Adobe Shared Services über eine auf dem Identity Management Service (IMS) basierende Authentifizierung kommunizieren. Die bevorzugte Methode dazu ist die Verwendung des auf Adobe Developer basierenden Gateway Token (auch Technical Account Token oder Adobe IO JWT genannt).
 
-### Schritt 1: Erstellen/Aktualisieren Ihres Adobe Developer-Projekts {#adobe-io-project}
+### Schritt 1: Erstellen/Aktualisieren Sie Ihr Adobe Developer-Projekt {#adobe-io-project}
 
-1. Zugriff [Adobe Developer-Konsole](https://developer.adobe.com/console/home) und melden Sie sich mit dem Entwicklerzugriff Ihrer Organisation an.
+1. Rufen Sie die [Adobe Developer Console](https://developer.adobe.com/de/console/home) auf und melden Sie sich mit den Entwicklerzugriffsdaten Ihrer Organisation an.
 
    >[!NOTE]
    >
    > Stellen Sie sicher, dass Sie beim richtigen Portal der Organisation angemeldet sind.
 
 1. Wählen Sie **[!UICONTROL + Zu Projekt hinzufügen]** und dann **[!UICONTROL API]**.
-1. Im **[!UICONTROL API hinzufügen]** auswählen **[!UICONTROL Adobe Campaign]**.
-1. Wählen Sie als Authentifizierungstyp **[!UICONTROL Service Account (JWT)]** (Dienstkonto (JWT)).
+1. Wählen Sie im Fenster **[!UICONTROL API hinzufügen]** die Option **[!UICONTROL Adobe Campaign]**.
+1. Wählen Sie als Authentifizierungstyp **[!UICONTROL Service Account (JWT)]**.
 1. Wenn Ihre Client-ID leer war, wählen Sie **[!UICONTROL Generate a key pair]** (Schlüsselpaar generieren) aus, um ein Paar aus öffentlichem und privatem Schlüssel zu erstellen.
 
    Die Schlüssel werden dann automatisch mit einem Standardablaufdatum von 365 Tagen heruntergeladen. Nach dem Ablaufdatum müssen Sie ein neues Schlüsselpaar erstellen und die Integration in der Konfigurationsdatei aktualisieren. Mit Option 2 können Sie Ihren **[!UICONTROL öffentlichen Schlüssel]** manuell mit einem längeren Ablaufdatum erstellen und hochladen.
@@ -73,11 +75,11 @@ Im Rahmen der neuen Integration des Zustellbarkeitsservers muss Campaign über e
    >Sie sollten die Datei config.zip speichern, wenn die Download-Eingabeaufforderung angezeigt wird, da Sie sie nicht erneut herunterladen können.
 
 1. Klicken Sie auf **[!UICONTROL Weiter]**.
-1. Wählen Sie ein vorhandenes **[!UICONTROL Produktprofil]** aus oder erstellen Sie ggf. ein neues. Für dieses **[!UICONTROL Produktprofil]** ist keine Berechtigung erforderlich. Weitere Informationen finden Sie unter [!DNL Analytics] **[!UICONTROL Produktprofile]**, siehe [diese Seite](https://helpx.adobe.com/de/enterprise/using/manage-developers.html?lang=de).
+1. Wählen Sie ein vorhandenes **[!UICONTROL Produktprofil]** aus oder erstellen Sie ggf. ein neues. Für dieses **[!UICONTROL Produktprofil]** ist keine Berechtigung erforderlich. Weitere Informationen zu [!DNL Analytics] **[!UICONTROL Produktprofilen]** finden Sie auf [dieser Seite](https://helpx.adobe.com/de/enterprise/using/manage-developers.html?lang=de).
 
    Klicken Sie dann auf **[!UICONTROL Konfigurierte API speichern]**.
 
-1. Wählen Sie in Ihrem Projekt **[!UICONTROL Adobe Campaign]** und kopieren Sie die folgenden Informationen unter **[!UICONTROL Dienstkonto (JWT)]**:
+1. Wählen Sie in Ihrem Projekt **[!UICONTROL Adobe Campaign]** und kopieren Sie die folgenden Informationen unter **[!UICONTROL Service Account (JWT)]**:
 
    * **[!UICONTROL Client ID]** (Client-ID)
    * **[!UICONTROL Client Secret]** (Client-Geheimnis)
@@ -90,7 +92,7 @@ Im Rahmen der neuen Integration des Zustellbarkeitsservers muss Campaign über e
 
 ### Schritt 2: Hinzufügen der Projektanmeldedaten in Adobe Campaign {#add-credentials-campaign}
 
-Der private Schlüssel sollte im Base64-UTF-8-Format kodiert werden.
+Der private Schlüssel sollte im Base64-UTF-8-Format kodiert sein.
 
 Gehen Sie dabei folgendermaßen vor:
 
@@ -108,41 +110,43 @@ Gehen Sie dabei folgendermaßen vor:
    nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID/<Client_Secret>/<Base64_encoded_Private_Key>
    ```
 
-1. Sie müssen den Server stoppen und dann neu starten, damit die Änderung berücksichtigt wird. Sie können auch eine `config -reload` Befehl.
+1. Sie müssen den Server anhalten und dann neu starten, damit die Änderung übernommen wird. Sie können auch einen `config -reload`-Befehl ausführen.
 
-### Schritt 3: Überprüfen der Konfiguration
+### Schritt 3: Überprüfen Sie Ihre Konfiguration
 
-Nach Abschluss der Einstellungen können Sie die Konfiguration Ihrer Instanz überprüfen. Gehen Sie wie folgt vor:
+Nachdem die Einstellungen abgeschlossen sind, können Sie die Konfiguration Ihrer Instanz überprüfen. Gehen Sie dazu wie folgt vor:
 
-1. Öffnen Sie die Clientkonsole und melden Sie sich als Administrator bei Adobe Campaign an.
-1. Navigieren Sie zu **Administration > Plattform > Optionen**.
-1. Überprüfen Sie die `DmRendering_cuid` Optionswert ausgefüllt. Sie sollte in allen Ihren Campaign-Instanzen (MKT, MID, RT, EXEC) ausgefüllt werden. Wenn der Wert nicht ausgefüllt ist, müssen Sie ihn ausfüllen. Wenn kein Wert ausgefüllt ist, kontaktieren Sie [Adobe-Kundenunterstützung](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) um Ihre CUID zu erhalten.
+1. Öffnen Sie die Client-Konsole und melden Sie sich bei Adobe Campaign als Administrator an.
+1. Gehen Sie zu **Administration > Plattform > Optionen**.
+1. Prüfen Sie, ob der Wert der Option `DmRendering_cuid` ausgefüllt ist. Er sollte in allen Ihren Campaign-Instanzen (MKT, MID, RT, EXEC) ausgefüllt sein. Ist dies nicht der Fall, müssen Sie den Wert selbst eintragen. Wenn kein Wert eingetragen ist, wenden Sie sich an die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html), um Ihre CUID zu erhalten.
 
-### Schritt 4: Aktivieren des neuen Zustellbarkeits-Servers
+### Schritt 4: Aktivieren Sie den neuen Zustellbarkeits-Server
 
-Jetzt können Sie den neuen Zustellbarkeits-Server aktivieren. Gehen Sie dazu folgendermaßen vor:
+Jetzt können Sie den neuen Zustellbarkeits-Server aktivieren. Um dies durchzuführen:
 
-1. Öffnen Sie die Clientkonsole und melden Sie sich als Administrator bei Adobe Campaign an.
-1. Navigieren Sie zu **Administration > Plattform > Optionen**.
-1. Zugriff auf `NewDeliverabilityServer_FeatureFlag` und setzen Sie den Wert auf `1`. Diese Konfiguration sollte für alle Campaign-Instanzen durchgeführt werden (MKT, MID, RT, EXEC).
-
-
-### Schritt 5: Überprüfen der Konfiguration
-
-Gehen Sie wie folgt vor, um zu überprüfen, ob die Integration erfolgreich ist:
+1. Öffnen Sie die Client-Konsole und melden Sie sich bei Adobe Campaign als Administrator an.
+1. Gehen Sie zu **Administration > Plattform > Optionen**.
+1. Rufen Sie die Option `NewDeliverabilityServer_FeatureFlag` auf und setzen Sie den Wert auf `1`. Diese Konfiguration sollte für alle Ihre Campaign-Instanzen (MKT, MID, RT, EXEC) durchgeführt werden.
 
 
-1. Öffnen Sie die Clientkonsole und melden Sie sich bei Adobe Campaign an.
-1. Navigieren Sie zu **Administration > Betreibung > Technische Workflows**.
-1. Starten Sie den **Zustellbarkeit aktualisieren** Workflow (deliverabilityUpdate). Dies sollte für alle Campaign-Instanzen (MKT, MID, RT, EXEC) durchgeführt werden.
-1. Protokolle überprüfen: Der Workflow sollte fehlerfrei ausgeführt werden.
+### Schritt 5: Überprüfen Sie Ihre Konfiguration
+
+Führen Sie die folgenden Schritte aus, um zu überprüfen, ob die Integration erfolgreich war:
+
+
+1. Öffnen Sie die Client-Konsole und melden Sie sich bei Adobe Campaign an.
+1. Gehen Sie zu **Administration > Produktion > Technische Workflows**.
+1. Starten Sie den Workflow **Zustellbarkeit** (deliverabilityUpdate) neu. Dies sollte für alle Ihre Campaign-Instanzen (MKT, MID, RT, EXEC) durchgeführt werden.
+1. Überprüfen Sie die Protokolle: Der Workflow sollte fehlerfrei ausgeführt werden.
 
 ## Häufig gestellte Fragen{#faq-aa}
 
-F: A:
+F: 
+A:
 
-F: A:
+F: 
+A:
 
 
 
-Weitere Informationen erhalten Sie bei der [Adobe-Kundenunterstützung](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+Weitere Informationen erhalten Sie bei der [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
