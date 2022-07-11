@@ -5,9 +5,9 @@ description: Erfahren Sie, wie Sie den Zustellbarkeits-Server von Campaign imple
 hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 2e4d699aef0bea4f12d1bd2d715493c4a94a74dd
+source-git-commit: 2c70b5a4434b9fb22490eb3c1705f4e5c803643e
 workflow-type: tm+mt
-source-wordcount: '969'
+source-wordcount: '951'
 ht-degree: 81%
 
 ---
@@ -40,7 +40,7 @@ Als **gehosteter Kunde**, arbeitet Adobe mit Ihnen zusammen, um Ihre Instanz(en)
 
 Als **On-Premise-/Hybrid-Kunde** müssen Sie auf eine der neueren Versionen aktualisieren, um vom neuen Zustellbarkeits-Server profitieren zu können. Sobald alle Instanzen das Upgrade erhalten haben, können Sie [die neue Integration](#implementation-steps) zum Adobe Zustellbarkeits-Server implementieren und so einen nahtlosen Übergang sicherstellen.
 
-## Implementierungsschritte (Hybrid- und On-Premise-Kunden) {#implementation-steps}
+## Implementierungsschritte {#implementation-steps}
 
 Im Rahmen der Integration des neuen Zustellbarkeits-Servers muss Campaign mit Adobe Shared Services über eine auf dem Identity Management Service (IMS) basierende Authentifizierung kommunizieren. Die bevorzugte Methode ist die Verwendung des Adobe Developer-basierten Gateway-Tokens (auch als Token für technische Konten oder Adobe IO JWT bezeichnet).
 
@@ -48,8 +48,6 @@ Im Rahmen der Integration des neuen Zustellbarkeits-Servers muss Campaign mit Ad
 >[!WARNING]
 >
 >Diese Schritte sollten nur bei Hybrid- und On-Premise-Implementierungen durchgeführt werden.
->
->Bei gehosteten Implementierungen wenden Sie sich an die [Adobe-Kundenunterstützung](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 ### Voraussetzungen{#prerequisites}
 
