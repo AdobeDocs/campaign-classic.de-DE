@@ -5,16 +5,16 @@ description: Erfahren Sie, wie Sie den Zustellbarkeits-Server von Campaign imple
 hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: c3b1ffcb580c7510a64115e0abbf16cb766146c5
+source-git-commit: 5e0cf925ab4915c8a1d2c9d50daf77190023710f
 workflow-type: tm+mt
-source-wordcount: '1109'
-ht-degree: 66%
+source-wordcount: '1107'
+ht-degree: 64%
 
 ---
 
 # Campaign Zustellbarkeits-Server {#acc-deliverability}
 
-Mit der Veröffentlichung von Campaign Classic v7 21.1 stellt Adobe Campaign einen neuen Zustellbarkeits-Server bereit, der eine hohe Verfügbarkeit bietet und Probleme mit der Einhaltung von Sicherheitsvorschriften löst. Campaign Classic synchronisiert nun die Zustellbarkeitsregeln, Broadlogs und Unterdrückungsadressen mit dem neuen Zustellbarkeits-Server.
+Start [Version 7.2.1](../../rn/using/latest-release.md#release-7-2-2), schlägt Adobe Campaign einen neuen Zustellbarkeits-Server vor, der hohe Verfügbarkeit bietet und Probleme mit der Einhaltung von Sicherheitsvorschriften behebt. Campaign Classic synchronisiert nun die Zustellbarkeitsregeln, Broadlogs und Unterdrückungsadressen mit dem neuen Zustellbarkeits-Server.
 
 Als Campaign Classic-Kunde müssen Sie den neuen Zustellbarkeits-Server implementieren **vor dem 31. August 2022**.
 
