@@ -5,10 +5,10 @@ description: Erfahren Sie, wie Sie den Zustellbarkeits-Server von Campaign imple
 hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 2c70b5a4434b9fb22490eb3c1705f4e5c803643e
+source-git-commit: 6740b5eed33612bd7a3b217a8f53b07518f879fb
 workflow-type: tm+mt
-source-wordcount: '951'
-ht-degree: 81%
+source-wordcount: '1109'
+ht-degree: 66%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 81%
 
 Mit der Veröffentlichung von Campaign Classic v7 21.1 stellt Adobe Campaign einen neuen Zustellbarkeits-Server bereit, der eine hohe Verfügbarkeit bietet und Probleme mit der Einhaltung von Sicherheitsvorschriften löst. Campaign Classic synchronisiert nun die Zustellbarkeitsregeln, Broadlogs und Unterdrückungsadressen mit dem neuen Zustellbarkeits-Server.
 
-Als Campaign Classic-Kunde müssen Sie den neuen Zustellbarkeits-Server implementieren.
+Als Campaign Classic-Kunde müssen Sie den neuen Zustellbarkeits-Server implementieren **vor dem 31. August 2022**.
 
 >[!NOTE]
 >
->Wenden Sie sich bei Fragen zu diesen Änderungen an die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Fragen zu diesen Änderungen finden Sie im Abschnitt [FAQs](#faq)oder Kontakt [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 ## Was hat sich geändert?{#acc-deliverability-changes}
 
@@ -30,7 +30,7 @@ Dieser neue Server garantiert hohe Verfügbarkeit (99,9) und bietet sichere, aut
 
 ## Sind Sie betroffen?{#acc-deliverability-impacts}
 
-Wenn Sie den alten Zustellbarkeits-Server von Adobe Campaign verwenden und Ihre Umgebung mit einem niedrigeren Build als Campaign 21.1.1 implementiert wurde, sind Sie davon betroffen. Sie müssen auf Campaign 21.1 (oder höher) aktualisieren.
+Wenn Ihre Umgebung für einen niedrigeren Build implementiert wurde als [Campaign v7.2.1](../../rn/using/latest-release.md#release-7-2-2), sind Sie betroffen. Sie müssen auf Campaign v7.2.1 (oder höher) aktualisieren.
 
 [In diesem Abschnitt](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version) erfahren Sie, wie Sie Ihre Version überprüfen.
 
@@ -150,5 +150,22 @@ Führen Sie die folgenden Schritte aus, um zu überprüfen, ob die Integration e
 1. Gehen Sie zu **Administration > Produktion > Technische Workflows**.
 1. Starten Sie den Workflow **Zustellbarkeit** (deliverabilityUpdate) neu. Dies sollte für alle Ihre Campaign-Instanzen (MKT, MID, RT, EXEC) durchgeführt werden.
 1. Überprüfen Sie die Protokolle: Der Workflow sollte fehlerfrei ausgeführt werden.
+
+
+## Häufig gestellte Fragen {#faq}
+
+### Was passiert, wenn ich meine Umgebung nicht aktualisiere?
+
+Jede Campaign-Instanz, die nicht bis zum 31. August aktualisiert wurde, kann keine Verbindung mehr zum Campaign-Zustellbarkeits-Server herstellen. Die **Zustellbarkeit aktualisieren** Der Workflow (deliverabilityUpdate) schlägt fehl. Dieser Workflow verwaltet die tägliche Aktualisierung der MX-Regeln und -Inbounces-Regeln.
+
+Wenn Sie Ihre Umgebung nicht aktualisieren, werden die E-Mail-Einstellungen nicht mehr synchronisiert (MX-Verwaltungsregeln, Regeln für die Eingehende E-Mail, Regeln für die Domänenverwaltung und Regeln für die Bounce-Qualifizierung). Dies kann sich auf die Zustellbarkeit im Laufe der Zeit auswirken. Wenn eine wesentliche Änderung an diesen Regeln vorgenommen wird, müssen diese ab diesem Zeitpunkt manuell angewendet werden.
+
+Nur für MKT-Instanzen [Globale Unterdrückungsliste](../../campaign-opt/using/filtering-rules.md#default-deliverability-exclusion-rules) betroffen ist.
+
+### Ich kann jetzt nicht aktualisieren. Welche Leitlinien gibt es?
+
+Wenn Sie Ihre Instanz nicht vor dem 31. August aktualisieren können, müssen Sie die **Zustellbarkeit aktualisieren** (deliverabilityUpdate) -Workflow bis zum Abschluss des Upgrades, damit nicht versucht wird, eine Synchronisation mit dem alten Zustellbarkeits-Server durchzuführen.
+
+
 
 Weitere Informationen erhalten Sie bei der [Adobe-Kundenunterstützung](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
