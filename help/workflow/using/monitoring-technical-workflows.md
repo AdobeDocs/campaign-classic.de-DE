@@ -4,10 +4,10 @@ title: Überwachen technischer Workflows
 description: Überwachen technischer Workflows
 feature: Workflows
 exl-id: 5e77d196-5c71-438e-8dae-10c6a6e4f29c
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
-workflow-type: ht
-source-wordcount: '531'
-ht-degree: 100%
+source-git-commit: 25e8acdc449c7002e467db17e7c70e3dc017dded
+workflow-type: tm+mt
+source-wordcount: '533'
+ht-degree: 96%
 
 ---
 
@@ -48,9 +48,9 @@ In diesem [Abschnitt](about-technical-workflows.md) erfahren Sie, was jeder tech
 
 Vergewissern Sie sich, dass der Tracking-Workflow plangemäß ausgeführt wird (standardmäßig jede Stunde) und im Protokoll keine wiederkehrenden Fehler aufgezeigt werden. Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](delivery.md).
 
-**[!UICONTROL Aktualisierung der Zustellbarkeit (‘deliverabilityUpdate’)]**:
+Für **[!UICONTROL Zustellbarkeit aktualisieren (deliverabilityUpdate)]**:
 
-1. Vergewissern Sie sich, dass der Workflow **[!UICONTROL Zustellbarkeitsaktualisierung]** täglich ausgeführt und erfolgreich abgeschlossen wird.
+1. Stellen Sie sicher, dass die **[!UICONTROL Zustellbarkeit]** Der Workflow wird täglich erfolgreich ausgeführt und abgeschlossen.
 1. Prüfen Sie im Protokoll, ob die Regeln regelmäßig aktualisiert werden.
 
 **[!UICONTROL Kampagnenprozesse (&#39;operationMgt&#39;, &#39;deliveryMgt‘ etc.)]**:

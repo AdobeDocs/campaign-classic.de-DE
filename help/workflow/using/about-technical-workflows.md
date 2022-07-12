@@ -4,10 +4,10 @@ title: Technische Workflows
 description: Erfahren Sie mehr über die technischen Workflows, die mit Campaign Classic-Packages verfügbar sind.
 feature: Workflows
 exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
-workflow-type: ht
+source-git-commit: 25e8acdc449c7002e467db17e7c70e3dc017dded
+workflow-type: tm+mt
 source-wordcount: '1724'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -78,4 +78,4 @@ Weiterführende Informationen zur Verfolgung technischer Workflows finden Sie in
 | **Benachrichtigung über Aufgaben** (taskMgt) | Marketing-Ressourcen (MRM)  – Nur Campaign v7 | Mit diesem Workflow können Sie Benachrichtigungen senden, die sich auf Aufgaben in Marketing-Kampagnen beziehen. |
 | **Tracking** (tracking) | Versand | Dieser Workflow ruft Tracking-Informationen ab und konsolidiert sie. Er aktualisiert außerdem die Berechnung der Tracking- und Versandstatistiken, insbesondere der Statistiken, die von den Archivierungs-Workflows des Message Centers verwendet werden. Er wird standardmäßig stündlich ausgelöst. |
 | **Update des Ereignisstatus** (updateEventsStatus) | Ausführung einer Transaktionsnachricht (Message Center – Ausführung) | Dieser Workflow weist Ereignissen einen Status zu. Folgende Status sind möglich:<ul><li>Ausstehend: Das Ereignis befindet sich in der Warteschlange. Ihm wurde noch keine Nachrichtenvorlage zugeordnet.</li><li>Versand ausstehend: Das Ereignis befindet sich in der Warteschlange. Ihm wurde eine Nachrichtenvorlage zugeordnet und die Versandverarbeitung ist im Gange.</li><li>Gesendet: Dieser Status wird aus den Versandlogs übernommen. Er bedeutet, dass die Nachricht gesendet wurde.</li><li>Vom Versand ignoriert: Dieser Status wird aus den Versand-Logs übernommen. Er bedeutet, dass der Versand ignoriert wurde.</li><li>Versandfehler: Dieser Status wird aus den Versand-Logs übernommen. Er bedeutet, dass der Versand fehlgeschlagen ist.</li><li>Ereignis wurde nicht berücksichtigt: Dem Ereignis konnte keine Nachrichtenvorlage zugeordnet werden. Es erfolgt kein weiterer Verarbeitungsversuch.</li></ul> |
-| **Update für Zustellbarkeit** (deliverabilityUpdate) | Versand | Sobald das Paket zur Überwachung der Zustellbarkeit (E-Mail-Zustellbarkeit) installiert ist, wird dieser Workflow nachts ausgeführt und verwaltet die Qualifikationsregeln für unzustellbare E-Mails sowie die Liste der Domains und MXs. Dazu muss der HTTPS-Port auf der Plattform geöffnet sein. |
+| **Zustellbarkeit** (deliverabilityUpdate) | Versand | Sobald das Paket zur Überwachung der Zustellbarkeit (E-Mail-Zustellbarkeit) installiert ist, wird dieser Workflow nachts ausgeführt und verwaltet die Qualifikationsregeln für unzustellbare E-Mails sowie die Liste der Domains und MXs. Dazu muss der HTTPS-Port auf der Plattform geöffnet sein. |
