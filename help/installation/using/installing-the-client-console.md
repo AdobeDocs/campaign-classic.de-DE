@@ -6,10 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
-source-git-commit: 0f63636e9cc22ac97e634a4f11dc585cb39b05c0
+source-git-commit: 7f24c8be599d6dece41de848d64feb8079b10ff3
 workflow-type: tm+mt
-source-wordcount: '996'
-ht-degree: 25%
+source-wordcount: '1146'
+ht-degree: 23%
 
 ---
 
@@ -24,6 +24,7 @@ Bevor Sie mit der Installation der Client Console beginnen, müssen Sie Folgende
 * Überprüfen Sie die Kompatibilität Ihres Systems und Ihrer Tools mit Adobe Campaign in der [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)
 * Ermitteln Sie Ihre Campaign-Server-URL
 * Ermitteln Sie Ihre Anwender-Anmeldedaten
+* Lassen Sie die Microsoft Edge Webview2-Laufzeit auf Ihrem System installiert (ab Build-Version von Campaign Classic 7.3). [Weitere Informationen](#webview)
 
 Die Installation oder Aktualisierung der Clientkonsole hängt von Ihrer Implementierung von Adobe Campaign Classic ab.
 Lesen Sie die folgenden Details, um zu verstehen, was für Ihre Implementierung erforderlich ist.
@@ -33,6 +34,12 @@ Lesen Sie die folgenden Details, um zu verstehen, was für Ihre Implementierung 
 >[!CAUTION]
 >
 >Die Campaign Client-Konsole und der Campaign-Anwendungsserver müssen ausgeführt werden **auf derselben Produktversion**. Adobe empfiehlt außerdem dringend die Verwendung der **derselbe Produktaufbau**. Erfahren Sie, wie Sie Ihre Campaign-Client- und -Server-Versionen überprüfen in [diesem Abschnitt](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+
+## Microsoft Edge Webview2-Laufzeitinstallation {#webview}
+
+Ab der Build-Version von Campaign Classic 7.3 ist die Installation der Microsoft Edge Webview 2-Laufzeit für jede Konsoleninstallation erforderlich.
+
+Webansicht wird standardmäßig als Teil des Windows 11-Betriebssystems installiert. Wenn es nicht bereits auf Ihrem System vorhanden ist, werden Sie vom Installationsprogramm der Campaign Classic Console aufgefordert, es von herunterzuladen. [Microsoft Developer-Website](http://www.adobe.com/go/acc-ms-webview2-runtime-download_de). Beachten Sie, dass der Download-Link im Internet Explorer 11-Browser nicht funktioniert, da Microsoft seine Unterstützung eingestellt hat. Stellen Sie sicher, dass Sie einen anderen Browser verwenden, um auf den Link zuzugreifen.
 
 ## Von Adobe gehostete Implementierungen {#hosted-customers}
 
@@ -150,6 +157,9 @@ Gehen Sie wie folgt vor, um sich bei einer vorhandenen Instanz anzumelden:
 
 1. Geben Sie Ihre Anmeldedaten für den Benutzer ein und klicken Sie auf **[!UICONTROL Anmelden]**
 
+>[!NOTE]
+>
+>Bei Campaign Classic 7.3-Build-Versionen kann die Adobe Campaign-Clientkonsole während der Proxy-Authentifizierung zwei Mal um Proxy-Anmeldeinformationen bitten. Dies liegt daran, dass Microsoft Edge Webview2 im Gegensatz zu Internet Explorer keine Proxy-Anmeldeinformationen im Cache-/Kennwortspeicher speichert.
 
 **Verwandte Themen** 
 
