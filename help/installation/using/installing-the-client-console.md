@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
-source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
+source-git-commit: 0f63636e9cc22ac97e634a4f11dc585cb39b05c0
 workflow-type: tm+mt
 source-wordcount: '996'
 ht-degree: 25%
@@ -36,7 +36,7 @@ Lesen Sie die folgenden Details, um zu verstehen, was für Ihre Implementierung 
 
 ## Von Adobe gehostete Implementierungen {#hosted-customers}
 
-Werdet einen gehosteten Kunden, haben Sie zwei Möglichkeiten, Ihre Client-Konsole(n) zu installieren oder zu aktualisieren:
+Als gehosteter Kunde haben Sie zwei Möglichkeiten, Ihre Client-Konsole(n) zu installieren oder zu aktualisieren:
 
 1. Adobe kann direkt bereitgestellt werden. Nach der Aktualisierung der Konsole werden Benutzer aufgefordert, die neueste Clientkonsolenversion in einem Popup-Fenster herunterzuladen.
 
