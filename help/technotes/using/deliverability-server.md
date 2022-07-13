@@ -5,10 +5,10 @@ description: Erfahren Sie, wie Sie den Zustellbarkeits-Server von Campaign imple
 hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: bec525c52cb30dfae9530265bc3fdc2395879539
+source-git-commit: dfa28fc10bcfddcf35e8ddfa0af1fba718400350
 workflow-type: tm+mt
-source-wordcount: '1167'
-ht-degree: 60%
+source-wordcount: '1147'
+ht-degree: 57%
 
 ---
 
@@ -30,15 +30,13 @@ Dieser neue Server garantiert hohe Verfügbarkeit (99,9) und bietet sichere, aut
 
 ## Sind Sie betroffen?{#acc-deliverability-impacts}
 
-Wenn Ihre Umgebung für einen niedrigeren Build implementiert wurde als [Campaign v7.2.1](../../rn/using/latest-release.md#release-7-2-2), sind Sie betroffen. Sie müssen auf Campaign v7.2.1 (oder höher) aktualisieren.
-
-[In diesem Abschnitt](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version) erfahren Sie, wie Sie Ihre Version überprüfen.
+Alle Kunden müssen ein Upgrade auf [Campaign v7.2.1](../../rn/using/latest-release.md#release-7-2-2) und ihre Umgebung implementieren, um vom neuen Zustellbarkeits-Server zu profitieren.
 
 ## Wie wird die Aktualisierung durchgeführt?{#acc-deliverability-update}
 
 Als **gehosteter Kunde**, arbeitet Adobe mit Ihnen zusammen, um Ihre Instanz(en) auf die neuere Version zu aktualisieren und das Projekt in der Adobe Developer Console zu erstellen.
 
-Als **On-Premise-/Hybrid-Kunde** müssen Sie auf eine der neueren Versionen aktualisieren, um vom neuen Zustellbarkeits-Server profitieren zu können. Sobald alle Instanzen das Upgrade erhalten haben, können Sie [die neue Integration](#implementation-steps) zum Adobe Zustellbarkeits-Server implementieren und so einen nahtlosen Übergang sicherstellen.
+Als **On-Premise-/Hybrid-Kunde**, müssen Sie ein Upgrade auf [Campaign v7.2.1](../../rn/using/latest-release.md#release-7-2-2) , um vom neuen Zustellbarkeits-Server zu profitieren. Nachdem alle Instanzen aktualisiert wurden, müssen Sie [die neue Integration implementieren](#implementation-steps) auf den Zustellbarkeitsserver der Adobe zu gelangen und einen nahtlosen Übergang zu gewährleisten.
 
 ## Implementierungsschritte {#implementation-steps}
 
