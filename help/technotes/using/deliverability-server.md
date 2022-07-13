@@ -5,16 +5,16 @@ description: Erfahren Sie, wie Sie den Zustellbarkeits-Server von Campaign imple
 hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: dfa28fc10bcfddcf35e8ddfa0af1fba718400350
+source-git-commit: 5d6ff45605980e5fe21933c5d8fb6c48e02f1628
 workflow-type: tm+mt
-source-wordcount: '1147'
-ht-degree: 57%
+source-wordcount: '1163'
+ht-degree: 55%
 
 ---
 
 # Campaign Zustellbarkeits-Server {#acc-deliverability}
 
-Start [Version 7.2.1](../../rn/using/latest-release.md#release-7-2-2), schlägt Adobe Campaign einen neuen Zustellbarkeits-Server vor, der hohe Verfügbarkeit bietet und Probleme mit der Einhaltung von Sicherheitsvorschriften behebt. Campaign Classic synchronisiert nun die Zustellbarkeitsregeln, Broadlogs und Unterdrückungsadressen mit dem neuen Zustellbarkeits-Server.
+Start [Version 7.2.1](../../rn/using/latest-release.md#release-7-2-2)setzt Adobe Campaign auf einen neuen Zustellbarkeits-Server, der hohe Verfügbarkeit bietet und Probleme mit der Einhaltung von Sicherheitsvorschriften behebt. Campaign Classic synchronisiert nun die Zustellbarkeitsregeln, Broadlogs und Unterdrückungsadressen mit dem neuen Zustellbarkeits-Server. Der alte Zustellbarkeits-Server wird am 31. August 2022 eingestellt.
 
 Als Campaign Classic-Kunde müssen Sie den neuen Zustellbarkeits-Server implementieren **vor dem 31. August 2022**.
 
@@ -30,13 +30,13 @@ Dieser neue Server garantiert hohe Verfügbarkeit (99,9) und bietet sichere, aut
 
 ## Sind Sie betroffen?{#acc-deliverability-impacts}
 
-Alle Kunden müssen ein Upgrade auf [Campaign v7.2.1](../../rn/using/latest-release.md#release-7-2-2) und ihre Umgebung implementieren, um vom neuen Zustellbarkeits-Server zu profitieren.
+Alle Kunden sind betroffen und müssen auf [Campaign v7.2.1](../../rn/using/latest-release.md#release-7-2-2) (oder mehr) und ihre Umgebung implementieren, um vom neuen Zustellbarkeits-Server zu profitieren.
 
 ## Wie wird die Aktualisierung durchgeführt?{#acc-deliverability-update}
 
 Als **gehosteter Kunde**, arbeitet Adobe mit Ihnen zusammen, um Ihre Instanz(en) auf die neuere Version zu aktualisieren und das Projekt in der Adobe Developer Console zu erstellen.
 
-Als **On-Premise-/Hybrid-Kunde**, müssen Sie ein Upgrade auf [Campaign v7.2.1](../../rn/using/latest-release.md#release-7-2-2) , um vom neuen Zustellbarkeits-Server zu profitieren. Nachdem alle Instanzen aktualisiert wurden, müssen Sie [die neue Integration implementieren](#implementation-steps) auf den Zustellbarkeitsserver der Adobe zu gelangen und einen nahtlosen Übergang zu gewährleisten.
+Als **On-Premise-/Hybrid-Kunde**, müssen Sie ein Upgrade auf [Campaign v7.2.1](../../rn/using/latest-release.md#release-7-2-2) (oder mehr), um vom neuen Zustellbarkeits-Server zu profitieren. Nachdem alle Instanzen aktualisiert wurden, müssen Sie [die neue Integration implementieren](#implementation-steps) auf den Zustellbarkeitsserver der Adobe zu gelangen und einen nahtlosen Übergang zu gewährleisten.
 
 ## Implementierungsschritte {#implementation-steps}
 
