@@ -5,9 +5,9 @@ description: Erstellen einer Landingpage
 feature: Landing Pages
 exl-id: 71c737c2-b0d6-4ae8-a5df-28a08dff82d7
 source-git-commit: 4ff86349d6b8966273585bf2a1ea0d785a7e87cb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '764'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
