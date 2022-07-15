@@ -5,10 +5,10 @@ description: Erfahren Sie, wie Sie den Zustellbarkeits-Server von Campaign imple
 hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 5d6ff45605980e5fe21933c5d8fb6c48e02f1628
+source-git-commit: 6f6c329808e78a56a61997aba83c55520030afc7
 workflow-type: tm+mt
-source-wordcount: '1163'
-ht-degree: 55%
+source-wordcount: '1158'
+ht-degree: 52%
 
 ---
 
@@ -20,7 +20,7 @@ Als Campaign Classic-Kunde müssen Sie den neuen Zustellbarkeits-Server implemen
 
 >[!NOTE]
 >
->Fragen zu diesen Änderungen finden Sie im Abschnitt [FAQs](#faq)oder Kontakt [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Weitere Fragen zu diesen Änderungen finden Sie im Abschnitt [FAQs](#faq)oder Kontakt [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank}.
 
 ## Was hat sich geändert?{#acc-deliverability-changes}
 
@@ -56,7 +56,7 @@ Im Rahmen der Integration des neuen Zustellbarkeits-Servers muss Campaign mit Ad
 1. Prüfen Sie, ob der Wert der Option `DmRendering_cuid` ausgefüllt ist.
 
    * Wenn die Option ausgefüllt ist, können Sie die Implementierung starten.
-   * Wenn kein Wert eingetragen ist, wenden Sie sich an die [Adobe-Kundenunterstützung](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html), um Ihre CUID zu erhalten.
+   * Wenn kein Wert ausgefüllt ist, kontaktieren Sie [Adobe-Kundenunterstützung](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank}, um Ihre CUID zu erhalten.
 
       Diese Option muss für alle Campaign-Instanzen (MKT, MID, RT, EXEC) mit demselben Wert angegeben werden. Wenden Sie sich als Hybrid-Kunde an Adobe, damit die Option in Ihren MID-, RT- und EXEC-Instanzen festgelegt ist.
 
@@ -91,7 +91,7 @@ Im Rahmen der Integration des neuen Zustellbarkeits-Servers muss Campaign mit Ad
    >Sie sollten die `config.zip` Datei, wenn die Download-Eingabeaufforderung angezeigt wird, da Sie sie nicht erneut herunterladen können.
 
 1. Klicken Sie auf **[!UICONTROL Weiter]**.
-1. Wählen Sie ein vorhandenes **[!UICONTROL Produktprofil]** aus oder erstellen Sie ggf. ein neues. Für dieses **[!UICONTROL Produktprofil]** ist keine Berechtigung erforderlich. Weitere Informationen zu **[!UICONTROL Produktprofilen]** finden Sie auf [dieser Seite](https://helpx.adobe.com/de/enterprise/using/manage-developers.html?lang=de).
+1. Wählen Sie ein vorhandenes **[!UICONTROL Produktprofil]** aus oder erstellen Sie ggf. ein neues. Für dieses **[!UICONTROL Produktprofil]** ist keine Berechtigung erforderlich. Weitere Informationen finden Sie unter **[!UICONTROL Produktprofile]**, siehe [diese Seite](https://helpx.adobe.com/de/enterprise/using/manage-developers.html?lang=de){_blank}.
    ![](assets/Product-Profile-API.png)
 
    Klicken Sie dann auf **[!UICONTROL Konfigurierte API speichern]**.
@@ -152,18 +152,17 @@ Führen Sie die folgenden Schritte aus, um zu überprüfen, ob die Integration e
 
 ## Häufig gestellte Fragen {#faq}
 
+### Welchen Zeitrahmen gibt es für die Aktualisierung?
+
+Der Übergang zum neuen Zustellbarkeits-Server, der die Hinzufügung dieser verbesserten Funktionen und die Erhöhung der Sicherheit ermöglicht, beginnt am 22. Juli für gehostete Kunden (Campaign Managed Services). Alle gehosteten Kunden werden Ende August aktualisiert.
+
+On-Premise- und Hybrid-Kunden müssen den Übergang im selben Zeitraum durchführen.
+
 ### Was passiert, wenn ich meine Umgebung nicht aktualisiere?
 
-Jede Campaign-Instanz, die nicht bis zum 31. August aktualisiert wurde, kann keine Verbindung mehr zum Campaign-Zustellbarkeits-Server herstellen. Die **Zustellbarkeit** Der Workflow (deliverabilityUpdate) schlägt fehl. Dieser Workflow verwaltet die tägliche Aktualisierung der MX-Regeln und -Inbounces-Regeln.
+Jede Campaign-Instanz, die nicht bis zum 31. August aktualisiert wurde, kann keine Verbindung mehr zum Campaign-Zustellbarkeits-Server herstellen. Die **Zustellbarkeit** Der Workflow (deliverabilityUpdate) schlägt fehl, was sich auf Ihre Zustellbarkeit auswirkt.
 
 Wenn Sie Ihre Umgebung nicht aktualisieren, werden die E-Mail-Einstellungen nicht mehr synchronisiert (MX-Verwaltungsregeln, Regeln für die Eingehende E-Mail, Regeln für die Domänenverwaltung und Regeln für die Bounce-Qualifizierung). Dies kann sich auf die Zustellbarkeit im Laufe der Zeit auswirken. Wenn eine wesentliche Änderung an diesen Regeln vorgenommen wird, müssen diese ab diesem Zeitpunkt manuell angewendet werden.
 
 Nur für MKT-Instanzen [Globale Unterdrückungsliste](../../campaign-opt/using/filtering-rules.md#default-deliverability-exclusion-rules) betroffen ist.
 
-### Ich kann jetzt nicht aktualisieren. Welche Leitlinien gibt es?
-
-Wenn Sie Ihre Instanz nicht vor dem 31. August aktualisieren können, müssen Sie die **Zustellbarkeit** (deliverabilityUpdate) -Workflow bis zum Abschluss des Upgrades, damit nicht versucht wird, eine Synchronisation mit dem alten Zustellbarkeits-Server durchzuführen.
-
-
-
-Weitere Informationen erhalten Sie bei der [Adobe-Kundenunterstützung](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
