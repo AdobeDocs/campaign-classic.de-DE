@@ -8,8 +8,8 @@ level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 7f24c8be599d6dece41de848d64feb8079b10ff3
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1960'
+ht-degree: 98%
 
 ---
 
@@ -34,7 +34,7 @@ _1. Juli 2022_
 <tbody> 
 <tr> 
 <td> <p>In iOS 15 fügte Apple das Konzept der „Dringlichen Mitteilungen“ hinzu, das dem App-Entwickler die Möglichkeit gibt, den Fokusmodus zu umgehen, wenn eine Benachrichtigung als dringlich eingestuft wird und den Benutzer in Echtzeit erreichen muss.</p>
-<p>Erfahren Sie im Abschnitt <a href="../../delivery/using/create-notifications-ios.md">Detaillierte Dokumentation</a>.</p>
+<p>Erfahren Sie in der <a href="../../delivery/using/create-notifications-ios.md">ausführlichen Dokumentation</a>, wie Sie eine vertrauliche Benachrichtigung erstellen.</p>
 </td> 
 </tr> 
 </tbody> 
@@ -42,48 +42,48 @@ _1. Juli 2022_
 
 **Aktualisierungen zur Kompatibilität**
 
-* Das Adobe Campaign SDK unterstützt jetzt Android 12 und iOS 15 für Push-Benachrichtigungen.
+* Das Adobe Campaign-SDK unterstützt jetzt Android 12 und iOS 15 für Push-Benachrichtigungen.
 * Adobe Campaign ist jetzt mit MySQL 8 kompatibel.
 * Adobe Campaign ist jetzt mit Windows 11 kompatibel.
-* Adobe Campaign ist jetzt mit Debian 11 kompatibel.
+* Adobe Campaign ist jetzt mit Internet Explorer 11 kompatibel.
 
 Weitere Informationen finden Sie in der [Kompatibilitätsmatrix für Campaign](../../rn/using/compatibility-matrix.md#OperatingSystems).
 
 **Verbesserungen**
 
-* Nach dem Ende der Nutzungsdauer von Internet Explorer 11 verwendet die HTML-Rendering-Engine für Adobe Services in der Konsole jetzt Edge Chromium. Außerdem ist jetzt die Installation der Microsoft Edge Webview 2-Laufzeitumgebung für jede Client-Konsoleninstallation erforderlich (ab Campaign Classic 7.3-Build-Version). [Weitere Informationen](../../installation/using/installing-the-client-console.md)
+* Nach dem Auslaufen von Internet Explorer 11 verwendet die HTML-Rendering-Engine für Adobe Services in der Konsole jetzt Edge Chromium. Außerdem ist jetzt die Installation der Microsoft Edge Webview 2-Laufzeitumgebung für jede Client-Konsoleninstallation erforderlich (ab Campaign Classic 7.3-Build-Version). [Weitere Informationen](../../installation/using/installing-the-client-console.md)
 * Die Datenbankverbindungsverwaltung in Adobe Campaign wurde verbessert, um die Stabilität zu optimieren.
 * Die Microsoft Exchange Online OAuth 2.0-Authentifizierung für POP3 wird jetzt in Campaign unterstützt. [Mehr dazu](../../installation/using/external-accounts.md#bounce-mails-external-account)
-* Fehlerkorrektur - Bei der Verwendung einer Anreicherungs-Workflow-Aktivität mit externen Daten treten jetzt keine Fehler mehr auf. (NEO-38069)
+* Fehlerkorrektur – Bei der Verwendung einer Anreicherungs-Workflow-Aktivität mit externen Daten treten jetzt keine Fehler mehr auf. (NEO-38069)
 * Der SAP Hana FDA-Connector wurde aktualisiert, um mit der neuesten SAP Hana-Datenbankversion (2.x) zu funktionieren.
-* Der Teradata FDA-Connector wurde aktualisiert, um mit der neuesten Teradata (17) zu funktionieren.
-* In Version 20.2 wurde die Unterstützung der Token-basierten Authentifizierung für iOS-Sendungen für neue Sendungen und Versandvorlagen eingeführt. In 7.2 wurde dem Poststugrade ein Patch hinzugefügt, um die Token-basierte Authentifizierungsunterstützung auf maximal 10.000 zuvor erstellte Sendungen und Versandvorlagen anzuwenden. In Version 7.3 wurde das Pflaster verbessert und die Grenze wurde entfernt.
+* Der Teradata FDA-Connector wurde aktualisiert, um mit der neuesten Teradata-Version (17) zu funktionieren.
+* In Version 20.2 wurde für neue Sendungen und Versandvorlagen die Unterstützung der Token-basierten Authentifizierung für iOS-Sendungen eingeführt. In 7.2 wurde dem Postugrade ein Patch hinzugefügt, um die Token-basierte Authentication-Unterstützung auf maximal 10.000 zuvor erstellte Sendungen und Versandvorlagen anzuwenden. In Version 7.3 wurde der Patch verbessert und die Begrenzung entfernt.
 
 **Patches**
 
-* Fehlerkorrektur - die Größe der IMS-Anmeldeseite kann nun auch im vorherigen Build geändert werden.
-* Fehlerkorrektur - bei der Installation des Content Manager-Packages auf einer vorhandenen Instanz tritt kein Fehler mehr auf.
-* Es wurde ein Problem im **Kampagnen** Menü, in dem die Meldung &quot;Vorgang läuft&quot; kontinuierlich angezeigt wurde.
-* Bei aktiviertem Adobe Analytics wurde ein Problem behoben, bei dem BID (Broadlog ID) und CID (Kampagnen-ID) aus der URL entfernt wurden, wenn eine E-Mail mit einer URL gesendet wurde, ohne den Versand zu speichern.
-* Fehlerkorrektur - Beim Hochladen eines Bildes im Ordner Öffentliche Ressourcen in einer Instanz mit Message Center-spezifischer Konfiguration tritt jetzt kein Fehler mehr auf. Die folgende Fehlermeldung wird angezeigt: &quot;Bilder können nicht auf die Tracking-Server hochgeladen werden&quot;.
+* Fehlerkorrektur – Die Größe der IMS-Anmeldeseite kann nun im Gegensatz zum vorherigen Build geändert werden.
+* Fehlerkorrektur – Bei der Installation des Content-Manager-Packages auf einer vorhandenen Instanz tritt nun kein Fehler mehr auf.
+* Fehlerkorrektur – Im Menü **Kampagnen** wird nicht mehr ständig die Meldung „Vorgang läuft“ angezeigt.
+* Fehlerkorrektur – Bei aktiviertem Adobe Analytics werden die BID (Broadlog-ID) und CID (Kampagnen-ID) nun nicht mehr aus der URL entfernt, wenn eine E-Mail mit einer URL gesendet wird, ohne die Übermittlung zu speichern.
+* Fehlerkorrektur – Beim Hochladen eines Bildes im Ordner „Öffentliche Ressourcen“ in einer Instanz mit Message Center-spezifischer Konfiguration tritt jetzt kein Fehler mehr auf. Es wird nicht mehr die Fehlermeldung „Bilder können nicht auf die Tracking-Server hochgeladen werden“ angezeigt.
 * Es wurde ein Problem behoben, das zum Absturz des Systems führte, wenn die Konfiguration im Falle von fehlerhaften Konfigurationsdateien neu generiert wurde.
-* Fehlerkorrektur - jetzt werden Versandindikatoren korrekt aktualisiert. (NEO-44827)
-* Fehlerkorrektur - bei der Verwendung komplexer Abfragen tritt kein Postupgrade-Fehler mehr auf. (NEO-43648)
-* Fehlerkorrektur - Die Vorschau von webApps funktioniert jetzt. (NEO-43242)
-* Fehlerkorrektur - Die Versandvorbereitung schlägt jetzt nicht mehr fehl, wenn eine externe Zielgruppen-Mapping-Datei in einem Workflow mit der Aktivität Laden (Datei) verwendet wird. (NEO-43691)
+* Fehlerkorrektur – Versandindikatoren werden jetzt korrekt aktualisiert. (NEO-44827)
+* Fehlerkorrektur – Bei der Verwendung komplexer Abfragen tritt jetzt kein Postupgrade-Fehler mehr auf. (NEO-43648)
+* Fehlerkorrektur – Die Vorschau von webApps funktioniert jetzt. (NEO-43242)
+* Fehlerkorrektur – Die Versandvorbereitung schlägt jetzt nicht mehr fehl, wenn eine externe Zielgruppen-Mapping-Datei in einem Workflow mit der Aktivität Laden (Datei) verwendet wird. (NEO-43691)
 * Es wurde ein Problem behoben, das zu Abstürzen führen konnte und einen vollständigen Neustart der Instanz erforderlich machte. (NEO-44645)
-* Fehlerkorrektur - Workflow-Heatmap lädt jetzt Ergebnisse. (NEO-43360)
-* Fehlerkorrektur - Bei der Verwendung des externen FDA-Connectors treten jetzt keine Verbindungsprobleme mehr auf. (NEO-42722)
-* Fehlerkorrektur - Bei Testsendungen tritt jetzt kein Fehler mehr auf, wenn Adressersetzung und Ausschluss von Kontrollgruppen verwendet werden. (NEO-39695)
-* Fehlerkorrektur - Workflow-Fehler werden jetzt nicht mehr aufgrund eines Snowflake-Connector-Problems verursacht. (NEO-46299)
-* Fehlerkorrektur - Die Clientkonsole wird jetzt aufgrund eines ungültigen Zeichens in einem Gestaltungsbaustein nicht mehr gesperrt. (NEO-45761)
-* Fehlerkorrektur - Beim Erstellen eines externen Kontos für Snowflake als externe Datenbank treten jetzt keine Verbindungsprobleme mehr auf. (NEO-45744)
-* Fehlerkorrektur - Tabelleninformationen werden jetzt nicht mehr durch ein visibleIf -Attribut geschützt angezeigt. (NEO-37865)
-* Fehlerkorrektur - Die Fehlermeldung &quot;$ is not defined&quot; wird jetzt in der Versandanalysephase angezeigt. (NEO-32940)
-* Fehlerkorrektur - Sendungen werden jetzt nicht mehr mit einem falschen eventType-Wert verknüpft. (NEO-45743)
-* Fehlerkorrektur - Es wurde ein Problem behoben, das zu Abstürzen aufgrund zeitweiliger Core-Dumps führen konnte. (NEO-30549)
-* Fehlerkorrektur - Bei der Verwendung von HTML-Code mit Fehlern in einem Versand kommt es nicht mehr zu Abstürzen. (NEO-40385)
-* Fehlerkorrektur - Benutzer ohne Administratorrechte können jetzt auf die **Analyse** in den Versandeigenschaften. (NEO-34025)
+* Fehlerkorrektur – Die Workflow-Heatmap lädt jetzt Ergebnisse. (NEO-43360)
+* Fehlerkorrektur – Bei der Verwendung des externen FDA-Connectors treten jetzt keine Verbindungsprobleme mehr auf. (NEO-42722)
+* Fehlerkorrektur – Bei Testsendungen tritt jetzt kein Fehler mehr auf, wenn Adressersetzung und Ausschluss von Kontrollgruppen verwendet werden. (NEO-39695)
+* Fehlerkorrektur – Es gibt jetzt kein Problem mehr mit dem Snowflake-Connector, der Workflow-Fehler verursachte. (NEO-46299)
+* Fehlerkorrektur – Die Client-Konsole bleibt jetzt nicht mehr aufgrund eines ungültigen Zeichens in einem Gestaltungsbaustein hängen. (NEO-45761)
+* Fehlerkorrektur – Beim Erstellen eines externen Kontos für Snowflake als externe Datenbank treten jetzt keine Verbindungsprobleme mehr auf. (NEO-45744)
+* Fehlerkorrektur – Tabelleninformationen, die durch ein Attribut „visibleIf“ geschützt sind, werden jetzt nicht mehr angezeigt. (NEO-37865)
+* Fehlerkorrektur – Während der Analysephase des Versands wird jetzt nicht mehr die Fehlermeldung „$ ist nicht definiert“ angezeigt. (NEO-32940)
+* Fehlerkorrektur – Sendungen werden jetzt nicht mehr mit einem falschen eventType-Wert verknüpft. (NEO-45743)
+* Fehlerkorrektur – Es gibt jetzt keine Core-Dumps (NEO-30549) mehr, die zu Abstürzen führen könnten.
+* Fehlerkorrektur – Bei der Verwendung von fehlerhaftem HTML-Code in einem Versand kommt es jetzt nicht mehr zu Abstürzen. (NEO-40385)
+* Fehlerkorrektur – Auch Benutzende ohne Administratorrechte können jetzt in den Versandeigenschaften auf die Registerkarte **Analyse** zugreifen. (NEO-34025)
 
 ## ![](assets/do-not-localize/green_2.png) Version 7.2.2 – Build 9349 {#release-7-2-2}
 

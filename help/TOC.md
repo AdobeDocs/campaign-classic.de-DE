@@ -9,7 +9,7 @@ type: Documentation
 source-git-commit: 8221afc3b73e1ddce4143394a1d77eab3995d892
 workflow-type: tm+mt
 source-wordcount: '2585'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -678,7 +678,7 @@ ht-degree: 99%
             + [Konfigurieren von Teradata](installation/using/configure-fda-teradata.md)
             + [Konfigurieren von SAP HANA](installation/using/configure-fda-sap-hana.md)
             + [Konfigurieren von Microsoft SQL Server](installation/using/configure-fda-sql.md)
-            + [PostgreSQL konfigurieren](installation/using/configure-fda-postgresql.md)
+            + [Konfigurieren von PostgreSQL](installation/using/configure-fda-postgresql.md)
          + [Remote-Zugriffsberechtigungen](installation/using/remote-database-access-rights.md)
          + [Verbindung mit der Datenbank herstellen](installation/using/connecting-to-database.md)
          + [Datenschema erstellen](installation/using/creating-data-schema.md)
@@ -690,7 +690,7 @@ ht-degree: 99%
       + [Neue Instanzen erstellen](installation/using/creating-new-instances.md)
       + [Liste der Optionen von Campaign](installation/using/configuring-campaign-options.md)
       + [Campaign deinstallieren](installation/using/uninstalling-campaign.md)
-      + [Neue Schriftarten installieren](installation/using/install-fonts.md)
+      + [Installieren neuer Schriftarten](installation/using/install-fonts.md)
 + Überwachungshandbuch {#monitoring-campaign-classic}
    + Einleitung {#introduction}
       + [Vorwort](production/using/foreword.md)
