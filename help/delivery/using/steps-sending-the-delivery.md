@@ -4,10 +4,10 @@ title: Konfigurieren und Durchführen des Versands
 description: Erfahren Sie, wie Sie den Versand konfigurieren und versenden
 feature: Channel Configuration
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
-source-git-commit: dfee069240c590846f7dda3134c07ad3ec514a26
-workflow-type: ht
-source-wordcount: '1652'
-ht-degree: 100%
+source-git-commit: d59e9f55275bac303a5ed1450bb28ef7fa0f84cd
+workflow-type: tm+mt
+source-wordcount: '1598'
+ht-degree: 87%
 
 ---
 
@@ -15,9 +15,9 @@ ht-degree: 100%
 
 ![](../../assets/common.svg)
 
->[!NOTE]
->
->Standardmäßig kann nur der für den Versand verantwortliche Benutzer den Start desselben auslösen. Damit andere Benutzer (oder Benutzergruppen) einen Versand starten können, müssen diese im Feld **[!UICONTROL Versand-Start:]** als Validierungsverantwortliche hinzugefügt werden. Weiterführende Informationen erhalten Sie in [diesem Abschnitt](../../campaign/using/marketing-campaign-approval.md#selecting-reviewers).
+## Berechtigungen{#delivery-permissions}
+
+Nur der Eigentümer des Versands kann einen Versand starten. Damit andere Benutzer (oder Benutzergruppen) einen Versand starten können, fügen Sie diese als Validierer im **[!UICONTROL Versandstart:]** -Feld. [Weitere Informationen](../../campaign/using/marketing-campaign-approval.md#selecting-reviewers).
 
 ## Zusätzliche Versandparameter {#delivery-additiona-parameters}
 
@@ -25,32 +25,32 @@ Vor der Durchführung des Versands können Sie im Tab **[!UICONTROL Versand]** d
 
 ![](assets/s_ncs_user_wizard_delivery.png)
 
-* **[!UICONTROL Versandpriorität]**: Diese Option ermöglicht es Ihnen, die Versandreihenfolge für Ihre Sendungen durch Angabe der Prioritätsstufe (normal, hoch oder niedrig) zu beeinflussen. Damit können Sie den Versand dringender Sendungen vorziehen.
+* **[!UICONTROL Versandpriorität]**: Verwenden Sie diese Option, um die Versandreihenfolge für Ihre Sendungen durch Festlegen der Prioritätsstufe zu ändern: normal, hoch oder niedrig.
 
-* **[!UICONTROL Kontingentgröße]**: Mithilfe dieser Option können Sie die Anzahl der in einem XML-Versand-Package enthaltenen Nachrichten festlegen. Wenn der Parameter auf „0“ gesetzt ist, werden die Nachrichten automatisch gruppiert. Die Package-Größe wird durch die `<delivery size>/1024`-Berechnung definiert, mit mindestens 8 und maximal 256 Nachrichten pro Package.
+* **[!UICONTROL Anzahl der Nachrichten]**: Verwenden Sie diese Option, um die Anzahl der Nachrichten zu definieren, die innerhalb desselben XML-Versandpakets gruppiert sind. Wenn der Parameter auf „0“ gesetzt ist, werden die Nachrichten automatisch gruppiert. Die Package-Größe wird durch die `<delivery size>/1024`-Berechnung definiert, mit mindestens 8 und maximal 256 Nachrichten pro Package.
 
    >[!IMPORTANT]
    >
-   >Bei Duplizierung eines Versands wird dieser Parameter automatisch auf 0 zurückgesetzt.
+   >Wenn der Versand durch Duplizieren eines existierenden Versands erstellt wird, wird dieser Parameter zurückgesetzt.
 
-* **[!UICONTROL In mehreren Schüben versenden]**: Verwenden Sie diese Option, um Ihre Nachrichten in mehreren Schüben und nicht an Ihre gesamte Audience zu versenden. Konfigurieren Sie die Anzahl der Batches und ihre Größe. [Weitere Informationen](#sending-using-multiple-waves).
+* **[!UICONTROL In mehreren Schüben versenden]**: Verwenden Sie diese Option, um Ihre Nachrichten stapelweise und nicht gleichzeitig an die gesamte Zielgruppe zu senden. [Weitere Informationen](#sending-using-multiple-waves).
 
-* **[!UICONTROL SMTP-Versand testen]**: Verwenden Sie diese Option, um den Versand per SMTP zu testen. Der Versand wird bis zur Verbindung mit dem SMTP-Server verarbeitet, aber nicht gesendet: Für jeden Empfänger des Versands stellt Campaign eine Verbindung mit dem Server des SMTP-Anbieters her, führt den SMTP-Befehl RCPT TO aus und schließt die Verbindung vor dem SMTP-Befehl DATA.
+* **[!UICONTROL SMTP-Versand testen]**: Verwenden Sie diese Option, um den Versand über SMTP zu testen. Der Versand wird bis zur Verbindung mit dem SMTP-Server verarbeitet, aber nicht gesendet: Für jeden Empfänger des Versands stellt Campaign eine Verbindung mit dem Server des SMTP-Anbieters her, führt den SMTP-Befehl RCPT TO aus und schließt die Verbindung vor dem SMTP-Befehl DATA.
 
    >[!NOTE]
    >
-   >* Diese Option wird beim Mid-Sourcing nicht empfohlen.
+   >* Diese Option darf nicht bei Mid-Sourcing festgelegt werden.
    >
    >* Weitere Informationen zur SMTP-Server-Konfiguration finden Sie in [diesem Abschnitt](../../installation/using/configure-delivery-settings.md).
 
 
-* **[!UICONTROL E-Mail-BCC]**: Mit dieser Option können Sie E-Mails in einem externen System speichern, indem Sie einfach eine BCC-E-Mail-Adresse zu Ihrer Versandzielgruppe hinzufügen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](sending-messages.md#archiving-emails).
+* **[!UICONTROL E-Mail-BCC]**: Verwenden Sie diese Option, um E-Mails über BCC in einem externen System zu speichern, indem Sie einfach eine BCC-E-Mail-Adresse zu Ihrer Versandzielgruppe hinzufügen. [Weitere Informationen](sending-messages.md#archiving-emails).
 
 ## Bestätigen des Versands {#confirming-delivery}
 
-Wenn der Versand konfiguriert wurde und versandbereit ist, stellen Sie sicher, dass Sie die Versandanalyse ausgeführt haben.
+Wenn der Versand konfiguriert ist und versandbereit ist, führen Sie die Versandanalyse aus.
 
-Klicken Sie dazu auf **[!UICONTROL Senden]**, wählen Sie die gewünschte Aktion aus und klicken Sie auf **[!UICONTROL Analysieren]**. Weitere Informationen dazu finden Sie unter [Starten der Analyse](steps-validating-the-delivery.md#analyzing-the-delivery).
+Klicken Sie dazu auf **[!UICONTROL Senden]**, wählen Sie die gewünschte Aktion aus und klicken Sie auf **[!UICONTROL Analysieren]**. [Weitere Informationen](steps-validating-the-delivery.md#analyzing-the-delivery).
 
 ![](assets/s_ncs_user_email_del_send.png)
 
@@ -66,7 +66,7 @@ Nach dem Nachrichtenversand können Sie Ihre Sendungen überwachen und verfolgen
 
 ## Planen des Versandzeitpunkts {#scheduling-the-delivery-sending}
 
-Sie können das Senden der Nachrichten auf einen späteren Zeitpunkt verschieben, um z. B. den Werbedruck auf eine bestimmte Population zu kontrollieren.
+Sie können den Nachrichtenversand verzögern, indem Sie den Versand planen.
 
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Senden]** und wählen Sie die Option **[!UICONTROL Versand terminieren]** aus.
 
@@ -78,7 +78,7 @@ Sie können das Senden der Nachrichten auf einen späteren Zeitpunkt verschieben
 
 >[!IMPORTANT]
 >
->Sobald Sie die Analyse gestartet haben, steht das von Ihnen definierte Kontaktdatum fest. Sollten Sie dieses Datum abändern, ist darauf zu achten, die Analyse erneut zu starten, damit Ihre Änderungen berücksichtigt werden.
+>Sobald Sie die Analyse gestartet haben, wird das von Ihnen definierte Kontaktdatum festgelegt. Wenn Sie dieses Datum ändern, müssen Sie die Analyse neu starten, damit Ihre Änderungen berücksichtigt werden.
 
 ![](assets/s_ncs_user_email_del_start_delayed.png)
 

@@ -6,20 +6,22 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: 29e56d6bf2817eeb863cbe33f99233a8241f2bf5
-workflow-type: ht
-source-wordcount: '881'
-ht-degree: 100%
+source-git-commit: d59e9f55275bac303a5ed1450bb28ef7fa0f84cd
+workflow-type: tm+mt
+source-wordcount: '921'
+ht-degree: 90%
 
 ---
 
-# Erste Schritte mit Upgrades{#rn-overview}
+# Versionshinweise{#rn-overview}
 
 ![](../../assets/v7-only.svg)
 
+Adobe Campaign Classic veröffentlicht regelmäßig Produktaktualisierungen, die neue Funktionen und Fehlerkorrekturen beinhalten und die Leistung, Sicherheit und Benutzerfreundlichkeit verbessern. Diese Aktualisierungen werden als Produkt-Builds veröffentlicht. Detaillierte Informationen zu den einzelnen neuen Builds finden Sie im Abschnitt [Versionshinweise](latest-release.md).
+
 ## Versionsstatus{#rn-statuses}
 
-Jeder neue Build weist einen Status auf, der durch eine bestimmte Farbe dargestellt wird.
+Jeder neue Build enthält einen Status, der durch eine Farbe im [Versionshinweise](latest-release.md).
 
 ![](assets/do-not-localize/green3.png) **Allgemeine Verfügbarkeit** (GA) – Aktueller stabiler Build, in der Produktion validiert und von Adobe empfohlen.
 
@@ -43,7 +45,7 @@ Als gehosteter Kunde profitieren Sie automatisch von Aktualisierungen mit der ne
 
 Um eine stabile Konfiguration sicherzustellen, empfiehlt Adobe, **denselben Build** auf allen Servern zu installieren, die dieselbe Client-Konfiguration besitzen.
 
-Sofern in den Versionshinweisen nicht anders angegeben, muss sich die Client-Konsole außerdem auf **demselben Build** wie die Server-Instanz befinden.
+Darüber hinaus gilt, sofern in der Variablen [Versionshinweise](latest-release.md), muss die Client-Konsole auf **denselben Build** als Serverinstanz.
 
 Um Ihre Implementierung auf dem neuesten Stand zu halten, lesen Sie bei jeder neuen Version die Seiten [Eingestellte und entfernte Funktionen](../../rn/using/deprecated-features.md) und [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md).
 
@@ -51,7 +53,9 @@ Um Ihre Implementierung auf dem neuesten Stand zu halten, lesen Sie bei jeder ne
 
 Wenden Sie sich als gehosteter Kunde (Managed Services oder Hybrid) an das Team der Kundenunterstützung, um Ihre Umgebung aktualisieren zu lassen.
 
-Als On-Premise-Benutzer können Sie das Upgrade durchführen. Laden Sie dazu den [neuesten stabilen Build (GA) herunter](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) und aktualisieren Sie alle Ihre Umgebungen. Erfahren Sie mehr über den [Upgrade-Prozess](../../production/using/build-upgrade.md) und lesen Sie die [häufig gestellten Fragen zu Build-Upgrades](../../platform/using/faq-build-upgrade.md).
+Als On-Premise-Benutzer können Sie das Upgrade durchführen. Laden Sie dazu den [neuesten stabilen Build (GA) herunter](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) und aktualisieren Sie alle Ihre Umgebungen.
+
+Weitere Informationen finden Sie unter [Aktualisierungsprozess](../../production/using/build-upgrade.md)und im [Häufig gestellte Fragen zur Build-Aktualisierung](../../platform/using/faq-build-upgrade.md).
 
 ## Jährliche Aktualisierung {#yearly-upgrade}
 
@@ -124,7 +128,7 @@ Ein Team aus engagierten Kundenbetreuern, Produkt-Managern, Ingenieuren, TechOps
     </a>
     </div>
     <ul>
-    <li>Der Aufwand und die Komplexität eines Upgrades Ihrer Campaign Classic-Instanz steigen mit dem Abstand zwischen zwei Versionen (V5 -&gt; V7).</li>
+    <li>Der Aufwand und die Komplexität eines Upgrades Ihrer Campaign Classic-Instanz steigen mit dem Abstand zwischen zwei Versionen (V6 -&gt; V7).</li>
     <li>Je länger Ihr Unternehmen wartet, desto komplexer ist das Upgrade (und desto mehr Sicherheitsrisiken sind Sie ausgesetzt).</li>
     <li>Regelmäßige Aktualisierungen verringern Ausfallzeiten und das Risiko einer Regression.</li>
     </ul>
