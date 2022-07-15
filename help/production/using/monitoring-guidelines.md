@@ -1,17 +1,17 @@
 ---
 product: campaign
-title: Richtlinien für das Monitoring
+title: Richtlinien für das Überwachen
 description: Entdecken Sie Richtlinien und Best Practices zur Überwachung von Campaign-Instanzen und -Prozessen.
 feature: Monitoring
 exl-id: ca0c33c5-7350-462a-bc65-4cab51e529d9
 source-git-commit: c54102b2ec32fbea89ce41dd3c9fedb98e612996
 workflow-type: tm+mt
-source-wordcount: '763'
-ht-degree: 29%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Richtlinien für das Monitoring {#monitoring-guidelines}
+# Richtlinien für das Überwachen {#monitoring-guidelines}
 
 ![](../../assets/v7-only.svg)
 
@@ -30,7 +30,7 @@ Detaillierte Informationen finden Sie [hier](../../production/using/monitoring-p
 <table>
 <tr><td><img src="assets/do-not-localize/icon_system.svg" width="60px"><p><a href="#monitoring-instance">Überwachen einer Instanz</a></p></td>
 <td><img src="assets/do-not-localize/icon_workflows.svg" width="60px"><p><a href="#monitoring-workflows">Überwachen von Workflows</a></p></td>
-<td><img src="assets/do-not-localize/icon_send.svg" width="60px"><p><a href="#monitoring-deliveries">Sendungen überwachen</a></p></td>
+<td><img src="assets/do-not-localize/icon_send.svg" width="60px"><p><a href="#monitoring-deliveries">Überwachen von Sendungen</a></p></td>
 <td><img src="assets/do-not-localize/icon_database.svg" width="60px"><p><a href="#monitoring-database">Überwachen der Datenbank</a></p></td></tr>
 </table>
 
