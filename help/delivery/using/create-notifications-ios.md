@@ -5,9 +5,9 @@ description: Erfahren Sie, wie Sie Push-Benachrichtigungen für iOS erstellen.
 feature: Push
 exl-id: 4520504a-0d9f-4ea7-a5a8-0c07948af4f0
 source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1064'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -55,7 +55,7 @@ Gehen Sie wie folgt vor, um eine Push-Benachrichtigung für iOS-Geräte zu erste
 
    In diesem Feld können Sie den Wert des Parameters **title** der iOS-Benachrichtigungs-Payload definieren.
 
-1. Sie können einen **[!UICONTROL Untertitel]** hinzufügen, den Wert des Parameters subtitle der iOS-Benachrichtigungs-Payload. Weitere Informationen finden Sie in [diesem Abschnitt](configuring-the-mobile-application.md).
+1. Sie können einen **[!UICONTROL Untertitel]** hinzufügen, den Wert des Parameters „subtitle“ der iOS-Benachrichtigungs-Payload. Weitere Informationen finden Sie in [diesem Abschnitt](configuring-the-mobile-application.md).
 
 1. Geben Sie den Inhalt der Nachricht im Abschnitt **[!UICONTROL Nachrichteninhalt]** des Assistenten ein. Die Verwendung von Personalisierungsfeldern wird im Abschnitt [Über die Personalisierung](about-personalization.md) beschrieben.
 
@@ -106,9 +106,9 @@ Gehen Sie wie folgt vor, um eine Push-Benachrichtigung für iOS-Geräte zu erste
 
       * **[!UICONTROL Passiv]**: Die Benachrichtigung wird zur Benachrichtigungsliste hinzugefügt, ohne dass der Bildschirm beleuchtet oder ein Ton abgespielt wird. Benachrichtigungen umgehen nicht den Fokusmodus.
 
-      * **[!UICONTROL Zeitlich sensibel]**: Das System zeigt die Benachrichtigung sofort an, beleuchtet den Bildschirm, kann einen Ton abspielen und den Fokusmodus durchbrechen. Für diese Stufe ist keine spezielle Berechtigung von Apple erforderlich.
+      * **[!UICONTROL Zeitabhängig]**: Die Benachrichtigung wird sofort angezeigt, der Bildschirm wird beleuchtet, eventuell wird ein Ton abgespielt und der Fokusmodus kann umgangen werden. Für diese Stufe ist keine spezielle Berechtigung von Apple erforderlich.
 
-      * **[!UICONTROL Kritisch]**: Das System zeigt die Benachrichtigung sofort an, beleuchtet den Bildschirm und umgeht den Stummschaltungs- oder Fokusmodus. Beachten Sie, dass für diese Ebene eine spezielle Berechtigung von Apple erforderlich ist.
+      * **[!UICONTROL Kritisch]**: Die Benachrichtigung wird sofort angezeigt, der Bildschirm wird beleuchtet und der Stummschaltungs- oder Fokusmodus wird umgangen. Beachten Sie, dass für diese Ebene eine spezielle Berechtigung von Apple erforderlich ist.
    * **[!UICONTROL Relevanzwert]**: Legen Sie einen Relevanzwert auf der Skala von 0 bis 100 fest. Das System verwendet diesen Wert, um die Benachrichtigungen in der Benachrichtigungszusammenfassung zu sortieren.
 
    ![](assets/nmac_delivery_ios_8.png)
@@ -159,7 +159,7 @@ Erstellen Sie dann einen neuen Versand und verknüpfen Sie ihn mit der von Ihnen
 
    ![](assets/nmac_ios_7.png)
 
-1. Aus dem **[!UICONTROL Anwendungsvariablen]** Registerkarte, **[!UICONTROL Anwendungsvariablen]** werden automatisch hinzugefügt, je nachdem, was während der Konfigurationsschritte hinzugefügt wurde.
+1. Auf der Registerkarte **[!UICONTROL Anwendungsvariablen]** werden Ihre **[!UICONTROL Anwendungsvariablen]** automatisch hinzugefügt, je nachdem, was während der Konfigurationsschritte hinzugefügt wurde.
 
    >[!NOTE]
    >
@@ -167,7 +167,7 @@ Erstellen Sie dann einen neuen Versand und verknüpfen Sie ihn mit der von Ihnen
 
    ![](assets/nmac_ios_10.png)
 
-1. Aus dem **[!UICONTROL Erweitert]** Registerkarte, überprüfen Sie die **[!UICONTROL Veränderlicher Inhalt]** aktivieren, damit die Mobile App Medieninhalte herunterladen kann.
+1. Aktivieren Sie auf der Registerkarte **[!UICONTROL Erweitert]** das Kontrollkästchen **[!UICONTROL Veränderlicher Inhalt]**, damit die Mobile App Medieninhalte herunterladen kann.
 
 1. Klicken Sie auf **[!UICONTROL Speichern]** und führen Sie den Versand durch.
 
