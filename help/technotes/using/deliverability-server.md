@@ -5,7 +5,7 @@ description: Erfahren Sie, wie Sie den Zustellbarkeits-Server von Campaign imple
 hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 6f6c329808e78a56a61997aba83c55520030afc7
+source-git-commit: 64813905b360be1f2df7883f018e42bd154c2f9c
 workflow-type: tm+mt
 source-wordcount: '1158'
 ht-degree: 52%
@@ -58,7 +58,7 @@ Im Rahmen der Integration des neuen Zustellbarkeits-Servers muss Campaign mit Ad
    * Wenn die Option ausgefüllt ist, können Sie die Implementierung starten.
    * Wenn kein Wert ausgefüllt ist, kontaktieren Sie [Adobe-Kundenunterstützung](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank}, um Ihre CUID zu erhalten.
 
-      Diese Option muss für alle Campaign-Instanzen (MKT, MID, RT, EXEC) mit demselben Wert angegeben werden. Wenden Sie sich als Hybrid-Kunde an Adobe, damit die Option in Ihren MID-, RT- und EXEC-Instanzen festgelegt ist.
+   Diese Option muss für alle Campaign-Instanzen (MKT, MID, RT, EXEC) mit dem richtigen Wert angegeben werden. Wenden Sie sich als Hybrid-Kunde an Adobe, damit die Option in Ihren MID-, RT- und EXEC-Instanzen festgelegt ist.
 
 ### Schritt 1: Erstellen/Aktualisieren Sie Ihr Adobe Developer-Projekt {#adobe-io-project}
 
