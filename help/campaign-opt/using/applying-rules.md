@@ -4,8 +4,8 @@ title: Anwenden von Typologieregeln
 description: Hier erfahren Sie, wie Sie Typologieregeln anwenden
 feature: Typology Rules
 exl-id: 09ec0fc0-76ed-4c73-8bdf-c931e2103aa9
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
-workflow-type: ht
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+workflow-type: tm+mt
 source-wordcount: '1047'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Anwenden von Typologieregeln{#applying-rules}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 ## Anwenden von Typologien auf Sendungen {#applying-a-typology-to-a-delivery}
 

@@ -4,16 +4,16 @@ title: Erstellen einer zusammenfassenden Liste
 description: Erstellen einer zusammenfassenden Liste
 feature: Workflows, Data Management
 exl-id: 39cec42a-c7ac-41b1-8f61-799b559ce002
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
-workflow-type: ht
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+workflow-type: tm+mt
 source-wordcount: '1060'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
 # Erstellen einer zusammenfassenden Liste{#creating-a-summary-list}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Das folgende Anwendungsbeispiel erläutert die Erstellung eines Workflows zum Abruf und zur Anreicherung von Dateien mit dem Ziel, eine zusammenfassende Liste zu erstellen. Die zu erstellende Liste enthält Kontakte, die Einkäufe in Geschäften getätigt haben.
 
@@ -61,7 +61,7 @@ Die Daten stammen aus der Datei &quot;Verkauf.txt&quot;
 
    Weitere Informationen zu dieser Aktivität finden Sie unter [Daten aus einer Datei laden](../../platform/using/import-export-workflows.md#loading-data-from-a-file).
 
-1. Konfigurieren Sie den **Datei-Wächter** dahingehend, dass er Textdateien (.txt) im angegebenen Verzeichnis abruft.
+1. Konfigurieren Sie die **Datei-Wächter** Aktivität zum Erfassen von Text (&#42;.txt) Geben Sie Dateien aus dem ausgewählten Verzeichnis ein.
 
    ![](assets/uc2_enrich_collecteur.png)
 

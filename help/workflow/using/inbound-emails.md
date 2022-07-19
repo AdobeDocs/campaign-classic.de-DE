@@ -4,8 +4,8 @@ title: E-Mail-Empfang
 description: Erfahren Sie mehr über die Workflow-Aktivität "E-Mail-Empfang".
 feature: Workflows, Channels Activity
 exl-id: b2a05e07-a7d7-436b-b2c6-90ab55d031cd
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
-workflow-type: ht
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # E-Mail-Empfang{#inbound-emails}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Die Aktivität **E-Mail-Empfang** ermöglicht den Abruf und die Verarbeitung von E-Mails aus Mailboxen, die über POP3 abgefragt werden können.
 

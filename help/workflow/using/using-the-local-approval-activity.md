@@ -4,8 +4,8 @@ title: Verwenden der lokalen Validierungsaktivität
 description: Erfahren Sie, wie Sie die lokale Validierungsaktivität verwenden
 feature: Workflows
 exl-id: cc29eec9-9c97-4d1b-9567-2581154d7b3f
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
-workflow-type: ht
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+workflow-type: tm+mt
 source-wordcount: '1430'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Verwenden der lokalen Validierungsaktivität{#using-the-local-approval-activity}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Im Rahmen eines Zielgruppen-Workflows ermöglicht die Aktivität **[!UICONTROL Lokale Validierung]** die Formalisierung eines Validierungsprozesses, der die Überprüfung der ausgewählten Empfänger vor Absendung der Kampagne sicherstellt.
 

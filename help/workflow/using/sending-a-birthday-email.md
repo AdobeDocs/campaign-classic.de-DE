@@ -4,8 +4,8 @@ title: Senden einer Geburtstags-E-Mail
 description: Erfahren Sie, wie Sie mit einem Workflow eine Geburtstags-E-Mail senden
 feature: Workflows
 exl-id: 38006cca-e945-4b9d-8e2d-ed537b8541d9
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
-workflow-type: ht
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+workflow-type: tm+mt
 source-wordcount: '934'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Senden einer Geburtstags-E-Mail{#sending-a-birthday-email}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 ## Einleitung {#introduction}
 

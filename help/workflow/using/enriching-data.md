@@ -4,8 +4,8 @@ title: Anreichern von Daten
 description: Erfahren Sie mehr über die Workflow-Aktivität "Anreicherung".
 feature: Workflows, Enrichment Activity
 exl-id: ab786cf1-74a4-4185-a63d-84e776a2f776
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
-workflow-type: ht
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+workflow-type: tm+mt
 source-wordcount: '823'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Anreichern von Daten{#enriching-data}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 ## Über die Anreicherung von Daten {#about-enriching-data}
 

@@ -4,7 +4,7 @@ title: Überwachen technischer Workflows
 description: Überwachen technischer Workflows
 feature: Workflows
 exl-id: 5e77d196-5c71-438e-8dae-10c6a6e4f29c
-source-git-commit: 25e8acdc449c7002e467db17e7c70e3dc017dded
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 96%
@@ -13,7 +13,7 @@ ht-degree: 96%
 
 # Überwachen technischer Workflows {#monitoring-technical-workflows}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Technische Workflows müssen überwacht werden und bei einer Störung müssen Maßnahmen ergriffen werden.
 

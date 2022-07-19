@@ -4,8 +4,8 @@ title: Überwachen der Workflow-Ausführung
 description: Überwachen der Workflow-Ausführung
 feature: Workflows
 exl-id: d589180b-8e1d-4149-9b16-3f541018a41f
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
-workflow-type: ht
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+workflow-type: tm+mt
 source-wordcount: '2098'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Überwachen der Workflow-Ausführung {#monitoring-workflow-execution}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Dieser Abschnitt enthält Informationen zur Überwachung der Ausführung Ihrer Workflows.
 

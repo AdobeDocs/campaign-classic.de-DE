@@ -4,8 +4,8 @@ title: Über Workflow-Aktivitäten
 description: Über Aktivitäten
 feature: Workflows, Data Management
 exl-id: 900dd30e-d4fb-452a-af3f-ae00758b0077
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
-workflow-type: ht
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Workflow-Aktivitäten{#wf-activities}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Das folgende Kapitel beschreibt im Detail alle zur Verfügung stehenden Workflow-Aktivitäten. Je nach Knoten oder Anwendungskontext der Workflows können die verfügbaren Aktivitäten abweichen. So bieten Kampagnen-Workflows beispielsweise kanalspezifische Versandaktivitäten.
 

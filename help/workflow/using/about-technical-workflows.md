@@ -4,7 +4,7 @@ title: Technische Workflows
 description: Erfahren Sie mehr über die technischen Workflows, die mit Campaign Classic-Packages verfügbar sind.
 feature: Workflows
 exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
-source-git-commit: 25e8acdc449c7002e467db17e7c70e3dc017dded
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '1724'
 ht-degree: 99%
@@ -13,7 +13,7 @@ ht-degree: 99%
 
 # Technische Workflows{#about-technical-workflows}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 ## Über technische Workflows {#overview}
 

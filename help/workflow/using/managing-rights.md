@@ -4,8 +4,8 @@ title: Verwalten von Workflow-Berechtigungen
 description: Erfahren Sie, wie Sie Workflow-Berechtigungen verwalten.
 feature: Workflows
 exl-id: 88995fb3-d336-4355-acd4-33118dd0e2b0
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
-workflow-type: ht
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Verwalten von Workflow-Berechtigungen{#managing-rights}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Adobe-Campaign-Benutzer, die nicht über Administratorrechte verfügen, müssen die entsprechenden Rechte eingeräumt werden, um Workflows erstellen, ausführen und ändern zu können.
 

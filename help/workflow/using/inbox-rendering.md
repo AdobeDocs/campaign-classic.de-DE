@@ -3,7 +3,7 @@ product: campaign
 title: Technischer Workflow für Inbox Rendering
 description: In diesem Abschnitt wird der technische Workflow beschrieben, der mit dem Inbox Rendering-Package installiert wird.
 feature: Workflows, Inbox Rendering
-source-git-commit: 378788764e244dcad12018d6d703048707d4c3e6
+source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '75'
 ht-degree: 70%
@@ -13,7 +13,7 @@ ht-degree: 70%
 
 # Inbox Rendering (IR){#inbox-rendering}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 Der unten beschriebene Workflow wird mit dem **Inbox Rendering (IR)**-Modul standardmäßig installiert. Weiterführende Informationen zu Inbox Rendering finden Sie in diesem [Abschnitt](../../delivery/using/inbox-rendering.md).
 
