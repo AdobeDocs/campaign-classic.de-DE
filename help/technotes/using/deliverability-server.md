@@ -2,10 +2,8 @@
 product: campaign
 title: Migration zum neuen Zustellbarkeits-Server
 description: Erfahren Sie, wie Sie den Zustellbarkeits-Server von Campaign implementieren.
-hide: true
-hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 64813905b360be1f2df7883f018e42bd154c2f9c
+source-git-commit: d1070719d7df50939768780a50e46fcb98d59183
 workflow-type: tm+mt
 source-wordcount: '1158'
 ht-degree: 52%

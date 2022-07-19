@@ -3,10 +3,10 @@ product: campaign
 title: Technischer Workflow für Inbox Rendering
 description: In diesem Abschnitt wird der technische Workflow beschrieben, der mit dem Inbox Rendering-Package installiert wird.
 feature: Workflows, Inbox Rendering
-source-git-commit: b94c4bfd478b4a8fbcefe6341608dd6a14bb31d3
-workflow-type: ht
-source-wordcount: '73'
-ht-degree: 100%
+source-git-commit: 378788764e244dcad12018d6d703048707d4c3e6
+workflow-type: tm+mt
+source-wordcount: '75'
+ht-degree: 70%
 
 ---
 
@@ -27,7 +27,7 @@ Der unten beschriebene Workflow wird mit dem **Inbox Rendering (IR)**-Modul stan
   <tr> 
    <td> <strong>Testnetzwerk-Update für das Inbox Rendering</strong><br /> </td> 
    <td> <span class="uicontrol">updateRenderingSeeds</span> <br /> </td> 
-   <td> Aktualisiert die für das Inbox Rendering verwendeten E-Mail-Adressen. Setzt voraus, dass der HTTPS-Port für <strong>deliverability.neolane.net</strong> geöffnet ist.<br /> </td> 
+   <td> Dieser Workflow aktualisiert die für das Inbox Rendering verwendeten E-Mail-Adressen und funktioniert nur, wenn der HTTPS-Port für <strong>https://deliverability-app.neolane.net/deliverability</strong>.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

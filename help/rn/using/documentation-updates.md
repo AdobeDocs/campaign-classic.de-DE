@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 001d5494e4b77e03c610c7c8b2cb38161d65c711
+source-git-commit: 378788764e244dcad12018d6d703048707d4c3e6
 workflow-type: tm+mt
-source-wordcount: '4929'
+source-wordcount: '4954'
 ht-degree: 99%
 
 ---
@@ -25,17 +25,28 @@ Die entsprechenden Aktualisierungen finden Sie in den [Versionshinweisen zu Adob
 
 ### Juli 2022 {#july-2022}
 
-* Die Funktionen und Verbesserungen der Version vom 22. Juli wurden in der Dokumentation beschrieben.
+Der Übergang zum neuen Zustellbarkeits-Server wird in einer neuen Technote beschrieben. [Weitere Informationen](../../technotes/using/deliverability-server.md)
+
+**Dokumentationsaktualisierungen in Version 7.3.1**
+
+Aktualisierte Kompatibilitätsmatrix. [Mehr dazu](compatibility-matrix.md)
+
+Der Abschnitt zu Versionshinweisen wurde aktualisiert. [Mehr dazu](rn-overview.md)
+
+Zeitkritische Benachrichtigungen mit iOS 15. [Weitere Informationen](../../delivery/using/create-notifications-ios.md)
+
 
 ### März 2022 {#mar-2022}
 
-* Eine detaillierte Beschreibung für die Option **[!UICONTROL SMTP-Versand testen]** wurde hinzugefügt. [Mehr dazu](../../delivery/using/steps-sending-the-delivery.md#delivery-additiona-parameters)
+Eine detaillierte Beschreibung für die Option **[!UICONTROL SMTP-Versand testen]** wurde hinzugefügt. [Mehr dazu](../../delivery/using/steps-sending-the-delivery.md#delivery-additiona-parameters)
 
-* Die Seite &quot;Erste Schritte mit Upgrades&quot; wurde aktualisiert, um die Upgrade-Richtlinien für die Campaign-Konsole zu erläutern. [Mehr dazu](../../rn/using/rn-overview.md)
+Die Seite &quot;Erste Schritte mit Upgrades&quot; wurde aktualisiert, um die Upgrade-Richtlinien für die Campaign-Konsole zu erläutern. [Mehr dazu](../../rn/using/rn-overview.md)
 
-* Der neue Campaign-Build v7.2.2 ist jetzt verfügbar. [Mehr dazu](../../rn/using/latest-release.md)
-* Es wurden Informationen zur Fehlerbehebung im Zusammenhang mit dem ACS-Connector hinzugefügt. [Mehr dazu](../../integrations/using/troubleshooting-the-acs-connector.md)
-* Legacy-PostgreSQL-Versionen, die das Ende des Lebenszyklus erreicht haben, wurden zur Seite [Eingestellte und entfernte Funktionen](../../rn/using/deprecated-features.md#dbe-eol) hinzugefügt.
+Der neue Campaign-Build v7.2.2 ist jetzt verfügbar. [Mehr dazu](../../rn/using/latest-release.md)
+
+Es wurden Informationen zur Fehlerbehebung im Zusammenhang mit dem ACS-Connector hinzugefügt. [Mehr dazu](../../integrations/using/troubleshooting-the-acs-connector.md)
+
+Legacy-PostgreSQL-Versionen, die das Ende des Lebenszyklus erreicht haben, wurden zur Seite [Eingestellte und entfernte Funktionen](../../rn/using/deprecated-features.md#dbe-eol) hinzugefügt.
 
 ### Februar 2022 {#february-2022}
 
