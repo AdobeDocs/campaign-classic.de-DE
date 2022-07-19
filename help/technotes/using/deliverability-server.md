@@ -1,18 +1,16 @@
 ---
 product: campaign
-title: Migration zum neuen Zustellbarkeits-Server
-description: Erfahren Sie, wie Sie den Zustellbarkeits-Server von Campaign implementieren.
-hide: true
-hidefromtoc: true
+title: Aktualisierung auf den neuen Zustellbarkeits-Server
+description: Erfahren Sie, wie Sie auf den neuen Campaign-Zustellbarkeits-Server aktualisieren.
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 02af725ec7f75e31496b72b533db485c85a416e1
+source-git-commit: de3a2bf1ab6851184c75bc302ff0c42db186e7f0
 workflow-type: tm+mt
-source-wordcount: '1158'
-ht-degree: 52%
+source-wordcount: '1164'
+ht-degree: 51%
 
 ---
 
-# Campaign Zustellbarkeits-Server {#acc-deliverability}
+# Aktualisierung auf den neuen Zustellbarkeits-Server {#acc-deliverability}
 
 Start [Version 7.2.1](../../rn/using/latest-release.md#release-7-2-2)setzt Adobe Campaign auf einen neuen Zustellbarkeits-Server, der hohe Verfügbarkeit bietet und Probleme mit der Einhaltung von Sicherheitsvorschriften behebt. Campaign Classic synchronisiert nun die Zustellbarkeitsregeln, Broadlogs und Unterdrückungsadressen mit dem neuen Zustellbarkeits-Server. Der alte Zustellbarkeits-Server wird am 31. August 2022 eingestellt.
 
