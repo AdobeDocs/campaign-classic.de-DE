@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 7f24c8be599d6dece41de848d64feb8079b10ff3
+source-git-commit: 8d6f5a3596c2c919e597e0b6ce3d711276c8df12
 workflow-type: tm+mt
-source-wordcount: '1960'
+source-wordcount: '1967'
 ht-degree: 98%
 
 ---
@@ -61,12 +61,12 @@ Weitere Informationen finden Sie in der [Kompatibilitätsmatrix für Campaign](.
 
 **Patches**
 
-* Fehlerkorrektur – Die Größe der IMS-Anmeldeseite kann nun im Gegensatz zum vorherigen Build geändert werden.
-* Fehlerkorrektur – Bei der Installation des Content-Manager-Packages auf einer vorhandenen Instanz tritt nun kein Fehler mehr auf.
-* Fehlerkorrektur – Im Menü **Kampagnen** wird nicht mehr ständig die Meldung „Vorgang läuft“ angezeigt.
-* Fehlerkorrektur – Bei aktiviertem Adobe Analytics werden die BID (Broadlog-ID) und CID (Kampagnen-ID) nun nicht mehr aus der URL entfernt, wenn eine E-Mail mit einer URL gesendet wird, ohne die Übermittlung zu speichern.
-* Fehlerkorrektur – Beim Hochladen eines Bildes im Ordner „Öffentliche Ressourcen“ in einer Instanz mit Message Center-spezifischer Konfiguration tritt jetzt kein Fehler mehr auf. Es wird nicht mehr die Fehlermeldung „Bilder können nicht auf die Tracking-Server hochgeladen werden“ angezeigt.
-* Es wurde ein Problem behoben, das zum Absturz des Systems führte, wenn die Konfiguration im Falle von fehlerhaften Konfigurationsdateien neu generiert wurde.
+* Fehlerkorrektur – Die Größe der IMS-Anmeldeseite kann nun im Gegensatz zum vorherigen Build geändert werden. (NEO-30085)
+* Fehlerkorrektur – Bei der Installation des Content-Manager-Packages auf einer vorhandenen Instanz tritt nun kein Fehler mehr auf. (NEO-32349)
+* Fehlerkorrektur – Im Menü **Kampagnen** wird nicht mehr ständig die Meldung „Vorgang läuft“ angezeigt. (NEO-44904)
+* Fehlerkorrektur – Bei aktiviertem Adobe Analytics werden die BID (Broadlog-ID) und CID (Kampagnen-ID) nun nicht mehr aus der URL entfernt, wenn eine E-Mail mit einer URL gesendet wird, ohne die Übermittlung zu speichern. (NEO-38678)
+* Fehlerkorrektur – Beim Hochladen eines Bildes im Ordner „Öffentliche Ressourcen“ in einer Instanz mit Message Center-spezifischer Konfiguration tritt jetzt kein Fehler mehr auf. Es wird nicht mehr die Fehlermeldung „Bilder können nicht auf die Tracking-Server hochgeladen werden“ angezeigt. (NEO-38546, NEO-45572)
+* Es wurde ein Problem behoben, das zum Absturz des Systems führte, wenn die Konfiguration im Falle von fehlerhaften Konfigurationsdateien neu generiert wurde. (NEO-38752)
 * Fehlerkorrektur – Versandindikatoren werden jetzt korrekt aktualisiert. (NEO-44827)
 * Fehlerkorrektur – Bei der Verwendung komplexer Abfragen tritt jetzt kein Postupgrade-Fehler mehr auf. (NEO-43648)
 * Fehlerkorrektur – Die Vorschau von webApps funktioniert jetzt. (NEO-43242)
