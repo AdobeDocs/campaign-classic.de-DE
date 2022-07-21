@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 8d6f5a3596c2c919e597e0b6ce3d711276c8df12
+source-git-commit: 0d0c97213cf8b95bbadd06f4c5666213b6c6c8f1
 workflow-type: tm+mt
-source-wordcount: '1967'
-ht-degree: 98%
+source-wordcount: '1989'
+ht-degree: 97%
 
 ---
 
@@ -84,6 +84,7 @@ Weitere Informationen finden Sie in der [Kompatibilitätsmatrix für Campaign](.
 * Fehlerkorrektur – Es gibt jetzt keine Core-Dumps (NEO-30549) mehr, die zu Abstürzen führen könnten.
 * Fehlerkorrektur – Bei der Verwendung von fehlerhaftem HTML-Code in einem Versand kommt es jetzt nicht mehr zu Abstürzen. (NEO-40385)
 * Fehlerkorrektur – Auch Benutzende ohne Administratorrechte können jetzt in den Versandeigenschaften auf die Registerkarte **Analyse** zugreifen. (NEO-34025)
+* Fehlerkorrektur - Bilder können jetzt während der Nachrichtenvorbereitung von einem externen Server im Chunkmodus hochgeladen werden. (NEO-40307)
 
 ## ![](assets/do-not-localize/green_2.png) Version 7.2.2 – Build 9349 {#release-7-2-2}
 
