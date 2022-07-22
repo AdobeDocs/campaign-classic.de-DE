@@ -5,7 +5,7 @@ description: Weitere Informationen zu Zielgruppendaten in einem Workflow.
 feature: Query Editor, Data Management
 exl-id: 74b82019-bdab-4442-84cf-5ad18d0db788
 source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2031'
 ht-degree: 100%
 
