@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: 7f24c8be599d6dece41de848d64feb8079b10ff3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '768'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -364,13 +364,13 @@ Für die Verwendung der [Campaign-Client-Konsole](../../installation/using/insta
 </tbody>
 </table>
 
-### Microsoft WebView2-Laufzeit
+### Microsoft WebView2 Runtime
 
 <table>
 <tbody>
 <tr>
 <td>
-<p>Microsoft Edge WebView2-Laufzeit
+<p>Microsoft Edge WebView2 Runtime
 </p>
 </td>
 <td>
