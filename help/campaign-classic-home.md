@@ -4,9 +4,9 @@ product: campaign
 title: Produktdokumentation zu Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
 source-git-commit: 7f24c8be599d6dece41de848d64feb8079b10ff3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '235'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 98%
 
 * **[Release-Programm 2022](technotes/using/dc-migration.md)**<br/> Upgrade Ihrer Umgebung und Verbesserung von Sicherheit, Infrastruktur und Leistung
 
-* **[Juli Release ist live!](rn/using/latest-release.md)**<br/> In den Versionshinweisen finden Sie neue Funktionen, Verbesserungen und Fehlerbehebungen.
+* **[Die Juli-Version ist live!](rn/using/latest-release.md)**<br/> In den Versionshinweisen finden Sie neue Funktionen, Verbesserungen und Fehlerbehebungen.
 
 * **[Häufig gestellte Fragen zum Datenschutz bei Apple Mail](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=de)** und **[Technote](technotes/using/apple-mail-app-privacy-protection.md)**<br/> Erste Anleitungen als Reaktion auf die Apple-Ankündigung zu iOS 15
 
