@@ -5,7 +5,7 @@ description: Erfahren Sie, wie Sie mit einem Workflow eine Geburtstags-E-Mail se
 feature: Workflows
 exl-id: 38006cca-e945-4b9d-8e2d-ed537b8541d9
 source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '934'
 ht-degree: 100%
 
