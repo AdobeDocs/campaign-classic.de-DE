@@ -7,7 +7,7 @@ exl-id: 5e77d196-5c71-438e-8dae-10c6a6e4f29c
 source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
 workflow-type: tm+mt
 source-wordcount: '533'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -48,9 +48,9 @@ In diesem [Abschnitt](about-technical-workflows.md) erfahren Sie, was jeder tech
 
 Vergewissern Sie sich, dass der Tracking-Workflow plangemäß ausgeführt wird (standardmäßig jede Stunde) und im Protokoll keine wiederkehrenden Fehler aufgezeigt werden. Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](delivery.md).
 
-Für **[!UICONTROL Zustellbarkeit aktualisieren (deliverabilityUpdate)]**:
+Für die **[!UICONTROL Zustellbarkeit (deliverabilityUpdate)]**:
 
-1. Stellen Sie sicher, dass die **[!UICONTROL Zustellbarkeit]** Der Workflow wird täglich erfolgreich ausgeführt und abgeschlossen.
+1. Vergewissern Sie sich, dass der Workflow **[!UICONTROL Zustellbarkeit]** täglich ausgeführt und erfolgreich abgeschlossen wird.
 1. Prüfen Sie im Protokoll, ob die Regeln regelmäßig aktualisiert werden.
 
 **[!UICONTROL Kampagnenprozesse (&#39;operationMgt&#39;, &#39;deliveryMgt‘ etc.)]**:
