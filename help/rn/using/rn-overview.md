@@ -7,21 +7,21 @@ role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 source-git-commit: d59e9f55275bac303a5ed1450bb28ef7fa0f84cd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '921'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
-# Versionshinweise{#rn-overview}
+# Versionsaktualisierungen{#rn-overview}
 
 ![](../../assets/v7-only.svg)
 
-Adobe Campaign Classic veröffentlicht regelmäßig Produktaktualisierungen, die neue Funktionen und Fehlerkorrekturen beinhalten und die Leistung, Sicherheit und Benutzerfreundlichkeit verbessern. Diese Aktualisierungen werden als Produkt-Builds veröffentlicht. Detaillierte Informationen zu den einzelnen neuen Builds finden Sie im Abschnitt [Versionshinweise](latest-release.md).
+Adobe Campaign Classic veröffentlicht regelmäßig Produktaktualisierungen, die neue Funktionen und Fehlerkorrekturen beinhalten und die Leistung, Sicherheit und Benutzerfreundlichkeit verbessern. Diese Aktualisierungen werden als Produkt-Builds veröffentlicht. Detaillierte Informationen zu den einzelnen neuen Builds finden Sie in den [Versionshinweisen](latest-release.md).
 
 ## Versionsstatus{#rn-statuses}
 
-Jeder neue Build enthält einen Status, der durch eine Farbe im [Versionshinweise](latest-release.md).
+Jeder neue Build weist einen Status auf, der durch eine bestimmte Farbe in den [Versionshinweisen](latest-release.md) gekennzeichnet ist.
 
 ![](assets/do-not-localize/green3.png) **Allgemeine Verfügbarkeit** (GA) – Aktueller stabiler Build, in der Produktion validiert und von Adobe empfohlen.
 
@@ -45,7 +45,7 @@ Als gehosteter Kunde profitieren Sie automatisch von Aktualisierungen mit der ne
 
 Um eine stabile Konfiguration sicherzustellen, empfiehlt Adobe, **denselben Build** auf allen Servern zu installieren, die dieselbe Client-Konfiguration besitzen.
 
-Darüber hinaus gilt, sofern in der Variablen [Versionshinweise](latest-release.md), muss die Client-Konsole auf **denselben Build** als Serverinstanz.
+Außerdem muss sich die Client-Konsole, sofern in den [Versionshinweisen](latest-release.md) nicht anders angegeben, auf **demselben Build** wie die Server-Instanz befinden.
 
 Um Ihre Implementierung auf dem neuesten Stand zu halten, lesen Sie bei jeder neuen Version die Seiten [Eingestellte und entfernte Funktionen](../../rn/using/deprecated-features.md) und [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md).
 
@@ -55,7 +55,7 @@ Wenden Sie sich als gehosteter Kunde (Managed Services oder Hybrid) an das Team 
 
 Als On-Premise-Benutzer können Sie das Upgrade durchführen. Laden Sie dazu den [neuesten stabilen Build (GA) herunter](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) und aktualisieren Sie alle Ihre Umgebungen.
 
-Weitere Informationen finden Sie unter [Aktualisierungsprozess](../../production/using/build-upgrade.md)und im [Häufig gestellte Fragen zur Build-Aktualisierung](../../platform/using/faq-build-upgrade.md).
+Erfahren Sie mehr über den [Upgrade-Prozess](../../production/using/build-upgrade.md) und lesen Sie die [häufig gestellten Fragen zu Build-Upgrades](../../platform/using/faq-build-upgrade.md).
 
 ## Jährliche Aktualisierung {#yearly-upgrade}
 
