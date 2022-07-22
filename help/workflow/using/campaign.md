@@ -1,18 +1,18 @@
 ---
 product: campaign
 title: Campaign
-description: Kampagne
+description: Campaign
 feature: Workflows
 topic-tags: technical-workflows
 source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '164'
 ht-degree: 100%
 
 ---
 
 
-# Kampagne{#campaign}
+# Campaign{#campaign}
 
 ![](../../assets/v7-only.svg)
 
