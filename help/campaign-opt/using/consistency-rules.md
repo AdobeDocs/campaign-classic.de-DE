@@ -5,7 +5,7 @@ description: Kohärenzregeln
 feature: Typology Rules
 exl-id: 757328fa-4698-4f85-a5fa-074b5152ec45
 source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '815'
 ht-degree: 100%
 
