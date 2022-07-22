@@ -5,9 +5,9 @@ description: Erfahren Sie, wie Sie den Versand konfigurieren und versenden
 feature: Channel Configuration
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
 source-git-commit: d59e9f55275bac303a5ed1450bb28ef7fa0f84cd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1598'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -17,38 +17,38 @@ ht-degree: 87%
 
 ## Berechtigungen{#delivery-permissions}
 
-Nur der Eigentümer des Versands kann einen Versand starten. Damit andere Benutzer (oder Benutzergruppen) einen Versand starten können, fügen Sie diese als Validierer im **[!UICONTROL Versandstart:]** -Feld. [Weitere Informationen](../../campaign/using/marketing-campaign-approval.md#selecting-reviewers).
+Nur die für einen Versand verantwortliche Person kann den Versand starten. Damit andere Benutzende (oder Benutzergruppen) einen Versand starten können, fügen Sie diese als Validierungsverantwortliche im Feld **[!UICONTROL Versandstart:]** hinzu. [Weitere Informationen](../../campaign/using/marketing-campaign-approval.md#selecting-reviewers).
 
 ## Zusätzliche Versandparameter {#delivery-additiona-parameters}
 
-Vor der Durchführung des Versands können Sie im Tab **[!UICONTROL Versand]** die Versandparameter der Versandeigenschaften definieren.
+Vor der Durchführung des Versands können Sie im Tab **[!UICONTROL Versand]** die Parameter der Versandeigenschaften definieren.
 
 ![](assets/s_ncs_user_wizard_delivery.png)
 
-* **[!UICONTROL Versandpriorität]**: Verwenden Sie diese Option, um die Versandreihenfolge für Ihre Sendungen durch Festlegen der Prioritätsstufe zu ändern: normal, hoch oder niedrig.
+* **[!UICONTROL Versandpriorität]**: Diese Option ermöglicht es Ihnen, die Versandreihenfolge für Ihre Sendungen durch Angabe der Prioritätsstufe (normal, hoch oder niedrig) zu ändern.
 
-* **[!UICONTROL Anzahl der Nachrichten]**: Verwenden Sie diese Option, um die Anzahl der Nachrichten zu definieren, die innerhalb desselben XML-Versandpakets gruppiert sind. Wenn der Parameter auf „0“ gesetzt ist, werden die Nachrichten automatisch gruppiert. Die Package-Größe wird durch die `<delivery size>/1024`-Berechnung definiert, mit mindestens 8 und maximal 256 Nachrichten pro Package.
+* **[!UICONTROL Kontingentgröße]**: Mithilfe dieser Option können Sie die Anzahl der in einem XML-Versand-Package enthaltenen Nachrichten festlegen. Wenn der Parameter auf „0“ gesetzt ist, werden die Nachrichten automatisch gruppiert. Die Package-Größe wird durch die `<delivery size>/1024`-Berechnung definiert, mit mindestens 8 und maximal 256 Nachrichten pro Package.
 
    >[!IMPORTANT]
    >
    >Wenn der Versand durch Duplizieren eines existierenden Versands erstellt wird, wird dieser Parameter zurückgesetzt.
 
-* **[!UICONTROL In mehreren Schüben versenden]**: Verwenden Sie diese Option, um Ihre Nachrichten stapelweise und nicht gleichzeitig an die gesamte Zielgruppe zu senden. [Weitere Informationen](#sending-using-multiple-waves).
+* **[!UICONTROL In mehreren Schüben versenden]**: Verwenden Sie diese Option, um Ihre Nachrichten in mehreren Schüben anstatt gleichzeitig zu versenden. [Weitere Informationen](#sending-using-multiple-waves).
 
-* **[!UICONTROL SMTP-Versand testen]**: Verwenden Sie diese Option, um den Versand über SMTP zu testen. Der Versand wird bis zur Verbindung mit dem SMTP-Server verarbeitet, aber nicht gesendet: Für jeden Empfänger des Versands stellt Campaign eine Verbindung mit dem Server des SMTP-Anbieters her, führt den SMTP-Befehl RCPT TO aus und schließt die Verbindung vor dem SMTP-Befehl DATA.
+* **[!UICONTROL SMTP-Versand testen]**: Verwenden Sie diese Option, um den Versand per SMTP zu testen. Der Versand wird bis zur Verbindung mit dem SMTP-Server verarbeitet, aber nicht gesendet: Für jeden Empfänger des Versands stellt Campaign eine Verbindung mit dem Server des SMTP-Anbieters her, führt den SMTP-Befehl RCPT TO aus und schließt die Verbindung vor dem SMTP-Befehl DATA.
 
    >[!NOTE]
    >
-   >* Diese Option darf nicht bei Mid-Sourcing festgelegt werden.
+   >* Diese Option darf bei Mid-Sourcing nicht festgelegt werden.
    >
    >* Weitere Informationen zur SMTP-Server-Konfiguration finden Sie in [diesem Abschnitt](../../installation/using/configure-delivery-settings.md).
 
 
-* **[!UICONTROL E-Mail-BCC]**: Verwenden Sie diese Option, um E-Mails über BCC in einem externen System zu speichern, indem Sie einfach eine BCC-E-Mail-Adresse zu Ihrer Versandzielgruppe hinzufügen. [Weitere Informationen](sending-messages.md#archiving-emails).
+* **[!UICONTROL E-Mail-BCC]**: Mit dieser Option können Sie mit der BCC-Funktion E-Mails in einem externen System speichern, indem Sie einfach eine E-Mail-Adresse als BCC zu Ihrer Versandzielgruppe hinzufügen. [Weitere Informationen](sending-messages.md#archiving-emails).
 
 ## Bestätigen des Versands {#confirming-delivery}
 
-Wenn der Versand konfiguriert ist und versandbereit ist, führen Sie die Versandanalyse aus.
+Wenn der Versand konfiguriert und versandbereit ist, führen Sie die Versandanalyse aus.
 
 Klicken Sie dazu auf **[!UICONTROL Senden]**, wählen Sie die gewünschte Aktion aus und klicken Sie auf **[!UICONTROL Analysieren]**. [Weitere Informationen](steps-validating-the-delivery.md#analyzing-the-delivery).
 
@@ -66,7 +66,7 @@ Nach dem Nachrichtenversand können Sie Ihre Sendungen überwachen und verfolgen
 
 ## Planen des Versandzeitpunkts {#scheduling-the-delivery-sending}
 
-Sie können den Nachrichtenversand verzögern, indem Sie den Versand planen.
+Sie können den Nachrichtenversand verzögern, indem Sie für den Versand einen Zeitpunkt planen.
 
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Senden]** und wählen Sie die Option **[!UICONTROL Versand terminieren]** aus.
 
@@ -78,7 +78,7 @@ Sie können den Nachrichtenversand verzögern, indem Sie den Versand planen.
 
 >[!IMPORTANT]
 >
->Sobald Sie die Analyse gestartet haben, wird das von Ihnen definierte Kontaktdatum festgelegt. Wenn Sie dieses Datum ändern, müssen Sie die Analyse neu starten, damit Ihre Änderungen berücksichtigt werden.
+>Sobald Sie die Analyse gestartet haben, wird das von Ihnen definierte Kontaktdatum fixiert. Wenn Sie dieses Datum ändern, müssen Sie die Analyse neu starten, damit Ihre Änderungen berücksichtigt werden.
 
 ![](assets/s_ncs_user_email_del_start_delayed.png)
 
