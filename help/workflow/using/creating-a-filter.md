@@ -5,7 +5,7 @@ description: Erfahren Sie, wie Sie bei Abfragen einen Filter erstellen können
 feature: Workflows
 exl-id: 297ea1e1-39ef-4b99-aaaa-9e88611fb1bf
 source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '228'
 ht-degree: 100%
 
