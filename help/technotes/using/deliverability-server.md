@@ -3,10 +3,10 @@ product: campaign
 title: Aktualisierung auf den neuen Zustellbarkeits-Server
 description: Erfahren Sie, wie Sie auf den neuen Campaign-Zustellbarkeits-Server aktualisieren.
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: a45e18e460c11f474dc1b5663b9f4a3277fac12c
+source-git-commit: 8b8935b181b615c0a243799b14d01f778b84b715
 workflow-type: tm+mt
-source-wordcount: '1164'
-ht-degree: 98%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -58,13 +58,13 @@ Zur Integration des neuen Zustellbarkeits-Servers muss Campaign mit Adobe Shared
 
    In dieser Option muss für alle Campaign-Instanzen (MKT, MID, RT, EXEC) der richtige Wert angegeben werden. Wenden Sie sich als Hybrid-Kunde an Adobe, damit diese Option in Ihren MID-, RT- und EXEC-Instanzen konfiguriert wird.
 
+>[!CAUTION]
+>
+>Wenn als On-Premise-Kunde eine Firewall auf Ihrer Seite implementiert ist, müssen Sie diese URL hinzufügen `https://deliverability-service.adobe.io` auf Ihre Zulassungsliste. [Weitere Informationen](../../installation/using/url-permissions.md).
+
 ### Schritt 1: Erstellen/Aktualisieren Sie Ihr Adobe Developer-Projekt {#adobe-io-project}
 
-1. Rufen Sie die [Adobe Developer Console](https://developer.adobe.com/de/console/home) auf und melden Sie sich mit den Entwicklerzugriffsdaten Ihrer Organisation an.
-
-   >[!NOTE]
-   >
-   > Stellen Sie sicher, dass Sie beim richtigen Portal der Organisation angemeldet sind.
+1. Rufen Sie die [Adobe Developer Console](https://developer.adobe.com/de/console/home) auf und melden Sie sich mit den Entwicklerzugriffsdaten Ihrer Organisation an. Stellen Sie sicher, dass Sie beim richtigen Portal der Organisation angemeldet sind.
 
 1. Wählen Sie **[!UICONTROL Neues Projekt erstellen]** aus.
    ![](assets/New-Project.png)
