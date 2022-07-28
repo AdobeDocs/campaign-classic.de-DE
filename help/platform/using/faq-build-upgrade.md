@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
-source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
+source-git-commit: 56ff1f02e614a91200a8f2ca106dcc76e82f122d
 workflow-type: tm+mt
-source-wordcount: '2026'
-ht-degree: 100%
+source-wordcount: '2034'
+ht-degree: 98%
 
 ---
 
@@ -128,7 +128,7 @@ Nein. Während des Build-Upgrades werden sowohl Workflows als auch Mail-Dienste 
 
 ## Funktionieren meine Tracking-Links während des Upgrades?
 
-Tracking-Links funktionieren während des Upgrades. Während des Upgrades können zwar keine neuen E-Mails gesendet werden, aber Tracking-Links in bereits gesendeten E-Mails funktionieren.
+Tracking-Links für bereits gesendete E-Mails funktionieren während des Upgrades nicht, da alle Server angehalten werden. Nach Abschluss des Upgrades und dem Neustart der Server sind sie wieder funktionsfähig.
 
 ## Muss ich während des Build-Upgrades verfügbar sein?
 
