@@ -7,13 +7,13 @@ content-type: reference
 topic-tags: response-manager
 exl-id: 1dc6d03b-698c-4750-9563-0676fcd185df
 source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '474'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Tracking von Hypothesen{#hypothesis-tracking}
+# Hypothesenverfolgung{#hypothesis-tracking}
 
 ![](../../assets/v7-only.svg)
 
@@ -49,7 +49,7 @@ Folgende Informationen werden von den Indikatoren bereitgestellt:
 * **Gesamtspanne Kontrollgruppe**: Insgesamt durch die Individuen der Kontrollgruppe generierte Spanne.
 * **Durchschnittliche Spanne Kontakte**: Gesamtspanne/Anzahl Kontakte.
 * **Durchschnittliche Spanne Kontrollgruppe**: Gesamtspanne/Anzahl Individuen der Kontrollgruppe.
-* **Zusätzliche Einnahmen**: (Durchschnittlicher Umsatz der Kontakte - Durchschnittlicher Umsatz der Kontrollgruppe)&#42;Anzahl Kontakte
+* **Zusätzlicher Umsatz**: (Durchschnittlicher Umsatz der kontaktierten Personen – durchschnittlicher Umsatz der Kontrollgruppe)&#42;Anzahl der kontaktierten Personen
 * **Zusätzliche Spanne**: (Durchschnittliche Spanne der Kontakte - Durchschnittliche Spanne der Individuen in der Kontrollgruppe) / Anzahl Kontakte.
 * **Durchschnittliche Kosten Kontakte**: Berechnete Kosten des Versands / Anzahl Kontakte.
 * **ROI**: Berechnete Kosten des Versands / Gesamtspanne Kontakte.
