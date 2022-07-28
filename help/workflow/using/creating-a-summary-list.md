@@ -5,9 +5,9 @@ description: Erstellen einer zusammenfassenden Liste
 feature: Workflows, Data Management
 exl-id: 39cec42a-c7ac-41b1-8f61-799b559ce002
 source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1060'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -61,7 +61,7 @@ Die Daten stammen aus der Datei &quot;Verkauf.txt&quot;
 
    Weitere Informationen zu dieser Aktivität finden Sie unter [Daten aus einer Datei laden](../../platform/using/import-export-workflows.md#loading-data-from-a-file).
 
-1. Konfigurieren Sie die **Datei-Wächter** Aktivität zum Erfassen von Text (&#42;.txt) Geben Sie Dateien aus dem ausgewählten Verzeichnis ein.
+1. Konfigurieren Sie die Aktivität **Datei-Wächter**, um Dateien vom Typ &quot;Text&quot; (&#42;.txt) im ausgewählten Verzeichnis zu erfassen.
 
    ![](assets/uc2_enrich_collecteur.png)
 
