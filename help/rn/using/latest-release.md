@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 0d0c97213cf8b95bbadd06f4c5666213b6c6c8f1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1989'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -63,9 +63,9 @@ Weitere Informationen finden Sie in der [Kompatibilitätsmatrix für Campaign](.
 
 * Fehlerkorrektur – Die Größe der IMS-Anmeldeseite kann nun im Gegensatz zum vorherigen Build geändert werden. (NEO-30085)
 * Fehlerkorrektur – Bei der Installation des Content-Manager-Packages auf einer vorhandenen Instanz tritt nun kein Fehler mehr auf. (NEO-32349)
-* Fehlerkorrektur – Im Menü **Kampagnen** wird nicht mehr ständig die Meldung „Vorgang läuft“ angezeigt. (NEO-44904)
-* Fehlerkorrektur – Bei aktiviertem Adobe Analytics werden die BID (Broadlog-ID) und CID (Kampagnen-ID) nun nicht mehr aus der URL entfernt, wenn eine E-Mail mit einer URL gesendet wird, ohne die Übermittlung zu speichern. (NEO-38678)
-* Fehlerkorrektur – Beim Hochladen eines Bildes im Ordner „Öffentliche Ressourcen“ in einer Instanz mit Message Center-spezifischer Konfiguration tritt jetzt kein Fehler mehr auf. Es wird nicht mehr die Fehlermeldung „Bilder können nicht auf die Tracking-Server hochgeladen werden“ angezeigt. (NEO-38546, NEO-45572)
+* Fehlerkorrektur – Im Menü **Kampagnen** wird nicht mehr ständig die Meldung &quot;Vorgang läuft&quot; angezeigt. (NEO-44904)
+* Fehlerkorrektur – Bei aktiviertem Adobe Analytics werden die BID (Broadlog-ID) und CID (Kampagnen-ID) nun nicht mehr aus der URL entfernt, wenn eine E-Mail mit einer URL gesendet wird, ohne den Versand zu speichern. (NEO-38678)
+* Fehlerkorrektur – Beim Hochladen eines Bildes im Ordner &quot;Öffentliche Ressourcen&quot; in einer Instanz mit Message Center-spezifischer Konfiguration tritt jetzt kein Fehler mehr auf. Es wird nicht mehr die Fehlermeldung &quot;Bilder können nicht auf die Tracking-Server hochgeladen werden&quot; angezeigt. (NEO-38546, NEO-45572)
 * Es wurde ein Problem behoben, das zum Absturz des Systems führte, wenn die Konfiguration im Falle von fehlerhaften Konfigurationsdateien neu generiert wurde. (NEO-38752)
 * Fehlerkorrektur – Versandindikatoren werden jetzt korrekt aktualisiert. (NEO-44827)
 * Fehlerkorrektur – Bei der Verwendung komplexer Abfragen tritt jetzt kein Postupgrade-Fehler mehr auf. (NEO-43648)
@@ -84,7 +84,7 @@ Weitere Informationen finden Sie in der [Kompatibilitätsmatrix für Campaign](.
 * Fehlerkorrektur – Es gibt jetzt keine Core-Dumps (NEO-30549) mehr, die zu Abstürzen führen könnten.
 * Fehlerkorrektur – Bei der Verwendung von fehlerhaftem HTML-Code in einem Versand kommt es jetzt nicht mehr zu Abstürzen. (NEO-40385)
 * Fehlerkorrektur – Auch Benutzende ohne Administratorrechte können jetzt in den Versandeigenschaften auf die Registerkarte **Analyse** zugreifen. (NEO-34025)
-* Fehlerkorrektur - Bilder können jetzt während der Nachrichtenvorbereitung von einem externen Server im Chunkmodus hochgeladen werden. (NEO-40307)
+* Fehlerkorrektur – Bilder können jetzt während der Nachrichtenvorbereitung von einem externen Server im Chunk-Modus hochgeladen werden. (NEO-40307)
 
 ## ![](assets/do-not-localize/green_2.png) Version 7.2.2 – Build 9349 {#release-7-2-2}
 
