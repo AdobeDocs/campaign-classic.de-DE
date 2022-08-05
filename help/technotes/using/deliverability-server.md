@@ -3,8 +3,8 @@ product: campaign
 title: Aktualisierung auf den neuen Zustellbarkeits-Server
 description: Erfahren Sie, wie Sie eine Aktualisierung auf den neuen Zustellbarkeits-Server von Campaign durchführen
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 8b8935b181b615c0a243799b14d01f778b84b715
-workflow-type: ht
+source-git-commit: ca9df95442355a0cd18c7c9ef048c2d77e84188e
+workflow-type: tm+mt
 source-wordcount: '1186'
 ht-degree: 100%
 
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # Aktualisierung auf den neuen Zustellbarkeits-Server {#acc-deliverability}
 
-Mit der [Veröffentlichung von Version 7.2.1](../../rn/using/latest-release.md#release-7-2-2) stellt Adobe Campaign einen neuen Zustellbarkeits-Server bereit, der hohe Verfügbarkeit bietet und Probleme mit der Einhaltung von Sicherheitsvorschriften behebt. Campaign Classic synchronisiert nun die Zustellbarkeitsregeln, Broadlogs und Unterdrückungsadressen mit dem neuen Zustellbarkeits-Server. Der alte Zustellbarkeits-Server wird am 31. August 2022 eingestellt.
+Mit der [Veröffentlichung von Version 7.2.2](../../rn/using/latest-release.md#release-7-2-2) stellt Adobe Campaign einen neuen Zustellbarkeits-Server bereit, der hohe Verfügbarkeit bietet und Probleme mit der Einhaltung von Sicherheitsvorschriften behebt. Campaign Classic synchronisiert nun die Zustellbarkeitsregeln, Broadlogs und Unterdrückungsadressen mit dem neuen Zustellbarkeits-Server. Der alte Zustellbarkeits-Server wird am 31. August 2022 eingestellt.
 
 Als Kundin oder Kunde von Campaign Classic müssen Sie den neuen Zustellbarkeits-Server **vor dem 31. August 2022** implementieren.
 
@@ -28,13 +28,13 @@ Dieser neue Server garantiert hohe Verfügbarkeit (99,9) und bietet sichere, aut
 
 ## Sind Sie betroffen?{#acc-deliverability-impacts}
 
-Alle Kundinnen und Kunden sind betroffen und müssen ein Upgrade auf [Campaign Version 7.2.1](../../rn/using/latest-release.md#release-7-2-2) (oder höher) vornehmen und es in ihrer Umgebung implementieren, um von dem neuen Zustellbarkeits-Server zu profitieren.
+Alle Kundinnen und Kunden sind betroffen und müssen ein Upgrade auf [Campaign Version 7.2.2](../../rn/using/latest-release.md#release-7-2-2) (oder höher) vornehmen und es in ihrer Umgebung implementieren, um von dem neuen Zustellbarkeits-Server zu profitieren.
 
 ## Wie wird die Aktualisierung durchgeführt?{#acc-deliverability-update}
 
 Wenn Sie **gehosteter Kunde** sind, arbeitet Adobe mit Ihnen zusammen, um Ihre Instanz(en) auf die neuere Version zu aktualisieren und ein Projekt in der Adobe Developer Console zu erstellen.
 
-Als **On-Premise-/Hybrid-Kunde** müssen Sie ein Upgrade auf [Campaign Version 7.2.1](../../rn/using/latest-release.md#release-7-2-2) (oder höher) vornehmen, um vom neuen Zustellbarkeits-Server zu profitieren. Sobald alle Instanzen das Upgrade erhalten haben, müssen Sie die neue Integration mit dem Adobe Zustellbarkeits-Server [implementieren](#implementation-steps) und so einen nahtlosen Übergang sicherstellen.
+Als **On-Premise-/Hybrid-Kunde** müssen Sie ein Upgrade auf [Campaign Version 7.2.2](../../rn/using/latest-release.md#release-7-2-2) (oder höher) vornehmen, um vom neuen Zustellbarkeits-Server zu profitieren. Sobald alle Instanzen das Upgrade erhalten haben, müssen Sie die neue Integration mit dem Adobe Zustellbarkeits-Server [implementieren](#implementation-steps) und so einen nahtlosen Übergang sicherstellen.
 
 ## Implementierungsschritte {#implementation-steps}
 
@@ -54,7 +54,7 @@ Zur Integration des neuen Zustellbarkeits-Servers muss Campaign mit Adobe Shared
 1. Prüfen Sie, ob der Wert der Option `DmRendering_cuid` ausgefüllt ist.
 
    * Wenn die Option ausgefüllt ist, können Sie die Implementierung starten.
-   * Wenn kein Wert eingetragen ist, wenden Sie sich an die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank}, um Ihre CUID zu erhalten.
+   * Wenn kein Wert eingetragen ist, wenden Sie sich an die [Adobe-Kundenunterstützung](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank}, um Ihre CUID zu erhalten.
 
    In dieser Option muss für alle Campaign-Instanzen (MKT, MID, RT, EXEC) der richtige Wert angegeben werden. Wenden Sie sich als Hybrid-Kunde an Adobe, damit diese Option in Ihren MID-, RT- und EXEC-Instanzen konfiguriert wird.
 
