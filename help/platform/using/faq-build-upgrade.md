@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
 source-git-commit: 56ff1f02e614a91200a8f2ca106dcc76e82f122d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2034'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -96,7 +96,7 @@ Für das Build-Upgrade sind die folgenden Ressourcen erforderlich:
 
 ## Wie bereite ich das Build-Upgrade vor?
 
-Exportieren Sie in Ihren Entwicklungs- und Staging-Systemen alle Projekte, die wichtig sind und erhalten werden müssen. Weitere Informationen dazu finden Sie in diesem [Video](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html).
+Exportieren Sie in Ihren Entwicklungs- und Staging-Systemen alle Projekte, die wichtig sind und erhalten werden müssen. Weitere Informationen dazu finden Sie in diesem [Video](https://helpx.adobe.com/de/campaign/classic/how-to/generate-packages-in-acv6.html).
 
 Frischen Sie Ihr Wissen über die wichtigsten Pfad-Workflows und Sendungen auf, die in Ihren Runbooks (oder durch Ihr Beraterteam/Ihren Partner) entwickelt wurden, indem Sie die Dokumentation lesen, die Ihrem Team nach der Implementierung bereitgestellt wird.
 
@@ -104,7 +104,7 @@ Ermitteln Sie Zeiten mit geringem Datenvolumen oder Traffic, die sich ideal für
 
 Gehen Sie unsere unten aufgeführte [Upgrade-Checkliste](#check-list) und Ihre Testpläne durch und stellen Sie sicher, dass Ressourcen, die diese Tests durchführen können, innerhalb von 24 bis 48 Stunden ab dem Ende des Upgrades verfügbar sind.
 
-Weitere Informationen finden Sie in [diesem Dokument](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html).
+Weitere Informationen finden Sie in [diesem Dokument](https://helpx.adobe.com/de/campaign/kb/acc-build-upgrade.html).
 
 ## Können Build-Upgrades nachts oder außerhalb der Geschäftszeiten durchgeführt werden?
 
