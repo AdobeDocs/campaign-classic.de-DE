@@ -5,9 +5,9 @@ description: Erfahren Sie mehr über die technischen Workflows, die mit Campaign
 feature: Workflows
 exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
 source-git-commit: 5bfd755ae8278a221e0f0e6f4121bfb072ebda12
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1715'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
