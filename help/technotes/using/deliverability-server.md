@@ -3,10 +3,10 @@ product: campaign
 title: Aktualisierung auf den neuen Zustellbarkeits-Server
 description: Erfahren Sie, wie Sie eine Aktualisierung auf den neuen Zustellbarkeits-Server von Campaign durchführen
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: ca9df95442355a0cd18c7c9ef048c2d77e84188e
-workflow-type: ht
-source-wordcount: '1186'
-ht-degree: 100%
+source-git-commit: 38f5cb9fdeb9deceab812c6ebc158e2ab37e3155
+workflow-type: tm+mt
+source-wordcount: '1283'
+ht-degree: 93%
 
 ---
 
@@ -51,16 +51,26 @@ Zur Integration des neuen Zustellbarkeits-Servers muss Campaign mit Adobe Shared
 
 1. Öffnen Sie die Client-Konsole von Campaign und melden Sie sich bei Adobe Campaign als Administrator an.
 1. Gehen Sie zu **Administration > Plattform > Optionen**.
-1. Prüfen Sie, ob der Wert der Option `DmRendering_cuid` ausgefüllt ist.
+1. Stellen Sie sicher, dass die `DmRendering_cuid` Optionswert ausgefüllt.
 
    * Wenn die Option ausgefüllt ist, können Sie die Implementierung starten.
-   * Wenn kein Wert eingetragen ist, wenden Sie sich an die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank}, um Ihre CUID zu erhalten.
+   * Wenn kein Wert eingetragen ist, wenden Sie sich an die [Adobe-Kundenunterstützung](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank}, um Ihre CUID zu erhalten.
 
    In dieser Option muss für alle Campaign-Instanzen (MKT, MID, RT, EXEC) der richtige Wert angegeben werden. Wenden Sie sich als Hybrid-Kunde an Adobe, damit diese Option in Ihren MID-, RT- und EXEC-Instanzen konfiguriert wird.
+
+Als On-Premise-Kunde müssen Sie auch überprüfen, ob eine Kampagne **[!UICONTROL Produktprofil]** ist für Ihre Organisation verfügbar. Gehen Sie dazu wie folgt vor:
+
+1. Als Administrator können Sie eine Verbindung zu [Adobe Admin Console](https://adminconsole.adobe.com/){_blank}.
+1. Zugriff auf **Produkt und Dienstleistungen** Abschnitt und Prüfung **Adobe Campaign** aufgelistet ist.
+Wenn **Adobe Campaign** Kontakt [Adobe-Kundenunterstützung](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank}, um ihn hinzuzufügen.
+1. Klicken **Adobe Campaign** und wählen Sie Ihre Organisation aus.
+1. Überprüfen Sie, ob **[!UICONTROL Produktprofil]** vorhanden ist. Wenn nicht, erstellen Sie es. Für dieses **[!UICONTROL Produktprofil]** ist keine Berechtigung erforderlich.
+
 
 >[!CAUTION]
 >
 >Wenn Sie On-Premise-Kunde sind und auf Ihrer Seite eine Firewall implementiert ist, müssen Sie die URL `https://deliverability-service.adobe.io` zu Ihrer Zulassungsliste hinzufügen. [Weitere Informationen](../../installation/using/url-permissions.md).
+
 
 ### Schritt 1: Erstellen/Aktualisieren Sie Ihr Adobe Developer-Projekt {#adobe-io-project}
 
@@ -123,7 +133,7 @@ Gehen Sie dabei folgendermaßen vor:
 1. Kopieren Sie die Inhalte aus der Datei `private.key.base64`.
 1. Melden Sie sich über SSH bei jedem Container an, in dem die Adobe Campaign-Instanz installiert ist, und fügen Sie die Projektanmeldeinformationen in Adobe Campaign hinzu, indem Sie den folgenden Befehl als `neolane`-Benutzer ausführen. Dadurch werden die Anmeldeinformationen für das **[!UICONTROL Technische Konto]** in die Konfigurationsdatei der Instanz eingefügt.
 
-   ```
+   ```sql
    nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID/<Client_Secret>/<Base64_encoded_Private_Key>
    ```
 
@@ -139,7 +149,7 @@ Jetzt können Sie den neuen Zustellbarkeits-Server aktivieren. Um dies durchzuf�
 
 ### Schritt 4: Überprüfen Sie Ihre Konfiguration
 
-Führen Sie die folgenden Schritte aus, um zu überprüfen, ob die Integration erfolgreich war:
+Gehen Sie wie folgt vor, um sicherzustellen, dass die Integration erfolgreich ist:
 
 
 1. Öffnen Sie die Client-Konsole und melden Sie sich bei Adobe Campaign an.
