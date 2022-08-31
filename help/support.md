@@ -4,9 +4,9 @@ title: 'Hilfe- und Support-Optionen für Campaign Classic '
 description: Benötigen Sie Unterstützung für Campaign Classic? Hier sind Sie an der richtigen Stelle!
 hidefromtoc: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
-workflow-type: tm+mt
-source-wordcount: '793'
+source-git-commit: 9667bb436ffc591b05945dadd683e5f590ae43e5
+workflow-type: ht
+source-wordcount: '798'
 ht-degree: 100%
 
 ---
@@ -107,7 +107,7 @@ Das Control Panel ist direkt über Adobe Experience Cloud verfügbar. Es steht n
 
 ### Control Panel – häufig gestellte Fragen
 
-[Klicken Sie hier](https://experienceleague.adobe.com/docs/control-panel/using/faq.html), um die häufig gestellten Fragen zum Campaign Control Panel aufzurufen.
+[Klicken Sie hier](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=de), um die häufig gestellten Fragen zum Campaign Control Panel aufzurufen.
 
 ### SFTP-Verwaltung
 
@@ -132,19 +132,19 @@ Erfahren Sie, wie Sie die Einstellungen Ihrer Campaign Classic-Instanzen im Cont
 
 <img src="platform/using/assets/do-not-localize/icon-support.svg" width="60px">
 
-Das neue Ticket-System ist über die [Adobe Admin Console](https://adminconsole.adobe.com/overview) verfügbar. Das neue System erfordert für jeden Benutzer neue individuelle Konten mit den entsprechenden Berechtigungen. Wenn Sie feststellen, dass Sie sich nicht mit Ihrer Adobe ID anmelden können, fordern Sie über Experience League Zugriff an. Das Team der Kundenunterstützung wird den Zugriff so schnell wie möglich einrichten. [Mehr dazu](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html)
+Das neue Ticket-System wurde über die [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank} gestartet. Das neue System erfordert für jeden Benutzer neue individuelle Konten mit den entsprechenden Berechtigungen. Wenn Sie feststellen, dass Sie sich nicht mit Ihrer Adobe ID anmelden können, fordern Sie über Experience League Zugriff an. Das Team der Kundenunterstützung wird den Zugriff so schnell wie möglich einrichten. [Mehr dazu](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html)
 
 ### Fragen an Experten
 
-Treten Sie der Campaign Classic-Community bei: Suchen Sie nach Antworten in vorhandenen Fragen oder stellen Sie Ihre Frage der Community. [Reden Sie mit](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=de)
+Treten Sie der Campaign Classic-Community bei: Suchen Sie nach Antworten in vorhandenen Fragen oder stellen Sie Ihre Frage der Community. [Reden Sie mit](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=de){_blank}.
 
 ### Aufrufen des Campaign-Download-Centers
 
-Ab Juni 2020 ersetzt die Experience Cloud-Lösung &quot;Software-Verteilung&quot; das ältere Neolane-Download-Center und bietet eine effizientere Möglichkeit, Ihre Software, Packages und Tools zu finden und herunterzuladen. [Klicken Sie hier](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html), um auf die Softwareverteilung von Experience Cloud zuzugreifen.
-Weitere Informationen zum neuen Download-Center finden Sie [auf dieser Seite](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de).
+Ab Juni 2020 ersetzt die Experience Cloud-Lösung &quot;Software-Verteilung&quot; das ältere Neolane-Download-Center und bietet eine effizientere Möglichkeit, Ihre Software, Packages und Tools zu finden und herunterzuladen. [Klicken Sie hier](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html), um auf die Software-Verteilung von Experience Cloud zuzugreifen.
+Weitere Informationen zum neuen Download-Center finden Sie [auf dieser Seite](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de){_blank}.
 
 ### Erstellen Sie ein Ticket oder starten Sie einen Chat
 
 Durch das Erstellen eines Tickets können Sie sich an das Adobe-Supportteam wenden, wenn Probleme mit Ihren Adobe-Produkten auftreten. Sie können in der Adobe Admin Console mit dem Adobe-Support chatten, um Ihre Probleme zu lösen.
 
-Um in diesem neuen System ein Ticket zu erstellen oder eine Chat-Sitzung zu starten, stellen Sie eine Verbindung zur [Adobe Admin Console](https://adminconsole.adobe.com/overview) her. Befolgen Sie das auf [dieser Seite](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) beschriebene Verfahren.
+Um in diesem neuen System ein Problem zu melden oder eine Chat-Sitzung zu starten, verbinden Sie sich mit [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}. Folgen Sie der Anleitung auf [dieser Seite](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html){_blank}.
