@@ -3,9 +3,9 @@ product: campaign
 title: Migrieren zum Adobe Analytics Connector
 description: Häufig gestellte Fragen zum Campaign und Analytics Connector
 exl-id: 5bf61654-3d68-4560-a93f-7a768a2c5be4
-source-git-commit: c072cb5b2d33f93ff395e4670507744b0d20c9bc
+source-git-commit: 9667bb436ffc591b05945dadd683e5f590ae43e5
 workflow-type: ht
-source-wordcount: '814'
+source-wordcount: '815'
 ht-degree: 100%
 
 ---
@@ -80,7 +80,7 @@ Die Integration beruht für die tägliche Verwendung auf Daten aus dem Token fü
 
 Wenn Details einer Analytics-Komponente abgefragt werden (z. B. Metriken/Dimensionen/Segmente/Report Suites), gibt die API diese Komponenten nicht im Ergebnis zurück (was so aussehen kann, als würde etwas auf der Analytics-Seite gelöscht oder wäre nicht vorhanden). Die Analytics-API lehnt diese Anfragen ab und gibt eine Fehlermeldung zurück.
 
-Die Lösung besteht darin, das **Produktprofil** im Analytics-Benutzer-Kontext des technischen Benutzer-Tokens mit den neu erstellten/fehlenden Komponenten zu aktualisieren, indem diese Komponenten in der [Adobe Admin Console](https://adminconsole.adobe.com/) hinzugefügt werden. Weitere Informationen erhalten Sie bei der [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+Die Lösung besteht darin, das **Produktprofil** im Analytics User Context of Technical User Token mit den neu erstellten/fehlenden Komponenten zu aktualisieren, indem diese Komponenten in der [Adobe Admin Console](https://adminconsole.adobe.com/){_blank} hinzugefügt werden. Weitere Informationen erhalten Sie bei der [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 ## Nützliche Links
 
