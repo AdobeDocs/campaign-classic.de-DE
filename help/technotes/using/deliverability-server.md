@@ -3,9 +3,9 @@ product: campaign
 title: Aktualisierung auf den neuen Zustellbarkeits-Server
 description: Erfahren Sie, wie Sie eine Aktualisierung auf den neuen Zustellbarkeits-Server von Campaign durchführen
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 7385617d69c823850083a94b561d02c9152803e1
+source-git-commit: 9583763eb1d4403b32a1b77a9542f476c314d167
 workflow-type: tm+mt
-source-wordcount: '1365'
+source-wordcount: '1367'
 ht-degree: 93%
 
 ---
@@ -62,11 +62,7 @@ Als On-Premise-Kunde müssen Sie auch überprüfen, ob für Ihre Organisation ei
 1. Verbinden Sie sich als Administrator mit der [Adobe Admin Console](https://adminconsole.adobe.com/){_blank}.
 1. Rufen Sie den Bereich **Produkte und Services** auf und überprüfen Sie, ob **Adobe Campaign** aufgeführt ist.
 Wenn Sie **Adobe Campaign** nicht sehen können, wenden Sie sich an die [Adobe-Kundenunterstützung](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank}, damit dieses Produkt hinzugefügt wird.
-1. Klicken Sie auf **Adobe Campaign** und wählen Sie Ihre Organisation aus.
-
-   >[!CAUTION]
-   >
-   >Wenn Sie mehr als eine Organisation haben, wählen Sie die richtige aus. Weitere Informationen zu Organisationen [auf dieser Seite](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}.
+1. Klicken Sie auf **Adobe Campaign** und wählen Sie Ihre Organisation aus. **Vorsicht**: Wenn Sie mehr als eine Organisation haben, wählen Sie die richtige aus. Weitere Informationen zu Organisationen [auf dieser Seite](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}.
 
 1. Überprüfen Sie, ob ein **[!UICONTROL Produktprofil]** vorhanden ist. Wenn nicht, erstellen Sie eines. Für dieses **[!UICONTROL Produktprofil]** ist keine Berechtigung erforderlich.
 
@@ -79,11 +75,7 @@ Wenn Sie **Adobe Campaign** nicht sehen können, wenden Sie sich an die [Adobe-K
 ### Schritt 1: Erstellen/Aktualisieren Sie Ihr Adobe Developer-Projekt {#adobe-io-project}
 
 1. Rufen Sie die [Adobe Developer Console](https://developer.adobe.com/de/console/home) auf und melden Sie sich mit den Entwicklerzugriffsdaten Ihrer Organisation an. Stellen Sie sicher, dass Sie beim richtigen Portal der Organisation angemeldet sind.
-
-   >[!CAUTION]
-   >
-   >Wenn Sie mehr als eine Organisation haben, wählen Sie die richtige aus. Weitere Informationen zu Organisationen [auf dieser Seite](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}.
-
+   **Vorsicht**: Wenn Sie mehr als eine Organisation haben, wählen Sie die richtige aus. Weitere Informationen zu Organisationen [auf dieser Seite](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}.
 1. Wählen Sie **[!UICONTROL Neues Projekt erstellen]** aus.
    ![](assets/New-Project.png)
 
