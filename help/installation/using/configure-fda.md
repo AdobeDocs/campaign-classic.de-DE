@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 0b53b165-a6d8-4604-b3f0-3fa6fce35146
-source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
+source-git-commit: f580b9b2508c279e03bd2698854aaf3de501200b
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '342'
 ht-degree: 51%
 
 ---
@@ -42,29 +42,15 @@ Abhängig von den externen Datenbanken, auf die Sie von Adobe Campaign aus zugre
 
 Weitere Informationen finden Sie unter den folgenden Links:
 
-* Campaign verbinden und [Vertikal](../../installation/using/configure-fda-vertica.md)
-
-* Campaign verbinden und [Google BigQuery](../../installation/using/configure-fda-google-big-query.md)
-
 * Campaign verbinden und [azure synapse](../../installation/using/configure-fda-synapse.md)
-
-* Campaign verbinden und [Snowflake](../../installation/using/configure-fda-snowflake.md)
-
+* Campaign verbinden und [Google BigQuery](../../installation/using/configure-fda-google-big-query.md)
 * Campaign verbinden und [Hadoop](../../installation/using/configure-fda-hadoop.md)
-
-* Campaign verbinden und [Oracle](../../installation/using/configure-fda-oracle.md)
-
-* Campaign verbinden und [Netezza](../../installation/using/configure-fda-netezza.md)
-
-* Campaign verbinden und [sybase IQ](../../installation/using/configure-fda-sybase.md)
-
-* Campaign verbinden und [Teradata](../../installation/using/configure-fda-teradata.md)
-
-* Campaign verbinden und [SAP HANA](../../installation/using/configure-fda-sap-hana.md)
-
-* Campaign verbinden und [PostgreSQL](../../installation/using/configure-fda-postgresql.md)
-
 * Campaign verbinden und [Microsoft SQL Server](../../installation/using/configure-fda-sql.md)
-
+* Campaign verbinden und [Netezza](../../installation/using/configure-fda-netezza.md)
+* Campaign verbinden und [Oracle](../../installation/using/configure-fda-oracle.md)
+* Campaign verbinden und [PostgreSQL](../../installation/using/configure-fda-postgresql.md)
 * Campaign verbinden und [SAP HANA](../../installation/using/configure-fda-sap-hana.md)
-
+* Campaign verbinden und [Snowflake](../../installation/using/configure-fda-snowflake.md)
+* Campaign verbinden und [sybase IQ](../../installation/using/configure-fda-sybase.md)
+* Campaign verbinden und [Teradata](../../installation/using/configure-fda-teradata.md)
+* Campaign verbinden und [vertica analytics](../../installation/using/configure-fda-vertica.md)

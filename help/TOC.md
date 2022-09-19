@@ -6,10 +6,10 @@ title: Campaign Classic v7 – Handbuch
 user-guide-description: Mit Adobe Campaign können Sie umfangreiche Kundendaten verwenden, um dynamische Kampagnen, die Kunden tatsächlich wünschen, zu erstellen, zu koordinieren und bereitzustellen. Über E-Mail, mobile Kanäle, Offline-Kanäle und mehr.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: a45e18e460c11f474dc1b5663b9f4a3277fac12c
-workflow-type: ht
-source-wordcount: '2582'
-ht-degree: 100%
+source-git-commit: f580b9b2508c279e03bd2698854aaf3de501200b
+workflow-type: tm+mt
+source-wordcount: '2583'
+ht-degree: 99%
 
 ---
 
@@ -667,18 +667,18 @@ ht-degree: 100%
          + [Best Practices und Einschränkungen](installation/using/fda-best-practices.md)
          + Konfigurationsrichtlinien {#config-databases}
             + [Konfigurationsschritte](installation/using/configure-fda.md)
-            + [Konfigurieren von Vertica](installation/using/configure-fda-vertica.md)
-            + [Konfigurieren von Snowflake](installation/using/configure-fda-snowflake.md)
-            + [Konfigurieren von Google BigQuery](installation/using/configure-fda-google-big-query.md)
             + [Konfigurieren von Azure Synapse](installation/using/configure-fda-synapse.md)
+            + [Konfigurieren von Google BigQuery](installation/using/configure-fda-google-big-query.md)
             + [Konfigurieren von Hadoop](installation/using/configure-fda-hadoop.md)
-            + [Konfigurieren von Oracle](installation/using/configure-fda-oracle.md)
+            + [Konfigurieren von Microsoft SQL Server](installation/using/configure-fda-sql.md)
             + [Konfigurieren von Netezza](installation/using/configure-fda-netezza.md)
+            + [Konfigurieren von Oracle](installation/using/configure-fda-oracle.md)
+            + [Konfigurieren von PostgreSQL](installation/using/configure-fda-postgresql.md)
+            + [Konfigurieren von SAP HANA](installation/using/configure-fda-sap-hana.md)
+            + [Konfigurieren von Snowflake](installation/using/configure-fda-snowflake.md)
             + [Konfigurieren von Sybase IQ](installation/using/configure-fda-sybase.md)
             + [Konfigurieren von Teradata](installation/using/configure-fda-teradata.md)
-            + [Konfigurieren von SAP HANA](installation/using/configure-fda-sap-hana.md)
-            + [Konfigurieren von Microsoft SQL Server](installation/using/configure-fda-sql.md)
-            + [Konfigurieren von PostgreSQL](installation/using/configure-fda-postgresql.md)
+            + [Vertica analytics konfigurieren](installation/using/configure-fda-vertica.md)
          + [Remote-Zugriffsberechtigungen](installation/using/remote-database-access-rights.md)
          + [Verbindung mit der Datenbank herstellen](installation/using/connecting-to-database.md)
          + [Datenschema erstellen](installation/using/creating-data-schema.md)
