@@ -4,9 +4,9 @@ title: Aktualisierung auf den neuen Zustellbarkeits-Server
 description: Erfahren Sie, wie Sie eine Aktualisierung auf den neuen Zustellbarkeits-Server von Campaign durchführen
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
 source-git-commit: 50ef144950ca9e79b1b3acdf587ffc13e0beeec4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1367'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -53,7 +53,7 @@ Zur Integration des neuen Zustellbarkeits-Servers muss Campaign mit Adobe Shared
 1. Prüfen Sie, ob der Optionswert `DmRendering_cuid` ausgefüllt ist.
 
    * Wenn die Option ausgefüllt ist, können Sie die Implementierung starten.
-   * Wenn kein Wert eingetragen ist, wenden Sie sich an die [Adobe-Kundenunterstützung](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank}, um Ihre CUID zu erhalten.
+   * Wenn kein Wert eingetragen ist, wenden Sie sich an die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank}, um Ihre CUID zu erhalten.
 
    In dieser Option muss für alle Campaign-Instanzen (MKT, MID, RT, EXEC) der richtige Wert angegeben werden. Wenden Sie sich als Hybrid-Kunde an Adobe, damit diese Option in Ihren MID-, RT- und EXEC-Instanzen konfiguriert wird.
 
@@ -61,9 +61,9 @@ Als On-Premise-Kunde müssen Sie auch überprüfen, ob für Ihre Organisation ei
 
 1. Verbinden Sie sich als Administrator mit der [Adobe Admin Console](https://adminconsole.adobe.com/){_blank}.
 1. Rufen Sie den Bereich **Produkte und Services** auf und überprüfen Sie, ob **Adobe Campaign** aufgeführt ist.
-Wenn Sie **Adobe Campaign** nicht sehen können, wenden Sie sich an die [Adobe-Kundenunterstützung](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank}, damit dieses Produkt hinzugefügt wird.
+Wenn Sie **Adobe Campaign** nicht sehen können, wenden Sie sich an die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank}, damit dieses Produkt hinzugefügt wird.
 1. Klicken Sie auf **Adobe Campaign** und wählen Sie Ihre Organisation aus.
-   **Vorsicht**: Wenn Sie mehr als eine Organisation haben, wählen Sie die richtige aus. Weitere Informationen zu Organisationen [auf dieser Seite](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}.
+   **Achtung**: Wenn Sie mehrere Organisationen haben, achten Sie darauf, dass die richtige ausgewählt ist. Weitere Informationen zu Organisationen finden Sie [auf dieser Seite](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=de#ims-org-id){_blank}.
 
 1. Überprüfen Sie, ob ein **[!UICONTROL Produktprofil]** vorhanden ist. Wenn nicht, erstellen Sie eines. Für dieses **[!UICONTROL Produktprofil]** ist keine Berechtigung erforderlich.
 
@@ -75,8 +75,8 @@ Wenn Sie **Adobe Campaign** nicht sehen können, wenden Sie sich an die [Adobe-K
 
 ### Schritt 1: Erstellen/Aktualisieren Sie Ihr Adobe Developer-Projekt {#adobe-io-project}
 
-1. Rufen Sie die [Adobe Developer Console](https://developer.adobe.com/de/console/home) auf und melden Sie sich mit den Entwicklerzugriffsdaten Ihrer Organisation an. Stellen Sie sicher, dass Sie beim richtigen Portal der Organisation angemeldet sind.
-   **Vorsicht**: Wenn Sie mehr als eine Organisation haben, wählen Sie die richtige aus. Weitere Informationen zu Organisationen [auf dieser Seite](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}.
+1. Rufen Sie die [Adobe Developer Console](https://developer.adobe.com/console/home) auf und melden Sie sich mit den Entwicklerzugriffsdaten Ihrer Organisation an. Stellen Sie sicher, dass Sie beim richtigen Portal der Organisation angemeldet sind.
+   **Achtung**: Wenn Sie mehrere Organisationen haben, achten Sie darauf, dass die richtige ausgewählt ist. Weitere Informationen zu Organisationen finden Sie [auf dieser Seite](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=de#ims-org-id){_blank}.
 1. Wählen Sie **[!UICONTROL Neues Projekt erstellen]** aus.
    ![](assets/New-Project.png)
 
@@ -99,7 +99,7 @@ Wenn Sie **Adobe Campaign** nicht sehen können, wenden Sie sich an die [Adobe-K
    >Sie sollten die Datei `config.zip` speichern, wenn die Aufforderung zum Herunterladen angezeigt wird, da Sie sie nicht erneut herunterladen können.
 
 1. Klicken Sie auf **[!UICONTROL Weiter]**.
-1. Wählen Sie ein vorhandenes **[!UICONTROL Produktprofil]** aus oder erstellen Sie ggf. ein neues. Für dieses **[!UICONTROL Produktprofil]** ist keine Berechtigung erforderlich. Weitere Informationen zu **[!UICONTROL Produktprofilen]** finden Sie auf [dieser Seite](https://helpx.adobe.com/de/enterprise/using/manage-developers.html?lang=de){_blank}.
+1. Wählen Sie ein vorhandenes **[!UICONTROL Produktprofil]** aus oder erstellen Sie ggf. ein neues. Für dieses **[!UICONTROL Produktprofil]** ist keine Berechtigung erforderlich. Weitere Informationen zu **[!UICONTROL Produktprofilen]** finden Sie auf [dieser Seite](https://helpx.adobe.com/de/enterprise/using/manage-developers.html){_blank}.
    ![](assets/Product-Profile-API.png)
 
    Klicken Sie dann auf **[!UICONTROL Konfigurierte API speichern]**.
@@ -158,7 +158,7 @@ Um zu überprüfen, ob die Integration erfolgreich war, führen Sie die folgende
 
 >[!CAUTION]
 >
->Nach der Aktualisierung wird die **Testnetzwerk-Update für das Inbox Rendering (updateRenderingSeeds)** Der Workflow muss angehalten werden, da er nicht mehr angewendet wird und fehlschlägt.
+>Nach der Aktualisierung muss der Workflow **Testnetzwerk-Update für das Inbox Rendering (updateRenderingSeeds)** angehalten werden, da er dann nicht mehr anwendbar ist und fehlschlägt.
 
 ## Häufig gestellte Fragen {#faq}
 
