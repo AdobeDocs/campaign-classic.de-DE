@@ -7,9 +7,9 @@ user-guide-description: Mit Adobe Campaign können Sie umfangreiche Kundendaten 
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: f580b9b2508c279e03bd2698854aaf3de501200b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2583'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -678,7 +678,7 @@ ht-degree: 99%
             + [Konfigurieren von Snowflake](installation/using/configure-fda-snowflake.md)
             + [Konfigurieren von Sybase IQ](installation/using/configure-fda-sybase.md)
             + [Konfigurieren von Teradata](installation/using/configure-fda-teradata.md)
-            + [Vertica analytics konfigurieren](installation/using/configure-fda-vertica.md)
+            + [Konfigurieren von Vertica Analytics](installation/using/configure-fda-vertica.md)
          + [Remote-Zugriffsberechtigungen](installation/using/remote-database-access-rights.md)
          + [Verbindung mit der Datenbank herstellen](installation/using/connecting-to-database.md)
          + [Datenschema erstellen](installation/using/creating-data-schema.md)
