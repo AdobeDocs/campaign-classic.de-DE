@@ -2,9 +2,10 @@
 product: campaign
 title: Campaign Classic-Versionen 2018
 description: Weiterführende Informationen zu Campaign Classic-Versionen 2018
+hidefromtoc: true
 exl-id: f70fceba-4bbf-4f33-8746-e4405a1cdae6
-source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
-workflow-type: ht
+source-git-commit: c929557ee9f5467f9c3b8eb1ed25fae5399820ba
+workflow-type: tm+mt
 source-wordcount: '5423'
 ht-degree: 100%
 
@@ -53,7 +54,7 @@ _15. April 2019_
 
 ### Version 18.10.3 – Build 8981{#release-18-10-3-build-8981}
 
-&#x200B;29. Januar 2019
+29. Januar 2019
 
 >[!CAUTION]
 >
@@ -77,11 +78,11 @@ _15. April 2019_
 
 ### Version 18.10.2 – Build 8978{#release-18-10-2-build-8978}
 
-&#x200B;6. Dezember 2018
+6. Dezember 2018
 
 >[!CAUTION]
 >
->Dieser Build wurde zurückgerufen. Bitte [aktualisieren Sie auf den neuesten Build](../../production/using/build-upgrade.md) oder wenden Sie sich an die [Adobe Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Dieser Build wurde zurückgerufen. Bitte [aktualisieren Sie auf den neuesten Build](../../production/using/build-upgrade.md) oder wenden Sie sich an die [Adobe Kundenunterstützung](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Neuheiten**
 
@@ -99,11 +100,11 @@ _15. April 2019_
 
 ### Version 18.10.1 – Build 8977{#release-18-10-build-8977}
 
-&#x200B;5. November 2018
+5. November 2018
 
 >[!CAUTION]
 >
->Dieser Build wurde zurückgerufen. Bitte [aktualisieren Sie auf den neuesten Build](../../production/using/build-upgrade.md) oder wenden Sie sich an die [Adobe Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Dieser Build wurde zurückgerufen. Bitte [aktualisieren Sie auf den neuesten Build](../../production/using/build-upgrade.md) oder wenden Sie sich an die [Adobe Kundenunterstützung](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Neue Funktionen?**
 
@@ -244,11 +245,11 @@ Durch diese Indexänderungen kann es vorkommen, dass die Durchführung des Postu
 
 ### Version 18.6.2 – Build 8949{#release-18-6-3-build-8949}
 
-&#x200B;22. August 2018
+22. August 2018
 
 >[!CAUTION]
 >
->Dieser Build wurde zurückgerufen. Bitte [aktualisieren Sie auf den neuesten Build](../../production/using/build-upgrade.md) oder wenden Sie sich an die [Adobe Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Dieser Build wurde zurückgerufen. Bitte [aktualisieren Sie auf den neuesten Build](../../production/using/build-upgrade.md) oder wenden Sie sich an die [Adobe Kundenunterstützung](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Neue Funktionen?**
 
@@ -304,7 +305,7 @@ _25. Juni 2018_
 
 >[!CAUTION]
 >
->Dieser Build wurde zurückgerufen. Bitte führen Sie eine [Aktualisierung auf den aktuellen Build](../../production/using/build-upgrade.md) durch oder kontaktieren Sie den [technischen Support](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Dieser Build wurde zurückgerufen. Bitte führen Sie eine [Aktualisierung auf den aktuellen Build](../../production/using/build-upgrade.md) durch oder kontaktieren Sie den [technischen Support](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Neue Funktionen?**
 
@@ -322,7 +323,7 @@ _25. Juni 2018_
   </tr> 
   <tr> 
    <td> Unterstützung von Windows Server 2016<br /> </td> 
-   <td> Adobe Campaign ist jetzt mit Windows Server 2016 kompatibel. Weiterführende Informationen dazu finden Sie in der <a href="https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html">Kompatibilitätsmatrix von Campaign Classic</a>.<br /> </td> 
+   <td> Adobe Campaign ist jetzt mit Windows Server 2016 kompatibel. Weiterführende Informationen dazu finden Sie in der <a href="https://helpx.adobe.com/campaign/kb/compatibility-matrix.html">Kompatibilitätsmatrix von Campaign Classic</a>.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -339,7 +340,7 @@ Für Bestandskunden ist das Verhalten dieser Funktion unverändert. Wir empfehle
 
 decryptPassword
 
-Die **decryptPassword**-Funktion wurde hinzugefügt. Hiermit können Sie ein in einem externen Konto gespeichertes Passwort entschlüsseln. Weitere Informationen finden Sie in der [JSAPI](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html)-Dokumentation.
+Die **decryptPassword**-Funktion wurde hinzugefügt. Hiermit können Sie ein in einem externen Konto gespeichertes Passwort entschlüsseln. Weitere Informationen finden Sie in der [JSAPI](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)-Dokumentation.
 
 Datei-APIs
 
