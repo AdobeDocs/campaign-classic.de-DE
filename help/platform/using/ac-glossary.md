@@ -6,16 +6,16 @@ role: User, Data Architect
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: ecd82fe432d44f14b48b162224dd88bb0f6e6f64
+source-git-commit: d898a43b7a3f826a63a754f9fcb76953a696f3fb
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '572'
 ht-degree: 15%
 
 ---
 
 # Adobe Campaign-Glossar{#ac-glossary}
 
-Nachstehend finden Sie die wichtigsten Begriffe und Konzepte in Adobe Campaign.
+Nachstehend finden Sie die wichtigsten Begriffe und Konzepte in Adobe Campaign mit Links zur zugehörigen Dokumentation. Klicken Sie auf einen Begriff, um dessen Definition anzuzeigen.
 
 ## A - D{#sec-1}
 
@@ -28,7 +28,7 @@ Weitere Informationen [A/B-Tests](../../delivery/using/get-started-a-b-testing.m
 
 +++**Zugriffsverwaltung**
 
-Die Zugriffsverwaltung ermöglicht es Administratoren, Benutzern von Adobe Campaign Zugriff und Berechtigungen zuzuweisen. Zu den Berechtigungen gehört die Möglichkeit, Adobe Campaign-Funktionen anzuzeigen und/oder zu verwenden, z. B. Workflows auszuführen, Schemata zu definieren und Zielgruppen zu verwalten
+Die Zugriffsverwaltung ermöglicht es Administratoren, Benutzern von Adobe Campaign Zugriff und Berechtigungen zuzuweisen. Zu den Berechtigungen gehört die Möglichkeit, Adobe Campaign-Funktionen anzuzeigen und/oder zu verwenden, z. B. Workflows auszuführen, Schemata zu definieren und Zielgruppen zu verwalten.
 
 Weitere Informationen [Zugriffsverwaltung](access-management.md).
 +++
