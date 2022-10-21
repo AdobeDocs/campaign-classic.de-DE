@@ -6,10 +6,10 @@ role: User, Data Architect
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: d42389add06db74c54cb3a21813e9a832a2a288a
+source-git-commit: ecd82fe432d44f14b48b162224dd88bb0f6e6f64
 workflow-type: tm+mt
-source-wordcount: '317'
-ht-degree: 6%
+source-wordcount: '560'
+ht-degree: 15%
 
 ---
 
@@ -41,6 +41,43 @@ Eine Aktivität ist ein Palettenelement, das einem Workflow hinzugefügt wird, u
 Weitere Informationen [Workflow-Aktivitäten](../../workflow/using/about-activities.md).
 +++
 
++++**ACS Connector**
+
+ACS Connector (Prime Offering) überbrücken Adobe Campaign v7 und Adobe Campaign Standard. Es handelt sich um eine integrierte Funktion in Campaign v7, mit der Daten automatisch an Campaign Standard repliziert werden, sodass die besten beider Anwendungen kombiniert werden können. Campaign v7 verfügt über erweiterte Tools zur Verwaltung der primären Marketing-Datenbank. Die Datenreplikation von Campaign v7 ermöglicht es Campaign Standards, die Rich-Daten in einer benutzerfreundlichen Umgebung zu nutzen.
+
+Weitere Informationen [ACS Connector](../../integrations/using/acs-connector-principles-and-data-cycle.md).
++++
+
++++**Aktives Profil**
+
+Profile gelten als aktiv, wenn sie in den letzten 12 Monaten über einen beliebigen Kanal angesprochen wurden oder über einen beliebigen Kanal mit ihnen kommuniziert wurde. Gemäß Ihrem Vertrag erhalten alle Ihre Campaign-Instanzen eine bestimmte Anzahl aktiver Profile, die zu Abrechnungszwecken gezählt werden.
+
+Weitere Informationen [Aktive Profile](about-profiles.md#active-profiles).
++++
+
+
++++**Validierungs-Workflow-Aktivität**
+
+*Kontext: Distributed Marketing von Campaign*
+
+Die Aktivität Lokale Validierung ist eine Workflow-Aktivität, mit der vor dem Versand der Nachrichten ein Validierungsprozess für den Versand eingerichtet wird.
+
+Weitere Informationen zum [Lokale Validierung](../../workflow/using/local-approval.md).
++++
+
++++**Audience**
+
+Eine Zielgruppe ist der resultierende Satz von Profilen, die den Kriterien einer Filterdefinition entsprechen und auf Regeln und Attributen basieren.
+
+Weitere Informationen [Zielgruppen](../../campaign/using/marketing-campaign-target.md).
++++
+
++++**Audit-Protokoll**
+
+Das Audit-Protokoll erfasst in Echtzeit eine umfassende Liste von Aktionen und Ereignissen, die in Ihrer Adobe Campaign-Instanz auftreten. Es bietet eine Self-Service-Möglichkeit, auf einen Datenverlauf zuzugreifen, um Fragen zu beantworten, z. B.: was mit Ihren Workflows passiert ist und wer sie zuletzt aktualisiert hat oder was Ihre Benutzer in der Instanz getan haben.
+
+Weitere Informationen [Audit-Protokoll](../../production/using/audit-trail.md).
++++
 
 ## E - H {#sec-2}
 
