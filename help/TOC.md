@@ -6,9 +6,9 @@ title: Campaign Classic v7 – Handbuch
 user-guide-description: Mit Adobe Campaign können Sie umfangreiche Kundendaten verwenden, um dynamische Kampagnen, die Kunden tatsächlich wünschen, zu erstellen, zu koordinieren und bereitzustellen. Über E-Mail, mobile Kanäle, Offline-Kanäle und mehr.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: f580b9b2508c279e03bd2698854aaf3de501200b
-workflow-type: ht
-source-wordcount: '2583'
+source-git-commit: d42389add06db74c54cb3a21813e9a832a2a288a
+workflow-type: tm+mt
+source-wordcount: '2584'
 ht-degree: 100%
 
 ---
@@ -50,6 +50,7 @@ ht-degree: 100%
          + [Berichte](platform/using/faq-reporting.md)
          + [Entwicklung](platform/using/faq-developers.md)
          + [Tutorials](platform/using/tutorials.md)
+      + [Glossar](platform/using/ac-glossary.md)
    + Datenschutz {#privacy}
       + [Datenschutz und Einverständniserklärung](platform/using/privacy-and-recommendations.md)
       + [Datenschutzverwaltung](platform/using/privacy-management.md)
@@ -516,7 +517,7 @@ ht-degree: 100%
 + Verwalten von Angeboten {#managing-offers}
    + Erste Schritte mit Interaction {#interaction-overview}
       + [Angebote in Interaction](interaction/using/interaction-and-offer-management.md)
-      + [Glossar](interaction/using/glossary.md)
+      + [Glossar](interaction/using/i-glossary.md)
       + [Best Practices für Interaction](interaction/using/interaction-best-practices.md)
    + Allgemeine Funktionsweise {#general-operation}
       + [Implementierungsschritte](interaction/using/implementation-steps.md)
