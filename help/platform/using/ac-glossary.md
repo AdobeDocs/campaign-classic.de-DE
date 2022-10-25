@@ -6,10 +6,10 @@ role: User, Data Architect
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: cd26bf082d891e55bce489256dd9d43a1e3f243c
+source-git-commit: c4d7c87e769a270b18c57267e134bfbe9a2e0cdf
 workflow-type: tm+mt
-source-wordcount: '6453'
-ht-degree: 11%
+source-wordcount: '6260'
+ht-degree: 12%
 
 ---
 
@@ -100,14 +100,17 @@ Campaign ist eine Schnittstelle zur Koordinierung, Definition und Ausführung vo
 Weitere Informationen [Kampagnen](../../campaign/using/designing-marketing-campaigns.md).
 +++
 
-+++**Übergangsprozess**
+<!--
+-----UNCLEAR-----
++++**Changeover process**
 
-*Kontext: Kampagneninteraktion*
+*Context: Campaign Interaction*
 
-Im Zusammenhang mit Campaign Interaction ist der Umstellungsprozess ein aktivierter Prozess in einer identifizierten Umgebung, der den Aufruf an eine anonyme Umgebung leitet, wenn der Kontakt nicht explizit und/oder implizit identifiziert wurde.
+In the context of Campaign Interaction, the changeover process is an activated process in an identified environment, responsible for directing the call to an anonymous environment if the contact has not been explicitly and/or implicitly identified.
 
-Weitere Informationen [Interaction](../../interaction/using/interaction-and-offer-management.md).
+Learn more about [Interaction](../../interaction/using/interaction-and-offer-management.md).
 +++
+-->
 
 +++**Kanal**
 
@@ -174,14 +177,17 @@ Der Datenbankbereinigungs-Workflow löscht veraltete Daten, um das exponentielle
 Weitere Informationen [Datenbankbereinigungs-Workflow](../../production/using/database-cleanup-workflow.md).
 +++
 
-+++**Dedizierter Server**
+<!--
+----UNCLEAR----
++++**Dedicated server**
 
-*Kontext: Transaktionsnachrichten*
+*Context: Transactional Messaging*
 
-Dedizierte(n) Ausführungsserver(s) zur Nutzung von Transaktionsnachrichten. Ein Server kann in der Regel bis zu 50.000 Engine-Aufrufe pro Stunde verarbeiten. Die Bezeichnung &quot;Pro dedizierter Server&quot;weist nicht unbedingt eine 1:1-Korrelation mit einem physischen Server auf, da Adobe Virtualisierungstechnologien nutzen kann, um den entsprechenden Effekt zu erzielen.
+Dedicated execution server(s) to leverage Transactional Messaging. A server can typically process up to 50,000 Engine Calls per hour. The “Per-Dedicated Server” designation does not necessarily have a 1:1 correlation with a physical server as Adobe may utilize virtualization technologies to achieve the equivalent effect.
 
-Weitere Informationen [Transaktionsnachrichten](../../message-center/using/about-transactional-messaging.md).
+Learn more about [Transactional Messaging](../../message-center/using/about-transactional-messaging.md).
 +++
+-->
 
 +++**Zustellbarkeit**
 
@@ -272,6 +278,7 @@ Weitere Informationen [Domain-Zuweisung](https://experienceleague.adobe.com/docs
 ## E - H {#sec-2}
 
 <!--
+----DEPREACTED----
 +++**E4X**
 
 The version of Javascript that is used in Adobe Campaign Classic. Sometimes called ECMAScript, it is an extension of Javascript that allows the mixing of Javascript and XML primitives in the same code. Note that E4X is classified as a deprecated language. 
@@ -431,12 +438,15 @@ Bezieht sich auf den Status eines Kontakts. Sie kann explizit, implizit oder ano
 Weitere Informationen [Interaction](../../interaction/using/interaction-and-offer-management.md).
 +++
 
-+++**Image Serving**
+<!--
+----UNCLEAR----
++++**Image serving**
 
-Die Funktion, die den Empfängern des Versands die in E-Mails eingebetteten Bilder bereitstellt. Durch das Einfügen der Bilder auf der Basis der &quot;Download-Bilder&quot;-Funktion eines E-Mail-Systems wird in den Trackinglogs von Campaign ein &quot;offener&quot; Eintrag erzeugt.
+The functionality that supplies the images embedded in emails to the delivery’s recipients. The insertion of the images based on an emails system’s “download images” functionality is what generates an “open” entry in Campaign’s tracking logs.
 
-Weitere Informationen [Image Serving](../../delivery/using/defining-the-email-content.md#adding-images).
+Learn more about [Image serving](../../delivery/using/defining-the-email-content.md#adding-images).
 +++
+-->
 
 +++**Eingehende Interaktionen**
 
@@ -495,6 +505,7 @@ Weitere Informationen [MRM](../../mrm/using/about-marketing-resource-management.
 +++
 
 <!--
+----ACS?----
 +++**Localization**
 
 This template type is used to manage multilingual messages.  It is available for Email and SMS messages and useable in standalone mode, within a workflow or in a recurring delivery. In the multilingual feature templates, the language management is based on variants. Each variant represents one language.  This functionality is available only in Adobe Campaign Standard.  
@@ -759,15 +770,16 @@ Weitere Informationen [Pläne](../../campaign/using/setting-up-marketing-campaig
 
 Vordefinierte Filter sind Abfragen, die zur Wiederverwendung gespeichert wurden. Die Verwendung vordefinierter Filter steigert die Produktivität (da sie nur einmal erstellt werden), hilft bei der Konsistenz (da alle Marketing-Experten sie verwenden können) und senkt die für den Marketing-Experten erforderlichen Fähigkeiten, da sie Code oder Logik verwenden können, die sie möglicherweise nicht selbst erstellen können.
 
-Weitere Informationen [Vordefinierte Filter](../../configuration/using/creating-filters.md).
+Weitere Informationen [Vordefinierte Filter](../../platform/using/creating-filters.md#filtering-recipients).
 +++
 
 <!--
+----DEPREACTED----
 +++**Predictive Engagement Scoring**
 
 Predictive engagement scoring predicts the probability of a recipient engaging with a message and the probability of opting out (unsubscribing) within the next seven days after the next email send. The probabilities are further divided into buckets according to the specific risk of disengagement, medium, or low. The model also provides the risk percentile rank for the customers to understand where the rank of a certain customer in relation to others. 
 
-Learn more about [Predictive Engagement Scoring](../../platforrm/using/creating-filters.md).
+Learn more about [Predictive Engagement Scoring](../../platform/using/creating-filters.md).
 +++
 -->
 
@@ -794,12 +806,14 @@ Weitere Informationen [Programme](../../campaign/using/setting-up-marketing-camp
 
 +++**Öffentliche Ressourcen**
 
-Der Ordner Öffentliche Ressourcen in Adobe Campaign enthält vom Anwendungsserver gehostete Bilder. Bilder in Sendungen müssen auf dem Anwendungsserver (oder, falls Campaign so konfiguriert ist, auf einem Image-Hosting-Server) veröffentlicht werden, damit sie in Sendungen wie E-Mails angezeigt werden.
+Der Ordner Öffentliche Ressourcen in Adobe Campaign enthält Bilder, die vom Anwendungsserver gehostet werden. Bilder in Sendungen müssen auf dem Anwendungsserver (oder, falls Campaign so konfiguriert ist, auf einem Image-Hosting-Server) veröffentlicht werden, damit sie in Sendungen wie E-Mails angezeigt werden.
 
 Weitere Informationen [Öffentliche Mittel](../../installation/using/deploying-an-instance.md#managing-public-resources).
 +++
 
 +++**Push-Benachrichtigung**
+
+*Kontext: Mobile App Channel*
 
 Push-Benachrichtigungen sind Nachrichten, die von Mobile Apps empfangen werden. Push-Benachrichtigungen werden für die Verwendung mit Adobe Campaign konfiguriert, indem der Experience Platform SDK-Code in die Mobile App eingefügt wird. Für Push stehen zwei Versandkanäle zur Verfügung: iOS und Android.
 
@@ -824,10 +838,13 @@ Die Rendering-Funktion wird in einer Platzierung definiert. Sie wird verwendet, 
 Weitere Informationen [Rendering-Funktion](../../interaction/using/creating-offer-spaces.md).
 +++
 
-+++**Retargeting-Kampagnen**
+<!--
+-----DID NOT FIND IN DOCS----
++++**Retargeting campaigns**
 
-Kampagnen, die Empfänger eines früheren Versands oder früherer Sendungen erneut ansprechen.
+Campaigns that re-target the recipients of a previous delivery or deliveries.
 +++
+-->
 
 +++**Schemaerweiterung**
 
@@ -838,14 +855,14 @@ Weitere Informationen [Schemaerweiterung](../../configuration/using/extending-a-
 
 +++**Schema**
 
-Ein Schema ist ein XML-Dokument, das einen bestimmten Datentyp definiert. Schemas werden als Datenbanktabellen in der Produktdatenbank implementiert.  Benutzer bearbeiten Schemata in Campaign, und das Produkt übersetzt ihre Aktionen in die erforderliche SQL, die dann mit der Datenbank ausgeführt wird. Beachten Sie, dass diese Begriffe (Schema/Tabelle) häufig von Operatoren synonym verwendet werden, es sich jedoch um verschiedene Elemente der Produktarchitektur handelt.
+Ein Schema ist ein mit einer Datenbanktabelle verknüpftes XML-Dokument. Es definiert die Datenstruktur und beschreibt die SQL-Definition der Tabelle. Benutzer bearbeiten Schemata in Campaign, und das Produkt übersetzt ihre Aktionen in die erforderliche SQL, die dann mit der Datenbank ausgeführt wird.
 
 Weitere Informationen [Schemas](../../configuration/using/about-schema-reference.md).
 +++
 
 +++**Testadressen**
 
-Testadressen ermöglichen den Versand an Empfänger, die nicht den vorliegenden Zielgruppenkriterien entsprechen. Auf diese Weise können Empfänger, die außerhalb des Versandperimeters liegen, die Nachricht so wie jeder andere Empfänger innerhalb der Zielgruppe erhalten.
+Testadressen ermöglichen den Versand an Empfänger, die nicht den vorliegenden Zielgruppenkriterien entsprechen. Auf diese Weise können Empfänger, die außerhalb des Versandperimeters liegen, die Nachricht so wie jeder andere Empfänger innerhalb der Zielgruppe erhalten. Sie werden zur Audience einer Nachricht hinzugefügt, um Missbrauch bei der Nutzung Ihrer Empfängerdatenbank zu erkennen oder die Zustellung sicherzustellen.
 
 Weitere Informationen [Testadressen](../../delivery/using/about-seed-addresses.md).
 +++
@@ -870,12 +887,12 @@ Weitere Informationen [Dienste](../../delivery/using/about-services-and-subscrip
 
 Über das Control Panel können Sie alle SFTP-Server verwalten, die mit den Campaign-Instanzen verbunden sind, auf die Sie Zugriff haben. Im Control Panel können Sie Aktionen für Ihre SFTP-Server ausführen, z. B. die Speicherkapazität überwachen, IP-Adressen-Zulassungslisten verwalten und öffentliche SSH-Schlüssel verwalten.
 
-Weitere Informationen [SFTP-Verwaltung](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=en).
+Weitere Informationen [SFTP-Verwaltung](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=de).
 +++
 
 +++**Aktivität &quot;Anmeldedienste&quot;**
 
-Mit dieser Workflow-Aktivität können Sie ein Abonnement für einen Informationsdienst für die in der Transition angegebene Population erstellen oder löschen.
+Mit der Workflow-Aktivität An-/Abmeldedienst können Sie ein Abonnement für einen Informationsdienst für die in der Transition angegebene Population erstellen oder löschen.
 
 Weitere Informationen [Aktivität &quot;Anmeldedienste&quot;](../../workflow/using/subscription-services.md).
 +++
@@ -896,23 +913,23 @@ Zieldaten sind die in der Arbeitstabelle (Transition) eines Workflows gespeicher
 Weitere Informationen [Zielgruppendaten](../../workflow/using/data-life-cycle.md#target-data).
 +++
 
-+++**Target Map**
++++**Zielgruppen-Mapping**
 
-Hierbei handelt es sich um die Zuordnung von Versandkanälen zu einem bestimmten Datentyp. Adobe Campaign sendet nicht per se an E-Mail-Adressen oder Telefonnummern, sondern an Datentypen. Zielgruppen-Maps (manchmal auch als Bereitstellungskarten bezeichnet) definieren, wie verschiedene Versandkanäle mit den Datenfeldern eines Schemas verknüpft sind. Sie definiert, wie Campaign mit einem bestimmten Feld oder Ausdruck an diesen Datentyp sendet.
+Zielzuordnung ist die Zuordnung von Versandkanälen zu einem bestimmten Datentyp. Zielgruppen-Mappings definieren, wie verschiedene Versandkanäle mit den Datenfeldern eines Schemas verknüpft werden. Sie definiert, wie Campaign mit einem bestimmten Feld oder Ausdruck an diesen Datentyp sendet.
 
-Weitere Informationen [Zielgruppendaten](../../delivery/using/define-the-right-audience.md#target-mappings).
+Weitere Informationen [Zielzuordnung](../../delivery/using/selecting-a-target-mapping.md).
 +++
 
 +++**Zielgruppenaktivitäten**
 
-Hierbei handelt es sich um Workflow-Aktivitäten, die speziell für Zielgruppen-, Bearbeitungs- und Filteraktivitäten gelten. Benutzer können eine oder mehrere Zielgruppen erstellen, indem sie Sets definieren und diese mithilfe von Schnittmengen, Vereinigungen oder Ausschlüssen teilen oder kombinieren.
+Zielgruppenbestimmungsaktivitäten sind Workflow-Aktivitäten, die speziell für Zielgruppen-, Bearbeitungs- und Filteraktivitäten gelten. Benutzer können eine oder mehrere Zielgruppen erstellen, indem sie Sets definieren und diese mithilfe von Schnittmengen, Vereinigungen oder Ausschlüssen teilen oder kombinieren.
 
 Weitere Informationen [Zielgruppenbestimmungsaktivitäten](../../workflow/using/about-targeting-activities.md).
 +++
 
 +++**Targeting dimension**
 
-Der Datentyp, der durch eine Abfrage oder andere Workflow-Aktivitäten erzeugt (zurückgegeben) wird. Beachten Sie, dass Adobe Campaign nur den Primären Schlüssel der reagierenden Datenbankzeilen zurückgibt, unabhängig davon, welche Abfrage zum Abrufen verwendet wurde.
+Die Zielgruppendimension ist der Datentyp, der von einer Abfrage oder anderen Workflow-Aktivitäten erzeugt (zurückgegeben) wird. Beachten Sie, dass Adobe Campaign nur den Primären Schlüssel der reagierenden Datenbankzeilen zurückgibt, unabhängig davon, welche Abfrage zum Abrufen verwendet wurde.
 
 Weitere Informationen [Zielgruppendimension](../../workflow/using/targeting-data.md).
 +++
@@ -921,18 +938,13 @@ Weitere Informationen [Zielgruppendimension](../../workflow/using/targeting-data
 
 *Kontext: Marketing Resource Management (MRM)*
 
-Die Workflow-Aktivität &quot;Aufgabe&quot;integriert menschliche Aktionen in die Logik eines Workflows. Sie können zwei Szenarien festlegen: das erste, wenn die Aufgabe abgeschlossen ist, und das zweite, wenn die Aufgabe nicht abgeschlossen wurde (wenn sie manuell als unvollständig markiert wurde oder wenn sie abläuft).
-
-Typische Anwendungsfälle sind die Integration von Offline-Aktionen in eine Kampagne oder benutzerdefinierte Aktionen wie Genehmigungen.
-
-In einem Kampagnen-Workflow die Aktivität Aufgabe
-
-
+Die Workflow-Aktivität &quot;Aufgabe&quot;integriert menschliche Aktionen in die Logik eines Workflows. Sie können zwei Szenarien festlegen: das erste, wenn die Aufgabe abgeschlossen ist, und das zweite, wenn die Aufgabe nicht abgeschlossen ist. Typische Anwendungsfälle sind die Integration von Offline-Aktionen in eine Kampagne oder benutzerdefinierte Aktionen wie Genehmigungen.
 
 Weitere Informationen [Aufgabenaktivität](../../workflow/using/task.md).
 +++
 
 <!--
+-----NOT USEFUL-----
 +++**Task**
 
 One iteration of the defined functionality of a workflow activity. Each execution of a task has a unique task identifier.   
@@ -947,6 +959,8 @@ Eine Vorlage ist ein Designelement, mit dem ein Objekt erstellt wird. Es enthäl
 +++
 
 <!--
+-----ACS -> SEEDS IN ACC-----
+
 +++**Test profiles**
 
 Allows targeting of additional recipients who do not match the defined targeting criteria. They are added to a message’s audience to detect any fraudulent use of your recipient database or to ensure delivery. Seen as the Seed type in the Campaign interface.
@@ -956,6 +970,7 @@ Learn more about [Test profiles](../../workflow/using/about-workflows.md).
 -->
 
 <!--
+-----NOT USEFUL?-----
 +++**Total database storage**
 
 The aggregate size of the production and non-production instance(s) database storage managed by Adobe. 
@@ -987,6 +1002,7 @@ Weitere Informationen [Ausgelöste Kampagnen](../../workflow/using/external-sign
 +++
 
 <!--
+-----NOT USEFUL-----
 +++**Triggers**
 
 Signals that initiate execution of a workflow, delivery or other action. Typically an API call. 
@@ -1001,7 +1017,7 @@ Learn more about [Triggers](../../workflow/using/about-workflows.md).
 
 Typologieregeln sind Geschäftsregeln, die im Rahmen der Analysephase des Versands implementiert werden. Typologieregeln sind Prüfungen des Versandinhalts (Kontrollregeln) oder der Zielgruppe des Versands (Filterregeln) oder andere Logiken (Druckregeln), die geschäftliche Anforderungen durchsetzen. Regeln sind granulare Elemente, die in einer oder mehreren Typologien enthalten sein können.
 
-Weitere Informationen [Typologien](../../campaign-opt/using/about-campaign-typologies.md#typology-rules).
+Weitere Informationen [Typologieregeln](../../campaign-opt/using/about-campaign-typologies.md#typology-rules).
 +++
 
 +++**Typology**
@@ -1025,6 +1041,7 @@ Weitere Informationen [Einzelmodus](../../interaction/using/about-inbound-channe
 +++
 
 <!--
+-----NO OCCURRENCE IN ACC, OLD v6 CONCEPT?----
 +++**Universes**
 
 Application pages hosted by the Campaign instance. Used for approval forms, landing pages, opt-out forms, preference pages or to implement other business requirements.  
@@ -1035,7 +1052,7 @@ Learn more about [Universes](../../workflow/using/about-workflows.md).
 
 +++**Web-Anwendungen**
 
-Webanwendungen sind dynamische und interaktive Anwendungsseiten, die von der Campaign-Instanz gehostet werden. Es enthält Daten aus der Datenbank und Inhalte, die an die Rechte des verbundenen Benutzers angepasst sind. Sie können beispielsweise ein Bearbeitungsformular für ein Extranet oder Benachrichtigungsformulare erstellen, die Daten aus der Datenbank mit Tabellen, Diagrammen, Formularen usw. enthalten. Mit dieser Funktion können Sie Webseiten entwerfen und posten, auf denen Benutzer Informationen suchen oder eingeben können.
+Webanwendungen sind dynamische und interaktive Anwendungsseiten, die von der Campaign-Instanz gehostet werden. Sie enthalten Daten aus der Datenbank und Inhalte, die an die Rechte des verbundenen Benutzers angepasst sind. Sie können beispielsweise ein Bearbeitungsformular für ein Extranet oder Benachrichtigungsformulare erstellen, die Daten aus der Datenbank mit Tabellen, Diagrammen, Formularen usw. enthalten. Mit dieser Funktion können Sie Webseiten entwerfen und posten, auf denen Benutzer Informationen suchen oder eingeben können.
 
 Weitere Informationen [Webanwendungen](../../web/using/about-web-applications.md).
 +++
@@ -1056,7 +1073,7 @@ Weitere Informationen [Workflows](../../workflow/using/about-workflows.md).
 
 +++**Arbeitstabellen**
 
-Die Arbeitstabelle enthält alle von Workflow-Transitionen übermittelten Informationen. Jeder Workflow verwendet mehrere Arbeitstabellen. Die in diesen Tabellen übermittelten Daten können beschleunigt und während des gesamten Lebenszyklus des Workflows verwendet werden, sofern sie nicht bereinigt werden. Tatsächlich werden nicht benötigte Tabellen jedes Mal bereinigt, wenn der Workflow passiviert wird, und möglicherweise während der Ausführung der größten Workflows, um eine Überlastung des Servers zu vermeiden.
+Die Arbeitstabelle enthält alle von Workflow-Transitionen übermittelten Informationen. Jeder Workflow verwendet mehrere Arbeitstabellen. Die Arbeitstabelle enthält die Ergebnisse der ursprünglichen Aktivität und deren Inhalt wird als Eingabe für die nächste (verbundene) Aktivität im Workflow verwendet.  Die Manipulation (Erweiterung, Anpassung) der Arbeitstabelle gehört zu den wichtigsten Fähigkeiten eines Adobe Campaign-Benutzers.
 
 Weitere Informationen [Arbeitstabellen](../../workflow/using/about-workflows.md).
 +++
