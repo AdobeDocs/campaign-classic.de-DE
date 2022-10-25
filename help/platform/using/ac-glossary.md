@@ -6,9 +6,9 @@ role: User, Data Architect
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 8aa45f4e9d41b7dc4faf89dad988703b63cea77c
+source-git-commit: cd26bf082d891e55bce489256dd9d43a1e3f243c
 workflow-type: tm+mt
-source-wordcount: '6454'
+source-wordcount: '6453'
 ht-degree: 11%
 
 ---
@@ -51,7 +51,7 @@ Weitere Informationen [Workflow-Aktivitäten](../../workflow/using/about-activit
 
 Profile gelten als aktiv, wenn sie in den letzten 12 Monaten über einen beliebigen Kanal angesprochen wurden oder über einen beliebigen Kanal mit ihnen kommuniziert wurde. Gemäß Ihrem Vertrag erhalten alle Ihre Campaign-Instanzen eine bestimmte Anzahl aktiver Profile, die zu Abrechnungszwecken gezählt werden.
 
-Weitere Informationen [Aktive Profile](about-profiles.md#active-profiles).
+Weitere Informationen [Aktive Profile](../../platform/using/about-profiles.md#active-profiles).
 +++
 
 +++**Validierungs-Workflow-Aktivität**
@@ -759,7 +759,7 @@ Weitere Informationen [Pläne](../../campaign/using/setting-up-marketing-campaig
 
 Vordefinierte Filter sind Abfragen, die zur Wiederverwendung gespeichert wurden. Die Verwendung vordefinierter Filter steigert die Produktivität (da sie nur einmal erstellt werden), hilft bei der Konsistenz (da alle Marketing-Experten sie verwenden können) und senkt die für den Marketing-Experten erforderlichen Fähigkeiten, da sie Code oder Logik verwenden können, die sie möglicherweise nicht selbst erstellen können.
 
-Weitere Informationen [Vordefinierte Filter](../../platforrm/using/creating-filters.md).
+Weitere Informationen [Vordefinierte Filter](../../configuration/using/creating-filters.md).
 +++
 
 <!--
@@ -775,14 +775,14 @@ Learn more about [Predictive Engagement Scoring](../../platforrm/using/creating-
 
 Der Primärschlüssel ist die eindeutige Kennung für jeden Datensatz in einer Datenbanktabelle. Eine Tabelle muss mindestens einen Schlüssel haben. In der Regel werden Schlüssel nach dem Hauptelement des Schemas und der Indizes deklariert. Primäre Schlüssel können nicht zusammengesetzt sein (mehrere Felder enthalten).
 
-Weitere Informationen [Primärer Schlüssel](../../configuration/using/key.md).
+Weitere Informationen [Primärer Schlüssel](../../configuration/using/schema/key.md).
 +++
 
 +++**Profil**
 
 Ein Profil ist ein Datensatz mit Informationen, die einen Endkunden, einen Interessenten oder einen Lead repräsentieren. Jedes Profil entspricht einem Datensatz in der nmsRecipient -Tabelle oder einer externen Tabelle, die Cookie-ID, Kunden-ID, mobile Kennung oder andere für einen bestimmten Kanal relevante Informationen enthält.
 
-Weitere Informationen [Profile](../../platforrm/using/about-profiles.md).
+Weitere Informationen [Profile](../../platform/using/about-profiles.md).
 +++
 
 +++**Programm**
@@ -900,7 +900,7 @@ Weitere Informationen [Zielgruppendaten](../../workflow/using/data-life-cycle.md
 
 Hierbei handelt es sich um die Zuordnung von Versandkanälen zu einem bestimmten Datentyp. Adobe Campaign sendet nicht per se an E-Mail-Adressen oder Telefonnummern, sondern an Datentypen. Zielgruppen-Maps (manchmal auch als Bereitstellungskarten bezeichnet) definieren, wie verschiedene Versandkanäle mit den Datenfeldern eines Schemas verknüpft sind. Sie definiert, wie Campaign mit einem bestimmten Feld oder Ausdruck an diesen Datentyp sendet.
 
-Weitere Informationen [Zielgruppendaten](../../workflow/using/define-the-right-audience.md#target-mappings).
+Weitere Informationen [Zielgruppendaten](../../delivery/using/define-the-right-audience.md#target-mappings).
 +++
 
 +++**Zielgruppenaktivitäten**
@@ -1001,7 +1001,7 @@ Learn more about [Triggers](../../workflow/using/about-workflows.md).
 
 Typologieregeln sind Geschäftsregeln, die im Rahmen der Analysephase des Versands implementiert werden. Typologieregeln sind Prüfungen des Versandinhalts (Kontrollregeln) oder der Zielgruppe des Versands (Filterregeln) oder andere Logiken (Druckregeln), die geschäftliche Anforderungen durchsetzen. Regeln sind granulare Elemente, die in einer oder mehreren Typologien enthalten sein können.
 
-Weitere Informationen [Typologien](../../campaign/using/about-campaign-typologies.md#typology-rules).
+Weitere Informationen [Typologien](../../campaign-opt/using/about-campaign-typologies.md#typology-rules).
 +++
 
 +++**Typology**
@@ -1010,7 +1010,7 @@ Weitere Informationen [Typologien](../../campaign/using/about-campaign-typologie
 
 Eine Typologie ist eine Gruppierung von Typologieregeln, die auf die Analysephase eines Versands angewendet werden. Eine Kampagnentypologie kann mehrere Typologieregeln enthalten, ein Versand kann jedoch nur eine Typologie referenzieren.
 
-Weitere Informationen [Typologien](../../campaign/using/about-campaign-typologies.md#typologies).
+Weitere Informationen [Typologien](../../campaign-opt/using/about-campaign-typologies.md#typologies).
 +++
 
 ## U - Z {#sec-6}
