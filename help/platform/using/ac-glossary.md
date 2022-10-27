@@ -6,9 +6,9 @@ role: User, Data Architect
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: dea815b07f0b91ed550060fa00cf0501ae6594f7
+source-git-commit: 9900fb627dfb310e8f34735a502997ef8e24e769
 workflow-type: tm+mt
-source-wordcount: '6087'
+source-wordcount: '5993'
 ht-degree: 12%
 
 ---
@@ -140,14 +140,14 @@ Weitere Informationen [Inhaltsvalidierung](../../campaign/using/marketing-campai
 
 Verwenden Sie Kontrollgruppen, um die Wirkung Ihrer Kampagnen zu messen, indem Sie einen Teil ihrer Audience ausschließen. Benutzer können das Verhalten der Zielpopulation, die die Nachricht erhalten hat, mit dem Verhalten der Kontakte vergleichen, die nicht kontaktiert wurden. Auf der Basis der Versandlogs können Benutzer auch eine Kontrollgruppe in zukünftigen Kampagnen auswählen.
 
-Weitere Informationen [Inhaltsvalidierung](../../campaign/using/marketing-campaign-target.md#defining-a-control-group).
+Weitere Informationen [Inhaltsgruppen](../../campaign/using/marketing-campaign-target.md#defining-a-control-group).
 +++
 
 +++**Control Panel**
 
-Mit dem Control Panel können Sie als Produktadministrator von Adobe Campaign die Effizienz Ihrer Arbeit steigern, indem Sie Einstellungen verwalten und die Nutzung für jede Ihrer Instanzen verfolgen können. Dank der intuitiven Benutzeroberfläche können die Nutzung wichtiger Ressourcen überwacht und administrative Aufgaben einfach durchgeführt werden. So können beispielsweise IP-Adressen auf die Zulassungsliste gesetzt, der Speicher von SFTP-Servern überwacht und die Schlüssel verwaltet werden.
+Das Control Panel hilft Produktadministratoren von Adobe Campaign bei der Steigerung der Effizienz ihrer Arbeit, indem es ihnen ermöglicht, Einstellungen zu verwalten und die Nutzung für jede ihrer Instanzen zu verfolgen. Dank der intuitiven Benutzeroberfläche können sie die Nutzung wichtiger Assets einfach überwachen und administrative Aufgaben ausführen, wie z. B. die Zulassungsliste von IP-Adressen, die Überwachung der SFTP-Datenspeicherung, die Schlüsselverwaltung und mehr.
 
-Weitere Informationen [Inhaltsvalidierung](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=de).
+Weitere Informationen [Inhaltsbereich](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=de).
 +++
 
 +++**Cubes**
@@ -170,7 +170,7 @@ Weitere Informationen [Benutzerdefinierte Ressourcen](../../configuration/using/
 
 Das Campaign-Datenmodell ist ein Satz von Schemas, die die Datentypen und ihre Beziehungen definieren (Links). Das Datenmodell ist eine abstrakte Definition, die physisch mit einer Datenbank implementiert wird, die die tatsächlichen Daten enthält.
 
-Weitere Informationen [Benutzerdefinierte Ressourcen](../../configuration/using/about-data-model.md).
+Weitere Informationen [Datenmodell](../../configuration/using/about-data-model.md).
 +++
 
 +++**Datenbankbereinigungs-Workflow**
@@ -243,11 +243,11 @@ Ein Versandentwurf ist ein strukturierter Satz von Elementen (Dokumente, Geschä
 Weitere Informationen [Briefpost](../../delivery/using/about-direct-mail-channel.md).
 +++
 
-+++**Bereitstellungsassistent**
++++**Implementierungsassistent**
 
 Der Softwareverteilungs-Assistent definiert die Parameter der Campaign-Instanz, wie z. B. den Standard-Namespace, den Zeitplan für die Datenbankbereinigung, die Fristen für die Datenaufbewahrung und andere technische Einstellungen.
 
-Weitere Informationen [Bereitstellungsassistent](../../installation/using/deploying-an-instance.md#deployment-wizard).
+Weitere Informationen [Implementierungsassistent](../../installation/using/deploying-an-instance.md#deployment-wizard).
 +++
 
 +++**Deskriptive Analyse**
@@ -263,14 +263,14 @@ Weitere Informationen [Deskriptive Analyse](../../reporting/using/about-descript
 
 Das Add-on für dezentrales Marketing bietet Campaign-Benutzern einen gemeinsamen Arbeitsbereich zur Implementierung von Kampagnen zwischen Zentralstellen (Hauptsitz, Marketingabteilungen usw.) und lokalen Stellen (Verkaufsstellen, regionale Agenturen usw.). Diese Zusammenarbeit basiert auf einem gemeinsamen Arbeitsbereich, der als **Liste der Campaign-Packages**: zentral erstellte Kampagnenvorlagen und -instanzen werden den Lokalstellen angeboten.
 
-Weitere Informationen [Dezentrales Marketing](../../distributed/using/about-distributed-marketing.md)
+Weitere Informationen [Distributed Marketing](../../distributed/using/about-distributed-marketing.md)
 +++
 
 +++**Werteverteilung**
 
 Die Werteverteilung ist ein Tool, das die Verteilung der Werte für ein Schemaattribut anzeigt, das derzeit in der Datenbank vorhanden ist. Auf diese Weise können Sie feststellen, welche Werte verfügbar sind, wie viele Werte es gibt und wie hoch die Prozentsätze sind. Außerdem können Sie bei der Erstellung einer Abfrage oder eines Ausdrucks Probleme mit der Groß- und Kleinschreibung von Werten vermeiden.
 
-Weitere Informationen [Dezentrales Marketing](../../platform/using/defining-filter-conditions.md#selecting-data-to-extract)
+Weitere Informationen [Werteverteilung](../../platform/using/defining-filter-conditions.md#selecting-data-to-extract)
 +++
 
 +++**Delegation von Domains**
@@ -542,12 +542,15 @@ Der Namespace ist eine Partition, die Kundendatentypen von den nativen Datentype
 Weitere Informationen [Namespace](../../configuration/using/about-schema-reference.md#identification-of-a-schema).
 +++
 
-+++**Navigationsleiste**
+<!--
+----generic, not specific to campaign----
++++**Navigation bar**
 
-Die Navigationsleiste ist das Navigationselement, das oben auf der Benutzeroberfläche ausgeführt wird. Die Navigationsleiste enthält die verschiedenen Kernfunktionen der Plattform. Klicken Sie auf einen Link in der Navigationsleiste, um die mit dieser Funktion verbundenen Funktionen anzuzeigen. Die Liste der Rubriken hängt von den installierten Packages und Add-ons sowie den Zugriffsberechtigungen des aktuellen Benutzers ab. Die Navigationsleiste soll die Bildschirmverwaltung vereinfachen und die Produktivität steigern.
+The navigation bar is the navigation element running across the top of the interface. The navigation bar regroups the various core capabilities of the platform. Click a navigation bar link to display the set of functionalities related to this capability. The list of core capabilities you can access depends on the packages and add-ons you have installed and on your access rights. The purpose of the Navigation bar is to simplify screen management and increase productivity.
 
-Weitere Informationen [Navigationsleiste](../../platform/using/adobe-campaign-workspace.md#browsing-pages).
+Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.md#browsing-pages).
 +++
+-->
 
 +++**Navigationsbaum**
 
@@ -592,7 +595,7 @@ Weitere Informationen [Interaction](../../interaction/using/interaction-and-offe
 
 Das Angebot **Design-Umgebung** ist die Umgebung, in der Benutzer Angebote erstellen, Typologieregeln definieren und das Schema auswählen, auf das sich die Angebote beziehen sollen. Die Tabelle zum Speichern der erstellten Angebotsvorschläge wird ebenfalls von der Umgebung definiert. Standardmäßig enthält das Interaction-Add-on eine **Design** Umwelt und **Live** verknüpfte Umgebung. Beide Umgebungen sind für die integrierte Empfängertabelle vorkonfiguriert.
 
-Weitere Informationen [Design-Umgebungen](../../interaction/using/fundamental-principles.md).
+Weitere Informationen [Angebotserstellungsumgebungen](../../interaction/using/fundamental-principles.md).
 +++
 
 +++**Angebotsmodul-Arbitrage**
@@ -619,7 +622,7 @@ Weitere Informationen [Interaction](../../interaction/using/interaction-and-offe
 
 Die Angebotsumgebung ist der Stammordner, der einen Angebotskatalog, seine verfügbaren Platzierungen und die vordefinierten Filter der Umgebung definiert. Benutzer müssen für jede Zielgruppendimension eine Umgebung erstellen. Es gibt zwei Arten von Angebotsumgebungen: Design und Live.
 
-Weitere Informationen [Umgebungen](../../interaction/using/fundamental-principles.md).
+Weitere Informationen [Angebotsumgebungen](../../interaction/using/fundamental-principles.md).
 +++
 
 +++**Live-Umgebung des Angebots**
@@ -628,7 +631,7 @@ Weitere Informationen [Umgebungen](../../interaction/using/fundamental-principle
 
 Die Live-Umgebung des Angebots ist mit einer Kampagne verknüpft. **Design-Umgebung**. Es enthält schreibgeschützte Angebote, deren Inhalt und Berechtigung über die Variable **Design-Umgebung**. Sie können zur Präsentation auf einer Website oder zur Einfügung in eine ausgehende Nachricht ausgewählt werden.
 
-Weitere Informationen [Live-Umgebungen](../../interaction/using/fundamental-principles.md).
+Weitere Informationen [Live-Umgebungen für Angebote](../../interaction/using/fundamental-principles.md).
 +++
 
 +++**Angebotsunterbreitungsregeln**
@@ -662,7 +665,7 @@ Weitere Informationen [Angebotsvorschläge](../../interaction/using/creating-off
 
 *Kontext: Kampagneninteraktion*
 
-Ein Angebotsvorschlag ist das Ergebnis einer Aktion, die darin besteht, einem Kontakt in einer Platzierung ein Angebot zu unterbreiten, z. B. das Banner auf einer Website, eine E-Mail oder SMS-Inhalt. Dieses Ergebnis wird in der Tabelle der Angebotsvorschläge gespeichert, die das Angebot, den Empfänger und den Zeitstempel definiert und einen Datensatz mit allen Angeboten enthält, die ein Empfänger erhalten hat.
+Eine Angebotsdarstellung besteht aus Informationen, die vom Kanal zur Anzeige des Angebots verwendet werden. Die Angebotsdarstellung kann ausgehend von der Rendering-Funktion der Platzierung erstellt werden, auf der das Angebot dargestellt wird, oder direkt in die Benutzeroberfläche eingegeben werden (z. B. im HTML-Block). Ein Angebot kann durch eine Platzierung dargestellt werden.
 
 Weitere Informationen [Interaction](../../interaction/using/interaction-and-offer-management.md).
 +++
@@ -682,7 +685,7 @@ Weitere Informationen [Angebotssimulation](../../interaction/using/about-offers-
 
 Eine Platzierung ist ein Ordner, der den Ort definiert, an dem das Angebot angezeigt wird. Durch die Definition einer Platzierung können Sie den verwendeten Kanal festlegen, den Inhalt des Angebots erstellen und die vorgeschlagenen Angebote angeben. Die Platzierung bildet die Schnittstelle zwischen Kanal und Angebotsmodul.
 
-Weitere Informationen [Angebotssimulation](../../interaction/using/creating-offer-spaces.md).
+Weitere Informationen [Platzierung](../../interaction/using/creating-offer-spaces.md).
 +++
 
 +++**Angebotsthemen**
@@ -747,7 +750,7 @@ In der Workflow-Palette werden die verfügbaren Aktivitäten angezeigt, die eine
 Weitere Informationen [Palette](../../workflow/using/building-a-workflow.md#adding-and-linking-activities).
 +++
 
-+++**Leistungsüberwachung**
++++**Überwachen der Leistung**
 
 Informationen zur Leistungsüberwachung werden auf der Registerkarte Überwachung angezeigt. Es werden Metriken für das zugrunde liegende System angezeigt, z. B. Speicher- und CPU-Auslastung, SMTP-Serverstatistiken, Serverprozesse und andere relevante Informationen.
 
@@ -934,7 +937,7 @@ Weitere Informationen [Zielgruppendaten](../../workflow/using/data-life-cycle.md
 
 Zielgruppen-Mapping ist die Zuordnung von Versandkanälen zu einem bestimmten Datentyp. Zielgruppen-Mappings definieren, wie verschiedene Versandkanäle mit den Datenfeldern eines Schemas verknüpft werden. Sie definiert, wie Campaign mit einem bestimmten Feld oder Ausdruck an diesen Datentyp sendet.
 
-Weitere Informationen [Zielzuordnung](../../delivery/using/selecting-a-target-mapping.md).
+Weitere Informationen [Zielgruppen-Mapping](../../delivery/using/selecting-a-target-mapping.md).
 +++
 
 +++**Zielgruppenaktivitäten**
