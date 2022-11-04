@@ -4,8 +4,8 @@ title: Best Practices für das Reporting
 description: Best Practices für Kampagnenberichte
 feature: Reporting
 exl-id: 0c7f00f3-b16d-41c5-a7b1-f5a59201bf8c
-source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
-workflow-type: ht
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+workflow-type: tm+mt
 source-wordcount: '841'
 ht-degree: 100%
 
@@ -29,13 +29,13 @@ Zur Optimierung von Erstellung, Verwendung und Beständigkeit eines Berichts mü
 
    Sie können zum Beispiel:
 
-   * Daten der Datenbank durchsuchen und Kennzahlen definieren. Weiterführende Informationen finden Sie [in diesem Abschnitt](../../reporting/using/about-cubes.md)
+   * Daten der Datenbank durchsuchen und Kennzahlen definieren. Weiterführende Informationen finden Sie [in diesem Abschnitt](../../reporting/using/ac-cubes.md)
    * Indikatoren einem vorhandenen Bericht hinzufügen. Weiterführende Informationen finden Sie [in diesem Abschnitt](../../reporting/using/about-reports-creation-in-campaign.md)
    * die Daten in der Datenbank anzeigen. Weiterführende Informationen finden Sie [in diesem Abschnitt](../../reporting/using/about-descriptive-analysis.md)
    * Einen neuen Versandbericht erstellen. Weiterführende Informationen finden Sie [in diesem Abschnitt](../../reporting/using/about-reports-creation-in-campaign.md)),
    * Daten aus der Adobe-Campaign-Datenbank exportieren (mithilfe eines Workflows; siehe [diesen Abschnitt](../../workflow/using/about-workflows.md))
    * Eine Pivot-Tabelle erstellen. Weiterführende Informationen finden Sie [in diesem Abschnitt](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)
-   * Aggregierte Daten untersuchen. Weiterführende Informationen finden Sie [in diesem Abschnitt](../../reporting/using/about-cubes.md)
+   * Aggregierte Daten untersuchen. Weiterführende Informationen finden Sie [in diesem Abschnitt](../../reporting/using/ac-cubes.md)
    * Einen Assistenten verwenden, um Daten zu analysieren. Weiterführende Informationen finden Sie [in diesem Abschnitt](../../reporting/using/about-descriptive-analysis.md)
    * Große Datenmengen analysieren. Weiterführende Informationen finden Sie [in diesem Abschnitt](../../reporting/using/about-reports-creation-in-campaign.md)
 

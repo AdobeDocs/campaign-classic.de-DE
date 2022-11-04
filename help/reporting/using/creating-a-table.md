@@ -4,8 +4,8 @@ title: Erstellen einer Tabelle
 description: Erstellen einer Tabelle
 feature: Reporting
 exl-id: 05f76bdf-6dcd-4360-9e72-0ba6a4dd0d5e
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
-workflow-type: ht
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+workflow-type: tm+mt
 source-wordcount: '2643'
 ht-degree: 100%
 
@@ -464,4 +464,4 @@ Dieser Tabellentyp ermöglicht die Anzeige von Statistiken über die Datenbank.
 
 Die Konfiguration derartiger Berichte entspricht der im Assistenten zur deskriptiven Analyse verwendeten. Lesen Sie hierzu [diese Seite](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-quantitative-distribution-template).
 
-Die Erstellung einer Pivot-Tabelle wird in [diesem Abschnitt](../../reporting/using/using-cubes-to-explore-data.md) beschrieben.
+Die Erstellung einer Pivot-Tabelle wird in [diesem Abschnitt](../../reporting/using/ac-cubes.md) beschrieben.

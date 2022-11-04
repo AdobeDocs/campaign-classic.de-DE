@@ -4,7 +4,7 @@ title: Über Reporting-Tools in Adobe Campaign
 description: Analysieren Sie den Erfolg Ihrer Kampagnen in integrierten oder benutzerdefinierten Berichten.
 feature: Reporting
 exl-id: 1ef30004-e1b0-4dde-8104-0ee9e8aa9d8b
-source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 100%
@@ -39,7 +39,7 @@ Adobe Campaign bietet verschiedene Reporting-Tools:
 
 1. **Analyseberichte**: Explorative Datenanalyse unter Verwendung von Marketing Analytics.
 
-   Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../reporting/using/about-cubes.md).
+   Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../reporting/using/ac-cubes.md).
 
 >[!CAUTION]
 >

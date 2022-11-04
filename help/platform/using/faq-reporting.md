@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: b29340a0-954d-41e4-b0a3-9d356e4dc753
-source-git-commit: cfba72840f7a0d335516d38be24363865d83d18d
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 100%
@@ -43,7 +43,7 @@ Dies ermöglicht es, die Kapazitäten zur Datenexploration und -analyse optimal 
 
 Nach ihrer Erstellung und Konfiguration werden die Cubes in den Abfrage-Aktivitäten der Berichte und Webanwendungen genutzt. Sie können außerdem in Pivot-Tabellen verwendet und verändert werden.
 
-Erfahren Sie, wie Sie Ihre Daten [mit Cubes analysieren](../../reporting/using/using-cubes-to-explore-data.md) können.
+Erfahren Sie, wie Sie Ihre Daten [mit Cubes analysieren](../../reporting/using/ac-cubes.md) können.
 
 ## Kann ich einen Bericht aus Antworten auf eine Online-Umfrage erstellen? {#can-i-create-a-report-from-answers-to-an-online-survey-}
 

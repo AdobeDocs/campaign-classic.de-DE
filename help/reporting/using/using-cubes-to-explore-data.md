@@ -3,9 +3,11 @@ product: campaign
 title: Verwenden von Cubes zur Datenanalyse
 description: Verwenden von Cubes zur Datenanalyse
 feature: Reporting
+hide: true
+hidefromtoc: true
 exl-id: 32696bbf-1415-4214-837f-5437fdb8b4d4
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
-workflow-type: ht
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+workflow-type: tm+mt
 source-wordcount: '991'
 ht-degree: 100%
 
@@ -23,7 +25,7 @@ Marketing Analytics ermöglicht es, auf vereinfachte Weise Berichte zu erstellen
 
 >[!NOTE]
 >
->Marketing Analytics ist erforderlich, um Cubes zu erstellen oder zu ändern. Weitere Informationen finden Sie unter [Über Cubes](../../reporting/using/about-cubes.md).
+>Marketing Analytics ist erforderlich, um Cubes zu erstellen oder zu ändern. Weitere Informationen finden Sie unter [Über Cubes](../../reporting/using/ac-cubes.md).
 
 ## Erkunden der Daten in einem Bericht {#exploring-the-data-in-a-report}
 

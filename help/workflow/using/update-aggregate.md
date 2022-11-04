@@ -4,9 +4,9 @@ title: Aggregat-Update
 description: Erfahren Sie mehr über die Workflow-Aktivität "Aggregat-Update".
 feature: Workflows
 exl-id: d2b26af0-30a1-4852-acd5-996795f198a1
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
-workflow-type: ht
-source-wordcount: '101'
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+workflow-type: tm+mt
+source-wordcount: '127'
 ht-degree: 100%
 
 ---
@@ -15,9 +15,14 @@ ht-degree: 100%
 
 ![](../../assets/v7-only.svg)
 
-Aggregate dienen Berichtszwecken und werden auf Cube-Niveau definiert. Bei der Konfiguration von Aggregaten steht ein **[!UICONTROL Workflow]**-Tab zur Verfügung.
+Aggregate dienen Berichtszwecken und werden auf Cube-Niveau definiert. Bei der Konfiguration von Aggregaten steht die Registerkarte **[!UICONTROL Workflow]** zur Verfügung.
 
-Detaillierte Erläuterungen zu Cubes und der Verwendung von Aggregaten in Adobe Campaign finden Sie im entsprechenden [Abschnitt](../../reporting/using/concepts-and-methodology.md#calculating-and-using-aggregates).
+Diese Vorgehensweise empfiehlt sich insbesondere bei der Verarbeitung von großen Datenvolumen. Aggregate werden automatisch entsprechend den in der dedizierten Workflow-Aktivität definierten Parametern aktualisiert, damit neu abgerufene Daten bei der Kennzahlenberechnung berücksichtigt werden können.
+
+Aggregate werden im entsprechenden Tab des Cubes definiert.
+
+![](assets/s_advuser_cube_agregate_01.png)
+
 
 In der **[!UICONTROL Aggregat-Update]**-Aktivität besteht die Wahl zwischen einer vollständigen oder teilweisen Aktualisierung.
 

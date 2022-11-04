@@ -3,9 +3,11 @@ product: campaign
 title: Best Practices für Cubes
 description: Best Practices für Cubes
 feature: Reporting
+hide: true
+hidefromtoc: true
 exl-id: 5f22fa2c-b648-4126-9a24-1798adfa8f34
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
-workflow-type: ht
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+workflow-type: tm+mt
 source-wordcount: '1567'
 ht-degree: 100%
 
@@ -127,8 +129,6 @@ Cubes bieten die Möglichkeit, Daten vor der eigentlichen Verwendung zu aggregie
 Diese Vorgehensweise empfiehlt sich insbesondere bei der Verarbeitung von großen Datenvolumen. Aggregate werden automatisch entsprechend den in der dedizierten Workflow-Aktivität definierten Parametern aktualisiert, damit neu abgerufene Daten bei der Kennzahlenberechnung berücksichtigt werden können.
 
 Aggregate werden im entsprechenden Tab des Cubes definiert.
-
-![](assets/s_advuser_cube_agregate_01.png)
 
 >[!NOTE]
 >

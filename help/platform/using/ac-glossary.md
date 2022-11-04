@@ -4,7 +4,7 @@ title: Glossar für Adobe Campaign
 description: Glossar für Adobe Campaign
 role: User, Data Architect
 level: Beginner
-source-git-commit: 3a540b59640d4cf128417f751d0076fd97310768
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
 workflow-type: tm+mt
 source-wordcount: '6041'
 ht-degree: 12%
@@ -154,7 +154,7 @@ Weitere Informationen [Control Panel](https://experienceleague.adobe.com/docs/co
 
 Cube ist ein intuitives Adobe Campaign-Tool zur Datenexploration, mit dem Benutzer dynamische Berichte erstellen und freigeben können.
 
-Weitere Informationen [Cubes](../../reporting/using/about-cubes.md).
+Weitere Informationen [Cubes](../../reporting/using/ac-cubes.md).
 +++
 
 +++**Benutzerdefinierte Ressourcen**

@@ -1,11 +1,11 @@
 ---
 product: campaign
-title: '"Anwendungsbeispiel: Bericht zu Antworten auf eine Online-Umfrage erstellen"'
-description: '"Anwendungsbeispiel: Bericht zu Antworten auf eine Online-Umfrage erstellen"'
+title: "Anwendungsbeispiel: Bericht zu Antworten auf eine Online-Umfrage erstellen"
+description: "Anwendungsbeispiel: Bericht zu Antworten auf eine Online-Umfrage erstellen"
 feature: Surveys
 exl-id: 6be12518-86d1-4a13-bbc2-b2ec5141b505
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
-workflow-type: ht
+source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 100%
 
@@ -65,7 +65,7 @@ Gehen Sie wie folgt vor, um die Antworten der Umfrage abzurufen:
 
 ## Schritt 2: Erstellung des Cubes und seiner Kennzahlen {#step-2---creating-the-cube--its-measures-and-its-indicators}
 
-Erstellen Sie anschließend den Cube und konfigurieren Sie seine Kennzahlen: Sie werden bei der Erstellung der Indikatoren verwendet. Die Indikatoren werden später im Bericht angezeigt. Weitere Informationen zur Erstellung und Konfiguration von Cubes finden Sie unter [Über Cubes](../../reporting/using/about-cubes.md).
+Erstellen Sie anschließend den Cube und konfigurieren Sie seine Kennzahlen: Sie werden bei der Erstellung der Indikatoren verwendet. Die Indikatoren werden später im Bericht angezeigt. Weitere Informationen zur Erstellung und Konfiguration von Cubes finden Sie unter [Über Cubes](../../reporting/using/ac-cubes.md).
 
 Im vorliegenden Beispiel basiert der Cube auf den Daten der Liste, die im zuvor erstellten Workflow angereichert wird.
 
