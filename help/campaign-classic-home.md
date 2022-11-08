@@ -3,10 +3,10 @@ keywords: Campaign Standard;Startseite;beliebte Themen
 product: campaign
 title: Produktdokumentation zu Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 7f24c8be599d6dece41de848d64feb8079b10ff3
-workflow-type: ht
-source-wordcount: '235'
-ht-degree: 100%
+source-git-commit: 43d9eac2ed161465ca00ee4f511e4c020b4c44a2
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -19,8 +19,6 @@ ht-degree: 100%
 * **[Release-Programm 2022](technotes/using/dc-migration.md)**<br/> Upgrade Ihrer Umgebung und Verbesserung von Sicherheit, Infrastruktur und Leistung
 
 * **[Die Juli-Version ist live!](rn/using/latest-release.md)**<br/> In den Versionshinweisen finden Sie neue Funktionen, Verbesserungen und Fehlerbehebungen.
-
-* **[Häufig gestellte Fragen zum Datenschutz bei Apple Mail](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=de)** und **[Technote](technotes/using/apple-mail-app-privacy-protection.md)**<br/> Erste Anleitungen als Reaktion auf die Apple-Ankündigung zu iOS 15
 
 * **[Entfernen falscher Hardbounces](delivery/using/update-bounce-qualification.md)**<br/> Erfahren Sie, wie Sie falsche Hardbounces nach einem Apple-Ausfall aktualisieren können
 

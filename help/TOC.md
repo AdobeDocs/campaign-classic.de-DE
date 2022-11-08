@@ -6,10 +6,10 @@ title: Campaign Classic v7 – Handbuch
 user-guide-description: Mit Adobe Campaign können Sie umfangreiche Kundendaten verwenden, um dynamische Kampagnen, die Kunden tatsächlich wünschen, zu erstellen, zu koordinieren und bereitzustellen. Über E-Mail, mobile Kanäle, Offline-Kanäle und mehr.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+source-git-commit: e91024df3ee2ed761035806f62ddc679c52039d9
 workflow-type: tm+mt
-source-wordcount: '2588'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -315,11 +315,6 @@ ht-degree: 100%
       + [Zugriff auf den Bericht konfigurieren](reporting/using/configuring-access-to-the-report.md)
       + [Mit Berichten arbeiten](reporting/using/actions-on-reports.md)
    + [Berichte mit Cubes erstellen](reporting/using/ac-cubes.md)
-   + Berichte mit Cubes erstellen {#designing-reports-with-cubes}
-      + [Erste Schritte mit Cubes](reporting/using/about-cubes.md)
-      + [Indikatoren erstellen](reporting/using/creating-indicators.md)
-      + [Cubes zur Datenanalyse verwenden](reporting/using/using-cubes-to-explore-data.md)
-      + [Konzepte und Methoden](reporting/using/concepts-and-methodology.md)
 + Web-Inhalte gestalten {#designing-content}
    + Web-Anwendungen {#web-applications}
       + [Erste Schritte mit Web-Anwendungen](web/using/about-web-applications.md)

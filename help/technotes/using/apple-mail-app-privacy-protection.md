@@ -3,10 +3,10 @@ product: campaign
 title: Datenschutz bei E-Mails in der Apple-E-Mail-App
 description: Erfahren Sie, wie sich die Apple-Funktion zum Schutz der Privatsphäre bei E-Mails auf Ihre Kampagnen auswirken kann.
 exl-id: e044b35a-b49f-408a-900d-2afe8ff10212
-source-git-commit: 1a9e0f8bf374e10af938d15dcebe943819ae327b
+source-git-commit: 43d9eac2ed161465ca00ee4f511e4c020b4c44a2
 workflow-type: tm+mt
-source-wordcount: '2141'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 ## Wie wirkt sich dies auf meine Kampagnen aus?
 
-Adobe Campaign bietet die Möglichkeit, Tracking-Pixel zur Verfolgung von E-Mail-Öffnungen zu verwenden. Sie können diese Funktion nicht nur für Targeting und Kampagnen, sondern auch für Metriken verwenden. Sie können beispielsweise Öffnungsraten für E-Mails verwenden, um die Effektivität der Kampagne und die Benutzerinteraktion zu messen. Kurz gesagt, die Segmentierung, das Targeting und die Metriken können sich auf Ihre Kampagnen auswirken. [Weitere Informationen](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html#in-addition-to-measuring-opens%2C-what-else-is-impacted%3F){target=&quot;_blank&quot;}.
+Adobe Campaign bietet die Möglichkeit, Tracking-Pixel zur Verfolgung von E-Mail-Öffnungen zu verwenden. Sie können diese Funktion nicht nur für Targeting und Kampagnen, sondern auch für Metriken verwenden. Sie können beispielsweise Öffnungsraten für E-Mails verwenden, um die Effektivität der Kampagne und die Benutzerinteraktion zu messen. Kurz gesagt, die Segmentierung, das Targeting und die Metriken können sich auf Ihre Kampagnen auswirken.
 
 ## Welche Maßnahmen sollte ich ergreifen?
 
@@ -61,7 +61,7 @@ Um Einblicke aus Adobe Campaign-Daten zu gewinnen, können Sie vordefinierte Ber
 
 * **[!UICONTROL Betriebssysteme]** Bericht
 
-   Verwenden Sie diesen Bericht, um den Besucheranteil nach Betriebssystem und Version zu ermitteln. [Mehr dazu](../../reporting/using/global-reports.md#operating-systems)
+   Verwenden Sie diesen Bericht, um den Besucheranteil nach Betriebssystem und Version zu ermitteln. [Weitere Informationen](../../reporting/using/global-reports.md#operating-systems)
 
    Sie können die Verteilung der Besucher nach Betriebssystem in Bezug auf die Gesamt-Besucherzahl anzeigen.
 
@@ -73,7 +73,7 @@ Um Einblicke aus Adobe Campaign-Daten zu gewinnen, können Sie vordefinierte Ber
 
 * **[!UICONTROL Öffnungsverteilung]** Bericht
 
-   Verwenden Sie diesen Bericht, um den Anteil der E-Mail-Öffnungen nach Betriebssystem zu ermitteln. [Mehr dazu](../../reporting/using/global-reports.md#breakdown-of-opens)
+   Verwenden Sie diesen Bericht, um den Anteil der E-Mail-Öffnungen nach Betriebssystem zu ermitteln. [Weitere Informationen](../../reporting/using/global-reports.md#breakdown-of-opens)
 
    ![](../../reporting/using/assets/dlv_useragent_report.png)
 
@@ -326,7 +326,7 @@ Es wird dringend empfohlen, diese Daten aus mehreren Gründen zu bewahren:
 
 * Diese Daten werden von Adobe Campaign für einen begrenzten Zeitraum aufbewahrt. Der Aufbewahrungszeitraum variiert je nach Konfiguration Ihrer Instanz.
 
-   Überprüfen Sie die Einrichtung Ihrer Instanz. [Mehr dazu](../../platform/using/privacy-management.md#data-retention)
+   Überprüfen Sie die Einrichtung Ihrer Instanz. [Weitere Informationen](../../platform/using/privacy-management.md#data-retention)
 
 * Zusätzlich zu den letzten Änderungen in Apple können Sie Tracking-Daten verwenden, um einen immensen Wert hinzuzufügen und so die Interaktion Ihrer Zielgruppe zu fördern.
 * Apple kann weitere Änderungen an ihrer nativen Mail-App und ihrer Funktion zum Schutz der Privatsphäre bei E-Mails vornehmen.
@@ -335,11 +335,11 @@ Aus all diesen Gründen empfehlen wir dringend, diese Daten so bald wie möglich
 
 #### Wie kann ich Tracking-Daten beibehalten?
 
-Um Tracking-Daten beizubehalten, müssen Sie sie aus Adobe Campaign in Ihr Informationssystem exportieren. [Mehr dazu](../../platform/using/get-started-data-import-export.md)
+Um Tracking-Daten beizubehalten, müssen Sie sie aus Adobe Campaign in Ihr Informationssystem exportieren. [Weitere Informationen](../../platform/using/get-started-data-import-export.md)
 
 >[!IMPORTANT]
 >
->Im folgenden Beispiel wird der vordefinierte `nms:Recipient` schema, das das standardmäßige Profilschema ist. Wenn Sie zusätzliche benutzerdefinierte Zielgruppen-Mappings verwenden, die an benutzerdefinierte Profile angehängt sind, empfehlen wir, diese Exportstrategie auf alle benutzerdefinierten Protokolltabellen zu erweitern. [Mehr dazu](../../configuration/using/target-mapping.md)
+>Im folgenden Beispiel wird der vordefinierte `nms:Recipient` schema, das das standardmäßige Profilschema ist. Wenn Sie zusätzliche benutzerdefinierte Zielgruppen-Mappings verwenden, die an benutzerdefinierte Profile angehängt sind, empfehlen wir, diese Exportstrategie auf alle benutzerdefinierten Protokolltabellen zu erweitern. [Weitere Informationen](../../configuration/using/target-mapping.md)
 
 ##### Funktionsprinzip
 
@@ -450,7 +450,3 @@ Diese Beispiele zeigen, wie Sie mithilfe von Workflows Datensätze nach iOS-Ger�
    Dieser Workflow ist nützlich, wenn Sie Empfänger in einer anderen Tabelle als der nativen Empfängertabelle speichern.
 
    ![](assets/export-tracking-data-wkf-2.png)
-
-## Nützliche Links
-
-[Häufig gestellte Fragen zum Apple Mail-Datenschutz](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html){target=&quot;_blank&quot;}
