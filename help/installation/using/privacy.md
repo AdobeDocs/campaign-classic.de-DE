@@ -4,10 +4,10 @@ title: Datenschutz
 description: Erfahren Sie mehr über Best Practices bezüglich des Datenschutzes.
 feature: URL Personalization, Privacy
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: fcbaacccaf3f1771570e42e7a83847ed3fd998ef
 workflow-type: tm+mt
 source-wordcount: '902'
-ht-degree: 45%
+ht-degree: 44%
 
 ---
 
@@ -77,7 +77,7 @@ Um in früheren Builds generierte URLs zu deaktivieren, führen Sie die folgende
 
 Um die URL-Signatur zu aktivieren, führen Sie die folgenden Schritte auf allen Campaign-Servern gleichzeitig aus:
 
-1. Ändern Sie in der Server-Konfigurationsdatei (serverConf.xml) den Eintrag für **signEmailLinks** in **false**.
+1. Ändern Sie in der Server-Konfigurationsdatei (serverConf.xml) **signEmailLinks** nach **true**.
 1. Starten Sie den **nlserver**-Service neu.
 1. Starten Sie den Webserver (apache2 unter Debian, httpd unter CentOS/RedHat, IIS unter Windows) auf dem Trackingserver neu.
 
