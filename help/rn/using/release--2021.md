@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 0cd6bf20-da72-4cf0-9f5d-d4e8acdd324d
 source-git-commit: a06623611ff3f8d9dfb5d498e01686e12a924923
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2547'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ _7. September 2021_
 * Bereits veraltete Microsoft CRM-Connectoren (Office 365- und On-Premise-Implementierungen) wurden aus der Benutzeroberfläche entfernt. [Mehr dazu](../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft)
 * Nach der Migration zu Tomcat 8 wurde das IIS-Setup-Skript aktualisiert, um Probleme mit der IIS-Integration zu beheben. (NEO-31019)
 * In den Daten- und Schema-Tabs des Fensters **Population ansehen** der Workflow-Transitionen wurde die Identifizierung der Datenquelle verbessert.
-* Fehlende Datenbankindizes wurden den folgenden Schemas hinzugefügt, um Probleme bei der Datenbankaktualisierung zu vermeiden: xtk:rights, nms:dlvExclusion, nms:seedMember, nms:trackingUrl
+* Fehlende Datenbankindizes wurden den folgenden Schemata hinzugefügt, um Probleme bei der Datenbankaktualisierung zu vermeiden: xtk:rights, nms:dlvExclusion, nms:seedMember, nms:trackingUrl
 
 **Korrekturen**
 
@@ -131,7 +131,7 @@ _5. Juni 2021_
 <table> 
 <thead>
 <tr> 
-<th> <strong>vertica analytics-FDA-Connector</strong><br/> </th> 
+<th> <strong>Vertica Analytics FDA-Connector</strong><br/> </th> 
 </tr> 
 </thead> 
 <tbody> 
@@ -170,7 +170,7 @@ _5. Juni 2021_
 
 Die folgenden Systeme werden jetzt von Campaign unterstützt:
 * Google BigQuery FDA-Connector
-* vertica analytics-FDA-Connector
+* Vertica Analytics FDA-Connector
 * PostgreSQL 13
 
 Weiterführende Informationen finden Sie in der [Campaign-Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md).
