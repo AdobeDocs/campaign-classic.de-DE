@@ -1,19 +1,19 @@
 ---
 product: campaign
-title: Glossar für die Integration von Campaign
-description: Glossar für die Integration von Campaign
+title: Glossar für Campaign
+description: Glossar für Campaign
 audience: interaction
 content-type: reference
 topic-tags: interaction-overview
 exl-id: 9e199b7c-9307-4797-bf86-7940388555bc
 source-git-commit: d42389add06db74c54cb3a21813e9a832a2a288a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1122'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# Glossar für die Integration von Campaign{#i-glossary}
+# Glossar für Campaign{#i-glossary}
 
 ![](../../assets/v7-only.svg)
 
