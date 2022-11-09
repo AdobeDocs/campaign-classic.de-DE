@@ -5,9 +5,9 @@ description: Erfahren Sie, wie Sie E-Mail-Renderings erfassen und in einem spezi
 feature: Inbox Rendering, Monitoring, Email Rendering
 exl-id: a3294e70-ac96-4e51-865f-b969624528ce
 source-git-commit: 048189f49623cf00f4c3f1f34ff4b795d80391ef
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '860'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Bevor Sie die Schaltfläche **Senden** betätigen, sollten Sie sicherstellen, da
 Zu diesem Zweck nutzt Adobe Campaign die webbasierte E-Mail-Test-Software [Litmus](https://litmus.com/email-testing), mit der die Darstellung der Seiten sichtbar und in einem Bericht verfügbar gemacht werden kann. Dadurch haben Sie die Möglichkeit, sich die gesendete Nachricht als Vorschau in den unterschiedlichen Umgebungen der Empfänger anzusehen und die Kompatibilität mit den wichtigsten Desktops und Anwendungen zu überprüfen.
 
 >[!CAUTION]
->Inbox Rendering ist nicht kompatibel mit [Wiederkehrender Versand](communication-channels.md#recurring-delivery).
+>Inbox Rendering ist nicht kompatibel mit dem [wiederkehrenden Versand](communication-channels.md#recurring-delivery).
 
 Litmus verfügt über zahlreiche Funktionen zur E-Mail-Validierung und Vorschau. Autoren von E-Mail-Inhalten können Nachrichten in der Vorschau in über 70 E-Mail-Rendering-Systemen betrachten, wie z. B. im Gmail-Posteingang oder im Apple Mail Client.
 
