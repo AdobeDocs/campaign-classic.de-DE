@@ -4,8 +4,8 @@ title: Umfrage entwerfen
 description: Wichtige Schritte zum Entwerfen einer Umfrage
 feature: Surveys
 exl-id: 8d83dfd5-70ec-4656-965b-f6b5e6f9eec1
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
-workflow-type: ht
+source-git-commit: 1f80c9967f4859f26dd2890d657f95ada6cf2087
+workflow-type: tm+mt
 source-wordcount: '820'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Umfrage entwerfen{#building-a-survey}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 ## Neue Umfrage erstellen {#creating-a-new-survey}
 

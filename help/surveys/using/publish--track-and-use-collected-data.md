@@ -4,16 +4,16 @@ title: Erfasste Daten veröffentlichen, tracken und verwenden
 description: Erfahren Sie, wie Sie in einer Umfrage erfasste Daten veröffentlichen, tracken und verwenden.
 feature: Surveys
 exl-id: 3cf3c486-6640-4d67-95cf-50d5767deb60
-source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
-workflow-type: ht
-source-wordcount: '877'
-ht-degree: 100%
+source-git-commit: 1f80c9967f4859f26dd2890d657f95ada6cf2087
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Erfasste Daten veröffentlichen, tracken und verwenden{#publish-track-and-use-collected-data}
 
-![](../../assets/v7-only.svg)
+![](../../assets/common.svg)
 
 Nachdem das Formular erstellt, konfiguriert und veröffentlicht wurde, können Sie den Link mit Ihrer Zielgruppe teilen und die Antworten tracken.
 
@@ -133,7 +133,7 @@ Starten Sie den Zielgruppen-Workflow. Bei der Abfrage werden acht Empfänger abg
 
 ![](assets/s_ncs_admin_survey_responses_wf_box_5.png)
 
-Um sie anzuzeigen, rechtsklicken Sie auf die ausgehende Transition der Kollektionsbox.
+Um sie anzuzeigen, rechtsklicken Sie auf die ausgehende Transition der Sammlungsbox.
 
 ![](assets/s_ncs_admin_survey_responses_wf_box_6.png)
 
