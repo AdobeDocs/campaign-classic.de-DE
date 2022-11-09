@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: general-operation
 exl-id: b13ecfc9-1723-42b2-ab30-d5637cc3d0dd
 source-git-commit: c929557ee9f5467f9c3b8eb1ed25fae5399820ba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '338'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Ein Angebot wird nur für die bei der Validierung ausgewählten Platzierungen fr
 
 ## Interaktionstypen und Kontaktmodi {#interaction-types-and-contact-methods}
 
-Es gibt zwei mögliche Arten von Interaktionen: eingehende Interaktionen (durch einen Kontakt initiiert) und ausgehende Interaktionen (durch den Angebotsdesigner initiiert).
+Es gibt zwei grundsätzliche Interaktionstypen: eingehende Interaktionen, die von einem Kontakt ausgelöst werden, und ausgehende Interaktionen, die durch den Angebotsersteller initiiert werden.
 
 Beide Interaktionstypen können entweder im Einzelmodus (das Angebot wird für einen einzelnen Kontakt berechnet) oder im Batch-Modus (das Angebot wird für mehrere Kontakte gleichzeitig berechnet) verarbeitet werden. In der Regel werden eingehende Interaktionen im Einzelmodus und ausgehende Interaktionen im Batch-Modus verarbeitet. Ausnahmen von dieser Regel bilden z. B. Transaktionsnachrichten, bei denen die ausgehende Interaktion im Einzelmodus geschieht. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../message-center/using/about-transactional-messaging.md).
 
