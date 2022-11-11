@@ -8,8 +8,8 @@ sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: e91024df3ee2ed761035806f62ddc679c52039d9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2570'
+ht-degree: 100%
 
 ---
 
@@ -776,7 +776,7 @@ ht-degree: 0%
       + [Über die Schemabearbeitung](configuration/using/about-schema-edition.md)
       + [Datenschemata](configuration/using/data-schemas.md)
       + [Schema einer vorhandenen Tabelle](configuration/using/schema-of-an-existing-table.md)
-      + [Erweitern eines Schemas](configuration/using/extending-a-schema.md)
+      + [Erweitern eines Schemata](configuration/using/extending-a-schema.md)
       + [Filtern von Schemata](configuration/using/filtering-schemas.md)
       + [Einschränken der PII-Ansicht](configuration/using/restricting-pii-view.md)
       + [Datenbankstruktur aktualisieren](configuration/using/updating-the-database-structure.md)
