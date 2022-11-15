@@ -6,9 +6,9 @@ title: Campaign Classic v7 – Handbuch
 user-guide-description: Mit Adobe Campaign können Sie umfangreiche Kundendaten verwenden, um dynamische Kampagnen, die Kunden tatsächlich wünschen, zu erstellen, zu koordinieren und bereitzustellen. Über E-Mail, mobile Kanäle, Offline-Kanäle und mehr.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: e91024df3ee2ed761035806f62ddc679c52039d9
+source-git-commit: 83fe7eb4f857306ac1c8bb3a93a9393b76ae1e3c
 workflow-type: tm+mt
-source-wordcount: '2570'
+source-wordcount: '2557'
 ht-degree: 100%
 
 ---
@@ -841,7 +841,6 @@ ht-degree: 100%
       + [Beendigung der Unterstützung für TLS 1.0 und 1.1](technotes/using/eol-tls-support.md)
    + E-Mails und Push-Benachrichtigungen{#technotes-email}
       + [Datenschutz für E-Mails in Apple iOS](technotes/using/apple-mail-app-privacy-protection.md)
-      + [Häufig gestellte Fragen zum Apple Mail-Datenschutz](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=de)
       + [Aktualisieren falscher Hardbounces](delivery/using/update-bounce-qualification.md)
       + [Aktualisierung des iOS-Zertifikats](technotes/using/ios-certificate-update.md)
       + [Aktualisierung von getrackten URLs](technotes/using/tracked-urls.md)
