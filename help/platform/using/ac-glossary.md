@@ -5,9 +5,9 @@ description: Glossar für Adobe Campaign
 role: User, Data Architect
 level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
-source-git-commit: c1be67d32c39d20f7794b6019a6e03c9ec29df94
+source-git-commit: 978da934b483a54509ad806f375d9b2bb0577dac
 workflow-type: tm+mt
-source-wordcount: '6041'
+source-wordcount: '5972'
 ht-degree: 95%
 
 ---
@@ -32,12 +32,14 @@ Die Zugriffsverwaltung ermöglicht es Administratoren bzw. Administratorinnen, B
 Weitere Informationen zur [Zugriffsverwaltung](access-management.md).
 +++
 
-+++**ACS-Connector**
+<!--
++++**ACS Connector**
 
-Der ACS-Connector (Prime-Angebot) ist das Bindeglied zwischen Adobe Campaign v7 und Adobe Campaign Standard. Hierbei handelt es sich um eine integrierte Funktion in Campaign v7, mit der Daten automatisch in Campaign Standard repliziert werden, sodass die Vorzüge beider Anwendungen kombiniert werden können. Campaign v7 verfügt über fortschrittliche Tools zur Verwaltung der primären Marketing-Datenbank. Die Datenreplikation von Campaign v7 ermöglicht es Campaign Standard, die umfangreichen Daten in einer benutzerfreundlichen Umgebung zu nutzen.
+ACS Connector (Prime Offering) bridges Adobe Campaign v7 and Adobe Campaign Standard. It is an integrated feature in Campaign v7 that automatically replicates data to Campaign Standard, uniting the best of both applications. Campaign v7 has advanced tools to manage the primary marketing database. The data replication from Campaign v7 allows Campaign Standard to leverage the rich data in a user-friendly environment. 
 
-Weitere Informationen zum [ACS-Connector](../../integrations/using/acs-connector-principles-and-data-cycle.md).
+Learn more about [ACS Connector](../../integrations/using/acs-connector-principles-and-data-cycle.md).
 +++
+-->
 
 +++**Aktivität**
 

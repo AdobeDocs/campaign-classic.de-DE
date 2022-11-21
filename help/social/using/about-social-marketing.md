@@ -1,15 +1,15 @@
 ---
 product: campaign
 title: Über Social-Media-Marketing
-description: Hier erfahren Sie, wie Sie mit Campaign über Facebook und Twitter mit Ihren Kunden interagieren können
+description: Erfahren Sie, wie Sie mit Campaign über Twitter mit Kunden interagieren können.
 audience: social
 content-type: reference
 topic-tags: introduction
 exl-id: c8fd5f75-9386-42dd-bfb6-8086a86aa324
-source-git-commit: d891a235002d465f3b00fafa375d87d42ebafaa6
-workflow-type: ht
-source-wordcount: '126'
-ht-degree: 100%
+source-git-commit: c4a545ee3cffa16e72a7ba1ca3010fffd43e61c2
+workflow-type: tm+mt
+source-wordcount: '90'
+ht-degree: 6%
 
 ---
 
@@ -17,14 +17,10 @@ ht-degree: 100%
 
 ![](../../assets/v7-only.svg)
 
-Mit der Anwendung **Social Marketing** zur Verwaltung sozialer Netzwerke können Sie über Facebook und Twitter mit Kunden und potenziellen Kunden interagieren.
+Die **Verwaltung sozialer Netzwerke** Die Anwendung Social Marketing, die für die Verwaltung sozialer Netzwerke entwickelt wurde, ermöglicht die Interaktion mit Kunden und Interessenten über Twitter.
 
-**Neue Kontakte gewinnen**
+Wichtige Schritte zur Integration von Campaign und Twitter in [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/ac-tw.html)
 
-Mit Social-Media-Marketing von Adobe Campaign können Sie einfach neue Kontakte über Facebook gewinnen: Kontaktieren Sie die Benutzer und fragen Sie sie, ob sie ihre Profilinformationen freigeben möchten. Wenn sie zustimmen, stellt Adobe Campaign die Daten automatisch wieder her, sodass Sie zielgerichtete Kampagnen durchführen und nach Möglichkeit kanalübergreifende Strategien implementieren können.
+Als On-Premise- oder Hybrid-Kunde muss Ihr externes Twitter-Konto konfiguriert und aktiviert werden. Bei Hybridkonfigurationen wird die **Mid-Sourcing** -Tab muss auch mit einer aktiven Verbindung zur Mid-Sourcing-Plattform eingerichtet werden.
 
->[!IMPORTANT]
->
->Facebook und Twitter nehmen regelmäßige Änderungen an ihren Bildschirmen und Prozessen vor. Dieses Dokument wird entsprechend aktualisiert.
->
->Adobe Campaign fordert Sie auf, die Nutzungsbedingungen von Facebook und Twitter einzuhalten.
+![](assets/tw-external-account.png)

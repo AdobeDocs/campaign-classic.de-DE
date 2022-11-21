@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 45c5ef3315e4208184e9c0ab5f20678646fe2d0b
-workflow-type: ht
-source-wordcount: '1624'
-ht-degree: 100%
+source-git-commit: 0ecf9c69cc4b444feda1e42701a3a27f2b2e7eeb
+workflow-type: tm+mt
+source-wordcount: '1684'
+ht-degree: 97%
 
 ---
 
@@ -41,11 +41,20 @@ Kunden wird empfohlen, die Nutzung der Funktionen in ihrer aktuellen Implementie
  <tbody> 
    <tr>
    <td><strong>Funktion</strong></td>
-   <td><strong>Ersatz</strong></td>
+   <td><strong>Details</strong></td>
   </tr>
 <tr>
- <td>K. A.</td>
- <td>K. A.</td>
+ <td>Social Marketing    mit Facebook</td>
+ <td>Social Marketing mit Facebook wird jetzt nicht mehr unterstützt. Sie können die Twitter-Integration verwenden, um in Social Media zu posten, oder mit Adobe arbeiten, um einen benutzerdefinierten Kanal zu erstellen.
+ <p></p>
+  <p>Geplantes Datum für die Entfernung: Ende 2023</p>
+  </td>
+</tr>
+<tr>
+ <td>ACS Connector</td>
+ <td>ACS Connector (Prime-Angebot) wird jetzt nicht mehr unterstützt. Sie können die Export-/Importfunktionen von Campaign verwenden, um Daten in beide Produkte zu extrahieren und einzufügen.<p></p>
+  <p>Geplantes Datum für die Entfernung: Ende 2023</p>
+  </td>
 </tr>
  </tbody> 
 </table>

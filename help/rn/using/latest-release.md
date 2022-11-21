@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: f94d7e2cddd75d50cb21973a62ec223f2344edf1
+source-git-commit: ca2f50a501c63cc8b2d4de5d9a41b655a6b6d6cf
 workflow-type: tm+mt
-source-wordcount: '2656'
-ht-degree: 77%
+source-wordcount: '2715'
+ht-degree: 75%
 
 ---
 
@@ -27,22 +27,19 @@ _21. November 2022_
 
 * Nach dem Ende der Nutzungsdauer von Microsoft Internet Explorer 11 verwendet die HTML-Rendering-Engine für Dashboards in der Clientkonsole jetzt Edge Chromium. (NEO-20741)
 
-<!--
-**Deprecated features**
-
-* Social Marketing with Facebook is now deprecated. You can still use Twitter integration to post on social media, or work with Adobe to create a custom channel.
-
-* ACS Connector (prime offering) is now deprecated. You can use Campaign export/import capabilities to extract and inject data in both products.
-
-Learn more in the [Deprecated and removed features page](deprecated-features.md).
-
--->
-
 **Verbesserungen**
 
 * Der Google BigQuery-Connector unterstützt jetzt vollständig boolesche Felder. (NEO-49181)
 * Sie können jetzt die Gültigkeitsdauer der IMS-Cookies im `Configuration for the redirection service` -Abschnitt der Datei &quot;serverConf.xml&quot;. Dies gilt für die folgenden Cookies: `uuid230`, `nllastdelid` und `AMCV_` (NEO-42541)
 * Die IP-Adresse kann jetzt in der &quot;/r/test&quot;-Anfrage ausgeblendet werden, indem Sie `showSourceIP` auf false im Umleitungsknoten der Datei serverConf.xml gesetzt. [Mehr dazu](../../installation/using/the-server-configuration-file.md#redirection-redirection)(NEO-46656)
+
+**Eingestellte Funktionen**
+
+* Social Marketing mit Facebook wird jetzt nicht mehr unterstützt. Sie können die Twitter-Integration verwenden, um in Social Media zu posten, oder mit Adobe arbeiten, um einen benutzerdefinierten Kanal zu erstellen.
+
+* ACS Connector (Prime-Angebot) wird jetzt nicht mehr unterstützt. Sie können die Export-/Importfunktionen von Campaign verwenden, um Daten in beide Produkte zu extrahieren und einzufügen.
+
+Weitere Informationen finden Sie auf der Seite [Eingestellte und entfernte Funktionen ](deprecated-features.md).
 
 **Sonstige Änderungen**
 

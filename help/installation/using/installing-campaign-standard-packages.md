@@ -3,10 +3,10 @@ product: campaign
 title: Native Campaign Classic-Packages installieren
 description: Erfahren Sie, wie Sie native Campaign-Pakete installieren.
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+source-git-commit: 978da934b483a54509ad806f375d9b2bb0577dac
 workflow-type: tm+mt
-source-wordcount: '1289'
-ht-degree: 23%
+source-wordcount: '1288'
+ht-degree: 24%
 
 ---
 
@@ -180,7 +180,7 @@ In der folgenden Tabelle sind alle in Campaign integrierten Packages aufgeführt
   </tr> 
   <tr> 
    <td> Zentrales/lokales Marketing (verteiltes Marketing)<br /> </td> 
-   <td> Durchführung von Kooperationskampagnen zwischen Zentralstellen (Hauptsitz, Marketingabteilungen usw.) und lokalen Stellen (Verkaufsstellen, regionale Agenturen usw.). Optional. <a href="../../distributed/using/about-distributed-marketing.md">Weitere Infos</a><br /> </td> 
+   <td> Durchführung von Kooperationskampagnen zwischen Zentralstellen (Hauptsitz, Marketingabteilungen usw.) und lokalen Einheiten (Verkaufsstellen, regionale Agenturen usw.). Optional. <a href="../../distributed/using/about-distributed-marketing.md">Weitere Infos</a><br /> </td> 
    <td> Marketing </td> 
   </tr> 
   <tr> 
@@ -229,8 +229,8 @@ In der folgenden Tabelle sind alle in Campaign integrierten Packages aufgeführt
    <td> Alle </td> 
   </tr> 
   <tr> 
-   <td> ACS Connector<br /> </td> 
-   <td> Bridges Adobe Campaign v7 and Adobe Campaign Standard. Es handelt sich um eine integrierte Funktion in Campaign v7, mit der Daten automatisch an Campaign Standard repliziert werden, sodass die besten beider Anwendungen kombiniert werden können. Optional. <a href="../../integrations/using/acs-connector-principles-and-data-cycle.md">Weitere Infos</a> <br /> </td> 
+   <td> ACS Connector (nicht mehr unterstützt)<br /> </td> 
+   <td> Bridges Adobe Campaign v7 and Adobe Campaign Standard. Hierbei handelt es sich um eine integrierte Funktion in Campaign v7, mit der Daten automatisch in Campaign Standard repliziert werden, sodass die Vorzüge beider Anwendungen kombiniert werden können. Optional.<br /> </td> 
    <td> Marketing </td> 
   </tr> 
  </tbody> 

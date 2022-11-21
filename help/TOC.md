@@ -6,9 +6,9 @@ title: Campaign Classic v7 – Handbuch
 user-guide-description: Mit Adobe Campaign können Sie umfangreiche Kundendaten verwenden, um dynamische Kampagnen, die Kunden tatsächlich wünschen, zu erstellen, zu koordinieren und bereitzustellen. Über E-Mail, mobile Kanäle, Offline-Kanäle und mehr.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 0dd0b6f1aa69a6848a75e6299bd751de0bfddeb9
+source-git-commit: 5792ad762befb97888ad32406d3bcb7f97df3fa7
 workflow-type: tm+mt
-source-wordcount: '2553'
+source-wordcount: '2524'
 ht-degree: 99%
 
 ---
@@ -584,16 +584,6 @@ ht-degree: 99%
    + [Anwendungsbeispiel](message-center/using/transactional-email-with-attachments.md)
 + Mit Social Media integrieren {#integrating-with-social-media}
    + [Über Social Marketing](social/using/about-social-marketing.md)
-   + Konfiguration {#configuration}
-      + [Workflows starten](social/using/starting-workflows.md)
-      + [Facebook-Anwendung erstellen](social/using/creating-a-facebook-application.md)
-      + [Veröffentlichung auf Twitter konfigurieren](social/using/configuring-publishing-on-twitter.md)
-   + Veröffentlichen auf Twitter {#publishing-on-facebook-twitter}
-      + [Erste Schritte mit Twitter](social/using/overview.md)
-      + [Veröffentlichen auf Twitter](social/using/publishing-on-twitter.md)
-   + Akquirieren von Facebook-Kontakten {#annexes}
-      + [Beispiele für Facebook-Anwendungen](social/using/examples-of-facebook-apps.md)
-      + [Tracking](social/using/tracking.md)
 + Handbuch zur Installation und Konfiguration {#installing-campaign-classic}
    + Architektonische Grundsätze {#architecture-and-hosting-models}
       + [Allgemeine Architektur](installation/using/general-architecture.md)

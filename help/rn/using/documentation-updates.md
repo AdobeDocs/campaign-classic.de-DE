@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 7f41e3209450421262acf8a753bddd3eae1fe35f
+source-git-commit: 5792ad762befb97888ad32406d3bcb7f97df3fa7
 workflow-type: tm+mt
-source-wordcount: '5027'
+source-wordcount: '5017'
 ht-degree: 98%
 
 ---
@@ -57,7 +57,7 @@ Die Seite &quot;Erste Schritte mit Upgrades&quot; wurde aktualisiert, um die Upg
 
 Der neue Campaign-Build v7.2.2 ist jetzt verfügbar. [Mehr dazu](../../rn/using/latest-release.md)
 
-Es wurden Informationen zur Fehlerbehebung im Zusammenhang mit dem ACS-Connector hinzugefügt. [Mehr dazu](../../integrations/using/troubleshooting-the-acs-connector.md)
+<!--Added troubleshooting information related to the ACS connector. [Read more](../../integrations/using/troubleshooting-the-acs-connector.md)-->
 
 Legacy-PostgreSQL-Versionen, die das Ende des Lebenszyklus erreicht haben, wurden zur Seite [Eingestellte und entfernte Funktionen](../../rn/using/deprecated-features.md#dbe-eol) hinzugefügt.
 
