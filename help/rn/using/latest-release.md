@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 52e9925932e9b802a92f317b0950a1e933499b56
+source-git-commit: f94d7e2cddd75d50cb21973a62ec223f2344edf1
 workflow-type: tm+mt
-source-wordcount: '2010'
-ht-degree: 100%
+source-wordcount: '2656'
+ht-degree: 77%
 
 ---
 
@@ -19,7 +19,67 @@ ht-degree: 100%
 
 Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der **aktuellen Version Campaign Classic v7** aufgelistet. Jeder neue Build weist einen Status auf, der durch eine bestimmte Farbe dargestellt wird. Sie erfahren mehr über den Build-Status von Campaign Classic v7 auf [dieser Seite](rn-overview.md).
 
-## ![](assets/do-not-localize/limited_2.png) Version 7.3.1 – Build 9352 {#release-7-3-1}
+## ![](assets/do-not-localize/green_2.png) Version 7.3.2 – Build 9356 {#release-7-3-2}
+
+_21. November 2022_
+
+**Aktualisierungen zur Kompatibilität**
+
+* Nach dem Ende der Nutzungsdauer von Microsoft Internet Explorer 11 verwendet die HTML-Rendering-Engine für Dashboards in der Clientkonsole jetzt Edge Chromium. (NEO-20741)
+
+<!--
+**Deprecated features**
+
+* Social Marketing with Facebook is now deprecated. You can still use Twitter integration to post on social media, or work with Adobe to create a custom channel.
+
+* ACS Connector (prime offering) is now deprecated. You can use Campaign export/import capabilities to extract and inject data in both products.
+
+Learn more in the [Deprecated and removed features page](deprecated-features.md).
+
+-->
+
+**Verbesserungen**
+
+* Der Google BigQuery-Connector unterstützt jetzt vollständig boolesche Felder. (NEO-49181)
+* Sie können jetzt die Gültigkeitsdauer der IMS-Cookies im `Configuration for the redirection service` -Abschnitt der Datei &quot;serverConf.xml&quot;. Dies gilt für die folgenden Cookies: `uuid230`, `nllastdelid` und `AMCV_` (NEO-42541)
+* Die IP-Adresse kann jetzt in der &quot;/r/test&quot;-Anfrage ausgeblendet werden, indem Sie `showSourceIP` auf false im Umleitungsknoten der Datei serverConf.xml gesetzt. [Mehr dazu](../../installation/using/the-server-configuration-file.md#redirection-redirection)(NEO-46656)
+
+**Sonstige Änderungen**
+
+* Webprotokolle wurden verbessert: logonEscalation-Warnungen werden jetzt nur für Benutzer mit Administratorrechten angezeigt. (NEO-47167)
+* Um Fehler zu vermeiden, wird die **Erfassen von Daten für den Heatmap-Dienst-Workflow** (collectDataHeatMapService) ist jetzt standardmäßig angehalten. (NEO-33959)
+* Es wurden verschiedene Verbesserungen implementiert, um die CPU-Auslastung für das Kampagnen-Dashboard zu optimieren. (NEO-46417)
+* Um Abstürze zu verhindern, wurde die JS-Methode loadLibraryDebug entfernt. (NEO-46968)
+* Die verbleibenden Verweise auf die Bibliothek log4j wurden aus der Campaign-Installation unter Windows entfernt. (NEO-44851)
+
+**Patches**
+
+* Fehlerkorrektur - Die Verwendung des **Ausgewählte Zeilen zusammenführen** Workflow-Option. (NEO-48488)
+* Fehlerkorrektur - Die **Erfolg** Versandindikator bei Verwendung des erweiterten Adobe Campaign-MTA korrekt aktualisiert wurde. (NEO-50462)
+* Fehlerkorrektur - Die Inhaltsvalidierung eines E-Mail-Versands kann jetzt erneut validiert werden. (NEO-44259)
+* Fehlerkorrektur - jetzt kann die **Validierung des Versands** angezeigt. (NEO-47547)
+* Fehlerkorrektur - Es wurde ein Leistungsproblem im Tab HTML eines Versands behoben, das bei umfangreichem HTML-Code auftreten konnte. (NEO-47440)
+* Fehlerkorrektur - Die Statusaktualisierungen des Versandlogs auf der MID-Instanz werden jetzt nicht mehr beeinträchtigt, wenn die Option FeatureFlag_GZIP_Compression aktiviert ist. (NEO-49183)
+* Fehlerkorrektur - Mobile-App-Benachrichtigungen von iOS können jetzt von einer Ausführungsinstanz gesendet werden, wenn die Token-basierte Authentifizierung verwendet wird. (NEO-45961)
+* Es wurde ein Problem mit der **Zustellbarkeit** Workflow (deliverabilityUpdate), der blockiert wurde, wenn zu viele Broadlogs zum Synchronisieren vorhanden waren. (NEO-48287)
+* Fehlerkorrektur - Der Synchronisations-Workflow für das Message Center (mcSynch) wird jetzt nicht mehr vom Ereignistyp blockiert.
+* Fehlerkorrektur - Beim Hinzufügen von **Empfänger, die geöffnet haben** Indikator (estimatedRecipientOpen) in den Zusatzdaten einer **Abfrage** Workflow-Aktivität. (NEO-46665)
+* Es wurde ein Problem mit der **Rechnungsstellung** Workflow, der bei der Installation von Message Center Control- und Execution-Packages auf derselben Instanz fehlschlug. (NEO-47674)
+* Es wurde ein Problem mit der **Rechnungsstellung** Workflow, der fehlschlug, wenn Tabellen mit dem Primärschlüssel als Zeichenfolge anstelle einer Ganzzahl definiert waren. (NEO-46254)
+* Es wurde ein Problem mit Heatmap-Filtern behoben, das auftrat, wenn der Workflow-Name zu lang war. (NEO-46301)
+* Fehlerkorrektur - Es wurde ein Fehler behoben, der in 7.3.1 im Snowflake-FDA-Connector eingeführt wurde und dazu führte, dass Datensätze bei Verwendung von &quot;Einfache Verknüpfung mit Kardinalität 0 oder 1&quot; während der Anreicherung gelöscht wurden. (NEO-48737)
+* Es wurde ein Problem mit dem Snowflake FFDA bei der Verwendung des Sortierparameters in einer **Aufspaltung** Workflow-Aktivität. (NEO-45899)
+* Fehlerkorrektur - Die Konfiguration externer Konten kann jetzt gespeichert werden. Das externe Konto wird jetzt nach dem Verbindungstest automatisch für Connectoren mit Parserfunktion (Snowflake &amp; Google BigQuery) gespeichert. (NEO-47636)
+* Es wurde ein Problem behoben, das das Einfügen eines Zeit -Datentyps in eine **Datenaktualisierung** Workflow-Aktivität auf MSSQL. (NEO-47763)
+* Fehlerkorrektur - Der MTA-Prozess stürzt jetzt nicht mehr ab, wenn die Zeitzone der Engine nicht festgelegt ist (spezifisch für MSSQL). (NEO-46619)
+* Fehlerkorrektur - Beim HTML-Dateiimport tritt jetzt kein Fehler mehr auf, wenn Bildknoten (img) URLs mit Personalisierungsfeldern enthielten. (NEO-48396)
+* Es wurde ein HTTP 500-Fehler behoben, der beim Versuch auftrat, eine Verbindung zu einer Instanz herzustellen, bei der die `limit` -Knoten wurde nicht in der Datei serverConf.xml konfiguriert.
+* Fehlerkorrektur - bei Verwendung bestimmter Funktionen wie `to_nclob` mit einer Oracle-Unicode-Datenbank, in der NChar nicht aktiviert war. (NEO-49361)
+* Fehlerkorrektur - jetzt tritt kein Fehler mehr auf, wenn ein Benutzer mit Lesezugriffsrechten für den Ordner nmsDeliveryMapping versucht, eine Kampagne oder einen Workflow auszuführen. (NEO-48230)
+* Fehlerkorrektur - Die `JSPContext.sqlExecWithOneParam` -Funktion funktioniert. (NEO-50066)
+* Fehlerkorrektur - diverse Weiterleitungsfehler wurden behoben. (NEO-50030)
+
+## ![](assets/do-not-localize/orange_2.png) Version 7.3.1 – Build 9352 {#release-7-3-1}
 
 _1. Juli 2022_
 

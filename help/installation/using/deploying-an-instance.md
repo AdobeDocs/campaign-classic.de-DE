@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
-source-git-commit: f000cb8bae164c22d1ede15db4e763cf50530674
+source-git-commit: 11e175c737d9c6cbb9432ec7835f35ee0e00a5c0
 workflow-type: tm+mt
-source-wordcount: '3193'
+source-wordcount: '3290'
 ht-degree: 5%
 
 ---
@@ -78,10 +78,10 @@ Diese Parameter können in Versandvorlagen und für jeden Versand einzeln übers
 
 Geben Sie die folgenden Parameter an:
 
-* **[!UICONTROL Name des Absenders]** : Name des Absenders,
-* **[!UICONTROL Absenderadresse]** : Adresse des Absenders,
-* **[!UICONTROL Text der Antwortadresse]** : Der Name, der angepasst werden kann und verwendet wird, wenn der Empfänger auf die **[!UICONTROL Antwort]** in der E-Mail-Client-Software,
-* **[!UICONTROL Antwortadresse]** : Die zu verwendende E-Mail-Adresse, wenn der Empfänger auf die **[!UICONTROL Antwort]** in der E-Mail-Client-Software,
+* **[!UICONTROL Name des Absenders]** : Name des Absenders
+* **[!UICONTROL Absenderadresse]** : Adresse des Absenders
+* **[!UICONTROL Text der Antwortadresse]** : Der Name, der angepasst werden kann und verwendet wird, wenn der Empfänger auf die **[!UICONTROL Antwort]** Schaltfläche in der E-Mail-Client-Software
+* **[!UICONTROL Antwortadresse]** : Die zu verwendende E-Mail-Adresse, wenn der Empfänger auf die **[!UICONTROL Antwort]** Schaltfläche in der E-Mail-Client-Software
 * **[!UICONTROL Fehleradresse]** : E-Mail-Adresse der fehlerhaften Nachrichten. Dies ist die technische Adresse, die für die Verarbeitung von Bounce Messages verwendet wird, einschließlich E-Mails, die vom Adobe Campaign-Server aufgrund nicht vorhandener Zieladressen empfangen wurden.
 
 Darüber hinaus können Sie die **Masken** für die Absenderadresse und die Fehleradresse autorisiert. Bei Angabe von mehr als einer Maske sind die Masken durch Kommata zu trennen. Hierbei handelt es sich um eine optionale Konfiguration. Wenn Felder eingegeben werden, prüft Adobe Campaign zum Zeitpunkt des Versands (während der Analyse, ob die Adresse keine Variablen enthält), ob die Adressen gültig sind. Dieser Betriebsmodus stellt sicher, dass keine Adressen verwendet werden, die Probleme beim Versand von Triggern verursachen könnten. Absenderadressen sind auf dem Versandserver zu konfigurieren.
@@ -106,14 +106,22 @@ In diesem Fenster können Sie für alle E-Mail-Kampagnen die Managementoptionen 
 
 Folgende Optionen stehen zur Verfügung:
 
-* **[!UICONTROL Versandlaufzeit der Nachrichten]** : Nach diesem Zeitpunkt wird der Versand gestoppt (standardmäßig 5 Tage).
-* **[!UICONTROL Gültigkeitsdauer der Online-Ressourcen]** : Zeit, für die Informationen aus dem Empfängerprofil aufbewahrt werden, um Mirrorseiten zu erzeugen;
+* **[!UICONTROL Versandlaufzeit der Nachrichten]** : Danach wird der Versand gestoppt (standardmäßig 5 Tage).
+* **[!UICONTROL Gültigkeitsdauer der Online-Ressourcen]** : Zeitraum, für den Informationen aus dem Empfängerprofil aufbewahrt werden, um Mirrorseiten zu erzeugen.
 * **[!UICONTROL Empfänger ausschließen, die nicht mehr kontaktiert werden möchten]** : Wenn diese Option aktiviert ist, werden die Empfänger der Blockierungsliste nicht kontaktiert.
 * **[!UICONTROL Dubletten automatisch ignorieren]** : Wenn diese Option aktiviert ist, erfolgt kein Versand an doppelte Adressen.
+
+>[!NOTE]
+>
+>Wenn Sie bei gehosteten oder hybriden Installationen ein Upgrade auf [Verbesserter MTA](../../delivery/using/sending-with-enhanced-mta.md), die **[!UICONTROL Versandlaufzeit der Nachrichten]** wird nur verwendet, wenn auf **3,5 Tage oder weniger**. Wenn Sie einen Wert von mehr als 3,5 Tagen definieren, wird dieser nicht berücksichtigt.
 
 ### Wiederholungsparameter {#retry-parameters}
 
 Die Informationen über Wiedereinziehungen sind im Abschnitt **Wiederherstellungsfristen** und **Anzahl der Wiedereinziehungen** -Felder: Wenn ein Empfänger nicht erreichbar ist, z. B. wenn sein Posteingang voll ist, versucht das Programm standardmäßig, ihn fünfmal zu kontaktieren, wobei zwischen jedem Versuch (während der maximalen Versandzeit) ein Zeitintervall von einer Stunde eingehalten wird. Diese Werte können Ihren Bedürfnissen entsprechend geändert werden.
+
+>[!NOTE]
+>
+>Wenn Sie bei gehosteten oder hybriden Installationen ein Upgrade auf [Verbesserter MTA](../../delivery/using/sending-with-enhanced-mta.md)festgelegt ist, werden die Wiederholungsparameter der Kampagne nicht mehr verwendet. Versuche mit Softbounces und die Zeitdauer zwischen ihnen werden durch den erweiterten MTA bestimmt, der auf dem Typ und der Schwere der Bounce-Antworten basiert, die von der E-Mail-Domain der Nachricht zurückgegeben werden.
 
 ### Quarantäneparameter {#quarantine-parameters}
 
@@ -147,7 +155,7 @@ Nachdem die POP-Einstellungen angegeben wurden, klicken Sie auf **Test** um sich
 
 ### Unverarbeitete Bounce-E-Mails {#unprocessed-bounce-mails}
 
-Absprünge werden automatisch von Adobe Campaign verarbeitet, wobei die im Abschnitt **Administration > Kampagnenverwaltung > Unzustellbarkeitsverwaltung > Versandlogqualifizierung** Knoten. Weitere Informationen hierzu finden Sie unter [Bounce-Message-Verwaltung](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management).
+Absprünge werden automatisch von Adobe Campaign verarbeitet, wobei die im Abschnitt **Administration > Campaign Management > Unzustellbarkeitsverwaltung > Versandlogqualifizierung** Knoten. Weitere Informationen hierzu finden Sie unter [Bounce-Message-Verwaltung](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management).
 
 Nicht verarbeitete Bounces werden nicht in der Adobe Campaign-Benutzeroberfläche angezeigt. Sie werden automatisch gelöscht, es sei denn, sie werden mithilfe der folgenden Felder in ein Drittanbieter-Postfach übertragen:
 

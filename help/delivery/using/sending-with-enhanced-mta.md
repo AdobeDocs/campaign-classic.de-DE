@@ -4,10 +4,10 @@ title: S mit dem Enhanced MTA in Adobe Campaign Classic
 description: Erfahren Sie mehr über den Umfang und die Besonderheiten des E-Mail-Versands mit dem Enhanced MTA in Adobe Campaign
 feature: Email
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
-workflow-type: ht
-source-wordcount: '2016'
-ht-degree: 100%
+source-git-commit: 2d5166c355ee090639dcc52866252bae6beb81f6
+workflow-type: tm+mt
+source-wordcount: '2069'
+ht-degree: 93%
 
 ---
 
@@ -37,9 +37,9 @@ Die Implementierung des Enhanced MTA kann sich auf einige der bestehenden Campai
 
 **Was ist der Enhanced MTA?**
 
-Adobe Campaign kann jetzt auf einen neuen MTA (Mail Transfer Agent) aktualisiert werden, der den kommerziellen E-Mail-MTA von SparkPost namens **Momentum** verwendet.
+Adobe Campaign kann jetzt aktualisiert werden, um einen neuen MTA (Mail Transfer Agent) zu verwenden, der den kommerziellen E-Mail-MTA von SparkPost mit dem Namen ausführt **Momentum**.
 
-Momentum steht für eine innovative, hochleistungsfähige MTA-Technologie, die eine intelligentere Behandlung von Bounce-E-Mails und eine automatische Zustellbarkeitsoptimierung beinhaltet, die den Absendern hilft, optimale Zustellraten im Posteingang zu erreichen und zu erhalten. <!--More than 37% of the world’s business email is sent using SparkPost’s MTA technology.-->
+Momentum steht für eine innovative, hochleistungsfähige MTA-Technologie, die eine intelligentere Behandlung von Bounce-E-Mails und eine automatische Zustellbarkeitsoptimierung beinhaltet, die den Absendern hilft, optimale Zustellraten im Posteingang zu erreichen und zu erhalten. <!--More than 37% of the world's business email is sent using SparkPost's MTA technology.-->
 
 **Was sind die Vorteile?**
 
@@ -59,7 +59,7 @@ No, there is no extra fee associated with the upgrade process to enable the use 
 
 * If you are new to Adobe Campaign Classic, you are already using the Enhanced MTA.
 
-* For Adobe Campaign Classic existing customers, we’ve implemented a phased rollout that covers all hosted or partially hosted (hybrid) instances. If you’re not already using it, we’ll be contacting you in the near future with the dates and details for upgrading your Adobe Campaign Classic instances to the Enhanced MTA.
+* For Adobe Campaign Classic existing customers, we've implemented a phased rollout that covers all hosted or partially hosted (hybrid) instances. If you're not already using it, we'll be contacting you in the near future with the dates and details for upgrading your Adobe Campaign Classic instances to the Enhanced MTA.
 -->
 
 ### Aktualisierung auf den Enhanced MTA
@@ -117,7 +117,7 @@ Weitere Informationen zu Typologien finden Sie in [diesem Abschnitt](../../campa
 
 ### Neue MX-Regeln
 
-Die Regeln der MX-Verwaltung für den Versanddurchsatz sind nicht mehr in Gebrauch. Der Enhanced MTA hat seine eigenen MX-Regeln. Mit diesen kann Ihr Durchsatz anhand Ihrer historischen E-Mail-Reputation und dem Echtzeit-Feedback, das von den Domains stammt, von denen Sie E-Mails senden, angepasst werden.
+Die Regeln der MX-Verwaltung für den Versanddurchsatz sind nicht mehr in Gebrauch. Der Enhanced MTA verfügt über eigene MX-Regeln, mit denen Sie Ihren Durchsatz anhand Ihrer historischen E-Mail-Reputation und dem Echtzeit-Feedback, das von den Domänen stammt, von denen Sie E-Mails senden, nach Domain anpassen können.
 
 Weiterführende Informationen zur MX-Konfiguration finden Sie in [diesem Abschnitt](../../installation/using/email-deliverability.md#mx-configuration).
 
@@ -140,6 +140,12 @@ Weitere Informationen zum Versanddurchsatz finden Sie in [diesem Abschnitt](../.
 >[!NOTE]
 >
 >Mit der Funktion [Email Feedback Service](#email-feedback-service) (EFS) (derzeit als Beta-Version verfügbar) zeigt das Durchsatzdiagramm für den Kampagnenversand weiterhin den Durchsatz an die E-Mail-Empfänger an.
+
+### Weitere Zustellversuche
+
+Die Einstellungen für den erneuten Versuch im Versand werden von Campaign nicht mehr verwendet. Versuche mit Softbounces und die Zeitdauer zwischen ihnen werden durch den erweiterten MTA bestimmt, der auf dem Typ und der Schwere der Bounce-Antworten basiert, die von der E-Mail-Domain der Nachricht zurückgegeben werden.
+
+Weitere Informationen zu Wiederholungen finden Sie unter [diesem Abschnitt](steps-sending-the-delivery.md#configuring-retries).
 
 ### Gültigkeitszeitraum
 
@@ -182,7 +188,7 @@ Mit der EFS-Funktion (E-Mail-Feedback-Service) wird der Status jeder E-Mail gena
 >
 >Der E-Mail-Feedback-Service ist derzeit als Funktion der Betaversion verfügbar.
 >
->Wenn Sie an diesem Betaversion teilnehmen möchten, füllen Sie [dieses Formular](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4Rol2vQGupxItW9_BerXV6VUQTJPN1Q5WUI4OFNTWkYzQjg3WllUSDAxWi4u) aus, und wir werden uns bei Ihnen melden.
+>Wenn Sie an der Teilnahme an diesem Betaprogramm interessiert sind, füllen Sie bitte [dieses Formulars](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4Rol2vQGupxItW9_BerXV6VUQTJPN1Q5WUI4OFNTWkYzQjg3WllUSDAxWi4u) und wir kommen zu Ihnen zurück.
 
 Nachdem der Versand gestartet wurde, ändert sich der **[!UICONTROL Erfolgsprozentsatz]** nicht, wenn die Nachricht erfolgreich von Campaign an den Enhanced MTA weitergeleitet wurde.
 

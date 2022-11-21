@@ -6,10 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-source-git-commit: acbb2144906841a6da59314b84b3faf5863cf9d6
+source-git-commit: 2594e4943ba24ae65d1fc005da589dc674aa2b0f
 workflow-type: tm+mt
-source-wordcount: '7957'
-ht-degree: 39%
+source-wordcount: '7979'
+ht-degree: 41%
 
 ---
 
@@ -130,7 +130,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **Authentifizierung > XT
  <tbody> 
   <tr> 
    <td> internalPassword<br /> </td> 
-   <td> Passwort des internen Kontos.<br /> </td> 
+   <td> Passwort des Internal-Kontos.<br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -307,7 +307,7 @@ Im **dataStore > dataSource > dbcnx** -Knoten konfigurieren Sie die Verbindungse
  <tbody> 
   <tr> 
    <td> NChar<br /> </td> 
-   <td> Unicode-Speicher<br /> </td> 
+   <td> Unicode-Speicherung<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> </td> 
   </tr> 
@@ -525,13 +525,13 @@ Weitere Informationen finden Sie in diesem Abschnitt [Abschnitt](../../installat
   </tr> 
   <tr> 
    <td> Wiederholen<br /> </td> 
-   <td> Anzahl weiterer Versuche für eine DNS-Abfrage.<br /> </td> 
+   <td> Versuchsanzahl für eine DNS-Abfrage.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 4<br /> </td> 
   </tr> 
   <tr> 
    <td> timeout<br /> </td> 
-   <td> Zeitüberschreitung in Millisekunden für eine DNS-Abfrage.<br /> </td> 
+   <td> Timeout in Millisekunden für eine DNS-Abfrage.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 5000<br /> </td> 
   </tr> 
@@ -574,7 +574,7 @@ Weitere Informationen finden Sie unter [Einschränken autorisierter externer Bef
   </tr> 
   <tr> 
    <td> Benutzer<br /> </td> 
-   <td> Führen Sie Befehle als anderen Benutzer aus.<br /> </td> 
+   <td> Führt Befehle als anderer Benutzer aus.<br /> </td> 
    <td> String <br /> </td> 
   </tr> 
  </tbody> 
@@ -757,7 +757,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **mailExchanger** Knoten
   </tr> 
   <tr> 
    <td> mxPort<br /> </td> 
-   <td> TCP-Port des SMTP-Servers, der für die E-Mail-Übertragung verwendet wird.<br /> </td> 
+   <td> TCP-Port des SMTP-Servers zur E-Mail-Übermittlung<br /> </td> 
    <td> String <br /> </td> 
    <td> 25<br /> </td> 
   </tr> 
@@ -838,25 +838,25 @@ Im Folgenden finden Sie die verschiedenen Parameter der **ooconv** Knoten. Dies 
  <tbody> 
   <tr> 
    <td> maxConversions<br /> </td> 
-   <td> Maximale Anzahl der Konvertierungen, die ein OpenOffice-Server ausführen darf. Über diese Zahl hinaus wird der Server neu gestartet.<br /> </td> 
+   <td> Maximale Anzahl an Konvertierungen, die ein OpenOffice-Server ausführen darf. Bei Überschreiten dieser Anzahl wird der Server neu gestartet.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1000<br /> </td> 
   </tr> 
   <tr> 
    <td> maxServerIdleSec<br /> </td> 
-   <td> Maximale Leerlaufzeit des OpenOffice-Servers vor erzwungenem Schließen.<br /> </td> 
+   <td> Maximale Inaktivitätsdauer des OpenOffice-Servers vor Abschaltung<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 7200<br /> </td> 
   </tr> 
   <tr> 
    <td> portRange<br /> </td> 
-   <td> Intervall der Ports, auf denen die OpenOffice-Server lauschen.<br /> </td> 
+   <td> Listen-Port-Intervalle der OpenOffice-Server.<br /> </td> 
    <td> String <br /> </td> 
    <td> 8101-8110<br /> </td> 
   </tr> 
   <tr> 
    <td> url<br /> </td> 
-   <td> URL des Dokumentkonvertierungsservers.<br /> </td> 
+   <td> URL des Servers zur Dokumentenkonvertierung.<br /> </td> 
    <td> String <br /> </td> 
    <td> "http://localhost:8080/nl/jsp/ooconv.jsp'<br /> </td> 
   </tr> 
@@ -1067,7 +1067,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **xtkJobs** Knoten. Dies
  <tbody> 
   <tr> 
    <td> purgeLogsPeriod<br /> </td> 
-   <td> Aktualisierungszeitraum für den Speicherstatus der Serververarbeitung (in ms).<br /> </td> 
+   <td> Periodizität der Aktualisierung des Speicherstatus eines Serverprozesses (in Millisekunden).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 500<br /> </td> 
   </tr> 
@@ -1803,7 +1803,7 @@ Weitere Informationen finden Sie unter [Optimierung des E-Mail-Versands](../../i
   </tr> 
   <tr> 
    <td> maxAgeSec<br /> </td> 
-   <td> Maximale Rückhaltedauer einer Nachricht. Wenn eine vorbereitete Nachricht aufgrund der Flusskontrolle oder von MTA-Verbindungsproblemen nicht gesendet werden kann, wird sie bis zum nächsten Sendeversuch ausgesetzt.<br /> </td> 
+   <td> Maximale Rückhaltedauer einer Nachricht Wenn eine vorbereitete Nachricht aufgrund der Flusskontrolle oder von MTA-Verbindungsproblemen nicht gesendet werden kann, wird sie bis zum nächsten Sendeversuch ausgesetzt.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
@@ -2002,7 +2002,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **nmac > relay** Knoten.
  <tbody> 
   <tr> 
    <td> Adresse<br /> </td> 
-   <td> DNS-Adresse oder Name des zu verwendenden Relais. <br /> </td> 
+   <td> Adresse oder DNS-Name des zu verwendenden Relais. <br /> </td> 
    <td> String <br /> </td> 
    <td> </td> 
   </tr> 
@@ -2211,25 +2211,25 @@ Weitere Informationen finden Sie unter [Sicherheitszonen definieren](../../insta
   </tr> 
   <tr> 
    <td> allowEmptyPassword<br /> </td> 
-   <td> Autorisieren Sie den Benutzer, die Anwendung ohne Kennwort zu verwenden.<br /> </td> 
+   <td> Zulassen, dass der Benutzer kein Passwort benötigt.<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> allowHTTP<br /> </td> 
-   <td> Autorisieren Sie die Verwendung von HTTP für die Benutzeranmeldung.<br /> </td> 
+   <td> Gebrauch von HTTP bei der Anmeldung von Benutzern zulassen.<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> allowSQLInjection<br /> </td> 
-   <td> Autorisieren Sie die Verwendung von SQLDATA in Ausdrücken.<br /> </td> 
+   <td> Vewendung von SQLDATA in Ausdrücken zulassen.<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> allowUserPassword<br /> </td> 
-   <td> Benutzer-/Kennwort-Sitzungstoken zulassen.<br /> </td> 
+   <td> Sitzungstoken im Format Benutzer/Passwort zulassen.<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -2247,7 +2247,7 @@ Weitere Informationen finden Sie unter [Sicherheitszonen definieren](../../insta
   </tr> 
   <tr> 
    <td> sessionTokenOnly<br /> </td> 
-   <td> Verwenden Sie nicht das Security-Token.<br /> </td> 
+   <td> Security-Token nicht verwenden.<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -2551,7 +2551,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **syslogd** Knoten. Dies
   </tr> 
   <tr> 
    <td> maxFileSizeMb<br /> </td> 
-   <td> Maximale Größe in MB für eine Protokolldatei. <br /> </td> 
+   <td> Maximale Größe einer Logdatei in MB. <br /> </td> 
    <td> Lang<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
@@ -2910,7 +2910,7 @@ Weitere Informationen finden Sie in diesem Abschnitt [Abschnitt](configuring-cam
   </tr> 
   <tr> 
    <td> startSoapRouterInModule<br /> </td> 
-   <td> Starten Sie den SOAP-Router im Modulmodus.<br /> </td> 
+   <td> SOAP-Router im Modulmodus starten<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -2951,7 +2951,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **web > jsp** Knoten. Di
   </tr> 
   <tr> 
    <td> soapRouter<br /> </td> 
-   <td> URL des SOAP-Routers (http://myserver/xxx, http://jni oder mailto:xxx).<br /> </td> 
+   <td> URL des SOAP-Routers (http://meinserver/xxx, http://jni oder mailto:xxx).<br /> </td> 
    <td> String <br /> </td> 
    <td> "http://jni'<br /> </td> 
   </tr> 
@@ -3319,6 +3319,12 @@ Weitere Informationen finden Sie in diesem Abschnitt [Abschnitt](../../installat
    <td> Maximale Auftragsanzahl: Maximale Anzahl von Bereitstellungsaktionen im Cache. Darf nicht kleiner als 50 sein. <br /> </td> 
    <td> Lang<br /> </td> 
    <td> 100<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> showSourceIP<br /> </td> 
+   <td> Wenn der Wert auf false gesetzt ist, ist der Wert von sourceIP in der Antwort, die von r/test zurückgegeben wird, eine leere Zeichenfolge. <br /> </td> 
+   <td> Boolesch<br /> </td> 
+   <td> true<br /> </td> 
   </tr> 
   <tr> 
    <td> startRedirection<br /> </td> 

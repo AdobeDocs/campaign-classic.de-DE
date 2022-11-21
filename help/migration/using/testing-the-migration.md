@@ -6,9 +6,9 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 exl-id: 228ee9e4-46a0-4d82-b8ba-b019bc0e7cac
-source-git-commit: 59a2bc62b4c03ef0702cb57bd9dc808e7d0b444b
+source-git-commit: 2594e4943ba24ae65d1fc005da589dc674aa2b0f
 workflow-type: tm+mt
-source-wordcount: '755'
+source-wordcount: '706'
 ht-degree: 4%
 
 ---
@@ -124,7 +124,7 @@ Die folgenden Ausdrücke werden gesucht (Groß-/Kleinschreibung beachten):
    <td> .@<br /> </td> 
    <td> PU-0001<br /> </td> 
    <td> Warnung<br /> </td> 
-   <td> Diese Syntax wird bei der Versandpersonalisierung nicht mehr unterstützt. Siehe <a href="../../migration/using/general-configurations.md#javascript" target="_blank">JavaScript</a>. Überprüfen Sie andernfalls, ob der Werttyp korrekt ist.<br /> </td> 
+   <td> Diese Syntax wird bei der Versandpersonalisierung nicht mehr unterstützt. <br /> </td> 
   </tr> 
   <tr> 
    <td> common.js<br /> </td> 
@@ -136,7 +136,7 @@ Die folgenden Ausdrücke werden gesucht (Groß-/Kleinschreibung beachten):
    <td> logon(<br /> </td> 
    <td> PU-0003<br /> </td> 
    <td> Warnung<br /> </td> 
-   <td> Diese Verbindungsmethode darf nicht mehr verwendet werden. Siehe <a href="../../migration/using/general-configurations.md#identified-web-applications" target="_blank">Identifizierte Webanwendungen</a>.<br /> </td> 
+   <td> Diese Verbindungsmethode darf nicht mehr verwendet werden.<br /> </td> 
   </tr> 
   <tr> 
    <td> new SoapMethodCall(<br /> </td> 
@@ -148,14 +148,8 @@ Die folgenden Ausdrücke werden gesucht (Groß-/Kleinschreibung beachten):
    <td> sql=<br /> </td> 
    <td> PU-0005<br /> </td> 
    <td> Fehler<br /> </td> 
-   <td> Dieser Fehlertyp führt zu einem Migrationsfehler. Siehe <a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>.<br /> </td> 
+   <td> Dieser Fehlertyp führt zu einem Migrationsfehler.<br /> </td> 
   </tr> 
-  <tr> 
-   <td> SQLDATA<br /> </td> 
-   <td> PU-0006<br /> </td> 
-   <td> Fehler<br /> </td> 
-   <td> Dieser Fehlertyp führt zu einem Migrationsfehler. Siehe <a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>. Wenn Sie Fehlerprotokolle für Webanwendungen vom Typ Übersicht erhalten (Migration von v6.02), lesen Sie den Abschnitt <a href="../../migration/using/configuring-your-platform.md#specific-configurations-in-v5-11" target="_blank">Campaign konfigurieren</a>.<br /> </td> 
-  </tr>
   <tr> 
    <td> crmDeploymentType="onpremise"<br /> </td> 
    <td> PU-0007<br /> </td> 

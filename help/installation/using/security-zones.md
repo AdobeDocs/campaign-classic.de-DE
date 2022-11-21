@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814
-source-git-commit: 4fd69aa28c2e9325f4738ec571a6632c42ec26b8
+source-git-commit: 2594e4943ba24ae65d1fc005da589dc674aa2b0f
 workflow-type: tm+mt
-source-wordcount: '1491'
+source-wordcount: '1495'
 ht-degree: 29%
 
 ---
@@ -197,7 +197,7 @@ Diese Konfiguration erfolgt im Campaign-Explorer:
    ![](assets/enum_securityzone.png)
 
 1. Klicken Sie für jede in der Konfigurationsdatei des Servers definierte Sicherheitszone auf die **[!UICONTROL Hinzufügen]** Schaltfläche.
-1. Im **[!UICONTROL Interner Name]** Geben Sie den Namen der im Feld **serverConf.xml** -Datei. Sie entspricht dem **@name** -Attribut `<securityzone>`  -Element. Geben Sie den Titel ein, der mit dem internen Namen verknüpft ist.  **Titel**-Feld.
+1. Im **[!UICONTROL Interner Name]** Geben Sie den Namen der im Feld **serverConf.xml** -Datei. Sie entspricht dem **@name** -Attribut `<securityzone>`  -Element. Geben Sie im Feld  **Titel**-Feld.
 
    ![](assets/enum_addsecurityvalue.png)
 
@@ -236,13 +236,25 @@ Sobald die Zonen definiert sind, wird die **[!UICONTROL Sicherheitszone]** -Aufl
 
 * Setzen Sie allowDebug nur für IP-Adressen auf true, die von Benutzern/Administratoren verwendet werden, die Fragebögen, WebApps und Berichte erstellen müssen (diese aber nicht in der Vorschau ansehen können). Durch dieses Flag werden in diesen IP-Adressen Relais-Regeln dargestellt, was eine Fehlerbehebung ermöglicht.
 
+   * Wenn allowDebug auf false gesetzt ist, lautet die Ausgabe:
+
+      ```
+      <redir status='OK' date='...' sourceIP='...'/>
+      ```
+
+   * Wenn allowDebug auf &quot;true&quot;gesetzt ist, lautet die Ausgabe:
+
+      ```
+      <redir status='OK' date='...' build='...' OR version='...' sha1='...' instance='...' sourceIP='...' host='...' localHost='...'/>
+      ```
+
 * Setzen Sie niemals allowEmptyPassword, allowUserPassword, allowSQLInjection auf true. Diese Attribute dienen nur der problemlosen Migration von v5 und v6.0:
 
    * **allowEmptyPassword** ermöglicht Benutzern, ein leeres Passwort zu haben. Ist dies bei Ihnen der Fall, weisen Sie alle Benutzer an, bis zu einer bestimmten Deadline ein Passwort zu erstellen. Sobald diese Frist abgelaufen ist, ändern Sie dieses Attribut auf &quot;false&quot;.
 
    * **allowUserPassword** ermöglicht es Benutzern, ihre Zugangsdaten als Parameter zu senden (sodass sie via Apache/IIS/Proxy gespeichert werden). Diese Funktion diente in der Vergangenheit zur Vereinfachung der API-Nutzung. In Ihrem Cookbook (oder in der Spezifikation) können Sie nachsehen, ob die Funktion von Drittanwendungen genutzt wird. Ist dies der Fall, weisen Sie den Administrator dieser Drittanwendungen an, die Verwendung unserer API zu ändern und die Funktion nicht mehr zu nutzen.
 
-   * **allowSQLInjection** ermöglicht dem Benutzer die SQL-Injektion mithilfe einer alten Syntax. Die Berichtigungen gemäß [diese Seite](../../migration/using/general-configurations.md) um dieses Attribut auf &quot;false&quot;setzen zu können. Mit /nl/jsp/ping.jsp?zones=true können Sie die Konfiguration Ihrer Sicherheitszone überprüfen. Auf dieser Seite wird der aktive Status von Sicherheitsmaßnahmen (mit diesen Sicherheits-Flags berechnet) für die aktuelle IP-Adresse angezeigt.
+   * **allowSQLInjection** ermöglicht dem Benutzer die SQL-Injektion mithilfe einer alten Syntax. Dieses Attribut sollte auf &quot;false&quot;gesetzt werden. Mit /nl/jsp/ping.jsp?zones=true können Sie die Konfiguration Ihrer Sicherheitszone überprüfen. Auf dieser Seite wird der aktive Status von Sicherheitsmaßnahmen (mit diesen Sicherheits-Flags berechnet) für die aktuelle IP-Adresse angezeigt.
 
 * HttpOnly cookie/useSecurityToken: siehe Flag **sessionTokenOnly**.
 
