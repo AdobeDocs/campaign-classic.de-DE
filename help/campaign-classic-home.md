@@ -3,10 +3,10 @@ keywords: Campaign Standard;Startseite;beliebte Themen
 product: campaign
 title: Produktdokumentation zu Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 43d9eac2ed161465ca00ee4f511e4c020b4c44a2
+source-git-commit: a2817dabf421281dc0ade3531af62525e045bbee
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '183'
+ht-degree: 100%
 
 ---
 
@@ -20,9 +20,7 @@ ht-degree: 0%
 
 * **[Die Juli-Version ist live!](rn/using/latest-release.md)**<br/> In den Versionshinweisen finden Sie neue Funktionen, Verbesserungen und Fehlerbehebungen.
 
-* **[Entfernen falscher Hardbounces](delivery/using/update-bounce-qualification.md)**<br/> Erfahren Sie, wie Sie falsche Hardbounces nach einem Apple-Ausfall aktualisieren können
-
-* **[Schützen Ihrer Campaign-Instanzen](technotes/using/acc-config-updates.md)**<br/> Führen Sie eine Aktualisierung auf die neuesten Builds durch, um Ihre Campaign-Plattform zu schützen
+<!--* **[Secure your Campaign environment](technotes/using/tech-stack-upgrade.md)**<br/> Update to the latest versions to secure your Campaign platform-->
 
 * **[Aktualisierung der Adobe Experience Cloud Triggers-Integration](integrations/using/configuring-adobe-io.md)**<br/> Der alte OAuth-Authentifizierungs-Service hat das Ende der Lebensdauer erreicht: Sie müssen jetzt zu Adobe I/O migrieren
 
