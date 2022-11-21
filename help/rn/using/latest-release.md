@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: ca2f50a501c63cc8b2d4de5d9a41b655a6b6d6cf
+source-git-commit: 95c4a83037bcd2e22a03ac80d1ec4a7896a94ce3
 workflow-type: tm+mt
-source-wordcount: '2715'
+source-wordcount: '2711'
 ht-degree: 75%
 
 ---
@@ -43,8 +43,8 @@ Weitere Informationen finden Sie auf der Seite [Eingestellte und entfernte Funkt
 
 **Sonstige Änderungen**
 
-* Webprotokolle wurden verbessert: logonEscalation-Warnungen werden jetzt nur für Benutzer mit Administratorrechten angezeigt. (NEO-47167)
-* Um Fehler zu vermeiden, wird die **Erfassen von Daten für den Heatmap-Dienst-Workflow** (collectDataHeatMapService) ist jetzt standardmäßig angehalten. (NEO-33959)
+* Webprotokolle wurden verbessert: `logonEscalation` -Warnungen werden jetzt nur für Benutzer mit Administratorrechten angezeigt. (NEO-47167)
+* Um Fehler zu vermeiden, wird die **Erfassen von Daten für den Heatmap-Dienst** Der Workflow (collectDataHeatMapService) wird jetzt standardmäßig angehalten. (NEO-33959)
 * Es wurden verschiedene Verbesserungen implementiert, um die CPU-Auslastung für das Kampagnen-Dashboard zu optimieren. (NEO-46417)
 * Um Abstürze zu verhindern, wurde die JS-Methode loadLibraryDebug entfernt. (NEO-46968)
 * Die verbleibenden Verweise auf die Bibliothek log4j wurden aus der Campaign-Installation unter Windows entfernt. (NEO-44851)
@@ -56,11 +56,11 @@ Weitere Informationen finden Sie auf der Seite [Eingestellte und entfernte Funkt
 * Fehlerkorrektur - Die Inhaltsvalidierung eines E-Mail-Versands kann jetzt erneut validiert werden. (NEO-44259)
 * Fehlerkorrektur - jetzt kann die **Validierung des Versands** angezeigt. (NEO-47547)
 * Fehlerkorrektur - Es wurde ein Leistungsproblem im Tab HTML eines Versands behoben, das bei umfangreichem HTML-Code auftreten konnte. (NEO-47440)
-* Fehlerkorrektur - Die Statusaktualisierungen des Versandlogs auf der MID-Instanz werden jetzt nicht mehr beeinträchtigt, wenn die Option FeatureFlag_GZIP_Compression aktiviert ist. (NEO-49183)
+* Fehlerkorrektur - Die Statusaktualisierungen des Versandlogs auf der MID-Instanz werden jetzt nicht mehr beeinträchtigt, wenn die Variable `FeatureFlag_GZIP_Compression` -Option aktiviert wurde. (NEO-49183)
 * Fehlerkorrektur - Mobile-App-Benachrichtigungen von iOS können jetzt von einer Ausführungsinstanz gesendet werden, wenn die Token-basierte Authentifizierung verwendet wird. (NEO-45961)
 * Es wurde ein Problem mit der **Zustellbarkeit** Workflow (deliverabilityUpdate), der blockiert wurde, wenn zu viele Broadlogs zum Synchronisieren vorhanden waren. (NEO-48287)
-* Fehlerkorrektur - Der Synchronisations-Workflow für das Message Center (mcSynch) wird jetzt nicht mehr vom Ereignistyp blockiert.
-* Fehlerkorrektur - Beim Hinzufügen von **Empfänger, die geöffnet haben** Indikator (estimatedRecipientOpen) in den Zusatzdaten einer **Abfrage** Workflow-Aktivität. (NEO-46665)
+* Fehlerkorrektur - Es wurde ein Problem mit dem Ereignistyp behoben, durch das die **Message Center-Synchronisation** Workflow (mcSynch).
+* Fehlerkorrektur - Beim Hinzufügen von **Empfänger, die geöffnet haben**  (estimatedRecipientOpen) in den Zusatzdaten einer **Abfrage** Workflow-Aktivität. (NEO-46665)
 * Es wurde ein Problem mit der **Rechnungsstellung** Workflow, der bei der Installation von Message Center Control- und Execution-Packages auf derselben Instanz fehlschlug. (NEO-47674)
 * Es wurde ein Problem mit der **Rechnungsstellung** Workflow, der fehlschlug, wenn Tabellen mit dem Primärschlüssel als Zeichenfolge anstelle einer Ganzzahl definiert waren. (NEO-46254)
 * Es wurde ein Problem mit Heatmap-Filtern behoben, das auftrat, wenn der Workflow-Name zu lang war. (NEO-46301)
