@@ -4,10 +4,10 @@ title: Datenschutz
 description: Erfahren Sie mehr über Best Practices bezüglich des Datenschutzes.
 feature: URL Personalization, Privacy
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: fcbaacccaf3f1771570e42e7a83847ed3fd998ef
+source-git-commit: 197ac1322cb8f4f34d2670a29d622a21f407c90c
 workflow-type: tm+mt
-source-wordcount: '902'
-ht-degree: 44%
+source-wordcount: '871'
+ht-degree: 28%
 
 ---
 
@@ -37,69 +37,76 @@ Um zu überprüfen und sicherzustellen, dass Sie oben nicht verwenden, führen S
 
 Beispiel:
 
-1. Erstellen Sie einen Workflow und fügen Sie die Aktivität Abfrage hinzu. Mehr dazu.
+1. Erstellen Sie einen Workflow und fügen Sie einen **Abfrage** Aktivität. [Weitere Informationen](../../workflow/using/query.md).
 
-1. Öffnen Sie die Aktivität Abfrage und erstellen Sie wie folgt einen Filter für die Tabelle nmsTrackingUrl : Die Quell-URL beginnt mit http://&lt;% oder die Quell-URL beginnt mit https://&lt;%.
+1. Öffnen Sie die **Abfrage** und erstellen Sie einen Filter für die `nmsTrackingUrl` Tabelle wie folgt:
+
+   `source URL starts with http://<% or source URL starts with https://<%`
 
 1. Führen Sie den Workflow aus und prüfen Sie, ob Ergebnisse vorliegen.
 
 1. Sollte dies der Fall sein, öffnen Sie die ausgehende Transition, um die Liste der URLs anzuzeigen.
 
-<img src="assets/privacy-query-dynamic-url.png">
+   ![](assets/privacy-query-dynamic-url.png)
+
 
 ### URL-Signatur
 
-Um die Sicherheit zu verbessern, wurde ein Signaturmechanismus für das Tracking von Links in E-Mails eingeführt. Sie ist in Build 19.1.4 (9032@3a9dc9c) und Campaign 20.2 verfügbar. Diese Funktion ist standardmäßig aktiviert.
+Um die Sicherheit zu verbessern, wurde ein Signaturmechanismus für das Tracking von Links in E-Mails eingeführt. Sie ist ab den Builds 19.1.4 (9032@3a9dc9c) und 20.2 verfügbar. Diese Funktion ist standardmäßig aktiviert.
 
 >[!NOTE]
 >
->Wenn auf eine fehlerhafte signierte URL geklickt wird, wird dieser Fehler zurückgegeben: &quot;Angeforderte URL &#39;...&#39; wurde nicht gefunden.&quot;
+>Wenn auf eine fehlerhafte signierte URL geklickt wird, wird dieser Fehler zurückgegeben: `Requested URL '…' was not found.`
 
-Außerdem wurde seit Campaign 20.2 und der [!DNL Gold Standard] -Version verwenden, können Sie eine Verbesserung verwenden, um in früheren Builds generierte URLs zu deaktivieren. Diese Funktion ist standardmäßig deaktiviert. Sie können sich an [Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) um diese Funktion zu aktivieren.
+Darüber hinaus können Sie eine Verbesserung verwenden, um in früheren Builds generierte URLs zu deaktivieren. Diese Funktion ist standardmäßig deaktiviert. Sie können sich an [Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) um diese Funktion zu aktivieren.
 
-Wenn Sie Build 19.1.4 ausführen, treten möglicherweise Probleme beim Versand von Push-Benachrichtigungen über Tracking-Links oder bei Sendungen mit Anker-Tags auf. In diesem Fall wird empfohlen, die URL-Signatur zu deaktivieren.
+Wenn Sie mit Build 19.1.4 arbeiten, können Probleme beim Versand von Push-Benachrichtigungen unter Verwendung von Tracking-Links oder bei Sendungen unter Verwendung von Anker-Tags auftreten. In diesem Fall wird empfohlen, die URL-Signatur zu deaktivieren.
 
-Unabhängig davon, ob Sie Campaign vor Ort oder in einer Hybridarchitektur ausführen, müssen Sie sich an folgende Adresse wenden: [Kundenunterstützung](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html) , damit die URL-Signatur deaktiviert wird.
+Als gehosteter, verwalteter oder hybrider Cloud Services einer Kampagne müssen Sie Kontakt mit [Kundenunterstützung](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html) , damit die URL-Signatur deaktiviert wird.
 
 Wenn Sie Campaign in einer Hybridarchitektur ausführen, stellen Sie vor der Aktivierung der URL-Signatur sicher, dass die gehostete Mid-Sourcing-Instanz wie folgt aktualisiert wurde:
-* Vor der lokalen Marketinginstanz
-* Auf dieselbe Version wie die lokale Marketinginstanz oder auf eine etwas höhere Version
+
+* Zunächst die On-Premise-Marketing-Instanz
+* Aktualisieren Sie dann auf dieselbe Version wie die On-Premise-Marketing-Instanz oder auf eine etwas höhere Version
 
 Andernfalls können einige dieser Probleme auftreten:
+
 * Bevor die Mid-Sourcing-Instanz aktualisiert wird, werden URLs über diese Instanz ohne Signatur gesendet.
 * Nachdem die Mid-Sourcing-Instanz aktualisiert und die URL-Signatur auf beiden Instanzen aktiviert wurde, werden die URLs, die zuvor ohne Signatur gesendet wurden, abgelehnt. Der Grund dafür ist, dass eine Signatur von den Tracking-Dateien angefordert wird, die von der Marketing-Instanz bereitgestellt wurden.
 
 Um in früheren Builds generierte URLs zu deaktivieren, führen Sie die folgenden Schritte auf allen Campaign-Servern gleichzeitig aus:
 
-1. Ändern Sie in der Server-Konfigurationsdatei (serverConf.xml) **blockRedirectForUnsignedTrackingLink** in **true**.
-1. Starten Sie den **nlserver**-Service neu.
-1. Starten Sie den Webserver (apache2 unter Debian, httpd unter CentOS/RedHat, IIS unter Windows) auf dem Trackingserver neu.
+1. In der Server-Konfigurationsdatei (`serverConf.xml`), ändern Sie die **blockRedirectForUnsignedTrackingLink** -Option **true**.
+1. Starten Sie den `nlserver` Dienst.
+1. Im `tracking` Server, starten Sie die `web` -Server (Apache2 unter Debian, httpd unter CentOS/RedHat, IIS unter Windows).
 
 Um die URL-Signatur zu aktivieren, führen Sie die folgenden Schritte auf allen Campaign-Servern gleichzeitig aus:
 
-1. Ändern Sie in der Server-Konfigurationsdatei (serverConf.xml) **signEmailLinks** nach **true**.
+1. In der Server-Konfigurationsdatei (`serverConf.xml`), ändern **signEmailLinks** Option, um **true**.
 1. Starten Sie den **nlserver**-Service neu.
-1. Starten Sie den Webserver (apache2 unter Debian, httpd unter CentOS/RedHat, IIS unter Windows) auf dem Trackingserver neu.
+1. Im `tracking` Server, starten Sie die `web` -Server (Apache2 unter Debian, httpd unter CentOS/RedHat, IIS unter Windows).
 
 ## Dateneinschränkung
 
-Sie müssen sicherstellen, dass keine authentifizierten Benutzer mit unzureichender Berechtigung auf die verschlüsselten Passwörter zugreifen können. Dazu gibt es zwei Möglichkeiten: den Zugriff auf Kennwortfelder oder auf die gesamte Entität beschränken (Build >= 8770 erforderlich).
+Sie müssen sicherstellen, dass die verschlüsselten Kennwörter für authentifizierte Benutzer mit geringer Berechtigung nicht zugänglich sind. Schränken Sie dazu den Zugriff auf Kennwortfelder oder auf die gesamte Entität ein (Build >= 8770 erforderlich).
 
-Mit dieser Einschränkung können Sie Passwortfelder entfernen, das externe Konto jedoch für alle Benutzer über die Benutzeroberfläche zugänglich machen. Mehr dazu erfahren Sie auf [dieser Seite](../../configuration/using/restricting-pii-view.md).
+Mit dieser Einschränkung können Sie Passwortfelder entfernen, das externe Konto jedoch für alle Benutzer über die Benutzeroberfläche zugänglich machen. [Weitere Informationen](../../configuration/using/restricting-pii-view.md).
 
-1. Gehen Sie zu **[!UICONTROL Administration]** > **[!UICONTROL Konfigurieren]** > **[!UICONTROL Datenschemata]**.
+Gehen Sie dazu wie folgt vor:
 
-1. Erstellen Sie eine neue **[!UICONTROL Schemaerweiterung]**.
+1. Navigieren Sie zum **[!UICONTROL Administration]** > **[!UICONTROL Konfiguration]** > **[!UICONTROL Datenschemata]** Ordner des Campaign-Explorers.
+
+1. Erstellen Sie ein Datenschema als **[!UICONTROL Erweiterung eines Schemas]**.
 
    ![](assets/privacy-data-restriction.png)
 
 1. Wählen Sie **[!UICONTROL Externes Konto]** aus (extAccount).
 
-1. Bearbeiten Sie im letzten Fenster des Assistenten Ihr neues srcSchema, um den Zugriff auf alle Passwortfelder einzuschränken:
+1. Bearbeiten Sie im letzten Assistenten-Bildschirm Ihr neues &quot;srcSchema&quot;, um den Zugriff auf alle Kennwortfelder zu beschränken:
 
    Das Hauptelement (`<element name="extAccount" ... >`) können Sie ersetzen durch:
 
-   ```
+   ```sql
    <element name="extAccount">
        <attribute accessibleIf="$(loginId) = 0 or $(login) = 'admin'" name="password"/>
        <attribute accessibleIf="$(loginId) = 0 or $(login) = 'admin'" name="clientSecret"/>
@@ -120,7 +127,7 @@ Mit dieser Einschränkung können Sie Passwortfelder entfernen, das externe Kont
 
    Ihr erweitertes srcSchema sieht dann folgendermaßen aus:
 
-   ```
+   ```sql
    <srcSchema _cs="External Accounts (cus)" created="2017-05-12 07:53:49.691Z" createdBy-id="0"
                desc="Definition of external accounts (Email, SMS...) used by the modules"
                entitySchema="xtk:srcSchema" extendedSchema="nms:extAccount" img="" label="External Accounts"
@@ -152,21 +159,20 @@ Mit dieser Einschränkung können Sie Passwortfelder entfernen, das externe Kont
    >
    >Sie können `$(loginId) = 0 or $(login) = 'admin'` mit `hasNamedRight('admin')` , damit alle Benutzer mit Administratorrechten diese Passwörter sehen können.
 
-## Schutz von Seiten, die personenbezogene Daten enthalten
+## Protect-Seiten mit API
 
-Wir empfehlen On-Premise-Kunden dringend, Seiten zu schützen, die möglicherweise personenbezogene Daten enthalten (z. B. Mirrorseiten, Webanwendungen usw.).
+Wir empfehlen On-Premise-Kunden dringend, Seiten zu schützen, die möglicherweise personenbezogene Daten (PIs) enthalten, wie z. B. Mirrorseiten, Webanwendungen usw.
 
 Ziel dieses Verfahrens ist es, dass diese Seiten nicht indexiert werden, um ein mögliches Sicherheitsrisiko zu verhindern. Hier finden Sie einige hilfreiche Artikel:
 
 * [https://developers.google.com/search/reference/robots_txt](https://developers.google.com/search/reference/robots_txt)
 * [https://developers.google.com/search/reference/robots_meta_tag](https://developers.google.com/search/reference/robots_meta_tag)
-* [https://www.google.com/webmasters/tools/robots-testing-tool](https://www.google.com/webmasters/tools/robots-testing-tool)
 
 Führen Sie die folgenden Schritte aus, um Ihre Seiten zu schützen:
 
-1. Fügen Sie eine robots.txt-Datei zur Wurzel Ihres Webservers hinzu (Apache oder IIS). Hier der Dateiinhalt:
+1. Hinzufügen einer `robots.txt` -Datei im Stammverzeichnis Ihres Webservers (Apache oder IIS). Im Folgenden finden Sie den Inhalt der Datei:
 
-   ```
+   ```sql
    # Make changes for all web spiders
    User-agent:
    *Disallow: /
@@ -178,6 +184,6 @@ Führen Sie die folgenden Schritte aus, um Ihre Seiten zu schützen:
 
 1. Manchmal wird eine **robots.txt** -Datei ist im Hinblick auf die Sicherheit nicht ausreichend. Wenn beispielsweise eine andere Website einen Link zu Ihrer Seite enthält, kann diese in einem Suchergebnis angezeigt werden.
 
-Es ist deshalb empfehlenswert, neben der **robots.txt**-Datei einen **X-Robots-Tag**-Header hinzuzufügen. Dies ist sowohl in Apache als auch in IIS sowie in der Konfigurationsdatei **serverConf.xml** möglich.
+   Es ist deshalb empfehlenswert, neben der **robots.txt**-Datei einen **X-Robots-Tag**-Header hinzuzufügen. Dies ist sowohl in Apache als auch in IIS sowie in der Konfigurationsdatei **serverConf.xml** möglich.
 
-Weitere Informationen finden Sie unter [diesem Artikel](https://developers.google.com/search/reference/robots_meta_tag).
+   Weitere Informationen finden Sie unter [diesem Artikel](https://developers.google.com/search/reference/robots_meta_tag).
