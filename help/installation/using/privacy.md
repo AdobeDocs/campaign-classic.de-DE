@@ -1,10 +1,10 @@
 ---
 product: campaign
-title: Datenschutz
-description: Erfahren Sie mehr über Best Practices bezüglich des Datenschutzes.
+title: Personalisierung und Datenschutz
+description: Best Practices für die Sicherheit von Datenschutz und Personalisierung
 feature: URL Personalization, Privacy
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: 0e57ffba9b8c7fd05843c3353d2c0d64cbc83b8b
+source-git-commit: f97199e634205742b74a08932a40db2fca138cc3
 workflow-type: tm+mt
 source-wordcount: '855'
 ht-degree: 27%
@@ -156,7 +156,7 @@ Gehen Sie dazu wie folgt vor:
 
 ## Protect-Seiten mit API
 
-Wir empfehlen On-Premise-Kunden dringend, Seiten zu schützen, die möglicherweise personenbezogene Daten (PIs) enthalten, wie z. B. Mirrorseiten, Webanwendungen usw.
+Wir empfehlen On-Premise-Kunden dringend, die Seiten zu schützen, die möglicherweise personenbezogene Daten (PIs) enthalten, z. B. Mirrorseiten, Webanwendungen usw.
 
 Ziel dieses Verfahrens ist es, dass diese Seiten nicht indexiert werden, um ein mögliches Sicherheitsrisiko zu verhindern. Hier finden Sie einige hilfreiche Artikel:
 
