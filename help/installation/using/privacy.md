@@ -4,22 +4,17 @@ title: Datenschutz
 description: Erfahren Sie mehr über Best Practices bezüglich des Datenschutzes.
 feature: URL Personalization, Privacy
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: 197ac1322cb8f4f34d2670a29d622a21f407c90c
+source-git-commit: 0e57ffba9b8c7fd05843c3353d2c0d64cbc83b8b
 workflow-type: tm+mt
-source-wordcount: '871'
-ht-degree: 28%
+source-wordcount: '855'
+ht-degree: 27%
 
 ---
 
-# Datenschutz {#privacy}
+# Personalisierung und Datenschutz {#privacy}
 
 ![](../../assets/v7-only.svg)
 
-## Datenschutzanfragen
-
-Adobe Campaign bietet eine Reihe von Tools, die Sie bei der Einhaltung von Datenschutzbestimmungen wie DSGVO und CCPA unterstützen.
-
-Siehe [diese Seite](../../platform/using/privacy-management.md) für allgemeine Informationen zu den Funktionen der Datenschutzverwaltung und den Implementierungsschritten in Adobe Campaign. Darüber hinaus finden Sie Best Practices und einen Überblick über den Benutzerprozess und die Rollen.
 
 ## URL-Personalisierung {#url-personalization}
 
@@ -161,7 +156,7 @@ Gehen Sie dazu wie folgt vor:
 
 ## Protect-Seiten mit API
 
-Wir empfehlen On-Premise-Kunden dringend, Seiten zu schützen, die möglicherweise personenbezogene Daten (PIs) enthalten, wie z. B. Mirrorseiten, Webanwendungen usw.
+Wir empfehlen On-Premise-Kunden dringend, die Seiten zu schützen, die möglicherweise personenbezogene Daten (PIs) enthalten, z. B. Mirrorseiten, Webanwendungen usw.
 
 Ziel dieses Verfahrens ist es, dass diese Seiten nicht indexiert werden, um ein mögliches Sicherheitsrisiko zu verhindern. Hier finden Sie einige hilfreiche Artikel:
 
@@ -187,3 +182,8 @@ Führen Sie die folgenden Schritte aus, um Ihre Seiten zu schützen:
    Es ist deshalb empfehlenswert, neben der **robots.txt**-Datei einen **X-Robots-Tag**-Header hinzuzufügen. Dies ist sowohl in Apache als auch in IIS sowie in der Konfigurationsdatei **serverConf.xml** möglich.
 
    Weitere Informationen finden Sie unter [diesem Artikel](https://developers.google.com/search/reference/robots_meta_tag).
+
+
+## Datenschutzanfragen
+
+Siehe [diese Seite](../../platform/using/privacy-management.md) für allgemeine Informationen zu den Funktionen der Datenschutzverwaltung und den Implementierungsschritten in Adobe Campaign. Darüber hinaus finden Sie Best Practices und einen Überblick über den Benutzerprozess und die Rollen.
