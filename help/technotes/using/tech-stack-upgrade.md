@@ -4,7 +4,8 @@ title: Technote - Adobe Campaign-Systemaktualisierungen
 description: Adobe Campaign-Systemaktualisierung
 hide: true
 hidefromtoc: true
-source-git-commit: b877625c568cc9b1119a76812e92dffdab1f4bb1
+exl-id: 78949d94-60b3-44f1-8e5a-d61b5b723e87
+source-git-commit: b8bbdb4a0d595ec2bc884e041d1e56b81da8aa3d
 workflow-type: tm+mt
 source-wordcount: '502'
 ht-degree: 11%
@@ -29,7 +30,7 @@ Aus Sicherheitsgründen müssen Sie [Installieren des aktuellen Campaign-Builds]
 
 **Sind Sie betroffen?**
 
-Wenn Sie von der [Betriebssystemaktualisierung](#os-upgrade) und/oder [Datenbanksystemaktualisierung](#pg-upgrade) Im Folgenden wird beschrieben, wie Sie Ihre Campaign-Umgebungen auf die neueste Version 7.3.2 aktualisieren müssen, die mit diesen Systemen kompatibel ist.
+Wenn Sie von der [Betriebssystemaktualisierung](#os-upgrade) und/oder [Datenbanksystemaktualisierung](#pg-upgrade) Im Folgenden wird beschrieben, wie Sie Ihre Campaign-Umgebungen auf [die neueste Version 7.3.2](../../rn/using/latest-release.md#release-7-3-2), die mit diesen Systemen kompatibel ist.
 
 **Wie wird die Aktualisierung durchgeführt?**
 
