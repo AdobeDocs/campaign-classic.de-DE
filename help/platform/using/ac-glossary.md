@@ -8,7 +8,7 @@ exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
 source-git-commit: 978da934b483a54509ad806f375d9b2bb0577dac
 workflow-type: tm+mt
 source-wordcount: '5972'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -61,7 +61,7 @@ Weitere Informationen zu [aktiven Profilen](../../platform/using/about-profiles.
 
 Die Aktivität &quot;Lokale Validierung&quot; ist eine Workflow-Aktivität, mit der vor dem Nachrichtenversand ein Validierungsprozess für den Versand eingerichtet wird.
 
-Weitere Informationen zum [Lokale Validierung](../../workflow/using/local-approval.md).
+Weitere Informationen zur [Aktivität „Lokale Validierung“](../../workflow/using/local-approval.md).
 +++
 
 +++**Audience**
@@ -141,14 +141,14 @@ Weitere Informationen über die [Inhaltsvalidierung](../../campaign/using/market
 
 Verwenden Sie Kontrollgruppen, um die Wirkung Ihrer Kampagnen zu messen, indem Sie einen Teil ihrer Kontakte ausschließen. Benutzende können dann das Verhalten der Zielpopulation, die die Nachricht erhalten hat, mit dem Verhalten der Kontakte vergleichen, die nicht kontaktiert wurden. Anhand der Versandlogs können die Benutzenden in zukünftigen Kampagnen auch eine Kontrollgruppe ansprechen.
 
-Weitere Informationen [Kontrollgruppen](../../campaign/using/marketing-campaign-target.md#defining-a-control-group).
+Erfahren Sie mehr über [Kontrollgruppen](../../campaign/using/marketing-campaign-target.md#defining-a-control-group).
 +++
 
 +++**Control Panel**
 
-Das Control Panel hilft Produktadministratoren von Adobe Campaign bei der Steigerung der Effizienz ihrer Arbeit, indem es ihnen ermöglicht, Einstellungen zu verwalten und die Nutzung für jede ihrer Instanzen zu verfolgen. Dank der intuitiven Benutzeroberfläche können sie die Nutzung wichtiger Assets einfach überwachen und administrative Aufgaben ausführen, wie z. B. die Zulassungsliste von IP-Adressen, die Überwachung der SFTP-Datenspeicherung, die Schlüsselverwaltung und mehr.
+Das Control Panel ermöglicht Produktadministratoren und -administratorinnen von Adobe Campaign effizienteres Arbeiten, da sie damit Einstellungen verwalten und die Nutzung jeder Instanz verfolgen können. Dank der intuitiven Benutzeroberfläche können die Nutzung wichtiger Assets überwacht und administrative Aufgaben einfach durchgeführt werden. So können beispielsweise IP-Adressen auf die Zulassungsliste gesetzt, der Speicher von SFTP-Servern überwacht und die Schlüssel verwaltet werden.
 
-Weitere Informationen [Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=de).
+Weitere Informationen über das [Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=de).
 +++
 
 +++**Cubes**
@@ -171,7 +171,7 @@ Weitere Informationen über [benutzerdefinierte Ressourcen](../../configuration/
 
 Das Campaign-Datenmodell ist ein Satz von Schemata, durch die die Datentypen und ihre Beziehungen definiert werden (Links). Das Datenmodell ist eine abstrakte Definition, die physisch mit einer Datenbank implementiert wird, die die tatsächlichen Daten enthält.
 
-Weitere Informationen [Datenmodell](../../configuration/using/about-data-model.md).
+Weitere Informationen zum [Datenmodell](../../configuration/using/about-data-model.md).
 +++
 
 +++**Datenbankbereinigungs-Workflow**
@@ -244,11 +244,11 @@ Ein Versandentwurf besteht aus einem strukturierten Satz von Elementen (Dokument
 Weitere Informationen zu [Briefpost](../../delivery/using/about-direct-mail-channel.md).
 +++
 
-+++**Implementierungsassistent**
++++**Softwareverteilungs-Assistent**
 
-Im Implementierungsassistenten werden die Parameter der Campaign-Instanz definiert, wie z. B. den Standard-Namespace, den Zeitplan für die Datenbankbereinigung, die Fristen für die Datenspeicherung und andere technische Einstellungen.
+Im Softwareverteilungs-Assistenten werden die Parameter der Campaign-Instanz definiert, wie z. B. der Standard-Namespace, der Zeitplan für die Datenbankbereinigung, die Fristen für die Datenspeicherung und andere technische Einstellungen.
 
-Weitere Informationen [Implementierungsassistent](../../installation/using/deploying-an-instance.md#deployment-wizard).
+Weitere Informationen über den [Softwareverteilungs-Assistenten](../../installation/using/deploying-an-instance.md#deployment-wizard).
 +++
 
 +++**Deskriptive Analyse**
@@ -262,16 +262,16 @@ Weitere Informationen über [deskriptive Analyse](../../reporting/using/about-de
 
 *Kontext: verteiltes Marketing*
 
-Das Add-on für dezentrales Marketing bietet Campaign-Benutzern einen gemeinsamen Arbeitsbereich zur Implementierung von Kampagnen zwischen Zentralstellen (Hauptsitz, Marketingabteilungen usw.) und lokalen Einheiten (Verkaufsstellen, regionale Agenturen usw.). Diese Zusammenarbeit basiert auf einem gemeinsamen Arbeitsbereich, auch **Kampagnenkit-Liste** genannt, wobei den lokalen Entitäten die zentral entworfenen Kampagnenvorlagen und Instanzen angeboten werden.
+Das Add-on „Verteiltes Marketing“ bietet Campaign-Benutzenden einen gemeinsamen Arbeitsbereich zur Implementierung von Kampagnen wichtiger Abteilungen (Hauptsitz, Marketing-Abteilungen usw.). und lokalen Einheiten (Verkaufsstellen, regionale Agenturen usw.). Diese Zusammenarbeit basiert auf einem gemeinsamen Arbeitsbereich, auch **Kampagnenkit-Liste** genannt, wobei den lokalen Entitäten die zentral entworfenen Kampagnenvorlagen und Instanzen angeboten werden.
 
-Weitere Informationen [Distributed Marketing](../../distributed/using/about-distributed-marketing.md)
+Weitere Informationen über [Verteiltes Marketing](../../distributed/using/about-distributed-marketing.md)
 +++
 
 +++**Werteverteilung**
 
 Die Werteverteilung ist ein Tool, das die Verteilung von Werten eines in der Datenbank vorhandenen Schemaattributs anzeigt. Auf diese Weise können Sie feststellen, welche Werte verfügbar sind, wie viele Werte es gibt und wie hoch die Prozentsätze sind. Außerdem können Sie bei der Erstellung einer Abfrage oder eines Ausdrucks Probleme mit der Groß- und Kleinschreibung von Werten vermeiden.
 
-Weitere Informationen [Werteverteilung](../../platform/using/defining-filter-conditions.md#selecting-data-to-extract)
+Weitere Informationen über [Werteverteilung](../../platform/using/defining-filter-conditions.md#selecting-data-to-extract)
 +++
 
 +++**Delegation von Domains**
@@ -288,7 +288,7 @@ Weitere Informationen zur [Domain-Delegation](https://experienceleague.adobe.com
 ----DEPRECATED------>
 +++**E4X**
 
-E4X ist die JavaScript-Version, die in Adobe Campaign Classic verwendet wird. Manchmal als ECMAScript bezeichnet, ist es eine Erweiterung von JavaScript, die das Mischen von JavaScript- und XML-Primitiven im selben Code ermöglicht. Beachten Sie, dass E4X als veraltete Sprache klassifiziert ist.
+E4X ist die JavaScript-Version, die in Adobe Campaign Classic verwendet wird. Sie wird manchmal als ECMAScript bezeichnet und ist eine Erweiterung von JavaScript, die das Mischen von JavaScript- und XML-Primitiven im selben Code ermöglicht. Beachten Sie, dass E4X als veraltete Sprache klassifiziert ist.
 +++
 
 
@@ -483,9 +483,9 @@ Weitere Informationen zum [Inbox Rendering](../../delivery/using/delivery-dashbo
 
 +++**Instanzeneinstellungen**
 
-Instanzeneinstellungen sind Konfigurationsdetails einer Adobe Campaign-Instanz. Diese Einstellungen werden im Softwareverteilungs-Assistenten (Tools > Erweitert > Softwareverteilungs-Assistent) oder in den Konfigurationsdateien des Servers bzw. der Instanz definiert.
+Instanzeneinstellungen sind Konfigurationsdetails einer Adobe Campaign-Instanz. Diese Einstellungen werden im Softwareverteilungs-Assistenten (Tools > Erweitert > Softwareverteilungs-Assistent) oder in den Konfigurationsdateien des Servers und/oder der Instanz definiert.
 
-Weitere Informationen [Instanzeneinstellungen](../../installation/using/about-initial-configuration.md).
+Weitere Informationen über [Instanzeneinstellungen](../../installation/using/about-initial-configuration.md).
 
 +++
 
@@ -493,7 +493,7 @@ Weitere Informationen [Instanzeneinstellungen](../../installation/using/about-in
 
 Vorgänge werden über ein Assistentensystem verwaltet, mit dem der Datenimport in das Produkt und der Datenexport aus dem Produkt vereinfacht werden. Bei Vorgängen wird aus Gründen der Einfachheit und Konsistenz ein Vorlagensystem verwendet. Außerdem können Vorgänge so definiert werden, dass sie nach einem Zeitplan ausgeführt werden.
 
-Weitere Informationen [Import- und Exportvorgänge](../../platform/using/get-started-data-import-export.md).
+Weitere Informationen über [Import- und Exportvorgänge](../../platform/using/get-started-data-import-export.md).
 +++
 
 +++**Listen**
@@ -575,7 +575,7 @@ Weitere Informationen zu [Zielen](../../mrm/using/creating-and-managing-tasks.md
 
 Der Angebotskatalog ist ein Satz von in Adobe Campaign definierten Angeboten, die während einer Interaktion ausgewählt werden können. Der Katalog ist hierarchisch strukturiert, wobei jeder Knoten einer Kategorie entspricht.
 
-Weitere Informationen [Angebotskatalog](../../interaction/using/offer-catalog-overview.md).
+Weitere Informationen zum [Angebotskatalog](../../interaction/using/offer-catalog-overview.md).
 +++
 
 +++**Angebotskontakt**
@@ -596,7 +596,7 @@ Weitere Informationen über [Campaign Interaction](../../interaction/using/inter
 
 Die **Design-Umgebung** des Angebots ist die Umgebung, in der Benutzende Angebote erstellen, Typologieregeln definieren und das Schema auswählen, auf das sich die Angebote beziehen sollen. Die Tabelle zum Speichern der erstellten Angebotsvorschläge wird ebenfalls von der Umgebung definiert. Standardmäßig verfügt das Interaktion-Add-on über eine **Design**-Umgebung und eine **Live**-Umgebung, die mit der Design-Umgebung verknüpft ist. Beide Umgebungen sind so vorkonfiguriert, dass die integrierte Empfängertabelle ausgewählt ist.
 
-Weitere Informationen [Angebotserstellungsumgebungen](../../interaction/using/fundamental-principles.md).
+Weitere Informationen über [Design-Umgebungen von Angeboten](../../interaction/using/fundamental-principles.md).
 +++
 
 +++**Angebotsmodul-Schlichtung**
@@ -623,7 +623,7 @@ Weitere Informationen über [Campaign Interaction](../../interaction/using/inter
 
 Die Angebotsumgebung ist der Stammordner, in dem der Angebotskatalog, seine verfügbaren Platzierungen und die vordefinierten Filter der Umgebung definiert werden. Benutzende müssen für jede Zielgruppendimension eine Umgebung erstellen. Es gibt zwei Arten von Angebotsumgebungen: Design und Live.
 
-Weitere Informationen [Angebotsumgebungen](../../interaction/using/fundamental-principles.md).
+Weitere Informationen über [Angebotsumgebungen](../../interaction/using/fundamental-principles.md).
 +++
 
 +++**Live-Umgebung des Angebots**
@@ -632,7 +632,7 @@ Weitere Informationen [Angebotsumgebungen](../../interaction/using/fundamental-p
 
 Die Live-Umgebung des Angebots ist mit einer **Design-Umgebung** von Campaign verknüpft. Sie enthält schreibgeschützte Angebote, deren Inhalte und Eignung in der **Design-Umgebung** genehmigt wurden. Diese Angebote können jetzt zur Präsentation auf einer Website oder zur Einfügung in eine ausgehende Nachricht ausgewählt werden.
 
-Weitere Informationen [Live-Umgebungen für Angebote](../../interaction/using/fundamental-principles.md).
+Weitere Informationen über [Live-Umgebungen von Angeboten](../../interaction/using/fundamental-principles.md).
 +++
 
 +++**Regeln der Angebotsunterbreitung**
@@ -666,7 +666,7 @@ Weitere Informationen über [Angebotsvorschläge](../../interaction/using/creati
 
 *Kontext: Campaign Interaction*
 
-Eine Angebotsdarstellung besteht aus Informationen, die vom Kanal zur Anzeige des Angebots verwendet werden. Die Angebotsdarstellung kann ausgehend von der Rendering-Funktion der Platzierung erstellt werden, auf der das Angebot dargestellt wird, oder direkt in die Benutzeroberfläche eingegeben werden (z. B. im HTML-Block). Ein Angebot kann durch eine Platzierung dargestellt werden.
+Eine Angebotsdarstellung enthält Informationen, die vom Kanal zur Anzeige des Angebots verwendet werden. Die Angebotsdarstellung kann in der Rendering-Funktion der Platzierung festgelegt werden, in der das Angebot dargestellt wird, oder direkt in die Benutzeroberfläche eingegeben werden (z. B. im HTML-Block). Ein Angebot kann durch eine Platzierung dargestellt werden.
 
 Weitere Informationen über [Campaign Interaction](../../interaction/using/interaction-and-offer-management.md).
 +++
@@ -686,7 +686,7 @@ Weitere Informationen über [Angebotssimulationen](../../interaction/using/about
 
 Eine Platzierung ist ein Ordner, der festlegt, wo das Angebot gezeigt wird. Durch die Definition einer Platzierung können Sie den verwendeten Kanal festlegen, den Inhalt des Angebots erstellen und die präsentierten Angebote spezifizieren. Die Platzierung bildet die Schnittstelle zwischen Kanal und Angebotsmodul.
 
-Weitere Informationen [Platzierung](../../interaction/using/creating-offer-spaces.md).
+Weitere Informationen über [Platzierungen](../../interaction/using/creating-offer-spaces.md).
 +++
 
 +++**Angebotsthemen**
@@ -755,7 +755,7 @@ Weitere Informationen über die [Palette](../../workflow/using/building-a-workfl
 
 Informationen zur Leistungsüberwachung werden auf der Registerkarte &quot;Monitoring&quot; angezeigt. Zu sehen sind Metriken für das zugrunde liegende System, z. B. Speicher- und CPU-Auslastung, SMTP-Server-Statistiken, Server-Prozesse und andere relevante Informationen.
 
-Weitere Informationen [Leistungsüberwachung](../../production/using/monitoring-processes.md).
+Weitere Informationen über die [Leistungsüberwachung](../../production/using/monitoring-processes.md).
 +++
 
 +++**Gestaltungsbausteine**
@@ -877,7 +877,7 @@ Weitere Informationen zu [Schemata](../../configuration/using/about-schema-refer
 
 Mit der Schemaerweiterung können Sie die vordefinierten Schemata so anpassen, dass sie bestmöglich zu Ihren geschäftlichen Anwendungsfällen passen. So können Sie beispielsweise das Feld &quot;Treue&quot; zur Empfängertabelle hinzufügen.
 
-Weitere Informationen [Schemaerweiterung](../../configuration/using/extending-a-schema.md).
+Weitere Informationen über die [Schemaerweiterung](../../configuration/using/extending-a-schema.md).
 +++
 
 +++**Testadressen**
@@ -931,14 +931,14 @@ Weitere Informationen zur [Zielgruppenvalidierung](../../workflow/using/local-ap
 
 Zieldaten sind die in der Arbeitstabelle (Transition) eines Workflows gespeicherten Daten. Diese Daten stehen innerhalb des Versands zur Personalisierung des Versandinhalts oder zur Definition der Logik dynamischer Elemente des Versands zur Verfügung.
 
-Weitere Informationen [Zielgruppendaten](../../workflow/using/data-life-cycle.md#target-data).
+Weitere Informationen über [Zielgruppendaten](../../workflow/using/data-life-cycle.md#target-data).
 +++
 
 +++**Zielgruppen-Mapping**
 
 Zielgruppen-Mapping ist die Zuordnung von Versandkanälen zu einem bestimmten Datentyp. Zielgruppen-Mappings definieren, wie verschiedene Versandkanäle mit den Datenfeldern eines Schemata verknüpft werden. Im Zielgruppen-Mapping wird definiert, wie der Versand durch Campaign an diesen Datentyp unter Verwendung eines bestimmten Felds oder Ausdrucks erfolgt.
 
-Weitere Informationen [Zielgruppen-Mapping](../../delivery/using/selecting-a-target-mapping.md).
+Weitere Informationen über das [Zielgruppen-Mapping](../../delivery/using/selecting-a-target-mapping.md).
 +++
 
 +++**Zielgruppenaktivitäten**
@@ -1017,9 +1017,9 @@ Weitere Informationen zu [Transaktionsnachrichten](../../message-center/using/ab
 <!------- USEFUL HERE??----->
 +++**Ausgelöste Kampagnen**
 
-Ausgelöste Kampagnen sind Kampagnen, die ausgeführt werden, wenn in einem Workflow eine API-Anfrage empfangen wird. API-Aufrufe werden von einer Signal-Aktivität im Workflow genutzt, der die Ausführung des Workflows initiiert.
+Ausgelöste Kampagnen sind Kampagnen, die ausgeführt werden, wenn in einem Workflow eine API-Anfrage empfangen wird. API-Aufrufe werden im Workflow von einer Signal-Aktivität empfangen, die die Ausführung des Workflows auslöst.
 
-Weitere Informationen [Ausgelöste Kampagnen](../../workflow/using/external-signal.md).
+Weitere Informationen über [ausgelöste Kampagnen](../../workflow/using/external-signal.md).
 +++
 
 <!--
@@ -1047,7 +1047,7 @@ Weitere Informationen zu [Typologien](../../campaign-opt/using/about-campaign-ty
 
 Typologieregeln sind Geschäftsregeln, die im Rahmen der Analysephase des Versands implementiert werden. Mit Typologieregeln werden der Versandinhalt (Kontrollregeln) oder die Zielgruppe des Versands (Filterregeln) oder andere Logiken (Druckregeln) geprüft, die geschäftliche Anforderungen durchsetzen. Regeln sind granulare Elemente, die in einer oder mehreren Typologien enthalten sein können.
 
-Weitere Informationen [Typologieregeln](../../campaign-opt/using/about-campaign-typologies.md#typology-rules).
+Weitere Informationen über [Typologieregeln](../../campaign-opt/using/about-campaign-typologies.md#typology-rules).
 +++
 
 ## U – Z {#sec-6}

@@ -9,7 +9,7 @@ exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 5792ad762befb97888ad32406d3bcb7f97df3fa7
 workflow-type: tm+mt
 source-wordcount: '5017'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -25,15 +25,15 @@ Die entsprechenden Aktualisierungen finden Sie in den [Versionshinweisen zu Adob
 
 ### November 2022 {#nov-2022}
 
-Der Abschnitt zu den Versionshinweisen wurde mit Verbesserungen und Patches in Version 7.3.2 aktualisiert. [Weitere Informationen](latest-release.md)
+Der Abschnitt zu den Versionshinweisen wurde aktualisiert und enthält jetzt Verbesserungen und Patches in Version 7.3.2. [Weitere Informationen](latest-release.md)
 
-Die Kompatibilitätsmatrix wurde mit Teradata 17-Unterstützung aktualisiert. [Weitere Informationen](compatibility-matrix.md)
+Die Kompatibilitätsmatrix wurde aktualisiert und durch die Teradata 17-Unterstützung ergänzt. [Weitere Informationen](compatibility-matrix.md)
 
-Der Abschnitt zur Datei- und Ressourcenverwaltung wurde mit zusätzlichen Informationen zum Abschnitt **uploadWhiteList** -Attribut. [Weitere Informationen](../../installation/using/file-res-management.md)
+Der Abschnitt zur Datei- und Ressourcenverwaltung wurde durch zusätzliche Informationen zum Attribut **uploadWhiteList** ergänzt. [Weitere Informationen](../../installation/using/file-res-management.md)
 
-Die Dokumentation zu Sicherheitszonen wurde mit zusätzlichen Informationen zu **allowDebug** Attribut. [Weitere Informationen](../../installation/using/security-zones.md#recommendations)
+Die Dokumentation zu Sicherheitszonen wurde durch zusätzliche Informationen zum Attribut **allowDebug** ergänzt. [Weitere Informationen](../../installation/using/security-zones.md#recommendations)
 
-Das Migrationshandbuch wurde aktualisiert - Verweise auf nicht unterstützte Adobe Campaign-Versionen wurden entfernt. [Weitere Informationen](../../migration/using/about-migration.md)
+Das Migrationshandbuch wurde aktualisiert. Verweise auf nicht unterstützte Adobe Campaign-Versionen wurden entfernt. [Weitere Informationen](../../migration/using/about-migration.md)
 
 
 ### Juli 2022 {#july-2022}

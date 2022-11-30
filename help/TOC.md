@@ -9,7 +9,7 @@ type: Documentation
 source-git-commit: 5792ad762befb97888ad32406d3bcb7f97df3fa7
 workflow-type: tm+mt
 source-wordcount: '2524'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -583,7 +583,7 @@ ht-degree: 99%
       + [Message Center-Verarbeitungsdauer](message-center/using/message-center-processing-time.md)
    + [Anwendungsbeispiel](message-center/using/transactional-email-with-attachments.md)
 + Mit Social Media integrieren {#integrating-with-social-media}
-   + [Über Social Marketing](social/using/about-social-marketing.md)
+   + [Über Social-Media-Marketing](social/using/about-social-marketing.md)
 + Handbuch zur Installation und Konfiguration {#installing-campaign-classic}
    + Architektonische Grundsätze {#architecture-and-hosting-models}
       + [Allgemeine Architektur](installation/using/general-architecture.md)
@@ -824,8 +824,8 @@ ht-degree: 99%
    + Aktualisierungen und Kompatibilität{#technote-migration}
       + [Technotes](technotes/using/technote.md)
       + [Neuer Zustellbarkeits-Server](technotes/using/deliverability-server.md)
-      + [Apache-Sicherheits-Update](technotes/using/acc-apache-upgrade.md)
-      + [Systemaktualisierungen für 2023](technotes/using/tech-stack-upgrade.md)
+      + [Apache-Sicherheits-Upgrade](technotes/using/acc-apache-upgrade.md)
+      + [System-Upgrades für 2023](technotes/using/tech-stack-upgrade.md)
       + [IMS-Aktualisierungen](technotes/using/ims-updates.md)
       + [Beendigung der Unterstützung für TLS 1.0 und 1.1](technotes/using/eol-tls-support.md)
    + E-Mails und Push-Benachrichtigungen{#technotes-email}

@@ -7,7 +7,7 @@ exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
 source-git-commit: 2d5166c355ee090639dcc52866252bae6beb81f6
 workflow-type: tm+mt
 source-wordcount: '2069'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ Die Implementierung des Enhanced MTA kann sich auf einige der bestehenden Campai
 
 **Was ist der Enhanced MTA?**
 
-Adobe Campaign kann jetzt aktualisiert werden, um einen neuen MTA (Mail Transfer Agent) zu verwenden, der den kommerziellen E-Mail-MTA von SparkPost mit dem Namen ausführt **Momentum**.
+Adobe Campaign kann jetzt auf einen neuen MTA (Mail Transfer Agent) aktualisiert werden, der den kommerziellen E-Mail-MTA von SparkPost namens **Momentum** verwendet.
 
 Momentum steht für eine innovative, hochleistungsfähige MTA-Technologie, die eine intelligentere Behandlung von Bounce-E-Mails und eine automatische Zustellbarkeitsoptimierung beinhaltet, die den Absendern hilft, optimale Zustellraten im Posteingang zu erreichen und zu erhalten. <!--More than 37% of the world's business email is sent using SparkPost's MTA technology.-->
 
@@ -117,7 +117,7 @@ Weitere Informationen zu Typologien finden Sie in [diesem Abschnitt](../../campa
 
 ### Neue MX-Regeln
 
-Die Regeln der MX-Verwaltung für den Versanddurchsatz sind nicht mehr in Gebrauch. Der Enhanced MTA verfügt über eigene MX-Regeln, mit denen Sie Ihren Durchsatz anhand Ihrer historischen E-Mail-Reputation und dem Echtzeit-Feedback, das von den Domänen stammt, von denen Sie E-Mails senden, nach Domain anpassen können.
+Die Regeln der MX-Verwaltung für den Versanddurchsatz sind nicht mehr in Gebrauch. Der Enhanced MTA verwendet eigene MX-Regeln. Mit diesen kann Ihr Durchsatz für jede Domain anhand Ihrer historischen E-Mail-Reputation und dem Echtzeit-Feedback von den Domains angepasst werden, über die Sie E-Mails senden.
 
 Weiterführende Informationen zur MX-Konfiguration finden Sie in [diesem Abschnitt](../../installation/using/email-deliverability.md#mx-configuration).
 
@@ -143,9 +143,9 @@ Weitere Informationen zum Versanddurchsatz finden Sie in [diesem Abschnitt](../.
 
 ### Weitere Zustellversuche
 
-Die Einstellungen für den erneuten Versuch im Versand werden von Campaign nicht mehr verwendet. Versuche mit Softbounces und die Zeitdauer zwischen ihnen werden durch den erweiterten MTA bestimmt, der auf dem Typ und der Schwere der Bounce-Antworten basiert, die von der E-Mail-Domain der Nachricht zurückgegeben werden.
+Die Einstellungen für weitere Zustellversuche in den Versandeigenschaften werden von Campaign nicht mehr verwendet. Weitere Zustellversuche aufgrund von Softbounces und die Zeitdauer zwischen ihnen werden durch den Enhanced MTA bestimmt, basierend auf Typ und Prioritätsstufe der Bounce-Antworten, die von der E-Mail-Domain der Nachricht zurückgegeben werden.
 
-Weitere Informationen zu Wiederholungen finden Sie unter [diesem Abschnitt](steps-sending-the-delivery.md#configuring-retries).
+Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](steps-sending-the-delivery.md#configuring-retries).
 
 ### Gültigkeitszeitraum
 
@@ -188,7 +188,7 @@ Mit der EFS-Funktion (E-Mail-Feedback-Service) wird der Status jeder E-Mail gena
 >
 >Der E-Mail-Feedback-Service ist derzeit als Funktion der Betaversion verfügbar.
 >
->Wenn Sie an der Teilnahme an diesem Betaprogramm interessiert sind, füllen Sie bitte [dieses Formulars](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4Rol2vQGupxItW9_BerXV6VUQTJPN1Q5WUI4OFNTWkYzQjg3WllUSDAxWi4u) und wir kommen zu Ihnen zurück.
+>Wenn Sie an diesem Beta-Programm teilnehmen möchten, füllen Sie [dieses Formular](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4Rol2vQGupxItW9_BerXV6VUQTJPN1Q5WUI4OFNTWkYzQjg3WllUSDAxWi4u) aus, und wir werden uns bei Ihnen melden.
 
 Nachdem der Versand gestartet wurde, ändert sich der **[!UICONTROL Erfolgsprozentsatz]** nicht, wenn die Nachricht erfolgreich von Campaign an den Enhanced MTA weitergeleitet wurde.
 

@@ -7,7 +7,7 @@ exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
 source-git-commit: 1a2e6a0bc754a1236f64b35e99c1be08f1066f75
 workflow-type: tm+mt
 source-wordcount: '1136'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -216,4 +216,4 @@ Bei Microsoft Dynamics 365 werden folgende Attributtypen unterstützt/nicht unte
 | Regarding | Nein |
 | PartyList | Nein |
 | ManagedProperty | Nein |
-| MultiSelect-Optionssatz | Nein |
+| Option MultiSelect ist festgelegt | Nein |

@@ -6,7 +6,7 @@ exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
 source-git-commit: ddac38fb79101bcff910345c9b04c7cc5eaf39a6
 workflow-type: tm+mt
 source-wordcount: '183'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 97%
 
 ## Neue Funktionen
 
-* **[November Release ist live!](rn/using/latest-release.md)**<br/> In den Versionshinweisen finden Sie neue Funktionen, Verbesserungen und Fehlerbehebungen.
+* **[Die November-Version ist live!](rn/using/latest-release.md)**<br/> In den Versionshinweisen finden Sie neue Funktionen, Verbesserungen und Fehlerbehebungen.
 
 * **[Release-Programm 2022](technotes/using/dc-migration.md)**<br/> Upgrade Ihrer Umgebung und Verbesserung von Sicherheit, Infrastruktur und Leistung
 

@@ -9,7 +9,7 @@ exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 0ecf9c69cc4b444feda1e42701a3a27f2b2e7eeb
 workflow-type: tm+mt
 source-wordcount: '1684'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -45,14 +45,14 @@ Kunden wird empfohlen, die Nutzung der Funktionen in ihrer aktuellen Implementie
   </tr>
 <tr>
  <td>Social Marketing    mit Facebook</td>
- <td>Social Marketing mit Facebook wird jetzt nicht mehr unterstützt. Sie können die Twitter-Integration verwenden, um in Social Media zu posten, oder mit Adobe arbeiten, um einen benutzerdefinierten Kanal zu erstellen.
+ <td>Social Marketing mit Facebook wird jetzt nicht mehr unterstützt. Sie können die Twitter-Integration verwenden, um in den sozialen Medien zu posten, oder in Zusammenarbeit mit Adobe einen benutzerdefinierten Kanal erstellen.
  <p></p>
   <p>Geplantes Datum für die Entfernung: Ende 2023</p>
   </td>
 </tr>
 <tr>
- <td>ACS Connector</td>
- <td>ACS Connector (Prime-Angebot) wird jetzt nicht mehr unterstützt. Sie können die Export-/Importfunktionen von Campaign verwenden, um Daten in beide Produkte zu extrahieren und einzufügen.<p></p>
+ <td>ACS-Connector</td>
+ <td>ACS-Connector (Prime-Angebot) wird jetzt nicht mehr unterstützt. Sie können die Export-/Importfunktionen von Campaign verwenden, um Daten in beide Produkte einzufügen und sie aus ihnen zu extrahieren.<p></p>
   <p>Geplantes Datum für die Entfernung: Ende 2023</p>
   </td>
 </tr>
