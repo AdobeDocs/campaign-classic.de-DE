@@ -3,10 +3,11 @@ product: campaign
 title: Erste Schritte mit Cubes
 description: Erste Schritte mit Cubes
 feature: Reporting
-source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
-workflow-type: tm+mt
+exl-id: 71d24f03-d41d-49bc-b9a5-8237902f7d6a
+source-git-commit: c1be67d32c39d20f7794b6019a6e03c9ec29df94
+workflow-type: ht
 source-wordcount: '345'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -44,4 +45,4 @@ Verwenden Sie das Marketing Analytics-Modul von Campaign, um:
 1. Die Erstellung von Abfragen über in einem Cube berechnete und aggregierte Daten.
 1. Die Identifizierung von Populationen und deren Referenzierung in Listen.
 
-Erfahren Sie, wie Sie Cubes erstellen und verwenden können in [Dokumentation zu Adobe Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/analytics/reports/cubes/gs-cubes.html){target=&quot;_blank&quot;}.
+Wie Sie Cubes erstellen und verwalten, erfahren Sie in der [Dokumentation zu Adobe Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/analytics/reports/cubes/gs-cubes.html?lang=de){target=&quot;_blank&quot;}.
