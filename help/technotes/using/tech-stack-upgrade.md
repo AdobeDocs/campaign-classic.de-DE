@@ -6,9 +6,9 @@ hide: true
 hidefromtoc: true
 exl-id: 78949d94-60b3-44f1-8e5a-d61b5b723e87
 source-git-commit: bffad77458ab0b4d40490a52c64c99a0fe882d22
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '499'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Die Campaign-Infrastruktur beruht auf Drittanbietersystemen, die regelmäßig mi
 
 Als **Kunde von Hosted oder Managed Cloud Services** werden Sie von Adobe über diese Upgrades informiert, wenn sie benötigt werden. Sie müssen Umgebungs-Upgrades gemäß den Empfehlungen durchführen, um die Konformität des Systems sicherzustellen.
 
-Als **On-Premise- oder Hybrid-Kunde** empfiehlt Adobe dringend, Ihre System- und Campaign-Versionen entsprechend demselben Kalender zu aktualisieren.
+Für **On-Premise- oder Hybrid-Kunden** empfiehlt Adobe dringend, die System- und Campaign-Versionen entsprechend demselben Kalender zu aktualisieren.
 
 Aus Sicherheitsgründen müssen Sie [das neueste Campaign-Build installieren](#ac-upgrade), und anschließend Ihr [Betriebssystem](#os-upgrade) und/oder Ihr [Relation Database Management System (RDBMS)](#pg-upgrade) aktualisieren.
 
@@ -30,7 +30,7 @@ Aus Sicherheitsgründen müssen Sie [das neueste Campaign-Build installieren](#a
 
 **Sind Sie betroffen?**
 
-Wenn Sie von der [Betriebssystemaktualisierung](#os-upgrade) und/oder [Datenbanksystemaktualisierung](#pg-upgrade) Im Folgenden wird beschrieben, wie Sie Ihre Campaign-Umgebungen auf [die neueste Version 7.3.2](../../rn/using/latest-release.md#release-7-3-2), die mit diesen Systemen kompatibel ist.
+Beim [Betriebssystem-Upgrade](#os-upgrade) und/oder [Datenbanksystem-Upgrade](#pg-upgrade) – wie im Folgenden genauer beschrieben – müssen Campaign-Umgebungen auf [die neueste Version 7.3.2](../../rn/using/latest-release.md#release-7-3-2) aktualisiert werden, die mit diesen Systemen kompatibel ist.
 
 **Wie wird die Aktualisierung durchgeführt?**
 
@@ -43,7 +43,7 @@ Wenn Sie von der [Betriebssystemaktualisierung](#os-upgrade) und/oder [Datenbank
 
 **Sind Sie betroffen?**
 
-Wenn Sie Campaign auf einem Debian-Betriebssystem ausführen, müssen Sie Ihre Campaign-Infrastruktur auf **Debian 11** aktualisieren, um von den neuesten Debian-Sicherheitsaktualisierungen zu profitieren. Beachten Sie, dass die Sicherheitsunterstützung für Debian 9 bis zum 30. Juni 2023 verfügbar sein wird.
+Wenn Sie Campaign auf einem Debian-Betriebssystem ausführen, müssen Sie Ihre Campaign-Infrastruktur auf **Debian 11** aktualisieren, um von den neuesten Debian-Sicherheitsaktualisierungen zu profitieren. Bitte beachten, dass die Sicherheitsunterstützung für Debian 9 nur bis zum 30. Juni 2023 verfügbar sein wird.
 
 **Wie wird die Aktualisierung durchgeführt?**
 
@@ -55,7 +55,7 @@ Wenn Sie Campaign auf einem Debian-Betriebssystem ausführen, müssen Sie Ihre C
 
 **Sind Sie betroffen?**
 
-Wenn Ihr Campaign-Datenbanksystem PostgreSQL ist, müssen Sie auf **PostgreSQL 14** aktualisieren, um in den Genuss der neuesten PostgreSQL-Innovationen und -Sicherheitsaktualisierungen zu gelangen. Beachten Sie, dass PostgreSQL 11 am 9. November 2023 das Ende der Lebensdauer erreichen wird.
+Wenn Ihr Campaign-Datenbanksystem PostgreSQL ist, müssen Sie auf **PostgreSQL 14** aktualisieren, um in den Genuss der neuesten PostgreSQL-Innovationen und -Sicherheitsaktualisierungen zu gelangen. Bitte beachten, dass für PostgreSQL 11 am 9. November 2023 das Ende der Lebensdauer und damit der Unterstützung erreicht sein wird.
 
 **Wie wird die Aktualisierung durchgeführt?**
 
