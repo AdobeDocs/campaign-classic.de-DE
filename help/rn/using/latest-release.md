@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: f37f6c080bc6fb70cbd3f853db4ad8685ae8ebf8
-workflow-type: ht
-source-wordcount: '2739'
-ht-degree: 100%
+source-git-commit: 1c0aeecd72a35fc6e2e72f4b042df2ff39e5cb6f
+workflow-type: tm+mt
+source-wordcount: '2773'
+ht-degree: 98%
 
 ---
 
@@ -29,7 +29,8 @@ _21. November 2022_
 
 **Aktualisierungen zur Kompatibilität**
 
-* Adobe Campaign ist jetzt mit PostgreSQL 14 kompatibel.
+* Adobe Campaign ist jetzt mit PostgreSQL 14 kompatibel. Weiterführende Informationen finden Sie in diesem Abschnitt [Technote](../../technotes/using/tech-stack-upgrade.md).
+
 * Nach dem Auslaufen von Microsoft Internet Explorer 11 verwendet die HTML-Render-Engine für Dashboards in der Client-Konsole nun Edge Chromium. (NEO-20741)
 
 Weitere Informationen finden Sie in der [Kompatibilitätsmatrix für Campaign](../../rn/using/compatibility-matrix.md#RDBMSservers).
@@ -108,7 +109,7 @@ _1. Juli 2022_
 * Das Adobe Campaign-SDK unterstützt jetzt Android 12 und iOS 15 für Push-Benachrichtigungen.
 * Adobe Campaign ist jetzt mit MySQL 8 kompatibel.
 * Adobe Campaign ist jetzt mit Windows 11 kompatibel.
-* Adobe Campaign ist jetzt mit Internet Explorer 11 kompatibel.
+* Adobe Campaign ist jetzt mit Internet Explorer 11 kompatibel. Weiterführende Informationen finden Sie in diesem Abschnitt [Technote](../../technotes/using/tech-stack-upgrade.md).
 
 Weitere Informationen finden Sie in der [Kompatibilitätsmatrix für Campaign](../../rn/using/compatibility-matrix.md#OperatingSystems).
 
@@ -241,3 +242,4 @@ Adobe Campaign ist jetzt mit Windows Server 2019 kompatibel. Weitere Information
 * Fehlerkorrektur – Bei der Vorschau von E-Mail-Sendungen, die mit einem Workflow verbunden sind, treten jetzt keine Anzeigefehler mehr auf. (NEO-37840)
 * Fehlerkorrektur – Gültige Tabellen mit Listenwerten werden jetzt nicht mehr vom Datenbankbereinigungs-Workflow gelöscht. (NEO-34911)
 * Fehlerkorrektur – Der Abrechnungs-Workflows bei Marketing-Instanzen stürzt jetzt nicht mehr ab.
+* Fehlerkorrektur - Der Versand wird jetzt nicht mehr an eine größere Anzahl von Empfängern als erwartet gesendet. (NEO-45108)
