@@ -7,7 +7,7 @@ exl-id: 655b5928-b005-442f-b026-2f1b0c1abb99
 source-git-commit: 8fa50d17a9ff36ccc310860ac93771590cfd76fd
 workflow-type: tm+mt
 source-wordcount: '985'
-ht-degree: 28%
+ht-degree: 32%
 
 ---
 
@@ -70,8 +70,8 @@ Falls relevant, können Sie die standardmäßige Empfängertabelle mit den nativ
 
 Bei Bedarf können Sie sie mit zwei Verfahren erweitern:
 
-* Erweitern einer vorhandenen Tabelle mit neuen Feldern. Beispielsweise können Sie der Empfängertabelle ein neues Feld &quot;Treueprogramm&quot;hinzufügen.
-* Erstellen Sie eine neue Tabelle, z. B. eine &quot;Kauf&quot;-Tabelle, die alle von jedem Profil der Datenbank getätigten Käufe auflistet, und verknüpfen Sie sie mit der Empfängertabelle.
+* Erweitern einer vorhandenen Tabelle mit neuen Feldern. Sie können der Empfängertabelle beispielsweise ein neues Feld „Treue“ hinzufügen.
+* Erstellen Sie eine neue Tabelle, z. B. eine Tabelle „Einkauf“, in der alle von den einzelnen Profilen der Datenbank getätigten Käufe aufgelistet sind, und verknüpfen Sie sie mit der Empfängertabelle.
 
 Weitere Informationen zum Konfigurieren von Erweiterungsschemata zum Erweitern des konzeptionellen Datenmodells finden Sie unter [Über die Schemabearbeitung](../../configuration/using/about-schema-edition.md).
 
