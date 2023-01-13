@@ -3,10 +3,10 @@ product: campaign
 title: Migrieren zum Adobe Analytics Connector
 description: Häufig gestellte Fragen zum Campaign und Analytics Connector
 exl-id: 5bf61654-3d68-4560-a93f-7a768a2c5be4
-source-git-commit: 9667bb436ffc591b05945dadd683e5f590ae43e5
-workflow-type: ht
-source-wordcount: '815'
-ht-degree: 100%
+source-git-commit: 62ccc9e52de1bc416284e5b1bf48d69dc603923a
+workflow-type: tm+mt
+source-wordcount: '858'
+ht-degree: 94%
 
 ---
 
@@ -20,9 +20,11 @@ Am 1. August 2021 wurde Adobe Campaign Classic aus der veralteten Daten-Connecto
 
 Sie müssen die neue Adobe Analytics-Connector-Integration in Adobe Exchange **implementieren**, die die veraltete Daten-Connector-Integration ersetzt. Weitere Informationen zum Adobe Analytics-Connector finden Sie auf [dieser Seite](../../platform/using/adobe-analytics-connector.md).
 
+Fragen zu diesen Änderungen finden Sie in den [Häufig gestellten Fragen](#faq-aa). Weitere Informationen erhalten Sie bei der [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+
 >[!NOTE]
 >
->Fragen zu diesen Änderungen finden Sie in den [Häufig gestellten Fragen](#faq-aa). Weitere Informationen erhalten Sie bei der [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Wenn Sie von einem vorhandenen Adobe Analytics Data Connector (ehemals &quot;Genesis-Integration&quot;) migrieren und die neue Klassifizierungsarchitektur in Adobe Analytics verwenden, benötigen Sie Build-Versionen ab 7.3.1 oder 8.4.1, um zu dem neuen Adobe Analytics Connector migrieren zu können.
 
 ## Was hat sich geändert?
 
