@@ -4,10 +4,10 @@ title: Über Zielgruppenbestimmungsaktivitäten
 description: Über Zielgruppenbestimmungsaktivitäten
 feature: Workflows, Audiences, Targeting Activity
 exl-id: 5028ad4c-e427-4e78-962d-c5ea54390db5
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
-workflow-type: ht
+source-git-commit: 743baa49e5d62ed1c2f7f635f6bf120a67646e63
+workflow-type: tm+mt
 source-wordcount: '443'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -15,14 +15,14 @@ ht-degree: 100%
 
 ![](../../assets/v7-only.svg)
 
-Die in diesem Tab enthaltenen Aktivitäten dienen der Definition einer oder mehrerer Zielpopulationen, welche im Anschluss durch die Aktivitäten Schnittmenge, Vereinigung und Ausschluss gesplittet oder zusammengefasst werden können.
+Mit diesen Aktivitäten können Sie eine oder mehrere Zielgruppen erstellen, indem Sie Sets definieren und im Anschluss durch die Aktivitäten „Schnittmenge“, „Vereinigung“ und „Ausschluss“ teilen oder zusammenfassen.
 
 * **Abfrage**: dient der Erstellung von Abfragen. Siehe [Abfragen erstellen](query.md#creating-a-query).
 * **Inkrementelle Abfrage**: erlaubt es, eine Abfrage auszuführen und deren Ausführung zu planen. Siehe Abschnitt [Inkrementelle Abfrage](incremental-query.md).
 * **Liste lesen**: erlaubt es, in einer Liste enthaltene Daten zu verwenden. Siehe Abschnitt [Verwendung von Daten aus einer Liste: Liste lesen](../../platform/using/import-export-workflows.md#using-data-from-a-list--read-list).
 * **Vereinigung**: dient der Zusammenfassung der Ergebnisse mehrerer Aktivitäten in einer Zielgruppe. Siehe Abschnitt [Vereinigung](union.md).
 * **Schnittmenge**: dient der Extraktion der gemeinsamen Population aus den eingehenden Aktivitäten. Siehe Abschnitt [Schnittmenge](intersection.md).
-* **Ausschluss**: dient dem Ausschluss von Populationen aus der Hauptzielgruppe. Siehe Abschnitt [Schnittmenge](intersection.md).
+* **Ausschluss**: dient dem Ausschluss von Populationen aus der Hauptzielgruppe. Siehe Abschnitt [Ausschluss](exclusion.md) Abschnitt.
 * **Aufspaltung**: ermöglicht die Aufspaltung einer Zielgruppe in mehrere Teilmengen. Siehe Abschnitt [Aufspaltung](split.md).
 * **Segmente**: liefert eine Übersicht über die verschiedenen Teilmengen in Form von Datenspalten (nützlich insbesondere bei Bearbeitung einer großen Anzahl an Teilmengen). Weitere Informationen hierzu finden Sie im Abschnitt [Segmente](cells.md).
 * **Angebote pro Segment**: dient der Zuweisung von unterschiedlichen Angeboten in Abhängigkeit vom Populationssegment. Siehe Abschnitt [Angebote pro Segment](offers-by-cell.md).
