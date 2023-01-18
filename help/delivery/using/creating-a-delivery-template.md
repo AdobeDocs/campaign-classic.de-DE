@@ -4,10 +4,10 @@ title: Erstellen einer Versandvorlage
 description: Erstellen einer Versandvorlage
 feature: Delivery Templates
 exl-id: 40a03e04-56c7-48c0-95b8-aa7bf1121048
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
-workflow-type: ht
-source-wordcount: '387'
-ht-degree: 100%
+source-git-commit: 65e80f16a6beaee89b51636017c42766589e179e
+workflow-type: tm+mt
+source-wordcount: '392'
+ht-degree: 90%
 
 ---
 
@@ -33,6 +33,10 @@ Weitere Informationen zum Konfigurationsmodus finden Sie unter [Vorlage einem Ve
 
 ## Neue Vorlage erstellen {#creating-a-new-template}
 
+>[!NOTE]
+>
+>Um Konfigurationsfehler zu vermeiden, empfiehlt Adobe, eine native Vorlage zu duplizieren und ihre Einstellungen anzupassen, anstatt eine neue Vorlage zu erstellen.
+
 Führen Sie zur Konfiguration einer Versandvorlage die folgenden Schritte aus:
 
 1. Öffnen Sie den Campaign-Explorer.
@@ -40,7 +44,7 @@ Führen Sie zur Konfiguration einer Versandvorlage die folgenden Schritte aus:
 
    ![](assets/delivery_template_1.png)
 
-1. Klicken Sie in der Symbolleiste auf **Neu**, um eine neue Versandvorlage zu erstellen.
+1. Klicken **Neu** in der Symbolleiste, um eine neue Versandvorlage zu erstellen, oder **Duplizieren** eine vorhandene Vorlage.
 
    ![](assets/delivery_template_2.png)
 
@@ -62,9 +66,6 @@ Führen Sie zur Konfiguration einer Versandvorlage die folgenden Schritte aus:
 
 1. Klicken Sie auf **Speicher**. Ihre Vorlage kann jetzt in einem Versand verwendet werden.
 
->[!NOTE]
->
->Zur Vermeidung von Konfigurationsfehlern wird empfohlen, keine neuen Vorlagen zu erstellen, sondern native Vorlagen zu duplizieren und die Eigenschaften je nach Bedarf anzupassen.
 
 ## Anleitungsvideos {#delivery-template-video}
 

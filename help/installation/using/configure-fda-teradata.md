@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 3a5856c3-b642-4722-97ff-6ae7107efdbe
-source-git-commit: 2594e4943ba24ae65d1fc005da589dc674aa2b0f
+source-git-commit: 65e80f16a6beaee89b51636017c42766589e179e
 workflow-type: tm+mt
 source-wordcount: '1824'
 ht-degree: 70%
@@ -92,7 +92,7 @@ Sie müssen Treiber installieren, damit Teradata die Verbindung zu Campaign hers
 
    * **[!UICONTROL Datenbank]**: Name der Datenbank (optional)
 
-   * **[!UICONTROL Optionen]**: Optionen, die über Teradata weitergegeben werden sollen. Verwenden Sie das folgende Format: &#39;parameter=value&#39;. Verwenden Sie eine halbe Spalte als Trennzeichen zwischen Werten.
+   * **[!UICONTROL Optionen]**: Optionen, die über Teradata weitergegeben werden sollen. Verwenden Sie das folgende Format: &#39;parameter=value&#39;. Verwenden Sie ein Semikolon als Trennzeichen zwischen Werten.
 
    * **[!UICONTROL Zeitzone]**: Die in Teradata festgelegte Zeitzone. [Weitere Informationen](#timezone)
 
