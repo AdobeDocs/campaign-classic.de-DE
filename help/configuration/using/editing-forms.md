@@ -3,7 +3,7 @@ product: campaign
 title: Bearbeiten von Formularen
 description: Bearbeiten von Formularen
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
+source-git-commit: 4af44f38d495d31dec4b9b7a142dbed0c2450d56
 workflow-type: tm+mt
 source-wordcount: '1727'
 ht-degree: 2%
@@ -34,7 +34,7 @@ Um Formulare zu entwerfen, bearbeiten Sie den XML-Inhalt im XML-Editor:
 
 ![](assets/d_ncs_integration_form_edit.png)
 
-[Mehr dazu](form-structure.md#formatting)
+[Weitere Informationen](form-structure.md#formatting)
 
 Klicken Sie auf die Schaltfläche **[!UICONTROL Vorschau]** tab:
 
@@ -44,7 +44,7 @@ Klicken Sie auf die Schaltfläche **[!UICONTROL Vorschau]** tab:
 
 Sie können verschiedene Arten von Eingabeformularen erstellen. Der Formulartyp bestimmt, wie Benutzer im Formular navigieren:
 
-* Konsolenbildschirm
+* Konsolen-Bildschirm
 
    Dies ist der Standardformulartyp. Das Formular besteht aus einer einzelnen Seite.
 
@@ -58,7 +58,7 @@ Sie können verschiedene Arten von Eingabeformularen erstellen. Der Formulartyp 
 
 * Assistent
 
-   Dieses Formular umfasst mehrere schwebende Bildschirme, die in einer bestimmten Sequenz angeordnet sind. Benutzer navigieren von einem Bildschirm zum nächsten. [Mehr dazu](form-structure.md#wizards)
+   Dieses Formular umfasst mehrere schwebende Bildschirme, die in einer bestimmten Sequenz angeordnet sind. Benutzer navigieren von einem Bildschirm zum nächsten. [Weitere Informationen](form-structure.md#wizards)
 
 * Iconbox
 
@@ -72,11 +72,11 @@ Sie können verschiedene Arten von Eingabeformularen erstellen. Der Formulartyp 
 
    ![](assets/notebook_form_preview.png)
 
-* Vertikaler Bereich
+* Vertikale Trennung
 
    Dieses Formular zeigt eine Navigationsstruktur.
 
-* Horizontaler Bereich
+* Horizontale Trennung
 
    Dieses Formular zeigt eine Liste von Elementen an.
 
@@ -88,7 +88,7 @@ In Formularen können Sie Container für verschiedene Zwecke verwenden:
 * Zugriff auf Eingabefelder definieren
 * Verschachteln von Formularen in anderen Formularen
 
-[Mehr dazu](form-structure.md#containers)
+[Weitere Informationen](form-structure.md#containers)
 
 ### Inhalt organisieren
 
@@ -97,7 +97,7 @@ Verwenden Sie Container zum Organisieren von Inhalten in Formularen:
 * Sie können Felder in Abschnitten gruppieren.
 * Sie können mehrseitigen Formularen Seiten hinzufügen.
 
-Verwenden Sie zum Einfügen eines Containers die `<container>` -Element. [Mehr dazu](form-structure.md#containers)
+Verwenden Sie zum Einfügen eines Containers die `<container>` -Element. [Weitere Informationen](form-structure.md#containers)
 
 #### Gruppenfelder
 
@@ -144,7 +144,7 @@ Verwenden Sie Container, um zu definieren, was sichtbar ist, und um den Zugriff 
 
 ### Verschachteln von Formularen
 
-Verwenden Sie Container zum Verschachteln von Formularen in anderen Formularen. [Mehr dazu](#add-pages-to-multipage-forms)
+Verwenden Sie Container zum Verschachteln von Formularen in anderen Formularen. [Weitere Informationen](#add-pages-to-multipage-forms)
 
 ## Verweise auf Bilder
 
@@ -210,7 +210,7 @@ Gehen Sie wie folgt vor, um ein Formular zu erstellen:
 
 1. Fügen Sie die Formularelemente ein.
 
-   Um beispielsweise ein Eingabefeld einzufügen, verwenden Sie die `<input>` -Element. Legen Sie die `xpath` -Attribut der Feldreferenz als XPath-Ausdruck zuweisen. [Mehr dazu](schema-structure.md#referencing-with-xpath)
+   Um beispielsweise ein Eingabefeld einzufügen, verwenden Sie die `<input>` -Element. Legen Sie die `xpath` -Attribut der Feldreferenz als XPath-Ausdruck zuweisen. [Weitere Informationen](schema-structure.md#referencing-with-xpath)
 
    Dieses Beispiel zeigt Eingabefelder, die auf dem `nms:recipient` Schema.
 
@@ -249,7 +249,7 @@ Gehen Sie wie folgt vor, um ein Formular zu erstellen:
 
    | Element | Attribut | Beschreibung |
    | --- | --- | --- |
-   | `<input>` | `read-only:"true"` | Ermöglicht schreibgeschützten Zugriff auf ein Feld |
+   | `<input>` | `read-only="true"` | Ermöglicht schreibgeschützten Zugriff auf ein Feld |
    | `<container>` | `type="visibleGroup" visibleIf="`*edit-expr*`"` | Zeigt eine Feldergruppe bedingt an |
    | `<container>` | `type="enabledGroup" enabledIf="`*edit-expr*`"` | Bedingte Aktivierung einer Feldergruppe |
 
@@ -449,7 +449,7 @@ Gehen Sie wie folgt vor, um ein Factory-Formular zu ändern:
    1. Wählen Sie im Menü **[!UICONTROL Administration]** > **[!UICONTROL Konfiguration]** > **[!UICONTROL Formulare]**.
    1. Wählen Sie ein Formular aus und ändern Sie es.
 
-   Sie können Factory-Datenschemata erweitern, Sie können jedoch keine Factory-Eingabeformulare erweitern. Es wird empfohlen, werksmäßige Eingabeformulare direkt zu ändern, ohne sie neu zu erstellen. Bei Softwareaktualisierungen werden Ihre Änderungen in den Werkseingangsformularen mit den Upgrades zusammengeführt. Wenn die automatische Zusammenführung fehlschlägt, können Sie die Konflikte lösen. [Mehr dazu](../../production/using/upgrading.md#resolving-conflicts)
+   Sie können Factory-Datenschemata erweitern, Sie können jedoch keine Factory-Eingabeformulare erweitern. Es wird empfohlen, werksmäßige Eingabeformulare direkt zu ändern, ohne sie neu zu erstellen. Bei Softwareaktualisierungen werden Ihre Änderungen in den Werkseingangsformularen mit den Upgrades zusammengeführt. Wenn die automatische Zusammenführung fehlschlägt, können Sie die Konflikte lösen. [Weitere Informationen](../../production/using/upgrading.md#resolving-conflicts)
 
    Wenn Sie beispielsweise ein Factory-Schema mit einem zusätzlichen Feld erweitern, können Sie dieses Feld zum zugehörigen Factory-Formular hinzufügen.
 
@@ -459,7 +459,7 @@ Sie können Überprüfungssteuerelemente in Formulare aufnehmen.
 
 ### Schreibgeschützten Zugriff auf Felder gewähren
 
-Um Lesezugriff auf ein Feld zu gewähren, verwenden Sie die `readOnly="true"` -Attribut. Beispielsweise können Sie den Primärschlüssel eines Datensatzes anzeigen, jedoch mit schreibgeschütztem Zugriff. [Mehr dazu](form-structure.md#non-editable-fields)
+Um Lesezugriff auf ein Feld zu gewähren, verwenden Sie die `readOnly="true"` -Attribut. Beispielsweise können Sie den Primärschlüssel eines Datensatzes anzeigen, jedoch mit schreibgeschütztem Zugriff. [Weitere Informationen](form-structure.md#non-editable-fields)
 
 In diesem Beispiel wird der Primärschlüssel (`iRecipientId`) `nms:recipient` Schema wird in schreibgeschütztem Zugriff angezeigt:
 
@@ -489,7 +489,7 @@ Mehr dazu [Ausdrucksfelder](form-structure.md#expression-field) und [Formularkon
 
 ### Werte überprüfen
 
-Sie können JavaScript-SOAP-Aufrufe verwenden, um Formulardaten aus der Konsole zu überprüfen. Verwenden Sie diese Aufrufe zur komplexen Validierung, um beispielsweise einen Wert mit einer Liste zulässiger Werte zu vergleichen. [Mehr dazu](form-structure.md#soap-methods)
+Sie können JavaScript-SOAP-Aufrufe verwenden, um Formulardaten aus der Konsole zu überprüfen. Verwenden Sie diese Aufrufe zur komplexen Validierung, um beispielsweise einen Wert mit einer Liste zulässiger Werte zu vergleichen. [Weitere Informationen](form-structure.md#soap-methods)
 
 1. Erstellen Sie eine Validierungsfunktion in einer JS-Datei.
 
