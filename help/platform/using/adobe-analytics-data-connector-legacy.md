@@ -8,10 +8,10 @@ level: Beginner
 exl-id: 5bd12f65-f468-41ab-bbae-e59a6592a803
 hidefromtoc: true
 hide: true
-source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
+source-git-commit: 1dd0fe6734785b593302ed90db1d150cf6aee00c
 workflow-type: tm+mt
-source-wordcount: '1810'
-ht-degree: 100%
+source-wordcount: '1811'
+ht-degree: 98%
 
 ---
 
@@ -149,7 +149,7 @@ Die Integration von Adobe Campaign in die Analytics-Plattformen geschieht mithil
 1. Im Tab **[!UICONTROL Erweitert]** können Sie fortgeschrittene Parameter ändern.
 
    * **[!UICONTROL Lebensdauer]**: Ermöglicht nach Ablauf des angegebenen Zeitraums (standardmäßig 180 Tage) die Löschung der Webereignisse, die aus Adobe Campaign mithilfe der technischen Workflows abgerufen wurden.
-   * **[!UICONTROL Persistenz]**: Zeitraum (standardmäßig 7 Tage), während dem ein Webereignis (z. B. eine Bestellung) einer Remarketing-Kampagne zugeordnet werden kann.
+   * **[!UICONTROL Persistenz]**: Definieren Sie den Zeitraum, in dem alle Web-Ereignisse (z. B. ein Kauf) einer Remarketing-Kampagne zugeordnet werden können (Standard: 7 Tage.
 
 >[!NOTE]
 >

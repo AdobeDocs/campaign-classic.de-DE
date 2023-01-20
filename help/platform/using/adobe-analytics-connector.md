@@ -6,10 +6,10 @@ feature: Overview
 role: User, Admin
 level: Beginner
 exl-id: 0dc6ce98-dc3e-4242-953e-e7cec55289ff
-source-git-commit: 62ccc9e52de1bc416284e5b1bf48d69dc603923a
+source-git-commit: 1dd0fe6734785b593302ed90db1d150cf6aee00c
 workflow-type: tm+mt
-source-wordcount: '1716'
-ht-degree: 91%
+source-wordcount: '1717'
+ht-degree: 90%
 
 ---
 
@@ -207,7 +207,7 @@ Weiterführende Informationen hierzu finden Sie auf der Seite [Produktprofile f�
 1. Im Tab **[!UICONTROL Erweitert]** können Sie fortgeschrittene Parameter ändern.
 
    * **[!UICONTROL Lebensdauer]**: Ermöglicht nach Ablauf des angegebenen Zeitraums (standardmäßig 180 Tage) die Löschung der Webereignisse, die aus Adobe Campaign mithilfe der technischen Workflows abgerufen wurden.
-   * **[!UICONTROL Persistenz]**: Zeitraum (standardmäßig 7 Tage), während dem ein Webereignis (z. B. eine Bestellung) einer Remarketing-Kampagne zugeordnet werden kann.
+   * **[!UICONTROL Persistenz]**: Definieren Sie den Zeitraum, in dem alle Web-Ereignisse (z. B. ein Kauf) einer Remarketing-Kampagne zugeordnet werden können (Standard: 7 Tage.
 
 >[!NOTE]
 >
