@@ -5,9 +5,9 @@ description: Erstellen einer Versandvorlage
 feature: Delivery Templates
 exl-id: 40a03e04-56c7-48c0-95b8-aa7bf1121048
 source-git-commit: 65e80f16a6beaee89b51636017c42766589e179e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '392'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Weitere Informationen zum Konfigurationsmodus finden Sie unter [Vorlage einem Ve
 
 >[!NOTE]
 >
->Um Konfigurationsfehler zu vermeiden, empfiehlt Adobe, eine native Vorlage zu duplizieren und ihre Einstellungen anzupassen, anstatt eine neue Vorlage zu erstellen.
+>Zur Vermeidung von Konfigurationsfehlern empfiehlt Adobe, keine neuen Vorlagen zu erstellen, sondern eine native Vorlage zu duplizieren und die Eigenschaften je nach Bedarf anzupassen.
 
 Führen Sie zur Konfiguration einer Versandvorlage die folgenden Schritte aus:
 
@@ -44,7 +44,7 @@ Führen Sie zur Konfiguration einer Versandvorlage die folgenden Schritte aus:
 
    ![](assets/delivery_template_1.png)
 
-1. Klicken **Neu** in der Symbolleiste, um eine neue Versandvorlage zu erstellen, oder **Duplizieren** eine vorhandene Vorlage.
+1. Durch Klicken auf **Neu** in der Symbolleiste wird eine neue Versandvorlage erstellt oder über **Duplizieren** eine vorhandene Vorlage dupliziert.
 
    ![](assets/delivery_template_2.png)
 
