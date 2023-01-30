@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 8391df5046d56edfb33de5eb9f2afb4738108791
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2773'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ _21. November 2022_
 
 **Aktualisierungen zur Kompatibilität**
 
-* Adobe Campaign ist jetzt mit PostgreSQL 14 kompatibel. Weiterführende Informationen finden Sie in diesem Abschnitt [Technote](../../technotes/using/tech-stack-upgrade.md).
+* Adobe Campaign ist jetzt mit PostgreSQL 14 kompatibel. Weiterführende Informationen befinden sich in dieser [Technote](../../technotes/using/tech-stack-upgrade.md).
 
 * Nach dem Auslaufen von Microsoft Internet Explorer 11 verwendet die HTML-Render-Engine für Dashboards in der Client-Konsole nun Edge Chromium. (NEO-20741)
 
@@ -109,7 +109,7 @@ _1. Juli 2022_
 * Das Adobe Campaign-SDK unterstützt jetzt Android 12 und iOS 15 für Push-Benachrichtigungen.
 * Adobe Campaign ist jetzt mit MySQL 8 kompatibel.
 * Adobe Campaign ist jetzt mit Windows 11 kompatibel.
-* Adobe Campaign ist jetzt mit Internet Explorer 11 kompatibel. Weiterführende Informationen finden Sie in diesem Abschnitt [Technote](../../technotes/using/tech-stack-upgrade.md).
+* Adobe Campaign ist jetzt mit Debian 11 kompatibel. Weiterführende Informationen befinden sich in dieser [Technote](../../technotes/using/tech-stack-upgrade.md).
 
 Weitere Informationen finden Sie in der [Kompatibilitätsmatrix für Campaign](../../rn/using/compatibility-matrix.md#OperatingSystems).
 
@@ -149,7 +149,7 @@ Weitere Informationen finden Sie in der [Kompatibilitätsmatrix für Campaign](.
 * Fehlerkorrektur – Bei der Verwendung von fehlerhaftem HTML-Code in einem Versand kommt es jetzt nicht mehr zu Abstürzen. (NEO-40385)
 * Fehlerkorrektur – Auch Benutzende ohne Administratorrechte können jetzt in den Versandeigenschaften auf die Registerkarte **Analyse** zugreifen. (NEO-34025)
 * Fehlerkorrektur – Bilder können jetzt während der Nachrichtenvorbereitung von einem externen Server im Chunk-Modus hochgeladen werden. (NEO-40307)
-* Fehlerkorrektur - Der Versand wird jetzt nicht mehr an eine größere Anzahl von Empfängern als erwartet gesendet. (NEO-45108)
+* Ein Fehler wurde behoben, wodurch der Versand an eine größere Anzahl von Empfangenden als erwartet gesendet wurde. (NEO-45108)
 
 ## ![](assets/do-not-localize/green_2.png) Version 7.2.2 – Build 9349 {#release-7-2-2}
 
