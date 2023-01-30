@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Adobe Analytics Data Connector
-description: Der Data Connector von Adobe Analytics
+description: Adobe Analytics Data Connector
 feature: Overview
 role: User, Admin
 level: Beginner
@@ -9,9 +9,9 @@ exl-id: 5bd12f65-f468-41ab-bbae-e59a6592a803
 hidefromtoc: true
 hide: true
 source-git-commit: 1dd0fe6734785b593302ed90db1d150cf6aee00c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1811'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ Der Aktionsradius der verschiedenen Tools gestaltet sich wie folgt:
 
 ## Integration einrichten {#setting-up-the-integration}
 
-Um den Data Connector einzurichten, verbinden Sie sich mit Ihrer Adobe Campaign-Instanz und gehen Sie folgendermaßen vor:
+Um den Connector einzurichten, verbinden Sie sich mit Ihrer Adobe Campaign-Instanz und gehen Sie folgendermaßen vor:
 
 * [Schritt 1: Integration in Analytics konfigurieren](#step-1--configure-integration-in-analytics)
 * [Schritt 2: Externes Konto in Adobe Campaign erstellen](#step-2--create-the-external-account-in-campaign)
@@ -149,11 +149,11 @@ Die Integration von Adobe Campaign in die Analytics-Plattformen geschieht mithil
 1. Im Tab **[!UICONTROL Erweitert]** können Sie fortgeschrittene Parameter ändern.
 
    * **[!UICONTROL Lebensdauer]**: Ermöglicht nach Ablauf des angegebenen Zeitraums (standardmäßig 180 Tage) die Löschung der Webereignisse, die aus Adobe Campaign mithilfe der technischen Workflows abgerufen wurden.
-   * **[!UICONTROL Persistenz]**: Definieren Sie den Zeitraum, in dem alle Web-Ereignisse (z. B. ein Kauf) einer Remarketing-Kampagne zugeordnet werden können (Standard: 7 Tage.
+   * **[!UICONTROL Persistenz]**: definiert den Zeitraum, über den jedes Web-Ereignis (z. B. eine Bestellung) einer Remarketing-Kampagne zugeordnet werden kann, Standard: 7 Tage.
 
 >[!NOTE]
 >
->Bei Verwendung verschiedener Audience-Mess-Tools können Sie bei der Erstellung des externen Kontos in der Dropdown-Liste des Felds **[!UICONTROL Partner]** die Option **[!UICONTROL Sonstige]** auswählen. Da in den Versandeigenschaften jeweils nur ein externes Konto bestimmt werden kann, ist eine Anpassung der Formel für die getrackten URLs notwendig, indem Sie die von Adobe und dem anderen Messtool erwarteten Parameter hinzufügen.
+>Bei Verwendung mehrerer Tools zur Messung von Audiences können Sie bei der Erstellung des externen Kontos in der Dropdown-Liste des Felds **[!UICONTROL Partner]** die Option **[!UICONTROL Sonstige]** auswählen. Da in den Versandeigenschaften jeweils nur ein externes Konto bestimmt werden kann, ist eine Anpassung der Formel für die getrackten URLs notwendig, indem Sie die von Adobe und den anderen Mess-Tools erwarteten Parameter hinzufügen. 
 
 ### Schritt 3: Adobe Campaign und Adobe Analytics synchronisieren {#step-3--synchronize-adobe-campaign-and-adobe-analytics}
 
