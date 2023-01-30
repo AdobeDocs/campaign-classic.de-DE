@@ -1,12 +1,12 @@
 ---
 product: campaign
-title: Migrieren zum Adobe Analytics Connector
+title: Migrieren zum Adobe Analytics-Connector
 description: Häufig gestellte Fragen zum Campaign und Analytics Connector
 exl-id: 5bf61654-3d68-4560-a93f-7a768a2c5be4
 source-git-commit: 62ccc9e52de1bc416284e5b1bf48d69dc603923a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '858'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Fragen zu diesen Änderungen finden Sie in den [Häufig gestellten Fragen](#faq-
 
 >[!NOTE]
 >
->Wenn Sie von einem vorhandenen Adobe Analytics Data Connector (ehemals &quot;Genesis-Integration&quot;) migrieren und die neue Klassifizierungsarchitektur in Adobe Analytics verwenden, benötigen Sie Build-Versionen ab 7.3.1 oder 8.4.1, um zu dem neuen Adobe Analytics Connector migrieren zu können.
+>Bei der Migration von einem vorhandenen Adobe Analytics Data Connector (früher Genesis-Integration genannt) unter Verwendung der neuen Klassifizierungsarchitektur in Adobe Analytics sind Build-Versionen ab 7.3.1 oder 8.4.1 nötig, um zu dem neuen Adobe Analytics-Connector migrieren zu können.
 
 ## Was hat sich geändert?
 
@@ -53,7 +53,7 @@ Sie müssen **vor dem 17. August 2022** ein Upgrade auf Campaign 21.1.3 (oder h�
 Wenn Sie ein gehosteter Kunde sind, wird Adobe in Kürze auf Sie zukommen, um für Ihre Instanz(en) das Upgrade auf die neuere Version vorzunehmen. Anschließend können Sie den [Adobe Analytics-Connector](../../platform/using/adobe-analytics-connector.md) verwenden.
 
 Als On-Premise-/Hybrid-Kunde müssen Sie das Upgrade auf eine der neueren Versionen vornehmen, um von der neuen Integration profitieren zu können.
-Sobald alle Instanzen das Upgrade erhalten haben, können Sie [die neue Integration](../../platform/using/adobe-analytics-provisioning.md) in Adobe Analytics Connector implementieren und einen nahtlosen Übergang sicherstellen.
+Sobald alle Instanzen das Upgrade erhalten haben, können Sie [die neue Integration](../../platform/using/adobe-analytics-provisioning.md) in Adobe Analytics-Connector implementieren und einen nahtlosen Übergang sicherstellen.
 
 ## Häufig gestellte Fragen{#faq-aa}
 
@@ -89,5 +89,5 @@ Die Lösung besteht darin, das **Produktprofil** im Analytics User Context of Te
 * [Upgrade Ihrer Umgebung](../../production/using/build-upgrade.md)
 * [Häufig gestellte Fragen zum Build-Upgrade](../../platform/using/faq-build-upgrade.md)
 * [Campaign Classic-Build herunterladen](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html)
-* [Neue Client-Konsole für Benutzer verfügbar machen](../../installation/using/client-console-availability-for-windows.md)
+* [Neue Client-Konsole für Benutzende verfügbar machen](../../installation/using/client-console-availability-for-windows.md)
 * [Campaign-Client-Konsole installieren](../../installation/using/installing-the-client-console.md)
