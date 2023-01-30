@@ -7,23 +7,23 @@ role: User, Admin
 level: Beginner
 exl-id: 0dc6ce98-dc3e-4242-953e-e7cec55289ff
 source-git-commit: 1dd0fe6734785b593302ed90db1d150cf6aee00c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1717'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
-# Adobe Analytics Connector{#adobe-analytics-connector}
+# Adobe Analytics-Connector{#adobe-analytics-connector}
 
 ![](../../assets/v7-only.svg)
 
 ## Über die Integration mittels Adobe Analytics-Connector {#about-analytics-connector-integration}
 
-Der Adobe Analytics-Connector ermöglicht die Interaktion von Adobe Campaign und Adobe Analytics über das Package **[!UICONTROL Web-Analytics-Connectoren]**. Es leitet Daten in Form von Segmenten zum Benutzerverhalten nach einer Kampagne an Adobe Campaign weiter. Umgekehrt werden Indikatoren und Attribute von Kampagnen gesendet, die von Adobe Campaign an Adobe Analytics bereitgestellt werden.
+Der Adobe Analytics-Connector ermöglicht die Interaktion von Adobe Campaign und Adobe Analytics über das Package **[!UICONTROL Web-Analytics-Connectoren]**. Er übermittelt Daten zum Benutzerverhalten im Anschluss an eine Kampagne in Form von Segmenten an Adobe Campaign. Umgekehrt sendet er Indikatoren und Attribute von Kampagnen, die von Adobe Campaign bereitgestellt werden, an Adobe Analytics.
 
 >[!CAUTION]
 >
->* Adobe Analytics Connector ist nicht kompatibel mit Transaktionsnachrichten (Message Center).
+>* Adobe Analytics-Connector ist nicht kompatibel mit Transaktionsnachrichten (Message Center).
 >
 >* Stellen Sie vor dem Beginn sicher, dass das Adobe Identity Management System (IMS) in Campaign implementiert ist. [Weiterführende Informationen finden Sie auf dieser Seite](../../integrations/using/about-adobe-id.md).
 
@@ -34,8 +34,8 @@ Der Aktionsradius der verschiedenen Tools gestaltet sich wie folgt:
 
 * Web-Analytics-Connector:
 
-   1. markiert die mit Adobe Campaign gestarteten Kampagnen,
-   1. speichert das Empfängerverhalten in Form von Segmenten auf der Site, die nach Klick auf die Kampagne durchsucht wurde. Segmente beziehen sich auf verlassene Produkte (angesehen, aber nicht zum Warenkorb hinzugefügt oder gekauft), Käufe oder Warenkorbabbrüche.
+   1. markiert die mit Adobe Campaign ausgeführten Kampagnen,
+   1. speichert das Verhalten der Empfangenden auf der Website, die sie nach dem Klicken auf die Kampagne besucht haben, in der Form von Segmenten. Die Segmente beziehen sich auf abgebrochene Produkte (die angesehen, aber nicht in den Warenkorb gelegt oder gekauft wurden), Käufe oder Warenkorbabbrüche.
 
 * Adobe Campaign:
 
@@ -49,9 +49,9 @@ Der Aktionsradius der verschiedenen Tools gestaltet sich wie folgt:
 >
 > Bei Hybrid- und On-Premise-Implementierungen müssen Sie die auf dieser [Seite](../../platform/using/adobe-analytics-provisioning.md) beschriebenen Bereitstellungsschritte ausführen.
 
-Um den Daten-Connector einzurichten, verbinden Sie sich mit Ihrer Adobe Campaign-Instanz und gehen Sie folgendermaßen vor:
+Um den Connector einzurichten, verbinden Sie sich mit Ihrer Adobe Campaign-Instanz und gehen Sie folgendermaßen vor:
 
-1. [Konfigurieren Sie Konversionsvariablen und Erfolgsereignisse.](#configure-conversion-success)
+1. [Konfigurieren von Konversionsvariablen und Erfolgsereignissen](#configure-conversion-success)
 1. [Konfigurieren Sie Ihr externes Konto in Adobe Campaign Classic.](#external-account-classic)
 
 <!--
@@ -98,7 +98,7 @@ Sie müssen die **[!UICONTROL Konversionsvariablen]** und **[!UICONTROL Erfolgse
 
    ![](assets/analytics_connnector_5.png)
 
-1. Klicken **[!UICONTROL Neu hinzufügen]** um die zur Messung der Wirkung der Kampagne erforderlichen Kennungen zu erstellen, d. h. den internen Kampagnennamen (cid) und die iNmsBroadlog (bid)-Tabellen-ID.
+1. Durch Klicken auf **[!UICONTROL Neu hinzufügen]** lassen sich die Kennungen erstellen, die zur Messung der Wirkung der Kampagne erforderlich sind, z. B. der interne Kampagnenname (CID) und die ID der iNmsBroadlog-Tabelle (bid).
 
    Weiterführende Informationen zur Bearbeitung von **[!UICONTROL Konversionsvariablen]** finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/t-conversion-variables-admin.html?lang=de#admin-tools).
 
@@ -202,16 +202,16 @@ Weiterführende Informationen hierzu finden Sie auf der Seite [Produktprofile f�
 
    >[!IMPORTANT]
    >
-   >Dieser Konfigurationsmodus sollte erfahrenen Benutzern vorbehalten bleiben: Fehler in dieser Formel können zu gestoppten Sendungen führen.
+   >Dieser Konfigurationsmodus ist für erfahrene Benutzende vorgesehen: Jeder Fehler in dieser Formel kann zu einem Abbruch der Sendungen führen.
 
 1. Im Tab **[!UICONTROL Erweitert]** können Sie fortgeschrittene Parameter ändern.
 
    * **[!UICONTROL Lebensdauer]**: Ermöglicht nach Ablauf des angegebenen Zeitraums (standardmäßig 180 Tage) die Löschung der Webereignisse, die aus Adobe Campaign mithilfe der technischen Workflows abgerufen wurden.
-   * **[!UICONTROL Persistenz]**: Definieren Sie den Zeitraum, in dem alle Web-Ereignisse (z. B. ein Kauf) einer Remarketing-Kampagne zugeordnet werden können (Standard: 7 Tage.
+   * **[!UICONTROL Persistenz]**: Definiert den Zeitraum, über den jedes Web-Ereignis (z. B. eine Bestellung) einer Remarketing-Kampagne zugeordnet werden kann, Standard: 7 Tage.
 
 >[!NOTE]
 >
->Bei Verwendung verschiedener Audience-Mess-Tools können Sie bei der Erstellung des externen Kontos in der Dropdown-Liste des Felds **[!UICONTROL Partner]** die Option **[!UICONTROL Sonstige]** auswählen. Da in den Versandeigenschaften jeweils nur ein externes Konto bestimmt werden kann, ist eine Anpassung der Formel für die getrackten URLs notwendig, indem Sie die von Adobe und dem anderen Messtool erwarteten Parameter hinzufügen.
+>Bei Verwendung mehrerer Tools zur Messung von Audiences können Sie bei der Erstellung des externen Kontos in der Dropdown-Liste des Felds **[!UICONTROL Partner]** die Option **[!UICONTROL Sonstige]** auswählen. Da in den Versandeigenschaften jeweils nur ein externes Konto bestimmt werden kann, ist eine Anpassung der Formel für die getrackten URLs notwendig, indem Sie die von Adobe und dem anderen Mess-Tool erwarteten Parameter hinzufügen.
 
 ### Technische Workflows der Web-Analyse-Prozesse {#technical-workflows-of-web-analytics-processes}
 
@@ -224,7 +224,7 @@ Sie finden diese im Navigationsbaum von Adobe Campaign unter dem Ordner **[!UICO
 * **[!UICONTROL Abruf von Webereignissen]**: Dieser Workflow ruft stündlich die auf das Verhalten von Besuchern bestimmter Webseiten bezogenen Segmente ab, fügt sie zur Adobe-Campaign-Datenbank hinzu und startet den Remarketing-Workflow.
 * **[!UICONTROL Ereignislöschung]**: Dieser Workflow löscht alle Ereignisse aus der Datenbank gemäß dem im Feld **[!UICONTROL Lebensdauer]** angegebenen Zeitraum. Weiterführende Informationen hierzu finden Sie unter [Konfigurieren des externen Kontos in Adobe Campaign Classic](#external-account-classic).
 * **[!UICONTROL Identifizierung der konvertierten Kontakte]**: Dieser Workflow erfasst die Besucher, die nach einer Remarketing-Kampagne einen Kauf getätigt haben. Die durch diesen Workflow abgerufenen Daten stehen im Bericht **[!UICONTROL Remarketing-Effizienz]** zur Verfügung. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](#creating-a-re-marketing-campaign).
-* **[!UICONTROL Übermittlung der Kampagnenattribute]**: ermöglicht den Versand von Kampagnenindikatoren über Adobe Campaign an die Adobe Experience Cloud mithilfe von Adobe Analytics Connector. Dieser Workflow wird jeden Tag um 4 Uhr ausgelöst. Es kann 24 Stunden dauern, bis die Daten an Analytics gesendet werden.
+* **[!UICONTROL Übermittlung der Kampagnen-Indikatoren und -Attribute]**: sendet die Kampagnen-Indikatoren über Adobe Campaign mithilfe des Adobe Analytics-Connectors an Adobe Experience Cloud. Dieser Workflow wird jeden Tag um 4 Uhr ausgelöst. Es kann 24 Stunden dauern, bis die Daten an Analytics gesendet werden.
 
    Bitte beachten Sie, dass dieser Workflow nicht neu gestartet werden sollte, da sonst alle vorherigen Daten erneut gesendet werden, was die Analyseergebnisse verfälschen könnte.
 
