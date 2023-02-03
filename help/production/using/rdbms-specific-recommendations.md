@@ -6,9 +6,9 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: a586d70b-1b7f-47c2-a821-635098a70e45
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 98b338ddf0da184363c599d74aeb98ed7f6303ce
 workflow-type: tm+mt
-source-wordcount: '1217'
+source-wordcount: '1214'
 ht-degree: 4%
 
 ---
@@ -83,7 +83,6 @@ Um Sie bei der Einrichtung von Wartungsplänen zu unterstützen, finden Sie in d
 In PostgreSQL können Sie die folgenden typischen Suchbegriffe verwenden:
 
 * VACUUM (VOLLSTÄNDIG, ANALYSE, VERBOSE)
-* REINDEX
 
 Um den VACUUM-Vorgang auszuführen und zu analysieren und zu analysieren, können Sie diese Syntax verwenden:
 
@@ -99,61 +98,48 @@ Im Folgenden finden Sie ein typisches Beispiel für einen SQL-Wartungsplan, der 
 ```
 \timing on
 VACUUM (FULL, ANALYZE, VERBOSE) nmsdelivery;
-REINDEX TABLE nmsdelivery;
 
 \timing on
 VACUUM (FULL, ANALYZE, VERBOSE) nmsdeliverystat;
-REINDEX TABLE nmsdeliverystat;
 
 \timing on
 VACUUM (FULL, ANALYZE, VERBOSE) xtkworkflow;
-REINDEX TABLE xtkworkflow;
 
 \timing on
 VACUUM (FULL, ANALYZE, VERBOSE) xtkworkflowevent;
-REINDEX TABLE xtkworkflowevent;
 
 \timing on
 VACUUM (FULL, ANALYZE, VERBOSE) xtkworkflowjob;
-REINDEX TABLE xtkworkflowjob;
 
 \timing on
 VACUUM (FULL, ANALYZE, VERBOSE) xtkworkflowlog;
-REINDEX TABLE xtkworkflowlog;
 
 \timing on
 VACUUM (FULL, ANALYZE, VERBOSE) xtkworkflowtask;
-REINDEX TABLE xtkworkflowtask;
 
 \timing on
 VACUUM (FULL, ANALYZE, VERBOSE) xtkjoblog;
-REINDEX TABLE xtkjoblog;
 
 \timing on
 VACUUM (FULL, ANALYZE, VERBOSE) xtkjob;
-REINDEX TABLE xtkjob;
 
 \timing on
 VACUUM (FULL, ANALYZE, VERBOSE) nmsaddress;
-REINDEX TABLE nmsaddress;
 
 \timing on
 VACUUM (FULL, ANALYZE, VERBOSE) nmsdeliverypart;
-REINDEX TABLE nmsdeliverypart;
 
 \timing on
 VACUUM (FULL, ANALYZE, VERBOSE) nmsmirrorpageinfo;
-REINDEX TABLE nmsmirrorpageinfo;
 ```
 
 >[!NOTE]
 >
 >* Adobe empfiehlt, mit kleineren Tabellen zu beginnen: Auf diese Weise wurde zumindest ein Teil der Wartung abgeschlossen, wenn der Prozess in großen Tabellen fehlschlägt (bei denen das Fehlerrisiko am größten ist).
 >* Adobe empfiehlt, die für Ihr Datenmodell spezifischen Tabellen hinzuzufügen, die erheblich aktualisiert werden können. Dies kann der Fall sein für **NmsRecipient** wenn Sie über große tägliche Datenreplikationsflüsse verfügen.
->* Die VACUUM - und REINDEX -Anweisungen sperren die Tabelle, wodurch einige Prozesse während der Wartung angehalten werden.
+>* Die VACUUM-Anweisung sperrt die Tabelle, wodurch einige Prozesse während der Wartung angehalten werden.
 >* Bei sehr großen Tabellen (in der Regel über 5 GB) kann die VACUUM FULL-Anweisung sehr ineffizient werden und sehr lange dauern. Adobe rät davon ab, sie für die **YyyNmsBroadLogXxx** Tabelle.
 >* Dieser Wartungsvorgang kann mithilfe eines Adobe Campaign-Workflows implementiert werden. **[!UICONTROL SQL]** Aktivität. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../workflow/using/architecture.md). Stellen Sie sicher, dass Sie die Wartung für eine niedrige Aktivitätsdauer planen, die nicht mit Ihrem Sicherungsfenster kollidiert.
-
 >
 
 
