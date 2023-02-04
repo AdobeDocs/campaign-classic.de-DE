@@ -5,9 +5,9 @@ description: Erfahren Sie, wie Sie die Bounce-Qualifizierung nach einem ISP-Ausf
 feature: Deliverability
 hide: true
 hidefromtoc: true
-source-git-commit: 13f730d428861124060146efa26238ceca38bed6
+source-git-commit: f320c905f50c69a40678729b009a4c238a462e3c
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '531'
 ht-degree: 36%
 
 ---
@@ -34,7 +34,7 @@ Beachten Sie Folgendes: Wenn die Verzögerung mit der Meldung &quot;452 angeford
 >
 >Sie können das Google Workspace-Status-Dashboard unter [diese Seite](https://www.google.com/appsstatus#hl=de&amp;v=status){_blank}.
 
-## Symptome{#update-bounce-symptoms}
+## Auswirkung{#update-bounce-impact}
 
 Bei Ausfall eines ISP können über Campaign versendete E-Mails nicht erfolgreich an ihren Empfänger zugestellt werden: Diese E-Mails werden fälschlicherweise als Bounces markiert.
 
@@ -57,7 +57,10 @@ Basierend auf dem Zeitrahmen des Vorfalls und dem ISP werden für diese Abfrage 
 
 * Zum Campaign Classic v7-Instanzen mit SMTP-Bounce-Antwortinformationen im **[!UICONTROL Fehlertext]** Feld der Quarantäneliste:
 
-   * **Fehlertext (Quarantänetext)** enthält &quot;550-5.1.1&quot;UND **Fehlertext (Quarantänetext)** enthält &quot;support.ISP.com&quot; &quot;support.ISP.com&quot; kann Folgendes sein: z. B. &quot;support.apple.com&quot;oder &quot;support.google.com&quot;
+   * **Fehlertext (Quarantänetext)** enthält &quot;550-5.1.1&quot;UND **Fehlertext (Quarantänetext)** enthält &quot;support.ISP.com&quot;
+
+      wobei &quot;support.ISP.com&quot;sein kann: z. B. &quot;support.apple.com&quot;oder &quot;support.google.com&quot;
+
    * **Status aktualisieren (@lastModified)** am oder nach MM/TT/JJJJ HH:MM:SS AM
    * **Status aktualisieren (@lastModified)** am oder vor MM/TT/JJJJ HH:MM:SS PM
 
