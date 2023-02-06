@@ -4,10 +4,10 @@ title: Funktionsweise der Quarantäneverwaltung
 description: Funktionsweise der Quarantäneverwaltung
 feature: Monitoring, Deliverability
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
-workflow-type: ht
-source-wordcount: '2931'
-ht-degree: 100%
+source-git-commit: f7813764e55986efa3216b50e5ebf4387bd70e5e
+workflow-type: tm+mt
+source-wordcount: '3085'
+ht-degree: 89%
 
 ---
 
@@ -69,10 +69,11 @@ Folgende Informationen stehen für jede Adresse zur Verfügung:
 
 >[!NOTE]
 >
->Mit zunehmendem Alter der Datenbank steigt auch die Zahl der Adressen in Quarantäne. Wenn man beispielsweise davon ausgeht, dass eine E-Mail-Adresse eine Lebensdauer von etwa drei Jahren hat und dass die Empfängertabelle pro Jahr um 50 % wächst, lässt sich der Quarantänezuwachs wie folgt berechnen:
+>Mit zunehmendem Alter der Datenbank steigt auch die Zahl der Adressen in Quarantäne. Wenn man beispielsweise davon ausgeht, dass eine E-Mail-Adresse eine Lebensdauer von etwa drei Jahren hat und die Empfängertabelle pro Jahr um 50 % wächst, lässt sich der Quarantänezuwachs wie folgt berechnen:
 >
->Ende 1. Jahr: (1 x 0,33) / (1 + 0,5) = 22 %.
->Ende von Jahr 2: ((1,22*0,33)+0,33)/(1,5+0,75)=32,5 %.
+>Ende 1. Jahr: (1 &#42; 0,33) / (1 + 0,5) = 22 %.
+>
+>Ende 2. Jahr: ((1,22 &#42; 0,33) + 0,33) / (1,5 + 0,75) = 32,5 %.
 
 ### Identifizieren von in Quarantäne befindlichen Adressen in Versandberichten {#identifying-quarantined-addresses-in-delivery-reports}
 
@@ -94,35 +95,6 @@ Sie können für jeden Empfänger den Status seiner E-Mail-Adresse prüfen. Klic
 
 ![](assets/tech_quarant_recipients_filter.png)
 
-### Entfernen einer Adresse aus der Quarantäne {#removing-a-quarantined-address}
-
-Bei Bedarf können Sie eine Adresse manuell aus der Quarantäneliste entfernen. Darüber hinaus werden Adressen, die bestimmten Bedingungen entsprechen, durch den [Datenbankbereinigungs](../../production/using/database-cleanup-workflow.md)-Workflow automatisch aus der Quarantäneliste gelöscht.
-
-Führen Sie einen der folgenden Schritte aus, um eine Adresse manuell aus der Quarantäneliste zu entfernen.
-
->[!IMPORTANT]
->Das manuelle Löschen einer E-Mail-Adresse aus der Quarantäne bedeutet, dass Sie den Versand an diese Adresse wieder aufnehmen. Dies kann sich daher erheblich auf Ihre Zustellbarkeit und IP-Reputation auswirken und letztendlich dazu führen, dass Ihre IP-Adresse oder Versand-Domain blockiert wird. Gehen Sie besonders vorsichtig vor, wenn Sie erwägen, eine Adresse aus der Quarantäne zu nehmen. Wenden Sie sich im Zweifel an einen Zustellbarkeitsexperten.
-
-* Sie können den Status der Adresse über den Knoten **[!UICONTROL Administration > Kampagnenverwaltung > Unzustellbarkeitsverwaltung > Adressen unzustellbarer Sendungen]** in **[!UICONTROL Gültig]** ändern.
-
-   ![](assets/tech_quarant_error_status.png)
-
-* Sie können ihren Status auch in **[!UICONTROL Auf die Zulassungsliste gesetzt]**&#x200B;ändern. In diesem Fall bleibt die Adresse auf der Quarantäneliste, aber sie wird systematisch als Ziel ausgewählt, selbst wenn ein Fehler auftritt.
-
-In den folgenden Fällen werden die Adressen automatisch aus der Quarantäneliste entfernt:
-
-* Adressen mit dem Status **[!UICONTROL Fehlerhaft]** werden nach einem erfolgreichen Versand aus der Quarantäneliste entfernt.
-* Adressen mit dem Status **[!UICONTROL Fehlerhaft]** werden aus der Quarantäneliste entfernt, wenn der letzte Softbounce mehr als 10 Tage zurückliegt. Weitere Informationen zum Umgang mit Softbounces finden Sie in [diesem Abschnitt](#soft-error-management).
-* Adressen mit dem Status **[!UICONTROL Fehlerhaft]**, die mit dem Fehler **[!UICONTROL Postfach voll]** zurückkommen, werden nach 30 Tagen aus der Quarantäneliste entfernt.
-
-Ihr Status ändert sich dann in **[!UICONTROL Gültig]**.
-
->[!IMPORTANT]
->Empfänger mit einer Adresse in **[!UICONTROL Quarantäne]** oder dem Status **[!UICONTROL Auf Blockierungsliste]** werden niemals entfernt, auch wenn sie eine E-Mail erhalten.
-
-Wenn Sie bei gehosteten oder hybriden Installationen ein Upgrade auf [Enhanced MTA](sending-with-enhanced-mta.md) durchgeführt haben, basiert die maximale Anzahl weiterer Versuche, die im Falle des Status **[!UICONTROL Fehlerhaft]** durchgeführt werden, sowie die Mindestverzögerung zwischen Wiederholungsversuchen jetzt darauf, wie gut eine IP in einer bestimmten Domain sowohl in der Vergangenheit funktioniert hat als auch aktuell funktioniert.
-
-Bei On-Premise-Installationen und gehosteten/hybriden Installationen, die den veralteten Campaign MTA verwenden, können die Anzahl der Fehler und der Zeitraum zwischen zwei Fehlern geändert werden. Ändern Sie dazu die entsprechenden Einstellungen im [Bereitstellungsassistenten](../../installation/using/deploying-an-instance.md) (**[!UICONTROL E-Mail-Kanal]** > **[!UICONTROL Erweiterte Parameter]**) oder [auf Versandebene](../../delivery/using/steps-sending-the-delivery.md#configuring-retries).
 
 ## Bedingungen für die Quarantäne von Adressen {#conditions-for-sending-an-address-to-quarantine}
 
@@ -135,6 +107,7 @@ Adobe Campaign verwaltet die Quarantäne je nach dem Typ der fehlgeschlagenen S
 Wenn ein Benutzer eine E-Mail als Spam kennzeichnet ([Feedback Loop](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=de#feedback-loops)), wird die Nachricht automatisch an ein von Adobe verwaltetes technisches Postfach weitergeleitet. Die E-Mail-Adresse des Benutzers wird dann automatisch unter Quarantäne gestellt und der Status in **[!UICONTROL Auf Blockierungsliste]** geändert. Der Status bezieht sich ausschließlich auf die Adresse und das Profil wird nicht auf die Blockierungsliste gesetzt, sodass der Empfänger nach wie vor SMS-Nachrichten und Push-Benachrichtigungen erhält.
 
 >[!NOTE]
+>
 >Bei der Quarantänefunktion in Adobe Campaign wird die Groß-/Kleinschreibung beachtet. Achten Sie darauf, E-Mail-Adressen in Kleinbuchstaben zu importieren, damit sie später nicht erneut verwendet werden.
 
 Bei Adressen in Quarantäne (siehe [Identifizieren von für die gesamte Plattform in Quarantäne befindlichen Adressen](#identifying-quarantined-addresses-for-the-entire-platform)) zeigt das Feld **[!UICONTROL Fehlerursache]** an, wodurch die Quarantäne ausgelöst wurde.
@@ -148,6 +121,57 @@ Im Gegensatz zu Hardbounces senden Softbounces eine Adresse nicht sofort in die 
 Während der [Versandlaufzeit](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period) werden noch weitere Zustellversuche durchgeführt. Sollte der Zähler eine festgelegte Schwelle überschreiten, wird die Adresse unter Quarantäne gestellt. Weitere Informationen hierzu finden Sie unter [Weitere Zustellversuche nach einem vorübergehend fehlgeschlagenen Versand](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure).
 
 Der Fehlerzähler wird erneut initialisiert, wenn der letzte signifikante Fehler vor mehr als 10 Tagen aufgetreten ist. Der Status der Adresse wird auf **Gültig** gesetzt und mithilfe des Workflows [Datenbankbereinigung](../../production/using/database-cleanup-workflow.md) wird die Adresse aus der Quarantäneliste gelöscht.
+
+
+Wenn Sie bei gehosteten oder hybriden Installationen ein Upgrade auf [Enhanced MTA](sending-with-enhanced-mta.md) durchgeführt haben, basiert die maximale Anzahl weiterer Versuche, die im Falle des Status **[!UICONTROL Fehlerhaft]** durchgeführt werden, sowie die Mindestverzögerung zwischen Wiederholungsversuchen jetzt darauf, wie gut eine IP in einer bestimmten Domain sowohl in der Vergangenheit funktioniert hat als auch aktuell funktioniert.
+
+Bei On-Premise-Installationen und gehosteten/hybriden Installationen, die den veralteten Campaign MTA verwenden, können die Anzahl der Fehler und der Zeitraum zwischen zwei Fehlern geändert werden. Ändern Sie dazu die entsprechenden Einstellungen im [Bereitstellungsassistenten](../../installation/using/deploying-an-instance.md) (**[!UICONTROL E-Mail-Kanal]** > **[!UICONTROL Erweiterte Parameter]**) oder [auf Versandebene](../../delivery/using/steps-sending-the-delivery.md#configuring-retries).
+
+
+## Entfernen einer Adresse aus der Quarantäne {#removing-a-quarantined-address}
+
+Adressen, die bestimmten Bedingungen entsprechen, werden automatisch von der Quarantäneliste gelöscht [Datenbankbereinigung](../../production/using/database-cleanup-workflow.md) Arbeitsablauf.
+
+In den folgenden Fällen werden die Adressen automatisch aus der Quarantäneliste entfernt:
+
+* Adressen mit dem Status **[!UICONTROL Fehlerhaft]** werden nach einem erfolgreichen Versand aus der Quarantäneliste entfernt.
+* Adressen mit dem Status **[!UICONTROL Fehlerhaft]** werden aus der Quarantäneliste entfernt, wenn der letzte Softbounce mehr als 10 Tage zurückliegt. Weitere Informationen zum Umgang mit Softbounces finden Sie in [diesem Abschnitt](#soft-error-management).
+* Adressen mit dem Status **[!UICONTROL Fehlerhaft]**, die mit dem Fehler **[!UICONTROL Postfach voll]** zurückkommen, werden nach 30 Tagen aus der Quarantäneliste entfernt.
+
+Ihr Status ändert sich dann in **[!UICONTROL Gültig]**.
+
+>[!IMPORTANT]
+>
+>Empfänger mit einer Adresse in einer **[!UICONTROL Quarantäne]** oder **[!UICONTROL Auf die Blockierungsliste gesetzt]** -Status nicht entfernt werden, selbst wenn sie eine E-Mail erhalten.
+
+Sie können die Quarantäne für eine Adresse auch manuell aufheben. Um eine Adresse manuell aus der Quarantäneliste zu entfernen, ändern Sie ihren Status in **[!UICONTROL Gültig]** von **[!UICONTROL Administration > Campaign Management > Unzustellbarkeitsverwaltung > Adressen unzustellbarer Sendungen]** Knoten.
+
+![](assets/tech_quarant_error_status.png)
+
+Möglicherweise müssen Sie Massenaktualisierungen in der Quarantäneliste durchführen, z. B. im Falle eines ISP-Ausfalls, bei dem E-Mails fälschlicherweise als Bounces gekennzeichnet werden, da sie ihrem Empfänger nicht erfolgreich zugestellt werden können.
+
+Erstellen Sie dazu einen Workflow und fügen Sie Ihrer Quarantänetabelle eine Abfrage hinzu, um alle betroffenen Empfänger herauszufiltern, sodass sie aus der Quarantäneliste entfernt und in künftige Campaign-E-Mail-Sendungen aufgenommen werden können.
+
+Nachfolgend finden Sie die empfohlenen Richtlinien für diese Abfrage:
+
+* Für Campaign v8- und Campaign Classic v7-Umgebungen mit Regelinformationen für eingehende E-Mails im **[!UICONTROL Fehlertext]** Feld der Quarantäneliste:
+
+   * **Fehlertext (Quarantänetext)** enthält „Momen_Code10_InvalidRecipient“
+   * **E-Mail-Domain (@domain)** gleich domain1.com ODER **E-Mail-Domain (@domain)** gleich domain2.com ODER **E-Mail-Domain (@domain)** gleich domain3.com
+   * **Status aktualisieren (@lastModified)** am oder nach MM/TT/JJJJ HH:MM:SS AM
+   * **Status aktualisieren (@lastModified)** am oder vor MM/TT/JJJJ HH:MM:SS PM
+
+* Zum Campaign Classic v7-Instanzen mit SMTP-Bounce-Antwortinformationen im **[!UICONTROL Fehlertext]** Feld der Quarantäneliste:
+
+   * **Fehlertext (Quarantänetext)** enthält &quot;550-5.1.1&quot;UND **Fehlertext (Quarantänetext)** enthält &quot;support.ISP.com&quot;
+
+   wobei &quot;support.ISP.com&quot;sein kann: z. B. &quot;support.apple.com&quot;oder &quot;support.google.com&quot;
+
+   * **Status aktualisieren (@lastModified)** am oder nach MM/TT/JJJJ HH:MM:SS AM
+   * **Status aktualisieren (@lastModified)** am oder vor MM/TT/JJJJ HH:MM:SS PM
+
+
+Wenn Sie über die Liste der betroffenen Empfänger verfügen, fügen Sie eine **[!UICONTROL Daten aktualisieren]** -Aktivität verwenden, um ihren Status auf **[!UICONTROL Gültig]** sodass sie von der Quarantäneliste entfernt werden **[!UICONTROL Datenbankbereinigung]** -Arbeitsablauf. Sie können sie auch einfach aus der Quarantänetabelle löschen.
 
 ## Quarantäne für Push-Benachrichtigungen {#push-notification-quarantines}
 
@@ -261,10 +285,13 @@ Der **[!UICONTROL mobileAppOptOutMgt]**-Workflow wird alle sechs Stunden zur Akt
 Während der Versandanalyse werden alle Geräte, die von der Zielgruppe ausgeschlossen werden, automatisch zur Tabelle **excludeLogAppSubRcp** hinzugefügt.
 
 >[!NOTE]
+>
 >Im Folgenden finden Sie die unterschiedlichen Fehlertypen für den Baidu-Connector:
+>
 >* Verbindungsproblem zu Beginn des Versands: Fehlertyp **[!UICONTROL Undefiniert]**, Grund **[!UICONTROL Unerreichbar]**, Neuversuch wird unternommen.
 >* Verbindung während des Versands unterbrochen: Softbounce, Grund für den Fehler **[!UICONTROL Abgelehnt]**, Neuversuch wird unternommen.
 >* Während des Versands von Baidu synchroner Fehler zurückgegeben: Hardbounce, Grund für den Fehler **[!UICONTROL Abgelehnt]**, es wird kein Neuversuch unternommen.
+>
 >Adobe Campaign kontaktiert den Baidu-Server alle zehn Minuten, um den Status der versendeten Nachrichten abzurufen, und aktualisiert die Versandlogs. Wenn eine Nachricht als gesendet gemeldet wird, ändert sich der Status der Nachricht in den Versandlogs in **[!UICONTROL Erhalten]**. Wenn Baidu einen Fehler meldet, wird der Status auf **[!UICONTROL Fehlgeschlagen]** gesetzt.
 
 **Für Android V2**
@@ -483,6 +510,7 @@ Der Quarantänemechanismus für Android V2 verwendet denselben Prozess wie für 
 Der Quarantänemechanismus für SMS-Nachrichten ist global gesehen mit dem allgemeinen Prozess identisch. Näheres dazu erfahren Sie unter [Über Quarantänen](#about-quarantines). Die Besonderheiten bei SMS-Nachrichten sind unten aufgeführt.
 
 >[!NOTE]
+>
 >Die Tabelle **[!UICONTROL Versandlogqualifizierung]** gilt nicht für den Connector **Erweitertes allgemeines SMPP**.
 
 <table> 
@@ -541,7 +569,9 @@ Der SMPP-Connector ruft zum Filtern des Inhalts mithilfe regulärer Ausdrücke (
 Bevor ein neuer Fehlertyp qualifiziert wird, wird der Fehlergrund immer standardmäßig auf **Abgelehnt** gesetzt.
 
 >[!NOTE]
+>
 >Die Typen und Ursachen für Fehlschläge sind dieselben wie für E-Mails. Siehe [Typen und Ursachen für fehlgeschlagene Sendungen](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+>
 >Erkundigen Sie sich bei Ihrem Provider nach einer Liste mit Status- und Fehlercodes, um in der Versandlogqualifizierungs-Tabelle die korrekten Fehlertypen und -ursachen anzugeben.
 
 Beispiel einer generierten Nachricht:
