@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: 9cdd4da153e5e5d1c7203d193067843fe832f38e
+source-git-commit: 1cc1568fe77cc5bbde88092b0e9108792e10fd71
 workflow-type: tm+mt
-source-wordcount: '921'
-ht-degree: 90%
+source-wordcount: '934'
+ht-degree: 85%
 
 ---
 
@@ -67,7 +67,7 @@ Als gehosteter Benutzer erhalten Sie automatisch das Upgrade mit dem aktuellen G
 
 ### Warum benötigt mein Unternehmene Organisation dieses Upgrade?
 
-Als gehosteter Kunde werden Sie von Adobe direkt benachrichtigt, wenn für Ihr Konto ein Upgrade einer oder mehrerer Technologien im Zusammenhang mit Campaign Classic sowie eine Aktualisierung des aktuellen Builds und/oder der Version erforderlich ist.
+Wenn als gehosteter Kunde festgestellt wurde, dass für Ihr Konto eine oder mehrere der mit Campaign Classic verbundenen Technologien aktualisiert werden müssen und Ihre Infrastruktur auf den aktuellen Build aktualisiert werden muss (z. B. von v7.2.1 auf v7.3.3) und/oder die Version (von v7 auf v8), werden Sie von Adobe direkt benachrichtigt.
 
 Als On-Premise- oder Hybrid-Kunde, der auf einem älteren Build ausgeführt wird, empfiehlt Ihnen Adobe, zum neuesten stabilen Build (GA) zu wechseln.
 

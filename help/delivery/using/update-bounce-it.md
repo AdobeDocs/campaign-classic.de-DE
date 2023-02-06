@@ -5,10 +5,10 @@ description: Erfahren Sie, wie Sie die Bounce-Qualifizierung nach einem Online-A
 feature: Deliverability
 hide: true
 hidefromtow: true
-source-git-commit: 3cf6ffb2b69d44b56615492dd9db8965ae3cf4e1
+source-git-commit: 0e6a46e4a0575fa5a300a952a6bb134f3426172e
 workflow-type: tm+mt
-source-wordcount: '305'
-ht-degree: 27%
+source-wordcount: '295'
+ht-degree: 19%
 
 ---
 
@@ -29,11 +29,11 @@ Weitere Informationen finden Sie in der offiziellen Mitteilung [here](https://te
 
 ## Auswirkung{#outage-impact}
 
-Bei Ausfall eines ISP können über Campaign versendete E-Mails nicht erfolgreich an ihren Empfänger zugestellt werden: Diese E-Mails werden fälschlicherweise als Bounces markiert. Dies wirkt sich nicht nur auf die Adobe aus, sondern alle, die versuchen, E-Mails an Italia Online zukommen zu lassen.
+Wie in den meisten Fällen, in denen ein ISP ausfällt, wurden einige über Campaign gesendete E-Mails fälschlicherweise als Bounces markiert. Dies wirkte sich nicht nur auf die Adobe aus, sondern alle, die versuchen, während des Ausfalls E-Mails an Italia Online zukommen zu lassen.
 
-Die Symptome sind:
+Die Symptome waren:
 
-* **Rückstellung** mit der Nachricht `452 requested action aborted: try again later` werden beobachtet - diese werden automatisch wiederholt und es sind keine Aktionen erforderlich. Sie sollten sich verbessern, da der ISP seine volle Kapazität wiederherstellt.
+* **Rückstellung** mit der Nachricht `452 requested action aborted: try again later` - diese wurden automatisch wiederholt und es sind keine Aktionen erforderlich.
 
 * **Hardbounces** mit der Nachricht `550 <email address> recipient rejected` wurden vom ISP am 26. Januar zwischen 8:00 und 14:00 Uhr Ortszeit zurückgegeben, um zu verhindern, dass Absender ihre Server weiterhin überlasten. Wie vom Italia Online Postmaster bestätigt, handelt es sich hierbei nicht um echte Hardbounces. Daher empfehlen wir, die Quarantäne für alle E-Mail-Adressen aufzuheben, die am 26. Januar 2023 aufgrund dieser Nachricht ausgeschlossen wurden.
 
