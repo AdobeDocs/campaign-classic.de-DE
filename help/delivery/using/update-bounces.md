@@ -5,10 +5,10 @@ description: Erfahren Sie, wie Sie die Bounce-Qualifizierung nach einem ISP-Ausf
 feature: Deliverability
 hide: true
 hidefromtoc: true
-source-git-commit: f320c905f50c69a40678729b009a4c238a462e3c
+source-git-commit: 9cdd4da153e5e5d1c7203d193067843fe832f38e
 workflow-type: tm+mt
-source-wordcount: '531'
-ht-degree: 36%
+source-wordcount: '524'
+ht-degree: 37%
 
 ---
 
@@ -48,14 +48,14 @@ Sie müssen eine Abfrage in Ihrer Quarantänetabelle ausführen, um alle betroff
 
 Basierend auf dem Zeitrahmen des Vorfalls und dem ISP werden für diese Abfrage folgende Richtlinien empfohlen.
 
-* Für Campaign v8- und Campaign Classic v7-Umgebungen mit Regelinformationen für eingehende E-Mails im **[!UICONTROL Fehlertext]** Feld der Quarantäneliste:
+* Für Campaign-Umgebungen mit Regelinformationen für eingehende E-Mails im **[!UICONTROL Fehlertext]** Feld der Quarantäneliste:
 
    * **Fehlertext (Quarantänetext)** enthält „Momen_Code10_InvalidRecipient“
    * **E-Mail-Domain (@domain)** gleich domain1.com ODER **E-Mail-Domain (@domain)** gleich domain2.com ODER **E-Mail-Domain (@domain)** gleich domain3.com
    * **Status aktualisieren (@lastModified)** am oder nach MM/TT/JJJJ HH:MM:SS AM
    * **Status aktualisieren (@lastModified)** am oder vor MM/TT/JJJJ HH:MM:SS PM
 
-* Zum Campaign Classic v7-Instanzen mit SMTP-Bounce-Antwortinformationen im **[!UICONTROL Fehlertext]** Feld der Quarantäneliste:
+* Für Campaign-Umgebungen mit SMTP-Bounce-Antwortinformationen im **[!UICONTROL Fehlertext]** Feld der Quarantäneliste:
 
    * **Fehlertext (Quarantänetext)** enthält &quot;550-5.1.1&quot;UND **Fehlertext (Quarantänetext)** enthält &quot;support.ISP.com&quot;
 

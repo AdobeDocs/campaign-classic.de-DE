@@ -4,10 +4,10 @@ title: Funktionsweise der Quarantäneverwaltung
 description: Funktionsweise der Quarantäneverwaltung
 feature: Monitoring, Deliverability
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: f7813764e55986efa3216b50e5ebf4387bd70e5e
+source-git-commit: c84f48ebdd66524e8dd6c39c88ae29565d11c9b2
 workflow-type: tm+mt
-source-wordcount: '3085'
-ht-degree: 89%
+source-wordcount: '3100'
+ht-degree: 88%
 
 ---
 
@@ -128,7 +128,9 @@ Wenn Sie bei gehosteten oder hybriden Installationen ein Upgrade auf [Enhanced M
 Bei On-Premise-Installationen und gehosteten/hybriden Installationen, die den veralteten Campaign MTA verwenden, können die Anzahl der Fehler und der Zeitraum zwischen zwei Fehlern geändert werden. Ändern Sie dazu die entsprechenden Einstellungen im [Bereitstellungsassistenten](../../installation/using/deploying-an-instance.md) (**[!UICONTROL E-Mail-Kanal]** > **[!UICONTROL Erweiterte Parameter]**) oder [auf Versandebene](../../delivery/using/steps-sending-the-delivery.md#configuring-retries).
 
 
-## Entfernen einer Adresse aus der Quarantäne {#removing-a-quarantined-address}
+## Adresse aus der Quarantäne nehmen {#removing-a-quarantined-address}
+
+### Automatische Aktualisierungen {#unquarantine-auto}
 
 Adressen, die bestimmten Bedingungen entsprechen, werden automatisch von der Quarantäneliste gelöscht [Datenbankbereinigung](../../production/using/database-cleanup-workflow.md) Arbeitsablauf.
 
@@ -144,17 +146,21 @@ Ihr Status ändert sich dann in **[!UICONTROL Gültig]**.
 >
 >Empfänger mit einer Adresse in einer **[!UICONTROL Quarantäne]** oder **[!UICONTROL Auf die Blockierungsliste gesetzt]** -Status nicht entfernt werden, selbst wenn sie eine E-Mail erhalten.
 
+### Manuelle Aktualisierungen {#unquarantine-manual}
+
 Sie können die Quarantäne für eine Adresse auch manuell aufheben. Um eine Adresse manuell aus der Quarantäneliste zu entfernen, ändern Sie ihren Status in **[!UICONTROL Gültig]** von **[!UICONTROL Administration > Campaign Management > Unzustellbarkeitsverwaltung > Adressen unzustellbarer Sendungen]** Knoten.
 
 ![](assets/tech_quarant_error_status.png)
 
-Möglicherweise müssen Sie Massenaktualisierungen in der Quarantäneliste durchführen, z. B. im Falle eines ISP-Ausfalls, bei dem E-Mails fälschlicherweise als Bounces gekennzeichnet werden, da sie ihrem Empfänger nicht erfolgreich zugestellt werden können.
+### Massenaktualisierungen {#unquarantine-bulk}
 
-Erstellen Sie dazu einen Workflow und fügen Sie Ihrer Quarantänetabelle eine Abfrage hinzu, um alle betroffenen Empfänger herauszufiltern, sodass sie aus der Quarantäneliste entfernt und in künftige Campaign-E-Mail-Sendungen aufgenommen werden können.
+Möglicherweise müssen Sie Massenaktualisierungen auf der Quarantäneliste durchführen, z. B. im Falle eines ISP-Ausfalls. In diesem Fall werden E-Mails fälschlicherweise als Bounces gekennzeichnet, da sie ihrem Empfänger nicht erfolgreich zugestellt werden können. Diese Adressen müssen aus der Quarantäneliste entfernt werden.
+
+Erstellen Sie dazu einen Workflow und fügen Sie eine **[!UICONTROL Abfrage]** Aktivität in Ihrer Quarantänetabelle, um alle betroffenen Empfänger herauszufiltern. Nach der Identifizierung können sie aus der Quarantäneliste entfernt und in künftige Campaign-E-Mail-Sendungen aufgenommen werden.
 
 Nachfolgend finden Sie die empfohlenen Richtlinien für diese Abfrage:
 
-* Für Campaign v8- und Campaign Classic v7-Umgebungen mit Regelinformationen für eingehende E-Mails im **[!UICONTROL Fehlertext]** Feld der Quarantäneliste:
+* Für Campaign Classic v7-Umgebungen mit Regelinformationen für eingehende E-Mails im **[!UICONTROL Fehlertext]** Feld der Quarantäneliste:
 
    * **Fehlertext (Quarantänetext)** enthält „Momen_Code10_InvalidRecipient“
    * **E-Mail-Domain (@domain)** gleich domain1.com ODER **E-Mail-Domain (@domain)** gleich domain2.com ODER **E-Mail-Domain (@domain)** gleich domain3.com
@@ -171,11 +177,11 @@ Nachfolgend finden Sie die empfohlenen Richtlinien für diese Abfrage:
    * **Status aktualisieren (@lastModified)** am oder vor MM/TT/JJJJ HH:MM:SS PM
 
 
-Wenn Sie über die Liste der betroffenen Empfänger verfügen, fügen Sie eine **[!UICONTROL Daten aktualisieren]** -Aktivität verwenden, um ihren Status auf **[!UICONTROL Gültig]** sodass sie von der Quarantäneliste entfernt werden **[!UICONTROL Datenbankbereinigung]** -Arbeitsablauf. Sie können sie auch einfach aus der Quarantänetabelle löschen.
+Wenn Sie über die Liste der betroffenen Empfänger verfügen, fügen Sie eine **[!UICONTROL Daten aktualisieren]** Aktivität zum Festlegen des Status ihrer E-Mail-Adresse auf **[!UICONTROL Gültig]** sodass sie von der Quarantäneliste entfernt werden **[!UICONTROL Datenbankbereinigung]** Arbeitsablauf. Sie können sie auch einfach aus der Quarantänetabelle löschen.
 
 ## Quarantäne für Push-Benachrichtigungen {#push-notification-quarantines}
 
-Der Quarantänemechanismus für Push-Benachrichtigungen ist global gesehen mit dem allgemeinen Prozess identisch. Näheres dazu erfahren Sie unter [Über Quarantänen](#about-quarantines). Bestimmte Fehler werden jedoch für Push-Benachrichtigungen unterschiedlich verwaltet. Bei bestimmten Soft-Fehlern werden beispielsweise innerhalb desselben Versands keine weiteren Versuche unternommen. Die Besonderheiten bei Push-Benachrichtigungen sind unten aufgeführt. Der Wiederholungsmechanismus (Anzahl weiterer Versuche, Frequenz) entspricht dem für E-Mails.
+Der Quarantänemechanismus für Push-Benachrichtigungen ist global gesehen mit dem allgemeinen Prozess identisch. Bestimmte Fehler werden jedoch für Push-Benachrichtigungen unterschiedlich verwaltet. Bei bestimmten Soft-Fehlern werden beispielsweise innerhalb desselben Versands keine weiteren Versuche unternommen. Die Besonderheiten bei Push-Benachrichtigungen sind unten aufgeführt. Der Wiederholungsmechanismus (Anzahl weiterer Versuche, Frequenz) entspricht dem für E-Mails.
 
 Bei den unter Quarantäne gestellten Objekten handelt es sich um Device Token.
 

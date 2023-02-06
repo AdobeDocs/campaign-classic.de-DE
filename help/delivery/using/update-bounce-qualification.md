@@ -1,13 +1,13 @@
 ---
 product: campaign
-title: Aktualisierung der Bounce-Qualifizierung nach Gmail-Ausfall
-description: Erfahren Sie, wie Sie die Bounce-Qualifizierung nach einem ISP-Ausfall aktualisieren
+title: Aktualisierung der Bounce-Qualifizierung nach Ausfall von Apple 2021
+description: Erfahren Sie, wie Sie die Bounce-Qualifizierung nach einem Ausfall von Apple 2021 aktualisieren können.
 feature: Deliverability
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
-source-git-commit: 13f730d428861124060146efa26238ceca38bed6
+source-git-commit: c84f48ebdd66524e8dd6c39c88ae29565d11c9b2
 workflow-type: tm+mt
-source-wordcount: '437'
-ht-degree: 98%
+source-wordcount: '436'
+ht-degree: 96%
 
 ---
 
