@@ -5,7 +5,7 @@ description: Erste Schritte mit Campaign-Simulationen
 feature: Campaigns
 exl-id: 709c64a8-34bf-43fa-a820-238295fb26b8
 source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1376'
 ht-degree: 100%
 
@@ -137,7 +137,7 @@ Sobald der Perimeter der Simulation definiert wurde, kann sie ausgeführt werden
 
 #### Analysieren von Ergebnissen {#exploring-results}
 
-Der Untertab **[!UICONTROL Ausschlussanalyse]** ermöglicht die Analyse der aus der Simulation resultierenden Daten.
+Die Unter-Registerkarte **[!UICONTROL Ausschlussanalyse]** ermöglicht die Analyse der aus der Simulation resultierenden Daten.
 
 Weitere Informationen zur deskriptiven Analyse finden Sie in [diesem Abschnitt](../../reporting/using/about-adobe-campaign-reporting-tools.md).
 
@@ -188,7 +188,7 @@ Es besteht jedoch die Möglichkeit, sie mithilfe von Berichten zu vergleichen: A
 
 ### Berichtsachsen {#reporting-axes}
 
-Auf dem Tab **[!UICONTROL Berechnungen]** können Sie Berichtsachsen bezüglich der Zielgruppe definieren. Diese Achsen werden bei der Ergebnisanalyse verwendet (siehe [Ergebnisse analysieren](#exploring-results)).
+Auf der Registerkarte **[!UICONTROL Berechnungen]** können Sie Berichtsachsen bezüglich der Zielgruppe definieren. Diese Achsen werden bei der Ergebnisanalyse verwendet (siehe [Ergebnisse analysieren](#exploring-results)).
 
 >[!NOTE]
 >

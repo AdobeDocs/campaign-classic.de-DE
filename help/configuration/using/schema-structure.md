@@ -413,13 +413,13 @@ Beispiel des um diese Eigenschaften ergänzten Schemas:
 </srcSchema>
 ```
 
-## Kollektionen {#collections}
+## Sammlungen {#collections}
 
-Eine Kollektion ist eine Liste von Elementen mit gleichem Namen und auf gleicher Hierarchieebene.
+Eine Sammlung ist eine Liste von Elementen mit gleichem Namen und auf gleicher Hierarchieebene.
 
-Mithilfe des Attributs **unbound** mit dem Wert &quot;true&quot; können Sie ein Kollektionselement füllen.
+Mithilfe des Attributs **unbound** mit dem Wert &quot;true&quot; können Sie ein Sammlungselement füllen.
 
-**Beispiel**: Definition des Kollektionselements **`<group>`** im Schema.
+**Beispiel**: Definition des Sammlungselements **`<group>`** im Schema.
 
 ```
 <element name="group" unbound="true" label="List of groups">
@@ -447,7 +447,7 @@ Elemente werden mit ihren Namen bezeichnet, während den Namen von Attributen ei
 * **@email**: wählt die E-Mail-Adresse aus,
 * **location/@city**: wählt das Attribut &quot;city&quot; unter dem Element **`<location>`** aus,
 * **../@email**: wählt die E-Mail-Adresse aus dem übergeordneten Element des aktuellen Elements aus
-* **group`[1]/@label`**: wählt das Attribut &quot;label&quot; aus, das dem ersten **`<group>`**- Kollektionselement untergeordnet ist,
+* **group`[1]/@label`**: wählt das Attribut &quot;label&quot; aus, das dem ersten **`<group>`**-Sammlungselement untergeordnet ist,
 * **group`[@label='test1']`**: wählt das Attribut &quot;label&quot; aus, das dem Element **`<group>`** untergeordnet ist und den Wert &quot;test1&quot; enthält.
 
 >[!NOTE]

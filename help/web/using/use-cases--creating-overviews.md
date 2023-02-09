@@ -1,11 +1,11 @@
 ---
 product: campaign
-title: '"Anwendungsfälle: Erstellen von Übersichten"'
-description: '"Anwendungsfälle: Erstellen von Übersichten"'
+title: "Anwendungsfälle: Erstellen von Übersichten"
+description: "Anwendungsfälle: Erstellen von Übersichten"
 feature: Web Apps
 exl-id: a1ac3aab-dc81-4533-9207-26d5dc5e1c88
 source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1031'
 ht-degree: 100%
 

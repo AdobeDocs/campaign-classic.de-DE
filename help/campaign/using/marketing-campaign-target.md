@@ -5,7 +5,7 @@ description: Erfahren Sie, wie Sie die Audience Ihrer Marketing-Kampagnen defini
 feature: Campaigns, Audiences
 exl-id: 04daa67c-4057-42a7-b993-a6eddf2b883d
 source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1579'
 ht-degree: 100%
 
@@ -49,7 +49,7 @@ Die Hauptzielgruppe eines Versands kann auch über einen Campaign-Workflow defin
 
 ### Erstellen eines Workflows {#creating-a-targeting-workflow}
 
-Die Zielgruppenbestimmung kann mithilfe einer Kombination von Filterkriterien erfolgen, die in einem Workflow grafisch verdeutlicht wird. So ist es möglich, je nach Bedarf Gruppen oder Untergruppen zu erstellen und als Zielpopulation zu verwenden. Klicken Sie zum Öffnen des Workflow-Editors auf den Tab **[!UICONTROL Zielbestimmungen und Workflows]** der entsprechenden Kampagne.
+Die Zielgruppenbestimmung kann mithilfe einer Kombination von Filterkriterien erfolgen, die in einem Workflow grafisch verdeutlicht wird. So ist es möglich, je nach Bedarf Gruppen oder Untergruppen zu erstellen und als Zielpopulation zu verwenden. Klicken Sie zum Öffnen des Workflow-Editors im Kampagnen-Dashboard auf die Registerkarte **[!UICONTROL Zielgruppenbestimmungen und Workflows]**.
 
 ![](assets/s_ncs_user_edit_op_wf_link.png)
 

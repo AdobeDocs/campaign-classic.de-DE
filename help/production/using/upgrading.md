@@ -24,7 +24,6 @@ Ermitteln und bestätigen Sie vor dem Starten des Aktualisierungsprozesses, auf 
 >* Adobe empfiehlt dringend, vor der Aktualisierung eine Datenbanksicherung für jede Instanz durchzuführen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../production/using/backup.md).
 >* Um eine Aktualisierung durchzuführen, stellen Sie sicher, dass Sie über die Möglichkeit und die Berechtigung zum Zugriff auf Instanzen und Protokolle verfügen.
 >* Lesen [diesem Abschnitt](../../installation/using/general-architecture.md) und [Build-Aktualisierung](https://helpx.adobe.com/de/campaign/kb/acc-build-upgrade.html) Kapitel vor dem Start.
-
 >
 
 
@@ -124,7 +123,7 @@ Gehen Sie in einer Linux-Umgebung wie folgt vor, um Adobe Campaign auf einen neu
 
 ### Aktualisierte Pakete abrufen {#obtain-updated-packages}
 
-Beginnen Sie mit der Wiederherstellung der beiden aktualisierten Pakete von Adobe Campaign: Verbindung zu [Software Distribution-Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) Verwendung Ihrer Benutzeranmeldeinformationen. Weitere Informationen zur Softwareverteilung finden Sie unter [diese Seite](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
+Beginnen Sie mit der Wiederherstellung der beiden aktualisierten Pakete von Adobe Campaign: Verbindung zu [Software Distribution-Portal](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) Verwendung Ihrer Benutzeranmeldeinformationen. Weitere Informationen zur Softwareverteilung finden Sie unter [diese Seite](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de).
 
 Die Datei lautet **nlserver6-v7-XXX.rpm**
 

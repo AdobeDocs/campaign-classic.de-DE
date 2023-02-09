@@ -43,7 +43,7 @@ Adobe Campaign basiert auf einer Service-orientierten Architektur (SOA) und umfa
 >
 >Sofern nicht ausdrücklich anders angegeben, obliegt die Installation, Aktualisierung und Wartung auf allen Komponenten einer Adobe Campaign-Plattform dem/den Maschinadministrator(en), der/die diese Komponenten hostet. Dazu gehört die Implementierung der Voraussetzungen für Adobe Campaign-Anwendungen sowie die Einhaltung von Campaign [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md) zwischen Komponenten.
 
-## Präsentationsschicht {#presentation-layer}
+## Präsentationsebene {#presentation-layer}
 
 Der Zugriff auf die Anwendung ist je nach den Anforderungen der Benutzer auf unterschiedliche Weise möglich: Rich-Client-, Thin-Client- oder API-Integration.
 
@@ -51,7 +51,7 @@ Der Zugriff auf die Anwendung ist je nach den Anforderungen der Benutzer auf unt
 * **Thin Client**: Bestimmte Anwendungsbereiche können über einen einfachen Webbrowser über eine HTML-Benutzeroberfläche aufgerufen werden. Dazu gehören das Berichtsmodul, Etappen der Versandvalidierung, Funktionen des Moduls Dezentrales Marketing (zentrales/lokales), Instanzüberwachung usw. Auf diese Weise können Adobe Campaign-Funktionen in ein Intranet oder ein Extranet integriert werden.
 * **Integration über APIs**: In bestimmten Fällen kann das System mithilfe der Web-Services-APIs, die über das SOAP-Protokoll verfügbar gemacht werden, über eine externe Anwendung aufgerufen werden.
 
-## Logische Anwendungsschicht {#logical-application-layer}
+## Logische Anwendungsebene {#logical-application-layer}
 
 Adobe Campaign führt verschiedene Programme in einer zentralen Plattform zusammen und schafft so eine offenen und zugleich skalierbare Architektur. Die Adobe Campaign-Plattform ist auf einer flexiblen Anwendungsebene konzipiert und lässt sich einfach an die geschäftlichen Anforderungen eines Unternehmens anpassen. Dies entspricht sowohl aus funktionaler als auch aus technischer Perspektive den wachsenden Anforderungen des Unternehmens. Dank der verteilten Architektur ist das System linear von mehreren Tausend auf mehrere Millionen Nachrichten skalierbar.
 
@@ -121,7 +121,7 @@ Dieser Prozess erstellt Statistiken zur Anzahl von Verbindungen, zu an die einze
 >
 >Die vollständige Liste der Adobe Campaign-Module finden Sie unter [dieses Dokuments](../../production/using/operating-principle.md).
 
-## Persistenzschicht {#persistence-layer}
+## Persistenzebene {#persistence-layer}
 
 Die Datenbank wird als Persistenzschicht verwendet und enthält fast alle von Adobe Campaign verwalteten Informationen. Dazu gehören funktionale Daten (Profile, Abonnements, Inhalte usw.), technische Daten (Versandaufträge und Protokolle, Trackinglogs usw.) und Arbeitsdaten (Einkäufe, Leads).
 

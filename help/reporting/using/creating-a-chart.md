@@ -5,7 +5,7 @@ description: Erfahren Sie, wie Sie ein Diagramm erstellen
 feature: Reporting
 exl-id: d32b614f-82c1-4363-816c-4ebedaa5cfe9
 source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 100%
 
@@ -39,11 +39,11 @@ Gehen Sie wie folgt vor, um eine Grafik in einem Bericht zu erstellen:
 
       ![](assets/reporting_graph_add_filter.png)
 
-   * Um Kontextdaten zu verwenden, wählen Sie **[!UICONTROL Kontextdaten]** aus der Dropdown-Liste **[!UICONTROL Quelle]** aus und klicken Sie auf den Link **[!UICONTROL Erweiterte Einstellungen...]**. Wählen Sie dann die Daten aus, auf die sich die Statistiken beziehen sollen.
+   * Um kontextuelle Daten zu verwenden, wählen Sie **[!UICONTROL Kontextuelle Daten]** aus der Dropdown-Liste **[!UICONTROL Quelle]** aus und klicken Sie auf den Link **[!UICONTROL Erweiterte Einstellungen...]**. Wählen Sie dann die Daten aus, auf die sich die Statistiken beziehen sollen.
 
       ![](assets/reporting_graph_from_context.png)
 
-      Sie haben nun auf die Kontextdaten Zugriff, um die in der Grafik anzuzeigenden Werte zu bestimmen:
+      Sie haben nun auf die kontextuellen Daten Zugriff, um die in der Grafik anzuzeigenden Werte zu bestimmen:
 
       ![](assets/reporting_graph_select-from_context.png)
 

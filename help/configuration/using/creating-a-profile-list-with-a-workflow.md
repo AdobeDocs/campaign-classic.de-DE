@@ -19,7 +19,7 @@ So erstellen Sie eine **[!UICONTROL Liste]** Listen basierend auf der neuen Empf
 
 Weitere Informationen zu Listen in Campaign finden Sie unter [diesem Abschnitt](../../platform/using/creating-and-managing-lists.md#about-lists-in-adobe-campaign).
 
-![](assets/do-not-localize/how-to-video.png) [Entdecken Sie diese Funktion im Video](../../platform/using/creating-and-managing-lists.md#create-list-in-a-wf-video).
+![](assets/do-not-localize/how-to-video.png) [Entdecken Sie diese Funktion im Video](../../platform/using/creating-and-managing-lists.md#create-list-in-a-wf-video)
 
 Gehen Sie wie folgt vor, um einen Zielgruppen-Workflow zu erstellen und Empfänger in einer benutzerdefinierten Empfängertabelle zu aktualisieren:
 

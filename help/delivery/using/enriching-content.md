@@ -5,7 +5,7 @@ description: Anreicherung von Inhalten
 feature: Data Management
 exl-id: a4472a7c-a16b-4d10-a8ca-f74ca5f62de4
 source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '669'
 ht-degree: 100%
 
@@ -103,15 +103,15 @@ Im Formular wird das Eingabefeld der Relation wie folgt deklariert:
 
 Durch Klick auf die **[!UICONTROL Lupe]** öffnet sich das Bearbeitungsformular des verknüpften Elements.
 
-#### Relationskollektion {#link-collection}
+#### Relationssammlung {#link-collection}
 
-Um eine Kollektion von Relationen anzugeben, muss im Datenschema zur Definition des Relationselements das Attribut **unbound=&quot;true&quot;** hinzugefügt werden.
+Um eine Sammlung von Relationen anzugeben, muss im Datenschema zur Definition des Relationselements das Attribut **unbound=&quot;true&quot;** hinzugefügt werden.
 
 ```
 <element expandSchemaTarget="cus:chapter" label="List of chapters" name="chapter"  ordered="true" unbound="true"/>
 ```
 
-Der Inhalt des betroffenen Elements ergänzt alle Kollektionselemente:
+Der Inhalt des betroffenen Elements ergänzt alle Sammlungselemente:
 
 ```
 <chapter computeString="Introduction" id="7011" title="Introduction" xtkschema="cus:chapter">    
@@ -172,9 +172,9 @@ Es besteht außerdem die Möglichkeit, die Zielgruppe mit dem Element **`<sysfil
 >
 >Die Einschränkung ist auch für Inhaltsrelationen möglich.
 
-#### Relationskollektion {#link-collection-1}
+#### Relationssammlung {#link-collection-1}
 
-Kollektionen werden auf die gleiche Weise wie Listen in Kollektionselementen notiert:
+Sammlungen werden auf die gleiche Weise wie Listen in Sammlungselementen notiert:
 
 ```
 <element label="List of contacts" name="contact" unbound="true">
@@ -196,7 +196,7 @@ Im Formular wird das Listenfeld wie folgt deklariert:
 >
 >Die Liste ist editierbar und ermöglicht die Auswahl der Relation über ein Steuerelement vom Typ &quot;link&quot; (siehe oben).
 
-Der Inhalt des betroffenen Elements ergänzt alle Kollektionselemente im Ausgabedokument:
+Der Inhalt des betroffenen Elements ergänzt alle Sammlungselemente im Ausgabedokument:
 
 ```
 <contact id="11504978621" recipient-cs="Doe John (john.doe@adobe.com)" recipient-id="3012"/>
@@ -209,7 +209,7 @@ Der Inhalt referenzierter Relationen ist auf den internen Schlüssel und den **C
 
 Für die Ergänzung der Relationsinhalte mit SOAP-Abfragen ist die Verwendung von JavaScripts erforderlich.
 
-**Beispiel**: Ergänzung der Relation &quot;mainContact&quot; und der Kollektionsrelationen &quot;contact&quot; um den Empfängernamen:
+**Beispiel**: Ergänzung der Relation &quot;mainContact&quot; und der Sammlungsrelationen &quot;contact&quot; um den Empfängernamen:
 
 ```
 // Update <mainContact> link

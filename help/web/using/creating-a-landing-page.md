@@ -5,7 +5,7 @@ description: Erstellen einer Landingpage
 feature: Landing Pages
 exl-id: 71c737c2-b0d6-4ae8-a5df-28a08dff82d7
 source-git-commit: 4ff86349d6b8966273585bf2a1ea0d785a7e87cb
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '764'
 ht-degree: 100%
 
@@ -100,7 +100,7 @@ In diesem Abschnitt wird beschrieben, wie importierter Inhalt angepasst und die 
 
 Zunächst sollen die Farben der Seite geändert werden. Gehen Sie dazu wie folgt vor:
 
-1. Öffnen Sie die Seite **[!UICONTROL Kollektion]**.
+1. Öffnen Sie die Seite **[!UICONTROL Sammlung]**.
 1. Klicken Sie auf den Hintergrund.
 1. Klicken Sie auf der rechten Seite auf **Hintergrundfarbe**.
 1. Wählen Sie eine neue Hintergrundfarbe aus.
@@ -132,7 +132,7 @@ Sie können Felder nach Bedarf zu Pflichtfeldern machen: Beispielsweise können 
 
 Dieser Schritt ist unbedingt erforderlich, da die Webanwendung damit die Reihenfolge der nächsten Schritte feststellen kann: Speichern der erfassten Daten in der Datenbank und die Anzeige der nächsten Seite (**Dankeseite**).
 
-1. Wählen Sie die **[!UICONTROL Senden]**-Schaltfläche der Seite **[!UICONTROL Kollektion]** aus.
+1. Wählen Sie die **[!UICONTROL Senden]**-Schaltfläche der Seite **[!UICONTROL Sammlung]** aus.
 1. Öffnen Sie die Dropdown-Liste **[!UICONTROL Aktion]**.
 1. Wählen Sie die Aktion **[!UICONTROL Nächste Seite]** aus.
 

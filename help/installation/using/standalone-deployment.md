@@ -75,7 +75,7 @@ Mit zunehmendem Volumen verschiebt eine Variante dieser Architektur den Datenban
 In den folgenden Beispielen sind die Parameter der Instanz:
 
 * Name der Instanz: **Demo**
-* DNS-Maske: **console.campaign.net*** (nur für Client-Konsolenverbindungen und für Berichte)
+* DNS-Maske: **console.campaign.net&#42;** (nur für Client-Konsolenverbindungen und für Berichte)
 * Datenbank: **campaign:demo@dbsrv**
 
 ### Installation und Konfiguration (ein Computer) {#installing-and-configuring--single-machine-}

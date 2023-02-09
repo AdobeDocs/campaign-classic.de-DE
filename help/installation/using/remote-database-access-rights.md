@@ -40,7 +40,7 @@ Generell sind die folgenden Berechtigungen erforderlich:
 * **CONNECT**: Verbindung mit der Remote-Datenbank,
 * **READ Data**: Nur Lesezugriff auf Tabellen, die Kundendaten enthalten,
 * **READ &#39;MetaData&#39;**: Zugriff auf Serverdatenkataloge zum Abruf der Tabellenstruktur,
-* **LOAD**: Ladevorgänge für große Datenmengen in Arbeitstabellen (erforderlich bei der Arbeit an Kollektionen und Joins),
+* **LOAD**: Ladevorgänge für große Datenmengen in Arbeitstabellen (erforderlich bei der Arbeit an Sammlungen und Joins),
 * **CREATE/DROP** für **TABLE/INDEX/PROCEDURE/FUNCTION** (nur bei von Adobe Campaign generierten Tabellen),
 * **EXPLAIN** (empfohlen): für die Leistungsüberwachung im Fall von Problemen,
 * **WRITE Data** (abhängig vom Integrationsszenario).

@@ -5,7 +5,7 @@ description: Überwachen der Workflow-Ausführung
 feature: Workflows
 exl-id: d589180b-8e1d-4149-9b16-3f541018a41f
 source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2098'
 ht-degree: 100%
 
@@ -238,7 +238,7 @@ Der Workflow **Datenbankbereinigung**, auf den Sie über den Knoten **Administra
 
 Sie können auch spezifische technische Workflows erstellen, um unnötige Daten zu bereinigen, die Speicherplatz belegen. Siehe [Produktionshandbuch zu Campaign Classic v7](../../production/using/application-objects.md) und diesen [Abschnitt](#purging-the-logs).
 
-## Ausgesetzte Workflows handhaben {#handling-of-paused-workflows}
+## Handhaben von ausgesetzten Workflows {#handling-of-paused-workflows}
 
 Die Arbeitstabellen ausgesetzter Workflows werden standardmäßig nie bereinigt. Ab Build 8880 werden Workflows, die zu lange in einem ausgesetzten Zustand angehalten werden, automatisch gestoppt und deren Arbeitstabellen bereinigt. Dieses Verhalten wird wie folgt ausgelöst:
 

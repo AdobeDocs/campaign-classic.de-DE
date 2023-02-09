@@ -65,7 +65,7 @@ Da es sich bei dem Computer nicht um einen Tracking-Server handelt, sollten Sie 
 In den folgenden Beispielen sind die Parameter der Instanz:
 
 * Name der Instanz: **Demo**
-* DNS-Maske: **console.campaign.net*** (nur für Client-Konsolenverbindungen und für Berichte)
+* DNS-Maske: **console.campaign.net&#42;** (nur für Client-Konsolenverbindungen und für Berichte)
 * Sprache: englisch
 * Datenbank: **campaign:demo@dbsrv**
 

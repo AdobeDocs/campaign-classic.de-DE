@@ -23,7 +23,7 @@ Dieses Kapitel behandelt die verschiedenen fortgeschrittenen Konfigurationsmögl
 >
 >Die folgenden Ausführungen richten sich vor allem an **technische Administratoren**.
 
-* Sie können zusätzliche Kontextdaten verwenden. Weiterführende Informationen finden Sie im Abschnitt [Zusätzliche Daten](../../interaction/using/additional-data.md).
+* Sie können zusätzliche kontextuelle Daten verwenden. Weiterführende Informationen finden Sie im Abschnitt [Zusätzliche Daten](../../interaction/using/additional-data.md).
 * Sie haben die Möglichkeit, den Anwendungskontext von Angeboten anzureichern, die über einen eingehenden Kanal vorgeschlagenen werden. Hierzu ist eine Erweiterung des Interaktionsschemas **nms:interaction** erforderlich. Den vollständigen Vorgang finden Sie im Abschnitt [Beispiel einer Erweiterung](../../interaction/using/extension-example.md).
 * Das Erstellen einer Testumgebung ist im Abschnitt [Erstellung einer Testumgebung](../../interaction/using/creating-a-test-environment.md) ausführlich beschrieben.
 * Sie können das standardmäßige Verhalten der Moduls mithilfe von Erweiterungspunkten ändern. Weitere Informationen hierzu finden Sie im Abschnitt [Erweiterungspunkte](../../interaction/using/hooks.md)

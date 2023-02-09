@@ -27,7 +27,7 @@ Sie können die folgenden Tests durchführen. Wenn der Verbindungsfehler weiterh
 <thead> 
 <tr> 
 <th>Prüfungen<br /> </th> 
-<th>Lösung<br /> </th> 
+<th>Auflösung<br /> </th> 
 </tr> 
 </thead> 
 <tbody> 

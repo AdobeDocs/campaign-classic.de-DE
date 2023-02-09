@@ -5,7 +5,7 @@ description: Erfahren Sie, wie Sie Zugriff auf Campaign-Funktionen gewähren.
 feature: Access Management, Permissions
 exl-id: 9b616715-33cd-43ba-8548-8d96a179408e
 source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '253'
 ht-degree: 100%
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 ![](../../assets/common.svg)
 
-Adobe Campaign ermöglicht es, die den unterschiedlichen Benutzern zugeteilten Rechte zu bestimmen und zu verwalten. Es handelt es sich um Berechtigungen und Beschränkungen folgender Aktivitäten:
+Mit Adobe Campaign können Sie die den verschiedenen Benutzenden zugewiesenen Rechte definieren und verwalten. Diese sind ein Satz von Rechten und Einschränkungen, die Folgendes ermöglichen oder verweigern:
 
 * Zugriff auf bestimmte Funktionen (über spezifische Berechtigungen);
 * Zugriff auf bestimmte Datensätze;
@@ -27,7 +27,7 @@ Sie werden durch Sicherheitsparameter ergänzt, die mit dem vom Benutzer zur Ver
 
 Es gibt zwei Arten von Berechtigungen, die einem Benutzer erteilt werden können:
 
-* Sie können Benutzergruppen bestimmen, denen Sie Berechtigungen einräumen und Benutzer zuordnen. Diese Vorgehensweise ermöglicht eine gemeinsame Nutzung der Rechte und eine Vereinheitlichung der Benutzerprofile. Zudem wird auf diese Weise die Verwaltung der Profile vereinfacht. Die Erstellung und Verwaltung von Gruppen wird in [diesem Abschnitt](access-management-groups.md) näher beschrieben.
+* Sie können Benutzergruppen bestimmen, denen Sie Berechtigungen einräumen, und dann die Benutzer einer oder mehreren Gruppen zuweisen. Diese Vorgehensweise ermöglicht eine gemeinsame Nutzung der Rechte und eine Vereinheitlichung der Benutzerprofile. Außerdem wird die Verwaltung und Pflege von Profilen erleichtert. Die Erstellung und Verwaltung von Gruppen wird in [diesem Abschnitt](access-management-groups.md) näher beschrieben.
 
 * Sie können den Benutzern direkt spezifische Berechtigungen einräumen, gegebenenfalls, um über Gruppen eingeräumte Berechtigungen zu überschreiben. Diese Rechte werden auf [dieser Seite](access-management-named-rights.md) näher beschrieben.
 

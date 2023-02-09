@@ -5,7 +5,7 @@ description: Weitere Informationen zu Zielgruppendaten in einem Workflow.
 feature: Query Editor, Data Management
 exl-id: 74b82019-bdab-4442-84cf-5ad18d0db788
 source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2031'
 ht-degree: 100%
 
@@ -41,13 +41,13 @@ Kreuzen Sie den gewünschten Formeltyp an, beispielsweise Aggregat.
 
 ![](assets/query_add_an_output_column_formula.png)
 
-Über die Option **[!UICONTROL Unterelement hinzufügen]** können die berechneten Daten in die Kollektion eingefügt werden. Sie können also aus der Kollektion stammende Zusatzdaten auswählen oder aus den Kollektionselementen Aggregate berechnen.
+Über die Option **[!UICONTROL Unterelement hinzufügen]** können die berechneten Daten in die Sammlung eingefügt werden. Sie können also aus der Sammlung stammende Zusatzdaten auswählen oder aus den Sammlungselementen Aggregate berechnen.
 
 ![](assets/query_add_columns_subscription_sub-element.png)
 
-Die Unterelemente erscheinen als Unterordner der Kollektion, der sie angehören.
+Die Unterelemente erscheinen als Unterordner der Sammlung, der sie angehören.
 
-Kollektionen werden im gleichnamigen Untertab angezeigt. Durch Klick auf die Schaltfläche **[!UICONTROL Details...]** ... können Sie die abgerufenen Elemente filtern. Wählen Sie im Filterassistenten anhand der Dropdown-Liste zunächst die gesammelten Daten aus und geben Sie dann die auf die Kollektion anzuwendenden Filterbedingungen an.****
+**[!UICONTROL Sammlungen]** werden im gleichnamigen Untertab angezeigt. Durch Klick auf die Schaltfläche **[!UICONTROL Details...]** können Sie die abgerufenen Elemente filtern. Wählen Sie im Filterassistenten anhand der Dropdown-Liste zunächst die gesammelten Daten aus und geben Sie dann die auf die Sammlung anzuwendenden Filterbedingungen an.
 
 ![](assets/query_add_columns_collection.png)
 
@@ -59,7 +59,7 @@ Die abgerufenen Zusatzdaten können zur weiteren Einschränkung der Daten aus de
 
 ### Vereinheitlichen von Daten {#homogenizing-data}
 
-In den Aktivitäten vom Typ **[!UICONTROL Vereinigung]** und **[!UICONTROL Schnittmenge]** haben Sie die Möglichkeit, nur die gemeinsamen Zusatzdaten beizubehalten, um eine homogene Datenbasis zu erhalten. In diesem Fall enthält die resultierende temporäre Arbeitstabelle der entsprechenden Aktivität nur die Zusatzdaten, die in allen eingehenden Mengen enthalten sind.
+Mit den Aktivitäten vom Typ **[!UICONTROL Vereinigung]** und **[!UICONTROL Schnittmenge]** haben Sie die Möglichkeit, nur gemeinsame Zusatzdaten auszuwählen, um eine konsistente Datenbasis zu erhalten. In diesem Fall enthält die resultierende temporäre Arbeitstabelle dieser Aktivität nur die Zusatzdaten, die in allen eingehenden Teilmengen vorkommen.
 
 ![](assets/option-common_additionnal_col_only.png)
 
@@ -251,7 +251,7 @@ Hierfür bietet Adobe Campaign:
 
 ### Anreichern und Ändern von Daten {#enriching-and-modifying-data}
 
-Ergänzend zur Zielgruppendimension ermöglicht es die Filterdimension, die Art der abgerufenen Daten zu präzisieren. Siehe [Zielgruppen- und Filterdimensionen](building-a-workflow.md#targeting-and-filtering-dimensions).
+Ergänzend zur Zielgruppendimension ermöglicht die Filterdimension, die Art der abgerufenen Daten zu präzisieren. Siehe [Zielgruppen- und Filterdimensionen](building-a-workflow.md#targeting-and-filtering-dimensions).
 
 Identifizierte und abgerufene Daten können angereichert, zusammengefasst und bearbeitet werden, um die Zielgruppenerstellung zu optimieren. Verwenden Sie dazu zusätzlich zu den im Abschnitt [Daten segmentieren](#segmenting-data) beschriebenen Datenbearbeitungstätigkeiten Folgendes:
 

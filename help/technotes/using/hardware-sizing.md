@@ -137,7 +137,7 @@ Geschätztes Volumen:
 | E-Mail | 42 Millionen/Monat |
 | Briefpost | 10 Millionen/Monat |
 | Mobile SMS | 1.000.000/Monat |
-| Tägliche maximale E-Mail-Menge | 5.000.000 |
+| Tägliche maximale E-Mail-Menge | 5,000,000 |
 
 ### Web- und Anwendungsserver
 

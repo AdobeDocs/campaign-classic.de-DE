@@ -444,7 +444,7 @@ Mit einem Alias können Sie den Speicherort der Daten im Ausgabedokument ändern
 </queryDef>
 ```
 
-Rückgabe:
+Rückgaben:
 
 ```
 <recipient My_folder="Recipients" First name ="John" lastName="Doe"/>

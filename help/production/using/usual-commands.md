@@ -9,7 +9,7 @@ exl-id: 472ccc04-e68e-4ccb-90e9-7d626a4e794f
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '407'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 
@@ -29,7 +29,6 @@ Der Parameter **`<command>`** dem Modul entspricht.
 >
 >* Auf jeden Fall können Sie die **-noconsole** -Argument zum Löschen von Kommentaren, die nach dem Start der Module angezeigt werden.
 >* Umgekehrt können Sie das -Argument hinzufügen **-verbose** um weitere Informationen anzuzeigen.
-
 >
 
 
@@ -149,7 +148,7 @@ nlserver config -setdblogin:<[dbms:]account[:database][/password]@server>
 nlserver config -setdblogin:PostgreSQL:<accountName>:test6@dbserver
 ```
 
-Geben Sie das Kennwort ein.
+Geben Sie das Passwort ein.
 
 So ändern Sie die **intern** password: **nlserver config -internalpassword**
 

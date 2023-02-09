@@ -46,7 +46,7 @@ Die folgende Liste enthält nur die Tabellen, die am stärksten fragmentiert sin
    <td> NmsDeliveryPart<br /> </td> 
    <td> Mittel<br /> </td> 
    <td> Einfügen, Aktualisieren, Löschen<br /> </td> 
-   <td> Arbeitstabelle, in welche Datensätze bei der Versandvorbereitung eingefügt werden. They are then updated during delivery and finally deleted once the delivery is complete.<br /> Diese Tabelle neigt dazu, schnell zu fragmentieren, obwohl ihre durchschnittliche Größe recht begrenzt ist.<br /> </td> 
+   <td> Arbeitstabelle, in welche Datensätze bei der Versandvorbereitung eingefügt werden. Diese werden dann während des Versands aktualisiert und nach Abschluss des Versands gelöscht.<br /> Diese Tabelle neigt dazu, schnell zu fragmentieren, obwohl ihre durchschnittliche Größe recht begrenzt ist.<br /> </td> 
   </tr> 
   <tr> 
    <td> NmsMirrorPageInfo<br /> </td> 
@@ -112,19 +112,19 @@ Die folgende Liste enthält nur die Tabellen, die am stärksten fragmentiert sin
    <td> NmsEmailErrorStat<br /> </td> 
    <td> Mittel<br /> </td> 
    <td> Einfügen, Aktualisieren, Löschen<br /> </td> 
-   <td> Diese Tabelle enthält die Aggregate für SMTP-Fehler, sortiert nach Domain. It initially contains detailed information which is aggregated by the cleanup task once it becomes outdated. <br /> </td> 
+   <td> Diese Tabelle enthält die Aggregate für SMTP-Fehler, sortiert nach Domain. Er enthält zunächst detaillierte Informationen, die von der Bereinigungsaufgabe aggregiert werden, sobald sie veraltet ist. <br /> </td> 
   </tr> 
   <tr> 
-   <td> NmsBroadLogMid (on a mid-sourcing instance)<br /> </td> 
+   <td> NmsBroadLogMid (auf einer Mid-Sourcing-Instanz)<br /> </td> 
    <td> Groß<br /> </td> 
-   <td> Insertions, updates, deletions<br /> </td> 
+   <td> Einfügen, Aktualisieren, Löschen<br /> </td> 
    <td> Nur wenn die Instanz 5.10 (oder höher) als Mid-Sourcing-Instanz verwendet wird. Dies ist eine der größten Tabellen in der Datenbank. Pro gesendeter Nachricht wird ein Datensatz gesendet. Diese Datensätze werden eingefügt, aktualisiert, um den Versandstatus zu verfolgen, und beim Löschen des Verlaufs gelöscht. Bei der Verwendung von Mid-Sourcing besteht die Empfehlung darin, den Verlauf zu begrenzen (in der Regel weniger als zwei Monate). Daher bleibt diese Tabelle im Hinblick auf die Größe vernünftig (weniger als 30 Go for 60 Millionen rows, data+index). Es ist jedoch sehr wichtig, sie von Zeit zu Zeit neu zu erstellen. <br /> </td> 
   </tr> 
   <tr> 
-   <td> NmsBroadLogRcp (when the NmsRecipient table is used) <br /> </td> 
+   <td> NmsBroadLogRcp (wenn die NmsRecipient-Tabelle verwendet wird) <br /> </td> 
    <td> Groß<br /> </td> 
    <td> Einfügen, Aktualisieren, Löschen<br /> </td> 
-   <td> This is the largest table in the system. There is one record per message sent, and these records are inserted, updated to track the delivery status, and deleted when the history is purged. Beachten Sie, dass diese Tabelle in Version 5.10 kleiner ist als die Entsprechung in Version 4.05 (NmsBroadLog), da der SMTP-Nachrichtentext in der Tabelle NmsBroadLogMsg in Version 5.10 faktorisiert ist. Es ist jedoch nach wie vor wichtig, diese Tabelle regelmäßig neu zu indizieren (alle zwei Wochen zu Beginn) und sie von Zeit zu Zeit (einmal im Monat oder bei beeinträchtigter Leistung) vollständig neu zu erstellen. <br /> </td> 
+   <td> Dies ist die größte Tabelle im System. Pro gesendeter Nachricht wird ein Datensatz gesendet. Diese Datensätze werden eingefügt, aktualisiert, um den Versandstatus zu verfolgen, und beim Löschen des Verlaufs gelöscht. Beachten Sie, dass diese Tabelle in Version 5.10 kleiner ist als die Entsprechung in Version 4.05 (NmsBroadLog), da der SMTP-Nachrichtentext in der Tabelle NmsBroadLogMsg in Version 5.10 faktorisiert ist. Es ist jedoch nach wie vor wichtig, diese Tabelle regelmäßig neu zu indizieren (alle zwei Wochen zu Beginn) und sie von Zeit zu Zeit (einmal im Monat oder bei beeinträchtigter Leistung) vollständig neu zu erstellen. <br /> </td> 
   </tr> 
   <tr> 
    <td> YyyBroadLogXx (wenn eine externe Empfängertabelle verwendet wird)<br /> </td> 
@@ -195,12 +195,12 @@ Die folgende Liste enthält nur die Tabellen, die am stärksten fragmentiert sin
   <tr> 
    <td> XtkSessionInfo<br /> </td> 
    <td> Klein<br /> </td> 
-   <td> Insertions, deletions<br /> </td> 
-   <td> Table that includes user sessions. Die Anzahl der Einfügungen und Löschungen ist sehr wichtig.<br /> </td> 
+   <td> Einfügungen, Löschungen<br /> </td> 
+   <td> Tabelle mit Benutzersitzungen. Die Anzahl der Einfügungen und Löschungen ist sehr wichtig.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Kundentabellen {#customer-tables}
 
-Zusätzlich zur obigen Liste können auch Tabellen, die von Kunden erstellt wurden (die nicht im Adobe Campaign-Datenmodell vorhanden sind), während der Plattformeinrichtung fragmentiert werden, insbesondere wenn sie häufig während der Datenladevorgänge oder Synchronisierungsvorgänge aktualisiert werden. Diese Tabellen können Teil des standardmäßigen Adobe Campaign-Datenmodells sein (z. B. **NmsRecipient**). In this case, it is up to the administrator of the Adobe Campaign platform to conduct an audit of its specific database model to find these custom tables. Diese Tabellen werden nicht unbedingt in unseren Wartungsverfahren explizit erwähnt.
+Zusätzlich zur obigen Liste können auch Tabellen, die von Kunden erstellt wurden (die nicht im Adobe Campaign-Datenmodell vorhanden sind), während der Plattformeinrichtung fragmentiert werden, insbesondere wenn sie häufig während der Datenladevorgänge oder Synchronisierungsvorgänge aktualisiert werden. Diese Tabellen können Teil des standardmäßigen Adobe Campaign-Datenmodells sein (z. B. **NmsRecipient**). In diesem Fall ist es Sache des Administrators der Adobe Campaign-Plattform, eine Prüfung seines spezifischen Datenbankmodells durchzuführen, um diese benutzerdefinierten Tabellen zu finden. Diese Tabellen werden nicht unbedingt in unseren Wartungsverfahren explizit erwähnt.

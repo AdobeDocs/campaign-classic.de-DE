@@ -1,13 +1,13 @@
 ---
 product: campaign
-title: '"[!DNL Gold Standard] Versionen"'
+title: "[!DNL Gold Standard] Versionen"
 description: Versionshinweise und Kompatibilitätsmatrix für Campaign Classic [!DNL Gold Standard]
 feature: Overview
 role: User
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
 source-git-commit: 7f24c8be599d6dece41de848d64feb8079b10ff3
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1670'
 ht-degree: 100%
 
@@ -133,7 +133,7 @@ Build 9032@3a9dc9c umfasst die folgenden Fehlerkorrekturen:
 * Fehlerkorrektur – In der LibreOffice-Verwaltung ist jetzt das Exportieren von Berichten möglich. (NEO-20982)
 * Fehlerkorrektur – Beim Aktualisieren verschiedener Workflows mit einer Umfrageaktivität tritt jetzt kein Fehler mehr auf.
 * Die LibreOffice-Verwaltung wurde verbessert, um Fehler bei der E-Mail-Vorschau mit .odt-Dateien zu verhindern.
-* Die Verwaltung der Apache-Verbindung wurde verbessert, um Latenzzeiten beim Web-Dienst zu vermeiden.
+* Die Verwaltung der Apache-Verbindung wurde verbessert, um Latenzen beim Web-Dienst zu vermeiden.
 * Die Anzeige des Version-Tags (siebenstellig) im Menü **Versionsinformationen** wurde verbessert.
 * Fehlerkorrektur – Es wurde ein Regressionsfehler bei der Listenverwaltung behoben, der die Veröffentlichung von Angeboten verhinderte.
 * Fehlerkorrektur – Es wurde ein Regressionsfehler behoben, der zum Absturz des Bereinigungs-Workflows führte.

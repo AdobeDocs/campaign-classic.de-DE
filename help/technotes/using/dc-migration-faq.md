@@ -7,7 +7,7 @@ role: User
 level: Beginner
 exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
 source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2215'
 ht-degree: 100%
 
@@ -103,7 +103,7 @@ Die globalen Auswirkungen auf IPs, Blockierungsliste, Subdomains und URLs sind u
 
    Ja, dies wird in der Server-Konfigurationsdatei gespeichert, die von der Quelle in die neue Instanz kopiert wird.
 
-* **Wie wird sich das auf unsere zugewiesene Subdomain auswirken, mit der wir unsere Kommunikation branden?**
+* **Wie wird sich das auf unsere delegierte Subdomain auswirken, mit der wir unsere Kommunikation branden?**
 
    Die für die Marketing-Kommunikation verwendeten Subdomains bleiben unverändert. Abhängig von der Implementierung können jedoch auf der Client-Seite Aktionen erforderlich sein:
    * Bei einer Subdomain-Zuweisung an Adobe (Standard) übernimmt Adobe alle Änderungen und sorgt für einen nahtlosen Übergang.

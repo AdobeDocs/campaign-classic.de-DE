@@ -1,11 +1,11 @@
 ---
 product: campaign
-title: '"Anwendungsbeispiele: Webformulare"'
-description: '"Anwendungsbeispiele: Webformulare"'
+title: "Anwendungsbeispiele: Webformulare"
+description: "Anwendungsbeispiele: Webformulare"
 feature: Web Forms
 exl-id: 7aa4646d-1325-47c2-b553-6fe375c48973
 source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '992'
 ht-degree: 100%
 

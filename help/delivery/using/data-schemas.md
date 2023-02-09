@@ -5,7 +5,7 @@ description: Erfahren Sie, wie Sie in Campaign Datenschemata verwenden
 feature: Data Model
 exl-id: 3e28bfee-0321-40f4-9ef6-1bdb5b25041b
 source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '558'
 ht-degree: 100%
 
@@ -104,11 +104,11 @@ Beispiel des um diese Eigenschaften ergänzten Schemas:
 </srcSchema>
 ```
 
-## Kollektionselemente {#collection-elements}
+## Sammlungselemente {#collection-elements}
 
-Eine Kollektion ist eine Liste von Elementen mit gleichem Namen und auf gleicher Hierarchieebene.
+Eine Sammlung ist eine Liste von Elementen mit gleichem Namen und auf gleicher Hierarchieebene.
 
-In unserem Beispiel sind die Elemente **`<chapter>`** und **`<page>`** Kollektionselemente. Das Attribut **unbound** muss daher der Definition folgender Elemente hinzugefügt werden:
+In unserem Beispiel sind die Elemente **`<chapter>`** und **`<page>`** Sammlungselemente. Das Attribut **unbound** muss daher der Definition folgender Elemente hinzugefügt werden:
 
 ```
 <element name="chapter" label="Chapter" unbound="true" ordered="true">
@@ -120,7 +120,7 @@ In unserem Beispiel sind die Elemente **`<chapter>`** und **`<page>`** Kollektio
 
 >[!NOTE]
 >
->Das Attribut **ordered=&quot;true&quot;** ermöglicht die Sortierung der enthaltenen Kollektionselemente.
+>Das Attribut **ordered=&quot;true&quot;** ermöglicht die Sortierung der enthaltenen Sammlungselemente.
 
 ## Referenzierung von Elementen {#element-referencing}
 

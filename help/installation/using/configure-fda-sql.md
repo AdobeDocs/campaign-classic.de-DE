@@ -2,7 +2,8 @@
 product: campaign
 title: Zugriff auf Microsoft SQL Server konfigurieren
 description: Erfahren Sie, wie Sie den Zugriff auf Microsoft SQL Server konfigurieren
-source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
+exl-id: 65ab4577-3126-4579-8fcc-e93772ebd1e8
+source-git-commit: 6b7638eec1718edf30f81005cd6691dd271aaa0c
 workflow-type: tm+mt
 source-wordcount: '536'
 ht-degree: 10%
@@ -113,4 +114,3 @@ Der Connector unterstützt die folgenden Optionen:
 | Authentifizierung | Vom Connector unterstützte Authentifizierungstyp. Aktuell unterstützter Wert: ActiveDirectoryMSI. <br> Weitere Informationen hierzu finden Sie in Beispiel 8 von [Microsoft-Dokumentation](https://docs.microsoft.com/en-us/sql/connect/odbc/using-azure-active-directory?view=sql-server-ver15#example-connection-strings). |
 | Verschlüsseln | Gibt an, ob Verbindungen die TLS-Verschlüsselung über das Netzwerk verwenden. Mögliche Werte sind **ja/obligatorisch (18.0 und höher)**, **no/optional (18.0 und höher)** und **strict (18.0 und höher)**. Der Standardwert ist auf **yes** in Version 18.0 und höher und **no** in früheren Versionen. <br>Weitere Informationen hierzu finden Sie unter [Microsoft-Dokumentation](https://docs.microsoft.com/en-us/sql/connect/odbc/dsn-connection-string-attribute?view=azure-sqldw-latest#encrypt). |
 | TrustServerCertificate | Aktiviert die Verschlüsselung mit einem selbstsignierten Serverzertifikat bei Verwendung mit **Verschlüsseln**. <br>Akzeptierte Werte: **yes** oder **no** (Standardwert, d. h. das Serverzertifikat wird validiert). |
-

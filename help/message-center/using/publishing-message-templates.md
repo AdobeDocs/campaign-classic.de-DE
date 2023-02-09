@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: 'Nachrichtenvorlagen veröffentlichen '
+title: Nachrichtenvorlagen veröffentlichen
 description: Erfahren Sie mehr über das Veröffentlichen von Transaktionsnachrichten sowie das Aufheben von deren Veröffentlichung in Adobe Campaign Classic.
 audience: message-center
 content-type: reference

@@ -27,7 +27,8 @@ Weiterführende Informationen zur beschreibenden Analyse können Sie [diesem Abs
 
 ![](assets/offer_simulation_012.png)
 
-Des Weiteren bietet eine Pivot-Tabelle eine schnelle Übersicht über die Angebotsverteilung je Rang. Wie alle Berichte in Adobe Campaign kann auch dieser exportiert, gedruckt, archiviert oder im Webbrowser angezeigt werden.
+Des Weiteren bietet eine Pivot-Tabelle eine schnelle Übersicht über die Angebotsverteilung je Ranking. Wie alle Berichte in Adobe Campaign kann auch dieser exportiert, gedruckt, archiviert oder im Webbrowser angezeigt werden.
+
 
 Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../reporting/using/actions-on-reports.md).
 

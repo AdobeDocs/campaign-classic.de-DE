@@ -5,7 +5,7 @@ description: Erfahren Sie mehr über die Workflow-Aktivität "Wiederkehrender Ve
 feature: Workflows
 exl-id: efd2cdfb-2e5f-4672-8be8-a424481b11ed
 source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 100%
 
@@ -31,7 +31,7 @@ Gehen Sie dazu wie folgt vor:
 
 Die zur Verfügung stehenden Optionen entsprechen denen einer klassischen Versandvorlage. Weiterführende Informationen finden Sie in diesem [Abschnitt](../../delivery/using/about-templates.md).
 
-Ein Anwendungsbeispiel für diese Aktivität ist in diesem [Abschnitt](sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow) enthalten.
+Ein Anwendungsbeispiel für diese Aktivität finden Sie in diesem [Abschnitt](sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
 
 ## Einrichten eines wiederkehrenden Versands
 

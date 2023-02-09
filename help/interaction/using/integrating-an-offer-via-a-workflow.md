@@ -113,9 +113,10 @@ Gehen Sie dazu wie folgt vor:
    >
    >Die Anzahl an für die Vorschau verfügbaren Vorschlägen hängt von den im Versand konfigurierten Parametern ab.
 
-### Rang und Gewichtung von Angeboten speichern {#storing-offer-rankings-and-weights}
+### Ranking und Gewichtung von Angeboten speichern {#storing-offer-rankings-and-weights}
 
-Standardmäßig werden Rang und Gewichtung bei Verwendung der Aktivität **Anreicherung** nicht in der Vorschlagstabelle gespeichert.
+Standardmäßig werden Ranking und Gewichtung bei Verwendung der Aktivität **Anreicherung** nicht in der Vorschlagstabelle gespeichert.
+
 
 >[!NOTE]
 >
@@ -128,13 +129,15 @@ Gehen Sie wie folgt vor, wenn Sie diese Informationen dennoch speichern möchten
 
    ![](assets/ita_enrichment_rankweight_1.png)
 
-1. Fügen Sie für den Rang die Spalte **[!UICONTROL @rank]** und die Gewichtung die Spalte **[!UICONTROL @weight]** hinzu.
+1. Fügen Sie für das Ranking die Spalte **[!UICONTROL @rank]** und für die Gewichtung die Spalte **[!UICONTROL @weight]** hinzu.
+
 
    ![](assets/ita_enrichment_rankweight_2.png)
 
 1. Bestätigen Sie Ihre Wahl und speichern Sie den Workflow.
 
-Der Versand speichert nun automatisch Rang und Gewichtung der Angebote. Die Informationen können im Tab **[!UICONTROL Angebote]** des Versands eingesehen werden.
+Der Versand speichert nun automatisch Ranking und Gewichtung der Angebote. Die Informationen können im Tab **[!UICONTROL Angebote]** des Versands eingesehen werden.
+
 
 ## Angebotsmodul {#offer-engine}
 

@@ -9,7 +9,7 @@ exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
 source-git-commit: 11e175c737d9c6cbb9432ec7835f35ee0e00a5c0
 workflow-type: tm+mt
 source-wordcount: '3290'
-ht-degree: 5%
+ht-degree: 7%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 5%
 >
 >Serverseitige Konfigurationen können nur von Adobe für Bereitstellungen durchgeführt werden, die von Adobe gehostet werden. Weitere Informationen zu den verschiedenen Implementierungen finden Sie im Abschnitt [Hosting-Modelle](../../installation/using/hosting-models.md) oder [diese Seite](../../installation/using/capability-matrix.md).
 
-## Implementierungsassistent {#deployment-wizard}
+## Softwareverteilungs-Assistent {#deployment-wizard}
 
 Mit einem grafischen Assistenten, der in der Adobe Campaign-Clientkonsole verfügbar ist, können Sie die Parameter der Instanz definieren, mit der Sie eine Verbindung herstellen möchten.
 
@@ -121,7 +121,7 @@ Die Informationen über Wiedereinziehungen sind im Abschnitt **Wiederherstellung
 
 >[!NOTE]
 >
->Wenn Sie bei gehosteten oder hybriden Installationen ein Upgrade auf [Verbesserter MTA](../../delivery/using/sending-with-enhanced-mta.md)festgelegt ist, werden die Wiederholungsparameter der Kampagne nicht mehr verwendet. Versuche mit Softbounces und die Zeitdauer zwischen ihnen werden durch den erweiterten MTA bestimmt, der auf dem Typ und der Schwere der Bounce-Antworten basiert, die von der E-Mail-Domain der Nachricht zurückgegeben werden.
+>Wenn Sie bei gehosteten oder hybriden Installationen ein Upgrade auf [Verbesserter MTA](../../delivery/using/sending-with-enhanced-mta.md)festgelegt ist, werden die Wiederholungsparameter der Kampagne nicht mehr verwendet. Weitere Zustellversuche aufgrund von Softbounces und die Zeitdauer zwischen ihnen werden durch den Enhanced MTA bestimmt, basierend auf Typ und Prioritätsstufe der Bounce-Antworten, die von der E-Mail-Domain der Nachricht zurückgegeben werden.
 
 ### Quarantäneparameter {#quarantine-parameters}
 

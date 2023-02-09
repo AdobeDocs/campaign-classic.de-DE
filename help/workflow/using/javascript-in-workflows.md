@@ -5,8 +5,8 @@ description: Diese Beispiele zeigen, wie Sie JavaScript-Code in einem Workflow v
 feature: Workflows
 exl-id: 7213ea64-3dec-4b16-9d93-4ae941ddfaa7
 source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
-workflow-type: ht
-source-wordcount: '1775'
+workflow-type: tm+mt
+source-wordcount: '1771'
 ht-degree: 100%
 
 ---
@@ -52,7 +52,7 @@ Zum Schreiben in die Datenbank können Sie die statische `Write`-Methode mit dem
    1. Rufen Sie die `Write`-Methode mit dem `xtk:session`-Schema auf.
 
       >[!IMPORTANT]
-      > Wenn Sie Adobe Campaign v8 verwenden, empfehlen wir, den Staging-Mechanismus mit den **Aufnahme**- und **Datenaktualisierungs/-löschungs**-APIs für die `Write`-Methode in einer Snowflake-Tabelle zu verwenden. [Weitere Informationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html?lang=de){target=&quot;_blank&quot;}.
+      > Wenn Sie Adobe Campaign v8 verwenden, empfehlen wir, den Staging-Mechanismus mit den **Aufnahme**- und **Datenaktualisierungs/-löschungs**-APIs für die `Write`-Methode in einer Snowflake-Tabelle zu verwenden. [Weitere Informationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html?lang=de){target="_blank"}.
 
    1. Übergeben Sie den XML-Code als Argument für die Schreibabfrage.
 
@@ -175,7 +175,7 @@ Sie können die folgenden Vorgänge verwenden:
 
 | Vorgang | Ergebnis |
 | --- | --- |
-| `select` | Null oder mehr Elemente werden als Kollektion zurückgegeben. |
+| `select` | Null oder mehr Elemente werden als Sammlung zurückgegeben. |
 | `getIfExists` | Ein Element wird zurückgegeben. Wenn kein Übereinstimmungselement vorhanden ist, wird ein leeres Element zurückgegeben. |
 | `get` | Ein Element wird zurückgegeben. Wenn kein Übereinstimmungselement vorhanden ist, wird ein Fehler zurückgegeben. |
 | `count` | Die Anzahl der übereinstimmenden Datensätze wird in Form eines Elements mit einem `count`-Attribut zurückgegeben. |
@@ -258,7 +258,7 @@ Führen Sie folgende Schritte aus:
 
 #### Ergebnisse eines `select`-Vorgangs
 
-Alle Übereinstimmungen werden als Kollektion zurückgegeben:
+Alle Übereinstimmungen werden als Sammlung zurückgegeben:
 
 ```xml
 <recipient-collection>
@@ -274,7 +274,7 @@ for each (var rcp in res:recipient)
     logInfo(rcp.@email)
 ```
 
-Die Schleife enthält eine lokale Empfängervariable. Für jeden Empfänger, der in der Empfängerkollektion zurückgegeben wird, wird die E-Mail des Empfängers ausgedruckt. [Weitere Informationen](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html?lang=de) über die `logInfo`-Funktion.
+Die Schleife enthält eine lokale Empfängervariable. Für jeden Empfänger, der in der Empfängersammlung zurückgegeben wird, wird die E-Mail des Empfängers ausgedruckt. [Weitere Informationen](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html?lang=de) über die `logInfo`-Funktion.
 
 #### Ergebnisse eines `getIfExists`-Vorgangs
 
@@ -562,7 +562,7 @@ Sie können Datensätze einfügen, aktualisieren und löschen. Sie können die `
 * Der `delete`-Vorgang
 
 >[!IMPORTANT]
-> Wenn Sie Adobe Campaign v8 verwenden, empfehlen wir, den Staging-Mechanismus mit den **Aufnahme**- und **Datenaktualisierungs/-löschungs**-APIs für die `Write`-Methode in einer Snowflake-Tabelle zu verwenden. [Weitere Informationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html?lang=de){target=&quot;_blank&quot;}.
+> Wenn Sie Adobe Campaign v8 verwenden, empfehlen wir, den Staging-Mechanismus mit den **Aufnahme**- und **Datenaktualisierungs/-löschungs**-APIs für die `Write`-Methode in einer Snowflake-Tabelle zu verwenden. [Weitere Informationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html?lang=de){target="_blank"}.
 
 #### Beispiel 1: Datensatz einfügen oder aktualisieren
 

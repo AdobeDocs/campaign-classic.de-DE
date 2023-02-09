@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Über Adobe Campaign Classic
-description: Erfahren sie mehr über wichtige Funktionen, die Benutzeroberfläche und globale Richtlinien.
+description: Hier kann man die wichtigsten Funktionen, die Benutzeroberfläche und die globalen Richtlinien kennenlernen.
 feature: Overview
 role: User
 level: Beginner

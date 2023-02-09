@@ -233,7 +233,7 @@ Feld-Kategorien:
  </tbody> 
 </table>
 
-Relationen zu einer Tabelle oder zu Kollektionselementen:
+Relationen zu einer Tabelle oder zu Sammlungselementen:
 
 <table> 
  <thead> 
@@ -251,7 +251,7 @@ Relationen zu einer Tabelle oder zu Kollektionselementen:
   </tr> 
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_52.png" /> </td> 
-   <td> Kollektionselemente bezogen auf eine bestimmte Tabelle. Es handelt sich um 1:n-Relationen. Einem Datensatz in der Quelltabelle können mehrere Datensätze in der Zieltabelle entsprechen, aber ein Datensatz der Zieltabelle entspricht genau einem Datensatz in der Quelltabelle. Ein Empfänger kann z. B. für 'n' Newsletter angemeldet sein.<br /> </td> 
+   <td> Sammlungselemente bezogen auf eine bestimmte Tabelle. Es handelt sich um 1:n-Relationen. Einem Datensatz in der Quelltabelle können mehrere Datensätze in der Zieltabelle entsprechen, aber ein Datensatz der Zieltabelle entspricht genau einem Datensatz in der Quelltabelle. Ein Empfänger kann z. B. für 'n' Newsletter angemeldet sein.<br /> </td> 
    <td> Abonnements, Listen, Ausschlusslogs usw.<br /> </td> 
   </tr> 
  </tbody> 

@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Additional data
-description: Zusätzliche Daten
+description: Additional data
 audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
@@ -13,11 +13,11 @@ ht-degree: 100%
 
 ---
 
-# Zusätzliche Daten{#additional-data}
+# Additional data{#additional-data}
 
 ![](../../assets/v7-only.svg)
 
-Es besteht die Möglichkeit, bei Abfrage des Angebotsmoduls zusätzliche Kontextdaten zu übergeben. Dies können entweder aus der Arbeitstabelle eines Workflows stammende Daten der Zielgruppe (ausgehender Kanal) oder von der Webseite zum Zeitpunkt der Abfrage gesendete Aufrufdaten (eingehender Kanal) sein. Die zusätzlichen Daten können in Eignungsregeln und der Angebotspersonalisierung verwendet und in der Vorschlagstabelle gespeichert werden.
+Es besteht die Möglichkeit, bei Abfrage des Angebotsmoduls zusätzliche kontextuelle Daten zu übergeben. Dies können entweder aus der Arbeitstabelle eines Workflows stammende Daten der Zielgruppe (ausgehender Kanal) oder von der Webseite zum Zeitpunkt der Abfrage gesendete Aufrufdaten (eingehender Kanal) sein. Die zusätzlichen Daten können in Eignungsregeln und der Angebotspersonalisierung verwendet und in der Vorschlagstabelle gespeichert werden.
 
 Bei eingehenden Interaktionen beispielsweise kann es interessant sein, die Browsersprache eines Webseitenbesuchers oder den Namen des Callcenter-Mitarbeiters, der einen Anruf entgegengenommen hat, abzufragen. In den Eignungsregeln können Sie auf diese Aufrufdaten (call data) Bezug nehmen, um ein Angebot z. B. nur Personen zu unterbreiten, die Ihre Webseite auf Deutsch oder Englisch ansehen.
 
@@ -37,7 +37,7 @@ Für eingehende Kanäle müssen im Knoten **Interaction** die Aufrufdaten eingef
 
 >[!NOTE]
 >
->XML-Kollektionen werden für den eingehenden Kanal unterstützt, Relationen zu anderen Schemata jedoch nicht.
+>XML-Sammlungen werden für den eingehenden Kanal unterstützt, Relationen zu anderen Schemata jedoch nicht.
 
 Für ausgehende Kanäle muss im Knoten **Interaction** ein die zusätzlichen Felder enthaltendes **targetData**-Element eingefügt werden.
 
@@ -51,7 +51,7 @@ Für ausgehende Kanäle muss im Knoten **Interaction** ein die zusätzlichen Fel
 
 >[!NOTE]
 >
->Kollektionen werden für den ausgehenden Kanal nicht unterstützt. Sie können jedoch Relationen zu anderen Schemata konfigurieren.
+>Sammlungen werden für den ausgehenden Kanal nicht unterstützt. Sie können jedoch Relationen zu anderen Schemata konfigurieren.
 
 Wenn Sie diese Daten in der Vorschlagstabelle speichern möchten, muss außerdem das Schema **nms:propositionRcp** erweitert werden, um die neuen Felder zu deklarieren.
 

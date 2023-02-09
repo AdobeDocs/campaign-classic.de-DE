@@ -5,7 +5,7 @@ description: Erfahren Sie, wie Sie Content-Management über Workflows automatisi
 feature: Workflows
 exl-id: bc6ebf5d-cc21-4750-9713-2bf259e7d6bf
 source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 100%
 

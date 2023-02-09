@@ -5,7 +5,7 @@ description: Erfahren Sie, wie Sie eine partizipative Kampagne erstellen
 feature: Distributed Marketing
 exl-id: 17313fe5-ad42-45ca-a35a-1e7aa89380ef
 source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '990'
 ht-degree: 100%
 
@@ -29,7 +29,7 @@ Die Basiskonfiguration einer partizipativen Kampagne gleicht der der Vorlage ein
 
 ### Partizipative Kampagne (Formular) {#by-form}
 
-Wählen Sie die Vorlage **[!UICONTROL Partizipative Kampagne (Formular) (opCollaborativeByForm)]** aus und klicken Sie auf , um die Kampagne zu erstellen.
+Wählen Sie die Vorlage **[!UICONTROL Partizipative Kampagne (Formular) (opCollaborativeByForm)]** aus, um diese Kampagne zu erstellen.
 
 ![](assets/mkg_dist_mutual_op_form2.png)
 

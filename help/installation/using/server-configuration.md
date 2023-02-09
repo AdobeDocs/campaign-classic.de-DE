@@ -28,7 +28,7 @@ Erkundigen Sie sich bei den Benutzern, welche Art von Dateien sie über die Camp
 * ETL (txt, csv, tab, ...)
 * etc.
 
-Fügen Sie alle zu serverConf/shared/datastore/@uploadAllowlist hinzu (gültiger regulärer Java-Ausdruck). Weiterführende Informationen finden Sie auf [dieser Seite](../../installation/using/file-res-management.md).
+Fügen Sie alle zu serverConf/shared/datastore/@uploadAllowlist hinzu (gültiger regulärer Java-Ausdruck). Weitere Informationen finden Sie auf [dieser Seite](../../installation/using/file-res-management.md).
 
 Adobe Campaign schränkt die Dateigröße nicht ein. Sie können dies jedoch tun, indem Sie IIS/Apache konfigurieren. Weiterführende Informationen finden Sie in [diesem Abschnitt](../../installation/using/web-server-configuration.md).
 

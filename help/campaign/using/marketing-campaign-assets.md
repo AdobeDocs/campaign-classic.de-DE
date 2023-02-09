@@ -5,7 +5,7 @@ description: Weitere Informationen zu Dokumenten und Versandentwürfen für Mark
 feature: Campaigns
 exl-id: 891252b0-4700-4a2a-a632-63aad5ce75d7
 source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '784'
 ht-degree: 100%
 
@@ -29,7 +29,7 @@ In einer Kampagne können Sie auch auf andere Elemente verweisen, wie z. B. Wer
 
 ## Dokumente hinzufügen {#adding-documents}
 
-Dokumente können einer Kampagne (kontextrelevante Dokumente) oder einem Programm (allgemeine Dokumente) zugeordnet werden.
+Dokumente können auf Kampagnenebene (kontextuelle Dokumente) oder Programmebene (allgemeine Dokumente) zugeordnet werden.
 
 Der Tab **[!UICONTROL Dokumente]** enthält:
 

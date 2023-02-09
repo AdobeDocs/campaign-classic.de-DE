@@ -44,7 +44,7 @@ Das ist das **stat** -Modul: leitet alle Verbindungsanfragen und -nachrichten f�
 
 ### Versandserver {#delivery-servers}
 
-Die **mta** -Modul verteilt Nachrichten auf **mtachild** untergeordnete Module. Jeder **mtachild** erstellt Nachrichten, bevor eine Autorisierung vom Statistikserver angefordert wird, und sendet sie.
+Die **mta** -Modul verteilt Nachrichten an seine **mtachild** untergeordnete Module. Jeder **mtachild** erstellt Nachrichten, bevor eine Autorisierung vom Statistikserver angefordert wird, und sendet sie.
 
 Zusammenfassend sind folgende Etappen zu durchlaufen:
 
@@ -141,7 +141,7 @@ Der Statistikserver überwacht standardmäßig den Port 7777. Dieser Anschluss k
 >
 >Dieser Abschnitt und die folgenden Abschnitte gelten nur für On-Premise-Installationen und gehostete/hybride Installationen, die den veralteten Campaign MTA verwenden.
 
-MX-Regeln (Mail eXchanger) dienen zur Verwaltung der Kommunikation zwischen einem Sender- und einem Empfangs-Server.
+MX-Regeln (Mail eXchanger) dienen zur Verwaltung der Kommunikation zwischen einem Sende- und einem Empfangs-Server.
 
 Diese Regeln werden automatisch jeden Morgen um 6 Uhr (Serverzeit) neu geladen, um die Client-Instanz regelmäßig bereitzustellen.
 
@@ -212,7 +212,7 @@ Diese Nachrichten werden so schnell wie möglich gesendet.
 
 ### MX-Verwaltung konfigurieren {#configuring-mx-management}
 
-Die Regeln, die für MX einzuhalten sind, sind im Abschnitt **[!UICONTROL MX-Verwaltung]** des **[!UICONTROL Administration > Kampagnenverwaltung > Unzustellbarkeitsverwaltung > E-Mail-Regelsätze]** Knoten des Baums.
+Die Regeln, die für MX einzuhalten sind, sind im Abschnitt **[!UICONTROL MX-Verwaltung]** des **[!UICONTROL Administration > Campaign Management > Unzustellbarkeitsverwaltung > E-Mail-Regelsätze]** Knoten des Baums.
 
 Wenn die Variable **[!UICONTROL MX-Verwaltung]** Dokument nicht im Knoten vorhanden ist, können Sie es manuell erstellen. Gehen Sie dazu wie folgt vor:
 
@@ -239,7 +239,7 @@ Die erste Regel, deren MX-Maske mit dem gewünschten MX kompatibel ist, wird ang
 
 Die folgenden Parameter sind für jede Regel verfügbar:
 
-* **[!UICONTROL MX-Maske]**: Domäne, auf die die Regel angewendet wird. Jede Regel definiert eine Adressenmaske des MX. Jeder MX, dessen Name dieser Adressenmaske entspricht, kommt somit infrage. Die Maske kann die Joker &quot;*&quot; und &quot;?&quot; enthalten.
+* **[!UICONTROL MX-Maske]**: Domäne, auf die die Regel angewendet wird. Jede Regel definiert eine Adressenmaske des MX. Jeder MX, dessen Name dieser Adressenmaske entspricht, kommt somit infrage. Die Maske kann &quot;&#42;&quot; und &quot;?&quot; generische Zeichen.
 
    So sind die Adressen
 
@@ -249,7 +249,7 @@ Die folgenden Parameter sind für jede Regel verfügbar:
 
    mit folgenden Masken kompatibel:
 
-   * *.yahoo.com
+   * &#42;.yahoo.com
    * ?.mx.yahoo.com
 
    Beispielsweise lautet bei der E-Mail-Adresse foobar@gmail.com die Domain gmail.com und der MX-Eintrag sieht folgendermaßen aus:
@@ -393,18 +393,18 @@ Die Parameter lauten wie folgt:
 
 Im vorherigen Beispiel werden die Adressen unter normalen Bedingungen wie folgt verteilt:
 
-    * &quot;1&quot;: 5 / (5+5+1) = 45 %
-    * &quot;2&quot;: 5 / (5+5+1) = 45 %
+    * &quot;1&quot;: 5 / (5+5+1) = 45%
+    * &quot;2&quot;: 5 / (5+5+1) = 45%
     * &quot;3&quot;: 1 / (5+5+1) = 10%
 
 Wenn beispielsweise die erste Adresse nicht für einen bestimmten MX verwendet werden kann, werden Nachrichten wie folgt gesendet:
 
-    * &quot;2&quot;: 5 / (5+1) = 83 %
+    * &quot;2&quot;: 5 / (5+1) = 83%
     * &quot;3&quot;: 1 / (5+1) = 17%
 
-* **includeDomains**: ermöglicht Ihnen, diese IP-Adresse für E-Mails zu reservieren, die zu einer bestimmten Domain gehören. Dies ist eine Liste von Masken, die einen oder mehrere Platzhalter (&#39;*&#39;) enthalten können. Wenn das Attribut nicht angegeben ist, können alle Domänen diese IP-Adresse verwenden.
+* **includeDomains**: ermöglicht Ihnen, diese IP-Adresse für E-Mails zu reservieren, die zu einer bestimmten Domain gehören. Dies ist eine Liste von Masken, die einen oder mehrere Platzhalter (&#39;) enthalten können.&#42;&quot;). Wenn das Attribut nicht angegeben ist, können alle Domänen diese IP-Adresse verwenden.
 
-   Beispiel: **includeDomains=&quot;wanadoo.com,orange.com,yahoo.*&quot;**
+   Beispiel: **includeDomains=&quot;wanadoo.com,orange.com,yahoo.&#42;&quot;**
 
 * **excludeDomains**: schließt eine Liste von Domänen für diese IP-Adresse aus. Dieser Filter wird nach der **includeDomains** Filter.
 

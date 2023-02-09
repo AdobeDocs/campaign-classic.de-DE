@@ -32,7 +32,7 @@ Das Upgrade muss auf alle Server angewendet werden, auf denen Adobe Campaign ins
 
 Adobe Campaign basiert auf mehreren serverseitigen Prozessen, die Sie bei Aktualisierungen bearbeiten müssen, insbesondere:
 
-* Anwendungs-Server (nlserver web)
+* Anwendungs-Server (nlserver web) 
 * Versandserver (nlserver mta)
 * Weiterleitungsserver (webmdl)
 

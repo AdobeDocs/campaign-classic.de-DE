@@ -54,7 +54,7 @@ Drei Verbindungsschutzmodi sind verfügbar:
 
 Weitere Informationen finden Sie in den folgenden Abschnitten:
 
-* [Control Panel-Dokumentation](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)
+* [Control Panel-Dokumentation](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de)
 * [Hosting-Modelle](hosting-models.md)
 * [Campaign-Server konfigurieren](configuring-campaign-server.md)
 * [Parameter der Konfigurationsdatei des Campaign-Servers](the-server-configuration-file.md)

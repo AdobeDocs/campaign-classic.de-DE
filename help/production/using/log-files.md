@@ -57,7 +57,7 @@ Die Protokolldateien der Mono-Instanz sind in der folgenden Tabelle aufgeführt:
 
 Zur Optimierung der Leistung und des Speicherplatzes wird die Datei &quot;login.log&quot;in mehrere Dateien aufgeteilt, wobei jeder Tag (login.yy-mm-dd.log) mit maximal 365 Dateien gespeichert wird. Die Anzahl der Tage kann in der Datei serverConf.xml unter syslogd (**maxNumberOfLoginsFiles** -Option). Weitere Informationen finden Sie in der Dokumentation unter [Serverkonfigurationsdatei](../../installation/using/the-server-configuration-file.md#syslogd).
 
-Standardmäßig sind die Protokolle auf zwei 10 MB Dateien pro Modul und Instanz beschränkt. Die zweite Datei heißt: **`<modulename>`_2.log**. Die Größe der Protokolle ist daher auf 2 x 10 MB pro Modul und Instanz beschränkt.
+Standardmäßig sind die Protokolle auf zwei 10 MB Dateien pro Modul und Instanz beschränkt. Die zweite Datei heißt: **`<modulename>`_2.log**. Die Größe der Logs ist daher auf 2 begrenzt.&#42;10 MB pro Modul und Instanz.
 
 Sie können jedoch größere Dateien beibehalten. Um dies zu aktivieren, ändern Sie den Wert der **maxFileSizeMb=&quot;10&quot;** -Einstellung in **syslogd** Knoten der **conf/serverConf.xml** -Datei. Dieser Wert stellt die maximale Größe einer Protokolldatei in MB dar.
 

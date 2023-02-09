@@ -63,7 +63,7 @@ Je nach ausgewählter Datenbank-Engine können die Informationen zur Serverident
 
    >[!CAUTION]
    >
-   > Ab Version 20.3 wird die Windows NT-Authentifizierung eingestellt. **[!UICONTROL SQL Server-Authentifizierung]** ist jetzt der einzige Authentifizierungsmodus, der für Microsoft SQL Server verfügbar ist. [Mehr dazu](../../rn/using/deprecated-features.md)
+   > Ab Version 20.3 wird die Windows NT-Authentifizierung eingestellt. **[!UICONTROL SQL Server-Authentifizierung]** ist jetzt der einzige Authentifizierungsmodus, der für Microsoft SQL Server verfügbar ist. [Weitere Informationen](../../rn/using/deprecated-features.md)
 
    ![](assets/s_ncs_install_db_mssql_creation01.png)
 

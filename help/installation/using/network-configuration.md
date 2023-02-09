@@ -200,7 +200,7 @@ Dieser Server hostet Webformulare, Mirrorseiten usw. Die folgenden Ports müssen
  <tbody> 
   <tr> 
    <td> Listening-Anschluss<br /> </td> 
-   <td> Standort<br /> </td> 
+   <td> Location<br /> </td> 
   </tr> 
   <tr> 
    <td><p> 80/tcp (http)</p><p> 443/tcp (https)</p><br /> </td> 
@@ -215,7 +215,7 @@ Dieser Server hostet Webformulare, Mirrorseiten usw. Die folgenden Ports müssen
  <tbody> 
   <tr> 
    <td> Listening-Anschluss<br /> </td> 
-   <td> Standort<br /> </td> 
+   <td> Location<br /> </td> 
   </tr> 
   <tr> 
    <td><p> 80/tcp (http)</p><p> 443/tcp (https)</p><br /> </td> 

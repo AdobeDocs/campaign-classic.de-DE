@@ -9,7 +9,7 @@ exl-id: 3e55d7f5-2858-4390-bba9-8fb5be0c3d98
 source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
 workflow-type: tm+mt
 source-wordcount: '1051'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -141,7 +141,7 @@ Das Attribut &#39;@name&#39; muss die folgenden Regeln beachten:
 
 &#39;affinity_group&#39; bezieht sich auf die Subaffinität, die im Zielgruppen-Mapping deklariert wurde, das in jedem Versand verwendet wird. Der letzte Teil, der &quot;.&quot;enthält wird ignoriert, wenn keine Unter-Affinität vorhanden ist. Zulässige Zeichen sind `[a-z]``[A-Z]``[0-9]`.
 
-Sie müssen den Server stoppen und dann neu starten, damit die Änderung berücksichtigt wird.
+Sie müssen den Server anhalten und dann neu starten, damit die Änderung übernommen wird.
 
 ## Tracking auf einem Mid-Sourcing-Server konfigurieren {#configuring-tracking-on-a-mid-sourcing-server}
 

@@ -257,7 +257,6 @@ Sie sind unter **Überwachung** > &quot;SMTP Monitoring&quot;.
 >
 >* Informationen zur SMTP-Überwachung sind nur verfügbar, wenn der E-Mail-Kanal aktiviert wurde.
 >* Die **[!UICONTROL SMTP-Sendestatistiken]** werden nur angeboten, wenn der Statistikserver auf der Instanz gestartet wird.
-
 >
 
 
@@ -437,7 +436,7 @@ Adobe Campaign ermöglicht verschiedene Bereitstellungskonfigurationen (weitere 
  <thead> 
   <tr> 
    <th> Bereitstellungstyp </th> 
-   <th> Monitoring      </th> 
+   <th> Monitoring        </th> 
   </tr> 
  </thead> 
  <tbody> 

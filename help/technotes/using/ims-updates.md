@@ -75,7 +75,7 @@ Die folgende Warnmeldung wird Benutzern angezeigt, wenn sie ihre Client-Konsole 
 
 ![](../../integrations/using/assets/do-not-localize/errorMsg.png)
 
-Wenn eine solche Warnung angezeigt wird, stellen Sie sicher, dass Sie die neuesten Updates des verwendeten Betriebssystems installieren. [Weitere Informationen](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)
+Wenn eine solche Warnung angezeigt wird, stellen Sie sicher, dass Sie die neuesten Updates des verwendeten Betriebssystems installieren. [Weitere Informationen](https://helpx.adobe.com/de/x-productkb/global/update-operating-system-and-browser.html)
 
 Wenn Sie Ihre Internet Explorer-Version nicht aktualisiert haben, wird die folgende Meldung angezeigt und Sie können keine Verbindung mehr zu Adobe Campaign herstellen:
 

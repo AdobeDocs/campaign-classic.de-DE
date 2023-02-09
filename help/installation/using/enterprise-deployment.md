@@ -76,7 +76,7 @@ Höhere Hardware- und Verwaltungskosten.
 In den folgenden Beispielen sind die Parameter der Instanz:
 
 * Name der Instanz: Demo
-* DNS-Maske: tracking.campaign.net*, console.campaign.net* (der Anwendungsserver verarbeitet die URLs für Clientkonsolen-Verbindungen und -Berichte sowie für Mirrorseiten und Abmeldeseiten)
+* DNS-Maske: tracking.campaign.net&#42;, console.campaign.net&#42; (Der Anwendungsserver verarbeitet die URLs für Clientkonsolen-Verbindungen und -Berichte sowie für Mirrorseiten und Abmeldeseiten)
 * Sprache: englisch
 * Datenbank: campaign:demo@dbsrv
 

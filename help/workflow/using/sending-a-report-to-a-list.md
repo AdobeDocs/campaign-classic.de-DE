@@ -5,7 +5,7 @@ description: Erfahren Sie, wie Sie mit einem Workflow einen Bericht an eine List
 feature: Workflows
 exl-id: cb24aea5-f3c7-4b17-8899-1792ea18c235
 source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '719'
 ht-degree: 100%
 
@@ -35,7 +35,7 @@ Weiterführende Informationen zum Erstellen von Listen finden Sie in diesem [Abs
 
 ## 2. Schritt: Erstellung der Versandvorlage {#step-2--creating-the-delivery-template}
 
-1. Gehen Sie im Adobe-Campaign-Explorer in den Knoten **[!UICONTROL Ressourcen > Vorlagen > Versandvorlagen]** und duplizieren Sie die Vorlage **[!UICONTROL E-Mail-Versand]**.
+1. Gehen Sie im Adobe Campaign-Explorer zum Knoten **[!UICONTROL Ressourcen > Vorlagen > Versandvorlagen]** und duplizieren Sie die vordefinierte Vorlage **[!UICONTROL E-Mail-Versand]**.
 
    ![](assets/use_case_report_2.png)
 

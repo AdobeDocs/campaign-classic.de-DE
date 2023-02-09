@@ -39,7 +39,7 @@ Eine Liste der Aufgaben kann über den Tab **[!UICONTROL Kampagnen]** angezeigt 
 
 Hier werden alle Aufgaben des aktuellen Benutzers aufgeführt.
 
-Weitere Informationen hierzu finden Sie unter [Ausführungsstatus einer Aufgabe](#execution-status-of-a-task) und [Fortschritt einer Aufgabe ](#progress-status-of-a-task).
+Weitere Informationen hierzu finden Sie unter [Ausführungsstatus einer Aufgabe](#execution-status-of-a-task) und [Fortschrittsstatus einer Aufgabe ](#progress-status-of-a-task).
 
 ### Aufgaben filtern {#filtering-tasks}
 
@@ -185,7 +185,7 @@ Standardmäßig entspricht das in den Aufgabendetails angezeigte Budget dem der 
 >
 >Weitere Informationen zu Ausgaben und Budgets finden Sie unter [Entstehung, Berechnung und Anrechnung von Kosten](../../mrm/using/controlling-costs.md#cost-commitment--calculation-and-charging).
 
-Im gleichen Fenster besteht die Möglichkeit, zu erfüllende Zielvorgaben festzulegen. Die Vorgaben entsprechend den geplanten Einnahmen der Aufgabe.
+Im gleichen Fenster besteht die Möglichkeit, zu erfüllende Zielvorgaben festzulegen. Die Zielvorgaben werden in Form von prognostizierten Einnahmen für die Aufgabe ausgedrückt.
 
 ### Dienstleister {#service-providers}
 

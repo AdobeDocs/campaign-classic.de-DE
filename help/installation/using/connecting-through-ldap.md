@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Über LDAP verbinden
-description: 'Erfahren Sie, wie Sie sich mit LDAP bei Campaign anmelden. '
+description: Erfahren Sie, wie Sie sich mit LDAP bei Campaign anmelden.
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
@@ -129,7 +129,7 @@ Wenn Sie nach einer Kennung suchen, können Sie mit dem Softwareverteilungs-Assi
 
       Der LDAP-Ordner wird vollständig durchsucht, beginnend mit einer bestimmten Ebene.
 
-   1. **[!UICONTROL Beschränkt auf die Basis]**.
+   1. **[!UICONTROL Auf die Datenbank beschränkt]**.
 
       Alle Attribute sind in der Suche enthalten.
 
@@ -189,4 +189,4 @@ In diesem Abschnitt finden Sie einige einfache Anwendungsfälle, mit denen Sie d
 
    Gruppen werden nie spontan erstellt, sei es durch Adobe Campaign oder LDAP. Sie müssen einzeln erstellt werden, sowohl in Adobe Campaign als auch im LDAP-Ordner.
 
-   Die Gruppennamen im LDAP-Ordner müssen mit den Namen von Adobe Campaign-Gruppen übereinstimmen. Die Zuordnungsmaske wird im letzten Konfigurationsschritt des Softwareverteilungs-Assistenten definiert: Adobe Campaign_(.*), z. B.
+   Die Gruppennamen im LDAP-Ordner müssen mit den Namen von Adobe Campaign-Gruppen übereinstimmen. Die Zuordnungsmaske wird im letzten Konfigurationsschritt des Softwareverteilungs-Assistenten definiert: Adobe Campaign_(.&#42;), beispielsweise.

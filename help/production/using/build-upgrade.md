@@ -163,7 +163,7 @@ Um alle Dateien mit der neuen Version zu ersetzen, müssen alle Instanzen von nl
 
 ### Aktualisieren der Adobe Campaign-Serveranwendung
 
-1. Führen Sie die **Setup.exe** -Datei. Wenn Sie diese Datei herunterladen müssen, greifen Sie auf [Download-Center](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html).
+1. Führen Sie die **Setup.exe** -Datei. Wenn Sie diese Datei herunterladen müssen, greifen Sie auf [Download-Center](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html).
 
 1. Wählen Sie den Installationsmodus aus: **Aktualisieren** oder **Reparatur**.
 
@@ -218,7 +218,7 @@ Wenn das nächste Mal Clientkonsolen verbunden werden, werden die Benutzer darau
 
 Einige Konfigurationen erfordern bestimmte zusätzliche Aufgaben, um auf einen neuen Build aktualisiert zu werden.
 
-#### Transaktionsnachrichtenversand
+#### Transaktionsnachrichten
 
 Wenn Transaktionsnachrichten (Message Center) in Ihrer Campaign-Instanz aktiviert ist, müssen Sie die folgenden zusätzlichen Schritte ausführen, um eine Aktualisierung durchzuführen:
 
@@ -246,7 +246,7 @@ Wenn Transaktionsnachrichten (Message Center) in Ihrer Campaign-Instanz aktivier
 
 Im Kontext einer Mid-Sourcing-Umgebung müssen Sie die folgenden zusätzlichen Schritte ausführen, um eine Aktualisierung durchzuführen:
 
-1. Kontakt [Adobe-Kundenunterstützung](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) um die Aktualisierung des Mid-Sourcing-Servers zu koordinieren.
+1. Kontakt [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) zur Koordinierung der Aktualisierung des Mid-Sourcing-Servers.
 1. Überprüfen Sie, ob die Version aktualisiert wurde, indem Sie einen Test-Link ausführen. Beispiel:
 
    ```
@@ -363,7 +363,7 @@ Es gibt verschiedene Arten von Zusammenführungen:
 #### Wo finden Sie den Code?
 
 1. Integrierter Code wird in XML-Dateien im Ordner datakit gespeichert. Suchen Sie die XML-Datei, die dem widersprüchlichen Objekt entspricht. Beispiel: installationDirectory\datakit\nms\fra\form\recipient.xml
-1. Abrufen der Originalversion: über die [Download-Center](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) oder einer anderen nicht aktualisierten Installation des Produkts.
+1. Abrufen der Originalversion: über die [Download-Center](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) oder einer anderen nicht aktualisierten Installation des Produkts.
 1. Rufen Sie die neue Version ab: über die [Download-Center](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) oder die vom Kunden installierten Dateien.
 1. Rufen Sie die benutzerdefinierte Version ab: Rufen Sie den Quellcode des Objekts vom Campaign-Client ab.
 

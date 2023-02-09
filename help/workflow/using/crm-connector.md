@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über den CRM-Connector und konfigurieren Sie die
 feature: Workflows, Data Management
 exl-id: 41966f31-9f37-4ab7-919a-d4624f9d1178
 source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 100%
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 ![](../../assets/v7-only.svg)
 
-Die Aktivität **CRM-Connector** dient der Konfiguration einer Datensynchronisation zwischen Adobe Campaign und einem CRM-System.
+Die Aktivität **CRM-Connector** ermöglicht die Konfiguration einer Datensynchronisation zwischen Adobe Campaign und einem CRM-System.
 
 Weiterführende Informationen zu CRM-Connectoren finden Sie in diesem [Abschnitt](../../platform/using/crm-connectors.md).
 

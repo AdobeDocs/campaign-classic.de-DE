@@ -422,7 +422,7 @@ Dieses Steuerelement zeigt eine Liste mit editierbaren Spalten und einer Symboll
 </input>
 ```
 
-Das Steuerelement Liste muss vom Attribut **type=&quot;list&quot;** begleitet werden, der Listenpfad muss auf das Kollektionselement verweisen.
+Das Steuerelement Liste muss vom Attribut **type=&quot;list&quot;** begleitet werden, der Listenpfad muss auf das Sammlungselement verweisen.
 
 Die Spalten werden als untergeordnete **`<input>`**-Tags der Liste definiert. Spaltenbeschriftung und -größe können mit den Attributen **label** und **colSize** erzwungen werden.
 

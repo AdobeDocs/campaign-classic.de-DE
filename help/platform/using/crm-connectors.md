@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: connectors
 exl-id: 7ccab3a4-f323-464a-9ec4-dd597279d0eb
 source-git-commit: fdb840a9e6349f074378899e07f794b62fb5b054
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '158'
 ht-degree: 100%
 
@@ -25,7 +25,7 @@ Dank der Connectoren ist eine schnelle und einfache Datenintegration möglich. M
 
 >[!NOTE]
 >
->Diese Funktion ist in Adobe Campaign über das **CRM Connectoren-** Package verfügbar.
+>Diese Funktion ist in Adobe Campaign über das Package **CRM-Connectoren** verfügbar.
 
 
 ### Kompatible Systeme {#compatible-crm-systems-and-limitations}

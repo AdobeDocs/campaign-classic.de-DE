@@ -4,7 +4,7 @@ title: Migrieren zum Adobe Analytics-Connector
 description: Häufig gestellte Fragen zum Campaign und Analytics Connector
 exl-id: 5bf61654-3d68-4560-a93f-7a768a2c5be4
 source-git-commit: 62ccc9e52de1bc416284e5b1bf48d69dc603923a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '858'
 ht-degree: 100%
 

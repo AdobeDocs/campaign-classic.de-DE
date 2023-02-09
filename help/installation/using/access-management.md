@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: 'Zugriffsverwaltung '
+title: Zugriffsverwaltung
 description: Weitere Informationen zu Best Practices bei der Zugriffsverwaltung
 feature: Access Management, Permissions
 exl-id: af88e4e7-0ee3-48b4-9db4-7dd390d9d46a
@@ -29,7 +29,7 @@ Standardmäßig ist der WebApp-Benutzer ein Administrator. Um die Sicherheit zu 
 
    1. Geben Sie für jedes Duplikat einen Namen ein. Beispiel: webapp_brand, webapp_brand2 usw.
 
-   1. Duplizieren Sie eine Webanwendungsvorlage, um eine Vorlage pro Marke zu haben, und bearbeiten Sie die Eigenschaften, um den Benutzer durch die Auswahl von Spezifisches Konto verwenden zu ändern.  Weiterführende Informationen finden Sie auf [dieser Seite](../../web/using/defining-web-forms-properties.md).
+   1. Duplizieren Sie eine Webanwendungsvorlage, um eine Vorlage pro Marke zu haben, und bearbeiten Sie die Eigenschaften, um den Benutzer durch die Auswahl von Spezifisches Konto verwenden zu ändern.  Weitere Informationen finden Sie auf [dieser Seite](../../web/using/defining-web-forms-properties.md).
 
 ## Sicherheitsgruppen und Admin-Benutzer
 
@@ -45,6 +45,6 @@ Adobe Campaign bietet drei allgemeine Berechtigungen durch [spezifische Berechti
 
 * **AUSFÜHRUNG DES PROGRAMMS** (createProcess): ermöglicht die Ausführung externer Programme (auf dem Server).
 
-* **SQL**: ermöglicht das Ausführen von SQL-Skripten in der Datenbank (sodass es das Sicherheitsmodell umgehen kann). Hinweis: Wenn Sie komplexe Berechnungen durchführen müssen (z. B. Filtern), können Sie Ihren Datenbankadministrator bitten, eine SQL-Funktion zu erstellen und sie der Zulassungsliste hinzuzufügen. Weiterführende Informationen finden Sie auf [dieser Seite](../../installation/using/scripting-coding-guidelines.md).
+* **SQL**: ermöglicht das Ausführen von SQL-Skripten in der Datenbank (sodass es das Sicherheitsmodell umgehen kann). Hinweis: Wenn Sie komplexe Berechnungen durchführen müssen (z. B. Filtern), können Sie Ihren Datenbankadministrator bitten, eine SQL-Funktion zu erstellen und sie der Zulassungsliste hinzuzufügen. Weitere Informationen finden Sie auf [dieser Seite](../../installation/using/scripting-coding-guidelines.md).
 
 * **Gewähren Sie diese Privilegien nur sehr wenigen (und vertrauenswürdigen) Benutzern.**

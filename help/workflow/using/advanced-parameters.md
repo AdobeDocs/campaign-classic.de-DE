@@ -5,7 +5,7 @@ description: Erweiterte Parameter
 feature: Workflows, Data Management
 exl-id: 6c90ac2f-0d2b-48b0-9245-3e5e3a3d027c
 source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '541'
 ht-degree: 100%
 
@@ -47,7 +47,7 @@ In der Regel werden diese Optionen im Diagramm durch Rechtsklick auf die Aktivit
 
 ## Affinität {#affinity}
 
-Es besteht die Möglichkeit, die Ausführung eines Workflows oder einer Workflow-Aktivität an eine bestimmte Engine zu binden. Hierzu müssen eine oder mehrere Affinitäten auf Workflow- oder Aktivitätsniveau definiert werden.
+Es besteht die Möglichkeit, die Ausführung eines Workflows oder einer Workflow-Aktivität auf einem bestimmten Rechner zu erzwingen. Hierzu müssen eine oder mehrere Tendenzwerte auf Workflow- oder Aktivitätsniveau definiert werden.
 
 Die Konfiguration von Workflows mit hoher Disponibilität wird in diesem [Abschnitt](../../installation/using/configuring-campaign-server.md#high-availability-workflows-and-affinities) erläutert.
 

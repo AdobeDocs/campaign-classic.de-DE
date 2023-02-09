@@ -5,7 +5,7 @@ description: Formatierung
 feature: Email Design
 exl-id: d9688dc4-20c6-4a9a-990f-465f39b2faa2
 source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1458'
 ht-degree: 100%
 
@@ -54,7 +54,7 @@ Die nächste Zeile unseres Beispiels zeigt den Inhalt des Buchtitels:
 <h1><%= content.@name %></h1>
 ```
 
-Der anschließende Code bezieht sich auf das Kollektionselement `<chapter>`:
+Der anschließende Code bezieht sich auf das Sammlungselement `<chapter>`:
 
 ```
 <% for each(var chapter in content.chapter) { %>
@@ -68,7 +68,7 @@ Attribute und Elemente des Inhalts werden wie JavaScript-Objekte dargestellt und
 
 * **content.@name**: gibt den Wert des Attributs „name“ des Hauptelements aus.
 * **content.@`['name']`**: identisch mit dem **Inhalt.@name**-Syntax
-* **content.chapter.length**: gibt die Anzahl an Elementen des Kollektionselements `<chapter` aus
+* **content.chapter.length**: gibt die Anzahl an Elementen des Sammlungselements `<chapter` aus
 * **content.chapter`[0]`.@name**: ruft den Namen des ersten Elements von `<chapter>` ab
 * **chapter.name()**: gibt den Namen des Elements `<chapter>` aus
 * **chapter.parent().name()**: gibt den Namen des übergeordneten Elements von `<chapter>` aus

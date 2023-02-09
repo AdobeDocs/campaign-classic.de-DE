@@ -5,7 +5,7 @@ description: Erfahren Sie mehr über die Workflow-Aktivität "Abfrage".
 feature: Workflows, Targeting Activity, Query Editor
 exl-id: 20d03627-cd56-46da-bc02-73b48a02a350
 source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1692'
 ht-degree: 100%
 
@@ -56,7 +56,7 @@ Klicken Sie auf den Link **[!UICONTROL Abfrage bearbeiten...]** und gehen Sie wi
 
    Mithilfe des Ausdruckseditors können verschiedene Kriterien unter Verwendung der Operatoren UND, ODER und AUSSER kombiniert werden. Bei Bedarf können Sie die **[!UICONTROL Entsprechende SQL-Abfrage...]** anzeigen. Weiterführende Informationen dazu finden Sie in diesem [Abschnitt](../../platform/using/defining-filter-conditions.md#building-expressions).
 
-   Speichern Sie die Abfrage, um sie später erneut verwenden zu können.
+   Speichern Sie Ihren Filter, um ihn später erneut verwenden zu können.
 
    ![](assets/s_user_segmentation_query_advanced.png)
 
@@ -93,22 +93,22 @@ Gehen Sie folgendermaßen vor, um Daten aus der Adobe-Campaign-Datenbank hinzuzu
    * Aus Daten der Zielpopulation berechnete Felder oder Aggregate (z. B. Anzahl an ausstehenden Käufen im vergangenen Monat, durchschnittlicher Warenkorb usw.). Ein Beispiel finden Sie unter [Auswählen von Daten](targeting-data.md#selecting-data).
    * Neue Felder (über die Schaltfläche **[!UICONTROL Hinzufügen]** rechts von der Liste der Ausgabespalten).
 
-      Es ist darüber hinaus möglich, Informationskollektionen hinzuzufügen, beispielsweise eine Vertragsliste, die letzten fünf Sendungen usw. Kollektionen entsprechen Feldern, die für ein Profil mehrere Werte aufweisen können (1:n-Relation). Weitere Informationen hierzu finden Sie unter [Bearbeiten zusätzlicher Daten](targeting-data.md#editing-additional-data).
+      Es ist darüber hinaus möglich, Informationssammlungen hinzuzufügen, beispielsweise eine Vertragsliste, die letzten fünf Sendungen usw. Sammlungen entsprechen Feldern, die für ein Profil mehrere Werte aufweisen können (1:n-Relation). Weitere Informationen hierzu finden Sie unter [Bearbeiten zusätzlicher Daten](targeting-data.md#editing-additional-data).
 
-Gehen Sie folgendermaßen vor, um eine mit einer Zielpopulation verknüpfte Informationskollektion hinzuzufügen:
+Gehen Sie folgendermaßen vor, um eine mit einer Zielpopulation verknüpfte Informationssammlung hinzuzufügen:
 
 1. Wählen Sie im ersten Schritt des Assistenten die Option **[!UICONTROL Daten in Relation mit der Filterdimension]** aus.
 1. Markieren Sie die Tabelle, die die abzurufenden Informationen enthält und klicken Sie auf **[!UICONTROL Weiter]**.
 
    ![](assets/wf_add_data_linked_table.png)
 
-1. Geben Sie bei Bedarf die Anzahl an Kollektionselementen an, die Sie beibehalten möchten, indem Sie aus der Dropdown-Liste des Felds **[!UICONTROL Abgerufene Daten]** den gewünschten Wert auswählen. Standardmäßig werden alle Zeilen der Kollektion abgerufen und nach den im nächsten Schritt definierten Bedingungen gefiltert.
+1. Geben Sie bei Bedarf die Anzahl an Sammlungselementen an, die Sie beibehalten möchten, indem Sie aus der Dropdown-Liste des Felds **[!UICONTROL Abgerufene Daten]** den gewünschten Wert auswählen. Standardmäßig werden alle Zeilen der Sammlung abgerufen und nach den im nächsten Schritt definierten Bedingungen gefiltert.
 
-   * Wenn nur ein Kollektionselement den Filterbedingungen entspricht, ist die Option **[!UICONTROL Nur eine Zeile]** im Feld **[!UICONTROL Abgerufene Daten]** auszuwählen.
+   * Wenn nur ein Sammlungselement den Filterbedingungen entspricht, ist die Option **[!UICONTROL Nur eine Zeile]** im Feld **[!UICONTROL Abgerufene Daten]** auszuwählen.
 
       >[!IMPORTANT]
       >
-      >Dieser Modus optimiert die erzeugte SQL-Abfrage, da ein direkter Join auf die Kollektionselemente erstellt wird.
+      >Dieser Modus optimiert die erzeugte SQL-Abfrage, da ein direkter Join auf die Sammlungselemente erstellt wird.
       >
       >Wenn die ursprüngliche Bedingung nicht respektiert wird, kann das Ergebnis falsch sein (fehlende Zeilen oder Dubletten).
 
@@ -117,7 +117,7 @@ Gehen Sie folgendermaßen vor, um eine mit einer Zielpopulation verknüpfte Info
 
    ![](assets/query_add_collection_param.png)
 
-1. Definieren Sie die Unterauswahl der Kollektionselemente. Beispielsweise die Käufe der letzten 15 Tage.
+1. Definieren Sie die Unterauswahl der Sammlungselemente. Beispielsweise die Käufe der letzten 15 Tage.
 
    ![](assets/query_add_columns_collection_filter.png)
 

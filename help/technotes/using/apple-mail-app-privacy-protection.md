@@ -361,7 +361,7 @@ Verwenden Sie diese Beziehungen, um eine einzige Exportabfrage zu erstellen.
 
 Sie können diese Daten mit nützlichen Informationen aus verknüpften Schemata anreichern:
 
-| Schema | Inhalt |
+| Schema | Content |
 | --- | --- |
 | nms:recipient | Details zu Profilen |
 | nms:delivery | Informationen zur Nachricht, auf die der Benutzer reagiert hat |

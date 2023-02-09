@@ -5,7 +5,7 @@ description: Erfahren Sie, wie Sie Filterregeln verwenden
 feature: Typology Rules
 exl-id: a4d12445-5680-4704-9c67-e43e0ea6631b
 source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '528'
 ht-degree: 100%
 
@@ -47,7 +47,7 @@ Bei Anwendung dieser Regel in einem Versand werden minderjährige Abonnenten aut
 
 ## Erstellen von Bedingungen für eine Filterregel {#conditioning-a-filtering-rule}
 
-Die Anwendungskriterien einer Filterregel können dem Versand oder dem verknüpften Versandentwurf entsprechend eingeschränkt werden.
+Die Anwendungskriterien einer Filterregel können dem verknüpften Versand oder Versandentwurf entsprechend eingeschränkt werden.
 
 Gehen Sie hierzu in den Tab **[!UICONTROL Allgemein]** der Typologieregel, wählen Sie das Anwendungskriterium aus und erstellen Sie den Filter wie nachfolgend dargestellt:
 
@@ -57,7 +57,7 @@ In diesem Fall wird die Regel nur auf die Sendungen angewandt, die den Kriterien
 
 >[!NOTE]
 >
->Typologien und Filterregeln können auch im Rahmen eines Workflows über die Aktivität **[!UICONTROL Versandentwurf]** verwendet werden. Näheres hierzu finden Sie in [diesem Abschnitt](../../workflow/using/delivery-outline.md).
+>Typologien und Filterregeln können in einem Workflow über die Aktivität **[!UICONTROL Versandentwurf]** verwendet werden. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../workflow/using/delivery-outline.md).
 
 ## Erstellen und Verwenden einer Filtertypologie {#creating-and-using-a-filtering-typology}
 

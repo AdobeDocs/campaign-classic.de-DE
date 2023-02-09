@@ -5,7 +5,7 @@ description: Liste von Berichten
 feature: Reporting
 exl-id: c01f4850-ab17-44ac-a5e0-ff082ec206b3
 source-git-commit: 36e546a34d8c2345fefed5d459095a76c6224a38
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1007'
 ht-degree: 100%
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 ## Versandberichte {#reports-on-deliveries}
 
-Die nativen Berichte von Adobe Campaign werden in der folgenden Tabelle aufgelistet.
+Die integrierten Berichte von Adobe Campaign werden in der folgenden Tabelle aufgelistet.
 
 Weitere Informationen zum Inhalt dieser Berichte erhalten Sie in diesem [Abschnitt](../../reporting/using/delivery-reports.md).
 
@@ -179,7 +179,7 @@ Weitere Informationen zum Inhalt dieser Berichte erhalten Sie in diesem [Abschni
 
 ## Dienstberichte {#reports-on-services}
 
-Berichte über Dienste beziehen sich auf die Daten der Tabelle **nms:service**.
+Berichte über Services beziehen sich auf die Daten der Tabelle **nms:service**.
 
 Die nativen Berichte von Adobe Campaign werden in der folgenden Tabelle aufgelistet.
 
@@ -216,7 +216,7 @@ Weitere Informationen zum Inhalt dieser Berichte erhalten Sie in den zugehörige
 
 ## Budgetberichte {#budget-reports}
 
-Die nativen Berichte von Adobe Campaign werden in der folgenden Tabelle aufgelistet.
+Die integrierten Berichte von Adobe Campaign werden in der folgenden Tabelle aufgelistet.
 
 Weitere Informationen zum Inhalt dieser Berichte erhalten Sie in diesem [Abschnitt](../../campaign/using/designing-marketing-campaigns.md).
 
@@ -309,7 +309,7 @@ Weitere Informationen zum Inhalt dieser Berichte erhalten Sie in den zugehörige
 
 ## Berichte über Web-Anwendungen {#reports-on-web-applications}
 
-Berichte über Webanwendungen beziehen sich auf die Daten der Tabelle **nms:WebApp**.
+Berichte über Web-Anwendungen beziehen sich auf die Daten der Tabelle **nms:WebApp**.
 
 Die nativen Berichte von Adobe Campaign werden in der folgenden Tabelle aufgelistet.
 

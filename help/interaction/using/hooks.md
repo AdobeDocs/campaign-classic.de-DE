@@ -77,7 +77,8 @@ Der Anschlussvorgang wird nach Anwendung der Typologieregeln und der Sortierung 
      weight:2}
    ```
 
-* dicOffer (XML): Zusammenstellung aller Attribute der infrage kommenden Angebote (Angebotscode, Kategoriekennung, vollständiger Titel der Kategorie, Startdatum, Enddatum, Titel, interner Name, Angebotskennung, Zusatzfelder des Angebots). Beispiel:
+* dicOffer (XML): Zusammenstellung aller Attribute der geeigneten Angebote (Angebotscode, Kategoriekennung, vollständiger Titel der Kategorie, Startdatum, Enddatum, Titel, interner Name, Angebotskennung, Zusatzfelder des Angebots). Beispiel:
+
 
    ```
    { "1242": <offer category-id="61242" categoryFullName="/FULL/PATH/TO/CATEGORY/" code="CODE" endDate="" id="62473" label="LABEL" name="OFR38_OE4" product-id="43" startDate=""/>,

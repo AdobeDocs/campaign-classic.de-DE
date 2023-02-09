@@ -33,9 +33,9 @@ Bei mehreren Adobe Campaign-Workflow-Aktivitäten können Sie die in einer exter
 
 * **Segmente erstellen** – Die Aktivität [Aufspaltung](../../workflow/using/split.md) ermöglicht die Erstellung von Segmenten. Sie können externe Daten verwenden, um die zu verwendenden Filterkriterien zu definieren. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../workflow/using/split.md).
 
-* **Externe Datenbank laden** – Sie können die externen Daten in der Aktivität [](../../workflow/using/data-loading--rdbms-.md)Laden (DBMS) verwenden. Weiterführende Informationen finden Sie auf [dieser Seite](../../workflow/using/data-loading--rdbms-.md).
+* **Externe Datenbank laden** – Sie können die externen Daten in der Aktivität [](../../workflow/using/data-loading--rdbms-.md)Laden (DBMS) verwenden. Weitere Informationen finden Sie auf [dieser Seite](../../workflow/using/data-loading--rdbms-.md).
 
-* **Informationen und Links hinzufügen** – Die Aktivität [Anreicherung](../../workflow/using/enrichment.md) ermöglicht das Hinzufügen zusätzlicher Daten zur Arbeitstabelle des Workflows sowie von Links zu einer externen Tabelle. In diesem Kontext können Daten aus einer externen Datenbank verwendet werden. Weiterführende Informationen finden Sie auf [dieser Seite](../../workflow/using/enrichment.md).
+* **Informationen und Links hinzufügen** – Die Aktivität [Anreicherung](../../workflow/using/enrichment.md) ermöglicht das Hinzufügen zusätzlicher Daten zur Arbeitstabelle des Workflows sowie von Links zu einer externen Tabelle. In diesem Kontext können Daten aus einer externen Datenbank verwendet werden. Weitere Informationen finden Sie auf [dieser Seite](../../workflow/using/enrichment.md).
 
 ## FDA-Beschränkungen {#limitations}
 

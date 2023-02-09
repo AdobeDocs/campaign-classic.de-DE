@@ -46,7 +46,7 @@ Standardmäßig wird die **[!UICONTROL Datenbankbereinigung]** Der Workflow ist 
 >
 >Um die **[!UICONTROL Datenbankbereinigung]** um an dem in der Planung definierten Datum und zu der Uhrzeit zu starten, muss die Workflow-Engine (wfserver) gestartet werden.
 
-### Implementierungsassistent {#deployment-wizard}
+### Softwareverteilungs-Assistent {#deployment-wizard}
 
 Die **[!UICONTROL Implementierungsassistent]**, auf die über **[!UICONTROL Tools > Erweitert]** kann konfiguriert werden, wie lange Daten gespeichert werden. Die Werte werden in Tagen ausgedrückt. Wenn diese Werte nicht geändert werden, verwendet der Workflow die Standardwerte.
 

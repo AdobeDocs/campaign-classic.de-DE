@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: 'Verwenden von Adobe Campaign und Adobe Target '
+title: Verwenden von Adobe Campaign und Adobe Target
 description: Hier erfahren Sie, wie Sie Adobe Campaign mit Adobe Target integrieren
 audience: integrations
 content-type: reference

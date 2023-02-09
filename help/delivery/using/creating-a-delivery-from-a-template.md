@@ -5,7 +5,7 @@ description: Erfahren Sie, wie Sie einen Versand aus einer Vorlage erstellen
 feature: Delivery Templates
 exl-id: 7ffb649e-801f-4568-a86b-7982448e3c30
 source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 100%
 
@@ -31,7 +31,7 @@ Wählen Sie dann die zu verwendende Versandvorlage aus und klicken Sie auf **[!U
 
 ## Ausführen der Vorlage {#executing-the-template}
 
-Sie haben die Möglichkeit, eine Vorlage direkt aus der Vorlagenliste heraus auszuführen, ohne zuvor einen Versand zu erstellen. Markieren Sie hierfür die auszuführende Vorlage und klicken Sie mit der rechten Maustaste. Wählen Sie die Option **[!UICONTROL Aktionen > Ausgewählte Versandvorlage ausführen...]**.
+Sie können die Ausführung einer Vorlage direkt über die Vorlagenliste starten, ohne zuvor einen Versand zu erstellen. Wählen Sie dazu die auszuführende Vorlage aus und klicken Sie mit der rechten Maustaste darauf. Wählen Sie **[!UICONTROL Aktionen > Ausgewählte Versandvorlage ausführen...]** aus.
 
 Sie können auch das Menü **[!UICONTROL Datei > Aktionen > Ausgewählte Versandvorlage ausführen...]** verwenden.
 

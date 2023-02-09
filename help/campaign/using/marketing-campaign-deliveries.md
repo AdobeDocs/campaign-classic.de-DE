@@ -5,7 +5,7 @@ description: Erfahren Sie mehr über Sendungen zur Marketing-Kampagne
 feature: Campaigns, Resource Management, Cross Channel Orchestration
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
 source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1552'
 ht-degree: 100%
 
@@ -130,7 +130,7 @@ Sie haben auch die Möglichkeit, externe Elemente in Kampagnen zu referenzieren,
 
 ### Dokumente hinzufügen {#adding-documents}
 
-Dokumente können einer Kampagne (kontextrelevante Dokumente) oder einem Programm (allgemeine Dokumente) zugeordnet werden.
+Dokumente können auf Kampagnenebene (kontextuelle Dokumente) oder Programmebene (allgemeine Dokumente) zugeordnet werden.
 
 Der Tab **[!UICONTROL Dokumente]** enthält:
 

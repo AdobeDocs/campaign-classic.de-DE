@@ -29,7 +29,7 @@ Beispiel für Ereignisdaten:
 
 Um Transaktionsnachrichten-Ereignisse zu verarbeiten, werden die folgenden Schritte auf der/den Ausführungsinstanz(en) ausgeführt:
 
-1. [Ereigniskollektion](#event-collection)
+1. [Ereignisabruf](#event-collection)
 1. [Weiterleitung des Ereignisses zu einer Nachrichtenvorlage](#routing-towards-a-template)
 1. Anreicherung des Ereignisses mit Personalisierungsdaten
 1. [Versandausführung](../../message-center/using/delivery-execution.md)
@@ -42,7 +42,7 @@ Sobald alle oben genannten Schritte auf der Ausführungsinstanz ausgeführt wurd
 >Näheres zu Instanzen für Transaktionsnachrichten finden Sie unter [Transaktionsnachrichten-Architektur](../../message-center/using/transactional-messaging-architecture.md).
 
 
-## Ereigniskollektion {#event-collection}
+## Ereignisabruf {#event-collection}
 
 Die vom Informationssystem erzeugten Ereignisse können auf zwei Weisen abgerufen werden:
 

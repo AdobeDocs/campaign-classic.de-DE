@@ -56,7 +56,7 @@ Um SQL-Injections zu vermeiden, müssen der Zulassungsliste SQL-Funktionen hinzu
 >
 >Wenn Sie einen Build verwenden, der älter als 8140 ist, wird die Variable **XtkPassUnknownSQLFunctionsToRDBMS** -Option auf &quot;1&quot;gesetzt werden. Wenn Sie Ihre Datenbank sichern möchten, löschen Sie diese Option (oder legen Sie sie auf &quot;0&quot;fest).
 
-Wenn Sie Benutzereingaben zur Erstellung von Filtern in Abfragen oder SQL-Anweisungen verwenden, müssen Sie sie immer escapen (siehe die [JSAPI-Dokumentation für Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/index.html) - Schutz von Daten: Escape-Funktionen). Diese Funktionen sind:
+Wenn Sie Benutzereingaben zur Erstellung von Filtern in Abfragen oder SQL-Anweisungen verwenden, müssen Sie sie immer escapen (siehe die [JSAPI-Dokumentation für Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=de) - Schutz von Daten: Escape-Funktionen). Diese Funktionen sind:
 
 * NL.XML.escape(data)
 * NL.SQL.escape(data)

@@ -5,7 +5,7 @@ description: Erfahren Sie, wie Sie in Campaign Eingabeformulare verwenden
 feature: Data Management
 exl-id: 8ec52c96-44a2-4544-93b6-9ba251510682
 source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '834'
 ht-degree: 100%
 
@@ -79,7 +79,7 @@ Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../conf
 
 ## Listen-Steuerelemente {#list-type-controls}
 
-Zum Bearbeiten von Kollektionselementen ist die Verwendung von Listenelementen erforderlich.
+Zum Bearbeiten von Sammlungselementen ist die Verwendung von Listenelementen erforderlich.
 
 ### Listen in Spalten {#column-list}
 
@@ -94,13 +94,13 @@ Dieses Steuerelement zeigt eine Liste mit editierbaren Spalten und einer Symboll
 </input>
 ```
 
-Das Steuerelement Liste muss vom Attribut **type=&quot;list&quot;** begleitet werden, der Listenpfad muss auf das Kollektionselement verweisen.
+Das Steuerelement Liste muss vom Attribut **type=&quot;list&quot;** begleitet werden, der Listenpfad muss auf das Sammlungselement verweisen.
 
 Die Spalten werden als untergeordnete Elemente der Liste (**`<input>`**) definiert.
 
 >[!NOTE]
 >
->Die Schaltflächen zum Sortieren (Pfeil nach oben und Pfeil nach unten) werden automatisch hinzugefügt, wenn das Attribut **ordered=&quot;true&quot;** das Kollektionselement im Datenschema begleitet.
+>Die Schaltflächen zum Sortieren (Pfeil nach oben und Pfeil nach unten) werden automatisch hinzugefügt, wenn das Attribut **ordered=&quot;true&quot;** das Sammlungselement im Datenschema begleitet.
 
 Standardmäßig werden die Schaltflächen der Symbolleiste vertikal ausgerichtet. Sie können jedoch auch horizontal angezeigt werden:
 
@@ -117,7 +117,7 @@ Das **toolbarCaption**-Attribut sorgt für die horizontale Ausrichtung der Symbo
 
 >[!NOTE]
 >
->Um die Anzeige des Kollektionselement-Titels links der Steuerelemente zu unterbinden, ist das Attribut **nolabel=&quot;true&quot;** zu verwenden.
+>Um die Anzeige des Sammlungselement-Titels links der Steuerelemente zu unterbinden, ist das Attribut **nolabel=&quot;true&quot;** zu verwenden.
 
 #### In Listen zoomen {#zoom-in-a-list}
 
@@ -127,7 +127,7 @@ Dies ist in folgenden Fällen zu empfehlen:
 
 * zur Erleichterung der Dateneingabe,
 * im Fall von mehrzeiligen Steuerelementen,
-* zur Anzeige aller Felder, wenn die Spalten der Liste nur die wichtigsten Felder des Kollektionselements enthalten.
+* zur Anzeige aller Felder, wenn die Spalten der Liste nur die wichtigsten Felder des Sammlungselements enthalten.
 
 ![](assets/d_ncs_content_form7.png)
 
@@ -154,7 +154,7 @@ Die **[!UICONTROL Detail]**-Schaltfläche wird automatisch hinzugefügt, wenn da
 
 ### Tab-Liste {#tab-list}
 
-In dieser Art Liste werden die Kollektionselemente in Form von verschiedenen Tabs dargestellt.
+In dieser Art Liste werden die Sammlungselemente in Form von verschiedenen Tabs dargestellt.
 
 ![](assets/d_ncs_content_form6.png)
 
@@ -168,7 +168,7 @@ In dieser Art Liste werden die Kollektionselemente in Form von verschiedenen Tab
 </container>
 ```
 
-Das Steuerelement &quot;Liste&quot; muss mit dem Attribut **type=&quot;notebooklist&quot;** angegeben werden und der Pfad muss sich auf das Kollektionselement beziehen.
+Das Steuerelement &quot;Liste&quot; muss mit dem Attribut **type=&quot;notebooklist&quot;** angegeben werden und der Pfad muss sich auf das Sammlungselement beziehen.
 
 Der Tab-Titel entspricht dem im Attribut **xpath-label** angegebenen Wert.
 
@@ -178,7 +178,7 @@ Mithilfe der Schaltflächen der Symbolleiste können Sie Elemente zur Liste hinz
 
 >[!NOTE]
 >
->Die Rechts-/Links-Pfeile zum Anordnen der Tabs werden automatisch hinzugefügt, wenn das Attribut **ordered=&quot;true&quot;** im Kollektionselement des Datenschemas notiert ist.
+>Die Rechts-/Links-Pfeile zum Anordnen der Tabs werden automatisch hinzugefügt, wenn das Attribut **ordered=&quot;true&quot;** im Sammlungselement des Datenschemas notiert ist.
 
 ## Container {#containers}
 

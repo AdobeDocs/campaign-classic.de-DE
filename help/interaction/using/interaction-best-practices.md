@@ -28,7 +28,7 @@ Das Interaction-Modul in Adobe Campaign erfordert eine sorgfältige Verwaltung, 
 Im Folgenden sind wichtige Elemente aufgelistet, die bei der Implementierung und Konfiguration von Interaktionen beachtet werden sollten.
 
 * Für das Batch-Modul (typischerweise in der ausgehenden Kommunikation wie E-Mails verwendet) ist der Durchsatz das Hauptproblem, da mehrere Kontakte gleichzeitig verarbeitet werden können. Der typische Engpass hier ist die Datenbankleistung.
-* Die Haupteinschränkung für das Einzel-Modul (die typischerweise in der eingehenden Kommunikation wie bei einem Banner auf einer Website verwendet wird) ist die Latenzzeit, da eine Antwort erwartet wird. Der typische Engpass hier ist die CPU-Leistung.
+* Die Haupteinschränkung für das Einzel-Modul (die typischerweise in der eingehenden Kommunikation wie bei einem Banner auf einer Website verwendet wird) ist die Latenz, da eine Antwort erwartet wird. Der typische Engpass hier ist die CPU-Leistung.
 * Der Aufbau des Angebotskatalogs hat einen großen Einfluss auf die Leistung von Adobe Campaign Classic.
 * Wenn es viele Angebote gibt, teilen Sie diese in mehrere Angebotskataloge auf.
 

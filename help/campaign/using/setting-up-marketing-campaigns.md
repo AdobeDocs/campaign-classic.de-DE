@@ -5,7 +5,7 @@ description: Erfahren Sie, wie Sie Marketing-Kampagnen erstellen und ausführen.
 feature: Campaigns, Cross Channel Orchestration, Programs
 exl-id: a8fce21f-ffe3-4819-87ca-ac0ad9f21e41
 source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1294'
 ht-degree: 100%
 
@@ -125,7 +125,7 @@ Geben Sie in diesem Tab die geplanten Ausführungsdaten der Kampagnen auf der Ba
 
 ![](assets/s_ncs_user_op_template_recur_planning.png)
 
-Der Konfigurationsmodus der Ausführungsplanung entspricht dem der Workflow-Aktivität **[!UICONTROL Planung]**. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../workflow/using/architecture.md).
+Der Konfigurationsmodus der Ausführungsplanung entspricht dem Objekt **[!UICONTROL Planung]** des Workflows. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../workflow/using/architecture.md).
 
 >[!IMPORTANT]
 >

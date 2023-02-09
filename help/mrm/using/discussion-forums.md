@@ -66,7 +66,7 @@ Gehen Sie ins Fenster **[!UICONTROL Diskussionsforum]**:
 
 >[!NOTE]
 >
->Wenn die Nachricht gepostet wurde, kann sie nicht mehr geändert oder gelöscht werden.
+>Wenn eine Nachricht in das Forum gepostet wurde, kann sie nicht mehr geändert oder gelöscht werden.
 
 ## Posts im persönlichen Benutzerforum eines Benutzers {#posting-to-the-personal-forum-of-an-operator}
 

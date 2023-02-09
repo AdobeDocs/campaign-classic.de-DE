@@ -4,7 +4,7 @@ title: Transaktionsnachrichten-Architektur
 description: In diesem Abschnitt werden die Transaktionsnachrichten-Architektur von Adobe Campaign Classic und die verfügbaren Kanäle für den Versand von Transaktionsnachrichten erläutert
 exl-id: 0a059397-b037-405b-b9c1-94a4a072674d
 source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1225'
 ht-degree: 100%
 
