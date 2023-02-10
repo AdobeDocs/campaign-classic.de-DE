@@ -15,7 +15,7 @@ ht-degree: 100%
 
 ---
 
-#  Adobe Analytics Data Connector{#adobe-analytics-data-connector-legacy}
+# Adobe Analytics Data Connector{#adobe-analytics-data-connector-legacy}
 
 ![](../../assets/common.svg)
 
