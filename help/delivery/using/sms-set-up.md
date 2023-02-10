@@ -4,10 +4,10 @@ title: Konfigurieren des SMS-Kanals in Campaign
 description: Erfahren Sie, wie Sie den SMS-Kanal in Campaign konfigurieren
 feature: SMS
 exl-id: a2783a5e-6d38-41a1-b5c6-24ab489116f8
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 0ae52b00f69298e001596583fe166771faddead2
 workflow-type: tm+mt
-source-wordcount: '1800'
-ht-degree: 100%
+source-wordcount: '1826'
+ht-degree: 98%
 
 ---
 
@@ -28,6 +28,10 @@ Folgende Voraussetzungen müssen gegeben sein, um Sendungen an Mobiltelefone ric
 > Für SMS-Sendungen sollte die Typologie eine bestimmte SMS-Affinität verwenden, die in **einem** dedizierten Anwendungs-Server-Container erstellt wurde. [Weitere Informationen](../../installation/using/configure-delivery-settings.md#managing-outbound-smtp-traffic-with-affinities)
 
 ## Externes SMPP-Konto erstellen {#creating-an-smpp-external-account}
+
+>[!IMPORTANT]
+>
+>Die Verwendung desselben Kontos und Kennworts für mehrere externe SMS-Konten kann zu Konflikten und Überschneidungen zwischen den Konten führen. Siehe Abschnitt [Seite zur SMS-Fehlerbehebung](troubleshooting-sms.md#external-account-conflict).
 
 Um eine SMS an ein Mobiltelefon zu senden, müssen Sie zunächst Ihr externes SMPP-Konto erstellen.
 Weiterführende Informationen zum SMS-Protokoll und dessen Einstellungen finden Sie auf dieser [Seite](sms-protocol.md).

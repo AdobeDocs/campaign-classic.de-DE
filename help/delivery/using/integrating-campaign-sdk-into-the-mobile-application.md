@@ -4,7 +4,7 @@ title: Integrieren des Campaign SDK
 description: Erfahren Sie, wie Sie das Campaign SDK in Ihre Mobile App integrieren können.
 feature: Mobile SDK Integration, Push
 exl-id: a5f6b82d-5561-4e56-b2ed-7fd6fd8c2b55
-source-git-commit: 90c52ec144a6a3c1b534a80507e38fa3ed64fc83
+source-git-commit: 0ae52b00f69298e001596583fe166771faddead2
 workflow-type: tm+mt
 source-wordcount: '1012'
 ht-degree: 97%
@@ -27,7 +27,7 @@ Weiterführende Informationen zu den unterstützten Android- und iOS-Versionen f
 
 >[!NOTE]
 >
->Sie können das Adobe Experience Platform Mobile SDK auch verwenden, indem Sie die Adobe Campaign-Erweiterung in Adobe Experience Platform Launch konfigurieren. [Weitere Informationen finden Sie in der Dokumentation zu Adobe Experience Platform .](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-campaignclassic){target="_blank"}.
+>Sie können das Adobe Experience Platform Mobile SDK auch verwenden, indem Sie die Adobe Campaign-Erweiterung in Adobe Experience Platform Launch konfigurieren. [Weitere Informationen finden Sie in der Dokumentation zu Adobe Experience Platform .](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
 >
 >Erfahren Sie, wie Sie das Adobe Experience Platform Mobile SDK konfigurieren und installieren. [in diesem Video](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/configure-push-using-aep-mobile-sdk.html?lang=de){target="_blank"}.
 
