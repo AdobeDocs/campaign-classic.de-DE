@@ -138,7 +138,7 @@ Ein Team aus engagierten Kundenbetreuern, Produkt-Managern, Ingenieuren, TechOps
 
 ## Zusätzliche Ressourcen{#support}
 
-* [Finden Sie Ihre Campaign-Version](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+* [Finden Sie Ihre Campaign-Version](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)
 * [Hilfe und Support](../../support.md)
 * [Control Panel-Versionen](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=de)
 * [Aktuelle Dokumentationsaktualisierungen](../../rn/using/documentation-updates.md)
