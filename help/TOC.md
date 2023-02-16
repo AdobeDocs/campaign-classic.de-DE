@@ -7,9 +7,9 @@ user-guide-description: Mit Adobe Campaign können Sie umfangreiche Kundendaten 
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 985c0f170b8a56d7cdf76779ed9581832da301b1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2532'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
