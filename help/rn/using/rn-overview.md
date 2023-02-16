@@ -9,7 +9,7 @@ exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 source-git-commit: 1cc1568fe77cc5bbde88092b0e9108792e10fd71
 workflow-type: tm+mt
 source-wordcount: '934'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 85%
 
 ![](../../assets/v7-only.svg)
 
-Adobe Campaign Classic veröffentlicht regelmäßig Produktaktualisierungen, die neue Funktionen und Fehlerkorrekturen beinhalten und die Leistung, Sicherheit und Benutzerfreundlichkeit verbessern. Diese Aktualisierungen werden veröffentlicht als **Produkt-Builds**. Detaillierte Informationen zu den einzelnen neuen Builds finden Sie in den [Versionshinweisen](latest-release.md).
+Adobe Campaign Classic veröffentlicht regelmäßig Produktaktualisierungen, die neue Funktionen und Fehlerkorrekturen beinhalten und die Leistung, Sicherheit und Benutzerfreundlichkeit verbessern. Diese Aktualisierungen werden als **Produkt-Builds** veröffentlicht. Detaillierte Informationen zu den einzelnen neuen Builds finden Sie in den [Versionshinweisen](latest-release.md).
 
 ## Versionsstatus{#rn-statuses}
 
@@ -27,7 +27,7 @@ Jeder neue Build weist einen Status auf, der durch eine bestimmte Farbe in den [
 
 ![](assets/do-not-localize/limited3.png) **Eingeschränkte Verfügbarkeit** (LA) – Implementierung nur auf Anfrage.
 
-![](assets/do-not-localize/blue3.png) **Veröffentlichungskandidat** (RC) - Neuester Build mit neuen Funktionen.
+![](assets/do-not-localize/blue3.png) **Veröffentlichungskandidat** (RC) – Aktuelle Version mit neuen Funktionen.
 
 ![](assets/do-not-localize/orange3.png) **Nicht mehr verfügbar** - Keine Implementierung. Keine Fehlerbehebung. Es wird empfohlen, auf einen neueren Build zu aktualisieren.
 
@@ -37,9 +37,9 @@ Jeder neue Build weist einen Status auf, der durch eine bestimmte Farbe in den [
 
 Adobe Campaign wird regelmäßig aktualisiert. Dieser regelmäßige Aktualisierungsrhythmus zielt darauf ab, Ihnen die neuesten und besten Funktionen bereitzustellen, Ihre Umgebung sicher zu halten und Ihr Produkterlebnis zu verbessern.
 
-Deshalb ist es wichtig, dass Sie **den neuesten stabilen Build ausführen** von Adobe Campaign. Dadurch wird auch Ihr Support-Erlebnis verbessert, da das Erkennen, Reproduzieren und Beheben eines Problems in einem kürzlich erstellten Build normalerweise viel schneller erfolgt. Außerdem wurden viele potenzielle Probleme bereits in den letzten Builds behoben.
+Deshalb ist es essenziell, dass Sie **den aktuellen stabilen Build** von Adobe Campaign verwenden. Dadurch wird auch Ihr Support-Erlebnis verbessert, da das Erkennen, Reproduzieren und Beheben eines Problems in einem kürzlich erstellten Build normalerweise viel schneller erfolgt. Außerdem wurden viele potenzielle Probleme bereits in den letzten Builds behoben.
 
-Als gehosteter Kunde profitieren Sie automatisch vom Upgrade mit dem neuesten stabilen Build, ohne dass Maßnahmen ergriffen werden müssen. Weitere Informationen finden Sie im [Abschnitt zur jährlichen Aktualisierung](#yearly-upgrade). Wenn Sie von einem alten Build migrieren, empfiehlt Adobe, zuerst auf diesen Build zu aktualisieren.
+Wenn Sie als Kundin oder Kunde gehostet werden, profitieren Sie automatisch, ohne eigene Aktionen, von Aktualisierungen mit dem neuesten stabilen Build. Weitere Informationen finden Sie im [Abschnitt zur jährlichen Aktualisierung](#yearly-upgrade). Wenn Sie von einem alten Build migrieren, empfiehlt Adobe, zunächst eine Aktualisierung auf diesen Build durchzuführen.
 
 ## Empfehlungen{#recommendations}
 
@@ -67,9 +67,9 @@ Als gehosteter Benutzer erhalten Sie automatisch das Upgrade mit dem aktuellen G
 
 ### Warum benötigt mein Unternehmene Organisation dieses Upgrade?
 
-Wenn als gehosteter Kunde festgestellt wurde, dass für Ihr Konto eine oder mehrere der mit Campaign Classic verbundenen Technologien aktualisiert werden müssen und Ihre Infrastruktur auf den aktuellen Build aktualisiert werden muss (z. B. von v7.2.1 auf v7.3.3) und/oder die Version (von v7 auf v8), werden Sie von Adobe direkt benachrichtigt.
+Wenn Sie als Kundin oder Kunde gehostet werden und festgestellt wurde, dass in Ihrem Konto eine oder mehrere der mit Campaign Classic verbundenen Technologien aktualisiert werden müssen und Ihre Infrastruktur auf den aktuellen Build (z. B. von v7.2.1 auf v7.3.3) und/oder die aktuelle Version (von v7 auf v8) aktualisiert werden muss, werden Sie von Adobe direkt benachrichtigt.
 
-Als On-Premise- oder Hybrid-Kunde, der auf einem älteren Build ausgeführt wird, empfiehlt Ihnen Adobe, zum neuesten stabilen Build (GA) zu wechseln.
+Wenn Sie als On-Premise- oder Hybrid-Kundin oder -Kunde mit einem älteren Build arbeiten, empfiehlt Ihnen Adobe, zum aktuellen stabilen Build (GA) zu wechseln.
 
 Dadurch wird sichergestellt, dass Ihr Konto vor Sicherheitslücken geschützt ist und die aktuelle Technologie verwendet wird. Außerdem wird Ihr Konto durch dieses Upgrade in Zukunft auf einfachere, regelmäßige Upgrades vorbereitet, die weniger manuelle Arbeit und Eingriffe erfordern.
 
