@@ -5,9 +5,9 @@ description: Funktionsweise der Quarantäneverwaltung
 feature: Monitoring, Deliverability
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
 source-git-commit: c84f48ebdd66524e8dd6c39c88ae29565d11c9b2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3100'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -128,11 +128,11 @@ Wenn Sie bei gehosteten oder hybriden Installationen ein Upgrade auf [Enhanced M
 Bei On-Premise-Installationen und gehosteten/hybriden Installationen, die den veralteten Campaign MTA verwenden, können die Anzahl der Fehler und der Zeitraum zwischen zwei Fehlern geändert werden. Ändern Sie dazu die entsprechenden Einstellungen im [Bereitstellungsassistenten](../../installation/using/deploying-an-instance.md) (**[!UICONTROL E-Mail-Kanal]** > **[!UICONTROL Erweiterte Parameter]**) oder [auf Versandebene](../../delivery/using/steps-sending-the-delivery.md#configuring-retries).
 
 
-## Adresse aus der Quarantäne nehmen {#removing-a-quarantined-address}
+## Entfernen einer Adresse aus der Quarantäne {#removing-a-quarantined-address}
 
 ### Automatische Aktualisierungen {#unquarantine-auto}
 
-Adressen, die bestimmten Bedingungen entsprechen, werden automatisch von der Quarantäneliste gelöscht [Datenbankbereinigung](../../production/using/database-cleanup-workflow.md) Arbeitsablauf.
+Adressen, die bestimmte Bedingungen erfüllen, werden automatisch durch den [Datenbankbereinigungs](../../production/using/database-cleanup-workflow.md)-Workflow aus der Quarantäneliste gelöscht.
 
 In den folgenden Fällen werden die Adressen automatisch aus der Quarantäneliste entfernt:
 
@@ -144,40 +144,40 @@ Ihr Status ändert sich dann in **[!UICONTROL Gültig]**.
 
 >[!IMPORTANT]
 >
->Empfänger mit einer Adresse in einer **[!UICONTROL Quarantäne]** oder **[!UICONTROL Auf die Blockierungsliste gesetzt]** -Status nicht entfernt werden, selbst wenn sie eine E-Mail erhalten.
+>Empfängerinnen und Empfänger mit einer Adresse im Status **[!UICONTROL Quarantäne]** oder **[!UICONTROL Auf Blockierungsliste]** werden niemals entfernt, auch wenn sie eine E-Mail erhalten.
 
 ### Manuelle Aktualisierungen {#unquarantine-manual}
 
-Sie können die Quarantäne für eine Adresse auch manuell aufheben. Um eine Adresse manuell aus der Quarantäneliste zu entfernen, ändern Sie ihren Status in **[!UICONTROL Gültig]** von **[!UICONTROL Administration > Campaign Management > Unzustellbarkeitsverwaltung > Adressen unzustellbarer Sendungen]** Knoten.
+Sie können die Quarantäne für eine Adresse auch manuell aufheben. Um eine Adresse manuell aus der Quarantäneliste zu entfernen, ändern Sie im Knoten **[!UICONTROL Administration > Kampagnen-Management > Unzustellbarkeitsverwaltung > Adressen unzustellbarer Sendungen]** ihren Status in **[!UICONTROL Gültig]**.
 
 ![](assets/tech_quarant_error_status.png)
 
 ### Massenaktualisierungen {#unquarantine-bulk}
 
-Möglicherweise müssen Sie Massenaktualisierungen auf der Quarantäneliste durchführen, z. B. im Falle eines ISP-Ausfalls. In diesem Fall werden E-Mails fälschlicherweise als Bounces gekennzeichnet, da sie ihrem Empfänger nicht erfolgreich zugestellt werden können. Diese Adressen müssen aus der Quarantäneliste entfernt werden.
+Möglicherweise müssen Sie Massenaktualisierungen auf der Quarantäneliste durchführen, z. B. im Falle eines ISP-Ausfalls. In diesem Fall werden E-Mails fälschlicherweise als Bounce gekennzeichnet, da sie ihren Empfängerinnen und Empfängern nicht erfolgreich zugestellt werden können. Diese Adressen müssen aus der Quarantäneliste entfernt werden.
 
-Erstellen Sie dazu einen Workflow und fügen Sie eine **[!UICONTROL Abfrage]** Aktivität in Ihrer Quarantänetabelle, um alle betroffenen Empfänger herauszufiltern. Nach der Identifizierung können sie aus der Quarantäneliste entfernt und in künftige Campaign-E-Mail-Sendungen aufgenommen werden.
+Erstellen Sie dazu einen Workflow und fügen Sie eine **[!UICONTROL Abfrage]**-Aktivität in Ihrer Quarantänetabelle hinzu, um alle betroffenen Empfängerinnen und Empfänger herauszufiltern. Sobald sie identifiziert sind, können sie aus der Quarantäneliste entfernt und in zukünftige E-Mail-Sendungen in Campaign aufgenommen werden.
 
-Nachfolgend finden Sie die empfohlenen Richtlinien für diese Abfrage:
+Nachfolgend befinden sich die empfohlenen Richtlinien für diese Abfrage:
 
-* Für Campaign Classic v7-Umgebungen mit Regelinformationen für eingehende E-Mails im **[!UICONTROL Fehlertext]** Feld der Quarantäneliste:
+* Für Campaign Classic v7-Umgebungen mit Regelinformationen für eingehende E-Mails im Feld **[!UICONTROL Fehlertext]** der Quarantäneliste:
 
    * **Fehlertext (Quarantänetext)** enthält „Momen_Code10_InvalidRecipient“
    * **E-Mail-Domain (@domain)** gleich domain1.com ODER **E-Mail-Domain (@domain)** gleich domain2.com ODER **E-Mail-Domain (@domain)** gleich domain3.com
-   * **Status aktualisieren (@lastModified)** am oder nach MM/TT/JJJJ HH:MM:SS AM
-   * **Status aktualisieren (@lastModified)** am oder vor MM/TT/JJJJ HH:MM:SS PM
+   * **Aktualisierungsstatus (@lastModified)** am oder nach MM/TT/JJJJ HH:MM:SS AM
+   * **Aktualisierungsstatus (@lastModified)** am oder vor MM/TT/JJJJ HH:MM:SS PM
 
-* Zum Campaign Classic v7-Instanzen mit SMTP-Bounce-Antwortinformationen im **[!UICONTROL Fehlertext]** Feld der Quarantäneliste:
+* Für Campaign Classic v7-Umgebungen mit SMTP-Bounce-Antwortinformationen im Feld **[!UICONTROL Fehlertext]** der Quarantäneliste:
 
-   * **Fehlertext (Quarantänetext)** enthält &quot;550-5.1.1&quot;UND **Fehlertext (Quarantänetext)** enthält &quot;support.ISP.com&quot;
+   * **Fehlertext (Quarantänetext)** enthält „550-5.1.1“ UND **Fehlertext (Quarantänetext)** enthält „support.ISP.com“,
 
-   wobei &quot;support.ISP.com&quot;sein kann: z. B. &quot;support.apple.com&quot;oder &quot;support.google.com&quot;
+   wobei „support.ISP.com“ Folgendes sein kann: „support.apple.com“ oder „support.google.com“ zum Beispiel
 
-   * **Status aktualisieren (@lastModified)** am oder nach MM/TT/JJJJ HH:MM:SS AM
-   * **Status aktualisieren (@lastModified)** am oder vor MM/TT/JJJJ HH:MM:SS PM
+   * **Aktualisierungsstatus (@lastModified)** am oder nach MM/TT/JJJJ HH:MM:SS AM
+   * **Aktualisierungsstatus (@lastModified)** am oder vor MM/TT/JJJJ HH:MM:SS PM
 
 
-Wenn Sie über die Liste der betroffenen Empfänger verfügen, fügen Sie eine **[!UICONTROL Daten aktualisieren]** Aktivität zum Festlegen des Status ihrer E-Mail-Adresse auf **[!UICONTROL Gültig]** sodass sie von der Quarantäneliste entfernt werden **[!UICONTROL Datenbankbereinigung]** Arbeitsablauf. Sie können sie auch einfach aus der Quarantänetabelle löschen.
+Sobald Sie die Liste der betroffenen Empfängerinnen und Empfänger haben, fügen Sie die Aktivität **[!UICONTROL Daten aktualisieren]** hinzu, um den Status der E-Mail-Adressen auf **[!UICONTROL Gültig]** zu setzen, damit sie durch den Workflow **[!UICONTROL Datenbankbereinigung]** aus der Quarantäneliste entfernt werden. Sie können sie auch einfach aus der Quarantänetabelle löschen.
 
 ## Quarantäne für Push-Benachrichtigungen {#push-notification-quarantines}
 
