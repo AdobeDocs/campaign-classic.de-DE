@@ -134,7 +134,7 @@ Der Diagrammtyp **Tacho** wurde entfernt.
 
 Screenshots und Parameter von Berichten und Web-Anwendungen wurden nach der Entfernung von Adobe Flash aktualisiert.
 
-Die Beschreibung des technischen Workflows [Rechnungsstellung](../../production/using/monitoring-processes.md#billing-report) wurde mit einem neuen Limit aktualisiert.
+Die Beschreibung des technischen Workflows [Rechnungsstellung](../../production/using/monitoring-processes.md#billing-report) wurde mit einer neuen Leitplanke aktualisiert.
 
 ### August 2021{#aug-2021}
 

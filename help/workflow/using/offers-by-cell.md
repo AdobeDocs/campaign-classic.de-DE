@@ -17,7 +17,7 @@ ht-degree: 100%
 
 Mithilfe der Aktivität **[!UICONTROL Angebote pro Segment]** lässt sich die eingehende Population (die beispielsweise aus einer Abfrage hervorgeht) in mehrere Zielgruppen aufspalten, um so je Segment spezifische Angebote zu unterbreiten.
 
-Um diese Aktivität verwenden zu können, benötigen Sie das Modul **Interaction**. Weiterführende Informationen finden Sie in diesem [Abschnitt](../../interaction/using/about-outbound-channels.md).
+Diese Aktivität kann nur mit **Interaktion** verwendet werden. Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](../../interaction/using/about-outbound-channels.md).
 
 Gehen Sie dazu wie folgt vor:
 

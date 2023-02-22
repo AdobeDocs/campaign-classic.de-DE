@@ -15,7 +15,7 @@ ht-degree: 100%
 
 ![](../../assets/v7-only.svg)
 
-Der folgende Workflow wird mit dem Modul **Mid-Sourcing-Plattform** installiert. Weiterführende Informationen zum Modul finden Sie in diesem [Abschnitt](../../installation/using/mid-sourcing-deployment.md).
+Der unten beschriebene Workflow wird standardmäßig mit dem Modul **Mid-Sourcing-Plattform** installiert. Weiterführende Informationen zu dem Modul finden Sie in diesem [Abschnitt](../../installation/using/mid-sourcing-deployment.md).
 
 <table> 
  <tbody> 

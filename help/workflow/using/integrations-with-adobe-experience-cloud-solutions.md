@@ -15,7 +15,7 @@ ht-degree: 100%
 
 ![](../../assets/v7-only.svg)
 
-Die folgenden Workflows werden mit dem Modul **Integration mit Adobe Experience Cloud** installiert. Weiterführende Informationen zum Modul finden Sie in diesem [Abschnitt](../../integrations/using/configuring-ims.md#installing-the-package).
+Die folgenden Workflows werden mit dem Modul **Integration mit Adobe Experience Cloud** standardmäßig installiert. Weiterführende Informationen zu dem Modul finden Sie in diesem [Abschnitt](../../integrations/using/configuring-ims.md#installing-the-package).
 
 <table> 
  <tbody> 

@@ -15,7 +15,7 @@ ht-degree: 100%
 
 ![](../../assets/v7-only.svg)
 
-Die folgenden Workflows werden mit dem **Web-Analytics-Connectoren-Modul** installiert. Weiterführende Informationen zum Modul finden Sie in diesem [Abschnitt](../../platform/using/adobe-analytics-connector.md).
+Die folgenden Workflows werden standardmäßig mit dem Modul **Web-Analytics-Connectoren** installiert. Weiterführende Informationen zu dem Modul finden Sie in diesem [Abschnitt](../../platform/using/adobe-analytics-connector.md).
 
 <table> 
  <tbody> 

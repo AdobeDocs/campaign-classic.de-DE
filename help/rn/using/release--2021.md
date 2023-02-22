@@ -48,7 +48,7 @@ _7. September 2021_
 
 **Sonstige Änderungen**
 
-* Es wurde eine Fehlfunktion behoben, die in Version 21.1.3 mit der Einführung der neuen Schutzeinrichtung des Abrechnungs-Workflows auftrat. Der Abrechnungs-Workflow wurde auf falschen Instanzen ausgeführt und stürzte beim Versuch ab, den nicht generierten Abrechnungsbericht zu senden. Sie müssen den Workflow manuell neu starten, damit die Fehlerbehebung angewendet wird.
+* Es wurde eine Fehlfunktion behoben, die in Version 21.1.3 mit der Einführung der neuen Schutzmaßnahme des Abrechnungs-Workflows auftrat. Der Abrechnungs-Workflow wurde auf falschen Instanzen ausgeführt und stürzte beim Versuch ab, den nicht generierten Abrechnungsbericht zu senden. Sie müssen den Workflow manuell neu starten, damit die Fehlerbehebung angewendet wird.
 * Bereits veraltete Microsoft CRM-Connectoren (Office 365- und On-Premise-Implementierungen) wurden aus der Benutzeroberfläche entfernt. [Mehr dazu](../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft)
 * Nach der Migration zu Tomcat 8 wurde das IIS-Setup-Skript aktualisiert, um Probleme mit der IIS-Integration zu beheben. (NEO-31019)
 * In den Daten- und Schema-Tabs des Fensters **Population ansehen** der Workflow-Transitionen wurde die Identifizierung der Datenquelle verbessert.

@@ -48,7 +48,7 @@ Sobald die Konsole im Ordner des Campaign-Servers verfügbar ist, werden die Ben
 
 Wenn Sie diese Option auswählen und sich gegen den Download der neuesten Version entscheiden, wird kein anderer Benutzer über die neuen verfügbaren Versionen informiert.
 
-Wenn die Option ausgewählt wurde, können Sie diese Aufforderung zurücksetzen. Nur Systemadministratoren, die mit der Bearbeitung von Windows Registry vertraut sind, sollten diese Änderungen vornehmen:
+Wenn die Option ausgewählt wurde, können Sie diese Eingabeaufforderung zurücksetzen. Nur Systemadministratoren, die mit der Bearbeitung von Windows Registry vertraut sind, sollten diese Änderungen vornehmen:
 
 1. Öffnen Sie den Registrierungs-Editor mithilfe der **regedit** -Befehl aus dem **[!UICONTROL Start > Ausführen]** Menü.
 1. Suchen Sie nach dem Knoten und erweitern Sie ihn.

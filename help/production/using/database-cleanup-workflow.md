@@ -19,7 +19,7 @@ ht-degree: 2%
 
 ## Einleitung {#introduction}
 
-Der Workflow **[!UICONTROL Datenbankbereinigung]**, auf den Sie über den Knoten **[!UICONTROL Administration > Produktion > Technische Workflows]** zugreifen können, ermöglicht das Löschen veralteter Daten, um das exponentielle Anwachsen der Datenbank zu verhindern. Der Workflow wird automatisch ohne das Eingreifen des Benutzers ausgelöst.
+Der Workflow **[!UICONTROL Datenbankbereinigung]**, auf den Sie über den Knoten **[!UICONTROL Administration > Produktion > Technische Workflows]** zugreifen können, ermöglicht das Löschen veralteter Daten, um das exponentielle Anwachsen der Datenbank zu verhindern. Der Workflow wird automatisch ohne das Eingreifen der benutzenden Person ausgelöst.
 
 ![cleanup](assets/ncs_cleanup_workflow.png)
 
