@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 76218abd198f677541338c7f854d047d2c644013
+source-git-commit: 84c6dacb96bd0853be9eaef0dfa7e36116f8a46a
 workflow-type: tm+mt
-source-wordcount: '775'
-ht-degree: 94%
+source-wordcount: '779'
+ht-degree: 89%
 
 ---
 
@@ -322,8 +322,6 @@ Ferner kann Campaign in **Hybrid**- und **On-Premise**-Umgebungen auch mit den f
 
 
 
-
-
 ## Client-Konsole {#ClientConsoleoperatingsystems}
 
 Für die Verwendung der [Campaign-Client-Konsole](../../installation/using/installing-the-client-console.md) sind die folgenden Betriebssysteme und Browser **erforderlich**.
@@ -337,7 +335,7 @@ Für die Verwendung der [Campaign-Client-Konsole](../../installation/using/insta
 <td>Microsoft Windows</td>
 <td>
 <p>11 (ab Campaign v7.3)</p>
-<p>10 (empfohlen für japanische Instanzen)</p>
+<p>10</p>
 <p>8</p>
 </td>
 </tr>
@@ -353,22 +351,10 @@ Für die Verwendung der [Campaign-Client-Konsole](../../installation/using/insta
 
 ### Microsoft WebView2 Runtime
 
-<table>
-<tbody>
-<tr>
-<td>
-<p>Microsoft Edge WebView2 Runtime
-</p>
-</td>
-<td>
-<p>Neueste Version</p>
-</td>
-<td>
-<p><a href="http://www.adobe.com/go/acc-ms-webview2-runtime-download_de">Von der Microsoft Developer-Website herunterladen</a></p>
-</td>
-</tr>
-</tbody>
-</table>
+Microsoft Edge WebView2 Runtime Die neueste Version ist für die Campaign-Clientkonsole erforderlich.
+
+Laden Sie Microsoft Edge WebView2 von herunter [Microsoft-Entwicklersite](http://www.adobe.com/go/acc-ms-webview2-runtime-download_de).
+
 
 ## Mobile SDK{#MobileSDK}
 
@@ -377,14 +363,14 @@ Sie können Campaign verwenden, um [Push-Benachrichtigungen](../../delivery/usin
 <table>
 <tbody>
 <tr>
-<td>Android</td>
+<td>Google Android</td>
 <td>
 <p>12 (ab Campaign v7.3), 9.0, 8.x, 7.x</p>
 <p>mit Mobile SDK Build 1.1.1</p>
 </td>
 </tr>
 <tr>
-<td>iOS</td>
+<td>Apple iOS</td>
 <td>
 <p>iOS 9 bis 15</p>
 <p>mit Mobile SDK (Build 1.0.26), kompatibel mit 32- und 64-Bit-Versionen. iOS 15 wird ab Campaign v7.3 unterstützt</p>
@@ -395,46 +381,13 @@ Sie können Campaign verwenden, um [Push-Benachrichtigungen](../../delivery/usin
 
 ## Browser{#Browsers}
 
-Die folgenden Browser sind mit Campaign für [Web-Zugriff](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-) kompatibel.
+Die folgenden Browser in der jeweils aktuellen Version sind mit Campaign kompatibel für [Webzugriff](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-).
 
-<table>
-<tbody>
-<tr>
-<td>
-<p>Microsoft Edge</p>
-</td>
-<td>
-<p>Neueste Version</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Mozilla Firefox</p>
-</td>
-<td>
-<p>Neueste Version</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Google Chrome</p>
-</td>
-<td>
-<p>Neueste Version</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Safari</p>
-</td>
-<td>
-<p>Neueste Version</p>
-</td>
-</tr>
+* Google Chrome
+* Microsoft Edge
+* Mozilla Firefox
+* Safari
 
-</tr>
-</tbody>
-</table>
 
 
 ## Ähnliche Themen{#Morelikethis}
