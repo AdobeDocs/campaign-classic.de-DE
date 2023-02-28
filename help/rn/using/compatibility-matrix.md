@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 31aa32e4fb7171a49bbea6907f50608eddb2802e
+source-git-commit: 76218abd198f677541338c7f854d047d2c644013
 workflow-type: tm+mt
-source-wordcount: '785'
-ht-degree: 98%
+source-wordcount: '775'
+ht-degree: 94%
 
 ---
 
@@ -40,9 +40,9 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 <tr> 
 <td>CentOs</td>
 <td>
-<p>8.x (64 Bit) </br><strong>Wichtig:</strong> CentOS Linux 8 wird am 31. Dezember 2021 das Ende der Lebensdauer (End of Life, EOL) erreichen. Weiterführende Informationen dazu finden Sie auf der Seite <a href="../../rn/using/deprecated-features.md">Eingestellte Funktionen</a>.</p>
-<p>7.x (64 Bit)</p>
+<p>7.x</p>
 <p><strong>Wichtig:</strong> Wenn Sie RHEL verwenden, müssen Sie SELinux deaktivieren oder Ihre Programmierer benutzerdefinierte SELinux-Regeln schreiben lassen, um zu überprüfen, ob ein aktiviertes SELinux keine Probleme mit Campaign-Vorgängen verursacht.</p>
+<p>8.x</br><strong>Wichtig:</strong> CentOS Linux 8 wird am 31. Dezember 2021 das Ende der Lebensdauer (End of Life, EOL) erreichen. Weiterführende Informationen dazu finden Sie auf der Seite <a href="../../rn/using/deprecated-features.md">Eingestellte Funktionen</a>.</p>
 </td>
 </tr>
 <tr>
@@ -88,7 +88,7 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 <tr>
 <td>Apache</td>
 <td>
-<p>2.4 für RHEL 7– CentOS 7, Debian 8/9, Windows (64 Bit)</p>
+<p>2.4 für RHEL7 - CentOS 7, Debian 8/9, Windows</p>
 </td>
 </tr>
 </tbody>
@@ -104,7 +104,7 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 <p>11</p>
 <p>9</p>
 <p>8</p>
-<p>Die Anwendung wurde für das Java Development Kit (JDK), das von Oracle entwickelt wurde, sowie für OpenJDK genehmigt.</p>
+<p>Campaign unterstützt das Java Development Kit (JDK), das von Oracle und OpenJDK entwickelt wurde.</p>
 </td>
 </tr>
 <tr>
