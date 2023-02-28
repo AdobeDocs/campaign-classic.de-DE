@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 1cf94ee5edac7087d7d21709243e9f56c2b3d6f5
+source-git-commit: 31aa32e4fb7171a49bbea6907f50608eddb2802e
 workflow-type: tm+mt
-source-wordcount: '778'
-ht-degree: 100%
+source-wordcount: '785'
+ht-degree: 98%
 
 ---
 
@@ -48,23 +48,23 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 <tr>
 <td>Debian</td>
 <td>
-<p>11 (64 Bit)</p>
-<p>10 (64 Bit)</p>
-<p>9 (64 Bit)</p>
+<p>11 (ab Campaign v7.3)</p>
+<p>10</p>
+<p>9</p>
 </td>
 </tr>
 <tr>
 <td>RHEL</td>
 <td>
-<p>8.x (64 Bit)</p>
-<p>7.x (64 Bit)</p>
+<p>8.x</p>
+<p>7.x</p>
 <p><strong>Wichtig:</strong> Wenn Sie RHEL verwenden, müssen Sie SELinux deaktivieren oder Ihre Programmierer benutzerdefinierte SELinux-Regeln schreiben lassen, um zu überprüfen, ob ein aktiviertes SELinux keine Probleme mit Campaign-Vorgängen verursacht.</p>
 </td>
 </tr>
 <tr>
 <td>Windows Server</td>
 <td>
-<p>2019 (ab Version 7.2.1)</p>
+<p>2019 (ab Campaign v7.2)</p>
 <p>2016</p>
 <p>2012 R2</p>
 <p>2012</p>
@@ -138,7 +138,7 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 <tr>
 <td>PostgreSQL</td>
 <td>
-<p>14.x</p>
+<p>14.x (ab Campaign v7.3.2)</p>
 <p>13.x</p>
 <p>12.x</p>
 <p>11.x</p>
@@ -154,7 +154,7 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 <p>2016</p>
 <p>2014</p>
 <p>2012 – SP1 und SP2</p>
-<p><strong>Wichtig</strong>: Microsoft SQL Server wird nicht als primäre Datenbank unterstützt, wenn der Campaign-Server auf Linux läuft. <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/installing-campaign-in-linux-/prerequisites-of-campaign-installation-in-linux.html?lang=de#database-access-layers">Weitere Informationen</a>.</p>
+<p><strong>Wichtig</strong>: Microsoft SQL Server wird nicht als primäre Datenbank unterstützt, wenn der Campaign-Server auf Linux läuft. <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/installing-campaign-in-linux-/prerequisites-of-campaign-installation-in-linux.html#database-access-layers">Weitere Informationen</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -208,7 +208,7 @@ Die externen Datenbanken, die mit dem [Federated Data Access-Modul](../../instal
 <tr>
 <td>Google BigQuery</td>
 <td> </td>
-<td>Mindestens 7.2.1</td>
+<td>Mindestens 7.2</td>
 </tr>
 <tr>
 <td>PostgreSQL</td>
@@ -224,7 +224,7 @@ Die externen Datenbanken, die mit dem [Federated Data Access-Modul](../../instal
 <tr>
 <td>Snowflake</td>
 <td> </td>
-<td>Mindestens 7.2.1</td>
+<td>Mindestens 7.2</td>
 </tr>
 <tr>
 <td>Vertica Analytics</td>
@@ -248,7 +248,7 @@ Ferner kann Campaign in **Hybrid**- und **On-Premise**-Umgebungen auch mit den f
 </tr>
 <tr><td>MySQL</td>
 <td>
-<p>8</p>
+<p>8 (ab Campaign v7.3)</p>
 <p>5.7</p>
 </td>
 <td>
@@ -336,7 +336,7 @@ Für die Verwendung der [Campaign-Client-Konsole](../../installation/using/insta
 <tr>
 <td>Microsoft Windows</td>
 <td>
-<p>11 (ab Version 7.3)</p>
+<p>11 (ab Campaign v7.3)</p>
 <p>10 (empfohlen für japanische Instanzen)</p>
 <p>8</p>
 </td>
@@ -344,7 +344,7 @@ Für die Verwendung der [Campaign-Client-Konsole](../../installation/using/insta
 <tr>
 <td>Microsoft Windows Server</td>
 <td>
-<p>2019 (ab Version 7.2.1)</p>
+<p>2019 (ab Campaign v7.2.1)</p>
 <p>2016</p>
 <p>2012</p>
 </td>
