@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 8391df5046d56edfb33de5eb9f2afb4738108791
+source-git-commit: 2654157b02b549d4184ed6a5a93acad47e452713
 workflow-type: tm+mt
-source-wordcount: '2773'
+source-wordcount: '2774'
 ht-degree: 100%
 
 ---
@@ -33,7 +33,7 @@ _21. November 2022_
 
 * Nach dem Auslaufen von Microsoft Internet Explorer 11 verwendet die HTML-Render-Engine für Dashboards in der Client-Konsole nun Edge Chromium. (NEO-20741)
 
-Weitere Informationen finden Sie in der [Kompatibilitätsmatrix für Campaign](../../rn/using/compatibility-matrix.md#RDBMSservers).
+Weiterführende Informationen finden Sie in der [Campaign-Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md#RDBMSservers).
 
 **Verbesserungen**
 
