@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 source-git-commit: f797aafac99d6b9c2bdb409a1d0883c889fd3b0e
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '935'
+ht-degree: 100%
 
 ---
 
@@ -51,9 +51,9 @@ Um Ihre Implementierung auf dem neuesten Stand zu halten, lesen Sie bei jeder ne
 
 ## Upgrade-Prozess{#process-upgrade}
 
-Als gehosteter Managed Services- oder Hybrid-Kunde wenden Sie sich an die Kundenunterstützung von Adobe, um Ihre Umgebung aktualisieren zu lassen.
+Gehostete Managed Services- oder Hybrid-Kundschaft kann sich für ein Upgrade ihrer Umgebung an die Adobe-Kundenunterstützung wenden.
 
-Als On-Premise-Kunde können Sie das Upgrade durchführen. Laden Sie dazu den [neuesten stabilen Build (GA) herunter](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) und aktualisieren Sie alle Ihre Umgebungen.
+On-Premise-Benutzende können das Upgrade selbst durchführen. Laden Sie dazu den [neuesten stabilen Build (GA) herunter](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) und aktualisieren Sie alle Ihre Umgebungen.
 
 Erfahren Sie mehr über den [Upgrade-Prozess](../../production/using/build-upgrade.md) und lesen Sie die [häufig gestellten Fragen zu Build-Upgrades](../../platform/using/faq-build-upgrade.md).
 
@@ -67,7 +67,7 @@ Als gehosteter Benutzer erhalten Sie automatisch das Upgrade mit dem aktuellen G
 
 ### Warum benötigt mein Unternehmene Organisation dieses Upgrade?
 
-Wenn als gehosteter Kunde festgestellt wurde, dass für Ihr Konto eine oder mehrere der mit Campaign Classic verbundenen Technologien aktualisiert werden müssen und Ihre Infrastruktur auf den aktuellen Build aktualisiert werden muss (z. B. von v7.2.1 auf v7.3.3) und/oder auf die aktuelle Version (z. B. von v7 auf v8), werden Sie von Adobe direkt benachrichtigt.
+Gehostete Kundschaft wird von Adobe direkt benachrichtigt, wenn festgestellt wird, dass eine oder mehrere der mit Campaign Classic verbundenen Technologien aktualisiert werden müssen und die Infrastruktur ein Upgrade auf den aktuellen Build (z. B. von v7.2.1 auf v7.3.3) und/oder die aktuelle Version (z. B. von v7 auf v8) benötigt.
 
 Wenn Sie als On-Premise- oder Hybrid-Kundin oder -Kunde mit einem älteren Build arbeiten, empfiehlt Ihnen Adobe, zum aktuellen stabilen Build (GA) zu wechseln.
 
@@ -77,7 +77,7 @@ Dadurch wird sichergestellt, dass Ihr Konto vor Sicherheitslücken geschützt is
 
 Das Adobe-Team begleitet Ihr Unternehmen durch diesen Prozess.
 
-Ein Team engagierter Kundenbetreuer, Produktmanager, Techniker, TechOps-Spezialisten und Produktberater ist hier, um Ihnen zu helfen und sicherzustellen, dass das Erlebnis reibungslos funktioniert.
+Zur Unterstützung wurde ein Team aus engagierten Mitarbeitenden der Kundenunterstützung, Produkt-Managern und -Managerinnen, Ingenieuren und Ingenieurinnen, TechOps-Spezialisten und -Spezialistinnen sowie Produktberatenden zusammengestellt, um ein möglichst reibungsloses Erlebnis zu gewährleisten.
 
 ### Vorteile
 
