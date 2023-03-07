@@ -5,7 +5,7 @@ description: Bearbeiten von Inhalten
 feature: Web Apps, Web Forms, Landing Pages
 exl-id: 968430d6-b1dd-47f8-8b31-39aaa18bc05c
 source-git-commit: 7f5770c5181b4f2e966d8ecfe6b1d4b9c764e5fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1239'
 ht-degree: 100%
 
@@ -221,9 +221,9 @@ Wählen Sie eine lokal gespeicherte Bilddatei aus.
 
 ![](assets/dce_popup_imgupload.png)
 
-Mit dem Symbol **Löschen** wird das Tag , das das Bild enthält, gelöscht.
+Mit dem Symbol **Löschen** wird das Tag, das das Bild enthält, gelöscht.
 
-Mit dem Symbol **Duplizieren** wird das Tag  und sein Inhalt gelöscht.
+Mit dem Symbol **Duplizieren** wird das Tag und sein Inhalt dupliziert.
 
 >[!CAUTION]
 >
