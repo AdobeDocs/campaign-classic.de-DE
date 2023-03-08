@@ -9,7 +9,7 @@ exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: c7c6c6a2fe6beb17bfb203e8895661c2f3084cc2
 workflow-type: tm+mt
 source-wordcount: '781'
-ht-degree: 89%
+ht-degree: 99%
 
 ---
 
@@ -41,8 +41,8 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 <td>CentOs</td>
 <td>
 <p>7.x</p>
-<p><strong>Wichtig:</strong> Wenn Sie RHEL verwenden, müssen Sie SELinux deaktivieren oder Ihre Programmierer benutzerdefinierte SELinux-Regeln schreiben lassen, um zu überprüfen, ob ein aktiviertes SELinux keine Probleme mit Campaign-Vorgängen verursacht.</p>
-<p>8.x</br><strong>Wichtig:</strong> CentOS Linux 8 wird am 31. Dezember 2021 das Ende der Lebensdauer (End of Life, EOL) erreichen. Weiterführende Informationen dazu finden Sie auf der Seite <a href="../../rn/using/deprecated-features.md">Eingestellte Funktionen</a>.</p>
+<p><strong>Wichtig:</strong> Wenn Sie RHEL verwenden, müssen Sie SELinux deaktivieren. Andernfalls können Ihre Programmierer auch benutzerdefinierte SELinux-Regeln verfassen, mit denen sichergestellt werden kann, dass ein aktiviertes SELinux keine Probleme mit Campaign-Vorgängen verursacht.</p>
+<p>8.x</br><strong>Wichtig:</strong> CentOS Linux 8 erreicht am 31. Dezember 2021 das Ende des Produktlebenszyklus (End of Life, EOL). Weiterführende Informationen dazu finden Sie auf der Seite <a href="../../rn/using/deprecated-features.md">Eingestellte Funktionen</a>.</p>
 </td>
 </tr>
 <tr>
@@ -58,7 +58,7 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 <td>
 <p>8.x</p>
 <p>7.x</p>
-<p><strong>Wichtig:</strong> Wenn Sie RHEL verwenden, müssen Sie SELinux deaktivieren oder Ihre Programmierer benutzerdefinierte SELinux-Regeln schreiben lassen, um zu überprüfen, ob ein aktiviertes SELinux keine Probleme mit Campaign-Vorgängen verursacht.</p>
+<p><strong>Wichtig:</strong> Wenn Sie RHEL verwenden, müssen Sie SELinux deaktivieren. Andernfalls können Ihre Programmierer auch benutzerdefinierte SELinux-Regeln verfassen, mit denen sichergestellt werden kann, dass ein aktiviertes SELinux keine Probleme mit Campaign-Vorgängen verursacht.</p>
 </td>
 </tr>
 <tr>
@@ -88,7 +88,7 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 <tr>
 <td>Apache</td>
 <td>
-<p>2.4 für RHEL7 - CentOS 7, Debian 8/9, Windows</p>
+<p>2.4 für RHEL 7 – CentOS 7, Debian 8/9, Windows</p>
 </td>
 </tr>
 </tbody>
@@ -104,7 +104,7 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 <p>11</p>
 <p>9</p>
 <p>8</p>
-<p>Campaign unterstützt das Java Development Kit (JDK), das von Oracle und OpenJDK entwickelt wurde.</p>
+<p>Campaign unterstützt das von Oracle und OpenJDK entwickelte Java Development Kit (JDK).</p>
 </td>
 </tr>
 <tr>
@@ -154,7 +154,7 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 <p>2016</p>
 <p>2014</p>
 <p>2012 – SP1 und SP2</p>
-<p><strong>Wichtig</strong>: Microsoft SQL Server wird nicht als primäre Datenbank unterstützt, wenn der Campaign-Server auf Linux läuft. <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/installing-campaign-in-linux-/prerequisites-of-campaign-installation-in-linux.html#database-access-layers">Weitere Informationen</a>.</p>
+<p><strong>Wichtig</strong>: Microsoft SQL Server wird nicht als primäre Datenbank unterstützt, wenn der Campaign-Server auf Linux läuft. <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/installing-campaign-in-linux-/prerequisites-of-campaign-installation-in-linux.html?lang=de#database-access-layers">Weitere Informationen</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -366,9 +366,9 @@ Für die Verwendung der [Campaign-Client-Konsole](../../installation/using/insta
 
 ### Microsoft WebView2 Runtime
 
-Microsoft Edge WebView2 Runtime Die neueste Version ist für die Campaign-Clientkonsole erforderlich.
+Microsoft Edge WebView2 Runtime Die neueste Version ist für die Campaign-Client-Konsole erforderlich.
 
-Laden Sie Microsoft Edge WebView2 von herunter [Microsoft-Entwicklersite](http://www.adobe.com/go/acc-ms-webview2-runtime-download_de).
+Microsoft Edge WebView2 kann von der [Microsoft-Entwickler-Site](http://www.adobe.com/go/acc-ms-webview2-runtime-download_de) heruntergeladen werden
 
 
 ## Mobile SDK{#MobileSDK}
@@ -396,7 +396,7 @@ Sie können Campaign verwenden, um [Push-Benachrichtigungen](../../delivery/usin
 
 ## Browser{#Browsers}
 
-Die folgenden Browser in der jeweils aktuellen Version sind mit Campaign kompatibel für [Webzugriff](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-).
+Die folgenden Browser sind in der jeweils aktuellen Version mit Campaign für den [Web-Zugriff](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-) kompatibel.
 
 * Google Chrome
 * Microsoft Edge
