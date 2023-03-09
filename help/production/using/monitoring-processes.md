@@ -6,9 +6,9 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 1f5d8c7e-6f9b-46cd-a9b4-a3b48afb1794
-source-git-commit: 98380c18b915cfebc980e68f9840f9d8919eaca4
+source-git-commit: f2ec24a122eff94f62bd79e656e771fecd803659
 workflow-type: tm+mt
-source-wordcount: '3779'
+source-wordcount: '3783'
 ht-degree: 2%
 
 ---
@@ -269,7 +269,8 @@ Die **[!UICONTROL SMTP-Sendestatistiken]** können Sie die Serveraktivität steu
 Die Liste der Indikatoren für diesen Bericht ist unten in der Grafik dargestellt.
 
 1. Anzahl gesendeter Nachrichten insgesamt
-1. 
+1. Stellt In-/Out-Nachrichten dar:
+
    * Blaue Linie: Versandbereite Nachrichten, die in den Shaper gelangt sind, d. h. die letzte Phase vor dem Senden von SMTP (entspricht den eingehenden Daten).
 
    * Grüne Zeile: erfolgreich gesendete Nachrichten (entspricht den ausgehenden Daten).
