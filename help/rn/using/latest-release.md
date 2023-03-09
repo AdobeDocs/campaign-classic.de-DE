@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 2654157b02b549d4184ed6a5a93acad47e452713
+source-git-commit: 754e6d2486897958827a15ab8a3d14ec17935891
 workflow-type: tm+mt
-source-wordcount: '2774'
-ht-degree: 100%
+source-wordcount: '2971'
+ht-degree: 94%
 
 ---
 
@@ -19,7 +19,37 @@ ht-degree: 100%
 
 Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der **aktuellen Version Campaign Classic v7** aufgelistet. Jeder neue Build weist einen Status auf, der durch eine bestimmte Farbe dargestellt wird. Sie erfahren mehr über den Build-Status von Campaign Classic v7 auf [dieser Seite](rn-overview.md).
 
-## ![](assets/do-not-localize/green_2.png) Version 7.3.2 – Build 9356 {#release-7-3-2}
+## ![](assets/do-not-localize/green_2.png) Version 7.3.3 – Build 9359 {#release-7-3-3}
+
+>[!CAUTION]
+>
+> Diese Version ist derzeit nur für Benutzer von Managed Cloud Services verfügbar und wird in Kürze für On-Premise- und Hybridbereitstellungen verfügbar sein.
+
+>[!CAUTION]
+>
+>Die Aktualisierung der Client-Konsole ist obligatorisch. Auf dieser [Seite](../../installation/using/installing-the-client-console.md) erfahren Sie, wie Sie Ihre Client-Konsole aktualisieren.
+
+_Montag, 9. März 2023_
+
+**Sicherheitsverbesserung**
+
+* Um die Sicherheit zu optimieren, wurde Tomcat von Version 8.5.81 auf Version 8.5.85 aktualisiert. (NEO-56936)
+
+**Verbesserungen**
+
+* Der Workflow Rechnungsstellung wurde verbessert, um die Leistung zu optimieren. (NEO-47658)
+* Der Tracking-Workflow wurde verbessert, um die Leistung bei hoher Versandgröße zu optimieren. (NEO-45064)
+* Die Tracking-Verwaltung wurde verbessert, um mögliche Probleme mit dynamischen Parametern in URLs zu beheben. Tracking Management v3 verarbeitet jetzt Ajax-Typ-URLs (mit Parametern nach &quot;#&quot;) und verhindert, dass Tools von Drittanbietern Tracking-URLs ändern. Um diese Änderung anzuwenden, müssen Sie sich an die Adobe wenden. (NEO-46535)
+
+<!--To apply this change, the marketing, tracking and mid servers need to be updated to 7.3.3. To enable the new tracking management mode, set the `emailLinksVersion` parameter to '3' in the configuration file of the marketing server. (NEO-46535)-->
+
+**Patches**
+
+* Fehlerkorrektur - Push-Benachrichtigungen für iOS-Testsendungen werden jetzt von der Kontrollinstanz gesendet (Transaktionsnachrichten-Kontext). (NEO-54713)
+* Es wurde ein Problem behoben, das das Scrollen im **Bearbeiten** Registerkarte des Digital Content Editors (DCE). (NEO-54474)
+* Fehlerkorrektur - Jetzt werden bei zwei Anreicherungsaktivitäten bei der Verknüpfung dieselbe Namenskennung verwendet, was dazu führte, dass die zweite Anreicherungsaktivität die Links der ersten verwendet. (NEO-48851)
+
+## ![](assets/do-not-localize/orange_2.png) Version 7.3.2 – Build 9356 {#release-7-3-2}
 
 _21. November 2022_
 
