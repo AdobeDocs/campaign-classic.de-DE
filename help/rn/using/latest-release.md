@@ -9,7 +9,7 @@ exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 02ab5f4520179fcce8eedbe3dcc7b08cb9cfe0d2
 workflow-type: tm+mt
 source-wordcount: '2991'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
 
@@ -31,7 +31,7 @@ Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der
 >
 >Diese Version ist nur für Benutzer von Managed Cloud Services verfügbar.
 
-_Montag, 9. März 2023_
+_9. März 2023_
 
 **Sicherheitsverbesserung**
 
@@ -48,7 +48,7 @@ _Montag, 9. März 2023_
 **Patches**
 
 * Fehlerkorrektur - Push-Benachrichtigungen für iOS-Testsendungen werden jetzt von der Kontrollinstanz gesendet (Transaktionsnachrichten-Kontext). (NEO-54713)
-* Es wurde ein Problem behoben, das das Scrollen im **Bearbeiten** Registerkarte des Digital Content Editors (DCE). (NEO-54474)
+* Das Scrollen in der Registerkarte **Bearbeiten** des Digital Content Editor (DCE) ist jetzt problemlos möglich. (NEO-54474)
 * Fehlerkorrektur - Jetzt werden bei zwei Anreicherungsaktivitäten bei der Verknüpfung dieselbe Namenskennung verwendet, was dazu führte, dass die zweite Anreicherungsaktivität die Links der ersten verwendet. (NEO-48851)
 
 ## ![](assets/do-not-localize/green.png) Version 7.3.2 – Build 9356 {#release-7-3-2}

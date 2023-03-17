@@ -4,10 +4,10 @@ title: Konfigurieren der Mobile App für iOS in Adobe Campaign
 description: Erfahren Sie, wie Sie Ihre Mobile App für iOS einrichten
 feature: Push
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: fd19a2f11773e9e4c841f685a3491a763493e572
 workflow-type: tm+mt
-source-wordcount: '739'
-ht-degree: 100%
+source-wordcount: '738'
+ht-degree: 97%
 
 ---
 
@@ -50,7 +50,7 @@ Ihr iOS-Connector ist jetzt konfiguriert. Sie können mit dem Einrichten Ihres D
 
 >[!CAUTION]
 >
->Bevor Sie die SDK integrieren, ist sicherzustellen, dass die Anwendungen für den Versand von Push-Benachrichtigungen konfiguriert wurden.
+>Die Anwendung muss für Push-Aktionen konfiguriert worden sein, BEVOR sie mit dem Adobe SDK integriert werden kann.
 >
 >Sollte dies nicht der Fall sein, besuchen Sie [diese Seite](https://developer.apple.com/documentation/usernotifications).
 
