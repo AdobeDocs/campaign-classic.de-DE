@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 02ab5f4520179fcce8eedbe3dcc7b08cb9cfe0d2
+source-git-commit: 143fe21447f91120e63df4409597472849bb6d47
 workflow-type: tm+mt
-source-wordcount: '2991'
-ht-degree: 94%
+source-wordcount: '2949'
+ht-degree: 95%
 
 ---
 
@@ -23,15 +23,9 @@ Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der
 
 >[!CAUTION]
 >
-> Diese Version ist derzeit nur für Benutzer von Managed Cloud Services verfügbar und wird in Kürze für On-Premise- und Hybridbereitstellungen verfügbar sein.
->
 >Die Aktualisierung der Client-Konsole ist obligatorisch. Auf dieser [Seite](../../installation/using/installing-the-client-console.md) erfahren Sie, wie Sie Ihre Client-Konsole aktualisieren.
 
->[!NOTE]
->
->Diese Version ist nur für Benutzer von Managed Cloud Services verfügbar.
-
-_9. März 2023_
+_20. März 2023_
 
 **Sicherheitsverbesserung**
 
@@ -51,17 +45,13 @@ _9. März 2023_
 * Das Scrollen in der Registerkarte **Bearbeiten** des Digital Content Editor (DCE) ist jetzt problemlos möglich. (NEO-54474)
 * Fehlerkorrektur - Jetzt werden bei zwei Anreicherungsaktivitäten bei der Verknüpfung dieselbe Namenskennung verwendet, was dazu führte, dass die zweite Anreicherungsaktivität die Links der ersten verwendet. (NEO-48851)
 
-## ![](assets/do-not-localize/green.png) Version 7.3.2 – Build 9356 {#release-7-3-2}
+## ![](assets/do-not-localize/orange_2.png) Version 7.3.2 – Build 9356 {#release-7-3-2}
 
 _21. November 2022_
 
 >[!CAUTION]
 >
 >Die Aktualisierung der Client-Konsole ist obligatorisch. Auf dieser [Seite](../../installation/using/installing-the-client-console.md) erfahren Sie, wie Sie Ihre Client-Konsole aktualisieren.
-
->[!NOTE]
->
->Diese Version ist nur für On-Premise- und Hybridbereitstellungen allgemein verfügbar.
 
 **Aktualisierungen zur Kompatibilität**
 
