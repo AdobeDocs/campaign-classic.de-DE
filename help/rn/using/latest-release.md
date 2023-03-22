@@ -9,7 +9,7 @@ exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 143fe21447f91120e63df4409597472849bb6d47
 workflow-type: tm+mt
 source-wordcount: '2949'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -29,21 +29,21 @@ _20. März 2023_
 
 **Sicherheitsverbesserung**
 
-* Um die Sicherheit zu optimieren, wurde Tomcat von Version 8.5.81 auf Version 8.5.85 aktualisiert. (NEO-56936)
+* Um die Sicherheit zu verbessern, wurde Tomcat von Version 8.5.81 auf 8.5.85 aktualisiert. (NEO-56936)
 
 **Verbesserungen**
 
-* Der Workflow Rechnungsstellung wurde verbessert, um die Leistung zu optimieren. (NEO-47658)
+* Der Abrechnungs-Workflow wurde verbessert, um die Leistung zu optimieren. (NEO-47658)
 * Der Tracking-Workflow wurde verbessert, um die Leistung bei hoher Versandgröße zu optimieren. (NEO-45064)
-* Die Tracking-Verwaltung wurde verbessert, um mögliche Probleme mit dynamischen Parametern in URLs zu beheben. Tracking Management v3 verarbeitet jetzt Ajax-Typ-URLs (mit Parametern nach &quot;#&quot;) und verhindert, dass Tools von Drittanbietern Tracking-URLs ändern. Um diese Änderung anzuwenden, müssen Sie sich an die Adobe wenden. (NEO-46535)
+* Die Tracking-Verwaltung wurde verbessert, um mögliche Probleme mit dynamischen Parametern in URLs zu beheben. Die Tracking-Verwaltung V3 verarbeitet jetzt URLs vom Typ AJAX (mit Parametern nach „#“) und verhindert, dass Drittanbieterprogramme Tracking-URLs ändern. Um diese Änderung anzuwenden, müssen Sie sich an Adobe wenden. (NEO-46535)
 
 <!--To apply this change, the marketing, tracking and mid servers need to be updated to 7.3.3. To enable the new tracking management mode, set the `emailLinksVersion` parameter to '3' in the configuration file of the marketing server. (NEO-46535)-->
 
 **Patches**
 
-* Fehlerkorrektur - Push-Benachrichtigungen für iOS-Testsendungen werden jetzt von der Kontrollinstanz gesendet (Transaktionsnachrichten-Kontext). (NEO-54713)
+* Der Versand von Push-Benachrichtigungen für iOS-Testsendungen von der Kontrollinstanz (Transaktionsnachrichten-Kontext) ist jetzt problemlos möglich. (NEO-54713)
 * Das Scrollen in der Registerkarte **Bearbeiten** des Digital Content Editor (DCE) ist jetzt problemlos möglich. (NEO-54474)
-* Fehlerkorrektur - Jetzt werden bei zwei Anreicherungsaktivitäten bei der Verknüpfung dieselbe Namenskennung verwendet, was dazu führte, dass die zweite Anreicherungsaktivität die Links der ersten verwendet. (NEO-48851)
+* Jetzt können zwei Anreicherungsaktivitäten bei der Verknüpfung dieselbe Namenskennung verwenden, ohne dass die zweite Anreicherungsaktivität die Links der ersten verwendet. (NEO-48851)
 
 ## ![](assets/do-not-localize/orange_2.png) Version 7.3.2 – Build 9356 {#release-7-3-2}
 
