@@ -4,10 +4,10 @@ title: Erstellen von Testadressen
 description: Erfahren Sie, wie Sie Testadressen erstellen und verwenden.
 feature: Seed Address
 exl-id: f7dc97f0-3423-4b6f-88e2-08180f9adf8a
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 0065a25250d73c71e7569768a38b5836cccab992
 workflow-type: tm+mt
 source-wordcount: '440'
-ht-degree: 100%
+ht-degree: 88%
 
 ---
 
@@ -32,11 +32,11 @@ Gehen Sie zur Erstellung von Testadressen wie folgt vor:
    >
    >Für die Bezeichnung der Adresse werden automatisch die von Ihnen definierten Vor- und Nachnamen verwendet.
    >
-   >Es ist bei Testadressen nicht erforderlich, alle Felder in allen Tabs auszufüllen. Fehlende Personalisierungselemente werden zum Zeitpunkt des Versands mit zufälligen Werten ergänzt.
+   >Bei der Erstellung einer Testadresse müssen nicht alle Felder eines jeden Tabs ausgefüllt werden. Fehlende Personalisierungselemente werden zufällig bei der Versandanalyse eingegeben.
 
    ![](assets/s_ncs_user_seedlist_new_address.png)
 
-1. Geben Sie im **[!UICONTROL Adressfelder]**-Tab die Werte an, die bei der Analysephase in die Versandlogs (Tabelle **[!UICONTROL nms:broadLog]**) geschrieben werden sollen.
+1. Im **[!UICONTROL Adressfelder]** Geben Sie die Werte ein, die während der Analysephase in die Versandlogs (im **[!UICONTROL nms:broadLog]** Tabelle).
 
 1. Geben Sie im Tab **[!UICONTROL Zusätzliche Daten]** die Personalisierungsdaten an, die in mit Data Management-Workflows erstellten Sendungen verwendet werden und die durch einen spezifischen Wert ersetzt werden sollen.
 
