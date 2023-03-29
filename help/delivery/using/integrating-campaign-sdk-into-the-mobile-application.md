@@ -4,10 +4,10 @@ title: Integrieren des Campaign SDK
 description: Erfahren Sie, wie Sie das Campaign SDK in Ihre Mobile App integrieren können.
 feature: Mobile SDK Integration, Push
 exl-id: a5f6b82d-5561-4e56-b2ed-7fd6fd8c2b55
-source-git-commit: fd19a2f11773e9e4c841f685a3491a763493e572
+source-git-commit: 1ead0b1afc8c924cb4f8d36c608cd570e5fe7a44
 workflow-type: tm+mt
-source-wordcount: '1022'
-ht-degree: 94%
+source-wordcount: '997'
+ht-degree: 92%
 
 ---
 
@@ -15,19 +15,17 @@ ht-degree: 94%
 
 ![](../../assets/v7-only.svg)
 
-
->[!NOTE]
+>[!CAUTION]
 >
->Adobe empfiehlt die Verwendung des Adobe Experience Platform Mobile SDK durch Konfiguration der Adobe Campaign-Erweiterung in der Datenerfassungs-Benutzeroberfläche. Mit dem Adobe Experience Platform Mobile SDK können Sie die Experience Cloud-Lösungen und -Dienste von Adobe in Ihren mobilen Apps nutzen. Die SDK-Konfiguration wird über die Datenerfassungs-Benutzeroberfläche verwaltet, um eine flexible Konfiguration und erweiterbare, regelbasierte Integrationen zu ermöglichen. [Weitere Informationen finden Sie in der Dokumentation zu Adobe Developer .](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
-
-Die Campaign SDKs für iOS und Android sind im Mobile App Channel-Modul enthalten. Ziel eines SDK ist es, die Integration einer Mobile App in die Adobe Campaign-Plattform zu erleichtern.
+>Adobe empfiehlt dringend, das Adobe Experience Platform Mobile SDK zu verwenden, indem die Adobe Campaign-Erweiterung in der Datenerfassungs-Benutzeroberfläche konfiguriert wird. Mit dem Adobe Experience Platform Mobile SDK können Sie die Experience Cloud-Lösungen und -Dienste von Adobe in Ihren mobilen Apps nutzen. Die SDK-Konfiguration wird über die Datenerfassungs-Benutzeroberfläche verwaltet, um eine flexible Konfiguration und erweiterbare, regelbasierte Integrationen zu ermöglichen. [Weitere Informationen finden Sie in der Dokumentation zu Adobe Developer .](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
 
 Um das Campaign SDK (früher bekannt als Neolane SDK) zu erhalten, sollte die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"} kontaktiert werden.
 
 Weiterführende Informationen zu den unterstützten Android- und iOS-Versionen finden Sie in der [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md#MobileSDK).
 
+Unten finden Sie die Integrationsschritte für das Campaign SDK.
 
-## Campaign SDK laden {#loading-campaign-sdk}
++++**Campaign SDK laden**
 
 * **Android**: erfordert die Verknüpfung der Datei **neolane_sdk-release.aar** mit dem Projekt.
 
@@ -55,7 +53,9 @@ Weiterführende Informationen zu den unterstützten Android- und iOS-Versionen f
    >
    >Für die Version 1.0.25 des SDK sind die vier Architekturen in der Datei **Neolane_SDK.h** verfügbar.
 
-## Integrationsparameter deklarieren {#declaring-integration-settings}
++++
+
++++**Integrationsparameter deklarieren**
 
 Zur Integration des Campaign SDK in die Mobile App benötigt der Entwickler folgende Informationen vom funktionalen Administrator:
 
@@ -85,7 +85,9 @@ Zur Integration des Campaign SDK in die Mobile App benötigt der Entwickler folg
    [nl setIntegrationKey:strIntegrationKey];
    ```
 
-## Registrierungsfunktion {#registration-function}
++++
+
++++**Registrierungsfunktion**
 
 Die Registrierungsfunktion ermöglicht
 
@@ -141,7 +143,9 @@ Die Registrierungsfunktion ermöglicht
    }
    ```
 
-## Tracking-Funktion {#tracking-function}
++++
+
++++**Tracking-Funktion**
 
 * **Für Android**:
 
@@ -293,7 +297,9 @@ Die Registrierungsfunktion ermöglicht
    >
    >Ab Version 7.0 ruft das Betriebssystem, sobald die Funktion **application:didReceiveRemoteNotification:fetchCompletionHandler** implementiert ist, nur diese Funktion auf. Die Funktion **application:didReceiveRemoteNotification** wird daher nicht aufgerufen.
 
-## Tracking von stillen Benachrichtigungen {#silent-notification-tracking}
++++
+
++++**Tracking von stillen Benachrichtigungen**
 
 Unter iOS können Sie stille Benachrichtigungen senden. Das sind Benachrichtigungen oder Daten, die direkt an eine mobile App gesendet werden, ohne Hinweise zu erzeugen. Adobe Campaign ermöglicht das Tracken dieser Benachrichtigungen.
 
@@ -333,7 +339,9 @@ Um stille Benachrichtigungen zu tracken, gehen Sie analog zum folgenden Beispiel
 }
 ```
 
-### Delegation von RegisterDeviceStatus {#registerdevicestatus-delegate}
++++
+
++++**Delegation von RegisterDeviceStatus**
 
 >[!NOTE]
 >
@@ -529,7 +537,9 @@ Um die **registerDeviceStatus**-Delegation zu implementieren, gehen Sie folgende
    @end
    ```
 
-## Variablen {#variables}
++++
+
++++**Variablen**
 
 Mit den Variablen können Sie das Verhalten von Mobile Apps nach dem Erhalt einer Benachrichtigung festlegen. Diese Variablen müssen im Code der Mobile App und in der Adobe Campaign-Konsole auf dem Tab **[!UICONTROL Variablen]** im dedizierten Mobile-App-Dienst definiert werden (siehe [Konfiguration einer Mobile App in Adobe Campaign](configuring-the-mobile-application.md)). Im Folgenden finden Sie ein Beispiel für einen Code, mit dem eine Mobile App alle hinzugefügten Variablen in einer Benachrichtigung erfassen kann. In unserem Beispiel verwenden wir die Variable „VAR“.
 
@@ -577,7 +587,9 @@ Mit den Variablen können Sie das Verhalten von Mobile Apps nach dem Erhalt eine
 >
 >Adobe empfiehlt, kurze Namen für die Variablen zu verwenden, da die Größe der Benachrichtigungen für iOS und Android auf 4 Kilobyte begrenzt ist.
 
-## Erweiterung für Benachrichtigungsdienst {#notification-service-extension}
++++
+
++++**Erweiterung für Benachrichtigungsdienst**
 
 **Für iOS**
 
@@ -611,7 +623,9 @@ Die Medien müssen auf der Ebene der Benachrichtigungsdiensterweiterung herunter
     // Perform the download to local storage
 ```
 
-## Erweiterung für Benachrichtigungsinhalt {#notification-content-extension}
++++
+
++++**Erweiterung für Benachrichtigungsinhalt**
 
 **Für iOS**
 
@@ -662,3 +676,5 @@ Gehen Sie hier folgendermaßen vor:
    }
    @end
    ```
+
++++
