@@ -4,10 +4,10 @@ title: Technote - Aktivierung von Microsoft Edge Chromium in Ihrer Campaign-Umge
 description: Campaign - Edge Chromium
 hide: true
 hidefromtoc: true
-source-git-commit: d9f57d4e5b6f880907040344ece40546456a2321
+source-git-commit: 17ef8f92ab5dbecadf20140c3faff735d92c8223
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 16%
+source-wordcount: '246'
+ht-degree: 15%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 16%
 
 ## Was hat sich geändert?
 
-Nach dem Ende der Nutzungsdauer von Microsoft Internet Explorer 11 verwendet die HTML-Rendering-Engine für Adobe Services (Anmeldeseite) in der Clientkonsole jetzt Microsoft Edge Chromium und startet Campaign Classic v7.3.
+Nach dem Ende der Nutzungsdauer von Microsoft Internet Explorer 11 verwendet die HTML-Rendering-Engine für Dashboards in der Clientkonsole Edge Chromium und startet Campaign Classic v7.3.
 
 Zusätzlich zur Installation der Microsoft Edge Webview 2-Laufzeit, die jetzt [für jede Client Console-Installation erforderlich](../../installation/using/installing-the-client-console.md#webview), muss Microsoft Edge Chromium in Ihren Instanzen aktiviert sein.
 
@@ -29,7 +29,7 @@ Wenn Ihre Umgebung auf Campaign Classic v7.3 (oder höher) aktualisiert wurde, s
 
 ## Wie wird die Aktualisierung durchgeführt?
 
-* Als **gehostet** -Kunde, Adobe hat Microsoft Edge Chromium bereits auf Ihren Instanzen aktiviert.
+* Als **gehostet** -Kunde, Adobe hat Microsoft Edge Chromium bereits auf Ihren Instanzen aktiviert. Es sind keine weiteren Maßnahmen erforderlich.
 
 * Als **On-Premise/Hybrid** -Kunde, müssen Sie Microsoft Edge Chromium in Ihren Instanzen aktivieren.
 
@@ -39,19 +39,19 @@ Wenn Ihre Umgebung auf Campaign Classic v7.3 (oder höher) aktualisiert wurde, s
 
    1. Bearbeiten Sie die Konfigurationsdatei des Campaign-Servers (`serverConf.xml`)
    1. Im `<web>` Modul, Satz `webView2Mode = "1"`
-   1. Serverkonfiguration neu laden
+   1. Führen Sie den folgenden Befehl aus, um die Serverkonfiguration neu zu laden:
 
       ```
       nlserver config -reload
       ```
 
-   1. Webserver neu starten
+   1. Führen Sie den folgenden Befehl aus, um den Webserver neu zu starten:
 
       ```
       nlserver restart web
       ```
 
-   1. Wenn Ihre Umgebung auf Apache ausgeführt wird, starten Sie Apache neu
+   1. Wenn Ihre Umgebung Apache als Webserver verwendet, führen Sie den folgenden Befehl aus, um Apache neu zu starten:
 
       ```
       /etc/init.d/apache2 restart
