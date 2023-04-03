@@ -3,10 +3,10 @@ product: campaign
 title: 'Technote: Aktualisieren Ihrer Umgebung zur Verbindung von Adobe Campaign mit IMS'
 description: Campaign – IMS-Aktualisierungen
 exl-id: ecb5a258-a150-46a3-8b83-2b2c06d873ee
-source-git-commit: 70240d5f62fd3d7b755389b5ad8c4b499c94657d
+source-git-commit: bdccc4ee7cbb8c765d488879f99677b2302d32e7
 workflow-type: tm+mt
-source-wordcount: '587'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 ![](../../assets/v7-only.svg)
 
-Am 30. Juni 2021 wurden Änderungen an den Anmeldefunktionen des [Adobe Identity Management System](https://helpx.adobe.com/de/enterprise/using/identity.html) (IMS) vorgenommen, die Ihre Möglichkeit, Adobe Campaign weiterhin zu nutzen, beeinträchtigen könnten. Erfahren Sie, wie Sie sicherstellen, dass Sie Adobe Campaign Classic v7 ohne Unterbrechung weiterhin verwenden können.
+Am 30. Juni 2021 wurden Änderungen an [Adobe Identity Management System](https://helpx.adobe.com/de/enterprise/using/identity.html) (IMS) Anmeldefunktionen, die sich auf Ihre Fähigkeit auswirken könnten, Adobe Campaign weiterhin zu verwenden. Erfahren Sie, wie Sie sicherstellen, dass Sie Adobe Campaign Classic v7 ohne Unterbrechung weiterhin verwenden können.
 
 ## Was hat sich geändert?
 
