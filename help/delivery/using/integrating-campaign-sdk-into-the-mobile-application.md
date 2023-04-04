@@ -5,9 +5,9 @@ description: Erfahren Sie, wie Sie das Campaign SDK in Ihre Mobile App integrier
 feature: Mobile SDK Integration, Push
 exl-id: a5f6b82d-5561-4e56-b2ed-7fd6fd8c2b55
 source-git-commit: 1ead0b1afc8c924cb4f8d36c608cd570e5fe7a44
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '997'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -17,15 +17,15 @@ ht-degree: 92%
 
 >[!CAUTION]
 >
->Adobe empfiehlt dringend, das Adobe Experience Platform Mobile SDK zu verwenden, indem die Adobe Campaign-Erweiterung in der Datenerfassungs-Benutzeroberfläche konfiguriert wird. Mit dem Adobe Experience Platform Mobile SDK können Sie die Experience Cloud-Lösungen und -Dienste von Adobe in Ihren mobilen Apps nutzen. Die SDK-Konfiguration wird über die Datenerfassungs-Benutzeroberfläche verwaltet, um eine flexible Konfiguration und erweiterbare, regelbasierte Integrationen zu ermöglichen. [Weitere Informationen finden Sie in der Dokumentation zu Adobe Developer .](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
+>Adobe empfiehlt dringend, das Adobe Experience Platform Mobile SDK zu verwenden, indem die Adobe Campaign-Erweiterung in der Benutzeroberfläche „Datenerfassung“ konfiguriert wird. Mit dem Adobe Experience Platform Mobile SDK können Sie die Experience Cloud-Lösungen und -Dienste von Adobe in Ihren mobilen Apps nutzen. Die Konfiguration des SDK wird über die Benutzeroberfläche „Datenerfassung“ verwaltet, um eine flexible Konfiguration und erweiterbare, regelbasierte Integrationen zu ermöglichen. [Weitere Informationen finden Sie in der Dokumentation zu Adobe Developer](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
 
-Um das Campaign SDK (früher bekannt als Neolane SDK) zu erhalten, sollte die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"} kontaktiert werden.
+Um Campaign SDK (früher bekannt als Neolane SDK) zu erhalten, wenden Sie sich an die [Adobe Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}.
 
-Weiterführende Informationen zu den unterstützten Android- und iOS-Versionen finden Sie in der [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md#MobileSDK).
+Weitere Informationen zu den verschiedenen unterstützten Android- und iOS-Versionen finden Sie in der [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md#MobileSDK).
 
-Unten finden Sie die Integrationsschritte für das Campaign SDK.
+Im Folgenden finden Sie die Integrationsschritte für das Campaign SDK.
 
-+++**Campaign SDK laden**
++++**Laden von Campaign SDK**
 
 * **Android**: erfordert die Verknüpfung der Datei **neolane_sdk-release.aar** mit dem Projekt.
 
@@ -55,7 +55,7 @@ Unten finden Sie die Integrationsschritte für das Campaign SDK.
 
 +++
 
-+++**Integrationsparameter deklarieren**
++++**Deklarieren der Integrationseinstellungen**
 
 Zur Integration des Campaign SDK in die Mobile App benötigt der Entwickler folgende Informationen vom funktionalen Administrator:
 
@@ -589,7 +589,7 @@ Mit den Variablen können Sie das Verhalten von Mobile Apps nach dem Erhalt eine
 
 +++
 
-+++**Erweiterung für Benachrichtigungsdienst**
++++**Erweiterung für den Benachrichtigungsdienst**
 
 **Für iOS**
 
