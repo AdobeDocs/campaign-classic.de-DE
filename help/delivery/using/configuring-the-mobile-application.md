@@ -5,9 +5,9 @@ description: Erfahren Sie, wie Sie Ihre Mobile App für iOS einrichten
 feature: Push
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
 source-git-commit: fd19a2f11773e9e4c841f685a3491a763493e572
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '738'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -50,9 +50,9 @@ Ihr iOS-Connector ist jetzt konfiguriert. Sie können mit dem Einrichten Ihres D
 
 >[!CAUTION]
 >
->Die Anwendung muss für Push-Aktionen konfiguriert worden sein, BEVOR sie mit dem Adobe SDK integriert werden kann.
+>Die Anwendung muss für Push-Aktionen konfiguriert worden sein, BEVOR eine Integration in das Adobe SDK erfolgt.
 >
->Sollte dies nicht der Fall sein, besuchen Sie [diese Seite](https://developer.apple.com/documentation/usernotifications).
+>Sollte dies nicht der Fall sein, besuchen Sie bitte [diese Seite](https://developer.apple.com/documentation/usernotifications).
 
 1. Klicken Sie im Knoten **[!UICONTROL Profile und Zielgruppen > Dienste und Abonnements]** auf die Schaltfläche **[!UICONTROL Neu]**.
 
