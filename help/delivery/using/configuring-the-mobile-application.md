@@ -36,7 +36,7 @@ Bei iOS sendet der iOS-HTTP/2-Connector Benachrichtigungen an HTTP/2-APNS.
 
 Gehen Sie wie folgt vor, um diesen Connector zu konfigurieren:
 
-1. Navigieren Sie zu **[!UICONTROL Administration > Plattform > Externe Konten]**.
+1. Gehen Sie zu **[!UICONTROL Administration > Plattform > Externe Konten]**.
 1. Wählen Sie das externe Konto **[!UICONTROL iOS-Routing]** aus.
 1. Füllen Sie im Tab **[!UICONTROL Connector]** das Feld **[!UICONTROL Zugriffs-URL auf den Connector]** mit der folgenden URL aus: ```http://localhost:8080/nms/jsp/iosHTTP2.jsp```
 
