@@ -4,9 +4,9 @@ title: 'Technote: Aktualisieren Ihrer Umgebung zur Verbindung von Adobe Campaign
 description: Campaign – IMS-Aktualisierungen
 exl-id: ecb5a258-a150-46a3-8b83-2b2c06d873ee
 source-git-commit: bdccc4ee7cbb8c765d488879f99677b2302d32e7
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '587'
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ![](../../assets/v7-only.svg)
 
-Am 30. Juni 2021 wurden Änderungen an [Adobe Identity Management System](https://helpx.adobe.com/de/enterprise/using/identity.html) (IMS) Anmeldefunktionen, die sich auf Ihre Fähigkeit auswirken könnten, Adobe Campaign weiterhin zu verwenden. Erfahren Sie, wie Sie sicherstellen, dass Sie Adobe Campaign Classic v7 ohne Unterbrechung weiterhin verwenden können.
+Am 30. Juni 2021 wurden Änderungen an den Anmeldefunktionen des [Adobe Identity Management System](https://helpx.adobe.com/de/enterprise/using/identity.html) (IMS) vorgenommen, die Ihre Möglichkeit, Adobe Campaign weiterhin zu nutzen, beeinträchtigen könnten. Erfahren Sie, wie Sie sicherstellen, dass Sie Adobe Campaign Classic v7 ohne Unterbrechung weiterhin verwenden können.
 
 ## Was hat sich geändert?
 
@@ -90,6 +90,6 @@ Wenn Sie Ihre Internet Explorer-Version nicht aktualisiert haben, wird die folge
 * [Upgrade Ihrer Umgebung](../../production/using/build-upgrade.md)
 * [Häufig gestellte Fragen zum Build-Upgrade](../../platform/using/faq-build-upgrade.md)
 * [Neue Client-Konsole für Benutzer verfügbar machen](../../installation/using/client-console-availability-for-windows.md)
-* [Campaign-Client-Konsole installieren](../../installation/using/installing-the-client-console.md)
+* [Installieren der Campaign-Client-Konsole](../../installation/using/installing-the-client-console.md)
 * [Zugriff auf Adobe Software-Verteilung](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de)
 * [Campaign Classic-Build herunterladen](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html)
