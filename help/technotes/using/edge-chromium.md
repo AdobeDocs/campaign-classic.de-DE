@@ -1,25 +1,25 @@
 ---
 product: campaign
-title: Technote - Aktivierung von Microsoft Edge Chromium in Ihrer Campaign-Umgebung
-description: Campaign - Edge Chromium
+title: Technote – Aktivieren von Microsoft Edge Chromium in Ihrer Campaign-Umgebung
+description: Campaign – Edge Chromium
 source-git-commit: a4a5e014d8055cf29bdbf7debb72eb20388c9b19
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '246'
-ht-degree: 15%
+ht-degree: 100%
 
 ---
 
 
-# Aktivieren von Microsoft Edge Chromium in Ihrer Umgebung {#edge-conf}
+# Wie Sie Microsoft Edge Chromium in Ihrer Umgebung aktivieren {#edge-conf}
 
 ![](../../assets/v7-only.svg)
 
 
 ## Was hat sich geändert?
 
-Nach dem Ende der Nutzungsdauer von Microsoft Internet Explorer 11 verwendet die HTML-Rendering-Engine für Dashboards in der Clientkonsole Edge Chromium und startet Campaign Classic v7.3.
+Nach dem Auslaufen von Microsoft Internet Explorer 11 verwendet die HTML-Render-Engine für Dashboards in der Client-Konsole nun Edge Chromium, beginnend mit Campaign Classic v7.3.
 
-Zusätzlich zur Installation der Microsoft Edge Webview 2-Laufzeit, die jetzt [für jede Client Console-Installation erforderlich](../../installation/using/installing-the-client-console.md#webview), muss Microsoft Edge Chromium in Ihren Instanzen aktiviert sein.
+Zusätzlich zur Installation der Microsoft Edge Webview 2-Laufzeit, die jetzt [für jede Client-Konsolen-Installation erforderlich ist](../../installation/using/installing-the-client-console.md#webview), muss Microsoft Edge Chromium in Ihren Instanzen aktiviert sein.
 
 ## Sind Sie betroffen?
 
@@ -27,17 +27,17 @@ Wenn Ihre Umgebung auf Campaign Classic v7.3 (oder höher) aktualisiert wurde, s
 
 ## Wie wird die Aktualisierung durchgeführt?
 
-* Als **gehostet** -Kunde, Adobe hat Microsoft Edge Chromium bereits auf Ihren Instanzen aktiviert. Es sind keine weiteren Maßnahmen erforderlich.
+* Wenn Sie als Kundin oder Kunde **gehostet** werden, hat Adobe in Ihren Instanzen bereits Microsoft Edge Chromium aktiviert. Es sind keine weiteren Maßnahmen erforderlich.
 
-* Als **On-Premise/Hybrid** -Kunde, müssen Sie Microsoft Edge Chromium in Ihren Instanzen aktivieren.
+* Als **On-Premise/Hybrid**-Kundin oder -Kunde müssen Sie Microsoft Edge Chromium in Ihren Instanzen aktivieren.
 
-   Bei der Aktualisierung auf Campaign Classic v7.3 (und höher) wird eine neue `webView2Mode` Attribut ist in der Konfigurationsdatei des Campaign-Servers verfügbar `serverConf.xml`. Dieses Attribut muss aktiviert sein.
+   Bei der Aktualisierung auf Campaign Classic v7.3 (und höher) ist ein neues `webView2Mode`-Attribut in der Konfigurationsdatei `serverConf.xml` des Campaign-Servers verfügbar. Dieses Attribut muss aktiviert sein.
 
-   Gehen Sie dazu wie folgt auf alle Ihre Umgebungen (MKT, MID, RT) vor:
+   Gehen Sie dazu für alle Ihre Umgebungen (MKT, MID, RT) wie folgt vor:
 
    1. Bearbeiten Sie die Konfigurationsdatei des Campaign-Servers (`serverConf.xml`)
-   1. Im `<web>` Modul, Satz `webView2Mode = "1"`
-   1. Führen Sie den folgenden Befehl aus, um die Serverkonfiguration neu zu laden:
+   1. Legen Sie im `<web>`-Modul `webView2Mode = "1"` fest
+   1. Führen Sie den folgenden Befehl aus, um die Server-Konfiguration neu zu laden:
 
       ```
       nlserver config -reload
@@ -64,5 +64,5 @@ Wenn Ihre Umgebung auf Campaign Classic v7.3 (oder höher) aktualisiert wurde, s
 
 * [Upgrade Ihrer Umgebung](../../production/using/build-upgrade.md)
 * [Häufig gestellte Fragen zum Build-Upgrade](../../platform/using/faq-build-upgrade.md)
-* [Campaign-Client-Konsole installieren](../../installation/using/installing-the-client-console.md)
+* [Installieren der Campaign-Client-Konsole](../../installation/using/installing-the-client-console.md)
 
