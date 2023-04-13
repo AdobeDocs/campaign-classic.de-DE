@@ -7,9 +7,9 @@ user-guide-description: Mit Adobe Campaign können Sie umfangreiche Kundendaten 
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: bdccc4ee7cbb8c765d488879f99677b2302d32e7
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '2536'
+ht-degree: 100%
 
 ---
 
@@ -823,7 +823,7 @@ ht-degree: 0%
    + [Empfehlungen zur Hardware-Dimensionierung](technotes/using/hardware-sizing.md)
    + Aktualisierungen und Kompatibilität{#technote-migration}
       + [Technotes](technotes/using/technote.md)
-      + [Microsoft Edge Chrome aktivieren](technotes/using/edge-chromium.md)
+      + [Aktivieren von Microsoft Edge Chromium](technotes/using/edge-chromium.md)
       + [Neuer Zustellbarkeits-Server](technotes/using/deliverability-server.md)
       + [Apache-Sicherheits-Upgrade](technotes/using/acc-apache-upgrade.md)
       + [System-Upgrades für 2023](technotes/using/tech-stack-upgrade.md)
