@@ -2,13 +2,13 @@
 product: campaign
 title: Technote – Aktivieren von Microsoft Edge Chromium in Ihrer Campaign-Umgebung
 description: Campaign – Edge Chromium
-source-git-commit: a4a5e014d8055cf29bdbf7debb72eb20388c9b19
+exl-id: 22f4cbaf-ca37-47b9-b7dd-1ee73d5b348d
+source-git-commit: 095919608e08a0bf8ad1487fa5ec0a1ddb443c7b
 workflow-type: ht
-source-wordcount: '246'
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
-
 
 # Wie Sie Microsoft Edge Chromium in Ihrer Umgebung aktivieren {#edge-conf}
 
@@ -65,4 +65,3 @@ Wenn Ihre Umgebung auf Campaign Classic v7.3 (oder höher) aktualisiert wurde, s
 * [Upgrade Ihrer Umgebung](../../production/using/build-upgrade.md)
 * [Häufig gestellte Fragen zum Build-Upgrade](../../platform/using/faq-build-upgrade.md)
 * [Installieren der Campaign-Client-Konsole](../../installation/using/installing-the-client-console.md)
-
