@@ -245,7 +245,7 @@ Durch diese Indexänderungen kann es vorkommen, dass die Durchführung des Postu
 
 ### Version 18.6.2 – Build 8949{#release-18-6-3-build-8949}
 
-22. August 2018
+_22. August 2018_
 
 >[!CAUTION]
 >
