@@ -54,7 +54,7 @@ _15. April 2019_
 
 ### Version 18.10.3 – Build 8981{#release-18-10-3-build-8981}
 
-29. Januar 2019
+_29. Januar 2019_
 
 >[!CAUTION]
 >
@@ -78,7 +78,7 @@ _15. April 2019_
 
 ### Version 18.10.2 – Build 8978{#release-18-10-2-build-8978}
 
-6. Dezember 2018
+_6. Dezember 2018_
 
 >[!CAUTION]
 >
@@ -100,7 +100,7 @@ _15. April 2019_
 
 ### Version 18.10.1 – Build 8977{#release-18-10-build-8977}
 
-5. November 2018
+_5. November 2018_
 
 >[!CAUTION]
 >
