@@ -56,9 +56,9 @@ Bestimmen Sie nun im Abfrage-Editor die Filterbedingungen. Im unten stehenden Be
 
 ## Anpassen der Berechnungsfrequenz {#adjusting-calculation-frequency}
 
-Schlichtungen werden jede Nacht automatisch durch den Datenbankbereinigungs-Workflow neu ausgeführt. Bereits berechnete Werte, die sich nicht täglich verändern, können jedoch beibehalten werden, um die Datenbank nicht zu überlasten.
+Schlichtungen werden jede Nacht automatisch durch den Datenbankbereinigungs-Workflow neu ausgeführt. Die Werte können jedoch über diesen Zeitraum hinaus gespeichert werden.
 
-Wenn beispielsweise ein Prozess die Marketingdatenbank wöchentlich mit Neigungsscores und Bestelldaten der Kunden anreichert, ist es nicht notwendig, auf diesen Werten basierende Daten täglich neu zu berechnen.
+Wenn beispielsweise ein Prozess die Marketing-Datenbank wöchentlich mit Neigungsscores und Bestelldaten der Kunden anreichert, ist es nicht notwendig, auf diesen Werten basierende Daten täglich neu zu berechnen.
 
 Geben Sie hierzu im Feld **[!UICONTROL Frequenz]** des Tabs **[!UICONTROL Allgemein]** an, wie lange die Berechnungen höchstens beibehalten werden sollen. Der Standardwert **0s** veranlasst, dass die Berechnungen bis zur nächsten Ausführung der täglichen Neuschlichtung gültig bleiben.
 

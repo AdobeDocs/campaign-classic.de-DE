@@ -161,7 +161,7 @@ Benachrichtigungs-E-Mails werden automatisch versendet, wenn die Validierung des
 
 ### Inhalt der Benachrichtigungen {#notification-content}
 
-Der Benachrichtigungsinhalt wird in der Vorlage **[!UICONTROL Validierungsbenachrichtigung bezüglich einer Marketingkampage]** festgelegt. Sie können im Ordner **[!UICONTROL Administration > Kampagnen > Vorlagen technischer Sendungen]** des Adobe Campaign-Explorers darauf zugreifen.
+Der Benachrichtigungsinhalt wird in der Vorlage **[!UICONTROL Validierungsbenachrichtigung bezüglich einer Marketing-Kampagne]** festgelegt. Sie können im Ordner **[!UICONTROL Administration > Kampagnen > Vorlagen technischer Sendungen]** des Adobe Campaign-Explorers darauf zugreifen.
 
 ## Prüfen und Validieren von Sendungen {#checking-and-approving-deliveries}
 

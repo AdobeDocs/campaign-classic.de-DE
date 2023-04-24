@@ -15,7 +15,7 @@ ht-degree: 100%
 
 ![](../../assets/common.svg)
 
-Durch das Hinzufügen von Gutscheinen können Sie Ihren Empfängern Produkte und Dienstleistungen mit einem Mehrwert anbieten. Mit dem Campaign-Gutscheinmodul können Sie Gutscheine erstellen und zu einem späteren Zeitpunkt Marketingangeboten bei deren Erstellung zuweisen. Da Gutscheine nur für einen ausgewählten Zeitraum gültig sind, ist ein zugewiesener Gutschein eindeutig mit einer bestimmten Versandnachricht verknüpft. Zusätzlich wird von Campaign vor dem Versand bestätigt, dass genügend Gutscheine für die Anzahl der Nachrichten vorhanden sind.
+Durch das Hinzufügen von Gutscheinen können Sie Ihren Empfängern Produkte und Dienstleistungen mit einem Mehrwert anbieten. Mit dem Campaign-Gutscheinmodul können Sie Gutscheine erstellen und zu einem späteren Zeitpunkt Marketing-Angeboten bei deren Erstellung zuweisen. Da Gutscheine nur für einen ausgewählten Zeitraum gültig sind, ist ein zugewiesener Gutschein eindeutig mit einer bestimmten Versandnachricht verknüpft. Zusätzlich wird von Campaign vor dem Versand bestätigt, dass genügend Gutscheine für die Anzahl der Nachrichten vorhanden sind.
 
 >[!NOTE]
 >

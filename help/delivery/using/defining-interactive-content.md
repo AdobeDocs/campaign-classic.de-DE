@@ -5,7 +5,7 @@ description: Hier erfahren Sie, wie Sie mit AMP in Adobe Campaign interaktive un
 feature: Email Design, Dynamic Content
 exl-id: 3110c371-bbf2-4ab2-a701-3f348b5c1e7f
 source-git-commit: 1348c1d88d0732b0dda4ed488b4a258ac7e15c42
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1519'
 ht-degree: 100%
 

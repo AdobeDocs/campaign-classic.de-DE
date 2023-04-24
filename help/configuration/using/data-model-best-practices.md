@@ -49,7 +49,7 @@ Das Adobe Campaign-Standarddatenmodell wird im Abschnitt [dieses Dokuments](../.
 
 ### Daten für Adobe Campaign {#data-for-campaign}
 
-Welche Daten sollten an Adobe Campaign gesendet werden? Es ist äußerst wichtig festzustellen, welche Daten Sie für Ihre Marketingaktivitäten benötigen.
+Welche Daten sollten an Adobe Campaign gesendet werden? Es ist äußerst wichtig festzustellen, welche Daten Sie für Ihre Marketing-Aktivitäten benötigen.
 
 >[!NOTE]
 >

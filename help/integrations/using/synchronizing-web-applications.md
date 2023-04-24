@@ -74,7 +74,7 @@ Um zu überprüfen, ob die Daten korrekt repliziert wurden, gehen Sie in Campaig
 
    ![](assets/acs_connect_lp_8.png)
 
-1. Klicken Sie auf der obersten Leiste auf **[!UICONTROL Marketingaktivitäten]** und suchen Sie nach der Campaign v7-Webanwendung. Sie wird in Campaign Standard als Landingpage angezeigt.
+1. Klicken Sie auf der obersten Leiste auf **[!UICONTROL Marketing-Aktivitäten]** und suchen Sie nach der Campaign v7-Webanwendung. Sie wird in Campaign Standard als Landingpage angezeigt.
 
    ![](assets/acs_connect_lp_9.png)
 

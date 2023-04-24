@@ -46,7 +46,7 @@ Zur Optimierung von Erstellung, Verwendung und Beständigkeit eines Berichts mü
    Sie können den Berichtzugriff zulassen für:
 
    * alle Adobe-Campaign-Benutzer,
-   * Benutzer, die Berechtigungen zum Zugriff auf eine Marketingkampagne haben,
+   * Benutzer, die Berechtigungen zum Zugriff auf eine Marketing-Kampagne haben,
    * einen einzelnen Benutzer für punktuelle Einsichten,
    * alle Benutzer mit Webzugriff etc.
 

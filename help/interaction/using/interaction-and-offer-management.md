@@ -17,7 +17,7 @@ ht-degree: 100%
 
 Interaction ermöglicht es, Kontaktpunkte mit Kunden oder Interessenten in Echtzeit zu nutzen und ihnen auf sie zugeschnittene Angebot zu unterbreiten. Hierbei kann es sich um einfache Informationsnachrichten oder um Sonder- oder Serviceangebote handeln.
 
-Angebote können sowohl bei eingehenden Kontakten (über eine Webseite, einen Anruf im Callcenter) als auch ausgehenden Kontakten (E-Mail-, Briefpost- oder SMS-Versand im Rahmen einer Marketingkampagne) unterbreitet werden.
+Angebote können sowohl bei eingehenden Kontakten (über eine Website, einen Anruf im Callcenter) als auch ausgehenden Kontakten (E-Mail-, Briefpost- oder SMS-Versand im Rahmen einer Marketing-Kampagne) unterbreitet werden.
 
 Konkret geschieht dies über die Erstellung eines Angebotskatalogs, aus dem bei Inbound- oder Outbound-Kontakten das im aktuellen Kontext beste Angebot für den Kunden oder Interessenten ausgewählt wird. Dabei stellen Regeln zur Prüfung der Angebotseignung sicher, dass ein Angebot wirklich auf den jeweiligen Empfänger zugeschnitten ist. Darüber hinaus ermöglichen Prioritätsregeln die Auswahl des besten Angebots aus einer Reihe von geeigneten Angeboten. Unterbreitungsregeln schließlich berücksichtigen vorhergehende Interaktionen mit einem Kontakt, damit bereits unterbreitete Angebote nicht erneut vorgeschlagen werden.
 

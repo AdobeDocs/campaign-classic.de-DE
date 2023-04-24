@@ -27,7 +27,7 @@ Kampagnen präsentieren sich in Form von sogenannten Kits, welche auf eine lokal
 
 * **Zentralstelle**
 
-   Zentralstellen bestehen aus den Benutzern der Plattform, die die Marketingkommunikation festlegen und die Lokalstellen bei der Erstellung und Ausführung ihrer Kampagnen begleiten.
+   Zentralstellen bestehen aus den Benutzern der Plattform, die die Marketing-Kommunikation festlegen und die Lokalstellen bei der Erstellung und Ausführung ihrer Kampagnen begleiten.
 
    Mithillfe des dezentralen Marketings können Zentralstellen:
 
@@ -121,7 +121,7 @@ Jede Organisationseinheit enthält Identifikationsdaten (Titel, interner Name, A
 
 ## Umsetzung {#implementation}
 
-Dezentrale Marketingkampagnen werden von der Zentralstelle erstellt und veröffentlicht. Anschließend können sie je nach Bedarf von Zentral- und Lokalstellen genutzt werden.
+Dezentrale Marketing-Kampagnen werden von der Zentralstelle erstellt und publiziert. Anschließend können sie je nach Bedarf von Zentral- und Lokalstellen genutzt werden.
 
 Die Implementierungsetappen hängen vom gewählten Kittyp und dem Umfang der lokalen Verantwortung ab.
 

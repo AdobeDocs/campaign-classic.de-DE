@@ -5,7 +5,7 @@ description: Erfahren Sie, wie Sie Push-Benachrichtigungen für Android erstelle
 feature: Push
 exl-id: 13ccc5d6-4355-42ba-80dc-30a45d3b69a4
 source-git-commit: 8d635722b8961b3edac9cc98f00f17b86f4ee523
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '818'
 ht-degree: 100%
 

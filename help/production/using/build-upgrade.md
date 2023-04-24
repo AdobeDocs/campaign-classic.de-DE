@@ -246,7 +246,7 @@ Wenn Transaktionsnachrichten (Message Center) in Ihrer Campaign-Instanz aktivier
 
 Im Kontext einer Mid-Sourcing-Umgebung müssen Sie die folgenden zusätzlichen Schritte ausführen, um eine Aktualisierung durchzuführen:
 
-1. Kontakt [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) zur Koordinierung der Aktualisierung des Mid-Sourcing-Servers.
+1. Kontakt [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) um die Aktualisierung des Mid-Sourcing-Servers zu koordinieren.
 1. Überprüfen Sie, ob die Version aktualisiert wurde, indem Sie einen Test-Link ausführen. Beispiel:
 
    ```

@@ -4,7 +4,7 @@ title: 'Technote: Aktualisieren Ihrer Umgebung zur Verbindung von Adobe Campaign
 description: Campaign – IMS-Aktualisierungen
 exl-id: ecb5a258-a150-46a3-8b83-2b2c06d873ee
 source-git-commit: bdccc4ee7cbb8c765d488879f99677b2302d32e7
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '587'
 ht-degree: 100%
 

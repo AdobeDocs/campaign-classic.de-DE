@@ -73,7 +73,7 @@ Marketer können die umfassenden von Campaign v7 replizierten Profile und Dienst
 
 Weiterführende Informationen und die vollständige Anleitung zu Campaign Standard-Workflows finden Sie im Abschnitt [Workflows](../../workflow/using/about-workflows.md).
 
-1. Gehen Sie zu Campaign Standard und wählen Sie **[!UICONTROL Marketingaktivitäten]** aus.
+1. Gehen Sie zu Campaign Standard und wählen Sie **[!UICONTROL Marketing-Aktivitäten]** aus.
 1. Wählen Sie rechts oben **[!UICONTROL Erstellen]** aus.
 1. Wählen Sie **[!UICONTROL Workflow]** aus.
 1. Wählen Sie **[!UICONTROL Neuer Workflow]** und **[!UICONTROL Weiter]** aus.

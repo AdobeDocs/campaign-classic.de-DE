@@ -151,7 +151,7 @@ Besucht er wiederholt die Startseite, wird ihm alternativ das eine oder das ande
 
 ## In eine anonyme Umgebung wechseln, wenn ein Kontakt nicht identifiziert wurde {#switching-to-an-anonymous-environment-in-case-of-unidentified-contacts}
 
-Neobank möchte auf seiner Webseite Marketingangebote für zwei verschiedene Zielgruppen präsentieren: Für anonyme Besucher sollen allgemeine Produkte angezeigt werden. Wenn sich einer der Besucher als registrierter Kunde erweist, sollen ihm, sobald er sich in seinem Konto anmeldet, personalisierte Angebote unterbreitet werden.
+Neobank möchte auf seiner Website Marketing-Angebote für zwei verschiedene Zielgruppen präsentieren: Für anonyme Besucher sollen allgemeine Produkte angezeigt werden. Wenn sich einer der Besucher als registrierter Kunde erweist, sollen ihm, sobald er sich in seinem Konto anmeldet, personalisierte Angebote unterbreitet werden.
 
 Es wird von folgendem Szenario ausgegangen:
 

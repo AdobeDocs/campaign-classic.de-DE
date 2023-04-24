@@ -32,17 +32,17 @@ Im Folgenden werden Termini dargestellt, die im Zusammenhang mit Campaign von Be
 
 * **Kampagne**
 
-   Eine Kampagne umfasst alle mit einer Marketingkampagne verbundenen Elemente: Sendungen, Regeln zur Zielgruppenbestimmung, Kosten, Exportdateien, zugehörige Dokumente etc. Jede Kampagne ist einem Programm zugeordnet.
+   Eine Kampagne umfasst alle mit einer Marketing-Kampagne verbundenen Elemente: Sendungen, Regeln zur Zielgruppenbestimmung, Kosten, Exportdateien, zugehörige Dokumente etc. Jede Kampagne ist einem Programm zugeordnet.
 
    Weitere Informationen finden Sie unter [Hinzufügen einer Kampagne](../../campaign/using/setting-up-marketing-campaigns.md#adding-a-campaign).
 
 * **Programm**
 
-   Ein Programm dient dazu, Marketingaktionen wie zum Beispiel Einführungs-, Kundenwerbungs- oder Treueprogramme für einen bestimmten Zeitraum zu planen. Jedes Programm enthält Kampagnen, die in einem Kalender übersichtlich zusammengefasst sind.
+   Ein Programm dient dazu, Marketing-Aktionen wie zum Beispiel Einführungs-, Kundenwerbungs- oder Treueprogramme für einen bestimmten Zeitraum zu planen. Jedes Programm enthält Kampagnen, die in einem Kalender übersichtlich zusammengefasst sind.
 
 * **Plan**
 
-   Ein Marketingplan umfasst unterschiedliche Programme einer bestimmten Kalenderperiode. Er führt das für diesen Zeitraum zugeteilte Budget und kann mit Dokumenten und Zielvorgaben verbunden werden.
+   Ein Marketing-Plan umfasst unterschiedliche Programme einer bestimmten Kalenderperiode. Er führt das für diesen Zeitraum zugeteilte Budget und kann mit Dokumenten und Zielvorgaben verbunden werden.
 
    Weitere Informationen hierzu finden Sie im Abschnitt [Kampagnenkalender](../../campaign/using/accessing-marketing-campaigns.md#campaign-calendar).
 

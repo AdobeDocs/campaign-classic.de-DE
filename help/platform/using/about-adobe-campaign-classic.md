@@ -17,7 +17,7 @@ ht-degree: 100%
 
 ![](../../assets/v7-only.svg)
 
-Mit dem Ziel einer verbesserten Kundenbindung und herausragender Kundenerfahrungen müssen Marken an allen Kontaktpunkten (Touchpoints) eine einheitliche Customer Journey anbieten. Vermarkter können jetzt kanalübergreifende Marketingkampagnen effizient entwerfen, planen, ausführen, verwalten und optimieren, die eine hohe Rendite für Marketinginvestitionen erzielen und die Kundentreue fördern.
+Mit dem Ziel einer verbesserten Kundenbindung und herausragender Kundenerlebnisse müssen Marken an allen Kontaktpunkten (Touchpoints) eine einheitliche Customer Journey anbieten. Vermarkter können jetzt kanalübergreifende Marketing-Kampagnen effizient entwerfen, planen, ausführen, verwalten und optimieren, die eine hohe Rendite für Marketing-Investitionen erzielen und die Kundentreue fördern.
 
 Adobe Campaign ermöglicht es, die verschiedenen Schritte zur Erstellung von Dialogmarketing-Kampagnen zu steuern. Adobe Campaign bietet innovative Tools, um Marketingprozesse und kundenbezogene Kommunikation zu entwickeln, zu optimieren und zu automatisieren.
 
@@ -34,7 +34,7 @@ Adobe Campaign ermöglicht es, die verschiedenen Schritte zur Erstellung von Dia
 
 Adobe Campaign bietet eine Plattform zur Konzeption kanalübergreifender Kundenerlebnisse und stellt dazu eine Umgebung für die Orchestrierung visueller Kampagnen, die Verwaltung von Echtzeit-Interaktionen und die kanalübergreifende Umsetzung bereit.
 
-Die Zyklen einer mit Adobe Campaign gesteuerten Marketingkampagne stellen die Hauptfunktionen der Software dar:
+Die Zyklen einer mit Adobe Campaign gesteuerten Marketing-Kampagne stellen die Hauptfunktionen der Software dar:
 
 ![](assets/d_ncs_user_emarketing.png)
 

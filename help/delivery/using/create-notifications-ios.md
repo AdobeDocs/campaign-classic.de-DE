@@ -5,7 +5,7 @@ description: Erfahren Sie, wie Sie Push-Benachrichtigungen für iOS erstellen.
 feature: Push
 exl-id: 4520504a-0d9f-4ea7-a5a8-0c07948af4f0
 source-git-commit: 8d635722b8961b3edac9cc98f00f17b86f4ee523
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1064'
 ht-degree: 100%
 
@@ -96,7 +96,7 @@ Gehen Sie wie folgt vor, um eine Push-Benachrichtigung für iOS-Geräte zu erste
 
 1. Für zeitabhängige Benachrichtigungen können Sie die folgenden Optionen spezifizieren:
 
-   * **[!UICONTROL ID des Zielinhalts]**: Kennung, die angibt, welches Anwendungsfenster beim Öffnen der Benachrichtigung in den Vordergrund gebracht werden soll.
+   * **[!UICONTROL Zielgruppen-Inhalts-ID]**: Bezeichner, mit dem festgelegt wird, welches Anwendungsfenster beim Öffnen der Benachrichtigung vorgezogen werden soll.
 
    * **[!UICONTROL Startbild]**: Name der anzuzeigenden Startbilddatei. Wenn der Benutzer Ihre Anwendung starten möchte, wird das ausgewählte Bild anstelle des Startbildschirms Ihrer Anwendung angezeigt.
 
@@ -113,7 +113,7 @@ Gehen Sie wie folgt vor, um eine Push-Benachrichtigung für iOS-Geräte zu erste
 
    ![](assets/nmac_delivery_ios_8.png)
 
-1. Klicken Sie nach Angabe aller erforderlichen Benachrichtigungsparameter auf den **[!UICONTROL Vorschau]**-Tab, um das Rendering der Benachrichtigung zu prüfen.
+1. Sobald die Benachrichtigung konfiguriert ist, klicken Sie auf die Registerkarte **[!UICONTROL Vorschau]**, um eine Vorschau der Benachrichtigung anzuzeigen.
 
    ![](assets/nmac_intro_2.png)
 

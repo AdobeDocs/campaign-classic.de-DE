@@ -7,7 +7,7 @@ exl-id: 9e10b24e-c4de-4e76-bbed-0d05f62120b7
 source-git-commit: 8fa50d17a9ff36ccc310860ac93771590cfd76fd
 workflow-type: tm+mt
 source-wordcount: '1011'
-ht-degree: 64%
+ht-degree: 65%
 
 ---
 
@@ -132,7 +132,7 @@ Die vollständige Liste der Attribute ist im [`<attribute>` element](../../confi
 * **@required**
 * **@ref**
 * **@xml**
-* **@type**
+* **@Typ**
 
    Eine Tabelle mit den Zuordnungen der Datentypen, die von Adobe Campaign für die verschiedenen Datenbankverwaltungssysteme generiert wurden, finden Sie im Abschnitt [Mapping der Adobe Campaign/DBMS-Datentypen](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data) Abschnitt.
 

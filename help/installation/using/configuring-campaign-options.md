@@ -354,7 +354,7 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">CrmMarketingActivityWindow</span> <br /> </td> 
-   <td> Für diese Anzahl von Monaten angezeigter Marketingverlauf.<br /> </td> 
+   <td> Zeitraum, für den der Marketing-Verlauf gespeichert wird (in Monaten)<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_Duration</span> <br /> </td> 

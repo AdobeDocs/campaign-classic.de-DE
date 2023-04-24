@@ -137,7 +137,7 @@ Folgende Optionen stehen zur Verfügung:
    Beispiel:
 
    * Newsletter-Versand oder elektronische Zustellung von Dokumenten: keine Deduplizierung (in den Fällen, in denen definitionsgemäß keine Dubletten zu erwarten sind). Lebensgefährten, die sich mit derselben E-Mail-Adresse angemeldet haben, können erwarten, zwei unterschiedlich personalisierte Nachrichten mit dem jeweiligen Vor- und Nachnamen zu erhalten. In diesem Fall kann die Option abgewählt werden.
-   * Versand im Rahmen einer Marketingkampagne: Um eine Überflutung der Empfänger mit E-Mails zu vermeiden, ist die Deduplizierung unbedingt zu empfehlen. In diesem Fall kann diese Option angekreuzt werden.
+   * Versand im Rahmen einer Marketing-Kampagne: Um eine Überflutung der Empfänger mit E-Mails zu vermeiden, ist die Deduplizierung unbedingt zu empfehlen. In diesem Fall kann diese Option angekreuzt werden.
 
       Bei Abwahl der Option erscheint eine zusätzliche Auswahlmöglichkeit: **[!UICONTROL In der Zielgruppe doppelt enthaltene Datensätze (identische Kennung) beibehalten]**. Sie ermöglicht die Zustellung mehrerer Nachrichten, wenn ein Empfänger verschiedenen Zielbedingungen entspricht.
 

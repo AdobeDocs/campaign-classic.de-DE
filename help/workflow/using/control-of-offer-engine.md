@@ -28,7 +28,7 @@ Der folgende Workflow wird standardmäßig mit dem Modul **Angebotsmodul-Kontrol
   <tr> 
    <td> <span class="uicontrol">Vorschlagssynchronisation</span> <br /> </td> 
    <td> <span class="uicontrol">propositionSynch</span> <br /> </td> 
-   <td> Dieser Workflow synchronisiert Vorschläge zwischen der Marketinginstanz und der Ausführungsinstanz, die für Interaktionen verwendet wird.<br /> </td> 
+   <td> Dieser Workflow synchronisiert Vorschläge zwischen der Marketing-Instanz und der Ausführungsinstanz, die für Interaktionen verwendet wird.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

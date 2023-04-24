@@ -32,7 +32,7 @@ Die folgenden Workflows werden standardmäßig mit dem Modul **Marketing-Ressour
   <tr> 
    <td> <span class="uicontrol">Benachrichtigung bezüglich Aufgaben</span> <br /> </td> 
    <td> <span class="uicontrol">taskMgt</span> <br /> </td> 
-   <td> Sendet Benachrichtigungen bezüglich Aufgaben in Marketingkampagnen.<br /> </td> 
+   <td> Sendet Benachrichtigungen bezüglich Aufgaben in Marketing-Kampagnen.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Vorgänge in Diskussionsforen</span> <br /> </td> 

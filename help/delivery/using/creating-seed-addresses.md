@@ -5,7 +5,7 @@ description: Erfahren Sie, wie Sie Testadressen erstellen und verwenden.
 feature: Seed Address
 exl-id: f7dc97f0-3423-4b6f-88e2-08180f9adf8a
 source-git-commit: 0065a25250d73c71e7569768a38b5836cccab992
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 100%
 

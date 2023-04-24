@@ -118,7 +118,7 @@ Sobald der Zielgruppen-Workflow in Campaign v7 ausgeführt wird, finden Sie die 
 
 Durch die Erstellung eines Versand-Workflows in Campaign Standard können Sie dann diese Audience sowie die darin enthaltenen zusätzlichen Daten in einem Versand verwenden.
 
-1. Erstellen Sie einen neuen Workflow im Menü **[!UICONTROL Marketingaktivitäten]**.
+1. Erstellen Sie einen neuen Workflow im Menü **[!UICONTROL Marketing-Aktivitäten]**.
 1. Fügen Sie die Aktivität **[!UICONTROL Zielgruppe lesen]** hinzu und wählen Sie die zuvor von Campaign v7 übertragene Audience aus.
 
    Mit dieser Aktivität können Daten aus der ausgewählten Audience abgerufen werden. Sie können bei Bedarf auch eine zusätzliche **[!UICONTROL Filterung der Quelle]** anwenden, indem Sie den entsprechenden Tab dieser Aktivität auswählen.
@@ -146,7 +146,7 @@ Sobald der Versand und sein Inhalt vorbereitet sind, führen Sie den Versand aus
 1. Überwachen Sie die Berichte und Logs des Versandes:
 
    * **In Campaign Standard**: die üblichen [Berichte](https://experienceleague.adobe.com/docs/campaign-standard/using/reporting/about-reporting/about-dynamic-reports.html?lang=de) und [Logs](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/monitoring-a-delivery.html?lang=de) in Verbindung mit dem Versand
-   * **in Campaign v7 und Campaign Standard**: Versandkennungen, E-Mail-Broadlogs und E-Mail-Trackinglogs werden mit Campaign v7 synchronisiert. Dies ermöglicht einen umfassenden Überblick Ihrer Marketingkampagnen in Campaign v7.
+   * **in Campaign v7 und Campaign Standard**: Versandkennungen, E-Mail-Broadlogs und E-Mail-Trackinglogs werden mit Campaign v7 synchronisiert. Dies ermöglicht einen umfassenden Überblick Ihrer Marketing-Kampagnen in Campaign v7.
 
       Quarantänen werden automatisch nach Campaign v7 zurücksynchronisiert. Dadurch können Unzustellbarkeitsinformationen bei der nächsten Zielgruppenbestimmung in Campaign v7 berücksichtigt werden.
 

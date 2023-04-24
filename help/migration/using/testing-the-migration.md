@@ -114,7 +114,7 @@ Die folgenden Ausdrücke werden gesucht (Groß-/Kleinschreibung beachten):
  <thead> 
   <tr> 
    <th> Ausdruck<br /> </th> 
-   <th> Fehler-code<br /> </th> 
+   <th> Fehler-Code<br /> </th> 
    <th> Logtyp<br /> </th> 
    <th> Erklärung<br /> </th> 
   </tr> 

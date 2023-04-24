@@ -81,7 +81,7 @@ Um eine Hypothese für einen bestehenden Versand zu erstellen, gehen Sie wie fol
 Sie haben die Möglichkeit, eine Hypothese in einer Marketing-Kampagne zu referenzieren, bevor diese gestartet wird. Die Hypothese wird in diesem Fall entsprechend den in der Hypothesenvorlage festgelegten Ausführungsparametern automatisch nach dem Versand gestartet. Um eine Hypothese in einem Versand zu erstellen, gehen Sie wie folgt vor:
 
 1. Erstellen Sie je nach Bedarf eine oder mehrere Vorlagen vom Typ **[!UICONTROL Versand]** nach der in [diesem Abschnitt](hypothesis-templates.md#creating-a-hypothesis-model) beschriebenen Vorgehensweise.
-1. Erstellen Sie Ihre Marketingkampagne und die entsprechenden Zielgruppen-Workflows.
+1. Erstellen Sie Ihre Marketing-Kampagne und die entsprechenden Zielgruppen-Workflows.
 1. Klicken Sie im Versandfenster auf das Symbol **[!UICONTROL Versandmessung]**.
 1. Wählen Sie die Hypothesenvorlage aus. Die in der Vorlage konfigurierte Abfrage wird im Hypothesenfenster angezeigt.
 

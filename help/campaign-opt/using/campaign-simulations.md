@@ -23,7 +23,7 @@ Mithilfe der Simulation können die voraussichtlichen Auswirkungen von Sendungen
 
 >[!NOTE]
 >
->Die im Testmodus vorbereiteten Sendungen wirken sich nicht gegenseitig aufeinander aus, beispielsweise in der Auswertung einer dezentralen Marketingkampagne oder solange der Eintrag der Sendungen in den Planungskalender noch nicht validiert wurde.\
+>Die im Testmodus vorbereiteten Sendungen wirken sich nicht gegenseitig aufeinander aus, beispielsweise in der Auswertung einer dezentralen Marketing-Kampagne oder solange der Eintrag der Sendungen in den Planungskalender noch nicht validiert wurde.\
 >So werden die Druck- und Kapazitätsregeln nur auf Sendungen im Modus **[!UICONTROL Zielgruppenschätzung und Nachrichtenpersonalisierung]** angewandt. Die Sendungen im Modus **[!UICONTROL Schätzung und Validierung der geplanten Zielgruppe]** und **[!UICONTROL Zielgruppenevaluierung]** werden nicht berücksichtigt.\
 >Der Versandmodus wird in den Eigenschaften des jeweiligen Versands im Tab **[!UICONTROL Typologie]** ausgewählt.
 

@@ -92,7 +92,7 @@ Adobe Campaign bietet eine Vorlage für den Festnetztelefon-Versand, die zur Ers
 >
 >Der Festnetztelefon-Kanal ist nicht nativ verfügbar. Seine Implementierung erfordert die Einbindung von Adobe Consulting oder einem Adobe-Partner. Wenden Sie sich für weitere Informationen an Ihren Adobe-Support-Mitarbeiter.
 
-Zusätzlich verwenden Sendungen vom Typ &quot;Sonstige&quot; eine spezifische technische Vorlage, die keinen Vorgang auslöst. Dies erlaubt beispielsweise die Verwaltung von außerhalb der Plattform durchgeführten Marketingaktionen.
+Zusätzlich verwenden Sendungen vom Typ &quot;Sonstige&quot; eine spezifische technische Vorlage, die keinen Vorgang auslöst. Dies erlaubt beispielsweise die Verwaltung von außerhalb der Plattform durchgeführten Marketing-Aktionen.
 
 Dieser Kanal besitzt keinen bestimmten Mechanismus. Er ist ein allgemeiner Kanal, der wie jeder andere Kommunikationskanal in Adobe Campaign über eine eigene externe Konto-Routing-Möglichkeit, Versandvorlagenart und Kampagnen-Workflow-Aktivität verfügt.
 

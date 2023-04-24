@@ -176,10 +176,10 @@ Beispiel der Verarbeitung eines diese Informationen enthaltenden Ereignisses:
 
 In Kombination mit dem LINE-Kanal ermöglichen Ihnen Transaktionsnachrichten, Echtzeit-Nachrichten über die im Mobilgerät installierte LINE-App zu senden. Dies dient zum Senden der Willkommensnachricht, wenn ein LINE-Benutzer die Seite Ihrer Marke hinzufügt.
 
-Um das Transaktionsnachrichtenmodul mit LINE zu verwenden, sind die folgenden Elemente zur Konfiguration Ihrer **Marketinginstanz** und Ihrer Ausführungsinstanz **erforderlich**:
+Um das Transaktionsnachrichtenmodul mit LINE zu verwenden, sind die folgenden Elemente zur Konfiguration Ihrer **Marketing-Instanz** und Ihrer Ausführungsinstanz **erforderlich**:
 
 * Installieren Sie das Package **[!UICONTROL LINE Connect]** auf beiden Instanzen.
-* Installieren Sie das Package **[!UICONTROL Transaktionsnachrichten-Kontrolle]** auf Ihrer Marketinginstanz und das Package **[!UICONTROL Transaktionsnachrichten-Ausführung]** auf der Ausführungsinstanz.
+* Installieren Sie das Package **[!UICONTROL Transaktionsnachrichten-Kontrolle]** auf Ihrer Marketing-Instanz und das Package **[!UICONTROL Transaktionsnachrichten-Ausführung]** auf der Ausführungsinstanz.
 * Erstellen Sie auf beiden Instanzen ein **externes LINE-Konto** und einen **LINE-Service** mit identischen Namen, damit sie synchronisiert werden können. Weiterführende Informationen dazu, wie Sie ein externes LINE-Konto und einen LINE-Service erstellen, finden Sie in [diesem Abschnitt](../../delivery/using/line-channel.md#setting-up-line-channel).
 
 Konfigurieren Sie dann im **[!UICONTROL Explorer]** unter **[!UICONTROL Plattform]** > **[!UICONTROL Externes Konto]** unterschiedliche externe Konten auf beiden Instanzen:
@@ -207,7 +207,7 @@ Konfigurieren Sie dann im **[!UICONTROL Explorer]** unter **[!UICONTROL Plattfor
    * Die Option **[!UICONTROL Ziel des &#39;HTTP-Weiterleitung auf Remote-Datenbank&#39; Kontos]** muss aktiviert sein.
 
 
-1. Erstellen Sie in der **Marketinginstanz** das Konto **[!UICONTROL Externe Datenbank]** mit der folgenden Konfiguration:
+1. Erstellen Sie in der **Marketing-Instanz** das Konto **[!UICONTROL Externe Datenbank]** mit der folgenden Konfiguration:
 
    ![](assets/line_config_mc_1.png)
 
@@ -224,7 +224,7 @@ Konfigurieren Sie dann im **[!UICONTROL Explorer]** unter **[!UICONTROL Plattfor
    * **[!UICONTROL Datenquelle]**: Geben Sie die Syntax **[!UICONTROL nms:extAccount:ID Ihres externen Datenbankkontos in die ausführende Instanz]** ein.
 
 
-1. Erstellen Sie in der **Marketinginstanz** das externe Konto **[!UICONTROL Ausführungsinstanz]** mit der folgenden Konfiguration, um den Datensynchronisations-Workflow zu erstellen:
+1. Erstellen Sie in der **Marketing-Instanz** das externe Konto **[!UICONTROL Ausführungsinstanz]** mit der folgenden Konfiguration, um den Datensynchronisations-Workflow zu erstellen:
 
    ![](assets/line_config_mc_2.png)
 

@@ -7,8 +7,8 @@ level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
 source-git-commit: 978da934b483a54509ad806f375d9b2bb0577dac
 workflow-type: tm+mt
-source-wordcount: '5972'
-ht-degree: 100%
+source-wordcount: '5974'
+ht-degree: 99%
 
 ---
 
@@ -1014,7 +1014,7 @@ Die Funktion &quot;Transaktionsnachrichten&quot; ist ein Campaign-Modul zur Verw
 Weitere Informationen zu [Transaktionsnachrichten](../../message-center/using/about-transactional-messaging.md).
 +++
 
-<!------- USEFUL HERE??----->
+&lt;!— NÜTZLICH HIER??—>
 +++**Ausgelöste Kampagnen**
 
 Ausgelöste Kampagnen sind Kampagnen, die ausgeführt werden, wenn in einem Workflow eine API-Anfrage empfangen wird. API-Aufrufe werden im Workflow von einer Signal-Aktivität empfangen, die die Ausführung des Workflows auslöst.

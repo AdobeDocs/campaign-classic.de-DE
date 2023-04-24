@@ -190,7 +190,7 @@ Der Nachrichtenversand inklusive aller Neuversuche erfolgt innerhalb eines besti
 
 * Im Feld **[!UICONTROL Versandlaufzeit]** können Sie die Zeitspanne angeben, in der erneute Zustellversuche unternommen werden. Dies bedeutet konkret, dass Adobe Campaign die Nachrichten ab dem Startdatum versendet und bis nach Ablauf der angegebenen Spanne nicht zustellbare Nachrichten in regelmäßigen Abständen erneut sendet.
 
-   Sie können alternativ auch ein genaues Ablaufdatum angeben. Kreuzen Sie in diesem Fall die Option **[!UICONTROL Gültigkeit explizit festlegen]** an. Auf diese Weise kann auch eine bestimmte Uhrzeit konfiguriert werden. Standardmäßig ist dies die aktuelle Uhrzeit. Diese kann jedoch direkt im Eingabefeld angepasst werden.
+   Sie können auch ein Datum angeben. Wählen Sie dazu **[!UICONTROL Gültigkeitsdaten explizit festlegen]**. In diesem Fall können Sie bei den Versand- und Gültigkeitsfristen auch die Uhrzeit angeben. Standardmäßig wird die aktuelle Uhrzeit verwendet, aber Sie können diese direkt im Eingabefeld ändern.
 
    >[!IMPORTANT]
    >

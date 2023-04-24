@@ -120,7 +120,7 @@ Der Absendername für diese Art von Nachrichten besteht aus einer kurzen Nummer 
 >
 >Das folgende detaillierte Verfahren gilt nur für SMPP-Connectoren, mit Ausnahme des Connectors „Erweitertes allgemeines SMPP“. Weitere Informationen hierzu finden Sie im Abschnitt [Externes SMPP-Konto erstellen](sms-set-up.md#creating-an-smpp-external-account).
 >
->Sie betrifft die Zertifizierung durch amerikanische Provider bezüglich in den USA zu versendender Marketingkampagnen. Insbesondere müssen diese SMS dem Abonnenten, der ein entsprechendes Schlüsselwort gesendet hat, unverzüglich zugestellt werden.
+>Sie betrifft die Zertifizierung durch amerikanische Provider bezüglich in den USA zu versendender Marketing-Kampagnen. Insbesondere müssen diese SMS dem Abonnenten, der ein entsprechendes Schlüsselwort gesendet hat, unverzüglich zugestellt werden.
 
 1. Erstellen Sie eine XML-Datei nach folgendem Muster:
 

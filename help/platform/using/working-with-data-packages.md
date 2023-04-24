@@ -156,7 +156,7 @@ Der Mechanismus wird durch zwei Regeln bestimmt:
 
 #### Eine Kampagne exportieren {#exporting-a-campaign}
 
-Im Folgenden finden Sie ein Beispiel für den Export einer Kampagne. Die zu exportierende Marketingkampagne enthält eine Aufgabe (Titel: &quot;MyTask&quot;) und einen Workflow (Titel: &quot;CampaignWorkflow&quot;) im Ordner &quot;MyWorkflow&quot; (Knoten: Administration > Betreibung > Technische Workflows > Kampagnenprozesse > MyWorkflow).
+Im Folgenden finden Sie ein Beispiel für den Export einer Kampagne. Die zu exportierende Marketing-Kampagne enthält eine Aufgabe (Titel: &quot;MyTask&quot;) und einen Workflow (Titel: &quot;CampaignWorkflow&quot;) im Ordner &quot;MyWorkflow&quot; (Knoten: Administration > Betreibung > Technische Workflows > Kampagnenprozesse > MyWorkflow).
 
 Die Aufgabe und der Workflow werden im gleichen Package wie die Kampagne exportiert, da die entsprechenden Schemata über Relationen vom Integritätstyp &quot;own&quot; verbunden sind.
 

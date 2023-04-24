@@ -5,7 +5,7 @@ description: Erfahren Sie, wie Sie Ihre Mobile App für Android einrichten.
 feature: Push
 exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
 source-git-commit: 8d635722b8961b3edac9cc98f00f17b86f4ee523
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1074'
 ht-degree: 100%
 
@@ -134,7 +134,7 @@ Gehen Sie wie folgt vor, um die HTTP v1-API-Version zu konfigurieren:
 
    ![](assets/nmac_android_11.png)
 
-1. Bei Bedarf können Sie die Inhalte von Push-Nachrichten mit bestimmten **[!UICONTROL Anwendungsvariablen]** anreichern. Diese sind vollständig anpassbar; ein Teil der Payload der Nachricht wird an das Mobilgerät gesendet.
+1. Bei Bedarf können Sie die Inhalte von Push-Nachrichten mit bestimmten **[!UICONTROL Anwendungsvariablen]** anreichern. Diese sind vollständig anpassbar und Teil der an das mobile Gerät gesendeten Nachrichten-Payload.
 
 1. Klicken Sie auf **[!UICONTROL Beenden]** und danach auf **[!UICONTROL Speichern]**. Ihre Android-Anwendung kann jetzt in Campaign Classic verwendet werden.
 

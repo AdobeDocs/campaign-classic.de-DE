@@ -54,7 +54,7 @@ _15. April 2019_
 
 ### Version 18.10.3 – Build 8981{#release-18-10-3-build-8981}
 
-&#x200B;29. Januar 2019
+29. Januar 2019
 
 >[!CAUTION]
 >
@@ -78,7 +78,7 @@ _15. April 2019_
 
 ### Version 18.10.2 – Build 8978{#release-18-10-2-build-8978}
 
-&#x200B;6. Dezember 2018
+6. Dezember 2018
 
 >[!CAUTION]
 >
@@ -100,7 +100,7 @@ _15. April 2019_
 
 ### Version 18.10.1 – Build 8977{#release-18-10-build-8977}
 
-&#x200B;5. November 2018
+5. November 2018
 
 >[!CAUTION]
 >
@@ -245,7 +245,7 @@ Durch diese Indexänderungen kann es vorkommen, dass die Durchführung des Postu
 
 ### Version 18.6.2 – Build 8949{#release-18-6-3-build-8949}
 
-&#x200B;22. August 2018
+22. August 2018
 
 >[!CAUTION]
 >
@@ -410,7 +410,7 @@ _22. Juni 2018_
 * Fehlerkorrektur – der Mechanismus für die Generierung von ID-Sequenzen wird nun ordnungsgemäß ausgeführt. (NEO-11115)
 * Fehlerkorrektur – Datenschutzanfragen (DSGVO) funktionieren nun, wenn ein benutzerdefinierter Namespace mit einem Integer-Abstimmschlüssel verwendet wird. (NEO-11123)
 * Fehlerkorrektur – die Verwendung der Option **[!UICONTROL Werteverteilung]** in **[!UICONTROL Abfrage]**-Workflow-Aktivitäten funktioniert nun fehlerfrei. (NEO-10958)
-* Fehlerkorrektur – die Synchronisierung von Platzierungen zwischen der Marketinginstanz und der Interaktionsinstanz funktioniert nun fehlerfrei. (NEO-11162)
+* Fehlerkorrektur – die Synchronisierung von Platzierungen zwischen der Marketing-Instanz und der Interaktionsinstanz funktioniert nun fehlerfrei. (NEO-11162)
 * Die Verwaltung langer Indexnamen während des Postupgrades wurde verbessert.
 
 ### Version 18.4.2 – Build 8932{#release-18-4-2-build-8932}
@@ -541,7 +541,7 @@ nlserver package -instance:fresh -import:sup-packInstallTest.xml -verbose -usejs
 * Fehlerkorrektur - Abfragen mit sha256-Funktionen in Teradata-Datenbanken können jetzt fehlerfrei durchgeführt wird. (NEO-10119)
 * Fehlerkorrektur - jetzt treten bei der SalesForce-Aktivität keine Workflow-Speicherfehler mehr auf, wenn sehr große SalesForce-Tabellen verwendet werden. (NEO-9900)
 * Fehlerkorrektur - Bei Verwendung von FDA tritt in Zielgruppen-Workflow-Aktivitäten bei der Verwendung der Option **Komplement erzeugen** jetzt kein Fehler mehr auf. (NEO-9878)
-* Fehlerkorrektur - die Metriken **Verarbeitet** und **Erfolg** werden jetzt in der Marketinginstanz aktualisiert, wenn Mid-Sourcing verwendet wird. (NEO-9454)
+* Fehlerkorrektur - die Metriken **Verarbeitet** und **Erfolg** werden jetzt in der Marketing-Instanz aktualisiert, wenn Mid-Sourcing verwendet wird. (NEO-9454)
 * Korrektur der Interaktionsregeln zur Verhinderung von Neuvorschlägen bei mehr als 10.000 Angeboten auf der Plattform. (NEO-9352)
 * Fehlerkorrektur - die Zielgruppe eines Versands kann jetzt bei der Verwendung einer externen XML-Datei spezifiziert werden. (NEO-9312)
 * Fehlerkorrektur - jetzt treten keine Workflow-Fehler mehr auf, wenn eine Hypothese für ein Angebot ausgeführt und der Status des Vorschlags aktualisiert wird. (NEO-9304)

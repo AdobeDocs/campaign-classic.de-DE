@@ -7,7 +7,7 @@ user-guide-description: Mit Adobe Campaign können Sie umfangreiche Kundendaten 
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: bdccc4ee7cbb8c765d488879f99677b2302d32e7
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2536'
 ht-degree: 100%
 
@@ -242,7 +242,7 @@ ht-degree: 100%
       + [Inhalte anreichern](delivery/using/enriching-content.md)
       + [Automatisieren über Workflows](delivery/using/automating-via-workflows.md)
 + Marketing-Kampagnen organisieren {#orchestrating-campaigns}
-   + Über Marketingkampagnen {#about-marketing-campaigns}
+   + Über Marketing-Kampagnen {#about-marketing-campaigns}
       + [Marketing-Kampagnen entwerfen](campaign/using/designing-marketing-campaigns.md)
       + [Auf Marketing-Kampagnen zugreifen](campaign/using/accessing-marketing-campaigns.md)
    + Kampagnen orchestrieren {#orchestrate-campaigns}

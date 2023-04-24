@@ -60,7 +60,7 @@ Bei einem fortlaufenden Versand wird EIN Versand erstellt. Versandlogs (Broadlog
 
 ## Anleitungsvideo {#continuous-delivery-video}
 
-In diesem Video wird gezeigt, wie man einen fortlaufenden Versand mit einer inkrementellen Abfrage konfiguriert.
+In diesem Video wird gezeigt, wie Sie einen fortlaufenden Versand mit einer inkrementellen Abfrage konfigurieren.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25039?quality=12)
 
