@@ -84,6 +84,7 @@ Bei den Kontrollinstanzen müssen Sie darüber hinaus:
       grant SELECT ON nmspropositionrcp, nmsoffer, nmsofferspace, xtkoption, xtkfolder TO user;
       grant DELETE, INSERT, UPDATE ON nmspropositionrcp TO user;
       ```
+
    >[!NOTE]
    >
    >Die IP-Adresse der Kontrollinstanz muss in den Ausführungsinstanzen zugelassen sein.
