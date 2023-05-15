@@ -2,11 +2,12 @@
 product: campaign
 title: Über Connectoren
 description: Über Connectoren
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Overview
 role: User, Data Architect
 level: Beginner
 exl-id: 05080d7f-f2d6-4ffe-b112-05b26a3a8a1d
-source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '193'
 ht-degree: 100%
@@ -15,7 +16,7 @@ ht-degree: 100%
 
 # Erste Schritte mit Connectoren{#about-connectors}
 
-![](../../assets/v7-only.svg)
+
 
 Adobe Campaign bietet Ihnen mehrere Connectoren, mit deren Hilfe Sie mit externen Anwendungen kommunizieren, eine Verbindung zu Datenbank-Engines herstellen und Adobe Campaign mit Adobe Analytics zum Datenaustausch integrieren können.
 

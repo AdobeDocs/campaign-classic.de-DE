@@ -2,9 +2,10 @@
 product: campaign
 title: Filterregeln
 description: Erfahren Sie, wie Sie Filterregeln verwenden
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Typology Rules
 exl-id: a4d12445-5680-4704-9c67-e43e0ea6631b
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '528'
 ht-degree: 100%
@@ -12,8 +13,6 @@ ht-degree: 100%
 ---
 
 # Filterregeln{#filtering-rules}
-
-![](../../assets/v7-only.svg)
 
 Filterregeln ermöglichen es, auszuschließende Nachrichten nach in einer Abfrage definierten Kriterien zu bestimmen. Diese Regeln werden mit einer Zielgruppendimension verknüpft.
 

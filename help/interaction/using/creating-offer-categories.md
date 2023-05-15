@@ -2,11 +2,12 @@
 product: campaign
 title: Erstellen von Angebotskategorien
 description: Erstellen von Angebotskategorien
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: ed97a1b5-c870-4b67-98b6-16adc316fd46
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 100%
@@ -15,7 +16,7 @@ ht-degree: 100%
 
 # Erstellen von Angebotskategorien{#creating-offer-categories}
 
-![](../../assets/v7-only.svg)
+
 
 Angebotskategorien werden ausschließlich in der **[!UICONTROL Design-Umgebung]** erstellt. Sie werden automatisch für die **[!UICONTROL Live-Umgebung]** freigegeben (d. h. zur Unterbreitung verfügbar gemacht), wenn die enthaltenen Angebote oder ihre Änderungen validiert wurden. Standardmäßig ist in der **[!UICONTROL Design-Umgebung]** bereits eine Kategorie (der Angebotskatalog) enthalten. Sie haben die Möglichkeit, Unterkategorien zu erstellen, um die Angebote zu ordnen und zu hierarchisieren.
 

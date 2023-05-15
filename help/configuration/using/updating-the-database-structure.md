@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 exl-id: 6c1e061b-8636-4285-8d83-97474544d252
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 50a89f993523f3274e87ebac740d1c121082e18c
 workflow-type: tm+mt
 source-wordcount: '151'
 ht-degree: 49%
@@ -15,7 +15,7 @@ ht-degree: 49%
 
 # Datenbankstruktur aktualisieren{#updating-the-database-structure}
 
-![](../../assets/v7-only.svg)
+
 
 Um die Änderungen an den Schemas anzuwenden, starten Sie den Datenbankaktualisierungs-Assistenten. Auf diesen Assistenten kann über **[!UICONTROL Tools > Erweitert > Datenbankstruktur aktualisieren]** . Er prüft, ob die physische Struktur der Datenbank mit ihrer logischen Beschreibung übereinstimmt, und führt die SQL-Aktualisierungs-Scripts aus.
 

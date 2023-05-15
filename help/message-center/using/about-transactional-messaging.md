@@ -1,10 +1,11 @@
 ---
 product: campaign
 title: Erste Schritte mit Transaktionsnachrichten
-description: Erfahren Sie mehr über die Funktionsweise von Transaktionsnachrichten in Adobe Campaign Classic und die wichtigsten Schritte für ihre Verwendung.
+description: Erfahren Sie mehr über die Funktionsweise von Transaktionsnachrichten in Adobe Campaign Classic und die wichtigsten Schritte für ihre Verwendung
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Transactional Messaging
 exl-id: dc52e789-d0bf-4e8f-b448-9d69a2762cc1
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '648'
 ht-degree: 100%
@@ -14,7 +15,7 @@ ht-degree: 100%
 
 # Erste Schritte mit Transaktionsnachrichten {#about-transactional-messaging}
 
-![](../../assets/v7-only.svg)
+
 
 ## Übersicht {#overview}
 

@@ -2,9 +2,11 @@
 product: campaign
 title: Erste Schritte mit der Zustellbarkeit in Campaign
 description: Lernen Sie Best Practices zur Zustellbarkeit kennen
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Deliverability
 exl-id: f301b34c-244c-4279-b23f-8224ea8eedbe
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '724'
 ht-degree: 100%
@@ -13,7 +15,7 @@ ht-degree: 100%
 
 # Was ist Zustellbarkeit{#about-deliverability}
 
-![](../../assets/common.svg)
+
 
 Die Zustellbarkeit misst, wie viele Ihrer Nachrichten erfolgreich den Posteingang Ihrer Empfänger erreichen und nicht als unzustellbar zurückgesendet bzw. als Spam gekennzeichnet werden. [Hier erfahren Sie, warum Zustellbarkeit wichtig ist](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/deliverability-strategy-and-definition.html?lang=de#why-deliverability-matters).
 

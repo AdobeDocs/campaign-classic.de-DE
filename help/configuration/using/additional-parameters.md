@@ -2,8 +2,9 @@
 product: campaign
 title: Zusätzliche Web-Tracking-Parameter
 description: Erfahren Sie mehr über die Parameter für das Web-Tracking
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: d14d94fd-b078-4893-be84-31d37a1d50f5
-source-git-commit: 8fa50d17a9ff36ccc310860ac93771590cfd76fd
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '352'
 ht-degree: 4%
@@ -11,8 +12,6 @@ ht-degree: 4%
 ---
 
 # Zusätzliche Web-Tracking-Parameter{#additional-parameters}
-
-![](../../assets/v7-only.svg)
 
 ## Definition von Parametern {#definition-of-parameters}
 

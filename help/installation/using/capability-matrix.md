@@ -2,8 +2,9 @@
 product: campaign
 title: Funktionsmatrix für On-Premise-, Hybrid- und gehostete Campaign-Versionen
 description: Wichtige Unterschiede zwischen gehosteten und On-Premise-Implementierungen
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: a2c425a8-9bde-4259-9140-5ada5397ed5f
-source-git-commit: 1e11b7419388698f5de366cbeddf2be88ef12873
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '293'
 ht-degree: 46%
@@ -12,7 +13,7 @@ ht-degree: 46%
 
 # Funktionsmatrix pro Modell{#capability-matrix-per-model}
 
-![](../../assets/v7-only.svg)
+
 
 Adobe Campaign Classic bietet verschiedene Module und Optionen. Die Verfügbarkeit dieser Module und ihre Verwendung können von der Art der Bereitstellung Ihrer Installation abhängen. In diesem Artikel werden einige Details zu den Hauptunterschieden bei bestimmten Funktionen zwischen vollständig gehosteten (Managed Services) und On-Premise-Bereitstellungen vorgestellt.
 

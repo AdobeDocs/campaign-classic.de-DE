@@ -1,10 +1,11 @@
 ---
 product: campaign
 title: Vierteljährliches Listen-Update mithilfe einer inkrementellen Abfrage
-description: In diesem Anwendungsfall dient eine inkrementelle Abfrage zur automatischen Aktualisierung einer Empfängerliste.
+description: In diesem Anwendungsfall dient eine inkrementelle Abfrage zur automatischen Aktualisierung einer Empfängerliste
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: 0d3e7046-313a-42a6-9155-3365e8d60bac
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 100%
@@ -13,7 +14,7 @@ ht-degree: 100%
 
 # Vierteljährliches Listen-Update mithilfe einer inkrementellen Abfrage {#quarterly-list-update}
 
-![](../../assets/v7-only.svg)
+
 
 Im folgenden Beispiel wird eine [inkrementelle Abfrage](incremental-query.md) verwendet, um eine Empfängerliste automatisch zu aktualisieren. Diese wird regelmäßig im Rahmen saisonaler Marketing-Kampagnen verwendet.
 

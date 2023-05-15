@@ -2,10 +2,11 @@
 product: campaign
 title: Integrieren des Campaign SDK
 description: Erfahren Sie, wie Sie das Campaign SDK in Ihre Mobile App integrieren können.
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Mobile SDK Integration, Push
 exl-id: a5f6b82d-5561-4e56-b2ed-7fd6fd8c2b55
-source-git-commit: 1ead0b1afc8c924cb4f8d36c608cd570e5fe7a44
-workflow-type: ht
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+workflow-type: tm+mt
 source-wordcount: '997'
 ht-degree: 100%
 
@@ -13,11 +14,11 @@ ht-degree: 100%
 
 # Integrieren des Campaign SDK in Ihr Programm {#integrating-campaign-sdk-into-the-mobile-application}
 
-![](../../assets/v7-only.svg)
+
 
 >[!CAUTION]
 >
->Adobe empfiehlt dringend, das Adobe Experience Platform Mobile SDK zu verwenden, indem die Adobe Campaign-Erweiterung in der Benutzeroberfläche „Datenerfassung“ konfiguriert wird. Mit dem Adobe Experience Platform Mobile SDK können Sie die Experience Cloud-Lösungen und -Dienste von Adobe in Ihren mobilen Apps nutzen. Die Konfiguration des SDK wird über die Benutzeroberfläche „Datenerfassung“ verwaltet, um eine flexible Konfiguration und erweiterbare, regelbasierte Integrationen zu ermöglichen. [Weitere Informationen finden Sie in der Dokumentation zu Adobe Developer](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
+>Adobe empfiehlt dringend, das Adobe Experience Platform Mobile SDK zu verwenden, indem die Adobe Campaign-Erweiterung in der Benutzeroberfläche „Datenerfassung“ konfiguriert wird. Mit dem Adobe Experience Platform Mobile SDK können Sie die Experience Cloud-Lösungen und -Dienste von Adobe in Ihren mobilen Apps nutzen. Die SDK-Konfiguration wird über die Datenerfassungs-Benutzeroberfläche verwaltet, um eine flexible Konfiguration und erweiterbare, regelbasierte Integrationen zu ermöglichen. [Weitere Informationen finden Sie in der Dokumentation zu Adobe Developer](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
 
 Um Campaign SDK (früher bekannt als Neolane SDK) zu erhalten, wenden Sie sich an die [Adobe Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}.
 
@@ -375,7 +376,7 @@ Der **registerDeviceStatus**-Prototyp ist:
   </tr>
   <tr> 
    <td> ACCRegisterDeviceStatusFailureMarketingServerHostnameEmpty <br /> </td>
-   <td> Der Hostname des ACC-Marketingservers ist leer oder nicht definiert.<br /> </td>
+   <td> Der Host-Name des ACC-Marketing-Servers ist leer oder nicht definiert.<br /> </td>
    <td> LEER<br /> </td>
   </tr>
   <tr> 

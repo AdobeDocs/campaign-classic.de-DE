@@ -2,9 +2,10 @@
 product: campaign
 title: Konfigurieren der Mobile App für Android in Adobe Campaign
 description: Erfahren Sie, wie Sie Ihre Mobile App für Android einrichten.
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Push
 exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
-source-git-commit: 8d635722b8961b3edac9cc98f00f17b86f4ee523
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1074'
 ht-degree: 100%
@@ -13,7 +14,7 @@ ht-degree: 100%
 
 # Konfigurationsschritte für Android
 
-![](../../assets/v7-only.svg)
+
 
 Nachdem das Paket installiert ist, können Sie die Einstellungen Ihrer Android-Mobile-App in Adobe Campaign Classic festlegen.
 
@@ -130,7 +131,7 @@ Gehen Sie wie folgt vor, um die HTTP v1-API-Version zu konfigurieren:
 
    >[!CAUTION]
    >
-   >Bei Mid-Sourcing-Implementierungen wird mit der Schaltfläche **[!UICONTROL Verbindung testen]** nicht geprüft, ob der MID-Server Zugriff auf den FCM-Server hat.
+   >Bei Mid-Sourcing-Bereitstellungen wird mit der Schaltfläche **[!UICONTROL Verbindung testen]** nicht geprüft, ob der MID-Server Zugriff auf den FCM-Server hat.
 
    ![](assets/nmac_android_11.png)
 

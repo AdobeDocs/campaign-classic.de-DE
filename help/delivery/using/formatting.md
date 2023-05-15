@@ -2,9 +2,11 @@
 product: campaign
 title: Formatierung
 description: Formatierung
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email Design
 exl-id: d9688dc4-20c6-4a9a-990f-465f39b2faa2
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '1458'
 ht-degree: 100%
@@ -13,7 +15,7 @@ ht-degree: 100%
 
 # Formatierung{#formatting}
 
-![](../../assets/common.svg)
+
 
 ## JavaScript-Templates {#javascript-templates}
 
@@ -540,7 +542,7 @@ Beispiel für die Adressierung eines Bilds mit Pfadangabe:
 
 ### Verwendung öffentlicher Ressourcen {#using-public-resources}
 
-Eine weitere Möglichkeit ist die Verwendung der **[!UICONTROL öffentlichen Ressourcen]**, um die Bilder zu deklarieren und entsprechend der im Softwareverteilungs-Assistenten konfigurierten Instanzparameter auf den Server zu laden.
+Eine weitere Möglichkeit ist die Verwendung der **[!UICONTROL öffentlichen Ressourcen]**, um die Bilder zu deklarieren und entsprechend der im Bereitstellungsassistenten konfigurierten Instanzparameter auf den Server zu laden.
 
 Im Anschluss daran, können Sie die Bilder in Ihren Inhalten aufrufen. Verwenden Sie hierfür die folgende Syntax im Content-Management-Schema:
 

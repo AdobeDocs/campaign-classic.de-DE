@@ -2,11 +2,12 @@
 product: campaign
 title: Synchronisieren von Audiences
 description: Erfahren Sie, wie Sie Audiences mit dem ACS-Connector synchronisieren
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: ACS Connector
 hide: true
 hidefromtoc: true
 exl-id: 88e581cf-43cd-4c43-9347-d016c62fdf42
-source-git-commit: 978da934b483a54509ad806f375d9b2bb0577dac
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1210'
 ht-degree: 100%
@@ -15,7 +16,7 @@ ht-degree: 100%
 
 # Synchronisieren von Audiences{#synchronizing-audiences}
 
-![](../../assets/v7-only.svg)
+
 
 Sie können mit den erweiterten Funktionen von Campaign v7 eine umfangreiche Liste erstellen und als Audience direkt und in Echtzeit in Campaign Standard freigeben (einschließlich zusätzlicher Daten). Ihr Campaign-Standard-Benutzer kann dann die Audience in Adobe Campaign Standard verwenden.
 

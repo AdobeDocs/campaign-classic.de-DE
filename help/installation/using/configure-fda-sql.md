@@ -2,8 +2,9 @@
 product: campaign
 title: Zugriff auf Microsoft SQL Server konfigurieren
 description: Erfahren Sie, wie Sie den Zugriff auf Microsoft SQL Server konfigurieren
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: 65ab4577-3126-4579-8fcc-e93772ebd1e8
-source-git-commit: 6b7638eec1718edf30f81005cd6691dd271aaa0c
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '536'
 ht-degree: 10%
@@ -12,7 +13,7 @@ ht-degree: 10%
 
 # Zugriff auf Microsoft SQL Server konfigurieren {#configure-fda-sql}
 
-![](../../assets/v7-only.svg)
+
 
 Verwenden von Campaign **Federated Data Access** (FDA), um in einer externen Microsoft SQL Server-Datenbank gespeicherte Informationen zu verarbeiten. Gehen Sie wie folgt vor, um den Zugriff auf [!DNL Microsoft SQL Server].
 
@@ -99,7 +100,7 @@ Sie müssen eine [!DNL Microsoft SQL Server] externes Konto, um Ihre Campaign-In
 
    * **[!UICONTROL Zeitzone]**: Zeitzone festgelegt in [!DNL Microsoft SQL Server]. [Weitere Informationen](https://docs.microsoft.com/en-us/sql/t-sql/functions/current-timezone-transact-sql?view=sql-server-ver15)
 
-1. Klicken Sie auf den Tab **[!UICONTROL Parameter]** und dann auf die Schaltfläche **[!UICONTROL Funktionen freigeben]**, um Funktionen zu erstellen.
+1. Klicken Sie auf den Tab **[!UICONTROL Parameter]** und dann auf die Schaltfläche **[!UICONTROL Funktionen bereitstellen]**, um Funktionen zu erstellen.
 
    >[!NOTE]
    >

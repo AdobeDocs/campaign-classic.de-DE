@@ -2,18 +2,19 @@
 product: campaign
 title: Allgemeine Berichte
 description: Allgemeine Berichte
+badge: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Reporting, Monitoring
 exl-id: 6839fd7e-ecf4-4504-90a8-0207bc3991e4
-source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '2498'
-ht-degree: 100%
+source-wordcount: '2509'
+ht-degree: 99%
 
 ---
 
 # Allgemeine Berichte {#global-reports}
 
-![](../../assets/common.svg)
+
 
 Diese Berichte beziehen sich auf Aktivitäten, die die Gesamtheit der Daten in der Datenbank betreffen. Begeben Sie sich in den Tab **[!UICONTROL Berichte]**, um auf das Dashboard zuzugreifen.
 

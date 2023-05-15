@@ -2,8 +2,9 @@
 product: campaign
 title: Erfassen aller Besuche
 description: Erfassen aller Besuche
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: cc554d0d-bbab-4f72-b870-5fef5a2fda9d
-source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 3%
@@ -11,8 +12,6 @@ ht-degree: 3%
 ---
 
 # Erfassen aller Besuche{#collecting-all-visits}
-
-![](../../assets/v7-only.svg)
 
 Mit dem von Adobe Campaign bereitgestellten Webtracking-Modul können Sie die Besuche auf bestimmten Seiten der Site erfassen, die von einem Empfänger im Rahmen des Site-Trackings nach einem Klick in einer Nachricht ausgeführt werden.
 

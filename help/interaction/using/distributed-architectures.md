@@ -2,11 +2,12 @@
 product: campaign
 title: Verteilte Architekturmodelle
 description: Verteilte Architekturmodelle
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 exl-id: 083be073-aad4-4c81-aff2-77f5ef3e80db
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1025'
 ht-degree: 100%
@@ -15,7 +16,7 @@ ht-degree: 100%
 
 # Verteilte Architekturmodelle{#distributed-architectures}
 
-![](../../assets/v7-only.svg)
+
 
 ## Funktionsprinzip {#principle}
 
@@ -38,9 +39,9 @@ Die Synchronisation von Vorschlägen erfolgt in Packages. In den Ausführungsins
 >
 >Es wird dringend empfohlen, kurze und ausdrucksstarke interne Namen zu verwenden.
 
-Die Freigabe und Veröffentlichung der Angebote in den Ausführungs- und Kontrollinstanzen erfolgt automatisch.
+Die Bereitstellung und Publikation der Angebote in den Ausführungs- und Kontrollinstanzen erfolgt automatisch.
 
-In der Design-Umgebung gelöschte Angebote werden in allen Live-Instanzen deaktiviert. Obsolete Vorschläge und Angebote werden nach Ablauf der durch die Bereinigungsparameter im Softwareverteilungs-Assistenten aller Instanzen definierten Frist und des in den Typologieregeln definierten beweglichen Zeitraums automatisch gelöscht.
+In der Design-Umgebung gelöschte Angebote werden in allen Live-Instanzen deaktiviert. Obsolete Vorschläge und Angebote werden nach Ablauf der durch die Bereinigungsparameter im Bereitstellungassistenten aller Instanzen definierten Frist und des in den Typologieregeln definierten beweglichen Zeitraums automatisch gelöscht.
 
 ![](assets/interaction_powerbooster_schema2.png)
 
@@ -56,7 +57,7 @@ Für jedes externe Konto und jede Umgebung wird ein Synchronisations-Workflow er
 
 ## Package-Konfiguration {#packages-configuration}
 
-Eventuelle Schemaerweiterungen in direktem Zusammenhang mit **Interaktion** (beispielsweise Angebots-, Vorschlags- oder Empfängerschema) sind auf die Ausführungsinstanzen freizugeben.
+Eventuelle Schemaerweiterungen in direktem Zusammenhang mit **Interaktion** (beispielsweise Angebots-, Vorschlags- oder Empfängerschema) sind auf den Ausführungsinstanzen bereitzustellen.
 
 Das Interaction-Package muss auf allen Instanzen installiert werden (Kontroll- und Ausführungsinstanzen). Zwei weitere Packages sind je nach Instanzart zu installieren, eins auf den Kontrollinstanzen, das zweite auf allen Ausführungsinstanzen.
 
@@ -64,7 +65,7 @@ Das Interaction-Package muss auf allen Instanzen installiert werden (Kontroll- u
 >
 >Im Zuge der Package-Installation werden Datenfelder der Vorschlagstabelle **nms:proposition** mit dem Typ **long**, beispielsweise die Vorschlagskennung, in den Typ **int64** umgewandelt. Weiterführende Informationen zu Datentypen finden Sie in diesem [Abschnitt](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data).
 
-Für jede Instanz muss außerdem die Aufbewahrungsdauer der Daten konfiguriert werden (im Fenster **[!UICONTROL Datenbereinigung]** des Softwareverteilungs-Assistenten). Bei den Ausführungsinstanzen muss diese Dauer der Verlaufstiefe entsprechen, die für die Berechnung der Eignungs- bzw. Typologieregeln (beweglicher Zeitraum) erforderlich ist.
+Für jede Instanz muss außerdem die Aufbewahrungsdauer der Daten konfiguriert werden (im Fenster **[!UICONTROL Datenbereinigung]** des Bereitstellungassistenten). Bei den Ausführungsinstanzen muss diese Dauer der Verlaufstiefe entsprechen, die für die Berechnung der Eignungs- bzw. Typologieregeln (beweglicher Zeitraum) erforderlich ist.
 
 Bei den Kontrollinstanzen müssen Sie darüber hinaus:
 
@@ -84,7 +85,6 @@ Bei den Kontrollinstanzen müssen Sie darüber hinaus:
       grant SELECT ON nmspropositionrcp, nmsoffer, nmsofferspace, xtkoption, xtkfolder TO user;
       grant DELETE, INSERT, UPDATE ON nmspropositionrcp TO user;
       ```
-
    >[!NOTE]
    >
    >Die IP-Adresse der Kontrollinstanz muss in den Ausführungsinstanzen zugelassen sein.

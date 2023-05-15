@@ -2,20 +2,21 @@
 product: campaign
 title: Zugriff auf Campaign-Ordner verwalten
 description: Erfahren Sie, wie Sie Zugriff auf Campaign-Ordner gewähren und Ansichten erstellen.
+badge: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Application Settings, Permissions
 role: User, Admin
 level: Beginner
 exl-id: 0ba8a3d0-36d7-42f3-b281-0255e49b5fa3
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '775'
-ht-degree: 100%
+source-wordcount: '786'
+ht-degree: 98%
 
 ---
 
 # Zugriff auf Ordner verwalten{#folder-access-management}
 
-![](../../assets/common.svg)
+
 
 Jeder Ordner des Explorer-Navigationsbaums verfügt über Lese-, Schreib- und Löschzugriffsrechte. Um auf eine Datei zugreifen zu können, muss ein Benutzer oder eine Benutzergruppe zumindest über Lesezugriff verfügen.
 

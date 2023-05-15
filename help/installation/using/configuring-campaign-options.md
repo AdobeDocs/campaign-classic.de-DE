@@ -2,11 +2,12 @@
 product: campaign
 title: Campaign-Optionen konfigurieren
 description: Erfahren Sie, wie Sie Campaign-Optionen konfigurieren
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: 8610d29a3df1080f1622a2cb3685c0961fb40092
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '3994'
 ht-degree: 13%
@@ -15,7 +16,7 @@ ht-degree: 13%
 
 # Liste der Optionen von Campaign Classic{#configuring-campaign-options}
 
-![](../../assets/v7-only.svg)
+
 
 Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die Konfiguration von Adobe Campaign-Optionen. Einige sind bei der Installation von Campaign integriert, andere können bei Bedarf manuell hinzugefügt werden. Die verfügbaren Optionen variieren je nach den mit Ihrer Instanz installierten Packages.
 

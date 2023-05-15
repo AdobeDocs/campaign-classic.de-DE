@@ -2,11 +2,12 @@
 product: campaign
 title: Beendigung der Unterstützung für TLS 1.0 und 1.1
 description: Beendigung der Unterstützung für TLS 1.0 und 1.1
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: e18d43b6-2a77-4881-85e7-ca36248d4634
-source-git-commit: ee7c85f94fc03f6cfca8da11ddea5ebd32d0b2b4
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '842'
 ht-degree: 100%
@@ -15,7 +16,7 @@ ht-degree: 100%
 
 # Beendigung der Unterstützung für TLS 1.0 und 1.1{#eol-tls-support}
 
-![](../../assets/v7-only.svg)
+
 
 Adobe unterstützt keine Benutzersysteme und Client-Systeme mehr, die nicht mit dem Protokoll Transport Layer Security (TLS) 1.2 konform sind. Falls Sie weiterhin ältere Versionen von TLS verwenden, könnten Sie den Zugriff auf alle Produkte und Services von Adobe verlieren.
 
@@ -44,7 +45,7 @@ Ihr Betriebssystem und Ihre Anwendungen müssen auch TLS 1.2 unterstützen. Wenn
 
 * **Was ist Transport Layer Security (TLS)?**
 
-   [Transport Layer Security](https://de.wikipedia.org/wiki/Transport_Layer_Security) (TLS) ist ein Sicherheitsprotokoll, das Datenschutz und Datenintegrität zwischen zwei kommunizierenden Anwendungen ermöglicht. Dieses Protokoll wird häufig für Webbrowser und andere Anwendungen eingesetzt, bei denen Daten sicher über ein Netzwerk ausgetauscht werden müssen.
+   [Transport Layer Security](https://de.wikipedia.org/wiki/Transport_Layer_Security) (TLS) ist ein Sicherheitsprotokoll, das Datenschutz und Datenintegrität zwischen zwei kommunizierenden Anwendungen ermöglicht. Dieses Protokoll wird häufig bei Webbrowsern und anderen Anwendungen bereitgestellt, bei denen Daten sicher über ein Netzwerk ausgetauscht werden müssen.
 
    Gemäß der Protokollspezifikation umfasst TLS zwei Ebenen: das TLS-Record-Protokoll und das TLS-Handshake-Protokoll. Das Record-Protokoll bietet Verbindungssicherheit. Das Handshake-Protokoll ermöglicht es dem Server und Client, sich gegenseitig zu authentifizieren und vor dem Datenaustausch Verschlüsselungsalgorithmen und kryptografische Schlüssel auszuhandeln.
 

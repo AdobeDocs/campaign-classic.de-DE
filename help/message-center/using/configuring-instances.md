@@ -1,12 +1,13 @@
 ---
 product: campaign
 title: Instanzen konfigurieren
-description: Erfahren Sie, wie Sie die Kontroll- und Ausführungsinstanzen für Transaktionsnachrichten in Adobe Campaign Classic konfigurieren.
+description: Erfahren Sie, wie Sie die Kontroll- und Ausführungsinstanzen für Transaktionsnachrichten in Adobe Campaign Classic konfigurieren
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 23a384d1-27ce-46c2-98c3-0fb60a5c50ee
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1277'
 ht-degree: 100%
@@ -16,7 +17,7 @@ ht-degree: 100%
 
 # Instanzen konfigurieren {#creating-a-shared-connection}
 
-![](../../assets/v7-only.svg)
+
 
 Zur Nutzung der Transaktionsnachrichten-Funktionen müssen Sie die Kontroll- und Ausführungsinstanzen konfigurieren. Sie können dazu Folgendes verwenden:
 * [Eine Kontrollinstanz](#control-instance), die mit einer oder mehreren Ausführungsinstanzen verknüpft ist
@@ -105,9 +106,9 @@ Wiederholen Sie diese Schritte bei Verwendung mehrerer Ausführungsinstanzen, um
 
 Jeder Ausführungsinstanz muss eine eindeutige Kennung zugewiesen werden, damit der Verlauf der einzelnen Ausführungsinstanzen bei der Anzeige auf der Kontrollinstanz unterschieden werden kann.
 
-Diese Kennung kann den einzelnen Ausführungsinstanzen **manuell** zugeordnet werden. In diesem Fall muss dieser Schritt **für jede Ausführungsinstanz** ausgeführt werden. Verwenden Sie dazu den Software-Verteilungs-Assistenten wie im Folgenden beschrieben:
+Diese Kennung kann den einzelnen Ausführungsinstanzen **manuell** zugeordnet werden. In diesem Fall muss dieser Schritt **für jede Ausführungsinstanz** ausgeführt werden. Verwenden Sie dazu den Bereitstellungsassistenten wie im Folgenden beschrieben:
 
-1. Öffnen Sie den Software-Verteilungs-Assistenten auf einer Ausführungsinstanz.
+1. Öffnen Sie den Bereitstellungassistenten auf einer Ausführungsinstanz.
 1. Rufen Sie das Fenster **[!UICONTROL Message Center]** auf.
 1. Weisen Sie der Instanz die ausgewählte Kennung zu.
 

@@ -1,12 +1,13 @@
 ---
 product: campaign
 title: Ereignisbeschreibung
-description: Erfahren Sie, wie Sie Transaktionsnachrichtenereignisse in Adobe Campaign Classic mithilfe von SOAP-Methoden verwalten.
+description: Erfahren Sie, wie Sie Transaktionsnachrichtenereignisse in Adobe Campaign Classic mithilfe von SOAP-Methoden verwalten
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: message-center
 content-type: reference
 topic-tags: introduction
 exl-id: 9f7f4b6c-2ee8-4091-847d-f616d6abeb6b
-source-git-commit: c30d64e6930cb97f4a3c15acd97654d57d1bbf85
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '762'
 ht-degree: 100%
@@ -15,11 +16,11 @@ ht-degree: 100%
 
 # Ereignisbeschreibung {#event-description}
 
-![](../../assets/v7-only.svg)
+
 
 ## Transaktionsnachrichten-Datenmodell {#about-transactional-messaging-datamodel}
 
-Transaktionsnachrichten basieren auf dem Adobe Campaign-Datenmodell und verwenden zwei zusätzliche separate Tabellen. Diese [Tabellen](../../configuration/using/data-model-description.md#message-center-module), **NmsRtEvent** und **NmsBatchEvent**, enthalten dieselben Felder, wobei die eine zur Verwaltung von Echtzeit-Ereignissen dient, die andere zur Verwaltung von Batch-Ereignissen.
+Transaktionsnachrichten basieren auf dem Adobe Campaign-Datenmodell und verwenden zwei zusätzliche, separate Tabellen. Diese [Tabellen](../../configuration/using/data-model-description.md#message-center-module), **NmsRtEvent** und **NmsBatchEvent**, enthalten dieselben Felder, wobei die eine zur Verwaltung von Echtzeit-Ereignissen dient, die andere zur Verwaltung von Batch-Ereignissen.
 
 ## SOAP-Methoden {#soap-methods}
 

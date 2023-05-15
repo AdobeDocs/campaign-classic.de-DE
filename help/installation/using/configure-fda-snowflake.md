@@ -2,11 +2,12 @@
 product: campaign
 title: Zugriff auf Snowflake konfigurieren
 description: Erfahren Sie, wie Sie den Zugriff auf Snowflake in FDA konfigurieren
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: bdb5e422-ecfe-42eb-bd15-39fe5ec0ff1d
-source-git-commit: 26ae7ff1f0837a9a50057d97b00422a288b9dc7a
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '538'
 ht-degree: 38%
@@ -15,7 +16,7 @@ ht-degree: 38%
 
 # Zugriff auf Snowflake konfigurieren {#configure-access-to-snowflake}
 
-![](../../assets/v7-only.svg)
+
 
 Verwenden von Campaign **Federated Data Access** (FDA), um in einer externen Datenbank gespeicherte Informationen zu verarbeiten. Gehen Sie wie folgt vor, um den Zugriff auf [!DNL Snowflake].
 
@@ -24,7 +25,7 @@ Verwenden von Campaign **Federated Data Access** (FDA), um in einer externen Dat
 
 >[!NOTE]
 >
->Der [!DNL Snowflake]-Connector ist für gehostete und On-Premise-Implementierungen verfügbar. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../installation/using/capability-matrix.md).
+>Der [!DNL Snowflake]-Connector ist für gehostete und On-Premise-Bereitstellungen verfügbar. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../installation/using/capability-matrix.md).
 
 ![](assets/snowflake_3.png)
 
@@ -104,7 +105,7 @@ Sie müssen eine [!DNL Snowflake] externes Konto, um Ihre Campaign-Instanz mit I
       ![](assets/snowflake_4.png)
 
 
-1. Klicken Sie auf den Tab **[!UICONTROL Parameter]** und dann auf die Schaltfläche **[!UICONTROL Funktionen freigeben]**, um Funktionen zu erstellen.
+1. Klicken Sie auf den Tab **[!UICONTROL Parameter]** und dann auf die Schaltfläche **[!UICONTROL Funktionen bereitstellen]**, um Funktionen zu erstellen.
 
    >[!NOTE]
    >

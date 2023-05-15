@@ -2,9 +2,10 @@
 product: campaign
 title: Abfrage mit einer Viele-zu-viele-Beziehung
 description: Erfahren Sie, wie Sie mit einer Viele-zu-viele-Beziehung Abfragen durchführen können
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Query Editor
 exl-id: e1d40ba1-2493-45c1-bd54-af9cb332028d
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 100%
@@ -13,7 +14,7 @@ ht-degree: 100%
 
 # Abfrage mit einer Viele-zu-viele-Beziehung {#querying-using-a-many-to-many-relationship}
 
-![](../../assets/v7-only.svg)
+
 
 In diesem Beispiel werden die Empfänger gesucht, die innerhalb der letzten sieben Tage nicht kontaktiert wurden.
 

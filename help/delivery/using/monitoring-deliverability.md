@@ -1,19 +1,21 @@
 ---
 product: campaign
-title: Überwachen der Zustellbarkeit in Adobe Campaign Classic
-description: Erfahren Sie mehr über Tools und Richtlinien zum Überwachen der Zustellbarkeit in Adobe Campaign Classic.
+title: Überwachen der Zustellbarkeit in Adobe Campaign
+description: Erfahren Sie mehr über Tools und Richtlinien zum Überwachen der Zustellbarkeit in Adobe Campaign
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Deliverability
 exl-id: e4caa316-242f-46cd-a20b-a5eee5a0c456
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '552'
 ht-degree: 100%
 
 ---
 
 # Überwachen der Zustellbarkeit{#monitoring-deliverability}
 
-![](../../assets/common.svg)
+
 
 Im Folgenden finden Sie Details zu den verschiedenen Monitoring-Tools, die Adobe Campaign zur Verfügung stellt, sowie einige zusätzliche Richtlinien zur Nutzung der von Adobe Campaign angebotenen Funktionen zur Überwachung der Zustellbarkeit Ihrer Plattform.
 

@@ -2,11 +2,12 @@
 product: campaign
 title: Live-/Design-Umgebungen
 description: Live-/Design-Umgebungen
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: 965c4a6a-6535-454d-bd37-e9c8312b4d13
-source-git-commit: fb4b4c42b907e86813ea570f912312fccf893bfe
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 100%
@@ -15,7 +16,7 @@ ht-degree: 100%
 
 # Live-/Design-Umgebungen{#live-design-environments}
 
-![](../../assets/v7-only.svg)
+
 
 ## Grundprinzip {#operating-principle}
 
@@ -26,7 +27,7 @@ Interaction arbeitet mit zwei Angebotsumgebungstypen:
 
 ![](assets/offer_environments_overview_001.png)
 
-Jeder **[!UICONTROL Design-Umgebung]** entspricht eine **[!UICONTROL Live-Umgebung]**. Nach Erstellung eines Angebots unterlaufen sein Inhalt und die konfigurierten Eignungsregeln einen Validierungszyklus, nach dessen erfolgreichem Abschluss das Angebot automatisch für die **[!UICONTROL Live-Umgebung]** freigegeben wird. Nun kann es in Sendungen verwendet werden.
+Jeder **[!UICONTROL Design-Umgebung]** entspricht eine **[!UICONTROL Live-Umgebung]**. Nach Erstellung eines Angebots unterlaufen sein Inhalt und die konfigurierten Eignungsregeln einen Validierungszyklus, nach dessen erfolgreichem Abschluss das Angebot automatisch für die **[!UICONTROL Live-Umgebung]** bereitgestellt wird. Nun kann es in Sendungen verwendet werden.
 
 Standardmäßig verfügt Campaign über eine **[!UICONTROL Design]**-Umgebung und eine **[!UICONTROL Live]**-Umgebung, die mit der Design-Umgebung verknüpft ist. Beide Umgebungen sind für die integrierte Empfängertabelle vorkonfiguriert.
 

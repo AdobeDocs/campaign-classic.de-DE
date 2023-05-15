@@ -2,9 +2,11 @@
 product: campaign
 title: Prüfen vor dem Senden
 description: Sobald Ihre Nachricht fertig ist, führen Sie alle Prüfungen vor dem Senden durch
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Deliverability
 exl-id: 50d326b0-3c23-4dbf-9df6-d32b48e30f69
-source-git-commit: 808f459a0b77b1787fc017c031247ab268b5aafa
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 100%
@@ -13,7 +15,7 @@ ht-degree: 100%
 
 # Durchführen aller Prüfungen vor dem Senden {#perform-all-checks}
 
-![](../../assets/common.svg)
+
 
 Wenn Ihre Nachricht fertig ist, prüfen Sie, ob ihr Inhalt auf allen Geräten richtig dargestellt wird, und stellen Sie sicher, dass sie keine Fehler wie falsche Personalisierung oder defekte Links enthält.
 

@@ -2,9 +2,11 @@
 product: campaign
 title: Erstellen einer Freundschaftswerbungsumfrage
 description: Lernen Sie die Schritte zum Erstellen eines Freundschaftswerbungsformulars kennen
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Surveys
 exl-id: bd94c41a-813a-4ddb-a2bd-c3deab022482
-source-git-commit: 1f80c9967f4859f26dd2890d657f95ada6cf2087
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '623'
 ht-degree: 100%
@@ -13,7 +15,7 @@ ht-degree: 100%
 
 # Anwendungsfall: Erstellen eines Empfehlungsformulars{#use-case-creating-a-refer-a-friend-form}
 
-![](../../assets/common.svg)
+
 
 In diesem Beispiel soll den in der Datenbank befindlichen Empfängern ein Gewinnspiel angeboten werden. Das Webformular soll einen Bereich zur Eingabe der Antworten besitzen und einen anderen zur Eingabe der E-Mail-Adresse eines Freundes.
 

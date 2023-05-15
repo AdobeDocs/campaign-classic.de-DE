@@ -1,19 +1,21 @@
 ---
 product: campaign
 title: Personalisieren der Emoticon-Liste
-description: Erfahren Sie, wie Sie die Emoticon-Liste unter Verwendung von Adobe Campaign Classic personalisieren können
+description: Erfahren Sie, wie Sie die Emoticon-Liste unter Verwendung von Adobe Campaign personalisieren können
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email, Push
 exl-id: b8642df3-1960-4f2c-8273-c3988a3e85f0
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '473'
 ht-degree: 100%
 
 ---
 
 # Personalisieren der Emoticon-Liste {#customize-emoticons}
 
-![](../../assets/common.svg)
+
 
 Die im Popup angezeigten Emoticons werden in einer bestimmten Reihenfolge aufgelistet. Damit können Sie die Emoticons in einer Liste darstellen und deren Auswahl für bestimmte Felder beschränken.
 Die Reihenfolge der Emoticon-Liste kann angepasst werden; außerdem können Sie Ihrer Liste weitere Emoticons hinzufügen.

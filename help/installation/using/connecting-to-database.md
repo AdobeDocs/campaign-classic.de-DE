@@ -2,11 +2,12 @@
 product: campaign
 title: Verbindung zu einer externen Datenbank herstellen
 description: Erfahren Sie, wie Sie eine Verbindung zu einer externen Datenbank herstellen.
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 240d7e11-da3a-4d64-8986-1f1c8ebcea3c
-source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '687'
 ht-degree: 96%
@@ -15,7 +16,7 @@ ht-degree: 96%
 
 # Herstellung der Datenbankverbindung {#connecting-to-the-database}
 
-![](../../assets/v7-only.svg)
+
 
 Um eine Verbindung mit der externe Datenbank zu ermöglichen, müssen Sie die Verbindungsparameter angeben, d. h. die gewünschte Datenquelle und den Namen der Tabelle mit den zu ladenden Daten.
 

@@ -2,9 +2,11 @@
 product: campaign
 title: Wichtige Schritte zum Erstellen einer Umfrage
 description: Erste Umfrage mit Campaign erstellen
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Surveys
 exl-id: 22e14b24-59ba-4a92-8ffb-f5336793d64f
-source-git-commit: 1f80c9967f4859f26dd2890d657f95ada6cf2087
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '963'
 ht-degree: 100%
@@ -13,7 +15,7 @@ ht-degree: 100%
 
 # Wichtige Schritte zum Erstellen einer Umfrage{#getting-started-with-surveys}
 
-![](../../assets/common.svg)
+
 
 Hier finden Sie einen kurzen Überblick über die wichtigsten Schritte zur Erstellung einer einfachen Umfrage unter Verwendung der folgenden nativen Vorlage:
 

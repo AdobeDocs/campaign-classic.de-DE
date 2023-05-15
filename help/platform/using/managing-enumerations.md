@@ -2,20 +2,21 @@
 product: campaign
 title: Auflistungen verwalten
 description: Auflistungen verwalten
+badge: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 2ece058d-b493-4fea-b3db-322cf7ea7f4f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '935'
-ht-degree: 100%
+source-wordcount: '946'
+ht-degree: 98%
 
 ---
 
 # Auflistungen verwalten{#managing-enumerations}
 
-![](../../assets/common.svg)
+
 
 Eine Auflistung ist eine Liste mit vom System vorgeschlagenen Werten für das Ausfüllen bestimmter Felder. Mithilfe von Auflistungen können Sie die Werte dieser Felder vereinheitlichen und die Dateneingabe und Nutzung in Abfragen vereinfachen.
 

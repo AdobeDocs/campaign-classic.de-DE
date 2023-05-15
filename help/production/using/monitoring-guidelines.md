@@ -1,10 +1,11 @@
 ---
 product: campaign
 title: Richtlinien für das Überwachen
-description: Entdecken Sie Richtlinien und Best Practices zur Überwachung von Campaign-Instanzen und -Prozessen.
+description: Entdecken Sie Richtlinien und Best Practices zur Überwachung von Campaign-Instanzen und -Prozessen
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Monitoring
 exl-id: ca0c33c5-7350-462a-bc65-4cab51e529d9
-source-git-commit: c54102b2ec32fbea89ce41dd3c9fedb98e612996
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '763'
 ht-degree: 29%
@@ -13,7 +14,7 @@ ht-degree: 29%
 
 # Richtlinien für das Überwachen {#monitoring-guidelines}
 
-![](../../assets/v7-only.svg)
+
 
 ## Instanz-Monitoring-Dashboard {#instance-monitoring-dashboard}
 

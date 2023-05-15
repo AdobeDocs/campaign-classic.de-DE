@@ -2,9 +2,10 @@
 product: campaign
 title: Aggregat-Update
 description: Erfahren Sie mehr über die Workflow-Aktivität "Aggregat-Update".
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: d2b26af0-30a1-4852-acd5-996795f198a1
-source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '127'
 ht-degree: 100%
@@ -13,7 +14,7 @@ ht-degree: 100%
 
 # Aggregat-Update{#update-aggregate}
 
-![](../../assets/v7-only.svg)
+
 
 Aggregate dienen Berichtszwecken und werden auf Cube-Niveau definiert. Bei der Konfiguration von Aggregaten steht die Registerkarte **[!UICONTROL Workflow]** zur Verfügung.
 

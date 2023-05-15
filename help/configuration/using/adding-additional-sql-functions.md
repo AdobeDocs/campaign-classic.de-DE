@@ -2,8 +2,9 @@
 product: campaign
 title: Hinzufügen zusätzlicher SQL-Funktionen
 description: Erfahren Sie, wie Sie zusätzliche SQL-Funktionen definieren
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: 04b0a0e5-d6df-447c-ac67-66adb1bdf717
-source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1026'
 ht-degree: 0%
@@ -11,8 +12,6 @@ ht-degree: 0%
 ---
 
 # Zusätzliche SQL-Funktionen definieren{#adding-additional-sql-functions}
-
-![](../../assets/v7-only.svg)
 
 Mit Adobe Campaign kann der Benutzer **eigene Funktionen** , die auf SQL-Funktionen zugreifen können, sowohl auf die von der Datenbank angebotenen Funktionen als auch auf die Funktionen, die noch nicht in der Konsole verfügbar sind. Dies ist beispielsweise bei Aggregatfunktionen (Durchschnitt, Maximum, Summe) nützlich, die nur auf dem Server berechnet werden können oder wenn die Datenbank eine einfachere Möglichkeit bietet, bestimmte Funktionen zu implementieren, anstatt den Ausdruck manuell in die Konsole zu schreiben (z. B. Datumsverwaltung).
 

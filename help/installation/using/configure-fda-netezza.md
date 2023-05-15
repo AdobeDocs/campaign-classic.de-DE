@@ -2,11 +2,12 @@
 product: campaign
 title: Zugriff auf Netezza konfigurieren
 description: Erfahren Sie, wie Sie den Zugriff auf Netezza in FDA konfigurieren
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: b148d34b-4060-4c54-9cb2-9e712a7c17d7
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '389'
 ht-degree: 80%
@@ -15,7 +16,7 @@ ht-degree: 80%
 
 # Zugriff auf Netezza konfigurieren {#configure-access-to-netezza}
 
-![](../../assets/v7-only.svg)
+
 
 Verwenden von Campaign [Federated Data Access](../../installation/using/about-fda.md) (FDA), um in externen Datenbanken gespeicherte Informationen zu verarbeiten. Gehen Sie wie folgt vor, um den Zugriff auf Netezza zu konfigurieren.
 

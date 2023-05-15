@@ -1,12 +1,13 @@
 ---
 product: campaign
 title: Ergänzende Konfigurationen
-description: Erfahren Sie, wie Sie ergänzende Konfigurationen für Transaktionsnachrichten in Adobe Campaign Classic einrichten.
+description: Erfahren Sie, wie Sie ergänzende Konfigurationen für Transaktionsnachrichten in Adobe Campaign Classic einrichten
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '786'
 ht-degree: 100%
@@ -15,7 +16,7 @@ ht-degree: 100%
 
 # Ergänzende Konfigurationen {#mc-additional-configurations}
 
-![](../../assets/v7-only.svg)
+
 
 ## Schwellenwerte überwachen {#monitoring-thresholds}
 
@@ -23,7 +24,7 @@ Sie können die Hinweis- und Warnschwellen der Kennzahlen konfigurieren (orange 
 
 Gehen Sie dazu wie folgt vor:
 
-1. Öffnen Sie den Software-Verteilungs-Assistenten auf der **Ausführungsinstanz**.
+1. Öffnen Sie den Bereitstellungassistenten auf der **Ausführungsinstanz**.
 
 1. Navigieren Sie zur Seite **[!UICONTROL Message Center]**.
 
@@ -33,11 +34,11 @@ Gehen Sie dazu wie folgt vor:
 
 >[!NOTE]
 >
->Die Anzahl der Ereignisse in der Warteschlange wird im Bereich [Systemindikator](../../production/using/monitoring-processes.md#system-indicators) der Prozessüberwachungsseite von Adobe Campaign angezeigt. Weiterführende Informationen zum Software-Verteilungs-Assistenten finden Sie in [diesem Abschnitt](../../installation/using/deploying-an-instance.md#deployment-wizard).
+>Die Anzahl der Ereignisse in der Warteschlange wird im Bereich [Systemindikator](../../production/using/monitoring-processes.md#system-indicators) der Prozessüberwachungsseite von Adobe Campaign angezeigt. Weiterführende Informationen zum Bereitstellungassistenten finden Sie in [diesem Abschnitt](../../installation/using/deploying-an-instance.md#deployment-wizard).
 
 ## Ereignisse bereinigen {#purging-events}
 
-Die Dauer der Speicherung der Ereignisse in der Datenbank kann über den [Implementierungsassistenten](../../production/using/database-cleanup-workflow.md#deployment-wizard) konfiguriert werden.
+Die Dauer der Speicherung der Ereignisse in der Datenbank kann über den [Bereitstellungsassistenten](../../production/using/database-cleanup-workflow.md#deployment-wizard) konfiguriert werden.
 
 Die Bereinigung der Ereignisse wird automatisch vom [Datenbankbereinigungs-Workflow](../../production/using/database-cleanup-workflow.md) durchgeführt. Gelöscht werden dabei die in den Ausführungsinstanzen empfangenen und gespeicherten Ereignisse sowie die in der Kontrollinstanz archivierten Ereignisse.
 

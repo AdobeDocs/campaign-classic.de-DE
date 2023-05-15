@@ -2,8 +2,9 @@
 product: campaign
 title: Integrationen mit Workflows von Adobe Experience Cloud-Lösungen
 description: Erfahren Sie mehr über die Integrationen mit Workflows von Adobe Experience Cloud-Lösungen.
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 topic-tags: technical-workflows
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '109'
 ht-degree: 100%
@@ -13,7 +14,7 @@ ht-degree: 100%
 
 # Integrationen mit Adobe Experience Cloud-Lösungen{#integrations-with-adobe-experience-cloud-solutions}
 
-![](../../assets/v7-only.svg)
+
 
 Die folgenden Workflows werden mit dem Modul **Integration mit Adobe Experience Cloud** standardmäßig installiert. Weiterführende Informationen zu dem Modul finden Sie in diesem [Abschnitt](../../integrations/using/configuring-ims.md#installing-the-package).
 

@@ -2,9 +2,11 @@
 product: campaign
 title: Automatisieren über Workflows
 description: Erfahren Sie, wie Sie Content-Management über Workflows automatisieren können
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Workflows
 exl-id: bc6ebf5d-cc21-4750-9713-2bf259e7d6bf
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 100%
@@ -13,7 +15,7 @@ ht-degree: 100%
 
 # Automatisieren mit Workflows{#automating-via-workflows}
 
-![](../../assets/common.svg)
+
 
 ## Inhaltsverwaltungsaktivitäten {#content-management-activity}
 

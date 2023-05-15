@@ -2,8 +2,9 @@
 product: campaign
 title: Dezentrales Marketing
 description: Erfahren Sie mehr über das Package "Dezentrales Marketing".
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Data Management, Distributed Marketing
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '69'
 ht-degree: 100%
@@ -13,7 +14,7 @@ ht-degree: 100%
 
 # Dezentrales Marketing{#distributed-marketing}
 
-![](../../assets/v7-only.svg)
+
 
 Der folgende Workflow wird mit dem Modul **Dezentrales Marketing** installiert. Weiterführende Informationen zum Modul finden Sie in diesem [Abschnitt](../../distributed/using/about-distributed-marketing.md).
 

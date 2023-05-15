@@ -2,9 +2,10 @@
 product: campaign
 title: Über Aktionsaktivitäten
 description: Über Aktionsaktivitäten
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Data Management
 exl-id: 8758601b-c4bd-4179-8816-305d1a68d499
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 100%
@@ -13,7 +14,7 @@ ht-degree: 100%
 
 # Aktionsaktivitäten in Workflows{#about-action-activities}
 
-![](../../assets/v7-only.svg)
+
 
 * **Versand**: erlaubt Ihnen das Konfigurieren einer Versandaktion. Siehe Abschnitt [Versand](delivery.md).
 * **Versand bearbeiten**: erlaubt es, einen Versand zu starten, auszusetzen oder anzuhalten. Weitere Informationen hierzu finden Sie im Abschnitt [Versand bearbeiten](delivery-control.md).

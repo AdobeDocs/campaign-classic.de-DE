@@ -2,9 +2,11 @@
 product: campaign
 title: Über native Berichte in Campaign
 description: Über native Berichte in Campaign
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Reporting
 exl-id: afb11ab5-bd60-4262-9dd1-fcda19cdaca0
-source-git-commit: 81716a30a57d3ed8542b329d5fb9b0443fd4bf31
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 100%
@@ -13,7 +15,7 @@ ht-degree: 100%
 
 # Über native Berichte in Campaign{#about-campaign-built-in-reports}
 
-![](../../assets/common.svg)
+
 
 Dieses Kapitel enthält eine Liste der nativen Adobe-Campaign-Berichte, ihren Inhalt und den Kontext ihrer Verwendung. Die nachfolgenden Erläuterungen sollen es den Benutzern ermöglichen, standardmäßig in der Plattform verfügbare Berichte zu nutzen und somit unnötigen Konfigurationsaufwand zu vermeiden.
 

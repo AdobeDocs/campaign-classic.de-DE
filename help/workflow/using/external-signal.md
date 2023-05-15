@@ -2,9 +2,10 @@
 product: campaign
 title: Externes Signal
 description: Erfahren Sie mehr über die Workflow-Aktivität "Externes Signal".
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: da84d3ff-1e64-45ef-bef0-da4a24d93461
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 100%
@@ -13,7 +14,7 @@ ht-degree: 100%
 
 # Externes Signal{#external-signal}
 
-![](../../assets/v7-only.svg)
+
 
 Ein **Externes Signal** löst die Ausführung einer Reihe von Aufgaben innerhalb eines Workflows aus.
 

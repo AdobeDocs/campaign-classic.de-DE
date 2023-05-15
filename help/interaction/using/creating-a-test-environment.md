@@ -2,11 +2,12 @@
 product: campaign
 title: Erstellung einer Testumgebung
 description: Erstellung einer Testumgebung
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 exl-id: 49ac279b-bc67-4311-b0a4-0e23f2a99c52
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '126'
 ht-degree: 100%
@@ -15,7 +16,7 @@ ht-degree: 100%
 
 # Erstellung einer Testumgebung{#creating-a-test-environment}
 
-![](../../assets/v7-only.svg)
+
 
 Gehen Sie wie folgt vor, um eine Testumgebung (Sandbox) zu erstellen:
 
@@ -33,6 +34,6 @@ Gehen Sie wie folgt vor, um eine Testumgebung (Sandbox) zu erstellen:
    ![](assets/offer_env_creation_001bis.png)
 
 1. Erstellen Sie auf die gleiche Weise die Unterordner und Elemente der Umgebung und führen Sie die gewünschten Tests durch.
-1. Nach Abschluss Ihrer Tests können Sie die in der Testumgebung enthaltenen Elemente zur tatsächlichen Verwendung freigeben. Duplizieren Sie hierzu die Angebote und Platzierungen in Ihre Live-Umgebung (Rechtsklick > **[!UICONTROL Aktionen]** > **[!UICONTROL Freigeben]** ).
+1. Nach Abschluss Ihrer Tests können Sie die in der Testumgebung enthaltenen Elemente zur tatsächlichen Verwendung freigeben. Duplizieren Sie hierzu die Angebote und Platzierungen in Ihre Live-Umgebung (Rechtsklick > **[!UICONTROL Aktionen]** > **[!UICONTROL Bereitstellen]** ).
 
    ![](assets/migration_interaction_5.png)

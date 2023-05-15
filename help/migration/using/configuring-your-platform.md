@@ -2,13 +2,14 @@
 product: campaign
 title: Anpassen der Konfiguration
 description: Erfahren Sie, wie Sie Ihre Konfiguration vor und nach einer Migration zu Campaign v7 anpassen.
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: migration
 content-type: reference
 topic-tags: migration-procedure
 hide: true
 hidefromtoc: true
 exl-id: ad71dead-c0ca-42d5-baa8-0f340979231a
-source-git-commit: 80cf56e330731237d5e7b394381b737f30f8b350
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '472'
 ht-degree: 3%
@@ -17,7 +18,7 @@ ht-degree: 3%
 
 # Anpassen der Konfiguration{#configuring-your-platform}
 
-![](../../assets/v7-only.svg)
+
 
 Bestimmte wichtige Änderungen in Adobe Campaign v7 erfordern eine spezifische Konfiguration. Diese Konfigurationen können vor oder nach der Migration erforderlich sein.
 
@@ -159,7 +160,7 @@ Nach Ausführung **postupgrade**, aktivieren und konfigurieren Sie die folgenden
 
 ## Specific configurations from a v5.11 to v7{#specific-configurations-in-v5-11}
 
-![](../../assets/v7-only.svg)
+
 
 This section details the additional configuration required when migrating from v5.11. You should also configure the settings detailed in the [General configurations](../../migration/using/general-configurations.md) section.
 
@@ -305,7 +306,7 @@ The obsolete folders to be deleted after the migration are as follows:
 
 ## Specific configurations from v6.02 to v7{#specific-configurations-in-v6-02}
 
-![](../../assets/v7-only.svg)
+
 
 The following section details the additional configuration required when migrating from v6.02. You should also configure the settings detailed in [this page](../../migration/using/general-configurations.md).
 

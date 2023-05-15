@@ -2,11 +2,13 @@
 product: campaign
 title: Tutorials
 description: Tutorials
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: e612a4e7-f4ef-4db4-afab-5544b73430d3
-source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 100%
@@ -15,7 +17,7 @@ ht-degree: 100%
 
 # Tutorials{#tutorials}
 
-![](../../assets/common.svg)
+
 
 ## Schrittweise Anleitungen {#step-by-step-guides}
 
@@ -26,7 +28,7 @@ Unsere intuitiven Handbücher bieten Ihnen einen einfachen Einstieg in Adobe Cam
 * [Verwalten der Zustellbarkeit](../../delivery/using/about-deliverability.md): In diesem Dokument erfahren Sie Begriffe und Best Practices im Zusammenhang mit der Zustellbarkeit sowie Informationen zu den Werkzeugen zur Versandoptimierung von Adobe Campaign Classic.
 * [Best Practices beim Versand](../../delivery/using/delivery-best-practices.md): Hier erfahren Sie über Best Practices in Bezug auf das Nachrichtendesign und den Versand mit Adobe Campaign Classic.
 * [Build-Aktualisierung durchführen](https://helpx.adobe.com/de/campaign/kb/acc-build-upgrade.html): In diesem Dokument erfahren Sie die wichtigsten Schritte und Best Practices zur Durchführung einer Build-Aktualisierung bei Campaign Classic.
-* [Checkliste zur Sicherheitskonfiguration](https://helpx.adobe.com/de/campaign/kb/acc-security.html): Hier erfahren Sie, welche Schlüsselelemente geprüft werden müssen, um eine sichere Konfiguration für On-Premise-Anwendungen zu gewährleisten.
+* [Checkliste zur Sicherheitskonfiguration](https://helpx.adobe.com/de/campaign/kb/acc-security.html): Hier erfahren Sie, welche Schlüsselelemente geprüft werden müssen, um eine sichere Konfiguration für die On-Premise-Bereitstellung zu gewährleisten.
 
 Lernen Sie Adobe Campaign besser kennen, indem Sie sich die folgenden Anwendungsbeispiele durchlesen:
 

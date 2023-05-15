@@ -2,9 +2,10 @@
 product: campaign
 title: Verwalten und Anpassen von Listen
 description: Erfahren Sie, wie Sie Listen durchsuchen und konfigurieren.
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Audiences, Data Management
 exl-id: 21656cc2-15a1-4156-8897-ea4fe3e9b97f
-source-git-commit: fdb840a9e6349f074378899e07f794b62fb5b054
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1198'
 ht-degree: 100%
@@ -13,7 +14,7 @@ ht-degree: 100%
 
 # Verwalten und Anpassen von Listen{#manage-and-customize-lists}
 
-![](../../assets/v7-only.svg)
+
 
 Sie können mit dem Explorer auf die Listen von Datensätzen in der Campaign-Datenbank zugreifen. Sie können diese Listen filtern, Suchvorgänge durchführen und Informationen hinzufügen sowie Daten filtern und sortieren.
 
@@ -99,7 +100,7 @@ Eine weitere Möglichkeit zum Hinzufügen von Spalten besteht im Listenkonfigura
 
 ### Neue Spalte erstellen {#create-a-new-column}
 
-Sie können neue Spalten erstellen, um zusätzliche Felder in der Liste anzuzeigen. Gehen Sie dazu folgendermaßen vor:
+Sie können neue Spalten erstellen, um zusätzliche Felder in der Liste anzuzeigen. Gehen Sie dazu wie folgt vor:
 
 1. Wählen Sie rechts unten von der Liste **[!UICONTROL Liste konfigurieren]** aus.
 1. Wählen Sie **[!UICONTROL Hinzufügen]** aus, um die Ausgabespalten um ein weiteres Feld zu ergänzen.
@@ -163,7 +164,7 @@ Wählen Sie im Fenster der Ordnereigenschaften **[!UICONTROL Speichern]** aus, u
 
 ## Exportieren einer Liste {#exporting-a-list}
 
-Zum Export von Listendaten steht Ihnen der Export-Assistent zur Verfügung. Markieren Sie die zu exportierenden Datensätze und klicken Sie mit der rechten Maustaste auf die Liste. Wählen Sie dann im Kontextmenü die Option **[!UICONTROL Exportieren...]**.
+Zum Exportieren von Listendaten steht Ihnen der Export-Assistent zur Verfügung. Markieren Sie die zu exportierenden Datensätze und klicken Sie mit der rechten Maustaste auf die Liste. Wählen Sie dann im Kontextmenü die Option **[!UICONTROL Exportieren…]**.
 
 Die Verwendung der Import- und Exportfunktionen wird unter [Allgemeine Importe und Exporte](../../platform/using/about-generic-imports-exports.md) erläutert.
 

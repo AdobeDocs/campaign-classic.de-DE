@@ -2,9 +2,10 @@
 product: campaign
 title: Datei-Wächter
 description: Erfahren Sie mehr über die Workflow-Aktivität "Datei-Wächter".
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Data Management
 exl-id: bbec389e-c2ba-4b23-847f-b01dca6b8d5a
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '565'
 ht-degree: 100%
@@ -13,13 +14,13 @@ ht-degree: 100%
 
 # Datei-Wächter{#file-collector}
 
-![](../../assets/v7-only.svg)
+
 
 Die **Datei-Wächter-Aktivität** überwacht ein Verzeichnis und aktiviert ihre Transition bei jedem neuen Eingang von Dateien. Für jedes Ereignis enthält eine **[!UICONTROL filename]**-Variable den vollständigen Namen der eingegangenen Datei. Die abgerufenen Dateien werden zu Verlaufszwecken und damit sie nur einmal berücksichtigt werden in ein anderes Verzeichnis verschoben.
 
 Standardmäßig ist der Datei-Wächter eine persistente Aufgabe, die zu den in der Planung definierten Zeitpunkten das Verzeichnis auf das Vorhandensein von Dateien prüft.
 
-Die Dateien müssen sich auf dem Server befinden, auf dem das wfserver-Modul des betreffenden Workflows ausgeführt wird. Wenn verschiedene wfserver-Module auf derselben Instanz laufen, muss die Affinität entweder der die Dateien verwendenden Aktivitäten oder des Workflows angegeben werden.
+Die Dateien müssen sich auf dem Server befinden, auf dem das wfserver-Modul des betreffenden Workflows ausgeführt wird. Wenn verschiedene wfserver-Module auf derselben Instanz bereitgestellt werden, muss die Affinität entweder der die Dateien verwendenden Aktivitäten oder des Workflows angegeben werden.
 
 ## Eigenschaften {#properties}
 

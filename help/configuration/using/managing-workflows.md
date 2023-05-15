@@ -2,11 +2,13 @@
 product: campaign
 title: Workflows verwalten
 description: Workflows verwalten
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 exl-id: 617b0050-6b04-4c68-9f63-511baae99f41
-source-git-commit: fb4b4c42b907e86813ea570f912312fccf893bfe
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 4%
@@ -15,7 +17,7 @@ ht-degree: 4%
 
 # Workflows verwalten{#managing-workflows}
 
-![](../../assets/common.svg)
+
 
 Standardmäßig basieren Ihre neuen Workflows auf einer vorkonfigurierten Workflow-Vorlage, die auf einer Empfängertabelle (nms:recipient) basiert. Damit sie automatisch auf der benutzerdefinierten Empfängertabelle basieren, auf die im Abschnitt **Nms_DefaultRcpSchema** -Option (siehe [Benutzeroberfläche konfigurieren](../../configuration/using/configuring-the-interface.md) ), müssen Sie eine neue Workflow-Vorlage erstellen.
 

@@ -2,20 +2,21 @@
 product: campaign
 title: E-Mail-Archivierung
 description: E-Mail-Archivierung
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 424faf25-2fd5-40d1-a2fc-c715fc0b8190
-source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '1313'
-ht-degree: 87%
+source-wordcount: '1367'
+ht-degree: 85%
 
 ---
 
 # E-Mail-BCC konfigurieren {#email-archiving}
 
-![](../../assets/v7-only.svg)
+
 
 Sie können Adobe Campaign so konfigurieren, dass von den von der Plattform gesendeten E-Mails eine Kopie beibehalten wird.
 
@@ -34,6 +35,9 @@ Dazu werden E-Mail-Dateien, die den gesendeten E-Mails entsprechen, auf einen Re
 * Das E-Mail-Archivierungssystem wurde mit Adobe Campaign 17.2 (Build 8795) geändert. Wenn Sie bereits die E-Mail-Archivierung verwendet haben, müssen Sie manuell auf das neue E-Mail-BCC-System aktualisieren. Weitere Informationen hierzu finden Sie im Abschnitt [Wechseln zum neuen E-Mail-BCC](#updated-email-archiving-system--bcc-) Abschnitt.
 
 ## Aktivieren von E-Mail-BCC (vor Ort) {#activating-email-archiving--on-premise-}
+
+[!BADGE On-Premise und Hybrid]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für On-Premise- und Hybridbereitstellungen"}
+
 
 Gehen Sie wie unten beschrieben vor, um die BCC-E-Mail-Archivierung zu aktivieren, wenn Adobe Campaign vor Ort installiert ist.
 
@@ -102,6 +106,9 @@ Stellen Sie sicher, dass Sie diese Parameter an den E-Mail-Versand-Durchsatz anp
 
 ## BCC-E-Mail-Adresse konfigurieren (vor Ort) {#configuring-the-bcc-email-address--on-premise-}
 
+[!BADGE On-Premise und Hybrid]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für On-Premise- und Hybridbereitstellungen"}
+
+
 >[!IMPORTANT]
 >
 >Aus Datenschutzgründen müssen BCC-E-Mails von einem Archivierungssystem bearbeitet werden, in dem personenbezogene Daten (PII, Personally Identifiable Information) sicher aufbewahrt werden.
@@ -124,6 +131,10 @@ Verwenden Sie in der **config-`<instance name>.xml`** -Datei die folgenden Param
 >Darüber hinaus weist der Relais allen E-Mails, einschließlich der nicht gesendeten E-Mails, den Status **[!UICONTROL Gesendet]** zu. Daher werden alle Nachrichten archiviert.
 
 ## Wechseln zum neuen E-Mail-BCC {#updated-email-archiving-system--bcc-}
+
+[!BADGE On-Premise und Hybrid]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für On-Premise- und Hybridbereitstellungen"}
+
+
 
 >[!IMPORTANT]
 >

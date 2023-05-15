@@ -1,10 +1,11 @@
 ---
 product: campaign
 title: Technische Workflows
-description: Erfahren Sie mehr über die technischen Workflows, die mit Campaign Classic-Packages verfügbar sind.
+description: Erfahren Sie mehr über die technischen Workflows, die mit Campaign Classic-Packages verfügbar sind
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
-source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1715'
 ht-degree: 100%
@@ -13,7 +14,7 @@ ht-degree: 100%
 
 # Technische Workflows{#about-technical-workflows}
 
-![](../../assets/v7-only.svg)
+
 
 ## Über technische Workflows {#overview}
 
@@ -40,7 +41,7 @@ Weiterführende Informationen zur Verfolgung technischer Workflows finden Sie in
 | **Erfassen von Daten für den HeatMap-Service** (collectDataHeatMapService) | Standardmäßig installiert | Dieser Workflow ruft die für den HeatMap-Service erforderlichen Daten ab. |
 | **Erfassen von Datenschutzanfragen** (collectPrivacyRequests) | Datenschutzbestimmung | Mit diesem Workflow werden die in Adobe Campaign gespeicherten Empfängerdaten abgerufen und auf dem Bildschirm zur Datenschutzanfrage für den Download bereitgestellt. |
 | **Kostenberechnung** (budgetMgt) | Marketing-Kampagnen (Campaign) | Dieser Workflow berechnet Ausgaben- und Kostenposten für Budgets, Pläne, Programme, Kampagnen, Sendungen und Aufgaben. |
-| **Datenbankbereinigung** (cleanup) | Versand | Dieser Workflow ist der Datenbankwartungs-Workflow: Er führt verschiedene Berechnungen aus den Statistiken und Prozessen durch und löscht veraltete Daten aus der Datenbank gemäß der definierten Konfiguration im Implementierungsassistenten. Er wird standardmäßig jeden Tag um 4 Uhr morgens ausgelöst. Weitere Informationen dazu finden Sie auf [dieser Seite](../../production/using/database-cleanup-workflow.md#monitoring-campaign-classic). |
+| **Datenbankbereinigung** (cleanup) | Versand | Dieser Workflow ist der Datenbankwartungs-Workflow: Er führt verschiedene Berechnungen mit Statistiken und Prozessen durch und löscht gemäß der definierten Konfiguration im Bereitstellungsassistenten veraltete Daten aus der Datenbank . Er wird standardmäßig jeden Tag um 4 Uhr morgens ausgelöst. Weitere Informationen dazu finden Sie auf [dieser Seite](../../production/using/database-cleanup-workflow.md#monitoring-campaign-classic). |
 | **Löschen von gesperrten LINE-Benutzern** (deleteBlockedLineUsersV2) | LINE-Kanal | Dieser Workflow stellt sicher, dass die Daten der LINE V2-Benutzer gelöscht werden, nachdem sie das offizielle LINE-Konto 180 Tage lang gesperrt haben. |
 | **Löschen von Datenschutzanfragedaten** (deletePrivacyRequestsData) | Datenschutzbestimmung | Mit diesem Workflow werden die in Adobe Campaign gespeicherten Empfängerdaten gelöscht. |
 | **Versand-Indikatoren** (deliveryIndicators) | Mid-Sourcing-Plattform | Dieser Workflow aktualisiert Tracking-Indikatoren eines Versands. Er wird standardmäßig stündlich ausgelöst. |
@@ -62,7 +63,7 @@ Weiterführende Informationen zur Verfolgung technischer Workflows finden Sie in
 | **Mid-Sourcing (Versandzähler)** (defaultMidSourcingDlv) | Weiterleitung an Mid-Sourcing | Dieser Workflow ruft Informationen bezüglich der Zählung von Sendungen vom Mid-Sourcing-Server ab. Zu diesen Informationen gehören allgemeine Indikatoren zum Versand wie etwa die Anzahl der Sendungen. Tracking-Informationen wie etwa Öffnungen sind nicht enthalten. Dieser Workflow wird standardmäßig alle zehn Minuten ausgelöst. |
 | **Mid-Sourcing (Versand-Logs)** (defaultMidSourcingLog) | Weiterleitung an Mid-Sourcing | Dieser Workflow ruft Versand-Logs vom Mid-Sourcing-Server ab. Er wird standardmäßig stündlich ausgelöst. |
 | **NMAC-Abmeldungsverwaltung** (mobileAppOptOutMgt) | Mobile-App-Kanal | Dieser Workflow aktualisiert die Abmeldungen von Benachrichtigungen auf Smartphones und Tablets. Er wird standardmäßig alle sechs Stunden zwischen 1 Uhr morgens und Mitternacht ausgelöst. Weitere Informationen finden Sie in [diesem Abschnitt](../../delivery/using/understanding-quarantine-management.md#push-notification-quarantines). |
-| **Benachrichtigung über Angebote** (offerMgt) | Versand | Dieser Workflow gibt validierte Angebote sowie die im Angebotskatalog enthaltenen Kategorien in die Online-Umgebung frei. |
+| **Benachrichtigung über Angebote** (offerMgt) | Versand | Dieser Workflow stellt validierte Angebote sowie die im Angebotskatalog enthaltenen Kategorien in die Online-Umgebung bereit. |
 | **Bereinigung angehaltener Workflows** (cleanupPausedWorkflows) | Versand | In diesem Workflow werden angehaltene Workflows analysiert, für die eine normale Prioritätsstufe festgelegt wurde. Er löst Warnhinweise und Benachrichtigungen aus, wenn sie zu lange angehalten werden. Nach einem Monat werden ausgesetzte technische Workflows bedingungslos gestoppt. Standardmäßig wird dieser Workflow jeden Montag um 5 Uhr morgens ausgelöst. Weitere Informationen finden Sie unter [Handhabung angehaltener Workflows](monitoring-workflow-execution.md#handling-of-paused-workflows). |
 | **Datenschutzanfragebereinigung** (cleanupPrivacyRequests) | Datenschutzbestimmung | Mit diesem Workflow werden Dateien mit Zugriffsanfragen gelöscht, die älter als 90 Tage sind. |
 | **Verarbeitung von Batch-Ereignissen** (batchEventsProcessing) | Ausführung einer Transaktionsnachricht (Message Center – Ausführung) | Mit diesem Workflow können Sie Batch-Ereignisse in eine Warteschlange stellen, bevor ihnen eine Nachrichtenvorlage zugeordnet wird. |

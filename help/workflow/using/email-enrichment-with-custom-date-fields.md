@@ -2,9 +2,10 @@
 product: campaign
 title: E-Mail-Anreicherung mit benutzerdefinierten Datumsfeldern
 description: Erfahren Sie, wie Sie E-Mails mit benutzerdefinierten Datumsfeldern anreichern.
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: 85e0ec2a-b7cb-4d0b-a281-9ad72594403a
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '631'
 ht-degree: 100%
@@ -13,7 +14,7 @@ ht-degree: 100%
 
 # E-Mail-Anreicherung mit benutzerdefinierten Datumsfeldern{#email-enrichment-with-custom-date-fields}
 
-![](../../assets/v7-only.svg)
+
 
 In diesem Beispiel möchten wir Empfängern, die im aktuellen Monat Geburtstag feiern, eine E-Mail mit benutzerdefinierten Datumsfeldern senden. Die E-Mail soll einen Gutschein enthalten, der bis zu einer Woche vor und nach ihrem Geburtstag gültig ist.
 

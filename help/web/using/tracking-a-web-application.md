@@ -2,9 +2,11 @@
 product: campaign
 title: Nachverfolgen von Besuchen in einem Web-Programm
 description: Nachverfolgen von Besuchen in einem Web-Programm
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Web Apps
 exl-id: 07bd36ce-c701-4998-974f-81fd4fac22a0
-source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 100%
@@ -13,7 +15,7 @@ ht-degree: 100%
 
 # Nachverfolgen von Besuchen in einem Web-Programm{#tracking-a-web-application}
 
-![](../../assets/common.svg)
+
 
 Mit Adobe Campaign können Sie Besuche auf Seiten von Web-Anwendungen verfolgen und messen, indem Sie Tracking-Tags einfügen. Diese Funktion kann für alle Typen von Web-Anwendungen (Formulare, Web-Seiten usw.) verwendet werden.
 
@@ -55,7 +57,7 @@ Um die Traffic-Herkunft in einer Webanwendung festzustellen, sucht Adobe Campaig
 
 >[!NOTE]
 >
->Das anonyme Tracking ist nur verfügbar, wenn die Option bei der Installation von Campaign im Software-Verteilungs-Assistenten aktiviert wurde.
+>Das anonyme Tracking ist nur verfügbar, wenn die Option bei der Installation von Campaign im Bereitstellungassistenten aktiviert wurde.
 
 ## Mit dem Digital Content Editor (DCE) erstellte Web-Anwendungen  {#web-applications-designed-with-digital-content-editor--dce-}
 

@@ -2,11 +2,13 @@
 product: campaign
 title: Versionen 2020
 description: Weiterführende Informationen zu Campaign Classic-Versionen 2020
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Overview
 role: User
 level: Beginner
+hidefromtoc: true
 exl-id: e2eb7e04-faaa-4df0-913d-471c291eeb03
-source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '6610'
 ht-degree: 100%
@@ -15,7 +17,7 @@ ht-degree: 100%
 
 # Versionen 2020 {#release-2020}
 
-![](../../assets/v7-only.svg)
+
 
 
 ## Version 20.3{#release-20-3}
@@ -277,7 +279,7 @@ _Mittwoch, 22. Juli 2020_
 * Fehlerkorrektur – Es wurde eine Regression korrigiert, die berechnete Felder in einem Workflow beeinträchtigte und dazu führte, dass der Workflow fehlschlug. (NEO-25194)
 * Fehlerkorrektur – Eine Regression, die verhinderte, dass die spontane Erstellung von Web-Tracking-URLs funktioniert, wurde korrigiert. (NEO-20999)
 * Fehlerkorrektur – Es wurde ein Regressionsfehler mit nativen Versandberichten behoben, die beim Exportieren in PDF abgeschnitten dargestellt wurden. (NEO-25757)
-* Es wurde ein Absturzproblem im Softwareverteilungs-Assistenten behoben.
+* Es wurde ein Absturzproblem im Bereitstellungassistenten behoben.
 * Fehlerkorrektur – Der Angebotsbenachrichtigungs-Workflow funktioniert jetzt nach einem Postupgrade richtig.
 * Der iOS-HTTP2-Connector wurde verbessert (Updates von Drittanbietern und Fehlerverwaltung). (NEO-25904, NEO-25903)
 * Die Liste &quot;jarsToSkip&quot; in &quot;catalina.properties&quot; wurde aktualisiert, um den Verweis auf eine nicht mehr verwendete JAR-Datei zu entfernen (iOS-Benachrichtigungen).

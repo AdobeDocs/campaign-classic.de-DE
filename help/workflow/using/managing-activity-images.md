@@ -2,9 +2,10 @@
 product: campaign
 title: Ändern von Aktivitätsbildern
 description: Erfahren Sie, wie Sie das Aktivitätsbild ändern
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 exl-id: cafdbc10-9c10-4d42-a485-c9880df8d371
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 100%
@@ -13,7 +14,7 @@ ht-degree: 100%
 
 # Ändern von Aktivitätsbildern{#change-activity-images}
 
-![](../../assets/v7-only.svg)
+
 
 Die in Workflow-Diagrammen verwendeten Bilder können angepasst werden. Sie müssen jedoch gewisse Auflagen erfüllen. Gehen Sie wie folgt vor:
 

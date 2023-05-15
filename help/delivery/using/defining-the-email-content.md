@@ -1,19 +1,21 @@
 ---
 product: campaign
 title: Definieren des E-Mail-Inhalts in Adobe Campaign Classic
-description: Hier erfahren Sie, wie Sie mit Adobe Campaign Classic den E-Mail-Inhalt definieren können.
+description: Hier erfahren Sie, wie Sie mit Adobe Campaign  den E-Mail-Inhalt definieren können.
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email Design
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: f5bd8c1806440b47225130070e166d90d99dcc75
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '2064'
+source-wordcount: '2063'
 ht-degree: 100%
 
 ---
 
 # Definieren des E-Mail-Inhalts {#defining-the-email-content}
 
-![](../../assets/common.svg)
+
 
 ## Absender {#sender}
 
@@ -28,7 +30,7 @@ Informationen zum Einfügen und Verwenden von Personalisierungsfeldern finden Si
 >[!NOTE]
 >
 >* Die Absenderadresse wird standardmäßig auch als Antwortadresse verwendet.
->* Die E-Mail-Header-Parameter müssen zwingend angegeben werden. Standardmäßig sind die Werte, die bei der Konfiguration des Softwareverteilungs-Assistenten angegeben wurden, vorausgefüllt. Weiterführende Informationen finden Sie im [Installationshandbuch](../../installation/using/deploying-an-instance.md).
+>* Die E-Mail-Header-Parameter müssen zwingend angegeben werden. Standardmäßig sind die Werte, die bei der Konfiguration des Bereitstellungassistenten angegeben wurden, vorausgefüllt. Weiterführende Informationen finden Sie im [Installationshandbuch](../../installation/using/deploying-an-instance.md).
 >* Die Angabe der Absenderadresse ist für den E-Mail-Versand zwingend erforderlich (gemäß RFC-Standard).
 >* Adobe Campaign führt eine Syntax-Prüfung der angegebenen E-Mail-Adressen durch.
 
@@ -158,7 +160,7 @@ Diese Bilder können:
 
 >[!IMPORTANT]
 >
->Um E-Mails über den Versand-Assistenten mit Bildern zu versehen, muss die Konfiguration der Adobe-Campaign-Instanz die Verwaltung öffentlicher Ressourcen zulassen. Dies wird im Softwareverteilungs-Assistenten festgelegt. In [diesem Abschnitt](../../installation/using/deploying-an-instance.md) finden Sie weiterführende Hinweise zur Konfiguration.
+>Um E-Mails über den Versand-Assistenten mit Bildern zu versehen, muss die Konfiguration der Adobe-Campaign-Instanz die Verwaltung öffentlicher Ressourcen zulassen. Dies wird im Bereitstellungassistenten festgelegt. In [diesem Abschnitt](../../installation/using/deploying-an-instance.md) finden Sie weiterführende Hinweise zur Konfiguration.
 
 Der Versand-Assistent bietet die Möglichkeit, lokale oder in der Bibliothek enthaltene Bilder in den Inhalt der Nachrichten einzuschließen. Wählen Sie hierfür die Schaltfläche **[!UICONTROL Bild]** in der Symbolleiste des HTML-Inhalts aus.
 
@@ -207,7 +209,7 @@ Für jedes erkannte Bild können Sie den Status prüfen:
 
 * Lokale oder auf anderen Servern gespeicherte Bilder werden als **[!UICONTROL Noch nicht online]** gekennzeichnet, auch wenn der Server von außerhalb zugänglich ist (beispielsweise bei Bildern einer Webseite).
 * Bilder werden als **[!UICONTROL Bereits online]** gekennzeichnet, wenn Sie zuvor, z. B. bei Erstellung eines anderen Versands, online gestellt wurden.
-* Im Softwareverteilungs-Assistenten können Sie URLs angeben, die bei der Bilderkennung nicht berücksichtigt werden sollen. Das Online-Stellen dieser Bilder wird demnach **[!UICONTROL Ignoriert]**.
+* Im Bereitstellungassistenten können Sie URLs angeben, die bei der Bilderkennung nicht berücksichtigt werden sollen. Das Online-Stellen dieser Bilder wird demnach **[!UICONTROL Ignoriert]**.
 
 >[!NOTE]
 >

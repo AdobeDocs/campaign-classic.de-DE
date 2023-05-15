@@ -2,11 +2,12 @@
 product: campaign
 title: Eingestellte und entfernte Funktionen von Campaign Classic
 description: Auf dieser Seite finden Sie eine Liste eingestellter und entfernter Funktionen von Adobe Campaign Classic
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Overview
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 0ecf9c69cc4b444feda1e42701a3a27f2b2e7eeb
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1684'
 ht-degree: 100%
@@ -15,7 +16,7 @@ ht-degree: 100%
 
 # Eingestellte und entfernte Funktionen {#deprecated-and-removed-features}
 
-![](../../assets/v7-only.svg)
+
 
 Adobe evaluiert laufend die Funktionen seiner Produkte, um ältere Funktionen durch neuere Alternativen zu ersetzen. Auf diese Weise kann der Kundennutzen unter sorgfältiger Berücksichtigung der Abwärtskompatibilität verbessert werden. Da Adobe Campaign Classic mit Tools von Drittanbietern arbeitet, wird die Kompatibilität regelmäßig aktualisiert, um nur unterstützte Versionen zu implementieren. Versionen, die nicht mehr mit Adobe Campaign Classic kompatibel sind, sind im Folgenden und in der [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md) aufgeführt.
 
@@ -35,7 +36,7 @@ In diesem Abschnitt werden Funktionen aufgeführt, die bei den aktuellen Campaig
 
 Im Allgemeinen werden Funktionen, die in einer zukünftigen Version entfernt werden sollen, zuerst als eingestellt gekennzeichnet. Diese Funktionen sind für neue Campaign Standard-Kunden entweder nicht mehr verfügbar oder sollten für keine neue Implementierung mehr verwendet werden. Sie werden auch aus der Produktdokumentation entfernt.
 
-Kunden wird empfohlen, die Nutzung der Funktionen in ihrer aktuellen Implementierung zu prüfen und Pläne zur Änderung ihrer Implementierung zu erstellen. Achten Sie auf das geplante Datum für die Entfernung, um Ihre Umgebungs- und Projektaktualisierungen zu planen.
+Kunden wird empfohlen, die Nutzung der Funktionen in ihrer aktuellen Bereitstellung zu prüfen und Pläne zur Änderung ihrer Bereitstellung zu erstellen. Achten Sie auf das geplante Datum für die Entfernung, um Ihre Umgebungs- und Projektaktualisierungen zu planen.
 
 <table> 
  <tbody> 

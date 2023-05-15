@@ -2,13 +2,14 @@
 product: campaign
 title: Migration zu Campaign Classic
 description: Erfahren Sie, wie Sie von einer früheren Campaign-Version zu Campaign Classic migrieren
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: migration
 content-type: reference
 topic-tags: migration-overview
 hide: true
 hidefromtoc: true
 exl-id: 3050238d-6f77-4ffa-9aef-677ab8009388
-source-git-commit: 80cf56e330731237d5e7b394381b737f30f8b350
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 4%
@@ -17,7 +18,7 @@ ht-degree: 4%
 
 # Erste Schritte mit der Migration{#about-migration}
 
-![](../../assets/v7-only.svg)
+
 
 In diesem Dokument werden die Voraussetzungen für eine Migration sowie die Schritte für eine Migration zu Adobe Campaign Classic v7 beschrieben. Schritte und optionale Einstellungen hängen von Ihrer Konfiguration ab.
 

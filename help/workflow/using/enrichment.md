@@ -2,9 +2,10 @@
 product: campaign
 title: Anreicherung
 description: Erfahren Sie mehr über die Workflow-Aktivität "Anreicherung".
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Enrichment Activity, Targeting Activity
 exl-id: 4c7bc0f3-5877-47dc-bd72-dc94fb7bd479
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1421'
 ht-degree: 100%
@@ -13,7 +14,7 @@ ht-degree: 100%
 
 # Anreicherung{#enrichment}
 
-![](../../assets/v7-only.svg)
+
 
 Eine **[!UICONTROL Anreicherung]** ermöglicht die Ergänzung einer Profilliste durch Zusatzdaten und das Hinzufügen von Relationen zu existierenden Tabellen. Dabei können Abstimmkriterien in Bezug auf die bereits in der Datenbank enthaltenen Profile definiert werden.
 

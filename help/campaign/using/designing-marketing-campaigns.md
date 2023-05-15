@@ -2,9 +2,10 @@
 product: campaign
 title: Entwerfen und Ausführen von Marketing-Kampagnen
 description: Entwerfen, Optimieren, Ausführen und Analysieren von Marketing-Kampagnen
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Campaigns
 exl-id: 4e0df18f-3623-4dfb-a2f8-ad293dbc4dd5
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 100%
@@ -13,7 +14,6 @@ ht-degree: 100%
 
 # Entwerfen und Ausführen von Marketing-Kampagnen{#designing-marketing-campaigns}
 
-![](../../assets/v7-only.svg)
 
 Mit Adobe Campaign können Sie Kommunikations- und Marketing-Kampagnen definieren, optimieren, ausführen und analysieren. Adobe Campaign fungiert dabei als zentrales Befehls- und Ausführungszentrum für Marketing-Strategien. Weitere Informationen finden Sie unter [Auf Kampagnen zugreifen](../../distributed/using/accessing-campaigns.md) und [Marketing-Kampagnen erstellen](../../campaign/using/setting-up-marketing-campaigns.md).
 

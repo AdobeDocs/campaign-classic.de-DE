@@ -2,20 +2,21 @@
 product: campaign
 title: Erste Schritte mit Campaign-Benutzern
 description: Erfahren Sie, wie Sie Campaign-Benutzer erstellen und verwalten.
+badge: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Access Management, Permissions
 role: User, Admin
 level: Beginner
 exl-id: 580282ce-ee30-422a-8724-9c328637cc39
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '1214'
-ht-degree: 100%
+source-wordcount: '1225'
+ht-degree: 99%
 
 ---
 
 # Erstellen und Verwalten von Benutzern {#operators}
 
-![](../../assets/common.svg)
+
 
 ## Erste Schritte mit Campaign-Benutzern  {#about-operators}
 

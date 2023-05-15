@@ -2,11 +2,12 @@
 product: campaign
 title: Profile hinzufügen
 description: Profile hinzufügen
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Profiles
 role: User
 level: Beginner
 exl-id: befa8948-ef2e-4f4d-a002-3f26d8516a0d
-source-git-commit: fdb840a9e6349f074378899e07f794b62fb5b054
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '76'
 ht-degree: 100%
@@ -15,7 +16,7 @@ ht-degree: 100%
 
 # Hinzufügen von Profilen{#adding-profiles}
 
-![](../../assets/v7-only.svg)
+
 
 Meist werden Profile [über einen Workflow in Campaign importiert](../../platform/using/import-export-workflows.md). Es besteht aber auch die Möglichkeit, neue Profile direkt über die Benutzeroberfläche hinzuzufügen. Wählen Sie hierzu die Schaltfläche **[!UICONTROL Erstellen]** aus.
 

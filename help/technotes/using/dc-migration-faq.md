@@ -2,11 +2,12 @@
 product: campaign
 title: Häufig gestellte Fragen zur Migration zu Adobe Managed Services (Public Cloud)
 description: Häufig gestellte Fragen zur Migration von Campaign Classic zur Public Cloud
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Overview
 role: User
 level: Beginner
 exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
-source-git-commit: 02eebe83de49ee97e573b0c47ca1fddb2195b991
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '2215'
 ht-degree: 100%
@@ -15,7 +16,7 @@ ht-degree: 100%
 
 # Häufig gestellte Fragen zur Migration zur Public Cloud{#dc-faq}
 
-![](../../assets/v7-only.svg)
+
 
 Adobe nutzt das alte Rechenzentrum nicht länger: Campaign Classic-Instanzen müssen in Public Cloud Amazon Web Services (AWS) übertragen werden. [Erfahren Sie mehr über diese Initiative](dc-migration.md).
 

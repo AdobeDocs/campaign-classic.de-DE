@@ -1,12 +1,14 @@
 ---
 product: campaign
 title: Nutzung von SFTP-Servern
-description: Erfahren Sie mehr über die Best Practices für die Nutzung von SFTP-Servern und die Fehlerbehebung.
+description: Erfahren Sie mehr über die Best Practices für die Nutzung von SFTP-Servern und die Fehlerbehebung
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: d585a5d4-ea33-43c8-aa37-4d892025374a
-source-git-commit: 1d32161d60f6b382188012b104c642f504e28645
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '1161'
 ht-degree: 100%
@@ -15,7 +17,7 @@ ht-degree: 100%
 
 # Best Practices für die Nutzung von SFTP-Servern und die Fehlerbehebung {#sftp-server-usage}
 
-![](../../assets/common.svg)
+
 
 ## Allgemeine Empfehlungen zu SFTP-Servern {#global-recommendations}
 

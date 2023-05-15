@@ -2,11 +2,13 @@
 product: campaign
 title: Opt-out aus dem Verkauf von personenbezogenen Daten
 description: Erfahren Sie mehr zum Opt-out aus dem Verkauf personenbezogener Daten
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 8e308a9f-14a4-4a25-9fd0-8d4bdbcf74ce
-source-git-commit: 42b420d7dae7d38e9f4df442146d3b484c25e831
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '592'
 ht-degree: 100%
@@ -15,7 +17,7 @@ ht-degree: 100%
 
 # Opt-out aus dem Verkauf von personenbezogenen Daten (CCPA) {#sale-of-personal-information-ccpa}
 
-![](../../assets/common.svg)
+
 
 Der **California Consumer Privacy Act** (CCPA) gibt in Kalifornien ansässigen Personen neue Rechte in Bezug auf ihre personenbezogenen Daten und verpflichtet bestimmte in Kalifornien tätige Unternehmen zur Einhaltung von Datenschutzvorschriften.
 

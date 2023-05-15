@@ -2,11 +2,12 @@
 product: campaign
 title: Erste Schritte mit der Verwaltung von Marketing-Ressourcen
 description: Lernen Sie die Verwaltung von Marketing-Ressourcen kennen.
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: 8cf4d30d-f914-438d-8836-030202b6a449
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 100%
@@ -15,13 +16,13 @@ ht-degree: 100%
 
 # Erste Schritte mit der Verwaltung von Marketing-Ressourcen{#about-marketing-resource-management}
 
-![](../../assets/v7-only.svg)
+
 
 Das Modul **Marketing Resource Management (MRM)** ermöglicht die Steuerung kollaborativer Marketing-Aktionen durch eine vollständige Verwaltung und Echtzeit-Verfolgung von Aufgaben, Budgets und verwendeten Marketing-Ressourcen.
 
 Adobe-Campaign-Benutzer können so ihre Aktionen koordinieren und mithilfe von umfassenden Validierungsprozessen und benutzerfreundlichen Verfolgungswerkzeugen den reibunglosen Ablauf aller Etappen sicherstellen: Berichte, Validierungsverfolgung, Benachrichtigungen, Forumsdiskussionen etc. Die Benutzer werden im Falle von Fehlern oder Verspätungen und bei jeder neuen Validierungsetappe benachrichtigt.
 
-So können im Rahmen von Programmen und Unterprogrammen der Marketingpläne Aufgaben erstellt, den beteiligten Benutzern zugewiesen und über ihre gesamte Ausführung hinweg verwaltet werden.
+So können im Rahmen von Programmen und Unterprogrammen der Marketing-Pläne Aufgaben erstellt, den beteiligten Benutzern zugewiesen und über ihre gesamte Ausführung hinweg verwaltet werden.
 
 **MRM** ermöglicht zudem die Verwaltung von Marketing-Ressourcen, die von mehreren Beteiligten bearbeitet werden. Die Überwachung dieser Ressourcen wird über ein hierfür vorgesehenes Dashboard durchgeführt.
 

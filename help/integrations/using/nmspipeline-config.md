@@ -2,9 +2,11 @@
 product: campaign
 title: Pipeline-Option "NmsPipeline_Config"
 description: Pipeline-Option "NmsPipeline_Config"
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: integrations
 content-type: reference
-source-git-commit: 36b10a49fe92853f98beeb9e7d2fea3f59b10b6f
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 100%
@@ -14,7 +16,7 @@ ht-degree: 100%
 
 # Pipeline-Option &quot;NmsPipeline_Config&quot; {#nmspipeline_config}
 
-![](../../assets/common.svg)
+
 
 Sobald die Authentifizierung funktioniert, kann [!DNL pipelined] die Ereignisse abrufen und verarbeiten. Verarbeitet werden nur Auslöser, die in Adobe Campaign konfiguriert wurden; andere werden ignoriert. Der Auslöser muss zuvor mit Analytics erzeugt und in die Pipeline gepusht worden sein.
 Die Option kann auch mit einem Platzhalter konfiguriert werden, um alle Auslöser unabhängig vom Namen zu erfassen.

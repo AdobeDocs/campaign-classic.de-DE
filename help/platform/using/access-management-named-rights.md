@@ -2,20 +2,21 @@
 product: campaign
 title: Spezifische Berechtigungen zum Einrichten von Berechtigungen verwenden
 description: Erfahren Sie, wie Sie spezifische Berechtigungen zum Einrichten von Berechtigungen verwenden.
+badge: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Access Management, Permissions
 role: User, Admin
 level: Beginner
 exl-id: 07470a91-d8d2-4c41-9555-05522c8068f0
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '562'
-ht-degree: 100%
+source-wordcount: '573'
+ht-degree: 98%
 
 ---
 
 # Spezifische Berechtigungen zum Einrichten von Zugriffsberechtigungen verwenden{#named-rights}
 
-![](../../assets/common.svg)
+
 
 Adobe Campaign bietet standardmäßig eine Reihe von spezifischen Berechtigungen, die Benutzern und Gruppen bestimmte Rechte einräumen. Diese Berechtigungen können über den Verzeichnisknoten **[!UICONTROL Administration > Zugriffe > Spezifische Berechtigungen]** bearbeitet werden.
 

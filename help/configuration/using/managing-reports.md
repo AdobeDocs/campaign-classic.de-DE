@@ -2,8 +2,10 @@
 product: campaign
 title: Berichte verwalten
 description: Berichte verwalten
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 exl-id: 68908664-3cf6-4a6c-a327-c7f059c27aa3
-source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 3%
@@ -12,7 +14,7 @@ ht-degree: 3%
 
 # Berichte verwalten{#managing-reports}
 
-![](../../assets/common.svg)
+
 
 Berichte, die auf einem Schema basieren, das speziell für die Standard-Adobe Campaign-Empfänger bestimmt ist (nm:recipient oder schema verknüpft), müssen neu entwickelt werden, um die Daten der benutzerdefinierten Tabelle und deren über das Zielgruppen-Mapping verknüpften Tabellen zu berücksichtigen (siehe [Zielgruppen-Mapping](../../configuration/using/target-mapping.md) Abschnitt).
 

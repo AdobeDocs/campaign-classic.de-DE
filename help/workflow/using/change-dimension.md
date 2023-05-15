@@ -2,9 +2,10 @@
 product: campaign
 title: Dimensionsänderung
 description: Dimensionsänderung
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Targeting Activity
 exl-id: c3de99f8-089f-4c7c-be11-f375a9463eaa
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 100%
@@ -13,7 +14,7 @@ ht-degree: 100%
 
 # Dimensionsänderung{#change-dimension}
 
-![](../../assets/v7-only.svg)
+
 
 Die Dimensionsänderung ermöglicht den Wechsel der Zielgruppendimension im Verlauf der Zielbestimmung. Je nach Datenmodell und Eingangsdimension können Sie beispielsweise von der Dimension &quot;Policen&quot; zur Dimension &quot;Kunden&quot; wechseln.
 

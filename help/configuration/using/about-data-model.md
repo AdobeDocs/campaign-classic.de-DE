@@ -2,9 +2,10 @@
 product: campaign
 title: Erste Schritte mit dem Campaign Classic-Datenmodell
 description: Erfahren Sie, wie Sie das Datenmodell von Campaign erweitern, Schemata bearbeiten, APIs verwenden und vieles mehr
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Data Model
 exl-id: 655b5928-b005-442f-b026-2f1b0c1abb99
-source-git-commit: 8fa50d17a9ff36ccc310860ac93771590cfd76fd
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 32%
@@ -12,8 +13,6 @@ ht-degree: 32%
 ---
 
 # Erste Schritte mit dem Campaign-Datenmodell{#about-data-model}
-
-![](../../assets/v7-only.svg)
 
 Das konzeptionelle Datenmodell der Adobe Campaign-Datenbank besteht aus einer Reihe integrierter Tabellen und deren Interaktion. Die wichtigsten Tabellen und Konzepte sind auf dieser Seite aufgeführt.
 

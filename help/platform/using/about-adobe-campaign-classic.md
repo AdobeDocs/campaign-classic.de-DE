@@ -1,12 +1,13 @@
 ---
 product: campaign
 title: Über Adobe Campaign Classic
-description: Einführung in die wichtigsten Funktionen, die Benutzeroberfläche und globale Richtlinien.
+description: Hier kann man die wichtigsten Funktionen, die Benutzeroberfläche und die globalen Richtlinien kennenlernen
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Overview
 role: User
 level: Beginner
 exl-id: 8febceb0-9694-4045-a630-a7ff2fd18943
-source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 100%
@@ -15,7 +16,7 @@ ht-degree: 100%
 
 # Erste Schritte mit Campaign Classic{#about-adobe-campaign-classic}
 
-![](../../assets/v7-only.svg)
+
 
 Mit dem Ziel einer verbesserten Kundenbindung und herausragender Kundenerlebnisse müssen Marken an allen Kontaktpunkten (Touchpoints) eine einheitliche Customer Journey anbieten. Vermarkter können jetzt kanalübergreifende Marketing-Kampagnen effizient entwerfen, planen, ausführen, verwalten und optimieren, die eine hohe Rendite für Marketing-Investitionen erzielen und die Kundentreue fördern.
 

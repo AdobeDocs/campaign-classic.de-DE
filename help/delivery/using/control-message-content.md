@@ -2,9 +2,11 @@
 product: campaign
 title: Über die Zustellbarkeit in Adobe Campaign Classic
 description: Erfahren Sie mehr über die Verwaltung der Zustellbarkeit in Adobe Campaign 
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Deliverability
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '772'
 ht-degree: 100%
@@ -13,7 +15,7 @@ ht-degree: 100%
 
 # Steuern der Nachrichteninhalte{#control-message-content}
 
-![](../../assets/common.svg)
+
 
 Um sicherzustellen, dass Ihre E-Mails Ihre Empfänger erreichen und um Ihre E-Mail-Zustellrate zu verbessern, müssen sie eine Reihe von Regeln beachten. Andernfalls kann der Inhalt bestimmter Nachrichten als Spam eingestuft werden. Adobe Campaign stellt Ihnen mehrere Tools zur Verfügung, die Ihnen ermöglichen, Ihre Inhalte entsprechend diesen Regeln zu erstellen.
 
@@ -35,7 +37,7 @@ Weitere Tipps zur Optimierung der Zustellbarkeit beim Entwerfen von Inhalten fin
 
 Bestimmte Internet-Anbieter überprüfen die Gültigkeit der Absenderadresse (**[!UICONTROL Von]**), bevor sie Nachrichten annehmen. Eine fehlerhafte Adresse kann dazu führen, dass sie vom empfangenden Server abgelehnt wird.
 
-Sie müssen sicherstellen, dass auf Instanzebene (Menü **[!UICONTROL Tools > Erweitert > Softwareverteilungs-Assistent...]**) oder in den am häufigsten verwendeten Szenarien eine richtige Adresse angegeben wird.
+Sie müssen sicherstellen, dass auf Instanzebene (Menü **[!UICONTROL Tools > Erweitert > Bereitstellungassistent...]**) oder in den am häufigsten verwendeten Szenarien eine richtige Adresse angegeben wird.
 
 Weitere Informationen hierzu finden Sie auf [dieser Seite](defining-the-email-content.md).
 

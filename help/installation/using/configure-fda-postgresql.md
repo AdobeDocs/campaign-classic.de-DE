@@ -2,8 +2,9 @@
 product: campaign
 title: Zugriff auf PostgreSQL konfigurieren
 description: Erfahren Sie, wie Sie den Zugriff auf PostgreSQL konfigurieren
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: 2c678f45-2555-4647-9885-bd002db7df37
-source-git-commit: 6b7638eec1718edf30f81005cd6691dd271aaa0c
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 14%
@@ -12,7 +13,7 @@ ht-degree: 14%
 
 # Zugriff auf PostgreSQL konfigurieren {#configure-fda-postgresql}
 
-![](../../assets/v7-only.svg)
+
 
 Verwenden von Campaign **Federated Data Access** (FDA), um in einer externen PostgreSQL-Datenbank gespeicherte Informationen zu verarbeiten.
 
@@ -62,7 +63,7 @@ Sie müssen eine [!DNL PostgreSQL] externes Konto, um Ihre Campaign-Instanz mit 
 
    * **[!UICONTROL Zeitzone]**: Zeitzone festgelegt in [!DNL PostgreSQL]. [Weitere Informationen](https://www.postgresql.org/docs/7.2/timezones.html)
 
-1. Klicken Sie auf den Tab **[!UICONTROL Parameter]** und dann auf die Schaltfläche **[!UICONTROL Funktionen freigeben]**, um Funktionen zu erstellen.
+1. Klicken Sie auf den Tab **[!UICONTROL Parameter]** und dann auf die Schaltfläche **[!UICONTROL Funktionen bereitstellen]**, um Funktionen zu erstellen.
 
    >[!NOTE]
    >

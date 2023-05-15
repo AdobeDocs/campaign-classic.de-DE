@@ -2,9 +2,10 @@
 product: campaign
 title: Erstellen von Filtern
 description: Erfahren Sie, wie Sie bei Abfragen einen Filter erstellen können
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Query Editor, Workflows
 exl-id: 297ea1e1-39ef-4b99-aaaa-9e88611fb1bf
-source-git-commit: 6232e0df09165bc07c8e521df271874abd5698a9
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 100%
@@ -13,7 +14,7 @@ ht-degree: 100%
 
 # Erstellen von Filtern {#creating-a-filter}
 
-![](../../assets/v7-only.svg)
+
 
 Filter werden in Adobe Campaign über Filterbedingungen definiert, die ähnlich wie Abfragen erstellt werden.
 

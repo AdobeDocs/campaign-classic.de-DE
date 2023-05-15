@@ -2,9 +2,10 @@
 product: campaign
 title: Deduplizierung
 description: Erfahren Sie mehr über die Workflow-Aktivität "Deduplizierung".
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Targeting Activity
 exl-id: 38add4fe-6238-45de-863e-895ebca189b7
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1146'
 ht-degree: 100%
@@ -13,7 +14,7 @@ ht-degree: 100%
 
 # Deduplizierung{#deduplication}
 
-![](../../assets/v7-only.svg)
+
 
 Die Deduplizierung dient der Identifizierung von Dubletten in der oder den eingehenden Aktivitäten. Zur Identifizierung können beispielsweise die E-Mail-Adresse, eine Telefonnummer oder andere Felder herangezogen werden.
 

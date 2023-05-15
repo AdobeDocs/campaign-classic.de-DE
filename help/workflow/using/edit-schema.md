@@ -2,9 +2,10 @@
 product: campaign
 title: Schema-Bearbeitung
 description: Erfahren Sie mehr über die Workflow-Aktivität "Schema-Bearbeitung".
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Targeting Activity
 exl-id: d26966a8-b5db-4fa4-85ec-7ebd770c4ef3
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '118'
 ht-degree: 100%
@@ -13,7 +14,7 @@ ht-degree: 100%
 
 # Schema-Bearbeitung{#edit-schema}
 
-![](../../assets/v7-only.svg)
+
 
 Mithilfe der **[!UICONTROL Schema-Bearbeitung]** lassen sich Daten im Workflow umwandeln, standardisieren und bei Bedarf anreichern. Sie dient im Allgemeinen dazu, die Struktur der Daten zu harmonisieren: Ausgabespalten können umbenannt und ihr Inhalt verändert werden, beispielsweise durch Berechnung eines Durchschnitts oder Aggregats ausgehend von den ursprünglichen Werten.
 

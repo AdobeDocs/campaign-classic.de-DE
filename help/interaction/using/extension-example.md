@@ -2,11 +2,13 @@
 product: campaign
 title: Beispiel einer Erweiterung
 description: Beispiel einer Erweiterung
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 exl-id: d4acf99b-cef4-48f7-b4cd-c032ec12592f
-source-git-commit: 07a5742c6f142c786ad8ba2f8774e7e90e8cd191
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '153'
 ht-degree: 100%
@@ -15,7 +17,7 @@ ht-degree: 100%
 
 # Beispiel einer Erweiterung{#extension-example}
 
-![](../../assets/common.svg)
+
 
 Im Fall eines eingehenden Kontakts (Callcenter oder Webseite) bestimmt das Angebotsmodul die besten zu unterbreitenden Angebote anhand einer Reihe von Eignungsregeln. Zur Anreicherung der Eignungskriterien Ihrer Angebote ist zunächst das Schema **nms:interaction zu erweitern**.
 

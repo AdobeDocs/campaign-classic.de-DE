@@ -2,9 +2,10 @@
 product: campaign
 title: Personalisierung und Datenschutz
 description: Best Practices für die Sicherheit von Datenschutz und Personalisierung
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: URL Personalization, Privacy
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: f97199e634205742b74a08932a40db2fca138cc3
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '855'
 ht-degree: 27%
@@ -13,7 +14,7 @@ ht-degree: 27%
 
 # Personalisierung und Datenschutz {#privacy}
 
-![](../../assets/v7-only.svg)
+
 
 
 ## URL-Personalisierung {#url-personalization}
@@ -156,7 +157,7 @@ Gehen Sie dazu wie folgt vor:
 
 ## Protect-Seiten mit API
 
-Wir empfehlen On-Premise-Kunden dringend, die Seiten zu schützen, die möglicherweise personenbezogene Daten (PIs) enthalten, z. B. Mirrorseiten, Webanwendungen usw.
+Wir empfehlen On-Premise-Kunden dringend, Seiten zu schützen, die möglicherweise personenbezogene Daten (PIs) enthalten, wie z. B. Mirrorseiten, Webanwendungen usw.
 
 Ziel dieses Verfahrens ist es, dass diese Seiten nicht indexiert werden, um ein mögliches Sicherheitsrisiko zu verhindern. Hier finden Sie einige hilfreiche Artikel:
 

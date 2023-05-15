@@ -2,13 +2,14 @@
 product: campaign
 title: Vor Beginn der Migration
 description: Vor Beginn der Migration
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: migration
 content-type: reference
 topic-tags: migration-procedure
 hide: true
 hidefromtoc: true
 exl-id: d666bc0b-596a-4908-9364-7df5bb8d68d0
-source-git-commit: 80cf56e330731237d5e7b394381b737f30f8b350
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 2%
@@ -17,7 +18,7 @@ ht-degree: 2%
 
 # Voraussetzungen{#before-starting-migration}
 
-![](../../assets/v7-only.svg)
+
 
 Auf dieser Seite werden bestimmte Schritte aufgeführt, die vor dem Starten des Migrationsprozesses ausgeführt werden müssen. Weitere Informationen finden Sie unter [diese Seite](about-migration.md) für weitere Hinweise.
 

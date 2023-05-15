@@ -2,9 +2,10 @@
 product: campaign
 title: Campaign Classic-Versionen 2019
 description: Weiterführende Informationen zu Campaign Classic-Versionen 2019
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 hidefromtoc: true
 exl-id: 8a36a542-e095-4208-b624-e59845592863
-source-git-commit: c929557ee9f5467f9c3b8eb1ed25fae5399820ba
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '4836'
 ht-degree: 100%
@@ -13,7 +14,7 @@ ht-degree: 100%
 
 # Versionen 2019{#release-2019}
 
-![](../../assets/v7-only.svg)
+
 
 ## Version 19.2{#release-19-2}
 
@@ -403,7 +404,7 @@ _Donnerstag, 30. Mai 2019_
 **Verbesserungen bei Schutzmechanismen, Stabilität und Skalierbarkeit**
 
 * Lebensdauer – Nutzungsoptimierung der XtkNewId-Sequenz: Die leistungsintensivsten Tabellen wurden aus der XtkNewId-Sequenz in spezielle Sequenzen verschoben.
-* FDA über HTTP v2: Das FDA über HTTP-Protokoll wird häufig bei hybriden Implementierungen verwendet, insbesondere für den Abruf von Broadlogs und die Versandvorbereitung. Die Stabilität wurde verbessert, um Netzwerkprobleme und mögliche Fehler beim Abrufen oder Senden von Daten zu vermeiden. Dies setzt voraus, dass die Builds an beiden Enden der Verbindung auf dem neuesten Stand sind, da ansonsten das alte Protokoll weiterhin verwendet wird.
+* FDA über HTTP v2: Das FDA über HTTP-Protokoll wird häufig bei hybriden Bereitstellungen verwendet, insbesondere für den Abruf von Broadlogs und die Versandvorbereitung. Die Stabilität wurde verbessert, um Netzwerkprobleme und mögliche Fehler beim Abrufen oder Senden von Daten zu vermeiden. Dies setzt voraus, dass die Builds an beiden Enden der Verbindung auf dem neuesten Stand sind, da ansonsten das alte Protokoll weiterhin verwendet wird.
 * Tracking-Workflow: Die Stabilität des Tracking-Workflows wurde verbessert. Mehrere Probleme im Zusammenhang mit Trackinglog-Einfügungen/-Aktualisierungen und der individuellen URL-Tracking-Anpassung wurden behoben. Darüber hinaus erkennt der Tracking-Workflow jetzt Trackinglog-Probleme, die zu Fehlern führen könnten, und stoppt den Workflow. Diese Probleme werden jetzt verworfen und nicht mehr verarbeitet.
 * Bereinigungs-Workflow: Der Bereinigungs-Workflow wurde verbessert, um mögliche Fehler und Unterbrechungen zu vermeiden. Dadurch wird auch die Größe und Leistungsfähigkeit der Datenbank optimiert.
 * In Transaktionsnachrichten eingebettete Bilder: Jetzt werden in Transaktionsnachrichten eingebettete Bilder vollständig unterstützt, um mögliche Abstürze oder das Fehlen von Bildern zu vermeiden.
@@ -417,7 +418,7 @@ _Donnerstag, 30. Mai 2019_
 
 * Push-Benachrichtigungen: Die die Thread-ID-Option für iOS Push wird jetzt unterstützt.
 * Die Verwaltung langer Indexnamen wurde verbessert, was andernfalls Probleme mit dem Postupgrade verursachen könnte.
-* Wenn während der Analyse eines Deco-mail-Versands der Veröffentlichungsmodus im Softwareverteilungs-Assistenten auf **[!UICONTROL Keine]** gesetzt ist, wird ein Fehler angezeigt und die Analyse wird angehalten: &quot;Für den Veröffentlichungsmodus ist Keiner ausgewählt: Bild kann nicht eingebettet werden. Bilder werden nicht auf Feature Phone angezeigt.&quot; (NEO-12208)
+* Wenn während der Analyse eines Deco-mail-Versands der Veröffentlichungsmodus im Bereitstellungassistenten auf **[!UICONTROL Keine]** gesetzt ist, wird ein Fehler angezeigt und die Analyse wird angehalten: &quot;Für den Veröffentlichungsmodus ist Keiner ausgewählt: Bild kann nicht eingebettet werden. Bilder werden nicht auf Feature Phone angezeigt.&quot; (NEO-12208)
 * Die Broadlog-Verwaltung für Transaktionsnachrichten wurde verbessert. Wenn Broadlogs von der Ausführungsinstanz mit der Kontrollinstanz synchronisiert werden, wird das Feld @lastModified auf das aktuelle Systemdatum aktualisiert. Für Kontrollinstanzen wurde die Option MC_Update_BlLastModified hinzugefügt. &quot;True&quot; bedeutet, dass das aktuelle Datum in der Kontrollinstanz verwendet wird (Standardverhalten). &quot;False&quot; bedeutet, dass das @lastModified-Datum des Broadlogs der Ausführungsinstanz verwendet wird. (NEO-12579)
 * In den temporären Coupon-Tabellen wurden Indizes hinzugefügt, um den Versand zu optimieren. (NEO-12437)
 * In der Analytics-Integration ist nun das Abrufen von AAM-Segmentdaten mit %-Zeichen erlaubt. (NEO-12025)

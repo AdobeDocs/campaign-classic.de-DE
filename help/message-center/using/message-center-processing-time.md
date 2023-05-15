@@ -1,21 +1,22 @@
 ---
 product: campaign
-title: Message Center-Verarbeitungsdauer
-description: Erfahren Sie mehr über den Bericht "Message Center Verarbeitungsdauer".
+title: Message-Center-Verarbeitungsdauer
+description: Erfahren Sie mehr über den Verarbeitungszeitbericht für Message Center.
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: message-center
 content-type: reference
 topic-tags: reports
 exl-id: c797fd94-0c8d-480b-b22a-1489ac331e77
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '253'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
 # Message Center-Verarbeitungsdauer {#message-center-processing-time}
 
-![](../../assets/v7-only.svg)
+
 
 Dieser Bericht zeigt die wichtigsten Indikatoren für die Echtzeit-Warteschlange an.
 
@@ -36,4 +37,4 @@ Die im Bereich **[!UICONTROL Kennzahlen über den Zeitraum]** angezeigten Indika
 
 >[!NOTE]
 >
->Die Hinweis- und Warnschwellen (orange bzw. rot) der Kennzahlen können im Software-Verteilungs-Assistenten von Adobe Campaign konfiguriert werden. Siehe [Überwachungsschwellen](../../message-center/using/additional-configurations.md#monitoring-thresholds).
+>Die Hinweis- und Warnschwellen (orange bzw. rot) der Kennzahlen können im Bereitstellungassistenten von Adobe Campaign konfiguriert werden. Siehe [Überwachungsschwellen](../../message-center/using/additional-configurations.md#monitoring-thresholds).

@@ -2,11 +2,12 @@
 product: campaign
 title: Datenbankbereinigungs-Workflow
 description: Erfahren Sie, wie veraltete Daten automatisch bereinigt werden.
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: 75d3a0af-9a14-4083-b1da-2c1b22f57cbe
-source-git-commit: b472178316f97f08e9c87f8aebd707709f320e5f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '2910'
 ht-degree: 2%
@@ -15,7 +16,7 @@ ht-degree: 2%
 
 # Datenbankbereinigungs-Workflow{#database-cleanup-workflow}
 
-![](../../assets/v7-only.svg)
+
 
 ## Einleitung {#introduction}
 
@@ -46,7 +47,7 @@ Standardmäßig wird die **[!UICONTROL Datenbankbereinigung]** Der Workflow ist 
 >
 >Um die **[!UICONTROL Datenbankbereinigung]** um an dem in der Planung definierten Datum und zu der Uhrzeit zu starten, muss die Workflow-Engine (wfserver) gestartet werden.
 
-### Softwareverteilungs-Assistent {#deployment-wizard}
+### Bereitstellungsassistent {#deployment-wizard}
 
 Die **[!UICONTROL Implementierungsassistent]**, auf die über **[!UICONTROL Tools > Erweitert]** kann konfiguriert werden, wie lange Daten gespeichert werden. Die Werte werden in Tagen ausgedrückt. Wenn diese Werte nicht geändert werden, verwendet der Workflow die Standardwerte.
 

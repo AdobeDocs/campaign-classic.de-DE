@@ -1,11 +1,12 @@
 ---
 product: campaign
 title: Adobe Experience Platform-Segmente in Campaign aufnehmen
-description: Erfahren Sie, wie Sie Adobe Experience Platform-Audiences in Campaign Classic aufnehmen.
+description: Erfahren Sie, wie Sie Adobe Experience Platform-Audiences in Campaign Classic aufnehmen
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: integrations
 content-type: reference
 exl-id: 6db8a653-b649-402c-8814-24826edadba7
-source-git-commit: 89a18ae9ec57376d6ebec6c416c7562f960eb882
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 100%
@@ -14,7 +15,7 @@ ht-degree: 100%
 
 # Adobe Experience Platform-Segmente in Campaign aufnehmen {#destinations}
 
-![](../../assets/v7-only.svg)
+
 
 Um Adobe Experience Platform-Audiences in Campaign aufzunehmen und sie in Ihren Workflows zu verwenden, müssen Sie zunächst Adobe Campaign als ein Adobe Experience Platform-**Ziel** verbinden und mit dem zu exportierenden Segment konfigurieren.
 

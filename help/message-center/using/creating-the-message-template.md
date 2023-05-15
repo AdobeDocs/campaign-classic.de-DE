@@ -1,10 +1,11 @@
 ---
 product: campaign
 title: Konzipieren von Transaktionsnachrichtenvorlagen
-description: Erfahren Sie, wie Sie Transaktionsnachrichtenvorlagen in Adobe Campaign Classic erstellen und konzipieren.
+description: Erfahren Sie, wie Sie Transaktionsnachrichtenvorlagen in Adobe Campaign Classic erstellen und konzipieren
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Transactional Messaging
 exl-id: a52bc140-072e-4f81-b6da-f1b38662bce5
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '511'
 ht-degree: 100%
@@ -13,7 +14,7 @@ ht-degree: 100%
 
 # Konzipieren von Transaktionsnachrichtenvorlagen {#creating-the-message-template}
 
-![](../../assets/v7-only.svg)
+
 
 Um sicherzustellen, dass alle Ereignisse in eine personalisierte Nachricht umgewandelt werden können, müssen Sie für die einzelnen Ereignistypen jeweils eine Nachrichtenvorlage erstellen.
 

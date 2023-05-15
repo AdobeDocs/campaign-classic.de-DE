@@ -2,11 +2,12 @@
 product: campaign
 title: Vordefinierte Filter
 description: Vordefinierte Filter
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: 399e9468-bf70-425d-af0b-72c29636b513
-source-git-commit: f4513834cf721f6d962c7c02c6c64b2171059352
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '102'
 ht-degree: 100%
@@ -15,7 +16,7 @@ ht-degree: 100%
 
 # Vordefinierte Filter{#creating-predefined-filters}
 
-![](../../assets/v7-only.svg)
+
 
 Vordefinierte Filter erleichtern die Erstellung von auf die Zielgruppe anwendbaren Eignungsregeln, die bei der Angebotskonfiguration verwendet werden können. Die Filter beziehen sich jeweils auf eine Umgebung und können Angebotsparameter berücksichtigen.
 

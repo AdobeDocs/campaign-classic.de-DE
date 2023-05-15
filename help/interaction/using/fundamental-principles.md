@@ -2,11 +2,12 @@
 product: campaign
 title: Grundprinzipien
 description: Grundprinzipien
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: interaction
 content-type: reference
 topic-tags: general-operation
 exl-id: b13ecfc9-1723-42b2-ab30-d5637cc3d0dd
-source-git-commit: c929557ee9f5467f9c3b8eb1ed25fae5399820ba
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 100%
@@ -15,9 +16,9 @@ ht-degree: 100%
 
 # Grundprinzipien{#fundamental-principles}
 
-![](../../assets/v7-only.svg)
 
-## Umgebungsfreigabe {#deploying-environments}
+
+## Umgebungsbereitstellung {#deploying-environments}
 
 Für jede im Zusammenhang mit der Angebotsverwaltung verwendete Zieldimension existiert ein Umgebungspaar:
 
@@ -29,7 +30,7 @@ Für jede im Zusammenhang mit der Angebotsverwaltung verwendete Zieldimension ex
 
 * eine Live-Umgebung, in der die in der Design-Umgebung validierten bzw. definierten Angebote sowie die verschiedenen Platzierungen, Filter, Kategorien und Regeln zur Verfügung stehen. Bei einer Abfrage des Angebotsmoduls greift dieses ausschließlich auf die Angebote der Live-Umgebung zu.
 
-Ein Angebot wird nur für die bei der Validierung ausgewählten Platzierungen freigegeben. Dies bedeutet, dass ein Angebot u. U. live sein, aber trotzdem nicht in einer Platzierung verwendet werden kann, selbst wenn diese ebenfalls live ist.
+Ein Angebot wird nur für die bei der Genehmigung ausgewählten Platzierungen bereitgestellt. Dies bedeutet, dass ein Angebot u. U. live sein kann, aber trotzdem nicht in einer Platzierung verwendet werden kann, selbst wenn diese ebenfalls live ist.
 
 ![](assets/architecture_interaction1.png)
 

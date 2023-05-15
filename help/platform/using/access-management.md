@@ -2,18 +2,19 @@
 product: campaign
 title: Erste Schritte mit Berechtigungen
 description: Erfahren Sie, wie Sie Zugriff auf Campaign-Funktionen gewähren.
+badge: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Access Management, Permissions
 exl-id: 9b616715-33cd-43ba-8548-8d96a179408e
-source-git-commit: f05eefc9945c4ead89eb448b6e28c3523559e055
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 100%
+source-wordcount: '264'
+ht-degree: 95%
 
 ---
 
 # Erste Schritte mit Berechtigungen{#access-management}
 
-![](../../assets/common.svg)
+
 
 Mit Adobe Campaign können Sie die den verschiedenen Benutzenden zugewiesenen Rechte definieren und verwalten. Diese sind ein Satz von Rechten und Einschränkungen, die Folgendes ermöglichen oder verweigern:
 

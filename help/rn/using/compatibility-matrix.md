@@ -2,11 +2,12 @@
 product: campaign
 title: Kompatibilitätsmatrix für Campaign Classic
 description: Campaign Classic – Kompatibilitätsmatrix
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 0065a25250d73c71e7569768a38b5836cccab992
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '802'
 ht-degree: 100%
@@ -15,7 +16,7 @@ ht-degree: 100%
 
 # Kompatibilitätsmatrix{#compatibility-matrix}
 
-![](../../assets/v7-only.svg)
+
 
 In diesem Dokument werden alle Systeme und Komponenten aufgelistet, die für den [aktuellen Build](../../rn/using/latest-release.md) von **Adobe Campaign Classic v7** unterstützt werden. Produkte und Versionen, die nicht in dieser Liste enthalten sind, sind nicht mit Adobe Campaign kompatibel.
 

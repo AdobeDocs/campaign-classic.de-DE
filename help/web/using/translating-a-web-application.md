@@ -2,9 +2,11 @@
 product: campaign
 title: Übersetzen eines Web-Programms
 description: Übersetzen eines Web-Programms
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Web Apps
 exl-id: 82c5c610-8161-4686-aa79-1b690e763765
-source-git-commit: b6f1556cf49492cefaf61c29a058584b0ccee16a
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 100%
@@ -13,7 +15,7 @@ ht-degree: 100%
 
 # Übersetzen eines Web-Programms{#translating-a-web-application}
 
-![](../../assets/common.svg)
+
 
 Sie können Webanwendungsseiten übersetzen, die mit dem Adobe Campaign Digital Content Editor (DCE) erstellt wurden.
 

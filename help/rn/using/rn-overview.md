@@ -2,11 +2,12 @@
 product: campaign
 title: Erste Schritte mit Upgrades
 description: Weiterführende Informationen zu Campaign Classic-Upgrades
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Overview
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: f797aafac99d6b9c2bdb409a1d0883c889fd3b0e
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '935'
 ht-degree: 100%
@@ -15,7 +16,7 @@ ht-degree: 100%
 
 # Versionsaktualisierungen{#rn-overview}
 
-![](../../assets/v7-only.svg)
+
 
 Adobe Campaign Classic veröffentlicht regelmäßig Produktaktualisierungen, die neue Funktionen und Fehlerkorrekturen beinhalten und die Leistung, Sicherheit und Benutzerfreundlichkeit verbessern. Diese Aktualisierungen werden als **Produkt-Builds** veröffentlicht. Detaillierte Informationen zu den einzelnen neuen Builds finden Sie in den [Versionshinweisen](latest-release.md).
 

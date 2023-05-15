@@ -1,19 +1,18 @@
 ---
 product: campaign
-title: Bearbeitung
-description: Bearbeitung
+title: Navigationsstruktur von Campaign Explorer bearbeiten
+description: Navigationsstruktur von Campaign Explorer bearbeiten
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: 204d4a24-267c-4976-90d9-7bf5bee8d116
-source-git-commit: 3997412f14666fa61bf71d0f0a0653f5cc042e19
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '127'
+source-wordcount: '135'
 ht-degree: 0%
 
 ---
 
 
 # Navigationsstruktur von Campaign Explorer bearbeiten{#edition}
-
-![](../../assets/v7-only.svg)
 
 Auf den Bildschirm zum Erstellen und Konfigurieren der Navigationshierarchiekonfigurationsdokumente kann über das **[!UICONTROL Administration > Konfiguration > Navigationshierarchien]** node:
 

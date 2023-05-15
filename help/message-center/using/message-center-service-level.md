@@ -1,21 +1,22 @@
 ---
 product: campaign
-title: Message Center-Dienstqualität
-description: Erfahren Sie mehr über den Bericht "Message Center Dienstqualität".
+title: Message-Center-Dienstqualität
+description: Erfahren Sie mehr über den Bericht auf Dienstebene in Message Center .
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: message-center
 content-type: reference
 topic-tags: reports
 exl-id: b8dc9891-84c8-445d-ad6a-d06048c8faaf
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '262'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
 # Message Center-Dienstqualität {#message-center-service-level}
 
-![](../../assets/v7-only.svg)
+
 
 Dieser Bericht enthält die Versandstatistiken zu Transaktionsnachrichten sowie die Fehleraufschlüsselung. Sie können auf einen Fehlertyp klicken, um dessen Details anzuzeigen.
 
@@ -36,4 +37,4 @@ Die im Bereich **[!UICONTROL Kennzahlen über den Zeitraum]** angezeigten Indika
 
 >[!NOTE]
 >
->Die Hinweis- und Warnschwellen (orange bzw. rot) der Kennzahlen können im Softwareverteilungs-Assistenten konfiguriert werden. Siehe [Überwachungsschwellen](../../message-center/using/additional-configurations.md#monitoring-thresholds).
+>Die Hinweis- und Warnschwellen (orange bzw. rot) der Kennzahlen können im Bereitstellungassistenten konfiguriert werden. Siehe [Überwachungsschwellen](../../message-center/using/additional-configurations.md#monitoring-thresholds).

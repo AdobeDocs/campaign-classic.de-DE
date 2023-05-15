@@ -2,9 +2,11 @@
 product: campaign
 title: Erstellen der Versandvorlagen
 description: Erfahren Sie anhand eines speziellen Anwendungsbeispiels, wie Sie A/B-Tests durchführen
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: A/B Testing
 exl-id: 77b3a906-b76e-49e1-b524-b6f1ae537259
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '93'
 ht-degree: 100%
@@ -13,7 +15,7 @@ ht-degree: 100%
 
 # Versandvorlagen erstellen {#step-3--creating-two-delivery-templates}
 
-![](../../assets/common.svg)
+
 
 Erstellen Sie nun zwei Versandvorlagen, die jeweils in einem an die Aktivität **[!UICONTROL Aufspaltung]** angeschlossenen **[!UICONTROL E-Mail-Versand]** verwendet werden. Weiterführende Informationen finden Sie in diesem [Abschnitt](about-templates.md). Gehen Sie wie folgt vor:
 

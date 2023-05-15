@@ -2,10 +2,11 @@
 product: campaign
 title: Problem mit Signaturen getrackter URLs
 description: Problem mit Signaturen getrackter URLs
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 hide: true
 hidefromtoc: true
 exl-id: e7d4331b-7149-4768-8e46-2e2911319074
-source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '361'
 ht-degree: 100%
@@ -14,7 +15,7 @@ ht-degree: 100%
 
 # Problem mit Signaturen getrackter URLs {#tracked-urls}
 
-![](../../assets/v7-only.svg)
+
 
 Im Zuge der jüngsten Änderungen kann bei getrackten URLs ein Fehler auftreten, wenn die Signatur für diese URLs in Campaign aktiv ist. Postfächer, bei denen spezielle Sicherheits-Tools verwendet werden, die sich auf Links auswirken und den Mechanismus für URL-Signaturen verändern, können hiervon stärker betroffen sein.
 

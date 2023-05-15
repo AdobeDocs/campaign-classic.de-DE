@@ -2,8 +2,9 @@
 product: campaign
 title: Sendungen
 description: Erfahren Sie mehr über die standardmäßigen Workflows für Sendungen.
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 100%
@@ -13,7 +14,7 @@ ht-degree: 100%
 
 # Sendungen{#deliveries}
 
-![](../../assets/v7-only.svg)
+
 
 Die folgenden Workflows werden standardmäßig mit dem Modul **Sendungen** installiert.
 
@@ -47,7 +48,7 @@ Die folgenden Workflows werden standardmäßig mit dem Modul **Sendungen** insta
   <tr> 
    <td> <span class="uicontrol">Datenbankbereinigung</span> <br /> </td> 
    <td> <span class="uicontrol">cleanup</span> <br /> </td> 
-   <td> <p>Bereinigt obsolete Daten gemäß der Konfiguration im Softwareverteilungs-Assistenten. Berechnet diverse Statistiken und Vorgänge. Wird standardmäßig täglich um 4 Uhr gestartet.</p> <p>Weiterführende Informationen dazu finden Sie auf dieser <a href="../../production/using/database-cleanup-workflow.md">Seite</a>.</p> </td> 
+   <td> <p>Dieser Workflow ist der Datenbankwartungs-Workflow: Er führt verschiedene Berechnungen mit Statistiken und Prozessen durch und löscht gemäß der definierten Konfiguration im Bereitstellungsassistenten veraltete Daten aus der Datenbank. Er wird standardmäßig jeden Tag um 4 Uhr morgens ausgelöst.</p> <p>Weiterführende Informationen dazu finden Sie auf dieser <a href="../../production/using/database-cleanup-workflow.md">Seite</a>.</p> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Bereinigung ausgesetzter Workflows</span> <br /> </td> 
@@ -57,7 +58,7 @@ Die folgenden Workflows werden standardmäßig mit dem Modul **Sendungen** insta
   <tr> 
    <td> <span class="uicontrol">Angebotsbenachrichtigungen</span> <br /> </td> 
    <td> <span class="uicontrol">offerMgt</span> <br /> </td> 
-   <td> Gibt stündlich validierte Angebote sowie im Angebotskatalog erstellte Kategorien in die Live-Umgebung frei.<br /> </td> 
+   <td> Stellt stündlich validierte Angebote sowie im Angebotskatalog erstellte Kategorien in die Live-Umgebung bereit.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Planungen</span> <br /> </td> 

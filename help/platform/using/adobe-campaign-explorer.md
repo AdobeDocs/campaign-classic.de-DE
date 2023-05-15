@@ -2,11 +2,12 @@
 product: campaign
 title: Adobe Campaign-Explorer verwenden
 description: Erfahren Sie, wie Sie den Campaign-Explorer verwenden.
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: f91d69a4-b794-40f0-b450-de862d7333e2
-source-git-commit: fdb840a9e6349f074378899e07f794b62fb5b054
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 100%
@@ -15,7 +16,7 @@ ht-degree: 100%
 
 # Adobe Campaign-Explorer verwenden {#using-adobe-campaign-explorer}
 
-![](../../assets/v7-only.svg)
+
 
 Auf den Adobe Campaign-Explorer kann über das entsprechende Symbol in der Symbolleiste zugegriffen werden. Mit seiner Hilfe gelangen Sie zu allen Adobe Campaign-Funktionen und in die verschiedenen Konfigurationsbildschirme der Adobe Campaign-Plattform und können einige Plattformelemente im Detail anzeigen.
 

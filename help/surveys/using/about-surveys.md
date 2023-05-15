@@ -2,9 +2,11 @@
 product: campaign
 title: Erste Schritte mit Umfragen
 description: Erste Schritte mit Campaign-Umfragen
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Surveys
 exl-id: 7061a4f1-006f-4f19-8761-918d8930d885
-source-git-commit: 1f80c9967f4859f26dd2890d657f95ada6cf2087
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '535'
 ht-degree: 100%
@@ -13,7 +15,7 @@ ht-degree: 100%
 
 # Erste Schritte mit Umfragen{#about-surveys}
 
-![](../../assets/common.svg)
+
 
 Adobe Campaign enthält ein Grafikmodul zur Definition und Veröffentlichung von Web-Anwendungen. Dies wird verwendet, um Seiten zu erstellen, z. B. ein Bearbeitungsformular für ein Extranet oder Benachrichtigungsformulare, einschließlich Daten aus der Datenbank mit Tabellen, Diagrammen, Formularen usw. Mit dieser Funktion können Sie Web-Seiten entwerfen und posten, auf denen Benutzer Informationen suchen oder eingeben können.
 

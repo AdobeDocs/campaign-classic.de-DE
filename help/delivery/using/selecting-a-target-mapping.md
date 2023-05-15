@@ -2,9 +2,11 @@
 product: campaign
 title: Auswählen eines Zielgruppen-Mappings
 description: Erfahren Sie, wie man ein Zielgruppen-Mapping durchführt
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Delivery Templates
 exl-id: b5514fa3-1e65-45dc-8e40-d1ba3b673e7a
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 100%
@@ -13,7 +15,7 @@ ht-degree: 100%
 
 # Auswählen eines Zielgruppen-Mappings{#selecting-a-target-mapping}
 
-![](../../assets/common.svg)
+
 
 Standard-Zielgruppe in Versandvorlagen sind die **[!UICONTROL Empfänger]**. Das Zielgruppen-Mapping verwendet also die Felder der Tabelle **nms:recipient**. Adobe Campaign stellt jedoch auch andere Zielgruppen-Mappings zur Verfügung, auf die Sie je nach Bedarf zurückgreifen können.
 

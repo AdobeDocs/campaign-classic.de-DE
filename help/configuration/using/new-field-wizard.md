@@ -2,9 +2,10 @@
 product: campaign
 title: Assistent für neue Felder
 description: Assistent für neue Felder
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Schema Extension
 exl-id: 2350a531-7a26-4f26-90fe-8dac0cc26605
-source-git-commit: 56459b188ee966cdb578c415fcdfa485dcbed355
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 4%
@@ -13,7 +14,6 @@ ht-degree: 4%
 
 # Assistent für neue Felder{#new-field-wizard}
 
-![](../../assets/v7-only.svg)
 
 Ein Assistent, auf den Sie über zugreifen können **[!UICONTROL Tools > Erweitert > Neue Felder hinzufügen]** ermöglicht das Hinzufügen eines oder mehrerer Felder zu einer Tabelle der Datenbank.
 

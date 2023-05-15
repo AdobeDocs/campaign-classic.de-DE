@@ -2,9 +2,11 @@
 product: campaign
 title: Erstellen einer Tabelle
 description: Erstellen einer Tabelle
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Reporting
 exl-id: 05f76bdf-6dcd-4360-9e72-0ba6a4dd0d5e
-source-git-commit: 1635366b9e1302acd3d8997312bf07d5c1a68982
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '2643'
 ht-degree: 100%
@@ -13,7 +15,7 @@ ht-degree: 100%
 
 # Erstellen einer Tabelle{#creating-a-table}
 
-![](../../assets/common.svg)
+
 
 Sie können eine Tabelle zu einem Bericht hinzufügen, um Daten anzuzeigen. Dabei kann es sich um eine Pivot-Tabelle handeln, die auf der Grundlage von Cube-Messungen erstellt wurde, um eine Liste mit Gruppen oder um eine Tabelle mit einer Aufschlüsselung der Werte.
 

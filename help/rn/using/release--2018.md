@@ -2,9 +2,10 @@
 product: campaign
 title: Campaign Classic-Versionen 2018
 description: Weiterführende Informationen zu Campaign Classic-Versionen 2018
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 hidefromtoc: true
 exl-id: f70fceba-4bbf-4f33-8746-e4405a1cdae6
-source-git-commit: c929557ee9f5467f9c3b8eb1ed25fae5399820ba
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '5423'
 ht-degree: 100%
@@ -13,7 +14,7 @@ ht-degree: 100%
 
 # Versionen 2018{#release-2018}
 
-![](../../assets/v7-only.svg)
+
 
 ## Version 18.10
 
@@ -54,7 +55,7 @@ _15. April 2019_
 
 ### Version 18.10.3 – Build 8981{#release-18-10-3-build-8981}
 
-_29. Januar 2019_
+29. Januar 2019
 
 >[!CAUTION]
 >
@@ -78,7 +79,7 @@ _29. Januar 2019_
 
 ### Version 18.10.2 – Build 8978{#release-18-10-2-build-8978}
 
-_6. Dezember 2018_
+6. Dezember 2018
 
 >[!CAUTION]
 >
@@ -100,7 +101,7 @@ _6. Dezember 2018_
 
 ### Version 18.10.1 – Build 8977{#release-18-10-build-8977}
 
-_5. November 2018_
+5. November 2018
 
 >[!CAUTION]
 >
@@ -245,7 +246,7 @@ Durch diese Indexänderungen kann es vorkommen, dass die Durchführung des Postu
 
 ### Version 18.6.2 – Build 8949{#release-18-6-3-build-8949}
 
-_22. August 2018_
+22. August 2018
 
 >[!CAUTION]
 >
@@ -466,7 +467,7 @@ _24. April 2018_
 
 **Neuheiten**
 
-* **LINE-Kanal - verbesserte Architektur**: Der LINE-Kanal wird jetzt wie alle anderen Kanäle in Adobe Campaign in allen Installationstypen unterstützt: gehostet, Hybrid und On-Premise.
+* **LINE-Kanal - verbesserte Architektur**: Der LINE-Kanal wird jetzt wie alle anderen Kanäle in Adobe Campaign in allen Bereitstellungstypen unterstützt: gehostet, Hybrid und On-Premise.
 * **Automatische Erzeugung von Sequenzen**: Der Mechanismus zur ID-Erzeugung wurde verbessert, sodass nun die Lebensdauer von Campaign-Instanzen bei großen Objektmengen verlängert ist.
 
 **Sonstige Änderungen**
@@ -476,7 +477,7 @@ _24. April 2018_
 * Der Import von Audiences aus Audience Manager funktioniert jetzt mit aufgesplitteten Dateien. Zuvor wurde vom technischen Workflow importSharedAudience nur die letzte Datei des Segments importiert. (NEO-10156)
 * Unter Windows hat sich der Standard-Installationspfad für den Campaign-Server geändert. Beim Setup der 64-Bit-Version lautet der standardmäßige Installationspfad jetzt: **C:\Program Files\Adobe\Adobe Campaign Classic v7** anstatt **C:\Program Files (x86)\Adobe\Adobe Campaign Classic v7**.
 * Die Standard-MX-Regeln wurden verbessert und enthalten jetzt mehr Domains und ermöglichen höheren Durchsatz.
-* Zugriffsbeschränkungen für den SOAP-Aufruf des Softwareverteilungs-Assistenten wurden verstärkt (xtk:serverOptions#SaveOptions).
+* Zugriffsbeschränkungen für den SOAP-Aufruf des Bereitstellungsassistenten wurden verstärkt (xtk:serverOptions#SaveOptions).
 * Die veraltete Bibliothek weka.jar wurde entfernt und die OpenSSL-Bibliothek wurde zur Optimierung der Sicherheit aktualisiert.
 * Der technische Fakturierungs-Workflow wurde verbessert, um eine ausreichende Leistung der Instanzen sicherzustellen.
 * Administratoren haben jetzt wieder die Möglichkeit, das Passwort von Benutzern festzulegen oder zurückzusetzen. Klicken Sie dazu mit der rechten Maustaste auf einen Benutzer, wählen Sie **[!UICONTROL Aktionen]** > **[!UICONTROL Passwort zurücksetzen]** und geben Sie das neue Passwort des Benutzers ein. Wir empfehlen Benutzern, ihr Passwort bei der ersten Anmeldung zu ändern. Weiterführende Informationen dazu finden Sie im [entsprechenden Handbuch](../../production/using/lost-password.md).

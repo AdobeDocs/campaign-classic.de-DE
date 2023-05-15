@@ -1,12 +1,13 @@
 ---
 product: campaign
 title: Ereignisverarbeitung
-description: Erfahren Sie, wie Transaktionsnachrichtenereignisse in Adobe Campaign Classic verarbeitet werden.
+description: Erfahren Sie, wie Transaktionsnachrichtenereignisse in Adobe Campaign Classic verarbeitet werden
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: message-center
 content-type: reference
 topic-tags: event-processing
 exl-id: 3d85866a-6339-458c-807a-b267cce772b8
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '711'
 ht-degree: 100%
@@ -15,7 +16,7 @@ ht-degree: 100%
 
 # Ereignisverarbeitung {#about-event-processing}
 
-![](../../assets/v7-only.svg)
+
 
 Im Zusammenhang mit dem Transaktionsnachrichtenversand wird von einem externen Informationssystem ein Ereignis generiert und über die Methoden **[!UICONTROL PushEvent]** und **[!UICONTROL PushEvents]** an Adobe Campaign gesendet (siehe [Ereignisbeschreibung](../../message-center/using/event-description.md)).
 

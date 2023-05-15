@@ -2,11 +2,12 @@
 product: campaign
 title: Erste Schritte mit dem ACS-Connector
 description: Grundlagen und Datenzyklus des ACS-Connectors
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: ACS Connector
 hide: true
 hidefromtoc: true
 exl-id: 689b6117-5143-4f85-8582-2c74cae72ca2
-source-git-commit: 978da934b483a54509ad806f375d9b2bb0577dac
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '2094'
 ht-degree: 100%
@@ -15,7 +16,7 @@ ht-degree: 100%
 
 # Erste Schritte mit dem ACS-Connector{#acs-connector-gs}
 
-![](../../assets/v7-only.svg)
+
 
 ACS Connector ist das Bindeglied zwischen Adobe Campaign v7 und Adobe Campaign Standard. Diese in Campaign v7 integrierte Funktion repliziert automatisch Daten nach Campaign Standard und vereint somit das Beste beider Anwendungen. Campaign v7 verfügt über fortschrittliche Tools zur Verwaltung der primären Marketing-Datenbank. Durch die Replikation der Daten von Campaign v7 nach Campaign Standard können diese in einer benutzerfreundlichen Umgebung verwendet werden.
 

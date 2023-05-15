@@ -2,9 +2,11 @@
 product: campaign
 title: Ursachen für das Fehlschlagen von Sendungen
 description: Erfahren Sie, wie Sie die Ursachen von fehlgeschlagenen Sendungen ermitteln können.
+badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Monitoring, Deliverability
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
-source-git-commit: 9839dbacda475c2a586811e3c4f686b1b1baab05
+source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '2665'
 ht-degree: 100%
@@ -13,7 +15,7 @@ ht-degree: 100%
 
 # Ursachen für das Fehlschlagen von Sendungen{#understanding-delivery-failures}
 
-![](../../assets/common.svg)
+
 
 ## Über fehlgeschlagene Sendungen {#about-delivery-failures}
 
@@ -276,7 +278,7 @@ Auf E-Mail-Regeln kann im Knoten **[!UICONTROL Administration > Kampagnen > Unzu
 
 >[!NOTE]
 >
->Die Standardparameter der Plattform werden im Softwareverteilungs-Assistenten konfiguriert. Lesen Sie diesbezüglich auch [diesen Abschnitt](../../installation/using/deploying-an-instance.md).
+>Die Standardparameter der Plattform werden im Bereitstellungsassistenten konfiguriert. Lesen Sie diesbezüglich auch [diesen Abschnitt](../../installation/using/deploying-an-instance.md).
 
 Folgende Regeln sind in der Standardkonfiguration vorgesehen.
 

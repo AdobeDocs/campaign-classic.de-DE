@@ -2,11 +2,12 @@
 product: campaign
 title: Aktualisierungen der Dokumentation zu Adobe Campaign Classic v7
 description: Auf dieser Seite werden alle neuen Funktionen und Aktualisierungen in der Dokumentation zu Adobe Campaign Classic aufgelistet.
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: a4a5e014d8055cf29bdbf7debb72eb20388c9b19
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '3600'
 ht-degree: 100%
@@ -15,7 +16,7 @@ ht-degree: 100%
 
 # Aktualisierungen der Dokumentation{#documentation-updates}
 
-![](../../assets/v7-only.svg)
+
 
 Auf dieser Seite werden alle neuen Funktionen und Dokumentationsaktualisierungen pro Monat und Campaign-Version aufgeführt.
 
@@ -360,7 +361,7 @@ Zu den folgenden Themen sind jetzt Anleitungsvideos verfügbar:
 
 * [Erstellen eines mehrsprachigen Newsletters mit bedingten Inhalten](../../delivery/using/conditional-content.md)
 
-* [Konfigurieren und Implementieren einer Versandvorlage](../../delivery/using/creating-a-delivery-template.md)
+* [Konfigurieren und Bereitstellen einer Versandvorlage](../../delivery/using/creating-a-delivery-template.md)
 
 * [Aktivieren und Verwenden von AMP für E-Mails](../../delivery/using/defining-interactive-content.md)
 

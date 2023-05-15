@@ -2,11 +2,12 @@
 product: campaign
 title: Zugriff auf Teradata konfigurieren
 description: Erfahren Sie, wie Sie den Zugriff auf Teradata in FDA konfigurieren
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 3a5856c3-b642-4722-97ff-6ae7107efdbe
-source-git-commit: 65e80f16a6beaee89b51636017c42766589e179e
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1824'
 ht-degree: 70%
@@ -15,7 +16,7 @@ ht-degree: 70%
 
 # Zugriff auf Teradata konfigurieren {#configure-access-to-teradata}
 
-![](../../assets/v7-only.svg)
+
 
 Verwenden von Campaign [Federated Data Access](../../installation/using/about-fda.md) (FDA), um in externen Datenbanken gespeicherte Informationen zu verarbeiten. Gehen Sie wie folgt vor, um den Zugriff auf Teradata zu konfigurieren.
 

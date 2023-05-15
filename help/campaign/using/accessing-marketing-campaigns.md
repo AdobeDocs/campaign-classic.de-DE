@@ -2,35 +2,35 @@
 product: campaign
 title: Zugriff auf Marketing-Kampagnen
 description: Zugriff auf Marketing-Kampagnen
-badge: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Campaigns, Cross Channel Orchestration
 exl-id: 1278bda1-f83c-4d38-8042-e6611755cf36
-source-git-commit: 517a343011ff313d016638c586867673e406fd88
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1275'
-ht-degree: 99%
+source-wordcount: '1217'
+ht-degree: 78%
 
 ---
 
 # Auf Marketing-Kampagnen zugreifen{#accessing-marketing-campaigns}
 
-Adobe Campaign ermöglicht die Erstellung, Konfiguration, Ausführung und Analyse von Marketing-Kampagnen. Das Programm stellt somit ein umfassendes Steuerungszentrum dar, über das alle Marketing-Kampagnen verwaltet werden können.
+Mit Adobe Campaign können Sie Marketingkampagnen erstellen, konfigurieren, ausführen und analysieren. Alle Marketing-Kampagnen können von einem einheitlichen Kontrollzentrum aus verwaltet werden.
 
 ## Grundlagen zum Arbeitsbereich {#workspace-basics}
 
 ### Startseite         {#home-page}
 
-Unmittelbar nach der Herstellung der Verbindung mit Adobe Campaign gelangen Sie auf die Startseite.
+Sobald die Verbindung mit Adobe Campaign hergestellt wurde, können Sie die verschiedenen Funktionen mithilfe von Links in der Navigationsleiste durchsuchen.
+
 
 ![](assets/campaign_global_view.png)
 
-Klicken Sie auf die Links in der Navigationsleiste, um auf die verschiedenen Funktionen zuzugreifen.
 
-Kampagnenelemente befinden sich im Tab **[!UICONTROL Kampagnen]**: Hier erhalten Sie einen Überblick über die Marketing-Programme und -Kampagnen sowie deren Untergruppen. Ein Marketing-Programm besteht aus Kampagnen, die aus Sendungen, Aufgaben, verknüpften Ressourcen usw. bestehen. Im Zusammenhang mit dem Management von Marketing-Kampagnen mithilfe von Campaign sind die Informationen über Sendungen, Budgets, Validierungsverantwortliche und verlinkte Dokumente in den Kampagnen zu finden.
+Kampagnenelemente finden Sie im Abschnitt **[!UICONTROL Kampagnen]** tab: Hier können Sie einen Überblick über die Marketingprogramme, Kampagnen und deren Untergruppen erhalten. Ein Marketing-Programm besteht aus Kampagnen, die aus Sendungen, Aufgaben, verknüpften Ressourcen usw. bestehen. Im Zusammenhang mit der Verwaltung von Marketingkampagnen mithilfe von Campaign sind die Informationen bezüglich Sendungen, Budgets, Validierungsverantwortlichen und verknüpften Dokumenten in den Kampagnen zu finden.
 
 Der **[!UICONTROL Navigationsblock]** im Tab **[!UICONTROL Kampagnen]** enthält je nach installierten Instanzmodulen verschiedene Einträge. Sie können beispielsweise auf Folgendes zugreifen:
 
-* **Kampagnenkalender**: Kalender der Pläne, Marketing-Programme, Sendungen und Kampagnen . Siehe [Kampagnenkalender](#campaign-calendar).
+* **Kampagnenkalender**: Kalender der Pläne, Marketing-Programme, Sendungen und Kampagnen. Siehe [Kampagnenkalender](#campaign-calendar).
 * **Kampagnen**: Zugriff auf alle in Marketing-Programmen enthaltenen Kampagnen;
 * **Sendungen**: Zugriff auf in Kampagnen enthaltene Sendungen;
 * **Web-Anwendungen**: Zugriff auf Web-Anwendungen (Formulare, Landingpages usw.).
@@ -43,19 +43,19 @@ Der **[!UICONTROL Navigationsblock]** im Tab **[!UICONTROL Kampagnen]** enthält
 
 ### Kampagnenkalender {#campaign-calendar}
 
-Jede Kampagne gehört zu einem Programm, das wiederum zu einem Plan gehört. Der Zugriff auf Pläne, Programme und Kampagnen erfolgt über das Menü **[!UICONTROL Kampagnenkalender]** im Tab **Kampagnen**.
+Jede Kampagne gehört zu einem Programm, das wiederum zu einem Plan gehört. Pläne, Programme und Kampagnen sind über das **[!UICONTROL Kampagnenkalender]** im Menü **Kampagnen** Registerkarte.
 
 Um einen Plan, ein Programm, eine Kampagne oder einen Versand zu bearbeiten, klicken Sie auf den jeweiligen Titel im Kalender und anschließend auf den Link **[!UICONTROL Öffnen...]**. Das gewünschte Element öffnet sich in einem neuen Tab:
 
 ![](assets/d_ncs_user_interface_hierar.png)
 
-Sie haben die Möglichkeit, die im Kampagnenkalender angezeigten Informationen zu filtern. Klicken Sie hierzu auf den Link **[!UICONTROL Filtern]** und wählen Sie die gewünschten Kriterien aus.
+Sie können die im Kampagnenkalender angezeigten Informationen filtern: klicken Sie auf **[!UICONTROL Filter]** und wählen Sie die Filterkriterien aus.
 
 ![](assets/campaign_planning_filter.png)
 
 >[!NOTE]
 >
->Bei Nutzung der Datumsfilter werden alle Kampagnen angezeigt, deren Beginn nach dem angegeben Datum und/oder deren Ende vor dem angegebenen Datum liegt. Die Daten müssen über die rechts von den Feldern verfügbaren Kalender ausgewählt werden.
+>Wenn Sie nach einem Datum filtern, werden alle Kampagnen angezeigt, deren Startdatum nach dem angegebenen Datum liegt und/oder deren Enddatum vor dem angegebenen Datum liegt. Wählen Sie Datumsangaben mithilfe der Kalender rechts von jedem Feld aus.
 
 Sie können zur Filterung der angezeigten Elemente auch das Feld **[!UICONTROL Suchen]** verwenden.
 
@@ -67,9 +67,9 @@ Campaign ermöglicht die Verwaltung von Programmen, die aus unterschiedlichen Ma
 
 #### In einem Programm navigieren {#browsing-a-program}
 
-Zur Konfiguration und Bearbeitung eines Programms stehen die folgenden Tabs zur Verfügung:
+Zur Konfiguration und Bearbeitung eines Programms stehen die folgenden Registerkarten zur Verfügung:
 
-* Im Tab **Planung** können Sie den Programmkalender entweder nach Monat, Woche oder Tag angezeigen lassen, indem Sie auf den jeweiligen Tab klicken.
+* Die **Zeitplan** zeigt den Programmkalender für einen Monat, eine Woche oder einen Tag an, je nachdem, auf welche Registerkarte Sie in der Kopfzeile des Kalenders klicken.
 
    Bei Bedarf können an dieser Stelle auch Programme, Kampagnen oder Aufgaben erstellt werden.
 
@@ -116,7 +116,7 @@ Adobe Campaign ermöglicht den Einsatz kollaborativer Prozesse zur Ausführung u
 
 #### Planung {#schedule}
 
-Eine Kampagne umfasst mehrere Sendungen. Die Planung einer Kampagne bietet eine Gesamtübersicht ihrer Bestandteile sowie einen einfachen Zugriff darauf.
+Eine Kampagne zentralisiert eine Reihe von Sendungen. Für jede Kampagne bietet der Zeitplan eine globale Ansicht aller Komponenten: Sie können die Aufgaben und Sendungen anzeigen und leicht darauf zugreifen.
 
 ![](assets/campaign_planning_tab.png)
 
@@ -124,7 +124,7 @@ Eine Kampagne umfasst mehrere Sendungen. Die Planung einer Kampagne bietet eine 
 
 Jede Kampagne verfügt über ein dediziertes Forum, in dem beteiligte Benutzer Nachrichten austauschen können.
 
-Weitere Informationen hierzu finden Sie unter [Diskussionsforen](../../mrm/using/discussion-forums.md).
+Weitere Informationen finden Sie unter [Diskussionsforen](../../mrm/using/discussion-forums.md).
 
 #### Berichte {#reports}
 
@@ -140,11 +140,11 @@ Weitere Informationen hierzu finden Sie unter [Diskussionsforen](../../mrm/using
 
 Kampagnen werden basierend auf Kampagnenvorlagen erstellt. Diese wiederverwendbaren Vorlagen werden so konfiguriert, dass bestimmte Optionen und Einstellungen bereits ausgewählt und gespeichert sind. Für jede Kampagne stehen folgende Funktionalitäten zur Verfügung:
 
-* Referenzierung von Dokumenten und Ressourcen: Es besteht die Möglichkeit, der Kampagne Dokumente hinzuzufügen (Anweisungen, Zusammenfassungen, Bilder usw.). Alle Dateiformate werden unterstützt. Siehe [Zugeordnete Dokumente verwalten](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents).
-* Kostenbestimmung: Adobe Campaign ermöglicht es, für jede Kampagne Kostenkategorien und Berechnungsstrukturen für Kosten festzulegen, die im Rahmen der Ausführung einer Marketing-Kampagne verwendet werden können, z. B.: Druckkosten, Inanspruchnahme eines externen Dienstleisters, Saalmiete usw. Siehe [Bestimmung der Kostenkategorien](../../campaign/using/providers--stocks-and-budgets.md#defining-cost-categories).
+* Verweis auf [Dokumente und Ressourcen](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents): Sie können der Kampagne Dokumente zuordnen (Kurzbeschreibung, Bericht, Bilder etc.). Alle Dokumentenformate werden unterstützt.
+* Bestimmung der Kosten: In Adobe Campaign können Sie für jede Kampagne [Kostenstellen und Kostenberechnungsstrukturen](../../campaign/using/providers--stocks-and-budgets.md#defining-cost-categories) die bei der Erstellung der Marketingkampagne verwendet werden kann. Beispiel: Druckkosten, Nutzung einer externen Agentur, Zimmervermietung.
 * Zielgruppenbestimmung: Im Rahmen einer Kampagne können quantifizierbare Zielvorgaben bestimmt werden, wie z.B. eine zu erreichende Anzahl an Anmeldungen zu einem Event oder ein zu erzielender Umsatz. Diese Informationen werden anschließend in den Kampagnenberichten ausgewertet.
-* Verwaltung von Testadressen (weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../delivery/using/about-seed-addresses.md)) und Kontrollgruppen (siehe [Kontrollgruppen festlegen](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group)).
-* Validierungsverwaltung: Sie können die zu validierenden Vorgänge sowie bei Bedarf validierungsverantwortliche Benutzer oder Benutzergruppen auswählen. Siehe [Kontrolle und Validierung von Sendungen](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries).
+* Verwalten [Testadressen](../../delivery/using/about-seed-addresses.md) und [Kontrollgruppen](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
+* Validierungsverwaltung: Sie können die zu validierenden Vorgänge sowie bei Bedarf validierungsverantwortliche Benutzer oder Benutzergruppen auswählen. [Weitere Informationen](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries)
 
 >[!NOTE]
 >

@@ -2,9 +2,10 @@
 product: campaign
 title: Campaign – Microsoft Dynamics CRM-Connector
 description: Erfahren Sie, wie Sie Campaign und Microsoft Dynamics verbinden
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Microsoft CRM Integration
 exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
-source-git-commit: 1a2e6a0bc754a1236f64b35e99c1be08f1066f75
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1136'
 ht-degree: 100%
@@ -13,11 +14,11 @@ ht-degree: 100%
 
 # Campaign und Microsoft Dynamics 365 verbinden{#connect-to-msdyn}
 
-![](../../assets/v7-only.svg)
+
 
 Auf dieser Seite erfahren Sie, wie Sie Campaign Classic mit **Microsoft Dynamics CRM 365** verbinden.
 
-Die Implementierung kann über die **Web-API** erfolgten (empfohlen). Im [folgenden Abschnitt](#microsoft-dynamics-implementation-step) erfahren Sie, wie Sie die Verbindung mit Microsoft Dynamics herstellen.
+Die Bereitstellung kann über die **Web-API** erfolgten (empfohlen). Im [folgenden Abschnitt](#microsoft-dynamics-implementation-step) erfahren Sie, wie Sie die Verbindung mit Microsoft Dynamics herstellen.
 
 Die Datensynchronisation erfolgt über eine eigene Workflow-Aktivität. [Weitere Informationen](../../platform/using/crm-data-sync.md).
 
@@ -153,7 +154,7 @@ Der Anwendungsbenutzer ist derjenige Benutzer, den die oben registrierte Anwendu
 
 >[!NOTE]
 >
-> Nach der Beendigung von [RDS von Microsoft](https://docs.microsoft.com/previous-versions/dynamicscrm-2016/developers-guide/dn281891%28v=crm.8%29#microsoft-dynamics-crm-2011-endpoint) sind die CRM-Implentierungen vom Typ On-Premise und Office 365 von nicht mehr mit Campaign kompatibel. Adobe Campaign unterstützt jetzt nur mehr die Web-API-Implementierung für die CRM-Version **Dynamics CRM 365**. [Weitere Informationen](../../rn/using/deprecated-features.md#crm-connectors).
+> Nach der Beendigung von [RDS von Microsoft](https://docs.microsoft.com/previous-versions/dynamicscrm-2016/developers-guide/dn281891%28v=crm.8%29#microsoft-dynamics-crm-2011-endpoint) sind die CRM-Bereitstellungen vom Typ On-Premise und Office 365 von nicht mehr mit Campaign kompatibel. Adobe Campaign unterstützt jetzt nur mehr die Web-API-Bereitstellung für die CRM-Version **Dynamics CRM 365**. [Weitere Informationen](../../rn/using/deprecated-features.md#crm-connectors).
 
 Um Microsoft Dynamics 365 mit Campaign zu verbinden, müssen Sie ein dediziertes **[!UICONTROL externes Konto]** in Campaign erstellen und konfigurieren.
 

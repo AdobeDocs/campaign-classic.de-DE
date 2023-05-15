@@ -2,12 +2,13 @@
 product: campaign
 title: Hinzufügen eines berechneten Felds vom Typ "Aufzählung"
 description: Erfahren Sie, wie Sie ein berechnetes Feld vom Typ "Aufzählung" hinzufügen
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: workflow
 content-type: reference
 topic-tags: use-cases
 feature: Workflows, Data Management
 exl-id: 3f606d3a-0af5-4315-bb08-1b21a71f1721
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '495'
 ht-degree: 100%
@@ -16,7 +17,7 @@ ht-degree: 100%
 
 # Hinzufügen eines berechneten Felds vom Typ &quot;Aufzählung&quot; {#adding-an-enumeration-type-calculated-field}
 
-![](../../assets/v7-only.svg)
+
 
 In der folgenden Abfrage wird ein **[!UICONTROL berechnetes Auflistungsfeld]** hinzugefügt. In der Ergebnisanzeige soll eine Spalte erzeugt werden, die das Geschlecht der Empfänger anzeigt: männlich (1), weiblich (2) oder unbestimmt (0).
 

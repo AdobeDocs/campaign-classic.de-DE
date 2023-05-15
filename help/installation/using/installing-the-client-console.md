@@ -2,11 +2,12 @@
 product: campaign
 title: Installieren der Client-Konsole
 description: Erfahren Sie, wie Sie die Client-Konsole installieren.
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
-source-git-commit: 7f24c8be599d6dece41de848d64feb8079b10ff3
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '1146'
 ht-degree: 32%
@@ -15,7 +16,7 @@ ht-degree: 32%
 
 # Installieren und Aktualisieren der Campaign-Clientkonsole{#installing-the-client-console}
 
-![](../../assets/v7-only.svg)
+
 
 Die Client-Konsole in Campaign ist ein Rich-Client, mit dem Sie eine Verbindung zu Ihren Campaign-Anwendungs-Servern herstellen können.
 

@@ -2,9 +2,10 @@
 product: campaign
 title: Inkrementelle Abfrage
 description: Erfahren Sie mehr über die Workflow-Aktivität "Inkrementelle Abfrage".
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Targeting Activity
 exl-id: abc08232-1a92-41e8-90f1-02e0a673539b
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 100%
@@ -13,7 +14,7 @@ ht-degree: 100%
 
 # Inkrementelle Abfrage{#incremental-query}
 
-![](../../assets/v7-only.svg)
+
 
 Inkrementelle Abfragen ermöglichen die regelmäßig wiederkehrende Auswahl einer Zielgruppe nach bestimmten Kriterien unter Ausschluss der Population, die in früheren Durchgängen bereits aufgrund dieser Kriterien ausgewählt wurde.
 

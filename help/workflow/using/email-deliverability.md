@@ -2,8 +2,9 @@
 product: campaign
 title: Email Deliverability
 description: Erfahren Sie mehr über das Email Deliverability-Package.
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Deliverability
-source-git-commit: 381538fac319dfa075cac3db2252a9cc80b31e0f
+source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 100%
@@ -13,7 +14,7 @@ ht-degree: 100%
 
 # Zustellbarkeits-Monitoring (Email Deliverability){#email-deliverability}
 
-![](../../assets/v7-only.svg)
+
 
 Der unten beschriebene Workflow wird standardmäßig auf allen Instanzen installiert und ermöglicht es Ihnen, die Liste der Regeln für die Bounce-E-Mail-Qualifizierung, die Liste der Domains und die Liste der MXs zu initialisieren. Sobald das Package **Zustellbarkeits-Monitoring (Email Deliverability)** installiert ist, wird dieser Workflow nächtlich ausgeführt. Weitere Informationen zum Zustellbarkeits-Monitoring finden Sie in diesem [Abschnitt](../../delivery/using/about-deliverability.md).
 
