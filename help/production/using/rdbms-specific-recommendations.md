@@ -2,11 +2,13 @@
 product: campaign
 title: RDBMS-spezifische Empfehlungen
 description: RDBMS-spezifische Empfehlungen
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: a586d70b-1b7f-47c2-a821-635098a70e45
-source-git-commit: 98b338ddf0da184363c599d74aeb98ed7f6303ce
+source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
 workflow-type: tm+mt
 source-wordcount: '1214'
 ht-degree: 4%
@@ -15,7 +17,7 @@ ht-degree: 4%
 
 # RDBMS-spezifische Empfehlungen{#rdbms-specific-recommendations}
 
-![](../../assets/v7-only.svg)
+
 
 Um Sie bei der Einrichtung von Wartungsplänen zu unterstützen, finden Sie in diesem Abschnitt einige Empfehlungen und Best Practices, die an die verschiedenen von Adobe Campaign unterstützten RDBMS-Engines angepasst sind. Dies sind jedoch nur Empfehlungen. Es liegt an Ihnen, sie entsprechend Ihren internen Verfahren und Einschränkungen Ihren Bedürfnissen anzupassen. Ihr Datenbankadministrator ist dafür verantwortlich, diese Pläne zu erstellen und auszuführen.
 

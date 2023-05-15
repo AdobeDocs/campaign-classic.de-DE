@@ -2,11 +2,13 @@
 product: campaign
 title: Sicherheitszonen konfigurieren
 description: Erfahren Sie, wie Sie Sicherheitszonen konfigurieren
+badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=en" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814
-source-git-commit: 2594e4943ba24ae65d1fc005da589dc674aa2b0f
+source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
 workflow-type: tm+mt
 source-wordcount: '1495'
 ht-degree: 29%
@@ -15,7 +17,7 @@ ht-degree: 29%
 
 # Sicherheitszonen definieren (On-Premise){#defining-security-zones}
 
-![](../../assets/v7-only.svg)
+
 
 Jeder Operator muss mit einer Zone verknüpft sein, um sich bei einer Instanz anmelden zu können, und die IP des Operators muss in die Adressen oder Adresssätze aufgenommen werden, die in der Sicherheitszone definiert sind. Die Konfiguration der Sicherheitszone erfolgt in der Konfigurationsdatei des Adobe Campaign-Servers.
 
@@ -197,7 +199,7 @@ Diese Konfiguration erfolgt im Campaign-Explorer:
    ![](assets/enum_securityzone.png)
 
 1. Klicken Sie für jede in der Konfigurationsdatei des Servers definierte Sicherheitszone auf die **[!UICONTROL Hinzufügen]** Schaltfläche.
-1. Im **[!UICONTROL Interner Name]** Geben Sie den Namen der im Feld **serverConf.xml** -Datei. Sie entspricht dem **@name** -Attribut `<securityzone>`  -Element. Geben Sie im Feld  **Titel**-Feld.
+1. Im **[!UICONTROL Interner Name]** Geben Sie den Namen der im Feld **serverConf.xml** -Datei. Sie entspricht dem **@name** -Attribut `<securityzone>`  -Element. Geben Sie den Titel ein, der mit dem internen Namen verknüpft ist.  **Titel**-Feld.
 
    ![](assets/enum_addsecurityvalue.png)
 
