@@ -8,16 +8,14 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: e5ef6aba-dc22-4c8d-9fbb-13d507181b65
-source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
+source-git-commit: 4b13e310fcee9ba24e83b697fca57bc494505642
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '198'
 ht-degree: 2%
 
 ---
 
 # Backup{#backup}
-
-
 
 Eine Sicherung ist unerlässlich, um zu verhindern, dass Daten im Falle eines (physischen oder systembezogenen) Problems auf einem Computer verloren gehen.
 
@@ -32,33 +30,29 @@ Die meisten Daten befinden sich in der Datenbank. Dies entspricht 99 % der zu si
 
 Dateien sind in mehrere Kategorien unterteilt:
 
-* Konfigurationsdateien im **nl6/conf**
+* Konfigurationsdateien, gespeichert in **nl6/conf** können Sie Adobe Campaign sehr schnell neu konfigurieren.
 
-   Damit können Sie Adobe Campaign sehr schnell neu konfigurieren.
+* Weiterleitungsdateien, gespeichert in  **nl6/var/`<instance-name>`/redir**, befinden sich auf den Tracking-Servern (häufig als &quot;frontal&quot;bezeichnet) und schließen alle vorherigen Kampagnen-Umleitungen ein. Sie werden weiterhin von früheren Kampagnen verwendet.
 
-* Weiterleitungsdateien ** nl6/var/`<instancename>`/redir*
-
-   Diese befinden sich auf den Tracking-Servern (häufig als &quot;frontal&quot; bezeichnet) und umfassen alle vorherigen Kampagnen-Umleitungen. Sie werden weiterhin von früheren Kampagnen verwendet.
-
-* Protokolldateien: **nl6/var/`<instancename>`/log**
-
-   Diese können zur Verfolgung von Problemen verwendet werden.
+* Protokolldateien, gespeichert in **nl6/var/`<instance-name>`/log**, kann zur Verfolgung von Problemen verwendet werden.
 
 Die zu sichernden Verzeichnisse sind daher:
 
 * nl6/conf
 
-* nl6/var/`<instanceName>`/redir (für jede Instanz)
+* nl6/var/`<instance-name>`/redir (für jede Instanz)
 
-* nl6/var/`<instanceName>`/log (optional)
+* nl6/var/`<instance-name>`/log (optional)
 
-* nl6/var/`<instanceName>`/relay (optional)
+* nl6/var/`<instance-name>`/relay (optional)
+
+
+## Datenbank {#database}
 
 >[!IMPORTANT]
 >
->Es ist wichtig, die Datenbank zu sichern.
+>Es ist unbedingt erforderlich, die Datenbank zu sichern.
 
-## Datenbank {#database}
 
 Die Datenbank enthält alle in der Rich-Client-Konsole von Adobe Campaign angezeigten Informationen sowie alle Geschäftsdaten.
 

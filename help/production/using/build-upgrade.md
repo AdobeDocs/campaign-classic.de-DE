@@ -8,9 +8,9 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: c5a9c99a-4078-45d8-847b-6df9047a2fe2
-source-git-commit: a5762cd21a1a6d5a5f3a10f53a5d1f43542d99d4
+source-git-commit: 4b13e310fcee9ba24e83b697fca57bc494505642
 workflow-type: tm+mt
-source-wordcount: '2356'
+source-wordcount: '2355'
 ht-degree: 48%
 
 ---
@@ -93,9 +93,9 @@ Sie müssen auch alle [nützliche Befehlszeilen](../../installation/using/comman
 * **nlserver pdump**: listet aktuelle Prozesse auf
 * **nlserver pdump -who**: listet aktive Client-Sitzungen auf
 * **nlserver monitor -missing**: listet fehlende Eigenschaften auf
-* **nlserver start process@instanceName**: startet einen Prozess
-* **nlserver stop process@instanceName**: stoppt einen Prozess
-* **nlserver Neustart process@instanceName**: startet einen Prozess neu
+* **nlserver start process@instance-name**: startet einen Prozess
+* **nlserver stop process@instance-name**: stoppt einen Prozess
+* **nlserver Neustart process@instance-name**: startet einen Prozess neu
 * **nlserver shutdown**: stoppt alle Campaign-Prozesse
 * **nlserver watchdog -svc**: startet den Watchdog-Prozess (nur UNIX)
 
@@ -278,7 +278,7 @@ YYYY-MM-DD HH:MM:SS.750Z 00002E7A 1 warning log Document of identifier 'nms:incl
 
 Wenn ein Warnhinweis aufgrund eines Konflikts von Ressourcen ausgegeben wird, muss ihn der Benutzer lösen.
 
-Die **postupgrade_ServerVersionNumber_TimeOfPostupgrade.log** enthält das Synchronisierungsergebnis. Sie ist standardmäßig im folgenden Verzeichnis verfügbar: **installationDirectory/var/instanceName/postupgrade**. Fehler und Warnungen werden durch die Fehler- und Warnattribute angezeigt.
+Die **postupgrade_ServerVersionNumber_TimeOfPostupgrade.log** enthält das Synchronisierungsergebnis. Sie ist standardmäßig im folgenden Verzeichnis verfügbar: **installationDirectory/var/`<instance-name>`/postupgrade**. Fehler und Warnungen werden durch die Fehler- und Warnattribute angezeigt.
 
 ### Konflikte analysieren
 

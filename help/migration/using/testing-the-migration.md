@@ -9,7 +9,7 @@ topic-tags: migration-procedure
 hide: true
 hidefromtoc: true
 exl-id: 228ee9e4-46a0-4d82-b8ba-b019bc0e7cac
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 4b13e310fcee9ba24e83b697fca57bc494505642
 workflow-type: tm+mt
 source-wordcount: '706'
 ht-degree: 4%
@@ -56,13 +56,13 @@ Mithilfe verschiedener Optionen können Sie die Auswirkungen einer Migration mes
 * im **config** command:
 
    ```
-   nlserver.exe config <option> -instance:<instanceName>
+   nlserver.exe config <option> -instance:<instance-name>
    ```
 
 * oder beim Postupgrade:
 
    ```
-   nlserver.exe config -postupgrade <option> -instance:<instanceName>
+   nlserver.exe config -postupgrade <option> -instance:<instance-name>
    ```
 
 >[!NOTE]
@@ -76,7 +76,7 @@ Mithilfe verschiedener Optionen können Sie die Auswirkungen einer Migration mes
 * Die **-showCustomEntities** zeigt die Liste aller Objekte an, die nicht dem Standard entsprechen:
 
    ```
-   nlserver.exe config -showCustomEntities -instance:<instanceName>
+   nlserver.exe config -showCustomEntities -instance:<instance-name>
    ```
 
    Beispiel einer gesendeten Nachricht:
@@ -88,7 +88,7 @@ Mithilfe verschiedener Optionen können Sie die Auswirkungen einer Migration mes
 * Die **-showDeletedEntities** zeigt die Liste aller Standardobjekte an, die in der Datenbank oder im Dateisystem fehlen. Für jedes fehlende Objekt wird der Pfad angegeben.
 
    ```
-   nlserver.exe config -showDeletedEntities -instance:<instanceName>
+   nlserver.exe config -showDeletedEntities -instance:<instance-name>
    ```
 
    Beispiel einer gesendeten Nachricht:
@@ -104,7 +104,7 @@ Dieser Prozess ist standardmäßig in den Befehl postupgrade integriert und erm�
 Mit dem folgenden Befehl können Sie den Verifizierungsprozess selbst (ohne Migration) starten:
 
 ```
-nlserver.exe config -postupgrade -check -instance:<instanceName>
+nlserver.exe config -postupgrade -check -instance:<instance-name>
 ```
 
 >[!NOTE]
@@ -177,7 +177,7 @@ Außerdem wird eine Datenbank- und Schema-Konsistenz-Prüfung durchgeführt.
 Mit dieser Option können Sie native Objekte wiederherstellen, wenn sie geändert wurden. Für jedes wiederhergestellte Objekt wird eine Sicherung Ihrer Änderungen im ausgewählten Ordner gespeichert:
 
 ```
-nlserver.exe config -postupgrade -restoreFactory:<backupfolder> -instance:<instanceName>
+nlserver.exe config -postupgrade -restoreFactory:<backupfolder> -instance:<instance-name>
 ```
 
 >[!NOTE]
