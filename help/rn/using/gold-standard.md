@@ -7,7 +7,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
 source-wordcount: '1670'
 ht-degree: 100%
@@ -53,7 +53,7 @@ Build 9032@d030c36 umfasst die folgende Fehlerkorrektur:
 >
 > * Wenn Sie über Adobe Identity Management Service (IMS) mit Ihrer Adobe ID eine Verbindung zu Campaign herstellen, ist eine Aktualisierung erforderlich, damit sowohl der Campaign-Server als auch die Client-Konsole nach dem **30. Juni 2021** eine Verbindung zu Campaign herstellen können. [Weitere Informationen](../../technotes/using/ims-updates.md)
 > * Diese Version enthält eine [Sicherheitskorrektur](https://helpx.adobe.com/de/security/products/campaign/apsb21-04.html): Die Aktualisierung ist zwingend erforderlich, um die Sicherheit Ihrer Umgebung zu erhöhen.
-> * Wenn Sie die Experience Cloud-Triggers-Integration über die OAuth-Authentifizierung verwenden, müssen Sie wie [auf dieser Seite](../../integrations/using/configuring-adobe-io.md) beschrieben zu Adobe I/O wechseln. Die alte oAuth-Authentifizierungsmethode mit Campaign [wurde eingestellt](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411?profile.language=de) am **September 2021**. Gehostete Umgebungen profitieren von einer Verlängerung bis zum **23. Februar 2022**. Wenden Sie sich als On-Premise- oder Hybrid-Kunde an die Kundenunterstützung von Adobe, um den Support bis Februar 2022 zu verlängern. Dazu müssen Sie Adobe [die App-ID der OAuth-Anwendung](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) bereitstellen.
+> * Wenn Sie die Experience Cloud-Triggers-Integration über die OAuth-Authentifizierung verwenden, müssen Sie wie [auf dieser Seite](../../integrations/using/configuring-adobe-io.md) beschrieben zu Adobe I/O wechseln. Die alte oAuth-Authentifizierungsmethode mit Campaign [wurde eingestellt](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411?profile.language=de) am **September 2021**. Gehostete Umgebungen profitieren von einer Verlängerung bis zum **23. Februar 2022**. Wenden Sie sich als On-Premise- oder Hybrid-Kunde an die Kundenunterstützung von Adobe, um den Support bis Februar 2022 zu verlängern. Dazu müssen Sie Adobe [die App-ID der OAuth-Anwendung](../../integrations/using/configuring-pipeline.md#step-optional) bereitstellen.
 >
 >Weitere Informationen finden in diesem [[!DNL Gold Standard] Abschnitt](../../rn/using/gold-standard.md).
 

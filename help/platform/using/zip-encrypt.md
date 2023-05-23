@@ -8,9 +8,9 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 4596638c-d75a-4e07-a2d8-5befcaad3430
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '558'
 ht-degree: 100%
 
 ---
@@ -23,7 +23,7 @@ Mit Adobe Campaign können Sie komprimierte oder verschlüsselte Dateien exporti
 
 Gehen Sie dazu folgendermaßen vor:
 
-1. Installieren Sie mit dem [Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=de#encrypting-data) ein GPG-Schlüsselpaar für Ihre Instanz.
+1. Installieren Sie mit dem [Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=de#encrypting-data?lang=de) ein GPG-Schlüsselpaar für Ihre Instanz.
 
    >[!NOTE]
    >
@@ -47,7 +47,7 @@ In diesem Anwendungsfall wird ein Workflow erstellt, um Daten mit einem im Contr
 
 Die Schritte zum Ausführen dieses Anwendungsfalls lauten wie folgt:
 
-1. Generieren Sie ein GPG-Schlüsselpaar (öffentlich/privat) mit einem GPG-Dienstprogramm und installieren Sie dann den öffentlichen Schlüssel im Control Panel. Ausführliche Anweisungen finden Sie in der [Control Panel-Dokumentation](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=de#encrypting-data).
+1. Generieren Sie ein GPG-Schlüsselpaar (öffentlich/privat) mit einem GPG-Dienstprogramm und installieren Sie dann den öffentlichen Schlüssel im Control Panel. Ausführliche Anweisungen finden Sie in der [Control Panel-Dokumentation](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=de#encrypting-data?lang=de).
 
 1. Erstellen Sie einen Workflow in Campaign Classic, um die Daten zu exportieren und mithilfe des über das Control Panel installierten privaten Schlüssels zu verschlüsseln. Zu diesem Zweck wird folgender Workflow erstellt:
 
