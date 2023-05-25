@@ -1,16 +1,16 @@
 ---
 product: campaign
 title: Message-Center-Verarbeitungsdauer
-description: Erfahren Sie mehr über den Verarbeitungszeitbericht für Message Center.
+description: Weitere Informationen über den Bericht „Message Center-Verarbeitungsdauer“
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: message-center
 content-type: reference
 topic-tags: reports
 exl-id: c797fd94-0c8d-480b-b22a-1489ac331e77
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '253'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
