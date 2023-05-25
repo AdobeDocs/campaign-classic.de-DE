@@ -7,7 +7,7 @@ badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email
 exl-id: dbdfc04a-691b-470d-b96d-4c8a9531327d
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '136'
 ht-degree: 100%
 
@@ -29,7 +29,7 @@ Die wichtigsten Schritte zum Senden einer E-Mail sind:
 
 * [E-Mail-Versand erstellen](creating-an-email-delivery.md)
 * [Zielpopulation bestimmen](steps-defining-the-target-population.md)
-* [E-Mail-Inhalte erstellen](defining-the-email-content.md)
+* [Definieren des E-Mail-Inhalts](defining-the-email-content.md)
 * [E-Mail senden](sending-messages.md)
 * [Versand überwachen](about-delivery-monitoring.md)
 
