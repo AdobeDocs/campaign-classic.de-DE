@@ -7,7 +7,7 @@ badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: SMS
 exl-id: fded088a-11a2-4b87-a368-7b197334aca4
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '8460'
 ht-degree: 100%
 
@@ -412,7 +412,7 @@ Die Anzahl der Verbindungen pro untergeordnetem MTA-Element ist über den SMPP-C
 
 In Adobe Campaign Classic kann die Zahl der Receiver-Verbindungen von der Zahl der Transmitter-Verbindungen abweichen:
 
-* **</br>Transmitter-Verbindungen = Anzahl untergeordneter MTA-Verbindungen x Anzahl untergeordneter MTA-Prozesse x Anzahl der MTAs (wenn automatische Antwort eingestellt ist) + Anzahl untergeordneter MTA-Verbindungen**
+* **Transmitter-Verbindungen = Anzahl untergeordneter MTA-Verbindungen * Anzahl untergeordneter MTA-Prozesse * Anzahl der MTAs </br> (wenn automatische Antwort eingestellt ist) + Anzahl untergeordneter MTA-Verbindungen**
 
 Wie oben dargelegt, öffnet der SMS-Prozess von Adobe Campaign Classic mehr Transmitter-Verbindungen, wenn die automatische Antwort aktiviert ist. Diese zusätzlichen Verbindungen dienen zum Senden der automatischen Antworten.
 
