@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Instanzen konfigurieren
+title: Konfigurieren von Instanzen
 description: Erfahren Sie, wie Sie die Kontroll- und Ausführungsinstanzen für Transaktionsnachrichten in Adobe Campaign Classic konfigurieren
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: message-center
@@ -8,14 +8,14 @@ content-type: reference
 topic-tags: instance-configuration
 exl-id: 23a384d1-27ce-46c2-98c3-0fb60a5c50ee
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1277'
 ht-degree: 100%
 
 ---
 
 
-# Instanzen konfigurieren {#creating-a-shared-connection}
+# Konfiguration von Instanzen {#creating-a-shared-connection}
 
 
 
