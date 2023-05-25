@@ -6,9 +6,9 @@ badge: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Access Management, Permissions
 exl-id: 9b616715-33cd-43ba-8548-8d96a179408e
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '264'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 95%
 
 
 
-Mit Adobe Campaign können Sie die den verschiedenen Benutzenden zugewiesenen Rechte definieren und verwalten. Diese sind ein Satz von Rechten und Einschränkungen, die Folgendes ermöglichen oder verweigern:
+Mit Adobe Campaign können Sie die den verschiedenen Benutzerinnen und Benutzern zugewiesenen Rechte definieren und verwalten. Diese bestehen aus einem Satz von Rechten und Einschränkungen, die Folgendes erlauben bzw. verweigern:
 
 * Zugriff auf bestimmte Funktionen (über spezifische Berechtigungen);
 * Zugriff auf bestimmte Datensätze;
@@ -26,9 +26,9 @@ Die Rechte können sowohl für einzelne Benutzerprofile als auch Benutzergruppen
 
 Sie werden durch Sicherheitsparameter ergänzt, die mit dem vom Benutzer zur Verbindung mit Adobe Campaign verwendeten Modus verknüpft sind. Weitere Informationen zu Sicherheitszonen finden Sie auf [dieser Seite](../../installation/using/security-zones.md).
 
-Es gibt zwei Arten von Berechtigungen, die einem Benutzer erteilt werden können:
+Es gibt zwei Arten von Berechtigungen, die einer Benutzerin oder einem Benutzer erteilt werden können:
 
-* Sie können Benutzergruppen bestimmen, denen Sie Berechtigungen einräumen, und dann die Benutzer einer oder mehreren Gruppen zuweisen. Diese Vorgehensweise ermöglicht eine gemeinsame Nutzung der Rechte und eine Vereinheitlichung der Benutzerprofile. Außerdem wird die Verwaltung und Pflege von Profilen erleichtert. Die Erstellung und Verwaltung von Gruppen wird in [diesem Abschnitt](access-management-groups.md) näher beschrieben.
+* Sie können Benutzergruppen bestimmen, denen Sie Berechtigungen einräumen, und dann die Benutzerinnen und Benutzer einer oder mehreren Gruppen zuweisen. Diese Vorgehensweise ermöglicht die Wiederverwendung von Rechten und eine Vereinheitlichung der Benutzerprofile. Außerdem wird dadurch die Verwaltung und Pflege von Profilen erleichtert. Die Erstellung und Verwaltung von Gruppen wird in [diesem Abschnitt](access-management-groups.md) näher beschrieben.
 
 * Sie können den Benutzern direkt spezifische Berechtigungen einräumen, gegebenenfalls, um über Gruppen eingeräumte Berechtigungen zu überschreiben. Diese Rechte werden auf [dieser Seite](access-management-named-rights.md) näher beschrieben.
 
