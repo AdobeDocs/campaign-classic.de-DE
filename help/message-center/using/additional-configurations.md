@@ -1,26 +1,26 @@
 ---
 product: campaign
-title: Ergänzende Konfigurationen
-description: Erfahren Sie, wie Sie ergänzende Konfigurationen für Transaktionsnachrichten in Adobe Campaign Classic einrichten
+title: Zusätzliche Konfigurationen
+description: Erfahren Sie, wie Sie in Adobe Campaign Classic zusätzliche Konfigurationen für Transaktionsnachrichten einrichten
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '786'
 ht-degree: 100%
 
 ---
 
-# Ergänzende Konfigurationen {#mc-additional-configurations}
+# Zusätzliche Konfigurationen {#mc-additional-configurations}
 
 
 
 ## Schwellenwerte überwachen {#monitoring-thresholds}
 
-Sie können die Hinweis- und Warnschwellen der Kennzahlen konfigurieren (orange bzw. rot), die in den Berichten **Message Center Dienstqualität** und **Message Center Verarbeitungsdauer** angezeigt werden (siehe [Auf Transaktionsnachrichten-Berichte zugreifen](../../message-center/using/about-transactional-messaging-reports.md)).
+Sie können die Hinweis- und Warnschwellen der Kennzahlen konfigurieren (orange bzw. rot), die in den Berichten **Message Center Dienstqualität** und **Message Center Verarbeitungsdauer** angezeigt werden (siehe [Zugreifen auf Berichte zu Transaktionsnachrichten](../../message-center/using/about-transactional-messaging-reports.md)).
 
 Gehen Sie dazu wie folgt vor:
 
