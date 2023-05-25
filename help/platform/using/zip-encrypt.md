@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Datei komprimieren oder verschlüsseln
-description: Erfahren Sie, wie Sie eine Datei im Campaign vor der Verarbeitung komprimieren oder verschlüsseln
+description: Erfahren Sie, wie Sie eine Datei in Campaign vor der Verarbeitung komprimieren oder verschlüsseln
 badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
