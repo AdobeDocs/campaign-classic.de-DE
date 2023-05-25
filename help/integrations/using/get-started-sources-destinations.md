@@ -1,13 +1,13 @@
 ---
 product: campaign
 title: Erste Schritte mit Quellen und Zielen
-description: Weitere Informationen zu Adobe Experience Platform-Quellen und -Zielen
+description: Weitere Informationen zu Quellen und Zielen in Adobe Experience Platform
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 audience: integrations
 content-type: reference
 exl-id: 8cee52c7-ea56-4701-8ebb-eb18afffea51
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '306'
 ht-degree: 100%
 
