@@ -5,7 +5,7 @@ description: Erfahren Sie mehr über das Web Analytics-Package.
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows, Analytics Integration
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '182'
 ht-degree: 100%
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 
 
-Die folgenden Workflows werden standardmäßig mit dem Modul **Web-Analytics-Connectoren** installiert. Weiterführende Informationen zu dem Modul finden Sie in diesem [Abschnitt](../../platform/using/adobe-analytics-connector.md).
+Die folgenden Workflows werden standardmäßig mit dem Modul **Web Analytics-Connectoren** installiert. Weiterführende Informationen zu dem Modul finden Sie in diesem [Abschnitt](../../platform/using/adobe-analytics-connector.md).
 
 <table> 
  <tbody> 
