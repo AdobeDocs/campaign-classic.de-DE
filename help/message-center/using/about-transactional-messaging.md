@@ -6,7 +6,7 @@ badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classi
 feature: Transactional Messaging
 exl-id: dc52e789-d0bf-4e8f-b448-9d69a2762cc1
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '648'
 ht-degree: 100%
 
@@ -91,4 +91,4 @@ Nachdem Sie die Transaktionsnachrichtenvorlage erstellt und veröffentlicht habe
 * [Erste Schritte mit Kommunikationskanälen](../../delivery/using/communication-channels.md)
 * [Wichtigste Schritte bei der Versanderstellung](../../delivery/using/steps-about-delivery-creation-steps.md)
 * [Transaktionsnachrichten-Architektur](../../message-center/using/transactional-messaging-architecture.md)
-* [Auf Transaktionsnachrichten-Berichte zugreifen](../../message-center/using/about-transactional-messaging-reports.md)
+* [Zugreifen auf Berichte zu Transaktionsnachrichten](../../message-center/using/about-transactional-messaging-reports.md)
