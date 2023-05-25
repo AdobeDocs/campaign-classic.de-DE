@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Importieren und Exportieren von Daten mit Workflows
-description: Erfahren Sie, wie Sie Daten mit Workflows in Campaign importieren und exportieren.
+title: Importieren und Exportieren von Daten mithilfe von Workflows
+description: Erfahren Sie, wie Sie Daten mithilfe von Workflows in Campaign importieren und exportieren.
 badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
@@ -9,7 +9,7 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 266ecd49-7101-4ff1-941f-1f9b39b44955
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '267'
 ht-degree: 100%
 
