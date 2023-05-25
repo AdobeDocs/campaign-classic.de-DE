@@ -1,13 +1,13 @@
 ---
 product: campaign
-title: Empfehlungen zur Hardware-Größe für Campaign Classic v7
-description: Empfehlungen zur Hardware-Größe für Campaign Classic v7
+title: Empfehlungen zur Hardware-Dimensionierung für Campaign Classic v7
+description: Empfehlungen zur Hardware-Dimensionierung für Campaign Classic v7
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: c47e73a0-dbd8-43f5-a363-7e6783dc7685
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2512'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
@@ -15,69 +15,69 @@ ht-degree: 1%
 
 
 
-## Überblick
+## Übersicht
 
 >[!CAUTION]
 >
->Dieser Artikel wird nur als allgemeine Beispielanleitung bereitgestellt. Sie müssen sich an Ihren Adobe Campaign Customer Success Manager wenden, um die genaue Größe Ihrer Bereitstellung zu messen, bevor Sie mit Ihrem Campaign-Projekt beginnen. **Nicht** -Infrastruktur oder -Hardware zu erwerben oder bereitzustellen, bis dies geschehen ist.
+>Dieser Artikel dient lediglich als allgemeiner beispielhafter Leitfaden. Sie müssen sich an Ihren Adobe Campaign Customer Success Manager wenden, um die genaue Dimensionierung Ihrer Bereitstellung abzuschätzen, bevor Sie mit Ihrem Campaign-Projekt beginnen. Erwerben oder implementieren Sie erst **danach** Infrastruktur oder Hardware.
 
-Dieses Dokument enthält allgemeine Empfehlungen für die Bereitstellung von Adobe Campaign Classic v7 in Ihrem On-Premise-Rechenzentrum oder Ihrer virtualisierten Cloud-Umgebung. Diese Art von Einsatz, bezeichnet als **hybrid** oder **Mid-Sourcing** platziert die Marketing-Instanz von Campaign und die Marketing-Datenbank unter Ihrer betrieblichen Kontrolle, während Adobe Cloud Messaging-Dienste zum Senden von E-Mails, SMS oder SMPP-Nachrichten sowie zum Erfassen von E-Mail-Öffnungs-, Bounce- und Klick-Tracking-Daten verwendet werden.
+Dieses Dokument enthält allgemeine Empfehlungen für die Bereitstellung von Adobe Campaign Classic v7 in Ihrem On-Premise-Rechenzentrum oder Ihrer virtualisierten Cloud-Umgebung. Diese Art der Bereitstellung wird als **Hybrid**- oder **Mid-Sourcing**-Bereitstellung bezeichnet. Dadurch erhalten Sie die betriebliche Kontrolle über die Marketing-Instanz und Marketing-Datenbank von Campaign, während Adobe Cloud Messaging-Dienste zum Senden von E-Mails, SMS oder SMPP-Nachrichten sowie zum Erfassen von E-Mail-Öffnungen, Bounce Messages und Klick-Tracking-Daten verwendet werden.
 
-Die Marketing-Instanz ist der Teil der Adobe Campaign-Architektur, der alle Marketing-Aktivitäten steuert und alle von Kampagnen zurückgegebenen Empfängerdaten und Analysedaten speichert. Die Marketing-Instanz besteht aus einer Reihe von On-Premise-Servern, auf denen Adobe Campaign-Dienste ausgeführt werden, und einer relationalen Datenbank.
+Die Marketing-Instanz ist der Teil der Adobe Campaign-Architektur, der alle Marketing-Aktivitäten steuert und sämtliche von Kampagnen zurückgegebenen Empfänger- und Analysedaten speichert. Die Marketing-Instanz besteht aus einer Reihe von On-Premise-Servern, auf denen Adobe Campaign-Dienste ausgeführt werden, und einer relationalen Datenbank.
 
 >[!CAUTION]
 >
->Die Informationen in diesem Dokument gelten nicht, wenn Sie eine vollständig gehostete Adobe Campaign-Instanz verwenden (die in Adobe Cloud Services bereitgestellt wird).
+>Die Informationen in diesem Dokument gelten nicht, wenn Sie eine vollständig gehostete (in Adobe-Cloud-Diensten bereitgestellte) Adobe Campaign-Instanz verwenden.
 
-Die Softwarekompatibilität wird im Abschnitt [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md).
+Ausführliche Informationen zur Software-Kompatibilität finden Sie in der [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md).
 
 
 ### Szenarien
 
-Bereitstellungsdiagramme und Empfehlungen zur Hardwaredimensionierung werden für drei repräsentative Szenarien bereitgestellt:
+Bereitstellungsdiagramme und Empfehlungen zur Hardware-Dimensionierung werden für drei repräsentative Szenarien bereitgestellt:
 
-1. [Moderate Größe](#scenario-1) - 5 Millionen aktive Empfänger im System
-1. [Groß-Größe](#scenario-2) - 20 Millionen aktive Empfänger im System
-1. [Unternehmen](#scenario-3) - 50 Millionen aktive Empfänger mit Transaktionsnachrichten
+1. [Mittelgroß](#scenario-1) – 5 Millionen aktive Empfängerinnen und Empfänger im System
+1. [Groß](#scenario-2) – 20 Millionen aktive Empfängerinnen und Empfänger im System
+1. [Unternehmen](#scenario-3) – 50 Millionen aktive Empfängerinnen und Empfänger mit Transaktionsnachrichten
 
 ### Annahmen
 
 In diesem Dokument werden außerdem die folgenden Nutzungsarten für alle drei Szenarien angenommen:
 
-* Große E-Mail-Kampagnen werden zweimal wöchentlich an ca. 50 % der aktiven Empfänger gesendet
-* Briefpost wird einmal pro Monat für jeden Empfänger im System generiert
-* SMS-Nachrichten werden monatlich an etwa 10 % der aktiven Empfänger gesendet
-* Das Datenbankschema, das jeden Empfänger definiert, wurde um eine zusätzliche Tabelle erweitert, die für jeden Empfänger etwa 200 Byte an Daten enthält
+* Große E-Mail-Kampagnen werden zweimal wöchentlich an ca. 50 % der aktiven Empfängerinnen und Empfänger gesendet.
+* Briefpost wird einmal pro Monat für jede Empfängerin und jeden Empfänger im System generiert.
+* SMS-Nachrichten werden monatlich an ca. 10 % der aktiven Empfängerinnen und Empfänger gesendet.
+* Das Datenbankschema, das jede Empfängerin und jeden Empfänger definiert, wurde um eine zusätzliche Tabelle erweitert, die für jede Empfängerin und jeden Empfänger etwa 200 Byte an Daten enthält.
 * Das Adobe Campaign Interaction-Modul wird verwendet, um ausgehenden E-Mails Angebote hinzuzufügen.
-* E-Mail-Tracking-Daten werden im Campaign-System 90 Tage lang aufbewahrt
+* E-Mail-Tracking-Daten werden im Campaign-System 90 Tage lang aufbewahrt.
 
 ## Allgemeine Richtlinien
 
-Campaign ist eine datenbankorientierte Anwendung, und die Leistung des Datenbankservers ist entscheidend. Die Ausführung von Workflows, die Segmentierung, das Hochladen von Tracking-Daten, eingehende Interaktionen, Analysen und andere Aktivitäten generieren Datenbankaktivitäten. Im Allgemeinen bestimmen Größe und Häufigkeit dieser Vorgänge die Größe Ihrer Datenbankserver.
+Campaign ist eine datenbankorientierte Anwendung, und die Leistung des Datenbank-Servers ist entscheidend. Die Ausführung von Workflows, Segmentierungen, Uploads von Tracking-Daten, eingehende Interaktionen, Analysen und andere Aktivitäten führen alle zu Datenbankaktivität. Im Allgemeinen bestimmen die Größe und Häufigkeit dieser Vorgänge die Größe Ihrer Datenbank-Server.
 
-Die Anwendungsserver in Ihrer Marketing-Instanz benötigen genügend CPU und Arbeitsspeicher, um Workflows auszuführen und auf SOAP-API-Aufrufe zu reagieren, einschließlich Anforderungen von Campaign Console-Benutzern. Die CPU-Anforderungen können für Workflows von Bedeutung sein, die ausgehende Interaktionen mit komplexen Angebotsregeln, Workflows, die benutzerdefinierten JavaScript ausführen, und Webanwendungen mit hohem Traffic-Niveau verwenden.
+Die Anwendungs-Server in Ihrer Marketing-Instanz benötigen ausreichend CPU und Arbeitsspeicher, um Workflows auszuführen und auf SOAP-API-Aufrufe zu reagieren, einschließlich Anfragen von Benutzenden der Campaign-Konsole. Die CPU-Anforderungen können für Workflows, die ausgehende Interaktionen mit komplexen Angebotsregeln verwenden, für Workflows, die benutzerdefiniertes JavaScript ausführen, und für Webanwendungen mit hohem Traffic erheblich sein.
 
-Campaign-Webanwendungen können auch auf den App-Servern der Marketinginstanz oder auf separaten Webserversystemen bereitgestellt werden. Da Webanwendungsarbeitslasten mit kritischen Workflows und Benutzern der Campaign Console in Konflikt stehen, können Webanwendungen und eingehende Interaktionen auf separaten Servern bereitgestellt werden, um sicherzustellen, dass die Kernfunktionen von Campaign zuverlässig und leistungsstark ausgeführt werden.
+Campaign-Webanwendungen können auch auf den App-Servern der Marketing-Instanz oder auf separaten Webserver-Systemen bereitgestellt werden. Da Webanwendungs-Workloads mit wichtigen Workflows und Benutzenden der Campaign-Konsole in Konflikt stehen, können Webanwendungen und eingehende Interaktionen auf separaten Servern bereitgestellt werden, um sicherzustellen, dass die Kernfunktionen von Campaign zuverlässig und mit guter Leistung ausgeführt werden.
 
-Aus Gründen der Sicherheit und Verfügbarkeit empfiehlt Adobe, den Internetverkehr von dem von den Geschäftsbenutzern generierten Datenverkehr zu trennen. Aus diesem Grund enthalten die Diagramme zwei Gruppen von Servern: den Webserver (Internet-Zugriff auf Web1 und Web2) und die App-Server (Geschäftsprozesse App1 und App2).
+Aus Gründen der Sicherheit und Verfügbarkeit empfiehlt Adobe, den Internet-Traffic und den von geschäftlichen Anwenderinnen und Anwendern generierten Traffic zu trennen. Daher enthalten die Diagramme zwei Gruppen von Servern: den Webserver (Internet-Zugriff auf Web1 und Web2) und die Appserver (Geschäftsprozesse App1 und App2).
 
-Es ist eine gesetzliche Voraussetzung für kommerzielle E-Mail-Absender, über eine funktionale Opt-out-Webseite zu verfügen. Adobe empfiehlt, für Ausfallszenarien redundante Computer in jedem Gruppenserver zu verwenden. Dies gilt insbesondere, wenn Adobe Campaign die Opt-out-Seiten hostet.
+Es ist eine gesetzliche Voraussetzung für kommerzielle E-Mail-Absender, über eine funktionale Opt-out-Webseite zu verfügen. Adobe empfiehlt, für Ausfallszenarien redundante Computer in jedem Gruppen-Server zu verwenden. Dies gilt insbesondere, wenn Adobe Campaign die Opt-out-Seiten hostet.
 
 ### Reverse-Proxys
 
-Die Campaign-Architektur erzwingt hohe Sicherheit durch die Verwendung von SSL über HTTP (HTTPS) für die Kommunikation zwischen Ihrer Marketing-Instanz und Adobe Cloud Messaging. Sicherheit, Zuverlässigkeit und Verfügbarkeit werden erzwungen, indem Reverse-Proxys in einem DMZ-Subnetz (demilitarisierte Zone) verwendet werden, um die Server und die Datenbank der Marketinginstanz zu isolieren und zu schützen.
+Die Campaign-Architektur setzt eine hohe Sicherheit durch, indem SSL über HTTP (HTTPS) für die Kommunikation zwischen Ihrer Marketing-Instanz und Adobe Cloud Messaging verwendet wird. Sicherheit, Zuverlässigkeit und Verfügbarkeit werden über Reverse-Proxys in einem DMZ-Subnetz („demilitarisierte Zone“) durchgesetzt, um die Server und die Datenbank der Marketing-Instanz zu isolieren und zu schützen.
 
 ### Lastenausgleich
 
-Der Lastenausgleich für die App-Server wird in einer aktiven/passiven Konfiguration eingerichtet, wobei HTTPS am Proxy beendet wird. Der Lastenausgleich für die Webserver wird in einer aktiven/aktiven Konfiguration eingerichtet, wobei HTTPS am Proxy beendet wird.
+Der Lastenausgleich für die Webserver wird in einer Aktiv/Aktiv-Konfiguration eingerichtet, wobei HTTPS am Proxy endet. Der Lastenausgleich für die Webserver wird in einer Aktiv/Aktiv-Konfiguration eingerichtet, wobei HTTPS am Proxy endet.
 
-Adobe bietet eine exklusive Liste von URL-Pfaden, die in Ihrer Bereitstellungsumgebung an den Adobe Campaign-Server weitergeleitet werden können.
+Adobe stellt Ihnen eine exklusive Liste von URL-Pfaden zur Verfügung, die in Ihrer Bereitstellungsumgebung an den Adobe Campaign-Server weitergeleitet werden können.
 
 ### Architektur
 
-Die allgemeine Architektur ist unabhängig von den Volumina fast identisch. Die Sicherheits- und Hochverfügbarkeitsanforderungen erfordern mindestens vier Server. zwei Server, wenn keine WebApps verwendet werden. Der Unterschied in der Konfiguration variiert hauptsächlich in der Hardwarekonfiguration wie CPU-Kern und Speicher.
+Die allgemeine Architektur ist ungeachtet der Volumen nahezu identisch. Die Anforderungen an Sicherheit und Hochverfügbarkeit setzen mindestens vier Server voraus (zwei Server, wenn keine WebApps verwendet werden). Der Unterschied in der Konfiguration variiert hauptsächlich bei der Hardware-Konfiguration wie CPU-Kern und Arbeitsspeicher.
 
-## Szenario 1: Moderate Bereitstellung{#scenario-1}
+## Szenario 1: Mittelgroße Bereitstellung{#scenario-1}
 
 ![](assets/scenario-1.png)
 
@@ -85,48 +85,48 @@ Geschätztes Volumen:
 
 | Kanal | Anzahl |
 | ----------------------- | ----------------- |
-| Aktive Empfänger | 5 Millionen |
+| Aktive Empfängerinnen und Empfänger | 5 Millionen |
 | E-Mail | 4,2 Millionen/Monat |
 | Briefpost | 1 Million/Monat |
 | Mobile SMS | 100.000/Monat |
-| Tägliche maximale E-Mail-Menge | 500 |
+| Maximale E-Mail-Anzahl täglich | 500 |
 
-Für diese Volumes bietet eine Kombination aus Adobe Campaign-Anwendungsserversystemen alle Funktionen für Adobe Campaign-Client-Benutzer und die Ausführung von Workflows. Bei 5 Millionen aktiven Empfängern und diesem E-Mail-Volumen sind die Workloads des Anwendungsservers nicht CPU- oder I/O-intensiv. Der größte Stress liegt in der Datenbank.
+Für diese Volumen bieten zwei Adobe Campaign-Anwendungs-Server-Systeme alle Funktionen für Adobe Campaign-Client-Benutzende und die Ausführung von Workflows. Bei 5 Millionen aktiven Empfängerinnen und Empfängern und dieser E-Mail-Anzahl sind die Workloads der Anwendungs-Server weder CPU- noch E/A-intensiv. Die meiste Belastung entfällt auf die Datenbank.
 
-Die Adobe Campaign-Webserver werden in der Sicherheitszone angezeigt.
+Die Adobe Campaign-Webserver werden in der sicheren Zone angezeigt.
 
-### Web- und Anwendungsserver
+### Web- und Anwendungs-Server
 
-In diesem Szenario wird empfohlen, Adobe Campaign auf vier Computern mit der folgenden Spezifikation zu installieren:
+In diesem Szenario wird empfohlen, Adobe Campaign auf vier Computern mit folgender Spezifikation zu installieren:
 
-**3-GHz+-Quad-Core-CPU, 8-GB RAM, RAID 1 oder 10, 2 x 80-GB SSD**
+**Quad-Core-CPU mit mindestens 3 GHz, 8 GB RAM, RAID 1 oder 10, 2 SSD mit je 80 GB**
 
-Diese Systeme erstellen die Marketinginstanz Application Server, der Ihre Campaign Console-Benutzer direkt unterstützt und die Kampagnen-Workflows ausführt.
+Diese Systeme bilden den Anwendungs-Server für die Marketing-Instanz, der die Benutzenden der Campaign-Konsole direkt unterstützt und die Kampagnen-Workflows ausführt.
 
-Reverse-Proxys in einer DMZ-Lastenausgleichsfunktion des Traffics auf die Adobe Campaign-Webserver. Es ist nicht erforderlich, den Adobe Campaign-Software-Stack auf Proxy-Computern zu installieren. jede Reverse-Proxy-Software oder Netzwerkausrüstung verwendet werden kann.
+Reverse-Proxys in DMZ-Lastenausgleichs-Traffic an die Adobe Campaign-Webserver. Es ist nicht erforderlich, den Adobe Campaign-Softwarestack auf Proxy-Computern zu installieren. Es kann beliebige Reverse-Proxy-Software oder -Netzwerkausrüstung verwendet werden.
 
-Opt-in/Opt-out-Funktion für Abonnements und Funktionen von Präferenzzentren können von Campaign oder Ihrer eigenen Website bereitgestellt werden. Wenn Sie diese Funktion auf Ihrer Website implementieren möchten, müssen Sie sicherstellen, dass die Voreinstellungs- und Abonnementinformationen an die Marketing-Datenbank von Campaign weitergeleitet werden. Dies geschieht normalerweise durch die automatische Erstellung von Extraktionsdateien, die von Campaign-Workflows hochgeladen werden.
+Funktionen zum Opt-in/Opt-out für Abonnements und Funktionen für Präferenzzentren können von Campaign oder Ihrer eigenen Website bereitgestellt werden. Wenn Sie diese Funktionalität auf Ihrer Website implementieren möchten, müssen Sie sicherstellen, dass die Präferenz- und Abonnementinformationen an die Marketing-Datenbank von Campaign weitergeleitet werden. Dies geschieht normalerweise durch die Erstellung von Extraktionsdateien, die von Campaign-Workflows automatisch hochgeladen werden.
 
-Der Speicherplatzverbrauch auf Anwendungsservern hängt von der Aufbewahrungsfrist von Dateien ab, die mit Drittanbietern ausgetauscht werden (z. B. Druckanbieter für Briefpost), sowie von der Größe und Aufbewahrung importierter Flat Files, wie z. B. Anmelde- oder Vorlieben-Updates von Ihrer Website, oder von Auszügen aus Ihren eigenen CRM- oder Marketingsystemen.
+Der Speicherplatzverbrauch auf Anwendungs-Servern hängt von der Aufbewahrungsdauer von Dateien ab, die mit Drittanbietern ausgetauscht werden (z. B. Druckanbietern für Briefpost), sowie von der Größe und Aufbewahrungsdauer der importierten flachen Dateien (wie z. B. Abonnements- oder Präferenzaktualisierungen von Ihrer Website) oder der Auszüge aus Ihren eigenen CRM- oder Marketing-Systemen.
 
 ### Datenbank
 
-Die Hardware-Empfehlungen für den Datenbankserver lauten wie folgt:
+Die Hardware-Empfehlungen für den Datenbank-Server lauten wie folgt:
 
-**3-GHz+-4-Core-CPU, 16-GB-RAM, RAID 1 oder 10, 128-GB-SSD-Minimum**
+**Quad-Core-CPU mit mindestens 3 GHz, 16 GB RAM, RAID 1 oder 10, SSD mit mindestens 128 GB**
 
-Die Speicherschätzung geht von einer vollständigen Zwischenspeicherung von etwa 500.000 Empfängern für einen großen Kampagnenstart sowie von RDBMS-Pufferspeicher für die Ausführung von Workflows, den Import von Tracking-Daten und anderen gleichzeitigen Aktivitäten aus.
+Die Speicherschätzung geht von einer vollständigen Zwischenspeicherung von etwa 500.000 Empfängerinnen und Empfängern bei einem großen Kampagnen-Launch sowie von zusätzlichem RDBMS-Pufferspeicher für die Ausführung von Workflows, den Import von Tracking-Daten und andere gleichzeitige Aktivitäten aus.
 
-Es wird geschätzt, dass der Speicherplatz, der für die Datenbank benötigt wird, um alle technischen Daten von Adobe Campaign (Kampagnen, Tracking, Arbeitstabellen usw.) zu speichern, basierend auf einer Aufbewahrungsfrist von drei Monaten etwa 35 GB beträgt. Wenn Sie Tracking-Daten für 6 Monate aufbewahren, erhöht sich die Datenbankgröße auf etwa 40 GB und die 12-monatige Aufbewahrung erhöht die Datenbankgröße auf etwa 45 GB. Die Empfängerdaten verbrauchen für diese Umgebung etwa 5 GB.
+Schätzungsweise benötigt die Datenbank zum Speichern aller technischen Adobe Campaign-Daten (Kampagnen, Tracking, Arbeitstabellen usw.) bei einem Aufbewahrungszeitraum von drei Monaten etwa 35 GB an Speicherplatz. Wenn Sie Tracking-Daten 6 Monate lang aufbewahren, erhöht sich die Datenbankgröße auf etwa 40 GB, und bei 12 Monaten auf etwa 45 GB. Die Empfängerdaten verbrauchen bei dieser Umgebung etwa 5 GB.
 
 >[!CAUTION]
 >
->Diese Schätzung enthält keine zusätzlichen Kundendaten. Wenn Sie zusätzliche Spalten oder Tabellen mit Kundendaten in die Adobe Campaign-Datenbank replizieren möchten, müssen Sie den zusätzlichen Speicherplatzbedarf abschätzen. Hochgeladene Segmente/Listen erfordern außerdem je nach Größe, Häufigkeit und Aufbewahrungszeitraum mehr Speicher.
+>Diese Schätzung umfasst keine zusätzlichen Kundendaten. Wenn Sie zusätzliche Spalten oder Tabellen mit Kundendaten in die Adobe Campaign-Datenbank replizieren möchten, müssen Sie dafür den zusätzlichen Speicherplatzbedarf abschätzen. Für hochgeladene Segmente/Listen ist ebenfalls je nach Größe, Häufigkeit und Aufbewahrungszeitraum mehr Speicher erforderlich.
 
-Beachten Sie außerdem, dass aufgrund des täglichen Informationsvolumens die IOPS des Datenbankservers wichtig sind. An einem Spitzentag können Sie beispielsweise Kampagnen bereitstellen, die auf insgesamt 500.000 Empfänger ausgerichtet sind. Zur Ausführung jeder Kampagne fügt Adobe Campaign 500.000 Datensätze in eine Tabelle mit rund 12 Millionen Datensätzen ein (die Versandlog-Tabelle). Um während der Kampagnenbereitstellung eine annehmbare Leistung zu erzielen, empfiehlt Adobe für dieses Szenario mindestens 60.000 zufällige Lese-/Schreib-IOPS mit 4 KB.
+Beachten Sie außerdem, dass aufgrund der täglich verarbeiteten Menge an Informationen die IOPS des Datenbank-Servers wichtig sind. An einem Spitzentag können Sie beispielsweise Kampagnen für insgesamt 500.000 Empfängerinnen und Empfänger bereitstellen. Zur Ausführung jeder Kampagne fügt Adobe Campaign 500.000 Datensätze in eine Tabelle mit rund 12 Millionen Datensätzen ein (die Versandlog-Tabelle). Für eine akzeptable Leistung während der Kampagnenimplementierung empfiehlt Adobe bei diesem Szenario mindestens 60.000 zufällige Lese-/Schreib-IOPS mit je 4 KB.
 
 
-## Szenario 2: Große Implementierung{#scenario-2}
+## Szenario 2: Große Bereitstellung{#scenario-2}
 
 ![](assets/scenario-2.png)
 
@@ -134,35 +134,35 @@ Geschätztes Volumen:
 
 | Kanal | Anzahl |
 | ----------------------- | ----------------- |
-| Aktive Empfänger | 20 Millionen |
+| Aktive Empfängerinnen und Empfänger | 20 Millionen |
 | E-Mail | 42 Millionen/Monat |
 | Briefpost | 10 Millionen/Monat |
 | Mobile SMS | 1.000.000/Monat |
-| Tägliche maximale E-Mail-Menge | 5,000,000 |
+| Maximale E-Mail-Anzahl täglich | 5.000.000 |
 
-### Web- und Anwendungsserver
+### Web- und Anwendungs-Server
 
-In diesem Szenario empfiehlt Adobe die Installation von Adobe Campaign auf vier Computern, zwei Anwendungsservern und zwei Webservern mit der folgenden Spezifikation:
+Bei diesem Szenario empfiehlt Adobe die Installation von Adobe Campaign auf vier Computern, nämlich zwei Anwendungs-Servern und zwei Webservern, mit der folgenden Spezifikation:
 
-**3-GHz+-Quad-Core-CPU, 8-GB-RAM, RAID 1 oder 10, 80-GB-SSD**
+**Quad-Core-CPU mit mindestens 3 GHz, 8 GB RAM, RAID 1 oder 10, SSD mit 80 GB**
 
-Die Anwendungsserver unterstützen die Benutzer der Campaign Console sowie die Ausführung von Kampagnen-Workflows direkt. Diese Funktion wird auf zwei identischen Servern für hohe Verfügbarkeit bereitgestellt, wobei ein NAS-Dateisystem (Network-Attached Storage) gemeinsam genutzt wird, um Failover zu ermöglichen.
+Die Anwendungs-Server unterstützen die Benutzenden der Campaign-Konsole sowie die Ausführung von Kampagnen-Workflows direkt. Diese Funktionalität wird auf zwei identischen Servern für hohe Verfügbarkeit bereitgestellt, wobei ein NAS-Dateisystem (Network-Attached Storage) gemeinsam genutzt wird, um Failover zu ermöglichen.
 
-Die Webserver hosten Webanwendungen von Campaign, die die 10 Millionen aktiven Empfänger im System unterstützen.
+Die Webserver hosten Campaign-Webanwendungen, die die 10 Millionen aktiven Empfängerinnen und Empfänger im System ermöglichen.
 
-Siehe [Szenario 1: Moderate Bereitstellung](#scenario-1) für weitere Kommentare zu Proxys, Präferenzzentren/Abonnement-Handhabung und Festplattenspeicherplatznutzung.
+Unter [Szenario 1: Mittegroße Bereitstellung](#scenario-1) finden Sie weitere Kommentare zu Proxys, Präferenzzentren/Abonnements und Speicherplatznutzung.
 
 ### Datenbank
 
-Die Hardware-Empfehlungen für den Datenbankserver lauten wie folgt:
+Die Hardware-Empfehlungen für den Datenbank-Server lauten wie folgt:
 
-**3-GHz+-8-Core-CPU, 64-GB RAM, RAID 1 oder 10, 2 x 320-GB SSD oder RAID 10, 640-GB SSD-Minimum**
+**Octa-Core-CPU mit mindestens 3 GHz, 64 GB RAM, RAID 1 oder 10 und 2 SSD mit je 320 GB oder RAID 10 und SSD mit mindestens 640 GB**
 
-Die Speicherschätzung geht von einer vollständigen Zwischenspeicherung von etwa 5.000.000 Empfängern für einen großen Kampagnenstart sowie von RDBMS-Pufferspeicher für die Ausführung von Workflows, den Import von Tracking-Daten und anderen gleichzeitigen Aktivitäten aus.
+Die Speicherschätzung geht von einer vollständigen Zwischenspeicherung von etwa 5.000.000 Empfängerinnen und Empfängern bei einem großen Kampagnen-Launch sowie von zusätzlichem RDBMS-Pufferspeicher für die Ausführung von Workflows, den Import von Tracking-Daten und andere gleichzeitige Aktivitäten aus.
 
-Es wird geschätzt, dass der Speicherplatz, der für die Datenbank benötigt wird, um alle technischen Daten von Adobe Campaign (Kampagnen, Tracking, Arbeitstabellen usw.) zu speichern, basierend auf einer Aufbewahrungsfrist von 3 Monaten etwa 280 GB beträgt. Wenn Sie Tracking-Daten für 6 Monate aufbewahren, erhöht sich die Datenbankgröße auf etwa 450 GB und die 12-monatige Aufbewahrung erhöht die Datenbankgröße auf etwa 900 GB. Die Empfängerdaten verbrauchen für diese Umgebung etwa 15 GB.
+Schätzungsweise benötigt die Datenbank zum Speichern aller technischen Adobe Campaign-Daten (Kampagnen, Tracking, Arbeitstabellen usw.) bei einem Aufbewahrungszeitraum von drei Monaten etwa 280 GB an Speicherplatz. Wenn Sie Tracking-Daten 6 Monate lang aufbewahren, erhöht sich die Datenbankgröße auf etwa 450 GB, und bei 12 Monaten auf etwa 900 GB. Die Empfängerdaten verbrauchen bei dieser Umgebung etwa 15 GB.
 
-## Szenario 3: Unternehmensbereitstellung mit Message Center{#scenario-3}
+## Szenario 3: Implementierung für Unternehmen mit Message Center{#scenario-3}
 
 ![](assets/scenario-3.png)
 
@@ -170,96 +170,96 @@ Geschätztes Volumen:
 
 | Kanal | Anzahl |
 | ----------------------- | ----------------- |
-| Aktive Empfänger | 50 Millionen |
+| Aktive Empfängerinnen und Empfänger | 50 Millionen |
 | E-Mail | 108 Millionen/Monat |
 | Briefpost | 25 Millionen/Monat |
 | Mobile SMS | 2,5 Millionen/Monat |
 | Transaktionsnachrichten | 2,5 Millionen/Monat |
-| Tägliche maximale E-Mail-Menge | 2,5 Millionen |
+| Maximale E-Mail-Anzahl täglich | 2,5 Millionen |
 
 
-Die Bereitstellung, die 50 Millionen Empfänger unterstützt, entspricht im Wesentlichen der in [Szenario 2](#scenario-2): Der Traffic der Campaign-Webanwendung wird an die Campaign-Webserver weitergeleitet, sodass der Web-Traffic nach großen Kampagnenstarts keine Auswirkungen auf Campaign-Workflows und Client Console-Benutzer hat.
+Diese Implementierung, die 50 Millionen Empfängerinnen und Empfänger ermöglicht, entspricht im Wesentlichen der aus [Szenario 2](#scenario-2): Der Traffic der Campaign-Webanwendung wird an die Campaign-Webserver weitergeleitet, sodass der Webtraffic nach dem Launch großer Kampagnen keine Auswirkungen auf Campaign-Workflows und Benutzende der Client-Konsole hat.
 
 Diese Implementierung umfasst auch Message Center-Aufrufe, die von Ihren eigenen Websites und Anwendungen aus gesteuert werden.
 
 
-### Web- und Anwendungsserver
+### Web- und Anwendungs-Server
 
-In diesem Szenario empfiehlt Adobe, Adobe Campaign wie folgt auf vier Computern zu installieren:
+Bei diesem Szenario empfiehlt Adobe, Adobe Campaign wie folgt auf vier Computern zu installieren:
 
-* Anwendungsserver
-   **Zwei Systeme, 3-GHz+-Quad-Core-CPU, 8-GB RAM, RAID 1 oder 10, 80-GB SSD**
+* Anwendungs-Server
+   **Zwei Systeme, Quad-Core-CPU mit mindestens 3 GHz, 8 GB RAM, RAID 1 oder 10, SSD mit 80 GB**
 
 * Webserver
-   **Zwei Systeme, 3-GHz+-Quad-Core-CPU, 16-GB-RAM, RAID 1 oder 10, 80-GB-SSD**
+   **Zwei Systeme, Quad-Core-CPU mit mindestens 3 GHz, 16 GB RAM, RAID 1 oder 10, SSD mit 80 GB**
 
 
-Die Anwendungsserver unterstützen die Benutzer der Campaign Console sowie die Ausführung von Kampagnen-Workflows direkt. Diese Funktion wird auf zwei identischen Servern für hohe Verfügbarkeit bereitgestellt, wobei ein NAS-Dateisystem (Network-Attached Storage) gemeinsam genutzt wird, um Failover zu ermöglichen.
+Die Anwendungs-Server unterstützen die Benutzenden der Campaign-Konsole sowie die Ausführung von Kampagnen-Workflows direkt. Diese Funktionalität wird auf zwei identischen Servern für hohe Verfügbarkeit bereitgestellt, wobei ein NAS-Dateisystem (Network-Attached Storage) gemeinsam genutzt wird, um Failover zu ermöglichen.
 
-Die Webserver hosten Webanwendungen von Campaign, die die 10 Millionen aktiven Empfänger im System unterstützen.
+Die Webserver hosten Campaign-Webanwendungen, die die 10 Millionen aktiven Empfängerinnen und Empfänger im System ermöglichen.
 
-Siehe [Szenario 1: Moderate Bereitstellung](#scenario-1) für weitere Kommentare zu Proxys, Präferenzzentren/Abonnement-Handhabung und Festplattenspeicherplatznutzung.
+Unter [Szenario 1: Mittelgroße Bereitstellung](#scenario-1) finden Sie weitere Kommentare zu Proxys, Präferenzzentren/Abonnements und Speicherplatznutzung.
 
 ### Datenbank
 
-Die Hardware-Empfehlungen für den Datenbankserver lauten wie folgt:
+Die Hardware-Empfehlungen für den Datenbank-Server lauten wie folgt:
 
-**3-GHz+-8-Core-CPU, 96-GB RAM, RAID 1 oder 10, 1,5-TB SSD-Minimum**
+**Octa-Core-CPU mit mindestens 3 GHz, 96 GB RAM, RAID 1 oder 10, SSD mit mindestens 1,5 TB**
 
-Die Speicherschätzung geht von einer vollständigen Zwischenspeicherung von etwa 12.500.000 Empfängern für einen großen Kampagnenstart sowie von RDBMS-Pufferspeicher für die Ausführung von Workflows, den Import von Tracking-Daten und anderen gleichzeitigen Aktivitäten aus.
+Die Speicherschätzung geht von einer vollständigen Zwischenspeicherung von etwa 12.500.000 Empfängerinnen und Empfängern bei einem großen Kampagnen-Launch sowie von zusätzlichem RDBMS-Pufferspeicher für die Ausführung von Workflows, den Import von Tracking-Daten und andere gleichzeitige Aktivitäten aus.
 
-Es wird geschätzt, dass der Speicherplatz, der für die Datenbank benötigt wird, um alle technischen Daten von Adobe Campaign (Kampagnen, Tracking, Arbeitstabellen usw.) zu speichern, basierend auf einer Aufbewahrungsfrist von 3 Monaten etwa 700 GB beträgt. Wenn Sie Tracking-Daten für 6 Monate aufbewahren, erhöht sich die Datenbankgröße auf etwa 1,2 TB und die 12-monatige Aufbewahrung erhöht die Datenbankgröße auf etwa 2 TB. Die Empfängerdaten verbrauchen für diese Umgebung etwa 50 GB.
+Schätzungsweise benötigt die Datenbank zum Speichern aller technischen Adobe Campaign-Daten (Kampagnen, Tracking, Arbeitstabellen usw.) bei einem Aufbewahrungszeitraum von drei Monaten etwa 700 GB an Speicherplatz. Wenn Sie Tracking-Daten 6 Monate lang aufbewahren, erhöht sich die Datenbankgröße auf etwa 1,2 TB, und bei 12 Monaten auf etwa 2 TB. Die Empfängerdaten verbrauchen bei dieser Umgebung etwa 50 GB.
 
-## Richtlinien für das Ändern von Annahmen
+## Richtlinien für das Ändern der Annahmen
 
-Die Annahmen für diese Szenarien wirken sich alle erheblich auf die Hardware-Empfehlungen und die Bereitstellungsarchitektur aus. In diesem Abschnitt werden Richtlinien zu verschiedenen Annahmen erläutert. Wenden Sie sich an das Adobe Campaign Consulting-Team, um spezielle Empfehlungen zu erhalten, die Ihren Anforderungen entsprechen.
+Die Annahmen für diese Szenarien wirken sich alle erheblich auf die Hardware-Empfehlungen und die Bereitstellungsarchitektur aus. In diesem Abschnitt werden Richtlinien zu verschiedenen Annahmen erläutert. Wenden Sie sich an das Adobe Campaign-Consulting-Team, um spezielle Empfehlungen für Ihre Anforderungen zu erhalten.
 
-* **Anzahl der Empfänger**
-Aktive Empfänger benötigen sowohl Speicherplatz als auch Datenbankpufferspeicherplatz, sodass mehr Empfänger im Allgemeinen mehr Speicher und mehr CPU-Kapazität auf dem Datenbankserver benötigen. Die Speichersteigerungen sind für die Empfänger selbst relativ gering, können aber für die Ereignisverfolgungsdaten von E-Mail-Kampagnen erheblich sein.
+* **Anzahl der Empfängerinnen und Empfänger**
+Aktive Empfängerinnen und Empfänger benötigen sowohl Speicherplatz als auch Datenbankpufferspeicher, sodass bei mehr Empfängerinnen und Empfängern im Allgemeinen auch mehr Speicher und mehr CPU-Kapazität auf dem Datenbank-Server erforderlich sind. Die Speichererhöhungen sind für die Empfängerinnen und Empfänger selbst relativ gering, können aber für die Ereignis-Tracking-Daten von E-Mail-Kampagnen erheblich sein.
 
 * **Größe der E-Mail-Kampagne**
-Die Häufigkeit von Kampagnenstarts hat Auswirkungen auf die CPU-Anforderungen des Datenbankservers. In Kombination mit Briefpost, eingehenden Interaktionen und anderen Workflows belasten Segmentierungsvorgänge für E-Mail-Kampagnen den Datenbankserver erheblich.
+Die Häufigkeit von Kampagnen-Launches hat Auswirkungen auf die CPU-Anforderungen des Datenbank-Servers. In Kombination mit Briefpost, eingehenden Interaktionen und anderen Workflows belasten Segmentierungsvorgänge für E-Mail-Kampagnen den Datenbank-Server erheblich.
 
-* **Briefpost-Häufigkeit**
-Die Häufigkeit von Direktversand kann sich auf die CPU-Anforderungen des Datenbankservers auswirken. In Kombination mit Kampagnenstarts und anderen Workflows belasten Segmentierungsvorgänge für Direkt-Mailings den Datenbankserver erheblich.
+* **Häufigkeit von Briefpost**
+Die Häufigkeit von Briefpost kann sich auf die CPU-Anforderungen des Datenbank-Servers auswirken. In Kombination mit Kampagnen-Launches und anderen Workflows belasten Segmentierungsvorgänge für Briefpost den Datenbank-Server erheblich.
 
-* **SMS-Nachrichtenvolumen**
-Wie die Größe von E-Mail-Kampagnen wird auch das Volumen von SMS-Nachrichten auf Campaign-Servern, die sich On-Premise befinden, nicht stark ausgelastet. Die Auslastung erfolgt hauptsächlich über Adobe Cloud Messaging-Server in der Cloud. Die Segmentierung für SMS-Kampagnen wie E-Mail und Briefpost kann die Marketing-Datenbank erheblich belasten. Deshalb sind die Häufigkeit der SMS-Kampagnenstarts und die Komplexität der Segmentierung relevanter als die Anzahl der SMS-Nachrichten.
+* **Anzahl von SMS-Nachrichten**
+Wie die Größe von E-Mail-Kampagnen bedeutet auch die Anzahl von SMS-Nachrichten keine große Belastung für Campaign-On-Premise-Server. Belastet werden hier vor allem die Adobe Cloud Messaging-Server in der Cloud. Die Segmentierung für SMS-Kampagnen wie E-Mail und Briefpost kann die Marketing-Datenbank erheblich belasten. Deshalb sind die Häufigkeit von SMS-Kampagnen-Launches und die Komplexität der Segmentierung relevanter als die Anzahl der SMS-Nachrichten.
 
 * **Komplexität des Datenbankschemas**
-Die Datenmenge für jeden aktiven Empfänger erfordert sowohl Speicherplatz als auch Datenbankpufferspeicherplatz, sodass mehr Empfänger im Allgemeinen mehr Speicher und CPU auf dem Datenbankserver benötigen. Bei komplexen Schemata müssen auch mehr Tabellen für die Segmentierung zusammengefügt werden, sodass Segmentierungsvorgänge viel langsamer ablaufen können und mehr Datenbank-CPU und -Speicher erforderlich sind, wenn Daten über mehrere Tabellen verteilt sind.
+Die Datenmenge für jede aktive Empfängerin und jeden aktiven Empfänger erfordert sowohl Speicherplatz als auch Datenbankpuffer, sodass mehr Empfängerinnen und Empfänger im Allgemeinen mehr Speicher und CPU auf dem Datenbank-Server benötigen. Bei komplexen Schemata müssen auch mehr Tabellen für die Segmentierung zusammengefügt werden, sodass Segmentierungsvorgänge unter Umständen deutlich langsamer durchgeführt werden und mehr Datenbank-CPU und Arbeitsspeicher erforderlich sind, wenn Daten über mehrere Tabellen verteilt sind.
 
-   Der Datenbankserverspeicher wird geschätzt, indem sichergestellt wird, dass der Datenbankpufferpool groß genug sein kann, um alle Empfängerdaten, temporäre Tabellen für laufende Workflows sowie einen Spielraum für andere Datenbankvorgänge zu enthalten.
+   Der Arbeitsspeicher für den Datenbank-Server wird geschätzt, indem sichergestellt wird, dass der Datenbankpuffer-Pool groß genug für alle Empfängerdaten sowie die temporären Tabellen für aktive Workflows ist und dazu noch eine gewisse Reserve für andere Datenbankvorgänge hat.
 
-* **Ausgehende Interaktion - Nutzung**
-Regeln für Interaktionen im Batch-Modus werden in Workflows ausgewertet, die die gesamte Berechnungskomplexität der Datenbank übergeben. Der Hauptfaktor für den Aufwand in der Datenbank ist die Gesamtzahl der in Frage kommenden Angebote, die während eines Engine-Aufrufs berechnet wurden (Zielgröße X durchschnittliche Anzahl der Angebote pro Empfänger, bevor die n besten Angebote beibehalten werden). Die CPU-Geschwindigkeit des Datenbankservers ist der erste Leistungsfaktor.
+* **Nutzung ausgehender Interaktionen**
+Regeln für Interaktionen im Batch-Modus werden in Workflows ausgewertet, die die gesamte Berechnungskomplexität an die Datenbank übergeben. Der wichtigste Faktor für den Aufwand in der Datenbank ist die Gesamtzahl der geeigneten Angebote, die während eines Engine-Aufrufs berechnet wurden (Zielgruppengröße x durchschnittliche Anzahl der Angebote pro Empfänger, bevor die n besten Angebote beibehalten werden). Die CPU-Geschwindigkeit des Datenbank-Servers ist der wichtigste Leistungsfaktor.
 
-* **Eingehende Interaktionen oder Nutzung der SOAP-API**
-Regeln und Angebote für eingehende Interaktionen werden in der Marketing-Datenbank ausgewertet, was erhebliche Datenbankserver-Ressourcen erfordert, insbesondere CPU. Eine starke Nutzung von eingehenden Interaktionen oder SOAP-APIs erfordert separate Webserver, um die Arbeitslast von der Ausführung von Campaign-Workflows zu trennen.
+* **Nutzung von eingehenden Interaktionen oder SOAP-APIs**
+Regeln und Angebote für eingehende Interaktionen werden in der Marketing-Datenbank ausgewertet, wodurch die Ressourcen des Datenbank-Servers, insbesondere die CPU, in erheblichem Maße in Anspruch genommen werden. Eine starke Nutzung von eingehenden Interaktionen oder SOAP-APIs setzt separate Webserver voraus, um die Arbeitslast von der Ausführung von Campaign-Workflows zu trennen.
 
-* **Tracking der Datenaufbewahrungsdauer**
-Die Erhöhung der Aufbewahrung von Tracking-Daten über 90 Tage hinaus erfordert mehr Datenbankspeicher und kann das System verlangsamen, da das Einfügen neuer Tracking-Daten in große Tabellen erfolgt. Tracking-Daten sind für die Kampagnensegmentierung nach 90 Tagen nicht nützlich. Daher wird eine kürzere Aufbewahrungsfrist empfohlen.
+* **Aufbewahrungszeitraum von Tracking-Daten**
+Werden Tracking-Daten länger als 90 Tage aufbewahrt, ist mehr Datenbankspeicher erforderlich. Außerdem kann das System dadurch langsamer werden, da neue Tracking-Daten in große Tabellen eingefügt werden. Das Tracking von Daten ist nach 90 Tagen nicht mehr für die Kampagnensegmentierung nützlich. Daher wird eine kürzere Aufbewahrungsfrist empfohlen.
 
-   Tracking-Daten sollten in Adobe Analytics oder ein anderes Analysesystem verschoben werden, wenn Sie eine langfristige Analyse des Marketing-Erlebnisses der Empfänger benötigen.
+   Tracking-Daten sollten in Adobe Analytics oder ein anderes Analysesystem verschoben werden, wenn Sie auf eine langfristige Analyse des Marketing-Erlebnisses der Empfängerinnen und Empfänger angewiesen sind.
 
 ## Virtualisierung
 
-Alle Campaign-Server eignen sich gut für die Virtualisierung. Es müssen mehrere Probleme angesprochen werden, um eine angemessene Verfügbarkeit und Leistung sicherzustellen.
+Alle Campaign-Server eignen sich gut zur Virtualisierung. Es müssen verschiedene Punkte berücksichtigt werden, um eine angemessene Verfügbarkeit und Leistung sicherzustellen.
 
-* **Fail-Over-Konfiguration**
-Cluster-Server, z. B. redundante Anwendungsserver unter einem Lastverteilungs-Proxy, müssen auf separater Hardware bereitgestellt werden, um sicherzustellen, dass beide VMs nicht herunterfahren, wenn Hardware-Fehler vorliegen.
+* **Failover-Konfiguration**
+Cluster-Server, z. B. redundante Anwendungs-Server unter einem Proxy mit Lastenausgleich, müssen auf separater Hardware bereitgestellt werden, um sicherzustellen, dass bei einem Hardware-Fehler nicht beide VMs ausfallen.
 
-* **I/O-Konfiguration**
-Die empfohlene RAID-Konfiguration muss aus Gründen der Datenbanksicherheit beibehalten werden, um sicherzustellen, dass Datenverluste durch den Verlust eines Speichergeräts nicht zu Datenverlusten führen.
+* **E/A-Konfiguration**
+Die empfohlene RAID-Konfiguration muss zwecks Datenbanksicherheit beibehalten werden, damit bei Verlust eines Speichergeräts keine Daten verloren gehen.
 
-* **I/O-Leistung**
-Die empfohlene IOPS-Bewertung für die Datenbankspeicherung muss eingehalten werden. Cloud-Dienste wie Amazon EC2 bieten möglicherweise nicht die erforderliche Leistung und müssen sorgfältig ausgewertet werden. Beispielsweise werden von Amazon EC2 bereitgestellte SSD-Volumes derzeit mit jeweils 20.000 IOPS bewertet. Weitere Informationen finden Sie unter [Amazon-Dokumentation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html)), sodass eine 4-Volume-RAID-Konfiguration mit 80.000 IOPS bewertet würde, was möglicherweise nicht ausreicht.
+* **E/A-Leistung**
+Die empfohlene IOPS-Bewertung für den Datenbankspeicher muss eingehalten werden. Cloud-Dienste wie Amazon EC2 bieten möglicherweise nicht die erforderliche Leistung und müssen sorgfältig bewertet werden. Beispielsweise liefern von Amazon EC2 bereitgestellte SSD-Volumes derzeit jeweils 20.000 IOPS. Weitere Informationen finden Sie in der [Amazon-Dokumentation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html). Eine RAID-Konfiguration mit vier Volumes entspräche also 80.000 IOPS, was unter Umständen nicht ausreicht.
 
-Adobe empfiehlt Leistungstests für jede virtualisierte Implementierung von Adobe Campaign, bevor das System in die Produktion aufgenommen wird.
+Adobe empfiehlt Leistungstests für jede virtualisierte Adobe Campaign-Implementierung, bevor das System in die Produktion aufgenommen wird.
 
 ## Verwandte Themen
 
-* [Kampagnenüberwachungsprozesse](../../production/using/monitoring-processes.md)
-* [Allgemeine Architektur von Campaign](../../installation/using/general-architecture.md)
+* [Überwachungsverfahren in Campaign](../../production/using/monitoring-processes.md)
+* [Allgemeine Campaign-Architektur](../../installation/using/general-architecture.md)
 * [Leistungs- und Durchsatzprobleme](../../production/using/performance-and-throughput-issues.md)
 * [Checkliste für Sicherheit und Datenschutz](../../installation/using/get-started-security-privacy.md)
