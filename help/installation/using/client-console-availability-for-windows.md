@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 57845eae-1f1a-42f4-b2ba-46d454677ae0
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '335'
 ht-degree: 5%
 
 ---
@@ -29,7 +29,7 @@ Gehen Sie dazu folgendermaßen vor:
 
 1. Wählen Sie das Paket aus, das das Konsoleninstallationsprogramm enthält.
 
-   Diese Datei heißt `setup-client-7.X.XXXX.exe` für v7 oder `setup-client-6.X.XXXX.exe` für v6.1, wobei `X` ist die Unterversion von Adobe Campaign und `XXXX` ist die Build-Nummer.
+   Diese Datei heißt `setup-client-7.X.XXXX.exe`, wobei `X` ist die Unterversion von Adobe Campaign und `XXXX` ist die Build-Nummer.
 
 1. Kopieren Sie dieses Paket und fügen Sie es in den Adobe Campaign-Installationsordner ein (auf dem Marketing-Server für hybride Installationen), unter **/datakit/nl/eng/jsp**.
 1. Starten Sie den Adobe Campaign-Server.
@@ -50,7 +50,7 @@ Sobald die Konsole im Ordner des Campaign-Servers verfügbar ist, werden die Ben
 
 Wenn Sie diese Option auswählen und sich gegen den Download der neuesten Version entscheiden, wird kein anderer Benutzer über die neuen verfügbaren Versionen informiert.
 
-Wenn die Option ausgewählt wurde, können Sie diese Eingabeaufforderung zurücksetzen. Nur Systemadministratoren, die mit der Bearbeitung von Windows Registry vertraut sind, sollten diese Änderungen vornehmen:
+Wenn die Option ausgewählt wurde, können Sie diese Aufforderung zurücksetzen. Nur Systemadministratoren, die mit der Bearbeitung von Windows Registry vertraut sind, sollten diese Änderungen vornehmen:
 
 1. Öffnen Sie den Registrierungs-Editor mithilfe der **regedit** -Befehl aus dem **[!UICONTROL Start > Ausführen]** Menü.
 1. Suchen Sie nach dem Knoten und erweitern Sie ihn.

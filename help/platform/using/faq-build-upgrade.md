@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: ht
-source-wordcount: '2034'
-ht-degree: 100%
+source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
+workflow-type: tm+mt
+source-wordcount: '1998'
+ht-degree: 98%
 
 ---
 
@@ -54,15 +54,16 @@ Upgrades von Versionen dagegen bedeuten normalerweise erhebliche technische Änd
 
 Bezogen auf die Serverinformationen im Screenshot aus dem vorherigen Abschnitt würde dies Folgendes bedeuten:
 
-* Ein Build-Upgrade würde bedeuten, dass Sie von Build 6880 zu einem Build höher als 6880 wechseln. Beispiel: von v6.1.1 Build 8222 zu v6.1.1 Build 8666.
+* Ein Build-Upgrade würde bedeuten, dass Sie von Build 9342 zu einem Build höher als 9342 wechseln. Beispiel: von v7.1 Build 9342 zu v7.1 Build 9342.
 
-* Durch das Upgrade der Version würden Sie von Version 6.0.2 zu einer Version höher als 6.0.2 wechseln. Beispiel: von v6.0.1 Build 2222 zu v6.1.1 Build 8666
+* Ein Upgrade der Version würde bedeuten, dass von Version 6 auf eine neuere Version umgestellt wird.  Beispiel: v6.1.1 Build 8666 zu v7.1 Build 9342.
 
 ## Sollte ich meine Daten vor diesen Aktualisierungen sichern?
 
 Adobe erstellt vor etwaigen Änderungen ein Backup Ihres Systems. Wenn sich jedoch wichtige Projekte außerhalb Ihres Produktionssystems befinden (Entwicklungs- oder Staging-Server), wird DRINGEND EMPFOHLEN, diese vor dem Upgrade als Package zu exportieren.
 
-![](assets/do-not-localize/how-to-video.png) In diesem [Anleitungsvideo](https://helpx.adobe.com/de/campaign/classic/how-to/generate-packages-in-acv6.html) erhalten Sie weitere Informationen.
+<!--
+![](assets/do-not-localize/how-to-video.png) For more information, [watch this how to video](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html).-->
 
 ## Wann werden die Upgrades vorgenommen?
 
@@ -97,7 +98,9 @@ Für das Build-Upgrade sind die folgenden Ressourcen erforderlich:
 
 ## Wie bereite ich das Build-Upgrade vor?
 
-Exportieren Sie in Ihren Entwicklungs- und Staging-Systemen alle Projekte, die wichtig sind und erhalten werden müssen. Weitere Informationen dazu finden Sie in diesem [Video](https://helpx.adobe.com/de/campaign/classic/how-to/generate-packages-in-acv6.html).
+Exportieren Sie in Ihren Entwicklungs- und Staging-Systemen alle Projekte, die wichtig sind und erhalten werden müssen.
+
+<!--For more information please [watch this how to video](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html).-->
 
 Frischen Sie Ihr Wissen über die wichtigsten Pfad-Workflows und Sendungen auf, die in Ihren Runbooks (oder durch Ihr Beraterteam/Ihren Partner) entwickelt wurden, indem Sie die Dokumentation lesen, die Ihrem Team nach der Implementierung bereitgestellt wird.
 
@@ -105,7 +108,7 @@ Ermitteln Sie Zeiten mit geringem Datenvolumen oder Traffic, die sich ideal für
 
 Gehen Sie unsere unten aufgeführte [Upgrade-Checkliste](#check-list) und Ihre Testpläne durch und stellen Sie sicher, dass Ressourcen, die diese Tests durchführen können, innerhalb von 24 bis 48 Stunden ab dem Ende des Upgrades verfügbar sind.
 
-Weitere Informationen finden Sie in [diesem Dokument](https://helpx.adobe.com/de/campaign/kb/acc-build-upgrade.html).
+Weitere Informationen: [in diesem Abschnitt](../../production/using/build-upgrade.md).
 
 ## Können Build-Upgrades nachts oder außerhalb der Geschäftszeiten durchgeführt werden?
 

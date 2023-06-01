@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
 workflow-type: tm+mt
-source-wordcount: '7979'
+source-wordcount: '7955'
 ht-degree: 41%
 
 ---
@@ -287,7 +287,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **dataStore > dataSource
  <tbody> 
   <tr> 
    <td> name<br /> </td> 
-   <td> Datenquellenname<br /> </td> 
+   <td> Name der Datenquelle<br /> </td> 
    <td> String <br /> </td> 
    <td> Standard<br /> </td> 
   </tr> 
@@ -477,7 +477,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **dataStore > preprocess
    <td> String <br /> </td> 
   </tr> 
   <tr> 
-   <td> label<br /> </td> 
+   <td> Bezeichnung<br /> </td> 
    <td> Titel der Befehlszeile<br /> </td> 
    <td> String <br /> </td> 
   </tr> 
@@ -1618,12 +1618,12 @@ Im Folgenden finden Sie die verschiedenen Parameter der **mta** Knoten. Dies ist
    <td> Boolesch<br /> </td> 
    <td> true <br /> </td> 
   </tr> 
-  <tr> 
+  <!--tr> 
    <td> statServerVersion<br /> </td> 
-   <td> Verwendete Protokollversion: Kommunikationsprotokollversion (1 für einen Server v5.11 und 6.0.2, 2 für einen Server v6.1).<br /> </td> 
-   <td> String <br /> </td> 
-   <td> Wenn nicht definiert, wird die neueste Version verwendet. <br /> </td> 
-  </tr> 
+   <td> Protocol version used: communication protocol version (1 for a v5.11 and 6.0.2 server, 2 for a v6.1 server).<br /> </td> 
+   <td> String<br /> </td> 
+   <td> If undefined, the latest version is used. <br /> </td> 
+  </tr--> 
   <tr> 
    <td> useMomentum<br /> </td> 
    <td> Wenn auf "true"gesetzt, verwendet Ihre Instanz die <a href="../../delivery/using/sending-with-enhanced-mta.md" target="_blank">Verbesserter MTA</a>.<br /> </td> 
@@ -2235,7 +2235,7 @@ Weitere Informationen finden Sie unter [Sicherheitszonen definieren](../../insta
    <td> false<br /> </td> 
   </tr> 
   <tr> 
-   <td> label<br /> </td> 
+   <td> Bezeichnung<br /> </td> 
    <td> Titel<br /> </td> 
    <td> String <br /> </td> 
    <td> NewLabel()<br /> </td> 
@@ -2303,7 +2303,7 @@ Weitere Informationen finden Sie unter [Sicherheitszonen definieren](../../insta
  </thead> 
  <tbody> 
   <tr> 
-   <td> label<br /> </td> 
+   <td> Bezeichnung<br /> </td> 
    <td> Titel<br /> </td> 
    <td> String <br /> </td> 
    <td> NewLabel()<br /> </td> 

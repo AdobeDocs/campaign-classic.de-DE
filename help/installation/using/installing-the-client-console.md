@@ -7,10 +7,10 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
 workflow-type: tm+mt
-source-wordcount: '1146'
-ht-degree: 32%
+source-wordcount: '1139'
+ht-degree: 33%
 
 ---
 
@@ -64,7 +64,7 @@ Gehen Sie dazu folgendermaßen vor:
 
 1. Wählen Sie das Paket aus, das das Konsoleninstallationsprogramm enthält.
 
-   Diese Datei wird als setup-client-7.X.XXXX.exe für v7 oder setup-client-6.X.XXXX.exe für v6.1 bezeichnet, wobei X die Unterversion von Adobe Campaign ist und XXXX die Build-Nummer.
+   Diese Datei wird als setup-client-7.X.XXXX.exe bezeichnet, wobei X die Unterversion von Adobe Campaign und XXXX die Build-Nummer ist.
 
 1. Kopieren Sie dieses Paket und fügen Sie es in den Adobe Campaign-Installationsordner (auf dem Marketing-Server für hybride Installationen) unter /datakit/nl/eng/jsp ein.
 

@@ -8,10 +8,10 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 041c4431-baae-4e64-9e9a-0daa5123bd8a
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
 workflow-type: tm+mt
-source-wordcount: '1001'
-ht-degree: 4%
+source-wordcount: '910'
+ht-degree: 5%
 
 ---
 
@@ -149,7 +149,7 @@ Gehen Sie hierzu wie folgt vor:
 
    ![](assets/s_ncs_install_iis7_parameters_step11.png)
 
-## Ergänzende Konfigurationen {#additional-configurations}
+## Zusätzliche Konfigurationen {#additional-configurations}
 
 ### Größenbeschränkung für Upload-Dateien ändern {#changing-the-upload-file-size-limit}
 
@@ -171,15 +171,3 @@ In diesem Fall müssen Sie diese Grenze erhöhen:
 >
 >Weitere Informationen zu dieser IIS-Option finden Sie im Abschnitt &quot;Anleitung&quot;des [amtliche Dokumentation](https://www.iis.net/configreference/system.webserver/security/requestfiltering/requestlimits).
 
-### Anzeige der HTTP-Fehlermeldung konfigurieren {#configuring-http-error-message-display}
-
-Wenn Sie einen IIS-Server der Version 6.1 verwenden, können die erzeugten Fehlermeldungen aufgrund eines unerwünschten HTML-Codes, der in der Nachricht angezeigt wird, schwierig zu lesen sein.
-
-Um dies zu beheben und den Fehler korrekt anzuzeigen, wenden Sie die folgende Konfiguration an:
-
-1. Öffnen Sie den IIS über die **[!UICONTROL Start > Systemsteuerung > Verwaltung]** Menü.
-1. Im **Verbindungen** , wählen Sie die für Ihre Adobe Campaign-Installation erstellte Site aus und doppelklicken Sie dann auf **Konfigurationseditor** im Hauptbereich.
-1. Im **Abschnitt** Dropdown-Liste auswählen **system.webServer** > **httpErrors**.
-1. Wählen Sie die **PassThrough** Wert am **existingResponse** Linie.
-
-![](assets/ins_iis_httperrors.png)

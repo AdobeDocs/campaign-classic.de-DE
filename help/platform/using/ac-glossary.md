@@ -5,7 +5,7 @@ description: Glossar für Adobe Campaign
 role: User, Data Architect
 level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
-source-git-commit: 978da934b483a54509ad806f375d9b2bb0577dac
+source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
 workflow-type: tm+mt
 source-wordcount: '5974'
 ht-degree: 99%
@@ -244,11 +244,11 @@ Ein Versandentwurf besteht aus einem strukturierten Satz von Elementen (Dokument
 Weitere Informationen zu [Briefpost](../../delivery/using/about-direct-mail-channel.md).
 +++
 
-+++**Softwareverteilungs-Assistent**
++++**Bereitstellungsassistent**
 
-Im Softwareverteilungs-Assistenten werden die Parameter der Campaign-Instanz definiert, wie z. B. der Standard-Namespace, der Zeitplan für die Datenbankbereinigung, die Fristen für die Datenspeicherung und andere technische Einstellungen.
+Im Bereitstellungsassistenten werden die Parameter der Campaign-Instanz definiert, wie z. B. der Standard-Namespace, der Zeitplan für die Datenbankbereinigung, die Fristen für die Datenspeicherung und andere technische Einstellungen.
 
-Weitere Informationen über den [Softwareverteilungs-Assistenten](../../installation/using/deploying-an-instance.md#deployment-wizard).
+Weitere Informationen über den [Bereitstellungsassistenten](../../installation/using/deploying-an-instance.md#deployment-wizard).
 +++
 
 +++**Deskriptive Analyse**
@@ -431,11 +431,11 @@ Campaign Heatmap ist eine Tabelle, in der Informationen zur Workflow-Ausführung
 Weitere Informationen zu [Heatmap](../../workflow/using/heatmap.md).
 +++
 
-+++**Hybrid-Implementierung**
++++**Hybrid-Bereitstellung**
 
-Die Hybrid-Implementierung ist eine Kombination aus On-Demand-Services und On-Premise-Software, die so implementiert wird, dass beide Komponenten Hand in Hand arbeiten.
+Die Hybrid-Bereitstellung ist eine Kombination aus On-Demand-Services und On-Premise-Software, die so bereitgestellt wird, dass beide Komponenten Hand in Hand arbeiten.
 
-Weitere Informationen zur [Hybrid-Implementierung](../../installation/using/hosting-models.md#hybrid).
+Weitere Informationen zur [Hybrid-Bereitstellung](../../installation/using/hosting-models.md#hybrid).
 
 +++
 
@@ -483,7 +483,7 @@ Weitere Informationen zum [Inbox Rendering](../../delivery/using/delivery-dashbo
 
 +++**Instanzeneinstellungen**
 
-Instanzeneinstellungen sind Konfigurationsdetails einer Adobe Campaign-Instanz. Diese Einstellungen werden im Softwareverteilungs-Assistenten (Tools > Erweitert > Softwareverteilungs-Assistent) oder in den Konfigurationsdateien des Servers und/oder der Instanz definiert.
+Instanzeneinstellungen sind Konfigurationsdetails einer Adobe Campaign-Instanz. Diese Einstellungen werden im Bereitstellungassistenten (Tools > Erweitert > Bereitstellungassistent) oder in den Konfigurationsdateien des Servers und/oder der Instanz definiert.
 
 Weitere Informationen über [Instanzeneinstellungen](../../installation/using/about-initial-configuration.md).
 
@@ -1060,16 +1060,6 @@ Im Einzelmodus wird ein einzelner Kontakt vom Angebotsmodul zur Laufzeit verarbe
 
 Weitere Informationen zum [Einzelmodus](../../interaction/using/about-inbound-channels.md).
 +++
-
-<!--
------NO OCCURRENCE IN ACC, OLD v6 CONCEPT?
-+++**Universes**
-
-Application pages hosted by the Campaign instance. Used for approval forms, landing pages, opt-out forms, preference pages or to implement other business requirements.  
-
-Learn more about [Universes](../../workflow/using/about-workflows.md).
-+++
------->
 
 +++**Web-Anwendungen**
 

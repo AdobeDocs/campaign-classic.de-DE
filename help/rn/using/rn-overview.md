@@ -7,9 +7,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: ht
-source-wordcount: '935'
+source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
+workflow-type: tm+mt
+source-wordcount: '933'
 ht-degree: 100%
 
 ---
@@ -129,7 +129,7 @@ Zur Unterstützung wurde ein Team aus engagierten Mitarbeitenden der Kundenunter
     </a>
     </div>
     <ul>
-    <li>Der Aufwand und die Komplexität eines Upgrades Ihrer Campaign Classic-Instanz steigen mit dem Abstand zwischen zwei Versionen (V6 -&gt; V7).</li>
+    <li>Der Aufwand und die Komplexität eines Upgrades Ihrer Campaign Classic-Instanz steigen mit dem Abstand zwischen zwei Versionen.</li>
     <li>Je länger Ihr Unternehmen wartet, desto komplexer ist das Upgrade (und desto mehr Sicherheitsrisiken sind Sie ausgesetzt).</li>
     <li>Regelmäßige Aktualisierungen verringern Ausfallzeiten und das Risiko einer Regression.</li>
     </ul>
