@@ -6,9 +6,9 @@ badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classi
 feature: Push
 exl-id: 13ccc5d6-4355-42ba-80dc-30a45d3b69a4
 source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '816'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -73,7 +73,7 @@ Auf den Android-Mobilgeräten der Abonnenten sollten das Bild und die Webseite i
 >
 >Zusätzliche Optionen für Benachrichtigungsinhalte sind nur bei der HTTP v1-API-Konfiguration verfügbar. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](configuring-the-mobile-application-android.md#android-service-httpv1).
 
-![](assets/do-not-localize/how-to-video.png) [Erfahren Sie im Video, wie Sie eine Android-Push-Benachrichtigung erstellen](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html#additional-resources)
+![](assets/do-not-localize/how-to-video.png) [Erfahren Sie im Video, wie Sie eine Android-Push-Benachrichtigung erstellen](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html?lang=de#additional-resources)
 
 1. Gehen Sie zu **[!UICONTROL Kampagnenverwaltung]** > **[!UICONTROL Sendungen]**.
 
