@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
 source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1998'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -56,7 +56,7 @@ Bezogen auf die Serverinformationen im Screenshot aus dem vorherigen Abschnitt w
 
 * Ein Build-Upgrade würde bedeuten, dass Sie von Build 9342 zu einem Build höher als 9342 wechseln. Beispiel: von v7.1 Build 9342 zu v7.1 Build 9342.
 
-* Ein Upgrade der Version würde bedeuten, dass von Version 6 auf eine neuere Version umgestellt wird.  Beispiel: v6.1.1 Build 8666 zu v7.1 Build 9342.
+* Bei einem Versions-Upgrade wird von Version 6 auf eine neuere Version gewechselt.  Beispiel: von v6.1.1 build 8666 auf v7.1 build 9342.
 
 ## Sollte ich meine Daten vor diesen Aktualisierungen sichern?
 
@@ -108,7 +108,7 @@ Ermitteln Sie Zeiten mit geringem Datenvolumen oder Traffic, die sich ideal für
 
 Gehen Sie unsere unten aufgeführte [Upgrade-Checkliste](#check-list) und Ihre Testpläne durch und stellen Sie sicher, dass Ressourcen, die diese Tests durchführen können, innerhalb von 24 bis 48 Stunden ab dem Ende des Upgrades verfügbar sind.
 
-Weitere Informationen: [in diesem Abschnitt](../../production/using/build-upgrade.md).
+Weitere Informationen [finden Sie in diesem Abschnitt](../../production/using/build-upgrade.md).
 
 ## Können Build-Upgrades nachts oder außerhalb der Geschäftszeiten durchgeführt werden?
 
