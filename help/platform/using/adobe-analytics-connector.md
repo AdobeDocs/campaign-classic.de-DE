@@ -8,9 +8,9 @@ role: User, Admin
 level: Beginner
 exl-id: 0dc6ce98-dc3e-4242-953e-e7cec55289ff
 source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1711'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -101,7 +101,7 @@ Sie müssen die **[!UICONTROL Konversionsvariablen]** und **[!UICONTROL Erfolgse
 
 1. Durch Klicken auf **[!UICONTROL Neu hinzufügen]** lassen sich die Kennungen erstellen, die zur Messung der Wirkung der Kampagne erforderlich sind, z. B. der interne Kampagnenname (CID) und die ID der iNmsBroadlog-Tabelle (bid).
 
-   Weiterführende Informationen zur Bearbeitung von **[!UICONTROL Konversionsvariablen]** finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/t-conversion-variables-admin.html#admin-tools).
+   Weiterführende Informationen zur Bearbeitung von **[!UICONTROL Konversionsvariablen]** finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/t-conversion-variables-admin.html?lang=de#admin-tools).
 
    ![](assets/analytics_connnector_6.png)
 
@@ -124,7 +124,7 @@ Sie müssen die **[!UICONTROL Konversionsvariablen]** und **[!UICONTROL Erfolgse
    * **[!UICONTROL Einzelöffnungen]**
    * **[!UICONTROL Abgemeldet]**
 
-   Näheres dazu, wie Sie **[!UICONTROL Erfolgsereignisse]** konfigurieren, finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/t-success-events.html#admin-tools)..
+   Näheres dazu, wie Sie **[!UICONTROL Erfolgsereignisse]** konfigurieren, finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/t-success-events.html?lang=de#admin-tools)..
 
    >[!NOTE]
    >
@@ -150,7 +150,7 @@ Nun müssen Sie in Adobe Campaign ein externes **[!UICONTROL Web Analytics]**-Ko
 
 Beachten Sie Folgendes: Wenn eine Ihrer **[!UICONTROL Report Suites]**, **[!UICONTROL Konversionsvariablen]** oder eines Ihrer **[!UICONTROL Erfolgsereignisse]** beim Konfigurieren Ihres externen Kontos nicht angezeigt wird, bedeutet dies, dass Sie im **[!UICONTROL Produktprofil]**, das dem Benutzer zugeordnet ist, über keine Berechtigung für diese neu erstellte Komponente verfügen.
 
-Weiterführende Informationen hierzu finden Sie auf der Seite [Produktprofile für Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html#product-profile-admins).
+Weiterführende Informationen hierzu finden Sie auf der Seite [Produktprofile für Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html?lang=de#product-profile-admins).
 
 1. Rufen Sie im Navigationsbaum von Adobe Campaign den Ordner **[!UICONTROL Administration]** > **[!UICONTROL Plattform]** > **[!UICONTROL Externe Konten]** auf und klicken Sie auf **[!UICONTROL Neu]**.
 
