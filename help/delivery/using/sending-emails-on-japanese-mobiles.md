@@ -6,10 +6,10 @@ badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email, Email Design
 exl-id: 44634227-2340-49c4-b330-740c739ea551
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: ht
-source-wordcount: '799'
-ht-degree: 100%
+source-git-commit: 403227736e2e8c606204e9324d0afb5b71be62a5
+workflow-type: tm+mt
+source-wordcount: '760'
+ht-degree: 97%
 
 ---
 
@@ -43,11 +43,7 @@ Aus diesem Grund müssen Sie:
 
 >[!NOTE]
 >
->Bei der Erstellung von Nachrichten sind die für die jeweiligen Anbieter spezifischen Einschränkungen zu berücksichtigen. Weiterführende Informationen dazu finden Sie hier:
->
->* Weiterführende Informationen zu DoCoMo finden Sie auf [dieser Seite](https://www.nttdocomo.co.jp/service/developer/make/content/deco_mail/index.html).
->* Weiterführende Informationen zu KDDI AU finden Sie auf [dieser Seite](https://www.au.com/ezfactory/tec/spec/decorations/template.html).
->* Weiterführende Informationen zu Softbank finden Sie auf [dieser Seite](https://www.support.softbankmobile.co.jp/partner/home_tech3/index.cfm).
+>Bei der Erstellung der Nachricht müssen die für die einzelnen Benutzer spezifischen Einschränkungen berücksichtigt werden. Weitere Informationen finden Sie in der entsprechenden Produktdokumentation.
 
 
 ## Testen des E-Mail-Inhalts {#testing-the-email-content}

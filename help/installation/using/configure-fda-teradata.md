@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 3a5856c3-b642-4722-97ff-6ae7107efdbe
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 403227736e2e8c606204e9324d0afb5b71be62a5
 workflow-type: tm+mt
-source-wordcount: '1824'
-ht-degree: 70%
+source-wordcount: '1786'
+ht-degree: 69%
 
 ---
 
@@ -101,7 +101,7 @@ Der Connector unterstützt die folgenden Optionen:
 
 | Option | Beschreibung  |
 |---|---|
-| TD_MAX_SESSIONS | Gibt die maximale Anzahl von Anmeldungssitzungen an, die der Teradata Parallel Transporter für einen Operatorauftrag abrufen kann. <br>Weiterführende Informationen hierzu finden Sie auf dieser [Seite](https://documentation.sas.com/doc/en/pgmsascdc/9.4_3.5/ds2ref/p1naft0um1kn3vn1ubgkrjdf7c3a.html). |
+| TD_MAX_SESSIONS | Gibt die maximale Anzahl von Anmeldungssitzungen an, die der Teradata Parallel Transporter für einen Operatorauftrag abrufen kann. |
 | TimeZoneName | Name der Zeitzone des Servers. |
 | CharacterSet | Wird zum Konfigurieren eines Teradata-Zeichensatzes verwendet. <br>Weiterführende Informationen hierzu finden Sie auf dieser [Seite](https://docs.teradata.com/r/ODBC-Driver-for-Teradata-User-Guide/May-2017/Configuration-of-odbc.ini-in-UNIX/Linux-and-Apple-OS-X/Teradata-DSN-Options#rub1478609534082__table_N102D3_N102B6_N102B3_N10001). |
 | IANAAppCodePage | ODBC-Anwendungs-Code-Seite. <br>Weiterführende Informationen hierzu finden Sie auf dieser [Seite](https://docs.teradata.com/r/ODBC-Driver-for-Teradata-User-Guide/May-2017/ODBC-Driver-for-Teradata-Application-Development/International-Character-Set-Support/Application-Code-Page) |
@@ -148,7 +148,7 @@ Der Fehler **ODB-240000 ODBC-Fehler: [Microsoft][ODBC Driver Manager]-Datenquell
 
 * Wenn Sie eine ältere Campaign-Version verwenden, müssen Sie den von der Treiberinstallation erstellten Teradata von odbcinst.ini in einen neuen Abschnitt mit dem Namen Teradata kopieren. In diesem Fall kann Regedit verwendet werden. Wenn Ihre Basis in latin1 ist, müssen Sie **APICharSize=1** in den Optionen.
 
-## Ergänzende Konfigurationen {#teradata-additional-configurations}
+## Zusätzliche Konfigurationen {#teradata-additional-configurations}
 
 <!--
 ### Compatibility {#teradata-compatibility}
@@ -226,7 +226,7 @@ Installieren von SHA-2:
 
 ### UDF_UTF16TO8-Installation {#UDF-UTF16TO8-installation}
 
-Wenn Sie udf_utf16to8-Funktionen in Ihrer Adobe Campaign-Instanz verwenden möchten, müssen Sie die Benutzermodusfunktion in Ihrer Teradata-Datenbank über das **Teradata-Unicode-Toolkit** auf dieser [Seite](https://downloads.teradata.com/download/tools/unicode-tool-kit) installieren (utk_release1.7.0.0.zip).
+Wenn Sie udf_utf16to8-Funktionen in Ihrer Adobe Campaign-Instanz verwenden möchten, installieren Sie die Benutzermodusfunktion in Ihrer Teradata über die **Teradata Unicode-Toolkit**.
 
 Der SHA-1-Wert der heruntergeladenen Datei lautet wie folgt: e58235f434f52c71316a577cb48e20b97d24f470.
 
