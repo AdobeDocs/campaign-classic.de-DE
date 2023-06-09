@@ -7,16 +7,14 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
 workflow-type: tm+mt
-source-wordcount: '3994'
+source-wordcount: '3996'
 ht-degree: 13%
 
 ---
 
 # Liste der Optionen von Campaign Classic{#configuring-campaign-options}
-
-
 
 Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die Konfiguration von Adobe Campaign-Optionen. Einige sind bei der Installation von Campaign integriert, andere können bei Bedarf manuell hinzugefügt werden. Die verfügbaren Optionen variieren je nach den mit Ihrer Instanz installierten Packages.
 
@@ -26,7 +24,6 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
 >* Optionen, die nicht auf dieser Seite aufgeführt sind, sind nur intern und **darf nicht geändert werden**.
 >
 >* Das Ändern oder Aktualisieren von Adobe Campaign-Optionen kann nur von erfahrenen Benutzern durchgeführt werden.
-
 
 ## Versand {#delivery}
 
@@ -147,11 +144,11 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_DefaultReplyToAddr</span> <br /> </td> 
-   <td> Die Standard-E-Mail-Adresse "Antwort"auf Ebene der Instanz, die für den E-Mail-Versand verwendet wird, wenn sie vom Benutzer leer gelassen wird.<br /> </td> 
+   <td> Die Standard-E-Mail-Adresse "Antwort auf" auf Instanzenebene, die für den E-Mail-Versand verwendet wird, wenn sie vom Benutzer leer gelassen wird.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_ExpOrganisation</span> <br /> </td> 
-   <td> Gebrauchsname des Kunden. Wird in einigen Warnmeldungen verwendet, die den Empfängern angezeigt werden.<br /> "Sie erhalten diese Nachricht, weil Sie mit **** oder einem verbundenen Unternehmen in Kontakt gekommen sind. So empfangen Sie keine Nachrichten mehr von ****".<br /> </td> 
+   <td> Gebrauchsname des Kunden. Wird in einigen Warnmeldungen verwendet, die den Empfängern angezeigt werden.<br /> "Sie erhalten diese Nachricht, weil Sie mit "Organisation" oder einem verbundenen Unternehmen in Kontakt gekommen sind. So empfangen Sie keine Nachrichten mehr von "Organisation"<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_FromName</span> <br /> </td> 
@@ -159,7 +156,7 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_ReplyToName</span> <br /> </td> 
-   <td> Die standardmäßige E-Mail-Bezeichnung "Antwort"auf der Ebene der Instanz, die für den E-Mail-Versand verwendet wird, wenn sie vom Benutzer leer gelassen wird.<br /> </td> 
+   <td> Der Standard-E-Mail-Titel 'Antwort auf' wird auf der Ebene der Instanz verwendet, die für den E-Mail-Versand verwendet wird, wenn er vom Benutzer leer gelassen wird.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_RetryCount</span> <br /> </td> 

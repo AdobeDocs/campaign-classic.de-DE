@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
 workflow-type: tm+mt
-source-wordcount: '1904'
-ht-degree: 78%
+source-wordcount: '2020'
+ht-degree: 72%
 
 ---
 
@@ -59,27 +59,27 @@ Um das externe Konto für **[!UICONTROL Bounce-Messages (defaultPopAccount)]** z
 
 * **[!UICONTROL Server]**
 
-   URL des POP3-Servers
+  URL des POP3-Servers
 
 * **[!UICONTROL Port]**
 
-   Nummer des POP3-Verbindungsports. Standardmäßig ist dies der Port 110.
+  Nummer des POP3-Verbindungsports. Standardmäßig ist dies der Port 110.
 
 * **[!UICONTROL Konto]**
 
-   Name des Benutzers.
+  Name des Benutzers.
 
 * **[!UICONTROL Passwort]**
 
-   Passwort des Benutzerkontos.
+  Passwort des Benutzerkontos.
 
 * **[!UICONTROL Verschlüsselung]**
 
-   Typ der gewählten Verschlüsselung: **[!UICONTROL Standardmäßig]**, **[!UICONTROL POP3 + STARTTLS]**, **[!UICONTROL POP3]** oder **[!UICONTROL POP3S]**.
+  Typ der gewählten Verschlüsselung: **[!UICONTROL Standardmäßig]**, **[!UICONTROL POP3 + STARTTLS]**, **[!UICONTROL POP3]** oder **[!UICONTROL POP3S]**.
 
 * **[!UICONTROL Funktion]**
 
-   Eingehende E-Mail- oder SOAP-Router
+  Eingehende E-Mail- oder SOAP-Router
 
 >[!IMPORTANT]
 >
@@ -89,19 +89,19 @@ So konfigurieren Sie eine externe POP3-Datei mit **Microsoft OAuth 2.0**, überp
 
 * **[!UICONTROL Azure-Mandant]**
 
-   Eine Azure ID (oder Verzeichnis-ID bzw. Mandanten-ID) finden Sie in der Dropdown-Liste **Grundlagen** der Anwendungsübersicht im Azure-Portal.
+  Eine Azure ID (oder Verzeichnis-ID bzw. Mandanten-ID) finden Sie in der Dropdown-Liste **Grundlagen** der Anwendungsübersicht im Azure-Portal.
 
 * **[!UICONTROL Azure-Client-ID]**
 
-   Client-ID (oder Anwendungs (Client)-ID) finden Sie in der Dropdown-Liste **Grundlagen** der Anwendungsübersicht im Azure-Portal.
+  Client-ID (oder Anwendungs (Client)-ID) finden Sie in der Dropdown-Liste **Grundlagen** der Anwendungsübersicht im Azure-Portal.
 
 * **[!UICONTROL Azure-Client-Geheimnis]**
 
-   Die Client-Geheimnis-ID finden Sie in der Spalte **Client-Geheimnisse** im Menü **Zertifikate und Geheimnisse** Ihrer Anwendung im Azure-Portal.
+  Die Client-Geheimnis-ID finden Sie in der Spalte **Client-Geheimnisse** im Menü **Zertifikate und Geheimnisse** Ihrer Anwendung im Azure-Portal.
 
 * **[!UICONTROL Azure-Umleitungs-URL]**
 
-   Die Umleitungs-URL finden Sie im Menü **Authentifizierung** Ihrer Anwendung im Azure-Portal. Sie sollte mit der folgenden Syntax enden: `nl/jsp/oauth.jsp`, z. B. `https://redirect.adobe.net/nl/jsp/oauth.jsp`.
+  Die Umleitungs-URL finden Sie im Menü **Authentifizierung** Ihrer Anwendung im Azure-Portal. Sie sollte mit der folgenden Syntax enden: `nl/jsp/oauth.jsp`, z. B. `https://redirect.adobe.net/nl/jsp/oauth.jsp`.
 
 Nachdem Sie Ihre unterschiedlichen Anmeldedaten eingegeben haben, können Sie auf **[!UICONTROL Verbindung einrichten]** klicken, um die Konfiguration Ihres externen Kontos abzuschließen.
 
@@ -113,7 +113,7 @@ Mit dem externen **[!UICONTROL Routing]**-Konto können Sie jeden in Adobe Campa
 
 Die folgenden Kanäle können konfiguriert werden:
 
-* [E-Mail](../../installation/using/deploying-an-instance.md#email-channel-parameters)
+* [E-Mail](#email-routing-external-account)
 * [Mobiltelefon (SMS)](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account)
 * [Telefon](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
 * [Briefpost](../../delivery/using/about-direct-mail-channel.md)
@@ -122,23 +122,37 @@ Die folgenden Kanäle können konfiguriert werden:
 * [iOS-Kanal](../../delivery/using/configuring-the-mobile-application.md)
 * [Android-Kanal](../../delivery/using/configuring-the-mobile-application-android.md)
 
+### E-Mail-Routing {#email-routing-external-account}
+
+Das externe Konto E-Mail-Routing wird standardmäßig bereitgestellt und ist an Ihre Konfiguration angepasst.
+
+Als On-Premise-Kunde können Sie neue externe Routingkonten erstellen oder Parameter aktualisieren, wie unten beschrieben. Diese Konfiguration ist erfahrenen Benutzern vorbehalten und kann sich auf Ihre Zustellbarkeit auswirken. Wenden Sie sich bei Fragen an die Kundenunterstützung von Adobe oder Ihren Kundenbetreuer für Adoben.
+
+* Sie müssen eine **Mid-Sourcing**, **Externe** Routing oder **Bulk** Versandrouting-Typ.
+
+* Für **Bulk** und **Mid-Sourcing** Versandmodi Sie können Ihre Branding-Parameter im **Branding** Registerkarte. Diese Parameter werden verwendet, um die [Standardparameter](../../installation/using/deploying-an-instance.md#email-channel-parameters) für **URL der Mirrorseite** und **Fehleradresse** mit markenspezifischen Einstellungen.
+
+  ![](assets/ext-account-branding.png)
+
+* Informationen zum Konfigurieren eines externen Mid-Sourcing-Kontos finden Sie unter [diesem Abschnitt](mid-sourcing-server.md)
+
 ### Ausführungsinstanz  {#execution-instance-external-account}
 
-Wenn Sie eine aufgegliederte Architektur haben, müssen Sie die mit der Kontrollinstanz verbundenen Ausführungsinstanzen spezifizieren und miteinander verbinden. Transaktionsnachrichtenvorlagen werden in der Ausführungsinstanz bereitgestellt.
+Im Falle einer aufgeschlüsselten Architektur müssen Sie die mit der Kontrollinstanz verknüpften Ausführungsinstanzen angeben und diese verbinden. Transaktionsnachrichten-Vorlagen werden in der Ausführungsinstanz bereitgestellt.
 
 ![](assets/ext_account_13.png)
 
 * **[!UICONTROL URL]**
 
-   URL des Servers, auf dem die Ausführungsinstanz installiert ist.
+  URL des Servers, auf dem die Ausführungsinstanz installiert ist.
 
 * **[!UICONTROL Konto]**
 
-   Name des Kontos, muss mit dem Message Center Agent übereinstimmen, der im Benutzerordner definiert ist
+  Name des Kontos, muss mit dem Message Center Agent übereinstimmen, der im Benutzerordner definiert ist
 
 * **[!UICONTROL Passwort]**
 
-   Passwort des Kontos, wie es im Benutzerordner definiert ist
+  Passwort des Kontos, wie es im Benutzerordner definiert ist
 
 Weiterführende Informationen zur Konfiguration finden Sie auf dieser [Seite](../../message-center/using/configuring-instances.md#control-instance).
 
@@ -154,23 +168,23 @@ Geben Sie dazu in diesem externen Konto die Adresse und die Zugangsdaten für di
 
 * **[!UICONTROL Server]**
 
-   Name des FTP-Servers
+  Name des FTP-Servers
 
 * **[!UICONTROL Port]**
 
-   Nummer des FTP-Verbindungsports. Standardmäßig ist dies Port 21.
+  Nummer des FTP-Verbindungsports. Standardmäßig ist dies Port 21.
 
 * **[!UICONTROL Konto]**
 
-   Name des Benutzers.
+  Name des Benutzers.
 
 * **[!UICONTROL Passwort]**
 
-   Passwort des Benutzerkontos.
+  Passwort des Benutzerkontos.
 
 * **[!UICONTROL Verschlüsselung]**
 
-   Typ der gewählten Verschlüsselung: **[!UICONTROL Keine]** oder **[!UICONTROL SSL]**.
+  Typ der gewählten Verschlüsselung: **[!UICONTROL Keine]** oder **[!UICONTROL SSL]**.
 
 Informationen zu diesen Zugangsdaten finden Sie auf dieser [Seite](https://help.dreamhost.com/hc/en-us/articles/115000675027-FTP-overview-and-credentials).
 
@@ -182,19 +196,19 @@ Mit dem externen SFTP-Konto können Sie den Zugriff auf einen Server außerhalb 
 
 * **[!UICONTROL Server]**
 
-   URL des SFTP-Servers
+  URL des SFTP-Servers
 
 * **[!UICONTROL Port]**
 
-   Port-Nummer der FTP-Verbindung. Der Standard-Port ist 22.
+  Port-Nummer der FTP-Verbindung. Der Standard-Port ist 22.
 
 * **[!UICONTROL Konto]**
 
-   Kontoname, der für die Verbindung zum SFTP-Server verwendet wird
+  Kontoname, der für die Verbindung zum SFTP-Server verwendet wird
 
 * **[!UICONTROL Passwort]**
 
-   Passwort, das für die Verbindung zum SFTP-Server verwendet wird
+  Passwort, das für die Verbindung zum SFTP-Server verwendet wird
 
 So fügen Sie SSH-Schlüssel unter Windows hinzu:
 
@@ -237,39 +251,39 @@ Um über eine Adobe-ID eine Verbindung zur Adobe Campaign-Konsole herzustellen, 
 
 * **[!UICONTROL IMS-Server]**
 
-   URL Ihres IMS-Servers. Stellen Sie sicher, dass sowohl Staging- als auch Produktionsinstanzen auf den gleichen IMS-Produktionsendpunkt verweisen.
+  URL Ihres IMS-Servers. Stellen Sie sicher, dass sowohl Staging- als auch Produktionsinstanzen auf den gleichen IMS-Produktionsendpunkt verweisen.
 
 * **[!UICONTROL IMS-Umfang]**
 
-   Der hier definierte Umfang muss eine Teilmenge der vom IMS bereitgestellten Perimeter sein.
+  Der hier definierte Umfang muss eine Teilmenge der vom IMS bereitgestellten Perimeter sein.
 
 * **[!UICONTROL Kennung des IMS-Clients]**
 
-   Die ID Ihres IMS-Client
+  Die ID Ihres IMS-Client
 
 * **[!UICONTROL IMS-Client-Secret]**
 
-   Ihr IMS-Client-Geheimnisses.
+  Ihr IMS-Client-Geheimnisses.
 
 * **[!UICONTROL Callback-Server]**
 
-   Zugriff-URL Ihrer Adobe Campaign-Instanz.
+  Zugriff-URL Ihrer Adobe Campaign-Instanz.
 
 * **[!UICONTROL Kennung der IMS-Organisation]**
 
-   Kennung Ihres Unternehmens. Die Organisations-ID finden Sie unter [diese Seite](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=de){_blank}.
+  Kennung Ihres Unternehmens. Die Organisations-ID finden Sie unter [diese Seite](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=de){_blank}.
 
 * **[!UICONTROL Zuordnungsmaske]**
 
-   Syntax, die es ermöglicht, Konfigurationsnamen im Enterprise Dashboard mit den Gruppen in Adobe Campaign zu synchronisieren
+  Syntax, die es ermöglicht, Konfigurationsnamen im Enterprise Dashboard mit den Gruppen in Adobe Campaign zu synchronisieren
 
 * **[!UICONTROL Server]**
 
-   URL Ihrer Adobe Experience Cloud-Instanz
+  URL Ihrer Adobe Experience Cloud-Instanz
 
 * **[!UICONTROL Mandant]**
 
-   Name Ihres Adobe Experience Cloud-Mandanten
+  Name Ihres Adobe Experience Cloud-Mandanten
 
 Weitere Informationen zu dieser Konfiguration finden Sie unter [diese Seite](../../integrations/using/configuring-ims.md).
 
@@ -289,15 +303,15 @@ Mit dem externen Konto **[!UICONTROL AEM (AEM-Instanz)]** können Sie den Inhalt
 
 * **[!UICONTROL Server]**
 
-   URL des Adobe-Experience-Manager-Servers
+  URL des Adobe-Experience-Manager-Servers
 
 * **[!UICONTROL Port]**
 
-   Kontoname, der für die Verbindung mit der Adobe Experience Manager-Authoring-Instanz verwendet wird
+  Kontoname, der für die Verbindung mit der Adobe Experience Manager-Authoring-Instanz verwendet wird
 
 * **[!UICONTROL Passwort]**
 
-   Passwort, das für die Verbindung mit der Adobe Experience Manager-Authoring-Instanz verwendet wird
+  Passwort, das für die Verbindung mit der Adobe Experience Manager-Authoring-Instanz verwendet wird
 
 Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](../../integrations/using/about-adobe-experience-manager.md).
 
@@ -319,21 +333,21 @@ Beim Bereitstellungstyp **[!UICONTROL Web-API]** und der Authentifizierung mit *
 
 * **[!UICONTROL Konto]**
 
-   Konto, mit dem die Anmeldung bei Microsoft CRM erfolgt
+  Konto, mit dem die Anmeldung bei Microsoft CRM erfolgt
 
 * **[!UICONTROL Server]**
 
-   URL Ihres Microsoft CRM-Servers
+  URL Ihres Microsoft CRM-Servers
 
-   So suchen Sie Ihr Microsoft CRM **[!UICONTROL Server-URL]**, greifen Sie auf Ihr Microsoft Dynamics CRM-Konto zu und klicken Sie auf **Dynamics 365** und wählen Sie Ihre App aus. Sie finden dann Ihre **[!UICONTROL Server-URL]** in der Adressleiste Ihres Browsers, z. B. `https://myserver.crm.dynamics.com/`.
+  So suchen Sie Ihr Microsoft CRM **[!UICONTROL Server-URL]**, greifen Sie auf Ihr Microsoft Dynamics CRM-Konto zu und klicken Sie auf **Dynamics 365** und wählen Sie Ihre App aus. Sie finden dann Ihre **[!UICONTROL Server-URL]** in der Adressleiste Ihres Browsers, z. B. `https://myserver.crm.dynamics.com/`.
 
 * **[!UICONTROL Client-Kennung]**
 
-   Client-ID, die Sie über das Verwaltungsportal von Microsoft Azure in der Kategorie **[!UICONTROL Code aktualisieren]** im Feld **[!UICONTROL Client-ID]** finden.
+  Client-ID, die Sie über das Verwaltungsportal von Microsoft Azure in der Kategorie **[!UICONTROL Code aktualisieren]** im Feld **[!UICONTROL Client-ID]** finden.
 
 * **[!UICONTROL CRM-Version]**
 
-   Auswählen **[!UICONTROL Dynamics CRM 365]** CRM-Version.
+  Auswählen **[!UICONTROL Dynamics CRM 365]** CRM-Version.
 
 Beim Bereitstellungstyp **[!UICONTROL Web-API]** und der Authentifizierung mit **[!UICONTROL Zertifikat]** müssen Sie die folgenden Details angeben:
 
@@ -341,15 +355,15 @@ Beim Bereitstellungstyp **[!UICONTROL Web-API]** und der Authentifizierung mit *
 
 * **[!UICONTROL Server]**
 
-   URL Ihres Microsoft CRM-Servers
+  URL Ihres Microsoft CRM-Servers
 
-   So suchen Sie Ihr Microsoft CRM **[!UICONTROL Server-URL]**, greifen Sie auf Ihr Microsoft Dynamics CRM-Konto zu und klicken Sie auf **Dynamics 365** und wählen Sie Ihre App aus. Sie finden dann Ihre **[!UICONTROL Server-URL]** in der Adressleiste Ihres Browsers, z. B. `https://myserver.crm.dynamics.com/`.
+  So suchen Sie Ihr Microsoft CRM **[!UICONTROL Server-URL]**, greifen Sie auf Ihr Microsoft Dynamics CRM-Konto zu und klicken Sie auf **Dynamics 365** und wählen Sie Ihre App aus. Sie finden dann Ihre **[!UICONTROL Server-URL]** in der Adressleiste Ihres Browsers, z. B. `https://myserver.crm.dynamics.com/`.
 
 * **[!UICONTROL Privater Schlüssel (Base64-kodiert)]**
 
-   Beachten Sie, dass der private Schlüssel in Base64 kodiert werden muss.
+  Beachten Sie, dass der private Schlüssel in Base64 kodiert werden muss.
 
-   Dazu können Sie einen Base64-Encoder oder die Befehlszeile `base64 -w0 private.key` für Linux verwenden.
+  Dazu können Sie einen Base64-Encoder oder die Befehlszeile `base64 -w0 private.key` für Linux verwenden.
 
 * **[!UICONTROL Benutzerdefinierte Schlüsselkennung]**
 
@@ -357,11 +371,11 @@ Beim Bereitstellungstyp **[!UICONTROL Web-API]** und der Authentifizierung mit *
 
 * **[!UICONTROL Client-Kennung]**
 
-   Client-ID, die Sie über das Verwaltungsportal von Microsoft Azure in der Kategorie **[!UICONTROL Code aktualisieren]** im Feld **[!UICONTROL Client-ID]** finden.
+  Client-ID, die Sie über das Verwaltungsportal von Microsoft Azure in der Kategorie **[!UICONTROL Code aktualisieren]** im Feld **[!UICONTROL Client-ID]** finden.
 
 * **[!UICONTROL CRM-Version]**
 
-   Version des CRM: **[!UICONTROL Dynamics CRM 2007]**, **[!UICONTROL Dynamics CRM 2015]** oder **[!UICONTROL Dynamics CRM 2016]**
+  Version des CRM: **[!UICONTROL Dynamics CRM 2007]**, **[!UICONTROL Dynamics CRM 2015]** oder **[!UICONTROL Dynamics CRM 2016]**
 
 Weiterführende Informationen zur Konfiguration finden Sie auf dieser [Seite](../../platform/using/crm-connectors.md).
 
@@ -375,23 +389,23 @@ Um dieses externe Konto für die gemeinsame Verwendung mit Adobe Campaign zu kon
 
 * **[!UICONTROL Konto]**
 
-   Konto, mit dem die Anmeldung bei Salesforce CRM erfolgt
+  Konto, mit dem die Anmeldung bei Salesforce CRM erfolgt
 
 * **[!UICONTROL Passwort]**
 
-   Passwort, mit dem die Anmeldung bei Salesforce CRM erfolgt
+  Passwort, mit dem die Anmeldung bei Salesforce CRM erfolgt
 
 * **[!UICONTROL Client-Kennung]**
 
-   Informationen darüber, wo Sie Ihre Client-Kennung finden, erfahren Sie auf dieser [Seite](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
+  Informationen darüber, wo Sie Ihre Client-Kennung finden, erfahren Sie auf dieser [Seite](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
 
 * **[!UICONTROL Security-Token]**
 
-   Informationen darüber, wo Sie Ihr Security-Token finden, erfahren Sie auf dieser [Seite](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
+  Informationen darüber, wo Sie Ihr Security-Token finden, erfahren Sie auf dieser [Seite](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
 
 * **[!UICONTROL API-Version]**
 
-   Wählen Sie die Version der API aus.
+  Wählen Sie die Version der API aus.
 
 Für dieses externe Konto müssen Sie Salesforce CRM mit dem Konfigurationsassistenten konfigurieren.
 
@@ -409,23 +423,23 @@ Zum Einrichten dieses neuen externen Kontos benötigen Sie die folgenden Informa
 
 * **[!UICONTROL AWS-S3-Konto-Server]**
 
-   Die URL Ihres Servers sollte folgendermaßen ausgefüllt werden:
+  Die URL Ihres Servers sollte folgendermaßen ausgefüllt werden:
 
-   ```
-   <S3bucket name>.s3.amazonaws.com/<s3object path>
-   ```
+  ```
+  <S3bucket name>.s3.amazonaws.com/<s3object path>
+  ```
 
 * **[!UICONTROL Kennung des AWS-Zugangsschlüssels]**
 
-   Informationen darüber, wo Sie Ihre Kennung des AWS-Zugangsschlüssels finden, erfahren Sie auf dieser [Seite](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) .
+  Informationen darüber, wo Sie Ihre Kennung des AWS-Zugangsschlüssels finden, erfahren Sie auf dieser [Seite](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) .
 
 * **[!UICONTROL Geheimer AWS-Zugangsschlüssel]**
 
-   Informationen darüber, wo Sie Ihren geheimen AWS-Zugangsschlüssel finden, erfahren Sie auf dieser [Seite](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/).
+  Informationen darüber, wo Sie Ihren geheimen AWS-Zugangsschlüssel finden, erfahren Sie auf dieser [Seite](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/).
 
 * **[!UICONTROL AWS-Region]**
 
-   Weiterführende Informationen zur AWS-Region finden Sie auf dieser [Seite](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/).
+  Weiterführende Informationen zur AWS-Region finden Sie auf dieser [Seite](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/).
 
 * Die Checkbox **[!UICONTROL Serverseitige Verschlüsselung verwenden]** ermöglicht es Ihnen, Ihre Datei in S3 im verschlüsselten Modus zu speichern.
 
@@ -441,12 +455,12 @@ Um das externe **** Azure-Konto für die gemeinsame Verwendung mit Adobe Campaig
 
 * **[!UICONTROL Server]**
 
-   URL Ihres Azure Blob Storage-Servers
+  URL Ihres Azure Blob Storage-Servers
 
 * **[!UICONTROL Verschlüsselung]**
 
-   Typ der gewählten Verschlüsselung: **[!UICONTROL Keine]** oder **[!UICONTROL SSL]**.
+  Typ der gewählten Verschlüsselung: **[!UICONTROL Keine]** oder **[!UICONTROL SSL]**.
 
 * **[!UICONTROL Zugriffsschlüssel]**
 
-   So erfahren Sie, wo Sie Ihre **[!UICONTROL Zugriffsschlüssel]**, siehe hierzu [page](https://docs.microsoft.com/de-de/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).
+  So erfahren Sie, wo Sie Ihre **[!UICONTROL Zugriffsschlüssel]**, siehe hierzu [page](https://docs.microsoft.com/de-de/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).

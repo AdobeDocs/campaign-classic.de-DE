@@ -6,8 +6,8 @@ badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Deliverability, Email Rendering, Proofs
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: ht
+source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
+workflow-type: tm+mt
 source-wordcount: '1807'
 ht-degree: 100%
 
@@ -106,6 +106,7 @@ Um die Sendungsvorbereitung zu beschleunigen, können Sie vor dem Starten der An
 Wenn diese Option aktiviert ist, wird die Sendungsvorbereitung direkt in der Datenbank vorgenommen, was die Analyse erheblich beschleunigen kann.
 
 Diese Option ist derzeit nur verfügbar, wenn folgende Bedingungen erfüllt sind:
+
 * Der Versand muss per E-Mail ausgeführt werden. Die anderen Kanäle werden derzeit nicht unterstützt.
 * Sie dürfen kein Mid-Sourcing oder externes Routing nutzen, sondern nur den Routing-Typ &quot;Gebündelter Versand&quot;. Sie können das verwendete Routing auf dem Tab **[!UICONTROL Allgemein]** der **[!UICONTROL Versandeigenschaften]** überprüfen.
 * Eine Population, die aus einer externen Datei stammt, kann nicht Zielgruppe sein. Klicken Sie für einen einzelnen Versand in den **[!UICONTROL E-Mail-Parametern]** auf den Link **[!UICONTROL An]** und stellen Sie sicher, dass die Option **[!UICONTROL Von der Datenbank ausgehend definiert]** aktiviert ist. Achten Sie bei einem Versand, der in einem Workflow verwendet wird, darauf, dass bei den Empfängern **[!UICONTROL Werden durch die Eingangsereignisse angegeben]** auf dem Tab **[!UICONTROL Versand]** markiert ist.
@@ -136,7 +137,6 @@ Um eventuelle Konfigurationsfehler zu erkennen, ist es empfehlenswert, Ihre Send
 >* Die verfügbaren Validierungsmodi werden unter [Validierungsmodus ändern](steps-validating-the-delivery.md#changing-the-approval-mode) detailliert beschrieben.
 >* Die Konfiguration der Testversand-Zielgruppe wird unter [Spezifische Testversand-Zielgruppe definieren](steps-defining-the-target-population.md#defining-a-specific-proof-target) beschrieben.
 >
-
 
 Gehen Sie wie folgt vor, um einen Testversand durchzuführen:
 

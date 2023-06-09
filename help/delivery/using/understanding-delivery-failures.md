@@ -6,10 +6,10 @@ badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Monitoring, Deliverability
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: ht
+source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
+workflow-type: tm+mt
 source-wordcount: '2665'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -201,15 +201,15 @@ Ein Versand kann sofort fehlschlagen (synchroner Fehler) oder zu einem späteren
 * Synchroner Fehler: Der vom Adobe Campaign-Server angesprochene Remote-Mail-Server hat unmittelbar eine Fehlermeldung zurückgegeben, die Nachricht darf nicht an den Server des Profils gesendet werden. Adobe Campaign qualifiziert jeden Fehlschlag, um zu bestimmen, ob die betroffenen E-Mail-Adressen in Quarantäne kommen oder nicht. Siehe [Bounce-Message-Qualifizierung](#bounce-mail-qualification).
 * Asynchroner Fehler: Eine Bounce Message oder ein SR wird vom Remote-Server verzögert zurückgesendet. Diese E-Mail wird an ein spezifisches Postfach weitergeleitet, das automatisch von der Anwendung abgefragt wird, um die fehlerhaften Nachrichten zu erfassen. Asynchrone Fehler können bis zu einer Woche nach dem Versand auftreten.
 
-   >[!NOTE]
-   >
-   >Die Konfiguration der Bounce-Adresse wird in [diesem Abschnitt](../../installation/using/deploying-an-instance.md#managing-bounced-emails) beschrieben.
+  >[!NOTE]
+  >
+  >Die Konfiguration der Bounce-Adresse wird in [diesem Abschnitt](../../installation/using/deploying-an-instance.md#managing-bounced-emails) beschrieben.
 
-   Die [Feedback-Schleife](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=de#feedback-loops) funktioniert wie eine Bounce-E-Mail. Wenn ein Benutzer eine E-Mail als Spam einstuft, können Sie E-Mail-Regeln in Adobe Campaign so konfigurieren, dass alle Sendungen für diesen Benutzer blockiert werden. Nachrichten, die an Benutzer gesendet werden, die eine E-Mail als Spam eingestuft haben, werden automatisch an einen speziell dafür erstellten E-Mail-Eingang weitergeleitet. Die Adressen dieser Benutzer befinden sich auf der Blockierungsliste, obwohl sie nicht auf den Abmelde-Link geklickt haben. Adressen befinden sich in der Blockierungsliste der Quarantänetabelle (**NmsAddress**) und nicht der Empfängertabelle (**NmsRecipient**).
+  Die [Feedback-Schleife](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=de#feedback-loops) funktioniert wie eine Bounce-E-Mail. Wenn ein Benutzer eine E-Mail als Spam einstuft, können Sie E-Mail-Regeln in Adobe Campaign so konfigurieren, dass alle Sendungen für diesen Benutzer blockiert werden. Nachrichten, die an Benutzer gesendet werden, die eine E-Mail als Spam eingestuft haben, werden automatisch an einen speziell dafür erstellten E-Mail-Eingang weitergeleitet. Die Adressen dieser Benutzer befinden sich auf der Blockierungsliste, obwohl sie nicht auf den Abmelde-Link geklickt haben. Adressen befinden sich in der Blockierungsliste der Quarantänetabelle (**NmsAddress**) und nicht der Empfängertabelle (**NmsRecipient**).
 
-   >[!NOTE]
-   >
-   >Der Feedback Loop (Beschwerdenverwaltung) wird im Abschnitt [Verwaltung der Zustellbarkeit](about-deliverability.md) erläutert.
+  >[!NOTE]
+  >
+  >Der Feedback Loop (Beschwerdenverwaltung) wird im Abschnitt [Verwaltung der Zustellbarkeit](about-deliverability.md) erläutert.
 
 ## Bounce-Message-Verwaltung {#bounce-mail-management}
 
@@ -234,7 +234,6 @@ Bei On-Premise-Installationen und gehosteten/hybriden Installationen, die den be
 >* **Asynchrone** Bounces werden weiterhin vom InMail-Prozess über die Regeln für **[!UICONTROL Eingehende E-Mails]** qualifiziert. Weiterführende Informationen dazu finden Sie im Abschnitt [E-Mail-Verwaltungsregeln](#email-management-rules).
 >
 >* Bei Instanzen, die den Enhanced MTA **ohne Webhooks/EFS** verwenden, dienen die Regeln für **[!UICONTROL eingehende E-Mails]** auch zur Verarbeitung der synchronen Bounce-E-Mails, die aus dem Enhanced MTA kommen, wobei dieselbe E-Mail-Adresse wie bei asynchronen Bounce-E-Mails genutzt wird.
-
 
 Bei On-Premise-Installationen und gehosteten/hybriden Installationen, die den bestehenden Campaign-MTA verwenden, erhält der Adobe Campaign-Versand-Server eine Fehlermeldung vom Messaging-Server oder dem Remote-DNS-Server, wenn der Versand einer E-Mail fehlschlägt. Die Liste der Fehler besteht aus Zeichenfolgen, die in der vom Remote-Server zurückgegebenen Nachricht enthalten sind. Jeder Fehlermeldung sind Fehlertypen und Gründe zugeordnet.
 
@@ -287,7 +286,6 @@ Folgende Regeln sind in der Standardkonfiguration vorgesehen.
 >* Nach Änderungen in der Konfiguration muss der Versandserver (MTA) neu gestartet werden.
 >* Neuerstellung und Änderungen von Verwaltungsregeln sollten erfahrenen Benutzern vorbehalten bleiben.
 
-
 #### Eingehende E-Mails {#inbound-email}
 
 >[!IMPORTANT]
@@ -296,7 +294,7 @@ Folgende Regeln sind in der Standardkonfiguration vorgesehen.
 
 Bei On-Premise-Installationen und gehosteten/hybriden Installationen, die den bestehenden Campaign-MTA verwenden, enthalten diese Regeln die Liste der Zeichenketten, die von Remote-Servern zurückgegeben werden können und mit denen Sie den Fehler qualifizieren können (**Hard**, **Soft** oder **Ignoriert**).
 
-Wenn die Zustellung einer E-Mail fehlschlägt, gibt der Remote-Server eine Bounce-Meldung an die in der Plattformkonfiguration angegebene Adresse zurück. Adobe Campaign vergleicht den Inhalt jeder Bounce Message mit den in der Regelliste verzeichneten Strings und ordnet ihn einem der drei [Fehlertypen](#delivery-failure-types-and-reasons) zu.
+Wenn eine E-Mail fehlschlägt, gibt der Remote-Server eine Bounce-Nachricht an die in der [Plattformparameter](../../installation/using/deploying-an-instance.md). Adobe Campaign vergleicht den Inhalt jeder Bounce Message mit den in der Regelliste verzeichneten Strings und ordnet ihn einem der drei folgenden zu [Fehlertypen](#delivery-failure-types-and-reasons).
 
 >[!NOTE]
 >

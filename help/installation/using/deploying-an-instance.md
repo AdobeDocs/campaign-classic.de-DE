@@ -8,16 +8,14 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
 workflow-type: tm+mt
-source-wordcount: '3290'
-ht-degree: 7%
+source-wordcount: '3483'
+ht-degree: 6%
 
 ---
 
 # Bereitstellen einer Instanz{#deploying-an-instance}
-
-
 
 >[!NOTE]
 >
@@ -25,7 +23,7 @@ ht-degree: 7%
 
 ## Bereitstellungsassistent {#deployment-wizard}
 
-Mit einem grafischen Assistenten, der in der Adobe Campaign-Clientkonsole verfügbar ist, können Sie die Parameter der Instanz definieren, mit der Sie eine Verbindung herstellen möchten.
+Adobe Campaign bietet einen grafischen Assistenten, der in der Adobe Campaign-Clientkonsole verfügbar ist und die Parameter der Instanz definiert, mit der Sie eine Verbindung herstellen werden.
 
 Um den Softwareverteilungs-Assistenten zu starten, wählen Sie **Tools > Erweitert > Bereitstellungsassistent**.
 
@@ -80,13 +78,36 @@ Diese Parameter können in Versandvorlagen und für jeden Versand einzeln übers
 
 Geben Sie die folgenden Parameter an:
 
-* **[!UICONTROL Name des Absenders]** : Name des Absenders
-* **[!UICONTROL Absenderadresse]** : Adresse des Absenders
-* **[!UICONTROL Text der Antwortadresse]** : Der Name, der angepasst werden kann und verwendet wird, wenn der Empfänger auf die **[!UICONTROL Antwort]** Schaltfläche in der E-Mail-Client-Software
-* **[!UICONTROL Antwortadresse]** : Die zu verwendende E-Mail-Adresse, wenn der Empfänger auf die **[!UICONTROL Antwort]** Schaltfläche in der E-Mail-Client-Software
-* **[!UICONTROL Fehleradresse]** : E-Mail-Adresse der fehlerhaften Nachrichten. Dies ist die technische Adresse, die für die Verarbeitung von Bounce Messages verwendet wird, einschließlich E-Mails, die vom Adobe Campaign-Server aufgrund nicht vorhandener Zieladressen empfangen wurden.
+* **[!UICONTROL Name des Absenders]** : Geben Sie den Namen des Absenders ein.
+* **[!UICONTROL Absenderadresse]** : Geben Sie die E-Mail-Adresse des Absenders ein.
+
+  >[!NOTE]
+  >
+  > Wenn Sie E-Mails aus Adobe Campaign senden, wird die **Absenderadresse** Postfach wird nicht überwacht und Marketing-Benutzer können nicht auf dieses Postfach zugreifen. Adobe Campaign bietet außerdem keine Möglichkeit zur automatischen Antwort- oder automatischen Weiterleitungs-E-Mails, die in diesem Postfach empfangen wurden.
+
+* **[!UICONTROL Text der Antwortadresse]** : Geben Sie den Namen ein, der verwendet wird, wenn der Empfänger auf die **[!UICONTROL Antwort]** Schaltfläche.
+* **[!UICONTROL Antwortadresse]** : Geben Sie die E-Mail-Adresse ein, die verwendet werden soll, wenn der Empfänger auf die **[!UICONTROL Antwort]** in der E-Mail-Client-Software.
+
+  >[!NOTE]
+  >
+  >Der Zweck der **Antwortadresse** -Feld ist der Zeitpunkt, zu dem der Empfänger auf eine andere Adresse als die **Absenderadresse**.  Diese Adresse muss eine gültige E-Mail-Adresse sein und mit einem überwachten Postfach verknüpft sein.  Dieses Postfach muss vom Kunden gehostet werden.  Es kann sich um ein Support-Postfach handeln, z. B. customer-care@customer.com, in dem E-Mails gelesen und beantwortet werden.
+
+* **[!UICONTROL Fehleradresse]** : Geben Sie die E-Mail-Adresse der fehlerhaften Nachrichten ein. Dies ist die technische Adresse, die für die Verarbeitung von Bounce Messages verwendet wird, einschließlich E-Mails, die vom Adobe Campaign-Server aufgrund nicht vorhandener Zieladressen empfangen wurden.
+
+  >[!NOTE]
+  >
+  > Diese Adresse muss eine gültige E-Mail-Adresse sein und mit einem überwachten Postfach verknüpft sein. Dieses Postfach muss vom Kunden gehostet werden. Es kann sich um ein Bounce-Postfach handeln, z. B. errors@customer.com.
+
 
 Darüber hinaus können Sie die **Masken** für die Absenderadresse und die Fehleradresse autorisiert. Bei Angabe von mehr als einer Maske sind die Masken durch Kommata zu trennen. Hierbei handelt es sich um eine optionale Konfiguration. Wenn Felder eingegeben werden, prüft Adobe Campaign zum Zeitpunkt des Versands (während der Analyse, ob die Adresse keine Variablen enthält), ob die Adressen gültig sind. Dieser Betriebsmodus stellt sicher, dass keine Adressen verwendet werden, die Probleme beim Versand von Triggern verursachen könnten. Absenderadressen sind auf dem Versandserver zu konfigurieren.
+
+>[!NOTE]
+>
+>* Diese Einstellungen werden in den Optionen der Campaign-Plattform gespeichert. [Weitere Informationen](../../installation/using/configuring-campaign-options.md).
+> 
+>* Bei Konfigurationen mit mehreren Branding-Themen können Sie die Fehleradresse anpassen und diese Konfiguration über das externe E-Mail-Routing-Konto überschreiben. [Weitere Informationen](../../installation/using/external-accounts.md#email-routing-external-account).
+>
+
 
 ### Zulässige Zeichen in den Adressen {#characters-authorized-in-addresses}
 
@@ -183,15 +204,15 @@ Wenn Sie das Tracking in einer Instanz aktivieren, werden die URLs in den Sendun
 
 * Die Informationen zu externen URLs (ob sicher oder nicht), die auf dieser Seite des Softwareverteilungs-Assistenten eingegeben wurden, werden zum Erstellen der neuen URL verwendet. Neben diesen Informationen enthält der geänderte Link: die IDs des Versands, des Empfängers und der URL.
 
-   Tracking-Informationen werden von Adobe Campaign auf den Tracking-Servern erfasst, um die Empfängerprofile und die mit dem Versand verknüpften Daten anzureichern ( **[!UICONTROL Tracking]** Registerkarten).
+  Tracking-Informationen werden von Adobe Campaign auf den Tracking-Servern erfasst, um die Empfängerprofile und die mit dem Versand verknüpften Daten anzureichern ( **[!UICONTROL Tracking]** Registerkarten).
 
-   Informationen zu internen URLs werden nur vom Adobe Campaign-Anwendungsserver verwendet, um den/die Tracking-Server(s) zu kontaktieren.
+  Informationen zu internen URLs werden nur vom Adobe Campaign-Anwendungsserver verwendet, um den/die Tracking-Server(s) zu kontaktieren.
 
-   Weitere Informationen hierzu finden Sie unter [Tracking-Server](#tracking-server).
+  Weitere Informationen hierzu finden Sie unter [Tracking-Server](#tracking-server).
 
 * Nach der Konfiguration der URLs müssen Sie das Tracking aktivieren. Dazu muss die Instanz auf den Tracking-Servern registriert sein.
 
-   Weitere Informationen hierzu finden Sie unter [Tracking speichern](#saving-tracking).
+  Weitere Informationen hierzu finden Sie unter [Tracking speichern](#saving-tracking).
 
 ### Tracking-Server {#tracking-server}
 
@@ -203,7 +224,7 @@ Um die Effizienz des Trackings in dieser Instanz zu gewährleisten, müssen die 
 * **[!UICONTROL Externe URL]** und/oder **[!UICONTROL Externe URL sichern]** : Geben Sie die Umleitungs-URL ein, die in der zu sendenden E-Mail verwendet werden soll.
 * **[!UICONTROL Interne URL(s)]** : URLs, die nur vom Adobe Campaign-Server verwendet werden, um den/die Tracking-Server zu kontaktieren, um Protokolle zu erfassen und die URLs hochzuladen. Es ist nicht erforderlich, sie mit der Instanz zu verknüpfen.
 
-   Wenn Sie keine URL angeben, wird die Tracking-URL standardmäßig verwendet.
+  Wenn Sie keine URL angeben, wird die Tracking-URL standardmäßig verwendet.
 
 Mit der Mid-Sourcing-Architektur können Sie die Tracking-Verwaltung externalisieren. Gehen Sie dazu wie folgt vor:
 
@@ -337,6 +358,13 @@ Auf dieser Seite können Sie die Server-URLs folgendermaßen ausfüllen:
 
 Mit Adobe Campaign können Sie diese drei URLs unterscheiden, um die Last über mehrere Plattformen zu verteilen.
 
+
+>[!NOTE]
+>
+>* Diese Einstellungen werden in den Optionen der Campaign-Plattform gespeichert. [Weitere Informationen](../../installation/using/configuring-campaign-options.md).
+>* Bei Konfigurationen mit mehreren Branding-Elementen können Sie die URL der Mirrorseite anpassen und diese Konfiguration über das externe Konto E-Mail-Routing überschreiben. [Weitere Informationen](../../installation/using/configuring-campaign-options.md).
+
+
 ## Verwaltung öffentlicher Ressourcen {#managing-public-resources}
 
 >[!IMPORTANT]
@@ -365,7 +393,7 @@ In einem Versand können Sie Bilder verwenden, die in der Bibliothek der öffent
 
 * Bei E-Mail-Bildern muss die **https://** server **/res/img** URL.
 
-   Dieser Wert kann bei jedem Versand überschrieben werden.
+  Dieser Wert kann bei jedem Versand überschrieben werden.
 
 * Bei öffentlichen Ressourcen wird die URL **https://** server **/res/** instance ****where **instance**ist der Name der Tracking-Instanz.
 
@@ -390,38 +418,38 @@ Die folgenden Veröffentlichungsmodi sind verfügbar:
 
 * Trackingserver
 
-   Die Ressourcen werden automatisch auf die verschiedenen Tracking-Server kopiert. Sie werden im Schritt konfiguriert [Tracking-Konfiguration](#tracking-configuration).
+  Die Ressourcen werden automatisch auf die verschiedenen Tracking-Server kopiert. Sie werden im Schritt konfiguriert [Tracking-Konfiguration](#tracking-configuration).
 
 * Andere Adobe Campaign-Server
 
-   Sie können einen weiteren Adobe Campaign-Server verwenden, auf den die Ressourcen kopiert werden.
+  Sie können einen weiteren Adobe Campaign-Server verwenden, auf den die Ressourcen kopiert werden.
 
-   Um serverseitig einen dedizierten Adobe Campaign-Server zu verwenden, müssen Sie mit dem folgenden Befehl eine neue Instanz erstellen:
+  Um serverseitig einen dedizierten Adobe Campaign-Server zu verwenden, müssen Sie mit dem folgenden Befehl eine neue Instanz erstellen:
 
-   ```
-   nlserver config -addtrackinginstance:<trackingA>/<trackingA*>
-   ```
+  ```
+  nlserver config -addtrackinginstance:<trackingA>/<trackingA*>
+  ```
 
-   Geben Sie dann das Kennwort ein.
+  Geben Sie dann das Kennwort ein.
 
-   Die Parameter der dedizierten Server werden im Abschnitt **[!UICONTROL Medien-URL(s)]**, **[!UICONTROL Passwort]** und **[!UICONTROL Instanzname]** -Felder.
+  Die Parameter der dedizierten Server werden im Abschnitt **[!UICONTROL Medien-URL(s)]**, **[!UICONTROL Passwort]** und **[!UICONTROL Instanzname]** -Felder.
 
-   ![](assets/s_ncs_install_images_upload_b.png)
+  ![](assets/s_ncs_install_images_upload_b.png)
 
 * Skript zur manuellen Veröffentlichung (nur für öffentliche Ressourcen)
 
-   ![](assets/s_ncs_install_images_upload_c.png)
+  ![](assets/s_ncs_install_images_upload_c.png)
 
-   Sie können Bilder mithilfe eines Skripts veröffentlichen:
+  Sie können Bilder mithilfe eines Skripts veröffentlichen:
 
    * Sie müssen dieses Skript erstellen: Der Inhalt hängt von Ihrer Konfiguration ab.
    * Das Skript wird durch den folgenden Befehl aufgerufen:
 
-      ```
-      [INSTALL]/copyToFrontal.vbs "$(XTK_INSTALL_DIR)\var\<instance>\upload\" "img1,img2,img3"
-      ```
+     ```
+     [INSTALL]/copyToFrontal.vbs "$(XTK_INSTALL_DIR)\var\<instance>\upload\" "img1,img2,img3"
+     ```
 
-      where `[INSTALL]` ist der Zugriffspfad zum Adobe Campaign-Installationsordner.
+     where `[INSTALL]` ist der Zugriffspfad zum Adobe Campaign-Installationsordner.
 
    * Stellen Sie in Unix sicher, dass das Skript ausführbar ist.
 

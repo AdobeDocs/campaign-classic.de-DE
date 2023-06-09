@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: e1aff73a-54fb-444e-b183-df11c9b3df31
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 34%
@@ -15,8 +15,6 @@ ht-degree: 34%
 ---
 
 # Sicherheitseinstellungen des Servers {#server-configuration}
-
-
 
 ## Schutz vor Datei-Upload
 
@@ -76,9 +74,9 @@ Sie können für alle Seiten zusätzliche HTTP-Header hinzufügen (weitere Infor
 * Sie können zusätzliche Header wie HSTS, X-FRAME-OPTIONS, CSP etc. hinzufügen.
 * Sie müssen sie in einer Testumgebung testen, bevor Sie sie in der Produktion anwenden.
 
-   >[!IMPORTANT]
-   >
-   >Adobe Campaign kann durch Hinzufügen bestimmter Kopfzeilen beschädigt werden.
+  >[!IMPORTANT]
+  >
+  >Adobe Campaign kann durch Hinzufügen bestimmter Kopfzeilen beschädigt werden.
 
 Adobe Campaign ermöglicht die Festlegung eines einfachen Kennworts im `<dbcnx .../>` -Element. Verwenden Sie diese Funktion nicht.
 
