@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
-source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
+source-git-commit: d9976b904d116b1f4deb9fde7842ad64234c7c8a
 workflow-type: tm+mt
-source-wordcount: '3483'
+source-wordcount: '3493'
 ht-degree: 6%
 
 ---
@@ -83,20 +83,20 @@ Geben Sie die folgenden Parameter an:
 
   >[!NOTE]
   >
-  > Wenn Sie E-Mails aus Adobe Campaign senden, wird die **Absenderadresse** Postfach wird nicht überwacht und Marketing-Benutzer können nicht auf dieses Postfach zugreifen. Adobe Campaign bietet außerdem keine Möglichkeit zur automatischen Antwort- oder automatischen Weiterleitungs-E-Mails, die in diesem Postfach empfangen wurden.
+  > Wenn Sie E-Mails aus Adobe Campaign senden, wird die **Absenderadresse** Postfach wird nicht überwacht und Marketing-Benutzer können nicht auf dieses Postfach zugreifen. Adobe Campaign bietet außerdem keine Möglichkeit zur automatischen Antwort- oder automatischen Weiterleitungs-E-Mails, die in diesem Postfach empfangen wurden. Weitere Informationen zu Best Practices für die Zustellbarkeit [in dieser Dokumentation](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/ac-starting-new-platform.html){_blank}.
 
 * **[!UICONTROL Text der Antwortadresse]** : Geben Sie den Namen ein, der verwendet wird, wenn der Empfänger auf die **[!UICONTROL Antwort]** Schaltfläche.
 * **[!UICONTROL Antwortadresse]** : Geben Sie die E-Mail-Adresse ein, die verwendet werden soll, wenn der Empfänger auf die **[!UICONTROL Antwort]** in der E-Mail-Client-Software.
 
   >[!NOTE]
   >
-  >Der Zweck der **Antwortadresse** -Feld ist der Zeitpunkt, zu dem der Empfänger auf eine andere Adresse als die **Absenderadresse**.  Diese Adresse muss eine gültige E-Mail-Adresse sein und mit einem überwachten Postfach verknüpft sein.  Dieses Postfach muss vom Kunden gehostet werden.  Es kann sich um ein Support-Postfach handeln, z. B. customer-care@customer.com, in dem E-Mails gelesen und beantwortet werden.
+  >Der Zweck der **Antwortadresse** -Feld ist der Zeitpunkt, zu dem der Empfänger auf eine andere Adresse als die **Absenderadresse**.  Diese Adresse muss eine gültige E-Mail-Adresse sein, mit einem überwachten Postfach verknüpft und vom Kunden gehostet werden.  Es kann sich um ein Support-Postfach handeln, z. B. customer-care@customer.com, in dem E-Mails gelesen und beantwortet werden.
 
 * **[!UICONTROL Fehleradresse]** : Geben Sie die E-Mail-Adresse der fehlerhaften Nachrichten ein. Dies ist die technische Adresse, die für die Verarbeitung von Bounce Messages verwendet wird, einschließlich E-Mails, die vom Adobe Campaign-Server aufgrund nicht vorhandener Zieladressen empfangen wurden.
 
   >[!NOTE]
   >
-  > Diese Adresse muss eine gültige E-Mail-Adresse sein und mit einem überwachten Postfach verknüpft sein. Dieses Postfach muss vom Kunden gehostet werden. Es kann sich um ein Bounce-Postfach handeln, z. B. errors@customer.com.
+  > Diese Adresse muss eine gültige E-Mail-Adresse sein, mit einem überwachten Postfach verknüpft und vom Kunden gehostet werden. Es kann sich um ein Bounce-Postfach handeln, z. B. errors@customer.com.
 
 
 Darüber hinaus können Sie die **Masken** für die Absenderadresse und die Fehleradresse autorisiert. Bei Angabe von mehr als einer Maske sind die Masken durch Kommata zu trennen. Hierbei handelt es sich um eine optionale Konfiguration. Wenn Felder eingegeben werden, prüft Adobe Campaign zum Zeitpunkt des Versands (während der Analyse, ob die Adresse keine Variablen enthält), ob die Adressen gültig sind. Dieser Betriebsmodus stellt sicher, dass keine Adressen verwendet werden, die Probleme beim Versand von Triggern verursachen könnten. Absenderadressen sind auf dem Versandserver zu konfigurieren.
