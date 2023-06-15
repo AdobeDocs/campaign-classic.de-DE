@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
+source-git-commit: 43158445f688f4c2612d4dad76f2243b2e358b35
 workflow-type: tm+mt
 source-wordcount: '2020'
 ht-degree: 72%
@@ -126,9 +126,9 @@ Die folgenden Kanäle können konfiguriert werden:
 
 Das externe Konto E-Mail-Routing wird standardmäßig bereitgestellt und ist an Ihre Konfiguration angepasst.
 
-Als On-Premise-Kunde können Sie neue externe Routingkonten erstellen oder Parameter aktualisieren, wie unten beschrieben. Diese Konfiguration ist erfahrenen Benutzern vorbehalten und kann sich auf Ihre Zustellbarkeit auswirken. Wenden Sie sich bei Fragen an die Kundenunterstützung von Adobe oder Ihren Kundenbetreuer für Adoben.
+Als On-Premise-/Hybrid-Kunde können Sie neue Routing-externe Konten erstellen oder Parameter aktualisieren, wie unten beschrieben. Diese Konfiguration ist erfahrenen Benutzern vorbehalten und kann sich auf Ihre Zustellbarkeit auswirken. Wenden Sie sich bei Fragen an die Kundenunterstützung von Adobe oder Ihren Kundenbetreuer für Adoben.
 
-* Sie müssen eine **Mid-Sourcing**, **Externe** Routing oder **Bulk** Versandrouting-Typ.
+* Sie können eine **Mid-Sourcing**, **Externe** Routing oder **Bulk** Versandrouting-Typ.
 
 * Für **Bulk** und **Mid-Sourcing** Versandmodi Sie können Ihre Branding-Parameter im **Branding** Registerkarte. Diese Parameter werden verwendet, um die [Standardparameter](../../installation/using/deploying-an-instance.md#email-channel-parameters) für **URL der Mirrorseite** und **Fehleradresse** mit markenspezifischen Einstellungen.
 
