@@ -5,10 +5,10 @@ description: Weiterführende Informationen zu Campaign Classic-Versionen 2018
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 hidefromtoc: true
 exl-id: f70fceba-4bbf-4f33-8746-e4405a1cdae6
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: ht
-source-wordcount: '5423'
-ht-degree: 100%
+source-git-commit: a119378e4285d3258a9b4f1f68c0b625264e5d37
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -55,7 +55,7 @@ _15. April 2019_
 
 ### Version 18.10.3 – Build 8981{#release-18-10-3-build-8981}
 
-&#x200B;29. Januar 2019
+29. Januar 2019
 
 >[!CAUTION]
 >
@@ -79,7 +79,7 @@ _15. April 2019_
 
 ### Version 18.10.2 – Build 8978{#release-18-10-2-build-8978}
 
-&#x200B;6. Dezember 2018
+6. Dezember 2018
 
 >[!CAUTION]
 >
@@ -101,7 +101,7 @@ _15. April 2019_
 
 ### Version 18.10.1 – Build 8977{#release-18-10-build-8977}
 
-&#x200B;5. November 2018
+5. November 2018
 
 >[!CAUTION]
 >
@@ -246,7 +246,7 @@ Durch diese Indexänderungen kann es vorkommen, dass die Durchführung des Postu
 
 ### Version 18.6.2 – Build 8949{#release-18-6-3-build-8949}
 
-&#x200B;22. August 2018
+22. August 2018
 
 >[!CAUTION]
 >
@@ -441,7 +441,7 @@ _24. April 2018_
  <tbody> 
   <tr> 
    <td> EU-Datenschutz-Grundverordnung (DSGVO)<br /> </td> 
-   <td> <p>Die DSGVO ist die neue Datenschutz-Grundverordnung der Europäischen Union (EU), die am 25. Mai 2018 in Kraft tritt und in der die Anforderungen an den Datenschutz harmonisiert und neu geregelt werden. Die DSGVO gilt für Adobe Campaign-Kunden, die Daten von Personen erfassen, die in der EU wohnhaft sind.</p> <p>Aus diesem Grund möchten wir als Datenverarbeiter Ihnen als Datenverantwortlichen zusätzlich zu den bereits in Adobe Campaign verfügbaren Datenschutzoptionen (Einverständnisverwaltung, Einstellungen für die Datenbeibehaltung und Benutzerrollen etc.) weitere Funktionen bereitstellen, mit deren Hilfe Sie DSGVO-konformes Verhalten sicherstellen können:</p> 
+   <td> <p>Die DSGVO ist die Datenschutz-Grundverordnung der Europäischen Union (EU), in der die Anforderungen an den Datenschutz harmonisiert und neu geregelt werden. Die DSGVO gilt für Adobe Campaign-Kunden, die Daten von in der EU wohnhaften Personen erfassen.</p> <p>Aus diesem Grund möchten wir als Datenverarbeiter Ihnen als Datenverantwortlichen zusätzlich zu den bereits in Adobe Campaign verfügbaren Datenschutzoptionen (Einverständnisverwaltung, Einstellungen für die Datenbeibehaltung und Benutzerrollen etc.) weitere Funktionen bereitstellen, mit deren Hilfe Sie DSGVO-konformes Verhalten sicherstellen können:</p> 
     <ul> 
      <li> <p>Recht auf Zugriff: Die betroffene Person hat das Recht, eine Kopie seiner personenbezogenen Daten, die vom Datenverantwortlichen erfasst werden, zu erhalten. Hierzu zählen unter Umständen auch die in Adobe Campaign gespeicherten Daten.</p> </li> 
      <li> <p>Recht auf Löschung: Die betroffene Person hat das Recht, seine personenbezogenen Daten, die vom Datenverantwortlichen erfasst werden, löschen zu lassen. Hierzu zählen unter Umständen auch die in Adobe Campaign gespeicherten Daten.</p> </li> 
