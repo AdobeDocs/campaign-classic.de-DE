@@ -6,16 +6,14 @@ badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email Design
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: ht
-source-wordcount: '2063'
-ht-degree: 100%
+source-git-commit: 64a94982ea1eebc30c652e0025eb0aaa0eab1ce9
+workflow-type: tm+mt
+source-wordcount: '2017'
+ht-degree: 93%
 
 ---
 
 # Definieren des E-Mail-Inhalts {#defining-the-email-content}
-
-
 
 ## Absender {#sender}
 
@@ -29,15 +27,14 @@ Informationen zum Einfügen und Verwenden von Personalisierungsfeldern finden Si
 
 >[!NOTE]
 >
->* Die Absenderadresse wird standardmäßig auch als Antwortadresse verwendet.
->* Die E-Mail-Header-Parameter müssen zwingend angegeben werden. Standardmäßig sind die Werte, die bei der Konfiguration des Bereitstellungassistenten angegeben wurden, vorausgefüllt. Weiterführende Informationen finden Sie im [Installationshandbuch](../../installation/using/deploying-an-instance.md).
+>* Die Absenderadresse wird standardmäßig für Antworten verwendet.
+>* Die Header-Parameter dürfen nicht leer sein. Standardmäßig enthalten sie die Werte, die beim Konfigurieren des Softwareverteilungs-Assistenten eingegeben werden. Weiterführende Informationen finden Sie in [diesem Abschnitt](../../installation/using/deploying-an-instance.md).
 >* Die Angabe der Absenderadresse ist für den E-Mail-Versand zwingend erforderlich (gemäß RFC-Standard).
 >* Adobe Campaign führt eine Syntax-Prüfung der angegebenen E-Mail-Adressen durch.
 
-
->[!IMPORTANT]
+>[!CAUTION]
 >
->Im Rahmen der durch Internet-Serviceanbieter (ISP) zur Eindämmung unerwünschter E-Mails (SPAM) durchgeführten Kontrollen empfiehlt Adobe Campaign, dass die als Absender- und Antwortadresse angegebenen E-Mail-Konten tatsächlich existieren. Wenden Sie sich diesbezüglich bitte an den Administrator Ihres E-Mail-Programms.
+>Um Probleme mit der Zustellbarkeit zu vermeiden, müssen die E-Mail-Konten vorhanden und überwacht werden, die den für Sendungen und Antworten angegebenen Adressen entsprechen. Wenden Sie sich an Ihren Systemadministrator.
 
 ## Nachrichtenbetreff {#message-subject}
 
@@ -71,45 +68,45 @@ Standardmäßig werden die Nachrichten den Angaben des Empfängers entsprechend 
 
 * Verwenden Sie die Schaltfläche **[!UICONTROL Öffnen]**, um HTML-Inhalt zu importieren. Sie haben auch die Möglichkeit, den Quellcode direkt in den Tab **[!UICONTROL Quelle]** einzufügen.
 
-   Wenn Sie den [Digital Content Editor](../../web/using/about-campaign-html-editor.md) (DCE) verwenden, lesen Sie den Abschnitt zur [Auswahl einer Inhaltsvorlage](../../web/using/use-case--creating-an-email-delivery.md#step-3---selecting-a-content).
+  Wenn Sie den [Digital Content Editor](../../web/using/about-campaign-html-editor.md) (DCE) verwenden, lesen Sie den Abschnitt zur [Auswahl einer Inhaltsvorlage](../../web/using/use-case--creating-an-email-delivery.md#step-3---selecting-a-content).
 
-   >[!IMPORTANT]
-   >
-   >Der HTML-Inhalt muss vorab erstellt und anschließend in Adobe Campaign importiert werden. Der HTML-Editor ist nicht für die Inhaltserstellung vorgesehen.
+  >[!IMPORTANT]
+  >
+  >Der HTML-Inhalt muss vorab erstellt und anschließend in Adobe Campaign importiert werden. Der HTML-Editor ist nicht für die Inhaltserstellung vorgesehen.
 
-   Der Tab **[!UICONTROL Vorschau]** ermöglicht es, das Rendering für einen Empfänger zu simulieren. Die Personalisierungsfelder und die bedingten Elemente des Inhalts werden durch die im ausgewählten Profil gespeicherten Informationen ersetzt.
+  Der Tab **[!UICONTROL Vorschau]** ermöglicht es, das Rendering für einen Empfänger zu simulieren. Die Personalisierungsfelder und die bedingten Elemente des Inhalts werden durch die im ausgewählten Profil gespeicherten Informationen ersetzt.
 
-   Über die verschiedenen Schaltflächen der Symbolleiste haben Sie Zugriff auf die Standard-Parameter für die Seitenaufmachung im HTML-Format.
+  Über die verschiedenen Schaltflächen der Symbolleiste haben Sie Zugriff auf die Standard-Parameter für die Seitenaufmachung im HTML-Format.
 
-   ![](assets/s_ncs_user_wizard_email01_138.png)
+  ![](assets/s_ncs_user_wizard_email01_138.png)
 
-   Durch Klick auf die Schaltfläche **[!UICONTROL Bild]** können Sie beispielsweise Bilder aus einer lokalen Datei oder aus der in Adobe Campaign enthaltenen Bibliothek einfügen.
+  Durch Klick auf die Schaltfläche **[!UICONTROL Bild]** können Sie beispielsweise Bilder aus einer lokalen Datei oder aus der in Adobe Campaign enthaltenen Bibliothek einfügen.
 
-   ![](assets/s_ncs_user_wizard_email01_18.png)
+  ![](assets/s_ncs_user_wizard_email01_18.png)
 
-   Zugriff auf die Bilder aus der Bibliothek besteht über den Ordner **[!UICONTROL Ressourcen > Online > Öffentliche Ressourcen]** des Ordnerbaums. Siehe auch [Bilder hinzufügen](#adding-images).
+  Zugriff auf die Bilder aus der Bibliothek besteht über den Ordner **[!UICONTROL Ressourcen > Online > Öffentliche Ressourcen]** des Ordnerbaums. Siehe auch [Bilder hinzufügen](#adding-images).
 
-   Die letzte Schaltfläche in der Symbolleiste dient der Einfügung von Personalisierungsfeldern.
+  Die letzte Schaltfläche in der Symbolleiste dient der Einfügung von Personalisierungsfeldern.
 
-   >[!NOTE]
-   >
-   >Die Verwendung von Personalisierungsfeldern wird im Abschnitt [Über die Personalisierung](about-personalization.md) beschrieben.
+  >[!NOTE]
+  >
+  >Die Verwendung von Personalisierungsfeldern wird im Abschnitt [Über die Personalisierung](about-personalization.md) beschrieben.
 
-   Die Tabs am unteren Seitenrand ermöglichen die Anzeige des HTML-Quellcodes der in Erstellung begriffenen Seite und des Renderings der Nachricht beim Empfänger inklusive Personalisierung. Klicken Sie hierfür auf den Tab **[!UICONTROL Vorschau]** und wählen Sie über die Symbolleisten-Schaltfläche **[!UICONTROL Personalisierung testen...]** einen Empfänger aus. Sie können dabei einen beliebigen oder einen in der Zielgruppe enthaltenen Empfänger wählen.
+  Die Tabs am unteren Seitenrand ermöglichen die Anzeige des HTML-Quellcodes der in Erstellung begriffenen Seite und des Renderings der Nachricht beim Empfänger inklusive Personalisierung. Klicken Sie hierfür auf den Tab **[!UICONTROL Vorschau]** und wählen Sie über die Symbolleisten-Schaltfläche **[!UICONTROL Personalisierung testen...]** einen Empfänger aus. Sie können dabei einen beliebigen oder einen in der Zielgruppe enthaltenen Empfänger wählen.
 
-   ![](assets/s_ncs_user_wizard_email01_139.png)
+  ![](assets/s_ncs_user_wizard_email01_139.png)
 
-   Sie haben die Möglichkeit, die HTML-Nachricht zu validieren und den Inhalt des E-Mail-Headers zu prüfen.
+  Sie haben die Möglichkeit, die HTML-Nachricht zu validieren und den Inhalt des E-Mail-Headers zu prüfen.
 
-   ![](assets/s_ncs_user_wizard_email01_140.png)
+  ![](assets/s_ncs_user_wizard_email01_140.png)
 
 * Verwenden Sie die Schaltfläche **[!UICONTROL Öffnen]**, um Textinhalt zu importieren. Sie haben auch die Möglichkeit, den Inhalt im Tab **[!UICONTROL Textinhalt]** direkt zu erfassen. Über die verschiedenen Schaltflächen der Symbolleiste können Sie die Textaufmachung ändern. Die letzte Schaltfläche in der Symbolleiste dient der Einfügung von Personalisierungsfeldern.
 
-   ![](assets/s_ncs_user_wizard_email01_141.png)
+  ![](assets/s_ncs_user_wizard_email01_141.png)
 
-   Der Tab **[!UICONTROL Vorschau]** am unteren Seitenrand ermöglicht die Anzeige des Renderings der Nachricht beim Empfänger inklusive Personalisierung.
+  Der Tab **[!UICONTROL Vorschau]** am unteren Seitenrand ermöglicht die Anzeige des Renderings der Nachricht beim Empfänger inklusive Personalisierung.
 
-   ![](assets/s_ncs_user_wizard_email01_142.png)
+  ![](assets/s_ncs_user_wizard_email01_142.png)
 
 
 ## Definieren interaktiver Inhalte {#amp-for-email-format}
@@ -118,7 +115,7 @@ Mit Adobe Campaign können Sie das neue interaktive Format [AMP für E-Mail](ht
 
 Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](defining-interactive-content.md).
 
-## Inhaltsverwaltung (Content Management) {#using-content-management}
+## Content Management verwenden {#using-content-management}
 
 Wenn Sie den Inhalt Ihres Versands mithilfe des Content Managements erstellen, ist es erforderlich, die zu verwendende Inhaltsvorlage in den Versandeigenschaften im **[!UICONTROL Erweitert]**-Tab des Versand-Assistenten anzugeben.
 
@@ -132,7 +129,7 @@ Ein zusätzlicher Tab erlaubt nun die Erstellung eines Inhalts, der automatisch 
 >
 >Weitere Informationen zum Content Management in Adobe Campaign finden Sie in [diesem Abschnitt](about-content-management.md).
 
-## Emoticons einfügen {#inserting-emoticons}
+## Einfügen von Emoticons {#inserting-emoticons}
 
 Sie können Emoticons in Ihren E-Mail-Inhalt einfügen.
 
@@ -145,22 +142,29 @@ Sie können Emoticons in Ihren E-Mail-Inhalt einfügen.
 
 Informationen zum Anpassen der Emoticon-Liste finden Sie auf dieser [Seite](customizing-emoticon-list.md).
 
-## Bilder hinzufügen {#adding-images}
+## Hinzufügen von Bildern {#adding-images}
 
 E-Mail-Sendungen im HTML-Format können Bilder enthalten. Sie können im Versand-Assistenten entweder eine fertige HTML-Seite mit Bildern importieren oder Bilder im HTML-Editor über das **[!UICONTROL Bild]**-Symbol einfügen.
+
+
+### Schutzmechanismen {#img-guardrails}
+
+Um Leistungsprobleme zu vermeiden, dürfen in E-Mails enthaltene Bilder 100 MB nicht überschreiten. Diese standardmäßig festgelegte Beschränkung kann von der `NmsDelivery_MaxDownloadedImageSize` -Option. Adobe empfiehlt jedoch dringend, große Bilder in E-Mail-Sendungen zu vermeiden.
+
+Weitere Informationen finden Sie unter [die Liste der Optionen für das Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
+
+### Bildtypen {#img-types}
 
 Diese Bilder können:
 
 * lokal gespeichert sein oder von einem Server abgerufen werden;
 * aus der Bibliothek der öffentlichen Ressourcen in Adobe Campaign stammen;
 
-   Auf öffentliche Ressourcen kann im Knoten **[!UICONTROL Ressourcen > Online > Öffentliche Ressourcen]** des Navigationsbaums zugegriffen werden. Sie sind in einer Bibliothek zusammengefasst und können in E-Mails, Kampagnen, Aufgaben und dem Content Management verwendet werden.
+  Auf öffentliche Ressourcen kann im Knoten **[!UICONTROL Ressourcen > Online > Öffentliche Ressourcen]** des Navigationsbaums zugegriffen werden. Sie sind in einer Bibliothek zusammengefasst und können in E-Mails, Kampagnen, Aufgaben und dem Content Management verwendet werden.
 
 * Weiterführende Informationen zu freigegebenen Assets in Adobe Experience Cloud finden Sie in [diesem Abschnitt](../../integrations/using/sharing-assets-with-adobe-experience-cloud.md).
 
->[!IMPORTANT]
->
->Um E-Mails über den Versand-Assistenten mit Bildern zu versehen, muss die Konfiguration der Adobe-Campaign-Instanz die Verwaltung öffentlicher Ressourcen zulassen. Dies wird im Bereitstellungassistenten festgelegt. In [diesem Abschnitt](../../installation/using/deploying-an-instance.md) finden Sie weiterführende Hinweise zur Konfiguration.
+### Bilder einfügen und verwalten {#manage-images}
 
 Der Versand-Assistent bietet die Möglichkeit, lokale oder in der Bibliothek enthaltene Bilder in den Inhalt der Nachrichten einzuschließen. Wählen Sie hierfür die Schaltfläche **[!UICONTROL Bild]** in der Symbolleiste des HTML-Inhalts aus.
 
@@ -188,14 +192,12 @@ Wenn Sie im Versand-Assistenten einen HTML-Inhalt öffnen, der Bilder mit relati
 
 >[!IMPORTANT]
 >
->* Die Bildpfade werden entweder durch manuelles Online-Stellen der Bilder oder beim Senden der Nachrichten geändert.
+> Die Bild-URLs werden beim manuellen Hochladen oder beim Senden von Nachrichten geändert.
 > 
->* Zur Vermeidung von Leistungsproblemen sollten Bilder, die Sie von einer personalisierten URL direkt als [Anhang](attaching-files.md) herunterladen, standardmäßig maximal 100.000 Byte groß sein. Dieser empfohlene Schwellenwert kann über [die Liste der Campaign Classic-Optionen](../../installation/using/configuring-campaign-options.md#delivery) konfiguriert werden.
 
+### Anwendungsfall: Versand einer Nachricht mit Bildern {#uc-images}
 
-**Anwendungsfall: Versand einer Nachricht mit Bildern**
-
-Es soll folgende Versandnachricht mit vier Bildern erstellt werden:
+Nachfolgend finden Sie ein Beispiel für einen Versand mit vier Bildern:
 
 ![](assets/s_ncs_user_images_in_delivery_wiz_1.png)
 
@@ -253,23 +255,23 @@ Konfigurieren Sie dann die verschiedenen Elemente je nach Bedarf:
 
    * Für das 1D-Format stehen in Adobe Campaign folgende Typen zur Verfügung: Codabar, Code 128, GS1-128 (vormals EAN-128), UPC-A, UPC-E, ISBN, EAN-8, Code39, Interleaved 2 of 5, POSTNET und Royal Mail (RM4SCC).
 
-      Beispiel eines 1D-Barcodes:
+     Beispiel eines 1D-Barcodes:
 
-      ![](assets/barcode_insert_08.png)
+     ![](assets/barcode_insert_08.png)
 
    * Die Typen DataMatrix und PDF417 betreffen das 2D-Format.
 
-      Beispiel eines 2D-Barcodes:
+     Beispiel eines 2D-Barcodes:
 
-      ![](assets/barcode_insert_09.png)
+     ![](assets/barcode_insert_09.png)
 
    * Bei der Wahl eines QR-Codes ist die anzuwendende Fehlerkorrektur anzugeben. Die Quote bezeichnet den zu wiederholenden Informationsanteil und damit eine mehr oder weniger ausgeprägte Toleranz bei partieller Unlesbarkeit.
 
-      ![](assets/barcode_insert_06.png)
+     ![](assets/barcode_insert_06.png)
 
-      Beispiel eines QR-Codes:
+     Beispiel eines QR-Codes:
 
-      ![](assets/barcode_insert_12.png)
+     ![](assets/barcode_insert_12.png)
 
 1. Geben Sie die gewünschte Größe des Barcodes an. Durch Angabe eines Faktors von x1 bis x10 kann die Größe angepasst werden.
 1. Das Feld **[!UICONTROL Wert]** dient der Bestimmung des Barcode-Werts. Dieser kann einem Sonderangebot entsprechen oder durch eine Bedingungsfunktion definiert werden, beispielsweise den Wert eines kundenbezogenen Datenbankfelds.

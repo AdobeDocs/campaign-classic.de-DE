@@ -5,10 +5,10 @@ description: Erfahren Sie, wie Sie mit Adobe Campaign Transaktions-E-Mails mit i
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Transactional Messaging
 exl-id: 755d2364-f6c4-4943-97e8-3ed52a0f2665
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: ht
-source-wordcount: '627'
-ht-degree: 100%
+source-git-commit: 64a94982ea1eebc30c652e0025eb0aaa0eab1ce9
+workflow-type: tm+mt
+source-wordcount: '666'
+ht-degree: 88%
 
 ---
 
@@ -38,11 +38,13 @@ In diesem Szenario werden die Anhänge nicht vorab erstellt, sondern den ausgehe
 * Wenn der Anhang mit einer Transaktion verknüpft ist (wie im oben beschriebenen Beispiel), kann er dynamische Daten enthalten, die im Laufe des Kundenprozesses generiert werden.
 * Das Anhängen von PDF-Dateien erhöht die Sicherheit, da Sie diese verschlüsseln und über HTTPS senden können.
 
->[!NOTE]
->
->Zur Vermeidung von Leistungsproblemen sollten Bilder, die Sie von einer personalisierten URL direkt als Anhang herunterladen, standardmäßig nicht mehr als 100.000 Byte groß sein. Dieser empfohlene Schwellenwert kann über [die Liste der Campaign Classic-Optionen](../../installation/using/configuring-campaign-options.md#delivery) konfiguriert werden.
+## Empfehlungen   und Limits {#important-notes}
 
-## Empfehlungen    {#important-notes}
+Um Leistungsprobleme zu vermeiden, dürfen in E-Mails enthaltene Bilder 100 MB nicht überschreiten. Diese standardmäßig festgelegte Beschränkung kann von der `NmsDelivery_MaxDownloadedImageSize` -Option. Adobe empfiehlt jedoch dringend, große Bilder in E-Mail-Sendungen zu vermeiden.
+
+Adobe empfiehlt auch, die Größe und Anzahl der angehängten Dateien zu begrenzen. Standardmäßig können Sie nur eine Datei als Anlage zu einer E-Mail hinzufügen. Diese Schwelle kann über die `NmsDelivery_MaxRecommendedAttachments` -Option.
+
+Weitere Informationen finden Sie unter [die Liste der Optionen für das Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
 
 Bevor Sie dieses Szenario implementieren, lesen Sie die folgenden Leitlinien sorgfältig durch:
 

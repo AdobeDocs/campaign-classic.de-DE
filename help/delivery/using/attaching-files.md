@@ -6,16 +6,14 @@ badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email
 exl-id: db65e83e-276f-4163-98c3-3658a48acffc
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: ht
-source-wordcount: '1035'
-ht-degree: 100%
+source-git-commit: 64a94982ea1eebc30c652e0025eb0aaa0eab1ce9
+workflow-type: tm+mt
+source-wordcount: '1073'
+ht-degree: 92%
 
 ---
 
 # Dateien an eine E-Mail anhängen{#attaching-files}
-
-
 
 ## Über E-Mail-Anhänge {#about-email-attachments}
 
@@ -33,6 +31,14 @@ Sie haben zwei Möglichkeiten:
 >[!NOTE]
 >
 >Diese Konfiguration wird in der Regel in den Versandvorlagen vorgenommen. Weitere Informationen hierzu finden Sie im Abschnitt [Über Vorlagen](about-templates.md).
+
+## Schutzmechanismen {#attachments-guardrails}
+
+Um Leistungsprobleme zu vermeiden, dürfen in E-Mails enthaltene Bilder 100 MB nicht überschreiten. Diese standardmäßig festgelegte Beschränkung kann von der `NmsDelivery_MaxDownloadedImageSize` -Option. Adobe empfiehlt jedoch dringend, große Bilder in E-Mail-Sendungen zu vermeiden.
+
+Adobe empfiehlt auch, die Größe und Anzahl der angehängten Dateien zu begrenzen. Standardmäßig können Sie nur eine Datei als Anlage zu einer E-Mail hinzufügen. Diese Schwelle kann über die `NmsDelivery_MaxRecommendedAttachments` -Option.
+
+Weitere Informationen finden Sie unter [die Liste der Optionen für das Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
 
 ## Lokale Datei anhängen {#attaching-a-local-file}
 
@@ -113,9 +119,7 @@ Gehen Sie wie folgt vor, um diese Art von Anhang zu konfigurieren:
 
    ![](assets/s_ncs_user_wizard_email_calc_attachement_08.png)
 
->[!NOTE]
->
->Zur Vermeidung von Leistungsproblemen sollten Bilder, die Sie von einer personalisierten URL direkt als Anhang herunterladen, standardmäßig maximal 100.000 Byte groß sein. Dieser empfohlene Schwellenwert kann über [die Liste der Campaign Classic-Optionen](../../installation/using/configuring-campaign-options.md#delivery) konfiguriert werden.
+
 
 ### Berechnete Datei anhängen {#attach-a-calculated-file}
 
@@ -182,6 +186,6 @@ Im **[!UICONTROL Erweitert]**-Tab können Sie für Anhänge die folgenden Option
 * Auswahl der Empfänger, die den Anhang erhalten sollen. Kreuzen Sie die Option **[!UICONTROL Empfängerfilter bezüglich des Anhangs aktivieren]** an und geben Sie im Eingabefenster in Form eines JavaScripts das Auswahlkriterium an.
 * Erstellung eines Scripts, um den Dateinamen zu personalisieren.
 
-   Geben Sie unter Verwendung der Dropdown-Liste mit den Personalisierungsfeldern im Eingabefenster den gewünschten Text ein. In unten stehendem Beispiel wurde der Dateiname mit dem Tagesdatum und dem Nachnamen des Empfängers personalisiert.
+  Geben Sie unter Verwendung der Dropdown-Liste mit den Personalisierungsfeldern im Eingabefenster den gewünschten Text ein. In unten stehendem Beispiel wurde der Dateiname mit dem Tagesdatum und dem Nachnamen des Empfängers personalisiert.
 
-   ![](assets/s_ncs_user_wizard_email_calc_attachement_09.png)
+  ![](assets/s_ncs_user_wizard_email_calc_attachement_09.png)
