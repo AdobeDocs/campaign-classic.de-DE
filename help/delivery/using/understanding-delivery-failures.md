@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Monitoring, Deliverability
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
 source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2665'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -294,7 +294,7 @@ Folgende Regeln sind in der Standardkonfiguration vorgesehen.
 
 Bei On-Premise-Installationen und gehosteten/hybriden Installationen, die den bestehenden Campaign-MTA verwenden, enthalten diese Regeln die Liste der Zeichenketten, die von Remote-Servern zurückgegeben werden können und mit denen Sie den Fehler qualifizieren können (**Hard**, **Soft** oder **Ignoriert**).
 
-Wenn eine E-Mail fehlschlägt, gibt der Remote-Server eine Bounce-Nachricht an die in der [Plattformparameter](../../installation/using/deploying-an-instance.md). Adobe Campaign vergleicht den Inhalt jeder Bounce Message mit den in der Regelliste verzeichneten Strings und ordnet ihn einem der drei folgenden zu [Fehlertypen](#delivery-failure-types-and-reasons).
+Wenn die Zustellung einer E-Mail fehlschlägt, sendet der Remote-Server eine Bounce-Nachricht an die in den [Plattform-Parametern](../../installation/using/deploying-an-instance.md) angegebene Adresse. Adobe Campaign vergleicht den Inhalt jeder Bounce-Mail mit den Zeichenketten in der Regelliste und weist ihr dann einen der drei [Fehlertypen](#delivery-failure-types-and-reasons) zu.
 
 >[!NOTE]
 >
