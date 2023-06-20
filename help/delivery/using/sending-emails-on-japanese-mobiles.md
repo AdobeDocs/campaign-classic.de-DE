@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email, Email Design
 exl-id: 44634227-2340-49c4-b330-740c739ea551
 source-git-commit: 403227736e2e8c606204e9324d0afb5b71be62a5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '760'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ Aus diesem Grund müssen Sie:
 
 >[!NOTE]
 >
->Bei der Erstellung der Nachricht müssen die für die einzelnen Benutzer spezifischen Einschränkungen berücksichtigt werden. Weitere Informationen finden Sie in der entsprechenden Produktdokumentation.
+>Die für jeden Anbieter spezifischen Einschränkungen müssen bei der Erstellung der Nachricht berücksichtigt werden. Informationen dazu finden sich in der jeweiligen Produktdokumentation.
 
 
 ## Testen des E-Mail-Inhalts {#testing-the-email-content}
@@ -60,7 +60,7 @@ Verwenden Sie hierzu im **[!UICONTROL Vorschau]**-Tab des Fensters zur Inhaltsbe
 * prüfen, ob die Anzahl an Bildern in der Nachricht nicht die durch das Format vorgegebene Höchstgrenze von maximal 20 Bildern überschreitet;
 * prüfen, ob die Gesamtgröße nicht den Grenzwert von 100 KB übersteigt.
 
-   ![](assets/deco-mail_06.png)
+  ![](assets/deco-mail_06.png)
 
 ### Ausführen der Typologieregel {#running-typology-rule}
 
