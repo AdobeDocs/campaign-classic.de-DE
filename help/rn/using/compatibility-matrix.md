@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: 403227736e2e8c606204e9324d0afb5b71be62a5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '802'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -166,7 +166,6 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 >* RDBMS-Treiber muss der RDBMS-Server-Version entsprechen.
 >
 >* PostgreSQL ist das RDBMS für gehostete Umgebungen.
-
 
 ## CRM-Connectoren{#CRMconnectors}
 
@@ -369,7 +368,7 @@ Für die Verwendung der [Campaign-Client-Konsole](../../installation/using/insta
 
 Microsoft Edge WebView2 Runtime Die neueste Version ist für die Campaign-Client-Konsole erforderlich.
 
-Microsoft Edge WebView2 kann von der [Microsoft-Entwickler-Site](https://www.adobe.com/go/acc-ms-webview2-runtime-download) heruntergeladen werden
+Microsoft Edge WebView2 kann von der [Microsoft-Entwickler-Site](https://www.adobe.com/go/acc-ms-webview2-runtime-download_de) heruntergeladen werden
 
 
 ## Mobile SDK{#MobileSDK}
