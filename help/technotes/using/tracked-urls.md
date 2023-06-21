@@ -6,9 +6,9 @@ badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classi
 hide: true
 hidefromtoc: true
 exl-id: e7d4331b-7149-4768-8e46-2e2911319074
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: ht
-source-wordcount: '361'
+source-git-commit: 403d0b7df74b2c958bea9a2d718a15f597ca0d9c
+workflow-type: tm+mt
+source-wordcount: '351'
 ht-degree: 100%
 
 ---
@@ -31,11 +31,11 @@ Kunden, deren Umgebung auf einer der folgenden Versionen basiert, sind mögliche
 
 * Gold Standard 8 bis 11. [Mehr dazu](../../rn/using/gold-standard.md#gs-8)
 * Campaign 21.1.1 (Build 9277) bis Version 21.1.2 (Build 9282). [Mehr dazu](../../rn/using/latest-release.md)
-* Campaign 20.3.1 (Build 9228) bis Version 20.3.3 (Build 9234). [Mehr dazu](../../rn/using/release--2020.md#release-20-3)
-* Campaign 20.2.1 (Build 9178) bis Version 20.2.4 (Build 9187). [Mehr dazu](../../rn/using/release--2020.md#release-20-2)
-* Campaign 20.1.1 (Build 9122) bis Version 21.1.3 (Build 9124). [Mehr dazu](../../rn/using/release--2020.md#release-20-1)
-* Campaign 19.2.2 (Build 9080) bis Version 19.2.3 (Build 9081). [Mehr dazu](../../rn/using/release--2019.md#release-19-2)
-* Campaign 19.1.5 (Build 9033) bis Version 19.1.7 (Build 9036). [Weitere Informationen](../../rn/using/release--2019.md#release-19-1)
+* Campaign 20.3.1 (Build 9228) bis Version 20.3.3 (Build 9234).
+* Campaign 20.2.1 (Build 9178) bis Version 20.2.4 (Build 9187).
+* Campaign 20.1.1 (Build 9122) bis Version 21.1.3 (Build 9124). 
+* Campaign 19.2.2 (Build 9080) bis Version 19.2.3 (Build 9081).
+* Campaign 19.1.5 (Build 9033) bis Version 19.1.7 (Build 9036).
 
 
 [In diesem Abschnitt](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version) erfahren Sie, wie Sie Ihre Version überprüfen.
@@ -59,6 +59,7 @@ Gehen Sie dazu wie folgt vor:
 >[!NOTE]
 >
 >Mit der Datei **config-`<instance>`.xml** werden die in **serverConf.xml** enthaltenen Einstellungen überschrieben. Sofern der Eintrag **signEmailLinks** in **config-`<instance>`.xml** vorhanden ist (wobei **instance** den Namen Ihrer Instanz angibt), muss dieser ebenfalls in **false** geändert werden.
+>
 
 **Wie wirkt sich das aus?**
 
@@ -69,3 +70,4 @@ Nach Abschluss der Aktualisierung funktionieren alle Links wieder ordnungsgemä�
 >[!NOTE]
 >
 >Wenden Sie sich bei Fragen zu diesen Änderungen an die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>
