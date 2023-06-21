@@ -6,9 +6,9 @@ title: Campaign Classic v7 – Handbuch
 user-guide-description: Mit Adobe Campaign können Sie umfangreiche Kundendaten verwenden, um dynamische Kampagnen, die Kunden tatsächlich wünschen, zu erstellen, zu koordinieren und bereitzustellen. Über E-Mail, mobile Kanäle, Offline-Kanäle und mehr.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 0f831817fc2e6b7b1d95a71f4ea08ec104268d11
-workflow-type: ht
-source-wordcount: '2531'
+source-git-commit: 88ee8d1575f6397a35fb6f7412cd08119a75c131
+workflow-type: tm+mt
+source-wordcount: '2529'
 ht-degree: 100%
 
 ---
@@ -24,9 +24,7 @@ ht-degree: 100%
    + Frühere Versionen {#previous-releases}
       + [[!DNL Gold Standard]](rn/using/gold-standard.md)
       + [2021](rn/using/release--2021.md)
-      + [2020](rn/using/release--2020.md)
-      + [2019](rn/using/release--2019.md)
-      + [2018](rn/using/release--2018.md)
+      + [2022](rn/using/release--2022.md)
    + [Eingestellte Funktionen](rn/using/deprecated-features.md)
    + [Kompatibilitätsmatrix](rn/using/compatibility-matrix.md)
 + Erste Schritte {#getting-started}
@@ -590,12 +588,12 @@ ht-degree: 100%
       + Hosting-Modelle{#hosting-models-lp}
          + [Hosting-Modelle für Campaign](installation/using/hosting-models.md)
          + [Funktionsmatrix](installation/using/capability-matrix.md)
-   + Freigabetypen {#deployment-types-}
-      + [Über Freigabetypen](installation/using/about-deployment-types.md)
-      + [Eigenständige Freigabe](installation/using/standalone-deployment.md)
-      + [Standardfreigabe](installation/using/standard-deployment.md)
-      + [Enterprise-Freigabe](installation/using/enterprise-deployment.md)
-      + [Mid-Sourcing-Freigabe](installation/using/mid-sourcing-deployment.md)
+   + Bereitstellungstypen {#deployment-types-}
+      + [Über Bereitstellungstypen](installation/using/about-deployment-types.md)
+      + [Eigenständige Bereitstellung](installation/using/standalone-deployment.md)
+      + [Standardbereitstellung](installation/using/standard-deployment.md)
+      + [Enterprise-Bereitstellung](installation/using/enterprise-deployment.md)
+      + [Mid-Sourcing-Bereitstellung](installation/using/mid-sourcing-deployment.md)
       + [Power Booster und Power Cluster](installation/using/power-booster-and-power-cluster.md)
    + Einstellungen für Sicherheit und Datenschutz {#security-privacy}
       + [Checkliste für Sicherheit und Datenschutz](installation/using/get-started-security-privacy.md)
@@ -606,7 +604,7 @@ ht-degree: 100%
       + [Sicherheitseinstellungen des Servers](installation/using/server-configuration.md)
       + [Sicherheitseinstellungen des Webservers](installation/using/web-server-configuration.md)
    + Campaign installieren (On-Premise){#install-campaign-on-prem}
-      + Implementierungsrichtlinien {#deployment-guidelines}
+      + Bereitstellungsrichtlinien {#deployment-guidelines}
          + [Datenbank-Server](installation/using/database.md)
          + [Anwendungs-Server](installation/using/application-server.md)
          + [Messaging-Server](installation/using/messaging-server.md)
