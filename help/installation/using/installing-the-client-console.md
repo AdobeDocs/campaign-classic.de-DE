@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
-source-git-commit: 0bea34e2db2b54bdd2a6fed80b47d473c89f631e
+source-git-commit: 45bf9d76dc41fd8cecfaab3f258856861201db3f
 workflow-type: tm+mt
 source-wordcount: '1163'
 ht-degree: 32%
@@ -32,9 +32,9 @@ Lesen Sie die folgenden Details, um zu verstehen, was für Ihre Implementierung 
 
 >[!CAUTION]
 >
->Die Campaign Client-Konsole und der Campaign-Anwendungsserver müssen ausgeführt werden **auf derselben Produktversion**. Adobe empfiehlt außerdem dringend die Verwendung der **derselbe Produktaufbau**. Erfahren Sie, wie Sie Ihre Campaign-Client- und -Server-Versionen überprüfen in [diesem Abschnitt](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+>* Die Campaign Client-Konsole und der Campaign-Anwendungsserver müssen ausgeführt werden **auf derselben Produktversion**. Adobe empfiehlt außerdem dringend die Verwendung der **derselbe Produktaufbau**. Erfahren Sie, wie Sie Ihre Campaign-Client- und -Server-Versionen überprüfen in [diesem Abschnitt](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 >
->Der Zugriff auf den Installationsordner, in dem die Konsole installiert ist, sollte auf den vorgesehenen Benutzer beschränkt sein, um sicherzustellen, dass die Schreibberechtigungen entsprechend eingeschränkt sind.
+>* Der Zugriff auf den Installationsordner, in dem die Konsole installiert ist, sollte auf den vorgesehenen Benutzer beschränkt sein, um sicherzustellen, dass die Schreibberechtigungen entsprechend eingeschränkt sind.
 
 
 
