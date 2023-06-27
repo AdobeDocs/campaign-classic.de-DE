@@ -7,16 +7,14 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
-source-git-commit: 403227736e2e8c606204e9324d0afb5b71be62a5
+source-git-commit: 0bea34e2db2b54bdd2a6fed80b47d473c89f631e
 workflow-type: tm+mt
-source-wordcount: '1137'
+source-wordcount: '1163'
 ht-degree: 32%
 
 ---
 
 # Installieren und Aktualisieren der Campaign-Clientkonsole{#installing-the-client-console}
-
-
 
 Die Client-Konsole in Campaign ist ein Rich-Client, mit dem Sie eine Verbindung zu Ihren Campaign-Anwendungs-Servern herstellen können.
 
@@ -35,12 +33,16 @@ Lesen Sie die folgenden Details, um zu verstehen, was für Ihre Implementierung 
 >[!CAUTION]
 >
 >Die Campaign Client-Konsole und der Campaign-Anwendungsserver müssen ausgeführt werden **auf derselben Produktversion**. Adobe empfiehlt außerdem dringend die Verwendung der **derselbe Produktaufbau**. Erfahren Sie, wie Sie Ihre Campaign-Client- und -Server-Versionen überprüfen in [diesem Abschnitt](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+>
+>Der Zugriff auf den Installationsordner, in dem die Konsole installiert ist, sollte auf den vorgesehenen Benutzer beschränkt sein, um sicherzustellen, dass die Schreibberechtigungen entsprechend eingeschränkt sind.
+
+
 
 ## Installation der Microsoft Edge Webview2-Laufzeitumgebung {#webview}
 
 Ab der Build-Version 7.3 von Campaign Classic ist die Installation der Microsoft Edge Webview 2-Laufzeitumgebung für jede Konsolen-Installation erforderlich.
 
-WebView wird standardmäßig als Teil des Betriebssystems Windows 11 installiert. Wenn es nicht bereits auf Ihrem System vorhanden ist, werden Sie vom Installationsprogramm der Campaign Classic Console aufgefordert, es von herunterzuladen. [Microsoft Developer-Website](https://www.adobe.com/go/acc-ms-webview2-runtime-download). Beachten Sie, dass der Download-Link nicht mit Internet Explorer 11 funktioniert, da Microsoft die Unterstützung dieses Browsers eingestellt hat. Stellen Sie sicher, dass Sie einen anderen Browser verwenden, um auf den Link zuzugreifen.
+WebView wird standardmäßig als Teil des Betriebssystems Windows 11 installiert. Wenn es nicht bereits auf Ihrem System vorhanden ist, werden Sie vom Installationsprogramm der Campaign Classic Console aufgefordert, es von herunterzuladen. [Microsoft Developer-Website](https://www.adobe.com/go/acc-ms-webview2-runtime-download_de). Beachten Sie, dass der Download-Link nicht mit Internet Explorer 11 funktioniert, da Microsoft die Unterstützung dieses Browsers eingestellt hat. Stellen Sie sicher, dass Sie einen anderen Browser verwenden, um auf den Link zuzugreifen.
 
 ## Von Adobe gehostete Implementierungen {#hosted-customers}
 
