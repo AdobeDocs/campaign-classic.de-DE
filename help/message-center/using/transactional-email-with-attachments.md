@@ -6,9 +6,9 @@ badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classi
 feature: Transactional Messaging
 exl-id: 755d2364-f6c4-4943-97e8-3ed52a0f2665
 source-git-commit: 64a94982ea1eebc30c652e0025eb0aaa0eab1ce9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '666'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -38,13 +38,13 @@ In diesem Szenario werden die Anhänge nicht vorab erstellt, sondern den ausgehe
 * Wenn der Anhang mit einer Transaktion verknüpft ist (wie im oben beschriebenen Beispiel), kann er dynamische Daten enthalten, die im Laufe des Kundenprozesses generiert werden.
 * Das Anhängen von PDF-Dateien erhöht die Sicherheit, da Sie diese verschlüsseln und über HTTPS senden können.
 
-## Empfehlungen   und Limits {#important-notes}
+## Empfehlungen   und Schutzmechanismen {#important-notes}
 
-Um Leistungsprobleme zu vermeiden, dürfen in E-Mails enthaltene Bilder 100 MB nicht überschreiten. Diese standardmäßig festgelegte Beschränkung kann von der `NmsDelivery_MaxDownloadedImageSize` -Option. Adobe empfiehlt jedoch dringend, große Bilder in E-Mail-Sendungen zu vermeiden.
+Um Leistungsprobleme zu vermeiden, dürfen in E-Mails enthaltene Bilder 100 MB nicht überschreiten. Diese standardmäßig festgelegte Beschränkung kann in der Option `NmsDelivery_MaxDownloadedImageSize` geändert werden. Adobe empfiehlt jedoch dringend, große Bilder in E-Mail-Sendungen zu vermeiden.
 
-Adobe empfiehlt auch, die Größe und Anzahl der angehängten Dateien zu begrenzen. Standardmäßig können Sie nur eine Datei als Anlage zu einer E-Mail hinzufügen. Diese Schwelle kann über die `NmsDelivery_MaxRecommendedAttachments` -Option.
+Adobe empfiehlt außerdem, die Größe und Anzahl der angehängten Dateien zu begrenzen. Standardmäßig kann nur eine Datei als Anhang zu einer E-Mail hinzugefügt werden. Dieser Schwellenwert kann in der Option `NmsDelivery_MaxRecommendedAttachments` konfiguriert werden.
 
-Weitere Informationen finden Sie unter [die Liste der Optionen für das Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
+Weitere Informationen finden Sie in der [Liste der Campaign Classic-Optionen](../../installation/using/configuring-campaign-options.md#delivery).
 
 Bevor Sie dieses Szenario implementieren, lesen Sie die folgenden Leitlinien sorgfältig durch:
 
