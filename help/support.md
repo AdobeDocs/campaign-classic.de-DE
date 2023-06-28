@@ -5,9 +5,9 @@ description: Benötigen Sie Unterstützung für Campaign Classic? Hier sind Sie 
 hidefromtoc: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
 source-git-commit: a119378e4285d3258a9b4f1f68c0b625264e5d37
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '755'
+ht-degree: 100%
 
 ---
 
@@ -140,7 +140,7 @@ Treten Sie der Campaign Classic-Community bei: Suchen Sie nach Antworten in vorh
 
 ### Aufrufen des Campaign-Download-Centers
 
-Als Campaign-Administrator können Sie [diese Seite](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) , um auf die Softwareverteilung des Experience Cloud zuzugreifen.
+Als Campaign-Administratorin bzw. -Administrator können Sie über [diese Seite](https://experience.adobe.com/#/downloads/content/software-distributicampaign.html) auf die Software-Verteilung von Experience Cloud zugreifen.
 
 ### Erstellen Sie ein Ticket oder starten Sie einen Chat
 
