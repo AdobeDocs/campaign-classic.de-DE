@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
 source-git-commit: 43158445f688f4c2612d4dad76f2243b2e358b35
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '978'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -115,9 +115,9 @@ Wählen Sie dazu die Option **[!UICONTROL Nachrichtenkodierung erzwingen (Codepa
 
 ## Bounce Messages verwalten {#managing-bounce-emails}
 
-Im Tab **[!UICONTROL SMTP]** der Versandeigenschaften lässt sich der Umgang mit Bounce Messages konfigurieren.
+Auf der Registerkarte **[!UICONTROL SMTP]** der Versandeigenschaften lässt sich der Umgang mit Bounce Messages konfigurieren.
 
-Bounce Messages werden standardmäßig im [Standardfehler der Plattform](../../installation/using/deploying-an-instance.md#parameters-for-delivered-emails-parameters-for-delivered-emails), Sie können jedoch eine bestimmte Fehleradresse für einen Versand definieren.
+Standardmäßig gehen Bounce Messages im [Standard-Fehlerpostfach der Plattform](../../installation/using/deploying-an-instance.md#parameters-for-delivered-emails-parameters-for-delivered-emails) ein. Es besteht jedoch die Möglichkeit, für einen Versand durch Abwählen der Standardoption eine spezifische Fehleradresse anzugeben.
 
 Sie können eine weitere Adresse angeben, die es ermöglicht, die Unzustellbarkeitsursache derjenigen E-Mails zu untersuchen, bei denen das Programm sie nicht automatisch erkannt hat. Bei beiden Feldern können Sie durch Klick auf das entsprechende Symbol **Personalisierungsfelder hinzufügen**.
 
