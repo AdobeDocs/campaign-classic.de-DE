@@ -5,16 +5,18 @@ description: Weiterführende Informationen zu Campaign Classic-Versionen 2022
 feature: Overview
 role: User
 level: Beginner
-source-git-commit: 88ee8d1575f6397a35fb6f7412cd08119a75c131
+source-git-commit: f2dc0947a3b1ed17cbc3d88176e7921e80ca1bb5
 workflow-type: tm+mt
-source-wordcount: '1997'
+source-wordcount: '2027'
 ht-degree: 100%
 
 ---
 
 # Versionen 2022{#release-2022}
 
-## ![](assets/do-not-localize/orange_2.png) Version 7.3.1 – Build 9352 {#release-7-3-1}
+## Version 7.3.1 – Build 9352 {#release-7-3-1}
+
+[!BADGE Veraltet]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=de#rn-statuses" tooltip="Veraltet"}
 
 _1. Juli 2022_
 
@@ -82,7 +84,9 @@ Weitere Informationen finden Sie in der [Kompatibilitätsmatrix für Campaign](.
 * Fehlerkorrektur – Bilder können jetzt während der Nachrichtenvorbereitung von einem externen Server im Chunk-Modus hochgeladen werden. (NEO-40307)
 * Ein Fehler wurde behoben, wodurch der Versand an eine größere Anzahl von Empfangenden als erwartet gesendet wurde. (NEO-45108)
 
-## ![](assets/do-not-localize/green_2.png) Version 7.2.2 – Build 9349 {#release-7-2-2}
+## Version 7.2.2 – Build 9349 {#release-7-2-2}
+
+[!BADGE Veraltet]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=de#rn-statuses" tooltip="Veraltet"}
 
 _1. März 2022_
 
@@ -104,7 +108,9 @@ _1. März 2022_
 * Fehlerkorrektur – Beim Aktualisieren des Zustellbarkeits-Workflows tritt jetzt kein Fehler mehr auf, auch wenn mehr als 1.000 Broadlogs gleichzeitig verwendet werden. (NEO-40276)
 * Fehlerkorrektur – Die Versandindikatoren &quot;Öffnungsverhältnis&quot; und &quot;Klick-Verhältnis&quot; werden jetzt automatisch aktualisiert. (NEO-43253)
 
-## ![](assets/do-not-localize/limited_2.png) Version 7.2.1 – Build 9346 {#release-7-2-1}
+## Version 7.2.1 – Build 9346 {#release-7-2-1}
+
+[!BADGE Veraltet]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=de#rn-statuses" tooltip="Veraltet"}
 
 _10. Januar 2022_
 

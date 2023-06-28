@@ -6,9 +6,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 0cd6bf20-da72-4cf0-9f5d-d4e8acdd324d
-source-git-commit: a06623611ff3f8d9dfb5d498e01686e12a924923
+source-git-commit: f2dc0947a3b1ed17cbc3d88176e7921e80ca1bb5
 workflow-type: tm+mt
-source-wordcount: '2547'
+source-wordcount: '2597'
 ht-degree: 100%
 
 ---
@@ -19,8 +19,11 @@ ht-degree: 100%
 
 >[!CAUTION]
 >Verwenden Sie das Menü **[!UICONTROL Hilfe > Über…]**, um Ihre Adobe Campaign[-Version und -Build-Nummer](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version) herauszufinden. Beachten Sie jedoch, dass für alle auf dieser Seite aufgelisteten Builds zwischen 9277 und 9343 als Versionsnummer 7.0 statt 7.1 angezeigt wird.
+> 
 
-### ![](assets/do-not-localize/limited_2.png) Version 21.1.4 – Build 9343 {#release-21-1-4-build-9343}
+### Version 21.1.4 – Build 9343 {#release-21-1-4-build-9343}
+
+[!BADGE Veraltet]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=de#rn-statuses" tooltip="Veraltet"}
 
 _8. Oktober 2021_
 
@@ -32,7 +35,9 @@ _8. Oktober 2021_
 
 * Fehlerkorrektur - Beim Versand mit mehr als einer IP-Affinität in einer Multi-Mid-Sourcing-Instanz tritt jetzt der Fehler &#39;IP-Affinität xxx nicht in Mid-Server xxx gefunden&#39; nicht mehr auf. (NEO-37514)
 
-### ![](assets/do-not-localize/limited_2.png) Version 21.1.4 – Build 9342 {#release-21-1-4-build-9342}
+### Version 21.1.4 – Build 9342 {#release-21-1-4-build-9342}
+
+[!BADGE Veraltet]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=de#rn-statuses" tooltip="Veraltet"}
 
 _7. September 2021_
 
@@ -49,7 +54,7 @@ _7. September 2021_
 **Sonstige Änderungen**
 
 * Es wurde eine Fehlfunktion behoben, die in Version 21.1.3 mit der Einführung der neuen Schutzmaßnahme des Abrechnungs-Workflows auftrat. Der Abrechnungs-Workflow wurde auf falschen Instanzen ausgeführt und stürzte beim Versuch ab, den nicht generierten Abrechnungsbericht zu senden. Sie müssen den Workflow manuell neu starten, damit die Fehlerbehebung angewendet wird.
-* Bereits veraltete Microsoft CRM-Connectoren (Office 365- und On-Premise-Implementierungen) wurden aus der Benutzeroberfläche entfernt. [Mehr dazu](../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft)
+* Bereits veraltete Microsoft CRM-Connectoren (Office 365- und On-Premise-Bereitstellungen) wurden aus der Benutzeroberfläche entfernt. [Mehr dazu](../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft)
 * Nach der Migration zu Tomcat 8 wurde das IIS-Setup-Skript aktualisiert, um Probleme mit der IIS-Integration zu beheben. (NEO-31019)
 * In den Daten- und Schema-Tabs des Fensters **Population ansehen** der Workflow-Transitionen wurde die Identifizierung der Datenquelle verbessert.
 * Fehlende Datenbankindizes wurden den folgenden Schemata hinzugefügt, um Probleme bei der Datenbankaktualisierung zu vermeiden: xtk:rights, nms:dlvExclusion, nms:seedMember, nms:trackingUrl
@@ -66,7 +71,9 @@ _7. September 2021_
 * Fehlerkorrektur – Variablen können jetzt in einer Workflow-Aktivität vom Typ **Anreicherung** verwendet werden, wenn die eingehende Transition aus einer FDA-Datenquelle stammt.
 * Fehlerkorrektur – URLs in E-Mail-Nachrichten werden jetzt nicht mehr beschädigt.
 
-### ![](assets/do-not-localize/limited_2.png) Version 21.1.3 – Build 9330 {#release-21-1-3-build-9330}
+### Version 21.1.3 – Build 9330 {#release-21-1-3-build-9330}
+
+[!BADGE Veraltet]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=de#rn-statuses" tooltip="Veraltet"}
 
 _5. Juni 2021_
 
@@ -222,14 +229,18 @@ Weitere Informationen finden Sie auf der Seite [Eingestellte und entfernte Funkt
 * Fehlerkorrektur – Das Durchführen eines Versandes mit einer Gruppe von Testsendungen ist jetzt zuverlässig möglich. Ein bestimmter Verbindungsmechanismus führte dazu, dass die Versandpersonalisierung fehlschlug. (NEO-14391)
 * Fehlerkorrektur – Die Warnungsaktivität sendet jetzt einen Warnhinweis, wenn eine Abfrage und eine Anreicherungsaktivität an die Versandtabelle gerichtet ist. (NEO-25157)
 
-### ![](assets/do-not-localize/red_2.png) Version 21.1.2 – Build 9282 {#release-21-1-2-build-9282}
+### Version 21.1.2 – Build 9282 {#release-21-1-2-build-9282}
+
+[!BADGE Veraltet]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=de#rn-statuses" tooltip="Veraltet"}
 
 _15. April 2021_
 
 * Die Verwaltung von Passwörtern wurde verbessert, um die Sicherheit zu optimieren.
 * Fehlerkorrektur – Es wurde ein Problem behoben, das zum Absturz des MTA führen konnte.
 
-### ![](assets/do-not-localize/red_2.png) Version 21.1.1 – Build 9277 {#release-21-1-1-build-9277}
+### Version 21.1.1 – Build 9277 {#release-21-1-1-build-9277}
+
+[!BADGE Veraltet]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=de#rn-statuses" tooltip="Veraltet"}
 
 _22. Februar 2021_
 

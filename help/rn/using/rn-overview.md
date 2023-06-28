@@ -7,10 +7,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
-workflow-type: ht
-source-wordcount: '933'
-ht-degree: 100%
+source-git-commit: f2dc0947a3b1ed17cbc3d88176e7921e80ca1bb5
+workflow-type: tm+mt
+source-wordcount: '932'
+ht-degree: 97%
 
 ---
 
@@ -24,15 +24,26 @@ Adobe Campaign Classic veröffentlicht regelmäßig Produktaktualisierungen, die
 
 Jeder neue Build weist einen Status auf, der durch eine bestimmte Farbe in den [Versionshinweisen](latest-release.md) gekennzeichnet ist.
 
-![](assets/do-not-localize/green3.png) **Allgemeine Verfügbarkeit** (GA) – Aktueller stabiler Build, in der Produktion validiert und von Adobe empfohlen.
 
-![](assets/do-not-localize/limited3.png) **Eingeschränkte Verfügbarkeit** (LA) – Implementierung nur auf Anfrage.
+| Status | Beschreibung |
+|---|---|
+| [!BADGE Allgemeine Verfügbarkeit]{type=Positive} | Neuester stabiler Build, in der Produktion validiert und von Adobe empfohlen. |
+| [!BADGE Eingeschränkte Verfügbarkeit]{type=Neutral} | Nur On-Demand-Bereitstellung. |
+| [!BADGE Veröffentlichungskandidat]{type=Informative} | Neuester Build mit neuen Funktionen. |
+| [!BADGE Nicht mehr verfügbar]{type=Caution} | Keine Implementierung. Keine Fehlerbehebung. Es wird empfohlen, auf einen neueren Build zu aktualisieren. |
+| [!BADGE Veraltet]{type=negative} | Keine Implementierung. Keine Fehlerbehebung. Bestehende Implementierungen müssen aktualisiert werden. |
 
-![](assets/do-not-localize/blue3.png) **Veröffentlichungskandidat** (RC) – Aktuelle Version mit neuen Funktionen.
+<!--
+![](assets/do-not-localize/green3.png) **General Availability** (GA) - Latest stable build, validated in production, and recommended by Adobe. 
 
-![](assets/do-not-localize/orange3.png) **Nicht mehr verfügbar** - Keine Implementierung. Keine Fehlerbehebung. Es wird empfohlen, auf einen neueren Build zu aktualisieren.
+![](assets/do-not-localize/limited3.png) **Limited Availability** (LA) - On-demand deployment only.
 
-![](assets/do-not-localize/red3.png) **Eingestellt** – Keine Implementierung. Keine Fehlerbehebung. Bestehende Implementierungen müssen aktualisiert werden.
+![](assets/do-not-localize/blue3.png) **Release Candidate** (RC) - Latest build with new capabilities.
+
+![](assets/do-not-localize/orange3.png) **No longer available** - No deployment. No bug fix. Update to a newer build is recommended.
+
+![](assets/do-not-localize/red3.png) **Deprecated** - No deployment. No bug fix. Existing implementations must be upgraded.
+-->
 
 ## Versionszyklus{#rn-cycle}
 
