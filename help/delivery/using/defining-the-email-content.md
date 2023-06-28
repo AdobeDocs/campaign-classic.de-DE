@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email Design
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
 source-git-commit: 64a94982ea1eebc30c652e0025eb0aaa0eab1ce9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2017'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -27,14 +27,14 @@ Informationen zum Einfügen und Verwenden von Personalisierungsfeldern finden Si
 
 >[!NOTE]
 >
->* Die Absenderadresse wird standardmäßig für Antworten verwendet.
->* Die Header-Parameter dürfen nicht leer sein. Standardmäßig enthalten sie die Werte, die beim Konfigurieren des Softwareverteilungs-Assistenten eingegeben werden. Weiterführende Informationen finden Sie in [diesem Abschnitt](../../installation/using/deploying-an-instance.md).
+>* Die Absenderadresse wird standardmäßig auch als Antwortadresse verwendet.
+>* Die Header-Parameter dürfen nicht leer sein. Standardmäßig enthalten sie die Werte, die beim Konfigurieren des Bereitstellungsassistenten eingegeben werden. Weiterführende Informationen finden Sie in [diesem Abschnitt](../../installation/using/deploying-an-instance.md).
 >* Die Angabe der Absenderadresse ist für den E-Mail-Versand zwingend erforderlich (gemäß RFC-Standard).
 >* Adobe Campaign führt eine Syntax-Prüfung der angegebenen E-Mail-Adressen durch.
 
 >[!CAUTION]
 >
->Um Probleme mit der Zustellbarkeit zu vermeiden, müssen die E-Mail-Konten vorhanden und überwacht werden, die den für Sendungen und Antworten angegebenen Adressen entsprechen. Wenden Sie sich an Ihren Systemadministrator.
+>Um Probleme mit der Zustellbarkeit zu vermeiden, müssen die E-Mail-Konten vorhanden sein und überwacht werden, die den für Sendungen und Antworten angegebenen Adressen entsprechen. Wenden Sie sich an Ihre Systemadministratorin bzw. Ihren Systemadministrator.
 
 ## Nachrichtenbetreff {#message-subject}
 
@@ -115,7 +115,7 @@ Mit Adobe Campaign können Sie das neue interaktive Format [AMP für E-Mail](ht
 
 Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](defining-interactive-content.md).
 
-## Content Management verwenden {#using-content-management}
+## Verwenden von Content-Management {#using-content-management}
 
 Wenn Sie den Inhalt Ihres Versands mithilfe des Content Managements erstellen, ist es erforderlich, die zu verwendende Inhaltsvorlage in den Versandeigenschaften im **[!UICONTROL Erweitert]**-Tab des Versand-Assistenten anzugeben.
 
@@ -144,14 +144,14 @@ Informationen zum Anpassen der Emoticon-Liste finden Sie auf dieser [Seite](cust
 
 ## Hinzufügen von Bildern {#adding-images}
 
-E-Mail-Sendungen im HTML-Format können Bilder enthalten. Sie können im Versand-Assistenten entweder eine fertige HTML-Seite mit Bildern importieren oder Bilder im HTML-Editor über das **[!UICONTROL Bild]**-Symbol einfügen.
+E-Mail-Sendungen im HTML-Format können Bilder enthalten. Sie können im Versand-Assistenten entweder eine fertige HTML-Seite mit Bildern importieren oder Bilder im HTML-Editor über das Symbol **[!UICONTROL Bild]** einfügen.
 
 
 ### Schutzmechanismen {#img-guardrails}
 
-Um Leistungsprobleme zu vermeiden, dürfen in E-Mails enthaltene Bilder 100 MB nicht überschreiten. Diese standardmäßig festgelegte Beschränkung kann von der `NmsDelivery_MaxDownloadedImageSize` -Option. Adobe empfiehlt jedoch dringend, große Bilder in E-Mail-Sendungen zu vermeiden.
+Um Leistungsprobleme zu vermeiden, dürfen in E-Mails enthaltene Bilder 100 MB nicht überschreiten. Diese standardmäßig festgelegte Beschränkung kann in der Option `NmsDelivery_MaxDownloadedImageSize` geändert werden. Adobe empfiehlt jedoch dringend, große Bilder in E-Mail-Sendungen zu vermeiden.
 
-Weitere Informationen finden Sie unter [die Liste der Optionen für das Campaign Classic](../../installation/using/configuring-campaign-options.md#delivery).
+Weitere Informationen finden Sie in der [Liste der Campaign Classic-Optionen](../../installation/using/configuring-campaign-options.md#delivery).
 
 ### Bildtypen {#img-types}
 
@@ -164,7 +164,7 @@ Diese Bilder können:
 
 * Weiterführende Informationen zu freigegebenen Assets in Adobe Experience Cloud finden Sie in [diesem Abschnitt](../../integrations/using/sharing-assets-with-adobe-experience-cloud.md).
 
-### Bilder einfügen und verwalten {#manage-images}
+### Einfügen und Verwalten von Bildern {#manage-images}
 
 Der Versand-Assistent bietet die Möglichkeit, lokale oder in der Bibliothek enthaltene Bilder in den Inhalt der Nachrichten einzuschließen. Wählen Sie hierfür die Schaltfläche **[!UICONTROL Bild]** in der Symbolleiste des HTML-Inhalts aus.
 
@@ -186,7 +186,7 @@ So verwalten Sie Bilder über den Versand-Assistenten:
 * Sie können Bilder manuell hochladen, ohne die Versandanalyse abwarten zu müssen. Klicken Sie dazu auf den Link **[!UICONTROL Bilder sofort online stellen...]**.
 * Sie können einen anderen Pfad für Zugriff auf die Bilder auf dem Tracking-Server angeben. Geben Sie dazu einen Pfad in das Feld **[!UICONTROL URL der Bilder]** ein. Dieser Wert setzt den in den Parametern des Installationsassistenten definierten Wert außer Kraft.
 
-Wenn Sie im Versand-Assistenten einen HTML-Inhalt öffnen, der Bilder mit relativen Pfadnamen enthält, wird Ihnen je nach Versandparametern vorgeschlagen, die Bilder sofort online zu stellen.
+Wenn Sie im Versandassistenten HTML-Inhalte mit eingebundenen Bildern öffnen, erhalten Sie eine Nachricht, die Ihnen die Möglichkeit gibt, die Bilder gemäß den Versandparametern sofort hochzuladen.
 
 ![](assets/s_ncs_user_email_del_img_local.png)
 
@@ -197,7 +197,7 @@ Wenn Sie im Versand-Assistenten einen HTML-Inhalt öffnen, der Bilder mit relati
 
 ### Anwendungsfall: Versand einer Nachricht mit Bildern {#uc-images}
 
-Nachfolgend finden Sie ein Beispiel für einen Versand mit vier Bildern:
+Hier ist ein Beispiel für einen Versand mit vier Bildern zu sehen:
 
 ![](assets/s_ncs_user_images_in_delivery_wiz_1.png)
 
