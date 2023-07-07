@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 source-git-commit: f2dc0947a3b1ed17cbc3d88176e7921e80ca1bb5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '932'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -27,11 +27,11 @@ Jeder neue Build weist einen Status auf, der durch eine bestimmte Farbe in den [
 
 | Status | Beschreibung |
 |---|---|
-| [!BADGE Allgemeine Verfügbarkeit]{type=Positive} | Neuester stabiler Build, in der Produktion validiert und von Adobe empfohlen. |
-| [!BADGE Eingeschränkte Verfügbarkeit]{type=Neutral} | Nur On-Demand-Bereitstellung. |
+| [!BADGE Allgemeine Verfügbarkeit]{type=Positive} | Aktueller stabiler Build, in der Produktion validiert und von Adobe empfohlen. |
+| [!BADGE Eingeschränkte Verfügbarkeit]{type=Neutral} | Bereitstellung nur auf Anfrage. |
 | [!BADGE Veröffentlichungskandidat]{type=Informative} | Neuester Build mit neuen Funktionen. |
-| [!BADGE Nicht mehr verfügbar]{type=Caution} | Keine Implementierung. Keine Fehlerbehebung. Es wird empfohlen, auf einen neueren Build zu aktualisieren. |
-| [!BADGE Veraltet]{type=negative} | Keine Implementierung. Keine Fehlerbehebung. Bestehende Implementierungen müssen aktualisiert werden. |
+| [!BADGE Nicht mehr verfügbar]{type=Caution} | Keine Bereitstellung. Keine Fehlerbehebung. Es wird empfohlen, auf einen neueren Build zu aktualisieren. |
+| [!BADGE Veraltet]{type=negative} | Keine Bereitstellung. Keine Fehlerbehebung. Bestehende Implementierungen müssen aktualisiert werden. |
 
 <!--
 ![](assets/do-not-localize/green3.png) **General Availability** (GA) - Latest stable build, validated in production, and recommended by Adobe. 
