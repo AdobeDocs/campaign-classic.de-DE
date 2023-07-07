@@ -7,7 +7,7 @@ badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Reporting
 exl-id: d133efec-33e1-4711-a90f-e40385059386
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '876'
 ht-degree: 100%
 
@@ -94,7 +94,7 @@ Die Anordnung der Daten kann direkt in den Analyse-Tabellen angepasst werden. Ma
 * **[!UICONTROL Von A bis Z sortieren]**: sortiert die Werte der Variable in aufsteigender Reihenfolge;
 * **[!UICONTROL Von Z bis A sortieren]**: sortiert die Werte der Variable in absteigender Reihenfolge.
 
-   ![](assets/s_ncs_advuser_report_wizard_016.png)
+  ![](assets/s_ncs_advuser_report_wizard_016.png)
 
 Um zur ursprünglichen Anzeige zurückzukehren, aktualisieren Sie die Ansicht.
 
@@ -111,11 +111,11 @@ Folgende Optionen stehen zur Verfügung:
 * Die Option **[!UICONTROL Werte kumulieren]** ermöglicht das Addieren der unterschiedlichen, von einer Serie zur anderen zurückgegebenen Werte.
 * Die Legende der Grafik kann durch Deaktivieren der entsprechenden Option ausgeblendet werden. Die Legende wird standardmäßig außerhalb der Grafik oben rechts angezeigt.
 
-   Um den Anzeigebereich maximal zu nutzen, kann sie auch innerhalb der Grafik positioniert werden. Aktivieren Sie hierzu die Option **[!UICONTROL In die Grafik einschließen]**.
+  Um den Anzeigebereich maximal zu nutzen, kann sie auch innerhalb der Grafik positioniert werden. Aktivieren Sie hierzu die Option **[!UICONTROL In die Grafik einschließen]**.
 
-   Wählen Sie eine senkrechte oder vertikale Ausrichtung in der Dropdown-Liste **[!UICONTROL Legendenposition]** aus.
+  Wählen Sie eine senkrechte oder vertikale Ausrichtung in der Dropdown-Liste **[!UICONTROL Legendenposition]** aus.
 
-   ![](assets/s_ncs_advuser_report_wizard_3d.png)
+  ![](assets/s_ncs_advuser_report_wizard_3d.png)
 
 ## Exportieren eines Analyseberichts {#exporting-an-analysis-report}
 

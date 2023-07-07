@@ -54,9 +54,9 @@ Es gibt vier Arten von `<element>`  Elemente in Adobe Campaign:
 
 * **_operation (string)**: definiert den Typ des Schreibens in der Datenbank.
 
-   Dieses Attribut wird hauptsächlich bei der Erweiterung von nativen Schemata verwendet.
+  Dieses Attribut wird hauptsächlich bei der Erweiterung von nativen Schemata verwendet.
 
-   Barrierefreie Werte sind:
+  Barrierefreie Werte sind:
 
    * &quot;none&quot;: Abstimmung. Das bedeutet, dass Adobe Campaign das Element wiederherstellt, ohne es zu aktualisieren, oder einen Fehler erzeugt, wenn es nicht vorhanden ist.
    * &quot;insertOrUpdate&quot;: durch Einfügen aktualisiert werden. Das bedeutet, dass Adobe Campaign das Element aktualisiert oder erstellt, falls es nicht vorhanden ist.
@@ -93,14 +93,14 @@ Es gibt vier Arten von `<element>`  Elemente in Adobe Campaign:
    * &quot;shared&quot;: Der Inhalt wird in einer freigegebenen Tabelle nach Datentyp gespeichert.
    * &quot;dediziert&quot;: Der Inhalt wird in einer eigenen Tabelle gespeichert.
 
-   SQL-Eigenschaftstabellen werden automatisch basierend auf dem charakteristischen Typ erstellt:
+  SQL-Eigenschaftstabellen werden automatisch basierend auf dem charakteristischen Typ erstellt:
 
    * dediziert: `Ft_[name_of_the_schema_containing_the_characteristic]_[name_of_the_characteristic]`
    * shared: `Ft_[type_of_key_of_the_schema_containing_the_characteristic]_[type_of_the_characteristic]`
 
-   Es gibt zwei Arten von Eigenschaftenfeldern: einfache Felder, bei denen ein einzelner Wert für das Merkmal zulässig ist, und Multiple-Choice-Felder, bei denen das Merkmal mit einem Kollektionselement verknüpft ist, das mehrere Werte enthalten kann.
+  Es gibt zwei Arten von Eigenschaftenfeldern: einfache Felder, bei denen ein einzelner Wert für das Merkmal zulässig ist, und Multiple-Choice-Felder, bei denen das Merkmal mit einem Kollektionselement verknüpft ist, das mehrere Werte enthalten kann.
 
-   Wenn ein Merkmal in einem Schema definiert ist, muss dieses Schema über einen Hauptschlüssel verfügen, der auf einem einzelnen Feld basiert (zusammengesetzte Schlüssel sind nicht autorisiert).
+  Wenn ein Merkmal in einem Schema definiert ist, muss dieses Schema über einen Hauptschlüssel verfügen, der auf einem einzelnen Feld basiert (zusammengesetzte Schlüssel sind nicht autorisiert).
 
 * **featureDate (boolean)**: Attribut im Zusammenhang mit dem Feld &quot;@feature&quot;. Wenn der Wert &quot;true&quot;ist, können Sie feststellen, wann der Wert zuletzt aktualisiert wurde.
 * **filterPath (Zeichenfolge)**: Dieses Attribut erhält einen Xpath und ermöglicht Ihnen die Definition eines Filters für ein Feld.
@@ -111,7 +111,7 @@ Es gibt vier Arten von `<element>`  Elemente in Adobe Campaign:
 * **img (Zeichenfolge)**: empfängt den Pfad eines mit einem Element verknüpften Bildes. Der Wert dieses Attributs hat den Typ &quot;namespace:image name&quot;. Beispiel: img=&quot;cus:myImage.jpg&quot;. Das Bild muss physisch auf den Anwendungsserver importiert werden.
 * **integrität (Zeichenfolge)**: referenzielle Integrität des Vorkommens der Quelltabelle gegenüber der Zieltabelle.
 
-   Barrierefreie Werte sind:
+  Barrierefreie Werte sind:
 
    * &quot;define&quot;: Adobe Campaign löscht die Entität nicht, wenn sie über den Link referenziert wird
    * &quot;normal&quot;: Wenn Sie das Quellereignis löschen, werden die Schlüssel des Links auf das Zielereignis initialisiert (Standardmodus). Dieser Integritätstyp initialisiert alle Fremdschlüssel
@@ -125,14 +125,14 @@ Es gibt vier Arten von `<element>`  Elemente in Adobe Campaign:
 * **localizable (boolean)**: Wenn es aktiviert ist, weist dieses Attribut das Tool zur Sammlung an, den Wert des Attributs &quot;@label&quot;für die Übersetzung abzurufen (interne Verwendung).
 * **name (MNTOKEN)**: interner Name des Elements, das mit dem Namen der Tabelle übereinstimmt. Der Wert des Attributs &quot;@name&quot;muss kurz sein, vorzugsweise in Englisch, und muss den mit XML verknüpften Benennungsbeschränkungen entsprechen.
 
-   Beim Schreiben des Schemas in die Datenbank werden dem Feldnamen von Adobe Campaign automatisch Präfixe hinzugefügt.
+  Beim Schreiben des Schemas in die Datenbank werden dem Feldnamen von Adobe Campaign automatisch Präfixe hinzugefügt.
 
    * &quot;i&quot;: -Präfix für den Typ &quot;Ganzzahl&quot;.
    * &quot;d&quot;: -Präfix für den Typ &quot;double&quot;.
    * &quot;s&quot;: -Präfix für den Zeichenfolgentyp.
    * &quot;ts&quot;: -Präfix für den Typ &quot;Datum&quot;.
 
-   Um den Namen der Tabelle eigenständig zu definieren, müssen Sie das Attribut &quot;@sqltable&quot; in der Definition des Hauptrelements des Schemas verwenden.
+  Um den Namen der Tabelle eigenständig zu definieren, müssen Sie das Attribut &quot;@sqltable&quot; in der Definition des Hauptrelements des Schemas verwenden.
 
 * **noDbIndex (boolean)**: ermöglicht die Angabe, dass das Element nicht indiziert wird.
 * **ordered (boolean)**: Wenn das Attribut aktiviert ist (ordered=&quot;true&quot;), behält Adobe Campaign die Elementdeklarationssequenz in einem XML-Kollektionselement bei.
@@ -148,12 +148,12 @@ Es gibt vier Arten von `<element>`  Elemente in Adobe Campaign:
 * **revAdvanced (boolesch)**: Wenn dieses Attribut aktiviert ist, gibt es an, dass der umgekehrte Link ein &quot;erweiterter&quot;Link ist.
 * **revCardinality (string)**: Dieses Attribut definiert die Kardinalität einer Verknüpfung zwischen zwei Tabellen. Sie wird in einem &quot;Link&quot;-Typ verwendet `<element>`.
 
-   Mögliche Werte:
+  Mögliche Werte:
 
    * &quot;single&quot;: Einfache Relation vom Typ 1:1
    * &quot;unbound&quot;: Kollektionslink vom Typ 1:N
 
-   Wenn das Attribut bei der Erstellung von Links nicht angegeben wird, beträgt die Kardinalität standardmäßig 1:N.
+  Wenn das Attribut bei der Erstellung von Links nicht angegeben wird, beträgt die Kardinalität standardmäßig 1:N.
 
 * **revDesc (Zeichenfolge)**: Dieses Attribut erhält eine Beschreibung, die mit dem anderen Link verknüpft ist.
 * **revExternalJoin (boolesch)**: Wenn dieses Attribut aktiviert ist, können Sie den externen Join für den anderen Link erzwingen.
@@ -172,7 +172,7 @@ Es gibt vier Arten von `<element>`  Elemente in Adobe Campaign:
 * **translateExpr (Zeichenfolge)**: Wenn ein &quot;@expr&quot;-Attribut gefunden wird, können Sie mit dem Attribut &quot;@translationExpr&quot; einen Ausdruck neu definieren, der mit dem in &quot;@expr&quot; definierten Ausdruck übereinstimmt und der vom Übersetzungstool (interne Verwendung) erfasst wird.
 * **type (MNTOKEN)**: definiert den Typ der im Element gespeicherten Daten.
 
-   Liste der verfügbaren Typen:
+  Liste der verfügbaren Typen:
 
    * BELIEBIGE
    * bin

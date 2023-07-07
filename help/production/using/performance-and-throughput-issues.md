@@ -52,7 +52,7 @@ In den meisten Fällen hängen Leistungsprobleme mit der Datenbankwartung zusamm
 
 Im Folgenden finden Sie eine Liste von Artikeln zu Best Practices für die Anwendungskonfiguration:
 
-* MTA- und MTAChild-Prozesse und -Speicher: die **mta** -Modul verteilt Nachrichten an seine **mtachild** untergeordnete Module. Jeder **mtachild** erstellt Nachrichten, bevor eine Autorisierung vom Statistikserver angefordert wird, und sendet sie. Weitere Informationen finden Sie auf dieser [Seite.](../../installation/using/email-deliverability.md)
+* MTA- und MTAChild-Prozesse und -Speicher: die **mta** -Modul verteilt Nachrichten auf **mtachild** untergeordnete Module. Jeder **mtachild** erstellt Nachrichten, bevor eine Autorisierung vom Statistikserver angefordert wird, und sendet sie. Weitere Informationen finden Sie auf dieser [Seite.](../../installation/using/email-deliverability.md)
 * TLS-Konfiguration: Die globale Aktivierung von TLS wird nicht empfohlen, da dadurch der Durchsatz reduziert werden kann. Stattdessen sollten die vom Zustellbarkeitsteam verwalteten TLS-Einstellungen pro Domäne entsprechend den Anforderungen angepasst werden. Weitere Informationen finden Sie auf dieser [Seite.](../../installation/using/email-deliverability.md#mx-configuration)
 * DKIM: Um das Sicherheitsniveau des DKIM zu gewährleisten, empfiehlt sich die Verschlüsselungsgröße 1024b als Best Practice. Niedrigere DKIM-Schlüssel werden von den meisten Zugangsanbietern nicht als gültig angesehen. Mehr dazu erfahren Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=de#authentication).
 

@@ -6,7 +6,7 @@ badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classi
 feature: Query Editor, Data Management
 exl-id: 74b82019-bdab-4442-84cf-5ad18d0db788
 source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2029'
 ht-degree: 100%
 
@@ -90,33 +90,33 @@ Zur Abstimmung der Daten stehen folgende Optionen zur Verfügung:
 
 * **[!UICONTROL Nur die Schlüssel]**
 
-   Diese Option kann bei homogenen Eingangspopulationen verwendet werden.
+  Diese Option kann bei homogenen Eingangspopulationen verwendet werden.
 
 * **[!UICONTROL Alle gemeinsamen Spalten]**
 
-   Diese Option ermöglicht die Abstimmung der Datensätze über alle den verschiedenen Zielpopulationen gemeinsamen Spalten.
+  Diese Option ermöglicht die Abstimmung der Datensätze über alle den verschiedenen Zielpopulationen gemeinsamen Spalten.
 
-   Spalten werden in Adobe Campaign anhand der Spaltentitel identifiziert. Dabei werden geringfügige Unterschiede akzeptiert. Der Spaltentitel &#39;Email&#39; wird als identisch mit dem Titel &#39;@email&#39; gewertet.
+  Spalten werden in Adobe Campaign anhand der Spaltentitel identifiziert. Dabei werden geringfügige Unterschiede akzeptiert. Der Spaltentitel &#39;Email&#39; wird als identisch mit dem Titel &#39;@email&#39; gewertet.
 
 * **[!UICONTROL Auswahl an Spalten]**
 
-   Diese Option ermöglicht die Auswahl der Spalten, die zur Abstimmung herangezogen werden sollen.
+  Diese Option ermöglicht die Auswahl der Spalten, die zur Abstimmung herangezogen werden sollen.
 
-   Wählen Sie zunächst die die Quelldaten enthaltende Hauptmenge aus und anschließend die Spalten, die den Join herstellen sollen.
+  Wählen Sie zunächst die die Quelldaten enthaltende Hauptmenge aus und anschließend die Spalten, die den Join herstellen sollen.
 
-   ![](assets/join_reconciliation_options_01.png)
+  ![](assets/join_reconciliation_options_01.png)
 
-   >[!CAUTION]
-   >
-   >Die Populationen werden im Rahmen der Abstimmung nicht auf Dubletten geprüft.
+  >[!CAUTION]
+  >
+  >Die Populationen werden im Rahmen der Abstimmung nicht auf Dubletten geprüft.
 
-   Sie können die Populationsgröße auf eine gewisse Anzahl an Datensätzen begrenzen. Kreuzen Sie hierfür die entsprechende Option an und geben Sie die Anzahl an beizubehaltenden Datensätzen an.
+  Sie können die Populationsgröße auf eine gewisse Anzahl an Datensätzen begrenzen. Kreuzen Sie hierfür die entsprechende Option an und geben Sie die Anzahl an beizubehaltenden Datensätzen an.
 
-   Geben Sie außerdem die Priorität der Eingangspopulationen an. Im unteren Bereich des Fensters werden die in die Vereinigungsaktivität eingehenden Transitionen aufgelistet. Die Reihenfolge kann mithilfe der blauen Pfeile rechts verändert werden.
+  Geben Sie außerdem die Priorität der Eingangspopulationen an. Im unteren Bereich des Fensters werden die in die Vereinigungsaktivität eingehenden Transitionen aufgelistet. Die Reihenfolge kann mithilfe der blauen Pfeile rechts verändert werden.
 
-   Die beibehaltenen Datensätze stammen zunächst aus der ersten eingehenden Transition und werden, falls die gewünschte Anzahl noch nicht erreicht ist, durch die Population der folgenden Transitionen ergänzt.
+  Die beibehaltenen Datensätze stammen zunächst aus der ersten eingehenden Transition und werden, falls die gewünschte Anzahl noch nicht erreicht ist, durch die Population der folgenden Transitionen ergänzt.
 
-   ![](assets/join_limit_nb_priority.png)
+  ![](assets/join_limit_nb_priority.png)
 
 ### Extrahieren gemeinsamer Daten (Schnittmenge) {#extracting-joint-data--intersection-}
 
@@ -178,9 +178,9 @@ Zur Konfiguration wählen Sie zunächst die Bedingungen aus:
 
    Weitere Informationen hierzu finden Sie je nach Campaign-Version in den folgenden Abschnitten:
 
-   ![](assets/do-not-localize/v7.jpeg)[  Dokumentation zu Campaign v7](../../installation/using/about-fda.md)
+   ![](assets/do-not-localize/v7.jpeg)[Dokumentation zu Campaign v7](../../installation/using/about-fda.md)
 
-   ![](assets/do-not-localize/v8.png)[  Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=de)
+   ![](assets/do-not-localize/v8.png)[Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=de)
 
 Danach müssen neue Teilmengen hinzugefügt werden:
 
@@ -220,15 +220,15 @@ Nach Identifizierung und Aufbereitung der Daten können diese in folgenden Konte
 
 * Update der Datenbank im Anschluss an die verschiedenen Workflow-Aktivitäten.
 
-   Weitere Informationen hierzu finden Sie unter [Daten aktualisieren](update-data.md).
+  Weitere Informationen hierzu finden Sie unter [Daten aktualisieren](update-data.md).
 
 * Update von existierenden Listen.
 
-   Weitere Informationen hierzu finden Sie unter [Listen-Update](list-update.md).
+  Weitere Informationen hierzu finden Sie unter [Listen-Update](list-update.md).
 
 * Vorbereitung und/oder Start von Sendungen direkt im Workflow.
 
-   Weitere Informationen hierzu finden Sie unter [Versand](delivery.md), [Versand bearbeiten](delivery-control.md) und [Versand (fortlaufend)](continuous-delivery.md).
+  Weitere Informationen hierzu finden Sie unter [Versand](delivery.md), [Versand bearbeiten](delivery-control.md) und [Versand (fortlaufend)](continuous-delivery.md).
 
 ## Daten-Management {#data-management}
 

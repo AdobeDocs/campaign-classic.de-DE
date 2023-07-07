@@ -25,8 +25,8 @@ Um das anonyme Webtracking in Ihrer Instanz zu aktivieren, müssen die folgenden
 * Die **trackWebVisitors** Parameter der **Umleitung** -Element **serverConf.xml** -Datei des Tracking-Servers auf &quot;**true**&quot;, um ein permanentes Cookie (**uuid230**) in den Browsern unbekannter Internetbenutzer, die die Site besuchen.
 * Die **Anonym Web Tracking** muss im Bildschirm zur Tracking-Konfiguration des Softwareverteilungs-Assistenten ausgewählt werden.
 
-   ![](assets/webtracking_anonymous_set.png)
+  ![](assets/webtracking_anonymous_set.png)
 
 * Webformulare müssen veröffentlicht und auf dem Trackingserver ausgeführt werden. Die entsprechende Option muss im Softwareverteilungs-Assistenten ausgewählt werden.
 
-   ![](assets/webtracking_publication_set_for_webapps.png)
+  ![](assets/webtracking_publication_set_for_webapps.png)

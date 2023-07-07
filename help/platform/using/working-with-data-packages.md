@@ -9,7 +9,7 @@ content-type: reference
 topic-tags: administration-basics
 exl-id: d3369b63-a29b-43b7-b2ad-d36d4f46c82e
 source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2512'
 ht-degree: 100%
 
@@ -34,11 +34,11 @@ Es gibt drei Arten exportierbarer Packages: Benutzer-Packages, Plattform-Package
 * **Benutzer-Package**: Ermöglicht es, die Liste der zu exportierenden Entitäten auszuwählen. Dieser Package-Typ verwaltet Abhängigkeiten und überprüft Fehler.
 * **Plattform-Package**: Enthält alle hinzugefügten (nicht standardmäßigen) technischen Ressourcen: Schemata, JavaScript-Code etc.
 
-   ![](assets/ncs_datapackage_package_platform.png)
+  ![](assets/ncs_datapackage_package_platform.png)
 
 * **Admin-Package**: Enthält alle hinzugefügten (nicht standardmäßigen) Vorlagen und fachlichen Ressourcen: Vorlagen, Bibliotheken etc.
 
-   ![](assets/ncs_datapackage_package_admin.png)
+  ![](assets/ncs_datapackage_package_admin.png)
 
 >[!CAUTION]
 >
@@ -281,15 +281,15 @@ Die Package-Erzeugung kann über den Tab **[!UICONTROL Inhalt]** der Package-Def
 * **[!UICONTROL Installationsscript einschließen]**: Hiermit können Sie ein JavaScript-Script hinzufügen, das beim Package-Import ausgeführt wird. Wenn diese Option ausgewählt ist, wird der Tab **[!UICONTROL Script]** im Bildschirm für die Package-Definition hinzugefügt.
 * **[!UICONTROL Standardwerte einschließen]**: Hiermit werden dem Package die Werte der Attribute aller Entitäten hinzugefügt.
 
-   Diese Option ist standardmäßig nicht ausgewählt, um lange Exporte zu vermeiden. Dies bedeutet, dass Attribute mit Standardwerten (&quot;Leerstring&quot;, &quot;0&quot; und &quot;false&quot;, wenn im Schema nichts anderes definiert ist) von Entitäten nicht zum Package hinzugefügt und deshalb nicht exportiert werden.
+  Diese Option ist standardmäßig nicht ausgewählt, um lange Exporte zu vermeiden. Dies bedeutet, dass Attribute mit Standardwerten (&quot;Leerstring&quot;, &quot;0&quot; und &quot;false&quot;, wenn im Schema nichts anderes definiert ist) von Entitäten nicht zum Package hinzugefügt und deshalb nicht exportiert werden.
 
-   >[!CAUTION]
-   >
-   >Durch Deaktivieren dieser Option werden möglicherweise lokale und importierte Versionen zusammengeführt.
-   >
-   >Wenn die Instanz, in der das Package importiert wird, identische Entitäten wie das Package enthält (z. B. mit derselben externen ID), werden die zugehörigen Attribute nicht aktualisiert. Dies kann passieren, wenn die Attribute der vorherigen Instanz Standardwerte aufweisen, da sie nicht im Package enthalten sind.
-   >
-   >In diesem Fall würde durch Auswählen der Option **[!UICONTROL Standardwerte einschließen]** die Versionszusammenführung verhindert, da alle Attribute der vorherigen Instanz mit dem Package exportiert würden.
+  >[!CAUTION]
+  >
+  >Durch Deaktivieren dieser Option werden möglicherweise lokale und importierte Versionen zusammengeführt.
+  >
+  >Wenn die Instanz, in der das Package importiert wird, identische Entitäten wie das Package enthält (z. B. mit derselben externen ID), werden die zugehörigen Attribute nicht aktualisiert. Dies kann passieren, wenn die Attribute der vorherigen Instanz Standardwerte aufweisen, da sie nicht im Package enthalten sind.
+  >
+  >In diesem Fall würde durch Auswählen der Option **[!UICONTROL Standardwerte einschließen]** die Versionszusammenführung verhindert, da alle Attribute der vorherigen Instanz mit dem Package exportiert würden.
 
 ### Packages über eine Package-Definition exportieren {#exporting-packages-from-a-package-definition}
 
@@ -442,7 +442,7 @@ Das Aktualisierungs-Package sollte nur eine spezifische Entität enthalten, um e
    * Das externe Konto wird erstellt.
    * Das neue Package heißt: 5101 – 2 – Social-Anwendung Externes Konto (socialApplication_extAccount).
    * Parallel dazu wird das 101-Package aktualisiert und dem externen Konto hinzugefügt; es wird jedoch nicht bereitgestellt.
-      ![](assets/ncs_datapackage_best-practices-1.png)
+     ![](assets/ncs_datapackage_best-practices-1.png)
 
 #### Package-Dokumentation {#package-documentation}
 

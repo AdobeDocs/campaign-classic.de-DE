@@ -6,7 +6,7 @@ badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classi
 feature: Campaigns, Cross Channel Orchestration
 exl-id: 1278bda1-f83c-4d38-8042-e6611755cf36
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1217'
 ht-degree: 100%
 
@@ -71,13 +71,13 @@ Zur Konfiguration und Bearbeitung eines Programms stehen die folgenden Registerk
 
 * Auf der Registerkarte **Planung** können Sie sich den Programmkalender nach Monat, Woche oder Tag anzeigen lassen, indem Sie in der Kalenderkopfzeile auf die jeweilige Registerkarte klicken.
 
-   Bei Bedarf können an dieser Stelle auch Programme, Kampagnen oder Aufgaben erstellt werden.
+  Bei Bedarf können an dieser Stelle auch Programme, Kampagnen oder Aufgaben erstellt werden.
 
-   ![](assets/s_ncs_user_interface_campaign02.png)
+  ![](assets/s_ncs_user_interface_campaign02.png)
 
 * Über den Tab **Bearbeiten** kann das Programm konfiguriert und verändert werden (Name, Beginn und Ende, Budget, benötigte Dokumente usw.).
 
-   ![](assets/s_ncs_user_interface_campaign05.png)
+  ![](assets/s_ncs_user_interface_campaign05.png)
 
 #### Kampagnen durchsuchen {#browsing-campaigns}
 

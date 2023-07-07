@@ -6,7 +6,7 @@ badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classi
 feature: Workflows
 exl-id: 7a38653b-c15d-4ed8-85dc-f7214409f42b
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 100%
 
@@ -40,7 +40,7 @@ In diesem Beispiel werden verschiedene E-Mails an verschiedene Populationen gese
 * Speichern des Abfrageergebnisses
 * Segmentieren des Ergebnisses zum Senden mehrerer Sendungen
 
-   ![Die Verzweigung folgt der Schnittmenge aus zwei Abfragen und vorangehenden Aktivitäten zur Listen-Update- und Aufspaltungsaktivität.](assets/wkf_fork_example.png)
+  ![Die Verzweigung folgt der Schnittmenge aus zwei Abfragen und vorangehenden Aktivitäten zur Listen-Update- und Aufspaltungsaktivität.](assets/wkf_fork_example.png)
 
 Der Workflow umfasst die folgenden Aktivitäten:
 

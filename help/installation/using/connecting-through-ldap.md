@@ -34,27 +34,27 @@ Im Fenster können Sie die Identifizierung von Adobe Campaign-Benutzern über de
 
    * Verschlüsseltes Kennwort (**md5**)
 
-      Standardmodus.
+     Standardmodus.
 
    * Nur Text Passwort + SSL (**TLS**)
 
-      Das gesamte Authentifizierungsverfahren (einschließlich Kennwort) ist verschlüsselt. Der sichere Port 636 darf in diesem Modus nicht verwendet werden: Adobe Campaign wechselt automatisch in den abgesicherten Modus.
+     Das gesamte Authentifizierungsverfahren (einschließlich Kennwort) ist verschlüsselt. Der sichere Port 636 darf in diesem Modus nicht verwendet werden: Adobe Campaign wechselt automatisch in den abgesicherten Modus.
 
-      Wenn Sie diesen Authentifizierungsmodus verwenden, wird das Zertifikat unter Linux von einer openLDAP-Client-Bibliothek überprüft. Es wird empfohlen, ein gültiges SSL-Zertifikat zu verwenden, damit das Authentifizierungsverfahren verschlüsselt wird. Andernfalls werden Informationen in Klartext geschrieben.
+     Wenn Sie diesen Authentifizierungsmodus verwenden, wird das Zertifikat unter Linux von einer openLDAP-Client-Bibliothek überprüft. Es wird empfohlen, ein gültiges SSL-Zertifikat zu verwenden, damit das Authentifizierungsverfahren verschlüsselt wird. Andernfalls werden Informationen in Klartext geschrieben.
 
-      Das Zertifikat wird auch unter Windows überprüft.
+     Das Zertifikat wird auch unter Windows überprüft.
 
    * Windows NT LAN Manager (**NTLM**)
 
-      Proprietäre Windows-Authentifizierung. Die **[!UICONTROL Eindeutige Kennung]** wird nur für den Domänennamen verwendet.
+     Proprietäre Windows-Authentifizierung. Die **[!UICONTROL Eindeutige Kennung]** wird nur für den Domänennamen verwendet.
 
    * Distributed Password Authentication (**DPA**)
 
-      Proprietäre Windows-Authentifizierung. Die **[!UICONTROL Eindeutige Kennung]** wird nur für den Domänennamen (domain.com) verwendet.
+     Proprietäre Windows-Authentifizierung. Die **[!UICONTROL Eindeutige Kennung]** wird nur für den Domänennamen (domain.com) verwendet.
 
    * Sichtbares Kennwort
 
-      Keine Verschlüsselung (nur zur Verwendung in Testphasen).
+     Keine Verschlüsselung (nur zur Verwendung in Testphasen).
 
 * Wählen Sie den Authentifizierungsmodus für den Benutzer aus: **[!UICONTROL Automatische Berechnung der eindeutigen Benutzerkennung]** (siehe Schritt [Berechnung des Distinguished Name](#distinguished-name-calculation)) oder **[!UICONTROL Suchen Sie die eindeutige Benutzer-ID im Verzeichnis .]** (siehe Schritt [Suchen nach Identifikatoren](#searching-for-identifiers)).
 
@@ -102,17 +102,17 @@ Wenn Sie die Kennungen des Distinguished Name (DN) berechnen möchten, können S
 
 * Geben Sie die eindeutige Kennung des Benutzers im Verzeichnis (Distinguished Name - DN) im **[!UICONTROL Distinguished Name]** -Feld.
 
-   **[!UICONTROL (Anmeldung)]** durch die Kennung des Adobe Campaign-Operators ersetzt.
+  **[!UICONTROL (Anmeldung)]** durch die Kennung des Adobe Campaign-Operators ersetzt.
 
-   >[!CAUTION]
-   >
-   >Die **[!UICONTROL dc]** -Einstellung muss in Kleinbuchstaben erfolgen.
+  >[!CAUTION]
+  >
+  >Die **[!UICONTROL dc]** -Einstellung muss in Kleinbuchstaben erfolgen.
 
 * Auswählen der Option **[!UICONTROL Aktivieren der Synchronisierung von Benutzerrechten aus Berechtigungen und Gruppen im Ordner]** um die Gruppen- und Benutzerzuordnungen im LDAP-Ordner sowie die Gruppen- und Benutzerzuordnungen in Adobe Campaign zu synchronisieren.
 
-   Wenn Sie diese Option auswählen, wird die **[!UICONTROL DN der Anwendungsebene, der für die Suche verwendet wird]** und **[!UICONTROL Passwort der Anwendungsanmeldung]** aktiviert sind.
+  Wenn Sie diese Option auswählen, wird die **[!UICONTROL DN der Anwendungsebene, der für die Suche verwendet wird]** und **[!UICONTROL Passwort der Anwendungsanmeldung]** aktiviert sind.
 
-   Wenn Sie diese beiden Felder ausfüllen, stellt Adobe Campaign eine Verbindung zum LDAP-Server mit seinem eigenen Login und Passwort her. Wenn sie leer sind, stellt Adobe Campaign anonym eine Verbindung zum Server her.
+  Wenn Sie diese beiden Felder ausfüllen, stellt Adobe Campaign eine Verbindung zum LDAP-Server mit seinem eigenen Login und Passwort her. Wenn sie leer sind, stellt Adobe Campaign anonym eine Verbindung zum Server her.
 
 ## Suchen nach Identifikatoren {#searching-for-identifiers}
 
@@ -121,9 +121,9 @@ Wenn Sie nach einer Kennung suchen, können Sie mit dem Softwareverteilungs-Assi
 * Im **[!UICONTROL DN der Anwendungsebene, der für die Suche verwendet wird]** und **[!UICONTROL Passwort der Anwendungsanmeldung]** Geben Sie die Kennung und das Kennwort an, mit denen Adobe Campaign eine Verbindung zur Suche nach der Kennung herstellen wird. Wenn sie leer sind, stellt Adobe Campaign anonym eine Verbindung zum Server her.
 * Geben Sie die **[!UICONTROL Basis-ID]** und **[!UICONTROL Suchbereich]** -Felder, um eine Teilmenge des LDAP-Ordners zu bestimmen, aus dem die Suche gestartet werden soll.
 
-   Wählen Sie in der Dropdown-Liste den gewünschten Modus aus:
+  Wählen Sie in der Dropdown-Liste den gewünschten Modus aus:
 
-   ![](assets/s_ncs_install_deployment_wiz_ldap_03.png)
+  ![](assets/s_ncs_install_deployment_wiz_ldap_03.png)
 
    1. **[!UICONTROL Rekursiv (Standardmodus)]**.
 
@@ -150,9 +150,9 @@ Sie müssen mehrere Parameter angeben, um die Gruppe(n), zu der/denen der Benutz
 * die **[!UICONTROL Datenbank-ID]** -Feld,
 * die **[!UICONTROL Suchbereich]** -Feld,
 
-   >[!NOTE]
-   >
-   >Wenn Sie nach dem DN suchen möchten, können Sie **[!UICONTROL Verwenden Sie die DN-Suchparameter erneut.]** um die ausgewählten Werte für den DN und den Suchbereich vom vorherigen Bildschirm zu übernehmen.
+  >[!NOTE]
+  >
+  >Wenn Sie nach dem DN suchen möchten, können Sie **[!UICONTROL Verwenden Sie die DN-Suchparameter erneut.]** um die ausgewählten Werte für den DN und den Suchbereich vom vorherigen Bildschirm zu übernehmen.
 
 * die **[!UICONTROL Berechtigungssuchfilter]** -Feld basierend auf dem Login und dem Distinguished Name des Benutzers;
 * die **[!UICONTROL Attribut, das den Gruppen- oder Autorisierungsnamen enthält]** -Feld für den Benutzer,

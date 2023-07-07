@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: tracking-messages
 exl-id: e18d43b6-2a77-4881-85e7-ca36248d4634
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '842'
 ht-degree: 100%
 
@@ -45,53 +45,53 @@ Ihr Betriebssystem und Ihre Anwendungen müssen auch TLS 1.2 unterstützen. Wenn
 
 * **Was ist Transport Layer Security (TLS)?**
 
-   [Transport Layer Security](https://de.wikipedia.org/wiki/Transport_Layer_Security) (TLS) ist ein Sicherheitsprotokoll, das Datenschutz und Datenintegrität zwischen zwei kommunizierenden Anwendungen ermöglicht. Dieses Protokoll wird häufig bei Webbrowsern und anderen Anwendungen bereitgestellt, bei denen Daten sicher über ein Netzwerk ausgetauscht werden müssen.
+  [Transport Layer Security](https://de.wikipedia.org/wiki/Transport_Layer_Security) (TLS) ist ein Sicherheitsprotokoll, das Datenschutz und Datenintegrität zwischen zwei kommunizierenden Anwendungen ermöglicht. Dieses Protokoll wird häufig bei Webbrowsern und anderen Anwendungen bereitgestellt, bei denen Daten sicher über ein Netzwerk ausgetauscht werden müssen.
 
-   Gemäß der Protokollspezifikation umfasst TLS zwei Ebenen: das TLS-Record-Protokoll und das TLS-Handshake-Protokoll. Das Record-Protokoll bietet Verbindungssicherheit. Das Handshake-Protokoll ermöglicht es dem Server und Client, sich gegenseitig zu authentifizieren und vor dem Datenaustausch Verschlüsselungsalgorithmen und kryptografische Schlüssel auszuhandeln.
+  Gemäß der Protokollspezifikation umfasst TLS zwei Ebenen: das TLS-Record-Protokoll und das TLS-Handshake-Protokoll. Das Record-Protokoll bietet Verbindungssicherheit. Das Handshake-Protokoll ermöglicht es dem Server und Client, sich gegenseitig zu authentifizieren und vor dem Datenaustausch Verschlüsselungsalgorithmen und kryptografische Schlüssel auszuhandeln.
 
 * **Wie wirkt sich das aus?**
 
-   Die Sicherheitsstandards von Adobe erfordern seit Mai 2018 die Beendigung älterer Protokolle und schreiben die Verwendung von TLS 1.2 als aktueller Version vor. Wenn Ihr System nicht TLS 1.2-kompatibel ist, ist der Zugriff auf einige Adobe-Anwendungen und -Services eingeschränkt.
+  Die Sicherheitsstandards von Adobe erfordern seit Mai 2018 die Beendigung älterer Protokolle und schreiben die Verwendung von TLS 1.2 als aktueller Version vor. Wenn Ihr System nicht TLS 1.2-kompatibel ist, ist der Zugriff auf einige Adobe-Anwendungen und -Services eingeschränkt.
 
 * **Wie wirkt sich TLS auf Sie aus?**
 
-   Sie können mit einigen Adobe-Anwendungen und -Services nur über eine sichere Netzwerkverbindung interagieren. Mit TLS können Sie sicherstellen, dass die Verbindung zwischen Ihrem Browser und diesen Anwendungen und Web-Services sicher und zuverlässig ist.
+  Sie können mit einigen Adobe-Anwendungen und -Services nur über eine sichere Netzwerkverbindung interagieren. Mit TLS können Sie sicherstellen, dass die Verbindung zwischen Ihrem Browser und diesen Anwendungen und Web-Services sicher und zuverlässig ist.
 
-   Mit der Veröffentlichung neuer Browser und Betriebssysteme werden die Sicherheitsstandards aktualisiert, um ein höheres Maß an Datenschutz und Datenintegrität zu gewährleisten. Ältere Versionen dieser Browser oder Betriebssysteme werden jedoch nicht aktualisiert und enthalten nicht die neuesten Standards.
+  Mit der Veröffentlichung neuer Browser und Betriebssysteme werden die Sicherheitsstandards aktualisiert, um ein höheres Maß an Datenschutz und Datenintegrität zu gewährleisten. Ältere Versionen dieser Browser oder Betriebssysteme werden jedoch nicht aktualisiert und enthalten nicht die neuesten Standards.
 
-   Da das Sicherheitsniveau steigt, werden diese älteren, weniger sicheren Browser-Versionen und Anwendungen nicht mehr unterstützt.
+  Da das Sicherheitsniveau steigt, werden diese älteren, weniger sicheren Browser-Versionen und Anwendungen nicht mehr unterstützt.
 
-   Um eine Verbindung mit sicheren Websites herstellen zu können, aktualisieren Sie Ihre Betriebssystem- und Browser-Versionen.
+  Um eine Verbindung mit sicheren Websites herstellen zu können, aktualisieren Sie Ihre Betriebssystem- und Browser-Versionen.
 
 * **Ist TLS anfällig für Hacker?**
 
-   Es wurden Angriffe auf TLS 1.0 mit seiner älteren Verschlüsselungsmethode dokumentiert, und die älteren Versionen sind anfälliger als TLS 1.2. Weitere Informationen finden Sie unter „Angriffe auf TLS/SSL“.
+  Es wurden Angriffe auf TLS 1.0 mit seiner älteren Verschlüsselungsmethode dokumentiert, und die älteren Versionen sind anfälliger als TLS 1.2. Weitere Informationen finden Sie unter „Angriffe auf TLS/SSL“.
 
 * **Warum deaktiviert Adobe die Unterstützung für TLS 1.0 und 1.1?**
 
-   Adobe verfolgt Sicherheitsstandards, die die Beendigung der Unterstützung älterer Protokolle erfordern. Einer dieser Standards gewährleistet die Konformität mit der Zahlungskartenindustrie (Payment Card Industry, PCI). PCI Adaptation Server umfasst eine Reihe von Sicherheitsstandards, die von Organisationen eingehalten werden müssen, die Kreditkartendaten annehmen, verarbeiten, speichern oder übertragen, um eine sichere Umgebung zu gewährleisten.
+  Adobe verfolgt Sicherheitsstandards, die die Beendigung der Unterstützung älterer Protokolle erfordern. Einer dieser Standards gewährleistet die Konformität mit der Zahlungskartenindustrie (Payment Card Industry, PCI). PCI Adaptation Server umfasst eine Reihe von Sicherheitsstandards, die von Organisationen eingehalten werden müssen, die Kreditkartendaten annehmen, verarbeiten, speichern oder übertragen, um eine sichere Umgebung zu gewährleisten.
 
-   Aufgrund der obligatorischen Einhaltung von PCI ist die Verwendung von TLS 1.1 oder höher ab Mai 2018 erforderlich.
+  Aufgrund der obligatorischen Einhaltung von PCI ist die Verwendung von TLS 1.1 oder höher ab Mai 2018 erforderlich.
 
 * **Warum schreibt Adobe die Verwendung von TLS 1.2 vor, anstatt TLS 1.1 oder TLS 1.0 zuzulassen?**
 
-   Die meisten Anforderungen für Anwendungen und Web-Services von Adobe stammen aus TLS 1.2-kompatiblen Benutzersystemen, während der Datentransfer von TLS 1.1-Systemen gering ist.
+  Die meisten Anforderungen für Anwendungen und Web-Services von Adobe stammen aus TLS 1.2-kompatiblen Benutzersystemen, während der Datentransfer von TLS 1.1-Systemen gering ist.
 
-   Adobe hat auf TLS 1.2 umgestellt, um die Sicherheit bei der Nutzung von Anwendungen und Web-Services zu erhöhen.
+  Adobe hat auf TLS 1.2 umgestellt, um die Sicherheit bei der Nutzung von Anwendungen und Web-Services zu erhöhen.
 
 * **Bis wann kann ich eine ältere Version von TLS verwenden?**
 
-   Adobe empfiehlt Benutzern, die älteren Versionen möglichst schnell zu aktualisieren, um Sicherheitsprobleme zu vermeiden. Weitere Informationen erhalten Sie bei der Kundenunterstützung von Adobe oder Ihrem Customer Success Manager.
+  Adobe empfiehlt Benutzern, die älteren Versionen möglichst schnell zu aktualisieren, um Sicherheitsprobleme zu vermeiden. Weitere Informationen erhalten Sie bei der Kundenunterstützung von Adobe oder Ihrem Customer Success Manager.
 
 * **Welche Fehlermeldung wird angezeigt, wenn ich einen Browser verwende, der nicht für TLS 1.2 konfiguriert ist?**
 
-   Das hängt vom verwendeten Browser ab. Alle in der [Campaign-Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md) genannten Browser sind für die Verwendung von TLS 1.2 konfiguriert. Wenn Sie eine Version verwenden, die nicht in der Liste aufgeführt ist, aktualisieren Sie Ihren Browser.
+  Das hängt vom verwendeten Browser ab. Alle in der [Campaign-Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md) genannten Browser sind für die Verwendung von TLS 1.2 konfiguriert. Wenn Sie eine Version verwenden, die nicht in der Liste aufgeführt ist, aktualisieren Sie Ihren Browser.
 
-   Adobe hat keine Kontrolle über Fehlermeldungen, die von der SSL-Kommunikationsschicht generiert wurden. Der Browser generiert diese Nachrichten, bevor er eine Verbindung zu Anwendungen und Services von Adobe herstellt. Hier ist ein Beispiel für einen Fehler, der mit Internet Explorer 11 unter Windows 7 auftreten kann:
+  Adobe hat keine Kontrolle über Fehlermeldungen, die von der SSL-Kommunikationsschicht generiert wurden. Der Browser generiert diese Nachrichten, bevor er eine Verbindung zu Anwendungen und Services von Adobe herstellt. Hier ist ein Beispiel für einen Fehler, der mit Internet Explorer 11 unter Windows 7 auftreten kann:
 
-   ![](assets/do-not-translate/page-not-displayed.png)
+  ![](assets/do-not-translate/page-not-displayed.png)
 
-   TLS 1.2 ist in Internet Explorer 11 standardmäßig aktiviert, aber falls es deaktiviert ist, können Sie es aktivieren. Aktivieren Sie in diesem Fall TLS 1.2 über das Dialogfeld „Erweiterte Einstellungen“, anstatt andere Optionen zu verwenden. Es können auch andere Fehler wie der folgende auftreten:
+  TLS 1.2 ist in Internet Explorer 11 standardmäßig aktiviert, aber falls es deaktiviert ist, können Sie es aktivieren. Aktivieren Sie in diesem Fall TLS 1.2 über das Dialogfeld „Erweiterte Einstellungen“, anstatt andere Optionen zu verwenden. Es können auch andere Fehler wie der folgende auftreten:
 
    * Verbindung mit dem Service unmöglich
    * Service ist nicht verfügbar

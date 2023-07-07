@@ -17,7 +17,7 @@ ht-degree: 2%
 
 
 
-## Überblick
+## Übersicht
 
 Marketer und Benutzer verwenden Eingabeformulare, um Datensätze zu erstellen, zu ändern und in der Vorschau anzuzeigen. Forms zeigt eine visuelle Darstellung von Informationen an.
 
@@ -48,39 +48,39 @@ Sie können verschiedene Arten von Eingabeformularen erstellen. Der Formulartyp 
 
 * Konsolen-Bildschirm
 
-   Dies ist der Standardformulartyp. Das Formular besteht aus einer einzelnen Seite.
+  Dies ist der Standardformulartyp. Das Formular besteht aus einer einzelnen Seite.
 
-   ![](assets/console_screen_form.png)
+  ![](assets/console_screen_form.png)
 
 * Content-Management
 
-   Verwenden Sie diesen Formulartyp für das Content Management. Siehe dies [Anwendungsfall](../../delivery/using/use-case--creating-content-management.md).
+  Verwenden Sie diesen Formulartyp für das Content Management. Siehe dies [Anwendungsfall](../../delivery/using/use-case--creating-content-management.md).
 
-   ![](../../delivery/using/assets/d_ncs_content_form13.png)
+  ![](../../delivery/using/assets/d_ncs_content_form13.png)
 
 * Assistent
 
-   Dieses Formular umfasst mehrere schwebende Bildschirme, die in einer bestimmten Sequenz angeordnet sind. Benutzer navigieren von einem Bildschirm zum nächsten. [Weitere Informationen](form-structure.md#wizards)
+  Dieses Formular umfasst mehrere schwebende Bildschirme, die in einer bestimmten Sequenz angeordnet sind. Benutzer navigieren von einem Bildschirm zum nächsten. [Weitere Informationen](form-structure.md#wizards)
 
 * Iconbox
 
-   Dieses Formular umfasst mehrere Seiten. Um durch das Formular zu navigieren, wählen Benutzer auf der linken Seite des Formulars Symbole aus.
+  Dieses Formular umfasst mehrere Seiten. Um durch das Formular zu navigieren, wählen Benutzer auf der linken Seite des Formulars Symbole aus.
 
-   ![](assets/iconbox_form_preview.png)
+  ![](assets/iconbox_form_preview.png)
 
 * Notebook
 
-   Dieses Formular umfasst mehrere Seiten. Um durch das Formular zu navigieren, wählen Benutzer Registerkarten oben im Formular aus.
+  Dieses Formular umfasst mehrere Seiten. Um durch das Formular zu navigieren, wählen Benutzer Registerkarten oben im Formular aus.
 
-   ![](assets/notebook_form_preview.png)
+  ![](assets/notebook_form_preview.png)
 
 * Vertikale Trennung
 
-   Dieses Formular zeigt eine Navigationsstruktur.
+  Dieses Formular zeigt eine Navigationsstruktur.
 
 * Horizontale Trennung
 
-   Dieses Formular zeigt eine Liste von Elementen an.
+  Dieses Formular zeigt eine Liste von Elementen an.
 
 ## Container
 
@@ -185,28 +185,28 @@ Gehen Sie wie folgt vor, um ein Formular zu erstellen:
 
    * Geben Sie den Formularnamen und den Namespace an.
 
-      Der Formularname und der Namespace können mit dem zugehörigen Datenschema übereinstimmen.  Dieses Beispiel zeigt ein Formular für die `cus:order` Datenschema:
+     Der Formularname und der Namespace können mit dem zugehörigen Datenschema übereinstimmen.  Dieses Beispiel zeigt ein Formular für die `cus:order` Datenschema:
 
-      ```xml
-      <form entitySchema="xtk:form" img="xtk:form.png" label="Order" name="order" namespace="cus" type="iconbox" xtkschema="xtk:form">
-        […]
-      </form>
-      ```
+     ```xml
+     <form entitySchema="xtk:form" img="xtk:form.png" label="Order" name="order" namespace="cus" type="iconbox" xtkschema="xtk:form">
+       […]
+     </form>
+     ```
 
-      Alternativ können Sie das Datenschema explizit im `entity-schema` -Attribut.
+     Alternativ können Sie das Datenschema explizit im `entity-schema` -Attribut.
 
-      ```xml
-      <form entity-schema="cus:stockLine" entitySchema="xtk:form" img="xtk:form.png" label="Stock order" name="stockOrder" namespace="cus" xtkschema="xtk:form">
-        […]
-      </form>
-      ```
+     ```xml
+     <form entity-schema="cus:stockLine" entitySchema="xtk:form" img="xtk:form.png" label="Stock order" name="stockOrder" namespace="cus" xtkschema="xtk:form">
+       […]
+     </form>
+     ```
 
    * Geben Sie den Titel an, der im Formular angezeigt werden soll.
    * Geben Sie optional den Formulartyp an. Wenn Sie keinen Formulartyp angeben, wird standardmäßig der Konsolenbildschirmtyp verwendet.
 
-      ![](assets/input-form-create-2.png)
+     ![](assets/input-form-create-2.png)
 
-      Wenn Sie ein mehrseitiges Formular entwerfen, können Sie den Formulartyp im `<form>` -Element und geben Sie den Typ in einem Container an.
+     Wenn Sie ein mehrseitiges Formular entwerfen, können Sie den Formulartyp im `<form>` -Element und geben Sie den Typ in einem Container an.
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
@@ -320,6 +320,7 @@ So ändern Sie den Typ eines vorhandenen Formulars in `iconbox`führen Sie die f
           </container>
       </form>
       ```
+
    Alternativ können Sie die `type="frame"` -Attribut aus dem vorhandenen `<container>` -Elemente.
 
 ### Notebook-Formular erstellen
@@ -374,7 +375,7 @@ Dieses Beispiel zeigt ein komplexes Formular:
 
 * Das Formular der obersten Ebene ist ein Iconbox-Formular. Dieses Formular umfasst zwei Behälter mit der Bezeichnung **Allgemein** und **Details**.
 
-   Daher zeigt das äußere Formular die **Allgemein** und **Details** Seiten auf der obersten Ebene. Um auf diese Seiten zuzugreifen, klicken Benutzer auf die Symbole links im Formular.
+  Daher zeigt das äußere Formular die **Allgemein** und **Details** Seiten auf der obersten Ebene. Um auf diese Seiten zuzugreifen, klicken Benutzer auf die Symbole links im Formular.
 
 * Das Teilformular ist ein Notebook-Formular, das innerhalb der **Allgemein** Container. Das Teilformular besteht aus zwei Containern mit der Beschriftung **Name** und **Kontakt**.
 
@@ -411,7 +412,7 @@ Dieses Beispiel zeigt ein komplexes Formular:
 
 * Das Formular der obersten Ebene ist ein Iconbox-Formular. Dieses Formular umfasst zwei Behälter mit der Bezeichnung **Allgemein** und **Details**.
 
-   Daher zeigt das äußere Formular die **Allgemein** und **Details** Seiten auf der obersten Ebene. Um auf diese Seiten zuzugreifen, klicken Benutzer auf die Symbole links im Formular.
+  Daher zeigt das äußere Formular die **Allgemein** und **Details** Seiten auf der obersten Ebene. Um auf diese Seiten zuzugreifen, klicken Benutzer auf die Symbole links im Formular.
 
 * Das Teilformular ist ein Notebook-Formular, das innerhalb der **Allgemein** Container. Das Teilformular besteht aus zwei Containern mit der Beschriftung **Name** und **Kontakt**.
 

@@ -7,7 +7,7 @@ badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Surveys
 exl-id: 3cf3c486-6640-4d67-95cf-50d5767deb60
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '877'
 ht-degree: 100%
 
@@ -65,17 +65,17 @@ Im Tab **[!UICONTROL Berichte]** sind zwei weitere Berichte zu Webumfragen verf�
 
 * Allgemein
 
-   Dieser Bericht enthält allgemeine Informationen zur Umfrage: die Veränderung der Anzahl der Antworten im Zeitverlauf und die Verteilung nach Herkunft und Sprache.
+  Dieser Bericht enthält allgemeine Informationen zur Umfrage: die Veränderung der Anzahl der Antworten im Zeitverlauf und die Verteilung nach Herkunft und Sprache.
 
-   Beispiel für einen allgemeinen Bericht:
+  Beispiel für einen allgemeinen Bericht:
 
-   ![](assets/s_ncs_admin_survey_report_0.png)
+  ![](assets/s_ncs_admin_survey_report_0.png)
 
 * Antwortenverteilung
 
-   In diesem Bericht wird die Antwortenverteilung für alle Fragen dargestellt. Diese Verteilung ist nur für Antworten auf Felder verfügbar, die in Containern vom Typ **[!UICONTROL Frage]** gespeichert sind. Die Verteilung gilt nur für Auswahldialoge (keine Verteilung für z. B. Textfelder).
+  In diesem Bericht wird die Antwortenverteilung für alle Fragen dargestellt. Diese Verteilung ist nur für Antworten auf Felder verfügbar, die in Containern vom Typ **[!UICONTROL Frage]** gespeichert sind. Die Verteilung gilt nur für Auswahldialoge (keine Verteilung für z. B. Textfelder).
 
-   ![](assets/s_ncs_admin_survey_report_2.png)
+  ![](assets/s_ncs_admin_survey_report_2.png)
 
 ## Antworten exportieren {#exporting-answers}
 
@@ -145,19 +145,19 @@ Bearbeiten Sie die Aufspaltungsbox, um sie zu konfigurieren:
 
 * Wählen Sie zunächst im Tab **[!UICONTROL Allgemein]** das entsprechende Schema aus und konfigurieren Sie dann die Untereinheit:
 
-   ![](assets/s_ncs_admin_survey_responses_wf_box_6b.png)
+  ![](assets/s_ncs_admin_survey_responses_wf_box_6b.png)
 
 * Gehen Sie zum Tab **[!UICONTROL Teilmengen]** und wählen Sie die Option **[!UICONTROL Anzahl von Datensätzen begrenzen]** und danach den Link **[!UICONTROL Bearbeiten...]** aus.
 
-   ![](assets/s_ncs_admin_survey_responses_wf_box_7.png)
+  ![](assets/s_ncs_admin_survey_responses_wf_box_7.png)
 
 * Wählen Sie die Option **[!UICONTROL Die ersten aus einer Sortierung hervorgehenden Elemente beibehalten]** und dann die Spalte, nach der sortiert werden soll, aus. Aktivieren Sie die Option **[!UICONTROL Absteigende Sortierung]**.
 
-   ![](assets/s_ncs_admin_survey_responses_wf_box_8.png)
+  ![](assets/s_ncs_admin_survey_responses_wf_box_8.png)
 
 * Wählen Sie die Schaltfläche **[!UICONTROL Weiter]** aus und beschränken Sie die Anzahl der Datensätze auf fünf.
 
-   ![](assets/s_ncs_admin_survey_responses_wf_box_9.png)
+  ![](assets/s_ncs_admin_survey_responses_wf_box_9.png)
 
 * Wählen Sie **[!UICONTROL Beenden]** aus und starten Sie dann den Workflow neu, um die Zielgruppe zu validieren.
 

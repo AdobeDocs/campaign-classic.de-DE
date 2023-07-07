@@ -5,7 +5,7 @@ description: Empfehlungen zur Hardware-Dimensionierung für Campaign Classic v7
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: c47e73a0-dbd8-43f5-a363-7e6783dc7685
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2512'
 ht-degree: 100%
 
@@ -188,17 +188,17 @@ Diese Implementierung umfasst auch Message Center-Aufrufe, die von Ihren eigenen
 Bei diesem Szenario empfiehlt Adobe, Adobe Campaign wie folgt auf vier Computern zu installieren:
 
 * Anwendungs-Server
-   **Zwei Systeme, Quad-Core-CPU mit mindestens 3 GHz, 8 GB RAM, RAID 1 oder 10, SSD mit 80 GB**
+  **Zwei Systeme, Quad-Core-CPU mit mindestens 3 GHz, 8 GB RAM, RAID 1 oder 10, SSD mit 80 GB**
 
 * Webserver
-   **Zwei Systeme, Quad-Core-CPU mit mindestens 3 GHz, 16 GB RAM, RAID 1 oder 10, SSD mit 80 GB**
+  **Zwei Systeme, Quad-Core-CPU mit mindestens 3 GHz, 16 GB RAM, RAID 1 oder 10, SSD mit 80 GB**
 
 
 Die Anwendungs-Server unterstützen die Benutzenden der Campaign-Konsole sowie die Ausführung von Kampagnen-Workflows direkt. Diese Funktionalität wird auf zwei identischen Servern für hohe Verfügbarkeit bereitgestellt, wobei ein NAS-Dateisystem (Network-Attached Storage) gemeinsam genutzt wird, um Failover zu ermöglichen.
 
 Die Webserver hosten Campaign-Webanwendungen, die die 10 Millionen aktiven Empfängerinnen und Empfänger im System ermöglichen.
 
-Unter [Szenario 1: Mittelgroße Bereitstellung](#scenario-1) finden Sie weitere Kommentare zu Proxys, Präferenzzentren/Abonnements und Speicherplatznutzung.
+Unter [Szenario 1: Mittegroße Bereitstellung](#scenario-1) finden Sie weitere Kommentare zu Proxys, Präferenzzentren/Abonnements und Speicherplatznutzung.
 
 ### Datenbank
 
@@ -229,7 +229,7 @@ Wie die Größe von E-Mail-Kampagnen bedeutet auch die Anzahl von SMS-Nachrichte
 * **Komplexität des Datenbankschemas**
 Die Datenmenge für jede aktive Empfängerin und jeden aktiven Empfänger erfordert sowohl Speicherplatz als auch Datenbankpuffer, sodass mehr Empfängerinnen und Empfänger im Allgemeinen mehr Speicher und CPU auf dem Datenbank-Server benötigen. Bei komplexen Schemata müssen auch mehr Tabellen für die Segmentierung zusammengefügt werden, sodass Segmentierungsvorgänge unter Umständen deutlich langsamer durchgeführt werden und mehr Datenbank-CPU und Arbeitsspeicher erforderlich sind, wenn Daten über mehrere Tabellen verteilt sind.
 
-   Der Arbeitsspeicher für den Datenbank-Server wird geschätzt, indem sichergestellt wird, dass der Datenbankpuffer-Pool groß genug für alle Empfängerdaten sowie die temporären Tabellen für aktive Workflows ist und dazu noch eine gewisse Reserve für andere Datenbankvorgänge hat.
+  Der Arbeitsspeicher für den Datenbank-Server wird geschätzt, indem sichergestellt wird, dass der Datenbankpuffer-Pool groß genug für alle Empfängerdaten sowie die temporären Tabellen für aktive Workflows ist und dazu noch eine gewisse Reserve für andere Datenbankvorgänge hat.
 
 * **Nutzung ausgehender Interaktionen**
 Regeln für Interaktionen im Batch-Modus werden in Workflows ausgewertet, die die gesamte Berechnungskomplexität an die Datenbank übergeben. Der wichtigste Faktor für den Aufwand in der Datenbank ist die Gesamtzahl der geeigneten Angebote, die während eines Engine-Aufrufs berechnet wurden (Zielgruppengröße x durchschnittliche Anzahl der Angebote pro Empfänger, bevor die n besten Angebote beibehalten werden). Die CPU-Geschwindigkeit des Datenbank-Servers ist der wichtigste Leistungsfaktor.
@@ -240,7 +240,7 @@ Regeln und Angebote für eingehende Interaktionen werden in der Marketing-Datenb
 * **Aufbewahrungszeitraum von Tracking-Daten**
 Werden Tracking-Daten länger als 90 Tage aufbewahrt, ist mehr Datenbankspeicher erforderlich. Außerdem kann das System dadurch langsamer werden, da neue Tracking-Daten in große Tabellen eingefügt werden. Das Tracking von Daten ist nach 90 Tagen nicht mehr für die Kampagnensegmentierung nützlich. Daher wird eine kürzere Aufbewahrungsfrist empfohlen.
 
-   Tracking-Daten sollten in Adobe Analytics oder ein anderes Analysesystem verschoben werden, wenn Sie auf eine langfristige Analyse des Marketing-Erlebnisses der Empfängerinnen und Empfänger angewiesen sind.
+  Tracking-Daten sollten in Adobe Analytics oder ein anderes Analysesystem verschoben werden, wenn Sie auf eine langfristige Analyse des Marketing-Erlebnisses der Empfängerinnen und Empfänger angewiesen sind.
 
 ## Virtualisierung
 

@@ -10,7 +10,7 @@ exl-id: 424faf25-2fd5-40d1-a2fc-c715fc0b8190
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '1367'
-ht-degree: 85%
+ht-degree: 87%
 
 ---
 
@@ -36,7 +36,7 @@ Dazu werden E-Mail-Dateien, die den gesendeten E-Mails entsprechen, auf einen Re
 
 ## Aktivieren von E-Mail-BCC (vor Ort) {#activating-email-archiving--on-premise-}
 
-[!BADGE On-Premise und Hybrid]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für On-Premise- und Hybridbereitstellungen"}
+[!BADGE Hybrid und On-Premise]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"}
 
 
 Gehen Sie wie unten beschrieben vor, um die BCC-E-Mail-Archivierung zu aktivieren, wenn Adobe Campaign vor Ort installiert ist.
@@ -85,16 +85,16 @@ Nachdem der lokale Ordnerpfad definiert wurde, fügen Sie die folgenden Elemente
 
 * **compressionFormat**: Format, das beim Komprimieren der .eml-Dateien verwendet wird. Die möglichen Werte sind:
 
-   **0**: keine Komprimierung (Standardwert)
+  **0**: keine Komprimierung (Standardwert)
 
-   **1**: Komprimierung (.zip-Format)
+  **1**: Komprimierung (.zip-Format)
 
 * **compressBatchSize**: Anzahl der eml-Dateien, die einem Archiv hinzugefügt wurden (.zip-Datei).
 * **archivingType**: zu verwendende Archivierungsstrategie. Die möglichen Werte sind:
 
-   **0**: Rohkopien gesendeter E-Mails werden im .eml-Format im **Ordner &quot;dataLogPath** &quot;gespeichert (Standardwert). Eine Archivierungskopie der **`<deliveryid>-<broadlogid>-sent.eml`** Datei wird im Ordner **dataLogPath/archives** gespeichert. Der Pfad der gesendeten E-Mail-Datei wird **`<datalogpath>archivesYYYY-MM-DDHHh <deliveryid>-<broadlogid>-sent.eml`** geändert.
+  **0**: Rohkopien gesendeter E-Mails werden im .eml-Format im **Ordner &quot;dataLogPath** &quot;gespeichert (Standardwert). Eine Archivierungskopie der **`<deliveryid>-<broadlogid>-sent.eml`** Datei wird im Ordner **dataLogPath/archives** gespeichert. Der Pfad der gesendeten E-Mail-Datei wird **`<datalogpath>archivesYYYY-MM-DDHHh <deliveryid>-<broadlogid>-sent.eml`** geändert.
 
-   **1**: Rohkopien gesendeter E-Mails werden im .eml-Format im **Ordner &quot;dataLogPath** &quot;gespeichert und über SMTP an die BCC-E-Mail-Adresse gesendet. Sobald die E-Mail-Kopien an die BCC-Adresse gesendet werden, wird der Name der Archivdatei **`<deliveryid>-<broadlogid>-sent-archived.eml`** und die Datei wird in den Ordner **dataLogPath/archives** verschoben. Der Pfad der gesendeten und archivierten E-Mail-Datei wird dann **`<datalogpath>archivesYYYY-MM-DDHHh<deliveryid>- <broadlogid>-sent-archived.eml`** angezeigt.
+  **1**: Rohkopien gesendeter E-Mails werden im .eml-Format im **Ordner &quot;dataLogPath** &quot;gespeichert und über SMTP an die BCC-E-Mail-Adresse gesendet. Sobald die E-Mail-Kopien an die BCC-Adresse gesendet werden, wird der Name der Archivdatei **`<deliveryid>-<broadlogid>-sent-archived.eml`** und die Datei wird in den Ordner **dataLogPath/archives** verschoben. Der Pfad der gesendeten und archivierten E-Mail-Datei wird dann **`<datalogpath>archivesYYYY-MM-DDHHh<deliveryid>- <broadlogid>-sent-archived.eml`** angezeigt.
 
 * **expirationDelay**: Anzahl der Tage .eml-Dateien werden zur Archivierung aufbewahrt. Nach dieser Verzögerung werden sie zur Komprimierung automatisch in den Ordner **dataLogPath/archives** verschoben. Standardmäßig laufen .eml-Dateien nach zwei Tagen ab.
 * **purgeArchivesDelay**: Die Anzahl der Tage, die Archive im **Ordner &quot;dataLogPath/`<archives>`** &quot;gespeichert werden. Nach diesem Zeitraum werden sie endgültig gelöscht. Die Bereinigung beginnt mit dem Start der MTA. Standardmäßig wird sie alle sieben Tage durchgeführt.
@@ -106,7 +106,7 @@ Stellen Sie sicher, dass Sie diese Parameter an den E-Mail-Versand-Durchsatz anp
 
 ## BCC-E-Mail-Adresse konfigurieren (vor Ort) {#configuring-the-bcc-email-address--on-premise-}
 
-[!BADGE On-Premise und Hybrid]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für On-Premise- und Hybridbereitstellungen"}
+[!BADGE Hybrid und On-Premise]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"}
 
 
 >[!IMPORTANT]
@@ -132,7 +132,7 @@ Verwenden Sie in der **config-`<instance name>.xml`** -Datei die folgenden Param
 
 ## Wechseln zum neuen E-Mail-BCC {#updated-email-archiving-system--bcc-}
 
-[!BADGE On-Premise und Hybrid]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für On-Premise- und Hybridbereitstellungen"}
+[!BADGE Hybrid und On-Premise]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"}
 
 
 

@@ -6,7 +6,7 @@ badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classi
 feature: Workflows, Channels Activity
 exl-id: 72fbdd1d-a105-4e9f-9e17-2e9d62d2bb80
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1040'
 ht-degree: 100%
 
@@ -28,33 +28,33 @@ Die Aktivität **Versand** wird je nach Kontext zur Konfiguration oder zum Start
 
    * Zur Auswahl des zu bearbeitenden Versands stehen folgende Optionen zur Verfügung: **[!UICONTROL Wird durch die Transition angegeben]**.
 
-      Diese Option kann verwendet werden, wenn eine vorangehende Workflow-Aktivität bereits den Versand erstellt oder bezeichnet. Dies kann wie in unten stehendem Beispiel durch eine Aktivität des gleichen Typs erfolgen, die eine ausgehende Transition erzeugt.
+     Diese Option kann verwendet werden, wenn eine vorangehende Workflow-Aktivität bereits den Versand erstellt oder bezeichnet. Dies kann wie in unten stehendem Beispiel durch eine Aktivität des gleichen Typs erfolgen, die eine ausgehende Transition erzeugt.
 
-      Im Beispiel wird zunächst der Versand erstellt. Dann werden die Zielgruppe und der Inhalt definiert. Schließlich werden die drei Elemente über die eingehende Transition einer zweiten Versandaktivität übermittelt und der Versand gestartet.
+     Im Beispiel wird zunächst der Versand erstellt. Dann werden die Zielgruppe und der Inhalt definiert. Schließlich werden die drei Elemente über die eingehende Transition einer zweiten Versandaktivität übermittelt und der Versand gestartet.
 
-      ![](assets/specified_transition_option_exemple.png)
+     ![](assets/specified_transition_option_exemple.png)
 
    * **[!UICONTROL Explizit]**. Wählen Sie in diesem Fall einen zuvor erstellten Versand aus der Dropdown-Liste des Felds **[!UICONTROL Versand]** aus.
 
-      Standardmäßig enthält die Liste die im Ordner **Sendungen** gespeicherten Kommunikationen, die noch nicht abgeschlossen sind. Klicken Sie auf das Symbol **[!UICONTROL Verknüpftes Element auswählen]**, um auf andere Ordner zugreifen zu können.
+     Standardmäßig enthält die Liste die im Ordner **Sendungen** gespeicherten Kommunikationen, die noch nicht abgeschlossen sind. Klicken Sie auf das Symbol **[!UICONTROL Verknüpftes Element auswählen]**, um auf andere Ordner zugreifen zu können.
 
-      ![](assets/diffusion_edit_1.png)
+     ![](assets/diffusion_edit_1.png)
 
-      Wählen Sie im Feld **[!UICONTROL Ordner]** den gewünschten Ordner aus oder klicken Sie auf **[!UICONTROL Unterordner anzeigen]**, um alle in den Unterordnern enthaltenen Sendungen anzuzeigen:
+     Wählen Sie im Feld **[!UICONTROL Ordner]** den gewünschten Ordner aus oder klicken Sie auf **[!UICONTROL Unterordner anzeigen]**, um alle in den Unterordnern enthaltenen Sendungen anzuzeigen:
 
-      ![](assets/diffusion_edit_2.png)
+     ![](assets/diffusion_edit_2.png)
 
-      Nach der Auswahl des gewünschten Versands können Sie diesen durch Klick auf das Symbol **[!UICONTROL Verknüpftes Element öffnen]** anzeigen.
+     Nach der Auswahl des gewünschten Versands können Sie diesen durch Klick auf das Symbol **[!UICONTROL Verknüpftes Element öffnen]** anzeigen.
 
    * Erstellen Sie ein Script zur Berechnung des Versands. Wählen Sie dazu die Option **[!UICONTROL Wird durch ein Script erstellt]** und geben Sie das Script ein. Sie können ein Eingabefenster öffnen, indem Sie auf **[!UICONTROL Bearbeiten...]** klicken. Im folgenden Beispiel wird die Versandkennung wiederhergestellt:
 
-      ![](assets/diffusion_edit_3.png)
+     ![](assets/diffusion_edit_3.png)
 
    * **[!UICONTROL Neu, basierend auf einer Vorlage erstellt]**. Wählen Sie die gewünschte Versandvorlage aus.
 
-      ![](assets/diffusion_edit_4.png)
+     ![](assets/diffusion_edit_4.png)
 
-      Klicken Sie auf das Symbol **[!UICONTROL Verknüpftes Element auswählen]**, um die Ordner zu durchsuchen und auf **[!UICONTROL Verknüpftes Element öffnen]**, um die ausgewählte Vorlage anzuzeigen.
+     Klicken Sie auf das Symbol **[!UICONTROL Verknüpftes Element auswählen]**, um die Ordner zu durchsuchen und auf **[!UICONTROL Verknüpftes Element öffnen]**, um die ausgewählte Vorlage anzuzeigen.
 
 1. **Bereich Empfänger**
 
@@ -88,15 +88,16 @@ Die Aktivität **Versand** wird je nach Kontext zur Konfiguration oder zum Start
 
    * **[!UICONTROL Ausgehende Transition erzeugen]**
 
-      Erzeugt eine ausgehende Transition im Anschluss an die Aktivität. Sie haben die Wahl, die Zielgruppe der Versandaktion in der Transition abzurufen, oder nicht.
+     Erzeugt eine ausgehende Transition im Anschluss an die Aktivität. Sie haben die Wahl, die Zielgruppe der Versandaktion in der Transition abzurufen, oder nicht.
 
    * **[!UICONTROL Zielgruppe nicht übermitteln]**
 
-      Die Zielgruppe wird nicht mit der ausgehenden Transition übermittelt.
+     Die Zielgruppe wird nicht mit der ausgehenden Transition übermittelt.
 
    * **[!UICONTROL Fehler verarbeiten]**
 
-      Siehe [Versand bearbeiten](delivery-control.md).
+     Siehe [Versand bearbeiten](delivery-control.md).
+
    Im Tab **Script** können die Versandparameter angepasst werden.
 
    ![](assets/edit_diffusion_fil_script.png)
@@ -148,11 +149,11 @@ Jedes eingehende Ereignis muss eine durch diese Parameter definierte Zielgruppe 
 
 * filename
 
-   Vollständiger Name der erzeugten Datei, wenn im Bereich **[!UICONTROL Empfänger]** die Option **[!UICONTROL Dateien werden durch die Eingangsereignisse angegeben]** angekreuzt wurde.
+  Vollständiger Name der erzeugten Datei, wenn im Bereich **[!UICONTROL Empfänger]** die Option **[!UICONTROL Dateien werden durch die Eingangsereignisse angegeben]** angekreuzt wurde.
 
 * contentId
 
-   Kennung des Inhalts, wenn im Bereich **[!UICONTROL Inhalt]** die Option **[!UICONTROL Wird durch das Eingangsereignis angegeben]** angekreuzt wurde.
+  Kennung des Inhalts, wenn im Bereich **[!UICONTROL Inhalt]** die Option **[!UICONTROL Wird durch das Eingangsereignis angegeben]** angekreuzt wurde.
 
 ## Ausgabeparameter {#output-parameters}
 

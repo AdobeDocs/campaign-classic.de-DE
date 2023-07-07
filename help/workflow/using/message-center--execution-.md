@@ -5,7 +5,7 @@ description: Message Center (Ausführung)
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Workflows
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '229'
 ht-degree: 100%
 
@@ -20,9 +20,9 @@ Die folgenden Workflows werden standardmäßig mit dem Add-on **Message Center �
 
 Weitere Informationen hierzu finden Sie je nach Campaign-Version in den folgenden Abschnitten:
 
-![](assets/do-not-localize/v7.jpeg)[  Dokumentation zu Campaign v7](../../message-center/using/about-transactional-messaging.md)
+![](assets/do-not-localize/v7.jpeg)[Dokumentation zu Campaign v7](../../message-center/using/about-transactional-messaging.md)
 
-![](assets/do-not-localize/v8.png)[  Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/transactional.html?lang=de)
+![](assets/do-not-localize/v8.png)[Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/transactional.html?lang=de)
 
 <table> 
  <tbody> 

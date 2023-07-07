@@ -119,19 +119,19 @@ Gehen Sie wie folgt vor:
 
    * Erstellen Sie die Instanz über die Konsole:
 
-      ![](assets/install_create_new_connexion.png)
+     ![](assets/install_create_new_connexion.png)
 
-      Weitere Informationen hierzu finden Sie unter [Erstellen einer Instanz und Anmelden](../../installation/using/creating-an-instance-and-logging-on.md).
+     Weitere Informationen hierzu finden Sie unter [Erstellen einer Instanz und Anmelden](../../installation/using/creating-an-instance-and-logging-on.md).
 
-      oder
+     oder
 
    * Erstellen Sie die Instanz mithilfe der Befehlszeilen:
 
-      ```
-      nlserver config -addinstance:demo/tracking.campaign.net*,console.campaign.net*
-      ```
+     ```
+     nlserver config -addinstance:demo/tracking.campaign.net*,console.campaign.net*
+     ```
 
-      Weitere Informationen hierzu finden Sie unter [Erstellen einer Instanz](../../installation/using/command-lines.md#creating-an-instance).
+     Weitere Informationen hierzu finden Sie unter [Erstellen einer Instanz](../../installation/using/command-lines.md#creating-an-instance).
 
 1. Bearbeiten Sie die **config-demo.xml** Datei (erstellt im vorherigen Schritt neben **config-default.xml**) und stellen Sie sicher, dass die **mta** (Versand), **wfserver** (Workflow), **inMail** (Bounce Messages) und **stat** (Statistiken) Prozesse aktiviert sind. Konfigurieren Sie dann die Adresse des Statistikservers:
 
@@ -235,13 +235,13 @@ Gehen Sie wie folgt vor:
    * E-Mail-Versand: Absender- und Antwortadressen sowie das Fehlerpostfach für Bounce Messages.
    * Tracking: Füllen Sie die externe URL, die für die Weiterleitung verwendet wird, und die interne URL, und klicken Sie auf **Registrierung auf dem/den Tracking-Server(n)** und validieren Sie sie dann im **Demo** -Instanz des Trackingservers.
 
-      Weitere Informationen hierzu finden Sie unter [Tracking-Konfiguration](../../installation/using/deploying-an-instance.md#tracking-configuration).
+     Weitere Informationen hierzu finden Sie unter [Tracking-Konfiguration](../../installation/using/deploying-an-instance.md#tracking-configuration).
 
-      ![](assets/s_ncs_install_deployment_wiz_09.png)
+     ![](assets/s_ncs_install_deployment_wiz_09.png)
 
-      Da der Adobe Campaign-Server sowohl als Anwendungsserver als auch als Weiterleitungsserver verwendet wird, ist die interne URL, die zum Erfassen von Trackinglogs und Transfer-URLs verwendet wird, eine direkte interne Verbindung zu Tomcat (https://localhost:8080).
+     Da der Adobe Campaign-Server sowohl als Anwendungsserver als auch als Weiterleitungsserver verwendet wird, ist die interne URL, die zum Erfassen von Trackinglogs und Transfer-URLs verwendet wird, eine direkte interne Verbindung zu Tomcat (https://localhost:8080).
 
    * Bounce-Verwaltung: Geben Sie die Parameter für die Verarbeitung der Bounce Message ein (nehmen Sie nicht die **Nicht verarbeitete Bounce Messages** berücksichtigt werden).
    * Zugriff über: Geben Sie die beiden URLs für Berichte, Webformulare und Mirrorseiten an.
 
-      ![](assets/d_ncs_install_web_url.png)
+     ![](assets/d_ncs_install_web_url.png)

@@ -7,7 +7,7 @@ badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: SMS
 exl-id: a2783a5e-6d38-41a1-b5c6-24ab489116f8
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1826'
 ht-degree: 100%
 
@@ -349,7 +349,7 @@ Um dies zu vermeiden, wenden Sie je nach verwendetem Provider eine der folgenden
 * Erstellen Sie für jedes externe Konto ein Provider-Konto.
 * Verwenden Sie das Feld **[!UICONTROL Systemtyp]** im Tab **[!UICONTROL Mobiltelefon]** > **[!UICONTROL Verbindungsparameter]**, um jede Kurzwahlnummer zu unterscheiden. Bitten Sie Ihren Provider um einen anderen Wert für jedes Konto.
 
-   ![](assets/extended_smpp_system-type.png)
+  ![](assets/extended_smpp_system-type.png)
 
 Die Schritte zum Einrichten eines externen Kontos mithilfe des Connectors „Erweitertes allgemeines SMPP“ sind im Abschnitt [Externes SMPP-Konto erstellen](#creating-an-smpp-external-account) beschrieben.
 

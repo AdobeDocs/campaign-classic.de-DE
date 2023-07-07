@@ -7,7 +7,7 @@ badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Reporting
 exl-id: 05f76bdf-6dcd-4360-9e72-0ba6a4dd0d5e
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2643'
 ht-degree: 100%
 
@@ -64,15 +64,15 @@ Eine Gruppierung enthält selbst ebenfalls eine Header-, eine Detail- und eine F
 
 * **Header**: erlaubt die Angabe von Spaltentiteln.
 
-   ![](assets/s_advuser_ergo_listgroup_003a.png)
+  ![](assets/s_advuser_ergo_listgroup_003a.png)
 
 * **Detail**: enthält die Werte der Statistiken.
 
-   ![](assets/s_advuser_ergo_listgroup_004.png)
+  ![](assets/s_advuser_ergo_listgroup_004.png)
 
 * **Footer**: erlaubt die Anzeige der Summen der Statistiken.
 
-   ![](assets/s_advuser_ergo_listgroup_003.png)
+  ![](assets/s_advuser_ergo_listgroup_003.png)
 
 Sie können beliebig viele Spalten und Zeilen hinzufügen.
 
@@ -104,19 +104,19 @@ Wählen Sie den Menüpunkt **[!UICONTROL Ausdruck]**, um die anzuzeigenden Werte
 
 * Wenn Sie die zu analysierenden Werte direkt in die Tabelle einfügen möchten, wählen Sie sie unter den verfügbaren Feldern aus.
 
-   Die Liste der verfügbaren Felder entspricht dem Inhalt der Abfrage, die der Tabelle im Berichtdiagramm vorausgeht.
+  Die Liste der verfügbaren Felder entspricht dem Inhalt der Abfrage, die der Tabelle im Berichtdiagramm vorausgeht.
 
-   ![](assets/s_advuser_ergo_listgroup_011.png)
+  ![](assets/s_advuser_ergo_listgroup_011.png)
 
 * Erfassen Sie einen Titel, zum Beispiel in einer Header-Zelle.
 
-   Gehen Sie hierzu vor wie beim Einfügen eines Datenbank-Felds, aber wählen Sie keinen Ausdruck aus. Erfassen Sie den Titel im Feld **[!UICONTROL Titel]**: Er wird genau so angezeigt.
+  Gehen Sie hierzu vor wie beim Einfügen eines Datenbank-Felds, aber wählen Sie keinen Ausdruck aus. Erfassen Sie den Titel im Feld **[!UICONTROL Titel]**: Er wird genau so angezeigt.
 
 * Berechnen Sie ein Aggregat (Durchschnitt, Summe etc.) und lassen Sie es in einer Zelle anzeigen.
 
-   Nutzen Sie hierzu den Menüpunkt **[!UICONTROL Aggregate]** und wählen Sie die gewünschte Funktion aus.
+  Nutzen Sie hierzu den Menüpunkt **[!UICONTROL Aggregate]** und wählen Sie die gewünschte Funktion aus.
 
-   ![](assets/s_advuser_ergo_listgroup_008.png)
+  ![](assets/s_advuser_ergo_listgroup_008.png)
 
 ### Definieren des Zellenformats {#defining-cell-format}
 
@@ -248,7 +248,6 @@ Doppelklicken Sie auf die erste Abfrage, um sie zu öffnen, und konfigurieren Si
    * Fremdschlüssel der &#39;Kampagne&#39;-Relation (&#39;id&#39;-Feld) **@operationId**
    * Fehlerrate: **@errorRatio**
 
-
 1. Klicken Sie zweimal auf die Schaltfläche **[!UICONTROL Weiter]** bis zur Etappe **[!UICONTROL Datenfilterung]**.
 
    Fügen Sie eine Filterbedingung hinzu, um nur die zu einer Kampagne gehörenden Sendungen abzurufen.
@@ -371,7 +370,7 @@ Es werden eine zweite Abfrage und eine zweite Seite hinzugefügt, um die Details
 
    * Konfigurieren Sie die Zählung der Versandlogs über deren Primärschlüssel:
 
-      ![](assets/reporting_quick_start_query-2_count.png)
+     ![](assets/reporting_quick_start_query-2_count.png)
 
    * Fragen Sie die E-Mail-Domains der Empfänger ab und aktivieren Sie die Gruppierung für dieses Feld. Aktivieren Sie hierzu die Option **[!UICONTROL Gruppieren]** der Spalte des Domain-Namens.
 
@@ -382,8 +381,7 @@ Es werden eine zweite Abfrage und eine zweite Seite hinzugefügt, um die Details
    * count(Primärschlüssel): **@count**
    * E-Mail-Domain (Empfänger): **@domain**
 
-      ![](assets/reporting_quick_start_query-2_alias.png)
-
+     ![](assets/reporting_quick_start_query-2_alias.png)
 
 1. Klicken Sie zweimal auf die Schaltfläche **[!UICONTROL Weiter]**, bis zum Schritt **[!UICONTROL Datenfilter]**.
 
@@ -412,9 +410,9 @@ Es werden eine zweite Abfrage und eine zweite Seite hinzugefügt, um die Details
    * Fügen Sie rechts zwei zusätzliche Spalten ein.
    * Fügen Sie in der ersten Zelle der Detailzeile den Ausdruck **[!UICONTROL rowNum()-1]** hinzu, um die Anzahl der Zeilen zu zählen. Ändern Sie anschließend das Format der Zelle: Wählen Sie im Tab **[!UICONTROL Mehr]** die Option **[!UICONTROL Farbplakette]** aus und klicken Sie auf **[!UICONTROL OK]**.
 
-      ![](assets/s_advuser_report_listgroup_018.png)
+     ![](assets/s_advuser_report_listgroup_018.png)
 
-      Diese Konfiguration ermöglicht es, die Tabelle als Legende für die Grafik zu verwenden.
+     Diese Konfiguration ermöglicht es, die Tabelle als Legende für die Grafik zu verwenden.
 
    * Fügen Sie in der zweiten Zelle der Detailzeile den Ausdruck **[!UICONTROL E-Mail-Domain(Empfänger)]** hinzu.
    * Fügen Sie in der dritten Zelle der Detailzeile den Ausdruck **[!UICONTROL count(Primärschlüssel)]** hinzu.

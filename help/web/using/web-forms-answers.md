@@ -7,7 +7,7 @@ badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Web Forms
 exl-id: 5d48bb27-1884-47f1-acb7-dff5113565bc
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '892'
 ht-degree: 100%
 
@@ -26,11 +26,11 @@ Für jedes Eingabefeld in einem Formular sind die folgenden Speicheroptionen ver
 
 * **[!UICONTROL Empfänger bearbeiten]**
 
-   Sie können ein Feld der Datenbank auswählen: Die Antworten der Benutzer werden in diesem Feld gespeichert. Für jeden Benutzer wird nur der zuletzt eingegebene Wert gespeichert: Es wird seinem Profil hinzugefügt: Siehe [Speichern von Daten in der Datenbank](#storing-data-in-the-database).
+  Sie können ein Feld der Datenbank auswählen: Die Antworten der Benutzer werden in diesem Feld gespeichert. Für jeden Benutzer wird nur der zuletzt eingegebene Wert gespeichert: Es wird seinem Profil hinzugefügt: Siehe [Speichern von Daten in der Datenbank](#storing-data-in-the-database).
 
 * **[!UICONTROL Variable]**
 
-   Wenn Sie die Informationen nicht in der Datenbank speichern möchten, können Sie eine Variable verwenden. Lokale Variablen können in vorgelagerten Arbeitsschritten festgelegt werden. Siehe [Daten in einer lokalen Variablen speichern](#storing-data-in-a-local-variable).
+  Wenn Sie die Informationen nicht in der Datenbank speichern möchten, können Sie eine Variable verwenden. Lokale Variablen können in vorgelagerten Arbeitsschritten festgelegt werden. Siehe [Daten in einer lokalen Variablen speichern](#storing-data-in-a-local-variable).
 
 ### Speichern von Daten in der Datenbank {#storing-data-in-the-database}
 
@@ -88,25 +88,25 @@ Für jedes Formular können die bereitgestellten Antworten in Feldern oder Titel
 
 * Für Inhalte, die in einem Datenbankfeld gespeichert werden:
 
-   ```
-   <%=ctx.recipient.@field name%
-   ```
+  ```
+  <%=ctx.recipient.@field name%
+  ```
 
 * Für Inhalte, die in einer lokalen Variablen gespeichert werden:
 
-   ```
-   <%= ctx.vars.variable name %
-   ```
+  ```
+  <%= ctx.vars.variable name %
+  ```
 
 * Für Inhalte, die in einem HTML-Textfeld gespeichert werden:
 
-   ```
-   <%== HTML field name %
-   ```
+  ```
+  <%== HTML field name %
+  ```
 
-   >[!NOTE]
-   >
-   >Im Gegensatz zu anderen Feldern, bei denen `<%=`-Zeichen durch Escape-Zeichen ersetzt werden, wird der HTML-Inhalt unverändert unter Verwendung der `<%==`-Syntax gespeichert.
+  >[!NOTE]
+  >
+  >Im Gegensatz zu anderen Feldern, bei denen `<%=`-Zeichen durch Escape-Zeichen ersetzt werden, wird der HTML-Inhalt unverändert unter Verwendung der `<%==`-Syntax gespeichert.
 
 ## Web-Formular-Antworten speichern {#saving-web-forms-answers}
 
@@ -118,15 +118,15 @@ Sie haben zwei Möglichkeiten, diese Komponente zu verwenden:
 
 * Wenn auf das Webformular über einen in einer E-Mail gesendeten Link zugegriffen wird und der Benutzer, der auf die Anwendung zugreift, bereits in der Datenbank gespeichert ist, können Sie die Option **[!UICONTROL Vorausgefüllten Datensatz aktualisieren]** aktivieren. Weitere Informationen hierzu finden Sie unter [Formular per E-Mail versenden](publishing-a-web-form.md#delivering-a-form-via-email).
 
-   In diesem Fall verwendet Adobe Campaign den verschlüsselten Primärschlüssel des Benutzerprofils. Das ist eine eindeutige Kennung, die von Adobe Campaign jedem Profil zugewiesen wird. Konfigurieren Sie die Informationen so, dass sie über die Vorausfüllen-Komponente geladen werden. Weitere Informationen finden Sie unter [Formulardaten vorausfüllen](publishing-a-web-form.md#pre-loading-the-form-data).
+  In diesem Fall verwendet Adobe Campaign den verschlüsselten Primärschlüssel des Benutzerprofils. Das ist eine eindeutige Kennung, die von Adobe Campaign jedem Profil zugewiesen wird. Konfigurieren Sie die Informationen so, dass sie über die Vorausfüllen-Komponente geladen werden. Weitere Informationen finden Sie unter [Formulardaten vorausfüllen](publishing-a-web-form.md#pre-loading-the-form-data).
 
-   >[!CAUTION]
-   >
-   >Mit dieser Option werden die Benutzerdaten, einschließlich der E-Mail-Adresse, überschrieben, wenn ein Feld vorhanden ist, über das eine neue Eingabe getätigt werden kann. Diese Option kann nicht zur Erstellung neuer Profile verwendet werden und erfordert die Verwendung eines Felds zum Vorausfüllen im Formular.
+  >[!CAUTION]
+  >
+  >Mit dieser Option werden die Benutzerdaten, einschließlich der E-Mail-Adresse, überschrieben, wenn ein Feld vorhanden ist, über das eine neue Eingabe getätigt werden kann. Diese Option kann nicht zur Erstellung neuer Profile verwendet werden und erfordert die Verwendung eines Felds zum Vorausfüllen im Formular.
 
 * Um Empfängerdaten in der Datenbank anzureichern, bearbeiten Sie das Feld &quot;Speicherung&quot; und wählen Sie den Abstimmschlüssel aus. Wählen Sie die Abstimmfelder für die interne Verwendung (normalerweise für das Intranet) oder für ein Formular zum Erstellen neuer Profile aus. In dem Feld sind alle Datenbankfelder vorhanden, die auf den verschiedenen Seiten der Web-Anwendung verwendet werden:
 
-   ![](assets/s_ncs_admin_survey_save_box_edit.png)
+  ![](assets/s_ncs_admin_survey_save_box_edit.png)
 
 Standardmäßig werden die Daten über den Vorgang **[!UICONTROL Aktualisieren oder einfügen]** in die Datenbank importiert: Wenn ein Element bereits in der Datenbank vorhanden ist, wird es aktualisiert (z. B. der ausgewählte Newsletter oder die eingegebene E-Mail-Adresse). Wenn es noch nicht existiert, werden die Informationen hinzugefügt.
 

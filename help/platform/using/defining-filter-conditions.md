@@ -9,7 +9,7 @@ content-type: reference
 topic-tags: creating-queries
 exl-id: b62e23e5-f1b7-44c4-82d9-95c6b3240352
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3394'
 ht-degree: 100%
 
@@ -134,15 +134,15 @@ Standardmäßig wird die Verknüpfung **[!UICONTROL Und]** vorgeschlagen. Anhand
 * **[!UICONTROL Und]** fügt eine weitere Filterbedingung hinzu und schränkt die Ergebnisse weiter ein.
 * **[!UICONTROL Oder]** berücksichtigt mindestens eine der angegebenen Bedingungen.
 
-   Im unten stehenden Beispiel werden die Empfänger ausgegeben, deren E-Mail-Domain &quot;web.de&quot; enthält ODER deren Postleitzahl mit &quot;20&quot; beginnt.
+  Im unten stehenden Beispiel werden die Empfänger ausgegeben, deren E-Mail-Domain &quot;web.de&quot; enthält ODER deren Postleitzahl mit &quot;20&quot; beginnt.
 
-   ![](assets/query_condition_modif_02.png)
+  ![](assets/query_condition_modif_02.png)
 
 * **[!UICONTROL Außer]** ermöglicht die Konfiguration einer Ausnahme, wenn die erste Filterbedingung keine Ergebnisse zulässt.
 
-   Im unten stehenden Beispiel werden die Empfänger ausgegeben, deren E-Mail-Domain &quot;web.de&quot; enthält, AUSSER wenn der Familienname &quot;Schmidt&quot; lautet.
+  Im unten stehenden Beispiel werden die Empfänger ausgegeben, deren E-Mail-Domain &quot;web.de&quot; enthält, AUSSER wenn der Familienname &quot;Schmidt&quot; lautet.
 
-   ![](assets/query_condition_modif_03.png)
+  ![](assets/query_condition_modif_03.png)
 
 Folgendes Beispiel zeigt einen Filter zur Anzeige aller Empfänger spanischer Sprache ODER aller Frauen, deren Mobiltelefonnummer angegeben ist, ODER aller Empfänger, deren Kundennummer nicht angegeben ist und deren Firma mit &quot;N&quot; anfängt.
 
@@ -155,7 +155,7 @@ In diesem Kapitel wird erläutert, wie anhand der blauen Pfeile in der Symbollei
 * Der Rechtspfeil fügt eine Klammerebene hinzu.
 * Der Linkspfeil entfernt eine Klammerebene.
 
-   ![](assets/query_condition_modif_04.png)
+  ![](assets/query_condition_modif_04.png)
 
 * Die nach oben und unten gerichteten Pfeile ermöglichen das Verschieben einer Bedingung und somit die Reihenfolge der Filterung.
 
@@ -266,7 +266,6 @@ Relationen zu einer Tabelle oder zu Sammlungselementen:
 >* Ändern Sie die Reihenfolge der Ausgabespalten anhand der Pfeile.
 >* Verwenden Sie die Schaltfläche **[!UICONTROL Werteverteilung]**, um die im ausgewählten Feld enthaltenen Werte anzuzeigen (z. B. das anteilige Vorkommen von Städten oder Sprachen).
 
-
 ## Berechnete Felder erstellen {#creating-calculated-fields}
 
 Sie haben die Möglichkeit, im Schritt der Datenformatierung ein berechnetes Feld hinzuzufügen. Dieses wird bei der Datenvorschau in Form einer zusätzlichen Spalte angezeigt. Klicken Sie hierfür auf die Schaltfläche **[!UICONTROL Berechnetes Feld hinzufügen]**.
@@ -277,25 +276,25 @@ Vier verschiedene Feldtypen stehen zur Verfügung:
 
 * **[!UICONTROL Unveränderliche Zeichenkette]**: Fügt eine Zeichenkette hinzu.
 
-   ![](assets/query_editor_nveau_60.png)
+  ![](assets/query_editor_nveau_60.png)
 
 * **[!UICONTROL Zeichenkette mit JavaScript-Fusion]**: Das berechnete Feld kombiniert eine Zeichenkette mit JavaScript-Direktiven.
 
-   ![](assets/query_editor_nveau_61.png)
+  ![](assets/query_editor_nveau_61.png)
 
 * **[!UICONTROL JavaScript-Ausdruck]**: Der Wert des berechneten Felds ist das Ergebnis einer JavaScript-Funktion. Der ausgegebene Wert kann einen bestimmten Typ aufweisen (Ziffer, Datum usw.).
 
-   ![](assets/query_editor_nveau_62.png)
+  ![](assets/query_editor_nveau_62.png)
 
 * **[!UICONTROL Auflistungen]**: Dieser Feldtyp erlaubt die Verwendung/Umwandlung des Inhalts einer anderen Spalte.
 
-   Dem Quellwert einer Spalte kann ein Zielwert zugeordnet werden. Es ist der Zielwert, der in der neuen Ausgabespalte angezeigt wird.
+  Dem Quellwert einer Spalte kann ein Zielwert zugeordnet werden. Es ist der Zielwert, der in der neuen Ausgabespalte angezeigt wird.
 
-   Ein Beispiel zu berechneten **[!UICONTROL Auflistungsfeldern]** können Sie [diesem Abschnitt](../../workflow/using/adding-enumeration-type-calculated-field.md) entnehmen.
+  Ein Beispiel zu berechneten **[!UICONTROL Auflistungsfeldern]** können Sie [diesem Abschnitt](../../workflow/using/adding-enumeration-type-calculated-field.md) entnehmen.
 
-   ![](assets/query_editor_nveau_63.png)
+  ![](assets/query_editor_nveau_63.png)
 
-   Ein berechnetes Feld vom Typ **[!UICONTROL Auflistungen]** kann vier Bedingungen enthalten:
+  Ein berechnetes Feld vom Typ **[!UICONTROL Auflistungen]** kann vier Bedingungen enthalten:
 
    * **[!UICONTROL Quellwert beibehalten]** gibt den Quellwert unverändert als Zielwert aus.
    * **[!UICONTROL Folgenden Wert benutzen]** ermöglicht die Eingabe eines Standard-Zielwerts für fehlende Quellwerte.
@@ -341,7 +340,7 @@ Nachfolgend werden die **[!UICONTROL Formeltypen]** detailliert dargestellt:
    * **[!UICONTROL Minimaler Wert]**: gibt beispielsweise die Kunden aus, die zuletzt ein Angebot angenommen haben.
    * **[!UICONTROL Durchschnitt]**: berechnet beispielsweise das durchschnittliche Alter der Empfänger.
 
-      Das Feld **[!UICONTROL Unterschiedlich]** gibt die eindeutige Werte aus, die ungleich Null sind. Auf diese Weise lassen sich z. B. alle Trackinglogs für einen Empfänger abfragen und auf 1 setzen, da es sich um nur einen Empfänger handelt.
+     Das Feld **[!UICONTROL Unterschiedlich]** gibt die eindeutige Werte aus, die ungleich Null sind. Auf diese Weise lassen sich z. B. alle Trackinglogs für einen Empfänger abfragen und auf 1 setzen, da es sich um nur einen Empfänger handelt.
 
 1. **[!UICONTROL Ausdruck]**: öffnet das Fenster **[!UICONTROL Ausdruck bearbeiten]**. Ein Ausdruck kann beispielsweise Postleitzahlen mit mehr als 4 bzw. 5 Ziffern filtern, um eventuelle Eingabefehler zu korrigieren.
 

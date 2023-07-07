@@ -21,7 +21,7 @@ ht-degree: 5%
 
 ## Einleitung {#introduction}
 
-### Überblick {#overview}
+### Übersicht {#overview}
 
 >[!IMPORTANT]
 >
@@ -73,7 +73,6 @@ Die folgenden Schritte müssen mit großer Sorgfalt ausgeführt werden: Einige P
 >* Die folgenden Befehle gelten im Kontext eines **prod** Instanz und **dev** -Instanz unter PostgreSQL.
 >
 
-
 ### Schritt 1: Erstellen einer Sicherungskopie der Quellumgebungsdaten (prod) {#step-1---make-a-backup-of-the-source-environment--prod--data}
 
 Datenbanken kopieren
@@ -121,15 +120,15 @@ Verwenden Sie die folgenden Befehle, um alle Prozesse zu beenden:
 
 * Windows:
 
-   ```
-   net stop nlserver6
-   ```
+  ```
+  net stop nlserver6
+  ```
 
 * Unter Linux:
 
-   ```
-   /etc/init.d/nlserver6 stop
-   ```
+  ```
+  /etc/init.d/nlserver6 stop
+  ```
 
 Verwenden Sie den folgenden Befehl, um zu überprüfen, ob alle Prozesse beendet wurden:
 
@@ -236,15 +235,15 @@ Verwenden Sie die folgenden Befehle, um die Adobe Campaign-Prozesse zu starten:
 
 * Windows:
 
-   ```
-   net start nlserver6
-   ```
+  ```
+  net start nlserver6
+  ```
 
 * Unter Linux:
 
-   ```
-   /etc/init.d/nlserver6 start
-   ```
+  ```
+  /etc/init.d/nlserver6 start
+  ```
 
 Verwenden Sie den folgenden Befehl, um zu überprüfen, ob die Prozesse gestartet wurden:
 

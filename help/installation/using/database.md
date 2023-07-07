@@ -57,10 +57,10 @@ SELECT * FROM nls_database_parameters ;
 
 * Bei einer Unicode-Installation werden folgende Kodierungen unterstützt:
 
-   ```
-   NLS_NCHAR_CHARACTERSET         AL16UTF16
-   NLS_CHARACTERSET         AL32UTF8
-   ```
+  ```
+  NLS_NCHAR_CHARACTERSET         AL16UTF16
+  NLS_CHARACTERSET         AL32UTF8
+  ```
 
 * Bei einer ANSI-Installation (Nicht-Unicode) wird nur die folgende Kodierung unterstützt:
 

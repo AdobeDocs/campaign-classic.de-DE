@@ -7,7 +7,7 @@ badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Line App
 exl-id: 1baaabbd-9fd7-4d9b-b78e-d2a559d7dddb
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1320'
 ht-degree: 100%
 
@@ -165,19 +165,19 @@ Dabei können folgende Elemente verwendet werden:
 
 * **[!UICONTROL Personalisiertes Bild]**
 
-   >[!NOTE]
-   >
-   >Über die Variable **%SIZE%** lässt sich die Anzeige entsprechend der Bildschirmgröße der Mobilgeräte der Nachrichtenempfänger optimieren.
+  >[!NOTE]
+  >
+  >Über die Variable **%SIZE%** lässt sich die Anzeige entsprechend der Bildschirmgröße der Mobilgeräte der Nachrichtenempfänger optimieren.
 
-   ![](assets/line_message_04.png)
+  ![](assets/line_message_04.png)
 
 * **[!UICONTROL Bild-URL]** nach Bildschirmgröße des Geräts
 
-   ![](assets/line_message_03.png)
+  ![](assets/line_message_03.png)
 
-   Über die Option **[!UICONTROL Bilder nach Bildschirmgröße des Geräts definieren]** stehen verschiedene Bildauflösungen zur Verfügung, anhand derer Sie die Darstellung des Versands auf Mobilgeräten optimieren können. Es werden nur Bilder unterstützt, die die gleiche Höhe und Breite aufweisen.
+  Über die Option **[!UICONTROL Bilder nach Bildschirmgröße des Geräts definieren]** stehen verschiedene Bildauflösungen zur Verfügung, anhand derer Sie die Darstellung des Versands auf Mobilgeräten optimieren können. Es werden nur Bilder unterstützt, die die gleiche Höhe und Breite aufweisen.
 
-   Bilder können entsprechend der Bildschirmgröße definiert werden:
+  Bilder können entsprechend der Bildschirmgröße definiert werden:
 
    * 1040 px
    * 700 px
@@ -185,17 +185,17 @@ Dabei können folgende Elemente verwendet werden:
    * 300 px
    * 240 px
 
-   >[!CAUTION]
-   >
-   >Die Größe 1040 x 1040 Pixel ist für LINE-Bilder mit Links zwingend.
+  >[!CAUTION]
+  >
+  >Die Größe 1040 x 1040 Pixel ist für LINE-Bilder mit Links zwingend.
 
-   Fügen Sie dann Alternativtext hinzu, der auf dem Mobilgerät des Empfängers angezeigt wird.
+  Fügen Sie dann Alternativtext hinzu, der auf dem Mobilgerät des Empfängers angezeigt wird.
 
 * **[!UICONTROL Links]**
 
-   Im Bereich **[!UICONTROL Links]** können Sie verschiedene Layouts auswählen, entsprechend denen Ihr Bild in mehrere anklickbare Bereiche unterteilt wird. Anschließend können Sie jedem von ihnen eine spezifische **[!UICONTROL Link-URL]** zuweisen.
+  Im Bereich **[!UICONTROL Links]** können Sie verschiedene Layouts auswählen, entsprechend denen Ihr Bild in mehrere anklickbare Bereiche unterteilt wird. Anschließend können Sie jedem von ihnen eine spezifische **[!UICONTROL Link-URL]** zuweisen.
 
-   ![](assets/line_message_05.png)
+  ![](assets/line_message_05.png)
 
 ### Konfigurieren eines Videonachrichten-Versands {#configuring-a-video-message-delivery}
 

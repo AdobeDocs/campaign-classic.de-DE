@@ -6,7 +6,7 @@ badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classi
 feature: Workflows
 exl-id: c2f6033c-30cd-4eb4-adf1-ab2de7510220
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 100%
 
@@ -34,19 +34,19 @@ Mögliche Werte:
 
 * Server-Zeitzone
 
-   Verwendet die Zeitzone des Adobe-Campaign-Anwendungsservers.
+  Verwendet die Zeitzone des Adobe-Campaign-Anwendungsservers.
 
 * Benutzer-Zeitzone
 
-   Verwendet die Zeitzone des Adobe-Campaign-Benutzers, der die Ausführung des Workflows startet.
+  Verwendet die Zeitzone des Adobe-Campaign-Benutzers, der die Ausführung des Workflows startet.
 
 * Zeitzone der Datenbank
 
-   Verwendet die Zeitzone des Datenbankservers.
+  Verwendet die Zeitzone des Datenbankservers.
 
 * Bestimmte Zeitzonen
 
-   Verwendet die ausgewählte Zeitzone.
+  Verwendet die ausgewählte Zeitzone.
 
 Bei Auswahl der Option **[!UICONTROL Standard]** wird die Zeitzone des Workflows oder, wenn nicht vorhanden, des Anwendungsservers verwendet.
 

@@ -100,27 +100,27 @@ Beachten Sie bei der Installation von Adobe Campaign auf einem Debian 8/9-Betrie
 * OpenSSL muss zuvor installiert werden.
 * Installieren Sie libicu52 (Debian 8) oder libicu57 (Debian 9), libprotobuf9 (Debian8) und libc-ares2 mit den folgenden Befehlen:
 
-   ```
-   aptitude install libicu52 (Debian 8) libicu57 (Debian 9)
-   ```
+  ```
+  aptitude install libicu52 (Debian 8) libicu57 (Debian 9)
+  ```
 
-   ```
-   aptitude install libc-ares2
-   ```
+  ```
+  aptitude install libc-ares2
+  ```
 
-   ```
-   aptitude install libprotobuf9 (only Debian 8)
-   ```
+  ```
+  aptitude install libprotobuf9 (only Debian 8)
+  ```
 
 * Installieren Sie JDK7 mit dem folgenden Befehl:
 
-   ```
-   aptitude install openjdk-7-jdk (Debian 8)
-   ```
+  ```
+  aptitude install openjdk-7-jdk (Debian 8)
+  ```
 
-   ```
-   aptitude install openjdk-7-jdk (Debian 9)
-   ```
+  ```
+  aptitude install openjdk-7-jdk (Debian 9)
+  ```
 
 ## Parameter personalisieren {#personalizing-parameters}
 
@@ -178,55 +178,55 @@ Bearbeiten Sie bei Bedarf die **customer.sh** -Datei mithilfe der **vi customer.
 
 * Für den Oracle-Client:
 
-   ```
-   export ORACLE_HOME=/usr/local/instantclient_10_2
-   export TNS_ADMIN=/etc/oracle
-   export LD_LIBRARY_PATH=$ORACLE_HOME/lib:$LD_LIBRARY_PATH 
-   ```
+  ```
+  export ORACLE_HOME=/usr/local/instantclient_10_2
+  export TNS_ADMIN=/etc/oracle
+  export LD_LIBRARY_PATH=$ORACLE_HOME/lib:$LD_LIBRARY_PATH 
+  ```
 
-   Der Inhalt der Umgebungsvariablen ORACLE_HOME entspricht dem Installationsordner von Oracle.
+  Der Inhalt der Umgebungsvariablen ORACLE_HOME entspricht dem Installationsordner von Oracle.
 
-   Der Inhalt der Variable TNS_ADMIN muss mit dem Speicherort der Variablen **tnsnames.ora** -Datei.
+  Der Inhalt der Variable TNS_ADMIN muss mit dem Speicherort der Variablen **tnsnames.ora** -Datei.
 
 * Für LibreOffice:
 
-   Um Adobe Campaign auf einer bestehenden Version von LibreOffice auszuführen, sind zusätzliche Konfigurationen erforderlich: müssen Sie die Zugriffspfade zum Installationsordner angeben. Beispiel:
+  Um Adobe Campaign auf einer bestehenden Version von LibreOffice auszuführen, sind zusätzliche Konfigurationen erforderlich: müssen Sie die Zugriffspfade zum Installationsordner angeben. Beispiel:
 
    * Debian
 
-      Standardwerte für OOO_INSTALL_DIR und OOO_BASIS_INSTALL_DIR werden bereitgestellt. Sie können sie in **customer.sh** wenn Ihr Layout der LibreOffice-Installation anders ist:
+     Standardwerte für OOO_INSTALL_DIR und OOO_BASIS_INSTALL_DIR werden bereitgestellt. Sie können sie in **customer.sh** wenn Ihr Layout der LibreOffice-Installation anders ist:
 
-      ```
-      export OOO_BASIS_INSTALL_DIR=/usr/lib/libreoffice/ 
-      export OOO_INSTALL_DIR=/usr/lib/libreoffice/
-      ```
+     ```
+     export OOO_BASIS_INSTALL_DIR=/usr/lib/libreoffice/ 
+     export OOO_INSTALL_DIR=/usr/lib/libreoffice/
+     ```
 
    * CentOs
 
-      Verwenden Sie die folgenden Standardwerte:
+     Verwenden Sie die folgenden Standardwerte:
 
-      ```
-      export OOO_BASIS_INSTALL_DIR=/usr/lib64/libreoffice/
-      export OOO_INSTALL_DIR=/usr/lib64/libreoffice/
-      ```
+     ```
+     export OOO_BASIS_INSTALL_DIR=/usr/lib64/libreoffice/
+     export OOO_INSTALL_DIR=/usr/lib64/libreoffice/
+     ```
 
 * Für Java Development Kit (JDK):
 
-   Standardmäßig ist das Konfigurationsskript der Adobe Campaign-Umgebung (`~/nl6/env.sh`) sucht nach dem JDK-Installationsordner. Da dieses Verhalten nicht zu 100 % zuverlässig ist, müssen Sie angeben, welches JDK verwendet werden soll. Dazu können Sie die **JDK_HOME** Umgebungsvariable mithilfe des folgenden Befehls:
+  Standardmäßig ist das Konfigurationsskript der Adobe Campaign-Umgebung (`~/nl6/env.sh`) sucht nach dem JDK-Installationsordner. Da dieses Verhalten nicht zu 100 % zuverlässig ist, müssen Sie angeben, welches JDK verwendet werden soll. Dazu können Sie die **JDK_HOME** Umgebungsvariable mithilfe des folgenden Befehls:
 
-   ```
-   export JDK_HOME=/usr/java/jdk1.6.0_07
-   ```
+  ```
+  export JDK_HOME=/usr/java/jdk1.6.0_07
+  ```
 
-   >[!NOTE]
-   >
-   >Dies ist ein Beispiel. Stellen Sie sicher, dass die verwendete JDK-Version mit dem Ordnernamen übereinstimmt.
+  >[!NOTE]
+  >
+  >Dies ist ein Beispiel. Stellen Sie sicher, dass die verwendete JDK-Version mit dem Ordnernamen übereinstimmt.
 
-   Um die JDK-Konfiguration zu testen, melden Sie sich mit dem folgenden Befehl als Adobe Campaign-Systembenutzer an:
+  Um die JDK-Konfiguration zu testen, melden Sie sich mit dem folgenden Befehl als Adobe Campaign-Systembenutzer an:
 
-   ```
-   su - neolane
-   ```
+  ```
+  su - neolane
+  ```
 
 Sie müssen den Adobe Campaign-Dienst neu starten, damit die Änderungen berücksichtigt werden.
 
@@ -251,29 +251,29 @@ Bei Verwendung von Oracle mit Adobe Campaign müssen Sie die Oracle-Client-Ebene
 * Vollständigen Client verwenden
 * TNS-Definition
 
-   Die TNS-Definitionen müssen während der Installationsphase hinzugefügt werden. Verwenden Sie dazu die folgenden Befehle:
+  Die TNS-Definitionen müssen während der Installationsphase hinzugefügt werden. Verwenden Sie dazu die folgenden Befehle:
 
-   ```
-   cd /etc
-   mkdir oracle
-   cd oracle
-   vi tnsnames.ora
-   ```
+  ```
+  cd /etc
+  mkdir oracle
+  cd oracle
+  vi tnsnames.ora
+  ```
 
 * Umgebungsvariablen
 
-   Siehe [Umgebungsvariablen](../../installation/using/installing-packages-with-linux.md#environment-variables).
+  Siehe [Umgebungsvariablen](../../installation/using/installing-packages-with-linux.md#environment-variables).
 
 * Konfiguration für Adobe Campaign
 
-   Um die Installation des Oracle-Clients für Adobe Campaign abzuschließen, müssen Sie eine symbolische Verknüpfung für die **.so** von Adobe Campaign verwendete Datei.
+  Um die Installation des Oracle-Clients für Adobe Campaign abzuschließen, müssen Sie eine symbolische Verknüpfung für die **.so** von Adobe Campaign verwendete Datei.
 
-   Verwenden Sie dazu die folgenden Befehle:
+  Verwenden Sie dazu die folgenden Befehle:
 
-   ```
-   cd /usr/lib/oracle/10.2.0.4/client/lib
-   ln -s libclntsh.so.10.1 libclntsh.so
-   ```
+  ```
+  cd /usr/lib/oracle/10.2.0.4/client/lib
+  ln -s libclntsh.so.10.1 libclntsh.so
+  ```
 
 Wenn ein Problem auftritt, stellen Sie sicher, dass die Pakete, die im [Oracle-Installationsdokumentation](https://docs.oracle.com/) korrekt installiert sind.
 

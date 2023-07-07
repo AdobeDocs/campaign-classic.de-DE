@@ -7,7 +7,7 @@ badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Web Forms
 exl-id: 723a6c47-5323-4914-a014-58be493852cc
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1042'
 ht-degree: 100%
 
@@ -80,7 +80,7 @@ Damit können Sie die folgenden Eigenschaften definieren:
 * **[!UICONTROL Zeilen]**: Anzahl der Zeilen für einen Bereich vom Typ **[!UICONTROL Mehrzeiliger Text]**,
 * **[!UICONTROL Inline-Stil]**: ermöglicht das Überschreiben des CSS-Stylesheets mit zusätzlichen Einstellungen. Diese sind wie unten gezeigt durch das Zeichen **;** voneinander getrennt:
 
-   ![](assets/s_ncs_admin_survey_advanced_tab_inline.png)
+  ![](assets/s_ncs_admin_survey_advanced_tab_inline.png)
 
 ### Header und Footer definieren {#defining-headers-and-footers}
 
@@ -148,11 +148,11 @@ Im Feldauswahl-Fenster können Sie aus folgenden Daten auswählen:
 
 * Der Hauptbaum enthält die Parameter des Formulars. Die Standardparameter sind Kennung (entspricht der verschlüsselten Kennung des Empfängers), Sprache und Ursprung.
 
-   Weiterführende Informationen hierzu finden Sie auf dieser [Seite](defining-web-forms-properties.md#form-url-parameters).
+  Weiterführende Informationen hierzu finden Sie auf dieser [Seite](defining-web-forms-properties.md#form-url-parameters).
 
 * Im Unterbaum **[!UICONTROL Empfänger]** befinden sich die Eingabefelder, die in das Formular eingefügt wurden und in der Datenbank gespeichert sind.
 
-   Weitere Informationen finden Sie unter [Speichern von Daten in der Datenbank](web-forms-answers.md#storing-data-in-the-database).
+  Weitere Informationen finden Sie unter [Speichern von Daten in der Datenbank](web-forms-answers.md#storing-data-in-the-database).
 
 * Die Unterstruktur **[!UICONTROL Variablen]** enthält die verfügbaren Variablen für dieses Formular. Weitere Informationen finden Sie unter [Daten in einer lokalen Variablen speichern](web-forms-answers.md#storing-data-in-a-local-variable).
 

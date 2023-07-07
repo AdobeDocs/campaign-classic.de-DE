@@ -7,7 +7,7 @@ badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Surveys
 exl-id: 7061a4f1-006f-4f19-8761-918d8930d885
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '535'
 ht-degree: 100%
 
@@ -30,7 +30,6 @@ Auf [dieser Seite](getting-started-with-surveys.md) erfahren Sie, wie Sie Ihre e
 >* Die einzelnen Schritte für die Erstellung eines Standard-Web-Formulars werden in [diesem Dokument](../../web/using/about-web-forms.md) beschrieben.
 >
 >* Die Verwaltung von Web-Anwendungen wird in [diesem Dokument](../../web/using/about-web-applications.md) beschrieben. Weitere Informationen finden Sie in diesem Kapitel.
-
 
 ## Funktionsumfang {#campaign-surveys-scope}
 

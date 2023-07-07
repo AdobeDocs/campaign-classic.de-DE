@@ -25,6 +25,7 @@ Dazu müssen Sie die jeweilige Client-Ebene in der externen Datenbank auf dem Ad
 >[!NOTE]
 >
 >Kompatible Versionen sind in der [Campaign-Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md#FederatedDataAccessFDA) aufgeführt.
+>
 
 ## Konfigurationsschritte {#fda-configuration-steps}
 

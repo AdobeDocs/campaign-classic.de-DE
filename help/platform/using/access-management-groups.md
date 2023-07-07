@@ -8,7 +8,7 @@ role: User, Admin
 level: Beginner
 exl-id: d5833d3d-e8ef-4f2b-8084-4ba825c79525
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '556'
 ht-degree: 100%
 
@@ -69,6 +69,7 @@ Es existieren folgende Standardgruppen:
 
    * **[!UICONTROL EINFÜGEN VON ORDNERN]**: Berechtigt zum Einfügen von Ordnern in den Adobe Campaign-Navigationsbaum (erfordert Schreibzugriff für betroffene Zweige);
    * **[!UICONTROL WORKFLOW]**: Berechtigt zur Nutzung von Workflows.
+
    >[!NOTE]
    >
    >Benutzer dieser Gruppe können keine Sendungen starten.

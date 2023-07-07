@@ -9,7 +9,7 @@ content-type: reference
 topic-tags: audience-sharing
 exl-id: a3e26cff-9609-4d91-8976-9213a30c3fd2
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 100%
 
@@ -51,9 +51,9 @@ Gehen Sie folgendermaßen vor, um die externen Konten in Adobe Campaign zu konfi
    * **[!UICONTROL AWS-S3-Konto-Server]**
 URL Ihres Servers; sollte wie folgt ausgefüllt werden:
 
-      ```
-      <S3bucket name>.s3.amazonaws.com/<s3object path>
-      ```
+     ```
+     <S3bucket name>.s3.amazonaws.com/<s3object path>
+     ```
 
    * **[!UICONTROL Kennung des AWS-Zugriffsschlüssels]**
 Informationen dazu, wo Sie Ihre Kennung des AWS-Zugangsschlüssels finden, erhalten Sie auf [dieser Seite](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys).
@@ -63,6 +63,7 @@ Informationen dazu, wo Sie Ihren geheimen Zugriffsschlüssel für AWS finden, er
 
    * **[!UICONTROL AWS-Region]** 
 Weitere Informationen zur AWS-Region finden Sie auf [dieser Seite](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/).
+
    ![](assets/aam_config_2.png)
 
 1. Klicken Sie auf **[!UICONTROL Speichern]** und konfigurieren Sie das externe Konto **[!UICONTROL Freigegebene Zielgruppen importieren]**, wie in den vorherigen Schritten beschrieben.

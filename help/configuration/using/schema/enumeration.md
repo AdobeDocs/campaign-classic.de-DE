@@ -48,7 +48,7 @@ Auflistungen werden zu Beginn eines Schemas definiert (bevor das Hauptelement de
 
 * **basetype (string)**: Typ der in der Auflistung gespeicherten Werte.
 
-   Liste der verfügbaren Typen:
+  Liste der verfügbaren Typen:
 
    * BELIEBIGE
    * bin

@@ -19,6 +19,7 @@ Als Kundin oder Kunde von Campaign Classic müssen Sie den neuen Zustellbarkeits
 >[!NOTE]
 >
 >Weitere Informationen zu diesen Änderungen finden Sie in den [häufig gestellten Fragen](#faq) oder bei der [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank}.
+>
 
 ## Was hat sich geändert?{#acc-deliverability-changes}
 
@@ -43,6 +44,7 @@ Zur Integration des neuen Zustellbarkeits-Servers muss Campaign mit Adobe Shared
 >[!WARNING]
 >
 >Diese Schritte sollten nur bei Hybrid- und On-Premise-Implementierungen durchgeführt werden.
+>
 
 ### Voraussetzungen{#prerequisites}
 

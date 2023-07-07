@@ -7,7 +7,7 @@ badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: SMS
 exl-id: 841f0c2f-90ef-4db0-860a-75fc7c48804a
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2744'
 ht-degree: 100%
 
@@ -35,11 +35,11 @@ Nachdem Sie jedes Konto einzeln geprüft haben, gibt es zwei mögliche Szenarien
 
 * **Das Problem trat bei einem oder mehreren Konten auf**
 
-   In diesem Fall können Sie für jedes Konto andere Verfahren zur Fehlerbehebung anwenden. Es ist am besten, andere Konten zu deaktivieren, während Sie ein Konto diagnostizieren, um den Netzwerk-Traffic und die Anzahl der Logs zu reduzieren.
+  In diesem Fall können Sie für jedes Konto andere Verfahren zur Fehlerbehebung anwenden. Es ist am besten, andere Konten zu deaktivieren, während Sie ein Konto diagnostizieren, um den Netzwerk-Traffic und die Anzahl der Logs zu reduzieren.
 
 * **Das Problem trat nicht auf, wenn jeweils nur ein Konto aktiv war**
 
-   Es gibt einen Konflikt zwischen den Konten. Wie bereits erwähnt, behandelt Adobe Campaign die Konten einzeln, aber der Provider behandelt sie möglicherweise als ein einziges Konto.
+  Es gibt einen Konflikt zwischen den Konten. Wie bereits erwähnt, behandelt Adobe Campaign die Konten einzeln, aber der Provider behandelt sie möglicherweise als ein einziges Konto.
 
    * Sie verwenden unterschiedliche Anmelde-/Kennwortkombinationen für alle Ihre Konten.
 Sie müssen den Provider kontaktieren, um potenzielle Konflikte auf dessen Seite zu diagnostizieren.
@@ -54,17 +54,17 @@ Adobe Campaign unterstützt die Verarbeitung mehrerer Kurzwahlnummern in demselb
 
 * Untersuchen Sie, ob und von wem der Connector kürzlich geändert wurde (überprüfen Sie die externen Konten als Gruppe).
 
-   ```
-   select saccount, (sserver ||':'||sport) as serverPort, iextaccountid, CASE WHEN N0.iactive=1 THEN 'Yes' ELSE 'No' END as "(x) Enabled",
-   
-   (select X1.sname from xtkoperator X1 where N0.icreatedbyid = X1.ioperatorid) as "Created By",
-   
-   (select X1.sname from xtkoperator X1 where N0.imodifiedbyid = X1.ioperatorid) as "Last Modified By",
-   
-   N0.slabel as "External Account", N0.tslastmodified as "LastModifiedDate"
-   
-   from nmsextaccount N0 LEFT JOIN xtkoperator X0 ON (N0.icreatedbyid=X0.ioperatorid) order by 8 DESC LIMIT 50;
-   ```
+  ```
+  select saccount, (sserver ||':'||sport) as serverPort, iextaccountid, CASE WHEN N0.iactive=1 THEN 'Yes' ELSE 'No' END as "(x) Enabled",
+  
+  (select X1.sname from xtkoperator X1 where N0.icreatedbyid = X1.ioperatorid) as "Created By",
+  
+  (select X1.sname from xtkoperator X1 where N0.imodifiedbyid = X1.ioperatorid) as "Last Modified By",
+  
+  N0.slabel as "External Account", N0.tslastmodified as "LastModifiedDate"
+  
+  from nmsextaccount N0 LEFT JOIN xtkoperator X0 ON (N0.icreatedbyid=X0.ioperatorid) order by 8 DESC LIMIT 50;
+  ```
 
 * Untersuchen Sie (im Verzeichnis &quot;/postupgrade&quot;), ob und wann das System aktualisiert wurde.
 * Untersuchen Sie, ob Pakete, die sich auf SMS auswirken, kürzlich aktualisiert wurden (/var/log/dpkg.log).

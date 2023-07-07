@@ -12,7 +12,7 @@ exl-id: ad71dead-c0ca-42d5-baa8-0f340979231a
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '472'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -59,7 +59,7 @@ Bei der Migration zu Adobe Campaign v7 müssen die folgenden Elemente konfigurie
 
 * Passwörter
 
-   Sie müssen die **Admin** und **intern** Kennwörter. [Weitere Informationen](../../migration/using/before-starting-migration.md#user-passwords)
+  Sie müssen die **Admin** und **intern** Kennwörter. [Weitere Informationen](../../migration/using/before-starting-migration.md#user-passwords)
 
 <!--
 * Tree structure
@@ -82,33 +82,33 @@ Nach Ausführung **postupgrade**, aktivieren und konfigurieren Sie die folgenden
 
 * Mirrorseiten
 
-   Der Gestaltungsbaustein für die Mirrorseite wurde mit v6.x geändert. Diese neue Version verbessert die Sicherheit beim Zugriff auf diese Seiten.
+  Der Gestaltungsbaustein für die Mirrorseite wurde mit v6.x geändert. Diese neue Version verbessert die Sicherheit beim Zugriff auf diese Seiten.
 
-   Wenn Sie den Gestaltungsbaustein v5 in Ihren Nachrichten verwendet haben, schlägt die Anzeige der Mirrorseite fehl. Adobe empfiehlt dringend, den neuen Gestaltungsbaustein beim Einfügen der Mirrorseite in Ihre Nachrichten zu verwenden.
+  Wenn Sie den Gestaltungsbaustein v5 in Ihren Nachrichten verwendet haben, schlägt die Anzeige der Mirrorseite fehl. Adobe empfiehlt dringend, den neuen Gestaltungsbaustein beim Einfügen der Mirrorseite in Ihre Nachrichten zu verwenden.
 
-   Als vorübergehende Problemumgehung (und da die Mirrorseiten noch live sind) können Sie jedoch zum alten Gestaltungsbaustein zurückkehren, um dieses Problem zu vermeiden, indem Sie die Option ändern **[!UICONTROL XtkAcceptOldPasswords]** und legen Sie **[!UICONTROL 1]**. Dies hat keine Auswirkungen auf die Verwendung des neuen Gestaltungsbausteins v6.x.
+  Als vorübergehende Problemumgehung (und da die Mirrorseiten noch live sind) können Sie jedoch zum alten Gestaltungsbaustein zurückkehren, um dieses Problem zu vermeiden, indem Sie die Option ändern **[!UICONTROL XtkAcceptOldPasswords]** und legen Sie **[!UICONTROL 1]**. Dies hat keine Auswirkungen auf die Verwendung des neuen Gestaltungsbausteins v6.x.
 
 * Syntax
 
-   Wenn während des Postupgrades Syntaxfehler auftreten, müssen Sie die **allowSQLInjection** in der **serverConf.xml** -Datei, da Sie dadurch Zeit haben, den Code neu zu schreiben. Nachdem der Code angepasst wurde, stellen Sie sicher, dass Sie die Sicherheit erneut aktivieren.
+  Wenn während des Postupgrades Syntaxfehler auftreten, müssen Sie die **allowSQLInjection** in der **serverConf.xml** -Datei, da Sie dadurch Zeit haben, den Code neu zu schreiben. Nachdem der Code angepasst wurde, stellen Sie sicher, dass Sie die Sicherheit erneut aktivieren.
 
 * Konflikte
 
-   Die Migration wird durch ein Postupgrade durchgeführt und Konflikte können in Berichten, Formularen oder Webanwendungen auftreten. Diese Konflikte können über die Konsole gelöst werden.
+  Die Migration wird durch ein Postupgrade durchgeführt und Konflikte können in Berichten, Formularen oder Webanwendungen auftreten. Diese Konflikte können über die Konsole gelöst werden.
 
 * Tomcat
 
-   Wenn Sie den Installationsordner angepasst haben, stellen Sie sicher, dass er nach der Migration korrekt aktualisiert wurde.
+  Wenn Sie den Installationsordner angepasst haben, stellen Sie sicher, dass er nach der Migration korrekt aktualisiert wurde.
 
 * Berichte
 
-   Alle nativen Berichte verwenden derzeit die Rendering-Engine v6.x. Wenn Sie den Berichten JavaScript-Code hinzugefügt haben, können einige Elemente betroffen sein.
+  Alle nativen Berichte verwenden derzeit die Rendering-Engine v6.x. Wenn Sie den Berichten JavaScript-Code hinzugefügt haben, können einige Elemente betroffen sein.
 
 * Webanwendungen
 
-   Wenn nach dem Postupgrade Probleme beim Herstellen einer Verbindung zu Ihren identifizierten Webanwendungen auftreten, müssen Sie die **allowUserPassword** und **sessionTokenOnly** Optionen in **serverConf.xml** -Datei. Um Sicherheitsprobleme zu vermeiden, müssen diese beiden Optionen reaktiviert werden, nachdem das Problem gelöst wurde.
+  Wenn nach dem Postupgrade Probleme beim Herstellen einer Verbindung zu Ihren identifizierten Webanwendungen auftreten, müssen Sie die **allowUserPassword** und **sessionTokenOnly** Optionen in **serverConf.xml** -Datei. Um Sicherheitsprobleme zu vermeiden, müssen diese beiden Optionen reaktiviert werden, nachdem das Problem gelöst wurde.
 
-   Abhängig vom Typ der Webanwendungen und ihrer Konfiguration müssen Sie zusätzliche Manipulationen durchführen, um sicherzustellen, dass sie ordnungsgemäß funktionieren.
+  Abhängig vom Typ der Webanwendungen und ihrer Konfiguration müssen Sie zusätzliche Manipulationen durchführen, um sicherzustellen, dass sie ordnungsgemäß funktionieren.
 
 <!--
   If migrating from a v5.11 platform, additional configurations must be carried out. [Learn more](../../migration/using/general-configurations.md#specific-configurations-in-v5-11.md)
@@ -137,7 +137,7 @@ Nach Ausführung **postupgrade**, aktivieren und konfigurieren Sie die folgenden
 
 * Interaction
 
-   Wenn Sie **Interaction** müssen Sie alle Parameter nach der Migration anpassen.
+  Wenn Sie **Interaction** müssen Sie alle Parameter nach der Migration anpassen.
 
 <!--
 

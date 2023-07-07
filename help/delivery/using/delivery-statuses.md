@@ -7,7 +7,7 @@ badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Monitoring, Deliverability
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
 source-git-commit: 4b13e310fcee9ba24e83b697fca57bc494505642
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 100%
 
@@ -99,11 +99,11 @@ Wenn der Versand nicht durchgeführt wird und sein Status **[!UICONTROL Ausstehe
 
 * Der MTA (Message Transfer Agent), der Module und Prozesse auf dem Versand-Server ausführt und den E-Mail-Versand verwaltet, wurde möglicherweise noch nicht gestartet oder muss neu gestartet werden.
 
-   Um dies zu überprüfen und bei Bedarf das Modul zu starten, gehen Sie wie folgt vor:
+  Um dies zu überprüfen und bei Bedarf das Modul zu starten, gehen Sie wie folgt vor:
 
-   >[!NOTE]
-   >
-   >Dieser Vorgang kann mit einem **On-Premise**- oder **Hybrid**-Hosting-Modell mit Zugriff auf den Campaign-Server ausgeführt werden (siehe [Hosting-Modelle](../../installation/using/hosting-models.md)).
+  >[!NOTE]
+  >
+  >Dieser Vorgang kann mit einem **On-Premise**- oder **Hybrid**-Hosting-Modell mit Zugriff auf den Campaign-Server ausgeführt werden (siehe [Hosting-Modelle](../../installation/using/hosting-models.md)).
 
    1. Überprüfen Sie, ob Ihre `mta@<instance>`-Module auf den MTA-Servern ausgeführt werden.
 
@@ -127,13 +127,13 @@ Wenn der Versand nicht durchgeführt wird und sein Status **[!UICONTROL Ausstehe
 
 * Möglicherweise wird für den Versand eine Affinität verwendet, die auf dem sendenden Server nicht konfiguriert wurde.
 
-   Überprüfen Sie in diesem Fall die Konfiguration des Traffic-Managements (IP-Affinität) und verwenden Sie das Feld **[!UICONTROL Verwaltung der IP-Adressen-Affinitäten]**, um die Sendungen mit dem MTA zu verknüpfen, der die Affinität verwaltet. Weiterführende Informationen zu Affinitäten finden Sie in [diesem Abschnitt](../../installation/using/configure-delivery-settings.md).
+  Überprüfen Sie in diesem Fall die Konfiguration des Traffic-Managements (IP-Affinität) und verwenden Sie das Feld **[!UICONTROL Verwaltung der IP-Adressen-Affinitäten]**, um die Sendungen mit dem MTA zu verknüpfen, der die Affinität verwaltet. Weiterführende Informationen zu Affinitäten finden Sie in [diesem Abschnitt](../../installation/using/configure-delivery-settings.md).
 
 * Wenn zu viele Kampagnen ausgeführt werden, bleibt der Versandstatus im Status &quot;Ausstehend&quot;.
 
-   Die Begrenzung für gleichzeitige Kampagnen wird in der Option **[!UICONTROL NmsOperation_LimitConcurrency]** definiert. Der Standardwert ist 10.
+  Die Begrenzung für gleichzeitige Kampagnen wird in der Option **[!UICONTROL NmsOperation_LimitConcurrency]** definiert. Der Standardwert ist 10.
 
-   Weitere Informationen zu den Optionen finden Sie auf [dieser Seite](../../installation/using/configuring-campaign-options.md).
+  Weitere Informationen zu den Optionen finden Sie auf [dieser Seite](../../installation/using/configuring-campaign-options.md).
 
 
 **Verwandte Themen:**

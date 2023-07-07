@@ -47,9 +47,9 @@ Die Sequenz, in der `<attribute>` -Elemente in einer `<srcschema>` hat keine Aus
 
 * **_operation (string)**: definiert den Typ des Schreibens in der Datenbank.
 
-   Dieses Attribut wird hauptsächlich bei der Erweiterung von nativen Schemata verwendet.
+  Dieses Attribut wird hauptsächlich bei der Erweiterung von nativen Schemata verwendet.
 
-   Barrierefreie Werte sind:
+  Barrierefreie Werte sind:
 
    * &quot;none&quot;: Abstimmung. Das bedeutet, dass Adobe Campaign das Element wiederherstellt, ohne es zu aktualisieren, oder einen Fehler erzeugt, wenn es nicht vorhanden ist.
    * &quot;insertOrUpdate&quot;: durch Einfügen aktualisiert werden. Das bedeutet, dass Adobe Campaign das Element aktualisiert oder erstellt, falls es nicht vorhanden ist.
@@ -84,14 +84,14 @@ Die Sequenz, in der `<attribute>` -Elemente in einer `<srcschema>` hat keine Aus
    * &quot;shared&quot;: Der Inhalt wird in einer freigegebenen Tabelle nach Datentyp gespeichert.
    * &quot;dediziert&quot;: Der Inhalt wird in einer eigenen Tabelle gespeichert.
 
-   SQL-Eigenschaftstabellen werden automatisch basierend auf dem charakteristischen Typ erstellt:
+  SQL-Eigenschaftstabellen werden automatisch basierend auf dem charakteristischen Typ erstellt:
 
    * dediziert: `Ft_[name_of_the_schema_containing_the_characteristic]_[name_of_the_characteristic]`
    * shared: `Ft_[type_of_key_of_the_schema_containing_the_characteristic]_[type_of_the_characteristic]`
 
-   Es gibt zwei Arten von Eigenschaftenfeldern: einfache¹-Felder, bei denen ein einzelner Wert für das Merkmal autorisiert ist, und ein¹-Multiple-Choice-Feld, bei dem das Merkmal mit einem Kollektionselement verknüpft ist, das mehrere Werte enthalten kann.
+  Es gibt zwei Arten von Eigenschaftenfeldern: einfache¹-Felder, bei denen ein einzelner Wert für das Merkmal autorisiert ist, und ein¹-Multiple-Choice-Feld, bei dem das Merkmal mit einem Kollektionselement verknüpft ist, das mehrere Werte enthalten kann.
 
-   Wenn ein Merkmal in einem Schema definiert ist, muss dieses Schema über einen Hauptschlüssel verfügen, der auf einem einzelnen Feld basiert (zusammengesetzte Schlüssel sind nicht autorisiert).
+  Wenn ein Merkmal in einem Schema definiert ist, muss dieses Schema über einen Hauptschlüssel verfügen, der auf einem einzelnen Feld basiert (zusammengesetzte Schlüssel sind nicht autorisiert).
 
 * **featureDate (boolean)**: Attribut im Zusammenhang mit dem Feld &quot;@feature&quot;. Wenn der Wert &quot;true&quot;ist, können Sie feststellen, wann der Wert zuletzt aktualisiert wurde.
 * **img (Zeichenfolge)**: können Sie einen Pfad für ein Bild definieren, das mit einem Feld verknüpft ist (Namespace + Bildname) (Beispiel: img=&quot;cus:mypicture.jpg&quot;). Das Bild muss physisch auf den Anwendungsserver importiert werden.
@@ -100,14 +100,14 @@ Die Sequenz, in der `<attribute>` -Elemente in einer `<srcschema>` hat keine Aus
 * **localizable (boolean)**: Wenn es aktiviert ist, weist dieses Attribut das Tool zur Sammlung an, den Wert des Attributs &quot;@label&quot;für die Übersetzung abzurufen (interne Verwendung).
 * **name (MNTOKEN)**: Name des Attributs, das mit dem Namen des Felds in der Tabelle übereinstimmt. Der Wert des Attributs &quot;@name&quot;muss kurz sein, vorzugsweise auf Englisch, und den XML-Benennungsbeschränkungen entsprechen.
 
-   Beim Schreiben des Schemas in die Datenbank werden dem Feldnamen von Adobe Campaign automatisch Präfixe hinzugefügt:
+  Beim Schreiben des Schemas in die Datenbank werden dem Feldnamen von Adobe Campaign automatisch Präfixe hinzugefügt:
 
    * &quot;i&quot;: -Präfix für den Typ &quot;Ganzzahl&quot;.
    * &quot;d&quot;: -Präfix für den Typ &quot;double&quot;.
    * &quot;s&quot;: -Präfix für den Zeichenfolgentyp.
    * &quot;ts&quot;: -Präfix für den Typ &quot;Datum&quot;.
 
-   Um den Namen des Felds in der Tabelle vollständig zu definieren, verwenden Sie beim Definieren eines Attributs die Option &quot;@sqlname&quot;.
+  Um den Namen des Felds in der Tabelle vollständig zu definieren, verwenden Sie beim Definieren eines Attributs die Option &quot;@sqlname&quot;.
 
 * **notNull (boolesch)**: ermöglicht Ihnen, das Verhalten von Adobe Campaign bezüglich der Verwaltung von NULL-Datensätzen in der Datenbank neu zu definieren. Numerische Felder sind standardmäßig nicht null und Felder vom Typ Zeichenfolge und Datum können null sein.
 * **pkgStatus (Zeichenfolge)**: Bei Package-Exporten werden Werte in Abhängigkeit vom Wert des &quot;@pkgStatus&quot; berücksichtigt:
@@ -126,9 +126,9 @@ Die Sequenz, in der `<attribute>` -Elemente in einer `<srcschema>` hat keine Aus
 * **translateExpr (Zeichenfolge)**: Wenn das Attribut &quot;@expr&quot; vorhanden ist, können Sie mit dem Attribut &quot;@translationExpr&quot; einen Ausdruck neu definieren, der mit dem in @expr definierten Ausdruck übereinstimmt, der vom Übersetzungstool (interne Verwendung) erfasst werden soll.
 * **type (MNTOKEN)**: Feldtyp.
 
-   Feldtypen sind generisch. Je nach installiertem Datenbanktyp ändert Adobe Campaign den definierten Typ in einen Wert, der für die bei der Strukturaktualisierung installierte Datenbank spezifisch ist.
+  Feldtypen sind generisch. Je nach installiertem Datenbanktyp ändert Adobe Campaign den definierten Typ in einen Wert, der für die bei der Strukturaktualisierung installierte Datenbank spezifisch ist.
 
-   Liste der verfügbaren Typen:
+  Liste der verfügbaren Typen:
 
    * BELIEBIGE
    * bin
@@ -157,16 +157,16 @@ Die Sequenz, in der `<attribute>` -Elemente in einer `<srcschema>` hat keine Aus
    * timespan
    * uuid
 
-   Wenn das Attribut &quot;@type&quot;leer gelassen wird, verknüpft Adobe Campaign standardmäßig eine Zeichenfolge (STRING) mit einer Länge von 100 Zeichen mit dem Feld.
+  Wenn das Attribut &quot;@type&quot;leer gelassen wird, verknüpft Adobe Campaign standardmäßig eine Zeichenfolge (STRING) mit einer Länge von 100 Zeichen mit dem Feld.
 
-   Wenn das Feld vom Typ STRING ist und der Name des Felds nicht durch das Attribut &quot;@sqlname&quot; angegeben wird, wird dem Namen des Felds in der Datenbank automatisch ein &quot;s&quot; vorangestellt. Dieser Betriebsmodus ähnelt den Feldern vom Typ INTEGER (i), DOUBLE (d) und DATES (ts).
+  Wenn das Feld vom Typ STRING ist und der Name des Felds nicht durch das Attribut &quot;@sqlname&quot; angegeben wird, wird dem Namen des Felds in der Datenbank automatisch ein &quot;s&quot; vorangestellt. Dieser Betriebsmodus ähnelt den Feldern vom Typ INTEGER (i), DOUBLE (d) und DATES (ts).
 
 * **userEnum (Zeichenfolge)**: empfängt den internen Namen einer &quot;open&quot;-Auflistung. Die Werte der Auflistung können vom Benutzer in der Benutzeroberfläche definiert werden.
 * **visibleIf (Zeichenfolge)**: definiert eine Bedingung in Form eines XTK-Ausdrucks, um das Attribut ein- oder auszublenden.
 
-   >[!IMPORTANT]
-   >
-   >Das Attribut ist ausgeblendet, es können jedoch weiterhin auf seine Daten zugegriffen werden.
+  >[!IMPORTANT]
+  >
+  >Das Attribut ist ausgeblendet, es können jedoch weiterhin auf seine Daten zugegriffen werden.
 
 * **xml (boolesch)**: Wenn diese Option aktiviert ist, verfügen die Werte des Felds nicht über ein verknüpftes SQL-Feld. Adobe Campaign erstellt ein Feld vom Typ &quot;mData&quot; für die Speicherung von Datensätzen. Dies bedeutet, dass diese Felder nicht gefiltert oder sortiert werden.
 

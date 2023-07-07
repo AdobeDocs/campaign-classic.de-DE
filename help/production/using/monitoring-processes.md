@@ -50,55 +50,55 @@ Navigieren Sie zur Liste der Systemindikatoren, um Informationen über den Compu
 
 * **[!UICONTROL Speicher]**: Informationen zum physischen Speicher (RAM).
 
-   **[!UICONTROL Aktueller Wert]**: aktueller Speicherverbrauch.
+  **[!UICONTROL Aktueller Wert]**: aktueller Speicherverbrauch.
 
-   **[!UICONTROL Max. Wert]**: Gesamtanzahl der installierten Arbeitsspeicher.
+  **[!UICONTROL Max. Wert]**: Gesamtanzahl der installierten Arbeitsspeicher.
 
-   **[!UICONTROL Verfügbar]**: Menge an verfügbarem Speicher.
+  **[!UICONTROL Verfügbar]**: Menge an verfügbarem Speicher.
 
-   **[!UICONTROL Warnung]**: Dieser Indikator wird angezeigt, wenn der Speicherverbrauch 80 % des Gesamtvolumens erreicht.
+  **[!UICONTROL Warnung]**: Dieser Indikator wird angezeigt, wenn der Speicherverbrauch 80 % des Gesamtvolumens erreicht.
 
-   **[!UICONTROL Warnhinweis]**: Dieser Indikator wird angezeigt, wenn der Speicherverbrauch 90 % des Gesamtvolumens erreicht.
+  **[!UICONTROL Warnhinweis]**: Dieser Indikator wird angezeigt, wenn der Speicherverbrauch 90 % des Gesamtvolumens erreicht.
 
-   Wenn die **[!UICONTROL Warnung]** und **[!UICONTROL Warnhinweis]** angezeigt werden, können Sie das Problem lösen, indem Sie dem Computer, auf dem der Adobe Campaign-Server installiert ist, RAM hinzufügen. Sie können sich auch dafür entscheiden, den Adobe Campaign-Server auf einem dedizierten Computer zu installieren.
+  Wenn die **[!UICONTROL Warnung]** und **[!UICONTROL Warnhinweis]** angezeigt werden, können Sie das Problem lösen, indem Sie dem Computer, auf dem der Adobe Campaign-Server installiert ist, RAM hinzufügen. Sie können sich auch dafür entscheiden, den Adobe Campaign-Server auf einem dedizierten Computer zu installieren.
 
 * **[!UICONTROL Speicher tauschen]**: Informationen zum virtuellen Speicher, der mit einer Paging-Datei übereinstimmt: Ein Bereich auf der Festplatte, der von Windows als RAM verwendet wird.
 
-   **[!UICONTROL Aktueller Wert]**: tatsächlicher Speicherverbrauch.
+  **[!UICONTROL Aktueller Wert]**: tatsächlicher Speicherverbrauch.
 
-   **[!UICONTROL Max. Wert]**: Gesamtspeichermenge.
+  **[!UICONTROL Max. Wert]**: Gesamtspeichermenge.
 
-   **[!UICONTROL Verfügbar]**: Menge an verfügbarem Speicher.
+  **[!UICONTROL Verfügbar]**: Menge an verfügbarem Speicher.
 
-   **[!UICONTROL Warnung]**: Dieser Indikator wird angezeigt, wenn der Speicherverbrauch 80 % des Gesamtvolumens erreicht.
+  **[!UICONTROL Warnung]**: Dieser Indikator wird angezeigt, wenn der Speicherverbrauch 80 % des Gesamtvolumens erreicht.
 
-   **[!UICONTROL Warnhinweis]**: Dieser Indikator wird angezeigt, wenn der Speicherverbrauch 90 % des Gesamtvolumens erreicht.
+  **[!UICONTROL Warnhinweis]**: Dieser Indikator wird angezeigt, wenn der Speicherverbrauch 90 % des Gesamtvolumens erreicht.
 
-   Wenn die **[!UICONTROL Warnung]** und **[!UICONTROL Warnhinweis]** angezeigt werden, können Sie das Problem lösen, indem Sie die Größe der Exchange-Datei in den erweiterten Windows-Einstellungen erhöhen.
+  Wenn die **[!UICONTROL Warnung]** und **[!UICONTROL Warnhinweis]** angezeigt werden, können Sie das Problem lösen, indem Sie die Größe der Exchange-Datei in den erweiterten Windows-Einstellungen erhöhen.
 
 * **[!UICONTROL Datenträger XXX]**: Informationen über Maschinenleser.
 
-   **[!UICONTROL Aktueller Wert]**: tatsächlich verwendeter Speicherplatz.
+  **[!UICONTROL Aktueller Wert]**: tatsächlich verwendeter Speicherplatz.
 
-   **[!UICONTROL Max. Wert]**: Gesamtkapazität der Festplatte.
+  **[!UICONTROL Max. Wert]**: Gesamtkapazität der Festplatte.
 
-   **[!UICONTROL Verfügbar]**: verfügbarer Speicherplatz.
+  **[!UICONTROL Verfügbar]**: verfügbarer Speicherplatz.
 
-   **[!UICONTROL Verwendet]**: Prozentsatz der verwendeten Festplatte.
+  **[!UICONTROL Verwendet]**: Prozentsatz der verwendeten Festplatte.
 
-   **[!UICONTROL Warnung]**: Dieser Indikator wird angezeigt, wenn der verfügbare Speicherplatz 80 % der Gesamtkapazität erreicht.
+  **[!UICONTROL Warnung]**: Dieser Indikator wird angezeigt, wenn der verfügbare Speicherplatz 80 % der Gesamtkapazität erreicht.
 
-   **[!UICONTROL Warnhinweis]**: Dieser Indikator wird angezeigt, wenn der verfügbare Speicherplatz 90 % der Gesamtkapazität erreicht.
+  **[!UICONTROL Warnhinweis]**: Dieser Indikator wird angezeigt, wenn der verfügbare Speicherplatz 90 % der Gesamtkapazität erreicht.
 
 * **[!UICONTROL Anzahl der Prozesse zu alt]**: Informationen zu Adobe Campaign-Prozessen, die seit mehr als einem Tag aktiv sind.
 
-   **[!UICONTROL Aktueller Wert]**: Anzahl der derzeit aktiven Prozesse.
+  **[!UICONTROL Aktueller Wert]**: Anzahl der derzeit aktiven Prozesse.
 
-   **[!UICONTROL Max. Wert]**: Höchstzahl zulässiger Prozesse (1).
+  **[!UICONTROL Max. Wert]**: Höchstzahl zulässiger Prozesse (1).
 
-   **[!UICONTROL Warnhinweis]**: Dieser Indikator wird angezeigt, wenn die Anzahl der Prozesse gleich 1 ist.
+  **[!UICONTROL Warnhinweis]**: Dieser Indikator wird angezeigt, wenn die Anzahl der Prozesse gleich 1 ist.
 
-   Wenn die **[!UICONTROL Warnhinweis]** angezeigt wird, kann es sein, dass der betreffende Prozess durch die SQL-Datenbank-Engine gesperrt oder in einer Endlosschleife feststeckt. Die **watchdog** Der von Adobe Campaign bereitgestellte Prozess startet automatisch alle Prozesse jeden Tag neu und ermöglicht es Ihnen, dieses Problem zu lösen. Sie können den entsprechenden Prozess jedoch auch selbst stoppen, um einen Neustart zu erzwingen.
+  Wenn die **[!UICONTROL Warnhinweis]** angezeigt wird, kann es sein, dass der betreffende Prozess durch die SQL-Datenbank-Engine gesperrt oder in einer Endlosschleife feststeckt. Die **watchdog** Der von Adobe Campaign bereitgestellte Prozess startet automatisch alle Prozesse jeden Tag neu und ermöglicht es Ihnen, dieses Problem zu lösen. Sie können den entsprechenden Prozess jedoch auch selbst stoppen, um einen Neustart zu erzwingen.
 
 #### Linux {#in-linux}
 
@@ -108,107 +108,107 @@ Navigieren Sie zur Liste der Systemindikatoren, um Informationen über den Compu
 
 * **[!UICONTROL Lastdurchschnitt (1/5/15 Minuten)]**: Informationen über die Last, d. h. die Nutzrate des Prozessors durch die Prozesse, die in letzter Minute, fünf Minuten oder fünfzehn Minuten auf dem Gerät ausgeführt werden.
 
-   **[!UICONTROL Aktueller Wert]**: tatsächliche Belastung der Maschine.
+  **[!UICONTROL Aktueller Wert]**: tatsächliche Belastung der Maschine.
 
-   **[!UICONTROL Max. Wert]**: maximale Nutzlast der Prozesse auf dem Computer
+  **[!UICONTROL Max. Wert]**: maximale Nutzlast der Prozesse auf dem Computer
 
-   **[!UICONTROL Warnung]**: Dieser Indikator wird angezeigt, wenn die Last 80 % des maximal zulässigen Wertes in der letzten Minute, fünf Minuten oder fünfzehn Minuten erreicht.
+  **[!UICONTROL Warnung]**: Dieser Indikator wird angezeigt, wenn die Last 80 % des maximal zulässigen Wertes in der letzten Minute, fünf Minuten oder fünfzehn Minuten erreicht.
 
-   **[!UICONTROL Warnhinweis]**: Dieser Indikator wird angezeigt, wenn die Last 90 % des maximal zulässigen Wertes der letzten Minute, fünf Minuten oder fünfzehn Minuten erreicht.
+  **[!UICONTROL Warnhinweis]**: Dieser Indikator wird angezeigt, wenn die Last 90 % des maximal zulässigen Wertes der letzten Minute, fünf Minuten oder fünfzehn Minuten erreicht.
 
 * **[!UICONTROL Speicher]**  Informationen zum physischen Speicher (RAM).
 
-   **[!UICONTROL Aktueller Wert]**: tatsächlicher Speicherverbrauch.
+  **[!UICONTROL Aktueller Wert]**: tatsächlicher Speicherverbrauch.
 
-   **[!UICONTROL Max. Wert]**: Gesamtanzahl der installierten Arbeitsspeicher.
+  **[!UICONTROL Max. Wert]**: Gesamtanzahl der installierten Arbeitsspeicher.
 
-   **[!UICONTROL Verfügbar]**: Menge an verfügbarem Speicher.
+  **[!UICONTROL Verfügbar]**: Menge an verfügbarem Speicher.
 
-   **[!UICONTROL Warnung]**: Dieser Indikator wird angezeigt, wenn der Speicherverbrauch 80 % des Gesamtvolumens erreicht.
+  **[!UICONTROL Warnung]**: Dieser Indikator wird angezeigt, wenn der Speicherverbrauch 80 % des Gesamtvolumens erreicht.
 
-   **[!UICONTROL Warnhinweis]**: Dieser Indikator wird angezeigt, wenn der Speicherverbrauch 90 % des Gesamtvolumens erreicht.
+  **[!UICONTROL Warnhinweis]**: Dieser Indikator wird angezeigt, wenn der Speicherverbrauch 90 % des Gesamtvolumens erreicht.
 
-   Wenn die **[!UICONTROL Warnung]** und **[!UICONTROL Warnhinweis]** angezeigt werden, können Sie das Problem lösen, indem Sie dem Computer, auf dem der Adobe Campaign-Server installiert ist, RAM hinzufügen. Sie können sich auch dafür entscheiden, den Adobe Campaign-Server auf einem dedizierten Computer zu installieren.
+  Wenn die **[!UICONTROL Warnung]** und **[!UICONTROL Warnhinweis]** angezeigt werden, können Sie das Problem lösen, indem Sie dem Computer, auf dem der Adobe Campaign-Server installiert ist, RAM hinzufügen. Sie können sich auch dafür entscheiden, den Adobe Campaign-Server auf einem dedizierten Computer zu installieren.
 
 * **[!UICONTROL Speicher tauschen]**: Informationen zum virtuellen Speicher, der mit einer Paging-Datei übereinstimmt: Ein Bereich auf der Festplatte, der von Windows als RAM verwendet wird.
 
-   **[!UICONTROL Aktueller Wert]**: tatsächlicher Speicherverbrauch.
+  **[!UICONTROL Aktueller Wert]**: tatsächlicher Speicherverbrauch.
 
-   **[!UICONTROL Max. Wert]**: Gesamtspeichermenge.
+  **[!UICONTROL Max. Wert]**: Gesamtspeichermenge.
 
-   **[!UICONTROL Verfügbar]**: Menge an verfügbarem Speicher.
+  **[!UICONTROL Verfügbar]**: Menge an verfügbarem Speicher.
 
-   **[!UICONTROL Warnung]**: Dieser Indikator wird angezeigt, wenn der Speicherverbrauch 80 % des Gesamtvolumens erreicht.
+  **[!UICONTROL Warnung]**: Dieser Indikator wird angezeigt, wenn der Speicherverbrauch 80 % des Gesamtvolumens erreicht.
 
-   **[!UICONTROL Warnhinweis]**: Dieser Indikator wird angezeigt, wenn der Speicherverbrauch 90 % des Gesamtvolumens erreicht.
+  **[!UICONTROL Warnhinweis]**: Dieser Indikator wird angezeigt, wenn der Speicherverbrauch 90 % des Gesamtvolumens erreicht.
 
-   Wenn die **[!UICONTROL Warnung]** und **[!UICONTROL Warnhinweis]** angezeigt werden, können Sie das Problem lösen, indem Sie die Größe der Exchange-Datei erhöhen.
+  Wenn die **[!UICONTROL Warnung]** und **[!UICONTROL Warnhinweis]** angezeigt werden, können Sie das Problem lösen, indem Sie die Größe der Exchange-Datei erhöhen.
 
 * **[!UICONTROL Kerndateien]**: Informationen zu den Dateien, die nach dem Absturz eines Adobe Campaign-Prozesses generiert wurden. Mit diesen Dateien können Sie die Ursachen des Absturzes diagnostizieren.
 
-   **[!UICONTROL Aktueller Wert]**: Anzahl der vorhandenen Dateien.
+  **[!UICONTROL Aktueller Wert]**: Anzahl der vorhandenen Dateien.
 
-   **[!UICONTROL Max. Wert]**: maximale Anzahl zulässiger Dateien (1).
+  **[!UICONTROL Max. Wert]**: maximale Anzahl zulässiger Dateien (1).
 
-   **[!UICONTROL Warnung]**: Dieser Indikator wird angezeigt, wenn sich die Anzahl der Dateien in der Nähe von 1 befindet.
+  **[!UICONTROL Warnung]**: Dieser Indikator wird angezeigt, wenn sich die Anzahl der Dateien in der Nähe von 1 befindet.
 
-   **[!UICONTROL Warnhinweis]**: Dieser Indikator wird angezeigt, wenn die Anzahl der Dateien gleich 1 ist.
+  **[!UICONTROL Warnhinweis]**: Dieser Indikator wird angezeigt, wenn die Anzahl der Dateien gleich 1 ist.
 
-   Wenn ein Prozess aufgrund eines Absturzes fehlt, wird er in der Prozessliste rot angezeigt und automatisch von der **watchdog** -Prozess, der von Adobe Campaign bereitgestellt wird.
+  Wenn ein Prozess aufgrund eines Absturzes fehlt, wird er in der Prozessliste rot angezeigt und automatisch von der **watchdog** -Prozess, der von Adobe Campaign bereitgestellt wird.
 
 * **[!UICONTROL Anzahl der gemeinsamen Speichersegmente]**: Informationen zu den Speichersegmenten, die von allen Adobe Campaign-Prozessen gemeinsam genutzt werden.
 
-   **[!UICONTROL Aktueller Wert]**: Anzahl der derzeit verwendeten Speichersegmente.
+  **[!UICONTROL Aktueller Wert]**: Anzahl der derzeit verwendeten Speichersegmente.
 
-   **[!UICONTROL Max. Wert]**: Maximale Anzahl zulässiger Speichersegmente (2).
+  **[!UICONTROL Max. Wert]**: Maximale Anzahl zulässiger Speichersegmente (2).
 
-   **[!UICONTROL Warnung]**: Dieser Indikator wird angezeigt, wenn die Anzahl der Speichersegmente 1 erreicht.
+  **[!UICONTROL Warnung]**: Dieser Indikator wird angezeigt, wenn die Anzahl der Speichersegmente 1 erreicht.
 
-   **[!UICONTROL Warnhinweis]**: Diese Anzeige wird angezeigt, wenn die Anzahl der Speichersegmente 2 erreicht.
+  **[!UICONTROL Warnhinweis]**: Diese Anzeige wird angezeigt, wenn die Anzahl der Speichersegmente 2 erreicht.
 
 * **[!UICONTROL Anzahl der Prozesse zu alt]**: Informationen zu Prozessen, die seit mehr als einem Tag aktiv sind.
 
-   **[!UICONTROL Aktueller Wert]**: Anzahl der derzeit aktiven Prozesse.
+  **[!UICONTROL Aktueller Wert]**: Anzahl der derzeit aktiven Prozesse.
 
-   **[!UICONTROL Max. Wert]**: maximale Anzahl zulässiger Prozesse.
+  **[!UICONTROL Max. Wert]**: maximale Anzahl zulässiger Prozesse.
 
-   **[!UICONTROL Warnung]**: Dieser Indikator wird angezeigt, wenn die Anzahl der Prozesse 80 % der zulässigen Schwelle erreicht.
+  **[!UICONTROL Warnung]**: Dieser Indikator wird angezeigt, wenn die Anzahl der Prozesse 80 % der zulässigen Schwelle erreicht.
 
-   **[!UICONTROL Warnhinweis]**: Dieser Indikator wird angezeigt, wenn die Anzahl der Prozesse 90 % der zulässigen Schwelle erreicht.
+  **[!UICONTROL Warnhinweis]**: Dieser Indikator wird angezeigt, wenn die Anzahl der Prozesse 90 % der zulässigen Schwelle erreicht.
 
 * **[!UICONTROL Datei-Handles]**: Informationen über die Dateideskriptoren, d. h. die Anzahl der pro Prozess geöffneten Dateien.
 
-   **[!UICONTROL Aktueller Wert]**: aktuelle Anzahl von Dateideskriptoren.
+  **[!UICONTROL Aktueller Wert]**: aktuelle Anzahl von Dateideskriptoren.
 
-   **[!UICONTROL Max. Wert]**: maximale Anzahl von Dateideskriptoren, die vom Betriebssystem genehmigt wurden.
+  **[!UICONTROL Max. Wert]**: maximale Anzahl von Dateideskriptoren, die vom Betriebssystem genehmigt wurden.
 
-   **[!UICONTROL Warnung]**: Dieser Indikator wird angezeigt, wenn die Anzahl der zugelassenen Dateideskriptoren den Schwellenwert von 80 % erreicht.
+  **[!UICONTROL Warnung]**: Dieser Indikator wird angezeigt, wenn die Anzahl der zugelassenen Dateideskriptoren den Schwellenwert von 80 % erreicht.
 
-   **[!UICONTROL Warnhinweis]**: Dieser Indikator wird angezeigt, wenn die Anzahl der zugelassenen Dateideskriptoren den Schwellenwert von 90 % erreicht.
+  **[!UICONTROL Warnhinweis]**: Dieser Indikator wird angezeigt, wenn die Anzahl der zugelassenen Dateideskriptoren den Schwellenwert von 90 % erreicht.
 
 * **[!UICONTROL Prozesse]**: Informationen über die Maschinenprozesse.
 
-   **[!UICONTROL Aktueller Wert]**: Anzahl der derzeit aktiven Prozesse.
+  **[!UICONTROL Aktueller Wert]**: Anzahl der derzeit aktiven Prozesse.
 
-   **[!UICONTROL Max. Wert]**: maximale Anzahl zulässiger Prozesse.
+  **[!UICONTROL Max. Wert]**: maximale Anzahl zulässiger Prozesse.
 
-   **[!UICONTROL Aktive Prozesse]**: Anzahl der aktiven Prozesse.
+  **[!UICONTROL Aktive Prozesse]**: Anzahl der aktiven Prozesse.
 
-   **[!UICONTROL Inaktive Prozesse]**: Anzahl der inaktiven Prozesse.
+  **[!UICONTROL Inaktive Prozesse]**: Anzahl der inaktiven Prozesse.
 
-   **[!UICONTROL Warnung]**: Dieser Indikator wird angezeigt, wenn die Anzahl genehmigter Prozesse den Schwellenwert von 80 % erreicht.
+  **[!UICONTROL Warnung]**: Dieser Indikator wird angezeigt, wenn die Anzahl genehmigter Prozesse den Schwellenwert von 80 % erreicht.
 
-   **[!UICONTROL Warnhinweis]**: Dieser Indikator wird angezeigt, wenn die Anzahl der zugelassenen Prozesse den Schwellenwert von 90 % erreicht.
+  **[!UICONTROL Warnhinweis]**: Dieser Indikator wird angezeigt, wenn die Anzahl der zugelassenen Prozesse den Schwellenwert von 90 % erreicht.
 
 * **[!UICONTROL Zombie-Prozesse]**: Informationen zu den Prozessen, die angehalten wurden, aber noch eine Prozess-ID (PID) aufweisen und in der Prozesstabelle sichtbar bleiben.
 
-   **[!UICONTROL Aktueller Wert]**: Anzahl der derzeit aktiven Zombie-Prozesse.
+  **[!UICONTROL Aktueller Wert]**: Anzahl der derzeit aktiven Zombie-Prozesse.
 
-   **[!UICONTROL Max. Wert]**: maximale Anzahl der autorisierten Zombie-Prozesse (2).
+  **[!UICONTROL Max. Wert]**: maximale Anzahl der autorisierten Zombie-Prozesse (2).
 
-   **[!UICONTROL Warnung]**: Dieser Indikator wird angezeigt, wenn die Anzahl der Zombie-Prozesse nahe 2 liegt.
+  **[!UICONTROL Warnung]**: Dieser Indikator wird angezeigt, wenn die Anzahl der Zombie-Prozesse nahe 2 liegt.
 
-   **[!UICONTROL Warnhinweis]**: Dieser Indikator wird angezeigt, wenn die Anzahl der Zombie-Prozesse 2 erreicht.
+  **[!UICONTROL Warnhinweis]**: Dieser Indikator wird angezeigt, wenn die Anzahl der Zombie-Prozesse 2 erreicht.
 
 #### Indikatoren anpassen {#customized-indicators}
 
@@ -257,7 +257,6 @@ Sie sind unter **Überwachung** > &quot;SMTP Monitoring&quot;.
 >* Informationen zur SMTP-Überwachung sind nur verfügbar, wenn der E-Mail-Kanal aktiviert wurde.
 >* Die **[!UICONTROL SMTP-Sendestatistiken]** werden nur angeboten, wenn der Statistikserver auf der Instanz gestartet wird.
 >
-
 
 ### SMTP-Versandstatistiken {#smtp-sending-statistics}
 
@@ -557,9 +556,9 @@ Dieses Element wird verwendet, um die Konfiguration von E-Mails, d. h.
 * &#39;**Nacht** Der optionale Modus verhindert den Versand von E-Mails zwischen dem angegebenen Zeitraum. Stattdessen werden die Daten konsolidiert und nach der Endzeit (standardmäßig 7:00 Uhr) wird eine E-Mail zur Aktivität der Nacht gesendet.
 * Die **buildRange** -Unterelement (optional) ermöglicht die Angabe einer Mindest- und einer Höchstzahl an Builds. Es wird ein Fehler für alle Computer erzeugt, deren Build-Nummer nicht in diesen Bereich fällt
 
-   ```
-   <buildRange minimum="0000" maximum="9999"/>
-   ```
+  ```
+  <buildRange minimum="0000" maximum="9999"/>
+  ```
 
 * Sie können eine **`<sla>`** (optional) Unterelement im **properties** -Element. Jedes Mal, wenn der netreport ausgeführt wird, wird eine Protokolldatei erzeugt. Der Dateiname enthält den Konfigurationsnamen sowie Datum und Uhrzeit, z. B. **dev_06_12_13_16_47_05.tmp**. Die Datei enthält die folgenden Informationen: Instanzname, Maschinenname, Schweregrad, (0 bis 3, vom geringsten bis zum kritischsten), Datum (Zeitstempelformat), Zeit (in Millisekunden) zwischen der Abfrage und der Antwort, verwendeter Dienst (http, ncs, ncsex, redir). Diese Informationen werden am Ende jedes Dienstes durch Tabulationszeichen und Zeilenumbrüche getrennt.
 
@@ -593,9 +592,9 @@ Dieses Element konfiguriert die Überwachung eines bestimmten Servers auf dem Ho
 * **alias** (optional): Name des überwachten Computers, wie er im Bericht angezeigt wird.
 * **sessionToken**: bietet Anmeldeauthentifizierung über ein autorisiertes Sitzungstoken.
 
-   Um das Sitzungstoken zu konfigurieren, wählen Sie die **Monitoring** in der Adobe Campaign-Konsole. Im **Zugriffsberechtigungen** Geben Sie die IP-Adressen der Computer an, die zur Überwachung dieser Instanz berechtigt sind. Anschließend können Sie über die **Monitoring** und ohne ein Kennwort angeben zu müssen.
+  Um das Sitzungstoken zu konfigurieren, wählen Sie die **Monitoring** in der Adobe Campaign-Konsole. Im **Zugriffsberechtigungen** Geben Sie die IP-Adressen der Computer an, die zur Überwachung dieser Instanz berechtigt sind. Anschließend können Sie über die **Monitoring** und ohne ein Kennwort angeben zu müssen.
 
-   ![](assets/ncs_operators_rights_02.png)
+  ![](assets/ncs_operators_rights_02.png)
 
 * **criticalLevel** (optional): ermöglicht die Sortierung von Fehlern nach Schweregrad. Mögliche Werte sind &quot;0&quot;(alle angezeigten Ebenen), &quot;1&quot;(nur hochgradige und kritische Fehler) und &quot;2&quot;(nur kritische Fehler werden angezeigt). Wenn dieses Attribut nicht angegeben wird, werden alle Fehlerstufen angezeigt.
 * **filter** (optional): ermöglicht den Ausschluss bestimmter Workflow-Fehler, beispielsweise **filter=&quot;wkf;wkf1&quot;**. Workflow-Beschriftungen müssen durch Semikolons getrennt werden.

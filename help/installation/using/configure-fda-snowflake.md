@@ -37,19 +37,19 @@ So konfigurieren Sie [!DNL Snowflake] Gehen Sie unter Linux wie folgt vor:
 
    * Für Red Hat/CentOS:
 
-      ```
-      yum update
-      yum upgrade
-      yum install -y grep sed tar wget perl curl
-      ```
+     ```
+     yum update
+     yum upgrade
+     yum install -y grep sed tar wget perl curl
+     ```
 
    * Für Debian:
 
-      ```
-      apt-get update
-      apt-get upgrade
-      apt-get install -y grep sed tar wget perl curl
-      ```
+     ```
+     apt-get update
+     apt-get upgrade
+     apt-get install -y grep sed tar wget perl curl
+     ```
 
 1. Bevor Sie das Skript ausführen, können Sie mit der `--help` Option:
 
@@ -98,12 +98,11 @@ Sie müssen eine [!DNL Snowflake] externes Konto, um Ihre Campaign-Instanz mit I
 
       * **[!UICONTROL Passwort]**: Passwort des Benutzerkontos.
 
-      ![](assets/snowflake.png)
+     ![](assets/snowflake.png)
 
    * Klicken Sie für die Keypair-Authentifizierung auf die **[!UICONTROL Keypair Auth]** Registerkarte zur Verwendung Ihrer **[!UICONTROL Privater Schlüssel]** , um sich zu authentifizieren und Ihre **[!UICONTROL Privater Schlüssel]**.
 
-      ![](assets/snowflake_4.png)
-
+     ![](assets/snowflake_4.png)
 
 1. Klicken Sie auf den Tab **[!UICONTROL Parameter]** und dann auf die Schaltfläche **[!UICONTROL Funktionen bereitstellen]**, um Funktionen zu erstellen.
 

@@ -99,35 +99,35 @@ Der Formularkontext kann bei der Initialisierung aus dem **`<enter>`** -Tag. Wei
 
 * Deklaration eines globalen Befehls zum Starten des Formulars &quot;xtk:import&quot;:
 
-   ```
-   <command desc="Start the data import wizard" form="xtk:import" label="&amp;Data import..." name="import" rights="import,recipientImport"/>
-   ```
+  ```
+  <command desc="Start the data import wizard" form="xtk:import" label="&amp;Data import..." name="import" rights="import,recipientImport"/>
+  ```
 
-   Auf dem Zeichen &quot;I&quot;wird ein Tastaturbefehl durch das Vorhandensein von **&amp;** in der Befehlsbeschriftung.
+  Auf dem Zeichen &quot;I&quot;wird ein Tastaturbefehl durch das Vorhandensein von **&amp;** in der Befehlsbeschriftung.
 
 * Beispiel eines Untermenüs mit einem Trennzeichen:
 
-   ![](assets/d_ncs_integration_navigation_exemple1.png)
+  ![](assets/d_ncs_integration_navigation_exemple1.png)
 
-   ```
-   <command label="Administration" name="admin">
-     <command name="cmd1" label="Example 1" form="cus:example1"/>
-     <command name="sep" label="-"/>
-     <command name="cmd1" label="Example 2" form="cus:example2">
-       <enter>
-         <set xpath="@type" expr="1"/>
-       </enter>
-     </command>
-   </command>
-   ```
+  ```
+  <command label="Administration" name="admin">
+    <command name="cmd1" label="Example 1" form="cus:example1"/>
+    <command name="sep" label="-"/>
+    <command name="cmd1" label="Example 2" form="cus:example2">
+      <enter>
+        <set xpath="@type" expr="1"/>
+      </enter>
+    </command>
+  </command>
+  ```
 
 * Ausführung einer SOAP-Methode:
 
-   ```
-   <command name="cmd3" label="Example 3" promptLabel="Do you really want to execute the command?">
-     <soapCall name="Execute" service="xtk:sql"/>
-   </command>
-   ```
+  ```
+  <command name="cmd3" label="Example 3" promptLabel="Do you really want to execute the command?">
+    <soapCall name="Execute" service="xtk:sql"/>
+  </command>
+  ```
 
 ## Ordnertyp {#folder-type}
 

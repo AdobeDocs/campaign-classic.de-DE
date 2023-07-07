@@ -42,19 +42,19 @@ Verwenden von Adobe Campaign Classic **Federated Data Access** (FDA), um in eine
 
    * **[!UICONTROL Projekt]**: ein vorhandenes Projekt erstellen oder verwenden.
 
-      Weiterführende Informationen dazu finden Sie auf dieser [Seite](https://cloud.google.com/resource-manager/docs/creating-managing-projects).
+     Weiterführende Informationen dazu finden Sie auf dieser [Seite](https://cloud.google.com/resource-manager/docs/creating-managing-projects).
 
    * **[!UICONTROL Dienstkonto]**: ein Dienstkonto erstellen.
 
-      Weiterführende Informationen dazu finden Sie auf dieser [Seite](https://cloud.google.com/iam/docs/creating-managing-service-accounts).
+     Weiterführende Informationen dazu finden Sie auf dieser [Seite](https://cloud.google.com/iam/docs/creating-managing-service-accounts).
 
    * **[!UICONTROL Pfad der Schlüsseldatei]**: die **[!UICONTROL Dienstkonto]** erfordert **[!UICONTROL Schlüsseldatei]** für [!DNL Google BigQuery] Verbindung über ODBC.
 
-      Weiterführende Informationen dazu finden Sie auf dieser [Seite](https://cloud.google.com/iam/docs/creating-managing-service-account-keys).
+     Weiterführende Informationen dazu finden Sie auf dieser [Seite](https://cloud.google.com/iam/docs/creating-managing-service-account-keys).
 
    * **[!UICONTROL Datensatz]**: **[!UICONTROL Datensatz]** ist für eine ODBC-Verbindung optional. Da jede Abfrage den Datensatz bereitstellen muss, in dem sich die Tabelle befindet, muss eine **[!UICONTROL Datensatz]** ist zwingend erforderlich für [!DNL Google BigQuery] FDA-Connector in Adobe Campaign Classic.
 
-      Weiterführende Informationen dazu finden Sie auf dieser [Seite](https://cloud.google.com/bigquery/docs/datasets).
+     Weiterführende Informationen dazu finden Sie auf dieser [Seite](https://cloud.google.com/bigquery/docs/datasets).
 
 1. In Adobe Campaign Classic können Sie dann Ihre [!DNL Google BigQuery] externes Konto. Weitere Informationen zur Konfiguration Ihres externen Kontos finden Sie unter [diesem Abschnitt](#google-external).
 
@@ -94,35 +94,35 @@ So konfigurieren Sie [!DNL Google BigQuery] Gehen Sie unter Linux wie folgt vor:
 
    * Für Red Hat/CentOS:
 
-      ```
-      yum update
-      yum upgrade
-      yum install -y grep sed tar wget perl curl
-      ```
+     ```
+     yum update
+     yum upgrade
+     yum install -y grep sed tar wget perl curl
+     ```
 
    * Für Debian:
 
-      ```
-      apt-get update
-      apt-get upgrade
-      apt-get install -y grep sed tar wget perl curl
-      ```
+     ```
+     apt-get update
+     apt-get upgrade
+     apt-get install -y grep sed tar wget perl curl
+     ```
 
 1. Aktualisieren Sie das System vor der Installation:
 
    * Für Red Hat/CentOS:
 
-      ```
-      # install unixODBC driver manager
-      yum install -y unixODBC
-      ```
+     ```
+     # install unixODBC driver manager
+     yum install -y unixODBC
+     ```
 
    * Für Debian:
 
-      ```
-      # install unixODBC driver manager
-      apt-get install -y odbcinst1debian2 libodbc1 odbcinst unixodbc
-      ```
+     ```
+     # install unixODBC driver manager
+     apt-get install -y odbcinst1debian2 libodbc1 odbcinst unixodbc
+     ```
 
 1. Bevor Sie das Skript ausführen, können Sie weitere Informationen abrufen, indem Sie das —help-Argument angeben:
 
@@ -152,19 +152,19 @@ Das Bulk Load-Dienstprogramm ermöglicht eine schnellere Übertragung, die über
 
    * Für Red Hat/CentOS:
 
-      ```
-      yum update
-      yum upgrade
-      yum install -y python3
-      ```
+     ```
+     yum update
+     yum upgrade
+     yum install -y python3
+     ```
 
    * Für Debian:
 
-      ```
-      apt-get update
-      apt-get upgrade
-      apt-get install -y python3
-      ```
+     ```
+     apt-get update
+     apt-get upgrade
+     apt-get install -y python3
+     ```
 
 1. Rufen Sie den Ordner auf, in dem sich das Skript befindet, und führen Sie das folgende Skript aus:
 
@@ -195,6 +195,7 @@ Sie müssen eine [!DNL Google BigQuery] Externes Konto zum Verbinden Ihrer Adobe
       * **[!UICONTROL Laden Sie die Schlüsseldatei auf den Server hoch]**: select **[!UICONTROL Hier klicken zum Hochladen]** , wenn Sie den Schlüssel über Adobe Campaign Classic hochladen möchten.
 
       * **[!UICONTROL Geben Sie den Pfad der Schlüsseldatei manuell ein]**: Kopieren/fügen Sie Ihren absoluten Pfad in dieses Feld ein, wenn Sie einen bereits vorhandenen Schlüssel verwenden möchten.
+
    * **[!UICONTROL Datensatz]**: Name Ihres **[!UICONTROL Datensatz]**. Weitere Informationen hierzu finden Sie unter [Dokumentation zu Google Cloud](https://cloud.google.com/bigquery/docs/datasets-intro).
 
    ![](assets/google-big-query.png)

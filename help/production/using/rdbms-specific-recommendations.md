@@ -144,7 +144,6 @@ VACUUM (FULL, ANALYZE, VERBOSE) nmsmirrorpageinfo;
 >* Dieser Wartungsvorgang kann mithilfe eines Adobe Campaign-Workflows implementiert werden. **[!UICONTROL SQL]** Aktivität. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../workflow/using/architecture.md). Stellen Sie sicher, dass Sie die Wartung für eine niedrige Aktivitätsdauer planen, die nicht mit Ihrem Sicherungsfenster kollidiert.
 >
 
-
 ### Datenbank neu erstellen {#rebuilding-a-database}
 
 PostgreSQL bietet keine einfache Möglichkeit, eine Online-Tabellen-Neuerstellung durchzuführen, da die VACUUM FULL-Anweisung die Tabelle sperrt, wodurch eine reguläre Produktion verhindert wird. Dies bedeutet, dass die Wartung durchgeführt werden muss, wenn die Tabelle nicht verwendet wird. Sie können
@@ -436,19 +435,19 @@ Das folgende Beispiel betrifft Microsoft SQL Server 2005. Wenn Sie eine andere V
 
    * Wenn die Indexfragmentierungsrate zwischen 10 % und 40 % liegt, wird eine Neuorganisation empfohlen.
 
-      Wählen Sie aus, welche Datenbanken und Objekte (Tabellen oder Ansichten) Sie neu organisieren möchten, und klicken Sie dann auf **[!UICONTROL Nächste]**.
+     Wählen Sie aus, welche Datenbanken und Objekte (Tabellen oder Ansichten) Sie neu organisieren möchten, und klicken Sie dann auf **[!UICONTROL Nächste]**.
 
-      >[!NOTE]
-      >
-      >Je nach Konfiguration können Sie entweder die zuvor ausgewählten Tabellen oder alle Tabellen in Ihrer Datenbank auswählen.
+     >[!NOTE]
+     >
+     >Je nach Konfiguration können Sie entweder die zuvor ausgewählten Tabellen oder alle Tabellen in Ihrer Datenbank auswählen.
 
    * Wenn die Indexfragmentierungsrate über 40 % liegt, wird eine Neuerstellung empfohlen.
 
-      Wählen Sie die Optionen aus, die Sie auf die Neuerstellungsaufgabe des Index anwenden möchten, und klicken Sie dann auf **[!UICONTROL Nächste]**.
+     Wählen Sie die Optionen aus, die Sie auf die Neuerstellungsaufgabe des Index anwenden möchten, und klicken Sie dann auf **[!UICONTROL Nächste]**.
 
-      >[!NOTE]
-      >
-      >Der Prozess zur Neuerstellung von Indizes ist im Hinblick auf die Prozessorverwendung strenger und sperrt die Datenbankressourcen. Wählen Sie die **[!UICONTROL Index bei Neuindizierung online halten]** , wenn der Index während der Neuerstellung verfügbar sein soll.
+     >[!NOTE]
+     >
+     >Der Prozess zur Neuerstellung von Indizes ist im Hinblick auf die Prozessorverwendung strenger und sperrt die Datenbankressourcen. Wählen Sie die **[!UICONTROL Index bei Neuindizierung online halten]** , wenn der Index während der Neuerstellung verfügbar sein soll.
 
 1. Wählen Sie die Optionen aus, die im Aktivitätsbericht angezeigt werden sollen, und klicken Sie auf **[!UICONTROL Nächste]**.
 1. Überprüfen Sie die Liste der für den Wartungsplan konfigurierten Aufgaben und klicken Sie auf **[!UICONTROL Beenden]**.

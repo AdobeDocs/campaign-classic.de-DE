@@ -29,7 +29,7 @@ Audit-Protokoll besteht aus drei Komponenten:
 
 * **Schema-Audit-Protokoll**: Überprüfen Sie die Aktivitäten und letzten Änderungen an Ihren Schemas.
 
-   Weiterführende Informationen zu Schemata finden Sie in diesem Abschnitt [page](../../configuration/using/data-schemas.md).
+  Weiterführende Informationen zu Schemata finden Sie in diesem Abschnitt [page](../../configuration/using/data-schemas.md).
 
 * **Workflow-Audit-Protokoll**: Überprüfen Sie Aktivitäten und letzte Änderungen an Workflows sowie zusätzlich den Status Ihrer Workflows, z. B.:
 
@@ -42,13 +42,13 @@ Audit-Protokoll besteht aus drei Komponenten:
    * Wakeup, der der Aktion Ausstehende Aufgaben jetzt ausführen entspricht
    * Unbedingter Stopp
 
-   Weiterführende Informationen zu Workflows finden Sie in diesem Abschnitt [page](../../workflow/using/about-workflows.md).
+  Weiterführende Informationen zu Workflows finden Sie in diesem Abschnitt [page](../../workflow/using/about-workflows.md).
 
-   Weiterführende Informationen zur Überwachung von Workflows finden Sie im Abschnitt [dedizierter Abschnitt](../../workflow/using/monitoring-workflow-execution.md).
+  Weiterführende Informationen zur Überwachung von Workflows finden Sie im Abschnitt [dedizierter Abschnitt](../../workflow/using/monitoring-workflow-execution.md).
 
 * **Option-Audit-Protokoll**: Überprüfen Sie die Aktivitäten und zuletzt vorgenommenen Änderungen an Ihren Optionen.
 
-   Weiterführende Informationen zu Optionen finden Sie in diesem Abschnitt [page](../../installation/using/configuring-campaign-options.md).
+  Weiterführende Informationen zu Optionen finden Sie in diesem Abschnitt [page](../../installation/using/configuring-campaign-options.md).
 
 ## Zugriff auf das Audit-Protokoll {#accessing-audit-trail}
 

@@ -28,9 +28,9 @@ Damit ein Benutzer über FDA Aktionen in einer Datenbank ausführen kann, muss e
    * **base** dem Namen der externen Datenbank entspricht.
    * **server** dem Namen des Servers der externen Datenbank entspricht.
 
-      >[!NOTE]
-      >
-      >Der Teil **:base** ist in Oracle optional.
+     >[!NOTE]
+     >
+     >Der Teil **:base** ist in Oracle optional.
 
 1. Speichern Sie die spezifische Berechtigung und verknüpfen Sie sie dann mit dem ausgewählten Benutzer über den Knoten **[!UICONTROL Administration > Zugriffe > Benutzer]** im Adobe-Campaign-Explorer.
 

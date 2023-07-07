@@ -6,7 +6,7 @@ badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classi
 feature: Workflows
 exl-id: 7213ea64-3dec-4b16-9d93-4ae941ddfaa7
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1771'
 ht-degree: 100%
 
@@ -185,47 +185,47 @@ Schreiben Sie die `select`-, `where`- und `orderBy`-Klauseln als XML-Elemente:
 
 * `select`-Klausel
 
-   Geben Sie die zurückzugebenden Spalten an. Um beispielsweise den Vor- und Nachnamen der Person auszuwählen, schreiben Sie folgenden Code:
+  Geben Sie die zurückzugebenden Spalten an. Um beispielsweise den Vor- und Nachnamen der Person auszuwählen, schreiben Sie folgenden Code:
 
-   ```xml
-   <select>
-       <node expr="@firstName"/>
-       <node expr="@lastName"/>
-   </select>
-   ```
+  ```xml
+  <select>
+      <node expr="@firstName"/>
+      <node expr="@lastName"/>
+  </select>
+  ```
 
-   Mit dem `nms:recipient`-Schema werden Elemente in der folgenden Form zurückgegeben:
+  Mit dem `nms:recipient`-Schema werden Elemente in der folgenden Form zurückgegeben:
 
-   ```xml
-   <recipient firstName="Bo" lastName="Didley"/>
-   ```
+  ```xml
+  <recipient firstName="Bo" lastName="Didley"/>
+  ```
 
 * `where`-Klausel
 
-   Um Bedingungen festzulegen, verwenden Sie eine `where`-Klausel. Um beispielsweise die Datensätze auszuwählen, die sich im Ordner **Training** befinden, können Sie den folgenden Code schreiben:
+  Um Bedingungen festzulegen, verwenden Sie eine `where`-Klausel. Um beispielsweise die Datensätze auszuwählen, die sich im Ordner **Training** befinden, können Sie den folgenden Code schreiben:
 
-   ```xml
-   <where>
-       <condition expr="[folder/@label]='Training'"/>
-   </where>
-   ```
+  ```xml
+  <where>
+      <condition expr="[folder/@label]='Training'"/>
+  </where>
+  ```
 
-   Verwenden Sie beim Kombinieren mehrerer Ausdrücke den booleschen Operator im ersten Ausdruck. Um beispielsweise alle Personen mit Namen Isabel Garcia auszuwählen, können Sie den folgenden Code schreiben:
+  Verwenden Sie beim Kombinieren mehrerer Ausdrücke den booleschen Operator im ersten Ausdruck. Um beispielsweise alle Personen mit Namen Isabel Garcia auszuwählen, können Sie den folgenden Code schreiben:
 
-   ```xml
-   <condition boolOperator="AND" expr="@firstName='Isabel'"/>
-   <condition expr="@lastName='Garcia'"/>
-   ```
+  ```xml
+  <condition boolOperator="AND" expr="@firstName='Isabel'"/>
+  <condition expr="@lastName='Garcia'"/>
+  ```
 
 * `orderBy`-Klausel
 
-   Um die Ergebnismenge zu sortieren, geben Sie die `orderBy`-Klausel als XML-Element mit dem `sortDesc`-Attribut an. Um beispielsweise die Nachnamen in aufsteigender Reihenfolge zu sortieren, können Sie den folgenden Code schreiben:
+  Um die Ergebnismenge zu sortieren, geben Sie die `orderBy`-Klausel als XML-Element mit dem `sortDesc`-Attribut an. Um beispielsweise die Nachnamen in aufsteigender Reihenfolge zu sortieren, können Sie den folgenden Code schreiben:
 
-   ```xml
-   <orderBy>
-       <node expr="@lastName> sortDesc="false"/>
-   </orderBy>
-   ```
+  ```xml
+  <orderBy>
+      <node expr="@lastName> sortDesc="false"/>
+  </orderBy>
+  ```
 
 ### Schritt 2: Abfrageobjekt erstellen
 
@@ -371,11 +371,11 @@ Sie haben verschiedene Möglichkeiten, Workflows auszulösen:
    * Fügen Sie zur **[!UICONTROL Endaktivität]** des ersten Workflows ein Initialisierungsscript hinzu.
    * Fügen Sie die Aktivität **[!UICONTROL Externes Signal]** am Beginn des Ziel-Workflows hinzu.
 
-      Nach Abschluss des ersten Workflows wird ein Ereignis gepostet. Die ausgehende Transition wird aktiviert und die Ereignisvariablen werden ausgefüllt. Anschließend wird das Ereignis vom Ziel-Workflow empfangen.
+     Nach Abschluss des ersten Workflows wird ein Ereignis gepostet. Die ausgehende Transition wird aktiviert und die Ereignisvariablen werden ausgefüllt. Anschließend wird das Ereignis vom Ziel-Workflow empfangen.
 
-      >[!TIP]
-      >
-      >Wenn Sie ein Script zu einer Aktivität hinzufügen, empfiehlt es sich, den Aktivitätsnamen in doppelte Bindestriche einzuschließen, beispielsweise `-- end --`. [Weitere Informationen](workflow-best-practices.md) zu Best Practices für Workflows.
+     >[!TIP]
+     >
+     >Wenn Sie ein Script zu einer Aktivität hinzufügen, empfiehlt es sich, den Aktivitätsnamen in doppelte Bindestriche einzuschließen, beispielsweise `-- end --`. [Weitere Informationen](workflow-best-practices.md) zu Best Practices für Workflows.
 
 Syntax der `PostEvent`-Methode:
 
@@ -558,7 +558,7 @@ Sie können Datensätze einfügen, aktualisieren und löschen. Sie können die `
 * Der `update`-Vorgang
 * Der `insertOrUpdate`-Vorgang mit dem `_key`-Argument zur Identifizierung des zu aktualisierenden Datensatzes
 
-   Wenn Sie den Ordner **Empfänger** nicht angeben und eine Übereinstimmung vorhanden ist, wird der Datensatz in allen Unterordnern aktualisiert. Andernfalls wird der Datensatz im Stammverzeichnis des Ordners **Empfänger** erstellt.
+  Wenn Sie den Ordner **Empfänger** nicht angeben und eine Übereinstimmung vorhanden ist, wird der Datensatz in allen Unterordnern aktualisiert. Andernfalls wird der Datensatz im Stammverzeichnis des Ordners **Empfänger** erstellt.
 
 * Der `delete`-Vorgang
 

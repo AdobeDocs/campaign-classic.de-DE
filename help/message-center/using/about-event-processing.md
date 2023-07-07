@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: event-processing
 exl-id: 3d85866a-6339-458c-807a-b267cce772b8
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '711'
 ht-degree: 100%
 
@@ -67,11 +67,11 @@ Beim Routing-Schritt wird ein Ereignis mit der entsprechenden Nachrichtenvorlage
 
 * dem in den Eigenschaften des Ereignisses angegebenen Ereignistyp:
 
-   ![](assets/messagecenter_event_type_001.png)
+  ![](assets/messagecenter_event_type_001.png)
 
 * dem in den Eigenschaften der Nachrichtenvorlage angegebenen Ereignistyp:
 
-   ![](assets/messagecenter_event_type_002.png)
+  ![](assets/messagecenter_event_type_002.png)
 
 Standardmäßig erfolgt das Routing auf Basis folgender Informationen:
 

@@ -7,7 +7,7 @@ badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Reporting
 exl-id: 69b810f3-aa8b-4ab5-95c1-831257d7fcb9
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 100%
 
@@ -54,7 +54,7 @@ Da John weder geöffnet noch geklickt hat, erscheint er nicht in den Trackinglog
 
 **Zwischenrechnung:**
 
-|  | Empfänger, die geklickt haben | Personen, die geklickt haben | Empfänger, die geöffnet haben |
+|   | Empfänger, die geklickt haben | Personen, die geklickt haben | Empfänger, die geöffnet haben |
 |---|---|---|---|
 | John | - | - | - |
 | Zwischenergebnis | 0 | 0 | 0 |
@@ -73,7 +73,7 @@ Die Öffnung wird einem Empfänger zugeordnet (Marie). Adobe Campaign zählt als
 
 **Zwischenrechnung:**
 
-|  | Empfänger, die geklickt haben | Personen, die geklickt haben | Empfänger, die geöffnet haben |
+|   | Empfänger, die geklickt haben | Personen, die geklickt haben | Empfänger, die geöffnet haben |
 |---|---|---|---|
 | John | - | - | - |
 | Marie | - | - | +1 |
@@ -95,7 +95,7 @@ Personen: Dank der Cookies lässt sich beobachten, dass allen Klick-Logs dieselb
 
 **Zwischenrechnung:**
 
-|  | Empfänger, die geklickt haben | Personen, die geklickt haben | Empfänger, die geöffnet haben |
+|   | Empfänger, die geklickt haben | Personen, die geklickt haben | Empfänger, die geöffnet haben |
 |---|---|---|---|
 | John | - | - | - |
 | Marie | - | - | +1 |
@@ -116,7 +116,7 @@ Folgende Logs entsprechen der Öffnung und den zwei Klicks der Person, an die Fl
 
 **Zwischenrechnung:**
 
-|  | Empfänger, die geklickt haben | Personen, die geklickt haben | Empfänger, die geöffnet haben |
+|   | Empfänger, die geklickt haben | Personen, die geklickt haben | Empfänger, die geöffnet haben |
 |---|---|---|---|
 | John | - | - | - |
 | Marie | - | - | +1 |
@@ -140,7 +140,7 @@ Henrys Handlungen (eine Öffnung, vier Klicks) erscheinen in folgenden Logs:
 
 **Zwischenrechnung:**
 
-|  | Empfänger, die geklickt haben | Personen, die geklickt haben | Empfänger, die geöffnet haben |
+|   | Empfänger, die geklickt haben | Personen, die geklickt haben | Empfänger, die geöffnet haben |
 |---|---|---|---|
 | John | - | - | - |
 | Marie | - | - | +1 |
@@ -173,4 +173,3 @@ Die Brutto-Reaktionsrate und die Weiterleitungen werden wie folgt berechnet:
 >* A den Indikator **[!UICONTROL Klicks]** (Empfänger, die geklickt haben).
 >* B den Indikator **[!UICONTROL Unique Clicks der erreichten Population]** (Personen, die geklickt haben).
 >* C den Indikator **[!UICONTROL Unique Opens der erreichten Population]** (Empfänger, die geöffnet haben).
-

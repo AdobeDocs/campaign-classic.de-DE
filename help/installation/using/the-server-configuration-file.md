@@ -1938,7 +1938,7 @@ Weitere Informationen finden Sie unter [Liste der zu verwendenden IP-Adressen](.
   </tr> 
   <tr> 
    <td> publicId<br /> </td> 
-   <td> Kennung der zugeordneten öffentlichen Adresse. Wird vom Statistikserver als Schlüssel verwendet. Muss numerisch sein. Weitere Informationen finden Sie in <a href="../../installation/using/email-deliverability.md#managing-ip-addresses">diesem Abschnitt</a>.<br /> </td> 
+   <td> Kennung der zugeordneten öffentlichen Adresse. Wird vom Statistikserver als Schlüssel verwendet. Muss numerisch sein. Siehe diesen <a href="../../installation/using/email-deliverability.md#managing-ip-addresses">Abschnitt</a>.<br /> </td> 
    <td> Lang<br /> </td> 
   </tr> 
   <tr> 
@@ -2499,7 +2499,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **stat** Knoten. Dies is
   </tr> 
   <tr> 
    <td> Port<br /> </td> 
-   <td> Server-Listen-Port. Weitere Informationen finden Sie in <a href="../../installation/using/email-deliverability.md#definition-of-the-server-port">diesem Abschnitt</a>.<br /> </td> 
+   <td> Server-Listen-Port. Siehe diesen <a href="../../installation/using/email-deliverability.md#definition-of-the-server-port">Abschnitt</a>.<br /> </td> 
    <td> Kurz<br /> </td> 
    <td> <br /> </td> 
   </tr> 

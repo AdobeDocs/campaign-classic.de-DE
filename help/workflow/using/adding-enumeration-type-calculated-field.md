@@ -9,7 +9,7 @@ topic-tags: use-cases
 feature: Workflows, Data Management
 exl-id: 3f606d3a-0af5-4315-bb08-1b21a71f1721
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '495'
 ht-degree: 100%
 
@@ -23,15 +23,15 @@ In der folgenden Abfrage wird ein **[!UICONTROL berechnetes Auflistungsfeld]** h
 
 * Welche Tabelle soll ausgewählt werden?
 
-   Die Empfängertabelle (nms:recipient)
+  Die Empfängertabelle (nms:recipient)
 
 * Felder, die als Ausgabespalten verwendet werden sollen?
 
-   Nachname, Vorname, Geschlecht
+  Nachname, Vorname, Geschlecht
 
 * Nach welchen Kriterien sind die Informationen zu filtern?
 
-   Nach der Sprache der Empfänger
+  Nach der Sprache der Empfänger
 
 Gehen Sie wie folgt vor:
 

@@ -28,7 +28,6 @@ Ermitteln und bestätigen Sie vor dem Starten des Aktualisierungsprozesses, auf 
 >* Lesen [diesem Abschnitt](../../installation/using/general-architecture.md) und [Build-Aktualisierung](https://helpx.adobe.com/de/campaign/kb/acc-build-upgrade.html) Kapitel vor dem Start.
 >
 
-
 ## Windows {#in-windows}
 
 Gehen Sie in einer Windows-Umgebung wie folgt vor, um Adobe Campaign auf einen neuen Build zu aktualisieren:
@@ -48,9 +47,10 @@ Um alle Dateien durch die neue Version zu ersetzen, müssen Sie alle Instanzen d
 
    * Webdienste (IIS):
 
-      **iisreset /stop**
+     **iisreset /stop**
 
    * Adobe-Campaign-Dienst: **net stop nlserver6**
+
    >[!IMPORTANT]
    >
    >Sie müssen auch sicherstellen, dass der Weiterleitungsserver (webmdl) angehalten wird, damit die Variable **nlsrvmod.dll** -Datei, die von IIS verwendet wird, kann durch die neue Version ersetzt werden.
@@ -105,7 +105,7 @@ Folgende Dienste sollen neu gestartet werden:
 
 * Webdienste (IIS):
 
-   **iisreset /start**
+  **iisreset /start**
 
 * Adobe-Campaign-Dienst: **net start nlserver6**
 
@@ -133,27 +133,27 @@ Die Datei lautet **nlserver6-v7-XXX.rpm**
 
 * RPM-basierte Verteilung (RedHat, SuSe)
 
-   Um sie zu installieren, führen Sie sie als Root aus:
+  Um sie zu installieren, führen Sie sie als Root aus:
 
-   ```
-   $rpm -Uvh nlserver6-v7-XXXX.rpm
-   ```
+  ```
+  $rpm -Uvh nlserver6-v7-XXXX.rpm
+  ```
 
-   Dabei ist XXX die Version der Datei.
+  Dabei ist XXX die Version der Datei.
 
-   Die rpm-Datei hat Abhängigkeiten von Paketen, die Sie in CentOS/Red Hat-Distributionen finden können. Wenn Sie einige dieser Abhängigkeiten nicht verwenden möchten, müssen Sie möglicherweise die Option &quot;nodeps&quot;von rpm verwenden:
+  Die rpm-Datei hat Abhängigkeiten von Paketen, die Sie in CentOS/Red Hat-Distributionen finden können. Wenn Sie einige dieser Abhängigkeiten nicht verwenden möchten, müssen Sie möglicherweise die Option &quot;nodeps&quot;von rpm verwenden:
 
-   ```
-   rpm --nodeps -Uvh nlserver6-v7-XXXX-0.x86_64.rpm
-   ```
+  ```
+  rpm --nodeps -Uvh nlserver6-v7-XXXX-0.x86_64.rpm
+  ```
 
 * DEB-basierte Distribution (Debian)
 
-   Um sie zu installieren, führen Sie sie als Root aus:
+  Um sie zu installieren, führen Sie sie als Root aus:
 
-   ```
-   dpkg -i nlserver6-v7-XXXX-amd64_debX.deb
-   ```
+  ```
+  dpkg -i nlserver6-v7-XXXX-amd64_debX.deb
+  ```
 
 >[!NOTE]
 >
@@ -173,10 +173,8 @@ Führen Sie dazu den folgenden Befehl aus:
 >
 >* Ihr Skript kann **httpd** anstelle von **apache**.
 >* Sie MÜSSEN diesen Befehl ausführen, bis Sie die folgende Antwort erhalten:
-
-   >
-   >   Dieser Vorgang ist erforderlich, damit Apache die neue Bibliothek anwendet.
-
+>
+>   Dieser Vorgang ist erforderlich, damit Apache die neue Bibliothek anwendet.
 
 Starten Sie dann Apache neu:
 
@@ -194,16 +192,16 @@ Es gibt zwei Möglichkeiten, das Synchronisierungsergebnis anzuzeigen:
 
 * In der Befehlszeilenschnittstelle werden Fehler durch einen dreifachen Chevron dargestellt **>>** und die Synchronisierung automatisch angehalten wird. Warnungen werden durch einen doppelten Chevron materialisiert **>>** und müssen nach Abschluss der Synchronisierung aufgelöst werden. Am Ende des Postupgrades wird an der Eingabeaufforderung eine Zusammenfassung angezeigt. Sie kann wie folgt aussehen:
 
-   ```
-   2013-04-09 07:48:39.749Z 00002E7A 1 info log =========Summary of the update==========
-   2013-04-09 07:48:39.749Z 00002E7A 1 info log <instance name> instance, 6 warning(s) and 0 error(s) during the update.
-   2013-04-09 07:48:39.749Z 00002E7A 1 warning log The document with identifier 'mobileAppDeliveryFeedback' and type 'xtk:report' is in conflict with the new version.
-   2013-04-09 07:48:39.749Z 00002E7A 1 warning log The document with identifier 'opensByUserAgent' and type 'xtk:report' is in conflict with the new version.
-   2013-04-09 07:48:39.750Z 00002E7A 1 warning log The document with identifier 'deliveryValidation' and type 'nms:webApp' is in conflict with the new version.
-   2013-04-09 07:48:39.750Z 00002E7A 1 warning log Document of identifier 'nms:includeView' and type 'xtk:srcSchema' updated in the database and found in the file system. You will have to merge the two versions manually.
-   ```
+  ```
+  2013-04-09 07:48:39.749Z 00002E7A 1 info log =========Summary of the update==========
+  2013-04-09 07:48:39.749Z 00002E7A 1 info log <instance name> instance, 6 warning(s) and 0 error(s) during the update.
+  2013-04-09 07:48:39.749Z 00002E7A 1 warning log The document with identifier 'mobileAppDeliveryFeedback' and type 'xtk:report' is in conflict with the new version.
+  2013-04-09 07:48:39.749Z 00002E7A 1 warning log The document with identifier 'opensByUserAgent' and type 'xtk:report' is in conflict with the new version.
+  2013-04-09 07:48:39.750Z 00002E7A 1 warning log The document with identifier 'deliveryValidation' and type 'nms:webApp' is in conflict with the new version.
+  2013-04-09 07:48:39.750Z 00002E7A 1 warning log Document of identifier 'nms:includeView' and type 'xtk:srcSchema' updated in the database and found in the file system. You will have to merge the two versions manually.
+  ```
 
-   Wenn ein Warnhinweis aufgrund eines Konflikts von Ressourcen ausgegeben wird, muss ihn der Benutzer lösen.
+  Wenn ein Warnhinweis aufgrund eines Konflikts von Ressourcen ausgegeben wird, muss ihn der Benutzer lösen.
 
 * Die **postupgrade_`<server version number>_<time of postupgrade>`.log** Protokolldatei enthält das Synchronisierungsergebnis. Sie ist standardmäßig im folgenden Verzeichnis verfügbar: **`<installation directory>/var/<instance/postupgrade`**. Fehler und Warnungen werden durch die Fehler- und Warnattribute angezeigt.
 
@@ -220,9 +218,9 @@ Es gibt drei Möglichkeiten, einen Konflikt zu lösen:
 * **[!UICONTROL Neue Version akzeptieren]** : empfohlen, wenn die mit Adobe Campaign bereitgestellten Ressourcen vom Benutzer nicht geändert wurden.
 * **[!UICONTROL Aktuelle Version beibehalten]** : bedeutet, dass die Aktualisierung abgelehnt wird.
 
-   >[!IMPORTANT]
-   >
-   >Wenn Sie diesen Auflösungsmodus auswählen, profitieren Sie möglicherweise nicht von Korrekturen in der neuen Version.
+  >[!IMPORTANT]
+  >
+  >Wenn Sie diesen Auflösungsmodus auswählen, profitieren Sie möglicherweise nicht von Korrekturen in der neuen Version.
 
 Wenn Sie den Konflikt manuell lösen möchten, gehen Sie wie folgt vor:
 

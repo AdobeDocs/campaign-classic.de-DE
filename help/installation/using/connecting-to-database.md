@@ -99,7 +99,7 @@ Fügen Sie dazu &quot;**:ssl**&quot; nach der Serveradresse und Adresse des verw
 
 Die Daten werden dadurch unter Verwendung des sicheren SSL-Protokolls gesendet.
 
-## Ergänzende Konfigurationen {#additional-configurations}
+## Zusätzliche Konfigurationen {#additional-configurations}
 
 Nötigenfalls können Sie das Schema zur Datenverarbeitung in einer externe Datenbank erstellen. Ebenso ermöglicht Ihnen Adobe Campaign das Definieren eines Mappings für die Daten in einer externen Tabelle. Diese Konfigurationen sind allgemeiner Art und werden nicht auf einzelne Workflows angewendet.
 

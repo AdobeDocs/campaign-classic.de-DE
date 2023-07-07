@@ -9,7 +9,7 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 85c48712-3704-41db-a255-a07ca8d02ec4
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 100%
 
@@ -23,17 +23,17 @@ Import- und Exportvorgänge können nach erfolgter Vorlagenkonfiguration in vers
 
 * Wählen Sie im Adobe Campaign-Arbeitsbereich im Bereich **[!UICONTROL Profile und Zielgruppen]** den Link **[!UICONTROL Vorgänge]**. Daraufhin wird eine Liste der existierenden Importe und Exporte angezeigt.
 
-   Verwenden Sie die Schaltfläche **[!UICONTROL Erstellen]** und wählen Sie die gewünschte Option aus.
+  Verwenden Sie die Schaltfläche **[!UICONTROL Erstellen]** und wählen Sie die gewünschte Option aus.
 
-   ![](assets/s_ncs_user_import_from_home.png)
+  ![](assets/s_ncs_user_import_from_home.png)
 
 * Sie können Importe und Exporte auch direkt über zwei eigene Links im **[!UICONTROL Monitoring]**-Bereich des Arbeitsbereichs starten.
 
-   ![](assets/s_ncs_user_import_from_production.png)
+  ![](assets/s_ncs_user_import_from_production.png)
 
 * Auch vom Adobe Campaign-Explorer aus lassen sich Importe und Exporte starten.
 
-   ![](assets/s_ncs_user_export_wizard_launch_from_menu.png)
+  ![](assets/s_ncs_user_export_wizard_launch_from_menu.png)
 
 
 Bei all diesen Optionen öffnen sich Datenimport- oder -export-Assistenten. Sie werden in den folgenden Abschnitten beschrieben:

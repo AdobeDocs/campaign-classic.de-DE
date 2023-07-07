@@ -61,11 +61,11 @@ Je nach ausgewählter Datenbank-Engine können die Informationen zur Serverident
 * Für **PostgreSQL** oder **DB2** angegeben, müssen Sie den DNS-Namen (oder die IP-Adresse) angeben, der auf dem Anwendungsserver für den Zugriff auf den Datenbankserver definiert ist.
 * Für **Microsoft SQL Server** müssen Sie Folgendes definieren: den DNS-Namen (oder die IP-Adresse), der auf dem Anwendungsserver für den Zugriff auf den Datenbankserver definiert ist: **DNS** oder **DNS`\<instance>`** (Instanzmodus),
 
-   >[!CAUTION]
-   >
-   > Ab Version 20.3 wird die Windows NT-Authentifizierung eingestellt. **[!UICONTROL SQL Server-Authentifizierung]** ist jetzt der einzige Authentifizierungsmodus, der für Microsoft SQL Server verfügbar ist. [Weitere Informationen](../../rn/using/deprecated-features.md)
+  >[!CAUTION]
+  >
+  > Ab Version 20.3 wird die Windows NT-Authentifizierung eingestellt. **[!UICONTROL SQL Server-Authentifizierung]** ist jetzt der einzige Authentifizierungsmodus, der für Microsoft SQL Server verfügbar ist. [Weitere Informationen](../../rn/using/deprecated-features.md)
 
-   ![](assets/s_ncs_install_db_mssql_creation01.png)
+  ![](assets/s_ncs_install_db_mssql_creation01.png)
 
 ### Schritt 2: Herstellen einer Verbindung zum Server {#step-2---connecting-to-the-server}
 
@@ -90,24 +90,24 @@ Sie müssen die folgenden Einstellungen definieren:
 
 * Geben Sie den Namen der zu erstellenden Datenbank an.
 
-   >[!NOTE]
-   >
-   >Bei einer DB2-Datenbank darf der Name der Datenbank 8 Zeichen nicht überschreiten.
+  >[!NOTE]
+  >
+  >Bei einer DB2-Datenbank darf der Name der Datenbank 8 Zeichen nicht überschreiten.
 
 * Geben Sie das Kennwort des mit dieser Datenbank verknüpften Kontos ein.
 * Geben Sie an, ob die Datenbank in Unicode vorliegen muss oder nicht.
 
-   Die **[!UICONTROL Unicode-Datenbank]** -Option können Sie alle Zeichentypen unabhängig von der Sprache in Unicode speichern.
+  Die **[!UICONTROL Unicode-Datenbank]** -Option können Sie alle Zeichentypen unabhängig von der Sprache in Unicode speichern.
 
-   >[!NOTE]
-   >
-   >Mit einer Oracle-Datenbank kann die **[!UICONTROL Unicode-Speicher]** -Option verwendet **NCLOB** und **NVARCHAR** Typfelder.
-   > 
-   >Wenn Sie diese Option nicht auswählen, muss der Zeichensatz (Zeichensatz) der Oracle-Datenbank die Datenspeicherung in allen Sprachen aktivieren (empfohlen wird AL32UTF8).
+  >[!NOTE]
+  >
+  >Mit einer Oracle-Datenbank kann die **[!UICONTROL Unicode-Speicher]** -Option verwendet **NCLOB** und **NVARCHAR** Typfelder.
+  > 
+  >Wenn Sie diese Option nicht auswählen, muss der Zeichensatz (Zeichensatz) der Oracle-Datenbank die Datenspeicherung in allen Sprachen aktivieren (empfohlen wird AL32UTF8).
 
 * Wählen Sie eine Zeitzone für die Datenbank aus und geben Sie an, ob sie in UTC vorliegen soll (sofern verfügbar).
 
-   Weitere Informationen hierzu finden Sie unter [Zeitzonen-Management](../../installation/using/time-zone-management.md).
+  Weitere Informationen hierzu finden Sie unter [Zeitzonen-Management](../../installation/using/time-zone-management.md).
 
 ### Schritt 4: Zu installierende Pakete {#step-4---packages-to-install}
 
@@ -125,7 +125,7 @@ Die **[!UICONTROL Erstellungsschritte]** -Fenster können Sie das SQL-Skript anz
 
 * Für eine Oracle-, Microsoft SQL Server- oder PostgreSQL-Datenbank kann der Administrator auch die **Speicherparameter** zum Erstellen von Datenbankobjekten.
 
-   Diese Parameter erhalten die genauen Tablespace-Namen (Warnung: Groß-/Kleinschreibung beachten). Sie werden jeweils im **[!UICONTROL Administration > Plattform > Optionen]** Knoten in den folgenden Optionen (siehe [diesem Abschnitt](../../installation/using/configuring-campaign-options.md#database)):
+  Diese Parameter erhalten die genauen Tablespace-Namen (Warnung: Groß-/Kleinschreibung beachten). Sie werden jeweils im **[!UICONTROL Administration > Plattform > Optionen]** Knoten in den folgenden Optionen (siehe [diesem Abschnitt](../../installation/using/configuring-campaign-options.md#database)):
 
    * **WdbcOptions_TableSpaceUser**: Benutzertabellen basierend auf einem Schema
    * **WdbcOptions_TableSpaceIndex**: Index der Benutzertabellen basierend auf einem Schema
@@ -135,7 +135,7 @@ Die **[!UICONTROL Erstellungsschritte]** -Fenster können Sie das SQL-Skript anz
 * Für eine Oracle-Datenbank muss der Adobe Campaign-Benutzer Zugriff auf die Oracle-Bibliotheken haben, in der Regel als Mitglied der **oinstall** hinzugefügt.
 * Die **[!UICONTROL Administratorkennwort festlegen oder ändern]** ermöglicht die Eingabe des mit dem Adobe Campaign-Benutzer verknüpften Kennworts mit Administratorrechten.
 
-   Es wird empfohlen, aus Sicherheitsgründen ein Kennwort für den Adobe Campaign-Kontoadministrator zu definieren.
+  Es wird empfohlen, aus Sicherheitsgründen ein Kennwort für den Adobe Campaign-Kontoadministrator zu definieren.
 
 ### 6. Schritt - Erstellung der Datenbank {#step-6---creating-the-database}
 
@@ -201,10 +201,10 @@ Sie müssen die folgenden Einstellungen definieren:
 * Geben Sie den Namen der zu verwendenden Datenbank an,
 * Geben Sie den Namen und das Kennwort des dieser Datenbank zugeordneten Kontos ein;
 
-   >[!NOTE]
-   >
-   >Stellen Sie sicher, dass sowohl der Schemaname als auch der Benutzername übereinstimmen. Die empfohlene Methode zum Erstellen einer Datenbank wird über den Kampagnenkonsole-Client empfohlen.
-   >Bei einer Oracle-Datenbank ist die Angabe des Kontonamens nicht erforderlich.
+  >[!NOTE]
+  >
+  >Stellen Sie sicher, dass sowohl der Schemaname als auch der Benutzername übereinstimmen. Die empfohlene Methode zum Erstellen einer Datenbank wird über den Kampagnenkonsole-Client empfohlen.
+  >Bei einer Oracle-Datenbank ist die Angabe des Kontonamens nicht erforderlich.
 
 * Geben Sie an, ob die Datenbank Unicode sein soll oder nicht.
 
@@ -226,7 +226,7 @@ Die **[!UICONTROL Erstellungsschritte]** -Fenster können Sie das SQL-Skript anz
 * Für eine Oracle-Datenbank muss der Adobe Campaign-Benutzer Zugriff auf die Oracle-Bibliotheken haben, in der Regel als Mitglied der **oinstall** hinzugefügt.
 * Die **[!UICONTROL Administratorkennwort festlegen oder ändern]** ermöglicht die Eingabe des mit dem Adobe Campaign-Benutzer verknüpften Kennworts mit Administratorrechten.
 
-   Es wird empfohlen, aus Sicherheitsgründen ein Kennwort für den Adobe Campaign-Kontoadministrator zu definieren.
+  Es wird empfohlen, aus Sicherheitsgründen ein Kennwort für den Adobe Campaign-Kontoadministrator zu definieren.
 
 ### 5. Schritt - Erstellung der Datenbank {#step-5---creating-the-database}
 

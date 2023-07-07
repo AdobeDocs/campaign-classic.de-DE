@@ -6,7 +6,7 @@ badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classi
 feature: Workflows, Channels Activity
 exl-id: b2a05e07-a7d7-436b-b2c6-90ab55d031cd
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 100%
 
@@ -26,31 +26,31 @@ Geben Sie im Tab **E-Mail-Empfang** die POP3-Parameter sowie das bei Empfang jed
 
    * **[!UICONTROL Externes Konto verwenden]**
 
-      Wenn diese Option aktiviert wird, können Sie direkt ein externes POP3-Konto auswählen, anstatt die Verbindungsparameter anzugeben. Im Feld **[!UICONTROL Externes Konto]** (nur sichtbar bei Aktivierung der Option) wird das zu verwendende POP3-Konto angezeigt, das die Verbindung zur Mailbox herstellt.
+     Wenn diese Option aktiviert wird, können Sie direkt ein externes POP3-Konto auswählen, anstatt die Verbindungsparameter anzugeben. Im Feld **[!UICONTROL Externes Konto]** (nur sichtbar bei Aktivierung der Option) wird das zu verwendende POP3-Konto angezeigt, das die Verbindung zur Mailbox herstellt.
 
-      Wenn die zuvor beschriebene Option nicht aktiviert wurde, sind folgende Parameter anzugeben:
+     Wenn die zuvor beschriebene Option nicht aktiviert wurde, sind folgende Parameter anzugeben:
 
-      ![](assets/email_rec_edit_1b.png)
+     ![](assets/email_rec_edit_1b.png)
 
       * **[!UICONTROL POP3-Server]**
 
-         Name des POP3-Servers.
+        Name des POP3-Servers.
 
       * **[!UICONTROL POP3-Konto]**
 
-         Name des Benutzers.
+        Name des Benutzers.
 
       * **[!UICONTROL Passwort]**
 
-         Passwort des Benutzerkontos.
+        Passwort des Benutzerkontos.
 
       * **[!UICONTROL Port]**
 
-         Nummer des POP3-Verbindungsports. Standardmäßig ist dies der Port 110.
+        Nummer des POP3-Verbindungsports. Standardmäßig ist dies der Port 110.
+
    * **[!UICONTROL Beenden, sobald eine E-Mail verarbeitet wurde]**
 
-      Bei Auswahl dieser Option werden die E-Mails einzeln verarbeitet. Die Transition der Aktivität wird nur einmal aktiviert. Alle nicht verarbeiteten Nachrichten bleiben auf dem Server.
-
+     Bei Auswahl dieser Option werden die E-Mails einzeln verarbeitet. Die Transition der Aktivität wird nur einmal aktiviert. Alle nicht verarbeiteten Nachrichten bleiben auf dem Server.
 
 1. **[!UICONTROL Script]**
 

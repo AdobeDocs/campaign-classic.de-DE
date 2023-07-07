@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: 6765e307-915a-44d2-a486-85c64e8ec52e
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2539'
 ht-degree: 100%
 
@@ -52,21 +52,21 @@ Budgets werden im Knoten **[!UICONTROL Kampagnenverwaltung > Budgets]** des Navi
 
 * Neues Budget hinzufügen
 
-   Klicken Sie auf das Symbol **[!UICONTROL Neu]**, benennen und speichern Sie das Budget.
+  Klicken Sie auf das Symbol **[!UICONTROL Neu]**, benennen und speichern Sie das Budget.
 
 * Zugeteilten Betrag eingeben
 
-   Geben Sie den zugeteilten Betrag im entsprechenden Feld ein. Die übrigen Beträge werden automatisch ausgefüllt. Siehe [Beträge berechnen](#calculating-amounts).
+  Geben Sie den zugeteilten Betrag im entsprechenden Feld ein. Die übrigen Beträge werden automatisch ausgefüllt. Siehe [Beträge berechnen](#calculating-amounts).
 
 * Gültigkeitszeitraum bestimmen
 
-   Geben Sie Beginn und Ende der Budgetplanung ein. Es handelt sich hierbei lediglich um Richtwerte.
+  Geben Sie Beginn und Ende der Budgetplanung ein. Es handelt sich hierbei lediglich um Richtwerte.
 
 * Ausgaben
 
-   Erstellen Sie die Ausgabenkategorien, denen die für Kampagnen, Sendungen, Aufgaben usw. anfallenden Kosten in diesem Budget zugeordnet werden können. Siehe [Ausgabenkategorien](#expense-categories).
+  Erstellen Sie die Ausgabenkategorien, denen die für Kampagnen, Sendungen, Aufgaben usw. anfallenden Kosten in diesem Budget zugeordnet werden können. Siehe [Ausgabenkategorien](#expense-categories).
 
-   ![](assets/s_ncs_user_budget_create_and_save.png)
+  ![](assets/s_ncs_user_budget_create_and_save.png)
 
 >[!NOTE]
 >

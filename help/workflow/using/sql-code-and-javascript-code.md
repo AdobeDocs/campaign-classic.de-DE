@@ -6,7 +6,7 @@ badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classi
 feature: Workflows
 exl-id: 729a2010-c2d8-481b-8c9e-780b9e5f97ef
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 100%
 
@@ -24,11 +24,11 @@ Die Aktivität **[!UICONTROL SQL-Code]** führt ein SQL-Script in Form eines JST
 
 * **[!UICONTROL Script]**
 
-   Das Script wird in den zentralen Bereich des Editors eingefügt. Da es sich beim Script um ein JST-Template handelt, kann es dem Workflow-Kontext entsprechend konfiguriert werden.
+  Das Script wird in den zentralen Bereich des Editors eingefügt. Da es sich beim Script um ein JST-Template handelt, kann es dem Workflow-Kontext entsprechend konfiguriert werden.
 
 * **[!UICONTROL Fehler verarbeiten]**
 
-   Siehe [Fehler verarbeiten](monitoring-workflow-execution.md#processing-errors).
+  Siehe [Fehler verarbeiten](monitoring-workflow-execution.md#processing-errors).
 
 ## JavaScript-Code und erweiterter JavaScript-Code {#javascript-code}
 

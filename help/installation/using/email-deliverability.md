@@ -19,7 +19,7 @@ ht-degree: 19%
 
 
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Im folgenden Abschnitt finden Sie einen Überblick über die Konfiguration, die zum Steuern der Ausgabe von Adobe Campaign-Instanzen beim Versand von E-Mails erforderlich ist.
 
@@ -46,7 +46,7 @@ Das ist das **stat** -Modul: leitet alle Verbindungsanfragen und -nachrichten f�
 
 ### Versandserver {#delivery-servers}
 
-Die **mta** -Modul verteilt Nachrichten an seine **mtachild** untergeordnete Module. Jeder **mtachild** erstellt Nachrichten, bevor eine Autorisierung vom Statistikserver angefordert wird, und sendet sie.
+Die **mta** -Modul verteilt Nachrichten auf **mtachild** untergeordnete Module. Jeder **mtachild** erstellt Nachrichten, bevor eine Autorisierung vom Statistikserver angefordert wird, und sendet sie.
 
 Zusammenfassend sind folgende Etappen zu durchlaufen:
 
@@ -243,41 +243,41 @@ Die folgenden Parameter sind für jede Regel verfügbar:
 
 * **[!UICONTROL MX-Maske]**: Domäne, auf die die Regel angewendet wird. Jede Regel definiert eine Adressenmaske des MX. Jeder MX, dessen Name dieser Adressenmaske entspricht, kommt somit infrage. Die Maske kann &quot;&#42;&quot; und &quot;?&quot; generische Zeichen.
 
-   So sind die Adressen
+  So sind die Adressen
 
    * a.mx.yahoo.com
    * b.mx.yahoo.com
    * c.mx.yahoo.com
 
-   mit folgenden Masken kompatibel:
+  mit folgenden Masken kompatibel:
 
    * &#42;.yahoo.com
    * ?.mx.yahoo.com
 
-   Beispielsweise lautet bei der E-Mail-Adresse foobar@gmail.com die Domain gmail.com und der MX-Eintrag sieht folgendermaßen aus:
+  Beispielsweise lautet bei der E-Mail-Adresse foobar@gmail.com die Domain gmail.com und der MX-Eintrag sieht folgendermaßen aus:
 
-   ```
-   gmail.com mail exchanger = 20 alt2.gmail-smtp-in.l.google.com.
-   gmail.com mail exchanger = 10 alt1.gmail-smtp-in.l.google.com.
-   gmail.com mail exchanger = 40 alt4.gmail-smtp-in.l.google.com.
-   gmail.com mail exchanger = 5  gmail-smtp-in.l.google.com.
-   gmail.com mail exchanger = 30 alt3.gmail-smtp-in.l.google.com.
-   ```
+  ```
+  gmail.com mail exchanger = 20 alt2.gmail-smtp-in.l.google.com.
+  gmail.com mail exchanger = 10 alt1.gmail-smtp-in.l.google.com.
+  gmail.com mail exchanger = 40 alt4.gmail-smtp-in.l.google.com.
+  gmail.com mail exchanger = 5  gmail-smtp-in.l.google.com.
+  gmail.com mail exchanger = 30 alt3.gmail-smtp-in.l.google.com.
+  ```
 
-   In diesem Fall die MX-Regel `*.google.com` verwendet. Wie Sie sehen können, stimmt die MX-Regelmaske nicht unbedingt mit der Domain in der E-Mail überein. Die MX-Regeln, die für E-Mail-Adressen von gmail.com angewendet werden, sind diejenigen mit der Maske `*.google.com`.
+  In diesem Fall die MX-Regel `*.google.com` verwendet. Wie Sie sehen können, stimmt die MX-Regelmaske nicht unbedingt mit der Domain in der E-Mail überein. Die MX-Regeln, die für E-Mail-Adressen von gmail.com angewendet werden, sind diejenigen mit der Maske `*.google.com`.
 
 * **[!UICONTROL Bereich der Kennungen]**: Mit dieser Option können Sie den Bereich der Kennungen (publicID) angeben, für den die Regel gilt. Folgende Angaben sind möglich:
 
    * Eine Ziffer: Die Regel wird nur für diese publicId angewendet,
    * Ein Zahlenbereich (**number1-number2**): Die Regel gilt für alle publicIDs zwischen diesen beiden Zahlen.
 
-   >[!NOTE]
-   >
-   >Wenn das Feld leer ist, gilt die Regel für alle Kennungen.
+  >[!NOTE]
+  >
+  >Wenn das Feld leer ist, gilt die Regel für alle Kennungen.
 
-   Bei einer öffentlichen Kennung handelt es sich um eine interne Kennung einer öffentlichen IP, die von einem oder mehreren MTAs verwendet wird. Diese Art von Kennungen wird in der Datei **config-instance.xml** von MTA-Servern definiert.
+  Bei einer öffentlichen Kennung handelt es sich um eine interne Kennung einer öffentlichen IP, die von einem oder mehreren MTAs verwendet wird. Diese Art von Kennungen wird in der Datei **config-instance.xml** von MTA-Servern definiert.
 
-   ![](assets/s_ncs_install_mta_ips.png)
+  ![](assets/s_ncs_install_mta_ips.png)
 
 * **[!UICONTROL Freigegeben]**: definiert den Umfang der Eigenschaften für diese MX-Regel. Wenn diese Option aktiviert ist, werden alle Parameter für alle in der Instanz verfügbaren IPs freigegeben. Wenn diese Option deaktiviert ist, werden die MX-Regeln für jede IP definiert. Die maximale Anzahl an Nachrichten wird mit der Anzahl der verfügbaren IPs multipliziert.
 * **[!UICONTROL Maximale Verbindungsanzahl]**: Maximale Anzahl simultaner Verbindungen mit der Absenderdomäne.
@@ -285,9 +285,9 @@ Die folgenden Parameter sind für jede Regel verfügbar:
 * **[!UICONTROL Nachrichten pro Stunde]**: maximale Anzahl von Nachrichten, die innerhalb einer Stunde an die Absenderdomäne gesendet werden können.
 * **[!UICONTROL Zeitüberschreitung bei Verbindung]**: Zeitschwellenwert für die Verbindung mit einer Domäne.
 
-   >[!NOTE]
-   >
-   >Windows kann eine **timeout** vor diesem Schwellenwert, der von Ihrer Windows-Version abhängt.
+  >[!NOTE]
+  >
+  >Windows kann eine **timeout** vor diesem Schwellenwert, der von Ihrer Windows-Version abhängt.
 
 * **[!UICONTROL Zeitüberschreitungsdaten]**: maximale Wartezeit nach dem Senden des Nachrichteninhalts (Abschnitt &quot;DATEN&quot;des SMTP-Protokolls).
 * **[!UICONTROL Zeitüberschreitung]**: maximale Wartezeit für andere Austausche mit dem SMTP-Server.
@@ -295,9 +295,9 @@ Die folgenden Parameter sind für jede Regel verfügbar:
 
    * **[!UICONTROL Standardkonfiguration]**: Dies ist die allgemeine Konfiguration, die in der angewendeten Konfigurationsdatei serverConf.xml angegeben ist.
 
-      >[!IMPORTANT]
-      >
-      >Es wird nicht empfohlen, die Standardkonfiguration zu ändern.
+     >[!IMPORTANT]
+     >
+     >Es wird nicht empfohlen, die Standardkonfiguration zu ändern.
 
    * **[!UICONTROL Behinderte]** : Die Nachrichten werden systematisch ohne Verschlüsselung gesendet.
    * **[!UICONTROL Opportunismus]** : Die Nachrichtenbereitstellung wird verschlüsselt, wenn der Empfangs-Server (SMTP) das TLS-Protokoll generieren kann.
@@ -324,7 +324,7 @@ Die **MIME-Struktur** Der Parameter (Multizweck Internet Mail Extensions) ermög
 
 * **Multipart**: Die Nachricht wird im Text- oder HTML-Format gesendet. Wenn das HTML-Format nicht akzeptiert wird, kann die Nachricht weiterhin im Textformat angezeigt werden.
 
-   Standardmäßig ist die mehrteilige Struktur **multipart/alternative**, wird jedoch automatisch **multipart/related** wenn der Nachricht ein Bild hinzugefügt wird. Bestimmte Anbieter erwarten die **multipart/related** standardmäßig das **[!UICONTROL Mehrteilige erzwingen/verknüpfte erzwingen]** Dieses Format wird auch dann angewendet, wenn kein Bild angehängt ist.
+  Standardmäßig ist die mehrteilige Struktur **multipart/alternative**, wird jedoch automatisch **multipart/related** wenn der Nachricht ein Bild hinzugefügt wird. Bestimmte Anbieter erwarten die **multipart/related** standardmäßig das **[!UICONTROL Mehrteilige erzwingen/verknüpfte erzwingen]** Dieses Format wird auch dann angewendet, wenn kein Bild angehängt ist.
 
 * **HTML**: Es wird nur eine HTML-Nachricht gesendet. Wenn das HTML-Format nicht akzeptiert wird, wird die Nachricht nicht angezeigt.
 * **Text**: Eine Nachricht im reinen Textformat wird gesendet. Der Vorteil von Textformat-Nachrichten besteht in ihrer sehr geringen Größe.
@@ -406,11 +406,11 @@ Wenn beispielsweise die erste Adresse nicht für einen bestimmten MX verwendet w
 
 * **includeDomains**: ermöglicht Ihnen, diese IP-Adresse für E-Mails zu reservieren, die zu einer bestimmten Domain gehören. Dies ist eine Liste von Masken, die einen oder mehrere Platzhalter (&#39;) enthalten können.&#42;&quot;). Wenn das Attribut nicht angegeben ist, können alle Domänen diese IP-Adresse verwenden.
 
-   Beispiel: **includeDomains=&quot;wanadoo.com,orange.com,yahoo.&#42;&quot;**
+  Beispiel: **includeDomains=&quot;wanadoo.com,orange.com,yahoo.&#42;&quot;**
 
 * **excludeDomains**: schließt eine Liste von Domänen für diese IP-Adresse aus. Dieser Filter wird nach der **includeDomains** Filter.
 
-   ![](assets/s_ncs_install_mta_ips.png)
+  ![](assets/s_ncs_install_mta_ips.png)
 
 ## Optimierung des E-Mail-Versands {#email-sending-optimization}
 

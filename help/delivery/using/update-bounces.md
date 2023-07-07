@@ -9,7 +9,7 @@ hide: true
 hidefromtoc: true
 exl-id: 7a9afe0a-0219-40f1-9fe2-6374db8d555c
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 100%
 
@@ -36,6 +36,7 @@ Bitte beachten: Wenn Abweisungs-Bounces mit der Nachricht „452 angeforderte Ak
 >Das Apple-Systemstatus-Dashboard lässt sich auf [dieser Seite](https://www.apple.com/de/support/systemstatus/){_blank} überprüfen.
 >
 >Das Status-Dashboard von Google Workspace lässt sich auf [dieser Seite](https://www.google.com/appsstatus#hl=de&amp;v=status){_blank} überprüfen.
+>
 
 ## Auswirkung{#update-bounce-impact}
 
@@ -62,7 +63,7 @@ Auf der Grundlage des Zeitrahmens des Vorfalls und des ISP befinden sich unten d
 
    * **Fehlertext (Quarantänetext)** enthält „550-5.1.1“ UND **Fehlertext (Quarantänetext)** enthält „support.ISP.com“,
 
-      wobei „support.ISP.com“ Folgendes sein kann: „support.apple.com“ oder „support.google.com“ zum Beispiel
+     wobei „support.ISP.com“ Folgendes sein kann: „support.apple.com“ oder „support.google.com“ zum Beispiel
 
    * **Aktualisierungsstatus (@lastModified)** am oder nach MM/TT/JJJJ HH:MM:SS AM
    * **Aktualisierungsstatus (@lastModified)** am oder vor MM/TT/JJJJ HH:MM:SS PM

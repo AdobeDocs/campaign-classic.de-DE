@@ -7,7 +7,7 @@ badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Surveys
 exl-id: 8d83dfd5-70ec-4656-965b-f6b5e6f9eec1
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '820'
 ht-degree: 100%
 
@@ -92,7 +92,6 @@ Zusätzlich muss der Speicherort für dieses Eingabefeld ein **archiviertes Feld
 >
 >* Diese Funktion ist nur für Formulare vom Typ **Umfrage** verfügbar.
 >* Diese Option ist nicht mit der Anzeige zufälliger Fragen kompatibel. [Weitere Informationen](#adding-questions).
-
 
 ### Fragen hinzufügen {#adding-questions}
 

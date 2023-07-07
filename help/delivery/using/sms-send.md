@@ -7,7 +7,7 @@ badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: SMS
 exl-id: 442672ee-5037-49b7-a06f-3a99920ce2b6
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '967'
 ht-degree: 100%
 
@@ -34,13 +34,13 @@ Folgende Optionen stehen zur Verfügung:
 
 * **Absenderadresse**: ermöglicht die Personalisierung des Versandabsenders mit einer Zeichenfolge aus alphanumerischen Zeichen, die auf elf Zeichen begrenzt ist. Das Feld darf nicht ausschließlich aus Zahlen bestehen. Sie können eine Bedingung definieren, um beispielsweise je nach Bereichs-Code des Empfängers unterschiedliche Namen anzuzeigen:
 
-   ```
-   <% if( String(recipient.mobilePhone).indexOf("+1") == 0){ %>NeoShopUS<%} else {%>NeoShopWorld<%}%>
-   ```
+  ```
+  <% if( String(recipient.mobilePhone).indexOf("+1") == 0){ %>NeoShopUS<%} else {%>NeoShopWorld<%}%>
+  ```
 
-   >[!IMPORTANT]
-   >
-   >Überprüfen Sie die gültige Rechtslage Ihres Landes bezüglich der Änderung des Absendernamens. Stellen Sie außerdem sicher, dass Ihr Provider diese Funktionalität anbietet.
+  >[!IMPORTANT]
+  >
+  >Überprüfen Sie die gültige Rechtslage Ihres Landes bezüglich der Änderung des Absendernamens. Stellen Sie außerdem sicher, dass Ihr Provider diese Funktionalität anbietet.
 
 * **Übermittlungsmodus**: Art der SMS-Übermittlung.
 * **Priorität**: Einer Nachricht zugeordnete Wichtigkeit. Standardmäßig wird die Priorität **[!UICONTROL Normal]** vorgeschlagen. Je nach Provider können Zuschläge für mit der Priorität **[!UICONTROL Hoch]** versendete SMS anfallen.
@@ -72,17 +72,16 @@ Das Modul **nlserver sms** ruft in regelmäßigen Abständen den Verarbeitungsfo
 
 * **Empfangsbestätigungen**: Der Status Ihrer Sendungen kann in den Versandlogs eingesehen werden.
 
-   >[!NOTE]
-   >
-   >Jede gesendete SMS ist mit einem externen Konto über den Primärschlüssel des letzteren verbunden. Dies bedeutet, dass
-   >
-   > * Empfangsbestätigungen eines externen Kontos für gelöschte SMS nicht korrekt verarbeitet werden können.
-   > * ein SMS-Konto nur mit einem externen Konto verknüpft sein darf, damit die Empfangsbestätigungen korrekt zugeordnet werden können
-
+  >[!NOTE]
+  >
+  >Jede gesendete SMS ist mit einem externen Konto über den Primärschlüssel des letzteren verbunden. Dies bedeutet, dass
+  >
+  > * Empfangsbestätigungen eines externen Kontos für gelöschte SMS nicht korrekt verarbeitet werden können.
+  > * ein SMS-Konto nur mit einem externen Konto verknüpft sein darf, damit die Empfangsbestätigungen korrekt zugeordnet werden können
 
 * **Abmeldungen**: Empfänger, die keine SMS-Sendungen mehr erhalten möchten, können sich durch das Senden einer Nachricht mit Inhalt STOP abmelden. Wenn es Ihr Providervertrag vorsieht, können Sie diese Nachrichten mithilfe der Workflow-Aktivität **SMS-Empfang** abrufen. Dies ermöglicht die Erstellung einer Abfrage, die die Option **Diese Person nicht mehr kontaktieren** für die entsprechenden Empfänger aktiviert.
 
-   Nähere Informationen hierzu finden Sie im [Workflows](../../workflow/using/architecture.md)-Handbuch.
+  Nähere Informationen hierzu finden Sie im [Workflows](../../workflow/using/architecture.md)-Handbuch.
 
 ## InSMS-Schema {#insms-schema}
 
@@ -94,11 +93,11 @@ Das InSMS-Schema enthält Informationen zu eingehenden SMS. Die Beschreibung die
 * **created**: Eingangsdatum der Nachricht in Adobe Campaign.
 * **extAccount**: externes Adobe-Campaign-Konto.
 
-   >[!IMPORTANT]
-   >
-   >Die folgenden Felder sind NetSize-spezifisch.
-   >
-   >Wenn der Betreiber nicht NetSize verwendet, bleiben diese Felder leer.
+  >[!IMPORTANT]
+  >
+  >Die folgenden Felder sind NetSize-spezifisch.
+  >
+  >Wenn der Betreiber nicht NetSize verwendet, bleiben diese Felder leer.
 
 * **alias**: Alias der eingehenden Nachricht.
 * **separator**: Trennzeichen zwischen Alias und Nachrichten-Textkörper.

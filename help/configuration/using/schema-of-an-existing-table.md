@@ -13,7 +13,7 @@ ht-degree: 15%
 
 # Schema einer vorhandenen Tabelle{#schema-of-an-existing-table}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Wenn das Programm auf die Daten einer existierenden Tabelle, einer SQL-Ansicht oder Daten aus einer Remote-Datenbank zugreifen muss, erstellen Sie das Schema in Adobe Campaign mit den folgenden Daten:
 

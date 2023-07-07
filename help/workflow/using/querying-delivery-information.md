@@ -6,7 +6,7 @@ badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classi
 feature: Query Editor
 exl-id: b699b064-1287-41c9-8d94-1c1aa2c145ab
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1541'
 ht-degree: 100%
 
@@ -22,15 +22,15 @@ In diesem Beispiel wird die Anzahl der Klicks von Empfängern in einem bestimmte
 
 * Welche Tabelle soll ausgewählt werden?
 
-   Die Trackinglogs der Empfänger (**[!UICONTROL nms:trackingLogRcp]**)
+  Die Trackinglogs der Empfänger (**[!UICONTROL nms:trackingLogRcp]**)
 
 * Felder, die als Ausgabespalten verwendet werden sollen?
 
-   Primärschlüssel (mit Zählung) und E-Mail
+  Primärschlüssel (mit Zählung) und E-Mail
 
 * Nach welchen Kriterien werden die Informationen gefiltert?
 
-   Nach einem Zeitraum und einem Element im Versandtitel
+  Nach einem Zeitraum und einem Element im Versandtitel
 
 Gehen Sie für dieses Beispiel wie folgt vor:
 
@@ -44,19 +44,19 @@ Gehen Sie für dieses Beispiel wie folgt vor:
 
    * Verwenden Sie die Schaltfläche **[!UICONTROL Hinzufügen]** rechts neben den **[!UICONTROL Ausgabespalten]**. Wählen Sie im Fenster **[!UICONTROL Formeltyp]** die Option **[!UICONTROL Formel von einem Ausdruck ausgehend erstellen]** und danach **[!UICONTROL Weiter]** aus. Verwenden Sie im Fenster **[!UICONTROL Feldauswahl]** die Option **[!UICONTROL Erweiterte Auswahl]**.
 
-      ![](assets/query_editor_tracklog_06.png)
+     ![](assets/query_editor_tracklog_06.png)
 
    * Verwenden Sie im Fenster **[!UICONTROL Formeltyp]** eine Aggregatfunktion. In diesem Fall ist das die Zählung des Primärschlüssels.
 
-      Wählen Sie im Abschnitt **[!UICONTROL Aggregat]** die Option **[!UICONTROL Aggregatfunktionen]** und klicken Sie auf **[!UICONTROL Zählung]**.
+     Wählen Sie im Abschnitt **[!UICONTROL Aggregat]** die Option **[!UICONTROL Aggregatfunktionen]** und klicken Sie auf **[!UICONTROL Zählung]**.
 
-      ![](assets/query_editor_nveau_18.png)
+     ![](assets/query_editor_nveau_18.png)
 
-      Klicken Sie auf **[!UICONTROL Weiter]**.
+     Klicken Sie auf **[!UICONTROL Weiter]**.
 
    * Wählen Sie nun das Feld **[!UICONTROL Primärschlüssel (@id)]** aus. Die Ausgabespalte **[!UICONTROL count(Primärschlüssel)]** wurde konfiguriert.
 
-      ![](assets/query_editor_nveau_19.png)
+     ![](assets/query_editor_nveau_19.png)
 
 1. Öffnen Sie zur Auswahl der zweiten Ausgabespalte in der Liste **[!UICONTROL Verfügbare Felder]** den Knoten **[!UICONTROL Empfänger (recipient)]** und doppelklicken Sie auf **[!UICONTROL E-Mail (@email)]**. Kreuzen Sie in der Spalte **[!UICONTROL Gruppieren]** das Feld **[!UICONTROL Ja]** an, um die Trackinglogs über die E-Mail-Adresse zu gruppieren. Dies führt zur Zuordnung eines jeden Trackinglogs zum entsprechenden Empfänger.
 
@@ -72,39 +72,39 @@ Gehen Sie für dieses Beispiel wie folgt vor:
 
    * Konfigurieren Sie einen Datenfilter. Wählen Sie dazu **[!UICONTROL Filterbedingungen]** und danach **[!UICONTROL Weiter]** aus.
 
-      ![](assets/query_editor_nveau_22.png)
+     ![](assets/query_editor_nveau_22.png)
 
    * Drei Filterbedingungen sind erforderlich, um die Ergebnisse wie gewünscht einzuschränken: zwei Datumsfilter zur Eingrenzung des Zeitraums zwischen 15 Tagen vor dem aktuellen Datum und 1 Tag vor dem aktuellen Datum sowie eine weitere Bedingung, um nur Logs bezüglich bestimmter Sendungen zu erfassen.
 
-      Konfigurieren Sie im Fenster **[!UICONTROL Zielelement]** das Datum, ab dem die Trackinglogs berücksichtigt werden sollen. Klicken Sie auf **[!UICONTROL Hinzufügen]**, um eine neue Zeile zur Eingabe einer Bedingung anzuzeigen. Klicken Sie im Feld **[!UICONTROL Ausdruck]** auf die Schaltfläche **[!UICONTROL Ausdruck bearbeiten]**. Wählen Sie im Fenster **[!UICONTROL Feldauswahl]** das Feld **[!UICONTROL Datum (@logDate)]**.
+     Konfigurieren Sie im Fenster **[!UICONTROL Zielelement]** das Datum, ab dem die Trackinglogs berücksichtigt werden sollen. Klicken Sie auf **[!UICONTROL Hinzufügen]**, um eine neue Zeile zur Eingabe einer Bedingung anzuzeigen. Klicken Sie im Feld **[!UICONTROL Ausdruck]** auf die Schaltfläche **[!UICONTROL Ausdruck bearbeiten]**. Wählen Sie im Fenster **[!UICONTROL Feldauswahl]** das Feld **[!UICONTROL Datum (@logDate)]**.
 
-      ![](assets/query_editor_nveau_23.png)
+     ![](assets/query_editor_nveau_23.png)
 
-      Wählen Sie den Operator **[!UICONTROL später als]** und klicken Sie im Feld **[!UICONTROL Wert]** auf **[!UICONTROL Ausdruck bearbeiten]**. Wählen Sie im **[!UICONTROL Formeltyp]**-Fenster **[!UICONTROL Datumsfunktionen]** aus und geben Sie in der Option **[!UICONTROL Aktuelles Datum abzüglich n Tage]** den Wert &quot;15&quot; ein.
+     Wählen Sie den Operator **[!UICONTROL später als]** und klicken Sie im Feld **[!UICONTROL Wert]** auf **[!UICONTROL Ausdruck bearbeiten]**. Wählen Sie im **[!UICONTROL Formeltyp]**-Fenster **[!UICONTROL Datumsfunktionen]** aus und geben Sie in der Option **[!UICONTROL Aktuelles Datum abzüglich n Tage]** den Wert &quot;15&quot; ein.
 
-      Klicken Sie auf **[!UICONTROL Beenden]**.
+     Klicken Sie auf **[!UICONTROL Beenden]**.
 
-      ![](assets/query_editor_nveau_24.png)
+     ![](assets/query_editor_nveau_24.png)
 
    * Zur Suche nach dem Enddatum der gewünschten Trackingperiode ist eine weitere Bedingungszeile erforderlich. Klicken Sie daher erneut auf **[!UICONTROL Hinzufügen]** und wählen Sie im Feld **[!UICONTROL Ausdruck]** wieder **[!UICONTROL Datum (@logDate)]**.
 
-      Wählen Sie den Operator **[!UICONTROL früher als]** und klicken Sie im Feld **[!UICONTROL Wert]** auf die Schaltfläche **[!UICONTROL Ausdruck bearbeiten]**. Wählen Sie im **[!UICONTROL Formeltyp]**-Fenster **[!UICONTROL Datumsfunktionen]** aus und geben Sie in der Option Aktuelles Datum abzüglich n Tage den Wert &quot;1&quot; ein.
+     Wählen Sie den Operator **[!UICONTROL früher als]** und klicken Sie im Feld **[!UICONTROL Wert]** auf die Schaltfläche **[!UICONTROL Ausdruck bearbeiten]**. Wählen Sie im **[!UICONTROL Formeltyp]**-Fenster **[!UICONTROL Datumsfunktionen]** aus und geben Sie in der Option Aktuelles Datum abzüglich n Tage den Wert &quot;1&quot; ein.
 
-      Klicken Sie auf **[!UICONTROL Beenden]**.
+     Klicken Sie auf **[!UICONTROL Beenden]**.
 
-      ![](assets/query_editor_nveau_65.png)
+     ![](assets/query_editor_nveau_65.png)
 
-      Der gewünschte Zeitraum wurde konfiguriert. In der dritten Filterbedingung gilt es, nur einen bestimmten Versand zu berücksichtigen.
+     Der gewünschte Zeitraum wurde konfiguriert. In der dritten Filterbedingung gilt es, nur einen bestimmten Versand zu berücksichtigen.
 
    * Klicken Sie auf **[!UICONTROL Hinzufügen]**, um eine dritte Bedingungszeile zu öffnen. Klicken Sie im Feld **[!UICONTROL Ausdruck]** auf **[!UICONTROL Ausdruck bearbeiten]** und wählen Sie im Fenster **[!UICONTROL Feldauswahl]** im Knoten **[!UICONTROL Versand]** das Feld **[!UICONTROL Titel]** aus.
 
-      Klicken Sie auf **[!UICONTROL Beenden]**.
+     Klicken Sie auf **[!UICONTROL Beenden]**.
 
-      ![](assets/query_editor_nveau_66.png)
+     ![](assets/query_editor_nveau_66.png)
 
-      Gesucht wird ein Versand zum Thema &quot;Gartenausstellung&quot;. Wählen Sie den Operator **[!UICONTROL enthält]** und geben Sie im Feld **[!UICONTROL Wert]** &quot;Garten&quot; ein, wenn Sie sich nicht an den genauen Versandtitel erinnern können.
+     Gesucht wird ein Versand zum Thema &quot;Gartenausstellung&quot;. Wählen Sie den Operator **[!UICONTROL enthält]** und geben Sie im Feld **[!UICONTROL Wert]** &quot;Garten&quot; ein, wenn Sie sich nicht an den genauen Versandtitel erinnern können.
 
-      ![](assets/query_editor_nveau_25.png)
+     ![](assets/query_editor_nveau_25.png)
 
 1. Da in unserem Beispiel keine spezielle Formatierung erforderlich ist, können Sie im Fenster **[!UICONTROL Datenformatierung]** direkt auf **[!UICONTROL Weiter]** klicken.
 1. Klicken Sie nun im **[!UICONTROL Datenvorschau]**-Fenster auf **[!UICONTROL Datenvorschau starten]**, um die Anzahl an Trackinglogs für jeden Versandempfänger abzurufen.
@@ -184,13 +184,13 @@ In einem Workflow ermöglichen die Aktivitäten **[!UICONTROL Abfrage]** und **[
 
 * Ziel des Beispiels
 
-   In einem Versand-Workflow gibt es mehrere Möglichkeiten des weiteren Vorgehens nach einem ersten E-Mail-Kontakt. Diese werden über die Aktivität **[!UICONTROL Aufspaltung]** gesteuert.
+  In einem Versand-Workflow gibt es mehrere Möglichkeiten des weiteren Vorgehens nach einem ersten E-Mail-Kontakt. Diese werden über die Aktivität **[!UICONTROL Aufspaltung]** gesteuert.
 
 * Kontext
 
-   Ein Versand zum Thema &quot;Sommersport-Angebote&quot;. Vier Tage nach dem Versand werden zwei weitere Sendungen geschaltet: &quot;Wassersport-Angebote&quot; und ein Erinnerungsschreiben bezüglich des ersten Sommersport-Angebots.
+  Ein Versand zum Thema &quot;Sommersport-Angebote&quot;. Vier Tage nach dem Versand werden zwei weitere Sendungen geschaltet: &quot;Wassersport-Angebote&quot; und ein Erinnerungsschreiben bezüglich des ersten Sommersport-Angebots.
 
-   Der Versand &quot;Wassersport-Angebote&quot; richtet sich an Empfänger, die in der ersten E-Mail auf Inhalte zum Thema Wassersport geklickt haben. Diese Klicks zeugen vom Interesse der Empfänger. Ähnliche Angebote könnten daher ebenfalls für diese Interessenten infrage kommen. Empfänger hingegen, die die &quot;Sommersport-Angebote&quot;-E-Mail nicht angeklickt haben, bekommen dieselben Angebote wie zuvor.
+  Der Versand &quot;Wassersport-Angebote&quot; richtet sich an Empfänger, die in der ersten E-Mail auf Inhalte zum Thema Wassersport geklickt haben. Diese Klicks zeugen vom Interesse der Empfänger. Ähnliche Angebote könnten daher ebenfalls für diese Interessenten infrage kommen. Empfänger hingegen, die die &quot;Sommersport-Angebote&quot;-E-Mail nicht angeklickt haben, bekommen dieselben Angebote wie zuvor.
 
 Die folgenden Schritte zeigen die Konfiguration der **[!UICONTROL Aufspaltung]** unter Berücksichtigung von zwei Verhaltensmustern:
 
@@ -242,4 +242,4 @@ Folgende Empfängerverhalten wurden standardmäßig in der Anwendung hinterlegt:
 * **[!UICONTROL Empfänger, die weder geöffnet noch geklickt haben (E-Mail),]**
 * **[!UICONTROL Empfänger, die nicht geklickt haben (E-Mail).]**
 
-   ![](assets/query_editor_ex_02.png)
+  ![](assets/query_editor_ex_02.png)

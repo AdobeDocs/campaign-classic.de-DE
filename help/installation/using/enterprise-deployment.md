@@ -120,19 +120,19 @@ Die Schritte zur Installation des ersten Servers sind:
 
    * Erstellen Sie die Instanz über die Konsole:
 
-      ![](assets/install_create_new_connexion.png)
+     ![](assets/install_create_new_connexion.png)
 
-      Weitere Informationen hierzu finden Sie unter [Erstellen einer Instanz und Anmelden](../../installation/using/creating-an-instance-and-logging-on.md).
+     Weitere Informationen hierzu finden Sie unter [Erstellen einer Instanz und Anmelden](../../installation/using/creating-an-instance-and-logging-on.md).
 
-      oder
+     oder
 
    * Erstellen Sie die Instanz mithilfe der Befehlszeilen:
 
-      ```
-      nlserver config -addinstance:demo/tracking.campaign.net*,console.campaign.net*
-      ```
+     ```
+     nlserver config -addinstance:demo/tracking.campaign.net*,console.campaign.net*
+     ```
 
-      Weitere Informationen hierzu finden Sie unter [Erstellen einer Instanz](../../installation/using/command-lines.md#creating-an-instance).
+     Weitere Informationen hierzu finden Sie unter [Erstellen einer Instanz](../../installation/using/command-lines.md#creating-an-instance).
 
 1. Bearbeiten Sie die **config-demo.xml** -Datei (erstellt über den vorherigen Befehl und befindet sich neben dem **config-default.xml** ), überprüfen Sie, ob die **mta** (Versand), **wfserver** (Workflow), **inMail** (rebound mails) und **stat** (Statistiken) Prozesse aktiviert sind, konfigurieren Sie dann die Adresse der **App** Statistikserver:
 

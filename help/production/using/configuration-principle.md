@@ -25,9 +25,9 @@ Für einen bestimmten Server gibt es zwei gemeinsame Elemente für alle Adobe Ca
 
 * Die **intern** password: Dies ist das allgemeine Administratorkennwort. Dies ist für alle Instanzen eines bestimmten Anwendungsservers üblich.
 
-   >[!IMPORTANT]
-   >
-   >So melden Sie sich mit dem **intern** Kennung, müssen Sie zuvor ein Kennwort definiert haben. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#internal-identifier).
+  >[!IMPORTANT]
+  >
+  >So melden Sie sich mit dem **intern** Kennung, müssen Sie zuvor ein Kennwort definiert haben. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
 * Mehrere technische Serverkonfigurationen: Diese Konfigurationen können alle in der spezifischen Konfiguration einer Instanz überschrieben werden.
 
@@ -42,6 +42,6 @@ Eine Instanzkonfiguration wird wie folgt geladen:
 * Das Modul lädt die **serverConf.xml** -Datei, um die von allen Instanzen gemeinsam genutzten Parameter abzurufen.
 * Anschließend lädt er die **config-**`<instance>`**.xml** -Datei. Die in dieser Datei enthaltenen Werte haben Vorrang vor den Werten in **serverConf.xml**.
 
-   Diese beiden Dateien haben das gleiche Format. Jeder Wert in **serverConf.xml** kann für eine bestimmte Instanz im **config-`<instance>`.xml** -Datei.
+  Diese beiden Dateien haben das gleiche Format. Jeder Wert in **serverConf.xml** kann für eine bestimmte Instanz im **config-`<instance>`.xml** -Datei.
 
 Dieser Betriebsmodus bietet große Flexibilität bei der Konfiguration.

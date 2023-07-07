@@ -9,7 +9,7 @@ content-type: reference
 topic-tags: response-manager
 exl-id: 428c7677-454b-4618-bae7-0be7df6dfcaa
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1505'
 ht-degree: 100%
 
@@ -53,23 +53,23 @@ Im Tab **[!UICONTROL Allgemein]** der Vorlage werden die allgemeinen Optionen de
 
 * **[!UICONTROL Hypothesentyp]**: Wählen Sie hier aus, ob die Vorlage für Hypothesen über Sendungen oder über Angebote bestimmt ist.
 
-   Sie können auch eine Hypothese erstellen, die sich sowohl auf Sendungen als auch auf Angebote bezieht.
+  Sie können auch eine Hypothese erstellen, die sich sowohl auf Sendungen als auch auf Angebote bezieht.
 
-   >[!NOTE]
-   >
-   >Wenn die Vorlage sich auf Angebote bezieht, wird die Option **[!UICONTROL Vorschlagsstatus aktualisieren]** im Tab **[!UICONTROL Transaktionen]** verfügbar.
+  >[!NOTE]
+  >
+  >Wenn die Vorlage sich auf Angebote bezieht, wird die Option **[!UICONTROL Vorschlagsstatus aktualisieren]** im Tab **[!UICONTROL Transaktionen]** verfügbar.
 
 * **[!UICONTROL Messung mit Kontrollgruppe]**: Aktivieren Sie diese Option, wenn eine Kontrollgruppe für den jeweiligen Versand oder die jeweilige Kampagne erstellt wurde und diese in den Messindikatoren berücksichtigt werden soll. Die Kontrollgruppe erhält keine Sendungen: Sie dient der Messung der Auswirkung dieser durch den Vergleich mit dem Verhalten der Zielgruppe, die die Sendungen erhält.
 
-   >[!NOTE]
-   >
-   >Wenn die Konfiguration der Vorlage eine Kontrollgruppe vorsieht, jedoch keine in dem Versand bestimmt ist, auf den sich die Hypothesen beziehen, werden die Ergebnisse nur auf Grundlage der Zielgruppen-Empfänger berechnet.
+  >[!NOTE]
+  >
+  >Wenn die Konfiguration der Vorlage eine Kontrollgruppe vorsieht, jedoch keine in dem Versand bestimmt ist, auf den sich die Hypothesen beziehen, werden die Ergebnisse nur auf Grundlage der Zielgruppen-Empfänger berechnet.
 
-   Die Bestimmung und Konfiguration von Kontrollgruppen werden in [diesem Abschnitt](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group) beschrieben.
+  Die Bestimmung und Konfiguration von Kontrollgruppen werden in [diesem Abschnitt](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group) beschrieben.
 
 * **[!UICONTROL Kanal]**: Sie können einen spezifischen Kanal bestimmen oder die Hypothesenvorlage für alle Kanäle der Adobe Campaign-Konsole verfügbar machen, indem Sie **[!UICONTROL Alle Kanäle]** in der entsprechenden Dropdown-Liste auswählen. Wenn Sie die Vorlage für einen bestimmten Kanal konfigurieren, können die Sendungen bei der Hypothesenerstellung automatisch nach Kanal gefiltert werden. [Weitere Informationen](creating-hypotheses.md)   
 
-   ![](assets/response_properties_001.png)
+  ![](assets/response_properties_001.png)
 
 * **[!UICONTROL Ausführungsordner]**: Legen Sie hier den Ordner fest, in dem die Hypothese erstellt und ausgeführt werden soll.
 * **[!UICONTROL In der Berechnung des Kampagnen-ROIs berücksichtigen]**: Diese Option ermöglicht es, das Ergebnis der Hypothese in der Berechnung des ROIs der verbundenen Kampagne zu berücksichtigen (im Fall eines Kampagnenversands).
@@ -80,17 +80,17 @@ Im Tab **[!UICONTROL Allgemein]** der Vorlage können zudem die Ausführungspara
 
 * **[!UICONTROL Ausführung auf einen Zeitpunkt mit geringer Auslastung verschieben]**: Diese Option dient der Leistungsoptimierung von Adobe Campaign. Bei Aktivierung der Option verschiebt der Workflow der Kampagnenvorgänge den Start der Hypothesenberechnung auf einen Zeitraum mit schwacher Aktivität.
 
-   ![](assets/response_exec_settings_002.png)
+  ![](assets/response_exec_settings_002.png)
 
 * **[!UICONTROL Priorität]**: Im Falle simultaner Ausführungen kann mithilfe der Prioritätseinteilung die Reihenfolge der Hypothesenberechnungen gestaffelt werden.
 
-   ![](assets/response_exec_settings_003.png)
+  ![](assets/response_exec_settings_003.png)
 
 * **[!UICONTROL Automatische Ausführung]**: Mit dieser Option kann bei Bedarf eine erneute Berechnung der Hypothese geplant werden (z. B. wenn eine regelmäßige Aktualisierung der Indikatoren bis zum Ende eines Versands gewünscht ist).
 
-   ![](assets/response_exec_settings_001.png)
+  ![](assets/response_exec_settings_001.png)
 
-   Um die Häufigkeit der Aktualisierung zu bestimmen, gehen Sie wie folgt vor:
+  Um die Häufigkeit der Aktualisierung zu bestimmen, gehen Sie wie folgt vor:
 
    1. Klicken Sie auf den Link **[!UICONTROL Ausführungsfrequenz...]** und anschließend auf die Schaltfläche **[!UICONTROL Ändern]**.
 
@@ -107,11 +107,11 @@ Im Tab **[!UICONTROL Allgemein]** der Vorlage können zudem die Ausführungspara
 * **[!UICONTROL SQL-Abfragen im Protokoll speichern]**: Diese Funktion sollte erfahrenen Benutzern vorbehalten bleiben. Sie fügt der Verfolgung der Messhypothesen einen Tab hinzu, in dem SQL-Abfragen angezeigt werden. Dies ermöglicht es, mögliche Fehlfunktionen ausfindig zu machen, wenn eine Simulation mit Fehlern beendet wird.
 * **[!UICONTROL Ausführungs-Workflow beibehalten]**: Diese Option ermöglicht es, den beim Start der Hypothesenberechnung automatisch erzeugten Workflow beizubehalten. In Hypothesen, die basierend auf einer Vorlage mit dieser Option erstellt werden, besteht zur Beobachtung des Ablaufs Zugriff auf den Workflow.
 
-   >[!CAUTION]
-   >
-   >Diese Option sollte nur zu Debugging-Zwecken bei fehlerhaften Hypothesenausführungen aktiviert werden.\
-   >Automatisch generierte Workflows sollten zudem nicht verändert werden. Jede dennoch vorgenommene Änderung wird nur für nachfolgende Berechnungen berücksichtigt.\
-   >Denken Sie daran, den Workflow nach seiner Ausführung zu löschen, wenn Sie diese Option aktiviert haben.
+  >[!CAUTION]
+  >
+  >Diese Option sollte nur zu Debugging-Zwecken bei fehlerhaften Hypothesenausführungen aktiviert werden.\
+  >Automatisch generierte Workflows sollten zudem nicht verändert werden. Jede dennoch vorgenommene Änderung wird nur für nachfolgende Berechnungen berücksichtigt.\
+  >Denken Sie daran, den Workflow nach seiner Ausführung zu löschen, wenn Sie diese Option aktiviert haben.
 
 ### Transactions {#transactions}
 
@@ -125,21 +125,21 @@ Dieser Tab enthält Felder und Tabellen, mithilfe derer Sie den Verlauf der Empf
 * **[!UICONTROL Transaktionsdatum]**: Dieses Feld ist optional. Seine Nutzung wird jedoch empfohlen, da es die Begrenzung des Perimeters der Hypothesenberechnung ermöglicht.
 * **[!UICONTROL Zeitraum der Hypothesenberechnung]**: Sie können Anfang und Ende des Zeitraums konfigurieren, während dem die Hypothesen ausgeführt und die Bestellzeilen abgerufen werden.
 
-   Wenn eine Hypothese einem Versand zugeordnet wird, wird die Messung automatisch einige Tage nach dem Kontaktdatum (im Fall eines Briefpost-Versands) oder nach dem Versanddatum (im Fall eines E-Mail- oder SMS-Versands) ausgelöst.
+  Wenn eine Hypothese einem Versand zugeordnet wird, wird die Messung automatisch einige Tage nach dem Kontaktdatum (im Fall eines Briefpost-Versands) oder nach dem Versanddatum (im Fall eines E-Mail- oder SMS-Versands) ausgelöst.
 
-   ![](assets/response_measurement_001.png)
+  ![](assets/response_measurement_001.png)
 
-   Wenn die Hypothese im laufenden Betrieb gestartet wurde, haben Sie die Möglichkeit, eine sofortige Auslösung zu forcieren. Andernfalls wird sie automatisch entsprechend dem konfigurierten Ende der Berechnung ausgelöst, das vom Erstellungsdatum der Hypothese abhängig ist. [Weitere Informationen](creating-hypotheses.md#creating-a-hypothesis-on-the-fly-on-a-delivery).
+  Wenn die Hypothese im laufenden Betrieb gestartet wurde, haben Sie die Möglichkeit, eine sofortige Auslösung zu forcieren. Andernfalls wird sie automatisch entsprechend dem konfigurierten Ende der Berechnung ausgelöst, das vom Erstellungsdatum der Hypothese abhängig ist. [Weitere Informationen](creating-hypotheses.md#creating-a-hypothesis-on-the-fly-on-a-delivery).
 
 * **[!UICONTROL Transaktionsbetrag/Betrag der Spanne]**: Diese Felder sind optional. Sie ermöglichen die automatische Berechnung der Umsatzindikatoren. [Weitere Informationen](hypothesis-tracking.md#indicators)   
 * **[!UICONTROL Stückbetrag]**: Dieses Feld ermöglicht die Festsetzung eines Betrags für die Berechnung des Umsatzes. [Weitere Informationen](hypothesis-tracking.md#indicators)   
 
-   ![](assets/response_transactions_001.png)
+  ![](assets/response_transactions_001.png)
 
 * **[!UICONTROL Ergänzende Messungen und Daten]**: In diesem Feld werden zusätzliche Messungen und Berichtsachsen basierend auf den Feldern der unterschiedlichen Tabellen bestimmt.
 * **[!UICONTROL Vorschlagsstatus aktualisieren]**: Diese Option ermöglicht die Änderung eines Vorschlagsstatus, wenn ein Angebotsempfänger von der Hypothese identifiziert wurde.
 
-   ![](assets/response_offer_status_001.png)
+  ![](assets/response_offer_status_001.png)
 
 ### Perimeter {#hypothesis-perimeter}
 
@@ -175,13 +175,13 @@ Nachdem die Transkationstabelle sowie die von der Hypothese betroffenen Felder d
 
 * **Script**: Mithilfe eines JavaScripts besteht die Möglichkeit, die Parameter der Hypothese bei ihrer Ausführung dynamisch zu überschreiben.
 
-   Klicken Sie hierzu auf den Link **[!UICONTROL Erweiterte Parameter...]** und erfassen Sie das Script Ihrer Wahl.
+  Klicken Sie hierzu auf den Link **[!UICONTROL Erweiterte Parameter...]** und erfassen Sie das Script Ihrer Wahl.
 
-   >[!NOTE]
-   >
-   >Diese Option sollte erfahrenen Benutzern vorbehalten bleiben.
+  >[!NOTE]
+  >
+  >Diese Option sollte erfahrenen Benutzern vorbehalten bleiben.
 
-   ![](assets/response_hypothesis_model_creation_011.png)
+  ![](assets/response_hypothesis_model_creation_011.png)
 
 ## Beispiel: Erstellen einer Hypothesenvorlage für einen Versand {#example--creating-a-hypothesis-template-on-a-delivery}
 

@@ -6,7 +6,7 @@ badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classi
 feature: Workflows
 exl-id: cc29eec9-9c97-4d1b-9567-2581154d7b3f
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1430'
 ht-degree: 100%
 
@@ -82,9 +82,9 @@ Weitere Informationen zum Erstellen einer Datenverteilungsvorlage finden Sie unt
    * **[!UICONTROL Titel]**: Vergeben Sie für jede Domain einen Titel, der in den Validierungs- und Versandreaktionen-Benachrichtigungen angezeigt wird.
    * **[!UICONTROL Gruppe oder Benutzer]**: Geben Sie den Benutzer oder die Benutzergruppe an, dem die Domain zugewiesen wurde.
 
-      >[!CAUTION]
-      >
-      >Stellen Sie sicher, dass die Benutzer über die nötigen Berechtigungen verfügen.
+     >[!CAUTION]
+     >
+     >Stellen Sie sicher, dass die Benutzer über die nötigen Berechtigungen verfügen.
 
 ## 2. Schritt: Erstellung des Zielgruppen-Workflows {#step-2--creating-the-targeting-workflow}
 

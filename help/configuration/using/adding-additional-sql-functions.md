@@ -66,20 +66,20 @@ Die hinzuzufügenden Funktionen finden Sie im Abschnitt **Datei &quot;package&qu
 * Die **buildVersion** und **buildNumber** -Felder sind Pflichtfelder. Sie müssen der Server-Nummer entsprechen, mit der die Konsole verbunden ist. Diese Informationen finden Sie im Feld &quot;Hilfe/Info&quot;.
 * Die folgenden Blöcke **entity** und **functionList** sind zwingend erforderlich. In funcList sind die Felder &quot;name&quot;und &quot;namespace&quot;obligatorisch, ihr Name bleibt jedoch dem Benutzer überlassen, zu entscheiden, und sie geben die Funktionsliste eindeutig an.
 
-   Wenn also eine andere Liste von Funktionen mit demselben Namespace-/Namenspaar (hier &quot;cus::myList&quot;) importiert wird, werden die zuvor importierten Funktionen gelöscht. Umgekehrt wird die neue Serie importierter Funktionen zur vorherigen hinzugefügt, wenn Sie dieses Namespace-/Namenspaar ändern.
+  Wenn also eine andere Liste von Funktionen mit demselben Namespace-/Namenspaar (hier &quot;cus::myList&quot;) importiert wird, werden die zuvor importierten Funktionen gelöscht. Umgekehrt wird die neue Serie importierter Funktionen zur vorherigen hinzugefügt, wenn Sie dieses Namespace-/Namenspaar ändern.
 
 * Die **Gruppe** -Element können Sie die Funktionsgruppe angeben, in der die importierten Funktionen im Funktionseditor angezeigt werden. Das Attribut @name kann entweder ein bereits vorhandener Name sein (in diesem Fall werden die Funktionen der betreffenden Gruppe hinzugefügt) oder ein neuer Name (in diesem Fall wird er in einer neuen Gruppe angezeigt).
 * Erinnerung: mögliche Werte für das Attribut @name im `<group>` -Element:
 
-   ```
-     name="aggregate"      ( label="Aggregates"         )
-     name="string"             ( label="String"           )
-     name="date"               ( label="Date"             )
-     name="numeric"          ( label="Numeric"        )
-     name="geomarketing" ( label="Geomarketing"     )
-     name="other"              ( label="Others"           )
-     name="window"          ( label="Windowing functions" )
-   ```
+  ```
+    name="aggregate"      ( label="Aggregates"         )
+    name="string"             ( label="String"           )
+    name="date"               ( label="Date"             )
+    name="numeric"          ( label="Numeric"        )
+    name="geomarketing" ( label="Geomarketing"     )
+    name="other"              ( label="Others"           )
+    name="window"          ( label="Windowing functions" )
+  ```
 
 >[!IMPORTANT]
 >
@@ -108,13 +108,13 @@ Die **@name** -Feld bezieht sich auf den Namen der Funktion und &quot;args&quot;
 * **help** ist das Feld, das unten im Ausdruckseditor-Fenster angezeigt wird.
 * **@display** ist eine informative Nachricht.
 
-   >[!NOTE]
-   >
-   >In den Attributen @help und @display stellt die Zeichenfolge &quot;$1&quot;den Namen dar, der im ersten Funktionsparameter angegeben wurde (hier &quot;Alter&quot;). $2, $3.. würde die folgenden Parameter darstellen. Im unten beschriebenen @body-Attribut gibt $1 den Argumentwert an, der während des Aufrufs an die Funktion übergeben wird.
+  >[!NOTE]
+  >
+  >In den Attributen @help und @display stellt die Zeichenfolge &quot;$1&quot;den Namen dar, der im ersten Funktionsparameter angegeben wurde (hier &quot;Alter&quot;). $2, $3.. würde die folgenden Parameter darstellen. Im unten beschriebenen @body-Attribut gibt $1 den Argumentwert an, der während des Aufrufs an die Funktion übergeben wird.
 
-   >[!NOTE]
-   >
-   >Die Beschreibung muss eine Zeichenfolge aus gültigen XML-Zeichen sein: Beachten Sie bitte die Verwendung von &#39;&lt;&#39; und &#39;>&#39; anstelle von &lt; und >.
+  >[!NOTE]
+  >
+  >Die Beschreibung muss eine Zeichenfolge aus gültigen XML-Zeichen sein: Beachten Sie bitte die Verwendung von &#39;&lt;&#39; und &#39;>&#39; anstelle von &lt; und >.
 
 * **@type** ist der Rückgabetyp der Funktion und ist ein Standardwert (long, string, byte, datetime..). Wenn es weggelassen wird, bestimmt der Server den besten Typ unter den verfügbaren Typen innerhalb des Ausdrucks, der die Funktion implementiert.
 * **@minArgs** und **maxArgs** gibt die Anzahl der Parameter (Minimum und Maximum) für einen Parameter an. Für eine Funktion mit 2 Parametern sind beispielsweise minArgs und maxArgs 2 und 2. Für 3 Parameter, plus 1 optional, sind sie 3 bzw. 4.
@@ -123,9 +123,9 @@ Die **@name** -Feld bezieht sich auf den Namen der Funktion und &quot;args&quot;
    * Die **Anbieter** -Attribut erforderlich ist, gibt es die Datenbanksysteme an, für die die Implementierung bereitgestellt wird. Wie im Beispiel gezeigt, können bei unterschiedlichen Ausdruckssyntax oder zugrunde liegenden Funktionen je nach Datenbank alternative Implementierungen bereitgestellt werden.
    * Die **@body** -Attribut enthält die Funktionsimplementierung. Bitte beachten Sie: Diese Implementierung muss ein Ausdruck in Datenbanksprache (kein Codeblock) sein. Abhängig von den Datenbanken können Ausdrücke aus Unterabfragen (&quot;(Spalte aus Tabelle auswählen, wo..)&quot;) bestehen, die nur einen einzigen Wert zurückgeben. Dies ist beispielsweise bei Oracle der Fall (die Abfrage muss in Klammern geschrieben sein).
 
-   >[!NOTE]
-   >
-   >Wenn nur eine oder zwei Datenbanken von der definierten Funktion abgefragt werden können, können wir immer nur die den Datenbanken entsprechenden Definitionen angeben.
+  >[!NOTE]
+  >
+  >Wenn nur eine oder zwei Datenbanken von der definierten Funktion abgefragt werden können, können wir immer nur die den Datenbanken entsprechenden Definitionen angeben.
 
 ## Funktionsdeskriptor &quot;Pass-Through&quot; {#pass-through--function-descriptor}
 

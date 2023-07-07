@@ -7,7 +7,7 @@ badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Personalization
 exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '966'
 ht-degree: 100%
 
@@ -109,13 +109,14 @@ Im folgenden Beispiel wird von der Startseite aus ein Versand erstellt. Weiterf�
 
    * Anonymer Gutschein: **[!UICONTROL Coupon > Couponcode]**
 
-      ![](assets/deliv_coup_10.png)
+     ![](assets/deliv_coup_10.png)
 
    * Individueller Gutschein: **[!UICONTROL Couponwert > Couponcode]**
 
-      ![](assets/deliv_coup_11.png)
+     ![](assets/deliv_coup_11.png)
 
-      Der Coupon wird nicht über den von Ihnen zugewiesenen Namen in die Nachricht eingefügt, sondern in Form von Code. Der Code wird im vorkonfigurierten Datenmodell von Campaign verwendet.
+     Der Coupon wird nicht über den von Ihnen zugewiesenen Namen in die Nachricht eingefügt, sondern in Form von Code. Der Code wird im vorkonfigurierten Datenmodell von Campaign verwendet.
+
    ![](assets/deliv_coup_12.png)
 
 1. Führen Sie einen Test durch, um den von Ihnen dem Gutschein zugewiesenen Namen zu überprüfen. Wählen Sie dazu im Tab **[!UICONTROL Vorschau]** die Option **[!UICONTROL Personalisierung testen]** und danach einen Empfänger für den Test aus.

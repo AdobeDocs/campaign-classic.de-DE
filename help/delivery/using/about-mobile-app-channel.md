@@ -7,7 +7,7 @@ badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Push
 exl-id: c3b0406f-f652-42f4-ad0d-23fb719cd1b6
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '668'
 ht-degree: 100%
 
@@ -27,11 +27,11 @@ Zwei Versandkanäle stehen zur Verfügung:
 
 * iOS-Kanal zum Versand von Mitteilungen an Mobilgeräte mit Apple--Betriebssystem.
 
-   ![](assets/nmac_intro_2.png)
+  ![](assets/nmac_intro_2.png)
 
 * Android-Kanal zum Versand von Nachrichten an Mobilgeräte mit Android-Betriebssystem.
 
-   ![](assets/nmac_intro_1.png)
+  ![](assets/nmac_intro_1.png)
 
 Diesen Kanälen entsprechen zwei Versandaktivitäten in den Kampagnen-Workflows:
 
@@ -51,7 +51,6 @@ Sie können das Verhalten der Anwendung dahingehend konfigurieren, dass dem Empf
 >
 >* Stellen Sie sicher, dass die an Mobile Apps gesendeten Benachrichtigungen den von Apple (Apple Push Notification Service) bzw. Google (Firebase Cloud Messaging) gestellten Anforderungen entsprechen.
 >* Warnung: In manchen Ländern ist es gesetzlich vorgeschrieben, die Benutzer Ihrer Mobile Apps über die Art der erhobenen Daten und den Zweck der Erhebung zu informieren. Prüfen Sie die jeweiligen gesetzlichen Regelungen.
-
 
 Der Workflow **[!UICONTROL NMAC Opt-out Management]** (mobileAppOptOutMgt) aktualisiert das Abmelden von Benachrichtigungen auf Smartphones und Tablets. Weitere Informationen zu diesem Workflow finden Sie in der [Liste der technischen Workflows](../../workflow/using/about-technical-workflows.md).
 
@@ -92,15 +91,15 @@ Verwenden Sie folgende Befehle, um die korrekte Funktionsweise zu testen:
 
 * Für Tests:
 
-   ```
-   api.development.push.apple.com:443
-   ```
+  ```
+  api.development.push.apple.com:443
+  ```
 
 * In Produktion:
 
-   ```
-   api.push.apple.com:443
-   ```
+  ```
+  api.push.apple.com:443
+  ```
 
 Mit dem iOS HTTP/2-Connector müssen der MTA und der Webserver in der Lage sein, die APNs über Port 443 zu kontaktieren.
 

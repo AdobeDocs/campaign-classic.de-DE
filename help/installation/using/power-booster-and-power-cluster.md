@@ -18,17 +18,17 @@ ht-degree: 7%
 
 
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Adobe Campaign bietet Ihnen zwei vorab verpackte Architekturoptionen zur Dimensionierung Ihrer Implementierung:
 
 * **Power Booster**
 
-   Diese Option unterstützt eine einzelne zusätzliche Ausführungsinstanz, die von der primären Adobe Campaign-Anwendungsinstanz entkoppelt ist. Dedizierte Ausführungsinstanzen können remote oder von einem Drittanbieter gehostet werden. Bei Implementierung werden E-Mail-Ausführung, -Tracking, Mirrorseiten und Bounce Messages unabhängig von den zentralen Anwendungsfunktionen verarbeitet.
+  Diese Option unterstützt eine einzelne zusätzliche Ausführungsinstanz, die von der primären Adobe Campaign-Anwendungsinstanz entkoppelt ist. Dedizierte Ausführungsinstanzen können remote oder von einem Drittanbieter gehostet werden. Bei Implementierung werden E-Mail-Ausführung, -Tracking, Mirrorseiten und Bounce Messages unabhängig von den zentralen Anwendungsfunktionen verarbeitet.
 
 * **Power Cluster**
 
-   Diese Option unterstützt zwei bis N Clusterausführungsinstanzen, die von der primären Adobe Campaign-Anwendungsinstanz in Bezug auf eine bestimmte Anwendung entkoppelt sind. Cluster können remote, in verteilten Implementierungen und von Drittanbietern gehostet werden. Zusätzlich zu den Vorteilen der Prozessisolierung ermöglicht die Option Adobe Campaign Power Cluster Redundanz und das Ausskalieren von Strategien mithilfe von Rohstoffhardware für eine vereinfachte SLA- oder Performance-Entwicklung.
+  Diese Option unterstützt zwei bis N Clusterausführungsinstanzen, die von der primären Adobe Campaign-Anwendungsinstanz in Bezug auf eine bestimmte Anwendung entkoppelt sind. Cluster können remote, in verteilten Implementierungen und von Drittanbietern gehostet werden. Zusätzlich zu den Vorteilen der Prozessisolierung ermöglicht die Option Adobe Campaign Power Cluster Redundanz und das Ausskalieren von Strategien mithilfe von Rohstoffhardware für eine vereinfachte SLA- oder Performance-Entwicklung.
 
 ![](assets/architectural_options_diagram.png)
 

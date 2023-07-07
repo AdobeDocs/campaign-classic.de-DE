@@ -7,7 +7,7 @@ badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Web Apps, Web Forms, Landing Pages
 exl-id: 968430d6-b1dd-47f8-8b31-39aaa18bc05c
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1239'
 ht-degree: 100%
 
@@ -75,11 +75,11 @@ Gehen Sie dazu wie folgt vor:
 
 * Verwenden Sie das Symbol **[!UICONTROL Bearbeiten]**.
 
-   ![](assets/dce_sidebar_options.png)
+  ![](assets/dce_sidebar_options.png)
 
 * Geben Sie einen Wert der Liste (je nach ausgewähltem Feld anders) in das Feld **[!UICONTROL Wert]** ein.
 
-   ![](assets/dce_sidebar_completeoptionradio.png)
+  ![](assets/dce_sidebar_completeoptionradio.png)
 
 ### Formularfelder ändern {#modifying-form-fields}
 
@@ -91,7 +91,7 @@ Folgende Optionen stehen zur Auswahl:
 * Duplizieren Sie das ausgewählte Feld durch die Erstellung eines neuen Bausteins mithilfe des Symbols **[!UICONTROL Duplizieren]**.
 * Bearbeiten Sie das Feld **[!UICONTROL Formulardaten]** mithilfe des Symbols **[!UICONTROL Bearbeiten]**, um ein Datenbankfeld mit einem Formularbereich zu verknüpfen.
 
-   ![](assets/dce_toolbar_formblock_edition.png)
+  ![](assets/dce_toolbar_formblock_edition.png)
 
 ## Eine Aktion zu einer Schaltfläche hinzufügen {#adding-an-action-to-a-button}
 
@@ -138,7 +138,6 @@ Gestaltungsbausteine und Felder können nur in Bausteine vom Typ &quot;Text&quot
 >* Aktuelles Fenster (_self)
 >* Standard-Navigationseinstellungen
 >
-
 
 ### Link auf eine URL {#link-to-a-url}
 
@@ -204,7 +203,6 @@ Folgende Optionen sind verfügbar:
 >
 >* Symbol **Duplizieren**: Dupliziert den Baustein sowie alle mit dem Baustein verknüpften Stile.
 
-
 ## Bilder und Animationen verwalten {#managing-images-and-animations}
 
 Mit dem Digital Content Editor können Sie **alle Arten von Bildern** bearbeiten, die mit Browsern kompatibel sind.
@@ -238,7 +236,7 @@ Wenn Sie einen Baustein auswählen, der ein Bild enthält, greifen Sie auf die f
 * **Alternativtext** fügt dem Bild einen Text hinzu, der z. B. dann angezeigt wird, wenn das Bild nicht geladen werden kann (entspricht dem **alt**-Tag im HTML-Code).
 * **Abmessungen** ermöglicht die Angabe der Bildgröße in Pixel.
 
-   ![](assets/dce_popup_imgsize.png)
+  ![](assets/dce_popup_imgsize.png)
 
 ## Personalisierungsinhalte hinzufügen {#adding-personalization-content}
 

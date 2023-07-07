@@ -23,13 +23,13 @@ Die Versandparameter müssen im Abschnitt **serverConf.xml** Ordner.
 
 * **DNS-Konfiguration**: Geben Sie die Bereitstellungsdomäne und die IP-Adressen (oder den Host) der DNS-Server an, die verwendet werden, um auf DNS-Abfragen des MX-Typs zu reagieren, die vom MTA-Modul vom **`<dnsconfig>`** ab.
 
-   >[!NOTE]
-   >
-   >Die **nameServers** -Parameter ist für eine Installation unter Windows unerlässlich. Für eine Installation unter Linux muss sie leer gelassen werden.
+  >[!NOTE]
+  >
+  >Die **nameServers** -Parameter ist für eine Installation unter Windows unerlässlich. Für eine Installation unter Linux muss sie leer gelassen werden.
 
-   ```
-   <dnsConfig localDomain="domain.com" nameServers="192.0.0.1,192.0.0.2"/>
-   ```
+  ```
+  <dnsConfig localDomain="domain.com" nameServers="192.0.0.1,192.0.0.2"/>
+  ```
 
 Je nach Ihren Anforderungen und Einstellungen können Sie außerdem die folgenden Konfigurationen vornehmen: konfigurieren Sie eine [SMTP-Relais](#smtp-relay), passen Sie die Anzahl der [Untergeordnete MTA-Prozesse](#mta-child-processes), [Ausgehenden SMTP-Traffic verwalten](#managing-outbound-smtp-traffic-with-affinities).
 

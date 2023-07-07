@@ -7,7 +7,7 @@ badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Personalization
 exl-id: e5239d99-256b-412b-be20-f64f822da9c3
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '480'
 ht-degree: 100%
 
@@ -43,9 +43,9 @@ Gehen Sie wie folgt vor, um eine dynamische Tabelle zu erzeugen:
 * Fügen Sie in jeder Zelle der zweiten Zeile die Skripts ein, die die anzuzeigenden Werte ausgeben.
 * Schließen Sie die Schleife in der dritten und letzten Zeile der Tabelle.
 
-   Beispiel der Erstellung einer dynamischen Tabelle:
+  Beispiel der Erstellung einer dynamischen Tabelle:
 
-   ![](assets/s_ncs_pdf_table.png)
+  ![](assets/s_ncs_pdf_table.png)
 
 ## Einfügen externer Bilder {#inserting-external-images}
 
@@ -68,9 +68,9 @@ Konfigurieren Sie hierzu einen Gestaltungsbaustein und verweisen Sie auf diesen 
 * Erstellen Sie einen neuen Baustein mit dem Titel &quot;Mein Logo&quot; und dem internen Namen &quot;Mein_Logo&quot;.
 * Öffnen Sie den Link **[!UICONTROL Erweiterte Parameter...]** ... und geben Sie an, dass der Baustein in einem Anhang enthalten ist. Mit Auswahl dieser Option wird die Definition des Gestaltungsbausteins direkt in den Inhalt der OpenOffice-Datei kopiert.****
 
-   ![](assets/s_ncs_pdf_bloc_option.png)
+  ![](assets/s_ncs_pdf_bloc_option.png)
 
-   Innerhalb des Gestaltungsbausteins sind zwei Deklarierungstypen zu unterscheiden:
+  Innerhalb des Gestaltungsbausteins sind zwei Deklarierungstypen zu unterscheiden:
 
    * Der Adobe Campaign-Code der Personalisierungsfelder: Die Zeichen „Kleiner als“ und „Größer als“ müssen durch eine Escape-Sequenz ersetzt werden (`&lt;` und `&gt;`).
    * Der OpenOffice-XML-Code wird vollständig in das OpenOffice-Dokument kopiert.

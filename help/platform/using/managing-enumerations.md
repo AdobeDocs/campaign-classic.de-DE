@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: administration-basics
 exl-id: 2ece058d-b493-4fea-b3db-322cf7ea7f4f
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '946'
 ht-degree: 100%
 
@@ -33,15 +33,15 @@ Die Bestimmung der Werte für Auflistungsfelder und ihre Verwaltung (Hinzufügen
 * Im oberen Abschnitt befindet sich die Liste der Felder, für die eine Auflistung bestimmt wurde.
 * Im unteren Abschnitt werden die vorgeschlagenen Werte aufgelistet. Diese Werte werden in den Eingabemasken wiederaufgenommen, die das entsprechende Feld verwenden.
 
-   ![](assets/s_ncs_user_itemized_list_values.png)
+  ![](assets/s_ncs_user_itemized_list_values.png)
 
-   Um einen neuen Auflistungswert zu erstellen, klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**.
+  Um einen neuen Auflistungswert zu erstellen, klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**.
 
-   ![](assets/s_ncs_user_itemized_list.png)
+  ![](assets/s_ncs_user_itemized_list.png)
 
-   Wenn der Typ **[!UICONTROL Offen]** ausgewählt wird, kann der Benutzer einen neuen Auflistungswert durch direkte Eingabe in das entsprechende Feld hinzufügen. Eine Bestätigungsnachricht ermöglicht die Erstellung des Werts.
+  Wenn der Typ **[!UICONTROL Offen]** ausgewählt wird, kann der Benutzer einen neuen Auflistungswert durch direkte Eingabe in das entsprechende Feld hinzufügen. Eine Bestätigungsnachricht ermöglicht die Erstellung des Werts.
 
-   ![](assets/s_ncs_user_itemized_list_new_value.png)
+  ![](assets/s_ncs_user_itemized_list_new_value.png)
 
 * Wenn der Typ **[!UICONTROL Geschlossen]** ausgewählt wird, können die Benutzer keine neuen Werte erstellen, sondern nur unter den vorgeschlagenen Werten auswählen.
 
@@ -61,9 +61,9 @@ Der eingegebene Wert kann:
 * automatisch von seinem Alias ersetzt werden. Hierzu muss Letzterer zuvor im Tab **[!UICONTROL Alias]** bestimmt worden sein;
 * in der Liste der Alias gespeichert werden. Die Zuordnung des Alias kann zu einem späteren Zeitpunkt erfolgen.
 
-   >[!NOTE]
-   >
-   >Wenn Sie Datenbereinigungskapazitäten benötigen, wählen Sie in der Aufzählung die Option **[!UICONTROL Alias-Verwaltung]**.
+  >[!NOTE]
+  >
+  >Wenn Sie Datenbereinigungskapazitäten benötigen, wählen Sie in der Aufzählung die Option **[!UICONTROL Alias-Verwaltung]**.
 
 ### Alias verwenden {#using-aliases}
 

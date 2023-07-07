@@ -6,7 +6,7 @@ badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classi
 feature: Fatigue Management, Typology Rules
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3460'
 ht-degree: 100%
 
@@ -63,6 +63,7 @@ Um eine Typologieregel vom Typ **[!UICONTROL Druck]** zu erstellen und zu konfig
    >Die geplanten Sendungen werden nur berücksichtigt, wenn die Option **[!UICONTROL Sendungen im Planungskalender einbeziehen]** ausgewählt wurde. Lesen Sie diesbezüglich auch den Abschnitt [Festlegen des Zeitraums](#setting-the-period).
    >
    >Diese Funktion ist in Campaign v8 nicht verfügbar.
+   >
 
 1. Geben Sie den Berechnungsmodus der maximalen Nachrichtenanzahl an.
 
@@ -87,7 +88,8 @@ Um eine Typologieregel vom Typ **[!UICONTROL Druck]** zu erstellen und zu konfig
    * Im oberen Bereich können die betroffenen Empfänger begrenzt werden.
    * Im unteren Bereich dieses Tabs können die zu zählenden Nachrichten gefiltert werden.
 
-      Im folgenden Beispiel werden nur die im Ordner **NewContacts** gespeicherten Empfänger berücksichtigt und nur Sendungen, die mit **Newsletter** beginnen, sind betroffen.
+     Im folgenden Beispiel werden nur die im Ordner **NewContacts** gespeicherten Empfänger berücksichtigt und nur Sendungen, die mit **Newsletter** beginnen, sind betroffen.
+
    ![](assets/campaign_opt_create_a_rule_05.png)
 
 1. Im Tab **[!UICONTROL Typologien]** können die Kampagnentypologien eingesehen werden, die diese Regel anwenden. Die Regel kann hier außerdem einer oder mehreren vorhandenen Typologien zugeordnet werden. Näheres hierzu finden Sie im Abschnitt [Anwenden von Typologien](about-campaign-typologies.md#applying-typologies).
@@ -160,6 +162,7 @@ oder
 
    >[!AVAILABILITY]
    >Diese Funktion ist in Campaign v8 nicht verfügbar.
+   >
 
 Das Anfangsdatum des Zeitraums hängt von der Konfiguration der Datenbank ab.
 
@@ -276,15 +279,15 @@ Bei der Versandanalyse werden Empfänger ausgeschlossen, wenn sie bereits eine b
 
 * das Ergebnis der Analyse ansehen:
 
-   ![](assets/campaign_opt_pressure_sample_1_8.png)
+  ![](assets/campaign_opt_pressure_sample_1_8.png)
 
 * den Versand öffnen und auf den Tab **[!UICONTROL Sendungen]** sowie den Untertab **[!UICONTROL Ausschlüsse]** klicken:
 
-   ![](assets/campaign_opt_pressure_sample_1_9.png)
+  ![](assets/campaign_opt_pressure_sample_1_9.png)
 
 * auf den Tab **[!UICONTROL Verfolgung]** und anschließend den Untertab **[!UICONTROL Ausschlussgründe]** klicken, um die Anzahl der Ausschlüsse und die angewandten Typologieregeln anzeigen zu lassen:
 
-   ![](assets/campaign_opt_pressure_sample_1_10.png)
+  ![](assets/campaign_opt_pressure_sample_1_10.png)
 
 ### Berechnen der Versandgewichtung basierend auf dem Empfängerverhalten {#calculating-the-delivery-weight-based-on-behavior}
 
@@ -336,6 +339,7 @@ Konfigurieren Sie zuerst die Druckregel.
 
    >[!AVAILABILITY]
    >Geplante Sendungen können in Campaign v8 nicht berücksichtigt werden.
+   >
 
 1. Verknüpfen Sie diese Regel im Tab **[!UICONTROL Typologien]** mit einer Kampagnen-Typologie.
 1. Speichern Sie Ihre Änderungen.

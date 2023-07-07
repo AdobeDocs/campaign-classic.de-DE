@@ -48,6 +48,7 @@ Die folgenden Proxy-Verbindungen sind möglich: HTTP, HTTPS, FTP, SFTP. Bitte be
 >Nur der grundlegende Authentifizierungsmodus wird unterstützt. Die NTLM-Authentifizierung wird nicht unterstützt.
 >
 >SOCKS-Proxys werden nicht unterstützt.
+>
 
 Sie können den folgenden Befehl verwenden:
 

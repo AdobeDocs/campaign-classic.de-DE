@@ -125,22 +125,22 @@ Gehen Sie dazu wie folgt vor:
 
    * Vergewissern Sie sich, dass der einzige Lieferteil der ist, für den die ID festgelegt ist. **0**:
 
-      ```
-      SELECT * FROM neolane.nmsdeliverypart;
-      ```
+     ```
+     SELECT * FROM neolane.nmsdeliverypart;
+     ```
 
    * Vergewissern Sie sich, dass die Versandstatus-Aktualisierung korrekt ist:
 
-      ```
-      SELECT iSate, count(*) FROM neolane.nmsdeliveryGroup By iProd;
-      ```
+     ```
+     SELECT iSate, count(*) FROM neolane.nmsdeliveryGroup By iProd;
+     ```
 
    * Vergewissern Sie sich, dass die Workflow-Status-Aktualisierung korrekt ist:
 
-      ```
-      SELECT iState, count (*) FROM neolane.xtkworkflowGROUP BY iState;
-      SELECT iStatus, count (*) FROM neolane.xtkworkflowGROUP BY iStatus;
-      ```
+     ```
+     SELECT iState, count (*) FROM neolane.xtkworkflowGROUP BY iState;
+     SELECT iStatus, count (*) FROM neolane.xtkworkflowGROUP BY iStatus;
+     ```
 
 ### Dienste beenden
 
@@ -154,6 +154,7 @@ Um alle Dateien mit der neuen Version zu ersetzen, müssen alle Instanzen von nl
    >[!NOTE]
    >
    >Stellen Sie sicher, dass der Weiterleitungsserver (webmdl) angehalten ist, damit die von IIS verwendete Datei nlsrvmod.dll durch die neue Version ersetzt werden kann.
+   >
 
 1. Überprüfen Sie, ob keine Aufgaben aktiv sind, indem Sie die **nlserver pdump** Befehl. Wenn keine Aufgaben vorhanden sind, sollte die Ausgabe wie folgt aussehen:
 
@@ -188,6 +189,7 @@ Um alle Dateien mit der neuen Version zu ersetzen, müssen alle Instanzen von nl
    >[!NOTE]
    >
    >Dieser Vorgang sollte nur einmal und nur auf einem nlserverweb-Anwendungsserver ausgeführt werden.
+   >
 
    Um nur eine Datenbank zu synchronisieren, führen Sie den folgenden Befehl aus:
 
@@ -248,7 +250,7 @@ Wenn Transaktionsnachrichten (Message Center) in Ihrer Campaign-Instanz aktivier
 
 Im Kontext einer Mid-Sourcing-Umgebung müssen Sie die folgenden zusätzlichen Schritte ausführen, um eine Aktualisierung durchzuführen:
 
-1. Kontakt [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) um die Aktualisierung des Mid-Sourcing-Servers zu koordinieren.
+1. Kontakt [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) zur Koordinierung der Aktualisierung des Mid-Sourcing-Servers.
 1. Überprüfen Sie, ob die Version aktualisiert wurde, indem Sie einen Test-Link ausführen. Beispiel:
 
    ```
@@ -258,6 +260,7 @@ Im Kontext einer Mid-Sourcing-Umgebung müssen Sie die folgenden zusätzlichen S
 >[!NOTE]
 >
 >Der Mid-Sourcing-Server muss immer dieselbe Version (oder eine neuere Version) wie die Marketing-Server ausführen.
+>
 
 ## Bei Konflikten
 
@@ -345,6 +348,7 @@ Es gibt drei Möglichkeiten, Konflikte zu lösen: **Neue Version akzeptieren**, 
 
 >[!IMPORTANT]
 >Es wird dringend empfohlen, Konflikte zu lösen.
+>
 
 ### Zusammenführen{#perform-a-merge}
 
@@ -408,6 +412,7 @@ So nehmen Sie eine komplexe Zusammenführung vor:
 
 >[!IMPORTANT]
 >Für komplexe Zusammenführungen sind Entwicklungsfähigkeiten erforderlich.
+>
 
 **Verwandte Themen** 
 

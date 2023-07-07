@@ -55,47 +55,46 @@ Mithilfe verschiedener Optionen können Sie die Auswirkungen einer Migration mes
 
 * im **config** command:
 
-   ```
-   nlserver.exe config <option> -instance:<instance-name>
-   ```
+  ```
+  nlserver.exe config <option> -instance:<instance-name>
+  ```
 
 * oder beim Postupgrade:
 
-   ```
-   nlserver.exe config -postupgrade <option> -instance:<instance-name>
-   ```
+  ```
+  nlserver.exe config -postupgrade <option> -instance:<instance-name>
+  ```
 
 >[!NOTE]
 >
 >* Sie müssen die **-instance:`<instanceame>`** -Option. Es wird empfohlen, die Variable **-allinstances** -Option.
 >* Der Adobe Campaign-Aktualisierungsbefehl (**postupgrade**) ermöglicht die Synchronisierung von Ressourcen und die Aktualisierung von Schemata und der Datenbank. Dieser Vorgang kann nur einmal auf dem Anwendungsserver ausgeführt werden. Nach der Synchronisierung der Ressourcen wird die **postupgrade** -Befehl können Sie erkennen, ob die Synchronisation Fehler oder Warnungen erzeugt.
 
-
 ### Nicht standardmäßige oder fehlende Objekte
 
 * Die **-showCustomEntities** zeigt die Liste aller Objekte an, die nicht dem Standard entsprechen:
 
-   ```
-   nlserver.exe config -showCustomEntities -instance:<instance-name>
-   ```
+  ```
+  nlserver.exe config -showCustomEntities -instance:<instance-name>
+  ```
 
-   Beispiel einer gesendeten Nachricht:
+  Beispiel einer gesendeten Nachricht:
 
-   ```
-   xtk_migration:opsecurity2 xtk:entity
-   ```
+  ```
+  xtk_migration:opsecurity2 xtk:entity
+  ```
 
 * Die **-showDeletedEntities** zeigt die Liste aller Standardobjekte an, die in der Datenbank oder im Dateisystem fehlen. Für jedes fehlende Objekt wird der Pfad angegeben.
 
-   ```
-   nlserver.exe config -showDeletedEntities -instance:<instance-name>
-   ```
+  ```
+  nlserver.exe config -showDeletedEntities -instance:<instance-name>
+  ```
 
-   Beispiel einer gesendeten Nachricht:
+  Beispiel einer gesendeten Nachricht:
 
-   ```
-   Out of the box object 'nms:deliveryCustomizationMdl' belonging to the 'xtk:srcSchema' schema has not been found in the file system.
-   ```
+  ```
+  Out of the box object 'nms:deliveryCustomizationMdl' belonging to the 'xtk:srcSchema' schema has not been found in the file system.
+  ```
 
 ### Überprüfungsverfahren {#verification-process}
 

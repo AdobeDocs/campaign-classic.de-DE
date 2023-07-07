@@ -9,7 +9,7 @@ content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: 6158ffaa-cb08-4f77-82b8-b3e5e1bf7fd7
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1083'
 ht-degree: 100%
 
@@ -110,41 +110,41 @@ Hierbei handelt es sich um die gängigsten Anwendungen für Unterbreitungsregeln
 
 * **Kanalfilter**
 
-   **[!UICONTROL Nur denselben Kanal betreffend]**: ermöglicht den Ausschluss der Vorschläge, die den im **[!UICONTROL Allgemein]**-Tab angegebenen Kanal betreffen.
+  **[!UICONTROL Nur denselben Kanal betreffend]**: ermöglicht den Ausschluss der Vorschläge, die den im **[!UICONTROL Allgemein]**-Tab angegebenen Kanal betreffen.
 
-   Angenommen, der in der Regel angegebene Kanal ist der E-Mail-Kanal. Wenn die von der Regel betroffenen Angebote bisher nur im Web-Kanal unterbreitet wurden, kann das Angebotsmodul die Angebote für einen E-Mail-Versand auswählen. Sobald die Angebote jedoch einmal per E-Mail unterbreitet wurden, wählt das Angebotsmodul für künftige Vorschläge einen anderen Kanal aus.****
+  Angenommen, der in der Regel angegebene Kanal ist der E-Mail-Kanal. Wenn die von der Regel betroffenen Angebote bisher nur im Web-Kanal unterbreitet wurden, kann das Angebotsmodul die Angebote für einen E-Mail-Versand auswählen. Sobald die Angebote jedoch einmal per E-Mail unterbreitet wurden, wählt das Angebotsmodul für künftige Vorschläge einen anderen Kanal aus.****
 
-   >[!NOTE]
-   >
-   >Es handelt sich hier um den Kanal, nicht um die Platzierung. Wenn die Regel beispielsweise den Ausschluss eines Angebots im Web-Kanal betrifft, wird ein Angebot, das auf einer Webseite in zwei Platzierungen (z. B. in einem Banner und im Textkörper) vorgeschlagen werden soll, weder in der einen noch in der anderen Platzierung auf der Webseite angezeigt, wenn es zuvor bereits auf der Webseite unterbreitet wurde.
-   >
-   >Im Falle eines Workflows, der eine Angebotsunterbreitung enthält, können Regeln nur korrekt berücksichtigt werden, wenn der Parameter **[!UICONTROL Alle Kanäle]** ausgewählt wurde.
+  >[!NOTE]
+  >
+  >Es handelt sich hier um den Kanal, nicht um die Platzierung. Wenn die Regel beispielsweise den Ausschluss eines Angebots im Web-Kanal betrifft, wird ein Angebot, das auf einer Webseite in zwei Platzierungen (z. B. in einem Banner und im Textkörper) vorgeschlagen werden soll, weder in der einen noch in der anderen Platzierung auf der Webseite angezeigt, wenn es zuvor bereits auf der Webseite unterbreitet wurde.
+  >
+  >Im Falle eines Workflows, der eine Angebotsunterbreitung enthält, können Regeln nur korrekt berücksichtigt werden, wenn der Parameter **[!UICONTROL Alle Kanäle]** ausgewählt wurde.
 
 * **Angebotsfilter**
 
-   Dieses Feld ermöglicht es, die Zählung der Angebote auf gewisse Angebotsgruppen zu beschränken.
+  Dieses Feld ermöglicht es, die Zählung der Angebote auf gewisse Angebotsgruppen zu beschränken.
 
-   **[!UICONTROL Alle Angebote]**: Standardoption, die Angebote werden nicht gefiltert.
+  **[!UICONTROL Alle Angebote]**: Standardoption, die Angebote werden nicht gefiltert.
 
-   **[!UICONTROL Nur das aktuell unterbreitete Angebot]**: Das im **[!UICONTROL Allgemein]**-Tab angegebene Angebot wird ausgeschlossen, wenn es zuvor bereits unterbreitet wurde.
+  **[!UICONTROL Nur das aktuell unterbreitete Angebot]**: Das im **[!UICONTROL Allgemein]**-Tab angegebene Angebot wird ausgeschlossen, wenn es zuvor bereits unterbreitet wurde.
 
-   **[!UICONTROL Angebote derselben Kategorie]**: Ein Angebot wird ausgeschlossen, wenn bereits ein anderes Angebot derselben Kategorie unterbreitet wurde.
+  **[!UICONTROL Angebote derselben Kategorie]**: Ein Angebot wird ausgeschlossen, wenn bereits ein anderes Angebot derselben Kategorie unterbreitet wurde.
 
-   **[!UICONTROL Angebote, für die die Regel Anwendung findet]**: Wenn im **[!UICONTROL Allgemein]**-Tab mehrere Angebote angegeben wurden, wird jeder einzelne Vorschlag dieser Angebotsgruppe gezählt und bei Erreichen der maximalen Vorschlagsanzahl werden alle angegebenen Angebote ausgeschlossen.
+  **[!UICONTROL Angebote, für die die Regel Anwendung findet]**: Wenn im **[!UICONTROL Allgemein]**-Tab mehrere Angebote angegeben wurden, wird jeder einzelne Vorschlag dieser Angebotsgruppe gezählt und bei Erreichen der maximalen Vorschlagsanzahl werden alle angegebenen Angebote ausgeschlossen.
 
-   Angenommen, die Regel bezieht sich auf die Angebote Nr. 2, 3 und 5 und die maximale Anzahl an Vorschlägen wurde auf 2 begrenzt. Wenn die Angebote Nr. 2 und 5 jeweils einmal unterbreitet wurden, erreicht die Anzahl zu zählender Vorschläge 2. Das Angebot Nr. 3 wird somit nicht unterbreitet.****
+  Angenommen, die Regel bezieht sich auf die Angebote Nr. 2, 3 und 5 und die maximale Anzahl an Vorschlägen wurde auf 2 begrenzt. Wenn die Angebote Nr. 2 und 5 jeweils einmal unterbreitet wurden, erreicht die Anzahl zu zählender Vorschläge 2. Das Angebot Nr. 3 wird somit nicht unterbreitet.****
 
 * **Vorschlagsstatusfilter**
 
-   Dieses Feld ermöglicht die direkte Auswahl der gängigsten Vorschlagsstatus, die zu berücksichtigen sind, wenn sie im Verlauf erscheinen.
+  Dieses Feld ermöglicht die direkte Auswahl der gängigsten Vorschlagsstatus, die zu berücksichtigen sind, wenn sie im Verlauf erscheinen.
 
-   **[!UICONTROL Unabhängig vom Vorschlagsstatus]**: Standardoption, die Vorschlagsstatus werden nicht gefiltert.
+  **[!UICONTROL Unabhängig vom Vorschlagsstatus]**: Standardoption, die Vorschlagsstatus werden nicht gefiltert.
 
-   **[!UICONTROL Angenommene oder abgelehnte Vorschläge]**: ermöglicht den Ausschluss von bereits vorgeschlagenen Angeboten, die angenommen oder abgelehnt wurden.
+  **[!UICONTROL Angenommene oder abgelehnte Vorschläge]**: ermöglicht den Ausschluss von bereits vorgeschlagenen Angeboten, die angenommen oder abgelehnt wurden.
 
-   **[!UICONTROL Angenommene Vorschläge]**: ermöglicht den Ausschluss von bereits vorgeschlagenen Angeboten, die akzeptiert wurden.
+  **[!UICONTROL Angenommene Vorschläge]**: ermöglicht den Ausschluss von bereits vorgeschlagenen Angeboten, die akzeptiert wurden.
 
-   **[!UICONTROL Abgelehnte Vorschläge]**: ermöglicht den Ausschluss von bereits vorgeschlagenen Angeboten, die abgelehnt wurden.
+  **[!UICONTROL Abgelehnte Vorschläge]**: ermöglicht den Ausschluss von bereits vorgeschlagenen Angeboten, die abgelehnt wurden.
 
 ### Empfänger definieren {#defining-recipients}
 

@@ -27,7 +27,6 @@ A **Stapelablaufverfolgung** stellt eine in einer **core** Datei eingeben. Diese
 >* **gdb - Der GNU-Debugger** muss auf dem Computer installiert sein.
 >
 
-
 Der technische Support von Adobe Campaign kann Sie dazu bitten **Stapelablaufverfolgung**. Geben Sie die folgenden Befehle in Linux ein, um sie abzurufen:
 
 ```

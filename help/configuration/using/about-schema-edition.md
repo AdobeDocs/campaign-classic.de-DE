@@ -124,7 +124,7 @@ Die vollständige Liste der Attribute ist im [`<attribute>` element](../../confi
 * **@desc**
 * **@enum**
 * **@expr**
-* **@label**
+* **@Bezeichnung**
 * **@length**
 * **@name**
 * **@notNull**
@@ -133,7 +133,7 @@ Die vollständige Liste der Attribute ist im [`<attribute>` element](../../confi
 * **@xml**
 * **@Typ**
 
-   Eine Tabelle mit den Zuordnungen der Datentypen, die von Adobe Campaign für die verschiedenen Datenbankverwaltungssysteme generiert wurden, finden Sie im Abschnitt [Mapping der Adobe Campaign/DBMS-Datentypen](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data) Abschnitt.
+  Eine Tabelle mit den Zuordnungen der Datentypen, die von Adobe Campaign für die verschiedenen Datenbankverwaltungssysteme generiert wurden, finden Sie im Abschnitt [Mapping der Adobe Campaign/DBMS-Datentypen](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data) Abschnitt.
 
 Weitere Informationen zu den einzelnen Attributen finden Sie im Abschnitt [Attributbeschreibung](../../configuration/using/schema/attribute.md) Abschnitt.
 

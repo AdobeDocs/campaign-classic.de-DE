@@ -23,6 +23,7 @@ Aus Sicherheitsgründen müssen Sie [das neueste Campaign-Build installieren](#a
 >[!NOTE]
 >
 >Wenden Sie sich bei Fragen zu diesen Änderungen an die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Siehe auch [häufig gestellte Fragen zum Build-Upgrade](../../platform/using/faq-build-upgrade.md).
+>
 
 ## Campaign-Build-Upgrade {#ac-upgrade}
 

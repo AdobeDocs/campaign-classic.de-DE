@@ -5,7 +5,7 @@ description: In diesem Abschnitt werden die Transaktionsnachrichten-Architektur 
 badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 exl-id: 0a059397-b037-405b-b9c1-94a4a072674d
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1225'
 ht-degree: 100%
 
@@ -199,14 +199,13 @@ Konfigurieren Sie dann im **[!UICONTROL Explorer]** unter **[!UICONTROL Plattfor
    * **[!UICONTROL Server]**: Geben Sie Ihre Datenbankserver-URL ein.
    * **[!UICONTROL Konto]**: Geben Sie Ihr Datenbankkonto ein.
 
-      >[!NOTE]
-      >
-      >Ein Datenbankbenutzer benötigt für die FDA-Verbindung Lesezugriff auf die folgenden Tabellen: XtkOption, NmsVisitor, NmsVisitorSub, NmsService, NmsBroadLogRtEvent, NmsBroadLogBatchEvent, NmsTrackingLogRtEvent, NmsTrackingLogBatchEvent, NmsRtEvent, NmsBatchEvent, NmsBroadLogMsg, NmsTrackingUrl, NmsDelivery, NmsWebTrackingLogXtkFolder.
+     >[!NOTE]
+     >
+     >Ein Datenbankbenutzer benötigt für die FDA-Verbindung Lesezugriff auf die folgenden Tabellen: XtkOption, NmsVisitor, NmsVisitorSub, NmsService, NmsBroadLogRtEvent, NmsBroadLogBatchEvent, NmsTrackingLogRtEvent, NmsTrackingLogBatchEvent, NmsRtEvent, NmsBatchEvent, NmsBroadLogMsg, NmsTrackingUrl, NmsDelivery, NmsWebTrackingLogXtkFolder.
 
    * **[!UICONTROL Passwort]**: Geben Sie das Passwort für Ihr Datenbankkonto ein.
    * **[!UICONTROL Datenbank]**: Geben Sie den Datenbanknamen der Ausführungsinstanz ein.
    * Die Option **[!UICONTROL Ziel des &#39;HTTP-Weiterleitung auf Remote-Datenbank&#39; Kontos]** muss aktiviert sein.
-
 
 1. Erstellen Sie in der **Marketing-Instanz** das Konto **[!UICONTROL Externe Datenbank]** mit der folgenden Konfiguration:
 
@@ -223,7 +222,6 @@ Konfigurieren Sie dann im **[!UICONTROL Explorer]** unter **[!UICONTROL Plattfor
    * **[!UICONTROL Konto]**: Geben Sie das Konto ein, über das auf Ihre Ausführungsinstanz zugegriffen wird.
    * **[!UICONTROL Passwort]**: Geben Sie das Passwort für das Konto ein, über das auf Ihre Ausführungsinstanz zugegriffen wird.
    * **[!UICONTROL Datenquelle]**: Geben Sie die Syntax **[!UICONTROL nms:extAccount:ID Ihres externen Datenbankkontos in die ausführende Instanz]** ein.
-
 
 1. Erstellen Sie in der **Marketing-Instanz** das externe Konto **[!UICONTROL Ausführungsinstanz]** mit der folgenden Konfiguration, um den Datensynchronisations-Workflow zu erstellen:
 
@@ -245,7 +243,5 @@ Konfigurieren Sie dann im **[!UICONTROL Explorer]** unter **[!UICONTROL Plattfor
    * **[!UICONTROL FDA-Konto]**: Wählen Sie Ihr FDA-Konto aus der Dropdown-Liste aus.
    * Wählen Sie die Schaltfläche **[!UICONTROL Archivierungs-Workflow erstellen]** aus.
    * Wählen Sie die Schaltfläche **[!UICONTROL Datensynchronisations-Workflow erstellen]** aus, um den LINE-Datensynchronisations-Workflow zu erstellen.
-
-
 
 1. Sie können jetzt mit dem [Erstellen von Transaktionsnachrichten](../../message-center/using/creating-the-message-template.md) beginnen.

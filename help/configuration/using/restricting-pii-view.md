@@ -14,7 +14,7 @@ ht-degree: 66%
 
 # Einschränken der Anzeige von personenbezogenen Daten{#restricting-pii-view}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Manche Kunden benötigen Marketing-Benutzer, um auf Datendatensätze zugreifen zu können, aber nicht möchten, dass sie personenbezogene Daten (PII) wie Vorname, Nachname oder E-Mail-Adresse sehen. Adobe Campaign bietet eine Möglichkeit, den Datenschutz zu schützen und zu verhindern, dass Daten von regulären Kampagnenbetreibern missbraucht werden.
 

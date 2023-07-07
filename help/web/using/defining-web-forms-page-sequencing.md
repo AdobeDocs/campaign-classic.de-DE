@@ -7,7 +7,7 @@ badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Web Forms
 exl-id: c5b5c398-c13b-4ebe-88b2-8ff84741422e
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 100%
 
@@ -35,19 +35,19 @@ Folgende Zielorte sind möglich:
 
 * Eine andere Seite des Formulars. Wählen Sie dazu **[!UICONTROL Interne Aktivität]** aus und spezifizieren Sie dann die gewünschte Seite wie unten dargestellt:
 
-   ![](assets/s_ncs_admin_jump_param1.png)
+  ![](assets/s_ncs_admin_jump_param1.png)
 
 * Ein anderes Formular. Wählen Sie dazu die Option **[!UICONTROL Explizit]** aus und spezifizieren Sie das Zielformular.
 
-   ![](assets/s_ncs_admin_jump_param2.png)
+  ![](assets/s_ncs_admin_jump_param2.png)
 
 * Der Zielort kann in einer Variablen gespeichert sein. Wählen Sie ihn in diesem Fall aus der Dropdown-Liste wie unten gezeigt aus.
 
-   ![](assets/s_ncs_admin_jump_param3.png)
+  ![](assets/s_ncs_admin_jump_param3.png)
 
 * Im Tab **[!UICONTROL Kommentar]** können Sie Informationen eingeben, die für den Operator sichtbar sind, wenn er das Objekt im Diagramm auswählt.
 
-   ![](assets/s_ncs_admin_survey_jump_comment.png)
+  ![](assets/s_ncs_admin_survey_jump_comment.png)
 
 ## Beispiel: Zugriff auf ein anderes Formular entsprechend einem URL-Parameter {#example--accessing-another-form-according-to-a-parameter-of-the-url}
 

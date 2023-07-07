@@ -7,7 +7,7 @@ badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: A/B Testing
 exl-id: e6f39180-d161-4226-810a-10bb1c3682ca
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '105'
 ht-degree: 100%
 
@@ -21,15 +21,15 @@ Nach Verarbeitung der Testsendungen besteht die Möglichkeit im Kampagnen-Dashbo
 
 * Im **[!UICONTROL Versand]**-Tab wird angezeigt, welche Empfänger den Versand erhalten haben.
 
-   ![](assets/use_case_abtesting_analysis_001.png)
+  ![](assets/use_case_abtesting_analysis_001.png)
 
 * Im **[!UICONTROL Tracking]**-Tab wird angezeigt, welche Empfänger den Versand geöffnet haben.
 
-   ![](assets/use_case_abtesting_analysis_002.png)
+  ![](assets/use_case_abtesting_analysis_002.png)
 
 * Vergleichen Sie die Ergebnisse beider Sendungen miteinander.
 
-   ![](assets/use_case_abtesting_analysis_003.png)
+  ![](assets/use_case_abtesting_analysis_003.png)
 
 Im vorliegenden Beispiel hat der Versand A die besseren Öffnungsraten erzielt. Daher wurde der Inhalt A für den endgültigen Versand ausgewählt.
 

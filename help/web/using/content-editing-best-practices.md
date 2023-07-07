@@ -7,7 +7,7 @@ badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Web Apps, Web Forms, Landing Pages
 exl-id: c1eccb48-59bf-412f-9c18-9cda2a022096
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 100%
 
@@ -23,21 +23,21 @@ Bitte beachten Sie folgende Hinweise, um eine optimale Funktionsweise des Editor
 * Wenn die HTML-Seite **JavaScript**-Elemente enthält, müssen diese außerhalb des Editors **fehlerfrei** ausführbar sein.
 * Bei der Erstellung einer Vorlage wird empfohlen, den Tags ein **&#39;type&#39;**-Attribut beizufügen. `<input>` Beim Konfigurieren von Webanwendungen hilft die Interpretation dieser Information durch den Editor dem Benutzer bei der Zuordnung von einem Feld der Datenbank zu dem Feld des Formulars.
 
-   Beispiel eines HTML-Codes in einer Vorlage:
+  Beispiel eines HTML-Codes in einer Vorlage:
 
-   ```
-   <input id="email" type="email" name="email"/>
-   ```
+  ```
+  <input id="email" type="email" name="email"/>
+  ```
 
-   Das Attribut **type** ist in der Benutzeroberfläche in der folgenden Form sichtbar:
+  Das Attribut **type** ist in der Benutzeroberfläche in der folgenden Form sichtbar:
 
-   ![](assets/dce_sidebar_inputtypechanges.png)
+  ![](assets/dce_sidebar_inputtypechanges.png)
 
-   Die offizielle Liste der „type“-Attribute ist [auf dieser Website](https://www.w3schools.com/tags/att_input_type.asp) verfügbar.
+  Die offizielle Liste der „type“-Attribute ist [auf dieser Website](https://www.w3schools.com/tags/att_input_type.asp) verfügbar.
 
 * Schritte zur Simulation einer Endseite mit dem DCE:
 
-   ![](assets/dce_enchainement.png)
+  ![](assets/dce_enchainement.png)
 
 * Achten Sie darauf, dass `<body> </body>` auf der Seite nur einmal vorkommt.
 * Beim Hochladen einer CSS- oder JS-Datei werden die in der ZIP-Datei enthaltenen Bilder nicht hochgeladen. Die in der CSS-Datei vorhandenen Referenzen auf diese Bilder werden deshalb nicht aktualisiert.

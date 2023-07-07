@@ -6,7 +6,7 @@ badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classi
 feature: Workflows, Data Management
 exl-id: 8025d207-3bc0-400f-b6a4-a72765e5a9d2
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 100%
 
@@ -80,19 +80,19 @@ Der Link **[!UICONTROL Erweiterte Parameter...]** bietet Zugriff auf folgende Op
 
 * **[!UICONTROL Quelldateien nach der Übertragung löschen]**
 
-   Löscht die Dateien auf dem Remote-Server. Wenn Sie diese Option deaktiviert lassen, müssen Sie die Größe des archivierten Inhalts im SFTP-Verzeichnis manuell überwachen.
+  Löscht die Dateien auf dem Remote-Server. Wenn Sie diese Option deaktiviert lassen, müssen Sie die Größe des archivierten Inhalts im SFTP-Verzeichnis manuell überwachen.
 
 * **[!UICONTROL SSL verwenden]**
 
-   Verwendet eine gesicherte Verbindung bei der Dateiübertragung (SSL-Protokoll).
+  Verwendet eine gesicherte Verbindung bei der Dateiübertragung (SSL-Protokoll).
 
 * **[!UICONTROL Sitzungsprotokolle anzeigen]**
 
-   Ruft die Logs zur Azure Blob Storage-, S3-, FTP- bzw. SFTP-Übertragung ab und fügt sie in die Workflow-Logs ein.
+  Ruft die Logs zur Azure Blob Storage-, S3-, FTP- bzw. SFTP-Übertragung ab und fügt sie in die Workflow-Logs ein.
 
 * **[!UICONTROL Passiven Modus deaktivieren]**
 
-   Ermöglicht es, den für die Übertragung zu verwendenden Verbindungsport anzugeben.
+  Ermöglicht es, den für die Übertragung zu verwendenden Verbindungsport anzugeben.
 
 Über den Link **[!UICONTROL Verlaufsparameter der Dateien...]** besteht Zugriff auf Optionen, die im Abschnitt [HTTP-Übertragung](web-download.md) (im Schritt **[!UICONTROL Verlaufserstellung]**) beschrieben werden.
 
@@ -100,10 +100,10 @@ Der Link **[!UICONTROL Erweiterte Parameter...]** bietet Zugriff auf folgende Op
 
 * filename
 
-   Vollständiger Name der übertragenen Datei.
+  Vollständiger Name der übertragenen Datei.
 
 ## Ausgabeparameter {#output-parameters}
 
 * filename
 
-   Vollständiger Name der empfangenen Datei, wenn die Option **[!UICONTROL Durch vorhergehende Aktivität erzeugte Datei verwenden]** angekreuzt wurde.
+  Vollständiger Name der empfangenen Datei, wenn die Option **[!UICONTROL Durch vorhergehende Aktivität erzeugte Datei verwenden]** angekreuzt wurde.

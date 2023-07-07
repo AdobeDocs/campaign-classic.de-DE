@@ -62,4 +62,5 @@ Sobald Sie die genaue Version von Tomcat ermitteln können, die in einer bestimm
 >[!NOTE]
 >
 >Die Hauptversion des eingebetteten Tomcat wird nur aktualisiert, wenn sich die Hauptversion von Adobe Campaign ändert (obwohl ältere Versionen möglicherweise nicht mehr offiziell unterstützt werden, können die Informationen nützlich sein, da einige Kunden diese Versionen möglicherweise noch ausführen).
+>
 

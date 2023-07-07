@@ -7,7 +7,7 @@ badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Monitoring, Email Design
 exl-id: 3277726a-fd92-4720-8871-3d0422c7db70
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '174'
 ht-degree: 100%
 
@@ -29,9 +29,9 @@ Sie haben folgende Möglichkeiten:
 
 * Aktivierung/Deaktivierung des URL-Trackings für alle Nachrichten;
 
-   >[!CAUTION]
-   >
-   >Wenn beim Versand das Tracking nicht aktiviert ist (d. h. die Option **[!UICONTROL Tracking aktivieren]** nicht ausgewählt ist), sind keine Berichte und Daten zum Tracking verfügbar. In diesem Fall sind für Öffnungen, Klickposition und getrackte URLs keine Daten vorhanden und für den Versand werden keine **[!UICONTROL Trackinglogs]**-Tabs angezeigt.
+  >[!CAUTION]
+  >
+  >Wenn beim Versand das Tracking nicht aktiviert ist (d. h. die Option **[!UICONTROL Tracking aktivieren]** nicht ausgewählt ist), sind keine Berichte und Daten zum Tracking verfügbar. In diesem Fall sind für Öffnungen, Klickposition und getrackte URLs keine Daten vorhanden und für den Versand werden keine **[!UICONTROL Trackinglogs]**-Tabs angezeigt.
 
 * Aktivierung/Deaktivierung des Trackings bei Öffnung der Nachricht.
 

@@ -9,7 +9,7 @@ content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 1ce89c3a-1fe6-4ed6-9547-2eb9713a0ec3
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 100%
 
@@ -75,12 +75,12 @@ Führen Sie einen Neustart des Servers durch, falls Änderungen an den obigen Ei
 
 * Der Benutzer wird an die Seite &quot;adobe.com&quot; weitergeleitet:
 
-   Es gibt ein Problem mit der **[!UICONTROL Callback-URL]**. Überprüfen Sie anhand der vorherigen Schritte die Konfiguration der **[!UICONTROL Callback-URL]**.
+  Es gibt ein Problem mit der **[!UICONTROL Callback-URL]**. Überprüfen Sie anhand der vorherigen Schritte die Konfiguration der **[!UICONTROL Callback-URL]**.
 
 * Meldung &quot;Der Login besitzt keine Berechtigung, die dem Ausdruck in Adobe Campaign entspricht&quot;:
 
-   Überprüfen Sie anhand der vorherigen Schritte die Konfiguration von **[!UICONTROL Zuordnungsmaske]** und Benutzergruppen.
+  Überprüfen Sie anhand der vorherigen Schritte die Konfiguration von **[!UICONTROL Zuordnungsmaske]** und Benutzergruppen.
 
 * Der Benutzer kann nicht auf die Seite für die Anmeldung mit der Adobe ID zugreifen:
 
-   Überprüfen Sie anhand der vorherigen Schritte die Perimeterkonfiguration.
+  Überprüfen Sie anhand der vorherigen Schritte die Perimeterkonfiguration.

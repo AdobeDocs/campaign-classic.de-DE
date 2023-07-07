@@ -6,7 +6,7 @@ badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classi
 feature: Campaigns
 exl-id: 4e0df18f-3623-4dfb-a2f8-ad293dbc4dd5
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 100%
 
@@ -32,35 +32,35 @@ Im Folgenden werden Termini dargestellt, die im Zusammenhang mit Campaign von Be
 
 * **Kampagne**
 
-   Eine Kampagne umfasst alle mit einer Marketing-Kampagne verbundenen Elemente: Sendungen, Regeln zur Zielgruppenbestimmung, Kosten, Exportdateien, zugehörige Dokumente etc. Jede Kampagne ist einem Programm zugeordnet.
+  Eine Kampagne umfasst alle mit einer Marketing-Kampagne verbundenen Elemente: Sendungen, Regeln zur Zielgruppenbestimmung, Kosten, Exportdateien, zugehörige Dokumente etc. Jede Kampagne ist einem Programm zugeordnet.
 
-   Weitere Informationen finden Sie unter [Hinzufügen einer Kampagne](../../campaign/using/setting-up-marketing-campaigns.md#adding-a-campaign).
+  Weitere Informationen finden Sie unter [Hinzufügen einer Kampagne](../../campaign/using/setting-up-marketing-campaigns.md#adding-a-campaign).
 
 * **Programm**
 
-   Ein Programm dient dazu, Marketing-Aktionen wie zum Beispiel Einführungs-, Kundenwerbungs- oder Treueprogramme für einen bestimmten Zeitraum zu planen. Jedes Programm enthält Kampagnen, die in einem Kalender übersichtlich zusammengefasst sind.
+  Ein Programm dient dazu, Marketing-Aktionen wie zum Beispiel Einführungs-, Kundenwerbungs- oder Treueprogramme für einen bestimmten Zeitraum zu planen. Jedes Programm enthält Kampagnen, die in einem Kalender übersichtlich zusammengefasst sind.
 
 * **Plan**
 
-   Ein Marketing-Plan umfasst unterschiedliche Programme einer bestimmten Kalenderperiode. Er führt das für diesen Zeitraum zugeteilte Budget und kann mit Dokumenten und Zielvorgaben verbunden werden.
+  Ein Marketing-Plan umfasst unterschiedliche Programme einer bestimmten Kalenderperiode. Er führt das für diesen Zeitraum zugeteilte Budget und kann mit Dokumenten und Zielvorgaben verbunden werden.
 
-   Weitere Informationen hierzu finden Sie im Abschnitt [Kampagnenkalender](../../campaign/using/accessing-marketing-campaigns.md#campaign-calendar).
+  Weitere Informationen hierzu finden Sie im Abschnitt [Kampagnenkalender](../../campaign/using/accessing-marketing-campaigns.md#campaign-calendar).
 
 * **Workflow**
 
-   Ein Kampagnen-Workflow enthält dieselben Aktivitäten wie jede andere Art von Workflow, bezieht sich jedoch speziell auf eine Kampagne. Mit ihm können Sendungen für alle verfügbaren Kanäle erstellt und konfiguriert werden.
+  Ein Kampagnen-Workflow enthält dieselben Aktivitäten wie jede andere Art von Workflow, bezieht sich jedoch speziell auf eine Kampagne. Mit ihm können Sendungen für alle verfügbaren Kanäle erstellt und konfiguriert werden.
 
-   Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
+  Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
 
 * **Einleitung**
 
-   In Kampagnen, Programmen und Plänen kann eine Liste mit Zielvorgaben angegeben werden. Es handelt sich hierbei um quantifizierte, zu erreichende Werte. Am Ende der Kampagne, des Programms oder des Plans ermöglicht das MRM-Modul den Vergleich zwischen Zielvorgaben und Resultaten in dedizierten Berichten.
+  In Kampagnen, Programmen und Plänen kann eine Liste mit Zielvorgaben angegeben werden. Es handelt sich hierbei um quantifizierte, zu erreichende Werte. Am Ende der Kampagne, des Programms oder des Plans ermöglicht das MRM-Modul den Vergleich zwischen Zielvorgaben und Resultaten in dedizierten Berichten.
 
 * **Versandentwurf**
 
-   Ein Versandentwurf ist eine strukturierte Beschreibung eines Versands. Jeder Versand kann einen Entwurf referenzieren, der zum Beispiel passende Angebote, anzuhängende Dokumente oder Links zu Verkaufsstellen enthält. Entsprechend dem ausgewählten Versandentwurf werden die jeweiligen enthaltenen Angebote im Versand verzeichnet.
+  Ein Versandentwurf ist eine strukturierte Beschreibung eines Versands. Jeder Versand kann einen Entwurf referenzieren, der zum Beispiel passende Angebote, anzuhängende Dokumente oder Links zu Verkaufsstellen enthält. Entsprechend dem ausgewählten Versandentwurf werden die jeweiligen enthaltenen Angebote im Versand verzeichnet.
 
-   Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
+  Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
 
 ## Anleitungsvideo {#video}
 

@@ -68,16 +68,16 @@ Nachdem die Konfiguration geändert wurde, müssen Sie:
 * Beenden Sie den Webserver, der das Weiterleitungsmodul hostet (Apache, IIS usw.),
 * Beenden Sie den Adobe Campaign-Server: **net stop nlserver6** unter Windows: **/etc/init.d/nlserver6 stop** unter Linux:
 
-   >[!NOTE]
-   >
-   >Ab Version 20.1 wird empfohlen, stattdessen den folgenden Befehl zu verwenden (für Linux): **systemctl stop nlserver**
+  >[!NOTE]
+  >
+  >Ab Version 20.1 wird empfohlen, stattdessen den folgenden Befehl zu verwenden (für Linux): **systemctl stop nlserver**
 
 * Löschen Sie unter Linux die freigegebenen Speichersegmente mithilfe der **ipcrm** Befehl,
 * Starten Sie den Adobe Campaign-Server neu: **net start nlserver6** unter Windows: **/etc/init.d/nlserver6 start** unter Linux:
 
-   >[!NOTE]
-   >
-   >Ab 20.1 wird empfohlen, stattdessen den folgenden Befehl zu verwenden (für Linux): **systemctl Beginn nlserver**
+  >[!NOTE]
+  >
+  >Ab 20.1 wird empfohlen, stattdessen den folgenden Befehl zu verwenden (für Linux): **systemctl Beginn nlserver**
 
 * Starten Sie den Webserver neu.
 

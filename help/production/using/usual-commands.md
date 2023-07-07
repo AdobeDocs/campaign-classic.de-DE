@@ -33,7 +33,6 @@ Der Parameter **`<command>`** dem Modul entspricht.
 >* Umgekehrt können Sie das -Argument hinzufügen **-verbose** um weitere Informationen anzuzeigen.
 >
 
-
 ## Überwachen von Befehlen {#monitoring-commands-}
 
 >[!NOTE]
@@ -100,25 +99,25 @@ Um Adobe Campaign-Dienste zu beenden, verwenden Sie einen der folgenden Befehle:
 
    * Unter Linux:
 
-      ```
-      /etc/init.d/nlserver6 stop
-      ```
+     ```
+     /etc/init.d/nlserver6 stop
+     ```
 
-      >[!NOTE]
-      >
-      >Ab Version 20.1 wird empfohlen, stattdessen den folgenden Befehl zu verwenden (für Linux): **systemctl stop nlserver**
+     >[!NOTE]
+     >
+     >Ab Version 20.1 wird empfohlen, stattdessen den folgenden Befehl zu verwenden (für Linux): **systemctl stop nlserver**
 
    * Windows:
 
-      ```
-      net stop nlserver6
-      ```
+     ```
+     net stop nlserver6
+     ```
 
 * Wenn nicht, dann im Adobe Campaign-Konto:
 
-   ```
-   nlserver shutdown 
-   ```
+  ```
+  nlserver shutdown 
+  ```
 
 ## Dienste wieder starten {#restart-services}
 
@@ -128,9 +127,9 @@ Ebenso können Sie zum Neustart von Adobe Campaign einen der folgenden Befehle v
 
    * Unter Linux: /etc/init.d/nlserver6 start
 
-      >[!NOTE]
-      >
-      >Ab 20.1 wird empfohlen, stattdessen den folgenden Befehl zu verwenden (für Linux): **systemctl Beginn nlserver**
+     >[!NOTE]
+     >
+     >Ab 20.1 wird empfohlen, stattdessen den folgenden Befehl zu verwenden (für Linux): **systemctl Beginn nlserver**
 
    * Windows: net start nlserver6
 
@@ -165,3 +164,4 @@ So ändern Sie die **intern** password: **nlserver config -internalpassword**
 >* Bei einer Oracle-Datenbank darf das Konto nicht angegeben werden. Die Syntax lautet wie folgt:
 >
 >  nlserver config -setdblogin:Oracle:test6@dbserver
+>

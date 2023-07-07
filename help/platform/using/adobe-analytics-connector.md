@@ -8,7 +8,7 @@ role: User, Admin
 level: Beginner
 exl-id: 0dc6ce98-dc3e-4242-953e-e7cec55289ff
 source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1711'
 ht-degree: 100%
 
@@ -27,7 +27,6 @@ Der Adobe Analytics-Connector ermöglicht die Interaktion von Adobe Campaign und
 >* Adobe Analytics-Connector ist nicht kompatibel mit Transaktionsnachrichten (Message Center).
 >
 >* Stellen Sie vor dem Beginn sicher, dass das Adobe Identity Management System (IMS) in Campaign implementiert ist. [Weiterführende Informationen finden Sie auf dieser Seite](../../integrations/using/about-adobe-id.md).
-
 
 Der Adobe Analytics-Connector ermöglicht es Adobe Campaign, Messungen zur Internet-Zielgruppe (Web Analytics) anzustellen. Dank dieser Integrationen kann Adobe Campaign Daten über das Besucherverhalten für eine oder mehrere Websites nach einer Marketing-Kampagne wiederherstellen und (nach der Analyse) Remarketing-Kampagnen mit dem Ziel durchführen, sie in Käufer zu konvertieren. Umgekehrt ermöglichen die Web-Analyse-Tools von Adobe Campaign die Weiterleitung von Indikatoren und Kampagnenattributen an ihre Plattformen.
 
@@ -227,9 +226,9 @@ Sie finden diese im Navigationsbaum von Adobe Campaign unter dem Ordner **[!UICO
 * **[!UICONTROL Identifizierung der konvertierten Kontakte]**: Dieser Workflow erfasst die Besucher, die nach einer Remarketing-Kampagne einen Kauf getätigt haben. Die durch diesen Workflow abgerufenen Daten stehen im Bericht **[!UICONTROL Remarketing-Effizienz]** zur Verfügung. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](#creating-a-re-marketing-campaign).
 * **[!UICONTROL Übermittlung der Kampagnen-Indikatoren und -Attribute]**: sendet die Kampagnen-Indikatoren über Adobe Campaign mithilfe des Adobe Analytics-Connectors an Adobe Experience Cloud. Dieser Workflow wird jeden Tag um 4 Uhr ausgelöst. Es kann 24 Stunden dauern, bis die Daten an Analytics gesendet werden.
 
-   Bitte beachten Sie, dass dieser Workflow nicht neu gestartet werden sollte, da sonst alle vorherigen Daten erneut gesendet werden, was die Analyseergebnisse verfälschen könnte.
+  Bitte beachten Sie, dass dieser Workflow nicht neu gestartet werden sollte, da sonst alle vorherigen Daten erneut gesendet werden, was die Analyseergebnisse verfälschen könnte.
 
-   Folgende Indikatoren werden übermittelt:
+  Folgende Indikatoren werden übermittelt:
 
    * **[!UICONTROL Zu sendende Nachrichten]** (@toDeliver)
    * **[!UICONTROL Verarbeitet]** (@processed)
@@ -242,11 +241,11 @@ Sie finden diese im Navigationsbaum von Adobe Campaign unter dem Ordner **[!UICO
    * **[!UICONTROL Abmeldung (Opt-out)]** (@optOut)
    * **[!UICONTROL Fehler]** (@error)
 
-   >[!NOTE]
-   >
-   >Die gesendete Daten sind die Differenz zur letzten Übermittlung, was zu einem negativen Wert in den Metrikdaten führen kann.
+  >[!NOTE]
+  >
+  >Die gesendete Daten sind die Differenz zur letzten Übermittlung, was zu einem negativen Wert in den Metrikdaten führen kann.
 
-   Folgende Attribute werden übermittelt:
+  Folgende Attribute werden übermittelt:
 
    * **[!UICONTROL Interner Name]** (@internalName)
    * **[!UICONTROL Titel]** (@label)
@@ -256,7 +255,6 @@ Sie finden diese im Navigationsbaum von Adobe Campaign unter dem Ordner **[!UICO
    * **[!UICONTROL Tag 2]** (webAnalytics/@tag2)
    * **[!UICONTROL Tag 3]** (webAnalytics/@tag3)
    * **[!UICONTROL Kontaktdatum]** (scheduling/@contactDate)
-
 
 ## Versandverfolgung in Adobe Campaign {#tracking-deliveries-in-adobe-campaign}
 

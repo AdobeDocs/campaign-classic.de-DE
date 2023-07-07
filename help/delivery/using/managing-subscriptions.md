@@ -7,7 +7,7 @@ badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Subscriptions
 exl-id: 16dddd4a-2e1a-4c78-8168-f656657bb9b8
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1155'
 ht-degree: 100%
 
@@ -54,9 +54,9 @@ Klicken Sie auf den Namen eines Dienstes, um ihn zu öffnen und zu bearbeiten, o
 
 * Geben Sie im Feld **[!UICONTROL Titel]** einen Namen für den neuen Dienst ein und wählen Sie den Versandkanal aus: E-Mail, Mobile, Facebook, Twitter oder Mobile App.
 
-   >[!NOTE]
-   >
-   >Facebook- und Twitter-Abonnements werden in [diesem Abschnitt](../../social/using/about-social-marketing.md) ausführlich beschrieben. Mobile App-Abonnements werden im Abschnitt [Über den Mobile-App-Kanal](about-mobile-app-channel.md) beschrieben.
+  >[!NOTE]
+  >
+  >Facebook- und Twitter-Abonnements werden in [diesem Abschnitt](../../social/using/about-social-marketing.md) ausführlich beschrieben. Mobile App-Abonnements werden im Abschnitt [Über den Mobile-App-Kanal](about-mobile-app-channel.md) beschrieben.
 
 * Bei Diensten vom Typ **E-Mail** haben Sie die Wahl zwischen zwei Modi: **[!UICONTROL Newsletter]** oder **[!UICONTROL Viral]**.
 * Sie haben die Möglichkeit, bei An- und Abmeldungen **Bestätigungsnachrichten** zu versenden. Wählen Sie in diesem Fall neben den Feldern **[!UICONTROL Anmeldung]** und **[!UICONTROL Abmeldung]** die jeweils zu verwendenden Versandvorlagen aus. Die Vorlagen müssen mit einem Zielgruppen-Mapping des Typs **[!UICONTROL Abonnements]** und ohne Angabe einer Zielgruppe konfiguriert werden. Siehe Abschnitt [Über den E-Mail-Kanal](about-email-channel.md).
@@ -125,22 +125,22 @@ Sie haben verschiedene Möglichkeiten, um einen Empfänger für einen Dienst anz
 
 * Dienst manuell hinzufügen. Klicken Sie im Tab **[!UICONTROL Abonnements]** des Empfängerprofils auf **[!UICONTROL Hinzufügen]** und wählen Sie den gewünschten Dienst aus.
 
-   Lesen Sie diesbezüglich auch über die Bearbeitung von Empfängerprofilen in [diesem Abschnitt](../../platform/using/editing-a-profile.md).
+  Lesen Sie diesbezüglich auch über die Bearbeitung von Empfängerprofilen in [diesem Abschnitt](../../platform/using/editing-a-profile.md).
 
 * Gruppe von Empfängern gebündelt für einen Dienst anmelden. Bei den Empfängern kann es sich beispielsweise um eine bestehende Gruppe, das Ergebnis einer Filterung bzw. eines Imports oder um in einem bestimmten Ordner enthaltene Profile handeln. Markieren Sie die Empfänger, klicken Sie mit der rechten Maustaste und wählen Sie **[!UICONTROL Aktionen > Auswahl für einen Dienst anmelden...]**. Markieren Sie den gewünschten Dienst und starten Sie den Vorgang.
 * Empfänger im Zuge eines Imports für einen Dienst anmelden. Geben Sie im letzten Schritt des Import-Assistenten den gewünschten Dienst an.
 
-   Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../platform/using/executing-import-jobs.md).
+  Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../platform/using/executing-import-jobs.md).
 
 * Empfänger melden sich persönlich über ein Webformular an.
 
-   Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../web/using/about-web-applications.md).
+  Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../web/using/about-web-applications.md).
 
 * Empfänger unter Verwendung eines Workflows mit der Aktivität **[!UICONTROL Abonnements]** anmelden.
 
-   ![](assets/s_ncs_user_subscribe_from_wf.png)
+  ![](assets/s_ncs_user_subscribe_from_wf.png)
 
-   Workflows und ihre Verwendung in Formularen werden in [diesem Abschnitt](../../workflow/using/about-workflows.md) beschrieben.
+  Workflows und ihre Verwendung in Formularen werden in [diesem Abschnitt](../../workflow/using/about-workflows.md) beschrieben.
 
 ### Empfänger von einem Service abmelden {#unsubscribing-a-recipient-from-a-service}
 

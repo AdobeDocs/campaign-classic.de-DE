@@ -7,7 +7,7 @@ badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Web Apps
 exl-id: 07bd36ce-c701-4998-974f-81fd4fac22a0
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 100%
 
@@ -26,19 +26,19 @@ Die wichtigsten Verbesserungen in dieser Version sind:
 * Möglichkeit, mehrere Trackingtags auf derselben Seite einzufügen, um die Definition des Navigationspfads zu vereinfachen (z. B. Bestellung, Abonnement, Rückgabe)
 * Ansicht der Navigationspfade und Trackingtags auf den unterschiedlichen Seiten im Webanwendungs-Dashboard.
 
-   ![](assets/trackers_1.png)
+  ![](assets/trackers_1.png)
 
 * Erstellen eines vollständigen Tracking-Berichts
 
-   ![](assets/trackers_5.png)
+  ![](assets/trackers_5.png)
 
-   Die wichtigsten Indikatoren sind:
+  Die wichtigsten Indikatoren sind:
 
    * **Konvertierungsrate**: Anzahl der Personen, die alle Schritte eines Vorgangs durchlaufen haben.
    * **Bounce-Rate**: Anzahl der Personen, für die nur der erste Schritt angezeigt wurde.
    * **Konversionstrichter**: Verlustrate von einem Schritt zum nächsten.
 
-   Zusätzlich wird in einer **Sektorgrafik** die Population entsprechend ihrer Herkunft dargestellt.
+  Zusätzlich wird in einer **Sektorgrafik** die Population entsprechend ihrer Herkunft dargestellt.
 
 ## Traffic-Herkunft identifizieren {#identifying-the-traffic-source}
 

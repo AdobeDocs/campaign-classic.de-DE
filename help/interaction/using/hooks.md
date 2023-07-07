@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: advanced-parameters
 exl-id: e1d7d7c2-61e7-40d6-a8ce-69bc976f8c73
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '523'
 ht-degree: 100%
 
@@ -73,18 +73,18 @@ Der Anschlussvorgang wird nach Anwendung der Typologieregeln und der Sortierung 
 
 * aProposition: Tabelle der infrage kommenden Vorschläge. Ein Element dieser Tabelle weist folgende Struktur auf:
 
-   ```
-   { offer_id:1234,
-     weight:2}
-   ```
+  ```
+  { offer_id:1234,
+    weight:2}
+  ```
 
 * dicOffer (XML): Zusammenstellung aller Attribute der geeigneten Angebote (Angebotscode, Kategoriekennung, vollständiger Titel der Kategorie, Startdatum, Enddatum, Titel, interner Name, Angebotskennung, Zusatzfelder des Angebots). Beispiel:
 
 
-   ```
-   { "1242": <offer category-id="61242" categoryFullName="/FULL/PATH/TO/CATEGORY/" code="CODE" endDate="" id="62473" label="LABEL" name="OFR38_OE4" product-id="43" startDate=""/>,
-     "1243": ...}
-   ```
+  ```
+  { "1242": <offer category-id="61242" categoryFullName="/FULL/PATH/TO/CATEGORY/" code="CODE" endDate="" id="62473" label="LABEL" name="OFR38_OE4" product-id="43" startDate=""/>,
+    "1243": ...}
+  ```
 
 * xmlTarget (XML): Knoten der Profildaten;
 * xmlInteraction (XML): Knoten der Aufrufdaten.

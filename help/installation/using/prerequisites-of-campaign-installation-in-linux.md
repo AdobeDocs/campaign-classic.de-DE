@@ -44,33 +44,33 @@ Um Adobe Campaign unter Linux zu installieren, stellen Sie bitte sicher, dass Si
 
 * Bibliothek C muss den TLS-Modus (Thread Local Storage) unterstützen können. Dieser Modus ist in den meisten Fällen aktiv, mit Ausnahme einiger Kernels, für die die Xen-Unterstützung deaktiviert wurde.
 
-   Um dies zu überprüfen, können Sie die **uname -a | grep xen** -Befehl.
+  Um dies zu überprüfen, können Sie die **uname -a | grep xen** -Befehl.
 
-   Wenn der Befehl nichts zurückgibt (leere Zeile), bedeutet dies, dass die Konfiguration korrekt ist.
+  Wenn der Befehl nichts zurückgibt (leere Zeile), bedeutet dies, dass die Konfiguration korrekt ist.
 
 * Sie müssen über die OpenSSL-Version verfügen. **1,0,2** oder höher.
 
-   Für RHEL 7/8-Distributionen ist Version 1.0 von OpenSSL erforderlich.
+  Für RHEL 7/8-Distributionen ist Version 1.0 von OpenSSL erforderlich.
 
 * Für die Verwendung von Adobe Campaign benötigen Sie die **libicu** Bibliothek installiert.
 
-   Die folgenden Versionen von **libicu** werden unterstützt (32 Bit oder 64 Bit):
+  Die folgenden Versionen von **libicu** werden unterstützt (32 Bit oder 64 Bit):
 
    * RHEL 7/8, CentOS 7: libicu50
    * Debian 8: libicu52
    * Debian 9: libicu57
 
-   Um Adobe Campaign zu verwenden, müssen Sie die Bibliothek libc-ares installiert haben. Führen Sie unter RHEL/CentOS den folgenden Befehl aus:
+  Um Adobe Campaign zu verwenden, müssen Sie die Bibliothek libc-ares installiert haben. Führen Sie unter RHEL/CentOS den folgenden Befehl aus:
 
-   ```
-   yum install c-ares
-   ```
+  ```
+  yum install c-ares
+  ```
 
-   Unter Debian:
+  Unter Debian:
 
-   ```
-   aptitude install libc-ares2
-   ```
+  ```
+  aptitude install libc-ares2
+  ```
 
 ### SELinux {#selinux}
 
@@ -114,15 +114,15 @@ Verwenden Sie in Redhat den folgenden Befehl:
 
 * Für CentOS/RHEL 7:
 
-   ```
-   yum install xorg-x11-fonts-base xorg-x11-fonts-75dpi bitstream-vera-fonts dejavu-lgc-fonts
-   ```
+  ```
+  yum install xorg-x11-fonts-base xorg-x11-fonts-75dpi bitstream-vera-fonts dejavu-lgc-fonts
+  ```
 
 * Für RHEL 8:
 
-   ```
-   dnf install xorg-x11-fonts-misc xorg-x11-fonts-75dpi dejavu-lgc-sans-fonts  dejavu-sans-fonts dejavu-sans-mono-fonts dejavu-serif-fonts
-   ```
+  ```
+  dnf install xorg-x11-fonts-misc xorg-x11-fonts-75dpi dejavu-lgc-sans-fonts  dejavu-sans-fonts dejavu-sans-mono-fonts dejavu-serif-fonts
+  ```
 
 ### Schriftarten für japanische Instanzen {#fonts-for-japanese-instances}
 
@@ -138,15 +138,15 @@ Fügen Sie in Red Hat den Befehl hinzu:
 
 * RHEL 7:
 
-   ```
-   yum install ipa-gothic-fonts ipa-mincho-fonts
-   ```
+  ```
+  yum install ipa-gothic-fonts ipa-mincho-fonts
+  ```
 
 * Für RHEL 8:
 
-   ```
-   dnf install vlgothic-fonts
-   ```
+  ```
+  dnf install vlgothic-fonts
+  ```
 
 ### Installieren von LibreOffice für Debian {#installing-libreoffice-for-debian}
 

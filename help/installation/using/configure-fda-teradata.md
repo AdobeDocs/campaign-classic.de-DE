@@ -40,26 +40,26 @@ Sie müssen Treiber installieren, damit Teradata die Verbindung zu Campaign hers
 
    * **/etc/odbc.ini**
 
-      ```
-      [ODBC]
-      InstallDir=/etc/
-      ```
+     ```
+     [ODBC]
+     InstallDir=/etc/
+     ```
 
-      &quot;InstallDir&quot; entspricht dem Pfad der Datei **odbcinst.ini**.
+     &quot;InstallDir&quot; entspricht dem Pfad der Datei **odbcinst.ini**.
 
    * **/etc/odbcinst.ini**
 
-      ```
-      [ODBC DRIVERS]
-      teradata=Installed
-      
-      [teradata]
-      Driver=/opt/teradata/client/17.10/lib64/tdataodbc_sb64.so
-      APILevel=CORE
-      ConnectFunctions=YYY
-      DriverODBCVer=3.51
-      SQLLevel=1
-      ```
+     ```
+     [ODBC DRIVERS]
+     teradata=Installed
+     
+     [teradata]
+     Driver=/opt/teradata/client/17.10/lib64/tdataodbc_sb64.so
+     APILevel=CORE
+     ConnectFunctions=YYY
+     DriverODBCVer=3.51
+     SQLLevel=1
+     ```
 
 1. Spezifizieren Sie die Umgebungsvariablen des Adobe Campaign-Servers:
 
@@ -70,6 +70,7 @@ Sie müssen Treiber installieren, damit Teradata die Verbindung zu Campaign hers
 >[!NOTE]
 >
 >Die Verbindung zu einer externen Teradata-Datenbank über die FDA-Option erfordert zusätzliche Konfigurationsschritte auf dem Adobe Campaign-Server. [Weitere Informationen](#teradata-additional-configurations).
+>
 
 ## Externes Teradata-Konto{#teradata-external}
 

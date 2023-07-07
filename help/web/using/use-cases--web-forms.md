@@ -7,7 +7,7 @@ badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Web Forms
 exl-id: 7aa4646d-1325-47c2-b553-6fe375c48973
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '992'
 ht-degree: 100%
 
@@ -184,7 +184,7 @@ Die Anmeldung zum Newsletter beinhaltet die folgenden Schritte:
    * Es befindet sich nicht mehr auf der Blockierungsliste
    * und wurde zum Informationsdienst angemeldet.
 
-      ![](assets/s_ncs_admin_survey_double-opt-in_sample_9.png)
+     ![](assets/s_ncs_admin_survey_double-opt-in_sample_9.png)
 
 ## Je nach den ausgewählten Werten unterschiedliche Optionen anzeigen {#displaying-different-options-depending-on-the-selected-values}
 
@@ -194,11 +194,11 @@ Im folgenden Beispiel wird der Benutzer gebeten, einen Fahrzeugtyp auszuwählen.
 
 * Wenn der Benutzer &quot;Personenfahrzeug&quot; auswählt, werden die Kategorien &quot;Kompakt&quot; und &quot;Minivan&quot; angezeigt.
 
-   ![](assets/s_ncs_admin_survey_condition_sample2.png)
+  ![](assets/s_ncs_admin_survey_condition_sample2.png)
 
 * Wenn der Benutzer &quot;Nutzfahrzeug&quot; auswählt, wird in einer Dropdown-Liste eine Auswahl angeboten.
 
-   ![](assets/s_ncs_admin_survey_condition_sample1.png)
+  ![](assets/s_ncs_admin_survey_condition_sample1.png)
 
 In diesem Beispiel wird der Fahrzeugtyp nicht in der Datenbank gespeichert. Die Dropdown-Liste wird wie folgt konfiguriert:
 
@@ -212,8 +212,8 @@ Die bedingte Anzeige in der rechten Spalte wird in Containern konfiguriert:
 
 * Bedingte Sichtbarkeit der Felder für ein Personenfahrzeug:
 
-   ![](assets/s_ncs_admin_survey_condition_config2.png)
+  ![](assets/s_ncs_admin_survey_condition_config2.png)
 
 * Bedingte Sichtbarkeit der Felder für ein Nutzfahrzeug:
 
-   ![](assets/s_ncs_admin_survey_condition_config3.png)
+  ![](assets/s_ncs_admin_survey_condition_config3.png)

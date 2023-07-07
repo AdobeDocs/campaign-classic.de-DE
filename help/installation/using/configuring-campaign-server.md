@@ -95,35 +95,35 @@ Es gibt zwei Arten von Prozessen: mehrere Instanzen und eine einzelne Instanz.
 
 * **mehrere Instanzen**: Ein einzelner Prozess wird für alle Instanzen gestartet. Dies gilt für **Web**, **syslogd** und **trackinglogd** Prozesse.
 
-   Die Aktivierung kann über das Menü **config-default.xml** -Datei.
+  Die Aktivierung kann über das Menü **config-default.xml** -Datei.
 
-   Deklarieren eines Adobe Campaign-Servers für den Zugriff auf Clientkonsolen und für die Weiterleitung (Tracking):
+  Deklarieren eines Adobe Campaign-Servers für den Zugriff auf Clientkonsolen und für die Weiterleitung (Tracking):
 
-   ```
-   vi nl6/conf/config-default.xml
-   <web args="-tomcat" autoStart="true"/>  
-   <!-- to start if the machine is also a redirection server -->  
-   <trackinglogd autoStart="true"/>
-   ```
+  ```
+  vi nl6/conf/config-default.xml
+  <web args="-tomcat" autoStart="true"/>  
+  <!-- to start if the machine is also a redirection server -->  
+  <trackinglogd autoStart="true"/>
+  ```
 
-   In diesem Beispiel wird die Datei mit einer **vi** -Befehl in Linux. Er kann mit einer beliebigen **.txt** oder **.xml** Editor.
+  In diesem Beispiel wird die Datei mit einer **vi** -Befehl in Linux. Er kann mit einer beliebigen **.txt** oder **.xml** Editor.
 
 * **Mono-Instanz**: Für jede Instanz wird ein Prozess gestartet (Module: **mta**, **wfserver**, **inMail**, **sms** und **stat**).
 
-   Die Aktivierung kann mithilfe der Konfigurationsdatei der Instanz konfiguriert werden:
+  Die Aktivierung kann mithilfe der Konfigurationsdatei der Instanz konfiguriert werden:
 
-   ```
-   config-<instance>.xml
-   ```
+  ```
+  config-<instance>.xml
+  ```
 
-   Deklarieren eines Servers für den Versand, Ausführen von Workflow-Instanzen und Wiederherstellen von Bounce Messages:
+  Deklarieren eines Servers für den Versand, Ausführen von Workflow-Instanzen und Wiederherstellen von Bounce Messages:
 
-   ```
-   <mta autoStart="true" statServerAddress="localhost"/>
-   <wfserver autoStart="true"/>  
-   <inMail autoStart="true"/>
-   <stat autoStart="true"/>
-   ```
+  ```
+  <mta autoStart="true" statServerAddress="localhost"/>
+  <wfserver autoStart="true"/>  
+  <inMail autoStart="true"/>
+  <stat autoStart="true"/>
+  ```
 
 **Datenspeicherung in Campaign**
 
@@ -131,13 +131,13 @@ Sie können den Speicherordner konfigurieren (**var** Verzeichnis) von Adobe Cam
 
 * Geben Sie unter Windows den folgenden Wert in der **XTK_VAR_DIR** Systemvariable
 
-   ```
-   D:\log\AdobeCampaign
-   ```
+  ```
+  D:\log\AdobeCampaign
+  ```
 
 * Navigieren Sie unter Linux zum **customer.sh** und geben Sie an: **export XTK_VAR_DIR=/app/log/AdobeCampaign**.
 
-   Weitere Informationen hierzu finden Sie unter [Parameter personalisieren](../../installation/using/installing-packages-with-linux.md#personalizing-parameters).
+  Weitere Informationen hierzu finden Sie unter [Parameter personalisieren](../../installation/using/installing-packages-with-linux.md#personalizing-parameters).
 
 
 ## Dynamische Seitensicherheit und Relais {#dynamic-page-security-and-relays}

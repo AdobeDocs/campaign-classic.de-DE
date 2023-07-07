@@ -16,7 +16,7 @@ ht-degree: 32%
 
 Das konzeptionelle Datenmodell der Adobe Campaign-Datenbank besteht aus einer Reihe integrierter Tabellen und deren Interaktion. Die wichtigsten Tabellen und Konzepte sind auf dieser Seite aufgeführt.
 
-## Überblick {#data-model-overview}
+## Übersicht {#data-model-overview}
 
 Adobe Campaign stützt sich auf eine relationale Datenbank mit Tabellen, die miteinander verknüpft sind. Die Grundstruktur des Adobe Campaign-Datenmodells lässt sich wie folgt beschreiben.
 
@@ -112,7 +112,7 @@ Weitere Informationen zum Campaign-Datenmodell finden Sie in diesen Abschnitten:
 
 * **Vollständige Beschreibung der einzelnen Tabellen** - Rufen Sie die vollständige Beschreibung jeder Tabelle auf, indem Sie **[!UICONTROL Admin > Konfiguration > Datenschemata]**, wählen Sie eine Ressource aus der Liste aus und klicken Sie auf die **[!UICONTROL Dokumentation]** Registerkarte.
 
-   ![](assets/data-model_documentation-tab.png)
+  ![](assets/data-model_documentation-tab.png)
 
 
 * **Kampagnenschemata** - Die physische und logische Struktur der in der Anwendung übertragenen Daten wird in XML beschrieben. Sie folgt einer Adobe Campaign-spezifischen Grammatik namens „Schema“. Weitere Informationen zu Adobe Campaign-Schemata finden Sie im Abschnitt [diesem Abschnitt](../../configuration/using/about-schema-reference.md).

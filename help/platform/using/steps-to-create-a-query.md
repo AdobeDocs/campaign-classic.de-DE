@@ -9,7 +9,7 @@ content-type: reference
 topic-tags: creating-queries
 exl-id: cf914366-8bac-4d68-a0cc-2a43d102eef2
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '928'
 ht-degree: 100%
 
@@ -57,7 +57,7 @@ Die Daten der Ausgabespalten können gruppiert werden. Wählen Sie hierfür im F
 
 * Die Funktion **[!UICONTROL Gruppierungen verwalten (GROUP BY + HAVING)]** erlaubt sowohl die Gruppierung (&quot;group by&quot;) als auch die Filterung der Daten, die gruppiert wurden (&quot;having&quot;). Sie wird auf die Ausgabespalten angewendet. Beispielsweise können die Empfänger nach Altersklassen gruppiert und nur die Klasse 35 bis 50 Jahre angezeigt werden.
 
-   Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../workflow/using/querying-using-grouping-management.md).
+  Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../workflow/using/querying-using-grouping-management.md).
 
 * Die Funktion **[!UICONTROL Dubletten löschen (DISTINCT)]** dedupliziert die Daten in den Ausgabespalten, d. h. doppelte Einträge werden nicht angezeigt. Sollen z. B. Nachname, Vorname und E-Mail-Adresse der Empfänger angezeigt werden, wird für mehrere Datensätze mit identischem Nachnamen, Vornamen und E-Mail-Adresse nur ein Datensatz angezeigt.
 
@@ -85,13 +85,13 @@ Nach Auswahl der **[!UICONTROL Filterbedingungen]** gelangen Sie zum Abschnitt *
 * Um einen neuen Filter zu erstellen, wählen Sie die Felder, Operatoren und Werte aus, die für die Erstellung der zu verifizierenden Formel erforderlich sind, sodass Daten ausgewählt werden können. Es ist möglich, mehrere Bedingungen zu kombinieren (Weitere Informationen hierzu finden Sie unter [Filterbedingungen definieren](../../platform/using/defining-filter-conditions.md)).
 * Sie haben auch die Möglichkeit, zuvor erstellte Filter zu verwenden. Öffnen Sie die Dropdown-Liste der Schaltfläche **[!UICONTROL Hinzufügen]**, klicken Sie auf **[!UICONTROL Vordefinierter Filter]** und wählen Sie den gewünschten Filter aus.
 
-   ![](assets/query_editor_15.png)
+  ![](assets/query_editor_15.png)
 
 * Die im **[!UICONTROL Generischen Abfragetool]** erstellten Filter können in anderen Abfragen der Anwendung verwendet werden (und umgekehrt). Klicken Sie hierzu auf das Symbol **[!UICONTROL Speichern]**.
 
-   >[!NOTE]
-   >
-   >Die Erstellung und Verwendung von Filtern wird im Kapitel [Filteroptionen](../../platform/using/filtering-options.md) erläutert.
+  >[!NOTE]
+  >
+  >Die Erstellung und Verwendung von Filtern wird im Kapitel [Filteroptionen](../../platform/using/filtering-options.md) erläutert.
 
 In unten stehendem Beispiel sollen nur deutschsprachige Empfänger ausgewählt werden. Erstellen Sie also die Bedingung: Sprache **gleich** Deutsch.
 

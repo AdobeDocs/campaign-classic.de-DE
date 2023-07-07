@@ -7,7 +7,7 @@ badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Surveys
 exl-id: bd94c41a-813a-4ddb-a2bd-c3deab022482
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '623'
 ht-degree: 100%
 
@@ -75,17 +75,18 @@ Um den Freunde-Werben-Bereich zu konfigurieren und zu erstellen, gehen Sie folge
 
    * Wählen Sie die Besuchertabelle als Zielgruppen-Mapping aus.
 
-      ![](assets/s_ncs_admin_survey_viral_sample_7b.png)
+     ![](assets/s_ncs_admin_survey_viral_sample_7b.png)
 
    * Die Kontaktinformationen des Angeworbenen sowie die Informationen des Werbers werden der Besuchertabelle entnommen. Diese Informationen werden über die Personalisierungs-Schaltfläche eingefügt.
 
-      ![](assets/s_ncs_admin_survey_viral_sample_7a.png)
+     ![](assets/s_ncs_admin_survey_viral_sample_7a.png)
 
    * Diese Vorlage enthält einen Link zum Gewinnspielformular und den Abonnementlink, über den der Angeworbene einen Newsletter abonnieren kann.
 
-      Der Abonnementlink wird über einen Gestaltungsbaustein eingefügt. Standardmäßig können Profile für den **Newsletter**-Dienst angemeldet werden. Dieser Gestaltungsbaustein kann entsprechend Ihren Anforderungen angepasst werden, sodass Sie den Empfänger auch für einen anderen Dienst anmelden können.
+     Der Abonnementlink wird über einen Gestaltungsbaustein eingefügt. Standardmäßig können Profile für den **Newsletter**-Dienst angemeldet werden. Dieser Gestaltungsbaustein kann entsprechend Ihren Anforderungen angepasst werden, sodass Sie den Empfänger auch für einen anderen Dienst anmelden können.
 
    * Der interne Name (hier &quot;referrer&quot;) wird im Nachrichtenversand-Skript wie unten dargestellt verwendet.
+
    >[!NOTE]
    >
    >Weiterführende Informationen zu Versandvorlagen finden Sie auf [dieser Seite](../../delivery/using/about-templates.md).

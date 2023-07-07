@@ -6,7 +6,7 @@ badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classi
 feature: Microsoft CRM Integration
 exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1136'
 ht-degree: 100%
 
@@ -48,7 +48,6 @@ In Campaign Classic:
 > Bei der Verbindung von Adobe Campaign mit Microsoft Dynamics können Sie Folgendes nicht tun:
 > * Plugins installieren, die das Verhalten des CRM verändern; dadurch könnte es zu Kompatibilitätsproblemen mit Adobe Campaign kommen
 > * Mehrere Auflistungen auswählen
-
 
 ## Microsoft Dynamics CRM konfigurieren {#config-crm-microsoft}
 
@@ -146,6 +145,7 @@ Der Anwendungsbenutzer ist derjenige Benutzer, den die oben registrierte Anwendu
    >[!NOTE]
    >
    >Sollten Sie denselben Namen verwenden, wird der Fehler für doppelte Schlüssel ausgegeben. Nutzen Sie daher einen anderen Benutzernamen und fahren Sie fort, bis Sie eine Bestätigung erhalten haben, ob dieser Schritt erforderlich ist.
+   >
 
 1. Weisen Sie die **Anwendungs-ID** für [die zuvor erstellte Anwendung zu](#get-client-id-microsoft).
 1. Klicken Sie auf **Rollen verwalten** und wählen Sie den Benutzer die Rolle **Systemadministrator** für aus.

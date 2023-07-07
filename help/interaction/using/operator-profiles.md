@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: managing-environments
 exl-id: e11fb28c-d530-45a2-862a-ff1c20975577
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 100%
 
@@ -42,9 +42,9 @@ Die dem Angebotsverantwortlichen zugewiesenen Berechtigungen erlauben ihm folgen
 * Konfiguration von Angebotseignungen;
 * Validierung von Angeboten.
 
-   >[!NOTE]
-   >
-   >Der Angebotsverantwortliche kann ein Angebot nur in zwei bestimmten Fällen validieren. Der erste Fall liegt vor, wenn keine konkrete Person zur Validierung angegeben wurde. Der zweite Fall liegt vor, wenn der Benutzer, der für die Erstellung von Vorlagen zuständig ist (und das Recht zur Zuweisung von Validierern hat), diese Person in der Angebotsvorlage, auf der das Angebot basiert, als Validierer angegeben hat.
+  >[!NOTE]
+  >
+  >Der Angebotsverantwortliche kann ein Angebot nur in zwei bestimmten Fällen validieren. Der erste Fall liegt vor, wenn keine konkrete Person zur Validierung angegeben wurde. Der zweite Fall liegt vor, wenn der Benutzer, der für die Erstellung von Vorlagen zuständig ist (und das Recht zur Zuweisung von Validierern hat), diese Person in der Angebotsvorlage, auf der das Angebot basiert, als Validierer angegeben hat.
 
 ## Versandverantwortliche Benutzer {#delivery-manager}
 
@@ -59,9 +59,9 @@ Die den Versandverantwortlichen zugewiesenen Berechtigungen erlauben ihnen folge
 * Anzeige und Änderung von Angebotskategorien;
 * Validierung von Angeboten, wenn dieser Versandverantwortliche als Validierer bezeichnet wurde.
 
-   >[!NOTE]
-   >
-   >Der Versandverantwortliche kann nur Angebote validieren, für die er bei deren Konfiguration als Validierer bezeichnet wurde.
+  >[!NOTE]
+  >
+  >Der Versandverantwortliche kann nur Angebote validieren, für die er bei deren Konfiguration als Validierer bezeichnet wurde.
 
 ## Zusammenfassende Darstellung der Rechte nach Benutzertyp {#recap-of-rights-according-to-operator}
 

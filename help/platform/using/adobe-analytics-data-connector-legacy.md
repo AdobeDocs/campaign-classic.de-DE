@@ -9,7 +9,7 @@ exl-id: 5bd12f65-f468-41ab-bbae-e59a6592a803
 hidefromtoc: true
 hide: true
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1811'
 ht-degree: 100%
 
@@ -201,9 +201,9 @@ Auf diese Workflows kann im Adobe-Campaign-Navigationsbaum über den Knoten **[!
 * **[!UICONTROL Identifizierung der konvertierten Kontakte]**: Dieser Workflow erfasst die Besucher, die nach einer Remarketing-Kampagne einen Kauf getätigt haben. Die durch diesen Workflow abgerufenen Daten stehen im Bericht **[!UICONTROL Remarketing-Effizienz]** zur Verfügung. Weitere Informationen hierzu finden Sie auf dieser [Seite](#creating-a-re-marketing-campaign).
 * **[!UICONTROL Übermittlung der Kampagnen-Indikatoren und -Attribute]**: Dieser Workflow sendet die in Adobe Campaign enthaltenen Indikatoren aus E-Mail-Kampagnen über den Adobe Analytics Data Connector an Adobe Experience Cloud. Dieser Workflow wird jeden Tag um 4 Uhr ausgelöst. Es kann 24 Stunden dauern, bis die Daten an Analytics gesendet werden.
 
-   Bitte beachten Sie, dass dieser Workflow nicht neu gestartet werden sollte, da sonst alle vorherigen Daten erneut gesendet werden, was die Analyseergebnisse verfälschen könnte.
+  Bitte beachten Sie, dass dieser Workflow nicht neu gestartet werden sollte, da sonst alle vorherigen Daten erneut gesendet werden, was die Analyseergebnisse verfälschen könnte.
 
-   Folgende Indikatoren werden übermittelt:
+  Folgende Indikatoren werden übermittelt:
 
    * **[!UICONTROL Zu sendende Nachrichten]** (@toDeliver)
    * **[!UICONTROL Verarbeitet]** (@processed)
@@ -216,11 +216,11 @@ Auf diese Workflows kann im Adobe-Campaign-Navigationsbaum über den Knoten **[!
    * **[!UICONTROL Abmeldung (Opt-out)]** (@optOut)
    * **[!UICONTROL Fehler]** (@error)
 
-   >[!NOTE]
-   >
-   >Die gesendete Daten sind die Differenz zur letzten Übermittlung, was zu einem negativen Wert in den Metrikdaten führen kann.
+  >[!NOTE]
+  >
+  >Die gesendete Daten sind die Differenz zur letzten Übermittlung, was zu einem negativen Wert in den Metrikdaten führen kann.
 
-   Folgende Attribute werden übermittelt:
+  Folgende Attribute werden übermittelt:
 
    * **[!UICONTROL Interner Name]** (@internalName)
    * **[!UICONTROL Titel]** (@label)
@@ -230,7 +230,6 @@ Auf diese Workflows kann im Adobe-Campaign-Navigationsbaum über den Knoten **[!
    * **[!UICONTROL Tag 2]** (webAnalytics/@tag2)
    * **[!UICONTROL Tag 3]** (webAnalytics/@tag3)
    * **[!UICONTROL Kontaktdatum]** (scheduling/@contactDate)
-
 
 ## Versandverfolgung in Adobe Campaign {#tracking-deliveries-in-adobe-campaign}
 

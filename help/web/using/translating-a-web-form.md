@@ -7,7 +7,7 @@ badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Web Forms
 exl-id: 72959141-ca18-4512-80c7-239efd31f711
 source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1660'
 ht-degree: 100%
 
@@ -114,16 +114,16 @@ Zeichenfolgen können exportiert und dann wieder importiert werden, um sie mit e
    * **[!UICONTROL Eine Datei je Sprache]**: Beim Export wird für jede Übersetzungssprache eine Datei erstellt. Diese Datei wird für alle ausgewählten Webanwendungen verwendet.
    * **[!UICONTROL Eine Datei je Webanwendung (nur CSV)]**: Beim Export wird für jede ausgewählte Webanwendung eine Datei erstellt. In jeder Datei sind alle Übersetzungssprachen enthalten.
 
-      >[!NOTE]
-      >
-      >Dieser Exporttyp ist nicht für XLIFF-Exporte verfügbar.
+     >[!NOTE]
+     >
+     >Dieser Exporttyp ist nicht für XLIFF-Exporte verfügbar.
 
    * **[!UICONTROL Eine Datei je Sprache und Webanwendung]**: Beim Export werden mehrere Dateien erzeugt. Jede Datei enthält eine einzige Sprache und wird nur für eine Webanwendung verwendet.
    * **[!UICONTROL Eine Datei für alles (nur CSV)]**: Beim Export wird eine einzige mehrsprachige Datei für alle Webanwendungen erzeugt. Sie enthält alle Sprachen für alle ausgewählten Webanwendungen.
 
-      >[!NOTE]
-      >
-      >Dieser Exporttyp ist nicht für XLIFF-Exporte verfügbar.
+     >[!NOTE]
+     >
+     >Dieser Exporttyp ist nicht für XLIFF-Exporte verfügbar.
 
 1. Wählen Sie dann den **[!UICONTROL Zielordner]**, in dem die Dateien gespeichert werden sollen.
 1. Wählen Sie das Dateiformat (**[!UICONTROL CSV]** oder **[!UICONTROL XLIFF]**) und danach **[!UICONTROL Start]** aus.

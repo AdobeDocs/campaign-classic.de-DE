@@ -8,7 +8,7 @@ hide: true
 hidefromtoc: true
 exl-id: 5f22fa2c-b648-4126-9a24-1798adfa8f34
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1578'
 ht-degree: 100%
 
@@ -89,11 +89,11 @@ Sie können
 
 * die am häufigsten vertretenen Werte abrufen:
 
-   Im oben stehenden Beispiel werden die am häufigsten vertretenen Werte angezeigt. Die übrigen Werte werden gezählt und unter dem Titel &#39;Sonstige&#39; zusammengefasst.
+  Im oben stehenden Beispiel werden die am häufigsten vertretenen Werte angezeigt. Die übrigen Werte werden gezählt und unter dem Titel &#39;Sonstige&#39; zusammengefasst.
 
 * Klassen in Form von Bereichen erzeugen:
 
-   Im oben stehenden Beispiel erstellt Adobe Campaign zur Anzeige der Datenbank-Werte automatisch vier Wertebereiche der gleichen Größe.
+  Im oben stehenden Beispiel erstellt Adobe Campaign zur Anzeige der Datenbank-Werte automatisch vier Wertebereiche der gleichen Größe.
 
 In diesem Fall wird der im Faktenschema gewählte Filter ignoriert.
 
@@ -153,9 +153,9 @@ Gehen Sie wie folgt vor, um ein neues Aggregat zu erstellen:
    * Die Aktivität **[!UICONTROL Planung]** ermöglicht es, die Aktualisierungshäufigkeit der Berechnungen zu bestimmen. Weiterführende Informationen zur Planung finden Sie in [diesem Abschnitt](../../workflow/using/scheduler.md).
    * Über die Aktivität **[!UICONTROL Aggregat-Update]** wird der anzuwendende Aktualisierungsmodus ausgewählt: vollständig oder teilweise.
 
-      Standardmäßig wird das Aggregat bei jeder Ausführung vollständig aktualisiert. Bei Auswahl der teilweisen Aktualisierung sind mithilfe des entsprechenden Links die Aktualisierungsbedingungen zu definieren.
+     Standardmäßig wird das Aggregat bei jeder Ausführung vollständig aktualisiert. Bei Auswahl der teilweisen Aktualisierung sind mithilfe des entsprechenden Links die Aktualisierungsbedingungen zu definieren.
 
-      ![](assets/s_advuser_cube_agregate_05.png)
+     ![](assets/s_advuser_cube_agregate_05.png)
 
 ## Definieren von Kennzahlen {#defining-measures}
 
@@ -203,7 +203,7 @@ Die Konfiguration der angezeigten Kennzahlen, Zeilen und Spalten kann für jede 
 
 * Klicken Sie auf das Symbol **[!UICONTROL Konfiguration der Pivot-Tabelle bearbeiten]**, um auf das Konfigurationsfenster für alle Kennzahlen zuzugreifen.
 
-   Sie können bestimmen, ob die Kennzahlen in Zeilen oder Spalten angezeigt und ob ihre Titel ein- oder ausgeblendet werden sollen.
+  Sie können bestimmen, ob die Kennzahlen in Zeilen oder Spalten angezeigt und ob ihre Titel ein- oder ausgeblendet werden sollen.
 
 ![](assets/s_advuser_cube_in_report_config_05.png)
 

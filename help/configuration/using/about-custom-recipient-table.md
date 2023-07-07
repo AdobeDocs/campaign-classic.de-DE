@@ -40,31 +40,31 @@ Die Verwendung einer benutzerdefinierten Empfängertabelle unterliegt folgenden 
 
 * Adobe Campaign unterstützt nicht mehrere Empfängerschemata, so genannte Zielgruppenschemas, die mit denselben Broadlog- und/oder Trackinglog-Schemata verknüpft sind. Dies kann andernfalls zu Anomalien bei der Datenabstimmung später führen.
 
-   Die nachstehende Abbildung zeigt die erforderliche relationale Struktur für jedes benutzerdefinierte Empfängerschema:
-   ![](assets/custom_recipient_limitation.png)
+  Die nachstehende Abbildung zeigt die erforderliche relationale Struktur für jedes benutzerdefinierte Empfängerschema:
+  ![](assets/custom_recipient_limitation.png)
 
-   Wir empfehlen:
+  Wir empfehlen:
 
    * Festlegen der **[!UICONTROL nms:BroadLogRcp]** und **[!UICONTROL nms:TrackingLogRcp]** Schemas zu den vordefinierten **[!UICONTROL nms:recipientSchema]**. Diese beiden Protokolltabellen sollten keiner zusätzlichen benutzerdefinierten Empfängertabelle zugeordnet werden.
    * Definieren dedizierter benutzerdefinierter Broadlog- und Trackinglog-Schemata für jedes neue benutzerdefinierte Empfängerschema. Dies kann automatisch bei der Einrichtung des Zielgruppen-Mappings erfolgen, siehe [Zielgruppen-Mapping](../../configuration/using/target-mapping.md).
 
 * Sie können den Standard nicht verwenden **[!UICONTROL Dienste und Abonnements]** in der Ware angeboten.
 
-   Dies bedeutet, dass die in [diesem Abschnitt](../../delivery/using/managing-subscriptions.md) nicht anwendbar ist.
+  Dies bedeutet, dass die in [diesem Abschnitt](../../delivery/using/managing-subscriptions.md) nicht anwendbar ist.
 
 * Der Link mit der **[!UICONTROL Besucher]** funktioniert nicht.
 
-   So verwenden Sie die **[!UICONTROL Social Marketing]** -Modul müssen Sie den Speicherschritt so konfigurieren, dass er auf die richtige Tabelle verweist.
+  So verwenden Sie die **[!UICONTROL Social Marketing]** -Modul müssen Sie den Speicherschritt so konfigurieren, dass er auf die richtige Tabelle verweist.
 
-   Ebenso muss bei Verwendung von Verweisfunktionen die Standardvorlage für die Erstübermittlung von Nachrichten angepasst werden.
+  Ebenso muss bei Verwendung von Verweisfunktionen die Standardvorlage für die Erstübermittlung von Nachrichten angepasst werden.
 
 * Es ist nicht möglich, Profile manuell in eine Liste einzufügen.
 
-   Daher wird das in [diesem Abschnitt](../../platform/using/creating-and-managing-lists.md) ist ohne zusätzliche Konfiguration nicht anwendbar.
+  Daher wird das in [diesem Abschnitt](../../platform/using/creating-and-managing-lists.md) ist ohne zusätzliche Konfiguration nicht anwendbar.
 
-   >[!NOTE]
-   >
-   >Sie können weiterhin Empfängerlisten mithilfe von Workflows erstellen. Weitere Informationen hierzu finden Sie unter [Profilliste mit einem Workflow erstellen](../../configuration/using/creating-a-profile-list-with-a-workflow.md).
+  >[!NOTE]
+  >
+  >Sie können weiterhin Empfängerlisten mithilfe von Workflows erstellen. Weitere Informationen hierzu finden Sie unter [Profilliste mit einem Workflow erstellen](../../configuration/using/creating-a-profile-list-with-a-workflow.md).
 
 Es wird außerdem empfohlen, die in den verschiedenen vordefinierten Konfigurationen verwendeten Standardwerte zu überprüfen: Je nach den verwendeten Funktionen müssen mehrere Anpassungen vorgenommen werden.
 

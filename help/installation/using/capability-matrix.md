@@ -46,6 +46,7 @@ Adobe Campaign bietet die Option **Federated Data Access** (FDA), um in externen
 >[!CAUTION]
 >
 >Kompatible externe Datenbanksysteme hängen von Ihrem Hosting-Modell ab. Weitere Informationen finden Sie unter [Campaign-Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md).
+>
 
 **Siehe auch**
 

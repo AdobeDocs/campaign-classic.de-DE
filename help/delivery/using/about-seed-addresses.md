@@ -7,7 +7,7 @@ badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Seed Address
 exl-id: 1f55eda8-c393-4f86-9118-01bcd981c6df
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '391'
 ht-degree: 100%
 
@@ -48,4 +48,3 @@ F체r den Briefpost-Versand werden Testadressen w채hrend der Extraktion hinzugef�
 >* Keine Verwendung der Option **[!UICONTROL Gruppierungen verwalten (GROUP BY + HAVING)]**.
 >* Bei Extraktion von Sammlungselementen bleiben die entsprechenden Felder f체r Testadressen leer, es sei denn, die Option **[!UICONTROL Nur eine Zeile (Expertenmodus)]** wurde ausgew채hlt. Lesen Sie diesbez체glich auch [diesen Abschnitt](../../platform/using/executing-export-jobs.md#step-7---data-formatting).
 >
-

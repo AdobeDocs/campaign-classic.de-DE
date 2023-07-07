@@ -7,7 +7,7 @@ badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Web Forms
 exl-id: 364d90af-4b18-4104-8b6a-be80cfde3b0b
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1074'
 ht-degree: 100%
 
@@ -28,9 +28,9 @@ Folgende Feldtypen sind verfügbar:
 * Bild, das in der Ressourcenbibliothek oder auf einem für Benutzer zugänglichen Server gespeichert ist. Siehe [Bilder einfügen](#inserting-images).
 * Script, das Client- und/oder Server-seitig ausgeführt wird. Es muss in JavaScript verfasst und mit den gängigen Browsern kompatibel sein, um die korrekte Ausführung beim Client zu gewährleisten.
 
-   >[!NOTE]
-   >
-   >Auf der Serverseite kann das Script die in der [Campaign JSAPI-Dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=de) definierten Funktionen verwenden.
+  >[!NOTE]
+  >
+  >Auf der Serverseite kann das Script die in der [Campaign JSAPI-Dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=de) definierten Funktionen verwenden.
 
 ## HTML-Inhalt einfügen {#inserting-html-content}
 
@@ -63,7 +63,7 @@ Um einen Hypertext-Link hinzuzufügen, gehen Sie zu **[!UICONTROL Statische Elem
 * Im Feld **[!UICONTROL Fenster]** können Sie im Fall einer Website einen Anzeigemodus für den Link auswählen. Sie können den Link in einem neuen Fenster, dem aktuellen Fenster oder einem anderen Fenster öffnen.
 * Sie können einen ToolTip wie unten gezeigt hinzufügen:
 
-   ![](assets/s_ncs_admin_survey_send_an_email.png)
+  ![](assets/s_ncs_admin_survey_send_an_email.png)
 
 * Der Link kann als Schaltfläche oder Bild dargestellt werden. Wählen Sie dazu im Feld **[!UICONTROL Typ]** den Typ der Anzeige aus.
 
@@ -77,39 +77,39 @@ Sie können auch andere Aktionen für den Link definieren, sodass der Benutzer d
 
 * Die Seite aktualisieren
 
-   Wählen Sie dazu im Dropdown-Fenster des Felds **[!UICONTROL Aktion]** die Option **[!UICONTROL Seite aktualisieren]** aus.
+  Wählen Sie dazu im Dropdown-Fenster des Felds **[!UICONTROL Aktion]** die Option **[!UICONTROL Seite aktualisieren]** aus.
 
-   ![](assets/s_ncs_admin_survey_link_refresh.png)
+  ![](assets/s_ncs_admin_survey_link_refresh.png)
 
 * Die nächste/vorherige Seite anzeigen
 
-   Wählen Sie dazu im Dropdown-Fenster des Felds **[!UICONTROL Aktion]** die Option **[!UICONTROL Nächste Seite]** oder **[!UICONTROL Vorherige Seite]** aus.
+  Wählen Sie dazu im Dropdown-Fenster des Felds **[!UICONTROL Aktion]** die Option **[!UICONTROL Nächste Seite]** oder **[!UICONTROL Vorherige Seite]** aus.
 
-   ![](assets/s_ncs_admin_survey_link_next.png)
+  ![](assets/s_ncs_admin_survey_link_next.png)
 
-   Sie können die Schaltflächen **[!UICONTROL Weiter]** und/oder **[!UICONTROL Zurück]** verbergen, wenn diese durch einen Link ersetzt werden sollen. Weiterführende Informationen dazu finden Sie auf dieser [Seite](defining-web-forms-page-sequencing.md).
+  Sie können die Schaltflächen **[!UICONTROL Weiter]** und/oder **[!UICONTROL Zurück]** verbergen, wenn diese durch einen Link ersetzt werden sollen. Weiterführende Informationen dazu finden Sie auf dieser [Seite](defining-web-forms-page-sequencing.md).
 
-   Der Link ersetzt die standardmäßig verwendete Schaltfläche **[!UICONTROL Weiter]**.
+  Der Link ersetzt die standardmäßig verwendete Schaltfläche **[!UICONTROL Weiter]**.
 
-   ![](assets/s_ncs_admin_survey_link_next_ex.png)
+  ![](assets/s_ncs_admin_survey_link_next_ex.png)
 
 * Eine weitere Seite anzeigen
 
-   Mit der Option **[!UICONTROL Transition aktivieren]** können Sie eine bestimmte Seite anzeigen, die mit der im Feld **[!UICONTROL Transition]** ausgewählten ausgehenden Transition verknüpft ist.
+  Mit der Option **[!UICONTROL Transition aktivieren]** können Sie eine bestimmte Seite anzeigen, die mit der im Feld **[!UICONTROL Transition]** ausgewählten ausgehenden Transition verknüpft ist.
 
-   ![](assets/s_ncs_admin_survey_link_viral.png)
+  ![](assets/s_ncs_admin_survey_link_viral.png)
 
-   Standardmäßig hat eine Seite nur eine einzige ausgehende Transition. Um neue Transitionen zu erstellen, wählen Sie wie unten gezeigt die Seite und danach im Bereich **[!UICONTROL Ausgehende Transitionen]** die Schaltfläche **[!UICONTROL Hinzufügen]** aus:
+  Standardmäßig hat eine Seite nur eine einzige ausgehende Transition. Um neue Transitionen zu erstellen, wählen Sie wie unten gezeigt die Seite und danach im Bereich **[!UICONTROL Ausgehende Transitionen]** die Schaltfläche **[!UICONTROL Hinzufügen]** aus:
 
-   ![](assets/s_ncs_admin_survey_add_transition.png)
+  ![](assets/s_ncs_admin_survey_add_transition.png)
 
-   Im Diagramm sieht dies so aus:
+  Im Diagramm sieht dies so aus:
 
-   ![](assets/s_ncs_admin_survey_add_transition_graph.png)
+  ![](assets/s_ncs_admin_survey_add_transition_graph.png)
 
-   >[!NOTE]
-   >
-   >Weitere Informationen zur Seitenreihenfolge in einem Webformular finden Sie unter [Seitenreihenfolge eines Webformulars definieren](defining-web-forms-page-sequencing.md).
+  >[!NOTE]
+  >
+  >Weitere Informationen zur Seitenreihenfolge in einem Webformular finden Sie unter [Seitenreihenfolge eines Webformulars definieren](defining-web-forms-page-sequencing.md).
 
 ### HTML-Inhalt personalisieren {#personalizing-html-content}
 

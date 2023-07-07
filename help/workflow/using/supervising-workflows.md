@@ -6,7 +6,7 @@ badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classi
 feature: Workflows
 exl-id: ca6d4bf4-7b3a-4d36-9fc3-0b83531d0132
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '647'
 ht-degree: 100%
 
@@ -137,17 +137,17 @@ In der Vorlage müssen folgende Informationen gespeichert sein:
 * **E-Mail-Adresse des Supervisors**,
 * **HTML-Inhalt** mit der Möglichkeit, einen personalisierten Text einzufügen.
 
-   ![](assets/uc_monitoring_workflow_variables_diffusion.png)
+  ![](assets/uc_monitoring_workflow_variables_diffusion.png)
 
-   Die drei deklarierten Variablen (WF_Stop, WF_Paused, WF_Error) entsprechen den drei Ereignisvariablen des Workflows.
+  Die drei deklarierten Variablen (WF_Stop, WF_Paused, WF_Error) entsprechen den drei Ereignisvariablen des Workflows.
 
-   Diese Variablen werden im **Variablen**-Tab der Versandvorlagen-Eigenschaften deklariert.
+  Diese Variablen werden im **Variablen**-Tab der Versandvorlagen-Eigenschaften deklariert.
 
-   Um den **Inhalt der Ereignisvariablen des Workflows** abrufen zu können, müssen versandspezifische Variablen deklariert werden, die mit den vom JavaScript-Code ausgegebenen Werten initialisiert werden.
+  Um den **Inhalt der Ereignisvariablen des Workflows** abrufen zu können, müssen versandspezifische Variablen deklariert werden, die mit den vom JavaScript-Code ausgegebenen Werten initialisiert werden.
 
-   Die folgende Abbildung zeigt den Inhalt der Versandvorlage:
+  Die folgende Abbildung zeigt den Inhalt der Versandvorlage:
 
-   ![](assets/uc_monitoring_workflow_model_diffusion.png)
+  ![](assets/uc_monitoring_workflow_model_diffusion.png)
 
 Nach Erstellung und Validierung der Versandvorlage ist die **Versandaktivität** zu konfigurieren.
 
@@ -161,21 +161,21 @@ Nach Erstellung und Validierung der Versandvorlage ist die **Versandaktivität**
 * Aktivieren Sie schließlich im Bereich &quot;Auszuführende Aktion&quot; die Option **Vorbereiten und Starten**.
 * Deaktivieren Sie die Option **Fehler verarbeiten**.
 
-   ![](assets/uc_monitoring_workflow_optionmodel.png)
+  ![](assets/uc_monitoring_workflow_optionmodel.png)
 
 * Fügen Sie im **Script**-Tab der **Versandaktivität** unter Verwendung der Personalisierungsschaltfläche drei Variablen vom Typ **String** hinzu.
 
-   ![](assets/uc_monitoring_workflow_selectlinkvariables.png)
+  ![](assets/uc_monitoring_workflow_selectlinkvariables.png)
 
-   ![](assets/uc_monitoring_workflow_linkvariables.png)
+  ![](assets/uc_monitoring_workflow_linkvariables.png)
 
-   Folgende drei Variablen wurden deklariert:
+  Folgende drei Variablen wurden deklariert:
 
-   ```
-   delivery.variables._var[0].stringValue = vars.strWorkflowError;
-   delivery.variables._var[1].stringValue = vars.strWorkflowPaused;
-   delivery.variables._var[2].stringValue = vars.strWorkflowStop; 
-   ```
+  ```
+  delivery.variables._var[0].stringValue = vars.strWorkflowError;
+  delivery.variables._var[1].stringValue = vars.strWorkflowPaused;
+  delivery.variables._var[2].stringValue = vars.strWorkflowStop; 
+  ```
 
 Nach dem Start sendet der Monitoring-Workflow eine zusammenfassende Nachricht an den Supervisor, wie unten beispielhaft dargestellt:
 

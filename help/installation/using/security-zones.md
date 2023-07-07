@@ -30,6 +30,7 @@ Operatoren werden über ihr Profil in der Konsole mit einer Sicherheitszone verk
 >Als **gehostet** Kunden, wenn Sie auf [Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de), können Sie die Sicherheitszonen-Benutzeroberfläche verwenden. [Weitere Informationen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=de)
 >
 >Sonstiges **hybrid/gehostet** Kunden müssen sich an das Adobe Support-Team wenden, um IP zur Zulassungsliste hinzuzufügen.
+>
 
 ## Sicherheitszonen erstellen {#creating-security-zones}
 
@@ -150,15 +151,15 @@ Verschiedene Fälle können auftreten:
 
 * Ein Unternetzwerk wird direkt in der Sicherheitszone referenziert und es wird kein Proxy konfiguriert: Benutzer des Unternetzes können direkt eine Verbindung zum Adobe Campaign-Server herstellen.
 
-   ![](assets/8101_proxy1.png)
+  ![](assets/8101_proxy1.png)
 
 * Für ein Unternetzwerk in der Sicherheitszone wird ein Proxy angegeben: Benutzer dieses Unternetzwerks können über diesen Proxy auf den Adobe Campaign-Server zugreifen.
 
-   ![](assets/8101_proxy2.png)
+  ![](assets/8101_proxy2.png)
 
 * Ein Proxy ist in einem Sicherheitszonen-Unternetzwerk enthalten: -Benutzer, die Zugriff über diesen Proxy haben, können unabhängig von ihrer Herkunft auf den Adobe Campaign-Server zugreifen.
 
-   ![](assets/8101_proxy3.png)
+  ![](assets/8101_proxy3.png)
 
 Die IP-Adressen der Proxys, die wahrscheinlich auf den Adobe Campaign-Server zugreifen, müssen in beiden **`<subnetwork>`** und dem Teilnetz der ersten Ebene **`<subnetwork name="all"/>`**. Hier für einen Proxy, dessen IP-Adresse beispielsweise 10.131.146.102 lautet:
 
@@ -240,15 +241,15 @@ Sobald die Zonen definiert sind, wird die **[!UICONTROL Sicherheitszone]** -Aufl
 
    * Wenn allowDebug auf false gesetzt ist, lautet die Ausgabe:
 
-      ```
-      <redir status='OK' date='...' sourceIP='...'/>
-      ```
+     ```
+     <redir status='OK' date='...' sourceIP='...'/>
+     ```
 
    * Wenn allowDebug auf &quot;true&quot;gesetzt ist, lautet die Ausgabe:
 
-      ```
-      <redir status='OK' date='...' build='...' OR version='...' sha1='...' instance='...' sourceIP='...' host='...' localHost='...'/>
-      ```
+     ```
+     <redir status='OK' date='...' build='...' OR version='...' sha1='...' instance='...' sourceIP='...' host='...' localHost='...'/>
+     ```
 
 * Setzen Sie niemals allowEmptyPassword, allowUserPassword, allowSQLInjection auf true. Diese Attribute dienen nur der problemlosen Migration von v5 und v6.0:
 

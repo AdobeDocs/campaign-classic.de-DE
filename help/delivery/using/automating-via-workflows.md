@@ -7,7 +7,7 @@ badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Workflows
 exl-id: bc6ebf5d-cc21-4750-9713-2bf259e7d6bf
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 100%
 
@@ -36,41 +36,41 @@ Vier Aktivitätseigenschaften sind zu konfigurieren:
 
 * **Wird durch die Transition angegeben**
 
-   Der zu verwendende Inhalt wurde zuvor erstellt, die Bearbeitungsvorgänge beziehen sich auf die Inhaltsinstanz, welche vom Eingangsereignis übernommen wurde. Auf die Kennung des Inhalts kann über die Variable &quot;contentId&quot; des Ereignisses zugegriffen werden.
+  Der zu verwendende Inhalt wurde zuvor erstellt, die Bearbeitungsvorgänge beziehen sich auf die Inhaltsinstanz, welche vom Eingangsereignis übernommen wurde. Auf die Kennung des Inhalts kann über die Variable &quot;contentId&quot; des Ereignisses zugegriffen werden.
 
 * **Explizit**
 
-   Ermöglicht die Auswahl eines zuvor erstellten Inhalts.
+  Ermöglicht die Auswahl eines zuvor erstellten Inhalts.
 
 * **Wird durch ein Script erstellt**
 
-   Wählt eine Inhaltsinstanz ausgehend von einem JavaScript-Template aus. Der auszuwertende Code ermöglicht den Abruf der Inhaltskennung.
+  Wählt eine Inhaltsinstanz ausgehend von einem JavaScript-Template aus. Der auszuwertende Code ermöglicht den Abruf der Inhaltskennung.
 
 * **Neu, basierend auf einer Veröffentlichungsvorlage erstellt**
 
-   Erstellt einen neuen Inhalt ausgehend von einer Veröffentlichungsvorlage. Die Inhaltsinstanz wird im angegebenen &quot;Inhaltskanal&quot;-Ordner gespeichert.
+  Erstellt einen neuen Inhalt ausgehend von einer Veröffentlichungsvorlage. Die Inhaltsinstanz wird im angegebenen &quot;Inhaltskanal&quot;-Ordner gespeichert.
 
 ### Inhalt aktualisieren {#update-the-content}
 
 * **Betreff**
 
-   Ermöglicht bei der Veröffentlichung die Anpassung des Versandbetreffs.
+  Ermöglicht bei der Veröffentlichung die Anpassung des Versandbetreffs.
 
 * **Zugriff auf Daten eines XML-Streams**
 
-   Der Inhalt wird mit einem XML-Stream aktualisiert, der aus einer externen Quelle stammt. Zum Download der Daten muss die entsprechende URL angegeben werden.
+  Der Inhalt wird mit einem XML-Stream aktualisiert, der aus einer externen Quelle stammt. Zum Download der Daten muss die entsprechende URL angegeben werden.
 
-   Mithilfe eines XSL-Stylesheets können dann die eingehenden XML-Daten umgewandelt werden.
+  Mithilfe eines XSL-Stylesheets können dann die eingehenden XML-Daten umgewandelt werden.
 
 ### Auszuführende Aktion {#action-to-execute}
 
 * **Speichern**
 
-   Speichert den erstellten oder geänderten Inhalt. Die Kennung des Inhalts wird in der Variablen &quot;contentID&quot; des ausgehenden Ereignisses übernommen.
+  Speichert den erstellten oder geänderten Inhalt. Die Kennung des Inhalts wird in der Variablen &quot;contentID&quot; des ausgehenden Ereignisses übernommen.
 
 * **Erzeugen**
 
-   Erzeugt die Ausgabedateien für jede Veröffentlichungsvorlage mit Typ &quot;Datei&quot;. Die ausgehende Transition wird für jede erzeugte Datei aktiviert, wobei die in der Variablen &quot;contentID&quot; gespeicherte Inhaltskennung und der in der Variable &quot;filename&quot; gespeicherte Dateiname als Parameter übergeben werden.
+  Erzeugt die Ausgabedateien für jede Veröffentlichungsvorlage mit Typ &quot;Datei&quot;. Die ausgehende Transition wird für jede erzeugte Datei aktiviert, wobei die in der Variablen &quot;contentID&quot; gespeicherte Inhaltskennung und der in der Variable &quot;filename&quot; gespeicherte Dateiname als Parameter übergeben werden.
 
 ### Transition {#transition}
 

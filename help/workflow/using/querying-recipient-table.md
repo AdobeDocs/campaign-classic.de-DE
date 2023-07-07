@@ -6,7 +6,7 @@ badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classi
 feature: Query Editor
 exl-id: 5b037798-b092-4c98-9f6a-4af7fc7941c6
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 100%
 
@@ -20,19 +20,19 @@ In diesem Beispiel werden die Namen und E-Mail-Adressen der Empfänger gesucht, 
 
 * Welche Tabelle soll ausgewählt werden?
 
-   Die Empfängertabelle (nms:recipient)
+  Die Empfängertabelle (nms:recipient)
 
 * Felder, die als Ausgabespalten verwendet werden sollen
 
-   E-Mail, Name, Wohnort und Kundennummer
+  E-Mail, Name, Wohnort und Kundennummer
 
 * Nach welchen Kriterien sind die Empfänger zu filtern?
 
-   Nach Wohnort und E-Mail-Domain
+  Nach Wohnort und E-Mail-Domain
 
 * Wird das Ergebnis sortiert?
 
-   Ja, nach **[!UICONTROL Kundennummer]** und **[!UICONTROL Nachname]**.
+  Ja, nach **[!UICONTROL Kundennummer]** und **[!UICONTROL Nachname]**.
 
 Gehen Sie wie folgt vor:
 

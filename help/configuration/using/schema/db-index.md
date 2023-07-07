@@ -50,9 +50,9 @@ Der Name des Index in der Datenbank wird durch Verkettung des Tabellennamens und
 
 * **_operation (string)**: definiert den Typ des Schreibens in der Datenbank.
 
-   Dieses Attribut wird hauptsächlich bei der Erweiterung von nativen Schemata verwendet.
+  Dieses Attribut wird hauptsächlich bei der Erweiterung von nativen Schemata verwendet.
 
-   Barrierefreie Werte sind:
+  Barrierefreie Werte sind:
 
    * &quot;none&quot;: Abstimmung. Das bedeutet, dass Adobe Campaign das Element wiederherstellt, ohne es zu aktualisieren, oder einen Fehler erzeugt, wenn es nicht vorhanden ist.
    * &quot;insertOrUpdate&quot;: durch Einfügen aktualisiert werden. Das bedeutet, dass Adobe Campaign das Element aktualisiert oder erstellt, falls es nicht vorhanden ist.

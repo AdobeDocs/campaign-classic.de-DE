@@ -7,7 +7,7 @@ badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Monitoring, Email
 exl-id: 43779505-9917-4e99-af25-b00a9d29a645
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '684'
 ht-degree: 100%
 
@@ -112,12 +112,12 @@ Die folgenden Tipps zur Fehlerbehebung helfen Ihnen, die häufigsten Probleme zu
 
 * Überprüfen, ob der trackinglogd-Prozess ausgeführt wird
 
-   Dieser Prozess liest aus dem gemeinsam genutzten IIS/Webserver-Speicher und schreibt die Weiterleitungsprotokolle.
+  Dieser Prozess liest aus dem gemeinsam genutzten IIS/Webserver-Speicher und schreibt die Weiterleitungsprotokolle.
 
-   Sie können von der Startseite aus darauf zugreifen, indem Sie in Ihrer Instanz die Registerkarte &quot;Tracking&quot; auswählen. Sie können auch den folgenden Befehl für die Instanz ausführen: `<user>@<instance>:~$ nlserver pdump`
+  Sie können von der Startseite aus darauf zugreifen, indem Sie in Ihrer Instanz die Registerkarte &quot;Tracking&quot; auswählen. Sie können auch den folgenden Befehl für die Instanz ausführen: `<user>@<instance>:~$ nlserver pdump`
 
-   Wenn der trackinglogd-Prozess nicht in der Liste angezeigt wird, starten Sie ihn mit dem folgenden Befehl für die Instanz: `<user>@<instance>:~$ nlserver start trackinglogd`
+  Wenn der trackinglogd-Prozess nicht in der Liste angezeigt wird, starten Sie ihn mit dem folgenden Befehl für die Instanz: `<user>@<instance>:~$ nlserver start trackinglogd`
 
 * Überprüfen Sie, ob der technische Tracking-Workflow kürzlich ausgeführt wurde.
 
-   Sie finden den technischen Tracking-Workflow in den Ordnern &quot;Administration&quot; > &quot;Produktion&quot; > &quot;Technische Workflows&quot;. 
+  Sie finden den technischen Tracking-Workflow in den Ordnern &quot;Administration&quot; > &quot;Produktion&quot; > &quot;Technische Workflows&quot;. 

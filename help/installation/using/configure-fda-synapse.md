@@ -31,7 +31,6 @@ Verwenden von Campaign [Federated Data Access](../../installation/using/about-fd
 >* Red Hat Enterprise ODBC-Treiber von Microsoft können auch mit CentOS verwendet werden, um eine Verbindung zum SQL-Server herzustellen.
 >* Version 13.0 funktioniert mit Red Hat 6 und 7.
 
-
 Gehen Sie wie folgt vor, um Azure synapse unter CentOS zu konfigurieren:
 
 1. Installieren Sie zunächst den ODBC-Treiber. Sie finden ihn auf dieser [Seite](https://www.microsoft.com/en-us/download/details.aspx?id=50420).
@@ -136,9 +135,9 @@ So konfigurieren Sie Azure Synapse unter Windows:
 * Sie benötigen Stammberechtigungen, um einen ODBC-Treiber zu installieren.
 * Zur Installation des msodbcsql-Packages ist curl erforderlich. Führen Sie den folgenden Befehl aus, wenn Sie curl nicht installiert haben:
 
-   ```
-   sudo apt-get install curl
-   ```
+  ```
+  sudo apt-get install curl
+  ```
 
 So konfigurieren Sie Azure Synapse unter Debian:
 
@@ -222,7 +221,7 @@ So erstellen Sie Ihre [!DNL Azure Synapse] Gehen Sie wie folgt vor:
 
       * **[!UICONTROL Datenbank]**: Name der Datenbank
 
-      ![](assets/azure_3.png)
+     ![](assets/azure_3.png)
 
    * Für die systemzugeordnete verwaltete Identitätsauthentifizierung müssen Sie Folgendes angeben:
 
@@ -232,9 +231,7 @@ So erstellen Sie Ihre [!DNL Azure Synapse] Gehen Sie wie folgt vor:
 
       * **[!UICONTROL Optionen]**: Fügen Sie die folgende Syntax hinzu `Authentication=ActiveDirectoryMsi`
 
-      ![](assets/azure_4.png)
-
-
+     ![](assets/azure_4.png)
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 

@@ -157,7 +157,7 @@ Gehen Sie dazu wie folgt vor:
 
 ## Protect-Seiten mit API
 
-Wir empfehlen On-Premise-Kunden dringend, Seiten zu schützen, die möglicherweise personenbezogene Daten (PIs) enthalten, wie z. B. Mirrorseiten, Webanwendungen usw.
+Wir empfehlen On-Premise-Kunden dringend, die Seiten zu schützen, die möglicherweise personenbezogene Daten (PIs) enthalten, z. B. Mirrorseiten, Webanwendungen usw.
 
 Ziel dieses Verfahrens ist es, dass diese Seiten nicht indexiert werden, um ein mögliches Sicherheitsrisiko zu verhindern. Hier finden Sie einige hilfreiche Artikel:
 

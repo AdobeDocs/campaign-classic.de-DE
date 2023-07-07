@@ -7,7 +7,7 @@ badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: A/B Testing
 exl-id: 1ca01cab-734a-4299-b112-04eec51222fb
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 100%
 
@@ -21,15 +21,15 @@ ht-degree: 100%
 
 * Öffnen Sie die **[!UICONTROL Abfrage]** per Doppelklick.
 
-   ![](assets/use_case_abtesting_createrecipients_001.png)
+  ![](assets/use_case_abtesting_createrecipients_001.png)
 
 * Klicken Sie auf den Link **[!UICONTROL Abfrage bearbeiten]** und wählen Sie die Empfänger aus, die die Zielgruppe enthalten soll.
 
-   ![](assets/use_case_abtesting_createrecipients_002.png)
+  ![](assets/use_case_abtesting_createrecipients_002.png)
 
 * Verbinden Sie die **[!UICONTROL Abfrage]** mit der **[!UICONTROL Aufspaltung]**.
 
-   ![](assets/use_case_abtesting_createrecipients_003.png)
+  ![](assets/use_case_abtesting_createrecipients_003.png)
 
 ## Konfigurieren der Aufspaltungsaktivität {#configuring-the-split-activity}
 
@@ -39,46 +39,46 @@ Mithilfe dieser Aktivität werden die drei Populationen erstellt: A, B und Rest.
 
    * Öffnen Sie die **[!UICONTROL Aufspaltung]** per Doppelklick.
 
-      ![](assets/use_case_abtesting_createrecipients_004.png)
+     ![](assets/use_case_abtesting_createrecipients_004.png)
 
    * Ändern Sie den Titel für die Testpopulation A entsprechend ab.
 
-      ![](assets/use_case_abtesting_createrecipients_005.png)
+     ![](assets/use_case_abtesting_createrecipients_005.png)
 
    * Aktivieren Sie die Option **[!UICONTROL Anzahl von Datensätzen begrenzen]**.
 
-      ![](assets/use_case_abtesting_createrecipients_006.png)
+     ![](assets/use_case_abtesting_createrecipients_006.png)
 
    * Klicken Sie auf den Link **[!UICONTROL Bearbeiten]**, kreuzen Sie **[!UICONTROL Zufallsauswahl aktivieren]** an und klicken Sie auf **[!UICONTROL Weiter]**.
 
-      ![](assets/use_case_abtesting_createrecipients_007.png)
+     ![](assets/use_case_abtesting_createrecipients_007.png)
 
    * Begrenzen Sie die Testpopulation auf 10 % und klicken Sie auf **[!UICONTROL Beenden]**.
 
-      ![](assets/use_case_abtesting_createrecipients_008.png)
+     ![](assets/use_case_abtesting_createrecipients_008.png)
 
 1. Erstellung der Testpopulation B:
 
    * Klicken Sie auf **[!UICONTROL Hinzufügen]**, um einen zweiten Tab für die Testpopulation B zu erstellen.
 
-      ![](assets/use_case_abtesting_createrecipients_009.png)
+     ![](assets/use_case_abtesting_createrecipients_009.png)
 
    * Begrenzen Sie wie zuvor die Testpopulation auf 10 %.
 
-      ![](assets/use_case_abtesting_createrecipients_010.png)
+     ![](assets/use_case_abtesting_createrecipients_010.png)
 
 1. Erstellung der verbleibenden Population:
 
    * Gehen Sie in den **[!UICONTROL Allgemein]**-Tab.
 
-      ![](assets/use_case_abtesting_createrecipients_011.png)
+     ![](assets/use_case_abtesting_createrecipients_011.png)
 
    * Aktivieren Sie die Option **[!UICONTROL Komplement erzeugen]**.
 
-      ![](assets/use_case_abtesting_createrecipients_012.png)
+     ![](assets/use_case_abtesting_createrecipients_012.png)
 
    * Benennen Sie die verbleibende Population und klicken Sie auf **[!UICONTROL OK]**, um die Aktivität zu schließen.
 
-      ![](assets/use_case_abtesting_createrecipients_013.png)
+     ![](assets/use_case_abtesting_createrecipients_013.png)
 
 Jetzt können Sie die beiden Versandvorlagen erstellen. [Weitere Informationen](a-b-testing-uc-delivery-templates.md).

@@ -9,7 +9,7 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 415c5137-2eb0-4581-a46e-26e8e3d264fa
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 100%
 
@@ -34,36 +34,36 @@ Jeder Status wird durch ein spezielles Symbol und eine spezielle Bezeichnung rep
 
 * **In Bearbeitung**
 
-   Vorgang wird durch einen Benutzer bearbeitet.
+  Vorgang wird durch einen Benutzer bearbeitet.
 
 * **Ausführung in Gang**
 
-   Vorgang wird ausgeführt.
+  Vorgang wird ausgeführt.
 
 * **Rückgängig**
 
-   Der laufende Vorgang wurde durch Klick auf die Schaltfläche **[!UICONTROL Abbrechen]** abgebrochen.
+  Der laufende Vorgang wurde durch Klick auf die Schaltfläche **[!UICONTROL Abbrechen]** abgebrochen.
 
 * **Wird abgebrochen**
 
-   Der Abbruch wurde berücksichtigt und der Vorgang ist im Abbruch begriffen.
+  Der Abbruch wurde berücksichtigt und der Vorgang ist im Abbruch begriffen.
 
 * **Wird ausgesetzt**
 
-   Klick auf die Schaltfläche **[!UICONTROL Pause]**: Die Aussetzung des Vorgangs ist in Gang.
+  Klick auf die Schaltfläche **[!UICONTROL Pause]**: Die Aussetzung des Vorgangs ist in Gang.
 
 * **Ausgesetzt**
 
-   Klick auf die Schaltfläche **[!UICONTROL Pause]**: Der Vorgang wurde ausgesetzt. Er kann über die Schaltfläche **[!UICONTROL Starten]** wieder aufgenommen werden.
+  Klick auf die Schaltfläche **[!UICONTROL Pause]**: Der Vorgang wurde ausgesetzt. Er kann über die Schaltfläche **[!UICONTROL Starten]** wieder aufgenommen werden.
 
 * **Abgeschlossen**
 
-   Die Ausführung des Vorgangs ist abgeschlossen.
+  Die Ausführung des Vorgangs ist abgeschlossen.
 
 * **Abgeschlossen mit Fehlern**
 
-   Der Vorgang konnte aufgrund eines technischen Fehlers nicht ausgeführt werden.
+  Der Vorgang konnte aufgrund eines technischen Fehlers nicht ausgeführt werden.
 
 * **Server wird heruntergefahren**
 
-   Der laufende Vorgang wurde aufgrund eines Stopps des Adobe-Campaign-Servers unterbrochen.
+  Der laufende Vorgang wurde aufgrund eines Stopps des Adobe-Campaign-Servers unterbrochen.

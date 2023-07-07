@@ -9,7 +9,7 @@ content-type: reference
 topic-tags: advanced-parameters
 exl-id: d4acf99b-cef4-48f7-b4cd-c032ec12592f
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '153'
 ht-degree: 100%
 
@@ -23,14 +23,14 @@ Im Fall eines eingehenden Kontakts (Callcenter oder Webseite) bestimmt das Angeb
 
 * Um einen neuen Anwendungskontext hinzuzufügen, erweitern Sie das Schema **nms:interaction** und fügen Sie die benötigte Anzahl an **attribute**-Elementen in das Schema ein.
 
-   Im folgenden Beispiel wurden der Ländercode und die zuletzt besuchte Webseite hinzugefügt:
+  Im folgenden Beispiel wurden der Ländercode und die zuletzt besuchte Webseite hinzugefügt:
 
-   ![](assets/s_ncs_configuration_offer_schemas.png)
+  ![](assets/s_ncs_configuration_offer_schemas.png)
 
 * Im Anschluss an die Erweiterung können Sie die neuen Attribute in der Definition der Eignungsregeln verwenden.
 
-   Im vorliegenden Beispiel werden Eignungskriterien erstellt, die das Land und die zuletzt besuchte Seite des Kontakts berücksichtigen.
+  Im vorliegenden Beispiel werden Eignungskriterien erstellt, die das Land und die zuletzt besuchte Seite des Kontakts berücksichtigen.
 
-   ![](assets/s_ncs_configuration_offer_context.png)
+  ![](assets/s_ncs_configuration_offer_context.png)
 
 * Fügen Sie bei der Konfiguration der SOAP-Aufrufe das XML-Element **context** ein, um die kontextbezogenen Informationen, um die Sie zuvor das Interaction-Schema erweitert haben, zu referenzieren. Weitere Informationen hierzu finden Sie unter [SOAP-Integration (Server-seitig)](../../interaction/using/integration-via-soap--server-side-.md).

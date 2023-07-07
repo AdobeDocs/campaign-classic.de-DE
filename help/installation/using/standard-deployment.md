@@ -89,19 +89,20 @@ Zusammenfassend sind folgende Etappen zu durchlaufen:
 
    * Erstellen Sie die Instanz über die Konsole:
 
-      ![](assets/install_create_new_connexion.png)
+     ![](assets/install_create_new_connexion.png)
 
-      Weitere Informationen hierzu finden Sie unter [Erstellen einer Instanz und Anmelden](../../installation/using/creating-an-instance-and-logging-on.md).
+     Weitere Informationen hierzu finden Sie unter [Erstellen einer Instanz und Anmelden](../../installation/using/creating-an-instance-and-logging-on.md).
 
-      oder
+     oder
 
    * Erstellen Sie die Instanz mithilfe der Befehlszeilen:
 
-      ```
-      nlserver config -addinstance:demo/tracking.campaign.net*
-      ```
+     ```
+     nlserver config -addinstance:demo/tracking.campaign.net*
+     ```
 
-      Weitere Informationen hierzu finden Sie unter [Erstellen einer Instanz](../../installation/using/command-lines.md#creating-an-instance).
+     Weitere Informationen hierzu finden Sie unter [Erstellen einer Instanz](../../installation/using/command-lines.md#creating-an-instance).
+
    Der Name der Instanz entspricht dem des Anwendungsservers.
 
    Die Verbindung zum Server mit der **nlserver web** -Modul (Mirrorseiten, Abmeldung) wird über die URL des Lastenausgleichs (tracking.campaign.net) durchgeführt.
@@ -124,24 +125,24 @@ Zusammenfassend sind folgende Etappen zu durchlaufen:
 
    * die DNS-Konfiguration des MTA-Moduls:
 
-      ```
-      <dnsConfig localDomain="campaign.com" nameServers="192.0.0.1, 192.0.0.2"/>
-      ```
+     ```
+     <dnsConfig localDomain="campaign.com" nameServers="192.0.0.1, 192.0.0.2"/>
+     ```
 
-      >[!NOTE]
-      >
-      >Die **nameServers** wird nur unter Windows verwendet.
+     >[!NOTE]
+     >
+     >Die **nameServers** wird nur unter Windows verwendet.
 
-      Weitere Informationen hierzu finden Sie unter [Versandeinstellungen](configure-delivery-settings.md).
+     Weitere Informationen hierzu finden Sie unter [Versandeinstellungen](configure-delivery-settings.md).
 
    * die redundanten Tracking-Server in Umleitungsparametern:
 
-      ```
-      <spareServer enabledIf="$(hostname)!='front_srv1'" id="1" url="https://front_srv1:8080"/>
-      <spareServer enabledIf="$(hostname)!='front_srv2'" id="2" url="https://front_srv2:8080"/>
-      ```
+     ```
+     <spareServer enabledIf="$(hostname)!='front_srv1'" id="1" url="https://front_srv1:8080"/>
+     <spareServer enabledIf="$(hostname)!='front_srv2'" id="2" url="https://front_srv2:8080"/>
+     ```
 
-      Weitere Informationen hierzu finden Sie unter [Redundantes Tracking](configuring-campaign-server.md#redundant-tracking).
+     Weitere Informationen hierzu finden Sie unter [Redundantes Tracking](configuring-campaign-server.md#redundant-tracking).
 
 1. Starten Sie die Website und testen Sie die Weiterleitung über die URL: [https://tracking.campaign.net/r/test](https://tracking.campaign.net/r/test).
 

@@ -22,14 +22,14 @@ Es kann mehrere Gründe dafür geben, dass Trackinglogs nicht weitergeleitet wer
 
 * **Stellt die** Tracking **Workflow hat Fehler?**
 
-   Siehe [Technische Workflows überwachen](../../workflow/using/monitoring-technical-workflows.md).
+  Siehe [Technische Workflows überwachen](../../workflow/using/monitoring-technical-workflows.md).
 
-   ![](assets/tracking_scheduled_task.png)
+  ![](assets/tracking_scheduled_task.png)
 
 * **Ist das Modul** trackinglogd **auf dem Server ausgeführt werden?**
 
-   Siehe [Protokolldateien](../../production/using/log-files.md).
+  Siehe [Protokolldateien](../../production/using/log-files.md).
 
 * **Wurden Änderungen vorgenommen?**
 
-   Mit dem Tracking-Alias kann ein Verbindungsverlust mit den Servern Trigger werden.
+  Mit dem Tracking-Alias kann ein Verbindungsverlust mit den Servern Trigger werden.

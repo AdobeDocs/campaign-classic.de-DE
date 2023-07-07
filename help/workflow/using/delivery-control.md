@@ -6,7 +6,7 @@ badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classi
 feature: Workflows
 exl-id: c7cface2-0837-4e6a-91dc-b8353010a7a4
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 100%
 
@@ -28,11 +28,11 @@ Folgende Optionen stehen zur Verfügung:
 
 * **[!UICONTROL Ausgehende Transition erzeugen]**
 
-   Erzeugt eine ausgehende Transition im Anschluss an die Aktivität. Sie haben die Wahl, die Zielgruppe der Versandaktion in der Transition abzurufen, oder nicht.
+  Erzeugt eine ausgehende Transition im Anschluss an die Aktivität. Sie haben die Wahl, die Zielgruppe der Versandaktion in der Transition abzurufen, oder nicht.
 
 * **[!UICONTROL Fehler verarbeiten]**
 
-   Siehe [Fehler verarbeiten](monitoring-workflow-execution.md#processing-errors).
+  Siehe [Fehler verarbeiten](monitoring-workflow-execution.md#processing-errors).
 
 ## Eingabeparameter {#input-parameters}
 

@@ -7,7 +7,7 @@ badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Landing Pages, Web Forms
 exl-id: 63602bed-ace6-4632-a735-5d268a7d72d0
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '511'
 ht-degree: 100%
 
@@ -55,15 +55,15 @@ Um das Webformular zu definieren und zu konfigurieren, gehen Sie folgendermaßen
 
 * Erstellen Sie zunächst die erforderlichen Seiten und Steuerelemente: Eingabefelder, Dropdown-Listen, HTML-Inhalte usw.
 
-   Dieser Schritt wird weiter unten genauer beschrieben.
+  Dieser Schritt wird weiter unten genauer beschrieben.
 
 * Definieren Sie die Seitenreihenfolge und legen Sie für die Anzeige der Seiten Bedingungen fest.
 
-   Dieser Schritt wird unter [Seitenreihenfolge eines Webformulars definieren](defining-web-forms-page-sequencing.md) beschrieben.
+  Dieser Schritt wird unter [Seitenreihenfolge eines Webformulars definieren](defining-web-forms-page-sequencing.md) beschrieben.
 
 * Übersetzen Sie den Inhalt bei Bedarf.
 
-   Dieser Schritt wird unter [Webformular übersetzen](translating-a-web-form.md) beschrieben.
+  Dieser Schritt wird unter [Webformular übersetzen](translating-a-web-form.md) beschrieben.
 
 ## Über die Erstellung von Web-Formularen {#about-web-forms-designing}
 
@@ -81,7 +81,6 @@ In den folgenden Abschnitten wird beschrieben, wie Sie den Inhalt und das Layout
 >* Während Sie die Seite erstellen, können Sie sich im Tab **[!UICONTROL Vorschau]** das endgültige Rendering ansehen. Um Änderungen zu übernehmen, muss das Formular zuerst gespeichert werden. Etwaige Fehler werden im Tab **[!UICONTROL Log]** angezeigt.
 >* Damit die Anzeige der Seiten und die Speicherung der Informationen in der richtigen Reihenfolge ablaufen, aktivieren Sie im Webformular den Debug-Modus. Gehen Sie dazu in den Untertab **[!UICONTROL Vorschau]** und aktivieren Sie die Option **[!UICONTROL Debug-Modus aktivieren]**: Alle erfassten Informationen und möglichen Ausführungsfehler werden am unteren Rand einer jeden Seite angezeigt.
 >
-
 
 ### Symbole der Symbolleiste verwenden {#using-the-icons-in-the-toolbar}
 

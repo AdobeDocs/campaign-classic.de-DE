@@ -51,7 +51,7 @@ Mit diesem Element können Sie einen Parameter zum Aufrufen einer SOAP-Methode d
 * **name (MNTOKEN)**: interner Name des `<param>`
 * **type (string)**: Dieses Attribut definiert den Typ von `<param>` element
 
-   Liste der verfügbaren Typen:
+  Liste der verfügbaren Typen:
 
    * BELIEBIGE
    * bin

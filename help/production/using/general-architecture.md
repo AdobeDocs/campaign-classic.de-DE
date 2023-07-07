@@ -25,7 +25,7 @@ In einer Mindestkonfiguration funktioniert Adobe Campaign mit:
 * den Adobe Campaign-Anwendungsserver,
 * Datenbank.
 
-   ![](assets/formation_exploitation.png)
+  ![](assets/formation_exploitation.png)
 
 Dieses Diagramm zeigt, dass der einzige Traffic, der im Kontext einer minimalen Architektur involviert ist, Folgendes ist:
 

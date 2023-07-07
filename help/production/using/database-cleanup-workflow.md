@@ -63,16 +63,16 @@ Die Felder der **[!UICONTROL Datenbereinigung]** -Fenster mit den folgenden Opti
 * Besucherprofile: **NmsCleanup_VisitorPurgeDelay** (siehe [Besucherbereinigung](#cleanup-of-visitors))
 * Angebotsvorschläge: **NmsCleanup_PropositionPurgeDelay** (siehe [Bereinigung der Vorschläge](#cleanup-of-propositions))
 
-   >[!NOTE]
-   >
-   >Die **[!UICONTROL Angebotsvorschläge]** ist nur verfügbar, wenn die **Interaction** installiert ist.
+  >[!NOTE]
+  >
+  >Die **[!UICONTROL Angebotsvorschläge]** ist nur verfügbar, wenn die **Interaction** installiert ist.
 
 * Ereignisse: **NmsCleanup_EventPurgeDelay** (siehe [Bereinigen abgelaufener Ereignisse](#cleansing-expired-events))
 * Archivierte Ereignisse: **NmsCleanup_EventHistoPurgeDelay** (siehe [Bereinigen abgelaufener Ereignisse](#cleansing-expired-events))
 
-   >[!NOTE]
-   >
-   >Die **[!UICONTROL Veranstaltungen]** und **[!UICONTROL Ereignisse mit Verlauf]** -Felder sind nur verfügbar, wenn die Variable **Message Center** installiert ist.
+  >[!NOTE]
+  >
+  >Die **[!UICONTROL Veranstaltungen]** und **[!UICONTROL Ereignisse mit Verlauf]** -Felder sind nur verfügbar, wenn die Variable **Message Center** installiert ist.
 
 * Audit-Protokoll: **XtkCleanup_AuditTrailPurgeDelay** (siehe [Bereinigung des Audit-Protokolls](#cleanup-of-audit-trail))
 
@@ -132,19 +132,19 @@ Diese Aufgabe löscht alle zu löschenden oder recycelten Sendungen.
 
    * In der Ausschlusstabelle des Versands (**NmsDlvExclusion**), wird die folgende Abfrage verwendet:
 
-      ```sql
-      DELETE FROM NmsDlvExclusion WHERE iDeliveryId=$(l)
-      ```
+     ```sql
+     DELETE FROM NmsDlvExclusion WHERE iDeliveryId=$(l)
+     ```
 
-      where **$(l)** ist die Kennung des Versands.
+     where **$(l)** ist die Kennung des Versands.
 
    * In der Coupontabelle (**NmsCouponValue**), wird die folgende Abfrage verwendet (mit Massenlöschungen):
 
-      ```sql
-      DELETE FROM NmsCouponValue WHERE iMessageId IN (SELECT iMessageId FROM NmsCouponValue WHERE EXISTS (SELECT B.iBroadLogId FROM $(BroadLogTableName) B WHERE B.iDeliveryId = $(l) AND B.iBroadLogId = iMessageId ) LIMIT 5000)
-      ```
+     ```sql
+     DELETE FROM NmsCouponValue WHERE iMessageId IN (SELECT iMessageId FROM NmsCouponValue WHERE EXISTS (SELECT B.iBroadLogId FROM $(BroadLogTableName) B WHERE B.iDeliveryId = $(l) AND B.iBroadLogId = iMessageId ) LIMIT 5000)
+     ```
 
-      where `$(l)` ist die Kennung des Versands.
+     where `$(l)` ist die Kennung des Versands.
 
    * In den Versandlog-Tabellen (**NmsBroadlogXxx**), werden Massenlöschungen in Stapeln von 20.000 Datensätzen durchgeführt.
    * In den Tabellen mit Angebotsvorschlägen (**NmsPropositionXxx**), werden Massenlöschungen in Stapeln von 20.000 Datensätzen durchgeführt.
@@ -155,13 +155,13 @@ Diese Aufgabe löscht alle zu löschenden oder recycelten Sendungen.
    * In der Protokolltabelle für Batch-Prozesse (**XtkJobLog**), werden Massenlöschungen in Stapeln von 20.000 Datensätzen durchgeführt. Diese Tabelle enthält das Protokoll der zu löschenden Sendungen.
    * In der Versand-URL-Tracking-Tabelle (**NmsTrackingUrl**), wird die folgende Abfrage verwendet:
 
-      ```sql
-      DELETE FROM NmsTrackingUrl WHERE iDeliveryId=$(l)
-      ```
+     ```sql
+     DELETE FROM NmsTrackingUrl WHERE iDeliveryId=$(l)
+     ```
 
-      where `$(l)` ist die Kennung des Versands.
+     where `$(l)` ist die Kennung des Versands.
 
-      Diese Tabelle enthält die URLs in den zu löschenden Sendungen, um deren Tracking zu ermöglichen.
+     Diese Tabelle enthält die URLs in den zu löschenden Sendungen, um deren Tracking zu ermöglichen.
 
 1. Der Versand wird aus der Versandtabelle (**NmsDelivery**):
 

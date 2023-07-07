@@ -6,7 +6,7 @@ badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classi
 feature: Workflows
 exl-id: cafdbc10-9c10-4d42-a485-c9880df8d371
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 100%
 
@@ -20,27 +20,27 @@ Die in Workflow-Diagrammen verwendeten Bilder können angepasst werden. Sie müs
 
 * Gehen Sie zur Wahl eines anderen Hintergrundbilds in den betroffenen Workflow und klicken Sie auf die Schaltfläche **[!UICONTROL Eigenschaften]**.
 
-   ![](assets/s_user_segmentation_properties_tab.png)
+  ![](assets/s_user_segmentation_properties_tab.png)
 
-   Das Symbol **[!UICONTROL Verknüpftes Element auswählen]** rechts vom Feld **[!UICONTROL Hintergrundbild]** ermöglicht die Auswahl eines neuen Bilds.
+  Das Symbol **[!UICONTROL Verknüpftes Element auswählen]** rechts vom Feld **[!UICONTROL Hintergrundbild]** ermöglicht die Auswahl eines neuen Bilds.
 
-   >[!NOTE]
-   >
-   >Die Breite des Hintergrundbilds muss ein Vielfaches von 4 Pixeln betragen.
+  >[!NOTE]
+  >
+  >Die Breite des Hintergrundbilds muss ein Vielfaches von 4 Pixeln betragen.
 
-   ![](assets/s_user_segmentation_background_select.png)
+  ![](assets/s_user_segmentation_background_select.png)
 
-   Klicken Sie auf **[!UICONTROL Verknüpftes Element öffnen]**, um eine Vorschau des neuen Bilds anzuzeigen.
+  Klicken Sie auf **[!UICONTROL Verknüpftes Element öffnen]**, um eine Vorschau des neuen Bilds anzuzeigen.
 
 * Bilder von Aktivitäten können angepasst werden, indem Sie auf dem entsprechenden Objekt einen Doppelklick machen. Gehen Sie dann in den **[!UICONTROL Erweitert]**-Tab.
 
-   Das Symbol **[!UICONTROL Verknüpftes Element auswählen]** rechts vom Feld **[!UICONTROL Bild]** ermöglicht die Auswahl eines neuen Bilds.
+  Das Symbol **[!UICONTROL Verknüpftes Element auswählen]** rechts vom Feld **[!UICONTROL Bild]** ermöglicht die Auswahl eines neuen Bilds.
 
-   ![](assets/s_user_segmentation_activity_image.png)
+  ![](assets/s_user_segmentation_activity_image.png)
 
-   Klicken Sie auf **[!UICONTROL Verknüpftes Element öffnen]**, um eine Vorschau des neuen Bilds anzuzeigen.
+  Klicken Sie auf **[!UICONTROL Verknüpftes Element öffnen]**, um eine Vorschau des neuen Bilds anzuzeigen.
 
-   ![](assets/s_user_segmentation_activity_image_select.png)
+  ![](assets/s_user_segmentation_activity_image_select.png)
 
 >[!NOTE]
 >

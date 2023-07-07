@@ -100,23 +100,23 @@ Die folgende Tabelle enthält eine Liste von speziellen Parametern, die vom Weit
 
 * Besuch einer Homepage-Identifizierungsseite
 
-   **https://myserver.adobe.com/r/9862?tagid=home**
+  **https://myserver.adobe.com/r/9862?tagid=home**
 
 * Erfassen von Daten zum Geschäftsvolumen
 
-   **https://myserver.adobe.com/r/4567?tagid=command&amp;amount=100&amp;article=2l**
+  **https://myserver.adobe.com/r/4567?tagid=command&amp;amount=100&amp;article=2l**
 
 * Auswahl eines Empfängerfelds
 
-   **https://myserver.adobe.com/r/2353?tagid=home&amp;rcpid=saccount%3D10**
+  **https://myserver.adobe.com/r/2353?tagid=home&amp;rcpid=saccount%3D10**
 
-   Ein Empfänger mit einer Kontonummer von 10 wird an die Startseite gesendet.
+  Ein Empfänger mit einer Kontonummer von 10 wird an die Startseite gesendet.
 
 * Standardversand verwenden
 
-   **https://myserver.adobe.com/r/2456?tagid=home&amp;jobid=e6**
+  **https://myserver.adobe.com/r/2456?tagid=home&amp;jobid=e6**
 
-   Ein Empfänger wird an die Startseite gesendet. Diese Informationen werden im Versand mit der Kennung 230 (e6 in Datenbank 16) gespeichert, es sei denn, mit dieser Abfrage wird ein Sitzungs-Cookie mit einer Versandkennung gesendet.
+  Ein Empfänger wird an die Startseite gesendet. Diese Informationen werden im Versand mit der Kennung 230 (e6 in Datenbank 16) gespeichert, es sei denn, mit dieser Abfrage wird ein Sitzungs-Cookie mit einer Versandkennung gesendet.
 
 >[!NOTE]
 >

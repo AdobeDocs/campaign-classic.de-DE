@@ -7,7 +7,7 @@ badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Personalization
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '969'
 ht-degree: 100%
 
@@ -100,9 +100,9 @@ Standardmäßig ist eine Liste mit Gestaltungsbausteinen verfügbar, um den Inha
 * **[!UICONTROL Powered by Adobe Campaign]**: Hiermit wird das Logo &quot;Powered by Adobe Campaign&quot; eingefügt.
 * **[!UICONTROL Mirrorseiten-URL]**: Hiermit wird die Mirrorseiten-URL eingefügt, damit Versanddesigner den Link prüfen können.
 
-   >[!NOTE]
-   >
-   >Weitere Informationen zur Erstellung der Mirror-Seite finden Sie unter [Erzeugen der Mirror-Seite](sending-messages.md#generating-the-mirror-page).
+  >[!NOTE]
+  >
+  >Weitere Informationen zur Erstellung der Mirror-Seite finden Sie unter [Erzeugen der Mirror-Seite](sending-messages.md#generating-the-mirror-page).
 
 * **[!UICONTROL Link zur Mirror-Seite]**: Hiermit wird der Link zur Mirror-Seite „Wenn die Nachricht nicht richtig angezeigt wird, bitte hier klicken“ eingefügt.
 * **[!UICONTROL Abmelde-Link]**: Hiermit wird ein Link zur Abmeldung von allen Nachrichten (Blockierungsliste) eingefügt.
@@ -111,9 +111,9 @@ Standardmäßig ist eine Liste mit Gestaltungsbausteinen verfügbar, um den Inha
 * **[!UICONTROL Anmelde-Link]**: Hiermit wird ein Anmelde-Link eingefügt, der beim Konfigurieren der Instanz definiert wurde.
 * **[!UICONTROL Registrierungslink (mit Werber)]**: Hiermit wird ein Anmelde-Link eingefügt, über den der Besucher und der Versand identifiziert werden kann. Der Link wurde beim Konfigurieren der Instanz definiert.
 
-   >[!NOTE]
-   >
-   >Dieser Baustein kann in Sendungen verwendet werden, die nur an Besucher gerichtet sind.
+  >[!NOTE]
+  >
+  >Dieser Baustein kann in Sendungen verwendet werden, die nur an Besucher gerichtet sind.
 
 * **[!UICONTROL Anmeldebestätigung]**: Hiermit wird ein Link eingefügt, mit dem die Anmeldung bestätigt werden kann.
 * **[!UICONTROL Teilen-Links in Social Media]**: Hiermit werden Schaltflächen eingefügt, mit denen der Empfänger mit dem E-Mail-Client sowie mit Facebook, Twitter und LinkedIn einen Link zum Inhalt der Mirror-Seite teilen kann (siehe [Weiterleiten von Nachrichten](viral-and-social-marketing.md#viral-marketing--forward-to-a-friend)).
@@ -136,9 +136,9 @@ Gehen Sie wie folgt vor, um Gestaltungsbausteine zu erstellen:
    * Wählen Sie die Option **[!UICONTROL Im Personalisierungsmenü anzeigen]**, um den Baustein in der Dropdown-Liste der Personalisierungsfelder verfügbar zu machen.
    * Bei Bedarf können Sie die Option **[!UICONTROL Der Inhalt des Bausteins ist formatabhängig (HTML oder Text)]** ankreuzen, um für jedes Format einen separaten Baustein zu konfigurieren.
 
-      In diesem Fall wird das Fenster in zwei Tabs – HTML- und Textinhalt – unterteilt, um die formatbedingten Inhalte separat erfassen zu können.
+     In diesem Fall wird das Fenster in zwei Tabs – HTML- und Textinhalt – unterteilt, um die formatbedingten Inhalte separat erfassen zu können.
 
-      ![](assets/s_ncs_user_personalized_block_b.png)
+     ![](assets/s_ncs_user_personalized_block_b.png)
 
    * Geben Sie den Inhalt der Gestaltungsbausteine (in HTML, Text, JavaScript usw.) ein und klicken Sie auf **[!UICONTROL Speichern]**.
 

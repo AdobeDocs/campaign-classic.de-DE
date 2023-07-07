@@ -23,7 +23,7 @@ ht-degree: 2%
 >
 >Einige Konfigurationen können nur von Adobe für Bereitstellungen durchgeführt werden, die von Adobe gehostet werden. Beispielsweise um auf die Server- und Instanzkonfigurationsdateien zuzugreifen. Weitere Informationen zu den verschiedenen Implementierungen finden Sie im Abschnitt [Hosting-Modelle](../../installation/using/hosting-models.md) oder [diese Seite](../../installation/using/capability-matrix.md).
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 SpamAssassin ist eine Software zur Filterung unerwünschter E-Mails. In Verbindung mit dieser Software kann Adobe Campaign E-Mails eine Punktzahl zuweisen und feststellen, ob eine Nachricht vor dem Start des Versands wahrscheinlich als unerwünscht erachtet wird. Dazu muss SpamAssassin auf den Anwendungsservern von Adobe Campaign installiert und konfiguriert werden und eine bestimmte Anzahl zusätzlicher Perl-Module erfordern.
 
@@ -144,16 +144,16 @@ Gehen Sie wie folgt vor, um SpamAssassin unter Windows zu installieren und zu ko
 
 * Installieren Sie bei Bedarf Perl und SpamAssassin mit dem folgenden Befehl:
 
-   ```
-   apt-get install spamassassin libxml-writer-perl
-   ```
+  ```
+  apt-get install spamassassin libxml-writer-perl
+  ```
 
 * Im **serverConf.xml** Datei (verfügbar in `/usr/local/[INSTALL]/nl6/conf/`), ändern Sie die **spamCheck** folgende Zeile:
 
-   ```
-   <spamCheck command="perl
-   /usr/local/[NSTALL]/nl6/bin/spamcheck.pl"/>
-   ```
+  ```
+  <spamCheck command="perl
+  /usr/local/[NSTALL]/nl6/bin/spamcheck.pl"/>
+  ```
 
 ### Installationsschritte in RHEL/CentOS {#installation-steps-in-rhel-centos}
 
