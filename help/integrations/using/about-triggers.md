@@ -8,9 +8,9 @@ audience: integrations
 content-type: reference
 exl-id: 0e337620-a49f-4e14-8c67-9279d74736f1
 source-git-commit: 2f6a5884e47ce10ce3c281a4377ee37522c52131
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '257'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 91%
 Dadurch werden flexiblere Integrationen möglich, da der Konfigurationsaufwand minimal ist und keine Drittanbieter beteiligt sind.
 Unterstützt werden auch große Traffic-Volumen, ohne dass die Performance von Marketing-Aktivitäten leidet. Beispielsweise kann die Integration eine Million Auslöser pro Stunde verarbeiten.
 
-![](assets/do-not-localize/book.png) Erfahren Sie, wie Sie [Erstellen eines Experience Cloud-Triggers](https://experienceleague.adobe.com/docs/experience-cloud/triggers/create.html) und kritische Verbraucherverhaltensweisen zu identifizieren, zu definieren und zu überwachen.
+![](assets/do-not-localize/book.png) Entdecken Sie, wie Sie [einen Experience Cloud-Trigger erstellen](https://experienceleague.adobe.com/docs/experience-cloud/triggers/create.html?lang=de) und kritische Verbraucherverhaltensweisen identifizieren, definieren und überwachen können.
 
 ## [!DNL Triggers]-Architektur  {#triggers-architecture}
 
