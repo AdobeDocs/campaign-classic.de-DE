@@ -2,13 +2,13 @@
 product: campaign
 title: Laden des Versandinhalts
 description: Laden des Versandinhalts
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Workflows
 exl-id: a52baffd-402b-4b33-ab72-ac954e4dee85
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 81d12ac055536fbe097466ad737bf7fee1b593ad
 workflow-type: tm+mt
-source-wordcount: '345'
-ht-degree: 100%
+source-wordcount: '352'
+ht-degree: 98%
 
 ---
 
@@ -46,7 +46,7 @@ Gehen Sie dazu wie folgt vor:
 1. Fügen Sie in der Aktivität **[!UICONTROL Versand]** im Tab **[!UICONTROL Script]** den folgenden Befehl hinzu, um den Inhalt der importierten Datei in den Versand zu laden:
 
    ```
-   delivery.content.md.source=loadFile(vars.filename)
+   delivery.content.html.source=loadFile(vars.filename)
    ```
 
    ![](assets/delivery_loadcontent_script.png)
