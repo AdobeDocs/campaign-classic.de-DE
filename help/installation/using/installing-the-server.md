@@ -2,16 +2,16 @@
 product: campaign
 title: Installieren des Servers
 description: Installieren des Servers
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
+badge-v7-prem: label="On-Premise und Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: c0cb4efa-cae9-4312-88fb-738857a89595
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: b58edd9566d0f3d6aad5d2768706ead66e11e949
 workflow-type: tm+mt
-source-wordcount: '410'
-ht-degree: 3%
+source-wordcount: '435'
+ht-degree: 7%
 
 ---
 
@@ -87,8 +87,6 @@ Sobald der Installationstest abgeschlossen ist, öffnen Sie eine Eingabeaufforde
 ```
 nlserver web
 ```
-
-![](assets/s_ncs_install_cmd_nlserverweb.png)
 
 Die Dateien im Installationsordner werden zum Konfigurieren der Adobe Campaign-Servermodule verwendet.
 
