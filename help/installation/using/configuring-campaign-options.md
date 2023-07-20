@@ -2,14 +2,14 @@
 product: campaign
 title: Campaign-Optionen konfigurieren
 description: Erfahren Sie, wie Sie Campaign-Optionen konfigurieren
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
+source-git-commit: 942d44104ae56e9334f42f10751979ce4f4a714d
 workflow-type: tm+mt
-source-wordcount: '3996'
+source-wordcount: '4014'
 ht-degree: 13%
 
 ---
@@ -72,11 +72,11 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_LogsPerTransac</span> <br /> </td> 
-   <td> Anzahl der BroadLogs, die für einen Versand gleichzeitig erstellt werden.<br /> </td> 
+   <td> Minimale Batch-Größe (Anzahl der Zeilen) für das Einfügen von broadLogs während einer Versandvorbereitung.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_MaxDelayPerTransac</span> <br /> </td> 
-   <td> Fügen Sie Logs (broadLogs) pro Transaktionen (in die Tabelle) ein: Anzahl der Zeilen, die pro Batch verarbeitet werden sollen.<br /> </td> 
+   <td> Schwelle der Batch-Dauer (Anzahl der Millisekunden), unter der sich die Batch-Größe für das Einfügen von broadLogs während einer Versandvorbereitung verdoppelt.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_MidAnalyzeBatchSize</span> <br /> </td> 
