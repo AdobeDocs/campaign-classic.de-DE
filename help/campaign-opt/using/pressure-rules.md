@@ -2,13 +2,13 @@
 product: campaign
 title: Druckregeln
 description: Druckregeln
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Fatigue Management, Typology Rules
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: be57635a6165790b8c8964d106ed0a3cb76c63af
 workflow-type: tm+mt
-source-wordcount: '3460'
-ht-degree: 100%
+source-wordcount: '3441'
+ht-degree: 99%
 
 ---
 
@@ -61,8 +61,6 @@ Um eine Typologieregel vom Typ **[!UICONTROL Druck]** zu erstellen und zu konfig
    >[!NOTE]
    >
    >Die geplanten Sendungen werden nur berücksichtigt, wenn die Option **[!UICONTROL Sendungen im Planungskalender einbeziehen]** ausgewählt wurde. Lesen Sie diesbezüglich auch den Abschnitt [Festlegen des Zeitraums](#setting-the-period).
-   >
-   >Diese Funktion ist in Campaign v8 nicht verfügbar.
    >
 
 1. Geben Sie den Berechnungsmodus der maximalen Nachrichtenanzahl an.
@@ -159,10 +157,6 @@ Um die berücksichtigten Sendungen auf einen Zeitraum von 15 Tagen zu begrenzen,
 oder
 
 1. **7T** in das Feld **[!UICONTROL Betroffener Zeitraum]** eingeben UND die Option **[!UICONTROL Sendungen im Planungskalender einbeziehen]** prüfen: In dieser Berechnung werden Sendungen berücksichtigt, die bis zu sieben Tage vor dem Verfügbarkeitsdatum und bis zu sieben Tage nach dem Verfügbarkeitsdatum, an dem die Regel angewendet wird, durchgeführt werden.
-
-   >[!AVAILABILITY]
-   >Diese Funktion ist in Campaign v8 nicht verfügbar.
-   >
 
 Das Anfangsdatum des Zeitraums hängt von der Konfiguration der Datenbank ab.
 
@@ -336,10 +330,6 @@ Konfigurieren Sie zuerst die Druckregel.
    ![](assets/campaign_opt_pressure_example_1.png)
 
    In dieser Berechnung werden Sendungen berücksichtigt, die bis zu sieben Tage vor dem Verfügbarkeitsdatum und bis zu sieben Tage nach dem Verfügbarkeitsdatum durchgeführt werden. Weitere Informationen hierzu finden Sie unter [Festlegen des Zeitraums](#setting-the-period).
-
-   >[!AVAILABILITY]
-   >Geplante Sendungen können in Campaign v8 nicht berücksichtigt werden.
-   >
 
 1. Verknüpfen Sie diese Regel im Tab **[!UICONTROL Typologien]** mit einer Kampagnen-Typologie.
 1. Speichern Sie Ihre Änderungen.
