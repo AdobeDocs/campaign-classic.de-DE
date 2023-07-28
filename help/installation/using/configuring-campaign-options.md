@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: 942d44104ae56e9334f42f10751979ce4f4a714d
+source-git-commit: 728fc285fbd562003199c53339899bbc4441bfc6
 workflow-type: tm+mt
-source-wordcount: '4014'
+source-wordcount: '4015'
 ht-degree: 13%
 
 ---
@@ -49,7 +49,7 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">DmRendering_SeedTargets</span> <br /> </td> 
-   <td> Liste der Schemas, für die Sie Testadressen für das Inbox Rendering verwenden möchten. (Elementnamen sind durch Kommas getrennt) Beispiel: custom_nms_recipient.<br /> </td> 
+   <td> Liste der Schemas, für die Sie Testadressen für das Inbox Rendering verwenden möchten. (Elementnamen werden durch Kommas getrennt) Beispiel: custom_nms_recipient.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">EMTA_BCC_ADDRESS</span> </td> 
@@ -57,7 +57,7 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr>
   <tr> 
    <td> <span class="uicontrol">NMS_ActivateOwnerConfirmation</span> <br /> </td> 
-   <td><p> Hiermit können Sie dem für den Versand verantwortlichen Benutzer die Validierung des Versands gestatten, wenn in den Versandeigenschaften ein bestimmter Benutzer oder eine Benutzergruppe für den Start eines Versands bestimmt ist.</p><p> Aktivieren Sie dazu die Option, indem Sie "1" als Wert eingeben. Um diese Option zu deaktivieren, geben Sie "0" ein.</p><p> Der Sendebestätigungsprozess funktioniert dann standardmäßig: Nur der Benutzer oder die Benutzergruppe, der bzw. die in den Versandeigenschaften für den Versand bestimmt ist (oder ein Administrator), kann den Versand bestätigen und durchführen. Weitere Informationen finden Sie in <a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">diesem Abschnitt</a>.</p> </td> 
+   <td><p> Hiermit können Sie dem für den Versand verantwortlichen Benutzer die Validierung des Versands gestatten, wenn in den Versandeigenschaften ein bestimmter Benutzer oder eine Benutzergruppe für den Start eines Versands bestimmt ist.</p><p> Aktivieren Sie dazu die Option, indem Sie "1" als Wert eingeben. Um diese Option zu deaktivieren, geben Sie "0" ein.</p><p> Der Versandvalidierungsprozess funktioniert dann standardmäßig: Nur der in den Versandeigenschaften für den Versand bestimmte Benutzer oder die Benutzergruppe (oder ein Administrator) kann den Versand bestätigen und durchführen. Weitere Informationen finden Sie in <a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">diesem Abschnitt</a>.</p> </td> 
    <tr> 
    <td> <span class="uicontrol">Nms_DefaultRcpSchema</span> <br /> </td> 
    <td> Adobe Campaign verwendet eine globale Variable "Nms_DefaultRcpSchema", um ein Dialogfeld mit der standardmäßigen Empfängerdatenbank (nms:recipient) zu erstellen.<br /> Der Optionswert muss dem Namen des Schemas entsprechen, das der externen Empfängertabelle entspricht.<br /> </td> 
@@ -112,7 +112,7 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
  <tr> 
    <td> <span class="uicontrol">NmsDelivery_MaxDownloadedImageSize</span> <br /> </td> 
-   <td> Ermöglicht die Definition der maximalen Größe (in Byte) für ein Bild, das von einer personalisierten URL heruntergeladen und an eine E-Mail angehängt wird. Der Standardwert ist 100.000 Bytes. Beim Testversand und Herunterladen des bzw. der Bilder zur Verarbeitung der E-Mail, wenn die Größe eines Bildes diesen Wert überschreitet oder wenn ein Download-Problem vorliegt, wird in den Versandlogs ein Fehler angezeigt und der Testversand schlägt fehl.<br /> </td> 
+   <td> Ermöglicht die Definition der maximalen Größe (in Byte) für ein Bild, das von einer personalisierten URL heruntergeladen und an eine E-Mail angehängt wird. Der Standardwert ist 100.000 Bytes (100 KB). Beim Testversand und Herunterladen des bzw. der Bilder zur Verarbeitung der E-Mail, wenn die Größe eines Bildes diesen Wert überschreitet oder wenn ein Download-Problem vorliegt, wird in den Versandlogs ein Fehler angezeigt und der Testversand schlägt fehl.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_MaxRecommendedAttachments</span> <br /> </td> 
@@ -172,7 +172,7 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsInmail_AllowlistEmails</span> <br /> </td> 
-   <td> Liste der autorisierten E-Mail-Adressen für die Weiterleitung (vom Modul für die Verarbeitung eingehender E-Mails). Die Adressen müssen durch Kommas getrennt werden (oder *, um alle zuzulassen). z. B. xyz@abc.com, pqr@abc.com.<br /> </td> 
+   <td> Liste der autorisierten E-Mail-Adressen für die Weiterleitung (vom Modul für die Verarbeitung eingehender E-Mails). Die Adressen müssen durch Kommas getrennt werden (oder *, um alle zuzulassen). Beispiel: xyz@abc.com, pqr@abc.com.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsLine_AESKey</span> <br /> </td> 
@@ -180,19 +180,19 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsNPAI_EmailMaxError</span> <br /> </td> 
-   <td> Im Kanal "E-Mail"(als Standard verwenden) : Maximale Anzahl an Fehlern, die bei SOFT-Fehlern beim Versand akzeptiert werden, bevor der Empfänger unter Quarantäne gestellt wird.<br /> </td> 
+   <td> Im Kanal "E-Mail"(Standard verwenden) : Maximale Anzahl an Fehlern, die akzeptiert werden, bei SOFT-Fehlern während des Versands, bevor der Empfänger unter Quarantäne gestellt wird.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsNPAI_EmailSignificantErrorDelay</span> <br /> </td> 
-   <td> Im Kanal "E-Mail"(als Standard verwenden) : Minimaler Zeitraum, der seit dem zuvor referenzierten SOFT-Fehler verbracht wurde, bevor ein neuer SOFT-Fehler berücksichtigt wurde.<br /> </td> 
+   <td> Bei Kanal "E-Mail"(als Standard verwenden) : Minimaler Zeitraum seit dem vorherigen referenzierten SOFT-Fehler, bevor ein neuer SOFT-Fehler berücksichtigt wird.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsNPAI_MobileMaxError</span> <br /> </td> 
-   <td> Auf Kanal "mobile" : Maximale Anzahl an Fehlern, die bei SOFT-Fehlern beim Versand akzeptiert werden, bevor der Empfänger unter Quarantäne gestellt wird.<br /> </td> 
+   <td> Auf Kanal "Mobil" : Maximale Anzahl an Fehlern, die akzeptiert werden, bei SOFT-Fehlern beim Versand, bevor der Empfänger unter Quarantäne gestellt wird.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsNPAI_MobileSignificantErrorDelay</span> <br /> </td> 
-   <td> Auf Kanal "mobile" : Minimaler Zeitraum, der seit dem zuvor referenzierten SOFT-Fehler verbracht wurde, bevor ein neuer SOFT-Fehler berücksichtigt wurde.<br /> </td> 
+   <td> Bei Kanal "mobil" : Minimaler Zeitraum, der seit dem zuvor referenzierten SOFT-Fehler verbracht wurde, bevor ein neuer SOFT-Fehler berücksichtigt wurde.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsMidSourcing_LogsPeriodHour</span> <br /> </td>
@@ -236,7 +236,7 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsSMS_Priority</span> <br /> </td> 
-   <td> Parameter gesendeter SMS-Nachrichten: Informationen, die an das SMS-Gateway übermittelt werden, um die Priorität der Nachricht anzugeben.<br /> </td> 
+   <td> Parameter für gesendete SMS-Nachrichten: Informationen, die an das SMS-Gateway übermittelt werden, um die Priorität der Nachricht anzugeben.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsSMS_RetryCount</span> <br /> </td> 
@@ -248,7 +248,7 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsUserAgentStats_LastConsolidation</span> <br /> </td> 
-   <td> Letztes Konsolidierungstermin für <span class="uicontrol">NmsUserAgent</span> Statistiken.<br /> </td> 
+   <td> Letzter Konsolidierungszeitpunkt für <span class="uicontrol">NmsUserAgent</span> Statistiken.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsWebSegments_LastStates</span> <br /> </td> 
@@ -413,7 +413,7 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkAcceptOldPasswords</span> <br /> </td> 
-   <td> (Kompatibilitätsmodus installieren: build&gt;6000) Bei Aktivierung (Wert "1") ermöglicht diese Option die Verwendung alter, in der Datenbank gespeicherter Passwörter für die Verbindung zu externen Konten oder zur Instanz.<br /> </td> 
+   <td> (Kompatibilitätsmodus installieren: Build &gt; 6000) Wenn aktiviert (Wert "1"), ermöglicht diese Option die Verwendung alter in der Datenbank gespeicherter Passwörter für die Verbindung zu externen Konten oder zur Instanz.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkKey</span> <br /> </td> 
@@ -460,8 +460,8 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
    <td> <span class="uicontrol">MC_EnrichmentCustomJs</span> <br /> </td> 
    <td> JavaScript-Bibliothek, die für die Anreicherung von Ereignissen personalisiert werden soll. Muss die Implementierung dieser beiden Funktionen enthalten:<br /> 
     <ul> 
-     <li> <p> <span class="uicontrol">enrichRtEvents(aiEventId);</span> : Ereignisse in der Datenbank anreichert und speichert (wobei <span class="uicontrol">aiEventId</span> entspricht der Tabelle der verarbeiteten Echtzeit-Ereignisse).</p> </li> 
-     <li> <p> <span class="uicontrol">enrichBatchEvents(aiEventId);</span> : Ereignisse in der Datenbank anreichert und speichert (wobei <span class="uicontrol">aiEventId</span> entspricht der ID-Tabelle der verarbeiteten Batch-Ereignisse).</p> </li> 
+     <li> <p> <span class="uicontrol">enrichRtEvents(aiEventId);</span> : erweitert und speichert Ereignisse in der Datenbank (wobei <span class="uicontrol">aiEventId</span> entspricht der Tabelle der verarbeiteten Echtzeit-Ereignisse).</p> </li> 
+     <li> <p> <span class="uicontrol">enrichBatchEvents(aiEventId);</span> : erweitert und speichert Ereignisse in der Datenbank (wobei <span class="uicontrol">aiEventId</span> entspricht der ID-Tabelle der verarbeiteten Batch-Ereignisse).</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -558,7 +558,7 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsLine_MessageCenterURL</span> <br /> </td> 
-   <td> Message Center-Server-URL, die zum Senden von Willkommensnachrichten verwendet wird (LINE-Kanal).<br /> </td> 
+   <td> Message Center Server URL, die zum Senden von Willkommensnachrichten verwendet wird (LINE-Kanal).<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -634,7 +634,7 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
    <td> <span class="uicontrol">WdbcKillSessionPolicy</span> <br /> </td> 
    <td>Sie können das Verhalten "Unbedingter Stopp"bei allen Workflows und PostgreSQL-Datenbankabfragen gemäß den folgenden potenziellen Werten beeinflussen:<ul>
     <li><p>0 - Standard: Beendet den Workflow-Prozess, keine Auswirkungen auf die Datenbank<p></li>
-    <li><p>1 - pg_cancel_backend: stoppt den Workflow-Prozess und bricht die Abfrage in der Datenbank ab<p></li>
+    <li><p>1 - pg_cancel_backend: Hält den Workflow-Prozess an und bricht die Abfrage in der Datenbank ab<p></li>
     <li><p>2 - pg_terminate_backend: Beendet den Workflow-Prozess und beendet die Abfrage in der Datenbank<p></li></ul></td> 
   </tr>  
     <tr> 
@@ -655,7 +655,7 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
     <tr> 
    <td> <span class="uicontrol">WdbcOptions_TempDbName</span> <br /> </td> 
-   <td> Ermöglicht die Konfiguration einer separaten Datenbank für Arbeitstabellen auf Microsoft SQL Server, um Backups und Replikation zu optimieren. Die Option entspricht dem Namen der temporären Datenbank: Arbeitstabellen werden, falls angegeben, in diese Datenbank geschrieben. Beispiel: "tempdb.dbo". (Beachten Sie, dass der Name mit einem Punkt enden muss). <a href="../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server">Weitere Informationen</a> <br /> </td> 
+   <td> Ermöglicht die Konfiguration einer separaten Datenbank für Arbeitstabellen auf Microsoft SQL Server, um Backups und Replikation zu optimieren. Die Option entspricht dem Namen der temporären Datenbank: Arbeitstabellen werden in diese Datenbank geschrieben, falls angegeben. Beispiel: "tempdb.dbo". (Beachten Sie, dass der Name mit einem Punkt enden muss). <a href="../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server">Weitere Informationen</a> <br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcTimeZone</span> <br /> </td> 
@@ -703,7 +703,7 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">PostUpgradeLastError</span> <br /> </td> 
-   <td> Informationen zum Fehler, der beim Postupgrade aufgetreten ist, entsprechend der folgenden Syntax:<br /> <strong>{Build number}:{mode: pre/post/...}:{The 'lessThan'/'greaterOrEquelThan' where error occur + sub-step}</strong> </td> 
+   <td> Informationen zum Fehler, der beim Postupgrade aufgetreten ist, entsprechend der folgenden Syntax:<br /> <strong>{Build number}:{mode: pre/post/..}:{The 'lessThan'/'greaterOrEquelThan' where error occur + sub step}</strong> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkCleanup_NoStats</span> <br /> </td> 
@@ -748,11 +748,11 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">AAM_DataSourceId</span> <br /> </td> 
-   <td> Option, die für die Integration mit Adobe Audience Manager verwendet wird.<br /> </td> 
+   <td> Die für die Integration mit Adobe Audience Manager verwendete Option.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">AAM_DestinationId</span> <br /> </td> 
-   <td> Option, die für die Integration mit Adobe Audience Manager verwendet wird.<br /> </td> 
+   <td> Die für die Integration mit Adobe Audience Manager verwendete Option.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcCapabilities_Teradata</span> <br /> </td> 
@@ -1042,7 +1042,7 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkWebForm_Password</span> <br /> </td> 
-   <td> Kennwort der Instanz, die für die Invalidierung eines Webformulars im Modus "Andere Server(s)"verwendet werden soll.<br /> </td> 
+   <td> Kennwort der Instanz, die für die Invalidierung eines Webformulars im Modus "Andere Server" verwendet werden soll.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkWebForm_ServersMode</span> <br /> </td> 
