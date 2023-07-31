@@ -2,16 +2,17 @@
 product: campaign
 title: Integration in einen Webserver für Linux
 description: Erfahren Sie, wie Sie Campaign in einen Webserver (Linux) integrieren.
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
+badge-v7-prem: label="On-Premise und Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: 4f8ea358-a38d-4137-9dea-f398e60c5f5d
-source-git-commit: 403227736e2e8c606204e9324d0afb5b71be62a5
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 4%
+source-wordcount: '579'
+ht-degree: 7%
 
 ---
 
@@ -165,7 +166,7 @@ Gehen Sie wie folgt vor:
 
 1. Für **RHEL7**:
 
-   Fügen Sie die `/etc/systemd/system/httpd.service` mit folgendem Inhalt:
+   Fügen Sie die `/etc/systemd/system/httpd.service` -Datei mit folgendem Inhalt:
 
    ```
    .include /usr/lib/systemd/system/httpd.service

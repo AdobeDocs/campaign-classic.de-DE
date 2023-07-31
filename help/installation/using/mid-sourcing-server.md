@@ -2,16 +2,17 @@
 product: campaign
 title: Mid-Sourcing-Server in Campaign installieren
 description: In diesem Abschnitt wird die Installation und Konfiguration eines Mid-Sourcing-Servers in Campaign beschrieben.
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
+badge-v7-prem: label="On-Premise und Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 3e55d7f5-2858-4390-bba9-8fb5be0c3d98
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1051'
-ht-degree: 2%
+source-wordcount: '1076'
+ht-degree: 4%
 
 ---
 
@@ -21,7 +22,7 @@ ht-degree: 2%
 
 In diesem Abschnitt werden die Installation und Konfiguration eines Mid-Sourcing-Servers sowie die Bereitstellung einer Instanz beschrieben, die es Drittanbietern ermöglicht, Nachrichten in **Mid-Sourcing** -Modus.
 
-Die &quot;Mid-Sourcing&quot;-Architektur wird im Abschnitt [Mid-Sourcing-Bereitstellung](../../installation/using/mid-sourcing-deployment.md).
+Die Mid-Sourcing-Architektur wird im Abschnitt [Mid-Sourcing-Bereitstellung](../../installation/using/mid-sourcing-deployment.md).
 
 Die Installation eines Mid-Sourcing-Servers erfolgt auf die gleiche Weise wie die normale Installation eines Servers (siehe Standardkonfiguration). Es handelt sich um eine unabhängige Instanz mit einer eigenen Datenbank, die für die Durchführung von Sendungen verwendet werden kann. Einfach ausgedrückt, enthält es eine zusätzliche Konfiguration, mit der Remote-Instanzen Sendungen im Mid-Sourcing-Modus ausführen können.
 
@@ -41,7 +42,7 @@ Im folgenden Verfahren wird eine Konfiguration mit einem einzelnen Mid-Sourcing-
 
 ### Installation und Konfiguration des Anwendungsservers für die Mid-Sourcing-Bereitstellung {#installing-and-configuring-the-application-server-for-mid-sourcing-deployment}
 
-Das Installationsverfahren entspricht dem der eigenständigen Instanz. Siehe [Installation und Konfiguration (ein Computer)](../../installation/using/standalone-deployment.md#installing-and-configuring--single-machine-).
+Das Installationsverfahren entspricht dem der eigenständigen Instanz. Siehe Abschnitt [Installation und Konfiguration (ein Computer)](../../installation/using/standalone-deployment.md#installing-and-configuring--single-machine-).
 
 Sie müssen jedoch Folgendes anwenden:
 
@@ -66,7 +67,7 @@ Sie müssen jedoch Folgendes anwenden:
   Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#enabling-processes).
 
 * Schritte **6**, **9** und **10** nicht erforderlich sind.
-* Während der Schritte **12** und **13** müssen Sie den 8080-Port in der Verbindungs-URL angeben (da die Konsole direkt mit Tomcat und nicht über den Webserver kommuniziert). Die URL wird zu `http://console.campaign.net:8080`. Schritt **13**, wählen Sie die **[!UICONTROL Problem bei Mid-Sourcing]** -Paket sowie die zu installierenden Pakete.
+* Schritte **12** und **13** müssen Sie den 8080-Port in der Verbindungs-URL angeben (da die Konsole direkt mit Tomcat und nicht über den Webserver kommuniziert). Die URL wird zu `http://console.campaign.net:8080`. Schritt **13**, wählen Sie die **[!UICONTROL Problem bei Mid-Sourcing]** -Paket sowie die zu installierenden Pakete.
 
   ![](assets/s_ncs_install_midsourcing02.png)
 
@@ -76,7 +77,7 @@ Sie müssen jedoch Folgendes anwenden:
 
 ### Mid-Sourcing-Server installieren und konfigurieren {#installing-and-configuring-the-mid-sourcing-server}
 
-Suchen Sie in der Client-Konsole die **E-Mail-Routing mit Mid-Sourcing** Mid-Sourcing-Konto (im **/Administration/Externe Konten/** Ordner). Füllen Sie die **URL des Servers**, **account**, **password** und **URL der Mirrorseite** Einstellungen mit den Informationen, die vom Server-Provider bereitgestellt werden, der den Mid-Sourcing-Server hostet. Testet die Verbindung
+Suchen Sie in der Client-Konsole die **E-Mail-Routing mit Mid-Sourcing** Mid-Sourcing-Konto (im **/Administration/Externe Konten/** -Ordner). Füllen Sie die **URL des Servers**, **account**, **password** und **URL der Mirrorseite** Einstellungen mit den Informationen, die vom Server-Provider bereitgestellt werden, der den Mid-Sourcing-Server hostet. Testet die Verbindung
 
 >[!NOTE]
 >
@@ -96,7 +97,7 @@ Suchen Sie in der Client-Konsole die **E-Mail-Routing mit Mid-Sourcing** Mid-Sou
 
 1. Konfiguration für den Empfang im Mid-Sourcing-Modus
 
-   Legen Sie das Passwort des Übermittlungskontos fest: Im **/Mid-Sourcing/Access Management/Operatoren/** Ordner, die **mid** -Operator wird von der Remote-Instanz für Übermittlungen im Mid-Sourcing-Modus verwendet. Sie müssen ein Kennwort für diesen Benutzer festlegen und es dem Administrator der Sendeinstanz geben.
+   Legen Sie das Passwort des Sendekontos fest: Im **/Mid-Sourcing/Access Management/Operatoren/** Ordner, die **mid** -Operator wird von der Remote-Instanz für Übermittlungen im Mid-Sourcing-Modus verwendet. Sie müssen ein Kennwort für diesen Benutzer festlegen und es dem Administrator der Sendeinstanz geben.
 
    Die **Mid-Sourcing-Plattform** erstellt die Standardordner für die Speicherung der gesendeten Sendungen und den Standardoperator für die Übermittlung.
 
@@ -108,7 +109,7 @@ Suchen Sie in der Client-Konsole die **E-Mail-Routing mit Mid-Sourcing** Mid-Sou
 
 Es ist möglich, dass eine Mid-Sourcing-Instanz von mehreren Sendeinstanzen gemeinsam genutzt wird. Jede dieser Instanzen muss mit einem Benutzer in der Mid-Sourcing-Datenbank verknüpft werden. So erstellen Sie ein zweites Konto auf dem Mid-Sourcing-Server:
 
-1. Erstellen Sie einen Ordner im **[!UICONTROL Mid-Sourcing > Sendungen]** -Knoten, der mit dem standardmäßigen Mid-Sourcing-Konto verknüpft wird (z. B.: prod).
+1. Erstellen Sie einen Ordner im **[!UICONTROL Mid-Sourcing > Sendungen]** -Knoten, der mit dem standardmäßigen Mid-Sourcing-Konto verknüpft wird (z. B. prod).
 1. Erstellen Sie einen Ordner im **[!UICONTROL Mid-Sourcing > Sendungen]** Knoten mit demselben Namen wie das Konto (z. B.: accept_test).
 
    ![](assets/mid_recette_account.png)
@@ -135,7 +136,7 @@ Sie müssen die Mid-Sourcing-Server-Einstellung in der Datei serverConf.xml änd
 
 Das Attribut &#39;@name&#39; muss die folgenden Regeln beachten:
 
-**&#39;marketing_account_operator_name&#39;.affinity_name&#39;.&#39;affinity_group&#39;**
+**&#39;marketing_account_operator_name&#39;.&#39;affinity_name&#39;.&#39;affinity_group&#39;**
 
 &#39;marketing_account_operator_name&#39; bezieht sich auf den internen Namen des Mid-Sourcing-Kontos, der in der Mid-Sourcing-Instanz deklariert wurde.
 
@@ -156,7 +157,7 @@ Sie müssen den Server anhalten und dann neu starten, damit die Änderung übern
 
    ![](assets/s_ncs_install_midsourcing_tracking02.png)
 
-1. Wenn Sie die Verbindungsparameter eingegeben haben, klicken Sie auf **[!UICONTROL Konfiguration bestätigen]**.
+1. Klicken Sie nach Eingabe der Verbindungsparameter auf **[!UICONTROL Konfiguration bestätigen]**.
 1. Geben Sie bei Bedarf den Speicherort an, an dem die in Sendungen enthaltenen Bilder gespeichert werden sollen. Wählen Sie dazu einen der Veröffentlichungsmodi aus der Dropdown-Liste aus.
 
    ![](assets/s_ncs_install_midsourcing_tracking03.png)

@@ -2,16 +2,17 @@
 product: campaign
 title: Aktualisierung auf einen neuen Build
 description: Technische Schritte zum Upgrade auf einen neuen Build
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring, Upgrade
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
+badge-v7-prem: label="On-Premise und Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
 audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: 4aaa6256-256a-441d-80c9-430f8e427875
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1172'
-ht-degree: 12%
+source-wordcount: '1197'
+ht-degree: 13%
 
 ---
 
@@ -73,7 +74,7 @@ Gehen Sie wie folgt vor, um die Aktualisierungsdatei auszuführen:
 
    Um diese Datei herunterzuladen, stellen Sie eine Verbindung zum [Software Distribution-Portal](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) Verwendung Ihrer Benutzeranmeldeinformationen. Weitere Informationen zur Softwareverteilung finden Sie unter [diese Seite](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de).
 
-1. Wählen Sie den Installationsmodus aus: Auswählen **[!UICONTROL Aktualisieren oder Reparieren]**
+1. Wählen Sie den Installationsmodus aus: Wählen Sie **[!UICONTROL Aktualisieren oder Reparieren]**
 1. Klicken Sie auf **[!UICONTROL Weiter]** .
 1. Klicken Sie auf **[!UICONTROL Beenden]** .
 
@@ -95,7 +96,7 @@ Auf diese Weise können Sie die folgenden Vorgänge ausführen:
 
 >[!NOTE]
 >
->Dieser Vorgang sollte nur einmal und nur auf einem **nlserver web**) Anwendungsserver.
+>Dieser Vorgang sollte nur einmal und nur auf einem **nlserver web**) Anwendungsserver
 
 Überprüfen Sie dann, ob die Synchronisation Fehler oder Warnungen erzeugt hat. Weitere Informationen hierzu finden Sie unter [Beheben von Aktualisierungskonflikten](#resolving-upgrade-conflicts).
 
@@ -125,7 +126,7 @@ Gehen Sie in einer Linux-Umgebung wie folgt vor, um Adobe Campaign auf einen neu
 
 ### Aktualisierte Pakete abrufen {#obtain-updated-packages}
 
-Beginnen Sie mit der Wiederherstellung der beiden aktualisierten Pakete von Adobe Campaign: Verbindung zu [Software Distribution-Portal](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) Verwendung Ihrer Benutzeranmeldeinformationen. Weitere Informationen zur Softwareverteilung finden Sie unter [diese Seite](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de).
+Starten Sie, indem Sie beide aktualisierten Pakete von Adobe Campaign wiederherstellen: Stellen Sie eine Verbindung zum [Software Distribution-Portal](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) Verwendung Ihrer Benutzeranmeldeinformationen. Weitere Informationen zur Softwareverteilung finden Sie unter [diese Seite](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de).
 
 Die Datei lautet **nlserver6-v7-XXX.rpm**
 
@@ -186,7 +187,7 @@ Starten Sie dann Apache neu:
 
 Bei der Synchronisierung der Ressourcen muss die Variable **postupgrade** -Befehl können Sie erkennen, ob bei der Synchronisierung Fehler oder Warnungen aufgetreten sind.
 
-### Anzeigen des Synchronisierungsergebnisses {#view-the-synchronization-result}
+### Synchronisierungsergebnis anzeigen {#view-the-synchronization-result}
 
 Es gibt zwei Möglichkeiten, das Synchronisierungsergebnis anzuzeigen:
 
@@ -215,7 +216,7 @@ Gehen Sie wie folgt vor, um einen Konflikt zu lösen:
 Es gibt drei Möglichkeiten, einen Konflikt zu lösen:
 
 * **[!UICONTROL Als aufgelöst deklarieren]** : erfordert vorab eine Benutzerinteraktion.
-* **[!UICONTROL Neue Version akzeptieren]** : empfohlen, wenn die mit Adobe Campaign bereitgestellten Ressourcen vom Benutzer nicht geändert wurden.
+* **[!UICONTROL Neue Version akzeptieren]** : wird empfohlen, wenn die mit Adobe Campaign bereitgestellten Ressourcen vom Benutzer nicht geändert wurden.
 * **[!UICONTROL Aktuelle Version beibehalten]** : bedeutet, dass die Aktualisierung abgelehnt wird.
 
   >[!IMPORTANT]
@@ -245,7 +246,7 @@ Beispielsweise darf eine Unicode-Datenbank nicht nur die Speicherung von LATIN1-
 
 ### Windows {#in-windows-1}
 
-Auf dem Computer, auf dem der Adobe Campaign-Anwendungsserver installiert ist (**nlserver web**), laden Sie die Datei herunter und kopieren Sie sie.  **setup-client-6.XXXX.exe** n **[Pfad der Anwendung]/datakit/nl/eng/jsp**.
+Auf dem Computer, auf dem der Adobe Campaign-Anwendungsserver installiert ist (**nlserver web**), herunterladen und kopieren Sie die Datei  **setup-client-6.XXXX.exe** n **[Pfad der Anwendung]/datakit/nl/eng/jsp**.
 
 Wenn die Clientkonsolen das nächste Mal verbunden werden, informiert ein Fenster die Benutzer über die Verfügbarkeit eines Updates und bietet ihnen die Möglichkeit, es herunterzuladen und zu installieren.
 
@@ -255,7 +256,7 @@ Wenn die Clientkonsolen das nächste Mal verbunden werden, informiert ein Fenste
 
 ### Linux {#in-linux-1}
 
-Auf dem Computer, auf dem der Adobe Campaign-Anwendungsserver (**nlserver web**) installiert ist, rufen Sie die  **setup-client-6.XXXX.exe** Packen und kopieren Sie es, speichern Sie als **/usr/local/neolane/nl6/datakit/nl/eng/jsp**:
+Auf dem Computer mit dem Adobe Campaign-Anwendungsserver (**nlserver web**) installiert ist, rufen Sie die  **setup-client-6.XXXX.exe** Packen und kopieren Sie es, speichern Sie als **/usr/local/neolane/nl6/datakit/nl/eng/jsp**:
 
 ```
  cp setup-client-6.XXXX.exe /usr/local/neolane/nl6/datakit/nl/eng/jsp

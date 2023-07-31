@@ -2,10 +2,11 @@
 product: campaign
 title: Glossar für Adobe Campaign
 description: Glossar für Adobe Campaign
+feature: Overview
 role: User, Data Architect
 level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
-source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '5974'
 ht-degree: 100%
@@ -211,7 +212,7 @@ Weitere Informationen zum [Versand](../../delivery/using/communication-channels.
 
 +++**Versandanalyse**
 
-Die Versandanalyse wird in der Vorbereitungsphase des Versands durchgeführt. Bei diesem Prozess wird der Nachrichteninhalt mit den Profildaten des/der Empfangenden kombiniert und dadurch die eine personalisierte E-Mail erstellt, die dem/der Empfangenden gesendet wird. Basierend auf der definierten Versandanalyse-Logik können Empfangende aus der Zielgruppe ausgeschlossen oder der Versand ganz gestoppt werden. Dieser Prozess umfasst auch die Evaluierung der Logik der dynamischen Inhalte und das Einfügen von spezifisch auf das jeweilige Empfängerprofil zugeschnittenen Angeboten.
+Die Versandanalyse wird in der Vorbereitungsphase des Versands durchgeführt. Bei diesem Prozess wird der Nachrichteninhalt mit den Profildaten des/der Empfangenden kombiniert und dadurch die eine personalisierte E-Mail erstellt, die dem/der Empfangenden gesendet wird. Basierend auf der definierten Versandanalyse-Logik können Empfangende aus der Zielgruppe ausgeschlossen oder der Versand ganz gestoppt werden. Dieser Prozess umfasst auch die Auswertung der Logik der dynamischen Inhalte und das Einfügen von spezifisch auf das jeweilige Empfängerprofil zugeschnittenen Angeboten.
 
 Weitere Informationen zur [Versandanalyse](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery).
 +++
@@ -333,11 +334,11 @@ An engine call is a server call that starts real-time processing on server side 
 +++
 -->
 
-+++**Anreicherungsaktivität**
++++**Aktivität „Anreicherung“**
 
-Die Anreicherungsaktivität ist eine erweiterte Workflow-Aktivität, die es Ihnen ermöglicht, die generierten Arbeitstabellendaten anzureichern, die später im Workflow verarbeitet werden. Diese Aktivität erfolgt im Allgemeinen im Anschluss an Aktivitäten der Zielgruppenbestimmung oder des Dateiimports und vor Aktivitäten, die die Daten der Zielgruppenbestimmung verwenden. Mit Anreicherungen können die eingehenden Transitionsdaten transformiert werden und die Aktivität kann so konfiguriert werden, dass die ausgehende Transition mit erweiterten Daten durchgeführt wird. Sie können so Daten aus verschiedenen Datensätzen kombinieren oder Links zu temporären Ressourcen erstellen.
+Die Aktivität „Anreicherung“ ist eine erweiterte Workflow-Aktivität, die es Ihnen ermöglicht, die generierten Arbeitstabellendaten anzureichern, die später im Workflow verarbeitet werden. Diese Aktivität erfolgt im Allgemeinen im Anschluss an Aktivitäten der Zielgruppenbestimmung oder des Dateiimports und vor Aktivitäten, die die Daten der Zielgruppenbestimmung verwenden. Mit Anreicherungen können die eingehenden Transitionsdaten transformiert werden und die Aktivität kann so konfiguriert werden, dass die ausgehende Transition mit erweiterten Daten durchgeführt wird. Sie können so Daten aus verschiedenen Datensätzen kombinieren oder Links zu temporären Ressourcen erstellen.
 
-Weitere Informationen zur [Anreicherungsaktivität](../../workflow/using/enrichment.md).
+Weitere Informationen zur [Aktivität „Anreicherung“](../../workflow/using/enrichment.md).
 +++
 
 +++**Auflistungen**
@@ -426,7 +427,7 @@ Learn more about [Generated SQL queries](../../platform/using/steps-to-create-a-
 
 +++**Heatmap**
 
-Campaign Heatmap ist eine Tabelle, in der Informationen zur Workflow-Ausführung über einen Zeitraum von 24 Stunden angezeigt werden. In ihr wird die Verteilung der Workflows über den genannten Zeitraum nach Stunde und in Intervallen von 5 Minuten angezeigt. Heatmap wird verwendet, um die Server-Last zu bewerten und herauszufinden, welche Workflow-Aktivitäten die meisten Ressourcen verbrauchen.
+Campaign Heatmap ist eine Tabelle, in der Informationen zur Workflow-Ausführung über einen Zeitraum von 24 Stunden angezeigt werden. In ihr wird die Verteilung der Workflows über den genannten Zeitraum nach Stunde und in Intervallen von 5 Minuten angezeigt. Heatmap wird verwendet, um die Server-Last auszuwerten und herauszufinden, welche Workflow-Aktivitäten die meisten Ressourcen verbrauchen.
 
 Weitere Informationen zu [Heatmap](../../workflow/using/heatmap.md).
 +++

@@ -2,14 +2,14 @@
 product: campaign
 title: Fehlerbehebung beim Versand
 description: Erfahren Sie mehr über die Versandleistung und wie Sie Probleme beim Versand-Monitoring beheben können
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Monitoring, Deliverability
+badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
+feature: Monitoring, Deliverability, Troubleshooting
 exl-id: 37b1d7fb-7ceb-4647-9aac-c8a80495c5bf
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '799'
-ht-degree: 100%
+source-wordcount: '811'
+ht-degree: 98%
 
 ---
 

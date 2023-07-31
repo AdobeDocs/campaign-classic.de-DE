@@ -2,11 +2,12 @@
 product: campaign
 title: Definieren des Webtrackingtags
 description: Definieren des Webtrackingtags
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Application Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 exl-id: 0b5575be-57e7-4eee-9c0a-e9ef4b0931bf
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '360'
 ht-degree: 4%
 
 ---
@@ -126,5 +127,5 @@ Die folgende Tabelle enthält eine Liste von speziellen Parametern, die vom Weit
 
 Die folgenden Methoden sind möglich:
 
-* URL in die **&quot;src&quot;** -Attribut einer HTML **`<img>`** -Tag, das in die Webseite eingefügt wurde, die Sie verfolgen möchten.
+* Einfügen der URL in die **&quot;src&quot;** -Attribut einer HTML **`<img>`** -Tag, das in die Webseite eingefügt wurde, die Sie verfolgen möchten.
 * Direkter Aufruf an den Weiterleitungsserver, wenn die Webseite, die Sie verfolgen möchten, generiert wird.

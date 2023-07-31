@@ -2,11 +2,12 @@
 product: campaign
 title: Funktionsmatrix für On-Premise-, Hybrid- und gehostete Campaign-Versionen
 description: Wichtige Unterschiede zwischen gehosteten und On-Premise-Implementierungen
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Architecture
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 exl-id: a2c425a8-9bde-4259-9140-5ada5397ed5f
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '300'
 ht-degree: 46%
 
 ---

@@ -2,14 +2,14 @@
 product: campaign
 title: Über die benutzerdefinierte Empfängertabelle
 description: Über die benutzerdefinierte Empfängertabelle
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Custom Resources
+feature: Configuration, Custom Resources
+badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 exl-id: d8cea496-b3f3-420a-bf6e-b7cbb321b30d
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '683'
-ht-degree: 9%
+source-wordcount: '695'
+ht-degree: 10%
 
 ---
 
@@ -25,7 +25,7 @@ Wenn diese Erweiterungsmethode eine gute Flexibilität beim Erweitern einer Tabe
 
 Diese Funktion ermöglicht es Adobe Campaign, Daten aus einer externen Datenbank zu verarbeiten. Diese Daten werden als ein Satz von Profilen für den Versand verwendet. Die Implementierung dieses Prozesses umfasst mehrere Präzisionen, die je nach den Anforderungen des Kunden relevant sein können. Wie zum Beispiel:
 
-* Kein Aktualisierungsstream von und zur Adobe Campaign-Datenbank: Daten aus dieser Tabelle können direkt über die Datenbank-Engine aktualisiert werden, die sie hostet.
+* Kein Update-Stream zur und von der Adobe Campaign-Datenbank: Daten aus dieser Tabelle können direkt über die Datenbank-Engine aktualisiert werden, die sie hostet.
 * Keine Änderungen an den Prozessen, die mit der vorhandenen Datenbank ausgeführt werden.
 * Bei Verwendung einer Profildatenbank ohne Standardstruktur: Es besteht die Möglichkeit, dass der Versand an in verschiedenen Tabellen mit unterschiedlichen Strukturen gespeicherte Profile erfolgt, wobei eine einzelne Instanz verwendet wird.
 * Beim Aktualisieren der Adobe Campaign-Datenbank sind keine Änderungen oder Wartungsarbeiten erforderlich.
@@ -48,11 +48,11 @@ Die Verwendung einer benutzerdefinierten Empfängertabelle unterliegt folgenden 
    * Festlegen der **[!UICONTROL nms:BroadLogRcp]** und **[!UICONTROL nms:TrackingLogRcp]** Schemas zu den vordefinierten **[!UICONTROL nms:recipientSchema]**. Diese beiden Protokolltabellen sollten keiner zusätzlichen benutzerdefinierten Empfängertabelle zugeordnet werden.
    * Definieren dedizierter benutzerdefinierter Broadlog- und Trackinglog-Schemata für jedes neue benutzerdefinierte Empfängerschema. Dies kann automatisch bei der Einrichtung des Zielgruppen-Mappings erfolgen, siehe [Zielgruppen-Mapping](../../configuration/using/target-mapping.md).
 
-* Sie können den Standard nicht verwenden **[!UICONTROL Dienste und Abonnements]** in der Ware angeboten.
+* Sie können den Standard nicht verwenden **[!UICONTROL Dienste und Abonnements]** die in der Ware angeboten werden.
 
   Dies bedeutet, dass die in [diesem Abschnitt](../../delivery/using/managing-subscriptions.md) nicht anwendbar ist.
 
-* Der Link mit der **[!UICONTROL Besucher]** funktioniert nicht.
+* Der Link mit der **[!UICONTROL Besucher]** -Tabelle funktioniert nicht.
 
   So verwenden Sie die **[!UICONTROL Social Marketing]** -Modul müssen Sie den Speicherschritt so konfigurieren, dass er auf die richtige Tabelle verweist.
 
@@ -66,12 +66,12 @@ Die Verwendung einer benutzerdefinierten Empfängertabelle unterliegt folgenden 
   >
   >Sie können weiterhin Empfängerlisten mithilfe von Workflows erstellen. Weitere Informationen hierzu finden Sie unter [Profilliste mit einem Workflow erstellen](../../configuration/using/creating-a-profile-list-with-a-workflow.md).
 
-Es wird außerdem empfohlen, die in den verschiedenen vordefinierten Konfigurationen verwendeten Standardwerte zu überprüfen: Je nach den verwendeten Funktionen müssen mehrere Anpassungen vorgenommen werden.
+Es wird außerdem empfohlen, die in den verschiedenen nativen Konfigurationen verwendeten Standardwerte zu überprüfen: Je nach den verwendeten Funktionen müssen verschiedene Anpassungen vorgenommen werden.
 
 Beispiel:
 
 * Bestimmte Standardberichte, insbesondere die von **Interaction** und **Mobile Apps** muss neu entwickelt werden. Siehe Abschnitt [Verwalten von Berichten](../../configuration/using/managing-reports.md) Abschnitt.
-* Die Standardkonfigurationen für bestimmte Workflow-Aktivitäten beziehen sich auf die standardmäßige Empfängertabelle (**[!UICONTROL nms:recipient]**): Diese Konfigurationen müssen geändert werden, wenn sie für eine externe Empfängertabelle verwendet werden. Siehe Abschnitt [Workflows verwalten](../../configuration/using/managing-workflows.md) Abschnitt.
+* Die Standardkonfigurationen für bestimmte Workflow-Aktivitäten beziehen sich auf die standardmäßige Empfängertabelle (**[!UICONTROL nms:recipient]**): Diese Konfigurationen müssen geändert werden, wenn sie für eine externe Empfängertabelle verwendet werden. Siehe Abschnitt [Verwalten von Workflows](../../configuration/using/managing-workflows.md) Abschnitt.
 * Der Standard **[!UICONTROL Abmelde-Link]** Gestaltungsbaustein muss angepasst werden.
 * Das Zielgruppen-Mapping der Standard-Versandvorlagen muss geändert werden.
-* V4-Formulare sind nicht zur Verwendung mit einer externen Empfängertabelle kompatibel: müssen Sie Webanwendungen verwenden.
+* V4-Formulare sind nicht für die Verwendung mit externen Empfängertabellen kompatibel: Sie müssen Webanwendungen verwenden.

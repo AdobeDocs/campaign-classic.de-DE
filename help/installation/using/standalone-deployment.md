@@ -2,14 +2,15 @@
 product: campaign
 title: Eigenständige Bereitstellung
 description: Eigenständige Bereitstellung
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Architecture, Deployment
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 194366ab-fd9f-4431-9163-ae16c1f96db2
-source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1079'
+source-wordcount: '1086'
 ht-degree: 6%
 
 ---
@@ -54,7 +55,7 @@ Mit zunehmendem Volumen verschiebt eine Variante dieser Architektur den Datenban
 ### Nachteile {#disadvantages}
 
 * Ein kritischer Computer im Falle eines Vorfalls.
-* Begrenzte Bandbreite bei der Ausstrahlung von Nachrichten (unserer Erfahrung nach etwa zehntausende von E-Mails pro Stunde).
+* Begrenzte Bandbreite bei der Ausstrahlung von Nachrichten (unserer Erfahrung nach etwa zehntausend Mails pro Stunde).
 * Potenzielle Verlangsamung der Anwendung bei der Übertragung.
 * Der Anwendungsserver muss von außen verfügbar sein (z. B. während er sich in der DMZ befindet), da er den Weiterleitungsserver hostet.
 
@@ -62,7 +63,7 @@ Mit zunehmendem Volumen verschiebt eine Variante dieser Architektur den Datenban
 
 ### Voraussetzungen {#prerequisites}
 
-* JDK,
+* JDK
 * Webserver (IIS, Apache),
 * Zugriff auf einen Datenbankserver,
 * über POP3 zugängliches Bounce-Postfach,
@@ -98,7 +99,7 @@ Gehen Sie wie folgt vor:
 
    >[!NOTE]
    >
-   >Beim ersten Ausführen des Webmoduls wird die **config-default.xml** und **serverConf.xml** -Dateien in **conf** Ordner unter dem Installationsordner. Alle in der **serverConf.xml** sind in dieser [Abschnitt](../../installation/using/the-server-configuration-file.md).
+   >Beim ersten Ausführen des Webmoduls wird die **config-default.xml** und **serverConf.xml** -Dateien in **conf** Ordner unter dem Installationsordner. Alle in der **serverConf.xml** in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md).
 
    Presse **Strg+C** , um den Server anzuhalten.
 
@@ -172,7 +173,7 @@ Gehen Sie wie folgt vor:
    * Für Linux: [Integration in einen Webserver für Linux](../../installation/using/integration-into-a-web-server-for-linux.md)
    * Windows: [Integration in einen Webserver für Windows](../../installation/using/integration-into-a-web-server-for-windows.md)
 
-1. Starten Sie die Website und testen Sie die Umleitung mithilfe der URL: https://tracking.campaign.net/r/test
+1. Starten Sie die Website und testen Sie die Umleitung mithilfe der URL: https://tracking.campaign.net/r/test.
 
    Der Browser muss die folgende Meldung anzeigen:
 
@@ -214,7 +215,7 @@ Gehen Sie wie folgt vor:
 
 1. Starten Sie die Adobe Campaign-Clientkonsole (von der vorherigen Download-Seite oder bei einer Windows-Installation direkt auf dem Server gestartet), setzen Sie die Server-Verbindungs-URL auf https://console.campaign.net und stellen Sie mithilfe der Verbindung her. **intern** anmelden.
 
-   Siehe [diese Seite](../../installation/using/creating-an-instance-and-logging-on.md) und [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#internal-identifier).
+   Siehe Abschnitt [diese Seite](../../installation/using/creating-an-instance-and-logging-on.md) und [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
    Der Datenbankerstellungs-Assistent wird angezeigt, wenn Sie sich zum ersten Mal anmelden:
 
@@ -233,15 +234,15 @@ Gehen Sie wie folgt vor:
    Die wichtigsten Parameter sind:
 
    * E-Mail-Versand: Absender- und Antwortadressen sowie das Fehlerpostfach für Bounce Messages.
-   * Tracking: Füllen Sie die externe URL, die für die Weiterleitung verwendet wird, und die interne URL, und klicken Sie auf **Registrierung auf dem/den Tracking-Server(n)** und validieren Sie sie dann im **Demo** -Instanz des Trackingservers.
+   * Tracking: Füllen Sie die externe URL, die für die Weiterleitung verwendet wird, und die interne URL. Klicken Sie auf **Registrierung auf dem/den Tracking-Server(n)** und validieren Sie sie dann im **Demo** -Instanz des Trackingservers.
 
      Weitere Informationen hierzu finden Sie unter [Tracking-Konfiguration](../../installation/using/deploying-an-instance.md#tracking-configuration).
 
      ![](assets/s_ncs_install_deployment_wiz_09.png)
 
-     Da der Adobe Campaign-Server sowohl als Anwendungsserver als auch als Weiterleitungsserver verwendet wird, ist die interne URL, die zum Erfassen von Trackinglogs und Transfer-URLs verwendet wird, eine direkte interne Verbindung zu Tomcat (https://localhost:8080).
+     Da der Adobe Campaign-Server sowohl als Anwendungsserver als auch als Weiterleitungsserver verwendet wird, ist die interne URL, die zum Erfassen von Trackinglogs und Übertragungs-URLs verwendet wird, eine direkte interne Verbindung zu Tomcat (https://localhost:8080).
 
-   * Bounce-Verwaltung: Geben Sie die Parameter für die Verarbeitung der Bounce Message ein (nehmen Sie nicht die **Nicht verarbeitete Bounce Messages** berücksichtigt werden).
-   * Zugriff über: Geben Sie die beiden URLs für Berichte, Webformulare und Mirrorseiten an.
+   * Bounce-Management: Geben Sie die Parameter für die Verarbeitung der Bounce Message ein (verwenden Sie nicht die **Nicht verarbeitete Bounce Messages** berücksichtigt werden).
+   * Zugriff von: Geben Sie die beiden URLs für Berichte, Webformulare und Mirrorseiten an.
 
      ![](assets/d_ncs_install_web_url.png)

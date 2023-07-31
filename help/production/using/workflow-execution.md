@@ -2,16 +2,17 @@
 product: campaign
 title: Workflow-Ausführung
 description: Workflow-Ausführung
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring, Workflows
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
+badge-v7-prem: label="On-Premise und Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
 audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: b5aa5663-1902-4f50-9202-783e73a28838
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '651'
-ht-degree: 13%
+source-wordcount: '676'
+ht-degree: 15%
 
 ---
 
@@ -32,15 +33,15 @@ Weiterführende Informationen zu Workflows finden Sie in den folgenden Abschnitt
 
 In einigen Fällen starten von einer Kampagne aus ausgeführte Workflows nicht, wenn Sie auf die **[!UICONTROL Starten]** Schaltfläche. Statt zu beginnen, wird der Status &quot;Schnellstmöglich starten&quot;angezeigt.
 
-Es kann mehrere Ursachen für dieses Problem geben. Führen Sie die folgenden Schritte aus, um es zu beheben:
+Es kann mehrere Ursachen für dieses Problem geben. Gehen Sie zur Lösung des Problems wie folgt vor:
 
 1. Überprüfen Sie die [**[!UICONTROL operationMgt]**](../../workflow/using/about-technical-workflows.md) Status des technischen Workflows. Dieser Workflow verwaltet Aufträge oder Workflows innerhalb einer Kampagne. Schlägt dies fehl, werden Workflows nicht gestartet/angehalten. Starten Sie es neu, um die Ausführung der Kampagnen-Workflows wiederaufzunehmen.
 
-   Weiterführende Informationen zur Überwachung technischer Workflows finden Sie im Abschnitt [diese Seite](../../workflow/using/monitoring-technical-workflows.md).
+   Weitere Informationen zur Überwachung technischer Workflows finden Sie unter [diese Seite](../../workflow/using/monitoring-technical-workflows.md).
 
    >[!NOTE]
    >
-   >Vergewissern Sie sich nach dem Neustart des Workflows, dass Sie die ausstehenden Aufgaben ausführen (klicken Sie mit der rechten Maustaste auf das **[!UICONTROL Planung]** activity / **[!UICONTROL Ausstehende Aufgabe(n) jetzt ausführen]**), um zu überprüfen, ob es bei einer der Aktivitäten erneut fehlschlägt.
+   >Nachdem der Workflow neu gestartet wurde, müssen Sie die ausstehenden Aufgaben ausführen (klicken Sie mit der rechten Maustaste auf die **[!UICONTROL Planung]** activity / **[!UICONTROL Ausstehende Aufgabe(n) jetzt ausführen]**), um zu überprüfen, ob es bei einer der Aktivitäten erneut fehlschlägt.
 
    Wenn der Workflow weiterhin fehlschlägt, überprüfen Sie das Auditprotokoll auf einen bestimmten Fehler, führen Sie eine entsprechende Fehlerbehebung durch und starten Sie den Workflow dann erneut neu.
 

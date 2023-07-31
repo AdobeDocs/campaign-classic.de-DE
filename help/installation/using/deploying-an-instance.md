@@ -2,16 +2,17 @@
 product: campaign
 title: Bereitstellen einer Instanz
 description: Erfahren Sie mehr über den Campaign-Implementierungsassistenten
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Instance Settings, Deployment
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
+badge-v7-prem: label="On-Premise und Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
-source-git-commit: 43158445f688f4c2612d4dad76f2243b2e358b35
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '3516'
-ht-degree: 6%
+source-wordcount: '3541'
+ht-degree: 7%
 
 ---
 
@@ -23,7 +24,7 @@ ht-degree: 6%
 
 ## Bereitstellungsassistent {#deployment-wizard}
 
-Adobe Campaign bietet einen grafischen Assistenten, der in der Adobe Campaign-Clientkonsole verfügbar ist und die Parameter der Instanz definiert, mit der Sie eine Verbindung herstellen werden.
+Adobe Campaign bietet einen grafischen Assistenten, der in der Adobe Campaign-Clientkonsole verfügbar ist und die Parameter der Instanz definiert, mit der Sie eine Verbindung herstellen möchten.
 
 Um den Softwareverteilungs-Assistenten zu starten, wählen Sie **Tools > Erweitert > Bereitstellungsassistent**.
 
@@ -61,10 +62,10 @@ Im unteren Bereich des Fensters können Sie die zu aktivierenden Optionen auswä
 
 Folgende Optionen stehen zur Verfügung:
 
-* **[!UICONTROL Email-Kanal]** : , um den E-Mail-Versand zu aktivieren. Siehe [E-Mail-Kanal-Parameter](#email-channel-parameters).
-* **[!UICONTROL Tracking]** : Aktivierung der Nachverfolgung der Zielpopulation (Öffnungen und Klicks). Siehe [Tracking-Konfiguration](#tracking-configuration).
-* **[!UICONTROL Bounce Messages verwalten]** : Definiert das POP-Konto, das zum Abruf der eingehenden E-Mail verwendet wird. Siehe [Bounce Messages verwalten](#managing-bounced-emails).
-* **[!UICONTROL LDAP-Integration]** : Konfigurieren der Benutzerauthentifizierung über einen LDAP-Ordner. Siehe [Verbindung über LDAP](../../installation/using/connecting-through-ldap.md).
+* **[!UICONTROL Email-Kanal]** : zum Aktivieren des E-Mail-Versands. Siehe Abschnitt [E-Mail-Kanal-Parameter](#email-channel-parameters).
+* **[!UICONTROL Tracking]** : Aktivieren Sie das Tracking der Zielpopulation (Öffnungen und Klicks). Siehe Abschnitt [Tracking-Konfiguration](#tracking-configuration).
+* **[!UICONTROL Bounce Messages verwalten]** : Definiert das POP-Konto, das zum Aufnehmen eingehender E-Mails verwendet wird. Siehe Abschnitt [Bounce Messages verwalten](#managing-bounced-emails).
+* **[!UICONTROL LDAP-Integration]** : Zum Konfigurieren der Benutzerauthentifizierung über einen LDAP-Ordner. Siehe Abschnitt [Verbindung über LDAP](../../installation/using/connecting-through-ldap.md).
 
 ## Parameter für den E-Mail-Kanal {#email-channel-parameters}
 
@@ -103,13 +104,13 @@ Darüber hinaus können Sie die **Masken** für die Absenderadresse und die Fehl
 
 In der Adobe Campaign-Datenbank müssen alle E-Mail-Adressen wie folgt erstellt werden: `x@y.z`. Die **x**, **y** und **z** darf nicht leer sein und darf keine nicht autorisierten Zeichen enthalten.
 
-Hier können Sie die autorisierten Zeichen (&#39;data policy&#39;) im E-Mail-Feld der Datenbank definieren. Zeichen, die nicht in der Liste enthalten sind, sind verboten und werden daher bei der Eingabe von Informationen in die Datenbank über die Benutzeroberfläche, über ein Webformular und auch beim Import von Daten abgelehnt.
+Hier können Sie die autorisierten Zeichen (&#39;data policy&#39;) im E-Mail-Feld der Datenbank definieren. Zeichen, die nicht in der Liste enthalten sind, sind verboten und werden daher bei der Eingabe von Informationen in die Datenbank über die Benutzeroberfläche, über ein Webformular und auch beim Import von Daten verweigert.
 
 Zwei Listen sind verfügbar: **Nur europäische** oder **Nur USA**. Bei Bedarf können weitere Zeichen hinzugefügt werden.
 
 ### Versandparameter {#delivery-parameters}
 
-Die **Erweiterte Parameter...** -Link bietet Zugriff auf Versandoptionen, mit einem erneuten Versuch verbundene Parameter und Quarantänen.
+Die **Erweiterte Parameter...** -Link bietet Zugriff auf Versandoptionen, mit einem erneuten Versuch verknüpfte Parameter und Quarantänen.
 
 ![](assets/s_ncs_install_deployment_wiz_05.png)
 
@@ -117,8 +118,8 @@ In diesem Fenster können Sie für alle E-Mail-Kampagnen die Managementoptionen 
 
 Folgende Optionen stehen zur Verfügung:
 
-* **[!UICONTROL Versandlaufzeit der Nachrichten]** : Danach wird der Versand gestoppt (standardmäßig 5 Tage).
-* **[!UICONTROL Gültigkeitsdauer der Online-Ressourcen]** : Zeitraum, für den Informationen aus dem Empfängerprofil aufbewahrt werden, um Mirrorseiten zu erzeugen.
+* **[!UICONTROL Versandlaufzeit der Nachrichten]** : Nach diesem Zeitpunkt wird der Versand gestoppt (standardmäßig 5 Tage).
+* **[!UICONTROL Gültigkeitsdauer der Online-Ressourcen]** : Zeit, für die Informationen aus dem Empfängerprofil zum Generieren von Mirrorseiten beibehalten werden.
 * **[!UICONTROL Empfänger ausschließen, die nicht mehr kontaktiert werden möchten]** : Wenn diese Option aktiviert ist, werden die Empfänger der Blockierungsliste nicht kontaktiert.
 * **[!UICONTROL Dubletten automatisch ignorieren]** : Wenn diese Option aktiviert ist, erfolgt kein Versand an doppelte Adressen.
 
@@ -128,7 +129,7 @@ Folgende Optionen stehen zur Verfügung:
 
 ### Wiederholungsparameter {#retry-parameters}
 
-Die Informationen über Wiedereinziehungen sind im Abschnitt **Wiederherstellungsfristen** und **Anzahl der Wiedereinziehungen** -Felder: Wenn ein Empfänger nicht erreichbar ist, z. B. wenn sein Posteingang voll ist, versucht das Programm standardmäßig, ihn fünfmal zu kontaktieren, wobei zwischen jedem Versuch (während der maximalen Versandzeit) ein Zeitintervall von einer Stunde eingehalten wird. Diese Werte können Ihren Bedürfnissen entsprechend geändert werden.
+Die Informationen über Wiedereinziehungen sind im Abschnitt **Wiederherstellungsfristen** und **Anzahl der Wiedereinziehungen** Felder: Wenn ein Empfänger nicht erreichbar ist, z. B. wenn sein Posteingang voll ist, versucht das Programm standardmäßig, ihn fünfmal zu kontaktieren, wobei zwischen jedem Versuch (während der maximalen Versandzeit) ein Intervall von einer Stunde eingehalten wird. Diese Werte können Ihren Bedürfnissen entsprechend geändert werden.
 
 >[!NOTE]
 >
@@ -138,14 +139,14 @@ Die Informationen über Wiedereinziehungen sind im Abschnitt **Wiederherstellung
 
 In Bezug auf die Quarantäne stehen folgende Konfigurationsoptionen zur Verfügung:
 
-* **[!UICONTROL Dauer zwischen zwei signifikanten Fehlern]** : Geben Sie einen Wert ein (standardmäßig &quot;1d&quot;): 1 Tag), um die Wartezeit zu definieren, bevor die Anwendung den Fehlerzähler im Fall eines Fehlers inkrementiert,
-* **[!UICONTROL Maximale Anzahl an Fehlern vor der Quarantäne]** : Sobald dieser Wert erreicht ist, wird die E-Mail-Adresse unter Quarantäne gestellt (standardmäßig &quot;5&quot;): die Adresse beim sechsten Fehler unter Quarantäne gestellt wird). Dies bedeutet, dass der Kontakt automatisch von den nächsten Sendungen ausgeschlossen wird.
+* **[!UICONTROL Dauer zwischen zwei signifikanten Fehlern]** : Geben Sie einen Wert ein (standardmäßig &quot;1d&quot;: 1 Tag), um die Wartezeit zu definieren, bevor die Anwendung den Fehlerzähler im Falle eines Fehlschlagens inkrementiert,
+* **[!UICONTROL Maximale Anzahl an Fehlern vor der Quarantäne]** : Sobald dieser Wert erreicht ist, wird die E-Mail-Adresse unter Quarantäne gestellt (standardmäßig &quot;5&quot;: Die Adresse wird beim sechsten Fehler unter Quarantäne gestellt). Dies bedeutet, dass der Kontakt automatisch von den nächsten Sendungen ausgeschlossen wird.
 
 ## Bounce Messages verwalten {#managing-bounced-emails}
 
 Bounce Messages sind äußerst wichtig, um Versandfehler zu qualifizieren. Diese Fehler werden in die Kategorie NP@I eingeordnet, sobald die Regeln ihre Ursache ermittelt haben.
 
-Dieser Schritt ist nur verfügbar, wenn die Variable **Email-Kanal** und **Bounce Message** Die Verwaltungsoptionen werden im ersten Schritt des Softwareverteilungs-Assistenten ausgewählt. Siehe [Allgemeine Parameter](#general-parameters).
+Dieser Schritt ist nur verfügbar, wenn die Variable **Email-Kanal** und **Bounce Message** Die Verwaltungsoptionen werden im ersten Schritt des Softwareverteilungs-Assistenten ausgewählt. Siehe Abschnitt [Allgemeine Parameter](#general-parameters).
 
 In dieser Phase können Sie Einstellungen für die Verwaltung von Bounce Messages definieren.
 
@@ -155,11 +156,11 @@ In dieser Phase können Sie Einstellungen für die Verwaltung von Bounce Message
 
 Geben Sie die Parameter an, mit denen eine Verbindung zum Konto zum Abrufen eingehender E-Mails hergestellt werden soll.
 
-* **[!UICONTROL Titel]** : Name, der alle unten angegebenen Parameter enthält
+* **[!UICONTROL Titel]** : Name, der alle unten angegebenen Parameter enthält.
 * **[!UICONTROL Server]** : Server, der zum Abrufen der Bounce Message (eingehender E-Mail) verwendet wird,
-* **[!UICONTROL Sicherheit]** : Wählen Sie bei Bedarf **[!UICONTROL SSL]** aus der Dropdown-Liste,
+* **[!UICONTROL Sicherheit]** : Wählen Sie bei Bedarf **[!UICONTROL SSL]** aus der Dropdownliste,
 * **[!UICONTROL Port]** : Server-Anschluss (im Allgemeinen 110),
-* **[!UICONTROL Konto]** : Name des für die Bounce Message verwendeten Kontos,
+* **[!UICONTROL Konto]** : Name des Kontos, das für die Bounce Message verwendet wird,
 * **[!UICONTROL Passwort]** : Kennwort für das Konto.
 
 Nachdem die POP-Einstellungen angegeben wurden, klicken Sie auf **Test** um sicherzustellen, dass sie korrekt sind.
@@ -170,9 +171,9 @@ Absprünge werden automatisch von Adobe Campaign verarbeitet, wobei die im Absch
 
 Nicht verarbeitete Bounces werden nicht in der Adobe Campaign-Benutzeroberfläche angezeigt. Sie werden automatisch gelöscht, es sei denn, sie werden mithilfe der folgenden Felder in ein Drittanbieter-Postfach übertragen:
 
-* **[!UICONTROL Weiterleitungsadresse]** : Füllen Sie dieses Feld aus, um alle von der Adobe Campaign-Plattform erfassten Fehlermeldungen (verarbeitet oder nicht verarbeitet ) an eine Drittanbieteradresse zu übertragen.
+* **[!UICONTROL Weiterleitungsadresse]** : Füllen Sie dieses Feld aus, um alle von der Adobe Campaign-Plattform erfassten Fehlermeldungen (verarbeitet oder nicht verarbeitet) an eine Drittanbieteradresse zu senden.
 * **[!UICONTROL Fehlerbehebung]** : Füllen Sie dieses Feld aus, um nur die Fehlermeldungen an eine Drittanbieteradresse zu übertragen, die der inMail-Prozess nicht qualifizieren konnte.
-* **[!UICONTROL SMTP-Server]** : Server, der zum Senden der nicht verarbeiteten Bounce-E-Mails verwendet wird.
+* **[!UICONTROL SMTP-Server]** : Server, der zum Senden der nicht verarbeiteten Bounce Messages verwendet wird.
 
 >[!IMPORTANT]
 >
@@ -182,7 +183,7 @@ Nicht verarbeitete Bounces werden nicht in der Adobe Campaign-Benutzeroberfläch
 
 Im nächsten Schritt können Sie das Tracking für die Instanz konfigurieren. Die Instanz muss deklariert und bei den Tracking-Servern registriert werden.
 
-Dieser Schritt wird nur angeboten, wenn die Variable **Email-Kanal** und **Tracking** werden auf der ersten Seite des Softwareverteilungs-Assistenten ausgewählt. Siehe [Allgemeine Parameter](#general-parameters).
+Dieser Schritt wird nur angeboten, wenn die Variable **Email-Kanal** und **Tracking** werden auf der ersten Seite des Softwareverteilungs-Assistenten ausgewählt. Siehe Abschnitt [Allgemeine Parameter](#general-parameters).
 
 Weiterführende Informationen zum Webtracking (Tracking-Modus, Erstellen und Einfügen von Tags usw.) finden Sie im Abschnitt . [dieses Dokuments](../../configuration/using/about-web-tracking.md).
 
@@ -190,7 +191,7 @@ Weiterführende Informationen zum Webtracking (Tracking-Modus, Erstellen und Ein
 
 Wenn Sie das Tracking in einer Instanz aktivieren, werden die URLs in den Sendungen geändert, um das Tracking zu aktivieren.
 
-* Die Informationen zu externen URLs (ob sicher oder nicht), die auf dieser Seite des Softwareverteilungs-Assistenten eingegeben wurden, werden zum Erstellen der neuen URL verwendet. Neben diesen Informationen enthält der geänderte Link: die IDs des Versands, des Empfängers und der URL.
+* Die Informationen zu externen URLs (ob sicher oder nicht), die auf dieser Seite des Softwareverteilungs-Assistenten eingegeben wurden, werden zum Erstellen der neuen URL verwendet. Neben diesen Informationen enthält der geänderte Link die Identifikatoren des Versands, den Empfänger und die URL.
 
   Tracking-Informationen werden von Adobe Campaign auf den Tracking-Servern erfasst, um die Empfängerprofile und die mit dem Versand verknüpften Daten anzureichern ( **[!UICONTROL Tracking]** Registerkarten).
 
@@ -216,7 +217,7 @@ Um die Effizienz des Trackings in dieser Instanz zu gewährleisten, müssen die 
 
 Mit der Mid-Sourcing-Architektur können Sie die Tracking-Verwaltung externalisieren. Gehen Sie dazu wie folgt vor:
 
-1. Auswählen der Option **[!UICONTROL Externes Tracking-Management]** : Auf diese Weise können Sie einen Mid-Sourcing-Server als Tracking-Server verwenden.
+1. Wählen Sie die Option **[!UICONTROL Externes Tracking-Management]** : Hiermit können Sie einen Mid-Sourcing-Server als Tracking-Server verwenden.
 1. Füllen Sie die **[!UICONTROL Externes Konto]** und **[!UICONTROL Instanzname]** -Felder, um eine Verbindung zum Mid-Sourcing-Server herstellen zu können.
 
    Weitere Informationen finden Sie unter [Mid-Sourcing-Server](../../installation/using/mid-sourcing-server.md).
@@ -241,7 +242,7 @@ Es gibt drei mögliche Architekturtypen für die Implementierung von Tracking:
 
    ![](assets/s_ncs_install_deployment_wiz_11.png)
 
-   Geben Sie das Kennwort für die **intern** -Konto auf den Umleitungs-Server hinzufügen, um die Tracking-Instanz zu konfigurieren.
+   Geben Sie das Kennwort für die **intern** -Konto auf den Umleitungsserver(n) zur Konfiguration der Tracking-Instanz.
 
    >[!NOTE]
    >
@@ -255,23 +256,23 @@ Es gibt drei mögliche Architekturtypen für die Implementierung von Tracking:
 
    ![](assets/s_ncs_install_deployment_wiz_10.png)
 
-   Geben Sie das Kennwort für die **intern** -Konto auf den Umleitungs-Server hinzufügen, um die Tracking-Instanz zu konfigurieren.
+   Geben Sie das Kennwort für die **intern** -Konto auf den Umleitungsserver(n) zur Konfiguration der Tracking-Instanz.
 
    >[!NOTE]
    >
    >Wenn mehrere Tracking-Server konfiguriert sind, müssen alle dasselbe Kennwort verwenden.
 
-   Geben Sie den Namen der Instanz, das Kennwort und alle zugehörigen DNS-Masken an, z. B. **[!UICONTROL Kampagne*]**.
+   Geben Sie den Namen der Instanz, das Kennwort und alle zugehörigen DNS-Masken an, z. B. **[!UICONTROL Campaign*]**.
 
 1. **Validieren einer bereits für Sie vorkonfigurierten Tracking-Instanz**
 
-   Diese Option wird verwendet, wenn Sie nicht über das Kennwort für die **intern** Konto; In diesem Fall ist ein Tracking-Konto für Sie auf den Tracking-Servern vorkonfiguriert. Geben Sie das Kennwort des Trackingkontos der Weiterleitungsserver ein, um die Tracking-Instanz zu validieren.
+   Diese Option wird verwendet, wenn Sie nicht über das Kennwort für die **intern** -Konto; in diesem Fall ist ein Tracking-Konto für Sie auf dem/den Tracking-Server(n) vorkonfiguriert. Geben Sie das Kennwort des Trackingkontos der Weiterleitungsserver ein, um die Tracking-Instanz zu validieren.
 
    ![](assets/s_ncs_install_deployment_wiz_17.png)
 
    Geben Sie den Namen der zu validierenden Instanz an.
 
-Klicken **Genehmigen** , um den Aufnahmevorgang mit dem Tracking-Server zu starten.
+Klicks **Genehmigen** , um den Aufnahmevorgang mit dem Tracking-Server zu starten.
 
 Im vorherigen Fenster wird die Registrierung auf Tracking-Server-Ebene durch eine Meldung bestätigt:
 
@@ -285,7 +286,7 @@ Im nächsten Schritt werden die Standardeinstellungen für den Mobiltelefon-Vers
 
 >[!NOTE]
 >
->Der mobile Kanal ist optional: Diese Phase wird nur angezeigt, wenn sie erworben wurde. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
+>Der Mobile-Kanal ist optional: Diese Phase wird nur angezeigt, wenn sie erworben wurde. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
 
 ![](assets/s_ncs_install_deployment_wiz_12.png)
 
@@ -294,7 +295,7 @@ Im nächsten Schritt werden die Standardeinstellungen für den Mobiltelefon-Vers
 Folgende Angaben sind erforderlich:
 
 * **[!UICONTROL Titel]** : Geben Sie einen Namen für dieses SMS-/Wap Push-Konto ein. Beispielsweise können Sie den Namen Ihres Routers verwenden.
-* Für **[!UICONTROL Server]**, **[!UICONTROL Port]**, **[!UICONTROL Konto]**, **[!UICONTROL Passwort]**, **[!UICONTROL Connector]**, **[!UICONTROL Send Endpoint]**, **[!UICONTROL Reception Endpoint]**, **[!UICONTROL Benachrichtigungsendpunkt]** -Felder: Wenden Sie sich für die erforderlichen Einstellungen an Ihren Dienstleister.
+* Für **[!UICONTROL Server]**, **[!UICONTROL Port]**, **[!UICONTROL Konto]**, **[!UICONTROL Passwort]**, **[!UICONTROL Connector]**, **[!UICONTROL Send Endpoint]**, **[!UICONTROL Reception Endpoint]**, **[!UICONTROL Benachrichtigungsendpunkt]** Felder: Wenden Sie sich für die erforderlichen Einstellungen an Ihren Dienstleister.
 
 ### Parameter für ausgehende SMS {#parameters-of-sms-sent}
 
@@ -306,12 +307,12 @@ Die **Erweiterte Parameter...** -Link ermöglicht Ihnen den Zugriff auf die Opti
 
 ![](assets/s_ncs_install_deployment_wiz_13.png)
 
-Informationen zu weiteren Zustellversuchen finden Sie im Abschnitt **Versuchszeitraum** und **Anzahl weiterer Versuche** -Felder: Wenn ein Mobiltelefon nicht erreichbar ist, wird das Programm standardmäßig in Intervallen von mindestens 15 Minuten (für den maximalen Bereitstellungszeitraum) fünf Mal erneut versuchen. Diese Werte können Ihren Bedürfnissen entsprechend angepasst werden.
+Weitere Informationen finden Sie im Abschnitt **Versuchszeitraum** und **Anzahl weiterer Versuche** Felder: Wenn ein Mobiltelefon nicht erreichbar ist, versucht das Programm standardmäßig 5-mal in Intervallen von mindestens 15 Minuten (für den maximalen Bereitstellungszeitraum) erneut. Diese Werte können Ihren Bedürfnissen entsprechend angepasst werden.
 
 In Bezug auf die Quarantäne stehen folgende Konfigurationsoptionen zur Verfügung:
 
-* **[!UICONTROL Zeit zwischen zwei signifikanten Fehlern]** : Geben Sie einen Standardwert ein (standardmäßig &quot;1d&quot;): day), um die Wartezeit zu definieren, bevor der Fehlerzähler auf einen Fehler erhöht wird.
-* **[!UICONTROL Maximale Anzahl an Fehlern vor der Quarantäne]** : Sobald dieser Wert erreicht ist, wird die Mobiltelefonnummer unter Quarantäne gestellt (standardmäßig &quot;5&quot;): die Nummer beim sechsten Fehler unter Quarantäne gestellt wird). Dadurch wird der Kontakt automatisch aus künftigen Sendungen ausgeschlossen.
+* **[!UICONTROL Zeit zwischen zwei signifikanten Fehlern]** : Geben Sie einen Standardwert (standardmäßig &quot;1d&quot;: Tag) ein, um die Wartezeit zu definieren, bevor der Fehlerzähler auf einen Fehler erhöht wird.
+* **[!UICONTROL Maximale Anzahl an Fehlern vor der Quarantäne]** : Sobald dieser Wert erreicht ist, wird die Mobiltelefonnummer unter Quarantäne gestellt (standardmäßig &quot;5&quot;: die Nummer wird beim sechsten Fehler unter Quarantäne gestellt). Dadurch wird der Kontakt automatisch aus künftigen Sendungen ausgeschlossen.
 
 ## Regionale Parameter {#regional-settings}
 
@@ -319,8 +320,8 @@ In dieser Phase können Sie Voreinstellungen für Datenrichtlinien einbeziehen.
 
 ![](assets/s_ncs_install_deployment_wiz_14.png)
 
-* **[!UICONTROL Betrachten Sie alle Telefonnummern als internationale Telefonnummern.]** : Wenn diese Option aktiviert ist, wendet die Anwendung das internationale Format auf Telefonnummern an (das Länderpräfix ist dann obligatorisch, da die Anzahl der Ziffern vor der Formatierung nicht markiert wird). Wenn diese Option nicht aktiviert ist, müssen Sie der internationalen Telefonnummer das Präfix &quot;+&quot;oder &quot;00&quot;selbst voranstellen.
-* **[!UICONTROL Alle Telefonnummern im internationalen Format speichern]** : Diese Option betrifft nur **national** Telefonnummern, die importiert oder bearbeitet werden. Definieren Sie, ob Sie ein einzelnes Format (z. B. 425 555 0150) oder das internationale Format (z. B. +1 425 555 0150)
+* **[!UICONTROL Betrachten Sie alle Telefonnummern als internationale.]** : Wenn diese Option aktiviert ist, wendet die Anwendung das internationale Format auf Telefonnummern an (das Länderpräfix ist dann obligatorisch, da die Anzahl der Ziffern vor Anwendung der Formatierung nicht überprüft wird). Wenn diese Option nicht aktiviert ist, müssen Sie der internationalen Telefonnummer das Präfix &quot;+&quot;oder &quot;00&quot;selbst voranstellen.
+* **[!UICONTROL Alle Telefonnummern im internationalen Format speichern]** : Diese Option betrifft nur **national** Telefonnummern, die importiert oder bearbeitet werden. Definieren Sie, ob Sie ein nationales Format (z. B. 425 555 0150) oder das internationale Format (z. B. +1 425 555 0150) verwenden möchten.
 
 ## Internetzugang {#access-from-the-internet}
 
@@ -340,11 +341,11 @@ Auf dieser Seite können Sie die Server-URLs folgendermaßen ausfüllen:
 
 1. Greifen Sie auf den im Internet angezeigten Anwendungsserver zu: Anmelde-/Abmeldeformulare, Extranet usw.
 1. Greifen Sie auf den Anwendungsserver für Ressourcen zu, die nicht im Internet verfügbar sind: Formulare, Intranet, Bestätigungsseiten.
-1. Greifen Sie auf die Mirrorseiten der Sendungen zu.
+1. Auf die Mirrorseiten der Sendungen zugreifen.
 
    Eine Mirrorseite ist eine dynamische Seite, auf der der Inhalt der E-Mail angezeigt wird. Der Zugriff erfolgt über einen Link, der in die an den Empfänger gesendete Nachricht eingefügt wird und personalisierte Elemente enthalten kann. Die Mirrorseite gibt dem Empfänger die Möglichkeit, die Nachricht in einem Internet-Browser anstelle der E-Mail-Software zu lesen, unabhängig vom Versandformat (Text oder HTML). Mirrorseiten werden jedoch nur für einen bestimmten Versand generiert, wenn der erforderliche HTML-Inhalt definiert wurde.
 
-Mit Adobe Campaign können Sie diese drei URLs unterscheiden, um die Last über mehrere Plattformen zu verteilen.
+Adobe Campaign ermöglicht es Ihnen, diese drei URLs zu unterscheiden, um die Last auf mehrere Plattformen zu verteilen.
 
 
 >[!NOTE]
@@ -430,14 +431,14 @@ Die folgenden Veröffentlichungsmodi sind verfügbar:
 
   Sie können Bilder mithilfe eines Skripts veröffentlichen:
 
-   * Sie müssen dieses Skript erstellen: Der Inhalt hängt von Ihrer Konfiguration ab.
+   * Erstellen Sie ein Skript, dessen Inhalt von Ihrer Konfiguration abhängt.
    * Das Skript wird durch den folgenden Befehl aufgerufen:
 
      ```
      [INSTALL]/copyToFrontal.vbs "$(XTK_INSTALL_DIR)\var\<instance>\upload\" "img1,img2,img3"
      ```
 
-     where `[INSTALL]` ist der Zugriffspfad zum Adobe Campaign-Installationsordner.
+     where `[INSTALL]` ist der Pfad zum Adobe Campaign-Installationsordner.
 
    * Stellen Sie in Unix sicher, dass das Skript ausführbar ist.
 
@@ -457,7 +458,7 @@ Mit dieser Funktion können Sie **Synchronisieren öffentlicher Ressourcen** auf
 
 Wenn keine öffentliche Ressource auf dem Tracking-Server vorhanden ist oder die Ressource einen 404-Fehler zurückgibt, versucht der Tracking-Server, die Ressource auf einem der Reservereserver zu finden.
 
-Das Deklarieren und Konfigurieren von Reservereservern muss im Marketing-Server erfolgen. **serverConf.xml** -Datei. Alle in der **serverConf.xml** sind in dieser [Abschnitt](../../installation/using/the-server-configuration-file.md).
+Das Deklarieren und Konfigurieren von Reservereservern muss im Marketing-Server erfolgen. **serverConf.xml** -Datei. Alle in der **serverConf.xml** in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md).
 
 **Erklärung**
 
@@ -473,11 +474,11 @@ Für jede öffentliche Ressource, die synchronisiert werden muss, müssen Sie de
 
 Das Statusattribut kann einer von drei Werten sein:
 
-* reserve: Die öffentliche Ressource wird synchronisiert
+* reserve: Die öffentliche Ressource wird synchronisiert.
 
 * normal: Vorhandenes Verhalten (ohne Synchronisierung)
 
-* Blacklist: Die URL wird der Blockierungsliste hinzugefügt, wenn ein 404-Fehler zurückgegeben wird. Die Dauer (in Sekunden) der URL, die sich in der Blockierungsliste befindet, wird durch eine **timeout** -Attribut, dessen Standardwert 60 s beträgt.
+* Blacklist: Die URL wird der Blockierungsliste hinzugefügt, wenn sie einen 404-Fehler zurückgibt. Die Dauer (in Sekunden) der URL, die sich in der Blockierungsliste befindet, wird durch eine **timeout** -Attribut, dessen Standardwert 60 s beträgt.
 
 Die vordefinierte Konfiguration der Synchronisierung lautet:
 

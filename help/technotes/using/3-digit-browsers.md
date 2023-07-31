@@ -2,8 +2,9 @@
 product: campaign
 title: Campaign-Web-Komponenten und Version 100 in Chrome-, Firefox- und Edge-Browsern
 description: Campaign-Web-Komponenten und Version 100 in Chrome-, Firefox- und Edge-Browsern
+feature: Technote
 exl-id: 2016279a-7b02-4399-b2ed-9a15456de816
-source-git-commit: b8329e24f07ec8b3dd89f655b47699f130266008
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '634'
 ht-degree: 100%

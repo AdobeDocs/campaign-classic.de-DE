@@ -2,15 +2,16 @@
 product: campaign
 title: Einrichtungsschritte
 description: Einrichtungsschritte
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Configuration
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
 exl-id: a5ae0b61-3377-46d9-a327-6c897eeda770
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '240'
-ht-degree: 2%
+source-wordcount: '247'
+ht-degree: 3%
 
 ---
 
@@ -30,7 +31,7 @@ Gehen Sie wie folgt vor, um diese Tags einzurichten:
 1. Erstellen der Webtracking-Tags. Dazu gibt es zwei Möglichkeiten:
 
    * Fügen Sie die URLs, die diesen Seiten entsprechen, in Ihre Adobe Campaign-Plattform ein, generieren Sie dann die zugehörigen Web-Tracking-Tags und extrahieren Sie diese (aus dem **[!UICONTROL Kampagnenausführung > Ressourcen > Webtracking-Tags]** -Knoten der Client-Konsole).
-   * Erstellen Sie die Webtracking-Tags selbst im Modus &quot;On-the-fly-Erstellung&quot;: Die URLs, die diesen Seiten entsprechen, werden automatisch in Ihre Adobe Campaign-Plattform eingefügt.
+   * Erstellen Sie die Webtrackingtags selbst im Modus &quot;On-the-fly-Erstellung&quot;: Die den Seiten entsprechenden URLs werden automatisch in Ihre Adobe Campaign-Plattform eingefügt.
 
 1. Fügen Sie diese Tags statisch oder dynamisch zu den Seiten hinzu, die Sie verfolgen möchten.
 

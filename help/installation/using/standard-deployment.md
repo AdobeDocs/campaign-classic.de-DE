@@ -2,14 +2,15 @@
 product: campaign
 title: Standardbereitstellung
 description: Standardbereitstellung
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Architecture, Deployment
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 4df126fa-4a6e-46a7-af6e-1e2e97f0072e
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '839'
 ht-degree: 6%
 
 ---
@@ -39,7 +40,7 @@ Diese Art von Konfiguration kann eine große Anzahl von Empfängern (500.000 bis
 
 ### Vorteile {#advantages}
 
-* Failover-Funktion: die Möglichkeit, Prozesse bei einem Hardwareproblem auf den anderen Computer zu wechseln.
+* Failover-Funktionalität: die Möglichkeit, Prozesse bei einem Hardwareproblem auf dem anderen Computer zu wechseln.
 * Bessere Gesamtleistung, da die MTA- und Umleitungsfunktionen auf beiden Computern hinter einem Lastverteiler bereitgestellt werden können. Mit zwei aktiven MTAs und ausreichend Bandbreite ist es möglich, Übertragungsraten von rund 100.000 E-Mails pro Stunde zu erreichen.
 
 ## Installation und Konfiguration {#installation-and-configuration-steps}
@@ -59,7 +60,7 @@ Diese Art von Konfiguration kann eine große Anzahl von Empfängern (500.000 bis
 
 ### Anwendungsserver installieren {#installing-the-application-server}
 
-Führen Sie die Schritte aus, um eine eigenständige Instanz vom Adobe Campaign-Anwendungsserver zur Erstellung der Datenbank zu installieren (Schritt 12). Siehe [Installation und Konfiguration (ein Computer)](../../installation/using/standalone-deployment.md#installing-and-configuring--single-machine-).
+Führen Sie die Schritte aus, um eine eigenständige Instanz vom Adobe Campaign-Anwendungsserver zur Erstellung der Datenbank zu installieren (Schritt 12). Siehe Abschnitt [Installation und Konfiguration (ein Computer)](../../installation/using/standalone-deployment.md#installing-and-configuring--single-machine-).
 
 Da es sich bei dem Computer nicht um einen Tracking-Server handelt, sollten Sie die Integration mit dem Webserver nicht berücksichtigen.
 
@@ -67,7 +68,7 @@ In den folgenden Beispielen sind die Parameter der Instanz:
 
 * Name der Instanz: **Demo**
 * DNS-Maske: **console.campaign.net&#42;** (nur für Client-Konsolenverbindungen und für Berichte)
-* Sprache: englisch
+* Sprache: Englisch
 * Datenbank: **campaign:demo@dbsrv**
 
 ### Installieren der beiden Frontserver {#installing-the-two-frontal-servers}
@@ -107,7 +108,7 @@ Zusammenfassend sind folgende Etappen zu durchlaufen:
 
    Die Verbindung zum Server mit der **nlserver web** -Modul (Mirrorseiten, Abmeldung) wird über die URL des Lastenausgleichs (tracking.campaign.net) durchgeführt.
 
-1. Ändern Sie die **intern** auf den Anwendungsserver.
+1. Ändern Sie die **intern** auf denselben wie der Anwendungsserver.
 
    Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
@@ -170,7 +171,7 @@ Zusammenfassend sind folgende Etappen zu durchlaufen:
 
    Die Konfiguration ist mit einer eigenständigen Instanz identisch, abgesehen von der Konfiguration des Tracking-Moduls.
 
-1. Füllen Sie die externe URL (die des Lastenausgleichs), die für die Umleitung verwendet wird, und die internen URLs der beiden Frontalserver.
+1. Füllen Sie die externe URL (die des Lastenausgleichs) für die Umleitung und die internen URLs der beiden Frontalserver.
 
    Weitere Informationen hierzu finden Sie unter [Tracking-Konfiguration](../../installation/using/deploying-an-instance.md#tracking-configuration).
 

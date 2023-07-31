@@ -2,16 +2,17 @@
 product: campaign
 title: Leistungs- und Durchsatzprobleme
 description: Leistungs- und Durchsatzprobleme
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
+badge-v7-prem: label="On-Premise und Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
 audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: fe69efda-a052-4f67-9c13-665f011d0a2b
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '711'
-ht-degree: 13%
+source-wordcount: '736'
+ht-degree: 15%
 
 ---
 
@@ -19,7 +20,7 @@ ht-degree: 13%
 
 
 
-Zunächst sollten Sie überprüfen, ob der neueste Build installiert ist. Dadurch wird sichergestellt, dass Sie über die neuesten Funktionen und Fehlerbehebungen verfügen.
+Zunächst sollten Sie überprüfen, ob der neueste Build installiert ist. Dadurch wird sichergestellt, dass Sie über die neuesten Funktionen und Fehlerkorrekturen verfügen.
 
 Siehe Abschnitt [Versionshinweise](../../rn/using/latest-release.md) für weitere Informationen zum Inhalt der einzelnen Versionen.
 
@@ -39,9 +40,9 @@ Adobe Campaign bietet auch eine [Tool](../../production/using/monitoring-process
 
 In den meisten Fällen hängen Leistungsprobleme mit der Datenbankwartung zusammen. Im Folgenden finden Sie die wichtigsten zu prüfenden Elemente:
 
-* Konfiguration: Es wird empfohlen, die anfängliche Adobe Campaign-Plattformkonfiguration zu überprüfen und eine vollständige Hardwareprüfung durchzuführen.
+* Konfiguration: Es wird empfohlen, die anfängliche Konfiguration der Adobe Campaign-Plattform zu überprüfen und eine vollständige Hardwareprüfung durchzuführen.
 * Installation und Konfiguration der Adobe Campaign-Plattform: Aktivieren Sie die Optionen für die Netzwerkkonfiguration und die Plattform-Zustellbarkeit.
-* Datenbankwartung: Stellen Sie sicher, dass die Datenbankbereinigung betriebsbereit ist und dass die Datenbankwartung ordnungsgemäß geplant und ausgeführt wird. Überprüfen Sie die Anzahl und Größe der Arbeitstabellen.
+* Datenbankwartung: Stellen Sie sicher, dass die Datenbankbereinigung funktioniert und die Datenbankwartung ordnungsgemäß geplant und ausgeführt wird. Überprüfen Sie die Anzahl und Größe der Arbeitstabellen.
 * Echtzeitdiagnose: Überprüfen Sie die Prozess- und Plattformprotokolldateien und überwachen Sie dann die Datenbankaktivität, während Sie das Problem neu erstellen.
 
 >[!NOTE]
@@ -52,19 +53,19 @@ In den meisten Fällen hängen Leistungsprobleme mit der Datenbankwartung zusamm
 
 Im Folgenden finden Sie eine Liste von Artikeln zu Best Practices für die Anwendungskonfiguration:
 
-* MTA- und MTAChild-Prozesse und -Speicher: die **mta** -Modul verteilt Nachrichten auf **mtachild** untergeordnete Module. Jeder **mtachild** erstellt Nachrichten, bevor eine Autorisierung vom Statistikserver angefordert wird, und sendet sie. Weitere Informationen finden Sie auf dieser [Seite.](../../installation/using/email-deliverability.md)
+* MTA- und MTAChild-Prozesse und -Speicher: die **mta** -Modul verteilt Nachrichten an seine **mtachild** untergeordnete Module. Jeder **mtachild** erstellt Nachrichten, bevor eine Autorisierung vom Statistikserver angefordert wird, und sendet sie. Weitere Informationen finden Sie auf dieser [Seite.](../../installation/using/email-deliverability.md)
 * TLS-Konfiguration: Die globale Aktivierung von TLS wird nicht empfohlen, da dadurch der Durchsatz reduziert werden kann. Stattdessen sollten die vom Zustellbarkeitsteam verwalteten TLS-Einstellungen pro Domäne entsprechend den Anforderungen angepasst werden. Weitere Informationen finden Sie auf dieser [Seite.](../../installation/using/email-deliverability.md#mx-configuration)
-* DKIM: Um das Sicherheitsniveau des DKIM zu gewährleisten, empfiehlt sich die Verschlüsselungsgröße 1024b als Best Practice. Niedrigere DKIM-Schlüssel werden von den meisten Zugangsanbietern nicht als gültig angesehen. Mehr dazu erfahren Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=de#authentication).
+* DKIM: Um das Sicherheitsniveau des DKIM zu gewährleisten, empfiehlt sich die Verschlüsselungsgröße 1024b. Niedrigere DKIM-Schlüssel werden von den meisten Zugangsanbietern nicht als gültig angesehen. Mehr dazu erfahren Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=de#authentication).
 
 ## Probleme mit der Zustellbarkeit {#deliverability-issues}
 
 Im Folgenden finden Sie eine Liste mit Best Practices und Artikeln zur Zustellbarkeit:
 
 * IP-Reputation: Wenn die IP-Reputation nicht gut genug ist, wirkt sich dies auf die Leistung aus. Die **Zustellbarkeits-Monitoring** bietet verschiedene Tools, um die Zustellbarkeitsleistung Ihrer Plattform zu verfolgen. Mehr dazu erfahren Sie auf [dieser Seite](../../delivery/using/monitoring-deliverability.md).
-* IP-Warmup: Die IP-Aufwärmphase wird vom Zustellbarkeitsteam durchgeführt. Hierzu gehört eine schrittweise Erhöhung der Anzahl der E-Mails durch neue IP-Adressen über einen Zeitraum von einigen Wochen.
-* Einrichten der IP-Affinität: Eine falsche IP-Affinitätseinstellung kann die E-Mails ganz stoppen (falscher Operator-/Affinitätsname in der Konfiguration) oder den Durchsatz reduzieren (geringe Anzahl von IPs in der Affinität). Mehr dazu erfahren Sie auf [dieser Seite](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use).
+* IP-Warmup: Die IP-Aufwärmung wird vom Zustellbarkeitsteam durchgeführt. Hierzu gehört eine schrittweise Erhöhung der Anzahl der E-Mails durch neue IP-Adressen über einen Zeitraum von einigen Wochen.
+* IP-Affinitäts-Setup: Eine falsche IP-Affinitätseinstellung kann die E-Mails ganz stoppen (falscher Operator-/Affinitätsname in der Konfiguration) oder den Durchsatz reduzieren (geringe Anzahl von IPs in der Affinität). Mehr dazu erfahren Sie auf [dieser Seite](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use).
 * E-Mail-Größe: Die E-Mail-Größe spielt eine wichtige Rolle beim Durchsatz. Die empfohlene maximale E-Mail-Größe beträgt 60 KB. Mehr dazu erfahren Sie auf [dieser Seite](https://helpx.adobe.com/legal/product-descriptions/campaign.html). Im [Versanddurchsatz](../../reporting/using/global-reports.md#delivery-throughput) -Bericht die Anzahl der Bytes überprüfen, die nach Stunde übertragen wurden.
-* Große Anzahl ungültiger Empfänger: Wenn eine große Anzahl ungültiger Empfänger vorhanden ist, kann dies den Durchsatz beeinträchtigen. Der MTA versucht weiterhin, E-Mails an ungültige Empfänger zu senden. Bitte stellen Sie sicher, dass Ihre Datenbank gut gepflegt ist.
+* Große Anzahl ungültiger Empfänger: Bei einer großen Anzahl ungültiger Empfänger kann dies den Durchsatz beeinträchtigen. Der MTA versucht weiterhin, E-Mails an ungültige Empfänger zu senden. Bitte stellen Sie sicher, dass Ihre Datenbank gut gepflegt ist.
 * Personalisierungsbetrag: Wenn ein Versand in &quot;Gestaltete Personalisierung&quot; verbleibt, überprüfen Sie das in Gestaltungsbausteinen verwendete JavaScript.
 
 >[!NOTE]

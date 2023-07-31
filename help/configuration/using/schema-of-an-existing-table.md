@@ -2,11 +2,12 @@
 product: campaign
 title: Schema einer vorhandenen Tabelle
 description: Schema einer vorhandenen Tabelle
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Custom Resources
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 exl-id: 964f1027-627c-4f12-91b5-f258e9ba458b
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '239'
 ht-degree: 15%
 
 ---
@@ -17,11 +18,11 @@ ht-degree: 15%
 
 Wenn das Programm auf die Daten einer existierenden Tabelle, einer SQL-Ansicht oder Daten aus einer Remote-Datenbank zugreifen muss, erstellen Sie das Schema in Adobe Campaign mit den folgenden Daten:
 
-* Name der Tabelle: Geben Sie den Namen der Tabelle mit dem Attribut &quot;sqltable&quot; ein (mit dem Alias bei Verwendung eines Datenbanklinks),
-* Schemaschlüssel: auf das/die Abstimmfeld(e) verweisen,
-* Indizes: zur Erzeugung von Abfragen verwendet werden,
-* Die Felder und ihre Position in der XML-Struktur: nur die im Antrag verwendeten Felder ausfüllen,
-* Links: , wenn es Verbindungen mit den anderen Tabellen der Basis gibt.
+* Name der Tabelle: Geben Sie den Namen der Tabelle (mit Alias bei Verwendung einer Datenbankverbindung) mit dem Attribut &quot;sqltable&quot; ein,
+* Schemaschlüssel: Referenzieren Sie die Abstimmfelder,
+* Indizes: zum Generieren von Abfragen verwendet,
+* die Felder und ihre Position in der XML-Struktur: Füllen Sie nur die in der Anwendung verwendeten Felder aus;
+* Links: wenn es Verknüpfungen mit anderen Tabellen der Basis gibt.
 
 ## Implementierung {#implementation}
 
@@ -57,6 +58,6 @@ Gehen Sie wie folgt vor, um das entsprechende Schema zu erstellen:
 
 ## Zugriff auf externe Datenbanken {#accessing-an-external-database}
 
-Die **Federated Data Access - FDA** ermöglicht Ihnen Zugriff auf die in einer externen Datenbank gespeicherten Daten.
+Die **Federated Data Access - FDA** ermöglicht Ihnen den Zugriff auf die in einer externen Datenbank gespeicherten Daten.
 
 Die Konfiguration der Schemata für den Zugriff auf Daten in einer externen Datenbank wird im Abschnitt [diese Seite](../../installation/using/creating-data-schema.md).

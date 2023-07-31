@@ -2,14 +2,15 @@
 product: campaign
 title: Mid-Sourcing-Bereitstellung
 description: Mid-Sourcing-Bereitstellung
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Architecture, Deployment
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 8a4d7ef1-de5b-4aee-a527-1b74d987ba61
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '358'
 ht-degree: 16%
 
 ---
@@ -36,9 +37,9 @@ Die allgemeine Kommunikation zwischen Servern und Prozessen erfolgt gemäß dem 
 ### Vorteile {#advantages}
 
 * Vereinfachte Serverkonfiguration: Es ist nicht erforderlich, dass der Kunde nach außen gerichtete Module (mta und inMail) konfiguriert.
-* Eingeschränkte Nutzung der Bandbreite: Da die Ausführung vom Mid-Sourcing-Server erfolgt, ist nur eine ausreichende Bandbreite erforderlich, um Personalisierungsdaten an den Mid-Sourcing-Server zu senden.
-* Hohe Verfügbarkeit ist kein internes Problem mehr: Das Problem wird auf den Mid-Sourcing-Server verschoben (Umleitung, Mirrorseiten, Ausführungsserver usw.).
-* Die Datenbank verlässt das Unternehmen nicht: Nur Daten, die zum Zusammenführen der Nachrichten erforderlich sind, werden an den Mid-Sourcing-Server gesendet (dazu kann HTTPS verwendet werden).
+* Eingeschränkte Bandbreitennutzung: Da die Ausführung vom Mid-Sourcing-Server erfolgt, ist nur eine ausreichende Bandbreite erforderlich, um Personalisierungsdaten an den Mid-Sourcing-Server zu senden.
+* Hohe Verfügbarkeit ist kein internes Problem mehr: Das Problem wird auf den Mid-Sourcing-Server (Umleitung, Mirrorseiten, Ausführungsserver usw.) verschoben.
+* Die Datenbank verlässt das Unternehmen nicht: Es werden nur Daten an den Mid-Sourcing-Server gesendet, die zum Zusammenstellen der Nachrichten erforderlich sind (HTTPS kann dazu verwendet werden).
 * Diese Art der Bereitstellung kann eine Lösung für Architekturen mit hohem Volumen (viele Empfänger in der Datenbank) mit einem erheblichen Versanddurchsatz sein.
 
 ### Nachteile {#disadvantages}
@@ -49,7 +50,7 @@ Die allgemeine Kommunikation zwischen Servern und Prozessen erfolgt gemäß dem 
 ### Empfohlene Ausrüstung {#recommended-equipment}
 
 * Anwendungsserver: 2-GHz-Quad-Core-CPU, 4 GB RAM, Software RAID 1-80-GB-SATA-Festplatte.
-* Datenbankserver: 3-GHz-Bi-Quad-Core-CPUs, mindestens 4 GB RAM, Hardware-RAID-10-15000RPM SAS-Festplatte, die Anzahl hängt von der Größe und erwarteten Leistung der Datenbank ab.
+* Datenbankserver: 3-GHz-bi-quad-Core-CPUs, mindestens 4 GB RAM, Hardware-RAID 10 15000RPM SAS-Festplatte, die Anzahl je nach Größe und erwarteter Leistung der Datenbank.
 
 >[!NOTE]
 >
@@ -65,4 +66,4 @@ Die allgemeine Kommunikation zwischen Servern und Prozessen erfolgt gemäß dem 
 
 ### Installation und Konfiguration (Mid-Sourcing-Bereitstellung) {#installing-and-configuring--mid-sourcing-deployment-}
 
-Siehe [Mid-Sourcing-Server](../../installation/using/mid-sourcing-server.md).
+Siehe Abschnitt [Mid-Sourcing-Server](../../installation/using/mid-sourcing-server.md).

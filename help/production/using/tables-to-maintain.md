@@ -2,16 +2,17 @@
 product: campaign
 title: Zu wartende Tabellen
 description: Zu wartende Tabellen
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
+badge-v7-prem: label="On-Premise und Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
 audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: 194f12de-4671-4a56-8cdc-cd5e3dac147b
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1123'
-ht-degree: 3%
+source-wordcount: '1148'
+ht-degree: 5%
 
 ---
 
@@ -54,7 +55,7 @@ Die folgende Liste enthält nur die Tabellen, die am stärksten fragmentiert sin
    <td> NmsMirrorPageInfo<br /> </td> 
    <td> Groß<br /> </td> 
    <td> Einfügungen, Löschungen<br /> </td> 
-   <td> Diese Tabelle enthält die Informationen, die zum Generieren personalisierter Mirrorseiten erforderlich sind. Es enthält ein Memo-Feld (CLOB) und ist daher in der Regel sehr groß. Das Volumen ist direkt proportional zum Verlauf der Mirrorseiten, die gespeichert werden. <br /> </td> 
+   <td> Diese Tabelle enthält die Informationen, die zum Generieren personalisierter Mirrorseiten erforderlich sind. Es enthält ein Memo-Feld (CLOB) und ist daher in der Regel sehr groß. Die Lautstärke ist direkt proportional zum Verlauf der Mirrorseiten, die gespeichert werden. <br /> </td> 
   </tr> 
   <tr> 
    <td> NmsDeliveryStat<br /> </td> 
@@ -78,13 +79,13 @@ Die folgende Liste enthält nur die Tabellen, die am stärksten fragmentiert sin
    <td> XtkWorkflowTask<br /> </td> 
    <td> Klein<br /> </td> 
    <td> Einfügen, Aktualisieren, Löschen<br /> </td> 
-   <td> Jede Ausführung einer Workflow-Aktivität führt zur Erstellung eines Datensatzes in dieser Tabelle. Der Bereinigungsmechanismus löscht sie, sobald sie abgelaufen sind.<br /> </td> 
+   <td> Jede Ausführung einer Workflow-Aktivität führt zur Erstellung eines Datensatzes in dieser Tabelle. Durch den Bereinigungsmechanismus werden sie gelöscht, sobald sie abgelaufen sind.<br /> </td> 
   </tr> 
   <tr> 
    <td> XtkWorkflowEvent<br /> </td> 
    <td> Klein<br /> </td> 
    <td> Einfügen, Aktualisieren, Löschen<br /> </td> 
-   <td> Jede Transition, die zwischen Aufgaben in einem Workflow aktiviert wird, führt zur Erstellung eines Datensatzes in dieser Tabelle. Der Bereinigungsmechanismus löscht sie, sobald sie abgelaufen sind. <br /> </td> 
+   <td> Jede Transition, die zwischen Aufgaben in einem Workflow aktiviert wird, führt zur Erstellung eines Datensatzes in dieser Tabelle. Durch den Bereinigungsmechanismus werden sie gelöscht, sobald sie abgelaufen sind. <br /> </td> 
   </tr> 
   <tr> 
    <td> XtkWorkflowJob<br /> </td> 
@@ -108,7 +109,7 @@ Die folgende Liste enthält nur die Tabellen, die am stärksten fragmentiert sin
    <td> NmsBroadlogMsg <br /> </td> 
    <td> Klein<br /> </td> 
    <td> Aktualisierungen<br /> </td> 
-   <td> Diese Tabelle enthält Informationen zum Qualifizieren von SMTP-Fehlern. Sie ist relativ klein, wird jedoch massiv aktualisiert, sodass Indizes auf dieser Tabelle häufig schnell fragmentiert werden. <br /> </td> 
+   <td> Diese Tabelle enthält Informationen zum Qualifizieren von SMTP-Fehlern. Sie ist relativ klein, wird jedoch massiv aktualisiert, sodass Indizes auf dieser Tabelle in der Regel schnell fragmentiert werden. <br /> </td> 
   </tr> 
   <tr> 
    <td> NmsEmailErrorStat<br /> </td> 
@@ -126,7 +127,7 @@ Die folgende Liste enthält nur die Tabellen, die am stärksten fragmentiert sin
    <td> NmsBroadLogRcp (wenn die NmsRecipient-Tabelle verwendet wird) <br /> </td> 
    <td> Groß<br /> </td> 
    <td> Einfügen, Aktualisieren, Löschen<br /> </td> 
-   <td> Dies ist die größte Tabelle im System. Pro gesendeter Nachricht wird ein Datensatz gesendet. Diese Datensätze werden eingefügt, aktualisiert, um den Versandstatus zu verfolgen, und beim Löschen des Verlaufs gelöscht. Beachten Sie, dass diese Tabelle in Version 5.10 kleiner ist als die Entsprechung in Version 4.05 (NmsBroadLog), da der SMTP-Nachrichtentext in der Tabelle NmsBroadLogMsg in Version 5.10 faktorisiert ist. Es ist jedoch nach wie vor wichtig, diese Tabelle regelmäßig neu zu indizieren (alle zwei Wochen zu Beginn) und sie von Zeit zu Zeit (einmal im Monat oder bei beeinträchtigter Leistung) vollständig neu zu erstellen. <br /> </td> 
+   <td> Dies ist die größte Tabelle im System. Pro gesendeter Nachricht wird ein Datensatz gesendet. Diese Datensätze werden eingefügt, aktualisiert, um den Versandstatus zu verfolgen, und beim Löschen des Verlaufs gelöscht. Beachten Sie, dass diese Tabelle in Version 5.10 kleiner ist als die Entsprechung in Version 4.05 (NmsBroadLog), da der SMTP-Nachrichtentext in der Tabelle NmsBroadLogMsg in Version 5.10 faktorisiert ist. Es ist jedoch nach wie vor wichtig, diese Tabelle regelmäßig neu zu indizieren (alle zwei Wochen zu Beginn) und sie von Zeit zu Zeit (einmal im Monat oder wenn die Leistung beeinträchtigt wird) vollständig neu zu erstellen. <br /> </td> 
   </tr> 
   <tr> 
    <td> YyyBroadLogXx (wenn eine externe Empfängertabelle verwendet wird)<br /> </td> 
@@ -205,4 +206,4 @@ Die folgende Liste enthält nur die Tabellen, die am stärksten fragmentiert sin
 
 ## Kundentabellen {#customer-tables}
 
-Zusätzlich zur obigen Liste können auch Tabellen, die von Kunden erstellt wurden (die nicht im Adobe Campaign-Datenmodell vorhanden sind), während der Plattformeinrichtung fragmentiert werden, insbesondere wenn sie häufig während der Datenladevorgänge oder Synchronisierungsvorgänge aktualisiert werden. Diese Tabellen können Teil des standardmäßigen Adobe Campaign-Datenmodells sein (z. B. **NmsRecipient**). In diesem Fall ist es Sache des Administrators der Adobe Campaign-Plattform, eine Prüfung seines spezifischen Datenbankmodells durchzuführen, um diese benutzerdefinierten Tabellen zu finden. Diese Tabellen werden nicht unbedingt in unseren Wartungsverfahren explizit erwähnt.
+Zusätzlich zur obigen Liste können auch Tabellen, die von Kunden erstellt wurden (die nicht im Adobe Campaign-Datenmodell vorhanden sind), während der Plattformeinrichtung fragmentiert werden, insbesondere wenn sie häufig während der Datenladevorgänge oder Synchronisierungsvorgänge aktualisiert werden. Diese Tabellen können Teil des standardmäßigen Adobe Campaign-Datenmodells sein (beispielsweise **NmsRecipient**). In diesem Fall ist es Sache des Administrators der Adobe Campaign-Plattform, eine Prüfung seines spezifischen Datenbankmodells durchzuführen, um diese benutzerdefinierten Tabellen zu finden. Diese Tabellen werden nicht unbedingt in unseren Wartungsverfahren explizit erwähnt.

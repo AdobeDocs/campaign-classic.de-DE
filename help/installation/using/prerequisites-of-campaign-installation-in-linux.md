@@ -2,16 +2,17 @@
 product: campaign
 title: Voraussetzungen für die Campaign-Installation unter Linux
 description: Voraussetzungen für die Campaign-Installation unter Linux
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
+badge-v7-prem: label="On-Premise und Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: acbd2873-7b1c-4d81-bc62-cb1246c330af
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '889'
-ht-degree: 3%
+source-wordcount: '914'
+ht-degree: 4%
 
 ---
 
@@ -136,7 +137,7 @@ aptitude install fonts-ipafont
 
 Fügen Sie in Red Hat den Befehl hinzu:
 
-* RHEL 7:
+* Für RHEL 7:
 
   ```
   yum install ipa-gothic-fonts ipa-mincho-fonts
@@ -194,7 +195,7 @@ Sie können ein Linux RPM-Paket vom Oracle Technology Network erhalten.
 
 >[!NOTE]
 >
->Wenn Sie den Oracle-Client bereits installiert haben, aber die globale Umgebung (z. B.: /etc/profile) nicht ordnungsgemäß konfiguriert ist, können Sie fehlende Informationen zum **nl6/customer.sh** script Weitere Informationen hierzu finden Sie unter [Umgebungsvariablen](../../installation/using/installing-packages-with-linux.md#environment-variables).
+>Wenn Sie den Oracle-Client bereits installiert haben, die globale Umgebung (z. B. /etc/profile) jedoch nicht ordnungsgemäß konfiguriert ist, können Sie fehlende Informationen zum **nl6/customer.sh** script Weitere Informationen hierzu finden Sie unter [Umgebungsvariablen](../../installation/using/installing-packages-with-linux.md#environment-variables).
 
 **Fehlerbehebung und Best Practices**
 
@@ -202,7 +203,7 @@ Probleme können nach einem Oracle-Client oder einer Serveraktualisierung, einer
 
 Wenn Sie in der Clientkonsole feststellen, dass unerwartete Zeitverzögerungen (eine oder mehrere Stunden) in den Protokollen, der letzten Verarbeitung des Workflows, der nächsten Verarbeitung usw. auftreten, kann es zu einem Problem zwischen der Bibliothek des Oracle-Clients und dem Oracle-Server kommen. Um solche Probleme zu vermeiden
 
-1. Stellen Sie sicher, dass Sie die **Vollständiger Client**.
+1. Stellen Sie sicher, dass die **Vollständiger Client**.
 
    Bei der Verwendung der Oracle Instant Client-Version wurden verschiedene Probleme identifiziert. Darüber hinaus ist es unmöglich, die Zeitzonen-Datei auf dem Instant Client zu ändern.
 
@@ -225,6 +226,6 @@ Adobe Campaign-Installationen für Linux müssen in der folgenden Reihenfolge du
 Der Installationsprozess wird in diesem Kapitel beschrieben. Die Installationsschritte lauten wie folgt:
 
 * Schritt 1: Installieren des Anwendungsservers, siehe [Installieren von Paketen mit Linux](../../installation/using/installing-packages-with-linux.md).
-* Schritt 2: Integration in einen Webserver (optional, je nach bereitgestellter Komponente).
+* Schritt 2: Integration mit einem Webserver (optional, je nach bereitgestellter Komponente).
 
 Nach Abschluss der Installationsschritte müssen Sie die Instanzen, die Datenbank und den Server konfigurieren. Weitere Informationen hierzu finden Sie unter [Über die Erstkonfiguration](../../installation/using/about-initial-configuration.md).

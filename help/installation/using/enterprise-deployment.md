@@ -2,14 +2,15 @@
 product: campaign
 title: Enterprise-Bereitstellung
 description: Enterprise-Bereitstellung
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Architecture, Deployment
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 38c14010-203a-47ab-b23d-6f431dab9a88
-source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1220'
 ht-degree: 8%
 
 ---
@@ -33,8 +34,8 @@ Bei dieser Art der Konfiguration kann der erwartete Durchsatz 100.000 E-Mails pr
 
 ### Vorteile {#advantages}
 
-* Optimierte Sicherheit: Nur die Server, die von außen offen gelegt werden müssen, werden auf dem Computer in der DMZ installiert.
-* Hohe Verfügbarkeit vereinfacht die Sicherstellung: Nur der von außen sichtbare Computer muss unter Berücksichtigung hoher Verfügbarkeit verwaltet werden.
+* Optimierte Sicherheit: Nur die Server, die von außen verfügbar gemacht werden müssen, werden auf dem Computer in der DMZ installiert.
+* Hohe Verfügbarkeit einfacher zu gewährleisten: Nur der von außen sichtbare Computer muss mit hoher Verfügbarkeit verwaltet werden.
 
 ### Nachteile {#disadvantages}
 
@@ -43,7 +44,7 @@ Höhere Hardware- und Verwaltungskosten.
 ### Empfohlene Ausrüstung {#recommended-equipment}
 
 * Anwendungsserver: 2-GHz-Quad-Core-CPU, 4 GB RAM, Software RAID 1-80-GB-SATA-Festplatte.
-* Weiterleitungsserver: 2-GHz-Quad-Core-CPU, 4 GB RAM, Software RAID 1-80-GB-SATA-Festplatte.
+* Umleitungsserver: 2-GHz-Quad-Core-CPU, 4 GB RAM, Software RAID 1-80-GB-SATA-Festplatte.
 
 >[!NOTE]
 >
@@ -76,9 +77,9 @@ Höhere Hardware- und Verwaltungskosten.
 
 In den folgenden Beispielen sind die Parameter der Instanz:
 
-* Name der Instanz: Demo
+* Name der Instanz: demo
 * DNS-Maske: tracking.campaign.net&#42;, console.campaign.net&#42; (Der Anwendungsserver verarbeitet die URLs für Clientkonsolen-Verbindungen und -Berichte sowie für Mirrorseiten und Abmeldeseiten)
-* Sprache: englisch
+* Sprache: Englisch
 * Datenbank: campaign:demo@dbsrv
 
 Die Schritte zur Installation des ersten Servers sind:
@@ -99,7 +100,7 @@ Die Schritte zur Installation des ersten Servers sind:
 
    >[!NOTE]
    >
-   >Beim ersten Ausführen des Webmoduls wird die **config-default.xml** und **serverConf.xml** -Dateien in **conf** Ordner unter dem Installationsordner. Alle in der **serverConf.xml** sind in dieser [Abschnitt](../../installation/using/the-server-configuration-file.md).
+   >Beim ersten Ausführen des Webmoduls wird die **config-default.xml** und **serverConf.xml** -Dateien in **conf** Ordner unter dem Installationsordner. Alle in der **serverConf.xml** in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md).
 
    Presse **Strg+C** , um den Server anzuhalten.
 
@@ -263,7 +264,7 @@ Zusammenfassend sind folgende Etappen zu durchlaufen:
    * Für Linux: [Integration in einen Webserver für Linux](../../installation/using/integration-into-a-web-server-for-linux.md),
    * Windows: [Integration in einen Webserver für Windows](../../installation/using/integration-into-a-web-server-for-windows.md).
 
-1. Kopieren Sie die **config-demo.xml** und **serverConf.xml** Dateien, die während der Installation erstellt wurden. Im **config-demo.xml** -Datei, aktivieren Sie die **trackinglogd** verarbeiten und deaktivieren Sie die **mta**, **Inmail**, **wfserver** und **stat** Prozesse.
+1. Kopieren Sie die **config-demo.xml** und **serverConf.xml** Dateien, die während der Installation erstellt wurden. Im **config-demo.xml** -Datei, aktivieren Sie die **trackinglogd** verarbeiten und deaktivieren Sie **mta**, **Postversand**, **wfserver** und **stat** Prozesse.
 1. Bearbeiten Sie die **serverConf.xml** Datei und füllen Sie die redundanten Tracking-Server in die Parameter der Umleitung:
 
    ```

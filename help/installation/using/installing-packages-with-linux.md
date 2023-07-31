@@ -2,16 +2,17 @@
 product: campaign
 title: Installieren von Paketen mit Linux
 description: Installieren von Paketen mit Linux
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Application Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
+badge-v7-prem: label="On-Premise und Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: f41c7510-5ad7-44f3-9485-01f54994b6cb
-source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1186'
-ht-degree: 1%
+source-wordcount: '1211'
+ht-degree: 3%
 
 ---
 
@@ -63,7 +64,7 @@ Gehen Sie wie folgt vor, um Adobe Campaign auf einem RPM-Betriebssystem (RHEL, C
 
 Der Befehl &#39;bc&#39;, der zur Ausführung des netreport erforderlich ist (siehe [diesem Abschnitt](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts) für weitere Informationen), ist nicht standardmäßig in allen Linux-Distributionen verfügbar. Um zu überprüfen, ob der Befehl verfügbar ist, führen Sie den Befehl &#39;which bc&#39; aus. Wenn nicht, müssen Sie es installieren.
 
-Bei CentOS müssen Sie das Paket bc.x86_64 installieren: Verbinden als **root** und führen Sie den folgenden Befehl aus:
+Bei CentOS müssen Sie das Paket bc.x86_64 installieren: connect as **root** und führen Sie den folgenden Befehl aus:
 
 ```
 yum install bc.x86_64
@@ -126,7 +127,7 @@ Beachten Sie bei der Installation von Adobe Campaign auf einem Debian 8/9-Betrie
 
 Einige Parameter können über die **customer.sh** file
 
-Wenn Sie die Installation zum ersten Mal durchführen, wird die **customer.sh** -Datei auf dem Server möglicherweise noch nicht vorhanden ist. Erstellen Sie sie und stellen Sie sicher, dass sie über Ausführungsrechte verfügt. Ist dies nicht der Fall, geben Sie den folgenden Befehl ein:
+Wenn Sie die Installation zum ersten Mal durchführen, wird die **customer.sh** auf dem Server möglicherweise noch nicht vorhanden ist. Erstellen Sie sie und stellen Sie sicher, dass sie über Ausführungsrechte verfügt. Ist dies nicht der Fall, geben Sie den folgenden Befehl ein:
 
 ```
 chmod +x /usr/local/neolane/nl6/customer.sh
@@ -190,7 +191,7 @@ Bearbeiten Sie bei Bedarf die **customer.sh** -Datei mithilfe der **vi customer.
 
 * Für LibreOffice:
 
-  Um Adobe Campaign auf einer bestehenden Version von LibreOffice auszuführen, sind zusätzliche Konfigurationen erforderlich: müssen Sie die Zugriffspfade zum Installationsordner angeben. Beispiel:
+  Um Adobe Campaign auf einer bestehenden LibreOffice-Version ausführen zu können, sind zusätzliche Konfigurationen erforderlich: Sie müssen die Zugriffspfade zum Installationsordner angeben. Beispiel:
 
    * Debian
 
@@ -262,7 +263,7 @@ Bei Verwendung von Oracle mit Adobe Campaign müssen Sie die Oracle-Client-Ebene
 
 * Umgebungsvariablen
 
-  Siehe [Umgebungsvariablen](../../installation/using/installing-packages-with-linux.md#environment-variables).
+  Siehe Abschnitt [Umgebungsvariablen](../../installation/using/installing-packages-with-linux.md#environment-variables).
 
 * Konfiguration für Adobe Campaign
 
@@ -300,7 +301,7 @@ Geben Sie nach Abschluss des Installationstests den folgenden Befehl ein:
 nlserver web
 ```
 
-Die folgenden Informationen werden angezeigt:
+Anschließend werden die folgenden Informationen angezeigt:
 
 ```
 17:11:03 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
@@ -312,7 +313,7 @@ Die folgenden Informationen werden angezeigt:
 17:11:08 >   Web server stop(pid=17546, tid=-151316352)...
 ```
 
-Mit diesen Befehlen können Sie **config-default.xml** und **serverConf.xml** Konfigurationsdateien. Alle in der **serverConf.xml** sind in dieser [Abschnitt](../../installation/using/the-server-configuration-file.md).
+Mit diesen Befehlen können Sie **config-default.xml** und **serverConf.xml** Konfigurationsdateien. Alle in der **serverConf.xml** in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md).
 
 Presse **Strg+C** um den Prozess zu beenden, geben Sie folgenden Befehl ein:
 
@@ -320,7 +321,7 @@ Presse **Strg+C** um den Prozess zu beenden, geben Sie folgenden Befehl ein:
 nlserver start web
 ```
 
-Die folgenden Informationen werden angezeigt:
+Anschließend werden die folgenden Informationen angezeigt:
 
 ```
 12:17:21 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
@@ -338,7 +339,7 @@ Geben Sie zum Anhalten Folgendes ein:
 nlserver stop web
 ```
 
-Die folgenden Informationen werden angezeigt:
+Anschließend werden die folgenden Informationen angezeigt:
 
 ```
 12:18:31 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
@@ -349,6 +350,6 @@ Die folgenden Informationen werden angezeigt:
 
 ## Kennwort für die interne Kennung {#password-for-the-internal-identifier}
 
-Der Adobe Campaign-Server definiert eine technische Anmeldung mit dem Namen **intern** , das alle Rechte für alle Instanzen hat. Kurz nach der Installation hat die Anmeldung kein Passwort. Es ist erforderlich, eine zu definieren.
+Der Adobe Campaign-Server definiert eine technische Anmeldung mit dem Namen **intern** , das alle Rechte für alle Instanzen hat. Kurz nach der Installation hat die Anmeldung kein Passwort. Es ist obligatorisch, eine zu definieren.
 
 Weiterführende Informationen finden Sie in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#internal-identifier).

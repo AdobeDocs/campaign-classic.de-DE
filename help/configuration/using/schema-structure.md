@@ -2,14 +2,15 @@
 product: campaign
 title: Schemastruktur
 description: Schemastruktur
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Custom Resources
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 3405efb8-a37c-4622-a271-63d7a4148751
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1526'
+source-wordcount: '1533'
 ht-degree: 85%
 
 ---
@@ -167,7 +168,7 @@ Im Folgenden finden Sie unser Schema mit den eingegebenen Typen:
 </srcSchema>
 ```
 
-### Mapping der Adobe Campaign/DBMS-Datentypen {#mapping-the-types-of-adobe-campaign-dbms-data}
+### Mapping der Typen von Adobe Campaign/DBMS-Daten {#mapping-the-types-of-adobe-campaign-dbms-data}
 
 In der folgenden Tabelle sind die Zuordnungen für die Datentypen aufgeführt, die von Adobe Campaign für die verschiedenen Datenbankverwaltungssysteme generiert wurden.
 
@@ -460,7 +461,7 @@ Elemente werden mit ihren Namen bezeichnet, während den Namen von Attributen ei
 Es ist auch möglich, komplexe Ausdrücke wie die folgenden arithmetischen Operationen zu definieren:
 
 * **@gender+1**: fügt 1 zum Inhalt des Attributs **gender** hinzu,
-* **@email + &#39;(&#39;+@created+&#39;)&#39;**: erstellt einen String, indem der Wert der E-Mail-Adresse, die zum Erstellungsdatum hinzugefügt wurde, zwischen Klammern steht (setzen Sie die Konstante für den String-Typ in Anführungszeichen).
+* **@email + &#39;(&#39;+@created+&#39;)&#39;**: erstellt einen String, indem der Wert der E-Mail-Adresse, die zum Erstellungsdatum hinzugefügt wurde, in Klammern gesetzt wird (für den String-Typ muss die Konstante in Anführungszeichen gesetzt werden).
 
 Die Ausdrücke wurden um Funktionen auf hoher Ebene erweitert, um das Potenzial dieser Sprache zu erweitern.
 

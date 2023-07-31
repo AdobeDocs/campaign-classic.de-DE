@@ -2,16 +2,17 @@
 product: campaign
 title: Messaging-Server
 description: Messaging-Server
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
+badge-v7-prem: label="On-Premise und Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: d9ffa58d-81e3-4291-8502-3cb7c326b666
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '162'
-ht-degree: 3%
+source-wordcount: '187'
+ht-degree: 12%
 
 ---
 
@@ -25,7 +26,7 @@ Alle für den POP3-Zugriff konfigurierten Server können für den Empfang von E-
 
 >[!CAUTION]
 >
->Dieser E-Mail-Server muss möglicherweise schwere Lasten verarbeiten: In Anfangsphasen können typische Listen bis zu 10 % Absprungraten liefern (wenn Sie 100.000 Nachrichten senden, erwarten Sie 10.000 Absprünge).
+>Dieser E-Mail-Server muss möglicherweise eine hohe Auslastung bewältigen: In ersten Phasen können typische Listen bis zu 10 % der Absprungraten produzieren (wenn Sie 100.000 Nachrichten senden, erwarten Sie 10.000 Bounces).
 >
 >Daher empfehlen wir, für diese Aufgabe nicht Ihren Unternehmens-Messaging-Server zu verwenden, da dies stark beeinträchtigt sein kann.
 >

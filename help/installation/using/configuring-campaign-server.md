@@ -2,16 +2,17 @@
 product: campaign
 title: Campaign-Server konfigurieren
 description: Campaign-Server konfigurieren
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
+badge-v7-prem: label="On-Premise und Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 46c8ed46-0947-47fb-abda-6541b12b6f0c
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1580'
-ht-degree: 3%
+source-wordcount: '1605'
+ht-degree: 4%
 
 ---
 
@@ -23,7 +24,7 @@ In diesem Kapitel werden serverseitige Konfigurationen beschrieben, die entsprec
 
 ## Einschränkungen
 
-Diese Verfahren beschränken sich auf **On-Premise**/**hybrid** Implementierungen und erfordern Administratorberechtigungen.
+Diese Verfahren beschränken sich **On-Premise**/**hybrid** Implementierungen und erfordern Administratorberechtigungen.
 
 Für **gehostet** -Bereitstellungen können nur von Adobe konfiguriert werden. Einige Einstellungen können jedoch in [Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=de), wie die Verwaltung von IP-Zulassungslisten oder URL-Berechtigungen. [Weitere Informationen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=de).
 
@@ -31,14 +32,14 @@ Weitere Informationen finden Sie in den folgenden Abschnitten:
 
 * [Control Panel-Dokumentation](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de)
 * [Hosting-Modelle](../../installation/using/hosting-models.md)
-* [Funktionsmatrix für On-Premise- und gehostete Campaign Classic-Versionen](../../installation/using/capability-matrix.md)
+* [Funktionsmatrix für On-Premise- und gehostete Campaign Classic](../../installation/using/capability-matrix.md)
 
 ## Konfigurationsdateien
 
-Campaign Classic-Konfigurationsdateien werden im **conf** Ordner des Adobe Campaign-Installationsordners. Die Konfiguration umfasst zwei Dateien:
+Campaign Classic-Konfigurationsdateien werden im **conf** Ordner des Adobe Campaign-Installationsordners. Die Konfiguration erstreckt sich auf zwei Dateien:
 
-* **serverConf.xml**: allgemeine Konfiguration für alle Instanzen. Diese Datei kombiniert die technischen Parameter des Adobe Campaign-Servers: Diese werden von allen Instanzen gemeinsam genutzt. Die Beschreibung einiger dieser Parameter wird nachfolgend beschrieben. Die verschiedenen Knoten und Parameter, die in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md).
-* **config-`<instance>`.xml** , **instance** ist der Name der Instanz): spezifische Konfiguration der Instanz. Wenn Sie Ihren Server auf mehrere Instanzen aufteilen, geben Sie die für jede Instanz spezifischen Parameter in die entsprechende Datei ein.
+* **serverConf.xml**: Allgemeine Konfiguration für alle Instanzen. In dieser Datei werden die technischen Parameter des Adobe Campaign-Servers kombiniert, die von allen Instanzen gemeinsam genutzt werden. Die Beschreibung einiger dieser Parameter wird nachfolgend beschrieben. Die verschiedenen Knoten und Parameter, die in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md).
+* **config-`<instance>`.XML** , **instance** ist der Name der Instanz): spezifische Konfiguration der Instanz. Wenn Sie Ihren Server auf mehrere Instanzen aufteilen, geben Sie die für jede Instanz spezifischen Parameter in die entsprechende Datei ein.
 
 ## Konfigurationsbereich
 
@@ -51,7 +52,7 @@ Konfigurieren oder passen Sie den Campaign-Server entsprechend Ihren Anforderung
 * Konfigurieren [Tomcat-Einstellungen](configure-tomcat.md)
 * Anpassen [Versandparameter](configure-delivery-settings.md)
 * Definieren [Dynamische Seitensicherheit und Relais](#dynamic-page-security-and-relays)
-* Schränken Sie die Liste der [Zulässige externe Befehle](#restricting-authorized-external-commands)
+* Die Liste der [Zulässige externe Befehle](#restricting-authorized-external-commands)
 * Einrichten [Redundantes Tracking](#redundant-tracking)
 * Verwalten [Hohe Verfügbarkeit und Workflow-Affinitäten](#high-availability-workflows-and-affinities)
 * Konfigurieren der Dateiverwaltung - [Weitere Infos](file-res-management.md)
@@ -87,13 +88,13 @@ Confirmation: XXXX
 
 ## Prozesse aktivieren {#enabling-processes}
 
-Adobe Campaign-Prozesse auf dem Server sind über die **config-default.xml** und **`config-<instance>.xml`** Dateien.
+Adobe Campaign-Prozesse auf dem Server sind über die **config-default.xml** und **`config-<instance>.xml`** -Dateien.
 
 Wenn der Adobe Campaign-Dienst gestartet wird, müssen Sie die **nlserver config -reload** Befehl.
 
 Es gibt zwei Arten von Prozessen: mehrere Instanzen und eine einzelne Instanz.
 
-* **mehrere Instanzen**: Ein einzelner Prozess wird für alle Instanzen gestartet. Dies gilt für **Web**, **syslogd** und **trackinglogd** Prozesse.
+* **mehrere Instanzen**: Ein einzelner Prozess wird für alle Instanzen gestartet. Dies ist der Fall für **Web**, **syslogd** und **trackinglogd** Prozesse.
 
   Die Aktivierung kann über das Menü **config-default.xml** -Datei.
 
@@ -106,7 +107,7 @@ Es gibt zwei Arten von Prozessen: mehrere Instanzen und eine einzelne Instanz.
   <trackinglogd autoStart="true"/>
   ```
 
-  In diesem Beispiel wird die Datei mit einer **vi** -Befehl in Linux. Er kann mit einer beliebigen **.txt** oder **.xml** Editor.
+  In diesem Beispiel wird die Datei mit einer **vi** -Befehl in Linux. Er kann mit einer beliebigen **.txt** oder **.XML** Editor.
 
 * **Mono-Instanz**: Für jede Instanz wird ein Prozess gestartet (Module: **mta**, **wfserver**, **inMail**, **sms** und **stat**).
 
@@ -144,7 +145,7 @@ Sie können den Speicherordner konfigurieren (**var** Verzeichnis) von Adobe Cam
 
 Standardmäßig werden alle dynamischen Seiten automatisch mit dem **lokal** Tomcat-Server des Computers, dessen Webmodul gestartet wurde. Diese Konfiguration wird im **`<url>`** Abschnitt der Abfrageweiterleitungskonfiguration für die **ServerConf.xml** -Datei.
 
-Sie können die Ausführung der dynamischen Seite auf eine **remote** Server; wenn das Webmodul auf dem Computer nicht aktiviert ist. Dazu müssen Sie die **localhost** mit dem Namen des Remote-Computers für JSP und JSSP, Webanwendungen, Berichte und Zeichenfolgen.
+Sie können die Ausführung der dynamischen Seite auf eine **remote** Server, wenn das Webmodul auf dem Computer nicht aktiviert ist. Dazu müssen Sie die **localhost** mit dem Namen des Remote-Computers für JSP und JSSP, Webanwendungen, Berichte und Zeichenfolgen.
 
 Die verfügbaren Parameter werden im Abschnitt **serverConf.xml** Konfigurationsdatei.
 
@@ -156,10 +157,10 @@ Für JSP-Seiten lautet die Standardkonfiguration:
 
 Adobe Campaign verwendet die folgenden JSP-Seiten:
 
-* /nl/jsp/**soaprouter.jsp**: Clientkonsole und Webdienstverbindungen (SOAP-APIs),
+* /nl/jsp/**soaprouter.jsp**: Verbindungen zwischen Client Console und Webdiensten (SOAP-APIs),
 * /nl/jsp/**m.jsp**: Mirrorseiten,
 * /nl/jsp/**logon.jsp**: Webbasierter Zugriff auf Berichte und die Bereitstellung der Clientkonsole,
-* /nl/jsp/**s.jsp** : Verwendung von viralem Marketing (Sponsoring und soziale Netzwerke).
+* /nl/jsp/**s.jsp** : Verwendung von Viral-Marketing (Sponsoring und soziale Netzwerke).
 
 Die für den Mobile-App-Kanal verwendeten JSSPs lauten wie folgt:
 
@@ -200,7 +201,7 @@ Standardmäßig werden nicht alle HTTP-Header weitergeleitet. Sie können bestim
 1. Im **`<relay>`** Knoten, wechseln Sie zur Liste der wiedergegebenen HTTP-Header.
 1. Hinzufügen einer **`<responseheader>`** -Element mit den folgenden Attributen:
 
-   * **name**: Kopfzeilenname
+   * **name**: Headername
    * **value**: Wertname.
 
    Beispiel:
@@ -234,7 +235,7 @@ sh
 
 Im **exec** -Knoten der Server-Konfigurationsdatei verwenden, müssen Sie auf die zuvor erstellte Datei im **blacklistFile** -Attribut.
 
-**Nur für Linux**: In der Serverkonfigurationsdatei empfehlen wir, einen Benutzer für die Ausführung externer Befehle anzugeben, um Ihre Sicherheitskonfiguration zu verbessern. Dieser Benutzer wird im **exec** -Knoten der Konfigurationsdatei. Alle in der **serverConf.xml** sind in dieser [Abschnitt](../../installation/using/the-server-configuration-file.md).
+**Nur für Linux**: In der Serverkonfigurationsdatei empfehlen wir, einen Benutzer anzugeben, der für die Ausführung externer Befehle vorgesehen ist, um Ihre Sicherheitskonfiguration zu verbessern. Dieser Benutzer wird im **exec** -Knoten der Konfigurationsdatei. Alle in der **serverConf.xml** in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md).
 
 >[!NOTE]
 >
@@ -257,7 +258,7 @@ Dieser Benutzer muss zur Unterliste des Adobe Campaign-Operators &quot;neolane&q
 
 ## Redundantes Tracking {#redundant-tracking}
 
-Wenn mehrere Server für die Weiterleitung verwendet werden, müssen sie über SOAP-Aufrufe miteinander kommunizieren können, um Informationen über die URLs freizugeben, die umgeleitet werden sollen. Zum Zeitpunkt des Starts des Versands ist es möglich, dass nicht alle Weiterleitungsserver verfügbar sind. Sie verfügen daher möglicherweise nicht über den gleichen Informationsstand.
+Wenn mehrere Server für die Weiterleitung verwendet werden, müssen sie über SOAP-Aufrufe miteinander kommunizieren können, um Informationen aus den umzuleitenden URLs freizugeben. Zum Zeitpunkt des Start des Versands ist es möglich, dass nicht alle Weiterleitungsserver verfügbar sind. Daher verfügen sie möglicherweise nicht über den gleichen Informationsstand.
 
 >[!NOTE]
 >
@@ -325,7 +326,7 @@ Standardmäßig werden die verschiedenen Adobe Campaign-Prozesse täglich um 6 U
 
 Sie können diese Konfiguration jedoch ändern.
 
-Gehen Sie dazu zum **serverConf.xml** -Datei, die sich im **conf** Repository Ihrer Installation.
+Gehen Sie dazu zum **serverConf.xml** -Datei, die sich in der **conf** Repository Ihrer Installation.
 
 Jeder in dieser Datei konfigurierte Prozess verfügt über eine **processRestartTime** -Attribut. Sie können den Wert dieses Attributs ändern, um die Startzeit jedes Prozesses entsprechend Ihren Anforderungen anzupassen.
 

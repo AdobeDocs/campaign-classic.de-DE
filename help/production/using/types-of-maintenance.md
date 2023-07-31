@@ -2,16 +2,17 @@
 product: campaign
 title: Arten der Wartung
 description: Arten der Wartung
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
+badge-v7-prem: label="On-Premise und Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
 audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: 08e179aa-fd83-4c0a-879e-ab7aec168d92
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '494'
-ht-degree: 2%
+source-wordcount: '519'
+ht-degree: 5%
 
 ---
 
@@ -33,7 +34,7 @@ Adobe Campaign bietet einen integrierten Workflow, mit dem Sie bestimmte Aufgabe
 
 ## Technische Wartung {#technical-maintenance}
 
-Der Datenbankbereinigungs-Workflow enthält kein Datenbankwartungstool: Es liegt an Ihnen, die Wartung zu organisieren. Dazu haben Sie folgende Möglichkeiten:
+Der Datenbankbereinigungs-Workflow enthält kein Werkzeug zur Datenbankwartung: Es liegt bei Ihnen, die Wartung zu organisieren. Dazu haben Sie folgende Möglichkeiten:
 
 * Arbeiten Sie mit Ihrem Datenbankadministrator zusammen, um die Datenbankwartung mit Tools von Drittanbietern einzurichten.
 * Verwenden Sie die Adobe Campaign Workflow-Engine, um diese Wartungsaktivitäten zu planen und zu verfolgen.

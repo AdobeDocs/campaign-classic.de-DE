@@ -2,12 +2,12 @@
 product: campaign
 title: Richtlinien für das Überwachen
 description: Entdecken Sie Richtlinien und Best Practices zur Überwachung von Campaign-Instanzen und -Prozessen
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
 feature: Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 exl-id: ca0c33c5-7350-462a-bc65-4cab51e529d9
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '761'
+source-wordcount: '768'
 ht-degree: 29%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 29%
 
 Die **[!UICONTROL Überwachung]** tab, auf den über die Startseite von Campaign Classic zugegriffen werden kann, ist der Haupteinstiegspunkt, der Sie bei der Überwachung Ihrer Instanz unterstützt.
 
-Es bietet ein Dashboard, was auf Ihrer Instanz geschieht: Status (Build-Version, installierte Pakete usw.), Systemindikatoren, Protokolle, derzeit ausgeführte Workflows, Status der letzten gesendeten Sendungen usw.
+Es bietet ein Dashboard darüber, was auf Ihrer Instanz geschieht: Status (Build-Version, installierte Packages usw.), Systemindikatoren, Protokolle, derzeit ausgeführte Workflows, Status der letzten gesendeten Nachrichten usw.
 
 Detaillierte Informationen finden Sie [hier](../../production/using/monitoring-processes.md).
 
@@ -43,7 +43,7 @@ Es stehen weitere Möglichkeiten zur Überwachung der verschiedenen Campaign-Pro
 
 **Automatische Überwachungstools**
 
-Es stehen verschiedene automatische Methoden zur Verfügung. , damit Sie Ihre Instanz überwachen können. Sie können beispielsweise E-Mail-Berichte mit erkannten Anomalien einrichten, eine Liste von Indikatoren im XML-Format abrufen usw. [Klicken Sie hier](../../production/using/monitoring-processes.md#automatic-monitoring), um weitere Informationen zu erhalten.
+Es stehen verschiedene automatische Methoden zur Verfügung. , um Sie bei der Überwachung Ihrer Instanz zu unterstützen. Sie können beispielsweise E-Mail-Berichte mit erkannten Anomalien einrichten, eine Liste von Indikatoren im XML-Format abrufen usw. [Klicken Sie hier](../../production/using/monitoring-processes.md#automatic-monitoring), um weitere Informationen zu erhalten.
 
 **Audit-Protokoll**
 
@@ -51,7 +51,7 @@ Im Audit-Protokoll können Sie den vollständigen Verlauf der Änderungen im Zus
 
 **Control Panel**
 
-Im Control Panel können Sie verschiedene Einstellungen Ihrer Instanz verwalten: URL-Berechtigungen verwalten, die Details Ihrer Instanz, wie die Build-Versionen Ihrer Server, überprüfen usw. Das Control Panel ermöglicht Ihnen auch, den verfügbaren Speicherplatz auf den SFTP-Servern zu überwachen, die mit Ihrer Instanz verbunden sind. [Klicken Sie hier](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de), um weitere Informationen zu erhalten.
+Im Control Panel können Sie verschiedene Einstellungen Ihrer Instanz verwalten: URL-Berechtigungen verwalten, Details Ihrer Instanz wie die Build-Versionen Ihrer Server überprüfen usw. Das Control Panel ermöglicht Ihnen auch, den verfügbaren Speicherplatz auf den SFTP-Servern zu überwachen, die mit Ihrer Instanz verbunden sind. [Klicken Sie hier](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de), um weitere Informationen zu erhalten.
 
 >[!NOTE]
 >
@@ -151,6 +151,6 @@ Technische Ressourcen finden Sie in der Dokumentation zum Campaign Classic. Wir 
 * [Campaign Classic-Architektur](../../production/using/general-architecture.md)
 * [Campaign Classic-Module](../../production/using/operating-principle.md)
 * [Campaign Classic-Optionen](../../installation/using/configuring-campaign-options.md)
-* [So richten Sie den automatischen Start von Modulen ein](../../production/using/administration.md)
+* [Einrichten des automatischen Starts von Modulen](../../production/using/administration.md)
 * [Campaign-Konfigurationsprinzip](../../production/using/configuration-principle.md)
 * [Fehlerbehebungsverfahren](../../production/using/performance-and-throughput-issues.md)

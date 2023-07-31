@@ -2,11 +2,12 @@
 product: campaign
 title: Anonym-Tracking
 description: Erfahren Sie, wie Sie das anonyme Tracking einrichten.
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Configuration, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 exl-id: f251eb21-0f3c-4b46-927a-57a3291e705f
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '219'
 ht-degree: 5%
 
 ---
@@ -22,7 +23,7 @@ Mit Adobe Campaign können Sie die erfassten Web-Tracking-Informationen einem Em
 
 Um das anonyme Webtracking in Ihrer Instanz zu aktivieren, müssen die folgenden Elemente konfiguriert werden:
 
-* Die **trackWebVisitors** Parameter der **Umleitung** -Element **serverConf.xml** -Datei des Tracking-Servers auf &quot;**true**&quot;, um ein permanentes Cookie (**uuid230**) in den Browsern unbekannter Internetbenutzer, die die Site besuchen.
+* Die **trackWebVisitors** Parameter der **Umleitung** -Element des **serverConf.xml** -Datei des Tracking-Servers auf &quot;**true**&quot;, um ein permanentes Cookie (**uuid230**) in den Browsern unbekannter Internetbenutzer, die die Site besuchen.
 * Die **Anonym Web Tracking** muss im Bildschirm zur Tracking-Konfiguration des Softwareverteilungs-Assistenten ausgewählt werden.
 
   ![](assets/webtracking_anonymous_set.png)

@@ -2,13 +2,14 @@
 product: campaign
 title: Berichte verwalten
 description: Berichte verwalten
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Reporting, Configuration
+badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 exl-id: 68908664-3cf6-4a6c-a327-c7f059c27aa3
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 3%
+source-wordcount: '176'
+ht-degree: 4%
 
 ---
 
@@ -24,9 +25,9 @@ In einigen Fällen müssen Sie auch neue Cubes einrichten, die speziell für die
 
 Folgende Berichte sind betroffen:
 
-* **[!UICONTROL Verfolgung aktueller Vorschläge]** (recentPropositions): Echtzeitverfolgung der Vorschläge.
-* **[!UICONTROL Öffnungsverteilung]** (opensByUserAgent): nach Benutzersoftware aufgeschlüsselte Öffnungen.
-* **[!UICONTROL Statistiken zu Teilungsaktivitäten]** (forwardActivities): Analyse von Teilungen, Öffnungen und Abonnements nach Zeiträumen.
+* **[!UICONTROL Verfolgung aktueller Vorschläge]** (recentPropositions): Echtzeitverfolgung von Vorschlägen.
+* **[!UICONTROL Öffnungsverteilung]** (opensByUserAgent): öffnet sich je nach Benutzersoftware aufgeschlüsselt.
+* **[!UICONTROL Statistiken zu Teilungsaktivitäten]** (forwardActivities): Analyse der Teilungsaktivitäten, Öffnungen und Abonnements nach Zeiträumen.
 * **[!UICONTROL Trackingindikatoren]** (mobileAppDeliveryFeedback): Trackingindikatoren für einen Versand in einer Mobile App.
 * **[!UICONTROL Angebotsanalyse]** (offerAnalysis): Angebotsanalyse nach Datum und Kanal.
 * **[!UICONTROL Reaktionsrate]** (mobileAppDistribution): Reaktionsrate der letzten Sendungen.

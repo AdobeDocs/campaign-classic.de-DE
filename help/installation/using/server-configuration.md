@@ -2,14 +2,15 @@
 product: campaign
 title: Sicherheitskonfiguration des Servers
 description: Weitere Informationen zu Best Practices bei der Serverkonfiguration
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: e1aff73a-54fb-444e-b183-df11c9b3df31
-source-git-commit: 3c1a0f435dce5e1f54f701e742f393db066ad78f
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '627'
+source-wordcount: '634'
 ht-degree: 34%
 
 ---
@@ -47,9 +48,9 @@ Die Liste der URLs, die standardmäßig von JavaScript-Codes (Workflows usw.) ü
 
 Es gibt drei Modi für den Verbindungsschutz:
 
-* **Blockieren** : alle URLs, die nicht zur Zulassungsliste gehören, werden mit einer Fehlermeldung blockiert. Dies ist der Standardmodus nach einem Postupgrade.
-* **Permissive** : alle URLs, die nicht zur Zulassungsliste gehören, sind zulässig.
-* **Warnung** : alle URLs, die sich nicht auf der Zulassungsliste befinden, sind erlaubt, doch der JS-Interpreter gibt eine Warnung aus, damit sie vom Administrator erfasst werden können. In diesem Modus werden Warnmeldungen vom Typ JST-310027 hinzugefügt.
+* **Blockieren** : Alle URLs, die nicht zur Zulassungsliste gehören, werden blockiert und erhalten eine Fehlermeldung. Dies ist der Standardmodus nach einem Postupgrade.
+* **Permissive** : Alle URLs, die nicht zur Zulassungsliste gehören, sind zulässig.
+* **Warnung** : Alle URLs, die sich nicht auf der Zulassungsliste befinden, sind zulässig, der JS-Interpreter gibt jedoch eine Warnung aus, damit der Administrator sie erfassen kann. In diesem Modus werden Warnmeldungen vom Typ JST-310027 hinzugefügt.
 
 ```
 <urlPermission action="warn" debugTrace="true">

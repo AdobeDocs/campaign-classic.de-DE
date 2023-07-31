@@ -2,11 +2,12 @@
 product: campaign
 title: Webtrackingtags erstellen
 description: Erfahren Sie, wie Sie Web-Tracking-Tags erstellen
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Application Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 exl-id: 160df6e1-43e5-4eb9-ad2f-5db444e314ea
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '279'
 ht-degree: 0%
 
 ---
@@ -18,18 +19,18 @@ Jede Seite der Site, die Sie verfolgen möchten, muss in Ihrer Adobe Campaign-Pl
 1. Manuelle Definition der zu verfolgenden URLs,
 1. Erstellung von URLs, die direkt verfolgt werden sollen.
 
-## Definieren der URLs, die in der Anwendung verfolgt werden sollen {#defining-the-urls-to-be-tracked-in-the-application}
+## Definieren der in der Anwendung zu verfolgenden URLs {#defining-the-urls-to-be-tracked-in-the-application}
 
-Mit dieser Methode können Sie die zu verfolgenden Seiten manuell definieren und dann ein Beispiel für das zugehörige Webtrackingtag generieren. Dieser Vorgang wird im **[!UICONTROL Kampagnenausführung > Ressourcen > Webtracking-Tags]** -Knoten der Clientkonsole.
+Mit dieser Methode können Sie die zu verfolgenden Seiten manuell definieren und dann ein Beispiel für das zugehörige Webtrackingtag generieren. Dieser Vorgang wird im **[!UICONTROL Kampagnenausführung > Ressourcen > Webtracking-Tags]** -Knoten der Client-Konsole.
 
 ![](assets/d_ncs_integration_webtracking_screen.png)
 
 So generieren Sie den HTML-Code, der in die Seite eingefügt werden soll:
 
-* Geben Sie den Titel des Tags ein: wird es in den Trackinglogs angezeigt,
-* Geben Sie die Quell-URL an: Dieses Feld dient zu Informationszwecken und ermöglicht die Angabe der verfolgten Seite (optional).
+* Geben Sie den Titel des Tags ein: Er wird in den Trackinglogs angezeigt.
+* Quell-URL angeben: Dieses Feld dient zu Informationszwecken und ermöglicht die Angabe der verfolgten Seite (optional).
 * Geben Sie bei Bedarf einen Gültigkeitszeitraum an.
-* Klicken **[!UICONTROL Erzeugen]** HTML-Code.
+* Klicks **[!UICONTROL Erzeugen]** HTML-Code.
 
 Kopieren Sie dann den generierten Code und fügen Sie ihn in die zu verfolgende Seite ein.
 

@@ -1,12 +1,13 @@
 ---
 product: campaign
 title: Zugriff auf Microsoft SQL Server konfigurieren
-description: Erfahren Sie, wie Sie den Zugriff auf Microsoft SQL Server konfigurieren
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+description: Informationen zum Konfigurieren des Zugriffs auf Microsoft SQL Server
+feature: Installation, Federated Data Access
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 exl-id: 65ab4577-3126-4579-8fcc-e93772ebd1e8
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '543'
 ht-degree: 10%
 
 ---
@@ -70,7 +71,7 @@ So konfigurieren Sie [!DNL Microsoft SQL Server] unter Windows:
 
 1. Überprüfen Sie, ob SQL Server Native Client v11 im Abschnitt **[!UICONTROL Neue Datenquelle erstellen]** Fenster.
 
-1. Wenn der native SQL Server-Client nicht aufgeführt ist, können Sie ihn hier herunterladen: [diese Seite](https://www.microsoft.com/en-my/download/details.aspx?id=36434).
+1. Wenn der native SQL Server-Client nicht aufgeführt ist, können Sie ihn unter [diese Seite](https://www.microsoft.com/en-my/download/details.aspx?id=36434).
 
 1. In Adobe Campaign können Sie dann Ihre [!DNL Microsoft SQL Server] externes Konto. Weitere Informationen zur Konfiguration Ihres externen Kontos finden Sie unter [diesem Abschnitt](#sql-external).
 
@@ -84,7 +85,7 @@ Sie müssen eine [!DNL Microsoft SQL Server] externes Konto, um Ihre Campaign-In
 
 1. Wählen Sie **[!UICONTROL Externe Datenbank]** als **[!UICONTROL Typ]** Ihres externen Kontos aus.
 
-1. under **[!UICONTROL Konfiguration]** auswählen [!DNL Microsoft SQL Server] von **[!UICONTROL Typ]** Dropdown-Liste.
+1. under **[!UICONTROL Konfiguration]** auswählen [!DNL Microsoft SQL Server] aus dem **[!UICONTROL Typ]** angezeigt.
 
    ![](assets/sql.png)
 
@@ -106,12 +107,12 @@ Sie müssen eine [!DNL Microsoft SQL Server] externes Konto, um Ihre Campaign-In
    >
    >Damit alle Funktionen verfügbar sind, müssen Sie die SQL-Funktionen von Adobe Campaign in der Remote-Datenbank erstellen. Weiterführende Informationen dazu finden Sie auf dieser [Seite](../../configuration/using/adding-additional-sql-functions.md).
 
-1. Klicken **[!UICONTROL Speichern]** wenn Ihre Konfiguration abgeschlossen ist.
+1. Klicks **[!UICONTROL Speichern]** wenn Ihre Konfiguration abgeschlossen ist.
 
 Der Connector unterstützt die folgenden Optionen:
 
 | Option | Beschreibung  |
 |---|---|
 | Authentifizierung | Vom Connector unterstützte Authentifizierungstyp. Aktuell unterstützter Wert: ActiveDirectoryMSI. <br> Weitere Informationen hierzu finden Sie in Beispiel 8 von [Microsoft-Dokumentation](https://docs.microsoft.com/en-us/sql/connect/odbc/using-azure-active-directory?view=sql-server-ver15#example-connection-strings). |
-| Verschlüsseln | Gibt an, ob Verbindungen die TLS-Verschlüsselung über das Netzwerk verwenden. Mögliche Werte sind **ja/obligatorisch (18.0 und höher)**, **no/optional (18.0 und höher)** und **strict (18.0 und höher)**. Der Standardwert ist auf **yes** in Version 18.0 und höher und **no** in früheren Versionen. <br>Weitere Informationen hierzu finden Sie unter [Microsoft-Dokumentation](https://docs.microsoft.com/en-us/sql/connect/odbc/dsn-connection-string-attribute?view=azure-sqldw-latest#encrypt). |
+| Verschlüsseln | Gibt an, ob Verbindungen die TLS-Verschlüsselung über das Netzwerk verwenden. Mögliche Werte sind **ja/obligatorisch (18.0 und höher)**, **no/optional (18.0 und höher)**, und **strict (18.0 und höher)**. Der Standardwert ist auf **yes** in Version 18.0 und höher und **no** in früheren Versionen. <br>Weitere Informationen hierzu finden Sie unter [Microsoft-Dokumentation](https://docs.microsoft.com/en-us/sql/connect/odbc/dsn-connection-string-attribute?view=azure-sqldw-latest#encrypt). |
 | TrustServerCertificate | Aktiviert die Verschlüsselung mit einem selbstsignierten Serverzertifikat bei Verwendung mit **Verschlüsseln**. <br>Akzeptierte Werte: **yes** oder **no** (Standardwert, d. h. das Serverzertifikat wird validiert). |

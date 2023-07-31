@@ -2,17 +2,18 @@
 product: campaign
 title: MX-Server mit Campaign verwenden
 description: Erfahren Sie, wie MX-Server mit Adobe Campaign Classic funktionieren.
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
+badge-v7-prem: label="On-Premise und Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 hidefromtoc: true
 exl-id: 47f50bf5-4d5b-4c07-af71-de4390177cf5
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '814'
-ht-degree: 1%
+source-wordcount: '839'
+ht-degree: 3%
 
 ---
 
@@ -36,9 +37,9 @@ Wenn Sie eine E-Mail senden, stellt der Software-Server eine Verbindung zum Empf
 
 Im Verbindungsprotokoll müssen Regeln eingehalten werden, um das Spamming und Monopolisieren von Servern zu verhindern. Die wichtigsten sind:
 
-* **Maximale Anzahl erlaubter Verbindungen**: Wenn diese Zahl eingehalten wird, befinden sich IPs nicht auf der Blockierungsliste und E-Mails werden aufgrund zusätzlicher Verbindungen nicht verweigert.
-* **Maximale Nachrichtenanzahl**: Während der Verbindung muss die Anzahl der zu sendenden Nachrichten definiert werden. Wenn diese Zahl nicht definiert ist, sendet der Server so viele wie möglich. Dies führt dazu, dass der ISP als Spammer identifiziert und der Blockierungsliste hinzugefügt wird.
-* **Nachrichten pro Stunde**: Um Ihre E-Reputation zu wahren, steuert Adobe Campaign die Anzahl der E-Mails, die Ihre IPs pro Stunde senden können. Dieses System schützt Sie vor E-Mail-Verweigerung oder Blockierungsliste.
+* **Maximale Anzahl erlaubter Verbindungen**: Wenn diese Zahl respektiert wird, befinden sich IPs nicht auf der Blockierungsliste und E-Mails werden aufgrund zusätzlicher Verbindungen nicht verweigert.
+* **Maximale Nachrichtenanzahl**: Während der Verbindung muss die Anzahl der zu sendenden Nachrichten definiert sein. Wenn diese Zahl nicht definiert ist, sendet der Server so viele wie möglich. Dies führt dazu, dass der ISP als Spammer identifiziert und der Blockierungsliste hinzugefügt wird.
+* **Nachrichten pro Stunde**: Um Ihrer E-Reputation zu entsprechen, steuert Adobe Campaign die Anzahl der E-Mails, die Ihre IPs pro Stunde senden können. Dieses System schützt Sie vor E-Mail-Verweigerung oder Blockierungsliste.
 
 ## E-Mails in Bounce Messages
 
@@ -57,14 +58,14 @@ Beispielsweise hat eine E-Mail-Adresse ein Feedback &quot;550 Benutzer unbekannt
 Adobe Campaign verwaltet diesen Prozess mit einer Übereinstimmung zwischen einem Fehlertyp und einem Grund:
 
 * **[!UICONTROL Benutzer unbekannt]**: Adresse, die syntaktisch korrekt ist, aber nicht vorhanden ist. Dieser Fehler wird als Hardbounce kategorisiert und innerhalb des ersten Fehlers unter Quarantäne gestellt.
-* **[!UICONTROL Postfach voll]**: Postfach, das die maximale Kapazität erreicht hat. Dieser Fehler kann auch darauf hinweisen, dass der Benutzer dieses Postfach nicht mehr verwendet. Dieser Fehler wird als Softbounce kategorisiert und innerhalb des dritten Fehlers unter Quarantäne gestellt und nach 30 Tagen aus der Quarantäne entfernt.
+* **[!UICONTROL Postfach voll]**: Postfach mit maximaler Kapazität. Dieser Fehler kann auch darauf hinweisen, dass der Benutzer dieses Postfach nicht mehr verwendet. Dieser Fehler wird als Softbounce kategorisiert und innerhalb des dritten Fehlers unter Quarantäne gestellt und nach 30 Tagen aus der Quarantäne entfernt.
 * **[!UICONTROL Inaktiver Benutzer]**: Das Postfach wurde vom ISP aufgrund eines inaktiven Benutzers in den letzten 6 Monaten deaktiviert. Dieser Fehler wird als Softbounce kategorisiert und innerhalb des dritten Fehlers unter Quarantäne gestellt.
 * **[!UICONTROL Ungültige Domain]**: Die Domain in der E-Mail-Adresse existiert nicht. Dieser Fehler wird als Softbounce kategorisiert und innerhalb des dritten Fehlers unter Quarantäne gestellt.
 * **[!UICONTROL Abgelehnt]**: Der ISP weigerte sich, die E-Mail an seine Benutzer zu senden. Dieser Fehler wird als Softbounce kategorisiert und nicht unter Quarantäne gestellt, da der Fehler nicht mit der E-Mail-Adresse, sondern mit der IP-Adresse oder der Reputation einer Domain verknüpft ist.
 
 >[!NOTE]
 >
->Weiterführende Informationen zu Typen und Ursachen für fehlgeschlagene Sendungen finden Sie in diesem Abschnitt [Abschnitt](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+>Weiterführende Informationen zu Typen und Ursachen für fehlgeschlagene Sendungen finden Sie in diesem [Abschnitt](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
 
 ## Zustellbarkeitsinstanz {#deliveratbility-env}
 
@@ -82,10 +83,10 @@ Der benutzerdefinierte Modus richtet sich an fortgeschrittene Clients, die eigen
 
 * **Unbekannter Nutzer** (Hardbounce): 550 5.1.1 ... Benutzer ist unbekannt {mx003}
 * **Postfach voll** (Softbounce): 550 5.2.2 Benutzerquote überschritten
-* **Inaktives Postfach** (Softbounce): 550 5.7.1 : Empfängeradresse abgelehnt: Inaktive MailBox, nicht länger als 6 Monate geöffnet
+* **Inaktives Postfach** (Softbounce): 550 5.7.1 : Abgelehnte Empfängeradresse: Inaktive MailBox, nicht länger als 6 Monate geöffnet
 * **Domäne ungültig** (Softbounce): DNS-Abfrage für &#39;ourdan.com&#39; fehlgeschlagen
 * **Abgelehnt** (Softbounce): Eingehender E-Mail-Bounce (Regel &#39;Feedback_loop_Hotmail&#39; entspricht diesem Bounce)
-* **Unerreichbar** (Softbounce): 421 4,16,55 [TS01] Nachrichten von x.x.x.x werden aufgrund übermäßiger Benutzerbeschwerden vorübergehend verschoben
+* **Unerreichbar** (Softbounce): 421 4.16.55 [TS01] Nachrichten von x.x.x.x werden aufgrund übermäßiger Benutzerbeschwerden vorübergehend verschoben
 
 **Verwandte Themen:**
 * [MX-Konfiguration](../../installation/using/email-deliverability.md#mx-configuration)

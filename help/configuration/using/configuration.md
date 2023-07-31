@@ -1,12 +1,13 @@
 ---
 product: campaign
 title: Navigationsstruktur von Campaign Explorer konfigurieren
+feature: Application Settings
 description: Erfahren Sie, wie Sie den Navigationsbaum von Campaign Explorer konfigurieren
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 exl-id: c7ae7240-0c12-4420-bbb3-4268c9ade3e7
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1217'
+source-wordcount: '1224'
 ht-degree: 2%
 
 ---
@@ -15,7 +16,7 @@ ht-degree: 2%
 
 Erfahrene Benutzer können Ordner im Explorer-Baum hinzufügen und anpassen.
 
-Erfahren Sie mehr über den Campaign-Explorer und die Navigationshierarchie [in diesem Abschnitt](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy).
+Erfahren Sie mehr über Campaign Explorer und die Navigationshierarchie [in diesem Abschnitt](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy).
 
 Die von der Navigationsliste verwendeten Ordnertypen werden in einem XML-Dokument beschrieben, das der Grammatik der **xtk:navtree** Schema.
 
@@ -41,7 +42,7 @@ Das XML-Dokument ist wie folgt strukturiert:
 </navtree>
 ```
 
-Das XML-Dokument enthält die **`<navtree>`** Stammelement mit **name** und **namespace** -Attribute, um den Dokumentnamen und den Namespace anzugeben. Der Name und der Namespace bilden den Identifizierungsschlüssel des Dokuments.
+Das XML-Dokument enthält die **`<navtree>`** Stammelement mit dem **name** und **namespace** -Attribute, um den Dokumentnamen und den Namespace anzugeben. Der Name und der Namespace bilden den Identifizierungsschlüssel des Dokuments.
 
 Die globalen Befehle der Anwendung werden im Dokument aus dem **`<commands>`** -Element.
 
@@ -51,7 +52,7 @@ Die Deklaration von Dateitypen ist im Dokument mit den folgenden Elementen struk
 
 Mit einem globalen Befehl können Sie eine Aktion starten. Diese Aktion kann ein Eingabeformular oder ein SOAP-Aufruf sein.
 
-Globale Befehle können über die Hauptmenge aufgerufen werden **[!UICONTROL Instrumente]** Menü.
+Globale Befehle können über die Hauptmenge aufgerufen werden. **[!UICONTROL Instrumente]** Menü.
 
 Die Konfigurationsstruktur des Befehls sieht wie folgt aus:
 
@@ -78,18 +79,18 @@ Die Konfigurationsstruktur des Befehls sieht wie folgt aus:
 
 Die Beschreibung eines globalen Befehls wird im **`<command>`** -Element mit den folgenden Eigenschaften:
 
-* **name**: Interner Name des Befehls: der Name muss eingegeben werden und eindeutig
+* **name**: Interner Name des Befehls: Der Name muss eingegeben werden und die eindeutige
 * **label**: Titel des Befehls.
 * **desc**: Beschreibung, die in der Statusleiste des Hauptbildschirms angezeigt wird.
-* **Formular**: Formular, das gestartet werden soll: der einzugebende Wert ist der Identifikationsschlüssel des Formulars (z. B. &quot;cus:recipient&quot;)
+* **Formular**: Formular, das gestartet werden soll: Der einzugebende Wert ist der Identifikationsschlüssel des Formulars (z. B. &quot;cus:recipient&quot;)
 * **rights**: Liste der spezifischen Berechtigungen (durch Kommas getrennt), die den Zugriff auf diesen Befehl ermöglichen. Die Liste der verfügbaren Berechtigungen ist über den Link **[!UICONTROL Administration > Zugriffe > Spezifische Berechtigungen]** Ordner.
 * **quickLabel**: zeigt vor Ausführung des Befehls ein Bestätigungsfeld an.
 
-A **`<command>`** Element kann enthalten **`<command>`** untergeordneten Elemente. In diesem Fall können Sie über das übergeordnete Element ein Untermenü mit diesen untergeordneten Elementen anzeigen.
+A **`<command>`** Element kann enthalten **`<command>`** untergeordneten Elemente. In diesem Fall können Sie über das übergeordnete Element ein Untermenü anzeigen, das aus diesen untergeordneten Elementen besteht.
 
 Die Befehle werden in derselben Reihenfolge angezeigt wie im XML-Dokument deklariert.
 
-Mithilfe eines Befehlstrennzeichens können Sie eine Trennleiste zwischen Befehlen anzeigen. Sie wird durch die Variable **&#39;-&#39;** -Wert, der in der Befehlsbeschriftung enthalten ist.
+Mithilfe eines Befehlstrennzeichens können Sie eine Trennleiste zwischen Befehlen anzeigen. Sie wird durch die Variable **&#39;-&#39;** -Wert, der in der Befehlsbezeichnung enthalten ist.
 
 Die optionale Präsenz der **`<soapcall>`** -Tag mit seinen Eingabeparametern definiert den Aufruf einer auszuführenden SOAP-Methode. Weitere Informationen zur SOAP-API finden Sie unter [Dokumentation zu Campaign JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=de).
 
@@ -160,15 +161,15 @@ Die **name** und **label** -Attribute füllen den internen Namen des Elements un
 Die **`<nodemodel>`** -Element enthält die Beschreibung des Ordnertyps mit den folgenden Eigenschaften:
 
 * **name**: interner Name
-* **label**: -Beschriftung, die in der **[!UICONTROL Neuen Ordner hinzufügen]** und als Standardbeschriftung beim Einfügen eines Ordners.
+* **label**: Beschriftung, die in der **[!UICONTROL Neuen Ordner hinzufügen]** und als Standardbeschriftung beim Einfügen eines Ordners.
 * **img**: Standardbild beim Einfügen von Ordnern.
-* **hiddenCommands**: Liste der Befehle (durch Kommas getrennt), die maskiert werden sollen. Mögliche Werte: &quot;adbnew&quot;, &quot;adbsave&quot;, &quot;adbcancel&quot;und &quot;adbdup&quot;.
-* **newFolderShortCuts**: Liste der Tastaturbefehle für Modelle (**`<nodemodel>`** durch Kommas getrennt) bei der Ordnererstellung.
+* **hiddenCommands**: Liste der zu maskierenden Befehle (durch Kommas getrennt). Mögliche Werte: &quot;adbnew&quot;, &quot;adbsave&quot;, &quot;adbcancel&quot;und &quot;adbdup&quot;.
+* **newFolderShortCuts**: Liste der Kurzbefehle für Modelle (**`<nodemodel>`** durch Kommas getrennt) bei der Ordnererstellung.
 * **insertRight**, **editRight**, **deleteRight**: Berechtigungen zum Einfügen, Bearbeiten und Löschen von Ordnern.
 
 Die **`<view>`** Element unter **`<nodemodel>`** -Element enthält die Konfiguration der Liste, die mit der Ansicht verknüpft ist. Das Schema der Liste wird im **schema** -Attribut **`<view>`** -Element.
 
-Um die Datensätze der Liste zu bearbeiten, wird implizit das Formular mit demselben Namen wie das Listenschema verwendet. Die **type** -Attribut auf **`<view>`** -Element wirkt sich auf die Anzeige des Formulars aus. Mögliche Werte:
+Um die Datensätze der Liste zu bearbeiten, wird implizit das Formular mit demselben Namen wie das Listenschema verwendet. Die **type** -Attribut in der **`<view>`** -Element wirkt sich auf die Anzeige des Formulars aus. Mögliche Werte:
 
 * **listdet**: zeigt das Formular unten in der Liste an.
 * **Liste**: zeigt nur die Liste an. Das Formular wird durch Doppelklick oder über die Option &quot;Öffnen&quot; im Menü zur Auswahl der Liste gestartet.
@@ -247,22 +248,22 @@ Die Konfigurationsstruktur des Befehls sieht wie folgt aus:
 
 Die Beschreibung eines Befehls wird im **`<command>`** -Element mit den folgenden Eigenschaften:
 
-* **name**: Interner Name des Befehls: der Name muss eingegeben und eindeutig sein.
+* **name**: Interner Name des Befehls: Der Name muss eingegeben und eindeutig sein.
 * **label**: Titel des Befehls.
 * **desc**: Beschreibung, die in der Statusleiste des Hauptbildschirms angezeigt wird.
-* **Formular**: Formular, das gestartet werden soll: der einzugebende Wert ist der Identifikationsschlüssel des Formulars (z. B. &quot;cus:recipient&quot;).
+* **Formular**: Formular, das gestartet werden soll: Der einzugebende Wert ist der Identifikationsschlüssel des Formulars (z. B. &quot;cus:recipient&quot;).
 * **rights**: Liste der spezifischen Berechtigungen (durch Kommas getrennt), die den Zugriff auf diesen Befehl ermöglichen. Die Liste der verfügbaren Berechtigungen ist über den Link **[!UICONTROL Administration > Zugriffe > Spezifische Berechtigungen]** Ordner.
 * **quickLabel**: zeigt vor Ausführung des Befehls ein Bestätigungsfeld an
-* **monoSelection**: erzwingt die Einmalauswahl (standardmäßig mehrere Auswahlmöglichkeiten).
+* **monoSelection**: erzwingt die Mono-Auswahl (standardmäßig mehrere Auswahlen).
 * **refreshView**: erzwingt das erneute Laden der Liste nach Ausführung des Befehls.
-* **enabledIf**: aktiviert den Befehl entsprechend dem eingegebenen Ausdruck.
-* **img**: gibt ein Bild ein, das den Zugriff auf den Befehl in der Symbolleiste der Liste ermöglicht.
+* **enabledIf**: Aktiviert den Befehl entsprechend dem eingegebenen Ausdruck.
+* **img**: gibt ein Bild ein, das den Zugriff auf den Befehl über die Listen-Symbolleiste ermöglicht.
 
-A **`<command>`** Element kann enthalten **`<command>`** untergeordneten Elemente. In diesem Fall können Sie über das übergeordnete Element ein Untermenü mit diesen untergeordneten Elementen anzeigen.
+A **`<command>`** Element kann enthalten **`<command>`** untergeordneten Elemente. In diesem Fall können Sie über das übergeordnete Element ein Untermenü anzeigen, das aus diesen untergeordneten Elementen besteht.
 
 Die Befehle werden in derselben Reihenfolge angezeigt wie im XML-Dokument deklariert.
 
-Mithilfe eines Befehlstrennzeichens können Sie eine Trennleiste zwischen Befehlen anzeigen. Sie wird durch die Variable **&#39;-&#39;** -Wert, der in der Befehlsbeschriftung enthalten ist.
+Mithilfe eines Befehlstrennzeichens können Sie eine Trennleiste zwischen Befehlen anzeigen. Sie wird durch die Variable **&#39;-&#39;** -Wert, der in der Befehlsbezeichnung enthalten ist.
 
 Die optionale Präsenz der **`<soapcall>`** -Tag mit seinen Eingabeparametern definiert den Aufruf einer auszuführenden SOAP-Methode. Weitere Informationen zu SOAP-APIs finden Sie unter [Dokumentation zu Campaign JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=de).
 
@@ -289,10 +290,10 @@ Der Formularkontext kann bei der Initialisierung über die **`<enter>`** -Tag. W
 
 Es gibt zwei Arten von Vorgängen zur Ordnerverwaltung:
 
-1. Der Ordner ist eine Ansicht: Die Liste zeigt alle Datensätze an, die mit dem Schema verknüpft sind, mit der Möglichkeit, das System in die Ordnereigenschaften zu filtern.
+1. Der Ordner ist eine Ansicht: Die Liste zeigt alle mit dem Schema verknüpften Datensätze an, mit der Möglichkeit, in die Ordnereigenschaften Systemfilter einzugeben.
 1. Der Ordner ist verknüpft: Die Datensätze in der Liste werden implizit nach dem Ordner-Link gefiltert.
 
-Bei verknüpften Ordnern wird die **folderLink** -Attribut auf **`<nodemodel>`** -Element gefüllt werden. Dieses Attribut enthält den Namen des Links im Ordner, der im Datenschema konfiguriert ist.
+Bei verknüpften Ordnern wird die **folderLink** -Attribut in der **`<nodemodel>`** -Element gefüllt werden. Dieses Attribut enthält den Namen des Links im Ordner, der im Datenschema konfiguriert ist.
 
 Beispiel einer Deklaration eines verknüpften Ordners im Datenschema:
 

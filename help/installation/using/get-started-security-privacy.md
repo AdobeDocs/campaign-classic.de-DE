@@ -2,15 +2,16 @@
 product: campaign
 title: Checkliste für Sicherheit und Datenschutz
 description: Erfahren Sie mehr über die wichtigsten zu prüfenden Elemente in Bezug auf Sicherheit und Datenschutz
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Privacy, Access Management, Privacy Tools
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: ec40498e-e673-4792-8dcf-8bb7e852b532
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '486'
-ht-degree: 59%
+source-wordcount: '493'
+ht-degree: 58%
 
 ---
 
@@ -51,7 +52,7 @@ Die Zugriffsverwaltung ist ein wichtiger Bestandteil des Sicherheits-Managements
 
 Bei Entwicklungsaufgaben in Adobe Campaign (Workflows, JavaScript, JSSP usw.) sollten Sie sich grundsätzlich an diesen Leitlinien orientieren:
 
-* **Skripterstellung**: versuchen, SQL-Anweisungen zu vermeiden, parametrierte Funktionen anstelle von Zeichenfolgenverkettung zu verwenden und SQL-Injection zu vermeiden, indem die zu verwendenden SQL-Funktionen zur Zulassungsliste hinzugefügt werden.
+* **Skripterstellung**: Vermeiden Sie SQL-Anweisungen, verwenden Sie parametrierte Funktionen anstelle von String-Verkettung und vermeiden Sie SQL-Injection, indem Sie die zu verwendenden SQL-Funktionen zur Zulassungsliste &quot;&quot;hinzufügen.
 
 * **Schutz des Datenmodells**: Verwenden Sie spezifische Berechtigungen, um Benutzeraktionen einzuschränken, und fügen Sie Systemfilter hinzu (sysFilter).
 
@@ -81,7 +82,7 @@ Alle Server müssen konfiguriert werden. Die Konfigurationsdateien sind vom Typ 
 
 * **Sicherheitszonen**: Konfigurieren Sie Sicherheitszonen, damit die IP-Adressen von Clients eines Proxys automatisch berücksichtigt werden.
 
-* **Schutz vor Datei-Uploads**: beschränken Sie die Dateitypen, die mit einem neuen uploadAllowList -Attribut auf den Adobe Campaign-Server hochgeladen werden können. Dies kann in der Serverkonfigurationsdatei verwendet werden.
+* **Schutz vor Datei-Uploads**: Beschränken Sie die Dateitypen, die mit einem neuen uploadAllowList -Attribut auf den Adobe Campaign-Server hochgeladen werden können. Dies kann in der Serverkonfigurationsdatei verwendet werden.
 
 * **Relais**: Optimieren Sie die Relais-Konfiguration, indem Sie die Relais-Regeln für nicht verwendete Module/Anwendungen deaktivieren.
 
@@ -100,6 +101,6 @@ Beim Konfigurieren des Webservers (Apache/IIS) sollten verschiedene Best Practic
 * Deaktivieren Sie die alte SSL-Version und -Ziffern.
 * Entfernen Sie die TRACE-Methode
 * Entfernen Sie das Banner
-* Begrenzen Sie die Abfragegröße, um das Hochladen wichtiger Dateien zu verhindern.
+* Begrenzen der Abfragegröße, um das Hochladen wichtiger Dateien zu verhindern
 
 [Mehr dazu](../../installation/using/web-server-configuration.md)

@@ -1,15 +1,16 @@
 ---
 product: campaign
 title: Richtlinien für Script-Erstellung und Codierung
-description: Erfahren Sie mehr über die Richtlinien, die bei der Entwicklung in Adobe Campaign befolgt werden müssen (Workflows, JavaScript, JSSP usw.).
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+description: Erfahren Sie mehr über die Richtlinien für die Entwicklung in Adobe Campaign (Workflows, JavaScript, JSSP usw.).
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 1f96c3df-0ef2-4f5f-9c36-988cbcc0769f
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '766'
+source-wordcount: '773'
 ht-degree: 40%
 
 ---
@@ -55,7 +56,7 @@ Um SQL-Injections zu vermeiden, müssen der Zulassungsliste SQL-Funktionen hinzu
 
 >[!IMPORTANT]
 >
->Wenn Sie einen Build verwenden, der älter als 8140 ist, wird die Variable **XtkPassUnknownSQLFunctionsToRDBMS** -Option auf &quot;1&quot;gesetzt werden. Wenn Sie Ihre Datenbank sichern möchten, löschen Sie diese Option (oder legen Sie sie auf &quot;0&quot;fest).
+>Wenn Sie einen älteren Build als 8140 verwenden, wird die Variable **XtkPassUnknownSQLFunctionsToRDBMS** -Option auf &quot;1&quot;gesetzt werden. Wenn Sie Ihre Datenbank sichern möchten, löschen Sie diese Option (oder legen Sie sie auf &quot;0&quot;fest).
 
 Wenn Sie Benutzereingaben zur Erstellung von Filtern in Abfragen oder SQL-Anweisungen verwenden, müssen Sie sie immer escapen (siehe die [JSAPI-Dokumentation für Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=de) - Schutz von Daten: Escape-Funktionen). Diese Funktionen sind:
 
@@ -158,7 +159,7 @@ Im Allgemeinen wird ein Captcha im DCE hinzugefügt, indem ein Gestaltungsbauste
 
 1. Zwischen der letzten Seite und der **[!UICONTROL Speicherung]** Aktivität, fügen Sie eine **[!UICONTROL Skript]** und **[!UICONTROL Test]**.
 
-   Zweig anschließen **[!UICONTROL True]** der **[!UICONTROL Speicherung]** und der andere auf der Seite, die das Captcha haben wird.
+   Zweig anschließen **[!UICONTROL True]** der **[!UICONTROL Speicherung]** und die andere Seite, die das Captcha haben wird.
 
    ![](assets/scripting-captcha2.png)
 
@@ -166,9 +167,9 @@ Im Allgemeinen wird ein Captcha im DCE hinzugefügt, indem ein Gestaltungsbauste
 
    ![](assets/scripting-captcha3.png)
 
-1. Bearbeiten Sie die **[!UICONTROL Skript]** Aktivität. Der Inhalt hängt von der ausgewählten Captcha-Engine ab.
+1. Bearbeiten Sie die **[!UICONTROL Skript]** -Aktivität. Der Inhalt hängt von der ausgewählten Captcha-Engine ab.
 
-1. Schließlich können Sie Ihren personalisierten Baustein auf der Seite hinzufügen: verweisen auf [diese Seite](../../web/using/editing-content.md).
+1. Schließlich können Sie Ihren personalisierten Baustein zur Seite hinzufügen, siehe [diese Seite](../../web/using/editing-content.md).
 
    ![](assets/scripting-captcha4.png)
 

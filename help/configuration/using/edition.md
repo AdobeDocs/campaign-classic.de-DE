@@ -2,11 +2,12 @@
 product: campaign
 title: Navigationsstruktur von Campaign Explorer bearbeiten
 description: Navigationsstruktur von Campaign Explorer bearbeiten
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Application Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 exl-id: 204d4a24-267c-4976-90d9-7bf5bee8d116
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '135'
+source-wordcount: '142'
 ht-degree: 0%
 
 ---
@@ -18,7 +19,7 @@ Auf den Bildschirm zum Erstellen und Konfigurieren der Navigationshierarchiekonf
 
 ![](assets/d_ncs_integration_navigation_arbo.png)
 
-Die Konfiguration der Navigationshierarchie ist auf mehrere XML-Dokumente aufgeteilt. Sie funktioniert nach einem ähnlichen Prinzip wie die Schemaerweiterung: Alle Dokumente werden zusammengeführt, um ein einzelnes Dokument zu erstellen, das die gesamte Konfiguration enthält. Das Dokument kann nicht bearbeitet werden und wird im Tab &quot;Vorschau&quot; angezeigt.
+Die Konfiguration der Navigationshierarchie ist auf mehrere XML-Dokumente aufgeteilt. Es folgt einem ähnlichen Prinzip wie die Schemaerweiterung: Alle Dokumente werden zusammengeführt, um ein einzelnes Dokument zu generieren, das die gesamte Konfiguration enthält. Das Dokument kann nicht bearbeitet werden und wird im Tab &quot;Vorschau&quot; angezeigt.
 
 Das Bearbeitungsfeld stellt den Inhalt des XML-Dokuments bereit:
 

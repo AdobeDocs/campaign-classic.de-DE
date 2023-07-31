@@ -2,12 +2,12 @@
 product: campaign
 title: Erste Schritte mit dem Campaign Classic-Datenmodell
 description: Erfahren Sie, wie Sie das Datenmodell von Campaign erweitern, Schemata bearbeiten, APIs verwenden und vieles mehr
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Data Model
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
+feature: Data Model, Configuration
 exl-id: 655b5928-b005-442f-b026-2f1b0c1abb99
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '992'
 ht-degree: 32%
 
 ---
@@ -80,7 +80,7 @@ Weitere Informationen zum Konfigurieren von Erweiterungsschemata zum Erweitern d
 
 ## Verwenden einer benutzerdefinierten Empfängertabelle {#custom-recipient-table}
 
-Beim Entwerfen Ihres Adobe Campaign-Datenmodells können Sie die [integrierte Empfängertabelle](#default-recipient-table)oder erstellen Sie eine [benutzerdefinierte Empfängertabelle](../../configuration/using/about-custom-recipient-table.md) zum Speichern Ihrer Marketing-Profile.
+Beim Entwerfen Ihres Adobe Campaign-Datenmodells können Sie die [integrierte Empfängertabelle](#default-recipient-table)oder erstellen Sie eine [benutzerdefinierte Empfängertabelle](../../configuration/using/about-custom-recipient-table.md) -Tabelle, um Ihre Marketing-Profile zu speichern.
 
 Wenn Ihr Datenmodell nicht zur empfängerorientierten Struktur passt, können Sie andere Tabellen als Zielgruppendimension in Adobe Campaign einrichten. Dies kann z. B. relevant sein, wenn Sie Haushalte, Konten (wie Mobiltelefone) und Unternehmen/Sites anvisieren müssen und nicht nur Empfänger.
 
@@ -108,9 +108,9 @@ Die Verwendung einer benutzerdefinierten Empfängertabelle bietet folgende Vorte
 
 Weitere Informationen zum Campaign-Datenmodell finden Sie in diesen Abschnitten:
 
-* **Beschreibung der wichtigsten Tabellen** - Weitere Informationen zur Standardbeschreibung des Campaign Classic-Datenmodells finden Sie unter [diesem Abschnitt](../../configuration/using/data-model-description.md).
+* **Beschreibung der Haupttabellen** - Weitere Informationen zur Standardbeschreibung des Campaign Classic-Datenmodells finden Sie unter [diesem Abschnitt](../../configuration/using/data-model-description.md).
 
-* **Vollständige Beschreibung der einzelnen Tabellen** - Rufen Sie die vollständige Beschreibung jeder Tabelle auf, indem Sie **[!UICONTROL Admin > Konfiguration > Datenschemata]**, wählen Sie eine Ressource aus der Liste aus und klicken Sie auf die **[!UICONTROL Dokumentation]** Registerkarte.
+* **Vollständige Beschreibung der einzelnen Tabellen** - Rufen Sie die vollständige Beschreibung der einzelnen Tabellen auf, indem Sie **[!UICONTROL Admin > Konfiguration > Datenschemata]**, wählen Sie eine Ressource aus der Liste aus und klicken Sie auf die **[!UICONTROL Dokumentation]** Registerkarte.
 
   ![](assets/data-model_documentation-tab.png)
 

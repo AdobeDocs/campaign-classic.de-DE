@@ -2,14 +2,15 @@
 product: campaign
 title: Befehlszeilen
 description: Befehlszeilen
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 5cd4abb0-2bd2-4b23-902c-41b08a1d2f7a
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '150'
+source-wordcount: '157'
 ht-degree: 4%
 
 ---
@@ -40,7 +41,7 @@ Sie können eine vorhandene Datenbank über die Befehlszeile mit einer Instanz v
 nlserver config -setdblogin:[rbdms:]account[:database][/password]@server
 ```
 
-Die folgenden Werte sind für die **`[rdbms]`** Parameter:
+Die folgenden Werte sind möglich für die **`[rdbms]`** Parameter:
 
 * **postgresql**: für PostgreSQL,
 * **oracle**: für Oracle,

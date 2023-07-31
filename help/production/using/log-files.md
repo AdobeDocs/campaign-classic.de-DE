@@ -2,16 +2,17 @@
 product: campaign
 title: Protokolldateien
 description: Protokolldateien
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
+badge-v7-prem: label="On-Premise und Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
 audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: c9d427da-6965-4945-90f0-d0770701d55e
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '431'
-ht-degree: 2%
+source-wordcount: '456'
+ht-degree: 6%
 
 ---
 
@@ -38,7 +39,7 @@ Protokolldateien mit mehreren Instanzen sind in der folgenden Tabelle aufgeführ
 | Datei | Beschreibung |
 |---|---|
 | web.log | Webmodulprotokolle (Clientkonsole, Berichte, SOAP-API usw.) |
-| webmdl.log | Protokolle vom Umleitungsmodul |
+| webmdl.log | Protokolle aus dem Umleitungsmodul |
 | watchdog.log | Protokolle vom Adobe Campaign-Prozessüberwachungsmodul |
 | trackinglogd.log | Trackinglogs          |
 
@@ -48,7 +49,7 @@ Die Protokolldateien der Mono-Instanz sind in der folgenden Tabelle aufgeführt:
 |---|---|
 | mta.log | MTA-Modulprotokolle |
 | mtachild.log | Verarbeitungslogs der Nachrichten |
-| wfserver.log | Protokolle des Workflow-Servermoduls |
+| wfserver.log | Protokolle des Workflow-Server-Moduls |
 | runwf.log | Workflow-Ausführungsprotokolle |
 | inMail.log | Bounce-Message-Modulprotokoll |
 | logins.log | Protokolliert alle Anmeldeversuche für Adobe Campaign (erfolgreich oder nicht) |
@@ -61,7 +62,7 @@ Zur Optimierung der Leistung und des Speicherplatzes wird die Datei &quot;login.
 
 Standardmäßig sind die Protokolle auf zwei 10 MB Dateien pro Modul und Instanz beschränkt. Die zweite Datei heißt: **`<modulename>`_2.log**. Die Größe der Logs ist daher auf 2 begrenzt.&#42;10 MB pro Modul und Instanz.
 
-Sie können jedoch größere Dateien beibehalten. Um dies zu aktivieren, ändern Sie den Wert der **maxFileSizeMb=&quot;10&quot;** -Einstellung in **syslogd** Knoten der **conf/serverConf.xml** -Datei. Dieser Wert stellt die maximale Größe einer Protokolldatei in MB dar.
+Sie können jedoch größere Dateien beibehalten. Ändern Sie dazu den Wert der **maxFileSizeMb=&quot;10&quot;** -Einstellung in **syslogd** Knoten der **conf/serverConf.xml** -Datei. Dieser Wert stellt die maximale Größe einer Protokolldatei in MB dar.
 
 Wenn Sie weitere Details in den Protokollen beibehalten möchten, können Sie die Adobe Campaign-Module mit der **-verbose** Parameter:
 

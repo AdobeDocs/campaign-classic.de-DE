@@ -2,14 +2,15 @@
 product: campaign
 title: Erstellen einer Instanz und Anmelden
 description: Erstellen einer Instanz und Anmelden
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: a025026e-688e-4ec1-abc4-40ee040d2b3b
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '605'
 ht-degree: 17%
 
 ---
@@ -48,9 +49,9 @@ Gehen Sie wie folgt vor, um eine neue Instanz zu erstellen:
    >
    >Verwenden Sie für die Verbindungs-URL nur die folgenden Zeichen: `[a-z]`, `[A-Z]`, `[0-9]` und Bindestriche (-) oder Vollstopps.
 
-1. Klicken **[!UICONTROL Ok]** zur Bestätigung der Einstellungen: können Sie jetzt mit dem Erstellungsprozess der Instanz beginnen.
+1. Klicks **[!UICONTROL Ok]** zur Bestätigung der Einstellungen: Sie können jetzt mit dem Erstellungsprozess der Instanz beginnen.
 1. Im **[!UICONTROL Verbindungsparameter]** -Fenster, geben Sie die **intern** Anmeldung und Kennwort zum Herstellen einer Verbindung zum Adobe Campaign-Anwendungsserver. Nach der Verbindung greifen Sie auf den Assistenten zur Instanzerstellung zu, um eine neue Instanz zu deklarieren
-1. Im **[!UICONTROL Name]** eingeben. **Instanzname**. Da dieser Name zum Generieren einer Konfigurationsdatei verwendet wird **config-`<instance>`.xml** und in den Befehlszeilenparametern verwendet wird, um die Instanz zu identifizieren, müssen Sie einen Kurznamen ohne Sonderzeichen auswählen. Beispiel: **eMarketing**.
+1. Im **[!UICONTROL Name]** und geben Sie die **Instanzname**. Da dieser Name zum Generieren einer Konfigurationsdatei verwendet wird **config-`<instance>`.XML** und in den Befehlszeilenparametern verwendet wird, um die Instanz zu identifizieren, müssen Sie einen Kurznamen ohne Sonderzeichen auswählen. Beispiel: **eMarketing**.
 
    ![](assets/s_ncs_install_create_instance.png)
 
@@ -78,7 +79,7 @@ Gehen Sie wie folgt vor, um eine neue Instanz zu erstellen:
    >
    >Die Instanzsprache kann nach diesem Schritt nicht mehr geändert werden. Adobe Campaign-Instanzen sind nicht mehrsprachig: Sie können die Benutzeroberfläche nicht von einer Sprache in eine andere wechseln.
 
-1. Klicken **[!UICONTROL Ok]** zur Bestätigung der Instanzdeklaration. Melden Sie sich ab und wieder an, um die Datenbank zu deklarieren.
+1. Klicks **[!UICONTROL Ok]** zur Bestätigung der Instanzdeklaration. Melden Sie sich ab und wieder an, um die Datenbank zu deklarieren.
 
    >[!NOTE]
    >

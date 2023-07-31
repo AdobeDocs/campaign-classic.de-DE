@@ -2,14 +2,15 @@
 product: campaign
 title: Interaction - Datenpuffer
 description: Interaction - Datenpuffer
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 7250b885-0606-466a-bfc2-6dd3cc5a012d
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '306'
 ht-degree: 7%
 
 ---
@@ -24,7 +25,7 @@ In Adobe Campaign **Pufferspeicher-Zone** wurde im Interaction-Modul eingeführt
 
 Dies betrifft nur eingehende Interaktionen, sei es durch einen Aufruf (mit oder ohne Aufrufdaten) oder durch ein Statusupdate (updateStatus).
 
-Um beim Schreiben von Vorschlägen für einen Empfänger eine Warteschlange zu vermeiden, generiert ein neuer Prozess eine **Pufferspeicher-Zone** , die Vorschläge **asynchron geschrieben**. Diese Pufferzone wird regelmäßig gelesen und geleert. Der Standardzeitraum beträgt ca. eine Sekunde. Daher wird die Schreibweise des Vorschlags gruppiert.
+Um beim Schreiben von Vorschlägen für einen Empfänger eine Warteschlange zu vermeiden, generiert ein neuer Prozess eine **Pufferspeicher-Zone** , die Vorschläge ermöglicht, **asynchron geschrieben**. Diese Pufferzone wird regelmäßig gelesen und geleert. Der Standardzeitraum beträgt ca. eine Sekunde. Daher wird die Schreibweise des Vorschlags gruppiert.
 
 >[!NOTE]
 >
@@ -42,7 +43,7 @@ Pufferspeicher-Zone **Konfiguration** kann in der Konfigurationsdatei der Instan
 
 Stellen Sie nach der Konfiguration der Pufferzone sicher, dass eine angepasste Hardware-Konfiguration verfügbar ist. (Speicherkapazität vorhanden).
 
-Die Definition für einen SchreibDaemon (Prozess mit dem Namen: Interaktion) wie folgt aussieht:
+Die Definition für einen SchreibDaemon (Prozess namens Interaktion) lautet wie folgt:
 
 ```
 <interactiond args="" autoStart="false" callDataSize="0" initScript="" maxProcessMemoryAlertMb="1800"

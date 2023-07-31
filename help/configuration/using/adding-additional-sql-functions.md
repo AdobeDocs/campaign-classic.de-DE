@@ -2,12 +2,13 @@
 product: campaign
 title: Hinzufügen zusätzlicher SQL-Funktionen
 description: Erfahren Sie, wie Sie zusätzliche SQL-Funktionen definieren
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Configuration, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 exl-id: 04b0a0e5-d6df-447c-ac67-66adb1bdf717
-source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1026'
-ht-degree: 0%
+source-wordcount: '1033'
+ht-degree: 1%
 
 ---
 
@@ -31,11 +32,11 @@ Um es über die Konsole zu installieren, wählen Sie die **Tools/Erweitert/Impor
 
 >[!IMPORTANT]
 >
->Warnung: selbst wenn die Liste der importierten Funktionen sofort im Funktionseditor angezeigt wird, können sie erst nach dem Neustart von Adobe Campaign verwendet werden.
+>Warnung: Selbst wenn die Liste der importierten Funktionen sofort im Funktionseditor angezeigt wird, können sie erst nach dem Neustart von Adobe Campaign verwendet werden.
 
 ## Allgemeine Struktur des zu importierenden Packages {#general-structure-of-package-to-import}
 
-Die hinzuzufügenden Funktionen finden Sie im Abschnitt **Datei &quot;package&quot;** im XML-Format. Hier ein Beispiel:
+Die hinzuzufügenden Funktionen finden Sie im Abschnitt **&quot;package&quot;-Datei** im XML-Format. Hier ein Beispiel:
 
 ```
 <?xml version="1.0" encoding='ISO-8859-1' ?>
@@ -64,12 +65,12 @@ Die hinzuzufügenden Funktionen finden Sie im Abschnitt **Datei &quot;package&qu
 
 * Die **name**, **namespace** und **label** dienen nur Informationszwecken. Sie können eine Zusammenfassung des Pakets in der Liste der installierten Packages anzeigen (Explorer/Administration/Package Management/Installierte Packages).
 * Die **buildVersion** und **buildNumber** -Felder sind Pflichtfelder. Sie müssen der Server-Nummer entsprechen, mit der die Konsole verbunden ist. Diese Informationen finden Sie im Feld &quot;Hilfe/Info&quot;.
-* Die folgenden Blöcke **entity** und **functionList** sind zwingend erforderlich. In funcList sind die Felder &quot;name&quot;und &quot;namespace&quot;obligatorisch, ihr Name bleibt jedoch dem Benutzer überlassen, zu entscheiden, und sie geben die Funktionsliste eindeutig an.
+* Die folgenden Bausteine **Entitäten** und **functionList** sind zwingend erforderlich. In funcList sind die Felder &quot;name&quot;und &quot;namespace&quot;obligatorisch, ihr Name bleibt jedoch dem Benutzer überlassen, zu entscheiden, und sie geben die Funktionsliste eindeutig an.
 
   Wenn also eine andere Liste von Funktionen mit demselben Namespace-/Namenspaar (hier &quot;cus::myList&quot;) importiert wird, werden die zuvor importierten Funktionen gelöscht. Umgekehrt wird die neue Serie importierter Funktionen zur vorherigen hinzugefügt, wenn Sie dieses Namespace-/Namenspaar ändern.
 
 * Die **Gruppe** -Element können Sie die Funktionsgruppe angeben, in der die importierten Funktionen im Funktionseditor angezeigt werden. Das Attribut @name kann entweder ein bereits vorhandener Name sein (in diesem Fall werden die Funktionen der betreffenden Gruppe hinzugefügt) oder ein neuer Name (in diesem Fall wird er in einer neuen Gruppe angezeigt).
-* Erinnerung: mögliche Werte für das Attribut @name im `<group>` -Element:
+* Erinnerung: Mögliche Werte für das Attribut @name im `<group>` -Element:
 
   ```
     name="aggregate"      ( label="Aggregates"         )
@@ -83,7 +84,7 @@ Die hinzuzufügenden Funktionen finden Sie im Abschnitt **Datei &quot;package&qu
 
 >[!IMPORTANT]
 >
->Vergewissern Sie sich, dass das Attribut @label ausgefüllt ist: Dies ist der Name, der in der Liste der verfügbaren Funktionen angezeigt wird. Wenn Sie nichts eingeben, hat die Gruppe keinen Namen. Wenn Sie jedoch einen anderen Namen als den vorhandenen eingeben, ändert sich der Name der gesamten Gruppe.
+>Vergewissern Sie sich, dass Sie das Attribut @label ausgefüllt haben: Dies ist der Name, der in der Liste der verfügbaren Funktionen angezeigt wird. Wenn Sie nichts eingeben, hat die Gruppe keinen Namen. Wenn Sie jedoch einen anderen Namen als den vorhandenen eingeben, ändert sich der Name der gesamten Gruppe.
 
 Wenn Sie Funktionen zu mehreren Gruppen hinzufügen möchten, können Sie mehrere `<group>`  -Elemente in derselben Liste nachverfolgt werden.
 
@@ -114,14 +115,14 @@ Die **@name** -Feld bezieht sich auf den Namen der Funktion und &quot;args&quot;
 
   >[!NOTE]
   >
-  >Die Beschreibung muss eine Zeichenfolge aus gültigen XML-Zeichen sein: Beachten Sie bitte die Verwendung von &#39;&lt;&#39; und &#39;>&#39; anstelle von &lt; und >.
+  >Die Beschreibung muss eine Zeichenfolge aus gültigen XML-Zeichen sein: Beachten Sie die Verwendung von &#39;&lt;&#39; und &#39;>&#39; anstelle von &lt; und >.
 
 * **@type** ist der Rückgabetyp der Funktion und ist ein Standardwert (long, string, byte, datetime..). Wenn es weggelassen wird, bestimmt der Server den besten Typ unter den verfügbaren Typen innerhalb des Ausdrucks, der die Funktion implementiert.
 * **@minArgs** und **maxArgs** gibt die Anzahl der Parameter (Minimum und Maximum) für einen Parameter an. Für eine Funktion mit 2 Parametern sind beispielsweise minArgs und maxArgs 2 und 2. Für 3 Parameter, plus 1 optional, sind sie 3 bzw. 4.
 * Schließlich wird die **providerPart** -Element stellt die Funktionsimplementierung bereit.
 
    * Die **Anbieter** -Attribut erforderlich ist, gibt es die Datenbanksysteme an, für die die Implementierung bereitgestellt wird. Wie im Beispiel gezeigt, können bei unterschiedlichen Ausdruckssyntax oder zugrunde liegenden Funktionen je nach Datenbank alternative Implementierungen bereitgestellt werden.
-   * Die **@body** -Attribut enthält die Funktionsimplementierung. Bitte beachten Sie: Diese Implementierung muss ein Ausdruck in Datenbanksprache (kein Codeblock) sein. Abhängig von den Datenbanken können Ausdrücke aus Unterabfragen (&quot;(Spalte aus Tabelle auswählen, wo..)&quot;) bestehen, die nur einen einzigen Wert zurückgeben. Dies ist beispielsweise bei Oracle der Fall (die Abfrage muss in Klammern geschrieben sein).
+   * Die **@body** -Attribut enthält die Funktionsimplementierung. Bitte beachten Sie: Bei dieser Implementierung muss es sich um einen Ausdruck in Datenbanksprache (nicht um einen Codeblock) handeln. Abhängig von den Datenbanken können Ausdrücke aus Unterabfragen (&quot;(Spalte aus Tabelle auswählen, wo..)&quot;) bestehen, die nur einen einzigen Wert zurückgeben. Dies ist beispielsweise bei Oracle der Fall (die Abfrage muss in Klammern geschrieben sein).
 
   >[!NOTE]
   >

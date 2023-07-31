@@ -2,15 +2,16 @@
 product: campaign
 title: Einleitung
 description: Einleitung
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Monitoring, Upgrade
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: 3e39a0d2-ff7e-4233-82bb-2b360f696a33
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '193'
-ht-degree: 5%
+source-wordcount: '200'
+ht-degree: 6%
 
 ---
 
@@ -29,7 +30,7 @@ Das Upgrade muss auf alle Server angewendet werden, auf denen Adobe Campaign ins
 
 1. Migrieren Sie die Umleitungs- und Tracking-Server (Apache/IIS).
 1. Migrieren Sie die Power Booster-/Cluster-Server.
-1. Migrieren Sie den Marketing-Server.
+1. Migrieren des Marketing-Servers
 
 Adobe Campaign basiert auf mehreren serverseitigen Prozessen, die Sie bei Aktualisierungen bearbeiten müssen, insbesondere:
 

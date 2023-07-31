@@ -2,15 +2,15 @@
 product: campaign
 title: Adobe Analytics-Connector
 description: Erfahren Sie mehr über den Adobe Analytics-Connector.
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Overview
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
+feature: Analytics Integration
 role: User, Admin
 level: Beginner
 exl-id: 0dc6ce98-dc3e-4242-953e-e7cec55289ff
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1711'
-ht-degree: 100%
+source-wordcount: '1718'
+ht-degree: 99%
 
 ---
 

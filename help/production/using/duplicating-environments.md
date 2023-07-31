@@ -2,16 +2,17 @@
 product: campaign
 title: Duplizieren von Umgebungen
 description: Duplizieren von Umgebungen
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
+badge-v7-prem: label="On-Premise und Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
 audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: 2c933fc5-1c0a-4c2f-9ff2-90d09a79c55a
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1296'
-ht-degree: 5%
+source-wordcount: '1321'
+ht-degree: 6%
 
 ---
 
@@ -27,7 +28,7 @@ ht-degree: 5%
 >
 >Wenn Sie keinen Zugriff auf den Server und die Datenbank (gehostete Umgebungen) haben, können Sie die unten beschriebenen Verfahren nicht durchführen. Bitte kontaktieren Sie die Adobe.
 
-Die Verwendung von Adobe Campaign erfordert die Installation und Konfiguration einer oder mehrerer Umgebungen: Entwicklung, Tests, Vorproduktion, Produktion usw.
+Für die Verwendung von Adobe Campaign ist die Installation und Konfiguration einer oder mehrerer Umgebungen erforderlich: Entwicklung, Test, Vorproduktion, Produktion usw.
 
 Jede Umgebung enthält eine Adobe Campaign-Instanz und jede Adobe Campaign-Instanz ist mit einer oder mehreren Datenbanken verknüpft. Der Anwendungsserver kann einen oder mehrere Prozesse ausführen: Fast alle haben direkten Zugriff auf die Instanzdatenbank.
 
@@ -63,9 +64,9 @@ Damit dieser Prozess funktioniert, müssen die Quell- und Zielumgebungen über d
 
 ### Übermittlungsverfahren {#transfer-procedure}
 
-In diesem Abschnitt erfahren Sie, wie Sie mithilfe einer Fallstudie eine Quellumgebung in eine Zielumgebung übertragen können: Unser Ziel ist es, die Produktionsumgebung wiederherzustellen (**prod** Instanz) in eine Entwicklungsumgebung (**dev** -Instanz), um in einem Kontext zu arbeiten, der der &quot;Live&quot;-Plattform so nahe wie möglich ist.
+In diesem Abschnitt erfahren Sie, welche Schritte für die Übertragung einer Quellumgebung in eine Zielumgebung mithilfe einer Fallstudie erforderlich sind: Unser Ziel ist hier die Wiederherstellung einer Produktionsumgebung (**prod** -Instanz) in eine Entwicklungsumgebung (**dev** -Instanz), um in einem Kontext zu arbeiten, der der &quot;Live&quot;-Plattform so nahe wie möglich ist.
 
-Die folgenden Schritte müssen mit großer Sorgfalt ausgeführt werden: Einige Prozesse werden möglicherweise noch ausgeführt, wenn die Datenbanken der Quellumgebung kopiert werden. Durch die Vorsicht (Schritt 3 unten) wird verhindert, dass Nachrichten zweimal gesendet werden, und die Datenkonsistenz wird gewahrt.
+Die folgenden Schritte müssen mit großer Sorgfalt ausgeführt werden: Einige Prozesse werden möglicherweise noch ausgeführt, wenn die Quellumgebungsdatenbanken kopiert werden. Durch die Vorsicht (Schritt 3 unten) wird verhindert, dass Nachrichten zweimal gesendet werden, und die Datenkonsistenz wird gewahrt.
 
 >[!IMPORTANT]
 >
@@ -87,7 +88,7 @@ pg_dump mydatabase > mydatabase.sql
 
 ### Schritt 2: Exportieren der Zielumgebungskonfiguration (dev) {#step-2---export-the-target-environment-configuration--dev-}
 
-Die meisten Konfigurationselemente unterscheiden sich für jede Umgebung: externe Konten (Mid-Sourcing, Routing usw.), technische Optionen (Plattformname, DatabaseId, E-Mail-Adressen und Standard-URLs usw.).
+Die meisten Konfigurationselemente unterscheiden sich je nach Umgebung: externe Konten (Mid-Sourcing, Routing usw.), technische Optionen (Plattformname, DatabaseId, E-Mail-Adressen und Standard-URLs usw.).
 
 Vor dem Speichern der Quelldatenbank in der Zieldatenbank müssen Sie die Konfiguration der Zielumgebung (dev) exportieren. Exportieren Sie dazu den Inhalt dieser beiden Tabellen: **xtkoption** und **nmsextaccount**.
 
@@ -95,7 +96,7 @@ Mit diesem Export können Sie die Entwicklungskonfiguration beibehalten und nur 
 
 Führen Sie dazu einen Package-Export für die folgenden beiden Elemente durch:
 
-* Exportieren Sie die **xtk:option** in eine &quot;options_dev.xml&quot;-Datei ohne die Datensätze mit den folgenden internen Namen konvertieren: &#39;WdbcTimeZone&#39;, &#39;NmsServer_LastPostUpgrade&#39; und &#39;NmsBroadcast_RegexRules&#39;.
+* Exportieren Sie **xtk:option** in eine &quot;options_dev.xml&quot;-Datei ohne die Datensätze mit den folgenden internen Namen: &quot;WdbcTimeZone&quot;, &quot;NmsServer_LastPostUpgrade&quot;und &quot;NmsBroadcast_RegexRules&quot;.
 * Exportieren Sie in einer Datei &quot;extaccount_dev.xml&quot;die **nms:extAccount** für alle Datensätze, deren Kennung nicht 0 ist (@id &lt;> 0).
 
 Überprüfen Sie, ob die Anzahl der exportierten Optionen/Konten der Anzahl der Zeilen entspricht, die in jeder Datei exportiert werden sollen.
@@ -144,8 +145,8 @@ Sie können auch überprüfen, ob noch keine Systemprozesse ausgeführt werden.
 
 Gehen Sie dazu wie folgt vor:
 
-* Windows: Öffnen Sie die **Task Manager** und überprüfen Sie, dass keine **nlserver.exe** Prozesse.
-* Unter Linux: ausführen **ps aux | grep nlserver** und überprüfen Sie, ob **nlserver** Prozesse.
+* Unter Windows: Öffnen Sie die **Task Manager** und überprüfen Sie, dass keine **nlserver.exe** Prozesse.
+* Unter Linux: Führen Sie die **ps aux | grep nlserver** und überprüfen Sie, ob **nlserver** Prozesse.
 
 ### Schritt 4: Wiederherstellen der Datenbanken in der Zielumgebung (dev) {#step-4---restore-the-databases-in-the-target-environment--dev-}
 
@@ -192,9 +193,9 @@ Starten Sie in der Zielumgebung die Adobe Campaign-Prozesse für alle Server neu
 
 >[!NOTE]
 >
->Vor dem Neustart von Adobe Campaign auf der **dev** -Umgebung verwenden, können Sie ein zusätzliches Sicherheitsverfahren anwenden: starten **Web** nur -Modul.
+>Vor dem Neustart von Adobe Campaign auf der **dev** -Umgebung können Sie ein zusätzliches Sicherheitsverfahren anwenden: Starten Sie die **Web** nur -Modul.
 >  
->Bearbeiten Sie dazu die Konfigurationsdatei Ihrer Instanz (**config-dev.xml**), und fügen Sie dann das Zeichen &quot;_&quot;vor den Optionen autoStart=&quot;true&quot; für jedes Modul (mta, stat usw.) hinzu.
+>Bearbeiten Sie dazu die Konfigurationsdatei Ihrer Instanz (**config-dev.xml**), dann das Zeichen &quot;_&quot; vor den Optionen autoStart=&quot;true&quot; für jedes Modul (mta, stat usw.) hinzufügen.
 
 Führen Sie den folgenden Befehl aus, um den Webprozess zu starten:
 
@@ -216,7 +217,7 @@ nlserver pdump
 >
 >In diesem Schritt sollte nur der Webprozess gestartet werden. Ist dies nicht der Fall, beenden Sie andere laufende Prozesse, bevor Sie fortfahren
 
-Überprüfen Sie vor allem die Werte mehrerer Zeilen der Dateien, bevor Sie importieren (z. B.: &#39;NmsTracking_Pointer&#39; für die Optionstabelle und die Versand- oder Mid-Sourcing-Konten für die Tabelle des externen Kontos)
+Überprüfen Sie vor allem die Werte mehrerer Zeilen der Dateien, bevor Sie importieren (z. B. &#39;NmsTracking_Pointer&#39; für die Optionstabelle und die Versand- oder Mid-Sourcing-Konten für die externe Kontotabelle).
 
 So importieren Sie die Konfiguration aus der Zielumgebungsdatenbank (dev):
 
@@ -225,7 +226,7 @@ So importieren Sie die Konfiguration aus der Zielumgebungsdatenbank (dev):
 
    Überprüfen Sie, ob die Optionen tatsächlich im Abschnitt **[!UICONTROL Administration > Plattform > Optionen]** Knoten.
 
-1. Importieren Sie in der Adobe Campaign-Konsole die zuvor über die Import-Paketfunktion erstellte Datei &quot;extaccount_dev.xml&quot;.
+1. Importieren Sie in der Adobe Campaign-Konsole die zuvor über die Import-Paketfunktion erstellte Datei &quot;extaccount_dev.xml&quot;
 
    Überprüfen Sie, ob externe Datenbanken tatsächlich in die **[!UICONTROL Administration > Plattform > Externe Konten]** .
 

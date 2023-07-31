@@ -2,20 +2,21 @@
 product: campaign
 title: Anfrage an Adobe übermitteln
 description: Anfrage an Adobe übermitteln
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Audiences, People Core Service Integration
+badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: f3c19fcd-12cb-4ca3-b4b7-7dc4be57f4ea
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '146'
-ht-degree: 100%
+source-wordcount: '158'
+ht-degree: 93%
 
 ---
 
-# Anfrage an Adobe übermitteln{#submitting-request-to-adobe}
+# Anfrage an Adobe übermitteln     {#submitting-request-to-adobe}
 
 
 

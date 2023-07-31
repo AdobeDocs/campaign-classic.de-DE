@@ -2,14 +2,15 @@
 product: campaign
 title: Anwendungsobjekte
 description: Anwendungsobjekte
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: fb4798d7-0a2c-455b-86b6-3dcb5fd25c82
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '466'
 ht-degree: 4%
 
 ---
@@ -22,7 +23,7 @@ Integrierte Objekte sollten überwacht werden, und es ist wichtig zu verhindern,
 
 ## Sequenz von IDs {#sequence-of-ids}
 
-Adobe Campaign verwendet eine ID-Sequenz, die entsprechend verwendet werden muss: **xtkNewId**. Wenn die Sequenz sehr schnell verwendet wird (d. h. ab 100.000 pro Tag), müssen Sie sicherstellen, dass sie Ihren Geschäftsanforderungen entspricht, z. B. dem Versand von Millionen E-Mails pro Tag. Es ist möglich, eine eigene Sequenz für bestimmte Tabellen zu definieren. Sie können einen Workflow zur Überwachung der ID-Nutzung einrichten.
+Adobe Campaign verwendet eine ID-Sequenz, die entsprechend verwendet werden muss: **xtkNewId**. Wenn die Sequenz sehr schnell verwendet wird (d. h. ab 100.000 pro Tag), müssen Sie überprüfen, ob sie Ihren Geschäftsanforderungen entspricht, z. B. dem Versand von Millionen E-Mails pro Tag. Es ist möglich, eine eigene Sequenz für bestimmte Tabellen zu definieren. Sie können einen Workflow zur Überwachung der ID-Nutzung einrichten.
 
 Wenn die Sequenz mehr als 2 Milliarden erreicht (2.147.483.648 ist die genaue Zahl), geht sie zurück auf null. Es muss vermieden werden und es gibt Probleme, weshalb diese Reihenfolge überwacht werden muss.
 
@@ -48,14 +49,14 @@ Sendungen, die älter als zwei Jahre sind, sollten aus der Instanz gelöscht wer
 
 Die Anzahl der Dateien auf der Festplatte des Anwendungsservers sollte nicht unbegrenzt steigen.
 
-Import-Workflows erstellen Dateien und verursachen so eine Festplattenerweiterung. Dies lässt sich durch Verwendung des Standards [Datei-Wächter](../../workflow/using/file-collector.md) Aktivität. Der Datei-Wächter verschiebt Dateien in einen temporären Ordner und löscht sie automatisch.
+Import-Workflows erstellen Dateien und verursachen so eine Festplattenerweiterung. Dies lässt sich durch Verwendung des Standards [Datei-Wächter](../../workflow/using/file-collector.md) -Aktivität. Der Datei-Wächter verschiebt Dateien in einen temporären Ordner und löscht sie automatisch.
 
 Wenn ein Workflow Dateien importiert und nicht die Standardfunktionen nutzt, muss er bereinigt werden, um Speicherplatz auf ein Minimum zu beschränken.
 
-## Transaktionsdaten und -protokolle {#transactional-data-and-logs}
+## Transaktionsdaten und -logs {#transactional-data-and-logs}
 
 Alle [Workflow](../../workflow/using/data-life-cycle.md#work-table) -Import von Daten in Adobe Campaign bewirkt, dass die Datenbankgröße zunimmt.
 
 Vergewissern Sie sich, dass die Bereinigungs- oder Bereinigungs-Workflows ausgeführt werden und dass die Datensätze effektiv bereinigt werden. Alle Transaktionsdaten und -protokolle müssen bereinigt werden. Die Bereinigungsaufgabe bereinigt nur die Standardtabellen: Tracking und Broadlogs. Bestimmte Tabellen müssen durch bestimmte Workflows bereinigt werden. Weitere Informationen finden Sie in [diesem Abschnitt](../../workflow/using/monitoring-workflow-execution.md#purging-the-logs).
 
-Achten Sie auf Alterungsdaten, indem Sie das älteste Erstellungsdatum der Datensätze überprüfen.
+Achten Sie auf Alterungsdaten von Transaktionsdaten, indem Sie das älteste Erstellungsdatum der Datensätze überprüfen.

@@ -2,12 +2,13 @@
 product: campaign
 title: Campaign-Optionen konfigurieren
 description: Erfahren Sie, wie Sie Campaign-Optionen konfigurieren
+feature: Installation, Application Settings
 badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: 728fc285fbd562003199c53339899bbc4441bfc6
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '4015'
 ht-degree: 13%

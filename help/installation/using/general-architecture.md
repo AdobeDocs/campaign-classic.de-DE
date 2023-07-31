@@ -2,14 +2,15 @@
 product: campaign
 title: Allgemeine Architektur des Campaign Classic
 description: Erfahren Sie, wie Sie Campaign Classic installieren und konfigurieren können
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Architecture
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: architecture-and-hosting-models
 exl-id: 04e6dc17-427b-4745-84cc-bf45c03dbf81
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1342'
+source-wordcount: '1349'
 ht-degree: 51%
 
 ---
@@ -49,8 +50,8 @@ Adobe Campaign basiert auf einer Service-orientierten Architektur (SOA) und umfa
 Der Zugriff auf die Anwendung ist je nach den Anforderungen der Benutzer auf unterschiedliche Weise möglich: Rich-Client-, Thin-Client- oder API-Integration.
 
 * **Rich-Client**: Die Hauptbenutzeroberfläche des Programms ist ein Rich-Client, d. h. eine native Anwendung (Windows), die ausschließlich mit Standardinternetprotokollen (SOAP, HTTP usw.) mit dem Adobe Campaign-Anwendungsserver kommuniziert. Diese Konsole bietet eine hervorragende Benutzerfreundlichkeit für die Produktivität, verwendet sehr wenig Bandbreite (durch die Verwendung eines lokalen Caches) und ist für eine einfache Implementierung konzipiert. Diese Konsole kann über einen Internetbrowser bereitgestellt werden, kann automatisch aktualisiert werden und erfordert keine spezifische Netzwerkkonfiguration, da sie nur HTTP(S)-Traffic generiert.
-* **Thin Client**: Bestimmte Anwendungsbereiche können über einen einfachen Webbrowser über eine HTML-Benutzeroberfläche aufgerufen werden. Dazu gehören das Berichtsmodul, Etappen der Versandvalidierung, Funktionen des Moduls Dezentrales Marketing (zentrales/lokales), Instanzüberwachung usw. Auf diese Weise können Adobe Campaign-Funktionen in ein Intranet oder ein Extranet integriert werden.
-* **Integration über APIs**: In bestimmten Fällen kann das System mithilfe der Web-Services-APIs, die über das SOAP-Protokoll verfügbar gemacht werden, über eine externe Anwendung aufgerufen werden.
+* **Thin Client**: Bestimmte Anwendungsbereiche können über einen einfachen Webbrowser über eine HTML-Benutzeroberfläche aufgerufen werden. Dazu gehören das Berichtsmodul, Etappen der Versandvalidierung, Funktionen des Moduls Dezentrales Marketing (lokal), Instanzüberwachung usw. Auf diese Weise können Adobe Campaign-Funktionen in ein Intranet oder ein Extranet integriert werden.
+* **Integration über APIs**: In bestimmten Fällen kann das System über eine externe Anwendung mithilfe der Web-Services-APIs aufgerufen werden, die über das SOAP-Protokoll verfügbar gemacht werden.
 
 ## Logische Anwendungsebene {#logical-application-layer}
 
@@ -72,7 +73,7 @@ Außerdem verarbeitet sie zeitweise ausgeführte technische Workflows, darunter:
 
 * Tracking: Wiederherstellen und Konsolidieren von Trackinglogs. Dadurch können Protokolle vom Weiterleitungs-Server abgerufen und die vom Reporting-Modul verwendeten aggregierten Indikatoren erstellt werden.
 * Bereinigung: zur Bereinigung von Datenbanken. Dabei wird die Datenbank von alten Datensätzen bereinigt, um zu vermeiden, dass sie übermäßig wächst.
-* Rechnungsstellung: Automatischer Versand eines Aktivitätsberichts für die Plattform (Datenbankgröße, Anzahl der Marketing-Aktionen, Anzahl der aktiven Profile usw.).
+* Rechnungsstellung: Automatischer Versand eines Aktivitätsberichts für die Plattform (Datenbankgröße, Anzahl der Marketing-Aktionen, Anzahl der aktiven Profile usw.)
 
 **Versand-Server** (nlserver mta)
 
@@ -128,4 +129,4 @@ Die Datenbank wird als Persistenzschicht verwendet und enthält fast alle von Ad
 
 Die Zuverlässigkeit der Datenbank ist von größter Bedeutung, da die meisten Adobe Campaign-Komponenten für die Ausführung ihrer Aufgaben Zugriff auf die Datenbank benötigen (mit Ausnahme des Umleitungsmoduls).
 
-Die Plattform wird mit einem vordefinierten Marketing-zentrierten Datenstrom geliefert oder kann mithilfe eines der wichtigsten RDBMS (Relational Database Management Systems) einfach auf einem vorhandenen Datenstrom und Schema sitzen. Alle Daten im Datamart werden von der Adobe Campaign-Plattform über SQL-Aufrufe von Adobe Campaign zur Datenbank aufgerufen. Adobe Campaign bietet außerdem eine vollständige Ergänzung der ETL-Tools (Extract, Transform, Load – Extrahieren, Umwandeln, Laden), mittels derer Daten in das und aus dem System importiert und exportiert werden können.
+Die Plattform wird mit einem vordefinierten Marketing-zentrierten Datenstrom geliefert oder kann mithilfe eines der wichtigsten RDBMS (Relational Database Management Systems) einfach auf einem vorhandenen Datenstrom und Schema platziert werden. Alle Daten im Datamart werden von der Adobe Campaign-Plattform über SQL-Aufrufe von Adobe Campaign zur Datenbank aufgerufen. Adobe Campaign bietet außerdem eine vollständige Ergänzung der ETL-Tools (Extract, Transform, Load – Extrahieren, Umwandeln, Laden), mittels derer Daten in das und aus dem System importiert und exportiert werden können.

@@ -1,17 +1,18 @@
 ---
 product: campaign
 title: Konfiguration der Versandeinstellungen für Campaign
-description: Erfahren Sie, wie Sie die Versandeinstellungen für Campaign konfigurieren
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+description: Erfahren Sie, wie Sie die Versandeinstellungen für Campaign konfigurieren.
+feature: Installation, Channel Configuration
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
+badge-v7-prem: label="On-Premise und Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 2968d8db-2b4b-48e6-a22e-daba5ffe0576
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 5%
+source-wordcount: '487'
+ht-degree: 8%
 
 ---
 
@@ -31,7 +32,7 @@ Die Versandparameter müssen im Abschnitt **serverConf.xml** Ordner.
   <dnsConfig localDomain="domain.com" nameServers="192.0.0.1,192.0.0.2"/>
   ```
 
-Je nach Ihren Anforderungen und Einstellungen können Sie außerdem die folgenden Konfigurationen vornehmen: konfigurieren Sie eine [SMTP-Relais](#smtp-relay), passen Sie die Anzahl der [Untergeordnete MTA-Prozesse](#mta-child-processes), [Ausgehenden SMTP-Traffic verwalten](#managing-outbound-smtp-traffic-with-affinities).
+Je nach Ihren Anforderungen und Einstellungen können Sie außerdem die folgenden Konfigurationen vornehmen: [SMTP-Relais](#smtp-relay), passen Sie die Anzahl der [Untergeordnete MTA-Prozesse](#mta-child-processes), [Ausgehenden SMTP-Traffic verwalten](#managing-outbound-smtp-traffic-with-affinities).
 
 ## SMTP-Relais {#smtp-relay}
 
@@ -57,7 +58,7 @@ Es ist möglich, die Anzahl der untergeordneten Prozesse (standardmäßig maxSpa
 <master dataBasePoolPeriodSec="30" dataBaseRetryDelaySec="60" maxSpareServers="2" minSpareServers="0" startSpareServers="0">
 ```
 
-Siehe auch [Optimierung des E-Mail-Versands](../../installation/using/email-deliverability.md#email-sending-optimization).
+Siehe auch [E-Mail-Versandoptimierung](../../installation/using/email-deliverability.md#email-sending-optimization).
 
 ## Ausgehenden SMTP-Traffic mit Affinitäten verwalten {#managing-outbound-smtp-traffic-with-affinities}
 
@@ -71,7 +72,7 @@ Gehen Sie hierzu wie folgt vor:
 
 1. Geben Sie die Affinitäten im **`<ipaffinity>`** Abschnitt **serverConf.xml** -Datei.
 
-   Eine Affinität kann mehrere verschiedene Namen haben: , um sie zu trennen, verwenden Sie die **;** Zeichen.
+   Eine Affinität kann mehrere verschiedene Namen haben: Verwenden Sie zum Trennen die **;** Zeichen.
 
    Beispiel:
 
@@ -82,7 +83,7 @@ Gehen Sie hierzu wie folgt vor:
 
    Die relevanten Parameter werden im Abschnitt **serverConf.xml** -Datei.
 
-1. Um die Affinitätsauswahl in den Dropdown-Listen zu aktivieren, müssen Sie die Affinitätsnamen in der **IPAffinity** Auflistung.
+1. Um die Affinitätsauswahl in den Dropdown-Listen zu aktivieren, müssen Sie die Affinitätsnamen in der **IPAffinity** -Auflistung.
 
    ![](assets/ipaffinity_enum.png)
 
@@ -96,7 +97,7 @@ Gehen Sie hierzu wie folgt vor:
 
    >[!NOTE]
    >
-   >Weitere Informationen finden Sie unter [Konfiguration des Versandservers](../../installation/using/email-deliverability.md#delivery-server-configuration).
+   >Sie können auch [Konfiguration des Versandservers](../../installation/using/email-deliverability.md#delivery-server-configuration).
 
 **Verwandte Themen** 
 * [Technische E-Mail-Konfigurationen](email-deliverability.md)

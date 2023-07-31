@@ -2,25 +2,26 @@
 product: campaign
 title: Zusätzliche Web-Tracking-Parameter
 description: Erfahren Sie mehr über die Parameter für das Web-Tracking
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Configuration, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 exl-id: d14d94fd-b078-4893-be84-31d37a1d50f5
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '359'
 ht-degree: 4%
 
 ---
 
 # Zusätzliche Web-Tracking-Parameter{#additional-parameters}
 
-## Definition von Parametern {#definition-of-parameters}
+## Parameter definieren {#definition-of-parameters}
 
 Ihre Adobe Campaign-Plattform bietet standardmäßig zwei Webtrackingparameter vom Typ TRANSACTION :
 
-* **amount**: den Transaktionsbetrag darstellt,
+* **amount**: den Transaktionsbetrag,
 * **Artikel**: stellt die Anzahl der Elemente in einer Transaktion dar.
 
-Diese Parameter werden im Abschnitt **nms:webTrackingLog** und sind einige der Indikatoren, die in Berichten angezeigt werden.
+Diese Parameter werden in der Variablen **nms:webTrackingLog** und sind einige der Indikatoren, die in Berichten angezeigt werden.
 
 Um zusätzliche Parameter zu definieren, müssen Sie dieses Schema erweitern.
 

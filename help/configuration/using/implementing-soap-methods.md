@@ -2,11 +2,12 @@
 product: campaign
 title: Implementieren von SOAP-Methoden
 description: Implementieren von SOAP-Methoden
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Configuration
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 exl-id: 441a0e5c-fa7f-46c8-a65a-5cca4c846d43
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '427'
 ht-degree: 4%
 
 ---
@@ -19,7 +20,7 @@ ht-degree: 4%
 
 Es ist möglich, SOAP-Methoden in JavaScript zu erstellen. Diese Funktion ermöglicht einfach anwendungsbezogene Prozesse. Sie kann die Entwicklung von JSPs und deren Aufruf in den Formularen vermeiden.
 
-Diese SOAP-Methoden verhalten sich genauso wie die nativ in der Anwendung definierten Methoden. Dieselben Attribute werden unterstützt: static, key only and const.
+Diese SOAP-Methoden verhalten sich genauso wie die nativ in der Anwendung definierten Methoden. Es werden dieselben Attribute unterstützt: &quot;Statisch&quot;, &quot;Nur Schlüssel&quot;und &quot;const&quot;.
 
 ## Definieren einer Methodenbibliothek {#defining-a-method-library}
 
@@ -87,7 +88,7 @@ Die Signatur der Funktion muss ein -Argument für jeden &quot;in&quot;- oder &qu
 
 Sonderfälle:
 
-* **nicht statische Methoden**: Die -Funktion muss zunächst ein zusätzliches -Argument enthalten, das mit der XML-Entität übereinstimmt, die in Form eines Objekts vom Typ &quot;xml&quot;(E4X) übergeben wurde.
+* **nicht statische Methoden**: Die Funktion muss zunächst ein zusätzliches -Argument enthalten, das mit der XML-Entität übereinstimmt, die in Form eines Objekts vom Typ &quot;xml&quot;(E4X) übergeben wurde.
 * **Methoden vom Typ &quot;Nur Schlüssel&quot;**: Die Funktion muss zuerst ein zusätzliches -Argument enthalten, das mit dem in Form von Zeichenfolgen übergebenen Schlüssel übereinstimmt.
 
 **3. Zurückgegebene Werte**

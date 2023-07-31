@@ -2,16 +2,17 @@
 product: campaign
 title: Migrieren einer Microsoft Windows-Plattform zu Adobe Campaign v7
 description: Erfahren Sie, wie Sie eine Microsoft Windows-Plattform auf Adobe Campaign v7 migrieren.
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Upgrade
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 audience: migration
 content-type: reference
 topic-tags: migrating-to-adobe-campaign-7
 hide: true
 hidefromtoc: true
 exl-id: 3743d018-3316-4ce3-ae1c-25760aaf5785
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1119'
+source-wordcount: '1126'
 ht-degree: 0%
 
 ---
@@ -22,8 +23,8 @@ ht-degree: 0%
 
 Für eine Microsoft Windows-Umgebung sind die Migrationsschritte wie folgt:
 
-1. Alle Dienste beenden - [Weitere Infos](#service-stop).
-1. Datenbank sichern - [Weitere Infos](#back-up-the-database).
+1. Alle Dienste anhalten - [Weitere Infos](#service-stop).
+1. Sichern Sie Ihre Datenbank - [Weitere Infos](#back-up-the-database).
 1. Plattform migrieren - [Weitere Infos](#deploying-adobe-campaign-v7).
 1. Migrieren des Weiterleitungsservers (IIS) - [Weitere Infos](#migrating-the-redirection-server--iis-).
 1. Re-Start-Dienst - [Weitere Infos](#re-starting-the-services).
@@ -179,7 +180,7 @@ Hier finden Sie das Verfahren zum Sichern von Adobe Campaign v6.1.
 
 -->
 
-1. Erstellen Sie eine Sicherungskopie der Adobe Campaign-Datenbank.
+1. Erstellen Sie eine Sicherung der Adobe Campaign-Datenbank.
 1. Erstellen Sie eine Sicherungskopie der **Adobe Campaign v6** Verzeichnis mit dem folgenden Befehl:
 
    ```
@@ -201,7 +202,7 @@ Hier finden Sie das Verfahren zum Sichern von Adobe Campaign v6.1.
 Die Bereitstellung von Adobe Campaign erfolgt in zwei Schritten:
 
 * Installieren von Build v7: Dieser Vorgang muss auf jedem Server ausgeführt werden.
-* Nach der Aktualisierung: Dieser Befehl muss auf jeder Instanz gestartet werden.
+* Nach dem Upgrade: Dieser Befehl muss auf jeder Instanz gestartet werden.
 
 Gehen Sie wie folgt vor, um Adobe Campaign bereitzustellen:
 
@@ -230,7 +231,7 @@ Gehen Sie wie folgt vor, um Adobe Campaign bereitzustellen:
    >
    >Mit diesen Befehlen können Sie das interne Dateisystem von Adobe Campaign v7 erstellen: **conf** Verzeichnis (mit dem **config-default.xml** und **serverConf.xml** -Dateien), **var** Verzeichnis usw.
 
-1. Kopieren Sie die Konfigurationsdateien und Unterordner jeder Instanz über das **Neolane v5.back**, **Neolane v6.back** oder **Adobe Campaign v6.back** Backup-Datei (abhängig von der Version, von der Sie migrieren - siehe [diesem Abschnitt](#back-up-the-database-and-the-current-installation)).
+1. Kopieren Sie die Konfigurationsdateien und Unterordner jeder Instanz und fügen Sie sie über das **Neolane v5.back**, **Neolane v6.back** oder **Adobe Campaign v6.back** Backup-Datei (abhängig von der Version, von der Sie migrieren - siehe [diesem Abschnitt](#back-up-the-database-and-the-current-installation)).
 1. Führen Sie je nach Version, von der Sie migrieren, die folgenden Befehle aus:
 
    ```
@@ -255,7 +256,7 @@ Gehen Sie wie folgt vor, um Adobe Campaign bereitzustellen:
    >
    >Kopieren Sie für den ersten oben genannten Befehl nicht die **config-default.xml** -Datei.
 
-1. Im **serverConf.xml** und **config-default.xml** -Dateien von Adobe Campaign v7 die spezifischen Konfigurationen anwenden, die Sie in der vorherigen Version von Adobe Campaign hatten. Für **serverConf.xml** -Datei, verwenden Sie die **Neolane v5/conf/serverConf.xml.diff**, **Neolane v6/conf/serverConf.xml.diff** oder **Adobe Campaign v6/conf/serverConf.xml.diff** -Datei.
+1. Im **serverConf.xml** und **config-default.xml** -Dateien von Adobe Campaign v7 verwenden, wenden Sie die spezifischen Konfigurationen an, die Sie in der vorherigen Version von Adobe Campaign hatten. Für **serverConf.xml** -Datei, verwenden Sie die **Neolane v5/conf/serverConf.xml.diff**, **Neolane v6/conf/serverConf.xml.diff** oder **Adobe Campaign v6/conf/serverConf.xml.diff** -Datei.
 
    >[!NOTE]
    >
@@ -275,11 +276,11 @@ Gehen Sie wie folgt vor, um Adobe Campaign bereitzustellen:
 
 >[!IMPORTANT]
 >
->Starten Sie die Adobe Campaign-Dienste noch nicht: einige Änderungen müssen auf IIS vorgenommen werden.
+>Starten Sie die Adobe Campaign-Dienste noch nicht: Einige Änderungen müssen an IIS vorgenommen werden.
 
 ## Migrieren des Weiterleitungsservers {#migrating-the-redirection-server--iis-}
 
-In diesem Schritt muss der IIS-Server angehalten werden. Siehe [Service stop](#service-stop).
+In diesem Schritt muss der IIS-Server angehalten werden. Siehe Abschnitt [Service stop](#service-stop).
 
 1. Öffnen Sie die **Internet Information Services (IIS) Manager** Konsole.
 1. Ändern Sie die Bindungen (Listen-Ports) der Site, die für die vorherige Adobe Campaign-Version verwendet wird:
@@ -296,7 +297,7 @@ In diesem Schritt muss der IIS-Server angehalten werden. Siehe [Service stop](#s
 
 1. Erstellen Sie eine neue Website für Adobe Campaign v7:
 
-   * Klicken Sie mit der rechten Maustaste auf die **[!UICONTROL Sites]** Ordner und wählen Sie **[!UICONTROL Website hinzufügen...]**.
+   * Rechtsklicken Sie auf die **[!UICONTROL Sites]** Ordner und auswählen **[!UICONTROL Website hinzufügen...]**.
 
      ![](assets/_migration_iis_4.png)
 
@@ -317,7 +318,7 @@ In diesem Schritt muss der IIS-Server angehalten werden. Siehe [Service stop](#s
      cscript iis_neolane_setup.vbs
      ```
 
-   * Klicken **[!UICONTROL OK]** , um die Ausführung des Skripts zu bestätigen.
+   * Klicks **[!UICONTROL OK]** , um die Ausführung des Skripts zu bestätigen.
 
      ![](assets/s_ncs_install_iis7_parameters_step2_7.png)
 

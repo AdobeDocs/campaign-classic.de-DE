@@ -2,12 +2,12 @@
 product: campaign
 title: Personalisierung und Datenschutz
 description: Best Practices für die Sicherheit von Datenschutz und Personalisierung
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: URL Personalization, Privacy
+feature: Installation, Privacy, Privacy Tools, URL Personalization
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '862'
 ht-degree: 27%
 
 ---
@@ -33,7 +33,7 @@ Um zu überprüfen und sicherzustellen, dass Sie oben nicht verwenden, führen S
 
 Beispiel:
 
-1. Erstellen Sie einen Workflow und fügen Sie einen **Abfrage** Aktivität. [Weitere Informationen](../../workflow/using/query.md).
+1. Erstellen Sie einen Workflow und fügen Sie einen **Abfrage** -Aktivität. [Weitere Informationen](../../workflow/using/query.md).
 
 1. Öffnen Sie die **Abfrage** und erstellen Sie einen Filter für die `nmsTrackingUrl` Tabelle wie folgt:
 
@@ -48,7 +48,7 @@ Beispiel:
 
 ### URL-Signatur
 
-Um die Sicherheit zu verbessern, wurde ein Signaturmechanismus für das Tracking von Links in E-Mails eingeführt. Sie ist ab den Builds 19.1.4 (9032@3a9dc9c) und 20.2 verfügbar. Diese Funktion ist standardmäßig aktiviert.
+Um die Sicherheit zu verbessern, wurde ein Signaturmechanismus für das Tracking von Links in E-Mails eingeführt. Es ist ab den Builds 19.1.4 (9032@3a9dc9c) und 20.2 verfügbar. Diese Funktion ist standardmäßig aktiviert.
 
 >[!NOTE]
 >
@@ -73,14 +73,14 @@ Andernfalls können einige dieser Probleme auftreten:
 Um in früheren Builds generierte URLs zu deaktivieren, führen Sie die folgenden Schritte auf allen Campaign-Servern gleichzeitig aus:
 
 1. In der Server-Konfigurationsdatei (`serverConf.xml`), ändern Sie die **blockRedirectForUnsignedTrackingLink** -Option **true**.
-1. Starten Sie den `nlserver` Dienst.
-1. Im `tracking` Server, starten Sie die `web` -Server (Apache2 unter Debian, httpd unter CentOS/RedHat, IIS unter Windows).
+1. Starten Sie den `nlserver` -Dienst.
+1. Im `tracking` Server, starten Sie die `web` server (apache2 unter Debian, httpd unter CentOS/RedHat, IIS unter Windows).
 
 Um die URL-Signatur zu aktivieren, führen Sie die folgenden Schritte auf allen Campaign-Servern gleichzeitig aus:
 
 1. In der Server-Konfigurationsdatei (`serverConf.xml`), ändern **signEmailLinks** Option, um **true**.
 1. Starten Sie den **nlserver**-Service neu.
-1. Im `tracking` Server, starten Sie die `web` -Server (Apache2 unter Debian, httpd unter CentOS/RedHat, IIS unter Windows).
+1. Im `tracking` Server, starten Sie die `web` server (apache2 unter Debian, httpd unter CentOS/RedHat, IIS unter Windows).
 
 ## Dateneinschränkung
 
@@ -157,7 +157,7 @@ Gehen Sie dazu wie folgt vor:
 
 ## Protect-Seiten mit API
 
-Wir empfehlen On-Premise-Kunden dringend, die Seiten zu schützen, die möglicherweise personenbezogene Daten (PIs) enthalten, z. B. Mirrorseiten, Webanwendungen usw.
+Wir empfehlen On-Premise-Kunden dringend, Seiten zu schützen, die möglicherweise personenbezogene Daten (PIs) enthalten, wie z. B. Mirrorseiten, Webanwendungen usw.
 
 Ziel dieses Verfahrens ist es, dass diese Seiten nicht indexiert werden, um ein mögliches Sicherheitsrisiko zu verhindern. Hier finden Sie einige hilfreiche Artikel:
 
@@ -174,7 +174,7 @@ Führen Sie die folgenden Schritte aus, um Ihre Seiten zu schützen:
    *Disallow: /
    ```
 
-   Informationen zu IIS finden Sie unter [diese Seite](https://docs.microsoft.com/en-us/iis/extensions/iis-search-engine-optimization-toolkit/managing-robotstxt-and-sitemap-files).
+   Informationen zu IIS, siehe [diese Seite](https://docs.microsoft.com/en-us/iis/extensions/iis-search-engine-optimization-toolkit/managing-robotstxt-and-sitemap-files).
 
    Für Apache können Sie die Datei in **/var/www/robots.txt** (Debian).
 
@@ -187,4 +187,4 @@ Führen Sie die folgenden Schritte aus, um Ihre Seiten zu schützen:
 
 ## Datenschutzanfragen
 
-Siehe [diese Seite](../../platform/using/privacy-management.md) für allgemeine Informationen zu den Funktionen der Datenschutzverwaltung und den Implementierungsschritten in Adobe Campaign. Darüber hinaus finden Sie Best Practices und einen Überblick über den Benutzerprozess und die Rollen.
+Siehe Abschnitt [diese Seite](../../platform/using/privacy-management.md) für allgemeine Informationen zu den Funktionen der Datenschutzverwaltung und den Implementierungsschritten in Adobe Campaign. Darüber hinaus finden Sie Best Practices und einen Überblick über den Benutzerprozess und die Rollen.

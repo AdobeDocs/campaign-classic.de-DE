@@ -2,16 +2,17 @@
 product: campaign
 title: Übliche Befehle
 description: Übliche Befehle
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
+badge-v7-prem: label="On-Premise und Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
 audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 472ccc04-e68e-4ccb-90e9-7d626a4e794f
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 9%
+source-wordcount: '432'
+ht-degree: 12%
 
 ---
 
@@ -25,12 +26,12 @@ Der Befehl **nlserver** ist der Eingabebefehl für die gesamte Adobe Campaign-An
 
 Dieser Befehl hat die folgende Syntax: **nlserver **`<command>`****`<arguments>`****
 
-Der Parameter **`<command>`** dem Modul entspricht.
+Der Parameter **`<command>`** entspricht dem -Modul.
 
 >[!NOTE]
 >
 >* Auf jeden Fall können Sie die **-noconsole** -Argument zum Löschen von Kommentaren, die nach dem Start der Module angezeigt werden.
->* Umgekehrt können Sie das -Argument hinzufügen **-verbose** um weitere Informationen anzuzeigen.
+>* Umgekehrt können Sie das -Argument hinzufügen **-verbose** , um weitere Informationen anzuzeigen.
 >
 
 ## Überwachen von Befehlen {#monitoring-commands-}
@@ -61,7 +62,7 @@ Datasource Server Provider Login
 default xxxxx myserver myprovider test400
 ```
 
-Ein weiterer nützlicher Befehl ist **nlserver-Monitor**. Sie listet die (im Adobe Campaign-Client oder über die **monitor.jsp** Webseite).
+Ein weiterer nützlicher Befehl ist **nlserver-Monitor**. Sie listet die XML-Überwachungsdatei auf (abgerufen im Adobe Campaign-Client oder über die **monitor.jsp** Webseite).
 
 Sie können den Parameter hinzufügen **-missing** , um die fehlenden Module aufzulisten (Fehler in Modulen, heruntergefahren von Modulen usw.)
 
@@ -121,7 +122,7 @@ Um Adobe Campaign-Dienste zu beenden, verwenden Sie einen der folgenden Befehle:
 
 ## Dienste wieder starten {#restart-services}
 
-Ebenso können Sie zum Neustart von Adobe Campaign einen der folgenden Befehle verwenden:
+Um Adobe Campaign neu zu starten, können Sie einen der folgenden Befehle verwenden:
 
 * Wenn Sie über Root- oder Administratorzugriff verfügen:
 
@@ -131,7 +132,7 @@ Ebenso können Sie zum Neustart von Adobe Campaign einen der folgenden Befehle v
      >
      >Ab 20.1 wird empfohlen, stattdessen den folgenden Befehl zu verwenden (für Linux): **systemctl Beginn nlserver**
 
-   * Windows: net start nlserver6
+   * Unter Windows: net start nlserver6
 
 * Andernfalls im Adobe Campaign-Konto: **nlserver watchdog -svc -noconsole**
 
@@ -139,7 +140,7 @@ Ebenso können Sie zum Neustart von Adobe Campaign einen der folgenden Befehle v
 
 Die **config** -Befehl können Sie die Serverkonfiguration verwalten, einschließlich der Neukonfiguration der Datenbankverbindung.
 
-Verwenden Sie die **config** des **nlserver** ausführbare Datei mit **-setdblogin** Parameter.
+Verwenden Sie die **config** des **nlserver** ausführbare Datei mit **-setdblogin** -Parameter.
 
 ```
 nlserver config -setdblogin:<[dbms:]account[:database][/password]@server>

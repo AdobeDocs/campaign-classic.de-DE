@@ -2,14 +2,15 @@
 product: campaign
 title: Datenbankbereinigungs-Workflow
 description: Erfahren Sie, wie veraltete Daten automatisch bereinigt werden.
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Monitoring, Workflows
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: 75d3a0af-9a14-4083-b1da-2c1b22f57cbe
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2910'
+source-wordcount: '2917'
 ht-degree: 2%
 
 ---
@@ -34,7 +35,7 @@ Die Datenbankbereinigung wird auf zwei Ebenen konfiguriert: im Workflow-Planer u
 >
 >Weiterführende Informationen zur Planung finden Sie in [diesem Abschnitt](../../workflow/using/scheduler.md).
 
-Standardmäßig wird die **[!UICONTROL Datenbankbereinigung]** Der Workflow ist so konfiguriert, dass er täglich um 4 Uhr gestartet wird. Die Planung ermöglicht es, die Häufigkeit der Auslösung des Workflows zu ändern. Die folgenden Häufigkeiten sind verfügbar:
+Standardmäßig wird die Variable **[!UICONTROL Datenbankbereinigung]** Der Workflow ist so konfiguriert, dass er täglich um 4 Uhr gestartet wird. Die Planung ermöglicht es, die Häufigkeit der Auslösung des Workflows zu ändern. Die folgenden Häufigkeiten sind verfügbar:
 
 * **[!UICONTROL Mehrmals pro Tag]**
 * **[!UICONTROL Täglich]**
@@ -76,7 +77,7 @@ Die Felder der **[!UICONTROL Datenbereinigung]** -Fenster mit den folgenden Opti
 
 * Audit-Protokoll: **XtkCleanup_AuditTrailPurgeDelay** (siehe [Bereinigung des Audit-Protokolls](#cleanup-of-audit-trail))
 
-Alle Aufgaben, die von der **[!UICONTROL Datenbankbereinigung]** Workflows werden im folgenden Abschnitt beschrieben.
+Alle vom **[!UICONTROL Datenbankbereinigung]** Workflows werden im folgenden Abschnitt beschrieben.
 
 ## Vom Datenbankbereinigungs-Workflow durchgeführte Aufgaben {#tasks-carried-out-by-the-database-cleanup-workflow}
 
@@ -105,7 +106,7 @@ Die erste von der **[!UICONTROL Datenbankbereinigung]** löscht alle Gruppen mit
    DELETE FROM $(relatedTable) WHERE iGroupId=$(l) IN (SELECT iGroupId FROM $(relatedTable) WHERE iGroupId=$(l) LIMIT 5000) 
    ```
 
-   where `$(relatedTable)` ist eine Tabelle, die sich auf **NmsGroup** und `$(l)` ist die Listenkennung.
+   where `$(relatedTable)` ist eine Tabelle für **NmsGroup** und `$(l)` ist die Listenkennung.
 
 1. Wenn es sich bei der Liste um eine Liste vom Typ &quot;Liste&quot; handelt, wird die zugeordnete Tabelle mithilfe der folgenden Abfrage gelöscht:
 
@@ -130,7 +131,7 @@ Diese Aufgabe löscht alle zu löschenden oder recycelten Sendungen.
 1. Die **[!UICONTROL Datenbankbereinigung]** Der Workflow löscht Versandlogs, Anhänge, Informationen zur Mirrorseite und alle anderen damit verbundenen Daten.
 1. Vor dem endgültigen Löschen des Versands löscht der Workflow verknüpfte Informationen aus den folgenden Tabellen:
 
-   * In der Ausschlusstabelle des Versands (**NmsDlvExclusion**), wird die folgende Abfrage verwendet:
+   * In der Ausschlusstabelle (**NmsDlvExclusion**), wird die folgende Abfrage verwendet:
 
      ```sql
      DELETE FROM NmsDlvExclusion WHERE iDeliveryId=$(l)
@@ -147,7 +148,7 @@ Diese Aufgabe löscht alle zu löschenden oder recycelten Sendungen.
      where `$(l)` ist die Kennung des Versands.
 
    * In den Versandlog-Tabellen (**NmsBroadlogXxx**), werden Massenlöschungen in Stapeln von 20.000 Datensätzen durchgeführt.
-   * In den Tabellen mit Angebotsvorschlägen (**NmsPropositionXxx**), werden Massenlöschungen in Stapeln von 20.000 Datensätzen durchgeführt.
+   * In den Vorschlagstabellen (**NmsPropositionXxx**), werden Massenlöschungen in Stapeln von 20.000 Datensätzen durchgeführt.
    * In den Trackinglog-Tabellen (**NmsTrackingLogXx**), werden Massenlöschungen in Stapeln von 20.000 Datensätzen durchgeführt.
    * In der Versandfragmenttabelle (**NmsDeliveryPart**), werden Massenlöschungen in Stapeln von 500.000 Datensätzen durchgeführt. Diese Tabelle enthält Personalisierungsinformationen zu den restlichen zu versendenden Nachrichten.
    * In der Tabelle der Mirrorseiten-Datenfragmente (**NmsMirrorPageInfo**), werden Massenlöschungen in 20.000 Datensätzen für abgelaufene Versandteile sowie für fertige oder abgebrochene Teile durchgeführt. Diese Tabelle enthält Personalisierungsinformationen zu allen Nachrichten, die zum Generieren von Mirrorseiten verwendet werden.
@@ -183,7 +184,7 @@ Die **[!UICONTROL Datenbankbereinigung]** Der Workflow löscht auch Sendungen au
 
    where **$(l)** ist die Kennung des Versands.
 
-1. Wenn der Wert des Status **[!UICONTROL Start pending]** , **[!UICONTROL In Bearbeitung]** , **[!UICONTROL Rückforderung steht aus]** , **[!UICONTROL Aufschwung in Gang]** , **[!UICONTROL Anhalten angefordert]** , **[!UICONTROL Wird ausgesetzt]** oder **[!UICONTROL Angehalten]** (Werte 51, 55, 61, 62, 71, 72, 75), wird der Versand angehalten und die Aufgabe löscht die verknüpften Informationen.
+1. Wenn der Wert des Status **[!UICONTROL Start pending]** , **[!UICONTROL Gestartet]** , **[!UICONTROL Rückforderung steht]** , **[!UICONTROL Aufschwung in Gang]** , **[!UICONTROL Anhalten angefordert]** , **[!UICONTROL Wird ausgesetzt]** oder **[!UICONTROL Angehalten]** (Werte 51, 55, 61, 62, 71, 72, 75), wird der Versand angehalten und die Aufgabe löscht die verknüpften Informationen.
 
 ### Bereinigung abgelaufener Sendungen {#cleanup-of-expired-deliveries}
 
@@ -195,7 +196,7 @@ Diese Aufgabe beendet Sendungen, deren Gültigkeitszeitraum abgelaufen ist.
    SELECT iDeliveryId, iState FROM NmsDelivery WHERE iDeleteStatus=0 AND iIsModel=0 AND iDeliveryMode=1 AND ( (iState >= 51 AND iState < 85 AND tsValidity IS NOT NULL AND tsValidity < $(currentDate) ) OR (iState = 85 AND DateMinusDays(15) < tsLastModified AND iToDeliver - iProcessed >= 10000 ))
    ```
 
-   where `delivery mode 1` entspricht der **[!UICONTROL Massenversand]** Modus, `state 51` entspricht der **[!UICONTROL Start pending]** state, `state 85` entspricht der **[!UICONTROL Angehalten]** Status und die höchste Anzahl von Versandlogs, die auf dem Versandserver gebündelt aktualisiert wurden, beträgt 10.000.
+   where `delivery mode 1` entspricht der **[!UICONTROL Gebündelter Versand]** -Modus, `state 51` entspricht der **[!UICONTROL Start pending]** state, `state 85` entspricht der **[!UICONTROL Angehalten]** Status und die höchste Anzahl von Versandlogs, die auf dem Versandserver gebündelt aktualisiert wurden, beträgt 10.000.
 
 1. Der Workflow enthält dann die Liste der kürzlich abgelaufenen Sendungen, die Mid-Sourcing verwenden. Sendungen, für die noch keine Versandlogs über den Mid-Sourcing-Server abgerufen wurden, sind ausgeschlossen.
 
@@ -219,7 +220,7 @@ Diese Aufgabe beendet Sendungen, deren Gültigkeitszeitraum abgelaufen ist.
    UPDATE $(BroadLogTableName) SET tsLastModified=$(curdate), iStatus=7, iMsgId=$(bl) WHERE iDeliveryId=$(dl) AND iStatus=6
    ```
 
-   where `$(curdate)`das aktuelle Datum des Datenbankservers, `$(bl)` die Kennung der Versandlogs-Nachricht, `$(dl)` die Versandkennung, `delivery status 6` entspricht der **[!UICONTROL Ausstehend]** Status und `delivery status 7` entspricht der **[!UICONTROL Versand abgebrochen]** Status.
+   where `$(curdate)`das aktuelle Datum des Datenbankservers, `$(bl)` die Kennung der Versandlogs-Nachricht, `$(dl)` die Versandkennung, `delivery status 6` entspricht der **[!UICONTROL Ausstehend]** Status und `delivery status 7` entspricht der **[!UICONTROL Versand abgebrochen]** -Status.
 
    ```sql
    UPDATE NmsDelivery SET iState = 95, tsLastModified = $(curdate), tsBroadEnd = tsValidity WHERE iDeliveryId = $(dl)
@@ -227,7 +228,7 @@ Diese Aufgabe beendet Sendungen, deren Gültigkeitszeitraum abgelaufen ist.
 
    where `delivery state 95` entspricht der **[!UICONTROL Abgeschlossen]** Status und `$(dl)` ist die Kennung des Versands.
 
-1. Alle Fragmente (**deliveryParts**) veraltete Sendungen werden gelöscht und alle veralteten Fragmente des laufenden Benachrichtigungsversands werden gelöscht. Für beide Aufgaben wird Massenlöschung verwendet.
+1. Alle Fragmente (**deliveryParts**) veraltete Sendungen werden gelöscht und alle veralteten Fragmente der laufenden Benachrichtigungsversand-Vorgänge werden gelöscht. Für beide Aufgaben wird Massenlöschung verwendet.
 
    Die folgenden Abfragen werden verwendet:
 
@@ -253,7 +254,7 @@ Bei dieser Aufgabe werden die von Sendungen verwendeten Web-Ressourcen (Mirrorse
 
    where `$(curDate)` ist das aktuelle Server-Datum.
 
-1. Die **NmsMirrorPageInfo** -Tabelle wird dann bei Bedarf mithilfe der Kennung des zuvor wiederhergestellten Versands bereinigt. Die Massenlöschung wird verwendet, um die folgenden Abfragen zu generieren:
+1. Die **NmsMirrorPageInfo** -Tabelle wird dann gegebenenfalls mithilfe der Kennung des zuvor wiederhergestellten Versands bereinigt. Das gebündelte Löschen wird verwendet, um die folgenden Abfragen zu generieren:
 
    ```sql
    DELETE FROM NmsMirrorPageInfo WHERE iMirrorPageInfoId IN (SELECT iMirrorPageInfoId FROM NmsMirrorPageInfo WHERE iDeliveryId = $(dl)) LIMIT 5000
@@ -266,7 +267,7 @@ Bei dieser Aufgabe werden die von Sendungen verwendeten Web-Ressourcen (Mirrorse
    where `$(dl)` ist die Kennung des Versands.
 
 1. Im Versandlog wird dann ein Eintrag hinzugefügt.
-1. Die bereinigten Sendungen werden dann identifiziert, um zu vermeiden, dass sie später erneut verarbeitet werden müssen. Die folgende Abfrage wird ausgeführt:
+1. Die bereinigten Sendungen werden dann identifiziert, um zu vermeiden, dass sie später erneut verarbeitet werden. Die folgende Abfrage wird ausgeführt:
 
    ```sql
    UPDATE NmsDelivery SET iWebResPurged = 1 WHERE iDeliveryId IN ($(strIn))
@@ -290,7 +291,7 @@ Diese Aufgabe löscht aus der Datenbank alle Arbeitstabellen, die Sendungen ents
    SELECT iDeliveryId FROM NmsDelivery WHERE iDeliveryId<>0 AND iDeleteStatus=0 AND iState NOT IN (0,85,100);
    ```
 
-   where `0` ist der Wert, der mit der **[!UICONTROL In Bearbeitung]** Versandstatus, `85` entspricht der **[!UICONTROL Angehalten]** Status und `100` entspricht der **[!UICONTROL Gelöscht]** Status.
+   where `0` ist der Wert, der mit der **[!UICONTROL In Bearbeitung]** Versandstatus, `85` entspricht der **[!UICONTROL Angehalten]** Status und `100` entspricht der **[!UICONTROL Gelöscht]** -Status.
 
 1. Nicht mehr verwendete Tabellen werden mithilfe der folgenden Abfrage gelöscht:
 
@@ -308,7 +309,7 @@ In diesem Schritt können Sie Datensätze löschen, für die während des Import
    DELETE FROM XtkReject WHERE iRejectId IN (SELECT iRejectId FROM XtkReject WHERE tsLog < $(curDate)) LIMIT $(l)
    ```
 
-   where `$(curDate)` ist das aktuelle Server-Datum, von dem wir den für die **NmsCleanup_RejectsPurgeDelay** Option (siehe [Implementierungsassistent](#deployment-wizard)) und `$(l)` die maximale Anzahl von zu löschenden Datensätzen.
+   where `$(curDate)` ist das aktuelle Server-Datum, von dem wir den für die Variable **NmsCleanup_RejectsPurgeDelay** Option (siehe [Implementierungsassistent](#deployment-wizard)) und `$(l)` die maximale Anzahl von zu löschenden Datensätzen.
 
 1. Alle verwaisten Zurückweisungen werden dann mithilfe der folgenden Abfrage gelöscht:
 
@@ -415,7 +416,7 @@ where `status 2` entspricht der **[!UICONTROL Gültig]** Status, `$(tsDate1)` da
 
 ### Bereinigung der Abonnements {#cleanup-of-subscriptions-}
 
-Diese Aufgabe löscht alle vom Benutzer aus dem **NmsSubscription** -Tabelle mit Massenlöschung. Die folgende Abfrage wird verwendet:
+Diese Aufgabe löscht alle Abonnements, die vom Benutzer aus dem **NmsSubscription** -Tabelle mit Massenlöschung. Die folgende Abfrage wird verwendet:
 
 ```sql
 DELETE FROM NmsSubscription WHERE iDeleteStatus <>0
@@ -437,7 +438,7 @@ Diese Aufgabe löscht veraltete Datensätze aus den Tracking- und Webtracking-Lo
    DELETE FROM NmsTrackingLogRcp WHERE iTrackingLogId IN (SELECT iTrackingLogId FROM NmsTrackingLogRcp WHERE tsLog < $(tsDate) LIMIT 5000) 
    ```
 
-   where `$(tsDate)` ist das aktuelle Server-Datum, von dem wir den für die **NmsCleanup_TrackingLogPurgeDelay** -Option.
+   where `$(tsDate)` ist das aktuelle Server-Datum, von dem wir den für die Variable **NmsCleanup_TrackingLogPurgeDelay** -Option.
 
 1. Die Trackingstatistiken werden mithilfe einer Massenlöschung bereinigt. Die folgende Abfrage wird verwendet:
 
@@ -445,7 +446,7 @@ Diese Aufgabe löscht veraltete Datensätze aus den Tracking- und Webtracking-Lo
    DELETE FROM NmsTrackingStats WHERE iTrackingStatsId IN (SELECT iTrackingStatsId FROM NmsTrackingStats WHERE tsStart < $(tsDate) LIMIT 5000) 
    ```
 
-   where `$(tsDate)` ist das aktuelle Server-Datum, von dem wir den für die **NmsCleanup_TrackingStatPurgeDelay** -Option.
+   where `$(tsDate)` ist das aktuelle Server-Datum, von dem wir den für die Variable **NmsCleanup_TrackingStatPurgeDelay** -Option.
 
 ### Bereinigung der Versandlogs {#cleanup-of-delivery-logs}
 
@@ -472,13 +473,13 @@ Auf diese Weise können die in verschiedenen Tabellen gespeicherten Versandlogs 
    DELETE FROM NmsProviderMsgId WHERE iBroadLogId IN (SELECT iBroadLogId FROM NmsProviderMsgId WHERE tsCreated < $(option) LIMIT 5000)
    ```
 
-   where `$(option)` entspricht dem Datum, das für die **NmsCleanup_BroadLogPurgeDelay** Option (siehe [Implementierungsassistent](#deployment-wizard)).
+   where `$(option)` entspricht dem für die **NmsCleanup_BroadLogPurgeDelay** Option (siehe [Implementierungsassistent](#deployment-wizard)).
 
 ### Bereinigung der Tabelle &quot;NmsEmailErrorStat&quot; {#cleanup-of-the-nmsemailerrorstat-table-}
 
 Diese Aufgabe bereinigt die **NmsEmailErrorStat** Tabelle. Das Hauptprogramm (**coalesceErrors**) definiert zwei Daten:
 
-* **Startdatum**: Datum des nächsten Prozesses, der mit dem **NmsLastErrorStatCoalesce** oder dem letzten Datum in der Tabelle.
+* **Startdatum**: Datum des nächsten Prozesses, der mit der **NmsLastErrorStatCoalesce** oder dem letzten Datum in der Tabelle.
 * **Enddatum**: aktuelles Server-Datum.
 
 Wenn das Startdatum größer oder gleich dem Enddatum ist, wird kein Prozess durchgeführt. In diesem Fall wird die **coalesceUpToDate** angezeigt.
@@ -495,7 +496,7 @@ where `$end` und `$start` sind die zuvor definierten Start- und Enddaten.
 
 Wenn die Summe größer als 0 ist:
 
-1. Die folgende Abfrage wird ausgeführt, um nur Fehler über einen bestimmten Schwellenwert (also 20) hinaus zu erhalten:
+1. Die folgende Abfrage wird ausgeführt, um nur Fehler über einen bestimmten Schwellenwert (der 20 entspricht) hinaus zu halten:
 
    ```sql
    SELECT iMXIP, iPublicId, SUM(iTotalConnections), SUM(iTotalErrors), SUM(iMessageErrors), SUM(iAbortedConnections), SUM(iFailedConnections), SUM(iRefusedConnections), SUM(iTimeoutConnections) FROM NmsEmailErrorStat WHERE tsDate>=$(start ) AND tsDate<$(end ) GROUP BY iMXIP, iPublicId HAVING SUM(iTotalErrors) >= 20
@@ -530,7 +531,7 @@ Die folgende Abfrage wird verwendet:
 DELETE FROM NmsEmailError WHERE iMXIP NOT IN (SELECT DISTINCT iMXIP FROM NmsEmailErrorStat)
 ```
 
-Diese Abfrage löscht alle Zeilen ohne verknüpfte Datensätze im **NmsEmailErrorStat** von **NmsEmailError** Tabelle.
+Diese Abfrage löscht alle Zeilen ohne verknüpfte Datensätze im **NmsEmailErrorStat** aus dem **NmsEmailError** Tabelle.
 
 ### Bereinigung der NmsMxDomain-Tabelle {#cleanup-of-the-nmsmxdomain-table-}
 
@@ -540,7 +541,7 @@ Die folgende Abfrage wird verwendet:
 DELETE FROM NmsMxDomain WHERE iMXIP NOT IN (SELECT DISTINCT iMXIP FROM NmsEmailErrorStat)
 ```
 
-Diese Abfrage löscht alle Zeilen, die keinen verknüpften Datensatz in der **NmsEmailErrorStat** aus der **NmsMxDomain** Tabelle.
+Diese Abfrage löscht alle Zeilen, die keinen verknüpften Datensatz in der **NmsEmailErrorStat** aus der Tabelle **NmsMxDomain** Tabelle.
 
 ### Bereinigung der Vorschläge {#cleanup-of-propositions}
 

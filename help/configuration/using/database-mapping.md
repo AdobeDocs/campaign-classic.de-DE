@@ -2,12 +2,13 @@
 product: campaign
 title: Datenbank-Mapping
 description: Datenbank-Mapping
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Configuration, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 exl-id: 728b509f-2755-48df-8b12-449b7044e317
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1974'
-ht-degree: 68%
+source-wordcount: '1981'
+ht-degree: 67%
 
 ---
 
@@ -107,7 +108,7 @@ Der Hauptnachteil besteht darin, dass es unmöglich ist, ein XML-Feld zu indizie
 
 ## Indexierte Felder {#indexed-fields}
 
-Mithilfe von Indizes können Sie die Leistung der in der Anwendung verwendeten SQL-Abfragen optimieren.
+Indizes ermöglichen die Optimierung der Leistung der in der Anwendung verwendeten SQL-Abfragen.
 
 Ein Index wird aus dem Hauptelement des Datenschemas deklariert.
 
@@ -291,7 +292,7 @@ Der Primärschlüssel der meisten Adobe Campaign-Tabellen ist eine von der Daten
 
 Der Vorteil eines inkrementellen Schlüssels besteht darin, dass er einen nicht änderbaren technischen Schlüssel für die Joins zwischen Tabellen bereitstellt. Darüber hinaus belegt dieser Schlüssel nicht viel Speicher, da er eine Double-Byte-Ganzzahl verwendet.
 
-Sie können im Quellschema den Namen der Sequenz angeben, die mit der **pkSequence** -Attribut. Wenn dieses Attribut nicht im Quellschema angegeben ist, wird die **XtkNewId** wird die Standardsequenz verwendet. Die Anwendung verwendet dedizierte Sequenzen für die **nms:broadLog** und **nms:trackingLog** Schemas (**NmsBroadLogId** und **NmsTrackingLogId** ), da dies die Tabellen sind, die die meisten Datensätze enthalten.
+Sie können im Quellschema den Namen der Sequenz angeben, die mit der **pkSequence** -Attribut. Wenn dieses Attribut nicht im Quellschema angegeben ist, wird die **XtkNewId** wird die Standardsequenz verwendet. Die Anwendung verwendet spezielle Sequenzen für die **nms:broadLog** und **nms:trackingLog** Schemas (**NmsBroadLogId** und **NmsTrackingLogId** ), da dies die Tabellen sind, die die meisten Datensätze enthalten.
 
 Ab ACC 18.10 **XtkNewId** ist nicht mehr der Standardwert für die Sequenz in den nativen Schemas. Sie können jetzt ein Schema erstellen oder ein vorhandenes Schema mit einer dedizierten Sequenz erweitern.
 

@@ -2,16 +2,17 @@
 product: campaign
 title: Testen der Migration
 description: Testen der Migration
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Upgrade
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 audience: migration
 content-type: reference
 topic-tags: migration-procedure
 hide: true
 hidefromtoc: true
 exl-id: 228ee9e4-46a0-4d82-b8ba-b019bc0e7cac
-source-git-commit: 4b13e310fcee9ba24e83b697fca57bc494505642
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '706'
+source-wordcount: '713'
 ht-degree: 4%
 
 ---
@@ -24,7 +25,7 @@ ht-degree: 4%
 
 Je nach Konfiguration gibt es mehrere Möglichkeiten, Migrationstests durchzuführen.
 
-Sie sollten über eine Test-/Entwicklungsumgebung verfügen, um Migrationstests durchzuführen. Adobe Campaign-Umgebungen unterliegen einer Lizenz: Überprüfen Sie Ihren Lizenzvertrag oder kontaktieren Sie Ihren Kundenbetreuer für Adobe.
+Sie sollten über eine Test-/Entwicklungsumgebung verfügen, um Migrationstests durchzuführen. Adobe Campaign-Umgebungen unterliegen einer Lizenz: Überprüfen Sie Ihren Lizenzvertrag oder kontaktieren Sie Ihren Adobe-Support-Mitarbeiter.
 
 1. Stoppen Sie alle laufenden Entwicklungen und übertragen Sie sie in die Produktionsumgebung.
 1. Erstellen Sie eine Sicherungskopie der Datenbank der Entwicklungsumgebung.
@@ -67,7 +68,7 @@ Mithilfe verschiedener Optionen können Sie die Auswirkungen einer Migration mes
 
 >[!NOTE]
 >
->* Sie müssen die **-instance:`<instanceame>`** -Option. Es wird empfohlen, die Variable **-allinstances** -Option.
+>* Sie müssen die **-instance:`<instanceame>`** -Option. Es wird empfohlen, die **-allinstances** -Option.
 >* Der Adobe Campaign-Aktualisierungsbefehl (**postupgrade**) ermöglicht die Synchronisierung von Ressourcen und die Aktualisierung von Schemata und der Datenbank. Dieser Vorgang kann nur einmal auf dem Anwendungsserver ausgeführt werden. Nach der Synchronisierung der Ressourcen wird die **postupgrade** -Befehl können Sie erkennen, ob die Synchronisation Fehler oder Warnungen erzeugt.
 
 ### Nicht standardmäßige oder fehlende Objekte
@@ -164,7 +165,7 @@ Die folgenden Ausdrücke werden gesucht (Groß-/Kleinschreibung beachten):
    <td> CRM v1(mscrmWorkflow/sfdcWorkflow)<br /> </td> 
    <td> PU-0008<br /> </td> 
    <td> Fehler<br /> </td> 
-   <td> Die Aktionsaktivitäten Microsoft CRM, Salesforce und Oracle CRM On Demand sind nicht mehr verfügbar. Um die Datensynchronisation zwischen Adobe Campaign und einem CRM-System zu konfigurieren, müssen Sie die <a href="../../workflow/using/crm-connector.md" target="_blank">CRM-Connector</a> Targeting-Aktivität.<br /> </td>
+   <td> Die Aktionsaktivitäten Microsoft CRM, Salesforce und Oracle CRM On Demand sind nicht mehr verfügbar. Um die Datensynchronisation zwischen Adobe Campaign und einem CRM-System zu konfigurieren, müssen Sie die <a href="../../workflow/using/crm-connector.md" target="_blank">CRM-Connector</a> Zielgruppenbestimmung.<br /> </td>
   </tr> 
  </tbody> 
 </table>
@@ -181,7 +182,7 @@ nlserver.exe config -postupgrade -restoreFactory:<backupfolder> -instance:<insta
 
 >[!NOTE]
 >
->Es wird dringend empfohlen, absolute Ordnerpfade zu verwenden und die Ordnerstruktur beizubehalten. Beispiel: backupFolder\nms\srcSchema\billing.xml
+>Es wird dringend empfohlen, absolute Ordnerpfade zu verwenden und die Ordnerstruktur beizubehalten. Beispiel: backupFolder\nms\srcSchema\billing.xml.
 
 ### Migration fortsetzen {#resuming-migration}
 

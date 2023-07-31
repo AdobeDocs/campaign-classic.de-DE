@@ -1,9 +1,10 @@
 ---
 product: campaign
 title: Datenschutz bei E-Mails in der Apple-E-Mail-App
+feature: Technote, Privacy, Privacy Tools
 description: Erfahren Sie, wie sich die Apple-Funktion zum Schutz der Privatsphäre bei E-Mails auf Ihre Kampagnen auswirken kann.
 exl-id: e044b35a-b49f-408a-900d-2afe8ff10212
-source-git-commit: 83fe7eb4f857306ac1c8bb3a93a9393b76ae1e3c
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '2097'
 ht-degree: 1%
@@ -47,7 +48,7 @@ Archivieren Sie Ihre Trackinglogs über den Aufbewahrungszeitraum von Adobe Camp
 Bestimmen Sie, welcher Anteil Ihrer Zielgruppe die Apple-E-Mail-App auf einem iOS-Gerät verwendet.
 Mithilfe dieser Bewertung können Sie potenzielle anormale Lücken und deren Ursache identifizieren. Sie können feststellen, ob eine Lücke auf Leistungsprobleme bei Kampagnen oder auf die Datenschutzfunktion von Apple zurückzuführen ist. Lesen Sie die [Tipps und Tricks](#measure-ios-footprint).
 
-### Neubewertung der Kampagnenstrategie und der Leistungsmetriken
+### Kampagnenstrategie und Leistungsmetriken neu bewerten
 
 Vor allem empfehlen wir dringend, dass Sie Ihre Kampagnenstrategie und Ihre Kampagnenleistungsmetriken proaktiv neu bewerten. Sie können sich erneut auf zuverlässigere Metriken konzentrieren, z. B. Clickthroughs, Produktansichten und Käufe.
 
@@ -81,7 +82,7 @@ Um Einblicke aus Adobe Campaign-Daten zu gewinnen, können Sie vordefinierte Ber
 
 Sie können die Workflows identifizieren, in denen E-Mail-Öffnungen als Kriterium für Segmentierung, Zielgruppenbestimmung und Retargeting verwendet werden.
 
-Zu diesem Zweck können Sie die **[!UICONTROL type]** -Attribut der getrackten Link-URL (**[!UICONTROL url/@type]**). Bei E-Mail-Öffnungen ist dieses Attribut auf **[!UICONTROL Öffnen]**. Dieses Attribut ist im Abfrageeditor verfügbar, dem **[!UICONTROL Abfrage]** Aktivitäten in einem Workflow und vordefinierten Filtern. Sie können dieses Attribut als Targeting-Kriterium für Marketing-Kampagnen verwenden.
+Dazu können Sie die **[!UICONTROL type]** -Attribut der getrackten Link-URL (**[!UICONTROL url/@type]**). Bei E-Mail-Öffnungen ist dieses Attribut auf **[!UICONTROL Öffnen]**. Dieses Attribut ist im Abfrageeditor verfügbar, dem **[!UICONTROL Abfrage]** und vordefinierten Filtern. Sie können dieses Attribut als Targeting-Kriterium für Marketing-Kampagnen verwenden.
 
 ![](assets/identify-email-open-tracking-1.png)
 
@@ -113,7 +114,7 @@ Sie können festlegen, dass die Workflows diesen Inhalt enthalten müssen:
 
 `expr="[url/@type] = 2"`
 
-Dieses Targeting-Kriterium bedeutet, dass der Typ der getrackten URL auf **[!UICONTROL Öffnen]**.
+Dieses Targeting-Kriterium bedeutet, dass der Typ der verfolgten URL auf **[!UICONTROL Öffnen]**.
 
 ![](assets/identify-email-open-tracking-6.png)
 
@@ -144,7 +145,7 @@ Nachdem Sie das Paket installiert haben, können Sie über den Ordner auf den Wo
 
 `/Administration/Production/Technical workflows/nmsTechnicalWorkflow`
 
-Wählen Sie in der Benutzeroberfläche die Option **[!UICONTROL Administration]** > **[!UICONTROL Produktion]** > **[!UICONTROL Technische Workflows]**.
+Wählen Sie in der Benutzeroberfläche **[!UICONTROL Administration]** > **[!UICONTROL Produktion]** > **[!UICONTROL Technische Workflows]**.
 
 ![](assets/identify-email-open-tracking-8.png)
 
@@ -316,9 +317,9 @@ Kurz gesagt, Adobe Campaign-Tracking-Daten bieten folgende Informationen:
 
 * Das Profil, das mit der Person verknüpft ist, die eine bestimmte E-Mail-Nachricht geöffnet oder angeklickt hat
 * Das Öffnungsdatum
-* Das verwendete Gerät, z. B. iPhone oder Mac
-* Das Betriebssystem und die Version, z. B. iOS 15, macOS 12 oder Windows 10
-* Die Anwendung, z. B. eine E-Mail-Anwendung oder einen Webbrowser, und die Version, z. B. Outlook 2019
+* Das verwendete Gerät, beispielsweise iPhone oder Mac
+* Betriebssystem und Version, z. B. iOS 15, macOS 12 oder Windows 10
+* Die Anwendung, wie eine E-Mail-Anwendung oder ein Webbrowser, und die Version, z. B. Outlook 2019
 
 #### Warum sollte ich Tracking-Daten beibehalten?
 
@@ -343,7 +344,7 @@ Um Tracking-Daten beizubehalten, müssen Sie sie aus Adobe Campaign in Ihr Infor
 
 ##### Funktionsprinzip
 
-Standardmäßig wird die `nms:Recipient` -Schema mit drei Schemata verknüpft ist, die Sie exportieren müssen:
+Standardmäßig wird die Variable `nms:Recipient` -Schema mit drei Schemata verknüpft ist, die Sie exportieren müssen:
 
 | Schema | Content |
 | --- | --- |
@@ -374,18 +375,18 @@ Sie können das Ergebnis in eine externe Speicherlösung exportieren, die von Ad
 
 ##### Implementierung
 
-In diesem Beispiel wird gezeigt, wie Sie Tracking-Daten aus Adobe Campaign exportieren können.
+Dieses Beispiel zeigt, wie Sie Tracking-Daten aus Adobe Campaign exportieren können.
 
 1. Erstellen Sie einen Workflow, der mit einer Abfrage beginnt.
 
-   Die erste Abfrage wird verwendet, um die Trackinglogs für die letzten drei Monate abzurufen.
-Sie können eine inkrementelle Abfrage verwenden, um nur die Datensätze zu extrahieren, die Sie noch nicht exportiert haben.
+   Die erste Abfrage dient zum Abrufen der Trackinglogs für die letzten drei Monate.
+Sie können eine inkrementelle Abfrage verwenden, um nur noch nicht exportierte Datensätze zu extrahieren.
 
    Fügen Sie alle erforderlichen Informationen aus der **[!UICONTROL Zusätzliche Daten]** Knoten.
 
    ![](assets/export-tracking-data-2.png)
 
-1. Hinzufügen einer **[!UICONTROL Extraktion (Datei)]** Aktivität. Ordnen Sie alle Daten aus der Abfrage einem Extraktionsdateiformat zu.
+1. Hinzufügen einer **[!UICONTROL Extraktion (Datei)]** -Aktivität. Ordnen Sie alle Daten aus der Abfrage einem Extraktionsdateiformat zu.
 
    ![](assets/export-tracking-data-3.png)
 
@@ -399,7 +400,7 @@ Sie können eine inkrementelle Abfrage verwenden, um nur die Datensätze zu extr
 
 ##### Erweiterte Implementierung: Aufschlüsselung nach iOS-Gerät
 
-Sie können Workflows verwenden, um zu bestimmen, ob ein Empfänger die Apple-Mail-App verwendet. Sie können Trackinglogs nach Gerät aufteilen. Sie können beispielsweise Abfragefilter verwenden, um Datensätze nach iOS-Gerät aufzuschlüsseln:
+Sie können Workflows verwenden, um zu bestimmen, ob ein Empfänger die E-Mail-App von Apple verwendet. Sie können Trackinglogs nach Gerät aufteilen. Sie können beispielsweise Abfragefilter verwenden, um Datensätze nach iOS-Gerät aufzuschlüsseln:
 
 | Anwendung | Betriebssystem oder Gerät  | Abfragefilter |
 | --- | --- | --- |
@@ -427,11 +428,11 @@ Diese Beispiele zeigen, wie Sie mithilfe von Workflows Datensätze nach iOS-Ger�
    1. Die erste **[!UICONTROL Abfrage]** -Aktivität verwendet, um alle E-Mail-Öffnungen in den letzten drei Monaten auszuwählen.
    1. A **[!UICONTROL Aufspaltung]** -Aktivität wird verwendet, um die Auswahl nach E-Mail-Anwendung, Browser, Betriebssystem und Gerät aufzuteilen.
 
-   1. A **[!UICONTROL Deduplizierung]** -Aktivität folgt jedem **[!UICONTROL Aufspaltung]** Aktivität. Die **[!UICONTROL Deduplizierung]** -Aktivität wird verwendet, um doppelte E-Mail-Adressen zu entfernen.
+   1. A **[!UICONTROL Deduplizierung]** -Aktivität folgt jedem **[!UICONTROL Aufspaltung]** -Aktivität. Die **[!UICONTROL Deduplizierung]** -Aktivität wird verwendet, um doppelte E-Mail-Adressen zu entfernen.
 
-      Die **[!UICONTROL Deduplizierung]** Aktivität wird nach der **[!UICONTROL Aufspaltung]** -Aktivität verwenden, um den Verlust von Informationen über Empfänger zu vermeiden, die verschiedene Geräte verwenden.
+      Die **[!UICONTROL Deduplizierung]** Aktivität wird nach der **[!UICONTROL Aufspaltung]** -Aktivität verwenden, um zu vermeiden, dass Informationen zu Empfängern, die verschiedene Geräte verwenden, verloren gehen.
 
-   1. Ein **[!UICONTROL Ende]** -Aktivität folgt jedem **[!UICONTROL Deduplizierung]** Aktivität.
+   1. Ein **[!UICONTROL Ende]** -Aktivität folgt jedem **[!UICONTROL Deduplizierung]** -Aktivität.
 
   Dieser Workflow ist nützlich, wenn Sie Empfänger nur in der nativen Empfängertabelle für die Zielgruppenbestimmung speichern.
 
@@ -446,7 +447,7 @@ Diese Beispiele zeigen, wie Sie mithilfe von Workflows Datensätze nach iOS-Ger�
       * In einer Transition wird die **[!UICONTROL Dimensionsänderung]** -Aktivität verwendet wird, um die Empfänger zu finden, auf die sich das Trackinglog bezieht.
       * In der anderen Transition wird die **[!UICONTROL Aufspaltung]** -Aktivität wird verwendet, um die Auswahl nach E-Mail-Anwendung, Browser, Betriebssystem und Gerät aufzuteilen.
 
-   1. Ein **[!UICONTROL Ende]** -Aktivität folgt jeder Transition nach **[!UICONTROL Aufspaltung]** Aktivität.
+   1. Ein **[!UICONTROL Ende]** -Aktivität folgt jeder Transition nach **[!UICONTROL Aufspaltung]** -Aktivität.
 
   Dieser Workflow ist nützlich, wenn Sie Empfänger in einer anderen Tabelle als der nativen Empfängertabelle speichern.
 

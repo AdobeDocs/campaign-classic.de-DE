@@ -2,13 +2,13 @@
 product: campaign
 title: Erstellen einer Profilliste mit einem Workflow
 description: Erfahren Sie, wie Sie in einem Workflow eine Profilliste erstellen
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
-feature: Workflows
+badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
+feature: Workflows, Profiles
 exl-id: 6b308299-4d07-4c9e-bd2f-a0860c41cf02
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '203'
+source-wordcount: '215'
 ht-degree: 13%
 
 ---
@@ -27,7 +27,7 @@ Gehen Sie wie folgt vor, um einen Zielgruppen-Workflow zu erstellen und Empfäng
 
 1. Navigieren Sie zu **[!UICONTROL Profile und Zielgruppen > Vorgänge > Zielgruppen-Workflows]** -Knoten des Explorer.
 1. Erstellen Sie einen neuen Zielgruppen-Workflow.
-1. Platzieren Sie eine **Abfrage** -Aktivität, gefolgt von **Listen-Update** Aktivität.
+1. Platzieren Sie eine **Abfrage** -Aktivität und **Listen-Update** -Aktivität.
 
    ![](assets/mapping_create_list_workflow01.png)
 
@@ -41,7 +41,7 @@ Gehen Sie wie folgt vor, um einen Zielgruppen-Workflow zu erstellen und Empfäng
 
 1. Wählen Sie den Erstellungsordner für die neue Liste aus.
 1. Führen Sie den Workflow aus, um die Liste zu erstellen.
-1. Zeigen Sie das Ergebnis im Knoten des Baums an, den Sie während der **[!UICONTROL Listen-Update]** Aktivität.
+1. Zeigen Sie das Ergebnis im Knoten des Baums an, den Sie während der **[!UICONTROL Listen-Update]** -Aktivität.
 
    Das Dashboard gibt das Schema an, auf dem die Liste basiert, wie unten dargestellt:
 

@@ -2,16 +2,17 @@
 product: campaign
 title: Erstellen und Konfigurieren der Vorlagen
 description: Erstellen und Konfigurieren der Vorlagen
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
+badge-v7-prem: label="On-Premise und Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: f40bab8c-5064-40d9-beed-101a9f22c094
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1342'
-ht-degree: 1%
+source-wordcount: '1367'
+ht-degree: 3%
 
 ---
 
@@ -19,8 +20,8 @@ ht-degree: 1%
 
 Beim Erstellen einer Datenbank bietet Adobe Campaign zwei verschiedene Optionen:
 
-1. Erstellen oder Recycling einer Datenbank: Wählen Sie diese Optionen aus, wenn Sie eine neue Datenbank erstellen oder eine bestehende wiederverwenden möchten. Siehe [1. Fall: Erstellen/Recycling einer Datenbank](#case-1--creating-recycling-a-database).
-1. Verwenden einer vorhandenen Datenbank: Wählen Sie diese Option, wenn Ihr Administrator bereits eine leere Datenbank erstellt hat und Sie sie verwenden möchten. oder um die Struktur einer vorhandenen Datenbank zu erweitern. Siehe [2. Fall: Vorhandene Datenbank verwenden](#case-2--using-an-existing-database).
+1. Erstellen oder Recycling einer Datenbank: Wählen Sie diese Optionen, wenn Sie eine neue Datenbank erstellen oder eine bestehende wiederverwenden möchten. Siehe Abschnitt [1. Fall: Erstellung/Recycling einer Datenbank](#case-1--creating-recycling-a-database).
+1. Vorhandene Datenbank verwenden: Wählen Sie diese Option, wenn von Ihrem Administrator bereits eine leere Datenbank erstellt wurde und Sie sie verwenden möchten. Andernfalls können Sie die Struktur einer vorhandenen Datenbank erweitern. Siehe Abschnitt [2. Fall: Verwendung einer vorhandenen Datenbank](#case-2--using-an-existing-database).
 
 Die Konfigurationsschritte werden nachfolgend beschrieben.
 
@@ -30,7 +31,7 @@ Die Konfigurationsschritte werden nachfolgend beschrieben.
 >
 >Nur die **intern** Die Kennung kann diese Vorgänge ausführen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
-## 1. Fall: Erstellen/Recycling einer Datenbank {#case-1--creating-recycling-a-database}
+## 1. Fall: Erstellung/Recycling einer Datenbank {#case-1--creating-recycling-a-database}
 
 Die Schritte zum Erstellen einer Datenbank oder zum Recycling einer vorhandenen Datenbank werden nachfolgend beschrieben. Einige Konfigurationen hängen von der verwendeten Datenbank-Engine ab:
 
@@ -59,7 +60,7 @@ Je nach ausgewählter Datenbank-Engine können die Informationen zur Serverident
 
 * Für **Oracle** Engine, füllen Sie die **TNS-Name** für den Anwendungsserver definiert.
 * Für **PostgreSQL** oder **DB2** angegeben, müssen Sie den DNS-Namen (oder die IP-Adresse) angeben, der auf dem Anwendungsserver für den Zugriff auf den Datenbankserver definiert ist.
-* Für **Microsoft SQL Server** müssen Sie Folgendes definieren: den DNS-Namen (oder die IP-Adresse), der auf dem Anwendungsserver für den Zugriff auf den Datenbankserver definiert ist: **DNS** oder **DNS`\<instance>`** (Instanzmodus),
+* Für **Microsoft SQL Server** Engine definieren, müssen Sie den DNS-Namen (oder die IP-Adresse) definieren, der auf dem Anwendungsserver für den Zugriff auf den Datenbankserver definiert ist: **DNS** oder **DNS`\<instance>`** (Instanzmodus),
 
   >[!CAUTION]
   >
@@ -95,7 +96,7 @@ Sie müssen die folgenden Einstellungen definieren:
   >Bei einer DB2-Datenbank darf der Name der Datenbank 8 Zeichen nicht überschreiten.
 
 * Geben Sie das Kennwort des mit dieser Datenbank verknüpften Kontos ein.
-* Geben Sie an, ob die Datenbank in Unicode vorliegen muss oder nicht.
+* Geben Sie an, ob die Datenbank in Unicode vorliegen muss.
 
   Die **[!UICONTROL Unicode-Datenbank]** -Option können Sie alle Zeichentypen unabhängig von der Sprache in Unicode speichern.
 
@@ -139,27 +140,27 @@ Die **[!UICONTROL Erstellungsschritte]** -Fenster können Sie das SQL-Skript anz
 
 ### 6. Schritt - Erstellung der Datenbank {#step-6---creating-the-database}
 
-Im letzten Schritt des Assistenten können Sie die Datenbank erstellen. Klicken **[!UICONTROL Starten]** zur Bestätigung.
+Im letzten Schritt des Assistenten können Sie die Datenbank erstellen. Klicks **[!UICONTROL Starten]** zur Bestätigung.
 
 ![](assets/s_ncs_install_db_oracle_creation06.png)
 
 Nachdem die Datenbank erstellt wurde, können Sie die Verbindung wiederherstellen, um die Instanzkonfiguration abzuschließen.
 
-Sie müssen jetzt den Softwareverteilungs-Assistenten starten, um die Konfiguration der Instanz abzuschließen. Siehe [Implementierungsassistent](../../installation/using/deploying-an-instance.md#deployment-wizard).
+Sie müssen jetzt den Softwareverteilungs-Assistenten starten, um die Konfiguration der Instanz abzuschließen. Siehe Abschnitt [Implementierungsassistent](../../installation/using/deploying-an-instance.md#deployment-wizard).
 
 Die Verbindungseinstellungen für die mit der Instanz verknüpfte Datenbank werden in der Datei gespeichert **`/conf/config-<instance>.xml`** im Installationsverzeichnis von Adobe Campaign.
 
-Beispiel einer Microsoft SQL Server-Konfiguration für die Datenbank base61, die mit dem &#39;campaign&#39;-Konto und seinem verschlüsselten Kennwort verknüpft ist:
+Beispiel einer Microsoft SQL Server-Konfiguration auf Basis der Datenbank base61, die mit dem &#39;campaign&#39;-Konto und seinem verschlüsselten Kennwort verknüpft ist:
 
 ```
 <dbcnx encrypted="1" login="campaign:myBase" password="myPassword" provider="DB" server="dbServer"/>
 ```
 
-## 2. Fall: Vorhandene Datenbank verwenden {#case-2--using-an-existing-database}
+## 2. Fall: Verwendung einer vorhandenen Datenbank {#case-2--using-an-existing-database}
 
 Die Datenbank sowie der Benutzer müssen vom Datenbankadministrator erstellt und die Zugriffsberechtigungen korrekt konfiguriert worden sein.
 
-Für eine Oracle-Datenbank sind beispielsweise folgende Mindestberechtigungen erforderlich: CONNECT, RESSOURCE UND UNBEGRENZTER TABLESPACE.
+Beispielsweise sind für eine Oracle-Datenbank die Mindestrechte: GRANT CONNECT, RESOURCE und UNLIMITED TABLESPACE.
 
 Gehen Sie zur Verwendung einer vorhandenen Datenbank wie folgt vor:
 
@@ -171,7 +172,7 @@ Gehen Sie zur Verwendung einer vorhandenen Datenbank wie folgt vor:
 
 ### 1. Schritt - Datenbank-Engine auswählen {#step-1---choosing-the-database-engine}
 
-Wählen Sie die Datenbank-Engine aus der Dropdown-Liste aus.
+Wählen Sie die Datenbank-Engine aus der Dropdownliste aus.
 
 ![](assets/s_ncs_install_db_select_engine.png)
 
@@ -230,17 +231,17 @@ Die **[!UICONTROL Erstellungsschritte]** -Fenster können Sie das SQL-Skript anz
 
 ### 5. Schritt - Erstellung der Datenbank {#step-5---creating-the-database}
 
-Im letzten Schritt des Assistenten können Sie die Datenbank erstellen. Klicken **[!UICONTROL Starten]** zur Bestätigung.
+Im letzten Schritt des Assistenten können Sie die Datenbank erstellen. Klicks **[!UICONTROL Starten]** zur Bestätigung.
 
 ![](assets/s_ncs_install_db_oracle_creation06.png)
 
 Sobald die Datenbankerstellung abgeschlossen ist, können Sie die Verbindung wiederherstellen, um die Instanzkonfiguration abzuschließen.
 
-Sie müssen jetzt den Softwareverteilungs-Assistenten starten, um die Konfiguration der Instanz abzuschließen. Siehe [Implementierungsassistent](../../installation/using/deploying-an-instance.md#deployment-wizard).
+Sie müssen jetzt den Softwareverteilungs-Assistenten starten, um die Konfiguration der Instanz abzuschließen. Siehe Abschnitt [Implementierungsassistent](../../installation/using/deploying-an-instance.md#deployment-wizard).
 
 Die Verbindungseinstellungen für die mit der Instanz verknüpfte Datenbank werden in der Datei gespeichert **`/conf/config-<instance>.xml`** im Installationsverzeichnis von Adobe Campaign.
 
-Beispiel einer Microsoft SQL Server-Konfiguration für die Datenbank base61, die mit dem &#39;campaign&#39;-Konto und seinem verschlüsselten Kennwort verknüpft ist:
+Beispiel einer Microsoft SQL Server-Konfiguration auf Basis der Datenbank base61, die mit dem &#39;campaign&#39;-Konto und seinem verschlüsselten Kennwort verknüpft ist:
 
 ```
 <dbcnx encrypted="1" login="campaign:myBase" password="myPassword" provider="DB" server="dbServer"/>

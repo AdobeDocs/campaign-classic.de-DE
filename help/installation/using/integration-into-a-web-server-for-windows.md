@@ -2,16 +2,17 @@
 product: campaign
 title: Integration in einen Web-Server für Windows
 description: Integration in einen Web-Server für Windows
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
+badge-v7-prem: label="On-Premise und Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 041c4431-baae-4e64-9e9a-0daa5123bd8a
-source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '910'
-ht-degree: 5%
+source-wordcount: '935'
+ht-degree: 6%
 
 ---
 
@@ -40,7 +41,7 @@ Ebenso müssen Sie einen Webserver verwenden, wenn Sie die Tracking-Funktion ver
 
 ## Konfigurieren des IIS-Webservers {#configuring-the-iis-web-server}
 
-Das Konfigurationsverfahren für einen IIS-Webserver ist größtenteils grafisch. Dazu gehört die Verwendung einer (bereits erstellten oder noch nicht erstellten) Website für den Zugriff auf die Ressourcen des Adobe Campaign-Servers: Java-Dateien (.jsp), Stylesheets (.css, .xsl), Bilder (.png), die ISAPI-DLL für die Umleitung usw.
+Das Konfigurationsverfahren für einen IIS-Webserver ist größtenteils grafisch. Dazu gehört die Verwendung einer (bereits erstellten oder noch ausstehenden) Website für den Zugriff auf die Ressourcen des Adobe Campaign-Servers: Java-Dateien (.jsp), Stylesheets (.css, .xsl), Bilder (.png), die ISAPI-DLL für die Weiterleitung usw.
 
 Die folgenden Abschnitte beschreiben die Konfiguration in IIS 7. Die Konfiguration für IIS8 ist im Grunde identisch.
 
@@ -75,7 +76,7 @@ Befolgen Sie zur Konfiguration die nachstehenden Etappen:
    >
    >Bei einer Installation auf Windows Server 2008/IIS7 müssen Sie als Administrator angemeldet sein, um das VBS-Skript auszuführen oder das Skript als Administrator auszuführen.
 
-   Klicken **[!UICONTROL OK]** Wenn der Webserver als Tracking-Weiterleitungsserver verwendet wird, klicken Sie andernfalls auf **[!UICONTROL Abbrechen]**.
+   Klicks **[!UICONTROL OK]** Wenn der Webserver als Tracking-Weiterleitungsserver verwendet wird, klicken Sie andernfalls auf **[!UICONTROL Abbrechen]**.
 
    Wenn auf dem Webserver bereits mehrere Sites konfiguriert sind, wird eine Zwischenseite angezeigt, auf der angegeben wird, für welche Website die Installation gilt: Geben Sie die mit der Site verknüpfte Nummer ein und klicken Sie auf **[!UICONTROL OK]**.
 
@@ -97,11 +98,11 @@ Als Nächstes müssen Sie die Sicherheitseinstellungen für die ISAPI-DLL und di
 
 Gehen Sie hierzu wie folgt vor:
 
-1. Wählen Sie die **[!UICONTROL Funktionsansicht]** und doppelklicken Sie auf die **Authentifizierung** Link.
+1. Wählen Sie die **[!UICONTROL Funktionsansicht]** und doppelklicken Sie auf die **Authentifizierung** -Link.
 
    ![](assets/s_ncs_install_iis7_parameters_step8.png)
 
-1. Im **Verzeichnissicherheit** auf der Website ein, stellen Sie sicher, dass der anonyme Zugriff aktiviert ist. Klicken Sie bei Bedarf auf das **[!UICONTROL Bearbeiten]** -Link, um die Einstellungen zu ändern.
+1. Im **Verzeichnissicherheit** auf der Website ein, stellen Sie sicher, dass der anonyme Zugriff aktiviert ist. Klicken Sie bei Bedarf auf die Schaltfläche **[!UICONTROL Bearbeiten]** -Link, um die Einstellungen zu ändern.
 
    ![](assets/s_ncs_install_iis7_parameters_step9.png)
 

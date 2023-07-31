@@ -2,12 +2,12 @@
 product: campaign
 title: Audit-Protokoll
 description: Erfahren Sie, wie Sie Ihre Instanz mit dem Campaign Audit-Protokoll überwachen.
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Audit Trail, Monitoring
+feature: Audit Trail, Monitoring, Workflows
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 exl-id: 8508d879-fb38-4b1f-9f55-0341bb8d0c67
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '505'
 ht-degree: 20%
 
 ---
@@ -46,7 +46,7 @@ Audit-Protokoll besteht aus drei Komponenten:
 
   Weiterführende Informationen zur Überwachung von Workflows finden Sie im Abschnitt [dedizierter Abschnitt](../../workflow/using/monitoring-workflow-execution.md).
 
-* **Option-Audit-Protokoll**: Überprüfen Sie die Aktivitäten und zuletzt vorgenommenen Änderungen an Ihren Optionen.
+* **Option-Audit-Protokoll**: Überprüfen Sie die Aktivitäten und letzten Änderungen an Ihren Optionen.
 
   Weiterführende Informationen zu Optionen finden Sie in diesem Abschnitt [page](../../installation/using/configuring-campaign-options.md).
 
@@ -59,15 +59,15 @@ So greifen Sie auf die **[!UICONTROL Audit-Protokoll]** :
 
    ![](assets/audit_trail_1.png)
 
-1. Das Fenster **[!UICONTROL Audit-Protokoll]** wird mit der Liste Ihrer Entitäten geöffnet. Adobe Campaign prüft die Aktionen zum Erstellen, Bearbeiten und Löschen von Workflows, Optionen und Schemata.
+1. Das Fenster **[!UICONTROL Audit-Protokoll]** wird mit der Liste Ihrer Entitäten geöffnet. Adobe Campaign prüft die Erstellungs-, Bearbeitungs- und Löschaktionen für Workflows, Optionen und Schemata.
 
    Wählen Sie eine der Entitäten aus, um mehr über die letzten Änderungen zu erfahren.
 
    ![](assets/audit_trail_2.png)
 
-1. Die **[!UICONTROL Prüfstelle]** enthält detailliertere Informationen zur ausgewählten Entität, z. B.:
+1. Die **[!UICONTROL Auditstelle]** enthält detailliertere Informationen zur ausgewählten Entität, z. B.:
 
-   * **[!UICONTROL Typ]** : Workflow, Optionen oder Schemas.
+   * **[!UICONTROL Typ]** : Workflow, Optionen oder Schemata.
    * **[!UICONTROL Entität]** : Interner Name Ihrer Aktivitäten.
    * **[!UICONTROL Geändert von]** : Benutzername der letzten Person, die diese Entität zuletzt geändert hat.
    * **[!UICONTROL Aktion]** : Letzte Aktion, die für diese Entität ausgeführt wurde, entweder &quot;Erstellt&quot;, &quot;Bearbeitet&quot;oder &quot;Gelöscht&quot;.

@@ -2,14 +2,15 @@
 product: campaign
 title: Zugriff auf Google BigQuery konfigurieren
 description: Erfahren Sie, wie Sie den Zugriff auf Google BigQuery in FDA konfigurieren
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Federated Data Access
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: ebaad59f-0607-4090-92d0-e457fbf9a348
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '845'
+source-wordcount: '852'
 ht-degree: 9%
 
 ---
@@ -40,11 +41,11 @@ Verwenden von Adobe Campaign Classic **Federated Data Access** (FDA), um in eine
 
 1. Für [!DNL Google BigQuery] -Connector verwenden, erfordert Adobe Campaign Classic die folgenden Parameter für die Verbindung:
 
-   * **[!UICONTROL Projekt]**: ein vorhandenes Projekt erstellen oder verwenden.
+   * **[!UICONTROL Projekt]**: Erstellen oder verwenden Sie ein vorhandenes Projekt.
 
      Weiterführende Informationen dazu finden Sie auf dieser [Seite](https://cloud.google.com/resource-manager/docs/creating-managing-projects).
 
-   * **[!UICONTROL Dienstkonto]**: ein Dienstkonto erstellen.
+   * **[!UICONTROL Dienstkonto]**: Erstellen Sie ein Dienstkonto.
 
      Weiterführende Informationen dazu finden Sie auf dieser [Seite](https://cloud.google.com/iam/docs/creating-managing-service-accounts).
 
@@ -52,7 +53,7 @@ Verwenden von Adobe Campaign Classic **Federated Data Access** (FDA), um in eine
 
      Weiterführende Informationen dazu finden Sie auf dieser [Seite](https://cloud.google.com/iam/docs/creating-managing-service-account-keys).
 
-   * **[!UICONTROL Datensatz]**: **[!UICONTROL Datensatz]** ist für eine ODBC-Verbindung optional. Da jede Abfrage den Datensatz bereitstellen muss, in dem sich die Tabelle befindet, muss eine **[!UICONTROL Datensatz]** ist zwingend erforderlich für [!DNL Google BigQuery] FDA-Connector in Adobe Campaign Classic.
+   * **[!UICONTROL Datensatz]**: **[!UICONTROL Datensatz]** ist für eine ODBC-Verbindung optional. Da jede Abfrage den Datensatz bereitstellen muss, in dem sich die Tabelle befindet, muss eine **[!UICONTROL Datensatz]** ist für [!DNL Google BigQuery] FDA-Connector in Adobe Campaign Classic.
 
      Weiterführende Informationen dazu finden Sie auf dieser [Seite](https://cloud.google.com/bigquery/docs/datasets).
 
@@ -204,9 +205,9 @@ Der Connector unterstützt die folgenden Optionen:
 
 | Option | Beschreibung  |
 |:-:|:-:|
-| ProxyType | Typ des Proxys, der verwendet wird, um über ODBC- und SDK-Connectoren eine Verbindung zu BigQuery herzustellen. </br>HTTP (Standard), http_no_tunnel, socks4 und socks5 werden derzeit unterstützt. |
+| ProxyType | Proxy-Typ, der für die Verbindung mit BigQuery über ODBC- und SDK-Connectoren verwendet wird. </br>HTTP (Standard), http_no_tunnel, socks4 und socks5 werden derzeit unterstützt. |
 | ProxyHost | Hostname oder IP-Adresse, an der der Proxy erreicht werden kann. |
 | ProxyPort | Anschlussnummer, auf der der Proxy ausgeführt wird, z. B. 8080 |
-| ProxyUid | Benutzername, der für den authentifizierten Proxy verwendet wird |
+| ProxyUid | Benutzername für den authentifizierten Proxy |
 | ProxyPwd | ProxyUid-Kennwort |
 | bqpath | Beachten Sie, dass dies nur für Tools mit Massenladevorgang (Cloud SDK) gilt. </br> Um die Verwendung der PATH-Variablen zu vermeiden oder den Ordner google-cloud-sdk an einen anderen Speicherort zu verschieben, können Sie mit dieser Option den genauen Pfad zum Ordner &quot;cloud sdk bin&quot;auf dem Server angeben. |

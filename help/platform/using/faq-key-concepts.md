@@ -2,15 +2,16 @@
 product: campaign
 title: Schlüsselkonzepte
 description: Häufig gestellte Fragen zu Campaign Classic
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Troubleshooting
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: f0d884ae-0789-4ad9-a8fa-adeffbb560ea
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '866'
-ht-degree: 100%
+source-wordcount: '873'
+ht-degree: 99%
 
 ---
 
@@ -73,7 +74,7 @@ Bei Adobe Campaign stehen Ihnen für die Erstellung von Audiences und die Auswah
 
 ## Was ist ein Workflow? {#what-is-a-workflow-}
 
-Mit Adobe Campaign verfügen Sie über ein integriertes Workflow-Management-System, welches die zentrale Steuerung aller Prozesse und Vorgänge der Anwendung ermöglicht. Die Workflow-Engine dient der Modellierung und Automatisierung der verschiedenen Aufgaben der Anwendungsserver-Module. Mithilfe der grafischen Oberfläche lassen sich vollständige Arbeitsabläufe zur Segmentierung von Zielgruppen, zur Ausführung von Kampagnen, zum Umgang mit Dateien etc. gestalten.
+Mit Adobe Campaign verfügen Sie über ein integriertes Workflow-Management-System, welches die zentrale Steuerung aller Prozesse und Vorgänge der Anwendung ermöglicht. Die Workflow-Engine dient der Modellierung und Automatisierung der verschiedenen Aufgaben der Anwendungs-Server-Module. Mithilfe der grafischen Oberfläche lassen sich vollständige Arbeitsabläufe zur Segmentierung von Zielgruppen, zur Ausführung von Kampagnen, zum Umgang mit Dateien etc. gestalten.
 
 So bieten Workflows beispielsweise die Möglichkeit, Dateien von einem Server herunterladen, sie zu entkomprimieren und die Datensätze in die Adobe Campaign-Datenbank zu importieren.
 
@@ -125,7 +126,7 @@ Hier erfahren Sie, wie Sie ein [Web-Formular erstellen](../../web/using/about-we
 
 ## Gibt es eine Auflistung von veralteten Funktionen und Versionen? {#is-there-a-list-of-deprecated-features-and-versions-}
 
-Adobe beurteilt laufend die Funktionen des Produkts. Manche Funktionen werden durch leistungsfähigere Versionen ersetzt, bei anderen werden ausgewählte Komponenten erneut implementiert, um besser für künftige Anforderungen oder Erweiterungen gerüstet zu sein. Da Campaign Drittanbieter-Tools verwendet, wird die Kompatibilität regelmäßig aktualisiert, damit nur unterstützte Versionen implementiert werden.
+Adobe wertet laufend die Funktionen des Produkts aus. Manche Funktionen werden durch leistungsfähigere Versionen ersetzt, bei anderen werden ausgewählte Komponenten erneut implementiert, um besser für künftige Anforderungen oder Erweiterungen gerüstet zu sein. Da Campaign Drittanbieter-Tools verwendet, wird die Kompatibilität regelmäßig aktualisiert, damit nur unterstützte Versionen implementiert werden.
 
 [Hier erfahren Sie mehr darüber](../../rn/using/deprecated-features.md).
 

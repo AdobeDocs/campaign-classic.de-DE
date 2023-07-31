@@ -2,12 +2,13 @@
 product: campaign
 title: Zielgruppen-Mapping
 description: Erfahren Sie, wie Sie ein Zielgruppen-Mapping erstellen
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Application Settings
+badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 exl-id: 38333669-5598-4811-a121-b677c1413f56
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '511'
 ht-degree: 2%
 
 ---
@@ -52,7 +53,7 @@ Gehen Sie hierzu wie folgt vor:
    </srcSchema>
    ```
 
-1. Deklarieren Sie Ihr Schema als externe Ansicht mit dem Attribut =&quot;true&quot;. Siehe [Das Ansichtsattribut](../../configuration/using/schema-characteristics.md#the-view-attribute).
+1. Deklarieren Sie Ihr Schema als externe Ansicht mit dem Attribut =&quot;true&quot;. Siehe Abschnitt [Das Ansichtsattribut](../../configuration/using/schema-characteristics.md#the-view-attribute).
 
    ```
     <srcSchema desc="External recipient table" namespace="cus" view="true"....>
@@ -83,17 +84,17 @@ Gehen Sie hierzu wie folgt vor:
 
 1. Klicken Sie auf **[!UICONTROL Administration > Kampagnenverwaltung > Zielgruppen-Mappings]** Knoten.
 1. Klicken Sie auf **Neu** -Schaltfläche, um den Assistenten zur Zielgruppen-Mapping-Erstellung zu öffnen.
-1. Geben Sie die **Titel** und wählen Sie das Schema aus, das Sie soeben im **Zielgruppendimension** -Feld.
+1. Geben Sie die **Titel** und wählen Sie das Schema aus, das Sie gerade im **Zielgruppendimension** -Feld.
 
    ![](assets/mapping_diffusion_wizard_1.png)
 
-1. Im **Adressformulare bearbeiten** die Felder des Schemas auswählen, die den verschiedenen Versandadressen entsprechen. Hier können wir die **@email** und **@mobile** -Felder.
+1. Im **Adressformulare bearbeiten** -Fenster die Felder des Schemas auswählen, die den verschiedenen Versandadressen entsprechen. Hier können wir die **@email** und **@mobile** -Felder.
 
    ![](assets/mapping_diffusion_wizard_2.png)
 
 1. Im Folgenden **Speicherung** -Fenster, geben Sie die **Suffix der Erweiterungsschemas** , um die neuen Schemata von den von Adobe Campaign bereitgestellten nativen Schemata zu unterscheiden.
 
-   Klicken **[!UICONTROL Neue zusätzliche Felder definieren]** um die Dimension auszuwählen, die Sie in Ihrem Versand als Ziel auswählen möchten.
+   Klicks **[!UICONTROL Neue zusätzliche Felder definieren]** um die Dimension auszuwählen, die Sie in Ihrem Versand als Ziel auswählen möchten.
 
    Standardmäßig wird die Ausschlussverwaltung in derselben Tabelle wie Nachrichten gespeichert.
 

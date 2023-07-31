@@ -2,11 +2,12 @@
 product: campaign
 title: Webtracking-Tags in Ihre Site einfügen
 description: Erfahren Sie, wie Sie Web-Tracking-Tags in Ihre Site einfügen
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Configuration
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 exl-id: e7fcec75-82fe-45ff-8d45-7d6e95baeb14
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '335'
 ht-degree: 0%
 
 ---
@@ -39,7 +40,7 @@ Wenn Sie jedoch Tags vom Typ TRANSACTION verwenden, müssen Sie das Beispiel-Tag
 
 Um statische Tags einzufügen, kopieren Sie einfach die von der Konsole generierten oder manuell erstellten Tags und fügen Sie sie in die Quelle Ihrer Webseite ein.
 
-**Beispiel**: Einfügen eines Webtrackingtags auf einer Seite, auf der ein Formular angezeigt wird.
+**Beispiel**: Einfügen eines Webtrackingtags auf einer Seite, die ein Formular anzeigt.
 
 ```
 <html>
@@ -132,7 +133,7 @@ Die URL, die Sie erstellen, muss den in [Webtrackingtag: Definition](../../confi
 >
 >Umleitung und Webtracking verwenden Cookies. Es ist wichtig, dass sich der Webserver, der den synchronen HTTP-Aufruf durchführt, in derselben Domäne befindet wie der Umleitungsserver. Die verschiedenen HTTP-Austausche müssen die Cookies &quot;id&quot;, &quot;uuid&quot;und &quot;uuid230&quot;vermitteln.
 
-**Beispiel**: Dynamische Generierung in Java, bei der die Empfängerauthentifizierung anhand der Kundennummer erfolgt.
+**Beispiel**: Dynamische Generierung in Java, wobei die Empfängerauthentifizierung anhand der Kundennummer erfolgt.
 
 ```
 [...]

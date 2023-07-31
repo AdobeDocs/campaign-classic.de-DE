@@ -2,16 +2,17 @@
 product: campaign
 title: Grundprinzip
 description: Grundprinzip
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
+badge-v7-prem: label="On-Premise und Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
 audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 1c032ef9-af11-4947-90c6-76cb9434ae85
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '495'
-ht-degree: 11%
+source-wordcount: '520'
+ht-degree: 14%
 
 ---
 
@@ -26,10 +27,10 @@ Es gibt viele Adobe Campaign-Module. Einige werden kontinuierlich ausgeführt, w
 Es gibt drei Typen von Adobe Campaign-Modulen:
 
 * Module mit Mehrfach-Instanzen: Für alle Instanzen wird ein einzelner Prozess ausgeführt. Dies gilt für die folgenden Module: **Web**, **syslogd**, **trackinglogd** und **watchdog** (Tätigkeiten aus **config-default.xml** -Datei).
-* Module mit Einfach-Instanz: Für die einzelnen Instanzen wird jeweils ein Prozess ausgeführt. Dies gilt für die folgenden Module: **mta**, **wfserver**, **inMail**, **sms** und **stat** (Tätigkeiten aus **config-`<instance>`.xml** -Datei).
+* Module mit Einfach-Instanz: Für die einzelnen Instanzen wird jeweils ein Prozess ausgeführt. Dies gilt für die folgenden Module: **mta**, **wfserver**, **inMail**, **sms** und **stat** (Tätigkeiten aus **config-`<instance>`.XML** -Datei).
 * Dienstprogrammmodule: Hierbei handelt es sich um Module, die gelegentlich ausgeführt werden, um gelegentliche oder wiederkehrende Vorgänge durchzuführen (**cleanup**, **config**, das Herunterladen von Trackinglogs usw.).
 
-Die Modulverwaltung erfolgt mithilfe des Befehlszeilen-Tools **nlserver** im **bin** Verzeichnis des Installationsordners.
+Die Modulverwaltung erfolgt mithilfe des Befehlszeilen-Tools **nlserver** im **bin** -Ordner des Installationsordners.
 
 Die allgemeine Syntax der **nlserver** -Tool lautet wie folgt:
 
@@ -43,18 +44,18 @@ Die verfügbaren Module werden in der folgenden Tabelle beschrieben:
 |---|---|
 | aliasCleansing | Standardisierung der Auflistungswerte |
 | billing | Senden des Systemaktivitätsberichts an billing@neolane.net |
-| cleanup | Datenbank bereinigen: löscht veraltete Daten aus der Datenbank und führt eine Aktualisierung der vom Datenbankmodul-Optimierer verwendeten Statistiken durch. |
+| cleanup | Datenbank bereinigen: Löscht veraltete Daten aus der Datenbank und führt eine Aktualisierung der vom Datenbankmodul-Optimierer verwendeten Statistiken durch. |
 | config | Ändern der Serverkonfiguration |
-| export | In Befehlszeile exportieren: ermöglicht Ihnen, ein in der Adobe Campaign-Clientkonsole erstelltes Exportmodell an die Befehlszeile zu senden |
+| export | In Befehlszeile exportieren: sendet an die Befehlszeile ein Exportmodell, das in der Adobe Campaign-Clientkonsole erstellt wurde. |
 | fileconvert | Datei mit festgelegter Größe konvertieren |
-| importieren | In Befehlszeile importieren: können Sie ein in der Adobe Campaign-Clientkonsole erstelltes Importmodell an die Befehlszeile senden. |
-| inMail | Analyse eingehender E-Mails |
+| importieren | Import in Befehlszeile: sendet an die Befehlszeile ein Importmodell, das in der Adobe Campaign-Clientkonsole erstellt wurde. |
+| inMail | Analyse eingehender Nachrichten |
 | installsetup | Verfügbarkeit der Installationsdatei des Kunden |
 | JavaScript | Ausführen von JavaScript-Skripten mit Zugriff auf SOAP-APIs. |
 | job | Befehlszeilenverarbeitung |
 | merge | Formular-Zusammenführung |
 | midSourcing | Abruf der Versandinformationen im Mid-Sourcing-Modus |
-| überwachen | XML Anzeige des Status von Serverprozessen und geplanten Aufgaben nach Instanz. |
+| überwachen | XML-Darstellung des Status von Serverprozessen und geplanten Aufgaben nach Instanz. |
 | mta | Hauptübermittlungsnachricht für Agenten |
 | Paket | Entitätspaket-Dateien importieren oder exportieren |
 | pdump | Anzeigen des Serverprozessstatus |
@@ -77,7 +78,7 @@ Die verfügbaren Module werden in der folgenden Tabelle beschrieben:
 
 >[!IMPORTANT]
 >
->Es gibt ein letztes Modul: das mit dem Anwendungsserver verknüpfte Tracking- und Relais-Modul, das aus Leistungsgründen über native Mechanismen in einen Apache- oder IIS-Webserver über eine dynamische Bibliothek integriert wird. Es gibt keinen Adobe Campaign-Befehl, mit dem Sie dieses Modul starten oder verwalten können. Daher müssen Sie die Befehle des Webservers selbst verwenden.
+>Es gibt ein letztes Modul: das Tracking- und Relais-Modul, das mit dem Anwendungsserver verknüpft ist und der Leistung halber über native Mechanismen über eine dynamische Bibliothek in einen Apache- oder IIS-Webserver integriert wird. Es gibt keinen Adobe Campaign-Befehl, mit dem Sie dieses Modul starten oder verwalten können. Daher müssen Sie die Befehle des Webservers selbst verwenden.
 
 Die Modulverwendung und die Syntax ihrer Parameter werden mit dem folgenden Befehl angezeigt: **nlserver `[module]` -?**
 

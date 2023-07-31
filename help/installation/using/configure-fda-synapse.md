@@ -2,14 +2,15 @@
 product: campaign
 title: Zugriff auf Synapse konfigurieren
 description: Erfahren Sie, wie Sie den Zugriff auf Synapse in FDA konfigurieren
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Federated Data Access
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 59d0277a-7588-4504-94e3-50f87b60da8a
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '801'
 ht-degree: 72%
 
 ---
@@ -205,7 +206,7 @@ So erstellen Sie Ihre [!DNL Azure Synapse] Gehen Sie wie folgt vor:
 
    ![](assets/azure_1.png)
 
-1. under **[!UICONTROL Konfiguration]** auswählen **[!UICONTROL azure synapse Analytics]** von **[!UICONTROL Typ]** Dropdown-Liste.
+1. under **[!UICONTROL Konfiguration]** auswählen **[!UICONTROL Azure synapse Analytics]** aus dem **[!UICONTROL Typ]** angezeigt.
 
    ![](assets/azure_2.png)
 
@@ -229,7 +230,7 @@ So erstellen Sie Ihre [!DNL Azure Synapse] Gehen Sie wie folgt vor:
 
       * **[!UICONTROL Datenbank]**: Name der Datenbank
 
-      * **[!UICONTROL Optionen]**: Fügen Sie die folgende Syntax hinzu `Authentication=ActiveDirectoryMsi`
+      * **[!UICONTROL Optionen]**: Fügen Sie die folgende Syntax hinzu: `Authentication=ActiveDirectoryMsi`
 
      ![](assets/azure_4.png)
 

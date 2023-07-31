@@ -2,14 +2,15 @@
 product: campaign
 title: FDA-Connectoren konfigurieren
 description: Erfahren Sie mehr über die Konfigurationsschritte für FDA
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Federated Data Access
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 0b53b165-a6d8-4604-b3f0-3fa6fce35146
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '342'
+source-wordcount: '349'
 ht-degree: 51%
 
 ---
@@ -40,11 +41,11 @@ Nachdem das Schema erstellt wurde, können Daten in Adobe Campaign-Workflows ver
 
 ## Datenbankspezifische Konfiguration {#fda-specific-configuration}
 
-Abhängig von den externen Datenbanken, auf die Sie von Adobe Campaign aus zugreifen möchten, müssen Sie bestimmte Konfigurationen vornehmen. Diese Konfigurationen umfassen im Wesentlichen die Installation von Treibern und die Deklarierung von Umgebungsvariablen, die zu jedem RDBMS auf dem Adobe Campaign-Server gehören, sowie die Konfiguration des externen Kontos.
+Abhängig von den externen Datenbanken, auf die Sie von Adobe Campaign aus zugreifen möchten, müssen Sie bestimmte Konfigurationen vornehmen. Diese Konfigurationen umfassen im Wesentlichen die Installation von Treibern und die Deklarierung von Umgebungsvariablen für jedes RDBMS auf dem Adobe Campaign-Server sowie die Konfiguration des externen Kontos.
 
 Weitere Informationen finden Sie unter den folgenden Links:
 
-* Campaign verbinden und [azure synapse](../../installation/using/configure-fda-synapse.md)
+* Campaign verbinden und [Azure synapse](../../installation/using/configure-fda-synapse.md)
 * Campaign verbinden und [Google BigQuery](../../installation/using/configure-fda-google-big-query.md)
 * Campaign verbinden und [Hadoop](../../installation/using/configure-fda-hadoop.md)
 * Campaign verbinden und [Microsoft SQL Server](../../installation/using/configure-fda-sql.md)
@@ -53,6 +54,6 @@ Weitere Informationen finden Sie unter den folgenden Links:
 * Campaign verbinden und [PostgreSQL](../../installation/using/configure-fda-postgresql.md)
 * Campaign verbinden und [SAP HANA](../../installation/using/configure-fda-sap-hana.md)
 * Campaign verbinden und [Snowflake](../../installation/using/configure-fda-snowflake.md)
-* Campaign verbinden und [sybase IQ](../../installation/using/configure-fda-sybase.md)
+* Campaign verbinden und [Sybase IQ](../../installation/using/configure-fda-sybase.md)
 * Campaign verbinden und [Teradata](../../installation/using/configure-fda-teradata.md)
-* Campaign verbinden und [vertica analytics](../../installation/using/configure-fda-vertica.md)
+* Campaign verbinden und [Vertica analytics](../../installation/using/configure-fda-vertica.md)

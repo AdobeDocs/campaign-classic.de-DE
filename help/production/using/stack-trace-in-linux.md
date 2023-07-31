@@ -2,16 +2,17 @@
 product: campaign
 title: Stack Trace in Linux
 description: Stack Trace in Linux
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
+badge-v7-prem: label="On-Premise und Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
 audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 91662d6d-2177-4440-b31f-7b031bd953cb
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '119'
-ht-degree: 11%
+source-wordcount: '144'
+ht-degree: 21%
 
 ---
 
@@ -23,11 +24,11 @@ A **Stapelablaufverfolgung** stellt eine in einer **core** Datei eingeben. Diese
 
 >[!NOTE]
 >
->* A **core** Datei heißt **Core.`<num>`**.
+>* A **core** -Datei heißt **Core.`<num>`**.
 >* **gdb - Der GNU-Debugger** muss auf dem Computer installiert sein.
 >
 
-Der technische Support von Adobe Campaign kann Sie dazu bitten **Stapelablaufverfolgung**. Geben Sie die folgenden Befehle in Linux ein, um sie abzurufen:
+Der technische Support von Adobe Campaign kann Sie dazu bitten **Stapelablaufverfolgung**. Geben Sie zum Abrufen die folgenden Befehle in Linux ein:
 
 ```
 su - neolane

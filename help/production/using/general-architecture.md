@@ -2,15 +2,16 @@
 product: campaign
 title: Allgemeine Architektur
 description: Allgemeine Architektur
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Monitoring, Architecture
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 audience: production
 content-type: reference
 topic-tags: introduction
 exl-id: 3bfb5448-6996-4080-bf9a-434f1207637e
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '181'
-ht-degree: 4%
+source-wordcount: '188'
+ht-degree: 5%
 
 ---
 
@@ -29,8 +30,8 @@ In einer Mindestkonfiguration funktioniert Adobe Campaign mit:
 
 Dieses Diagramm zeigt, dass der einzige Traffic, der im Kontext einer minimalen Architektur involviert ist, Folgendes ist:
 
-1. HTTP-Protokollverkehr zum Adobe Campaign-Server über das Internet,
-1. Traffic des SMTP-Protokolls vom und zum Adobe Campaign-Server über das Internet.
+1. HTTP-Protokolldatenverkehr zum Adobe Campaign-Server über das Internet,
+1. SMTP-Protokolltraffic vom und zum Adobe Campaign-Server über das Internet.
 
 ## Verteilte Architektur {#distributed-architecture}
 

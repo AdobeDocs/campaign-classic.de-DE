@@ -2,15 +2,16 @@
 product: campaign
 title: Best Practices für Adobe Campaign Classic Interaction
 description: In diesem Abschnitt werden Best Practices für die Verwaltung des Interaction-Moduls in Adobe Campaign Classic vorgestellt
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Interaction, Offers
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: interaction-overview
 exl-id: 98413cde-50c9-416c-8316-85837f724c27
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1197'
-ht-degree: 100%
+source-wordcount: '1204'
+ht-degree: 99%
 
 ---
 
@@ -63,15 +64,15 @@ Dieser Abschnitt enthält ausführlichere Ratschläge zur Verwaltung von Angebot
 
 ### Verwenden komplexer Platzierungen in einem E-Mail-Versand {#multiple-offer-spaces}
 
-Wenn Angebote in Sendungen einbezogen werden, werden die Angebote in der Regel zuvor im Kampagnen-Workflow über eine Anreicherungsaktivität (oder eine andere ähnliche Aktivität) ausgewählt.
+Wenn Angebote in Sendungen einbezogen werden, werden die Angebote in der Regel zuvor im Kampagnen-Workflow über eine Aktivität „Anreicherung“ (oder eine andere ähnliche Aktivität) ausgewählt.
 
-Bei der Auswahl von Angeboten in einer Anreicherungsaktivität können Sie festlegen, welche Platzierung verwendet werden soll. Das Menü zur Anpassung des Versands hängt jedoch unabhängig von der ausgewählten Platzierung von jener Platzierung ab, die im Versand eingerichtet wurde.
+Bei der Auswahl von Angeboten in einer Aktivität „Anreicherung“ können Sie festlegen, welche Platzierung verwendet werden soll. Das Menü zur Anpassung des Versands hängt jedoch unabhängig von der ausgewählten Platzierung von jener Platzierung ab, die im Versand eingerichtet wurde.
 
 Im folgenden Beispiel lautet die im Versand ausgewählte Platzierung **[!UICONTROL E-Mail (Umgebung - Empfänger)]**:
 
 ![](assets/Interaction-best-practices-offer-space-selected.png)
 
-Wenn für die Platzierung, die Sie im Versand auswählen, keine HTML-Rendering-Funktion eingerichtet ist, wird sie nicht im Versandmenü angezeigt und kann nicht ausgewählt werden. Auch das ist unabhängig von der Platzierung, die in der Anreicherungsaktivität ausgewählt wurde.
+Wenn für die Platzierung, die Sie im Versand auswählen, keine HTML-Rendering-Funktion eingerichtet ist, wird sie nicht im Versandmenü angezeigt und kann nicht ausgewählt werden. Auch das ist unabhängig von der Platzierung, die in der Aktivität „Anreicherung“ ausgewählt wurde.
 
 Im folgenden Beispiel ist die HTML-Rendering-Funktion in der Dropdown-Liste verfügbar, da die im Versand ausgewählte Platzierung eine Rendering-Funktion hat:
 

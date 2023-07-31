@@ -2,16 +2,17 @@
 product: campaign
 title: Vor Beginn der Migration
 description: Vor Beginn der Migration
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Upgrade
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 audience: migration
 content-type: reference
 topic-tags: migration-procedure
 hide: true
 hidefromtoc: true
 exl-id: d666bc0b-596a-4908-9364-7df5bb8d68d0
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '329'
 ht-degree: 2%
 
 ---
@@ -26,7 +27,7 @@ Auf dieser Seite werden bestimmte Schritte aufgeführt, die vor dem Starten des 
 >
 >In diesem Dokument werden Befehle als Beispiele angegeben. Sie können je nach Konfiguration variieren.
 
-1. Überprüfen Sie Ihre Adobe Campaign-Version: Installieren Sie vor der Migration den neuesten Build der aktuellen Version, die Sie verwenden.
+1. Überprüfen Sie Ihre Adobe Campaign-Version: Installieren Sie vor der Migration die neueste Version der aktuellen Version, die Sie verwenden.
 1. Sichern Sie Ihre Daten.
 1. Überprüfen Sie Ihre Umgebung: Sie können Ihr Datenbank-Engine-System (DBMS) nicht ändern. Sie können beispielsweise nicht von einer PostgreSQL-Engine zu einer Oracle-Engine wechseln. Sie können jedoch zur neuesten Version Ihrer Datenbank-Engine wechseln. Beachten Sie, dass es nicht möglich ist, von einer Nicht-Unicode-Datenbank zu einer Unicode-Datenbank zu wechseln.
 
@@ -37,7 +38,7 @@ Das Migrationsverfahren muss **all** Server und in einer bestimmten Reihenfolge.
 * Im Falle einer **Standalone-Plattform** (Einzelmodus-Modus), wird die Anwendung vollständig migriert.
 * Im Falle einer **Standardplattform** (Unternehmen) werden die folgenden Migrationsschritte ausgeführt:
 
-   1. Migrieren Sie den Marketing-Server.
+   1. Migrieren des Marketing-Servers
    1. Migrieren Sie den Mailserver (mta).
    1. Migrieren Sie die Umleitungs- und Tracking-Server (Apache/IIS).
 
@@ -46,7 +47,7 @@ Das Migrationsverfahren muss **all** Server und in einer bestimmten Reihenfolge.
 
    1. Migrieren Sie die Umleitungs- und Tracking-Server (Apache/IIS).
    1. Migrieren Sie die Power Booster-/Cluster-Server.
-   1. Migrieren Sie den Marketing-Server.
+   1. Migrieren des Marketing-Servers
 
 ## Benutzerkennwörter {#user-passwords}
 

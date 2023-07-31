@@ -2,16 +2,17 @@
 product: campaign
 title: RDBMS-spezifische Empfehlungen
 description: RDBMS-spezifische Empfehlungen
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
+badge-v7-prem: label="On-Premise und Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
 audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: a586d70b-1b7f-47c2-a821-635098a70e45
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1214'
-ht-degree: 4%
+source-wordcount: '1239'
+ht-degree: 5%
 
 ---
 
@@ -95,7 +96,7 @@ VACUUM (FULL, ANALYZE, VERBOSE) <table>;
 
 Es wird dringend empfohlen, die ANALYZE -Anweisung nicht wegzulassen. Andernfalls wird der leere Tisch ohne Statistiken belassen. Der Grund dafür ist, dass eine neue Tabelle erstellt und dann die alte gelöscht wird. Daher ändert sich die Objekt-ID (OID) der Tabelle, es werden jedoch keine Statistiken berechnet. Folglich treten sofort Leistungsprobleme auf.
 
-Im Folgenden finden Sie ein typisches Beispiel für einen SQL-Wartungsplan, der regelmäßig ausgeführt werden soll:
+Im Folgenden finden Sie ein typisches Beispiel für einen regelmäßig auszuführenden SQL-Wartungsplan:
 
 ```
 \timing on
@@ -137,11 +138,11 @@ VACUUM (FULL, ANALYZE, VERBOSE) nmsmirrorpageinfo;
 
 >[!NOTE]
 >
->* Adobe empfiehlt, mit kleineren Tabellen zu beginnen: Auf diese Weise wurde zumindest ein Teil der Wartung abgeschlossen, wenn der Prozess in großen Tabellen fehlschlägt (bei denen das Fehlerrisiko am größten ist).
+>* Adobe empfiehlt, mit kleineren Tabellen zu beginnen: Wenn der Vorgang auf großen Tabellen fehlschlägt (bei denen das Fehlerrisiko am größten ist), wurde mindestens ein Teil der Wartung abgeschlossen.
 >* Adobe empfiehlt, die für Ihr Datenmodell spezifischen Tabellen hinzuzufügen, die erheblich aktualisiert werden können. Dies kann der Fall sein für **NmsRecipient** wenn Sie über große tägliche Datenreplikationsflüsse verfügen.
 >* Die VACUUM-Anweisung sperrt die Tabelle, wodurch einige Prozesse während der Wartung angehalten werden.
 >* Bei sehr großen Tabellen (in der Regel über 5 GB) kann die VACUUM FULL-Anweisung sehr ineffizient werden und sehr lange dauern. Adobe rät davon ab, sie für die **YyyNmsBroadLogXxx** Tabelle.
->* Dieser Wartungsvorgang kann mithilfe eines Adobe Campaign-Workflows implementiert werden. **[!UICONTROL SQL]** Aktivität. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../workflow/using/architecture.md). Stellen Sie sicher, dass Sie die Wartung für eine niedrige Aktivitätsdauer planen, die nicht mit Ihrem Sicherungsfenster kollidiert.
+>* Dieser Wartungsvorgang kann mithilfe eines Adobe Campaign-Workflows implementiert werden **[!UICONTROL SQL]** -Aktivität. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../workflow/using/architecture.md). Stellen Sie sicher, dass Sie die Wartung für eine niedrige Aktivitätsdauer planen, die nicht mit Ihrem Sicherungsfenster kollidiert.
 >
 
 ### Datenbank neu erstellen {#rebuilding-a-database}
@@ -371,7 +372,7 @@ Im Folgenden finden Sie ein Beispiel für die Tabellendefragmentierung mit besti
  $$ LANGUAGE plpgsql;
 ```
 
-Das folgende Beispiel kann in einem Workflow verwendet werden, um die erforderlichen Tabellen neu zu erstellen, anstatt die **Vakuum/Neu erstellen** command:
+Das folgende Beispiel kann in einem Workflow verwendet werden, um die erforderlichen Tabellen neu zu erstellen, anstatt die **vakuum/rebuild** command:
 
 ```
 function sqlGetMemo(strSql)
@@ -413,8 +414,8 @@ Wenden Sie sich an Ihren Datenbankadministrator, um herauszufinden, welche Verfa
 Das folgende Beispiel betrifft Microsoft SQL Server 2005. Wenn Sie eine andere Version verwenden, wenden Sie sich an Ihren Datenbankadministrator, um Informationen über die Wartungsmaßnahmen zu erhalten.
 
 1. Stellen Sie zunächst eine Verbindung zu Microsoft SQL Server Management Studio mit einer Anmeldung mit Administratorrechten her.
-1. Navigieren Sie zu **[!UICONTROL Management > Wartungspläne]** Ordner, klicken Sie mit der rechten Maustaste darauf und wählen Sie **[!UICONTROL Wartungsassistent]**.
-1. Klicken **[!UICONTROL Nächste]** wenn die erste Seite angezeigt wird.
+1. Navigieren Sie zu **[!UICONTROL Management > Wartungspläne]** Ordner, mit der rechten Maustaste darauf klicken und wählen **[!UICONTROL Wartungsassistent]**.
+1. Klicks **[!UICONTROL Nächste]** wenn die erste Seite angezeigt wird.
 1. Wählen Sie die Art des zu erstellenden Wartungsplans aus (separate Zeitpläne für jede Aufgabe oder einzelne Zeitpläne für den gesamten Plan) und klicken Sie dann auf die Schaltfläche **[!UICONTROL Ändern...]** Schaltfläche.
 1. Im **[!UICONTROL Eigenschaften für Job-Zeitpläne]** die gewünschten Ausführungsparameter auswählen und auf **[!UICONTROL OK]** Klicken Sie auf **[!UICONTROL Nächste]**.
 1. Wählen Sie die gewünschten Wartungsaufgaben aus und klicken Sie auf **[!UICONTROL Nächste]**.

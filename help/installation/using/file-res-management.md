@@ -1,17 +1,18 @@
 ---
 product: campaign
 title: Datei- und Ressourcenverwaltung
+feature: Installation, Application Settings
 description: Erfahren Sie, wie Sie die Datei- und Ressourcenverwaltung in Campaign konfigurieren
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
+badge-v7-prem: label="On-Premise und Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 236afdfe-fb23-4ebb-b000-76e14bf01d9e
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 0%
+source-wordcount: '663'
+ht-degree: 3%
 
 ---
 
@@ -23,7 +24,7 @@ ht-degree: 0%
 
 Verwenden Sie die **uploadWhiteList** -Attribut, um die für den Upload auf den Adobe Campaign-Server verfügbaren Dateitypen zu beschränken.
 
-Dieses Attribut ist im **dataStore** -Element **serverConf.xml** -Datei. Alle in der **serverConf.xml** sind in dieser [Abschnitt](../../installation/using/the-server-configuration-file.md).
+Dieses Attribut ist im **dataStore** -Element des **serverConf.xml** -Datei. Alle in der **serverConf.xml** in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md).
 
 Der Standardwert dieses Attributs ist **.+** und ermöglicht den Upload beliebiger Dateitypen.
 
@@ -35,11 +36,11 @@ Sie können auch verhindern, dass wichtige Dateien hochgeladen werden, indem Sie
 
 >[!NOTE]
 >
->Die **uploadWhiteList** -Attribut beschränkt die Dateitypen, die auf den Adobe Campaign-Server hochgeladen werden können. Wenn der Veröffentlichungsmodus **Tracking-Server** oder **Andere Adobe Campaign-Server**, die **uploadWhitelist** -Attribut muss auch auf diesen Servern aktualisiert werden.
+>Die **uploadWhiteList** -Attribut beschränkt die Dateitypen, die für den Upload auf den Adobe Campaign-Server verfügbar sind. Wenn der Veröffentlichungsmodus **Tracking-Server** oder **Andere Adobe Campaign-Server**, die **uploadWhitelist** -Attribut muss auch auf diesen Servern aktualisiert werden.
 
 ## Proxy-Verbindungskonfiguration {#proxy-connection-configuration}
 
-Sie können den Campaign-Server über einen Proxy mit einem externen System verbinden, indem Sie eine **Dateiübertragung** Workflow-Aktivität. Dazu müssen Sie die **proxyConfig** Abschnitt **serverConf.xml** Datei über einen bestimmten Befehl. Alle in der Variablen **serverConf.xml** sind in dieser [Abschnitt](../../installation/using/the-server-configuration-file.md).
+Sie können den Campaign-Server über einen Proxy mit einem externen System verbinden, indem Sie eine **Dateiübertragung** Workflow-Aktivität. Dazu müssen Sie die **proxyConfig** Abschnitt **serverConf.xml** Datei über einen bestimmten Befehl. Alle in der Variablen **serverConf.xml** in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md).
 
 Die folgenden Proxy-Verbindungen sind möglich: HTTP, HTTPS, FTP, SFTP. Bitte beachten Sie, dass ab Campaign-Version 20.2 die HTTP- und HTTPS-Protokollparameter **nicht mehr verfügbar**. Diese Parameter werden weiter unten erwähnt, da sie in früheren Builds - einschließlich 9032 - weiterhin verfügbar sind.
 
@@ -128,7 +129,7 @@ Um öffentlich verfügbar zu sein, müssen die Bilder, die in E-Mails und öffen
 
 Die entsprechende URL lautet: **http://server/res/instance** where **instance** ist der Name der Tracking-Instanz.
 
-Sie können einen anderen Ordner angeben, indem Sie dem **conf-`<instance>`.xml** -Datei, um den Speicher auf dem Server zu konfigurieren. Dies bedeutet, dass die folgenden Zeilen hinzugefügt werden:
+Sie können einen anderen Ordner angeben, indem Sie dem **conf-`<instance>`.XML** -Datei, um den Speicher auf dem Server zu konfigurieren. Dies bedeutet, dass die folgenden Zeilen hinzugefügt werden:
 
 ```
 <serverconf>

@@ -2,11 +2,12 @@
 product: campaign
 title: Zugriff auf PostgreSQL konfigurieren
 description: Erfahren Sie, wie Sie den Zugriff auf PostgreSQL konfigurieren
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 exl-id: 2c678f45-2555-4647-9885-bd002db7df37
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '395'
 ht-degree: 14%
 
 ---
@@ -45,7 +46,7 @@ Sie müssen eine [!DNL PostgreSQL] externes Konto, um Ihre Campaign-Instanz mit 
 
 1. Wählen Sie **[!UICONTROL Externe Datenbank]** als **[!UICONTROL Typ]** Ihres externen Kontos aus.
 
-1. under **[!UICONTROL Konfiguration]** auswählen [!DNL PostgreSQL, Greenplum] von **[!UICONTROL Typ]** Dropdown-Liste.
+1. under **[!UICONTROL Konfiguration]** auswählen [!DNL PostgreSQL, Greenplum] aus dem **[!UICONTROL Typ]** angezeigt.
 
    ![](assets/postgresql_1.png)
 
@@ -69,7 +70,7 @@ Sie müssen eine [!DNL PostgreSQL] externes Konto, um Ihre Campaign-Instanz mit 
    >
    >Damit alle Funktionen verfügbar sind, müssen Sie die SQL-Funktionen von Adobe Campaign in der Remote-Datenbank erstellen. Weiterführende Informationen dazu finden Sie auf dieser [Seite](../../configuration/using/adding-additional-sql-functions.md).
 
-1. Klicken **[!UICONTROL Speichern]** wenn Ihre Konfiguration abgeschlossen ist.
+1. Klicks **[!UICONTROL Speichern]** wenn Ihre Konfiguration abgeschlossen ist.
 
 Der Connector unterstützt die folgenden Optionen:
 

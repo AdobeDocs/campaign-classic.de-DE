@@ -2,12 +2,13 @@
 product: campaign
 title: Bearbeiten von Formularen
 description: Bearbeiten von Formularen
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Configuration
+badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1727'
+source-wordcount: '1739'
 ht-degree: 2%
 
 ---
@@ -38,7 +39,7 @@ Um Formulare zu entwerfen, bearbeiten Sie den XML-Inhalt im XML-Editor:
 
 [Weitere Informationen](form-structure.md#formatting)
 
-Klicken Sie auf die Schaltfläche **[!UICONTROL Vorschau]** tab:
+Um eine Vorschau eines Formulars anzuzeigen, klicken Sie auf das **[!UICONTROL Vorschau]** tab:
 
 ![](assets/d_ncs_integration_form_preview.png)
 
@@ -129,7 +130,7 @@ In diesem Beispiel definiert ein Container die **Erstellung** -Abschnitt, der di
 
 Verwenden Sie für mehrseitige Formulare einen Container, um eine Formularseite zu erstellen.
 
-Dieses Beispiel zeigt Container für **Allgemein** und **Details** Seiten eines Formulars:
+Dieses Beispiel zeigt Container für **Allgemein** und **Details** Formularseiten:
 
 ```xml
 <container img="ncm:book.png" label="General">
@@ -223,7 +224,7 @@ Gehen Sie wie folgt vor, um ein Formular zu erstellen:
 
 1. Wenn das Formular auf einem bestimmten Schematyp basiert, können Sie die Felder für dieses Schema nachschlagen:
 
-   1. Klicken **[!UICONTROL Einfügen]** > **[!UICONTROL Dokumentfelder]**.
+   1. Klicks **[!UICONTROL Einfügen]** > **[!UICONTROL Dokumentfelder]**.
 
       ![](assets/input-form-create-4.png)
 
@@ -239,7 +240,7 @@ Gehen Sie wie folgt vor, um ein Formular zu erstellen:
 
    Sie können die folgenden Editor-Typen für Felder verwenden:
 
-   | Feldeditor | Formularattribut |
+   | Feld-Editor | Formularattribut |
    | --- | --- |
    | Radiobutton | `type="radiobutton"` |
    | Checkbox | `type="checkbox"` |
@@ -400,7 +401,7 @@ Dieses Beispiel zeigt ein komplexes Formular:
 </form>
 ```
 
-Daher wird die **Allgemein** -Seite des äußeren Formulars zeigt die **Name** und **Kontakt** Registerkarten.
+Daher wird die Variable **Allgemein** -Seite des äußeren Formulars zeigt die **Name** und **Kontakt** Registerkarten.
 
 ![](assets/nested_forms_preview.png)
 
@@ -437,13 +438,13 @@ Dieses Beispiel zeigt ein komplexes Formular:
 </form>
 ```
 
-Daher wird die **Allgemein** -Seite des äußeren Formulars zeigt die **Name** und **Kontakt** Registerkarten.
+Daher wird die Variable **Allgemein** -Seite des äußeren Formulars zeigt die **Name** und **Kontakt** Registerkarten.
 
 ![](assets/nested_forms_preview.png)
 
 
 
-## Ändern eines Factory-Eingabeformulars {#modify-factory-form}
+## Fabrikeingabeformular ändern {#modify-factory-form}
 
 Gehen Sie wie folgt vor, um ein Factory-Formular zu ändern:
 
@@ -462,9 +463,9 @@ Sie können Überprüfungssteuerelemente in Formulare aufnehmen.
 
 ### Schreibgeschützten Zugriff auf Felder gewähren
 
-Um Lesezugriff auf ein Feld zu gewähren, verwenden Sie die `readOnly="true"` -Attribut. Beispielsweise können Sie den Primärschlüssel eines Datensatzes anzeigen, jedoch mit schreibgeschütztem Zugriff. [Weitere Informationen](form-structure.md#non-editable-fields)
+Verwenden Sie die `readOnly="true"` -Attribut. Beispielsweise können Sie den Primärschlüssel eines Datensatzes anzeigen, jedoch mit schreibgeschütztem Zugriff. [Weitere Informationen](form-structure.md#non-editable-fields)
 
-In diesem Beispiel wird der Primärschlüssel (`iRecipientId`) `nms:recipient` Schema wird in schreibgeschütztem Zugriff angezeigt:
+In diesem Beispiel wird der Primärschlüssel (`iRecipientId`) der `nms:recipient` Schema wird in schreibgeschütztem Zugriff angezeigt:
 
 ```xml
 <value xpath="@iRecipientId" readOnly="true"/>
@@ -536,7 +537,7 @@ Sie können JavaScript-SOAP-Aufrufe verwenden, um Formulardaten aus der Konsole 
 
    Der Aufruf wird synchron ausgeführt.
 
-   Alle Ausnahmen werden angezeigt. Wenn Sie `<leave>` -Element verwenden, können Benutzer das Formular erst dann speichern, wenn die eingegebenen Informationen validiert wurden.
+   Alle Ausnahmen werden angezeigt. Wenn Sie die `<leave>` -Element verwenden, können Benutzer das Formular erst dann speichern, wenn die eingegebenen Informationen validiert wurden.
 
 Dieses Beispiel zeigt, wie Sie Dienstaufrufe in Formularen durchführen können:
 

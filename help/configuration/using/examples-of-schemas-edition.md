@@ -2,11 +2,12 @@
 product: campaign
 title: Beispiele für Schemabearbeitung
 description: Beispiele für Schemabearbeitung
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Schema Extension
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 exl-id: b7ee70e0-89c6-4cd3-8116-2f073d4a2f2f
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '663'
+source-wordcount: '670'
 ht-degree: 2%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 2%
 
 ## Tabelle erweitern {#extending-a-table}
 
-So erweitern Sie die **nms:recipient** Schema-Empfängertabelle verwenden:
+Erweiterung der **nms:recipient** Schema-Empfängertabelle verwenden:
 
 1. Erstellen Sie das Erweiterungsschema (**cus:extension**) unter Verwendung der folgenden Daten:
 
@@ -296,11 +297,11 @@ CREATE UNIQUE INDEX CusRcpGrpRel_id ON CusRcpGrpRel(iRcpGroupId, iRecipientId);
 CREATE INDEX CusRcpGrpRel_recipientId ON CusRcpGrpRel(iRecipientId);
 ```
 
-## Anwendungsbeispiel: ein Feld mit einer vorhandenen Referenztabelle verknüpfen {#uc-link}
+## Anwendungsbeispiel: Feld mit einer vorhandenen Referenztabelle verknüpfen {#uc-link}
 
 Dieser Anwendungsfall zeigt, wie Sie eine vorhandene Referenztabelle als Alternative zu den integrierten Adobe Campaign-Auflistungsmechanismen (enum, userEnum oder dbEnum) verwenden können.
 
-Sie können auch eine vorhandene Referenztabelle als Auflistung in Ihren Schemas verwenden. Dies kann durch Erstellen einer Relation zwischen einer Tabelle und der Referenztabelle und Hinzufügen des Attributs erreicht werden **displayAsField=&quot;true&quot;**.
+Sie können auch eine vorhandene Referenztabelle als Auflistung in Ihren Schemas verwenden. Dies kann durch Erstellen einer Relation zwischen einer Tabelle und der Referenztabelle und Hinzufügen des Attributs erreicht werden. **displayAsField=&quot;true&quot;**.
 
 In diesem Beispiel enthält die Referenztabelle eine Liste von Banknamen und Kennungen:
 

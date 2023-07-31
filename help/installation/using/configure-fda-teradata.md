@@ -2,15 +2,16 @@
 product: campaign
 title: Zugriff auf Teradata konfigurieren
 description: Erfahren Sie, wie Sie den Zugriff auf Teradata in FDA konfigurieren
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Federated Data Access
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 3a5856c3-b642-4722-97ff-6ae7107efdbe
-source-git-commit: 403227736e2e8c606204e9324d0afb5b71be62a5
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1786'
-ht-degree: 69%
+source-wordcount: '1793'
+ht-degree: 68%
 
 ---
 
@@ -88,15 +89,15 @@ Sie müssen Treiber installieren, damit Teradata die Verbindung zu Campaign hers
 
    * **[!UICONTROL Server]**: URL oder Name Ihres Teradata-Servers
 
-   * **[!UICONTROL Konto]**: Name des Kontos, das für den Zugriff auf die Teradata-Datenbank verwendet wird
+   * **[!UICONTROL Konto]**: Name des Kontos, über das auf die Teradata zugegriffen wird
 
    * **[!UICONTROL Passwort]**: Kennwort für die Verbindung mit der Teradata-Datenbank
 
    * **[!UICONTROL Datenbank]**: Name der Datenbank (optional)
 
-   * **[!UICONTROL Optionen]**: Optionen, die über Teradata weitergegeben werden sollen. Verwenden Sie das folgende Format: &#39;parameter=value&#39;. Verwenden Sie ein Semikolon als Trennzeichen zwischen Werten.
+   * **[!UICONTROL Optionen]**: Optionen, die über Teradata weitergeleitet werden. Verwenden Sie das folgende Format: &#39;parameter=value&#39;. Verwenden Sie ein Semikolon als Trennzeichen zwischen Werten.
 
-   * **[!UICONTROL Zeitzone]**: Die in Teradata festgelegte Zeitzone. [Weitere Informationen](#timezone)
+   * **[!UICONTROL Zeitzone]**: In Teradata festgelegte Zeitzone. [Weitere Informationen](#timezone)
 
 Der Connector unterstützt die folgenden Optionen:
 
@@ -174,7 +175,7 @@ Customers with a Latin-1 Teradata database migrating to a recent Campaign Classi
 
 ### Benutzerkonfiguration {#user-configuration}
 
-Für die externe Datenbank sind die folgenden Berechtigungen erforderlich: Erstellen/Löschen/Ausführen benutzerdefinierter Verfahren, Erstellen/Ablegen/Einfügen/Auswählen von Tabellen. Möglicherweise müssen Sie auch Benutzermodusfunktionen erstellen, wenn Sie die Funktionen md5 und sha2 in Ihrer Adobe Campaign-Instanz verwenden möchten.
+Für die externe Datenbank sind folgende Berechtigungen erforderlich: Erstellen/Ablegen/Ausführen benutzerdefinierter Verfahren, Erstellen/Ablegen/Einfügen/Auswählen von Tabellen. Möglicherweise müssen Sie auch Benutzermodusfunktionen erstellen, wenn Sie die Funktionen md5 und sha2 in Ihrer Adobe Campaign-Instanz verwenden möchten.
 
 Stellen Sie sicher, dass Sie die richtige Zeitzone konfigurieren. Sie sollte mit der Zeitzone übereinstimmen, die in dem externen Konto eingestellt wird, das in der Adobe Campaign-Instanz erstellt wurde.
 

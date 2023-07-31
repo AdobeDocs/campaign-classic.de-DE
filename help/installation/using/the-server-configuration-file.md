@@ -2,14 +2,15 @@
 product: campaign
 title: Die Server-Konfigurationsdatei
 description: Die Server-Konfigurationsdatei
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-source-git-commit: acfe0c4139671fc3df69ff434ba307aaaaf70676
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '7955'
+source-wordcount: '7962'
 ht-degree: 41%
 
 ---
@@ -18,11 +19,11 @@ ht-degree: 41%
 
 
 
-Die Gesamtkonfiguration von Adobe Campaign wird im Abschnitt **serverConf.xml** -Datei, die sich im **conf** -Ordner des Installationsordners. In diesem Abschnitt werden alle verschiedenen Knoten und Parameter der **serverConf.xml** -Datei.
+Die Gesamtkonfiguration von Adobe Campaign wird im Abschnitt **serverConf.xml** -Datei, die sich in der **conf** -Ordner des Installationsordners. In diesem Abschnitt werden alle verschiedenen Knoten und Parameter der **serverConf.xml** -Datei.
 
 >[!NOTE]
 >
->Serverseitige Konfigurationen können nur von Adobe für Bereitstellungen durchgeführt werden, die von Adobe gehostet werden. Weitere Informationen zu den verschiedenen Implementierungen finden Sie im Abschnitt [Hosting-Modelle](../../installation/using/hosting-models.md) oder [diese Seite](../../installation/using/capability-matrix.md). Die Installations- und Konfigurationsschritte für gehostete und hybride Modelle werden in diesem Abschnitt beschrieben. [Abschnitt](../../installation/using/hosting-models.md).
+>Serverseitige Konfigurationen können nur von Adobe für Bereitstellungen durchgeführt werden, die von Adobe gehostet werden. Weitere Informationen zu den verschiedenen Implementierungen finden Sie im Abschnitt [Hosting-Modelle](../../installation/using/hosting-models.md) oder [diese Seite](../../installation/using/capability-matrix.md). Die Installations- und Konfigurationsschritte für gehostete und hybride Modelle werden in diesem Abschnitt beschrieben [Abschnitt](../../installation/using/hosting-models.md).
 
 Die ersten Parameter befinden sich innerhalb der **shared** Knoten. Diese beziehen sich auf die Instanz. Sie werden potenziell von allen nlserver-Befehlen verwendet (nlserver web, nlserver wfserver usw.). Die anderen Abschnitte beziehen sich auf einen bestimmten nlserver-Unterbefehl.
 
@@ -137,7 +138,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **Authentifizierung > XT
   </tr> 
   <tr> 
    <td> internalSecurityZone<br /> </td> 
-   <td> Sicherheitszone des internen Kontos: die zulässige Zone für das interne Konto.<br /> </td> 
+   <td> Sicherheitszone des internen Kontos: für das interne Konto autorisierter Bereich.<br /> </td> 
    <td> String <br /> </td> 
    <td> "lan"<br /> </td> 
   </tr> 
@@ -166,7 +167,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **dataStore** Knoten. Hi
   </tr> 
   <tr> 
    <td> extraSandboxedDirectories<br /> </td> 
-   <td> Zusätzliche Ordner mit Sandboxes: andere Pfade, die in die Sandbox hinzugefügt werden sollen (durch Kommas getrennt).<br /> </td> 
+   <td> Zusätzliche Ordner mit Sandbox: andere Pfade, die in die Sandbox hinzugefügt werden sollen (durch Kommas getrennt).<br /> </td> 
    <td> String <br /> </td> 
    <td> '/home/Customers/,/sftp/' <br /> </td> 
   </tr> 
@@ -178,7 +179,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **dataStore** Knoten. Hi
   </tr> 
   <tr> 
    <td> hosts<br /> </td> 
-   <td> DNS-Masken: Liste der DNS-Masken, die diese Instanz bereitstellt (durch Kommas getrennt, kann * und ? verwenden Muster).<br /> </td> 
+   <td> DNS-Masken: Liste der DNS-Masken, die von dieser Instanz bereitgestellt werden (durch Kommas getrennt, kann * und ? Muster).<br /> </td> 
    <td> String <br /> </td> 
    <td> '*'<br /> </td> 
   </tr> 
@@ -208,7 +209,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **dataStore** Knoten. Hi
   </tr> 
   <tr> 
    <td> useVault<br /> </td> 
-   <td> Geheimnisse im Vault speichern: Verwenden Sie Hashicorp Vault.<br /> </td> 
+   <td> Geheimnisse im Vault speichern: Hashicorp Vault verwenden.<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -232,7 +233,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **dataStore** Knoten. Hi
   </tr> 
   <tr> 
    <td> viewCacheTimeToLive<br /> </td> 
-   <td> Gültigkeitszeitraum des Ansichtscache: Zeitüberschreitung in Sekunden, nach der ein Cache-Eintrag ungültig gemacht wird. Ein negativer Wert bedeutet, dass der Cache immer invalidiert wird. "0", leere oder ungültige Werte werden als 60 betrachtet.<br /> </td> 
+   <td> Gültigkeitsdauer des Ansichtscache: Zeitüberschreitung in Sekunden, nach der ein Cache-Eintrag ungültig gemacht wird. Ein negativer Wert bedeutet, dass der Cache immer invalidiert wird. "0", leere oder ungültige Werte werden als 60 betrachtet.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
@@ -350,7 +351,7 @@ Im **dataStore > dataSource > dbcnx** -Knoten konfigurieren Sie die Verbindungse
   </tr> 
   <tr> 
    <td> timezone<br /> </td> 
-   <td> Zeitzone: see <a href="../../installation/using/time-zone-management.md" target="_blank">Zeitzonen-Management</a>.<br /> </td> 
+   <td> Zeitzone: siehe <a href="../../installation/using/time-zone-management.md" target="_blank">Zeitzonen-Management</a>.<br /> </td> 
    <td> String <br /> </td> 
    <td> </td> 
   </tr> 
@@ -362,7 +363,7 @@ Im **dataStore > dataSource > dbcnx** -Knoten konfigurieren Sie die Verbindungse
   </tr> 
   <tr> 
    <td> useTimestampTZ<br /> </td> 
-   <td> Datumsfelder mit Zeitzone: see <a href="../../installation/using/time-zone-management.md" target="_blank">Zeitzonen-Management</a>.<br /> </td> 
+   <td> Datumsfelder mit Zeitzone: siehe <a href="../../installation/using/time-zone-management.md" target="_blank">Zeitzonen-Management</a>.<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> </td> 
   </tr> 
@@ -514,13 +515,13 @@ Weitere Informationen finden Sie in diesem Abschnitt [Abschnitt](../../installat
  <tbody> 
   <tr> 
    <td> localDomain<br /> </td> 
-   <td> Domänenname: Standarddomänenname. Wird vom SMTP HELO-Befehl verwendet. Nutzt standardmäßig die Netzwerkparameter der ersten unter Windows erklärten Netzwerkschnittstelle oder parst die Datei /etc/resolv.conf unter Linux (Angabe des Domain-Namens oder Search-Eintrag). <br /> </td> 
+   <td> Domänenname: Standard-Domänenname. Wird vom SMTP HELO-Befehl verwendet. Nutzt standardmäßig die Netzwerkparameter der ersten unter Windows erklärten Netzwerkschnittstelle oder parst die Datei /etc/resolv.conf unter Linux (Angabe des Domain-Namens oder Search-Eintrag). <br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> nameServers<br /> </td> 
-   <td> DNS-Server: Kommagetrennte Liste von Domain-Namen-Servern (DNS). Siehe Hinweis unten.<br /> </td> 
+   <td> DNS-Server: kommagetrennte Liste von Domain-Name-Servern (DNS). Siehe Hinweis unten.<br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -547,7 +548,7 @@ Weitere Informationen finden Sie in diesem Abschnitt [Abschnitt](../../installat
 >wird vom MTA verwendet, um den E-Mail-Ausdrucksserver zu erhalten, der für
 >eine Domäne.
 >
->Wenn dieser Wert nicht definiert ist, sucht der MTA diese Informationen in der Host-Netzwerkkonfiguration. Wenn mehrere DNS-Adressen möglich sind, müssen die verschiedenen DNS-Adressen durch ein Komma getrennt werden (Beispiel: 212.155.207.1&#39;212.155.207.2). Wenn Ihr Versandserver über mehrere Netzwerkschnittstellen verfügt, ist die vom MTA verwendete DNS-Liste die erste. In diesem Fall wird empfohlen, die Variable **nameServer** -Parameter, um Unklarheiten zu vermeiden.
+>Wenn dieser Wert nicht definiert ist, sucht der MTA diese Informationen in der Host-Netzwerkkonfiguration. Wenn mehrere DNS möglich sind, müssen die verschiedenen DNS-Adressen durch Kommas getrennt werden (Beispiel: 212.155.207.1,212.155.207.2). Wenn Ihr Versandserver über mehrere Netzwerkschnittstellen verfügt, ist die vom MTA verwendete DNS-Liste die erste. In diesem Fall wird empfohlen, die Variable **nameServer** -Parameter, um Unklarheiten zu vermeiden.
 
 >[!CAUTION]
 >
@@ -621,13 +622,13 @@ Im Folgenden finden Sie die verschiedenen Parameter der **htmlToPdf** Knoten. Di
   </tr> 
   <tr> 
    <td> verbose<br /> </td> 
-   <td> Verbose mode: Starten Sie im ausführlichen Modus, um mögliche Fehler zu diagnostizieren.<br /> </td> 
+   <td> Verbose mode: Starten Sie im Modus verbose , um mögliche Fehler zu diagnostizieren.<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> waitTime<br /> </td> 
-   <td> Wartezeit auf einen Prozess: Verzögerung in Sekunden, wenn alle Prozesse gleichzeitig verwendet werden und darauf gewartet wird, dass ein Prozess freigegeben wird. Wenn diese Verzögerung überschritten wird, wird die Konvertierung angehalten und ein Fehler erzeugt. <br /> </td> 
+   <td> Verzögerung beim Warten auf einen Prozess: Verzögerung in Sekunden, wenn alle Prozesse gleichzeitig verwendet werden und darauf gewartet wird, dass ein Prozess freigegeben wird. Wenn diese Verzögerung überschritten wird, wird die Konvertierung angehalten und ein Fehler erzeugt. <br /> </td> 
    <td> Lang<br /> </td> 
    <td> 15<br /> </td> 
   </tr> 
@@ -894,7 +895,7 @@ Weitere Informationen finden Sie unter [Proxy-Verbindungskonfiguration](file-res
   </tr> 
   <tr> 
    <td> useSingleProxy<br /> </td> 
-   <td> Unique Proxy-Server: dieselbe Konfiguration für alle Proxytypen verwenden.<br /> </td> 
+   <td> Unique Proxy-Server: Verwenden Sie dieselbe Konfiguration für alle Proxytypen.<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -966,7 +967,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **threadPool** Knoten.
 
 Im Folgenden finden Sie die verschiedenen Parameter der **urlPermission** Knoten. Dies ist die Liste der URLs, auf die der JavaScript-Code zugreifen kann.
 
-Liste der Domänen und regulären Ausdrücke, die angeben, ob eine URL im JavaScript-Code vom Adobe Campaign-Server verwendet werden kann oder nicht.
+Liste der Domänen und regulären Ausdrücke, die angeben, ob eine im JavaScript-Code aufgefundene URL vom Adobe Campaign-Server verwendet werden kann oder nicht.
 
 Wenn die URL nicht gefunden werden kann, wird die Standardaktion entsprechend dem angegebenen Standardmodus ausgeführt.
 
@@ -990,7 +991,7 @@ Weitere Informationen finden Sie unter [Schutz der ausgehenden Verbindung](../..
   </tr> 
   <tr> 
    <td> debugTrace<br /> </td> 
-   <td> Debugging-Trace des URL-Auswahlmechanismus: gibt während der URL-Überprüfung zusätzliche Nachrichten aus.<br /> </td> 
+   <td> Debugging-Trace des URL-Auswahlmechanismus: Gibt während des URL-Verifizierungsprozesses zusätzliche Meldungen aus.<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -1014,12 +1015,12 @@ Weitere Informationen finden Sie unter [Schutz der ausgehenden Verbindung](../..
  <tbody> 
   <tr> 
    <td> dnsSuffix<br /> </td> 
-   <td> Domänenname oder übergeordnete Domäne, die von der URL betroffen sind: die Domäne der URL vollständig oder teilweise zu überprüfen, um die Verifizierung zu beschleunigen. Die URL wird nur in Bezug auf den regulären Ausdruck überprüft, wenn die Domäne dsnSuffix enthält.<br /> </td> 
+   <td> Domänenname oder übergeordnete Domäne, die von der URL betroffen sind: zur Beschleunigung der Verifizierung die Domäne der URL, die vollständig oder teilweise überprüft werden soll. Die URL wird nur in Bezug auf den regulären Ausdruck überprüft, wenn die Domäne dsnSuffix enthält.<br /> </td> 
    <td> String <br /> </td> 
   </tr> 
   <tr> 
    <td> urlRegEx<br /> </td> 
-   <td> Regulärer Ausdruck zur Verfeinerung der Validierung von URLs, die zu dieser Domäne gehören: regulären Ausdruck, den die URL überprüfen muss, sollte sie mit dnsSuffix übereinstimmen.<br /> </td> 
+   <td> Regulärer Ausdruck zur Verfeinerung der Validierung von URLs, die zu dieser Domäne gehören: regulärer Ausdruck, den die URL überprüfen muss, falls er mit dnsSuffix übereinstimmt.<br /> </td> 
    <td> String <br /> </td> 
   </tr> 
  </tbody> 
@@ -1027,7 +1028,7 @@ Weitere Informationen finden Sie unter [Schutz der ausgehenden Verbindung](../..
 
 Wenn ein Datensatz **dnsSuffix** aber nicht **urlRegEx**, wird der folgende Datensatz geprüft.
 
-Um beispielsweise den Zugriff auf alle URLs der Domain &quot;business.com&quot;zu erlauben, können wir zwei Datensätze definieren:
+Um beispielsweise den Zugriff auf alle URLs der Domain business.com zu erlauben, können wir zwei Datensätze definieren:
 
 dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;http://.&#42;&quot;
 
@@ -1117,7 +1118,7 @@ Weitere Informationen finden Sie unter [Aktivieren der E-Mail-Archivierung (vor 
   </tr> 
   <tr> 
    <td> compressBatchSize<br /> </td> 
-   <td> Größe eines komprimierten Archivs: maximale Anzahl von Dateien in einem komprimierten Archiv.<br /> </td> 
+   <td> Größe eines komprimierten Archivs: Maximale Anzahl an Dateien in einem komprimierten Archiv.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 10000<br /> </td> 
   </tr> 
@@ -1129,7 +1130,7 @@ Weitere Informationen finden Sie unter [Aktivieren der E-Mail-Archivierung (vor 
   </tr> 
   <tr> 
    <td> expirationDelay<br /> </td> 
-   <td> Verzögerung vor der automatischen Archivierung nicht verarbeiteter E-Mails: Anzahl der Tage vor der Archivierung nicht verarbeiteter E-Mails.<br /> </td> 
+   <td> Verzögerung vor der automatischen Archivierung nicht verarbeiteter E-Mails: Anzahl der Tage, bevor nicht verarbeitete E-Mails archiviert werden.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 2<br /> </td> 
   </tr> 
@@ -1141,13 +1142,13 @@ Weitere Informationen finden Sie unter [Aktivieren der E-Mail-Archivierung (vor 
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
-   <td> Warnung zur Speicherbelegung: Warnhinweis bezüglich der von einem bestimmten Prozess verbrauchten RAM (in MB).<br /> </td> 
+   <td> Warnhinweis zur Speicherbelegung: Warnhinweis bezüglich der von einem bestimmten Prozess verbrauchten RAM (in MB).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> Warnung zur Speicherbelegung: Warnung bezüglich der von einem bestimmten Prozess verbrauchten RAM (in MB).<br /> </td> 
+   <td> Warnung zur Speicherbelegung: Warnhinweis bezüglich der von einem bestimmten Prozess verbrauchten RAM (in MB).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
@@ -1177,13 +1178,13 @@ Weitere Informationen finden Sie unter [Aktivieren der E-Mail-Archivierung (vor 
   </tr> 
   <tr> 
    <td> smtpBccAddress<br /> </td> 
-   <td> Archivieren des Zielziels<br /> </td> 
+   <td> Zielziel archivieren<br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> smtpEnableTLS<br /> </td> 
-   <td> Aktivieren Sie die SMTPS-Unterstützung: Aktiviert den Versand von E-Mails im abgesicherten Modus (STARTTLS/SMTPS), wenn er vom Remote-Server unterstützt wird.<br /> </td> 
+   <td> SMTPS-Unterstützung aktivieren: Aktiviert den Versand von E-Mails im abgesicherten Modus (STARTTLS/SMTPS), wenn dieser vom Remote-Server unterstützt wird.<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -1236,7 +1237,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **inMail** Knoten. Dies 
   </tr> 
   <tr> 
    <td> checkInstanceName<br /> </td> 
-   <td> Überprüfen Sie den Instanznamen: Wenn "true", muss der Name der Adobe Campaign-Instanz, der in den Nachrichten-ID-Headern enthalten ist, mit dem der aktuellen Instanz übereinstimmen. <br /> </td> 
+   <td> Instanzname überprüfen: Wenn "true", muss der Name der Adobe Campaign-Instanz, die in den Nachrichten-ID-Headern enthalten ist, mit dem der aktuellen Instanz übereinstimmen. <br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> true<br /> </td> 
   </tr> 
@@ -1248,7 +1249,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **inMail** Knoten. Dies 
   </tr> 
   <tr> 
    <td> errorForwardAddress<br /> </td> 
-   <td> Fehleradresse: Standardadresse zur Übertragung ungültiger E-Mails (ungültige MIME-Kodierung). <br /> </td> 
+   <td> Adresse für Fehler: Standardadresse zur Übertragung ungültiger E-Mails (ungültige MIME-Kodierung). <br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -1272,7 +1273,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **inMail** Knoten. Dies 
   </tr> 
   <tr> 
    <td> maxBroadLog<br /> </td> 
-   <td> Maximale Anzahl der zu aktualisierenden Protokolle: definiert die maximale Anzahl von Protokollmeldungen, die im Speicher aufbewahrt werden sollen, bevor die Datenbank aktualisiert wird.<br /> </td> 
+   <td> Maximale Anzahl zu aktualisierender Logs: definiert die maximale Anzahl von Protokollmeldungen, die im Speicher aufbewahrt werden sollen, bevor die Datenbank aktualisiert wird.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 20<br /> </td> 
   </tr> 
@@ -1284,13 +1285,13 @@ Im Folgenden finden Sie die verschiedenen Parameter der **inMail** Knoten. Dies 
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
-   <td> Warnung zur Speicherbelegung: Warnhinweis bezüglich der von einem bestimmten Prozess verbrauchten RAM (in MB).<br /> </td> 
+   <td> Warnhinweis zur Speicherbelegung: Warnhinweis bezüglich der von einem bestimmten Prozess verbrauchten RAM (in MB).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> Warnung zur Speicherbelegung: Warnung bezüglich der von einem bestimmten Prozess verbrauchten RAM (in MB).<br /> </td> 
+   <td> Warnung zur Speicherbelegung: Warnhinweis bezüglich der von einem bestimmten Prozess verbrauchten RAM (in MB).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
@@ -1410,13 +1411,13 @@ Weitere Informationen finden Sie unter [Interaction - Datenpuffer](../../install
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
-   <td> Warnung zur Speicherbelegung: Warnhinweis bezüglich der von einem bestimmten Prozess verbrauchten RAM (in MB).<br /> </td> 
+   <td> Warnhinweis zur Speicherbelegung: Warnhinweis bezüglich der von einem bestimmten Prozess verbrauchten RAM (in MB).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> Warnung zur Speicherbelegung: Warnung bezüglich der von einem bestimmten Prozess verbrauchten RAM (in MB).<br /> </td> 
+   <td> Warnung zur Speicherbelegung: Warnhinweis bezüglich der von einem bestimmten Prozess verbrauchten RAM (in MB).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
@@ -1487,7 +1488,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **mta** Knoten. Dies ist
   </tr> 
   <tr> 
    <td> dataLogPath<br /> </td> 
-   <td> Pfad der gesendeten E-Mails speichern: Wenn nicht leer, der Pfad, in dem alle Quelldateien gesendeter E-Mails gespeichert werden. <br /> </td> 
+   <td> Pfad der gesendeten E-Mails speichern: Wenn nicht leer, wird der Pfad gespeichert, in dem alle Quelldateien gesendeter E-Mails gespeichert werden. <br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -1505,7 +1506,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **mta** Knoten. Dies ist
   </tr> 
   <tr> 
    <td> errorPeriodSec<br /> </td> 
-   <td> Häufigkeit der Fehlerstatistiken: Zeit zwischen der Erstellung von Statistiken und der Speicherung in der Datenbank. <br /> </td> 
+   <td> Fehlerstatistiken: Zeit zwischen der Erstellung von Statistiken und der Speicherung in der Datenbank. <br /> </td> 
    <td> Lang<br /> </td> 
    <td> 300<br /> </td> 
   </tr> 
@@ -1535,13 +1536,13 @@ Im Folgenden finden Sie die verschiedenen Parameter der **mta** Knoten. Dies ist
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
-   <td> Warnung zur Speicherbelegung: Warnhinweis bezüglich der von einem bestimmten Prozess verbrauchten RAM (in MB).<br /> </td> 
+   <td> Warnhinweis zur Speicherbelegung: Warnhinweis bezüglich der von einem bestimmten Prozess verbrauchten RAM (in MB).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> Warnung zur Speicherbelegung: Warnung bezüglich der von einem bestimmten Prozess verbrauchten RAM (in MB).<br /> </td> 
+   <td> Warnung zur Speicherbelegung: Warnhinweis bezüglich der von einem bestimmten Prozess verbrauchten RAM (in MB).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
@@ -1553,7 +1554,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **mta** Knoten. Dies ist
   </tr> 
   <tr> 
    <td> minErrorsToLog<br /> </td> 
-   <td> Zu berücksichtigender Fehlerschwellenwert: Fehlerstatistiken werden für einen bestimmten Pfad nicht generiert, wenn die Gesamtzahl der Fehler für den von errorPeriodSec angegebenen Zeitraum strikt unter dem Schwellenwert liegt.<br /> </td> 
+   <td> Zu berücksichtigender Fehlerschwellenwert: Fehlerstatistiken werden für einen gegebenen Pfad nicht generiert, wenn die Gesamtzahl der Fehler für den von errorPeriodSec angegebenen Zeitraum strikt unter dem Schwellenwert liegt.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1<br /> </td> 
   </tr> 
@@ -1565,7 +1566,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **mta** Knoten. Dies ist
   </tr> 
   <tr> 
    <td> notifRelay<br /> </td> 
-   <td> Benachrichtigungsweiterleitung: HostName:Anschluss, der zum Weiterleiten von Benachrichtigungen verwendet wird.<br /> </td> 
+   <td> Benachrichtigungsweiterleitung: HostName:Port, der zum Weiterleiten von Benachrichtigungen verwendet wird.<br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -1577,13 +1578,13 @@ Im Folgenden finden Sie die verschiedenen Parameter der **mta** Knoten. Dies ist
   </tr> 
   <tr> 
    <td> purgeDataLogDelay<br /> </td> 
-   <td> Verzögerung vor dem Löschen archivierter E-Mails: Anzahl der Tage vor der Bereinigung archivierter E-Mails im Verzeichnis, das in dataLogPath angegeben ist.<br /> </td> 
+   <td> Verzögerung vor dem Löschen archivierter E-Mails: Anzahl der Tage, bevor archivierte E-Mails im in dataLogPath angegebenen Verzeichnis gelöscht werden.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 15<br /> </td> 
   </tr> 
   <tr> 
    <td> retryLostMessages<br /> </td> 
-   <td> Verlorene Nachrichten wiederholen: Teile von Sendungen werden wiederholt, wenn der untergeordnete Prozess tot ist.<br /> </td> 
+   <td> Verlorene Nachrichten erneut versuchen: Teile von Sendungen werden erneut versucht, wenn der untergeordnete Prozess tot ist.<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> true<br /> </td> 
   </tr> 
@@ -1614,7 +1615,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **mta** Knoten. Dies ist
   </tr> 
   <tr> 
    <td> statServerTLSSupport<br /> </td> 
-   <td> TLS nach Domain aktivieren: aktiviert die durch MX konfigurierbaren TLS (erfordert einen aktuellen Statistikserver).<br /> </td> 
+   <td> TLS nach Domäne aktivieren: aktiviert die durch MX konfigurierbaren TLS (erfordert einen aktuellen Statistikserver).<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> true <br /> </td> 
   </tr> 
@@ -1632,19 +1633,19 @@ Im Folgenden finden Sie die verschiedenen Parameter der **mta** Knoten. Dies ist
   </tr>
   <tr> 
    <td> verifyMode<br /> </td> 
-   <td> Überprüfungsmodus: aktiviert den Überprüfungsmodus (keine physische Übertragung von Nachrichten; für Simulationen und Tests verwendet werden).<br /> </td> 
+   <td> Überprüfungsmodus: Aktiviert den Überprüfungsmodus (keine physische Übertragung von Nachrichten; für Simulation und Tests verwendet).<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> workingPath<br /> </td> 
-   <td> Arbeitsverzeichnis: Speicherort der temporären Dateien, die vom MTA zur Kommunikation mit seinen untergeordneten Prozessen verwendet werden.<br /> </td> 
+   <td> Arbeitsverzeichnis: Speicherort temporärer Dateien, die vom MTA zur Kommunikation mit seinen untergeordneten Prozessen verwendet werden.<br /> </td> 
    <td> String <br /> </td> 
    <td> '$(XTK_INSTALL_DIR)/var/$(INSTANCE_NAME)/mta/' <br /> </td> 
   </tr> 
   <tr> 
    <td> xMailer<br /> </td> 
-   <td> X-Mailer-Feld: Wert des Felds 'X-Mailer' im SMTP-Mail-Header.<br /> </td> 
+   <td> X-Mailer Feld: Wert des Felds 'X-Mailer' im SMTP-Mail-Header.<br /> </td> 
    <td> String <br /> </td> 
    <td> 'nlserver, Build $(PRODUCT_VERSION)'<br /> </td> 
   </tr>  
@@ -1667,7 +1668,7 @@ Im **cache** Knoten konfigurieren Sie die folgenden Parameter. Dies ist die Konf
  <tbody> 
   <tr> 
    <td> maxPeriodSec<br /> </td> 
-   <td> Recycling nach: Punkt in Sekunden, nach dem die Datei automatisch aus dem Cache gelöscht wird, um den Speicher wiederherzustellen.<br /> </td> 
+   <td> Recycled after: Zeitraum, angegeben in Sekunden, nach dem die Datei automatisch aus dem Cache gelöscht wird, um den Speicher wiederherzustellen.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 244800<br /> </td> 
   </tr> 
@@ -1778,7 +1779,7 @@ Weitere Informationen finden Sie in diesem Abschnitt [Abschnitt](../../installat
 
 Im **mta > child** Knoten konfigurieren Sie die folgenden Parameter. Dies ist die Konfiguration der untergeordneten Server.
 
-Weitere Informationen finden Sie unter [Optimierung des E-Mail-Versands](../../installation/using/email-deliverability.md#email-sending-optimization).
+Weitere Informationen finden Sie unter [E-Mail-Versandoptimierung](../../installation/using/email-deliverability.md#email-sending-optimization).
 
 <table> 
  <thead> 
@@ -1822,7 +1823,7 @@ Weitere Informationen finden Sie unter [Optimierung des E-Mail-Versands](../../i
   </tr> 
   <tr> 
    <td> maxWaitingMessages<br /> </td> 
-   <td> Ausstehende Nachrichten: Maximale Anzahl an Nachrichten, die im Speicher warten, um zugestellt zu werden. <br /> </td> 
+   <td> Ausstehende Nachrichten: Maximale Anzahl an Nachrichten, die im Speicher auf ihre Zustellung warten. <br /> </td> 
    <td> Lang<br /> </td> 
    <td> 2000<br /> </td> 
   </tr> 
@@ -1912,7 +1913,7 @@ Weitere Informationen finden Sie unter [Liste der zu verwendenden IP-Adressen](.
   </tr> 
   <tr> 
    <td> name<br /> </td> 
-   <td> Logischer Name: Namen, die von Benutzern mit der Affinität verknüpft sind. Namen werden durch Semikolons getrennt.<br /> </td> 
+   <td> Logischer Name: von Benutzern mit der Affinität verknüpfte Namen. Namen werden durch Semikolons getrennt.<br /> </td> 
    <td> String <br /> </td> 
   </tr> 
  </tbody> 
@@ -2080,13 +2081,13 @@ Im Folgenden finden Sie die verschiedenen Parameter der **pipelined** Knoten. Di
   </tr> 
   <tr> 
    <td> dumpStatePeriodSec<br /> </td> 
-   <td> Status-Speicherzeitraum: Häufigkeit, mit der die internen Informationen des Prozesses in einer Datei gespeichert werden. Inaktiv, wenn 0. <br /> </td> 
+   <td> Speicherzeitraum des Status: Häufigkeit, mit der die internen Informationen des Prozesses in einer Datei gespeichert werden. Inaktiv, wenn 0. <br /> </td> 
    <td> Lang<br /> </td> 
    <td> 0<br /> </td> 
   </tr> 
   <tr> 
    <td> forcedPipelineEndpoint<br /> </td> 
-   <td> Listening-URL: erzwingen die Listening-URL der Pipeline-Dienste. <br /> </td> 
+   <td> Listening-URL: Erzwingen Sie die Listening-URL der Pipeline-Dienste. <br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -2098,13 +2099,13 @@ Im Folgenden finden Sie die verschiedenen Parameter der **pipelined** Knoten. Di
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
-   <td> Warnung zur Speicherbelegung: Warnhinweis bezüglich der von einem bestimmten Prozess verbrauchten RAM (in MB).<br /> </td> 
+   <td> Warnhinweis zur Speicherbelegung: Warnhinweis bezüglich der von einem bestimmten Prozess verbrauchten RAM (in MB).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> Warnung zur Speicherbelegung: Warnung bezüglich der von einem bestimmten Prozess verbrauchten RAM (in MB).<br /> </td> 
+   <td> Warnung zur Speicherbelegung: Warnhinweis bezüglich der von einem bestimmten Prozess verbrauchten RAM (in MB).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
@@ -2122,7 +2123,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **pipelined** Knoten. Di
   </tr> 
   <tr> 
    <td> pointerFlushPeriodSec<br /> </td> 
-   <td> Verzögerung vor der Speicherung des Zeigers: Der Zeiger wird mindestens einmal während dieses Zeitraums in der Datenbank gespeichert (nützlich bei geringer Aktivität).<br /> </td> 
+   <td> Verzögerung vor Speicherung des Zeigers: Der Zeiger wird während dieser Zeit mindestens einmal in der Datenbank gespeichert (nützlich bei geringer Aktivität).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 5<br /> </td> 
   </tr> 
@@ -2152,7 +2153,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **pipelined** Knoten. Di
   </tr> 
   <tr> 
    <td> retryValiditySec<br /> </td> 
-   <td> Nach diesem Zeitraum wird abgebrochen: das Ereignis abbrechen, wenn die Verarbeitung nach diesem Zeitraum weiterhin fehlschlägt.<br /> </td> 
+   <td> Nach diesem Zeitraum beenden: Verlassen Sie das Ereignis, wenn die Verarbeitung nach diesem Zeitraum weiterhin fehlschlägt.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 300<br /> </td> 
   </tr> 
@@ -2181,7 +2182,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **Reparatur** Knoten. Di
  <tbody> 
   <tr> 
    <td> reparierenActionDelayMin<br /> </td> 
-   <td> Reparaturmodul für Versandaktionen: Verzögerung (in Minuten), nach der Sendungen vom Reparaturmodul verarbeitet werden können. <br /> </td> 
+   <td> Reparaturmodul für Versandaktionen: Verzögerung (in Minuten), nach der Versandaktionen vom Reparaturmodul verarbeitet werden können. <br /> </td> 
    <td> Lang<br /> </td> 
    <td> 60<br /> </td> 
   </tr> 
@@ -2381,13 +2382,13 @@ Im Folgenden finden Sie die verschiedenen Parameter der **sms** Knoten. Dies ist
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
-   <td> Warnung zur Speicherbelegung: Warnhinweis bezüglich der von einem bestimmten Prozess verbrauchten RAM (in MB).<br /> </td> 
+   <td> Warnhinweis zur Speicherbelegung: Warnhinweis bezüglich der von einem bestimmten Prozess verbrauchten RAM (in MB).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> Warnung zur Speicherbelegung: Warnung bezüglich der von einem bestimmten Prozess verbrauchten RAM (in MB).<br /> </td> 
+   <td> Warnung zur Speicherbelegung: Warnhinweis bezüglich der von einem bestimmten Prozess verbrauchten RAM (in MB).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
@@ -2405,7 +2406,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **sms** Knoten. Dies ist
   </tr> 
   <tr> 
    <td> reloadPeriod<br /> </td> 
-   <td> Häufigkeit der Kontoneuladung: Datenbank-Neuladungshäufigkeit der abzurufenden Konten.<br /> </td> 
+   <td> Häufigkeit der Kontoneuladungen: Häufigkeit der Neuladungen der zu abzurufenden Konten.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
@@ -2417,7 +2418,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **sms** Knoten. Dies ist
   </tr> 
   <tr> 
    <td> srReadDelay<br /> </td> 
-   <td> Anzahl der Sekunden für die SR-Verarbeitung: nur SRs mit einem Wiederherstellungsdatum, das vor der aktuellen Zeit liegt, abzüglich der von srReadDelay angegebenen Dauer in Sekunden. <br /> </td> 
+   <td> Anzahl der Sekunden für die SR-Verarbeitung: Nur SRs mit einem Wiederherstellungsdatum, das vor der aktuellen Zeit liegt, abzüglich der Dauer in Sekunden, die von srReadDelay angegeben wird. <br /> </td> 
    <td> Lang<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
@@ -2487,13 +2488,13 @@ Im Folgenden finden Sie die verschiedenen Parameter der **stat** Knoten. Dies is
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
-   <td> Warnung zur Speicherbelegung: Warnhinweis bezüglich der von einem bestimmten Prozess verbrauchten RAM (in MB).<br /> </td> 
+   <td> Warnhinweis zur Speicherbelegung: Warnhinweis bezüglich der von einem bestimmten Prozess verbrauchten RAM (in MB).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> Warnung zur Speicherbelegung: Warnung bezüglich der von einem bestimmten Prozess verbrauchten RAM (in MB).<br /> </td> 
+   <td> Warnung zur Speicherbelegung: Warnhinweis bezüglich der von einem bestimmten Prozess verbrauchten RAM (in MB).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
@@ -2564,13 +2565,13 @@ Im Folgenden finden Sie die verschiedenen Parameter der **syslogd** Knoten. Dies
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
-   <td> Warnung zur Speicherbelegung: Warnhinweis bezüglich der von einem bestimmten Prozess verbrauchten RAM (in MB).<br /> </td> 
+   <td> Warnhinweis zur Speicherbelegung: Warnhinweis bezüglich der von einem bestimmten Prozess verbrauchten RAM (in MB).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> Warnung zur Speicherbelegung: Warnung bezüglich der von einem bestimmten Prozess verbrauchten RAM (in MB).<br /> </td> 
+   <td> Warnung zur Speicherbelegung: Warnhinweis bezüglich der von einem bestimmten Prozess verbrauchten RAM (in MB).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
@@ -2629,25 +2630,25 @@ Im Folgenden finden Sie die verschiedenen Parameter der **tracking** Knoten. Die
   </tr> 
   <tr> 
    <td> dedupOpenPeriodMin<br /> </td> 
-   <td> Öffnungen deduplizieren: Entfernen Sie doppelte Öffnungs-Trackinglogs, um die Auswirkungen von E-Mail-Vorschauen in E-Mail-Lesern wie Outlook zu begrenzen.<br /> </td> 
+   <td> Öffnungen deduplizieren: Entfernen Sie doppelte offene Trackinglogs, um die Auswirkungen von E-Mail-Vorschauen in E-Mail-Lesern wie Outlook zu begrenzen.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1<br /> </td> 
   </tr> 
   <tr> 
    <td> errorIgnorePercent<br /> </td> 
-   <td> Bis zu X % der Fehler ignorieren: Aktualisieren Sie die Trackingindikatoren nicht, solange das Verhältnis der nicht bereits berücksichtigten Zeitschriften diesen Wert nicht erreicht. <br /> </td> 
+   <td> Ignorieren Sie bis zu X % der Fehler: Aktualisieren Sie die Trackingindikatoren nicht, solange das Verhältnis der nicht bereits berücksichtigten Journale diesen Wert nicht erreicht. <br /> </td> 
    <td> Byte<br /> </td> 
    <td> 1<br /> </td> 
   </tr> 
   <tr> 
    <td> errorIgnorePeriod<br /> </td> 
-   <td> Aktualisieren Sie die Fehlerindikatoren: maximale Dauer, bevor Fehlerindikatoren neu berechnet werden.<br /> </td> 
+   <td> Aktualisieren Sie die Fehlerindikatoren: Maximale Dauer, bevor die Fehlerindikatoren neu berechnet werden.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 86400<br /> </td> 
   </tr> 
   <tr> 
    <td> indicatorsDuration<br /> </td> 
-   <td> Kennzahlen berechnen während: Dauer nach dem Gültigkeitsdatum eines Versands, nach dem die konsolidierten Indikatoren nicht mehr berechnet werden.<br /> </td> 
+   <td> Kennzahlen berechnen während: Dauer nach dem Gültigkeitsdatum eines Versands, nach dem konsolidierte Kennzahlen nicht mehr berechnet werden.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 2592000<br /> </td> 
   </tr> 
@@ -2665,25 +2666,25 @@ Im Folgenden finden Sie die verschiedenen Parameter der **tracking** Knoten. Die
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
-   <td> Warnung zur Speicherbelegung: Warnhinweis bezüglich der von einem bestimmten Prozess verbrauchten RAM (in MB).<br /> </td> 
+   <td> Warnhinweis zur Speicherbelegung: Warnhinweis bezüglich der von einem bestimmten Prozess verbrauchten RAM (in MB).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> Warnung zur Speicherbelegung: Warnung bezüglich der von einem bestimmten Prozess verbrauchten RAM (in MB).<br /> </td> 
+   <td> Warnung zur Speicherbelegung: Warnhinweis bezüglich der von einem bestimmten Prozess verbrauchten RAM (in MB).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
   <tr> 
    <td> phishbowlServiceAPIKey<br /> </td> 
-   <td> API-Schlüssel für die Phishbowl Service Endpoint-Integration. Dadurch wird die Umleitung von falsch formatierten URLs geschützt, die aus älteren Builds generiert wurden. <br /> </td> 
+   <td> API-Schlüssel für die Phishbowl Service Endpoint-Integration. Dadurch wird die Umleitung von falsch formatierten URLs, die aus älteren Builds generiert wurden, geschützt. <br /> </td> 
    <td> Lang<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> phishbowlServiceEndpoint<br /> </td> 
-   <td> Endpunkt für die Phishbowl Service-Endpoint-Integration. Dadurch wird die Umleitung von falsch formatierten URLs geschützt, die aus älteren Builds generiert wurden.<br /> </td> 
+   <td> Endpunkt für die Phishbowl Service-Endpoint-Integration. Dadurch wird die Umleitung von falsch formatierten URLs, die aus älteren Builds generiert wurden, geschützt.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -2701,7 +2702,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **tracking** Knoten. Die
   </tr> 
   <tr> 
    <td> trackingIgnorePercent<br /> </td> 
-   <td> Ignorieren Sie bis zu X % des Trackings: Aktualisieren Sie die Trackingindikatoren nicht, solange das Verhältnis der nicht bereits berücksichtigten Zeitschriften diesen Wert nicht erreicht.<br /> </td> 
+   <td> Ignorieren Sie bis zu X % des Trackings: Aktualisieren Sie die Trackingindikatoren nicht, solange das Verhältnis der nicht bereits berücksichtigten Journale diesen Wert nicht erreicht.<br /> </td> 
    <td> Byte<br /> </td> 
    <td> 1<br /> </td> 
   </tr> 
@@ -2754,31 +2755,31 @@ Im Folgenden finden Sie die verschiedenen Parameter der **trackinglogd** Knoten.
   </tr> 
   <tr> 
    <td> maxCreateFileRetry<br /> </td> 
-   <td> Maximale Wiederholungsversuche beim Schreiben: maximale Anzahl von Dateien, die erstellt werden können, wenn das Schreiben in Protokolldateien fehlschlägt.<br /> </td> 
+   <td> Maximale Wiederholungsversuche: Maximale Anzahl an Dateien, die im Falle eines Schreibfehlers in Protokolldateien erstellt werden können.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 5<br /> </td> 
   </tr> 
   <tr> 
    <td> maxLogsSizeOnDiskMb<br /> </td> 
-   <td> Maximale Protokollgröße: maximaler Speicherplatz, der von Protokollen auf der Festplatte verwendet wird (in MB). Darf nicht kleiner als 100 MB sein. <br /> </td> 
+   <td> Maximale Protokollgröße: Maximaler Speicherplatz, der von Protokollen auf der Festplatte (in MB) verwendet wird. Darf nicht kleiner als 100 MB sein. <br /> </td> 
    <td> Lang<br /> </td> 
    <td> 500<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
-   <td> Warnung zur Speicherbelegung: Warnhinweis bezüglich der von einem bestimmten Prozess verbrauchten RAM (in MB).<br /> </td> 
+   <td> Warnhinweis zur Speicherbelegung: Warnhinweis bezüglich der von einem bestimmten Prozess verbrauchten RAM (in MB).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> Warnung zur Speicherbelegung: Warnung bezüglich der von einem bestimmten Prozess verbrauchten RAM (in MB).<br /> </td> 
+   <td> Warnung zur Speicherbelegung: Warnhinweis bezüglich der von einem bestimmten Prozess verbrauchten RAM (in MB).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
   <tr> 
    <td> maxSharedLogs<br /> </td> 
-   <td> Maximale Protokollanzahl: Maximale Anzahl der Protokolle, die im gemeinsamen Speicher gespeichert sind. Darf nicht weniger als 10000 sein. <br /> </td> 
+   <td> Maximale Protokollanzahl: Maximale Anzahl der im gemeinsamen Speicher gespeicherten Protokolle. Darf nicht weniger als 10000 sein. <br /> </td> 
    <td> Lang<br /> </td> 
    <td> 25000<br /> </td> 
   </tr> 
@@ -2857,13 +2858,13 @@ Weitere Informationen finden Sie in diesem Abschnitt [Abschnitt](configuring-cam
   </tr> 
   <tr> 
    <td> controlPort<br /> </td> 
-   <td> Überwachungsanschluss von Tomcat: verweisen auf <a href="configure-tomcat.md" target="_blank">Tomcat konfigurieren</a>.<br /> </td> 
+   <td> Überwachungsanschluss von Tomcat: siehe <a href="configure-tomcat.md" target="_blank">Tomcat konfigurieren</a>.<br /> </td> 
    <td> Kurz<br /> </td> 
    <td> 8005<br /> </td> 
   </tr> 
   <tr> 
    <td> httpPort<br /> </td> 
-   <td> Tomcat HTTP-Listening-Port: verweisen auf <a href="configure-tomcat.md" target="_blank">Tomcat konfigurieren</a>.<br /> </td> 
+   <td> Tomcat HTTP-Listening-Anschluss, siehe <a href="configure-tomcat.md" target="_blank">Tomcat konfigurieren</a>.<br /> </td> 
    <td> Kurz<br /> </td> 
    <td> 8080<br /> </td> 
   </tr> 
@@ -2881,13 +2882,13 @@ Weitere Informationen finden Sie in diesem Abschnitt [Abschnitt](configuring-cam
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
-   <td> Warnung zur Speicherbelegung: Warnhinweis bezüglich der von einem bestimmten Prozess verbrauchten RAM (in MB).<br /> </td> 
+   <td> Warnhinweis zur Speicherbelegung: Warnhinweis bezüglich der von einem bestimmten Prozess verbrauchten RAM (in MB).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> Warnung zur Speicherbelegung: Warnhinweis bezüglich der von einem bestimmten Prozess verbrauchten RAM (in MB)<br /> </td> 
+   <td> Warnung zur Speicherbelegung: Warnhinweis bezüglich der von einem bestimmten Prozess verbrauchten RAM-Menge (in MB)<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 
@@ -2940,7 +2941,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **web > jsp** Knoten. Di
   </tr> 
   <tr> 
    <td> downloadPath<br /> </td> 
-   <td> Ordner herunterladen: Download-Pfad der Installationsprogramme für die Clientkonsolen.<br /> </td> 
+   <td> Download-Ordner: Download-Pfad der Installationsprogramme für die Clientkonsolen.<br /> </td> 
    <td> String <br /> </td> 
    <td> '$(XTK_INSTALL_DIR)/datakit/nl/eng/jsp'<br /> </td> 
   </tr> 
@@ -3052,7 +3053,7 @@ Weitere Informationen finden Sie in diesem Abschnitt [Abschnitt](../../installat
   </tr> 
   <tr> 
    <td> forbiddenCharsInAuthority<br /> </td> 
-   <td> Verbotene Zeichen (Domäne): Liste der unzulässigen Zeichen im Abschnitt "Authority"eines URI.<br /> </td> 
+   <td> Verbotene Zeichen (Domäne): Liste der unzulässigen Zeichen im Abschnitt "Autorität"eines URI.<br /> </td> 
    <td> String <br /> </td> 
    <td> '.?#@/:' <br /> </td> 
   </tr> 
@@ -3064,7 +3065,7 @@ Weitere Informationen finden Sie in diesem Abschnitt [Abschnitt](../../installat
   </tr> 
   <tr> 
    <td> modDir<br /> </td> 
-   <td> Wert der Moduloption "mod_dir": Liste der Dateien, die bei einer Abfrage zu einem Ordner verwendet werden sollen.<br /> </td> 
+   <td> Wert der Moduloption "mod_dir": Liste der Dateien, die bei einer Abfrage in einem Ordner verwendet werden sollen.<br /> </td> 
    <td> String <br /> </td> 
    <td> 'index.md' <br /> </td> 
   </tr> 
@@ -3105,7 +3106,7 @@ Weitere Informationen finden Sie unter [Dynamische Seitensicherheit und Relais](
  <tbody> 
   <tr> 
    <td> IPMask<br /> </td> 
-   <td> Autorisierte IPs: Kommagetrennte Liste der Quell-IP-Adressen, die den Relais für diese Maske verwenden dürfen.<br /> </td> 
+   <td> Autorisierte IPs: kommagetrennte Liste der Quell-IP-Adressen, die den Relais für diese Maske verwenden dürfen.<br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -3117,7 +3118,7 @@ Weitere Informationen finden Sie unter [Dynamische Seitensicherheit und Relais](
   </tr> 
   <tr> 
    <td> hostMask<br /> </td> 
-   <td> DNS-Alias für die Weiterleitung: Kommagetrennte Liste von DNS-Alias Masken zum Weiterleiten (z. B.: '*.adobe.com').<br /> </td> 
+   <td> DNS-Alias für die Weiterleitung: kommagetrennte Liste von DNS-Alias, die zur Weiterleitung verwendet werden (z. B. '*.adobe.com').<br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -3129,13 +3130,13 @@ Weitere Informationen finden Sie unter [Dynamische Seitensicherheit und Relais](
   </tr> 
   <tr> 
    <td> relayHost<br /> </td> 
-   <td> Hinzufügen des ursprünglichen Hosts: verwenden den HTTP-Header "Host"der ursprünglichen Anfrage bei der Wiedergabe.<br /> </td> 
+   <td> Ursprünglichen Host hinzufügen: Verwenden Sie bei der Wiedergabe den HTTP-Header "Host"der ursprünglichen Anforderung.<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> relayPath<br /> </td> 
-   <td> Fügen Sie den anfänglichen URL-Pfad hinzu: Hängen Sie den vollständigen Pfad der URLs an, um an die URL der Zielseite weiterzuleiten. <br /> </td> 
+   <td> Initial-URL-Pfad hinzufügen: Hängen Sie den vollständigen Pfad der URLs an, um sie an die URL der Zielseite weiterzuleiten. <br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -3147,7 +3148,7 @@ Weitere Informationen finden Sie unter [Dynamische Seitensicherheit und Relais](
   </tr> 
   <tr> 
    <td> targetUrl<br /> </td> 
-   <td> URL der Zielseite: verweisen auf <a href="configure-tomcat.md" target="_blank">Tomcat konfigurieren</a>.<br /> </td> 
+   <td> URL der Zielseite: siehe <a href="configure-tomcat.md" target="_blank">Tomcat konfigurieren</a>.<br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -3281,13 +3282,13 @@ Weitere Informationen finden Sie in diesem Abschnitt [Abschnitt](../../installat
  <tbody> 
   <tr> 
    <td> IMSOrgId<br /> </td> 
-   <td> Organisations-ID: eindeutige Organisationskennung innerhalb der Adobe Experience Cloud, die insbesondere für den VisitorID-Dienst und die IMS-SSO verwendet wird. <br /> </td> 
+   <td> Organisations-ID: eindeutige Organisationskennung innerhalb der Adobe Experience Cloud, die insbesondere für den Besucher-ID-Dienst und die IMS-SSO verwendet wird. <br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> P3PCompactPolicy<br /> </td> 
-   <td> Wert, der die Richtlinie beschreibt, die für permanente Cookies verwendet wird (konform mit dem P3P Compact Policy-Format). <br /> </td> 
+   <td> Wert, der die Richtlinie beschreibt, die für permanente Cookies verwendet wird (entspricht dem P3P Compact Policy-Format). <br /> </td> 
    <td> String <br /> </td> 
    <td> "CAO DSP COR CURa DEVa TAIa OUR BUS IND UNI COM NAV"<br /> </td> 
   </tr> 
@@ -3317,7 +3318,7 @@ Weitere Informationen finden Sie in diesem Abschnitt [Abschnitt](../../installat
   </tr> 
   <tr> 
    <td> maxJobsInCache<br /> </td> 
-   <td> Maximale Auftragsanzahl: Maximale Anzahl von Bereitstellungsaktionen im Cache. Darf nicht kleiner als 50 sein. <br /> </td> 
+   <td> Maximale Auftragsanzahl: Maximale Anzahl an Versandaktionen im Cache. Darf nicht kleiner als 50 sein. <br /> </td> 
    <td> Lang<br /> </td> 
    <td> 100<br /> </td> 
   </tr> 
@@ -3341,7 +3342,7 @@ Weitere Informationen finden Sie in diesem Abschnitt [Abschnitt](../../installat
   </tr> 
   <tr> 
    <td> trackWebVisitors<br /> </td> 
-   <td> Webtracking: Erstellung von Protokollen für die Seiten, die von unbekannten Benutzern besucht wurden. <br /> </td> 
+   <td> Webtracking: Erstellung von Protokollen für die Seiten, die von unbekannten Benutzern besucht werden. <br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -3370,7 +3371,7 @@ Weitere Informationen finden Sie unter [Redundantes Tracking](../../installation
  <tbody> 
   <tr> 
    <td> enabledIf<br /> </td> 
-   <td> Berücksichtigt, wenn der Tracking-Server berücksichtigt wird, wenn der Ausdruck "true"zurückgibt. <br /> </td> 
+   <td> Berücksichtigt wenn: Der Tracking-Server wird berücksichtigt, wenn der Ausdruck "true"zurückgibt. <br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -3460,13 +3461,13 @@ Weitere Informationen finden Sie unter [Workflows und Affinitäten mit hoher Ver
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
-   <td> Warnung zur Speicherbelegung: Warnhinweis bezüglich der von einem bestimmten Prozess verbrauchten RAM (in MB).<br /> </td> 
+   <td> Warnhinweis zur Speicherbelegung: Warnhinweis bezüglich der von einem bestimmten Prozess verbrauchten RAM (in MB).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
-   <td> Warnung zur Speicherbelegung: Warnung bezüglich der von einem bestimmten Prozess verbrauchten RAM (in MB).<br /> </td> 
+   <td> Warnung zur Speicherbelegung: Warnhinweis bezüglich der von einem bestimmten Prozess verbrauchten RAM (in MB).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1600<br /> </td> 
   </tr> 

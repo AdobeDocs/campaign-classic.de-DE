@@ -2,16 +2,17 @@
 product: campaign
 title: Netzwerkkonfiguration
 description: Richtlinien zur Systemkommunikation
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
+badge-v7-prem: label="On-Premise und Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: b86236ae-95e9-4406-b60f-6d90ad0d4a01
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '666'
-ht-degree: 6%
+source-wordcount: '691'
+ht-degree: 8%
 
 ---
 
@@ -49,7 +50,7 @@ Für den Versandserver (**nlserver mta**), müssen die folgenden Ports geöffnet
   <tr> 
    <td> 38000/tcp (Standardanschluss)<br /> </td> 
    <td> SMS-Gateway<br /> </td> 
-   <td> Wird verwendet, um SMS-Traffic an den NetSize-SMS-Router zu senden [Option].<br /> </td> 
+   <td> Wird zum Senden von SMS-Traffic an den NetSize SMS-Router verwendet [Option].<br /> </td> 
   </tr> 
   <tr> 
    <td> 7777/udp<br /> </td> 
@@ -59,7 +60,7 @@ Für den Versandserver (**nlserver mta**), müssen die folgenden Ports geöffnet
  </tbody> 
 </table>
 
-### Eingehende E-Mails {#inbound-mail}
+### Eingehende Post {#inbound-mail}
 
 Für den Wiederherstellungsprozess von eingehenden E-Mails (**nlserver inMail**), müssen die folgenden Ports geöffnet sein:
 
@@ -102,7 +103,7 @@ Für den Anwendungsserver (**nlserver web**), müssen die folgenden Ports geöff
  </tbody> 
 </table>
 
-Wenn mehrere Anwendungsserver einer Adobe Campaign-Plattform miteinander kommunizieren müssen, empfehlen wir die Verwendung des Anschlusses des Apache Tomcat-Servers (standardmäßig: 8080) anstelle des HTTP-Ports des Webservers, mit dem die Umleitungsmodulintegration durchgeführt wurde. Dies bedeutet, dass der Port zwischen diesen Servern geöffnet sein muss.
+Wenn mehrere Anwendungsserver einer Adobe Campaign-Plattform miteinander kommunizieren müssen, empfehlen wir, den Port des Apache Tomcat-Servers (standardmäßig 8080) anstelle des HTTP-Ports des Webservers zu verwenden, mit dem die Umleitungsmodulintegration durchgeführt wurde. Dies bedeutet, dass der Port zwischen diesen Servern geöffnet sein muss.
 
 ### SMS-Versandstatus {#sms-delivery-status}
 
@@ -146,7 +147,7 @@ Für den Rich-Client von Adobe Campaign (**nlclient**), müssen die folgenden Po
 
 Alle Komponenten, die die Datenbank verwenden, müssen eine Verbindung mit ihr herstellen können. Dies gilt für die meisten Komponenten, mit Ausnahme des Umleitungsservers, der allein funktionieren kann, und des Thin Win32-Clients, der nur HTTP (oder HTTPS) verwendet, um mit dem Anwendungsserver zu kommunizieren.
 
-Die Standardanschlüsse lauten wie folgt:
+Die Standardanschlüsse sind:
 
 <table> 
  <tbody> 
@@ -162,11 +163,11 @@ Die Standardanschlüsse lauten wie folgt:
   </tr> 
   <tr> 
    <td> <strong>PostgreSQL</strong><br /> </td> 
-   <td> 5432/tcp<br /> </td> 
+   <td> 5432/t<br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Microsoft SQL Server</strong><br /> </td> 
-   <td> 1433/tcp<br /> </td> 
+   <td> 1433/t<br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>DB2</strong><br /> </td> 

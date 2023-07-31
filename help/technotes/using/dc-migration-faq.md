@@ -2,15 +2,15 @@
 product: campaign
 title: Häufig gestellte Fragen zur Migration zu Adobe Managed Services (Public Cloud)
 description: Häufig gestellte Fragen zur Migration von Campaign Classic zur Public Cloud
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Overview
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
+feature: Technote, Upgrade
 role: User
 level: Beginner
 exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2215'
-ht-degree: 100%
+source-wordcount: '2222'
+ht-degree: 99%
 
 ---
 

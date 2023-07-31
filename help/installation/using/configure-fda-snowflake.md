@@ -2,14 +2,15 @@
 product: campaign
 title: Zugriff auf Snowflake konfigurieren
 description: Erfahren Sie, wie Sie den Zugriff auf Snowflake in FDA konfigurieren
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Federated Data Access
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: bdb5e422-ecfe-42eb-bd15-39fe5ec0ff1d
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '545'
 ht-degree: 38%
 
 ---
@@ -84,7 +85,7 @@ Sie müssen eine [!DNL Snowflake] externes Konto, um Ihre Campaign-Instanz mit I
 
 1. Wählen Sie **[!UICONTROL Externe Datenbank]** als **[!UICONTROL Typ]** Ihres externen Kontos aus.
 
-1. under **[!UICONTROL Konfiguration]** auswählen [!DNL Snowflake] von **[!UICONTROL Typ]** Dropdown-Liste.
+1. under **[!UICONTROL Konfiguration]** auswählen [!DNL Snowflake] aus dem **[!UICONTROL Typ]** angezeigt.
 
    ![](assets/snowflake_5.png)
 
@@ -112,7 +113,7 @@ Sie müssen eine [!DNL Snowflake] externes Konto, um Ihre Campaign-Instanz mit I
 
    ![](assets/snowflake_2.png)
 
-1. Klicken **[!UICONTROL Speichern]** wenn Ihre Konfiguration abgeschlossen ist.
+1. Klicks **[!UICONTROL Speichern]** wenn Ihre Konfiguration abgeschlossen ist.
 
 Der Connector unterstützt die folgenden Optionen:
 

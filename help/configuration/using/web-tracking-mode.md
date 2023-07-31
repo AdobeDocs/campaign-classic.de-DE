@@ -2,11 +2,12 @@
 product: campaign
 title: Webtracking-Modus
 description: Erfahren Sie, wie Sie den Webtracking-Modus auswählen
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 exl-id: b0f30c1f-cdc9-4ad2-8a6c-19d5aae4feb3
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '682'
+source-wordcount: '689'
 ht-degree: 1%
 
 ---
@@ -75,7 +76,7 @@ Dieser Modus ist bei der Berechnung während der Protokollabstimmung kostspielig
 
 Mit diesem Webtracking-Modus können Sie ein Trackinglog abrufen, das mit dem anonymen Browsen in Adobe Campaign verknüpft ist. Für jeden Klick auf eine getrackte URL wird automatisch ein Trackinglog erstellt. Dieses Protokoll hat nur den Wert von uuid230. Während einer Marketing-Kampagne wird automatisch ein Trackinglog mit allen Identifizierungsinformationen erstellt (siehe Sitzungs-Tracking). Adobe Campaign sucht in den vorherigen Logs automatisch nach einem &quot;uuid230&quot;-Wert, der dem Wert aus dem Trackinglog für diese Marketing-Kampagne entspricht. Wenn identische Werte gefunden werden, werden alle vorherigen Trackinglogs mit allen Informationen aus dem Trackinglog der Marketing-Kampagne eingegeben.
 
-Dieser Modus ist in Bezug auf Berechnung und Volumen am kostspieligsten.
+Dieser Modus ist in Bezug auf Berechnung und Volumen am teuersten.
 
 >[!NOTE]
 >

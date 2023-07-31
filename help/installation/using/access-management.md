@@ -1,13 +1,13 @@
 ---
 product: campaign
 title: Zugriffsverwaltung
-description: Weitere Informationen zu Best Practices bei der Zugriffsverwaltung
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-feature: Access Management, Permissions
+description: Erfahren Sie mehr über die Best Practices für die Zugriffsverwaltung
+feature: Installation, Access Management, Permissions
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 exl-id: af88e4e7-0ee3-48b4-9db4-7dd390d9d46a
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '383'
 ht-degree: 23%
 
 ---
@@ -36,16 +36,16 @@ Standardmäßig ist der WebApp-Benutzer ein Administrator. Um die Sicherheit zu 
 
 Erstellen Sie genügend Sicherheitsgruppen, um Ihren Benutzern ausreichend Rechte zu gewähren, damit sie das tun können, was sie benötigen, und nicht mehr.
 
-Verwenden Sie nicht den Administrator-Operator (oder geben Sie ihn nicht frei). Erstellen Sie einen Benutzer pro physischem Benutzer (für eine genaue Prüfung/Protokollierung). Fügen Sie Ihre neu benannten Administratoren zur Administratorgruppe hinzu. Wenn Sie den Admin-Operator nicht verwenden, löschen Sie ihn nicht und deaktivieren Sie ihn nicht: Dieser Operator wird intern zum Ausführen der Verarbeitung verwendet. Aber man kann seine [Zugriff auf die Clientkonsole](../../platform/using/access-management.md) und beschränken Sie die Sicherheitszone (auf localhost).
+Verwenden Sie nicht den Administrator-Operator (oder geben Sie ihn nicht frei). Erstellen Sie einen Benutzer pro physischem Benutzer (für eine genaue Prüfung/Protokollierung). Fügen Sie Ihre neu benannten Administratoren zur Administratorgruppe hinzu. Wenn Sie den Administrator-Operator nicht verwenden, löschen Sie ihn nicht und deaktivieren Sie ihn nicht: Dieser Operator wird intern zur Ausführung der Verarbeitung verwendet. Aber man kann seine [Zugriff auf die Clientkonsole](../../platform/using/access-management.md) und beschränken Sie die Sicherheitszone (auf localhost).
 
 Nehmen Sie nicht zu viele Benutzer in die Administrator-Gruppe auf (bzw. Benutzer mit spezifischen Administratorberechtigungen). Diese Benutzer verfügen über umfassende Rechte (sie können alle SQL-Anweisungen und Befehle auf dem Server ausführen etc.).
 
 Adobe Campaign bietet drei allgemeine Berechtigungen durch [spezifische Berechtigungen](../../platform/using/access-management.md#named-rights):
 
-* **VERWALTUNG** (admin): gibt Zugriff auf alles und ermöglicht die Durchführung aller Aufgaben, wobei alle benannten Rechtsprüfungen umgangen werden, sodass es die spezifischen Berechtigungen &quot;PROGRAM EXECUTION&quot;(createProcess) und &quot;SQL&quot; enthält
+* **VERWALTUNG** (admin): bietet Zugriff auf alles und ermöglicht die Durchführung aller spezifischen Rechtsprüfungen, sodass die spezifischen Berechtigungen &quot;PROGRAM EXECUTION&quot;(createProcess) und &quot;SQL&quot; enthalten sind
 
 * **AUSFÜHRUNG DES PROGRAMMS** (createProcess): ermöglicht die Ausführung externer Programme (auf dem Server).
 
-* **SQL**: ermöglicht das Ausführen von SQL-Skripten in der Datenbank (sodass es das Sicherheitsmodell umgehen kann). Hinweis: Wenn Sie komplexe Berechnungen durchführen müssen (z. B. Filtern), können Sie Ihren Datenbankadministrator bitten, eine SQL-Funktion zu erstellen und sie der Zulassungsliste hinzuzufügen. Weitere Informationen finden Sie auf [dieser Seite](../../installation/using/scripting-coding-guidelines.md).
+* **SQL**: ermöglicht die Ausführung von SQL-Skripten in der Datenbank (sodass das Sicherheitsmodell umgangen werden kann). Hinweis: Wenn Sie komplexe Berechnungen durchführen müssen (z. B. Filtern), können Sie Ihren Datenbankadministrator bitten, eine SQL-Funktion zu erstellen und sie der Zulassungsliste hinzuzufügen. Weitere Informationen finden Sie auf [dieser Seite](../../installation/using/scripting-coding-guidelines.md).
 
 * **Gewähren Sie diese Privilegien nur sehr wenigen (und vertrauenswürdigen) Benutzern.**

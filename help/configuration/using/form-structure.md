@@ -2,12 +2,13 @@
 product: campaign
 title: Formularstruktur
 description: Formularstruktur
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Application Settings
+badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 exl-id: e61f2b63-06d3-4b8c-867f-1c729176d2da
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2403'
+source-wordcount: '2415'
 ht-degree: 92%
 
 ---
@@ -62,7 +63,7 @@ Das Eingabefeld passt sich automatisch dem gewählten Datentyp an und verwendet 
 
 >[!NOTE]
 >
->Sie können die im Datenschema definierte Bezeichnung überschreiben, indem Sie die **label** -Attribut `<input>` element:\
+>Sie können die im Datenschema definierte Bezeichnung durch Hinzufügen der **label** -Attribut `<input>` element:\
 >`<input label="Email address" xpath="@name" />`
 
 Standardmäßig wird jedes Feld, je nach Datentyp, einzeilig über den gesamten verfügbaren Platz angezeigt.
@@ -163,7 +164,7 @@ Container werden verwendet, um komplexe Eingabefelder mithilfe eines Satzes von 
 
 #### Tab-Container {#tab-container}
 
-Ein Registerkartencontainer formatiert Daten in Seiten, auf die über Registerkarten zugegriffen werden kann.
+Ein Registerkarten-Container formatiert Daten in Seiten, auf die über Registerkarten zugegriffen werden kann.
 
 ![](assets/d_ncs_integration_form_exemple6.png)
 
@@ -186,7 +187,7 @@ Der Haupt-Container wird durch das Attribut **type=&quot;Notebook&quot;** defini
 
 >[!NOTE]
 >
->A **style=&quot;down|up**(standardmäßig)**&quot;** erzwingt die vertikale Positionierung von Registerkartenbeschriftungen unter oder über dem Steuerelement. Hierbei handelt es sich um eine optionale Funktion.
+>A **style=&quot;down|up&quot;**(standardmäßig)**&quot;** erzwingt die vertikale Positionierung von Registerkartenbeschriftungen unter oder über dem Steuerelement. Hierbei handelt es sich um eine optionale Funktion.
 >`<container style="down" type="notebook">  … </container>`
 
 #### Symbolliste {#icon-list}
@@ -545,7 +546,7 @@ Die zu bearbeitenden Eingabefelder sind in einem **`<container>`** gruppiert, da
 
 ## Ausdrucksfeld {#expression-field}
 
-Ein Ausdrucksfeld aktualisiert ein Feld dynamisch von einem Ausdruck. die **`<input>`** -Tag mit einer **xpath** -Attribut, um den Pfad des zu aktualisierenden Felds anzugeben, und ein **expo** -Attribut, das den Aktualisierungsausdruck enthält.
+Ein Ausdrucksfeld aktualisiert ein Feld dynamisch von einem Ausdruck; das **`<input>`** -Tag mit einer **xpath** -Attribut, um den Pfad des zu aktualisierenden Felds anzugeben, und ein **expo** -Attribut, das den Aktualisierungsausdruck enthält.
 
 ```xml
 <!-- Example: updating the boolean1 field from the value contained in the field with path /tmp/@flag -->

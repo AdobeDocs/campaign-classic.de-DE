@@ -2,14 +2,15 @@
 product: campaign
 title: Power Booster und Power Cluster
 description: Power Booster und Power Cluster
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 59364cfc-9917-4057-ad5f-fbca7e261b07
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '400'
+source-wordcount: '407'
 ht-degree: 7%
 
 ---
@@ -76,15 +77,15 @@ Die Power Booster- und Power Cluster-Optionen können von den folgenden Anwendun
   </tr> 
   <tr> 
    <td> Bereitstellungsvorlage<br /> </td> 
-   <td> Alle auf einer Site (kann On-Premise oder in der Cloud sein)<br /> </td> 
+   <td> Alle auf einer Site (kann lokal oder in der Cloud sein)<br /> </td> 
    <td> Marketing vor Ort mit Ausführung in der Cloud möglich<br /> </td> 
-   <td> Marketing vor Ort mit Ausführung in der Cloud; Ausführung in verschiedenen Geografien möglich<br /> </td> 
+   <td> Marketing vor Ort mit Ausführung in der Cloud, Ausführung in verschiedenen Geos möglich<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Empfehlungen {#recommendations}
 
-* Eine Ausführungsinstanz muss einem Dienst zugewiesen sein. Sie können kein Paket für einen Dienst installieren, für den Sie sich nicht angemeldet haben. Wenn Sie beispielsweise die **Power Booster** -Option für die **Message Center** -Dienst, dürfen Sie nur die **[!UICONTROL Ausführung von Transaktionsnachrichten]** auf der dedizierten Ausführungsinstanz. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
+* Eine Ausführungsinstanz muss einem Dienst zugewiesen sein. Sie können kein Paket für einen Dienst installieren, für den Sie sich nicht angemeldet haben. Wenn Sie beispielsweise die **Power Booster** -Option für **Message Center** -Dienst, dürfen Sie nur die **[!UICONTROL Ausführung von Transaktionsnachrichten]** auf der dedizierten Ausführungsinstanz. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
 * Da dedizierte Instanzen (oder Cluster) Adobe Campaign-Instanzen sind, sind die Empfehlungen mit denen einer Hauptinstanz identisch. Weitere Informationen hierzu finden Sie unter [dieses Dokuments](../../production/using/foreword.md).
-* Wenden Sie sich an Adobe Campaign Professional Services, um die Instanz in einer Datenbank/Hardwarekomponenten ordnungsgemäß zu konfigurieren.
+* Wenden Sie sich an Adobe Campaign Professional Services, um die Instanz in einer Datenbank/Hardwarekomponente ordnungsgemäß zu konfigurieren.

@@ -2,13 +2,14 @@
 product: campaign
 title: Benutzeroberfläche konfigurieren
 description: Erfahren Sie, wie Sie die Campaign-Benutzeroberfläche konfigurieren
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+feature: Application Settings
+badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 exl-id: 9f50f258-845e-4895-b1ef-b73744dea326
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 0%
+source-wordcount: '325'
+ht-degree: 1%
 
 ---
 
@@ -25,7 +26,7 @@ Gehen Sie wie folgt vor, um die neue Empfängertabelle in der Benutzeroberfläch
 Adobe Campaign verwendet eine globale Variable &quot;Nms_DefaultRcpSchema&quot;, um ein Dialogfeld mit der standardmäßigen Empfängerdatenbank (nms:recipient) zu erstellen. Diese Variable muss daher geändert werden.
 
 1. Navigieren Sie zu **[!UICONTROL Administration > Plattform > Optionen]** -Knoten des Explorer.
-1. Ändern Sie den Wert der **Nms_DefaultRcpSchema** mit dem Namen des Schemas, das mit der externen Empfängertabelle übereinstimmt (in diesem Fall: cus:einzeln).
+1. Ändern Sie den Wert der **Nms_DefaultRcpSchema** mit dem Namen des Schemas, das mit der externen Empfängertabelle übereinstimmt (in diesem Fall cus:individueller ).
 1. Speichern Sie Ihre Änderungen.
 
 ## Neues Formular erstellen {#creating-a-new-form-}

@@ -2,16 +2,17 @@
 product: campaign
 title: SpamAssassin konfigurieren
 description: SpamAssassin konfigurieren
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
+badge-v7-prem: label="On-Premise und Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 1f1004e2-dcd2-4ec5-98ec-720c205646d5
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '985'
-ht-degree: 2%
+source-wordcount: '1010'
+ht-degree: 3%
 
 ---
 
@@ -66,11 +67,11 @@ Gehen Sie wie folgt vor, um SpamAssassin unter Windows zu installieren und zu ko
 
    Eingabe **run_me.bat** Klicken Sie dann auf **Eingabe** um den Installations- und Aktualisierungsprozess zu starten. Der Vorgang gibt einen der folgenden Werte zurück, um das Ergebnis der Aktualisierung anzuzeigen.
 
-   * **0**: eine Aktualisierung durchgeführt wurde.
-   * **1**: Keine neue Aktualisierung verfügbar.
-   * **2**: keine neue Aktualisierung verfügbar ist.
+   * **0**: Aktualisierung durchgeführt.
+   * **1**: Es ist kein neues Update verfügbar.
+   * **2**: keine neue Aktualisierung verfügbar.
    * **3**: Aktualisierung schlug während der vorherigen Überprüfung fehl.
-   * **4** oder mehr: ein Fehler aufgetreten ist.
+   * **4** oder mehr: Es ist ein Fehler aufgetreten.
 
 1. Um sicherzustellen, dass die SpamAssassin-Installation erfolgreich war, verwenden Sie den GTUBE-Test (Generischer Test für nicht angeforderte Massen-E-Mail) wie folgt:
 
@@ -101,7 +102,7 @@ Gehen Sie wie folgt vor, um SpamAssassin unter Windows zu installieren und zu ko
 
 ### Integrieren von SpamAssassin in Adobe Campaign {#integrating-spamassassin-into-adobe-campaign}
 
-1. Bearbeiten Sie die **`[INSTALL]/conf/serverConf.xml`** -Datei. Alle in der **serverConf.xml** sind in dieser [Abschnitt](../../installation/using/the-server-configuration-file.md).
+1. Bearbeiten Sie die **`[INSTALL]/conf/serverConf.xml`** -Datei. Alle in der **serverConf.xml** in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md).
 1. Ändern Sie den Wert der **spamCheck** elements&#39; **command** -Attribut im **Web** Knoten. Führen Sie dazu den folgenden Befehl aus:
 
    ```
@@ -112,7 +113,7 @@ Gehen Sie wie folgt vor, um SpamAssassin unter Windows zu installieren und zu ko
    >
    >Alle Pfade müssen absolut sein.
 
-   Stoppen und starten Sie die **[!UICONTROL Adobe Campaign]** Dienst.
+   Stoppen und starten Sie die **[!UICONTROL Adobe Campaign]** -Dienst.
 
 1. Um die Integration von SpamAssassin in Adobe Campaign zu überprüfen, verwenden Sie einen GTBUE-Test (Generischer Test für nicht angeforderte Massen-E-Mail):
 
@@ -171,7 +172,7 @@ cpan Mail::SpamAssassin
 
 ### Aktualisieren von Filterregeln {#updating-filter-rules}
 
-Filterregeln können automatisch mit dem **sa-update** -Tool. Besuchen Sie die offizielle SpamAssassin-Website. [https://spamassassin.apache.org/](https://spamassassin.apache.org/) für weitere Informationen.
+Filterregeln können automatisch mit dem **sa-update** -Tool. Siehe offizielle SpamAssassin-Website [https://spamassassin.apache.org/](https://spamassassin.apache.org/) für weitere Informationen.
 
 In Debian finden Aktualisierungen automatisch jeden Tag statt.
 

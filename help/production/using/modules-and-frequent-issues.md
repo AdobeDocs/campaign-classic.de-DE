@@ -2,16 +2,17 @@
 product: campaign
 title: Module und häufige Probleme
 description: Module und häufige Probleme
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring, Troubleshooting
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
+badge-v7-prem: label="On-Premise und Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
 audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: dbd50178-0a16-46ed-bfad-47beb3c2a420
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 8%
+source-wordcount: '280'
+ht-degree: 13%
 
 ---
 
@@ -47,7 +48,7 @@ Im Folgenden finden Sie eine Liste der Module, die von häufigen Problemen betro
   </tr> 
   <tr> 
    <td> mta </td> 
-   <td> E-Mails versenden<br /> </td> 
+   <td> E-Mails senden<br /> </td> 
    <td> Prüfen Sie dieses Modul, wenn keine E-Mails mehr gesendet werden.<br /> </td> 
   </tr> 
   <tr> 
@@ -58,7 +59,7 @@ Im Folgenden finden Sie eine Liste der Module, die von häufigen Problemen betro
   <tr> 
    <td> syslogd </td> 
    <td> Schreiben von Protokollen<br /> </td> 
-   <td> Wenn einige Protokolle in den Protokolldateien fehlen, überprüfen Sie, ob das Modul Port 666 verwendet. Siehe <a href="../../production/using/general-architecture.md#list-of-open-ports" target="_blank">Liste offener Ports</a>.<br /> </td> 
+   <td> Wenn einige Protokolle in den Protokolldateien fehlen, überprüfen Sie, ob das Modul Port 666 verwendet. Siehe Abschnitt <a href="../../production/using/general-architecture.md#list-of-open-ports" target="_blank">Liste offener Ports</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> tracking </td> 
@@ -68,7 +69,7 @@ Im Folgenden finden Sie eine Liste der Module, die von häufigen Problemen betro
   <tr> 
    <td> trackinglogd </td> 
    <td> Tracking von Protokollschreibungs- und Bereinigungs-Server<br /> </td> 
-   <td> Überprüfen Sie dieses Modul, ob Trackinglogs nicht mehr weitergeleitet werden und es keine Protokolle in den Dateien auf dem Server gibt. Siehe <a href="../../production/using/tracking-logs-issues.md" target="_blank">Probleme mit Trackinglogs</a>.<br /> </td> 
+   <td> Überprüfen Sie dieses Modul, ob Trackinglogs nicht mehr weitergeleitet werden und es keine Protokolle in den Dateien auf dem Server gibt. Siehe Abschnitt <a href="../../production/using/tracking-logs-issues.md" target="_blank">Probleme mit Trackinglogs</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> watchdog </td> 

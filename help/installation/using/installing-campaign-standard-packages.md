@@ -2,13 +2,14 @@
 product: campaign
 title: Native Campaign Classic-Packages installieren
 description: Erfahren Sie, wie Sie native Campaign-Pakete installieren.
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Application Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
+badge-v7-prem: label="On-Premise und Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1288'
-ht-degree: 24%
+source-wordcount: '1313'
+ht-degree: 25%
 
 ---
 
@@ -24,7 +25,7 @@ Integrierte Pakete enthalten eine Reihe von Funktionen, die je nach Ihren Anford
 >
 >Sie dürfen nur Pakete installieren, die den in Ihrem Lizenzvertrag erwähnten Optionen entsprechen.
 >
->Die Installation eines neuen Packages kann sich auf Ihre gesamte Plattform auswirken: Sie muss vor der endgültigen Bereitstellung getestet und validiert werden.
+>Die Installation eines neuen Packages kann sich auf Ihre gesamte Plattform auswirken: Es muss vor der endgültigen Bereitstellung getestet und validiert werden.
 >
 >Nachdem ein Paket installiert wurde, kann es nicht mehr deinstalliert werden.
 >
@@ -242,14 +243,14 @@ In der folgenden Tabelle sind alle in Campaign integrierten Packages aufgeführt
 
 Sie müssen Versandkanäle (E-Mail, Mobile-Kanal, Mobile-App-Kanal, LINE usw.) installieren. vor der Installation von Transaktionsnachrichten (Message Center-Package). Wenn Sie ein E-Mail-spezifisches Message-Center-Projekt gestartet haben und danach einen neuen Kanal hinzufügen müssen, müssen Sie die folgenden Schritte ausführen:
 
-1. Installieren Sie den neuen Kanal, z. B. die **Mobile Kanal**&#x200B;über den Package-Import-Assistenten ( **[!UICONTROL Tools > Erweitert > Package importieren > Adobe Campaign-Package]**).
+1. Installieren Sie den neuen Kanal, beispielsweise die **Mobiler Kanal**&#x200B;über den Package-Import-Assistenten ( **[!UICONTROL Tools > Erweitert > Package importieren > Adobe Campaign-Package]**).
 1. Importieren Sie die Datei ( **[!UICONTROL Tools > Erweitert > Package importieren > Datei]**) und wählen Sie:
 
    ```
    \datakit\nms\[Your language]\package\messageCenter.xml
    ```
 
-1. Im **[!UICONTROL Zu importierender XML-Dateninhalt]** beibehalten, sollten Sie nur die Nachrichtencenter-Versandvorlage beibehalten, die dem entsprechenden Kanal entspricht. Wenn Sie beispielsweise die Variable **Mobile Kanal**, behalten Sie nur die **entity** Element, das dem **[!UICONTROL Mobile Transaktionsnachricht]** (smsTriggerMessage). Wenn Sie die **Mobile App Channel**, behalten Sie nur die **iOS-Transaktionsnachricht** templates (iosTriggerMessage) und **Android-Transaktionsnachricht** (androidTriggerMessage).
+1. Im **[!UICONTROL Zu importierender XML-Dateninhalt]** beibehalten, sollten Sie nur die Nachrichtencenter-Versandvorlage beibehalten, die dem entsprechenden Kanal entspricht. Wenn Sie beispielsweise die Variable **Mobiler Kanal**, behalten Sie nur die **Entitäten** Element, das dem **[!UICONTROL Mobile Transaktionsnachricht]** (smsTriggerMessage). Wenn Sie die **Mobile App Channel**, behalten Sie nur die **iOS-Transaktionsnachricht** templates (iosTriggerMessage) und **Android-Transaktionsnachricht** (androidTriggerMessage).
 
    ![](assets/messagecenter_install_channel.png)
 
@@ -260,7 +261,7 @@ So richten Sie die [!DNL LINE] -Kanal, müssen Sie zunächst die [!DNL LINE] Pak
 
 Im Kontext einer Mid-Sourcing-Konfiguration müssen Sie:
 
-* Installieren Sie die [!DNL LINE] -Paket auf der Marketing- und der MID-Instanz
+* Installieren Sie die [!DNL LINE] -Paket auf Marketing- und MID-Instanz
 
 * Richten Sie die [!DNL LINE] externes Konto auf der Mkt-Instanz, um durch Änderung des Versandmodus auf die Mid-Instanz zu verweisen. [Weitere Informationen](../../delivery/using/line-channel.md#configure-line-external)
 

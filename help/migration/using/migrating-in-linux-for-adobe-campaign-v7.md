@@ -2,16 +2,17 @@
 product: campaign
 title: Migrieren einer Linux-Plattform zu Adobe Campaign v7
 description: Erfahren Sie, wie Sie eine Linux-Plattform auf Adobe Campaign v7 migrieren.
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Upgrade
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 audience: migration
 content-type: reference
 topic-tags: migrating-to-adobe-campaign-7
 hide: true
 hidefromtoc: true
 exl-id: 9dc0699c-0fbf-4f8e-81f7-8ca3d7e98798
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '500'
 ht-degree: 0%
 
 ---
@@ -22,7 +23,7 @@ ht-degree: 0%
 
 Die Migration unter Linux erfolgt wie folgt:
 
-1. Alle Dienste beenden - [Weitere Infos](#service-stop).
+1. Alle Dienste anhalten - [Weitere Infos](#service-stop).
 1. Speichern Sie die Datenbank - [Weitere Infos](#back-up-the-database).
 1. Deinstallieren früherer Adobe Campaign-Versionspakete - [Weitere Infos](#uninstalling-adobe-campaign-previous-version-packages).
 1. Plattform migrieren - [Weitere Infos](#deploying-adobe-campaign-v7).
@@ -155,7 +156,7 @@ Beenden Sie zunächst alle Prozesse mit Zugriff auf die Datenbank auf allen betr
 
 -->
 
-1. Erstellen Sie eine Sicherungskopie der Adobe Campaign-Datenbank.
+1. Erstellen Sie eine Sicherung der Adobe Campaign-Datenbank.
 1. Anmelden als **Neolan** und eine Sicherungskopie der **nl6** Verzeichnis mit dem folgenden Befehl:
 
    ```
@@ -466,8 +467,8 @@ To deploy Adobe Campaign, apply the following steps:
 
 Die Bereitstellung von Adobe Campaign erfolgt in zwei Schritten:
 
-* Installieren von Adobe Campaign v7-Paketen: Dieser Vorgang muss auf jedem Server ausgeführt werden.
-* Nach der Aktualisierung: Dieser Befehl muss auf jeder Instanz gestartet werden.
+* Installieren von Adobe Campaign v7-Packages: Dieser Vorgang muss auf jedem Server ausgeführt werden.
+* Nach dem Upgrade: Dieser Befehl muss auf jeder Instanz gestartet werden.
 
 Gehen Sie wie folgt vor, um Adobe Campaign bereitzustellen:
 

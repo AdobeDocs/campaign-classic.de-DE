@@ -2,16 +2,17 @@
 product: campaign
 title: Konfigurationsprinzip
 description: Konfigurationsprinzip
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Monitoring, Configuration
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
+badge-v7-prem: label="On-Premise und Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
 audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 03d7e579-8678-44b8-bbe7-cf4204bffb25
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '281'
-ht-degree: 4%
+source-wordcount: '306'
+ht-degree: 10%
 
 ---
 
@@ -34,14 +35,14 @@ Für einen bestimmten Server gibt es zwei gemeinsame Elemente für alle Adobe Ca
 Die Konfigurationsdateien werden im **conf** -Ordner des Installationsordners. Die Konfiguration ist in drei Dateien unterteilt:
 
 * **serverConf.xml**: Gesamtkonfiguration für alle Instanzen.
-* **config-**`<instance>`**.xml** , **`<instance>`** ist der Instanzname): spezifische Konfiguration einer Instanz.
+* **config-**`<instance>`**.XML** , **`<instance>`** ist der Instanzname): spezifische Konfiguration einer Instanz.
 * **serverConf.xml.diff**: Differenz zwischen der Erstkonfiguration und der aktuellen Konfiguration. Diese Datei wird automatisch von der Anwendung generiert und darf nicht manuell geändert werden. Sie wird verwendet, um beim Aktualisieren einer Build-Version automatisch Benutzeränderungen zu propagieren.
 
 Eine Instanzkonfiguration wird wie folgt geladen:
 
 * Das Modul lädt die **serverConf.xml** -Datei, um die von allen Instanzen gemeinsam genutzten Parameter abzurufen.
-* Anschließend lädt er die **config-**`<instance>`**.xml** -Datei. Die in dieser Datei enthaltenen Werte haben Vorrang vor den Werten in **serverConf.xml**.
+* Anschließend lädt er die **config-**`<instance>`**.XML** -Datei. Die in dieser Datei gefundenen Werte haben Vorrang vor den Werten in **serverConf.xml**.
 
-  Diese beiden Dateien haben das gleiche Format. Jeder Wert in **serverConf.xml** kann für eine bestimmte Instanz im **config-`<instance>`.xml** -Datei.
+  Diese beiden Dateien haben das gleiche Format. Jeder Wert in **serverConf.xml** kann für eine bestimmte Instanz im **config-`<instance>`.XML** -Datei.
 
 Dieser Betriebsmodus bietet große Flexibilität bei der Konfiguration.

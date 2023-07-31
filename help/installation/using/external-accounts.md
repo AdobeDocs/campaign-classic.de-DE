@@ -2,14 +2,15 @@
 product: campaign
 title: Externe Konten
 description: Erfahren Sie, wie Sie externe Konten erstellen
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Installation, Application Settings, External Account
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: 43158445f688f4c2612d4dad76f2243b2e358b35
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2020'
+source-wordcount: '2027'
 ht-degree: 72%
 
 ---
@@ -228,16 +229,16 @@ Externe Datenbanken, die mit Campaign kompatibel sind, sind in der [Kompatibilit
 
 Die Konfigurationseinstellungen für externe Konten hängen von der Datenbank-Engine ab. Weitere Informationen finden Sie in den folgenden Abschnitten:
 
-* Zugriff konfigurieren auf [vertica analytics](../../installation/using/configure-fda-vertica.md)
+* Zugriff konfigurieren auf [Vertica analytics](../../installation/using/configure-fda-vertica.md)
 * Zugriff konfigurieren auf [Snowflake](../../installation/using/configure-fda-snowflake.md)
 * Zugriff konfigurieren auf [Google BigQuery](../../installation/using/configure-fda-google-big-query.md)
-* Zugriff konfigurieren auf [azure synapse](../../installation/using/configure-fda-synapse.md)
+* Zugriff konfigurieren auf [Azure synapse](../../installation/using/configure-fda-synapse.md)
 * Zugriff konfigurieren auf [Hadoop](../../installation/using/configure-fda-hadoop.md)
 * Zugriff konfigurieren auf [Oracle](../../installation/using/configure-fda-oracle.md)
 * Zugriff konfigurieren auf [Netezza](../../installation/using/configure-fda-netezza.md)
 * Zugriff konfigurieren auf [SAP HANA](../../installation/using/configure-fda-sap-hana.md)
 * Zugriff konfigurieren auf [Snowflake](../../installation/using/configure-fda-snowflake.md)
-* Zugriff konfigurieren auf [sybase IQ](../../installation/using/configure-fda-sybase.md)
+* Zugriff konfigurieren auf [Sybase IQ](../../installation/using/configure-fda-sybase.md)
 * Zugriff konfigurieren auf [Teradata](../../installation/using/configure-fda-teradata.md)
 
 
@@ -347,7 +348,7 @@ Beim Bereitstellungstyp **[!UICONTROL Web-API]** und der Authentifizierung mit *
 
 * **[!UICONTROL CRM-Version]**
 
-  Auswählen **[!UICONTROL Dynamics CRM 365]** CRM-Version.
+  Auswählen **[!UICONTROL Dynamics CRM 365]** CRM-Version
 
 Beim Bereitstellungstyp **[!UICONTROL Web-API]** und der Authentifizierung mit **[!UICONTROL Zertifikat]** müssen Sie die folgenden Details angeben:
 
@@ -463,4 +464,4 @@ Um das externe **** Azure-Konto für die gemeinsame Verwendung mit Adobe Campaig
 
 * **[!UICONTROL Zugriffsschlüssel]**
 
-  So erfahren Sie, wo Sie Ihre **[!UICONTROL Zugriffsschlüssel]**, siehe hierzu [page](https://docs.microsoft.com/de-de/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).
+  So erfahren Sie, wo Sie Ihre **[!UICONTROL Zugriffsschlüssel]**, siehe [page](https://docs.microsoft.com/de-de/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).

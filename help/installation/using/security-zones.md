@@ -2,15 +2,16 @@
 product: campaign
 title: Sicherheitszonen konfigurieren
 description: Erfahren Sie, wie Sie Sicherheitszonen konfigurieren
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
-badge-v7-prem: label="on-premise & hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"
+feature: Installation, Instance Settings
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
+badge-v7-prem: label="On-Premise und Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1495'
+source-wordcount: '1520'
 ht-degree: 29%
 
 ---
@@ -27,9 +28,9 @@ Operatoren werden über ihr Profil in der Konsole mit einer Sicherheitszone verk
 >
 >Dieses Verfahren beschränkt sich auf **On-Premise** -Implementierungen.
 >
->Als **gehostet** Kunden, wenn Sie auf [Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de), können Sie die Sicherheitszonen-Benutzeroberfläche verwenden. [Weitere Informationen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=de)
+>Als **gehostet** -Kunde, wenn Sie auf [Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de), können Sie die Sicherheitszonen-Benutzeroberfläche verwenden. [Weitere Informationen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=de)
 >
->Sonstiges **hybrid/gehostet** Kunden müssen sich an das Adobe Support-Team wenden, um IP zur Zulassungsliste hinzuzufügen.
+>Sonstiges **hybrid/gehostet** -Kunden müssen sich an das Adobe Support-Team wenden, um IP zur Zulassungsliste hinzuzufügen.
 >
 
 ## Sicherheitszonen erstellen {#creating-security-zones}
@@ -43,10 +44,10 @@ Sicherheitszonen sind miteinander verbunden. Das bedeutet, dass die Definition e
 
 Bereiche müssen während der Server-Konfiguration im **serverConf.xml** -Datei. Alle in der **serverConf.xml** aufgelistet in [diesem Abschnitt](../../installation/using/the-server-configuration-file.md).
 
-In jedem Bereich werden Berechtigungen definiert, z. B.:
+In jedem Bereich werden Berechtigungen definiert, wie beispielsweise:
 
 * HTTP-Verbindung anstelle von HTTPS
-* Anzeige von Fehlern (Java-Fehler, JavaScript, C++ usw.)
+* Fehleranzeige (Java-Fehler, JavaScript, C++ usw.)
 * Vorschau für Bericht und WebApp
 * Authentifizierung über Anmeldung/Kennwort
 * Nicht sicherer Verbindungsmodus
@@ -88,12 +89,12 @@ Beispiel für die Definition eines Bereichs im **serverConf.xml** Datei:
 
 Die Berechtigungen, die eine Zone definieren, lauten wie folgt:
 
-* **allowDebug**: aktiviert die Ausführung einer WebApp im Debug-Modus
+* **allowDebug**: aktiviert die Ausführung einer WebApp im Debug-Modus.
 * **allowEmptyPassword**: autorisiert eine Verbindung zu einer Instanz ohne Kennwort
-* **allowHTTP**: eine Sitzung ohne HTTPS-Protokoll erstellt werden kann
+* **allowHTTP**: Eine Sitzung kann ohne HTTPS-Protokoll erstellt werden.
 * **allowUserPassword**: Das Sitzungstoken kann das folgende Formular enthalten: &quot;`<login>/<password>`&quot;
 * **sessionTokenOnly**: Das Sicherheitstoken ist in der Verbindungs-URL nicht erforderlich.
-* **showErrors**: -Fehler auf der Serverseite werden weitergeleitet und angezeigt.
+* **showErrors**: Fehler auf der Serverseite werden weitergeleitet und angezeigt.
 
 >[!IMPORTANT]
 >
@@ -103,7 +104,7 @@ Bei Verwendung von Message Center müssen Sie bei mehreren Ausführungsinstanzen
 
 ## Best Practices für Sicherheitszonen {#best-practices-for-security-zones}
 
-In der Definition der **lan** Sicherheitszone, können Sie eine IP-Adressenmaske hinzufügen, die den technischen Zugriff definiert. Durch diesen Zusatz wird der Zugriff auf alle Instanzen ermöglicht, die auf dem Server gehostet werden.
+In der Definition der **lan** Sicherheitszone ist es möglich, eine IP-Adressenmaske hinzuzufügen, die den technischen Zugriff definiert. Durch diesen Zusatz wird der Zugriff auf alle Instanzen ermöglicht, die auf dem Server gehostet werden.
 
 ```
 <securityZone allowDebug="true" allowEmptyPassword="false" allowHTTP="true"
@@ -135,7 +136,7 @@ Im **`config-<instance>.xml`** Datei:
 
 ## Subnetze und Proxys in einer Sicherheitszone {#sub-networks-and-proxies-in-a-security-zone}
 
-Die **Proxy** -Parameter können in einer **subNetwork** -Element, um die Proxy-Verwendung in einer Sicherheitszone anzugeben.
+Die **Proxy** -Parameter können in einer **subNetwork** -Element zur Angabe der Proxy-Verwendung in einer Sicherheitszone.
 
 Wenn ein Proxy referenziert wird und eine Verbindung über diesen Proxy erfolgt (sichtbar über den HTTP-Header X-Forwarded-For ), ist der verifizierte Bereich der Clients des Proxys und nicht der des Proxys.
 
@@ -153,11 +154,11 @@ Verschiedene Fälle können auftreten:
 
   ![](assets/8101_proxy1.png)
 
-* Für ein Unternetzwerk in der Sicherheitszone wird ein Proxy angegeben: Benutzer dieses Unternetzwerks können über diesen Proxy auf den Adobe Campaign-Server zugreifen.
+* Ein Proxy wird für ein Unternetzwerk in der Sicherheitszone angegeben: Benutzer dieses Unternetzwerks können über diesen Proxy auf den Adobe Campaign-Server zugreifen.
 
   ![](assets/8101_proxy2.png)
 
-* Ein Proxy ist in einem Sicherheitszonen-Unternetzwerk enthalten: -Benutzer, die Zugriff über diesen Proxy haben, können unabhängig von ihrer Herkunft auf den Adobe Campaign-Server zugreifen.
+* Ein Proxy ist in einem Sicherheitszonen-Unternetzwerk enthalten: Benutzer, die über diesen Proxy Zugriff haben, können unabhängig von ihrer Herkunft auf den Adobe Campaign-Server zugreifen.
 
   ![](assets/8101_proxy3.png)
 
@@ -210,7 +211,7 @@ Sobald die Zonen definiert sind, wird die **[!UICONTROL Sicherheitszone]** -Aufl
 
 1. Klicken Sie auf **[!UICONTROL Administration > Zugriffe > Benutzer]** Knoten.
 1. Wählen Sie den Benutzer aus, mit dem Sie eine Sicherheitszone verknüpfen möchten, und klicken Sie auf die Schaltfläche **[!UICONTROL Bearbeiten]** Registerkarte.
-1. Navigieren Sie zu **[!UICONTROL Zugriffsberechtigungen]** und klicken Sie auf **[!UICONTROL Zugriffsparameter bearbeiten..]** Link.
+1. Navigieren Sie zu **[!UICONTROL Zugriffsberechtigungen]** und klicken Sie auf **[!UICONTROL Zugriffsparameter bearbeiten..]** -Link.
 
    ![](assets/zone_operator.png)
 
@@ -218,7 +219,7 @@ Sobald die Zonen definiert sind, wird die **[!UICONTROL Sicherheitszone]** -Aufl
 
    ![](assets/zone_operator_selection.png)
 
-1. Klicken **[!UICONTROL OK]** und speichern Sie die Änderungen, um diese Änderungen anzuwenden.
+1. Klicks **[!UICONTROL OK]** und speichern Sie die Änderungen, um diese Änderungen anzuwenden.
 
 
 
@@ -261,6 +262,6 @@ Sobald die Zonen definiert sind, wird die **[!UICONTROL Sicherheitszone]** -Aufl
 
 * HttpOnly cookie/useSecurityToken: siehe Flag **sessionTokenOnly**.
 
-* Minimieren Sie IPs, die zur Zulassungsliste hinzugefügt werden: Standardmäßig haben wir in Sicherheitszonen die drei Bereiche für private Netzwerke hinzugefügt. Es ist unwahrscheinlich, dass Sie alle diese IP-Adressen verwenden werden. Behalten Sie also nur die, die Sie brauchen.
+* Minimieren Sie IPs, die zur Zulassungsliste hinzugefügt wurden: Standardmäßig wurden in Sicherheitszonen die 3 Bereiche für private Netzwerke hinzugefügt. Es ist unwahrscheinlich, dass Sie alle diese IP-Adressen verwenden werden. Behalten Sie also nur die, die Sie brauchen.
 
 * Aktualisieren Sie den WebApp-/internen Benutzer, damit er nur über localhost zugänglich sind.

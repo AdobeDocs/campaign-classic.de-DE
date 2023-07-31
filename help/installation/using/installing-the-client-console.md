@@ -1,15 +1,16 @@
 ---
 product: campaign
 title: Installieren der Client-Konsole
-description: Erfahren Sie, wie Sie die Client-Konsole installieren.
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+description: Erfahren Sie, wie Sie die Client-Konsole installieren
+feature: Installation, Upgrade
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
-source-git-commit: 45bf9d76dc41fd8cecfaab3f258856861201db3f
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1163'
+source-wordcount: '1170'
 ht-degree: 32%
 
 ---
@@ -114,9 +115,9 @@ Benutzer sollten jetzt die Konsole herunterladen und installieren, indem sie die
 
    Verwenden Sie bei Bedarf die Anmeldeinformationen des bei der Instanzerstellung definierten internen Kontos.
 
-1. Klicken Sie auf **[!UICONTROL Download]** auf der Installationsseite.
+1. Klicken Sie auf **[!UICONTROL Herunterladen]** auf der Installationsseite.
 1. Laden Sie die Client-Setup-Datei herunter und speichern Sie sie.
-1. Führen Sie die heruntergeladene Datei auf einem Computer unter Windows aus: Die Installation beginnt. Der standardmäßige Installationspfad der Clientkonsole lautet **$PROGRAMFILES$/Adobe/Adobe Campaign Classic vX Client**, wobei &quot;X&quot;&quot;6&quot;oder &quot;7&quot;ist, gemäß Ihrer Adobe Campaign-Version.
+1. Führen Sie die heruntergeladene Datei auf einem Computer unter Windows aus: Die Installation wird gestartet. Der standardmäßige Installationspfad der Clientkonsole lautet **$PROGRAMFILES$/Adobe/Adobe Campaign Classic vX Client**, wobei &quot;X&quot;&quot;6&quot;oder &quot;7&quot;ist, gemäß Ihrer Adobe Campaign-Version.
 
 ### Erstellen der Verbindung - nur Erstbenutzer{#create-the-connection}
 

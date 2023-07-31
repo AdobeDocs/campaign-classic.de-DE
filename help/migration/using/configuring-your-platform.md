@@ -2,16 +2,17 @@
 product: campaign
 title: Anpassen der Konfiguration
 description: Erfahren Sie, wie Sie Ihre Konfiguration vor und nach einer Migration zu Campaign v7 anpassen.
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+feature: Upgrade
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 audience: migration
 content-type: reference
 topic-tags: migration-procedure
 hide: true
 hidefromtoc: true
 exl-id: ad71dead-c0ca-42d5-baa8-0f340979231a
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '479'
 ht-degree: 4%
 
 ---
@@ -26,9 +27,9 @@ Während der Migration wird die Variable **NmsRecipient** -Tabelle aus der Schem
 
 Beispiel für zu prüfende Elemente:
 
-* Wenn Sie eine Spalte (oder einen Index) zum **NmsRecipient** -Tabelle, aber Sie haben sie nicht im Schema detailliert, wird dies nicht gespeichert.
+* Wenn Sie der **NmsRecipient** -Tabelle, aber Sie haben sie nicht im Schema detailliert, wird dies nicht gespeichert.
 * Die **tablespace** -Attribut nimmt standardmäßig seine Werte zurück, d. h. die im Softwareverteilungs-Assistenten definierten Werte.
-* Wenn Sie eine Referenzansicht zum **NmsRecipient** -Tabelle, müssen Sie sie vor der Migration löschen.
+* Wenn Sie der **NmsRecipient** -Tabelle, müssen Sie sie vor der Migration löschen.
 
 
 ## Vor der Migration {#before-the-migration}
@@ -106,7 +107,7 @@ Nach Ausführung **postupgrade**, aktivieren und konfigurieren Sie die folgenden
 
 * Webanwendungen
 
-  Wenn nach dem Postupgrade Probleme beim Herstellen einer Verbindung zu Ihren identifizierten Webanwendungen auftreten, müssen Sie die **allowUserPassword** und **sessionTokenOnly** Optionen in **serverConf.xml** -Datei. Um Sicherheitsprobleme zu vermeiden, müssen diese beiden Optionen reaktiviert werden, nachdem das Problem gelöst wurde.
+  Wenn Sie nach dem Postupgrade Probleme haben, eine Verbindung zu Ihren identifizierten Webanwendungen herzustellen, müssen Sie die **allowUserPassword** und **sessionTokenOnly** Optionen in **serverConf.xml** -Datei. Um Sicherheitsprobleme zu vermeiden, müssen diese beiden Optionen reaktiviert werden, nachdem das Problem gelöst wurde.
 
   Abhängig vom Typ der Webanwendungen und ihrer Konfiguration müssen Sie zusätzliche Manipulationen durchführen, um sicherzustellen, dass sie ordnungsgemäß funktionieren.
 
