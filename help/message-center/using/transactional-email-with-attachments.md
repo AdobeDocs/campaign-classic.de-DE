@@ -8,7 +8,7 @@ exl-id: 755d2364-f6c4-4943-97e8-3ed52a0f2665
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '673'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ In diesem Szenario werden die Anhänge nicht vorab erstellt, sondern den ausgehe
 
 ## Empfehlungen   und Schutzmechanismen {#important-notes}
 
-Um Leistungsprobleme zu vermeiden, dürfen in E-Mails enthaltene Bilder 100 KB nicht überschreiten. Diese standardmäßig festgelegte Beschränkung kann in der Option `NmsDelivery_MaxDownloadedImageSize` geändert werden. Adobe empfiehlt jedoch dringend, große Bilder in E-Mail-Sendungen zu vermeiden.
+Um Leistungsprobleme zu vermeiden, dürfen die in den E-Mails enthaltenen Bilder nicht größer als 100 KB sein. Diese standardmäßig festgelegte Beschränkung kann in der Option `NmsDelivery_MaxDownloadedImageSize` geändert werden. Adobe empfiehlt jedoch dringend, große Bilder in E-Mail-Sendungen zu vermeiden.
 
 Adobe empfiehlt außerdem, die Größe und Anzahl der angehängten Dateien zu begrenzen. Standardmäßig kann nur eine Datei als Anhang zu einer E-Mail hinzugefügt werden. Dieser Schwellenwert kann in der Option `NmsDelivery_MaxRecommendedAttachments` konfiguriert werden.
 
