@@ -5,8 +5,8 @@ description: Über die Angebotssimulation
 feature: Interaction, Offers
 exl-id: facaa88e-1fa2-4189-9d8f-348aaef3e235
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: tm+mt
-source-wordcount: '270'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
