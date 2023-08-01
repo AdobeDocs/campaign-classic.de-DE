@@ -6,9 +6,9 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 0cd6bf20-da72-4cf0-9f5d-d4e8acdd324d
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: ht
-source-wordcount: '0'
+source-git-commit: dbbc5d9f354357e5ca13eaeffddf67865480070d
+workflow-type: tm+mt
+source-wordcount: '2551'
 ht-degree: 100%
 
 ---
@@ -268,9 +268,6 @@ Weitere Informationen finden Sie auf der Seite [Eingestellte und entfernte Funkt
 * Alle Kategorien von Feedback werden jetzt für vollständiges und genaues Reporting erfasst.
 * Die Berechnung des Indikators &quot;Zugestellt&quot; basiert nun auf Echtzeit-Feedback des Enhanced MTA, um Genauigkeit und Reaktivität zu verbessern.
 * EFS löst das Problem der Verzögerungen beim Reporting zu synchronen Softbounces.
-
-Weitere Informationen finden Sie im [entsprechenden Handbuch](../../delivery/using/sending-with-enhanced-mta.md#efs).
-Wenn Sie an dieser privaten Betaversion teilnehmen möchten, füllen Sie dieses [Formular](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4Rol2vQGupxItW9_BerXV6VUQTJPN1Q5WUI4OFNTWkYzQjg3WllUSDAxWi4u) aus. Wir werden uns bei Ihnen melden.
 
 **Sonstige Änderungen**
 
