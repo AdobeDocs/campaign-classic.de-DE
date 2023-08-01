@@ -2,13 +2,13 @@
 product: campaign
 title: S mit dem Enhanced MTA in Adobe Campaign Classic
 description: Erfahren Sie mehr über den Umfang und die Besonderheiten des E-Mail-Versands mit dem Enhanced MTA in Adobe Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Email
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 4c0c3007a03d4274fa1b436259cb2d302fcc8185
 workflow-type: tm+mt
-source-wordcount: '2069'
+source-wordcount: '1797'
 ht-degree: 100%
 
 ---
@@ -90,32 +90,9 @@ Nein. Die Aktualisierung erfordert keinen Wechsel zu neuen IPs, sodass Sie Ihre 
 
 **Wirkt sich die Aktualisierung auf den Enhanced MTA auf laufende Kampagnen oder Sendungen aus?**
 
-Alle Sendungen, die vor der Aktualisierung Ihrer Instanz auf den Enhanced MTA vorbereitet wurden, müssen erneut vorbereitet werden, damit Sie den neuen MTA ordnungsgemäß nutzen können.
-
 Für Kunden, die die Transaktionsnachrichtenfunktionen von Adobe Campaign nutzen, werden alle API-Aufrufe zum Auslösen einer E-Mail während der sehr kurzen Ausfallzeit der Aktualisierung in eine Warteschlange gestellt und nach Abschluss der Aktualisierung versucht.
 
 ## Besonderheiten des Enhanced MTA {#enhanced-mta-impacts}
-
-### Header des Enhanced MTA
-
-Die neuesten Campaign Classic-Instanzen enthalten Code, der jeder Nachricht die erforderlichen Enhanced MTA-Header hinzufügt. Wenn Sie Adobe Campaign 19.1 (Build 9032) oder höher verwenden und dies nicht der Fall ist, müssen Sie die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) bitten, den Parameter &quot;useMomentum=true&quot; zur Konfiguration Ihrer Ausführungsinstanz hinzuzufügen (in der Datei [serverConf.xml](../../installation/using/the-server-configuration-file.md#mta)), die je nach Ihrer Konfiguration möglicherweise Ihre Marketing-Instanz, [Mid-Sourcing-Instanz](../../installation/using/mid-sourcing-server.md) oder Ihre [Ausführungsinstanz für Transaktionsnachrichten](../../message-center/using/configuring-instances.md#execution-instance) ist.
-
-Wenn Sie jedoch eine ältere Instanz verwenden, die diesen Code nicht enthält, muss eine neue Typologieregel mit dem Namen **[!UICONTROL Typology Rule for Enhanced MTAs]** zu allen vorhandenen Typologien in Ihrer Campaign-Instanz hinzugefügt werden.
-Diese Regel wird von einem **[!UICONTROL Typologiepaket]** hinzugefügt, das im Rahmen der Aktualisierung auf den Enhanced MTA installiert wurde.
-
->[!IMPORTANT]
->
->Wenn Sie diese Typologieregel in Ihren Typologien sehen, dürfen Sie sie nicht löschen oder in irgendeiner Weise ändern. Andernfalls könnten Ihre E-Mail-Sendungen beeinträchtigt werden.
-
-Dieses **[!UICONTROL Typologiepaket]** muss in der Marketing-Instanz von Adobe Campaign installiert sein.
-
-Wenn Sie ein Kunde mit einer hybriden Bereitstellung sind, erhalten Sie vom Adobe Campaign-Team Anweisungen zur Installation des **[!UICONTROL Typologiepakets]** in Ihrer Marketing-Instanz im Rahmen der Aktualisierung auf den Enhanced MTA. Wenden Sie sich an Ihren Kundenbetreuer, um die vollständigen Anweisungen zu erhalten.
-
->[!IMPORTANT]
->
->Die Anweisungen des Adobe Campaign-Teams zur Installation des **[!UICONTROL Typologiepakets]** sollten sorgfältig befolgt werden. Andernfalls kann es zu größeren Problemen mit Ihren IPs kommen, die zum Senden von E-Mails verwendet werden.
-
-Weitere Informationen zu Typologien finden Sie in [diesem Abschnitt](../../campaign-opt/using/about-campaign-typologies.md).
 
 ### Neue MX-Regeln
 
