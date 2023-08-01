@@ -2,8 +2,9 @@
 product: campaign
 title: Schemaelemente und Attribute - Parameter-Element
 description: Parameter-Element
+feature: Schema Extension
 exl-id: 54538c3e-3232-4bf7-a09c-dacf0f072be5
-source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
+source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
 source-wordcount: '48'
 ht-degree: 12%
@@ -22,7 +23,7 @@ parameters:==param
 
 Kein(e)
 
-## Übergeordnete Elemente {#parents-13}
+## Eltern {#parents-13}
 
 `<method>`
 
@@ -36,7 +37,7 @@ Dieses Element definiert eine Gruppe von `<parameter>`  -Elemente.
 
 ## Verwendung und Verwendungskontext {#use-and-context-of-use-8}
 
-Dieses Element ist auch für ein einzelnes `<param>` untergeordnetes Element des `<method>`  -Element.
+Dieses Element ist auch für eine `<param>` untergeordnetes Element des `<method>`  -Element.
 
 ## Attributbeschreibung {#attribute-description-13}
 

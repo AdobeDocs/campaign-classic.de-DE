@@ -2,8 +2,9 @@
 product: campaign
 title: Schemaelemente und Attribute - Schlüsselelement
 description: Schlüsselelement
+feature: Schema Extension
 exl-id: 3d0ef574-27a3-40f2-91a0-70e9583d9980
-source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
+source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 8%
@@ -27,7 +28,7 @@ key:==keyfield
 * @name (MNTOKEN)
 * @noDbIndex (boolean)
 
-## Übergeordnete Elemente {#parents-8}
+## Eltern {#parents-8}
 
 `<element>`
 
@@ -53,11 +54,11 @@ Die ersten 1000 Kennungen sind reserviert. Wenn also ein Wertebereich für Schl�
 
 ## Attributbeschreibung {#attribute-description-8}
 
-* **allowEmptyPart (boolean)**: bei zusammengesetzten Schlüsseln wird dieser Schlüssel als gültig betrachtet, wenn dieses Attribut aktiviert ist, wenn mindestens einer seiner Schlüssel nicht leer ist. Ist dies der Fall, ist der leere Nennwert &quot;0&quot;(boolescher Wert oder für alle Typen numerischer Daten). Standardmäßig müssen alle Schlüssel, aus denen ein zusammengesetzter Schlüssel besteht, eingegeben werden.
+* **allowEmptyPart (boolean)**: Bei einem zusammengesetzten Schlüssel wird dieser Schlüssel bei Aktivierung dieses Attributs als gültig betrachtet, wenn mindestens einer seiner Schlüssel nicht leer ist. Ist dies der Fall, ist der leere Nennwert &quot;0&quot;(boolescher Wert oder für alle Typen numerischer Daten). Standardmäßig müssen alle Schlüssel, aus denen ein zusammengesetzter Schlüssel besteht, eingegeben werden.
 * **applyIf (string)**: Mit diesem Attribut können Sie den Schlüssel optional machen. Sie definiert die Bedingung, nach der die Schlüsseldefinition angewendet wird. Dieses Attribut erhält einen XTK-Ausdruck.
-* **internal (boolean)**: Wenn es aktiviert ist, informiert Adobe Campaign über das primäre Schlüsselattribut.
+* **internal (boolean)**: Wenn es aktiviert ist, teilt Adobe Campaign mit, dass der Schlüssel primär ist.
 * **label (string)**: Titel des Schlüssels.
-* **name (MNTOKEN)**: interner Name des Schlüssels.
+* **name (MNTOKEN)**: Interner Name des Schlüssels.
 * **noDbIndex (boolean)**: Wenn sie aktiviert ist (noDbIndex=&quot;true&quot;), wird das dem Schlüssel entsprechende Feld nicht indiziert.
 
 ## Beispiele {#examples-------}

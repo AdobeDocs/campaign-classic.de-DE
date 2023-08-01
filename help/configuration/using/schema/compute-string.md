@@ -2,8 +2,9 @@
 product: campaign
 title: Elemente und Attribute - Compute-String-Element
 description: Compute-string-Element
+feature: Schema Extension
 exl-id: 8a079bb8-3f53-4144-a065-5bd402649cc7
-source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
+source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
 source-wordcount: '90'
 ht-degree: 5%
@@ -22,7 +23,7 @@ compute-string:==EMPTY
 
 @expr
 
-## Übergeordnete Elemente {#parents-1}
+## Eltern {#parents-1}
 
 `<element>`
 
@@ -40,7 +41,7 @@ Wenn nicht `<compute-string>` definiert wird, wird ein `<compute-string>` -Eleme
 
 ## Attributbeschreibung {#attribute-description-1}
 
-* **expr (Zeichenfolge)**: XTK-/oder Xpath-Ausdruck
+* **expr (Zeichenfolge)**: XTK- und/oder Xpath-Ausdruck
 
 ## Beispiele {#examples-1}
 

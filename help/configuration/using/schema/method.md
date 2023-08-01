@@ -2,8 +2,9 @@
 product: campaign
 title: Schemaelemente und Attribute - Methodelement
 description: Methodenelement
+feature: Schema Extension
 exl-id: 0fb74318-fe09-473c-8e33-1f3afd66b4cc
-source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
+source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 1%
@@ -30,7 +31,7 @@ Methode:==( help | Parameter)
 * @pkonly (boolean)
 * @static (boolean)
 
-## Übergeordnete Elemente {#parents-10}
+## Eltern {#parents-10}
 
 `<methods>`  ,  `<interface />`
 
@@ -47,7 +48,7 @@ Mit diesem Element können Sie eine SOAP-Methode definieren.
 
 SOAP-Methoden ermöglichen Anwendungsprozesse.
 
-Die &quot;@library&quot;ist zum Deklarieren einer neuen Methode (nicht nativ) erforderlich: der Namespace und der für die Bibliothek verwendete Name sind unabhängig vom Namespace und Namen des Schemas, in dem sich die Deklaration befindet.
+Die &quot;@library&quot;ist für die Deklarierung einer neuen (nicht nativen) Methode erforderlich: Der Namespace und der Name, der für die Bibliothek verwendet wird, sind unabhängig vom Namespace und Namen des Schemas, in dem die Deklaration enthalten ist.
 
 ## Attributbeschreibung {#attribute-description-10}
 
@@ -56,7 +57,7 @@ Die &quot;@library&quot;ist zum Deklarieren einer neuen Methode (nicht nativ) er
 * **label (string)**: Titel der Methode.
 * **library (string)**: Diese Methode ist nicht nativ für die Anwendung. Dieses Attribut nimmt den Wert der Methodenbibliothek an, in der die Methodendefinition gefunden wird (nms:mylibrary.js).
 * **name (MNTOKEN)**: eindeutiger Methodenname.
-* **static (boolean)**: Wenn dieses Attribut aktiviert ist, gilt die Methode als autonom, alle Parameter müssen der Methode zum Zeitpunkt des Aufrufs zugewiesen werden.
+* **static (boolean)**: Wenn dieses Attribut aktiviert ist, wird die Methode als autonom betrachtet, alle Parameter müssen der Methode zum Zeitpunkt des Aufrufs zugewiesen werden.
 
 ## Beispiele {#examples-7}
 

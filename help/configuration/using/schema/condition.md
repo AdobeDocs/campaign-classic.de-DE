@@ -2,8 +2,9 @@
 product: campaign
 title: Schemaelemente und Attribute - Bedingungselement
 description: Bedingungselement
+feature: Schema Extension
 exl-id: 71e98d45-3660-4d86-a5ca-8e55ae5896eb
-source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
+source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 5%
@@ -24,7 +25,7 @@ Bedingung:==EMPTY
 * @enabledIf (Zeichenfolge)
 * @expr (string)
 
-## Übergeordnete Elemente {#parents-2}
+## Eltern {#parents-2}
 
 `<sysfilter>`
 
@@ -42,7 +43,7 @@ One `<sysfiler>`  -Element kann mehrere Filterbedingungen enthalten.
 
 ## Attributbeschreibung {#attribute-description-2}
 
-* **boolOperator (Zeichenfolge)**: wenn mehrere `<conditions>` innerhalb desselben  `<sysfilter>` -Element enthält, können Sie sie mithilfe dieses Attributs kombinieren. Standardmäßig befindet sich die logische Verknüpfung zwischen `<condition>` -Elemente ist &quot;AND&quot;. Mit dem Attribut &quot;@boolOperator&quot; können Sie Links vom Typ &quot;OR&quot; und &quot;AND&quot; kombinieren.
+* **boolOperator (Zeichenfolge)**: wenn mehrere `<conditions>` werden innerhalb desselben  `<sysfilter>` -Element enthält, können Sie sie mithilfe dieses Attributs kombinieren. Standardmäßig befindet sich die logische Verknüpfung zwischen `<condition>` -Elemente ist &quot;AND&quot;. Mit dem Attribut &quot;@boolOperator&quot; können Sie Links vom Typ &quot;OR&quot; und &quot;AND&quot; kombinieren.
 * **enabledIf (Zeichenfolge)**: Bedingungsaktivierungstest.
 * **expr (Zeichenfolge)**: ein XTK-Ausdruck.
 

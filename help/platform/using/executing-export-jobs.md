@@ -2,15 +2,15 @@
 product: campaign
 title: Konfigurieren von Exportvorgängen
 description: Erfahren Sie, wie Sie in Campaign Exportvorgänge konfigurieren und ausführen.
-fearture: Overview
+feature: Overview
 badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 94fc473a-dc49-41e8-b572-51c162b09996
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: ht
+source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
+workflow-type: tm+mt
 source-wordcount: '1027'
 ht-degree: 100%
 

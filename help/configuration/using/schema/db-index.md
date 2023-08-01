@@ -2,8 +2,9 @@
 product: campaign
 title: Elemente und Attribute - Dbindex-Element
 description: dbindex-Element
+feature: Schema Extension
 exl-id: d7d1e427-12e0-4f07-9e01-d184dbe2ebf1
-source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
+source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
 source-wordcount: '339'
 ht-degree: 1%
@@ -26,7 +27,7 @@ dbindex:==keyfield
 * @name (MNTOKEN)
 * @unique (boolean)
 
-## Übergeordnete Elemente {#parents-3}
+## Eltern {#parents-3}
 
 `<element>`
 
@@ -42,23 +43,23 @@ Mit diesem Element können Sie einen mit einer Tabelle verknüpften Index defini
 
 Es ist möglich, mehrere Indizes zu definieren. Ein Index kann auf ein oder mehrere Felder der Tabelle verweisen. Die Indexdeklaration folgt in der Regel der Definition des Hauptschemaelements.
 
-Die Reihenfolge der `<keyfield>` in einer `<dbindex>` ist sehr wichtig. Die erste `<keyfield>` muss das Indexierungskriterium sein, auf dem die Abfragen hauptsächlich basieren.
+Die Reihenfolge der `<keyfield>` -Elemente, die in `<dbindex>` ist sehr wichtig. Die erste `<keyfield>` muss das Indexierungskriterium sein, auf dem die Abfragen hauptsächlich basieren.
 
-Der Name des Index in der Datenbank wird durch Verkettung des Tabellennamens und des Indexnamens berechnet. Beispiel: Tabellenname &quot;Beispiel&quot;, Namespace &quot;Cus&quot;, Indexname &quot;MyIndex&quot;-> Name des Indexfelds bei der Indexerstellung: &quot;CusSample_myIndex&quot;.
+Der Name des Index in der Datenbank wird durch Verkettung des Tabellennamens und des Indexnamens berechnet. Beispiel: Tabellenname &quot;Sample&quot;, Namespace &quot;Cus&quot;, Indexname &quot;MyIndex&quot;-> Name des Indexfelds bei der Indexerstellung. Abfrage: &quot;CusSample_myIndex&quot;.
 
 ## Attributbeschreibung {#attribute-description-3}
 
-* **_operation (string)**: definiert den Typ des Schreibens in der Datenbank.
+* **_operation (string)**: definiert den Schreibtyp in der Datenbank.
 
   Dieses Attribut wird hauptsächlich bei der Erweiterung von nativen Schemata verwendet.
 
-  Barrierefreie Werte sind:
+  Die verfügbaren Werte sind:
 
-   * &quot;none&quot;: Abstimmung. Das bedeutet, dass Adobe Campaign das Element wiederherstellt, ohne es zu aktualisieren, oder einen Fehler erzeugt, wenn es nicht vorhanden ist.
-   * &quot;insertOrUpdate&quot;: durch Einfügen aktualisiert werden. Das bedeutet, dass Adobe Campaign das Element aktualisiert oder erstellt, falls es nicht vorhanden ist.
-   * &quot;insert&quot;: einfügen. Das bedeutet, dass Adobe Campaign das Element einfügt, ohne zu überprüfen, ob es vorhanden ist.
-   * &quot;update&quot;: aktualisieren. Das bedeutet, dass Adobe Campaign das Element aktualisiert oder einen Fehler erzeugt, wenn es nicht vorhanden ist.
-   * &quot;delete&quot;: Löschen. Dies bedeutet, dass Adobe Campaign Elemente wiederherstellt und löscht.
+   * &quot;none&quot;: Abstimmung allein. Das bedeutet, dass Adobe Campaign das Element wiederherstellt, ohne es zu aktualisieren, oder einen Fehler erzeugt, wenn es nicht vorhanden ist.
+   * &quot;insertOrUpdate&quot;: Update mit Einfügung. Das bedeutet, dass Adobe Campaign das Element aktualisiert oder erstellt, falls es nicht vorhanden ist.
+   * &quot;insert&quot;: insert. Das bedeutet, dass Adobe Campaign das Element einfügt, ohne zu überprüfen, ob es vorhanden ist.
+   * &quot;update&quot;: update. Das bedeutet, dass Adobe Campaign das Element aktualisiert oder einen Fehler erzeugt, wenn es nicht vorhanden ist.
+   * &quot;Löschen&quot;: Löschen. Dies bedeutet, dass Adobe Campaign Elemente wiederherstellt und löscht.
 
 * **applyIf (string)**: Bedingung für die Berücksichtigung des Index - empfängt einen XTK-Ausdruck.
 * **label (string)**: Indexbezeichnung.

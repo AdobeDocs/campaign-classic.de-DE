@@ -2,8 +2,9 @@
 product: campaign
 title: Schemaelemente und Attribute - keyfield-Element
 description: keyfield-Element
+feature: Schema Extension
 exl-id: fb0862f9-5dcc-49f2-b99b-9822aaf3a680
-source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
+source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
 source-wordcount: '103'
 ht-degree: 4%
@@ -23,7 +24,7 @@ keyfield:==EMPTY
 * @xlink (MNTOKEN)
 * @xpath (MNTOKEN)
 
-## Übergeordnete Elemente {#parents-9}
+## Eltern {#parents-9}
 
 `<key>`  ,  `<dbindex />`
 
@@ -37,7 +38,7 @@ Dieses Element definiert die Felder, die in einen Index oder einen Schlüssel in
 
 ## Attributbeschreibung {#attribute-description-9}
 
-* **xlink (MNTOKEN)**: ermöglicht die automatische Referenzierung von Fremdschlüsseln, die im Join für eine Relationstabelle definiert sind (N-N-Link).
+* **xlink (MNTOKEN)**: referenziert automatisch Fremdschlüssel, die im Join für eine Relationstabelle definiert sind (N-N-Link).
 * **xpath (MNTOKEN)**: Definition eines Index oder eines Schlüssels auf einem `<attribute>`  -Element. Dieses Attribut erhält einen Xpath , der den Pfad zum Schemaattribut definiert, das den Schlüssel oder den Index definiert.
 
 ## Beispiele {#examples-}

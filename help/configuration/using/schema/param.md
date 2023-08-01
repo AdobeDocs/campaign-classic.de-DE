@@ -2,8 +2,9 @@
 product: campaign
 title: Schemaelemente und Attribute - Parameter-Element
 description: param-Element
+feature: Schema Extension
 exl-id: d8960a2e-6900-4346-9f06-e7dd9d7b5139
-source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
+source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 7%
@@ -30,7 +31,7 @@ param:==help
 * @namespace (MNTOKEN)
 * @type (string)
 
-## Übergeordnete Elemente {#parents-12}
+## Eltern {#parents-12}
 
 `<parameters>`
 
@@ -48,7 +49,7 @@ Mit diesem Element können Sie einen Parameter zum Aufrufen einer SOAP-Methode d
 * **inout (Zeichenfolge)**: Dieses Attribut definiert, ob sich der Parameter an der Eingabe (in) oder Ausgabe (out) des SOAP-Aufrufs befindet. Wenn dieses Attribut nicht angegeben ist, lautet der Standardparameter input (&quot;@inout=in&quot;).
 * **label (string)**: `<param>` label
 * **localizable (string)**: Wenn es aktiviert ist, weist dieses Attribut das Tool zur Sammlung an, den Wert des Attributs &quot;@label&quot;für die Übersetzung abzurufen (interne Verwendung).
-* **name (MNTOKEN)**: interner Name des `<param>`
+* **name (MNTOKEN)**: Interner Name der `<param>`
 * **type (string)**: Dieses Attribut definiert den Typ von `<param>` element
 
   Liste der verfügbaren Typen:
@@ -63,7 +64,7 @@ Mit diesem Element können Sie einen Parameter zum Aufrufen einer SOAP-Methode d
    * datetimetz
    * datetimenotz
    * date
-   * DOMDocument
+   * DOMDdocument
    * DOMElement
    * double
    * enum

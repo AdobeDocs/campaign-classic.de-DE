@@ -2,8 +2,9 @@
 product: campaign
 title: Schemaelemente und Attribute - Auflistungselement
 description: Auflistungselement
+feature: Schema Extension
 exl-id: 4cd67278-2623-4508-9a9f-9007c6a5f8ac
-source-git-commit: 40da5774c8a6a228992c4aa400e2d9924215611e
+source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 7%
@@ -27,7 +28,7 @@ enumeration:==(help| value)
 * @name (string)
 * @template (string)
 
-## Übergeordnete Elemente {#parents-5}
+## Eltern {#parents-5}
 
 `<srcschema>`
 
@@ -60,7 +61,7 @@ Auflistungen werden zu Beginn eines Schemas definiert (bevor das Hauptelement de
    * datetimetz
    * datetimenotz
    * date
-   * DOMDocument
+   * DOMDdocument
    * DOMElement
    * double
    * enum
@@ -82,7 +83,7 @@ Auflistungen werden zu Beginn eines Schemas definiert (bevor das Hauptelement de
 * **default (string)**: Standardwert. Der Standardwert kann auch einer der in der Auflistung definierten Werte sein.
 * **desc (Zeichenfolge)**: Auflistungsbeschreibung.
 * **label (string)**: Auflistungsbezeichnung.
-* **name (string)**: interner Name der Auflistung.
+* **name (string)**: Interner Name der Auflistung.
 * **template (string)**: Dieses Attribut definiert einen Verweis auf eine `<enumeration>` -Element, das von mehreren Schemas gemeinsam genutzt wird. Die Definition wird automatisch in das aktuelle Schema kopiert.
 
 ## Beispiele {#examples-4}
