@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Import und Export von Audiences
-description: Import und Export von Audiences
+title: Import und Export von Zielgruppen
+description: Import und Export von Zielgruppen
 feature: Audiences, People Core Service Integration
 badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
@@ -10,14 +10,14 @@ content-type: reference
 topic-tags: audience-sharing
 exl-id: c2293fc5-c9ba-4a73-8f39-fa7cdd06e8dd
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '670'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 
-# Import und Export von Audiences{#importing-and-exporting-audiences}
+# Import und Export von Zielgruppen{#importing-and-exporting-audiences}
 
 
 
