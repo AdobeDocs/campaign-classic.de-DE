@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Angebotsvalidierung
-description: Angebotsvalidierung
+title: Genehmigen und Aktivieren eines Angebots
+description: Genehmigen und Aktivieren eines Angebots
 feature: Interaction, Offers
 badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
@@ -10,13 +10,13 @@ content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: cf7649fe-f62a-4dfa-a19e-9c1ca545e3e3
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '672'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# Angebotsvalidierung{#approving-and-activating-an-offer}
+# Genehmigen und Aktivieren eines Angebots{#approving-and-activating-an-offer}
 
 
 
