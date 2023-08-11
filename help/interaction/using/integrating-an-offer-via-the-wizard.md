@@ -9,13 +9,13 @@ content-type: reference
 topic-tags: delivering-an-offer
 exl-id: 64aea8b9-7f06-4db0-a3e6-6a0e17c3ddcb
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '852'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Integration über den Assistenten{#integrating-an-offer-via-the-wizard}
+# Integrieren eines Angebots über den Assistenten{#integrating-an-offer-via-the-wizard}
 
 
 
