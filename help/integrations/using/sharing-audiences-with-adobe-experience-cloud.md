@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Freigabe von Audiences mit Adobe Experience Cloud
-description: Freigabe von Audiences mit Adobe Experience Cloud
+title: Freigabe von Zielgruppen mit Adobe Experience Cloud
+description: Freigabe von Zielgruppen mit Adobe Experience Cloud
 feature: Audiences, People Core Service Integration
 badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
@@ -10,13 +10,13 @@ content-type: reference
 topic-tags: audience-sharing
 exl-id: 1c90e913-3375-476c-ab60-89f20239eb0d
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '317'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# Freigabe von Audiences mit Adobe Experience Cloud{#sharing-audiences-with-adobe-experience-cloud}
+# Freigabe von Zielgruppen mit Adobe Experience Cloud{#sharing-audiences-with-adobe-experience-cloud}
 
 
 
