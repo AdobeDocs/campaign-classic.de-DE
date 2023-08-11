@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Angebotsplatzierungen
-description: Angebotsplatzierungen
+title: Erstellen von Angebotsplatzierungen
+description: Erstellen von Angebotsplatzierungen
 feature: Interaction, Offers
 badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 audience: interaction
@@ -9,13 +9,13 @@ content-type: reference
 topic-tags: managing-environments
 exl-id: bdda98f7-a083-4f3b-b691-c28ec79af780
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1039'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Platzierungen erstellen{#creating-offer-spaces}
+# Erstellen von Angebotsplatzierungen{#creating-offer-spaces}
 
 
 
@@ -71,7 +71,7 @@ Gehen Sie wie folgt vor, um eine neue Platzierung zu erstellen:
 
    ![](assets/offer_space_create_007.png)
 
-Für eingehende Interaktionen können die XML-Rendering-Funktionen, für ausgehende die HTML- und Text-Rendering-Funktionen überschrieben werden. Weitere Informationen finden Sie unter [Über eingehende Kanäle](../../interaction/using/about-inbound-channels.md).
+Für eingehende Interaktionen können die XML-Rendering-Funktionen, für ausgehende die HTML- und Text-Rendering-Funktionen überschrieben werden. Weitere Informationen finden Sie unter [Über Inbound-Kanäle](../../interaction/using/about-inbound-channels.md).
 
 ## Vorschlagsstatus {#offer-proposition-statuses}
 
