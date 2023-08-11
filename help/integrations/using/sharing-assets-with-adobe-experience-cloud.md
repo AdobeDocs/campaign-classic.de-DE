@@ -10,13 +10,13 @@ content-type: reference
 topic-tags: asset-sharing
 exl-id: b28aa5a5-afba-458b-8a85-375493c6c836
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '179'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
-# Assets mit Adobe Marketing Cloud freigeben{#sharing-assets-with-adobe-experience-cloud}
+# Freigeben von Assets mit Adobe Experience Cloud{#sharing-assets-with-adobe-experience-cloud}
 
 
 
