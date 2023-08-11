@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Ausgehender Kanal
-description: Ausgehender Kanal
+title: Angebote auf einem Outbound-Kanal
+description: Angebote auf einem Outbound-Kanal
 feature: Interaction, Offers
 badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
@@ -10,13 +10,13 @@ content-type: reference
 topic-tags: case-study
 exl-id: 77fee343-09d1-4d60-be43-efe02953a70c
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '477'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Angebot auf einem Outbound-Kanal{#offers-on-an-outbound-channel}
+# Angebote auf einem Outbound-Kanal{#offers-on-an-outbound-channel}
 
 
 
