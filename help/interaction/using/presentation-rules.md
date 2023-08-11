@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: case-study
 exl-id: f9dd9ad6-48da-4a80-9405-109a433a1ed5
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '487'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -100,7 +100,7 @@ Unterbreiten Sie ein Angebot aus der Kategorie &quot;Kanada&quot;. Wenn das Ange
 
    ![](assets/offer_typology_example_016.png)
 
-1. Fügen Sie Ihre Angebote in den Text der Nachricht ein und versenden Sie die Nachricht. Weitere Informationen hierzu finden Sie im Abschnitt [Über ausgehende Kanäle](../../interaction/using/about-outbound-channels.md).
+1. Fügen Sie Ihre Angebote in den Text der Nachricht ein und versenden Sie die Nachricht. Weitere Informationen hierzu finden Sie im Abschnitt [Über Outbound-Kanäle](../../interaction/using/about-outbound-channels.md).
 
    Der zuvor ausgewählte Empfänger hat das für ihn infrage kommende Angebot wie geplant erhalten.
 
