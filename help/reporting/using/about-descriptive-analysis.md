@@ -8,7 +8,7 @@ badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 exl-id: 19920058-e8e8-4e17-9cc3-24ddf9f96d04
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: ht
-source-wordcount: '0'
+source-wordcount: '213'
 ht-degree: 100%
 
 ---
