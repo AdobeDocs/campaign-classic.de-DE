@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Email
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
 source-git-commit: dbbc5d9f354357e5ca13eaeffddf67865480070d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1378'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -90,7 +90,7 @@ Nein. Die Aktualisierung erfordert keinen Wechsel zu neuen IPs, sodass Sie Ihre 
 
 **Wirkt sich die Aktualisierung auf den Enhanced MTA auf laufende Kampagnen oder Sendungen aus?**
 
-Für Kunden, die die Transaktionsnachrichtenfunktionen von Adobe Campaign nutzen, werden alle API-Aufrufe zum Auslösen einer E-Mail während der sehr kurzen Ausfallzeit der Aktualisierung in eine Warteschlange gestellt und nach Abschluss der Aktualisierung versucht.
+Für Kundinnen und Kunden, die die Transaktionsnachrichtenfunktionen von Adobe Campaign nutzen, werden alle API-Aufrufe zum Auslösen einer E-Mail während der sehr kurzen Ausfallzeit während einer Aktualisierung in eine Warteschlange gestellt und nach Abschluss der Aktualisierung versucht.
 
 ## Besonderheiten des Enhanced MTA {#enhanced-mta-impacts}
 
@@ -158,8 +158,8 @@ Die nachstehende Tabelle zeigt die verschiedenen Schritte im Versandprozess mit 
 | Schritt im Versandprozess | KPI-Zusammenfassung | Versandlogstatus |
 |--- |--- |--- |
 | Nachricht wird erfolgreich von Campaign an den Enhanced MTA weitergeleitet | **[!UICONTROL Erfolgsprozentsatz]** beginnt bei 100 % | Gesendet |
-| Hardbounces werden vom Enhanced MTA zurückgemeldet. | **[!UICONTROL Erfolg]** -Prozentsatz entsprechend verringert | Fehlgeschlagen |
-| Softbounces werden vom erweiterten MTA zurückgemeldet. | Keine Änderung in **[!UICONTROL Erfolg]** Prozentsatz | Gesendet |
-| Weitere Zustellversuche von Nachrichten, bei denen ein Softbounce aufgetreten ist, sind erfolgreich | Keine Änderung in **[!UICONTROL Erfolg]** Prozentsatz | Gesendet | **[!UICONTROL Erfolg]** entsprechend erhöht | Gesendet |
-| Weitere Zustellversuche von Nachrichten, bei denen ein Softbounce aufgetreten ist, schlagen fehl | **[!UICONTROL Erfolg]** -Prozentsatz entsprechend verringert | Fehlgeschlagen |
+| Hardbounces werden vom Enhanced MTA zurückgemeldet. | **[!UICONTROL Erfolgsprozentsatz]** wird entsprechend verringert | Fehlgeschlagen |
+| Softbounces werden vom erweiterten MTA zurückgemeldet. | Keine Änderung des **[!UICONTROL Erfolgsprozentsatzes]** | Gesendet |
+| Weitere Zustellversuche von Nachrichten, bei denen ein Softbounce aufgetreten ist, sind erfolgreich | Keine Änderung des **[!UICONTROL Erfolgsprozentsatzes]** | Gesendet | **[!UICONTROL Erfolgsprozentsatz]** wird entsprechend erhöht | Gesendet |
+| Weitere Zustellversuche von Nachrichten, bei denen ein Softbounce aufgetreten ist, schlagen fehl | **[!UICONTROL Erfolgsprozentsatz]** wird entsprechend verringert | Fehlgeschlagen |
 
