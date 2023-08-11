@@ -9,13 +9,13 @@ audience: integrations
 content-type: reference
 exl-id: 9fa3ce08-3007-4c65-9841-bad339428b7c
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '361'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Experience-Manager-Newsletter erstellen{#creating-an-experience-manager-newsletter}
+# Erstellen eines Experience Manager-Newsletters{#creating-an-experience-manager-newsletter}
 
 
 
