@@ -2,13 +2,13 @@
 product: campaign
 title: Wichtigste Schritte zum Senden einer E-Mail
 description: Erfahren Sie, wie Sie den Versand einer E-Mail bestätigen, und lernen Sie die Besonderheiten des E-Mail-Versands kennen
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Email
 exl-id: c75a5ea2-8d62-4f98-bccd-7116a4d404fd
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '230'
 ht-degree: 100%
 
 ---

@@ -12,17 +12,17 @@ exl-id: acbd2873-7b1c-4d81-bc62-cb1246c330af
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '914'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
-# Voraussetzungen für die Installation von Campaign unter Linux{#prerequisites-of-campaign-installation-in-linux}
+# Voraussetzungen für die Installation von Kampagne unter Linux{#prerequisites-of-campaign-installation-in-linux}
 
 
 
 ## Softwarevoraussetzungen {#software-prerequisites}
 
-In diesem Abschnitt werden die Vorkonfigurationsschritte beschrieben, die vor der Installation von Adobe Campaign erforderlich sind.
+In diesem Abschnitt werden die vor der Installation von Adobe Campaign erforderlichen vorläufigen Konfigurationsschritte erläutert.
 
 Die für die Installation von Adobe Campaign erforderlichen technischen und Softwarekonfigurationen werden im Abschnitt [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md).
 
@@ -43,9 +43,9 @@ Zur Erinnerung: Die folgenden Komponenten müssen installiert und korrekt konfig
 
 Um Adobe Campaign unter Linux zu installieren, stellen Sie bitte sicher, dass Sie über die erforderlichen Bibliotheken verfügen.
 
-* Bibliothek C muss den TLS-Modus (Thread Local Storage) unterstützen können. Dieser Modus ist in den meisten Fällen aktiv, mit Ausnahme einiger Kernels, für die die Xen-Unterstützung deaktiviert wurde.
+* Bibliothek C muss den Modus &quot;TLS (Thread Local Storage&quot;) unterstützen können. Dieser Modus ist in den meisten Fällen aktiv, außer mit einigen Kerneln, für die die Unterstützung von Xen deaktiviert wurde.
 
-  Um dies zu überprüfen, können Sie die **uname -a | grep xen** -Befehl.
+  Um dies zu überprüfen, können Sie beispielsweise den **Befehl &quot;uname a | grep xen** &quot; verwenden.
 
   Wenn der Befehl nichts zurückgibt (leere Zeile), bedeutet dies, dass die Konfiguration korrekt ist.
 
@@ -53,15 +53,15 @@ Um Adobe Campaign unter Linux zu installieren, stellen Sie bitte sicher, dass Si
 
   Für RHEL 7/8-Distributionen ist Version 1.0 von OpenSSL erforderlich.
 
-* Für die Verwendung von Adobe Campaign benötigen Sie die **libicu** Bibliothek installiert.
+* Um Adobe Campaign zu verwenden, müssen Sie die **libicu** Bibliothek installiert haben.
 
-  Die folgenden Versionen von **libicu** werden unterstützt (32 Bit oder 64 Bit):
+  Die folgenden Versionen von **LiveIu** werden unterstützt (32bit oder 64bit):
 
    * RHEL 7/8, CentOS 7: libicu50
    * Debian 8: libicu52
    * Debian 9: libicu57
 
-  Um Adobe Campaign zu verwenden, müssen Sie die Bibliothek libc-ares installiert haben. Führen Sie unter RHEL/CentOS den folgenden Befehl aus:
+  Um Adobe Campaign zu verwenden, müssen Sie die libc-Ares Bibliothek installiert haben. Führen Sie unter RHEL/CentOS den folgenden Befehl aus:
 
   ```
   yum install c-ares
@@ -103,7 +103,7 @@ SELINUX=disabled
 
 ### Schriftarten für MTA-Statistiken {#fonts-for-mta-statistics}
 
-Damit Berichte zu MTA-Statistiken (nms/fra/jsp/stat.jsp) korrekt angezeigt werden, fügen Sie Schriftarten hinzu.
+In bestellen für Berichte über MTA Statistics (NMS/Fra/JSP/stat .jsp), die korrekt angezeigt werden sollen, Schriftarten hinzufügen.
 
 Fügen Sie in Debian den Befehl hinzu:
 
@@ -125,7 +125,7 @@ Verwenden Sie in Redhat den folgenden Befehl:
   dnf install xorg-x11-fonts-misc xorg-x11-fonts-75dpi dejavu-lgc-sans-fonts  dejavu-sans-fonts dejavu-sans-mono-fonts dejavu-serif-fonts
   ```
 
-### Schriftarten für japanische Instanzen {#fonts-for-japanese-instances}
+### Schriftarten für Japanisch Instanzen {#fonts-for-japanese-instances}
 
 Spezifische Schriften sind für die japanischen Instanzen erforderlich, um die Berichte in das PDF-Format zu exportieren.
 
@@ -167,7 +167,7 @@ Für Debian sind die folgenden Konfigurationen erforderlich:
 
 ### Installieren von LibreOffice für CentOS {#installing-libreoffice-for-centos}
 
-Die folgenden Konfigurationen sind mit CentOS erforderlich:
+Folgende Konfigurationen sind für CentOS erforderlich:
 
 ```
 yum install libreoffice-headless libreoffice-writer libreoffice-calc
@@ -183,15 +183,15 @@ Die unterstützte Pilotversion wird in [Kompatibilitätsmatrix](../../rn/using/c
 
 ### PostgreSQL {#postgresql}
 
-Adobe Campaign unterstützt alle Versionen der PostgreSQL-Client-Bibliotheken ab Version 7.2: (**libpq.so.5**, **libpq.so.4**, **libpq.so.3.2** und **libpq.so.3.1**).
+Adobe Campaign unterstützt alle Versionen des PostgreSQL Client Bibliotheken von Version 7,2: ( **libpq. so. 5** , **libpq. d. 4** , **libpq.. 3.2** und **libpq. so. 3.1** ).
 
-Für die Verwendung von PostgreSQL mit Adobe Campaign ist auch die Installation der entsprechenden **pgcrypto** -Bibliotheken.
+Für die Verwendung von PostgreSQL mit Adobe Campaign ist auch die Installation der entsprechenden **PGCrupto** Bibliotheken erforderlich.
 
 ### Oracle {#oracle}
 
-Rufen Sie die Bibliotheksversion für 64-Bit Debian ab, d. h.: **libclntsh.so**, **libclntsh.so.11.1** und **libclntsh.so.10.1**.
+Holen Sie sich die Bibliothek Version für 64-Bit Debian, d. h.: **libclntsh.so** , **libclntsh. so. 11.1** und **libclntsh.. 10.1** .
 
-Sie können ein Linux RPM-Paket vom Oracle Technology Network erhalten.
+Sie können ein Paket von Linux RPM über das Oracle Technology Network erhalten.
 
 >[!NOTE]
 >
@@ -217,7 +217,7 @@ Wenn Sie in der Clientkonsole feststellen, dass unerwartete Zeitverzögerungen (
 
 ### DB2 {#db2}
 
-Die unterstützte Bibliotheksversion ist **libdb2.so**.
+Die Bibliothek unterstützte Version ist **libdb2.so** .
 
 ## Implementierungsschritte {#implementation-steps}
 
@@ -225,7 +225,7 @@ Adobe Campaign-Installationen für Linux müssen in der folgenden Reihenfolge du
 
 Der Installationsprozess wird in diesem Kapitel beschrieben. Die Installationsschritte lauten wie folgt:
 
-* Schritt 1: Installieren des Anwendungsservers, siehe [Installieren von Paketen mit Linux](../../installation/using/installing-packages-with-linux.md).
-* Schritt 2: Integration mit einem Webserver (optional, je nach bereitgestellter Komponente).
+* Schritt 1: Installieren des Applikation Servers, siehe [ Installieren von Paketen mit Linux ](../../installation/using/installing-packages-with-linux.md) .
+* Schritt 2: integrieren mit einem Webserver (optional, abhängig von den eingesetzten Komponenten).
 
-Nach Abschluss der Installationsschritte müssen Sie die Instanzen, die Datenbank und den Server konfigurieren. Weitere Informationen hierzu finden Sie unter [Über die Erstkonfiguration](../../installation/using/about-initial-configuration.md).
+Nachdem die Installationsschritte abgeschlossen sind, müssen Sie die Instanzen, die-Datenseite und den Server konfigurieren. Weiterführende Informationen hierzu finden Sie in [ der ersten Konfiguration ](../../installation/using/about-initial-configuration.md) .

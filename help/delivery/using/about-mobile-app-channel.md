@@ -2,13 +2,13 @@
 product: campaign
 title: Erste Schritte mit dem Mobile-App-Kanal
 description: Erste Schritte mit dem Mobile-App-Kanal in Adobe Campaign
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Push
 exl-id: c3b0406f-f652-42f4-ad0d-23fb719cd1b6
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '680'
 ht-degree: 100%
 
 ---

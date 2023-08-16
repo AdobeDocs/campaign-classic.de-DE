@@ -2,12 +2,12 @@
 product: campaign
 title: Datenorientierte APIs
 description: Datenorientierte APIs
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: API
 exl-id: a392c55e-541a-40b1-a910-4a6dc79abd2d
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1861'
+source-wordcount: '1868'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ Datenorientierte APIs ermöglichen es Ihnen, das gesamte Datenmodell anzuspreche
 
 Adobe Campaign bietet keine dedizierte Lese-API pro Entität (keine getRecipient- oder getDelivery-Funktion usw.). Verwenden Sie die Lese- und Änderungsmethoden für die Daten von QUERY &amp; WRITER , um auf die Daten des Modells zuzugreifen.
 
-Mit Adobe Campaign können Sie Sammlungen verwalten: -Abfragen ermöglichen die Wiederherstellung einer Reihe von Informationen, die auf der Basis gesammelt wurden. Im Gegensatz zum Zugriff im SQL-Modus geben Adobe Campaign-APIs eine XML-Baumstruktur anstelle von Datenspalten zurück. Adobe Campaign erstellt so zusammengesetzte Dokumente mit allen erfassten Daten.
+Adobe Campaign ermöglicht die Verwaltung von Kollektionen: Abfragen ermöglichen den Abruf von auf der Basis erfassten Informationen. Im Gegensatz zum Zugriff im SQL-Modus geben Adobe Campaign-APIs eine XML-Baumstruktur anstelle von Datenspalten zurück. Adobe Campaign erstellt so zusammengesetzte Dokumente mit allen erfassten Daten.
 
 Dieser Betriebsmodus bietet keine Eins-zu-Eins-Zuordnung zwischen den Attributen und Elementen der XML-Dokumente und den Spalten der Tabellen in der Datenbank.
 
@@ -42,7 +42,7 @@ Das folgende Einführungsschema beschreibt den Austausch auf niedriger Ebene zum
 
 Für Spalten und Bedingungen können Sie Abfragen verwenden.
 
-Auf diese Weise können Sie die zugrunde liegende SQL isolieren. Die Abfragesprache hängt nicht von der zugrunde liegenden Engine ab: Einige Funktionen werden neu zugeordnet, was mehrere SELECT SQL-Bestellungen generieren kann.
+Auf diese Weise können Sie die zugrunde liegende SQL isolieren. Die Sprache der Abfrage hängt nicht von der zugrunde liegenden Engine ab: Einige Funktionen werden neu zugeordnet, was mehrere SELECT-SQL-Bestellungen generieren kann.
 
 Weitere Informationen hierzu finden Sie unter [Beispiel für die Methode &#39;ExecuteQuery&#39; des Schemas &#39;xtk:queryDef&#39;](../../configuration/using/web-service-calls.md#example-on-the--executequery--method-of-schema--xtk-querydef-).
 
@@ -52,7 +52,7 @@ Die **ExecuteQuery** -Methode wird in [ExecuteQuery (xtk:queryDef)](#executequer
 
 Mit Schreibbefehlen können Sie einfache oder komplexe Dokumente mit Einträgen in einer oder mehreren Tabellen der Basis schreiben.
 
-Mit Transaktions-APIs können Sie Abstimmungen über das **updateOrInsert** command: Mit einem Befehl können Sie Daten erstellen oder aktualisieren. Sie können auch die Änderungszusammenführung konfigurieren (**merge**): In diesem Betriebsmodus können Sie Teilaktualisierungen zulassen.
+Mit Transaktions-APIs können Sie Abstimmungen über das **updateOrInsert** -Befehl: Mit einem Befehl können Sie Daten erstellen oder aktualisieren. Sie können auch die Änderungszusammenführung konfigurieren (**merge**): ermöglicht die teilweise Aktualisierung.
 
 Die XML-Struktur bietet eine logische Ansicht der Daten und ermöglicht es Ihnen, die physische Struktur der SQL-Tabelle zu umgehen.
 
@@ -60,7 +60,7 @@ Die Write-Methode wird im Abschnitt [Write/WriteCollection (xtk:session)](#write
 
 ## ExecuteQuery (xtk:queryDef) {#executequery--xtk-querydef-}
 
-Auf diese Weise können Sie Abfragen aus Daten durchführen, die mit einem Schema verknüpft sind. Es benötigt eine Authentifizierungszeichenfolge (muss angemeldet sein) und ein XML-Dokument, das die als Parameter zu übermittelnde Abfrage beschreibt. Der Parameter return ist ein XML-Dokument, das das Ergebnis der Abfrage im Format des Schemas enthält, auf das sich die Abfrage bezieht.
+Mit dieser Methode können Sie Abfragen aus Daten durchführen, die mit einem Schema verknüpft sind. Es benötigt eine Authentifizierungszeichenfolge (muss angemeldet sein) und ein XML-Dokument, das die als Parameter zu übermittelnde Abfrage beschreibt. Der Parameter return ist ein XML-Dokument, das das Ergebnis der Abfrage im Format des Schemas enthält, auf das sich die Abfrage bezieht.
 
 Definition der Methode &quot;ExecuteQuery&quot;im Schema &quot;xtk:queryDef&quot;:
 
@@ -133,7 +133,7 @@ Eine Abfrage muss auf ein Startschema aus dem **schema** -Attribut.
 Der gewünschte Vorgangstyp wird im Feld **operation** -Attribut und enthält einen der folgenden Werte:
 
 * **get**: ruft einen Datensatz aus der Tabelle ab und gibt einen Fehler zurück, wenn die Daten nicht vorhanden sind.
-* **getIfExists**: Ruft einen Datensatz aus der Tabelle ab und gibt ein leeres Dokument zurück, wenn die Daten nicht vorhanden sind;
+* **getIfExists**: ruft einen Datensatz aus der Tabelle ab und gibt ein leeres Dokument zurück, wenn die Daten nicht vorhanden sind.
 * **select**: erstellt einen Cursor, um mehrere Datensätze zurückzugeben, und gibt ein leeres Dokument zurück, wenn keine Daten vorhanden sind;
 * **count**: gibt eine Datenanzahl zurück.
 
@@ -252,7 +252,7 @@ Die Abfrage kann durch Hinzufügen der **groupBy** direkt dem zu gruppierenden F
 
 >[!NOTE]
 >
->Es ist nicht mehr erforderlich, die `<groupby>` -Element.
+>Es ist nicht mehr erforderlich, die Variable `<groupby>` -Element.
 
 #### Bremsung unter Bedingungen {#bracketing-in-conditions}
 
@@ -296,7 +296,7 @@ Diese Syntax vereinfacht die Abfrage, wenn mehr als zwei Daten in der Bedingung 
 
 #### Beispiele für Links {#examples-on-links}
 
-* Links 1-1 oder N1: Wenn die Tabelle über den Fremdschlüssel verfügt (der Link beginnt in der Tabelle), können die Felder der verknüpften Tabelle gefiltert oder direkt abgerufen werden.
+* Links 1-1 oder N1: Wenn die Tabelle den Fremdschlüssel enthält (der Link beginnt in der Tabelle), können die Felder der verknüpften Tabelle direkt gefiltert oder abgerufen werden.
 
   Beispiel eines Filters für die Ordnername:
 
@@ -317,7 +317,7 @@ Diese Syntax vereinfacht die Abfrage, wenn mehr als zwei Daten in der Bedingung 
   </select>
   ```
 
-* Sammlungslinks (1N): Die Filterung der Felder einer Kollektionstabelle muss über die **VORHANDEN** oder **NICHT VORHANDEN** Operator.
+* Kollektionsrelationen (1N): Die Filterung der Felder einer Kollektionstabelle muss über die Variable **VORHANDEN** oder **NICHT VORHANDEN** Operator.
 
   So filtern Sie die Empfänger, die den Informationsdienst &#39;Newsletter&#39; abonniert haben:
 
@@ -538,11 +538,11 @@ Der Abstimmschlüssel kann daher mit der **_key** -Attribut, das die Liste der X
 
 Es ist möglich, die Art des Vorgangs zu erzwingen, indem Sie die Variable **_operation** -Attribut mit den folgenden Werten verwenden:
 
-* **insert**: erzwingt das Einfügen des Datensatzes (der Abstimmschlüssel wird nicht verwendet);
+* **insert**: forciert das Einfügen des Datensatzes (der Abstimmschlüssel wird nicht verwendet);
 * **insertOrUpdate**: aktualisiert oder fügt den Datensatz je nach Abstimmschlüssel ein (Standardmodus),
-* **update**: aktualisiert den Datensatz; nichts ausführt, wenn die Daten nicht vorhanden sind,
+* **update**: Aktualisiert den Datensatz; gibt keine Aktionen aus, wenn die Daten nicht vorhanden sind;
 * **delete**: löscht die Datensätze,
-* **Keine**: wird nur zur Abstimmung der Relationen verwendet, ohne Aktualisierung oder Einfügung.
+* **Keine**: wird nur zur Abstimmung von Links verwendet, ohne Aktualisierung oder Einfügung.
 
 ### Beispiel mit der Methode &quot;Write&quot; {#example-with-the--write--method}
 
@@ -620,9 +620,9 @@ Hinzufügen eines Empfängers zu einer Gruppe mit der Gruppierungstabelle (&quot
 
 >[!NOTE]
 >
->Die Definition des Schlüssels wird nicht in der Variablen `<rcpgroup>` -Element, da ein auf dem Gruppennamen basierender impliziter Schlüssel im Schema &quot;nms:group&quot;definiert ist.
+>Die Definition des Schlüssels wird nicht im `<rcpgroup>` -Element, da ein auf dem Gruppennamen basierender impliziter Schlüssel im Schema &quot;nms:group&quot;definiert ist.
 
-### XML-Kollektionselemente {#xml-collection-elements}
+### XML-Erfassungselemente {#xml-collection-elements}
 
 Standardmäßig müssen alle Kollektionselemente ausgefüllt werden, um die XML-Kollektionselemente zu aktualisieren. Daten aus der Datenbank werden durch Daten aus dem Eingabedokument ersetzt. Wenn das Dokument nur die zu aktualisierenden Elemente enthält, müssen Sie das Attribut &quot;_operation&quot;für alle zu aktualisierenden Kollektionselemente angeben, um eine Zusammenführung mit den XML-Daten der Datenbank zu erzwingen.
 

@@ -1,13 +1,13 @@
 ---
 product: campaign
 title: Beschreibung des Adobe Campaign Classic-Datenmodells
-description: In diesem Dokument wird das Adobe Campaign-Datenmodell beschrieben.
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+description: Dieses Dokument beschreibt das Adobe Campaign-Datenmodell
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Data Model
 exl-id: fc0fd23c-f9ea-4e30-b47b-a84143d882ca
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '2379'
+source-wordcount: '2386'
 ht-degree: 4%
 
 ---
@@ -25,7 +25,7 @@ Um Beschreibungen der einzelnen Tabellen aufzurufen, navigieren Sie zu **[!UICON
 >
 >Die physische und logische Struktur der in der Anwendung übertragenen Daten wird in XML beschrieben. Sie folgt einer Adobe Campaign-spezifischen Grammatik namens „Schema“. Weitere Informationen zu Adobe Campaign-Schemata finden Sie im Abschnitt [diesem Abschnitt](../../configuration/using/about-schema-reference.md).
 
-## Beschreibung der wichtigsten Tabellen {#description-main-tables}
+## Beschreibung der Haupttabellen {#description-main-tables}
 
 Adobe Campaign stützt sich auf eine relationale Datenbank mit Tabellen, die miteinander verknüpft sind.
 
@@ -43,7 +43,7 @@ Diese Tabelle entspricht dem **nms:recipient** Schema.
 
 Dies ist die Standardtabelle, die für die **Empfänger von Sendungen**. Sie enthält daher die für Sendungen über die verschiedenen Kanäle erforderlichen Informationen:
 
-* sEmail: E-Mail-Adresse.
+* sEmail: email address.
 * iEmailFormat: bevorzugtes Format für E-Mails (1 für Text, 2 für HTML und 0, wenn nicht definiert).
 * sAddress1, sAddress2, sAddress3, sAddress4, sZipCode, sCity werden zur Erstellung der Postanschrift verwendet (gemäß XPZ 10-011 AFNOR-Standard vom Mai 1997).
 * sPhone, sMobilePhone, sFax enthalten jeweils die Telefon-, Mobiltelefon- und Faxnummern.
@@ -97,9 +97,9 @@ Es gibt einen eindeutigen Index im Feld, der den internen Namen des Versands ode
 
 ### XtkFolder {#XtkFolder}
 
-Enthält **alle Ordner in der Struktur** sichtbar im **Navigation** Registerkarte der Konsole.
+Sie enthält **alle Ordner in der Struktur** sichtbar im **Navigation** Registerkarte der Konsole.
 
-Die Ordner werden eingegeben: Der Wert des Felds sModel gibt den Datentyp an, der im Ordner enthalten sein kann. Dieses Feld ermöglicht der Clientkonsole auch die korrekte Anzeige der Daten mit den entsprechenden Formularen. Die möglichen Werte für dieses Feld werden im Navigationsbaum definiert.
+Die Ordner werden eingegeben: Der Wert des Felds sModel gibt den Datentyp an, der im Ordner enthalten sein kann. Dieses Feld ermöglicht es der Clientkonsole auch, die Daten mit den entsprechenden Formularen korrekt anzuzeigen. Die möglichen Werte für dieses Feld werden im Navigationsbaum definiert.
 
 Die Struktur wird von den Feldern iParentId und iChildCount verwaltet. Das Feld sFullName gibt den vollständigen Pfad des Ordners im Baum an. Schließlich gibt es einen eindeutigen Index im Feld, der den internen Namen des Ordners sName darstellt.
 
@@ -157,9 +157,9 @@ Der Ausführungskontext füllt die Tabellen und Felder aus, die bei der Berechnu
 * Das Speicherschema des Reaktionslog-Speichers nms:remaMatchRcp.
 * Das Transaktionstabelle-Schema (z. B. Käufe).
 * Das Abfrageschema, mit dem Sie die Starttabelle der Hypothesenbedingungen definieren können.
-* Die Relationen zu den Individuen, die die Identifizierung des Kontakts auf der Basis des Abfrageschemas ermöglichen.
+* Die Relationen zu den Individuen, die die Identifizierung des Kontakts basierend auf dem Abfrageschema ermöglichen.
 * Das Transaktionsdatum. Dieses Feld ist nicht zwingend erforderlich. Es wird jedoch empfohlen, den Berechnungsrahmen einzuschränken.
-* Transaktionsbetrag: Es handelt sich um ein optionales Feld für die automatische Berechnung von Umsatzindikatoren.
+* Transaktionsbetrag: Es handelt sich um ein optionales Feld zur automatischen Berechnung der Umsatzindikatoren.
 
 **Perimeter (in XML gespeicherte Informationen)**
 
@@ -191,7 +191,7 @@ Die folgenden Indikatoren werden während der Ausführung der Hypothese automati
 * Durchschnittliche Kosten pro Kontakt (SQL-Ausdruck). Berechnete Kosten des Versands / Anzahl Kontakte.
 * ROI (SQL-Ausdruck). Berechnete Kosten des Versands / Gesamtspanne der Kontakte.
 * Effektiver ROI (SQL-Ausdruck). Berechnete Kosten des Versands / Zusätzliche Spanne.
-* Signifikanz: **Signifikanz** (SQL-Ausdruck). Enthält Werte von 0 bis 3 in Abhängigkeit von der Signifikanz der Kampagne.
+* Bedeutung: **Signifikanz** (SQL-Ausdruck). Enthält Werte von 0 bis 3 in Abhängigkeit von der Signifikanz der Kampagne.
 
 ### NmsRemaMatchRcp {#NmsRemaMatchRcp}
 
@@ -201,7 +201,7 @@ Es enthält einen Datensatz, der die Reaktion einer Person auf eine bestimmte Hy
 
 ## Simulation und Versand {#simulation-and-delivery}
 
-Dieser Tabellensatz ist mit der Variablen **Simulation** -Modul, mit dem die Verteilung von Angeboten aus einer Kategorie oder einer Umgebung getestet werden kann, bevor der Vorschlag an Empfänger gesendet wird. Weitere Informationen hierzu finden Sie unter [Über die Angebotssimulation](../../interaction/using/about-offers-simulation.md).
+Dieser Tabellensatz ist mit der Variablen **Simulation** -Modul, mit dem die Verteilung der Angebote einer Kategorie oder einer Umgebung getestet werden kann, bevor der Vorschlag an die Empfänger gesendet wird. Weitere Informationen hierzu finden Sie unter [Über die Angebotssimulation](../../interaction/using/about-offers-simulation.md).
 
 ![](assets/data-model_simulation.png)
 
@@ -223,7 +223,7 @@ Dieser Tabellensatz ist mit der Variablen **Interaction** -Modul, das es ermögl
 
 ## Message-Center-Modul {#message-center-module}
 
-Die folgenden Tabellen sind mit dem **Transaktionsnachrichten** (Message Center)-Modul, das die Verwaltung von individuellen und eindeutigen Nachrichten ermöglicht, die an einen Benutzer gesendet und von Ereignissen generiert werden, die von Informationssystemen ausgelöst werden. Weitere Informationen hierzu finden Sie unter [Über Transaktionsnachrichten](../../message-center/using/about-transactional-messaging.md).
+Die folgenden Tabellen sind mit der Variablen **Transaktionsnachrichten** (Message Center)-Modul, das die Verwaltung von individuellen und eindeutigen Nachrichten ermöglicht, die an einen Benutzer gesendet und von Ereignissen generiert werden, die von Informationssystemen ausgelöst werden. Weitere Informationen hierzu finden Sie unter [Über Transaktionsnachrichten](../../message-center/using/about-transactional-messaging.md).
 
 ### NmsRtEvent {#NmsRtEvent}
 

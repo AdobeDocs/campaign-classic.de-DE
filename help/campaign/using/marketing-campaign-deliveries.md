@@ -2,12 +2,12 @@
 product: campaign
 title: Sendungen für eine Marketing-Kampagne
 description: Erfahren Sie mehr über Sendungen zur Marketing-Kampagne
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Campaigns, Resource Management, Cross Channel Orchestration
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1552'
+source-wordcount: '1559'
 ht-degree: 100%
 
 ---
@@ -48,7 +48,7 @@ Diese Information wird ebenfalls im Dashboard der Kampagne angezeigt. Über den 
 
 ![](assets/s_ncs_user_edit_del_to_start.png)
 
-Zur Sicherheit werden Sie in einer Pop-up-Nachricht zur Bestätigung des Vorgangs aufgefordert.
+Zur Sicherheit werden Sie in einer Pop-up-Nachricht zur Bestätigung der Aktion aufgefordert.
 
 ### Starten eines Offline-Versands {#starting-an-offline-delivery}
 

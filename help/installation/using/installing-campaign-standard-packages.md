@@ -9,7 +9,7 @@ exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '1313'
-ht-degree: 25%
+ht-degree: 26%
 
 ---
 
@@ -29,7 +29,7 @@ Integrierte Pakete enthalten eine Reihe von Funktionen, die je nach Ihren Anford
 >
 >Nachdem ein Paket installiert wurde, kann es nicht mehr deinstalliert werden.
 >
->Wenden Sie sich als gehosteter oder hybrider Kunde an die Adobe, um ein neues integriertes Paket bereitzustellen.
+>Wenden Sie sich als gehosteter oder hybrider Kunde an Adobe, um ein neues integriertes Paket bereitzustellen.
 
 So installieren Sie ein integriertes Paket:
 
@@ -213,7 +213,7 @@ In der folgenden Tabelle sind alle in Campaign integrierten Packages aufgeführt
   </tr> 
   <tr> 
    <td> Datenschutzbestimmung<br /> </td> 
-   <td> Enthält zusätzliche Funktionen, die Ihnen bei der Einhaltung Ihrer Datenschutzbestimmungen in Campaign Classic helfen. <a href="https://helpx.adobe.com/de/campaign/kb/acc-privacy.html">Weitere Infos</a> <br /> </td> 
+   <td> Enthält zusätzliche Funktionen, die Ihnen bei der Einhaltung von Datenschutzbestimmungen in Campaign Classic helfen. <a href="https://helpx.adobe.com/de/campaign/kb/acc-privacy.html">Weitere Infos</a> <br /> </td> 
    <td> Alle</td> 
   </tr> 
   <tr> 

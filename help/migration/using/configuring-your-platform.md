@@ -13,7 +13,7 @@ exl-id: ad71dead-c0ca-42d5-baa8-0f340979231a
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '479'
-ht-degree: 4%
+ht-degree: 6%
 
 ---
 
@@ -85,7 +85,7 @@ Nach Ausführung **postupgrade**, aktivieren und konfigurieren Sie die folgenden
 
   Der Gestaltungsbaustein für die Mirrorseite wurde mit v6.x geändert. Diese neue Version verbessert die Sicherheit beim Zugriff auf diese Seiten.
 
-  Wenn Sie den Gestaltungsbaustein v5 in Ihren Nachrichten verwendet haben, schlägt die Anzeige der Mirrorseite fehl. Adobe empfiehlt dringend, den neuen Gestaltungsbaustein beim Einfügen der Mirrorseite in Ihre Nachrichten zu verwenden.
+  Wenn Sie den Gestaltungsbaustein v5 in Ihren Nachrichten verwendet haben, schlägt die Anzeige der Mirrorseite fehl. Adobe empfiehlt dringend die Verwendung des neuen Gestaltungsbausteins beim Einfügen der Mirrorseite in Ihre Nachrichten.
 
   Als vorübergehende Problemumgehung (und da die Mirrorseiten noch live sind) können Sie jedoch zum alten Gestaltungsbaustein zurückkehren, um dieses Problem zu vermeiden, indem Sie die Option ändern **[!UICONTROL XtkAcceptOldPasswords]** und legen Sie **[!UICONTROL 1]**. Dies hat keine Auswirkungen auf die Verwendung des neuen Gestaltungsbausteins v6.x.
 
@@ -136,7 +136,7 @@ Nach Ausführung **postupgrade**, aktivieren und konfigurieren Sie die folgenden
 
 -->
 
-* Interaction
+* Interaktion
 
   Wenn Sie **Interaction** müssen Sie alle Parameter nach der Migration anpassen.
 

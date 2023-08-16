@@ -2,13 +2,13 @@
 product: campaign
 title: Schema erweitern
 description: Erfahren Sie, wie Sie ein Schema erweitern
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Schema Extension
 exl-id: 6e3e666d-6ab3-4346-93ca-fb0155a4660d
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '327'
-ht-degree: 11%
+source-wordcount: '334'
+ht-degree: 13%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 11%
 
 >[!IMPORTANT]
 >
->Einige integrierte Schemata dürfen nicht erweitert werden: hauptsächlich für diejenigen, für die die folgenden Einstellungen definiert sind:\
+>Einige integrierte Schemata dürfen nicht erweitert werden, hauptsächlich jene, für die die folgenden Einstellungen definiert sind:\
 >**dataSource=&quot;file&quot;** und **mappingType=&quot;xmlFile&quot;**.\
 >Die folgenden Schemata dürfen nicht erweitert werden: **xtk:entityBackupNew**, **xtk:entityBackupOriginal**, **xtk:entityOriginal**, **xtk:form**, **xtk:srcSchema**, **ncm:publishing**, **nl:monitoring**, **nms:calendar**, **nms:remoteTracking**, **nms:userAgentRules**, **xtk:builder**, **xtk:connections**, **xtk:dbInit**, **xtk:funcList**, **xtk:fusion**, **xtk: jst**, **xtk:navtree**, **xtk:queryDef**, **xtk:resourceMenu**, **xtk:schema**, **xtk:scriptContext**, **xtk:session**, **xtk:sqlSchema**, **xtk:strings**.
 >Diese Liste ist nicht vollständig.
@@ -26,7 +26,7 @@ Es gibt zwei Methoden zum Erweitern eines vorhandenen Schemas:
 1. Direktes Ändern des Quellschemas.
 1. Erstellen Sie ein anderes Schema mit demselben Namen, aber einem anderen Namespace. Der Vorteil besteht darin, dass Sie eine Tabelle erweitern können, ohne das ursprüngliche Schema ändern zu müssen.
 
-   Das Stammelement des Schemas muss die **extendedSchema** -Attribut mit dem Namen des Schemas, das als Wert erweitert werden soll.
+   Das Stammelement des Schemas muss die Variable **extendedSchema** -Attribut mit dem Namen des Schemas, das als Wert erweitert werden soll.
 
    Ein Erweiterungsschema hat kein eigenes Schema: Das aus dem Quellschema generierte Schema wird mit den Feldern des Erweiterungsschemas ausgefüllt.
 

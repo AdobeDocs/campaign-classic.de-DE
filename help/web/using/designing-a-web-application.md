@@ -2,18 +2,18 @@
 product: campaign
 title: Entwerfen eines Web-Programms
 description: Entwerfen eines Web-Programms
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Web Apps
 exl-id: dcdf6afc-321e-4027-a350-fff6bbf22e71
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '290'
+source-wordcount: '302'
 ht-degree: 100%
 
 ---
 
-# Entwerfen eines Web-Programms{#designing-a-web-application}
+# Web-Anwendung konzipieren{#designing-a-web-application}
 
 
 

@@ -12,7 +12,7 @@ exl-id: 041c4431-baae-4e64-9e9a-0daa5123bd8a
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '935'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -163,7 +163,7 @@ Wenn Sie beispielsweise eine **Laden (Datei)** Aktivität in einen Workflow eing
 In diesem Fall müssen Sie diese Grenze erhöhen:
 
 1. Öffnen Sie den IIS über die **[!UICONTROL Start > (Control Panel) > Administrationstools]** Menü.
-1. Im **Verbindungen** , wählen Sie die für Ihre Adobe erstellte Site aus und doppelklicken Sie auf **Anforderungsfilterung** im Hauptbereich.
+1. Im **Verbindungen** , wählen Sie die für Ihre Adobe-Installation erstellte Site aus und doppelklicken Sie dann auf **Anforderungsfilterung** im Hauptbereich.
 1. Im **Aktionen** Bereich, wählen Sie **Funktionseinstellungen bearbeiten** , um den Wert im **Maximale zulässige Inhaltsgröße (Byte)** -Feld.
 
    Um beispielsweise das Hochladen von Dateien mit 50 MB zu genehmigen, müssen Sie einen Wert von mehr als &quot;52428800&quot;Byte angeben.

@@ -12,7 +12,7 @@ exl-id: b5aa5663-1902-4f50-9202-783e73a28838
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '676'
-ht-degree: 15%
+ht-degree: 16%
 
 ---
 
@@ -45,7 +45,7 @@ Es kann mehrere Ursachen für dieses Problem geben. Gehen Sie zur Lösung des Pr
 
    Wenn der Workflow weiterhin fehlschlägt, überprüfen Sie das Auditprotokoll auf einen bestimmten Fehler, führen Sie eine entsprechende Fehlerbehebung durch und starten Sie den Workflow dann erneut neu.
 
-1. Überprüfen Sie die **[!UICONTROL wfserver]** Modulstatus in der **[!UICONTROL Überwachung]** Registerkarte, auf die über die Campaign Classic-Startseite zugegriffen werden kann (siehe [Überwachungsverfahren](../../production/using/monitoring-processes.md)). Dieser Prozess ist für die Ausführung aller Workflows verantwortlich.
+1. Überprüfen Sie die **[!UICONTROL wfserver]** Modulstatus in der **[!UICONTROL Überwachung]** Registerkarte, auf die über die Campaign Classic-Homepage zugegriffen werden kann (siehe [Überwachungsverfahren](../../production/using/monitoring-processes.md)). Dieser Prozess ist für die Ausführung aller Workflows verantwortlich.
 
    Ein Admin-Benutzer kann auch überprüfen, ob die Variable **wfserver@`<instance>`** auf Ihrem Hauptanwendungsserver mithilfe des folgenden Befehls gestartet.
 
@@ -57,7 +57,7 @@ Es kann mehrere Ursachen für dieses Problem geben. Gehen Sie zur Lösung des Pr
    [...]
    ```
 
-   Wenn das Modul nicht ausgeführt wird, wenden Sie sich an die Kundenunterstützung von Adobe. Wenn Sie über eine On-Premise-Installation verfügen, muss ein Administrator den Dienst mit dem folgenden Befehl neu starten.
+   Wenn das Modul nicht ausgeführt wird, wenden Sie sich an die Adobe-Kundenunterstützung. Wenn Sie über eine On-Premise-Installation verfügen, muss ein Administrator den Dienst mit dem folgenden Befehl neu starten.
 
    ```
    nlserver start wfserver@<instance-name>
@@ -88,7 +88,7 @@ Wenn Workflows nicht ausgeführt werden und ihr Status lautet **In Bearbeitung**
 
 Um dies zu überprüfen und bei Bedarf das Modul zu starten, gehen Sie wie folgt vor:
 
-1. Überprüfen Sie die **[!UICONTROL wfserver]** Modulstatus in der **[!UICONTROL Überwachung]** Registerkarte, auf die über die Campaign Classic-Startseite zugegriffen werden kann (siehe [Überwachungsverfahren](../../production/using/monitoring-processes.md)).
+1. Überprüfen Sie die **[!UICONTROL wfserver]** Modulstatus in der **[!UICONTROL Überwachung]** Registerkarte, auf die über die Campaign Classic-Homepage zugegriffen werden kann (siehe [Überwachungsverfahren](../../production/using/monitoring-processes.md)).
 
    Ein Admin-Benutzer kann auch überprüfen, ob die Variable **wfserver@`<instance>`** auf Ihrem Hauptanwendungsserver mithilfe des folgenden Befehls gestartet.
 
@@ -102,7 +102,7 @@ Um dies zu überprüfen und bei Bedarf das Modul zu starten, gehen Sie wie folgt
 
    Weitere Informationen zum Überwachen von Modulen finden Sie unter [diesem Abschnitt](../../production/using/usual-commands.md#monitoring-commands-).
 
-1. Wenn das Modul nicht ausgeführt wird, wenden Sie sich an die Kundenunterstützung von Adobe. Wenn Sie über eine On-Premise-Installation verfügen, muss ein Administrator sie mit dem folgenden Befehl neu starten.
+1. Wenn das Modul nicht ausgeführt wird, wenden Sie sich an die Adobe-Kundenunterstützung. Wenn Sie über eine On-Premise-Installation verfügen, muss ein Administrator sie mit dem folgenden Befehl neu starten.
 
    ```
    nlserver start wfserver@<instance-name>

@@ -25,7 +25,7 @@ Adobe Campaign bietet die Möglichkeit, Tracking-Pixel zur Verfolgung von E-Mail
 
 ## Welche Maßnahmen sollte ich ergreifen?
 
-Die neue Funktion von Apple ist die Gestalt der Dinge, die in der Branche hinsichtlich des Datenschutzes von E-Mails zu erwarten sind. Es wird dringend empfohlen, die Empfehlungen der Adobe zu befolgen.
+Die neue Funktion von Apple ist die Gestalt der Dinge, die in der Branche hinsichtlich des Datenschutzes von E-Mails zu erwarten sind. Wir empfehlen dringend, dass Sie die Empfehlungen von Adobe befolgen.
 
 ### Auswirkungen auf Ihre Kampagnen-Trigger bewerten
 
@@ -131,7 +131,7 @@ Dieses Beispiel zeigt eine benutzerdefinierte Implementierung in einem einzelnen
 
 >[!IMPORTANT]
 >
->Das -Paket wird nur als Beispiel bereitgestellt und von Adobe als Produktfunktion nicht unterstützt.
+>Das Paket wird nur als Beispiel bereitgestellt und von Adobe als Produktfunktion nicht unterstützt.
 >
 >Möglicherweise müssen Sie den Beispielcode an Ihre Kampagnenimplementierung anpassen.
 >

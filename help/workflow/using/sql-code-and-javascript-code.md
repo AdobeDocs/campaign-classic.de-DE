@@ -2,12 +2,12 @@
 product: campaign
 title: SQL-Code und JavaScript-Code
 description: Erfahren Sie mehr über die Workflow-Aktivitäten für SQL- und JavaScript-Codes.
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Workflows
 exl-id: 729a2010-c2d8-481b-8c9e-780b9e5f97ef
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '304'
 ht-degree: 100%
 
 ---

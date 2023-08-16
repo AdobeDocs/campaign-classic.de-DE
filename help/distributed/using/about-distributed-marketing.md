@@ -2,12 +2,12 @@
 product: campaign
 title: Erste Schritte mit verteiltem Marketing
 description: Erste Schritte mit verteiltem Marketing
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Distributed Marketing
 exl-id: c166409b-e040-491e-840a-a41310935d75
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1180'
+source-wordcount: '1187'
 ht-degree: 100%
 
 ---
@@ -141,7 +141,7 @@ Die Implementierungsetappen hängen vom gewählten Kittyp und dem Umfang der lok
    * Ausführungsplanung (Kontakt- und Extraktionsdatum), **nur für lokale Kampagnen**;
    * Erweiterung des Schema der Bestellungen mit allen notwendigen zusätzlichen Felder.
 
-1. Erstellen Sie eine Web-Formular-Vorlage (über Adobe Campaign oder das Kunden-Extranet), die es ermöglicht, die Parameter der lokalen Anpassung anzuzeigen, Zielgruppe und Budget zu evaluieren, den Inhalt in einer Vorschau zu überprüfen und die Bestellung zu validieren.
+1. Erstellen Sie eine Web-Formular-Vorlage (über Adobe Campaign oder das Kunden-Extranet), die es ermöglicht, die Parameter der lokalen Anpassung anzuzeigen, Zielgruppe und Budget auszuwerten, den Inhalt in einer Vorschau zu überprüfen und die Bestellung zu validieren.
 
    Erstellen Sie für **partizipative Kampagnen mit Zielgruppenvalidierung** die Tabelle, in der die Validierungen für jede Lokalstelle gespeichert werden.
 
@@ -159,6 +159,6 @@ Die folgenden Etappen müssen bei jeder Kampagnenerstellung durchlaufen werden.
 Die folgenden Etappen müssen bei jeder Kampagne durchlaufen werden.
 
 1. Legen Sie bei Erhalt der Benachrichtigung zur Verfügbarkeit eines Kampagnenkits gegebenenfalls die Parameter der lokalen Anpassung der Kampagne fest.
-1. Evaluieren Sie Zielgruppe, Budget etc.
+1. Werten Sie Zielgruppe, Budget etc. aus
 1. Überprüfen Sie die Vorschau des Kampagneninhalts.
 1. Bestellen Sie die Kampagne.

@@ -339,7 +339,7 @@ Im **dataStore > dataSource > dbcnx** -Knoten konfigurieren Sie die Verbindungse
   </tr> 
   <tr> 
    <td> Provider<br /> </td> 
-   <td> Typ (Auflistung). Mögliche Werte sind 'Oracle', 'MSSQL' (Microsoft SQL Server), 'PostgreSQL' (PostgreSQL), 'Teradata', 'DB2', 'MySQL', 'Netezza', 'AsterData', 'SAPHANA' (SAP HANA), 'RedShift' (Amazon Redshift), 'ODBC' (Sybase ASE, Sybase IQ). , 'Relay' (HTTP-Weiterleitung auf Remote-Datenbank).<br /> </td> 
+   <td> Typ (Auflistung). Mögliche Werte sind 'Oracle', 'MSSQL' (Microsoft SQL Server), 'PostgreSQL' (PostgreSQL), 'Teradata', 'DB2', 'MySQL', 'Netezza', 'AsterData', 'SAPHANA' (SAP HANA), 'RedShift' (Amazon Redshift), 'ODBC' (Sybase ASE, Sybase IQ). 'Relay' (HTTP-Weiterleitung auf Remote-Datenbank).<br /> </td> 
    <td> String <br /> </td> 
    <td> 'Oracle'<br /> </td> 
   </tr> 
@@ -967,7 +967,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **threadPool** Knoten.
 
 Im Folgenden finden Sie die verschiedenen Parameter der **urlPermission** Knoten. Dies ist die Liste der URLs, auf die der JavaScript-Code zugreifen kann.
 
-Liste der Domänen und regulären Ausdrücke, die angeben, ob eine im JavaScript-Code aufgefundene URL vom Adobe Campaign-Server verwendet werden kann oder nicht.
+Liste der Domänen und regulären Ausdrücke, die angeben, ob eine URL im JavaScript-Code vom Adobe Campaign-Server verwendet werden kann oder nicht.
 
 Wenn die URL nicht gefunden werden kann, wird die Standardaktion entsprechend dem angegebenen Standardmodus ausgeführt.
 
@@ -1720,9 +1720,9 @@ Weitere Informationen finden Sie unter [SMTP-Relais](../../installation/using/co
  </tbody> 
 </table>
 
-### Übergeordnet {#master}
+### master {#master}
 
-Im **mta > Übergeordnet** Knoten konfigurieren Sie die folgenden Parameter. Dies ist die Konfiguration des Hauptservers.
+Im **mta > master** Knoten konfigurieren Sie die folgenden Parameter. Dies ist die Konfiguration des Hauptservers.
 
 Weitere Informationen finden Sie in diesem Abschnitt [Abschnitt](../../installation/using/configuring-campaign-server.md#mta-child-processes).
 

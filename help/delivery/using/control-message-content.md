@@ -2,13 +2,13 @@
 product: campaign
 title: Über die Zustellbarkeit in Adobe Campaign Classic
 description: Erfahren Sie mehr über die Verwaltung der Zustellbarkeit in Adobe Campaign 
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Deliverability
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '784'
 ht-degree: 100%
 
 ---
@@ -75,6 +75,6 @@ Weiterführende Informationen dazu finden Sie im Abschnitt [Inbox Rendering](inb
 
 Adobe Campaign bietet die Möglichkeit der Nutzung von SpamAssassin, einem Filterprogramm, das E-Mails eine Punktzahl zuordnet. Diese gibt Auskunft über die Wahrscheinlichkeit, von Anti-Spam-Programmen als unerwünscht eingestuft zu werden.
 
-Auf diese Weise kann vor dem Versandstart im Tab **[!UICONTROL Vorschau]** das Spam-Risiko abgeschätzt werden. Ein Hinweis zeigt die erfolgreiche Durchführung der Anti-Spam-Prüfung an.
+Auf diese Weise kann vor dem Versandstart im Tab **[!UICONTROL Vorschau]** das Spam-Risiko ausgewertet werden. Ein Hinweis zeigt die erfolgreiche Durchführung der Anti-Spam-Prüfung an.
 
 Weitere Informationen finden Sie in diesem [Abschnitt](spamassassin.md).

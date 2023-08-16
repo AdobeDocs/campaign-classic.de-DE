@@ -2,13 +2,13 @@
 product: campaign
 title: Assistent für neue Felder
 description: Assistent für neue Felder
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Schema Extension
 exl-id: 2350a531-7a26-4f26-90fe-8dac0cc26605
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 4%
+source-wordcount: '213'
+ht-degree: 7%
 
 ---
 
@@ -21,7 +21,7 @@ Durch Validierung des Assistenten wird das Erweiterungsschema der zu erweiternde
 
 Dieser Assistent bietet den Vorteil, dass ein Feld schnell hinzugefügt werden kann, ohne dass die Struktur eines Datenschemas kennengelernt werden muss.
 
-Der Hauptnachteil ist die Beschränkung der Daten und der Eigenschaften, die erweitert werden sollen.
+Der Hauptnachteil besteht in der Beschränkung der Daten und der Eigenschaften, die erweitert werden sollen.
 
 Die Bildschirme des Assistenten umfassen die folgenden Schritte:
 
@@ -33,7 +33,7 @@ Die Bildschirme des Assistenten umfassen die folgenden Schritte:
 
    ![](assets/d_ncs_integration_schema_addfield2.png)
 
-1. Um die Änderungen zu bestätigen, klicken Sie auf das **[!UICONTROL Beenden]** Schaltfläche.
+1. Um die Änderungen zu bestätigen, klicken Sie auf die Schaltfläche **[!UICONTROL Beenden]** Schaltfläche.
 
 In unserem Beispiel wird automatisch eine Erweiterungsdatei mit dem Namen &quot;cus:recipient&quot;erstellt und das entsprechende SQL-Skript wird ausgeführt:
 

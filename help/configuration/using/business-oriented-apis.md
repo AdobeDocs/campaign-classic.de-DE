@@ -2,13 +2,13 @@
 product: campaign
 title: Geschäftsorientierte APIs
 description: Geschäftsorientierte APIs
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: API
 exl-id: e6638870-3141-4f12-b904-db436127c0d1
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '632'
-ht-degree: 3%
+source-wordcount: '639'
+ht-degree: 4%
 
 ---
 
@@ -27,7 +27,7 @@ Die Business-API ist für jeden Objekttyp spezifisch. Sie wirken sich auf Folgen
    * Workflow starten,
    * Überprüfen von Prozessen usw.
 
-     Siehe [SOAP-Methoden in JavaScript](../../configuration/using/soap-methods-in-javascript.md).
+     Siehe Abschnitt [SOAP-Methoden in JavaScript](../../configuration/using/soap-methods-in-javascript.md).
 
 * Content Management
 * Abonnementverwaltung, siehe [Abonnieren (nms:subscription)](#subscribe--nms-subscription-) und [Abmeldung (nms:subscription)](#unsubscribe--nms-subscription-).
@@ -62,13 +62,13 @@ Beschreibung der Methode &quot;subscribe&quot;im Schema &quot;nms:subscription&q
 </method>
 ```
 
-Die Definition des Abstimmschlüssels muss über _ eingegeben werden **key** -Attribut auf `<recipient>` -Element des XML-Dokuments. Der Inhalt dieses Attributs ist eine kommagetrennte XPath-Liste.
+Die Definition des Abstimmschlüssels muss über _ eingegeben werden **key** -Attribut in der `<recipient>` -Element des XML-Dokuments. Der Inhalt dieses Attributs ist eine kommagetrennte XPath-Liste.
 
-Dieser Aufruf gibt außer Fehlern keine Daten zurück.
+Mit Ausnahme von Fehlern gibt dieser Aufruf keine Daten zurück.
 
 ### Beispiele {#examples}
 
-Anmeldung mit Empfänger-Abstimmschlüssel auf der E-Mail-Adresse: Das XML-Eingabedokument muss auf die E-Mail-Adresse und die Definition des Schlüssels in diesem Feld verweisen.
+Anmeldung mit Empfänger-Abstimmschlüssel in der E-Mail-Adresse: Das XML-Eingabedokument muss auf die E-Mail-Adresse und die Definition des Schlüssels in diesem Feld verweisen.
 
 ```
 <recipient _key="email" email= "john.doe@adobe.com"/>
@@ -141,7 +141,7 @@ Wenn der Empfänger nicht in der Datenbank vorhanden ist oder nicht den entsprec
 >
 >Wenn der Dienstname nicht als Parameter angegeben ist, wird der Empfänger automatisch auf der Blockierungsliste &quot;&quot;(@blackList=&quot;1&quot;) gespeichert.
 
-Dieser Aufruf gibt außer Fehlern keine Daten zurück.
+Mit Ausnahme von Fehlern gibt dieser Aufruf keine Daten zurück.
 
 ### Beispiel für SOAP-Nachrichten {#example-of-soap-messages-1}
 
@@ -181,7 +181,7 @@ Die folgenden Parameter sind erforderlich, um den Dienst aufzurufen:
 
 * eine Authentifizierung,
 * interner Name der Versandvorlage,
-* ein optionales XML-Dokument mit zusätzlichen Versanddaten.
+* ein optionales XML-Dokument, das zusätzliche Versanddaten enthält.
 
 Diese API sollte nicht vollständig aufgerufen werden, da Leistungsprobleme auftreten können.
 
@@ -200,7 +200,7 @@ In der Adobe Campaign-Clientkonsole muss eine Versandvorlage erstellt werden. Si
 
 Das XML-Eingabedokument ist ein Versandvorlagenfragment, das der Struktur des Schemas &quot;nms:delivery&quot;entspricht. Sie enthält alle zusätzlichen Daten, die nicht statisch in der Versandvorlage definiert werden konnten (z. B. die Liste der Zielgruppenempfänger).
 
-Dieser Aufruf gibt außer Fehlern keine Daten zurück.
+Mit Ausnahme von Fehlern gibt dieser Aufruf keine Daten zurück.
 
 ### Beispiel für XML-Dokument {#xml-document-example}
 

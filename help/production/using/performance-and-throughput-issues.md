@@ -12,7 +12,7 @@ exl-id: fe69efda-a052-4f67-9c13-665f011d0a2b
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '736'
-ht-degree: 15%
+ht-degree: 16%
 
 ---
 
@@ -26,7 +26,7 @@ Siehe Abschnitt [Versionshinweise](../../rn/using/latest-release.md) für weiter
 
 ## Hardware und Infrastruktur {#hardware-and-infrastructure}
 
-Die allgemeinen Richtlinien für Hardware-Anforderungen für On-Premise-Campaign Classic werden in diesem Abschnitt beschrieben. [page](https://helpx.adobe.com/de/campaign/kb/hardware-sizing-guide.html).
+Die allgemeinen Richtlinien für Hardwareanforderungen für On-Premise-Campaign Classic werden in diesem Abschnitt beschrieben. [page](https://helpx.adobe.com/de/campaign/kb/hardware-sizing-guide.html).
 
 Das Beratungsteam kann gehosteten Kunden ein Tool zur Verfügung stellen, mit dem Sie leicht erkennen können, wie viel Platz von verschiedenen Tabellentypen in der Datenbank genutzt wird und welcher Platz auf der SFTP-Site genutzt wird. Darüber hinaus stellt es Tools bereit, mit denen Sie unnötige Daten bereinigen können. Kontakt [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) , wenn Sie dieses Tool implementieren müssen. Im Folgenden finden Sie einige wichtige Aspekte, die mit diesem Tool überprüft werden müssen:
 

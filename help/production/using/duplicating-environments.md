@@ -12,7 +12,7 @@ exl-id: 2c933fc5-1c0a-4c2f-9ff2-90d09a79c55a
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '1321'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 6%
 
 >[!IMPORTANT]
 >
->Wenn Sie keinen Zugriff auf den Server und die Datenbank (gehostete Umgebungen) haben, können Sie die unten beschriebenen Verfahren nicht durchführen. Bitte kontaktieren Sie die Adobe.
+>Wenn Sie keinen Zugriff auf den Server und die Datenbank (gehostete Umgebungen) haben, können Sie die unten beschriebenen Verfahren nicht durchführen. Bitte kontaktieren Sie Adobe.
 
 Für die Verwendung von Adobe Campaign ist die Installation und Konfiguration einer oder mehrerer Umgebungen erforderlich: Entwicklung, Test, Vorproduktion, Produktion usw.
 

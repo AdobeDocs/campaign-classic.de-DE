@@ -10,7 +10,7 @@ exl-id: a06b1365-d487-4df1-8f4a-7268b871a427
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '630'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -22,11 +22,11 @@ Adobe Campaign bietet drei Hosting-Modelle, die Flexibilität und Freiheit biete
 
 >[!NOTE]
 >
->Bei Adobe gehosteten Umgebungen können die Haupt-Installations- und Konfigurationsschritte nur von Adobe ausgeführt werden, z. B. durch Konfigurieren des Servers und Anpassen der Konfigurationsdateien der Instanz. Weitere Informationen zu den Hauptunterschieden zwischen den Implementierungsmodi finden Sie unter [diese Seite](../../installation/using/capability-matrix.md).
+>Bei Adobe-gehosteten Umgebungen können die Haupt-Installations- und Konfigurationsschritte nur durch Adobe ausgeführt werden, z. B. das Konfigurieren des Servers und das Anpassen der Konfigurationsdateien der Instanz. Weitere Informationen zu den Hauptunterschieden zwischen den Implementierungsmodi finden Sie unter [diese Seite](../../installation/using/capability-matrix.md).
 
 ## Managed Services/gehostet
 
-Adobe Campaign kann as a Managed Service bereitgestellt werden: Alle Komponenten von Adobe Campaign, einschließlich Benutzeroberfläche, Ausführungsverwaltungsmodul und Campaign-Datenbank des Kunden, werden vollständig von Adobe gehostet, einschließlich E-Mail-Ausführung, Mirrorseiten, Tracking-Server und extern orientierten Webkomponenten wie z. B. Abmelden von Seiten/Voreinstellungen und Landingpages.
+Adobe Campaign kann as a Managed Service bereitgestellt werden: Alle Komponenten von Adobe Campaign, einschließlich Benutzeroberfläche, Ausführungsverwaltungsmodul und Campaign-Datenbank des Kunden, werden vollständig per Adobe gehostet, einschließlich E-Mail-Ausführung, Mirrorseiten, Tracking-Server und extern orientierten Webkomponenten wie z. B. Abmelden von Seiten/Voreinstellungen und Landingpages.
 
 ![](assets/deployment_hosted.png)
 
@@ -44,7 +44,7 @@ Adobe Campaign kann vor Ort bereitgestellt werden: Alle Komponenten von Adobe Ca
 
 ![](assets/deployment_onpremise.png)
 
-Als On-Premise-Kunde müssen Sie vor der Bereitstellung von Campaign Classic folgende Voraussetzungen und Empfehlungen erfüllen:
+Als On-Premise-Kunde müssen Sie vor der Bereitstellung von Campaign Classic folgende Voraussetzungen und Empfehlungen beachten:
 
 * Lesen Sie die [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md) , in dem alle für Adobe Campaign unterstützten Systemversionen und Komponenten aufgelistet sind.
 * Lesen Sie je nach Umgebung die [Voraussetzungen für Windows](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) und [Voraussetzungen für Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md).
@@ -56,7 +56,7 @@ Als On-Premise-Kunde müssen Sie vor der Bereitstellung von Campaign Classic fol
 
 ## Hybrid
 
-Bei der Bereitstellung als Hybridmodell befindet sich die Adobe Campaign-Lösungssoftware lokal auf der Kundenseite und die Ausführungsverwaltung wird von Adobe als Cloud-Service bereitgestellt. Die Adobe Campaign-Marketinginstanz wird innerhalb der Firewall eines Kunden installiert, sodass personenbezogene Daten (PII) intern aufbewahrt werden und nur Daten zur Personalisierung von E-Mails an die Cloud zur Ausführung von E-Mails gesendet werden. Die in der Cloud gehostete Ausführungsinstanz empfängt die Anfragen von der On-Premise-Instanz zum Versand von E-Mails. Diese Instanz personalisiert alle E-Mails und stellt sie bereit. In der Cloud werden keine Daten jeglicher Art dauerhaft gespeichert.
+Bei der Bereitstellung als Hybridmodell befindet sich die Adobe Campaign-Lösungssoftware lokal auf der Kundenseite und die Ausführungsverwaltung wird als Cloud-Service von Adobe bereitgestellt. Die Adobe Campaign-Marketinginstanz wird innerhalb der Firewall eines Kunden installiert, sodass personenbezogene Daten (PII) intern aufbewahrt werden und nur Daten zur Personalisierung von E-Mails an die Cloud zur Ausführung von E-Mails gesendet werden. Die in der Cloud gehostete Ausführungsinstanz empfängt die Anfragen von der On-Premise-Instanz zum Versand von E-Mails. Diese Instanz personalisiert alle E-Mails und stellt sie bereit. In der Cloud werden keine Daten jeglicher Art dauerhaft gespeichert.
 
 ![](assets/deployment_hybrid.png)
 

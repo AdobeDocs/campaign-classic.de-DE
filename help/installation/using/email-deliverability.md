@@ -30,7 +30,7 @@ Im folgenden Abschnitt finden Sie einen Überblick über die Konfiguration, die 
 
 Weitere Informationen zu Konzepten und Best Practices im Zusammenhang mit der Zustellbarkeit mit Adobe Campaign finden Sie in diesem [Abschnitt](../../delivery/using/about-deliverability.md).
 
-Einen tieferen Einblick in die Zustellbarkeit der E-Mails, einschließlich aller technischen Empfehlungen für den effizienten Versand und Empfang von E-Mails durch eine Adobe-Plattform, erhalten Sie im Abschnitt [Best Practices für die Zustellbarkeit von Adoben](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=de).
+Einen tieferen Einblick in die Zustellbarkeit der E-Mails, einschließlich aller technischen Empfehlungen zum effizienten Versand und Empfang von E-Mails durch eine Adobe-Plattform, erhalten Sie im Abschnitt [Best Practices für die Adobe-Zustellbarkeit](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=de).
 
 ## Grundprinzip {#operating-principle}
 

@@ -13,7 +13,7 @@ exl-id: 3050238d-6f77-4ffa-9aef-677ab8009388
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '459'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -36,7 +36,7 @@ Die Migration muss zuvor in der Test-/Staging-Umgebung getestet werden, um siche
 
 * Der Migrationsprozess muss von erfahrenen Benutzern durchgeführt werden. Sie müssen von mindestens einem Datenbankexperten, einem Systemadministrator und einem Anwendungsentwickler von Adobe Campaign unterstützt werden.
 * Bevor Sie mit der Migration beginnen, überprüfen Sie, ob die verwendeten Systeme und Systemkomponenten mit v7 kompatibel sind. [Weitere Informationen](../../rn/using/compatibility-matrix.md).
-* Wenn Sie Adobe Campaign Cloud Messaging (Mid-Sourcing-Bereitstellung) verwenden, wenden Sie sich vor dem Start an die Kundenunterstützung von Adobe.
+* Wenn Sie Adobe Campaign Cloud Messaging (Mid-Sourcing-Bereitstellung) verwenden, wenden Sie sich vor dem Start an die Adobe-Kundenunterstützung.
 * Bevor Sie einen Migrationsprozess starten, **must** Sichern Sie Ihre Daten.
 * Der Migrationsprozess kann mehrere Tage in Anspruch nehmen.
 * Adobe Campaign v7 ist eine sicherere Version als die vorherigen: Dies wirkt sich auf Konfigurationsrichtlinien aus, um Probleme wie Datenbeschädigung zu vermeiden und die Datenintegrität in der Datenbank zu erhalten. Als Kunde sind Sie für das Testen aller Konfigurationen verantwortlich, einschließlich Workflows.

@@ -43,7 +43,7 @@ Sobald das System für die Aktualisierung bereit ist, wird ein Build-Upgrade dur
 
 Für das Build-Upgrade sind die folgenden Ressourcen erforderlich:
 
-* ein Adobe Architect: Erläuterung der Datenbankstrukturen (vordefinierte Schemata und alle hinzugefügten zusätzlichen Schemas, Kampagnenentwürfe und alle wichtigen Pfadfunktionen, die in einer bestimmten Reihenfolge gestartet und getestet werden müssen).
+* ein Adobe-Architekt, der die Datenbankstrukturen (vordefinierte Schemas und alle hinzugefügten zusätzlichen Schemas, Kampagnenentwürfe und alle wichtigen Pfadfunktionen, die in einer bestimmten Reihenfolge gestartet und getestet werden müssen) versteht.
 * Projektmanager - Wenn das Build-Upgrade viele verschiedene Instanzen (Produktion, Staging, Tests) und andere Drittanbieter-Server und -Anwendungen (Datenbanken, SFTP-Sites, Messaging-Service-Provider) umfasst, gilt ein Projektmanager zur Koordinierung aller Tests als Best Practice.
 * ein Adobe-Campaign-Administrator: Er kennt die Konfiguration des Servers, u. a. Anforderungen in Bezug auf Sicherheit, Ordneraufbau, Reporting und den Import und Export. Bitte nehmen Sie kein Build-Upgrade ohne Ihren Administrator vor.
 * ein Adobe Campaign-Benutzer (Marketing-Benutzer): Ein erfolgreiches Upgrade hängt von der Fähigkeit des Benutzers ab, seine täglichen Aufgaben erfolgreich durchzuführen. Aus diesem Grund sollten Sie mindestens einen Ihrer täglichen Benutzer in Ihre Tests der aktualisierten Server einbeziehen.
@@ -63,7 +63,7 @@ Dies sind die wichtigsten Schritte zur Planung eines Build-Upgrades:
 
 Für das Build-Upgrade müssen die folgenden Personen beteiligt sein:
 
-* Adobe Architect: Bei gehosteten oder hybriden Architekturen muss sich der Architekt mit der Kundenunterstützung von Adobe Campaign abstimmen.
+* Adobe-Architekt: Bei gehosteten oder hybriden Architekturen muss sich der Architekt mit der Adobe Campaign-Kundenunterstützung abstimmen.
 
 * Projektmanager:
    * für On-Premise-Installationen: Der interne Projektleiter des Kunden leitet die Aktualisierung und verwaltet Lebenszyklustests.

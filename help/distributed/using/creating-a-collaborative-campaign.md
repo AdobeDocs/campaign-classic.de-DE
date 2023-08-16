@@ -2,12 +2,12 @@
 product: campaign
 title: Erstellen einer partizipativen Kampagne
 description: Erfahren Sie, wie Sie eine partizipative Kampagne erstellen
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Distributed Marketing
 exl-id: 17313fe5-ad42-45ca-a35a-1e7aa89380ef
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '990'
+source-wordcount: '997'
 ht-degree: 100%
 
 ---
@@ -50,7 +50,7 @@ Wählen Sie die Vorlage **[!UICONTROL Partizipative Kampagne (Kampagnenzugriff) 
 
 ![](assets/mkg_dist_mutual_op_by_op2.png)
 
-Die Lokalstelle kann bei der Kampagnenbestellung die von der Zentralstelle festgelegten Kriterien erfassen und die Kampagne vor der Bestellung evaluieren.
+Die Lokalstelle kann bei der Kampagnenbestellung die von der Zentralstelle festgelegten Kriterien erfassen und die Kampagne vor der Bestellung auswerten.
 
 Wenn die Bestellung einer **Partizipativen Kampagne mit Kampagnenzugriff** von der Zentraleinheit validiert wurde, wird eine untergeordnete Kampagne für die Lokalstelle erstellt. Sobald diese der Lokalstelle zur Verfügung steht, kann die Lokalstelle folgende Parameter verändern:
 

@@ -8,7 +8,7 @@ exl-id: 8702499b-1700-4d1f-a0e0-f7a9dfb4b88f
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '206'
-ht-degree: 39%
+ht-degree: 42%
 
 ---
 
@@ -28,7 +28,7 @@ So erstellen Sie ein Schema für eine externe Datenbank:
 
 1. Aus dem **[!UICONTROL Tabellenname]** auswählen, wählen Sie die Tabelle aus, die die abzurufenden Daten enthält.
 
-   Mit Snowflake können Sie hier Ihre Ansichten auswählen, wenn dem Datenbankbenutzer die richtigen Berechtigungen erteilt wurden. Beachten Sie, dass bei der Verwendung von Ansichten Adobe Campaign das XML-Schema nicht automatisch generieren kann und Sie es selbst erstellen müssen. Weitere Informationen zu Ansichten finden Sie unter [Dokumentation zu Snowflaken](https://docs.snowflake.com/en/user-guide/views-introduction.html).
+   Mit Snowflake können Sie hier Ihre Ansichten auswählen, wenn dem Datenbankbenutzer die richtigen Berechtigungen gewährt wurden. Beachten Sie, dass bei der Verwendung von Ansichten Adobe Campaign das XML-Schema nicht automatisch generieren kann und Sie es selbst erstellen müssen. Weitere Informationen zu Ansichten finden Sie unter [Snowflake-Dokumentation](https://docs.snowflake.com/en/user-guide/views-introduction.html).
 
    ![](assets/wf_new_schema_select_table_fda.png)
 

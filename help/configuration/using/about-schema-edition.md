@@ -2,12 +2,12 @@
 product: campaign
 title: Über die Schemabearbeitung
 description: Erste Schritte mit der Schemabearbeitung
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Schema Extension
 exl-id: 9e10b24e-c4de-4e76-bbed-0d05f62120b7
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1011'
+source-wordcount: '1018'
 ht-degree: 65%
 
 ---
@@ -84,7 +84,7 @@ Die **xpath** -Attribut auf das Feld in Ihrem Schema verweist, das Sie indiziere
 
 >[!IMPORTANT]
 >
->Es ist wichtig zu beachten, dass die von Indizes bereitgestellten Leistungsverbesserungen bei der SQL-Abfrage auch beim Schreiben von Datensätzen zu Leistungseinbußen führen. Die Indizes sollten daher mit Vorsicht verwendet werden.
+>Es ist wichtig zu beachten, dass die von Indizes bereitgestellten Leistungsverbesserungen bei der SQL-Abfrage auch Leistungseinbußen beim Schreiben von Datensätzen verursachen. Die Indizes sollten daher mit Vorsicht verwendet werden.
 
 Weitere Informationen zu Indizes finden Sie im Abschnitt [Indexierte Felder](../../configuration/using/database-mapping.md#indexed-fields) Abschnitt.
 
@@ -102,7 +102,7 @@ Beispiel:
 </key>
 ```
 
-In diesem Beispiel wird die **@autopk** -Attribut einen standardmäßigen Primärschlüssel mit dem Namen &quot;id&quot;erstellen, geben wir unseren eigenen Primärschlüssel &quot;budgetId&quot;an.
+In diesem Beispiel sollten Sie die **@autopk** -Attribut einen standardmäßigen Primärschlüssel mit dem Namen &quot;id&quot;erstellen, geben wir unseren eigenen Primärschlüssel &quot;budgetId&quot;an.
 
 >[!IMPORTANT]
 >
@@ -133,9 +133,9 @@ Die vollständige Liste der Attribute ist im [`<attribute>` element](../../confi
 * **@xml**
 * **@Typ**
 
-  Eine Tabelle mit den Zuordnungen der Datentypen, die von Adobe Campaign für die verschiedenen Datenbankverwaltungssysteme generiert wurden, finden Sie im Abschnitt [Mapping der Adobe Campaign/DBMS-Datentypen](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data) Abschnitt.
+  Eine Tabelle mit den Zuordnungen der Datentypen, die von Adobe Campaign für die verschiedenen Datenbankverwaltungssysteme generiert wurden, finden Sie im Abschnitt [Mapping der Typen von Adobe Campaign/DBMS-Daten](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data) Abschnitt.
 
-Weitere Informationen zu den einzelnen Attributen finden Sie im Abschnitt [Attributbeschreibung](../../configuration/using/schema/attribute.md) Abschnitt.
+Weiterführende Informationen zu den einzelnen Attributen finden Sie im Abschnitt [Attributbeschreibung](../../configuration/using/schema/attribute.md) Abschnitt.
 
 ### Beispiele {#examples}
 

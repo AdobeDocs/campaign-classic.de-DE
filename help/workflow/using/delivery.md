@@ -2,12 +2,12 @@
 product: campaign
 title: Versand
 description: Erfahren Sie mehr über die Workflow-Aktivität "Versand".
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Workflows, Channels Activity
 exl-id: 72fbdd1d-a105-4e9f-9e17-2e9d62d2bb80
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1040'
+source-wordcount: '1047'
 ht-degree: 100%
 
 ---
@@ -74,7 +74,7 @@ Die Aktivität **Versand** wird je nach Kontext zur Konfiguration oder zum Start
 
    ![](assets/diffusion_edit_7.png)
 
-   Kreuzen Sie eine der möglichen Optionen an:
+   Wählen Sie eine der möglichen Optionen aus:
 
    * **[!UICONTROL Speichern]**: Der Versand wird erstellt und gespeichert, jedoch weder analysiert noch abgeschickt.
    * **[!UICONTROL Zielgruppe schätzen]**: Die Zielgruppe wird berechnet, um das Potential der Kampagne einschätzen zu können (erste Phase der Analyse). Diese Aktion entspricht den Optionen **[!UICONTROL Zielpopulation schätzen]** und **[!UICONTROL Analysieren]** in einem klassischen Versand an eine Hauptzielgruppe mit dem **Delivery**-Modul.

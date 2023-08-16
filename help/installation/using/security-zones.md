@@ -12,7 +12,7 @@ exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '1520'
-ht-degree: 29%
+ht-degree: 30%
 
 ---
 
@@ -30,7 +30,7 @@ Operatoren werden über ihr Profil in der Konsole mit einer Sicherheitszone verk
 >
 >Als **gehostet** -Kunde, wenn Sie auf [Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de), können Sie die Sicherheitszonen-Benutzeroberfläche verwenden. [Weitere Informationen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=de)
 >
->Sonstiges **hybrid/gehostet** -Kunden müssen sich an das Adobe Support-Team wenden, um IP zur Zulassungsliste hinzuzufügen.
+>Sonstiges **hybrid/gehostet** Kunden müssen sich an das Adobe-Supportteam wenden, um IP zur Zulassungsliste hinzuzufügen.
 >
 
 ## Sicherheitszonen erstellen {#creating-security-zones}

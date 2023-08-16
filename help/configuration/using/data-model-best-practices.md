@@ -2,12 +2,12 @@
 product: campaign
 title: Best Practices für Datenmodelle
 description: Erfahren Sie, wie Sie mit dem Campaign Classic-Datenmodell arbeiten.
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Data Model
 exl-id: 9c59b89c-3542-4a17-a46f-3a1e58de0748
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '4005'
+source-wordcount: '4012'
 ht-degree: 55%
 
 ---
@@ -103,7 +103,7 @@ Die folgende Tabelle beschreibt diese Kennungen und ihren Zweck.
 
 | Kennung | Beschreibung | Best Practices |
 |--- |--- |--- |
-| ID | <ul><li>Die ID ist der physische Primärschlüssel einer Adobe Campaign-Tabelle. Bei nativen Tabellen handelt es sich um eine generierte 32-Bit-Zahl aus einer Sequenz</li><li>Diese Kennung ist in der Regel für eine bestimmte Adobe Campaign-Instanz eindeutig. </li><li>Eine automatisch generierte ID kann in einer Schemadefinition sichtbar sein. Suchen Sie die *autopk=&quot;true&quot;* -Attribut.</li></ul> | <ul><li>Automatisch erstellte Kennungen sollten nicht als Referenz in einem Workflow oder in einer Package-Definition verwendet werden.</li><li>Es sollte nicht angenommen werden, dass die ID immer eine steigende Zahl sein wird.</li><li>Die ID in einer nativen Tabelle ist eine 32-Bit-Zahl und dieser Typ sollte nicht geändert werden. Diese Zahl stammt aus einer &quot;Sequenz&quot;, die im Abschnitt mit demselben Namen behandelt wird.</li></ul> |
+| ID | <ul><li>Die ID ist der physische Primärschlüssel einer Adobe Campaign-Tabelle. Bei nativen Tabellen ist dies eine generierte 32-Bit-Zahl aus einer Sequenz</li><li>Diese Kennung ist in der Regel für eine bestimmte Adobe Campaign-Instanz eindeutig. </li><li>Eine automatisch generierte ID kann in einer Schemadefinition sichtbar sein. Suchen Sie die *autopk=&quot;true&quot;* -Attribut.</li></ul> | <ul><li>Automatisch erstellte Kennungen sollten nicht als Referenz in einem Workflow oder in einer Package-Definition verwendet werden.</li><li>Es sollte nicht angenommen werden, dass die ID immer eine steigende Zahl sein wird.</li><li>Die ID in einer nativen Tabelle ist eine 32-Bit-Zahl und dieser Typ sollte nicht geändert werden. Diese Zahl stammt aus einer &quot;Sequenz&quot;, die im Abschnitt mit demselben Namen behandelt wird.</li></ul> |
 | Name (oder interner Name) | <ul><li>Diese Information ist eine eindeutige Kennung eines Datensatzes in einer Tabelle. Der Wert kann manuell aktualisiert werden, üblicherweise mit einem erstellten Namen.</li><li>Die Kennung behält ihren Wert bei, wenn sie in einer anderen Instanz von Adobe Campaign bereitgestellt wird, und darf nicht leer sein.</li></ul> | <ul><li>Benennen Sie den von Adobe Campaign generierten Datensatznamen um, wenn das Objekt von einer Umgebung in eine andere bereitgestellt werden soll.</li><li>Wenn ein Objekt beispielsweise über ein Namespace-Attribut verfügt (zum Beispiel *schema*), wird dieser gemeinsame Namespace für alle erstellten benutzerdefinierten Objekte genutzt. Einige reservierte Namespaces sollten nicht verwendet werden: *nms*, *xtk*, *nl*, *ncl*, *crm*, *xxl*.</li><li>Wenn ein Objekt keinen Namespace aufweist (zum Beispiel *workflow* oder *delivery*), wird dieser Namespace-Begriff als Präfix eines internen Namensobjekts hinzugefügt: *namespaceMyObjectName*.</li><li>Verwenden Sie keine Sonderzeichen wie Leerzeichen &quot;&quot;, Semikolon &quot;:&quot; oder Bindestrich &quot;-&quot;. Alle diese Zeichen würden durch einen Unterstrich (_) ersetzt werden. Beispielsweise würden &quot;abc-def&quot; und &quot;abc:def&quot; als &quot;abc_def&quot; gespeichert werden und sich gegenseitig überschreiben.</li></ul> |
 | Titel | <ul><li>Der Titel ist die Unternehmenskennung eines Objekts oder Datensatzes in Adobe Campaign.</li><li>Dieses Objekt erlaubt Leerzeichen und Sonderzeichen.</li><li>Der Titel garantiert nicht die Einzigartigkeit eines Datensatzes.</li></ul> | <ul><li>Es wird empfohlen, eine Struktur für die Objekttitel festzulegen.</li><li>Dies ist die benutzerfreundlichste Lösung, um einen Datensatz oder ein Objekt für einen Adobe Campaign-Benutzer zu identifizieren.</li></ul> |
 
@@ -132,12 +132,12 @@ Der Primärschlüssel von Adobe Campaign ist eine automatisch generierte ID für
 Dieser Wert stammt aus dem so genannten **Sequenz**: ein Datenbankobjekt, mit dem eine Zahlensequenz generiert wird.
 
 Es gibt zwei Arten von Sequenzen:
-* **Freigegeben**: mehr als eine Tabelle würde ihre ID aus derselben Sequenz auswählen. Das bedeutet, dass keine andere Tabelle, die dieselbe Sequenz hat, einen Datensatz mit der ID &#39;X&#39; hätte, wenn eine ID &#39;X&#39; von einer Tabelle verwendet wird. **XtkNewId** ist die standardmäßige freigegebene Sequenz, die in Adobe Campaign verfügbar ist.
-* **Dediziert**: nur eine Tabelle wählt ihre IDs aus der Sequenz aus. Der Sequenzname würde normalerweise den Tabellennamen enthalten.
+* **Freigegeben**: mehrere Tabellen würden ihre IDs aus derselben Sequenz auswählen. Das bedeutet, dass keine andere Tabelle, die dieselbe Sequenz hat, einen Datensatz mit der ID &#39;X&#39; hätte, wenn eine ID &#39;X&#39; von einer Tabelle verwendet wird. **XtkNewId** ist die standardmäßige freigegebene Sequenz, die in Adobe Campaign verfügbar ist.
+* **Dediziert**: Nur eine Tabelle wählt ihre IDs aus der Sequenz aus. Der Sequenzname würde normalerweise den Tabellennamen enthalten.
 
 >[!IMPORTANT]
 >
->Die Sequenz ist ein ganzzahliger 32-Bit-Wert mit einer endlichen maximalen Anzahl verfügbarer Werte: 2,14 Mrd. Nach Erreichen des maximalen Werts wird die Sequenz wieder auf 0 zurückgesetzt, um IDs wiederzuverwenden.
+>Die Sequenz ist ein ganzzahliger 32-Bit-Wert mit einer endlichen maximalen Anzahl verfügbarer Werte: 2,14 Milliarden. Nach Erreichen des maximalen Werts wird die Sequenz wieder auf 0 zurückgesetzt, um IDs wiederzuverwenden.
 >
 >Wenn die alten Daten nicht bereinigt wurden, stellt das Ergebnis eine Verletzung des eindeutigen Schlüssels dar, die zu einem Blocker für den Zustand und die Nutzung der Plattform wird. Adobe Campaign wäre nicht in der Lage, Nachrichten zu versenden (wenn es sich auf die Versandlog-Tabelle auswirkt) und die Leistung wäre stark beeinträchtigt.
 
@@ -145,13 +145,13 @@ Deshalb würde einem Kunden, der jährlich 6 Milliarden E-Mails mit einer Aufbew
 
 Wenn in Adobe Campaign eine benutzerdefinierte Tabelle mit einem Primärschlüssel als autoPK erstellt wird, sollte dieser Tabelle systematisch eine benutzerdefinierte dedizierte Sequenz zugeordnet werden.
 
-Standardmäßig hat eine benutzerdefinierte Sequenz Werte zwischen +1.000 und +2,1 BB. Technisch gesehen ist es möglich, einen vollständigen Bereich von 4BB zu erhalten, indem negative IDs aktiviert werden. Dies sollte mit Vorsicht verwendet werden und eine ID geht beim Übergang von negativen zu positiven Werten verloren: Der Datensatz 0 wird normalerweise von Adobe Campaign in generierten SQL-Abfragen ignoriert.
+Standardmäßig hat eine benutzerdefinierte Sequenz Werte zwischen +1.000 und +2,1 BB. Technisch gesehen ist es möglich, einen vollständigen Bereich von 4BB zu erhalten, indem negative IDs aktiviert werden. Dies sollte mit Vorsicht verwendet werden und beim Übergang von negativen zu positiven Werten geht eine ID verloren: Der Datensatz 0 wird normalerweise von Adobe Campaign in generierten SQL-Abfragen ignoriert.
 
 Weitere Informationen zur Erschöpfung von Sequenzen finden Sie unter [dieses Video](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html).
 
 ## Indizes {#indexes}
 
-Indizes sind für die Leistung unverzichtbar. Wenn Sie einen Schlüssel im Schema deklarieren, erstellt Adobe automatisch einen Index für die Schlüsselfelder. Sie können auch weitere Indizes für Abfragen deklarieren, die den Schlüssel nicht verwenden.
+Indizes sind für die Leistung unverzichtbar. Wenn Sie einen Schlüssel im Schema deklarieren, erstellt Adobe automatisch einen Index für die Felder des Schlüssels. Sie können auch weitere Indizes für Abfragen deklarieren, die den Schlüssel nicht verwenden.
 
 Adobe empfiehlt, zusätzliche Indizes zu definieren, da dies die Leistung verbessern kann.
 
@@ -172,7 +172,7 @@ Beachten Sie jedoch Folgendes:
 
 Die Verwaltung von Indizes kann sehr komplex werden. Daher ist es wichtig zu verstehen, wie sie funktionieren. Um diese Komplexität zu veranschaulichen, nehmen wir ein grundlegendes Beispiel, wie die Suche nach Empfängern durch Filterung des Vor- und Nachnamens. Gehen Sie dazu wie folgt vor:
 1. Gehen Sie in den Ordner, in dem alle Empfänger der Datenbank aufgeführt sind. Weitere Informationen hierzu finden Sie unter [Profile verwalten](../../platform/using/managing-profiles.md).
-1. Klicken Sie mit der rechten Maustaste auf die **[!UICONTROL Vorname]** -Feld.
+1. Rechtsklicken Sie auf die **[!UICONTROL Vorname]** -Feld.
 1. Auswählen **[!UICONTROL Nach diesem Feld filtern]**.
 
    ![](assets/data-model-index-example.png)
@@ -195,7 +195,7 @@ Die folgende Tabelle zeigt, in welchen Fällen die drei unten beschriebenen Indi
 
 | Suchkriterien | Index 1 (Vorname + Nachname) | Index 2 (nur Vorname) | Index 3 (nur Nachname) | Erklärung |
 |--- |--- |--- |--- |--- |
-| Vorname gleich &quot;Johnny&quot; | In Gebrauch | In Gebrauch | Nicht verwendet | Da der Vorname an erster Stelle auf Index 1 steht, wird er trotzdem verwendet: Es ist nicht erforderlich, eine Bedingung für den Nachnamen hinzuzufügen. |
+| Vorname gleich &quot;Johnny&quot; | In Gebrauch | In Gebrauch | Nicht verwendet | Da sich der Vorname an erster Stelle auf Index 1 befindet, wird er ohnehin verwendet: Es ist nicht erforderlich, eine Bedingung für den Nachnamen hinzuzufügen. |
 | Vorname gleich &quot;Johnny&quot;UND Nachname gleich &quot;Smith&quot; | In Gebrauch | Nicht verwendet | Nicht verwendet | Da beide Attribute in derselben Abfrage gesucht werden, wird nur der Index verwendet, der beide Attribute kombiniert. |
 | Nachname gleich &quot;Smith&quot; | Nicht verwendet | Nicht verwendet | In Gebrauch | Die Reihenfolge der Attribute im Index wird berücksichtigt. Wenn Sie diese Reihenfolge nicht einhalten, kann der Index nicht verwendet werden. |
 | Vorname beginnt mit &quot;Joh&quot; | In Gebrauch | In Gebrauch | Nicht verwendet | &quot;Linke Suche&quot;aktiviert Indizes. |
@@ -248,7 +248,7 @@ Standardmäßig haben Versand- und Trackinglogs von Adobe Campaign eine Aufbewah
 
 Erfahren Sie mehr über die Datenaufbewahrung in [Richtlinien zum Datenschutz und zur Sicherheit von Campaign](../../platform/using/privacy-and-recommendations.md).
 
-Erfahren Sie mehr über den Workflow für die Datenbasisbereinigung in Campaign [in diesem Abschnitt](../../production/using/database-cleanup-workflow.md).
+Erfahren Sie mehr über den Workflow zur Bereinigung der Datenbank in Campaign [in diesem Abschnitt](../../production/using/database-cleanup-workflow.md).
 
 >[!IMPORTANT]
 >
@@ -302,7 +302,7 @@ Die Tabellengröße ist eine Kombination aus der Anzahl der Datensätze und der 
 * Eine **große** Tabelle entspricht der Größe der Tabelle &quot;Umfassendes Protokoll&quot;. Sie enthält mehrere Datensätze pro Kunde.
 Wenn Ihre Datenbank z. B. 10 Millionen Empfänger umfasst, enthält die Tabelle &quot;Umfassendes Protokoll&quot; etwa 100 bis 200 Millionen Nachrichten und die Tabelle &quot;Versand&quot; einige Tausend Datensätze.
 
-Auf PostgreSQL sollte eine Zeile nicht größer als 8 KB sein, um dies zu vermeiden [TOAST](https://wiki.postgresql.org/wiki/TOAST) Mechanismus. Versuchen Sie daher, die Anzahl der Spalten und die Größe jeder Zeile so weit wie möglich zu reduzieren, um eine optimale Systemleistung (Speicher und CPU) zu gewährleisten.
+Auf PostgreSQL sollte eine Zeile nicht größer als 8 KB sein, um dies zu vermeiden. [TOAST](https://wiki.postgresql.org/wiki/TOAST) Mechanismus. Versuchen Sie daher, die Anzahl der Spalten und die Größe jeder Zeile so weit wie möglich zu reduzieren, um eine optimale Systemleistung (Speicher und CPU) zu gewährleisten.
 
 Die Anzahl der Zeilen wirkt sich ebenfalls auf die Leistung aus. Die Adobe Campaign-Datenbank dient nicht zum Speichern von Verlaufsdaten, die nicht aktiv für Zielgruppenbestimmungs- oder Personalisierungszwecke verwendet werden. Es handelt sich dabei um eine operative Datenbank.
 
@@ -311,7 +311,7 @@ Um Leistungsprobleme im Zusammenhang mit der hohen Zeilenanzahl zu verhindern, s
 Im Folgenden finden Sie Best Practices zur Größe von Tabellen:
 
 * Planen Sie große Tabellen mit weniger Feldern und mehr numerischen Daten.
-* Verwenden Sie nicht den umfangreichen Spaltentyp (z. B.: Int64), um kleine Zahlen wie boolesche Werte zu speichern.
+* Verwenden Sie nicht den umfangreichen Spaltentyp (z. B. Int64), um kleine Zahlen wie boolesche Werte zu speichern.
 * Entfernen Sie nicht verwendete Spalten aus der Tabellendefinition.
 * Behalten Sie keine alten oder inaktiven Daten in Ihrer Adobe Campaign-Datenbank bei (Export und Bereinigung).
 
@@ -320,7 +320,7 @@ Hier ein Beispiel:
 ![](assets/transaction-table-example.png)
 
 In diesem Beispiel:
-* Die *Transaktion* und *Transaktionselement* -Tabellen sind groß: mehr als 10 Millionen.
+* Die *Transaktion* und *Transaktionselement* Die Tabellen sind groß: mehr als 10 Millionen.
 * Die *Produkt* und *Store* -Tabellen sind kleiner: weniger als 10.000.
-* Das Produktetikett und die Referenz wurden im *Produkt* Tabelle.
+* Das Produktetikett und die Produktreferenz wurden im *Produkt* Tabelle.
 * Die *Transaktionselement* -Tabelle enthält nur einen Link zum *Produkt* -Tabelle, die numerisch ist.

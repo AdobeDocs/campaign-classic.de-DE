@@ -2,12 +2,12 @@
 product: campaign
 title: Workflow für einen kanalübergreifenden Versand
 description: Weitere Informationen zu Workflows für einen kanalübergreifenden Versand.
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Workflows, Channels Activity
 exl-id: dfd36d2c-44ff-49a9-80b4-09eaf3377072
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '765'
 ht-degree: 100%
 
 ---
@@ -115,6 +115,6 @@ Sobald Ihre Zielgruppe feststeht und Ihr erster Versand bereit ist, müssen Sie 
 
    Danach können Sie die resultierenden Empfänger von Adobe Campaign in Adobe Experience Cloud exportieren. Beispielsweise können Sie die Audience in Adobe Target verwenden, indem Sie dem Workflow die Aktivität **[!UICONTROL Aktualisierung freigegebener Zielgruppe]** hinzufügen. Weiterführende Informationen dazu finden Sie unter [Audiences exportieren](../../integrations/using/importing-and-exporting-audiences.md#exporting-an-audience).
 
-1. Verwenden Sie die Schaltfläche **Starten** in der Symbolleiste, um den Workflow auszuführen.
+1. Verwenden Sie die Schaltfläche **Starten** in der Aktionsleiste, um den Workflow auszuführen.
 
 Die von der Aktivität **Abfrage** ausgewählte Population wird segmentiert und erhält je nach Empfängerverhalten eine E-Mail oder eine SMS. Die restliche Population wird mit der Aktivität **[!UICONTROL Listen-Update]** zur Datenbank hinzugefügt.

@@ -2,12 +2,12 @@
 product: campaign
 title: Über Workflow-Anwendungsfälle
 description: Erfahren Sie mehr über Anwendungsfälle, die Sie mit Workflows in Campaign Classic ausführen können
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Workflows, Data Management
 exl-id: 7c093b34-6b0e-4403-9d9d-fba9ba39ea41
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '206'
+source-wordcount: '213'
 ht-degree: 100%
 
 ---

@@ -8,7 +8,7 @@ exl-id: 0a3473bf-0528-486d-a799-8db86fece522
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '862'
-ht-degree: 27%
+ht-degree: 28%
 
 ---
 
@@ -58,7 +58,7 @@ Darüber hinaus können Sie eine Verbesserung verwenden, um in früheren Builds 
 
 Wenn Sie mit Build 19.1.4 arbeiten, können Probleme beim Versand von Push-Benachrichtigungen unter Verwendung von Tracking-Links oder bei Sendungen unter Verwendung von Anker-Tags auftreten. In diesem Fall wird empfohlen, die URL-Signatur zu deaktivieren.
 
-Als gehosteter, verwalteter oder hybrider Cloud Services einer Kampagne müssen Sie Kontakt mit [Kundenunterstützung](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html) , damit die URL-Signatur deaktiviert wird.
+Als gehosteter, verwalteter oder hybrider Cloud Service einer Kampagne müssen Sie Kontakt mit [Kundenunterstützung](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html) , damit die URL-Signatur deaktiviert wird.
 
 Wenn Sie Campaign in einer Hybridarchitektur ausführen, stellen Sie vor der Aktivierung der URL-Signatur sicher, dass die gehostete Mid-Sourcing-Instanz wie folgt aktualisiert wurde:
 

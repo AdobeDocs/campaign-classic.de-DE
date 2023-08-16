@@ -13,7 +13,7 @@ exl-id: 47f50bf5-4d5b-4c07-af71-de4390177cf5
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '839'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -92,4 +92,4 @@ Der benutzerdefinierte Modus richtet sich an fortgeschrittene Clients, die eigen
 * [MX-Konfiguration](../../installation/using/email-deliverability.md#mx-configuration)
 * [Technische E-Mail-Konfiguration](../../installation/using/email-deliverability.md)
 * [Ursachen für das Fehlschlagen von Sendungen](../../delivery/using/understanding-delivery-failures.md)
-* [Campaign Classic - Technische Recommendations](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html)
+* [Campaign Classic - Technischer Recommendations](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html)

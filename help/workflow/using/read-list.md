@@ -2,12 +2,12 @@
 product: campaign
 title: Liste lesen
 description: Erfahren Sie mehr über die Workflow-Aktivität "Liste lesen".
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Workflows, Targeting Activity
 exl-id: 99f82e91-45cd-4dff-b8a4-3ad87f2f9639
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '515'
 ht-degree: 100%
 
 ---
@@ -44,7 +44,7 @@ Im folgenden Beispiel soll eine Datei mit Adressen importiert werden, die gunds�
 
 ![](assets/s_advuser_list_read_sample_1.png)
 
-Die im **Premiumkunden**-Ordner enthaltenen Profile sollen im Rahmen einer Marketingkampagne kontaktiert werden. Eine externe Liste enthält vom Versand auszuschließende Adressen. Für das vorliegende Beispiel werden nur die E-Mail-Adressen benötigt, um den Ausschluss vorzunehmen.
+Die im **Premiumkunden**-Ordner enthaltenen Profile sollen im Rahmen einer Marketing-Kampagne kontaktiert werden. Eine externe Liste enthält vom Versand auszuschließende Adressen. Für das vorliegende Beispiel werden nur die E-Mail-Adressen benötigt, um den Ausschluss vorzunehmen.
 
 1. Die zum Laden der im **Premiumkunden**-Ordner enthaltenen Empfänger erstellte Abfrage muss die E-Mail-Adressen der Empfänger ausgeben, um die Abstimmung mit der Ausschlussliste zu ermöglichen.
 

@@ -2,13 +2,13 @@
 product: campaign
 title: Aktualisierung der Bounce-Qualifizierung nach dem Apple-Ausfall 2021
 description: Hier wird erklärt, wie die Bounce-Qualifizierung nach dem Apple-Ausfall von 2021 aktualisiert werden kann
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Deliverability
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '448'
 ht-degree: 100%
 
 ---

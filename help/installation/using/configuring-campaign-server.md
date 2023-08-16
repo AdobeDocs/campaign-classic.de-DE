@@ -26,13 +26,13 @@ In diesem Kapitel werden serverseitige Konfigurationen beschrieben, die entsprec
 
 Diese Verfahren beschränken sich **On-Premise**/**hybrid** Implementierungen und erfordern Administratorberechtigungen.
 
-Für **gehostet** -Bereitstellungen können nur von Adobe konfiguriert werden. Einige Einstellungen können jedoch in [Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=de), wie die Verwaltung von IP-Zulassungslisten oder URL-Berechtigungen. [Weitere Informationen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=de).
+Für **gehostet** -Bereitstellungen können nur über Adobe konfiguriert werden. Einige Einstellungen können jedoch in [Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=de), wie die Verwaltung von IP-Zulassungslisten oder URL-Berechtigungen. [Weitere Informationen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=de).
 
 Weitere Informationen finden Sie in den folgenden Abschnitten:
 
 * [Control Panel-Dokumentation](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de)
 * [Hosting-Modelle](../../installation/using/hosting-models.md)
-* [Funktionsmatrix für On-Premise- und gehostete Campaign Classic](../../installation/using/capability-matrix.md)
+* [Campaign Classic On-Premise- und gehostete Funktionsmatrix](../../installation/using/capability-matrix.md)
 
 ## Konfigurationsdateien
 

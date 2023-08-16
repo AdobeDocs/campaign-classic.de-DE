@@ -2,13 +2,13 @@
 product: campaign
 title: Über Web-Dienste
 description: Über Web-Dienste
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: API
 exl-id: 7aa2aef1-2eb6-48a6-82fa-4451bed66216
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '655'
-ht-degree: 7%
+source-wordcount: '662'
+ht-degree: 8%
 
 ---
 
@@ -38,9 +38,9 @@ Bevor Sie die Adobe Campaign-APIs verwenden, müssen Sie sich mit den folgenden 
 Adobe Campaign verwendet zwei API-Typen:
 
 * Generische Data Access APIs zum Abfragen der Daten des Datenmodells. Näheres hierzu finden Sie unter [Datenorientierte APIs](../../configuration/using/data-oriented-apis.md).
-* Business-orientierte APIs, mit denen Sie auf diese einzelnen Objekte, also Versand, Workflows, Abonnements usw., Aktionen ausführen können. Siehe [Geschäftsorientierte APIs](../../configuration/using/business-oriented-apis.md).
+* Business-orientierte APIs, mit denen Sie auf diese einzelnen Objekte, also Versand, Workflows, Abonnements usw., Aktionen ausführen können. Siehe Abschnitt [Geschäftsorientierte APIs](../../configuration/using/business-oriented-apis.md).
 
-Um APIs zu entwickeln und mit Adobe Campaign zu interagieren, müssen Sie mit Ihrem Datenmodell vertraut sein. Mit Adobe Campaign können Sie eine vollständige Beschreibung der Basis erstellen. Siehe [Beschreibung des Modells](../../configuration/using/data-oriented-apis.md#description-of-the-model).
+Um APIs zu entwickeln und mit Adobe Campaign zu interagieren, müssen Sie mit Ihrem Datenmodell vertraut sein. Mit Adobe Campaign können Sie eine vollständige Beschreibung der Basis erstellen. Siehe Abschnitt [Beschreibung des Modells](../../configuration/using/data-oriented-apis.md#description-of-the-model).
 
 ## SOAP-Aufrufe {#soap-calls}
 
@@ -141,10 +141,10 @@ Die `<soap-env:fault>` -Element im Textkörper der SOAP-Nachricht verwendet wird
    * &quot;Client&quot;, falls dem Client einige Informationen fehlen,
    * &quot;Server&quot;, wenn der Server ein Problem bei der Ausführung der Verarbeitung hat.
 
-* `<faultstring>` : Fehlermeldung
+* `<faultstring>` : Fehlerbeschreibung
 * `<detail>` : Lange Fehlermeldung
 
-Der Erfolg oder Misserfolg des Dienstaufrufs wird identifiziert, wenn die Variable `<faultcode>` -Element überprüft wird.
+Der Erfolg oder Misserfolg des Dienstaufrufs wird identifiziert, wenn die `<faultcode>` -Element überprüft wird.
 
 >[!IMPORTANT]
 >

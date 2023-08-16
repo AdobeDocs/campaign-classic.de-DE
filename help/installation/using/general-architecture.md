@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Allgemeine Architektur des Campaign Classic
+title: Allgemeine Architektur von Campaign Classic
 description: Erfahren Sie, wie Sie Campaign Classic installieren und konfigurieren können
 feature: Installation, Architecture
 badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
@@ -37,7 +37,7 @@ Adobe Campaign basiert auf einer Service-orientierten Architektur (SOA) und umfa
 
 >[!NOTE]
 >
->Als Softwareanbieter spezifizieren wir kompatible Hardware- und Software-Infrastrukturen. Die hier gegebenen Hardware-Empfehlungen dienen nur zu Informationszwecken und basieren auf unserer Erfahrung. Die Adobe haftet nicht für Entscheidungen, die auf dieser Grundlage getroffen werden. Dies hängt auch von Ihren Geschäftsregeln und -praktiken sowie von der Kritikalität und den erforderlichen Leistungsstufen des Projekts ab.
+>Als Softwareanbieter spezifizieren wir kompatible Hardware- und Software-Infrastrukturen. Die hier gegebenen Hardware-Empfehlungen dienen nur zu Informationszwecken und basieren auf unserer Erfahrung. Adobe haftet nicht für Entscheidungen, die auf der Grundlage dieser Entscheidungen getroffen werden. Dies hängt auch von Ihren Geschäftsregeln und -praktiken sowie von der Kritikalität und den erforderlichen Leistungsstufen des Projekts ab.
 
 ![](assets/s_ncs_install_architecture.png)
 

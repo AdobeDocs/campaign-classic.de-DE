@@ -24,7 +24,7 @@ Bevor Sie mit der Installation der Client Console beginnen, müssen Sie Folgende
 * Überprüfen Sie die Kompatibilität Ihres Systems und Ihrer Tools mit Adobe Campaign in der [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)
 * Ermitteln Sie Ihre Campaign-Server-URL
 * Ermitteln Sie Ihre Anwender-Anmeldedaten
-* Lassen Sie die Microsoft Edge Webview2-Laufzeit auf Ihrem System installiert (ab Build-Version von Campaign Classic 7.3). [Weitere Informationen](#webview)
+* Setzen Sie die Microsoft Edge Webview2-Laufzeitumgebung auf Ihr System (ab Campaign Classic 7.3 Build-Version). [Weitere Informationen](#webview)
 
 Die Installation oder Aktualisierung der Clientkonsole hängt von Ihrer Implementierung von Adobe Campaign Classic ab.
 Lesen Sie die folgenden Details, um zu verstehen, was für Ihre Implementierung erforderlich ist.
@@ -43,9 +43,9 @@ Lesen Sie die folgenden Details, um zu verstehen, was für Ihre Implementierung 
 
 Ab der Build-Version 7.3 von Campaign Classic ist die Installation der Microsoft Edge Webview 2-Laufzeitumgebung für jede Konsolen-Installation erforderlich.
 
-WebView wird standardmäßig als Teil des Betriebssystems Windows 11 installiert. Wenn es nicht bereits auf Ihrem System vorhanden ist, werden Sie vom Installationsprogramm der Campaign Classic Console aufgefordert, es von herunterzuladen. [Microsoft Developer-Website](https://www.adobe.com/go/acc-ms-webview2-runtime-download_de). Beachten Sie, dass der Download-Link nicht mit Internet Explorer 11 funktioniert, da Microsoft die Unterstützung dieses Browsers eingestellt hat. Stellen Sie sicher, dass Sie einen anderen Browser verwenden, um auf den Link zuzugreifen.
+WebView wird standardmäßig als Teil des Betriebssystems Windows 11 installiert. Wenn es nicht bereits auf Ihrem System vorhanden ist, werden Sie vom Campaign Classic Console-Installationsprogramm aufgefordert, es von herunterzuladen [Microsoft Developer-Website](https://www.adobe.com/go/acc-ms-webview2-runtime-download_de). Beachten Sie, dass der Download-Link nicht mit Internet Explorer 11 funktioniert, da Microsoft die Unterstützung dieses Browsers eingestellt hat. Stellen Sie sicher, dass Sie einen anderen Browser verwenden, um auf den Link zuzugreifen.
 
-## Von Adobe gehostete Implementierungen {#hosted-customers}
+## Adobe gehostete Implementierungen {#hosted-customers}
 
 Als gehosteter Kunde haben Sie zwei Möglichkeiten, Ihre Client-Konsole(n) zu installieren oder zu aktualisieren:
 

@@ -2,14 +2,14 @@
 product: campaign
 title: Testadressen
 description: Testadressen
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Seed Address
 exl-id: a16103bf-0498-4f59-ad96-8bfdeea26577
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 8%
+source-wordcount: '344'
+ht-degree: 11%
 
 ---
 
@@ -21,7 +21,7 @@ Wenn es sich bei der Empfängertabelle um eine benutzerdefinierte Tabelle handel
 
 ![](assets/s_ncs_user_seedlist_new_tab.png)
 
-Weiterführende Informationen zur Verwendung von Testadressen finden Sie im Abschnitt [diesem Abschnitt](../../delivery/using/about-seed-addresses.md).
+Weitere Informationen zur Verwendung von Testadressen finden Sie unter [diesem Abschnitt](../../delivery/using/about-seed-addresses.md).
 
 ## Implementierung {#implementation}
 
@@ -83,7 +83,7 @@ Gehen Sie wie folgt vor:
    >    
    >
 
-1. Ändern Sie die **[!UICONTROL seedMember]** Formular , um einen neuen Tab &quot;Interner Empfänger&quot;im **[!UICONTROL Testadressen]** Fenster. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../configuration/using/form-structure.md).
+1. Ändern Sie die **[!UICONTROL seedMember]** dementsprechend das Formular zur Definition eines neuen Tabs &quot;Interner Empfänger&quot;im **[!UICONTROL Testadressen]** Fenster. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../configuration/using/form-structure.md).
 
    ```
    <container colcount="2" label="Internal recipient" name="internal"
@@ -98,4 +98,4 @@ Gehen Sie wie folgt vor:
      </container>
    ```
 
-Wenn nicht alle Attribute der Testadresse eingegeben wurden, ersetzt Adobe Campaign automatisch die Profile: sie werden automatisch während der Personalisierung mit Daten aus einem existierenden Profil eingegeben.
+Wenn nicht alle Attribute der Testadresse angegeben wurden, ersetzt Adobe Campaign automatisch die Profile. Diese werden bei der Personalisierung automatisch mit Daten aus einem existierenden Profil eingefügt.

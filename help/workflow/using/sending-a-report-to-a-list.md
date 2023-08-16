@@ -2,12 +2,12 @@
 product: campaign
 title: Senden eines Berichts an eine Liste
 description: Erfahren Sie, wie Sie mit einem Workflow einen Bericht an eine Liste senden.
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Workflows
 exl-id: cb24aea5-f3c7-4b17-8899-1792ea18c235
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '726'
 ht-degree: 100%
 
 ---

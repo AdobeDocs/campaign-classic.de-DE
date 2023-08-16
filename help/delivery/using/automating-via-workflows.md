@@ -2,13 +2,13 @@
 product: campaign
 title: Automatisieren über Workflows
 description: Erfahren Sie, wie Sie Content-Management über Workflows automatisieren können
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Workflows
 exl-id: bc6ebf5d-cc21-4750-9713-2bf259e7d6bf
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '1202'
+source-wordcount: '1214'
 ht-degree: 100%
 
 ---
@@ -54,7 +54,7 @@ Vier Aktivitätseigenschaften sind zu konfigurieren:
 
 * **Betreff**
 
-  Ermöglicht bei der Veröffentlichung die Anpassung des Versandbetreffs.
+  Ermöglicht bei der Publikation die Anpassung des Versandbetreffs.
 
 * **Zugriff auf Daten eines XML-Streams**
 
@@ -186,7 +186,7 @@ Die nachfolgende Aktivität startet die Inhaltserzeugung.
 
 Der zu veröffentlichende Inhalt wird in der eingehenden Transition angegeben.
 
-Die Aktivität endet mit der Erzeugung des Inhalts unter Verwendung des angegebenen Veröffentlichungsverzeichnisses.
+Die Aktivität endet mit der Erzeugung des Inhalts unter Verwendung des angegebenen Publikationsverzeichnisses.
 
 Die Aktivität **JavaScript-Code** ruft den kompletten Namen jeder erzeugten Datei ab.
 
@@ -199,7 +199,7 @@ Der folgende Workflow entspricht dem ersten Beispiel, beginnt jedoch mit der Ers
 
 ![](assets/d_ncs_content_workflow10.png)
 
-In der ersten **Versanderstellung**-Aktivität wird der Versand konfiguriert.
+In der ersten **Versanderstellungs**-Aktivität wird der Versand konfiguriert.
 
 Die Verzweigung ermöglicht die parallele Ausführung der Zielgruppenberechnung und der Erstellung der Inhaltsinstanz.
 

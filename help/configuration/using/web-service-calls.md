@@ -2,13 +2,13 @@
 product: campaign
 title: Web-Dienstaufrufe
 description: Web-Dienstaufrufe
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: API
 exl-id: ce94e7e7-b8f8-4c82-937f-e87d15e50c34
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '922'
-ht-degree: 1%
+source-wordcount: '929'
+ht-degree: 2%
 
 ---
 
@@ -211,13 +211,13 @@ Das Sitzungstoken weist die folgenden Merkmale auf:
 Das Security-Token weist die folgenden Merkmale auf:
 
 * wird aus dem Sitzungstoken generiert
-* Er verfügt über einen Lebenszyklus von 24 Stunden (konfigurierbar in der Datei &quot;serverConf.xml&quot;, der Standardzeitraum beträgt 24 Stunden).
+* Er hat einen Lebenszyklus von 24 Stunden (konfigurierbar in der Datei &quot;serverConf.xml&quot;, der Standardzeitraum beträgt 24 Stunden).
 * wird in der Adobe Campaign-Konsole gespeichert
 * beim Zugriff über das Internet:
 
    * in einem Dokument gespeichert.__securityToken-Eigenschaft
-   * die Seiten-URLs aktualisiert werden, um das Sicherheits-Token zu aktualisieren
-   * die Formulare auch über ein ausgeblendetes Feld mit dem Token aktualisiert werden
+   * die Seiten-URLs aktualisiert werden, um das Security-Token zu aktualisieren
+   * Die Formulare werden auch über ein ausgeblendetes Feld mit dem Token aktualisiert.
 
 #### Bewegung des Sicherheits-Tokens {#security-token-movement}
 
@@ -274,7 +274,7 @@ Aus einem SOAP-Aufruf:
 
 >[!NOTE]
 >
->Die in den folgenden URLs verwendeten URLs **HttpServletRequest** -Aufrufe müssen im Abschnitt &quot;URL-Berechtigungen&quot;der **serverConf.xml** -Datei. Dies gilt auch für die URL des Servers selbst.
+>Die im Folgenden verwendeten URLs **HttpServletRequest** -Aufrufe müssen im Abschnitt &quot;URL-Berechtigungen&quot;der **serverConf.xml** -Datei. Dies gilt auch für die URL des Servers selbst.
 
 Logon execution():
 

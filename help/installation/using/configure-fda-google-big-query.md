@@ -205,7 +205,7 @@ Der Connector unterstützt die folgenden Optionen:
 
 | Option | Beschreibung  |
 |:-:|:-:|
-| ProxyType | Proxy-Typ, der für die Verbindung mit BigQuery über ODBC- und SDK-Connectoren verwendet wird. </br>HTTP (Standard), http_no_tunnel, socks4 und socks5 werden derzeit unterstützt. |
+| ProxyType | Typ des Proxys, der für die Verbindung mit BigQuery über ODBC- und SDK-Connectoren verwendet wird. </br>HTTP (Standard), http_no_tunnel, socks4 und socks5 werden derzeit unterstützt. |
 | ProxyHost | Hostname oder IP-Adresse, an der der Proxy erreicht werden kann. |
 | ProxyPort | Anschlussnummer, auf der der Proxy ausgeführt wird, z. B. 8080 |
 | ProxyUid | Benutzername für den authentifizierten Proxy |

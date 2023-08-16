@@ -12,7 +12,7 @@ exl-id: a586d70b-1b7f-47c2-a821-635098a70e45
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '1239'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
@@ -138,10 +138,10 @@ VACUUM (FULL, ANALYZE, VERBOSE) nmsmirrorpageinfo;
 
 >[!NOTE]
 >
->* Adobe empfiehlt, mit kleineren Tabellen zu beginnen: Wenn der Vorgang auf großen Tabellen fehlschlägt (bei denen das Fehlerrisiko am größten ist), wurde mindestens ein Teil der Wartung abgeschlossen.
+>* Adobe empfiehlt, mit kleineren Tabellen zu beginnen: Auf diese Weise wurde zumindest ein Teil der Wartung abgeschlossen, wenn der Prozess bei großen Tabellen fehlschlägt (bei denen das Fehlerrisiko am größten ist).
 >* Adobe empfiehlt, die für Ihr Datenmodell spezifischen Tabellen hinzuzufügen, die erheblich aktualisiert werden können. Dies kann der Fall sein für **NmsRecipient** wenn Sie über große tägliche Datenreplikationsflüsse verfügen.
 >* Die VACUUM-Anweisung sperrt die Tabelle, wodurch einige Prozesse während der Wartung angehalten werden.
->* Bei sehr großen Tabellen (in der Regel über 5 GB) kann die VACUUM FULL-Anweisung sehr ineffizient werden und sehr lange dauern. Adobe rät davon ab, sie für die **YyyNmsBroadLogXxx** Tabelle.
+>* Bei sehr großen Tabellen (in der Regel über 5 GB) kann die VACUUM FULL-Anweisung sehr ineffizient werden und sehr lange dauern. Adobe rät davon ab, es für die **YyyNmsBroadLogXxx** Tabelle.
 >* Dieser Wartungsvorgang kann mithilfe eines Adobe Campaign-Workflows implementiert werden **[!UICONTROL SQL]** -Aktivität. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../workflow/using/architecture.md). Stellen Sie sicher, dass Sie die Wartung für eine niedrige Aktivitätsdauer planen, die nicht mit Ihrem Sicherungsfenster kollidiert.
 >
 

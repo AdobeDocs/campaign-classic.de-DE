@@ -2,12 +2,12 @@
 product: campaign
 title: Aufgabe
 description: Erfahren Sie mehr über die Workflow-Aktivität "Aufgabe".
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Workflows
 exl-id: 8549bf8c-ba23-44cb-95f2-c50f2d0f5479
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '105'
+source-wordcount: '112'
 ht-degree: 100%
 
 ---

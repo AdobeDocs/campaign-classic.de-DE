@@ -133,7 +133,7 @@ Die Informationen über Wiedereinziehungen sind im Abschnitt **Wiederherstellung
 
 >[!NOTE]
 >
->Wenn Sie bei gehosteten oder hybriden Installationen ein Upgrade auf [Verbesserter MTA](../../delivery/using/sending-with-enhanced-mta.md)festgelegt ist, werden die Wiederholungsparameter der Kampagne nicht mehr verwendet. Weitere Zustellversuche aufgrund von Softbounces und die Zeitdauer zwischen ihnen werden durch den Enhanced MTA bestimmt, basierend auf Typ und Prioritätsstufe der Bounce-Antworten, die von der E-Mail-Domain der Nachricht zurückgegeben werden.
+>Wenn Sie bei gehosteten oder hybriden Installationen ein Upgrade auf [Verbesserter MTA](../../delivery/using/sending-with-enhanced-mta.md)festgelegt ist, werden die Wiederholungsparameter der Kampagne nicht mehr verwendet. Weitere Zustellversuche aufgrund von Softbounces sowie die Zeitdauer zwischen ihnen werden durch den Enhanced MTA bestimmt, basierend auf Typ und Prioritätsstufe der Bounce-Antworten, die von der E-Mail-Domain der Nachricht zurückgegeben werden.
 
 ### Quarantäneparameter {#quarantine-parameters}
 
@@ -278,7 +278,7 @@ Im vorherigen Fenster wird die Registrierung auf Tracking-Server-Ebene durch ein
 
 ![](assets/s_ncs_install_deployment_wiz_tracking_ok.png)
 
-Die mit URL-Suchen verknüpften Parameter **darf nicht geändert werden** für eine Standardinstallation. Für alle anderen Parameter kontaktieren Sie bitte die Adobe.
+Die mit URL-Suchen verknüpften Parameter **darf nicht geändert werden** für eine Standardinstallation. Für alle anderen Parameter kontaktieren Sie bitte Adobe.
 
 ## Mobile-Kanal-Parameter {#mobile-channel-parameters}
 

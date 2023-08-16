@@ -2,13 +2,13 @@
 product: campaign
 title: Über die Schemareferenz in Adobe Campaign Classic
 description: Erfahren Sie, wie Sie Erweiterungsschemata konfigurieren, um das konzeptionelle Datenmodell der Adobe Campaign Classic-Datenbank zu erweitern.
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Schema Extension
 exl-id: f36a1b01-a002-4a21-9255-ea78b5f173fe
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '381'
-ht-degree: 58%
+source-wordcount: '388'
+ht-degree: 59%
 
 ---
 
@@ -73,7 +73,7 @@ Ein Schema wird anhand seines Namens und seines Namespace identifiziert.
 
 Mit einem Namespace können Sie eine Reihe von Schemas nach Interessensgebieten gruppieren. Beispielsweise wird der Namespace **cus** für die kundenspezifische Konfiguration (**customers**) verwendet.
 
-Der Identifikationsschlüssel eines Schemas ist eine Zeichenfolge, die mithilfe des Namespace und des Namens (durch einen Doppelpunkt getrennt) erstellt wird. Beispiel: **cus:recipient**.
+Der Identifikationsschlüssel eines Schemas ist eine Zeichenfolge, die mithilfe des Namespace und des Namens, getrennt durch einen Doppelpunkt, erstellt wird. Beispiel: **cus:recipient**.
 
 >[!IMPORTANT]
 >

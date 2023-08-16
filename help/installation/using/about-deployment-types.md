@@ -11,7 +11,7 @@ exl-id: 08628efb-9186-4b67-9431-310d4bc276b4
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '143'
-ht-degree: 6%
+ht-degree: 11%
 
 ---
 
@@ -25,6 +25,6 @@ Bei einer Konfiguration auf mehreren Computern müssen Sie nicht überall dassel
 
 >[!NOTE]
 >
->Die wichtigsten Installationskonfigurationsschritte können nur von Adobe für Bereitstellungen ausgeführt werden, die von Adobe gehostet werden, um beispielsweise die Server- und Instanzkonfigurationsdateien zu konfigurieren.
+>Die wichtigsten Installationskonfigurationsschritte können nur von Adobe für von Adobe gehostete Bereitstellungen ausgeführt werden, um beispielsweise die Server- und Instanzkonfigurationsdateien zu konfigurieren.
 >
 >Weitere Informationen zu den Hauptunterschieden zwischen -Implementierungen finden Sie im Abschnitt [Hosting-Modelle](../../installation/using/hosting-models.md) oder [Funktionsunterschiede bei gehosteten und On-Premise-Bereitstellungen](../../installation/using/capability-matrix.md).

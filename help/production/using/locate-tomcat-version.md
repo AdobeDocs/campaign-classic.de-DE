@@ -12,7 +12,7 @@ exl-id: 76411b29-d300-4aaa-8d3b-d8ff74c3ce93
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '524'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 3%
 
 Adobe Campaign verwendet eine **eingebettetes Webservlet namens Apache Tomcat** zur Verarbeitung von HTTP/HTTPS-Anforderungen zwischen der Anwendung und einer beliebigen externen Schnittstelle (einschließlich Client-Konsole, getrackte URL-Links, SOAP-Aufrufe und andere). Oft liegt ein externer Webserver (normalerweise IIS oder Apache) vor diesem für alle externen Adobe Campaign-Instanzen.
 
-Gehen Sie wie folgt vor, um die genaue Version von Tomcat zu ermitteln, die in einer **On-Premise-Instanz des Campaign Classic** um die Fehlerbehebung zu unterstützen.
+Gehen Sie wie folgt vor, um die genaue Version von Tomcat zu ermitteln, die in einer **Campaign Classic On-Premise-Instanz** um die Fehlerbehebung zu unterstützen.
 
 ## Tomcat wird in Adobe Campaign verwendet
 

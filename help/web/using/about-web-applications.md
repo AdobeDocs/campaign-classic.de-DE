@@ -2,13 +2,13 @@
 product: campaign
 title: Erste Schritte mit Web-Anwendungen
 description: Erstellen und teilen Sie dynamische Web-Anwendungen, Landingpages und Umfragen
-badge-v7: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Also applies to Campaign v8"
+badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
+badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Landing Pages, Web Apps
 exl-id: df58221f-f71b-49d5-a6a1-c81ddff27fdb
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '717'
+source-wordcount: '729'
 ht-degree: 100%
 
 ---

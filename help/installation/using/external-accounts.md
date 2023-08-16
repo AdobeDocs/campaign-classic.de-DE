@@ -127,7 +127,7 @@ Die folgenden Kanäle können konfiguriert werden:
 
 Das externe Konto E-Mail-Routing wird standardmäßig bereitgestellt und ist an Ihre Konfiguration angepasst.
 
-Als On-Premise-/Hybrid-Kunde können Sie neue Routing-externe Konten erstellen oder Parameter aktualisieren, wie unten beschrieben. Diese Konfiguration ist erfahrenen Benutzern vorbehalten und kann sich auf Ihre Zustellbarkeit auswirken. Wenden Sie sich bei Fragen an die Kundenunterstützung von Adobe oder Ihren Kundenbetreuer für Adoben.
+Als On-Premise-/Hybrid-Kunde können Sie neue Routing-externe Konten erstellen oder Parameter aktualisieren, wie unten beschrieben. Diese Konfiguration ist erfahrenen Benutzern vorbehalten und kann sich auf Ihre Zustellbarkeit auswirken. Wenden Sie sich bei Fragen an den Kundendienst von Adobe oder Ihren Adobe-Support-Mitarbeiter.
 
 * Sie können eine **Mid-Sourcing**, **Externe** Routing oder **Bulk** Versandrouting-Typ.
 
@@ -242,7 +242,7 @@ Die Konfigurationseinstellungen für externe Konten hängen von der Datenbank-En
 * Zugriff konfigurieren auf [Teradata](../../installation/using/configure-fda-teradata.md)
 
 
-## Adobe Solution Integration - Externe Konten
+## Externe Konten zur Integration von Adobe-Lösungen
 
 ### Adobe Experience Cloud {#adobe-experience-cloud-external-account}
 

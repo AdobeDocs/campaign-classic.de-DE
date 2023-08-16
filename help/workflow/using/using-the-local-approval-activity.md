@@ -2,12 +2,12 @@
 product: campaign
 title: Verwenden der lokalen Validierungsaktivität
 description: Erfahren Sie, wie Sie die lokale Validierungsaktivität verwenden
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Workflows
 exl-id: cc29eec9-9c97-4d1b-9567-2581154d7b3f
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1430'
+source-wordcount: '1437'
 ht-degree: 100%
 
 ---

@@ -13,7 +13,7 @@ exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '2687'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -490,7 +490,7 @@ $(XTK_INSTALL_DIR)/tomcat-8/lib/jsp-api.jar
 $(XTK_INSTALL_DIR)/tomcat-8/lib/el-api.jar
 ```
 
-## Interaction {#interaction}
+## Interaktion {#interaction}
 
 ### Voraussetzungen {#prerequisites}
 

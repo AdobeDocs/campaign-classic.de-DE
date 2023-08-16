@@ -2,17 +2,17 @@
 product: campaign
 title: Scripts/JavaScript-Templates
 description: Scripts/JavaScript-Templates
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Workflows
 exl-id: 4a3647d1-cf8c-4867-871e-472287be7c6a
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1263'
+source-wordcount: '1270'
 ht-degree: 100%
 
 ---
 
-# Scripts/JavaScript-Templates{#javascript-scripts-and-templates}
+# JavaScript-Scripte und -Vorlagen{#javascript-scripts-and-templates}
 
 
 
@@ -22,7 +22,7 @@ In einem Workflow-Diagramm sind Scripts allgegenwärtig:
 
 * Jede Aktivität verfügt über ein Initialisierungscript. Dieses wird bei Aktivierung der Aktivität ausgeführt. Es initialisiert die Variablen oder ändert die Eigenschaften der Aktivität.
 * Die &#39;JavaScript-Code&#39;-Aktivität dient einzig der Ausführung eines Scripts.
-* Die &#39;Test&#39;-Aktivität evaluiert JavaScript-Ausdrücke, um die richtige Transition zu aktivieren.
+* Die &#39;Test&#39;-Aktivität wertet JavaScript-Ausdrücke aus, um die richtige Transition zu aktivieren.
 * Die meisten Textfelder sind JavaScript-Templates: Sie können zwischen &lt;%= und %> JavaScript-Ausdrücke enthalten. Darüber hinaus besteht Zugriff auf eine Dropdown-Liste, die die Erstellung der Ausdrücke erleichtert.
 
   ![](assets/script-button.png)

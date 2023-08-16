@@ -2,17 +2,17 @@
 product: campaign
 title: Content Management
 description: Content Management
-badge-v7-only: label="v7" type="Informative" tooltip="Applies to Campaign Classic v7 only"
+badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Workflows, Data Management
 exl-id: eb92a7c7-edfa-4062-b473-6d8b50d35e5f
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '470'
 ht-degree: 100%
 
 ---
 
-# Content Management{#content-management}
+# Content-Management{#content-management}
 
 
 
@@ -46,7 +46,7 @@ Die Konfiguration der Aktivität gliedert sich in drei Schritte:
 
    * **[!UICONTROL Wird durch ein Script erstellt]**
 
-     Die Kennung des Inhalts wird über ein Script erstellt. Im Feld **[!UICONTROL Script]** wird das JavaScript-Template berechnet, welches die Kennung (den Primärschlüssel) des Inhalts evaluiert. Das Feld erscheint nur, wenn die Option **[!UICONTROL Wird durch ein Script erstellt]** angekreuzt wurde.
+     Die Kennung des Inhalts wird über ein Script erstellt. Im Feld **[!UICONTROL Script]** wird das JavaScript-Template berechnet, welches die Kennung (den Primärschlüssel) des Inhalts auswertet. Das Feld erscheint nur, wenn die Option **[!UICONTROL Wird durch ein Script erstellt]** aktiviert wurde.
 
      ![](assets/content_mgmt_script.png)
 

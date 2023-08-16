@@ -8,7 +8,7 @@ exl-id: ca0c33c5-7350-462a-bc65-4cab51e529d9
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '768'
-ht-degree: 29%
+ht-degree: 30%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 29%
 
 ## Instanz-Monitoring-Dashboard {#instance-monitoring-dashboard}
 
-Die **[!UICONTROL Überwachung]** tab, auf den über die Startseite von Campaign Classic zugegriffen werden kann, ist der Haupteinstiegspunkt, der Sie bei der Überwachung Ihrer Instanz unterstützt.
+Die **[!UICONTROL Überwachung]** tab, auf den Sie von der Campaign Classic-Startseite aus zugreifen können, ist der Haupteinstiegspunkt, der Sie bei der Überwachung Ihrer Instanz unterstützt.
 
 Es bietet ein Dashboard darüber, was auf Ihrer Instanz geschieht: Status (Build-Version, installierte Packages usw.), Systemindikatoren, Protokolle, derzeit ausgeführte Workflows, Status der letzten gesendeten Nachrichten usw.
 
@@ -128,9 +128,9 @@ Es wird empfohlen, die Datenbankwartung regelmäßig durchzuführen, um zu verme
 
 Eine Sicherung ist unerlässlich, um zu verhindern, dass Daten im Falle eines (physischen oder systembezogenen) Problems auf einem Computer verloren gehen. [Klicken Sie hier](../../production/using/backup.md), um weitere Informationen zu erhalten. Das Wiederherstellungsverfahren wird unter [diesem Abschnitt](../../production/using/restoration.md).
 
-## Technische Campaign Classic {#campaign-classic-technical-principles}
+## Campaign Classic-technische Grundsätze {#campaign-classic-technical-principles}
 
-Technische Ressourcen finden Sie in der Dokumentation zum Campaign Classic. Wir empfehlen Ihnen, sich mit diesen Themen vertraut zu machen, bevor Sie einen technischen Vorgang auf Ihrer Instanz durchführen.
+Technische Ressourcen finden Sie in der Campaign Classic-Dokumentation. Wir empfehlen Ihnen, sich mit diesen Themen vertraut zu machen, bevor Sie einen technischen Vorgang auf Ihrer Instanz durchführen.
 
 **Hosting-Modelle und -Funktionen**
 
@@ -148,7 +148,7 @@ Technische Ressourcen finden Sie in der Dokumentation zum Campaign Classic. Wir 
 
 **Allgemeine Grundsätze**
 
-* [Campaign Classic-Architektur](../../production/using/general-architecture.md)
+* [Campaign Classic](../../production/using/general-architecture.md)
 * [Campaign Classic-Module](../../production/using/operating-principle.md)
 * [Campaign Classic-Optionen](../../installation/using/configuring-campaign-options.md)
 * [Einrichten des automatischen Starts von Modulen](../../production/using/administration.md)
