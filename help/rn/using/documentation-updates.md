@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Cla
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 324e26ba1db14e10bb79eee60ba43ddc36e8e94f
 workflow-type: tm+mt
-source-wordcount: '3607'
-ht-degree: 100%
+source-wordcount: '3630'
+ht-degree: 99%
 
 ---
 
@@ -23,6 +23,10 @@ Auf dieser Seite werden alle neuen Funktionen und Dokumentationsaktualisierungen
 Die entsprechenden Aktualisierungen finden Sie in den [Versionshinweisen zu Adobe Campaign Classic](../../rn/using/latest-release.md).
 
 ## 2023
+
+### August 2023
+
+Es wurde eine Einschränkung hinzugefügt, die besagt, dass Sie mit Adobe Campaign keine komprimierten Dateien entpacken können, die größer als 4 GB sind. [Weitere Informationen](../../platform/using/unzip-decrypt.md)
 
 ### April 2023
 

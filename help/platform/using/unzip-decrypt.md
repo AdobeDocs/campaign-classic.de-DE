@@ -9,22 +9,25 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 1a79da3b-2abc-4bfc-a0ee-8471c478638d
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 32c2ce24bdd62724e4b4ff66f4664e8faa259b4b
 workflow-type: tm+mt
-source-wordcount: '748'
-ht-degree: 100%
+source-wordcount: '762'
+ht-degree: 96%
 
 ---
 
+
 # Entpacken oder Entschlüsseln von Dateien {#unzipping-or-decrypting-a-file-before-processing}
-
-
 
 Mit Adobe Campaign können Sie komprimierte oder verschlüsselte Dateien importieren. Damit sie in der Aktivität [Laden (Datei)](../../workflow/using/data-loading--file-.md) gelesen werden können, definieren Sie eine Vorab-Bearbeitung, um die Datei zu dekomprimieren oder zu entschlüsseln.
 
+>[!IMPORTANT]
+>
+>Sie können komprimierte Dateien, die größer als 4 GB sind, nicht entpacken.
+
 Gehen Sie dazu folgendermaßen vor:
 
-1. Verwenden Sie das [Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=de#decrypting-data), um ein Schlüsselpaar aus öffentlichem und privatem Schlüssel zu generieren.
+1. Verwenden Sie die [Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=de#decrypting-data) , um ein Schlüsselpaar aus öffentlichem/privatem Schlüssel zu generieren, um die Entschlüsselung von Dateien zu ermöglichen.
 
    >[!NOTE]
    >
@@ -32,8 +35,9 @@ Gehen Sie dazu folgendermaßen vor:
    >
    >Beachten Sie, dass Ihre Instanz auf AWS gehostet und mit dem [neuesten GA-Build](../../rn/using/rn-overview.md) aktualisiert werden muss. Erfahren Sie in [diesem Abschnitt](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version), wie Sie Ihre Version überprüfen. Um zu überprüfen, ob Ihre Instanz auf AWS gehostet wird, folgen Sie den Schritten auf [dieser Seite](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=de).
 
-1. Wenn Ihre Adobe Campaign-Installation von Adobe gehostet wird, wenden Sie sich an die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html), damit die nötigen öffentlichen Dienste auf dem Server installiert werden.
 1. Wenn Sie eine On-Premise-Installation von Adobe Campaign haben, installieren Sie den gewünschten öffentlichen Dienst (z. B.: GPG, GZIP) sowie die nötigen Schlüssel (zur Verschlüsselung) auf dem Anwendungs-Server.
+
+   Wenn Ihre Adobe Campaign-Installation von Adobe gehostet wird, wenden Sie sich an die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html), damit die nötigen öffentlichen Dienste auf dem Server installiert werden.
 
 Anschließend können Sie die gewünschten Vorab-Bearbeitungsbefehle in Ihren Workflows nutzen:
 
