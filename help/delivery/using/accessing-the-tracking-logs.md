@@ -5,17 +5,16 @@ description: Auf Trackinglogs zugreifen
 badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Monitoring
+role: User
 exl-id: df494786-5950-4646-aa9c-4dde45845057
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: tm+mt
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+workflow-type: ht
 source-wordcount: '105'
 ht-degree: 100%
 
 ---
 
 # Auf Trackinglogs zugreifen{#accessing-the-tracking-logs}
-
-
 
 Der technische Workflow **[!UICONTROL Tracking]** hat die Aufgabe, nach dem Versand und der Aktivierung des Trackings die Tracking-Informationen abzurufen. Standardmäßig wird er stündlich ausgeführt.
 
