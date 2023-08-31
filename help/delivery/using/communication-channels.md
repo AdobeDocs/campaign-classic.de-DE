@@ -5,17 +5,16 @@ description: Erstellen Sie Sendungen, um personalisierte Nachrichten über versc
 badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Cross Channel Orchestration, Email, SMS, In App, Direct Mail, Push
+role: User
 exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: tm+mt
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+workflow-type: ht
 source-wordcount: '1223'
 ht-degree: 100%
 
 ---
 
 # Kommunikationskanäle{#communication-channels}
-
-
 
 Mit Adobe Campaign können Sie kanalübergreifende Kampagnen wie E-Mails, SMS, LINE-Nachrichten, Push-Benachrichtigungen und Briefpost senden und deren Effektivität mithilfe verschiedener dedizierter [Berichte](../../reporting/using/delivery-reports.md) messen. Diese Nachrichten werden mittels Sendungen entworfen und gesendet und können für jeden Empfänger personalisiert werden.
 
