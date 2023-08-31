@@ -6,16 +6,14 @@ badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Deliverability
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
 source-wordcount: '448'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
 # Update fehlerhafter Hardbounces nach Apple-Ausfall {#update-bounce-qualification.md}
-
-
 
 ## Kontext
 
@@ -45,13 +43,13 @@ Auf der Grundlage des Zeitrahmens des Vorfalls werden im Folgenden die Richtlini
 
 * Für Campaign-Instanzen mit SMTP-Bounce-Antwortinformationen im Feld **[!UICONTROL Fehlertext]** der Quarantäneliste:
 
-   * **Fehlertext (Quarantänetext)** enthält „user lookup success but no user record found&quot; UND **Fehlertext (Quarantänetext)** enthält „support.apple.com“
+   * **Fehlertext (Quarantänetext)** enthält &quot;Erfolg der Benutzersuche, aber kein Benutzerdatensatz gefunden&quot; UND **Fehlertext (Quarantänetext)** enthält &quot;support.apple.com&quot;
    * **Statusaktualisierung (@lastModified)** später als 26.04.2021 07:00:00 Uhr
    * **Statusaktualisierung (@lastModified)** früher als 26.04.2021 13:00:00 Uhr
 
 * Für Campaign-Instanzen mit Regelinformationen für eingehende E-Mails im Feld **[!UICONTROL Fehlertext]** der Quarantäneliste:
 
-   * **Fehlertext (Quarantänetext)** enthält „Momen_Code10_InvalidRecipient“
+   * **Fehlertext (Quarantänetext)** enthält &quot;Momen_Code10_InvalidRecipient&quot;
    * **E-Mail-Domain (@domain)** ist gleich icloud.com ODER **E-Mail-Domain (@domain)** ist gleich me.com ODER **E-Mail-Domain (@domain)** ist gleich mac.com
    * **Statusaktualisierung (@lastModified)** später als 26.04.2021 07:00:00 Uhr
    * **Statusaktualisierung (@lastModified)** früher als 26.04.2021 13:00:00 Uhr

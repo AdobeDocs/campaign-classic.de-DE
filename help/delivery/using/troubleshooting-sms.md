@@ -5,8 +5,9 @@ description: Weitere Informationen zur Fehlerbehebung bei SMS-Kanälen
 badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: SMS, Troubleshooting
+role: User
 exl-id: 841f0c2f-90ef-4db0-860a-75fc7c48804a
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
 source-wordcount: '2756'
 ht-degree: 100%
@@ -14,8 +15,6 @@ ht-degree: 100%
 ---
 
 # SMS-Fehlerbehebung {#troubleshooting-sms}
-
-
 
 ## Konflikt zwischen verschiedenen externen Konten {#external-account-conflict}
 
@@ -296,7 +295,7 @@ Legen Sie in der `config-instance.xml`-Datei die folgenden Parameter fest:
 Mit dem folgenden Befehl können Sie die Anzahl der offenen Verbindungen eines Containers überprüfen:
 
 ```
-(for pid in $(ss -neopts  | sed -n ‘s/^.*:3600[ \t].*users:(([0-9A-Za-z”]*,pid=\([0-9]*\),.*$/\1/p’ | sort ); do  cat /proc/$pid/cmdline; echo  ” $pid” ;done;) | uniq --count
+(for pid in $(ss -neopts  | sed -n 's/^.*:3600[ \t].*users:(([0-9A-Za-z"]*,pid=\([0-9]*\),.*$/\1/p' | sort ); do  cat /proc/$pid/cmdline; echo  " $pid" ;done;) | uniq --count
 ```
 
 Damit wird die Anzahl der offenen Verbindungen für einen bestimmten Port aufgelistet. Hier verwenden wir den Port 3600.

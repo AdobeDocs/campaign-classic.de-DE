@@ -5,8 +5,9 @@ description: Erfahren Sie, wie Sie Gestaltungsbausteine verwenden
 badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Personalization
+role: User
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 100%
@@ -14,8 +15,6 @@ ht-degree: 100%
 ---
 
 # Gestaltungsbausteine {#personalization-blocks}
-
-
 
 Gestaltungsbausteine sind dynamisch und personalisierbar und weisen ein spezifisches Rendering auf. Sie können Gestaltungsbausteine in Nachrichten einfügen, z. B. ein Logo, eine Grußbotschaft oder einen Link zu einer Mirror-Seite. Siehe [Einfügen von Gestaltungsbausteinen](#inserting-personalization-blocks).
 
@@ -124,7 +123,7 @@ Standardmäßig ist eine Liste mit Gestaltungsbausteinen verfügbar, um den Inha
 
 Sie haben die Möglichkeit, neue Personalisierungsfelder zu konfigurieren, die dann über die entsprechende Schaltfläche ausgehend von der Option **[!UICONTROL Einfügen...]** verfügbar sind. Diese Felder werden in Gestaltungsbausteinen erstellt.
 
-Gehen Sie wie folgt vor, um Gestaltungsbausteine zu erstellen:
+Gehen Sie im Explorer wie folgt vor, um Gestaltungsbausteine zu erstellen:
 
 1. Gehen Sie in den Knoten **[!UICONTROL Ressourcen > Kampagnenverwaltung > Gestaltungsbausteine]**.
 1. Klicken Sie mit der rechten Maustaste in der Bausteinliste und wählen Sie die Option **[!UICONTROL Neu]** .

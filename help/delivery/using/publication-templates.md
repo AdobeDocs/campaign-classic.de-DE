@@ -5,21 +5,20 @@ description: Veröffentlichungsvorlagen
 badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Templates
+role: User
 exl-id: 3b6e4974-4551-4da2-8eca-577c4f9cbd91
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
-source-wordcount: '855'
-ht-degree: 100%
+source-wordcount: '844'
+ht-degree: 98%
 
 ---
 
 # Veröffentlichungsvorlagen{#publication-templates}
 
-
-
 ## Über Veröffentlichungsvorlagen {#about-publication-templates}
 
-Die Veröffentlichungsvorlage stellt den Steckbrief des zu veröffentlichenden Inhalts dar. Sie verweist auf alle für die Veröffentlichung erforderlichen Ressourcen:
+Die Veröffentlichungsvorlage verweist auf die im Veröffentlichungsprozess verwendeten Ressourcen, d. h.:
 
 * das Datenschema,
 * das Formular,

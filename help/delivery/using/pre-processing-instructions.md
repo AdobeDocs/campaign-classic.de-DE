@@ -5,8 +5,9 @@ description: Erfahren Sie mehr über die Vorab-Bearbeitungsanweisung, mit der Si
 badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Monitoring
+role: User, Data Engineer, Developer
 exl-id: 9d3f5c74-377a-4e24-81e5-bb605f69cf8a
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
 workflow-type: tm+mt
 source-wordcount: '654'
 ht-degree: 100%
@@ -14,8 +15,6 @@ ht-degree: 100%
 ---
 
 # Anweisungen zur Vorab-Bearbeitung {#pre-processing-instructions}
-
-
 
 Sie können eine bestimmte Syntax im Versandinhalt verwenden, um Anweisungen hinzuzufügen und die URL der getrackten E-Mail zu skripten. Die Anweisungen &quot;&lt;%@&quot; sind keine JavaScript-Anweisungen. Diese Syntax ist spezifisch für Adobe Campaign.
 
