@@ -2,11 +2,12 @@
 product: campaign
 title: Ziel-Audience der Marketing-Kampagne
 description: Erfahren Sie, wie Sie die Audience Ihrer Marketing-Kampagnen definieren.
+role: User
 badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Campaigns, Audiences
 exl-id: 04daa67c-4057-42a7-b993-a6eddf2b883d
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
-workflow-type: tm+mt
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+workflow-type: ht
 source-wordcount: '1586'
 ht-degree: 100%
 
