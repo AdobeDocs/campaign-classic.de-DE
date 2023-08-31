@@ -5,17 +5,16 @@ description: Erfahren Sie, wie Sie in Campaign A/B-Tests konfigurieren.
 badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: A/B Testing
+role: User
 exl-id: 6adf2e75-63b1-44ad-8925-03beb3bc0bdd
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
-workflow-type: tm+mt
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+workflow-type: ht
 source-wordcount: '227'
 ht-degree: 100%
 
 ---
 
 # Konfigurieren von A/B-Tests {#configuring-a-b-testing}
-
-
 
 In diesem Abschnitt wird beschrieben, wie Sie einen Workflow zum Durchführen von A/B-Tests erstellen.
 
