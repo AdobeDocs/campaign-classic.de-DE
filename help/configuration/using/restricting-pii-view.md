@@ -4,8 +4,9 @@ title: Einschränken der Anzeige von personenbezogenen Daten
 description: Erfahren Sie, wie Sie die Anzeige von personenbezogenen Daten einschränken
 badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: PI
+role: Data Engineer, Developer
 exl-id: 0f32d62d-a10a-4feb-99fe-4679b98957d4
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 66%

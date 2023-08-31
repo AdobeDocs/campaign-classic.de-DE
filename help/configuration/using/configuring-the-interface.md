@@ -3,10 +3,11 @@ product: campaign
 title: Benutzeroberfläche konfigurieren
 description: Erfahren Sie, wie Sie die Campaign-Benutzeroberfläche konfigurieren
 feature: Application Settings
+role: Data Engineer, Developer
 badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 exl-id: 9f50f258-845e-4895-b1ef-b73744dea326
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '325'
 ht-degree: 4%
@@ -14,8 +15,6 @@ ht-degree: 4%
 ---
 
 # Benutzeroberfläche konfigurieren{#configuring-the-interface}
-
-
 
 Gehen Sie wie folgt vor, um die neue Empfängertabelle in der Benutzeroberfläche von Adobe Campaign anzuzeigen und mit ihr zu kommunizieren:
 

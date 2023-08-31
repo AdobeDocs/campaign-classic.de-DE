@@ -5,17 +5,16 @@ description: Erfahren Sie anhand eines speziellen Anwendungsbeispiels, wie Sie A
 badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: A/B Testing
+role: User
 exl-id: e6f39180-d161-4226-810a-10bb1c3682ca
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '117'
-ht-degree: 100%
+source-wordcount: '119'
+ht-degree: 95%
 
 ---
 
-# Ergebnis analysieren {#step-8--analyzing-the-result}
-
-
+# AB-Tests: Ergebnis analysieren {#step-8--analyzing-the-result}
 
 Nach Verarbeitung der Testsendungen besteht die Möglichkeit im Kampagnen-Dashboard zu prüfen, welche Empfänger welche Version erhalten und ob sie die Sendungen geöffnet haben. Klicken Sie auf den Link einer der Sendungen:
 

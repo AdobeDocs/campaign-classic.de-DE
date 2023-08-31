@@ -5,17 +5,16 @@ description: Erfahren Sie anhand eines speziellen Anwendungsbeispiels, wie Sie A
 badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: A/B Testing
+role: User
 exl-id: 4eb139a0-5342-4084-9f6d-d736e05bf1c6
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '258'
-ht-degree: 100%
+source-wordcount: '260'
+ht-degree: 96%
 
 ---
 
-# A/B-Test dieses Anwendungsfalls {#ab-testing-use-case}
-
-
+# AB-Tests: A/B-Tests in diesem Anwendungsfall {#ab-testing-use-case}
 
 Im vorliegenden Anwendungsbeispiel wird ein Zielgruppen-Workflow verwendet, um zwei Inhaltsversionen zu vergleichen. Der Text ist jeweils derselbe, nur die Aufmachung unterscheidet sich.
 

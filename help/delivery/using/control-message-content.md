@@ -5,16 +5,16 @@ description: Erfahren Sie mehr über die Verwaltung der Zustellbarkeit in Adobe�
 badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Deliverability
+role: User
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '784'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
 # Steuern der Nachrichteninhalte{#control-message-content}
-
 
 
 Um sicherzustellen, dass Ihre E-Mails Ihre Empfänger erreichen und um Ihre E-Mail-Zustellrate zu verbessern, müssen sie eine Reihe von Regeln beachten. Andernfalls kann der Inhalt bestimmter Nachrichten als Spam eingestuft werden. Adobe Campaign stellt Ihnen mehrere Tools zur Verfügung, die Ihnen ermöglichen, Ihre Inhalte entsprechend diesen Regeln zu erstellen.
@@ -43,7 +43,7 @@ Weitere Informationen hierzu finden Sie auf [dieser Seite](defining-the-email-co
 
 ## Personalisierung {#personalization}
 
-Um das Nutzererlebnis zu verbessern und Empfänger dazu zu bewegen, Ihre E-Mail zu öffnen, ermöglicht Adobe Campaign Ihnen, Ihre Nachrichten zu personalisieren.
+Um das Benutzererlebnis zu verbessern und Ihre E-Mail zu öffnen, ermöglicht Ihnen Adobe Campaign die Personalisierung Ihrer Nachrichten.
 
 Weitere Informationen zur Verwendung von Personalisierungsfeldern in Adobe Campaign finden Sie in [diesem Abschnitt](personalization-fields.md).
 
