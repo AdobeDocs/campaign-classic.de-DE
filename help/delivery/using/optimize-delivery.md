@@ -8,9 +8,9 @@ feature: Deliverability
 role: User
 exl-id: 24b2ee47-bec7-43ce-81b3-0b2d1a5cebae
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '758'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ Sie müssen die Zustellbarkeitsrate Ihrer Nachrichten steigern, damit Ihre Nachr
 
 * Was ist Zustellbarkeit?
 
-   * Er bezieht sich auf die Faktoren einer E-Mail, die bestimmen, ob sie vom Server eines Empfängers akzeptiert werden kann. ISPs (Internet Service Provider) filtern E-Mails heraus, die sie als Spam erachten, oder verhindern das Herunterladen von Bildern. Wenn sie feststellen, dass von einer Domain zu viele E-Mails gesendet werden, begrenzen sie die Anzahl der von diesem Absender akzeptierten E-Mails.
+   * Sie bezeichnet die Faktoren, die darüber bestimmen, ob eine E-Mail vom Server einer Empfängerin bzw. eines Empfängers akzeptiert wird. ISPs (Internet Service Provider) filtern E-Mails heraus, die sie als Spam erachten, oder verhindern das Herunterladen von Bildern. Wenn sie feststellen, dass von einer Domain zu viele E-Mails gesendet werden, begrenzen sie die Anzahl der von diesem Absender akzeptierten E-Mails.
 
    * Konzentrieren Sie sich bei der Zustellbarkeit Ihrer E-Mail auf vier Hauptkategorien: Datenqualität, Nachricht und Inhalt, Versandinfrastruktur und Reputation. Detailliertere Informationen zu diesem Thema finden Sie in [diesem Abschnitt](about-deliverability.md).
 
