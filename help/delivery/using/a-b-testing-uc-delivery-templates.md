@@ -8,13 +8,13 @@ badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: A/B Testing
 exl-id: 77b3a906-b76e-49e1-b524-b6f1ae537259
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '107'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
-# AB-Tests: Versandvorlagen erstellen {#step-3--creating-two-delivery-templates}
+# A/B-Tests: Versandvorlagen erstellen {#step-3--creating-two-delivery-templates}
 
 Erstellen Sie nun zwei Versandvorlagen, die jeweils in einem an die Aktivität **[!UICONTROL Aufspaltung]** angeschlossenen **[!UICONTROL E-Mail-Versand]** verwendet werden. Weiterführende Informationen finden Sie in diesem [Abschnitt](about-templates.md). Gehen Sie wie folgt vor:
 
