@@ -8,9 +8,9 @@ feature: Monitoring, Deliverability
 role: User
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '654'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -130,7 +130,7 @@ Wenn der Versand nicht durchgeführt wird und sein Status **[!UICONTROL Ausstehe
 
   Überprüfen Sie in diesem Fall die Konfiguration des Traffic-Managements (IP-Affinität) und verwenden Sie das Feld **[!UICONTROL Verwaltung der IP-Adressen-Affinitäten]**, um die Sendungen mit dem MTA zu verknüpfen, der die Affinität verwaltet. Weiterführende Informationen zu Affinitäten finden Sie in [diesem Abschnitt](../../installation/using/configure-delivery-settings.md).
 
-* Wenn zu viele Kampagnen ausgeführt werden, bleibt der Versandstatus im Status &quot;Ausstehend&quot;.
+* Wenn zu viele Kampagnen ausgeführt werden, bleibt der Versandstatus im Status „Ausstehend“.
 
   Die Begrenzung für gleichzeitige Kampagnen wird in der Option **[!UICONTROL NmsOperation_LimitConcurrency]** definiert. Der Standardwert ist 10.
 
