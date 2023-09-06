@@ -8,13 +8,13 @@ feature: A/B Testing
 role: User
 exl-id: 4eb139a0-5342-4084-9f6d-d736e05bf1c6
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '260'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# AB-Tests: A/B-Tests in diesem Anwendungsfall {#ab-testing-use-case}
+# AB-Tests: A/B-Tests für diesen Anwendungsfall {#ab-testing-use-case}
 
 Im vorliegenden Anwendungsbeispiel wird ein Zielgruppen-Workflow verwendet, um zwei Inhaltsversionen zu vergleichen. Der Text ist jeweils derselbe, nur die Aufmachung unterscheidet sich.
 
