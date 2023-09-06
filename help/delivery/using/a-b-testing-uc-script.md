@@ -8,13 +8,13 @@ feature: A/B Testing
 role: User
 exl-id: 4143d1b7-0e2b-4672-ad57-e4d7f8fea028
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '351'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# AB-Tests: Skript erstellen {#step-5--creating-the-script}
+# A/B-Tests: Erstellen des Skripts {#step-5--creating-the-script}
 
 
 Die Auswahl der Inhaltsversion, die an die verbleibende Population gesendet wird, erfolgt mithilfe eines Scripts. Das Script ruft die Information bezüglich der höchsten Öffnungsrate ab und kopiert den Inhalt der Siegerversion in den endgültigen Versand.
