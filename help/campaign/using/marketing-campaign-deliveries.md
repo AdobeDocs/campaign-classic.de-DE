@@ -7,7 +7,7 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Cla
 feature: Campaigns, Resource Management, Cross Channel Orchestration
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1559'
 ht-degree: 100%
 
@@ -19,7 +19,7 @@ Sendungen können über das Dashboard einer Kampagne, einen Kampagnen-Workflow o
 
 Wenn Sendungen aus einer Kampagne erstellt werden, werden sie mit dieser Kampagne verknüpft und auf der Kampagnenebene konsolidiert.
 
-![](assets/do-not-localize/how-to-video.png)[ Funktion im Video kennenlernen](#create-email-video).
+![](assets/do-not-localize/how-to-video.png)[Funktion im Video kennenlernen](#create-email-video).
 
 ## Erstellen von Sendungen {#creating-deliveries}
 
