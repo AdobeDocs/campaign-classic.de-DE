@@ -8,9 +8,9 @@ feature: Deliverability
 role: User
 exl-id: f301b34c-244c-4279-b23f-8224ea8eedbe
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '736'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Probleme mit der Zustellbarkeit hängen in der Regel mit Maßnahmen zum Schutz v
 
 ### Zustellrate
 
-Die Zustellrate ist die Anzahl der Nachrichten, die in die Postfächer der Empfänger gelangen, in Bezug auf die Zahl der zugestellten Nachrichten. Um die Zustellbarkeit zu verbessern, können Sie versuchen, diese Rate zu erhöhen.
+Die Zustellbarkeitsrate ist der Anteil der Nachrichten, die die Postfächer der Empfängerinnen und Empfänger erreicht haben, im Vergleich zur gesamten Anzahl der versendeten Nachrichten. Um die Zustellbarkeit zu verbessern, können Sie versuchen, diese Rate zu erhöhen.
 
 Bei Adobe Campaign hängt die Zustellrate von zahlreichen Faktoren ab, insbesondere von:
 
