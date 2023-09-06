@@ -8,9 +8,9 @@ feature: Monitoring, Email
 role: User
 exl-id: 43779505-9917-4e99-af25-b00a9d29a645
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '696'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -117,7 +117,7 @@ Die folgenden Tipps zur Fehlerbehebung helfen Ihnen, die häufigsten Probleme zu
 
   Sie können von der Startseite aus darauf zugreifen, indem Sie in Ihrer Instanz die Registerkarte &quot;Tracking&quot; auswählen. Sie können auch den folgenden Befehl für die Instanz ausführen: `<user>@<instance>:~$ nlserver pdump`
 
-  Wenn der trackinglogd-Prozess nicht in der Liste angezeigt wird, starten Sie ihn mit dem folgenden Befehl in der Instanz: `<user>@<instance>:~$ nlserver start trackinglogd`
+  Wenn der trackinglogd-Prozess nicht in der Liste angezeigt wird, starten Sie ihn mit dem folgenden Befehl für die Instanz: `<user>@<instance>:~$ nlserver start trackinglogd`
 
 * Überprüfen Sie, ob der technische Tracking-Workflow kürzlich ausgeführt wurde.
 
