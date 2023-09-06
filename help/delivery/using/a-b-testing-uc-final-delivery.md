@@ -8,13 +8,13 @@ feature: A/B Testing
 role: User
 exl-id: bc23a444-a872-48fb-8bba-64b301541089
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '132'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
-# AB-Tests: Definieren Sie den endgültigen Versand. {#step-6--defining-the-final-delivery}
+# A/B-Tests: Definieren des endgültigen Versands {#step-6--defining-the-final-delivery}
 
 Nachdem das Script zur Ermittlung des Gewinners des A/B-Tests erstellt wurde, können Sie die Parameter des endgültigen Versands definieren.
 
