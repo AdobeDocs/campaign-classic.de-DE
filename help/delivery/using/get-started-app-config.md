@@ -1,13 +1,13 @@
 ---
 product: campaign
 title: Konfigurieren der Mobile App in Adobe Campaign
-description: Erfahren Sie, wie Sie die Mobile App konfigurieren.
+description: Erfahren Sie, wie Sie mit dem Konfigurieren der Mobile App beginnen
 badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Push
 role: User, Developer
 exl-id: 95bc07cc-8837-4511-81bc-05fad28191c9
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '334'
 ht-degree: 100%
 
