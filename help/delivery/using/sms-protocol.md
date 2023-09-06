@@ -8,9 +8,9 @@ feature: SMS
 role: Developer, Data Engineer
 exl-id: fded088a-11a2-4b87-a368-7b197334aca4
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '8458'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -834,14 +834,14 @@ Auch wenn Sie die Logs nicht selbst überprüfen können, kann die [Adobe-Kunden
 * **SMS mit allen möglichen Zeichen senden**
 Wenn Sie SMS mit Nicht-GSM- oder Nicht-ASCII-Zeichen senden müssen, versuchen Sie, einige Nachrichten mit möglichst vielen verschiedenen Zeichen zu senden. Wenn Sie eine benutzerdefinierte Zeichen-Mapping-Tabelle einrichten, senden Sie mindestens eine SMS für alle möglichen `data_coding`-Werte.
 
-* **Überprüfen, ob SR ordnungsgemäß verarbeitet wurden**
+* **Überprüfen Sie, ob SR ordnungsgemäß verarbeitet werden**
 Die SMS sollte im Versandlog als empfangen markiert sein. Das Versandlog sollte erfolgreich sein und wie folgt aussehen:
   `SR yourProvider stat=DELIVRD err=000|#MESSAGE`
 Vergewissern Sie sich, dass Sie den Namen des Versand-Providers geändert haben. Das Versandlog sollte in Produktionsumgebungen niemals **SR Generic** enthalten.
 
 * **Überprüfen, ob MO verarbeitet werden**
 Wenn Sie MO verarbeiten müssen (automatische Antworten, MO-Speicherung in der Datenbank usw.), versuchen Sie, einige Tests durchzuführen. Senden Sie ein paar SMS für alle automatischen Antwortschlüsselwörter und prüfen Sie, ob die Antwort schnell genug ist, also nicht länger als ein paar Sekunden dauert.
-Prüfen Sie im Log, ob Adobe Campaign mit einer erfolgreichen `DELIVER_SM_RESP` (command_status=0) antwortet
+Prüfen Sie im Log, ob Adobe Campaign mit einer erfolgreichen `DELIVER_SM_RESP` (command_status=0) antwortet.
 
 ### Überprüfen der PDUs {#check-pdus}
 
