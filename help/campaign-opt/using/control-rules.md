@@ -1,15 +1,15 @@
 ---
 product: campaign
 title: Kontrollregeln
-description: Erfahren Sie, wie Sie mit Kontrollregeln in Adobe Campaign arbeiten.
+description: Erfahren Sie, wie in Adobe Campaign mit Kontrollregeln gearbeitet wird.
 role: User, Data Engineer
 badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Typology Rules, Campaigns
 exl-id: 5a5f26f6-38da-4488-aadb-81fcb5359331
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '397'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
