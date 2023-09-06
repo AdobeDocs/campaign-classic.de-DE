@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Deliverability
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '448'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -39,17 +39,17 @@ Auf der Grundlage des Zeitrahmens des Vorfalls werden im Folgenden die Richtlini
 
 >[!IMPORTANT]
 >
->Diese Daten/Zeiten basieren auf der Eastern Standard Zeitzone (EST). Passen Sie die Zeitzone Ihrer Instanz an.
+>Diese Daten/Zeiten basieren auf der Eastern Standard Zeitzone (EST). Bitte passen Sie die Zeitzone Ihrer Instanz an.
 
 * Für Campaign-Instanzen mit SMTP-Bounce-Antwortinformationen im Feld **[!UICONTROL Fehlertext]** der Quarantäneliste:
 
-   * **Fehlertext (Quarantänetext)** enthält &quot;Erfolg der Benutzersuche, aber kein Benutzerdatensatz gefunden&quot; UND **Fehlertext (Quarantänetext)** enthält &quot;support.apple.com&quot;
+   * **Fehlertext (Quarantänetext)** enthält „Benutzerin oder Benutzer erfolgreich gefunden, aber kein Benutzereintrag gefunden“ UND **Fehlertext (Quarantänetext)** enthält „support.apple.com“
    * **Statusaktualisierung (@lastModified)** später als 26.04.2021 07:00:00 Uhr
    * **Statusaktualisierung (@lastModified)** früher als 26.04.2021 13:00:00 Uhr
 
 * Für Campaign-Instanzen mit Regelinformationen für eingehende E-Mails im Feld **[!UICONTROL Fehlertext]** der Quarantäneliste:
 
-   * **Fehlertext (Quarantänetext)** enthält &quot;Momen_Code10_InvalidRecipient&quot;
+   * **Fehlertext (Quarantänetext)** enthält „Momen_Code10_InvalidRecipient“
    * **E-Mail-Domain (@domain)** ist gleich icloud.com ODER **E-Mail-Domain (@domain)** ist gleich me.com ODER **E-Mail-Domain (@domain)** ist gleich mac.com
    * **Statusaktualisierung (@lastModified)** später als 26.04.2021 07:00:00 Uhr
    * **Statusaktualisierung (@lastModified)** früher als 26.04.2021 13:00:00 Uhr
