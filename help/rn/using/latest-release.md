@@ -7,7 +7,7 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Cla
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
+source-git-commit: 155fbcd2846cfc5a8db25194bd8d7007356db24e
 workflow-type: tm+mt
 source-wordcount: '1869'
 ht-degree: 62%
@@ -28,7 +28,7 @@ Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der
 >
 > Wenn Sie [Campaign - Microsoft Dynamics CRM-Connector](../../platform/using/crm-connectors.md)müssen Sie mit diesem neuen Build sowohl Ihre Marketing- als auch Ihre Mid-Sourcing-Server aktualisieren.
 
-_September_ 7, 2023_
+_Dienstag, 7. September 2023_
 
 **Sicherheitsverbesserung**
 
@@ -88,7 +88,7 @@ _September_ 7, 2023_
 
 ## Version 7.3.3 – Build 9359 {#release-7-3-3}
 
-[!BADGE Allgemeine Verfügbarkeit]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=de#rn-statuses" tooltip="Allgemeine Verfügbarkeit"}
+[!BADGE Eingeschränkte Verfügbarkeit]{type=Neutral url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=de#rn-statuses" tooltip="Eingeschränkte Verfügbarkeit"}
 
 >[!CAUTION]
 >
