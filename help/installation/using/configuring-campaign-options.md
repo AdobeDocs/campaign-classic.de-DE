@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
 workflow-type: tm+mt
-source-wordcount: '4015'
+source-wordcount: '4007'
 ht-degree: 13%
 
 ---
@@ -696,7 +696,7 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
     <ul> 
      <li> <p> <span class="uicontrol">Datentyp:</span> Ganzzahl</p> </li> 
      <li> <p> <span class="uicontrol">Wert (text)</span> : 1 </p> </li> 
-    </ul> Diese Option sollte nur verwendet werden, wenn die native Navigationsstruktur zu vielen Änderungen unterzogen wurde.<br /> Weiterführende Informationen hierzu finden Sie in <a href="../../migration/using/configuring-your-platform.md#specific-configurations-in-v5-11">diesem Abschnitt</a>.<br /> </td> 
+    </ul> Diese Option sollte nur verwendet werden, wenn die native Navigationsstruktur zu vielen Änderungen unterzogen wurde.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsLastErrorStatCoalesce</span> <br /> </td> 
@@ -741,11 +741,11 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">TNT_EdgeServer</span> <br /> </td> 
-   <td> Für die Integration verwendeter Adobe Target-Server. Diese Option ist standardmäßig bereits ausgewählt. Dieser Wert entspricht dem Adobe Target Domain Server , gefolgt vom Wert /m2. Beispiel: tt.omtrdc.net/m2.<br /><a href="../../integrations/using/configuring-the-integration-with-adobe-target.md"> Siehe diesen Abschnitt</a>.<br /> </td> 
+   <td> Für die Integration verwendeter Adobe Target-Server. Diese Option ist standardmäßig bereits ausgewählt. Dieser Wert entspricht dem Adobe Target Domain Server , gefolgt vom Wert /m2. Beispiel: tt.omtrdc.net/m2.<br /> Weitere Informationen finden Sie in <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">diesem Abschnitt</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">TNT_TenantName</span> <br /> </td> 
-   <td> Name der Adobe Target-Organisation. Dieser Wert entspricht dem Adobe-Target-Client-Namen.<br /><a href="../../integrations/using/configuring-the-integration-with-adobe-target.md"> Siehe diesen Abschnitt</a>.<br /> </td> 
+   <td> Name der Adobe Target-Organisation. Dieser Wert entspricht dem Adobe-Target-Client-Namen.<br /> Weitere Informationen finden Sie in <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">diesem Abschnitt</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">AAM_DataSourceId</span> <br /> </td> 
@@ -823,7 +823,7 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsServer_IntranetURL</span> <br /> </td> 
-   <td> Basis-URL des internen Webservers.<br /> </td> 
+   <td> Interne Basis-URL für Zugriff auf den Anwendungs-Server.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsServer_LastPostUpgrade</span> <br /> </td> 
@@ -831,7 +831,7 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsServer_URL</span> <br /> </td> 
-   <td> Basis-URL des öffentlichen Webanwendungsservers.<br /> </td> 
+   <td> Basis-URL des öffentlichen Web-Anwendungs-Servers.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkPassUnknownSQLFunctionsToRDBMS</span> <br /> </td> 

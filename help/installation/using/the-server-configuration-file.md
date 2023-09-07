@@ -8,10 +8,10 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
 workflow-type: tm+mt
-source-wordcount: '7962'
-ht-degree: 41%
+source-wordcount: '8056'
+ht-degree: 40%
 
 ---
 
@@ -43,6 +43,7 @@ Die ersten Parameter befinden sich innerhalb der **shared** Knoten. Diese bezieh
 * [proxyConfig](#proxyconfig)
 * [threadPool](#threadpool)
 * [urlPermission](#urlpermission)
+* [cusHeaders](#cusheaders)
 * [xtkJobs](#xtkjobs)
 
 **Andere Parameter**
@@ -997,6 +998,29 @@ Weitere Informationen finden Sie unter [Schutz der ausgehenden Verbindung](../..
   </tr> 
  </tbody> 
 </table>
+
+## cusHeaders {#cusheaders}
+
+Mit diesem Knoten können Sie bestimmte Header zu Anforderungen hinzufügen, die beim Hochladen einer Datei von einem externen Server ausgeführt werden. Content Delivery Networks (CND) kann nach einem bestimmten Header fragen, um dem Anfragenden zu vertrauen. Diese Header können verwendet werden, um das Vertrauen in Campaign-Anforderungen zu verbessern, insbesondere beim Herunterladen personalisierter Dokumente für jeden Empfänger bei der Ausführung des Versands. Eine große Anzahl von Anfragen zum Herunterladen von Ressourcen kann als DoS-Angriff interpretiert werden. Mit dnsPattern können Sie bestimmte Kopfzeilennamen und Werte für verschiedene CDNs basierend auf ihrem Domänennamen festlegen.
+
+```
+  <!-- List of custom headers added to request. 
+         -->
+    <cusHeaders>
+
+    <!-- Pattern of DNS name or domain 
+         value :  dnsPattern: All or part of the URL's domain to verify, * is a wild card Default:  -->
+      <dnsPattern value="">
+
+    <!-- Header Name and Value 
+           headerName :  Header Name 
+           headerValue :  Header Value -->
+        <headerDef headerName="" headerValue=""/>
+
+      </dnsPattern>
+
+    </cusHeaders> 
+```
 
 ### url {#url}
 

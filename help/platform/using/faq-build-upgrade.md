@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
 workflow-type: tm+mt
-source-wordcount: '2005'
-ht-degree: 100%
+source-wordcount: '2001'
+ht-degree: 99%
 
 ---
 
@@ -57,7 +57,7 @@ Bezogen auf die Serverinformationen im Screenshot aus dem vorherigen Abschnitt w
 
 * Ein Build-Upgrade würde bedeuten, dass Sie von Build 9342 zu einem Build höher als 9342 wechseln. Beispiel: von v7.1 Build 9342 zu v7.1 Build 9342.
 
-* Bei einem Versions-Upgrade wird von Version 6 auf eine neuere Version gewechselt.  Beispiel: von v6.1.1 build 8666 auf v7.1 build 9342.
+* Ein Upgrade der Version würde bedeuten, von einer vorherigen Hauptversion auf eine neuere Version umzustellen.
 
 ## Sollte ich meine Daten vor diesen Aktualisierungen sichern?
 

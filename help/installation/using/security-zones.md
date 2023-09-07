@@ -9,10 +9,10 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
 workflow-type: tm+mt
-source-wordcount: '1520'
-ht-degree: 30%
+source-wordcount: '1506'
+ht-degree: 29%
 
 ---
 
@@ -252,7 +252,7 @@ Sobald die Zonen definiert sind, wird die **[!UICONTROL Sicherheitszone]** -Aufl
      <redir status='OK' date='...' build='...' OR version='...' sha1='...' instance='...' sourceIP='...' host='...' localHost='...'/>
      ```
 
-* Setzen Sie niemals allowEmptyPassword, allowUserPassword, allowSQLInjection auf true. Diese Attribute dienen nur der problemlosen Migration von v5 und v6.0:
+* Setzen Sie niemals allowEmptyPassword, allowUserPassword, allowSQLInjection auf true.
 
    * **allowEmptyPassword** ermöglicht Benutzern, ein leeres Passwort zu haben. Ist dies bei Ihnen der Fall, weisen Sie alle Benutzer an, bis zu einer bestimmten Deadline ein Passwort zu erstellen. Sobald diese Frist abgelaufen ist, ändern Sie dieses Attribut auf &quot;false&quot;.
 

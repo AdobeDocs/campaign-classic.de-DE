@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Cla
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
 workflow-type: tm+mt
-source-wordcount: '809'
-ht-degree: 100%
+source-wordcount: '784'
+ht-degree: 99%
 
 ---
 
@@ -43,7 +43,6 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 <td>
 <p>7.x</p>
 <p><strong>Wichtig:</strong> Wenn Sie RHEL verwenden, müssen Sie SELinux deaktivieren. Andernfalls können Ihre Programmierer auch benutzerdefinierte SELinux-Regeln verfassen, mit denen sichergestellt werden kann, dass ein aktiviertes SELinux keine Probleme mit Campaign-Vorgängen verursacht.</p>
-<p>8.x</br><strong>Wichtig:</strong> CentOS Linux 8 erreicht am 31. Dezember 2021 das Ende des Produktlebenszyklus (End of Life, EOL). Weiterführende Informationen dazu finden Sie auf der Seite <a href="../../rn/using/deprecated-features.md">Eingestellte Funktionen</a>.</p>
 </td>
 </tr>
 <tr>
@@ -51,7 +50,6 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 <td>
 <p>11 (ab Campaign v7.3)</p>
 <p>10</p>
-<p>9</p>
 </td>
 </tr>
 <tr>
@@ -143,7 +141,6 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 <p>13.x</p>
 <p>12.x</p>
 <p>11.x</p>
-<p>10.x</p>
 <p><strong>Hinweis:</strong> Sie können für PostgreSQL auch Amazon RDS mit den oben angegebenen Versionen verwenden.</p>
 </td>
 </tr>
@@ -217,7 +214,6 @@ Die externen Datenbanken, die mit dem [Federated Data Access-Modul](../../instal
 <p>13.x</p>
 <p>12.x</p>
 <p>11.x</p>
-<p>10.x</p>
 </td>
 <td>Mindestens v7.0 19.1.4</td>
 </tr>
@@ -306,11 +302,8 @@ Ferner kann Campaign in **Hybrid**- und **On-Premise**-Umgebungen auch mit den f
 <tr>
 <td>Teradata</td>
 <td>
-<p>17</p>
-<p>16.20</p>
-<p>16</p>
-<p>15.10</p>
-<p>15.0</p>
+<p>17.x</p>
+<p>16.x (letzte Version)</p>
 </td>
 <td>Mindestens v7.0</td>
 </tr>
