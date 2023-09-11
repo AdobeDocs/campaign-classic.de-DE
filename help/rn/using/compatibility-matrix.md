@@ -7,9 +7,9 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Cla
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
+source-git-commit: 3db5242e2074c6d0530258073ae83c11164d7365
 workflow-type: tm+mt
-source-wordcount: '784'
+source-wordcount: '772'
 ht-degree: 99%
 
 ---
@@ -65,8 +65,6 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 <td>
 <p>2019 (ab Campaign v7.2)</p>
 <p>2016</p>
-<p>2012 R2</p>
-<p>2012</p>
 </td>
 </tr>
 </tbody>
@@ -80,8 +78,6 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 <td>Microsoft IIS</td>
 <td>
 <p>10.0 auf Windows-Server 2016 und 2019</p>
-<p>8.5 auf Windows-Server 2012 R2</p>
-<p>8.0 auf Windows-Server 2012 – Windows 8</p>
 </td>
 </tr>
 <tr>
@@ -336,7 +332,6 @@ Für die Verwendung der [Campaign-Client-Konsole](../../installation/using/insta
 <td>
 <p>11</p>
 <p>10</p>
-<p>8</p>
 </td>
 <td>
 <p>Mindestens v7.3 </p>
@@ -348,7 +343,6 @@ Für die Verwendung der [Campaign-Client-Konsole](../../installation/using/insta
 <td>
 <p>2019</p>
 <p>2016</p>
-<p>2012</p>
 </td>
 <td>
 <p>Mindestens v7.2.1 </p>
