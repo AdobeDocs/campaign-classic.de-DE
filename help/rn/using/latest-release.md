@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 155fbcd2846cfc5a8db25194bd8d7007356db24e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1869'
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 
@@ -26,65 +26,66 @@ Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der
 >
 >Die Aktualisierung der Client-Konsole ist obligatorisch. Auf dieser [Seite](../../installation/using/installing-the-client-console.md) erfahren Sie, wie Sie Ihre Client-Konsole aktualisieren.
 >
-> Wenn Sie [Campaign - Microsoft Dynamics CRM-Connector](../../platform/using/crm-connectors.md)müssen Sie mit diesem neuen Build sowohl Ihre Marketing- als auch Ihre Mid-Sourcing-Server aktualisieren.
+> Wenn der [Campaign – Microsoft Dynamics CRM-Connector](../../platform/using/crm-connectors.md) verwendet wird, müssen sowohl die Marketing- als auch die Mid-Sourcing-Server mit diesem neuen Build aktualisiert werden.
 
-_Dienstag, 7. September 2023_
+_7. September 2023_
 
 **Sicherheitsverbesserung**
 
-* Die Sicherheit in IMS-APIs wurde verbessert. Client-sensible Informationen (d. h. Zugriffstoken) wurden aus URL-Parametern entfernt. Diese Anmeldeinformationen werden jetzt im Post-Daten- oder Autorisierungs-Header gesendet, um einen sichereren Kommunikationsprozess zu gewährleisten. (NEO-63045)
-* Die Sicherheit von Web-Apps wurde verbessert, um DDOS-Angriffe zu verhindern. (NEO-50757)
-* Die Sicherheit wurde verbessert, um zu verhindern, dass personenbezogene Daten in den Webprotokollfehlern offen gelegt werden. (NEO-46827)
+* Die Sicherheit in IMS-APIs wurde verbessert. Kundensensible Informationen (d. h. Zugriffstoken) wurden aus den URL-Parametern entfernt. Diese Anmeldeinformationen werden jetzt in der Post-Daten- oder Autorisierungs-Kopfzeile gesendet, um einen sichereren Kommunikationsprozess zu gewährleisten. (NEO-63045)
+* Die Sicherheit von Web-Apps wurde verbessert, um DDoS-Angriffe zu verhindern. (NEO-50757)
+* Die Sicherheit wurde verbessert, um zu verhindern, dass personenbezogene Daten in den Web-Protokollfehlern offengelegt werden. (NEO-46827)
 * Die Sicherheit wurde optimiert, um zu verhindern, dass das Sicherheits-Token in die URL der Campaign-Startseite aufgenommen wird. (NEO-38519)
 
 **Aktualisierungen zur Kompatibilität**
 
 * Tomcat wurde auf Version 8.5.91 aktualisiert
-* Die Bibliothek libexpat wurde auf Version 2.5.0 aktualisiert, um die Sicherheit zu verbessern. (NEO-51023)
+* Die Bibliothek „libexpat“ wurde auf Version 2.5.0 aktualisiert, um die Sicherheit zu verbessern. (NEO-51023)
 
 **Verbesserungen**
 
-* Der Parameter MaxWorkingSetMb in der Server-Konfigurationsdatei (serverConf.xml) wurde geändert, um die Speicherzuordnung für Sendungen zu optimieren. (NEO-49204)
+* Der Parameter „MaxWorkingSetMb“ in der Server-Konfigurationsdatei (serverConf.xml) wurde geändert, um die Speicherzuordnung für Sendungen zu optimieren. (NEO-49204)
 * Das externe BigQuery-Konto wurde um neue Optionen zur Einrichtung des GCloud-SDK erweitert. (NEO-63879) [Mehr dazu](../../installation/using/configure-fda-google-big-query.md#google-external)
-* Eine neue `cusHeader` in der Server-Konfigurationsdatei (serverConf.xml) hinzugefügt. Sie können benutzerdefinierte Header hinzufügen, wenn Sie eine Datei von einem externen Server hochladen. (NEO-58339) [Mehr dazu](../../installation/using/the-server-configuration-file.md#cusheaders).
+* Es wurde ein neuer `cusHeader`-Abschnitt zur Server-Konfigurationsdatei (serverConf.xml) hinzugefügt. Damit können benutzerdefinierte Kopfzeilen hinzufügt werden, wenn eine Datei von einem externen Server hochgeladen wird. (NEO-58339) [Mehr dazu](../../installation/using/the-server-configuration-file.md#cusheaders).
 * Die Verwaltung des Trackinglogs wurde verbessert, um negative IDs für lastMsgId zu vermeiden. Es wurde von int32 in int64 geändert. (NEO-52290)
-* Der native Workflow Mid-Sourcing (Versandstatistiken) wurde hinzugefügt. Dieser neue Workflow synchronisiert Versandstatistiken (nms:deliveryStat) von der Mitte zur Marketing-Instanz. (NEO-36802)
+* Der native Mid-Sourcing (Versandstatistiken)-Workflow wurde hinzugefügt. Dieser neue Workflow synchronisiert Versandstatistikdaten (nms:deliveryStat) von der Mid- bis zur Marketing-Instanz. (NEO-36802)
 
 **Patches**
 
-* Fehlerkorrektur - Jetzt tritt kein Fehler mehr auf, wenn eine Dienstanfrage vor der IMS-Anmeldung durchgeführt wird und die Authentifizierung für Dienstanfrageaufrufe ein Service-Token verwendet. (NEO-64903)
-* Fehlerkorrektur - Es wurde ein Regressionsfehler behoben, der bei der Verwendung des Digital Content Editors zu Problemen beim Scrollen führen konnte. (NEO-64671, NEO-59256)
-* Fehlerkorrektur - Beim Einfügen von Inhalten aus Excel in den Digital Content Editor tritt jetzt kein Regressionsfehler mehr auf. (NEO-63287)
-* Fehlerkorrektur - Webapps werden jetzt im Kompatibilitätsmodus v5 korrekt angezeigt. (NEO-63174)
-* Fehlerkorrektur - Benutzer ohne Administratorrechte können jetzt WebAnalytics-Sendungen senden. (NEO-62750)
+* Fehlerkorrektur – Beim Stellen einer Service-Anfrage vor der IMS-Anmeldung, bei der die Authentifizierung des Service-Anfrage-Aufrufs mit einem Service-Token erfolgte, tritt nun kein Problem mehr auf. (NEO-64903)
+* Fehlerkorrektur – Bei der Verwendung des Editors für digitale Inhalte gibt es jetzt kein Regressionsproblem mehr, das zu Problemen beim Scrollen führen konnte. (NEO-64671, NEO-59256)
+* Fehlerkorrektur – Beim Einfügen von Inhalten aus Excel in den Digital Content Editor tritt nun kein Regressionsproblem mehr auf. (NEO-63287)
+* Fehlerkorrektur – Webapps werden jetzt im Kompatibilitätsmodus v5 korrekt angezeigt. (NEO-63174)
+* Fehlerkorrektur – Benutzende ohne Administratorrechte können jetzt WebAnalytics-Sendungen senden. (NEO-62750)
 * Fehlerkorrektur: Browser können jetzt zusätzliche Leerzeichen hinzufügen, wenn bedingte Inhalte in einem Versand verwendet werden. (NEO-62132)
-* Fehlerkorrektur - Die Berechnung aktiver Kontakte funktioniert jetzt im Abrechnungs-Workflow korrekt, wenn Zielschemata verwendet werden, die mit mehreren Protokollschemata verknüpft sind. (NEO-61468)
+* Fehlerkorrektur – Die Berechnung aktiver Kontakte funktioniert jetzt im Abrechnungs-Workflow korrekt, wenn Zielschemata verwendet werden, die mit mehreren Protokollschemata verknüpft sind. (NEO-61468)
 * Fehlerkorrektur: Es tritt kein Fehler mehr auf, der das Scrollen beim Bearbeiten des Inhalts eines Versands verhinderte. (NEO-61364)
 * Fehlerkorrektur: Es wird kein Pop-up-Fenster mehr geöffnet, wenn auf ein Bild im E-Mail-Inhaltseditor geklickt wird. (NEO-60752)
 * Fehlerkorrektur: Sonderzeichen im HTML-Inhalt eines Versands werden jetzt in mehreren Browsern korrekt codiert. (NEO-60081)
-* Fehlerkorrektur - Bei der Verwendung der Workflow-Aktivität inSMS tritt jetzt kein Synchronisierungsproblem mehr auf. (NEO-59544)
-* Fehlerkorrektur - Der Big Query-Connector kann jetzt mit Zeitstempel- oder Datumszeitfeldern verwendet werden. (NEO-59502, NEO-49768)
-* Fehlerkorrektur - kumulative Versandberichte können jetzt verwendet werden. (NEO-59211)
-* Fehlerkorrektur - Bei der Freigabe von Zielgruppen für People Core Service treten jetzt keine Fehler mehr auf. (NEO-58637)
-* Fehlerkorrektur - Die Mirrorseite eines Versands wird jetzt korrekt angezeigt. (NEO-58325)
-* Fehlerkorrektur - XtkLibrary.Right() xtk-Ausdruck funktioniert jetzt. (NEO-57870)
-* Fehlerkorrektur - Das Stilattribut des Body-Tags wird beim Hochladen eines Bildes im Digital Content Editor nicht mehr geändert. (NEO-57697)
-* Fehlerkorrektur - Bei der Durchführung von Batch-Exporten mit der CRM-Connector-Aktivität treten jetzt keine Sonderzeichen mehr auf. (NEO-54300)
-* Fehlerkorrektur - Bulk Loading funktioniert jetzt mit Datentypen vom Typ &quot;Zeichenfolge&quot;, wenn eine Aktivität vom Typ Laden von Daten und der Big Query-Connector verwendet wird. (NEO-53748)
-* Es wurde ein Problem mit dem Cache-Schlüssel behoben, das zu Problemen beim Rendering von Angeboten führen konnte. (NEO-51516, NEO-49995)
-* Fehlerkorrektur - Beim Versand eines Briefpost-Versands mit targetMapping mit Genehmigungen tritt jetzt kein Validierungsfehler mehr auf. (NEO-50758)
-* Fehlerkorrektur - Es wurde ein Abfrageverwaltungsproblem behoben, das sich auf die Versandleistung auswirken konnte. (NEO-49991)
-* Fehlerkorrektur - Bei der Verwendung von externen Konten in Kampagnen-Workflow-Versandaktivitäten tritt kein Fehler mehr auf, der zu Konfigurationsproblemen mit externen Konten führen konnte. (NEO-49959)
-* Fehlerkorrektur – Beim Versand von Push-Benachrichtigungen treten keine Leistungsprobleme mehr auf. (NEO-49953) Korrektur eines Fehlers, der dazu führen konnte, dass japanische Zeichen beim Exportieren von Berichten falsch angezeigt wurden (NEO-49308).
-* Es wurde ein Fehler behoben, der dazu führte, dass im Tomcat-Fehlerbericht zu viele Fehlerdetails angezeigt wurden. (NEO-49029)
-* Fehlerkorrektur - bei Verwendung einer großen Anzahl von Angeboten tritt kein Versandfehler mehr auf. (NEO-48807)
-* Fehlerkorrektur - jetzt kann die **Daten aktualisieren** Workflow-Aktivität korrekt ausgeführt werden. (NEO-48140)
-* Fehlerkorrektur - Klick-Tracking-Daten können jetzt für Sendungen mit einem externen Konto synchronisiert werden, das sich von E-Mail unterscheidet.(NEO-47277)
-* Fehlerkorrektur - Trackinglogs in Echtzeit werden jetzt in der Marketing-Instanz von Message Center synchronisiert. (NEO-42540)
-* Fehlerkorrektur - Das Workspace-Präfix für Snowflake-Datenbanktabellen wird jetzt im Erkennungsfenster eines Schemas angezeigt. (NEO-40297)
-* Fehlerkorrektur - jetzt wird `<img-amp>` -Tags in E-Mail-Inhalten verwendet werden. (NEO-38685)
-* Fehlerkorrektur - Der Archivierungs-Workflow von Message Center schlägt bei Verwendung eines HTTP-Relais nicht mehr fehl. (NEO-33783)
-* Fehlerkorrektur - Schriftname- und Größenfehler im E-Mail-Inhaltseditor werden jetzt nicht mehr verursacht. (NEO-61342)
+* Fehlerkorrektur – Bei der Verwendung der Workflow-Aktivität inSMS tritt jetzt kein Synchronisierungsproblem mehr auf. (NEO-59544)
+* Fehlerkorrektur – Bei der Verwendung des Big Query-Connectors mit Datum-/Uhrzeit-Feldern treten jetzt keine Fehler mehr auf. (NEO-59502, NEO-49768)
+* Fehlerkorrektur – Kumulative Versandberichte können jetzt problemlos verwendet werden. (NEO-59211)
+* Fehlerkorrektur – Bei der Freigabe von Zielgruppen mit dem People Core Service treten nun keine Fehler mehr auf. (NEO-58637)
+* Fehlerkorrektur – Die Mirrorseite eines Versands wird jetzt korrekt angezeigt. (NEO-58325)
+* Fehlerkorrektur – Der XtkLibrary.Right() xtk-Ausdruck funktioniert jetzt. (NEO-57870)
+* Fehlerkorrektur – Das Stilattribut des Body-Tags wird jetzt beim Hochladen eines Bildes im Digital Content Editor nicht mehr geändert. (NEO-57697)
+* Fehlerkorrektur – Bei der Durchführung von Batch-Exporten mit der CRM-Connector-Aktivität treten jetzt keine Probleme mehr mit Sonderzeichen auf. (NEO-54300)
+* Fehlerkorrektur – Die Massenladung funktioniert jetzt mit Datentypen vom Typ „Zeichenfolge“ auch dann, wenn eine Aktivität zum Laden von Daten und der Big Query-Connector verwendet wird. (NEO-53748)
+* Fehlerkorrektur – Der Cache-Schlüssel verursacht nun keine Probleme mehr bei der Darstellung von Angeboten. (NEO-51516, NEO-49995)
+* Fehlerkorrektur – Beim Versand eines Briefpost-Versands mit targetMapping mit Genehmigungen tritt jetzt kein Validierungsfehler mehr auf. (NEO-50758)
+* Fehlerkorrektur – Die Versandleistung wird jetzt nicht mehr durch ein Problem bei der Abfrageverwaltung beeinträchtigt. (NEO-49991)
+* Fehlerkorrektur – Bei der Verwendung von externen Konten in Kampagnen-Workflow-Versandaktivitäten tritt kein Fehler mehr auf, der zu Konfigurationsproblemen mit externen Konten führen konnte. (NEO-49959)
+* Fehlerkorrektur – Beim Versand von Push-Benachrichtigungen treten keine Leistungsprobleme mehr auf. (NEO-49953)
+Fehlerkorrektur – Japanische Zeichen werden beim Exportieren von Berichten jetzt korrekt angezeigt (NEO-49308).
+* Fehlerkorrektur – Der Tomcat-Fehlerbericht zeigt jetzt nicht mehr allzu viele Fehlerdetails an. (NEO-49029)
+* Fehlerkorrektur – Bei der Verwendung einer großen Anzahl von Angeboten tritt nun kein Versandfehler mehr auf. (NEO-48807)
+* Fehlerkorrektur – Die Workflow-Aktivität **Daten-Update** funktioniert jetzt ordnungsgemäß. (NEO-48140)
+* Fehlerkorrektur – Klick-Tracking-Daten können jetzt für Sendungen auch mit einem externen Konto synchronisiert werden, das sich von der E-Mail-Adresse unterscheidet.(NEO-47277)
+* Fehlerkorrektur – Trackinglogs in Echtzeit können jetzt in der Marketing-Instanz von Message Center synchronisiert werden. (NEO-42540)
+* Fehlerkorrektur – Das Workspace-Präfix für Snowflake-Datenbanktabellen wird jetzt im Erkennungsfenster eines Schemas angezeigt. (NEO-40297)
+* Fehlerkorrektur – `<img-amp>`-Tags können jetzt in E-Mail-Inhalten verwendet werden. (NEO-38685)
+* Fehlerkorrektur – Der Archivierungs-Workflow von Message Center schlägt jetzt bei Verwendung eines HTTP-Relais nicht mehr fehl. (NEO-33783)
+* Fehlerkorrektur – Schriftname- und -größe werden jetzt im E-Mail-Inhaltseditor richtig angezeigt. (NEO-61342)
 
 ## Version 7.3.3 – Build 9359 {#release-7-3-3}
 
