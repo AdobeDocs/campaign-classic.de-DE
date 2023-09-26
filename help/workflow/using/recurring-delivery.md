@@ -5,10 +5,10 @@ description: Erfahren Sie mehr über die Workflow-Aktivität "Wiederkehrender Ve
 badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Workflows
 exl-id: efd2cdfb-2e5f-4672-8be8-a424481b11ed
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 05210269da2a32310c19911a3bc32240c84dc7ad
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 100%
+source-wordcount: '286'
+ht-degree: 93%
 
 ---
 
@@ -34,7 +34,7 @@ Die zur Verfügung stehenden Optionen entsprechen denen einer klassischen Versan
 
 Ein Anwendungsbeispiel für diese Aktivität finden Sie in diesem [Abschnitt](sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
 
-## Einrichten eines wiederkehrenden Versands
+## Einrichten eines wiederkehrenden Versands {#set-up-recurring-delivery}
 
 Ein **wiederkehrender Versand** erstellt bei jeder Ausführung eine neue Versandinstanz. Wenn der Workflow beispielsweise einmal pro Woche ausgeführt werden soll, führt dies nach einem Jahr zu 52 Sendungen. Dies bedeutet auch, dass das Broadlog und die Trackinglogs je Versandinstanz getrennt sind.
 
@@ -46,9 +46,9 @@ Wenn Sie die Ausführung eines wiederkehrenden Versands stoppen möchten, sollte
 >
 >Die Durchführung von Testsendungen ist in der Aktivität **[!UICONTROL Wiederkehrender Versand]** nicht möglich.
 > 
->Nutzen Sie zur direkten Erstellung von Sendungen in Kampagnen-Workflows die vorkonfigurierten kanalspezifischen Versandaktionen, wie z. B. **[!UICONTROL E-Mail-Versand]**.
+>Verwenden Sie die vorkonfigurierten kanalspezifischen Aktivitäten (z. B. **[!UICONTROL Wiederkehrender Versand]**).
 
-## Anleitungsvideo (#recurring-delivery-video)
+## Tutorial-Video {#recurring-delivery-video}
 
 In diesem Video wird das Konfigurieren eines wiederkehrenden Versands und einer Planungsaktivität erläutert.
 
