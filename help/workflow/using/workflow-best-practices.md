@@ -6,9 +6,9 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Cla
 feature: Workflows
 exl-id: 39c57f61-2629-4214-91e4-cb97dc039deb
 source-git-commit: 1baf424138c95b16add37d9d556e3a2566a869c2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1420'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -116,9 +116,9 @@ Die Workflow-Heatmap ermöglicht den Administratoren der Adobe Campaign-Plattfor
 
 ### Name der Aktivität {#name-of-the-activity}
 
-Bei der Entwicklung Ihres Workflows erhalten alle Aktivitäten sowie alle Adobe Campaign-Objekte einen Namen. Diese Namen werden zwar vom Tool erstellt, wir empfehlen jedoch, sie bei der Konfiguration zu ändern. Geschieht dies erst zu einem späteren Zeitpunkt, besteht die Gefahr, dass dadurch der Workflow durch Aktivitäten mit Namen einer anderen früheren Aktivität unterbrochen wird. Deshalb wäre die nachträgliche Aktualisierung der Namen eine schwierige Aufgabe.
+Bei der Entwicklung Ihres Workflows erhalten alle Aktivitäten sowie alle Adobe Campaign-Objekte einen Namen. Diese Namen werden zwar vom Tool erstellt, wir empfehlen jedoch, sie bei der Konfiguration zu ändern. Geschieht dies erst zu einem späteren Zeitpunkt, besteht die Gefahr, dass der Workflow durch Aktivitäten mit Namen einer anderen früheren Aktivität unterbrochen wird. Deshalb wäre eine nachträgliche Aktualisierung der Namen eine schwierige Aufgabe.
 
-Der Aktivitätsname finden Sie im Abschnitt **[!UICONTROL Erweitert]** Registerkarte. Belassen Sie sie nicht wie folgt: **[!UICONTROL Abfrage]**, **[!UICONTROL query1]**, **[!UICONTROL query11]**, aber geben Sie ihnen explizite Namen wie **[!UICONTROL querySubscribedRecipients]**. Dieser Name wird im Protokoll und gegebenenfalls in den SQL-Protokollen angezeigt. Dies hilft beim Debugging des Workflows bei der Konfiguration.
+Der Aktivitätsname ist im Tab **[!UICONTROL Erweitert]** verfügbar. Behalten Sie nicht die simplen Namen **[!UICONTROL abfrage]**, **[!UICONTROL abfrage1]**, **[!UICONTROL abfrage11]** bei, sondern benennen Sie sie beispielsweise **[!UICONTROL abfrageAbonnenten]**. Dieser Name wird im Protokoll angezeigt und gegebenenfalls auch in den SQL-Logs, was Ihnen hilft, bei der Konfiguration des Workflows Fehler zu beheben.
 
 ### Erste und letzte Aktivitäten {#first-and-last-activities}
 
