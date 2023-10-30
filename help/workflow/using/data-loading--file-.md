@@ -5,10 +5,10 @@ description: Erfahren Sie mehr über die Workflow-Aktivität "Laden (Datei)".
 badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Workflows, Data Management Activity
 exl-id: a380e486-a40c-4bf6-b7f4-7dcd76c34085
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 5723d3d617413070b7aed2be2849acca61c10815
 workflow-type: tm+mt
-source-wordcount: '1168'
-ht-degree: 100%
+source-wordcount: '1191'
+ht-degree: 98%
 
 ---
 
@@ -49,6 +49,10 @@ Sie haben nun die Möglichkeit, allgemeine Formatierungsoptionen der Datei sowie
 In den allgemeinen Formatierungsoptionen kann beispielsweise die Art der Spaltenerkennung definiert werden (Kodierung der Datei, verwendete Trennzeichen etc.).
 
 Verschiedene Optionen zum Umgang mit den Spaltenwerten stehen zur Auswahl:
+
+>[!NOTE]
+>
+>Sie können beliebig viele Spalten hinzufügen. Die maximale Länge der Werte in jeder Spalte wird durch den ausgewählten Datentyp bestimmt.
 
 * **[!UICONTROL Spalte ignorieren]**: Spalte wird beim Laden der Daten nicht berücksichtigt.
 * **[!UICONTROL Datentyp]**: Angabe des in der Spalte erwarteten Datentyps.
