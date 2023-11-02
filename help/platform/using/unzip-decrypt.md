@@ -2,14 +2,14 @@
 product: campaign
 title: Dekomprimieren oder Entschlüsseln einer Datei
 description: Erfahren Sie, wie Sie eine Datei in Campaign vor der Verarbeitung dekomprimieren oder entschlüsseln
-feature: Workflows
+feature: Workflows, Encryption
 badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 1a79da3b-2abc-4bfc-a0ee-8471c478638d
-source-git-commit: 32c2ce24bdd62724e4b4ff66f4664e8faa259b4b
+source-git-commit: a2106e55617209f28da42c50008d16188563b2da
 workflow-type: ht
 source-wordcount: '762'
 ht-degree: 100%
