@@ -2,15 +2,15 @@
 product: campaign
 title: Erste Schritte mit dem Datenimport und -export
 description: Erfahren Sie mehr über den Datenimport und -export in Campaign
-feature: Data Management
+feature: Data Management, Encryption
 badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: d6055d97-75fc-4ed7-89bd-8336157454eb
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: tm+mt
+source-git-commit: a2106e55617209f28da42c50008d16188563b2da
+workflow-type: ht
 source-wordcount: '337'
 ht-degree: 100%
 
