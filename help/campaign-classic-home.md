@@ -5,9 +5,9 @@ title: Produktdokumentation zu Adobe Campaign Classic v7
 feature: Overview
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
 source-git-commit: 038239cf15dc49e6e84ca31a94ef61029c66c4b7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '171'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 87%
 
 <!--* **[Secure your Campaign environment](technotes/using/tech-stack-upgrade.md)**<br/> Update to the latest versions to secure your Campaign platform-->
 
-* **[Adobe Experience Cloud-Integration aktualisieren](integrations/using/configuring-adobe-io.md)**<br/> Der alte oAuth-Authentifizierungsdienst hat das Ende der Lebensdauer erreicht: Sie müssen zu Adobe I/O migrieren
+* **[Aktualisierung der Adobe Experience Cloud-Integration](integrations/using/configuring-adobe-io.md)**<br/> Der alte OAuth-Authentifizierungs-Service hat das Ende der Lebensdauer erreicht: Sie müssen jetzt zu Adobe I/O migrieren
 
 [Weitere Aktualisierungen](rn/using/documentation-updates.md)
 
