@@ -8,7 +8,7 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: 3db5242e2074c6d0530258073ae83c11164d7365
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '772'
 ht-degree: 100%
 
@@ -83,7 +83,7 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 <tr>
 <td>Apache</td>
 <td>
-<p>2.4 für RHEL 7 – CentOS 7, Debian 8/9, Windows</p>
+<p>2.4 für RHEL7 – CentOS 7, Debian 8/9, Windows</p>
 </td>
 </tr>
 </tbody>
@@ -244,7 +244,7 @@ Ferner kann Campaign in **Hybrid**- und **On-Premise**-Umgebungen auch mit den f
 <p>5.7</p>
 </td>
 <td>
-<p>Mindestens v7.3 </p>
+<p>Mindestens v7.3</p>
 <p>Mindestens v7.0</p>
 </td>
 </tr>
@@ -334,7 +334,7 @@ Für die Verwendung der [Campaign-Client-Konsole](../../installation/using/insta
 <p>10</p>
 </td>
 <td>
-<p>Mindestens v7.3 </p>
+<p>Mindestens v7.3</p>
 <p></p>
 <p></p>
 </tr>
@@ -345,7 +345,7 @@ Für die Verwendung der [Campaign-Client-Konsole](../../installation/using/insta
 <p>2016</p>
 </td>
 <td>
-<p>Mindestens v7.2.1 </p>
+<p>Mindestens v7.2.1</p>
 <p></p>
 <p></p>
 </tbody>
