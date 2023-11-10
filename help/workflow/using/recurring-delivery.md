@@ -6,9 +6,9 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Cla
 feature: Workflows
 exl-id: efd2cdfb-2e5f-4672-8be8-a424481b11ed
 source-git-commit: 05210269da2a32310c19911a3bc32240c84dc7ad
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '286'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -46,9 +46,9 @@ Wenn Sie die Ausführung eines wiederkehrenden Versands stoppen möchten, sollte
 >
 >Die Durchführung von Testsendungen ist in der Aktivität **[!UICONTROL Wiederkehrender Versand]** nicht möglich.
 > 
->Verwenden Sie die vorkonfigurierten kanalspezifischen Aktivitäten (z. B. **[!UICONTROL Wiederkehrender Versand]**).
+>Nutzen Sie zur direkten Erstellung von Sendungen in Kampagnen-Workflows die vorkonfigurierten kanalspezifischen Versandaktionen, wie z. B. **[!UICONTROL Wiederkehrender Versand]**.
 
-## Tutorial-Video {#recurring-delivery-video}
+## Anleitungsvideo {#recurring-delivery-video}
 
 In diesem Video wird das Konfigurieren eines wiederkehrenden Versands und einer Planungsaktivität erläutert.
 
