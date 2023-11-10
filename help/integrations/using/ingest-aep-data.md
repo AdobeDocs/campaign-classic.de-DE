@@ -14,7 +14,7 @@ ht-degree: 100%
 
 ---
 
-# Aufnehmen von Adobe Experience Platform-Segmenten in Campaign {#destinations}
+# Adobe Experience Platform-Segmente in Campaign aufnehmen {#destinations}
 
 
 
