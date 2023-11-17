@@ -8,10 +8,10 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 52dcc8c01c5ce2421bfb59235bd0e458e7c8122f
 workflow-type: tm+mt
-source-wordcount: '793'
-ht-degree: 100%
+source-wordcount: '851'
+ht-degree: 93%
 
 ---
 
@@ -35,7 +35,7 @@ Gehen Sie dazu wie folgt vor:
 
 >[!NOTE]
 >
->Die Anzahl der Ereignisse in der Warteschlange wird im Bereich [Systemindikator](../../production/using/monitoring-processes.md#system-indicators) der Prozessüberwachungsseite von Adobe Campaign angezeigt. Weiterführende Informationen zum Bereitstellungassistenten finden Sie in [diesem Abschnitt](../../installation/using/deploying-an-instance.md#deployment-wizard).
+>Die Anzahl der ausstehenden Ereignisse in der Warteschlange wird im Bereich [Systemindikator](../../production/using/monitoring-processes.md#system-indicators) der Prozessüberwachungsseite von Adobe Campaign angezeigt. Weiterführende Informationen zum Bereitstellungassistenten finden Sie in [diesem Abschnitt](../../installation/using/deploying-an-instance.md#deployment-wizard).
 
 ## Ereignisse bereinigen {#purging-events}
 
@@ -81,7 +81,7 @@ Once the control and execution modules are installed on the same instance, you m
 Der Zugriff auf die Transaktionsnachrichten-spezifischen, technischen Workflows erfolgt in der oder den Ausführungsinstanz(en) im Knoten **Administration > Betreibung > Message Center**. Stellen Sie sicher, dass alle Workflows gestartet wurden. Folgende Workflows stehen zur Verfügung:
 
 * **[!UICONTROL Verarbeitung der Batch-Ereignisse]** (interner Name **[!UICONTROL batchEventsProcessing]**): teilt die Batch-Ereignisse einer Warteschlange zu, bis sie einer Nachrichtenvorlage zugeordnet werden.
-* **[!UICONTROL Verarbeitung der Echtzeit-Ereignisse]** (interner Name **[!UICONTROL rtEventsProcessing]**): teilt die Echtzeit-Ereignisse einer Warteschlange zu, bis sie einer Nachrichtenvorlage zugeordnet werden.
+* **[!UICONTROL Echtzeitereignisse verarbeiten]** (interner Name **[!UICONTROL rtEventsProcessing]**): Mit diesem Workflow schlüsseln Sie Echtzeitereignisse in einer Warteschlange auf, bevor sie mit einer Nachrichtenvorlage verknüpft werden.
 * **[!UICONTROL Update des Ereignisstatus]** (interner Name **[!UICONTROL updateEventStatus]**): ordnet jedem Ereignis einen Status zu.
 
   Folgende Status sind möglich:
@@ -92,6 +92,12 @@ Der Zugriff auf die Transaktionsnachrichten-spezifischen, technischen Workflows 
    * **[!UICONTROL Vom Versand ignoriert]**: Der Versand konnte nicht erfolgen, z. B. aufgrund einer Quarantäne (Status wird den Versandlogs entnommen).
    * **[!UICONTROL Versandfehler]**: Der Versand ist fehlgeschlagen (Status wird den Versandlogs entnommen).
    * **[!UICONTROL Ereignis wurde nicht berücksichtigt]**: Das Ereignis konnte keiner Vorlage zugeordnet werden. Das Ereignis wird nicht erneut verarbeitet.
+
+### Workflow-Planung archivieren
+
+Vermeiden Sie das Ändern der **Archivierungs-Workflow** planen, der auf der Kontrollinstanz ausgeführt wird. Andernfalls gehen möglicherweise einige Tracking-Daten verloren, die aus der Ausführungsinstanz abgerufen werden.
+
+Wenn Sie den Zeitplan des Archivierungs-Workflows ändern, müssen Sie auch die **Tracking-Workflow** auf der Ausführungsinstanz planen, um dem Zeitplan des Archivierungs-Workflows auf der Kontrollinstanz zu entsprechen.
 
 ## Multibranding konfigurieren {#configuring-multibranding}
 
