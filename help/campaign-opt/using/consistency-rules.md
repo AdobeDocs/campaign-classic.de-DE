@@ -6,10 +6,10 @@ role: User, Data Engineer
 badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Typology Rules, Campaigns
 exl-id: 757328fa-4698-4f85-a5fa-074b5152ec45
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: ht
-source-wordcount: '830'
-ht-degree: 100%
+source-git-commit: a37e67ef3f348737a099dab00a84b6854bd52e57
+workflow-type: tm+mt
+source-wordcount: '832'
+ht-degree: 92%
 
 ---
 
@@ -101,7 +101,7 @@ Die Verfügbarkeitszeilen dienen nur als Richtwerte. Um überschüssige Nachrich
 
 ![](assets/campaign_opt_create_capacity_04.png)
 
-Die Anzahl der zu verarbeitenden Nachrichten ist gleichmäßig über den gesamten festgelegten Zeitraum verteilt. Dies ist insbesondere für Callcenter von Bedeutung, da die Anzahl der Anrufe, die diese pro Tag verarbeiten können, begrenzt ist. Im Fall von E-Mail-Sendungen können Sie mit der Option **[!UICONTROL Sofortige Versandkapazität nicht begrenzen]** diesen Zeitraum ignorieren und gleichzeitig Ihre E-Mails versenden.
+Die maximale Anzahl von Nachrichten, die verarbeitet werden können, ist gleichmäßig über den definierten Verfügbarkeitsbereich verteilt. Dies ist besonders für Callcenter von Bedeutung, da die Anzahl der Anrufe pro Tag begrenzt ist. Im Fall von E-Mail-Sendungen wird die **[!UICONTROL Sofortige Auslieferungskapazität nicht begrenzen]** -Option können Sie diesen Verfügbarkeitsbereich ignorieren und Ihre E-Mails gleichzeitig versenden.
 
 ![](assets/campaign_opt_create_capacity_05.png)
 
