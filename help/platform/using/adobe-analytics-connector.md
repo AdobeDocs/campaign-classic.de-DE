@@ -7,7 +7,7 @@ feature: Analytics Integration
 role: User, Admin
 level: Beginner
 exl-id: 0dc6ce98-dc3e-4242-953e-e7cec55289ff
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: ccc48c93d81266b0971acc3a549458e0823eeb37
 workflow-type: tm+mt
 source-wordcount: '1718'
 ht-degree: 100%
@@ -15,8 +15,6 @@ ht-degree: 100%
 ---
 
 # Adobe Analytics-Connector{#adobe-analytics-connector}
-
-
 
 ## Über die Integration mittels Adobe Analytics-Connector {#about-analytics-connector-integration}
 
@@ -28,7 +26,7 @@ Der Adobe Analytics-Connector ermöglicht die Interaktion von Adobe Campaign und
 >
 >* Stellen Sie vor dem Beginn sicher, dass das Adobe Identity Management System (IMS) in Campaign implementiert ist. [Weiterführende Informationen finden Sie auf dieser Seite](../../integrations/using/about-adobe-id.md).
 
-Der Adobe Analytics-Connector ermöglicht es Adobe Campaign, Messungen zur Internet-Zielgruppe (Web Analytics) anzustellen. Dank dieser Integrationen kann Adobe Campaign Daten über das Besucherverhalten für eine oder mehrere Websites nach einer Marketing-Kampagne wiederherstellen und (nach der Analyse) Remarketing-Kampagnen mit dem Ziel durchführen, sie in Käufer zu konvertieren. Umgekehrt ermöglichen die Web-Analyse-Tools von Adobe Campaign die Weiterleitung von Indikatoren und Kampagnenattributen an ihre Plattformen.
+Mit Adobe Analytics Connector kann Adobe Campaign die Internet-Zielgruppe (Web Analytics) messen. Dank dieser Integrationen kann Adobe Campaign Daten über das Besucherverhalten für eine oder mehrere Websites nach einer Marketing-Kampagne wiederherstellen und (nach der Analyse) Remarketing-Kampagnen mit dem Ziel durchführen, sie in Käufer zu konvertieren. Umgekehrt ermöglichen die Web-Analyse-Tools von Adobe Campaign die Weiterleitung von Indikatoren und Kampagnenattributen an ihre Plattformen.
 
 Der Aktionsradius der verschiedenen Tools gestaltet sich wie folgt:
 

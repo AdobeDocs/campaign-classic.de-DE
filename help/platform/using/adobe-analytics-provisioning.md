@@ -7,16 +7,14 @@ feature: Analytics Integration
 role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: ccc48c93d81266b0971acc3a549458e0823eeb37
 workflow-type: tm+mt
-source-wordcount: '753'
-ht-degree: 100%
+source-wordcount: '773'
+ht-degree: 95%
 
 ---
 
 # Bereitstellung des Adobe Analytics-Connectors {#adobe-analytics-connector-provisioning}
-
-
 
 >[!IMPORTANT]
 >
@@ -31,6 +29,12 @@ Die Integration zwischen Adobe Campaign Classic und Adobe Analytics-Authentifizi
 * Wenn Sie einen neuen Connector implementieren, ist die Implementierung von Adobe IMS optional. Ohne einen Adobe ID-Benutzer verwendet Adobe Campaign einen technischen Anwender zur Synchronisierung mit Adobe Analytics.
 
 Damit diese Integration funktioniert, müssen Sie ein Adobe Analytics-Produktprofil erstellen, das ausschließlich für den Analytics-Connector verwendet wird. Anschließend müssen Sie ein Adobe I/O-Projekt erstellen.
+
+<!--
+>[!AVAILABILITY]
+>
+> JWT (JSON Web Tokens) is currently in the process of depreciation and is being replaced with OAuth. The transition is being carried out progressively within Campaign's upcoming releases and documentation will be updated to reflect these updates.
+-->
 
 ## Erstellen eines Adobe Analytics-Produktprofils {#analytics-product-profile}
 
@@ -72,7 +76,9 @@ Weiterführende Informationen zu Produktprofilen finden Sie in der [Dokumentatio
 
    ![](assets/do-not-localize/triggers_13.png)
 
-1. Fügen Sie für die Funktion **[!UICONTROL Dimensionen]** die **[!UICONTROL Dimensionen]** hinzu, die Sie später konfigurieren müssen.
+1. Für **[!UICONTROL Dimensionen]** -Funktion, fügen Sie die **[!UICONTROL Dimensionen]** für die zukünftige Konfiguration benötigt.
+
+   Stellen Sie sicher, dass die ausgewählten Dimensionen mit den im Abschnitt [Externes Konto](adobe-analytics-connector.md#external-account-classic) und richten Sie sie an der entsprechenden eVars-Nummer aus [Adobe Analytics](adobe-analytics-connector.md#configure-conversion-success).
 
 1. Fügen Sie für die Funktion **[!UICONTROL Report Suite-Tools]** die folgenden Berechtigungen hinzu:
 
