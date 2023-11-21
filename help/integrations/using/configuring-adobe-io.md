@@ -10,16 +10,14 @@ index: y
 internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 65b6f91e083c955df044ffeb10f5338104d1ce56
 workflow-type: tm+mt
-source-wordcount: '772'
-ht-degree: 100%
+source-wordcount: '809'
+ht-degree: 95%
 
 ---
 
 # Konfigurieren von Adobe I/O für Adobe Experience Cloud Triggers {#configuring-adobe-io}
-
-
 
 >[!CAUTION]
 >
@@ -39,11 +37,11 @@ Bevor Sie mit dieser Implementierung beginnen, überprüfen Sie, ob Folgendes vo
 
 ## Schritt 1: Erstellen/Aktualisieren eines Adobe I/O-Projekts {#creating-adobe-io-project}
 
-1. Greifen Sie auf [!DNL Adobe I/O] zu und melden Sie sich mit den Entwicklerzugangsdaten Ihrer Organisation an.
+>[!AVAILABILITY]
+>
+> JWT (JSON Web Tokens) wird derzeit abgeschrieben und durch OAuth ersetzt. Die Umstellung erfolgt schrittweise innerhalb der kommenden Campaign-Versionen. Die Dokumentation wird entsprechend diesen Aktualisierungen aktualisiert.
 
-   >[!NOTE]
-   >
-   > Stellen Sie sicher, dass Sie beim richtigen Portal der Organisation angemeldet sind.
+1. Greifen Sie auf [!DNL Adobe I/O] zu und melden Sie sich mit den Entwicklerzugangsdaten Ihrer Organisation an. Stellen Sie sicher, dass Sie beim richtigen Portal der Organisation angemeldet sind.
 
 1. Entnehmen Sie die vorhandene Integrations-Client-Kennung (Client-ID) aus der Konfigurationsdatei &quot;ims/authIMSTAClientId&quot; der Instanz. Ist das Attribut nicht vorhanden oder leer, bedeutet dies, dass die Client-Kennung nicht konfiguriert ist.
 
