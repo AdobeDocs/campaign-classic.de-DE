@@ -7,22 +7,24 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Cla
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 324e26ba1db14e10bb79eee60ba43ddc36e8e94f
+source-git-commit: 8ecb5aba9a070276927e97586ed463ab485717d6
 workflow-type: tm+mt
-source-wordcount: '3630'
-ht-degree: 100%
+source-wordcount: '3668'
+ht-degree: 98%
 
 ---
 
 # Aktualisierungen der Dokumentation{#documentation-updates}
-
-
 
 Auf dieser Seite werden alle neuen Funktionen und Dokumentationsaktualisierungen pro Monat und Campaign-Version aufgeführt.
 
 Die entsprechenden Aktualisierungen finden Sie in den [Versionshinweisen zu Adobe Campaign Classic](../../rn/using/latest-release.md).
 
 ## 2023
+
+### November 2023
+
+JWT (JSON Web Tokens) wird derzeit abgeschrieben und durch OAuth ersetzt. Die Umstellung erfolgt schrittweise innerhalb der kommenden Campaign-Versionen. Die Dokumentation wird entsprechend diesen Aktualisierungen aktualisiert.
 
 ### August 2023
 
@@ -183,7 +185,7 @@ Neuer Vertica Analytics FDA-Connector – [Weitere Infos](../../installation/usi
 
 Neuer Google BigQuery FDA-Connector – [Weitere Informationen](../../installation/using/configure-fda-google-big-query.md)
 
-Die Beschreibung des technischen Workflows &quot;Abrechnung (Billing)&quot; enthält jetzt die Aufgaben, die ursprünglich vom Workflow &quot;Zählung aktiver Profile (Billing) (billingActiveContactCount)&quot; ausgeführt wurden. [Weitere Informationen](../../workflow/using/about-technical-workflows.md)
+Die technische Workflow-Beschreibung &quot;Rechnungsstellung (billing)&quot;enthält jetzt die Aufgaben, die ursprünglich von der &quot;Anzahl der aktiven Abrechnungsprofile (billingActiveContactCount)&quot;ausgeführt wurden. [Weitere Informationen](../../workflow/using/about-technical-workflows.md)
 
 ## Mai 2021 {#may-2021}
 
@@ -402,7 +404,7 @@ Der Abschnitt &quot;Datenschutz und Einverständnis&quot; wurde um detaillierter
 
 Die Seite &quot;Datenschutzverwaltung in Campaign Classic&quot; wurde mit Informationen zum Feld &quot;Vorschrift&quot; aktualisiert. Dieses Feld ist jetzt bei Verwendung der API verfügbar, die die Einrichtung eines automatischen Prozesses für Datenschutzanfragen ermöglicht. [Mehr dazu](https://helpx.adobe.com/ie/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)
 
-Die Seite mit der Übersicht über die Datenschutzverwaltung wurde aktualisiert und enthält nun Informationen zum thailändischen Datenschutzgesetz (PDPA) und zum brasilianischen Datenschutzgesetz (Lei Geral de Proteção de Dados, LGPD) – [Weitere Informationen](../../platform/using/privacy-and-recommendations.md)
+Die Seite mit der Übersicht über die Datenschutzverwaltung wurde aktualisiert und enthält nun Informationen zum thailändischen Datenschutzgesetz (PDPA) und zum brasilianischen Datenschutzgesetz (Lei Geral de Proteção de Dados, LGPD). [Weitere Informationen](../../platform/using/privacy-and-recommendations.md)
 
 Es wurden Informationen zu Sub-Workflow-Protokollen und dem Verhalten im Fehlerfall hinzugefügt. [Mehr dazu](../../workflow/using/sub-workflow.md)
 
