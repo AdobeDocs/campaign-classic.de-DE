@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: instance-configuration
 exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
 source-git-commit: 52dcc8c01c5ce2421bfb59235bd0e458e7c8122f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '851'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -93,11 +93,11 @@ Der Zugriff auf die Transaktionsnachrichten-spezifischen, technischen Workflows 
    * **[!UICONTROL Versandfehler]**: Der Versand ist fehlgeschlagen (Status wird den Versandlogs entnommen).
    * **[!UICONTROL Ereignis wurde nicht berücksichtigt]**: Das Ereignis konnte keiner Vorlage zugeordnet werden. Das Ereignis wird nicht erneut verarbeitet.
 
-### Workflow-Planung archivieren
+### Zeitplan des Archivierungs-Workflows
 
-Vermeiden Sie das Ändern der **Archivierungs-Workflow** planen, der auf der Kontrollinstanz ausgeführt wird. Andernfalls gehen möglicherweise einige Tracking-Daten verloren, die aus der Ausführungsinstanz abgerufen werden.
+Vermeiden Sie es, den Zeitplan des **Archivierungs-Workflows** zu ändern, der auf der Kontrollinstanz ausgeführt wird. Andernfalls gehen möglicherweise einige Tracking-Daten verloren, die aus der Ausführungsinstanz abgerufen werden.
 
-Wenn Sie den Zeitplan des Archivierungs-Workflows ändern, müssen Sie auch die **Tracking-Workflow** auf der Ausführungsinstanz planen, um dem Zeitplan des Archivierungs-Workflows auf der Kontrollinstanz zu entsprechen.
+Wenn Sie den Zeitplan des Archivierungs-Workflows ändern, müssen Sie auch den **Tracking-Workflow** auf der Ausführungsinstanz ändern, damit er mit dem Zeitplan des Archivierungs-Workflows auf der Kontrollinstanz übereinstimmt.
 
 ## Multibranding konfigurieren {#configuring-multibranding}
 
