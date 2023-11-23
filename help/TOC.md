@@ -6,10 +6,10 @@ title: Campaign Classic v7 – Handbuch
 user-guide-description: Mit Adobe Campaign können Sie umfangreiche Kundendaten verwenden, um dynamische Kampagnen, die Kunden tatsächlich wünschen, zu erstellen, zu koordinieren und bereitzustellen. Über E-Mail, mobile Kanäle, Offline-Kanäle und mehr.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 88ee8d1575f6397a35fb6f7412cd08119a75c131
+source-git-commit: 6939307c0b33ff662fe4ef9ae0192ae7b500a95c
 workflow-type: tm+mt
-source-wordcount: '2529'
-ht-degree: 100%
+source-wordcount: '2532'
+ht-degree: 99%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 100%
          + [Globale Konzepte](platform/using/faq-key-concepts.md)
          + [Build-Upgrade](platform/using/faq-build-upgrade.md)
          + [Datenschutz](platform/using/privacy-faq.md)
-         + [Audiences](platform/using/faq-audiences.md)
+         + [Zielgruppen](platform/using/faq-audiences.md)
          + [Erstellen von Nachrichten](platform/using/faq-designing.md)
          + [Nachrichten senden](platform/using/faq-messages.md)
          + [Workflows](platform/using/faq-workflows.md)
@@ -117,7 +117,7 @@ ht-degree: 100%
    + Die wichtigsten Schritte beim Erstellen eines Versands {#key-steps-when-creating-a-delivery}
       + [Erste Schritte mit Sendungen](delivery/using/steps-about-delivery-creation-steps.md)
       + [Versand erstellen und identifizieren](delivery/using/steps-create-and-identify-the-delivery.md)
-      + [Definieren der Audience](delivery/using/steps-defining-the-target-population.md)
+      + [Zielgruppe definieren](delivery/using/steps-defining-the-target-population.md)
       + [Versand validieren](delivery/using/steps-validating-the-delivery.md)
       + [Versand durchführen](delivery/using/steps-sending-the-delivery.md)
       + Best Practices beim Versand {#delivery-bestpractices}
@@ -652,6 +652,7 @@ ht-degree: 100%
          + [Best Practices und Einschränkungen](installation/using/fda-best-practices.md)
          + Konfigurationsrichtlinien {#config-databases}
             + [Konfigurationsschritte](installation/using/configure-fda.md)
+            + [Konfigurieren von Amazon Redshift](installation/using/configure-fda-redshift.md)
             + [Konfigurieren von Azure Synapse](installation/using/configure-fda-synapse.md)
             + [Konfigurieren von Google BigQuery](installation/using/configure-fda-google-big-query.md)
             + [Konfigurieren von Hadoop](installation/using/configure-fda-hadoop.md)

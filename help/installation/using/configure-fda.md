@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 0b53b165-a6d8-4604-b3f0-3fa6fce35146
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 6939307c0b33ff662fe4ef9ae0192ae7b500a95c
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 52%
+source-wordcount: '354'
+ht-degree: 51%
 
 ---
 
@@ -45,6 +45,7 @@ Abhängig von den externen Datenbanken, auf die Sie von Adobe Campaign aus zugre
 
 Weitere Informationen finden Sie unter den folgenden Links:
 
+* Campaign verbinden und [Amazon Redshift](../../installation/using/configure-fda-redshift.md)
 * Campaign verbinden und [Azure synapse](../../installation/using/configure-fda-synapse.md)
 * Campaign verbinden und [Google BigQuery](../../installation/using/configure-fda-google-big-query.md)
 * Campaign verbinden und [Hadoop](../../installation/using/configure-fda-hadoop.md)
