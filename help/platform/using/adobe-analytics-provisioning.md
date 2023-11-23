@@ -3,24 +3,25 @@ product: campaign
 title: Bereitstellung des Adobe Analytics-Connectors
 description: Erfahren Sie mehr über die Bereitstellung des Adobe Analytics-Connectors.
 badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
+badge-v7-prem: label="On-Premise und Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
 feature: Analytics Integration
 role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
-source-git-commit: 65b6f91e083c955df044ffeb10f5338104d1ce56
+source-git-commit: 26d1b0bc9886988ff636d322c781a23f95a9bcd0
 workflow-type: tm+mt
-source-wordcount: '810'
-ht-degree: 91%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Bereitstellung des Adobe Analytics-Connectors {#adobe-analytics-connector-provisioning}
 
->[!IMPORTANT]
+>[!CAUTION]
 >
 > Diese Schritte sollten nur von Hybrid- und On-Premise-Implementierungen durchgeführt werden.
 >
->Bei gehosteten Implementierungen wenden Sie sich an das [Adobe-Kundenunterstützungs](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)-Team.
+>Bei gehosteten und Campaign Managed Services-Implementierungen wenden Sie sich bitte an [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) Team.
 
 Die Integration zwischen Adobe Campaign Classic und Adobe Analytics-Authentifizierung unterstützt Adobe Identity Management Service (IMS):
 
