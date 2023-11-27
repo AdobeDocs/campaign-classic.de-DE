@@ -9,9 +9,9 @@ role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
 source-git-commit: 26d1b0bc9886988ff636d322c781a23f95a9bcd0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '832'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 89%
 >
 > Diese Schritte sollten nur von Hybrid- und On-Premise-Implementierungen durchgeführt werden.
 >
->Bei gehosteten und Campaign Managed Services-Implementierungen wenden Sie sich bitte an [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) Team.
+>Bei gehosteten und Campaign Managed Services-Implementierungen wenden Sie sich bitte die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 Die Integration zwischen Adobe Campaign Classic und Adobe Analytics-Authentifizierung unterstützt Adobe Identity Management Service (IMS):
 
@@ -33,7 +33,7 @@ Damit diese Integration funktioniert, müssen Sie ein Adobe Analytics-Produktpro
 
 >[!AVAILABILITY]
 >
-> JWT (JSON Web Tokens) wird derzeit abgeschrieben und durch OAuth ersetzt. Die Umstellung erfolgt schrittweise innerhalb der kommenden Campaign-Versionen. Die Dokumentation wird entsprechend diesen Aktualisierungen aktualisiert.
+> JWT (JSON Web Tokens) wird gerade eingestellt und durch OAuth ersetzt. Die Umstellung erfolgt schrittweise mit den anstehenden Campaign-Versionen. Die Dokumentation wird entsprechend diesen Aktualisierungen aktualisiert.
 
 ## Erstellen eines Adobe Analytics-Produktprofils {#analytics-product-profile}
 
@@ -75,9 +75,9 @@ Weiterführende Informationen zu Produktprofilen finden Sie in der [Dokumentatio
 
    ![](assets/do-not-localize/triggers_13.png)
 
-1. Für **[!UICONTROL Dimensionen]** -Funktion, fügen Sie die **[!UICONTROL Dimensionen]** für die zukünftige Konfiguration benötigt.
+1. Fügen Sie für die Funktion **[!UICONTROL Dimensionen]** die für zukünftige Konfigurationen benötigten **[!UICONTROL Dimensionen]** hinzu.
 
-   Stellen Sie sicher, dass die ausgewählten Dimensionen mit den im Abschnitt [Externes Konto](adobe-analytics-connector.md#external-account-classic) und richten Sie sie an der entsprechenden eVars-Nummer aus [Adobe Analytics](adobe-analytics-connector.md#configure-conversion-success).
+   Stellen Sie sicher, dass die ausgewählten Dimensionen mit den unter [Externes Konto](adobe-analytics-connector.md#external-account-classic) konfigurierten Dimensionen übereinstimmen, und stimmen Sie sie mit den entsprechenden eVars-Nummern aus [Adobe Analytics](adobe-analytics-connector.md#configure-conversion-success) ab.
 
 1. Fügen Sie für die Funktion **[!UICONTROL Report Suite-Tools]** die folgenden Berechtigungen hinzu:
 
