@@ -9,10 +9,10 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: a586d70b-1b7f-47c2-a821-635098a70e45
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 624978901943b4c74f50c20298c9596f73b25b1b
 workflow-type: tm+mt
-source-wordcount: '1239'
-ht-degree: 6%
+source-wordcount: '1294'
+ht-degree: 5%
 
 ---
 
@@ -82,6 +82,10 @@ Um Sie bei der Einrichtung von Wartungsplänen zu unterstützen, finden Sie in d
    ```
 
 ### Einfache Wartung {#simple-maintenance}
+
+>[!IMPORTANT]
+>
+>Adobe empfiehlt dringend, VACUUM FULL nicht auf von Campaign Adobe gehosteten Datenbankkonfigurationen auszuführen. Die vorgeschlagene Wartung ist nur ein Leitfaden für ON-PREMISE-Installationen. Verwenden Sie für benutzerdefinierte Tabellenimplementierungen und -schemata VACUUM FULL auf Ihr eigenes Risiko, da VACUUM - ohne Überwachung - ausschließlich Tabellen sperren kann, die angehaltene Abfragen verursachen - und in einigen Fällen die gesamte Datenbank sperren kann.
 
 In PostgreSQL können Sie die folgenden typischen Suchbegriffe verwenden:
 
