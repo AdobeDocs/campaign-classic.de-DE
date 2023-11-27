@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 8ecb5aba9a070276927e97586ed463ab485717d6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3668'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Die entsprechenden Aktualisierungen finden Sie in den [Versionshinweisen zu Adob
 
 ### November 2023
 
-JWT (JSON Web Tokens) wird derzeit abgeschrieben und durch OAuth ersetzt. Die Umstellung erfolgt schrittweise innerhalb der kommenden Campaign-Versionen. Die Dokumentation wird entsprechend diesen Aktualisierungen aktualisiert.
+JWT (JSON Web Tokens) wird gerade eingestellt und durch OAuth ersetzt. Die Umstellung erfolgt schrittweise mit den anstehenden Campaign-Versionen. Die Dokumentation wird entsprechend diesen Aktualisierungen aktualisiert.
 
 ### August 2023
 
@@ -185,7 +185,7 @@ Neuer Vertica Analytics FDA-Connector – [Weitere Infos](../../installation/usi
 
 Neuer Google BigQuery FDA-Connector – [Weitere Informationen](../../installation/using/configure-fda-google-big-query.md)
 
-Die technische Workflow-Beschreibung &quot;Rechnungsstellung (billing)&quot;enthält jetzt die Aufgaben, die ursprünglich von der &quot;Anzahl der aktiven Abrechnungsprofile (billingActiveContactCount)&quot;ausgeführt wurden. [Weitere Informationen](../../workflow/using/about-technical-workflows.md)
+Die Beschreibung des technischen Workflows „Abrechnung (Billing)“ enthält jetzt die Aufgaben, die ursprünglich vom Workflow „Zählung aktiver Abrechnungsprofile (billingActiveContactCount)“ ausgeführt wurden. [Weitere Informationen](../../workflow/using/about-technical-workflows.md)
 
 ## Mai 2021 {#may-2021}
 
