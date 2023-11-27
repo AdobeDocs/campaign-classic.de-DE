@@ -7,9 +7,9 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Cla
 feature: Typology Rules, Campaigns
 exl-id: 757328fa-4698-4f85-a5fa-074b5152ec45
 source-git-commit: a37e67ef3f348737a099dab00a84b6854bd52e57
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '832'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -97,11 +97,11 @@ Der Workflow **[!UICONTROL Planungen]** erstellt automatisch alle entsprechenden
 
 ## Nachrichten bei Erreichen des Kapazitätslimits ausschließen {#exclude-messages-when-capacity-limit-reached}
 
-Die Verfügbarkeitszeilen dienen nur als Richtwerte. Um überschüssige Nachrichten auszuschließen, kreuzen Sie die Option **[!UICONTROL Die die Kapazität übersteigenden Nachrichten aus der Zielgruppe ausschließen]** an. Die Kapazität kann so nicht überschritten werden. Für die gleiche Population wie im vorhergehenden Beispiel können Verbrauch und verbleibende Kapazität die Ursprungsmenge nicht übersteigen.
+Die Verfügbarkeitszeilen dienen nur als Richtwerte. Um überschüssige Nachrichten auszuschließen, aktivieren Sie die Option **[!UICONTROL Die die Kapazität übersteigenden Nachrichten aus der Zielgruppe ausschließen]**. Die Kapazität kann so nicht überschritten werden. Für die gleiche Population wie im vorhergehenden Beispiel können Verbrauch und verbleibende Kapazität die Ursprungsmenge nicht übersteigen.
 
 ![](assets/campaign_opt_create_capacity_04.png)
 
-Die maximale Anzahl von Nachrichten, die verarbeitet werden können, ist gleichmäßig über den definierten Verfügbarkeitsbereich verteilt. Dies ist besonders für Callcenter von Bedeutung, da die Anzahl der Anrufe pro Tag begrenzt ist. Im Fall von E-Mail-Sendungen wird die **[!UICONTROL Sofortige Auslieferungskapazität nicht begrenzen]** -Option können Sie diesen Verfügbarkeitsbereich ignorieren und Ihre E-Mails gleichzeitig versenden.
+Die maximale Anzahl von Nachrichten, die verarbeitet werden können, ist gleichmäßig über den definierten Verfügbarkeitsbereich verteilt. Dies ist besonders für Callcenter von Bedeutung, da die Anzahl der Anrufe pro Tag begrenzt ist. Im Fall von E-Mail-Sendungen können Sie mit der Option **[!UICONTROL Sofortige Versandkapazität nicht begrenzen]** diesen Verfügbarkeitsbereich ignorieren und gleichzeitig Ihre E-Mails senden.
 
 ![](assets/campaign_opt_create_capacity_05.png)
 
