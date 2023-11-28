@@ -7,10 +7,10 @@ badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Delivery Templates
 role: User
 exl-id: b5514fa3-1e65-45dc-8e40-d1ba3b673e7a
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
-workflow-type: ht
-source-wordcount: '193'
-ht-degree: 100%
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+workflow-type: tm+mt
+source-wordcount: '197'
+ht-degree: 83%
 
 ---
 
@@ -25,10 +25,10 @@ Folgende Mappings sind vorhanden:
 | Name | Verwendung | Standardschema |
 |---|---|---|
 | Bereich Empfänger | Versand richtet sich an die in der Adobe-Campaign-Datenbank enthaltenen Empfänger | nms:recipient |
-| Besucher | Versand richtet sich an Profile, die beispielsweise durch das Weiterleiten von Nachrichten (Virales Marketing) oder durch soziale Netzwerke (Facebook, Twitter) akquiriert wurden. | mns:visitor |
+| Besucher | Versand an Besucher, deren Profile beispielsweise über Verweise (virales Marketing) oder soziale Netzwerke (Facebook, X - ehemals Twitter) erfasst wurden. | mns:visitor |
 | Abonnements  | Versand richtet sich an Abonnenten eines Informationsdienstes wie z. B. einen Newsletter | nms:subscription |
 | Besucher-Abonnements | Versand richtet sich an Besucher, die einen Informationsdienst beziehen | nms:visitorSub |
-| Service | Veröffentlichungen auf Twitter oder Facebook | nms:service |
+| Service | In einem X-Konto oder einer Facebook-Seite veröffentlichen | nms:service |
 | Benutzer | Versand richtet sich an Adobe-Campaign-Benutzer | nms:operator |
 | Externe Datei | Versand basiert auf einer Datei, die alle notwendigen Informationen enthält | Ohne Schema oder Zielgruppe |
 

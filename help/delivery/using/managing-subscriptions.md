@@ -7,10 +7,10 @@ badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Subscriptions
 role: User
 exl-id: 16dddd4a-2e1a-4c78-8168-f656657bb9b8
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
-workflow-type: ht
-source-wordcount: '1173'
-ht-degree: 100%
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+workflow-type: tm+mt
+source-wordcount: '1177'
+ht-degree: 97%
 
 ---
 
@@ -51,11 +51,11 @@ Klicken Sie auf den Namen eines Dienstes, um ihn zu öffnen und zu bearbeiten, o
 
 ![](assets/s_ncs_user_services_add.png)
 
-* Geben Sie im Feld **[!UICONTROL Titel]** einen Namen für den neuen Dienst ein und wählen Sie den Versandkanal aus: E-Mail, Mobile, Facebook, Twitter oder Mobile App.
+* Geben Sie den Namen des Dienstes im **[!UICONTROL Titel]** und wählen Sie den Versandkanal aus: E-Mail, Mobile, Facebook, X (ehemals Twitter) oder Mobile Apps.
 
   >[!NOTE]
   >
-  >Facebook- und Twitter-Abonnements werden in [diesem Abschnitt](../../social/using/about-social-marketing.md) ausführlich beschrieben. Mobile App-Abonnements werden im Abschnitt [Über den Mobile-App-Kanal](about-mobile-app-channel.md) beschrieben.
+  >Facebook- und X-Abonnements werden im Abschnitt [diesem Abschnitt](../../social/using/about-social-marketing.md). Mobile App-Abonnements werden im Abschnitt [Über den Mobile-App-Kanal](about-mobile-app-channel.md) beschrieben.
 
 * Bei Diensten vom Typ **E-Mail** haben Sie die Wahl zwischen zwei Modi: **[!UICONTROL Newsletter]** oder **[!UICONTROL Viral]**.
 * Sie haben die Möglichkeit, bei An- und Abmeldungen **Bestätigungsnachrichten** zu versenden. Wählen Sie in diesem Fall neben den Feldern **[!UICONTROL Anmeldung]** und **[!UICONTROL Abmeldung]** die jeweils zu verwendenden Versandvorlagen aus. Die Vorlagen müssen mit einem Zielgruppen-Mapping des Typs **[!UICONTROL Abonnements]** und ohne Angabe einer Zielgruppe konfiguriert werden. Siehe Abschnitt [Über den E-Mail-Kanal](about-email-channel.md).

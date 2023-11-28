@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 0cd6bf20-da72-4cf0-9f5d-d4e8acdd324d
-source-git-commit: dbbc5d9f354357e5ca13eaeffddf67865480070d
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '2551'
-ht-degree: 100%
+source-wordcount: '2555'
+ht-degree: 98%
 
 ---
 
@@ -291,7 +291,7 @@ Weitere Informationen finden Sie auf der Seite [Eingestellte und entfernte Funkt
 * Fehlerkorrektur – Bei der Durchführung der Versandanalyse wird die Speichernutzung auf dem Server nicht mehr verringert.
 * Fehlerkorrektur – Bei der Ausführung bestimmter komplexer Abfragen funktioniert die Instanz jetzt einwandfrei.
 * Fehlerkorrektur – Der technische Workflow zum **Synchronisieren von Twitter-Seiten** kann jetzt problemlos ausgeführt werden. (NEO-28634)
-* Fehlerkorrektur – Jetzt wird im Zusammenhang mit der Funktion &quot;decryptPassword&quot; keine Fehlermeldung mehr angezeigt, wenn versucht wird, mithilfe der Versandvorlage **Tweet (Twitter)** Inhalte auf Twitter zu veröffentlichen. (NEO-28216)
+* Fehlerkorrektur - jetzt wird keine Fehlermeldung mehr bezüglich der decryptPassword -Funktion angezeigt, wenn versucht wird, unter X (ehemals Twitter) unter Verwendung der **Tweet (twitter)** Versandvorlage. (NEO-28216)
 * Fehlerkorrektur – Jetzt tritt kein Problem mehr auf, wenn zum Erstellen einer HTTP-Anfrage in einem Workflow eine **JavaScript**-Aktivität verwendet wird. Nach der Definition der Port-Nummer im Host-Namen schlug der Aufruf fehl, und folgender Fehler wurde angezeigt (NEO-29146):
 
 ```

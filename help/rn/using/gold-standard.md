@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Cla
 role: User
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '1787'
-ht-degree: 100%
+source-wordcount: '1791'
+ht-degree: 98%
 
 ---
 
@@ -168,7 +168,7 @@ _Dienstag, 17. Dezember 2019_
 
 Build 9032@d6b8062 umfasst die folgende Fehlerkorrektur:
 
-* Fehlerkorrektur – Tracking-Fehler bei folgenden Kommunikationskanälen tritt nicht mehr auf: Mobile (SMS, MMS), Push (iOS, Android) und soziale Netzwerke (Facebook, Twitter). (NEO-19595)
+* Fehlerkorrektur - Tracking-Fehler in den folgenden Kommunikationskanälen tritt nicht mehr auf: Mobiltelefon (SMS, MMS), Push (iOS, Android) und soziale Netzwerke (Facebook, X - ehemals Twitter). (NEO-19595)
 
 ### Version [!DNL Gold Standard] 4{#gs-4}
 

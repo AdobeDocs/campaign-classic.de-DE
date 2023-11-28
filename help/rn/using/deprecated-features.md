@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Cla
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '1515'
-ht-degree: 100%
+source-wordcount: '1519'
+ht-degree: 98%
 
 ---
 
@@ -46,7 +46,7 @@ Kunden wird empfohlen, die Nutzung der Funktionen in ihrer aktuellen Bereitstell
   </tr>
 <tr>
  <td>Social Marketing    mit Facebook</td>
- <td>Social Marketing mit Facebook wird jetzt nicht mehr unterstützt. Sie können die Twitter-Integration verwenden, um in den sozialen Medien zu posten, oder in Zusammenarbeit mit Adobe einen benutzerdefinierten Kanal erstellen.
+ <td>Social Marketing mit Facebook wird jetzt nicht mehr unterstützt. Sie können die X-Integration (ehemals Twitter) verwenden, um auf Social Media zu posten, oder mit Adobe arbeiten, um einen benutzerdefinierten Kanal zu erstellen.
  <p></p>
   <p>Geplantes Datum für die Entfernung: Ende 2023</p>
   </td>

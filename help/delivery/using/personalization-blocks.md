@@ -7,10 +7,10 @@ badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Personalization
 role: User
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
-workflow-type: ht
-source-wordcount: '981'
-ht-degree: 100%
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+workflow-type: tm+mt
+source-wordcount: '985'
+ht-degree: 96%
 
 ---
 
@@ -115,7 +115,7 @@ Standardmäßig ist eine Liste mit Gestaltungsbausteinen verfügbar, um den Inha
   >Dieser Baustein kann in Sendungen verwendet werden, die nur an Besucher gerichtet sind.
 
 * **[!UICONTROL Anmeldebestätigung]**: Hiermit wird ein Link eingefügt, mit dem die Anmeldung bestätigt werden kann.
-* **[!UICONTROL Teilen-Links in Social Media]**: Hiermit werden Schaltflächen eingefügt, mit denen der Empfänger mit dem E-Mail-Client sowie mit Facebook, Twitter und LinkedIn einen Link zum Inhalt der Mirror-Seite teilen kann (siehe [Weiterleiten von Nachrichten](viral-and-social-marketing.md#viral-marketing--forward-to-a-friend)).
+* **[!UICONTROL Teilen-Links sozialer Netzwerke]** : Hiermit werden Schaltflächen eingefügt, mit denen der Empfänger einen Link zum Inhalt der Mirrorseite für den E-Mail-Client, Facebook, X (ehemals Twitter) und LinkedIn freigeben kann (siehe [Weiterleiten von Nachrichten](viral-and-social-marketing.md#viral-marketing--forward-to-a-friend)).
 * **[!UICONTROL Stil der Inhalts-E-Mails]** und **[!UICONTROL Stil der Benachrichtigungen]**: Hiermit wird Code erstellt, mit dem eine E-Mail mit nativen HTML-Stilen formatiert werden kann. Diese Bausteine müssen in den Quell-Code des Versands im Abschnitt **[!UICONTROL ...]** in **`<style>...</style>`**-Tags eingefügt werden.
 * **[!UICONTROL Annahme-URL eines Angebots im Einzelmodus]**: Hiermit wird eine URL eingefügt, mit der ein Interaction-Angebot auf **[!UICONTROL Angenommen]** gesetzt werden kann (siehe [diesen Abschnitt](../../interaction/using/offer-analysis-report.md)).
 

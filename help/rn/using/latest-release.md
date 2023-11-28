@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Cla
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 155fbcd2846cfc5a8db25194bd8d7007356db24e
-workflow-type: ht
-source-wordcount: '1869'
-ht-degree: 100%
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+workflow-type: tm+mt
+source-wordcount: '1873'
+ht-degree: 98%
 
 ---
 
@@ -141,7 +141,7 @@ Weiterführende Informationen finden Sie in der [Campaign-Kompatibilitätsmatrix
 
 **Eingestellte Funktionen**
 
-* Social Marketing mit Facebook wird jetzt nicht mehr unterstützt. Sie können die Twitter-Integration verwenden, um in den sozialen Medien zu posten, oder in Zusammenarbeit mit Adobe einen benutzerdefinierten Kanal erstellen.
+* Social Marketing mit Facebook wird jetzt nicht mehr unterstützt. Sie können die X-Integration (ehemals Twitter) verwenden, um auf Social Media zu posten, oder mit Adobe arbeiten, um einen benutzerdefinierten Kanal zu erstellen.
 * ACS-Connector (Prime-Angebot) wird jetzt nicht mehr unterstützt. Sie können die Export-/Importfunktionen von Campaign verwenden, um Daten in beide Produkte einzufügen und sie aus ihnen zu extrahieren.
 
 Weitere Informationen finden Sie auf der Seite [Eingestellte und entfernte Funktionen](deprecated-features.md).

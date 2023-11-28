@@ -7,10 +7,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 8febceb0-9694-4045-a630-a7ff2fd18943
-source-git-commit: be57635a6165790b8c8964d106ed0a3cb76c63af
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '930'
-ht-degree: 100%
+source-wordcount: '934'
+ht-degree: 98%
 
 ---
 
@@ -77,7 +77,7 @@ Die folgenden Funktionen sind verfügbar. Die Nutzbarkeit dieser Funktionen hän
 * [MRM](../../mrm/using/about-marketing-resource-management.md): Verwaltung von Marketing-Ressourcen und Budgets
 * [Interaktion](../../interaction/using/interaction-and-offer-management.md): Verwaltung von Angeboten mit Campaign
 * [Message Center](../../message-center/using/about-transactional-messaging.md): Versand von Transaktionsnachrichten per E-Mail, SMS oder Mobile App
-* [Social Marketing](../../social/using/about-social-marketing.md): Kommunikation in sozialen Netzwerken: Facebook, Twitter
+* [Social Marketing](../../social/using/about-social-marketing.md) - Kommunikation in sozialen Netzwerken: Facebook, X (ehemals Twitter),
 * [Workflow](../../workflow/using/about-workflows.md)/Data Management: Automatisierung von Prozessen und Verwaltung von Daten mithilfe von Workflows
 * [Webanwendungen](../../web/using/about-web-applications.md): Erstellen von Webseiten und Formularen
 * [Survey Manager](../../surveys/using/about-surveys.md): Erstellung von Online-Umfragen

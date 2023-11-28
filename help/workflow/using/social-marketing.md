@@ -4,10 +4,10 @@ title: Social Marketing
 description: Erfahren Sie mehr über die technische Workflows für Social Marketing.
 badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Workflows
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '125'
-ht-degree: 100%
+source-wordcount: '129'
+ht-degree: 79%
 
 ---
 
@@ -47,12 +47,12 @@ Die folgenden Workflows werden standardmäßig mit dem Modul **Social-Media-Mark
   <tr> 
    <td> <span class="uicontrol">Berechnung der Twitter-Statistiken</span> <br /> </td> 
    <td> <span class="uicontrol">statsTwitter</span> <br /> </td> 
-   <td> Berechnet Statistiken in Bezug auf Retweets und Besuchen auf Twitter.<br /> </td> 
+   <td> Berechnet Statistiken in Bezug auf Retweets und Besuche auf X (ehemals Twitter).<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Twitter-Konto-Synchronisation</span> <br /> </td> 
    <td> <span class="uicontrol">syncTwitter</span> <br /> </td> 
-   <td> Importiert täglich um 7 Uhr Twitter-Followers in Adobe Campaign.<br /> </td> 
+   <td> Importiert täglich um 7 Uhr X Follower in Adobe Campaign.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

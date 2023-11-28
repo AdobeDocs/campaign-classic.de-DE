@@ -5,10 +5,10 @@ description: Allgemeine Berichte
 badge: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Reporting, Monitoring
 exl-id: 6839fd7e-ecf4-4504-90a8-0207bc3991e4
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '2503'
-ht-degree: 100%
+source-wordcount: '2511'
+ht-degree: 96%
 
 ---
 
@@ -167,9 +167,9 @@ In der Tabelle werden folgende Indikatoren dargestellt:
 
 ### Teilen über soziale Netzwerke {#sharing-to-social-networks}
 
-Mit Viral-Marketing geben Sie den Empfängern Ihrer Sendungen die Möglichkeit, Nachrichten im Netzwerk zu teilen, sie also beispielsweise als Link auf ihrem Facebook- oder Twitter-Profil zu veröffentlichen oder an Freunde weiterzuleiten. Jede Verlinkung bzw. Weiterleitung und jeder Zugriff auf die weitergeleitete Information schlägt sich im Versandtracking nieder. Weiterführende Informationen zum Viral-Marketing finden Sie in [diesem Abschnitt](../../delivery/using/viral-and-social-marketing.md).
+Mit Viral-Marketing können Versandempfänger Informationen über ihr Kontaktnetzwerk austauschen: Sie können einen Link zu ihrem Profil hinzufügen (Facebook, X - ehemals Twitter usw.) oder eine Nachricht an einen Freund senden. Jede Freigabe und jeder Zugriff auf freigegebene Informationen werden innerhalb des Versands nachverfolgt. Weitere Informationen zum Viral-Marketing finden Sie in [diesem Abschnitt](../../delivery/using/viral-and-social-marketing.md).
 
-Dieser Bericht zeigt Teilungen und Öffnungen in sozialen Netzwerken (Facebook, Twitter etc.) und/oder über E-Mails.
+Dieser Bericht zeigt die Verteilung der geteilten und geöffneten Nachrichten nach sozialen Netzwerken (Facebook, X usw.) und/oder pro E-Mail.
 
 ![](assets/s_ncs_user_social_report.png)
 
@@ -202,7 +202,7 @@ Dieser Bereich veranschaulicht in zwei Diagrammen die Verteilung von Teilungen u
 
 ## Statistiken zu Teilungsaktivitäten {#statistics-on-sharing-activities}
 
-Dieser Bericht zeigt die zeitliche Entwicklung von Teilungen in sozialen Netzwerken (Facebook, Twitter usw.) und/oder über E-Mails.
+Dieser Bericht zeigt die Entwicklung von Teilen in sozialen Netzwerken (Facebook, X - ehemals Twitter, E-Mail usw.) rechtzeitig angegeben.
 
 Weitere Informationen zum Viral-Marketing finden Sie in [diesem Abschnitt](../../delivery/using/viral-and-social-marketing.md).
 
@@ -259,7 +259,7 @@ Dieser Bericht enthält Informationen bezüglich der Informationsdienst-Abonneme
 
 ![](assets/s_ncs_user_services_report.png)
 
-Er kann für ein bestimmtes Abonnement angezeigt werden, indem Sie im Knoten **[!UICONTROL Profile und Zielgruppen > Dienste und Abonnements]** den entsprechenden Titel markieren und auf die Rubrik **[!UICONTROL Berichte]** klicken. Der Bericht **[!UICONTROL Abonnement-Verfolgung]** steht standardmäßig zur Verfügung und gibt über verschiedene Zeiträume hinweg Auskunft über die An- und Abmeldeentwicklung sowie die Treue der Abonnenten. Der Zeitraum des Diagramms kann über die Dropdown-Liste angepasst werden. Klicken Sie auf **[!UICONTROL Aktualisieren]**, um Ihre Wahl zu bestätigen.
+Er kann für ein bestimmtes Abonnement angezeigt werden, indem Sie im Knoten **[!UICONTROL Profile und Zielgruppen > Dienste und Abonnements]** der Homepage oder des Explorers den entsprechenden Titel markieren und auf die Rubrik **[!UICONTROL Berichte]** klicken. Der Bericht **[!UICONTROL Abonnement-Verfolgung]** steht standardmäßig zur Verfügung und gibt über verschiedene Zeiträume hinweg Auskunft über die An- und Abmeldeentwicklung sowie die Treue der Abonnenten. Der Zeitraum des Diagramms kann über die Dropdown-Liste angepasst werden. Klicken Sie auf **[!UICONTROL Aktualisieren]**, um Ihre Wahl zu bestätigen.
 
 Weiterführende Informationen dazu finden Sie auf [dieser Seite](../../delivery/using/managing-subscriptions.md).
 

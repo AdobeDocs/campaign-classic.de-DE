@@ -7,10 +7,10 @@ badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Subscriptions
 role: User
 exl-id: eb72f19a-7669-4596-bf9b-8c0ce22b67bf
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: ht
-source-wordcount: '166'
-ht-degree: 100%
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+workflow-type: tm+mt
+source-wordcount: '170'
+ht-degree: 83%
 
 ---
 
@@ -22,4 +22,4 @@ Sie können Ihren Empfängern gestatten, die Nachrichten mit anderen Kontakten i
 
 >[!NOTE]
 >
->Diese Funktion ist standardmäßig im Adobe-Campaign-Lieferumfang enthalten. Die optionale Social-Marketing-Anwendung erlaubt zusätzlich, mit Kunden und Interessenten in sozialen Netzwerken wie Facebook und Twitter zu kommunizieren.
+>Diese Funktion ist standardmäßig in Adobe Campaign verfügbar. Die optionale Anwendung Social Marketing ermöglicht Ihnen, über Facebook und X (ehemals Twitter) mit Ihren Kunden und Interessenten in Kontakt zu treten.

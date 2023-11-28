@@ -6,9 +6,9 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Cla
 feature: Data Model
 role: Data Engineer, Developer
 exl-id: fc0fd23c-f9ea-4e30-b47b-a84143d882ca
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '2386'
+source-wordcount: '2390'
 ht-degree: 4%
 
 ---
@@ -52,7 +52,7 @@ Dies ist die Standardtabelle, die für die **Empfänger von Sendungen**. Sie ent
 
 Das Feld iFolderId ist der Fremdschlüssel, der den Empfänger mit seinem Ausführungsordner verknüpft. Weitere Informationen hierzu finden Sie unter [XtkFolder](#XtkFolder).
 
-Das Feld sCountryCode ist der ISO-Code 3166-1 Alpha 2 (2 Zeichen) des mit dem Empfänger verknüpften Landes. Dieses Feld ist tatsächlich ein Fremdschlüssel in der Länderreferenztabelle (NmsCountry), der die Länderbezeichnungen und andere Ländercodedaten enthält. Wenn das Land nicht ausgefüllt ist, wird der Wert &quot;XX&quot;gespeichert (und anstelle eines Null-ID-Datensatzes verwendet).
+Das Feld sCountryCode ist der ISO-Code 3166-1 Alpha 2 (2 Zeichen) des Empfängerlandes. Dieses Feld ist tatsächlich ein Fremdschlüssel in der Länderreferenztabelle (NmsCountry), der die Länderbezeichnungen und andere Ländercodedaten enthält. Wenn das Land nicht ausgefüllt ist, wird der Wert &quot;XX&quot;gespeichert (und anstelle eines Null-ID-Datensatzes verwendet).
 
 Weitere Informationen zur Empfängertabelle finden Sie in [diesem Abschnitt](../../configuration/using/about-data-model.md#default-recipient-table).
 
@@ -261,12 +261,12 @@ Dieser Tabellensatz ist mit der Variablen **Mobile App Channel**, mit dem über 
 
 ## Social Marketing-Modul {#social-marketing-module}
 
-Dieser Tabellensatz ist mit der Variablen **Verwaltung sozialer Netzwerke** -Modul, das die Interaktion mit Kunden und Interessenten über Facebook und Twitter ermöglicht. Weitere Informationen hierzu finden Sie unter [Über Social Marketing](../../social/using/about-social-marketing.md).
+Dieser Tabellensatz ist mit der Variablen **Verwaltung sozialer Netzwerke** -Modul, das die Interaktion mit Kunden und Interessenten über Facebook und X (ehemals Twitter) ermöglicht. Weitere Informationen hierzu finden Sie unter [Über Social Marketing](../../social/using/about-social-marketing.md).
 
 ![](assets/data-model_social.png)
 
 * **NmsVisitor**: Diese Tabelle entspricht dem **nms:visitor** Schema. Es enthält Informationen zu Besuchern.
-* **NmsVisitorSub**: Diese Tabelle entspricht dem **nms:visitorSub** Schema. Dadurch können Sie einen Besucher mit den Diensten verknüpfen, die er abonniert hat (Twitter oder Facebook).
+* **NmsVisitorSub**: Diese Tabelle entspricht dem **nms:visitorSub** Schema. Dadurch können Sie einen Besucher mit den Diensten verknüpfen, die er abonniert hat (X oder Facebook).
 * **NmsFriendShipRel**: Diese Tabelle entspricht dem **nms:friendlyRel** Schema. Dadurch können Sie Besucher im Rahmen des Facebook-Dienstes mit ihren Freunden verknüpfen.
 * **NmsVisitorInterestRel**: Diese Tabelle entspricht dem **nms:visitorInterestRel** Schema. Dadurch können Sie Besucher und deren Interessen miteinander verknüpfen.
 * **NmsInterest**: Diese Tabelle entspricht dem **nms:interest** Schema. Es enthält die Liste der Interessen für jeden Besucher.
