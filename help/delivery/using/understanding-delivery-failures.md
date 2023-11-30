@@ -7,10 +7,10 @@ badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Monitoring, Deliverability
 role: User
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
-workflow-type: ht
-source-wordcount: '2675'
-ht-degree: 100%
+source-git-commit: 8b0162680d6a3a2d4891d1f71020b44b28046ad7
+workflow-type: tm+mt
+source-wordcount: '2624'
+ht-degree: 98%
 
 ---
 
@@ -287,11 +287,13 @@ Folgende Regeln sind in der Standardkonfiguration vorgesehen.
 
 #### Eingehende E-Mails {#inbound-email}
 
->[!IMPORTANT]
->
->Wenn Sie bei gehosteten oder hybriden Installationen ein Upgrade auf den [Enhanced MTA](sending-with-enhanced-mta.md) durchgeführt haben und Ihre Instanz über die Funktion **Webhooks** verfügt, werden die Regeln für **[!UICONTROL eingehende E-Mails]** nicht mehr für Fehlermeldungen bei synchronem Versand verwendet. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](#bounce-mail-qualification).
+<!--
+STATEMENT ONLY TRUE with Momentum and EFS+:
+For hosted or hybrid installations, if you have upgraded to the [Enhanced MTA](sending-with-enhanced-mta.md), and if your instance has **Webhooks** functionality, the **[!UICONTROL Inbound email]** rules are no longer used for synchronous delivery failure error messages. For more on this, see [this section](#bounce-mail-qualification).
 
-Bei On-Premise-Installationen und gehosteten/hybriden Installationen, die den bestehenden Campaign-MTA verwenden, enthalten diese Regeln die Liste der Zeichenketten, die von Remote-Servern zurückgegeben werden können und mit denen Sie den Fehler qualifizieren können (**Hard**, **Soft** oder **Ignoriert**).
+For on-premise installations and hosted/hybrid installations using the legacy Campaign MTA, these rules contain the list of character strings which can be returned by remote servers and which let you qualify the error (**Hard**, **Soft** or **Ignored**).-->
+
+Die **[!UICONTROL Eingehende E-Mail]** -Regeln enthalten die Liste der Zeichenfolgen, die von Remote-Servern zurückgegeben werden können und mit denen Sie den Fehler qualifizieren können (**Hard**, **Soft** oder **Ignoriert**).
 
 Wenn die Zustellung einer E-Mail fehlschlägt, sendet der Remote-Server eine Bounce-Nachricht an die in den [Plattform-Parametern](../../installation/using/deploying-an-instance.md) angegebene Adresse. Adobe Campaign vergleicht den Inhalt jeder Bounce-Mail mit den Zeichenketten in der Regelliste und weist ihr dann einen der drei [Fehlertypen](#delivery-failure-types-and-reasons) zu.
 
