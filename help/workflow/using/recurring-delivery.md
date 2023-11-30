@@ -5,16 +5,14 @@ description: Erfahren Sie mehr über die Workflow-Aktivität "Wiederkehrender Ve
 badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Workflows
 exl-id: efd2cdfb-2e5f-4672-8be8-a424481b11ed
-source-git-commit: 05210269da2a32310c19911a3bc32240c84dc7ad
-workflow-type: ht
-source-wordcount: '286'
-ht-degree: 100%
+source-git-commit: 198921813ff097db0d4ba0a8203fef65bb591af7
+workflow-type: tm+mt
+source-wordcount: '298'
+ht-degree: 89%
 
 ---
 
 # Wiederkehrender Versand{#recurring-delivery}
-
-
 
 Ein **[!UICONTROL wiederkehrender Versand]** dient der Konfiguration einer Versandvorlageninstanz im Rahmen einer Kampagne.
 
@@ -32,11 +30,15 @@ Gehen Sie dazu wie folgt vor:
 
 Die zur Verfügung stehenden Optionen entsprechen denen einer klassischen Versandvorlage. Weiterführende Informationen finden Sie in diesem [Abschnitt](../../delivery/using/about-templates.md).
 
+>[!CAUTION]
+>
+>Wiederkehrende Sendungen unterstützen keine Testsendungen, einschließlich [Zielgruppendaten](../../workflow/using/data-life-cycle.md#target-data) Personalisierungselemente.
+
 Ein Anwendungsbeispiel für diese Aktivität finden Sie in diesem [Abschnitt](sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
 
 ## Einrichten eines wiederkehrenden Versands {#set-up-recurring-delivery}
 
-Ein **wiederkehrender Versand** erstellt bei jeder Ausführung eine neue Versandinstanz. Wenn der Workflow beispielsweise einmal pro Woche ausgeführt werden soll, führt dies nach einem Jahr zu 52 Sendungen. Dies bedeutet auch, dass das Broadlog und die Trackinglogs je Versandinstanz getrennt sind.
+Ein **wiederkehrender Versand** erstellt bei jeder Ausführung eine neue Versandinstanz. Wenn der Workflow beispielsweise einmal pro Woche ausgeführt werden soll, ergibt das nach einem Jahr 52 Sendungen. Dies bedeutet auch, dass das Broadlog und die Trackinglogs je Versandinstanz getrennt sind.
 
 ![Wiederkehrender Versand](assets/delivery_recurring.jpg)
 
