@@ -5,10 +5,10 @@ description: Erfahren Sie mehr über die Workflow-Aktivität "Wiederkehrender Ve
 badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Workflows
 exl-id: efd2cdfb-2e5f-4672-8be8-a424481b11ed
-source-git-commit: 198921813ff097db0d4ba0a8203fef65bb591af7
+source-git-commit: cfc38df8184a8f59d49ce27eb7875783e8941611
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 89%
+source-wordcount: '301'
+ht-degree: 88%
 
 ---
 
@@ -32,7 +32,7 @@ Die zur Verfügung stehenden Optionen entsprechen denen einer klassischen Versan
 
 >[!CAUTION]
 >
->Wiederkehrende Sendungen unterstützen keine Testsendungen, einschließlich [Zielgruppendaten](../../workflow/using/data-life-cycle.md#target-data) Personalisierungselemente.
+>Wiederkehrende Sendungen unterstützen nicht die Vorschau von Inhalten oder das Senden von Testsendungen, einschließlich [Zielgruppendaten](../../workflow/using/data-life-cycle.md#target-data) Personalisierungselemente.
 
 Ein Anwendungsbeispiel für diese Aktivität finden Sie in diesem [Abschnitt](sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
 

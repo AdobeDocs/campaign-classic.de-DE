@@ -7,10 +7,10 @@ badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Deliverability, Email Rendering, Proofs
 role: User
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
-source-git-commit: 198921813ff097db0d4ba0a8203fef65bb591af7
+source-git-commit: cfc38df8184a8f59d49ce27eb7875783e8941611
 workflow-type: tm+mt
-source-wordcount: '1818'
-ht-degree: 99%
+source-wordcount: '1806'
+ht-degree: 100%
 
 ---
 
@@ -138,10 +138,6 @@ Um eventuelle Konfigurationsfehler zu erkennen, ist es empfehlenswert, Ihre Send
 Gehen Sie wie folgt vor, um einen Testversand durchzuführen:
 
 1. Stellen Sie sicher, dass die Testversand-Zielgruppe wie unter [Spezifische Testversand-Zielgruppe definieren](steps-defining-the-target-population.md#defining-a-specific-proof-target) beschrieben konfiguriert wurde.
-
-   >[!CAUTION]
-   >
-   >[Wiederkehrende Sendungen](../../workflow/using/recurring-delivery.md) das Senden von Testsendungen nicht unterstützen, einschließlich [Zielgruppendaten](../../workflow/using/data-life-cycle.md#target-data) Personalisierungselemente.
 
 1. Wählen Sie **[!UICONTROL Testversand auslösen]** in der Symbolleiste am oberen Rand des Versand-Assistenten aus.
 
