@@ -4,9 +4,9 @@ title: Aktualisierung auf den neuen Zustellbarkeits-Server
 description: Erfahren Sie, wie Sie eine Aktualisierung auf den neuen Zustellbarkeits-Server von Campaign durchführen
 feature: Technote, Deliverability
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 65b6f91e083c955df044ffeb10f5338104d1ce56
-workflow-type: ht
-source-wordcount: '1404'
+source-git-commit: eea3657f1cffa215e1fc1cb1eb8782b83321aae4
+workflow-type: tm+mt
+source-wordcount: '1300'
 ht-degree: 100%
 
 ---
@@ -145,15 +145,7 @@ Gehen Sie dabei folgendermaßen vor:
 
 1. Sie müssen den Server anhalten und dann neu starten, damit die Änderung übernommen wird. Sie können auch einen `config -reload`-Befehl ausführen.
 
-### Schritt 3: Aktivieren Sie den neuen Zustellbarkeits-Server
-
-Jetzt können Sie den neuen Zustellbarkeits-Server aktivieren. Um dies durchzuführen:
-
-1. Öffnen Sie die Client-Konsole und melden Sie sich bei Adobe Campaign als Administrator an.
-1. Gehen Sie zu **Administration > Plattform > Optionen**.
-1. Rufen Sie die Option `NewDeliverabilityServer_FeatureFlag` auf und setzen Sie den Wert auf `1`. Diese Konfiguration sollte für alle Ihre Campaign-Instanzen (MKT, MID, RT, EXEC) durchgeführt werden. Wenden Sie sich als Hybrid-Kunde an Adobe, damit diese Option in Ihren MID-, RT- und EXEC-Instanzen konfiguriert wird.
-
-### Schritt 4: Überprüfen Sie Ihre Konfiguration
+### Schritt 3: Überprüfen Sie Ihre Konfiguration
 
 Um zu überprüfen, ob die Integration erfolgreich war, führen Sie die folgenden Schritte aus:
 
