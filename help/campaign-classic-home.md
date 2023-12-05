@@ -3,10 +3,10 @@ keywords: Campaign Standard;Startseite;beliebte Themen
 product: campaign
 title: Produktdokumentation zu Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 93d6ffc4ac3047ab6a9a41859bed48f6ffac605b
+source-git-commit: 41dcf70724761237a8230bad04322bd3322c0e6f
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 8%
+source-wordcount: '314'
+ht-degree: 7%
 
 ---
 
@@ -20,17 +20,24 @@ Hier erhalten Sie einen Einblick in die neuesten Verbesserungen des Adobe Campai
 
 >[!BEGINTABS]
 
->[!TAB Adobe Experience Cloud-Integration aktualisieren]
 
-Der alte oAuth-Authentifizierungsdienst hat das Ende der Lebensdauer erreicht: Sie müssen zu Adobe I/O migrieren
+>[!TAB Die Dezember-Version ist live!]
 
-[![image](assets/do-not-localize/learn-more-button.svg)](integrations/using/configuring-adobe-io.md)
-
->[!TAB Die September-Version ist live!]
-
-Erfahren Sie mehr über die Sicherheits- und Kompatibilitätsaktualisierungen, Verbesserungen und Patches dieser neuen Version.
+Entdecken Sie Updates, Verbesserungen und Patches von Campaign Classic v7.3.5.
 
 [![image](assets/do-not-localize/learn-more-button.svg)](rn/using/latest-release.md)
+
+>[!TAB Wechsel zum Adobe Identity Management-Dienst]
+
+Um den Sicherheits- und Authentifizierungsprozess zu verbessern, empfiehlt Adobe Campaign dringend, den Authentifizierungsmodus für Endbenutzer vom Anmelde-/Kennwort-nativen Authentifizierungsprozess zum Adobe Identity Management System (IMS) zu migrieren.
+
+[![image](assets/do-not-localize/learn-more-button.svg)](technotes/using/migrate-users-to-ims.md)
+
+>[!TAB Adobe Experience Cloud-Integration aktualisieren]
+
+Der alte oAuth-Authentifizierungsdienst hat das Ende der Lebensdauer erreicht: Sie müssen zu Adobe I/O migrieren.
+
+[![image](assets/do-not-localize/learn-more-button.svg)](integrations/using/configuring-adobe-io.md)
 
 >[!ENDTABS]
 
