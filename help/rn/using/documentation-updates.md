@@ -7,7 +7,7 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Cla
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 38cd50072bdedbac566eb3a56d86328d1e5e1883
+source-git-commit: cc6d85bcf822ba9be99e39cf459a5aa20cc2d4fe
 workflow-type: tm+mt
 source-wordcount: '3671'
 ht-degree: 99%
@@ -22,21 +22,21 @@ Die entsprechenden Aktualisierungen finden Sie in den [Versionshinweisen zu Adob
 
 ## 2023
 
-### Dezember 2023
+### Dezember 2023 {#dec-2023}
 
 JWT (JSON Web Tokens) wird gerade eingestellt und durch OAuth ersetzt. Die Umstellung erfolgt schrittweise innerhalb der kommenden Campaign-Versionen. Die Dokumentation wird entsprechend diesen Aktualisierungen ebenfalls aktualisiert.
 
 Die Konfiguration des externen FDA-Kontos für Amazon Redshift wurde hinzugefügt. [Weitere Informationen](../../installation/using/configure-fda-redshift.md)
 
-### August 2023
+### August 2023 {#aug-2023}
 
 Es wurde eine Begrenzung hinzugefügt, die besagt, dass Sie mit Adobe Campaign keine komprimierten Dateien entpacken können, die größer als 4 GB sind. [Weitere Informationen](../../platform/using/unzip-decrypt.md)
 
-### April 2023
+### April 2023 {#apr-2023}
 
 Es wurde eine Technote zur Aktivierung von Microsoft Edge Chromium in On-Premise-/Hybridumgebungen hinzugefügt. [Weitere Informationen](../../technotes/using/edge-chromium.md)
 
-### März 2023
+### März 2023 {#mar-2023}
 
 Der Abschnitt zu den Versionshinweisen wurde aktualisiert und enthält jetzt Verbesserungen und Patches in Version 7.3.3. [Weitere Informationen](latest-release.md)
 
