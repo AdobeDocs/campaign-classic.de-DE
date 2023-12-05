@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Cla
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 8ecb5aba9a070276927e97586ed463ab485717d6
-workflow-type: ht
-source-wordcount: '3668'
-ht-degree: 100%
+source-git-commit: 38cd50072bdedbac566eb3a56d86328d1e5e1883
+workflow-type: tm+mt
+source-wordcount: '3671'
+ht-degree: 99%
 
 ---
 
@@ -22,9 +22,11 @@ Die entsprechenden Aktualisierungen finden Sie in den [Versionshinweisen zu Adob
 
 ## 2023
 
-### November 2023
+### Dezember 2023
 
-JWT (JSON Web Tokens) wird gerade eingestellt und durch OAuth ersetzt. Die Umstellung erfolgt schrittweise mit den anstehenden Campaign-Versionen. Die Dokumentation wird entsprechend diesen Aktualisierungen aktualisiert.
+JWT (JSON Web Tokens) wird gerade eingestellt und durch OAuth ersetzt. Die Umstellung erfolgt schrittweise innerhalb der kommenden Campaign-Versionen. Die Dokumentation wird entsprechend diesen Aktualisierungen ebenfalls aktualisiert.
+
+Die Konfiguration des externen FDA-Kontos für Amazon Redshift wurde hinzugefügt. [Weitere Informationen](../../installation/using/configure-fda-redshift.md)
 
 ### August 2023
 
@@ -534,7 +536,7 @@ Der Leitfaden [Senden von Push-Benachrichtigungen](../../delivery/using/about-mo
 
 Der neue Parameter für die URL-Berichtkonfiguration wird [hier](../../reporting/using/properties-of-the-report.md#defining-additional-settings) erläutert.
 
-Die **On-Premise- und Hosted-Leistungsmatrix von Campaign Classic** wurde mit den neuen FDA-Connectoren aktualisiert. [Mehr dazu](../../installation/using/capability-matrix.md).
+Die **On-Premise- und Hosted-Leistungsmatrix von Campaign Classic** wurde mit den neuen FDA-Connectoren aktualisiert. [Weitere Informationen](../../installation/using/capability-matrix.md)
 
 Die Seite mit der **Campaign Classic-Leistungsmatrix** wurde aktualisiert. [Mehr dazu](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html)
 
