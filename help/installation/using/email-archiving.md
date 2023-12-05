@@ -8,10 +8,10 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 424faf25-2fd5-40d1-a2fc-c715fc0b8190
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: e808e71ccf949bdaf735cdb2895389f03638bd71
 workflow-type: tm+mt
-source-wordcount: '1374'
-ht-degree: 87%
+source-wordcount: '1224'
+ht-degree: 83%
 
 ---
 
@@ -31,7 +31,7 @@ Dazu werden E-Mail-Dateien, die den gesendeten E-Mails entsprechen, auf einen Re
 * Wenden Sie sich bei **gehosteten und hybriden Architekturen** an Ihren Kundenbetreuer, um sie zu aktivieren. Die gewünschte BCC-E-Mail-Adresse muss dem Adobe-Team, das die Adresse für Sie konfigurieren wird, mitgeteilt werden.
 * Für **Vor-Ort-Installationen** folgen Sie den unten stehenden Richtlinien, um sie zu aktivieren - siehe [Aktivieren von E-Mail-BCC (vor Ort)](#activating-email-archiving--on-premise-) und [BCC-E-Mail-Adresse konfigurieren (vor Ort)](#configuring-the-bcc-email-address--on-premise-) Abschnitte.
 * Sie können nur eine einzige BCC-E-Mail-Adresse verwenden.
-* Nachdem E-Mail-BCC konfiguriert wurde, stellen Sie sicher, dass die Funktion in der Versandvorlage oder im Versand über die Option **[!UICONTROL E-Mail-BCC]** aktiviert ist. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../delivery/using/sending-messages.md#archiving-emails).
+* Nachdem E-Mail-BCC konfiguriert wurde, stellen Sie sicher, dass die Funktion in der Versandvorlage oder im Versand über die **[!UICONTROL Email BCC]** -Option. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../delivery/using/sending-messages.md#archiving-emails).
 * Nur erfolgreich gesendete E-Mails werden berücksichtigt, Absprünge nicht.
 * Das E-Mail-Archivierungssystem wurde mit Adobe Campaign 17.2 (Build 8795) geändert. Wenn Sie bereits die E-Mail-Archivierung verwendet haben, müssen Sie manuell auf das neue E-Mail-BCC-System aktualisieren. Weitere Informationen hierzu finden Sie im Abschnitt [Wechseln zum neuen E-Mail-BCC](#updated-email-archiving-system--bcc-) Abschnitt.
 
@@ -80,7 +80,7 @@ Nachdem der lokale Ordnerpfad definiert wurde, fügen Sie die folgenden Elemente
 
 ```
 <archiving autoStart="false" compressionFormat="0" compressBatchSize="10000"
-           archivingType="0" expirationDelay="2" purgeArchivesDelay="7"
+           archivingType="1" expirationDelay="2" purgeArchivesDelay="7"
            pollDelay="600" acquireLimit="5000" smtpNbConnection="2"/>
 ```
 
@@ -91,11 +91,12 @@ Nachdem der lokale Ordnerpfad definiert wurde, fügen Sie die folgenden Elemente
   **1**: Komprimierung (.zip-Format)
 
 * **compressBatchSize**: Anzahl der eml-Dateien, die einem Archiv hinzugefügt wurden (.zip-Datei).
-* **archivingType**: zu verwendende Archivierungsstrategie. Die möglichen Werte sind:
 
-  **0**: Rohkopien gesendeter E-Mails werden im .eml-Format im **Ordner &quot;dataLogPath** &quot;gespeichert (Standardwert). Eine Archivierungskopie der **`<deliveryid>-<broadlogid>-sent.eml`** Datei wird im Ordner **dataLogPath/archives** gespeichert. Der Pfad der gesendeten E-Mail-Datei wird **`<datalogpath>archivesYYYY-MM-DDHHh <deliveryid>-<broadlogid>-sent.eml`** geändert.
 
-  **1**: Rohkopien gesendeter E-Mails werden im .eml-Format im **Ordner &quot;dataLogPath** &quot;gespeichert und über SMTP an die BCC-E-Mail-Adresse gesendet. Sobald die E-Mail-Kopien an die BCC-Adresse gesendet werden, wird der Name der Archivdatei **`<deliveryid>-<broadlogid>-sent-archived.eml`** und die Datei wird in den Ordner **dataLogPath/archives** verschoben. Der Pfad der gesendeten und archivierten E-Mail-Datei wird dann **`<datalogpath>archivesYYYY-MM-DDHHh<deliveryid>- <broadlogid>-sent-archived.eml`** angezeigt.
+* **archivingType**: zu verwendende Archivierungsstrategie. Der einzig mögliche Wert lautet **1**. Rohkopien gesendeter E-Mails werden im .eml-Format im **dataLogPath** und sie werden über SMTP an die BCC-E-Mail-Adresse gesendet. Sobald die E-Mail-Kopien an die BCC-Adresse gesendet werden, wird der Name der Archivdatei **`<deliveryid>-<broadlogid>-sent-archived.eml`** und die Datei wird in den Ordner **dataLogPath/archives** verschoben. Der Pfad der gesendeten und archivierten E-Mail-Datei wird dann **`<datalogpath>archivesYYYY-MM-DDHHh<deliveryid>- <broadlogid>-sent-archived.eml`** angezeigt.
+
+  <!--
+  **0**: raw copies of sent emails are saved in .eml format to the **dataLogPath** folder (default value). An archiving copy of the **`<deliveryid>-<broadlogid>-sent.eml`** file is saved to the **dataLogPath/archives** folder. The sent email file path becomes **`<datalogpath>archivesYYYY-MM-DDHHh <deliveryid>-<broadlogid>-sent.eml`**.-->
 
 * **expirationDelay**: Anzahl der Tage .eml-Dateien werden zur Archivierung aufbewahrt. Nach dieser Verzögerung werden sie zur Komprimierung automatisch in den Ordner **dataLogPath/archives** verschoben. Standardmäßig laufen .eml-Dateien nach zwei Tagen ab.
 * **purgeArchivesDelay**: Die Anzahl der Tage, die Archive im **Ordner &quot;dataLogPath/`<archives>`** &quot;gespeichert werden. Nach diesem Zeitraum werden sie endgültig gelöscht. Die Bereinigung beginnt mit dem Start der MTA. Standardmäßig wird sie alle sieben Tage durchgeführt.
@@ -131,23 +132,23 @@ Verwenden Sie in der **config-`<instance name>.xml`** -Datei die folgenden Param
 >
 >Darüber hinaus weist der Relais allen E-Mails, einschließlich der nicht gesendeten E-Mails, den Status **[!UICONTROL Gesendet]** zu. Daher werden alle Nachrichten archiviert.
 
-## Wechseln zum neuen E-Mail-BCC {#updated-email-archiving-system--bcc-}
+<!--
+## Moving to the new Email BCC {#updated-email-archiving-system--bcc-}
 
-[!BADGE Hybrid und On-Premise]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"}
-
-
+[!BADGE On-premise & Hybrid]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"}
 
 >[!IMPORTANT]
 >
->Das E-Mail-Archivierungssystem (BCC) wurde mit Adobe Campaign 17.2 (Build 8795) geändert. Wenn Sie von einem älteren Build aktualisieren und bereits E-Mail-Archivierungsfunktionen verwenden, müssen Sie manuell auf das neue E-Mail-Archivierungssystem (BCC) aktualisieren.
+>The email archiving system (BCC) changed with Adobe Campaign 17.2 (build 8795). If you are upgrading from an older build and were already using email archiving capabilities, you must upgrade manually to the new email archiving system (BCC).
 
-Nehmen Sie dazu die folgenden Änderungen an der **`config-<instance>.xml`** Datei vor:
+To do this, make the following changes to the **`config-<instance>.xml`** file:
 
-1. Entfernen Sie den **Parameter zipPath** vom **`<archiving>`** Knoten.
-1. Legen Sie den Parameter **compressionFormat** bei Bedarf auf **1** fest.
-1. Legen Sie den Parameter **archivingType** auf **1** fest.
+1. Remove the **zipPath** parameter from the **`<archiving>`** node.
+1. Set the **compressionFormat** parameter to **1** if needed.
+1. Set the **archivingType** parameter to **1**.
 
-Nachdem E-Mail-BCC konfiguriert wurde, wählen Sie die **[!UICONTROL Email BCC]** in der Versandvorlage oder dem Versand. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../delivery/using/sending-messages.md#archiving-emails).
+Once email BCC is configured, make sure you select the **[!UICONTROL Email BCC]** option in the delivery template or the delivery. For more on this, see [this section](../../delivery/using/sending-messages.md#archiving-emails).
+-->
 
 ## Best Practices für Email BCC {#best-practices}
 
