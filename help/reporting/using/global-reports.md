@@ -6,9 +6,9 @@ badge: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Reporting, Monitoring
 exl-id: 6839fd7e-ecf4-4504-90a8-0207bc3991e4
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2511'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -167,9 +167,9 @@ In der Tabelle werden folgende Indikatoren dargestellt:
 
 ### Teilen über soziale Netzwerke {#sharing-to-social-networks}
 
-Mit Viral-Marketing können Versandempfänger Informationen über ihr Kontaktnetzwerk austauschen: Sie können einen Link zu ihrem Profil hinzufügen (Facebook, X - ehemals Twitter usw.) oder eine Nachricht an einen Freund senden. Jede Freigabe und jeder Zugriff auf freigegebene Informationen werden innerhalb des Versands nachverfolgt. Weitere Informationen zum Viral-Marketing finden Sie in [diesem Abschnitt](../../delivery/using/viral-and-social-marketing.md).
+Mit viralem Marketing können Empfängerinnen und Empfänger eines Versands Informationen über ihr Kontaktnetzwerk austauschen: Sie können einen Link zu ihrem Profil hinzufügen, etwa Facebook, X (früher bekannt als Twitter) usw. oder eine Nachricht an eine Freundin oder einen Freund senden. Jede Freigabe und jeder Zugriff auf freigegebene Informationen werden innerhalb des Versands nachverfolgt. Weitere Informationen zum viralen Marketing finden Sie in [diesem Abschnitt](../../delivery/using/viral-and-social-marketing.md).
 
-Dieser Bericht zeigt die Verteilung der geteilten und geöffneten Nachrichten nach sozialen Netzwerken (Facebook, X usw.) und/oder pro E-Mail.
+Dieser Bericht zeigt die Aufschlüsselung der geteilten und geöffneten Nachrichten nach sozialem Netzwerk (Facebook, X, etc.) und/oder über E-Mail.
 
 ![](assets/s_ncs_user_social_report.png)
 
@@ -202,7 +202,7 @@ Dieser Bereich veranschaulicht in zwei Diagrammen die Verteilung von Teilungen u
 
 ## Statistiken zu Teilungsaktivitäten {#statistics-on-sharing-activities}
 
-Dieser Bericht zeigt die Entwicklung von Teilen in sozialen Netzwerken (Facebook, X - ehemals Twitter, E-Mail usw.) rechtzeitig angegeben.
+Dieser Bericht zeigt die Entwicklung von Teilungen in sozialen Netzwerken wie Facebook, X (früher bekannt als Twitter) usw.  im Zeitverlauf.
 
 Weitere Informationen zum Viral-Marketing finden Sie in [diesem Abschnitt](../../delivery/using/viral-and-social-marketing.md).
 
