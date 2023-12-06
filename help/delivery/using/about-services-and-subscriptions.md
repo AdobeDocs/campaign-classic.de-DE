@@ -8,9 +8,9 @@ feature: Subscriptions
 role: User
 exl-id: eb72f19a-7669-4596-bf9b-8c0ce22b67bf
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '170'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -22,4 +22,4 @@ Sie können Ihren Empfängern gestatten, die Nachrichten mit anderen Kontakten i
 
 >[!NOTE]
 >
->Diese Funktion ist standardmäßig in Adobe Campaign verfügbar. Die optionale Anwendung Social Marketing ermöglicht Ihnen, über Facebook und X (ehemals Twitter) mit Ihren Kunden und Interessenten in Kontakt zu treten.
+>Diese Funktion ist standardmäßig in Adobe Campaign verfügbar. Die optionale Anwendung „Social Marketing“ ermöglicht Ihnen, über Facebook und X (früher bekannt als Twitter) mit Ihrer Kundschaft sowie interessierten Personen in Kontakt zu treten.
