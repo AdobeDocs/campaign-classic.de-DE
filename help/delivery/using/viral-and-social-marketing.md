@@ -7,23 +7,23 @@ badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 exl-id: 10fd561f-1b07-490e-9f66-d67e44a0def5
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '624'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 # Virales und Social-Media-Marketing{#viral-and-social-marketing}
 
-Adobe Campaign bietet Features, die virale Marketing-Strategien ermöglichen.
+Mit Adobe Campaign können Sie Tools zur Förderung des viralen Marketings einrichten.
 
-Auf diese Weise können Versandempfänger oder Website-Besucher Informationen mit ihrem Netzwerk teilen: vom Hinzufügen eines Links zu ihrem Facebook- oder X-Profil (ehemals Twitter) bis zum Senden einer Nachricht an einen Freund.
+Damit können Empfängerinnen und Empfänger eines Versands oder Website-Besucherinnen und -Besucher Informationen mit ihrem Netzwerk teilen, indem sie beispielsweise einen Link auf ihrem Facebook- oder X-Profil (früher bekannt als Twitter) hinzufügen oder eine Nachricht an Freundinnen und Freunde senden.
 
 ![](assets/s_ncs_user_viral_icons.png)
 
 >[!CAUTION]
 >
->Damit diese Links korrekt funktionieren, muss die der Nachricht entsprechende Mirrorseite verfügbar sein. Der Versand muss demzufolge einen Link auf die Mirrorseite enthalten.
+>Damit diese Links korrekt funktionieren, muss die der entsprechende Mirrorseite verfügbar sein. Der Versand muss demzufolge einen Link auf die Mirrorseite enthalten.
 
 ## Soziale Netzwerke: Teilen von Links {#social-networks--sharing-a-link}
 
