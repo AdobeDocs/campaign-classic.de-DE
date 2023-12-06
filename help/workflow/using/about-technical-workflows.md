@@ -6,9 +6,9 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Cla
 feature: Workflows
 exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1726'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Weiterführende Informationen zur Verfolgung technischer Workflows finden Sie in
 |------|--------|-----------|
 | **Alias-Datenbereinigung** (aliasCleansing) | Versand | Dieser Workflow vereinheitlicht Aufzählungswerte. Er wird standardmäßig täglich um 3 Uhr morgens ausgelöst. |
 | **Abrechnung** (billing) | Versand | Dieser Workflow übermittelt per E-Mail den Aktivitätsbericht des Systems an den fakturierungsverantwortlichen Benutzer (&#39;billing&#39;). Er wird am 25. jedes Monats in der Marketing-Instanz ausgelöst. |
-| **Berechnung der Twitter-Statistiken** (statsTwitter) | Social Media (Social Marketing)  – Nur Campaign v7 | Berechnet Statistiken in Bezug auf Retweets und Besuche auf X (ehemals Twitter). |
+| **Berechnung der Twitter-Statistiken** (statsTwitter) | Social Media (Social Marketing)  – Nur Campaign v7 | Dieser Workflow berechnet Statistiken im Zusammenhang mit Retweets und Besuchen auf X (früher bekannt als Twitter). |
 | **Vorgänge bei Kampagnen** (operationMgt) | Marketing-Kampagnen (Campaign) | Dieser Workflow verwaltet Vorgänge in Marketing-Kampagnen (Zielgruppenbestimmung, Dateiextraktion etc.). Er erstellt darüber hinaus Workflows für wiederkehrende und periodische Kampagnen. |
 | **Erfassen von Daten für den HeatMap-Service** (collectDataHeatMapService) | Standardmäßig installiert | Dieser Workflow ruft die für den HeatMap-Service erforderlichen Daten ab. |
 | **Erfassen von Datenschutzanfragen** (collectPrivacyRequests) | Datenschutzbestimmung | Mit diesem Workflow werden die in Adobe Campaign gespeicherten Empfängerdaten abgerufen und auf dem Bildschirm zur Datenschutzanfrage für den Download bereitgestellt. |
@@ -75,7 +75,7 @@ Weiterführende Informationen zur Verfolgung technischer Workflows finden Sie in
 | **Lager: Bestellungen und Warnhinweise** (stockMgt) | Marketing-Kampagnen (Campaign) | Dieser Workflow startet die Berechnung der Lagerbestände in den Bestellzeilen und verwaltet Warnschwellen. |
 | **Synchronisation von Facebook-Fans** (syncFacebookFans) | Social Media (Social Marketing)  – Nur Campaign v7 | Dieser Workflow importiert täglich um 7 Uhr morgens Facebook-Fans in Adobe Campaign. |
 | **Synchronisation von Facebook-Seiten** (syncFacebook) | Social Media (Social Marketing)  – Nur Campaign v7 | Dieser Workflow synchronisiert täglich um 7 Uhr morgens Facebook-Seiten mit Adobe Campaign. |
-| **Synchronisation von Twitter-Seiten** (syncTwitter) | Social Media (Social Marketing)  – Nur Campaign v7 | Importiert täglich um 7 Uhr X Follower in Adobe Campaign. |
+| **Synchronisation von Twitter-Seiten** (syncTwitter) | Social Media (Social Marketing)  – Nur Campaign v7 | Dieser Workflow importiert täglich um 7 Uhr morgens X-Follower in Adobe Campaign. |
 | **Benachrichtigung über Aufgaben** (taskMgt) | Marketing-Ressourcen (MRM)  – Nur Campaign v7 | Mit diesem Workflow können Sie Benachrichtigungen senden, die sich auf Aufgaben in Marketing-Kampagnen beziehen. |
 | **Tracking** (tracking)) | Versand | Dieser Workflow ruft Tracking-Informationen ab und konsolidiert sie. Er aktualisiert außerdem die Berechnung der Tracking- und Versandstatistiken, insbesondere der Statistiken, die von den Archivierungs-Workflows des Message Centers verwendet werden. Er wird standardmäßig stündlich ausgelöst. |
 | **Update des Ereignisstatus** (updateEventsStatus) | Ausführung einer Transaktionsnachricht (Message Center – Ausführung) | Dieser Workflow weist Ereignissen einen Status zu. Folgende Status sind möglich:<ul><li>Ausstehend: Das Ereignis befindet sich in der Warteschlange. Ihm wurde noch keine Nachrichtenvorlage zugeordnet.</li><li>Versand ausstehend: Das Ereignis befindet sich in der Warteschlange. Ihm wurde eine Nachrichtenvorlage zugeordnet und die Versandverarbeitung ist im Gange.</li><li>Gesendet: Dieser Status wird aus den Versandlogs übernommen. Er bedeutet, dass die Nachricht gesendet wurde.</li><li>Vom Versand ignoriert: Dieser Status wird aus den Versand-Logs übernommen. Er bedeutet, dass der Versand ignoriert wurde.</li><li>Versandfehler: Dieser Status wird aus den Versand-Logs übernommen. Er bedeutet, dass der Versand fehlgeschlagen ist.</li><li>Ereignis wurde nicht berücksichtigt: Dem Ereignis konnte keine Nachrichtenvorlage zugeordnet werden. Es erfolgt kein weiterer Verarbeitungsversuch.</li></ul> |
