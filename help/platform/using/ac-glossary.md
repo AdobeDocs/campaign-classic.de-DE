@@ -7,9 +7,9 @@ role: User, Data Architect
 level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5978'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -119,7 +119,7 @@ Learn more about [Interaction](../../interaction/using/interaction-and-offer-man
 
 +++**Kanal**
 
-Ein Kanal ist ein Medium, über das eine Nachricht gesendet wird. Integrierte Kanäle in Adobe Campaign sind E-Mail, SMS, Briefpost, Push-Benachrichtigungen, LINE und X (ehemals Twitter). Für nicht standardmäßige Kanalanforderungen können benutzerdefinierte Kanäle implementiert werden.
+Ein Kanal ist ein Medium, über das eine Nachricht gesendet wird. Die in Adobe Campaign integrierten Kanäle sind E-Mail, SMS, Briefpost, Push-Benachrichtigungen, LINE und X (früher bekannt als Twitter). Für nicht standardmäßige Kanalanforderungen können benutzerdefinierte Kanäle implementiert werden.
 
 Weitere Informationen über [Kanäle](../../delivery/using/communication-channels.md).
 +++
