@@ -9,9 +9,9 @@ role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
 source-git-commit: d690a5c4b9779ccd90b50bfbc74df18f0ac60d14
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '861'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -23,13 +23,13 @@ ht-degree: 92%
 >
 >Bei gehosteten und Campaign Managed Services-Implementierungen wenden Sie sich bitte die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
-Die Integration zwischen Adobe Campaign Classic und Adobe Analytics-Authentifizierung unterstützt Adobe Identity Management Service (IMS):
+Die Integration zwischen Adobe Campaign Classic und der Adobe Analytics-Authentifizierung unterstützt Adobe Identity Management Service (IMS):
 
 * Wenn Sie ein migriertes externes Konto verwalten, müssen Sie Adobe IMS implementieren und über eine Adobe ID eine Verbindung zu Adobe Campaign herstellen.
 
-  Beachten Sie, dass der über Adobe ID IMS angemeldete Benutzer Eigentümer der **Data Connector** -Konto in Adobe Analytics verwenden und über Berechtigungen für **Produktprofil** erwähnt [below](#analytics-product-profile).
+  Bitte beachten Sie, dass eine über Adobe ID IMS angemeldete Person die Eigentümerin bzw. der Eigentümer des **Daten-Connector**-Kontos in Adobe Analytics sein muss und über die Berechtigungen für das [unten](#analytics-product-profile) aufgeführte **Produktprofil** verfügen muss.
 
-Das Problem bestand darin, dass der Eigentümer des Data Connectors ein anderer Benutzer war als der Benutzer, der bei Campaign angemeldet war und die Integration mit Analytics ausprobiert hatte.
+Das Problem bestand darin, dass die Eigentümerin bzw. der Eigentümer des Daten-Connectors eine andere Person war als die, die bei Campaign angemeldet war und die Integration mit Analytics ausprobiert hatte.
 
 * Wenn Sie einen neuen Connector implementieren, ist die Implementierung von Adobe IMS optional. Ohne einen Adobe ID-Benutzer verwendet Adobe Campaign einen technischen Anwender zur Synchronisierung mit Adobe Analytics.
 
