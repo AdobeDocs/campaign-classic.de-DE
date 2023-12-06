@@ -8,9 +8,9 @@ role: User, Data Architect
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '866'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -98,7 +98,7 @@ Ein Profil, das für mehrere Sendungen ausgewählt wurde, wird nur einmal gezäh
 
 >[!NOTE]
 >
->Facebook- und X-Kanäle (ehemals Twitter) werden nicht berücksichtigt.
+>Die Kanäle Facebook und X (früher bekannt als Twitter) werden nicht berücksichtigt.
 
 Die Anzahl der aktiven Profile ist nur für **Marketing-Instanzen** verfügbar. Sie ist nicht für Ausführungsinstanzen verfügbar, d. h. MID (Mid-Sourcing)- und RT (Message Center-/Echtzeit-Messaging)-Instanzen.
 
