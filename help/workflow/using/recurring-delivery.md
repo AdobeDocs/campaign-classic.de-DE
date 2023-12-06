@@ -7,8 +7,8 @@ feature: Workflows
 exl-id: efd2cdfb-2e5f-4672-8be8-a424481b11ed
 source-git-commit: cfc38df8184a8f59d49ce27eb7875783e8941611
 workflow-type: tm+mt
-source-wordcount: '301'
-ht-degree: 88%
+source-wordcount: '297'
+ht-degree: 87%
 
 ---
 
@@ -28,7 +28,7 @@ Gehen Sie dazu wie folgt vor:
 
 1. Konfigurieren Sie die Versandvorlage.
 
-Die zur Verfügung stehenden Optionen entsprechen denen einer klassischen Versandvorlage. Weiterführende Informationen finden Sie in diesem [Abschnitt](../../delivery/using/about-templates.md).
+Der Konfigurationsprozess für diese Aktivität ähnelt dem der Erstellung einer Versandvorlage in Bezug auf die verfügbaren Optionen. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../delivery/using/about-templates.md).
 
 >[!CAUTION]
 >
@@ -38,7 +38,7 @@ Ein Anwendungsbeispiel für diese Aktivität finden Sie in diesem [Abschnitt](se
 
 ## Einrichten eines wiederkehrenden Versands {#set-up-recurring-delivery}
 
-Ein **wiederkehrender Versand** erstellt bei jeder Ausführung eine neue Versandinstanz. Wenn der Workflow beispielsweise einmal pro Woche ausgeführt werden soll, ergibt das nach einem Jahr 52 Sendungen. Dies bedeutet auch, dass das Broadlog und die Trackinglogs je Versandinstanz getrennt sind.
+Ein **wiederkehrender Versand** erstellt bei jeder Ausführung eine neue Versandinstanz. Wenn der Workflow beispielsweise einmal pro Woche ausgeführt werden soll, führt dies nach einem Jahr zu 52 Sendungen. Dies bedeutet auch, dass das Broadlog und die Trackinglogs je Versandinstanz getrennt sind.
 
 ![Wiederkehrender Versand](assets/delivery_recurring.jpg)
 
