@@ -8,9 +8,9 @@ feature: Personalization
 role: User
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '985'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -115,7 +115,7 @@ Standardmäßig ist eine Liste mit Gestaltungsbausteinen verfügbar, um den Inha
   >Dieser Baustein kann in Sendungen verwendet werden, die nur an Besucher gerichtet sind.
 
 * **[!UICONTROL Anmeldebestätigung]**: Hiermit wird ein Link eingefügt, mit dem die Anmeldung bestätigt werden kann.
-* **[!UICONTROL Teilen-Links sozialer Netzwerke]** : Hiermit werden Schaltflächen eingefügt, mit denen der Empfänger einen Link zum Inhalt der Mirrorseite für den E-Mail-Client, Facebook, X (ehemals Twitter) und LinkedIn freigeben kann (siehe [Weiterleiten von Nachrichten](viral-and-social-marketing.md#viral-marketing--forward-to-a-friend)).
+* **[!UICONTROL Links zum Teilen in sozialen Netzwerken]**: fügt Schaltflächen ein, die es den Empfängerinnen und Empfängern ermöglichen, einen Link zum Inhalt der Mirrorseite mit dem E-Mail-Client, Facebook, X (früher bekannt als Twitter) und LinkedIn zu teilen (weitere Informationen finden Sie unter [Virales Marketing: Weiterleiten an eine Freundin oder einen Freund](viral-and-social-marketing.md#viral-marketing--forward-to-a-friend)).
 * **[!UICONTROL Stil der Inhalts-E-Mails]** und **[!UICONTROL Stil der Benachrichtigungen]**: Hiermit wird Code erstellt, mit dem eine E-Mail mit nativen HTML-Stilen formatiert werden kann. Diese Bausteine müssen in den Quell-Code des Versands im Abschnitt **[!UICONTROL ...]** in **`<style>...</style>`**-Tags eingefügt werden.
 * **[!UICONTROL Annahme-URL eines Angebots im Einzelmodus]**: Hiermit wird eine URL eingefügt, mit der ein Interaction-Angebot auf **[!UICONTROL Angenommen]** gesetzt werden kann (siehe [diesen Abschnitt](../../interaction/using/offer-analysis-report.md)).
 
