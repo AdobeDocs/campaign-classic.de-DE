@@ -8,9 +8,9 @@ feature: Monitoring, Deliverability
 role: User
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
 source-git-commit: 8b0162680d6a3a2d4891d1f71020b44b28046ad7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2624'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -293,7 +293,7 @@ For hosted or hybrid installations, if you have upgraded to the [Enhanced MTA](s
 
 For on-premise installations and hosted/hybrid installations using the legacy Campaign MTA, these rules contain the list of character strings which can be returned by remote servers and which let you qualify the error (**Hard**, **Soft** or **Ignored**).-->
 
-Die **[!UICONTROL Eingehende E-Mail]** -Regeln enthalten die Liste der Zeichenfolgen, die von Remote-Servern zurückgegeben werden können und mit denen Sie den Fehler qualifizieren können (**Hard**, **Soft** oder **Ignoriert**).
+Die **[!UICONTROL Regeln für eingehende E-Mails]** enthalten eine Liste von Zeichenfolgen, die von Remote-Servern zurückgegeben werden können und die es Ihnen ermöglichen, den Fehler zu qualifizieren (**Hardbounce**, **Softbounce** oder **Ignoriert**).
 
 Wenn die Zustellung einer E-Mail fehlschlägt, sendet der Remote-Server eine Bounce-Nachricht an die in den [Plattform-Parametern](../../installation/using/deploying-an-instance.md) angegebene Adresse. Adobe Campaign vergleicht den Inhalt jeder Bounce-Mail mit den Zeichenketten in der Regelliste und weist ihr dann einen der drei [Fehlertypen](#delivery-failure-types-and-reasons) zu.
 
