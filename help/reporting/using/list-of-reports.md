@@ -6,9 +6,9 @@ badge: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Reporting, Monitoring
 exl-id: c01f4850-ab17-44ac-a5e0-ff082ec206b3
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1018'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 98%
 
 ## Versandberichte {#reports-on-deliveries}
 
-Die integrierten Berichte von Adobe Campaign werden in der folgenden Tabelle aufgelistet.
+Die nativen Berichte von Adobe Campaign werden in der folgenden Tabelle aufgelistet.
 
 Weitere Informationen zum Inhalt dieser Berichte erhalten Sie in diesem [Abschnitt](../../reporting/using/delivery-reports.md).
 
@@ -360,7 +360,7 @@ Nachfolgende Berichte stehen ebenfalls nativ zur Verfügung. Weitere Information
   </tr> 
   <tr> 
    <td> Verlauf der Akquise aus sozialen Netzwerken (socialVisitorStatistics)<br /> </td> 
-   <td> Verlauf der Akquise von X (ehemals Twitter) und Facebook Prospect; abhängig vom Social-Marketing-Add-on<br /> </td> 
+   <td> Verlauf der Akquise aus X (früher bekannt als Twitter) und Facebook; abhängig vom Social-Marketing-Add-on<br /> </td> 
    <td> nms:visitor<br /> </td> 
   </tr> 
   <tr> 
