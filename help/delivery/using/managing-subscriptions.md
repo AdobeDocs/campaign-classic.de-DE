@@ -8,9 +8,9 @@ feature: Subscriptions
 role: User
 exl-id: 16dddd4a-2e1a-4c78-8168-f656657bb9b8
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1177'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -47,15 +47,15 @@ Der Tab **[!UICONTROL Profile und Zielgruppen]** bietet unter dem Link **[!UICON
 
 ![](assets/s_ncs_user_services_new.png)
 
-Klicken Sie auf den Namen eines Dienstes, um ihn zu öffnen und zu bearbeiten, oder auf die Schaltfläche **[!UICONTROL Erstellen]**, um einen neuen Dienst anzulegen.
+Klicken Sie auf den Namen eines Dienstes, um ihn zu öffnen und zu bearbeiten, oder auf die Schaltfläche **[!UICONTROL Erstellen]**, um einen neuen Dienst zu erstellen.
 
 ![](assets/s_ncs_user_services_add.png)
 
-* Geben Sie den Namen des Dienstes im **[!UICONTROL Titel]** und wählen Sie den Versandkanal aus: E-Mail, Mobile, Facebook, X (ehemals Twitter) oder Mobile Apps.
+* Geben Sie im Feld **[!UICONTROL Titel]** einen Namen für den neuen Dienst ein und wählen Sie den Versandkanal aus: E-Mail, Mobile, Facebook, X (früher bekannt als Twitter) oder Mobile App.
 
   >[!NOTE]
   >
-  >Facebook- und X-Abonnements werden im Abschnitt [diesem Abschnitt](../../social/using/about-social-marketing.md). Mobile App-Abonnements werden im Abschnitt [Über den Mobile-App-Kanal](about-mobile-app-channel.md) beschrieben.
+  >Facebook- und X-Abonnements werden in [diesem Abschnitt](../../social/using/about-social-marketing.md) ausführlich beschrieben. Mobile App-Abonnements werden im Abschnitt [Über den Mobile-App-Kanal](about-mobile-app-channel.md) beschrieben.
 
 * Bei Diensten vom Typ **E-Mail** haben Sie die Wahl zwischen zwei Modi: **[!UICONTROL Newsletter]** oder **[!UICONTROL Viral]**.
 * Sie haben die Möglichkeit, bei An- und Abmeldungen **Bestätigungsnachrichten** zu versenden. Wählen Sie in diesem Fall neben den Feldern **[!UICONTROL Anmeldung]** und **[!UICONTROL Abmeldung]** die jeweils zu verwendenden Versandvorlagen aus. Die Vorlagen müssen mit einem Zielgruppen-Mapping des Typs **[!UICONTROL Abonnements]** und ohne Angabe einer Zielgruppe konfiguriert werden. Siehe Abschnitt [Über den E-Mail-Kanal](about-email-channel.md).
