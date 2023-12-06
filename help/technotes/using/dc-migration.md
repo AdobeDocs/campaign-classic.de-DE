@@ -6,11 +6,13 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Cla
 feature: Technote, Upgrade
 role: User
 level: Beginner
+solution: Campaign
+version: Classic v7
 exl-id: 2b282221-d048-4f6e-b52e-f8e584af2c0e
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 87a27eb96fe9fbcb68a5e961b95cb4588eee85e3
 workflow-type: tm+mt
 source-wordcount: '1540'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -26,7 +28,7 @@ Das Programm verfolgt drei Hauptziele:
 
 * Behebung identifizierter Sicherheitslücken durch das Verlagern der Infrastruktur in eine sichere und moderne Umgebung (AWS)
 * Entfernung umständlicher Skalierungsprozesse, Ermöglichen des Zugriffs auf unsere [erweiterten MTAs](../../delivery/using//sending-with-enhanced-mta.md) und Verbesserung der Wartungsqualität
-* Vorbereitung Ihrer Instanz auf die Zukunft von Adobe Campaign Classic, einschließlich stärker automatisierter regelmäßiger Upgrades, die weniger Ressourcen und Zeit in Anspruch nehmen.
+* Bereiten Sie Ihre Instanz auf die Zukunft von Adobe Campaign Classic vor, einschließlich automatischerer, regulärer Aktualisierungen, die nicht so viele Ressourcen und so viel Zeit erfordern.
 
 ### Glossar
 
@@ -79,7 +81,7 @@ Das Programm verfolgt drei Hauptziele:
 
 Zu Beginn dieses Vorgangs erhalten Kunden, für die eine Migration vorgesehen ist, eine E-Mail-Mitteilung von Adobe mit einem Zeitplan und einem Zugriff auf die Dokumentation. This will be your notification that your account is scheduled to be migrated.
 
-Sie können die Migration durch das [Erstellen eines neuen Support-Tickets bei der Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign#support) einleiten. Geben Sie in der Betreffzeile &quot;Migrate to AWS&quot; (Migration zu AWS) ein.
+Sie können die Migration durch das [Erstellen eines neuen Support-Tickets bei der Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign#support) einleiten. Verwenden Sie die Betreffzeile &quot;Zu AWS migrieren&quot;.
 
 ### Ist diese Migration obligatorisch?
 
@@ -121,7 +123,7 @@ Adobe führt die meisten Aktionen durch. Wir benötigen Sie nur zur Validierung 
 
 **Datenbank**
 
-Die Datenbank wird aus dem alten Rechenzentrum entfernt und in der Public Cloud (AWS) wiederhergestellt. Beim Neustart im neuen Rechenzentrum wird die Anwendung genau in dem Zustand fortgesetzt, in dem sie sich vor dem Herunterfahren befand. Die Benutzer werden keinen Unterschied bemerken, außer dass sich einige geplante Aufgaben verzögern.
+Die Datenbank wird aus dem alten Rechenzentrum entfernt und in der Public Cloud (AWS) wiederhergestellt. Beim Neustart im neuen Rechenzentrum wird die Anwendung genau in dem Zustand fortgesetzt, in dem sie sich vor dem Herunterfahren befand. Benutzer sehen keinen Unterschied, außer dass einige geplante Aufgaben verzögert wurden.
 
 **IPs für den E-Mail-Versand**
 
@@ -140,7 +142,7 @@ Im Allgemeinen bedeutet dies, dass der Client mögliche IP-Einschränkungen für
 
 **Campaign-Server**
 
-Bestehende Campaign-Server (eigentlich Container) werden per &quot;Lift and Shift&quot; in die Public Cloud (AWS) verschoben. Das heißt, es ist keine neue Server-Installation erforderlich, sondern der gesamte Server wird in das neue Rechenzentrum übertragen. Der Vorgang erfordert nicht mehr Aufwand als eine technisch einfache Neukonfiguration.
+Bestehende Campaign-Server (eigentlich Container) werden nach dem &quot;Lift and Shift&quot;-Ansatz in die Public Cloud (AWS) verschoben. Das heißt, es ist keine neue Server-Installation erforderlich, sondern der gesamte Server wird in das neue Rechenzentrum übertragen. Der Vorgang erfordert nicht mehr Aufwand als eine technisch einfache Neukonfiguration.
 
 **Server-Namen**
 
@@ -157,7 +159,7 @@ Das bedeutet, dass die Änderung für Benutzer und im Fall von Implementierungen
 
 **IPs für den E-Mail-Versand**
 
-Zunächst wird der Zustellbarkeitsstatus der Plattform durch das Zustellbarkeits-Team von Adobe geprüft und ein Plan für den Wechsel zu den neuen IPs empfohlen. 
+Zunächst bewertet die Adobe-Zustellbarkeit den Zustellbarkeitsstatus der Plattform und empfiehlt einen Plan für den Wechsel zu den neuen IPs.
 
 Adobe stellt dieselbe Anzahl von IPs im neuen Rechenzentrum bereit.
 
@@ -182,7 +184,7 @@ Empfehlungen:
 
 **Ausführungen anhalten**
 
-Adobe empfiehlt, alle Ausführungen (Sendungen und Workflows) zu verlangsamen und im Idealfall anzuhalten, bevor die Anwendung im alten Rechenzentrum heruntergefahren wird. Auf diese Weise wird der Neustart auf der Public Cloud (AWS) vereinfacht, da ausreichend Zeit war, die Prozesse zu pausieren und den aktuellen Ausführungsstatus zu speichern.
+Adobe empfiehlt, alle Ausführungen (Sendungen und Workflows) zu verlangsamen und im Idealfall anzuhalten, bevor die Anwendung im alten Rechenzentrum heruntergefahren wird. Dadurch wird der Neustart in Public Cloud (AWS) erleichtert, da die Prozesse ausreichend Zeit hatten, um &quot;ordentlich&quot;anzuhalten und den Ausführungsstatus zu speichern.
 
 **Während der Migration**
 
