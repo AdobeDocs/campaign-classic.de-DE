@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: f2e6db9e198f96e1e0250d461b419ac00e39bf45
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2221'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -23,24 +23,24 @@ Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der
 [!BADGE Allgemeine Verfügbarkeit]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=de#rn-statuses" tooltip="Allgemeine Verfügbarkeit"}
 
 
-_Mittwoch, 5. Dezember 2023_
+_5. Dezember 2023_
 
 
 **Verbesserungen bei der Sicherheit**
 
 
-* Mit Campaign Classic v7.3.5 wurde der Authentifizierungsprozess verbessert und gesichert. Technische Benutzer sollten jetzt das Adobe Identity Management System (IMS) verwenden, um eine Verbindung mit Campaign herzustellen. Erfahren Sie in [dieser Technote](../../technotes/using/ims-migration.md), wie Sie Ihre vorhandenen technischen Konten migrieren können.
+* Mit Campaign Classic v7.3.5 wurde der Authentifizierungsprozess verbessert und sicherer gemacht. Technische Benutzende sollten sich jetzt über das Adobe Identity Management System (IMS) mit Campaign verbinden. Erfahren Sie in [dieser Technote](../../technotes/using/ims-migration.md), wie Sie Ihre vorhandenen technischen Konten migrieren können.
 
-* Darüber hinaus empfiehlt Adobe Campaign im Rahmen der Bemühungen um die Verbesserung des Sicherheits- und Authentifizierungsprozesses dringend, den Authentifizierungsmodus für Endbenutzer vom nativen Anmelde-/Kennwortauthentifizierungsmodus auf das Adobe Identity Management-System (IMS) zu migrieren. Erfahren Sie in [diesem technischen Hinweis](../../technotes/using/migrate-users-to-ims.md), wie Sie alte Benutzende migrieren können.
+* Darüber hinaus empfiehlt Adobe Campaign im Rahmen der Bemühungen, die Sicherheit und den Authentifizierungsprozess zu verbessern, dringend, den Authentifizierungsmodus für Endbenutzende von der nativen Authentifizierung mit Login/Passwort auf das Adobe Identity Management System (IMS) zu migrieren. Erfahren Sie in [diesem technischen Hinweis](../../technotes/using/migrate-users-to-ims.md), wie Sie Ihre Benutzenden migrieren können.
 
 **Patches**
 
-* Fehlerkorrektur - bei der Verwendung von Daten aus einer Google Big Query-Datenbank und der Aktualisierung von Daten in einer Oracle-Datenbank tritt kein Fehler mehr auf: Alle Schlüssel wurden auf `0` in der temporären Workflow-Tabelle. (NEO-65091)
-* Fehlerkorrektur - Die Ausführung eines Workflows schlägt jetzt nicht mehr fehl, wenn zwei Abfragen einer Google Big Query-Datenbank in einer **Vereinigung** Workflow-Aktivität. (NEO-63705)
-* Fehlerkorrektur - Benutzer müssen sich jetzt beim Klicken auf die `Back` in einem Kampagnenbericht. (NEO-65087)
-* Fehlerkorrektur - Im Workflow Datenbankbereinigung tritt jetzt kein Fehler mehr auf, wenn ein Versand vor dessen Testsendungen gelöscht wird. (NEO-48114)
-* Fehlerkorrektur - Beim Herstellen einer Verbindung zur Client-Konsole tritt jetzt kein Fehler mehr auf: Die letzten Aktualisierungen der TLS-Überprüfung führten zu einem Verbindungsfehler. (NEO-50488)
-* Fehlerkorrektur - Bei der HTTP-Proxy-Authentifizierung tritt nach dem Campaign-Postupgrade auf 7.3.1 kein Fehler mehr auf. HTTP-Anforderungen in Campaign-Workflows schlugen mit `error 407 – proxy auth required is returned`. (NEO-49624)
+* Fehlerkorrektur – Bei der Verwendung von Daten aus einer Google Big Query-Datenbank und der Aktualisierung von Daten in einer Oracle-Datenbank werden jetzt nicht mehr alle Schlüssel in der temporären Workflow-Tabelle auf `0` gesetzt. (NEO-65091)
+* Fehlerkorrektur – Die Ausführung eines Workflows funktioniert jetzt auch dann, wenn zwei Abfragen einer Google Big Query-Datenbank in einer **Vereinigungs**-Workflow-Aktivität kombiniert werden. (NEO-63705)
+* Fehlerkorrektur – Benutzende müssen sich jetzt nicht mehr neu authentifizieren, wenn sie in einem Kampagnenbericht auf `Back` klicken. (NEO-65087)
+* Fehlerkorrektur – Im Workflow „Datenbankbereinigung“ tritt jetzt kein Fehler mehr auf, wenn ein Versand vor seinen Testsendungen gelöscht wird. (NEO-48114)
+* Fehlerkorrektur – Beim Herstellen einer Verbindung zur Client Console tritt jetzt auch bei den neuesten Updates der TLS-Überprüfung kein Verbindungsfehler mehr auf. (NEO-50488)
+* Fehlerkorrektur – Bei der HTTP-Proxy-Authentifizierung nach dem Campaign-Postupgrade auf 7.3.1 schlagen jetzt HTTP-Anforderungen in Campaign-Workflows nicht mehr mit `error 407 – proxy auth required is returned` fehl. (NEO-49624)
 * Behebung eines zeitweiligen Fehlers bei der GPG-Entschlüsselung in **Skript** Workflow-Aktivitäten. Die entsprechende Fehlermeldung lautete: `gpg: decryption failed: No secret key`. (NEO-50257)
   <!--* Workflow temporary tables now have a primary index in Teradata with a Federated Data Access (FDA) connection. (NEO-62575)-->
 
