@@ -7,9 +7,9 @@ user-guide-description: Mit Adobe Campaign können Sie umfangreiche Kundendaten 
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: c2ac8fcf1d9746dbddffc90491a6f214e2c3df2e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2544'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -820,7 +820,7 @@ ht-degree: 99%
    + [Rollback-Verfahren](migration/using/about-rollback.md)
 + Technotes {#technotes}
    + [Empfehlungen zur Hardware-Dimensionierung](technotes/using/hardware-sizing.md)
-   + Aktualisierung auf IMS{#ims}
+   + Upgrade auf IMS{#ims}
       + [Migrieren von Benutzenden zu IMS](technotes/using/migrate-users-to-ims.md)
       + [Migration technischer Benutzender zur Developer Console](technotes/using/ims-migration.md)
    + Aktualisierungen und Kompatibilität{#technote-migration}
