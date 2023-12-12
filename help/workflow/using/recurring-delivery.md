@@ -6,9 +6,9 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Cla
 feature: Workflows
 exl-id: efd2cdfb-2e5f-4672-8be8-a424481b11ed
 source-git-commit: cfc38df8184a8f59d49ce27eb7875783e8941611
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '297'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -28,11 +28,11 @@ Gehen Sie dazu wie folgt vor:
 
 1. Konfigurieren Sie die Versandvorlage.
 
-Der Konfigurationsprozess für diese Aktivität ähnelt dem der Erstellung einer Versandvorlage in Bezug auf die verfügbaren Optionen. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../delivery/using/about-templates.md).
+Die zur Konfiguration dieser Aktivität verfügbaren Optionen entsprechen denen einer Versandvorlage. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../delivery/using/about-templates.md).
 
 >[!CAUTION]
 >
->Wiederkehrende Sendungen unterstützen nicht die Vorschau von Inhalten oder das Senden von Testsendungen, einschließlich [Zielgruppendaten](../../workflow/using/data-life-cycle.md#target-data) Personalisierungselemente.
+>Wiederkehrende Sendungen unterstützen nicht die Vorschau oder den Versand von Testsendungen, die [Zielgruppendaten](../../workflow/using/data-life-cycle.md#target-data)-Personalisierungselemente enthalten.
 
 Ein Anwendungsbeispiel für diese Aktivität finden Sie in diesem [Abschnitt](sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
 
