@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Validieren des Versands
+title: Versand validieren
 description: Erfahren Sie, wie Sie einen Versand validieren
 badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
@@ -8,9 +8,9 @@ feature: Deliverability, Email Rendering, Proofs
 role: User
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
 source-git-commit: cfc38df8184a8f59d49ce27eb7875783e8941611
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1806'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -96,7 +96,7 @@ Folgende Optionen stehen zur Verfügung:
 * **[!UICONTROL Personalisierungsdaten mit einem Workflow vorbereiten]**: Mit dieser Option können Sie die Personalisierungsdaten, die in Ihrem Versand enthalten sind, in einem automatischen Workflow vorbereiten, wodurch Sie bei der Verwendung der Personalisierungsfunktion deutlich mehr Leistung erzielen können. Weiterführende Informationen dazu finden Sie unter [Optimieren der Personalisierung](personalization-fields.md#optimizing-personalization).
 * **[!UICONTROL Vorgang in einem separaten Prozess starten]**: Mit dieser Option können Sie die Versandanalyse in einem separaten Prozess starten. Standardmäßig verwendet die Analysefunktion den Prozess des Adobe Campaign-Anwendungs-Servers (web nlserver). Durch Auswählen dieser Option stellen Sie sicher, dass die Analyse auch im Falle eines Anwendungs-Server-Problems vollständig durchgeführt wird.
 * **[!UICONTROL Zielbestimmungs- und Personalisierungsabfragen im Protokoll speichern]**: Schreibt in der Analysephase die SQL-Abfrage-Logs in das Versandprotokoll.
-* **[!UICONTROL Ignorieren von Personalisierungsskripten beim Senden]** : Mit dieser Option können Sie die Interpretation von JavaScript-Direktiven umgehen, die im HTML-Inhalt vorhanden sind. Sie werden wie im bereitgestellten Inhalt angezeigt. Diese Richtlinien werden mit der **&lt;%=** -Tag).
+* **[!UICONTROL Personalisierungsscripts beim Versand ignorieren]**: Mit dieser Option werden im HTML-Inhalt enthaltene JavaScript-Anweisungen nicht interpretiert, sondern 1:1 im gesendeten Inhalten abgebildet. Diese Richtlinien werden mit dem Tag **&lt;%=** eingeleitet).
 
 ### Leistung bei Versandanalysen verbessern {#improving-delivery-analysis}
 
@@ -173,11 +173,11 @@ Folgende Optionen stehen zur Verfügung:
 * Beibehaltung von doppelten Adressen und Empfängern;
 * Mit beiden der folgenden Optionen können Sie Empfänger auf der Blockierungsliste und Adressen in der Quarantäne beibehalten. Eine Beschreibung dieser Optionen für die Hauptzielgruppe finden Sie unter [Ausschlussparameter anpassen](steps-defining-the-target-population.md#customizing-exclusion-settings). Im Gegensatz zur Zielgruppe eines Versands, bei dem diese Adressen standardmäßig ausgeschlossen sind, werden sie standardmäßig für die Zielgruppe eines Testversands beibehalten.
 * Wenn Sie die Option **[!UICONTROL Versandcode für den Testversand beibehalten]** auswählen, werden Haupt- und Testversand unter dem gleichen Code geführt, welcher im ersten Schritt des Versandassistenten vergeben wird.
-* Standardmäßig erhält der Betreff des Testversands das Präfix &#39;Proof #&#39;, wobei # der Nummer des Testversands entspricht. Sie können dieses Präfix im Feld **[!UICONTROL Titelpräfix]** ändern.
+* Standardmäßig wird dem Betreff des Testversands „Testversand #“ vorangestellt, wobei # die Nummer des Testversands ist. Sie können dieses Präfix im Feld **[!UICONTROL Titelpräfix]** ändern.
 
-## Validierung mit Typologien {#validation-process-with-typologies}
+## Validierungsprozess mit Typologien {#validation-process-with-typologies}
 
-Vor dem Versand sollten Sie die Kampagne analysieren, um Inhalt und Konfiguration zu validieren. Die während der Analysephase angewendeten Kontrollregeln werden in einer **Typologie**. Standardmäßig umfasst die Analyse für E-Mails die folgenden Punkte:
+Vor dem Versand von Nachrichten sollten Sie die Kampagne analysieren, um Inhalt und Konfiguration zu validieren. Die in der Vorbereitungsphase anzuwendenden Validierungsregeln sind in einer **Typologie** festgelegt. Standardmäßig umfasst die Analyse für E-Mails die folgenden Punkte:
 
 * Validierung des Betreffs,
 * Validierung von URLs und Bildern,
@@ -195,11 +195,11 @@ An dieser Stelle können auch neue Regeln und Typologien erstellt werden. Dies s
 
 Weiterführende Informationen zu Typologieregeln finden Sie auf [dieser Seite](../../campaign-opt/using/about-campaign-typologies.md).
 
-Klicken Sie zur Bearbeitung der aktuellen Typologie auf das Symbol **[!UICONTROL Verknüpftes Element öffnen]** (rechts vom Feld **[!UICONTROL Typologie]**).
+Um die aktuelle Typologie zu bearbeiten, klicken Sie auf das Symbol **[!UICONTROL Link bearbeiten]** rechts neben dem Feld **[!UICONTROL Typologie]**.
 
 ![](assets/s_ncs_user_email_del_typo_tab.png)
 
-Die **[!UICONTROL Regel]** enthält eine Liste der anzuwendenden Typologieregeln. Wählen Sie eine Regel aus und klicken Sie auf die **[!UICONTROL Detail..]** -Symbol, um die Konfiguration anzuzeigen:
+Die Registerkarte **[!UICONTROL Regel]** enthält eine Liste der anzuwendenden Typologieregeln. Wählen Sie eine Regel aus und klicken Sie auf das Symbol **[!UICONTROL Detail…]**, um die Konfiguration anzuzeigen:
 
 ![](assets/s_ncs_user_email_del_typo_rules_edit.png)
 
@@ -207,9 +207,9 @@ Die **[!UICONTROL Regel]** enthält eine Liste der anzuwendenden Typologieregeln
 >
 >**[!UICONTROL Schlichtung]** Typologien werden im Rahmen des Werbedruck-Managements verwendet. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../mrm/using/about-marketing-resource-management.md).
 
-## Validierungsmodus ändern {#changing-the-approval-mode}
+## Ändern des Genehmigungsmodus {#changing-the-approval-mode}
 
-Die **[!UICONTROL Analyse]** im Tab Versandeigenschaften können Sie den Validierungsmodus auswählen. Wenn bei der Analyse Warnungen erzeugt werden (z. B. wenn im Betreff des Versands bestimmte Zeichen akzentuiert sind usw.), können Sie den Versand so konfigurieren, dass festgelegt wird, ob er weiterhin ausgeführt werden soll oder nicht. Standardmäßig müssen Benutzende den Nachrichtenversand am Ende der Analysephase bestätigen: Hierbei handelt es sich um eine **manuelle** Validierung.
+In der Registerkarte **[!UICONTROL Analyse]** zu den Versandeigenschaften können Sie den Validierungsmodus auswählen. Wenn während der Analyse Warnungen ausgegeben werden (z. B. wenn bestimmte Buchstaben im Betreff des Versands akzentuiert sind, usw.), können Sie festlegen, ob der Versand trotzdem ausgeführt werden soll oder nicht. Standardmäßig müssen Benutzende den Nachrichtenversand am Ende der Analysephase bestätigen: Hierbei handelt es sich um eine **manuelle** Validierung.
 
 In der Dropdown-Liste des entsprechenden Felds
 
