@@ -6,22 +6,16 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Cla
 feature: Push
 role: User, Developer
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: ht
-source-wordcount: '745'
-ht-degree: 100%
+source-git-commit: 9756f05e3887bc74578bae00138c4d1317a480f8
+workflow-type: tm+mt
+source-wordcount: '708'
+ht-degree: 92%
 
 ---
 
 # Konfigurationsschritte für iOS {#configuring-the-mobile-application-in-adobe-campaign-ios}
 
-
-
 Nachdem das Paket installiert ist, können Sie in Adobe Campaign Classic die Einstellungen für Ihre iOS-Mobile-App festlegen.
-
->[!NOTE]
->
->Informationen dazu, wie Sie Ihre Mobile App für iOS und konfigurieren und einen Versand für iOS erstellen, finden Sie in [diesem Abschnitt](configuring-the-mobile-application-android.md).
 
 Die wichtigsten Schritte sind:
 
@@ -30,7 +24,6 @@ Die wichtigsten Schritte sind:
 1. [Integrieren der iOS-Mobile-App in Campaign](#creating-ios-app)
 
 Anschließend können Sie [eine Push-Benachrichtigung für iOS-Geräte erstellen](create-notifications-ios.md).
-
 
 ## Konfigurieren des externen iOS-Kontos {#configuring-external-account-ios}
 
@@ -65,7 +58,7 @@ Ihr iOS-Connector ist jetzt konfiguriert. Sie können mit dem Einrichten Ihres D
 
    >[!NOTE]
    >
-   >Das standardmäßig vorgeschlagene Zielgruppen-Mapping **[!UICONTROL Abonnierte Anwendungen (nms:appSubscriptionRcp)]** bezieht sich auf die Empfängertabelle. Sie haben die Möglichkeit, im Feld **[!UICONTROL Zielgruppen-Mapping]** des Dienstes ein anderes, zuvor erstelltes Mapping anzugeben. Weiterführende Informationen hierzu finden Sie im [Konfigurationshandbuch](../../configuration/using/about-custom-recipient-table.md).
+   >Die Standardeinstellung **[!UICONTROL Abonnierte Anwendungen (nms:appSubscriptionRcp)]** Zielgruppen-Mapping ist mit der Empfängertabelle verknüpft. Wenn Sie ein anderes Zielgruppen-Mapping verwenden möchten, müssen Sie ein neues Zielgruppen-Mapping erstellen und es im **[!UICONTROL Zielgruppen-Mapping]** -Feld des Dienstes. Weiterführende Informationen zur Erstellung des Zielgruppen-Mappings finden Sie im Abschnitt [Konfigurationshandbuch](../../configuration/using/about-custom-recipient-table.md).
 
    ![](assets/nmac_ios.png)
 

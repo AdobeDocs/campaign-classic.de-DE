@@ -6,10 +6,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Cla
 feature: Push
 role: User, Developer, Data Engineer
 exl-id: 13ccc5d6-4355-42ba-80dc-30a45d3b69a4
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: ht
-source-wordcount: '823'
-ht-degree: 100%
+source-git-commit: 9756f05e3887bc74578bae00138c4d1317a480f8
+workflow-type: tm+mt
+source-wordcount: '757'
+ht-degree: 94%
 
 ---
 
@@ -29,7 +29,8 @@ Bei Firebase Cloud Messaging stehen Ihnen zwei Nachrichtentypen zur Auswahl:
 * **[!UICONTROL Benachrichtigungsinhalt]** – wird automatisch vom FCM SDK verarbeitet.
   <br> FCM übernimmt für die Client-Mobile-App automatisch das Anzeigen der Nachricht auf den Geräten Ihrer Benutzer. Benachrichtigungsinhalte enthalten einen vordefinierten Satz von Parametern und Optionen, können aber mit benutzerspezifischen Anwendungsvariablen weiter personalisiert werden.
 
-Weitere Informationen zu Firebase Cloud Messaging-Nachrichtentypen finden Sie in der [FCM-Dokumentation](https://firebase.google.com/docs/cloud-messaging/concept-options#notifications_and_data_messages).
+Weitere Informationen zu Firebase Cloud Messaging-Nachrichtentypen finden Sie unter [FCM-Dokumentation](https://firebase.google.com/docs/cloud-messaging/concept-options#notifications_and_data_messages){target="_blank"}.
+
 
 ## Datennachricht erstellen {#creating-data-message}
 
@@ -68,11 +69,7 @@ Auf den Android-Mobilgeräten der Abonnenten sollten das Bild und die Webseite i
 
 ## Erstellen von Benachrichtigungsinhalten {#creating-notification-message}
 
->[!NOTE]
->
->Zusätzliche Optionen für Benachrichtigungsinhalte sind nur bei der HTTP v1-API-Konfiguration verfügbar. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](configuring-the-mobile-application-android.md#android-service-httpv1).
-
-![](assets/do-not-localize/how-to-video.png) [Erfahren Sie im Video, wie Sie eine Android-Push-Benachrichtigung erstellen](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html?lang=de#additional-resources)
+![](assets/do-not-localize/how-to-video.png) [Erfahren Sie im Video, wie Sie eine Android-Push-Benachrichtigung erstellen](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html?lang=de#additional-resources){target="_blank"}.
 
 1. Gehen Sie zu **[!UICONTROL Kampagnenverwaltung]** > **[!UICONTROL Sendungen]**.
 
@@ -103,7 +100,7 @@ Auf den Android-Mobilgeräten der Abonnenten sollten das Bild und die Webseite i
    * **[!UICONTROL Tag]**: Legt die Kennung fest, die zum Ersetzen bestehender Benachrichtigungen in der Benachrichtigungsablage verwendet werden soll.
    * **[!UICONTROL Klick-Aktion]**: Legt die Aktion fest, die für das Klicken eines Benutzers auf Ihre Benachrichtigung zugewiesen ist.
 
-   Weitere Informationen zu den **[!UICONTROL Benachrichtigungsoptionen]** und dazu, wie diese Felder auszufüllen sind, finden Sie in der [FCM-Dokumentation](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#androidnotification).
+   Weitere Informationen finden Sie unter **[!UICONTROL Benachrichtigungsoptionen]** und wie diese Felder ausgefüllt werden, siehe [FCM-Dokumentation](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#androidnotification){target="_blank"}.
 
    ![](assets/nmac_android_8.png)
 
@@ -116,7 +113,7 @@ Auf den Android-Mobilgeräten der Abonnenten sollten das Bild und die Webseite i
    * **[!UICONTROL Benachrichtigungspriorität]**: Sie können für Ihre Benachrichtigung die Prioritätsstufen &quot;Standard&quot;, &quot;Minimum&quot;, &quot;Niedrig&quot; oder &quot;Hoch&quot; festlegen. Weitere Informationen hierzu finden Sie in der [FCM-Dokumentation](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#NotificationPriority).
    * **[!UICONTROL Sichtbarkeit]**: Sie können für Ihre Benachrichtigung die Sichtbarkeitsstufen &quot;Öffentlich&quot;, &quot;Privat&quot; oder &quot;Geheim&quot; festlegen. Weitere Informationen hierzu finden Sie in der [FCM-Dokumentation](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#visibility).
 
-   Weitere Informationen zu den **[!UICONTROL zusätzlichen HTTP v1-Optionen]** und dazu, wie diese Felder auszufüllen sind, finden Sie in der [FCM-Dokumentation](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#androidnotification).
+   Weitere Informationen zu den **[!UICONTROL zusätzlichen HTTP v1-Optionen]** und dazu, wie diese Felder auszufüllen sind, finden Sie in der [FCM-Dokumentation](https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#androidnotification){target="_blank"}.
 
    ![](assets/nmac_android_9.png)
 

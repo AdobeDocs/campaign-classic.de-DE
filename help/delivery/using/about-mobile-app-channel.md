@@ -7,20 +7,16 @@ badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Push
 role: User
 exl-id: c3b0406f-f652-42f4-ad0d-23fb719cd1b6
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: ht
-source-wordcount: '680'
-ht-degree: 100%
+source-git-commit: 9756f05e3887bc74578bae00138c4d1317a480f8
+workflow-type: tm+mt
+source-wordcount: '687'
+ht-degree: 93%
 
 ---
 
 # Erste Schritte mit dem Mobile-App-Kanal{#about-mobile-app-channel}
 
 Der **Mobile-App-Kanal** bietet die Möglichkeit, mithilfe von Apps über Adobe Campaign personalisierte Push-Benachrichtigungen auf iOS- und Android-Geräte zu senden.
-
->[!CAUTION]
->
->In diesem Dokument wird beschrieben, wie Sie Ihre Mobile App mit der Adobe Campaign-Plattform integrieren können. Es enthält weder Informationen zum Erstellen der Mobile App noch zum Konfigurieren der Anwendung für die Verwaltung von Benachrichtigungen. Weitere Informationen finden Sie in der offiziellen Apple-[Dokumentation](https://developer.apple.com/) sowie der offiziellen Android-[Dokumentation](https://developer.android.com/index.html).
 
 Zwei Versandkanäle stehen zur Verfügung:
 
@@ -32,14 +28,14 @@ Zwei Versandkanäle stehen zur Verfügung:
 
   ![](assets/nmac_intro_1.png)
 
-Diesen Kanälen entsprechen zwei Versandaktivitäten in den Kampagnen-Workflows:
+  >[!IMPORTANT]
+  >
+  >Einige wichtige Änderungen am FCM-Dienst (Android Firebase Cloud Messaging) werden 2024 veröffentlicht und können sich auf Ihre Implementierung von Adobe Campaign auswirken. Ihre Konfiguration der Anmeldedienste für Android-Push-Nachrichten muss möglicherweise aktualisiert werden, um diese Änderung zu unterstützen. Sie können bereits prüfen und Maßnahmen ergreifen. Weitere Informationen finden Sie hier . [Technote zu Adobe Campaign v8](https://experienceleague.corp.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html){target="_blank"}.
+
+Diesen beiden Kanälen entsprechen zwei Versandaktivitäten in den Kampagnen-Workflows. Zwei Transaktionsnachrichten-Vorlagen stehen auch für den Transaktionsnachrichtenversand zur Verfügung.
 
 ![](assets/nmac_intro_3.png)
 
-
->[!NOTE]
->
->Zwei Transaktionsnachrichten-Vorlagen stehen auch für den Transaktionsnachrichtenversand zur Verfügung.
 
 Sie können das Verhalten der Anwendung dahingehend konfigurieren, dass dem Empfänger beim Antippen der Benachrichtigung der zum jeweiligen Anwendungskontext passende Bildschirm angezeigt wird. Zum Beispiel:
 

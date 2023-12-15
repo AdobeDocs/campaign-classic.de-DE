@@ -6,20 +6,16 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Cla
 feature: Push
 role: User, Developer
 exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: ht
-source-wordcount: '1077'
-ht-degree: 100%
+source-git-commit: 9756f05e3887bc74578bae00138c4d1317a480f8
+workflow-type: tm+mt
+source-wordcount: '953'
+ht-degree: 83%
 
 ---
 
 # Konfigurationsschritte für Android
 
 Nachdem das Paket installiert ist, können Sie die Einstellungen Ihrer Android-Mobile-App in Adobe Campaign Classic festlegen.
-
->[!NOTE]
->
->Informationen dazu, wie Sie Ihre Mobile-App für iOS konfigurieren und einen Versand für iOS erstellen, finden Sie in [diesem Abschnitt](configuring-the-mobile-application.md).
 
 Die wichtigsten Schritte sind:
 
@@ -29,6 +25,11 @@ Die wichtigsten Schritte sind:
 1. [Erweitern des App-Schemas um zusätzliche Daten](#extend-subscription-schema)
 
 Anschließend können Sie eine [Rich-Benachrichtigung für Android erstellen](create-notifications-android.md).
+
+>[!IMPORTANT]
+>
+>Einige wichtige Änderungen am FCM-Dienst (Android Firebase Cloud Messaging) werden 2024 veröffentlicht und können sich auf Ihre Implementierung von Adobe Campaign auswirken. Ihre Konfiguration der Anmeldedienste für Android-Push-Nachrichten muss möglicherweise aktualisiert werden, um diese Änderung zu unterstützen. Sie können bereits prüfen und Maßnahmen ergreifen. Weitere Informationen finden Sie hier . [Technote zu Adobe Campaign v8](https://experienceleague.corp.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html){target="_blank"}.
+
 
 ## Konfigurieren des externen Android-Kontos {#configuring-external-account-android}
 
@@ -57,7 +58,7 @@ Wählen Sie den jeweiligen Connector folgendermaßen aus:
 
 ## Konfigurieren des Android-Service {#configuring-android-service}
 
-![](assets/do-not-localize/how-to-video.png) [Erfahren Sie im Video, wie Sie einen Android-Service konfigurieren](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-an-android-service-in-campaign.html?lang=de#configuring-an-android-service-and-creating-an-android-mobile-application-in-campaign)
+![](assets/do-not-localize/how-to-video.png) [Erfahren Sie im Video, wie Sie einen Android-Dienst konfigurieren](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-an-android-service-in-campaign.html?lang=de#configuring-an-android-service-and-creating-an-android-mobile-application-in-campaign){target="_blank"}.
 
 1. Klicken Sie im Knoten **[!UICONTROL Profile und Zielgruppen > Dienste und Abonnements]** auf die Schaltfläche **[!UICONTROL Neu]**.
 
@@ -68,7 +69,7 @@ Wählen Sie den jeweiligen Connector folgendermaßen aus:
 
    >[!NOTE]
    >
-   >Das standardmäßig vorgeschlagene Zielgruppen-Mapping **[!UICONTROL Abonnierte Anwendungen (nms:appSubscriptionRcp)]** bezieht sich auf die Empfängertabelle. Wenn Sie ein anderes Zielgruppen-Mapping verwenden wollen, haben Sie die Möglichkeit, im Feld **[!UICONTROL Zielgruppen-Mapping]** des Service ein neues Zielgruppen-Mapping anzugeben. Weiterführende Informationen zur Erstellung des Zielgruppen-Mappings finden Sie in [diesem Abschnitt](../../configuration/using/about-custom-recipient-table.md).
+   >Die Standardeinstellung **[!UICONTROL Abonnierte Anwendungen (nms:appSubscriptionRcp)]** Zielgruppen-Mapping ist mit der Empfängertabelle verknüpft. Wenn Sie ein anderes Zielgruppen-Mapping verwenden möchten, müssen Sie ein neues Zielgruppen-Mapping erstellen und es im **[!UICONTROL Zielgruppen-Mapping]** -Feld des Dienstes. Weiterführende Informationen zur Erstellung des Zielgruppen-Mappings finden Sie in [diesem Abschnitt](../../configuration/using/about-custom-recipient-table.md).
 
    ![](assets/nmac_ios.png)
 
@@ -104,14 +105,13 @@ Nachdem Sie den Dienst erstellt haben, müssen Sie jetzt Ihre Android-Mobile-App
 
 Standardmäßig speichert Adobe Campaign einen Schlüssel im Feld **[!UICONTROL User-Kennung]** (@userKey) der Tabelle **[!UICONTROL Abonnentenanwendungen (nms:appSubscriptionRcp)]**. Mit diesem Schlüssel können Sie ein Abonnement mit einem Empfänger verknüpfen. Um zusätzliche Daten (z. B. einen komplexen Abstimmschlüssel) zu erfassen, müssen Sie die folgende Konfiguration übernehmen:
 
-### API-Version auswählen{#select-api-version}
+### API-Version konfigurieren{#select-api-version}
 
-Nachdem Sie einen Service und eine neue Mobile App erstellt haben, müssen Sie Ihre Mobile App entsprechend der ausgewählten API-Version konfigurieren.
+>[!IMPORTANT]
+>
+>Einige wichtige Änderungen am FCM-Dienst (Android Firebase Cloud Messaging) werden 2024 veröffentlicht und können sich auf Ihre Implementierung von Adobe Campaign auswirken. Im Rahmen der kontinuierlichen Bemühungen von Google, seine Dienste zu verbessern, werden die veralteten FCM-APIs am **20. Juni 2024** eingestellt. Weitere Informationen finden Sie hier . [Technote zu Adobe Campaign v8](https://experienceleague.corp.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html){target="_blank"}.
 
-* **Näheres zur Konfiguration von HTTP v1** finden Sie in [diesem Abschnitt](configuring-the-mobile-application-android.md#android-service-httpv1).
-* **Näheres zur Konfiguration für HTTP (frühere Version)** finden Sie in [diesem Abschnitt](configuring-the-mobile-application-android.md#android-service-http).
-
-#### Konfigurieren der HTTP v1-API{#android-service-httpv1}
+Nachdem Sie einen Dienst und eine neue Mobile App erstellt haben, müssen Sie Ihre Mobile App konfigurieren. Die **HTTP (veraltet)** API sollte nicht ausgewählt werden, da sie von Google nicht mehr unterstützt wird.
 
 Gehen Sie wie folgt vor, um die HTTP v1-API-Version zu konfigurieren:
 
@@ -145,39 +145,11 @@ Im Folgenden finden Sie die FCM-Payload-Namen, mit denen Sie Ihre Push-Benachric
 | Datennachricht | K. A. | validate_only |
 | Benachrichtigungsinhalt | title, body, android_channel_id, icon, sound, tag, color, click_action, image, ticker, sticky, visibility, notification_priority, notification_count <br> | validate_only |
 
-<br>
-<br>
-
-#### Konfigurieren der HTTP-API (frühere Version){#android-service-http}
-
-Gehen Sie wie folgt vor, um die HTTP-API-Version (frühere Version) zu konfigurieren:
-
-1. Wählen Sie im Fenster des **[!UICONTROL Mobile-App-Assistenten]** aus der Dropdown-Liste **[!UICONTROL API-Version]** die Option **[!UICONTROL HTTP (frühere Version)]** aus.
-
-1. Geben Sie den **[!UICONTROL Projektschlüssel]** ein, den der Entwickler der Mobile App bereitgestellt hat.
-
-1. Bei Bedarf können Sie die Inhalte von Push-Nachrichten mit bestimmten **[!UICONTROL Anwendungsvariablen]** anreichern. Diese sind vollständig anpassbar; ein Teil der Payload der Nachricht wird an das Mobilgerät gesendet.
-
-   Im folgenden Beispiel werden **title**, **imageURL** und **iconURL** hinzugefügt, um eine Rich-Push-Benachrichtigung einzurichten. Danach werden der Anwendung das Bild, der Titel und das Symbol bereitgestellt, die in der Benachrichtigung angezeigt werden sollen.
-
-   ![](assets/nmac_android_2.png)
-
-1. Klicken Sie auf **[!UICONTROL Beenden]** und danach auf **[!UICONTROL Speichern]**. Ihre Android-Anwendung kann jetzt in Campaign Classic verwendet werden.
-
-Im Folgenden finden Sie die FCM-Payload-Namen, mit denen Sie Ihre Push-Benachrichtigung weiter personalisieren können:
-
-| Nachrichtentyp | Konfigurierbares Nachrichtenelement (FCM-Payload-Name) | Konfigurierbare Optionen (Name der FCM-Payload) |
-|:-:|:-:|:-:|
-| Datennachricht | K. A. | dryRun |
-| Benachrichtigungsinhalt | title, body, android_channel_id, icon, sound, tag, color, click_action <br> | dryRun |
-
-<br>
-
 ## Erweitern des appsubscriptionRcp-Schemas {#extend-subscription-schema}
 
 ![](assets/do-not-localize/how-to-video.png) [Erfahren Sie im Video, wie Sie das appsubscriptionRcp-Schema erweitern](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/extending-the-app-subscription-schema.html?lang=de#extending-the-app-subscription-schema-to-personalize-push-notifications)
 
-Sie müssen die **appsubscriptionRcp** erweitern, um in der Campaign-Datenbank neue zusätzliche Felder zum Speichern von Parametern aus der App zu definieren. Diese Felder werden beispielsweise für die Personalisierung verwendet. Gehen Sie dazu wie folgt vor:
+Sie müssen die **appsubscriptionRcp** um neue zusätzliche Felder zu definieren, um Parameter aus der App in der Campaign-Datenbank zu speichern. Diese Felder werden beispielsweise für die Personalisierung verwendet. Gehen Sie dazu wie folgt vor:
 
 1. Erstellen Sie eine Erweiterung des Schemas **[!UICONTROL Abonnentenanwendungen (nms:appsubscriptionRcp)]** und definieren Sie die neuen Felder. Weitere Informationen zur Erweiterung eines Schemas finden Sie auf [dieser Seite](../../configuration/using/about-schema-edition.md)
 
