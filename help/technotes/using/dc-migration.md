@@ -8,7 +8,7 @@ role: User
 level: Beginner
 exl-id: 2b282221-d048-4f6e-b52e-f8e584af2c0e
 source-git-commit: 9756f05e3887bc74578bae00138c4d1317a480f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1540'
 ht-degree: 100%
 
@@ -77,7 +77,7 @@ Das Programm verfolgt drei Hauptziele:
 
 ## Informationen zur Migration
 
-Zu Beginn dieses Vorgangs erhalten Kunden, für die eine Migration vorgesehen ist, eine E-Mail-Mitteilung von Adobe mit einem Zeitplan und einem Zugriff auf die Dokumentation. This will be your notification that your account is scheduled to be migrated.
+Zu Beginn dieses Vorgangs erhalten Kunden, für die eine Migration vorgesehen ist, eine E-Mail-Mitteilung von Adobe mit einem Zeitplan und einem Zugriff auf die Dokumentation. 
 
 Sie können die Migration durch das [Erstellen eines neuen Support-Tickets bei der Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign#support) einleiten. Geben Sie in der Betreffzeile „Migrate to AWS“ (Migration zu AWS) ein.
 
