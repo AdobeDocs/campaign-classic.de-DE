@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 9083c9c11b6b9c695cc98882e99ceb3cffc20ec7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2258'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ _5. Dezember 2023_
 
 * Darüber hinaus empfiehlt Adobe Campaign im Rahmen der Bemühungen, die Sicherheit und den Authentifizierungsprozess zu verbessern, dringend, den Authentifizierungsmodus für Endbenutzende von der nativen Authentifizierung mit Login/Passwort auf das Adobe Identity Management System (IMS) zu migrieren. Erfahren Sie in [diesem technischen Hinweis](../../technotes/using/migrate-users-to-ims.md), wie Sie Ihre Benutzenden migrieren können.
 
-### Korrekturen  {#release-7-3-5-patches}
+### Patches  {#release-7-3-5-patches}
 
 * Fehlerkorrektur – Bei der Verwendung von Daten aus einer Google Big Query-Datenbank und der Aktualisierung von Daten in einer Oracle-Datenbank werden jetzt nicht mehr alle Schlüssel in der temporären Workflow-Tabelle auf `0` gesetzt. (NEO-65091)
 * Fehlerkorrektur – Die Ausführung eines Workflows funktioniert jetzt auch dann, wenn zwei Abfragen einer Google Big Query-Datenbank in einer **Vereinigungs**-Workflow-Aktivität kombiniert werden. (NEO-63705)
@@ -64,7 +64,7 @@ _7. September 2023_
 * Die Sicherheit wurde verbessert, um zu verhindern, dass personenbezogene Daten in den Web-Protokollfehlern offengelegt werden. (NEO-46827)
 * Die Sicherheit wurde optimiert, um zu verhindern, dass das Sicherheits-Token in die URL der Campaign-Startseite aufgenommen wird. (NEO-38519)
 
-### Kompatibilitätsaktualisierungen  {#release-7-3-4-compat}
+### Aktualisierungen zur Kompatibilität  {#release-7-3-4-compat}
 
 * Tomcat wurde auf Version 8.5.91 aktualisiert
 * Die Bibliothek „libexpat“ wurde auf Version 2.5.0 aktualisiert, um die Sicherheit zu verbessern. (NEO-51023)
@@ -77,7 +77,7 @@ _7. September 2023_
 * Die Verwaltung des Trackinglogs wurde verbessert, um negative IDs für lastMsgId zu vermeiden. Es wurde von int32 in int64 geändert. (NEO-52290)
 * Der native Mid-Sourcing (Versandstatistiken)-Workflow wurde hinzugefügt. Dieser neue Workflow synchronisiert Versandstatistikdaten (nms:deliveryStat) von der Mid- bis zur Marketing-Instanz. (NEO-36802)
 
-### Korrekturen  {#release-7-3-4-patches}
+### Patches {#release-7-3-4-patches}
 
 * Fehlerkorrektur – Beim Stellen einer Service-Anfrage vor der IMS-Anmeldung, bei der die Authentifizierung des Service-Anfrage-Aufrufs mit einem Service-Token erfolgte, tritt nun kein Problem mehr auf. (NEO-64903)
 * Fehlerkorrektur – Bei der Verwendung des Editors für digitale Inhalte gibt es jetzt kein Regressionsproblem mehr, das zu Problemen beim Scrollen führen konnte. (NEO-64671, NEO-59256)
@@ -120,7 +120,7 @@ Fehlerkorrektur – Japanische Zeichen werden beim Exportieren von Berichten jet
 
 >[!AVAILABILITY]
 >
->Für diese Version ist ein spezifisches Patch-Upgrade von Campaign v7.3.3.IMS verfügbar, wenn kein anderer Patch auf Ihre Umgebung angewendet wurde. Es bringt [Adobe Identity Management System (IMS)-Sicherheitsupdates mit v7.3.5](#release-7-3-5-security) in bestehende v7.3.3-Umgebungen.
+>Für diese Version ist ein spezifisches Patch-Upgrade von Campaign v7.3.3.IMS verfügbar, wenn kein anderer Patch auf Ihre Umgebung angewendet wurde. Es bringt [Sicherheitsaktualisierungen für das Adobe Identity Management System (IMS) aus v7.3.5](#release-7-3-5-security) in bestehende v7.3.3-Umgebungen ein.
 
 
 _20. März 2023_
@@ -144,7 +144,7 @@ _20. März 2023_
 >
 >Die Aktualisierung der Client-Konsole ist obligatorisch. Auf dieser [Seite](../../installation/using/installing-the-client-console.md) erfahren Sie, wie Sie Ihre Client-Konsole aktualisieren.
 
-### Korrekturen  {#release-7-3-3-patches}
+### Patches {#release-7-3-3-patches}
 
 * Der Versand von Push-Benachrichtigungen für iOS-Testsendungen von der Kontrollinstanz (Transaktionsnachrichten-Kontext) ist jetzt problemlos möglich. (NEO-54713)
 * Das Scrollen in der Registerkarte **Bearbeiten** des Digital Content Editor (DCE) ist jetzt problemlos möglich. (NEO-54474)
@@ -161,7 +161,7 @@ _20. März 2023_
 
 _21. November 2022_
 
-### Kompatibilitätsaktualisierungen {#release-7-3-2-compat}
+### Aktualisierungen zur Kompatibilität {#release-7-3-2-compat}
 
 * Adobe Campaign ist jetzt mit PostgreSQL 14 kompatibel. Weiterführende Informationen befinden sich in dieser [Technote](../../technotes/using/tech-stack-upgrade.md).
 
@@ -181,7 +181,7 @@ Weiterführende Informationen finden Sie in der [Campaign-Kompatibilitätsmatrix
 
 ### Eingestellte Funktionen  {#release-7-3-2-deprecated}
 
-* Social Marketing mit Facebook wird jetzt nicht mehr unterstützt. Sie können die Integration von X (früher bekannt als Twitter) verwenden, um in den sozialen Medien zu posten, oder in Zusammenarbeit mit Adobe einen benutzerdefinierten Kanal zu erstellen.
+* Social-Media-Marketing mit Facebook wird jetzt nicht mehr unterstützt. Sie können die Integration von X (früher bekannt als Twitter) verwenden, um in den sozialen Medien zu posten, oder in Zusammenarbeit mit Adobe einen benutzerdefinierten Kanal zu erstellen.
 * ACS-Connector (Prime-Angebot) wird jetzt nicht mehr unterstützt. Sie können die Export-/Importfunktionen von Campaign verwenden, um Daten in beide Produkte einzufügen und sie aus ihnen zu extrahieren.
 
 Weitere Informationen finden Sie auf der Seite [Eingestellte und entfernte Funktionen](deprecated-features.md).
@@ -194,7 +194,7 @@ Weitere Informationen finden Sie auf der Seite [Eingestellte und entfernte Funkt
 * Um Abstürze zu verhindern, wurde die JS-Methode loadLibraryDebug entfernt. (NEO-46968)
 * Die verbleibenden Verweise auf die log4j-Bibliothek wurden aus der Campaign-Installation unter Windows entfernt. (NEO-44851)
 
-### Korrekturen  {#release-7-3-2-patches}
+### Patches {#release-7-3-2-patches}
 
 * Fehlerkorrektur: Die Workflow-Option **Ausgewählte Zeilen zusammenführen** kann jetzt verwendet werden. (NEO-48488)
 * Fehlerkorrektur: Der Versandindikator **Erfolg** wird jetzt korrekt aktualisiert, wenn Adobe Campaign Enhanced MTA verwendet wird. (NEO-50462)
