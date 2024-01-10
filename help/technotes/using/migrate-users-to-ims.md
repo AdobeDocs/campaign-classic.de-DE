@@ -3,9 +3,9 @@ title: Migrieren von Campaign-Benutzenden zum Adobe Identity Management System (
 description: Erfahren Sie, wie Sie Campaign-Benutzende zum Adobe Identity Management System (IMS) migrieren
 exl-id: f01948c7-b523-492d-a4e8-67f4adde5fc5
 source-git-commit: 9083c9c11b6b9c695cc98882e99ceb3cffc20ec7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1221'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Darüber hinaus ruft die Adobe Campaign-Client-Anwendung zur Verbesserung der Si
 
 Diese Änderung ist bereits in Campaign Classic v7 möglich und wird für den Wechsel zu Campaign v8 **obligatorisch** sein.
 
-Adobe unterstützt Sie bei dieser Migration. Im folgenden Artikel finden Sie detaillierte Kontexte und Schritt-für-Schritt-Richtlinien.
+Adobe unterstützt Sie bei dieser Migration. Im folgenden Artikel finden Sie detaillierten Kontext und Schritt-für-Schritt-Anweisungen.
 
 ## Sind Sie betroffen?{#migrate-ims-impacts}
 
@@ -41,21 +41,21 @@ Die Migration zum [Adobe Identity Management System (IMS)](https://helpx.adobe.c
 
 Bevor Sie mit dem Migrationsprozess beginnen, müssen Sie sich an Ihre Adobe-Kontaktperson für Migrationen (für Kundinnen und Kunden von Managed Services) oder an die Adobe-Kundenunterstützung (für andere gehostete Kundinnen und Kunden) wenden, damit die technischen Teams von Adobe Ihre bestehenden Benutzergruppen und spezifischen Berechtigungen zum Adobe Identity Management System (IMS) migrieren können.
 
-### Kompatible Versionen der IMS-Migration {#ims-versions}
+### Mit der IMS-Migration kompatible Versionen {#ims-versions}
 
-Voraussetzung für diese Migration ist das Upgrade Ihrer Umgebung auf eine der folgenden Produktversionen:
+Voraussetzung für diese Migration ist die Aktualisierung Ihrer Umgebung auf eine der folgenden Produktversionen:
 
 * Campaign v7.3.5 (empfohlen)
 * Campaign v7.3.3.IMS
   <!--* Campaign v7.3.2.IMS-->
 
-Diese Campaign-Versionen werden im Abschnitt [Versionshinweise](../../rn/using/latest-release.md).
+Diese Campaign-Versionen werden im Abschnitt [Versionshinweise](../../rn/using/latest-release.md) detailliert behandelt.
 
 ### Die wichtigsten Schritte {#ims-migration-steps}
 
 Die wichtigsten Schritte für diese Migration sind unten aufgeführt:
 
-1. Adobe aktualisiert Ihre Umgebungen auf Campaign v7.3.5 (oder eine [Kompatible Version der IMS-Migration](#ims-versions)).
+1. Adobe aktualisiert Ihre Umgebungen auf Campaign v7.3.5 (oder eine [mit der IMS-Migration kompatible Version](#ims-versions)).
 1. Nach dem Upgrade können Sie weiterhin neue Benutzende mit beiden Methoden erstellen, als native Benutzerin bzw. nativen Benutzer oder mit IMS.
 1. Ihre internen Campaign-Admins müssen allen nativen Benutzenden in der Campaign-Client-Konsole eindeutige E-Mails hinzufügen und nach Abschluss dieses Vorgangs dem Adobe-Support bzw. der -Kundenunterstützung bestätigen, dass dies geschehen ist. Dieser Schritt wird in [diesem Abschnitt](#ims-migration-id) beschrieben.
 1. Vereinbaren Sie mit dem Adobe-Support bzw. der -Kundenunterstützung einen Termin, an dem Adobe die automatisierte Migration für Ihre nicht-technischen Benutzenden und Produktprofile durchführen kann. Für diesen Schritt ist ein Zeitfenster von einer Stunde ohne Ausfallzeiten für Ihre Services erforderlich.
@@ -70,7 +70,7 @@ Bestätigen Sie anschließend den Abschluss dieser Migration Ihrer Adobe-Kontakt
 
 Die wichtigsten Schritte für diese Migration sind unten aufgeführt:
 
-1. Aktualisieren Sie Ihre Umgebungen auf Campaign v7.3.5 (oder eine [Kompatible Version der IMS-Migration](#ims-versions)).
+1. Aktualisieren Sie Ihre Umgebungen auf Campaign v7.3.5 (oder eine [mit der IMS-Migration kompatible Version](#ims-versions)).
 1. Nach dem Upgrade können Sie weiterhin neue Benutzende mit beiden Methoden erstellen, als native Benutzerin bzw. nativen Benutzer oder mit IMS.
 1. Ihre internen Campaign-Admins müssen Adobe IMS wie in [diesem Abschnitt](../../integrations/using/configuring-ims.md) beschrieben konfigurieren.
 1. Fügen Sie dann allen nativen Benutzerinnen und Benutzern eindeutige E-Mails in der Campaign-Client-Konsole hinzu. Dieser Schritt wird in [diesem Abschnitt](#ims-migration-id) beschrieben.
@@ -85,13 +85,13 @@ Sie können auch Ihre technischen Benutzenden zur Adobe Developer Console migrie
 
 ### Wann kann ich die Migration starten? {#ims-migration-start}
 
-Eine Empfehlung für die Migration auf [Adobe Identity Management System (IMS)](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"} eine Aktualisierung Ihrer Umgebung auf Campaign Classic v7.3.5 (oder eine [Kompatible Version der IMS-Migration](#ims-versions)).
+Eine Empfehlung für die Migration zum [Adobe Identity Management System (IMS)](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"} ist, Ihre Umgebung auf Campaign v7.3.5 (oder eine [mit der IMS-Migration kompatible Version](#ims-versions)) zu aktualisieren.
 
-Sie können die IMS-Migration in Ihrer Staging-Umgebung starten, sobald sie auf die neueste Version aktualisiert wurde, und entsprechend die Produktionsumgebung planen.
+Sie können die IMS-Migration in Ihrer Staging-Umgebung starten, sobald sie auf Campaign Classic v7.3.5 aktualisiert wurde, und entsprechend für die Produktionsumgebung planen.
 
 ### Was passiert nach einem Build-Upgrade auf Campaign Classic v7.3.5? {#ims-migration-after-upgrade}
 
-Nachdem Ihre Umgebungen auf Campaign Classic v7.3.5 (oder eine [Kompatible Version der IMS-Migration](#ims-versions)), können Sie Ihre Umstellung auf [Adobe Identity Management System (IMS)](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"}.
+Nachdem Ihre Umgebungen auf Campaign Classic v7.3.5 (oder einer [mit der IMS-Migration kompatiblen Version](#ims-versions)) aktualisiert wurden, können Sie mit der Transition auf das [Adobe Identity Management System (IMS)](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"} beginnen.
 
 ### Wann ist die Migration abgeschlossen? {#ims-migration-end}
 
@@ -99,7 +99,7 @@ Sobald die Migration der Endbenutzenden und der technischen Benutzenden zum Adob
 
 ### Wie werden nach der Migration Benutzende erstellt? {#ims-migration-native}
 
-Adobe empfiehlt, nach der Aktualisierung auf Campaign Classic v7.3.5 (oder einer [Kompatible Version der IMS-Migration](#ims-versions)).
+Adobe empfiehlt, IMS-Benutzende nur nach der Aktualisierung auf Campaign Classic v7.3.5 (oder eine [mit der IMS-Migration kompatible Version](#ims-versions)) zu erstellen.
 
 Als Campaign-Admin können Sie den Benutzenden Ihrer Organisation über die Adobe Admin Console und die Campaign Client-Konsole Berechtigungen erteilen. Benutzende melden sich mit ihrer Adobe ID bei Adobe Campaign an. In der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html?lang=de){target="_blank"} erfahren Sie, wie Sie Berechtigungen mit dem IMS einrichten.
 
