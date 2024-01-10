@@ -7,10 +7,10 @@ badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: SMS
 role: Developer, Data Engineer
 exl-id: fded088a-11a2-4b87-a368-7b197334aca4
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
-workflow-type: ht
-source-wordcount: '8458'
-ht-degree: 100%
+source-git-commit: 73fd678d54ba1db647c1c188e8064b28466b3cd2
+workflow-type: tm+mt
+source-wordcount: '8448'
+ht-degree: 99%
 
 ---
 
@@ -412,7 +412,7 @@ Die Anzahl der Verbindungen pro untergeordnetem MTA-Element ist über den SMPP-C
 
 In Adobe Campaign Classic kann die Zahl der Receiver-Verbindungen von der Zahl der Transmitter-Verbindungen abweichen:
 
-* **Transmitter-Verbindungen = Anzahl untergeordneter MTA-Verbindungen * Anzahl untergeordneter MTA-Prozesse * Anzahl der MTAs </br> (wenn automatische Antwort eingestellt ist) + Anzahl untergeordneter MTA-Verbindungen**
+* **Transmitter-Verbindungen = Anzahl untergeordneter MTA-Verbindungen * Anzahl untergeordneter MTA-Prozesse * Anzahl der MTAs (wenn automatische Antwort festgelegt ist) * Anzahl untergeordneter MTA-Verbindungen**
 
 Wie oben dargelegt, öffnet der SMS-Prozess von Adobe Campaign Classic mehr Transmitter-Verbindungen, wenn die automatische Antwort aktiviert ist. Diese zusätzlichen Verbindungen dienen zum Senden der automatischen Antworten.
 
@@ -832,7 +832,7 @@ Auch wenn Sie die Logs nicht selbst überprüfen können, kann die [Adobe-Kunden
 ### Testen Ihrer SMS {#test}
 
 * **SMS mit allen möglichen Zeichen senden**
-Wenn Sie SMS mit Nicht-GSM- oder Nicht-ASCII-Zeichen senden müssen, versuchen Sie, einige Nachrichten mit möglichst vielen verschiedenen Zeichen zu senden. Wenn Sie eine benutzerdefinierte Zeichen-Mapping-Tabelle einrichten, senden Sie mindestens eine SMS für alle möglichen `data_coding`-Werte.
+Wenn Sie SMS mit Nicht-GSM- oder Nicht-ASCII-Zeichen senden müssen, versuchen Sie, einige Nachrichten mit möglichst vielen verschiedenen Zeichen zu senden. Wenn Sie eine benutzerdefinierte Zeichenzuordnungstabelle einrichten, senden Sie mindestens eine SMS für alle möglichen `data_coding` -Werte.
 
 * **Überprüfen Sie, ob SR ordnungsgemäß verarbeitet werden**
 Die SMS sollte im Versandlog als empfangen markiert sein. Das Versandlog sollte erfolgreich sein und wie folgt aussehen:
@@ -841,7 +841,7 @@ Vergewissern Sie sich, dass Sie den Namen des Versand-Providers geändert haben.
 
 * **Überprüfen, ob MO verarbeitet werden**
 Wenn Sie MO verarbeiten müssen (automatische Antworten, MO-Speicherung in der Datenbank usw.), versuchen Sie, einige Tests durchzuführen. Senden Sie ein paar SMS für alle automatischen Antwortschlüsselwörter und prüfen Sie, ob die Antwort schnell genug ist, also nicht länger als ein paar Sekunden dauert.
-Prüfen Sie im Log, ob Adobe Campaign mit einer erfolgreichen `DELIVER_SM_RESP` (command_status=0) antwortet.
+Überprüfen Sie im Protokoll, ob Adobe Campaign mit einer erfolgreichen Antwort antwortet `DELIVER_SM_RESP` (command_status=0).
 
 ### Überprüfen der PDUs {#check-pdus}
 
