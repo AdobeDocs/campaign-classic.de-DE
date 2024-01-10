@@ -4,23 +4,22 @@ title: Fehlerbehebung bei IMS
 description: Fehlerbehebung bei IMS
 feature: Configuration
 badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
+badge-v7-prem: label="On-Premise und Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
 audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 1ce89c3a-1fe6-4ed6-9547-2eb9713a0ec3
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 49271e291953483ee14709b26ec053217a336718
 workflow-type: tm+mt
-source-wordcount: '433'
-ht-degree: 100%
+source-wordcount: '432'
+ht-degree: 79%
 
 ---
 
 # Fehlerbehebung bei IMS{#ims-troubleshooting}
 
 
-
-Mithilfe der folgenden Problembehebungstipps können **On-Premise**-Kunden die gängigsten Probleme bei Verwendung der IMS-Integration beheben. **Gehostete** Kunden sollten sich an Adobe wenden.
+Die folgenden Tipps zur Fehlerbehebung helfen **On-Premise** und **hybrid** -Kunden die häufigsten Probleme bei der Verwendung der IMS-Integration lösen. Für **gehostet** Kunden, wenden Sie sich bitte an Adobe.
 
 **Externes Konto**
 
@@ -37,7 +36,7 @@ Wenn das externe Konto das Feld **Produktkontext** aufweist, überprüfen Sie, o
 
 Stellen Sie sicher, dass der Produktkontext für Campaign und Experience Cloud identisch ist.
 
-Wenn beispielsweise das Feld **Produktkontext** nicht angezeigt wird, sollte der Standardproduktkontext sowohl für Campaign als auch Experience Cloud **dma_campaign** lauten. Wenn das Feld **Produktkontext** angezeigt wird, sollte der Standardproduktkontext sowohl für Campaign als auch Experience Cloud **dma_campaign_classic** lauten.
+Wenn beispielsweise die Variable **Produktkontext** nicht angezeigt wird, sollte der standardmäßige Produktkontext **dma_campaign** sowohl in Campaign als auch in Experience Cloud. Wenn die Variable **Produktkontext** -Feld angezeigt, sollte der standardmäßige Produktkontext **dma_campaign_classic** sowohl in Campaign als auch in Experience Cloud.
 
 **[!UICONTROL IMS-Server-URL]**
 
@@ -76,7 +75,7 @@ Führen Sie einen Neustart des Servers durch, falls Änderungen an den obigen Ei
 
 * Der Benutzer wird an die Seite &quot;adobe.com&quot; weitergeleitet:
 
-  Es gibt ein Problem mit der **[!UICONTROL Callback-URL]**. Überprüfen Sie anhand der vorherigen Schritte die Konfiguration der **[!UICONTROL Callback-URL]**.
+  Es gibt ein Problem mit dem **[!UICONTROL Callback-URL]**. Überprüfen Sie anhand der vorherigen Schritte die **[!UICONTROL Callback-URL]** Konfiguration.
 
 * Meldung &quot;Der Login besitzt keine Berechtigung, die dem Ausdruck in Adobe Campaign entspricht&quot;:
 
