@@ -5,9 +5,9 @@ feature: Technote
 role: Admin
 exl-id: 1a409daf-57be-43c9-a3d9-b8ab54c88068
 source-git-commit: 9083c9c11b6b9c695cc98882e99ceb3cffc20ec7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1698'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Eine technische Benutzerin bzw. ein technischer Benutzer ist ein Campaign-Benutz
 
 Wenn Sie API-Aufrufe von einem Campaign-externen System in die Campaign-Marketing-Instanz oder die Message-Center-Echtzeitinstanz durchführen, müssen Sie die technischen Benutzerinnen und Benutzer über die Adobe Developer Console in technische Konten migrieren, wie unten beschrieben.
 
-Diese Änderung gilt ab Campaign Classic v7.3.5 (und neueste Version) [Kompatible Versionen der IMS-Migration](#ims-versions-tech)) und **mandatory** , um zu Adobe Campaign v8 zu wechseln.
+Diese Änderung gilt ab Campaign Classic v7.3.5 (und für die neuesten [mit der IMS-Migration kompatiblen Versionen](#ims-versions-tech)) und ist **zwingend** für den Wechsel zu Adobe Campaign v8.
 
 ## Migrationsprozess {#ims-migration-procedure}
 
@@ -37,15 +37,15 @@ Es folgt eine Übersicht über die Schritte:
 * Entfernen Sie die veralteten technischen Benutzerinnen und Benutzer aus Ihrer Campaign-Instanz
 
 
-### Kompatible Versionen der IMS-Migration {#ims-versions-tech}
+### Mit der IMS-Migration kompatible Versionen {#ims-versions-tech}
 
-Voraussetzung für diese Migration ist das Upgrade Ihrer Umgebung auf eine der folgenden Produktversionen:
+Voraussetzung für diese Migration ist die Aktualisierung Ihrer Umgebung auf eine der folgenden Produktversionen:
 
 * Campaign v7.3.5 (empfohlen)
 * Campaign v7.3.3.IMS
   <!--* Campaign v7.3.2.IMS-->
 
-Diese Campaign-Versionen werden im Abschnitt [Versionshinweise](../../rn/using/latest-release.md).
+Diese Campaign-Versionen werden im Abschnitt [Versionshinweise](../../rn/using/latest-release.md) behandelt.
 
 ### Voraussetzungen für die Migration{#ims-migration-prerequisites}
 
@@ -53,7 +53,7 @@ Diese Campaign-Versionen werden im Abschnitt [Versionshinweise](../../rn/using/l
 
 * Campaign-gehostete und Managed Services-Kundinnen und -Kunden
 
-  Für API-Aufrufe in die Message-Center-Instanz(en) sollte während der Aktualisierung auf Campaign v7.3.5 (oder andere) ein Produktprofil erstellt worden sein. [Kompatible Version der IMS-Migration](#ims-versions-tech)) oder während der Bereitstellung der Instanz. Dieses Produktprofil hat den Namen:
+  Für API-Aufrufe in Message Center-Instanzen sollte während des Upgrades auf Campaign v7.3.5 (oder eine andere [mit der IMS-Migration kompatible Version](#ims-versions-tech)) oder während der Bereitstellung der Instanz ein Produktprofil erstellt worden sein. Dieses Produktprofil hat den Namen:
 
   `campaign - <your campaign instance> - messagecenter`
 
@@ -238,7 +238,7 @@ Beachten Sie, dass die Benutzenden des technischen Kontos so lange NICHT in Adob
 
    ![](assets/do-not-translate/ims-updates-07.png)
 
-   Im **Anmeldeinformationen** -Tab, scrollen Sie nach unten, um die **Email für technische Konten** und klicken Sie auf **Kopieren** Schaltfläche.
+   Scrollen Sie im Bildschirm **Anmeldedaten** nach unten, um die **E-Mail-Adresse des technischen Kontos** zu suchen, und klicken Sie auf die Schaltfläche **Kopieren**.
 
    ![](assets/do-not-translate/ims-updates-08.png)
 
