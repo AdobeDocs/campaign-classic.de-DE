@@ -2,10 +2,10 @@
 title: Migrieren von Campaign-Benutzenden zum Adobe Identity Management System (IMS)
 description: Erfahren Sie, wie Sie Campaign-Benutzende zum Adobe Identity Management System (IMS) migrieren
 exl-id: f01948c7-b523-492d-a4e8-67f4adde5fc5
-source-git-commit: 9083c9c11b6b9c695cc98882e99ceb3cffc20ec7
-workflow-type: ht
-source-wordcount: '1221'
-ht-degree: 100%
+source-git-commit: da35a3050d838cd8e57bf802dc066e32f22f8273
+workflow-type: tm+mt
+source-wordcount: '1223'
+ht-degree: 99%
 
 ---
 
@@ -47,7 +47,7 @@ Voraussetzung für diese Migration ist die Aktualisierung Ihrer Umgebung auf ein
 
 * Campaign v7.3.5 (empfohlen)
 * Campaign v7.3.3.IMS
-  <!--* Campaign v7.3.2.IMS-->
+* Campaign v7.3.2.IMS
 
 Diese Campaign-Versionen werden im Abschnitt [Versionshinweise](../../rn/using/latest-release.md) detailliert behandelt.
 
