@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Verwenden Sie Ihre Adobe ID, um eine Verbindung mit Adobe Campaign herzustellen.
-description: Weitere Informationen zur Adobe IMS-Implementierung in Adobe Campaign
+title: Verwenden Sie Ihre Adobe ID, um eine Verbindung mit Adobe Campaign herzustellen
+description: Erfahren Sie mehr über die Adobe IMS-Implementierung in Adobe Campaign
 feature: Configuration
 badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
 audience: integrations
@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 8dad8fa9-674c-433c-af30-8c6d0aadf525
 source-git-commit: 49271e291953483ee14709b26ec053217a336718
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '143'
-ht-degree: 60%
+ht-degree: 100%
 
 ---
 
@@ -19,12 +19,12 @@ ht-degree: 60%
 
 Adobe Identity Management System (IMS) hilft Administratoren beim Erstellen und Verwalten des Benutzerzugriffs auf Anwendungen und Dienste. Weiterführende Informationen zu den verschiedenen Arten von Adobe-Kennungen finden Sie auf [dieser Seite](https://helpx.adobe.com/de/enterprise/using/identity.html).
 
-Campaign-Benutzer können über ihre Adobe ID statt über die [native Benutzer-/Kennwortauthentifizierung](../../platform/using/access-management-operators.md). Diese Implementierung bietet folgende Vorteile:
+Benutzerinnen und Benutzer von Campaign können mit ihrer Adobe ID eine Verbindung zur Adobe Campaign-Konsole herstellen, statt über die [native Benutzer-/Passwort-Authentifizierung](../../platform/using/access-management-operators.md). Diese Implementierung bietet folgende Vorteile:
 
-* Verwendung ein und derselben ID für alle Adobe Experience Cloud-Lösungen;
-* Die Verbindung wird bei Verwendung von Adobe Campaign mit verschiedenen Integrationen beibehalten.
-* Sicherheitsrichtlinie für die Kennwortverwaltung anstelle der nativen Anmeldung/des nativen Kennworts.
-* Verwendung von Konten des Typs Federated ID (externer Identity Provider).
+* Verwendung ein und derselben ID für alle Adobe Experience Cloud-Lösungen.
+* Speicherung der Verbindung bei der Verwendung von Adobe Campaign mit den verschiedenen Integrationen.
+* Sicherere Sicherheitsrichtlinien für die Passwortverwaltung anstelle der Anmeldung mit nativem Login/Passwort.
+* Verwendung von Konten des Typs Federated ID (externer ID-Provider).
 
 <!--
 >[!IMPORTANT]
