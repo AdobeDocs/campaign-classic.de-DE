@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Cla
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: cc6d85bcf822ba9be99e39cf459a5aa20cc2d4fe
-workflow-type: ht
-source-wordcount: '3671'
-ht-degree: 100%
+source-git-commit: 31705e7dd0ecb4e66fe4a22369995384d3ce39d4
+workflow-type: tm+mt
+source-wordcount: '3703'
+ht-degree: 99%
 
 ---
 
@@ -19,6 +19,12 @@ ht-degree: 100%
 Auf dieser Seite werden alle neuen Funktionen und Dokumentationsaktualisierungen pro Monat und Campaign-Version aufgeführt.
 
 Die entsprechenden Aktualisierungen finden Sie in den [Versionshinweisen zu Adobe Campaign Classic](../../rn/using/latest-release.md).
+
+## 2024
+
+### Januar 2024 {#jan-2024}
+
+Es wurden Informationen darüber hinzugefügt, wie das standardmäßige Feld postalAddress für Briefpost definiert wird und warum es wichtig ist sicherzustellen, dass die Adressen vollständig sind. [Weitere Informationen](../../delivery/using/about-direct-mail-channel.md)
 
 ## 2023
 
@@ -432,7 +438,7 @@ Datenschutzgesetze in Thailand und Brasilien – [mehr dazu](https://helpx.adobe
 
 **Weitere Dokumentationsaktualisierungen zu dieser Version**
 
-Die neue Option zum Rückgängigmachen der Veröffentlichung einer Transaktionsnachrichtenvorlage wird in [diesem Abschnitt](../../message-center/using/publishing-message-templates.md#template-unpublication) beschrieben.
+Die neue Option zum Aufheben der Veröffentlichung einer Transaktionsnachrichtenvorlage wird in [diesem Abschnitt](../../message-center/using/publishing-message-templates.md#template-unpublication) beschrieben.
 
 Neue Optionen wurden zur Liste der Campaign Classic-Optionen hinzugefügt. Mit diesen Optionen können Einschränkungen beim Versand von E-Mails festgelegt werden, die von einer personalisierten URL und Anhängen heruntergeladene Bilder enthalten. [Mehr dazu](../../installation/using/configuring-campaign-options.md#delivery)
 
