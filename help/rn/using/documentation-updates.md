@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 31705e7dd0ecb4e66fe4a22369995384d3ce39d4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3703'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Die entsprechenden Aktualisierungen finden Sie in den [Versionshinweisen zu Adob
 
 ### Januar 2024 {#jan-2024}
 
-Es wurden Informationen darüber hinzugefügt, wie das standardmäßige Feld postalAddress für Briefpost definiert wird und warum es wichtig ist sicherzustellen, dass die Adressen vollständig sind. [Weitere Informationen](../../delivery/using/about-direct-mail-channel.md)
+Es wurden Informationen darüber hinzugefügt, wie das Standardfeld „postalAddress“ für Direkt-Mail definiert wird und warum es wichtig ist sicherzustellen, dass die Adressen vollständig sind. [Weitere Informationen](../../delivery/using/about-direct-mail-channel.md)
 
 ## 2023
 
