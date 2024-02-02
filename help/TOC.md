@@ -6,10 +6,10 @@ title: Campaign Classic v7 – Handbuch
 user-guide-description: Produktdokumentation für Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: cb1f079fbb7af6bb6645aae86261ca723fd97c3a
+source-git-commit: 4165f5988dfeee2f3b4d872c445ace11c9aa4fe1
 workflow-type: tm+mt
-source-wordcount: '2524'
-ht-degree: 100%
+source-wordcount: '2536'
+ht-degree: 99%
 
 ---
 
@@ -141,7 +141,9 @@ ht-degree: 100%
       + [Dateien anhängen](delivery/using/attaching-files.md)
    + SMS senden {#sending-messages-on-mobiles}
       + [Erste Schritte mit SMS](delivery/using/sms-channel.md)
-      + [SMS-Kanal konfigurieren](delivery/using/sms-set-up.md)
+      + SMS-Kanal konfigurieren {#sms-set-up}
+         + [SMS auf einer eigenständigen Instanz konfigurieren](delivery/using/sms-set-up.md)
+         + [SMS in einer Mid-Sourcing-Infrastruktur konfigurieren](delivery/using/sms-set-up-mid.md)
       + [SMS erstellen](delivery/using/sms-create.md)
       + [SMS senden und verfolgen](delivery/using/sms-send.md)
       + [Protokoll und Einstellungen des SMS-Connectors](delivery/using/sms-protocol.md)
@@ -205,7 +207,7 @@ ht-degree: 100%
       + [Erste Schritte mit dem Überwachen des Versands](delivery/using/about-delivery-monitoring.md)
       + [Auf die Liste der Sendungen zugreifen](delivery/using/list-of-deliveries.md)
       + [Versand-Dashboard](delivery/using/delivery-dashboard.md)
-      + [Best Practices für die Versandleistung](delivery/using/delivery-performances.md)
+      + [Best Practices für die Versand-Performance](delivery/using/delivery-performances.md)
       + [Fehlerbehebung beim Versand](delivery/using/delivery-troubleshooting.md)
       + [Versandstatus](delivery/using/delivery-statuses.md)
       + [Ursachen für das Fehlschlagen von Sendungen](delivery/using/understanding-delivery-failures.md)
@@ -716,7 +718,7 @@ ht-degree: 100%
          + [Vergessenes Passwort](production/using/lost-password.md)
          + [Konsolenaktualisierung](production/using/console-update.md)
       + Fehlerbehebung beim Versand {#delivery-troubleshooting-toc}
-         + [Leistungs- und Durchsatzprobleme](production/using/performance-and-throughput-issues.md)
+         + [Performance- und Durchsatzprobleme](production/using/performance-and-throughput-issues.md)
          + [Probleme mit der Bildanzeige](production/using/image-display-issues.md)
          + [Fehlende Bilder](production/using/images-missing.md)
          + [Temporäre Dateien](production/using/temporary-files.md)
@@ -724,7 +726,7 @@ ht-degree: 100%
          + [Protokollgenauigkeit](production/using/log-precision.md)
          + [Probleme mit Trackinglogs](production/using/tracking-logs-issues.md)
       + Probleme in Bezug auf die Datenbank {#database-issues-toc}
-         + [Datenbankleistung](production/using/database-performances.md)
+         + [Datenbank-Performance](production/using/database-performances.md)
          + [Codierung der Oracle-Datenbank](production/using/encoding-of-the-oracle-database.md)
       + Verbindungsverbesserungen {#connection-improvements-toc}
          + [Verbindung schlägt fehl](production/using/failure-to-connect.md)

@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Cla
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 31705e7dd0ecb4e66fe4a22369995384d3ce39d4
-workflow-type: ht
-source-wordcount: '3703'
-ht-degree: 100%
+source-git-commit: 4165f5988dfeee2f3b4d872c445ace11c9aa4fe1
+workflow-type: tm+mt
+source-wordcount: '3722'
+ht-degree: 99%
 
 ---
 
@@ -25,6 +25,8 @@ Die entsprechenden Aktualisierungen finden Sie in den [Versionshinweisen zu Adob
 ### Januar 2024 {#jan-2024}
 
 Es wurden Informationen darüber hinzugefügt, wie das Standardfeld „postalAddress“ für Direkt-Mail definiert wird und warum es wichtig ist sicherzustellen, dass die Adressen vollständig sind. [Weitere Informationen](../../delivery/using/about-direct-mail-channel.md)
+
+Eine neue Seite zur Konfiguration des SMS-Kanals in Campaign in einer Mid-Sourcing-Infrastruktur wurde hinzugefügt - [Weitere Informationen](../../delivery/using/sms-set-up-mid.md)
 
 ## 2023
 
@@ -488,7 +490,7 @@ Der Artikel zum Adobe Campaign Enhanced MTA wurde aktualisiert. Er gilt jetzt nu
 
 ## März 2020 {#march-2020}
 
-Die Seite mit Best Practices für das Datenmodell enthält jetzt neue Abschnitte wie [Sequenzen](../../configuration/using/data-model-best-practices.md#sequences), [Leistung](../../configuration/using/data-model-best-practices.md#performance) und [große Tabellen](../../configuration/using/data-model-best-practices.md#large-tables). [Mehr dazu](../../configuration/using/data-model-best-practices.md)
+Die Seite mit Best Practices für das Datenmodell enthält jetzt neue Abschnitte wie [Sequenzen](../../configuration/using/data-model-best-practices.md#sequences), [Performance](../../configuration/using/data-model-best-practices.md#performance) und [große Tabellen](../../configuration/using/data-model-best-practices.md#large-tables). [Mehr dazu](../../configuration/using/data-model-best-practices.md)
 
 Ein neuer Abschnitt, in dem das integrierte Datenmodell von Adobe Campaign beschrieben wird; Interaktion zwischen Tabellen ist nun verfügbar. [Mehr dazu](../../configuration/using/data-model-description.md)
 

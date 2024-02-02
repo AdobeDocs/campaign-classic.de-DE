@@ -7,14 +7,14 @@ badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: SMS
 role: User, Developer, Admin
 exl-id: a2783a5e-6d38-41a1-b5c6-24ab489116f8
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
-workflow-type: ht
-source-wordcount: '1838'
-ht-degree: 100%
+source-git-commit: 4165f5988dfeee2f3b4d872c445ace11c9aa4fe1
+workflow-type: tm+mt
+source-wordcount: '1853'
+ht-degree: 97%
 
 ---
 
-# SMS-Kanal konfigurieren {#setting-up-sms-channel}
+# SMS-Kanal in einer eigenständigen Instanz konfigurieren {#setting-up-sms-channel}
 
 Folgende Voraussetzungen müssen gegeben sein, um Sendungen an Mobiltelefone richten zu können:
 
@@ -301,7 +301,7 @@ Beim Konfigurieren eines neuen externen Kontos für einen SMPP-Mobiltelefon-Vers
 
 >[!NOTE]
 >
->Das Mapping zwischen dem Wert des **data_coding**-Felds und der tatsächlich verwendeten Kodierung ist standardisiert. Gewisse SMSC besitzen jedoch ihr eigenes Mapping. In diesem Fall muss Ihr **Adobe-Campaign**-Administrator das Mapping deklarieren. Kontaktieren Sie für weiterführende Informationen Ihren Anbieter.
+>Die Entsprechung zwischen dem Wert des **DATA_CODING**-Felds und der tatsächlich verwendeten Kodierung ist standardisiert. Gewisse SMSC besitzen jedoch ein eigenes Mapping: In diesem Fall ist Ihre **Adobe Campaign** -Administrator muss diese Zuordnung deklarieren. Kontaktieren Sie für weiterführende Informationen Ihren Anbieter.
 
 Sie können **data_codings** deklarieren. Durch Angabe von nur einer Kodierung in der Tabelle wird die Anwendung dieser Kodierung erzwungen.
 
@@ -354,7 +354,7 @@ Die Schritte zum Einrichten eines externen Kontos mithilfe des Connectors „Erw
 
 ## Versandvorlage ändern {#changing-the-delivery-template}
 
-Adobe Campaign enthält eine vorkonfigurierte Vorlage für Sendungen auf Mobiltelefone. Auf diese Vorlage können Sie im Knoten **[!UICONTROL Ressourcen > Vorlagen > Versandvorlagen]** zugreifen. Weiterführende Informationen finden Sie im Abschnitt [Über Vorlagen](about-templates.md).
+Adobe Campaign bietet Ihnen eine Vorlage für den Versand auf Mobiltelefone. Diese Vorlage ist im Abschnitt **[!UICONTROL Ressourcen > Vorlagen > Versandvorlagen]** Knoten. Weiterführende Informationen finden Sie im Abschnitt [Über Vorlagen](about-templates.md).
 
 Um den SMS-Kanal zu nutzen, muss in der Versandvorlage der entsprechende Connector angegeben werden.
 
