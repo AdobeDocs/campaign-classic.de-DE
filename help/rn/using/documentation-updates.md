@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 4165f5988dfeee2f3b4d872c445ace11c9aa4fe1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3722'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Die entsprechenden Aktualisierungen finden Sie in den [Versionshinweisen zu Adob
 
 Es wurden Informationen darüber hinzugefügt, wie das Standardfeld „postalAddress“ für Direkt-Mail definiert wird und warum es wichtig ist sicherzustellen, dass die Adressen vollständig sind. [Weitere Informationen](../../delivery/using/about-direct-mail-channel.md)
 
-Eine neue Seite zur Konfiguration des SMS-Kanals in Campaign in einer Mid-Sourcing-Infrastruktur wurde hinzugefügt - [Weitere Informationen](../../delivery/using/sms-set-up-mid.md)
+Eine neue Seite mit Informationen zur Konfiguration des SMS-Kanals in Campaign bei einer Mid-Sourcing-Infrastruktur wurde hinzugefügt. [Weitere Informationen](../../delivery/using/sms-set-up-mid.md)
 
 ## 2023
 
