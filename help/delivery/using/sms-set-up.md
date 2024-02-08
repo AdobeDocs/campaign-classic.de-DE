@@ -8,13 +8,13 @@ feature: SMS
 role: User, Developer, Admin
 exl-id: a2783a5e-6d38-41a1-b5c6-24ab489116f8
 source-git-commit: 4165f5988dfeee2f3b4d872c445ace11c9aa4fe1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1853'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# SMS-Kanal in einer eigenständigen Instanz konfigurieren {#setting-up-sms-channel}
+# Konfigurieren des SMS-Kanals in einer eigenständigen Instanz {#setting-up-sms-channel}
 
 Folgende Voraussetzungen müssen gegeben sein, um Sendungen an Mobiltelefone richten zu können:
 
@@ -301,7 +301,7 @@ Beim Konfigurieren eines neuen externen Kontos für einen SMPP-Mobiltelefon-Vers
 
 >[!NOTE]
 >
->Die Entsprechung zwischen dem Wert des **DATA_CODING**-Felds und der tatsächlich verwendeten Kodierung ist standardisiert. Gewisse SMSC besitzen jedoch ein eigenes Mapping: In diesem Fall ist Ihre **Adobe Campaign** -Administrator muss diese Zuordnung deklarieren. Kontaktieren Sie für weiterführende Informationen Ihren Anbieter.
+>Die Entsprechung zwischen dem Wert des Felds **data_coding** und der tatsächlich verwendeten Kodierung ist standardisiert. Gewisse SMSC besitzen jedoch eine spezifische Zuordnung: In diesem Fall müssen Ihre **Adobe Campaign**-Admins diese deklarieren. Kontaktieren Sie für weiterführende Informationen Ihren Anbieter.
 
 Sie können **data_codings** deklarieren. Durch Angabe von nur einer Kodierung in der Tabelle wird die Anwendung dieser Kodierung erzwungen.
 
@@ -352,9 +352,9 @@ Um dies zu vermeiden, wenden Sie je nach verwendetem Provider eine der folgenden
 
 Die Schritte zum Einrichten eines externen Kontos mithilfe des Connectors „Erweitertes allgemeines SMPP“ sind im Abschnitt [Externes SMPP-Konto erstellen](#creating-an-smpp-external-account) beschrieben.
 
-## Versandvorlage ändern {#changing-the-delivery-template}
+## Ändern der Versandvorlage {#changing-the-delivery-template}
 
-Adobe Campaign bietet Ihnen eine Vorlage für den Versand auf Mobiltelefone. Diese Vorlage ist im Abschnitt **[!UICONTROL Ressourcen > Vorlagen > Versandvorlagen]** Knoten. Weiterführende Informationen finden Sie im Abschnitt [Über Vorlagen](about-templates.md).
+Adobe Campaign bietet Ihnen eine Vorlage für den Versand an Mobilgeräte. Diese Vorlage ist im Knoten **[!UICONTROL Ressourcen > Vorlagen > Versandvorlagen]** verfügbar. Weiterführende Informationen finden Sie im Abschnitt [Über Vorlagen](about-templates.md).
 
 Um den SMS-Kanal zu nutzen, muss in der Versandvorlage der entsprechende Connector angegeben werden.
 
