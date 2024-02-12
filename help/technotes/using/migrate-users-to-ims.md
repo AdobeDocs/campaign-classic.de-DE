@@ -2,9 +2,9 @@
 title: Migrieren von Campaign-Benutzenden zum Adobe Identity Management System (IMS)
 description: Erfahren Sie, wie Sie Campaign-Benutzende zum Adobe Identity Management System (IMS) migrieren
 exl-id: f01948c7-b523-492d-a4e8-67f4adde5fc5
-source-git-commit: da35a3050d838cd8e57bf802dc066e32f22f8273
-workflow-type: ht
-source-wordcount: '1223'
+source-git-commit: 1879fe179381be654bad876de2423d25049db43c
+workflow-type: tm+mt
+source-wordcount: '1280'
 ht-degree: 100%
 
 ---
@@ -132,6 +132,24 @@ Adobe empfiehlt dringend, dass alle Benutzenden während des Migrationsfensters 
 Diese Migration umfasst zwei Aspekte: die Migration von Endbenutzenden und die Migration von technischen Benutzenden (wird in APIs in Ihrem benutzerspezifischen Code verwendet).
 
 Wenn alle Ihre Benutzenden (Campaign-Benutzende) IMS verwenden, müssen Sie sich dennoch an den Adobe-Support bzw. die Kundenunterstützung wenden, um die Migration von Produktprofilen zu planen. Sie müssen auch technische Benutzende migrieren, die Sie möglicherweise im benutzerdefinierten Code verwendet haben. Weitere Informationen finden Sie auf [dieser Seite](ims-migration.md).
+
+### Wie kann ich den Authentifizierungstyp meiner Benutzenden anzeigen?
+
+Erfahren Sie, wie Sie den Authentifizierungstyp Ihrer Benutzenden in Campaign anzeigen:
+
+1. Greifen Sie aus dem **Explorer** auf **Administration** `>` **Zugriffsverwaltung** `>` **Benutzende** zu.
+
+1. Klicken Sie mit der rechten Maustaste auf die Kopfzeile und wählen Sie das Menü **Liste konfigurieren**.
+
+   ![](assets/ims_2.png)
+
+1. Fügen Sie **Account deaktiviert** und **Authentifizierungstyp** als **Ausgabespalten** hinzu.
+
+   ![](assets/ims_1.png)
+
+Sie können jetzt die Liste Ihrer **Benutzenden** und deren **Authentifizierungstyp** sehen.
+
+![](assets/ims_3.png)
 
 ## Nützliche Links {#ims-useful-links}
 
