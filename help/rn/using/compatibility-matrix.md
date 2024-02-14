@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Cla
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 3db5242e2074c6d0530258073ae83c11164d7365
-workflow-type: ht
-source-wordcount: '772'
-ht-degree: 100%
+source-git-commit: e430978dd182eaea082122ef748118e5210b05d5
+workflow-type: tm+mt
+source-wordcount: '805'
+ht-degree: 96%
 
 ---
 
@@ -41,6 +41,7 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 <tr> 
 <td>CentOs</td>
 <td>
+<p>8.x (nur für Hybridumgebungen)</p>
 <p>7.x</p>
 <p><strong>Wichtig:</strong> Wenn Sie RHEL verwenden, müssen Sie SELinux deaktivieren. Andernfalls können Ihre Programmierer auch benutzerdefinierte SELinux-Regeln verfassen, mit denen sichergestellt werden kann, dass ein aktiviertes SELinux keine Probleme mit Campaign-Vorgängen verursacht.</p>
 </td>
@@ -77,7 +78,7 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 <tr>
 <td>Microsoft IIS</td>
 <td>
-<p>10.0 auf Windows-Server 2016 und 2019</p>
+<p>10.0 auf Windows Server 2016 und 2019</p>
 </td>
 </tr>
 <tr>
@@ -353,7 +354,7 @@ Für die Verwendung der [Campaign-Client-Konsole](../../installation/using/insta
 
 ### Microsoft WebView2 Runtime
 
-Microsoft Edge WebView2 Runtime Die neueste Version ist für die Campaign-Client-Konsole erforderlich.
+Die neueste Version der Microsoft Edge WebView2-Laufzeitumgebung ist für die Campaign-Clientkonsole erforderlich.
 
 Microsoft Edge WebView2 kann von der [Microsoft-Entwickler-Site](https://www.adobe.com/go/acc-ms-webview2-runtime-download_de) heruntergeladen werden
 
