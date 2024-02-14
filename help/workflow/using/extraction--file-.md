@@ -5,10 +5,10 @@ description: Erfahren Sie mehr über die Workflow-Aktivität "Extraktion (Datei)
 badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Workflows, Data Management Activity
 exl-id: 06eafedd-6386-498f-a80d-7f57ddcccad6
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 58998fa2480a33776507a434ed846541ac19e58b
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 100%
+source-wordcount: '358'
+ht-degree: 83%
 
 ---
 
@@ -31,7 +31,7 @@ Gehen Sie wie folgt vor, um eine Extraktion zu konfigurieren:
 
    Die Option **[!UICONTROL Gruppierungen verwalten (GROUP BY + HAVING)]** fügt eine weitere Etappe hinzu, die die Filterung des Aggregats ermöglicht (z. B. nach einer bestimmten Art von Bestellung, nach Kunden mit mehr als zehn Bestellungen etc.).
 
-1. Bei Bedarf kann die Ausgabedatei um zusätzliche Spalten ergänzt werden, die die Ergebnisse von Berechnungen oder speziellen Vorgängen bezüglich der Daten aufnehmen. Klicken Sie hierzu auf das Symbol **[!UICONTROL Hinzufügen]**.
+1. Bei Bedarf können Sie der Ausgabedatei neue Spalten hinzufügen, z. B. Berechnungen oder Verarbeitungsergebnisse. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Hinzufügen]** Symbol.
 
    ![](assets/s_advuser_extract_file_add_col.png)
 
@@ -39,7 +39,7 @@ Gehen Sie wie folgt vor, um eine Extraktion zu konfigurieren:
 
    ![](assets/s_advuser_extract_file_add_exp.png)
 
-   Klicken Sie im darauffolgenden Fenster auf **[!UICONTROL Erweiterte Auswahl]**, um die auf die Daten anzuwendende Funktion zu konfigurieren.
+   Sie gelangen dann in das Auswahlfenster. Klicks **[!UICONTROL Erweiterte Auswahl]** , um den auf die Daten anzuwendenden Prozess auszuwählen.
 
    ![](assets/s_advuser_extract_file_advanced_selection.png)
 
@@ -49,7 +49,7 @@ Gehen Sie wie folgt vor, um eine Extraktion zu konfigurieren:
 
 Sie können eine Nachbearbeitung definieren, die während der Datenextraktion ausgeführt werden soll, damit die Dateien komprimiert oder verschlüsselt werden. Dazu muss der gewünschte Befehl auf dem Tab **[!UICONTROL Script]** der Aktivität hinzugefügt werden.
 
-Weiterführende Informationen finden Sie in diesem Abschnitt: [Komprimieren oder Verschlüsseln einer Datei](how-to-use-workflow-data.md#zipping-or-encrypting-a-file).
+Weitere Informationen hierzu finden Sie in diesem Abschnitt: [Datei komprimieren oder verschlüsseln](../../platform/using/zip-encrypt.md)
 
 ![](assets/postprocessing_dataextraction.png)
 
