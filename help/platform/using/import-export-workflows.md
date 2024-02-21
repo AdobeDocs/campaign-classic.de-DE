@@ -9,7 +9,7 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 266ecd49-7101-4ff1-941f-1f9b39b44955
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 100%
@@ -36,7 +36,7 @@ Weitere Informationen zum Gebrauch der Aktivität &quot;Liste lesen&quot; in Wor
 
 Die im Workflow verarbeiteten Daten können aus einer strukturierten Datei stammen, die in Adobe Campaign importiert wird.
 
-Weiterführende Informationen finden Sie im Abschnitt [Laden (Datei)](../../workflow/using/data-loading--file-.md).
+Weiterführende Informationen finden Sie im Abschnitt [Laden (Datei)](../../workflow/using/data-loading-file.md).
 
 Beispiel einer zu importierenden strukturierten Datei:
 
@@ -54,4 +54,4 @@ Nachdem die Daten erfasst wurden, können Sie sie in Ihren Workflows verwenden, 
 
 Workflows sind eine nützliche Methode, einige Ihrer Exportverfahren zu automatisieren oder spezifische Datensätze zu exportieren, nachdem die verfügbaren Datenverwaltungsaktivitäten zur Transformation Ihrer Daten angewendet wurden.
 
-Exportvorgänge werden mit der Aktivität **[!UICONTROL Extraktion (Datei)]** ausgeführt. Weitere Informationen zur Konfiguration und Verwendung der Aktivität finden Sie auf [dieser Seite](../../workflow/using/extraction--file-.md).
+Exportvorgänge werden mit der Aktivität **[!UICONTROL Extraktion (Datei)]** ausgeführt. Weitere Informationen zur Konfiguration und Verwendung der Aktivität finden Sie auf [dieser Seite](../../workflow/using/extraction-file.md).

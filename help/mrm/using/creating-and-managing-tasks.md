@@ -8,10 +8,10 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: cc1200fa-f6d8-4f41-aed1-d1a7f229447a
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '3905'
-ht-degree: 100%
+source-wordcount: '3919'
+ht-degree: 88%
 
 ---
 
@@ -71,7 +71,7 @@ Aufgaben können zudem über das Dashboard einer Kampagne erstellt werden: In di
 
 ![](assets/s_ncs_user_task_create_new_from_op.png)
 
-Nach der Erstellung wird die Aufgabe dem Kampagnenkalender und der Aufgabenliste hinzugefügt. Um sie zu bearbeiten, wählen Sie die Aufgabe im Kalender oder in der Aufgabenübersicht aus und klicken Sie auf den Link **[!UICONTROL Öffnen]**.
+Nachdem eine Aufgabe erstellt wurde, wird sie zum Kampagnenkalender und zur Aufgabenliste hinzugefügt. Um eine Aufgabe zu bearbeiten, wählen Sie sie aus dem Zeitplan aus oder klicken Sie in der Aufgabenübersicht auf ihren Namen und klicken Sie auf **[!UICONTROL Öffnen]** -Link.
 
 ![](assets/s_ncs_user_task_edit_simple.png)
 
@@ -89,7 +89,7 @@ Der Lebenszyklus einer Aufgabe wird im Abschnitt [Lebenszyklus](#life-cycle) bes
 
 Der für eine Aufgabe verantwortliche Benutzer ist als Einziger dazu berechtigt, die Aufgabe zu beenden.
 
-Wenn ein Adobe-Campaign-Benutzer eine Aufgabe erstellt, wird ihm diese automatisch zugewiesen. Im Feld **[!UICONTROL Zugeordneter Benutzer]** kann jedoch auch ein anderer Verantwortlicher ausgewählt werden.
+Wenn ein Adobe Campaign-Benutzer eine Aufgabe erstellt, wird diese ihm standardmäßig automatisch zugewiesen. Um einen anderen Operator auszuwählen, verwenden Sie die **[!UICONTROL Zugeordnet zu]** -Feld.
 
 ![](assets/s_ncs_user_task_edit_simple_general_tab.png)
 
@@ -99,7 +99,7 @@ Wenn ein Adobe-Campaign-Benutzer eine Aufgabe erstellt, wird ihm diese automatis
 
 Neben dem Verantwortlichen können auch andere an der Ausführung der Aufgabe beteiligte Benutzer angegeben werden. Diese können nur den ihnen zugewiesenen Teil der Aufgabe validieren; sie sind nicht dazu berechtigt, sie abzuschließen.
 
-Sie werden über das Symbol **[!UICONTROL Ressourcen]** in der Menüleiste der Aufgabe angegeben. Klicken Sie auf **[!UICONTROL Hinzufügen]** und wählen Sie die jeweiligen Benutzer aus.
+Sie werden mithilfe der Variablen **[!UICONTROL Ressourcen]** in der Symbolleiste der Aufgabe. Klicken Sie auf **[!UICONTROL Hinzufügen]** und wählen Sie die betroffenen Benutzer aus.
 
 ![](assets/s_ncs_user_task_add_resources.png)
 
@@ -121,7 +121,7 @@ Das Profil des zugeordneten Adobe-Campaign-Benutzers kann über das Symbol **[!U
 
 ### Validierung {#reviewers}
 
-Neben den Beteiligten können Benutzer festgelegt werden, die die Aufgabe validieren, nachdem ihre Bearbeitung durch den Verantwortlichen beendet wurde. Klicken Sie hierzu im Fenster der **[!UICONTROL Ressourcen]** in der Mitte links auf die Option **[!UICONTROL Aufgabenvalidierung aktivieren]**. Es können ein individueller Benutzer, eine Benutzergruppe oder eine Benutzerliste ausgewählt werden.
+Neben den Teilnehmern können auch Benutzer definiert werden, die die Aufgabe überprüfen, nachdem sie von der für sie zuständigen Person beendet wurde. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Aufgabenvalidierung aktivieren]** im unteren linken Bereich des **[!UICONTROL Ressourcen]** Fenster. Dabei kann es sich um einen einzelnen Benutzer, eine Benutzergruppe oder eine Benutzerliste handeln.
 
 ![](assets/s_ncs_user_task_edit_resource_validation.png)
 
@@ -133,7 +133,7 @@ Im unteren Teil dieses Fensters wird die Validierungsplanung festgelegt. Standar
 
 ![](assets/s_ncs_user_edit_op_valid_calendar.png)
 
-Der Aufgabenverantwortliche kann die Validierung selbst vornehmen und zwar auch, wenn andere Benutzer hierfür bestimmt wurden. Wenn kein Benutzer für die Validierung bestimmt wurde, werden die Benachrichtigungen an den Verantwortlichen der Aufgabe gesendet. Alle anderen Adobe-Campaign-Benutzer mit **[!UICONTROL Administrator]**-Berechtigungen können die Aufgabe ebenfalls validieren, erhalten jedoch keine Benachrichtigungen.
+Der Aufgabenverantwortliche kann die Validierung selbst vornehmen, selbst wenn andere Benutzer hierfür bereits zugewiesen wurden. Wenn kein validierungsverantwortlicher Benutzer definiert wurde, werden die Benachrichtigungen an den Aufgabenverantwortlichen gesendet. Alle anderen Adobe Campaign-Operatoren mit **[!UICONTROL Administrator]** -Berechtigungen können auch die Aufgabe validieren. Sie erhalten jedoch keine Benachrichtigungen.
 
 ### Referenzierte Dokumente {#documents-referenced}
 
@@ -195,7 +195,7 @@ Auch die Beteiligung externer Dienstleister an der Aufgabenverwaltung kann verze
 
 Öffnen Sie hierzu die Aufgabeneigenschaften und wählen Sie den entsprechenden Dienstleister aus. Die mit dem Dienstleister verbundenen Kostenkategorien werden automatisch im mittleren Abschnitt des Fensters aufgelistet.
 
-Weitere Informationen hierzu finden Sie unter [Erstellen eines Dienstleisters und seiner Kostenkategorien](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
+Weitere Informationen hierzu finden Sie unter [Erstellen eines Dienstleisters und seiner Kostenkategorien](../../campaign/using/providers-stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
 
 Wählen Sie die im Zusammenhang mit der Aufgabe anfallenden Kostenkategorien aus. Geben Sie hierzu den Kostentyp an und fügen Sie gegebenenfalls einen zu belastenden Betrag hinzu.
 
@@ -309,14 +309,14 @@ Aufgaben zur Erstellung einer Marketing-Ressource interagieren mit denen ihnen z
 * Die Benutzer können wie gewohnt mit der Ressource weiterarbeiten (sie down- und uploaden, sperren und entsperren), ohne dass sich dies auf die Aufgabe auswirkt.
 * Die Validierung und Veröffentlichung der Ressource können über die Aufgabe erfolgen: Wenn die Option **[!UICONTROL Marketing-Ressource veröffentlichen]** aktiv ist, wird die Ressource mit Abschluss der Aufgabe automatisch validiert und veröffentlicht. Wenn die Option nicht aktiv ist, findet keine Interaktion zwischen Aufgabe und Ressource statt: Die Bearbeitung einer von beiden wirkt sich in keiner Weise auf die andere aus.
 
-  Sie können eine Reihe von miteinander verbundenen Aufgaben erstellen, um einen vollständigen Validierungszyklus festzulegen. Aktivieren Sie die Option **[!UICONTROL Marketing-Ressource veröffentlichen]** nur für die letzte Aufgabe: Alle Aufgaben müssen demnach abgeschlossen sein, um die Ressource zu veröffentlichen. Untergeordnete Aufgaben übernehmen automatisch die in der übergeordneten Aufgabe ausgewählte Ressource.
+  Sie können eine Reihe miteinander verbundener Aufgaben verwenden, um einen vollständigen Validierungszyklus festzulegen. Überprüfen Sie die **[!UICONTROL Marketing-Ressource veröffentlichen]** nur für die letzte Aufgabe: Alle Aufgaben müssen abgeschlossen sein, damit die Ressource veröffentlicht werden kann. Wenn Sie außerdem eine untergeordnete Marketing-Ressourcenaufgabe erstellen, wird die Ressource automatisch in der untergeordneten Aufgabe ausgewählt.
 
    * **Über die Ressource**: Wenn die Ressource validiert oder zur Validierung unterbreitet wird, hat dies keinerlei Auswirkung auf die Aufgabe.
    * **Über die Aufgabe**: Wenn die Option **[!UICONTROL Marketing-Ressource veröffentlichen]** in der Aufgabe aktiviert wird, wird die Ressource bei Abschluss der Aufgabe automatisch validiert und veröffentlicht (siehe unten). Wenn die Option nicht aktiviert ist, findet keine Interaktion zwischen Aufgabe und Ressource statt: Die Bearbeitung einer von beiden wirkt sich in keiner Weise auf die andere aus.
 
 #### Aufgabe zur Erstellung einer Marketing-Ressource konfigurieren {#configuring-a-marketing-resource-creation-task}
 
-Die Validierung der Aufgabe und die des Inhalts der Ressource müssen nicht vom gleichen Benutzer erfolgen. Wenn die Option **[!UICONTROL Marketing-Ressource veröffentlichen]** aktiviert wurde (siehe unten), ist der Aufgabenvalidierer berechtigt, auch den Inhalt der Ressource zu validieren, da der Abschluss der Aufgabe automatisch die Ressource validiert. Wenn kein Validerer bestimmt ist, fällt die Validierung dem Verantwortlichen der Aufgabe zu.
+Die Person, die die Aufgabe überprüft, ist nicht notwendig, die Person, die den in der Ressource definierten Inhalt prüft. Wenn die Variable **[!UICONTROL Marketing-Ressource veröffentlichen]** aktiviert ist (siehe unten), ist der Aufgabenvalidierer berechtigt, den Ressourceninhalt zu validieren, da der Abschluss der Aufgabe die Ressource automatisch validiert (oder, wenn kein Validierer definiert ist, der Aufgabenmanager).
 
 ![](assets/mrm_task_asset_creation.png)
 
@@ -378,7 +378,7 @@ Bei der Erstellung müssen folgende Elemente der Aufgabe erfasst werden:
 
   ![](assets/mrm_task_notif_dashboard_msg.png)
 
-Es besteht die Möglichkeit, der Aufgabe und der Benachrichtigungs-E-Mail eine Datei anzuhängen. Klicken Sie hierzu auf das Symbol **[!UICONTROL Dokumente]** in der oberen Symbolleiste.
+Sie können der Aufgabe und der Benachrichtigungs-E-Mail einen Anhang hinzufügen. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Dokumente]** in der Symbolleiste in der oberen rechten Ecke.
 
 ## Lebenszyklus {#life-cycle-1}
 
@@ -429,8 +429,8 @@ Der Status einer Aufgabe kann in der Aufgabenübersicht eingesehen werden. Er wi
 Eine Aufgabe kann folgende Status haben: **[!UICONTROL Geplant]**, **[!UICONTROL Gestartet]**, **[!UICONTROL Abgeschlossen]**, **[!UICONTROL Abgebrochen]**, **[!UICONTROL Validierung ausstehend]** und **[!UICONTROL Abgelehnt]**.
 
 * Bei ihrer Erstellung ist eine Aufgabe **[!UICONTROL Geplant]**, sofern ihr Beginn in der Zukunft liegt. Nach der Erstellung behält sie diesen Status, bis der Zeitpunkt ihres Beginns erreicht ist.
-* Nach Beginn ist die Aufgabe **[!UICONTROL Gestartet]**. Wenn der Verantwortliche die Aufgabe schließt, erhält diese den Status **[!UICONTROL Abgeschlossen]**.
-* Wurde ein Validerer bestimmt, erhält die Aufgabe nun den Status **[!UICONTROL Validierung ausstehend]**, bis die Validierung erfolgt. Wenn der Validerer die Aufgabe ablehnt, wird der Aufgabenstatus entsprechend zu **[!UICONTROL Abgelehnt]**.
+* Nach dem Start lautet die Aufgabe **[!UICONTROL Gestartet]**. Wenn der Verantwortliche die Aufgabe schließt, wird sie in **[!UICONTROL Abgeschlossen]**.
+* Wenn ein Validierer definiert wurde, wird die Aufgabe **[!UICONTROL Ausstehende Genehmigung]** wenn der Verantwortliche sie schließt und bis der Validierer sie genehmigt. Wenn der Validierer sie ablehnt, wird die Aufgabe **[!UICONTROL Abgelehnt]**.
 * Eine Aufgabe kann von ihrem Verantwortlichen über das Aufgaben-Dashboard oder die **[!UICONTROL Aufgabenübersicht]** durch Klick auf die Schaltfläche **[!UICONTROL Abbrechen]** abgebrochen werden.
 * Geben Sie zur Aufgabenplanung einen Beginn an, der in der Zukunft liegt. Daraufhin können Sie den an der Aufgabe beteiligten Adobe Campaign-Benutzern eine Erstbenachrichtigung schicken. Siehe [Vollständiger Lebenszyklus einer Aufgabe](#complete-task-life-cycle).
 
@@ -462,7 +462,7 @@ Im Folgenden werden die Etappen des vollständigen Zyklus einer Aufgabe dargeste
 
    Eine in der Zukunft geplante Aufgabe erhält bei ihrer Erstellung den Status **[!UICONTROL Geplant]**.
 
-1. Wenn der Zeitpunkt des Aufgabenbeginns erreicht ist, werden der Verantwortliche und die Beteiligten mit einer E-Mail hiervon in Kenntnis gesetzt. Die Aufgabe erhält den Status **[!UICONTROL Gestartet]**.
+1. Am Beginn der Aufgabe erhalten der Verantwortliche und die Teilnehmer eine Benachrichtigung, dass die Aufgabe gestartet wurde. Der Status ändert sich in **[!UICONTROL Gestartet]**.
 1. Wenn ein Beteiligter seinen Teil der Aufgabe abgeschlossen hat, kann er die Aufgabe auf zweierlei Weisen erfüllen:
 
    * über die Benachrichtigungs-E-Mail;
@@ -509,4 +509,4 @@ Im Folgenden werden die Etappen des vollständigen Zyklus einer Aufgabe dargeste
 
    >[!NOTE]
    >
-   >Der Verantwortliche kann den Lebenszyklus einer Aufgabe nach ihrem Abschluss neu starten. Öffnen Sie hierzu die Aufgabe und klicken Sie auf den Link **[!UICONTROL Aufgabe zurücksetzen, um sie erneut auszuführen]** im unteren Abschnitt ihres Dashboards.
+   >Nach Abschluss einer Aufgabe kann ihr Lebenszyklus von dem Verantwortlichen neu initialisiert werden. Öffnen Sie dazu die Aufgabe und klicken Sie auf die Schaltfläche **[!UICONTROL Aufgabe zurücksetzen, um sie erneut auszuführen..]** unten im Dashboard.

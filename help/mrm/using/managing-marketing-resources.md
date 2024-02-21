@@ -8,10 +8,10 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: f661e1d1-de2f-4c6a-bbff-e3ffcd1831f0
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '1452'
-ht-degree: 100%
+ht-degree: 77%
 
 ---
 
@@ -31,17 +31,17 @@ Um eine Ressource hinzuzufügen, klicken Sie auf die Schaltfläche **[!UICONTROL
 
 ![](assets/s_ncs_user_mkg_resource_add.png)
 
-Um eine Ressource auf dem Adobe-Campaign-Server verfügbar zu machen, legen Sie diese per Drag &amp; Drop im angegeben Bereich des Fensters ab oder klicken Sie auf den Link **[!UICONTROL Datei auf den Server laden...]**, um die Datei auszuwählen.
+Um eine Ressource auf dem Adobe Campaign-Server verfügbar zu machen, müssen Sie die gewünschte Ressource hinzufügen, indem Sie sie per Drag-and-Drop in den mittleren Bereich des Editors ziehen. Sie können auch auf die **[!UICONTROL Datei auf den Server laden...]** -Link.
 
 ![](assets/s_ncs_user_mkg_resource_file.png)
 
 Über eine Bestätigungsnachricht kann der Upload gestartet werden.
 
-Nach Abschluss des Uploads wird die Ressource der Liste verfügbarer Ressourcen hinzugefügt. Adobe-Campaign-Benutzer können sie über den Tab **[!UICONTROL Vorschau]** ansehen oder über den Tab **[!UICONTROL Bearbeiten]** eine Kopie erstellen, um Änderungen vorzunehmen, bzw. die Datei auf dem Server aktualisieren.
+Nach Abschluss des Uploads wird die Ressource der Liste der verfügbaren Ressourcen hinzugefügt. Sie ist für Adobe Campaign-Benutzer zugänglich. Sie können sie anzeigen (über die **[!UICONTROL Vorschau]** , erstellen Sie eine Kopie, um sie zu ändern, oder aktualisieren Sie die Datei auf dem Server (mithilfe der **[!UICONTROL Bearbeiten]** Registerkarte).
 
 ![](assets/s_ncs_user_mkg_resource_extract.png)
 
-Bestimmen Sie in den Rubriken **[!UICONTROL Allgemein]** und **[!UICONTROL Verfolgung]** des -Tabs die für Kontrolle, Verfolgung und Validierung der Ressource verantwortlichen Benutzer oder Benutzergruppen.
+Klicken Sie auf **[!UICONTROL Allgemein]** zur Auswahl der Benutzer oder Benutzergruppen, die für die Überwachung, Verfolgung und Validierung dieser Ressource zuständig sind. Die Auswahl des Validierers erfolgt über das **[!UICONTROL Erweiterte Parameter]** -Link.
 
 * Der Benutzer, dem die Ressource zugeordnet wurde, ist für ihre Verfolgung verantwortlich.
 * Der für die Validierung verantwortliche Benutzer wird benachrichtigt, sobald der Validierungsprozess der Ressource gestartet wurde.
@@ -50,7 +50,7 @@ Bestimmen Sie in den Rubriken **[!UICONTROL Allgemein]** und **[!UICONTROL Verfo
 
 * Bei Bedarf kann zudem in der Rubrik Verfolgung ein Korrekturleser bestimmt werden.
 
-Sie können ein unverbindliches Verfügbarkeitsdatum für die Ressource festlegen. Nach diesem Datum erscheint die Ressource als **[!UICONTROL überfällig]**.
+Sie können ein unverbindliches Verfügbarkeitsdatum für die Ressource angeben. Nach diesem Datum wird sie mit dem Status **[!UICONTROL Überfällig]** angezeigt.
 
 ## Kollaboratives Arbeiten an Ressourcen {#collaborative-work-on-resources}
 
@@ -62,7 +62,7 @@ Sie haben die Möglichkeit, eine Marketing-Ressource jederzeit zu ändern und zu
 
 >[!NOTE]
 >
->Die Registerkarte **[!UICONTROL Verlauf]** enthält das Protokoll der Downloads und Aktualisierungen der Ressource. Über die Schaltfläche **[!UICONTROL Details]** kann die ausgewählte Version angezeigt werden.
+>Die **[!UICONTROL Geschichte]** enthält das Download- und Aktualisierungsprotokoll für die Ressource. Die **[!UICONTROL Details]** -Schaltfläche können Sie die ausgewählte Version anzeigen.
 
 ### Ressourcen sperren/entsperren {#locking-unlocking-a-resource}
 
@@ -106,19 +106,19 @@ Die Funktionsweise von Foren in Adobe Campaign wird im Abschnitt [Diskussionfore
 
 Bei der Erstellung einer Ressource werden Adobe-Campaign-Benutzer für den Entwurf sowie die Korrektur, Validerung und Veröffentlichung der Ressource bestimmt. Für diese Vorgänge kann eine Dauer definiert werden.
 
-Der Tab **[!UICONTROL Verfolgung]** ermöglicht die Überprüfung der an der Ressource vorgenommenen Änderungen: Validierungen, Validierungsablehnungen, Kommentare und Publikationen.
+Der Tab **[!UICONTROL Verfolgung]** ermöglicht die Überprüfung der an der Ressource vorgenommenen Änderungen: Validierungen, Validierungsablehnungen, Kommentare und Veröffentlichungen.
 
 Im Tab **[!UICONTROL Verlauf]** werden die für die jeweilige Ressource durchgeführten Dateiübertragungen angezeigt.
 
 ### Validierungsprozess {#approval-process}
 
-Das erwartete Verfügbarkeitsdatum wird in den Details der Ressource angezeigt, sofern es im Tab **[!UICONTROL Verfolgung]** angegeben wurde. Bei Erreichen des Datums kann der Validierungsprozess im Ressourcen-Dashboard über die Schaltfläche **[!UICONTROL Zur Validierung unterbreiten]** gestartet werden. Der Status der Ressource wechselt zu **[!UICONTROL Validierung in Gang]**.
+Das erwartete Verfügbarkeitsdatum wird in den Ressourcendetails angezeigt, wenn es in der Variablen **[!UICONTROL Tracking]** Registerkarte. Sobald dieses Datum erreicht ist, können Sie den Validierungsprozess mit der **[!UICONTROL Zur Genehmigung einreichen]** im Ressourcen-Dashboard. Der Ressourcenstatus ändert sich dann in **[!UICONTROL Genehmigung läuft]**.
 
 Eine Ressource kann über die Schaltfläche **[!UICONTROL Ressource validieren]** in ihrem Dashboard validiert werden.
 
 ![](assets/s_ncs_user_task_valid_date.png)
 
-Berechtigte Benutzer können die Validierung daraufhin akzeptieren oder ablehnen. Diese Aktion kann über den Link in der Benachrichtigungs-E-Mail oder über die Schaltfläche **[!UICONTROL Validieren]** in der Konsole ausgeführt werden.
+Autorisierte Benutzerinnen und Benutzer können dann die Validierung akzeptieren oder ablehnen. Diese Aktion ist entweder über die gesendete E-Mail (durch Klicken auf den Link in der Benachrichtigungs-E-Mail) oder über die Konsole (durch Klicken auf die Schaltfläche **[!UICONTROL Genehmigen]** ).
 
 Im Validierungsfenster kann ein Kommentar eingegeben werden.
 
@@ -144,7 +144,7 @@ Die Ressourcenveröffentlichung kann auch über einen Workflow automatisiert wer
 
 Eine Ressource zu veröffentlichen bedeutet, sie verfügbar zu machen, zum Beispiel zur Verwendung in einer Aufgabe. Der eigentliche Vorgang der Veröffentlichung hängt von der Art der Ressource ab: Ein Flyer zum Beispiel kann zum Druck als Datei an einen Dienstleister geschickt oder aber auf einer Webseite online gestellt werden.
 
-Damit Adobe Campaign die Veröffentlichung durchführt, muss ein entsprechender Workflow erstellt und dieser mit der Ressource verbunden werden. Öffnen Sie hierzu den Link **[!UICONTROL Erweiterte Parameter]** der Ressource und wählen Sie den gewünschten Workflow im Feld **[!UICONTROL Anschlussvorgang]** aus.
+Damit Adobe Campaign veröffentlichen kann, müssen Sie einen geeigneten Workflow erstellen und ihn mit der Ressource verknüpfen. Öffnen Sie dazu die **[!UICONTROL Erweiterte Einstellungen]** und wählen Sie den gewünschten Workflow im **[!UICONTROL Nachbearbeitung]** -Feld.
 
 ![](assets/mrm_asset_postprocessing_workflow.png)
 
@@ -153,7 +153,7 @@ Der Workflow wird ausgeführt, wenn
 * der Validierer der Veröffentlichung (oder, wenn dieser nicht definiert wurde, der Ressourcen-Verantwortliche) auf **[!UICONTROL Ressource veröffentlichen]** klickt
 * die Ressource über eine Aufgabe zur Erstellung einer Marketing-Ressource verwaltet wird und die Aufgabe den Status **[!UICONTROL Abgeschlossen]** erhält; zudem muss die Option **[!UICONTROL Marketing-Ressource veröffentlichen]** in der Aufgabe aktiviert worden sein (siehe [Aufgabe „Erstellung einer Marketing-Ressource“](../../mrm/using/creating-and-managing-tasks.md#marketing-resource-creation-task))
 
-Wenn der Workflow nicht unmittelbar gestartet wird (zum Beispiel wenn die Workflow-Engine angehalten ist), erhält die Ressource den Status **[!UICONTROL Veröffentlichung ausstehend]**. Sobald der Workflow startet, wechselt der Status in **[!UICONTROL Veröffentlicht]**. Dieser Status berücksichtigt keine möglichen Fehler im Veröffentlichungsprozess. Überprüfen Sie den Status Ihres Workflows, um sicherzustellen, dass dieser korrekt ausgeführt wurde.
+Wenn ein Workflow nicht sofort gestartet wird (z. B. wenn der Workflow angehalten wird), ändert sich der Status der Ressource in **[!UICONTROL Veröffentlichung ausstehend]**. Nach dem Start des Workflows ändert sich der Status der Ressource in **[!UICONTROL Veröffentlicht]**. Dieser Status berücksichtigt keine möglichen Fehler im Veröffentlichungsprozess. Überprüfen Sie den Status Ihres Workflows, um sicherzustellen, dass er ordnungsgemäß ausgeführt wurde.
 
 ## Verknüpfung von Ressourcen mit einer Kampagne {#linking-a-resource-to-a-campaign}
 
@@ -195,7 +195,7 @@ Sie können eine Marketing-Ressource mit einem oder mehreren Lagern verknüpfen,
 
 >[!NOTE]
 >
->Nähere Informationen zur Lagerverwaltung in Adobe Campaign erhalten Sie im Abschnitt [Lagerverwaltung ](../../campaign/using/providers--stocks-and-budgets.md#stock-management).
+>Nähere Informationen zur Lagerverwaltung in Adobe Campaign erhalten Sie im Abschnitt [Lagerverwaltung ](../../campaign/using/providers-stocks-and-budgets.md#stock-management).
 
 Um eine Marketing-Ressource mit einem Lager zu verknüpfen, öffnen Sie die Lagerübersicht und bearbeiten oder erstellen Sie ein Lager. Fügen Sie eine Lagerposition hinzu und wählen Sie die entsprechende Marketing-Ressource aus.
 
@@ -213,7 +213,7 @@ Wenn der Lagerbestand unzureichend ist, wird den zuständigen Benutzern ein Warn
 
 ## Erweiterte Funktionen {#advanced-functions}
 
-Über das Dashboard der Marketing-Ressourcen können gängige Prozesse ausgeführt werden: Hinzufügen, Bearbeiten, Sperren/Entsperren, Validieren, Veröffentlichen. Über den Adobe-Campaign-Navigationsbaum können Sie andere Typen von Marketing-Ressourcen erstellen und auf erweiterte Funktionen zugreifen. Klicken Sie hierzu auf der Adobe-Campaign-Startseite auf die **[!UICONTROL Explorer]**-Schaltfläche.
+Über das Dashboard der Marketing-Ressourcen können gängige Vorgänge ausgeführt werden: Hinzufügen, Bearbeiten, Sperren/Entsperren, Genehmigen, Veröffentlichen. Über den Adobe Campaign-Navigationsbaum können Sie weitere Marketing-Ressourcen erstellen und auf erweiterte Funktionen zugreifen. Klicken Sie dazu auf **[!UICONTROL Explorer]** auf der Adobe Campaign-Startseite.
 
 Marketing-Ressourcen werden standardmäßig im Knoten **[!UICONTROL MRM > Marketing-Ressourcen]** des Navigationsbaums gespeichert.
 

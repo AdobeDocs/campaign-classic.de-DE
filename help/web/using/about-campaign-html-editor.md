@@ -6,7 +6,7 @@ feature: Web Apps, Web Forms, Landing Pages, Email Design
 badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 exl-id: f5d65e89-6b18-482b-97d8-11ab94f6775e
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '268'
 ht-degree: 100%
@@ -50,11 +50,11 @@ Um eine einfache **Web-Anwendung** zu erstellen, müssen Sie folgende Schritte a
 
 Um einen **E-Mail-Versand** zu erstellen, müssen Sie folgende Schritte ausführen:
 
-1. Versand aus einer DCE-Vorlage erstellen – [Weitere Informationen](use-case--creating-an-email-delivery.md)
+1. Versand aus einer DCE-Vorlage erstellen – [Weitere Informationen](use-case-creating-an-email-delivery.md)
 1. Wählen Sie vorhandenen Inhalt aus oder erstellen Sie Inhalt aus einer [Standardvorlage](template-management.md).
 1. Bearbeiten und konfigurieren Sie den Online-Inhalt.
 1. Versand senden – [Weitere Informationen](../../delivery/using/steps-about-delivery-creation-steps.md)
 
 >[!NOTE]
 >
->Ein vollständiges Implementierungsbeispiel im Kontext eines E-Mail-Versands finden Sie in [diesem Anwendungsfall](use-case--creating-an-email-delivery.md).
+>Ein vollständiges Implementierungsbeispiel im Kontext eines E-Mail-Versands finden Sie in [diesem Anwendungsfall](use-case-creating-an-email-delivery.md).

@@ -7,8 +7,8 @@ badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Seed Address
 role: User
 exl-id: ae6eb4b0-b419-4661-9d63-e758f0242a0f
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: ht
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+workflow-type: tm+mt
 source-wordcount: '358'
 ht-degree: 100%
 
@@ -38,7 +38,7 @@ Drei Einfügemodi stehen zur Verfügung:
 
    Klicken Sie auf den Link **[!UICONTROL Dynamische Bedingung bearbeiten...]** und geben Sie dann die Auswahlkriterien für die Testadressen an. Sie können beispielsweise alle in einem bestimmten Ordner enthaltenen Adressen oder die zu einer bestimmten Abteilung Ihres Unternehmens gehörigen Testadressen auswählen.
 
-   Ein Beispiel hierfür finden Sie im Abschnitt [Anwendungsbeispiel: Auswahl von Testadressen nach Kriterien](use-case--selecting-seed-addresses-on-criteria.md).
+   Ein Beispiel hierfür finden Sie im Abschnitt [Anwendungsbeispiel: Auswahl von Testadressen nach Kriterien](use-case-selecting-seed-addresses-on-criteria.md).
 
 >[!NOTE]
 >

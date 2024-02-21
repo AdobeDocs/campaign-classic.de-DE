@@ -9,9 +9,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: e612a4e7-f4ef-4db4-afab-5544b73430d3
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '344'
 ht-degree: 100%
 
 ---
@@ -34,9 +34,9 @@ Unsere intuitiven Handbücher bieten Ihnen einen einfachen Einstieg in Adobe Cam
 Lernen Sie Adobe Campaign besser kennen, indem Sie sich die folgenden Anwendungsbeispiele durchlesen:
 
 * [Erstellung eines auf das E-Mail-Format bezogenen Filters](../../platform/using/use-case.md#creating-a-filter-on-the-email-format-of-subscribers): In diesem Anwendungsbeispiel wird die Erstellung eines Filters beschrieben, der Newsletter-Abonnements entsprechend des von den Empfängern angegebenen E-Mail-Formats filtert.
-* [Anmeldung mit zweifacher Bestätigung](../../web/using/use-cases--web-forms.md#create-a-subscription--form-with-double-opt-in): Hier erfahren Sie, wie Sie eine Abonnementbestätigungsanfrage für eine zweifache Bestätigung senden, um sicherzustellen, dass sich der Empfänger absichtlich angemeldet hat.
-* [Erstellen eines E-Mail-Versands](../../web/using/use-case--creating-an-email-delivery.md): Hier erfahren Sie, wie Sie mit dem Digital Content Editor einen E-Mail-Versand erstellen.
-* [Erstellen von Übersichten](../../web/using/use-cases--creating-overviews.md): Erstellen Sie Übersichts-Webanwendungen, um alle Webanwendungen in Ihrer Datenbank anzuzeigen.
+* [Anmeldung mit zweifacher Bestätigung](../../web/using/use-cases-web-forms.md#create-a-subscription--form-with-double-opt-in): Hier erfahren Sie, wie Sie eine Abonnementbestätigungsanfrage für eine zweifache Bestätigung senden, um sicherzustellen, dass sich der Empfänger absichtlich angemeldet hat.
+* [Erstellen eines E-Mail-Versands](../../web/using/use-case-creating-an-email-delivery.md): Hier erfahren Sie, wie Sie mit dem Digital Content Editor einen E-Mail-Versand erstellen.
+* [Erstellen von Übersichten](../../web/using/use-cases-creating-overviews.md): Erstellen Sie Übersichts-Webanwendungen, um alle Webanwendungen in Ihrer Datenbank anzuzeigen.
 * [Anwendungsbeispiel für Workflow](../../workflow/using/about-workflow-use-cases.md): Mithilfe dieser Anwendungsbeispiele lernen Sie die verschiedenen Verwendungsmöglichkeiten von Workflows kennen.
 
 ## Eigenständig lernen {#how-to-videos}

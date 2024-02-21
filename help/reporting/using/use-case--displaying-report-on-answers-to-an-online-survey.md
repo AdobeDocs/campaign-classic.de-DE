@@ -6,10 +6,10 @@ badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Reporting, Monitoring, Surveys
 exl-id: 6be12518-86d1-4a13-bbc2-b2ec5141b505
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 100%
+source-wordcount: '518'
+ht-degree: 95%
 
 ---
 
@@ -37,7 +37,7 @@ Voraussetzung für die Durchführung dieses Anwendungsbeispiels sind ein Fragebo
 
 Gehen Sie wie folgt vor, um die Antworten der Umfrage abzurufen:
 
-1. Erstellen Sie einen Workflow mit der Aktivität **[!UICONTROL Umfrageantworten]**. Weitere Informationen zur Verwendung dieser Aktivität finden Sie in [diesem Abschnitt](../../surveys/using/publish--track-and-use-collected-data.md#using-the-collected-data).
+1. Erstellen eines Workflows und Platzieren eines **[!UICONTROL Antworten auf eine Umfrage]** -Aktivität. Weitere Informationen zur Verwendung dieser Aktivität finden Sie unter [diesem Abschnitt](../../surveys/using/publish-track-and-use-collected-data.md#using-the-collected-data).
 1. Öffnen Sie die Aktivität und wählen Sie die Umfrage aus, deren Antworten analysiert werden sollen.
 1. Aktivieren Sie die Option **[!UICONTROL Alle Antwortdaten auswählen]**, um alle verfügbaren Informationen abzurufen.
 

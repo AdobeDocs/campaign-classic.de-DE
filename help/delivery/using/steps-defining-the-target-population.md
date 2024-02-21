@@ -7,10 +7,10 @@ badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Audiences, Proofs
 role: User
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
-workflow-type: ht
-source-wordcount: '1757'
-ht-degree: 100%
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+workflow-type: tm+mt
+source-wordcount: '1752'
+ht-degree: 90%
 
 ---
 
@@ -44,11 +44,11 @@ Um die Versandempfänger auszuwählen, gehen Sie wie folgt vor:
 
    ![](assets/s_ncs_user_wizard_email02b.png)
 
-   Sie können zwischen verschiedenen Empfängerarten wählen. Markieren Sie den gewünschten Filter und klicken Sie auf **[!UICONTROL Weiter]**. Für jede Zielgruppe können Sie durch Klick auf den Tab **[!UICONTROL Vorschau]** die entsprechenden Empfänger anzeigen. Für gewisse Zieltypen erlaubt die Schaltfläche **[!UICONTROL Zielgruppe einschränken]** die Kombination verschiedener Filterkriterien.
+   Sie können Empfänger anhand der in der Datenbank definierten Zielgruppentypen auswählen. Um einen Zieltyp zu verwenden, wählen Sie ihn aus und klicken Sie auf **[!UICONTROL Nächste]**. Sie können die betroffenen Empfänger für jede Zielgruppe anzeigen, indem Sie auf die Schaltfläche **[!UICONTROL Vorschau]** Registerkarte. Bei bestimmten Zieltypen wird die **[!UICONTROL Zielgruppe verfeinern]** -Schaltfläche können Sie mehrere Targeting-Kriterien kombinieren.
 
    Folgende Zieltypen werden standardmäßig vorgeschlagen:
 
-   * **[!UICONTROL Filterbedingungen]**: Erstellung einer Abfrage mit der Möglichkeit der Vorschau auf das Ergebnis. Näheres zur Erstellung von Abfragen finden Sie in [diesem Abschnitt](../../platform/using/creating-filters.md#creating-an-advanced-filter).
+   * **[!UICONTROL Filterbedingungen]** : ermöglicht die Erstellung einer Abfrage und die Anzeige des Ergebnisses. Die Methode zum Definieren von Abfragen wird im Abschnitt [diesem Abschnitt](../../platform/using/creating-filters.md#creating-an-advanced-filter).
    * **[!UICONTROL Abonnenten eines Informationsdienstes]**: Angabe des Newsletters, den die Empfänger abonniert haben müssen, um in die Zielgruppe des Versands aufgenommen zu werden.
 
      ![](assets/s_ncs_user_wizard_email02c.png)
@@ -71,8 +71,8 @@ Um die Versandempfänger auszuwählen, gehen Sie wie folgt vor:
 
    * **[!UICONTROL Empfänger aus einem Ordner]**: Angabe des Ordners, der die Empfänger erhält.
    * **[!UICONTROL Empfänger]**: Auswahl eines spezifischen Empfängers aus der Datenbank.
-   * **[!UICONTROL Empfängerliste]**: Auswahl einer die Empfänger enthaltenden Liste. Weiterführende Informationen zu Listen finden Sie in [diesem Abschnitt](../../platform/using/creating-and-managing-lists.md).
-   * **[!UICONTROL Benutzerfilter]**: ermöglicht den Zugriff auf vom Benutzer erstellte Filter. Weiterführende Informationen zu Benutzerfiltern finden Sie in [diesem Abschnitt](../../platform/using/creating-filters.md#saving-a-filter).
+   * **[!UICONTROL Empfängerliste]** : Auswahl einer Empfängerliste. Listen werden im Abschnitt [diesem Abschnitt](../../platform/using/creating-and-managing-lists.md).
+   * **[!UICONTROL Benutzerfilter]** : Mit dieser Option können Sie auf die vorkonfigurierten Filter zugreifen und diese als Filterkriterien für Profile in der Datenbank verwenden. Vorkonfigurierte Filter werden im Abschnitt [diesem Abschnitt](../../platform/using/creating-filters.md#saving-a-filter).
    * Die Option **[!UICONTROL Empfänger dieses Segments ausschließen]** ermöglicht es, die Zielbestimmung umzukehren. Der Versand wird nicht an die Empfänger gerichtet, die den Filterkriterien entsprechen, sondern im Gegenteil an jene, die ihnen nicht entsprechen. Kreuzen Sie in diesem Fall die Option an und konfigurieren Sie die Zielgruppe wie zuvor beschrieben.
 
      ![](assets/s_ncs_user_wizard_email02g.png)
@@ -95,7 +95,7 @@ Gehen Sie dazu wie folgt vor:
 
    ![](assets/s_ncs_user_wizard_external_recipients.png)
 
-1. Standardmäßig werden Empfänger in die Datenbank importiert. Sie müssen das **[!UICONTROL Zielgruppen-Mapping]** auswählen. Weitere Informationen zu Zielgruppen-Zuordnungen finden Sie unter [Auswahl einer Zielgruppen-Zuordnung](selecting-a-target-mapping.md).
+1. Standardmäßig werden Empfänger in die Datenbank importiert. Sie müssen die **[!UICONTROL Zielgruppen-Mapping]**. Weitere Informationen zu Zielgruppen-Zuordnungen finden Sie unter [Auswahl einer Zielgruppen-Zuordnung](selecting-a-target-mapping.md).
 
    Sie können auch **[!UICONTROL Empfänger nicht in die Datenbank importieren]** auswählen.
 
@@ -174,7 +174,7 @@ Um die Testversand-Zielgruppe auszuwählen, gehen Sie wie folgt vor:
 
 >[!NOTE]
 >
->Im Regelfall kann die Testversand-Zielgruppe in die Hauptzielgruppe eingeschlossen werden. Kreuzen Sie hierfür die entsprechende Option im unteren Bereich des **[!UICONTROL Hauptzielgruppe]**-Tabs an.
+>Normalerweise kann die Zielgruppe für den Testversand zur Hauptzielgruppe hinzugefügt werden. Wählen Sie dazu die entsprechende Option im unteren Bereich des **[!UICONTROL Hauptziel]** Registerkarte.
 
 ## Definieren einer spezifischen Testversand-Zielgruppe {#defining-a-specific-proof-target}
 
@@ -226,7 +226,7 @@ Siehe auch:
 
 * [Auswählen der Zielgruppe für den Testversand](#selecting-the-proof-target)
 * [Über Testadressen](about-seed-addresses.md)
-* [Anwendungsbeispiel: Auswählen von Testadressen nach Kriterien](use-case--selecting-seed-addresses-on-criteria.md)
+* [Anwendungsbeispiel: Auswählen von Testadressen nach Kriterien](use-case-selecting-seed-addresses-on-criteria.md)
 
 ## Anleitungsvideo {#seeds-and-proofs-video}
 

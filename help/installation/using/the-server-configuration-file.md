@@ -1,21 +1,21 @@
 ---
 product: campaign
-title: Die Server-Konfigurationsdatei
-description: Die Server-Konfigurationsdatei
+title: Die Serverkonfigurationsdatei
+description: Die Serverkonfigurationsdatei
 feature: Installation, Instance Settings
 badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '8056'
-ht-degree: 40%
+source-wordcount: '8075'
+ht-degree: 6%
 
 ---
 
-# Die Server-Konfigurationsdatei{#the-server-configuration-file}
+# Die Serverkonfigurationsdatei{#the-server-configuration-file}
 
 
 
@@ -37,7 +37,7 @@ Die ersten Parameter befinden sich innerhalb der **shared** Knoten. Diese bezieh
 * [ims](#ims)
 * [javaScript](#javascript)
 * [mailExchanger](#mailexchanger)
-* [module](#module)
+* [Modul](#module)
 * [Monitoring](#monitoring)
 * [ooconv](#ooconv)
 * [proxyConfig](#proxyconfig)
@@ -80,25 +80,25 @@ Im Folgenden finden Sie die verschiedenen Parameter der **Authentifizierung** no
  <tbody> 
   <tr> 
    <td> checkIPConsistent<br /> </td> 
-   <td> Prüfung der IP-Adressen aktivieren.<br /> </td> 
+   <td> Aktivieren Sie die IP-Adressprüfung.<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> defaultMode<br /> </td> 
-   <td> Standard-Authentifizierungsmodus.<br /> </td> 
+   <td> Standardidentifizierungsmodus.<br /> </td> 
    <td> String <br /> </td> 
    <td> 'nl'<br /> </td> 
   </tr> 
   <tr> 
    <td> longSessionTimeOutSec<br /> </td> 
-   <td> Zeitbeschränkung langer Sitzungen in Sekunden.<br /> </td> 
+   <td> Zeitüberschreitung bei langen Sitzungen in Sekunden.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1296000<br /> </td> 
   </tr> 
   <tr> 
    <td> securityTimeOutSec<br /> </td> 
-   <td> Zeitbeschränkung des Security-Tokens.<br /> </td> 
+   <td> Zeitüberschreitung des Sicherheitstokens in Sekunden.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 86400<br /> </td> 
   </tr> 
@@ -110,7 +110,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **Authentifizierung** no
   </tr> 
   <tr> 
    <td> sessionTimeOutSec<br /> </td> 
-   <td> Zeitbeschränkung in Sekunden.<br /> </td> 
+   <td> Sitzungs-Timeout in Sekunden.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 86400<br /> </td> 
   </tr> 
@@ -133,7 +133,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **Authentifizierung > XT
  <tbody> 
   <tr> 
    <td> internalPassword<br /> </td> 
-   <td> Passwort des Internal-Kontos.<br /> </td> 
+   <td> Passwort des internen Kontos.<br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -204,7 +204,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **dataStore** Knoten. Hi
   </tr> 
   <tr> 
    <td> uploadAllowlist<br /> </td> 
-   <td> Dateien, die hochgeladen werden dürfen, durch ',' getrennt. String muss ein gültiger regulärer Java-Ausdruck sein. Siehe <a href="file-res-management.md" target="_blank">Eingrenzen hochladbarer Dateien</a>.<br /> </td> 
+   <td> Zulässige Dateien, die durch ',' getrennt heruntergeladen werden. Die Zeichenfolge muss ein gültiger, regulärer Java-Ausdruck sein. Siehe <a href="file-res-management.md" target="_blank">Eingrenzen hochladbarer Dateien</a>.<br /> </td> 
    <td> String <br /> </td> 
    <td> '.+' <br /> </td> 
   </tr> 
@@ -222,13 +222,13 @@ Im Folgenden finden Sie die verschiedenen Parameter der **dataStore** Knoten. Hi
   </tr> 
   <tr> 
    <td> vaultTokenPath<br /> </td> 
-   <td> Lokaler Pfad der Datei, die den Volt-Token enthält. $(HOME) kann in diesem Pfad verwendet werden (aber nicht in anderen env-Variablen).<br /> </td> 
+   <td> Lokaler Pfad der Datei mit dem Vault-Token. $(HOME) kann in diesem Pfad verwendet werden (aber nicht in anderen env-Variablen).<br /> </td> 
    <td> String <br /> </td> 
    <td> '$(HOME)/.vaultoken'<br /> </td> 
   </tr> 
   <tr> 
    <td> vaultUrl<br /> </td> 
-   <td> Vault-URL von HashiCorp <br /> </td> 
+   <td> Hashicorp Vault-URL <br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -240,7 +240,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **dataStore** Knoten. Hi
   </tr> 
   <tr> 
    <td> workingDirectory<br /> </td> 
-   <td> Pfad des Arbeitsverzeichnisses<br /> </td> 
+   <td> XPath des Arbeitsverzeichnisses.<br /> </td> 
    <td> String <br /> </td> 
    <td> workingDirectory : XPath des Arbeitsverzeichnisses. Standard: '$(XTK_INSTALL_DIR)/var/$(INSTANCE_NAME)/workspace/'<br /> </td> 
   </tr> 
@@ -262,12 +262,12 @@ Im Folgenden finden Sie die verschiedenen Parameter der **dataStore > proxyAdjus
  <tbody> 
   <tr> 
    <td> urlBase<br /> </td> 
-   <td> Basis zur Erzeugung von externen URLs. Z. B.: https://server.domain.com<br /> </td> 
+   <td> Basis zur Verwendung beim Generieren externer URLs. Beispiel: https://server.domain.com<br /> </td> 
    <td> String <br /> </td> 
   </tr> 
   <tr> 
    <td> urlRegEx<br /> </td> 
-   <td> Regulärer Ausdruck für das Pattern Matching; z. B. http://server\.lan\.net.*<br /> </td> 
+   <td> Regulärer Ausdruck zum Abgleichen von URLs. Beispiel: http://server\.lan\.net.*<br /> </td> 
    <td> String <br /> </td> 
   </tr> 
  </tbody> 
@@ -289,9 +289,9 @@ Im Folgenden finden Sie die verschiedenen Parameter der **dataStore > dataSource
  <tbody> 
   <tr> 
    <td> name<br /> </td> 
-   <td> Name der Datenquelle<br /> </td> 
+   <td> Datenquellenname<br /> </td> 
    <td> String <br /> </td> 
-   <td> Standard<br /> </td> 
+   <td> default<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -310,13 +310,13 @@ Im **dataStore > dataSource > dbcnx** -Knoten konfigurieren Sie die Verbindungse
  <tbody> 
   <tr> 
    <td> NChar<br /> </td> 
-   <td> Unicode-Speicherung<br /> </td> 
+   <td> Unicode-Speicher<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> </td> 
   </tr> 
   <tr> 
    <td> dbSchema<br /> </td> 
-   <td> Arbeitsbereich     <br /> </td> 
+   <td> Arbeitsbereich<br /> </td> 
    <td> String <br /> </td> 
    <td> </td> 
   </tr> 
@@ -327,25 +327,25 @@ Im **dataStore > dataSource > dbcnx** -Knoten konfigurieren Sie die Verbindungse
    <td> </td> 
   </tr> 
   <tr> 
-   <td> Login<br /> </td> 
+   <td> Anmeldung<br /> </td> 
    <td> Konto<br /> </td> 
    <td> String <br /> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> Kennwort<br /> </td> 
+   <td> password<br /> </td> 
    <td> Passwort<br /> </td> 
    <td> String <br /> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> Provider<br /> </td> 
+   <td> Anbieter<br /> </td> 
    <td> Typ (Auflistung). Mögliche Werte sind 'Oracle', 'MSSQL' (Microsoft SQL Server), 'PostgreSQL' (PostgreSQL), 'Teradata', 'DB2', 'MySQL', 'Netezza', 'AsterData', 'SAPHANA' (SAP HANA), 'RedShift' (Amazon Redshift), 'ODBC' (Sybase ASE, Sybase IQ). 'Relay' (HTTP-Weiterleitung auf Remote-Datenbank).<br /> </td> 
    <td> String <br /> </td> 
-   <td> 'Oracle'<br /> </td> 
+   <td> "Oracle"<br /> </td> 
   </tr> 
   <tr> 
-   <td> Server<br /> </td> 
+   <td> server<br /> </td> 
    <td> Server<br /> </td> 
    <td> String <br /> </td> 
    <td> </td> 
@@ -358,7 +358,7 @@ Im **dataStore > dataSource > dbcnx** -Knoten konfigurieren Sie die Verbindungse
   </tr> 
   <tr> 
    <td> unicodeData<br /> </td> 
-   <td> Unicode-Daten der Datenbank<br /> </td> 
+   <td> Unicode-Daten in der Datenbank<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> </td> 
   </tr> 
@@ -384,7 +384,7 @@ Im **dataStore > dataSource > sqlParams** -Knoten konfigurieren Sie die SQL-Para
  <tbody> 
   <tr> 
    <td> funcPrefix<br /> </td> 
-   <td> Präfix für Funktionen<br /> </td> 
+   <td> Funktionspräfix<br /> </td> 
    <td> String <br /> </td> 
   </tr> 
  </tbody> 
@@ -403,23 +403,23 @@ Im **dataStore > dataSource > pool** -Knoten konfigurieren Sie die Parameter des
  <tbody> 
   <tr> 
    <td> aliveTestDelaySec<br /> </td> 
-   <td> Zeitspanne zwischen den Gültigkeitstests der Verbindung<br /> </td> 
-   <td> Kurz<br /> </td> 
+   <td> Verzögerung zwischen der Überprüfung der Verbindungsgültigkeit.<br /> </td> 
+   <td> Short<br /> </td> 
   </tr> 
   <tr> 
    <td> freeCnx<br /> </td> 
-   <td> Anzahl der freien, im Pool beibehaltenen Verbindungen.<br /> </td> 
-   <td> Kurz<br /> </td> 
+   <td> Anzahl der kostenlosen Verbindungen, die im Pool gehalten werden.<br /> </td> 
+   <td> Short<br /> </td> 
   </tr> 
   <tr> 
    <td> maxCnx<br /> </td> 
-   <td> Maximale Anzahl von zulässigen Verbindungen, bevor der Zugriff verweigert wird Siehe dies <a href="https://helpx.adobe.com/campaign/kb/how-to-increase-the-maximum-number-of-database-connections-from-.html">Technote</a>.<br /> </td> 
-   <td> Kurz<br /> </td> 
+   <td> Maximale Anzahl der zulässigen Verbindungen, bevor eine neue Verbindung verweigert wird. Siehe dies <a href="https://helpx.adobe.com/campaign/kb/how-to-increase-the-maximum-number-of-database-connections-from-.html">Technote</a>.<br /> </td> 
+   <td> Short<br /> </td> 
   </tr> 
   <tr> 
    <td> maxIdleDelaySec<br /> </td> 
-   <td> Zeitspanne vor der automatischen Abmeldung einer nicht genutzten Verbindung. 0 bedeutet den Gebrauch der Standardeinstellungen.<br /> </td> 
-   <td> Kurz<br /> </td> 
+   <td> Maximale Leerlaufzeit der Verbindung. 0 bedeutet Standardwert.<br /> </td> 
+   <td> Short<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -446,7 +446,7 @@ Weitere Informationen finden Sie unter [Verwaltung öffentlicher Ressourcen](fil
   </tr> 
   <tr> 
    <td> path<br /> </td> 
-   <td> Vollständiger Pfad des tatsächlichen Verzeichnisses<br /> </td> 
+   <td> Vollständiger Pfad des tatsächlichen Ordners<br /> </td> 
    <td> String <br /> </td> 
   </tr> 
  </tbody> 
@@ -479,13 +479,13 @@ Im Folgenden finden Sie die verschiedenen Parameter der **dataStore > preprocess
    <td> String <br /> </td> 
   </tr> 
   <tr> 
-   <td> Bezeichnung<br /> </td> 
-   <td> Titel der Befehlszeile<br /> </td> 
+   <td> label<br /> </td> 
+   <td> Befehlszeilenbezeichnung<br /> </td> 
    <td> String <br /> </td> 
   </tr> 
   <tr> 
    <td> name<br /> </td> 
-   <td> Name der Befehlszeile<br /> </td> 
+   <td> Befehlszeilenname<br /> </td> 
    <td> String <br /> </td> 
   </tr> 
  </tbody> 
@@ -516,7 +516,7 @@ Weitere Informationen finden Sie in diesem Abschnitt [Abschnitt](../../installat
  <tbody> 
   <tr> 
    <td> localDomain<br /> </td> 
-   <td> Domänenname: Standard-Domänenname. Wird vom SMTP HELO-Befehl verwendet. Nutzt standardmäßig die Netzwerkparameter der ersten unter Windows erklärten Netzwerkschnittstelle oder parst die Datei /etc/resolv.conf unter Linux (Angabe des Domain-Namens oder Search-Eintrag). <br /> </td> 
+   <td> Domänenname: Standard-Domänenname. Wird vom SMTP HELO-Befehl verwendet. Standardmäßig verwendet die Netzwerkparameter der ersten unter Windows deklarierten Netzwerkschnittstelle oder analysiert file/etc/resolv.conf unter Linux (Domäne oder Sucheintrag). <br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -528,13 +528,13 @@ Weitere Informationen finden Sie in diesem Abschnitt [Abschnitt](../../installat
   </tr> 
   <tr> 
    <td> Wiederholen<br /> </td> 
-   <td> Versuchsanzahl für eine DNS-Abfrage.<br /> </td> 
+   <td> Anzahl weiterer Versuche für eine DNS-Abfrage.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 4<br /> </td> 
   </tr> 
   <tr> 
    <td> timeout<br /> </td> 
-   <td> Timeout in Millisekunden für eine DNS-Abfrage.<br /> </td> 
+   <td> Zeitüberschreitung in Millisekunden für eine DNS-Abfrage.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 5000<br /> </td> 
   </tr> 
@@ -577,7 +577,7 @@ Weitere Informationen finden Sie unter [Einschränken autorisierter externer Bef
   </tr> 
   <tr> 
    <td> Benutzer<br /> </td> 
-   <td> Führt Befehle als anderer Benutzer aus.<br /> </td> 
+   <td> Führen Sie Befehle als anderen Benutzer aus.<br /> </td> 
    <td> String <br /> </td> 
   </tr> 
  </tbody> 
@@ -658,19 +658,19 @@ Im Folgenden finden Sie die verschiedenen Parameter der **ims** Knoten. Dies ist
  <tbody> 
   <tr> 
    <td> authIMSClientId<br /> </td> 
-   <td> Client ID<br /> (Client-ID) </td> 
+   <td> Client-ID<br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> authIMSClientSecret<br /> </td> 
-   <td> Geheimschlüssel (mit AES verschlüsselt)<br /> </td> 
+   <td> Geheimer Schlüssel (in AES verschlüsselt)<br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> authIMSCode<br /> </td> 
-   <td> Zulassungs-Code (mit AES verschlüsselt)<br /> </td> 
+   <td> Autorisierungscode (in AES verschlüsselt)<br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -688,19 +688,19 @@ Im Folgenden finden Sie die verschiedenen Parameter der **ims** Knoten. Dies ist
   </tr> 
   <tr> 
    <td> authIMSTAClientSecret<br /> </td> 
-   <td> Geheimschlüssel des technischen Kontos (mit AES verschlüsselt)<br /> </td> 
+   <td> Geheimnisschlüssel des technischen Kontos (in AES verschlüsselt)<br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> authIMSTAId<br /> </td> 
-   <td> Kennung des technischen Kontos<br /> </td> 
+   <td> Technische Konto-ID<br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> authIMSTAPrivateKey<br /> </td> 
-   <td> Privater Schlüssel des technischen Kontos (mit AES verschlüsselt)<br /> </td> 
+   <td> Privater Schlüssel des technischen Kontos (in AES verschlüsselt)<br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -725,13 +725,13 @@ Weitere Informationen finden Sie im Abschnitt [Berichtdokumentation](../../repor
  <tbody> 
   <tr> 
    <td> maxMB<br /> </td> 
-   <td> Maximale Größe in Megabyte, bevor die Garbage Collection ausgelöst wird.<br /> </td> 
+   <td> Maximale Größe in Megabyte vor Ausführung des Speicherbereinigers.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 512 <br /> </td> 
   </tr> 
   <tr> 
    <td> stackSizeKB<br /> </td> 
-   <td> Größe in Kilobyte für jeden Stapelblock. Dies ist ein Parameter zur Optimierung der Speicherverwaltung, den die meisten Benutzer nicht anpassen sollten. <br /> </td> 
+   <td> Größe jedes Stapelteils in Kilooctetten. Dies ist ein Parameter zur Optimierung der Speicherverwaltung, den die meisten Benutzer nicht anpassen sollten. <br /> </td> 
    <td> Lang<br /> </td> 
    <td> 8<br /> </td> 
   </tr> 
@@ -760,14 +760,14 @@ Im Folgenden finden Sie die verschiedenen Parameter der **mailExchanger** Knoten
   </tr> 
   <tr> 
    <td> mxPort<br /> </td> 
-   <td> TCP-Port des SMTP-Servers zur E-Mail-Übermittlung<br /> </td> 
+   <td> TCP-Port des für die E-Mail-Übertragung verwendeten SMTP-Servers.<br /> </td> 
    <td> String <br /> </td> 
    <td> 25<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## module {#module}
+## Modul {#module}
 
 Im Folgenden finden Sie die verschiedenen Parameter der **Modul** Knoten. Dies ist die Konfiguration für das Namensraum-Einschränkungsmodul xtk.
 
@@ -783,7 +783,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **Modul** Knoten. Dies i
  <tbody> 
   <tr> 
    <td> defaultNameSpace<br /> </td> 
-   <td> Standard-Namespace bei der Erstellung einer neuen Entität.<br /> </td> 
+   <td> Standard-Namespace, der beim Erstellen einer neuen Entität verwendet wird.<br /> </td> 
    <td> String <br /> </td> 
    <td> 'cus'<br /> </td> 
   </tr> 
@@ -812,13 +812,13 @@ Im Folgenden finden Sie die verschiedenen Parameter der **Monitoring** Knoten. D
   </tr> 
   <tr> 
    <td> unixScript<br /> </td> 
-   <td> Unix-Script, das durch den Monitoring-Dienst ausgeführt wird.<br /> </td> 
+   <td> Vom Überwachungsdienst ausgeführtes Unix-Skript.<br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> winScript<br /> </td> 
-   <td> Windows-Script, das durch den Monitoring-Dienst ausgeführt wird.<br /> </td> 
+   <td> Vom Überwachungsdienst auszuführendes Windows-Skript.<br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -841,25 +841,25 @@ Im Folgenden finden Sie die verschiedenen Parameter der **ooconv** Knoten. Dies 
  <tbody> 
   <tr> 
    <td> maxConversions<br /> </td> 
-   <td> Maximale Anzahl an Konvertierungen, die ein OpenOffice-Server ausführen darf. Bei Überschreiten dieser Anzahl wird der Server neu gestartet.<br /> </td> 
+   <td> Maximale Anzahl der Konvertierungen, die ein OpenOffice-Server ausführen darf. Über diese Zahl hinaus wird der Server neu gestartet.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1000<br /> </td> 
   </tr> 
   <tr> 
    <td> maxServerIdleSec<br /> </td> 
-   <td> Maximale Inaktivitätsdauer des OpenOffice-Servers vor Abschaltung<br /> </td> 
+   <td> Maximale Leerlaufzeit des OpenOffice-Servers vor erzwungenem Schließen.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 7200<br /> </td> 
   </tr> 
   <tr> 
    <td> portRange<br /> </td> 
-   <td> Listen-Port-Intervalle der OpenOffice-Server.<br /> </td> 
+   <td> Intervall der Ports, auf denen die OpenOffice-Server lauschen.<br /> </td> 
    <td> String <br /> </td> 
    <td> 8101-8110<br /> </td> 
   </tr> 
   <tr> 
    <td> url<br /> </td> 
-   <td> URL des Servers zur Dokumentenkonvertierung.<br /> </td> 
+   <td> URL des Dokumentkonvertierungsservers.<br /> </td> 
    <td> String <br /> </td> 
    <td> "http://localhost:8080/nl/jsp/ooconv.jsp'<br /> </td> 
   </tr> 
@@ -883,8 +883,8 @@ Weitere Informationen finden Sie unter [Proxy-Verbindungskonfiguration](file-res
  </thead> 
  <tbody> 
   <tr> 
-   <td> aktiviert<br /> </td> 
-   <td> Proxy-Server benutzen.<br /> </td> 
+   <td> enabled<br /> </td> 
+   <td> Verwenden Sie einen Proxy-Server.<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -920,23 +920,23 @@ Weitere Informationen finden Sie unter [Proxy-Verbindungskonfiguration](file-res
  <tbody> 
   <tr> 
    <td> Adresse<br /> </td> 
-   <td> Adresse des Proxy-Servers<br /> </td> 
+   <td> Adresse des Proxyservers<br /> </td> 
    <td> String <br /> </td> 
   </tr> 
   <tr> 
-   <td> Login<br /> </td> 
-   <td> Login zur Verbindung mit dem Proxy-Server<br /> </td> 
+   <td> Anmeldung<br /> </td> 
+   <td> Anmeldung für die Verbindung zum Proxyserver<br /> </td> 
    <td> String <br /> </td> 
   </tr> 
   <tr> 
-   <td> Kennwort<br /> </td> 
-   <td> Kennwort für die Anmeldung zum Proxy-Server<br /> </td> 
+   <td> password<br /> </td> 
+   <td> Kennwort für die Verbindung mit dem Proxy-Server<br /> </td> 
    <td> String <br /> </td> 
   </tr> 
   <tr> 
-   <td> Port<br /> </td> 
-   <td> Proxy-Server-Port<br /> </td> 
-   <td> Kurz<br /> </td> 
+   <td> port<br /> </td> 
+   <td> Proxy-Server-Anschluss<br /> </td> 
+   <td> Short<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1093,7 +1093,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **xtkJobs** Knoten. Dies
  <tbody> 
   <tr> 
    <td> purgeLogsPeriod<br /> </td> 
-   <td> Periodizität der Aktualisierung des Speicherstatus eines Serverprozesses (in Millisekunden).<br /> </td> 
+   <td> Aktualisierungszeitraum für den Speicherstatus der Serververarbeitung (in ms).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 500<br /> </td> 
   </tr> 
@@ -1118,7 +1118,7 @@ Weitere Informationen finden Sie unter [Aktivieren der E-Mail-Archivierung (vor 
  <tbody> 
   <tr> 
    <td> acquisitionLimit<br /> </td> 
-   <td> Anzahl gleichzeitig zu verarbeitender EML<br /> </td> 
+   <td> Anzahl der gleichzeitig zu verarbeitenden EMLs<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 100<br /> </td> 
   </tr> 
@@ -1130,13 +1130,13 @@ Weitere Informationen finden Sie unter [Aktivieren der E-Mail-Archivierung (vor 
   </tr> 
   <tr> 
    <td> args<br /> </td> 
-   <td> Startparameter<br /> </td> 
+   <td> Start-up-Parameter<br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> autoStart<br /> </td> 
-   <td> Autostart<br /> </td> 
+   <td> Automatischer Start<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -1160,7 +1160,7 @@ Weitere Informationen finden Sie unter [Aktivieren der E-Mail-Archivierung (vor 
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
-   <td> Kennung des bei Prozessbeginn auszuführenden JavaScripts.<br /> </td> 
+   <td> Kennung von JavaScript, das beim Starten des Prozesses ausgeführt werden soll.<br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -1178,26 +1178,26 @@ Weitere Informationen finden Sie unter [Aktivieren der E-Mail-Archivierung (vor 
   </tr> 
   <tr> 
    <td> pollDelay<br /> </td> 
-   <td> Intervall in Sekunden zwischen 2 Archivierungsvorgängen.<br /> </td> 
+   <td> Verzögerung (in Sekunden) zwischen jedem Update-Ereignis.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 60<br /> </td> 
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
-   <td> Zeitpunkt des automatischen Neustarts des Prozesses. Siehe <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatischer Prozess-Neustart</a>.<br /> </td> 
+   <td> Uhrzeit des automatischen Neustart des Prozesses. Siehe <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatischer Prozess-Neustart</a>.<br /> </td> 
    <td> String <br /> </td> 
-   <td> '06:00:00' <br /> </td> 
+   <td> "06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> purgeArchivesDelay<br /> </td> 
-   <td> Anzahl Tage vor der Löschung der archivierten E-Mails.<br /> </td> 
+   <td> Anzahl der Tage, bevor nicht verarbeitete E-Mails gelöscht werden.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 7<br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> Startpriorität. Module mit einer niedrigen Prioritätsziffer werden als erste gestartet und als letzte abgeschlossen. Das Syslogd-Modul muss daher die Priorität 0 aufweisen.<br /> </td> 
-   <td> Kurz<br /> </td> 
+   <td> Priorität am Anfang. Module mit niedriger Priorität werden zuerst gestartet und zuletzt angehalten. Das syslogd-Modul muss daher die Priorität 0 haben.<br /> </td> 
+   <td> Short<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
   <tr> 
@@ -1214,7 +1214,7 @@ Weitere Informationen finden Sie unter [Aktivieren der E-Mail-Archivierung (vor 
   </tr> 
   <tr> 
    <td> smtpNbConnection<br /> </td> 
-   <td> Anzahl der Verbindungen zum SMTP-Archivierungsserver.<br /> </td> 
+   <td> Anzahl der Verbindungen zum archivierenden SMTP-Server.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1<br /> </td> 
   </tr> 
@@ -1226,7 +1226,7 @@ Weitere Informationen finden Sie unter [Aktivieren der E-Mail-Archivierung (vor 
   </tr> 
   <tr> 
    <td> smtpRelayPort<br /> </td> 
-   <td> IP-Port des SMTP-Servers<br /> </td> 
+   <td> IP-Port des SMTP-Servers.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 25<br /> </td> 
   </tr> 
@@ -1249,13 +1249,13 @@ Im Folgenden finden Sie die verschiedenen Parameter der **inMail** Knoten. Dies 
  <tbody> 
   <tr> 
    <td> args<br /> </td> 
-   <td> Startparameter<br /> </td> 
+   <td> Start-up-Parameter<br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> autoStart<br /> </td> 
-   <td> Autostart<br /> </td> 
+   <td> Automatischer Start<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -1291,7 +1291,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **inMail** Knoten. Dies 
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
-   <td> Kennung des bei Prozessbeginn auszuführenden JavaScripts.<br /> </td> 
+   <td> Kennung von JavaScript, das beim Starten des Prozesses ausgeführt werden soll.<br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -1303,7 +1303,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **inMail** Knoten. Dies 
   </tr> 
   <tr> 
    <td> maxMsgPerSession<br /> </td> 
-   <td> Im Laufe einer POP3-Sitzung maximal zu lesende Nachrichtenanzahl<br /> </td> 
+   <td> Maximale Anzahl der Nachrichten, die während der POP3-Sitzung gelesen werden sollen.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 200<br /> </td> 
   </tr> 
@@ -1333,7 +1333,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **inMail** Knoten. Dies 
   </tr> 
   <tr> 
    <td> popQueueSize<br /> </td> 
-   <td> Warteschlangengröße der gelesenen Nachrichten<br /> </td> 
+   <td> Warteschlangengröße von Lesesachrichten<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 100<br /> </td> 
   </tr> 
@@ -1345,20 +1345,20 @@ Im Folgenden finden Sie die verschiedenen Parameter der **inMail** Knoten. Dies 
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
-   <td> Zeitpunkt des automatischen Neustarts des Prozesses. Siehe <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatischer Prozess-Neustart</a>.<br /> </td> 
+   <td> Uhrzeit des automatischen Neustart des Prozesses. Siehe <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatischer Prozess-Neustart</a>.<br /> </td> 
    <td> String <br /> </td> 
-   <td> '06:00:00' <br /> </td> 
+   <td> "06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> reloadPeriodSec<br /> </td> 
-   <td> Intervall der Ladung der von der Datenbank abzurufenden Konten<br /> </td> 
+   <td> Häufigkeit der Neuladungen der abzurufenden Konten.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> Startpriorität. Module mit einer niedrigen Prioritätsziffer werden als erste gestartet und als letzte abgeschlossen. Das Syslogd-Modul muss daher die Priorität 0 aufweisen.<br /> </td> 
-   <td> Kurz<br /> </td> 
+   <td> Priorität am Anfang. Module mit niedriger Priorität werden zuerst gestartet und zuletzt angehalten. Das syslogd-Modul muss daher die Priorität 0 haben.<br /> </td> 
+   <td> Short<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
  </tbody> 
@@ -1386,7 +1386,7 @@ Im **inMail > msgDump** Knoten konfigurieren Sie die folgenden Parameter. Dies i
   </tr> 
   <tr> 
    <td> msgPath<br /> </td> 
-   <td> Speicherpfad der Nachrichten<br /> </td> 
+   <td> Pfad für die Nachrichtenablage.<br /> </td> 
    <td> String <br /> </td> 
    <td> '/tmp/inMail'<br /> </td> 
   </tr> 
@@ -1397,7 +1397,7 @@ Im **inMail > msgDump** Knoten konfigurieren Sie die folgenden Parameter. Dies i
 
 Im Folgenden finden Sie die verschiedenen Parameter der **interactiond** Knoten. Dies ist die Konfiguration des SchreibDaemons für eingehende Interaktionsereignisse.
 
-Weitere Informationen finden Sie unter [Interaction - Datenpuffer](../../installation/using/interaction---data-buffer.md).
+Weitere Informationen finden Sie unter [Interaction - Datenpuffer](../../installation/using/interaction-data-buffer.md).
 
 <table> 
  <thead> 
@@ -1411,13 +1411,13 @@ Weitere Informationen finden Sie unter [Interaction - Datenpuffer](../../install
  <tbody> 
   <tr> 
    <td> args<br /> </td> 
-   <td> Startparameter<br /> </td> 
+   <td> Start-up-Parameter<br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> autoStart<br /> </td> 
-   <td> Autostart<br /> </td> 
+   <td> Automatischer Start<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -1429,7 +1429,7 @@ Weitere Informationen finden Sie unter [Interaction - Datenpuffer](../../install
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
-   <td> Kennung des bei Prozessbeginn auszuführenden JavaScripts<br /> </td> 
+   <td> Kennung von JavaScript, das beim Starten des Prozesses ausgeführt werden soll<br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -1453,25 +1453,25 @@ Weitere Informationen finden Sie unter [Interaction - Datenpuffer](../../install
   </tr> 
   <tr> 
    <td> nextOffersSize<br /> </td> 
-   <td> Maximale Anzahl an geeigneten Angeboten, die direkt im Anschluss an die Vorschläge kommen; zu statistischen Zwecken zu speichern.<br /> </td> 
+   <td> Maximale Anzahl an geeigneten Angeboten, die direkt nach Vorschlägen sortiert und für Statistiken gespeichert werden.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 0<br /> </td> 
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
-   <td> Zeitpunkt des automatischen Neustarts des Prozesses. Siehe <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatischer Prozess-Neustart</a>.<br /> </td> 
+   <td> Uhrzeit des automatischen Neustart des Prozesses. Siehe <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatischer Prozess-Neustart</a>.<br /> </td> 
    <td> String <br /> </td> 
-   <td> '06:00:00' <br /> </td> 
+   <td> "06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> Startpriorität. Module mit einer niedrigen Prioritätsziffer werden als erste gestartet und als letzte abgeschlossen. Das Syslogd-Modul muss daher die Priorität 0 aufweisen.<br /> </td> 
-   <td> Kurz<br /> </td> 
+   <td> Priorität am Anfang. Module mit niedriger Priorität werden zuerst gestartet und zuletzt angehalten. Das syslogd-Modul muss daher die Priorität 0 haben.<br /> </td> 
+   <td> Short<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
   <tr> 
    <td> statsPeriod<br /> </td> 
-   <td> Aggregationsdauer in Sekunden für die Antwortzeit-Statistiken. 0 bedeutet, dass die statistische Speicherung deaktiviert wurde.<br /> </td> 
+   <td> Aggregationsdauer in Sekunden für die Zeitstatistiken der Antwort. 0 bedeutet, dass die statistische Speicherung deaktiviert wurde.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
@@ -1500,13 +1500,13 @@ Im Folgenden finden Sie die verschiedenen Parameter der **mta** Knoten. Dies ist
  <tbody> 
   <tr> 
    <td> args<br /> </td> 
-   <td> Startparameter<br /> </td> 
+   <td> Start-up-Parameter<br /> </td> 
    <td> String <br /> </td> 
    <td> '-tracefilter:nlmta' <br /> </td> 
   </tr> 
   <tr> 
    <td> autoStart<br /> </td> 
-   <td> Autostart<br /> </td> 
+   <td> Automatischer Start<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -1536,25 +1536,25 @@ Im Folgenden finden Sie die verschiedenen Parameter der **mta** Knoten. Dies ist
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
-   <td> Kennung des bei Prozessbeginn auszuführenden JavaScripts.<br /> </td> 
+   <td> Kennung von JavaScript, das beim Starten des Prozesses ausgeführt werden soll.<br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> logEmailErrors<br /> </td> 
-   <td> Erzeugt Fehlerstatistiken und speichert sie in der Datenbank<br /> </td> 
+   <td> Erstellen Sie Fehlerstatistiken und speichern Sie sie in der Datenbank.<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> true<br /> </td> 
   </tr> 
   <tr> 
    <td> logLevel<br /> </td> 
-   <td> Anzeigelevel der Lognachrichten Schweregrad der in die Datenbank geschriebenen Protokolle. Von MTA generierte Protokollmeldungen werden nicht immer in die Datenbank geschrieben. Mit diesem Parameter können Sie die Ebene definieren, von der aus Sie denken, dass eine Nachricht in die Datenbank geschrieben werden muss. Wenn Sie Stufe 2 definieren, werden auch Nachrichten der Stufe 1 und 0 geschrieben, während bei der Definition von Stufe 1 nur Nachrichten der Stufe 1 und 0 geschrieben werden. Mögliche Werte sind: 0 (errors), 1 (warning), 2 (info)<br /> </td> 
+   <td> Anzeigeebene der Protokollmeldungen. Schweregrad der in die Datenbank geschriebenen Protokolle. Von MTA generierte Protokollmeldungen werden nicht immer in die Datenbank geschrieben. Mit diesem Parameter können Sie die Ebene definieren, von der aus Sie denken, dass eine Nachricht in die Datenbank geschrieben werden muss. Wenn Sie Stufe 2 definieren, werden auch Nachrichten der Stufe 1 und 0 geschrieben, während bei der Definition von Stufe 1 nur Nachrichten der Stufe 1 und 0 geschrieben werden. Mögliche Werte sind: 0 (errors), 1 (warning), 2 (info)<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 2<br /> </td> 
   </tr> 
   <tr> 
    <td> maxMemoryMb<br /> </td> 
-   <td> Maximale Speicherkapazität in Megabyte, die ein MTA-Prozess verbrauchen darf. Bei Überschreiten muss der Vorgang gestoppt werden, um die Speicherkapazität freizugeben.<br /> </td> 
+   <td> Maximale Speichergröße (in MB), die ein MTA-Prozess verwenden kann. Über dieser Grenze hinaus wird der Prozess neu gestartet, sodass der verwendete Speicher auf das System freigegeben wird.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1024<br /> </td> 
   </tr> 
@@ -1572,7 +1572,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **mta** Knoten. Dies ist
   </tr> 
   <tr> 
    <td> minConnectionsToLog<br /> </td> 
-   <td> Zu berücksichtigende Verbindungsschwelle. Fehlerstatistiken werden für einen bestimmten Pfad nicht erzeugt, wenn die Gesamtzahl an Verbindungen seit der von errorPeriodSec bestimmten Dauer streng kleiner als diese Schwelle ist.<br /> </td> 
+   <td> Verbindungsschwellenwert, der berücksichtigt werden soll. Fehlerstatistiken werden für einen bestimmten Pfad nicht generiert, wenn die Gesamtanzahl der Verbindungen für den von errorPeriodSec angegebenen Zeitraum streng unter dem Schwellenwert liegt.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 100<br /> </td> 
   </tr> 
@@ -1584,7 +1584,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **mta** Knoten. Dies ist
   </tr> 
   <tr> 
    <td> minMessagesToLog<br /> </td> 
-   <td> Zu berücksichtigende Nachrichtenschwelle. Fehlerstatistiken werden für einen bestimmten Pfad nicht erzeugt, wenn die Gesamtzahl an gesendeten Nachrichten seit der von errorPeriodSec bestimmten Dauer streng kleiner als diese Schwelle ist.<br /> </td> 
+   <td> Meldeschwelle, die berücksichtigt werden soll. Fehlerstatistiken werden für einen bestimmten Pfad nicht generiert, wenn die Gesamtzahl der gesendeten Nachrichten für den von errorPeriodSec angegebenen Zeitraum streng unter dem Schwellenwert liegt.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1000<br /> </td> 
   </tr> 
@@ -1596,9 +1596,9 @@ Im Folgenden finden Sie die verschiedenen Parameter der **mta** Knoten. Dies ist
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
-   <td> Zeitpunkt des automatischen Neustarts des Prozesses. Siehe <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatischer Prozess-Neustart</a>.<br /> </td> 
+   <td> Uhrzeit des automatischen Neustart des Prozesses. Siehe <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatischer Prozess-Neustart</a>.<br /> </td> 
    <td> String <br /> </td> 
-   <td> '06:00:00' <br /> </td> 
+   <td> "06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> purgeDataLogDelay<br /> </td> 
@@ -1614,8 +1614,8 @@ Im Folgenden finden Sie die verschiedenen Parameter der **mta** Knoten. Dies ist
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> Startpriorität. Module mit einer niedrigen Prioritätsziffer werden als erste gestartet und als letzte abgeschlossen. Das Syslogd-Modul muss daher die Priorität 0 aufweisen.<br /> </td> 
-   <td> Kurz<br /> </td> 
+   <td> Priorität am Anfang. Module mit niedriger Priorität werden zuerst gestartet und zuletzt angehalten. Das syslogd-Modul muss daher die Priorität 0 haben.<br /> </td> 
+   <td> Short<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
   <tr> 
@@ -1698,7 +1698,7 @@ Im **cache** Knoten konfigurieren Sie die folgenden Parameter. Dies ist die Konf
   </tr> 
   <tr> 
    <td> maxSizeOnDiskMb<br /> </td> 
-   <td> Maximale Größe des Cache-Speichers (MB)<br /> </td> 
+   <td> Maximale Cachegröße (MB).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1024<br /> </td> 
   </tr> 
@@ -1736,8 +1736,8 @@ Weitere Informationen finden Sie unter [SMTP-Relais](../../installation/using/co
    <td> <br /> </td> 
   </tr> 
   <tr> 
-   <td> Port<br /> </td> 
-   <td> IP-Port des SMTP-Servers<br /> </td> 
+   <td> port<br /> </td> 
+   <td> IP-Port des SMTP-Servers.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 25<br /> </td> 
   </tr> 
@@ -1762,37 +1762,37 @@ Weitere Informationen finden Sie in diesem Abschnitt [Abschnitt](../../installat
  <tbody> 
   <tr> 
    <td> dataBasePoolPeriodSec<br /> </td> 
-   <td> Intervall, in der die zu sendenden Vorgänge aus der Datenbank abgerufen werden Intervall in Sekunden zwischen zwei Datenbankabfragen durch den MTA. Der MTA ruft in regelmäßigen Abständen die ausstehenden Sendungen ab. Der Wert kommt nur zum Tragen, wenn kein Vorgang zur Verarbeitung ansteht. Sollte bei der vorhergehenden Abfrage für einen Vorgang kein untergeordneter Server zur Verfügung gestanden haben, wird das Intervall automatisch auf 1 Sekunde gesetzt, um den ausstehenden Vorgang so schnell wie möglich verarbeiten zu können, d. h. sobald ein untergeordneter Server zur Verfügung steht. Dies bedeutet nicht, dass jede Sekunde eine Datenbankabfrage durchgeführt wird. Dies geschieht nur, wenn mindestens ein untergeordneter Server verfügbar ist.<br /> </td> 
+   <td> Häufigkeit der Datenbankabfragen für die auszuführenden Aufträge. Dieser Wert gibt die Häufigkeit der Datenbankabfragen an (in Sekunden). Um die Liste der Aufträge zu erhalten, die auf die Bereitstellung warten, fragt der MTA die Datenbank regelmäßig ab. Wenn kein Auftrag wartet, wird der Abrufezeitraum durch diesen Wert definiert. Andernfalls wird die Abruffrist automatisch auf eine Sekunde reduziert, wenn ein Auftrag auf einen untergeordneten Server übertragen wurde, sodass ein neuer Auftrag so bald wie möglich erneut verarbeitet werden kann, d. h. sobald ein untergeordneter Server wieder verfügbar ist. Dies bedeutet nicht, dass jede Sekunde eine Datenbankabfrage durchgeführt wird, bis ein untergeordneter Server erneut verfügbar ist. Ein Datenbankzugriff erfolgt nur, wenn mindestens ein untergeordneter Server verfügbar ist.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 30<br /> </td> 
   </tr> 
   <tr> 
    <td> dataBaseRetryDelaySec<br /> </td> 
-   <td> Wartezeit nach fehlgeschlagener Verbindung mit der Datenbank Sollte die Verbindung mit der Datenbank fehlschlagen, handelt es sich zumeist um ein Problem mit dem Datenbankserver. Er kann z. B. wegen Instandhaltungsmaßnahmen gestoppt worden sein. Der Parameter DataBaseRetryDelay legt die Wartezeit in Sekunden fest, bevor ein erneuter Anmeldeversuch unternommen wird.<br /> </td> 
+   <td> Wartezeit nach einem Datenbankverbindungsfehler. Ein Fehler bei der Datenbankverbindung wird normalerweise vom Datenbankserver selbst verursacht. Der Server kann beispielsweise auch zu Wartungszwecken angehalten werden. Der Parameter DataBaseRetryDelay definiert die Dauer zwischen zwei Verbindungsversuchen im Fall eines Fehlers der Datenbankverbindung.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 60<br /> </td> 
   </tr> 
   <tr> 
    <td> domainKeysReloadPeriodSec<br /> </td> 
-   <td> Gültigkeit des Cache-Speichers der privaten Schlüssel (DomainKeys). Die für die Signatur gemäß der DomainKeys-Empfehlung (http://antispam.yahoo.com/domainkeys) verwendeten privaten Schlüssel werden in der Datenbank in Form von Optionen gespeichert. Der Parameter domainKeysReloadPeriodSec gibt an, wie lange der MTA diese Schlüssel im Cache speichern darf (in Sekunden). Nach Ablauf dieser Dauer müssen alle Schlüssel erneut aus der Datenbank geladen werden<br /> </td> 
+   <td> Gültigkeitszeitraum für den Cache privater Schlüssel (DomainKeys). Private Schlüssel, die zum Signieren von E-Mails gemäß der DomainKeys-Empfehlung (http://antispam.yahoo.com/domainkeys) verwendet werden, werden als Optionen in der Datenbank gespeichert. Der Parameter domainKeysReloadPeriodSec definiert, wie viele Sekunden der MTA diese Schlüssel in einem Cache speichern kann. Nach dieser Verzögerung müssen alle Schlüssel aus der Datenbank neu geladen werden.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
   <tr> 
    <td> maxSpareServers<br /> </td> 
-   <td> Maximale Anzahl an untergeordneten Servern Bezeichnet die maximale Anzahl an laufenden Servern. Es ist nicht empfehlenswert, ohne wirklichen Bedarf eine zu große Anzahl festzulegen, da dies unnötig Speicherkapazität beansprucht. Durch Analyse der Speicherkapazität während eines Versands können Sie feststellen, ob der angegebene Wert dem Bedarf entspricht. Die beanspruchte Kapazität darf nie ein Drittel des insgesamt verfügbaren Speichers Ihres Geräts übersteigen, da andernfalls Ihr SWAP einbezogen wird. Siehe <a href="../../installation/using/configuring-campaign-server.md#mta-child-processes" target="_blank">Untergeordnete MTA-Prozesse</a>.<br /> </td> 
+   <td> Maximale Anzahl untergeordneter Server. Stellt die maximale Anzahl der ausgeführten Server dar. Es wird empfohlen, diese Anzahl auf eine optimale Weise zu begrenzen, die mit den Serverspeicherressourcen kompatibel ist. Dies kann während eines Versands überprüft werden. Der verwendete Speicher darf nicht mehr als ein Drittel des verfügbaren physischen Speichers betragen. Andernfalls wird der Swap verwendet. Siehe <a href="../../installation/using/configuring-campaign-server.md#mta-child-processes" target="_blank">Untergeordnete MTA-Prozesse</a>.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 2<br /> </td> 
   </tr> 
   <tr> 
    <td> minSpareServers<br /> </td> 
-   <td> Minimale Anzahl an untergeordneten Servern Der MTA versucht, mindestens die verfügbaren Server im Betrieb zu halten. Wenn weniger Server laufen, werden neue im Rhythmus von einem Server pro Sekunde gestartet, bis die angegebene Anzahl erreicht ist.<br /> </td> 
+   <td> Mindestanzahl untergeordneter Server. Der MTA versucht, mindestens diese Anzahl von Servern auszuführen. Wenn weniger vorhanden ist, werden alle Sekunden neue Server neu gestartet, bis dieser Wert erreicht ist.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 0<br /> </td> 
   </tr> 
   <tr> 
    <td> startSpareServers<br /> </td> 
-   <td> Anzahl an untergeordneten Servern beim Start Die Anzahl an untergeordneten Servern wird dynamisch kontrolliert. Beim Start des MTAs erstellt dieser die hier bestimmte Anzahl an untergeordneten Servern. Normalerweise werden untergeordnete Server maximal im Rhythmus von einem Server pro Sekunde gestartet, um das System nicht zu überlasten. Beim Start des MTAs kommt diese Beschränkung jedoch nicht zum Tragen und die untergeordneten Server werden so schnell wie möglich hinzugeschaltet.<br /> </td> 
+   <td> Anzahl der untergeordneten Server beim Start. Die Anzahl der untergeordneten Server wird dynamisch überwacht. Wenn der MTA gestartet wird, werden so viele untergeordnete Server erstellt, wie durch diesen Wert angegeben. Normalerweise können untergeordnete Server nicht schneller als ein Server pro Sekunde gestartet werden, um Hostressourcen zu sparen. Beim Start des MTA wird diese Einschränkung jedoch außer Kraft gesetzt, sodass untergeordnete Server so bald wie möglich verfügbar sind.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 0<br /> </td> 
   </tr> 
@@ -1817,31 +1817,31 @@ Weitere Informationen finden Sie unter [E-Mail-Versandoptimierung](../../install
  <tbody> 
   <tr> 
    <td> extraArgs<br /> </td> 
-   <td> Optionale Befehlzeilenargumente <br /> </td> 
+   <td> Optionale Befehlszeilenargumente <br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> idleChildTimeoutSec<br /> </td> 
-   <td> Timeout inaktiver untergeordneter Sitzungen Sollte ein untergeordneter Server länger als für diesen Parameter definiert inaktiv bleiben, wird er automatisch beendet, um unnötige Ressourcenbeanspruchung zu vermeiden.<br /> </td> 
+   <td> Zeitüberschreitung, bis inaktive untergeordnete Server angehalten werden. Wenn ein untergeordneter Server eine Leerlaufzeit hat, die größer als dieser Parameter ist, führt er automatisch selbst zum Abbruch, um Hostressourcen freizugeben.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 60<br /> </td> 
   </tr> 
   <tr> 
    <td> maxAgeSec<br /> </td> 
-   <td> Maximale Rückhaltedauer einer Nachricht Wenn eine vorbereitete Nachricht aufgrund der Flusskontrolle oder von MTA-Verbindungsproblemen nicht gesendet werden kann, wird sie bis zum nächsten Sendeversuch ausgesetzt.<br /> </td> 
+   <td> Maximale Dauer der Nachrichtenaufbewahrung. Wenn eine vorbereitete Nachricht aufgrund der Drosselung nicht gesendet werden konnte oder nicht in der Lage war, eine Verbindung zum MTA der Zielgruppe herzustellen, wird die Nachricht abgebrochen und bei dem nächsten erneuten Versuch verarbeitet.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
   <tr> 
    <td> maxGCMConnectPerChild<br /> </td> 
-   <td> Maximale Anzahl paralleler HTTP-Anfragen an FCM von jedem untergeordneten Server initiiert.<br /> </td> 
+   <td> Maximale Anzahl paralleler HTTP-Anfragen an den FCM, die von jedem untergeordneten Server initiiert werden.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 8<br /> </td> 
   </tr> 
   <tr> 
    <td> maxMsgPerChild<br /> </td> 
-   <td> Maximale Nachrichtenanzahl pro untergeordnetem Server Jedes untergeordnete MTA-Exemplar verarbeitet diese Anzahl an Nachrichten und stirbt. Die angegebene Anzahl muss gewährleisten, dass auch eine nachlässige Speicherverwaltung keine negativen Konsequenzen verursachen kann. Selbst wenn im MTA keine bekannten Lecks vorhanden sind, können XSL-Stylesheets oder JavaScript-Codes der Nachrichten hiervon betroffen sein.<br /> </td> 
+   <td> Maximale Anzahl an Nachrichten pro untergeordnetem Server. Jedes untergeordnete MTA-Element verarbeitet diese Anzahl von Nachrichten und stirbt. Es ist wichtig, eine Zahl so anzugeben, dass Speicher- oder Ressourcenlecks im MTA harmlos sind (normalerweise einige Tausende). Auch wenn im MTA-Code keine Speicherlecks bekannt sind, sind die eingebetteten JavaScript- und XSL-Engines nicht vollständig zuverlässig.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 5000000<br /> </td> 
   </tr> 
@@ -1853,25 +1853,25 @@ Weitere Informationen finden Sie unter [E-Mail-Versandoptimierung](../../install
   </tr> 
   <tr> 
    <td> maxWorkingSetMb<br /> </td> 
-   <td> Maximale Speicherkapazität in Megabyte, die ein untergeordneter Server verbrauchen darf. Bei Überschreiten muss der Vorgang gestoppt werden, um die Speicherkapazität freizugeben. <br /> </td> 
+   <td> Maximale Speichergröße (in MB), die ein Kindprozess verwenden kann. Oberhalb dieses Grenzwerts wird der Prozess angehalten, sodass der verwendete Speicher auf das System freigegeben wird. <br /> </td> 
    <td> Lang<br /> </td> 
    <td> 128<br /> </td> 
   </tr> 
   <tr> 
    <td> soapConnectorTimeoutSec<br /> </td> 
-   <td> Timeout (in Sekunden), nach dem eine SOAP-Verbindung eines Versand-Connectors unterbrochen wird<br /> </td> 
+   <td> Zeitüberschreitung (in Sekunden), nach der eine SOAP-Verbindung für einen Versand-Connector abgebrochen wird<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 600<br /> </td> 
   </tr> 
   <tr> 
    <td> startWithFirstMX<br /> </td> 
-   <td> Immer mit dem prioritären MX beginnen.<br /> </td> 
+   <td> Beginnen Sie immer mit der höchsten Priorität MX.<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> timeToLive<br /> </td> 
-   <td> Maximale Anzahl an aufeinanderfolgenden Versuchen<br /> </td> 
+   <td> Maximale Anzahl aufeinander folgender Versuche bei Wiederaufnahme.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 48<br /> </td> 
   </tr> 
@@ -1892,25 +1892,25 @@ Im **mta > child > smtp** Knoten konfigurieren Sie die folgenden Parameter. Dies
  <tbody> 
   <tr> 
    <td> enableTLS<br /> </td> 
-   <td> Aktiviert den gesicherten E-Mail-Versand (STARTTLS/SMTPS), wenn vom Remote-Server unterstützt<br /> </td> 
+   <td> Aktiviert den Versand von E-Mails im abgesicherten Modus (STARTTLS/SMTPS), wenn er vom Remote-Server unterstützt wird.<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> idleSessionTimeoutSec<br /> </td> 
-   <td> Timeout inaktiver Sitzungen Dieser Parameter wird nur verwendet, wenn eine Sitzung zur Übertragung verschiedener Nachrichten an eine Domain genutzt wird. Die vom MTA verwendete SMTP-Sitzung wird nach erfolgter Nachrichtenübermittlung nicht automatisch geschlossen. Wenn eine Nachricht für dieselbe Domain versandfertig ist, wird dieselbe SMTP-Sitzung wiederverwendet und der MTA schließt die Sitzung nicht. Der Parameter IdleSessionTimeout gibt an, wie lange eine SMTP-Sitzung in Erwartung einer weiteren Nachrichtenübermittlung aktiv bleiben kann. Läuft die festgelegte Dauer ohne erneute Übertragung ab, wird die Sitzung automatisch geschlossen.<br /> </td> 
+   <td> Zeitüberschreitung bei inaktiver Sitzung. Dieser Parameter wird nur verwendet, wenn die Sitzung zum Senden mehrerer Nachrichten an eine bestimmte Domäne wiederverwendet wird. Wenn der MTA die Nachrichtenübertragung abgeschlossen hat, wird die verwendete SMTP-Sitzung nicht systematisch geschlossen. Wenn eine Nachricht für dieselbe Domain gesendet werden kann, wird dieselbe SMTP-Sitzung wiederverwendet. Aus diesem Grund wird die Sitzung nicht automatisch geschlossen. Mit dem Parameter IdleSessionTimeout können Sie den Zeitraum definieren, während dem eine SMTP-Sitzung aktiv bleiben kann, um auf eine andere Nachricht zu warten. Sobald die Dauer abgelaufen ist, wird die Sitzung automatisch geschlossen.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 5<br /> </td> 
   </tr> 
   <tr> 
    <td> initialDelaySec<br /> </td> 
-   <td> Anfangswartezeit vor einem erneuten Verbindungsversuch. Diese Verzögerung wird bei jedem Verbindungsfehler verdoppelt.<br /> </td> 
+   <td> Erste Verzögerung vor dem erneuten Versuch der Verbindung. Diese Verzögerung wird bei jedem Verbindungsfehler verdoppelt.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 4<br /> </td> 
   </tr> 
   <tr> 
    <td> maxSessionsPerChild<br /> </td> 
-   <td> Maximale Anzahl an SMTP-Sitzungen pro untergeordnetem Server Um eine Nachricht zuzustellen, initiiert der MTA eine SMTP-Verbindung zum Empfänger-MTA. Die maximale Anzahl an simultan auf demselben untergeordneten Server aktiven SMTP-Sitzungen ist durch diesen Wert begrenzt. Das Produkt aus diesem Wert und maxSpareServers entspricht der maximalen Anzahl an parallel auf einen untergeordneten Server gesendeten Nachrichten.<br /> </td> 
+   <td> Maximale Anzahl der SMTP-Sitzungen nach untergeordneten Servern. Um eine Nachricht zu senden, initialisiert der MTA eine SMTP-Verbindung mit dem MTA des Empfängers. Die maximale Anzahl gleichzeitiger und aktiver SMTP-Sitzungen für einen bestimmten untergeordneten Server ist durch diesen Wert begrenzt. Wenn Sie diesen Wert mit maxSpareServers multiplizieren, erhalten Sie die maximale Anzahl von Nachrichten, die gleichzeitig von einem bestimmten untergeordneten Server verarbeitet werden können.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1000<br /> </td> 
   </tr> 
@@ -1958,32 +1958,32 @@ Weitere Informationen finden Sie unter [Liste der zu verwendenden IP-Adressen](.
  <tbody> 
   <tr> 
    <td> Adresse<br /> </td> 
-   <td> Zugeordnete physische Adresse, z. B. '192.168.0.1'<br /> </td> 
+   <td> Zugehörige physische Adresse. z. B.: '192.168.0.1'<br /> </td> 
    <td> String <br /> </td> 
   </tr> 
   <tr> 
    <td> publicId<br /> </td> 
-   <td> Kennung der zugeordneten öffentlichen Adresse. Wird vom Statistikserver als Schlüssel verwendet. Muss numerisch sein. Siehe diesen <a href="../../installation/using/email-deliverability.md#managing-ip-addresses">Abschnitt</a>.<br /> </td> 
+   <td> Zugehörige öffentliche Adressen-ID. Wird als Schlüssel für den Statistikserver verwendet. Muss numerisch sein. Siehe dies <a href="../../installation/using/email-deliverability.md#managing-ip-addresses">Abschnitt</a>.<br /> </td> 
    <td> Lang<br /> </td> 
   </tr> 
   <tr> 
-   <td> Gewichtung.<br /> </td> 
-   <td> Bestimmt die Verwendungsfrequenz dieser IP-Adresse im Vergleich zu anderen (je höher die Gewichtung, desto höher die Frequenz)<br /> </td> 
+   <td> Gewichtung<br /> </td> 
+   <td> Gibt die Häufigkeit der Verwendung dieser IP im Vergleich zu anderen IPs an (größere Gewichtungen führen zu höheren Frequenzen).<br /> </td> 
    <td> Lang<br /> </td> 
   </tr> 
   <tr> 
    <td> includeDomains<br /> </td> 
-   <td> Maske für einzuschließende Domains, durch Kommata getrennt.<br /> </td> 
+   <td> Kommagetrennte Liste von Domänenmasken, die eingeschlossen werden sollen.<br /> </td> 
    <td> String <br /> </td> 
   </tr> 
   <tr> 
    <td> excludeDomains<br /> </td> 
-   <td> Maske für auszuschließende Domains, durch Kommata getrennt.<br /> </td> 
+   <td> Kommagetrennte Liste von Domänenmasken, die ausgeschlossen werden sollen.<br /> </td> 
    <td> String <br /> </td> 
   </tr> 
   <tr> 
    <td> heloHost<br /> </td> 
-   <td> Name des der IP-Adresse entsprechenden Geräts. Wird vom SMTP-HELO-Befehl verwendet.<br /> </td> 
+   <td> Computername, der mit der IP-Adresse verknüpft ist. Wird bei der Ausgabe eines SMTP-HELO-Befehls verwendet.<br /> </td> 
    <td> String <br /> </td> 
   </tr> 
  </tbody> 
@@ -2005,7 +2005,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **nmac** Knoten. Dies is
  <tbody> 
   <tr> 
    <td> useHTTProxy<br /> </td> 
-   <td> Use HTTP proxy defined in shared/proxyHTTP. <br /> </td> 
+   <td> Verwenden Sie den in shared/proxyHTTP definierten HTTP-Proxy. <br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -2028,12 +2028,12 @@ Im Folgenden finden Sie die verschiedenen Parameter der **nmac > relay** Knoten.
  <tbody> 
   <tr> 
    <td> Adresse<br /> </td> 
-   <td> Adresse oder DNS-Name des zu verwendenden Relais. <br /> </td> 
+   <td> DNS-Adresse oder Name des zu verwendenden Relais. <br /> </td> 
    <td> String <br /> </td> 
    <td> </td> 
   </tr> 
   <tr> 
-   <td> Port<br /> </td> 
+   <td> port<br /> </td> 
    <td> Relationship Port<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 443<br /> </td> 
@@ -2069,25 +2069,25 @@ Im Folgenden finden Sie die verschiedenen Parameter der **pipelined** Knoten. Di
   </tr> 
   <tr> 
    <td> args<br /> </td> 
-   <td> Startparameter<br /> </td> 
+   <td> Start-up-Parameter<br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> authGatewayEndpoint<br /> </td> 
-   <td> URL für den Erhalt eines Gateway-Tokens.<br /> </td> 
+   <td> URL zum Abrufen eines Gateway-Tokens.<br /> </td> 
    <td> String <br /> </td> 
    <td> "https://api.omniture.com' <br /> </td> 
   </tr> 
   <tr> 
    <td> authPrivateKey<br /> </td> 
-   <td> Privater Schlüssel für den Erhalt der Tokens (mit AES verschlüsselt, XtkKey-Option).<br /> </td> 
+   <td> Privater Schlüssel zum Abrufen von Token (in AES mit der XtkKey-Option verschlüsselt).<br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> autoStart<br /> </td> 
-   <td> Autostart <br /> </td> 
+   <td> Automatischer Start <br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -2099,7 +2099,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **pipelined** Knoten. Di
   </tr> 
   <tr> 
    <td> discoverPipelineEndpoint<br /> </td> 
-   <td> URL zum Auffinden der Pipeline-Services-URL.<br /> </td> 
+   <td> URL zur Erkennung der Pipeline Services-URL.<br /> </td> 
    <td> String <br /> </td> 
    <td> "https://producer-pipeline-pnw.adobe.net'<br /> </td> 
   </tr> 
@@ -2117,7 +2117,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **pipelined** Knoten. Di
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
-   <td> Kennung des bei Prozessbeginn auszuführenden JavaScripts.<br /> </td> 
+   <td> Kennung von JavaScript, das beim Starten des Prozesses ausgeführt werden soll.<br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -2141,7 +2141,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **pipelined** Knoten. Di
   </tr> 
   <tr> 
    <td> pointerFlushMessageCount<br /> </td> 
-   <td> Zeiger wird bei Erreichen der angegebenen Nachrichtenanzahl in der Datenbank gespeichert.<br /> </td> 
+   <td> Der Zeiger wird jedes Mal, wenn diese Anzahl von Nachrichten verarbeitet wird, in der Datenbank gespeichert.<br /> </td> 
    <td> <br /> </td> 
    <td> 1000<br /> </td> 
   </tr> 
@@ -2153,25 +2153,25 @@ Im Folgenden finden Sie die verschiedenen Parameter der **pipelined** Knoten. Di
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
-   <td> Zeitpunkt des automatischen Neustarts des Prozesses. Siehe <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatischer Prozess-Neustart</a>.<br /> </td> 
+   <td> Uhrzeit des automatischen Neustart des Prozesses. Siehe <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatischer Prozess-Neustart</a>.<br /> </td> 
    <td> String <br /> </td> 
-   <td> '06:00:00' <br /> </td> 
+   <td> "06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> processingJSThreads<br /> </td> 
-   <td> Anzahl an Threads für die Verarbeitung von Ereignissen mit einem personalisierten JavaScript-Connector<br /> </td> 
+   <td> Anzahl der Threads für die Ereignisverarbeitung mit einem personalisierten JavaScript-Connector.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 4<br /> </td> 
   </tr> 
   <tr> 
    <td> processingThreads<br /> </td> 
-   <td> Anzahl an Threads für die Verarbeitung von Ereignissen<br /> </td> 
+   <td> Anzahl der Threads für die Ereignisverarbeitung.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 4<br /> </td> 
   </tr> 
   <tr> 
    <td> retryPeriodSec<br /> </td> 
-   <td> Intervall zwischen Verarbeitungsversuchen im Fall eines Fehlschlags.<br /> </td> 
+   <td> Verzögerung zwischen der Verarbeitung bei einem Fehler.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 30<br /> </td> 
   </tr> 
@@ -2183,8 +2183,8 @@ Im Folgenden finden Sie die verschiedenen Parameter der **pipelined** Knoten. Di
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> Startpriorität. Module mit einer niedrigen Prioritätsziffer werden als erste gestartet und als letzte abgeschlossen. Das Syslogd-Modul muss daher die Priorität 0 aufweisen.<br /> </td> 
-   <td> Kurz<br /> </td> 
+   <td> Priorität am Anfang. Module mit niedriger Priorität werden zuerst gestartet und zuletzt angehalten. Das syslogd-Modul muss daher die Priorität 0 haben.<br /> </td> 
+   <td> Short<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
  </tbody> 
@@ -2231,36 +2231,36 @@ Weitere Informationen finden Sie unter [Sicherheitszonen definieren](../../insta
  <tbody> 
   <tr> 
    <td> allowDebug<br /> </td> 
-   <td> Debug-Modus in Webanwendungen zulassen.<br /> </td> 
+   <td> Debug-Modus für Webanwendungen zulassen.<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> allowEmptyPassword<br /> </td> 
-   <td> Zulassen, dass der Benutzer kein Passwort benötigt.<br /> </td> 
+   <td> Autorisieren Sie den Benutzer, die Anwendung ohne Kennwort zu verwenden.<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> allowHTTP<br /> </td> 
-   <td> Gebrauch von HTTP bei der Anmeldung von Benutzern zulassen.<br /> </td> 
+   <td> Autorisieren Sie die Verwendung von HTTP für die Benutzeranmeldung.<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> allowSQLInjection<br /> </td> 
-   <td> Vewendung von SQLDATA in Ausdrücken zulassen.<br /> </td> 
+   <td> Autorisieren Sie die Verwendung von SQLDATA in Ausdrücken.<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> allowUserPassword<br /> </td> 
-   <td> Sitzungstoken im Format Benutzer/Passwort zulassen.<br /> </td> 
+   <td> Benutzer-/Kennwort-Sitzungstoken zulassen.<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
   <tr> 
-   <td> Bezeichnung<br /> </td> 
+   <td> label<br /> </td> 
    <td> Titel<br /> </td> 
    <td> String <br /> </td> 
    <td> NewLabel()<br /> </td> 
@@ -2273,7 +2273,7 @@ Weitere Informationen finden Sie unter [Sicherheitszonen definieren](../../insta
   </tr> 
   <tr> 
    <td> sessionTokenOnly<br /> </td> 
-   <td> Security-Token nicht verwenden.<br /> </td> 
+   <td> Verwenden Sie nicht das Security-Token.<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -2328,7 +2328,7 @@ Weitere Informationen finden Sie unter [Sicherheitszonen definieren](../../insta
  </thead> 
  <tbody> 
   <tr> 
-   <td> Bezeichnung<br /> </td> 
+   <td> label<br /> </td> 
    <td> Titel<br /> </td> 
    <td> String <br /> </td> 
    <td> NewLabel()<br /> </td> 
@@ -2347,9 +2347,9 @@ Weitere Informationen finden Sie unter [Sicherheitszonen definieren](../../insta
   </tr> 
   <tr> 
    <td> Proxy<br /> </td> 
-   <td> Maske oder Adresse des vom Sub-Netzwerk verwendeten (Reverse) Proxys, um auf die Instanz zuzugreifen. In diesem Fall wird der Header 'X-Forwarded-For' anstelle des Proxys getestet.<br /> </td> 
+   <td> Maske oder Adresse des (umgekehrten) Proxys, der von diesem Unternetzwerk für den Zugriff auf die Instanz verwendet wird. In diesem Fall wird der Header "X-Forwarded-For"anstelle dieses Proxys getestet.<br /> </td> 
    <td> String <br /> </td> 
-   <td> 127.0.0.1 <br /> </td> 
+   <td> 127,0,0,1 <br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -2370,31 +2370,31 @@ Im Folgenden finden Sie die verschiedenen Parameter der **sms** Knoten. Dies ist
  <tbody> 
   <tr> 
    <td> args<br /> </td> 
-   <td> Startparameter<br /> </td> 
+   <td> Start-up-Parameter<br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> autoStart<br /> </td> 
-   <td> Autostart<br /> </td> 
+   <td> Automatischer Start<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> dataRetentionDays<br /> </td> 
-   <td> Maximale Rückhaltedauer der Arbeitsdateien des SMPP-Connectors (in Tagen)<br /> </td> 
+   <td> Maximale Anzahl der Tage, in denen Dateien vom SMPP-Connector gespeichert werden.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 60<br /> </td> 
   </tr> 
   <tr> 
    <td> dataSizeMo<br /> </td> 
-   <td> Maximale Größe in MB der SMPP-Arbeitsdateien<br /> </td> 
+   <td> Maximale Größe der SMPP-Arbeitsdateien in MB.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 512<br /> </td> 
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
-   <td> Kennung des bei Prozessbeginn auszuführenden JavaScripts.<br /> </td> 
+   <td> Kennung von JavaScript, das beim Starten des Prozesses ausgeführt werden soll.<br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -2424,9 +2424,9 @@ Im Folgenden finden Sie die verschiedenen Parameter der **sms** Knoten. Dies ist
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
-   <td> Zeitpunkt des automatischen Neustarts des Prozesses. Siehe <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatischer Prozess-Neustart</a>.<br /> </td> 
+   <td> Uhrzeit des automatischen Neustart des Prozesses. Siehe <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatischer Prozess-Neustart</a>.<br /> </td> 
    <td> String <br /> </td> 
-   <td> '06:00:00' <br /> </td> 
+   <td> "06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> reloadPeriod<br /> </td> 
@@ -2436,8 +2436,8 @@ Im Folgenden finden Sie die verschiedenen Parameter der **sms** Knoten. Dies ist
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> Startpriorität. Module mit einer niedrigen Prioritätsziffer werden als erste gestartet und als letzte abgeschlossen. Das Syslogd-Modul muss daher die Priorität 0 aufweisen.<br /> </td> 
-   <td> Kurz<br /> </td> 
+   <td> Priorität am Anfang. Module mit niedriger Priorität werden zuerst gestartet und zuletzt angehalten. Das syslogd-Modul muss daher die Priorität 0 haben.<br /> </td> 
+   <td> Short<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
   <tr> 
@@ -2448,7 +2448,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **sms** Knoten. Dies ist
   </tr> 
   <tr> 
    <td> timeout<br /> </td> 
-   <td> Kommunikations-Timeout mit dem SMS-Gateway<br /> </td> 
+   <td> Zeitüberschreitung bei der Kommunikation mit dem SMS-Gateway.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 300<br /> </td> 
   </tr> 
@@ -2471,7 +2471,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **sms > netsize** Knoten
  <tbody> 
   <tr> 
    <td> netsizeConnectionTimeout<br /> </td> 
-   <td> Timeout (in Sekunden) beim Netsize-Verbindungsaufbau.<br /> </td> 
+   <td> Zeitüberschreitung bei der Herstellung einer Verbindung mit Netsize in Sekunden.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 30<br /> </td> 
   </tr> 
@@ -2494,19 +2494,19 @@ Im Folgenden finden Sie die verschiedenen Parameter der **stat** Knoten. Dies is
  <tbody> 
   <tr> 
    <td> args<br /> </td> 
-   <td> Startparameter<br /> </td> 
+   <td> Start-up-Parameter<br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> autoStart<br /> </td> 
-   <td> Autostart<br /> </td> 
+   <td> Automatischer Start<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
-   <td> Kennung des bei Prozessbeginn auszuführenden JavaScripts.<br /> </td> 
+   <td> Kennung von JavaScript, das beim Starten des Prozesses ausgeführt werden soll.<br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -2523,21 +2523,21 @@ Im Folgenden finden Sie die verschiedenen Parameter der **stat** Knoten. Dies is
    <td> 1600<br /> </td> 
   </tr> 
   <tr> 
-   <td> Port<br /> </td> 
-   <td> Server-Listen-Port. Siehe diesen <a href="../../installation/using/email-deliverability.md#definition-of-the-server-port">Abschnitt</a>.<br /> </td> 
-   <td> Kurz<br /> </td> 
+   <td> port<br /> </td> 
+   <td> Server-Listening-Anschluss. Siehe dies <a href="../../installation/using/email-deliverability.md#definition-of-the-server-port">Abschnitt</a>.<br /> </td> 
+   <td> Short<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
-   <td> Zeitpunkt des automatischen Neustarts des Prozesses. Siehe <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatischer Prozess-Neustart</a>.<br /> </td> 
+   <td> Uhrzeit des automatischen Neustart des Prozesses. Siehe <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatischer Prozess-Neustart</a>.<br /> </td> 
    <td> String <br /> </td> 
-   <td> '06:00:00' <br /> </td> 
+   <td> "06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> Startpriorität. Module mit einer niedrigen Prioritätsziffer werden als erste gestartet und als letzte abgeschlossen. Das Syslogd-Modul muss daher die Priorität 0 aufweisen.<br /> </td> 
-   <td> Kurz<br /> </td> 
+   <td> Priorität am Anfang. Module mit niedriger Priorität werden zuerst gestartet und zuletzt angehalten. Das syslogd-Modul muss daher die Priorität 0 haben.<br /> </td> 
+   <td> Short<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
  </tbody> 
@@ -2559,25 +2559,25 @@ Im Folgenden finden Sie die verschiedenen Parameter der **syslogd** Knoten. Dies
  <tbody> 
   <tr> 
    <td> args<br /> </td> 
-   <td> Startparameter<br /> </td> 
+   <td> Start-up-Parameter<br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> autoStart<br /> </td> 
-   <td> Autostart<br /> </td> 
+   <td> Automatischer Start<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
-   <td> Kennung des bei Prozessbeginn auszuführenden JavaScripts.<br /> </td> 
+   <td> Kennung von JavaScript, das beim Starten des Prozesses ausgeführt werden soll.<br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> maxFileSizeMb<br /> </td> 
-   <td> Maximale Größe einer Logdatei in MB. <br /> </td> 
+   <td> Maximale Größe in MB für eine Protokolldatei. <br /> </td> 
    <td> Lang<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
@@ -2601,14 +2601,14 @@ Im Folgenden finden Sie die verschiedenen Parameter der **syslogd** Knoten. Dies
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
-   <td> Zeitpunkt des automatischen Neustarts des Prozesses. Siehe <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatischer Prozess-Neustart</a>.<br /> </td> 
+   <td> Uhrzeit des automatischen Neustart des Prozesses. Siehe <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatischer Prozess-Neustart</a>.<br /> </td> 
    <td> String <br /> </td> 
-   <td> '06:00:00' <br /> </td> 
+   <td> "06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> Startpriorität. Module mit einer niedrigen Prioritätsziffer werden als erste gestartet und als letzte abgeschlossen. Das Syslogd-Modul muss daher die Priorität 0 aufweisen.<br /> </td> 
-   <td> Kurz<br /> </td> 
+   <td> Priorität am Anfang. Module mit niedriger Priorität werden zuerst gestartet und zuletzt angehalten. Das syslogd-Modul muss daher die Priorität 0 haben.<br /> </td> 
+   <td> Short<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
  </tbody> 
@@ -2630,13 +2630,13 @@ Im Folgenden finden Sie die verschiedenen Parameter der **tracking** Knoten. Die
  <tbody> 
   <tr> 
    <td> args<br /> </td> 
-   <td> Startparameter<br /> </td> 
+   <td> Start-up-Parameter<br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> autoStart<br /> </td> 
-   <td> Autostart<br /> </td> 
+   <td> Automatischer Start<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -2674,17 +2674,17 @@ Im Folgenden finden Sie die verschiedenen Parameter der **tracking** Knoten. Die
    <td> indicatorsDuration<br /> </td> 
    <td> Kennzahlen berechnen während: Dauer nach dem Gültigkeitsdatum eines Versands, nach dem konsolidierte Kennzahlen nicht mehr berechnet werden.<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 2592000<br /> </td> 
+   <td> 259200<br /> </td> 
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
-   <td> Kennung des bei Prozessbeginn auszuführenden JavaScripts <br /> </td> 
+   <td> Kennung von JavaScript, das beim Starten des Prozesses ausgeführt werden soll <br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> logCountPerRequest<br /> </td> 
-   <td> Anzahl der pro Aufruf des Remote-Trackingservers abgerufenen Logs.<br /> </td> 
+   <td> Anzahl der Protokolle, die durch Aufruf des Remote-Tracking-Servers angefordert werden.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1000<br /> </td> 
   </tr> 
@@ -2714,14 +2714,14 @@ Im Folgenden finden Sie die verschiedenen Parameter der **tracking** Knoten. Die
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
-   <td> Zeitpunkt des automatischen Neustarts des Prozesses. Siehe <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatischer Prozess-Neustart</a>.<br /> </td> 
+   <td> Uhrzeit des automatischen Neustart des Prozesses. Siehe <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatischer Prozess-Neustart</a>.<br /> </td> 
    <td> String <br /> </td> 
-   <td> '06:00:00' <br /> </td> 
+   <td> "06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> Startpriorität. Module mit einer niedrigen Prioritätsziffer werden als erste gestartet und als letzte abgeschlossen. Das Syslogd-Modul muss daher die Priorität 0 aufweisen.<br /> </td> 
-   <td> Kurz<br /> </td> 
+   <td> Priorität am Anfang. Module mit niedriger Priorität werden zuerst gestartet und zuletzt angehalten. Das syslogd-Modul muss daher die Priorität 0 haben.<br /> </td> 
+   <td> Short<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
   <tr> 
@@ -2761,19 +2761,19 @@ Im Folgenden finden Sie die verschiedenen Parameter der **trackinglogd** Knoten.
  <tbody> 
   <tr> 
    <td> args<br /> </td> 
-   <td> Startparameter<br /> </td> 
+   <td> Start-up-Parameter<br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> autoStart<br /> </td> 
-   <td> Autostart<br /> </td> 
+   <td> Automatischer Start<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
-   <td> Kennung des bei Prozessbeginn auszuführenden JavaScripts <br /> </td> 
+   <td> Kennung von JavaScript, das beim Starten des Prozesses ausgeführt werden soll <br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -2809,9 +2809,9 @@ Im Folgenden finden Sie die verschiedenen Parameter der **trackinglogd** Knoten.
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
-   <td> Zeitpunkt des automatischen Neustarts des Prozesses. Siehe <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatischer Prozess-Neustart</a>.<br /> </td> 
+   <td> Uhrzeit des automatischen Neustart des Prozesses. Siehe <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatischer Prozess-Neustart</a>.<br /> </td> 
    <td> String <br /> </td> 
-   <td> '06:00:00' <br /> </td> 
+   <td> "06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> purgeLogsPeriod<br /> </td> 
@@ -2821,13 +2821,13 @@ Im Folgenden finden Sie die verschiedenen Parameter der **trackinglogd** Knoten.
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> Startpriorität. Module mit einer niedrigen Prioritätsziffer werden als erste gestartet und als letzte abgeschlossen. Das Syslogd-Modul muss daher die Priorität 0 aufweisen.<br /> </td> 
-   <td> Kurz<br /> </td> 
+   <td> Priorität am Anfang. Module mit niedriger Priorität werden zuerst gestartet und zuletzt angehalten. Das syslogd-Modul muss daher die Priorität 0 haben.<br /> </td> 
+   <td> Short<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
   <tr> 
    <td> webTrackingParamSize<br /> </td> 
-   <td> Maximale Zeichenanzahl der Webtrackingparameter im geteilten Speicher.<br /> </td> 
+   <td> Maximale Anzahl von Zeichen, die im gemeinsamen Speicher für zusätzliche Webtracking-Parameter gespeichert werden.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 64<br /> </td> 
   </tr> 
@@ -2852,49 +2852,49 @@ Weitere Informationen finden Sie in diesem Abschnitt [Abschnitt](configuring-cam
  <tbody> 
   <tr> 
    <td> JVMOptions<br /> </td> 
-   <td> Optionen der als String übergebenen JVM<br /> </td> 
+   <td> Optionen der als Zeichenfolge übergebenen JVM.<br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> MaxThreads<br /> </td> 
-   <td> Maximale Thread-Anzahl.<br /> </td> 
+   <td> Maximale Anzahl von Threads.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 75<br /> </td> 
   </tr> 
   <tr> 
    <td> MinSpareThreads<br /> </td> 
-   <td> Minimale Thread-Anzahl<br /> </td> 
+   <td> Mindestanzahl von Threads.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 5<br /> </td> 
   </tr> 
   <tr> 
    <td> args<br /> </td> 
-   <td> Startparameter<br /> </td> 
+   <td> Start-up-Parameter<br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> autoStart<br /> </td> 
-   <td> Autostart<br /> </td> 
+   <td> Automatischer Start<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> controlPort<br /> </td> 
    <td> Überwachungsanschluss von Tomcat: siehe <a href="configure-tomcat.md" target="_blank">Tomcat konfigurieren</a>.<br /> </td> 
-   <td> Kurz<br /> </td> 
+   <td> Short<br /> </td> 
    <td> 8005<br /> </td> 
   </tr> 
   <tr> 
    <td> httpPort<br /> </td> 
    <td> Tomcat HTTP-Listening-Anschluss, siehe <a href="configure-tomcat.md" target="_blank">Tomcat konfigurieren</a>.<br /> </td> 
-   <td> Kurz<br /> </td> 
+   <td> Short<br /> </td> 
    <td> 8080<br /> </td> 
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
-   <td> Kennung des bei Prozessbeginn auszuführenden JavaScripts.<br /> </td> 
+   <td> Kennung von JavaScript, das beim Starten des Prozesses ausgeführt werden soll.<br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -2924,19 +2924,19 @@ Weitere Informationen finden Sie in diesem Abschnitt [Abschnitt](configuring-cam
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
-   <td> Zeitpunkt des automatischen Neustarts des Prozesses. Siehe <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatischer Prozess-Neustart</a>.<br /> </td> 
+   <td> Uhrzeit des automatischen Neustart des Prozesses. Siehe <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatischer Prozess-Neustart</a>.<br /> </td> 
    <td> String <br /> </td> 
-   <td> '06:00:00' <br /> </td> 
+   <td> "06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> Startpriorität. Module mit einer niedrigen Prioritätsziffer werden als erste gestartet und als letzte abgeschlossen. Das Syslogd-Modul muss daher die Priorität 0 aufweisen.<br /> </td> 
-   <td> Kurz<br /> </td> 
+   <td> Priorität am Anfang. Module mit niedriger Priorität werden zuerst gestartet und zuletzt angehalten. Das syslogd-Modul muss daher die Priorität 0 haben.<br /> </td> 
+   <td> Short<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
   <tr> 
    <td> startSoapRouterInModule<br /> </td> 
-   <td> SOAP-Router im Modulmodus starten<br /> </td> 
+   <td> Starten Sie den SOAP-Router im Modulmodus.<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -2971,13 +2971,13 @@ Im Folgenden finden Sie die verschiedenen Parameter der **web > jsp** Knoten. Di
   </tr> 
   <tr> 
    <td> foFileName<br /> </td> 
-   <td> Pfad der .fo-Datei<br /> </td> 
+   <td> Pfad der .fo-Datei.<br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> soapRouter<br /> </td> 
-   <td> URL des SOAP-Routers (http://meinserver/xxx, http://jni oder mailto:xxx).<br /> </td> 
+   <td> URL des SOAP-Routers (http://myserver/xxx, http://jni oder mailto:xxx).<br /> </td> 
    <td> String <br /> </td> 
    <td> "http://jni'<br /> </td> 
   </tr> 
@@ -3038,7 +3038,7 @@ Im Folgenden finden Sie die verschiedenen Parameter der **web > jssp** Knoten. D
  <tbody> 
   <tr> 
    <td> collectGarbageAfterRequest<br /> </td> 
-   <td> Aktiviert die Garbage Collection des JavaScript-Kontexts nach jeder Abfrage<br /> </td> 
+   <td> Aktiviert den Garbage Collector des JavaScript-Kontexts nach jeder Abfrage.<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> true<br /> </td> 
   </tr> 
@@ -3071,7 +3071,7 @@ Weitere Informationen finden Sie in diesem Abschnitt [Abschnitt](../../installat
  <tbody> 
   <tr> 
    <td> debugRelay<br /> </td> 
-   <td> Startet das HTTP-Weiterleitungsmodul im Webserver im Debug-Modus.<br /> </td> 
+   <td> Starten Sie das HTTP-Relais-Modul auf dem Webserver im Debug-Modus.<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -3095,7 +3095,7 @@ Weitere Informationen finden Sie in diesem Abschnitt [Abschnitt](../../installat
   </tr> 
   <tr> 
    <td> startRelay<br /> </td> 
-   <td> Startet das HTTP-Weiterleitungsmodul.<br /> </td> 
+   <td> Starten Sie das HTTP-Relais-Modul.<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -3107,9 +3107,9 @@ Weitere Informationen finden Sie in diesem Abschnitt [Abschnitt](../../installat
   </tr> 
   <tr> 
    <td> timeout<br /> </td> 
-   <td> Wartezeit vor Löschung der ausgeschlossenen URL.<br /> </td> 
+   <td> Wartezeit vor dem Löschen einer verbotenen URL.<br /> </td> 
    <td> String <br /> </td> 
-   <td> '60'<br /> </td> 
+   <td> "60"<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -3136,7 +3136,7 @@ Weitere Informationen finden Sie unter [Dynamische Seitensicherheit und Relais](
   </tr> 
   <tr> 
    <td> Ablehnen<br /> </td> 
-   <td> Verweigert den Zugriff auf diese URLs (gibt HTTP 403 Fehler aus)<br /> </td> 
+   <td> Zugriff auf diese URLs verweigern (HTTP 403-Fehler zurückgeben)<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -3148,7 +3148,7 @@ Weitere Informationen finden Sie unter [Dynamische Seitensicherheit und Relais](
   </tr> 
   <tr> 
    <td> httpAllowed<br /> </td> 
-   <td> HTTP-Zugriff unabhängig von der Sicherheitszone zulässig (wie bei WebApps). <br /> </td> 
+   <td> HTTP-Zugriff unabhängig von der Sicherheitszone (wie webApps) autorisiert. <br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -3184,7 +3184,7 @@ Weitere Informationen finden Sie unter [Dynamische Seitensicherheit und Relais](
   </tr> 
   <tr> 
    <td> urlPath<br /> </td> 
-   <td> Maske der weiterzuleitenden URLs (z. B.: '/nl*', '*.jsp').<br /> </td> 
+   <td> Maske der URLs zum Weiterleiten (z. B. "/nl*", "*.jsp").<br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -3271,12 +3271,12 @@ Weitere Informationen finden Sie unter [Verwalten von HTTP-Headern](../../instal
  <tbody> 
   <tr> 
    <td> name<br /> </td> 
-   <td> Header-Name<br /> </td> 
+   <td> Header name<br /> </td> 
    <td> String <br /> </td> 
   </tr> 
   <tr> 
    <td> value<br /> </td> 
-   <td> Header-Wert <br /> </td> 
+   <td> Kopfzeilenwert <br /> </td> 
    <td> String <br /> </td> 
   </tr> 
  </tbody> 
@@ -3318,13 +3318,13 @@ Weitere Informationen finden Sie in diesem Abschnitt [Abschnitt](../../installat
   </tr> 
   <tr> 
    <td> cookieDomain<br /> </td> 
-   <td> Durch Kommata getrennte Liste von Domains, die so konfiguriert werden sollen, dass Ihre Domain zum Setzen von Cookies angegeben wird. <br /> </td> 
+   <td> Kommagetrennte Liste der Domänen, die konfiguriert werden sollen, um explizit anzugeben, welche Domäne Cookies setzen soll. <br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> databaseId<br /> </td> 
-   <td> Kennung der der Trackinginstanz zugeordneten Datenbank.<br /> </td> 
+   <td> Datenbank-ID, die mit der Tracking-Instanz verknüpft ist.<br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -3354,13 +3354,13 @@ Weitere Informationen finden Sie in diesem Abschnitt [Abschnitt](../../installat
   </tr> 
   <tr> 
    <td> startRedirection<br /> </td> 
-   <td> Startet den Weiterleitungsdienst<br /> </td> 
+   <td> Starten Sie den Weiterleitungsdienst.<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> true<br /> </td> 
   </tr> 
   <tr> 
    <td> startRedirectionInModule<br /> </td> 
-   <td> Startet den Weiterleitungsdienst im Modulmodus<br /> </td> 
+   <td> Starten Sie den Weiterleitungsdienst im Modulmodus.<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> true<br /> </td> 
   </tr> 
@@ -3372,7 +3372,7 @@ Weitere Informationen finden Sie in diesem Abschnitt [Abschnitt](../../installat
   </tr> 
   <tr> 
    <td> trackingPassword<br /> </td> 
-   <td> Vom Weiterleitungsserver verwendetes Kennwort.<br /> </td> 
+   <td> Kennwort, das vom Weiterleitungsserver verwendet wird.<br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -3400,14 +3400,14 @@ Weitere Informationen finden Sie unter [Redundantes Tracking](../../installation
    <td> <br /> </td> 
   </tr> 
   <tr> 
-   <td> ID<br /> </td> 
+   <td> id<br /> </td> 
    <td> Name<br /> </td> 
    <td> String <br /> </td> 
    <td> 1<br /> </td> 
   </tr> 
   <tr> 
    <td> url<br /> </td> 
-   <td> URL eines zusätzlichen Weiterleitungsservers<br /> </td> 
+   <td> Zusätzliche Umleitungsserver-URL<br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -3431,7 +3431,7 @@ Weitere Informationen finden Sie unter [SpamAssassin konfigurieren](../../instal
  <tbody> 
   <tr> 
    <td> command<br /> </td> 
-   <td> Zur Auswertung der Anti-Spam-Punktzahl einer E-Mail auszuführender Befehl (z. B.: 'perl spamcheck.pl').<br /> </td> 
+   <td> Befehl zum Ausführen, um den Anti-Spam-Wert einer E-Mail zu bewerten (z. B. 'perl spamcheck.pl').<br /> </td> 
    <td> String <br /> </td> 
   </tr> 
  </tbody> 
@@ -3461,25 +3461,25 @@ Weitere Informationen finden Sie unter [Workflows und Affinitäten mit hoher Ver
   </tr> 
   <tr> 
    <td> args<br /> </td> 
-   <td> Startparameter<br /> </td> 
+   <td> Start-up-Parameter<br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> autoStart<br /> </td> 
-   <td> Autostart<br /> </td> 
+   <td> Automatischer Start<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> dataBasePoolPeriodSec<br /> </td> 
-   <td> Beweglicher Zeitraum<br /> </td> 
+   <td> Zeitraum<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 20<br /> </td> 
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
-   <td> Kennung des bei Prozessbeginn auszuführenden JavaScripts.<br /> </td> 
+   <td> Kennung von JavaScript, das beim Starten des Prozesses ausgeführt werden soll.<br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -3503,14 +3503,14 @@ Weitere Informationen finden Sie unter [Workflows und Affinitäten mit hoher Ver
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
-   <td> Zeitpunkt des automatischen Neustarts des Prozesses. Siehe <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatischer Prozess-Neustart</a>.<br /> </td> 
+   <td> Uhrzeit des automatischen Neustart des Prozesses. Siehe <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatischer Prozess-Neustart</a>.<br /> </td> 
    <td> String <br /> </td> 
-   <td> '06:00:00' <br /> </td> 
+   <td> "06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
-   <td> Startpriorität. Module mit einer niedrigen Prioritätsziffer werden als erste gestartet und als letzte abgeschlossen. Das Syslogd-Modul muss daher die Priorität 0 aufweisen.<br /> </td> 
-   <td> Kurz<br /> </td> 
+   <td> Priorität am Anfang. Module mit niedriger Priorität werden zuerst gestartet und zuletzt angehalten. Das syslogd-Modul muss daher die Priorität 0 haben.<br /> </td> 
+   <td> Short<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
  </tbody> 

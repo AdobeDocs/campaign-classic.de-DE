@@ -6,8 +6,8 @@ role: User
 badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Campaigns, Cross Channel Orchestration
 exl-id: 1278bda1-f83c-4d38-8042-e6611755cf36
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: ht
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+workflow-type: tm+mt
 source-wordcount: '1224'
 ht-degree: 100%
 
@@ -142,10 +142,10 @@ Weitere Informationen finden Sie in den [Diskussionsforen](../../mrm/using/discu
 Kampagnen werden basierend auf Kampagnenvorlagen erstellt. Diese wiederverwendbaren Vorlagen können so konfiguriert werden, dass bestimmte Optionen und Einstellungen bereits ausgewählt und gespeichert sind. Für jede Kampagne stehen folgende Funktionalitäten zur Verfügung:
 
 * Referenzierung von [Dokumenten und Ressourcen](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents): Sie können mit der Kampagne Dokumente (Briefing, Bericht, Bilder usw.) verknüpfen. Alle Dokumentformate werden unterstützt.
-* Kostenbestimmung: Mit Adobe Campaign ist es möglich, für jede Kampagne [Kostenkategorien und Berechnungsstrukturen für Kosten](../../campaign/using/providers--stocks-and-budgets.md#defining-cost-categories) zu definieren, die beim Erstellen einer Marketing-Kampagne verwendet werden können, z. B. Druckkosten, Inanspruchnahme eines externen Dienstleisters, Raummiete usw.
+* Kostenbestimmung: Mit Adobe Campaign ist es möglich, für jede Kampagne [Kostenkategorien und Berechnungsstrukturen für Kosten](../../campaign/using/providers-stocks-and-budgets.md#defining-cost-categories) zu definieren, die beim Erstellen einer Marketing-Kampagne verwendet werden können, z. B. Druckkosten, Inanspruchnahme eines externen Dienstleisters, Raummiete usw.
 * Definition von Zielvorgaben: Sie können für eine Kampagne quantifizierbare Zielvorgaben definieren, z. B. die Anzahl der Abonnentinnen und Abonnenten, das Geschäftsvolumen usw. Diese Informationen werden später in den Kampagnenberichten verwendet.
 * Verwaltung von [Testadressen](../../delivery/using/about-seed-addresses.md) und [Kontrollgruppen](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
-* Validierungsverwaltung: Sie können die zu validierenden Vorgänge sowie bei Bedarf validierungsverantwortliche Benutzerinnen bzw. Benutzer oder Benutzergruppen auswählen. [Weitere Informationen](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries)
+* Validierungsverwaltung: Sie können die zu validierenden Abwandlungen sowie bei Bedarf validierungsverantwortliche Benutzerinnen bzw. Benutzer oder Benutzergruppen auswählen. [Weitere Informationen](../../campaign/using/marketing-campaign-approval.md#checking-and-approving-deliveries)
 
 >[!NOTE]
 >

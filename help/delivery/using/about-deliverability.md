@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Deliverability
 role: User
 exl-id: f301b34c-244c-4279-b23f-8224ea8eedbe
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: ht
-source-wordcount: '736'
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+workflow-type: tm+mt
+source-wordcount: '668'
 ht-degree: 100%
 
 ---
@@ -52,7 +52,7 @@ Bei Adobe Campaign hängt die Zustellrate von zahlreichen Faktoren ab, insbesond
 ## Campaign-Tools für die Zustellbarkeit {#deliverability-tools}
 
 <!--Adobe Campaign provides a number of tools designed to ensure optimal deliverability.-->
-Adobe Campaign bietet verschiedene Tools zur Verfolgung und Verbesserung der Zustellbarkeitsleistung Ihrer Plattform. Auf dieser Seite finden Sie auch die wichtigsten Grundsätze, die Sie beachten sollten, um bei der Verwendung von Campaign die Zustellbarkeit zu optimieren.
+Adobe Campaign bietet verschiedene Tools zur Verfolgung und Verbesserung der Zustellbarkeits-Performance Ihrer Plattform. Auf dieser Seite finden Sie auch die wichtigsten Grundsätze, die Sie beachten sollten, um bei der Verwendung von Campaign die Zustellbarkeit zu optimieren.
 
 ### Sorgfältiges Erstellen Ihrer Nachricht
 
@@ -67,7 +67,7 @@ Befolgen Sie beim Konfigurieren, Entwerfen und Testen Ihrer Nachricht die in den
 
 Um das Senden von Nachrichten an ungültige Adressen zu vermeiden, unsachgemäße Kommunikation zu minimieren und die Reputation des Absenders zu verbessern, empfiehlt Adobe die Implementierung eines Mechanismus zum doppelten Opt-in. Mit dieser Methode können Sie sicherstellen, dass sich Ihre Empfänger absichtlich angemeldet haben.
 
-Weitere Informationen hierzu finden Sie unter [Abonnement-Formular mit zweifacher Bestätigung erstellen](../../web/using/use-cases--web-forms.md#create-a-subscription--form-with-double-opt-in).
+Weitere Informationen hierzu finden Sie unter [Abonnement-Formular mit zweifacher Bestätigung erstellen](../../web/using/use-cases-web-forms.md#create-a-subscription--form-with-double-opt-in).
 
 Weitere Informationen zu Best Practices bei der Erfassung von Kundendaten finden Sie im [Adobe-Handbuch mit Best Practices zur Zustellbarkeit](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/first-impressions/address-collection-and-list-growth.html?lang=de#data-quality-and-hygiene).
 

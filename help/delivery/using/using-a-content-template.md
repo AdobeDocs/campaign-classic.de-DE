@@ -6,10 +6,10 @@ badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Templates
 exl-id: e43dd68e-2e95-4367-9029-4622fbcb1759
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '451'
-ht-degree: 100%
+ht-degree: 81%
 
 ---
 
@@ -29,11 +29,11 @@ Sie haben die Möglichkeit, bei der Versanderstellung eine Inhaltsvorlage anzuge
 
 ![](assets/s_ncs_content_deliver_a_content.png)
 
-Die Formatierung geschieht automatisch gemäß den ausgewählten Parametern. Klicken Sie zu ihrer Prüfung auf den Tab **[!UICONTROL HTML-Vorschau]** bzw. **[!UICONTROL Text-Vorschau]** und wählen Sie einen Empfänger aus, um die Personalisierung zu testen.
+Das Layout wird automatisch auf der Basis der ausgewählten Einstellungen angewendet. Um sie anzuzeigen, klicken Sie auf das **[!UICONTROL HTML-Vorschau]** (oder **[!UICONTROL Textvorschau]** ) und wählen Sie einen Empfänger aus, um Personalisierungselemente zu testen.
 
 ![](assets/s_ncs_content_deliver_a_content_html.png)
 
-Weitere Informationen finden Sie im vollständigen Implementierungsbeispiel unter [Inhaltserstellung im Versand-Assistenten](use-case--creating-content-management.md#creating-content-in-the-delivery-wizard).
+Weitere Informationen finden Sie im vollständigen Implementierungsbeispiel unter [Inhaltserstellung im Versand-Assistenten](use-case-creating-content-management.md#creating-content-in-the-delivery-wizard).
 
 ## Erstellung einer Inhaltsinstanz {#creating-a-content-instance}
 
@@ -61,7 +61,7 @@ Gehen Sie wie folgt vor:
 
    ![](assets/s_ncs_content_folder_use_a_template_preview.png)
 
-1. Nach seiner Erstellung erscheint der Inhalt in der Liste der verfügbaren Inhalte. Durch Klick auf die **[!UICONTROL Eigenschaften]**-Schaltfläche können Sie Titel und Status ändern und den Verlauf ansehen.
+1. Nach seiner Erstellung wird der Inhalt der Liste der verfügbaren Inhalte hinzugefügt. Klicken Sie auf **[!UICONTROL Eigenschaften]** -Link, um Titel, Status oder den Verlauf zu ändern.
 
    ![](assets/s_ncs_content_folder_template_properties.png)
 
@@ -73,7 +73,7 @@ Gehen Sie wie folgt vor:
    >
    >Sie haben auch die Möglichkeit, die Erzeugung nicht validierter Inhalte zuzulassen. Ändern Sie in diesem Fall die entsprechende Option in der Veröffentlichungsvorlage. Weitere Informationen hierzu finden Sie unter [Erstellung und Konfiguration der Vorlagen](publication-templates.md#creating-and-configuring-the-template).
 
-   HTML- und Text-Inhalte werden standardmäßig im **Publishing**-Ordner der Adobe-Campaign-Instanz erzeugt. Ausgehend von der Option **NcmPublishingDir** können Sie einen anderen Ordner wählen.
+   HTML- und Textinhalte werden standardmäßig im **Veröffentlichung** Ordner der Adobe Campaign-Instanz. Sie können den Veröffentlichungsordner über die **NcmPublishingDir** -Option.
 
 ## Versand einer Inhaltsinstanz {#delivering-a-content-instance}
 

@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 48926e87-03d9-4aa0-89cb-e3fb4f99c1f5
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '348'
-ht-degree: 100%
+ht-degree: 79%
 
 ---
 
@@ -41,7 +41,7 @@ Sie können mit nur einem Klick eine vorhandene HTML-Datei importieren, um eine 
 
 ## Wie kann ich mit Campaign DCE E-Mail-Inhalt erstellen? {#how-to-use-campaign-dce-to-create-an-email-content-}
 
-[E-Mail mit dem Digital Content Editor von Campaign erstellen](../../web/using/use-case--creating-an-email-delivery.md): Hier erfahren Sie anhand eines Beispiels, wie Sie mit dem DCE-Modul von Campaign eine E-Mail erstellen können.
+[E-Mail mit dem Digital Content Editor von Campaign erstellen](../../web/using/use-case-creating-an-email-delivery.md): Hier erfahren Sie anhand eines Beispiels, wie Sie mit dem DCE-Modul von Campaign eine E-Mail erstellen können.
 
 ## Wie kann ich in Campaign einen Newsletter zum Abonnieren erstellen? {#how-can-i-create-a-subscription-based-newsletter-in-campaign-}
 
@@ -51,17 +51,17 @@ Sie können mit nur einem Klick eine vorhandene HTML-Datei importieren, um eine 
 
 Die mit Adobe Campaign versendeten Nachrichten können auf verschiedene Art und Weise personalisiert werden. Sowohl Inhalt als auch Rendering der Nachrichten können dem Empfängerprofil angepasst werden. Im Allgemeinen haben Sie in Adobe Campaign folgende Möglichkeiten:
 
-* Personalisieren des Nachrichtenformats. [Hier erfahren Sie mehr dazu](../../delivery/using/defining-the-email-content.md#message-content).
+* Das Nachrichtenformat personalisieren. [Hier erfahren Sie mehr darüber](../../delivery/using/defining-the-email-content.md#message-content).
 * Dynamische Personalisierungsfelder einfügen. [Hier erfahren Sie mehr darüber](../../delivery/using/personalization-fields.md).
-* Einfügen vorkonfigurierter Gestaltungsbausteine oder Erstellen eigener Bausteine. [Hier erfahren Sie mehr dazu](../../delivery/using/personalization-blocks.md).
-* Erstellen bedingter Inhalte. [Hier](../../delivery/using/conditional-content.md) und [in diesem Abschnitt](../../delivery/using/conditional-content.md) erfahren Sie mehr dazu.
+* Fügen Sie vordefinierte Gestaltungsbausteine ein oder erstellen Sie einen eigenen Baustein. [Hier erfahren Sie mehr darüber](../../delivery/using/personalization-blocks.md).
+* Bedingte Inhalte erstellen. [Hier erfahren Sie mehr dazu](../../delivery/using/conditional-content.md) und lesen [diesem Abschnitt](../../delivery/using/conditional-content.md).
 
 ## Kann ich mehrsprachige Nachrichten senden? {#can-i-send-multilingual-messages-}
 
 Sie können an Empfänger je nach deren Einstellungen und deren Land mehrsprachige Nachrichten senden.
 
-Zu diesem Zweck können Sie die Nachricht mithilfe der Option [Bedingungen](../../delivery/using/conditional-content.md) lokalisieren und entsprechend dem Empfängerprofil personalisieren. Sie können auch mithilfe von [Workflows](../../workflow/using/split.md) die Version der zu sendenden Nachricht auswählen und dabei die bevorzugte Sprache über einen Test ermitteln.
+Zu diesem Zweck können Sie den Nachrichteninhalt lokalisieren und entsprechend dem Empfängerprofil mithilfe von [Bedingungen](../../delivery/using/conditional-content.md). Sie können auch [Workflows](../../workflow/using/split.md) , um die Version der zu sendenden Nachricht in Abhängigkeit von einem Test in der bevorzugten Sprache auszuwählen.
 
 ## Wie kann ich ein Web-Formular übersetzen? {#how-can-i-localize-a-webform-}
 
-Sie können eine Web-Anwendung in mehrere Sprachen übersetzen. Das Verfahren zur Übersetzung wird in [diesem Abschnitt](../../web/using/translating-a-web-form.md) beschrieben.
+Sie können eine Webanwendung in mehrere Sprachen lokalisieren. Der Übersetzungsmechanismus wird im Abschnitt [diesem Abschnitt](../../web/using/translating-a-web-form.md).

@@ -5,7 +5,7 @@ description: Über Steuerungsaktivitäten
 badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Workflows
 exl-id: 3810cbd0-159c-4161-b568-1f61dcea0300
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '241'
 ht-degree: 100%
@@ -26,7 +26,7 @@ Folgende Aktivitäten dienen in erster Linie der Koordination anderer Aktivität
 * **Warten**: aktiviert eine ausgehende Transition nach einer definierten Dauer. Siehe [Warten](wait.md).
 * **Zeitliche Beschränkung**: setzt die Ausführung einer Aufgabe für eine bestimmte Dauer aus. Siehe [Zeitliche Beschränkung](time-constraint.md).
 * **Unter-Workflow**: startet die Ausführung eines weiteren Workflows. Siehe [Unter-Workflow](sub-workflow.md).
-* **Sprung**: erzeugt Transitionen ohne direkte Relation. Siehe [Sprung (Startpunkt und Endpunkt)](jump--start-point-and-end-point-.md).
+* **Sprung**: erzeugt Transitionen ohne direkte Relation. Siehe [Sprung (Startpunkt und Endpunkt)](jump-start-point-and-end-point.md).
 * **Externes Signal**: aktiviert eine ausgehende Transition als Reaktion auf ein externes Signal. Lesen Sie diesbezüglich auch den Abschnitt [Externes Signal](external-signal.md).
 * **Validierung**: sendet eine E-Mail an einen Benutzer oder eine Benutzergruppe und wartet auf die Validierung, bevor die Ausführung fortgesetzt wird. Siehe Abschnitt [Validierung](approval.md).
 * **Warnung**: sendet eine Benachrichtigung an einen Benutzer oder eine Benutzergruppe. Siehe Abschnitt [Warnung](alert.md).

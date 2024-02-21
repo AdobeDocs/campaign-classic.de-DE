@@ -9,7 +9,7 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 4596638c-d75a-4e07-a2d8-5befcaad3430
-source-git-commit: 58998fa2480a33776507a434ed846541ac19e58b
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '539'
 ht-degree: 100%
@@ -37,7 +37,7 @@ Sie können dann auf der Registerkarte **[!UICONTROL Script]** der Aktivität od
 **Verwandte Themen:**
 
 * [Entpacken oder Entschlüsseln von Dateien vor der Verarbeitung](../../platform/using/unzip-decrypt.md)
-* [Aktivität &quot;Extraktion (Datei)&quot;](../../workflow/using/extraction--file-.md).
+* [Aktivität &quot;Extraktion (Datei)&quot;](../../workflow/using/extraction-file.md).
 
 ## Anwendungsfall: Verschlüsseln und Exportieren von Daten mit einem im Control Panel installierten Schlüssel {#use-case-gpg-encrypt}
 
@@ -60,7 +60,7 @@ Die Schritte zum Ausführen dieses Anwendungsfalls lauten wie folgt:
 
 1. Konfigurieren Sie die Aktivität **[!UICONTROL Abfrage]** so, dass sie auf die gewünschten Daten aus der Datenbank abzielt. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../workflow/using/query.md).
 
-1. Öffnen Sie die Aktivität **[!UICONTROL Extraktion (Datei)]** und konfigurieren Sie sie entsprechend Ihren Anforderungen. Globale Konzepte zur Konfiguration der Aktivität finden Sie in [diesem Abschnitt](../../workflow/using/extraction--file-.md).
+1. Öffnen Sie die Aktivität **[!UICONTROL Extraktion (Datei)]** und konfigurieren Sie sie entsprechend Ihren Anforderungen. Globale Konzepte zur Konfiguration der Aktivität finden Sie in [diesem Abschnitt](../../workflow/using/extraction-file.md).
 
    ![](assets/gpg-data-extraction.png)
 

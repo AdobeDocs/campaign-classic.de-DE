@@ -5,7 +5,7 @@ description: Über Aktionsaktivitäten
 badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Workflows, Data Management
 exl-id: 8758601b-c4bd-4179-8816-305d1a68d499
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 100%
@@ -22,11 +22,11 @@ ht-degree: 100%
 * **Wiederkehrender Versand**: dient der Konfiguration einer Versandvorlageninstanz im Rahmen einer Kampagne. Siehe [Wiederkehrender Versand](recurring-delivery.md).
 * **Kanalübergreifender Versand**: dient dem Konfigurieren eines Versands im entsprechenden Kanal. Siehe [Kanalübergreifender Versand](cross-channel-deliveries.md).
 * **Lokale Validierung**: wird im dezentralen Marketing (optionales Modul) zur Konfiguration von Zielgruppenvalidierungs-Benachrichtigungen verwendet. Siehe [Lokale Validierung](local-approval.md).
-* **Laden (RDBMS)**: ermöglicht Ihnen den Zugriff auf eine externe Datenbank, um Daten abzurufen. Siehe Abschnitt [Laden (RDBMS)](data-loading--rdbms-.md).
-* **Laden (SOAP)**: dient dem Abruf von Daten über einen SOAP-Aufruf. Siehe [Laden (SOAP)](loading--soap-.md).
-* **Laden (Datei)**: dient dem Abruf von Daten durch Zugriff auf externe Datenquellen. Siehe Abschnitt [Laden (Datei)](data-loading--file-.md).
+* **Laden (RDBMS)**: ermöglicht Ihnen den Zugriff auf eine externe Datenbank, um Daten abzurufen. Siehe Abschnitt [Laden (RDBMS)](data-loading-rdbms.md).
+* **Laden (SOAP)**: dient dem Abruf von Daten über einen SOAP-Aufruf. Siehe [Laden (SOAP)](loading-soap.md).
+* **Laden (Datei)**: dient dem Abruf von Daten durch Zugriff auf externe Datenquellen. Siehe Abschnitt [Laden (Datei)](data-loading-file.md).
 * **Content Management**: dient dem Erstellen oder Anpassen von Inhalten. Siehe Abschnitt [Content Management](content-management.md).
-* **Extraktion (Datei)**: erlaubt es, Daten aus einer Tabelle in einer Datei zu extrahieren. Weiterführende Informationen finden Sie im Abschnitt [Extraktion (Datei)](extraction--file-.md).
+* **Extraktion (Datei)**: erlaubt es, Daten aus einer Tabelle in einer Datei zu extrahieren. Weiterführende Informationen finden Sie im Abschnitt [Extraktion (Datei)](extraction-file.md).
 * **SQL-Code und JavaScript-Code**: führt das in der Aktivität angegebene Script (SQL bzw. JavaScript) aus. Siehe [SQL-Code und JavaScript-Code](sql-code-and-javascript-code.md).
 * **SQL-Daten-Management**: ermöglicht Ihnen das Schreiben eigener SQL-Abfragen zum Erstellen und Ausfüllen von Arbeitstabellen. Siehe [SQL-Daten-Management ](sql-data-management.md).
 * **nlserver-Modul**: startet ein nlserver-Modul mit seinen Argumenten. Siehe [nlserver-Modul](nlserver-module.md).

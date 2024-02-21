@@ -9,9 +9,9 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 1a79da3b-2abc-4bfc-a0ee-8471c478638d
-source-git-commit: a2106e55617209f28da42c50008d16188563b2da
-workflow-type: ht
-source-wordcount: '762'
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+workflow-type: tm+mt
+source-wordcount: '725'
 ht-degree: 100%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 # Entpacken oder Entschlüsseln von Dateien {#unzipping-or-decrypting-a-file-before-processing}
 
-Mit Adobe Campaign können Sie komprimierte oder verschlüsselte Dateien importieren. Damit diese in der Aktivität [Daten laden (Datei)](../../workflow/using/data-loading--file-.md) gelesen werden können, definieren Sie eine Vorab-Bearbeitung, um die Datei zu dekomprimieren oder zu entschlüsseln.
+Mit Adobe Campaign können Sie komprimierte oder verschlüsselte Dateien importieren. Damit diese in der Aktivität [Daten laden (Datei)](../../workflow/using/data-loading-file.md) gelesen werden können, definieren Sie eine Vorab-Bearbeitung, um die Datei zu dekomprimieren oder zu entschlüsseln.
 
 >[!IMPORTANT]
 >
@@ -52,7 +52,7 @@ Im folgenden Anwendungsfall wird ein Beispiel dargestellt.
 
 **Verwandte Themen:**
 
-* [Aktivität &quot;Laden (Datei)&quot;](../../workflow/using/data-loading--file-.md).
+* [Aktivität &quot;Laden (Datei)&quot;](../../workflow/using/data-loading-file.md).
 * [Komprimieren oder Verschlüsseln von Dateien](../../workflow/using/how-to-use-workflow-data.md#zipping-or-encrypting-a-file).
 
 ## Anwendungsfall: Importieren von Daten, die mit einem vom Control Panel generierten Schlüssel verschlüsselt wurden {#use-case-gpg-decrypt}
@@ -85,7 +85,7 @@ Die Schritte zum Ausführen dieses Anwendungsfalls lauten wie folgt:
 
    Globale Konzepte zur Konfiguration der Aktivität finden Sie in [diesem Abschnitt](../../workflow/using/file-transfer.md).
 
-1. Öffnen Sie die Aktivität **[!UICONTROL Laden (Datei)]** und konfigurieren Sie sie entsprechend Ihren Anforderungen. Globale Konzepte zur Konfiguration der Aktivität finden Sie in [diesem Abschnitt](../../workflow/using/data-loading--file-.md).
+1. Öffnen Sie die Aktivität **[!UICONTROL Laden (Datei)]** und konfigurieren Sie sie entsprechend Ihren Anforderungen. Globale Konzepte zur Konfiguration der Aktivität finden Sie in [diesem Abschnitt](../../workflow/using/data-loading-file.md).
 
    Fügen Sie der Aktivität eine Vorab-Bearbeitungsetappe hinzu, um die eingehenden Daten zu entschlüsseln. Wählen Sie dazu die Option **[!UICONTROL Vorab-Bearbeitung der Datei vorsehen]** und kopieren Sie den folgenden Entschlüsselungsbefehl in das Feld **[!UICONTROL Befehl]**:
 

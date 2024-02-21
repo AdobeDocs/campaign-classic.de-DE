@@ -1,19 +1,19 @@
 ---
 product: campaign
-title: Native Campaign Classic-Packages installieren
+title: Installieren von nativen Campaign Classic-Packages
 description: Erfahren Sie, wie Sie native Campaign-Pakete installieren.
 feature: Installation, Application Settings
 badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 badge-v7-prem: label="On-Premise und Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '1317'
-ht-degree: 26%
+source-wordcount: '1306'
+ht-degree: 12%
 
 ---
 
-# Native Campaign Classic-Packages installieren{#installing-campaign-standard-packages}
+# Installieren von nativen Campaign Classic-Packages{#installing-campaign-standard-packages}
 
 
 
@@ -66,12 +66,12 @@ In der folgenden Tabelle sind alle in Campaign integrierten Packages aufgeführt
    <td> Alle</td> 
   </tr> 
   <tr> 
-   <td> Marketing-Kampagnen (Campaign)<br /> </td> 
+   <td> Marketing-Kampagnen (Kampagne)<br /> </td> 
    <td> Definiert, optimiert, führt und analysiert Kommunikations- und Marketing-Kampagnen. <a href="../../campaign/using/designing-marketing-campaigns.md">Weitere Infos</a><br /> </td> 
    <td> Marketing</td>
   </tr> 
   <tr> 
-   <td> Marketing-Ressourcen (MRM) <br /> </td> 
+   <td> Marketing-Ressourcen (MRM)<br /> </td> 
    <td> Steuerung kollaborativer Marketing-Aktionen durch Verwaltung und Verfolgung von Aufgaben, Budgets und Marketing-Ressourcen. <a href="../../mrm/using/about-marketing-resource-management.md">Weitere Infos</a> <br /> </td> 
    <td> Marketing</td> 
   </tr> 
@@ -81,12 +81,12 @@ In der folgenden Tabelle sind alle in Campaign integrierten Packages aufgeführt
    <td> Alle<br /> </td> 
   </tr> 
   <tr> 
-   <td> Steuerung des Angebotsmoduls durch die Ausführungsinstanz. Optional.<br /> </td> 
+   <td> Steuerung des Angebotsmoduls mit der Ausführungsinstanz. Optional.<br /> </td> 
    <td> Paket zur Installation auf Kontrollinstanz für Angebotsmodul (Interaktion). <a href="../../interaction/using/distributed-architectures.md#packages-configuration">Weitere Infos</a> </td> 
    <td> Marketing<br /> </td>  
   </tr> 
   <tr> 
-   <td> Angebotsmodul der Ausführungsinstanzen. Optional.<br /> </td> 
+   <td> Angebotsmodul für Ausführungsinstanzen. Optional.<br /> </td> 
    <td> Package zur Installation auf Ausführungsinstanzen für das Angebotsmodul (Interaktion). <a href="../../interaction/using/distributed-architectures.md">Weitere Infos</a> </td> 
    <td> Mid, Ausführung <br /> </td>  
   </tr> 
@@ -97,17 +97,17 @@ In der folgenden Tabelle sind alle in Campaign integrierten Packages aufgeführt
    <td> Optional, <a href="https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html">Learn More</a> </td> 
   </tr--> 
   <tr> 
-   <td> Social Media (Social Marketing) <br /> </td> 
+   <td> Soziale Netzwerke (Social Marketing) <br /> </td> 
    <td> Synchronisiert Adobe Campaign mit X (früher Twitter) und Facebook. <a href="../../social/using/about-social-marketing.md">Weitere Infos</a> <br /> </td> 
    <td> Alle</td> 
   </tr> 
   <tr> 
-   <td> Kontrolle der Transaktionsnachrichten (Message Center – Kontrolle)<br /> </td> 
+   <td> Kontrolle von Transaktionsnachrichten (Message Center - Kontrolle)<br /> </td> 
    <td> Verwaltet Trigger-Nachrichten, die von Ereignissen generiert wurden, die von Informationssystemen ausgelöst wurden. Optional. <a href="../../message-center/using/about-transactional-messaging.md">Weitere Infos</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
-   <td> Ausführung einer Transaktionsnachricht (Message Center – Ausführung) <br /> </td> 
+   <td> Ausführung von Transaktionsnachrichten (Message Center - Ausführung) <br /> </td> 
    <td> Bietet höhere Verfügbarkeit und besseres Lastmanagement. Optional. <a href="../../message-center/using/about-transactional-messaging.md">Weitere Infos</a><br /> </td> 
    <td> Ausführung<br /> </td>
   </tr> 
@@ -122,12 +122,12 @@ In der folgenden Tabelle sind alle in Campaign integrierten Packages aufgeführt
    <td> Alle<br /> </td>
   </tr> 
   <tr> 
-   <td> Mobile-Kanal (SMS) <br /> </td> 
+   <td> Mobiltelefon-Kanal (SMS) <br /> </td> 
    <td> Sendet Sendungen über den Mobiltelefon-/SMS-Kanal mit Adobe Campaign. Optional. <a href="../../delivery/using/sms-channel.md">Weitere Infos</a> <br /> </td> 
    <td> Alle<br /> </td> 
   </tr> 
    <tr> 
-   <td> Telefon-Kanal<br /> </td> 
+   <td> Telefonkanal<br /> </td> 
    <td> Sendet Sendungen über den Telefonkanal mit Adobe Campaign. Wird für Callcenter verwendet. Optional. <a href="../../delivery/using/communication-channels.md">Weitere Infos</a> <br /> </td> 
    <td> Alle<br /> </td> 
   </tr> 
@@ -158,7 +158,7 @@ In der folgenden Tabelle sind alle in Campaign integrierten Packages aufgeführt
   </tr> 
   <tr> 
    <td> Zugriff auf externe Daten (Federated Data Access)<br /> </td> 
-   <td> Bietet die Option Federated Data Access (FDA), um in externen Datenbanken gespeicherte Informationen zu verarbeiten, sodass Sie auf externe Daten zugreifen können, ohne die Datenstruktur in Adobe Campaign zu verändern.  Optional. <a href="../../workflow/using/accessing-an-external-database--fda-.md">Weitere Infos</a> <br /> </td> 
+   <td> Bietet die Option Federated Data Access (FDA), um in externen Datenbanken gespeicherte Informationen zu verarbeiten, sodass Sie auf externe Daten zugreifen können, ohne die Datenstruktur in Adobe Campaign zu verändern.  Optional. <a href="../../workflow/using/accessing-an-external-database-fda.md">Weitere Infos</a> <br /> </td> 
    <td> Alle<br /> </td> 
   </tr> 
   <tr> 
@@ -177,12 +177,12 @@ In der folgenden Tabelle sind alle in Campaign integrierten Packages aufgeführt
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
-   <td> Rendering des Posteingangs (Inbox Rendering, IR)<br /> </td> 
+   <td> Inbox Rendering (IR)<br /> </td> 
    <td> Ermöglicht die Vorschau der Nachricht in den verschiedenen Kontexten, in denen sie empfangen werden kann, und die Überprüfung der Kompatibilität mit den wichtigsten Desktops und Anwendungen. Optional. <a href="../../delivery/using/inbox-rendering.md">Weitere Infos</a><br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
-   <td> Zentrales/lokales Marketing (verteiltes Marketing)<br /> </td> 
+   <td> Zentrales/lokales Marketing (dezentrales Marketing)<br /> </td> 
    <td> Durchführung von Kooperationskampagnen zwischen Zentralstellen (Hauptsitz, Marketingabteilungen usw.) und lokalen Einheiten (Verkaufsstellen, regionale Agenturen usw.). Optional. <a href="../../distributed/using/about-distributed-marketing.md">Weitere Infos</a><br /> </td> 
    <td> Marketing </td> 
   </tr> 
@@ -202,7 +202,7 @@ In der folgenden Tabelle sind alle in Campaign integrierten Packages aufgeführt
    <td> Marketing</td> 
   </tr> 
   <tr> 
-   <td> Integration mit Adobe Experience Cloud Zielgruppen-Freigabe<br /> </td> 
+   <td> Integration von freigegebenen Adobe Experience Cloud-Zielgruppen<br /> </td> 
    <td> Ermöglicht den Austausch und die Freigabe von Zielgruppen/Segmenten mit Adobe Experience Cloud-Lösungen und Hauptdiensten. Erfordert IMS. <a href="../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md">Weitere Infos</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 

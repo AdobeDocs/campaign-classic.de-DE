@@ -6,10 +6,10 @@ role: User
 badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Campaigns, Resource Management, Cross Channel Orchestration
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: ht
-source-wordcount: '1559'
-ht-degree: 100%
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+workflow-type: tm+mt
+source-wordcount: '1557'
+ht-degree: 87%
 
 ---
 
@@ -35,17 +35,17 @@ Sobald alle Validierungen erteilt wurden, kann der Versand gestartet werden. Der
 
 ### Starten eines Online-Versands {#starting-an-online-delivery}
 
-Wenn alle Validierungsanfragen akzeptiert wurden, erhält der Versand den Status **[!UICONTROL Zu bestätigen]** und kann von einem Benutzer gestartet werden. Gegebenenfalls wird der Adobe-Campaign-Benutzer (oder die Benutzergruppe), der für die Validierung des Versandstarts zuständig ist, über den startbereiten Versand informiert.
+Wenn alle Validierungsanfragen akzeptiert wurden, erhält der Versand den Status **[!UICONTROL Genehmigung ausstehend]** und kann von einem Benutzer gestartet werden. Gegebenenfalls wird der Adobe-Campaign-Benutzer (oder die Benutzergruppe), der für die Validierung des Versandstarts zuständig ist, über den startbereiten Versand informiert.
 
 >[!NOTE]
 >
->Wenn in den Versandeigenschaften ein spezifischer Benutzer oder eine Benutzergruppe zur Validierung des Versandstarts angegeben wurden, besteht die Möglichkeit, dieses Recht auch dem versandverantwortlichen Benutzer einzuräumen. Aktivieren Sie in diesem Fall die Option **NMS_ActivateOwnerConfirmation**, indem Sie den Wert **1** angeben. Der Zugriff auf diese Option erfolgt im Knoten **[!UICONTROL Administration]** > **[!UICONTROL Plattform]** > **[!UICONTROL Optionen]** des Adobe-Campaign-Explorers.
+>Wenn in den Versandeigenschaften ein bestimmter Benutzer oder eine Benutzergruppe für den Start eines Versands bestimmt sind, können Sie auch zulassen, dass der für den Versand verantwortliche Benutzer den Versand validiert. Aktivieren Sie dazu die **NMS_ActivateOwnerConfirmation** Option durch Eingabe **1** als Wert. Die Verwaltung der Optionen erfolgt über den Knoten **[!UICONTROL Administration]** > **[!UICONTROL Plattform]** > **[!UICONTROL Optionen]** im Adobe Campaign-Explorer.
 >  
 >Um die entsprechende Option zu deaktivieren, ist der Wert **0** anzugeben. In diesem Fall kann die Versandvalidierung nur durch die in den Versandeigenschaften angegebenen Benutzer oder Benutzergruppen bzw. einen Administrator erfolgen.
 
 ![](assets/s_ncs_user_edit_del_to_start_from_del.png)
 
-Diese Information wird ebenfalls im Dashboard der Kampagne angezeigt. Über den Link **[!UICONTROL Versand bestätigen]** kann der Versand gestartet werden.
+Die Informationen werden auch im Dashboard der Kampagne angezeigt. Die **[!UICONTROL Versand bestätigen]** -Link ermöglicht den Start des Versands.
 
 ![](assets/s_ncs_user_edit_del_to_start.png)
 
@@ -53,7 +53,7 @@ Zur Sicherheit werden Sie in einer Pop-up-Nachricht zur Bestätigung der Aktion 
 
 ### Starten eines Offline-Versands {#starting-an-offline-delivery}
 
-Wenn alle Validierungen akzeptiert wurden, erhält der Versand den Status **[!UICONTROL Extraktion ausstehend]**. Die Extraktionsdateien werden über einen spezifischen Workflow erstellt, der standardmäßig automatisch startet, wenn ein Briefversand auf Extraktion wartet. Laufende Vorgänge dieser Art werden im Dashboard angezeigt und können über den entsprechenden Link bearbeitet werden.
+Sobald alle Validierungen erteilt wurden, ändert sich der Versandstatus in **[!UICONTROL Extraktion ausstehend]**. Die Extraktionsdateien werden über einen speziellen Workflow erstellt, der in einer Standardkonfiguration automatisch startet, wenn ein Briefpost-Versand auf Extraktion wartet. Wenn ein Prozess in Bearbeitung ist, wird er im Dashboard angezeigt und kann über seinen Link bearbeitet werden.
 
 >[!NOTE]
 >
@@ -80,11 +80,11 @@ Weitere Informationen hierzu finden Sie unter [Validieren einer Extraktionsdatei
 
   Zunächst muss die Zielgruppe der Testsendungen bestimmt werden.
 
-  Sie können so viele Testsendungen erstellen wie nötig. Auf die durchgeführten Testsendungen besteht Zugriff über den Link **[!UICONTROL Briefpost...]** in den Versanddetails.
+  Sie können so viele Testsendungen wie nötig erstellen. Diese werden über die **[!UICONTROL Briefpost...]** Link der Versanddetails.
 
   ![](assets/s_ncs_user_file_notif_submit_proof.png)
 
-* Der Versand erhält nun den Status **[!UICONTROL Zu unterbreiten]**. Klicken Sie auf die Schaltfläche **[!UICONTROL Testsendungen unterbreiten]** um den Validierungsprozess zu starten.
+* Der Versandstatus ändert sich in **[!UICONTROL Senden]**. Klicken Sie auf **[!UICONTROL Testsendungen durchführen]** -Schaltfläche, um den Validierungsprozess zu starten.
 
   ![](assets/s_ncs_user_file_notif_submit_proof_validation.png)
 
@@ -102,7 +102,7 @@ Weitere Informationen hierzu finden Sie unter [Validieren einer Extraktionsdatei
 
 Die Dateiextraktion startet zwei Vorgänge: die Berechnung der Budgets und die Berechnung der Lagerbestände. Die Budgetzeilen werden aktualisiert.
 
-* Im Kampagnentab **[!UICONTROL Budget]** findet die Budgetverwaltung statt. Die Summe der Kostenzeilen wird im Feld **[!UICONTROL Berechnete Kosten]** des Haupttabs der Kampagne und des übergeordneten Programms angezeigt. Die Beträge werden auch im Budget der Kampagne übernommen.
+* Die Registerkarte **[!UICONTROL Budget]** ermöglicht die Budgetverwaltung der Kampagne. Die Summe der Kosteneinträge wird im Abschnitt **[!UICONTROL Berechnete Kosten]** -Feld des Haupttabs der Kampagne und des Programms, zu dem sie gehört. Die Beträge werden auch im Kampagnenbudget angezeigt.
 
   Die tatsächlichen Kosten werden am Ende entsprechend der vom Router kommunizierten Informationen berechnet: Nur die tatsächlich versendeten Briefe werden fakturiert.
 
@@ -112,7 +112,7 @@ Die Dateiextraktion startet zwei Vorgänge: die Berechnung der Budgets und die B
 
 >[!NOTE]
 >
->Weiterführende Informationen zu Kostenberechnungen und Lagerverwaltung finden Sie unter [Dienstleister, Lager und Budgets](../../campaign/using/providers--stocks-and-budgets.md).
+>Weiterführende Informationen zu Kostenberechnungen und Lagerverwaltung finden Sie unter [Dienstleister, Lager und Budgets](../../campaign/using/providers-stocks-and-budgets.md).
 
 ## Verwalten der zugehörigen Dokumente {#managing-associated-documents}
 
@@ -189,7 +189,7 @@ Klicken Sie anschließend auf **[!UICONTROL Versandentwurf hinzufügen]**. Es wi
 Ein Versandentwurf kann Artikel, Personalisierungsfelder, Ressourcen und Angebote enthalten:
 
 * Artikel sind beispielsweise physische Dokumente, die an dieser Stelle referenziert und beschrieben und schließlich dem Versand angehängt werden.
-* Personalisierungsfelder ermöglichen die Erstellung von mit Sendungen (und nicht Empfängern) verbundenen Personalisierungselementen. So können Werte erstellt werden, die in Sendungen mit einer spezifischen Zielgruppe verwendet werden (z. B. Willkommensangebot, prozentuale Ermäßigung). Sie werden in Adobe Campaign erstellt und über den Link **[!UICONTROL Personalisierungsfelder importieren...]** in den jeweiligen Entwurf importiert.
+* Mit Personalisierungsfeldern können Sie Personalisierungselemente erstellen, die sich auf Sendungen und nicht auf Empfänger beziehen. Auf diese Weise können Werte erstellt werden, die in Sendungen mit einer bestimmten Zielgruppe verwendet werden (Willkommensangebot, Rabatt usw.) Sie werden in Adobe Campaign erstellt und über das **[!UICONTROL Personalisierungsfelder importieren..]** -Link.
 
   ![](assets/s_ncs_user_op_add_composition_field.png)
 
@@ -227,7 +227,7 @@ Im folgenden Beispiel werden der Titel, die Plankosten sowie die Beschreibung de
 
 ![](assets/s_ncs_user_op_composition_in_export_template.png)
 
-Die Exportvorlage muss dem gewählten Dienstleister für den betreffenden Versand zugeordnet sein. Lesen Sie diesbezüglich den Abschnitt [Erstellung von Dienstleistern und deren Kostenstrukturen](../../campaign/using/providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
+Die Exportvorlage muss dem gewählten Dienstleister für den betreffenden Versand zugeordnet sein. Lesen Sie diesbezüglich den Abschnitt [Erstellung von Dienstleistern und deren Kostenstrukturen](../../campaign/using/providers-stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
 
 >[!NOTE]
 >

@@ -6,10 +6,10 @@ role: User
 badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Campaigns
 exl-id: 891252b0-4700-4a2a-a632-63aad5ce75d7
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: ht
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+workflow-type: tm+mt
 source-wordcount: '791'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -88,7 +88,7 @@ Klicken Sie anschließend auf **[!UICONTROL Versandentwurf hinzufügen]**. Es wi
 Ein Versandentwurf kann Artikel, Personalisierungsfelder, Ressourcen und Angebote enthalten:
 
 * Artikel sind beispielsweise physische Dokumente, die an dieser Stelle referenziert und beschrieben und schließlich dem Versand angehängt werden.
-* Personalisierungsfelder ermöglichen die Erstellung von mit Sendungen (und nicht Empfängern) verbundenen Personalisierungselementen. So können Werte erstellt werden, die in Sendungen mit einer spezifischen Zielgruppe verwendet werden (z. B. Willkommensangebot, prozentuale Ermäßigung). Sie werden in Adobe Campaign erstellt und über den Link **[!UICONTROL Personalisierungsfelder importieren...]** in den jeweiligen Entwurf importiert.
+* Mit Personalisierungsfeldern können Sie Personalisierungselemente erstellen, die sich auf Sendungen und nicht auf Empfänger beziehen. Auf diese Weise können Werte erstellt werden, die in Sendungen mit einer bestimmten Zielgruppe verwendet werden (Willkommensangebot, Rabatt usw.) Sie werden in Adobe Campaign erstellt und über das **[!UICONTROL Personalisierungsfelder importieren..]** -Link.
 
   ![](assets/s_ncs_user_op_add_composition_field.png)
 
@@ -126,7 +126,7 @@ Im folgenden Beispiel werden der Titel, die Plankosten sowie die Beschreibung de
 
 ![](assets/s_ncs_user_op_composition_in_export_template.png)
 
-Die Exportvorlage muss dem gewählten Dienstleister für den betreffenden Versand zugeordnet sein. Siehe [diesen Abschnitt](../../campaign/using/providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
+Die Exportvorlage muss dem gewählten Dienstleister für den betreffenden Versand zugeordnet sein. Siehe [diesen Abschnitt](../../campaign/using/providers-stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
 
 >[!NOTE]
 >

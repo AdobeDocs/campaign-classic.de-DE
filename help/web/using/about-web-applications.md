@@ -6,10 +6,10 @@ badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Landing Pages, Web Apps
 exl-id: df58221f-f71b-49d5-a6a1-c81ddff27fdb
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '729'
-ht-degree: 100%
+source-wordcount: '725'
+ht-degree: 87%
 
 ---
 
@@ -50,12 +50,12 @@ Web-Anwendungen in Adobe Campaign bieten folgende Funktionen:
 * Einladungen oder Benachrichtigungen per E-Mail. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](publishing-a-web-form.md#delivering-a-form-via-email).
 * Personalisierung von Fehler- und Beendigungsnachrichten. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](defining-web-forms-properties.md#setting-up-an-error-page).
 * Verwendung von Bildern, Videos, Hypertext-Links, Captcha etc. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](editing-content.md).
-* Überwachung der Antworten in Echtzeit Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../surveys/using/publish--track-and-use-collected-data.md#response-tracking).
+* Überwachung der Antworten in Echtzeit Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../surveys/using/publish-track-and-use-collected-data.md#response-tracking).
 
 Das optionale Modul zur Umfrageerstellung (**Umfrage**) bietet die folgenden zusätzlichen Funktionen:
 
 * Dynamische Erweiterung der Datenbank: Erstellung von Antworten, die nicht in der ursprünglichen Datenvorlage enthalten sind. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../surveys/using/managing-answers.md#storing-collected-answers).
-* Erstellung spezieller Berichte Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../surveys/using/publish--track-and-use-collected-data.md#reports-on-surveys).
+* Erstellung spezieller Berichte Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../surveys/using/publish-track-and-use-collected-data.md#reports-on-surveys).
 
 Gegenüber Webanwendungen verfügen Umfragen über eine vereinfachte grafische Benutzeroberfläche mit weniger Steuerelementen zur Bearbeitung.
 
@@ -71,7 +71,7 @@ Gehen Sie wie folgt vor, um eine Webanwendung zu erstellen und zu veröffentlich
 
 1. Erstellen Sie den Inhalt (Felder, Listen, Tabellen, Diagramme etc.).
 
-   Sehen Sie sich dazu auch den Abschnitt zu den Feldern an, die für Formulare zur Verfügung stehen. Alle diese Felder sind auch für Webanwendungen verfügbar. Diese Informationen finden Sie auf [dieser Seite](adding-fields-to-a-web-form.md).
+   Sie können auch den Abschnitt anzeigen, der die verfügbaren Felder für Formulare detailliert beschreibt: Alle diese Felder stehen auch für Webanwendungen zur Verfügung. Diese Informationen finden Sie unter [diese Seite](adding-fields-to-a-web-form.md).
 
 1. Sie können nach Bedarf die Schritte zum Vorausfüllen, Testen und Speichern hinzufügen und das Zugriffskontrollsystem konfigurieren (hauptsächlich für Extranet-Veröffentlichungen).
 1. Veröffentlichen Sie die Webanwendung, um sie im Extranet oder in Adobe Campaign verfügbar zu machen.
@@ -82,7 +82,7 @@ Die Erstellung von Webanwendungen erfolgt über den Link **[!UICONTROL Webanwend
 
 Gespeichert werden Webanwendungen im Knoten **[!UICONTROL Ressourcen > Online > Webanwendungen]** des Adobe Campaign-Baums. Konfigurationen befinden sich in folgenden Ordnern:
 
-* **[!UICONTROL Administration > Konfiguration > Formular-Rendering]**: enthält die Rendering-Vorlagen für Webformulare (Anwendungen und Umfragen). Die Vorlage ermöglicht die Erstellung eines Formulars. Zusätzlich wird ein CSS-Stylesheet verwendet, das auf Vorlagenebene überschrieben werden kann. Weiterführende Informationen dazu finden Sie auf [dieser Seite](form-rendering.md#selecting-the-form-rendering-template).
+* **[!UICONTROL Administration > Konfiguration > Formular-Rendering]**: enthält die Rendering-Vorlagen für Webformulare (Anwendungen und Umfragen). Die Vorlage ermöglicht die Erstellung des Formulars. Außerdem wird ein CSS-Stylesheet verwendet. Dieses Stylesheet kann auf Vorlagenebene überschrieben werden. Weitere Informationen hierzu finden Sie auf [dieser Seite](form-rendering.md#selecting-the-form-rendering-template).
 * **[!UICONTROL Ressourcen > Vorlagen > Webanwendungsvorlagen]**: enthält Formularvorlagen. Diese sind zur Erstellung eines Formulars oder einer Webanwendung erforderlich.
 
 ## Web-Anwendungsvorlagen {#web-application-templates}
@@ -91,7 +91,7 @@ Standardmäßig bietet Adobe Campaign für jede verfügbare Webanwendung eine Vo
 
 >[!NOTE]
 >
->Sie können eine vorhandene Webanwendung in eine Vorlage konvertieren. Wählen Sie dazu das Formular aus und klicken Sie mit der rechten Maustaste darauf. Wählen Sie **[!UICONTROL Aktionen > Als Vorlage speichern...]** aus.
+>Sie können eine vorhandene Webanwendung in eine Vorlage konvertieren. Wählen Sie dazu das Formular aus und klicken Sie mit der rechten Maustaste darauf. Auswählen **[!UICONTROL Aktionen > Als Vorlage speichern...]**.
 
 Neue Vorlagen werden im Adobe Campaign-Baum im Knoten **[!UICONTROL Ressourcen > Vorlagen > Webanwendungsvorlagen]** erstellt.
 

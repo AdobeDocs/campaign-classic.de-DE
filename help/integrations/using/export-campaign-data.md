@@ -7,9 +7,9 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Cla
 audience: integrations
 content-type: reference
 exl-id: 8d1404c5-030b-47fe-a4c3-e72f15f09bbb
-source-git-commit: d15592aaccf036fc956049e611139ea5a46e9fc0
-workflow-type: ht
-source-wordcount: '510'
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+workflow-type: tm+mt
+source-wordcount: '483'
 ht-degree: 100%
 
 ---
@@ -32,7 +32,7 @@ Um Daten von Campaign Classic in Ihren S3- oder Azure-Blob-Speicher zu exportier
 
 Hierzu müssen Sie Folgendes hinzufügen und konfigurieren:
 
-* Die Aktivität **[!UICONTROL Extraktion (Datei)]**, um die Zieldaten in eine CSV-Datei zu extrahieren. Weiterführende Informationen zur Konfiguration dieser Aktivität finden Sie in [diesem Abschnitt](../../workflow/using/extraction--file-.md).
+* Die Aktivität **[!UICONTROL Extraktion (Datei)]**, um die Zieldaten in eine CSV-Datei zu extrahieren. Weiterführende Informationen zur Konfiguration dieser Aktivität finden Sie in [diesem Abschnitt](../../workflow/using/extraction-file.md).
 
   ![](assets/rtcdp-extract-file.png)
 

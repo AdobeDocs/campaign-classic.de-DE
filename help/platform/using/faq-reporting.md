@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: b29340a0-954d-41e4-b0a3-9d356e4dc753
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '324'
-ht-degree: 100%
+ht-degree: 86%
 
 ---
 
@@ -29,7 +29,7 @@ Adobe Campaign ist keine auf Berichterstellung spezialisierte Anwendung: Die hie
 
 ## Wie kann ich Statistikberichte zu Populationen erstellen und teilen? {#how-can-i-design-and-share-statistic-reports-on-populations-}
 
-[Berichte zur deskriptiven Analyse](../../reporting/using/about-descriptive-analysis.md) von Adobe Campaign ermöglichen Ihnen, Statistikberichte zu Ihren Populationen zu erstellen und zu teilen, [eine Newsletter-Audience zu analysieren](../../reporting/using/use-cases.md#analyzing-a-population) oder [einen Bericht über die Population einer Workflow-Transition zu erstellen](../../reporting/using/use-cases.md#analyzing-a-transition-target-in-a-workflow). Sie können beispielsweise auch [die Reaktionsrate von Newsletter-Empfängern analysieren](../../reporting/using/use-cases.md#analyzing-recipient-tracking-logs).
+Adobe Campaign [deskriptive Analyseberichte](../../reporting/using/about-descriptive-analysis.md) Sie können Statistikberichte zu Ihren Populationen erstellen und teilen. [Newsletter-Zielgruppe erkunden](../../reporting/using/use-cases.md#analyzing-a-population)oder [Erstellung eines Berichts über die Population einer Workflow-Transition;](../../reporting/using/use-cases.md#analyzing-a-transition-target-in-a-workflow). Sie können beispielsweise auch [Reaktionsrate der Newsletter-Empfänger analysieren](../../reporting/using/use-cases.md#analyzing-recipient-tracking-logs).
 
 [Hier erfahren Sie mehr dazu](../../reporting/using/about-descriptive-analysis.md).
 
@@ -49,7 +49,7 @@ Erfahren Sie, wie Sie Ihre Daten [mit Cubes analysieren](../../reporting/using/a
 
 ## Kann ich einen Bericht aus Antworten auf eine Online-Umfrage erstellen? {#can-i-create-a-report-from-answers-to-an-online-survey-}
 
-Lesen Sie [dieses Anwendungsbeispiel](../../surveys/using/use-case--displaying-report-on-answers-to-an-online-survey.md), um zu erfahren, wie Sie einen Bericht zu Antworten auf eine Online-Umfrage erstellen.
+Lesen Sie [dieses Anwendungsbeispiel](../../surveys/using/use-case-displaying-report-on-answers-to-an-online-survey.md), um zu erfahren, wie Sie einen Bericht zu Antworten auf eine Online-Umfrage erstellen.
 
 ## Wie kann ich den Zugriff auf meinen Bericht in der Campaign-Oberfläche freigeben? {#how-can-i-share-access-to-my-report}
 

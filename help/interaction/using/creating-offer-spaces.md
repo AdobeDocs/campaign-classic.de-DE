@@ -8,10 +8,10 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: bdda98f7-a083-4f3b-b691-c28ec79af780
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
-source-wordcount: '1039'
-ht-degree: 100%
+source-wordcount: '1044'
+ht-degree: 88%
 
 ---
 
@@ -21,9 +21,9 @@ ht-degree: 100%
 
 Die Erstellung von Platzierungen erfolgt in der Design-Umgebung. Sie erfordert ein Benutzerprofil vom Typ **Technischer Administrator** mit Zugriff auf den Platzierungs-Unterordner. Die Platzierungen eines Angebots werden automatisch in die Live-Umgebung dupliziert, sobald das entsprechende Angebot validiert wurde.
 
-Der Inhalt der im Katalog enthaltenen Angebote wird in den Platzierungen konfiguriert. Standardmäßig kann der Inhalt folgende Felder beinhalten: **[!UICONTROL Titel]**, **[!UICONTROL Ziel-URL]**, **[!UICONTROL Bild-URL]**, **[!UICONTROL HTML-Inhalt]** und **[!UICONTROL Textinhalt]**. Die Reihenfolge der Felder wird ebenfalls in den Platzierungen bestimmt.
+Der Inhalt der Katalogangebote wird in den Angebotsplatzierungen konfiguriert. Standardmäßig kann der Content **[!UICONTROL die folgenden Felder enthalten: Titel]**, **[!UICONTROL Ziel-URL]**, **[!UICONTROL Bild-URL]**, **[!UICONTROL HTML-Inhalt]** und **[!UICONTROL Textinhalt]**. Die Feldsequenz wird in der Angebotsplatzierung konfiguriert.
 
-In den erweiterten Parametern können Sie Identifikationsschlüssel für Kontakte definieren. Diese können aus mehreren Elementen (z. B. Name und E-Mail-Adresse) zusammengesetzt sein. Die Vorgehensweise wird im Abschnitt [Angebote für identifizierte Kontakte](../../interaction/using/integration-via-javascript--client-side-.md#presenting-an-identified-offer) erläutert.
+In den erweiterten Parametern können Sie Identifikationsschlüssel für Kontakte definieren. Diese können aus mehreren Elementen (z. B. Name und E-Mail-Adresse) zusammengesetzt sein. Die Vorgehensweise wird im Abschnitt [Angebote für identifizierte Kontakte](../../interaction/using/integration-via-javascript-client-side.md#presenting-an-identified-offer) erläutert.
 
 Die HTML- oder XML-Darstellungen werden über Rendering-Funktionen definiert. Die in der jeweiligen Rendering-Funktion definierte Reihenfolge der Felder muss mit der im Inhalt definierten übereinstimmen.
 
@@ -100,7 +100,7 @@ Diese Status werden nicht standardmäßig angewendet, sie müssen zuvor konfigur
 
 ### Konfiguration des Status bei Erzeugung des Vorschlags {#configuring-the-status-when-the-proposition-is-created}
 
-Sobald ein Vorschlag durch das Angebotsmodul erzeugt wird, wechselt sein Status. Dies gilt sowohl für eingehende als auch ausgehende Interaktionen. Die Auswahl eines Werts aus der Liste der möglichen Status hängt von der Konfiguration der Angebotsplatzierungen in der **[!UICONTROL Design-Umgebung]** ab.
+Wenn ein Angebotsvorschlag vom Angebotsmodul erstellt wird, ändert sich sein Status, sei es in einer eingehenden oder in einer ausgehenden Interaktion. Die Auswahl dieser beiden Werte hängt von der Konfiguration der Platzierungen in der Variablen **[!UICONTROL Design]** Umgebung
 
 Sie können je nach Platzierung unterschiedliche, bei der Angebotserzeugung zuzuweisende Status konfigurieren, je nachdem, welche Informationen Sie in den Angebotsberichten anzeigen möchten.
 
@@ -140,13 +140,13 @@ Wenn nun ein Besucher auf den Vorschlag und somit auf die URL klickt, wird dem V
 
 >[!NOTE]
 >
->Wenn Sie in der URL einen anderen Status festlegen möchten (z. B. wenn ein Angebotsvorschlag abgelehnt wird), verwenden Sie den dem gewünschten Status entsprechenden Wert. Beispiel: **[!UICONTROL Abgelehnt]** = &quot;5&quot;, **[!UICONTROL Unterbreitet]** = &quot;1&quot; usw.
+>Wenn Sie einen anderen Status in der URL angeben möchten (z. B. wenn ein Angebotsvorschlag abgelehnt wird), verwenden Sie den Wert, der dem gewünschten Status entspricht. Beispiel: **[!UICONTROL Abgelehnt]** = &quot;5&quot;, **[!UICONTROL präsentiert]** = &quot;1&quot; usw.
 >
->Status und die ihnen zugehörigen Werte können aus dem Datenschema **[!UICONTROL Angebotsvorschläge (nms)]** abgerufen werden. Näheres hierzu finden Sie auf [dieser Seite](../../configuration/using/data-schemas.md).
+>Status und ihre Werte können im Abschnitt **[!UICONTROL Angebotsvorschläge (nms)]** Datenschema. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../configuration/using/data-schemas.md).
 
 **Ausgehende Interaktionen**
 
-Bei ausgehenden Interaktionen besteht die Möglichkeit, dem Angebotsvorschlag automatisch den Status **[!UICONTROL Interessant]** zuzuweisen, wenn der Versand einen Link enthält. Fügen Sie hierfür den Wert **_urlType=&quot;11&quot;** in den Link ein:
+Im Falle einer ausgehenden Interaktion können Sie automatisch die Variable **[!UICONTROL Interessant]** Status eines Angebotsvorschlags, wenn der Versand einen Link enthält. Fügen Sie einfach den Wert **_urlType=&quot;11&quot;** zum Link hinzu:
 
 ```
 <a _urlType="11" href="<DEST_URL>">Link inserted into the delivery</a>

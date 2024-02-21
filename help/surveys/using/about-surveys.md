@@ -6,7 +6,7 @@ badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Surveys
 exl-id: 7061a4f1-006f-4f19-8761-918d8930d885
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '547'
 ht-degree: 100%
@@ -51,8 +51,8 @@ Das optionale Modul zur Umfrageerstellung bietet eine anwenderfreundliche Benutz
 * Dynamische Erweiterung der Datenbank: Erstellung von Antworten, die nicht Teil des anfänglichen Datenmodells sind. [Weitere Informationen](../../surveys/using/managing-answers.md#storing-collected-answers).
 * Verwaltung der Punktzahl. [Weitere Informationen](../../surveys/using/managing-answers.md#score-management).
 * Zufällige Anzeige von Fragen. [Weitere Informationen](../../surveys/using/building-a-survey.md#adding-questions).
-* Echtzeit-Tracking von Antworten. [Weitere Informationen](../../surveys/using/publish--track-and-use-collected-data.md#response-tracking).
-* Erstellung spezieller Berichte [Weitere Informationen](../../surveys/using/publish--track-and-use-collected-data.md#reports-on-surveys).
+* Echtzeit-Tracking von Antworten. [Weitere Informationen](../../surveys/using/publish-track-and-use-collected-data.md#response-tracking).
+* Erstellung spezieller Berichte [Weitere Informationen](../../surveys/using/publish-track-and-use-collected-data.md#reports-on-surveys).
 
 
 ## Implementierungsschritte {#surveys-implementation-steps}

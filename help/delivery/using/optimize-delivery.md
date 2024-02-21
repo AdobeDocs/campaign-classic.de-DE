@@ -7,9 +7,9 @@ badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Deliverability
 role: User
 exl-id: 24b2ee47-bec7-43ce-81b3-0b2d1a5cebae
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
-workflow-type: ht
-source-wordcount: '758'
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+workflow-type: tm+mt
+source-wordcount: '746'
 ht-degree: 100%
 
 ---
@@ -20,19 +20,19 @@ Bevor Sie mit dem Erstellen von Sendungen beginnen, können Sie mehrere Maßnahm
 
 Im folgenden Abschnitt werden Best Practices und empfohlene Verfahren für die optimale Konfiguration von Adobe Campaign erläutert. Durch die Einhaltung dieser Empfehlungen vermeiden Sie mögliche Probleme später im Prozess.
 
-## Leistung der Plattform
+## Performance der Plattform
 
-Mehrere Faktoren können die Server-Leistung direkt beeinflussen und die Plattform verlangsamen:
+Mehrere Faktoren können die Server-Performance direkt beeinflussen und die Plattform verlangsamen:
 
 * Anzahl und Art der Personalisierungselemente: Durch Personalisierung in E-Mails werden Daten für jeden Empfänger aus der Datenbank abgerufen. Bei vielen Personalisierungselementen erhöht sich dadurch die Datenmenge, die zur Vorbereitung des Versands benötigt wird.  Weiterführende Informationen zur Personalisierung finden Sie in [diesem Abschnitt](about-personalization.md).
 
-* Auslastung des Servers: Wenn der Marketing-Server viele verschiedene Aufgaben gleichzeitig ausführt, kann die Leistung verlangsamt werden. Der Marketing-Server muss alle eingehenden und ausgehenden Daten für alle Sendungen koordinieren, um sicherzustellen, dass die Daten korrekt sind und rechtzeitig gesendet werden.
+* Auslastung des Servers: Wenn der Marketing-Server viele verschiedene Aufgaben gleichzeitig ausführt, kann die Performance verlangsamt werden. Der Marketing-Server muss alle eingehenden und ausgehenden Daten für alle Sendungen koordinieren, um sicherzustellen, dass die Daten korrekt sind und rechtzeitig gesendet werden.
 
-  **Tipp**: Koordinieren Sie die zeitliche Durchführung von Sendungen mit anderen Team-Mitgliedern, um eine optimale Leistung zu gewährleisten.
+  **Tipp**: Koordinieren Sie die zeitliche Durchführung von Sendungen mit anderen Team-Mitgliedern, um eine optimale Performance zu gewährleisten.
 
-* Workflow-Ausführung: Die Überwachung Ihrer Workflows ist unverzichtbar, um Probleme mit der Leistung der Plattform zu vermeiden. Befolgen Sie die [in diesem Dokument](../../workflow/using/workflow-best-practices.md#execution-and-performance) aufgeführten Richtlinien.
+* Workflow-Ausführung: Die Überwachung Ihrer Workflows ist unverzichtbar, um Probleme mit der Performance der Plattform zu vermeiden. Befolgen Sie die [in diesem Dokument](../../workflow/using/workflow-best-practices.md#execution-and-performance) aufgeführten Richtlinien.
 
-* Wenn Sie berechtigt sind, können Sie die [Funktionen des Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=de) nutzen, um Ihre Plattform mithilfe der [Leistungsüberwachungsfunktionen](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=de) zu überwachen.
+* Wenn Sie berechtigt sind, können Sie die [Funktionen des Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=de) nutzen, um Ihre Plattform mithilfe der [Performance-Überwachungsfunktionen](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=de) zu überwachen.
 
 ## Prüfen der Netzwerkkonfiguration {#network-config}
 
@@ -77,4 +77,4 @@ Wenn Sie auf einer neuen Plattform erstmals E-Mails versenden, verwenden Sie mö
 
 Um den Nachrichtenversand an ungültige Adressen zu vermeiden, unnütze Kommunikation zu minimieren und die Reputation des Absenders zu schützen, empfiehlt Adobe die doppelte Anmeldung zur Bestätigung eines Abonnements. Damit können Sie sicherstellen, dass sich ein Empfänger absichtlich angemeldet hat.
 
-Einzelheiten zur Implementierung dieses Mechanismus sind in [diesem Abschnitt](../../web/using/use-cases--web-forms.md) beschrieben.
+Einzelheiten zur Implementierung dieses Mechanismus sind in [diesem Abschnitt](../../web/using/use-cases-web-forms.md) beschrieben.

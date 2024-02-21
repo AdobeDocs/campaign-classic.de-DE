@@ -8,14 +8,14 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 0b53b165-a6d8-4604-b3f0-3fa6fce35146
-source-git-commit: 6939307c0b33ff662fe4ef9ae0192ae7b500a95c
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '354'
 ht-degree: 51%
 
 ---
 
-# Konfigurieren von FDA-Connectoren {#specific-configurations-by-database-type}
+# FDA-Connectoren konfigurieren {#specific-configurations-by-database-type}
 
 
 
@@ -37,7 +37,7 @@ Gehen Sie wie folgt vor, um den Zugriff auf eine externe Datenbank mit FDA einzu
 1. Erstellen Sie das Schema der externen Datenbank in Adobe Campaign. Auf diese Weise können Sie die Datenstruktur der externen Datenbank identifizieren. [Weitere Informationen](../../installation/using/creating-data-schema.md)
 1. Erstellen Sie bei Bedarf ein neues Zielgruppen-Mapping aus dem zuvor erstellten Schema. Dies ist dann erforderlich, wenn die Empfänger Ihrer Sendungen aus der externen Datenbank stammen. Für diese Implementierung bestehen Einschränkungen bei der Nachrichtenpersonalisierung. [Weitere Informationen](../../installation/using/defining-data-mapping.md)
 
-Nachdem das Schema erstellt wurde, können Daten in Adobe Campaign-Workflows verarbeitet werden. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../workflow/using/accessing-an-external-database--fda-.md).
+Nachdem das Schema erstellt wurde, können Daten in Adobe Campaign-Workflows verarbeitet werden. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../workflow/using/accessing-an-external-database-fda.md).
 
 ## Datenbankspezifische Konfiguration {#fda-specific-configuration}
 

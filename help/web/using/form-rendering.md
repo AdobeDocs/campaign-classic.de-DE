@@ -6,10 +6,10 @@ badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Web Forms
 exl-id: 723a6c47-5323-4914-a014-58be493852cc
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '1054'
-ht-degree: 100%
+ht-degree: 82%
 
 ---
 
@@ -29,7 +29,7 @@ Mit der Zoom-Funktion können Sie die ausgewählte Vorlage bearbeiten.
 
 ![](assets/s_ncs_admin_survey_render_edit.png)
 
-Sie können diese Vorlagen ändern oder überschreiben. Wählen Sie dazu den Link **[!UICONTROL Seitenlayout...]** aus und passen Sie die Einstellungen an.
+Sie können diese Vorlagen ändern oder überschreiben. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Seitenlayout...]** die Informationen zu verknüpfen und zu personalisieren.
 
 ![](assets/s_ncs_admin_survey_render_edit_param.png)
 
@@ -42,13 +42,13 @@ Mit dem Tab **[!UICONTROL Headers/Footers]** können Sie die Informationen ände
 
 ![](assets/s_ncs_admin_survey_render_edit_header.png)
 
-Jede Zeile des Bereichs **[!UICONTROL Seitenkopf]** und **[!UICONTROL Seitenfuß]** entspricht einer Zeile auf der HTML-Seite. Wählen Sie **[!UICONTROL Hinzufügen]**, um eine neue Zeile zu erstellen.
+Jede Zeile der **[!UICONTROL Seitenkopf]** und **[!UICONTROL Fußzeilen]** -Abschnitt entspricht einer Zeile auf der HTML-Seite. Klicks **[!UICONTROL Hinzufügen]** um eine neue Zeile zu erstellen.
 
 Wählen Sie eine vorhandene Zeile und danach die Schaltfläche **[!UICONTROL Detail]** aus, um sie zu bearbeiten.
 
 ![](assets/s_ncs_admin_survey_render_edit_header_detail.png)
 
-Verwenden Sie die jeweiligen Tabs, um den Inhalt der Zeile zu ändern, Rahmen hinzuzufügen und die Schriftart-Attribute anzupassen. Bestätigen Sie diese Änderungen mit **[!UICONTROL OK]**.
+Über die entsprechenden Tabs können Sie den Inhalt der Zeile ändern, Rahmen hinzufügen und die Schriftattribute ändern. Klicks **[!UICONTROL OK]** um diese Änderungen zu bestätigen.
 
 Mit den Feldern **[!UICONTROL Position]** können Sie die Position der Elemente im Seitenkopf und -fuß definieren.
 
@@ -78,7 +78,7 @@ Damit können Sie die folgenden Eigenschaften definieren:
 * **[!UICONTROL Breite]** des Bereichs: Diese kann als Prozentsatz oder in em, Punkten oder Pixeln (Standardwert) ausgedrückt werden,
 * Maximale **[!UICONTROL Länge]**: Maximale Anzahl erlaubter Zeichen (für Steuerelemente vom Typ Text, Zahl und Passwort),
 * **[!UICONTROL Zeilen]**: Anzahl der Zeilen für einen Bereich vom Typ **[!UICONTROL Mehrzeiliger Text]**,
-* **[!UICONTROL Inline-Stil]**: ermöglicht das Überschreiben des CSS-Stylesheets mit zusätzlichen Einstellungen. Diese sind wie unten gezeigt durch das Zeichen **;** voneinander getrennt:
+* **[!UICONTROL Inline-Stil]**: ermöglicht es Ihnen, das CSS-Stylesheet mit zusätzlichen Einstellungen zu überschreiben. Diese werden durch **;** -Zeichen, wie im folgenden Beispiel gezeigt:
 
   ![](assets/s_ncs_admin_survey_advanced_tab_inline.png)
 
@@ -86,13 +86,13 @@ Damit können Sie die folgenden Eigenschaften definieren:
 
 Die Felder sind in einer Baumstruktur angeordnet, deren Wurzel denselben Namen hat wie die Seite. Wählen Sie die Wurzel aus, um den Namen zu ändern.
 
-Geben Sie im Formulareigenschaften-Fenster im Tab **[!UICONTROL Seite]** den Titel des Fensters ein. Sie können zum Seiten-Header und Footer einen vordefinierten Inhalt hinzufügen (diese Information wird dann auf jeder Seite gezeigt). Dieser Inhalt wird wie unten gezeigt in den jeweiligen Bereich des Tabs **[!UICONTROL Texte]** eingegeben:
+Der Titel des Fensters muss im **[!UICONTROL Seite]** Registerkarte des Fensters mit den Formulareigenschaften. Sie können auch einen bestimmten Inhalt zur Kopf- und Fußzeile der Seite hinzufügen (diese Informationen werden auf jeder Seite angezeigt). Dieser Inhalt wird in die entsprechenden Abschnitte der **[!UICONTROL Texte]** wie unten gezeigt:
 
 ![](assets/s_ncs_admin_survey_titles_config.png)
 
 ### Elemente zum HTML-Header hinzufügen {#adding-elements-to-html-header}
 
-Sie können zusätzliche Elemente zum HTML-Header einer Formularseite hinzufügen. Geben Sie dazu die Elemente auf der entsprechenden Seite im Tab **[!UICONTROL Header]** ein.
+Sie können zusätzliche Elemente eingeben, die in die HTML-Kopfzeile einer Formularseite eingefügt werden sollen. Geben Sie dazu die Elemente im **[!UICONTROL Kopfzeile]** auf der entsprechenden Seite.
 
 Damit können Sie beispielsweise ein Symbol referenzieren, das in der Symbolleiste der Seite angezeigt werden soll.
 
@@ -156,9 +156,9 @@ Im Feldauswahl-Fenster können Sie aus folgenden Daten auswählen:
 
 * Die Unterstruktur **[!UICONTROL Variablen]** enthält die verfügbaren Variablen für dieses Formular. Weitere Informationen finden Sie unter [Daten in einer lokalen Variablen speichern](web-forms-answers.md#storing-data-in-a-local-variable).
 
-Weitere Informationen hierzu finden Sie in diesem Anwendungsbeispiel: [Je nach den ausgewählten Werten unterschiedliche Optionen anzeigen](use-cases--web-forms.md#displaying-different-options-depending-on-the-selected-values).
+Weitere Informationen hierzu finden Sie in diesem Anwendungsbeispiel: [Je nach den ausgewählten Werten unterschiedliche Optionen anzeigen](use-cases-web-forms.md#displaying-different-options-depending-on-the-selected-values).
 
-Sie können auch mit dem Objekt **[!UICONTROL Test]** eine Bedingung für die Anzeige von Formularseiten festlegen. Weiterführende Informationen dazu finden Sie auf dieser [Seite](defining-web-forms-page-sequencing.md#conditional-page-display).
+Sie können die Anzeige von Formularseiten auch mit dem **[!UICONTROL Test]** -Objekt. Weiterführende Informationen hierzu finden Sie auf [dieser Seite](defining-web-forms-page-sequencing.md#conditional-page-display).
 
 ## Elemente aus einem vorhandenen Formular importieren {#importing-elements-from-an-existing-form}
 

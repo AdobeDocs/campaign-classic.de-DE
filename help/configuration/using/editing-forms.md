@@ -7,7 +7,7 @@ role: Data Engineer, Developer
 badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '1739'
 ht-degree: 3%
@@ -54,7 +54,7 @@ Sie können verschiedene Arten von Eingabeformularen erstellen. Der Formulartyp 
 
 * Content-Management
 
-  Verwenden Sie diesen Formulartyp für das Content Management. Siehe dies [Anwendungsfall](../../delivery/using/use-case--creating-content-management.md).
+  Verwenden Sie diesen Formulartyp für das Content Management. Siehe dies [Anwendungsfall](../../delivery/using/use-case-creating-content-management.md).
 
   ![](../../delivery/using/assets/d_ncs_content_form13.png)
 
@@ -242,7 +242,7 @@ Gehen Sie wie folgt vor, um ein Formular zu erstellen:
    | Feld-Editor | Formularattribut |
    | --- | --- |
    | Radiobutton | `type="radiobutton"` |
-   | Checkbox | `type="checkbox"` |
+   | Kontrollkästchen | `type="checkbox"` |
    | Bearbeitungsstruktur | `type="tree"` |
 
    Mehr dazu [Speicherlistensteuerelemente](form-structure.md#memory-list-controls).
