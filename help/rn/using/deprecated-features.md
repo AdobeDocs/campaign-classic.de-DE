@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Cla
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
-workflow-type: ht
-source-wordcount: '1519'
-ht-degree: 100%
+source-git-commit: f3dc9d56c693f334923d627a28a9e45b92b1c0c3
+workflow-type: tm+mt
+source-wordcount: '1558'
+ht-degree: 99%
 
 ---
 
@@ -45,16 +45,16 @@ Kunden wird empfohlen, die Nutzung der Funktionen in ihrer aktuellen Bereitstell
    <td><strong>Details</strong></td>
   </tr>
 <tr>
- <td>Social Marketing    mit Facebook</td>
- <td>Social Marketing mit Facebook wird jetzt nicht mehr unterstützt. Sie können die Integration von X (früher bekannt als Twitter) verwenden, um in den sozialen Medien zu posten, oder in Zusammenarbeit mit Adobe einen benutzerdefinierten Kanal zu erstellen.
+ <td>Social Marketing mit Facebook</td>
+ <td>Social-Media-Marketing mit Facebook wird jetzt nicht mehr unterstützt. Sie können die Integration von X (früher bekannt als Twitter) verwenden, um in den sozialen Medien zu posten, oder in Zusammenarbeit mit Adobe einen benutzerdefinierten Kanal zu erstellen.
  <p></p>
-  <p>Geplantes Datum für die Entfernung: Ende 2023</p>
+  <!--p>Target removal date: End of 2023</p-->
   </td>
 </tr>
 <tr>
  <td>ACS-Connector</td>
  <td>ACS-Connector (Prime-Angebot) wird jetzt nicht mehr unterstützt. Sie können die Export-/Importfunktionen von Campaign verwenden, um Daten in beide Produkte einzufügen und sie aus ihnen zu extrahieren.<p></p>
-  <p>Geplantes Datum für die Entfernung: Ende 2023</p>
+  <!--p>Target removal date: End of 2023</p-->
   </td>
 </tr>
  </tbody> 
