@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Cla
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: 915b550c28c8d7dd9c29ce5142a4a835a39019b4
 workflow-type: tm+mt
-source-wordcount: '805'
-ht-degree: 96%
+source-wordcount: '764'
+ht-degree: 92%
 
 ---
 
@@ -41,9 +41,7 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 <tr> 
 <td>CentOs</td>
 <td>
-<p>8.x (nur für Hybridumgebungen)</p>
 <p>7.x</p>
-<p><strong>Wichtig:</strong> Wenn Sie RHEL verwenden, müssen Sie SELinux deaktivieren. Andernfalls können Ihre Programmierer auch benutzerdefinierte SELinux-Regeln verfassen, mit denen sichergestellt werden kann, dass ein aktiviertes SELinux keine Probleme mit Campaign-Vorgängen verursacht.</p>
 </td>
 </tr>
 <tr>
@@ -58,7 +56,6 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 <td>
 <p>8.x</p>
 <p>7.x</p>
-<p><strong>Wichtig:</strong> Wenn Sie RHEL verwenden, müssen Sie SELinux deaktivieren. Andernfalls können Ihre Programmierer auch benutzerdefinierte SELinux-Regeln verfassen, mit denen sichergestellt werden kann, dass ein aktiviertes SELinux keine Probleme mit Campaign-Vorgängen verursacht.</p>
 </td>
 </tr>
 <tr>
@@ -70,6 +67,10 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 </tr>
 </tbody>
 </table>
+
+>[!NOTE]
+>
+>Wenn Sie RHEL verwenden, müssen Sie SELinux deaktivieren oder Ihre Architekten benutzerdefinierte SELinux-Regeln schreiben lassen, um zu überprüfen, ob ein aktiviertes SELinux keine Probleme mit Campaign-Vorgängen verursacht.
 
 ## Webserver{#WebServers}
 
