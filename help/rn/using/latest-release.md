@@ -7,9 +7,9 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Cla
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: da35a3050d838cd8e57bf802dc066e32f22f8273
-workflow-type: ht
-source-wordcount: '2295'
+source-git-commit: 23f2565cc847805cff6df028935f74404cdcff24
+workflow-type: tm+mt
+source-wordcount: '2278'
 ht-degree: 100%
 
 ---
@@ -100,9 +100,9 @@ _7. September 2023_
 * Fehlerkorrektur – Die Massenladung funktioniert jetzt mit Datentypen vom Typ „Zeichenfolge“ auch dann, wenn eine Aktivität zum Laden von Daten und der Big Query-Connector verwendet wird. (NEO-53748)
 * Fehlerkorrektur – Der Cache-Schlüssel verursacht nun keine Probleme mehr bei der Darstellung von Angeboten. (NEO-51516, NEO-49995)
 * Fehlerkorrektur – Beim Versand eines Briefpost-Versands mit targetMapping mit Genehmigungen tritt jetzt kein Validierungsfehler mehr auf. (NEO-50758)
-* Fehlerkorrektur – Die Versandleistung wird jetzt nicht mehr durch ein Problem bei der Abfrageverwaltung beeinträchtigt. (NEO-49991)
+* Fehlerkorrektur – Die Versand-Performance wird jetzt nicht mehr durch ein Problem bei der Abfrageverwaltung beeinträchtigt. (NEO-49991)
 * Fehlerkorrektur – Bei der Verwendung von externen Konten in Kampagnen-Workflow-Versandaktivitäten tritt kein Fehler mehr auf, der zu Konfigurationsproblemen mit externen Konten führen konnte. (NEO-49959)
-* Fehlerkorrektur – Beim Versand von Push-Benachrichtigungen treten keine Leistungsprobleme mehr auf. (NEO-49953)
+* Fehlerkorrektur – Beim Versand von Push-Benachrichtigungen treten keine Performance-Probleme mehr auf. (NEO-49953)
 Fehlerkorrektur – Japanische Zeichen werden beim Exportieren von Berichten jetzt korrekt angezeigt (NEO-49308).
 * Fehlerkorrektur – Der Tomcat-Fehlerbericht zeigt jetzt nicht mehr allzu viele Fehlerdetails an. (NEO-49029)
 * Fehlerkorrektur – Bei der Verwendung einer großen Anzahl von Angeboten tritt nun kein Versandfehler mehr auf. (NEO-48807)
@@ -134,8 +134,8 @@ _20. März 2023_
 
 ### Verbesserungen {#release-7-3-3-improvements}
 
-* Der Abrechnungs-Workflow wurde verbessert, um die Leistung zu optimieren. (NEO-47658)
-* Der Tracking-Workflow wurde verbessert, um die Leistung bei hoher Versandgröße zu optimieren. (NEO-45064)
+* Der Abrechnungs-Workflow wurde verbessert, um die Performance zu optimieren. (NEO-47658)
+* Der Tracking-Workflow wurde verbessert, um die Performance bei hoher Versandgröße zu optimieren. (NEO-45064)
 * Die Tracking-Verwaltung wurde verbessert, um mögliche Probleme mit dynamischen Parametern in URLs zu beheben. Die Tracking-Verwaltung V3 verarbeitet jetzt URLs vom Typ AJAX (mit Parametern nach „#“) und verhindert, dass Drittanbieterprogramme Tracking-URLs ändern. Um diese Änderung anzuwenden, müssen Sie sich an Adobe wenden. (NEO-46535)
 
 <!--To apply this change, the marketing, tracking and mid servers need to be updated to 7.3.3. To enable the new tracking management mode, set the `emailLinksVersion` parameter to '3' in the configuration file of the marketing server. (NEO-46535)-->
@@ -188,7 +188,7 @@ Weitere Informationen finden Sie auf der Seite [Eingestellte und entfernte Funkt
 
 ### Sonstige Änderungen   {#release-7-3-2-other}
 
-* Web-Protokolle wurden verbessert: `logonEscalation`-Warnungen werden jetzt nur mehr Benutzenden mit Administratorrechten angezeigt. (NEO-47167)
+<!--* Web logs have been improved: `logonEscalation` warnings are now only displayed for users with admin privileges. (NEO-47167)-->
 * Um Fehler zu vermeiden, wird der Workflow zum **Erfassen von Daten für den Heatmap-Service** (collectDataHeatMapService) jetzt standardmäßig angehalten. (NEO-33959)
 * Es wurden verschiedene Verbesserungen implementiert, um die CPU-Auslastung für das Kampagnen-Dashboard zu optimieren. (NEO-46417)
 * Um Abstürze zu verhindern, wurde die JS-Methode loadLibraryDebug entfernt. (NEO-46968)
@@ -200,7 +200,7 @@ Weitere Informationen finden Sie auf der Seite [Eingestellte und entfernte Funkt
 * Fehlerkorrektur: Der Versandindikator **Erfolg** wird jetzt korrekt aktualisiert, wenn Adobe Campaign Enhanced MTA verwendet wird. (NEO-50462)
 * Fehlerkorrektur: Nach dem Zurücksetzen der Inhaltsvalidierung eines E-Mail-Versands kann dieser Inhalt jetzt erneut validiert werden. (NEO-44259)
 * Fehlerkorrektur: Die Schaltfläche **Versandvalidierung** wird jetzt angezeigt. (NEO-47547)
-* Fehlerkorrektur: Bei umfangreichem HTML-Code in der HTML-Tabelle eines Versands tritt jetzt kein Leistungsproblem mehr auf. (NEO-47440)
+* Fehlerkorrektur: Bei umfangreichem HTML-Code in der HTML-Tabelle eines Versands tritt jetzt kein Performance-Problem mehr auf. (NEO-47440)
 * Fehlerkorrektur: Der Status des Versandprotokolls auf der MID-Instanz kann jetzt problemlos aktualisiert werden, wenn die Option `FeatureFlag_GZIP_Compression` aktiviert ist. (NEO-49183)
 * Fehlerkorrektur: Mobile-App-Benachrichtigungen von iOS können jetzt von einer Ausführungsinstanz gesendet werden, wenn die Token-basierte Authentifizierung verwendet wird. (NEO-45961)
 * Fehlerkorrektur: Der Workflow **Zustellbarkeit** (deliverabilityUpdate) wird nicht mehr blockiert, wenn sehr viele Broadlogs zum Synchronisieren vorhanden sind. (NEO-48287)
