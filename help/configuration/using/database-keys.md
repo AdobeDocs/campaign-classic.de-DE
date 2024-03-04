@@ -5,7 +5,7 @@ description: Schlüsselverwaltung in Datenschemata
 feature: Configuration, Instance Settings
 role: Data Engineer, Developer
 badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
-source-git-commit: 46220dcfdddb8f6f1e7026cafc503aaeecb7e0fa
+source-git-commit: 4a29c189e1e438bbb90067ece63ced0196c618ec
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 23%
@@ -28,7 +28,6 @@ Ein Schlüssel wird über das Hauptelement des Datenschemas deklariert.
 ```
 
 Ein Schlüssel wird als &quot;Primärschlüssel&quot;bezeichnet, wenn er der erste im Schema ist, der ausgefüllt werden soll, oder wenn er die Variable `internal` auf &quot;true&quot;gesetzt ist.
-
 
 Die folgenden Regeln gelten für Schlüssel:
 
