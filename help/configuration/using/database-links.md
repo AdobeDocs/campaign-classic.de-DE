@@ -5,9 +5,9 @@ description: Datenbank-Mapping
 feature: Configuration, Instance Settings
 role: Data Engineer, Developer
 badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
-source-git-commit: f03e72d4ecd17446264adf74603aefca95f99d41
+source-git-commit: 46220dcfdddb8f6f1e7026cafc503aaeecb7e0fa
 workflow-type: tm+mt
-source-wordcount: '918'
+source-wordcount: '939'
 ht-degree: 57%
 
 ---
@@ -222,3 +222,13 @@ Generiertes Schema:
 ```
 
 Die Definition des Namensschlüssels &quot;companyEmail&quot;wurde um den Fremdschlüssel der &quot;company&quot;-Relation erweitert. Dieser Schlüssel generiert einen eindeutigen Index für beide Felder.
+
+## Weitere Informationen
+
+Weitere Informationen finden Sie unter den folgenden Links:
+
+* [Erste Schritte mit Schemata](about-schema-reference.md)
+* [Schemastruktur](schema-structure.md)
+* [Datenbank-Mapping](database-mapping.md)
+* [Schlüsselverwaltung](database-keys.md)
+* [Campaign-Datenmodell](about-data-model.md)

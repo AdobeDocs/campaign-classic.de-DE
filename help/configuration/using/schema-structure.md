@@ -9,9 +9,9 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 3405efb8-a37c-4622-a271-63d7a4148751
-source-git-commit: bd1007ffcfa58ee60fdafa424c7827e267845679
+source-git-commit: 46220dcfdddb8f6f1e7026cafc503aaeecb7e0fa
 workflow-type: tm+mt
-source-wordcount: '1500'
+source-wordcount: '1521'
 ht-degree: 65%
 
 ---
@@ -485,3 +485,14 @@ Ergebnis der berechneten Zeichenfolge für einen Empfänger: **Doe John (john.do
 >[!NOTE]
 >
 >Wenn das Schema keinen Compute string enthält, wird standardmäßig ein Compute string mit den Werten des Primärschlüssels des Schemas gefüllt.
+
+
+## Weitere Informationen
+
+Weitere Informationen finden Sie unter den folgenden Links:
+
+* [Erste Schritte mit Schemata](about-schema-reference.md)
+* [Datenbank-Mapping](database-mapping.md)
+* [Linkverwaltung](database-links.md)
+* [Schlüsselverwaltung](database-keys.md)
+* [Campaign-Datenmodell](about-data-model.md)

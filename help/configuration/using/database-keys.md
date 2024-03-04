@@ -5,10 +5,10 @@ description: Schlüsselverwaltung in Datenschemata
 feature: Configuration, Instance Settings
 role: Data Engineer, Developer
 badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
-source-git-commit: f03e72d4ecd17446264adf74603aefca95f99d41
+source-git-commit: 46220dcfdddb8f6f1e7026cafc503aaeecb7e0fa
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 22%
+source-wordcount: '625'
+ht-degree: 23%
 
 ---
 
@@ -180,3 +180,13 @@ Zusätzlich zur Definition des Schlüssels und seines Index wurde dem erweiterte
 >
 >Ein Datensatz mit einem auf 0 gesetzten Primärschlüssel wird bei der Erstellung der Tabelle automatisch eingefügt. Durch die Verwendung dieses Datensatzes werden äußere Joins vermieden, die sich bei Volumentabellen als nicht effektiv erweisen. Standardmäßig werden alle Fremdschlüssel mit dem Wert 0 initialisiert. Auf diese Weise kann beim Join immer ein Ergebnis zurückgegeben werden, wenn das Datenelement nicht ausgefüllt wird.
 
+
+## Weitere Informationen
+
+Weitere Informationen finden Sie unter den folgenden Links:
+
+* [Erste Schritte mit Schemata](about-schema-reference.md)
+* [Schemastruktur](schema-structure.md)
+* [Datenbank-Mapping](database-mapping.md)
+* [Linkverwaltung](database-links.md)
+* [Campaign-Datenmodell](about-data-model.md)
