@@ -1,27 +1,27 @@
 ---
 product: campaign
-title: Über die Schemareferenz in Adobe Campaign Classic
-description: Erfahren Sie, wie Sie Erweiterungsschemata konfigurieren, um das konzeptionelle Datenmodell der Adobe Campaign Classic-Datenbank zu erweitern.
+title: Erste Schritte mit Schemata in Adobe Campaign
+description: Erfahren Sie, wie Sie mit Schemata arbeiten und das konzeptionelle Datenmodell der Adobe Campaign-Datenbank erweitern.
 badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Schema Extension
 role: Data Engineer, Developer
 exl-id: f36a1b01-a002-4a21-9255-ea78b5f173fe
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: bd1007ffcfa58ee60fdafa424c7827e267845679
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 59%
+source-wordcount: '376'
+ht-degree: 50%
 
 ---
 
-# Über die Schemareferenz{#about-schema-reference}
+# Erste Schritte mit Schemata {#about-schema-reference}
+
+## Was ist ein Schema? {#what-is-a-schema}
 
 In diesem Kapitel wird beschrieben, wie Sie Erweiterungsschemata konfigurieren, um das konzeptionelle Datenmodell der Adobe Campaign-Datenbank zu erweitern.
 
-Die in Campaign integrierten Tabellen und deren Interaktion werden im Abschnitt [Campaign Classic-Datenmodell](https://helpx.adobe.com/de/campaign/kb/acc-datamodel.html).
+Die in Campaign integrierten Tabellen und deren Interaktion werden im Abschnitt [Campaign Classic-Datenmodell](about-data-model.md).
 
-Die physische und logische Struktur der im Programm übertragenen Daten wird in XML beschrieben. Sie folgt einer Adobe Campaign-spezifischen Grammatik namens **Schema**.
-
-Ein Schema ist ein mit einer Datenbanktabelle verknüpftes XML-Dokument. Es definiert die Datenstruktur und beschreibt die SQL-Definition der Tabelle:
+In Adobe Campaign wird die physische und logische Struktur der in der Anwendung übertragenen Daten in XML beschrieben. A **schema** ist ein mit einer Datenbanktabelle verknüpftes XML-Dokument. Es definiert die Datenstruktur und beschreibt die SQL-Definition der Tabelle:
 
 * Der Name der Tabelle
 * Felder
@@ -72,7 +72,7 @@ Die **`<element>`**-Tags definieren die Namen von Entitätselementen. **`<attrib
 
 Ein Schema wird anhand seines Namens und seines Namespace identifiziert.
 
-Mit einem Namespace können Sie eine Reihe von Schemas nach Interessensgebieten gruppieren. Beispielsweise wird der Namespace **cus** für die kundenspezifische Konfiguration (**customers**) verwendet.
+Mit einem Namespace können Sie eine Reihe von Schemata nach Interessensgebieten gruppieren. Beispielsweise wird der Namespace **cus** für die kundenspezifische Konfiguration (**customers**) verwendet.
 
 Der Identifikationsschlüssel eines Schemas ist eine Zeichenfolge, die mithilfe des Namespace und des Namens, getrennt durch einen Doppelpunkt, erstellt wird. Beispiel: **cus:recipient**.
 

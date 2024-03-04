@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Schemastruktur
+title: Schemastruktur in Adobe Campaign
 description: Schemastruktur
 feature: Custom Resources
 role: Data Engineer, Developer
@@ -9,18 +9,22 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 3405efb8-a37c-4622-a271-63d7a4148751
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: bd1007ffcfa58ee60fdafa424c7827e267845679
 workflow-type: tm+mt
-source-wordcount: '1533'
-ht-degree: 85%
+source-wordcount: '1500'
+ht-degree: 65%
 
 ---
 
-# Schemastruktur{#schema-structure}
+# Grundlegendes zur Schemastruktur {#schema-structure}
 
-Die Grundstruktur eines `<srcschema>` sieht wie folgt aus:
+Die grundlegende Struktur eines Schemas wird nachfolgend beschrieben.
 
-```
+## Datenschemata  {#data-schema}
+
+Für `<srcschema>`, lautet die Struktur wie folgt:
+
+```sql
 <srcSchema>
     <enumeration>
         ...          //definition of enumerations
@@ -63,7 +67,7 @@ Die Grundstruktur eines `<srcschema>` sieht wie folgt aus:
 
 Das XML-Dokument eines Datenschemas muss die Wurzel **`<srcschema>`** mit den Attributen **name** und **namespace** zur Angabe des Schemanamens und des Namespace enthalten.
 
-```
+```sql
 <srcSchema name="schema_name" namespace="namespace">
 ...
 </srcSchema>
@@ -71,7 +75,7 @@ Das XML-Dokument eines Datenschemas muss die Wurzel **`<srcschema>`** mit den At
 
 Verwenden wir den folgenden XML-Inhalt, um die Struktur eines Schemas zu illustrieren:
 
-```
+```sql
 <recipient email="John.doe@aol.com" created="2009/03/12" gender="1"> 
   <location city="London"/>
 </recipient>
@@ -79,7 +83,7 @@ Verwenden wir den folgenden XML-Inhalt, um die Struktur eines Schemas zu illustr
 
 Mit dem zugehörigen Datenschema:
 
-```
+```sql
 <srcSchema name="recipient" namespace="cus">
   <element name="recipient">
     <attribute name="email"/>
@@ -94,7 +98,7 @@ Mit dem zugehörigen Datenschema:
 
 ## Beschreibung  {#description}
 
-Der Startpunkt des Schemas ist sein Hauptelement. Es ist leicht identifizierbar, da sein Name mit dem des Schemas identisch ist. Außerdem handelt es sich um das direkte untergeordnete Element der Wurzel. Ausgehend von diesem Element beginnt die Inhaltsbeschreibung.
+Der Einstiegspunkt des Schemas ist sein Hauptelement. Es ist einfach zu identifizieren, da es denselben Namen wie das Schema hat und das Stammelement untergeordnet sein sollte. Die Beschreibung des Inhalts beginnt mit diesem Element.
 
 In unserem Beispiel wird das Hauptelement durch die folgende Zeile dargestellt:
 
@@ -102,11 +106,11 @@ In unserem Beispiel wird das Hauptelement durch die folgende Zeile dargestellt:
 <element name="recipient">
 ```
 
-Die Elemente **`<attribute>`** und **`<element>`**, die dem Hauptelement folgen, ermöglichen es Ihnen, die Speicherorte und Namen der Datenelemente in der XML-Struktur zu definieren.
+Die **`<attribute>`** und **`<element>`** -Elemente, die dem Hauptelement folgen, werden verwendet, um die Speicherorte und Namen der Datenelemente in der XML-Struktur zu definieren.
 
 In unserem Beispielschema sind dies:
 
-```
+```sql
 <attribute name="email"/>
 <attribute name="created"/>
 <attribute name="gender"/>
@@ -115,13 +119,13 @@ In unserem Beispielschema sind dies:
 </element>
 ```
 
-Folgende Regeln müssen eingehalten werden:
+Es gelten die folgenden Regeln:
 
 * Jedes **`<element>`** und **`<attribute>`** müssen mit dem Namen über das Attribut **name** identifiziert werden.
 
   >[!IMPORTANT]
   >
-  >Der Name des Elements sollte kurz sein, vorzugsweise in Englisch, und nur gemäß den XML-Benennungsregeln zulässige Zeichen enthalten.
+  >Der Name des Elements sollte kurz sein, vorzugsweise auf Englisch, und nur Zeichen einschließen, die in XML-Benennungsregeln zulässig sind.
 
 * In der XML-Struktur dürfen nur **`<element>`**-Elemente **`<attribute>`**-Elemente und **`<element>`**-Elemente enthalten.
 * Ein **`<attribute>`**-Element muss einen eindeutigen Namen innerhalb eines **`<element>`** haben.
@@ -131,7 +135,7 @@ Folgende Regeln müssen eingehalten werden:
 
 Der Datentyp wird über das Attribut **type** in den Elementen **`<attribute>`** und **`<element>`** eingegeben.
 
-Eine detaillierte Liste finden Sie in der Beschreibung der [`<attribute>` element](../../configuration/using/schema/attribute.md) und [`<element>` element](../../configuration/using/schema/element.md)).
+Eine detaillierte Liste finden Sie in der Beschreibung der [`<attribute>` element](../../configuration/using/schema/attribute.md) und [`<element>` element](../../configuration/using/schema/element.md).
 
 Wenn dieses Attribut nicht gefüllt wird, ist **string** der Standarddatentyp, es sei denn, das Element enthält untergeordnete Elemente. Wenn es gefüllt ist, wird es nur zur hierarchischen Strukturierung der Elemente verwendet (Element **`<location>`** in unserem Beispiel).
 
@@ -141,22 +145,22 @@ Die folgenden Datentypen werden in Schemata unterstützt:
 
   Die Größe kann über das Attribut **length** (optional, Standardwert &quot;255&quot;) angegeben werden.
 
-* **boolean**: Boolesches Feld. Beispiel für mögliche Werte: true/false, 0/1, yes/no usw.
+* **boolean**: Boolesches Feld. Beispiel für mögliche Werte: wahr/falsch, 0/1, ja/nein usw.
 * **byte**, **short**, **long**: ganze Zahlen (1 Byte, 2 Byte, 4 Byte). Beispiele: Alter, Kontonummer, Anzahl der Punkte usw.
 * **double**: Gleitkommazahl doppelter Genauigkeit. Beispiele: Preis, Quote usw.
 * **date**, **datetime**: Datum und Datum + Uhrzeit. Beispiele: Geburtsdatum, Kaufdatum usw.
 * **datetimenotz**: Datum + Uhrzeit ohne Zeitzonendaten.
 * **timespan**: Dauer. Beispiel: Betriebszugehörigkeit.
 * **memo**: Langtextfelder (mehrere Zeilen). Beispiele: eine Beschreibung, ein Kommentar usw.
-* **uuid**: eindeutig identifizierende Felder zur Unterstützung einer GUID (nur in Microsoft SQL Server unterstützt).
+* **uuid**: Felder &quot;uniqueidentifier&quot;, um eine GUID zu unterstützen (nur in Microsoft SQL Server unterstützt).
 
   >[!NOTE]
   >
-  >So enthalten Sie eine **uuid** in anderen Engines als Microsoft SQL Server muss die Funktion &quot;newuid()&quot; hinzugefügt und mit dem Standardwert ausgefüllt werden.
+  >So enthalten Sie eine **uuid** -Feld in RDBMS außer Microsoft SQL Server, `the newuuid()` -Funktion hinzugefügt und mit dem Standardwert ausgefüllt werden.
 
 Im Folgenden finden Sie unser Schema mit den eingegebenen Typen:
 
-```
+```sql
 <srcSchema name="recipient" namespace="cus">
   <element name="recipient">
     <attribute name="email" type="string" length="80"/>
@@ -179,91 +183,76 @@ In der folgenden Tabelle sind die Zuordnungen für die Datentypen aufgeführt, d
    <td> <strong>Adobe Campaign</strong><br /> </td> 
    <td> <strong>PosgreSQL</strong><br /> </td> 
    <td> <strong>Oracle</strong><br /> </td> 
-   <td> <strong>MS SQL</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> String <br /> </td> 
    <td> VARCHAR(255)<br /> </td> 
    <td> VARCHAR2 (NVARCHAR2, falls Unicode vorhanden)<br /> </td> 
-   <td> VARCHAR (NVARCHAR, falls unicode)<br /> </td> 
   </tr> 
   <tr> 
    <td> Boolesch<br /> </td> 
    <td> SMALLINT<br /> </td> 
    <td> NUMBER(3)<br /> </td> 
-   <td> TINYINT<br /> </td> 
   </tr> 
   <tr> 
    <td> Byte<br /> </td> 
    <td> SMALLINT<br /> </td> 
    <td> NUMBER(3)<br /> </td> 
-   <td> TINYINT<br /> </td> 
   </tr> 
   <tr> 
-   <td> Kurz<br /> </td> 
+   <td> Short<br /> </td> 
    <td> SMALLINT<br /> </td> 
    <td> NUMBER(5)<br /> </td> 
-   <td> SMALLINT<br /> </td> 
   </tr> 
   <tr> 
-   <td> Doppelt<br /> </td> 
+   <td> Double<br /> </td> 
    <td> DOPPELPRÄZISE<br /> </td> 
-   <td> FLUSS<br /> </td> 
    <td> FLUSS<br /> </td> 
   </tr> 
   <tr> 
    <td> Lang<br /> </td> 
    <td> INTEGER<br /> </td> 
    <td> NUMBER(10)<br /> </td> 
-   <td> INT<br /> </td> 
   </tr> 
   <tr> 
    <td> Int64<br /> </td> 
    <td> BIGINT<br /> </td> 
    <td> NUMBER(20)<br /> </td> 
-   <td> BIGINT<br /> </td> 
   </tr> 
   <tr> 
    <td> Datum<br /> </td> 
    <td> DATUM<br /> </td> 
    <td> DATUM<br /> </td> 
-   <td> DATETIME<br /> </td> 
   </tr> 
   <tr> 
    <td> Zeit<br /> </td> 
-   <td> UHRZEIT<br /> </td> 
-   <td> FLUSS<br /> </td> 
+   <td> ZEIT<br /> </td> 
    <td> FLUSS<br /> </td> 
   </tr> 
   <tr> 
-   <td> Datum/Uhrzeit<br /> </td> 
+   <td> DatumUhrzeit<br /> </td> 
    <td> TIMESTAMPZ<br /> </td> 
    <td> DATUM<br /> </td> 
-   <td> MS SQL &lt; 2008: DATETIME<br /> MS SQL &gt;= 2012: DATETIMEOFFSET<br /> </td> 
   </tr> 
   <tr> 
    <td> Datetimenotz<br /> </td> 
    <td> TIMESTAMPZ<br /> </td> 
    <td> DATUM<br /> </td> 
-   <td> MS SQL &lt; 2008: DATETIME<br /> MS SQL &gt;= 2012: DATETIME2<br /> </td> 
   </tr> 
   <tr> 
    <td> Zeitbereich<br /> </td> 
    <td> DOPPELPRÄZISE<br /> </td> 
-   <td> FLUSS<br /> </td> 
    <td> FLUSS<br /> </td> 
   </tr> 
   <tr> 
    <td> Memo<br /> </td> 
    <td> TEXT<br /> </td> 
    <td> CLOB (NCLOB, wenn Unicode)<br /> </td> 
-   <td> TEXT (NTEXT bei Unicode)<br /> </td> 
   </tr> 
   <tr> 
    <td> Blob<br /> </td> 
    <td> BLOB<br /> </td> 
    <td> BLOB<br /> </td> 
-   <td> BILD<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -282,17 +271,17 @@ Die **`<elements>`** und **`<attributes>`** -Elemente des Datenschemas können m
 
   **Beispiel**:
 
-  ```
+  ```sql
   <attribute name="email" type="string" length="80" label="Email"/>
   ```
 
-  Das Label wird vom Formular der Adobe Campaign-Client-Konsole aus angezeigt:
+  Der Titel wird im Eingabeformular der Adobe Campaign-Clientkonsole angezeigt:
 
   ![](assets/d_ncs_integration_schema_label.png)
 
 * Mit der Eigenschaft **desc** können Sie eine lange Beschreibung eingeben.
 
-  Die Beschreibung ist vom Formular aus in der Statusleiste des Hauptfensters der Adobe Campaign-Client-Konsole zu finden.
+  Die Beschreibung wird im Formular in der Statusleiste des Hauptfensters der Adobe Campaign-Clientkonsole angezeigt.
 
   >[!NOTE]
   >
@@ -300,13 +289,13 @@ Die **`<elements>`** und **`<attributes>`** -Elemente des Datenschemas können m
 
   **Beispiel**:
 
-  ```
+  ```sql
   <attribute name="email" type="string" length="80" label="Email" desc="Email of recipient"/>
   ```
 
 ### Standardwerte {#default-values}
 
-Mit der Eigenschaft **default** können Sie einen Ausdruck definieren, der bei der Inhaltserstellung einen Standardwert zurückgibt.
+Verwenden Sie die **default** -Eigenschaft zum Definieren eines Ausdrucks, der bei der Inhaltserstellung einen Standardwert zurückgibt.
 
 Der Wert muss ein mit der XPath-Sprache kompatibler Ausdruck sein. Weitere Informationen hierzu finden Sie unter [Verweisen mit XPath](../../configuration/using/schema-structure.md#referencing-with-xpath).
 
@@ -319,9 +308,9 @@ Der Wert muss ein mit der XPath-Sprache kompatibler Ausdruck sein. Weitere Infor
 
   >[!NOTE]
   >
-  >In der Adobe Campaign-Client-Konsole wird der Knoten **[!UICONTROL Administration > Zähler]** verwendet, um Zähler zu verwalten.
+  >Navigieren Sie in der Adobe Campaign-Clientkonsole zu **[!UICONTROL Administration > Zähler]** Ordner des Explorers, in dem Zähler verwaltet werden sollen.
 
-Um einen Standardwert mit einem Feld zu verknüpfen, können Sie die Variable `<default>  or  <sqldefault>   field.  </sqldefault> </default>` verwenden.
+Um einen Standardwert mit einem Feld zu verknüpfen, können Sie die `<default>`  oder  `<sqldefault>`   -Feld.
 
 `<default>` : ermöglicht es Ihnen, das Feld beim Erstellen von Entitäten mit einem Standardwert vorauszufüllen. Der Wert wird kein SQL-Standardwert sein.
 
@@ -329,13 +318,13 @@ Um einen Standardwert mit einem Feld zu verknüpfen, können Sie die Variable `<
 
 ### Auflistungen {#enumerations}
 
-#### Freie Auflistung {#free-enumeration}
+#### Aufzählung öffnen {#free-enumeration}
 
-Mit der Eigenschaft **userEnum** können Sie eine freie Auflistung definieren, um die in diesem Feld eingegebenen Werte zu speichern und anzuzeigen. Die Syntax sieht folgendermaßen aus:
+Die **userEnum** -Eigenschaft können Sie eine geöffnete Auflistung definieren, in der die in diesem Feld eingegebenen Werte gespeichert und angezeigt werden.
 
-**userEnum=&quot;Name der Auflistung&quot;**
+Die Syntax sieht folgendermaßen aus:
 
-Der Name der Auflistung kann frei gewählt und für andere Felder freigegeben werden.
+`userEnum="name of enumeration"`
 
 Diese Werte werden in einer Dropdown-Liste im Formular angezeigt:
 
@@ -343,7 +332,7 @@ Diese Werte werden in einer Dropdown-Liste im Formular angezeigt:
 
 >[!NOTE]
 >
->In der Adobe Campaign-Client-Konsole wird der Knoten **[!UICONTROL Administration > Auflistungen]** zum Verwalten von Auflistungen verwendet.
+>Navigieren Sie in der Adobe Campaign-Clientkonsole zu **[!UICONTROL Administration > Auflistungen]** Ordner des Explorers, in dem Auflistungen verwaltet werden sollen.
 
 #### Auflistung festlegen {#set-enumeration}
 
@@ -357,7 +346,7 @@ Auflistungen ermöglichen es dem Benutzer, einen Wert aus einer Dropdown-Liste a
 
 Beispiel für eine Deklaration einer Auflistung im Datenschema:
 
-```
+```sql
 <enumeration name="gender" basetype="byte" default="0">    
   <value name="unknown" label="Not specified" value="0"/>    
   <value name="male" label="male" value="1"/>   
@@ -369,33 +358,31 @@ Eine Auflistung wird über das Element **`<enumeration>`** außerhalb des Haupte
 
 Die Eigenschaften der Auflistung lauten wie folgt:
 
-* **baseType**: Datentyp, der mit den Werten verknüpft ist,
-* **label**: Beschreibung der Auflistung,
-* **name**: Name der Auflistung,
-* **default**: Standardwert der Auflistung.
+* **baseType**: Datentyp, der den Werten zugeordnet ist
+* **label**: Beschreibung der Auflistung
+* **name**: Name der Auflistung
+* **default**: Standardwert der Auflistung
 
 Die Werte für die Auflistung werden im Element **`<value>`** mit den folgenden Attributen deklariert:
 
-* **name**: Name des intern gespeicherten Werts,
-* **label**: über die grafische Oberfläche angezeigtes Label.
+* **name**: Name des intern gespeicherten Werts
+* **label**: in der grafischen Benutzeroberfläche angezeigter Titel
 
 #### dbenum-Auflistung {#dbenum-enumeration}
 
-* Mit der Eigenschaft **dbenum** können Sie eine Auflistung definieren, deren Eigenschaften denen der Eigenschaft **enum** ähnlich sind.
+*Die **dbenum** -Eigenschaft können Sie eine Auflistung definieren, deren Eigenschaften denen der **enum** -Eigenschaft.
 
-  Das Attribut **name** speichert den Wert jedoch nicht intern, sondern speichert einen Code, mit dem Sie die betreffenden Tabellen erweitern können, ohne ihr Schema zu ändern.
+Das Attribut **name** speichert den Wert jedoch nicht intern, sondern speichert einen Code, mit dem Sie die betreffenden Tabellen erweitern können, ohne ihr Schema zu ändern.
 
-  Die Werte werden über den Knoten **[!UICONTROL Administration > Auflistungen]** definiert.
+Diese Auflistung dient beispielsweise zur Angabe der Art von Kampagnen.
 
-  Diese Auflistung dient beispielsweise zur Angabe der Art von Kampagnen.
-
-  ![](assets/d_ncs_configuration_schema_dbenum.png)
+![](assets/d_ncs_configuration_schema_dbenum.png)
 
 ### Beispiel {#example}
 
 Beispiel des um diese Eigenschaften ergänzten Schemas:
 
-```
+```sql
 <srcSchema name="recipient" namespace="cus">
   <enumeration name="gender" basetype="byte">    
     <value name="unknown" label="Not specified" value="0"/>    
@@ -422,7 +409,7 @@ Mithilfe des Attributs **unbound** mit dem Wert &quot;true&quot; können Sie ein
 
 **Beispiel**: Definition des Sammlungselements **`<group>`** im Schema.
 
-```
+```sql
 <element name="group" unbound="true" label="List of groups">
   <attribute name="label" type="string" label="Label"/>
 </element>
@@ -430,7 +417,7 @@ Mithilfe des Attributs **unbound** mit dem Wert &quot;true&quot; können Sie ein
 
 Mit Projektion des XML-Inhalts:
 
-```
+```sql
 <group label="Group1"/>
 <group label="Group2"/>
 ```
@@ -473,8 +460,8 @@ In der Adobe Campaign-Client-Konsole können Sie über einen beliebigen Ausdruck
 **Beispiel**:
 
 * **GetDate()**: gibt das aktuelle Datum zurück,
-* **Year(@created)**: gibt das Jahr des Datums zurück, das im Attribut &quot;created&quot; enthalten ist,
-* **GetEmailDomain(@email)**: gibt die Domäne der E-Mail-Adresse zurück.
+* **Year(@created)**: gibt das Jahr des im Attribut &quot;created&quot;enthaltenen Datums zurück.
+* **GetEmailDomain(@email)**: gibt die Domain der E-Mail-Adresse zurück.
 
 ## Erstellen einer Zeichenfolge über den Compute string {#building-a-string-via-the-compute-string}
 
@@ -484,7 +471,7 @@ Der **Compute string** wird über das Element **`<compute-string>`** unter dem H
 
 **Beispiel**: Compute string der Empfänger-Tabelle.
 
-```
+```sql
 <srcSchema name="recipient" namespace="nms">  
   <element name="recipient">
     <compute-string expr="@lastName + ' ' + @firstName +' (' + @email + ')' "/>

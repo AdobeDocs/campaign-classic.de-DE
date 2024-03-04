@@ -6,18 +6,18 @@ feature: Configuration, Instance Settings
 role: Data Engineer, Developer
 badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 exl-id: 728b509f-2755-48df-8b12-449b7044e317
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: bd1007ffcfa58ee60fdafa424c7827e267845679
 workflow-type: tm+mt
-source-wordcount: '1981'
-ht-degree: 68%
+source-wordcount: '1984'
+ht-degree: 58%
 
 ---
 
 # Datenbank-Mapping{#database-mapping}
 
-Das SQL-Mapping dieses Beispielschemas ergibt das folgende XML-Dokument:
+Die SQL-Zuordnung des beschriebenen Beispielschemas [auf dieser Seite](schema-structure.md) generiert das folgende XML-Dokument:
 
-```
+```sql
 <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">
   <enumeration basetype="byte" name="gender">    
     <value label="Not specified" name="unknown" value="0"/>    
@@ -38,27 +38,27 @@ Das SQL-Mapping dieses Beispielschemas ergibt das folgende XML-Dokument:
 
 ## Beschreibung {#description}
 
-Das Stammelement des Schemas lautet nicht mehr **`<srcschema>`**, sondern **`<schema>`**.
+Das Stammelement des Schemas wurde in **`<srcschema>`** nach **`<schema>`**.
 
-Dies führt zu einem anderen Dokument, das automatisch aus dem Quellschema generiert und schlicht als &quot;Schema&quot; bezeichnet wird. Dieses Schema wird von Adobe Campaign verwendet.
+Dieser andere Dokumenttyp wird automatisch aus dem Quellschema generiert und einfach als Schema bezeichnet.
 
 Die SQL-Namen werden automatisch anhand des Elementnamens und des Elementtyps bestimmt.
 
 Die SQL-Benennungsregeln lauten wie folgt:
 
-* Tabelle: Verkettung des Namespace und Namens des Schemas
+* **table**: Verkettung des Schema-Namespace und des Namens
 
   In diesem Beispiel wird der Tabellenname über das Hauptelement des Schemas im Attribut **sqltable** eingegeben:
 
-  ```
+  ```sql
   <element name="recipient" sqltable="CusRecipient">
   ```
 
-* Feld: Name des Elements mit vorangestelltem Präfix, das nach Typ definiert wird (&quot;i&quot; für Integer, &quot;d&quot; für Dublette, &quot;s&quot; für String, &quot;ts&quot; für Datumsangaben usw.)
+* **field**: Name des Elements, dem ein Präfix vorangestellt ist, das nach Typ definiert wurde: &quot;i&quot; für Integer, &quot;d&quot; für Dublette, &quot;s&quot; für Zeichenfolge, &quot;ts&quot; für Datumsangaben usw.
 
   Der Feldname wird über das Attribut **sqlname** für die verschiedenen Eingaben von **`<attribute>`** und **`<element>`** eingegeben:
 
-  ```
+  ```sql
   <attribute desc="Email address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/> 
   ```
 
@@ -68,7 +68,7 @@ Die SQL-Benennungsregeln lauten wie folgt:
 
 Das SQL-Script zur Erstellung der aus dem erweiterten Schema generierten Tabelle lautet wie folgt:
 
-```
+```sql
 CREATE TABLE CusRecipient(
   iGender NUMERIC(3) NOT NULL Default 0,   
   sCity VARCHAR(50),   
@@ -78,12 +78,12 @@ CREATE TABLE CusRecipient(
 
 In Bezug auf SQL-Felder gelten folgende Einschränkungen:
 
-* In numerischen und Datumsfeldern sind keine Nullwerte zulässig.
-* Numerische Felder werden auf 0 initialisiert.
+* keine Nullwerte in numerischen und Datumsfeldern
+* numerische Felder werden auf 0 initialisiert
 
 ## XML-Felder {#xml-fields}
 
-Standardmäßig werden alle eingegebenen **`<attribute>`**- und **`<element>`**-Elemente einem SQL-Schema der Datentabelle zugeordnet. Sie können dieses Feld jedoch anstatt in SQL auch in XML referenzieren. Das bedeutet, dass die Daten in einem Memo-Feld (&quot;mData&quot;) der Tabelle gespeichert werden, in der Werte aller XML-Felder enthalten sind. Als Speicher dieser Daten fungiert ein XML-Dokument, das die Struktur des Schemas beibehält.
+Standardmäßig sind alle  **`<attribute>`** und **`<element>`** -typisiertes Element einem SQL-Feld der Datenschematabelle zugeordnet. Sie können dieses Feld jedoch anstatt in SQL auch in XML referenzieren. Das bedeutet, dass die Daten in einem Memo-Feld (&quot;mData&quot;) der Tabelle gespeichert werden, in der Werte aller XML-Felder enthalten sind. Als Speicher dieser Daten fungiert ein XML-Dokument, das die Struktur des Schemas beibehält.
 
 Um ein Feld in XML auszufüllen, müssen Sie dem betreffenden Element das Attribut **xml** mit dem Wert &quot;true&quot; hinzufügen.
 
@@ -91,21 +91,19 @@ Um ein Feld in XML auszufüllen, müssen Sie dem betreffenden Element das Attrib
 
 * Mehrzeiliges Kommentarfeld:
 
-  ```
+  ```sql
   <element name="comment" xml="true" type="memo" label="Comment"/>
   ```
 
 * Beschreibung der Daten im HTML-Format:
 
-  ```
+  ```sql
   <element name="description" xml="true" type="html" label="Description"/>
   ```
 
   Über den Typ &quot;html&quot; können Sie HTML-Inhalte in einem CDATA-Tag speichern und eine spezielle HTML-Bearbeitungsprüfung in der Benutzeroberfläche des Adobe Campaign-Clients anzeigen.
 
-Bei Verwendung von XML-Feldern ist das Hinzufügen von Feldern ohne Anpassungen der physischen Struktur der Datenbank möglich. Ein weiterer Vorteil besteht darin, dass weniger Ressourcen benötigt werden (SQL-Feldern zugewiesene Größe, Anzahl der Felder pro Tabelle usw.).
-
-Der Hauptnachteil besteht darin, dass es unmöglich ist, ein XML-Feld zu indizieren oder zu filtern.
+Verwenden Sie XML-Felder, um neue Felder hinzuzufügen, ohne die physische Struktur der Datenbank zu ändern. Ein weiterer Vorteil besteht darin, dass Sie weniger Ressourcen verwenden (Größe für SQL-Felder, Anzahl der Felder pro Tabelle usw.). Beachten Sie jedoch, dass Sie ein XML-Feld nicht indizieren oder filtern können.
 
 ## Indexierte Felder {#indexed-fields}
 
@@ -113,7 +111,7 @@ Indizes ermöglichen die Optimierung der Leistung der in der Anwendung verwendet
 
 Ein Index wird aus dem Hauptelement des Datenschemas deklariert.
 
-```
+```sql
 <dbindex name="name_of_index" unique="true/false">
   <keyfield xpath="xpath_of_field1"/>
   <keyfield xpath="xpath_of_field2"/>
@@ -123,23 +121,21 @@ Ein Index wird aus dem Hauptelement des Datenschemas deklariert.
 
 Indizes folgen den folgenden Regeln:
 
-* Ein Index kann auf ein oder mehrere Felder in der Tabelle verweisen.
-* Ein Index kann in allen Feldern eindeutig sein (um Duplikate zu vermeiden), wenn die Variable **eindeutig** -Attribut den Wert &quot;true&quot;enthält.
-* Der SQL-Name des Index wird anhand des SQL-Namens der Tabelle und des Indexnamens bestimmt.
+* Ein Index kann auf ein oder mehrere Felder in der Tabelle verweisen
+* Ein Index kann in allen Feldern eindeutig sein (um Duplikate zu vermeiden), wenn die Variable **eindeutig** -Attribut den Wert &quot;true&quot;enthält
+* Der SQL-Name des Index wird anhand des SQL-Namens der Tabelle und des Indexnamens bestimmt
 
 >[!NOTE]
 >
->Standardmäßig sind Indizes die ersten Elemente, die aus dem Hauptelement des Schemas deklariert werden.
-
->[!NOTE]
+>* Standardmäßig sind Indizes die ersten Elemente, die aus dem Hauptelement des Schemas deklariert werden.
 >
->Indizes werden während der Tabellenzuordnung (Standard oder FDA) automatisch erstellt.
+>* Indizes werden während der Tabellenzuordnung (Standard oder FDA) automatisch erstellt.
 
 **Beispiel**:
 
 * Hinzufügen eines Index zur E-Mail-Adresse und Stadt:
 
-  ```
+  ```sql
   <srcSchema name="recipient" namespace="cus">
     <element name="recipient">
       <dbindex name="email">
@@ -157,7 +153,7 @@ Indizes folgen den folgenden Regeln:
 
 * Hinzufügen eines eindeutigen Index zum Feld &quot;id&quot;-Name:
 
-  ```
+  ```sql
   <srcSchema name="recipient" namespace="cus">
     <element name="recipient">
       <dbindex name="id" unique="true">
@@ -180,7 +176,7 @@ Eine Tabelle muss mindestens einen Schlüssel zur Identifizierung eines Datensat
 
 Ein Schlüssel wird über das Hauptelement des Datenschemas deklariert.
 
-```
+```sql
 <key name="name_of_key">
   <keyfield xpath="xpath_of_field1"/>
   <keyfield xpath="xpath_of_field2"/>
@@ -188,25 +184,23 @@ Ein Schlüssel wird über das Hauptelement des Datenschemas deklariert.
 </key>
 ```
 
-Für Schlüssel gelten folgende Regeln:
+Die folgenden Regeln gelten für Schlüssel:
 
-* Ein Schlüssel kann auf ein oder mehrere Felder in der Tabelle verweisen.
-* Ein Schlüssel wird als &quot;primary&quot; (primär) (oder &quot;priority&quot; (Priorität)) bezeichnet, wenn an erster Stelle im auszufüllenden Schema steht oder das Attribut **internal** (intern) mit dem Wert &quot;true&quot; enthält.
-* Für jede Schlüsseldefinition wird implizit ein eindeutiger Index deklariert. Die Erstellung eines Index für den Schlüssel kann durch Hinzufügen der **noDbIndex** -Attribut mit dem Wert &quot;true&quot;.
-
->[!NOTE]
->
->Standardmäßig sind Schlüssel die Elemente, die aus dem Hauptelement des Schemas deklariert werden, nachdem Indizes definiert wurden.
+* Ein Schlüssel kann auf ein oder mehrere Felder in der Tabelle verweisen
+* Ein Schlüssel wird als &quot;primär&quot;(oder &quot;Priorität&quot;) bezeichnet, wenn er der erste im Schema ist, der ausgefüllt werden soll, oder wenn er die Variable **intern** -Attribut mit dem Wert &quot;true&quot;
+* Für jede Schlüsseldefinition wird implizit ein eindeutiger Index deklariert. Die Erstellung eines Index für den Schlüssel kann durch Hinzufügen der **noDbIndex** -Attribut mit dem Wert &quot;true&quot;
 
 >[!NOTE]
 >
->Schlüssel werden während der Tabellenzuordnung (Standard oder FDA) erstellt, Adobe Campaign findet eindeutige Indizes.
+>* Standardmäßig sind Schlüssel die Elemente, die aus dem Hauptelement des Schemas deklariert werden, nachdem Indizes definiert wurden.
+>
+>* Schlüssel werden während der Tabellenzuordnung (Standard oder FDA) erstellt, Adobe Campaign findet eindeutige Indizes.
 
 **Beispiel**:
 
 * Hinzufügen eines Schlüssels zur E-Mail-Adresse und Stadt:
 
-  ```
+  ```sql
   <srcSchema name="recipient" namespace="cus">
     <element name="recipient">
       <key name="email">
@@ -224,7 +218,7 @@ Für Schlüssel gelten folgende Regeln:
 
   Generiertes Schema:
 
-  ```
+  ```sql
   <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
     <element name="recipient" sqltable="CusRecipient">    
      <dbindex name="email" unique="true">      
@@ -247,7 +241,7 @@ Für Schlüssel gelten folgende Regeln:
 
 * Hinzufügen eines primären oder internen Schlüssels zum Namensfeld &quot;id&quot;:
 
-  ```
+  ```sql
   <srcSchema name="recipient" namespace="cus">
     <element name="recipient">
       <key name="id" internal="true">
@@ -266,7 +260,7 @@ Für Schlüssel gelten folgende Regeln:
 
   Generiertes Schema:
 
-  ```
+  ```sql
   <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
     <element name="recipient" sqltable="CusRecipient">    
       <key name="email">      
@@ -311,7 +305,7 @@ Um einen eindeutigen Schlüssel zu deklarieren, füllen Sie die **autopk** -Attr
 
 Deklarieren eines inkrementellen Schlüssels im Quellschema:
 
-```
+```sql
 <srcSchema name="recipient" namespace="cus">
   <element name="recipient" autopk="true">
   ...
@@ -321,7 +315,7 @@ Deklarieren eines inkrementellen Schlüssels im Quellschema:
 
 Generiertes Schema:
 
-```
+```sql
 <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
   <element name="recipient" autopk="true" pkSequence="XtkNewId" sqltable="CusRecipient"> 
     <dbindex name="id" unique="true">
@@ -370,7 +364,7 @@ Weitere Informationen zu FDA-Tabellen finden Sie unter [Zugriff auf externe Date
 
 In dem Schema, das den Fremdschlüssel der Tabelle enthält, muss über das Hauptelement eine Relation angegeben werden:
 
-```
+```sql
 <element name="name_of_link" type="link" target="key_of_destination_schema">
   <join xpath-dst="xpath_of_field1_destination_table" xpath-src="xpath_of_field1_source_table"/>
   <join xpath-dst="xpath_of_field2_destination_table" xpath-src="xpath_of_field2_source_table"/>
@@ -412,7 +406,7 @@ Für Relationen gelten folgende Regeln:
 
 1-N-Beziehung zur Schematabelle &quot;cus:company&quot;:
 
-```
+```sql
 <srcSchema name="recipient" namespace="cus">
   <element name="recipient">
     ...
@@ -423,7 +417,7 @@ Für Relationen gelten folgende Regeln:
 
 Generiertes Schema:
 
-```
+```sql
 <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
   <element name="recipient" sqltable="CusRecipient"> 
     <dbindex name="companyId">      
@@ -444,7 +438,7 @@ Der Fremdschlüssel wird automatisch in einem Element hinzugefügt, das dieselbe
 
 Erweitertes Zielgruppenschema (&quot;cus:company&quot;):
 
-```
+```sql
 <schema mappingType="sql" name="company" namespace="cus" xtkschema="xtk:schema">  
   <element name="company" sqltable="CusCompany" autopk="true"> 
     <dbindex name="id" unique="true">     
@@ -475,7 +469,7 @@ Ein Umkehrlink zur Tabelle &quot;cus:recipient&quot; wurde mit folgenden Paramet
 
 In diesem Beispiel wird eine Relation zur Schematabelle &quot;nms:address&quot; deklariert. Der Join ist ein äußere Join und wird explizit mit der E-Mail-Adresse des Empfängers und dem Feld &quot;@address&quot;der verknüpften Tabelle (&quot;nms:address&quot;) ausgefüllt.
 
-```
+```sql
 <srcSchema name="recipient" namespace="cus">
   <element name="recipient"> 
     ...
@@ -490,7 +484,7 @@ In diesem Beispiel wird eine Relation zur Schematabelle &quot;nms:address&quot; 
 
 1-1-Beziehung zur Schematabelle &quot;cus:extension&quot;:
 
-```
+```sql
 <element integrity="own" label="Extension" name="extension" revCardinality="single" revLink="recipient" target="cus:extension" type="link"/>
 ```
 
@@ -498,7 +492,7 @@ In diesem Beispiel wird eine Relation zur Schematabelle &quot;nms:address&quot; 
 
 Relation zu einem Ordner (Schema &quot;xtk:folder&quot;):
 
-```
+```sql
 <element default="DefaultFolder('nmsFolder')" label="Folder" name="folder" revDesc="Recipients in the folder" revIntegrity="own" revLabel="Recipients" target="xtk:folder" type="link"/>
 ```
 
@@ -508,7 +502,7 @@ Der Standardwert gibt die Kennung der ersten qualifizierten Parametertypdatei zu
 
 In diesem Beispiel wird ein Schlüssel für eine Relation (Schema &quot;company&quot; zu Schema &quot;cus:company&quot;) mit dem Attribut **xlink** und einem Feld der Tabelle (&quot;email&quot;) erstellt:
 
-```
+```sql
 <srcSchema name="recipient" namespace="cus">
   <element name="recipient">
     <key name="companyEmail"> 
@@ -524,7 +518,7 @@ In diesem Beispiel wird ein Schlüssel für eine Relation (Schema &quot;company&
 
 Generiertes Schema:
 
-```
+```sql
 <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
   <element name="recipient" sqltable="CusRecipient"> 
     <dbindex name="companyId">      
@@ -550,4 +544,4 @@ Generiertes Schema:
 </schema>
 ```
 
-Die Definition des Namensschlüssels &quot;companyEmail&quot; wurde um den Fremdschlüssel der Relation &quot;company&quot; erweitert. Dieser Schlüssel generiert einen eindeutigen Index für beide Felder.
+Die Definition des Namensschlüssels &quot;companyEmail&quot;wurde um den Fremdschlüssel der &quot;company&quot;-Relation erweitert. Dieser Schlüssel generiert einen eindeutigen Index für beide Felder.
