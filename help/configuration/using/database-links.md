@@ -5,181 +5,25 @@ description: Datenbank-Mapping
 feature: Configuration, Instance Settings
 role: Data Engineer, Developer
 badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
-exl-id: 728b509f-2755-48df-8b12-449b7044e317
 source-git-commit: f03e72d4ecd17446264adf74603aefca95f99d41
 workflow-type: tm+mt
-source-wordcount: '1397'
-ht-degree: 71%
+source-wordcount: '918'
+ht-degree: 57%
 
 ---
 
-# Datenbank-Mapping{#database-mapping}
 
-Die SQL-Zuordnung des beschriebenen Beispielschemas [auf dieser Seite](schema-structure.md) generiert das folgende XML-Dokument:
-
-```sql
-<schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">
-  <enumeration basetype="byte" name="gender">    
-    <value label="Not specified" name="unknown" value="0"/>    
-    <value label="Male" name="male" value="1"/>    
-    <value label="Female" name="female" value="2"/> 
-  </enumeration>  
-
-  <element name="recipient" sqltable="CusRecipient">    
-    <attribute desc="Recipient email address" label="Email" length="80" name="email" sqlname="sEmail" type="string"/>    
-    <attribute default="GetDate()" label="Date of creation" name="created" sqlname="tsCreated" type="datetime"/>    
-    <attribute enum="gender" label="Gender" name="gender" sqlname="iGender" type="byte"/>    
-    <element label="Location" name="location">      
-      <attribute label="City" length="50" name="city" sqlname="sCity" type="string" userEnum="city"/>    
-    </element>  
-  </element>
-</schema>
-```
-
-Das Stammelement des Schemas wurde in **`<srcschema>`** nach **`<schema>`**.
-
-Dieser andere Dokumenttyp wird automatisch aus dem Quellschema generiert und einfach als Schema bezeichnet.
-
-Die SQL-Namen werden automatisch anhand des Elementnamens und des Elementtyps bestimmt.
-
-Die SQL-Benennungsregeln lauten wie folgt:
-
-* **table**: Verkettung des Schema-Namespace und des Namens
-
-  In diesem Beispiel wird der Tabellenname über das Hauptelement des Schemas im Attribut **sqltable** eingegeben:
-
-  ```sql
-  <element name="recipient" sqltable="CusRecipient">
-  ```
-
-* **field**: Name des Elements, dem ein Präfix vorangestellt ist, das nach Typ definiert wurde: &quot;i&quot; für Integer, &quot;d&quot; für Dublette, &quot;s&quot; für Zeichenfolge, &quot;ts&quot; für Datumsangaben usw.
-
-  Der Feldname wird über das Attribut **sqlname** für die verschiedenen Eingaben von **`<attribute>`** und **`<element>`** eingegeben:
-
-  ```sql
-  <attribute desc="Email address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/> 
-  ```
-
->[!NOTE]
->
->SQL-Namen können aus dem Quellschema geladen werden. Füllen Sie dazu die Attribute &quot;sqltable&quot; oder &quot;sqlname&quot; für das betreffende Element aus.
-
-Das SQL-Script zur Erstellung der aus dem erweiterten Schema generierten Tabelle lautet wie folgt:
-
-```sql
-CREATE TABLE CusRecipient(
-  iGender NUMERIC(3) NOT NULL Default 0,   
-  sCity VARCHAR(50),   
-  sEmail VARCHAR(80),
-  tsCreated TIMESTAMP Default NULL);
-```
-
-In Bezug auf SQL-Felder gelten folgende Einschränkungen:
-
-* keine Nullwerte in numerischen und Datumsfeldern
-* numerische Felder werden auf 0 initialisiert
-
-## XML-Felder {#xml-fields}
-
-Standardmäßig sind alle  **`<attribute>`** und **`<element>`** -typisiertes Element einem SQL-Feld der Datenschematabelle zugeordnet. Sie können dieses Feld jedoch anstatt in SQL auch in XML referenzieren. Das bedeutet, dass die Daten in einem Memo-Feld (&quot;mData&quot;) der Tabelle gespeichert werden, in der Werte aller XML-Felder enthalten sind. Als Speicher dieser Daten fungiert ein XML-Dokument, das die Struktur des Schemas beibehält.
-
-Um ein Feld in XML auszufüllen, müssen Sie dem betreffenden Element das Attribut **xml** mit dem Wert &quot;true&quot; hinzufügen.
-
-**Beispiel**: Im Folgenden finden Sie zwei Beispiele für die Verwendung von XML-Feldern.
-
-* Mehrzeiliges Kommentarfeld:
-
-  ```sql
-  <element name="comment" xml="true" type="memo" label="Comment"/>
-  ```
-
-* Beschreibung der Daten im HTML-Format:
-
-  ```sql
-  <element name="description" xml="true" type="html" label="Description"/>
-  ```
-
-  Über den Typ &quot;html&quot; können Sie HTML-Inhalte in einem CDATA-Tag speichern und eine spezielle HTML-Bearbeitungsprüfung in der Benutzeroberfläche des Adobe Campaign-Clients anzeigen.
-
-Verwenden Sie XML-Felder, um neue Felder hinzuzufügen, ohne die physische Struktur der Datenbank zu ändern. Ein weiterer Vorteil besteht darin, dass Sie weniger Ressourcen verwenden (Größe für SQL-Felder, Anzahl der Felder pro Tabelle usw.). Beachten Sie jedoch, dass Sie ein XML-Feld nicht indizieren oder filtern können.
-
-## Indexierte Felder {#indexed-fields}
-
-Indizes ermöglichen die Optimierung der Leistung der in der Anwendung verwendeten SQL-Abfragen.
-
-Ein Index wird aus dem Hauptelement des Datenschemas deklariert.
-
-```sql
-<dbindex name="name_of_index" unique="true/false">
-  <keyfield xpath="xpath_of_field1"/>
-  <keyfield xpath="xpath_of_field2"/>
-  ...
-</key>
-```
-
-Indizes folgen den folgenden Regeln:
-
-* Ein Index kann auf ein oder mehrere Felder in der Tabelle verweisen
-* Ein Index kann in allen Feldern eindeutig sein (um Duplikate zu vermeiden), wenn die Variable **eindeutig** -Attribut den Wert &quot;true&quot;enthält
-* Der SQL-Name des Index wird anhand des SQL-Namens der Tabelle und des Indexnamens bestimmt
-
->[!NOTE]
->
->* Standardmäßig sind Indizes die ersten Elemente, die aus dem Hauptelement des Schemas deklariert werden.
->
->* Indizes werden während der Tabellenzuordnung (Standard oder FDA) automatisch erstellt.
-
-**Beispiel**:
-
-* Hinzufügen eines Index zur E-Mail-Adresse und Stadt:
-
-  ```sql
-  <srcSchema name="recipient" namespace="cus">
-    <element name="recipient">
-      <dbindex name="email">
-        <keyfield xpath="@email"/> 
-        <keyfield xpath="location/@city"/> 
-      </dbindex>
-  
-      <attribute name="email" type="string" length="80" label="Email" desc="Email address of recipient"/>
-      <element name="location" label="Location">
-        <attribute name="city" type="string" length="50" label="City" userEnum="city"/>
-      </element>
-    </element>
-  </srcSchema>
-  ```
-
-* Hinzufügen eines eindeutigen Index zum Feld &quot;id&quot;-Name:
-
-  ```sql
-  <srcSchema name="recipient" namespace="cus">
-    <element name="recipient">
-      <dbindex name="id" unique="true">
-        <keyfield xpath="@id"/> 
-      </dbindex>
-  
-      <dbindex name="email">
-        <keyfield xpath="@email"/> 
-      </dbindex>
-  
-      <attribute name="id" type="long" label="Identifier"/>
-      <attribute name="email" type="string" length="80" label="Email" desc="Email address of recipient"/>
-    </element>
-  </srcSchema>
-  ```
-
-
-## Linkverwaltung {#links--relation-between-tables}
+# Linkverwaltung {#links--relation-between-tables}
 
 Eine Relation beschreibt die Zuordnung einer Tabelle zu einer anderen.
 
-Es gibt verschiedene Typen von Zuordnungen (auch &quot;Kardinalitäten&quot; genannt), darunter:
+Die Vereinigungen, auch Kardinalität genannt, sind im Folgenden aufgeführt.
 
 * 1-1-Kardinalität: Eine Entität in der Quelltabelle kann maximal mit einer Entität in der Zieltabelle in Beziehung stehen.
 * 1-N-Kardinalität: Eine Entität in der Quelltabelle kann mit mehreren Entitäten in der Zieltabelle in Beziehung stehen, aber eine Entität in der Zieltabelle kann nur maximal mit einer Entität in der Quelltabelle in Beziehung stehen.
 * N-N-Kardinalität: Eine Entität in der Quelltabelle kann mit mehreren Entitäten in der Zieltabelle in Beziehung stehen und umgekehrt.
 
-In der Benutzeroberfläche sind die verschiedenen Beziehungstypen anhand ihrer Symbole leicht voneinander zu unterscheiden.
+In der Benutzeroberfläche werden Kardinalitäten mit einem bestimmten Symbol dargestellt.
 
 Für Join-Beziehungen mit einer Campaign-Tabelle/-Datenbank:
 
@@ -187,7 +31,7 @@ Für Join-Beziehungen mit einer Campaign-Tabelle/-Datenbank:
 * ![](assets/externaljoin11.png): 1-1-Kardinalität, externer Join. Dies kann etwa eine Beziehung zwischen einem Empfänger und dem ihm zugehörigen Land sein. Ein Empfänger kann nur mit einer Entität der Ländertabelle verknüpft sein. Der Inhalt der Ländertabelle wird nicht gespeichert.
 * ![](assets/join_with_campaign1n.png): 1-N-Kardinalität. Dies kann etwa eine Beziehung zwischen einem Empfänger und der Tabelle zu Abonnements sein. Ein Empfänger kann mit mehreren Vorkommen in der Abonnementtabelle in Verbindung gebracht werden.
 
-Für Join-Beziehungen mit Federated Database Access:
+Für Verknüpfungsrelationen mit Federated Database Access (FDA):
 
 * ![](assets/join_fda_11.png): 1-1-Kardinalität
 * ![](assets/join_fda_1m.png): 1-N-Kardinalität
@@ -208,20 +52,21 @@ Für Relationen gelten folgende Regeln:
 
 * Die Definition einer Relation erfolgt über den Typ **link** für **`<element>`**, wobei folgende Attributen eingegeben werden:
 
-   * **name**: Name der Relation aus der Quelltabelle
+   * **name**: Name des Links aus der Quelltabelle
    * **target**: Name des Zielschemas
-   * **label**: Bezeichnung der Relation
-   * **revLink** (optional): Name des Umkehrlinks aus dem Zielschema (wird standardmäßig automatisch abgeleitet)
-   * **integrity** (optional): Referenzintegrität der Entität der Quelltabelle zur Entität der Zieltabelle. Hierfür sind folgende Werte möglich:
+   * **label**: Link-Titel
+   * **revLink** (optional): Name des Reverse-Links aus dem Zielschema (standardmäßig automatisch abgezogen)
+   * **Integrität** (optional): referenzielle Integrität des Vorkommens der Quelltabelle mit dem Vorkommen der Zieltabelle.
+Mögliche Werte:
 
-      * **define**: Es ist möglich, die Quellentität zu löschen, wenn diese nicht mehr durch eine Zielentität referenziert wird.
-      * **normal**: Durch Löschen der Quellentität werden die Schlüssel der Relation zur Zielentität initialisiert (Standardmodus). Bei diesem Integritätstyp werden alle Fremdschlüssel initialisiert.
-      * **own**: Durch Löschen der Quellentität wird auch die Zielentität gelöscht.
-      * **owncopy**: Führt die gleiche Operation aus wie **own** (beim Löschen) bzw. dupliziert die Entitäten (bei Duplizierung).
-      * **neutral**: Führt keine Operation aus.
+      * **definieren**: Das Quellvorkommen kann gelöscht werden, wenn es nicht mehr durch ein Zielvorkommen referenziert wird.
+      * **normal**: Beim Löschen des Vorkommens der Quelle werden die Schlüssel der Relation zum Vorkommen der Zielgruppe initialisiert (Standardmodus). Dieser Integritätstyp initialisiert alle Fremdschlüssel
+      * **own**: Das Löschen des Vorkommens der Quelle führt zum Löschen des Vorkommens der Zielgruppe
+      * **owncopy**: entspricht **own** (im Falle einer Löschung) oder dupliziert die Vorkommnisse (im Fall einer Duplizierung).
+      * **neutral**: kein spezifisches Verhalten
 
-   * **revIntegrity** (optional): Integrität im Zielschema (optional, Standardwert ist &quot;normal&quot;)
-   * **revCardinality** (optional): Mit dem Wert &quot;single&quot; wird die Kardinalität mit dem Typ 1-1 ausgefüllt (standardmäßig 1-N).
+   * **revIntegrity** (optional): Integrität des Zielschemas (optional, standardmäßig &quot;normal&quot;)
+   * **revCardinality** (optional): mit dem Wert &quot;single&quot;wird die Kardinalität mit dem Typ 1-1 ausgefüllt (standardmäßig 1-N)
    * **externalJoin** (optional): Erzwingt den äußeren Join.
    * **revExternalJoin** (optional): Erzwingt den äußeren Join am Umkehr-Link.
 
@@ -234,9 +79,9 @@ Für Relationen gelten folgende Regeln:
 >
 >Standardmäßig sind Links die Elemente, die am Ende des Schemas deklariert werden.
 
-### Beispiel 1 {#example-1}
+## Beispiel: Reverse-Link {#example-1}
 
-1-N-Beziehung zur Schematabelle &quot;cus:company&quot;:
+Im folgenden Beispiel deklarieren wir eine 1:N-Relation zur Schematabelle &quot;cus:company&quot;:
 
 ```sql
 <srcSchema name="recipient" namespace="cus">
@@ -297,9 +142,9 @@ Ein Umkehrlink zur Tabelle &quot;cus:recipient&quot; wurde mit folgenden Paramet
 * **unbound**: Relation wird als Sammlungselement für eine 1-N-Kardinalität deklariert (standardmäßig)
 * **integrity**: Standardwert ist &quot;define&quot; (kann mit dem Attribut &quot;revIntegrity&quot; in der Definition der Relation im Quellschema erzwungen werden)
 
-### Beispiel 2 {#example-2}
+## Beispiel: einfacher Link {#example-2}
 
-In diesem Beispiel wird eine Relation zur Schematabelle &quot;nms:address&quot; deklariert. Der Join ist ein äußere Join und wird explizit mit der E-Mail-Adresse des Empfängers und dem Feld &quot;@address&quot;der verknüpften Tabelle (&quot;nms:address&quot;) ausgefüllt.
+In diesem Beispiel deklarieren wir einen Link zur Schematabelle &quot;nms:address&quot;. Der Join ist ein äußere Join und wird explizit mit der E-Mail-Adresse des Empfängers und dem Feld &quot;@address&quot;der verknüpften Tabelle (&quot;nms:address&quot;) ausgefüllt.
 
 ```sql
 <srcSchema name="recipient" namespace="cus">
@@ -312,17 +157,17 @@ In diesem Beispiel wird eine Relation zur Schematabelle &quot;nms:address&quot; 
 </srcSchema>
 ```
 
-### Beispiel 3 {#example-3}
+## Beispiel: eindeutige Kardinalität {#example-3}
 
-1-1-Beziehung zur Schematabelle &quot;cus:extension&quot;:
+In diesem Beispiel erstellen wir eine 1:1-Relation zur Schematabelle &quot;cus:extension&quot;:
 
 ```sql
 <element integrity="own" label="Extension" name="extension" revCardinality="single" revLink="recipient" target="cus:extension" type="link"/>
 ```
 
-### Beispiel 4 {#example-4}
+## Beispiel: Link zu einem Ordner {#example-4}
 
-Relation zu einem Ordner (Schema &quot;xtk:folder&quot;):
+In diesem Beispiel deklarieren wir einen Link zu einem Ordner ( Schema &quot;xtk:folder&quot;):
 
 ```sql
 <element default="DefaultFolder('nmsFolder')" label="Folder" name="folder" revDesc="Recipients in the folder" revIntegrity="own" revLabel="Recipients" target="xtk:folder" type="link"/>
@@ -330,9 +175,9 @@ Relation zu einem Ordner (Schema &quot;xtk:folder&quot;):
 
 Der Standardwert gibt die Kennung der ersten qualifizierten Parametertypdatei zurück, die in der Funktion &quot;DefaultFolder(&#39;nmsFolder&#39;)&quot; eingegeben wurde.
 
-### Beispiel 5 {#example-5}
+## Beispiel: Erstellen eines Schlüssels für einen Link {#example-5}
 
-In diesem Beispiel wird ein Schlüssel für eine Relation (Schema &quot;company&quot; zu Schema &quot;cus:company&quot;) mit dem Attribut **xlink** und einem Feld der Tabelle (&quot;email&quot;) erstellt:
+In diesem Beispiel erstellen wir einen Schlüssel für einen Link (&quot;company&quot; zu &quot;cus:company&quot;-Schema) mit dem **xlink** und ein Feld der Tabelle (&quot;email&quot;):
 
 ```sql
 <srcSchema name="recipient" namespace="cus">
