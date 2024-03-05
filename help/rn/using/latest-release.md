@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Cla
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 23f2565cc847805cff6df028935f74404cdcff24
+source-git-commit: 517f09e508207b14e6b870f926753b2d9a547262
 workflow-type: tm+mt
-source-wordcount: '2278'
-ht-degree: 100%
+source-wordcount: '2319'
+ht-degree: 98%
 
 ---
 
@@ -32,6 +32,8 @@ _5. Dezember 2023_
 * Mit Campaign Classic v7.3.5 wurde der Authentifizierungsprozess verbessert und sicherer gemacht. Technische Benutzende sollten sich jetzt über das Adobe Identity Management System (IMS) mit Campaign verbinden. Erfahren Sie in [dieser Technote](../../technotes/using/ims-migration.md), wie Sie Ihre vorhandenen technischen Konten migrieren können.
 
 * Darüber hinaus empfiehlt Adobe Campaign im Rahmen der Bemühungen, die Sicherheit und den Authentifizierungsprozess zu verbessern, dringend, den Authentifizierungsmodus für Endbenutzende von der nativen Authentifizierung mit Login/Passwort auf das Adobe Identity Management System (IMS) zu migrieren. Erfahren Sie in [diesem technischen Hinweis](../../technotes/using/migrate-users-to-ims.md), wie Sie Ihre Benutzenden migrieren können.
+
+* Jetzt, wenn ein Webformular die **Veröffentlichung ausstehend** -Status nicht automatisch live. Um Sicherheitsprobleme zu vermeiden, müssen diese veröffentlicht werden, bevor sie **Online** und der Zugriff über die Webformular-URL in einem Webbrowser erfolgt. [Weitere Informationen](../../web/using/publishing-a-web-form.md#life-cycle-of-a-form)
 
 ### Patches  {#release-7-3-5-patches}
 
