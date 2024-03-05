@@ -6,10 +6,10 @@ badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Web Forms
 exl-id: 1c66b8e8-7590-4767-9b2f-a9a509df4508
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 8bb839bd0118010ac8e3e4bde88f6f3972786ed0
 workflow-type: tm+mt
-source-wordcount: '1036'
-ht-degree: 100%
+source-wordcount: '1376'
+ht-degree: 52%
 
 ---
 
@@ -33,7 +33,7 @@ Folgende Identifizierungsmöglichkeiten gibt es:
 
   ![](assets/s_ncs_admin_survey_preload_methods_001.png)
 
-  Diese Verschlüsselungsmethode verwendet eine extern bereitgestellte Kennung (ID), die mit einem Schlüssel verknüpft ist, der von Adobe Campaign und dem externen Anbieter gemeinsam verwendet wird. Dieser Schlüssel wird im Feld **[!UICONTROL DES-Schlüssel]** eingegeben.
+  Diese Verschlüsselungsmethode verwendet eine extern bereitgestellte Kennung (ID), die mit einem Schlüssel verknüpft ist, der von Adobe Campaign und dem externen Anbieter gemeinsam verwendet wird. Die **[!UICONTROL DES-Schlüssel]** ermöglicht die Eingabe des Verschlüsselungsschlüssels.
 
 * **[!UICONTROL Feldliste]**
 
@@ -45,7 +45,7 @@ Folgende Identifizierungsmöglichkeiten gibt es:
 
   >[!CAUTION]
   >
-  >Die Daten in den ausgewählten Feldern sind nicht verschlüsselt. Sie dürfen nicht verschlüsselt bereitgestellt werden, da sie Adobe Campaign nicht entschlüsseln kann, wenn die Option **[!UICONTROL Feldliste]** ausgewählt ist.
+  >Die Daten in den ausgewählten Feldern werden nicht verschlüsselt. Sie darf nicht in verschlüsselter Form bereitgestellt werden, da Adobe Campaign sie nicht entschlüsseln kann, wenn die **[!UICONTROL Feldliste]** ausgewählt ist.
 
   Im folgenden Beispiel wird das Vorausfüllen des Profils auf Basis der E-Mail-Adresse durchgeführt.
 
@@ -65,7 +65,7 @@ Folgende Identifizierungsmöglichkeiten gibt es:
 
 Wenn Sie keine Profile aktualisieren möchten, muss die Option **[!UICONTROL Bei nicht angegebener Identifizierung vorausgefüllte Informationen ignorieren]** ausgewählt werden. In diesem Fall wird jedes eingegebene Profil nach Genehmigung des Formulars der Datenbank hinzugefügt. Diese Option wird beispielsweise verwendet, wenn das Formular auf einer Website veröffentlicht wird.
 
-Mit der Option **[!UICONTROL Referenzierte Daten werden automatisch in das Formular geladen]** können Sie automatisch Daten, die den Eingabe- und Verbindungsfeldern des Formulars entsprechen, vorausfüllen. Dies betrifft aber keine Daten, die in den Aktivitäten **[!UICONTROL Script]** und **[!UICONTROL Test]** referenziert werden. Ist diese Option nicht ausgewählt, müssen Sie die Felder mit der Option **[!UICONTROL Ladung zusätzlicher Daten]** definieren.
+Die **[!UICONTROL Im Formular referenzierte Daten werden automatisch geladen]** -Option können Sie automatisch die Daten vorab laden, die den Eingabe- und Zusammenführungsfeldern im Formular entsprechen. Die Daten, auf die in **[!UICONTROL Skript]** und **[!UICONTROL Test]** sind nicht betroffen. Wenn diese Option nicht aktiviert ist, müssen Sie die Felder mithilfe der **[!UICONTROL Zusätzliche Daten laden]** -Option.
 
 Mit der Option **[!UICONTROL Ladung zusätzlicher Daten]** können Sie Felder mit Daten vorausfüllen, auch wenn diese Informationen nicht auf den Seiten des Formulars verwendet werden.
 
@@ -81,25 +81,37 @@ Nachdem ein Formular erstellt, konfiguriert und veröffentlicht wurde, können S
 
 Der Lebenszyklus eines Formulars besteht aus drei Phasen:
 
-1. **Das Formular wird bearbeitet**
+1. **In Bearbeitung**
 
-   Dies ist die anfängliche Phase, in der ein neues Formular erstellt wird; es befindet sich in der Bearbeitungsphase. Um auf das Formular zugreifen zu können, muss (ausschließlich für Testzwecke) der Parameter **[!UICONTROL __uuid]** in seine URL eingegeben werden. Auf diese URL können Sie über den Unter-Tab **[!UICONTROL Vorschau]** zugreifen. Siehe [Parameter der Formular-URL](defining-web-forms-properties.md#form-url-parameters).
+   Dies ist die anfängliche Designphase. Wenn ein neues Formular erstellt wird, befindet es sich in der Bearbeitungsphase. Zugriff auf das Formular, nur zu Testzwecken, erfordert dann den Parameter **[!UICONTROL __uuid]** in der URL verwendet werden. Auf diese URL kann im **[!UICONTROL Vorschau]** Unterregisterkarte. Siehe [Parameter der Formular-URL](defining-web-forms-properties.md#form-url-parameters).
 
    >[!CAUTION]
    >
    >Der Zugriff auf das Formular erfolgt in der gesamten Bearbeitungsphase über diese spezielle URL.
 
-1. **Das Formular ist online**
+1. **Veröffentlichung ausstehend**
 
-   Nach Abschluss der Konzeptionsphase kann das Formular versendet werden. Zuerst muss es veröffentlicht werden. Weitere Informationen finden Sie unter [Formular veröffentlichen](#publishing-a-form).
+   In einigen Fällen (z. B. wenn [Importieren eines Formulars über ein Package](#import-web-packages)), kann ein Webformular **[!UICONTROL Veröffentlichung ausstehend]** -Status, bis sie live ist.
+
+   >[!NOTE]
+   >
+   >Für technische Webanwendungen (verfügbar über **[!UICONTROL Administration]** > **[!UICONTROL Konfiguration]** > **[!UICONTROL Webanwendungen]** ), ein Formular mit dem **[!UICONTROL Veröffentlichung ausstehend]** Status wird automatisch [veröffentlicht](#publishing-a-form) und erhält die **[!UICONTROL Online]** -Status.
+
+1. **Online**
+
+   Sobald die Entwurfsphase abgeschlossen ist, kann das Formular bereitgestellt werden.
+
+   Wenn ein Formular **[!UICONTROL In Bearbeitung]** oder **[!UICONTROL Veröffentlichung ausstehend]** status, muss es [veröffentlicht](#publishing-a-form) , um online zu sein und über die URL des Webformulars in einem Browser zugänglich zu sein.
+
+   Nach der Veröffentlichung ist das Formular aktiv, bis es abläuft.
 
    Das Formular ist so lange **[!UICONTROL Live]**, bis seine Gültigkeit erlischt.
 
    >[!CAUTION]
    >
-   >Damit eine Umfrage bereitgestellt werden kann, darf ihre URL nicht den Parameter **[!UICONTROL __uuid]** enthalten.
+   >Die URL des Formulars darf nicht die Variable **[!UICONTROL __uuid]** -Parameter.
 
-1. **Das Formular ist nicht verfügbar**
+1. **Geschlossen**
 
    Wenn die Bereitstellungsphase vorüber ist, ist das Formular geschlossen und nicht mehr verfügbar. Benutzer können dann nicht mehr darauf zugreifen.
 
@@ -111,13 +123,13 @@ Der Veröffentlichungsstatus eines Formulars wird in der Formularliste angezeigt
 
 ### Formular veröffentlichen {#publishing-a-form}
 
-Um den Status eines Formulars zu ändern, müssen Sie es veröffentlichen. Klicken Sie dazu oberhalb der Liste der Web-Formulare auf die Schaltfläche **[!UICONTROL Veröffentlichung]** und wählen Sie in der Dropdown-Liste den Status aus.
+Um den Status eines Formulars zu ändern, müssen Sie es veröffentlichen. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Veröffentlichung]** oberhalb der Liste der Webformulare und wählen Sie den Status in der Dropdown-Liste aus.
 
 ![](assets/webapp_publish_webform.png)
 
 ### Formular online verfügbar machen {#making-a-form-available-online}
 
-Damit Benutzer auf das Formular zugreifen können, muss es sich in Produktion befinden und gestartet worden sein, d. h. sich innerhalb seines Gültigkeitszeitraums befinden. Die Gültigkeitsdaten werden über den Link **[!UICONTROL Eigenschaften]** des Formulars eingegeben.
+Damit Benutzer auf das Formular zugreifen können, muss es sich in Produktion befinden und gestartet worden sein, d. h. innerhalb seiner Gültigkeitsdauer. Die Gültigkeitsdaten werden über die **[!UICONTROL Eigenschaften]** Link des Formulars.
 
 * Geben Sie im Bereich **[!UICONTROL Projekt]** über die entsprechenden Felder das Start- und Enddatum für das Formular ein.
 
@@ -143,7 +155,7 @@ In diesem Fall müssen Sie im Datensatzfeld die Option **[!UICONTROL Vorausgefü
 
 ### Antworten protokollieren {#log-responses}
 
-Das Tracking der Antworten kann in einem speziellen Tab aktiviert werden, um die Wirkung Ihres Webformulars zu überwachen. Wählen Sie dazu im Fenster mit den Formulareigenschaften den Link **[!UICONTROL Erweiterte Parameter...]** und dann die Option **[!UICONTROL Antworten protokollieren]** aus.
+Das Tracking von Antworten kann in einem speziellen Tab aktiviert werden, um die Auswirkungen Ihres Webformulars zu überwachen. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Erweiterte Parameter...]** im Fenster der Formulareigenschaften verknüpfen und die **[!UICONTROL Protokollantworten]** -Option.
 
 ![](assets/s_ncs_admin_survey_trace.png)
 
@@ -156,3 +168,35 @@ Selektieren Sie einen Empfänger und wählen Sie dann die Schaltfläche **[!UICO
 ![](assets/s_ncs_admin_survey_trace_edit.png)
 
 Sie können die Antwortprotokolle zu den Fragen verwenden, um beispielsweise Erinnerungen nur an Kontakte zu senden, die nicht geantwortet haben, oder um reagierenden Kontakten spezielle Nachrichten zukommen zu lassen.
+
+### Webformularpakete importieren {#import-web-packages}
+
+Beim Exportieren und Importieren eines Packages mit einem Webformular von einer Instanz zu einer anderen Instanz (z. B. von einer Phase zur Produktion) kann der Status des Webformulars auf der neuen Instanz abhängig von verschiedenen Bedingungen variieren. Die verschiedenen Fälle sind unten aufgeführt.
+
+Weitere Informationen zu den verschiedenen Status eines Webformulars finden Sie in [diesem Abschnitt](#life-cycle-of-a-form).
+
+>[!NOTE]
+>
+>Wenn Sie ein Webformular über ein Package exportieren, ist der Formularstatus im Inhalt des resultierenden Pakets sichtbar.
+
+* Wenn der Status des Webformulars **[!UICONTROL Veröffentlichung ausstehend]** oder **[!UICONTROL Online]** beim Export aus der ersten Instanz:
+
+   * Das Webformular ruft die **[!UICONTROL Veröffentlichung ausstehend]** Status beim Import in die neue Instanz.
+
+   * Wenn das Webformular bereits in der neuen Instanz vorhanden ist, wird es durch die neue Version des Formulars ersetzt und nimmt die **[!UICONTROL Veröffentlichung ausstehend]** Status, auch wenn die alte Version des Formulars **[!UICONTROL Online]**.
+
+   * Unabhängig davon, ob das Formular vorhanden ist oder nicht, muss das Formular [veröffentlicht](#publishing-a-form) werden **[!UICONTROL Online]** auf der neuen Instanz angezeigt werden und über die URL des Webformulars in einem Browser zugänglich sind.
+
+* Wenn der Status des Webformulars **[!UICONTROL In Bearbeitung]** beim Export:
+
+   * Wenn das Webformular auf der Instanz neu ist, auf der das Paket importiert wird, ruft das Webformular die **[!UICONTROL In Bearbeitung]** -Status.
+
+   * Wenn das Webformular bereits in der neuen Instanz vorhanden ist, handelt es sich um eine Änderung in einem vorhandenen Formular. Wenn die alte Formularversion **[!UICONTROL Online]**, bleibt die alte Version online, bis die neue Version des Formulars [veröffentlicht](#publishing-a-form) erneut auf der neuen Instanz.
+
+  >[!NOTE]
+  >
+  >Sie können die neueste Version Ihres Webformulars mit dem **[!UICONTROL Vorschau]** Registerkarte.
+
+<!--For RN:
+* Now, when a web form has the **Pending publication** status, it must be published before it becomes **Online** and accessible through the web form URL in a web browser. [Read more](../../web/using/publishing-a-web-form.md#life-cycle-of-a-form)
+-->
