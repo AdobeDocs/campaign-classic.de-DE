@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie technische Campaign-Benutzerinnen bzw. -Benut
 feature: Technote
 role: Admin
 exl-id: 1a409daf-57be-43c9-a3d9-b8ab54c88068
-source-git-commit: b2c37e2426d3b6ba5174d4a446320e0f50485a76
+source-git-commit: 17a43a6e2e3ee7a3a2b81545bf96d766e6e97a05
 workflow-type: tm+mt
-source-wordcount: '1706'
-ht-degree: 98%
+source-wordcount: '1738'
+ht-degree: 94%
 
 ---
 
@@ -16,7 +16,6 @@ ht-degree: 98%
 Um die Sicherheits- und Authentifizierungsprozesse zu verbessern, wird ab Campaign Classic v7.3.5 der Authentifizierungsprozess für Campaign Classic verbessert. Technische Benutzerinnen und Benutzer sollten jetzt das [Adobe Identity Management System (IMS)](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"} to connect to Campaign. Learn more about the new server to server authentication process in [Adobe Developer Console documentation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"} benutzen. **Adobe empfiehlt, diese Migration in Campaign v7.3.5 durchzuführen, um eine reibungslose Migration zu Campaign v8 zu ermöglichen.**
 
 Eine technische Benutzerin bzw. ein technischer Benutzer ist ein Campaign-Benutzerprofil, das explizit für die API-Integration erstellt wurde. In diesem Artikel werden die Schritte beschrieben, die zum Migrieren einer technischen Benutzerin bzw. eines technischen Benutzers zu einem technischen Konto über die Adobe Developer Console erforderlich sind.
-
 
 ## Sind Sie betroffen?{#ims-impacts}
 
@@ -53,7 +52,7 @@ Diese Campaign-Versionen werden im Abschnitt [Versionshinweise](../../rn/using/l
 
 * Campaign-gehostete und Managed Services-Kundinnen und -Kunden
 
-  Für API-Aufrufe in Message Center-Instanzen sollte während des Upgrades auf Campaign v7.3.5 (oder eine andere [mit der IMS-Migration kompatible Version](#ims-versions-tech)) oder während der Bereitstellung der Instanz ein Produktprofil erstellt worden sein. Dieses Produktprofil hat den Namen:
+  Für API-Aufrufe in die Message-Center-Instanz(en) muss das Produktprofil (siehe unten) während der Aktualisierung auf Campaign v7.3.5 (oder andere) erstellt werden. [Kompatible Version der IMS-Migration](#ims-versions-tech)) oder während der Bereitstellung der Instanz. Wenn das Produktprofil nicht angezeigt wird, wenden Sie sich an Ihren Transition Manager oder an den Support, um das Produktprofil zu erhalten, bevor Sie mit der IMS-Migration beginnen. Dieses Produktprofil hat den Namen:
 
   `campaign - <your campaign instance> - messagecenter`
 
