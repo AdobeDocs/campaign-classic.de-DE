@@ -6,10 +6,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Cla
 feature: Mobile SDK Integration, Push
 role: User, Developer
 exl-id: a5f6b82d-5561-4e56-b2ed-7fd6fd8c2b55
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
-workflow-type: ht
-source-wordcount: '1004'
-ht-degree: 100%
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
+workflow-type: tm+mt
+source-wordcount: '995'
+ht-degree: 87%
 
 ---
 
@@ -49,7 +49,7 @@ Im Folgenden finden Sie die Integrationsschritte für das Campaign SDK.
 
   Ab der SDK-Version 1.0.26 wird diese Erlaubnis nicht mehr verwendet.
 
-* **iOS**: erfordert die Verknüpfung der Dateien **libNeolaneSDK.a** und **Neolane_SDK.h** mit dem Projekt. Ab der SDK-Version 1.0.24 ist die Option **ENABLE_BITCODE** aktiviert.
+* **In iOS**: die **libNeolaneSDK.a** und **Neolane_SDK.h** -Dateien müssen mit dem Projekt verknüpft sein. Ab Version 1.0.24 des SDK die Option **ENABLE_BITCODE** aktiviert ist.
 
   >[!NOTE]
   >
@@ -68,7 +68,7 @@ Zur Integration des Campaign SDK in die Mobile App benötigt der Entwickler folg
   >Der Integrationsschlüssel ist in der Adobe Campaign-Konsole im Tab **[!UICONTROL Informationen]** des dedizierten Dienstes der Mobile App angegeben. Weitere Informationen finden Sie unter [Konfiguration einer Mobile App in Adobe Campaign](configuring-the-mobile-application.md).
 
 * **Tracking-URL**: entspricht der Adresse des Adobe-Campaign-Trackingservers.
-* **Marketing-URL**: zur Abfrage der Abonnements.
+* **Marketing-URL**: um die Sammlung der Abonnements zu ermöglichen.
 
 * **Für Android**:
 
@@ -153,7 +153,7 @@ Die Registrierungsfunktion ermöglicht
 
   Trackingfunktionen ermöglichen das Tracking der Benachrichtigungsanzeige (Impression) und die Aktivierung der Benachrichtigungen (Öffnungen).
 
-  Um die Benachrichtigungsanzeige zu tracken (durch Aufruf der SDK-Funktion **notifyReceive**), folgen Sie der unten beschriebenen Implementierung. Bitte beachten Sie: Wenn Sie FCM (Firebase Cloud Messaging) verwenden, empfehlen wir, beim Aufruf der Funktion **onMessageReceived** durch das Android-System die Funktion **notifyReceive** zu nutzen.
+  So verfolgen Sie die Anzeige der Benachrichtigung (durch Aufruf der **notifyReceive** -Funktion des SDK), folgen Sie der unten stehenden Implementierung. Wenn Sie FCM (Firebase Cloud Messaging) verwenden, empfehlen wir Ihnen, die **notifyReceive** Funktion beim **onMessageReceived** -Funktion vom Android-System aufgerufen.
 
   ```
   package com.android.YourApplication;
@@ -249,7 +249,7 @@ Die Registrierungsfunktion ermöglicht
   }
   ```
 
-  Sehen Sie im Folgenden ein Implementierungsbeispiel für das (mittels des Aufrufs der SDK-Funktion **notifyOpening** erzeugte) Tracking der Öffnung einer Benachrichtigung. Die Klasse **NotificationActivity** entspricht der im vorangehenden Beispiel für die Erstellung des **notifIntent**-Objekts verwendeten Klasse.
+  Im Folgenden finden Sie ein Implementierungsbeispiel zum Verfolgen eines geöffneten Benachrichtigungs-Workflows (ausgeführt durch Aufruf der **notifyOpening** -Funktion des SDK). Die **NotificationActivity** -Klasse entspricht der zum Erstellen der **notifIntent** -Objekt im vorherigen Beispiel.
 
   ```
   public class NotificationActivity extends Activity {
@@ -297,7 +297,7 @@ Die Registrierungsfunktion ermöglicht
 
   >[!NOTE]
   >
-  >Ab Version 7.0 ruft das Betriebssystem, sobald die Funktion **application:didReceiveRemoteNotification:fetchCompletionHandler** implementiert ist, nur diese Funktion auf. Die Funktion **application:didReceiveRemoteNotification** wird daher nicht aufgerufen.
+  >Ab Version 7.0, sobald die Variable **`application:didReceiveRemoteNotification:fetchCompletionHandler`** -Funktion implementiert ist, ruft das Betriebssystem nur diese Funktion auf. Die **`application:didReceiveRemoteNotification`** -Funktion nicht aufgerufen.
 
 +++
 
@@ -639,7 +639,7 @@ Gehen Sie hier folgendermaßen vor:
 
 * Definieren Sie das Layout Ihrer Benachrichtigung.
 
-  Sie müssen ein Layout mit den jeweiligen Widgets definieren. Das Widget für ein Bild ist **UIImageView**.
+  Sie müssen ein Layout mit den entsprechenden Widgets definieren.  Für ein Bild trägt das Widget den Namen **UIImageView**.
 
 * Stellen Sie Ihre Medien dar.
 

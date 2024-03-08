@@ -9,10 +9,10 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: 6158ffaa-cb08-4f77-82b8-b3e5e1bf7fd7
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
 workflow-type: tm+mt
-source-wordcount: '1095'
-ht-degree: 100%
+source-wordcount: '1101'
+ht-degree: 94%
 
 ---
 
@@ -68,7 +68,7 @@ Auf die Anwendungskriterien kann im **[!UICONTROL Allgemein]**-Tab der Typologie
 
 Die im Tab **[!UICONTROL Angebotsunterbreitung]** konfigurierten Dimensionen für die Unterbreitungsregel müssen mit denen auf Umgebungsebene übereinstimmen.
 
-Die **[!UICONTROL Zielgruppendimension]** entspricht der Empfängertabelle (standardmäßig: nms:recipients), die die Angebotsvorschläge erhält. Die **[!UICONTROL Speicherdimension]** entspricht der Tabelle, die den mit der Zielgruppendimension verknüpften Vorschlagsverlauf enthält (standardmäßig:nms:propositionRcp).
+Die **[!UICONTROL Zielgruppendimension]** entspricht der Empfängertabelle (standardmäßig: `nms:recipients`), die die Angebotsvorschläge erhalten. Die **[!UICONTROL Speicherdimension]** entspricht der Tabelle, die den mit der Zielgruppendimension verknüpften Vorschlagsverlauf enthält (standardmäßig: `nms:propositionRcp`).
 
 ![](assets/offer_typology_009.png)
 
@@ -107,7 +107,7 @@ Standardmäßig kann nach Kanal, betroffenen Angeboten und Vorschlagstatus gefil
 
 ![](assets/offer_typology_014.png)
 
-Hierbei handelt es sich um die gängigsten Anwendungen für Unterbreitungsregeln. Wenn Sie andere Kriterien verwenden möchten, haben Sie die Möglichkeit, mithilfe des Links **[!UICONTROL Vorschläge begrenzen...]** eine Abfrage zu konfigurieren. Lesen Sie diesbezüglich auch den Abschnitt [Abfrage bezüglich der Vorschläge erstellen](#creating-a-query-on-propositions).
+Diese Kriterien stellen die häufigsten Anwendungen der Unterbreitungsregeln dar. Um andere Kriterien zu verwenden, können Sie eine Abfrage mit der **[!UICONTROL Vorschläge begrenzen...]** -Link. Lesen Sie diesbezüglich auch den Abschnitt [Abfrage bezüglich der Vorschläge erstellen](#creating-a-query-on-propositions).
 
 * **Kanalfilter**
 

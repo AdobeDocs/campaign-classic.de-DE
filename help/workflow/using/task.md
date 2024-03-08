@@ -5,7 +5,7 @@ description: Erfahren Sie mehr über die Workflow-Aktivität "Aufgabe".
 badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Workflows
 exl-id: 8549bf8c-ba23-44cb-95f2-c50f2d0f5479
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
 workflow-type: tm+mt
 source-wordcount: '112'
 ht-degree: 100%
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 >[!AVAILABILITY]
 >
->:warning: Diese Funktion ist nur in Campaign Classic v7 verfügbar. [Weitere Informationen](../../mrm/using/creating-and-managing-tasks.md)   
+>`:warning:` Diese Funktion ist nur in Campaign Classic v7 verfügbar. [Weitere Informationen](../../mrm/using/creating-and-managing-tasks.md)   
 
 In Kampagnen-Workflows können mithilfe einer **[!UICONTROL Aufgabe]** zwei mögliche Szenarien definiert werden: Das erste kommt zum Tragen, wenn die Aufgabe beendet wurde, das zweite, wenn die Aufgabe nicht beendet wurde. Dies ist beispielsweise der Fall, wenn der Benutzer die Erfüllung abgelehnt hat oder wenn sie überfällig ist.
 

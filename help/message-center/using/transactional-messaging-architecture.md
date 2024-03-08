@@ -5,10 +5,10 @@ description: In diesem Abschnitt werden die Transaktionsnachrichten-Architektur 
 feature: Transactional Messaging, Message Center, Architecture
 badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 exl-id: 0a059397-b037-405b-b9c1-94a4a072674d
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
 workflow-type: tm+mt
 source-wordcount: '1232'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -88,7 +88,7 @@ Wenn Sie jedoch ein Transaktionsnachrichtenprojekt auf dem E-Mail-Kanal gestarte
 
 1. Installieren Sie den benötigten Kanal, zum Beispiel den **mobilen Kanal**, mithilfe des Package-Import-Assistenten (**[!UICONTROL Tools > Erweitert > Package importieren... > Adobe Campaign-Package]**).
 1. Führen Sie einen Dateiimport durch (**[!UICONTROL Tools > Erweitert > Package-Import... > Datei]**) und wählen Sie die Datei **datakitnms **`[Your language]`**packagemessageCenter.xml** aus.
-1. Behalten Sie im Bereich **[!UICONTROL XML-Inhalt der zu importierenden Daten]** nur die Versandvorlage bei, die dem hinzugefügten Kanal entspricht. Wenn Sie beispielsweise den **mobilen Kanal** gewählt haben, behalten Sie nur das Element **Entitäten** bei, das der Vorlage **[!UICONTROL Mobil-Transaktionsnachricht]** (smsTriggerMessage) entspricht. Wenn Sie den **Mobile App-Kanal** hinzugefügt haben, behalten Sie nur die **iOS-Transaktionsnachricht** (iosTriggerMessage) und die **Android-Transaktionsnachricht** (androidTriggerMessage) bei.
+1. Im **[!UICONTROL XML-Inhalt der zu importierenden Daten]**, behalten Sie nur die Versandvorlage bei, die dem hinzugefügten Kanal entspricht. Wenn Sie beispielsweise die Variable **Mobiler Kanal**, behalten Sie nur die **Entitäten** -Element, das dem **[!UICONTROL Mobile Transaktionsnachricht]** (smsTriggerMessage). Wenn Sie die **Mobile App Channel**, behalten Sie nur die **iOS-Transaktionsnachricht** (iosTriggerMessage) und der **Android-Transaktionsnachricht** (androidTriggerMessage).
 
    ![](assets/messagecenter_install_channel.png)
 
@@ -157,7 +157,7 @@ Beispiel der Verarbeitung eines diese Informationen enthaltenden Ereignisses:
          <urn:domEvent>
 
               <rtEvent wishedChannel="41" type="DELIVERY" registrationToken="2cefnefzef758398493srefzefkzq483974">
-                <mobileApp _operation=”none” uuid="com.adobe.NeoMiles"/>
+                <mobileApp _operation="none" uuid="com.adobe.NeoMiles"/>
                 <ctx>
                     <deliveryTime>1:30 PM</deliveryTime>
                     <url>http://www.adobe.com</url>
@@ -222,7 +222,7 @@ Konfigurieren Sie dann im **[!UICONTROL Explorer]** unter **[!UICONTROL Plattfor
    * **[!UICONTROL Server]**: Geben Sie die Kampagnenserver-URL der Ausführungsinstanz ein.
    * **[!UICONTROL Konto]**: Geben Sie das Konto ein, über das auf Ihre Ausführungsinstanz zugegriffen wird.
    * **[!UICONTROL Passwort]**: Geben Sie das Passwort für das Konto ein, über das auf Ihre Ausführungsinstanz zugegriffen wird.
-   * **[!UICONTROL Datenquelle]**: Geben Sie die Syntax **[!UICONTROL nms:extAccount:ID Ihres externen Datenbankkontos in die ausführende Instanz]** ein.
+   * **[!UICONTROL Datenquelle]** : Geben Sie die folgende Syntax ein **`nms:extAccount:ID`** Ihres externen Datenbankkontos in der Ausführungsinstanz.
 
 1. Erstellen Sie in der **Marketing-Instanz** das externe Konto **[!UICONTROL Ausführungsinstanz]** mit der folgenden Konfiguration, um den Datensynchronisations-Workflow zu erstellen:
 

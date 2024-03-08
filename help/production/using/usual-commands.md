@@ -9,10 +9,10 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 472ccc04-e68e-4ccb-90e9-7d626a4e794f
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
 workflow-type: tm+mt
-source-wordcount: '432'
-ht-degree: 13%
+source-wordcount: '421'
+ht-degree: 9%
 
 ---
 
@@ -130,7 +130,7 @@ Um Adobe Campaign neu zu starten, können Sie einen der folgenden Befehle verwen
 
      >[!NOTE]
      >
-     >Ab 20.1 wird empfohlen, stattdessen den folgenden Befehl zu verwenden (für Linux): **systemctl Beginn nlserver**
+     >Ab Version 20.1 wird empfohlen, stattdessen den folgenden Befehl zu verwenden (für Linux): **systemctl start nlserver**
 
    * Unter Windows: net start nlserver6
 
@@ -164,5 +164,5 @@ So ändern Sie die **intern** password: **nlserver config -internalpassword**
 >* Um die Liste der Parameter abzurufen, verwenden Sie die **-?** Parameter: **nlserver config -?**
 >* Bei einer Oracle-Datenbank darf das Konto nicht angegeben werden. Die Syntax lautet wie folgt:
 >
->  nlserver config -setdblogin:Oracle:test6@dbserver
+>  `nlserver config -setdblogin:Oracle:test6@dbserver`
 >

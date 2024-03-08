@@ -8,10 +8,10 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: fc0d3f16-5f62-473d-a1de-aab574eff734
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
 workflow-type: tm+mt
-source-wordcount: '328'
-ht-degree: 33%
+source-wordcount: '294'
+ht-degree: 34%
 
 ---
 
@@ -25,21 +25,21 @@ Nachfolgend finden Sie einige der wichtigsten Best Practices im Zusammenhang mit
 
 * Alte SSL-Version und -Ziffern deaktivieren:
 
-  **Auf Apache**, bearbeiten Sie /etc/apache2/mods-available/ssl.conf. Im Folgenden finden Sie ein Beispiel:
+  **Auf Apache**, bearbeiten Sie /etc/apache2/mods-available/ssl.conf. Hier ein Beispiel:
 
-   * SSLProtocol all -SSLv2 -SSLv3 -TLSv1
-   * SSLCipherSuite HIGH:MEDIUM:!aNULL:!MD5:!SSLv3:!SSLv2:!TLSv1
+   * `SSLProtocol all -SSLv2 -SSLv3 -TLSv1`
+   * `SSLCipherSuite HIGH:MEDIUM:!aNULL:!MD5:!SSLv3:!SSLv2:!TLSv1`
 
   **Bei IIS** (siehe [Dokumentation](https://support.microsoft.com/en-us/kb/245030)), führen Sie die folgende Konfiguration durch:
 
    * Fügen Sie einen Registrierungs-Unterschlüssel in HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL hinzu.
    * Damit das System die Protokolle verwenden kann, die nicht standardmäßig ausgehandelt werden (z. B. TLS 1.2), ändern Sie die DWORD-Wertdaten des Wertes DisabledByDefault in 0x0 in den folgenden Registrierungsschlüsseln unter **Protokolle** key:
 
-     SCHANNEL\Protocols\TLS 1.2\Client
+     SCHANNEL\Protokolle\TLS 1.2\Client
 
-     SCHANNEL\Protocols\TLS 1.2\Server
+     SCHANNEL\Protokolle\TLS 1.2\Server
 
-  **Deaktivieren Sie SSL x.0**
+  **SSL x.0 deaktivieren**
 
   SCHANNEL\Protocols\SSL 3.0\Client: DisabledByDefault: DWORD (32-Bit) Wert zu 1
 

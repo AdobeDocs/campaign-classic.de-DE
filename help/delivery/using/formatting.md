@@ -7,10 +7,10 @@ badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Email Design
 role: User, Developer, Data Engineer
 exl-id: d9688dc4-20c6-4a9a-990f-465f39b2faa2
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: ht
-source-wordcount: '1470'
-ht-degree: 100%
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
+workflow-type: tm+mt
+source-wordcount: '1465'
+ht-degree: 85%
 
 ---
 
@@ -158,7 +158,7 @@ Beispiele:
 
 ### Verwendung von JavaScript-Templates {#including-a-javascript-template}
 
-Sie haben die Möglichkeit, eine Bibliothek mit Funktionen oder Variablen anzulegen, um später erneut darauf zugreifen zu können. Importieren Sie hierfür das entsprechende JavaScript-Template unter Verwendung der Funktion **eval**. Auf diese Weise können Sie Kontexte mit zusätzlichen, in anderen JavaScript-Templates deklarierten Funktionen anreichern.
+Sie können eine Bibliothek mit Funktionen oder Variablen zur späteren Verwendung erstellen. Importieren Sie dazu die JavaScript-Vorlage mit dem **eval** -Funktion. Auf diese Weise können Sie Kontexte mit zusätzlichen Funktionen anreichern, die in anderen JavaScript-Templates deklariert sind.
 
 **Beispiel**: Import des Templates **common.js**.
 
@@ -375,9 +375,9 @@ Diese Umwandlung wird in einem Stylesheet genannten XML-Dokument beschrieben.
 
 ### Identifizierung von Stylesheets {#identifying-a-stylesheet}
 
-Ein Stylesheet wird wie Schemata oder Formulare über seinen Namen und Namespace identifiziert. Es wird jedoch empfohlen den Namen mit **.xsl** zu ergänzen.
+Ein Stylesheet wird wie Schemata und Formulare durch seinen Namen und Namespace identifiziert. Sie sollten jedoch die Variable **.xsl** Erweiterung auf den Namen des Stylesheets.
 
-Der Identifikationsschlüssel eines Stylesheets ist eine Zeichenkette, die den Namespace und den Namen enthält, getrennt durch das Zeichen &#39;:&#39; (z. B. **cus:Buch.xsl**).
+Der Identifikationsschlüssel eines Stylesheets ist eine Zeichenfolge, die den Namespace und den Namen enthält, getrennt durch das Zeichen &#39;:&#39; (z. B. **cus:Buch.xsl**).
 
 ### Struktur eines Stylesheets {#structure-of-a-stylesheet}
 
@@ -443,7 +443,7 @@ Die folgenden Anweisungen beschreiben die Stylesheet-Konfiguration zur Formatier
 </xsl:template>
 ```
 
-Standardmäßig sucht der XSLT-Prozessor die sich auf den Wurzel- oder Hauptknoten des XML-Quelldokuments beziehende **Vorlage**. Die Erstellung des Ausgabedokuments geschieht auf Basis dieser **Vorlage**.
+Standardmäßig sucht der XSLT-Prozessor den **template** , das für den Stamm- oder Hauptknoten des XML-Quelldokuments gilt. Die Erstellung des Ausgabedokuments beginnt mit diesem **template**.
 
 Im vorliegenden Beispiel wird ausgehend vom Schema &quot;cus:Buch&quot; eine HTML-Seite erzeugt, die den Titel und die Liste der Kapitel des Buches anzeigt.
 
@@ -479,7 +479,7 @@ Beispiele:
 
 ### Verwendung von Stylesheets {#including-stylesheets}
 
-Sie haben die Möglichkeit, eine Bibliothek mit Vorlagen oder Variablen anzulegen, die in mehreren Stylesheets verwendet werden. Die unten dargestellte **Vorlage** &quot;longMonth&quot; ist ein typisches Beispiel für die Auslagerung einer Vorlage in ein Stylesheet, welches seine spätere Wiederverwendung ermöglicht.
+Es ist möglich, eine Bibliothek mit Vorlagen oder Variablen zu erstellen, die für mehrere Stylesheets freigegeben werden. Der &quot;longMonth&quot; **template**, wie oben gezeigt, ist ein typisches Beispiel für den Vorteil, eine Vorlage remote in einem Stylesheet zu finden, sodass sie später wiederverwendet werden kann.
 
 Die Anweisung **`<xsl:include>`** verweist auf den Namen des in das Dokument einzufügenden Stylesheets.
 
@@ -565,13 +565,13 @@ Im Formular wird das Bildauswahlfeld mit folgender Syntax deklariert:
 
 ## Datumsangaben {#date-display}
 
-Im zugrunde liegenden XML-Quelldokument werden Datumsangaben im internen XML-Format gespeichert: **JJJJ/MM/TT HH:MM:SS** (z. B. 2018/10/01 12:23:30).
+Im XML-Eingabedokument werden die Daten im internen XML-Format gespeichert: **`YYYY/MM/DD HH:MM:SS`** (Beispiel `2018/10/01 12:23:30`).
 
 Adobe Campaign bietet Formatierungsfunktionen für Datumsangaben in JavaScript-Templates und XSL-Stylesheets, die im Folgenden erläutert werden:
 
 ### Formatierung von Datumsangaben in JavaScript {#javascript-date-formatting}
 
-Verwenden Sie die Funktion **formatDate**, um ein Datum im gewünschten Format anzuzeigen. Anzugeben sind der Inhalt des Datums und eine das Ausgabeformat bezeichnende Zeichenkette in folgender Syntax: **%4Y/%2M/%2D %2H%2N%2S**.
+Verwenden Sie die Funktion **formatDate**, um ein Datum im gewünschten Format anzuzeigen. Anzugeben sind der Inhalt des Datums und eine das Ausgabeformat bezeichnende Zeichenfolge in folgender Syntax: **%4Y/%2M/%2D %2H%2N%2S**.
 
 Beispiele:
 
@@ -602,7 +602,7 @@ Beispiele:
 
 ### Formatierung von Datumsangaben in XSL {#xsl-date-formatting}
 
-In XSLT gibt es keine Standardfunktion zur Verwaltung von Datumsangaben. Adobe Campaign stellt Ihnen daher die externe Funktion **date-format** zur Verfügung. Anzugeben sind der Inhalt des Datums und eine das Ausgabeformat bezeichnende Zeichenkette in folgender Syntax: **%4Y/%2M/%2D %2H%2N%2S**.
+In der XSLT-Syntax gibt es keine standardmäßige Datumsverwaltungsfunktion. Um ein Datum im gewünschten Format anzuzeigen, stellt Adobe Campaign die externe Funktion bereit **date-format**. Diese Funktion übernimmt als Eingabe den Inhalt des Datums und eine Zeichenfolge, die das Ausgabeformat mit der folgenden Syntax angibt: **%4Y/%2M/%2D %2H%2N%2S**
 
 Beispiele:
 

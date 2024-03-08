@@ -5,10 +5,10 @@ description: Daten zwischen Campaign und Ihrem CRM verwalten
 feature: Microsoft CRM Integration, Salesforce Integration
 badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 exl-id: 7f9eda15-76e8-40a1-8302-004cea085778
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
 workflow-type: tm+mt
-source-wordcount: '1634'
-ht-degree: 100%
+source-wordcount: '1627'
+ht-degree: 92%
 
 ---
 
@@ -52,7 +52,7 @@ Zum Import von CRM-Daten in Adobe Campaign ist ein Workflow nach folgendem Muste
 Gehen Sie zur Konfiguration der **[!UICONTROL CRM-Connector]**-Aktivität wie folgt vor:
 
 1. Wählen Sie den Vorgang vom Typ **[!UICONTROL Import aus CRM]**.
-1. Wählen Sie in der Dropdown-Liste des Felds **[!UICONTROL Remote-Objekt]** das vom Vorgang betroffene Objekt aus. Das Objekt entspricht einer der Tabellen, die bei der Connector-Konfiguration in Adobe Campaign erstellt wurden.
+1. Gehen Sie zur Dropdown-Liste **[!UICONTROL Remote-Objekt]** und wählen Sie das vom Prozess betroffene Objekt aus. Dieses Objekt entspricht einer der Tabellen, die während der Connector-Konfiguration in Adobe Campaign erstellt wurden.
 1. Geben Sie im Abschnitt **[!UICONTROL Remote-Felder]** die zu importierenden Felder an.
 
    Um ein Feld hinzuzufügen, klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]** in der Symbolleiste und anschließend auf **[!UICONTROL Ausdruck bearbeiten]**.
@@ -67,7 +67,7 @@ Gehen Sie zur Konfiguration der **[!UICONTROL CRM-Connector]**-Aktivität wie fo
    >
    >Außerdem ist das Datum der letzten CRM-seitigen Änderung erforderlich, um einen inkrementellen Datenimport zu ermöglichen.
 
-1. Je nach Bedarf können die zu importierenden Daten gefiltert werden. Klicken Sie hierzu auf den Link **[!UICONTROL Filter bearbeiten...]**.
+1. Sie können die zu importierenden Daten auch nach Bedarf filtern. Klicken Sie dazu auf den Link **[!UICONTROL Filter bearbeiten...]**.
 
    Im folgenden Beispiel importiert Adobe Campaign nur Kontakte, die nach dem 1. November 2012 aktiv waren.
 
@@ -93,7 +93,7 @@ Das Datum der letzten Synchronisation wird in einer im Konfigurationsfenster ang
 >
 >Dieser Hinweis gilt nur für die allgemeine **[!UICONTROL CRM-Connector]**-Aktivität. Für andere CRM-Aktivitäten läuft der Prozess automatisch ab.
 >
->Diese Option muss manuell unter **[!UICONTROL Administration]** > **[!UICONTROL Plattform]** > **[!UICONTROL Optionen]** erstellt und ausgefüllt werden. Es muss sich um eine Textoption handeln, deren Wert dem folgenden Format entspricht: **jjjj/MM/tt hh:mm:ss**.
+>Diese Option muss manuell unter **[!UICONTROL Administration]** > **[!UICONTROL Plattform]** > **[!UICONTROL Optionen]** erstellt und ausgefüllt werden. Es muss sich um eine Textoption handeln, deren Wert dem folgenden Format entspricht: **`yyyy/MM/dd hh:mm:ss`**.
 > 
 >Diese Option muss bei jedem weiteren Import manuell aktualisiert werden.
 
@@ -112,7 +112,7 @@ Die Aktivierung der Option **[!UICONTROL Automatischer Index]** erzeugt drei Var
 
   >[!NOTE]
   >
-  >Das Datum wird im Format **jjjj/MM/tt hh:mm:ss** ausgedrückt.
+  >Diese Daten werden im folgenden Format angezeigt: **`yyyy/MM/dd hh:mm:ss`**.
 
 ### Daten filtern {#filtering-data}
 
@@ -128,7 +128,7 @@ Um eine effiziente Funktionsweise mit den diversen CRM-Systemen sicherzustellen,
 So wären z. B. folgende Filterbedingungen im Rahmen eines CRM-Imports UNGÜLTIG, da der ODER-Operator auf demselben Niveau wie die UND-Operatoren verwendet wird:
 
 * Der ODER-Operator befindet sich auf dem gleichen Niveau wie die UND-Operatoren.
-* Die Vergleiche beziehen sich auf Zeichenketten.
+* Die Vergleiche beziehen sich auf Zeichenfolgen.
 
 ![](assets/crm_import_wrong_filter.png)
 
@@ -163,7 +163,7 @@ Zum Export von Daten in ein CRM-System ist ein Workflow nach folgendem Muster zu
 Gehen Sie bei der Konfiguration der **[!UICONTROL CRM-Connector]**-Aktivität wie folgt vor:
 
 1. Wählen Sie den Vorgang vom Typ **[!UICONTROL Export in das CRM]**.
-1. Wählen Sie in der Dropdown-Liste des Felds **[!UICONTROL Remote-Objekt]** das vom Vorgang betroffene Objekt aus. Das Objekt entspricht einer der Tabellen, die bei der Connector-Konfiguration in Adobe Campaign erstellt wurden.
+1. Gehen Sie zur Dropdown-Liste **[!UICONTROL Remote-Objekt]** und wählen Sie das vom Prozess betroffene Objekt aus. Dieses Objekt entspricht einer der Tabellen, die während der Connector-Konfiguration in Adobe Campaign erstellt wurden.
 
    >[!IMPORTANT]
    >
@@ -209,7 +209,7 @@ Darüber hinaus sind folgende Konvertierungen möglich:
 
 ### Fehlerverarbeitung {#error-processing}
 
-Im Rahmen eines Imports oder Exports ist es möglich, einen spezifischen Umgang mit Fehlern und Zurückweisungen zu definieren. Wählen Sie diesbezüglich im Tab **[!UICONTROL Verhalten]** die Optionen **[!UICONTROL Zurückweisungen in einer Datei speichern]** und **[!UICONTROL Fehler verarbeiten]** aus.
+Im Rahmen von Datenimporten oder -exporten können Sie einen spezifischen Prozess auf Fehler und Zurückweisungen anwenden. Wählen Sie dazu die **[!UICONTROL Zurückweisungen von Prozessen]** und **[!UICONTROL Fehler verarbeiten]** Optionen in **[!UICONTROL Verhalten]** Registerkarte.
 
 ![](assets/crm_export_options.png)
 
@@ -236,7 +236,7 @@ Für eine umfassende Datensynchronisation besteht die Möglichkeit, CRM-seitig g
 Gehen Sie hierzu wie folgt vor:
 
 1. Wählen Sie den Vorgang vom Typ **[!UICONTROL Import der im CRM gelöschten Objekte]** aus.
-1. Wählen Sie in der Dropdown-Liste des Felds **[!UICONTROL Remote-Objekt]** das vom Vorgang betroffene Objekt aus. Das Objekt entspricht einer der Tabellen, die bei der Connector-Konfiguration in Adobe Campaign erstellt wurden.
+1. Gehen Sie zur Dropdown-Liste **[!UICONTROL Remote-Objekt]** und wählen Sie das vom Prozess betroffene Objekt aus. Dieses Objekt entspricht einer der Tabellen, die während der Connector-Konfiguration in Adobe Campaign erstellt wurden.
 1. Bestimmen Sie durch Eingabe von **[!UICONTROL Startdatum]** und **[!UICONTROL Enddatum]** den Zeitraum, für den gelöschte Objekte importiert werden sollen. Der Zeitraum versteht sich einschließlich Start- und Enddatum.
 
    ![](assets/crm_import_deleted_obj.png)
@@ -251,7 +251,7 @@ Zur Löschung von Objekten im CRM ist die Angabe der Primärschlüssel der zu l�
 
 ![](assets/crm_delete_in_crm.png)
 
-Im Tab **[!UICONTROL Verhalten]** kann die Zurückweisungsverarbeitung aktiviert werden. Dies erzeugt eine weitere ausgehende Transition aus der **[!UICONTROL CRM-Connector]**-Aktivität. Konsultieren Sie diesbezüglich die [Fehlerverarbeitung](#error-processing).
+Die **[!UICONTROL Verhalten]** -Tab ermöglicht die Aktivierung der Zurückweisungsverarbeitung. Diese Option erzeugt eine zweite ausgehende Transition für die **[!UICONTROL CRM-Connector]** -Aktivität. Konsultieren Sie diesbezüglich die [Fehlerverarbeitung](#error-processing).
 
 >[!NOTE]
 >

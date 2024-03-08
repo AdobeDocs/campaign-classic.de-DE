@@ -7,10 +7,10 @@ badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Monitoring, Deliverability
 role: User
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
-workflow-type: ht
-source-wordcount: '3112'
-ht-degree: 100%
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
+workflow-type: tm+mt
+source-wordcount: '3093'
+ht-degree: 88%
 
 ---
 
@@ -74,7 +74,7 @@ Folgende Informationen stehen für jede Adresse zur Verfügung:
 >
 >Ende 1. Jahr: (1 &#42; 0,33) / (1 + 0,5) = 22 %.
 >
->Ende 2. Jahr: ((1,22 &#42; 0,33) + 0,33) / (1,5 + 0,75) = 32,5 %.
+Ende 2. Jahr: ((1,22 &#42; 0,33) + 0,33) / (1,5 + 0,75) = 32,5 %.
 
 ### Identifizieren von in Quarantäne befindlichen Adressen in Versandberichten {#identifying-quarantined-addresses-in-delivery-reports}
 
@@ -92,7 +92,7 @@ Diese Informationen stehen für alle Sendungen der Plattform (**[!UICONTROL Star
 
 ### Identifizieren von für einen Empfänger in Quarantäne befindlichen Adressen {#identifying-quarantined-addresses-for-a-recipient}
 
-Sie können für jeden Empfänger den Status seiner E-Mail-Adresse prüfen. Klicken Sie hierfür im Empfängerprofil auf die Registerkarte **[!UICONTROL Sendungen]**. Für jeden an den Empfänger gerichteten Versand wird angezeigt, ob er fehlgeschlagen ist, die Adresse während der Analyse unter Quarantäne gestellt wurde usw. Für jeden Ordner besteht außerdem die Möglichkeit, nur die Empfänger anzuzeigen, deren Adresse in Quarantäne ist, indem Sie den Anwendungsfilter **[!UICONTROL E-Mail-Adresse in Quarantäne]** nutzen.
+Sie können den Status der E-Mail-Adresse jedes Empfängers nachschlagen. Wählen Sie dazu das Empfängerprofil aus und klicken Sie auf die Registerkarte **[!UICONTROL Sendungen]**. Bei allen Sendungen an diesen Empfänger können Sie feststellen, ob die Adresse fehlgeschlagen ist, während der Analyse unter Quarantäne gestellt wurde usw. Für jeden Ordner können Sie nur die Empfänger anzeigen, deren E-Mail-Adresse in Quarantäne ist. Verwenden Sie dazu die **[!UICONTROL E-Mail-Adresse in Quarantäne]** Anwendungsfilter.
 
 ![](assets/tech_quarant_recipients_filter.png)
 
@@ -109,7 +109,7 @@ Wenn ein Benutzer eine E-Mail als Spam kennzeichnet ([Feedback Loop](https://exp
 
 >[!NOTE]
 >
->Bei der Quarantänefunktion in Adobe Campaign wird die Groß-/Kleinschreibung beachtet. Achten Sie darauf, E-Mail-Adressen in Kleinbuchstaben zu importieren, damit sie später nicht erneut verwendet werden.
+Bei der Quarantänefunktion in Adobe Campaign wird die Groß-/Kleinschreibung beachtet. Achten Sie darauf, E-Mail-Adressen in Kleinbuchstaben zu importieren, damit sie später nicht erneut verwendet werden.
 
 Bei Adressen in Quarantäne (siehe [Identifizieren von für die gesamte Plattform in Quarantäne befindlichen Adressen](#identifying-quarantined-addresses-for-the-entire-platform)) zeigt das Feld **[!UICONTROL Fehlerursache]** an, wodurch die Quarantäne ausgelöst wurde.
 
@@ -145,7 +145,7 @@ Ihr Status ändert sich dann in **[!UICONTROL Gültig]**.
 
 >[!IMPORTANT]
 >
->Empfängerinnen und Empfänger mit einer Adresse im Status **[!UICONTROL Quarantäne]** oder **[!UICONTROL Auf Blockierungsliste]** werden niemals entfernt, auch wenn sie eine E-Mail erhalten.
+Empfängerinnen und Empfänger mit einer Adresse im Status **[!UICONTROL Quarantäne]** oder **[!UICONTROL Auf Blockierungsliste]** werden niemals entfernt, auch wenn sie eine E-Mail erhalten.
 
 ### Manuelle Aktualisierungen {#unquarantine-manual}
 
@@ -165,8 +165,8 @@ Nachfolgend befinden sich die empfohlenen Richtlinien für diese Abfrage:
 
    * **Fehlertext (Quarantänetext)** enthält „Momen_Code10_InvalidRecipient“
    * **E-Mail-Domain (@domain)** gleich domain1.com ODER **E-Mail-Domain (@domain)** gleich domain2.com ODER **E-Mail-Domain (@domain)** gleich domain3.com
-   * **Aktualisierungsstatus (@lastModified)** am oder nach MM/TT/JJJJ HH:MM:SS AM
-   * **Aktualisierungsstatus (@lastModified)** am oder vor MM/TT/JJJJ HH:MM:SS PM
+   * **Status aktualisieren (@lastModified)** auf oder nach `MM/DD/YYYY HH:MM:SS AM`
+   * **Status aktualisieren (@lastModified)** auf oder vor `MM/DD/YYYY HH:MM:SS PM`
 
 * Für Campaign Classic v7-Umgebungen mit SMTP-Bounce-Antwortinformationen im Feld **[!UICONTROL Fehlertext]** der Quarantäneliste:
 
@@ -174,8 +174,8 @@ Nachfolgend befinden sich die empfohlenen Richtlinien für diese Abfrage:
 
   wobei „support.ISP.com“ zum Beispiel: „support.apple.com“ oder „support.google.com“ sein kann
 
-   * **Aktualisierungsstatus (@lastModified)** am oder nach MM/TT/JJJJ HH:MM:SS AM
-   * **Aktualisierungsstatus (@lastModified)** am oder vor MM/TT/JJJJ HH:MM:SS PM
+   * **Status aktualisieren (@lastModified)** auf oder nach `MM/DD/YYYY HH:MM:SS AM`
+   * **Status aktualisieren (@lastModified)** auf oder vor  `MM/DD/YYYY HH:MM:SS PM`
 
 Sobald Sie die Liste der betroffenen Empfängerinnen und Empfänger haben, fügen Sie die Aktivität **[!UICONTROL Daten aktualisieren]** hinzu, um den Status der E-Mail-Adressen auf **[!UICONTROL Gültig]** zu setzen, damit sie durch den Workflow **[!UICONTROL Datenbankbereinigung]** aus der Quarantäneliste entfernt werden. Sie können sie auch einfach aus der Quarantänetabelle löschen.
 
@@ -242,7 +242,7 @@ Wenn der APNS für eine Nachricht den Status &quot;abgemeldet&quot; zurückgibt,
    <td> Nein<br /> </td> 
   </tr> 
   <tr> 
-   <td> Problem mit Zertifikat (Passwort, Beschädigung etc.) und Fehler bei Testverbindung mit APNS<br /> </td> 
+   <td> Problem mit Zertifikat (Passwort, Beschädigung usw.) und Problem bei Testverbindung mit APNs<br /> </td> 
    <td> Fehlgeschlagen<br /> </td> 
    <td> Verschiedene Fehlernachrichten je nach Fehler<br /> </td> 
    <td> Soft<br /> </td> 
@@ -286,19 +286,19 @@ Für jede Benachrichtigung erhält Adobe Campaign die synchronen Fehler direkt v
 * Gerätequote überschritten: kein Neuversuch, Softbounce, Grund für Fehler ist **[!UICONTROL Abgelehnt]**.
 * Ungültiger oder abgemeldeter Token, unerwarteter Fehler, Problem mit Absenderkonto: kein Neuversuch, Hardbounce, Grund für Fehler ist **[!UICONTROL Abgelehnt]**.
 
-Der **[!UICONTROL mobileAppOptOutMgt]**-Workflow wird alle sechs Stunden zur Aktualisierung der **AppSubscriptionRcp**-Tabelle durchgeführt. Für jeden abgemeldeten oder nicht mehr gültigen Token wird das Feld **Deaktiviert** auf **Wahr** gesetzt und das mit dem Gerät verknüpfte Abonnement wird automatisch von künftigen Sendungen ausgeschlossen.
+Die **[!UICONTROL mobileAppOptOutMgt]** Der Workflow wird alle 6 Stunden ausgeführt, um die **AppSubscriptionRcp** Tabelle. Für die Token, die als nicht registriert oder nicht mehr gültig erklärt wurden, wird das Feld **Behinderte** auf **True** und das mit diesem Geräte-Token verknüpfte Abonnement automatisch aus künftigen Sendungen ausgeschlossen wird.
 
 Während der Versandanalyse werden alle Geräte, die von der Zielgruppe ausgeschlossen werden, automatisch zur Tabelle **excludeLogAppSubRcp** hinzugefügt.
 
 >[!NOTE]
 >
->Im Folgenden finden Sie die unterschiedlichen Fehlertypen für den Baidu-Connector:
+Im Folgenden finden Sie die unterschiedlichen Fehlertypen für den Baidu-Connector:
 >
->* Verbindungsproblem zu Beginn des Versands: Fehlertyp **[!UICONTROL Undefiniert]**, Grund **[!UICONTROL Unerreichbar]**, Neuversuch wird unternommen.
->* Verbindung während des Versands unterbrochen: Softbounce, Grund für den Fehler **[!UICONTROL Abgelehnt]**, Neuversuch wird unternommen.
->* Während des Versands von Baidu synchroner Fehler zurückgegeben: Hardbounce, Grund für den Fehler **[!UICONTROL Abgelehnt]**, es wird kein Neuversuch unternommen.
+* Verbindungsproblem zu Beginn des Versands: Fehlertyp **[!UICONTROL Undefiniert]**, Grund **[!UICONTROL Unerreichbar]**, Neuversuch wird unternommen.
+* Verbindung während des Versands unterbrochen: Softbounce, Grund für den Fehler **[!UICONTROL Abgelehnt]**, Neuversuch wird unternommen.
+* Während des Versands von Baidu synchroner Fehler zurückgegeben: Hardbounce, Grund für den Fehler **[!UICONTROL Abgelehnt]**, es wird kein Neuversuch unternommen.
 >
->Adobe Campaign kontaktiert den Baidu-Server alle zehn Minuten, um den Status der versendeten Nachrichten abzurufen, und aktualisiert die Versandlogs. Wenn eine Nachricht als gesendet gemeldet wird, ändert sich der Status der Nachricht in den Versandlogs in **[!UICONTROL Erhalten]**. Wenn Baidu einen Fehler meldet, wird der Status auf **[!UICONTROL Fehlgeschlagen]** gesetzt.
+Adobe Campaign kontaktiert den Baidu-Server alle zehn Minuten, um den Status der gesendeten Nachricht abzurufen, und aktualisiert die Broadlogs. Wenn eine Nachricht als gesendet deklariert wird, wird der Status der Nachricht in den Broadlogs auf **[!UICONTROL Erhalten]**. Wenn Baidu einen Fehler meldet, wird der Status auf **[!UICONTROL Fehlgeschlagen]**.
 
 **Für Android V2**
 
@@ -517,7 +517,7 @@ Der Quarantänemechanismus für SMS-Nachrichten ist global gesehen mit dem allge
 
 >[!NOTE]
 >
->Die Tabelle **[!UICONTROL Versandlogqualifizierung]** gilt nicht für den Connector **Erweitertes allgemeines SMPP**.
+Die Tabelle **[!UICONTROL Versandlogqualifizierung]** gilt nicht für den Connector **Erweitertes allgemeines SMPP**.
 
 <table> 
  <tbody> 
@@ -568,17 +568,17 @@ Der Quarantänemechanismus für SMS-Nachrichten ist global gesehen mit dem allge
 
 **Für den Connector für erweitertes allgemeines SMPP**
 
-Bei der Verwendung des SMPP-Protokolls zum Versand von SMS-Nachrichten werden Fehler anders gehandhabt. Weiterführende Informationen zum Connector für erweitertes allgemeines SMPP finden Sie auf [dieser Seite](sms-set-up.md#creating-an-smpp-external-account).
+Bei Verwendung des SMPP-Protokolls zum Senden von SMS-Nachrichten wird die Fehlerverwaltung anders gehandhabt. Weitere Informationen zum Connector &quot;Erweitertes allgemeines SMPP&quot;finden Sie unter [diese Seite](sms-set-up.md#creating-an-smpp-external-account).
 
-Der SMPP-Connector ruft zum Filtern des Inhalts mithilfe regulärer Ausdrücke (regexes) Daten von der zurückgegebenen Empfangsbestätigung ab. Diese Daten werden dann mit den Informationen in der Tabelle **[!UICONTROL Versandlogqualifizierung]** abgeglichen. Der Zugriff darauf erfolgt über das Menü **[!UICONTROL Administration]** > **[!UICONTROL Kampagnenverwaltung]** > **[!UICONTROL Unzustellbarkeitsverwaltung]**.
+Der SMPP-Connector ruft Daten aus der zurückgegebenen SR-Meldung (Status Report) mithilfe regulärer Ausdrücke (Regexes) ab, um den Inhalt zu filtern. Diese Daten werden dann mit den Informationen im **[!UICONTROL Versandlogqualifizierung]** -Tabelle (verfügbar über **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Verwaltung von Fehlern]** Menü).
 
 Bevor ein neuer Fehlertyp qualifiziert wird, wird der Fehlergrund immer standardmäßig auf **Abgelehnt** gesetzt.
 
 >[!NOTE]
 >
->Die Typen und Ursachen für Fehlschläge sind dieselben wie für E-Mails. Siehe [Typen und Ursachen für fehlgeschlagene Sendungen](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+Die Typen und Ursachen für Fehlschläge sind dieselben wie für E-Mails. Siehe [Typen und Ursachen für fehlgeschlagene Sendungen](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
 >
->Erkundigen Sie sich bei Ihrem Provider nach einer Liste mit Status- und Fehlercodes, um in der Versandlogqualifizierungs-Tabelle die korrekten Fehlertypen und -ursachen anzugeben.
+Erkundigen Sie sich bei Ihrem Provider nach einer Liste mit Status- und Fehlercodes, um in der Versandlogqualifizierungs-Tabelle die korrekten Fehlertypen und -ursachen anzugeben.
 
 Beispiel einer generierten Nachricht:
 
@@ -587,13 +587,13 @@ SR Generic DELIVRD 000|#MESSAGE#
 ```
 
 * Alle Fehlernachrichten beginnen mit **SR**, sodass SMS-Fehlercodes von E-Mail-Fehlercodes unterschieden werden können.
-* Der zweite Teil der Fehlernachricht (in diesem Beispiel **Generic**) bezieht sich auf den Namen der SMSC-Implementierung entsprechend der Definition im Feld **[!UICONTROL Name der SMSC-Implementierung]** des externen SMS-Kontos. Siehe [diese Seite](sms-set-up.md#creating-an-smpp-external-account).
+* Der zweite Teil (**Generisch** in diesem Beispiel) bezieht sich die Fehlermeldung auf den Namen der SMSC-Implementierung, wie in der **[!UICONTROL Name der SMSC-Implementierung]** Feld des externen SMS-Kontos. Weitere Informationen finden Sie auf [dieser Seite](sms-set-up.md#creating-an-smpp-external-account).
 
   Da derselbe Fehlercode bei jedem Provider eine andere Bedeutung haben kann, sehen Sie in diesem Feld, welcher Provider den Fehlercode erstellt hat. Den Fehler können Sie dann in der entsprechenden Dokumentation des Providers einsehen.
 
 * Der dritte Teil der Fehlernachricht (in diesem Beispiel **DELIVRD**) entspricht dem Statuscode, der von der Empfangsbestätigung unter Verwendung des – im externen SMS-Konto definierten – regulären Ausdruck zur Statusextraktion abgerufen wurde.
 
-  Dieser reguläre Ausdruck ist im Tab **[!UICONTROL SMSC-Besonderheiten]** des externen Kontos spezifiziert. Siehe auch [diese Seite](sms-set-up.md#creating-an-smpp-external-account).
+  Dieser Regex wird im **[!UICONTROL SMSC-Besonderheiten]** des externen Kontos. Weitere Informationen finden Sie auf [dieser Seite](sms-set-up.md#creating-an-smpp-external-account).
 
   ![](assets/tech_quarant_error_regex.png)
 
@@ -601,10 +601,10 @@ SR Generic DELIVRD 000|#MESSAGE#
 
 * Der vierte Teil der Fehlernachricht (in diesem Beispiel **000**) entspricht dem Fehlercode, der von der Empfangsbestätigung unter Verwendung des im externen SMS-Konto definierten regulären Ausdrucks zur Fehlercode-Extraktion extrahiert wurde.
 
-  Dieser reguläre Ausdruck ist im Tab **[!UICONTROL SMSC-Besonderheiten]** des externen Kontos spezifiziert. Siehe auch [diese Seite](sms-set-up.md#creating-an-smpp-external-account).
+  Dieser Regex wird im **[!UICONTROL SMSC-Besonderheiten]** des externen Kontos. Weitere Informationen finden Sie auf [dieser Seite](sms-set-up.md#creating-an-smpp-external-account).
 
-  Standardmäßig erfolgt die Regex-Extraktion des **err:**-Felds entsprechend der Definition im Bereich **Appendix B** der **SMPP 3.4-Spezifikation**.
+  Standardmäßig erfolgt die Regex-Extraktion des **err:**-Felds entsprechend der Definition im Bereich **Anhang B** der **SMPP 3.4-Spezifikation**.
 
-* Alles, was hinter dem senkrechten Strich (|) steht, wird nur in der Spalte **[!UICONTROL Erster Text]** der Tabelle **[!UICONTROL Versandlogqualifizierung]** dargestellt. Nach der Bereinigung der Nachricht wird dieser Inhalt durch **#MESSAGE#** ersetzt. Dadurch wird vermieden, dass für ähnliche Fehler mehrere Einträge vorgenommen werden. Das Verfahren ist dasselbe wie für E-Mails. Weitere Informationen hierzu finden Sie unter [Bounce-Message-Qualifizierung](understanding-delivery-failures.md#bounce-mail-qualification).
+* Alles, was hinter dem senkrechten Strich (|) steht, wird nur im **[!UICONTROL Erster Text]** Spalte **[!UICONTROL Versandlogqualifizierung]** Tabelle. Dieser Inhalt wird immer durch **#MESSAGE#** nachdem die Nachricht normalisiert wurde. Dadurch wird verhindert, dass mehrere Einträge für ähnliche Fehler vorliegen, und der Prozess ist mit dem für E-Mails identisch. Weitere Informationen hierzu finden Sie unter [Bounce-Message-Qualifizierung](understanding-delivery-failures.md#bounce-mail-qualification).
 
 Der Connector für erweitertes allgemeines SMPP wendet eine Heuristik an, um sinnvolle Standardwerte zu finden: Ein mit **DELIV** beginnender Status wird als erfolgreich bewertet, da dies den üblicherweise von Providern verwendeten Statuswerten **DELIVRD** oder **DELIVERED** entspricht. Alle anderen Statuswerte verursachen einen Hardbounce.

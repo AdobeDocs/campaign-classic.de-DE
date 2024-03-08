@@ -8,10 +8,10 @@ feature: Deliverability
 hide: true
 hidefromtoc: true
 exl-id: 7a9afe0a-0219-40f1-9fe2-6374db8d555c
-source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
 workflow-type: tm+mt
-source-wordcount: '536'
-ht-degree: 100%
+source-wordcount: '506'
+ht-degree: 88%
 
 ---
 
@@ -27,9 +27,9 @@ Globale Probleme bei Apple oder Gmail können beispielsweise dazu führen, dass 
 
 * „550 5.1.1 &#39;E-Mail-Adresse&#39;: Benutzer oder Benutzerin erfolgreich gefunden, aber kein Benutzerdatensatz gefunden.“
 
-* „550 &#39;E-Mail-Adresse&#39; Empfänger oder Empfängerin abgelehnt“
+* Empfänger &quot;550 &#39;email address&#39; abgelehnt
 
-Bitte beachten: Wenn Abweisungs-Bounces mit der Nachricht „452 angeforderte Aktion abgebrochen: Versuchen Sie es später erneut“ auftreten, werden diese automatisch wiederholt und es sind keine Aktionen erforderlich. Die Situation sollte sich verbessern, sobald der ISP seine volle Kapazität wieder erreicht.
+Beachten Sie, dass bei verzögerten Bounces mit der Meldung &quot;452 angeforderte Aktion abgebrochen: später erneut versuchen&quot;beobachtet wird. Diese werden automatisch wiederholt und es sind keine Aktionen erforderlich. Die Situation sollte sich verbessern, sobald der ISP seine volle Kapazität wieder erreicht.
 
 >[!NOTE]
 >
@@ -56,17 +56,17 @@ Auf der Grundlage des Zeitrahmens des Vorfalls und des ISP befinden sich unten d
 
    * **Fehlertext (Quarantänetext)** enthält „Momen_Code10_InvalidRecipient“
    * **E-Mail-Domain (@domain)** gleich domain1.com ODER **E-Mail-Domain (@domain)** gleich domain2.com ODER **E-Mail-Domain (@domain)** gleich domain3.com
-   * **Aktualisierungsstatus (@lastModified)** am oder nach MM/TT/JJJJ HH:MM:SS AM
-   * **Aktualisierungsstatus (@lastModified)** am oder vor MM/TT/JJJJ HH:MM:SS PM
+   * **Status aktualisieren (@lastModified)** auf oder nach `MM/DD/YYYY HH:MM:SS AM`
+   * **Status aktualisieren (@lastModified)** auf oder vor `MM/DD/YYYY HH:MM:SS PM`
 
 * Für Campaign-Umgebungen mit SMTP-Bounce-Antwortinformationen im Feld **[!UICONTROL Fehlertext]** der Quarantäneliste:
 
    * **Fehlertext (Quarantänetext)** enthält „550-5.1.1“ UND **Fehlertext (Quarantänetext)** enthält „support.ISP.com“,
 
-     wobei „support.ISP.com“ Folgendes sein kann: „support.apple.com“ oder „support.google.com“ zum Beispiel
+     wobei „support.ISP.com“ zum Beispiel: „support.apple.com“ oder „support.google.com“ sein kann
 
-   * **Aktualisierungsstatus (@lastModified)** am oder nach MM/TT/JJJJ HH:MM:SS AM
-   * **Aktualisierungsstatus (@lastModified)** am oder vor MM/TT/JJJJ HH:MM:SS PM
+   * **Status aktualisieren (@lastModified)** auf oder nach `MM/DD/YYYY HH:MM:SS AM`
+   * **Status aktualisieren (@lastModified)** auf oder vor  `MM/DD/YYYY HH:MM:SS PM`
 
 
 Sobald Sie die Liste der betroffenen Empfänger haben, können Sie diese entweder auf den Status **[!UICONTROL Gültig]** setzen, damit sie vom Workflow **[!UICONTROL Datenbankbereinigung]** aus der Quarantäneliste entfernt werden, oder sie einfach aus der Tabelle löschen.

@@ -7,10 +7,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Cla
 role: User
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
-source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
-workflow-type: ht
-source-wordcount: '1791'
-ht-degree: 100%
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
+workflow-type: tm+mt
+source-wordcount: '1781'
+ht-degree: 98%
 
 ---
 
@@ -178,7 +178,7 @@ _Mittwoch, 11. Dezember 2019_
 
 Build 9032@bc4a935 umfasst die folgende Fehlerkorrektur:
 
-* Fehlerkorrektur – Keine Leistungsprobleme mehr beim Senden von Nachrichten mit einer MSSQL-Datenbank. (NEO-17558)
+* Fehlerkorrektur – Keine Performance-Probleme mehr beim Senden von Nachrichten mit einer MSSQL-Datenbank. (NEO-17558)
 
 ### Version [!DNL Gold Standard] 3{#gs-3}
 
@@ -201,7 +201,7 @@ _Donnerstag, 19. September 2019_
 Build 9032@cee805c umfasst die folgenden Fehlerkorrekturen:
 
 * Fehlerkorrektur – Die Verwendung von CRM-Connector für Salesforce funktioniert nun problemlos. (NEO-17712)
-* Fehlerkorrektur – Ein Indexfehler verursacht beim Senden von Transaktionsnachrichten keine Leistungsprobleme mehr.
+* Fehlerkorrektur – Ein Indexfehler verursacht beim Senden von Transaktionsnachrichten keine Performance-Probleme mehr.
 
 ### Version 19.1.4 – Build 9032{#release-19-1-4-build-9032}
 
@@ -215,7 +215,7 @@ Der erste Build 19.1.4 enthält die folgenden Fehlerkorrekturen:
 * Regressionskorrektur – Jetzt tritt kein durch NEO-12727 verursachter Fehler mehr auf, bei dem Workflows angehalten wurden, wenn eine Testaktivität zweimal ausgeführt wird. (NEO-16835)
 * Fehlerkorrektur – Jetzt wird kein fehlerhafter HTTP-Code mehr zurückgegeben (HTTP 200 OK statt HTTP 403 Forbidden), wenn ein ungültiges oder abgelaufenes Sitzungstoken in API-Aufrufen verwendet wird. (NEO-16826)
 * Fehlerkorrektur – Der DKIM-Schlüssel wird jetzt in E-Mails eingebettet, sodass der Versand fehlerfrei funktioniert. (NEO-16804)
-* Fehlerkorrektur – Die Workflow-Planung funktioniert jetzt wieder einwandfrei, sodass Workflows entsprechend ihrer Konfiguration ausgeführt werden. (NEO-16619, NEO-16426)
+* Verschiedene Probleme mit der Workflow-Planung wurden behoben. Workflows sollten einmal täglich ausgeführt werden, ohne die Planungskonfiguration zu berücksichtigen. (NEO-16619, NEO-16426)
 
 
 ## [!DNL Gold Standard] – Kompatibilitätsmatrix{#compatibility-matrix-gs}
@@ -470,7 +470,7 @@ In diesem Abschnitt sind alle Systeme und Komponenten aufgeführt, die für Buil
 
 ### Client-Konsole {#ClientConsoleoperatingsystems}
 
-:warning: Für die Verwendung der Campaign-Client-Konsole sind die folgenden Betriebssysteme und Browser erforderlich.
+`:warning:` Für die Verwendung der Campaign-Client-Konsole sind die folgenden Betriebssysteme und Browser erforderlich.
 
 #### Betriebssysteme
 

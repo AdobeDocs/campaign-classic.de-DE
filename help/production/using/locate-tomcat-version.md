@@ -9,10 +9,10 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 76411b29-d300-4aaa-8d3b-d8ff74c3ce93
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 4%
+source-wordcount: '503'
+ht-degree: 3%
 
 ---
 
@@ -52,11 +52,11 @@ Gehen Sie wie folgt vor, um die Version des eingebetteten Tomcat in einer Instan
 
 Beispiel: *ServerInfo.properties* -Datei für Adobe Campaign enthält die folgenden Informationen, die Tomcat v8.5.X angeben:
 
-*server.info=Apache Tomcat/8.5.X*
+*`server.info=Apache Tomcat/8.5.X`*
 
-*server.number=8.5.X.Y*
+*`server.number=8.5.X.Y`*
 
-*server.built=MM DD YYY HH:MM:SS*
+*`server.built=MM DD YYY HH:MM:SS`*
 
 Sobald Sie die exakte Version von Tomcat ermitteln können, die in einer bestimmten Instanz verwendet wird, kann es Ihnen bei der Fehlerbehebung von Tomcat-bezogenen Problemen helfen.
 

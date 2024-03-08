@@ -10,10 +10,10 @@ topic-tags: configuration
 hide: true
 hidefromtoc: true
 exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
 workflow-type: tm+mt
-source-wordcount: '2687'
-ht-degree: 4%
+source-wordcount: '2662'
+ht-degree: 3%
 
 ---
 
@@ -118,7 +118,7 @@ nlserver config -internalpassword
 
 * Das Tracking funktioniert nicht mehr, wenn das Kennwort leer ist. Sollte dies der Fall sein, wird eine Fehlermeldung angezeigt, die Sie darüber informiert und auffordert, sie neu zu konfigurieren.
 * Benutzerkennwörter werden nicht mehr im **xtk:sessionInfo** Schema.
-* Administratorberechtigungen sind jetzt erforderlich, um die **xtk:builder:EvaluateJavaScript** und **xtk:builder:EvaluateJavaScriptTemplate** Funktionen.
+* Administratorberechtigungen sind jetzt erforderlich, um die **`xtk:builder:EvaluateJavaScript`** und **`xtk:builder:EvaluateJavaScriptTemplate`** Funktionen.
 
 Bestimmte vordefinierte Schemata wurden geändert und sind jetzt standardmäßig nur noch mit Schreibzugriff für Benutzer mit der **admin** Berechtigung:
 
@@ -461,7 +461,7 @@ Es gibt drei Möglichkeiten, einen Konflikt zu lösen:
 
   >[!IMPORTANT]
   >
-  >Wenn Sie diesen Auflösungsmodus auswählen, riskieren Sie, Patches in der neuen Version zu verlieren. Es wird daher dringend empfohlen, diese Option nicht zu verwenden oder nur erfahrenen Benutzern vorzubehalten.
+  Wenn Sie diesen Auflösungsmodus auswählen, riskieren Sie, Patches in der neuen Version zu verlieren. Es wird daher dringend empfohlen, diese Option nicht zu verwenden oder nur erfahrenen Benutzern vorzubehalten.
 
 Wenn Sie den Konflikt manuell lösen möchten, gehen Sie wie folgt vor:
 
@@ -508,13 +508,13 @@ In v7 wurde der Angebotsinhalt verschoben. In v6.02 befanden sich die Inhalte in
 
 >[!IMPORTANT]
 >
->Wenn einige Sendungen, die konfigurierte Angebote verwenden, nach der Migration gesendet werden sollen, müssen Sie alle diese Sendungen in v7 löschen und neu erstellen. Wenn dies nicht möglich ist, wird ein &quot;Kompatibilitätsmodus&quot;angeboten. Dieser Modus wird nicht empfohlen, da Sie nicht von allen neuen Funktionen in Interaction v7 profitieren werden. Dies ist ein Übergangsmodus, mit dem Sie laufende Kampagnen vor der aktuellen Migration von 6.1 abschließen können. Für weitere Informationen zu diesem Modus kontaktieren Sie uns bitte.
+Wenn einige Sendungen, die konfigurierte Angebote verwenden, nach der Migration gesendet werden sollen, müssen Sie alle diese Sendungen in v7 löschen und neu erstellen. Wenn dies nicht möglich ist, wird ein &quot;Kompatibilitätsmodus&quot;angeboten. Dieser Modus wird nicht empfohlen, da Sie nicht von allen neuen Funktionen in Interaction v7 profitieren werden. Dies ist ein Übergangsmodus, mit dem Sie laufende Kampagnen vor der aktuellen Migration von 6.1 abschließen können. Für weitere Informationen zu diesem Modus kontaktieren Sie uns bitte.
 
 Ein Beispiel für ein Bewegungsskript (**interactionTo610_full_XX.js**) ist im **Migration** Ordner im Ordner &quot;Adobe Campaign v7&quot;. Diese Datei zeigt ein Beispiel für ein Skript für einen Client, das eine einzelne E-Mail-Darstellung pro Angebot verwendet (die **[!UICONTROL htmlSource]** und **[!UICONTROL textSource]** -Felder). Der Inhalt, der im **NmsEmailOfferView** in die Angebotstabelle verschoben.
 
 >[!NOTE]
 >
->Die Verwendung dieses Skripts ermöglicht es nicht, von den Optionen &quot;Content Management&quot; und &quot;Rendering-Funktionen&quot; zu profitieren. Um diese Funktionen nutzen zu können, müssen Sie die Angebote des Katalogs, insbesondere den Angebotsinhalt und die Konfigurationsbereiche, überdenken.
+Die Verwendung dieses Skripts ermöglicht es nicht, von den Optionen &quot;Content Management&quot; und &quot;Rendering-Funktionen&quot; zu profitieren. Um diese Funktionen nutzen zu können, müssen Sie die Angebote des Katalogs, insbesondere den Angebotsinhalt und die Konfigurationsbereiche, überdenken.
 
 ```
 loadLibrary("/nl/core/shared/nl.js");
@@ -614,7 +614,7 @@ Gehen Sie wie folgt vor, nachdem Sie den Angebotsinhalt verschoben haben, wenn S
 
    >[!NOTE]
    >
-   >Die Namen der Kategorien und Angebote werden nach der Live-Schaltung geändert. Aktualisieren Sie im eingehenden Kanal alle Verweise auf Angebote und Kategorien.
+   Die Namen der Kategorien und Angebote werden nach der Live-Schaltung geändert. Aktualisieren Sie im eingehenden Kanal alle Verweise auf Angebote und Kategorien.
 
 ## Berichte {#reports}
 
