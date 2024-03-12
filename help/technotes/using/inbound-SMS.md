@@ -4,7 +4,7 @@ title: Workflow-Aktivität SMS-Empfang für Mid-Sourcing-Infrastruktur
 description: Workflow-Aktivität SMS-Empfang für Mid-Sourcing-Infrastruktur
 feature: Technote, SMS
 badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
-source-git-commit: 5667cb6b45742638f8c984d7eb9633660f64fc0f
+source-git-commit: 85adfe3515480bed559091427ff1acec14a70320
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 2%
@@ -23,7 +23,7 @@ ht-degree: 2%
 
 1. Hinzufügen einer Erweiterung zum `nms:inSMS` Schema in Ihrer Marketing-Instanz. Die Erweiterung fügt dem `nms:inSMS` Schema und verfolgen Sie den Primärschlüssel des InSMS-Datensatzes, der von der Mid-Sourcing-Instanz stammt.
 
-   ```
+   ```xml
    <element img="nms:miniatures/mini-sms.png" label="Incoming SMS"
           labelSingular="Incoming SMS" name="inSMS">
    <dbindex name="midInSMSId" unique="false">
@@ -55,7 +55,7 @@ ht-degree: 2%
 
    Ersetzen Sie den folgenden Block. Beachten Sie, dass dieses Skript ggf. variieren kann, wenn Sie diesen Code zuvor angepasst haben.
 
-   ```
+   ```Javascript
    var lastSynchKey = getOption('SMS_MO_INDEX_WKF1105_inSmsUS_smsmidus');
    
    var smsId = application.getNewIds(1);
@@ -70,7 +70,8 @@ ht-degree: 2%
    ```
 
    Mit dem folgenden neuen benutzerdefinierten Skript können Sie inSMS-Daten anhand eines zusammengesetzten Schlüssels aktualisieren, indem Sie den Primärschlüssel des Mid-Sourcing-Datensatzes und die externe Konto-ID des Marketing SMS-Routing kombinieren.
-Befolgen Sie die unten stehenden Voraussetzungen:
+
+   Befolgen Sie die unten stehenden Voraussetzungen:
 
    * Geben Sie den tatsächlichen Wert für ein `<EXTERNAL_ACCOUNT_ID>`, z. B. `var iExtAccountId=72733155`.
    * Achten Sie darauf, die folgenden Elemente im benutzerdefinierten Skript zu behalten:
@@ -111,7 +112,7 @@ Befolgen Sie die unten stehenden Voraussetzungen:
 
    Das Skript setzt den Primärschlüsselzeiger auf 24 Stunden zuvor zurück. Der Workflow versucht, innerhalb der letzten 24 Stunden alle InSMS-Daten aus der Mid-Sourcing-Instanz erneut zu verarbeiten und der Marketing-Instanz fehlende Daten hinzuzufügen.
 
-   ```
+   ```Javascript
    // please enter real external account ID to replace <EXTERNAL_ACCOUNT_ID>
    // please enter real pointer option name to replace '<POINTER_OPTION_NAME>'
    // OPTION NAME format: SMS_MO_INDEX_{internal name of the workflow}_inSms_{internal name of the external account to access the mid}
