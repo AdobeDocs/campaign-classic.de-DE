@@ -6,10 +6,10 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Cla
 feature: Push
 role: User, Developer
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
-source-git-commit: 9756f05e3887bc74578bae00138c4d1317a480f8
-workflow-type: ht
-source-wordcount: '708'
-ht-degree: 100%
+source-git-commit: 466f04bce8f4c62b5dbb0e9d15150ab0c3bf2fbd
+workflow-type: tm+mt
+source-wordcount: '689'
+ht-degree: 96%
 
 ---
 
@@ -103,21 +103,24 @@ Im folgenden Beispiel werden **mediaURl** und **mediaExt** hinzugefügt, um Rich
 
 1. Wählen Sie im Feld **[!UICONTROL Anwendungssymbol]** ein vordefiniertes Symbol aus, um die Mobile App in Ihrem Dienst zu personalisieren.
 
-1. Wählen Sie den **[!UICONTROL Authentifizierungsmodus]** aus. Beachten Sie, dass Sie den Authentifizierungsmodus Ihrer Mobile App jederzeit über den Tab **[!UICONTROL Zertifikat]** ändern können.
-   * **[!UICONTROL Zertifikatbasierte Authentifizierung]**: Klicken Sie auf **[!UICONTROL Zertifikat angeben...]**. Wählen Sie dann Ihren p12-Schlüssel und geben Sie das vom Entwickler der Mobile App bereitgestellte Passwort ein.
-   * **[!UICONTROL Token-basierte Authentifizierung]**: Füllen Sie die Verbindungseinstellungen **[!UICONTROL Schlüsselkennung]**, **[!UICONTROL Team-Kennung]** und **[!UICONTROL Paketkennung]** aus und wählen Sie dann Ihr p8-Zertifikat aus, indem Sie auf **[!UICONTROL Privaten Schlüssel eingeben]** klicken. Weitere Informationen zur **[!UICONTROL Token-basierten Authentifizierung]** finden Sie in der [Apple-Dokumentation](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apns).
+1. Wählen Sie die **[!UICONTROL Authentifizierungsmodus]**.
+
+   ![](assets/nmac_ios_5.png)
+
+   Zwei Modi sind verfügbar:
+
+   * (Empfohlen) **[!UICONTROL Token-basierte Authentifizierung]**: Füllen Sie die Verbindungseinstellungen **[!UICONTROL Schlüssel-ID]**, **[!UICONTROL Team-ID]** und **[!UICONTROL Paket-ID]** aus und wählen Sie dann Ihr p8-Zertifikat, indem Sie auf **[!UICONTROL Privaten Schlüssel eingeben...]** klicken. Weitere Informationen zur **[!UICONTROL Token-basierten Authentifizierung]** finden Sie in der [Apple-Dokumentation](https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apns){target="_blank"}.
+
+   * **[!UICONTROL Zertifikatbasierte Authentifizierung]**: Klicken Sie auf **[!UICONTROL Zertifikat eingeben...]**. Wählen Sie dann Ihren p12-Schlüssel und geben Sie das von der Entwicklerin bzw. dem Entwickler der Mobile App bereitgestellte Passwort ein.
 
    >[!NOTE]
    >
-   > Adobe empfiehlt für Ihre iOS-Konfiguration die Verwendung der **[!UICONTROL Token-basierten Authentifizierung]**, da dieser Authentifizierungsmodus besser geschützt ist und nicht von der Gültigkeit von Zertifikaten abhängt.
+   > Adobe empfiehlt, **[!UICONTROL Token-basierte Authentifizierung]** für Ihre iOS-Konfiguration verwenden, da P8-Authentifizierungsschlüssel neuer und sicherer sind.
 
-   ![](assets/nmac_ios_4.png)
-
-1. Durch Klicken auf **[!UICONTROL Verbindung testen]** können Sie prüfen, ob die Verbindung erfolgreich hergestellt wurde.
+1. Klicken Sie auf die Schaltfläche **[!UICONTROL Verbindung testen]**, um Ihre Konfiguration zu validieren.
 
 1. Nun können Sie die Produktionsanwendung konfigurieren, indem Sie auf **[!UICONTROL Weiter]** klicken und nach dem gleichen Verfahren wie oben beschrieben vorgehen.
 
-   ![](assets/nmac_ios_5.png)
 
 1. Klicken Sie auf **[!UICONTROL Beenden]**.
 
