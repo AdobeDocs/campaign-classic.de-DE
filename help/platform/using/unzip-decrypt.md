@@ -9,10 +9,10 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 1a79da3b-2abc-4bfc-a0ee-8471c478638d
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: 67a6e03318a74b665dc6928028470f98c0abae5e
 workflow-type: tm+mt
-source-wordcount: '725'
-ht-degree: 100%
+source-wordcount: '727'
+ht-degree: 89%
 
 ---
 
@@ -44,7 +44,7 @@ Anschließend können Sie die gewünschten Vorab-Bearbeitungsbefehle in Ihren Wo
 1. Fügen Sie in Ihrem Workflow die Aktivität **[!UICONTROL Dateiübertragung]** hinzu und konfigurieren Sie sie.
 1. Fügen Sie die Aktivität **[!UICONTROL Laden (Datei)]** hinzu und definieren Sie das Dateiformat.
 1. Aktivieren Sie die Option **[!UICONTROL Vorab-Bearbeitung der Datei vorsehen]**.
-1. Geben Sie den Vorab-Bearbeitungsbefehl an, den Sie anwenden möchten.
+1. Wählen Sie den Vorab-Bearbeitungsbefehl aus, den Sie anwenden möchten.
 1. Fügen Sie andere Aktivitäten zur Handhabung der Daten in der Datei hinzu.
 1. Speichern und starten Sie Ihren Workflow.
 
@@ -87,17 +87,15 @@ Die Schritte zum Ausführen dieses Anwendungsfalls lauten wie folgt:
 
 1. Öffnen Sie die Aktivität **[!UICONTROL Laden (Datei)]** und konfigurieren Sie sie entsprechend Ihren Anforderungen. Globale Konzepte zur Konfiguration der Aktivität finden Sie in [diesem Abschnitt](../../workflow/using/data-loading-file.md).
 
-   Fügen Sie der Aktivität eine Vorab-Bearbeitungsetappe hinzu, um die eingehenden Daten zu entschlüsseln. Wählen Sie dazu die Option **[!UICONTROL Vorab-Bearbeitung der Datei vorsehen]** und kopieren Sie den folgenden Entschlüsselungsbefehl in das Feld **[!UICONTROL Befehl]**:
-
-   `gpg --batch --passphrase passphrase --decrypt <%=vars.filename%>`
+   Fügen Sie der Aktivität eine Vorab-Bearbeitungsetappe hinzu, um die eingehenden Daten zu entschlüsseln. Wählen Sie dazu die **[!UICONTROL Vorab-Bearbeitung der Datei]** und wählen Sie **[!UICONTROL Entschlüsseln]** aus dem **[!UICONTROL Befehl]** Dropdownliste:
 
    ![](assets/gpg_load.png)
 
-   >[!CAUTION]
+   >[!NOTE]
    >
-   >In diesem Beispiel verwenden wir die Passphrase, die das Control Panel standardmäßig nutzt, nämlich &quot;passphrase&quot;.
+   >Wenn Änderungen an den verfügbaren Befehlen erforderlich sind, können Sie sich an [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) , um die Einstellungen von preProcessCommand anzupassen.
    >
-   >Wenn per Anfrage an die Kundenunterstützung bereits in der Vergangenheit GPG-Schlüssel in Ihrer Instanz installiert wurden, hat sich die Passphrase möglicherweise geändert und unterscheidet sich von der standardmäßigen Passphrase.
+   >Wenn Sie mit einer Hybridbereitstellung arbeiten, können Sie diese Befehle direkt in der Serverkonfigurationsdatei (serverConf.xml) konfigurieren. [Erfahren Sie, wie Sie Vorab-Bearbeitungsbefehle in der Serverkonfigurationsdatei konfigurieren](../../installation/using/the-server-configuration-file.md#preprocesscommand)
 
 1. Wählen Sie **[!UICONTROL OK]** aus, um die Konfiguration der Aktivität zu bestätigen.
 
