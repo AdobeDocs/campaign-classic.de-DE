@@ -5,10 +5,10 @@ description: Erfahren Sie mehr über die Workflow-Aktivität "Laden (Datei)".
 badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Workflows, Data Management Activity
 exl-id: a380e486-a40c-4bf6-b7f4-7dcd76c34085
-source-git-commit: 67a6e03318a74b665dc6928028470f98c0abae5e
+source-git-commit: 229844437770c460d958724e2dc15941e35939a6
 workflow-type: tm+mt
-source-wordcount: '1196'
-ht-degree: 86%
+source-wordcount: '1256'
+ht-degree: 81%
 
 ---
 
@@ -28,11 +28,17 @@ Im oberen Bereich des Fensters zur Konfiguration dieser Aktivität wird das Date
 
 ![](assets/s_advuser_wf_etl_file.png)
 
-Sie können eine Vorab-Bearbeitung definieren, die beim Dateiimport ausgeführt werden soll, um beispielsweise die Datei nicht auf dem Server entpacken zu müssen (und damit Speicherplatz für die entpackte Datei zu sparen), sondern die Dateiverarbeitung mit der Dekomprimierung zu beauftragen. Wählen Sie die **[!UICONTROL Vorab-Bearbeitung der Datei]** und wählen Sie eine der drei Optionen: **[!UICONTROL Keines]**, **[!UICONTROL Dekomprimierung]** (zcat) oder **[!UICONTROL Entschlüsseln]** (g).
+## Vorab-Bearbeitungsetappe anwenden {#pre-processing}
+
+Sie können eine Vorab-Bearbeitung definieren, die beim Dateiimport ausgeführt werden soll, um beispielsweise die Datei nicht auf dem Server entpacken zu müssen (und damit Speicherplatz für die entpackte Datei zu sparen), sondern die Dateiverarbeitung mit der Dekomprimierung zu beauftragen. [Erfahren Sie, wie Sie eine Datei vor der Verarbeitung dekomprimieren oder entschlüsseln](../../platform/using/unzip-decrypt.md).
+
+Wählen Sie dazu die **[!UICONTROL Vorab-Bearbeitung der Datei]** und wählen Sie eine der drei Optionen: **[!UICONTROL Keines]**, **[!UICONTROL Dekomprimierung]** (zcat) oder **[!UICONTROL Entschlüsseln]** (g).
 
 ![](assets/preprocessing-dataloading.png)
 
-Weiterführende Informationen hierzu finden Sie in diesem Abschnitt: [Datei vor der Verarbeitung dekomprimieren oder entschlüsseln](../../platform/using/unzip-decrypt.md).
+>[!CAUTION]
+>
+>Wenn Sie mit einer hybriden oder On-Premise-Implementierung arbeiten, funktionieren Vorverarbeitungsbefehle möglicherweise nicht vorkonfiguriert, da ihre Standardkonfiguration &quot;zcat&quot;verwendet, was unter Windows nicht verfügbar ist. In diesem Fall müssen Sie die **preProcessCommand** Knoten in der Server-Konfigurationsdatei (serverConf.xml), um Ihre Anforderungen zu erfüllen. [Erfahren Sie, wie Sie Vorab-Bearbeitungsbefehle in der Serverkonfigurationsdatei konfigurieren](../../installation/using/the-server-configuration-file.md#preprocesscommand)
 
 ## Datei formatieren {#defining-the-file-format}
 
