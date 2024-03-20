@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
 source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1781'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -215,7 +215,7 @@ Der erste Build 19.1.4 enthält die folgenden Fehlerkorrekturen:
 * Regressionskorrektur – Jetzt tritt kein durch NEO-12727 verursachter Fehler mehr auf, bei dem Workflows angehalten wurden, wenn eine Testaktivität zweimal ausgeführt wird. (NEO-16835)
 * Fehlerkorrektur – Jetzt wird kein fehlerhafter HTTP-Code mehr zurückgegeben (HTTP 200 OK statt HTTP 403 Forbidden), wenn ein ungültiges oder abgelaufenes Sitzungstoken in API-Aufrufen verwendet wird. (NEO-16826)
 * Fehlerkorrektur – Der DKIM-Schlüssel wird jetzt in E-Mails eingebettet, sodass der Versand fehlerfrei funktioniert. (NEO-16804)
-* Verschiedene Probleme mit der Workflow-Planung wurden behoben. Workflows sollten einmal täglich ausgeführt werden, ohne die Planungskonfiguration zu berücksichtigen. (NEO-16619, NEO-16426)
+* Fehlerkorrektur – Die Workflow-Planung funktioniert jetzt wieder einwandfrei, sodass Workflows entsprechend ihrer Konfiguration ausgeführt werden. (NEO-16619, NEO-16426)
 
 
 ## [!DNL Gold Standard] – Kompatibilitätsmatrix{#compatibility-matrix-gs}

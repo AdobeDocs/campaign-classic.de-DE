@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: 3e771d9a18c083bee8239b95d1d68d63928217c2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '764'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -70,7 +70,7 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 
 >[!IMPORTANT]
 >
->Wenn Sie RHEL verwenden, müssen Sie SELinux deaktivieren oder Ihre Architekten benutzerdefinierte SELinux-Regeln schreiben lassen, um zu überprüfen, ob ein aktiviertes SELinux keine Probleme mit Campaign-Vorgängen verursacht.
+>Wenn Sie RHEL verwenden, müssen Sie SELinux deaktivieren. Andernfalls können Ihre Programmierer und Programmiererinnen auch benutzerdefinierte SELinux-Regeln verfassen, mit denen sichergestellt werden kann, dass ein aktiviertes SELinux keine Probleme mit Campaign-Vorgängen verursacht.
 
 ## Webserver{#WebServers}
 
@@ -150,7 +150,7 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 <p>2016</p>
 <p>2014</p>
 <p>2012 – SP1 und SP2</p>
-<p><strong>Wichtig</strong>: Microsoft SQL Server wird nicht als primäre Datenbank unterstützt, wenn der Campaign-Server auf Linux läuft. <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/installing-campaign-in-linux/prerequisites-of-campaign-installation-in-linux.html#database-access-layers">Weitere Informationen</a>.</p>
+<p><strong>Wichtig</strong>: Microsoft SQL Server wird nicht als primäre Datenbank unterstützt, wenn der Campaign-Server auf Linux läuft. <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/installing-campaign-in-linux/prerequisites-of-campaign-installation-in-linux.html?lang=de#database-access-layers">Weitere Informationen</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -355,7 +355,7 @@ Für die Verwendung der [Campaign-Client-Konsole](../../installation/using/insta
 
 ### Microsoft WebView2 Runtime
 
-Die neueste Version der Microsoft Edge WebView2-Laufzeitumgebung ist für die Campaign-Clientkonsole erforderlich.
+Die neueste Version von Microsoft Edge WebView2 Runtime ist für die Campaign-Client-Konsole erforderlich.
 
 Microsoft Edge WebView2 kann von der [Microsoft-Entwickler-Site](https://www.adobe.com/go/acc-ms-webview2-runtime-download_de) heruntergeladen werden
 

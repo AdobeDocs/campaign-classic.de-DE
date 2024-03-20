@@ -7,9 +7,9 @@ user-guide-description: Produktdokumentation für Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 834d6c02536187b348842e6d524c4a83d02b355d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2552'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 99%
    + Frühere Versionen {#previous-releases}
       + [Versionen 2022](rn/using/release-2022.md)
       + [Versionen 2021](rn/using/release-2021.md)
-      + [[!DNL Gold Standard]-Versionen](rn/using/gold-standard.md)
+      + [Versionen [!DNL Gold Standard]](rn/using/gold-standard.md)
    + [Eingestellte Funktionen](rn/using/deprecated-features.md)
    + [Kompatibilitätsmatrix](rn/using/compatibility-matrix.md)
    + [Aktualisierungen der Dokumentation](rn/using/documentation-updates.md)
@@ -740,12 +740,12 @@ ht-degree: 99%
       + [Über das Datenmodell](configuration/using/about-data-model.md)
       + [Beschreibung des Datenmodells](configuration/using/data-model-description.md)
       + [Best Practices](configuration/using/data-model-best-practices.md)
-   + Arbeiten mit Schemata {#schema-reference}
+   + Mit Schemata arbeiten {#schema-reference}
       + [Erste Schritte mit Schemata](configuration/using/about-schema-reference.md)
       + [Schemastruktur](configuration/using/schema-structure.md)
       + [Datenbank-Mapping](configuration/using/database-mapping.md)
-      + [Schlüsselverwaltung](configuration/using/database-keys.md)
-      + [Linkverwaltung](configuration/using/database-links.md)
+      + [Schlüssel-Management](configuration/using/database-keys.md)
+      + [Link-Management](configuration/using/database-links.md)
       + Elemente und Attribute {#elements-attributes}
          + [Einleitung](configuration/using/schema-introduction.md)
          + [Attribut](configuration/using/schema/attribute.md)
@@ -824,7 +824,7 @@ ht-degree: 99%
    + [Rollback-Verfahren](migration/using/about-rollback.md)
 + Technotes {#technotes}
    + [Empfehlungen zur Hardware-Dimensionierung](technotes/using/hardware-sizing.md)
-   + [Workflow-Aktivität SMS-Empfang für Mid-Sourcing-Infrastruktur](technotes/using/inbound-SMS.md)
+   + [Workflow-Aktivität für eingehende SMS für Mid-Sourcing-Infrastruktur](technotes/using/inbound-SMS.md)
    + Upgrade auf IMS{#ims}
       + [Migrieren von Benutzenden zu IMS](technotes/using/migrate-users-to-ims.md)
       + [Migration technischer Benutzender zur Developer Console](technotes/using/ims-migration.md)

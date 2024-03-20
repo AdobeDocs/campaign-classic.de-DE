@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 517f09e508207b14e6b870f926753b2d9a547262
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2319'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ _5. Dezember 2023_
 
 * Darüber hinaus empfiehlt Adobe Campaign im Rahmen der Bemühungen, die Sicherheit und den Authentifizierungsprozess zu verbessern, dringend, den Authentifizierungsmodus für Endbenutzende von der nativen Authentifizierung mit Login/Passwort auf das Adobe Identity Management System (IMS) zu migrieren. Erfahren Sie in [diesem technischen Hinweis](../../technotes/using/migrate-users-to-ims.md), wie Sie Ihre Benutzenden migrieren können.
 
-* Jetzt, wenn ein Webformular die **Veröffentlichung ausstehend** -Status nicht automatisch live. Um Sicherheitsprobleme zu vermeiden, müssen diese veröffentlicht werden, bevor sie **Online** und der Zugriff über die Webformular-URL in einem Webbrowser erfolgt. [Weitere Informationen](../../web/using/publishing-a-web-form.md#life-cycle-of-a-form)
+* Wenn jetzt ein Web-Formular den Status **Veröffentlichung ausstehend** hat, wird es nicht automatisch live geschaltet. Um Sicherheitsprobleme zu vermeiden, muss es veröffentlicht werden, bevor es **online** und über die Web-Formular-URL in einem Webbrowser abrufbar ist. [Weitere Informationen](../../web/using/publishing-a-web-form.md#life-cycle-of-a-form)
 
 ### Patches  {#release-7-3-5-patches}
 

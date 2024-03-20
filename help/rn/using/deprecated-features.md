@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: f3dc9d56c693f334923d627a28a9e45b92b1c0c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1558'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ Kunden wird empfohlen, die Nutzung der Funktionen in ihrer aktuellen Bereitstell
    <td><strong>Details</strong></td>
   </tr>
 <tr>
- <td>Social Marketing mit Facebook</td>
+ <td>Social-Media-Marketing mit Facebook</td>
  <td>Social-Media-Marketing mit Facebook wird jetzt nicht mehr unterstützt. Sie können die Integration von X (früher bekannt als Twitter) verwenden, um in den sozialen Medien zu posten, oder in Zusammenarbeit mit Adobe einen benutzerdefinierten Kanal zu erstellen.
  <p></p>
   <!--p>Target removal date: End of 2023</p-->
