@@ -4,19 +4,19 @@ title: Web Analytics
 description: Erfahren Sie mehr über das Web Analytics-Package.
 badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Workflows, Analytics Integration
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: 59156851156338c9462781d31ce81a651362f2da
 workflow-type: tm+mt
-source-wordcount: '189'
-ht-degree: 100%
+source-wordcount: '185'
+ht-degree: 84%
 
 ---
 
 
-# Web Analytics{#web-analytics}
+# Web-Analyse{#web-analytics}
 
 
 
-Die folgenden Workflows werden standardmäßig mit dem Modul **Web Analytics-Connectoren** installiert. Weiterführende Informationen zu dem Modul finden Sie in diesem [Abschnitt](../../platform/using/adobe-analytics-connector.md).
+Die folgenden Workflows werden standardmäßig mit dem Modul **Web Analytics-Connectoren** installiert. Weiterführende Informationen zu dem Modul finden Sie in diesem [Abschnitt](../../platform/using/gs-aa.md).
 
 <table> 
  <tbody> 
@@ -33,7 +33,7 @@ Die folgenden Workflows werden standardmäßig mit dem Modul **Web Analytics-Con
   <tr> 
    <td> <span class="uicontrol">Identifizierung der konvertierten Kontakte</span> <br /> </td> 
    <td> <span class="uicontrol">webAnalyticsFindConverted</span> <br /> </td> 
-   <td> Ruft die Besucher ab, die nach einer Remarketing-Kampagne einen Kauf getätigt haben. Die von diesem Workflow ermittelten Daten werden im Bericht <span class="uicontrol">Remarketing-Effizienz</span> zur Verfügung gestellt (siehe diese <a href="../../platform/using/adobe-analytics-connector.md#creating-a-re-marketing-campaign">Seite</a>). <br /> </td> 
+   <td> Dieser Workflow indexiert die Besucher der Site, die nach einer Remarketing-Kampagne einen Kauf getätigt haben. Auf die mithilfe dieses Workflows abgerufenen Daten kann im Abschnitt <span class="uicontrol">Bericht zur Remarketing-Effizienz</span>. <br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Ereignislöschung</span> <br /> </td> 

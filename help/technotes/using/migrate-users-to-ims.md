@@ -2,10 +2,10 @@
 title: Migrieren von Campaign-Benutzenden zum Adobe Identity Management System (IMS)
 description: Erfahren Sie, wie Sie Campaign-Benutzende zum Adobe Identity Management System (IMS) migrieren
 exl-id: f01948c7-b523-492d-a4e8-67f4adde5fc5
-source-git-commit: 1879fe179381be654bad876de2423d25049db43c
-workflow-type: ht
-source-wordcount: '1280'
-ht-degree: 100%
+source-git-commit: 59156851156338c9462781d31ce81a651362f2da
+workflow-type: tm+mt
+source-wordcount: '1278'
+ht-degree: 98%
 
 ---
 
@@ -13,9 +13,7 @@ ht-degree: 100%
 
 Im Rahmen der Bemühungen, die Sicherheit und den Authentifizierungsprozess zu verbessern, empfiehlt Adobe Campaign dringend, den Authentifizierungsmodus für Endbenutzende von der nativen Authentifizierung mit Login/Passwort auf das Adobe Identity Management System (IMS) zu migrieren. Alle Benutzerinnen bzw. Benutzer sollten das [Adobe Identity Management System (IMS)](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"} implementieren, um eine Verbindung mit Campaign herzustellen.
 
-Hinweis: In Campaign v8 ist die Verbindung mit Benutzername/Passwort (auch als native Authentifizierung bezeichnet) nicht mehr zulässig. **Adobe empfiehlt, diese Migration in Campaign v7.3.5 durchzuführen, um eine reibungslose Migration zu Campaign v8 zu ermöglichen.**
-
-
+Beachten Sie, dass in Campaign v8 die Verbindung mit Benutzer/Kennwort (auch als native Authentifizierung bezeichnet) nicht zulässig ist. **Adobe empfiehlt, diese Migration in Campaign v7.3.5 durchzuführen, um eine reibungslose Migration zu Campaign v8 zu ermöglichen.**
 
 ## Was hat sich geändert?{#move-to-ims-changes}
 

@@ -6,11 +6,13 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Cla
 feature: Analytics Integration
 role: User, Admin
 level: Beginner
+hide: true
+hidefromtoc: true
 exl-id: 0dc6ce98-dc3e-4242-953e-e7cec55289ff
-source-git-commit: ccc48c93d81266b0971acc3a549458e0823eeb37
-workflow-type: ht
-source-wordcount: '1718'
-ht-degree: 100%
+source-git-commit: 59156851156338c9462781d31ce81a651362f2da
+workflow-type: tm+mt
+source-wordcount: '1700'
+ht-degree: 97%
 
 ---
 
@@ -121,7 +123,7 @@ Sie müssen die **[!UICONTROL Konversionsvariablen]** und **[!UICONTROL Erfolgse
    * **[!UICONTROL Einzelöffnungen]**
    * **[!UICONTROL Abgemeldet]**
 
-   Näheres dazu, wie Sie **[!UICONTROL Erfolgsereignisse]** konfigurieren, finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/t-success-events.html?lang=de#admin-tools)..
+   Informationen zur Konfiguration **[!UICONTROL Erfolgsereignisse]**, siehe [Abschnitt](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/t-success-events.html?lang=de#admin-tools).
 
    >[!NOTE]
    >
@@ -221,7 +223,7 @@ Sie finden diese im Navigationsbaum von Adobe Campaign unter dem Ordner **[!UICO
 
 * **[!UICONTROL Abruf von Webereignissen]**: Dieser Workflow ruft stündlich die auf das Verhalten von Besuchern bestimmter Webseiten bezogenen Segmente ab, fügt sie zur Adobe-Campaign-Datenbank hinzu und startet den Remarketing-Workflow.
 * **[!UICONTROL Ereignislöschung]**: Dieser Workflow löscht alle Ereignisse aus der Datenbank gemäß dem im Feld **[!UICONTROL Lebensdauer]** angegebenen Zeitraum. Weiterführende Informationen hierzu finden Sie unter [Konfigurieren des externen Kontos in Adobe Campaign Classic](#external-account-classic).
-* **[!UICONTROL Identifizierung der konvertierten Kontakte]**: Dieser Workflow erfasst die Besucher, die nach einer Remarketing-Kampagne einen Kauf getätigt haben. Die durch diesen Workflow abgerufenen Daten stehen im Bericht **[!UICONTROL Remarketing-Effizienz]** zur Verfügung. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](#creating-a-re-marketing-campaign).
+* **[!UICONTROL Identifizierung der konvertierten Kontakte]**: Verzeichnis der Besucher, die nach einer Remarketing-Kampagne einen Kauf getätigt haben. Auf die von diesem Workflow erfassten Daten kann im Abschnitt **[!UICONTROL Remarketing-Effizienz]** Bericht, siehe diesen [page](#creating-a-re-marketing-campaign).
 * **[!UICONTROL Übermittlung der Kampagnen-Indikatoren und -Attribute]**: sendet die Kampagnen-Indikatoren über Adobe Campaign mithilfe des Adobe Analytics-Connectors an Adobe Experience Cloud. Dieser Workflow wird jeden Tag um 4 Uhr ausgelöst. Es kann 24 Stunden dauern, bis die Daten an Analytics gesendet werden.
 
   Bitte beachten Sie, dass dieser Workflow nicht neu gestartet werden sollte, da sonst alle vorherigen Daten erneut gesendet werden, was die Analyseergebnisse verfälschen könnte.

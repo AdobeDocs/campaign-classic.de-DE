@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+source-git-commit: 59156851156338c9462781d31ce81a651362f2da
 workflow-type: tm+mt
-source-wordcount: '2031'
-ht-degree: 72%
+source-wordcount: '1989'
+ht-degree: 61%
 
 ---
 
@@ -50,7 +50,7 @@ Das externe Konto wird erstellt und der Liste der externen Konten hinzugefügt.
 
 ### Bounce Messages {#bounce-mails-external-account}
 
-Das externe Konto **Bounce Messages** gibt das externe POP3-Konto an, das für die Verbindung mit dem E-Mail-Dienst verwendet werden soll. Weiterführende Informationen dazu finden Sie auf dieser [Seite](../../workflow/using/inbound-emails.md).
+Das externe Konto **Bounce Messages** gibt das externe POP3-Konto an, das für die Verbindung mit dem E-Mail-Service verwendet werden soll. Weiterführende Informationen zu diesem externen Konto finden Sie in diesem Abschnitt [page](../../workflow/using/inbound-emails.md).
 
 Alle Server, die für den POP3-Zugriff konfiguriert sind, können für den Empfang von Antwortsendungen verwendet werden.
 
@@ -96,7 +96,7 @@ So konfigurieren Sie eine externe POP3-Datei mit **Microsoft OAuth 2.0**, überp
 
   Client-ID (oder Anwendungs (Client)-ID) finden Sie in der Dropdown-Liste **Grundlagen** der Anwendungsübersicht im Azure-Portal.
 
-* **[!UICONTROL Azure-Client-Geheimnis]**
+* **[!UICONTROL Azure Client-Geheimnis]**
 
   Die Client-Geheimnis-ID finden Sie in der Spalte **Client-Geheimnisse** im Menü **Zertifikate und Geheimnisse** Ihrer Anwendung im Azure-Portal.
 
@@ -119,7 +119,7 @@ Die folgenden Kanäle können konfiguriert werden:
 * [Telefon](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
 * [Briefpost](../../delivery/using/about-direct-mail-channel.md)
 * [Agentur](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
-* [X (ehemals Twitter)](../../social/using/about-social-marketing.md)
+* [X (früher bekannt als Twitter)](../../social/using/about-social-marketing.md)
 * [iOS-Kanal](../../delivery/using/configuring-the-mobile-application.md)
 * [Android-Kanal](../../delivery/using/configuring-the-mobile-application-android.md)
 
@@ -161,7 +161,7 @@ Weiterführende Informationen zur Konfiguration finden Sie auf dieser [Seite](..
 
 ### FTP {#ftp-external-account}
 
-Mit dem externen FTP-Konto können Sie den Zugriff auf einen Server außerhalb von Adobe Campaign konfigurieren und testen. Um Verbindungen mit externen Systemen wie dem FTP-Server 898, der für Dateiübertragungen verwendet wird, einzurichten, können Sie eigene externe Konten erstellen. Weiterführende Informationen dazu finden Sie auf dieser [Seite](../../workflow/using/file-transfer.md).
+Mit dem externen FTP-Konto können Sie den Zugriff auf einen Server außerhalb von Adobe Campaign konfigurieren und testen. Um Verbindungen mit externen Systemen wie FTP-Servern 898, die für Dateiübertragungen verwendet werden, einzurichten, können Sie eigene externe Konten erstellen. Weiterführende Informationen hierzu finden Sie auf [dieser Seite](../../workflow/using/file-transfer.md).
 
 Geben Sie dazu in diesem externen Konto die Adresse und die Zugangsdaten für die Verbindungsherstellung zum FTP-Server an.
 
@@ -191,7 +191,7 @@ Informationen zu diesen Zugangsdaten finden Sie auf dieser [Seite](https://help.
 
 ### SFTP {#sftp-external-account}
 
-Mit dem externen SFTP-Konto können Sie den Zugriff auf einen Server außerhalb von Adobe Campaign konfigurieren und testen. Um Verbindungen mit externen Systemen wie dem SFTP-Server einzurichten, der für Dateiübertragungen verwendet wird, können Sie eigene externe Konten erstellen. Weiterführende Informationen dazu finden Sie auf dieser [Seite](../../workflow/using/file-transfer.md).
+Mit dem externen SFTP-Konto können Sie den Zugriff auf einen Server außerhalb von Adobe Campaign konfigurieren und testen. Um Verbindungen mit externen Systemen wie SFTP einzurichten, das für Dateiübertragungen verwendet wird, können Sie eigene externe Konten erstellen. Weiterführende Informationen hierzu finden Sie auf [dieser Seite](../../workflow/using/file-transfer.md).
 
 ![](assets/ext_account_4.png)
 
@@ -223,7 +223,7 @@ So fügen Sie SSH-Schlüssel unter Windows hinzu:
 
 Verwenden Sie die **Externe Datenbank** Geben Sie ein externes Konto ein, um eine Verbindung zu einer externen Datenbank herzustellen. Weitere Informationen zur Option „Federated Data Access“ (FDA) finden Sie in [diesem Abschnitt](../../installation/using/about-fda.md).
 
-Externe Datenbanken, die mit Campaign kompatibel sind, sind in der [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md) aufgeführt.
+Externe Datenbanken, die mit Campaign kompatibel sind, sind im Abschnitt [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md)
 
 ![](assets/ext_account_11.png)
 
@@ -264,11 +264,11 @@ Um über eine Adobe-ID eine Verbindung zur Adobe Campaign-Konsole herzustellen, 
 
 * **[!UICONTROL IMS-Client-Secret]**
 
-  Ihr IMS-Client-Geheimnisses.
+  Berechtigung Ihres IMS-Client-Geheimnisses.
 
 * **[!UICONTROL Callback-Server]**
 
-  Zugriff-URL Ihrer Adobe Campaign-Instanz.
+  Zugriff auf die URL Ihrer Adobe Campaign-Instanz.
 
 * **[!UICONTROL Kennung der IMS-Organisation]**
 
@@ -294,7 +294,7 @@ Die **[!UICONTROL Web Analytics]** Mit dem externen Konto können Sie Daten in F
 
 ![](assets/ext_account_10.png)
 
-Für dieses externe Konto muss die Berechnungsformel für getrackte URLs angereichert und die Verbindung zwischen den beiden Lösungen genehmigt werden. Weiterführende Informationen dazu finden Sie auf dieser [Seite](../../platform/using/adobe-analytics-connector.md#external-account-classic).
+Für dieses externe Konto muss die Berechnungsformel für getrackte URLs angereichert und die Verbindung zwischen den beiden Lösungen genehmigt werden. Weiterführende Informationen hierzu finden Sie auf [dieser Seite](../../platform/using/gs-aa.md).
 
 ### Adobe Experience Manager {#adobe-experience-manager-external-account}
 
@@ -416,7 +416,7 @@ Weiterführende Informationen zur Konfiguration finden Sie auf dieser [Seite](..
 
 ### Amazon Simple Storage Service (S3) {#amazon-simple-storage-service--s3--external-account}
 
-Der Amazon Simple Storage Service (S3) Connector kann zum Import oder Export von Daten in Adobe Campaign verwendet werden. Es kann in einer Workflow-Aktivität eingerichtet werden. Weiterführende Informationen dazu finden Sie auf dieser [Seite](../../workflow/using/file-transfer.md).
+Der Amazon Simple Storage Service (S3) Connector kann zum Importieren oder Exportieren von Daten in Adobe Campaign verwendet werden. Er kann in einer Workflow-Aktivität eingerichtet werden. Weiterführende Informationen hierzu finden Sie auf [dieser Seite](../../workflow/using/file-transfer.md).
 
 ![](assets/ext_account_3.png)
 
@@ -444,7 +444,7 @@ Zum Einrichten dieses neuen externen Kontos benötigen Sie die folgenden Informa
 
 * Die Checkbox **[!UICONTROL Serverseitige Verschlüsselung verwenden]** ermöglicht es Ihnen, Ihre Datei in S3 im verschlüsselten Modus zu speichern.
 
-Informationen darüber, wo Sie die Kennung des Zugriffsschlüssels und den geheimen Zugriffsschlüssel finden, erfahren Sie im [Handbuch](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) der Amazon-Webdienste.
+Informationen darüber, wo Sie die Kennung des Zugriffsschlüssels und den geheimen Zugriffsschlüssel finden, erfahren Sie unter Amazon Web Services . [Dokumentation](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys).
 
 ### Azur Blob-Speicherung {#azure-blob-external-account}
 
@@ -452,7 +452,7 @@ Die **Azure Blob Storage** kann zum Importieren oder Exportieren von Daten in Ad
 
 ![](assets/ext_account_23.png)
 
-Um das externe **** Azure-Konto für die gemeinsame Verwendung mit Adobe Campaign zu konfigurieren, müssen Sie die folgenden Informationen eingeben:
+So konfigurieren Sie die **[!UICONTROL externes Azure-Konto]** Um mit Adobe Campaign zu arbeiten, müssen Sie die folgenden Details angeben:
 
 * **[!UICONTROL Server]**
 

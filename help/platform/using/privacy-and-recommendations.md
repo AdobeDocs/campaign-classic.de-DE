@@ -9,10 +9,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: d2451b62-bddf-4dee-8789-35aaae8348e1
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: 59156851156338c9462781d31ce81a651362f2da
 workflow-type: tm+mt
 source-wordcount: '1980'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -81,7 +81,7 @@ Bei der Verwaltung des Datenschutzes ist es wichtig zu definieren, welche Daten 
 * **Personenbezogene Daten** sind Informationen, die eine lebende Person direkt oder indirekt identifizieren können.
 * **Vertrauliche personenbezogene Daten** sind Informationen zu Rasse, politischen Ansichten, religiösen Überzeugungen, kriminellem Hintergrund, genetischen Informationen, Gesundheitsdaten, sexuellen Vorlieben, biometrischen Informationen sowie zur Gewerkschaftsmitgliedschaft.
 
-Bei der Integration von Campaign mit anderen Experience Cloud-Lösungen, bei denen Audiences von einem System auf ein anderes übertragen werden können, wie z. B. mit [Adobe Analytics](../../platform/using/adobe-analytics-connector.md), [Audience Manager oder People Coreservice](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md), [Campaign Standard](../../integrations/using/synchronizing-audiences.md) oder mit anderen Lösungen über [CRM-Connectoren](../../platform/using/crm-connectors.md), müssen Sie dem Schutz personenbezogener Daten besondere Aufmerksamkeit widmen.
+Bei der Integration von Campaign mit anderen Experience Cloud-Lösungen, bei denen Audiences von einem System auf ein anderes übertragen werden können, wie z. B. mit [Adobe Analytics](../../platform/using/gs-aa.md), [Audience Manager oder People Coreservice](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md), [Campaign Standard](../../integrations/using/synchronizing-audiences.md) oder mit anderen Lösungen über [CRM-Connectoren](../../platform/using/crm-connectors.md), müssen Sie dem Schutz personenbezogener Daten besondere Aufmerksamkeit widmen.
 
 Die [wichtigsten Rechtsvorschriften](#privacy-regulations) beziehen sich auf die verschiedenen Einheiten, die Daten wie folgt verwalten:
 * Ein **Datenverantwortlicher** ist die Autorität, die die Mittel und den Zweck der Erfassung, Verwendung und Weitergabe personenbezogener Daten festlegt.

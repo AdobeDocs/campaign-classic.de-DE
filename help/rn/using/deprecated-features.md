@@ -7,8 +7,8 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Cla
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: f3dc9d56c693f334923d627a28a9e45b92b1c0c3
-workflow-type: ht
+source-git-commit: 59156851156338c9462781d31ce81a651362f2da
+workflow-type: tm+mt
 source-wordcount: '1558'
 ht-degree: 100%
 
@@ -73,7 +73,7 @@ In diesem Abschnitt werden Funktionen und Leistungsmerkmale aufgelistet, die aus
       <tr>
   <td>Adobe Analytics Data Connector<br></td>
    <td><p>Der Adobe Analytics Data Connector wurde am 17. August 2022 entfernt. Er wurde mit Campaign-Version 21.1.3 eingestellt.</p>
-   <p>Wenn Sie diesen Connector nutzen, müssen Sie Ihre Implementierung entsprechend anpassen. <a href="../../platform/using/adobe-analytics-connector.md">Weitere Informationen</a></p>
+   <p>Wenn Sie diesen Connector nutzen, müssen Sie Ihre Implementierung entsprechend anpassen. <a href="../../platform/using/gs-aa.md">Weitere Informationen</a></p>
   </td>
  </tr>
     <tr>

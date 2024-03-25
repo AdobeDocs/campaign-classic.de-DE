@@ -2,16 +2,15 @@
 product: campaign
 title: Bereitstellung des Adobe Analytics-Connectors
 description: Erfahren Sie mehr über die Bereitstellung des Adobe Analytics-Connectors.
-badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
-badge-v7-prem: label="On-Premise und Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
+badge-v7-prem: label="On-Premise und Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für On-Premise- und Hybridbereitstellungen von v7"
 feature: Analytics Integration
 role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
-source-git-commit: d690a5c4b9779ccd90b50bfbc74df18f0ac60d14
-workflow-type: ht
-source-wordcount: '861'
-ht-degree: 100%
+source-git-commit: 59156851156338c9462781d31ce81a651362f2da
+workflow-type: tm+mt
+source-wordcount: '829'
+ht-degree: 96%
 
 ---
 
@@ -69,7 +68,7 @@ Weiterführende Informationen zu Produktprofilen finden Sie in der [Dokumentatio
 
 1. Fügen Sie für die Funktion **[!UICONTROL Report Suites]** die **[!UICONTROL Report Suites]** hinzu, die Sie später verwenden müssen.
 
-   Wenn Sie über keine Report Suites verfügen, können Sie diese mit [diesen Schritten](../../platform/using/adobe-analytics-connector.md#report-suite-analytics) erstellen.
+   Wenn Sie über keine Report Suites verfügen, können Sie diese mit [diesen Schritten](../../platform/using/gs-aa.md) erstellen.
 
    ![](assets/do-not-localize/triggers_4.png)
 
@@ -81,7 +80,7 @@ Weiterführende Informationen zu Produktprofilen finden Sie in der [Dokumentatio
 
 1. Fügen Sie für die Funktion **[!UICONTROL Dimensionen]** die für zukünftige Konfigurationen benötigten **[!UICONTROL Dimensionen]** hinzu.
 
-   Stellen Sie sicher, dass die ausgewählten Dimensionen mit den unter [Externes Konto](adobe-analytics-connector.md#external-account-classic) konfigurierten Dimensionen übereinstimmen, und stimmen Sie sie mit den entsprechenden eVars-Nummern aus [Adobe Analytics](adobe-analytics-connector.md#configure-conversion-success) ab.
+   Stellen Sie sicher, dass die ausgewählten Dimensionen mit den im externen Konto konfigurierten übereinstimmen und mit der entsprechenden eVars-Nummer aus Adobe Analytics übereinstimmen.
 
 1. Fügen Sie für die Funktion **[!UICONTROL Report Suite-Tools]** die folgenden Berechtigungen hinzu:
 

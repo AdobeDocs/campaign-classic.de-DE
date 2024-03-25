@@ -8,10 +8,10 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 8dad8fa9-674c-433c-af30-8c6d0aadf525
-source-git-commit: 49271e291953483ee14709b26ec053217a336718
-workflow-type: ht
-source-wordcount: '143'
-ht-degree: 100%
+source-git-commit: 59156851156338c9462781d31ce81a651362f2da
+workflow-type: tm+mt
+source-wordcount: '176'
+ht-degree: 91%
 
 ---
 
@@ -25,6 +25,11 @@ Benutzerinnen und Benutzer von Campaign können mit ihrer Adobe ID eine Verbindu
 * Speicherung der Verbindung bei der Verwendung von Adobe Campaign mit den verschiedenen Integrationen.
 * Sicherere Sicherheitsrichtlinien für die Passwortverwaltung anstelle der Anmeldung mit nativem Login/Passwort.
 * Verwendung von Konten des Typs Federated ID (externer ID-Provider).
+
+>[!IMPORTANT]
+>
+> Beachten Sie, dass in Campaign v8 die Verbindung mit Benutzer/Kennwort (auch als native Authentifizierung bezeichnet) nicht zulässig ist. **Adobe empfiehlt, diese Migration in Campaign v7.3.5 durchzuführen, um eine reibungslose Migration zu Campaign v8 zu ermöglichen.**
+
 
 <!--
 >[!IMPORTANT]
