@@ -7,8 +7,8 @@ hidefromtoc: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
 source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
-source-wordcount: '755'
-ht-degree: 100%
+source-wordcount: '657'
+ht-degree: 99%
 
 ---
 
@@ -51,9 +51,9 @@ Wie wird ein Upgrade auf einen neuen Build durchgeführt? Wie lässt sich die Wo
     </td>
     <td valign="top">
         <ul>
-        <li><a href="production/using/performance-and-throughput-issues.md">Leistungs- und Durchsatzprobleme</a></li>
-        <li><a href="delivery/using/delivery-performances.md">Versandleistung</a></li>
-        <li><a href="workflow/using/workflow-best-practices.md">Optimieren der Workflow-Leistung</a></li>
+        <li><a href="production/using/performance-and-throughput-issues.md">Performance- und Durchsatzprobleme</a></li>
+        <li><a href="delivery/using/delivery-performances.md">Versand-Performance</a></li>
+        <li><a href="workflow/using/workflow-best-practices.md">Optimieren der Workflow-Performance</a></li>
         <li><a href="workflow/using/monitoring-workflow-execution.md">Fehlerbehebung bei der Workflow-Ausführung</a></li>
         <li><a href="platform/using/sftp-server-usage.md">Nutzung von SFTP-Servern</a></li>
         <li><a href="delivery/using/understanding-delivery-failures.md">Ursachen für das Fehlschlagen von Sendungen</a></li>
@@ -137,7 +137,7 @@ Das neue Ticket-System wurde über die [Adobe Admin Console](https://adminconsol
 
 ### Fragen an Experten
 
-Treten Sie der Campaign Classic-Community bei: Suchen Sie nach Antworten in vorhandenen Fragen oder stellen Sie Ihre Frage der Community. [Reden Sie mit](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=de){_blank}.
+Treten Sie der Campaign Classic-Community bei: Suchen Sie nach Antworten in vorhandenen Fragen oder stellen Sie Ihre Frage der Community. [Gespräch beitreten](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=de){_blank}.
 
 ### Aufrufen des Campaign-Download-Centers
 

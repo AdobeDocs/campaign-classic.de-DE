@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Integration in einen Web-Server für Windows
-description: Integration in einen Web-Server für Windows
+title: Integration in einen Webserver für Windows
+description: Integration in einen Webserver für Windows
 feature: Installation, Instance Settings
 badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 badge-v7-prem: label="On-Premise und Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
@@ -11,12 +11,12 @@ topic-tags: installing-campaign-in-windows-
 exl-id: 041c4431-baae-4e64-9e9a-0daa5123bd8a
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '935'
-ht-degree: 7%
+source-wordcount: '924'
+ht-degree: 4%
 
 ---
 
-# Integration in einen Web-Server für Windows{#integration-into-a-web-server-for-windows}
+# Integration in einen Webserver für Windows{#integration-into-a-web-server-for-windows}
 
 
 

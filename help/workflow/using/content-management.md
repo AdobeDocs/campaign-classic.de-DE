@@ -8,7 +8,7 @@ exl-id: eb92a7c7-edfa-4062-b473-6d8b50d35e5f
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '470'
-ht-degree: 100%
+ht-degree: 68%
 
 ---
 
@@ -40,19 +40,19 @@ Die Konfiguration der Aktivität gliedert sich in drei Schritte:
 
    * **[!UICONTROL Explizit]**
 
-     Wählen Sie diese Option, wenn ein zuvor erstellter Inhalt verwendet werden soll. Geben Sie diesen im Feld **[!UICONTROL Inhalt]** an. Das Feld erscheint nur, wenn die Option **[!UICONTROL Explizit]** angekreuzt wurde.
+     Mit dieser Option können Sie einen bereits erstellten Inhalt über die **[!UICONTROL Inhalt]** -Feld. Dieses Feld ist nur sichtbar, wenn die **[!UICONTROL Explizit]** ausgewählt ist.
 
      ![](assets/content_mgmt_explicit.png)
 
    * **[!UICONTROL Wird durch ein Script erstellt]**
 
-     Die Kennung des Inhalts wird über ein Script erstellt. Im Feld **[!UICONTROL Script]** wird das JavaScript-Template berechnet, welches die Kennung (den Primärschlüssel) des Inhalts auswertet. Das Feld erscheint nur, wenn die Option **[!UICONTROL Wird durch ein Script erstellt]** aktiviert wurde.
+     Die Kennung des Inhalts wird mithilfe eines Skripts berechnet. Die **[!UICONTROL Skript]** -Feld können Sie eine JavaScript-Vorlage definieren, die die Kennung (den Primärschlüssel) des Inhalts auswertet. Dieses Feld ist nur sichtbar, wenn die **[!UICONTROL Wird durch ein Skript berechnet]** ausgewählt ist.
 
      ![](assets/content_mgmt_script.png)
 
    * **[!UICONTROL Neu, basierend auf einer Veröffentlichungsvorlage erstellt]**
 
-     Wählen Sie diese Option, wenn ein neuer, auf einer Vorlage beruhender Inhalt erstellt werden soll. Geben Sie im Feld **[!UICONTROL Inhaltskanal]** den Ordner an, in dem der neue Inhalt gespeichert werden soll und im Feld **[!UICONTROL Vorlage]** die zu verwendende Veröffentlichungsvorlage.
+     Erstellt ausgehend von einer Veröffentlichungsvorlage einen neuen Inhalt. Dieser neue Inhalt wird in der Datei gespeichert, die im **[!UICONTROL Zeichenfolge]** -Feld. Die **[!UICONTROL Vorlage]** gibt die Veröffentlichungsvorlage an, die zum Erstellen des Inhalts verwendet werden soll.
 
      ![](assets/content_mgmt_new.png)
 
@@ -64,7 +64,7 @@ Die Konfiguration der Aktivität gliedert sich in drei Schritte:
 
    * **[!UICONTROL Zugriff auf Daten eines XML-Streams]**
 
-     Mithilfe dieser Option ist es möglich, einen Inhalt ausgehend von einem XML-Dokument, das von einem Webserver heruntergeladen wurde, zu erstellen und ihn gegebenenfalls mit einem XSL-Stylesheet umzuwandeln. Im Feld **[!UICONTROL URL]** ist die URL für den XML-Download und im Feld **[!UICONTROL XSL-Stylesheet]** das für die Umwandlung zu nutzende Stylesheet anzugeben. Letzteres ist optional.
+     Mit dieser Option können Sie den Inhalt aus einem XML-Dokument erstellen, das über ein XSL-Stylesheet heruntergeladen wurde. Wenn diese Option ausgewählt ist, wird die **[!UICONTROL URL]** gibt das XML-Inhalts-Download-URL an. Die **[!UICONTROL XSL-Stylesheet]** ermöglicht die Angabe des Stylesheets, das für die Umwandlung des heruntergeladenen XML-Dokuments verwendet werden soll. Diese Eigenschaft ist optional.
 
      ![](assets/content_mgmt_xmlcontent.png)
 

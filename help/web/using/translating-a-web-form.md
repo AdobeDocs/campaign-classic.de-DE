@@ -8,8 +8,8 @@ feature: Web Forms
 exl-id: 72959141-ca18-4512-80c7-239efd31f711
 source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
 workflow-type: tm+mt
-source-wordcount: '1672'
-ht-degree: 100%
+source-wordcount: '1644'
+ht-degree: 76%
 
 ---
 
@@ -33,7 +33,7 @@ Die Standardsprache ist die Sprache, in der die Webanwendung dargestellt wird, w
 
 ## Sprachen wählen {#choosing-languages}
 
-Um eine oder mehr Zielsprachen zu definieren, wählen Sie in der Webanwendung die Schaltfläche **[!UICONTROL Eigenschaften]** und dann den Tab **[!UICONTROL Lokalisierung]** aus. Wählen Sie dann die Schaltfläche **[!UICONTROL Hinzufügen]** aus, um eine neue Zielsprache für die Webanwendung zu definieren.
+Um eine oder mehrere Übersetzungssprachen zu definieren, klicken Sie auf das **[!UICONTROL Eigenschaften]** Schaltfläche der Webanwendung, dann **[!UICONTROL Lokalisierung]** Registerkarte. Klicken Sie auf **[!UICONTROL Hinzufügen]** -Schaltfläche, um eine neue Übersetzungssprache für die Webanwendung zu definieren.
 
 >[!NOTE]
 >
@@ -51,7 +51,7 @@ Adobe Campaign besitzt ein Tool zur Übersetzung und Verwaltung mehrsprachiger �
 
 Im Tab **[!UICONTROL Übersetzungen]** können Sie die Übersetzungen der Zeichenfolgen der Webanwendung eingeben.
 
-Wenn Sie diesen Tab das erste Mal öffnen, sind keine Daten vorhanden. Wählen Sie den Link **[!UICONTROL Zu übersetzende Strings abrufen]** aus, um die Strings in der Webanwendung zu aktualisieren.
+Wenn Sie diese Registerkarte zum ersten Mal öffnen, enthält sie keine Daten. Klicken Sie auf **[!UICONTROL Zu übersetzende Strings abrufen]** -Link, um die Zeichenfolgen in der Webanwendung zu aktualisieren.
 
 Adobe Campaign ruft Titel von Feldern und Strings ab, die im Tab **[!UICONTROL Texte]** aller statischen Elemente definiert wurden: HTML-Bausteine, JavaScript usw. Statische Elemente werden in [Statische Elemente in einem Webformular](static-elements-in-a-web-form.md) detailliert erläutert.
 
@@ -65,13 +65,13 @@ Adobe Campaign ruft Titel von Feldern und Strings ab, die im Tab **[!UICONTROL T
 
 Immer wenn ein String übersetzt wurde, wird die Übersetzung zum Übersetzungswörterbuch hinzugefügt.
 
-Wenn beim Abrufen festgestellt wird, dass eine Übersetzung bereits vorhanden ist, wird diese Übersetzung in der Spalte **[!UICONTROL Text]** des Strings angezeigt. Der Status des Strings ändert sich in **[!UICONTROL Übersetzt]**.
+Wenn der Erfassungsvorgang erkennt, dass bereits eine Übersetzung vorhanden ist, wird diese Übersetzung im **[!UICONTROL Text]** -Spalte der Zeichenfolge. Der Status der Zeichenfolge wird in **[!UICONTROL Übersetzt]**.
 
 Bei noch nicht übersetzten Zeichenfolgen ist das Feld **[!UICONTROL Text]** leer und der Status lautet **[!UICONTROL Zu übersetzen]**.
 
 ### Strings filtern {#filtering-strings}
 
-Standardmäßig wird jede Zielsprache der Webanwendung angezeigt. Es gibt zwei Standardfilter: Sprache und Status. Wählen Sie die Schaltfläche **[!UICONTROL Filter]** und dann die Option **[!UICONTROL Nach Sprache oder Status]** aus, um die jeweiligen Dropdown-Listen anzuzeigen. Sie können auch einen erweiterten Filter erstellen. Weiterführende Informationen dazu finden Sie auf [dieser Seite](../../platform/using/creating-filters.md#creating-an-advanced-filter).
+Standardmäßig wird jede Übersetzungssprache der Webanwendung angezeigt. Es gibt zwei Standardfilter: Sprache und Status. Klicken Sie auf **[!UICONTROL Filter]** Schaltfläche und klicken Sie auf **[!UICONTROL Nach Sprache oder Status]** , um die entsprechenden Dropdown-Felder anzuzeigen. Sie können auch einen erweiterten Filter erstellen. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../platform/using/creating-filters.md#creating-an-advanced-filter).
 
 ![](assets/s_ncs_admin_survey_trad_tab_en.png)
 
@@ -87,13 +87,13 @@ Wenn Sie nur unübersetzte Strings anzeigen möchten, wählen Sie in der Dropdow
 
    Im oberen Bereich des Fensters wird der Quellstring angezeigt.
 
-1. Geben Sie im unteren Bereich die Übersetzung ein. Aktivieren Sie zur Validierung die Option **[!UICONTROL Validierte Übersetzung]**.
+1. Geben Sie die Übersetzung im unteren Bereich ein. Um sie zu genehmigen, überprüfen Sie die **[!UICONTROL Übersetzung genehmigt]** -Option.
 
    >[!NOTE]
    >
    >Die Validierung von Übersetzungen ist optional und blockiert nicht den Vorgang.
 
-   Nicht-validierte Übersetzungen werden als **[!UICONTROL Übersetzt]** angezeigt. Validierte Übersetzungen werden als **[!UICONTROL Validiert]** angezeigt.
+   Nicht genehmigte Übersetzungen werden als **[!UICONTROL Übersetzt]**. Validierte Übersetzungen werden angezeigt als **[!UICONTROL Genehmigt]**.
 
 ## Übersetzungen extern durchführen {#externalizing-translation}
 
@@ -132,9 +132,9 @@ Zeichenfolgen können exportiert und dann wieder importiert werden, um sie mit e
 
 >[!NOTE]
 >
->Die Namen der Exportdateien werden automatisch erstellt. Wenn derselbe Export mehrmals durchgeführt wird, werden die vorhandenen Dateien durch die neuen ersetzt. Wenn Sie die vorherigen Dateien behalten möchten, ändern Sie den **[!UICONTROL Zielordner]** und wählen Sie erneut **[!UICONTROL Start]** aus, um den Export durchzuführen.
+>Die Namen der Exportdateien werden automatisch generiert. Wenn Sie denselben Export mehrmals durchführen, ersetzen Sie vorhandene Dateien durch die neuen. Wenn Sie die vorherigen Dateien beibehalten müssen, ändern Sie die **[!UICONTROL Zielordner]** Klicken Sie auf **[!UICONTROL Starten]** erneut, um den Export auszuführen.
 
-Wenn Sie Dateien im **CSV-Format** exportieren, wird jede Sprache mit einem Status und einem Validierungsstatus verknüpft. In der Spalte **Validieren?** können Sie eine Übersetzung validieren. Diese Spalte kann die Werte **Ja** oder **Nein** enthalten. Wie beim integrierten Editor (siehe [Übersetzungen im Editor verwalten](#managing-translations-in-the-editor)) ist das Validieren von Übersetzungen optional und blockiert den Fortschritt nicht.
+Beim Exportieren von Dateien in **CSV-Format**, wird jede Sprache mit einem Status und Genehmigungsstatus verknüpft. Die **Genehmigen?** -Spalte ermöglicht die Validierung einer Übersetzung. Diese Spalte kann Werte enthalten. **Ja** oder **Nein**. Wie beim integrierten Editor (siehe [Übersetzungen im Editor verwalten](#managing-translations-in-the-editor)) ist das Validieren von Übersetzungen optional und blockiert den Fortschritt nicht.
 
 ### Dateien importieren {#importing-files}
 
@@ -158,19 +158,19 @@ Nach dem Abschluss der externen Übersetzung können Sie die übersetzten Dateie
 
 ## Anzeigesprache in Formularen ändern {#changing-forms-display-language}
 
-Webformulare werden in der Standardsprache angezeigt, die in den Eigenschaften der Webanwendung im Tab **[!UICONTROL Lokalisierung]** spezifiziert sind. Um die Sprache zu ändern, fügen Sie die folgenden Zeichen an das Ende der URL hinzu (wobei **xx** das Symbol für die Sprache ist):
+Webformulare werden in der Standardsprache angezeigt, die in der **[!UICONTROL Lokalisierung]** in den Eigenschaften der Webanwendung. Um Sprachen zu ändern, müssen Sie die folgenden Zeichen am Ende der URL hinzufügen (wobei **xx** ist das Symbol der Sprache):
 
 ```
 ?lang=xx
 ```
 
-Wenn die Sprache der erste oder einzige Parameter der URL ist. Beispiel: **https://myserver/webApp/APP34**
+, wenn die Sprache der erste oder einzige Parameter der URL ist. Beispiel: **https://myserver/webApp/APP34**
 
 ```
 &lang=xx
 ```
 
-Wenn es vor der Sprache in der URL noch andere Parameter gibt. Beispiel: **https://myserver/webApp/APP34?status=1&amp;lang=en**
+, wenn vor der Sprache in der URL noch andere Parameter vorhanden sind. Beispiel: **https://myserver/webApp/APP34?status=1&amp;lang=en**
 
 Die standardmäßig verfügbaren Übersetzungssprachen und Wörterbücher sind unten aufgeführt.
 
@@ -414,7 +414,7 @@ Die standardmäßig verfügbaren Übersetzungssprachen und Wörterbücher sind u
 
 ## Beispiel: eine Web-Anwendung in mehreren Sprachen anzeigen {#example--displaying-a-web-application-in-several-languages}
 
-Das folgende Webformular ist in vier Sprachen verfügbar: Englisch, Französisch, Deutsch und Spanisch. Die Zeichenfolgen wurden alle über den Tab **[!UICONTROL Übersetzung]** des Webformulars übersetzt. Da die Standardsprache Englisch ist, verwenden Sie bei der Veröffentlichung der Umfrage die Standard-URL, um den Inhalt auf Englisch anzuzeigen.
+Das folgende Webformular ist in vier Sprachen verfügbar: Englisch, Französisch, Deutsch und Spanisch. Die Zeichenfolgen wurden alle über die **[!UICONTROL Übersetzung]** im Webformular. Da die Standardsprache Englisch ist, verwenden Sie bei der Veröffentlichung der Umfrage die Standard-URL, um sie auf Englisch anzuzeigen.
 
 ![](assets/s_ncs_admin_survey_trad_sample_fr.png)
 
@@ -441,7 +441,7 @@ Fügen Sie **?lang=es** oder **?lang=de** hinzu, um den Inhalt auf Spanisch oder
 
 ### System-Strings übersetzen {#translating-the-system-strings}
 
-Systemstrings sind native Zeichenfolgen, die von allen Webanwendungen verwendet werden. Beispiel: die Schaltflächen **[!UICONTROL Weiter]**, **[!UICONTROL Zurück]**, **[!UICONTROL Validieren]**, die Nachricht **[!UICONTROL Lädt...]** usw. Standardmäßig enthalten manche Sprachen ein Wörterbuch mit Übersetzungen für diese Strings. Die Liste der Sprachen finden Sie in [Anzeigesprache in Formularen ändern](#changing-forms-display-language).
+Systemstrings sind native Zeichenfolgen, die von allen Webanwendungen verwendet werden. Beispiel: **[!UICONTROL Nächste]** , **[!UICONTROL Vorherige]**, **[!UICONTROL Genehmigen]** Schaltflächen, **[!UICONTROL Laden]** Nachrichten usw. Standardmäßig enthalten einige Sprachen ein Wörterbuch mit Übersetzungen für diese Zeichenfolgen. Die Liste der Sprachen finden Sie in [Anzeigesprache in Formularen ändern](#changing-forms-display-language).
 
 Wenn Sie Ihre Webanwendung in eine Sprache übersetzen, für die es kein System-Wörterbuch gibt, erscheint ein Warnhinweis, der Ihnen mitteilt, dass manche Übersetzungen fehlen.
 

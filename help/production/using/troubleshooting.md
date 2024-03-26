@@ -11,7 +11,7 @@ exl-id: 78c65b31-e3d9-4a46-a101-26f35d00a4ee
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '226'
-ht-degree: 23%
+ht-degree: 17%
 
 ---
 
@@ -38,7 +38,7 @@ Bei Problemen mit Sendungen können spezifische Aktionen durchgeführt werden:
 
 **Verwandtes Thema**:
 
-[Leistungsprobleme beim Versand](../../delivery/using/delivery-performances.md)
+[Performance-Probleme beim Versand](../../delivery/using/delivery-performances.md)
 
 ## Arbeiten mit Protokollen {#working-with-logs}
 
@@ -47,11 +47,11 @@ Im Folgenden finden Sie einige Tipps zur Verbesserung Ihres Erlebnisses mit Prot
 * [Protokollgenauigkeit](../../production/using/log-precision.md)
 * [Probleme mit Trackinglogs](../../production/using/tracking-logs-issues.md)
 
-## Probleme in Bezug auf die Datenbank {#database-issues}
+## Datenbankprobleme {#database-issues}
 
 Erfahren Sie, wie Sie Leistungsprobleme lösen können, indem Sie die folgenden Abschnitte lesen:
 
-* [Datenbankleistung](../../production/using/database-performances.md)
+* [Datenbank-Performance](../../production/using/database-performances.md)
 * [Codierung der Oracle-Datenbank](../../production/using/encoding-of-the-oracle-database.md)
 
 ## Verbindungsverbesserungen {#connection-improvements}
@@ -61,7 +61,7 @@ Falls Verbindungsprobleme auftreten, finden Sie hier einige Möglichkeiten, dies
 * [Verbindung schlägt fehl](../../production/using/failure-to-connect.md)
 * [Verbindungsgrenzwerte](../../production/using/connection-thresholds.md)
 
-## Behebung technischer Probleme {#technical-troubleshooting}
+## Technische Fehlerbehebung {#technical-troubleshooting}
 
 Gehen Sie zu den folgenden Abschnitten, um mehr über spezifische Probleme zu erfahren:
 

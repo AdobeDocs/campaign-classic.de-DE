@@ -10,7 +10,7 @@ exl-id: 0ba8a3d0-36d7-42f3-b281-0255e49b5fa3
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '782'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -101,15 +101,15 @@ Zum Ändern von Berechtigungen haben Sie folgende Möglichkeiten:
 
   ![](assets/s_ncs_user_folder_properties_security02.png)
 
-* **Gruppe oder Benutzer berechtigen**: Klicken Sie hierzu auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wählen Sie die Gruppe oder den Benutzer aus, denen Berechtigungen bezüglich des Ordners zugewiesen werden sollen.
-* **Gruppe oder Benutzer verbieten**: Klicken Sie hierzu auf die Schaltfläche **[!UICONTROL Löschen]** und wählen Sie die Gruppe oder den Benutzer aus, denen Sie jegliche Berechtigung bezüglich des Ordners entziehen möchten.
+* **Gruppe oder Benutzer zulassen**. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wählen Sie die Gruppe oder den Benutzer aus, denen Sie Berechtigungen für diesen Ordner zuweisen möchten.
+* **Gruppe oder Benutzer verbieten**. Klicken Sie dazu auf **[!UICONTROL Löschen]** und wählen Sie die Gruppe oder den Benutzer aus, aus der Sie die Autorisierung für diesen Ordner entfernen möchten.
 * **Berechtigungen einer Gruppe oder eines Benutzers auswählen**: Klicken Sie hierzu auf die betroffene Gruppe oder den Benutzer und wählen Sie anschließend die Zugriffsberechtigungen aus bzw. ab, die Sie zuweisen oder entziehen möchten.
 
   ![](assets/s_ncs_user_folder_properties_security03.png)
 
 ### Berechtigungen ausdehnen {#propagate-permissions}
 
-Sie können Berechtigungen und Zugriffsberechtigungen ausdehnen. Wählen Sie dazu die Option **[!UICONTROL Ausdehnen]** in den Dateieigenschaften aus.
+Sie können Berechtigungen und Zugriffsberechtigungen ausdehnen. Wählen Sie dazu die **[!UICONTROL Propagat]** in den Ordnereigenschaften.
 
 Die in diesem Fenster festgelegten Berechtigungen werden dadurch auf alle Unterordner des aktuellen Verzeichnisknotens ausgeweitet. Die Berechtigungen können anschließend für jeden einzelnen der Unterordner überschrieben werden.
 

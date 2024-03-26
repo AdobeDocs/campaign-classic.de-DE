@@ -10,8 +10,8 @@ content-type: reference
 exl-id: 9fa3ce08-3007-4c65-9841-bad339428b7c
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '361'
-ht-degree: 100%
+source-wordcount: '362'
+ht-degree: 85%
 
 ---
 
@@ -51,7 +51,7 @@ Mit dieser Integration kann beispielsweise ein Newsletter in Adobe Experience Ma
    ![](assets/aem_uc_6.png)
 
 1. Starten Sie dann wie im vorherigen Schritt den Workflow **[!UICONTROL Für Adobe Campaign genehmigen]**.
-1. Am oberen Seitenrand wird ein Hinweis zum Haftungsausschluss angezeigt. Wählen Sie **[!UICONTROL Abgeschlossen]** aus, um die Überprüfung zu bestätigen, und danach **[!UICONTROL Ok]**.
+1. Am oberen Rand Ihrer Seite wird ein Haftungsausschluss angezeigt. Klicks **[!UICONTROL Fertig]** , um die Überprüfung zu bestätigen, und klicken Sie auf **[!UICONTROL Ok]**.
 
    ![](assets/aem_uc_7.png)
 
@@ -74,7 +74,7 @@ Ihr Newsletter ist jetzt fertig und in Adobe Campaign synchronisiert.
 1. Fügen Sie zu Ihrem Versand einen **[!UICONTROL Titel]** hinzu und wählen Sie dann **[!UICONTROL Fortfahren]** aus.
 1. Wählen Sie die Schaltfläche **[!UICONTROL Synchronisieren]** aus.
 
-   Wenn diese Schaltfläche nicht in der Benutzeroberfläche zu sehen ist, wählen Sie die Schaltfläche **[!UICONTROL Eigenschaften]** und danach den Tab **[!UICONTROL Erweitert]** aus. Im Feld **[!UICONTROL Inhaltserstellung]** sollte **[!UICONTROL AEM]** und im Feld **[!UICONTROL AEM-Konto]** sollte Ihre AEM-Instanz stehen.
+   Wenn diese Schaltfläche nicht in der Benutzeroberfläche angezeigt wird, klicken Sie auf die Schaltfläche **[!UICONTROL Eigenschaften]** und wählen Sie die **[!UICONTROL Erweitert]** Registerkarte. Die **[!UICONTROL Inhaltsbearbeitungsmodus]** -Feld auf **[!UICONTROL AEM]** mit Ihrer AEM -Instanz im **[!UICONTROL AEM]** -Feld.
 
    ![](assets/aem_uc_11.png)
 

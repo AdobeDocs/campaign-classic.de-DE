@@ -7,8 +7,8 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Cla
 exl-id: 65ab4577-3126-4579-8fcc-e93772ebd1e8
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '543'
-ht-degree: 11%
+source-wordcount: '514'
+ht-degree: 9%
 
 ---
 
@@ -91,11 +91,11 @@ Sie müssen eine [!DNL Microsoft SQL Server] externes Konto, um Ihre Campaign-In
 
 1. Konfigurieren Sie die **[!UICONTROL Microsoft SQL Server]** Externe Kontoauthentifizierung:
 
-   * **[!UICONTROL Server]**: URL des [!DNL Microsoft SQL Server]-Servers.
+   * **[!UICONTROL Server]**: URL der [!DNL Microsoft SQL Server] Server.
 
    * **[!UICONTROL Konto]**: Name des Benutzers.
 
-   * **[!UICONTROL Passwort]**: Passwort des Benutzerkontos.
+   * **[!UICONTROL Passwort]**: Kennwort für Benutzerkonten.
 
    * **[!UICONTROL Datenbank]**: Name der Datenbank (optional).
 

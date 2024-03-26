@@ -10,8 +10,8 @@ topic-tags: connectors
 exl-id: 0fdf8259-5cab-4a9d-adb3-6c55ec5c8851
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 73%
+source-wordcount: '336'
+ht-degree: 67%
 
 ---
 
@@ -26,7 +26,7 @@ Verwenden von Campaign **Federated Data Access** (FDA), um in externen Datenbank
 
 ## Sybase IQ-Konfiguration {#configuring-sybase}
 
-Die Verbindung zu einer externen Sybase IQ-Datenbank über die FDA-Option erfordert die zusätzlichen unten aufgeführten Konfigurationen auf dem Adobe Campaign Server.
+Die Verbindung zu einer externen Sybase IQ-Datenbank über die FDA-Option erfordert die folgenden zusätzlichen Konfigurationen auf dem Adobe Campaign-Server.
 
 >[!NOTE]
 >

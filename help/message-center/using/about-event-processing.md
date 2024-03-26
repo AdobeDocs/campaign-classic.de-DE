@@ -10,8 +10,8 @@ topic-tags: event-processing
 exl-id: 3d85866a-6339-458c-807a-b267cce772b8
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '718'
-ht-degree: 100%
+source-wordcount: '720'
+ht-degree: 92%
 
 ---
 
@@ -31,7 +31,7 @@ Beispiel für Ereignisdaten:
 
 Um Transaktionsnachrichten-Ereignisse zu verarbeiten, werden die folgenden Schritte auf der/den Ausführungsinstanz(en) ausgeführt:
 
-1. [Ereignisabruf](#event-collection)
+1. [Ereignissammlung](#event-collection)
 1. [Weiterleitung des Ereignisses zu einer Nachrichtenvorlage](#routing-towards-a-template)
 1. Anreicherung des Ereignisses mit Personalisierungsdaten
 1. [Versandausführung](../../message-center/using/delivery-execution.md)
@@ -82,12 +82,12 @@ Standardmäßig erfolgt das Routing auf Basis folgender Informationen:
 
 ## Ereignisstatus {#event-statuses}
 
-Im **Ereignisverlauf** unter **[!UICONTROL Message Center]** > **[!UICONTROL Ereignisverlauf]** werden alle verarbeiteten Ereignisse in einer gemeinsamen Übersicht zusammengefasst. Sie können entweder nach Ereignistyp oder nach **Status** kategorisiert werden. Folgende Status existieren:
+Die **Ereignisverlauf**, unter **[!UICONTROL Message Center]** > **[!UICONTROL Ereignisverlauf]** , gruppiert alle verarbeiteten Ereignisse in einer einzigen Ansicht. Sie können nach Ereignistyp oder nach **status**. Diese Status sind:
 
 * **Ausstehend**: Bei dem Ereignis kann es sich um Folgendes handeln:
 
-   * Ereignis, das kurz zuvor eingetreten ist, jedoch noch nicht verarbeitet wurde. Die Spalte **[!UICONTROL Fehleranzahl]** zeigt den Wert 0. Es wurde noch keine E-Mail-Vorlage zugeordnet.
-   * Ereignis, das verarbeitet wurde, bei dessen Bestätigung jedoch Fehler aufgetreten sind. Die Spalte **[!UICONTROL Fehleranzahl]** zeigt einen Wert ungleich 0 an. In der Spalte **[!UICONTROL Verarbeitung geplant für]** kann das Datum des nächsten Verarbeitungsversuchs abgelesen werden.
+   * Ein Ereignis, das gerade erfasst wurde und noch nicht verarbeitet wurde. Die Spalte **[!UICONTROL Fehleranzahl]** gibt den Wert 0 an. Die E-Mail-Vorlage wurde noch nicht verknüpft.
+   * Ein verarbeitetes Ereignis, dessen Bestätigung jedoch fehlerhaft ist. Die Spalte **[!UICONTROL Fehleranzahl]** zeigt einen Wert an, der nicht 0 ist. Um zu erfahren, wann dieses Ereignis erneut verarbeitet wird, konsultieren Sie die Spalte **[!UICONTROL Prozess angefordert am]**.
 
 * **Versand ausstehend**: Ereignis, das verarbeitet und dem eine Versandvorlage zugeordnet wurde. Die E-Mail ist versandbereit und der Standard-Versandprozess wird angewendet. Details können direkt im Versand eingesehen werden.
 * **Gesendet**, **Ignoriert** und **Versandfehler**: Versandstatus, die vom Workflow **updateEventsStatus** abgerufen werden. Details können direkt im entsprechenden Versand eingesehen werden.

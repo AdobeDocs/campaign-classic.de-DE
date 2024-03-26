@@ -8,9 +8,9 @@ role: User, Data Architect
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
-workflow-type: ht
-source-wordcount: '866'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '852'
+ht-degree: 88%
 
 ---
 
@@ -38,7 +38,7 @@ Profile können verschiedenen Kategorien zugeteilt werden, welche sich im Speich
 
 Versandempfänger werden in der Datenbank in Form von Profilen mit den entsprechenden Informationen – Nachname, Vorname, Adressdaten, Abonnements, Sendungen etc. – gespeichert. Sendungen innerhalb von Marketingkampagnen können sich an Empfängergruppen aus der Datenbank richten, die nach bestimmten – einfachen oder komplexen – Kriterien erstellt werden.
 
-Eine weitere Möglichkeit besteht darin, Kampagnen für Profile zu erstellen, die nicht in der Datenbank, sondern in Dateien enthalten sind. In diesem Fall handelt es sich um s. g. externe Sendungen. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients).
+Sie können auch Kampagnen für Empfänger erstellen, deren Profile nicht in der Datenbank, sondern in Dateien gespeichert sind. Diese werden als &quot;externe&quot; Sendungen bezeichnet. Weitere Informationen zu diesem Versandtyp finden Sie unter [diese Seite](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients).
 
 Die gängigsten Methoden der Profilerstellung sind:
 
@@ -52,7 +52,7 @@ Die gängigsten Methoden der Profilerstellung sind:
 
 ## Profile und Zielgruppen {#profiles-and-targets}
 
-Über den Link **[!UICONTROL Profile und Zielgruppen]** können Sie in der Datenbank enthaltene Empfängerprofile anzeigen. Sie können neue Empfänger erstellen, bestehende bearbeiten und auf Profile zugreifen. Lesen Sie hierzu auch [diese Seite](../../platform/using/editing-a-profile.md).
+Die **[!UICONTROL Profile und Zielgruppen]** -Link ermöglicht die Anzeige von in der Adobe Campaign-Datenbank gespeicherten Empfängern. Sie können einen neuen Empfänger erstellen, einen vorhandenen Empfänger bearbeiten und auf sein Profil zugreifen. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../platform/using/editing-a-profile.md).
 
 ![](assets/d_ncs_user_interface_target_link.png)
 
@@ -66,9 +66,9 @@ Außerdem haben Sie an dieser Stelle Zugriff auf:
 
 Über die Empfängerseite sind die gängigsten Aktionen möglich. Sie können Profile bearbeiten, aktualisieren, sortieren, löschen oder neue Profile erstellen.
 
-Erweiterte Funktionalitäten stehen über den Navigationsbaum zur Verfügung. Klicken Sie hierfür auf die **[!UICONTROL Explorer]**-Schaltfläche in der Symbolleiste der Adobe Campaign-Startseite.
+Für erweiterte Profilmanipulationen müssen Sie die Adobe Campaign-Struktur bearbeiten. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Explorer]** auf der Adobe Campaign-Startseite.
 
-Standardmäßig sind die Empfänger im Verzeichnisknoten **[!UICONTROL Profile und Zielgruppen > Empfänger]** gespeichert. Sie haben an dieser Stelle nicht nur die Möglichkeit, Empfänger zu erstellen, sondern auch
+Standardmäßig werden Empfänger in der Baumstruktur im Knoten **[!UICONTROL Profile und Zielgruppen > Empfänger]** gespeichert. Sie können Empfänger aus dieser Ansicht erstellen sowie:
 
 * Profile der Datenbank zu sortieren und zu filtern – [Mehr dazu](../../platform/using/filtering-options.md)
 * Profile der Datenbank zu verschieben, zu duplizieren oder zu löschen – [Mehr dazu](../../platform/using/managing-profiles.md)

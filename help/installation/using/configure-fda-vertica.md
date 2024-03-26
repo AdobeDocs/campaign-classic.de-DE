@@ -10,8 +10,8 @@ topic-tags: connectors
 exl-id: 8b2a9c73-807a-4936-9fd6-9d26c805a31f
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 26%
+source-wordcount: '392'
+ht-degree: 23%
 
 ---
 
@@ -170,5 +170,5 @@ Der Connector unterstützt die folgenden Optionen:
 
 | Option | Beschreibung  |
 |---|---|
-| TimeZoneName | Standardmäßig leer, d. h. die Systemzeitzone des Campaign Classic-App-Servers wird verwendet. Mit dieser Option können Sie den Sitzungsparameter TIMEZONE erzwingen. |
+| TimeZoneName | Standardmäßig leer, d. h. die Systemzeitzone des Campaign Classic-App-Servers wird verwendet. Die Option kann verwendet werden, um den Sitzungsparameter TIMEZONE zu erzwingen. |
 

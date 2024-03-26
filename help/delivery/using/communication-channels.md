@@ -8,9 +8,9 @@ feature: Cross Channel Orchestration, Email, SMS, In App, Direct Mail, Push
 role: User
 exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: ht
-source-wordcount: '1223'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1224'
+ht-degree: 87%
 
 ---
 
@@ -24,14 +24,14 @@ Zu den Kernfunktionen zählen die Zielgruppenbestimmung, die Definition und Pers
 >
 >Adobe Campaign bietet eine Reihe von Tools zur Überwachung Ihrer Zustellbarkeit und zur Optimierung des E-Mail-Versands. Weiterführende Informationen finden Sie in diesem [Abschnitt](about-deliverability.md).
 
-Sendungen können automatisiert werden, indem ein Versand vorbereitet und/oder über einen Workflow gesendet wird. Weiterführende Informationen zu Versandaktivitäten in Workflows finden Sie in [diesem Abschnitt](../../workflow/using/about-action-activities.md).
+Der Versand kann automatisiert werden, indem ein Versand vorbereitet und/oder im Rahmen eines Workflows gesendet wird. Weitere Informationen zu Versandaktivitäten in Workflows finden Sie unter [diesem Abschnitt](../../workflow/using/about-action-activities.md).
 
 Folgende Versandkanäle stehen in Adobe Campaign zur Verfügung:
 
 1. **E-Mail-Kanal**: Ein E-Mail-Versand richtet personalisierte elektronische Nachrichten an eine zuvor bestimmte Zielpopulation. Siehe [Über den E-Mail-Kanal](about-email-channel.md).
 1. **Briefpost-Kanal**: Ein Briefpost-Versand erzeugt eine Ausgabedatei, die die Daten der Zielpopulation enthält. Weitere Informationen finden Sie unter [Über den Briefpost-Kanal](about-direct-mail-channel.md).
 1. **Mobile-Kanal**: Ein Versand über den Mobile-Kanal richtet personalisierte SMS- oder LINE-Nachrichten an eine zuvor bestimmte Zielpopulation. Siehe [SMS-Kanal](sms-channel.md).
-1. **Mobile-App-Kanal**: Ein Mobile-App-Versand ermöglicht den Versand von Benachrichtigungen an iOS- und Android-Systeme. Siehe hierzu das Kapitel [Mobile App Channel](about-mobile-app-channel.md).
+1. **Mobile-App-Kanal**: Mit Mobile-App-Sendungen können Sie Benachrichtigungen an iOS- und Android-Systeme senden. Siehe Abschnitt [Mobile-App-Kanal](about-mobile-app-channel.md) Kapitel.
 
    Andere Kanäle werden auf [dieser Seite](steps-about-delivery-creation-steps.md#other-channels) beschrieben.
 
@@ -55,8 +55,8 @@ Der [E-Mail-Kanal](about-email-channel.md) ist einer der wichtigsten Kanäle in 
 Verschiedene Typen von E-Mails können gesendet werden:
 
 * Einmalige E-Mails: E-Mails, die ein einziges Mal an eine definierte Zielgruppe gesendet werden. Sie werden zur Verbreitung spezifischer Inhalte verwendet, die nur ein einziges Mal vorbereitet und gesendet werden (Newsletter, Werbe-E-Mails etc.).
-* Wiederkehrende E-Mails: Ein und dieselbe E-Mail wird regelmäßig gesendet und die Sendungen und Berichte werden regelmäßig aggregiert. Die E-Mail selbst bleibt unverändert, doch die Zielgruppe ändert sich je nach Versandtag. Ein Beispiel dafür sind Geburtstags-E-Mails. Weiterführende Informationen dazu finden Sie unter [Wiederkehrender Versand](../../workflow/using/recurring-delivery.md).
-* Transaktions-E-Mails: einzelne E-Mails, die auf der Basis des Kundenverhaltens ausgelöst werden. Siehe auch [Transaktionsnachrichten](../../message-center/using/about-transactional-messaging.md).
+* Wiederkehrende E-Mails: In einer Kampagne wird regelmäßig dieselbe E-Mail gesendet und jeder Versand und seine Berichte werden regelmäßig aggregiert. Dieselbe E-Mail wird gesendet, in der Regel aber an eine andere Zielgruppe, basierend auf der für den Versandtag infrage kommenden Zielgruppe. Ein häufiges Beispiel ist eine Geburtstags-E-Mail. Weitere Informationen hierzu finden Sie unter [Wiederkehrende Sendungen](../../workflow/using/recurring-delivery.md).
+* Transaktions-E-Mails: einzelne E-Mails, die basierend auf dem Verhalten Ihrer Kunden ausgelöst werden. Siehe Abschnitt [Transaktionsnachrichten](../../message-center/using/about-transactional-messaging.md).
 
 Weiterführende Informationen zum Versand und Empfehlungen dazu finden Sie im Abschnitt [Best Practices beim Versand](delivery-best-practices.md).
 
@@ -117,7 +117,7 @@ Mit einem **wiederkehrenden Versand** können Sie jedes Mal, wenn eine bestimmte
 
 Wenn Sie diese Aktivität beispielsweise einmal im Monat ausführen, ergibt das im Jahr 12 Sendungen.
 
-Wiederkehrende Sendungen werden über Workflows mit der Aktivität [](../../workflow/using/recurring-delivery.md)Wiederkehrender Versand erstellt. Ein Beispiel für diese Aktivität finden Sie in diesem Abschnitt: [Erstellen eines wiederkehrenden Versands in einem Zielgruppen-Workflow](../../workflow/using/sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
+Wiederkehrende Sendungen werden in Workflows über die [Wiederkehrende Versandaktivität](../../workflow/using/recurring-delivery.md). Ein Beispiel für diese Aktivität finden Sie in diesem Abschnitt: [Erstellen eines wiederkehrenden Versands in einem Zielgruppen-Workflow](../../workflow/using/sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
 
 ### Versand (fortlaufend) {#continuous-delivery}
 

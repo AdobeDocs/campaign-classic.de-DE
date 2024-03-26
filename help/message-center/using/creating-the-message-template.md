@@ -8,7 +8,7 @@ exl-id: a52bc140-072e-4f81-b6da-f1b38662bce5
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '518'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -80,7 +80,7 @@ Gehen Sie wie folgt vor, um Personalisierungsfelder in einen E-Mail-Nachrichteni
 
    ![](assets/messagecenter_create_custo_002.png)
 
-1. Ergänzen Sie das Feld unter Einhaltung folgender Syntax: .**Elementname**.@**Attributname**. Beispiel:
+1. Füllen Sie das Tag mit der folgenden Syntax aus: **Elementname**.@**Attributname** wie unten dargestellt.
 
    ![](assets/messagecenter_create_custo_003.png)
 

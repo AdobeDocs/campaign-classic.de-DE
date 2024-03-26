@@ -10,8 +10,8 @@ content-type: reference
 exl-id: 13717b3b-d34a-40bc-9c9e-dcf578fc516e
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1217'
-ht-degree: 100%
+source-wordcount: '1215'
+ht-degree: 98%
 
 ---
 
@@ -183,7 +183,7 @@ function processPipelineMessage(xmlTrigger)
 
 ### Einschränkungen {#constraints}
 
-Dieser Code erfordert optimale Leistung, da er mit hoher Frequenz ausgeführt wird, was sich u. U. negativ auf andere Marketing-Aktivitäten auswirken kann. Das gilt insbesondere, wenn mehr als 1 Million Auslöserereignisse pro Stunde auf dem Marketing-Server verarbeitet werden oder wenn der Server nicht entsprechend angepasst ist.
+Dieser Code erfordert optimale Performance, da er mit hoher Frequenz ausgeführt wird, was sich u. U. negativ auf andere Marketing-Aktivitäten auswirken kann. Das gilt insbesondere, wenn mehr als 1 Million Auslöserereignisse pro Stunde auf dem Marketing-Server verarbeitet werden oder wenn der Server nicht entsprechend angepasst ist.
 
 Der Kontext dieses JavaScripts ist begrenzt. Es sind nicht alle Funktionen der API verfügbar. Beispielsweise funktionieren &quot;getOption()&quot; und &quot;getCurrentdate()&quot; nicht.
 
@@ -220,7 +220,7 @@ Die Ereignisse können mit einem einfachen Formular, das auf dem Ereignisschema 
 
 >[!NOTE]
 >
->Der Knoten &quot;Pipeline Event&quot; ist nicht nativ und muss hinzugefügt werden. Außerdem muss in Campaign das zugehörige Formular erstellt werden. Diese Aufgaben sind erfahrenen Benutzern vorbehalten. Weitere Informationen finden Sie in den folgenden Abschnitten: [Navigationsbaum](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy) und [Bearbeiten von Formularen](../../configuration/using/editing-forms.md).
+>Der Knoten &quot;Pipeline Event&quot; ist nicht nativ und muss hinzugefügt werden. Außerdem muss in Campaign das zugehörige Formular erstellt werden. Diese Aufgaben sind erfahrenen Benutzern vorbehalten. Weitere Informationen hierzu finden Sie in den folgenden Abschnitten: [Navigationshierarchie](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy). und [Formulare bearbeiten](../../configuration/using/editing-forms.md).
 
 ![](assets/triggers_7.png)
 
@@ -230,14 +230,14 @@ Die Ereignisse können mit einem einfachen Formular, das auf dem Ereignisschema 
 
 Bei der Abstimmung gleicht Adobe Analytics den Kunden mit der Adobe Campaign-Datenbank ab. Das Kriterium für die Abstimmung kann beispielsweise &quot;shopper_id&quot; sein.
 
-Aus Leistungsgründen muss die Abstimmung von einem Workflow im Batch-Modus vorgenommen werden.
+Aus Performance-Gründen muss die Abstimmung von einem Workflow im Batch-Modus vorgenommen werden.
 Die Häufigkeit muss für eine optimale Arbeitslast auf 15 Minuten gesetzt werden. Die Verzögerung zwischen dem Empfang eines Ereignisses in Adobe Campaign und dessen Verarbeitung durch einen Marketing-Workflow beträgt daher bis zu 15 Minuten.
 
 ### Optionen zur Abstimmung von Einheiten in JavaScript {#options-unit-reconciliation}
 
-Es ist möglich, die Abstimmungsabfrage für jeden Auslöser im JavaScript auszuführen. Das sorgt für eine höhere Leistung und schnellere Ergebnisse. Dies kann für spezifische Anwendungsfälle erforderlich sein, wenn eine Reaktionsrate erforderlich ist.
+Es ist möglich, die Abstimmungsabfrage für jeden Auslöser im JavaScript auszuführen. Das sorgt für eine höhere Performance und schnellere Ergebnisse. Dies kann für spezifische Anwendungsfälle erforderlich sein, wenn eine Reaktionsrate erforderlich ist.
 
-Ist jedoch kein Index für &quot;shopper_id&quot; festgelegt, lässt sich dies nur schwer umsetzen. Wenn sich die Kriterien auf einem anderen Datenbank-Server als dem Marketing-Server befinden, wird ein Datenbank-Link mit geringer Leistung verwendet.
+Ist jedoch kein Index für &quot;shopper_id&quot; festgelegt, lässt sich dies nur schwer umsetzen. Wenn sich die Kriterien auf einem anderen Datenbank-Server als dem Marketing-Server befinden, wird ein Datenbank-Link mit geringer Performance verwendet.
 
 ### Workflow bereinigen {#purge-workflow}
 

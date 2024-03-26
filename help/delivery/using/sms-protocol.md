@@ -8,7 +8,7 @@ feature: SMS
 role: Developer, Data Engineer
 exl-id: fded088a-11a2-4b87-a368-7b197334aca4
 source-git-commit: 73fd678d54ba1db647c1c188e8064b28466b3cd2
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '8448'
 ht-degree: 100%
 
@@ -466,7 +466,7 @@ In Adobe Campaign Classic werden die MOs allesamt in der inSMS-Datenbank gespeic
 
 Wenn diese Option aktiviert ist, werden die KPIs in Echtzeit auf der Hauptseite für den Versand aktualisiert, wenn ein Fehler-SR empfangen wird.
 
-Der Nachteil kann eine niedrige Leistung aufgrund der dadurch erzeugten Datenbankinhalte sein. Wenn diese Option deaktiviert ist, werden Statistiken vom **syncfromexec**-Workflow aktualisiert, der alle 20 Minuten ausgeführt wird.
+Der Nachteil kann eine niedrige Performance aufgrund der dadurch erzeugten Datenbankinhalte sein. Wenn diese Option deaktiviert ist, werden Statistiken vom **syncfromexec**-Workflow aktualisiert, der alle 20 Minuten ausgeführt wird.
 
 Der KPI-Mechanismus von Adobe Campaign Classic unterscheidet sich davon grundlegend, daher ist diese Option nicht verfügbar.
 

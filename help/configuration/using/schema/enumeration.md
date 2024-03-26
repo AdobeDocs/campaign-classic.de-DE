@@ -7,7 +7,7 @@ exl-id: 4cd67278-2623-4508-9a9f-9007c6a5f8ac
 source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
 source-wordcount: '198'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
@@ -72,11 +72,11 @@ Auflistungen werden zu Beginn eines Schemas definiert (bevor das Hauptelement de
    * long
    * Memo
    * MNTOKEN
-   * percent
+   * Prozent
    * primarykey
    * short
    * Zeichenfolge
-   * Zeit
+   * time
    * timespan
    * uuid
 

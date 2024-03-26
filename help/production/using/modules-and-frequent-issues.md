@@ -11,8 +11,8 @@ topic-tags: troubleshooting
 exl-id: dbd50178-0a16-46ed-bfad-47beb3c2a420
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '280'
-ht-degree: 15%
+source-wordcount: '273'
+ht-degree: 12%
 
 ---
 
@@ -53,7 +53,7 @@ Im Folgenden finden Sie eine Liste der Module, die von häufigen Problemen betro
   </tr> 
   <tr> 
    <td> stat </td> 
-   <td> Führt Statistiken über MTA-Verbindungen<br /> </td> 
+   <td> Verwalten von MTA-Verbindungsstatistiken<br /> </td> 
    <td> Prüfen Sie dieses Modul, wenn keine E-Mails mehr gesendet werden.<br /> </td> 
   </tr> 
   <tr> 

@@ -8,7 +8,7 @@ exl-id: 7b562dba-7e4b-40a7-91db-7b9379de44ca
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '142'
-ht-degree: 100%
+ht-degree: 58%
 
 ---
 
@@ -20,7 +20,7 @@ Die **[!UICONTROL Segmente]**-Aktivität bietet eine Ansicht der verschiedenen T
 
 ![](assets/wf_split_cells.png)
 
-Die Segmentierungsaktivität ermöglicht benutzerspezifische Konfigurationen. Standardmäßig können Details in einem dedizierten Fenster mit den Tabs **[!UICONTROL Auswahl]** und **[!UICONTROL Erweitert]** eingesehen werden. Im unten abgebildeten Beispiel wurde das entsprechende Formular angepasst und ein Tab **[!UICONTROL Daten]** hinzugefügt, um die Zuordnung von Angeboten und Prioritätsniveaus zu den einzelnen Teilmengen zu erlauben:
+Diese Aktivität kann so konfiguriert werden, dass bestimmte Parameter entsprechend den Benutzeranforderungen eingegeben werden. Standardmäßig werden die Details der einzelnen Teilmengen in einem dedizierten Fenster über die **[!UICONTROL Auswahl]** und **[!UICONTROL Erweitert]** Registerkarten. Im folgenden Beispiel wurde das Formular geändert: a **[!UICONTROL Daten]** wurde hinzugefügt, um die Zuordnung eines Angebots und einer Prioritätsstufe für jede Teilmenge zu ermöglichen.
 
 ![](assets/wf_split_cells_with_customization.png)
 
@@ -49,4 +49,4 @@ Die Segmentierungsaktivität ermöglicht benutzerspezifische Konfigurationen. St
                 </container>
 ```
 
-Die Personalisierung von Formularen sollte erfahrenen Benutzern vorbehalten bleiben. Weiterführende Informationen finden Sie in diesem [Abschnitt](../../configuration/using/identifying-a-form.md).
+Die Personalisierung von Formularen sollte erfahrenen Benutzern vorbehalten bleiben. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../configuration/using/identifying-a-form.md).

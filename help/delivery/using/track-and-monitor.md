@@ -8,9 +8,9 @@ feature: Monitoring, Reporting
 role: User
 exl-id: a039a288-2e7b-4f35-9885-ead3ed4347af
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
-workflow-type: ht
-source-wordcount: '450'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '452'
+ht-degree: 92%
 
 ---
 
@@ -45,13 +45,13 @@ Um das Verhalten Ihrer Empfänger besser kennenzulernen, können Sie ihre Reakti
 
 Mehr dazu finden Sie im Abschnitt [Konfigurieren der Nachverfolgung](how-to-configure-tracked-links.md) und in der Beschreibung der [Indikatoren für die Nachverfolgung](../../reporting/using/delivery-reports.md#tracking-indicators).
 
-## Versandleistung {#delivery-performances}
+## Versand-Performance {#delivery-performances}
 
-Um die Geschwindigkeit der Nachrichtenzustellung zu messen, können Sie den Versanddurchsatz kontrollieren. Zur Messung der Versandgeschwindigkeit von Nachrichten werden zwei Kennzahlen herangezogen: Anzahl an gesendeten Nachrichten pro Stunde und die gesendete Datenmenge in Bits pro Sekunde. Weiterführende Informationen dazu finden Sie im Abschnitt [Versanddurchsatz](../../reporting/using/global-reports.md#delivery-throughput).
+Zur Messung der Versandgeschwindigkeit von Nachrichten können Sie den Versanddurchsatz steuern. Die Kriterien sind die Anzahl der gesendeten Nachrichten pro Stunde und die Größe der Nachrichten (in Bits pro Sekunde). Weitere Informationen finden Sie unter [Versanddurchsatz](../../reporting/using/global-reports.md#delivery-throughput).
 
 **Tipps**:
 
-* Bewahren Sie auf der Instanz keine fehlgeschlagenen Sendungen auf, da dadurch temporäre Tabellen gespeichert werden, was wiederum die Leistung beeinträchtigt.
+* Bewahren Sie auf der Instanz keine fehlgeschlagenen Sendungen auf, da dadurch temporäre Tabellen gespeichert werden, was wiederum die Performance beeinträchtigt.
 
 * Entfernen Sie nicht mehr benötigte Sendungen und inaktive Empfänger aus der Datenbank, um eine hohe Qualität der Adressen zu gewährleisten.
 
@@ -65,6 +65,6 @@ Bei Problemen mit Sendungen können spezifische Aktionen durchgeführt werden:
 
 * [Probleme mit der Bildanzeige](../../production/using/image-display-issues.md)
 
-* [Leistungsprobleme beim Versand](delivery-performances.md)
+* [Performance-Probleme beim Versand](delivery-performances.md)
 
 * [Probleme mit temporären Dateien](../../production/using/temporary-files.md) – *nur On-Premise-Kunden*

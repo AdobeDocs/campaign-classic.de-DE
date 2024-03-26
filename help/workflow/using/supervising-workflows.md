@@ -7,8 +7,8 @@ feature: Workflows
 exl-id: ca6d4bf4-7b3a-4d36-9fc3-0b83531d0132
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '654'
-ht-degree: 100%
+source-wordcount: '658'
+ht-degree: 90%
 
 ---
 
@@ -21,7 +21,7 @@ Dieses Anwendungsbeispiel zeigt die Erstellung eines Workflows zur Überwachung 
 Sie ermöglicht Ihnen Folgendes:
 
 * Die Erstellung eines Workflows zur Überwachung einer Reihe von geschäftsrelevanten Workflows.
-* Den Versand einer Benachrichtigung an einen Supervisor mithilfe einer Versandaktivität.
+* Den Versand einer Benachrichtigung an eine verantwortliche Person mithilfe einer Versandaktivität.
 
 Um den Status einer Reihe von Workflows zu überwachen, sind folgende Schritte erforderlich:
 
@@ -32,7 +32,7 @@ Um den Status einer Reihe von Workflows zu überwachen, sind folgende Schritte e
 
 >[!NOTE]
 >
->Zusätzlich zum Workflow können Sie mit der **Campaign Workflow-Heatmap** die aktuell aktiven Workflows im Detail analysieren. Weiterführende Informationen dazu finden Sie im [entsprechenden Abschnitt](heatmap.md).
+>Zusätzlich zum Workflow wird Campaign **Workflow-Heatmap** ermöglicht es Ihnen, die derzeit ausgeführten Workflows detailliert zu analysieren. Weitere Informationen hierzu finden Sie im [entsprechenden Abschnitt](heatmap.md).
 >
 >Weitere Informationen zur **Überwachung der Ausführung Ihrer Workflows** finden Sie in [diesem Abschnitt](monitoring-workflow-execution.md).
 
@@ -40,7 +40,7 @@ Um den Status einer Reihe von Workflows zu überwachen, sind folgende Schritte e
 
 Der zu überwachende Workflow-Ordner ist **CustomWorkflows** im Knoten **Administration > Betreibung > Technische Workflows**. Dieser Ordner enthält diverse geschäftsrelevante Workflows.
 
-Der **Monitoring-Workflow** wird an der Wurzel des Ordners der technischen Workflows unter dem Namen **Monitoring** gespeichert.
+Die **Monitoring-Workflow** wird im Stammverzeichnis des Ordners Technische Workflows gespeichert. Die verwendete Bezeichnung lautet **&quot;Überwachung&quot;**.
 
 Das folgende Schema stellt die Beziehungen zwischen den einzelnen Aktivitäten dar.
 
@@ -50,7 +50,7 @@ Der vorliegende Workflow besteht aus folgenden Aktivitäten:
 
 * **Beginn**,
 * **JavaScript-Code** zur Analyse des Ordners mit geschäftsspezifischen Workflows,
-* **Test** zum Start eines Versands an den Supervisor oder um den Workflow wiederaufzunehmen,
+* **Test** zum Start eines Versands an die verantwortliche Person oder um den Workflow wiederaufzunehmen,
 * **Versand** mit den Informationen sur Aufmachung der Nachricht,
 * **Warten** zur Steuerung der zeitlichen Intervalle zwischen den einzelnen Ausführungen des Workflows.
 
@@ -120,11 +120,11 @@ vars.strWorkflowStop = strStop;
 
 Die Testaktivität bestimmt, ob ein Versand oder ein neuer Workflow-Zyklus gestartet werden soll. In letzterem Fall wird die Warteaktivität aktiviert.
 
-Der Versand an den Supervisor wird gestartet, **wenn wenigstens eine der drei Ereignisvariablen &quot;vars.strWorkflowError&quot;, &quot;vars.strWorkflowPaused&quot;, &quot;vars.strWorkflowStop&quot; nicht null ist**.
+Der Versand an die verantwortliche Person wird gestartet, **wenn wenigstens eine der drei Ereignisvariablen &quot;vars.strWorkflowError&quot;, &quot;vars.strWorkflowPaused&quot;, &quot;vars.strWorkflowStop&quot; nicht null ist**.
 
 ![](assets/uc_monitoring_workflow_test.png)
 
-Die Warteaktivität kann dahingehend konfiguriert werden, dass sie den Monitoring-Workflow in regelmäßigen Abständen neu startet. Im vorliegenden Beispiel **beträgt die Wartezeit eine Stunde**.
+Die Warten -Aktivität kann so konfiguriert werden, dass sie den Monitoring-Workflow in regelmäßigen Abständen neu startet. Für diesen Anwendungsfall: **die Wartezeit auf eine Stunde festgelegt ist**.
 
 ![](assets/uc_monitoring_workflow_attente.png)
 
@@ -134,7 +134,7 @@ Die Versandaktivität basiert auf einer **Versandvorlage**, auf die über den Kn
 
 In der Vorlage müssen folgende Informationen gespeichert sein:
 
-* **E-Mail-Adresse des Supervisors**,
+* **E-Mail-Adresse der verantwortlichen Person**,
 * **HTML-Inhalt** mit der Möglichkeit, einen personalisierten Text einzufügen.
 
   ![](assets/uc_monitoring_workflow_variables_diffusion.png)

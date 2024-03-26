@@ -7,8 +7,8 @@ feature: Workflows, Channels Activity
 exl-id: dfd36d2c-44ff-49a9-80b4-09eaf3377072
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '765'
-ht-degree: 100%
+source-wordcount: '769'
+ht-degree: 72%
 
 ---
 
@@ -37,7 +37,7 @@ Die Umsetzung des Anwendungsbeispiels gliedert sich in folgende Schritte:
 Um Ihre Zielgruppe zu bestimmen, erstellen Sie eine Abfrage zur Identifizierung der Empfänger.
 
 1. Kampagne erstellen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign).
-1. Fügen Sie im Tab **[!UICONTROL Zielbestimmungen und Workflows]** Ihrer Kampagne eine **Abfrage-** Aktivität zu Ihrem Workflow hinzu. Weiterführende Informationen zur Verwendung dieser Aktivität finden Sie in [diesem Abschnitt](query.md).
+1. Im **[!UICONTROL Zielbestimmungen und Workflows]** im Tab Ihrer Kampagne, fügen Sie eine **Abfrage** -Aktivität zu Ihrem Workflow hinzu. Weitere Informationen zur Verwendung dieser Aktivität finden Sie unter [diesem Abschnitt](query.md).
 1. Definieren Sie die Empfänger, die Ihre Sendungen erhalten sollen. Wählen Sie beispielsweise Gold-Mitglieder als Zieldimension aus.
 1. Fügen Sie Filterbedingungen zu Ihrer Abfrage hinzu. Wählen Sie in diesem Beispiel Empfänger, die eine E-Mail-Adresse und eine Mobiltelefonnummer haben.
 
@@ -47,7 +47,7 @@ Um Ihre Zielgruppe zu bestimmen, erstellen Sie eine Abfrage zur Identifizierung 
 
 ## Schritt 2: Erstellen einer E-Mail mit einem Angebot {#step-2--creating-an-email-including-an-offer}
 
-1. Erstellen Sie die Aktivität **[!UICONTROL E-Mail-Versand]** und doppelklicken Sie in Ihrem Workflow darauf, um sie zu bearbeiten. Weiterführende Informationen zur Erstellung einer E-Mail finden Sie in [diesem Abschnitt](../../delivery/using/about-email-channel.md).
+1. Erstellen Sie eine **[!UICONTROL Email delivery]** und doppelklicken Sie in den Workflow-Arbeitsbereich, um ihn zu bearbeiten. Weiterführende Informationen zur Erstellung einer E-Mail finden Sie im Abschnitt [diesem Abschnitt](../../delivery/using/about-email-channel.md).
 1. Gestalten Sie die Nachricht und fügen Sie einen Link einschließlich eines Angebots in den Inhalt ein.
 
    ![](assets/wkf_cross-channel_1.png)
@@ -70,7 +70,7 @@ Um Ihre Zielgruppe zu bestimmen, erstellen Sie eine Abfrage zur Identifizierung 
 
 Sobald Ihre Zielgruppe feststeht und Ihr erster Versand bereit ist, müssen Sie die Zielgruppe mithilfe von Filterbedingungen in unterschiedliche Populationen unterteilen.
 
-1. Fügen Sie zum Workflow die Aktivität **Aufspaltung** hinzu und öffnen Sie sie. Weiterführende Informationen zur Verwendung dieser Aktivität finden Sie in [diesem Abschnitt](split.md).
+1. Hinzufügen einer **Aufspaltung** -Aktivität in den Workflow ein und öffnen Sie ihn. Weitere Informationen zur Verwendung dieser Aktivität finden Sie unter [diesem Abschnitt](split.md).
 1. Erstellen Sie aus der zuvor in der Abfrage berechneten Population drei Segmente.
 
    ![](assets/wkf_cross-channel_6.png)
@@ -83,7 +83,7 @@ Sobald Ihre Zielgruppe feststeht und Ihr erster Versand bereit ist, müssen Sie 
 
    ![](assets/wkf_cross-channel_9.png)
 
-1. Wählen Sie in den Filterparametern in der Dropdown-Liste **[!UICONTROL Verhalten]** die Option **[!UICONTROL Empfänger, die weder geöffnet noch geklickt haben (E-Mail)]** aus. Wählen Sie danach die zu sendende E-Mail mit dem Angebot aus der Versandliste aus. Wählen Sie **[!UICONTROL Beenden]**.
+1. Wählen Sie in den Filtereinstellungen **[!UICONTROL Empfänger, die weder geöffnet noch geklickt haben (E-Mail)]** aus dem **[!UICONTROL Verhalten]** aus der Dropdown-Liste und wählen Sie die E-Mail mit dem Angebot aus, das Sie senden möchten. Klicken Sie auf **[!UICONTROL Beenden]**.
 
    ![](assets/wkf_cross-channel_10.png)
 
@@ -110,11 +110,11 @@ Sobald Ihre Zielgruppe feststeht und Ihr erster Versand bereit ist, müssen Sie 
    * Fügen Sie die Aktivität **[!UICONTROL Mobiltelefon-Versand]** hinzu, um eine SMS an die zweite Teilmenge zu senden.
    * Fügen Sie die Aktivität **[!UICONTROL Listen-Update]** hinzu, um die entsprechenden Empfänger zur Datenbank hinzuzufügen.
 
-1. Doppelklicken Sie auf die Versandaktivitäten in Ihrem Workflow, um sie zu bearbeiten. Weiterführende Informationen zur Erstellung von E-Mails und SMS finden Sie in [E-Mail-Kanal](../../delivery/using/about-email-channel.md) and [SMS-Kanal](../../delivery/using/sms-channel.md).
+1. Doppelklicken Sie auf die Versandaktivitäten in Ihrem Workflow, um sie zu bearbeiten. Weiterführende Informationen zur Erstellung von E-Mails und SMS finden Sie im Abschnitt [Email-Kanal](../../delivery/using/about-email-channel.md) und [SMS Kanal](../../delivery/using/sms-channel.md).
 1. Doppelklicken Sie auf die Aktivität **[!UICONTROL Listen-Update]** und wählen Sie die Option **[!UICONTROL Ausgehende Transition erzeugen]** aus.
 
-   Danach können Sie die resultierenden Empfänger von Adobe Campaign in Adobe Experience Cloud exportieren. Beispielsweise können Sie die Audience in Adobe Target verwenden, indem Sie dem Workflow die Aktivität **[!UICONTROL Aktualisierung freigegebener Zielgruppe]** hinzufügen. Weiterführende Informationen dazu finden Sie unter [Audiences exportieren](../../integrations/using/importing-and-exporting-audiences.md#exporting-an-audience).
+   Sie können die resultierenden Empfänger dann aus Adobe Campaign in die Adobe Experience Cloud exportieren. Beispielsweise können Sie die Audience in Adobe Target verwenden, indem Sie eine **[!UICONTROL Aktualisierung freigegebener Zielgruppe]** Aktivität zum Workflow hinzu. Weitere Informationen hierzu finden Sie unter [Audiences exportieren](../../integrations/using/importing-and-exporting-audiences.md#exporting-an-audience).
 
 1. Verwenden Sie die Schaltfläche **Starten** in der Aktionsleiste, um den Workflow auszuführen.
 
-Die von der Aktivität **Abfrage** ausgewählte Population wird segmentiert und erhält je nach Empfängerverhalten eine E-Mail oder eine SMS. Die restliche Population wird mit der Aktivität **[!UICONTROL Listen-Update]** zur Datenbank hinzugefügt.
+Die durch die **Abfrage** Die Aktivität wird segmentiert, um je nach Empfängerverhalten einen E-Mail- oder SMS-Versand zu erhalten. Die verbleibende Population wird mithilfe der **[!UICONTROL Listen-Update]** -Aktivität.

@@ -8,8 +8,8 @@ feature: Web Forms
 exl-id: 364d90af-4b18-4104-8b6a-be80cfde3b0b
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '1086'
-ht-degree: 100%
+source-wordcount: '1082'
+ht-degree: 93%
 
 ---
 
@@ -61,11 +61,11 @@ Um einen Hypertext-Link hinzuzufügen, gehen Sie zu **[!UICONTROL Statische Elem
 * Im **[!UICONTROL Titel]** wird der Inhalt des Hypertext-Links so dargestellt, wie er auf der Formularseite erscheinen wird.
 * Die **[!UICONTROL URL]** ist die gewünschte Adresse, z. B.: [https://www.adobe.com](https://www.adobe.com) für eine Website oder [info@adobe.com](mailto:info@adobe.com), um eine Nachricht zu senden.
 * Im Feld **[!UICONTROL Fenster]** können Sie im Fall einer Website einen Anzeigemodus für den Link auswählen. Sie können den Link in einem neuen Fenster, dem aktuellen Fenster oder einem anderen Fenster öffnen.
-* Sie können einen ToolTip wie unten gezeigt hinzufügen:
+* Sie können eine QuickInfo wie unten gezeigt hinzufügen:
 
   ![](assets/s_ncs_admin_survey_send_an_email.png)
 
-* Der Link kann als Schaltfläche oder Bild dargestellt werden. Wählen Sie dazu im Feld **[!UICONTROL Typ]** den Typ der Anzeige aus.
+* Sie können den Link als Schaltfläche oder Bild anzeigen lassen. Wählen Sie dazu den Anzeigetyp im **[!UICONTROL Typ]** -Feld.
 
 ### Link-Typen {#types-of-links}
 
@@ -87,7 +87,7 @@ Sie können auch andere Aktionen für den Link definieren, sodass der Benutzer d
 
   ![](assets/s_ncs_admin_survey_link_next.png)
 
-  Sie können die Schaltflächen **[!UICONTROL Weiter]** und/oder **[!UICONTROL Zurück]** verbergen, wenn diese durch einen Link ersetzt werden sollen. Weiterführende Informationen dazu finden Sie auf dieser [Seite](defining-web-forms-page-sequencing.md).
+  Sie können **[!UICONTROL Nächste]** und/oder **[!UICONTROL Zurück]** -Schaltflächen, wenn sie durch einen Link ersetzt werden sollen. Mehr dazu erfahren Sie auf [dieser Seite](defining-web-forms-page-sequencing.md).
 
   Der Link ersetzt die standardmäßig verwendete Schaltfläche **[!UICONTROL Weiter]**.
 
@@ -99,7 +99,7 @@ Sie können auch andere Aktionen für den Link definieren, sodass der Benutzer d
 
   ![](assets/s_ncs_admin_survey_link_viral.png)
 
-  Standardmäßig hat eine Seite nur eine einzige ausgehende Transition. Um neue Transitionen zu erstellen, wählen Sie wie unten gezeigt die Seite und danach im Bereich **[!UICONTROL Ausgehende Transitionen]** die Schaltfläche **[!UICONTROL Hinzufügen]** aus:
+  Standardmäßig hat eine Seite nur eine ausgehende Transition. Um neue Transitionen zu erstellen, wählen Sie die Seite aus und klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]** im **[!UICONTROL Ausgabeübergänge]** wie unten gezeigt:
 
   ![](assets/s_ncs_admin_survey_add_transition.png)
 

@@ -7,9 +7,9 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Cla
 feature: Campaigns
 exl-id: 4e0df18f-3623-4dfb-a2f8-ad293dbc4dd5
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: ht
-source-wordcount: '450'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '445'
+ht-degree: 86%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 Mit Adobe Campaign können Sie Kommunikations- und Marketing-Kampagnen definieren, optimieren, ausführen und analysieren. Adobe Campaign fungiert dabei als zentrales Befehls- und Ausführungszentrum für Marketing-Strategien. Weitere Informationen finden Sie unter [Auf Kampagnen zugreifen](../../distributed/using/accessing-campaigns.md) und [Marketing-Kampagnen erstellen](../../campaign/using/setting-up-marketing-campaigns.md).
 
-Darüber hinaus gestattet das Modul **Marketing Resource Management (MRM)** die Steuerung von Marketing-Aktionen in einem kollaborativen Modus, indem es eine vollständige Verwaltung und Echtzeitverfolgung der betreffenden Aufgaben, Budgets und Marketing-Ressourcen erlaubt. Das Marketing Resource Management ermöglicht die Optimierung und Regulierung der Verwaltung von internen und externen Prozessen, Ressourcen und Marketing-Kampagnen sowie der Zusammenarbeit mit externen Dienstleistern (Agenturen, Druckereien etc.). Lesen Sie diesbezüglich [diesen Abschnitt](../../mrm/using/about-marketing-resource-management.md).
+Darüber hinaus wird die **Marketing Resource Management (MRM)** ermöglicht die Steuerung kollaborativer Marketing-Aktionen durch vollständige Verwaltung und Echtzeit-Verfolgung der damit verbundenen Aufgaben, Budgets und Marketing-Ressourcen. Das Marketing Resource Management ermöglicht die Optimierung und Regulierung des Managements interner und externer Prozesse, Ressourcen und Marketing-Kampagnen sowie der Beziehungen zu Dritten (Agenturen, Druckereien usw.). Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../mrm/using/about-marketing-resource-management.md).
 
 >[!NOTE]
 >

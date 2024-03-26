@@ -9,7 +9,7 @@ exl-id: 5d48bb27-1884-47f1-acb7-dff5113565bc
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '904'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -40,7 +40,7 @@ Um Daten in einem vorhandenen Datenbankfeld zu speichern, wählen Sie das Symbol
 
 >[!NOTE]
 >
->Das Standard-Referenzdokument ist das Schema **nms:recipient**. Wenn Sie es anzeigen oder ein neues auswählen möchten, wählen Sie das Formular in der Liste und danach die Schaltfläche **[!UICONTROL Eigenschaften]** aus.
+>Das Standard-Referenzdokument ist die **nms:recipient** Schema. Um das Formular anzuzeigen oder ein neues auszuwählen, wählen Sie es in der Liste aus und klicken Sie auf die Schaltfläche **[!UICONTROL Eigenschaften]** Schaltfläche.
 
 ### Daten in einer lokalen Variablen speichern {#storing-data-in-a-local-variable}
 
@@ -54,7 +54,7 @@ Er ist in einer Variablen gespeichert, die bei der Erstellung der Dropdown-Liste
 
 ![](assets/s_ncs_admin_survey_no_storage_variable2.png)
 
-Über den Link **[!UICONTROL Variablen bearbeiten...]** können Sie vorhandene Variablen anzeigen und neue erstellen. Wenn Sie eine neue Variable erstellen möchten, wählen Sie die Schaltfläche **[!UICONTROL Hinzufügen]** aus.
+Sie können vorhandene Variablen anzeigen und neue erstellen, indem Sie **[!UICONTROL Variablen bearbeiten...]** -Link. Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**, um eine neue Variable zu erstellen.
 
 ![](assets/s_ncs_admin_survey_add_a_variable.png)
 
@@ -62,7 +62,7 @@ Die hinzugefügte Variable wird in der Liste lokaler Variablen verfügbar sein, 
 
 >[!NOTE]
 >
->Sie können für jedes Formular in einem vorgelagerten Schritt Variablen erstellen. Wählen Sie dazu das Formular und danach die Schaltfläche **[!UICONTROL Eigenschaften]** aus. Der Tab **[!UICONTROL Variablen]** enthält die lokalen Variablen für das Formular.
+>Sie können für jedes Formular vorgelagerte Variablen erstellen. Wählen Sie dazu das Formular aus und klicken Sie auf die Schaltfläche **[!UICONTROL Eigenschaften]** Schaltfläche. Die **[!UICONTROL Variablen]** enthält die lokalen Variablen für das Formular.
 
 **Beispiel für die lokale Speicherung mit einer Bedingung**
 

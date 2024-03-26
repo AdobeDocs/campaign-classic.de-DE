@@ -8,9 +8,9 @@ feature: Personalization
 role: User
 exl-id: 67fd9a67-cb05-46cd-acd5-e42fde6f4d4f
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
-workflow-type: ht
-source-wordcount: '942'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '940'
+ht-degree: 85%
 
 ---
 
@@ -43,7 +43,7 @@ Klicken Sie zum Einfügen von Personalisierungsfeldern auf das Symbol der Dropdo
 
 ![](assets/s_ncs_user_add_custom_field.png)
 
-Nach der Auswahl der Datenquelle - Empfängerfeld oder Dateifeld - präsentiert sich das eingefügte Feld in Form einer von Adobe Campaign interpretierten Anweisung, welche die Ersetzung durch die Daten des jeweiligen Empfängers auslöst. Das Ergebnis der Ersetzung können Sie im **[!UICONTROL Vorschau]**-Tab prüfen.
+Nach der Auswahl einer Datenquelle (Empfängerfelder oder Dateifeld) erfolgt diese Einfügung in Form eines Befehls, der von Adobe Campaign interpretiert und durch den Feldwert für einen bestimmten Empfänger ersetzt wird. Der physische Austausch kann dann im **[!UICONTROL Vorschau]** Registerkarte.
 
 ## Beispiel für Personalisierungsfelder {#personalization-fields-example}
 
@@ -51,7 +51,7 @@ In unserem Beispiel wird eine E-Mail erstellt, in der der Empfängername im Betr
 
 1. Erstellen Sie einen neuen Versand oder öffnen Sie einen existierenden E-Mail-Versand.
 1. Klicken Sie im Versand-Assistenten auf den **[!UICONTROL Betreff]**-Link, um einen Betreff einzugeben.
-1. Geben Sie z. B. den Text &quot;**[!UICONTROL Sonderangebot für]**&quot; ein. Nutzen Sie nun die Schaltfläche der Personalisierungsfelder und wählen Sie aus der Dropdown-Liste **[!UICONTROL Empfänger > Vorname]** aus.
+1. Eingabe &quot; **[!UICONTROL Sonderangebot für]** und verwenden Sie die Schaltfläche in der Symbolleiste, um ein Personalisierungsfeld einzufügen. Auswählen **[!UICONTROL Empfänger > Titel]**.
 
    ![](assets/s_ncs_user_insert_custom_field.png)
 
@@ -72,7 +72,7 @@ In unserem Beispiel wird eine E-Mail erstellt, in der der Empfängername im Betr
 
    >[!NOTE]
    >
-   >Bei Sendungen, die über einen Workflow ausgelöst werden, haben Sie die Möglichkeit, die Daten aus der temporären Arbeitstabelle des Workflows zu verwenden. Auf sie kann über das Menü **[!UICONTROL Zielerweiterung]** zugegriffen werden. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../workflow/using/data-life-cycle.md#target-data).
+   >Wenn ein Versand Teil eines Workflows ist, können Sie die Daten aus der temporären Workflow-Tabelle verwenden. Diese Daten werden im Menü **[!UICONTROL Erweiterung des Zieldatensatzes]** gruppiert. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../workflow/using/data-life-cycle.md#target-data).
 
 ## Personalisierung optimieren {#optimizing-personalization}
 
@@ -80,15 +80,15 @@ Mit der folgenden Option können Sie die Personalisierung optimieren: Verwenden 
 
 Diese Option ermöglicht es, im Zuge der Versandanalyse automatisch einen Workflow zu erstellen und auszuführen, welcher alle auf eine Zielgruppe bezogenen Daten in einer temporären Tabelle speichert (insbesondere Daten aus über FDA verknüpften Tabellen).
 
-Wenn Sie die Option aktivieren, kann sich die Leistung der Versandanalyse bei der Verarbeitung großer Datenmengen erheblich verbessern, insbesondere wenn die Personalisierungsdaten aus einer externen Tabelle via FDA stammen. Weiterführende Informationen dazu finden Sie unter [Zugriff auf externe Datenbanken (FDA)](../../installation/using/about-fda.md).
+Wenn Sie die Option aktivieren, kann sich die Performance der Versandanalyse bei der Verarbeitung großer Datenmengen erheblich verbessern, insbesondere wenn die Personalisierungsdaten aus einer externen Tabelle via FDA stammen. Weiterführende Informationen dazu finden Sie unter [Zugriff auf externe Datenbanken (FDA)](../../installation/using/about-fda.md).
 
-Sollten Sie beispielsweise beim Versand an zahlreiche Empfänger Leistungsprobleme feststellen, wenn Sie viele Personalisierungsfelder und/oder Gestaltungsbausteine im Nachrichteninhalt verwenden, können Sie mit dieser Option die Personalisierung und somit den Nachrichtenversand beschleunigen.
+Sollten Sie beispielsweise beim Versand an zahlreiche Empfänger Performance-Probleme feststellen, wenn Sie viele Personalisierungsfelder und/oder Gestaltungsbausteine im Nachrichteninhalt verwenden, können Sie mit dieser Option die Personalisierung und somit den Nachrichtenversand beschleunigen.
 
 Um diese Option zu verwenden, gehen Sie wie folgt vor:
 
 1. Kampagne erstellen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign).
-1. Fügen Sie im Tab **[!UICONTROL Zielgruppenbestimmungen und Workflows]** Ihrer Kampagne eine **Abfrage-** Aktivität zu Ihrem Workflow hinzu. Weiterführende Informationen zur Verwendung dieser Aktivität finden Sie in [diesem Abschnitt](../../workflow/using/query.md).
-1. Fügen Sie zum Workflow die Aktivität **[!UICONTROL E-Mail-Versand]** hinzu und öffnen Sie ihn. Weiterführende Informationen zur Verwendung dieser Aktivität finden Sie in [diesem Abschnitt](../../workflow/using/delivery.md).
+1. Im **[!UICONTROL Zielbestimmungen und Workflows]** im Tab Ihrer Kampagne, fügen Sie eine **Abfrage** -Aktivität zu Ihrem Workflow hinzu. Weitere Informationen zur Verwendung dieser Aktivität finden Sie unter [diesem Abschnitt](../../workflow/using/query.md).
+1. Hinzufügen einer **[!UICONTROL Email delivery]** -Aktivität in den Workflow ein und öffnen Sie ihn. Weitere Informationen zur Verwendung dieser Aktivität finden Sie unter [diesem Abschnitt](../../workflow/using/delivery.md).
 1. Gehen Sie zum Tab **[!UICONTROL Analyse]** der **[!UICONTROL Versandeigenschaften]** und wählen Sie die Option **[!UICONTROL Personalisierungsdaten mit einem Workflow vorbereiten]** aus.
 
    ![](assets/perso_optimization.png)

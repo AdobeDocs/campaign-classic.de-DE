@@ -47,7 +47,7 @@ ht-degree: 100%
 
 1. Erstellung von Angebotskategorien in Design-Umgebungen. Weitere Informationen hierzu finden Sie unter [Angebotskategorien](../../interaction/using/creating-offer-categories.md).
 1. Erstellung von Angeboten in Design-Umgebungen. Weiterführende Informationen finden Sie unter [Erstellung eines Angebots](../../interaction/using/creating-an-offer.md).
-1. Validierung und Freigabe der Angebote in einer oder mehreren Platzierungen, um sie in den Live-Umgebungen für den Versandverantwortlichen verfügbar zu machen. Weitere Informationen finden Sie unter [Angebotsvalidierung](../../interaction/using/approving-and-activating-an-offer.md).
+1. Validierung und Veröffentlichung der Angebote in einer oder mehreren Platzierungen, um sie in den Live-Umgebungen für den Versandverantwortlichen verfügbar zu machen. Weitere Informationen finden Sie unter [Angebotsvalidierung](../../interaction/using/approving-and-activating-an-offer.md).
 
 ## Verwendung des Angebotskatalogs {#using-the-offer-catalog-}
 

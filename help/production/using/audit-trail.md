@@ -7,8 +7,8 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Cla
 exl-id: 8508d879-fb38-4b1f-9f55-0341bb8d0c67
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '505'
-ht-degree: 21%
+source-wordcount: '503'
+ht-degree: 17%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 21%
 
 In Adobe Campaign wird die **[!UICONTROL Audit-Protokoll]** gibt Ihnen Zugriff auf den vollständigen Verlauf der Änderungen, die in Ihrer Instanz vorgenommen wurden.
 
-**[!UICONTROL Das Audit-Protokoll erfasst in Echtzeit eine umfassende Liste von Aktionen und Ereignissen, die in Ihrer Adobe Campaign-Instanz auftreten.]** Es bietet eine Möglichkeit für den Zugriff auf einen Datenverlauf, um zum Beispiel folgende Fragen zu beantworten: Was ist mit Ihren Workflows passiert und wer hat sie zuletzt aktualisiert? Was haben Ihre Benutzenden in der Instanz getan?
+**[!UICONTROL Audit-Protokoll]** erfasst in Echtzeit eine umfassende Liste von Aktionen und Ereignissen, die in Ihrer Adobe Campaign-Instanz auftreten. Es bietet eine Möglichkeit für den Zugriff auf einen Datenverlauf, um zum Beispiel folgende Fragen zu beantworten: Was ist mit Ihren Workflows passiert und wer hat sie zuletzt aktualisiert? Was haben Ihre Benutzenden in der Instanz getan?
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ Audit-Protokoll besteht aus drei Komponenten:
    * Aussetzen
    * Stoppen
    * Neu starten
-   * Bereinigen entspricht dem Aktionsbereinigungsverlauf
+   * Bereinigung, die dem Aktionsbereinigungsverlauf entspricht
    * Simulieren, welche der Aktion Start im Simulationsmodus entspricht
    * Wakeup, der der Aktion Ausstehende Aufgaben jetzt ausführen entspricht
    * Unbedingter Stopp
@@ -105,4 +105,4 @@ Gehen Sie dabei folgendermaßen vor:
 
    ![](assets/audit_trail_6.png)
 
-1. Klicken Sie auf **[!UICONTROL Speichern]** .
+1. Wählen Sie **[!UICONTROL Speichern]** aus .

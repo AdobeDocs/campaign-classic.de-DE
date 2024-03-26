@@ -7,7 +7,7 @@ exl-id: 4c2aad47-0e2d-4d0b-8898-b437f4a05e11
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '961'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -31,7 +31,7 @@ Gehen Sie wie folgt vor, um einen Bericht zu erstellen:
 
    Nähere Informationen über diese Berichtvorlagen erhalten Sie in [diesem Abschnitt](../../reporting/using/about-descriptive-analysis.md).
 
-1. Erfassen Sie den Namen des Berichts und seine Beschreibung in den entsprechenden Feldern. Geben Sie das **[!UICONTROL Schema]** an, auf das sich der Bericht beziehen soll.
+1. Geben Sie den Namen des Berichts und seine Beschreibung in die entsprechenden Felder ein. Geben Sie die **[!UICONTROL schema]** auf den der Bericht angewendet wird.
 
    ![](assets/s_ncs_advuser_report_wizard_020.png)
 
@@ -116,7 +116,7 @@ Eine **[!UICONTROL Seite]** kann folgende Elemente enthalten:
 * **[!UICONTROL Eingabedialoge]** vom Typ Text oder Zahl.
 * **[!UICONTROL Auswahldialoge]** vom Typ Dropdown-Liste, Checkbox, Radiobutton, Multiple Choice, Datum oder Matrix.
 * **[!UICONTROL Erweiterte Dialoge]** vom Typ Link-Editor, Konstante, Ordnerauswahl.
-* **[!UICONTROL Statische Elemente]** vom Typ Wert, Link, HTML, Bild etc.
+* Wert, Link, HTML, Bild usw. **[!UICONTROL Statische Elemente]**.
 * **[!UICONTROL Container]** zur Anordnung der Komponenten.
 
 Die Konfiguration einer Seite und ihrer Elemente wird in [diesem Abschnitt](../../web/using/about-web-forms.md) erläutert.

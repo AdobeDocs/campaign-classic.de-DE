@@ -11,8 +11,8 @@ topic-tags: filtering-data
 exl-id: 58e54f67-dc87-42f1-8426-6f801e8e4fb6
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2099'
-ht-degree: 100%
+source-wordcount: '2106'
+ht-degree: 90%
 
 ---
 
@@ -148,14 +148,14 @@ Gehen Sie wie folgt vor, um einen **erweiterten Filter** zu erstellen.
 
    ![](assets/s_user_filter_choose_field.png)
 
-1. Wählen Sie in der Liste das Feld aus, nach dem die Daten gefiltert werden sollen. Klicken Sie zum Bestätigen auf **[!UICONTROL Beenden]**.
+1. Wählen Sie aus der Liste das Feld aus, nach dem die Daten gefiltert werden sollen. Klicken Sie zur Bestätigung auf **[!UICONTROL Beenden]**.
 1. Klicken Sie in die Spalte **[!UICONTROL Operator]** und wählen Sie in der Dropdown-Liste den anzuwendenden Operator aus.
-1. Geben Sie dann in der Spalte **[!UICONTROL Wert]** den Vergleichswert an. Sie können mehrere Filter kombinieren, um Ihre Abfrage zu verfeinern. Für jede weitere Filterbedingung klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**.
+1. Geben Sie dann in der Spalte **[!UICONTROL Wert]** den Vergleichswert an. Sie können mehrere Filter kombinieren, um Ihre Abfrage zu verfeinern. Um eine Filterbedingung hinzuzufügen, klicken Sie auf **[!UICONTROL Hinzufügen]**.
 
    ![](assets/s_ncs_user_filter_add_button_alone.png)
 
 1. Mithilfe der Pfeile in der Symbolleiste können Sie die Ausdrücke hierarchisch gliedern oder die Reihenfolge der Ausdrücke der Abfrage ändern.
-1. Der Standard-Operator zwischen den Ausdrücken ist **Und**, er kann jedoch durch einen Klick in das entsprechende Feld in das entsprechende Feld durch **Oder** bzw. Außer ersetzt werden.
+1. Der Standardoperator zwischen Ausdrücken ist **und**, Sie können dies jedoch ändern, indem Sie auf das Feld klicken. Sie können eine **Oder** Operator.
 
    ![](assets/s_ncs_user_filter_operator.png)
 
@@ -207,13 +207,13 @@ Sie haben jedoch die Möglichkeit, einen **Anwendungsfilter** durch die Speicher
 
 Direkter Zugriff auf diese Filter besteht zudem über den Versand-Assistenten bei der Zielgruppenbestimmung (nähere Informationen zur Erstellung von Sendungen erhalten Sie in [diesem Abschnitt](../../delivery/using/creating-an-email-delivery.md)). Es gibt folgende Möglichkeiten, einen Anwendungsfilter zu erstellen:
 
-* Umwandlung eines erweiterten Filters in einen Anwendungsfilter: Wählen Sie hierzu **[!UICONTROL Speichern]** aus, bevor Sie den Editor der erweiterten Filter schließen.
+* Konvertieren eines erweiterten Filters in einen Anwendungsfilter. Klicken Sie dazu auf **[!UICONTROL Speichern]** vor dem Schließen des erweiterten Filter-Editors.
 
   ![](assets/s_ncs_user_filter_save.png)
 
-* Erstellung eines Anwendungsfilters über den Verzeichnisknoten **[!UICONTROL Administration > Konfiguration > Vordefinierte Filter]** (oder **[!UICONTROL Profile und Zielgruppen > Vordefinierte Filter]** für Empfänger): Klicken Sie mit der rechten Maustaste in die Filterliste und wählen Sie **[!UICONTROL Neu...]**. Die weitere Verfahrensweise entspricht der Erstellung erweiterter Filter.
+* Erstellen Sie diesen Anwendungsfilter über **[!UICONTROL Administration > Konfiguration > Vordefinierte Filter]** (oder **[!UICONTROL Profile und Zielgruppen > Vordefinierte Filter]** für Empfänger) des Navigationsbaums. Klicken Sie dazu mit der rechten Maustaste auf die Filterliste und wählen Sie **[!UICONTROL Neu...]**. Das Verfahren entspricht dem für die Erstellung erweiterter Filter.
 
-  Im Feld **[!UICONTROL Titel]** kann der Filter benannt werden. Der Name erscheint in der Dropdown-Liste der Schaltfläche **[!UICONTROL Filter...]**.
+  Die **[!UICONTROL Titel]** -Feld können Sie diesen Filter benennen. Dieser Name wird im Kombinationsfeld der **[!UICONTROL Filter...]** Schaltfläche.
 
   ![](assets/user_filter_apply.png)
 
@@ -369,7 +369,7 @@ Klicken Sie auf den Tab **[!UICONTROL Parameter]**, um auf folgende Optionen zuz
   Beispielsweise wird der Filter **[!UICONTROL Nach Name oder Login]** auf Benutzer angewendet. Die Option Standardfilter für diesen Dokumenttyp ist angekreuzt, der Filter wird daher systematisch für alle Benutzerlisten vorgeschlagen.
 
 * **[!UICONTROL Mit anderen Benutzern geteilter Filter]**: Ermöglicht es, den Filter für alle anderen Benutzer der aktuellen Datenbank verfügbar zu machen.
-* **[!UICONTROL Nutzung eines Formulars zur Parametereingabe]**: Ermöglicht die Bestimmung des oder der Filterfelder, die bei Auswahl des entsprechenden Filters oberhalb der Liste angezeigt werden. Über diese Felder lassen sich die Parameter des Filters bestimmen. Durch Klick auf die Schaltfläche **[!UICONTROL Formular]** gelangen Sie in den Texteditor, in dem die Parameter im XML-Format einzugeben sind. Der in der Empfängerliste verfügbare vordefinierte Filter **[!UICONTROL Haben geöffnet]** zeigt beispielsweise ein Filterfeld an, das die Einschränkung der Ergebnisse auf einen bestimmten Versand ermöglicht.
+* **[!UICONTROL Eingabeformular für Parameter verwenden]**: Angabe der Filterfelder, die oberhalb der Liste angezeigt werden sollen, wenn der Filter ausgewählt wird. In diesen Feldern können Sie die Filtereinstellungen definieren. Dieses Formular muss im XML-Format über die **[!UICONTROL Formular]** Schaltfläche. Beispielsweise der vorkonfigurierte Filter **[!UICONTROL Empfänger, die geöffnet haben]** zeigt ein Filterfeld an, in dem Sie den Versand auswählen können, für den der Filter bestimmt ist.
 
   Die Schaltfläche **[!UICONTROL Vorschau]** zeigt das Ergebnis des gewählten Filters an.
 

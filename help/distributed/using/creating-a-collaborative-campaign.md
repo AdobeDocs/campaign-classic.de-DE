@@ -8,7 +8,7 @@ exl-id: 17313fe5-ad42-45ca-a35a-1e7aa89380ef
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '997'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -81,11 +81,11 @@ Der Kampagnenworkflow muss die Aktivität **Lokale Validierung** beinhalten. Die
 * **[!UICONTROL Verteilungskontext]**: Explizit;
 * **[!UICONTROL Datenverteilung]**: Lokalstellen-Datenverteilung.
 
-Zunächst muss die Datenverteilung **Verteilung der Lokalstellen** erstellt werden, um die Anzahl der Datensätze mithilfe einer Liste von Gruppierungswerten zu beschränken. Klicken Sie zur Erstellung im Knoten **[!UICONTROL Ressourcen > Kampagnenverwaltung > Datenverteilung]** auf das Symbol **[!UICONTROL Neu]******. Mehr Informationen über Datenverteilungen erhalten Sie im [Workflows](../../workflow/using/using-the-local-approval-activity.md#step-1--creating-the-data-distribution-template-)-Handbuch.
+**Lokalstellen-Verteilung** Datenverteilung vom Typ muss erstellt werden. Die Verteilungsvorlage ermöglicht die Begrenzung der Datensatzanzahl ausgehend von einer Liste von Gruppierungswerten. In **[!UICONTROL Ressourcen > Kampagnenverwaltung > Datenverteilung]**, klicken Sie auf die **[!UICONTROL Neu]** Symbol zum Erstellen eines neuen **[!UICONTROL Datenverteilung]**. Weiterführende Informationen zur Datenverteilung finden Sie im Abschnitt [Workflows](../../workflow/using/using-the-local-approval-activity.md#step-1--creating-the-data-distribution-template-) Handbuch.
 
 ![](assets/mkg_dist_data_distribution.png)
 
-Geben Sie die **[!UICONTROL Zielgruppendimension]** sowie das **[!UICONTROL Verteilungsfeld]** an. Wählen Sie als **Zuweisungstyp** **Lokalstelle** aus.
+Wählen Sie die **Zielgruppendimension** und **[!UICONTROL Verteilungsfeld]**. Für **[!UICONTROL Zuweisungstyp]** auswählen **Lokalstelle**.
 
 Fügen Sie im Tab **[!UICONTROL Verteilung]** ein Feld für jede Lokalstelle hinzu und geben Sie den jeweiligen Wert an.
 
@@ -129,7 +129,7 @@ Für **partizipative Kampagnen** muss die Zentralstelle einen Anmeldeschluss und
 
 ![](assets/s_advuser_mkg_dist_create_mutual_entry.png)
 
-### Audience {#audience}
+### Zielgruppe {#audience}
 
 Die Zentralstelle muss für die Teilnahme an der Kampagne vorgesehenen Lokalstellen bei der Erstellung der partizipativen Kampagne angeben, außer bei Kampagnen mit Zielgruppenvalidierung.
 
@@ -153,7 +153,7 @@ Im automatischen Modus wird die Lokalstelle automatisch für die Kampagne angeme
 
 ### Benachrichtigungen {#notifications}
 
-Die Konfiguration der Benachrichtigungen entspricht der für lokale Kampagnen. Siehe hierzu [diesen Abschnitt](creating-a-local-campaign.md#notifications).
+Die Konfiguration der Benachrichtigungen entspricht den Benachrichtigungen für eine Lokalstelle. Weitere Informationen finden Sie in [diesem Abschnitt](creating-a-local-campaign.md#notifications).
 
 ## Bestellen einer Kampagne {#ordering-a-campaign}
 
@@ -175,4 +175,4 @@ Weitere Informationen hierzu finden Sie im Abschnitt [Validierungsprozess](creat
 
 ## Validieren einer Bestellung {#approving-an-order}
 
-Die Validierung der Bestellung eines partizipativen Kampagnen-Kits entspricht der von lokalen Kampagnen. Siehe hierzu [diesen Abschnitt](creating-a-local-campaign.md#approving-an-order).
+Die Validierung der Bestellung eines partizipativen Kampagnenkits entspricht der von lokalen Kampagnen. Weitere Informationen finden Sie in [diesem Abschnitt](creating-a-local-campaign.md#approving-an-order).

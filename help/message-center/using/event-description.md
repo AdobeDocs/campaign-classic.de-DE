@@ -10,8 +10,8 @@ topic-tags: introduction
 exl-id: 9f7f4b6c-2ee8-4091-847d-f616d6abeb6b
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '769'
-ht-degree: 100%
+source-wordcount: '757'
+ht-degree: 93%
 
 ---
 
@@ -121,9 +121,9 @@ Die obligatorischen Attribute der Elemente **`<rtevent>`** und **`<batchevent>`*
 <rtEvent type="order_confirmation" email="john.doe@domain.com" origin="eCommerce" wishedChannel="0" externalId="1242" mobilePhone="+33620202020"> 
 ```
 
-In diesem Beispiel sind mit der E-Mail-Adresse und der Mobiltelefonnummer zwei Kanäle angegeben. Das Feld **wishedChannel** ermöglicht die Bestimmung des Kanals, der bei der Reaktion auf ein Ereignis verwendet werden soll. Der Wert &quot;0&quot; entspricht dem E-Mail-Kanal, der Wert &quot;1&quot; dem Mobile-Kanal usw.
+In diesem Beispiel werden zwei Kanäle bereitgestellt: die E-Mail-Adresse und die Mobiltelefonnummer. Die **wishedChannel** ermöglicht die Auswahl des Kanals, der bei der Umwandlung des Ereignisses in eine Nachricht verwendet werden soll. Der Wert &quot;0&quot; entspricht dem E-Mail-Kanal, der Wert &quot;1&quot; dem Mobile-Kanal usw.
 
-Wenn Sie die Verarbeitung eines Ereignisses terminieren möchten, fügen Sie das Feld **[!UICONTROL scheduled]** hinzu, gefolgt vom gewünschten Datum. Erst zum angegebenen Zeitpunkt wird auf das Ereignis reagiert.
+Wenn Sie den Versand eines Ereignisses verschieben möchten, fügen Sie das Feld **[!UICONTROL geplant]** gefolgt von dem gewünschten Datum hinzu. Das Ereignis wird an diesem Datum in eine Nachricht umgewandelt.
 
 Es wird empfohlen, die Attribute @wishedChannel und @emailFormat in Form von numerischen Werten anzugeben. Die Mapping-Tabelle der numerischen Werte und der ihnen zugeordnete Titel finden sich in der Beschreibung der Datenschemata.
 

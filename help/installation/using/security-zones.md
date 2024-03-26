@@ -11,8 +11,8 @@ topic-tags: additional-configurations
 exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814
 source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
 workflow-type: tm+mt
-source-wordcount: '1506'
-ht-degree: 29%
+source-wordcount: '1489'
+ht-degree: 19%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 29%
 
 Jeder Operator muss mit einer Zone verknüpft sein, um sich bei einer Instanz anmelden zu können, und die IP des Operators muss in die Adressen oder Adresssätze aufgenommen werden, die in der Sicherheitszone definiert sind. Die Konfiguration der Sicherheitszone erfolgt in der Konfigurationsdatei des Adobe Campaign-Servers.
 
-Operatoren werden über ihr Profil in der Konsole mit einer Sicherheitszone verknüpft, auf die über den Knoten **[!UICONTROL Administration > Zugriffe > Operatoren]** zugegriffen werden kann. [Weitere Informationen](#linking-a-security-zone-to-an-operator).
+Benutzer werden über ihr Profil in der Konsole mit einer Sicherheitszone verknüpft, auf die über die **[!UICONTROL Administration > Zugriffe > Benutzer]** Knoten. [Weitere Informationen](#linking-a-security-zone-to-an-operator).
 
 >[!NOTE]
 >
@@ -225,20 +225,20 @@ Sobald die Zonen definiert sind, wird die **[!UICONTROL Sicherheitszone]** -Aufl
 
 ## Empfehlungen
 
-* Stellen Sie sicher, dass Ihr Reverse-Proxy in subNetwork nicht erlaubt ist. Ist dies der Fall, wird der **gesamte** Datenverkehr als von dieser lokalen IP-Adresse kommend und daher als vertrauenswürdig eingestuft.
+* Stellen Sie sicher, dass Ihr Reverse-Proxy in subNetwork nicht zulässig ist. Ist dies der Fall, **all** -Traffic wird als von dieser lokalen IP-Adresse kommend erkannt, sodass er als vertrauenswürdig eingestuft wird.
 
-* Minimieren Sie den Einsatz von sessionTokenOnly=&quot;true&quot;:
+* Minimieren Sie die Verwendung von sessionTokenOnly=&quot;true&quot;:
 
-   * Achtung: Wenn dieses Attribut auf true gesetzt wird, ist der Benutzer durch **CRSF-Attacken** (Cross-Site Request Forgery) angreifbar.
+   * Warnung: Wenn dieses Attribut auf &quot;true&quot;gesetzt ist, kann der Operator einem **CRSF-Angriff**.
    * Darüber hinaus wird das sessionToken -Cookie nicht mit einem httpOnly -Flag gesetzt, sodass es von Client-seitigem JavaScript-Code gelesen werden kann.
    * Bei Verwendung von Message Center mit mehreren Ausführungsinstanzen ist jedoch der Einsatz von sessionTokenOnly unumgänglich: Erstellen Sie eine neue Sicherheitszone, setzen Sie sessionTokenOnly auf &quot;true&quot;, und fügen Sie dieser Zone **nur die benötigten IP-Adressen** hinzu.
 
-* Setzen Sie möglichst alle allowHTTP, showErrors auf &quot;false&quot; (nicht für localhost), und prüfen Sie sie.
+* Wenn möglich, setzen Sie alle allowHTTP-, showErrors auf false (nicht für localhost) und überprüfen Sie sie.
 
    * allowHTTP = &quot;false&quot;: zwingt Benutzer, HTTPS zu verwenden.
    * showErrors = &quot;false&quot;: verbirgt technische Fehler (einschließlich SQL-Fehler). Dies verhindert die Anzeige übermäßig vieler Informationen, schränkt aber auch die Fähigkeit des Benutzers ein, Probleme zu lösen (ohne vom Administrator zusätzliche Informationen einzuholen).
 
-* Setzen Sie allowDebug nur für IP-Adressen auf true, die von Benutzern/Administratoren verwendet werden, die Fragebögen, WebApps und Berichte erstellen müssen (diese aber nicht in der Vorschau ansehen können). Durch dieses Flag werden in diesen IP-Adressen Relais-Regeln dargestellt, was eine Fehlerbehebung ermöglicht.
+* Setzen Sie allowDebug nur für IPs auf &quot;true&quot;, die von Marketing-Benutzern/Administratoren verwendet werden, die Umfragen, WebApps und Berichte erstellen müssen (in der Vorschau). Diese Markierung ermöglicht es diesen IPs, Relais-Regeln anzuzeigen und zu debuggen.
 
    * Wenn allowDebug auf false gesetzt ist, lautet die Ausgabe:
 

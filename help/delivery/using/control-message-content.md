@@ -8,9 +8,9 @@ feature: Deliverability
 role: User
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: ht
-source-wordcount: '784'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '781'
+ht-degree: 92%
 
 ---
 
@@ -53,7 +53,7 @@ Einige Tipps zur Optimierung der Personalisierung beim Erstellen Ihres Inhalts f
 
 Bei der Analyse einer Nachricht wird standardmäßig von einer [Typologieregel](steps-validating-the-delivery.md#validation-process-with-typologies) überprüft, ob ein Ausschluss-Link vorhanden ist. Ist dies nicht der Fall, wird ein Warnhinweis erstellt. Sie können diese Regel ändern, sodass anstatt eines einfachen Warnhinweises ein Fehler angezeigt wird und ein Versand ohne diesen Link nicht möglich ist.
 
-Prüfen Sie vor jedem Versand, ob der Ausschluss-Link ordnungsgemäß funktioniert. Achten Sie beispielsweise beim Testversand darauf, dass der Link gültig ist, das Formular online ist und dass sich durch seine Validierung der Wert des Feldes **[!UICONTROL Diese Person nicht mehr kontaktieren]** auf **[!UICONTROL Ja]** ändert. Führen Sie diese Prüfung regelmäßig durch, da bei der manuellen Eingabe des Links oder der Änderung des Formulars Fehler auftreten können.
+Sie müssen vor jedem Versand überprüfen, ob der Abmelde-Link korrekt funktioniert. Achten Sie beispielsweise beim Testversand darauf, dass der Link gültig ist, das Formular online ist und dass durch seine Validierung der Wert der **[!UICONTROL Empfänger nicht mehr kontaktieren]** -Feld zu **[!UICONTROL Ja]**. Sie sollten diese Prüfung systematisch durchführen, da bei der Eingabe des Links oder beim Ändern des Formulars immer menschliche Fehler möglich sind.
 
 [In diesem Abschnitt](personalization-blocks.md#personalization-blocks-example) erfahren Sie, wie man einen Ausschluss-Link einfügt.
 

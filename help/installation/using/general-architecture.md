@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Allgemeine Architektur von Campaign Classic
-description: Erfahren Sie, wie Sie Campaign Classic installieren und konfigurieren können
+description: Erfahren Sie, wie Sie Campaign Classic installieren und konfigurieren
 feature: Installation, Architecture
 badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 audience: installation
@@ -129,4 +129,4 @@ Die Datenbank wird als Persistenzschicht verwendet und enthält fast alle von Ad
 
 Die Zuverlässigkeit der Datenbank ist von größter Bedeutung, da die meisten Adobe Campaign-Komponenten für die Ausführung ihrer Aufgaben Zugriff auf die Datenbank benötigen (mit Ausnahme des Umleitungsmoduls).
 
-Die Plattform wird mit einem vordefinierten Marketing-zentrierten Datenstrom geliefert oder kann mithilfe eines der wichtigsten RDBMS (Relational Database Management Systems) einfach auf einem vorhandenen Datenstrom und Schema platziert werden. Alle Daten im Datamart werden von der Adobe Campaign-Plattform über SQL-Aufrufe von Adobe Campaign zur Datenbank aufgerufen. Adobe Campaign bietet außerdem eine vollständige Ergänzung der ETL-Tools (Extract, Transform, Load – Extrahieren, Umwandeln, Laden), mittels derer Daten in das und aus dem System importiert und exportiert werden können.
+Die Plattform wird mit einem vordefinierten Marketing-zentrierten Datenstrom geliefert oder kann mithilfe eines der wichtigsten RDBMS (Relational Database Management Systems) einfach auf einem vorhandenen Datenstrom und Schema platziert werden. Alle Daten im Datamart werden von der Adobe Campaign-Plattform über SQL-Aufrufe von Adobe Campaign zur Datenbank aufgerufen. Adobe Campaign bietet außerdem ein vollständiges Komplement der ETL-Tools (Extract, Transform, Load – Extrahieren, Umwandeln, Laden), mittels dessen Daten in das und aus dem System importiert und exportiert werden können.

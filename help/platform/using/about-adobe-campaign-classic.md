@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: 8febceb0-9694-4045-a630-a7ff2fd18943
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
-workflow-type: ht
-source-wordcount: '934'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '920'
+ht-degree: 59%
 
 ---
 
@@ -46,29 +46,29 @@ Die Grundlagen des Profil-Managements werden im Abschnitt [Über Profile](../../
 
 ### Zielgruppensegmentierung {#targeted-segmentation}
 
-Adobe Campaign enthält leistungsstarke Analyse- und Zielgruppenbestimmungsfunktionen, die es Ihnen ermöglichen, sehr spezifische, dem Kundenprofil entsprechende Angebote zu erstellen. Dank der deskriptiven Analysefunktionen können Sie Informationen vor und nach Ihren Marketing-Kampagnen detailliert betrachten. Außerdem ermöglichen Filter und ein [benutzerfreundliches Abfragetool](../../platform/using/about-queries-in-campaign.md), registrierte Kontakte mithilfe unzähliger Kriterien zu kategorisieren und extrem genaue Zielgruppen zu definieren. Die Analyse- und Zielgruppenbestimmungsfunktionen werden auf [dieser Seite](../../reporting/using/about-descriptive-analysis.md) und im Abschnitt [Filter erstellen](../../platform/using/creating-filters.md) beschrieben.
+Adobe Campaign verfügt über leistungsstarke, benutzerfreundliche Segmentierungs- und Targeting-Funktionen, mit denen Sie zielgerichtete, differenzierte Angebote erstellen können. Die deskriptive Analysefunktion ermöglicht die Analyse von Informationen vor und nach Ihren Marketing-Kampagnen sowie die Filterverwaltung und [grafischer Abfrageeditor](../../platform/using/about-queries-in-campaign.md) ermöglicht Ihnen, Ihre Abonnenten zu filtern und anhand einer unbegrenzten Anzahl von Kriterien eine Stichprobe vorzunehmen oder Zielgruppen zu erstellen. Die Analyse- und Zielgruppenbestimmungsfunktionen werden auf [dieser Seite](../../reporting/using/about-descriptive-analysis.md) und im Abschnitt [Filter erstellen](../../platform/using/creating-filters.md) beschrieben.
 
-Fortgeschrittene Data-Management-Funktionen erweitern die Datenverarbeitungskapazitäten. Sie vereinfachen und optimieren den Zielgruppenbestimmungsprozess, indem sie nicht modellierte Daten in den Data-Mart einschließen. Diese Funktionen werden auf [dieser Seite](../../workflow/using/targeting-data.md#data-management) genauer erläutert.
+Die erweiterte Data-Management-Funktion erweitert die Datenverarbeitungsfunktionen. Sie vereinfacht und optimiert den Targeting-Prozess, indem nicht modellierte Daten in den Datamart aufgenommen werden. Diese Funktion wird im Abschnitt [diese Seite](../../workflow/using/targeting-data.md#data-management).
 
 ### Kanalübergreifende Orchestrierung einer Kampagne {#cross-channel-campaign-orchestration}
 
-Adobe Campaign unterstützt Sie bei der Konzeption und Durchführung von zielgerichteten und personalisierten Kampagnen unter Verwendung verschiedenster Kanäle: E-Mail, Briefpost, SMS und Push-Benachrichtigung. Über nur eine Plattform können Sie alle Ihre Kampagnen und Kommunikationen planen, steuern, konfigurieren, personalisieren, automatisieren, ausführen und messen. Planung und Ausführung von Kampagnen werden auf [dieser Seite](../../campaign/using/setting-up-marketing-campaigns.md) beschrieben.
+Mit Adobe Campaign können Sie zielgerichtete und personalisierte Kampagnen auf mehreren Kanälen erstellen und organisieren: E-Mail, Briefpost, SMS, Push-Benachrichtigungen. Über eine einzige Oberfläche erhalten Sie alle Funktionen, die zum Planen, Orchestrieren, Konfigurieren, Personalisieren, Automatisieren, Ausführen und Messen all Ihrer Kampagnen und Kommunikationen erforderlich sind. Weitere Informationen zur Planung und Ausführung von Kampagnen finden Sie unter [diese Seite](../../campaign/using/setting-up-marketing-campaigns.md).
 
 ### Personalisierung und Echtzeit-Interaktion {#personalization-and-real-time-interaction}
 
-Erwecken Sie die Aufmerksamkeit Ihrer Kunden und verbessern Sie Ihre Antwortraten dank einer weitreichenden, dem Profil und den Vorlieben Ihrer Kunden entsprechenden Personalisierung des Inhalts und der Header Ihrer Nachrichten. Inhaltsverwaltung und Personalisierung werden auf [dieser Seite](../../delivery/using/about-personalization.md) beschrieben. In [diesem Abschnitt](../../mrm/using/about-marketing-resource-management.md) finden Sie weiterführende Informationen zu kollaborativer Inhaltsverwaltung, Benachrichtigungskreisläufen und zum Thema Validierung.
+Erwecken Sie die Aufmerksamkeit Ihrer Kunden und verbessern Sie Ihre Antwortraten dank der erweiterten Personalisierung von Nachrichteninhalten und Kopfzeilen, die auf Kundenprofilen und -präferenzen basiert. Weiterführende Informationen zur Verwaltung und Personalisierung von Nachrichteninhalten finden Sie im Abschnitt [diese Seite](../../delivery/using/about-personalization.md). Die kollaborative Verwaltung von Inhalten, Benachrichtigungs- und Validierungskreisläufen wird im Abschnitt [diesem Abschnitt](../../mrm/using/about-marketing-resource-management.md).
 
 ### Analyse und Reporting {#analysis-and-reporting}
 
-Adobe Campaign ermöglicht es Ihnen, das Verhalten Ihrer Kunden zu verfolgen und besser zu verstehen, indem Sie Daten und Profile kontinuierlich anreichern. Dank der Berichts- und Analyse-Tools trägt jede neue Kampagne zur Optimierung Ihrer Datenbestände bei. Marketing-Maßnahmen können besser auf die jeweiligen Zielgruppen abgestimmt werden und Wirksamkeit sowie ROI werden gesteigert. Weiterführende Informationen zu diesem Thema finden Sie auf [dieser Seite](../../reporting/using/delivery-reports.md).
+Mit Adobe Campaign können Sie das Verhalten Ihrer Kunden überwachen und interpretieren, indem Sie deren Daten und Profile schrittweise anreichern. Mit den Berichts- und Analysewerkzeugen können Sie aus jeder neuen Kampagne Kapital schlagen, Ihre Marketinginitiativen besser ansprechen und deren Wirkung und ROI optimieren. Siehe Abschnitt [diese Seite](../../reporting/using/delivery-reports.md) für weitere Informationen.
 
 ### Integration mit Adobe Experience Cloud {#adobe-experience-cloud-integrations}
 
-Sie können die Funktionen des Versands und der erweiterten Kampagnenverwaltung von Adobe Campaign mit einer Reihe von Lösungen kombinieren, um das Benutzererlebnis zu personalisieren, z. B. mit Adobe Experience Manager, Adobe Analytics, Adobe Target oder Adobe Experience Cloud-Triggern. Zudem können Sie auch eine Integration mit Adobe IMS vornehmen und sich mit Ihrer Adobe ID bei Campaign anmelden. Weiterführende Informationen zu lösungsübergreifenden und Authentifizierungsintegrationen finden Sie in [diesem Abschnitt](../../integrations/using/about-adobe-id.md).
+Sie können die Versandfunktionen und erweiterten Kampagnenverwaltungsfunktionen von Adobe Campaign mit einer Reihe von Lösungen kombinieren, die Ihnen dabei helfen, das Benutzererlebnis zu personalisieren: beispielsweise Adobe Experience Manager-, Adobe Analytics-, Adobe Target- oder Adobe Experience Cloud-Trigger. Sie können auch in Adobe IMS integrieren und sich bei Campaign mit Ihrer Adobe ID anmelden. Weiterführende Informationen zu lösungsübergreifenden Integrationen und Authentifizierungsintegrationen finden Sie im Abschnitt [diesem Abschnitt](../../integrations/using/about-adobe-id.md).
 
 ## Kernfunktionen und Add-ons {#core-capabilities-and-add-ons}
 
-Adobe Campaign bietet je nach Ihren Anforderungen und Ihrer Architektur eine Reihe von Funktionen zur Implementierung und Optimierung kommunikativer Marketing-Funktionen. Bei manchen handelt es sich um Kernfunktionen, andere wiederum erfordern die Installation eines Packages und dessen Konfiguration. Eine detaillierte Produktbeschreibung erhalten Sie hier: [Produktbeschreibung von Adobe Campaign](https://helpx.adobe.com/de/legal/product-descriptions/adobe-campaign-classic---product-description.html).
+Adobe Campaign bietet eine Reihe von Funktionen, mit denen Sie die kommunikativen Marketing-Funktionen je nach Ihren Anforderungen und Ihrer Architektur implementieren und optimieren können. Einige davon sind Kernfunktionen, andere hängen von der Installation eines Pakets und Ihrer Konfiguration ab. Eine ausführliche Produktbeschreibung finden Sie hier: [Adobe Campaign Classic-Produktbeschreibung](https://helpx.adobe.com/de/legal/product-descriptions/adobe-campaign-classic---product-description.html).
 
 Die folgenden Funktionen sind verfügbar. Die Nutzbarkeit dieser Funktionen hängt von Ihrem Lizenzvertrag ab.
 

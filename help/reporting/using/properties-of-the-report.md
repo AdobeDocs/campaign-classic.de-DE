@@ -9,7 +9,7 @@ exl-id: dfa9d329-1086-4f6d-9d03-df159cad5495
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '463'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -54,7 +54,7 @@ Mögliche Optionen sind:
 
 ## Übersetzen des Berichts {#report-localization}
 
-Die Sprachen, in die der Bericht übersetzt werden soll, können konfiguriert werden. Klicken Sie hierzu auf den Tab **[!UICONTROL Lokalisierung]**.
+Sie können die Sprachen konfigurieren, in die der Bericht übersetzt werden soll. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Lokalisierung]** Registerkarte.
 
 ![](assets/s_ncs_advuser_report_properties_06.png)
 

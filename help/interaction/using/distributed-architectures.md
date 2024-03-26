@@ -10,8 +10,8 @@ topic-tags: advanced-parameters
 exl-id: 083be073-aad4-4c81-aff2-77f5ef3e80db
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1032'
-ht-degree: 100%
+source-wordcount: '1035'
+ht-degree: 89%
 
 ---
 
@@ -40,7 +40,7 @@ Die Synchronisation von Vorschlägen erfolgt in Packages. In den Ausführungsins
 >
 >Es wird dringend empfohlen, kurze und ausdrucksstarke interne Namen zu verwenden.
 
-Die Bereitstellung und Publikation der Angebote in den Ausführungs- und Kontrollinstanzen erfolgt automatisch.
+Die Bereitstellung und Veröffentlichung der Angebote in den Ausführungs- und Kontrollinstanzen erfolgt automatisch.
 
 In der Design-Umgebung gelöschte Angebote werden in allen Live-Instanzen deaktiviert. Obsolete Vorschläge und Angebote werden nach Ablauf der durch die Bereinigungsparameter im Bereitstellungassistenten aller Instanzen definierten Frist und des in den Typologieregeln definierten beweglichen Zeitraums automatisch gelöscht.
 
@@ -64,7 +64,7 @@ Das Interaction-Package muss auf allen Instanzen installiert werden (Kontroll- u
 
 >[!NOTE]
 >
->Im Zuge der Package-Installation werden Datenfelder der Vorschlagstabelle **nms:proposition** mit dem Typ **long**, beispielsweise die Vorschlagskennung, in den Typ **int64** umgewandelt. Weiterführende Informationen zu Datentypen finden Sie in diesem [Abschnitt](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data).
+>Wenn Sie das Package installieren, werden die Felder vom Typ **long** der Tabelle **nms:proposition**, z. B. die Vorschlagskennung, zu Feldern vom Typ **int64**. Diese Art von Daten wird im Abschnitt [diesem Abschnitt](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data).
 
 Für jede Instanz muss außerdem die Aufbewahrungsdauer der Daten konfiguriert werden (im Fenster **[!UICONTROL Datenbereinigung]** des Bereitstellungassistenten). Bei den Ausführungsinstanzen muss diese Dauer der Verlaufstiefe entsprechen, die für die Berechnung der Eignungs- bzw. Typologieregeln (beweglicher Zeitraum) erforderlich ist.
 
@@ -78,7 +78,7 @@ Bei den Kontrollinstanzen müssen Sie darüber hinaus:
    * Wählen Sie den Typ **[!UICONTROL Ausführungsinstanz]** aus.
    * Kreuzen Sie die Option **[!UICONTROL Aktiviert]** an.
    * Geben Sie die Verbindungsparameter zur Ausführungsinstanz an.
-   * Jeder Ausführungsinstanz muss eine Kennung zugeordnet werden. Dies geschieht durch Klick auf die Schaltfläche **[!UICONTROL Verbindung initialisieren]**.
+   * Jede Ausführungsinstanz muss mit einer ID verknüpft sein. Diese ID wird zugewiesen, wenn Sie auf die **[!UICONTROL Verbindung initialisieren]** Schaltfläche.
    * Kreuzen Sie die verwendete Anwendung an: **[!UICONTROL Message Center]**, **[!UICONTROL Interaction]** oder beide.
    * Geben Sie das genutzte FDA-Konto an. Benutzer müssen in den Ausführungsinstanzen erstellt werden und über die folgenden Lese- und Schreibberechtigungen in den entsprechenden Instanzen verfügen:
 
@@ -102,7 +102,7 @@ Bei den Kontrollinstanzen müssen Sie darüber hinaus:
      >
      >Sollten Fehler auftreten, sind die technischen Workflows zur Vorschlagssynchronisation und Angebotsbenachrichtigung zu prüfen.
 
-Falls aus Optimierungsgründen nur ein Teil der Marketing-Datenbank in die Ausführungsinstanzen dupliziert wird, haben Sie die Möglichkeit, ein der Umgebung zugeordnetes eingeschränktes Schema zu definieren. Auf diese Weise können die Benutzer nur die Daten verwenden, die tatsächlich in den Ausführungsinstanzen zur Verfügung stehen. Es ist trotzdem möglich, ein Angebot zu erstellen, das Daten verwendet, die nicht in der Ausführungsinstanz verfügbar sind. Begrenzen Sie hierfür mithilfe des Felds **[!UICONTROL Berücksichtigt wenn]** die Regel auf den gewünschten ausgehenden Kanal.
+Wenn aus Optimierungsgründen nur ein Teil der Marketing-Datenbank auf den Ausführungsinstanzen dupliziert wird, können Sie ein mit der Umgebung verknüpftes eingeschränktes Schema angeben, damit Benutzer nur die in den Ausführungsinstanzen verfügbaren Daten verwenden können. Sie können ein Angebot mit Daten erstellen, die in Ausführungsinstanzen nicht verfügbar sind. Dazu müssen Sie die Regel für die anderen Kanäle deaktivieren, indem Sie diese Regel auf den ausgehenden Kanal (**[!UICONTROL Wird berücksichtigt, wenn]** -Feld).
 
 ![](assets/ita_filtering.png)
 

@@ -7,7 +7,7 @@ badge: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 exl-id: 0c7f00f3-b16d-41c5-a7b1-f5a59201bf8c
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '851'
 ht-degree: 100%
 
 ---
@@ -55,7 +55,7 @@ Zur Optimierung von Erstellung, Verwendung und Beständigkeit eines Berichts mü
 
 1. Inhalt des Berichts definieren
 
-   Bestimmen Sie, welcher Datentyp in Ihrem Bericht angezeigt werden soll: Indikatoren eines Versands, Profile der Datenbank etc.
+   Bestimmen Sie, welcher Datentyp in Ihrem Bericht angezeigt werden soll: Versandindikatoren, Profile der Datenbank etc.
 
    Sie sollten zudem die Art der verwendeten Daten (einfach, aus einer Berechnung stammend, besonders umfangreich etc.), ihre Lokalisierung (in Adobe Campaign oder einem externen System), ihr Volumen sowie ihre Aktualisierungshäufigkeit kennen, um die Berechnungsintervalle festzulegen (täglich, wöchentlich, in Echtzeit).
 
@@ -65,7 +65,7 @@ Zur Optimierung von Erstellung, Verwendung und Beständigkeit eines Berichts mü
 
 ### Datenvolumen {#data-volume}
 
-Um optimale Leistungen zu erreichen, dürfen die bewegten Datenvolumen nicht zu groß sein.
+Um optimale Performance zu erreichen, dürfen die bewegten Datenvolumen nicht zu groß sein.
 
 Folgendes ist zu beachten:
 
@@ -89,9 +89,9 @@ In diesem Fall lautet die Syntax wie folgt:
 if(string(ctx@_historyId)!==""))
 ```
 
-Die Abfragen, die die in den Berichten anzuzeigenden Daten abrufen, dürfen nicht zu komplex sein, insbesondere wenn sie sich auf die gesamte Datenbank beziehen. Zur Leistungsverbesserung kann es nützlich sein, die Daten vor Ausführung der Abfrage zu filtern: Die Berechnungen betreffen dann nur einen Teil der Daten.
+Die Abfragen, die die in den Berichten anzuzeigenden Daten abrufen, dürfen nicht zu komplex sein, insbesondere wenn sie sich auf die gesamte Datenbank beziehen. Zur Performance-Verbesserung kann es nützlich sein, die Daten vor Ausführung der Abfrage zu filtern: Die Berechnungen betreffen dann nur einen Teil der Daten.
 
-### Leistungen {#performances}
+### Performance {#performances}
 
 Die oben stehenden Empfehlungen erlauben es, die Berechnung der Berichte zu optimieren.
 

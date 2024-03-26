@@ -8,8 +8,8 @@ feature: Landing Pages, Web Forms
 exl-id: 63602bed-ace6-4632-a735-5d268a7d72d0
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 100%
+source-wordcount: '524'
+ht-degree: 84%
 
 ---
 
@@ -78,8 +78,8 @@ In den folgenden Abschnitten wird beschrieben, wie Sie den Inhalt und das Layout
 
 >[!NOTE]
 >
->* Während Sie die Seite erstellen, können Sie sich im Tab **[!UICONTROL Vorschau]** das endgültige Rendering ansehen. Um Änderungen zu übernehmen, muss das Formular zuerst gespeichert werden. Etwaige Fehler werden im Tab **[!UICONTROL Log]** angezeigt.
->* Damit die Anzeige der Seiten und die Speicherung der Informationen in der richtigen Reihenfolge ablaufen, aktivieren Sie im Webformular den Debug-Modus. Gehen Sie dazu in den Untertab **[!UICONTROL Vorschau]** und aktivieren Sie die Option **[!UICONTROL Debug-Modus aktivieren]**: Alle erfassten Informationen und möglichen Ausführungsfehler werden am unteren Rand einer jeden Seite angezeigt.
+>* Während des Seitenentwurfs können Sie das endgültige Rendering im **[!UICONTROL Vorschau]** Registerkarte. Um Änderungen anzuzeigen, speichern Sie das Formular zuerst. Alle Fehler werden im **[!UICONTROL Protokoll]** Registerkarte.
+>* Um sicherzustellen, dass die Seitenanzeige und die Informationsspeicherung in der gewünschten Reihenfolge ablaufen, aktivieren Sie den Debug-Modus im Webformular. Gehen Sie dazu zum **[!UICONTROL Vorschau]** Unterregisterkarte und überprüfen Sie die **[!UICONTROL Aktivieren des Debug-Modus]** Feld: Alle erfassten Informationen und möglichen Ausführungsfehler werden am unteren Rand jeder Seite angezeigt.
 >
 
 ### Symbole der Symbolleiste verwenden {#using-the-icons-in-the-toolbar}

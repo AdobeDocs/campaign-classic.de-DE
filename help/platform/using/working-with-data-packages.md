@@ -11,8 +11,8 @@ topic-tags: administration-basics
 exl-id: d3369b63-a29b-43b7-b2ad-d36d4f46c82e
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2524'
-ht-degree: 100%
+source-wordcount: '2547'
+ht-degree: 93%
 
 ---
 
@@ -112,9 +112,9 @@ Der Assistent weist für alle drei Packagetypen die gleichen Schritte auf:
 
    >[!CAUTION]
    >
-   >Beim Export eines Ordners vom Typ **[!UICONTROL Angebotskategorie]**, **[!UICONTROL Angebotsumgebung]**, **[!UICONTROL Programm]** oder **[!UICONTROL Plan]** darf unter keinen Umständen die Entität **xtk:folder** gewählt werden, da dies einen Datenverlust verursachen kann. Wählen Sie stattdessen die jeweils dem Ordner entsprechende Entität aus: **nms:offerCategory** für Angebotskategorien, **nms:offerEnv** für Angebotsumgebungen, **nms:program** für Programme und **nms:plan** für Pläne.
+   >Wenn Sie eine **[!UICONTROL Angebotskategorie]**, **[!UICONTROL Angebotsumgebung]**, **[!UICONTROL Programm]** oder **[!UICONTROL Plan]** Ordner eingeben, wählen Sie niemals die **xtk:folder** da Sie möglicherweise Daten verlieren. Wählen Sie die Entität aus, die dem Ordner entspricht: **nms:offerCategory** für Angebotskategorien, **nms:offerEnv** für Angebotsumgebungen, **nms:program** für Programme und **nms:plan** für Pläne.
 
-   Die Listenverwaltung ermöglicht das Hinzufügen oder Löschen der Konfiguration der zu exportierenden Entitäten. Klicken Sie auf **[!UICONTROL Hinzufügen]**, um eine neue Entität auszuwählen.
+   Mit der Listenverwaltung können Sie Entitäten für den Export aus der Konfiguration hinzufügen oder löschen. Klicks **[!UICONTROL Hinzufügen]** , um eine neue Entität auszuwählen.
 
    Über die Schaltfläche **[!UICONTROL Detail]** kann die ausgewählte Konfiguration bearbeitet werden.
 
@@ -140,7 +140,7 @@ Der Assistent weist für alle drei Packagetypen die gleichen Schritte auf:
 
    ![](assets/ncs_datapackage_export6.png)
 
-1. Im letzten Schritt des Package-Export-Assistenten wird der Export gestartet. Die Daten werden in der im Feld **[!UICONTROL Datei]** angegebenen Datei gespeichert.
+1. Auf der letzten Seite des Package-Export-Assistenten können Sie den Export starten. Die Daten werden in der Datei gespeichert, die im **[!UICONTROL Datei]** -Feld.
 
    ![](assets/ncs_datapackage_export7.png)
 
@@ -274,12 +274,12 @@ Entitäten können direkt über ihren Speicherort in der Instanz zu einer Packag
 
 ### Erzeugung von Package-Definitionen konfigurieren {#configuring-package-definitions-generation}
 
-Die Package-Erzeugung kann über den Tab **[!UICONTROL Inhalt]** der Package-Definition konfiguriert werden. Klicken Sie dazu auf den Link **[!UICONTROL Erzeugungsparameter]**.
+Die Package-Generierung kann über die Package-Definition konfiguriert werden. **[!UICONTROL Inhalt]** Registerkarte. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Generierungsparameter]** -Link.
 
 ![](assets/packagedefinition_generationparameters.png)
 
 * **[!UICONTROL Definition einschließen]**: Hiermit wird die aktuell verwendete Definition in die Package-Definition eingeschlossen.
-* **[!UICONTROL Installationsscript einschließen]**: Hiermit können Sie ein JavaScript-Script hinzufügen, das beim Package-Import ausgeführt wird. Wenn diese Option ausgewählt ist, wird der Tab **[!UICONTROL Script]** im Bildschirm für die Package-Definition hinzugefügt.
+* **[!UICONTROL Installationsskript einschließen]**: ermöglicht das Hinzufügen eines JavaScript-Skripts, das beim Package-Import ausgeführt wird. Wenn ausgewählt, wird eine **[!UICONTROL Skript]** im Bildschirm zur Package-Definition hinzugefügt.
 * **[!UICONTROL Standardwerte einschließen]**: Hiermit werden dem Package die Werte der Attribute aller Entitäten hinzugefügt.
 
   Diese Option ist standardmäßig nicht ausgewählt, um lange Exporte zu vermeiden. Dies bedeutet, dass Attribute mit Standardwerten (&quot;Leerstring&quot;, &quot;0&quot; und &quot;false&quot;, wenn im Schema nichts anderes definiert ist) von Entitäten nicht zum Package hinzugefügt und deshalb nicht exportiert werden.
@@ -354,7 +354,7 @@ Führen Sie Importe stets innerhalb derselben Version der Plattform durch. Sie m
 
 >[!IMPORTANT]
 >
->Das Importieren zwischen verschiedenen Versionen wird von Adobe nicht unterstützt.
+>Der Import zwischen verschiedenen Versionen wird von Adobe nicht unterstützt.
 <!--This is not allowed. Importing from 6.02 to 6.1, for example, is prohibited. If you do so, R&D won’t be able to help you resolve any issues you encounter.-->
 
 Achten Sie auf das Schema und die Datenbankstruktur. Nach dem Importieren von Packages mit einem Schema muss ein Schema erstellt werden.
@@ -366,7 +366,7 @@ Achten Sie auf das Schema und die Datenbankstruktur. Nach dem Importieren von Pa
 Definieren Sie zunächst verschiedene Package-Typen. Es werden nur vier Typen verwendet:
 
 **Entitäten**
-* Alle &quot;xtk&quot;- und &quot;nms&quot;-spezifischen Elemente in Adobe Campaign wie Schemas, Formulare, Ordner, Versandvorlagen usw.
+* Alle &quot;xtk&quot;- und &quot;nms&quot;-spezifischen Elemente in Adobe Campaign wie Schemata, Formulare, Ordner, Versandvorlagen usw.
 * Sie können eine Entität sowohl als &quot;Admin&quot;- als auch als &quot;Plattform&quot;-Element betrachten.
 * Sie sollten in ein Package, das Sie in eine Campaign-Instanz hochladen möchten, nicht mehr als eine Entität einschließen.
 

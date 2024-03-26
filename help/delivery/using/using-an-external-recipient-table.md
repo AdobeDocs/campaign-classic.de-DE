@@ -9,7 +9,7 @@ exl-id: b6aabc68-707d-4c6c-b008-277609166c6c
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '97'
-ht-degree: 100%
+ht-degree: 83%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 
 
-Im Falle einer externen Versandtabelle sind zusätzliche Konfigurationen erforderlich. So muss das Schema **[!UICONTROL nms:seedmember]** erweitert werden. Der im Zuge dessen hinzugefügte Tab erlaubt die Angabe der entsprechenden Felder, wie in unten stehendem Beispiel dargestellt:
+Wenn es sich bei der Versandtabelle um eine externe Tabelle handelt, müssen Sie zusätzliche Konfigurationen vornehmen. Das Schema **[!UICONTROL nms:seedmember]** muss erweitert werden. Den Testadressen wird ein Tab hinzugefügt, in dem die entsprechenden Felder wie unten dargestellt definiert werden:
 
 ![](assets/s_ncs_user_seedlist_new_tab.png)
 

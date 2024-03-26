@@ -7,8 +7,8 @@ feature: Approvals
 exl-id: 4d413d51-ae5d-4e5e-bfaf-4160a6075281
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '878'
-ht-degree: 100%
+source-wordcount: '879'
+ht-degree: 94%
 
 ---
 
@@ -42,7 +42,7 @@ Benutzer werden durch den Versand einer E-Mail-Benachrichtigung zur Validierung 
 
 Die Benutzerverwaltung wird in diesem [Abschnitt](../../platform/using/access-management.md) beschrieben.
 
-E-Mail-Benachrichtigen werden über eine fortlaufende Versandaktion gesteuert. Die Standardvorlage heißt **[!UICONTROL notifyAssignee]** und ist im Knoten **[!UICONTROL Administration > Kampagnenverwaltung > Vorlagen technischer Sendungen]** zugänglich. Es wird empfohlen, die Vorlage nicht zu ändern, sondern sie zu duplizieren und für jede Aktivität eine gesonderte Benachrichtigungsvorlage zu erstellen.
+Validierungs-E-Mails werden kontinuierlich gesendet. Die Standard-Versandvorlage lautet **[!UICONTROL notifyAssignee]**: Sie werden im **[!UICONTROL Administration > Kampagnenverwaltung > Vorlagen technischer Sendungen]** Ordner. Dieses Szenario kann angepasst werden. Es wird außerdem empfohlen, eine Kopie zu erstellen und die Vorlagen für jede Aktivität zu ändern.
 
 Auf der genannten Vorlage basierende Sendungen werden im Knoten **[!UICONTROL Administration > Betreibung > Automatisch erstellte Objekte > Technische Sendungen > Workflow-Benachrichtigungen]** gespeichert.
 

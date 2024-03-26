@@ -12,7 +12,7 @@ exl-id: 415c5137-2eb0-4581-a46e-26e8e3d264fa
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '204'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -55,7 +55,7 @@ Jeder Status wird durch ein spezielles Symbol und eine spezielle Bezeichnung rep
 
 * **Ausgesetzt**
 
-  Klick auf die Schaltfläche **[!UICONTROL Pause]**: Der Vorgang wurde ausgesetzt. Er kann über die Schaltfläche **[!UICONTROL Starten]** wieder aufgenommen werden.
+  Klicks **[!UICONTROL Anhalten]**: Der Auftrag wird ausgesetzt. Er kann durch Klicken auf **[!UICONTROL Starten]**.
 
 * **Abgeschlossen**
 

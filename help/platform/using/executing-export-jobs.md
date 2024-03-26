@@ -11,8 +11,8 @@ topic-tags: importing-and-exporting-data
 exl-id: 94fc473a-dc49-41e8-b572-51c162b09996
 source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
-source-wordcount: '1027'
-ht-degree: 100%
+source-wordcount: '1040'
+ht-degree: 67%
 
 ---
 
@@ -39,20 +39,20 @@ Beim Start des Export-Assistenten muss zunächst eine Vorlage ausgewählt werden
 
 1. Klicken Sie zur Auswahl der gewünschten Vorlage rechts vom Feld **[!UICONTROL Exportvorlage]** entweder auf den Pfeil oder auf **[!UICONTROL Verknüpftes Element auswählen]**, um den Navigationsbaum zu durchsuchen.
 
-   Die anwendungseigene Vorlage **[!UICONTROL Neuer Textexport]** darf nicht geändert werden. Sie können sie jedoch duplizieren, um eine neue Vorlage zu erstellen. Standardmäßig werden Exportvorlagen im Knoten **[!UICONTROL Ressourcen > Vorlagen > Bearbeitungsvorlagen]** gespeichert.
+   Die native Vorlage lautet **[!UICONTROL Neuer Textexport]**. Diese Vorlage darf nicht geändert werden. Sie können sie jedoch duplizieren, um eine neue Vorlage zu konfigurieren. Standardmäßig werden Exportvorlagen im **[!UICONTROL Ressourcen > Vorlagen > Bearbeitungsvorlagen]** Knoten.
 
 1. Geben Sie im Feld **[!UICONTROL Titel]** einen Namen für den Export ein und fügen Sie eventuell eine Beschreibung hinzu.
-1. Wählen Sie anschließend den Exporttyp aus. Mit der Option **[!UICONTROL Einfacher Export]** kann jeweils nur eine Datei exportiert werden. Die Option **[!UICONTROL Multipler Export]** hingegen bietet die Möglichkeit, in einem Durchgang mehrere Dateien u. U. mit verschiedenen Quelldokumenttypen zu exportieren.
+1. Wählen Sie den Exporttyp aus. Es gibt zwei mögliche Exporttypen: **[!UICONTROL Einfacher Export]** nur eine Datei exportieren und **[!UICONTROL Mehrfach-Export]** um mehrere Dateien in einer Ausführung aus einem oder mehreren Quelldokumenttypen zu exportieren.
 
 ## 2. Schritt – Dateityp auswählen {#step-2---type-of-file-to-export}
 
 Wählen Sie den Typ des zu exportierenden Dokuments aus, d. h. das Schema der zu exportierenden Daten.
 
-Bei einem vom Knoten **[!UICONTROL Vorgänge]** ausgehenden Export wird standardmäßig die Empfängertabelle vorgeschlagen. Wenn der Export von einer Liste ausgehend gestartet wird (durch **[!UICONTROL Rechtsklick > Export]**), wird der **[!UICONTROL Dokumenttyp]** in der Tabelle, zu der die Daten gehören, automatisch ausgefüllt.
+Standardmäßig, wenn der Export über die **[!UICONTROL Aufträge]** -Knoten aus der Empfängertabelle stammt. Wenn der Export aus einer Datenliste (aus der **[!UICONTROL Rechtsklick > Export]** ), die Tabelle, zu der die Daten gehören, automatisch im **[!UICONTROL Dokumenttyp]** -Feld.
 
 ![](assets/s_ncs_user_export_wizard02.png)
 
-* Standardmäßig ist die Option **[!UICONTROL Nach dem Export erzeugte Datei herunterladen]** angekreuzt: Geben Sie in diesem Fall den Namen der zu erstellenden Datei im Feld **[!UICONTROL Lokale Datei]** an oder durchsuchen Sie Ihre lokale Festplatte, indem Sie auf das Ordnersymbol rechts vom Feld klicken. Sie haben die Möglichkeit, diese Option abzuwählen und den Pfad und Namen der Ausgabedatei auf dem Server anzugeben.
+* Standardmäßig wird die Variable **[!UICONTROL Laden Sie die nach dem Export auf dem Server generierte Datei herunter]** ausgewählt ist. Im **[!UICONTROL Lokale Datei]** Geben Sie den Namen und Pfad der zu erstellenden Datei ein oder durchsuchen Sie Ihre lokale Festplatte, indem Sie auf den Ordner rechts vom Feld klicken. Sie können diese Option deaktivieren, um den Zugriffspfad und den Namen der Server-Ausgabedatei einzugeben.
 
   >[!NOTE]
   >
@@ -60,7 +60,7 @@ Bei einem vom Knoten **[!UICONTROL Vorgänge]** ausgehenden Export wird standard
   >
   >Sollten Sie nur einen Teil der Daten exportieren wollen, klicken Sie auf **[!UICONTROL Erweiterte Parameter...]** und geben Sie die Anzahl der zu exportierenden Zeilen an.
 
-* Es besteht die Möglichkeit, einen Differenzexport vorzunehmen, d. h. nur die seit der letzten Durchführung geänderten Datensätze zu exportieren. Klicken Sie hierfür auf **[!UICONTROL Erweiterte Parameter...]** und kreuzen Sie im Tab **[!UICONTROL Differenzexport]** die Option **[!UICONTROL Differenzexport aktivieren]** an.
+* Sie können einen Differenzexport erstellen, um nur Datensätze zu exportieren, die seit der letzten Ausführung geändert wurden. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Erweiterte Parameter]** und klicken Sie auf die **[!UICONTROL Differenzexport]** Registerkarte und wählen Sie **[!UICONTROL Differenzexport aktivieren]**.
 
   ![](assets/s_ncs_user_export_wizard02_b.png)
 
@@ -72,10 +72,10 @@ Wählen Sie nun das Ausgabeformat der Exportdatei aus. Mögliche Formate sind Te
 
 ![](assets/s_ncs_user_export_wizard03.png)
 
-* Beim Format **[!UICONTROL Text]** sind die Spaltentrennzeichen (Tabstopp, Komma, Semikolon oder Sonstige) sowie die Zeichenketten-Qualifizierer (Ohne, Doppelte Anführungszeichen, Einfache Anführungszeichen) anzugeben.
+* Beim Format **[!UICONTROL Text]** sind die Spaltentrennzeichen (Tabstopp, Komma, Semikolon oder Sonstige) sowie die Zeichenfolgen-Qualifizierer (Ohne, Doppelte Anführungszeichen, Einfache Anführungszeichen) anzugeben.
 * Bei den Formaten **[!UICONTROL Text]** und **[!UICONTROL CSV]** besteht die Möglichkeit, die Option **[!UICONTROL Erste Zeile enthält die Spaltentitel]** anzukreuzen.
-* Die Formate für Daten und Zahlen können angepasst werden. Klicken Sie hierfür auf den Link **[!UICONTROL Bearbeiten...]** neben dem entsprechenden Feld und konfigurieren Sie die gewünschte Option.
-* Bei Feldern, die Aufzählungswerte enthalten, können Sie **[!UICONTROL Titel anstelle der internen Werte der Auflistungen exportieren]** auswählen. Der Titel kann beispielsweise im folgenden Format gespeichert werden: **1=Mr.**, **2=Miss**, **3=Mrs.**. Wenn diese Option ausgewählt wird, werden **Mr.**, **Miss** und **Mrs.** exportiert.
+* Geben Sie das Format von Datum und Zahl an. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Bearbeiten]** für das entsprechende Feld und verwenden Sie den Editor.
+* Bei Feldern, die Aufzählungswerte enthalten, können Sie **[!UICONTROL Exportieren von Bezeichnungen anstelle der internen Werte von Auflistungen]**. Beispielsweise kann der Titel im Formular gespeichert werden **1 = Herr**, **2=Miss**, **3 = Mrs.**. Wenn diese Option ausgewählt wird, werden **Mr.**, **Miss** und **Mrs.** exportiert.
 
 ## 4. Schritt – Daten auswählen {#step-4---data-selection}
 
@@ -96,7 +96,7 @@ An dieser Stelle kann die Sortierreihenfolge der einzelnen Spalten festgelegt we
 
 ## 6. Schritt – Filterbedingungen {#step-6---filter-conditions-}
 
-Um nicht alle Datensätze zu exportieren, haben Sie die Möglichkeit, Filterbedingungen zu konfigurieren. Die Vorgehensweise entspricht der Zielgruppenbestimmung im Versand-Assistenten. Diese wird auf [dieser Seite](../../delivery/using/steps-defining-the-target-population.md) erläutert.
+Sie können Filterbedingungen hinzufügen, um den Export aller Daten zu vermeiden. Die Konfiguration dieser Filterung entspricht der Zielgruppenbestimmung im Versand-Assistenten. Mehr dazu erfahren Sie auf [dieser Seite](../../delivery/using/steps-defining-the-target-population.md).
 
 ![](assets/s_ncs_user_export_wizard05_b.png)
 
@@ -122,7 +122,7 @@ Wenn Sie Sammlungselemente exportieren (beispielsweise Abonnements von Empfänge
 
 ## 8. Schritt – Datenvorschau {#step-8---data-preview}
 
-Klicken Sie auf **[!UICONTROL Datenvorschau starten]**. Standardmäßig werden die ersten 200 Zeilen des Abfrageergebnisses angezeigt. Durch Eingabe eines anderen Werts im Feld **[!UICONTROL Angezeigte Zeilen]** können Sie die Liste Ihren Bedürfnissen gemäß anpassen.
+Klicks **[!UICONTROL Datenvorschau starten]** für eine Vorschau des Exportergebnisses. Standardmäßig werden die ersten 200 Zeilen angezeigt. Um diesen Wert zu ändern, klicken Sie auf die Pfeile rechts neben dem **[!UICONTROL Anzuzeigende Zeilen]** -Feld.
 
 ![](assets/s_ncs_user_export_wizard07.png)
 

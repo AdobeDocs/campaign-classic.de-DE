@@ -7,8 +7,8 @@ role: User, Data Architect
 level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
-workflow-type: ht
-source-wordcount: '5978'
+workflow-type: tm+mt
+source-wordcount: '5959'
 ht-degree: 100%
 
 ---
@@ -506,7 +506,7 @@ Weitere Informationen zu [Listen](../../platform/using/creating-and-managing-lis
 
 +++**Lokaler Cache**
 
-Der lokale Cache umfasst die Informationen, die lokal auf dem Computer des/der Benutzenden gespeichert werden. Gecachte Daten werden von der Konsole verwendet, um den erforderlichen Traffic auf den Server zu reduzieren und die Leistung zu verbessern. Durch das regelmäßige Löschen des lokalen Caches (über das Menü &quot;Datei&quot;) werden die gespeicherten Daten aktualisiert und die Leistung und Stabilität verbessert.
+Der lokale Cache umfasst die Informationen, die lokal auf dem Computer des/der Benutzenden gespeichert werden. Gecachte Daten werden von der Konsole verwendet, um den erforderlichen Traffic auf den Server zu reduzieren und die Performance zu verbessern. Durch das regelmäßige Löschen des lokalen Caches (über das Menü &quot;Datei&quot;) werden die gespeicherten Daten aktualisiert und die Performance und Stabilität verbessert.
 
 Weitere Informationen zum [lokalen Cache](../../platform/using/faq-campaign-config.md#perform-soft-cache-clear).
 +++
@@ -752,16 +752,16 @@ In der Workflow-Palette werden die verfügbaren Aktivitäten angezeigt, die eine
 Weitere Informationen über die [Palette](../../workflow/using/building-a-workflow.md#adding-and-linking-activities).
 +++
 
-+++**Überwachen der Leistung**
++++**Überwachen der Performance**
 
-Informationen zur Leistungsüberwachung werden auf der Registerkarte &quot;Monitoring&quot; angezeigt. Zu sehen sind Metriken für das zugrunde liegende System, z. B. Speicher- und CPU-Auslastung, SMTP-Server-Statistiken, Server-Prozesse und andere relevante Informationen.
+Informationen zur Performance-Überwachung werden auf der Registerkarte &quot;Monitoring&quot; angezeigt. Zu sehen sind Metriken für das zugrunde liegende System, z. B. Speicher- und CPU-Auslastung, SMTP-Server-Statistiken, Server-Prozesse und andere relevante Informationen.
 
-Weitere Informationen über die [Leistungsüberwachung](../../production/using/monitoring-processes.md).
+Weitere Informationen über die [Performance-Überwachung](../../production/using/monitoring-processes.md).
 +++
 
 +++**Gestaltungsbausteine**
 
-Adobe Campaign bietet integrierte Gestaltungsbausteine, die Sie in Ihre Sendungen einfügen können. Sie sind dynamisch, personalisiert und enthalten ein spezifisches Rendering. Sie ermöglichen beispielsweise das Einfügen eines Logos, einer bestimmten Anrede oder auch eines Links zur Mirror-Seite. Standardmäßig sind mehrere Gestaltungsbausteine verfügbar. Sie können auch benutzerdefinierte Gestaltungsbausteine erstellen, mit denen Sie Ihre Versandpersonalisierung optimieren können. Die tatsächlichen Daten werden in der Analysephase des Versands in jede erzeugte Nachricht eingefügt.
+Adobe Campaign bietet integrierte Gestaltungsbausteine, die Sie in Ihre Sendungen einfügen können. Sie sind dynamisch, personalisiert und enthalten ein spezifisches Rendering. Sie ermöglichen beispielsweise das Einfügen eines Logos, einer bestimmten Anrede oder auch eines Links zur Mirrorseite. Standardmäßig sind mehrere Gestaltungsbausteine verfügbar. Sie können auch benutzerdefinierte Gestaltungsbausteine erstellen, mit denen Sie Ihre Versandpersonalisierung optimieren können. Die tatsächlichen Daten werden in der Analysephase des Versands in jede erzeugte Nachricht eingefügt.
 
 Weitere Informationen über [Gestaltungsbausteine](../../delivery/using/personalization-blocks.md).
 +++

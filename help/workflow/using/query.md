@@ -8,7 +8,7 @@ exl-id: 20d03627-cd56-46da-bc02-73b48a02a350
 source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '1701'
-ht-degree: 83%
+ht-degree: 98%
 
 ---
 
@@ -45,15 +45,15 @@ Klicken Sie auf den Link **[!UICONTROL Abfrage bearbeiten...]** und gehen Sie wi
 
    ![](assets/query_temporary_table.png)
 
-1. Definieren Sie mithilfe des Assistenten die Populationen. Je nach Zielgruppentyp können die Felder variieren. Sie können die Vorschau der Zielpopulation mit Ihren aktuellen Kriterien mit der **[!UICONTROL Vorschau]** Registerkarte.
+1. Definieren Sie die Populationen mithilfe des Assistenten. Je nach Zielgruppentyp können die Felder variieren. Sie können die Vorschau der Zielpopulation mit Ihren aktuellen Kriterien über die Registerkarte **[!UICONTROL Vorschau]** anzeigen.
 
    Weiterführende Informationen zur Erstellung und Verwendung von Filtern und zu Abfragen finden Sie in diesem [Abschnitt](../../platform/using/filtering-options.md).
 
    ![](assets/s_user_segmentation_wizard.png)
 
-1. Fügen Sie gegebenenfalls manuell Filterkriterien hinzu, wenn Sie im ersten Schritt **[!UICONTROL Filterbedingungen]** gewählt haben, oder verwenden Sie die Option **[!UICONTROL Filter]** > **[!UICONTROL Erweiterte Filter...]**.
+1. Wenn Sie in Schritt 1 **[!UICONTROL Filterbedingungen]** ausgewählt haben oder die Option **[!UICONTROL Filter]** > **[!UICONTROL Erweiterter Filter…]** verwenden, müssen Sie später manuell Filterkriterien hinzufügen.
 
-   Sie können auch Datengruppierungsbedingungen hinzufügen, indem Sie die entsprechende Option ankreuzen. Die Filterdimension muss sich dabei von der Zielgruppendimension der Abfrage unterscheiden. Weiterführende Informationen zur Gruppierung finden Sie in diesem Abschnitt [Abschnitt](querying-using-grouping-management.md).
+   Darüber hinaus können Sie die gefilterten Daten gruppieren, indem Sie das entsprechende Kästchen aktivieren. Hierzu muss sich die Filterdimension von der Zielgruppendimension der Abfrage unterscheiden.  Weiterführende Informationen finden Sie in [diesem Abschnitt](querying-using-grouping-management.md).
 
    Sie können auch weitere Kriterien hinzufügen, indem Sie den Ausdruckseditor verwenden und ihn mit den logischen Optionen UND, ODER und AUSSER kombinieren. Sie können dann eine Vorschau der **[!UICONTROL Entsprechende SQL-Abfrage ...]** für Ihre Kriterienkombination. Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](../../platform/using/defining-filter-conditions.md#building-expressions).
 
@@ -74,8 +74,8 @@ Wählen Sie im ersten Fenster des Assistenten zunächst den Typ der hinzuzufüge
 ![](assets/wf_add_data_1st_option.png)
 
 * Die Option **[!UICONTROL Daten in Relation mit der Filterdimension]** erlaubt den Zugriff auf Daten aus der Adobe-Campaign-Datenbank.
-* Auswählen **[!UICONTROL Externe Daten]** , um Daten aus einer externen Datenbank hinzuzufügen. Diese Option ist nur verfügbar, wenn Sie die **Federated Data Access** -Option. Weitere Informationen hierzu finden Sie unter [Zugriff auf eine externe Datenbank (FDA)](accessing-an-external-database-fda.md).
-* Wählen Sie die **[!UICONTROL Angebotsvorschläge]** -Option, um eine Reihe von Spalten hinzuzufügen, mit denen der vom Angebotsmodul am besten erstellte Vorschlag gespeichert werden kann. Diese Option ist nur verfügbar, wenn Sie die **Interaction** -Modul.
+* Wählen Sie **[!UICONTROL Externe Daten]** aus, um Daten aus einer externen Datenbank hinzuzufügen. Diese Option ist nur verfügbar, wenn Sie die Option **Federated Data Access** erworben haben. Weitere Informationen hierzu finden Sie unter [Zugriff auf eine externe Datenbank (FDA)](accessing-an-external-database-fda.md).
+* Wählen Sie die Option **[!UICONTROL Angebotsvorschlag]** aus, um einen Spaltensatz hinzuzufügen, mit dem Sie den besten, vom Angebotsmodul erzeugten Vorschlag speichern können. Diese Option ist nur verfügbar, wenn Sie das Modul **Interaktion** erworben haben.
 
 Wenn keines der o. g. Module auf Ihrer Plattform installiert ist, überspringt der Assistent das Auswahlfenster. Sie werden direkt zum nächsten Schritt weitergeleitet.
 
@@ -114,7 +114,7 @@ Gehen Sie folgendermaßen vor, um eine mit einer Zielpopulation verknüpfte Info
      >Wenn die ursprüngliche Bedingung nicht respektiert wird, kann das Ergebnis falsch sein (fehlende Zeilen oder Dubletten).
 
    * Wenn Sie mehrere Zeilen abrufen möchten (**[!UICONTROL Zeilenanzahl begrenzen]**), können Sie die Anzahl an abzurufenden Zeilen angeben.
-   * Wenn die abgerufenen Spalten Aggregate enthalten, z. B. die Anzahl der gemeldeten Fehler, die durchschnittlichen Ausgaben auf einer Site usw. Sie können die **[!UICONTROL Aggregate]** -Wert.
+   * Wenn die abgerufenen Spalten Aggregate enthalten, beispielsweise die Anzahl angegebener Fehler oder der durchschnittliche Warenkorb in einem POS,  können Sie die Option **[!UICONTROL Aggregate]** verwenden.
 
    ![](assets/query_add_collection_param.png)
 
@@ -152,7 +152,7 @@ In folgendem Beispiel sollen alle Männer zwischen 18 und 30 Jahre identifiziert
    ![](assets/query_example_preview.png)
 
 1. Speichern Sie bei Bedarf die Abfrage und klicken Sie auf **[!UICONTROL Beenden]** > **[!UICONTROL OK]**.
-1. Fahren Sie mit der Bearbeitung Ihres Workflows fort, indem Sie ihm weitere Aktivitäten hinzufügen. Nach dem Start und Abschluss des vorherigen Abfrageschritts wird die Anzahl der gefundenen Empfänger angezeigt. Über das Popup-Menü mit der Maus können Sie weitere Details anzeigen (klicken Sie mit der rechten Maustaste auf die Transition > **[!UICONTROL Ziel anzeigen...]**).
+1. Fahren Sie mit der Bearbeitung Ihres Workflows fort, indem Sie ihm weitere Aktivitäten hinzufügen. Nach dem Start und Abschluss des vorherigen Abfrageschritts wird die Anzahl der gefundenen Empfängerinnen oder Empfänger angezeigt. Weitere Details können per Maus mit dem Popup-Menü angezeigt werden (Rechtsklick auf die Transition > **[!UICONTROL Zielgruppe anzeigen…]**).
 
    ![](assets/query_example_result.png)
 
@@ -162,7 +162,7 @@ In folgendem Beispiel sollen alle Männer zwischen 18 und 30 Jahre identifiziert
 * schema
 * recCount
 
-Anhand der drei Werte lässt sich die durch die Abfrage ermittelte Population identifizieren. **[!UICONTROL tableName]** der Name der Tabelle, in der die Kennungen der Zielgruppe gespeichert werden, **[!UICONTROL schema]** ist das Schema der Population (i. d. R. nms:recipient) und **[!UICONTROL recCount]** ist die Anzahl der Elemente in der Tabelle.
+Anhand der drei Werte lässt sich die durch die Abfrage ermittelte Population identifizieren. **[!UICONTROL tableName]** ist der Name der Tabelle, welche die Kennungen der Zielgruppe enthält, **[!UICONTROL schema]** ist das Schema der Population, (in der Regel nms:recipient) und **[!UICONTROL recCount]** ist die Anzahl der Elemente in der Tabelle.
 
 Dieser Wert ist das Schema der Arbeitstabelle. Dieser Parameter ist für alle Transitionen mit **[!UICONTROL tableName]** und **[!UICONTROL schema]** gültig.
 

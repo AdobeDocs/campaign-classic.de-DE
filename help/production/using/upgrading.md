@@ -11,8 +11,8 @@ topic-tags: updating-adobe-campaign
 exl-id: 4aaa6256-256a-441d-80c9-430f8e427875
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1197'
-ht-degree: 14%
+source-wordcount: '1160'
+ht-degree: 7%
 
 ---
 
@@ -36,7 +36,7 @@ Gehen Sie in einer Windows-Umgebung wie folgt vor, um Adobe Campaign auf einen n
 * [Dienste beenden](#shut-down-services),
 * [Aktualisierung des Anwendungsservers](#upgrade-the-adobe-campaign-server-application),
 * [Ressourcen synchronisieren](#synchronize-resources),
-* [Dienste wieder starten](#restart-services).
+* [Dienste neu starten](#restart-services).
 
 Informationen zum Aktualisieren der Clientkonsole finden Sie unter [diesem Abschnitt](../../installation/using/client-console-availability-for-windows.md).
 
@@ -75,12 +75,12 @@ Gehen Sie wie folgt vor, um die Aktualisierungsdatei auszuführen:
    Um diese Datei herunterzuladen, stellen Sie eine Verbindung zum [Software Distribution-Portal](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) Verwendung Ihrer Benutzeranmeldeinformationen. Weitere Informationen zur Softwareverteilung finden Sie unter [diese Seite](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de).
 
 1. Wählen Sie den Installationsmodus aus: Wählen Sie **[!UICONTROL Aktualisieren oder Reparieren]**
-1. Klicken Sie auf **[!UICONTROL Weiter]** .
-1. Klicken Sie auf **[!UICONTROL Beenden]** .
+1. Klicks **[!UICONTROL Nächste]** .
+1. Klicks **[!UICONTROL Beenden]** .
 
    Das Installationsprogramm kopiert dann die neuen Dateien.
 
-1. Wählen Sie nach Abschluss des Vorgangs die Option **[!UICONTROL Beenden]** aus .
+1. Nachdem der Vorgang abgeschlossen ist, klicken Sie auf **[!UICONTROL Beenden]** .
 
 ### Ressourcen synchronisieren {#synchronize-resources}
 
@@ -202,7 +202,7 @@ Es gibt zwei Möglichkeiten, das Synchronisierungsergebnis anzuzeigen:
   2013-04-09 07:48:39.750Z 00002E7A 1 warning log Document of identifier 'nms:includeView' and type 'xtk:srcSchema' updated in the database and found in the file system. You will have to merge the two versions manually.
   ```
 
-  Wenn ein Warnhinweis aufgrund eines Konflikts von Ressourcen ausgegeben wird, muss ihn der Benutzer lösen.
+  Wenn die Warnung einen Ressourcenkonflikt betrifft, muss der Benutzer darauf achten, ihn zu beheben.
 
 * Die **postupgrade_`<server version number>_<time of postupgrade>`.log** Protokolldatei enthält das Synchronisierungsergebnis. Sie ist standardmäßig im folgenden Verzeichnis verfügbar: **`<installation directory>/var/<instance/postupgrade`**. Fehler und Warnungen werden durch die Fehler- und Warnattribute angezeigt.
 
@@ -233,7 +233,7 @@ Wenn Sie den Konflikt manuell lösen möchten, gehen Sie wie folgt vor:
 
    ![](assets/s_ncs_production_conflict003.png)
 
-1. Gehen Sie zum gelösten Konflikt. Klicken Sie auf das Symbol **[!UICONTROL Aktionen]** und wählen Sie **[!UICONTROL Als gelöst deklarieren]** aus .
+1. Gehen Sie zu dem Konflikt, den Sie gelöst haben. Klicken Sie auf **[!UICONTROL Aktionen]** Symbol und wählen Sie **[!UICONTROL Als aufgelöst deklarieren]** .
 1. Speichern Sie Ihre Änderungen: Der Konflikt ist jetzt gelöst.
 
 ### Best Practices {#best-practices}

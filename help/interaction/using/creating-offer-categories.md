@@ -11,7 +11,7 @@ exl-id: ed97a1b5-c870-4b67-98b6-16adc316fd46
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '296'
-ht-degree: 100%
+ht-degree: 85%
 
 ---
 
@@ -33,7 +33,7 @@ Gehen Sie wie folgt vor, um eine neue Kategorie zu erstellen:
 
    ![](assets/offer_cat_create_002.png)
 
-1. Benennen Sie die Kategorie. Der Titel kann später auch über die Registerkarte **[!UICONTROL Allgemein]** der Kategorie geändert werden.
+1. Benennen Sie die Kategorie neu. Sie können den Titel später mithilfe der **[!UICONTROL Allgemein]** Registerkarte.
 
    ![](assets/offer_cat_create_003.png)
 
@@ -59,6 +59,6 @@ Gehen Sie wie folgt vor, um eine neue Kategorie zu erstellen:
 
      ![](assets/offer_cat_create_006.png)
 
-Über den Link **[!UICONTROL Planung und Eignungsregeln des Angebots]** im Dashboard der in der Kategorie enthaltenen Angebote können Sie auf die Details der Eignungskonfiguration zugreifen.
+Eine Zusammenfassung der Eignungsregeln finden Sie im Dashboard der in der Kategorie enthaltenen Angebote. Um sie anzuzeigen, klicken Sie auf das **[!UICONTROL Planung und Eignungsregeln des Angebots]** -Link.
 
 ![](assets/offer_create_006.png)

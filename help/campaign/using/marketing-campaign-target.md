@@ -7,9 +7,9 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Cla
 feature: Campaigns, Audiences
 exl-id: 04daa67c-4057-42a7-b993-a6eddf2b883d
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1586'
-ht-degree: 100%
+ht-degree: 82%
 
 ---
 
@@ -49,11 +49,11 @@ Die Hauptzielgruppe eines Versands kann auch über einen Campaign-Workflow defin
 
 ### Erstellen eines Workflows {#creating-a-targeting-workflow}
 
-Die Zielgruppenbestimmung kann mithilfe einer Kombination von Filterkriterien erfolgen, die in einem Workflow grafisch verdeutlicht wird. So ist es möglich, je nach Bedarf Gruppen oder Untergruppen zu erstellen und als Zielpopulation zu verwenden. Klicken Sie zum Öffnen des Workflow-Editors im Kampagnen-Dashboard auf die Registerkarte **[!UICONTROL Zielgruppenbestimmungen und Workflows]**.
+Die Zielgruppenbestimmung kann mithilfe einer Kombination von Filterbedingungen in einer grafischen Abfolge in einem Workflow erfolgen. Sie können Populationen und Unterpopulationen erstellen, die entsprechend Ihren Anforderungen angesprochen werden. Um den Workflow-Editor anzuzeigen, klicken Sie im Campaign-Dashboard auf die Registerkarte **[!UICONTROL Zielgruppenbestimmung und Workflows]**.
 
 ![](assets/s_ncs_user_edit_op_wf_link.png)
 
-Die Zielpopulation wird über eine oder mehrere in einem Workflow platzierte Abfragen aus der Adobe-Campaign-Datenbank extrahiert. Weiterführende Informationen zum Erstellen einer Abfrage finden Sie in [diesem Abschnitt](../../workflow/using/query.md).
+Die Zielpopulation wird über eine oder mehrere in einem Workflow platzierte Abfragen aus der Adobe Campaign-Datenbank extrahiert. Informationen zum Erstellen einer Abfrage finden Sie unter [diesem Abschnitt](../../workflow/using/query.md).
 
 Sie können Abfragen starten und die resultierenden Populationen über Aktivitäten wie Vereinigung, Schnittmenge, Aufspaltung, Ausschluss weiter einschränken oder vergrößern.
 
@@ -79,7 +79,7 @@ Im linken Bereich des Editors befindet sich eine Bibliothek grafischer Objekte, 
 
 Es besteht die Möglichkeit, mehrere Zielgruppen-Workflows für eine einzelne Kampagne zu erstellen. Gehen Sie wie folgt vor, um einen Workflow hinzuzufügen:
 
-1. Positionieren Sie den Mauszeiger im linken oberen Abschnitt des Workflow-Editors, machen Sie einen Rechtsklick und wählen Sie **[!UICONTROL Hinzufügen]** aus. Sie können auch die Schaltfläche **[!UICONTROL Neu]** oberhalb dieses Bereichs nutzen.
+1. Gehen Sie zum linken oberen Bereich des Workflow-Erstellungsbereichs, klicken Sie mit der rechten Maustaste darauf und wählen Sie **[!UICONTROL Hinzufügen]**. Sie können auch die **[!UICONTROL Neu]** oberhalb dieses Bereichs.
 
    ![](assets/s_ncs_user_add_a_wf.png)
 
@@ -92,7 +92,7 @@ Benutzer mit entsprechenden Berechtigungen können Zielgruppen-Workflows manuell
 
 Die Zielgruppenbestimmung kann so konfiguriert werden, dass sie entsprechend einer Planungsaktivität (Planungsassistent) oder abhängig von einem Ereignis (externes Signal, Dateiimport usw.) automatisch ausgeführt wird.
 
-Bei Aktionen bezüglich der Ausführung des Zielgruppen-Workflows (Start, Stopp, Pause etc.) handelt es sich um **asynchrone** Prozesse: Der jeweilige Befehl wird gespeichert und wird ausgeführt, sobald der Server verfügbar ist.
+Die Aktionen im Zusammenhang mit der Ausführung des Zielgruppen-Workflows (Start, Stopp, Pause etc.) are **asynchron** Prozesse: Der Befehl wird gespeichert und wird ausgeführt, sobald der Server verfügbar ist, um ihn anzuwenden.
 
 Über die Symbolleiste hingegen kann die Ausführung des Zielgruppen-Workflows unmittelbar gesteuert werden.
 
@@ -108,7 +108,7 @@ Bei Aktionen bezüglich der Ausführung des Zielgruppen-Workflows (Start, Stopp,
 
      Anschließend wechselt der Prozessstatus auf **[!UICONTROL Gestartet]**.
 
-   * Sie können den Zielgruppen-Workflow über das entsprechende Symbol der Menüleiste neu starten. Dieser Befehl kann besonders dann nützlich sein, wenn das Symbol **[!UICONTROL Starten]** nicht verfügbar ist, beispielsweise wenn der Workflow gerade angehalten wird. Klicken Sie in diesem Fall auf das Symbol **[!UICONTROL Neu starten]**, um den Neustart vorzuziehen. Diese Anfrage wird daraufhin vom Server erfasst, wie am Ausführungsstatus zu erkennen ist:
+   * Sie können den Zielgruppen-Workflow über das entsprechende Symbolleistensymbol neu starten. Dieser Befehl kann nützlich sein, wenn die Variable **[!UICONTROL Starten]** -Symbol nicht verfügbar ist, z. B. wenn der Workflow zur Zielgruppenbestimmung angehalten wird. Klicken Sie in diesem Fall auf die **[!UICONTROL Neu starten]** -Symbol, um den Neustart vorherzusehen. Der Server berücksichtigt die Anfrage, da ihr Status Folgendes anzeigt:
 
      ![](assets/s_user_segmentation_restart_status.png)
 
@@ -126,7 +126,7 @@ Bei Aktionen bezüglich der Ausführung des Zielgruppen-Workflows (Start, Stopp,
 
      ![](assets/s_user_segmentation_pause_status.png)
 
-     Ein Zielgruppen-Workflow kann auch automatisch ausgesetzt werden, wenn die Ausführung eine bestimmte Aktivität erreicht: Machen Sie hierzu einen Rechtsklick auf die Aktivität, ab der der Workflow ausgesetzt werden soll, und klicken Sie auf **[!UICONTROL Aktivieren, aber nicht ausführen]**.
+     Sie können einen Zielgruppen-Workflow auch automatisch anhalten, wenn die Ausführung eine bestimmte Aktivität erreicht. Klicken Sie dazu mit der rechten Maustaste auf die Aktivität, ab der der Zielgruppen-Workflow ausgesetzt werden soll, und wählen Sie **[!UICONTROL Aktivieren, aber nicht ausführen]**.
 
      ![](assets/s_user_segmentation_donotexecute.png)
 
@@ -148,7 +148,7 @@ Bei Aktionen bezüglich der Ausführung des Zielgruppen-Workflows (Start, Stopp,
 
      ![](assets/s_user_segmentation_stop_status.png)
 
-  Ein Zielgruppen-Workflow kann auch automatisch angehalten werden, wenn die Ausführung eine bestimmte Aktivität erreicht: Machen Sie hierzu einen Rechtsklick auf die Aktivität, ab der der Workflow angehalten werden soll, und klicken Sie auf **[!UICONTROL Nicht aktivieren]**.
+  Ein Zielgruppen-Workflow kann auch automatisch angehalten werden, wenn die Ausführung eine Aktivität erreicht. Klicken Sie dazu mit der rechten Maustaste auf die Aktivität, von der aus der Zielgruppen-Workflow gestoppt werden soll, und wählen Sie **[!UICONTROL Nicht aktivieren]**.
 
   ![](assets/s_user_segmentation_donotactivate.png)
 
@@ -205,7 +205,7 @@ Die in einer Kampagne vorgenommene Konfiguration einer Kontrollgruppe gilt stand
    ![](assets/s_ncs_user_edit_op_target_del.png)
 
 1. Klicken Sie auf den Tab **[!UICONTROL Kontrollgruppe]** und wählen Sie dann **[!UICONTROL Kontrollgruppe aktivieren und konfigurieren]**.
-1. Klicken Sie auf **[!UICONTROL Bearbeiten...]**, um die Kontrollgruppe zu konfigurieren..
+1. Klicken Sie auf **[!UICONTROL Bearbeiten...]**, um die Kontrollgruppe zu konfigurieren.
 
 Das Konfigurationsverfahren wird unter [Extraktion der Kontrollgruppe aus der Hauptzielgruppe](#extracting-the-control-group-from-the-main-target) und [Hinzufügen einer Kontrollgruppe ](#adding-a-population) beschrieben.
 
@@ -218,13 +218,13 @@ Sie haben die Möglichkeit, Empfänger der Hauptzielgruppe eines Versands zu ext
 Um eine Kontrollgruppe zu extrahieren, aktivieren Sie diese auf Kampagnen- oder Versandniveau und wählen Sie eine der folgenden Optionen: **[!UICONTROL Zufallsauswahl aktivieren]** oder **[!UICONTROL Die ersten, aus einer Sortierung hervorgehenden Elemente beibehalten]**.
 
 * **[!UICONTROL Zufallsauswahl aktivieren]**: Diese Option wendet eine Zufallsauswahl auf die Empfänger der Zielgruppe an. Wenn Sie anschließend einen Grenzwert von 100 festlegen, wird die Kontrollgruppe aus 100 zufällig aus der Zielgruppe ausgewählten Empfängern zusammengesetzt. Die angewandte Zufallsauswahl hängt von der Datenbank-Engine ab.
-* **[!UICONTROL Die ersten, aus einer Sortierung hervorgehenden Elemente beibehalten]**: Diese Option ermöglicht die Begrenzung der Kontrollgruppe nach einer oder mehreren Sortierreihenfolgen. Wenn Sie das Feld **[!UICONTROL Alter]** als Kriterium auswählen und anschließend einen Grenzwert von 100 angeben, wird die Kontrollgruppe aus den 100 jüngsten Empfängern zusammengesetzt. Es könnte sich zum Beispiel anbieten, eine Kontrollgruppe aus Kontakten zusammenzustellen, die besonders wenig oder besonders viele Einkäufe tätigen und diese mit dem Verhalten der kontaktierten Empfänger zu vergleichen.
+* **[!UICONTROL Nur die ersten Datensätze nach der Sortierung beibehalten]** : Mit dieser Option können Sie eine Begrenzung festlegen, die auf einer oder mehreren Sortierreihenfolgen basiert. Wenn Sie das Feld **[!UICONTROL Alter]** als Sortierkriterium wählen und dann 100 als Schwellenwert definieren, setzt sich die Kontrollgruppe aus den 100 jüngsten Empfangenden zusammen. Es könnte zum Beispiel interessant sein, eine Kontrollgruppe zu definieren, die nur Empfangende umfasst, die wenige bzw. häufige Käufe tätigen, und ihr Verhalten mit dem der kontaktierten Empfangenden zu vergleichen.
 
 Klicken Sie auf **[!UICONTROL Weiter]**, um (bei Bedarf) die Sortierreihenfolge festzulegen und die Empfängerbegrenzung zu bestimmen.
 
 ![](assets/s_ncs_user_edit_op_target_param.png)
 
-Diese Konfiguration entspricht der einer Aufspaltungsaktivität im Workflow, die die Unterteilung einer Zielgruppe in mehrere Teilmengen ermöglicht. Die Kontrollgruppe entspricht einer dieser Teilmengen. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../workflow/using/architecture.md).
+Diese Konfiguration entspricht einer Teilungsaktivität im Workflow, mit der die Zielgruppe in Teilmengen unterteilt werden kann. Die Kontrollgruppe ist eine dieser Teilmengen. Siehe Abschnitt [diesem Abschnitt](../../workflow/using/architecture.md) für weitere Informationen.
 
 ### Verwenden einer neuen Population als Kontrollgruppe {#adding-a-population}
 

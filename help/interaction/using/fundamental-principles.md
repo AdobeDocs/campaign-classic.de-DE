@@ -11,7 +11,7 @@ exl-id: b13ecfc9-1723-42b2-ab30-d5637cc3d0dd
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '345'
-ht-degree: 100%
+ht-degree: 78%
 
 ---
 
@@ -39,7 +39,7 @@ Ein Angebot wird nur für die bei der Genehmigung ausgewählten Platzierungen be
 
 Es gibt zwei grundsätzliche Interaktionstypen: eingehende Interaktionen, die von einem Kontakt ausgelöst werden, und ausgehende Interaktionen, die durch den Angebotsersteller initiiert werden.
 
-Beide Interaktionstypen können entweder im Einzelmodus (das Angebot wird für einen einzelnen Kontakt berechnet) oder im Batch-Modus (das Angebot wird für mehrere Kontakte gleichzeitig berechnet) verarbeitet werden. In der Regel werden eingehende Interaktionen im Einzelmodus und ausgehende Interaktionen im Batch-Modus verarbeitet. Ausnahmen von dieser Regel bilden z. B. Transaktionsnachrichten, bei denen die ausgehende Interaktion im Einzelmodus geschieht. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../message-center/using/about-transactional-messaging.md).
+Diese beiden Interaktionstypen können entweder im Einzelmodus (Angebot wird für einen einzelnen Kontakt berechnet) oder im Batch-Modus (Angebot wird für eine Gruppe von Kontakten berechnet) durchgeführt werden. Im Allgemeinen werden eingehende Interaktionen im Einzelmodus durchgeführt und ausgehende Interaktionen im Batch-Modus. Es kann jedoch bestimmte Ausnahmen geben, beispielsweise bei Transaktionsnachrichten, bei denen die ausgehende Interaktion im einheitlichen Modus erfolgt (siehe [diesem Abschnitt](../../message-center/using/about-transactional-messaging.md)).
 
 Wenn ein Angebot unterbreitet werden kann oder soll (je nach Konfiguration), spielt das Angebotsmodul eine zentrale Rolle: Es ermittelt automatisch aus einer Reihe von möglichen Angeboten das für den Kontakt am besten geeignete Angebot, indem es die für ihn vorliegenden Daten und die in der Anwendung definierten Regeln kombiniert und abgleicht.
 

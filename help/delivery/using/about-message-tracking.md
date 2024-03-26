@@ -8,9 +8,9 @@ feature: Monitoring, Email
 role: User
 exl-id: 43779505-9917-4e99-af25-b00a9d29a645
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '696'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -22,7 +22,7 @@ Dank der Tracking-Funktionen können Sie mit Adobe Campaign die versendeten Nach
 
 Diese Informationen werden auf der Registerkarte **[!UICONTROL Tracking]** des Profils jedes Versandempfängers abgerufen. Auf dieser Registerkarte werden alle verfolgten URL-Links angezeigt, auf die der in der Liste ausgewählte Empfänger geklickt hat. Dies ist die Akkumulation aller URLs, die in den Sendungen verfolgt werden, die noch im Versandbildschirm vorhanden sind. Die Liste kann konfiguriert werden und enthält normalerweise die angeklickte URL, das Datum und die Uhrzeit des Klicks sowie das Dokument, in dem die URL gefunden wurde. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../platform/using/editing-a-profile.md#tracking-tab).
 
-Im **Versand-Dashboard** können Sie Sendungen überwachen und etwaige Probleme beim Nachrichtenversand erkennen. Weitere Informationen dazu finden Sie in [diesem Abschnitt](delivery-dashboard.md).
+Die **Versand-Dashboard** ist auch wichtig, um Ihre Sendungen zu überwachen und eventuelle Probleme beim Nachrichtenversand zu erkennen. Weitere Informationen hierzu finden Sie unter [diesem Abschnitt](delivery-dashboard.md).
 
 Das folgende Diagramm zeigt die Phasen des Dialogs zwischen dem Benutzer und den verschiedenen Servern.
 
@@ -67,7 +67,7 @@ Diese Daten finden Sie auf der Registerkarte &quot;Tracking&quot; Ihres Versands
 
 **Tracking testen**
 
-Bevor Sie Ihre Nachrichten mit Ihrem Tracking senden, können Sie das Tracking auf Ihrer Mirror-Seite, in Ihren E-Mail-Protokollen und Links testen. [Weitere Informationen](testing-tracking.md)
+Bevor Sie Ihre Nachrichten mit Ihrem Tracking senden, können Sie das Tracking auf Ihrer Mirrorseite, in Ihren E-Mail-Protokollen und Links testen. [Weitere Informationen](testing-tracking.md)
 
 ## Web-Anwendungs-Tracking {#web-application-tracking}
 

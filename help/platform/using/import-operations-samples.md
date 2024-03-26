@@ -11,8 +11,8 @@ topic-tags: importing-and-exporting-data
 exl-id: 4582b524-2b6d-484c-bace-29d2e69f60e9
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1115'
-ht-degree: 100%
+source-wordcount: '1122'
+ht-degree: 88%
 
 ---
 
@@ -53,7 +53,7 @@ Gehen Sie wie folgt vor, um eine als Textdatei vorliegende Empfängerliste in di
 
 1. Vorlage auswählen
 
-   * Klicken Sie auf den Link **[!UICONTROL Vorgänge]** im Menü **[!UICONTROL Profile und Zielgruppen]** der Adobe-Campaign-Startseite. Wählen Sie dann in der Dropdown-Liste Erstellen die Option **[!UICONTROL Neuer Import]**.
+   * Klicken Sie auf der Adobe Campaign-Startseite auf das **[!UICONTROL Profile und Zielgruppen]** Link, dann **[!UICONTROL Aufträge]**. Klicken Sie über der Auftragsliste auf **[!UICONTROL Neuer Import]**.
    * Behalten Sie die standardmäßig vorgeschlagene Vorlage **[!UICONTROL Neuer Textimport]** bei.
    * Passen Sie Titel und Beschreibung an.
    * Wählen Sie die Option **[!UICONTROL Einfacher Import]**.
@@ -68,7 +68,7 @@ Gehen Sie wie folgt vor, um eine als Textdatei vorliegende Empfängerliste in di
 
 1. Felder zuordnen
 
-   Die Option **[!UICONTROL Zielfelder automatisch zuordnen]** schlägt für jedes Quellfeld automatisch ein Zielfeld vor. Prüfen Sie die Informationen dieses Bildschirms, bevor Sie auf **[!UICONTROL Weiter]** klicken.
+   Klicken Sie auf **[!UICONTROL Zielfelder auswerten]** -Symbol, um die Quell- und Zielschemata automatisch zuzuordnen. Überprüfen Sie die Informationen in diesem Fenster, bevor Sie auf **[!UICONTROL Nächste]**.
 
    ![](assets/s_ncs_user_import_example03_01.png)
 
@@ -93,7 +93,7 @@ Gehen Sie wie folgt vor, um eine als Textdatei vorliegende Empfängerliste in di
 
      ![](assets/s_ncs_user_import_example06_01.png)
 
-     Dank des **[!UICONTROL Spurenmodus]** haben Sie die Möglichkeit, den Importverlauf für jeden einzelnen Datensatz der Quelldatei detailliert zu betrachten. Klicken Sie hierfür auf den Menüpunkt **[!UICONTROL Vorgänge]** in der Rubrik **[!UICONTROL Profile und Zielgruppen]** auf der Startseite und wählen Sie den entsprechenden Import aus. Die Tabs **[!UICONTROL Allgemein]**, **[!UICONTROL Protokoll]** und **[!UICONTROL Zurückweisungen]** enthalten alle wichtigen Informationen.
+     Die **[!UICONTROL Tracking]** -Modus können Sie die Details des Imports für jeden Datensatz in der Quelldatei verfolgen. Klicken Sie dazu auf der Startseite auf **[!UICONTROL Profile und Zielgruppen]** then **[!UICONTROL Prozesse]**, wählen Sie den entsprechenden Import aus und suchen Sie nach der **[!UICONTROL Allgemein]**, **[!UICONTROL Protokoll]** und **[!UICONTROL Zurückweisungen]** Registerkarten.
 
       * Importverlauf ansehen
 
@@ -239,4 +239,4 @@ Im folgenden Beispiel enthalten teilweise die Felder der Datenbank Werte, währe
 
      ![](assets/s_ncs_user_import_example06_06.png)
 
-     Gemäß der im 4. Schritt bezüglich der Duplikataverwaltung ausgewählten Option **[!UICONTROL Aktualisieren]** haben die Werte der Textdatei die entsprechenden Werte in der Datenbank ersetzt. Dies gilt auch für die leeren Felder der Textdatei.
+     Die Werte der Textdatei, die leer waren, haben die Werte in der Datenbank überschrieben. Die in der Datenbank vorhandenen Werte wurden entsprechend der Variablen **[!UICONTROL Aktualisieren]** für Duplikate in Schritt 4 ausgewählt wurde.

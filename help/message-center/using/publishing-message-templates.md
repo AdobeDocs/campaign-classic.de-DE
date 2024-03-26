@@ -10,7 +10,7 @@ topic-tags: message-templates
 exl-id: 1d55f42b-64bf-4b1f-a317-c1f7456aa5b3
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '538'
 ht-degree: 100%
 
 ---
@@ -65,7 +65,7 @@ Sobald eine Nachrichtenvorlage in den Ausführungsinstanzen veröffentlicht wurd
 >
 >Diese Funktion ist ab Campaign-Version 20.2 verfügbar.
 
-Gehen Sie wie folgt vor, um die Veröffentlichung einer Transaktionsnachrichtenvorlage aufzuheben.
+Gehen Sie wie folgt vor, um die Veröffentlichung einer Transaktionsnachrichten-Vorlage aufzuheben.
 
 1. Gehen Sie in der Kontrollinstanz im Navigationsbaum zum Ordner **[!UICONTROL Message Center > Transaktionsnachrichtenvorlagen]**.
 1. Wählen Sie die Vorlage aus, deren Veröffentlichung Sie aufheben möchten.

@@ -8,9 +8,9 @@ feature: Workflows
 role: User
 exl-id: bc6ebf5d-cc21-4750-9713-2bf259e7d6bf
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: ht
-source-wordcount: '1214'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1212'
+ht-degree: 93%
 
 ---
 
@@ -47,13 +47,13 @@ Vier Aktivitätseigenschaften sind zu konfigurieren:
 
 * **Neu, basierend auf einer Veröffentlichungsvorlage erstellt**
 
-  Erstellt einen neuen Inhalt ausgehend von einer Veröffentlichungsvorlage. Die Inhaltsinstanz wird im angegebenen &quot;Inhaltskanal&quot;-Ordner gespeichert.
+  Erstellt einen neuen Inhalt ausgehend von einer Veröffentlichungsvorlage. Die Inhaltsinstanz wird im angegebenen Ordner „Inhaltskanal“ gespeichert.
 
 ### Inhalt aktualisieren {#update-the-content}
 
 * **Betreff**
 
-  Ermöglicht bei der Publikation die Anpassung des Versandbetreffs.
+  Ermöglicht bei der Veröffentlichung die Anpassung des Versandbetreffs.
 
 * **Zugriff auf Daten eines XML-Streams**
 
@@ -89,7 +89,7 @@ Der Inhalt wird in der Aktivität &quot;Content Management&quot; konfiguriert:
 
 Ausgehend von der Veröffentlichungsvorlage wird im Inhaltskanal-Ordner eine neue Inhaltsinstanz erstellt.
 
-Im vorliegenden Beispiel wurde der Versandbetreff überschrieben. Er ersetzt den in der Versandvorlage der **[!UICONTROL Versand]**-Aktivität angegebenen Betreff.
+In unserem Beispiel haben wir den Betreff des Versands überschrieben. Es wird anstelle des im **[!UICONTROL Versand]** Vorlage.
 
 Der Inhalt wird automatisch durch den von der angegebenen URL heruntergeladenen XML-Stream ergänzt:
 
@@ -185,7 +185,7 @@ Die nachfolgende Aktivität startet die Inhaltserzeugung.
 
 Der zu veröffentlichende Inhalt wird in der eingehenden Transition angegeben.
 
-Die Aktivität endet mit der Erzeugung des Inhalts unter Verwendung des angegebenen Publikationsverzeichnisses.
+Die Aktivität endet mit der Erzeugung des Inhalts unter Verwendung des angegebenen Veröffentlichungsverzeichnisses.
 
 Die Aktivität **JavaScript-Code** ruft den kompletten Namen jeder erzeugten Datei ab.
 
@@ -216,11 +216,11 @@ Die Aktivität endet mit der Vorbereitung und dem Start des Versands.
 
 ### Inhalt von FTP importieren {#importing-content-from-ftp}
 
-Wenn Ihr Versandinhalt in einer auf FTP- oder SFTP-Servern befindlichen HTML-Datei verfügbar ist, können Sie diesen Inhalt einfach in Adobe Campaign-Sendungen laden. In [diesem Beispiel](../../workflow/using/loading-delivery-content.md) wird dies näher erläutert.
+Wenn Ihr Versandinhalt in einer HTML-Datei auf FTP- oder SFTP-Servern verfügbar ist, können Sie diesen Inhalt einfach in Adobe Campaign-Sendungen laden. Siehe Abschnitt [Dieses Beispiel](../../workflow/using/loading-delivery-content.md).
 
 ### Inhalt von Amazon Simple Storage Service-Connector (S3) importieren {#importing-content-from-amazon-simple-storage-service--s3--connector}
 
-Wenn Ihr Versandinhalt in Amazon Simple Storage Service (S3) Buckets verfügbar ist, können Sie diesen Inhalt einfach in Adobe Campaign-Sendungen laden. In [diesem Beispiel](../../workflow/using/loading-delivery-content.md) wird dies näher erläutert.
+Wenn sich Ihr Versandinhalt in Amazon Simple Storage Service (S3) Buckets befindet, können Sie diesen Inhalt einfach in Adobe Campaign-Sendungen laden. Siehe Abschnitt [Dieses Beispiel](../../workflow/using/loading-delivery-content.md).
 
 ## Halbautomatische Aktualisierung {#semi-automatic-update}
 

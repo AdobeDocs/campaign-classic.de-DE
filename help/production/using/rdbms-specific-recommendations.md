@@ -11,8 +11,8 @@ topic-tags: database-maintenance
 exl-id: a586d70b-1b7f-47c2-a821-635098a70e45
 source-git-commit: 624978901943b4c74f50c20298c9596f73b25b1b
 workflow-type: tm+mt
-source-wordcount: '1294'
-ht-degree: 5%
+source-wordcount: '1287'
+ht-degree: 4%
 
 ---
 
@@ -473,9 +473,9 @@ Das folgende Beispiel betrifft Microsoft SQL Server 2005. Wenn Sie eine andere V
 
 >[!NOTE]
 >
->Hierbei handelt es sich um eine optionale Konfiguration.
+>Diese Konfiguration ist optional.
 
-Mit der Option **WdbcOptions_TempDbName** können Sie eine separate Datenbank für Tabellen auf Microsoft SQL Server konfigurieren. Dadurch werden Backups und Replikation optimiert – 
+Mit der Option **WdbcOptions_TempDbName** können Sie eine separate Datenbank für Tabellen auf Microsoft SQL Server konfigurieren. Dadurch werden Backups und Replikation optimiert.
 
 Diese Option kann verwendet werden, wenn Arbeitstabellen (z. B. die bei Ausführung eines Workflows erstellten Tabellen) in einer anderen Datenbank erstellt werden sollen.
 

@@ -7,8 +7,8 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Cla
 exl-id: 2c678f45-2555-4647-9885-bd002db7df37
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '395'
-ht-degree: 15%
+source-wordcount: '366'
+ht-degree: 13%
 
 ---
 
@@ -52,11 +52,11 @@ Sie müssen eine [!DNL PostgreSQL] externes Konto, um Ihre Campaign-Instanz mit 
 
 1. Konfigurieren Sie die **[!UICONTROL PostgreSQL]** Externe Kontoauthentifizierung:
 
-   * **[!UICONTROL Server]**: URL des [!DNL PostgreSQL]-Servers.
+   * **[!UICONTROL Server]**: URL der [!DNL PostgreSQL] Server.
 
    * **[!UICONTROL Konto]**: Name des Benutzers.
 
-   * **[!UICONTROL Passwort]**: Passwort des Benutzerkontos.
+   * **[!UICONTROL Passwort]**: Kennwort für Benutzerkonten.
 
    * **[!UICONTROL Datenbank]**: Name der Datenbank (optional).
 

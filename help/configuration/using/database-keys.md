@@ -5,13 +5,13 @@ description: Schlüsselverwaltung in Datenschemata
 feature: Configuration, Instance Settings
 role: Data Engineer, Developer
 badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
-source-git-commit: 4a29c189e1e438bbb90067ece63ced0196c618ec
+exl-id: faf63c8f-9d10-43c1-a990-91361594af9f
+source-git-commit: 46dcd80d5adc31a66b47c6d75e7914b0a686326b
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 23%
 
 ---
-
 
 # Schlüsselverwaltung in Schemata {#management-of-keys}
 
@@ -187,5 +187,5 @@ Weitere Informationen finden Sie unter den folgenden Links:
 * [Erste Schritte mit Schemata](about-schema-reference.md)
 * [Schemastruktur](schema-structure.md)
 * [Datenbank-Mapping](database-mapping.md)
-* [Linkverwaltung](database-links.md)
+* [Link-Management](database-links.md)
 * [Campaign-Datenmodell](about-data-model.md)

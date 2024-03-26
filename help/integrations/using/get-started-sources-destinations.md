@@ -8,8 +8,8 @@ audience: integrations
 content-type: reference
 exl-id: 8cee52c7-ea56-4701-8ebb-eb18afffea51
 source-git-commit: d15592aaccf036fc956049e611139ea5a46e9fc0
-workflow-type: ht
-source-wordcount: '313'
+workflow-type: tm+mt
+source-wordcount: '298'
 ht-degree: 100%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 ## Über Quellen und Ziele
 
-Mit Adobe Experience Platform können Sie Daten zwischen Campaign Classic und der Adobe Echtzeit-Kundendatenplattform (RTCDP) austauschen. Auf diese Weise können Sie Adobe Experience Platform-Audiences in Ihren Campaign-Workflows auswählen und dann Daten, die sich auf diese Audiences beziehen, wie Sendungen, Öffnungen und Klicks, an die Adobe Echtzeit-Kundendatenplattform zurücksenden.
+Mit Adobe Experience Platform können Sie Daten zwischen Campaign Classic und der Adobe Echtzeit-Kundendatenplattform (RTCDP) austauschen. Auf diese Weise können Sie Adobe Experience Platform-Zielgruppen in Ihren Campaign-Workflows auswählen und dann Daten, die sich auf diese Zielgruppen beziehen, wie Sendungen, Öffnungen und Klicks, an Adobe Real-Time Customer Data Platform zurücksenden.
 
 * Mit **Zielen** können Sie Adobe Experience Platform-Audiences in Campaign Classic aufnehmen. Auf diese Weise können Sie bekannte und unbekannte Daten für Ihre Marketing-Kampagnen aktivieren.
 * Mit **Quellen** exportieren Sie Campaign Classic-Daten (z. B. Sendungen, Öffnungen und Klicks) nach Adobe Experience Platform. Auf diese Weise können Sie Daten, die Sie aus unterschiedlichen Quellen erfassen, an einem Ort zusammenfassen und die daraus gewonnenen Erkenntnisse nutzen.

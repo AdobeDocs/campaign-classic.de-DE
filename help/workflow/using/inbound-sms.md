@@ -8,7 +8,7 @@ exl-id: 94a9d50b-4ead-4815-8d12-942fa78b4e8a
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '125'
-ht-degree: 100%
+ht-degree: 79%
 
 ---
 
@@ -24,7 +24,7 @@ Die Aktivität **SMS-Empfang** ermöglicht den Abruf und die Verarbeitung von SM
 
 Geben Sie im Tab **SMS-Empfang** die SMS-Routing-Parameter sowie das bei Empfang jeder Nachricht auszuführende Script an. Im zweiten Tab können Sie eine Planung für die Aktivität definieren und im dritten bei Bedarf eine Ablauffrist.
 
-1. **[!UICONTROL SMS-Routing]**: Wählen Sie das für den SMS-Empfang zu verwendende externe Konto aus. Externe Konten werden im Knoten **[!UICONTROL Administration > Platform >Externe Konten]** der Baumstruktur konfiguriert.
+1. **[!UICONTROL SMS-Routing]**: Wählen Sie das für die SMS-Wiederherstellung zu verwendende externe Konto aus. Externe Konten werden über die **[!UICONTROL Administration > Plattform > Externe Konten]** Knoten des Baums.
 1. **[!UICONTROL Script]**
 1. **[!UICONTROL Planung]**
 

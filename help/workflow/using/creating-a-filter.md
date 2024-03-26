@@ -7,8 +7,8 @@ feature: Query Editor, Workflows
 exl-id: 297ea1e1-39ef-4b99-aaaa-9e88611fb1bf
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 100%
+source-wordcount: '238'
+ht-degree: 80%
 
 ---
 
@@ -50,10 +50,10 @@ Um dem Filter zu entsprechen, muss das Benutzerkonto eine der folgenden Bedingun
 >
 >Bei Verwendung der Funktion **[!UICONTROL Upper]** werden bei einer Abfrage Groß- und Kleinschreibung nicht beachtet.
 
-Die Spalte **[!UICONTROL Berücksichtigt wenn]** ermöglicht die Konfiguration von Voraussetzungen dafür, dass die Filterbedingungen zum Tragen kommen. Die Zeichen **$(/tmp/@text)** entsprechen dem Inhalt des dem Filter zugeordneten Eingabefelds:
+Die **[!UICONTROL Wird berücksichtigt, wenn]** -Spalte können Sie die Anwendungskriterien für diese Filterbedingungen definieren. Hier wird die **$(/tmp/@text)** -Zeichen stellen den Inhalt des mit dem Filter verknüpften Eingabefelds dar:
 
 ![](assets/query_editor_filter_sample_5.png)
 
 Hier ist **$(/tmp/@text)=&#39;Filiale&#39;**.
 
-Der Ausdruck **$(/tmp/@text)!=&#39;&#39;** prüft jede Bedingung, wenn das Eingabefeld nicht leer ist.
+Die **$(/tmp/@text)!=&#39;&#39;** Der Ausdruck wendet jede Bedingung an, wenn das Eingabefeld nicht leer ist.

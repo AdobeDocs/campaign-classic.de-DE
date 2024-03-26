@@ -10,8 +10,8 @@ content-type: reference
 exl-id: 54ee88b2-e646-4fb9-abec-957f0096f15f
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '584'
-ht-degree: 100%
+source-wordcount: '553'
+ht-degree: 95%
 
 ---
 
@@ -55,7 +55,7 @@ Sie müssen für diesen Operator eine Sicherheitszone konfigurieren, um über Ad
 
 >[!CAUTION]
 >
->Wir empfehlen dringend die Erstellung einer Sicherheitszone für AEM, um Sicherheitsprobleme zu vermeiden. Weiterführende Informationen dazu finden Sie im [Installationshandbuch](../../installation/using/security-zones.md).
+>Es wird dringend empfohlen, eine Sicherheitszone für AEM zu erstellen, um Sicherheitsprobleme zu vermeiden. Weitere Informationen hierzu finden Sie im Abschnitt Installation . [Handbuch](../../installation/using/security-zones.md).
 
 Wenn Ihre Campaign-Instanz von Adobe gehostet wird, wenden Sie sich an das Team der [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Gehen Sie wie folgt vor, wenn Sie eine On-Premise-Bereitstellung von Campaign verwenden:
 
@@ -118,7 +118,7 @@ So prüfen Sie, ob die Option **[!UICONTROL AEMResourceTypeFilter]** konfigurier
 
 Führen Sie die unten aufgeführten Schritte aus, um die Konfiguration in Adobe Experience Manager zu beginnen:
 
-1. Konfigurieren Sie die **Replikation** zwischen der AEM-Authoring-Instanz und der AEM-Publishing-Instanz.
+1. Konfigurieren Sie die **Replikation** zwischen der AEM-Autoreninstanz und der AEM-Veröffentlichungsinstanz.
 
    Weiterführende Informationen zur Konfiguration der Replikation finden Sie im [Handbuch](https://helpx.adobe.com/de/experience-manager/6-5/sites/deploying/using/replication.html) von Adobe Experience Manager.
 

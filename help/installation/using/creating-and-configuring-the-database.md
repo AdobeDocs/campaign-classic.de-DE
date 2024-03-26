@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Erstellen und Konfigurieren der Vorlagen
-description: Erstellen und Konfigurieren der Vorlagen
+title: Datenbank erstellen und konfigurieren
+description: Datenbank erstellen und konfigurieren
 feature: Installation, Instance Settings
 badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 badge-v7-prem: label="On-Premise und Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
@@ -11,12 +11,12 @@ topic-tags: initial-configuration
 exl-id: f40bab8c-5064-40d9-beed-101a9f22c094
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1367'
-ht-degree: 3%
+source-wordcount: '1381'
+ht-degree: 1%
 
 ---
 
-# Erstellen und Konfigurieren der Vorlagen{#creating-and-configuring-the-database}
+# Datenbank erstellen und konfigurieren{#creating-and-configuring-the-database}
 
 Beim Erstellen einer Datenbank bietet Adobe Campaign zwei verschiedene Optionen:
 

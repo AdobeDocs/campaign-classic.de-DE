@@ -10,8 +10,8 @@ topic-tags: connectors
 exl-id: 320bfbb4-533b-4c45-a46f-c3c8dd68221f
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '375'
-ht-degree: 74%
+source-wordcount: '372'
+ht-degree: 53%
 
 ---
 
@@ -29,11 +29,11 @@ Verwenden von Campaign [Federated Data Access](../../installation/using/about-fd
 Die Verbindung zu einer externen Oracle-Datenbank über die FDA-Option erfordert die zusätzlichen unten aufgeführten Konfigurationen auf dem Adobe Campaign-Server:
 
 1. Installieren Sie den vollständigen Oracle-Client für Ihre jeweilige Oracle-Version.
-1. Fügen Sie der Installation Ihre TNS-Definitionen hinzu. Spezifizieren Sie diese Definitionen dazu in der Datei **tnsnames.ora** im Verzeichnis /etc/oracle. Wenn dieses Verzeichnis nicht vorhanden ist, erstellen Sie es.
+1. Fügen Sie Ihre TNS-Definitionen zu Ihrer Installation hinzu. Geben Sie dazu sie in einem **tnsnames.ora** -Datei im Repository /etc/oracle. Wenn dieses Repository nicht vorhanden ist, erstellen Sie es.
 
    Erstellen Sie dann eine neue TNS_ADMIN-Umgebungsvariable: Exportieren Sie TNS_ADMIN=/etc/oracle und starten Sie das Gerät neu.
 
-1. Integrieren Sie Oracle in Ihren Adobe Campaign-Server (nlserver). Dazu muss die Datei **customer.sh** im Navigationsbaum des Adobe Campaign-Servers im Ordner &quot;nl6&quot; vorhanden sein; und die Datei muss die Links zu den Oracle-Bibliotheken enthalten.
+1. Integrieren Sie Oracle in Ihren Adobe Campaign-Server (nlserver). Überprüfen Sie dazu, ob die Variable **customer.sh** -Datei im Ordner &quot;nl6&quot;der Adobe Campaign-Serverstruktur vorhanden ist und die Links zu den Oracle-Bibliotheken enthält.
 
    Beispiel für einen Client in 11.2:
 
@@ -78,7 +78,7 @@ Die Verbindung zu einer externen Oracle-Datenbank über die FDA-Option erfordert
 
 1. In Campaign Classic können Sie dann Ihr externes [!DNL Oracle]-Konto konfigurieren. Weitere Informationen zur Konfiguration Ihres externen Kontos finden Sie unter [diesem Abschnitt](#oracle-external).
 
-## Externes Oracle-Konto {#oracle-external}
+## Externes oracle-Konto {#oracle-external}
 
 Die [!DNL Oracle] Mit dem externen Konto können Sie Ihre Campaign-Instanz mit Ihrer externen Oracle-Datenbank verbinden.
 

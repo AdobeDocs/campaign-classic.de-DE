@@ -7,8 +7,8 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Cla
 exl-id: ca0c33c5-7350-462a-bc65-4cab51e529d9
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '768'
-ht-degree: 30%
+source-wordcount: '751'
+ht-degree: 27%
 
 ---
 
@@ -73,7 +73,7 @@ Im Audit-Protokoll können Sie alle in Workflows vorgenommenen Änderungen sowie
 
 **Fehlerbehebung bei Workflows**
 
-Bei Problemen mit der Ausführung eines Workflows können spezifische Aktionen durchgeführt werden. [Klicken Sie hier](../../production/using/workflow-execution.md), um weitere Informationen zu erhalten
+Bei Problemen mit der Ausführung eines Workflows können spezifische Aktionen durchgeführt werden. [Hier klicken](../../production/using/workflow-execution.md) für weitere Informationen
 
 **Workflow-Statusüberwachung**
 
@@ -101,7 +101,7 @@ SMTP-Berichte zeigen Versandstatistiken und SMTP-Fehler nach Domain an. [Weitere
 Bei Problemen mit Sendungen können spezifische Aktionen durchgeführt werden:
 * [Probleme mit der Zustellbarkeit](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
 * [Probleme mit der Bildanzeige](../../production/using/image-display-issues.md)
-* [Leistungsprobleme beim Versand](../../delivery/using/delivery-performances.md)
+* [Performance-Probleme beim Versand](../../delivery/using/delivery-performances.md)
 * [Probleme mit temporären Dateien](../../production/using/temporary-files.md) - *Nur On-Premise-Hosting-Modelle*
 
 ### Überwachen der Datenbank {#monitoring-database}
@@ -126,7 +126,7 @@ Es wird empfohlen, die Datenbankwartung regelmäßig durchzuführen, um zu verme
 
 *Nur On-Premise- und Hybrid-Hosting-Modelle*
 
-Eine Sicherung ist unerlässlich, um zu verhindern, dass Daten im Falle eines (physischen oder systembezogenen) Problems auf einem Computer verloren gehen. [Klicken Sie hier](../../production/using/backup.md), um weitere Informationen zu erhalten. Das Wiederherstellungsverfahren wird unter [diesem Abschnitt](../../production/using/restoration.md).
+Eine Sicherung ist unerlässlich, um zu verhindern, dass Daten im Falle eines (physischen oder systembezogenen) Problems auf einem Computer verloren gehen. [Hier klicken](../../production/using/backup.md) für weitere Informationen. Das Wiederherstellungsverfahren wird unter [diesem Abschnitt](../../production/using/restoration.md).
 
 ## Campaign Classic-technische Grundsätze {#campaign-classic-technical-principles}
 

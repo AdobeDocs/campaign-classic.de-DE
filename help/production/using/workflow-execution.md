@@ -11,8 +11,8 @@ topic-tags: troubleshooting
 exl-id: b5aa5663-1902-4f50-9202-783e73a28838
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '676'
-ht-degree: 16%
+source-wordcount: '666'
+ht-degree: 12%
 
 ---
 
@@ -120,5 +120,5 @@ Um dies zu überprüfen und bei Bedarf das Modul zu starten, gehen Sie wie folgt
 Wenn ein Workflow fehlschlägt, führen Sie die folgenden Schritte aus:
 
 1. Überprüfen Sie das Workflow-Protokoll. Weitere Informationen hierzu finden Sie im Abschnitt [Ausführung des Workflows überwachen](../../workflow/using/monitoring-workflow-execution.md) und [Protokoll anzeigen](../../workflow/using/monitoring-workflow-execution.md#displaying-logs) Abschnitte.
-1. Überwachen technischer Workflows. Weitere Informationen hierzu finden Sie unter [diesem Abschnitt](../../workflow/using/monitoring-technical-workflows.md).
+1. Technische Workflows überwachen Weitere Informationen hierzu finden Sie unter [diesem Abschnitt](../../workflow/using/monitoring-technical-workflows.md).
 1. Suchen Sie nach Fehlern bei den einzelnen Workflow-Aktivitäten.

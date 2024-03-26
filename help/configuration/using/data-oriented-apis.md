@@ -8,7 +8,7 @@ role: Data Engineer, Developer
 exl-id: a392c55e-541a-40b1-a910-4a6dc79abd2d
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1868'
+source-wordcount: '1875'
 ht-degree: 1%
 
 ---
@@ -49,7 +49,7 @@ Weitere Informationen hierzu finden Sie unter [Beispiel für die Methode &#39;Ex
 
 Die **ExecuteQuery** -Methode wird in [ExecuteQuery (xtk:queryDef)](#executequery--xtk-querydef-).
 
-### Write {#write}
+### Schreiben {#write}
 
 Mit Schreibbefehlen können Sie einfache oder komplexe Dokumente mit Einträgen in einer oder mehreren Tabellen der Basis schreiben.
 
@@ -219,7 +219,7 @@ So zählen Sie die Anzahl an Datensätzen in einer Abfrage:
 >
 >Auch hier verwenden wir die Bedingung aus dem vorherigen Beispiel. Die `<select>` und -Klauseln nicht verwendet werden. `</select>`
 
-#### Nach welchen Kriterien werden die Daten gruppiert {#data-grouping}
+#### Datengruppierung {#data-grouping}
 
 So rufen Sie E-Mail-Adressen ab, auf die mehrmals verwiesen wird:
 
@@ -444,7 +444,7 @@ Mit einem Alias können Sie den Speicherort der Daten im Ausgabedokument ändern
 </queryDef>
 ```
 
-Rückgaben:
+Gibt Folgendes zurück:
 
 ```
 <recipient My_folder="Recipients" First name ="John" lastName="Doe"/>

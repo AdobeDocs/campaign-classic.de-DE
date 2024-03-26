@@ -10,7 +10,7 @@ topic-tags: interaction-overview
 exl-id: 98413cde-50c9-416c-8316-85837f724c27
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1204'
+source-wordcount: '1211'
 ht-degree: 100%
 
 ---
@@ -29,17 +29,17 @@ Das Interaction-Modul in Adobe Campaign erfordert eine sorgfältige Verwaltung, 
 
 Im Folgenden sind wichtige Elemente aufgelistet, die bei der Implementierung und Konfiguration von Interaktionen beachtet werden sollten.
 
-* Für das Batch-Modul (typischerweise in der ausgehenden Kommunikation wie E-Mails verwendet) ist der Durchsatz das Hauptproblem, da mehrere Kontakte gleichzeitig verarbeitet werden können. Der typische Engpass hier ist die Datenbankleistung.
-* Die Haupteinschränkung für das Einzel-Modul (die typischerweise in der eingehenden Kommunikation wie bei einem Banner auf einer Website verwendet wird) ist die Latenz, da eine Antwort erwartet wird. Der typische Engpass hier ist die CPU-Leistung.
-* Der Aufbau des Angebotskatalogs hat einen großen Einfluss auf die Leistung von Adobe Campaign Classic.
+* Für das Batch-Modul (typischerweise in der ausgehenden Kommunikation wie E-Mails verwendet) ist der Durchsatz das Hauptproblem, da mehrere Kontakte gleichzeitig verarbeitet werden können. Der typische Engpass hier ist die Datenbank-Performance.
+* Die Haupteinschränkung für das Einzel-Modul (die typischerweise in der eingehenden Kommunikation wie bei einem Banner auf einer Website verwendet wird) ist die Latenz, da eine Antwort erwartet wird. Der typische Engpass hier ist die CPU-Performance.
+* Der Aufbau des Angebotskatalogs hat einen großen Einfluss auf die Performance von Adobe Campaign Classic.
 * Wenn es viele Angebote gibt, teilen Sie diese in mehrere Angebotskataloge auf.
 
 ### Eignungsregeln {#eligibility-rules}
 
 Nachfolgend sind einige Best Practices zu den Regeln zur Prüfung der Angebotseignung aufgeführt.
 
-* Vereinfachen Sie die Regeln. Die Komplexität der Regeln wirkt sich auf die Leistung aus, da sie den Suchvorgang verlängert. Eine komplexe Regel ist jede Regel, die mehr als fünf Bedingungen enthält.
-* Um die Leistung zu verbessern, können Regeln in verschiedenen vordefinierten Filtern aufgelöst werden, die von mehreren Angebote gemeinsam verwendet werden.
+* Vereinfachen Sie die Regeln. Die Komplexität der Regeln wirkt sich auf die Performance aus, da sie den Suchvorgang verlängert. Eine komplexe Regel ist jede Regel, die mehr als fünf Bedingungen enthält.
+* Um die Performance zu verbessern, können Regeln in verschiedenen vordefinierten Filtern aufgelöst werden, die von mehreren Angebote gemeinsam verwendet werden.
 * Setzen Sie die restriktivsten Angebotskategorieregeln an die oberste Position im Baum. Auf diese Weise filtern sie zuerst die meisten Kontakte heraus, wodurch die Zielgruppe verkleinert wird, sodass die Kontakte nicht von weiteren Regeln verarbeitet werden.
 * Setzen Sie die teuersten Regeln in Bezug auf Zeit oder Verarbeitung an die unterste Position im Baum. Auf diese Weise werden diese Regeln nur auf die verbleibende Zielgruppe angewendet.
 * Beginnen Sie bei einer bestimmten Kategorie, um zu vermeiden, dass der gesamte Baum durchsucht wird.

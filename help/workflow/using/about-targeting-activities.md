@@ -8,7 +8,7 @@ exl-id: 5028ad4c-e427-4e78-962d-c5ea54390db5
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '450'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -27,7 +27,7 @@ Mit diesen Aktivitäten können Sie eine oder mehrere Zielgruppen erstellen, ind
 * **Aufspaltung**: ermöglicht die Aufspaltung einer Zielgruppe in mehrere Teilmengen. Siehe Abschnitt [Aufspaltung](split.md).
 * **Segmente**: liefert eine Übersicht über die verschiedenen Teilmengen in Form von Datenspalten (nützlich insbesondere bei Bearbeitung einer großen Anzahl an Teilmengen). Weitere Informationen hierzu finden Sie im Abschnitt [Segmente](cells.md).
 * **Angebote pro Segment**: dient der Zuweisung von unterschiedlichen Angeboten in Abhängigkeit vom Populationssegment. Siehe Abschnitt [Angebote pro Segment](offers-by-cell.md).
-* **Umfrageantworten**: dient dem Abruf von Informationen, die mithilfe eines Formulars erhoben wurden. Lesen Sie diesbezüglich diesen [Abschnitt](../../surveys/using/getting-started-with-surveys.md).
+* **Umfrageantworten**: dient dem Abruf von Informationen, die während einer Umfrage erfasst wurden. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../surveys/using/getting-started-with-surveys.md).
 * **Versandentwurf**: dient dem Hinzufügen von Versandentwürfen. Siehe Abschnitt [Versandentwurf](../../workflow/using/delivery-outline.md).
 * **Anreicherung**: dient dem Hinzufügen von Spalten zu einer Arbeitstabelle oder einem Workflow. Siehe Abschnitt [Anreicherung](../../workflow/using/enrichment.md).
 * **Schema-Bearbeitung**: ermöglicht Ihnen die Umwandlung, Standardisierung und ggf. Anreicherung von Daten. Weiterführende Informationen finden Sie im Abschnitt [Schema-Bearbeitung](../../workflow/using/edit-schema.md).

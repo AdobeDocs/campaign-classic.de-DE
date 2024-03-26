@@ -8,9 +8,9 @@ feature: Email
 role: User, Developer, Data Engineer
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: ht
-source-wordcount: '990'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '993'
+ht-degree: 88%
 
 ---
 
@@ -52,7 +52,7 @@ Gehen Sie wie folgt vor, um E-Mail-BCC für eine E-Mail-Versandvorlage zu aktivi
 
 ## Wahl des Nachrichtenformats {#selecting-message-formats}
 
-Sie können das Format der zu versendenden E-Mails konfigurieren. Klicken Sie hierzu auf die Schaltfläche **[!UICONTROL Eigenschaften]** und begeben Sie sich in den Tab .
+Sie können das Format der gesendeten E-Mail-Nachrichten ändern. Bearbeiten Sie hierzu die Versandeigenschaften und klicken Sie auf die Registerkarte **[!UICONTROL Versand]**.
 
 ![](assets/s_ncs_user_wizard_email_param.png)
 
@@ -78,11 +78,11 @@ Im unteren Bereich des Fensters haben Sie die Wahl zwischen:
 >
 >Weitere Informationen zum Definieren des E-Mail-Inhalts finden Sie in [diesem Abschnitt](defining-the-email-content.md).
 
-## Mirror-Seite erstellen {#generating-mirror-page}
+## Erzeugen der Mirrorseite {#generating-mirror-page}
 
 Eine Mirrorseite ist eine HTML-Seite, die über einen Webbrowser online abgerufen werden kann und deren Inhalt mit dem der E-Mail identisch ist.
 
-Standardmäßig wird die Mirror­Seite automatisch generiert, wenn der entsprechende Link in den Inhalt der E-Mail eingefügt wurde. Weitere Informationen zum Einfügen von Gestaltungsbausteinen finden Sie unter [Gestaltungsbausteine](personalization-blocks.md).
+Standardmäßig wird die Mirrorseite automatisch generiert, wenn der entsprechende Link in den Inhalt der E-Mail eingefügt wurde. Weitere Informationen zum Einfügen von Gestaltungsbausteinen finden Sie unter [Gestaltungsbausteine](personalization-blocks.md).
 
 In den Versandeigenschaften kann die Erzeugung der Seite über das Feld **[!UICONTROL Modus]** im Tab **[!UICONTROL Gültigkeit]** konfiguriert werden.
 
@@ -96,7 +96,7 @@ Zusätzlich zum Standardmodus stehen die folgenden Optionen zur Verfügung:
 
 * **[!UICONTROL Mirrorseitenerzeugung forcieren]**: Erstellt eine Mirror-Seite, selbst wenn im Versandinhalt kein entsprechender Link enthalten ist.
 * **[!UICONTROL Keine Mirrorseite erzeugen]**: Erstellt keine Mirror-Seite, selbst wenn im Versandinhalt der entsprechende Link enthalten ist.
-* **[!UICONTROL Von der Nachrichtenkennung aus zugängliche Mirrorseite erzeugen]**: Diese Option ermöglicht den Zugriff auf den Inhalt der Mirror-Seite einschließlich aller Personalisierungsinformationen von den Versand-Logs aus. Klicken Sie hierfür nach Durchführung des Versands auf den Tab **[!UICONTROL Versand]** und wählen Sie die Zeile des Empfängers aus, dessen Mirror-Seite Sie ansehen möchten. Klicken Sie dann auf den Link **[!UICONTROL Mirrorseite dieser Nachricht anzeigen...]**.
+* **[!UICONTROL Erzeugt eine Mirrorseite, auf die nur die Nachrichtenkennung zugreifen kann]**: Diese Option ermöglicht den Zugriff auf den Inhalt der Mirrorseite mit Personalisierungsinformationen im Versandlog-Fenster. Klicken Sie dazu nach dem Ende des Versands auf die Schaltfläche **[!UICONTROL Versand]** und wählen Sie die Zeile des Empfängers aus, dessen Mirrorseite Sie sehen möchten. Klicken Sie auf **[!UICONTROL Mirrorseite für diese Nachricht anzeigen...]** -Link.
 
   ![](assets/s_ncs_user_wizard_miror_page_link.png)
 
@@ -118,7 +118,7 @@ Auf der Registerkarte **[!UICONTROL SMTP]** der Versandeigenschaften lässt sich
 
 Standardmäßig gehen Bounce Messages im [Standard-Fehlerpostfach der Plattform](../../installation/using/deploying-an-instance.md#parameters-for-delivered-emails-parameters-for-delivered-emails) ein. Es besteht jedoch die Möglichkeit, für einen Versand durch Abwählen der Standardoption eine spezifische Fehleradresse anzugeben.
 
-Sie können eine weitere Adresse angeben, die es ermöglicht, die Unzustellbarkeitsursache derjenigen E-Mails zu untersuchen, bei denen das Programm sie nicht automatisch erkannt hat. Bei beiden Feldern können Sie durch Klick auf das entsprechende Symbol **Personalisierungsfelder hinzufügen**.
+Sie können auch eine bestimmte Adresse auf diesem Bildschirm definieren, um die Gründe für Bounce Messages zu untersuchen, die nicht automatisch von der Anwendung qualifiziert werden konnten. Für jedes dieser Felder muss die **Personalisierte Felder hinzufügen** -Symbol ermöglicht das Hinzufügen von Personalisierungsparametern.
 
 ![](assets/s_ncs_user_email_del_properties_smtp_tab.png)
 
@@ -126,7 +126,7 @@ Weitere Informationen zur Bounce-Message-Verwaltung finden Sie in [diesem Abschn
 
 ## SMTP-Header hinzufügen {#adding-smtp-headers}
 
-Sie haben die Möglichkeit, Ihren Sendungen weitere SMTP-Header hinzuzufügen. Gehen Sie hierfür in den Tab **[!UICONTROL SMTP]** in den Versandeigenschaften.
+Sie können Ihren Sendungen auch SMTP-Header hinzufügen. Verwenden Sie dazu den entsprechenden Abschnitt der Registerkarte **[!UICONTROL SMTP]** im Versand.
 
 Das in diesem Fenster erfasste Script muss pro Zeile einen Header im Format **Name: Wert** enthalten.
 
@@ -134,6 +134,6 @@ Werte werden bei Bedarf automatisch verschlüsselt.
 
 >[!IMPORTANT]
 >
->Das Hinzufügen zusätzlicher SMTP-Header ist eine Aufgabe für erfahrene Benutzer.
+>Das Hinzufügen eines Skripts zum Einfügen zusätzlicher SMTP-Header ist fortgeschrittenen Benutzern vorbehalten.
 >
 >Die Syntax des Scripts muss die Anforderungen für diesen Inhaltstyp (keine überflüssigen Leerzeichen, keine Leerzeilen usw.) erfüllen.

@@ -12,8 +12,8 @@ hidefromtoc: true
 exl-id: 228ee9e4-46a0-4d82-b8ba-b019bc0e7cac
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '713'
-ht-degree: 5%
+source-wordcount: '722'
+ht-degree: 1%
 
 ---
 
@@ -118,8 +118,8 @@ Die folgenden Ausdrücke werden gesucht (Groß-/Kleinschreibung beachten):
   <tr> 
    <th> Ausdruck<br /> </th> 
    <th> Fehler-Code<br /> </th> 
-   <th> Logtyp<br /> </th> 
-   <th> Erklärung<br /> </th> 
+   <th> Protokolltyp<br /> </th> 
+   <th> Kommentare<br /> </th> 
   </tr> 
  </thead> 
  <tbody> 

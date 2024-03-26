@@ -97,7 +97,7 @@ Nach der Erstellung einer oder mehrerer Testadressen sowie des Nachrichteninhalt
 
 Mit Testadressen können Sie außerdem anzeigen, wie die Nachricht bei verschiedenen Internet-Anbietern dargestellt wird. Weiterführende Informationen dazu finden Sie im Abschnitt [Inbox Rendering](../../delivery/using/inbox-rendering.md).
 
-## Führen Sie einen Testversand durch. {#sending-a-proof}
+## Durchführen eines Testversands {#sending-a-proof}
 
 Mithilfe von Testadressen haben Sie die Möglichkeit, vor dem eigentlichen Versand einen Testversand durchzuführen.
 

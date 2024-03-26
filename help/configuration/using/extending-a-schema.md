@@ -33,7 +33,7 @@ Es gibt zwei Methoden zum Erweitern eines vorhandenen Schemas:
 
    >[!IMPORTANT]
    >
-   >Sie dürfen die integrierten Schemata der Anwendung nicht ändern, sondern den Mechanismus zur Schemaerweiterung. Andernfalls werden geänderte Schemas bei zukünftigen Aktualisierungen der Anwendung nicht aktualisiert. Dies kann zu Funktionsstörungen bei der Verwendung von Adobe Campaign führen.
+   >Sie dürfen die integrierten Schemata der Anwendung nicht ändern, sondern den Mechanismus zur Schemaerweiterung. Andernfalls werden geänderte Schemata bei zukünftigen Aktualisierungen der Anwendung nicht aktualisiert. Dies kann zu Funktionsstörungen bei der Verwendung von Adobe Campaign führen.
 
    **Beispiel**: Erweiterung der **nms:recipient** Schema.
 

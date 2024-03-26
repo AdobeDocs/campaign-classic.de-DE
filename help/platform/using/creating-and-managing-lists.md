@@ -9,8 +9,8 @@ level: Beginner
 exl-id: 711b84cd-bac8-4f1a-9999-0124fbfc3a01
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '876'
-ht-degree: 100%
+source-wordcount: '871'
+ht-degree: 75%
 
 ---
 
@@ -32,11 +32,11 @@ In Adobe Campaign sind zwei Arten von Listen verfügbar:
 
   Weiterführende Informationen zum Erstellen einer Liste vom Typ **[!UICONTROL Gruppe]** finden Sie auf [dieser Seite](#creating-a-profile-list-from-a-group).
 
-* **[!UICONTROL Liste]**: Die Listen vom Typ **[!UICONTROL Liste]** ermöglichen zum Erstellen und Verwalten von Listen die Verwendung von Workflows. In diesem Fall handelt es sich um besondere, durch Datenimport erstellte Listen, die mithilfe der Workflow-Aktivität **[!UICONTROL Listen-Update]** automatisch auf den neuesten Stand gebracht werden können.
+* **[!UICONTROL Liste]** type: Die **[!UICONTROL Liste]** Mit Typlisten können Sie mithilfe von Workflows Listen erstellen und verwalten. Hierbei handelt es sich um spezifische Listen, die aus Datenimporten resultieren und über die entsprechende **[!UICONTROL Listen-Update]** Workflow-Aktivität.
 
-  Im Gegensatz zu Listen vom Typ **[!UICONTROL Gruppe]** können diese Listen automatisch mit der Aktivität **[!UICONTROL Planung]** aktualisiert werden. Ein Beispiel für die Erstellung von Listen vom Typ **[!UICONTROL Liste]** finden Sie auf [dieser Seite](../../workflow/using/list-update.md).
+  Im Gegensatz zu **[!UICONTROL Gruppe]** Typenliste, kann diese Typliste automatisch mit einer **[!UICONTROL Planung]** -Aktivität. Beachten Sie Folgendes: Ein Beispiel für die Erstellung von **[!UICONTROL Liste]** Typlisten, siehe [diese Seite](../../workflow/using/list-update.md).
 
-![](assets/do-not-localize/how-to-video.png) [Funktion im Video kennenlernen](#create-list-video).
+![](assets/do-not-localize/how-to-video.png) [Entdecken Sie diese Funktion im Video](#create-list-video)
 
 ## Profilliste von einer Gruppe erstellen {#creating-a-profile-list-from-a-group}
 
@@ -44,7 +44,7 @@ Listen vom Typ **[!UICONTROL Gruppe]**, die über den Link **[!UICONTROL Profile
 
 >[!NOTE]
 >
->Die Erstellung von Listen mit anderen Daten ist unter Verwendung eines Workflows möglich. Sie können beispielsweise eine Besucherliste anlegen, indem Sie einen Workflow mit einer Abfrage bezüglich der Besuchertabelle und der Aktivität Listenaktualisierung erstellen. Weiterführende Informationen zu Workflows finden Sie in [diesem Abschnitt](../../workflow/using/about-workflows.md).
+>Um Listen mit anderen Datentypen zu erstellen, müssen Sie einen Workflow ausführen. Wenn Sie beispielsweise eine Abfrage in der Besuchertabelle verwenden und die Liste dann aktualisieren, können Sie eine Besucherliste erstellen. Weitere Informationen zu Workflows finden Sie unter [diesem Abschnitt](../../workflow/using/about-workflows.md).
 
 Gehen Sie wie folgt vor, um eine neue Liste vom Typ **[!UICONTROL Gruppe]** zu erstellen:
 
@@ -97,13 +97,13 @@ Bei Auswahl der Option **[!UICONTROL Liste neu erstellen]** wird der frühere Li
 
 Wenn Sie die Option **[!UICONTROL Vorgang nicht in der Datenbank protokollieren]** abwählen, ist die Auswahl oder Erstellung eines Ausführungsordners erforderlich, in dem die den Vorgang betreffenden Protokollnachrichten gespeichert werden.
 
-In der oberen Hälfte des Assistenten werden Informationen bezüglich der Ausführung angezeigt. Durch Klick auf die Schaltfläche **[!UICONTROL Abbrechen]** kann der Vorgang gestoppt werden. Bereits verarbeitete Datensätze werden jedoch trotzdem der Liste zugeordnet.
+Im oberen Bereich des Fensters können Sie die Ausführung überwachen. Die **[!UICONTROL Anhalten]** -Schaltfläche können Sie den Vorgang stoppen. Bereits verarbeitete Kontakte werden mit der Liste verknüpft.
 
 Im Tab **[!UICONTROL Listen]** der vom Vorgang betroffenen Profile kann das Ergebnis der Listenzuordnung geprüft werden:
 
 ![](assets/s_ncs_user_add_selection_to_group_4.png)
 
-Sie können Listen auch von der Adobe-Campaign-Startseite aus bearbeiten. Klicken Sie hierzu auf das Menü **[!UICONTROL Profile und Zielgruppen > Listen]** und wählen Sie die gewünschte Liste aus. Im Tab **[!UICONTROL Inhalt]** werden die der Liste zugeordneten Profile angezeigt.
+Sie können die Liste auch über die Adobe Campaign-Startseite bearbeiten: Klicken Sie auf die Schaltfläche **[!UICONTROL Profile und Zielgruppen > Listen]** und wählen Sie die gewünschte Liste aus. Die **[!UICONTROL Inhalt]** zeigt die der Liste zugeordneten Profile an.
 
 ![](assets/s_ncs_user_add_selection_to_group_5.png)
 
@@ -121,7 +121,7 @@ Sie haben verschiedene Möglichkeiten, Profile aus einer Liste zu entfernen. Sie
 
 ## Liste der Profile löschen {#deleting-a-list-of-profiles}
 
-Listen werden ausgehend vom Adobe-Campaign-Navigationsbaum über den Link **[!UICONTROL Erweitert > Explorer]** der Adobe-Campaign-Startseite gelöscht. Wählen Sie die gewünschten Gruppen aus und klicken Sie mit der rechten Maustaste. Wählen Sie nun **[!UICONTROL Löschen]**. Vor der endgültigen Löschung ist eine Bestätigung erforderlich.
+Sie können eine oder mehrere Listen aus der Gruppenliste im Adobe Campaign-Baum löschen. Bearbeiten Sie hierzu den Baum über das **[!UICONTROL Erweitert > Explorer]** auf der Adobe Campaign-Startseite. Wählen Sie die betreffende(n) Gruppe(n) aus und klicken Sie mit der rechten Maustaste darauf. Auswählen **[!UICONTROL Löschen]**. In einer Warnmeldung werden Sie aufgefordert, den Löschvorgang zu bestätigen.
 
 >[!NOTE]
 >

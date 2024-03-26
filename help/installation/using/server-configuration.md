@@ -10,8 +10,8 @@ topic-tags: prerequisites-and-recommendations-
 exl-id: e1aff73a-54fb-444e-b183-df11c9b3df31
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 35%
+source-wordcount: '635'
+ht-degree: 27%
 
 ---
 
@@ -36,13 +36,13 @@ Adobe Campaign schränkt die Dateigröße nicht ein. Sie können dies jedoch tun
 
 Siehe [diese Seite](../../installation/using/configuring-campaign-server.md#dynamic-page-security-and-relays) für weitere Informationen.
 
-Standardmäßig werden alle dynamischen Seiten automatisch an den lokalen Tomcat-Server des Geräts weitergeleitet, dessen Web-Modul gestartet wird. Sie können aber auch nicht verwendete Adobe-Campaign-Module ausschließen (z. B. WebApp, Interaction, manche JSPs), indem Sie sie aus den Relais-Regeln entfernen.
+Standardmäßig werden alle dynamischen Seiten automatisch an den lokalen Tomcat-Server des Computers weitergeleitet, dessen Webmodul gestartet wird. Sie können wählen, einige davon nicht weiterzuleiten. Wenn Sie einige Adobe Campaign-Module nicht verwenden (z. B. WebApp, Interaktion, einige JSP), können Sie diese aus den Relais-Regeln entfernen.
 
 Standardmäßig haben wir die Möglichkeit erzwungen, Endbenutzerressourcen mithilfe von http (httpAllowed=&quot;true&quot;) anzuzeigen. Da diese Seiten personenbezogene Daten (E-Mail-Inhalt/Adresse, Gutscheine, Angebote etc.) enthalten können, sollten Sie für diese Pfade wieder HTTPS zwingend festlegen.
 
 Wenn Sie unterschiedliche Host-Namen verwenden (einen öffentlichen und einen für Benutzer), können Sie die Verknüpfung gewisser Ressourcen, die von den Benutzern benötigt werden, auch über den öffentlichen DNS-Namen verhindern.
 
-## Schutz der ausgehenden Verbindung
+## Schutz vor ausgehenden Verbindungen
 
 Die Liste der URLs, die standardmäßig von JavaScript-Codes (Workflows usw.) über Ihre Campaign Classic-Instanzen aufgerufen werden können, ist begrenzt. Um eine neue URL zuzulassen, muss der Administrator sie im [Datei &quot;serverConf.xml&quot;](../../installation/using/the-server-configuration-file.md).
 

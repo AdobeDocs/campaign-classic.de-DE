@@ -12,7 +12,7 @@ exl-id: cf7649fe-f62a-4dfa-a19e-9c1ca545e3e3
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '672'
-ht-degree: 100%
+ht-degree: 88%
 
 ---
 
@@ -44,7 +44,7 @@ Gehen Sie wie folgt vor, um den Inhalt eines Angebots zu validieren:
 
    ![](assets/offer_validate_002.png)
 
-1. Geben Sie für jede Angebotsdarstellung mithilfe der Dropdown-Liste an, ob sie für die Live-Umgebung aktiviert oder in der Design-Umgebung in Bearbeitung gelassen werden soll. Bestätigen Sie Ihre Wahl durch Klick auf die Schaltfläche **[!UICONTROL Inhaltsvalidierung]**.
+1. Geben Sie für jede Angebotsdarstellung mithilfe der Dropdown-Liste an, ob sie in der Live-Umgebung veröffentlicht oder in der Design-Umgebung in Bearbeitung gelassen werden soll. Bestätigen Sie Ihre Wahl durch Klick auf die Schaltfläche **[!UICONTROL Inhaltsvalidierung]**.
 
    ![](assets/offer_validate_003.png)
 
@@ -90,7 +90,7 @@ Die Eignungsvalidierung umfasst die Prüfung der Gewichtung sowie der im Angebot
 
 ## Validierungs-Tracking {#approval-tracking}
 
-Der Validierungsverlauf kann im Dashboard nachvollzogen werden. Klicken Sie hierfür auf den Link **[!UICONTROL Protokoll anzeigen/ausblenden]**.
+Validierungsverfolgung ist im Angebots-Dashboard verfügbar. Klicks **[!UICONTROL Protokolle ausblenden/anzeigen]** , um darauf zuzugreifen.
 
 ![](assets/offer_validate_012.png)
 
@@ -110,9 +110,9 @@ Sie haben die Möglichkeit, eine bereits erfolgte Validierung zurückzusetzen. G
 
 ## Angebote veröffentlichen {#publishing-the-offer}
 
-Nach Validierung wird das Angebot für die Live-Umgebung freigegeben. Dies geschieht mithilfe eines technischen Workflows, der automatisch startet, sobald der Validierungszyklus eines Angebots abgeschlossen wurde. Der Workflow **[!UICONTROL Angebotsbenachrichtigung]** startet darüber hinaus stündlich, um die Platzierungen und im Angebotskatalog enthaltene Kategorien der Design-Umgebung mit denen der Live-Umgebung zu synchronisieren.
+Sobald Inhalt und Eignung eines Angebots validiert wurden, wird das Angebot durch einen Workflow veröffentlicht, der automatisch für jedes Angebot ausgeführt wird, dessen Validierungszyklus abgeschlossen ist. Die **[!UICONTROL Angebotsbenachrichtigung]** Der Workflow wird auch stündlich ausgeführt, um die im Angebotskatalog enthaltenen Platzierungen und Kategorien von der Design-Umgebung mit der Live-Umgebung zu synchronisieren.
 
-Das Angebots-Dashboard in der Design-Umgebung enthält alle Informationen bezüglich seiner Freigabe für die Live-Umgebung, insbesondere den dortigen Angebotstitel.
+Das Angebots-Dashboard in der Design-Umgebung enthält alle Informationen bezüglich seiner Veröffentlichung in der Live-Umgebung, insbesondere den dortigen Angebotstitel.
 
 ![](assets/offer_golive_001.png)
 

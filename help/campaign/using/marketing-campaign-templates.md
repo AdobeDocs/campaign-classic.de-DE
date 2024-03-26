@@ -7,9 +7,9 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Cla
 feature: Campaigns, Templates
 exl-id: d272d4b9-f1b2-4fb2-9ed9-91a4aea7eca3
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1175'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -53,7 +53,7 @@ Gehen Sie wie folgt vor, um eine Kampagnenvorlage zu erstellen:
 
 1. Füllen Sie das Feld **Titel** aus und klicken Sie auf **Ok**.
 1. Erstellen Sie Ihren Workflow entsprechend Ihren Anforderungen.
-1. Klicken Sie auf **Speicher** n. Ihre Vorlage kann jetzt in einer Kampagne verwendet werden.
+1. Klicken Sie auf **Speichern**. Ihre Vorlage kann jetzt in einer Kampagne verwendet werden.
 
 Es besteht auch die Möglichkeit, die Standardvorlage zu **duplizieren** und ihre Konfiguration zu verwenden und anzupassen.
 
@@ -152,7 +152,7 @@ werden diese Links und Tabs angezeigt:
 Bei der Erstellung einer Kampagnenvorlage ist die Angabe folgender Informationen notwendig:
 
 * **Titel** der Vorlage: Dieser Titel wird allen auf dieser Vorlage basierenden Kampagnen automatisch zugewiesen.
-* **Kampagnenart**: Die in der Dropdown-Liste angebotenen Werte entsprechen den in der Auflistung **[!UICONTROL natureOp]** gespeicherten Werten.
+* Kampagnen auswählen **Natur** aus der Dropdown-Liste. Die in dieser Liste verfügbaren Werte sind die in der **[!UICONTROL natureOp]** -Auflistung.
 
   >[!NOTE]
   >
@@ -175,7 +175,7 @@ Bei der Erstellung einer Kampagnenvorlage ist die Angabe folgender Informationen
 
 Sie können einen Zeitplan für eine Kampagne erstellen und Ergebnisse tracken, um beispielsweise ein gewisses Ereignis für ein bestimmtes Datum zu planen. Mit Kampagnenvorlagen können Sie jetzt das Anfangsdatum einer Aufgabe anhand des Enddatums einer Kampagne berechnen.
 
-Aktivieren Sie hierzu im Konfigurationsfenster der Aufgabe im Abschnitt **[!UICONTROL Erfüllungsplanung]** die Option **[!UICONTROL Das Startdatum wird vom Enddatum der Kampagne aus berechnet]** (&quot;Startdatum&quot; meint hier den Zeitpunkt, an dem mit der Bearbeitung der Aufgabe begonnen werden soll). Geben Sie im Feld **[!UICONTROL Start]** ein Intervall ein: Die Aufgabe beginnt entsprechend lange vor dem Enddatum der Kampagne. Wenn Sie einen längeren Zeitraum als die Dauer der Kampagne angeben, liegt der Aufgabenanfang vor dem Kampagnenbeginn.
+Gehen Sie im Konfigurationsfeld der Aufgabe zum **[!UICONTROL Implementierungsplan]** Bereich und überprüfen Sie die **[!UICONTROL Das Startdatum wird basierend auf dem Enddatum der Kampagne berechnet.]** ankreuzen. (Hier ist &quot;Startdatum&quot;das Startdatum der Aufgabe). Navigieren Sie zu **[!UICONTROL Starten]** und geben Sie ein Intervall ein: Die Aufgabe beginnt so lange vor dem Enddatum der Kampagne. Wenn Sie einen Zeitraum eingeben, der länger ist als die Kampagne auf &quot;last&quot;festgelegt ist, beginnt die Aufgabe vor der Kampagne.
 
 ![](assets/mrm_task_in_template_start_date.png)
 

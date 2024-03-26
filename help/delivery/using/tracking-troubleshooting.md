@@ -8,8 +8,8 @@ feature: Monitoring, Troubleshooting
 role: User
 exl-id: 62e67a39-1e5c-4716-a3f3-b0ca69693cd0
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
-workflow-type: ht
-source-wordcount: '770'
+workflow-type: tm+mt
+source-wordcount: '764'
 ht-degree: 100%
 
 ---
@@ -111,7 +111,7 @@ Beim Versuch, auf die Trackinglinks zuzugreifen, wird folgende Meldung angezeigt
 
 1. Prüfen Sie die Berechtigungen der &lt;deliveryID>.xml-Dateien im Verzeichnis &quot;.../nl6/var/&lt;Instanzname>/redir/url/year&quot;.
 
-   Sie sollten mindestens die Berechtigung &quot;644&quot; haben, damit Apache die Tracking-URLs lesen kann, um den angeforderten Link weiterzuleiten.
+   Sie sollten mindestens die Berechtigung &quot;644&quot; haben, damit Apache die Tracking-URLs lesen kann, um den angeforderten Link umzuleiten.
 
 ## Aktualisieren der Option &quot;NmsTracking_Pointer&quot;?  {#updating-option}
 
@@ -214,11 +214,11 @@ Der Standardwert von &quot;logCountPerRequest&quot; ist 1000, was sich in einige
 
 ## Trackinglogs konnten nicht mit Empfängern verknüpft werden {#link-recipients}
 
-In Adobe Campaign Classic soll ein Zielgruppen-Mapping hinsichtlich des Empfängerschemas im Vergleich zu Broadlog-/Trackinglog-Schemas eindeutig sein.
+In Adobe Campaign Classic soll ein Zielgruppen-Mapping hinsichtlich des Empfängerschemas im Vergleich zu Broadlog-/Trackinglog-Schemata eindeutig sein.
 
 ![](assets/tracking-troubleshooting.png)
 
-Es ist nicht möglich, mehrere Zielgruppenschemas mit demselben Trackinglog-Schema zu verwenden, da der Tracking-Workflow keine Daten mit der Zielgruppenbestimmungs-ID abgleichen kann.
+Es ist nicht möglich, mehrere Zielgruppenschemata mit demselben Trackinglog-Schema zu verwenden, da der Tracking-Workflow keine Daten mit der Zielgruppenbestimmungs-ID abstimmen kann.
 
 Wenn Sie das vorkonfigurierte Zielgruppen-Mapping nicht mit &quot;nms:recipient&quot; verwenden möchten, empfehlen wir die folgenden Vorgehensweisen:
 

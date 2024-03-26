@@ -7,8 +7,8 @@ feature: Reporting, Monitoring
 exl-id: 52ca1595-16b3-4323-9122-d1ac13c08147
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '3028'
-ht-degree: 100%
+source-wordcount: '3098'
+ht-degree: 91%
 
 ---
 
@@ -49,7 +49,7 @@ ht-degree: 100%
  </tbody> 
 </table>
 
-Der Nutzer-Aktivitäten-Bericht basiert auf der Tabelle **[!UICONTROL Konsolidiertes Tracking]** (nms:trackingStats). Diese Aggregat-Tabelle wird bei der Berichtanzeige aus Leistungsgründen anstelle der Tabelle **[!UICONTROL Trackinglogs der Empfänger]** (nms:trackingLogRcp) verwendet. Sie wird nicht in Echtzeit berechnet, sondern wenige Minuten nach Abruf der Trackinglogs erzeugt. Wenn die Indikatoren aktuell sind, sind die Ergebnisse mit denen der Indikatoren im Bericht **Trackingindikatoren** identisch. Die Kennzahl @totalclicks entspricht der Summe der Klicks über einen Zeitraum von 5 Minuten.
+Dieser Bericht basiert auf dem **[!UICONTROL Konsolidiertes Tracking]** -Tabelle (nms:trackingStats). Diese Aggregattabelle wird aus Leistungsgründen bei der Anzeige von Berichten anstelle der **[!UICONTROL Trackinglogs der Empfänger]** -Tabelle (nms:trackingLogRcp) und nicht in Echtzeit berechnet. Die Tabelle wird einige Minuten nach dem Abrufen der Trackinglogs generiert. Wenn die Indikatoren aktuell sind, werden die Ergebnisse mit denen der Indikatoren **Trackingindikatoren** Bericht. Der Indikator @totalclicks gibt die Gesamtzahl der Klicks über einen Zeitraum von 5 Minuten an.
 
 ## Fehler und Bounces {#non-deliverables-and-bounces-1}
 
@@ -132,7 +132,7 @@ Dieser Bericht basiert auf der Tabelle **[!UICONTROL Versand- und Trackingstatis
 
 **Verteilung nach Domain**
 
-Der zweite Teil des Berichts zeigt die Verteilung der fehlgeschlagenen Nachrichten, und zwar nicht nach Fehlertyp, sondern nach Domain. In diesem Fall lautet die Formel für die Kennzahl **Fehler** (@value): Count(@status=2 und @domain=&quot;Wert des Domain-Namens&quot;). Gezählt werden also alle Nachrichten mit Status &quot;Fehlgeschlagen&quot; für die entsprechende Domain.
+Der zweite Teil des Berichts zeigt die Verteilung fehlgeschlagener Nachrichten nach Domain im Gegensatz zum Fehlertyp. Die mit der Variablen **Fehler** -Indikator (@value) in diesem Fall lautet: Count(@status=2 und @domain=&quot;Wert des Domain-Namens&quot;), d. h. eine Zählung aller Nachrichten mit Status &quot;Fehlgeschlagen&quot; für diese Domain.
 
 ## Browser {#browsers-1}
 
@@ -481,7 +481,7 @@ Dieser Bericht basiert auf der Tabelle **[!UICONTROL Dienste]** (nms:service).
   <tr> 
    <td> Entwicklung<br /> </td> 
    <td> -<br /> </td> 
-   <td> Anzahl Anmeldungen abzüglich Abmeldungen. Der Prozentsatz in Klammern bezieht sich auf die Anzahl der Abonnenten insgesamt.<br /> </td> 
+   <td> Anzahl Anmeldungen abzüglich Abmeldungen. Der Prozentsatz wird in Bezug auf die Gesamtzahl der Abonnenten berechnet.<br /> </td> 
    <td> Iif(number(@_subscription) &gt; number(@_unsubscription), '+', '')+format(@_subscription - @_unsubscription, 'number', '# ##0')+ Iif(@_subscriber&gt;0,' (' + format(100*percent(@_subscription - @_unsubscription, @_subscriber), 'number', '#,##0.00')+ '%)','')<br /> </td> 
   </tr> 
   <tr> 
@@ -915,11 +915,11 @@ Dieser Bericht basiert auf den **Versand-** und **Trackinglog-** Tabellen (nms:d
 
 ## Andere Indikatoren {#other-indicators}
 
-Der über den Knoten **Sendungen (nms:delivery) > Indikatoren** zugängliche Indikator **Gesendet** (@sent) entspricht der Gesamtanzahl der an den Dienstleister gesendeten SMS. Dieser Indikator wird ausschließlich für SMS-Sendungen verwendet und darf nicht für andere Versandtypen genutzt werden. Er ist nicht zu verwechseln mit den Indikatoren **@success** und **@processed**.
+Die **Gesendet** Indikator (@sent); Zugriff über **Sendungen (nms:delivery) > Indikatoren** node entspricht der Gesamtzahl der an den Dienstleister gesendeten SMS. Dieser Indikator wird nur für SMS-Sendungen verwendet und darf nicht für andere Versandtypen verwendet werden (nicht zu verwechseln mit dem **@success** und **@processed** Indikatoren).
 
 ## Indikatoren synchronisieren {#indicator-synchronization}
 
-Falls Sie Abweichungen oder Inkohärenzen in gewissen Indikatoren bemerken, können Sie manuell eine Synchronisation durchführen. Markieren Sie im Adobe Campaign-Explorer den entsprechenden Versand, klicken Sie mit der rechten Maustaste und wählen Sie die Option **[!UICONTROL Aktionen > Sende- und Berichtindikatoren neu berechnen...]**. Klicken Sie auf **[!UICONTROL Weiter]** und schließlich auf **[!UICONTROL Beenden]**.
+Wenn bei bestimmten Indikatoren die Synchronisation oder Inkonsistenz auftritt, wählen Sie den betreffenden Versand im Adobe Campaign-Explorer aus, klicken Sie mit der rechten Maustaste darauf und wählen Sie die Option **[!UICONTROL Aktion > Sende- und Trackingindikatoren neu berechnen]**. Klicks **[!UICONTROL Nächste]** Klicken Sie auf **[!UICONTROL Beenden]**.
 
 ![](assets/s_ncs_user_recalculate_indicators.png)
 

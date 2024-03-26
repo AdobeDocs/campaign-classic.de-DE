@@ -8,7 +8,7 @@ exl-id: f426bf02-9899-49eb-b699-728d51b57c64
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '455'
-ht-degree: 100%
+ht-degree: 85%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 >[!CONTEXTUALHELP]
 >id="ac_workflow_intersection"
->title="Schnittmenge Aktivität"
+>title="Aktivität &quot;Schnittmenge&quot;"
 >abstract="Eine Aktivität des Typs &quot;Schnittmenge&quot; erzeugt eine Zielgruppe aus der Schnittmenge der empfangenen Zielgruppen. Über eine Schnittmenge lassen sich nur die Populationen extrahieren, die in allen eingehenden Aktivitätsergebnissen enthalten sind."
 >additional-url="https://video.tv.adobe.com/v/329373" text="Demovideo ansehen"
 
@@ -43,7 +43,7 @@ Im vorliegenden Beispiel werden drei Abfragen erstellt. Gesucht werden die in je
 
    Im vorliegenden Beispiel ruft die erste Abfrage alle männlichen Empfänger ab, die zweite alle Empfänger, die in Berlin leben, die dritte alle Empfänger zwischen 18 und 30 Jahre.
 
-1. Konfigurieren Sie die Schnittmenge. Wählen Sie als Abstimmoption **[!UICONTROL Nur die Schlüssel]**, da im vorliegenden Beispiel die aus den Abfragen stammenden Populationen homogen sind.
+1. Konfigurieren Sie die Schnittmenge. Wählen Sie dazu die **[!UICONTROL Nur Schlüssel]** Abstimmmethode, da die aus den Abfragen stammenden Populationen homogen sind.
 1. Falls Sie in den Abfragen Zusatzdaten verwenden, können Sie sich dafür entscheiden, nur gemeinsame Daten beizubehalten, indem Sie die entsprechende Option ankreuzen.
 1. Kreuzen Sie die Option **[!UICONTROL Komplement erzeugen]** an, wenn Sie die Ergebnisse der Abfragen (abzüglich der Schnittmenge) im weiteren Verlauf des Workflows verwenden möchten.
 1. Schließen Sie an die Schnittmengenaktivität und gegebenenfalls auch an das Komplement jeweils ein Listen-Update an.
@@ -66,4 +66,4 @@ Jedes eingehende Ereignis muss eine durch diese Parameter definierte Zielgruppe 
 * schema
 * recCount
 
-Anhand der drei Werte lässt sich die durch die Schnittmenge ermittelte Zielgruppe identifizieren. **[!UICONTROL tableName]** ist der Name der Tabelle, welche die Kennungen der Zielgruppenempfänger enthält, **[!UICONTROL schema]** ist das Schema der Population, (i. d. R. **[!UICONTROL nms:recipient]**) und **[!UICONTROL recCount]** ist die Anzahl an Elementen in der Tabelle.
+Anhand der drei Werte lässt sich die durch die Schnittmenge ermittelte Zielgruppe identifizieren. **[!UICONTROL tableName]** der Name der Tabelle, in der die Kennungen der Zielgruppe gespeichert werden, **[!UICONTROL schema]** ist das Schema der Population (normalerweise **[!UICONTROL nms:recipient]**) und **[!UICONTROL recCount]** ist die Anzahl der Elemente in der Tabelle.

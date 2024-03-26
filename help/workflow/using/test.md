@@ -7,8 +7,8 @@ feature: Workflows
 exl-id: 6f246d56-01c8-43f5-b12b-c40d258b93c8
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '204'
-ht-degree: 100%
+source-wordcount: '199'
+ht-degree: 82%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 Ein **Test** aktiviert die erste Transition, welche die ihm zugeordneten Bedingungen erfüllt. Wenn keine der Bedingungen &#39;wahr&#39; zurückgibt, wird die **[!UICONTROL Standard-Verzweigung]** aktiviert, vorrausgesetzt, die entsprechende Option wurde angekreuzt.
 
-Eine Bedingung ist ein JavaScript-Ausdruck, der entweder als &#39;true&#39; oder &#39;false&#39; ausgewertet wird. Klicken Sie auf die Schaltfläche rechts in der Bedingungsspalte und wählen Sie die Option **[!UICONTROL Bearbeiten...]** aus.
+Eine Bedingung ist ein JavaScript-Ausdruck, der als &quot;true&quot;oder &quot;false&quot;ausgewertet werden muss. Um den Ausdruck einzugeben, klicken Sie auf das Symbol rechts neben dem Namen der Bedingung und wählen Sie **[!UICONTROL Bearbeiten...]**.
 
 ![](assets/edit_test.png)
 

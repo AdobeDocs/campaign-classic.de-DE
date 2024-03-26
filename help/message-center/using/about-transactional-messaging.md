@@ -7,8 +7,8 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Cla
 exl-id: dc52e789-d0bf-4e8f-b448-9d69a2762cc1
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '655'
-ht-degree: 100%
+source-wordcount: '651'
+ht-degree: 94%
 
 ---
 
@@ -45,7 +45,7 @@ Grundlage dieser Funktion ist eine spezielle Architektur, bei der die **Ausführ
 
 >[!NOTE]
 >
->Um neue Benutzer für in Adobe Cloud gehostete Message Center-Ausführungsinstanzen zu erstellen, kontaktieren Sie die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Benutzer von Message Center benötigen spezifische Berechtigungen für den Zugriff auf die Ordner für **[!UICONTROL Echtzeit-Ereignisse (nmsRtEvent)]**.
+>Um neue Benutzer für auf der Adobe Cloud gehostete Message-Center-Ausführungsinstanzen zu erstellen, müssen Sie sich an den [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Message Center-Benutzer sind bestimmte Benutzer, die spezielle Zugriffsberechtigungen benötigen **[!UICONTROL Echtzeit-Ereignisse (nmsRtEvent)]** Ordner.
 
 Der gesamte Prozess der Transaktionsnachrichten kann wie folgt beschrieben werden:
 

@@ -10,8 +10,8 @@ topic-tags: managing-an-offer-catalog
 exl-id: c6dd2709-06e3-4227-bbec-99f3d80144fe
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '841'
-ht-degree: 100%
+source-wordcount: '845'
+ht-degree: 94%
 
 ---
 
@@ -59,7 +59,7 @@ Außerhalb dieses Zeitraums wird das Angebot nicht vom Angebotsmodul ausgewählt
 
 Sie können mithilfe von Filtern die Zielgruppe der Angebote einschränken.
 
-Klicken Sie hierfür auf den Link **[!UICONTROL Abfrage bearbeiten...]** und definieren Sie den anzuwendenden Filter. Lesen Sie diesbezüglich auch [diesen Abschnitt](../../platform/using/steps-to-create-a-query.md#step-4---filter-data).
+Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Abfrage bearbeiten]** und wählen Sie den anzuwendenden Filter aus. (siehe [diesem Abschnitt](../../platform/using/steps-to-create-a-query.md#step-4---filter-data)).
 
 ![](assets/offer_eligibility_create_003.png)
 
@@ -129,7 +129,7 @@ Klicken Sie hierfür auf den Link **[!UICONTROL Planung und Eignungsregeln des A
 
 1. Füllen Sie die diversen zur Verfügung stehenden Felder aus:
 
-   * **[!UICONTROL Titel]**: Geben Sie den Titel an, der bei Unterbreitung des Angebots angezeigt werden soll. (Hinweis: Es handelt sich hierbei nicht um den Titel, der im Tab **[!UICONTROL Allgemein]** vergeben wurde.)
+   * **[!UICONTROL Titel]** : Geben Sie den Titel an, der in Ihrem Angebot angezeigt werden soll. Warnung: Hierbei handelt es sich nicht um den Titel des Angebots, der im Abschnitt **[!UICONTROL Allgemein]** Registerkarte.
    * **[!UICONTROL Ziel-URL]**: Geben Sie die URL Ihres Angebots an. Um korrekt verarbeitet werden zu können, muss sie zwingend mit &quot;http://&quot; oder &quot;https://&quot; beginnen.
    * **[!UICONTROL Bild-URL]**: Geben Sie die URL oder einen Zugangspfad für das Bild Ihres Angebots an.
    * **[!UICONTROL HTML-Inhalt]**/**[!UICONTROL Textinhalt]**: Geben Sie den Body Ihres Angebots in den Tab Ihrer Wahl ein. Um Tracking zu generieren, muss der **[!UICONTROL HTML-Inhalt]** aus HTML-Elementen bestehen, die in ein `<div>`-Typelement eingeschlossen werden können. Beispielsweise erzeugt ein `<table>`-Element auf der HTML-Seite Folgendes:

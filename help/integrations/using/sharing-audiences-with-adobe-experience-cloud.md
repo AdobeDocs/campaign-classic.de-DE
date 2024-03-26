@@ -11,8 +11,8 @@ topic-tags: audience-sharing
 exl-id: 1c90e913-3375-476c-ab60-89f20239eb0d
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '317'
-ht-degree: 100%
+source-wordcount: '310'
+ht-degree: 91%
 
 ---
 
@@ -32,7 +32,7 @@ Mit Adobe Campaign können Sie Audiences und Segmente für Adobe Experience Clou
 
    * Import von Audiences/Segmenten aus den verschiedenen Lösungen der Adobe Experience Cloud in Adobe Campaign. Der Import von Audiences erfolgt in Adobe Campaign in Listen.
 
-   * Export von Listen in Form von Adobe Experience Cloud-Audiences. Diese Audiences können dann in den anderen von Ihnen verwendeten Lösungen der Adobe Experience Cloud genutzt werden. Der Export von Audiences erfolgt innerhalb eines Workflows im Anschluss an eine Audience-Bestimmung mithilfe der dedizierten Aktivität **[!UICONTROL Aktualisierung freigegebener Zielgruppe]**.
+   * Export von Listen in Form von freigegebenen Adobe Experience Cloud-Zielgruppen. Diese Zielgruppen können in den verschiedenen von Ihnen verwendeten Adobe Experience Cloud-Lösungen verwendet werden. Der Export von Zielgruppen erfolgt innerhalb eines Workflows im Anschluss an eine Zielgruppenbestimmung mithilfe der dedizierten Aktivität **[!UICONTROL Aktualisierung freigegebener Zielgruppen]**.
 
 Diese Integration unterstützt zwei Arten von Adobe Experience Cloud-Kennungen:
 

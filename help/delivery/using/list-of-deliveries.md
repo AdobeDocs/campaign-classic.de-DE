@@ -8,9 +8,9 @@ feature: Monitoring
 role: User
 exl-id: 6c0fd76f-3d79-4b69-b911-f8d99dd18c4b
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '186'
-ht-degree: 100%
+ht-degree: 79%
 
 ---
 
@@ -30,7 +30,7 @@ Standardmäßig zeigt die Versandliste die Titel und Status aller im ausgewählt
 
 >[!NOTE]
 >
->Bei umfangreichen Sendungen kann es nützlich sein, diese Werte zu aktualisieren. Machen Sie einen Rechtsklick auf dem entsprechenden Versand. Wählen Sie **[!UICONTROL Aktion > Sende- und Berichtindikatoren neu berechnen...]** und folgen Sie den einzelnen Schritten des Assistenten.
+>Bei umfangreichen Sendungen können Sie diese Werte aktualisieren. Markieren Sie hierzu den betreffenden Versand und klicken Sie mit der rechten Maustaste darauf. Auswählen **[!UICONTROL Aktion > Sende- und Trackingindikatoren neu berechnen..]** und dann den Assistenten verwenden, um diese Informationen zu aktualisieren.
 
 **Verwandte Themen:**
 

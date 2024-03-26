@@ -11,7 +11,7 @@ exl-id: 33d318f3-1eb4-4c74-8c20-8b9f0442c7c3
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '1101'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -80,7 +80,7 @@ Nach der Konfiguration Ihrer Anfrage (siehe [Workflow](../../workflow/using/quer
 1. Geben Sie eine Kennung und einen Titel für den hinzuzufügenden Vorschlag an.
 1. Konfigurieren Sie die Angebotsauswahl. Zwei Optionen stehen zur Auswahl:
 
-   * **[!UICONTROL Suche nach dem besten Angebot in einer Kategorie]**: Wenn Sie diese Option aktivieren, berechnet das Angebotsmodul automatisch das oder die einzufügenden Angebote, die den angegebenen Parametern (Platzierung, Kategorie oder Themen, Kontaktdatum, Anzahl beizubehaltender Angebote) entsprechen. Es wird empfohlen, entweder eine **[!UICONTROL Kategorie]** oder **[!UICONTROL Themen]** anzugeben.
+   * **[!UICONTROL Suche nach dem besten Angebot einer Kategorie]** : Kreuzen Sie diese Option an und geben Sie die Parameter für die Abfrage des Angebotsmoduls an (Platzierung, Kategorie oder Themen, Kontaktdatum, Anzahl beizubehaltender Angebote). Das Angebotsmodul berechnet automatisch die zu verwendenden Angebote entsprechend diesen Parametern. Es wird empfohlen, **[!UICONTROL Kategorie]** oder **[!UICONTROL Design]** nicht beides gleichzeitig.
 
      ![](assets/int_enrichment_offer3.png)
 
@@ -139,8 +139,7 @@ Gehen Sie wie folgt vor, wenn Sie diese Informationen dennoch speichern möchten
 
 1. Bestätigen Sie Ihre Wahl und speichern Sie den Workflow.
 
-Der Versand speichert nun automatisch Ranking und Gewichtung der Angebote. Die Informationen können im Tab **[!UICONTROL Angebote]** des Versands eingesehen werden.
-
+Der Versand speichert automatisch Rang und Gewichtung der Angebote. Diese Informationen werden im Versand angezeigt. **[!UICONTROL Angebote]** Registerkarte.
 
 ## Angebotsmodul {#offer-engine}
 

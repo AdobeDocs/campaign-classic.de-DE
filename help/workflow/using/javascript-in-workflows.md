@@ -7,7 +7,7 @@ feature: Workflows
 exl-id: 7213ea64-3dec-4b16-9d93-4ae941ddfaa7
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1778'
+source-wordcount: '1709'
 ht-degree: 100%
 
 ---
@@ -420,7 +420,7 @@ In diesem Video wird gezeigt, wie Workflows ausgelöst werden:
 
 Diese Beispiele zeigen, wie Sie diese Aktionen durchführen:
 
-* Verwenden Sie die Methoden `get` und `create` für Schemas zur Verwendung nicht statischer SOAP-Methoden
+* Verwenden Sie die Methoden `get` und `create` für Schemata zur Verwendung nicht statischer SOAP-Methoden
 * Erstellen von Methoden zum Ausführen von SQL-Abfragen
 * Verwenden Sie die `write`-Methode zum Einfügen, Aktualisieren und Löschen von Datensätzen
 

@@ -8,8 +8,8 @@ feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: c1eccb48-59bf-412f-9c18-9cda2a022096
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 100%
+source-wordcount: '566'
+ht-degree: 98%
 
 ---
 
@@ -84,7 +84,7 @@ Im oberen Bereich des Editors werden Nachrichten zum Status des Inhalts angezeig
 * Der HTML-Inhalt ist funktionsfähig.
 * Webanwendung wurde nicht veröffentlicht. Es besteht kein Online-Zugriff.
 * Die Webanwendung ist online. Änderungen werden nur durch eine erneute Veröffentlichung übernommen.
-* Der Seiteninhalt ist nicht funktionsfähig. Er muss ein HTML-Formular enthalten (`<form>`)
+* Der Seiteninhalt ist nicht funktionsfähig. Sie muss ein HTML-Formular (`<form>`)
 * Noch n Eingabefelder oder Schaltflächen zu konfigurieren.
 * Um das Weiterblättern zu ermöglichen, ist die Verbindung der Aktion &quot;Folgende Seite&quot; mit einer Schaltfläche oder einem Link der aktuellen Seite erforderlich.
 

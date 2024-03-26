@@ -7,8 +7,8 @@ feature: Workflows, Channels Activity
 exl-id: b2a05e07-a7d7-436b-b2c6-90ab55d031cd
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 100%
+source-wordcount: '379'
+ht-degree: 80%
 
 ---
 
@@ -26,7 +26,7 @@ Geben Sie im Tab **E-Mail-Empfang** die POP3-Parameter sowie das bei Empfang jed
 
    * **[!UICONTROL Externes Konto verwenden]**
 
-     Wenn diese Option aktiviert wird, können Sie direkt ein externes POP3-Konto auswählen, anstatt die Verbindungsparameter anzugeben. Im Feld **[!UICONTROL Externes Konto]** (nur sichtbar bei Aktivierung der Option) wird das zu verwendende POP3-Konto angezeigt, das die Verbindung zur Mailbox herstellt.
+     Wenn diese Option aktiviert ist, können Sie ein externes POP3-Konto auswählen, anstatt die Verbindungsparameter einzugeben. Die **[!UICONTROL Externes Konto]** gibt das externe POP3-Konto an, über das eine Verbindung zum E-Mail-Dienst hergestellt werden soll. Dieses Feld ist nur sichtbar, wenn die Option &quot;Externes Konto verwenden&quot;aktiviert ist.
 
      Wenn die zuvor beschriebene Option nicht aktiviert wurde, sind folgende Parameter anzugeben:
 
@@ -67,7 +67,7 @@ Geben Sie im Tab **E-Mail-Empfang** die POP3-Parameter sowie das bei Empfang jed
 
 1. **[!UICONTROL Planung]**
 
-   Gehen Sie in den **[!UICONTROL Planung]**-Tab und kreuzen Sie die Option **[!UICONTROL Ausführung planen an]**. Klicken Sie anschließend auf die Schaltfläche **[!UICONTROL Ändern]**, um den Ausführungsrhythmus der Aktivität zu konfigurieren.
+   Um einen Zeitplan für die Aktivität festzulegen, klicken Sie auf das **[!UICONTROL Planung]** Registerkarte und aktivieren **[!UICONTROL Ausführung planen]**. Klicken Sie auf **[!UICONTROL Änderung]** -Schaltfläche, um den Zeitplan zu konfigurieren.
 
    Die Konfiguration erfolgt analog zum Planungsassistenten. Siehe [Planung](scheduler.md).
 

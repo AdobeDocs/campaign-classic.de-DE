@@ -7,8 +7,8 @@ feature: Workflows, Data Management
 exl-id: 366acc1e-d769-4053-9fa1-f47182627c07
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 100%
+source-wordcount: '538'
+ht-degree: 81%
 
 ---
 
@@ -40,7 +40,7 @@ Wählen Sie im Kontextmenü die entsprechende Option aus:
 
   Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](../../reporting/using/using-the-descriptive-analysis-wizard.md).
 
-Die Zielgruppendaten werden im Verlauf der Workflow-Ausführung nach und nach bereinigt. Nur die letzte Arbeitstabelle bleibt zugänglich. Sie haben die Möglichkeit, den Workflow dahingehend zu konfigurieren, dass alle Arbeitstabellen beibehalten werden. Kreuzen Sie hierzu in den Workflow-Eigenschaften die Option **[!UICONTROL Zwischen zwei Ausführungen die ermittelte Population festhalten]** an.
+Die Zielgruppendaten werden bei Ausführung des Workflows bereinigt. Nur die letzte Arbeitstabelle ist zugänglich. Sie können den Workflow so konfigurieren, dass alle Arbeitstabellen zugänglich bleiben: Überprüfen Sie die **[!UICONTROL Zwischen zwei Ausführungen die ermittelte Population beibehalten]** in den Workflow-Eigenschaften.
 
 Bei großen Datenmengen sollte diese Option jedoch nicht aktiviert werden.
 
@@ -58,7 +58,7 @@ Auf diese Weise können Sie in einem Versand mithilfe einer Liste gesammelte ode
 
 Personalisierungsinformationen vom Typ **[!UICONTROL Erweiterung des Zieldatensatzes]** (targetData) stehen nur in Zielgruppen-Workflows zur Verfügung. Dies bedeutet, dass die Versandzielgruppe im Workflow zu bestimmen und in der in den Versand eingehenden Transition zu übermitteln ist.
 
-Wenn Sie Testsendungen durchführen möchten, muss die Testversand-Zielgruppe daher im Modus **[!UICONTROL Adressersetzung]** konzipiert werden, damit die Personalisierungsdaten ausgefüllt werden können. Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](../../delivery/using/steps-defining-the-target-population.md#using-address-substitution-in-proof).
+Wenn Sie Testsendungen erstellen möchten, muss die Testversand-Zielgruppe auf der Basis der Variablen **[!UICONTROL Adressersetzung]** , damit die Personalisierungsdaten eingegeben werden können. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../delivery/using/steps-defining-the-target-population.md#using-address-substitution-in-proof).
 
 Im folgenden Anwendungsbeispiel sollen Kundeninformationen in einer Liste gesammelt und dann in einer personalisierten E-mail verwendet werden.
 
@@ -96,7 +96,7 @@ Gehen Sie wie folgt vor:
 
    >[!CAUTION]
    >
-   >Nur die von der Transition übermittelten Daten können für die Versandpersonalisierung verwendet werden. Personalisierungsfelder vom Typ **targetData** stehen nur für die in die **[!UICONTROL Versandaktivität]** eingehende Population zur Verfügung.
+   >Nur die in der Transition enthaltenen Daten können zur Personalisierung des Versands verwendet werden. **targetData** Personalisierungsfelder sind nur für die Eingangspopulation der **[!UICONTROL Versand]** -Aktivität.
 
 1. Verwenden Sie in der Versandvorlage die im Workflow gesammelten Daten.
 

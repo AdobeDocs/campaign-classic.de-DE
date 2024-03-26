@@ -8,8 +8,8 @@ feature: Reporting, Monitoring
 exl-id: 848d67c7-d1dc-4eba-bcb8-672e76d8ce87
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1656'
-ht-degree: 100%
+source-wordcount: '1659'
+ht-degree: 91%
 
 ---
 
@@ -75,7 +75,7 @@ Die ausgewählten Variablen können klassiert, d. h. nach bestimmten Kriterien i
 
 >[!NOTE]
 >
->Wenn das Feld, auf das sich die Berechnungen beziehen, mittels eines Aggregats berechnet wird, kreuzen Sie die Option **[!UICONTROL Daten wurden bereits aggregiert]** an, um die Leistungsfähigkeit des Systems zu verbessern.
+>Wenn das Feld, auf das sich die Berechnungen beziehen, mittels eines Aggregats berechnet wird, kreuzen Sie die Option **[!UICONTROL Daten wurden bereits aggregiert]** an, um die Performance des Systems zu verbessern.
 
 Die vorgeschlagenen Optionen können abhängig vom Inhalt dieses Felds variieren:
 
@@ -83,10 +83,10 @@ Die vorgeschlagenen Optionen können abhängig vom Inhalt dieses Felds variieren
 
   >[!CAUTION]
   >
-  >Diese Option sollte mit Vorsicht angewandt werden, da sie Leistung und Lesbarkeit des Berichts stark beeinträchtigen kann.
+  >Diese Option sollte mit Vorsicht angewandt werden, da sie Performance und Lesbarkeit des Berichts stark beeinträchtigen kann.
 
 * **[!UICONTROL Automatisch]**: Die n am meisten vertretenen Werte werden angezeigt. Sie werden automatisch berechnet und bilden in Abhängigkeit von der angegebenen Klassenanzahl einen bestimmten Prozentsatz der gewünschten Variablen ab. Wenn es sich um numerische Werte handelt, verteilt Adobe Campaign die Daten automatisch in n Klassen.
-* **[!UICONTROL Manuell]**: Diese Option funktioniert wie die Option **[!UICONTROL Automatisch]**, mit dem Unterschied, dass die Werte benutzerdefiniert werden können. Klicken Sie hierzu auf die rechts von der Wertetabelle gelegene Schaltfläche **[!UICONTROL Hinzufügen]**.
+* **[!UICONTROL Manuell]** : Diese Option funktioniert wie die **[!UICONTROL Auto]** -Option, allerdings können Sie diese Werte manuell festlegen. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Hinzufügen]** rechts neben der Wertetabelle.
 
   Die Werte können vor der Benutzerdefinierung automatisch von Adobe Campaign initialisiert werden: Geben Sie hierzu die Anzahl an zu erzeugenden Klassen an und klicken Sie auf den Link **[!UICONTROL Initialiseren mit]**, wie im nachstehenden Beispiel:
 
@@ -130,13 +130,13 @@ Geben Sie dann den gewünschten Grafiktyp an.
 
 >[!NOTE]
 >
->Sie können die Variablen sowohl in grafischer als auch in tabellarischer Form anzeigen lassen. Geben Sie in diesem Fall die Variablen im Fenster **[!UICONTROL Tabellenkonfiguration]** an. Klicken Sie dann auf **[!UICONTROL Weiter]** und wählen Sie den gewünschten Grafiktyp im Grafikkonfigurations-Fenster aus. In der Tabelle definierte Unterdimensionen werden nicht in der Grafik angezeigt.
+>Sie können die Variablen in einem Diagramm und einer Tabelle gleichzeitig anzeigen. Geben Sie dazu die Variablen im **[!UICONTROL Tabellenkonfiguration]** Fenster. Klicks **[!UICONTROL Nächste]** und wählen Sie den Grafiktyp im Grafikkonfigurationsfenster aus. Wenn in der Tabelle Unterdimensionen definiert sind, werden sie nicht in der Grafik angezeigt.
 
 Klicken Sie auf den Link **[!UICONTROL Grafikparameter...]**, um die Eigenschaften der Grafik zu ändern.
 
 ![](assets/reporting_descriptive_graphe_options.png)
 
-Die zur Verfügung stehenden Optionen hängen vom gewählten Grafiktyp ab. Mehr Informationen erhalten Sie auf [dieser Seite](../../reporting/using/creating-a-chart.md#chart-types-and-variants).
+Die verfügbaren Optionen hängen vom gewählten Grafiktyp ab. Weitere Informationen dazu finden Sie auf [dieser Seite](../../reporting/using/creating-a-chart.md#chart-types-and-variants).
 
 ### Statistikberechnung {#statistics-calculation}
 
@@ -160,7 +160,7 @@ Folgende Funktionen stehen zur Auswahl:
 
   ![](assets/s_ncs_user_report_wizard_026.png)
 
-* **[!UICONTROL Berechnetes Feld]**: ermöglicht die Erstellung einer benutzerdefinierten Funktion (nur für Tabellen verfügbar). Im Feld **[!UICONTROL Benutzerfunktion]** wird die auf die Daten anzuwendende Berechnung angegeben.
+* **[!UICONTROL Berechnetes Feld]** , um einen personalisierten Benutzer zu erstellen (nur für Tabellen verfügbar). Die **[!UICONTROL Benutzerfunktion]** im Feld wird die auf die Daten anzuwendende Berechnung angegeben.
 
   Beispiel zur Berechnung des durchschnittlichen Einkaufsbetrags pro Kunde, nach Land und Herkunft:
 
@@ -174,7 +174,7 @@ Folgende Funktionen stehen zur Auswahl:
 
       ![](assets/report_compute_data_sample2.png)
 
-   1. Diese Statistik soll nicht in der Tabelle angezeigt werden. Deaktivieren Sie also die Option **[!UICONTROL In der Tabelle anzeigen]** im Tab **[!UICONTROL Erweitert]**.
+   1. Diese Statistik wird nicht in der Tabelle angezeigt. Sie müssen die Option **[!UICONTROL Anzeige in der Tabelle]** der **[!UICONTROL Erweitert]** Registerkarte.
 
       ![](assets/report_compute_data_sample3.png)
 

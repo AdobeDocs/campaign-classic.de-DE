@@ -8,9 +8,9 @@ feature: SMS
 role: User
 exl-id: 94aa4628-d973-433d-b963-b078e2d6672b
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
-workflow-type: ht
-source-wordcount: '452'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '457'
+ht-degree: 89%
 
 ---
 
@@ -42,7 +42,7 @@ Um den Inhalt der SMS zu erstellen, gehen Sie wie folgt vor:
 
    Die Verwendung von Personalisierungsfeldern wird im Abschnitt [Über die Personalisierung](about-personalization.md) beschrieben.
 
-1. Durch Auswahl des **[!UICONTROL Vorschau]**-Tabs unten auf der Seite können Sie das Rendering der personalisierten Nachricht prüfen. Klicken Sie in der Symbolleiste auf die Schaltfläche **[!UICONTROL Personalisierung testen]** und wählen Sie einen Empfänger aus der Zielgruppe oder ein anderes Profil aus.
+1. Klicks **[!UICONTROL Vorschau]** unten auf der Seite, um das Rendering der Nachricht mit ihrer Personalisierung anzuzeigen. Um die Vorschau zu starten, wählen Sie einen Empfänger mithilfe der **[!UICONTROL Personalisierung testen]** in der Symbolleiste. Sie können einen Empfänger aus den definierten Zielgruppen auswählen oder einen anderen Empfänger auswählen.
 
    ![](assets/s_ncs_user_wizard_sms01_139.png)
 

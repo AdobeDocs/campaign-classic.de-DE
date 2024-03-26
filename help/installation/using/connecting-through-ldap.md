@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Über LDAP verbinden
+title: Verbindung über LDAP
 description: Erfahren Sie, wie Sie sich mit LDAP bei Campaign anmelden.
 feature: Installation, Instance Settings
 badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
@@ -11,12 +11,12 @@ topic-tags: additional-configurations
 exl-id: 0533cd50-3aa4-4160-9152-e916e149e77f
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1220'
-ht-degree: 4%
+source-wordcount: '1214'
+ht-degree: 1%
 
 ---
 
-# Über LDAP verbinden{#connecting-through-ldap}
+# Verbindung über LDAP{#connecting-through-ldap}
 
 ## Campaign und LDAP konfigurieren {#configuring-campaign-and-ldap}
 
@@ -130,7 +130,7 @@ Wenn Sie nach einer Kennung suchen, können Sie mit dem Softwareverteilungs-Assi
 
       Der LDAP-Ordner wird vollständig durchsucht, beginnend mit einer bestimmten Ebene.
 
-   1. **[!UICONTROL Auf die Datenbank beschränkt]**.
+   1. **[!UICONTROL Beschränkt auf die Basis]**.
 
       Alle Attribute sind in der Suche enthalten.
 
@@ -176,7 +176,7 @@ In diesem Abschnitt finden Sie einige einfache Anwendungsfälle, mit denen Sie d
 
 1. Ein Benutzer wurde im LDAP-Ordner erstellt, jedoch nicht in Adobe Campaign.
 
-   Adobe Campaign kann so konfiguriert werden, dass der Anwender über seine LDAP-Authentifizierung auf die Plattform zugreift. Adobe Campaign muss in der Lage sein, die Gültigkeit der ID/Kennwort-Kombination im LDAP-Ordner zu steuern, damit der Benutzer in Adobe Campaign spontan erstellt werden kann. Überprüfen Sie dazu die **[!UICONTROL Aktivieren Sie die Verbindung von im LDAP-Ordner deklarierten Benutzern, wenn der Benutzer nicht in Adobe Campaign deklariert ist.]** -Option. In diesem Fall muss auch die Gruppensynchronisierung konfiguriert werden: die **[!UICONTROL Aktivieren der Synchronisierung von Benutzerrechten aus Berechtigungen und Gruppen im Ordner]** ausgewählt werden.
+   Adobe Campaign kann so konfiguriert werden, dass der Benutzer über seine LDAP-Authentifizierung auf die Plattform zugreift. Adobe Campaign muss in der Lage sein, die Gültigkeit der ID/Kennwort-Kombination im LDAP-Ordner zu steuern, damit der Benutzer in Adobe Campaign spontan erstellt werden kann. Überprüfen Sie dazu die **[!UICONTROL Aktivieren Sie die Verbindung von im LDAP-Ordner deklarierten Benutzern, wenn der Benutzer nicht in Adobe Campaign deklariert ist.]** -Option. In diesem Fall muss auch die Gruppensynchronisierung konfiguriert werden: die **[!UICONTROL Aktivieren der Synchronisierung von Benutzerrechten aus Berechtigungen und Gruppen im Ordner]** ausgewählt werden.
 
 1. Der Benutzer wurde in Adobe Campaign erstellt, jedoch nicht im LDAP-Ordner.
 

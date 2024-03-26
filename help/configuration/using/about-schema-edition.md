@@ -8,8 +8,8 @@ role: Data Engineer, Developer
 exl-id: 9e10b24e-c4de-4e76-bbed-0d05f62120b7
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '1018'
-ht-degree: 65%
+source-wordcount: '1020'
+ht-degree: 63%
 
 ---
 
@@ -121,18 +121,18 @@ Die vollständige Liste der Attribute ist im [`<attribute>` element](../../confi
 
 * **@advanced**
 * **@dataPolicy**
-* **@Standard**
+* **@default**
 * **@desc**
 * **@enum**
 * **@expr**
-* **@Bezeichnung**
+* **@label**
 * **@length**
 * **@name**
 * **@notNull**
 * **@required**
 * **@ref**
 * **@xml**
-* **@Typ**
+* **@type**
 
   Eine Tabelle mit den Zuordnungen der Datentypen, die von Adobe Campaign für die verschiedenen Datenbankverwaltungssysteme generiert wurden, finden Sie im Abschnitt [Mapping der Typen von Adobe Campaign/DBMS-Daten](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data) Abschnitt.
 
@@ -222,4 +222,4 @@ Weiterführende Informationen finden Sie im Abschnitt [Datenbankstruktur aktuali
 
 >[!NOTE]
 >
->Wenn Änderungen sich nicht auf die Datenbankstruktur auswirken, müssen Sie nur die Schemata neu erstellen. Wählen Sie dazu die zu aktualisierenden Schemas aus, klicken Sie mit der rechten Maustaste und wählen Sie **[!UICONTROL Aktionen > Ausgewählte Schemata wiederherstellen...]** . Weitere Informationen hierzu finden Sie im Abschnitt [Regenerieren von Schemata](../../configuration/using/regenerating-schemas.md) Abschnitt.
+>Wenn Änderungen sich nicht auf die Datenbankstruktur auswirken, müssen Sie nur die Schemata neu erstellen. Wählen Sie dazu das zu aktualisierende Schema aus, klicken Sie mit der rechten Maustaste darauf und wählen Sie **[!UICONTROL Aktionen > Ausgewählte Schemata regenerieren...]** . Weitere Informationen hierzu finden Sie im Abschnitt [Regenerieren von Schemata](../../configuration/using/regenerating-schemas.md) Abschnitt.

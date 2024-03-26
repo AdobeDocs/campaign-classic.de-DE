@@ -7,7 +7,7 @@ feature: Workflows, Heatmap
 exl-id: f1016ddf-0c87-4611-a878-d01f3684935f
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1188'
+source-wordcount: '1198'
 ht-degree: 100%
 
 ---
@@ -35,7 +35,7 @@ Genauer gesagt, hilft sie den Administratoren der Plattform bei Folgendem:
 
 >[!NOTE]
 >
->Zusätzlich zur **Workflow-Heatmap** können Sie einen Workflow erstellen, mit dem Sie den Status einer Reihe von Workflows überwachen und wiederkehrende Nachrichten an Supervisoren senden können. Weitere Informationen hierzu finden Sie im [entsprechenden Abschnitt](supervising-workflows.md).
+>Zusätzlich zur **Workflow-Heatmap** können Sie einen Workflow erstellen, mit dem Sie den Status einer Reihe von Workflows überwachen und wiederkehrende Nachrichten an Verantwortliche senden können. Weitere Informationen hierzu finden Sie im [entsprechenden Abschnitt](supervising-workflows.md).
 
 Die Verwendung der Workflow-Heatmap erfordert ein gutes Verständnis der folgenden Konzepte: [Workflows](about-workflows.md), [Aktivitäten](about-activities.md) und [Best Practices bei Workflows](workflow-best-practices.md).
 
@@ -127,10 +127,10 @@ Als Campaign-Administrator kann Ihnen die Workflow-HeatMap dabei helfen, die Aus
 
 1. Untersuchen Sie die Ergebnisse, um die Auslastung der Instanz zu verstehen und geeignete Maßnahmen zu ergreifen:
 
-   * Wenn Leistungsprobleme auftreten und eine oder mehrere rote Zellen in der Tabelle angezeigt werden, sollten Sie die Startzeiten mehrerer Workflows ändern. Bitten Sie die Marketing-Benutzer, Workflows manuell von beschäftigten („heißen“) Zeiträumen in verfügbarere Zeitfenster zu verschieben. Dies sollte ein stabiles Aktivitätsniveau über den Tag hinweg aufrechterhalten.
+   * Wenn Performance-Probleme auftreten und eine oder mehrere rote Zellen in der Tabelle angezeigt werden, sollten Sie die Startzeiten mehrerer Workflows ändern. Bitten Sie die Marketing-Benutzer, Workflows manuell von beschäftigten („heißen“) Zeiträumen in verfügbarere Zeitfenster zu verschieben. Dies sollte ein stabiles Aktivitätsniveau über den Tag hinweg aufrechterhalten.
    * Um Spitzen und eine Überlastung der Instanz zu vermeiden, sollten Sie sich die HeatMap ansehen, bevor Sie neue Workflows planen, und die beste Zeit auswählen. Erwägen Sie Zeitfenster, die grauen oder grünen Zellen in der Tabelle entsprechen, um neue Workflows zu starten.
 
-### Suchen nach langwierigen Workflows, die sich auf die Leistung auswirken {#finding-long-running-workflows-that-impact-performance}
+### Suchen nach langwierigen Workflows, die sich auf die Performance auswirken {#finding-long-running-workflows-that-impact-performance}
 
 Als Campaign-Administrator hilft Ihnen die Workflow-HeatMap dabei, die längsten Workflows zu finden, die die Aktivität verlangsamen können.
 
@@ -148,9 +148,9 @@ Als Campaign-Administrator hilft Ihnen die Workflow-HeatMap dabei, die längsten
 
 ## Verwenden der Heatmap zur Verbesserung der Workflow-Planung {#example--using-the-heatmap-to-improve-workflow-planning}
 
-Das folgende Beispiel zeigt, wie die Planung effizienter gestaltet und die Leistung bei Verwendung der Adobe Campaign Workflow-HeatMap verbessert werden kann.
+Das folgende Beispiel zeigt, wie die Planung effizienter gestaltet und die Performance bei Verwendung der Adobe Campaign Workflow-HeatMap verbessert werden kann.
 
-In diesem Fall beschweren sich viele Benutzer über die Workflow-Leistung. Sie müssen überprüfen, was die Aktivität verlangsamt und wie das Problem zu lösen ist.
+In diesem Fall beschweren sich viele Benutzer über die Workflow-Performance. Sie müssen überprüfen, was die Aktivität verlangsamt und wie das Problem zu lösen ist.
 
 1. Gehen Sie zu **[!UICONTROL Monitoring]** und klicken Sie auf den Link **[!UICONTROL Workflow-Heatmap]**, um die Seite **[!UICONTROL Campaign Workflow-Heatmap]** anzuzeigen.
 1. Legen Sie für den Filter **[!UICONTROL Mindestdauer]** auf 5 Minuten fest.
@@ -162,7 +162,7 @@ In diesem Fall beschweren sich viele Benutzer über die Workflow-Leistung. Sie m
    * Fünfzig langwierige (über 5 Minuten) Kampagnen-Workflows werden um 10 Uhr ausgeführt.
    * Die meisten von ihnen haben den Status „Ausstehend“ (standardmäßig ist der Grenzwert für gleichzeitig laufende Workflows auf 20 festgelegt).
    * Die ausstehenden Workflows müssen jeden Tag manuell neu gestartet werden.
-   * Die Leistung ist gering.
+   * die Performance ist gering.
 
 1. Statt fünfzig Workflows, die um 10 Uhr morgens beginnen, sollten Sie die Startzeiten der Workflows gleichmäßig auf den Rest des Tages verteilen.
 1. Gehen Sie zurück zur Seite **[!UICONTROL Campaign Workflow-Heatmap]** und klicken Sie auf die Schaltfläche **[!UICONTROL Daten neu laden]**.
@@ -173,4 +173,4 @@ In diesem Fall beschweren sich viele Benutzer über die Workflow-Leistung. Sie m
    * Um 10 Uhr morgens laufen nur noch achtzehn langwierige Kampagnen-Workflows.
    * Es befinden sich keine Workflows mehr im Status „Ausstehend“ (der Grenzwert für gleichzeitig laufende Workflows ist weiterhin auf 20 festgelegt).
    * Die Startzeiten der Workflows sind gleichmäßig über den Tag verteilt.
-   * Es beschweren sich keine Benutzer mehr über Leistungsprobleme.
+   * Es beschweren sich keine Benutzer mehr über Performance-Probleme.

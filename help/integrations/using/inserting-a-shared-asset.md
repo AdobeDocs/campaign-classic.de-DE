@@ -10,7 +10,7 @@ exl-id: 30a94bce-6d96-4a6d-a62f-7451c822f0e3
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '232'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -46,4 +46,4 @@ Freigegebene Assets der Adobe Experience Cloud können in E-Mails und Landingpag
 
 >[!NOTE]
 >
->Wenn Sie die Integration mit Adobe Target nutzen, haben Sie die Möglichkeit, ein freigegebenes Bild als Standardbild zu verwenden. Weiterführende Informationen dazu finden Sie auf [dieser Seite](../../integrations/using/integrating-with-adobe-target.md).
+>Wenn Sie die Integration mit Adobe Target verwenden, können Sie ein freigegebenes Bild als Standardbild verwenden. Mehr dazu erfahren Sie auf [dieser Seite](../../integrations/using/integrating-with-adobe-target.md).

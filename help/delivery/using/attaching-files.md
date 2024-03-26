@@ -8,9 +8,9 @@ feature: Email
 role: User
 exl-id: db65e83e-276f-4163-98c3-3658a48acffc
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1085'
-ht-degree: 100%
+ht-degree: 84%
 
 ---
 
@@ -22,12 +22,12 @@ Sie können an einen E-Mail-Versand eine oder mehrere Dateien anhängen.
 
 >[!NOTE]
 >
->Zur Vermeidung von Leistungsproblemen wird empfohlen, nicht mehr als einen Anhang pro E-Mail hinzuzufügen. Der empfohlene Schwellenwert kann über [die Liste der Campaign Classic-Optionen](../../installation/using/configuring-campaign-options.md#delivery) konfiguriert werden.
+>Zur Vermeidung von Performance-Problemen wird empfohlen, nicht mehr als einen Anhang pro E-Mail hinzuzufügen. Der empfohlene Schwellenwert kann über [die Liste der Campaign Classic-Optionen](../../installation/using/configuring-campaign-options.md#delivery) konfiguriert werden.
 
 Sie haben zwei Möglichkeiten:
 
 * Datei unverändert anhängen.
-* Datei für jeden Empfänger personalisieren. In diesem Fall ist die Erstellung eines **berechneten Anhangs** erforderlich. Der Titel des Anhangs wird für jede Nachricht zum Zeitpunkt des Versands berechnet und kann somit Empfänger-spezifisch sein. Wenn Sie über die Lizenz für **Variable Digital Printing** verfügen, können Sie die personalisierten Anhänge vor dem Senden in eine PDF-Datei umwandeln.
+* Personalisieren Sie den Inhalt des Anhangs für jeden Empfänger. In diesem Fall müssen Sie eine **berechnete Anlage**: Der Name des Anhangs wird zum Zeitpunkt des Versands für jede Nachricht entsprechend dem Empfänger berechnet. Wenn Sie zum Zeitpunkt der Bereitstellung über die **Variablendigitaler Druck** -Option.
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ Sie haben zwei Möglichkeiten:
 
 ## Schutzmechanismen {#attachments-guardrails}
 
-Um Leistungsprobleme zu vermeiden, dürfen die in den E-Mails enthaltenen Bilder nicht größer als 100 KB sein. Diese standardmäßig festgelegte Beschränkung kann in der Option `NmsDelivery_MaxDownloadedImageSize` geändert werden. Adobe empfiehlt jedoch dringend, große Bilder in E-Mail-Sendungen zu vermeiden.
+Um Performance-Probleme zu vermeiden, dürfen die in den E-Mails enthaltenen Bilder nicht größer als 100 KB sein. Diese standardmäßig festgelegte Beschränkung kann in der Option `NmsDelivery_MaxDownloadedImageSize` geändert werden. Adobe empfiehlt jedoch dringend, große Bilder in E-Mail-Sendungen zu vermeiden.
 
 Adobe empfiehlt außerdem, die Größe und Anzahl der angehängten Dateien zu begrenzen. Standardmäßig kann nur eine Datei als Anhang zu einer E-Mail hinzugefügt werden. Dieser Schwellenwert kann in der Option `NmsDelivery_MaxRecommendedAttachments` konfiguriert werden.
 
@@ -47,7 +47,7 @@ Gehen Sie wie folgt vor, um eine lokale Datei an einen Versand anzuhängen.
 
 >[!NOTE]
 >
->Sie können auch mehrere Dateien an einen Versand anhängen. Die Anlagen können in jedem beliebigen Format vorliegen, darunter auch im Zip-Format.
+>Sie können auch mehrere Dateien an einen Versand anhängen. Die Anhänge können in jedem beliebigen Format vorliegen, darunter auch im Zip-Format.
 
 1. Wählen Sie den Link **[!UICONTROL Anhänge]**.
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**.
@@ -124,7 +124,7 @@ Gehen Sie wie folgt vor, um diese Art von Anhang zu konfigurieren:
 
 ### Berechnete Datei anhängen {#attach-a-calculated-file}
 
-Sie können den Namen des Anhangs während der Versandvorbereitung berechnen lassen. Wählen Sie dazu die Option **[!UICONTROL Dateiname wird bei der Versandanalyse berechnet (unabhängig vom Empfänger)]** aus.
+Sie können den Anlagennamen während der Versandvorbereitung berechnen. Wählen Sie dazu die Option **[!UICONTROL Dateiname wird bei der Versandanalyse berechnet (unabhängig vom Empfänger)]**.
 
 >[!NOTE]
 >
@@ -170,7 +170,7 @@ Bei der Auswahl des Anhangs können Sie die Option **[!UICONTROL Dateiname wird 
 
 ### Einstellungen für den Anhang {#attachment-settings}
 
-Mithilfe der ersten zwei Optionen können Sie die **[!UICONTROL Datei auf den Server laden]**, indem Sie das entsprechende Feld ankreuzen, und über den Link **[!UICONTROL Auf dem Server aktualisieren...]** den Upload starten.
+Für die ersten beiden Optionen können Sie **[!UICONTROL Datei auf den Server hochladen]** durch Auswahl der entsprechenden Option. Die **[!UICONTROL Datei auf dem Server aktualisieren]** -Link können Sie mit dem Hochladen beginnen.
 
 ![](assets/s_ncs_user_wizard_email01_137.png)
 
@@ -184,7 +184,7 @@ Ein Warnhinweis erscheint, wenn die Datei geändert wurde:
 
 Im **[!UICONTROL Erweitert]**-Tab können Sie für Anhänge die folgenden Optionen konfigurieren:
 
-* Auswahl der Empfänger, die den Anhang erhalten sollen. Kreuzen Sie die Option **[!UICONTROL Empfängerfilter bezüglich des Anhangs aktivieren]** an und geben Sie im Eingabefenster in Form eines JavaScripts das Auswahlkriterium an.
+* Sie können Filteroptionen definieren, um zu vermeiden, dass die angehängte Datei an alle Empfänger gesendet wird. Die Option **[!UICONTROL Aktivieren der Filterung von Empfängern, die den Anhang erhalten]** aktiviert ein Eingabefeld, das zur Definition eines in JavaScript anzugebenden Auswahlskripts für Empfänger verwendet wird.
 * Erstellung eines Scripts, um den Dateinamen zu personalisieren.
 
   Geben Sie unter Verwendung der Dropdown-Liste mit den Personalisierungsfeldern im Eingabefenster den gewünschten Text ein. In unten stehendem Beispiel wurde der Dateiname mit dem Tagesdatum und dem Nachnamen des Empfängers personalisiert.

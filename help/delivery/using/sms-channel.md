@@ -8,7 +8,7 @@ feature: SMS
 role: User
 exl-id: 6fc2ab09-8ea7-4865-88ad-bd45eee68958
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '166'
 ht-degree: 100%
 
@@ -27,7 +27,7 @@ Die wichtigsten Schritte zum Senden einer SMS sind:
 
 * [SMS-Kanal konfigurieren](sms-set-up.md)
 * [SMS-Versand erstellen](sms-create.md)
-* [Audience festlegen](sms-create.md#selecting-the-target-population)
+* [Zielgruppe definieren](sms-create.md#selecting-the-target-population)
 * [SMS-Inhalt erstellen](sms-create.md#defining-the-sms-content)
 * [SMS senden, überwachen und verfolgen](sms-send.md)
 * [Fehler beheben](troubleshooting-sms.md)

@@ -26,11 +26,11 @@ Es wird erklärt, wie die Standard-Datenmodelle den Besonderheiten einer Adobe-C
 
 Messhypothesen werden vom Kampagnenvorgänge-Workflow **[!UICONTROL operationMgt]** gestartet. Jede Hypothese repräsentiert einen separaten Prozess, der asynchron ausgeführt wird und über einen Ausführungsstatus verfügt (In Bearbeitung, Ausstehend, Abgeschlossen etc.). Er unterliegt einer Steuerung, die Prioritätseinschränkungen, Begrenzungen der Anzahl simultaner Prozesse, Zeitpunkte mit geringer Auslastung und die automatische Ausführung mit Ausführungsfrequenz berücksichtigt und verwaltet.
 
-## Schemas konfigurieren {#configuring-schemas}
+## Schemata konfigurieren {#configuring-schemas}
 
 >[!CAUTION]
 >
->Ändern Sie nicht die integrierten Schemas der Anwendung, sondern verwenden Sie den Schemaerweiterungs-Mechanismus. Andernfalls werden geänderte Schemas bei zukünftigen Aktualisierungen der Anwendung nicht aktualisiert. Dies kann bei der Verwendung von Adobe Campaign zu Funktionsstörungen führen.
+>Ändern Sie nicht die integrierten Schemata der Anwendung, sondern verwenden Sie den Schemaerweiterungs-Mechanismus. Andernfalls werden geänderte Schemata bei zukünftigen Aktualisierungen der Anwendung nicht aktualisiert. Dies kann bei der Verwendung von Adobe Campaign zu Funktionsstörungen führen.
 
 Vor dem Einsatz des Reaktionsmoduls ist eine Anwendungsintegration erforderlich, um die verschiedenen zu messenden Tabellen (Transaktionen, Transaktionendetails) und ihre Beziehung mit Sendungen, Angeboten und Individuen zu definieren.
 

@@ -9,7 +9,7 @@ exl-id: 655b5928-b005-442f-b026-2f1b0c1abb99
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '992'
-ht-degree: 33%
+ht-degree: 26%
 
 ---
 
@@ -19,17 +19,17 @@ Das konzeptionelle Datenmodell der Adobe Campaign-Datenbank besteht aus einer Re
 
 ## Übersicht {#data-model-overview}
 
-Adobe Campaign stützt sich auf eine relationale Datenbank mit Tabellen, die miteinander verknüpft sind. Die Grundstruktur des Adobe Campaign-Datenmodells lässt sich wie folgt beschreiben.
+Adobe Campaign stützt sich auf eine relationale Datenbank mit Tabellen, die miteinander verknüpft sind. Die grundlegende Struktur des Adobe Campaign-Datenmodells kann wie folgt beschrieben werden:
 
 ### Empfängertabelle {#recipient-table}
 
 Das Datenmodell beruht auf einer Haupt-Tabelle, die standardmäßig die Empfängertabelle (**NmsRecipient**). Diese Tabelle ermöglicht eine Speicherung aller Marketing-Profile.
 
-Weitere Informationen zur Empfängertabelle finden Sie in [diesem Abschnitt](#default-recipient-table).
+Weitere Informationen zur Empfängertabelle finden Sie unter [diesem Abschnitt](#default-recipient-table).
 
 ### Versandtabelle {#delivery-table}
 
-Das Datenmodell enthält auch einen Teil, in dem alle Marketing-Aktivitäten gespeichert werden. Normalerweise handelt es sich um die Versandtabelle (**NmsDelivery**). Jeder Datensatz in dieser Tabelle stellt eine Versandaktion oder Versandvorlage dar. Er enthält alle erforderlichen Parameter zum Ausführen von Sendungen wie Zielgruppe, Inhalt usw.
+Das Datenmodell enthält auch einen Teil, in dem alle Marketing-Aktivitäten gespeichert werden. Normalerweise handelt es sich dabei um die Versandtabelle (**NmsDelivery**). Jeder Datensatz in dieser Tabelle stellt eine Versandaktion oder Versandvorlage dar. Er enthält alle erforderlichen Parameter zum Ausführen von Sendungen wie Zielgruppe, Inhalt usw.
 
 ### Protokolltabellen {#log-tables}
 
@@ -50,7 +50,7 @@ Die integrierte Empfängertabelle in Adobe Campaign bietet einen guten Ausgangsp
 Die Verwendung der integrierten Empfängertabelle bietet folgende Vorteile:
 
 * Integrierte Funktionen wie Abonnements, Seed-Listen und mehr
-* Bereitstellen einer Marketing-Datenbank mit einem Empfänger-orientierten Datenmodell.
+* Bereitstellung einer Marketing-Datenbank mit einem empfängerorientierten Datenmodell.
 * Schnellere Implementierung.
 * Einfache Wartung durch Support und Partner.
 
@@ -70,8 +70,8 @@ Falls relevant, können Sie die standardmäßige Empfängertabelle mit den nativ
 
 Bei Bedarf können Sie sie mit zwei Verfahren erweitern:
 
-* Erweitern einer vorhandenen Tabelle mit neuen Feldern. Sie können der Empfängertabelle beispielsweise ein neues Feld „Treue“ hinzufügen.
-* Erstellen Sie eine neue Tabelle, z. B. eine Tabelle „Einkauf“, in der alle von den einzelnen Profilen der Datenbank getätigten Käufe aufgelistet sind, und verknüpfen Sie sie mit der Empfängertabelle.
+* Erweitern einer vorhandenen Tabelle um neue Felder. Sie können der Empfängertabelle beispielsweise ein neues Feld „Treue“ hinzufügen.
+* Erstellen Sie eine neue Tabelle, z. B. eine &quot;Kauf&quot;-Tabelle, die alle von jedem Profil der Datenbank getätigten Käufe auflistet, und verknüpfen Sie sie mit der Empfängertabelle.
 
 Weitere Informationen zum Konfigurieren von Erweiterungsschemata zum Erweitern des konzeptionellen Datenmodells finden Sie unter [Über die Schemabearbeitung](../../configuration/using/about-schema-edition.md).
 

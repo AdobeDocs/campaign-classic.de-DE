@@ -10,7 +10,7 @@ topic-tags: starting-with-adobe-campaign
 exl-id: c7688c2a-f0a7-4c51-a4cf-bf96fe8bf9b6
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '538'
 ht-degree: 100%
 
 ---
@@ -77,4 +77,4 @@ Standardmäßig sind drei Namespaces verfügbar: E-Mail, Telefon und Mobiltelefo
 
 >[!NOTE]
 >
->Für optimale Leistung wird empfohlen, vordefinierte Namespaces zu verwenden.
+>Für optimale Performance wird empfohlen, vordefinierte Namespaces zu verwenden.

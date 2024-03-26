@@ -11,7 +11,7 @@ exl-id: e1d0556a-6f30-4863-9025-eb9c1b8b53d3
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '246'
-ht-degree: 100%
+ht-degree: 87%
 
 ---
 
@@ -41,7 +41,7 @@ Es besteht die Möglichkeit, einen Empfänger im selben Ordner zu duplizieren. K
 
 ## Empfänger löschen {#deleting-recipients}
 
-Zu löschende Empfänger sind zunächst in einen spezifischen Ordner zu verschieben, welcher im Anschluss daran bereinigt wird. Es wird **dringend davon abgeraten**, in diesem Zusammenhang die Option **[!UICONTROL Löschen]** zu verwenden.
+Um Empfänger zu löschen, verschieben Sie sie in einen bestimmten Ordner und löschen Sie dann den Inhalt dieses Ordners. Es ist **wird dringend empfohlen,** die **[!UICONTROL Löschen]** in diesem Fall.
 
 Löschen Sie den Ordnerinhalt, indem Sie mit der rechten Maustaste auf den entsprechenden Ordner klicken und **[!UICONTROL Aktionen > Ordner bereinigen]** auswählen.
 

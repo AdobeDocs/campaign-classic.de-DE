@@ -10,8 +10,8 @@ topic-tags: prerequisites-and-recommendations-
 exl-id: 1f96c3df-0ef2-4f5f-9c36-988cbcc0769f
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '773'
-ht-degree: 41%
+source-wordcount: '765'
+ht-degree: 29%
 
 ---
 
@@ -58,7 +58,7 @@ Um SQL-Injections zu vermeiden, müssen der Zulassungsliste SQL-Funktionen hinzu
 >
 >Wenn Sie einen älteren Build als 8140 verwenden, wird die Variable **XtkPassUnknownSQLFunctionsToRDBMS** -Option auf &quot;1&quot;gesetzt werden. Wenn Sie Ihre Datenbank sichern möchten, löschen Sie diese Option (oder legen Sie sie auf &quot;0&quot;fest).
 
-Wenn Sie Benutzereingaben zur Erstellung von Filtern in Abfragen oder SQL-Anweisungen verwenden, müssen Sie sie immer escapen (siehe die [JSAPI-Dokumentation für Campaign](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=de) - Schutz von Daten: Escape-Funktionen). Diese Funktionen sind:
+Wenn Sie Benutzereingaben zum Erstellen von Filtern in Abfragen oder SQL-Anweisungen verwenden, müssen Sie diese immer maskieren (siehe [Dokumentation zu Campaign JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=de) - Datenschutz: Maskierungsfunktionen). Diese Funktionen sind:
 
 * NL.XML.escape(data)
 * NL.SQL.escape(data)
@@ -112,7 +112,7 @@ Die gesamte Entität wird vom Bildschirm geladen. Sie können sie auch in der Sp
 
 Es ist empfehlenswert, öffentlichen Landingpages und Anmeldeseiten ein Captcha hinzuzufügen. Leider ist dies in DCE-Seiten (Digital Content Editor) nicht einfach. Wir zeigen Ihnen, wie Sie ein v5 Captcha oder ein Google reCAPTCHA hinzufügen.
 
-Im Allgemeinen wird ein Captcha im DCE hinzugefügt, indem ein Gestaltungsbaustein erstellt wird, mit dem es in den Seiteninhalt integriert werden kann. Sie müssen außerdem eine **Script**-Aktivität und einen **Test** hinzufügen.
+Im DCE wird ein Captcha im Allgemeinen hinzugefügt, indem ein Gestaltungsbaustein erstellt wird, der ihn einfach in den Seiteninhalt einbezieht. Sie müssen eine **Skript** und eine **Test**.
 
 ### Gestaltungsbaustein
 
@@ -144,7 +144,7 @@ Im Allgemeinen wird ein Captcha im DCE hinzugefügt, indem ein Gestaltungsbauste
 
    * Mit den Zeilen 1 bis 6 werden alle erforderlichen Eingaben erzeugt.
    * Mit den Zeilen 7 bis zum Ende werden Fehler gehandhabt.
-   * Mit Zeile 4 können Sie die Größe des grauen Captcha-Feldes (Breite/Höhe) sowie die Länge des erzeugten Worts ändern (minWordSize/maxWordSize).
+   * Mit Zeile 4 können Sie die Größe des grauen Captcha-Felds (Breite/Höhe) und die Länge des generierten Wortes (minWordSize/maxWordSize) ändern.
    * Bevor Sie Google reCAPTCHA verwenden, müssen Sie sich bei Google registrieren und eine neue reCAPTCHA-Site erstellen.
 
      `<div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>`

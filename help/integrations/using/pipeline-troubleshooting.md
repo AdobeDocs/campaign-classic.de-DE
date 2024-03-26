@@ -10,7 +10,7 @@ content-type: reference
 exl-id: 76645a6f-9536-49d6-b12a-fdd6113d31fa
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '717'
 ht-degree: 100%
 
 ---
@@ -100,7 +100,7 @@ Im Allgemeinen kann es 15–90 Minuten dauern, bis eine Marketing-Kampagne gesta
 
 1. Überprüfen Sie, ob der [!DNL pipelined]-Prozess ausgeführt wird.
 1. Suchen Sie in &quot;pipelined.log&quot; nach Fehlern, die weitere Zustellversuche verursachen können. Beheben Sie die Fehler, falls zutreffend.
-1. Prüfen Sie die [!DNL pipelined]-Statusseite auf die Warteschlangengröße. Wenn der Warteschlangenumfang groß ist, optimieren Sie die Leistung des JS.
+1. Prüfen Sie die [!DNL pipelined]-Statusseite auf die Warteschlangengröße. Wenn der Warteschlangenumfang groß ist, optimieren Sie die Performance des JS.
 1. Da die Verzögerung mit zunehmender Anzahl wächst, konfigurieren Sie die Trigger in Analytics mit weniger Nachrichten.
 
 **Upgrade von Staging-Instanzen von der früheren Authentifizierung zur Authentifizierung via Adobe IO**

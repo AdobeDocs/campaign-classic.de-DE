@@ -7,8 +7,8 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Cla
 exl-id: 8702499b-1700-4d1f-a0e0-f7a9dfb4b88f
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 42%
+source-wordcount: '202'
+ht-degree: 33%
 
 ---
 
@@ -32,7 +32,7 @@ So erstellen Sie ein Schema für eine externe Datenbank:
 
    ![](assets/wf_new_schema_select_table_fda.png)
 
-1. Klicken Sie zur Bestätigung auf **[!UICONTROL OK]**. Adobe Campaign erkennt die Struktur der ausgewählten Tabelle automatisch und erstellt das logische Schema. Beachten Sie, dass Adobe Campaign keine Verknüpfungen generiert.
+1. Klicks **[!UICONTROL OK]** zur Bestätigung. Adobe Campaign erkennt automatisch die Struktur der ausgewählten Tabelle und generiert das logische Schema. Beachten Sie, dass Adobe Campaign keine Verknüpfungen generiert.
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Erstellung zu bestätigen.
 

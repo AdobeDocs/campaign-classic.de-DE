@@ -11,8 +11,8 @@ topic-tags: adobe-target
 exl-id: 6177f57b-534c-4d86-8f73-d96980c48a77
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '893'
-ht-degree: 100%
+source-wordcount: '878'
+ht-degree: 98%
 
 ---
 
@@ -36,7 +36,7 @@ Gehen Sie hierzu wie folgt vor:
 
 1. [Einfügen eines dynamischen Angebots in eine E-Mail](../../integrations/using/inserting-a-dynamic-image.md#inserting-dynamic-offer)
 1. [Umleitungsangebote erstellen](../../integrations/using/inserting-a-dynamic-image.md#create-redirect-offers)
-1. [Audiences erstellen](../../integrations/using/inserting-a-dynamic-image.md#audiences-target)
+1. [Zielgruppen erstellen](../../integrations/using/inserting-a-dynamic-image.md#audiences-target)
 1. [Experience Targeting-Aktivität erstellen](../../integrations/using/inserting-a-dynamic-image.md#creating-targeting-activity)
 1. [Anzeigen der Vorschau und Senden der Nachricht](../../integrations/using/inserting-a-dynamic-image.md#preview-send-email)
 
@@ -60,10 +60,10 @@ In Adobe Campaign gibt es zwei Möglichkeiten, ein dynamisches Bild von Target i
 
 * URL des **[!UICONTROL Standardbilds]**: Dieses Bild wird angezeigt, wenn keine der Bedingungen erfüllt ist. Sie können auch ein Bild aus Ihrer Assets-Bibliothek verwenden.
 * **[!UICONTROL Speicherort in Target]**: Geben Sie einen Namen für den Speicherort Ihres dynamischen Angebots ein. Sie müssen diesen Speicherort später in Ihrer Target-Aktivität auswählen.
-* **[!UICONTROL Landingpage]**: Wenn das Standardbild zu einer standardmäßigen Landingpage weiterleiten soll. Diese URL gilt nur dann, wenn das Standardbild in der letzten E-Mail angezeigt wird und optional ist.
+* **[!UICONTROL Landingpage]**: Wenn das Standardbild zu einer standardmäßigen Landingpage umleiten soll. Diese URL gilt nur dann, wenn das Standardbild in der letzten E-Mail angezeigt wird und optional ist.
 * Stellen Sie im Bereich **[!UICONTROL Zusätzliche Entscheidungsparameter]** das Mapping zwischen den in den Adobe Target-Segmenten definierten Feldern und den Feldern in Adobe Campaign her. Die in Adobe Campaign verwendeten Felder müssen zuvor in der Rawbox angegeben werden. In unserem Beispiel haben wir das Feld &quot;Country&quot; (Land) hinzugefügt.
 
-Wenn Sie in Ihren Einstellungen in Adobe Target Unternehmensberechtigungen verwenden, fügen Sie die entsprechende Eigenschaft in dieses Feld ein. Weitere Informationen zu Unternehmensberechtigungen in Target finden Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html?lang=de).
+Wenn Sie in Ihren Einstellungen in Adobe Target Berechtigungen auf Unternehmensebene verwenden, fügen Sie in diesem Feld die entsprechende Eigenschaft hinzu. Weitere Informationen zu Berechtigungen für Target-Unternehmen finden Sie unter [diese Seite](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html?lang=de).
 
 ![](assets/target_13.png)
 
@@ -85,7 +85,7 @@ In unserem Fall benötigen wir zwei Umleitungsangebote. Das dritte (das Standard
 
 1. Führen Sie dieselben Schritte für das andere Umleitungsangebot durch. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html?lang=de).
 
-## Audiences erstellen {#audiences-target}
+## Zielgruppen erstellen {#audiences-target}
 
 Erstellen Sie in Target die zwei Audiences, in die die Besucher Ihres Angebots unterteilt werden und denen die unterschiedlichen Inhalte präsentiert werden. Fügen Sie für jede Audience eine Regel hinzu, um festzulegen, wer das Angebot sehen kann.
 
@@ -105,7 +105,7 @@ Erstellen Sie in Target die zwei Audiences, in die die Besucher Ihres Angebots u
 
 Wir müssen in Target eine Experience Targeting-Aktivität erstellen, die verschiedenen Erlebnisse definieren und sie mit den entsprechenden Angeboten verknüpfen.
 
-### Definieren der Audience {#defining-the-audience}
+### Zielgruppe definieren {#defining-the-audience}
 
 1. Um eine Experience Targeting-Aktivität zu erstellen, klicken Sie auf dem Tab **[!UICONTROL Aktivitäten]** auf **[!UICONTROL Aktivität erstellen]** und dann auf **[!UICONTROL Experience Targeting]**.
 

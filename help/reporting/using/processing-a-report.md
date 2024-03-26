@@ -9,7 +9,7 @@ exl-id: d133efec-33e1-4711-a90f-e40385059386
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '888'
-ht-degree: 100%
+ht-degree: 88%
 
 ---
 
@@ -45,7 +45,7 @@ Diese Optionen entsprechen denen von Standardberichten. Sie werden auf [dieser S
 
 ## Konfigurieren des Layouts eines beschreibenden Analyseberichts {#configuring-the-layout-of-a-descriptive-analysis-report}
 
-Sie können die Anzeige und Anordnung Ihrer Daten in den Grafiken und Tabellen anpassen. Gehen Sie hierzu ausgehend vom Explorer in den Tab **[!UICONTROL Bearbeiten]** des Berichts, den Sie anpassen möchten.
+Sie können die Anzeige und das Layout Ihrer Daten in den Diagrammen und Tabellen der deskriptiven Analyse personalisieren. Auf alle Optionen kann über die Adobe Campaign-Struktur im **[!UICONTROL Bearbeiten]** jedes Berichts.
 
 ### Anzeigemodus des Analyseberichts {#analysis-report-display-mode}
 
@@ -71,7 +71,7 @@ Der angegebene Titel erscheint im Bericht.
 
 ![](assets/s_ncs_advuser_report_display_07.png)
 
-Wenn Sie die Anzeigeoption der Titel und Zwischensummen jedoch abwählen, erscheinen diese nicht im Bericht. Der Name erscheint dennoch beim Überfahren einer Zelle der Tabelle mit dem Mauszeiger.
+Wenn Sie die Anzeigeoption der Titel und Zwischensummen jedoch abwählen, erscheinen diese nicht im Bericht. Der Name erscheint dennoch beim Überfahren einer Zelle der Tabelle mit dem Mauszeiger in einer QuickInfo.
 
 ![](assets/s_ncs_advuser_report_display_08.png)
 
@@ -100,18 +100,18 @@ Um zur ursprünglichen Anzeige zurückzukehren, aktualisieren Sie die Ansicht.
 
 ### Grafikoptionen in Analyseberichten {#analysis-report-chart-options}
 
-Auch die Anzeige der Daten einer Grafik kann vom Benutzer angepasst werden. Klicken Sie hierzu bei der Grafiktyp-Auswahl auf den Link **[!UICONTROL Grafikparameter...]**.
+Die Anzeige der Daten im Diagramm kann personalisiert werden. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Variablen...]** -Link, der während der Diagrammtyp-Auswahl verfügbar ist.
 
 ![](assets/s_ncs_advuser_report_wizard_3c.png)
 
 Folgende Optionen stehen zur Verfügung:
 
 * Im oberen Abschnitt des Fensters kann der Anzeigebereich der Grafik verändert werden.
-* Standardmäßig werden die Titel in der Grafik angezeigt. Um sie auszublenden, deaktivieren Sie die Option **[!UICONTROL Werte anzeigen]**.
+* Standardmäßig werden Beschriftungen im Diagramm angezeigt. Sie können sie ausblenden, indem Sie die Option **[!UICONTROL Werte anzeigen]** -Option.
 * Die Option **[!UICONTROL Werte kumulieren]** ermöglicht das Addieren der unterschiedlichen, von einer Serie zur anderen zurückgegebenen Werte.
 * Die Legende der Grafik kann durch Deaktivieren der entsprechenden Option ausgeblendet werden. Die Legende wird standardmäßig außerhalb der Grafik oben rechts angezeigt.
 
-  Um den Anzeigebereich maximal zu nutzen, kann sie auch innerhalb der Grafik positioniert werden. Aktivieren Sie hierzu die Option **[!UICONTROL In die Grafik einschließen]**.
+  Die Legende kann auch über der Grafik angezeigt werden, um den Anzeigebereich zu sparen. Wählen Sie dazu die Option **[!UICONTROL In die Grafik einschließen]**
 
   Wählen Sie eine senkrechte oder vertikale Ausrichtung in der Dropdown-Liste **[!UICONTROL Legendenposition]** aus.
 

@@ -20,7 +20,7 @@ ht-degree: 1%
 
 ## Inhaltsmodell {#content-model-14}
 
-srcSchema:==(attribute | createdBy | data | element | Auflistung | help | Schnittstelle | Methoden | modifiedBy)
+srcSchema:==(attribute | createdBy | data | element | enumeration | help | Benutzeroberfläche | methods | modifiedBy)
 
 ## Attribute {#attributes-14}
 

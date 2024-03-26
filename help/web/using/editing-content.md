@@ -8,8 +8,8 @@ feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: 968430d6-b1dd-47f8-8b31-39aaa18bc05c
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1251'
-ht-degree: 100%
+source-wordcount: '1255'
+ht-degree: 98%
 
 ---
 
@@ -145,7 +145,7 @@ Mit der Option **Link auf eine externe URL** können Sie festlegen, dass eine UR
 
 ![](assets/dce_toolbar_imgblock_externallink.png)
 
-Geben Sie die Link-Adresse in das Feld **URL** in diesem Format ein: **https://www.myURL.com**.
+Geben Sie die betreffende Linkadresse in das **URL** -Feld. Das URL-Feld sollte wie folgt eingegeben werden: **https://www.myURL.com**.
 
 ### Link auf eine Web-Anwendung {#link-to-a-web-application}
 

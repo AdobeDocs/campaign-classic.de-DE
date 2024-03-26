@@ -8,8 +8,8 @@ feature: SMS, Troubleshooting
 role: User
 exl-id: 841f0c2f-90ef-4db0-860a-75fc7c48804a
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
-workflow-type: ht
-source-wordcount: '2756'
+workflow-type: tm+mt
+source-wordcount: '2767'
 ht-degree: 100%
 
 ---
@@ -132,7 +132,7 @@ Beheben von Problemen mit der Verbindungsstabilität:
 
 * Wenn alle diese Schritte funktionieren, können Sie sicher sein, dass das Problem auf der Seite des Providers liegt. Er muss dann die Fehlersuche auf seiner Plattform durchführen.
 
-* Wenn es funktioniert, der Durchsatz jedoch inkonsistent ist, versuchen Sie, das Übertragungsfenster anzupassen und den MT-Durchsatz zu verringern. Für diese Anpassung müssen Sie mit dem Provider zusammenarbeiten. Adobe Campaign kann Nachrichten sehr schnell senden, so dass Leistungsprobleme auf den Geräten des Providers auftreten können.
+* Wenn es funktioniert, der Durchsatz jedoch inkonsistent ist, versuchen Sie, das Übertragungsfenster anzupassen und den MT-Durchsatz zu verringern. Für diese Anpassung müssen Sie mit dem Provider zusammenarbeiten. Adobe Campaign kann Nachrichten sehr schnell senden, so dass Performance-Probleme auf den Geräten des Providers auftreten können.
 
 ## MT wird dupliziert (dieselbe SMS wird mehrmals hintereinander gesendet){#duplicated-MT}
 
@@ -258,7 +258,7 @@ In einigen Fällen ist die Aufzeichnung des Netzwerk-Traffic nicht erforderlich.
 
 * TLS aktiviert: Der TLS-Traffic ist von vornherein verschlüsselt, sodass er nicht aufgezeichnet werden kann.
 
-* Leistungsprobleme: Die Logs enthalten alle erforderlichen Informationen zum Verfolgen von Leistungsproblemen.
+* Performance-Probleme: Die Logs enthalten alle erforderlichen Informationen zum Verfolgen von Performance-Problemen.
 
 * Timing-Probleme (`retry timing`, `enquire_link`-Zeitraum, Durchsatzbegrenzung usw.)
 

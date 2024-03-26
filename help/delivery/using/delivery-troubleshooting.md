@@ -1,16 +1,16 @@
 ---
 product: campaign
 title: Fehlerbehebung beim Versand
-description: Erfahren Sie mehr über die Versandleistung und wie Sie Probleme beim Versand-Monitoring beheben können
+description: Erfahren Sie mehr über die Versand-Performance und wie Sie Probleme beim Versand-Monitoring beheben können
 badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Monitoring, Deliverability, Troubleshooting
 role: User
 exl-id: 37b1d7fb-7ceb-4647-9aac-c8a80495c5bf
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: ht
-source-wordcount: '811'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '812'
+ht-degree: 79%
 
 ---
 
@@ -32,11 +32,11 @@ Nach dem Klicken auf die Schaltfläche **[!UICONTROL Senden]** dauert der Versan
 
 * Einige E-Mail-Anbieter haben Ihre IP-Adressen möglicherweise auf eine Blockierungsliste gesetzt. In diesem Fall überprüfen Sie Ihre Broadlogs und konsultieren Sie [diesen Abschnitt](about-deliverability.md).
 
-* Ihr Versand könnte für eine rasche Verarbeitung zu groß sein. Dies kann passieren, wenn eine umfassende JavaScript-Personalisierung vorliegt oder die Versandgröße mehr als 60 KB beträgt. Nähere Informationen zu den Inhaltsrichtlinien finden Sie im Adobe Campaign-Handbuch [Best Practices beim Versand](delivery-best-practices.md).
+* Ihr Versand ist möglicherweise zu groß, um schnell verarbeitet werden zu können. Dies kann bei hoher JavaScript-Personalisierung auftreten oder wenn Ihr Versand mehr als 60 KB wiegt. Siehe Adobe Campaign [Best Practices beim Versand](delivery-best-practices.md) , um mehr über Inhaltsrichtlinien zu erfahren.
 
 * Der Versand könnte im MTA (Message Transfer Agent) von Adobe Campaign gedrosselt worden sein. Dies kann folgende Ursachen haben:
 
-   * Nachricht in die Warteschlange gestellt (Meldung **[!UICONTROL Kontingente ausgeschöpft]**): Kontingente, die durch die in Campaign festgelegten deklarativen MX-Regeln angegebenen wurden, wurden ausgeschöpft. Weitere Informationen zu dieser Meldung finden Sie auf [dieser Seite](deliverability-faq.md). Weitere Informationen zu MX-Regeln finden Sie in [diesem Abschnitt](../../installation/using/email-deliverability.md#about-mx-rules).
+   * Nachricht in die Warteschlange gestellt (**[!UICONTROL Kontingente ausgeschöpft]** message): Die von den in Campaign definierten MX-Regeln deklarierten Kontingente wurden erfüllt. Weitere Informationen zu dieser Nachricht finden Sie unter [diese Seite](deliverability-faq.md). Weitere Informationen zu MX-Regeln finden Sie in [diesem Abschnitt](../../installation/using/email-deliverability.md#about-mx-rules).
 
    * Nachricht in die Warteschlange gestellt (Fehlermeldung **[!UICONTROL dynamische Durchsatzkontrolle]**): Vom Campaign MTA wurden beim Sendeversuch an einen ISP Fehler entdeckt, weshalb der Versand verlangsamt wurde, um die Fehlerdichte zu verringern und zu vermeiden, dass die IP-Adresse auf eine Blockierungsliste gesetzt wird.
 
@@ -70,11 +70,11 @@ Versandlogs liefern wichtige Informationen über den Grund von fehlgeschlagenen 
   Error during the call of method 'AppendDeliveryPart' on the mid sourcing server: 'Communication error with the server: please check this one is correctly configured. Code HTTP 408 'Service temporarily unavailable'.
   ```
 
-  Die Ursache hierfür sind Leistungsprobleme. Dieser Fehler tritt auf, wenn die Marketing-Instanz zu lange für die Datenerfassung benötigt, bevor diese an den Mid-Sourcing-Server gesendet werden.
+  Die Ursache hierfür sind Performance-Probleme. Dieser Fehler tritt auf, wenn die Marketing-Instanz zu lange für die Datenerfassung benötigt, bevor diese an den Mid-Sourcing-Server gesendet werden.
 
-  Um dieses Problem zu beheben, wird empfohlen, einen Vacuum-Befehl und eine Neuindizierung der Datenbank durchzuführen. Weiterführende Informationen zur Wartung der Datenbank finden Sie in [diesem Abschnitt](../../production/using/recommendations.md).
+  Um dies zu beheben, empfehlen wir, ein Vakuum und eine Neuindizierung in der Datenbank durchzuführen. Weitere Informationen zur Datenbankwartung finden Sie unter [diesem Abschnitt](../../production/using/recommendations.md).
 
-  Zusätzlich sollten Sie alle Workflows mit einer terminierten Aktivität und alle Workflows mit fehlgeschlagenem Status neu starten. Weiterführende Informationen dazu finden Sie in [diesem Abschnitt](../../workflow/using/scheduler.md).
+  Sie sollten auch alle Workflows mit einer geplanten Aktivität und alle Workflows mit dem Status &quot;Fehlgeschlagen&quot;neu starten. Weitere Informationen finden Sie in [diesem Abschnitt](../../workflow/using/scheduler.md).
 
 * Wenn ein Versand fehlschlägt, kann der folgende Fehler in den Versandlogs angezeigt werden:
 
@@ -84,7 +84,7 @@ Versandlogs liefern wichtige Informationen über den Grund von fehlgeschlagenen 
 
   Normalerweise bedeutet dieser Fehler, dass es in der E-Mail ein Personalisierungsfeld oder einen Gestaltungsbaustein gibt, der für einen Empfänger mehr als einen Datensatz abruft.
 
-  Um dieses Problem zu beheben, überprüfen Sie die verwendeten Personalisierungsdaten und danach den Zieldatensatz für die Empfänger, für deren Feld mehr als ein Eintrag vorhanden ist. Sie können vor der Versandaktivität auch die Aktivität **[!UICONTROL Deduplizierung]** im Zielgruppen-Workflow auswählen, damit immer nur ein einziges Personalisierungsfeld verwendet wird. Weitere Informationen zur Deduplizierung finden Sie auf [dieser Seite](../../workflow/using/deduplication.md).
+  Um dieses Problem zu beheben, überprüfen Sie die verwendeten Personalisierungsdaten und danach die Zielgruppe auf Empfänger, für die in einem dieser Felder mehr als ein Eintrag vorhanden ist. Sie können auch eine **[!UICONTROL Deduplizierung]** im Zielgruppen-Workflow vor der Versandaktivität, um zu überprüfen, ob immer nur ein Personalisierungsfeld vorhanden ist. Weitere Informationen zur Deduplizierung finden Sie unter [diese Seite](../../workflow/using/deduplication.md).
 
 * Manche Sendungen können fehlschlagen und eine &quot;Unerreichbar&quot;-Fehlermeldung mit folgenden Informationen anzeigen:
 

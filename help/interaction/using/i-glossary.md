@@ -11,7 +11,7 @@ exl-id: 9e199b7c-9307-4797-bf86-7940388555bc
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '1129'
-ht-degree: 100%
+ht-degree: 89%
 
 ---
 
@@ -23,10 +23,10 @@ Nachfolgend werden die wichtigsten Fachbegriffe aus Interaction erläutert.
 
 * **Umgebung**: Einheit aus Angebotskatalog und Integrationspunkten (Platzierungen). Eine Umgebung wird einer Zielgruppendimension zugeordnet. Es gibt zwei verschiedene Umgebungstypen:
 
-   * **Angebote - Design**: Umgebung, in der Angebote erstellt sowie Typologieregeln definiert werden, die darüber entscheiden, ob ein bestimmtes Angebot einer Zielperson unterbreitet wird oder nicht. Des Weiteren werden hier sowohl die Tabelle der in der Angebotszielgruppe enthaltenen Individuen als auch die Tabelle, in der die Angebotsvorschläge gespeichert werden, angegeben. Der Knoten **[!UICONTROL Angebote - Design]** enthält in Unterverzeichnissen diverse Umgebungen, vordefinierte Filter und Angebotskataloge. Jedes **[!UICONTROL Angebote - Design]**-Ereignis entspricht einer aus ihr erzeugten **[!UICONTROL Live-Umgebung]******.
-   * **Live-Umgebung**: Aus einem **[!UICONTROL Angebote - Design]**-Ereignis entstandene schreibgeschützte Umgebung, welche die Angebote enthält, deren Inhalt und Eignung in **[!UICONTROL Angebote - Design]** erstellt und validiert wurden. Die Angebote können an dieser Stelle nicht mehr geändert werden und sind dazu bestimmt, beispielsweise auf einer Webseite oder in einem Versand unterbreitet zu werden.
+   * **Design-Umgebung**: Umgebung, in der Angebote erstellt und/oder Typologieregeln definiert werden (Regeln, die bestimmen, welche Angebote einer Zielperson unterbreitet werden sollen oder nicht). Die Tabelle der Kontakte, die von den Angeboten angesprochen werden sollen, und die Tabelle zum Speichern aller Angebotsvorschläge werden ebenfalls definiert. Der Knoten **[!UICONTROL Design-Umgebung]** enthält Platzierungs-Unterordner, vordefinierte Filter und Angebotskategorien. Für jede **[!UICONTROL Design-Umgebung]** besteht eine entsprechende schreibgeschützte **[!UICONTROL Live-Umgebung]**, die aus derselben **[!UICONTROL Design-Umgebung]** erzeugt wird.
+   * **Live-Umgebung**: Umgebung, die mit einer **[!UICONTROL Design-Umgebung]**. Sie enthält schreibgeschützte Angebote, deren Inhalte und Eignung in der **[!UICONTROL Design-Umgebung]** genehmigt wurden. Sie werden ausgewählt, um auf einer Website angezeigt oder in eine Nachricht eingefügt zu werden.
 
-* **Platzierung**: Ordner, in dem bestimmt wird, wo ein Angebot integriert werden werden soll. Über die Platzierung wird insbesondere der zu verwendende Kanal festgelegt, aber auch die Möglichkeit, ob der Einzelmodus genutzt werden kann (standardmäßig kommt nur der Batch-Modus zum Einsatz). Des Weiteren können hier mithilfe von Darstellungsfunktionen Angebotsinhalte erstellt und Angebotsthemen definiert werden. Eine Platzierung bildet somit die Schnittstelle zwischen dem Angebotsmodul und den diversen Kanälen.
+* **Platzierung**: Ordner, der festlegt, wo das Angebot gezeigt wird. Wenn Sie eine Platzierung definieren, können Sie den verwendeten Kanal angeben, angeben, ob er im Einzelmodus verwendet werden kann (standardmäßig nur im Batch-Modus), den Inhalt des Angebots mithilfe von Rendering-Funktionen erstellen und das Angebot der vorgeschlagenen Angebote angeben. Eine Platzierung ist eine Schnittstelle zwischen dem Kanal und dem Angebotsmodul.
 
   >[!IMPORTANT]
   >
@@ -63,9 +63,9 @@ Nachfolgend werden die wichtigsten Fachbegriffe aus Interaction erläutert.
      >Nicht identifizierbare anonyme Kontakte werden der Zielgruppendimension der Besucher zugeordnet.
 
 * **Ausgehende Interaktion**: Auf einer Kontaktliste (verwendet für den E-Mail-Versand, für Briefpost etc.) basierende Abfrage des Angebotsmoduls. Regeln und Prozesse gelten jeweils für alle Kontakte. Dieser Interaktionstyp wird in der Regel im Batch-Modus verarbeitet.
-* **Eingehende Interaktion**: Abfrage des Angebotsmoduls aufgrund einer von einem Kontakt ausgehenden Aktion auf einem Kanal (Webseitenbesuch, Anruf im Callcenter). Dieser Interaktionstyp wird in der Regel im Einzelmodus verarbeitet.
-* **Batch-Modus**: Im Batch-Modus wird das beste Angebot für eine Gruppe von Kontakten ausgewählt. Eignungs- und Prioritätsregeln werden auf alle Kontakte der Gruppe angewendet. Dieser Modus kommt in der Regel bei ausgehenden Interaktionen zum Einsatz.
-* **Einzelmodus**: Pro Vorgang wird ein einzelner Kontakt verarbeitet. Dieser Modus kommt in der Regel bei eingehenden Interaktionen oder bei Transaktionsnachrichten zum Einsatz.
+* **Eingehende Interaktionen**: Interaktion nach einem eingehenden Aufruf, der durch die Aktion eines Kontakts im Kanal generiert wurde. Diese Art von Interaktion wird im Allgemeinen im Einzelmodus verarbeitet.
+* Im **Batch-Modus** können Sie das beste Angebot für eine Gruppe von Kontakten auswählen. Eignungs-/Prioritätsregeln werden auf alle Kontakte der Gruppe angewendet. Dieser Modus wird im Allgemeinen für ausgehende Interaktionen verwendet.
+* **Einzelmodus**: Zu einem gegebenen Zeitpunkt wird jeweils ein Kontakt verarbeitet. Dieser Modus wird im Allgemeinen für eingehende Interaktionen und Transaktionsnachrichten verwendet.
 * **Identifikationsmodus**: bezieht sich auf den Status eines Kontakts:
 
    * **[!UICONTROL explizit]**: Der Kontakt konnte identifiziert werden, da er sich in der Kanalschnittstelle mit seinen Kundendaten angemeldet hat.

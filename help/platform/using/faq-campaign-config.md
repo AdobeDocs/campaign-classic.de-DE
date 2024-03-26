@@ -10,8 +10,8 @@ topic-tags: starting-with-adobe-campaign
 exl-id: 50bed489-2a0f-4123-a326-3d68c8295662
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '775'
-ht-degree: 100%
+source-wordcount: '769'
+ht-degree: 96%
 
 ---
 
@@ -27,7 +27,7 @@ Die Sprache von Campaign wird zum Zeitpunkt der Instanzenerstellung gewählt. Da
 
 Die Benutzeroberfläche von Adobe Campaign ist in vier Sprachen verfügbar: Englisch, Französisch, Deutsch und Japanisch. Bitte beachten Sie, dass für die Clientkonsole und den Server dieselbe Sprache gewählt werden muss. Jede Campaign-Instanz kann nur in einer einzigen Sprache ausgeführt werden.
 
-Für Englisch können Sie bei der Installation von Campaign entweder die US-amerikanische oder britische Variante wählen. Die beiden Varianten unterscheiden sich durch ihr Datums- und Uhrzeitformat. Weiterführende Informationen zu den Unterschieden finden Sie in [diesem Abschnitt](../../platform/using/adobe-campaign-workspace.md#date-and-time).
+Für Englisch können Sie bei der Installation von Campaign entweder US English oder UK English auswählen: Sie unterscheiden sich in den Formaten Datum und Uhrzeit. Weitere Informationen zu diesen Unterschieden finden Sie unter [diesem Abschnitt](../../platform/using/adobe-campaign-workspace.md#date-and-time).
 
 ## Kann ich Campaign Classic mit anderen Adobe-Lösungen kombinieren? {#can-i-use-campaign-classic-with-other-adobe-solutions-}
 

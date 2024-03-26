@@ -8,7 +8,7 @@ exl-id: 4872f756-14d7-4e37-a9cf-b929c77e34ca
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '200'
-ht-degree: 100%
+ht-degree: 72%
 
 ---
 
@@ -28,6 +28,6 @@ Im Feld **[!UICONTROL Dauer]** können, wenn in den regionalen Parametern des Be
 
   Die Standardeinheit ist **T** für Tag.
 
-* Wenn die regionalen Parameter für Deutschland definiert wurden, sind folgende Einheiten zu verwenden: **s** für Sekunden, **min** für Minuten, **h** für Stunden, **T** für Tage, **M** für Monate und **J** für Jahre. Sobald die Eingabe validiert wird, wird der Wert in die am besten lesbare Einheit umgewandelt. So wurde in oben stehender Abbildung die Eingabe **90s** in **1 min 30 s** umgewandelt.
+* Wenn beispielsweise die regionalen Gegebenheiten auf &quot;Français&quot; gesetzt werden, **s** für Sekunden, **mn** für Minuten, **h** für Stunden, **j** für Tage, **m** für Monate, **a** für Jahre. Zum Zeitpunkt der Validierung wird der Wert automatisch in die am besten lesbare Einheit konvertiert, wie im obigen Beispiel **90 s** wurde in **1 min 30 s**.
 
   Die Standardeinheit ist **T** für Tag.

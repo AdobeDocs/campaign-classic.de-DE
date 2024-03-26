@@ -8,7 +8,7 @@ topic-tags: technical-workflows
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '171'
-ht-degree: 100%
+ht-degree: 86%
 
 ---
 
@@ -48,7 +48,7 @@ Die folgenden Workflows werden standardmäßig mit dem Modul **Kampagne** instal
   <tr> 
    <td> <span class="uicontrol">Kampagnenvorgänge</span> <br /> </td> 
    <td> <span class="uicontrol">operationMgt</span> <br /> </td> 
-   <td> Verwaltet Vorgänge in Marketing-Kampagnen (Zielgruppenbestimmung, Dateiextraktion etc.). Erstellt darüber hinaus Workflows für wiederkehrende und periodische Kampagnen.<br /> </td> 
+   <td> Verwaltet Vorgänge für Marketingkampagnen (Zielgruppenbestimmung, Dateiextraktion etc.). Außerdem werden Workflows erstellt, die sich auf wiederkehrende und periodische Kampagnen beziehen.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Bearbeitungsvorgänge bezüglich der Dienstleister</span> <br /> </td> 

@@ -7,8 +7,8 @@ feature: Workflows, Data Management
 exl-id: 39cec42a-c7ac-41b1-8f61-799b559ce002
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1067'
-ht-degree: 100%
+source-wordcount: '1071'
+ht-degree: 89%
 
 ---
 
@@ -66,7 +66,7 @@ Die Daten stammen aus der Datei &quot;Verkauf.txt&quot;
 
    ![](assets/uc2_enrich_collecteur.png)
 
-   Die Aktivität ist auch in der Lage, dass Nicht-Vorhandensein von Dateien im bezeichneten Verzeichnis zu verarbeiten. Kreuzen Sie hierfür die Option **Fehlen von Dateien verarbeiten** an. Die in diesem Workflow enthaltene **[!UICONTROL Warten]**-Aktivität löst einen erneuten Abrufversuch aus, wenn zuvor keine Datei im angegebenen Verzeichnis enthalten war.****
+   Die **Datei-Wächter** -Aktivität können Sie das Fehlen einer Datei im Quellverzeichnis verwalten. Überprüfen Sie dazu die **[!UICONTROL Fehlen von Dateien bearbeiten]** -Option. In diesem Workflow wird ein **Warten** wurde hinzugefügt, um eine weitere Dateierfassung auszuprobieren, wenn sie zum Zeitpunkt der Sammlung im Verzeichnis fehlt.
 
 1. Konfigurieren Sie die Aktivität **Laden (Datei)**, indem Sie eine Beispieldatei angeben, die die gleiche Datenstruktur wie die zu importierenden Daten aufweist.
 
@@ -113,7 +113,7 @@ Nach der Anreicherung stellen sich die Daten der Workflow-Arbeitstabelle wie fol
 
 ## Schritt 2: Schreiben der angereicherten Daten in die Tabelle &quot;Bestellungen&quot; {#step-2--writing-enriched-data-to-the--purchases--table}
 
-In diesem Schritt werden die importierten und angereicherten Daten in die &quot;Verkauf&quot;-Tabelle geschrieben. Dies geschieht mithilfe der Aktivität **Datenaktualisierung**.
+In diesem Schritt wird beschrieben, wie die importierten und angereicherten Daten in die &quot;Verkauf&quot;-Tabelle geschrieben werden. Dazu müssen wir eine **Daten aktualisieren** -Aktivität.
 
 Vor der Aktualisierung sind die Daten der Workflow-Arbeitstabelle mit denen aus der Zielgruppendimension **Verkauf** abzustimmen.****
 
@@ -121,7 +121,7 @@ Vor der Aktualisierung sind die Daten der Workflow-Arbeitstabelle mit denen aus 
 1. Wählen Sie die Zieldimension, im vorliegenden Beispiel also das Schema &#39;Verkauf&#39;, aus.
 1. Geben Sie einen Quellausdruck für die Daten der Workflow-Arbeitstabelle an (hier &quot;NameGeschäft&quot;).
 1. Geben Sie dann einen Zielausdruck für die Daten der Verkauf-Tabelle an (hier &quot;NameGeschäft&quot;).
-1. Aktivieren Sie die Option **[!UICONTROL Nicht zugeordnete Daten aus der Arbeitstabelle beibehalten]**.
+1. Aktivieren Sie die Option **[!UICONTROL Nicht abgestimmte Daten aus der Arbeitstabelle beibehalten]**.
 
 ![](assets/uc2_enrich_reconciliation.png)
 
@@ -130,7 +130,7 @@ Konfigurieren Sie die **Datenaktualisierung**-Aktivität wie folgt:
 1. Aktivieren Sie im Feld **[!UICONTROL Aktionstyp]** die Option **[!UICONTROL Hinzufügen oder aktualisieren]**, um zu vermeiden, dass bei jedem Datenabruf neue Datensätze erstellt werden.
 1. Geben Sie bei der Option **[!UICONTROL Datensatz-Identifizierung]** den Wert **[!UICONTROL Über die Zielgruppendimension]** an.
 1. Wählen Sie als **[!UICONTROL Dokumenttyp]** das Schema &quot;Verkauf&quot; aus.
-1. Definieren Sie die zu aktualisierenden Felder. Geben Sie hierzu in der Spalte **[!UICONTROL Ziel]** die Felder des Schemas &quot;Verkauf&quot; und in der Spalte **[!UICONTROL Ausdruck]** die entsprechenden Felder der Workflow-Arbeitstabelle an, um die Felder zu mappen.
+1. Geben Sie die Liste der zu aktualisierenden Felder an. Die **[!UICONTROL Ziel]** -Spalte können Sie die Felder des Schemas &quot;Verkauf&quot; definieren. Die **[!UICONTROL Ausdruck]** -Spalte können Sie die Felder der Arbeitstabelle auswählen, um eine Zuordnung vorzunehmen.
 1. Aktivieren Sie die Option **[!UICONTROL Ausgehende Transition erzeugen]**.
 
 ![](assets/uc2_enrich_miseajour.png)

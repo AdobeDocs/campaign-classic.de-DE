@@ -8,8 +8,8 @@ feature: Surveys
 exl-id: 8d83dfd5-70ec-4656-965b-f6b5e6f9eec1
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '832'
-ht-degree: 100%
+source-wordcount: '834'
+ht-degree: 71%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 In diesem Abschnitt werden die Erstellung eines Formulars vom Typ **Umfrage** in Adobe Campaign sowie die verfügbaren Optionen und Konfigurationen beschrieben. Mit Adobe Campaign können Sie diese Umfrage Benutzern zur Verfügung stellen sowie Antworten erfassen und in der Datenbank archivieren.
 
-Der Zugriff auf Webformulare erfolgt über den Knoten **[!UICONTROL Ressourcen > Online > Webanwendungen]** des Baums. Wählen Sie zur Erstellung einer neuen Umfrage oberhalb der Liste der Anwendungen die Schaltfläche **[!UICONTROL Neu]** aus oder rechtsklicken Sie auf die Liste und wählen Sie **[!UICONTROL Neu]** aus.
+Der Zugriff auf Webformulare erfolgt über die **[!UICONTROL Ressourcen > Online > Webanwendungen]** Knoten des Baums. Um eine Umfrage zu erstellen, klicken Sie auf die **[!UICONTROL Neu]** oberhalb der Liste der Anwendungen oder klicken Sie mit der rechten Maustaste auf die Liste und wählen Sie **[!UICONTROL Neu]**.
 
 Wählen Sie die Umfragenvorlage (standardmäßig **[!UICONTROL newSurvey]**) aus.
 
@@ -35,7 +35,7 @@ Die Seiten des Formulars werden mit einem speziellen Editor erstellt, der die De
 
 ## Felder hinzufügen {#adding-fields}
 
-Über Formularfelder können Benutzer Informationen eingeben und Optionen auswählen. Diese Felder werden für jede Formularseite mit der ersten Schaltfläche der Symbolleiste im Menü **[!UICONTROL Mit Hilfe des Assistenten hinzufügen]** erstellt.
+Die Felder in einem Formular ermöglichen es Benutzern, Informationen einzugeben und Optionen auszuwählen. Sie werden für jede Formularseite über die erste Schaltfläche in der Symbolleiste mit der **[!UICONTROL Mithilfe des Assistenten hinzufügen]** Menü.
 
 ![](assets/s_ncs_admin_survey_add_field_menu.png)
 
@@ -47,7 +47,7 @@ Die Seiten des Formulars werden mit einem speziellen Editor erstellt, der die De
 
 Beim Hinzufügen eines Felds zu einer Umfrage müssen Sie den Typ des Felds auswählen. Die folgenden Optionen sind verfügbar:
 
-1. **[!UICONTROL Frage beantworten]**: Mit dieser Option können Sie ein neues Feld zum Speichern von Antworten festlegen („Archiviertes Feld“ genannt). In diesem Fall werden alle erfassten Werte gespeichert, auch wenn ein Besucher ein Formular mehr als einmal ausfüllt. Dieser Speichermodus ist nur in **Fragebögen** verfügbar. [Weitere Informationen](../../surveys/using/managing-answers.md#storing-collected-answers).
+1. **[!UICONTROL Eine Frage beantworten]**: Mit dieser Option können Sie ein neues Feld zum Speichern von Antworten deklarieren (auch &quot;archiviertes Feld&quot;genannt). In diesem Fall werden alle erfassten Werte gespeichert, auch wenn ein Teilnehmer das Formular mehrmals ausfüllt. Dieser Speichermodus ist nur verfügbar in **Umfragen**. [Weitere Informationen](../../surveys/using/managing-answers.md#storing-collected-answers).
 1. **[!UICONTROL Empfänger bearbeiten]**: Mit dieser Option können Sie ein Feld in der Datenbank auswählen. In diesem Fall werden die Antworten des Besuchers in diesem Feld gespeichert. Für jeden Besucher wird nur der jeweils letzte Wert gespeichert und zu den Profildaten hinzugefügt.
 1. **[!UICONTROL Variable hinzufügen]**: Mit dieser Option können Sie die Umfrage so einrichten, dass die Informationen nicht in der Datenbank gespeichert werden. Die lokalen Variablen können entweder in vorgelagerten Schritten festgelegt oder direkt bei der Erstellung des Felds hinzugefügt werden.
 1. **[!UICONTROL Existierende Frage importieren]**: Mit dieser Option können Sie bereits vorhandene, in anderen Umfragen erstellte Fragen importieren.
@@ -56,7 +56,7 @@ Beim Hinzufügen eines Felds zu einer Umfrage müssen Sie den Typ des Felds ausw
    >
    >Speichermodi und Feldimporte werden in [diesem Abschnitt](../../surveys/using/managing-answers.md#storing-collected-answers) beschrieben.
 
-Der Typ des Felds, das hinzugefügt werden kann (Dropdown-Liste, Textfeld, Checkboxes etc.), hängt vom ausgewählten Speichermodus ab. Der Feldtyp kann im Feld **[!UICONTROL Typ]** im Tab **[!UICONTROL Allgemein]** geändert werden. Achten Sie dabei aber darauf, dass der Feldtyp zum Datentyp passt.
+Die Art des hinzuzufügenden Felds (Dropdown-Liste, Textfeld, Kontrollkästchen usw.) hängt vom ausgewählten Speichermodus ab. Sie können sie mithilfe des **[!UICONTROL Typ]** des **[!UICONTROL Allgemein]** angezeigt, achten Sie jedoch darauf, dass sie mit dem Datentyp konsistent bleiben.
 
 ![](assets/s_ncs_admin_survey_change_type.png)
 
@@ -68,7 +68,7 @@ Online-Umfragen basieren auf den Funktionen von Web-Anwendungen. Im Folgenden we
 
 ### Multiple Choice {#multiple-choice}
 
-Für Steuerelemente vom Typ **[!UICONTROL Multiple Choice]** können Sie eine Mindest- und Höchstanzahl von Auswahlmöglichkeiten definieren. Beispielsweise ermöglicht Ihnen diese Option, die Auswahl von mindestens **zwei** und höchstens **vier** Werten aus den verfügbaren Optionen zu erzwingen:
+Für **[!UICONTROL Multiple Choice]** Steuerelemente vom Typ können Sie eine Mindest- und Höchstanzahl von Auswahlmöglichkeiten definieren. Beispielsweise können Sie mit dieser Option die Auswahl auf mindestens **2** -Werte und höchstens **4** Werte aus den verfügbaren Optionen:
 
 ![](assets/s_ncs_admin_survey_multichoice_ex1.png)
 
@@ -105,7 +105,7 @@ Mit einem **Frage**-Container können Sie eine Frage zur Seite hinzufügen und d
 
 ![](assets/s_ncs_admin_question_label.png)
 
-Der Titel der Frage wird im Titelfeld eingetragen. In diesem Fall wird der Stil des Formular-Stylesheets übernommen. Wählen Sie die Option **[!UICONTROL Titel im HTML-Format angeben]** aus, um die Frage zu personalisieren. Dadurch erhalten Sie Zugriff auf den HTML-Editor.
+Der Titel der Frage wird im Titelfeld eingetragen. In diesem Fall wird der Stil des Formularstils angewendet. Wählen Sie die **[!UICONTROL Titel im HTML-Format eingeben]** zur Personalisierung. Dadurch erhalten Sie Zugriff auf den HTML-Editor.
 
 >[!NOTE]
 >

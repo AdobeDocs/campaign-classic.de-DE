@@ -11,7 +11,7 @@ exl-id: 965c4a6a-6535-454d-bd37-e9c8312b4d13
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '496'
-ht-degree: 100%
+ht-degree: 73%
 
 ---
 
@@ -28,7 +28,7 @@ Interaction arbeitet mit zwei Angebotsumgebungstypen:
 
 ![](assets/offer_environments_overview_001.png)
 
-Jeder **[!UICONTROL Design-Umgebung]** entspricht eine **[!UICONTROL Live-Umgebung]**. Nach Erstellung eines Angebots unterlaufen sein Inhalt und die konfigurierten Eignungsregeln einen Validierungszyklus, nach dessen erfolgreichem Abschluss das Angebot automatisch für die **[!UICONTROL Live-Umgebung]** bereitgestellt wird. Nun kann es in Sendungen verwendet werden.
+Jeder **[!UICONTROL Design]** -Umgebung mit einer **[!UICONTROL Live]** Umgebung. Nach Abschluss eines Angebots werden Inhalt und Eignungsregeln einem Validierungszyklus unterzogen. Sobald dieser Zyklus abgeschlossen ist, wird das betreffende Angebot automatisch für die **[!UICONTROL Live]** Umgebung. Ab diesem Zeitpunkt ist es für den Versand verfügbar.
 
 Standardmäßig verfügt Campaign über eine **[!UICONTROL Design]**-Umgebung und eine **[!UICONTROL Live]**-Umgebung, die mit der Design-Umgebung verknüpft ist. Beide Umgebungen sind für die integrierte Empfängertabelle vorkonfiguriert.
 
@@ -38,13 +38,13 @@ Standardmäßig verfügt Campaign über eine **[!UICONTROL Design]**-Umgebung un
 
 ![](assets/offer_environments_overview_002.png)
 
-Angebots- und versandverantwortliche Benutzer greifen auf unterschiedliche Weise auf die Umgebungen zu. Versandverantwortliche haben nur Lesezugriff auf die **[!UICONTROL Design-Umgebung]**, deren Angebote sie in Sendungen verwenden können. Angebotsverantwortliche hingegen haben Schreibzugriff auf die **[!UICONTROL Design-Umgebung]**, aber nur Lesezugriff auf die **[!UICONTROL Live-Umgebung]**. Weitere Informationen hierzu finden Sie im Abschnitt [Benutzerprofile](../../interaction/using/operator-profiles.md).
+Angebotsverantwortliche und Versand-Manager haben Zugriff auf verschiedene Umgebungsansichten. Versandverantwortliche Benutzer können nur die **[!UICONTROL Live]** Angebotsumgebungen anzubieten und Angebote zu nutzen, um sie bereitzustellen. Angebotsverantwortliche Benutzer können die **[!UICONTROL Design]** Umgebung und Ansicht des **[!UICONTROL Live]** Umgebung. Weitere Informationen hierzu finden Sie im Abschnitt [Benutzerprofile](../../interaction/using/operator-profiles.md).
 
 ## Erstellen einer Angebotsumgebung {#creating-an-offer-environment}
 
 Standardmäßig wird Interaction mit einer Umgebung geliefert, die für ein Zielgruppenmapping der Empfängertabelle konfiguriert ist, also für Angebote an identifizierte Kontakte. Sollten Sie eine andere Tabelle (beispielsweise die Besuchertabelle für anonyme Angebote oder eine spezifische Empfängertabelle) verwenden wollen, gehen Sie wie folgt vor:
 
-1. Markieren Sie den Knoten **[!UICONTROL Administration]** > **[!UICONTROL Kampagnen]** > **[!UICONTROL Zielgruppen-Mappings]**. Klicken Sie mit der rechten Maustaste auf das Mapping, das Sie verwenden möchten (**[!UICONTROL Besucher]** im Fall von anonymen Angeboten) und wählen Sie im Kontextmenü die Option **[!UICONTROL Aktionen]** > **[!UICONTROL Optionen der Zielgruppendimension ändern...]** aus.
+1. Platzieren Sie den Cursor auf der **[!UICONTROL Administration]** > **[!UICONTROL Kampagnenverwaltung]** > **[!UICONTROL Versandzuordnungen]** Knoten. Klicken Sie mit der rechten Maustaste auf das Versand-Mapping, das Sie verwenden möchten (**[!UICONTROL Besucher]** , wenn Sie anonyme Angebote verwenden möchten) und wählen Sie **[!UICONTROL Aktionen]** > **[!UICONTROL Ändern der Optionen der Zielgruppendimension]**.
 
    ![](assets/offer_env_anonymous_001.png)
 

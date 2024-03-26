@@ -9,8 +9,8 @@ hidefromtoc: true
 exl-id: 88e581cf-43cd-4c43-9347-d016c62fdf42
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1215'
-ht-degree: 100%
+source-wordcount: '1192'
+ht-degree: 83%
 
 ---
 
@@ -56,7 +56,7 @@ Gehen Sie folgendermaßen vor, um die endgültige Audience und ihre zusätzliche
 
    ![](assets/acs_connect_query1.png)
 
-1. Fügen Sie in der Abfrageoption zusätzliche Daten hinzu. Weiterführende Informationen hierzu finden Sie im Abschnitt [Daten hinzufügen](../../workflow/using/query.md#adding-data).
+1. Fügen Sie zusätzliche Daten aus der Abfrage hinzu. Weitere Informationen finden Sie im Abschnitt [Daten hinzufügen](../../workflow/using/query.md#adding-data) Abschnitt.
 
    In diesem Beispiel wird gezeigt, wie ein Aggregat hinzugefügt wird, das zählt, wie viele Sendungen ein Empfänger pro Jahr erhält.
 
@@ -84,9 +84,9 @@ Gehen Sie folgendermaßen vor, um die endgültige Audience und ihre zusätzliche
 
    * Wählen Sie rechts im Fenster **[!UICONTROL Hinzufügen]**.
    * Wählen Sie im Fenster **[!UICONTROL Feldauswahl]** die Schaltfläche **[!UICONTROL Erweiterte Auswahl]** aus.
-   * Wählen Sie **[!UICONTROL Aggregat]** und danach **[!UICONTROL Zählung]** aus. Markieren Sie die Option **[!UICONTROL Unterschiedlich]** und wählen Sie **[!UICONTROL Weiter]** aus.
-   * Wählen Sie in der Felderliste das für die Funktion **Zählung** verwendete Feld aus. Wählen Sie ein Feld aus, das immer befüllt wird, wie z. B. das Feld **[!UICONTROL Primärschlüssel]**, und wählen Sie danach **[!UICONTROL Beenden]** aus.
-   * Ändern Sie den Ausdruck in der Spalte **[!UICONTROL Alias]** in z. B. **NBdeliveries**, um die hinzugefügte Spalte im endgültigen Versand einfach abrufen zu können.
+   * Auswählen **[!UICONTROL Aggregat]**, dann **[!UICONTROL Count]**. Überprüfen Sie die **[!UICONTROL Unterschiedlich]** und klicken Sie auf **[!UICONTROL Nächste]**.
+   * Wählen Sie in der Liste der Felder das für die **Count** -Funktion. Wählen Sie ein Feld aus, das immer ausgefüllt wird, z. B. die **[!UICONTROL Primärer Schlüssel]** und klicken Sie auf **[!UICONTROL Beenden]**.
+   * Ändern Sie den Ausdruck im **[!UICONTROL Alias]** Spalte. Mit diesem Alias können Sie die hinzugefügte Spalte im endgültigen Versand einfach abrufen. Beispiel **NBdeliveries**.
    * Wählen Sie **[!UICONTROL Beenden]** aus und speichern Sie die Konfiguration der Aktivität **[!UICONTROL Abfrage]**.
 
    ![](assets/acs_connect_query7.png)
@@ -109,7 +109,7 @@ Sobald die Zielpopulation definiert ist, können Sie sie in ACS mit der Aktivit�
 
    Die Zielgruppe und ihre zusätzlichen Daten werden in einer Liste in Campaign v7 gespeichert und sofort als eine Audience vom Typ Liste in Campaign Standard freigegeben. Nur die replizierten Profile werden in ACS freigegeben.
 
-Wenn bei der Aktivität **[!UICONTROL Listen-Update]** ein Fehler auftritt, ist möglicherweise die Synchronisation mit Campaign Standard fehlgeschlagen. Um zu sehen, wo der Fehler liegt, gehen Sie zu **[!UICONTROL Administration]** > **[!UICONTROL ACS Connector]** > **[!UICONTROL Prozesse]** > **[!UICONTROL Prüfung]**. Dieser Ordner enthält Synchronisations-Workflows, die von der Aktivität **[!UICONTROL Listen-Update]** ausgelöst wurden. Weitere Informationen finden Sie im Abschnitt [Fehlerbehebung bei ACS Connector](../../integrations/using/troubleshooting-the-acs-connector.md).
+Wenn ein Fehler auf der **[!UICONTROL Listen-Update]** -Aktivität, bedeutet dies, dass die Synchronisierung mit Campaign Standard möglicherweise fehlgeschlagen ist. Um weitere Informationen zu den Fehlern zu erhalten, gehen Sie zu **[!UICONTROL Administration]** > **[!UICONTROL ACS Connector]** > **[!UICONTROL Prozess]** > **[!UICONTROL Diagnose]**. Dieser Ordner enthält Synchronisations-Workflows, die von der **[!UICONTROL Listen-Update]** Aktivitätsausführung. Weitere Informationen finden Sie im Abschnitt [Fehlerbehebung bei ACS Connector](../../integrations/using/troubleshooting-the-acs-connector.md).
 
 ## Daten in Campaign Standard abrufen und in einem Versand verwenden {#retrieve-the-data-in-campaign-standard-and-use-it-in-a-delivery}
 
@@ -122,11 +122,11 @@ Durch die Erstellung eines Versand-Workflows in Campaign Standard können Sie da
 1. Erstellen Sie einen neuen Workflow im Menü **[!UICONTROL Marketing-Aktivitäten]**.
 1. Fügen Sie die Aktivität **[!UICONTROL Zielgruppe lesen]** hinzu und wählen Sie die zuvor von Campaign v7 übertragene Audience aus.
 
-   Mit dieser Aktivität können Daten aus der ausgewählten Audience abgerufen werden. Sie können bei Bedarf auch eine zusätzliche **[!UICONTROL Filterung der Quelle]** anwenden, indem Sie den entsprechenden Tab dieser Aktivität auswählen.
+   Mit dieser Aktivität werden die Daten der ausgewählten Audience abgerufen. Sie können auch eine **[!UICONTROL Quellfilterung]** bei Bedarf mithilfe des entsprechenden Tabs dieser Aktivität.
 
 1. Fügen Sie die Aktivität **[!UICONTROL E-Mail-Versand]** hinzu und konfigurieren Sie sie wie eine übliche [E-Mail-Versand-Aktivität](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/channel-activities/email-delivery.html?lang=de).
 1. Öffnen Sie den Versandinhalt.
-1. Fügen Sie ein Personalisierungsfeld hinzu. Suchen Sie im Popup den Knoten **[!UICONTROL Zusätzliche Daten (targetData)]**. Dieser Knoten enthält die zusätzlichen Audience-Daten, die im anfänglichen Zielgruppen-Workflow erstellt wurden. Sie können sie wie jedes andere Personalisierungsfeld verwenden.
+1. Personalisierungsfeld hinzufügen; Suchen Sie im Popup die **[!UICONTROL Zusätzliche Daten (targetData)]** Knoten. Dieser Knoten enthält die Zusatzdaten der Audience, die im anfänglichen Zielgruppen-Workflow berechnet wurden. Sie können sie wie jedes andere Personalisierungsfeld verwenden.
 
    In unserem Beispiel beinhalten die zusätzlichen, vom ursprünglichen Zielgruppen-Workflow stammenden Daten die Anzahl der Sendungen an jeden Empfänger in den letzten 365 Tagen. Das im Zielgruppen-Workflow spezifizierte NBdeliveries-Alias ist hier sichtbar.
 

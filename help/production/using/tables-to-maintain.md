@@ -11,8 +11,8 @@ topic-tags: database-maintenance
 exl-id: 194f12de-4671-4a56-8cdc-cd5e3dac147b
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1148'
-ht-degree: 5%
+source-wordcount: '1146'
+ht-degree: 2%
 
 ---
 
@@ -42,7 +42,7 @@ Die folgende Liste enthält nur die Tabellen, die am stärksten fragmentiert sin
   <tr> 
    <td> NmsDelivery<br /> </td> 
    <td> Klein<br /> </td> 
-   <td> Aktualisierungen<br /> </td> 
+   <td> Updates<br /> </td> 
    <td> Pro Versandaktion ist ein Datensatz vorhanden. Ein einzelner Datensatz kann mehrmals aktualisiert werden, um den Versandfortschritt widerzuspiegeln. Die Indizes in dieser Tabelle neigen daher dazu, schnell zu fragmentieren. <br /> </td> 
   </tr> 
   <tr> 
@@ -72,7 +72,7 @@ Die folgende Liste enthält nur die Tabellen, die am stärksten fragmentiert sin
   <tr> 
    <td> XtkWorkflow<br /> </td> 
    <td> Klein<br /> </td> 
-   <td> Aktualisierungen<br /> </td> 
+   <td> Updates<br /> </td> 
    <td> Pro Workflow-Instanz gibt es einen Datensatz, also nur sehr wenige Datensätze. Die Tabelle wird jedoch regelmäßig aktualisiert, um Status und Fortschritt widerzuspiegeln.<br /> </td> 
   </tr> 
   <tr> 
@@ -108,7 +108,7 @@ Die folgende Liste enthält nur die Tabellen, die am stärksten fragmentiert sin
   <tr> 
    <td> NmsBroadlogMsg <br /> </td> 
    <td> Klein<br /> </td> 
-   <td> Aktualisierungen<br /> </td> 
+   <td> Updates<br /> </td> 
    <td> Diese Tabelle enthält Informationen zum Qualifizieren von SMTP-Fehlern. Sie ist relativ klein, wird jedoch massiv aktualisiert, sodass Indizes auf dieser Tabelle in der Regel schnell fragmentiert werden. <br /> </td> 
   </tr> 
   <tr> 

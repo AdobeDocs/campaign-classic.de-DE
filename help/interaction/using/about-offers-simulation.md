@@ -6,7 +6,7 @@ feature: Interaction, Offers
 exl-id: facaa88e-1fa2-4189-9d8f-348aaef3e235
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '248'
 ht-degree: 100%
 
 ---
@@ -55,7 +55,7 @@ Gehen Sie wie folgt vor, um eine Angebotssimulation zu erstellen:
 
    ![](assets/offer_simulation_005.png)
 
-1. Klicken Sie zum Abschluss auf **[!UICONTROL Speichern]**.
+1. Klicken Sie zum Aufzeichnen der Simulationseinstellungen auf **[!UICONTROL Speichern]**.
 1. Gehen Sie in das Dashboard, um die Simulation zu starten.
 
    ![](assets/offer_simulation_006.png)

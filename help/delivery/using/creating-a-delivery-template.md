@@ -8,9 +8,9 @@ feature: Delivery Templates
 role: User
 exl-id: 40a03e04-56c7-48c0-95b8-aa7bf1121048
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: ht
-source-wordcount: '404'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '399'
+ht-degree: 72%
 
 ---
 
@@ -20,13 +20,13 @@ ht-degree: 100%
 
 ## Einen bestehenden Versand in eine Vorlage konvertieren {#converting-an-existing-delivery-to-a-template}
 
-Sie haben die Möglichkeit, einen existierenden Versand als Basis für wiederkehrende Versandaktionen zu verwenden. Markieren Sie hierfür in der über den Knoten **[!UICONTROL Kampagnenverwaltung > Sendungen]** zugänglichen Versandliste den gewünschten Versand.
+Ein Versand kann für neue wiederholte Versandaktionen in eine Vorlage umgewandelt werden. Um einen Versand in eine Vorlage zu konvertieren, wählen Sie diese in der über den Link **[!UICONTROL Kampagnenverwaltung]** Knoten des Baums.
 
 Klicken Sie mit der rechten Maustaste und wählen Sie **[!UICONTROL Aktionen > Als Vorlage speichern...]**.
 
 ![](assets/s_ncs_user_campaign_save_as_scenario.png)
 
-Geben Sie im Feld **[!UICONTROL Ordner]** an, wo die Vorlage gespeichert werden soll, und im Feld **[!UICONTROL Ausführungsordner]**, wo die auf dieser Vorlage beruhenden Sendungen zu speichern sind.
+Dadurch wird eine Versandvorlage aus dem ausgewählten Versand erstellt. Sie müssen den Ordner eingeben, in dem der Ordner gespeichert ist (im **[!UICONTROL Ordner]** sowie den Ordner, in dem die auf dieser Vorlage basierenden Sendungen erstellt werden (im **[!UICONTROL Ausführungsordner]** -Feld).
 
 ![](assets/s_ncs_user_campaign_save_as_scenario_a.png)
 
@@ -61,11 +61,11 @@ Führen Sie zur Konfiguration einer Versandvorlage die folgenden Schritte aus:
 
 1. Tragen Sie der Kategorie **E-Mail-Parameter** den E-Mail-Betreff und die Zielgruppe ein.
 1. Fügen Sie Ihren **HTML-Inhalt** ein, um Ihre Vorlage zu personalisieren. Sie können auch einen Mirrorseite-Link und einen Abmelde-Link angeben.
-1. Wählen Sie den Tab **Vorschau**. Wählen Sie im Dropdown-Menü **Personalisierung testen** die Option **Empfänger** aus, um sich Ihre Vorlage in der Vorschau anzusehen.
+1. Wählen Sie die **Vorschau** Registerkarte. Im **Personalisierung testen** Dropdown-Menü auswählen **Empfänger** um eine Vorschau Ihrer Vorlage als ausgewähltes Profil anzuzeigen.
 
    ![](assets/delivery_template_5.png)
 
-1. Klicken Sie auf **Speicher**. Ihre Vorlage kann jetzt in einem Versand verwendet werden.
+1. Klicken Sie auf **Speichern**. Ihre Vorlage kann jetzt in einem Versand verwendet werden.
 
 
 ## Anleitungsvideos {#delivery-template-video}

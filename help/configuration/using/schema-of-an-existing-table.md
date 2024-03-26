@@ -9,7 +9,7 @@ exl-id: 964f1027-627c-4f12-91b5-f258e9ba458b
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '239'
-ht-degree: 18%
+ht-degree: 11%
 
 ---
 
@@ -29,7 +29,7 @@ Wenn das Programm auf die Daten einer existierenden Tabelle, einer SQL-Ansicht o
 
 Gehen Sie wie folgt vor, um das entsprechende Schema zu erstellen:
 
-1. Bearbeiten Sie den Knoten **[!UICONTROL Administration > Konfiguration > Datenschemata]** in der Adobe Campaign-Struktur und klicken Sie auf **[!UICONTROL Neu]** .
+1. Bearbeiten Sie die **[!UICONTROL Administration > Konfiguration > Datenschemata]** Knoten der Adobe Campaign-Struktur und klicken Sie auf **[!UICONTROL Neu]** .
 1. Wählen Sie die **[!UICONTROL Auf Daten aus einer vorhandenen Tabelle oder einer SQL-Ansicht zugreifen]** und klicken Sie auf **[!UICONTROL Nächste]** .
 
    ![](assets/s_ncs_configuration_extand_a_schema.png)

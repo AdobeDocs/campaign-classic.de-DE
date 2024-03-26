@@ -8,8 +8,8 @@ badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 exl-id: d32b614f-82c1-4363-816c-4ebedaa5cfe9
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '561'
-ht-degree: 100%
+source-wordcount: '565'
+ht-degree: 90%
 
 ---
 
@@ -61,7 +61,7 @@ Er kann im Abschnitt **[!UICONTROL Grafiktyp]** des Tabs **[!UICONTROL Allgemein
 
 ![](assets/reporting_change_graph_type.png)
 
-Darüber hinaus stehen je Grafiktyp verschiedene Parameter zur Verfügung. Diese werden über den Link **[!UICONTROL Grafikparameter...]** ausgewählt.
+Die Varianten hängen vom gewählten Diagrammtyp ab. Die Auswahl erfolgt über die **[!UICONTROL Varianten ...]** -Link.
 
 ### Verteilung: Tortendiagramm {#breakdown--pie-charts}
 
@@ -113,7 +113,7 @@ Wenn sich die Werte dazu eignen, können Sie sie stapeln.
 
 ![](assets/reporting_graph_type_histo.png)
 
-Bei Bedarf können Sie die Anzeigereihenfolge der Werte umkehren. Aktivieren Sie hierzu die Option **[!UICONTROL Umgekehrte Stapelung]**.
+Bei Bedarf können Sie die Anzeigereihenfolge der Werte umkehren. Wählen Sie dazu die **[!UICONTROL Rückwärtsstapelung]** -Option.
 
 ### Konversion: Trichter {#conversion--funnel}
 
@@ -121,7 +121,7 @@ Diese Art von Grafik zeigt die Konversionsrate der gemessenen Elemente.
 
 ## Interaktion mit der Grafik {#interaction-with-the-chart}
 
-Im Fenster **[!UICONTROL Interaktionsereignisse]** können Sie bestimmen, welche Aktion durch einen Klick auf die Grafik ausgelöst wird.
+Sie können eine Aktion definieren, wenn der Benutzer auf das Diagramm klickt. Öffnen Sie die **[!UICONTROL Interaktionsereignisse]** und wählen Sie die gewünschte Aktion aus.
 
 Die möglichen Interaktionstypen und ihre jeweilige Konfiguration werden in [diesem Abschnitt](../../web/using/static-elements-in-a-web-form.md#inserting-html-content) beschrieben.
 

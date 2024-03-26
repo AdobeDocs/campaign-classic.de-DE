@@ -7,8 +7,8 @@ feature: Workflows
 exl-id: 0d3e7046-313a-42a6-9155-3365e8d60bac
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 100%
+source-wordcount: '292'
+ht-degree: 92%
 
 ---
 
@@ -30,7 +30,7 @@ Jeweils zu Beginn einer neuen Saison werden geeignete sportliche Aktivitäten be
 
 1. Da die Liste jeweils zu Saisonbeginn aktualisiert werden soll, muss als Häufigkeit **[!UICONTROL Monatlich]** ausgewählt werden.
 1. Wählen Sie im nächsten Bildschirm die Monate März, Juni, September und Dezember aus. Geben Sie als Tag den 20. des Monats an und die Uhrzeit, an der der Workflow gestartet werden soll.
-1. Geben Sie abschließend den Gültigkeitszeitraum der Abfrage an. Im vorliegenden Beispiel wurde **[!UICONTROL Dauerhaft gültig]** ausgewählt.
+1. Wählen Sie anschließend die Gültigkeitsdauer der Abfrage aus. Wenn diese Aktivität beispielsweise dauerhaft aktiv sein soll, wählen Sie **[!UICONTROL Dauerhafte Gültigkeit]**.
 
    ![](assets/incremental_query_example_2.png)
 

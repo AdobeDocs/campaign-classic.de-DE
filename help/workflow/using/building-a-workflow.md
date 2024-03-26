@@ -7,8 +7,8 @@ feature: Workflows
 exl-id: 8ba20ccd-b03f-4c4f-87c1-a21e80d8e4be
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1685'
-ht-degree: 100%
+source-wordcount: '1686'
+ht-degree: 92%
 
 ---
 
@@ -28,7 +28,7 @@ In diesem Abschnitt werden die wichtigsten Grundsätze und Best Practices für d
 
 ## Erstellen eines neuen Workflows {#creating-a-new-workflow}
 
-Öffnen Sie in **[!UICONTROL Explorer]** einen Workflow-Ordner. Standardmäßig können Sie **[!UICONTROL Profile und Zielgruppen]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Zielgruppen-Workflow]** verwenden.
+Aus dem **[!UICONTROL Explorer]**, greifen Sie auf einen Workflow-Ordner zu. Standardmäßig können Sie **[!UICONTROL Profile und Zielgruppen]** > **[!UICONTROL Aufträge]** > **[!UICONTROL Zielgruppen-Workflows]**.
 
 Klicken Sie auf die Schaltfläche **[!UICONTROL Neu]** oberhalb der Workflow-Liste, um einen neuen Workflow zu erstellen.
 
@@ -118,7 +118,7 @@ Doppelklicken Sie auf eine Aktivität, um sie zu konfigurieren oder klicken Sie 
 >
 >Aktivitäten des Kampagnen-Workflows werden in [diesem Abschnitt](about-activities.md) erläutert.
 
-Der erste Tab enthält allgemeine Parameter, während Sie im Tab **[!UICONTROL Erweitert]** den Umgang mit Fehlern und die Ausführungsdauer der Aktivität bestimmen oder ein Initialisierungsscript erfassen können.
+Der erste Tab enthält die grundlegende Konfiguration. Die **[!UICONTROL Erweitert]** enthält die zusätzlichen Parameter, die insbesondere zur Definition des Verhaltens bei Fehlern, zur Angabe der Ausführungsdauer einer Aktivität und zur Eingabe eines Initialisierungsskripts verwendet werden.
 
 Für eine optimale Lesbarkeit des Workflows und zum besseren Verständnis seiner Aktivitäten können Sie in den Aktivitäten Kommentare verfassen. Diese werden angezeigt, wenn Sie im Diagramm eine Aktivität mit dem Mauszeiger überfahren.
 
@@ -160,7 +160,7 @@ Angenommen, Sie möchten alle Kunden auswählen, die seit mehr als fünf Jahren 
 
 Nach Auswahl einer Zielgruppendimension stehen nur die Filterdimensionen zur Verfügung, die mit der gewählten Zielgruppendimension kompatibel sind.
 
-Beide Dimensionen müssen zwingend in Relation zueinander stehen. Der Inhalt der Liste **[!UICONTROL Filterdimension]** hängt somit von der im ersten Feld angegebenen Zielgruppendimension ab.
+Diese beiden Dimensionen müssen miteinander verknüpft sein. So wird der Inhalt der **[!UICONTROL Filterdimension]** Die Liste hängt von der im ersten Feld angegebenen Zielgruppendimension ab.
 
 Bei Auswahl der Empfänger (**recipent**) im Feld Zielgruppendimension stehen folgende Filterdimensionen zur Verfügung:
 
@@ -188,7 +188,7 @@ Weitere Informationen zu Kampagnen-Workflows und entsprechende Anwendungsbeispie
 
 ## Technische Workflows {#technical-workflows}
 
-Technische Workflows sind standardmäßg in Adobe Campaign enthalten. Sie steuern regelmäßige Serverabläufe, wie beispielsweise Datenbankbereinigungen, den Abruf von Trackinginformationen oder geplante Vorgänge zur Versandvorbereitung. Der Zugriff auf technische Workflows erfolgt im Knoten **[!UICONTROL Administration > Betreibung > Technische Workflows]**.
+Technische Workflows werden standardmäßig mit Adobe Campaign bereitgestellt. Es handelt sich um Vorgänge oder Aufträge, die für die periodische Ausführung auf dem Server geplant sind. Sie ermöglichen die Wartung der Datenbank, die Weiterleitung von Trackinginformationen zu Sendungen und die Einrichtung vorläufiger Versandverfahren. Technische Workflows werden über den Knoten **[!UICONTROL Administration > Produktion > Technische Workflows]** konfiguriert.
 
 ![](assets/navtree.png)
 

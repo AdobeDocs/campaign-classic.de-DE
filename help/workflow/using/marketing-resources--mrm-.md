@@ -7,7 +7,7 @@ feature: Workflows, Targeting Activity
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '99'
-ht-degree: 100%
+ht-degree: 80%
 
 ---
 
@@ -28,7 +28,7 @@ Die folgenden Workflows werden standardmäßig mit dem Modul **Marketing-Ressour
   <tr> 
    <td> <span class="uicontrol">Benachrichtigung bezüglich Marketing-Ressourcen</span> <br /> </td> 
    <td> <span class="uicontrol">assetMgt</span> <br /> </td> 
-   <td> Verwaltet die Benachrichtigungen bezüglich der Validierung und der Freigabe von Marketing-Ressourcen. <br /> </td> 
+   <td> Verwaltet die Benachrichtigungen bezüglich der Validierung und der Veröffentlichung von Marketing-Ressourcen. <br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Benachrichtigung bezüglich Aufgaben</span> <br /> </td> 
@@ -38,7 +38,7 @@ Die folgenden Workflows werden standardmäßig mit dem Modul **Marketing-Ressour
   <tr> 
    <td> <span class="uicontrol">Vorgänge in Diskussionsforen</span> <br /> </td> 
    <td> <span class="uicontrol">newsgroupMgt</span> <br /> </td> 
-   <td> Sendet Benachrichtigungen in Diskussionsforen. Wird gestartet, sobald ein Validierungssignal empfangen wird.<br /> </td> 
+   <td> Dieser Workflow verwaltet den Versand von Benachrichtigungen in Diskussionsforen. Sie wird ausgelöst, wenn ein Genehmigungssignal empfangen wird.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

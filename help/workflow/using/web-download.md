@@ -7,8 +7,8 @@ feature: Workflows
 exl-id: b6005eae-5fbc-4e22-ab3a-c9b7ed6506f6
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '453'
-ht-degree: 100%
+source-wordcount: '456'
+ht-degree: 82%
 
 ---
 
@@ -30,7 +30,7 @@ Die **HTTP-Übertragung** lädt Dateien über eine explizite URL, ein externes K
 
    * Bei Verwendung eines **[!UICONTROL externen Kontos]** wird das Konto aus der Dropdown-Liste ausgewählt und die zu ladende Datei angegeben.
 
-     Externe Konten werden im Knoten **[!UICONTROL Administration > Plattform > Externe Konten]** des Navigationsbaums konfiguriert. In der Aktivität kann über das Symbol **[!UICONTROL Verknüpftes Element öffnen]** auf die Parameter zugegriffen werden.
+     Externe Konten werden über die **[!UICONTROL Administration > Plattform > Externe Konten]** -Knoten des Adobe Campaign-Baums. Die Kontoparameter können im **[!UICONTROL Link bearbeiten]** Symbol.
 
      ![](assets/download_web_edit_external.png)
 
@@ -46,7 +46,7 @@ Die **HTTP-Übertragung** lädt Dateien über eine explizite URL, ein externes K
 
    Folgende Optionen stehen zur Verfügung:
 
-   * **[!UICONTROL Standard-Speicherverzeichnis nutzen]**: Dateien werden systematisch vor der Verarbeitung verschoben. Wenn diese Option angekreuzt ist, werden die Dateien in das Standard-Speicherverzeichnis (Verzeichnis **vars** im Adobe-Campaign-Installationsordner) verschoben. Wenn Sie ein anderes Speicherverzeichnis verwenden möchten, können Sie die Option abwählen und das von Ihnen gewünschte Verzeichnis im dann erscheinenden Feld **[!UICONTROL Speicherverzeichnis]** angeben.
+   * **[!UICONTROL Standardspeicherverzeichnis verwenden]**: Die Datei wird immer verschoben, bevor sie verarbeitet wird. Wenn diese Option aktiviert ist, wird die Datei in das standardmäßige Speicherverzeichnis (das **vars** -Ordner des Adobe Campaign-Installationsordners). Um einen Speicherordner anzugeben, deaktivieren Sie das Kontrollkästchen und geben Sie seinen Pfad im **[!UICONTROL Speicherordner]** field
    * **[!UICONTROL Anzahl Dateien]**: Geben Sie die Anzahl an Dateien an, die maximal im Speicherverzeichnis beibehalten werden soll.
    * **[!UICONTROL Maximale Größe (in MB)]**: Geben Sie die Größe an, die das Speicherverzeichnis nicht überschreiten darf (in Megabytes).
 

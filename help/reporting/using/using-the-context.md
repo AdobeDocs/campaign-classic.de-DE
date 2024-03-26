@@ -9,7 +9,7 @@ exl-id: a19e2843-d3f9-48c3-af72-cc1bc54f6360
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '534'
-ht-degree: 100%
+ht-degree: 81%
 
 ---
 
@@ -35,7 +35,7 @@ Klicken Sie hierzu auf den im Tab **[!UICONTROL Daten]** verfügbaren Link **[!U
 
 Im folgenden Beispiel soll die Grafik nur die Profile der Empfänger anzeigen, die in Deutschland leben und im laufenden Jahr Einkäufe getätigt haben.
 
-Um diesen Filter zu definieren, positionieren Sie eine Seite im Bericht-Diagramm und öffnen Sie die Aktivität. Klicken Sie auf den Link **[!UICONTROL Daten filtern...]** und erstellen Sie den gewünschten Filter. Mehr Informationen über die Erstellung von Abfragen in Adobe Campaign erhalten Sie in [diesem Abschnitt](../../platform/using/about-queries-in-campaign.md).
+Um diesen Filter zu definieren, platzieren Sie eine Seite in das Diagramm und bearbeiten Sie sie. Klicken Sie auf **[!UICONTROL Daten filtern]** und erstellen Sie den Filter, der den anzuzeigenden Daten entspricht. Mehr Informationen über die Erstellung von Abfragen in Adobe Campaign erhalten Sie in [diesem Abschnitt](../../platform/using/about-queries-in-campaign.md).
 
 ![](assets/s_ncs_advuser_report_wizard_029.png)
 
@@ -73,7 +73,7 @@ Im Tab **[!UICONTROL Daten]** der die Grafik oder die Tabelle enthaltenden Seite
 ![](assets/s_ncs_advuser_report_datasource_3.png)
 
 * Mit der Option **[!UICONTROL Neue Abfrage]** können Sie eine Abfrage zur Datenerfassung erstellen. Weitere Informationen hierzu finden Sie unter [Definieren eines direkten Filters auf Daten](#defining-a-direct-filter-on-data).
-* Die Option **[!UICONTROL Kontextdaten]** ermöglicht die Verwendung der Eingangsdaten: Der Kontext des Berichts entspricht den Informationen, die von der eingehenden Transition der die Grafik oder die Tabelle enthaltenen Seite übertragen werden. Dieser Kontext kann beispielsweise Daten enthalten, die über die vor der Aktivität **[!UICONTROL Seite]** positionierte Aktivität **[!UICONTROL Abfrage]** abgerufen werden. In dieser Aktivität werden zudem die Tabelle und die Felder angegeben, auf die sich der Bericht beziehen soll.
+* Die **[!UICONTROL Kontextdaten]** -Option ermöglicht die Verwendung der Eingabedaten: Der Kontext des Berichts entspricht den Informationen, die in der eingehenden Transition der die Grafik oder die Tabelle enthaltenden Seite enthalten sind. Dieser Kontext kann beispielsweise Daten enthalten, die über eine **[!UICONTROL Abfrage]** vor der **[!UICONTROL Seite]** und für die Sie die Tabelle und die Felder angeben müssen, auf die sich der Bericht bezieht.
 
 Erstellen Sie in einer Abfrage-Aktivität zum Beispiel folgende Abfrage über die Empfänger:
 

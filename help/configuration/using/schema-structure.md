@@ -493,6 +493,6 @@ Weitere Informationen finden Sie unter den folgenden Links:
 
 * [Erste Schritte mit Schemata](about-schema-reference.md)
 * [Datenbank-Mapping](database-mapping.md)
-* [Linkverwaltung](database-links.md)
-* [Schlüsselverwaltung](database-keys.md)
+* [Link-Management](database-links.md)
+* [Schlüssel-Management](database-keys.md)
 * [Campaign-Datenmodell](about-data-model.md)

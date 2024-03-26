@@ -11,7 +11,7 @@ exl-id: f7dfbc22-4ac3-4b61-927f-34ecc4e35154
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '771'
-ht-degree: 100%
+ht-degree: 79%
 
 ---
 
@@ -39,7 +39,7 @@ Für eine gebündelte Aktualisierung wählen Sie die Option **[!UICONTROL Aktion
 
 Im ersten Schritt des Assistenten sind die zu aktualisierenden Felder anzugeben.
 
-In der linken Spalte des Assistenten befindet sich die Liste der verfügbaren Felder. Mithilfe des **[!UICONTROL Suchen]**-Feldes haben Sie die Möglichkeit, die Auswahl einzuschränken. Mit der **Enter**-Taste können Sie die Liste durchsuchen. Die Ihrem Suchkriterium entsprechenden Felder erscheinen fettgedruckt wie in unten stehendem Beispiel.
+Im linken Bereich des Assistenten wird die Liste der verfügbaren Felder angezeigt. Verwenden Sie die **[!UICONTROL Suchen]** -Feld, um eine Suche dieser Felder auszuführen. Drücken Sie die **Eingabe** zum Durchsuchen der Liste. Die mit Ihrem Eintrag übereinstimmenden Feldnamen erscheinen fettgedruckt wie unten dargestellt.
 
 Durch Doppelklick werden die zu aktualisierenden Felder in der rechten Spalte des Assistenten angezeigt.
 
@@ -59,7 +59,7 @@ Sie haben die Möglichkeit, die Werteverteilung zu filtern oder den zugrunde lie
 
 ![](assets/s_ncs_user_update_wizard01_3.png)
 
-Schließen Sie das Fenster und klicken Sie auf die Schaltfläche **[!UICONTROL Weiter]**, um zum zweiten Schritt des Aktualisierungsassistenten überzugehen. Klicken Sie nun zur Ausführung des Updates auf die Schaltfläche **[!UICONTROL Starten]**.
+Schließen Sie dieses Fenster und klicken Sie auf **[!UICONTROL Nächste]** , um den zweiten Schritt des Aktualisierungsassistenten anzuzeigen. In diesem Schritt können Sie das Update starten, indem Sie auf **[!UICONTROL Starten]**.
 
 ![](assets/s_ncs_user_update_wizard01_4.png)
 
@@ -71,7 +71,7 @@ Durch Klick auf die Schaltfläche **[!UICONTROL Abbrechen]** kann die Aktualisie
 
 Die Option **[!UICONTROL Ausgewählte Zeilen fusionieren...]** ermöglicht die Fusion von zwei zuvor ausgewählten Empfängerprofilen. Ein Assistent ermöglicht es Ihnen, die Zusammenführung zu konfigurieren und zu starten.
 
-Der Assistent listet die abgerufenen Werte aller in mindestens einem der Quelldatensätze ausgefüllten Felder. Bei unterschiedlichen Werten in den jeweiligen Quellen werden diese im Abschnitt **[!UICONTROL Konfliktliste]** angezeigt. Geben Sie unter Verwendung der unter der Liste zur Verfügung stehenden Radiobuttons das Quellprofil an, dessen Werte im Konfliktfall übernommen werden sollen.
+Der Assistent zeigt die Werte an, die für jedes in einem oder mehreren Quellprofilen ausgefüllte Feld abgerufen werden sollen. Wenn eines oder mehrere Felder in den Profilen, die zusammengeführt werden sollen, unterschiedliche Werte aufweisen, werden sie im **[!UICONTROL Konfliktliste]** Abschnitt. Sie können dann das Standardprofil mithilfe der Optionsfelder unter der Liste auswählen, wie im folgenden Beispiel gezeigt:
 
 ![](assets/s_ncs_user_merge_wizard01_1.png)
 
@@ -118,7 +118,7 @@ Normalerweise melden sich Empfänger über eine spezielle Landingpage für einen
 
    ![](assets/s_ncs_user_selection_subscribe_service_3.png)
 
-In der oberen Hälfte des Assistenten werden Informationen bezüglich der Ausführung angezeigt. Durch Klick auf die Schaltfläche **[!UICONTROL Abbrechen]** kann der Vorgang gestoppt werden. Bereits verarbeitete Empfänger werden jedoch trotzdem für den entsprechenden Dienst angemeldet.
+Im oberen Bereich des Fensters können Sie den Ausführungsprozess überwachen. Die **[!UICONTROL Anhalten]** -Schaltfläche können Sie den Vorgang stoppen. Bereits verarbeitete Empfänger werden jedoch angemeldet.
 
 Wenn Sie die Option **[!UICONTROL Vorgang nicht in der Datenbank protokollieren]** abwählen, ist die Auswahl oder Erstellung eines Ausführungsordners erforderlich, in dem die den Vorgang betreffenden Protokollnachrichten gespeichert werden.
 

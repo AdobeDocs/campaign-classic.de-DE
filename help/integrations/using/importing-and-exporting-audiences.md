@@ -11,8 +11,8 @@ topic-tags: audience-sharing
 exl-id: c2293fc5-c9ba-4a73-8f39-fa7cdd06e8dd
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '670'
-ht-degree: 100%
+source-wordcount: '662'
+ht-degree: 87%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 100%
 
 Der Import von Audiences/Segmenten aus Audience Manager oder People Core Service in Adobe Campaign erfolgt mithilfe von Empfängerlisten.
 
-1. Gehen Sie in den Knoten **[!UICONTROL Profile und Zielgruppen]** > **[!UICONTROL Listen]** des Adobe Campaign-Navigationsbaums.
+1. Gehen Sie in den Knoten **[!UICONTROL Profile und Zielgruppen]** > **[!UICONTROL Listen]** des Adobe Campaign Explorer.
 1. Klicken Sie in der Aktionsleiste auf die Schaltfläche **[!UICONTROL Neu]** > **[!UICONTROL Freigegebene Zielgruppe erstellen...]**
 
    ![](assets/aam_import_audience.png)
@@ -33,7 +33,7 @@ Der Import von Audiences/Segmenten aus Audience Manager oder People Core Service
 1. Klicken Sie dann im sich öffnenden Fenster auf **[!UICONTROL Freigegebene Zielgruppe auswählen]**, um auf die Liste der von anderen Adobe Experience Cloud-Lösungen freigegebenen Audiences/Segmente zugreifen zu können.
 1. Wählen Sie die gewünschte Audience aus und validieren Sie. Die Informationen zur ausgewählten Audience werden automatisch ausgefüllt.
 
-   Um freigegebene Audiences importieren zu können, sollte Ihnen das Produkt **[!UICONTROL Audience Library]** in der Admin Console zugewiesen worden sein. Außerdem sollten Sie in Audience Manager Administratorrechte besitzen. Weiterführende Informationen dazu finden Sie im [Handbuch zur Admin Console](https://helpx.adobe.com/de/enterprise/managing/user-guide.html).
+   Um freigegebene Zielgruppen importieren zu können, sollte Ihnen die **[!UICONTROL Zielgruppenbibliothek]** -Produkt in der Admin Console verwenden und Administrator in Audience Manager sein. Weitere Informationen hierzu finden Sie im Abschnitt [Dokumentation zur Admin Console](https://helpx.adobe.com/de/enterprise/managing/user-guide.html).
 
    ![](assets/aam_import_audience_3.png)
 
@@ -57,7 +57,7 @@ Bei jeder späteren Synchronisation werden alle Daten der zuvor erstellten Audie
 
 ## Audiences exportieren {#exporting-an-audience}
 
-Der Export von Audiences aus Adobe Campaign in Audience Manager oder People Core Service erfolgt mithilfe eines Workflows. Weiterführende Informationen zur Erstellung und Verwendung von Workflows finden Sie in [diesem Dokument](../../workflow/using/building-a-workflow.md). Die exportierten Audiences werden in Form von Segmenten in People Core Service gespeichert:
+Sie können eine Zielgruppe mithilfe eines Workflows aus Adobe Campaign in Audience Manager oder People Core Service exportieren. Die Prozesse zum Erstellen und Verwenden eines Workflows werden im Abschnitt [dieses Dokuments](../../workflow/using/building-a-workflow.md). Die exportierten Zielgruppen werden als Segmente in People Core Service gespeichert:
 
 1. Erstellen Sie einen neuen Zielgruppen-Workflow.
 1. Verwenden Sie die diversen zur Verfügung stehenden Aktivitäten, um eine Gruppe von Empfängern auszuwählen.

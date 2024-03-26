@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Installieren der Client-Konsole
+title: Installieren der Clientkonsole
 description: Erfahren Sie, wie Sie die Client-Konsole installieren
 feature: Installation, Upgrade
 badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
@@ -10,8 +10,8 @@ topic-tags: installing-campaign-in-windows-
 exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1170'
-ht-degree: 32%
+source-wordcount: '1159'
+ht-degree: 31%
 
 ---
 
@@ -121,7 +121,7 @@ Benutzer sollten jetzt die Konsole herunterladen und installieren, indem sie die
 
 ### Erstellen der Verbindung - nur Erstbenutzer{#create-the-connection}
 
-Nachdem die Client-Konsole installiert wurde, führen Sie die folgenden Schritte aus, um die Verbindung zum Anwendungsserver herzustellen:
+Sobald die Client-Konsole installiert ist, führen Sie die folgenden Schritte aus, um die Verbindung zum Anwendungs-Server herzustellen:
 
 1. Starten Sie die Konsole über Windows. **[!UICONTROL Starten]** im Menü **Adobe Campaign** Programmgruppe.
 
@@ -135,7 +135,7 @@ Nachdem die Client-Konsole installiert wurde, führen Sie die folgenden Schritte
 
 1. Geben Sie per URL eine Verbindung zum Adobe Campaign-Anwendungs-Server an. Verwenden Sie entweder einen DNS oder einen Alias des Computers oder Ihre IP-Adresse.
 
-   Sie können beispielsweise eine URL vom Typ `https://<machine>.<domain>.com` eingeben.
+   Sie können beispielsweise die `https://<machine>.<domain>.com` Typ URL.
 
 1. Wenn Adobe IMS für Ihr Unternehmen konfiguriert ist, aktivieren Sie die Option **[!UICONTROL Verbindung zu einer Adobe ID herstellen]**
 
@@ -157,7 +157,7 @@ Gehen Sie wie folgt vor, um sich bei einer vorhandenen Instanz anzumelden:
 
 1. Wählen Sie die Campaign-Instanz aus, bei der Sie sich anmelden möchten.
 
-1. Bestätigen Sie die Aktion mit der Schaltfläche **[!UICONTROL OK]**
+1. Klicks **[!UICONTROL Ok]**
 
 1. Geben Sie Ihre Anmeldedaten für den Benutzer ein und klicken Sie auf **[!UICONTROL Anmelden]**
 
@@ -170,7 +170,7 @@ Gehen Sie wie folgt vor, um sich bei einer vorhandenen Instanz anzumelden:
 * [Erstellen einer Instanz und Anmelden](../../installation/using/creating-an-instance-and-logging-on.md).
 * [Kompatibilitätsmatrix](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html)
 
-## Tutorial-Video
+## Anleitungsvideo
 
 In diesem Video wird gezeigt, wie der Adobe Campaign-Client installiert und eingerichtet wird.
 

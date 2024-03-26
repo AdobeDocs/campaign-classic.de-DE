@@ -7,7 +7,7 @@ feature: Data Model
 exl-id: 9c59b89c-3542-4a17-a46f-3a1e58de0748
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '4012'
+source-wordcount: '4037'
 ht-degree: 55%
 
 ---
@@ -64,12 +64,12 @@ Wenn ein Attribut nicht in eine dieser Kategorien fällt, benötigen Sie es wahr
 
 ### Auswahl von Datentypen {#data-types}
 
-Um eine gute Architektur und Systemleistung sicherzustellen, befolgen Sie die folgenden Best Practices, wenn Sie Daten in Adobe Campaign einrichten.
+Um eine gute Architektur und System-Performance sicherzustellen, befolgen Sie die folgenden Best Practices, wenn Sie Daten in Adobe Campaign einrichten.
 
 * Eine große Tabelle sollte überwiegend numerische Felder aufweisen und Relationen zu Referenztabellen enthalten (bei Einsatz von Wertelisten).
 * Mit dem Attribut **expr** können Sie ein Schema-Attribut in einer Tabelle als berechnetes Feld definieren (anstelle eines physischen definierten Werts). Dies ermöglicht den Zugriff auf Informationen in einem anderen Format (z. B. Alter und Geburtsdatum), ohne beide Werte speichern zu müssen. So lässt sich verhindern, dass Felder dupliziert werden. Die Empfängertabelle nutzt beispielsweise einen Ausdruck für die Domain, der bereits im E-Mail-Feld vorhanden ist.
-* Wenn die Berechnung des Ausdrucks jedoch komplex ist, wird eine Verwendung des Attributs **expr** nicht empfohlen, da eine Ad-hoc-Berechnung Auswirkungen auf die Leistung Ihrer Abfragen haben kann.
-* Der Typ **XML** hilft dabei, eine Erstellung von zu vielen Feldern zu verhindern. Er benötigt jedoch Speicherplatz, da er eine CLOB-Spalte in der Datenbank verwendet. Außerdem können komplexe SQL-Abfragen entstehen, die die Leistung beeinträchtigen.
+* Wenn die Berechnung des Ausdrucks jedoch komplex ist, wird eine Verwendung des Attributs **expr** nicht empfohlen, da eine Ad-hoc-Berechnung Auswirkungen auf die Performance Ihrer Abfragen haben kann.
+* Der Typ **XML** hilft dabei, eine Erstellung von zu vielen Feldern zu verhindern. Er benötigt jedoch Speicherplatz, da er eine CLOB-Spalte in der Datenbank verwendet. Außerdem können komplexe SQL-Abfragen entstehen, die die Performance beeinträchtigen.
 * Die Länge eines **Zeichenfolgenfelds** sollte immer mit der Spalte definiert werden. Standardmäßig beträgt die maximale Länge in Adobe Campaign 255 Zeichen. Adobe empfiehlt jedoch, das Feld zu kürzen, wenn Sie bereits wissen, dass auch weniger ausreicht.
 * Es ist akzeptabel, dass ein Feld in Adobe Campaign kürzer ist als im Quellsystem, wenn Sie sicher sind, dass die Länge im Quellsystem zu groß ist und nicht benötigt wird. Dies könnte eine kürzere Zeichenfolge oder kleinere Ganzzahl in Adobe Campaign bedeuten.
 
@@ -83,7 +83,7 @@ Bei hybriden und On-Premise-Instanzen deckt FDA (Federated Data Access, eine opt
 
 Zusätzlich zu den **autopk** Standardmäßig in den meisten Tabellen definiert, sollten Sie erwägen, einige logische oder geschäftliche Schlüssel hinzuzufügen (Kontonummer, Kundennummer usw.). Diese können später für Importe, Abstimmungen oder Daten-Packages verwendet werden. Weitere Informationen hierzu finden Sie unter [Kennungen](#identifiers).
 
-Effiziente Schlüssel sind unverzichtbar für hohe Leistung. Numerische Datentypen sollten als Schlüssel für Tabellen stets bevorzugt werden.
+Effiziente Schlüssel sind unverzichtbar für hohe Performance. Numerische Datentypen sollten als Schlüssel für Tabellen stets bevorzugt werden.
 
 Für SQLServer-Datenbanken können Sie die Verwendung von &quot;geclustertem Index&quot;in Erwägung ziehen, wenn eine Leistung erforderlich ist. Da Adobe dies nicht handhabt, müssen Sie es in SQL erstellen.
 
@@ -118,7 +118,7 @@ Dieser benutzerdefinierte Schlüssel ist der eigentliche Hauptschlüssel des Dat
 Wenn eine vordefinierte Tabelle sowohl über ein autopk als auch über einen internen Schlüssel verfügt, wird der interne Schlüssel als eindeutiger Index in der physischen Datenbanktabelle festgelegt.
 
 Beim Erstellen einer benutzerdefinierten Tabelle stehen Ihnen zwei Optionen zur Verfügung:
-* Kombination aus einem automatisch erstellten Schlüssel (ID) und einem internen Schlüssel (benutzerdefiniert). Diese Option ist interessant, wenn Ihr Systemschlüssel ein zusammengesetzter Schlüssel oder keine Ganzzahl ist. Ganzzahlen bieten höhere Leistungen in umfangreichen Tabellen und in Verbindung mit anderen Tabellen.
+* Kombination aus einem automatisch erstellten Schlüssel (ID) und einem internen Schlüssel (benutzerdefiniert). Diese Option ist interessant, wenn Ihr Systemschlüssel ein zusammengesetzter Schlüssel oder keine Ganzzahl ist. Ganzzahlen bieten höhere Performance in umfangreichen Tabellen und in Verbindung mit anderen Tabellen.
 * Verwendung des Primärschlüssels als Primärschlüssel des externen Systems. Diese Lösung wird in der Regel bevorzugt, da sie das Importieren und Exportieren von Daten durch einen einheitlichen Schlüssel zwischen verschiedenen Systemen vereinfacht. Autopk sollte deaktiviert werden, wenn der Schlüssel &quot;id&quot;heißt und mit externen Werten gefüllt werden soll (nicht automatisch generiert).
 
 >[!IMPORTANT]
@@ -153,7 +153,7 @@ Weitere Informationen zur Erschöpfung von Sequenzen finden Sie unter [dieses Vi
 
 Indizes sind für die Leistung unverzichtbar. Wenn Sie einen Schlüssel im Schema deklarieren, erstellt Adobe automatisch einen Index für die Felder des Schlüssels. Sie können auch weitere Indizes für Abfragen deklarieren, die den Schlüssel nicht verwenden.
 
-Adobe empfiehlt, zusätzliche Indizes zu definieren, da dies die Leistung verbessern kann.
+Adobe empfiehlt, zusätzliche Indizes zu definieren, da dies die Performance verbessern kann.
 
 Beachten Sie jedoch Folgendes:
 
@@ -193,7 +193,7 @@ Um die Suche nach diesen Filtern zu beschleunigen, können Sie jetzt Indizes hin
 
 Die folgende Tabelle zeigt, in welchen Fällen die drei unten beschriebenen Indizes verwendet werden oder nicht dem in der ersten Spalte angezeigten Zugriffsmuster entsprechen.
 
-| Suchkriterien | Index 1 (Vorname + Nachname) | Index 2 (nur Vorname) | Index 3 (nur Nachname) | Erklärung |
+| Suchkriterien | Index 1 (Vorname + Nachname) | Index 2 (nur Vorname) | Index 3 (nur Nachname) | Kommentare |
 |--- |--- |--- |--- |--- |
 | Vorname gleich &quot;Johnny&quot; | In Gebrauch | In Gebrauch | Nicht verwendet | Da sich der Vorname an erster Stelle auf Index 1 befindet, wird er ohnehin verwendet: Es ist nicht erforderlich, eine Bedingung für den Nachnamen hinzuzufügen. |
 | Vorname gleich &quot;Johnny&quot;UND Nachname gleich &quot;Smith&quot; | In Gebrauch | Nicht verwendet | Nicht verwendet | Da beide Attribute in derselben Abfrage gesucht werden, wird nur der Index verwendet, der beide Attribute kombiniert. |
@@ -209,7 +209,7 @@ Die folgende Tabelle zeigt, in welchen Fällen die drei unten beschriebenen Indi
 
 Achten Sie bei großen Tabellen auf die &quot;eigene&quot; Integrität. Das Löschen von Datensätzen mit großen Tabellen in der Integrität &quot;own&quot;kann die Instanz stoppen. Die Tabelle wird gesperrt; die Löschungen werden einzeln vorgenommen. Daher ist es am besten, bei untergeordneten Tabellen mit großen Volumen &quot;neutrale&quot; Integrität anzuwenden.
 
-Das Deklarieren einer Relation als externer Join ist nicht gut für die Leistung. Der Null-ID-Datensatz emuliert die externe Join-Funktion. Es ist nicht erforderlich, externe Joins zu deklarieren, wenn der Link die automatische Verknüpfung verwendet.
+Das Deklarieren einer Relation als externer Join ist nicht gut für die Performance. Der Null-ID-Datensatz emuliert die externe Join-Funktion. Es ist nicht erforderlich, externe Joins zu deklarieren, wenn der Link die automatische Verknüpfung verwendet.
 
 Obwohl es möglich ist, eine beliebige Tabelle in einem Workflow einzubinden, empfiehlt Adobe, allgemeine Relationen zwischen Ressourcen direkt in der Definition der Datenstruktur festzulegen.
 
@@ -235,11 +235,11 @@ Beachten Sie, dass eine Umkehrkardinalität einer Relation standardmäßig (N) l
 
 Wenn die Umkehrrelation für den Anwender nicht sichtbar sein soll, können Sie sie mit der Relationsdefinition revLink=&#39;_NONE_&#39; ausblenden. Ein typischer Anwendungsfall hierfür wäre die Definition einer Relation vom Empfänger zur letzten ausgeführten Transaktion. Sie müssen lediglich die Relation vom Empfänger zur letzten Transaktion sehen. In der Transaktionstabelle muss keine Umkehrrelation sichtbar sein.
 
-Relationen, die einen externen Join vornehmen (1-0..1), sollten mit Vorsicht verwendet werden, da sie die Systemleistung beeinträchtigen.
+Relationen, die einen externen Join vornehmen (1-0..1), sollten mit Vorsicht verwendet werden, da sie die System-Performance beeinträchtigen.
 
 ## Datenbeibehaltung - Bereinigung und Bereinigung {#data-retention}
 
-Adobe Campaign ist weder ein Data Warehouse noch ein Reporting-Tool. Zur Sicherstellung hoher Leistung von Adobe Campaign sollte daher das Datenbankwachstum kontrolliert werden. Dazu kann hilfreich sein, einige der unten aufgeführten Best Practices zu befolgen.
+Adobe Campaign ist weder ein Data Warehouse noch ein Reporting-Tool. Zur Sicherstellung hoher Performance von Adobe Campaign sollte daher das Datenbankwachstum kontrolliert werden. Dazu kann hilfreich sein, einige der unten aufgeführten Best Practices zu befolgen.
 
 Standardmäßig haben Versand- und Trackinglogs von Adobe Campaign eine Aufbewahrungsdauer von 180 Tagen. Ein Bereinigungsprozess wird ausgeführt, um alle Protokolle zu entfernen, die älter sind.
 
@@ -252,7 +252,7 @@ Erfahren Sie mehr über den Workflow zur Bereinigung der Datenbank in Campaign [
 
 >[!IMPORTANT]
 >
->Benutzerdefinierte Tabellen werden im standardmäßigen Bereinigungsprozess nicht bereinigt. Er mag zwar am ersten Tag noch nicht erforderlich sein, vergessen Sie aber nicht, einen Bereinigungsprozess für Ihre benutzerdefinierten Tabellen einzurichten, da sonst später Leistungsprobleme auftreten können.
+>Benutzerdefinierte Tabellen werden im standardmäßigen Bereinigungsprozess nicht bereinigt. Er mag zwar am ersten Tag noch nicht erforderlich sein, vergessen Sie aber nicht, einen Bereinigungsprozess für Ihre benutzerdefinierten Tabellen einzurichten, da sonst später Performance-Probleme auftreten können.
 
 Es gibt verschiedene Lösungen, um den Bedarf an Datensätzen in Adobe Campaign zu minimieren:
 * Exportieren Sie die Daten in ein Data Warehouse außerhalb von Adobe Campaign.
@@ -260,9 +260,9 @@ Es gibt verschiedene Lösungen, um den Bedarf an Datensätzen in Adobe Campaign 
 
 Sie können in einem Schema das Attribut &quot;deleteStatus&quot; deklarieren. Effizienter ist es, den Datensatz als gelöscht zu markieren und das Löschen in die Bereinigungsaufgabe zu verschieben.
 
-## Leistung {#performance}
+## Performance {#performance}
 
-Befolgen Sie die nachstehenden Best Practices, um eine bessere Leistung sicherzustellen.
+Befolgen Sie die nachstehenden Best Practices, um eine bessere Performance sicherzustellen.
 
 ### Allgemeine Empfehlungen {#general-recommendations}
 
@@ -270,7 +270,7 @@ Befolgen Sie die nachstehenden Best Practices, um eine bessere Leistung sicherzu
 * Vermeiden Sie die Verknüpfung mit nicht indizierten Feldern beim Aufbau von Daten in Workflows.
 * Vergewissern Sie sich, dass Prozesse wie Import und Export außerhalb der Geschäftszeiten ausgeführt werden.
 * Stellen Sie sicher, dass ein Zeitplan für alle täglichen Aktivitäten vorhanden ist und halten Sie sich an ihn.
-* Wenn einer oder mehrere der täglichen Prozesse fehlschlagen und sie am selben Tag noch ausgeführt werden müssen, stellen Sie sicher, dass beim Starten des manuellen Prozesses keine Konflikte auftreten, da dies die Systemleistung beeinträchtigen könnte.
+* Wenn einer oder mehrere der täglichen Prozesse fehlschlagen und sie am selben Tag noch ausgeführt werden müssen, stellen Sie sicher, dass beim Starten des manuellen Prozesses keine Konflikte auftreten, da dies die System-Performance beeinträchtigen könnte.
 * Stellen Sie sicher, dass keine der täglichen Kampagnen während des Importvorgangs oder bei der Ausführung eines manuellen Prozesses ausgeführt wird.
 * Verwenden Sie eine oder mehrere Referenztabellen, anstatt ein Feld in jeder Zeile zu duplizieren. Bei Verwendung von Schlüssel/Wert-Paaren ist es empfehlenswert, einen numerischen Schlüssel zu wählen.
 * Eine kurze Zeichenfolge ist weiterhin zulässig. Falls Referenztabellen bereits in einem externen System vorhanden sind, erleichtert die Wiederverwendung derselben die Datenintegration mit Adobe Campaign.
@@ -278,12 +278,12 @@ Befolgen Sie die nachstehenden Best Practices, um eine bessere Leistung sicherzu
 ### 1-zu-n-Beziehungen {#one-to-many-relationships}
 
 * Das Datendesign beeinflusst Benutzerfreundlichkeit und Funktionalität. Wenn Sie Ihr Datenmodell mit zahlreichen 1-zu-n-Beziehungen entwickeln, wird es für Benutzer schwieriger, in der Anwendung eine sinnvolle Logik zu erstellen. Für technisch nicht versierte Marketing-Experten kann es schwierig sein, eine 1-zu-n-Filterlogik zu entwerfen und zu verstehen.
-* Es wird empfohlen, alle wichtigen Felder in einer Tabelle zu vereinen, da Benutzer so leichter Abfragen erstellen können. Unter Umständen kann die Leistung auch verbessert werden, wenn einige Felder in mehreren Tabellen dupliziert werden, wenn dadurch ein Join vermieden werden kann.
+* Es wird empfohlen, alle wichtigen Felder in einer Tabelle zu vereinen, da Benutzer so leichter Abfragen erstellen können. Unter Umständen kann die Performance auch verbessert werden, wenn einige Felder in mehreren Tabellen dupliziert werden, wenn dadurch ein Join vermieden werden kann.
 * Bestimmte integrierte Funktionen können nicht auf 1-zu-n Beziehungen verweisen, z. B. die Angebotsgewichtungsformel und Sendungen.
 
 ## Große Tabellen {#large-tables}
 
-Adobe Campaign setzt auf Datenbank-Engines von Drittanbietern. Je nach Anbieter ist für die Leistungsoptimierung bei größeren Tabellen möglicherweise ein bestimmtes Design erforderlich.
+Adobe Campaign setzt auf Datenbank-Engines von Drittanbietern. Je nach Anbieter ist für die Performance-Optimierung bei größeren Tabellen möglicherweise ein bestimmtes Design erforderlich.
 
 Im Folgenden finden Sie einige verbreitete Best Practices, die beim Entwerfen Ihres Datenmodells mit großen Tabellen und komplexen Joins befolgt werden sollten.
 
@@ -295,7 +295,7 @@ Im Folgenden finden Sie einige verbreitete Best Practices, die beim Entwerfen Ih
 
 ### Größe von Tabellen {#size-of-tables}
 
-Die Tabellengröße ist eine Kombination aus der Anzahl der Datensätze und der Anzahl der Spalten pro Datensatz. Beide können sich auf die Leistung von Abfragen auswirken.
+Die Tabellengröße ist eine Kombination aus der Anzahl der Datensätze und der Anzahl der Spalten pro Datensatz. Beide können sich auf die Performance von Abfragen auswirken.
 
 * Eine **kleine** Tabelle entspricht der Größe der Versandtabelle.
 * Eine **mittelgroße** Tabelle entspricht der Größe der Empfängertabelle. Sie weist einen Datensatz pro Kunde auf.
@@ -304,9 +304,9 @@ Wenn Ihre Datenbank z. B. 10 Millionen Empfänger umfasst, enthält die Tabelle 
 
 Auf PostgreSQL sollte eine Zeile nicht größer als 8 KB sein, um dies zu vermeiden. [TOAST](https://wiki.postgresql.org/wiki/TOAST) Mechanismus. Versuchen Sie daher, die Anzahl der Spalten und die Größe jeder Zeile so weit wie möglich zu reduzieren, um eine optimale Systemleistung (Speicher und CPU) zu gewährleisten.
 
-Die Anzahl der Zeilen wirkt sich ebenfalls auf die Leistung aus. Die Adobe Campaign-Datenbank dient nicht zum Speichern von Verlaufsdaten, die nicht aktiv für Zielgruppenbestimmungs- oder Personalisierungszwecke verwendet werden. Es handelt sich dabei um eine operative Datenbank.
+Die Anzahl der Zeilen wirkt sich ebenfalls auf die Performance aus. Die Adobe Campaign-Datenbank dient nicht zum Speichern von Verlaufsdaten, die nicht aktiv für Zielgruppenbestimmungs- oder Personalisierungszwecke verwendet werden. Es handelt sich dabei um eine operative Datenbank.
 
-Um Leistungsprobleme im Zusammenhang mit der hohen Zeilenanzahl zu verhindern, sollten Sie nur die erforderlichen Datensätze in der Datenbank speichern. Alle anderen Datensätze sollten Sie in das Data Warehouse eines Drittanbieters exportieren und aus der Adobe Campaign-Betriebsdatenbank entfernen.
+Um Performance-Probleme im Zusammenhang mit der hohen Zeilenanzahl zu verhindern, sollten Sie nur die erforderlichen Datensätze in der Datenbank speichern. Alle anderen Datensätze sollten Sie in das Data Warehouse eines Drittanbieters exportieren und aus der Adobe Campaign-Betriebsdatenbank entfernen.
 
 Im Folgenden finden Sie Best Practices zur Größe von Tabellen:
 

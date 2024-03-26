@@ -8,8 +8,8 @@ badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 exl-id: 1e5ab922-481c-4dce-a05e-a58408002e24
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '806'
-ht-degree: 100%
+source-wordcount: '812'
+ht-degree: 83%
 
 ---
 
@@ -23,7 +23,7 @@ Legen Sie in der Adobe Campaign-Plattform im Tab **[!UICONTROL Anzeige]** den An
 
 ### Auswahltyp {#selection-type}
 
-Der Zugriff auf den Bericht kann auf einen bestimmten Kontext oder eine Platzierung beschränkt werden, zum Beispiel einen Versand, einen einzelnen oder eine Auswahl von Empfängern etc. Dieser Zugriff wird im Abschnitt **[!UICONTROL Auswahltyp]** des **[!UICONTROL Anzeige]**-Tabs konfiguriert.
+Der Zugriff auf den Bericht kann auf einen bestimmten Kontext oder eine Platzierung beschränkt werden, z. B. einen Versand, einen Empfänger, eine Auswahl an Empfängern usw. Dieser Zugriff wird im Abschnitt **[!UICONTROL Auswahltyp]** Abschnitt **[!UICONTROL Anzeige]** Registerkarte.
 
 ![](assets/s_ncs_advuser_report_visibility_4.png)
 
@@ -87,7 +87,7 @@ Als Beispiel wird im Folgenden eine Verknüpfung eines Berichts zu einer Empfän
 
    ![](assets/s_ncs_advuser_report_wizard_link_01.png)
 
-1. Wählen Sie mithilfe der Dropdown-Liste den Bericht aus, für den Sie eine Verknüpfung erstellen möchten. Im vorliegenden Beispiel wird der Bericht **Kunden/Interessenten pro Land** gewählt.
+1. Wählen Sie mithilfe der Dropdown-Liste den Bericht aus, zu dem Sie einen Link erstellen möchten. In diesem Beispiel wählen wir die **Verteilung nach Ländern** Bericht.
 
    ![](assets/s_ncs_advuser_report_wizard_link_02.png)
 
@@ -115,11 +115,11 @@ Bevor Sie Ihren Bericht veröffentlichen, stellen Sie im Tab **[!UICONTROL Vorsc
 
 Wählen Sie entsprechend den Anzeigeparametern des Berichts zwischen den Optionen **[!UICONTROL Global]** und **[!UICONTROL Auswahl]**.
 
-Wenn der gewählte Anzeigeparameter **[!UICONTROL Global]** ist, wählen Sie die gleichnamige Vorschauoption. Wenn der Anzeigeparameter **[!UICONTROL Einfach-Auswahl]** oder **[!UICONTROL Mehrfach-Auswahl]** ist, muss die Vorschauoption **[!UICONTROL Auswahl]** gewählt werden.****
+Diese beiden Optionen werden entsprechend den Anzeigeeinstellungen des Berichts ausgewählt. Wenn die Anzeigeeinstellung **[!UICONTROL Global]**, müssen Sie die **[!UICONTROL Global]** Vorschauoption. Wenn die Anzeigeeinstellungen **[!UICONTROL Einzelauswahl]** oder **[!UICONTROL Mehrfachauswahl]**, die **[!UICONTROL Auswahl]** Die Vorschauoption muss ausgewählt sein.
 
 Weitere Informationen hierzu finden Sie unter [Anzeigekontext von Berichten](#report-display-context).
 
-Es stehen zudem Parameter zur Verfügung, die eine Kontrolle der Fehler ermöglicht. Der Parameter **_uuid** ist Teil der URL des Berichts. Sie können ihm die Parameter **&amp;_preview** oder **&amp;_debug** hinzufügen.
+Mithilfe bestimmter Einstellungen können Fehler behoben werden. Die **_uuid** -Einstellung finden Sie in der URL des Berichts. Sie können die **&amp;_preview** oder **&amp;_debug** -Einstellungen.
 
 Die Funktionsweise dieser Parameter wird im Abschnitt zur Definition von **Webformular-Eigenschaften** des Kapitels [Webformulare](../../web/using/about-web-forms.md) beschrieben.
 

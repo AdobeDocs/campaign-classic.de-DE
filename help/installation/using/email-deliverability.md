@@ -11,8 +11,8 @@ topic-tags: additional-configurations
 exl-id: 515adad2-6129-450a-bb9e-fc80127835af
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '3115'
-ht-degree: 19%
+source-wordcount: '3167'
+ht-degree: 18%
 
 ---
 
@@ -201,7 +201,7 @@ Insgesamt stehen dem Benutzer sechzehn Remote-IP-Adressen zur Verfügung. In Kom
 >
 >Wenn sich zwei MX-Einträge auf dieselbe IP-Adresse beziehen, wird diese als ein Pfad gezählt, nicht als zwei.
 
-Unten stehende Beispiele zeigen die Verwendung von MX-Regeln:
+Im Folgenden finden Sie einige Beispiele für die Verwendung von MX-Regeln:
 
 ![](assets/s_ncs_examples_mx_rules.png)
 
@@ -242,7 +242,7 @@ Die erste Regel, deren MX-Maske mit dem gewünschten MX kompatibel ist, wird ang
 
 Die folgenden Parameter stehen für jede Regel zur Verfügung:
 
-* **[!UICONTROL MX-Maske]**: Domäne, auf die die Regel angewendet wird. Jede Regel definiert eine Adressenmaske des MX. Jeder MX, dessen Name dieser Adressenmaske entspricht, kommt somit infrage. Die Maske kann &quot;&#42;&quot; und &quot;?&quot;generische Zeichen.
+* **[!UICONTROL MX-Maske]**: Domäne, auf die die Regel angewendet wird. Jede Regel definiert eine Adressenmaske des MX. Jeder MX, dessen Name dieser Adressenmaske entspricht, kommt somit infrage. Die Maske kann &quot;&#42;&quot; und &quot;?&quot; generische Zeichen.
 
   So sind die Adressen
 
@@ -269,14 +269,14 @@ Die folgenden Parameter stehen für jede Regel zur Verfügung:
 
 * **[!UICONTROL Bereich der Kennungen]**: Mit dieser Option können Sie den Bereich der Kennungen (publicID) angeben, für den die Regel gilt. Folgende Angaben sind möglich:
 
-   * Eine Ziffer: Die Regel wird nur für diese publicId angewendet,
+   * Eine Zahl: Die Regel gilt nur für diese publicId,
    * Ein Zahlenbereich (**number1-number2**): Die Regel gilt für alle publicIds zwischen diesen beiden Zahlen.
 
   >[!NOTE]
   >
   >Wenn das Feld leer ist, gilt die Regel für alle Kennungen.
 
-  Bei einer öffentlichen Kennung handelt es sich um eine interne Kennung einer öffentlichen IP, die von einem oder mehreren MTAs verwendet wird. Diese Art von Kennungen wird in der Datei **config-instance.xml** von MTA-Servern definiert.
+  Eine öffentliche ID ist eine interne Kennung einer öffentlichen IP, die von einem oder mehreren MTAs verwendet wird. Diese Art von Kennungen wird in der Datei **config-instance.xml** von MTA-Servern definiert.
 
   ![](assets/s_ncs_install_mta_ips.png)
 
@@ -396,14 +396,14 @@ Die Parameter lauten wie folgt:
 
 Im vorherigen Beispiel werden die Adressen unter normalen Bedingungen wie folgt verteilt:
 
-    * &quot;1&quot;: 5 / (5+5+1) = 45%
-    * &quot;2&quot;: 5 / (5+5+1) = 45%
-    * &quot;3&quot;: 1 / (5+5+1) = 10%
+    * &quot;1&quot;: 5 / (5+5+1) = 45 %
+    * &quot;2&quot;: 5 / (5+5+1) = 45 %
+    * &quot;3&quot;: 1 / (5+5+1) = 10 %
 
 Wenn beispielsweise die erste Adresse nicht für einen bestimmten MX verwendet werden kann, werden Nachrichten wie folgt gesendet:
 
-    * &quot;2&quot;: 5 / (5+1) = 83%
-    * &quot;3&quot;: 1 / (5+1) = 17%
+    * &quot;2&quot;: 5 / (5+1) = 83 %
+    * &quot;3&quot;: 1 / (5+1) = 17 %
 
 * **includeDomains**: reserviert diese IP-Adresse für E-Mails, die zu einer bestimmten Domain gehören. Dies ist eine Liste von Masken, die einen oder mehrere Platzhalter (&#39;) enthalten können&#42;&quot;). Wenn das Attribut nicht angegeben ist, können alle Domänen diese IP-Adresse verwenden.
 

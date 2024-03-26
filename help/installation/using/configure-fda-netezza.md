@@ -10,8 +10,8 @@ topic-tags: connectors
 exl-id: b148d34b-4060-4c54-9cb2-9e712a7c17d7
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '396'
-ht-degree: 81%
+source-wordcount: '391'
+ht-degree: 75%
 
 ---
 
@@ -33,7 +33,7 @@ Die Verbindung zu einer externen Netezza-Datenbank über die FDA-Option erforder
    * **nz-linuxclient-v7.2.0.0.tar.gz für Linux: Wählen Sie den Ordner aus, der Ihrem Betriebssystem entspricht (linux oder linux64) und starten Sie den Entpacken-Befehl. Sie können die Installation im standardmäßig empfohlenen Verzeichnis ausführen: &quot;/usr/local/nz&quot;.**
    * **nz-winclient-v7.2.0.0.zip für Windows: Dekomprimieren Sie die Datei und führen Sie das jeweilige Script für Ihr Betriebssystem aus: nzodbcsetup.exe oder nzodbcsetup64.exe. Folgen Sie den Anweisungen des Assistenten, um die Treiber zu installieren.**
 
-1. Konfigurieren sie den ODBC-Treiber. Die Konfiguration kann in den Standarddateien ausgeführt werden: **/etc/odbc.ini** für allgemeine Parameter und **/etc/odbcinst.ini** zur Deklarierung der Treiber.
+1. Konfigurieren Sie den ODBC-Treiber. Die Konfiguration kann in den Standarddateien vorgenommen werden: **/etc/odbc.ini** für allgemeine Parameter und **/etc/odbcinst.ini** zur Angabe der Fahrer.
 
    * **/etc/odbc.ini**
 

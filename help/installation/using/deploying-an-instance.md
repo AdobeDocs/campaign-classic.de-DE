@@ -11,8 +11,8 @@ topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '3541'
-ht-degree: 7%
+source-wordcount: '3545'
+ht-degree: 6%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 7%
 >
 >Serverseitige Konfigurationen können nur von Adobe für Bereitstellungen durchgeführt werden, die von Adobe gehostet werden. Weitere Informationen zu den verschiedenen Implementierungen finden Sie im Abschnitt [Hosting-Modelle](../../installation/using/hosting-models.md) oder [diese Seite](../../installation/using/capability-matrix.md).
 
-## Bereitstellungsassistent {#deployment-wizard}
+## Implementierungsassistent {#deployment-wizard}
 
 Adobe Campaign bietet einen grafischen Assistenten, der in der Adobe Campaign-Clientkonsole verfügbar ist und die Parameter der Instanz definiert, mit der Sie eine Verbindung herstellen möchten.
 
@@ -38,7 +38,7 @@ Die Konfigurationsschritte lauten wie folgt:
 1. [Tracking-Konfiguration](#tracking-configuration)
 1. [Mobile-Kanal-Parameter](#mobile-channel-parameters)
 1. [Regionale Parameter](#regional-settings)
-1. [Internetzugang](#access-from-the-internet)
+1. [Zugang über das Internet](#access-from-the-internet)
 1. [Verwaltung öffentlicher Ressourcen](#managing-public-resources)
 1. [Daten bereinigen](#purging-data)
 
@@ -203,7 +203,7 @@ Wenn Sie das Tracking in einer Instanz aktivieren, werden die URLs in den Sendun
 
   Weitere Informationen hierzu finden Sie unter [Tracking speichern](#saving-tracking).
 
-### Tracking-Server {#tracking-server}
+### Trackingserver {#tracking-server}
 
 ![](assets/s_ncs_install_deployment_wiz_08.png)
 
@@ -323,7 +323,7 @@ In dieser Phase können Sie Voreinstellungen für Datenrichtlinien einbeziehen.
 * **[!UICONTROL Betrachten Sie alle Telefonnummern als internationale.]** : Wenn diese Option aktiviert ist, wendet die Anwendung das internationale Format auf Telefonnummern an (das Länderpräfix ist dann obligatorisch, da die Anzahl der Ziffern vor Anwendung der Formatierung nicht überprüft wird). Wenn diese Option nicht aktiviert ist, müssen Sie der internationalen Telefonnummer das Präfix &quot;+&quot;oder &quot;00&quot;selbst voranstellen.
 * **[!UICONTROL Alle Telefonnummern im internationalen Format speichern]** : Diese Option betrifft nur **national** Telefonnummern, die importiert oder bearbeitet werden. Definieren Sie, ob Sie ein nationales Format (z. B. 425 555 0150) oder das internationale Format (z. B. +1 425 555 0150) verwenden möchten.
 
-## Internetzugang {#access-from-the-internet}
+## Zugang über das Internet {#access-from-the-internet}
 
 >[!IMPORTANT]
 >
@@ -360,7 +360,7 @@ Adobe Campaign ermöglicht es Ihnen, diese drei URLs zu unterscheiden, um die La
 >
 >Aus Datenschutzgründen empfehlen wir die Verwendung von HTTPS für alle externen Ressourcen.
 
-Damit die Bilder von Empfängern gesehen werden können, müssen die in E-Mails und öffentlichen Ressourcen verwendeten Bilder, die mit Kampagnen verknüpft sind, auf einem extern zugänglichen Server gespeichert sein. Sie können dann externen Empfängern oder Benutzern zur Verfügung stehen.
+Um von außen gesehen werden zu können, müssen die Bilder, die in E-Mails und öffentlichen Ressourcen verwendet werden, die mit Kampagnen verknüpft sind, auf einem extern zugänglichen Server vorhanden sein. Sie können dann externen Empfängern oder Benutzern zur Verfügung stehen.
 
 ![](assets/s_ncs_install_deployment_wiz_img_uploading.png)
 

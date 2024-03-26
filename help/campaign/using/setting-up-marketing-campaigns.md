@@ -9,7 +9,7 @@ exl-id: a8fce21f-ffe3-4819-87ca-ac0ad9f21e41
 source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '1296'
-ht-degree: 89%
+ht-degree: 91%
 
 ---
 
@@ -71,7 +71,7 @@ Kampagnen können auch über ein Programm erstellt werden. Klicken Sie dazu auf 
 
 ![](assets/s_ncs_user_add_an_op.png)
 
-Wenn Sie eine Kampagne über die **[!UICONTROL Zeitplan]** in einem Programm, wird die Kampagne automatisch mit dem betreffenden Programm verknüpft. Die **[!UICONTROL Programm]** -Feld in diesem Fall ausgeblendet wird.
+Wenn Sie eine Kampagne über die Registerkarte **[!UICONTROL Planung]** eines Programms erstellen, wird die Kampagne dem jeweiligen Programm automatisch hinzugefügt. Das Feld **[!UICONTROL Programm]** wird in diesem Fall ausgeblendet.
 
 Wählen Sie im Fenster zur Kampagnenerstellung die Kampagnenvorlage aus und fügen Sie einen Namen und eine Beschreibung der Kampagne hinzu. Sie können auch das Anfangs- und Enddatum der Kampagne angeben.
 

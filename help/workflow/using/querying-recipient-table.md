@@ -8,7 +8,7 @@ exl-id: 5b037798-b092-4c98-9f6a-4af7fc7941c6
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '459'
-ht-degree: 100%
+ht-degree: 77%
 
 ---
 
@@ -36,19 +36,19 @@ In diesem Beispiel werden die Namen und E-Mail-Adressen der Empfänger gesucht, 
 
 Gehen Sie wie folgt vor:
 
-1. Klicken Sie auf **[!UICONTROL Werkzeuge > Generisches Abfragetool...]** und wählen Sie die Tabelle der **Empfänger** (**nms:recipient**). Klicken Sie nun auf **[!UICONTROL Weiter]**.
-1. Doppelklicken Sie auf **[!UICONTROL Nachname]**, **[!UICONTROL Vorname]**, **[!UICONTROL E-Mail]**, **[!UICONTROL Ort]** und **[!UICONTROL Kundennummer]**. Diese Felder befinden sich nun im Bereich der **[!UICONTROL Ausgabespalten]**. Klicken Sie nun auf **[!UICONTROL Weiter]**.
+1. Klicks **[!UICONTROL Tools > Generischer Abfrageeditor...]** und wählen Sie **Empfänger** (**nms:recipient**). Klicken Sie anschließend auf **[!UICONTROL Nächste]**.
+1. Wählen Sie: **[!UICONTROL Nachname]**, **[!UICONTROL Vorname]**, **[!UICONTROL Email]**, **[!UICONTROL Ort]** und **[!UICONTROL Kontonummer]**. Diese Felder werden zu **[!UICONTROL Ausgabespalten]**. Klicken Sie anschließend auf **[!UICONTROL Nächste]**.
 
    ![](assets/query_editor_03.png)
 
-1. Sortieren Sie die Spalten in der gewünschten Anzeigereihenfolge, hier beispielsweise die Kundennummern in absteigender und die Nachnamen in alphabetischer Reihenfolge. Klicken Sie nun auf **[!UICONTROL Weiter]**.
+1. Sortieren Sie die Spalten in der gewünschten Reihenfolge. Hier möchten wir die Kundennummern in absteigender Reihenfolge und die Namen in alphabetischer Reihenfolge sortieren. Klicken Sie anschließend auf **[!UICONTROL Nächste]**.
 
    ![](assets/query_editor_04.png)
 
 1. Wählen Sie im Fenster **[!UICONTROL Datenfilter]** die Option **[!UICONTROL Filterbedingungen]** aus, um die Abfrageergebnisse einzuschränken, und klicken Sie auf **[!UICONTROL Weiter]**.
 1. Das Fenster **[!UICONTROL Zielelement]** dient der Konfiguration der Filterbedingungen.
 
-   Gesucht werden die Empfänger mit E-Mail-Domain &quot;web.de&quot;. Wählen Sie also **E-Mail-Domain (@domain)** in der Spalte **[!UICONTROL Ausdruck]**, **gleich** in der Spalte **[!UICONTROL Operator]** und geben Sie &quot;web.de&quot; in der Spalte **[!UICONTROL Wert]** ein.
+   Definieren Sie die folgende Filterbedingung: Empfänger, deren E-Mail-Domain gleich &quot;orange.co.uk&quot; ist. Wählen Sie dazu **E-Mail-Domain (@email)** im **[!UICONTROL Ausdruck]** Spalte, wählen **gleich** im **[!UICONTROL Operator]** und geben Sie &quot;orange.co.uk&quot;in der **[!UICONTROL Wert]** Spalte.
 
    ![](assets/query_editor_05.png)
 

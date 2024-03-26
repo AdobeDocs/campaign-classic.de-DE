@@ -6,9 +6,9 @@ badge: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Reporting, Monitoring
 exl-id: 6839fd7e-ecf4-4504-90a8-0207bc3991e4
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
-workflow-type: ht
-source-wordcount: '2511'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '2495'
+ht-degree: 85%
 
 ---
 
@@ -48,7 +48,7 @@ Dieser Bericht enthält Informationen zum Datendurchsatz der Sendungen in Bezug 
 
 ![](assets/s_ncs_user_report_toolbar.png)
 
-Sie können die Anzeige durch Änderung des Parameters (z. B. 1 Stunde, 3 Stunden, 24 Stunden) variieren. Klicken Sie auf die Schaltfläche **[!UICONTROL Aktualisieren]**, um Ihre Auswahl zu bestätigen.
+Sie können die angezeigten Werte durch Änderung des Parameters (z. B. 1 Stunde, 3 Stunden, 24 Stunden) konfigurieren. Klicks **[!UICONTROL Aktualisieren]** um Ihre Auswahl zu bestätigen.
 
 >[!NOTE]
 >
@@ -67,8 +67,8 @@ Dieser Bericht zeigt Öffnungen, Klicks und Transaktionen in Form eines Diagramm
 Folgende Optionen stehen zur Verfügung:
 
 * **[!UICONTROL Öffnungen]**: Gesamtzahl der geöffneten Nachrichten. E-Mails im Textformat werden nicht berücksichtigt. Weiterführende Informationen zum Verfolgen von Öffnungen finden Sie im Abschnitt [Öffnungs-Tracking](../../reporting/using/indicator-calculation.md#tracking-opens-).
-* **[!UICONTROL Klicks]**: Gesamtzahl der Klicks auf Links in Sendungen. Klicks auf Abmelde- und Mirrorseite-Links werden nicht berücksichtigt.
-* **[!UICONTROL Transaktionen]**: Gesamtzahl der Transaktionen infolge eines Versands. Damit die Transaktionen berücksichtigt werden können, muss auf der entsprechenden Webseite ein Webtrackingtag vom Typ Transaktion gesetzt werden. Die Konfiguration des Webtrackings wird in [diesem Abschnitt](../../configuration/using/about-web-tracking.md) erläutert.
+* **[!UICONTROL Klicks]** : Gesamtzahl der Klicks auf Links in Sendungen. Klicks auf Abmelde- und Mirrorseite-Links werden nicht berücksichtigt.
+* **[!UICONTROL Transaktionen]** : Gesamtzahl der Transaktionen nach Erhalt einer Nachricht. Damit eine Transaktion berücksichtigt werden kann, muss auf der entsprechenden Webseite ein Webtrackingtag vom Typ Transaktion gesetzt werden. Die Konfiguration des Webtrackings wird im Abschnitt [diesem Abschnitt](../../configuration/using/about-web-tracking.md).
 
 ## Fehler und Bounces {#non-deliverables-and-bounces}
 
@@ -82,7 +82,7 @@ Die **[!UICONTROL Anzahl verarbeiteter Nachrichten]** entspricht der Gesamtzahl 
 
 >[!NOTE]
 >
->Die in diesem Bericht dargestellten Fehler lösen eine Quarantäne der betroffenen Adressen aus. Weiterführende Informationen zur Quarantäneverwaltung finden Sie im Abschnitt [Quarantäneverwaltung](../../delivery/using/understanding-quarantine-management.md).
+>Die in diesem Bericht angezeigten Fehler lösen einen Quarantäneprozess aus. Weitere Informationen zur Quarantäneverwaltung finden Sie unter [Quarantäneverwaltung](../../delivery/using/understanding-quarantine-management.md).
 
 Der erste Teil des Berichts zeigt die Verteilung der fehlgeschlagenen Nachrichten nach Typ in Form einer Tabelle und eines Diagramms.
 
@@ -99,12 +99,12 @@ Folgende Indikatoren werden angezeigt:
 * **[!UICONTROL Postfach voll]**: Fehler, der nach fünf fehlgeschlagenen Zustellversuchen erzeugt wird, wenn das Postfach zu viele Nachrichten enthält.
 * **[!UICONTROL Konto deaktiviert]**: Fehler, wenn eine Adresse nicht mehr existiert.
 * **[!UICONTROL Abgelehnt]**: Fehler, wenn eine Adresse von einem ISP (Internet Service Provider) z. B. infolge der Anwendung einer Sicherheitsregel (Anti-Spam-Software) zurückgewiesen wird.
-* **[!UICONTROL Unerreichbar]**: Fehler in der Verteilungskette der Nachricht (Vorfall beim SMTP-Server, zeitweilig unerreichbare Domain usw.).
+* **[!UICONTROL Unerreichbar]**: Fehler in der Nachrichtenverteilungs-Zeichenfolge (Vorfall beim SMTP-Server, zeitweilig unerreichbare Domain usw.).
 * **[!UICONTROL Nicht angemeldet]**: Fehler, wenn das Mobiltelefon des Empfängers bei Versand der Nachricht ausgeschaltet war oder über keinen Netzempfang verfügte.
 
   >[!NOTE]
   >
-  >Dieser Fehler betrifft nur Sendungen über Mobile-Kanäle. Weiterführende Informationen dazu finden Sie in [diesem Abschnitt](../../delivery/using/sms-channel.md).
+  >Dieser Indikator betrifft nur Sendungen über mobile Kanäle. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../delivery/using/sms-channel.md).
 
   Jede Zeile der Datentabelle kann durch Anklicken des Symbols `[+]` ausgeklappt werden. Damit kann für jeden Fehlertyp die Verteilung der fehlerhaften Nachrichten nach Domain angezeigt werden.
 
@@ -126,7 +126,7 @@ Jede Zeile der Datentabelle kann durch Klick auf das Symbol ]+[ ausgeklappt werd
 
 >[!NOTE]
 >
->Die in diesem Bericht angezeigten Domain-Namen werden im Cube **[!UICONTROL Versandlogs (broadlogrcp)]** festgelegt und können vom Benutzer angepasst werden. Weiterführende Informationen finden Sie in [diesem Abschnitt](../../reporting/using/ac-cubes.md). In der Kategorie **[!UICONTROL Sonstige]** werden die Domains zusammengefasst, die keiner der festgelegten Domains entsprechen.
+>Die in diesem Bericht angezeigten Domain-Namen werden auf Cube-Ebene definiert. Um diese Werte zu ändern, bearbeiten Sie die **[!UICONTROL Versandlogs (broadlogrcp)]** Cube. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../reporting/using/ac-cubes.md). Die **[!UICONTROL sonstige]** -Kategorie enthält Domänennamen, die nicht zu einer bestimmten Klasse gehören.
 
 ## Browser {#browsers}
 
@@ -186,13 +186,13 @@ Der zentrale Bereich zeigt die Teilungs- und Öffnungsstatistiken der E-Mail.
 
 In der Rubrik **[!UICONTROL Teilungen]** werden folgende Indikatoren angezeigt:
 
-* **[!UICONTROL Anz. Teilungen]**: Anzahl der geteilten Nachrichten je Medium. Der Wert entspricht der Zahl der Klicks auf das dem Gestaltungsbaustein **[!UICONTROL Teilen-Links der sozialen Netzwerke]** entsprechende Symbol.
+* **[!UICONTROL Anzahl Teilungsaktivitäten]** : Gesamtzahl der in jedem sozialen Netzwerk geteilten Nachrichten. Dieser Wert entspricht der Gesamtzahl der Klicks auf das entsprechende Symbol **[!UICONTROL Links zur Freigabe in sozialen Netzwerken]** Gestaltungsbaustein.
 * **[!UICONTROL Verteilung]**: Prozentualer Anteil der Teilungen im jeweiligen Medium in Bezug auf die Gesamtzahl der Teilungen.
 * **[!UICONTROL Teilungsrate]**: Prozentualer Anteil der Teilungen im jeweiligen Medium in Bezug auf die Gesamtzahl der zu sendenden Nachrichten.
 
 In der Rubrik **[!UICONTROL Öffnungen]** werden folgende Indikatoren angezeigt:
 
-* **[!UICONTROL Anz. Öffnungen]**: Anzahl der Nachrichten, die von Personen, an die die Nachricht (über den Gestaltungsbaustein **[!UICONTROL Teilen-Links der sozialen Netzwerke]**) weitergeleitet wurde, geöffnet wurden. Der Wert entspricht der Anzahl der Mirrorseiten-Öffnungen. Die Öffnungen der Mirrorseite durch Zielgruppenempfänger werden in diesem Wert nicht berücksichtigt.
+* **[!UICONTROL Anzahl von Öffnungen]** : Gesamtzahl der Nachrichten, die von Personen geöffnet wurden, an die die Nachricht weitergeleitet wurde (über die **[!UICONTROL Links zur Freigabe in sozialen Netzwerken]** Gestaltungsbaustein). Dieser Wert entspricht der Anzahl der Mirrorseiten-Erscheinungen. Öffnungen durch Versandempfänger werden nicht berücksichtigt.
 * **[!UICONTROL Verteilung]**: Prozentualer Anteil der Öffnungen im jeweiligen Medium in Bezug auf die Gesamtzahl der Öffnungen.
 * **[!UICONTROL Öffnungsrate]**: Prozentualer Anteil der Öffnungen im jeweiligen Medium in Bezug auf die Gesamtzahl der Teilungen.
 
@@ -212,9 +212,9 @@ Die Statistiken werden in Form von Diagrammen und Tabellen dargestellt.
 
 Folgende Indikatoren werden angezeigt:
 
-* **[!UICONTROL Neue Kontakte]**: Anzahl der Anmeldungen infolge des Erhalts einer per E-Mail weitergeleiteten Nachricht. Der Wert entspricht der Anzahl an Personen, die per E-Mail eine weitergeleitete Nachricht erhalten, auf den **[!UICONTROL Anmelde-Link]** geklickt und das Formular ausgefüllt haben.
+* **[!UICONTROL Neue Kontakte]** : Anzahl neuer Anmeldungen infolge des Erhalts einer per E-Mail geteilten Nachricht. Dieser Wert entspricht der Anzahl der Personen, die eine per E-Mail geteilte Nachricht erhalten und auf die **[!UICONTROL Anmelde-Link]** und das Anmeldeformular ausgefüllt.
 * **[!UICONTROL Öffnungen]**: Anzahl der Nachrichten, die von Personen, an die die Nachricht (über den Gestaltungsbaustein **[!UICONTROL Teilen-Links der sozialen Netzwerke]**) weitergeleitet wurde, geöffnet wurden. Der Wert entspricht der Anzahl der Mirrorseiten-Öffnungen. Die Öffnungen der Mirrorseite durch Zielgruppenempfänger werden in diesem Wert nicht berücksichtigt.
-* **[!UICONTROL Teilungen]**: Anzahl der in sozialen Netzwerken geteilten Nachrichten. Der Wert entspricht der Zahl der Klicks auf das dem Gestaltungsbaustein **[!UICONTROL Teilen-Links der sozialen Netzwerke]** entsprechende Symbol.
+* **[!UICONTROL Teilungsaktivitäten]** : Gesamtzahl der über soziale Netzwerke geteilten Nachrichten. Dieser Wert entspricht der Gesamtzahl der Klicks auf das Symbol der **[!UICONTROL Links zur Freigabe in sozialen Netzwerken]** Gestaltungsbaustein.
 
 ## Betriebssysteme {#operating-systems}
 
@@ -259,7 +259,7 @@ Dieser Bericht enthält Informationen bezüglich der Informationsdienst-Abonneme
 
 ![](assets/s_ncs_user_services_report.png)
 
-Er kann für ein bestimmtes Abonnement angezeigt werden, indem Sie im Knoten **[!UICONTROL Profile und Zielgruppen > Dienste und Abonnements]** der Homepage oder des Explorers den entsprechenden Titel markieren und auf die Rubrik **[!UICONTROL Berichte]** klicken. Der Bericht **[!UICONTROL Abonnement-Verfolgung]** steht standardmäßig zur Verfügung und gibt über verschiedene Zeiträume hinweg Auskunft über die An- und Abmeldeentwicklung sowie die Treue der Abonnenten. Der Zeitraum des Diagramms kann über die Dropdown-Liste angepasst werden. Klicken Sie auf **[!UICONTROL Aktualisieren]**, um Ihre Wahl zu bestätigen.
+Es kann für ein Abonnement angezeigt werden, indem Sie auf die **[!UICONTROL Profile und Zielgruppen > Dienste und Abonnements]** -Knoten der Startseite oder des Explorer. Wählen Sie das gewünschte Abonnement aus und klicken Sie auf die Schaltfläche **[!UICONTROL Berichte]** Registerkarte. Die **[!UICONTROL Abonnement-Verfolgung]** ist standardmäßig verfügbar. Sie können damit die An- und Abmeldetrends und die Treuerate über einen Zeitraum hinweg sehen. Die Darstellung dieser Daten kann über die Dropdown-Liste konfiguriert werden. Klicks **[!UICONTROL Aktualisieren]** , um die ausgewählte Konfiguration zu validieren.
 
 Weiterführende Informationen dazu finden Sie auf [dieser Seite](../../delivery/using/managing-subscriptions.md).
 

@@ -7,8 +7,8 @@ feature: Workflows
 exl-id: cb24aea5-f3c7-4b17-8899-1792ea18c235
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '726'
-ht-degree: 100%
+source-wordcount: '735'
+ht-degree: 94%
 
 ---
 
@@ -68,7 +68,7 @@ Weiterführende Informationen zum Erstellen von Listen finden Sie in diesem [Abs
      >
      >Die Datei muss sich auf dem Server befinden. Pfad und Name müssen mit den Werten übereinstimmen, die in der **[!UICONTROL JavaScript-Code]**-Aktivität des Workflows eingegeben wurden (siehe [3. Schritt: Erstellung des Workflows](#step-3--creating-the-workflow)).
 
-   * Gehen Sie in den **[!UICONTROL Erweitert]**-Tab und aktivieren Sie die Option **[!UICONTROL Script erstellen zur Berechnung des Dateinamens, der beim Empfänger angezeigt wird]**. Geben Sie im Eingabefeld den Namen für den Anhang im endgültigen Versand ein.
+   * Wählen Sie die Registerkarte **[!UICONTROL Erweitert]** aus und markieren Sie **[!UICONTROL Script erstellen zur Berechnung des Dateinamens, der beim Empfänger angezeigt wird]**. Geben Sie im Eingabefeld den Namen für den Anhang im endgültigen Versand ein.
 
      ![](assets/use_case_report_6bis.png)
 
@@ -111,7 +111,7 @@ Für das Anwendungsbeispiel ist ein Workflow mit drei Aktivitäten zu erstellen:
 
    Hierbei werden folgende Variablen verwendet:
 
-   * **var reportName**: der interne Name des Berichts in Anführungsstrichen. Im vorliegenden Beispiel lautet der interne Name des **Trackingindikatoren**-Berichts &quot;deliveryFeedback&quot;.
+   * **var reportName**: Geben Sie den internen Namen des Berichts in doppelte Anführungszeichen ein. In diesem Fall ist der interne Name der **Trackingindikator** ist &quot;deliveryFeedback&quot;.
    * **var path**: Speicherpfad der Datei (&quot;tmp/files/&quot;), Name des Anhangs (&quot;deliveryFeedback&quot;) und Dateiendung (&quot;.pdf&quot;). Im vorliegenden Beispiel ist der Name des Anhangs mit dem internen Namen des Berichts identisch. Die Werte müssen in Anführungszeichen gesetzt und durch das Zeichen &quot;+&quot; verbunden werden.
 
      >[!CAUTION]

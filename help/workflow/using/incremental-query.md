@@ -7,8 +7,8 @@ feature: Workflows, Targeting Activity
 exl-id: abc08232-1a92-41e8-90f1-02e0a673539b
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '386'
-ht-degree: 100%
+source-wordcount: '387'
+ht-degree: 87%
 
 ---
 
@@ -33,7 +33,7 @@ Die Konfiguration der Abfrage entspricht der von Standardabfragen, aber die Ausf
 
 Gehen Sie dazu wie folgt vor:
 
-1. Kreuzen Sie im Tab **[!UICONTROL Planung &amp; Verlauf]** die Option **[!UICONTROL Ausführung planen]** an. Nach Erstellung bleibt die Aufgabe aktiv, aber sie startet nur zu den in der Planung angegebenen Zeitpunkten, um die Abfrage auszuführen. Wenn die Option deaktiviert wurde, wird die Abfrage **einmalig und sofort** ausgeführt.
+1. Im **[!UICONTROL Planung und Verlauf]** auswählen, wählen Sie die **[!UICONTROL Ausführung planen]** -Option. Die Aufgabe bleibt aktiv, sobald sie erstellt wurde, und wird nur zu den im Zeitplan für die Ausführung der Abfrage angegebenen Zeitpunkten ausgelöst. Wenn die Option jedoch deaktiviert ist, wird die Abfrage sofort ausgeführt **und in einem Schritt**.
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Ändern...]**.
 
    Im sich öffnenden **[!UICONTROL Planungsassistent]**-Fenster können Sie den Ausführungsrhythmus und den Gültigkeitszeitraum definieren.
@@ -66,4 +66,4 @@ Gehen Sie dazu wie folgt vor:
 * schema
 * recCount
 
-Anhand der drei Werte lässt sich die durch den Ausschluss ermittelte Zielgruppe identifizieren. **[!UICONTROL tableName]** ist der Name der Tabelle, welche die Kennungen der Zielgruppenempfänger enthält, **[!UICONTROL schema]** ist das Schema der Population, (i. d. R. nms:recipient) und **[!UICONTROL recCount]** ist die Anzahl an Elementen in der Tabelle.
+Anhand der drei Werte lässt sich die durch die Abfrage ermittelte Population identifizieren. **[!UICONTROL tableName]** ist der Name der Tabelle, welche die Kennungen der Zielgruppe enthält, **[!UICONTROL schema]** ist das Schema der Population, (in der Regel nms:recipient) und **[!UICONTROL recCount]** ist die Anzahl der Elemente in der Tabelle.

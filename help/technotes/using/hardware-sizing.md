@@ -7,7 +7,7 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Cla
 exl-id: c47e73a0-dbd8-43f5-a363-7e6783dc7685
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2519'
+source-wordcount: '2576'
 ht-degree: 100%
 
 ---
@@ -54,11 +54,11 @@ In diesem Dokument werden außerdem die folgenden Nutzungsarten für alle drei S
 
 ## Allgemeine Richtlinien
 
-Campaign ist eine datenbankorientierte Anwendung, und die Leistung des Datenbank-Servers ist entscheidend. Die Ausführung von Workflows, Segmentierungen, Uploads von Tracking-Daten, eingehende Interaktionen, Analysen und andere Aktivitäten führen alle zu Datenbankaktivität. Im Allgemeinen bestimmen die Größe und Häufigkeit dieser Vorgänge die Größe Ihrer Datenbank-Server.
+Campaign ist eine datenbankorientierte Anwendung, und die Performance des Datenbank-Servers ist entscheidend. Die Ausführung von Workflows, Segmentierungen, Uploads von Tracking-Daten, eingehende Interaktionen, Analysen und andere Aktivitäten führen alle zu Datenbankaktivität. Im Allgemeinen bestimmen die Größe und Häufigkeit dieser Vorgänge die Größe Ihrer Datenbank-Server.
 
 Die Anwendungs-Server in Ihrer Marketing-Instanz benötigen ausreichend CPU und Arbeitsspeicher, um Workflows auszuführen und auf SOAP-API-Aufrufe zu reagieren, einschließlich Anfragen von Benutzenden der Campaign-Konsole. Die CPU-Anforderungen können für Workflows, die ausgehende Interaktionen mit komplexen Angebotsregeln verwenden, für Workflows, die benutzerdefiniertes JavaScript ausführen, und für Webanwendungen mit hohem Traffic erheblich sein.
 
-Campaign-Webanwendungen können auch auf den App-Servern der Marketing-Instanz oder auf separaten Webserver-Systemen bereitgestellt werden. Da Webanwendungs-Workloads mit wichtigen Workflows und Benutzenden der Campaign-Konsole in Konflikt stehen, können Webanwendungen und eingehende Interaktionen auf separaten Servern bereitgestellt werden, um sicherzustellen, dass die Kernfunktionen von Campaign zuverlässig und mit guter Leistung ausgeführt werden.
+Campaign-Webanwendungen können auch auf den App-Servern der Marketing-Instanz oder auf separaten Webserver-Systemen bereitgestellt werden. Da Webanwendungs-Workloads mit wichtigen Workflows und Benutzenden der Campaign-Konsole in Konflikt stehen, können Webanwendungen und eingehende Interaktionen auf separaten Servern bereitgestellt werden, um sicherzustellen, dass die Kernfunktionen von Campaign zuverlässig und mit guter Performance ausgeführt werden.
 
 Aus Gründen der Sicherheit und Verfügbarkeit empfiehlt Adobe, den Internet-Traffic und den von geschäftlichen Anwenderinnen und Anwendern generierten Traffic zu trennen. Daher enthalten die Diagramme zwei Gruppen von Servern: den Webserver (Internet-Zugriff auf Web1 und Web2) und die Appserver (Geschäftsprozesse App1 und App2).
 
@@ -124,7 +124,7 @@ Schätzungsweise benötigt die Datenbank zum Speichern aller technischen Adobe C
 >
 >Diese Schätzung umfasst keine zusätzlichen Kundendaten. Wenn Sie zusätzliche Spalten oder Tabellen mit Kundendaten in die Adobe Campaign-Datenbank replizieren möchten, müssen Sie dafür den zusätzlichen Speicherplatzbedarf abschätzen. Für hochgeladene Segmente/Listen ist ebenfalls je nach Größe, Häufigkeit und Aufbewahrungszeitraum mehr Speicher erforderlich.
 
-Beachten Sie außerdem, dass aufgrund der täglich verarbeiteten Menge an Informationen die IOPS des Datenbank-Servers wichtig sind. An einem Spitzentag können Sie beispielsweise Kampagnen für insgesamt 500.000 Empfängerinnen und Empfänger bereitstellen. Zur Ausführung jeder Kampagne fügt Adobe Campaign 500.000 Datensätze in eine Tabelle mit rund 12 Millionen Datensätzen ein (die Versandlog-Tabelle). Für eine akzeptable Leistung während der Kampagnenimplementierung empfiehlt Adobe bei diesem Szenario mindestens 60.000 zufällige Lese-/Schreib-IOPS mit je 4 KB.
+Beachten Sie außerdem, dass aufgrund der täglich verarbeiteten Menge an Informationen die IOPS des Datenbank-Servers wichtig sind. An einem Spitzentag können Sie beispielsweise Kampagnen für insgesamt 500.000 Empfängerinnen und Empfänger bereitstellen. Zur Ausführung jeder Kampagne fügt Adobe Campaign 500.000 Datensätze in eine Tabelle mit rund 12 Millionen Datensätzen ein (die Versandlog-Tabelle). Für eine akzeptable Performance während der Kampagnenimplementierung empfiehlt Adobe bei diesem Szenario mindestens 60.000 zufällige Lese-/Schreib-IOPS mit je 4 KB.
 
 
 ## Szenario 2: Große Bereitstellung{#scenario-2}
@@ -233,7 +233,7 @@ Die Datenmenge für jede aktive Empfängerin und jeden aktiven Empfänger erford
   Der Arbeitsspeicher für den Datenbank-Server wird geschätzt, indem sichergestellt wird, dass der Datenbankpuffer-Pool groß genug für alle Empfängerdaten sowie die temporären Tabellen für aktive Workflows ist und dazu noch eine gewisse Reserve für andere Datenbankvorgänge hat.
 
 * **Nutzung ausgehender Interaktionen**
-Regeln für Interaktionen im Batch-Modus werden in Workflows ausgewertet, die die gesamte Berechnungskomplexität an die Datenbank übergeben. Der wichtigste Faktor für den Aufwand in der Datenbank ist die Gesamtzahl der geeigneten Angebote, die während eines Engine-Aufrufs berechnet wurden (Zielgruppengröße x durchschnittliche Anzahl der Angebote pro Empfänger, bevor die n besten Angebote beibehalten werden). Die CPU-Geschwindigkeit des Datenbank-Servers ist der wichtigste Leistungsfaktor.
+Regeln für Interaktionen im Batch-Modus werden in Workflows ausgewertet, die die gesamte Berechnungskomplexität an die Datenbank übergeben. Der wichtigste Faktor für den Aufwand in der Datenbank ist die Gesamtzahl der geeigneten Angebote, die während eines Engine-Aufrufs berechnet wurden (Zielgruppengröße x durchschnittliche Anzahl der Angebote pro Empfänger, bevor die n besten Angebote beibehalten werden). Die CPU-Geschwindigkeit des Datenbank-Servers ist der wichtigste Performance-Faktor.
 
 * **Nutzung von eingehenden Interaktionen oder SOAP-APIs**
 Regeln und Angebote für eingehende Interaktionen werden in der Marketing-Datenbank ausgewertet, wodurch die Ressourcen des Datenbank-Servers, insbesondere die CPU, in erheblichem Maße in Anspruch genommen werden. Eine starke Nutzung von eingehenden Interaktionen oder SOAP-APIs setzt separate Webserver voraus, um die Arbeitslast von der Ausführung von Campaign-Workflows zu trennen.
@@ -245,7 +245,7 @@ Werden Tracking-Daten länger als 90 Tage aufbewahrt, ist mehr Datenbankspeicher
 
 ## Virtualisierung
 
-Alle Campaign-Server eignen sich gut zur Virtualisierung. Es müssen verschiedene Punkte berücksichtigt werden, um eine angemessene Verfügbarkeit und Leistung sicherzustellen.
+Alle Campaign-Server eignen sich gut zur Virtualisierung. Es müssen verschiedene Punkte berücksichtigt werden, um eine angemessene Verfügbarkeit und Performance sicherzustellen.
 
 * **Failover-Konfiguration**
 Cluster-Server, z. B. redundante Anwendungs-Server unter einem Proxy mit Lastenausgleich, müssen auf separater Hardware bereitgestellt werden, um sicherzustellen, dass bei einem Hardware-Fehler nicht beide VMs ausfallen.
@@ -253,14 +253,14 @@ Cluster-Server, z. B. redundante Anwendungs-Server unter einem Proxy mit Lastena
 * **E/A-Konfiguration**
 Die empfohlene RAID-Konfiguration muss zwecks Datenbanksicherheit beibehalten werden, damit bei Verlust eines Speichergeräts keine Daten verloren gehen.
 
-* **E/A-Leistung**
-Die empfohlene IOPS-Bewertung für den Datenbankspeicher muss eingehalten werden. Cloud-Dienste wie Amazon EC2 bieten möglicherweise nicht die erforderliche Leistung und müssen sorgfältig ausgewertet werden. Beispielsweise liefern von Amazon EC2 bereitgestellte SSD-Volumes derzeit jeweils 20.000 IOPS. Weitere Informationen finden Sie in der [Amazon-Dokumentation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html). Eine RAID-Konfiguration mit vier Volumes entspräche also 80.000 IOPS, was unter Umständen nicht ausreicht.
+* **E/A-Performance**
+Die empfohlene IOPS-Bewertung für den Datenbankspeicher muss eingehalten werden. Cloud-Dienste wie Amazon EC2 bieten möglicherweise nicht die erforderliche Performance und müssen sorgfältig ausgewertet werden. Beispielsweise liefern von Amazon EC2 bereitgestellte SSD-Volumes derzeit jeweils 20.000 IOPS. Weitere Informationen finden Sie in der [Amazon-Dokumentation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html). Eine RAID-Konfiguration mit vier Volumes entspräche also 80.000 IOPS, was unter Umständen nicht ausreicht.
 
-Adobe empfiehlt Leistungstests für jede virtualisierte Adobe Campaign-Implementierung, bevor das System in die Produktion aufgenommen wird.
+Adobe empfiehlt Performance-Tests für jede virtualisierte Adobe Campaign-Implementierung, bevor das System in die Produktion aufgenommen wird.
 
 ## Verwandte Themen
 
 * [Überwachungsverfahren in Campaign](../../production/using/monitoring-processes.md)
 * [Allgemeine Campaign-Architektur](../../installation/using/general-architecture.md)
-* [Leistungs- und Durchsatzprobleme](../../production/using/performance-and-throughput-issues.md)
+* [Performance- und Durchsatzprobleme](../../production/using/performance-and-throughput-issues.md)
 * [Checkliste für Sicherheit und Datenschutz](../../installation/using/get-started-security-privacy.md)

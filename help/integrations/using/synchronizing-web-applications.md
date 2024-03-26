@@ -9,8 +9,8 @@ hidefromtoc: true
 exl-id: 975bdc94-5da4-45ae-a3bd-e8674b447098
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '871'
-ht-degree: 100%
+source-wordcount: '866'
+ht-degree: 78%
 
 ---
 
@@ -32,7 +32,7 @@ Dazu ist Folgendes erforderlich:
 
 ## Erstellen von Web-Programm und -Service {#creating-the-web-application-and-service}
 
-Sie können in Campaign v7 Webanwendungen erstellen, mit denen sich Empfänger für einen Dienst anmelden können. Die Webanwendung und der Dienst werden in Campaign v7 konzipiert und gespeichert und Sie können diesen Dienst über eine Campaign Standard-Kommunikation aktualisieren. Weiterführende Informationen zu Webanwendungen in Campaign v7 finden Sie in [diesem Abschnitt](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes).
+In Campaign v7 können Sie Webanwendungen erstellen, mit denen sich Empfänger für einen Dienst anmelden können. Die Webanwendung und der Dienst werden in Campaign v7 erstellt und gespeichert und Sie können diesen Dienst über eine Campaign Standard-Kommunikation aktualisieren. Weitere Informationen zu Webanwendungen in Campaign v7 finden Sie unter [diesem Abschnitt](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes).
 
 In Campaign v7 wurden die folgenden Objekte erstellt:
 
@@ -43,11 +43,11 @@ In Campaign v7 wurden die folgenden Objekte erstellt:
 
    ![](assets/acs_connect_lp_2.png)
 
-1. Bearbeiten Sie die Aktivität **[!UICONTROL Vorausfüllen]**. Das Feld **[!UICONTROL Referenzierte Daten werden automatisch in das Formular geladen]** ist mit einem Häkchen versehen und die Identifizierungsmethode **[!UICONTROL Adobe-Campaign-Verschlüsselung]** ist ausgewählt. Dadurch kann die Webanwendung die Felder des Formulars mit den in der Adobe Campaign-Datenbank gespeicherten Daten ausfüllen. Weiterführende Informationen hierzu finden Sie in [diesem Dokument](../../web/using/publishing-a-web-form.md#pre-loading-the-form-data).
+1. Bearbeiten Sie die **[!UICONTROL Vorausfüllen]** -Aktivität. Die **[!UICONTROL Im Formular referenzierte Daten werden automatisch geladen]** aktiviert ist und die **[!UICONTROL Adobe Campaign-Verschlüsselung]** Identifizierungsmethode ausgewählt ist. Dadurch kann die Webanwendung die Formularfelder mit den in der Adobe Campaign-Datenbank gespeicherten Daten vorausfüllen. Siehe [dieses Dokuments](../../web/using/publishing-a-web-form.md#pre-loading-the-form-data).
 
    ![](assets/acs_connect_lp_4.png)
 
-1. Bearbeiten Sie die **[!UICONTROL Seite]**. Drei Felder (Name, E-Mail und Telefonnummer) wurden eingefügt sowie das Kontrollkästchen, mit dem sich der Empfänger zum Newsletter anmelden kann (**[!UICONTROL Newsletter]**-Dienst).
+1. Bearbeiten Sie die **[!UICONTROL Seite]**. Es wurden drei Felder (Name, E-Mail und Telefon) sowie ein Kontrollkästchen eingefügt, mit dem der Empfänger zum Newsletter eingeladen werden kann (**[!UICONTROL Newsletter]** -Dienst).
 
    ![](assets/acs_connect_lp_3.png)
 
@@ -61,7 +61,7 @@ In Campaign v7 wurden die folgenden Objekte erstellt:
 
 ## Replizieren der Daten {#replicating-the-data}
 
-Um die erforderlichen Daten zwischen Campaign v7 und Campaign Standard zu replizieren, stehen verschiedene Workflow-Vorlagen für die Replikation zur Verfügung. Der Workflow für die **[!UICONTROL Profilreplikation]** repliziert automatisch alle Campaign v7-Empfänger nach Campaign Standard. Siehe [Technische und Replikations-Workflows](../../integrations/using/acs-connector-principles-and-data-cycle.md#technical-and-replication-workflows). Der Workflow für die **[!UICONTROL Landingpage-Replikation]** ermöglicht eine Replikation der Webanwendungen, die wir in Campaign Standard nutzen möchten.
+Um die erforderlichen Daten zwischen Campaign v7 und Campaign Standard zu replizieren, stehen verschiedene Vorlagen für Replikations-Workflows zur Verfügung. Die **[!UICONTROL Profilreplikation]** Der Workflow repliziert automatisch alle Campaign v7-Empfänger nach Campaign Standard. Siehe [Technische und Replikations-Workflows](../../integrations/using/acs-connector-principles-and-data-cycle.md#technical-and-replication-workflows). Der Workflow für die **[!UICONTROL Landingpage-Replikation]** ermöglicht eine Replikation der Webanwendungen, die wir in Campaign Standard nutzen möchten.
 
 ![](assets/acs_connect_lp_1.png)
 
@@ -87,7 +87,7 @@ Um zu überprüfen, ob die Daten korrekt repliziert wurden, gehen Sie in Campaig
 
 In diesem Abschnitt erfahren Sie, wie in eine E-Mail in Campaign Standard ein Link eingefügt wird, der zu einer Landingpage weist, die von einer Campaign v7-Webanwendung repliziert wurde.
 
-Die Schritte für die Erstellung, die Konzeption und den Versand der E-Mail erfolgen wie üblich. Siehe das [Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/campaign-standard-home.html?lang=de)-Handbuch.
+Die Schritte zum Erstellen, Entwerfen und Senden der E-Mail sind mit denen einer klassischen E-Mail identisch. Siehe [Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/campaign-standard-home.html?lang=de) Dokumentation.
 
 1. Erstellen Sie eine neue E-Mail und wählen Sie mindestens ein repliziertes Profil als Zielgruppe.
 1. Bearbeiten Sie den Inhalt und fügen Sie einen **[!UICONTROL Link zu einer Landingpage]** hinzu.

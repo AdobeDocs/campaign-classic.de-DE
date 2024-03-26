@@ -8,9 +8,9 @@ feature: Monitoring
 role: User, Data Engineer
 exl-id: 44ecc8c6-6584-43eb-96b4-7d8463053123
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: ht
-source-wordcount: '1255'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1258'
+ht-degree: 81%
 
 ---
 
@@ -55,7 +55,7 @@ Der Inhalt dieses Tabs kann entsprechend Ihren Anforderungen konfiguriert werden
 
 Der **[!UICONTROL Versand]**-Tab zeigt die Versandlogs, d. h. die Liste der Zustellversuche, und zeigt für jeden Empfänger den Status des Versands sowie die entsprechenden Nachrichten an.
 
-Sie haben die Möglichkeit, beispielsweise nur fehlgeschlagene Zustellversuche anzuzeigen oder die Empfänger, die in Quarantäne gekommen sind. Klicken Sie hierfür auf die Schaltfläche **[!UICONTROL Filter]** und wählen Sie **[!UICONTROL Nach Status]**. Wählen Sie nun den gewünschten Status aus der Dropdown-Liste aus. Auf [dieser Seite](delivery-statuses.md) werden die unterschiedlichen Status beschrieben.
+Für einen Versand können Sie (z. B.) nur Empfänger anzeigen, deren Versand fehlgeschlagen ist oder deren Adresse in Quarantäne ist. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Filter]** Schaltfläche und wählen Sie **[!UICONTROL Nach Status]**. Wählen Sie dann den Status in der Dropdown-Liste aus. Auf [dieser Seite](delivery-statuses.md) werden die unterschiedlichen Status beschrieben.
 
 >[!NOTE]
 >
@@ -79,7 +79,7 @@ Im **[!UICONTROL Tracking]**-Tab wird der Tracking-Verlauf des Versands angezeig
 
 Die Tracking-Konfiguration erfolgt im Versand-Assistenten. Siehe [Getrackte Links konfigurieren](how-to-configure-tracked-links.md).
 
-Interpretationen der **[!UICONTROL Trackingdaten]** finden Sie in den Versandberichten. Weiterführende Informationen dazu finden Sie in [diesem Abschnitt](../../reporting/using/delivery-reports.md).
+**[!UICONTROL Tracking]** -Daten werden in den Versandberichten interpretiert. Weitere Informationen finden Sie in diesem [Abschnitt](../../reporting/using/delivery-reports.md).
 
 ![](assets/s_ncs_user_delivery_tracking_tab.png)
 
@@ -105,7 +105,7 @@ Ein Untertab listet die durchgeführten **[!UICONTROL Testsendungen]** auf.
 
 ![](assets/s_ncs_user_delivery_log_tab.png)
 
-Sie können die Anzeige in diesem Fenster (wie auch in den Tabs **[!UICONTROL Versand]** bzw. **[!UICONTROL Tracking]**) anpassen und die Spalten auswählen, die angezeigt werden sollen. Klicken Sie hierfür auf das Symbol **[!UICONTROL Liste konfigurieren]** in der rechten unteren Ecke des Bildschirms. Weiterführende Informationen zur Listenanzeige finden Sie in [diesem Abschnitt](../../platform/using/adobe-campaign-workspace.md#configuring-lists).
+Sie können die in diesem Fenster angezeigten Informationen (und die der **[!UICONTROL Versand]** und **[!UICONTROL Tracking]** Tabs), indem Sie die anzuzeigenden Spalten auswählen. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Liste konfigurieren]** -Symbol in der rechten unteren Ecke. Weitere Informationen zur Konfiguration der Listenanzeige finden Sie unter [diesem Abschnitt](../../platform/using/adobe-campaign-workspace.md#configuring-lists).
 
 ## Synchronisation des Versand-Dashboards {#delivery-dashboard-synchronization}
 
@@ -115,13 +115,13 @@ Manche Indikatoren oder Status können falsch oder nicht aktuell sein. Gehen Sie
 
 * Wenn der Versandstatus falsch angezeigt wird, vergewissern Sie sich, dass alle nötigen Validierungen für diesen Versand durchgeführt wurden und die Workflows **[!UICONTROL operationMgt]** und **[!UICONTROL deliveryMgt]** problemlos ablaufen. Dieses Problem kann auch auftreten, wenn vom Versand eine Affinität verwendet wird, die in der Sendeinstanz nicht konfiguriert wurde.
 
-* Wenn Ihre Versandindikatoren noch null anzeigen und eine Mid-Sourcing-Konfiguration verwendet wird, überprüfen Sie den technischen Workflow **[!UICONTROL Mid-Sourcing (Versandzähler)]**. Starten Sie ihn, wenn sein Status nicht **[!UICONTROL Gestartet]** lautet. Sie können dann die Indikatoren neu berechnen lassen, indem Sie mit der rechten Maustaste den entsprechenden Versand im Adobe Campaign-Explorer und danach **[!UICONTROL Aktionen]** > **[!UICONTROL Sende- und Berichtindikatoren neu berechnen...]** auswählen. Weiterführende Informationen zu Trackingindikatoren finden Sie in diesem [Abschnitt](../../reporting/using/delivery-reports.md#tracking-indicators).
+* Wenn Ihre Versandindikatoren immer noch bei null liegen und Sie eine Mid-Sourcing-Konfiguration verwenden, überprüfen Sie die **[!UICONTROL Mid-Sourcing (Versandzähler)]** technischer Arbeitsablauf. Starten Sie sie, wenn ihr Status nicht **[!UICONTROL Gestartet]**. Anschließend können Sie versuchen, die Indikatoren neu zu berechnen, indem Sie mit der rechten Maustaste im Adobe Campaign-Explorer auf den entsprechenden Versand klicken und **[!UICONTROL Aktionen]** > **[!UICONTROL Sende- und Trackingindikatoren neu berechnen]**. Weiterführende Informationen zu Trackingindikatoren finden Sie in diesem Abschnitt [Abschnitt](../../reporting/using/delivery-reports.md#tracking-indicators).
 
-* Wenn Ihr Versandzähler nicht die Anzahl Ihrer Sendungen anzeigt, lassen Sie die Indikatoren neu berechnen, indem Sie mit der rechten Maustaste im Adobe Campaign-Explorer den entsprechenden Versand und danach **[!UICONTROL Aktionen]** > **[!UICONTROL Sende- und Berichtindikatoren neu berechnen...]** auswählen, um eine neue Synchronisation durchzuführen. Weiterführende Informationen zu Trackingindikatoren finden Sie in diesem [Abschnitt](../../reporting/using/delivery-reports.md#tracking-indicators).
+* Wenn Ihr Versandzähler nicht mit Ihrem Versand übereinstimmt, versuchen Sie, die Indikatoren neu zu berechnen, indem Sie mit der rechten Maustaste auf den entsprechenden Versand im Adobe Campaign-Explorer klicken und die Option **[!UICONTROL Aktionen]** > **[!UICONTROL Sende- und Trackingindikatoren neu berechnen]** , um eine erneute Synchronisierung durchzuführen. Weiterführende Informationen zu Trackingindikatoren finden Sie in diesem Abschnitt [Abschnitt](../../reporting/using/delivery-reports.md#tracking-indicators).
 
-* Wenn Ihr Versandzähler nicht auf dem aktuellen Stand für Mid-Sourcing-Bereitstellungen ist, vergewissern Sie sich, dass der technische Workflow **[!UICONTROL Mid-Sourcing (Versandzähler)]** läuft. Weiterführende Informationen dazu finden Sie auf dieser [Seite](../../installation/using/mid-sourcing-deployment.md).
+* Wenn Ihr Versandzähler für Mid-Sourcing-Bereitstellungen nicht aktuell ist, überprüfen Sie, ob die Variable **[!UICONTROL Mid-Sourcing (Versandzähler)]** technischer Workflow ausgeführt wird. Weiterführende Informationen hierzu finden Sie auf [dieser Seite](../../installation/using/mid-sourcing-deployment.md).
 
-Sie können Ihre Sendungen auch mithilfe unterschiedlicher Berichte über das Versand-Dashboard nachverfolgen. Weiterführende Informationen dazu finden Sie in [diesem Abschnitt](../../reporting/using/delivery-reports.md).
+Sie können Ihre Sendungen auch mit verschiedenen Berichten über das Versand-Dashboard verfolgen. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../reporting/using/delivery-reports.md).
 
 ## Anwendungsfall: Hinzufügen der IP-Adressen der Absender zu den Logs {#use-case}
 

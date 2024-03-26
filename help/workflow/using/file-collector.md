@@ -8,7 +8,7 @@ exl-id: bbec389e-c2ba-4b23-847f-b01dca6b8d5a
 source-git-commit: 1f87a5fba1298955fa07b9a045b21718c76a7fce
 workflow-type: tm+mt
 source-wordcount: '572'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
@@ -70,7 +70,7 @@ Auf dem ersten Tab der Aktivität **[!UICONTROL Datei-Wächter]** können Sie de
 
    Informationen zum Schritt **[!UICONTROL Verlaufserstellung]** finden Sie unter [HTTP-Übertragung](web-download.md).
 
-Die Reihenfolge der Dateiverarbeitung kann nicht beeinflusst werden. Um eine Reihe von Dateien schrittweise zu verarbeiten, kann die Option **[!UICONTROL Beenden, sobald eine Datei bearbeitet wurde]** in Verbindung mit einer Schlaufe verwendet werden. In diesem Fall werden die Dateien in alphabetischer Reihenfolge verarbeitet. Die Option **[!UICONTROL Fehlen von Dateien bearbeiten]** beendet die Schlaufe.
+Die Dateiverarbeitungsreihenfolge kann nicht bestimmt werden. Um einen Dateisatz sequenziell zu verarbeiten, verwenden Sie die **[!UICONTROL Beenden, sobald eine Datei verarbeitet wurde]** und erstellen Sie eine Schleife. In diesem Fall werden die Dateien in alphabetischer Reihenfolge verarbeitet. Die **[!UICONTROL Fehlen von Dateien bearbeiten]** -Option können Sie die Iteration abschließen.
 
 ![](assets/file_collect_loop.png)
 

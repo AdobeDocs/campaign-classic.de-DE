@@ -9,8 +9,8 @@ level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 100%
+source-wordcount: '949'
+ht-degree: 74%
 
 ---
 
@@ -80,7 +80,7 @@ Die Funktionen der Plattform sind in verschiedene Rubriken unterteilt. Verwenden
 
 Die Liste der Rubriken hängt von den installierten Packages und Add-ons sowie den Zugriffsberechtigungen des aktuellen Benutzers ab.
 
-Jede Rubrik enthält eine Reihe von Funktionen, die dem Benutzerkontext und den spezifischen Bedürfnissen entsprechend angeordnet wurden. So haben Sie z. B. in der Rubrik **[!UICONTROL Profile und Zielgruppen]** Zugriff auf Empfängerlisten, Abonnements, existierende Zielgruppen-Workflows sowie auf Verknüpfungen zur Elementerstellung.
+Jede Funktion umfasst eine Reihe von Funktionen, die auf aufgabenbezogenen Anforderungen und dem Anwendungskontext basieren. Beispielsweise wird die **[!UICONTROL Profile und Zielgruppen]** -Link führt Sie zu den Empfängerlisten, Abonnements, existierenden Zielgruppen-Workflows und den Verknüpfungen zur Erstellung dieser Elemente.
 
 Listen z. B. sind somit über den Link **[!UICONTROL Listen]** verfügbar, der sich auf der linken Seite des Fensters **[!UICONTROL Profile und Zielgruppen]** befindet.
 
@@ -88,7 +88,7 @@ Listen z. B. sind somit über den Link **[!UICONTROL Listen]** verfügbar, der s
 
 ### Tabs verwenden {#using-tabs}
 
-* Wenn Sie eine Rubrik oder einen Link auswählen, ersetzt die aufgerufene Seite die aktuelle. Mithilfe der Schaltflächen **[!UICONTROL Zurück]** und **[!UICONTROL Startseite]** können Sie zum Ausgangspunkt zurückkehren.
+* Wenn Sie auf eine Kernfunktion oder einen Link klicken, ersetzt die entsprechende Seite die aktuelle Seite. Um zur vorherigen Seite zurückzukehren, klicken Sie auf die Schaltfläche **[!UICONTROL Zurück]** in der Symbolleiste. Um zur Startseite zurückzukehren, klicken Sie auf die Schaltfläche **[!UICONTROL Startseite]** Schaltfläche.
 
   ![](assets/d_ncs_user_interface_back_home_buttons.png)
 
@@ -98,9 +98,9 @@ Listen z. B. sind somit über den Link **[!UICONTROL Listen]** verfügbar, der s
 
 ### Element erstellen {#creating-an-element}
 
-In jeder Rubrik können Sie sich innerhalb der verschiedenen Elemente bewegen. Nutzen Sie hierzu die im Abschnitt **[!UICONTROL Navigation]** zur Verfügung stehenden Verknüpfungen. Der Link **[!UICONTROL Andere Optionen]** erlaubt den Zugriff auf alle anderen Seiten, unabhängig von der aktuellen Rubrik.
+In jedem Abschnitt mit den Kernfunktionen können Sie zwischen den verfügbaren Elementen navigieren. Verwenden Sie dazu die Tastaturbefehle im **[!UICONTROL Browsen]** Abschnitt. Die **[!UICONTROL Andere Optionen]** -Link können Sie unabhängig von der Umgebung auf alle anderen Seiten zugreifen.
 
-Neue Elemente (Versand, Webanwendung, Workflow etc.) können über die im Abschnitt **[!UICONTROL Erstellen]** angebotenen Verknüpfungen angelegt werden. Die Schaltfläche **[!UICONTROL Erstellen]** rechts oberhalb der Liste erlaubt das Hinzufügen eines neuen Listenelements.
+Sie können ein neues Element erstellen (Versand, Webanwendung, Workflow usw.) mit den Tastaturbefehlen in der **[!UICONTROL Erstellen]** auf der linken Bildschirmseite. Verwenden Sie die **[!UICONTROL Erstellen]** oberhalb der Liste, um der Liste neue Elemente hinzuzufügen.
 
 Nutzen Sie beispielsweise auf der Seite der Sendungen die Schaltfläche **[!UICONTROL Erstellen]**, um einen neuen Versand anzulegen.
 
@@ -113,7 +113,7 @@ Nutzen Sie beispielsweise auf der Seite der Sendungen die Schaltfläche **[!UICO
 
 Die Sprache Ihrer Adobe-Campaign-Classic-Instanz hat Auswirkungen auf das Format von Datum und Uhrzeit.
 
-Die Sprache wird während der Installation von Campaign ausgewählt und kann danach nicht mehr geändert werden. Zur Auswahl stehen: Englisch (US), Englisch (EN), Französisch, Deutsch oder Japanisch. Weiterführende Informationen dazu finden Sie auf [dieser Seite](../../installation/using/creating-an-instance-and-logging-on.md).
+Die Sprache wird bei der Installation von Campaign ausgewählt und kann danach nicht mehr geändert werden. Sie können wählen: Englisch (US), Englisch (EN), Französisch, Deutsch oder Japanisch. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../installation/using/creating-an-instance-and-logging-on.md).
 
 Die Hauptunterschiede zwischen US-amerikanischem Englisch und britischem Englisch sind:
 
@@ -146,7 +146,7 @@ Die Hauptunterschiede zwischen US-amerikanischem Englisch und britischem Englisc
 
 ### Werte in einer Auflistung hinzufügen {#add-values-in-an-enumeration}
 
-Die Eingabefelder in Dropdown-Listen ermöglichen die Angabe eines Auflistungswerts, der zur weiteren Verwendung gespeichert werden kann. Wenn Sie z. B. im Feld **[!UICONTROL Ort]** im Tab **[!UICONTROL Allgemein]** eines Empfängerprofils &quot;Berlin&quot; eingeben und die Eingabetaste drücken, werden Sie gefragt, ob Sie diesen Wert zu der dem Feld entsprechenden Auflistung hinzufügen möchten.
+Mithilfe der Eingabefelder mit Dropdown-Liste können Sie einen Auflistungswert eingeben, der gespeichert und dann als Option in der Dropdown-Liste vorgeschlagen werden kann. Beispiel: in der **[!UICONTROL Ort]** des **[!UICONTROL Allgemein]** in einem Empfängerprofil ein, können Sie nach London gelangen. Wenn Sie die Eingabetaste drücken, um diesen Wert zu bestätigen, werden Sie gefragt, ob Sie diesen Wert für die mit dem Feld verknüpfte Auflistung speichern möchten.
 
 ![](assets/s_ncs_user_wizard_email_bat_substitute_email.png)
 

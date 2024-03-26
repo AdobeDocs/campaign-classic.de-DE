@@ -1,20 +1,20 @@
 ---
 product: campaign
-title: Publikationsvorlagen
-description: Publikationsvorlagen
+title: Veröffentlichungsvorlagen
+description: Veröffentlichungsvorlagen
 badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Templates
 role: User
 exl-id: 3b6e4974-4551-4da2-8eca-577c4f9cbd91
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
-workflow-type: ht
-source-wordcount: '844'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '845'
+ht-degree: 93%
 
 ---
 
-# Publikationsvorlagen{#publication-templates}
+# Veröffentlichungsvorlagen{#publication-templates}
 
 ## Über Veröffentlichungsvorlagen {#about-publication-templates}
 
@@ -28,7 +28,7 @@ Die Publikationsvorlage verweist auf die im Veröffentlichungsprozess verwendete
 
 Eine Veröffentlichungsvorlage wird über ihren Namen und Namespace identifiziert.
 
-Der Identifikationsschlüssel eines Stylesheets ist eine Zeichenkette, die den Namespace und den Namen enthält, getrennt durch das Zeichen &#39;:&#39; (z. B. **cus:newsletter**).
+Der Identifikationsschlüssel eines Stylesheets ist eine Zeichenfolge, die den Namespace und den Namen enthält, getrennt durch das Zeichen &#39;:&#39; (z. B. **cus:newsletter**).
 
 >[!NOTE]
 >
@@ -36,7 +36,7 @@ Der Identifikationsschlüssel eines Stylesheets ist eine Zeichenkette, die den N
 
 ## Erstellen und Konfigurieren der Vorlage {#creating-and-configuring-the-template}
 
-Standardmäßig werden Veröffentlichungsvorlagen im Knoten **[!UICONTROL Administration > Konfiguration > Veröffentlichungsvorlagen]** gespeichert. Klicken Sie dort zur Erstellung einer neuen Vorlage auf die Schaltfläche **[!UICONTROL Neu]**.
+Veröffentlichungsvorlagen werden standardmäßig im **[!UICONTROL Administration > Konfiguration > Veröffentlichungsvorlagen]** Knoten. Um eine neue Vorlage zu erstellen, klicken Sie auf das **[!UICONTROL Neu]** oberhalb der Vorlagenliste.
 
 Geben Sie den Namen der Vorlage (d. h. den aus Namespace und Namen bestehenden Identifikationsschlüssel), den Titel, das zugeordnete Datenschema sowie das entsprechende Formular an.
 
@@ -74,7 +74,7 @@ Des Weiteren können folgende Veröffentlichungsparameter konfiguriert werden:
 
   Die Variablen sind wie folgt anzugeben: **`$(<xpath>)`**, wobei **`<xpath>`** den Pfad eines Felds des der Veröffentlichungsvorlage zugrunde liegenden Datenschemas bezeichnet.
 
-  Beispielsweise kann der Dateiname auf ein Datumsfeld verweisen. In diesem Fall ist die Funktion **$date-format** zu verwenden und Feldpfad sowie Ausgabeformat sind anzugeben.
+  Der Name einer Datei kann aus einem Feld vom Typ Datum bestehen. Um dieses Feld korrekt zu formatieren, verwenden Sie die **$date-format** -Funktion, wobei der Pfad des Felds und das Ausgabeformat als Parameter verwendet werden.
 
   Standardmäßig wird der Dateiname unter Verwendung der Variablen &quot;@name&quot; und &quot;@date&quot; konstruiert:
 
@@ -180,4 +180,4 @@ In der Umwandlungsvorlage der Kapitel ist die Option **[!UICONTROL Multidatei-Er
 
 ![](assets/d_ncs_content_chunk2.png)
 
-Auch wenn das Feld **[!UICONTROL Speicherort]** bei der Multidatei-Erzeugung nicht verwendet wird, muss ein Dateiname angegeben werden, um eine Fehlermeldung zu vermeiden.
+Auch wenn das Feld **[!UICONTROL Speicherort]** bei der Multidatei-Erzeugung nicht verwendet wird, muss ein Dateiname angegeben werden, um eine Fehlermeldung bei der Veröffentlichung zu vermeiden.

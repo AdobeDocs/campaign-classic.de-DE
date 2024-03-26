@@ -9,7 +9,7 @@ exl-id: 07bd36ce-c701-4998-974f-81fd4fac22a0
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '416'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -61,7 +61,7 @@ Um die Traffic-Herkunft in einer Webanwendung festzustellen, sucht Adobe Campaig
 
 ## Mit dem Digital Content Editor (DCE) erstellte Web-Anwendungen  {#web-applications-designed-with-digital-content-editor--dce-}
 
-Wenn eine Webanwendung mit dem HTML-Contenteditor – dem **Digital Content Editor (DCE)** – erstellt wird, werden Trackingtags über den Tab **[!UICONTROL Eigenschaften]** des Editors eingefügt. Weiterführende Informationen zum Digital Content Editor (DCE) finden Sie in [diesem Abschnitt](about-campaign-html-editor.md).
+Wenn eine Webanwendung mit dem HTML Content Editor erstellt wird - **Digital Content Editor (DCE)** - Tracking-Tags werden aus der **[!UICONTROL Eigenschaften]** des Editors. Weitere Informationen zum Digital Content Editor (DCE) finden Sie unter [diesem Abschnitt](about-campaign-html-editor.md).
 
 ![](assets/trackers_2.png)
 

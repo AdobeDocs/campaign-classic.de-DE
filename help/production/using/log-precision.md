@@ -11,8 +11,8 @@ topic-tags: troubleshooting
 exl-id: c2470098-62f3-4fee-b1c5-800ed0e91f75
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '345'
-ht-degree: 88%
+source-wordcount: '333'
+ht-degree: 80%
 
 ---
 
@@ -51,8 +51,8 @@ Adobe Campaign kann mit zwei Protokollierungsstufen betrieben werden:
    >[!NOTE]
    >
    >Wenn Sie **tracefilter:&#42;**, werden alle Protokolltypen aktiviert: ncm, rdr, nms, jst, timing, wdbc, ldap, soap, xtk, xtkquery, session, xtkwriter, network, pop3, inmail\
-   >Die nützlichsten Protokolltypen sind: **wdbc** (zeigt alle SQL-Abfragen an), **soap** (zeigt alle SOAP-Aufrufe an), **ldap** (zeigt alle LDAP-Abfragen nach der Authentifizierung an), **xtkquery** (zeigt die Liste aller Abfragedef an).\
-   >Sie können sie einzeln verwenden (**z. B. trackFilter:soap,wdbc** ). Sie können auch alle aktivieren und bestimmte andere ausschließen: **-tracefilter:&#42;,!soap**
+   Die nützlichsten Protokolltypen sind: **wdbc** (zeigt alle SQL-Abfragen an), **soap** (zeigt alle SOAP-Aufrufe an), **ldap** (zeigt alle LDAP-Abfragen nach der Authentifizierung an), **xtkquery** (zeigt die Liste aller Abfragedef an).\
+   Sie können sie einzeln verwenden (**z. B. trackFilter:soap,wdbc** ). Sie können auch alle aktivieren und bestimmte andere ausschließen: **-tracefilter:&#42;,!soap**
 
    Vergewissern Sie sich, dass der Fehler tatsächlich aufgetreten ist, und starten Sie den Prozess auf die normale Weise neu:
 
@@ -62,17 +62,17 @@ Adobe Campaign kann mit zwei Protokollierungsstufen betrieben werden:
 
 >[!IMPORTANT]
 >
->Die Protokolle dieser Befehle werden in der Protokolldatei des Moduls gespeichert.
+Die Protokolle dieser Befehle werden in der Protokolldatei des Moduls gespeichert.
 
 Hier ist ein Beispiel speziell für das Webmodul. Die anderen Module funktionieren wie oben angegeben.
 
-Vergewissern Sie sich vor dem Senden dieses Befehls, dass kein in Verarbeitung befindlicher Auftrag betroffen ist:
+Vergewissern Sie sich vor dem Senden dieses Befehls, dass kein laufender Auftrag betroffen ist:
 
 ```
 nlserver pdump -who
 ```
 
-Fahren Sie anschließend das Modul herunter und starten Sie es im **TraceFilter** -Modus neu:
+Fahren Sie als Nächstes herunter und starten Sie das Modul neu in **TraceFilter** mode:
 
 ```
 nlserver stop web; LD_PRELOAD=libjsig.so nlserver web -tomcat -verbose -tracefilter:* -tracefile:web_debug@default
@@ -86,12 +86,12 @@ nlserver stop mta@<INSTANCE_NAME>; nlserver mta -instance:<INSTANCE_NAME> -trace
 
 >[!NOTE]
 >
->Im **Tracefile** -Modus können Sie die Protokolle speichern. In den obigen Beispielen werden die Protokolle in den Dateien **var/`<instance-name>`/mta_debug.log** und **var/default/web_debug.log** gespeichert.
+Im **Tracefile** -Modus können Sie die Protokolle speichern. In den obigen Beispielen werden die Protokolle in den Dateien **var/`<instance-name>`/mta_debug.log** und **var/default/web_debug.log** gespeichert.
 
 >[!IMPORTANT]
 >
->Fügen Sie unter Windows nicht die Option LD_PRELOAD hinzu. Der folgende Befehl reicht aus:\
->nlserver web -tomcat -verbose -tracefilter:&#42;
+Fügen Sie unter Windows nicht die Option LD_PRELOAD hinzu. Der folgende Befehl reicht aus:\
+nlserver web -tomcat -verbose -tracefilter:&#42;
 
 Vergewissern Sie sich, dass das Problem erneut auftritt, und starten Sie dann das Modul neu:
 

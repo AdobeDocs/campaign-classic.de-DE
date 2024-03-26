@@ -9,7 +9,7 @@ exl-id: e4806bb8-de9d-47e4-8b37-d6c0565b7f5a
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '748'
-ht-degree: 100%
+ht-degree: 86%
 
 ---
 
@@ -36,7 +36,7 @@ Um einen Cube zu erstellen, klicken Sie auf die oberhalb der Cube-Liste gelegene
 
 ![](assets/s_advuser_cube_create.png)
 
-Wählen Sie ein Faktenschema aus, d. h. das Schema, das die zu analysierenden Elemente enthält. Im vorliegenden Beispiel wird die **Empfänger**-Tabelle ausgewählt.
+Wählen Sie das Faktenschema aus, d. h. das Schema mit den Elementen, die Sie untersuchen möchten. In diesem Beispiel wählen wir die **Empfänger** Tabelle.
 
 ![](assets/s_advuser_cube_wz_02.png)
 
@@ -88,13 +88,13 @@ Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**, um eine neue Dim
 
   ![](assets/s_advuser_cube_wz_10.png)
 
-  Nur die in der Auflistung vorhandenen Werte werden angezeigt. Alle anderen werden unter einem Titel zusammengefasst, den Sie im Feld **[!UICONTROL Titel der anderen Werte]** definieren können.
+  Nur die Werte in der Auflistung werden angezeigt. Die anderen werden unter dem im Feld **[!UICONTROL Titel der anderen Werte]** -Feld.
 
   Weitere Informationen hierzu finden Sie unter [Klassen dynamisch verwalten](../../reporting/using/concepts-and-methodology.md#dynamically-managing-bins).
 
 ## Erstellen von Indikatoren {#building-indicators}
 
-Nach der Definition der Dimensionen muss der Berechnungsmodus der Werte bestimmt werden, die in den Zellen angezeigt werden sollen. Erstellen Sie hierzu die jeweiligen Kennzahlen im gleichnamigen Tab: Die Anzahl der Kennzahlen muss der Anzahl der Spalten entsprechen, die im Bericht angezeigt werden.****
+Nachdem die Dimensionen definiert wurden, müssen Sie einen Berechnungsmodus für die in den Zellen anzuzeigenden Werte festlegen. Erstellen Sie dazu die entsprechenden Indikatoren im **[!UICONTROL Maßnahmen]** Registerkarte: Erstellen Sie so viele Kennzahlen wie Spalten, die im Bericht angezeigt werden sollen und den Cube verwenden.
 
 Gehen Sie hierzu wie folgt vor:
 

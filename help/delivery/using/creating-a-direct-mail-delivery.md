@@ -8,7 +8,7 @@ feature: Direct Mail
 role: User
 exl-id: 964cc600-19b8-449e-bac6-dc9da2b5ea12
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '99'
 ht-degree: 100%
 
@@ -27,5 +27,5 @@ Gehen Sie wie folgt vor, um einen neuen Briefpost-Versand zu erstellen:
 
    ![](assets/direct_mail.png)
 
-1. Geben Sie für Ihren Versand einen Titel, einen Code und eine Beschreibung ein. Weiterführende Informationen dazu finden Sie in [diesem Abschnitt](steps-create-and-identify-the-delivery.md#identifying-the-delivery)
+1. Geben Sie für Ihren Versand einen Titel, einen Code und eine Beschreibung ein. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](steps-create-and-identify-the-delivery.md#identifying-the-delivery)
 1. Klicken Sie auf **Fortfahren**, um die Eingaben zu bestätigen und in das Fenster der Nachrichtenkonfiguration zu gelangen.

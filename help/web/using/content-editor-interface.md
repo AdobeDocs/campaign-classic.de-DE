@@ -9,7 +9,7 @@ exl-id: cb76f3dc-7f3a-49de-89cb-c106865ecb17
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '549'
-ht-degree: 100%
+ht-degree: 88%
 
 ---
 
@@ -47,7 +47,7 @@ Dort finden Sie vier Symbole:
   >
   >Bei der Auswahl eines neuen Inhalts wird der aktuelle Inhalt automatisch ersetzt.
 
-* Mit dem Symbol **Als Vorlage speichern** können Sie den aktuellen Inhalt als Vorlage speichern. Geben Sie dazu den Titel und den internen Namen der Vorlage ein. Vorlagen werden im Knoten **[!UICONTROL Ressourcen > Vorlagen > Inhaltsvorlagen]** gespeichert.
+* Die **Als Vorlage speichern** speichert den aktuellen Inhalt als Vorlage. Geben Sie den Titel und den internen Namen der Vorlage ein. Vorlagen werden im **[!UICONTROL Ressourcen > Vorlagen > Inhaltsvorlagen]** Knoten.
 
   ![](assets/dce_popup_savetemplate.png)
 
@@ -86,4 +86,4 @@ Diese Symbolleiste ist ein **Pop-up-Element** in der Benutzeroberfläche des DCE
 
 >[!CAUTION]
 >
->Mit gewissen Funktionen der Symbolleiste können Sie den HTML-Inhalt formatieren. Wenn die betroffene Seite jedoch ein CSS-Stylesheet enthält, können sich die **Anweisungen** des Stylesheets als **vorrangig** erweisen.
+>Gewisse Funktionen der Schaltfläche betreffen die Formatierung des HTML-Inhalts. Wenn die Seite jedoch ein CSS-Stylesheet enthält, wird die **instructions** aus dem Stylesheet **priority** über die in der Symbolleiste angegebenen Anweisungen.

@@ -5,15 +5,15 @@ description: Datenbank-Mapping
 feature: Configuration, Instance Settings
 role: Data Engineer, Developer
 badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
-source-git-commit: 46220dcfdddb8f6f1e7026cafc503aaeecb7e0fa
+exl-id: e05dcd81-bbca-4767-8da3-ea064f7f6c8e
+source-git-commit: 46dcd80d5adc31a66b47c6d75e7914b0a686326b
 workflow-type: tm+mt
 source-wordcount: '939'
 ht-degree: 57%
 
 ---
 
-
-# Linkverwaltung {#links--relation-between-tables}
+# Link-Management {#links--relation-between-tables}
 
 Eine Relation beschreibt die Zuordnung einer Tabelle zu einer anderen.
 
@@ -230,5 +230,5 @@ Weitere Informationen finden Sie unter den folgenden Links:
 * [Erste Schritte mit Schemata](about-schema-reference.md)
 * [Schemastruktur](schema-structure.md)
 * [Datenbank-Mapping](database-mapping.md)
-* [Schlüsselverwaltung](database-keys.md)
+* [Schlüssel-Management](database-keys.md)
 * [Campaign-Datenmodell](about-data-model.md)

@@ -7,8 +7,8 @@ feature: Workflows
 exl-id: cada78cb-658f-4b9e-8136-31c17cb1d82f
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '459'
-ht-degree: 100%
+source-wordcount: '453'
+ht-degree: 86%
 
 ---
 
@@ -22,7 +22,7 @@ Die Aktivität **SQL-Daten-Management** ermöglicht Ihnen das Schreiben eigener 
 
 Vor der Konfiguration der Aktivität müssen folgende Voraussetzungen gegeben sein:
 
-* Die Aktivität ist nur für Remote-Datenquellen verfügbar. Deshalb muss das **[!UICONTROL FDA]**-Package (Federated Data Access) auf Ihrer Instanz installiert sein. [Weitere Informationen](../../installation/using/about-fda.md).
+* Die Aktivität ist nur für Remote-Datenquellen verfügbar. Die **[!UICONTROL FDA]** Das Package (Federated Data Access) muss daher auf Ihrer Instanz installiert sein. [Weitere Informationen](../../installation/using/about-fda.md).
 
   Weitere Informationen hierzu finden Sie je nach Campaign-Version in den folgenden Abschnitten:
 
@@ -48,7 +48,7 @@ Vor der Konfiguration der Aktivität müssen folgende Voraussetzungen gegeben se
    >
    >Der Codierer des SQL-Scripts ist dafür verantwortlich, dass das SQL-Script funktioniert und seine Referenzen (Feldnamen etc.) dem Outbound-Schema entsprechen.
 
-   Wenn Sie einen vorhandenen SQL-Code laden möchten, wählen Sie die Option **[!UICONTROL Der SQL-Code ist in einer in der Datenbank gespeicherten Entität enthalten]** aus. SQL-Scripts müssen im Menü **[!UICONTROL Administration]** / **[!UICONTROL Konfiguration]** / **[!UICONTROL SQL-Scripts]** erstellt und gespeichert werden.
+   Wenn Sie einen vorhandenen SQL-Code laden möchten, wählen Sie die **[!UICONTROL Das SQL-Skript ist in einer in der Datenbank gespeicherten Entität enthalten]** -Option. SQL-Skripte müssen im **[!UICONTROL Administration]** / **[!UICONTROL Konfiguration]** / **[!UICONTROL SQL-Scripts]** Menü.
 
    Andernfalls können Sie Ihr SQL-Script auch in den dafür vorgesehenen Bereich kopieren.
 

@@ -11,8 +11,8 @@ topic-tags: updating-adobe-campaign
 exl-id: c5a9c99a-4078-45d8-847b-6df9047a2fe2
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '2380'
-ht-degree: 48%
+source-wordcount: '2330'
+ht-degree: 37%
 
 ---
 
@@ -24,7 +24,7 @@ In diesem Abschnitt erhalten Sie eine ausführliche Anleitung zum Upgrade-Prozes
 
 Das Build-Upgrade muss mit Vorsicht durchgeführt werden, seine Auswirkungen müssen im Voraus umfassend berücksichtigt werden und das Verfahren muss mit einem hohen Maß an Disziplin abgeschlossen werden. Um eine erfolgreiche Aktualisierung sicherzustellen, stellen Sie sicher, dass nur erfahrene Benutzer die unten beschriebenen Schritte ausführen. Darüber hinaus empfehlen wir dringend, mit [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) vor dem Start eines Upgrades.
 
-Folgende Voraussetzungen müssen gegeben sein:
+Folgende Voraussetzungen sind erforderlich:
 
 * Kenntnis der Campaign-Architektur
 * Kenntnis der Systeme und Server
@@ -70,7 +70,7 @@ Für das Build-Upgrade müssen die folgenden Personen beteiligt sein:
 
    * für gehostete Installationen: Das Hosting-Team arbeitet mit dem Adobe Campaign Client Care-Team und dem Kunden zusammen, um den Zeitplan für die Aktualisierung für alle Instanzen zu koordinieren.
 
-* Adobe-Campaign-Administrator:
+* Adobe Campaign-Administrator:
    * für On-Premise-Installationen: Der Administrator führt das Upgrade durch.
 
    * für gehostete Installationen: Das Hosting-Team führt das Upgrade durch.
@@ -145,7 +145,7 @@ Gehen Sie dazu wie folgt vor:
 
 ### Dienste beenden
 
-Um alle Dateien mit der neuen Version zu ersetzen, müssen alle Instanzen von nlserverservice beendet werden.
+Um alle Dateien durch die neue Version zu ersetzen, müssen alle Instanzen des nlserverservice beendet werden.
 
 1. Beenden Sie die folgenden Dienste:
 
@@ -223,7 +223,7 @@ Wenn das nächste Mal Clientkonsolen verbunden werden, werden die Benutzer darau
 
 Einige Konfigurationen erfordern bestimmte zusätzliche Aufgaben, um auf einen neuen Build aktualisiert zu werden.
 
-#### Transaktionsnachrichten
+#### Transaktionsnachrichtenversand
 
 Wenn Transaktionsnachrichten (Message Center) in Ihrer Campaign-Instanz aktiviert ist, müssen Sie die folgenden zusätzlichen Schritte ausführen, um eine Aktualisierung durchzuführen:
 
@@ -232,16 +232,16 @@ Wenn Transaktionsnachrichten (Message Center) in Ihrer Campaign-Instanz aktivier
 1. Führen Sie Tests durch und stellen Sie sicher, dass der E-Mail-Empfang über die Message-Center-Produktionsinstanz funktioniert.
 1. Aktualisieren Sie die Clients und leeren Sie den Cache.
 1. Packages exportieren:
-   * Exportieren Sie Packages mit dem Client-Package-Export-Tool
-   * Importieren Sie das Schema-Package
-   * Melden Sie sich vom Client ab und wieder an
-   * Aktualisieren Sie die Datenbank
-   * Melden Sie sich ab und wieder an
-   * Importieren Sie das Admin-Package
-   * Importieren Sie das Content-Package
-   * Importieren Sie das Content-Management-Package
-   * Melden Sie sich ab und wieder an
-   * Führen Sie eine kurze Prüfung der Workflows durch
+   * Packages mithilfe des Client-Package-Export-Tools exportieren
+   * Schema-Package importieren
+   * Client trennen und erneut verbinden
+   * Datenbank aktualisieren
+   * Trennen und erneutes Verbinden
+   * Admin-Package importieren
+   * Inhaltspaket importieren
+   * Import Content Management Package
+   * Trennen und erneutes Verbinden
+   * Durchführen einer schnellen Überprüfung der Workflows
 
 1. Publizieren Sie Message-Center-Vorlagen, um sicherzugehen, dass die Schnittstelle zwischen den Servern und der Message-Center-Instanz funktioniert.
 1. Führen Sie Tests durch, um sicherzustellen, dass E-Mails erfolgreich über die Message-Center-Produktionsinstanz empfangen werden.
@@ -280,15 +280,15 @@ YYYY-MM-DD HH:MM:SS.750Z 00002E7A 1 warning log The document with identifier 'de
 YYYY-MM-DD HH:MM:SS.750Z 00002E7A 1 warning log Document of identifier 'nms:includeView‘ and type 'xtk:srcSchema' updated in the database and found in the file system. You will have to merge the two versions manually.
 ```
 
-Wenn ein Warnhinweis aufgrund eines Konflikts von Ressourcen ausgegeben wird, muss ihn der Benutzer lösen.
+Wenn die Warnung einen Ressourcenkonflikt betrifft, muss der Benutzer darauf achten, ihn zu beheben.
 
 Die **postupgrade_ServerVersionNumber_TimeOfPostupgrade.log** enthält das Synchronisierungsergebnis. Sie ist standardmäßig im folgenden Verzeichnis verfügbar: **installationDirectory/var/`<instance-name>`/postupgrade**. Fehler und Warnungen werden durch die Fehler- und Warnattribute angezeigt.
 
 ### Konflikte analysieren
 
-**Wie wird ein Konflikt festgestellt?**
+**Wie kommt es zu einem Konflikt?**
 
-Konflikte werden in der Datei postupgrade.log auf dem jeweiligen Server oder innerhalb der Adobe-Campaign-Clientkonsole festgestellt (Administration > Konfiguration > Packageverwaltung > Konflikte bearbeiten).
+Konflikte finden Sie auf dem betreffenden Server im postupgrade.log oder in der Campaign-Client-Oberfläche (Administration > Konfiguration > Package-Management > Konflikte bearbeiten).
 
 Das Dokument mit der Kennung ‘stockOverview’ vom Typ ‘nms:webApp’ steht im Konflikt mit der neuen Version.
 
@@ -305,7 +305,7 @@ Wenn keine dieser Fragen bejaht wird, ist dies eine Falschmeldung und es besteht
 1. Fragen Sie den Kunden, ob er das Objekt verändert hat.
 1. Ist an dem Objekt etwas ungewöhnlich?
 1. Ist das letzte Änderungsdatum im Code des Objekts angegeben?
-1. Prüfen Sie den XML-Code des Konflikts auf “_conflict”-Attribute. Sieht es nach einer Personalisierung aus?
+1. Prüfen Sie den XML-Code des Konflikts auf &quot;_conflict&quot;-Attribute. Sieht es wie eine Anpassung aus?
 
 **Wurde das Objekt im neuen Build geändert?**
 
@@ -334,14 +334,14 @@ Es gibt drei Möglichkeiten, Konflikte zu lösen: **Neue Version akzeptieren**, 
 * Wenn Sie keine Zusammenführung durchführen möchten
 * Wenn Sie das Konflikt auslösende Objekt nicht im Postupgrade korrigieren müssen
 
-**Wann soll ich eine Zusammenführung durchführen?**
+**Wann soll eine Zusammenführung durchgeführt werden?**
 
 * Nur Formulare, Berichte und Webanwendungen können zusammengeführt werden.
 * Einige geringfügige Zusammenführungen können durchgeführt werden, ohne den Code zu verstehen.
 * Kompliziertere Zusammenführungen sollten jedoch von einer Fachkraft durchgeführt werden.
 * Siehe [Zusammenführen](#perform-a-merge).
 
-**Was passiert, wenn ich Konflikte ignoriere?**
+**Was passiert, wenn ich die Konflikte ignoriere?**
 
 * Der Konflikt bleibt bestehen.
 * Das Objekt wird nicht aktualisiert.
@@ -358,7 +358,7 @@ Es gibt verschiedene Arten von Zusammenführungen:
 1. Einfache Zusammenführung: Benutzerdefinierte und neue Elemente sind klein und nicht miteinander verbunden und es ist keine Kodierung erforderlich.
 1. Keine Änderungen: die neue Version wird akzeptiert, nur letztes Aktualisierungsdatum wurde geändert, nur Kommentare, Tabs, Leerzeichen oder neue Zeilen. Beispiel: irrtümliches Speichern.
 1. Triviale Änderungen: nur eine einzige Zeile wurde geändert. Beispiel: xpathToLoad
-1. Kompliziertes Zusammenführen: wenn Code geschrieben werden muss. Entwicklerkenntnisse sind erforderlich. Siehe [Komplexe Zusammenführungen](#complex-merges).
+1. Komplexe Zusammenführung: wenn eine Kodierung erforderlich ist. Entwicklungsfähigkeiten sind erforderlich. Siehe [Komplexe Zusammenführungen](#complex-merges).
 
 #### Wie erfolgt die Zusammenführung?
 
@@ -392,7 +392,7 @@ Wenn Sie den Konflikt manuell lösen möchten, gehen Sie folgendermaßen vor:
 
 1. Suchen Sie im unteren Bereich des Fensters nach der **_conflict_string_** , um die Entitäten mit Konflikten zu finden. Die mit der neuen Version installierte Entität enthält das neue Argument. Die Entität, die mit der vorherigen Version übereinstimmt, enthält das benutzerdefinierte Argument.
 1. Löschen Sie die Version, die Sie nicht beibehalten möchten. Löschen Sie die **_conflict_argument_** Zeichenfolge der Entität, die Sie beibehalten.
-1. Gehen Sie zum gelösten Konflikt. Klicken Sie auf das Symbol **Aktionen** und wählen Sie **Als gelöst deklarieren** aus.
+1. Gehen Sie zu dem Konflikt, den Sie gelöst haben. Klicken Sie auf **Aktionen** Symbol und wählen Sie **Als aufgelöst deklarieren**.
 1. Speichern Sie Ihre Änderungen: Der Konflikt ist jetzt gelöst.
 
 #### Komplexe Zusammenführungen{#complex-merges}
@@ -403,10 +403,10 @@ Wenn Sie den Konflikt manuell lösen möchten, gehen Sie folgendermaßen vor:
 
 So nehmen Sie eine komplexe Zusammenführung vor:
 
-1. Kopieren Sie Code aus der geänderten Version
-1. Fügen Sie ihn in die benutzerdefinierte Version ein
+1. Codebits aus dem Änderungssatz kopieren
+1. In die angepasste Version einfügen
 1. Prüfung auf Nichtregressionen der Anpassung
-1. Überprüfen Sie die Funktionsfähigkeit der Änderungen
+1. Prüfung auf Funktionsfähigkeit von Änderungen
 1. Durchführen von Benutzerakzeptanztests
 1. Führen Sie die Zusammenführung in einer Testumgebung durch.
 

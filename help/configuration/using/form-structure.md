@@ -9,8 +9,8 @@ badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 exl-id: e61f2b63-06d3-4b8c-867f-1c729176d2da
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
-source-wordcount: '2415'
-ht-degree: 92%
+source-wordcount: '2419'
+ht-degree: 89%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 92%
 
 Die Beschreibung eines Formulars ist ein strukturiertes XML-Dokument, das die Grammatik des Formularschemas anwendet: **xtk:form**.
 
-Das XML-Dokument eines Formulars muss das `<form>`-Stammelement mit den Attributen **name** und **namespace** zur Befüllung des Formularnamens und des Namespace enthalten.
+Das XML-Dokument des Formulars muss die `<form>` Stammelement mit dem **name** und **namespace** -Attribute zum Ausfüllen des Formularnamens und Namespace.
 
 ```xml
 <form name="form_name" namespace="name_space">
@@ -188,7 +188,7 @@ Der Haupt-Container wird durch das Attribut **type=&quot;Notebook&quot;** defini
 
 >[!NOTE]
 >
->A **style=&quot;down|up&quot;**(standardmäßig)**&quot;** erzwingt die vertikale Positionierung von Registerkartenbeschriftungen unter oder über dem Steuerelement. Hierbei handelt es sich um eine optionale Funktion.
+>A **style=&quot;down|up&quot;**(standardmäßig)**&quot;** erzwingt die vertikale Positionierung von Registerkartenbeschriftungen unter oder über dem Steuerelement. Diese Funktion ist optional.
 >`<container style="down" type="notebook">  … </container>`
 
 #### Symbolliste {#icon-list}
@@ -274,11 +274,11 @@ Die Auswahl des Ziels ist über das Bearbeitungsfeld verfügbar. Die Eingabe wir
 
 Eine Dropdown-Liste wird verwendet, um ein Zielelement aus der Liste der bereits erstellten Einträge auszuwählen.
 
-Mit dem Symbol **[!UICONTROL Relation ändern]** (Ordner) wird ein Auswahlformular mit der Liste der Zielelemente und einem Filterbereich gestartet:
+Die **[!UICONTROL Link ändern]** (Ordner-)Symbol startet ein Auswahlformular mit der Liste der Zielelemente und einem Filterbereich:
 
 ![](assets/d_ncs_integration_form_exemple10.png)
 
-Das Symbol **[!UICONTROL Relation bearbeiten]** (Vergrößerung) startet das Bearbeitungsformular des verknüpften Elements. Das verwendete Formular wird standardmäßig vom Schlüssel des Zielschemas abgeleitet. Mit dem Attribut **form** können Sie den Namen des Bearbeitungsformulars erzwingen (z. B. &quot;cus:company2&quot;).
+Das Symbol **[!UICONTROL Relation bearbeiten]** (Vergrößerung) startet das Bearbeitungsformular des verknüpften Elements. Das verwendete Formular wird standardmäßig auf den Schlüssel des Zielschemas zurückgeführt. Mit dem Attribut **form** können Sie den Namen des Bearbeitungsformulars erzwingen (z. B. &quot;cus:company2&quot;).
 
 Es besteht außerdem die Möglichkeit, die Auswahl von Zielelementen durch Hinzufügen des Elements **`<sysfilter>`** aus der Definition der Relation in das Formular einzuschränken:
 
@@ -379,7 +379,7 @@ Beispiel einer Beziehungstabelle in einem Schema:
 </srcSchema>
 ```
 
-Für unser Beispiel beginnen wir mit dem Formular des Schemas &quot;cus:recipient&quot;. Die Liste muss die Verbindungen mit Abonnements von Services anzeigen und Sie müssen das Hinzufügen eines Abonnements durch Auswahl eines vorhandenen Services ermöglichen.
+In unserem Beispiel beginnen wir mit dem Eingabeformular des Schemas „cus:recipient“. Die Liste muss die Verbindungen mit Abonnements von Services anzeigen und Sie müssen das Hinzufügen eines Abonnements durch Auswahl eines vorhandenen Services ermöglichen.
 
 ![](assets/d_ncs_integration_form_exemple12.png)
 
@@ -465,7 +465,7 @@ Das Einfügen und Bearbeiten der Daten in einer Liste kann in einem separaten Be
 </input>
 ```
 
-Das Bearbeitungsformular wird aus dem Element `<form>` unter &quot;Listendefinition&quot; heraus ausgefüllt. Seine Struktur ist identisch mit der Struktur eines Eingabeformulars. Die Schaltfläche **[!UICONTROL Detail]** wird automatisch hinzugefügt, wenn das Attribut **zoom=&quot;true&quot;** im **`<input>`**-Tag der Liste ausgefüllt ist. Mit diesem Attribut können Sie das Bearbeitungsformular der ausgewählten Zeile starten.
+Das Bearbeitungsformular wird aus dem `<form>` Element unter Listendefinition. Seine Struktur ist identisch mit der Struktur eines Eingabeformulars. Die Schaltfläche **[!UICONTROL Detail]** wird automatisch hinzugefügt, wenn das Attribut **zoom=&quot;true&quot;** im **`<input>`**-Tag der Liste ausgefüllt ist. Mit diesem Attribut können Sie das Bearbeitungsformular der ausgewählten Zeile starten.
 
 >[!NOTE]
 >
@@ -509,7 +509,7 @@ Beispiel für das Feld &quot;Geschlecht&quot;:
 
 ![](assets/d_ncs_integration_form_exemple17.png)
 
-## Checkbox {#checkbox}
+## Kontrollkästchen {#checkbox}
 
 Eine Checkbox gibt den booleschen Status an (ausgewählt oder nicht). Standardmäßig wird dieses Eingabefeld von &quot;booleschen&quot; (wahr/falsch) Feldern verwendet. Eine Variable, die den Standardwert 0 oder 1 hat, kann mit dieser Schaltfläche verknüpft werden. Dieser Wert kann über das Attribut **checkValue** überladen werden.
 
@@ -586,7 +586,7 @@ Der Kontext des Formulars kann beim Initialisieren und Schließen des Formulars 
 
 >[!NOTE]
 >
->Die Tags `<enter>` und `<leave>` können auf den `<container>`-Seiten (vom Typ &quot;notebook&quot; und &quot;iconbox&quot;) verwendet werden.
+>Die `<enter>` und `<leave>` -Tags können auf der `<container>` von Seiten (&quot;Notebook&quot;- und &quot;Iconbox&quot;-Typen).
 
 ### Sprache von Ausdrücken {#expression-language-}
 

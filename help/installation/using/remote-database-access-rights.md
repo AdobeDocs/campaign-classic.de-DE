@@ -10,7 +10,7 @@ topic-tags: connectors
 exl-id: 3d43010e-53f8-4aa2-a651-c422a02191fe
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '993'
 ht-degree: 98%
 
 ---
@@ -44,12 +44,12 @@ Generell sind die folgenden Berechtigungen erforderlich:
 * **READ &#39;MetaData&#39;**: Zugriff auf Serverdatenkataloge zum Abruf der Tabellenstruktur,
 * **LOAD**: Ladevorgänge für große Datenmengen in Arbeitstabellen (erforderlich bei der Arbeit an Sammlungen und Joins),
 * **CREATE/DROP** für **TABLE/INDEX/PROCEDURE/FUNCTION** (nur bei von Adobe Campaign generierten Tabellen),
-* **EXPLAIN** (empfohlen): für die Leistungsüberwachung im Fall von Problemen,
+* **EXPLAIN** (empfohlen): für die Performance-Überwachung im Fall von Problemen,
 * **WRITE Data** (abhängig vom Integrationsszenario).
 
 Der Datenbankadministrator muss sicherstellen, dass diese Berechtigungen mit den spezifischen Berechtigungen der einzelnen Datenbank-Engines übereinstimmen. Weitere Informationen finden Sie im folgenden Abschnitt.
 
-## FDA-Berechtigungen {#fda-rights}
+## FDA-Rechte {#fda-rights}
 
 |   | Snowflake | Redshift | Oracle | SQLServer | PostgreSQL | MySQL |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|

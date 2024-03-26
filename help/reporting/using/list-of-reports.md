@@ -6,7 +6,7 @@ badge: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Reporting, Monitoring
 exl-id: c01f4850-ab17-44ac-a5e0-ff082ec206b3
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1018'
 ht-degree: 100%
 
@@ -360,7 +360,7 @@ Nachfolgende Berichte stehen ebenfalls nativ zur Verfügung. Weitere Information
   </tr> 
   <tr> 
    <td> Verlauf der Akquise aus sozialen Netzwerken (socialVisitorStatistics)<br /> </td> 
-   <td> Verlauf der Akquise aus X (früher bekannt als Twitter) und Facebook; abhängig vom Social-Marketing-Add-on<br /> </td> 
+   <td> Verlauf der Akquise aus X (ehemals Twitter) und Facebook, abhängig vom Social-Media-Marketing-Add-on.<br /> </td> 
    <td> nms:visitor<br /> </td> 
   </tr> 
   <tr> 

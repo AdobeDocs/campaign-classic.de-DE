@@ -6,9 +6,9 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Cla
 feature: Workflows, Channels Activity
 exl-id: 3bb468e2-7bcf-456f-8d8f-1c4e608e2b25
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '303'
-ht-degree: 100%
+ht-degree: 87%
 
 ---
 
@@ -50,17 +50,17 @@ Hier erstellen wir beispielsweise einen Workflow für den Versand einer E-Mail o
 1. Fügen Sie Ihrem Workflow eine **[!UICONTROL Aufspaltung]** hinzu, um Empfänger in Besitzer einer Mobiltelefonnummer und in Besitzer einer E-Mail-Adresse zu unterteilen.
 1. Wählen Sie im Tab **[!UICONTROL Versand]** für jeden Zieldatensatz einen Versand.
 
-   Erstellen Sie Ihren Versand auf dieselbe Weise wie mit dem klassischen Versand-Assistenten, indem Sie die Versandaktivität in Ihrem Workflow durch einen Doppelklick auswählen. Weiterführende Informationen dazu finden Sie auf dieser [Seite](../../delivery/using/about-email-channel.md).
+   Erstellen Sie Ihren Versand auf die gleiche Weise wie mit einem klassischen Versand-Assistenten, indem Sie in Ihrem Workflow auf die Versandaktivität doppelklicken. Weiterführende Informationen hierzu finden Sie auf [dieser Seite](../../delivery/using/about-email-channel.md).
 
    ![](assets/cross_channel_delivery_3.png)
 
 1. Fügen Sie eine **[!UICONTROL Warten]**-Aktivität hinzu und konfigurieren Sie sie, damit die Empfänger nicht zu viele Sendungen gleichzeitig erhalten.
 1. Fügen Sie eine **[!UICONTROL Aufspaltung]** hinzu, um Abonnenten in Anwender von iOS- und Android-Apps zu unterteilen.
 
-   Wählen Sie für jedes Betriebssystem einen Dienst aus. Weiterführende Informationen zur Abonnementerstellung finden Sie auf dieser [Seite](../../delivery/using/configuring-the-mobile-application.md).
+   Wählen Sie für jedes Betriebssystem einen Dienst aus. Weiterführende Informationen zur Erstellung von Diensten finden Sie in diesem Abschnitt [page](../../delivery/using/configuring-the-mobile-application.md).
 
    ![](assets/cross_channel_delivery_4.png)
 
-1. Wählen Sie für jedes Betriebssystem einen Versand über eine mobile App aus und konfigurieren Sie ihn.
+1. Wählen Sie für jedes Betriebssystem einen Mobile-App-Versand aus und konfigurieren Sie ihn.
 
    ![](assets/cross_channel_delivery_5.png)

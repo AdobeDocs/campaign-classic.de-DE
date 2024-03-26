@@ -8,8 +8,8 @@ feature: Web Forms
 exl-id: 37aaaa03-0656-4a9b-bcae-74de33e3737b
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '1275'
-ht-degree: 100%
+source-wordcount: '1280'
+ht-degree: 71%
 
 ---
 
@@ -25,7 +25,7 @@ Auf das Eigenschaftenfenster können Sie über die Schaltfläche **[!UICONTROL E
 
 ## Allgemeine Formulareigenschaften {#overall-form-properties}
 
-Im Tab **[!UICONTROL Allgemein]** des Eigenschaftenfensters können Sie den **Titel** des Formulars ändern. Es wird dringend davon abgeraten, den **internen Namen** zu ändern.
+Im **[!UICONTROL Allgemein]** im Eigenschaftenfenster können Sie die **Titel** des Formulars. Es wird dringend empfohlen, die **Interner Name**.
 
 ![](assets/s_ncs_admin_survey_properties_general_tab.png)
 
@@ -33,7 +33,7 @@ Die Formularvorlage wird bei der Formularerstellung ausgewählt. Sie kann späte
 
 ## Formulardaten speichern {#form-data-storage}
 
-Standardmäßig werden die Felder des Webformulars in der Empfängertabelle gespeichert. Um eine andere Tabelle zu verwenden, wählen Sie im Feld **[!UICONTROL Dokumenttyp]** eine neue Tabelle aus. Mit dem **[!UICONTROL Zoom]**-Symbol können Sie den Inhalt der ausgewählten Tabelle anzeigen.
+Die Felder der Webformulare werden standardmäßig in der Empfängertabelle gespeichert. Sie können die verwendete Tabelle ändern, indem Sie eine neue Tabelle im **[!UICONTROL Dokumenttyp]** -Feld. Die **[!UICONTROL Zoom]** -Symbol zeigt den Inhalt der ausgewählten Tabelle an.
 
 Standardmäßig werden die Antworten in der Tabelle **Antworten auf ein Formular** gespeichert.
 
@@ -47,7 +47,7 @@ Standardmäßig enthält sie die folgenden Informationen:
 
 ![](assets/s_ncs_admin_survey_default_error_page.png)
 
-Der Inhalt der dargestellten Strings wird im Tab **[!UICONTROL Fehlerseite]** des Eigenschaftenfensters definiert. Im Tab **[!UICONTROL HTML]** wird das Rendering dargestellt und im Tab **[!UICONTROL Texte]** können Sie die Textstrings ändern und Text nach Bedarf hinzufügen:
+Der Inhalt der angezeigten Strings wird im Abschnitt **[!UICONTROL Fehlerseite]** im Eigenschaftenfenster. Die **[!UICONTROL HTML]** -Tab zeigt das Rendering und die **[!UICONTROL Texte]** -Tab können Sie die Textzeichenfolgen ändern und bei Bedarf Text hinzufügen:
 
 ![](assets/s_ncs_admin_survey_error_page.png)
 
@@ -75,13 +75,13 @@ Diese Elemente befinden sich am unteren Rand einer jeden Seite. Ihre Position ka
 
 >[!NOTE]
 >
->Auf manchen Seiten kann die Schaltfläche **[!UICONTROL Zurück]** ausblendet werden. Gehen Sie dazu auf die entsprechende Seite und aktivieren Sie die Option **[!UICONTROL Rückkehr zur vorhergehenden Seite nicht zulassen]**. Diese Option ist verfügbar, wenn die Wurzel des Seitenbaums ausgewählt wird.
+>Die **[!UICONTROL Vorherige]** auf einigen Seiten. Gehen Sie dazu zur entsprechenden Seite und überprüfen Sie die **[!UICONTROL Rückkehr zur vorherigen Seite nicht zulassen]** -Option. Diese Option ist verfügbar, wenn der Stamm des Seitenbaums ausgewählt ist.
 
 Das Feld **[!UICONTROL Vorlage]** des Tabs **[!UICONTROL Rendering]** ermöglicht die Auswahl eines Themas.
 
 Themen werden im Knoten **[!UICONTROL Administration > Konfiguration > Formular-Rendering]** des Baums gespeichert. Siehe [Vorlage zum Formular-Rendering auswählen](form-rendering.md#selecting-the-form-rendering-template).
 
-Das jeweilige Rendering wird im unteren Teil des Eigenschaftenfensters angezeigt. Über das Symbol **[!UICONTROL Link bearbeiten]** kann die Konfiguration für das ausgewählte Thema aufgerufen werden.
+Im unteren Teil des Eigenschaftenfensters wird ein Beispiel für das Rendering angezeigt. Die **[!UICONTROL Link bearbeiten]** -Symbol zeigt die Konfiguration für das ausgewählte Thema an.
 
 ![](assets/s_ncs_admin_survey_properties_render.png)
 
@@ -101,13 +101,13 @@ Der Gültigkeitszeitraum erstreckt sich vom **[!UICONTROL Startdatum]** bis zum 
 
 >[!NOTE]
 >
->Wenn das Formular geschlossen wird, ohne dass sein Gültigkeitszeitraum abgelaufen ist oder dieser bereits abgelaufen ist, oder wenn es vom Adobe Campaign-Operator geschlossen wurde, wird Besuchern eine entsprechende Mitteilung angezeigt, wenn diese versuchen, darauf zuzugreifen. Sie können diese Mitteilung anpassen, indem Sie **[!UICONTROL Nachricht personalisieren, die bei geschlossenem Formular angezeigt wird...]** auswählen.
+>Wenn das Formular geschlossen wird und sein Gültigkeitszeitraum daher nicht erreicht oder abgelaufen ist oder der Adobe Campaign-Benutzer es geschlossen hat, wird eine Meldung angezeigt, wenn der Benutzer versucht, auf das Formular zuzugreifen. Sie können diese Nachricht personalisieren, indem Sie auf **[!UICONTROL Nachricht personalisieren, die angezeigt wird, wenn das Formular geschlossen wird..]**.
 
 ## Zugriffskontrolle auf Formulare {#form-access-control}
 
 Standardmäßig kann der Zugriff auf Webformulare anonym erfolgen: Allen Operatoren, die auf das Formular zugreifen, werden WEBAPP-Operatorrechte erteilt.
 
-Sie können die Zugriffskontrolle für die Anzeige des Formulars aktivieren, um Besucher zu authentifizieren, wenn Sie beispielsweise ein Formular auf einer Intranet-Seite bereitstellen. Rufen Sie dazu für das entsprechende Formular das Fenster **[!UICONTROL Eigenschaften]** auf und wählen Sie die Option **[!UICONTROL Zugriffskontrolle aktivieren]** wie unten gezeigt aus:
+Sie können die Zugriffskontrolle für die Anzeige des Formulars aktivieren, um Benutzer zu authentifizieren, z. B. wenn Sie ein Formular auf einer Intranet-Site bereitstellen. Zeigen Sie dazu die **[!UICONTROL Eigenschaften]** Fenster des betroffenen Formulars und klicken Sie auf **[!UICONTROL Zugriffskontrolle aktivieren]** wie unten gezeigt:
 
 ![](assets/s_ncs_admin_survey_access_ctrl.png)
 
@@ -115,7 +115,7 @@ Beim Zugriff auf die Seite erscheint das folgende Authentifizierungsformular:
 
 ![](assets/s_ncs_admin_survey_access_login.png)
 
-Der Benutzername und das Passwort entspricht denen der Adobe Campaign-Operatoren. Weiterführende Informationen dazu finden Sie in [diesem Abschnitt ](../../platform/using/access-management.md).
+Die Anmeldung und das Kennwort werden von Adobe Campaign-Benutzern verwendet. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../platform/using/access-management.md).
 
 Mit der Option **[!UICONTROL Spezifisches Konto nutzen]** können Sie die Lese- oder Schreibrechte eines Operators einschränken, der auf das Formular zugreift. Wählen Sie in der Dropdown-Liste einen Operator oder eine Operatorgruppe aus, die für die Vergabe dieser Rechte zuständig sein sollen.
 
@@ -134,7 +134,7 @@ Standardmäßig sind die folgenden Parameter verfügbar:
 * **id** zur Darstellung der verschlüsselten Kennung
 * **lang** zur Änderung der Anzeigesprache
 * **origin** zur Spezifizierung der Herkunft des reagierenden Kontakts
-* **_uuid** ermöglicht die Ansicht des Formulars vor der Veröffentlichung sowie die Fehlerprüfung. Dieser Parameter ist nur für die interne Nutzung vorgesehen (Erstellung und Fehlerkorrektur): Wenn Sie ein Webformular über diese URL aufrufen, werden beim Tracking (Berichte) die erzeugten Datensätze nicht berücksichtigt. Der Wert für die Herkunft lautet stets **[!UICONTROL Adobe Campaign]**.
+* **_uuid** ermöglicht die Anzeige von Formularen vor der Veröffentlichung und die Fehlerverfolgung. Dieser Parameter ist für die interne Verwendung vorgesehen (Erstellung und Debugging): Wenn Sie über diese URL auf das Webformular zugreifen, werden die erstellten Datensätze beim Tracking (in Berichten) nicht berücksichtigt. Der Ursprung muss **[!UICONTROL Adobe Campaign]** -Wert.
 
   Dieser Parameter wird gemeinsam mit den Parametern **_preview** und/oder **_debug** verwendet:
 
@@ -152,7 +152,7 @@ Parameter können im Eigenschaftenfenster des Formulars über den Tab **[!UICONT
 
 ![](assets/s_ncs_admin_survey_properties_param.png)
 
-Spezifizieren Sie einen Speicherort, von dem der Parameterwert abgerufen wird. Wählen Sie dazu eine der Speicheroptionen aus und öffnen Sie danach den Tab **[!UICONTROL Speicherung]**, um das entsprechende Feld oder die entsprechende Variable auszuwählen. Die Speicheroptionen werden in den [Speicherfeldern für Antworten](web-forms-answers.md#response-storage-fields) ausführlich beschrieben.
+Sie müssen einen Speicherort angeben, von dem der Wert des Parameters abgerufen wird. Wählen Sie dazu eine der Speicheroptionen aus und klicken Sie auf die Schaltfläche **[!UICONTROL Speicherung]** zur Auswahl des entsprechenden Felds oder der betreffenden Variablen. Die Speicheroptionen werden in den [Speicherfeldern für Antworten](web-forms-answers.md#response-storage-fields) ausführlich beschrieben.
 
 Der Status des reagierenden Kontakts (0, 1 oder ein beliebiger anderer Wert) kann dann entsprechend dem Formularzugriff zur URL hinzugefügt werden. Diese Information kann auf den Formularseiten oder in einer Text-Box wiederverwendet werden. Die Anzeige von Seiten kann wie unten gezeigt von einem kontextuellen Wert abhängig gemacht werden:
 

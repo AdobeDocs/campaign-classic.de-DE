@@ -7,8 +7,8 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Cla
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
 source-git-commit: a2106e55617209f28da42c50008d16188563b2da
 workflow-type: tm+mt
-source-wordcount: '862'
-ht-degree: 28%
+source-wordcount: '822'
+ht-degree: 21%
 
 ---
 
@@ -177,7 +177,7 @@ Führen Sie die folgenden Schritte aus, um Ihre Seiten zu schützen:
 
 1. Manchmal wird eine **robots.txt** -Datei ist im Hinblick auf die Sicherheit nicht ausreichend. Wenn beispielsweise eine andere Website einen Link zu Ihrer Seite enthält, kann diese in einem Suchergebnis angezeigt werden.
 
-   Es ist deshalb empfehlenswert, neben der **robots.txt**-Datei einen **X-Robots-Tag**-Header hinzuzufügen. Dies ist sowohl in Apache als auch in IIS sowie in der Konfigurationsdatei **serverConf.xml** möglich.
+   Zusätzlich zu den **robots.txt** hinzugefügt werden, wird empfohlen, eine **X-Robots-Tag** -Kopfzeile. Sie können dies in Apache oder IIS und im **serverConf.xml** Konfigurationsdatei.
 
    Weitere Informationen finden Sie unter [diesem Artikel](https://developers.google.com/search/reference/robots_meta_tag).
 

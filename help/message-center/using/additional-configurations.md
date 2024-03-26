@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: instance-configuration
 exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
 source-git-commit: 52dcc8c01c5ce2421bfb59235bd0e458e7c8122f
-workflow-type: ht
-source-wordcount: '851'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '850'
+ht-degree: 96%
 
 ---
 
@@ -35,7 +35,7 @@ Gehen Sie dazu wie folgt vor:
 
 >[!NOTE]
 >
->Die Anzahl der ausstehenden Ereignisse in der Warteschlange wird im Bereich [Systemindikator](../../production/using/monitoring-processes.md#system-indicators) der Prozessüberwachungsseite von Adobe Campaign angezeigt. Weiterführende Informationen zum Bereitstellungassistenten finden Sie in [diesem Abschnitt](../../installation/using/deploying-an-instance.md#deployment-wizard).
+>Die Anzahl der in der Warteschlange ausstehenden Ereignisse wird im [Systemindikatoren](../../production/using/monitoring-processes.md#system-indicators) auf der Adobe Campaign-Prozessüberwachungsseite. Weitere Informationen zum Softwareverteilungs-Assistenten finden Sie unter [diesem Abschnitt](../../installation/using/deploying-an-instance.md#deployment-wizard).
 
 ## Ereignisse bereinigen {#purging-events}
 

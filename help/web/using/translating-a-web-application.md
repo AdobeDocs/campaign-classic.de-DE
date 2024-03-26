@@ -8,8 +8,8 @@ feature: Web Apps
 exl-id: 82c5c610-8161-4686-aa79-1b690e763765
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '386'
-ht-degree: 100%
+source-wordcount: '387'
+ht-degree: 93%
 
 ---
 
@@ -23,7 +23,7 @@ Wählen Sie mindestens eine weitere Sprache im Tab **[!UICONTROL Lokalisierung]*
 
 Mit dieser Option können Sie angeben, ob der Inhaltsbaustein übersetzt werden muss oder nicht.
 
-Zu übersetzende Strings werden auf dieselbe Weise erfasst wie die anderen Strings der Webanwendung, nämlich über den Tab der Anwendung **[!UICONTROL Übersetzungen]**. Weiterführende Informationen dazu finden Sie auf [dieser Seite](translating-a-web-form.md).
+Zu übersetzende Strings werden auf dieselbe Weise erfasst wie die anderen Strings der Webanwendung, über die **[!UICONTROL Übersetzungen]** Registerkarte der Anwendung. Weitere Informationen hierzu finden Sie auf [dieser Seite](translating-a-web-form.md).
 
 So kennzeichnen Sie die zu übersetzenden Strings:
 

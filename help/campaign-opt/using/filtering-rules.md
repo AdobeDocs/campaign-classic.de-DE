@@ -1,15 +1,15 @@
 ---
 product: campaign
 title: Filterregeln
-description: Erfahren Sie, wie Sie Filterregeln verwenden In Adobe Campaign
+description: Erfahren Sie, wie Sie Filterregeln in Adobe Campaign verwenden.
 role: User, Data Engineer
 badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Typology Rules, Campaigns
 exl-id: a4d12445-5680-4704-9c67-e43e0ea6631b
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '538'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -69,7 +69,7 @@ Diese **[!UICONTROL Filtertypologien]** können bei der Zielgruppenbestimmung ei
 
 ![](assets/campaign_opt_apply_typo_filtering.png)
 
-Wählen Sie anschließend die beim Versand anzuwendende(n) Filtertypologie(n). Klicken Sie hierzu auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wählen Sie die jeweilige Typologie aus.
+Wählen Sie dann die Filtertypologie aus, die auf den Versand angewendet werden soll. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wählen Sie die Typologien aus, die angewendet werden sollen.
 
 Im unteren Bereich des gleichen Tabs können Sie zudem einzelne Filterregeln hinzufügen, die nicht in einer Typologie zusammengefasst sind.
 

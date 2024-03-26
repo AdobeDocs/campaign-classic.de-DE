@@ -11,7 +11,7 @@ exl-id: f661e1d1-de2f-4c6a-bbff-e3ffcd1831f0
 source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
 workflow-type: tm+mt
 source-wordcount: '1452'
-ht-degree: 77%
+ht-degree: 83%
 
 ---
 
@@ -62,7 +62,7 @@ Sie haben die Möglichkeit, eine Marketing-Ressource jederzeit zu ändern und zu
 
 >[!NOTE]
 >
->Die **[!UICONTROL Geschichte]** enthält das Download- und Aktualisierungsprotokoll für die Ressource. Die **[!UICONTROL Details]** -Schaltfläche können Sie die ausgewählte Version anzeigen.
+>Die Registerkarte **[!UICONTROL Verlauf]** enthält das Download- und Aktualisierungsprotokoll für die Ressource. Über die Schaltfläche **[!UICONTROL Details]** können Sie die ausgewählte Version anzeigen.
 
 ### Ressourcen sperren/entsperren {#locking-unlocking-a-resource}
 
@@ -112,7 +112,7 @@ Im Tab **[!UICONTROL Verlauf]** werden die für die jeweilige Ressource durchgef
 
 ### Validierungsprozess {#approval-process}
 
-Das erwartete Verfügbarkeitsdatum wird in den Ressourcendetails angezeigt, wenn es in der Variablen **[!UICONTROL Tracking]** Registerkarte. Sobald dieses Datum erreicht ist, können Sie den Validierungsprozess mit der **[!UICONTROL Zur Genehmigung einreichen]** im Ressourcen-Dashboard. Der Ressourcenstatus ändert sich dann in **[!UICONTROL Genehmigung läuft]**.
+Das erwartete Verfügbarkeitsdatum wird in den Ressourcendetails angezeigt, wenn es auf der Registerkarte **[!UICONTROL Tracking]** angegeben wurde. Sobald dieses Datum erreicht ist, können Sie den Validierungsprozess über die Schaltfläche **[!UICONTROL Zur Validierung unterbreiten]** im Ressourcen-Dashboard ausführen. Der Ressourcenstatus ändert sich dann in **[!UICONTROL Validierung in Gang]**.
 
 Eine Ressource kann über die Schaltfläche **[!UICONTROL Ressource validieren]** in ihrem Dashboard validiert werden.
 
@@ -144,7 +144,7 @@ Die Ressourcenveröffentlichung kann auch über einen Workflow automatisiert wer
 
 Eine Ressource zu veröffentlichen bedeutet, sie verfügbar zu machen, zum Beispiel zur Verwendung in einer Aufgabe. Der eigentliche Vorgang der Veröffentlichung hängt von der Art der Ressource ab: Ein Flyer zum Beispiel kann zum Druck als Datei an einen Dienstleister geschickt oder aber auf einer Webseite online gestellt werden.
 
-Damit Adobe Campaign veröffentlichen kann, müssen Sie einen geeigneten Workflow erstellen und ihn mit der Ressource verknüpfen. Öffnen Sie dazu die **[!UICONTROL Erweiterte Einstellungen]** und wählen Sie den gewünschten Workflow im **[!UICONTROL Nachbearbeitung]** -Feld.
+Damit Adobe Campaign eine Ressource veröffentlichen kann, müssen Sie einen geeigneten Workflow erstellen und ihn mit der Ressource verknüpfen. Öffnen Sie dazu die **[!UICONTROL Erweiterte Einstellungen]** und wählen Sie den gewünschten Workflow im **[!UICONTROL Nachbearbeitung]** -Feld.
 
 ![](assets/mrm_asset_postprocessing_workflow.png)
 

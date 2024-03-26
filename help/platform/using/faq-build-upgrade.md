@@ -9,8 +9,8 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
 source-git-commit: a94c361c5bdd9d61ae9232224af910a78245a889
-workflow-type: ht
-source-wordcount: '2001'
+workflow-type: tm+mt
+source-wordcount: '2006'
 ht-degree: 100%
 
 ---
@@ -78,7 +78,7 @@ Die Dauer eines Build-Upgrades hängt von mehreren Faktoren ab:
 
 * Die Größe der Datenbank, die gesichert oder wiederhergestellt werden muss. (Größere Datenbanken erfordern mehr Zeit für das Upgrade.)
 * Die Größe der Umgebungen. (Viele unserer Kunden haben mehrere unterschiedliche Server, von denen jeder spezifische Funktionen ausführt; größere Umgebungen benötigen mehr Zeit für das Upgrade.)
-* Die Komplexität des Systems. (Manche Systeme haben mehrere Dienste und Verbindungen, die überprüft werden müssen und auch die Überprüfung der Systemstabilität und -leistung erfordern.)
+* Die Komplexität des Systems. (Manche Systeme haben mehrere Dienste und Verbindungen, die überprüft werden müssen und auch die Überprüfung der Systemstabilität und -Performance erfordern.)
 
 Das Build-Upgrade ist ein zweistufiger Vorgang:
 
@@ -163,7 +163,7 @@ Beachten Sie die [Checkliste für Build-Upgrades](#check-list) weiter unten. Kun
 
 ## Wie oft muss ich ein Build-Upgrade durchführen?
 
-Um eine optimale Leistung, Verfügbarkeit und Sicherheit des Systems zu gewährleisten, sorgt Adobe gemeinsam mit seinen Kunden dafür, dass das System zumindest einmal jährlich aktualisiert wird.
+Um eine optimale Performance, Verfügbarkeit und Sicherheit des Systems zu gewährleisten, sorgt Adobe gemeinsam mit seinen Kunden dafür, dass das System zumindest einmal jährlich aktualisiert wird.
 
 ## Muss das System bei einem Build-Upgrade heruntergefahren werden?
 
@@ -182,7 +182,7 @@ Weitere Informationen finden Sie in den [Hilfe- und Support-Optionen für Campai
 1. Führen Sie einen Testversand durch.
    1. Überprüfen Sie, ob die Versand-Logs und der damit verbundene Workflow korrekt ist.
    1. Überprüfen Sie, ob die Tracking-Logs aktualisiert werden.
-   1. Überprüfen Sie die Mirror-Seite und die Tracking-Links.
+   1. Überprüfen Sie die Mirrorseite und die Tracking-Links.
 1. Überprüfen Sie, ob alle technischen Workflows den Status &quot;Gestartet&quot; aufweisen.
 1. Stellen Sie sicher, dass auch alle Prozesse aktiv sind.
 
@@ -191,7 +191,7 @@ Weitere Informationen finden Sie in den [Hilfe- und Support-Optionen für Campai
 * Können Sie sich beim Server anmelden? Stellen Sie sicher, dass die Client-Konsole fehlerfrei funktioniert bzw. keine Fehlerwarnungen angezeigt werden.
 * Achten Sie darauf, dass die Konsole und der Build nach dem Upgrade dieselbe Version aufweisen.
 * Haben Sie Webanwendungen, die Daten zur Campaign-Datenbank hinzufügen? Wenn ja, führen Sie sie aus und überprüfen Sie, ob neue Datensätze per API hinzugefügt werden können.
-* Können Sie eine Test-E-Mail versenden? Erstellen Sie einen neuen Versand mit einer bekannten Vorlage, senden Sie die Nachricht an einen Testempfänger, überprüfen Sie die Personalisierung und stellen Sie sicher, dass der Abmelde-Link und die Mirror-Seite funktionieren.
+* Können Sie eine Test-E-Mail versenden? Erstellen Sie einen neuen Versand mit einer bekannten Vorlage, senden Sie die Nachricht an einen Testempfänger, überprüfen Sie die Personalisierung und stellen Sie sicher, dass der Abmelde-Link und die Mirrorseite funktionieren.
 * Werden alle Ihre kritischen Pfad-Workflows ausgeführt? Überprüfen Sie Workflows, öffnen Sie das Workflow-Protokoll und stellen Sie sicher, dass keine Fehler vorliegen.
 * Sind alle Ordner vorhanden, sichtbar und aufrufbar? Durchsuchen Sie unterschiedliche Ordner und stellen Sie sicher,
 dass alle Inhalte vorhanden sind und angezeigt werden.

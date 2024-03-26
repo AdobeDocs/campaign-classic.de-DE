@@ -87,7 +87,7 @@ Die Zentralstelle kann nach dem Abbruch immer noch auf das Kit zugreifen und es 
 
 ## Zurücksetzen eines Packages {#reinitializing-a-package}
 
-Das Zurücksetzen eines Kampagnenkits dient dazu, dieses zu bearbeiten und anschließend den Lokalstellen erneut zur Verfügung zu stellen.
+Das Zurücksetzen eines bereits veröffentlichten Kampagnenkits dient dazu, dieses zu bearbeiten und anschließend den Lokalstellen erneut zur Verfügung zu stellen.
 
 1. Öffnen Sie hierzu das entsprechende Kit.
 1. Öffnen Sie den Link **[!UICONTROL Kit zurücksetzen, um es erneut zu benutzen...]** und klicken Sie auf **[!UICONTROL OK]**.

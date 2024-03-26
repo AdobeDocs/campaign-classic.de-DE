@@ -7,8 +7,8 @@ feature: Workflows, Targeting Activity, Subscription Services Activity
 exl-id: 1b526d1c-4a33-45a1-98f4-dcb803c8d228
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '434'
-ht-degree: 100%
+source-wordcount: '436'
+ht-degree: 96%
 
 ---
 
@@ -30,7 +30,7 @@ Die Konfiguration der Aktivität besteht in der Angabe eines Titels, die Auswahl
 1. Kreuzen Sie je nach Bedarf **[!UICONTROL Anmeldung]** oder **[!UICONTROL Abmeldung]** an.
 1. Aktivieren Sie die Option **[!UICONTROL Benachrichtigung versenden]**, um den Empfänger von seiner An- oder Abmeldung in Kenntnis zu setzen.
 
-   Der Benachrichtigungsinhalt wird in der Versandvorlage des entsprechenden Informationsdienstes definiert. Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](../../delivery/using/managing-subscriptions.md).
+   Der Inhalt dieser Nachricht wird in einer Versandvorlage für den Informationsdienst angegeben. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../delivery/using/managing-subscriptions.md).
 
 ## Anwendungsbeispiel: Empfänger einer Liste für einen Newsletter anmelden {#example--subscribe-a-list-of-recipients-to-a-newsletter}
 

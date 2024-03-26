@@ -9,7 +9,7 @@ topic-tags: schema-reference
 exl-id: e4d34f56-b065-4dce-8974-11dc2767873a
 source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
-source-wordcount: '1555'
+source-wordcount: '1558'
 ht-degree: 1%
 
 ---
@@ -88,7 +88,7 @@ Die Sequenz, in der `<attribute>` -Elemente in einer `<srcschema>` hat keine Aus
   SQL-Eigenschaftstabellen werden automatisch basierend auf dem charakteristischen Typ erstellt:
 
    * dediziert: `Ft_[name_of_the_schema_containing_the_characteristic]_[name_of_the_characteristic]`
-   * shared: `Ft_[type_of_key_of_the_schema_containing_the_characteristic]_[type_of_the_characteristic]`
+   * freigegeben: `Ft_[type_of_key_of_the_schema_containing_the_characteristic]_[type_of_the_characteristic]`
 
   Es gibt zwei Arten von Eigenschaftenfeldern: einfache à¹-Felder, bei denen ein einzelner Wert für das Merkmal zugelassen ist, und ein¹ Multiple-Choice-Felder, bei denen das Merkmal mit einem Kollektionselement verknüpft ist, das mehrere Werte enthalten kann.
 
@@ -150,11 +150,11 @@ Die Sequenz, in der `<attribute>` -Elemente in einer `<srcschema>` hat keine Aus
    * long
    * Memo
    * MNTOKEN
-   * percent
+   * Prozent
    * primarykey
    * short
    * Zeichenfolge
-   * Zeit
+   * time
    * timespan
    * uuid
 

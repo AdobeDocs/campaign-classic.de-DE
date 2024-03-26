@@ -6,8 +6,8 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Cla
 feature: Workflows
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '236'
-ht-degree: 100%
+source-wordcount: '230'
+ht-degree: 93%
 
 ---
 
@@ -34,7 +34,7 @@ Weitere Informationen hierzu finden Sie je nach Campaign-Version in den folgende
   <tr> 
    <td> <span class="uicontrol">Update des Ereignisstatus</span> <br /> </td> 
    <td> <span class="uicontrol">updateEventsStatus</span> <br /> </td> 
-   <td> Weist Ereignissen einen Status zu. Folgende Status sind möglich:<br /> 
+   <td> Mit diesem Workflow können Sie einem Ereignis einen Status zuweisen. Folgende Ereignisstatus stehen zur Verfügung:<br /> 
     <ul> 
      <li> <p><strong>Ausstehend</strong>: Das Ereignis befindet sich in der Warteschlange. Ihm wurde noch keine Nachrichtenvorlage zugeordnet.</p> </li> 
      <li> <p><strong>Versand ausstehend</strong>: Das Ereignis befindet sich in der Warteschlange. Ihm wurde eine Nachrichtenvorlage zugeordnet und die Versandverarbeitung ist in Gang.</p> </li> 

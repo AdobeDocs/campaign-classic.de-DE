@@ -10,8 +10,8 @@ topic-tags: starting-with-adobe-campaign
 exl-id: 4d9c5b24-83a2-4495-a56c-5bc376d69703
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '559'
-ht-degree: 100%
+source-wordcount: '547'
+ht-degree: 87%
 
 ---
 
@@ -35,7 +35,7 @@ Im Clientkonsole-Verbindungsfenster können Sie mithilfe Ihrer Benutzerkennung u
 
 ## Verbindung mit Adobe Campaign herstellen {#connecting-to-adobe-campaign}
 
-Sie können über Ihre Adobe ID eine Verbindung mit Adobe Campaign herstellen. Weiterführende Informationen hierzu finden Sie auf [dieser Seite](../../integrations/using/about-adobe-id.md).
+Sie können über Ihre Adobe ID eine Verbindung zu Adobe Campaign herstellen. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../integrations/using/about-adobe-id.md).
 
 Die Verbindung kann auch mit einem spezifischen Login/Passwort hergestellt werden:
 
@@ -45,9 +45,9 @@ Die Verbindung kann auch mit einem spezifischen Login/Passwort hergestellt werde
 
 1. Geben Sie im Feld **[!UICONTROL Passwort]** Ihr Passwort ein.
 
-   Beim ersten Zugriff auf die Datenbank ist das vom Administrator festgelegte Passwort zu verwenden. Anschließend kann es über das Menü **[!UICONTROL Werkzeuge > Passwort ändern...]** angepasst werden. Details zu Benutzern und Verbindungen finden Sie unter [Zugriffsverwaltung](../../platform/using/access-management.md).
+   Wenn Sie zum ersten Mal auf die Datenbank zugreifen, ist Ihr Kennwort das vom Administrator festgelegte. Sobald Sie eine Verbindung hergestellt haben, können Sie Ihr Kennwort über die **[!UICONTROL Tools > Kennwort ändern..]** Menü. Details zu Benutzern und Verbindungen finden Sie unter [Zugriffsverwaltung](../../platform/using/access-management.md).
 
-1. Klicken Sie zum Bestätigen auf **[!UICONTROL ANMELDEN]**.<!--You can also press the **Enter** key to launch connection.-->
+1. Klicks **[!UICONTROL ANMELDEN]** zur Bestätigung.<!--You can also press the **Enter** key to launch connection.-->
 
 Jetzt haben Sie Zugriff auf den [Adobe Campaign-Arbeitsbereich](../../platform/using/adobe-campaign-workspace.md).
 
@@ -70,7 +70,7 @@ Anschließend sind die Verbindungsparameter wie folgt zu konfigurieren:
 
 1. Geben Sie im Feld **[!UICONTROL URL]** die Adresse des Anwendungs-Servers ein. Sollten Sie diese nicht kennen, kontaktieren Sie Ihren Administrator.
 
-1. Aktivieren Sie die Option **[!UICONTROL Anmeldung mit einer Adobe ID]**, damit sich Benutzer über ihre Adobe ID mit der Konsole verbinden können. Weiterführende Informationen hierzu finden Sie [auf dieser Seite](../../integrations/using/about-adobe-id.md).
+1. Überprüfen **[!UICONTROL Verbindung zu einer Adobe ID herstellen]** , damit die Benutzer über ihre Adobe ID eine Verbindung zur Konsole herstellen können. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../integrations/using/about-adobe-id.md).
 
 1. Wählen Sie zur Bestätigung **[!UICONTROL OK]** aus.
 

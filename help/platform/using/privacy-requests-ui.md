@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 73b90d79-88b6-4aaf-8103-4564de5e06be
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
-workflow-type: ht
-source-wordcount: '838'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '841'
+ht-degree: 93%
 
 ---
 
@@ -68,7 +68,7 @@ Wenn Sie benutzerdefinierte Tabellen erstellt haben, für die eine Relation zur 
 >Wenn Sie Datenschutz-Batch-Anfragen mithilfe von Profillöschungs-Workflows ausführen, beachten Sie Folgendes:
 >* Beim Löschen von Profilen mit Workflows werden keine untergeordneten Tabellen verarbeitet.
 >* Alle untergeordneten Tabellen müssen manuell gelöscht werden.
->* Es wird empfohlen, einen ETL-Workflow zu erstellen, mit dem der Datenschutz-Zugriffstabelle die zu löschenden Zeilen hinzugefügt werden, und den Löschvorgang mit dem Workflow **[!UICONTROL Datenschutz-Anfragedaten löschen]** auszuführen Wir empfehlen, maximal 200 Profile täglich zu löschen, um die Systemleistung nicht zu beeinträchtigen.
+>* Es wird empfohlen, einen ETL-Workflow zu erstellen, mit dem der Datenschutz-Zugriffstabelle die zu löschenden Zeilen hinzugefügt werden, und den Löschvorgang mit dem Workflow **[!UICONTROL Datenschutz-Anfragedaten löschen]** auszuführen Wir empfehlen, maximal 200 Profile täglich zu löschen, um die System-Performance nicht zu beeinträchtigen.
 
 ## Status von Datenschutzanfragen {#privacy-request-statuses}
 
@@ -80,7 +80,7 @@ Dies sind die unterschiedlichen Status einer Datenschutzanfrage:
 * **[!UICONTROL Löschvorgang läuft]**: Der Workflow führt gerade die Löschung durch.
 * **[!UICONTROL Löschbestätigung steht aus]**: (Löschanfrage im zweistufigen Prozessmodus) Der Workflow hat die Zugriffsanfrage verarbeitet. Für die Löschung ist eine manuelle Bestätigung erforderlich. Die Schaltfläche ist 15 Tage lang verfügbar.
 * **[!UICONTROL Beendet]**: Die Verarbeitung der Anfrage wurde ohne Fehler abgeschlossen.
-* **[!UICONTROL Fehler]**: Beim Workflow ist ein Fehler aufgetreten. Die Ursache wird in der Liste der Datenschutzanfragen in der **[!UICONTROL Anfragestatus]**-Spalte angezeigt. Beispielsweise bedeutet **[!UICONTROL Fehlerhafte Daten nicht gefunden]**, dass keine Empfängerdaten in der Datenbank gefunden wurden, die dem **[!UICONTROL Abstimmwert]** der betroffenen Person entsprechen.
+* **[!UICONTROL Fehler]**: Workflow ist fehlerhaft. Der Grund wird in der Liste der Datenschutzanfragen im **[!UICONTROL Anfragestatus]** Spalte. Beispielsweise bedeutet **[!UICONTROL Fehlerdaten nicht gefunden]**, dass in der Datenbank keine Empfängerdaten gefunden wurden, die dem **[!UICONTROL Abstimmwert]** der betroffenen Person entsprechen.
 
 ## Zweistufiger Prozess {#two-step-process}
 
@@ -152,4 +152,4 @@ Im Folgenden finden Sie ein Beispiel eines Code-Snippets, das Sie in der **[!UIC
 </body> </html>
 ```
 
-Da der Zugriff auf die Datendatei der betroffenen Person eingeschränkt ist, muss der anonyme Zugriff auf die Website deaktiviert sein. Nur Benutzer mit der spezifischen Berechtigung **[!UICONTROL Datenschutz-Daten]** können sich bei der Seite anmelden und die Daten herunterladen.
+Da der Zugriff auf die Datendatei der betroffenen Person eingeschränkt ist, muss der anonyme Zugriff auf die Webseite deaktiviert werden. Nur Operator mit der **[!UICONTROL Datenschutzrecht]** spezifische Berechtigungen können sich bei der Seite anmelden und die Daten herunterladen.

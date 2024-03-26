@@ -8,8 +8,8 @@ badge-v7-prem: label="On-Premise und Hybrid" type="Caution" url="https://experie
 exl-id: 80d388fd-873c-4a08-b8b6-697988f2a18c
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '193'
-ht-degree: 32%
+source-wordcount: '185'
+ht-degree: 29%
 
 ---
 
@@ -31,7 +31,7 @@ Bearbeiten Sie die **customer.sh** und fügen Sie die folgende Zeile hinzu:
 export TRACE_ADDR=localhost:<listening port>
 ```
 
-### Windows {#in-windows}
+### Unter Windows {#in-windows}
 
 Sie müssen die **TRACE_ADDR** Umgebungsvariable mit der **localhost** Wert: **`<listening port="" />`**.
 

@@ -10,7 +10,7 @@ topic-tags: data-processing
 exl-id: 75d3a0af-9a14-4083-b1da-2c1b22f57cbe
 source-git-commit: 624978901943b4c74f50c20298c9596f73b25b1b
 workflow-type: tm+mt
-source-wordcount: '2917'
+source-wordcount: '2921'
 ht-degree: 2%
 
 ---
@@ -48,7 +48,7 @@ Standardmäßig wird die Variable **[!UICONTROL Datenbankbereinigung]** Der Work
 >
 >Um die **[!UICONTROL Datenbankbereinigung]** um an dem in der Planung definierten Datum und zu der Uhrzeit zu starten, muss die Workflow-Engine (wfserver) gestartet werden.
 
-### Bereitstellungsassistent {#deployment-wizard}
+### Implementierungsassistent {#deployment-wizard}
 
 Die **[!UICONTROL Implementierungsassistent]**, auf die über **[!UICONTROL Tools > Erweitert]** kann konfiguriert werden, wie lange Daten gespeichert werden. Die Werte werden in Tagen ausgedrückt. Wenn diese Werte nicht geändert werden, verwendet der Workflow die Standardwerte.
 

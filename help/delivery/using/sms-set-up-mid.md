@@ -6,8 +6,9 @@ badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
 badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: SMS
 role: User, Developer, Admin
-source-git-commit: 4165f5988dfeee2f3b4d872c445ace11c9aa4fe1
-workflow-type: ht
+exl-id: 6987cb5e-8821-4619-b0e4-f0fad3355bfb
+source-git-commit: 46dcd80d5adc31a66b47c6d75e7914b0a686326b
+workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 100%
 
@@ -187,4 +188,3 @@ Sie verfügen nun über ein externes Konto und eine Versandvorlage, die es Ihnen
 * [Transliteration von SMS-Zeichen](sms-set-up.md#about-character-transliteration)
 * [Textcodierungen](sms-set-up.md#about-text-encodings)
 * [Automatische Antwort](sms-set-up.md#automatic-reply)
-

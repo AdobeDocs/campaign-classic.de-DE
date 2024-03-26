@@ -11,8 +11,8 @@ topic-tags: prerequisites-and-recommendations-
 exl-id: b86236ae-95e9-4406-b60f-6d90ad0d4a01
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 9%
+source-wordcount: '713'
+ht-degree: 4%
 
 ---
 
@@ -35,7 +35,7 @@ Für den Versandserver (**nlserver mta**), müssen die folgenden Ports geöffnet
   <tr> 
    <td> Ports<br /> </td> 
    <td> Ziel<br /> </td> 
-   <td> Erklärung<br /> </td> 
+   <td> Kommentare<br /> </td> 
   </tr> 
   <tr> 
    <td> 25/tcp (smtp)<br /> </td> 
@@ -69,7 +69,7 @@ Für den Wiederherstellungsprozess von eingehenden E-Mails (**nlserver inMail**)
   <tr> 
    <td> Ports<br /> </td> 
    <td> Ziel<br /> </td> 
-   <td> Erklärung<br /> </td> 
+   <td> Kommentare<br /> </td> 
   </tr> 
   <tr> 
    <td> 110/tcp (pop3)<br /> </td> 
@@ -93,7 +93,7 @@ Für den Anwendungsserver (**nlserver web**), müssen die folgenden Ports geöff
   <tr> 
    <td> Ports<br /> </td> 
    <td> Ziel<br /> </td> 
-   <td> Erklärung<br /> </td> 
+   <td> Kommentare<br /> </td> 
   </tr> 
   <tr> 
    <td> 80/tcp (http)<br /> 443/tcp (https)<br /> </td> 
@@ -114,7 +114,7 @@ So verfolgen Sie SMS-Sendungen (**nlserver sms**), muss der folgende Port geöff
   <tr> 
    <td> Ports<br /> </td> 
    <td> Ziel<br /> </td> 
-   <td> Erklärung<br /> </td> 
+   <td> Kommentare<br /> </td> 
   </tr> 
   <tr> 
    <td> 38000/tcp (Standardanschluss)<br /> </td> 
@@ -133,11 +133,11 @@ Für den Rich-Client von Adobe Campaign (**nlclient**), müssen die folgenden Po
   <tr> 
    <td> Ports<br /> </td> 
    <td> Ziel<br /> </td> 
-   <td> Erklärung<br /> </td> 
+   <td> Kommentare<br /> </td> 
   </tr> 
   <tr> 
    <td><p> 80/tcp (http)</p><p>443/tcp (https)</p><br /> </td> 
-   <td> Anwendungs-Server<br /> </td> 
+   <td> Anwendungsserver<br /> </td> 
    <td> SOAP-Traffic (HTTP).<br /> </td> 
   </tr> 
  </tbody> 
@@ -159,7 +159,7 @@ Die Standardanschlüsse sind:
   <tr> 
    <td> <strong>Oracle</strong><br /> </td> 
    <td> 1521/tcp<br /> </td> 
-   <td> Datenbank-Server<br /> </td> 
+   <td> Datenbankserver<br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>PostgreSQL</strong><br /> </td> 
@@ -186,7 +186,7 @@ Darüber hinaus müssen bestimmte Komponenten über das öffentliche Internet zu
  <tbody> 
   <tr> 
    <td> Listening-Anschluss<br /> </td> 
-   <td> Location<br /> </td> 
+   <td> Standort<br /> </td> 
   </tr> 
   <tr> 
    <td><p> 80/tcp (http)</p><p> 443/tcp (https)</p><br /> </td> 
@@ -203,7 +203,7 @@ Dieser Server hostet Webformulare, Mirrorseiten usw. Die folgenden Ports müssen
  <tbody> 
   <tr> 
    <td> Listening-Anschluss<br /> </td> 
-   <td> Location<br /> </td> 
+   <td> Standort<br /> </td> 
   </tr> 
   <tr> 
    <td><p> 80/tcp (http)</p><p> 443/tcp (https)</p><br /> </td> 
@@ -218,7 +218,7 @@ Dieser Server hostet Webformulare, Mirrorseiten usw. Die folgenden Ports müssen
  <tbody> 
   <tr> 
    <td> Listening-Anschluss<br /> </td> 
-   <td> Location<br /> </td> 
+   <td> Standort<br /> </td> 
   </tr> 
   <tr> 
    <td><p> 80/tcp (http)</p><p> 443/tcp (https)</p><br /> </td> 

@@ -8,15 +8,15 @@ feature: Personalization
 role: User
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
-workflow-type: ht
-source-wordcount: '985'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '981'
+ht-degree: 88%
 
 ---
 
 # Gestaltungsbausteine {#personalization-blocks}
 
-Gestaltungsbausteine sind dynamisch und personalisierbar und weisen ein spezifisches Rendering auf. Sie können Gestaltungsbausteine in Nachrichten einfügen, z. B. ein Logo, eine Grußbotschaft oder einen Link zu einer Mirror-Seite. Siehe [Einfügen von Gestaltungsbausteinen](#inserting-personalization-blocks).
+Gestaltungsbausteine sind dynamisch und personalisierbar und weisen ein spezifisches Rendering auf. Sie können Gestaltungsbausteine in Nachrichten einfügen, z. B. ein Logo, eine Grußbotschaft oder einen Link zu einer Mirrorseite. Siehe [Einfügen von Gestaltungsbausteinen](#inserting-personalization-blocks).
 
 ![](assets/do-not-localize/how-to-video.png)[ Mehr zu dieser Funktion erfahren Sie im Video.](#personalization-blocks-video).
 
@@ -26,7 +26,7 @@ Sie haben die Möglichkeit, neue Bausteine zu definieren, mit denen Sie die Pers
 
 >[!NOTE]
 >
->Gestaltungsbausteine sind auch im **[!UICONTROL Digital Content Editor (DCE)]** verfügbar. Weiterführende Informationen dazu finden Sie auf [dieser Seite](../../web/using/editing-content.md#inserting-a-personalization-block).
+>Gestaltungsbausteine sind auch über das **[!UICONTROL Digital Content Editor (DCE)]** . Weitere Informationen hierzu finden Sie auf [dieser Seite](../../web/using/editing-content.md#inserting-a-personalization-block).
 
 ## Einfügen von Gestaltungsbausteinen {#inserting-personalization-blocks}
 
@@ -49,11 +49,11 @@ Gehen Sie folgendermaßen vor, um Gestaltungsbausteine in eine Nachricht einzuf�
 
    ![](assets/s_ncs_user_personalized_block04.png)
 
-Sie können auch den Quellcode eines Gestaltungsbausteins im Versandinhalt verwenden, indem Sie die Option **[!UICONTROL HTML-Quellcode des Bausteins einfügen]** auswählen.
+Sie können den Quellcode eines Gestaltungsbausteins in den Versandinhalt einfügen. Wählen Sie dazu **[!UICONTROL HTML-Quellcode des Blocks einschließen]** bei der Auswahl.
 
 ![](assets/s_ncs_user_personalized_block05.png)
 
-Der HTML-Quellcode wird im Versandinhalt eingefügt. Beispielsweise wird der Gestaltungsbaustein **[!UICONTROL Grußformeln]** wie folgt angezeigt:
+Der HTML-Quellcode wird in den Versandinhalt eingefügt. Beispiel: die **[!UICONTROL Greetings]** Personalisierungsblock wird wie folgt angezeigt:
 
 ![](assets/s_ncs_user_personalized_block06.png)
 
@@ -69,11 +69,11 @@ Zu diesem Zweck müssen wir folgende Gestaltungsbausteine einfügen:
 
 >[!NOTE]
 >
->Weitere Informationen zur Erstellung der Mirror-Seite finden Sie unter [Erzeugen der Mirror-Seite](sending-messages.md#generating-the-mirror-page).
+>Weitere Informationen zur Erstellung der Mirrorseite finden Sie unter [Erzeugen der Mirrorseite](sending-messages.md#generating-the-mirror-page).
 
 1. Erstellen Sie einen neuen Versand oder öffnen Sie einen existierenden E-Mail-Versand.
 1. Klicken Sie im Versand-Assistenten auf den **[!UICONTROL Betreff]**-Link, um einen Betreff einzugeben.
-1. Im nächsten Schritt wird der Nachrichten-Textkörper angepasst. Klicken Sie dazu in das Inhaltsfeld der Nachricht und danach auf die Schaltfläche zum Einfügen von Personalisierungsfeldern. Wählen Sie danach das Menü **[!UICONTROL Einfügen]** aus.
+1. Fügen Sie die Gestaltungsbausteine in den Nachrichtentext ein. Klicken Sie dazu in den Nachrichteninhalt, klicken Sie auf das Symbol für das personalisierte Feld und wählen Sie die **[!UICONTROL Einschließen]** Menü.
 1. Wählen Sie den ersten einzufügenden Gestaltungsbaustein aus. Wiederholen Sie diesen Vorgang, um die beiden anderen Bausteine einzufügen.
 
    ![](assets/s_ncs_user_personalized_block_example.png)
@@ -101,14 +101,14 @@ Standardmäßig ist eine Liste mit Gestaltungsbausteinen verfügbar, um den Inha
 
   >[!NOTE]
   >
-  >Weitere Informationen zur Erstellung der Mirror-Seite finden Sie unter [Erzeugen der Mirror-Seite](sending-messages.md#generating-the-mirror-page).
+  >Weitere Informationen zur Erstellung der Mirrorseite finden Sie unter [Erzeugen der Mirrorseite](sending-messages.md#generating-the-mirror-page).
 
-* **[!UICONTROL Link zur Mirror-Seite]**: Hiermit wird der Link zur Mirror-Seite „Wenn die Nachricht nicht richtig angezeigt wird, bitte hier klicken“ eingefügt.
+* **[!UICONTROL Link zur Mirrorseite]**: Hiermit wird der Link zur Mirrorseite „Wenn die Nachricht nicht richtig angezeigt wird, bitte hier klicken“ eingefügt.
 * **[!UICONTROL Abmelde-Link]**: Hiermit wird ein Link zur Abmeldung von allen Nachrichten (Blockierungsliste) eingefügt.
 * **[!UICONTROL Formatierungsfunktion für Eigennamen]**: Hiermit wird die JavaScript-Funktion **[!UICONTROL toSmartCase]** erstellt, mit der der erste Buchstabe eines jeden Worts in einen Großbuchstaben umgewandelt wird.
 * **[!UICONTROL Anmeldungsseiten-URL]**: Hiermit wird eine Anmelde-URL eingefügt (siehe [Über Dienste und Abonnements](about-services-and-subscriptions.md)).
-* **[!UICONTROL Anmelde-Link]**: Hiermit wird ein Anmelde-Link eingefügt, der beim Konfigurieren der Instanz definiert wurde.
-* **[!UICONTROL Registrierungslink (mit Werber)]**: Hiermit wird ein Anmelde-Link eingefügt, über den der Besucher und der Versand identifiziert werden kann. Der Link wurde beim Konfigurieren der Instanz definiert.
+* **[!UICONTROL Anmelde-Link]**: Hiermit wird ein Anmelde-Link eingefügt. wurde beim Konfigurieren der Instanz definiert.
+* **[!UICONTROL Anmelde-Link (mit Werber)]**: Hiermit wird ein Anmelde-Link eingefügt, über den der Besucher bzw. die Besucherin sowie der Versand identifiziert werden können. Der Link wurde beim Konfigurieren der Instanz definiert.
 
   >[!NOTE]
   >
@@ -139,7 +139,7 @@ Gehen Sie im Explorer wie folgt vor, um Gestaltungsbausteine zu erstellen:
 
      ![](assets/s_ncs_user_personalized_block_b.png)
 
-   * Geben Sie den Inhalt der Gestaltungsbausteine (in HTML, Text, JavaScript usw.) ein und klicken Sie auf **[!UICONTROL Speichern]**.
+   * Geben Sie den Inhalt des Gestaltungsbausteins (in HTML, Text, JavaScript usw.) der Gestaltungsbausteine und klicken Sie auf **[!UICONTROL Speichern]**.
 
 ## Anleitungsvideo {#personalization-blocks-video}
 

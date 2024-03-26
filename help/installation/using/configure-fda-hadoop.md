@@ -10,8 +10,8 @@ topic-tags: connectors
 exl-id: e3a97e55-dd8b-41e1-b48c-816d973f62a8
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '626'
-ht-degree: 78%
+source-wordcount: '607'
+ht-degree: 72%
 
 ---
 
@@ -24,7 +24,7 @@ Verwenden von Campaign **Federated Data Access** (FDA), um in externen Datenbank
 1. Konfigurieren [Hadoop-Datenbank](#configuring-hadoop)
 1. Hadoop konfigurieren [externes Konto](#hadoop-external) in Campaign
 
-## Konfigurieren von Hadoop 3.0 {#configuring-hadoop}
+## Konfigurieren von Hadoop 3.0 {#configuring-hadoop}
 
 Die Verbindung mit einer externen Hadoop-Datenbank über die FDA-Option erfordert folgende Konfigurationen auf dem Adobe Campaign-Server. Beachten Sie, dass diese Konfiguration für sowohl Windows als auch Linux verfügbar ist.
 
@@ -84,7 +84,7 @@ Der Connector unterstützt außerdem die folgenden Hive-Optionen:
 | fileFormat | PARQUET | Standarddateiformat für Arbeitstabellen. |
 
 
-## Konfigurieren von Hadoop 2.1 {#configure-access-hadoop-2}
+## Hadoop 2.1 konfigurieren {#configure-access-hadoop-2}
 
 Wenn Sie eine Verbindung zu Hadoop 2.1 herstellen müssen, führen Sie die folgenden Schritte aus für [Windows](#for-windows) oder [Linux](#for-linux).
 
@@ -157,7 +157,7 @@ Wenn Sie eine Verbindung zu Hadoop 2.1 herstellen müssen, führen Sie die folge
    >
    >Der Parameter **UseNativeQuery** ist dabei sehr wichtig. Campaign unterstützt Hive und funktioniert nur dann ordnungsgemäß, wenn UseNativeQuery eingerichtet ist. Üblicherweise formuliert der Treiber oder Hive SQL Connector Abfragen um und ändert die Spaltenanordnung.
 
-   Die Authentifizierungseinrichtung hängt von der Konfiguration von Hive/Hadoop ab. Verwenden Sie z. B. für HD Insight AuthMech=6 für die Benutzer-/Passwort-Authentifizierung entsprechend [dieser Beschreibung](https://www.simba.com/products/Spark/doc/ODBC_InstallGuide/unix/content/odbc/hi/configuring/authenticating/azuresvc.htm).
+   Die Authentifizierungseinrichtung hängt von der Hive/Hadoop-Konfiguration ab. Verwenden Sie beispielsweise für HD Insight AuthMech=6 für Benutzer-/Kennwortauthentifizierung, wie beschrieben. [here](https://www.simba.com/products/Spark/doc/ODBC_InstallGuide/unix/content/odbc/hi/configuring/authenticating/azuresvc.htm).
 
 1. Exportieren Sie die Variablen.
 

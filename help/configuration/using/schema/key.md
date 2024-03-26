@@ -6,8 +6,8 @@ feature: Schema Extension
 exl-id: 3d0ef574-27a3-40f2-91a0-70e9583d9980
 source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
-source-wordcount: '319'
-ht-degree: 8%
+source-wordcount: '322'
+ht-degree: 1%
 
 ---
 
@@ -44,7 +44,7 @@ Eine Tabelle muss mindestens einen Schlüssel haben.
 
 ## Verwendung und Verwendungskontext {#use-and-context-of-use-6}
 
-In der Regel werden Schlüssel nach dem Hauptelement des Schemata und der Indizes deklariert.
+In der Regel werden Schlüssel nach dem Hauptelement des Schemas und der Indizes deklariert.
 
 Ein Schlüssel wird als Verbund bezeichnet, wenn er mehrere Felder enthält (d. h. mehrere `<keyfield>` Kinder). Verwenden Sie keinen zusammengesetzten Schlüssel, um einen Primärschlüssel zu definieren.
 

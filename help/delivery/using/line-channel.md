@@ -8,9 +8,9 @@ feature: Line App
 role: User
 exl-id: 1baaabbd-9fd7-4d9b-b78e-d2a559d7dddb
 source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
-workflow-type: ht
-source-wordcount: '1332'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1331'
+ht-degree: 98%
 
 ---
 
@@ -156,7 +156,7 @@ Bei einem [!DNL LINE]-Versand vom Typ **[!UICONTROL Textnachrichten]** handelt e
 
 ![](assets/line_message_02.png)
 
-Die Konfiguration dieses Nachrichtentyps ist mit der Konfiguration von **[!UICONTROL Text]** in einer E-Mail vergleichbar. Weiterführende Informationen hierzu finden Sie auf [dieser Seite](defining-the-email-content.md#message-content).
+Die Konfiguration für diesen Nachrichtentyp ähnelt der Konfiguration der **[!UICONTROL Text]** in einer E-Mail. Weiterführende Informationen dazu finden Sie auf dieser [Seite](defining-the-email-content.md#message-content).
 
 ### Konfiguration eines Bild-und-Link-Versands {#configuring-an-image-and-link-delivery}
 

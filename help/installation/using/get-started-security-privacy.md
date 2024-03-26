@@ -10,8 +10,8 @@ topic-tags: prerequisites-and-recommendations-
 exl-id: ec40498e-e673-4792-8dcf-8bb7e852b532
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '493'
-ht-degree: 59%
+source-wordcount: '491'
+ht-degree: 49%
 
 ---
 
@@ -30,7 +30,7 @@ Die Datenschutzkonfiguration und entsprechende Härtungsmaßnahmen sind zentrale
 * Schützen Sie die personenbezogenen Daten Ihrer Kunden, indem Sie HTTPS anstelle von HTTP verwenden.
 * Verwenden Sie die eingeschränkte Anzeige personenbezogener Daten, um die Daten zu schützen und ihren Missbrauch zu verhindern.
 * Stellen Sie sicher, dass der Zugriff auf verschlüsselte Passwörter beschränkt ist.
-* Schützen Sie Seiten, die möglicherweise personenbezogene Daten enthalten (z. B. Mirror-Seiten, Web-Anwendungen usw.).
+* Schützen Sie Seiten, die möglicherweise personenbezogene Daten enthalten (z. B. Mirrorseiten, Web-Anwendungen usw.).
 
 [Mehr dazu](../../installation/using/privacy.md)
 
@@ -74,11 +74,11 @@ Außerdem müssen Sie die Sicherheit Ihrer Datenbank-Engine unbedingt befolgen.
 >
 >Ab dem 14. Juli 2021 verlieren Client-Systeme, die das TLS 1.2-Protokoll nicht unterstützen, den Zugriff auf alle Adobe-Produkte und -Dienste. Stellen Sie sicher, dass alle Benutzer- und Client-Systeme vor diesem Datum TLS 1.2-konform sind. [Weitere Informationen](https://helpx.adobe.com/x-productkb/multi/eol-tls-support.html)
 
-## Konfiguration des Servers
+## Serverkonfiguration
 
 <img src="assets/do-not-localize/icon_server.svg" width="60px">
 
-Alle Server müssen konfiguriert werden. Die Konfigurationsdateien sind vom Typ **serverConf.xml** und **`config-<instance>.xml`**. Die folgenden Schlüsselelemente müssen überprüft werden:
+Die Konfiguration muss auf allen Servern durchgeführt werden. Die Konfigurationsdateien sind vom Typ **serverConf.xml** und **`config-<instance>.xml`**. Im Folgenden finden Sie die wichtigsten Elemente, die überprüft werden müssen:
 
 * **Sicherheitszonen**: Konfigurieren Sie Sicherheitszonen, damit die IP-Adressen von Clients eines Proxys automatisch berücksichtigt werden.
 
@@ -86,9 +86,9 @@ Alle Server müssen konfiguriert werden. Die Konfigurationsdateien sind vom Typ 
 
 * **Relais**: Optimieren Sie die Relais-Konfiguration, indem Sie die Relais-Regeln für nicht verwendete Module/Anwendungen deaktivieren.
 
-* **Schutz vor ausgehenden Verbindungen** und **Einschränkung der Befehle** (serverseitig)
+* **Schutz der ausgehenden Verbindung** und **Befehlsbeschränkung** (serverseitig)
 
-* Sie können auch zusätzliche HTTP-Header hinzufügen und checkIPConsistent, enableTLS, sessionTimeOutSec aktivieren etc. Siehe Abschnitt [Dokumentation zur Konfiguration des Campaign-Servers](../../installation/using/configuring-campaign-server.md) und [Beschreibung der Serverkonfigurationsdatei](../../installation/using/the-server-configuration-file.md) für weitere Informationen.
+* Sie können auch zusätzliche HTTP-Header hinzufügen, checkIPConsistent, enableTLS, sessionTimeOutSec usw. aktivieren. Siehe Abschnitt [Dokumentation zur Konfiguration des Campaign-Servers](../../installation/using/configuring-campaign-server.md) und [Beschreibung der Serverkonfigurationsdatei](../../installation/using/the-server-configuration-file.md) für weitere Informationen.
 
 [Mehr dazu](../../installation/using/server-configuration.md)
 

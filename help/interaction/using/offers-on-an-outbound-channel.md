@@ -11,8 +11,8 @@ topic-tags: case-study
 exl-id: 77fee343-09d1-4d60-be43-efe02953a70c
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '477'
-ht-degree: 100%
+source-wordcount: '480'
+ht-degree: 94%
 
 ---
 
@@ -87,14 +87,14 @@ Angenommen, Sie verfügen in Ihrer Datenbank über eine Reihe von Angeboten für
 
    ![](assets/offer_simulation_example_005.png)
 
-1. Wählen Sie die Platzierung aus.
+1. Wählen Sie die Platzierung für die Simulation aus.
 
    ![](assets/offer_simulation_example_006.png)
 
 1. Geben Sie einen Zeitraum an. Es muss zumindest ein Startdatum definiert werden. Dies ermöglicht es dem Angebotsmodul, die Angebote zu filtern und nur jene zu berücksichtigen, die zum angegebenen Zeitpunkt tatsächlich zur Verfügung stehen werden.
 1. Geben Sie bei Bedarf Themen an, um die Anzahl der Angebote zu begrenzen.
 
-   Im vorliegenden Beispiel enthält die Kategorie **Finanzdienstleistungen** zwei Unterkategorien mit je einem unterschiedlichen Thema. Die Simulation soll sich nur auf die Kategorie mit dem Anwendungsthema **Kunden > 1 Jahr** beziehen.
+   In unserem Beispiel wird die **Reisekosten** -Kategorie enthält zwei Unterkategorien mit zwei separaten Themen. Wir möchten eine Simulation für Angebote mit dem **Kunden > 1 Jahr** Design.
 
    ![](assets/offer_simulation_example_007.png)
 

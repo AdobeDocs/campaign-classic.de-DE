@@ -8,7 +8,7 @@ exl-id: 6c90ac2f-0d2b-48b0-9245-3e5e3a3d027c
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '548'
-ht-degree: 100%
+ht-degree: 81%
 
 ---
 
@@ -44,7 +44,7 @@ In der Regel werden diese Optionen im Diagramm durch Rechtsklick auf die Aktivit
 
 * **[!UICONTROL Normal]** - die Aufgabe wird ausgeführt.
 * **[!UICONTROL Nicht aktivieren]** - die Aufgabe sowie alle im selben Zweig folgenden Aktivitäten werden nicht ausgeführt.
-* **[!UICONTROL Aktivieren aber nicht ausführen]** - die Aufgabe sowie alle im selben Zweig folgenden Aktivitäten werden mit sofortiger Wirkung ausgesetzt. Dies ist v. a. dann interessant, wenn die Aufgabe in Ihrer Anwesenheit gestartet werden soll. Klicken Sie zum gewünschten Ausführungszeitpunkt mit der rechten Maustaste auf eine Aktivität und wählen Sie **[!UICONTROL Normale Ausführung]**.
+* **[!UICONTROL Aktivieren, aber nicht ausführen]**: Diese Aufgabe und alle folgenden Aufgaben (im selben Zweig) werden automatisch angehalten. Dies kann nützlich sein, wenn Sie beim Starten der Aufgabe dort sein möchten. Klicken Sie mit der rechten Maustaste auf die Aktivität und wählen Sie **[!UICONTROL Normale Ausführung]**.
 
 ## Affinität {#affinity}
 
@@ -55,7 +55,7 @@ Die Konfiguration von Workflows mit hoher Disponibilität wird in diesem [Abschn
 
 ## Max. Ausführungsdauer {#max--execution-period}
 
-In diesem Feld kann eine maximale Dauer für die Workflow-Ausführung bestimmt werden. Wenn eine Aufgabe die angegebene Dauer überschreitet, zeigt das **[!UICONTROL Instanz-Monitoring]** einen Warnhinweis bezüglich des Workflows an. Auf diese Seite kann von der Startseite aus über die Rubrik **[!UICONTROL Monitoring]** zugegriffen werden.****
+In diesem Feld können Sie eine Warnung einrichten, wenn die Aufgabe zu lange dauert. Dies wirkt sich nicht auf den Workflow-Vorgang aus. Wenn die Aufgabe nicht zum Zeitpunkt der **[!UICONTROL Max. Ausführungsdauer]** ist vorbei, die **[!UICONTROL Instanzenüberwachung]** -Seite wird eine Warnung für diesen Workflow angezeigt. Auf diese Seite kann über das **[!UICONTROL Überwachung]** auf der Startseite.
 
 ## Verhalten {#behavior}
 

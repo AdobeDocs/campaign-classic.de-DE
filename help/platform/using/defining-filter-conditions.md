@@ -11,8 +11,8 @@ topic-tags: creating-queries
 exl-id: b62e23e5-f1b7-44c4-82d9-95c6b3240352
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '3406'
-ht-degree: 100%
+source-wordcount: '3475'
+ht-degree: 82%
 
 ---
 
@@ -80,22 +80,22 @@ Die folgende Liste beschreibt alle verfügbaren Operatoren:
   <tr> 
    <td> <span class="uicontrol">Enthält</span> <br /> </td> 
    <td> Die ausgegebenen Daten enthalten den angegebenen Wert.<br /> </td> 
-   <td> <strong>E-Mail-Domain (@domain) enthält 'mail'</strong>. Nur E-Mail-Domains, die den Wert 'mail' enthalten, werden ausgegeben (z. B. 'gmail.com').<br /> </td> 
+   <td> <strong>E-Mail-Domain (@domain) enthält 'mail'</strong>gibt alle Domänennamen zurück, die "mail"enthalten. Die Domain 'gmail.com' wird also ebenfalls zurückgegeben.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Enthält nicht</span> <br /> </td> 
    <td> Die ausgegebenen Daten enthalten den angegebenen Wert nicht.<br /> </td> 
-   <td> <strong>E-Mail-Domain (@domain) enthält nicht 'oo'</strong>. E-Mail-Domains, die den Wert 'oo' enthalten, werden nicht ausgegeben (z. B. 'google.com' oder 'yahoo.de' zählen nicht zu den Ergebnissen).<br /> </td> 
+   <td> <strong>E-Mail-Domain (@domain) enthält nicht 'vo'</strong>. In diesem Fall werden Domänennamen, die "vo"enthalten, nicht zurückgegeben. Der Domänenname "voila.fr"wird nicht in den Ergebnissen angezeigt.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Ist wie</span> <br /> </td> 
    <td> <span class="uicontrol">Ist wie</span> erzielt ähnliche Ergebnisse wie der Operator <span class="uicontrol">enthält. </span> Sie können ein Platzhalterzeichen (<span class="uicontrol">%</span>) in den Wert einfügen.<br /> </td> 
-   <td> <strong>Nachname (@lastName) ist wie 'Me%er'</strong>. In diesem Fall werden alle Empfänger ausgegeben, deren Nachname z. B. 'Meyer', 'Meier' oder 'Meiser' lautet.<br /> </td> 
+   <td> <strong>Nachname (@lastName) wie "Jon%s"</strong>. Hier wird das Platzhalterzeichen als "Joker"verwendet, um den Namen "Jones"zu finden, falls der Benutzer den fehlenden Buchstaben zwischen "n"und "s"vergessen hat.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Ist nicht wie</span> <br /> </td> 
-   <td> Negative Form des Operators <span class="uicontrol">ist wie</span>. Hier dürfen die ausgegebenen Daten nicht dem angegebenen Wert ähneln. Auch in diesem Fall ist der Platzhalter <span class="uicontrol">%</span> zu verwenden.<br /> </td> 
-   <td> <strong>Nachname (@lastName) ist nicht wie 'Schmi%t'</strong>. Alle Empfänger mit Nachnamen 'Schmiedt', 'Schmidt', 'Schmitt' usw. werden ausgeschlossen.<br /> </td> 
+   <td> Ist ähnlich wie <span class="uicontrol">liken</span> . Der eingegebene Wert wird nicht abgerufen. Auch in diesem Fall ist der Platzhalter <span class="uicontrol">%</span> zu verwenden.<br /> </td> 
+   <td> <strong>Nachname (@lastName) nicht wie 'Smi%h'</strong>. Hier werden die Empfänger, deren Nachname 'Schmi%t' lautet, nicht zurückgegeben.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Ist leer</span> <br /> </td> 
@@ -104,18 +104,18 @@ Die folgende Liste beschreibt alle verfügbaren Operatoren:
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Ist nicht leer</span> <br /> </td> 
-   <td> Negative Form des Operators <span class="uicontrol">ist leer</span>. Auch hier wird in der Wert-Spalte nichts angegeben.<br /> </td> 
+   <td> Funktioniert rückwärts zum <span class="uicontrol">Ist leer</span> Operator. Es ist nicht erforderlich, Daten in die zweite Wert -Spalte einzutragen.<br /> </td> 
    <td> <strong>E-Mail (@email) ist nicht leer</strong>. Nur Empfänger, die eine E-Mail-Adresse angegeben haben, werden ausgegeben.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Ist enthalten in</span> <br /> </td> 
-   <td> Die ausgegebenen Daten sind in den angegebenen Werten enthalten. Die Werte werden durch Kommata getrennt.<br /> </td> 
+   <td> Die ausgegebenen Daten enthalten die angegebenen Werte. Diese Werte müssen durch Kommas getrennt werden.<br /> </td> 
    <td> <strong>Postleitzahl (location/@zipCode) ist enthalten in '21149,22041,22043'</strong>. Nur Empfänger, deren Postleitzahl '21149', '22041' oder '22043' lautet, werden ausgegeben. <br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Ist nicht enthalten in</span> <br /> </td> 
-   <td> Negative Form des Operators <span class="uicontrol">ist enthalten in</span>. Die den angegebenen Werten entsprechenden Daten werden aus dem Ergebnis ausgeschlossen.<br /> </td> 
-   <td> <strong>Postleitzahl (location/@zipCode) ist nicht enthalten in '21149,22041,22043'</strong>. Alle Empfänger, deren Postleitzahl '21149', '22041' oder '22043' lautet, werden vom Ergebnis ausgeschlossen.<br /> </td> 
+   <td> Funktioniert wie die <span class="uicontrol">Ist enthalten in</span> Operator. Im vorliegenden Beispiel sollen die Empfänger anhand der eingegebenen Werte ausgeschlossen werden.<br /> </td> 
+   <td> <strong>Geburtsdatum (@birthDate) ist nicht in '12/10/1979,12/10/1984' enthalten.</strong>. Im Gegensatz zum vorherigen Beispiel werden innerhalb dieser Datumswerte geborene Empfänger nicht zurückgegeben.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -160,19 +160,19 @@ In diesem Kapitel wird erläutert, wie anhand der blauen Pfeile in der Symbollei
 
 * Die nach oben und unten gerichteten Pfeile ermöglichen das Verschieben einer Bedingung und somit die Reihenfolge der Filterung.
 
-Das folgende Beispiel verdeutlicht die Funktionsweise des Linkspfeils. Die ursprüngliche Filterbedingung lautet: **[!UICONTROL Ort gleich Hamburg ODER Geschlecht gleich Männlich und Mobiltelefon nicht angegeben ODER Kundennummer beginnt mit &quot;95&quot; und Firma beginnt mit &quot;A&quot;]**.
+In diesem Beispiel erfahren Sie, wie Sie mit dem Pfeil eine Klammerebene löschen können. Beginnen Sie mit der folgenden Filterbedingung: **[!UICONTROL Ort gleich London ODER Geschlecht gleich Männlich und Mobiltelefon nicht angegeben ODER Kundennummer beginnt mit &quot;95&quot; und Firmenname beginnt mit &quot;A&quot;]**.
 
 Platzieren Sie den Cursor auf der Filterbedingung **[!UICONTROL Geschlecht (@gender) gleich Männlich]** und klicken Sie auf den Pfeil **[!UICONTROL Eine Klammerebene entfernen]**.
 
 ![](assets/query_editor_nveau_32.png)
 
-Die Bedingung **[!UICONTROL Geschlecht (@gender) gleich Männlich]** wurde aus der Klammer entfernt. Sie befindet sich nun auf der gleichen Ebene wie die Bedingung &quot;Ort gleich Hamburg&quot;. Die entsprechenden Bedingungen sind jetzt durch **[!UICONTROL Und]** verknüpft.
+Die **[!UICONTROL Geschlecht (@gender) gleich Männlich]** -Bedingung aus der Klammer entfernt. Es wurde auf die gleiche Ebene wie die Bedingung &quot;Stadt gleich London&quot;verschoben. Diese Bedingungen sind miteinander verknüpft (**[!UICONTROL und]**).
 
 ## Zu extrahierende Daten auswählen {#selecting-data-to-extract}
 
-Je nach Tabelle stehen verschiedene Felder zur Verfügung. Alle Felder sind in einem **[!UICONTROL Hauptelement]** genannten Knoten gespeichert. Die Felder in unten stehendem Beispiel stammen aus der Empfängertabelle (nms:recipient). Die Anzeige erfolgt jeweils in alphabetischer Reihenfolge.
+Die verfügbaren Felder variieren je nach Tabelle. Alle Felder werden in einem Hauptknoten gespeichert, der als **[!UICONTROL Hauptelement]**. Im folgenden Beispiel befinden sich die verfügbaren Felder in der Empfängertabelle. Felder werden immer alphabetisch angezeigt.
 
-Unten im Fenster werden weitere Details zum ausgewählten Feld angezeigt. So handelt es sich beispielsweise beim Feld **[!UICONTROL E-Mail-Domain]** um ein **[!UICONTROL Berechnetes SQL-Feld]** mit der ergänzenden Bezeichnung **[!UICONTROL (@domain)]**.
+Die Details des ausgewählten Felds werden unten im Fenster angezeigt. Beispiel: die **[!UICONTROL E-Mail-Domain]** ein Feld ist **[!UICONTROL Berechnetes SQL-Feld]** und ihre Erweiterung **[!UICONTROL (@domain)]**.
 
 ![](assets/query_editor_nveau_59.png)
 
@@ -180,11 +180,11 @@ Unten im Fenster werden weitere Details zum ausgewählten Feld angezeigt. So han
 >
 >Verwenden Sie das Eingabefeld **[!UICONTROL Suchen]**, um die Liste der möglichen Felder einzuschränken.
 
-Doppelklicken Sie auf ein Feld, um es zu den Ausgabespalten hinzuzufügen. Jedes ausgewählte Feld entspricht einer Spalte in der **[!UICONTROL Datenvorschau]** am Ende der Abfrage.
+Doppelklicken Sie auf ein verfügbares Feld, um es den Ausgabespalten hinzuzufügen. Am Ende der Abfrage erstellt jedes ausgewählte Feld eine Spalte im **[!UICONTROL Datenvorschau]** Fenster.
 
 ![](assets/query_editor_nveau_01.png)
 
-Standardmäßig werden erweiterte Felder nicht angezeigt. Dies können Sie ändern, indem Sie auf **[!UICONTROL Erweiterte Felder anzeigen]** im rechten unteren Winkel der verfügbaren Felder klicken. Dann wird auch der vollständige Name der Felder angezeigt.
+Erweiterte Felder werden nicht standardmäßig angezeigt. Klicks **[!UICONTROL Erweiterte Felder anzeigen]** in der rechten unteren Ecke der verfügbaren Felder, um alles anzuzeigen. Klicken Sie erneut auf , um zur vorherigen Ansicht zurückzukehren.
 
 In der Empfängertabelle beispielsweise gelten folgende Felder als erweitert: **Boolesch 1**, **[!UICONTROL Boolesch 2]**, **[!UICONTROL Boolesch 3]**, **[!UICONTROL Fremdschlüssel der &#39;Ordner&#39;-Verknüpfung]** usw.
 
@@ -249,12 +249,12 @@ Relationen zu einer Tabelle oder zu Sammlungselementen:
  <tbody> 
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_51.png" /> </td> 
-   <td> 1:1-Relationen zu einer bestimmten Tabelle. Einem Datensatz in der Quelltabelle entspricht höchstens ein Datensatz in der Zieltabelle. Ein Empfänger kann beispielsweise höchstens einem Land zugeordnet werden.<br /> </td> 
+   <td> Insbesondere Links zu einer Tabelle. Diese entsprechen 1-1 Typzuordnungen. Die Quelltabelle kann nur mit einer Entität in der Zieltabelle zusammenfallen. Beispielsweise kann nur ein Empfänger mit einem Land verknüpft werden.<br /> </td> 
    <td> Ordner, Zustand, Land usw. <br /> </td> 
   </tr> 
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_52.png" /> </td> 
-   <td> Sammlungselemente bezogen auf eine bestimmte Tabelle. Es handelt sich um 1:n-Relationen. Einem Datensatz in der Quelltabelle können mehrere Datensätze in der Zieltabelle entsprechen, aber ein Datensatz der Zieltabelle entspricht genau einem Datensatz in der Quelltabelle. Ein Empfänger kann z. B. für 'n' Newsletter angemeldet sein.<br /> </td> 
+   <td> Kollektionselemente für eine bestimmte Tabelle. Diese entsprechen den Typzuordnungen des Typs 1:N. Ein Vorkommen der Quelltabelle kann mit mehreren Vorkommen der Zieltabelle zusammenfallen, aber eine Vorkommen der Zieltabelle kann nur mit einer Vorkommen der Quelltabelle zusammenfallen. Beispielsweise kann ein Empfänger "n"-Abonnementbriefe abonnieren.<br /> </td> 
    <td> Abonnements, Listen, Ausschlusslogs usw.<br /> </td> 
   </tr> 
  </tbody> 
@@ -269,17 +269,17 @@ Relationen zu einer Tabelle oder zu Sammlungselementen:
 
 ## Berechnete Felder erstellen {#creating-calculated-fields}
 
-Sie haben die Möglichkeit, im Schritt der Datenformatierung ein berechnetes Feld hinzuzufügen. Dieses wird bei der Datenvorschau in Form einer zusätzlichen Spalte angezeigt. Klicken Sie hierfür auf die Schaltfläche **[!UICONTROL Berechnetes Feld hinzufügen]**.
+Fügen Sie bei Bedarf bei der Datenformatierung eine Spalte hinzu. Ein berechnetes Feld fügt dem Bereich der Datenvorschau eine Spalte hinzu. Klicks **[!UICONTROL Berechnetes Feld hinzufügen]**.
 
 ![](assets/query_editor_nveau_43.png)
 
 Vier verschiedene Feldtypen stehen zur Verfügung:
 
-* **[!UICONTROL Unveränderliche Zeichenkette]**: Fügt eine Zeichenkette hinzu.
+* **[!UICONTROL Unveränderliche Zeichenfolge]**: Fügt eine Zeichenfolge hinzu.
 
   ![](assets/query_editor_nveau_60.png)
 
-* **[!UICONTROL Zeichenkette mit JavaScript-Fusion]**: Das berechnete Feld kombiniert eine Zeichenkette mit JavaScript-Direktiven.
+* **[!UICONTROL Zeichenfolge mit JavaScript-Fusion]**: Das berechnete Feld kombiniert eine Zeichenfolge mit JavaScript-Direktiven.
 
   ![](assets/query_editor_nveau_61.png)
 
@@ -316,11 +316,11 @@ Folgendes Beispiel zeigt die Erstellung eines Ausdrucks zum Zählen eines Primä
 
 Gehen Sie wie folgt vor:
 
-1. Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]** im Fenster **[!UICONTROL Zu extrahierende Daten]** und wählen Sie im Fenster **[!UICONTROL Formeltyp]** die Ihrem Ausdruck entsprechende Formel aus.
+1. Klicks **[!UICONTROL Hinzufügen]** im **[!UICONTROL Zu extrahierende Daten]** Fenster. Im **[!UICONTROL Formeltyp]** -Fenster einen Formeltyp auswählen, um den Ausdruck einzugeben.
 
    **[!UICONTROL Einfaches Feld]**, **[!UICONTROL Aggregat]** und **[!UICONTROL Ausdruck]** stehen zur Verfügung.
 
-   Wählen Sie die Option **[!UICONTROL Aggregatfunktionen]** und **[!UICONTROL Zählung]** und klicken Sie auf **[!UICONTROL Weiter]**.
+   Auswählen **[!UICONTROL Aggregatfunktionen]**, und **[!UICONTROL Count]**. Klicken Sie auf **[!UICONTROL Weiter]**.
 
    ![](assets/query_editor_nveau_54.png)
 
@@ -339,7 +339,7 @@ Nachfolgend werden die **[!UICONTROL Formeltypen]** detailliert dargestellt:
    * **[!UICONTROL Summe]**: berechnet beispielsweise die Gesamtheit aller Bestellungen eines Kunden.
    * **[!UICONTROL Maximaler Wert]**: gibt beispielsweise die Kunden aus, die maximal &quot;n&quot; Artikel gekauft haben.
    * **[!UICONTROL Minimaler Wert]**: gibt beispielsweise die Kunden aus, die zuletzt ein Angebot angenommen haben.
-   * **[!UICONTROL Durchschnitt]**: berechnet beispielsweise das durchschnittliche Alter der Empfänger.
+   * **[!UICONTROL Durchschnittlich]**. Mithilfe dieser Funktion können Sie das Durchschnittsalter Ihrer Empfänger berechnen.
 
      Das Feld **[!UICONTROL Unterschiedlich]** gibt die eindeutige Werte aus, die ungleich Null sind. Auf diese Weise lassen sich z. B. alle Trackinglogs für einen Empfänger abfragen und auf 1 setzen, da es sich um nur einen Empfänger handelt.
 
@@ -351,7 +351,7 @@ Nachfolgend werden die **[!UICONTROL Formeltypen]** detailliert dargestellt:
 
 ## Funktionsliste {#list-of-functions}
 
-Mit der Option **[!UICONTROL Ausdruck]** gelangen Sie zum Fenster &quot;Ausdruck bearbeiten&quot;. Verschiedene Funktionskategorien können mit den verfügbaren Feldern zum Einsatz kommen: **[!UICONTROL Aggregate]**, **[!UICONTROL String]**, **[!UICONTROL Datum]**, **[!UICONTROL Numerisch]**, **[!UICONTROL Währung]**, **[!UICONTROL Geomarketing]**, **[!UICONTROL Sonstige]** und **[!UICONTROL Window-Funktionen]**.
+Wenn eine **[!UICONTROL Ausdruck]** Typformel ausgewählt ist, gelangen Sie zum Fenster &quot;Ausdruck bearbeiten&quot;. Den verfügbaren Feldern können verschiedene Funktionskategorien zugeordnet werden: **[!UICONTROL Aggregate]**, **[!UICONTROL Zeichenfolge]**, **[!UICONTROL Datum]**, **[!UICONTROL Numerisch]**, **[!UICONTROL Währung]**, **[!UICONTROL Geomarketing]**, **[!UICONTROL Window-Funktion]** und **[!UICONTROL sonstige]**.
 
 Der Ausdruckseditor gestaltet sich wie folgt:
 
@@ -400,7 +400,7 @@ Er ermöglicht die Verknüpfung von Feldern aus den Datenbanktabellen mit folgen
   </tr> 
   <tr> 
    <td> <strong>StdDev</strong><br /> </td> 
-   <td> Gibt die Standardabweichung der Werte einer Spalte vom Typ Zahl aus<br /> </td> 
+   <td> Gibt die Standardabweichung einer Zahl, Zeichenfolge oder Datumsspalte aus<br /> </td> 
    <td> StdDev(&lt;Wert&gt;)<br /></td> 
   </tr> 
   <tr> 
@@ -442,8 +442,8 @@ Er ermöglicht die Verknüpfung von Feldern aus den Datenbanktabellen mit folgen
   </tr> 
   <tr> 
    <td> <strong>Charindex</strong><br /> </td> 
-   <td> Gibt die Position des Strings 2 im String 1 aus..<br /> </td> 
-   <td> Charindex(&lt;String&gt;, &lt;String&gt;)<br /></td> 
+   <td> Gibt die Position von Zeichenfolge 2 in Zeichenfolge 1 zurück.<br /> </td> 
+   <td> Charindex(&lt;string&gt;, &lt;string&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>GetLine</strong><br /> </td> 
@@ -452,7 +452,7 @@ Er ermöglicht die Verknüpfung von Feldern aus den Datenbanktabellen mit folgen
   </tr> 
   <tr> 
    <td> <strong>IfEquals</strong><br /> </td> 
-   <td> Gibt den dritten Parameter aus, wenn die ersten beiden Parameter den gleichen Wert aufweisen, sonst wird der letzte Parameter ausgegeben<br /> </td> 
+   <td> Gibt den dritten Parameter zurück, wenn die ersten beiden Parameter identisch sind. Wenn nicht, wird der letzte Parameter zurückgegeben<br /> </td> 
    <td> IfEquals(&lt;String&gt;, &lt;String&gt;, &lt;String&gt;, &lt;String&gt;)<br /></td> 
   </tr> 
   <tr> 
@@ -462,13 +462,13 @@ Er ermöglicht die Verknüpfung von Feldern aus den Datenbanktabellen mit folgen
   </tr> 
   <tr> 
    <td> <strong>JuxtWords</strong><br /> </td> 
-   <td> Konkatenation von drei als Parameter übergebenen Strings. Fügt, wenn nötig, Leerstellen hinzu.<br /> </td> 
+   <td> Verkettet die zwei als Parameter übergebenen Zeichenfolgen. Fügt bei Bedarf Leerzeichen zwischen den Zeichenfolgen hinzu.<br /> </td> 
    <td> JuxtWords(&lt;String&gt;, &lt;String&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>JuxtWords3</strong><br /> </td> 
-   <td> Konkatenation von drei als Parameter übergebenen Strings. Fügt, wenn nötig, Leerstellen hinzu<br /> </td> 
-   <td> JuxtWords3(&lt;String&gt;, &lt;String&gt;, &lt;String&gt;)<br /></td>  
+   <td> Verkettet die zwei als Parameter übergebenen Zeichenfolgen. Fügt bei Bedarf Leerzeichen zwischen den Zeichenfolgen hinzu<br /> </td> 
+   <td> JuxtWords3(&lt;string&gt;, &lt;string&gt;, &lt;string&gt;)<br /></td>  
   </tr> 
   <tr> 
    <td> <strong>LPad</strong><br /> </td> 
@@ -904,7 +904,7 @@ Er ermöglicht die Verknüpfung von Feldern aus den Datenbanktabellen mit folgen
   </tr> 
   <tr> 
    <td> <strong>Distance</strong><br /> </td> 
-   <td> Gibt die Entfernung zwischen zwei durch Längen- und Breitengrad bezeichneten Punkten aus (in Grad)..<br /> </td> 
+   <td> Gibt die Entfernung zwischen zwei durch Längen- und Breitengrad bezeichneten Punkten aus (in Grad).<br /> </td> 
    <td> Distance(&lt;Längengrad A&gt;, &lt;Breitengrad A&gt;, &lt;Längengrad B&gt;, &lt;Breitengrad B&gt;)<br /> </td>  
   </tr> 
  </tbody> 
@@ -921,7 +921,7 @@ Er ermöglicht die Verknüpfung von Feldern aus den Datenbanktabellen mit folgen
   </tr> 
   <tr> 
    <td> <strong>Case</strong><br /> </td> 
-   <td> Gibt den Wert 1 aus, wenn die Bedingung wahr ist, sonst den Wert 2<br /> </td> 
+   <td> Gibt Wert 1 zurück, wenn die Bedingung zutrifft. Wenn nicht, wird Wert 2 zurückgegeben.<br /> </td> 
    <td> Case(When(&lt;Bedingung&gt;, &lt;Wert 1&gt;), Else(&lt;Wert 2&gt;))<br /> </td> 
   </tr> 
   <tr> 
@@ -936,7 +936,7 @@ Er ermöglicht die Verknüpfung von Feldern aus den Datenbanktabellen mit folgen
   </tr> 
   <tr> 
    <td> <strong>Decode</strong><br /> </td> 
-   <td> Gibt Wert 3 aus, wenn Wert 1 = Wert 2, sonst den Wert 4<br /> </td> 
+   <td> Gibt Wert 3 zurück, wenn Wert 1 = Wert 2 ist. Wenn nicht, wird Wert 4 zurückgegeben.<br /> </td> 
    <td> Decode(&lt;Wert 1&gt;, &lt;Wert 2&gt;, &lt;Wert 3&gt;, &lt;Wert 4&gt;)<br /> </td>  
   </tr> 
   <tr> 
@@ -956,7 +956,7 @@ Er ermöglicht die Verknüpfung von Feldern aus den Datenbanktabellen mit folgen
   </tr> 
   <tr> 
    <td> <strong>Iif</strong><br /> </td> 
-   <td> Gibt den Wert 1 aus, wenn der Ausdruck wahr ist, sonst den Wert 2<br /> </td> 
+   <td> Gibt Wert 1 aus, wenn die Bedingung zutrifft. Wenn nicht, wird Wert 2 zurückgegeben<br /> </td> 
    <td> Iif(&lt;Bedingung&gt;, &lt;Wert 1&gt;, &lt;Wert 2&gt;)<br /> </td>  
   </tr> 
   <tr> 
@@ -991,7 +991,7 @@ Er ermöglicht die Verknüpfung von Feldern aus den Datenbanktabellen mit folgen
   </tr> 
   <tr> 
    <td> <strong>When</strong><br /> </td> 
-   <td> Gibt den Wert 1 aus, wenn der Ausdruck wahr ist, sonst den Wert 2 (kann nur als Parameter der 'Case'-Funktion verwendet werden)<br /> </td> 
+   <td> Gibt Wert 1 aus, wenn die Bedingung zutrifft. Falls nicht, wird Wert 2 zurückgegeben (kann nur als Parameter der Case-Funktion verwendet werden)<br /> </td> 
    <td> When(&lt;Bedingung&gt;, &lt;Wert 1&gt;)<br /> </td>  
   </tr> 
  </tbody> 

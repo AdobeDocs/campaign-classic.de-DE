@@ -27,7 +27,7 @@ So können im Rahmen von Programmen und Unterprogrammen der Marketing-Pläne Auf
 
 **MRM** ermöglicht zudem die Verwaltung von Marketing-Ressourcen, die von mehreren Beteiligten bearbeitet werden. Die Überwachung dieser Ressourcen wird über ein hierfür vorgesehenes Dashboard durchgeführt.
 
-Außerdem umfassen die Budgetverwaltungsfunktionen jetzt auch die Verwaltung von Zielgruppen und Ausgabenzeilen sowie erweiterte native Berichte. Damit können Sie die Produktivität und Leistung aller Marketing-Aktivitäten überwachen und messen.
+Außerdem umfassen die Budgetverwaltungsfunktionen jetzt auch die Verwaltung von Zielgruppen und Ausgabenzeilen sowie erweiterte native Berichte. Damit können Sie die Produktivität und Performance aller Marketing-Aktivitäten überwachen und messen.
 
 ## Konzepte und Terminologie {#core-concepts}
 

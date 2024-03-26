@@ -8,7 +8,7 @@ exl-id: a52baffd-402b-4b33-ab72-ac954e4dee85
 source-git-commit: 81d12ac055536fbe097466ad737bf7fee1b593ad
 workflow-type: tm+mt
 source-wordcount: '352'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -51,7 +51,7 @@ Gehen Sie dazu wie folgt vor:
 
    ![](assets/delivery_loadcontent_script.png)
 
-1. Speichern Sie den Workflow und führen Sie ihn aus. Unter **[!UICONTROL Kampagnenverwaltung]** > **[!UICONTROL Sendungen]** wird ein neuer Versand mit dem geladenen Inhalt erstellt.
+1. Speichern und starten Sie den Workflow. Ein neuer Versand mit dem geladenen Inhalt wird unter erstellt. **[!UICONTROL Kampagnenverwaltung]** > **[!UICONTROL Sendungen]**.
 
 >[!NOTE]
 >

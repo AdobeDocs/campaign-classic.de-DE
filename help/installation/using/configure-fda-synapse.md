@@ -10,12 +10,12 @@ topic-tags: connectors
 exl-id: 59d0277a-7588-4504-94e3-50f87b60da8a
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '801'
-ht-degree: 72%
+source-wordcount: '764'
+ht-degree: 68%
 
 ---
 
-# Zugriff auf Azure Synapse konfigurieren {#configure-access-to-azure-synapse}
+# Zugriff auf Azure synapse konfigurieren {#configure-access-to-azure-synapse}
 
 
 
@@ -24,7 +24,7 @@ Verwenden von Campaign [Federated Data Access](../../installation/using/about-fd
 1. Konfigurieren von Azure synapse on [CentOS](#azure-centos), [Windows](#azure-windows) oder [Debian](#azure-debian)
 1. Azure synapse konfigurieren [externes Konto](#azure-external) in Campaign
 
-## Azure Synapse unter CentOS {#azure-centos}
+## Azure synapse unter CentOS {#azure-centos}
 
 >[!CAUTION]
 >
@@ -107,7 +107,7 @@ Gehen Sie wie folgt vor, um Azure synapse unter CentOS zu konfigurieren:
    iptables -A OUTPUT -p tcp -d [server_hostname_here] --dport 1433 -j ACCEPT
    ```
 
-## Azure Synapse unter Windows {#azure-windows}
+## Azure synapse unter Windows {#azure-windows}
 
 >[!NOTE]
 >
@@ -129,7 +129,7 @@ So konfigurieren Sie Azure Synapse unter Windows:
 
 1. Da Azure Synapse Analytics über den TCP-Port 1433 kommuniziert, müssen Sie diesen Port in der Windows Defender Firewall öffnen. Weitere Informationen hierzu finden Sie in der [Windows-Dokumentation](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-outbound-program-or-service-rule).
 
-## Azure Synapse unter Debian {#azure-debian}
+## Azure synapse unter Debian {#azure-debian}
 
 **Voraussetzungen:**
 
@@ -194,7 +194,7 @@ So konfigurieren Sie Azure Synapse unter Debian:
 
 ## Externes azure synapse-Konto {#azure-external}
 
-Über das externe [!DNL Azure Synapse]-Konto können Sie Ihre Campaign-Instanz mit Ihrer externen Azure Synapse-Datenbank verbinden.
+Die [!DNL Azure Synapse] Mit dem externen Konto können Sie Ihre Campaign-Instanz mit Ihrer externen Azure synapse-Datenbank verbinden.
 
 So erstellen Sie Ihre [!DNL Azure Synapse] Gehen Sie wie folgt vor:
 

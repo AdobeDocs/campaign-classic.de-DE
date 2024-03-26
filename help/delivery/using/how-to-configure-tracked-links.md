@@ -8,9 +8,9 @@ feature: Monitoring
 role: User, Developer
 exl-id: ed88e1d6-c0d5-4a85-9f3e-be670f4bcc10
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: ht
-source-wordcount: '615'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '607'
+ht-degree: 92%
 
 ---
 
@@ -73,4 +73,4 @@ Das Tracking von Nachrichten ist standardmäßig aktiviert. Um das Tracken von U
    * **[!UICONTROL Opt-out]**: Diese URL wird als Opt-out-URL behandelt.
    * **[!UICONTROL Mirrorseite]**: Diese URL wird als Mirrorseite behandelt.
 
-1. Zusätzlich können Sie für jede getrackte URL in der Dropdown-Liste der Spalte **[!UICONTROL Kategorie]** eine Kategorie auswählen. Diese Kategorien können angezeigte Berichte sein, wie z. B. in **[!UICONTROL URLs und Clickstreams]** (siehe [diesen Abschnitt](../../reporting/using/reports-on-deliveries.md#urls-and-click-streams)). Kategorien werden in einer speziellen Auflistung definiert: **[!UICONTROL urlCategory]** (siehe [Auflistungen verwalten](../../platform/using/managing-enumerations.md)).
+1. Darüber hinaus können Sie in der Dropdown-Liste der **[!UICONTROL Kategorie]** Spalte. Diese Kategorien können Berichte anzeigen, wie z. B. in **[!UICONTROL URLs und Clickstreams]** (siehe [diesem Abschnitt](../../reporting/using/reports-on-deliveries.md#urls-and-click-streams)). Kategorien werden in einer bestimmten Auflistung definiert: **[!UICONTROL urlCategory]** (siehe [Auflistungen verwalten](../../platform/using/managing-enumerations.md)).

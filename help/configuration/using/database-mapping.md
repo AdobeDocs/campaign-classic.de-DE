@@ -174,6 +174,6 @@ Weitere Informationen finden Sie unter den folgenden Links:
 
 * [Erste Schritte mit Schemata](about-schema-reference.md)
 * [Schemastruktur](schema-structure.md)
-* [Schlüsselverwaltung](database-keys.md)
-* [Linkverwaltung](database-links.md)
+* [Schlüssel-Management](database-keys.md)
+* [Link-Management](database-links.md)
 * [Campaign-Datenmodell](about-data-model.md)

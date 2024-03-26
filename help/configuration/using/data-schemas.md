@@ -9,7 +9,7 @@ exl-id: d4446035-3988-4d89-b7df-7b8528c2e371
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
 workflow-type: tm+mt
 source-wordcount: '418'
-ht-degree: 67%
+ht-degree: 56%
 
 ---
 
@@ -41,7 +41,7 @@ Die Vorschau generiert automatisch das erweiterte Schema:
 >
 >Beim Speichern des Quellschemas wird die Generierung des erweiterten Schemas automatisch gestartet.
 
-Wenn Sie die gesamte Struktur eines Schemas überprüfen müssen, können Sie den Vorschau -Tab verwenden. Wenn das Schema erweitert wurde, können Sie alle seine Erweiterungen visuell darstellen. Ergänzend zeigt die Registerkarte Dokumentation alle Schema-Attribute und -Elemente sowie deren Eigenschaften (SQL-Feld, Typ/Länge, Bezeichnung, Beschreibung) an. Die Registerkarte Dokumentation gilt nur für generierte Schemata. Weitere Informationen hierzu finden Sie im Abschnitt [Regenerieren von Schemata](../../configuration/using/regenerating-schemas.md) Abschnitt.
+Wenn Sie die gesamte Struktur eines Schemas überprüfen müssen, können Sie den Vorschau -Tab verwenden. Wenn das Schema erweitert wurde, können Sie alle seine Erweiterungen visuell darstellen. Als Komplement werden auf der Registerkarte Dokumentation alle Schemaattribute und -elemente sowie deren Eigenschaften (SQL-Feld, Typ/Länge, Titel, Beschreibung) angezeigt. Der Tab Dokumentation gilt nur für erstellte Schemata. Weitere Informationen hierzu finden Sie im Abschnitt [Regenerieren von Schemata](../../configuration/using/regenerating-schemas.md) Abschnitt.
 
 ## Beispiel: Erstellen einer Vertragstabelle {#example--creating-a-contract-table}
 
@@ -49,7 +49,7 @@ Im folgenden Beispiel möchten wir eine neue Tabelle für **Aufträge** im Daten
 
 Dazu müssen Sie das Schema der Tabelle erstellen und die Datenbankstruktur aktualisieren, um die entsprechende Tabelle zu erstellen. Folgende Schritte sind dazu nötig:
 
-1. Bearbeiten Sie den Knoten **[!UICONTROL Administration > Konfiguration > Datenschemata]** in der Adobe Campaign-Struktur und klicken Sie auf **[!UICONTROL Neu]** .
+1. Bearbeiten Sie die **[!UICONTROL Administration > Konfiguration > Datenschemata]** Knoten der Adobe Campaign-Struktur und klicken Sie auf **[!UICONTROL Neu]** .
 1. Wählen Sie die **[!UICONTROL Erstellen einer neuen Tabelle im Datenmodell]** und klicken Sie auf **[!UICONTROL Nächste]** .
 
    ![](assets/s_ncs_configuration_create_new_schema.png)

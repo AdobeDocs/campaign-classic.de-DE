@@ -11,8 +11,8 @@ topic-tags: data-processing
 exl-id: 2c933fc5-1c0a-4c2f-9ff2-90d09a79c55a
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1321'
-ht-degree: 7%
+source-wordcount: '1324'
+ht-degree: 5%
 
 ---
 
@@ -36,8 +36,8 @@ In diesem Abschnitt werden die Prozesse beschrieben, die auf das Duplizieren ein
 
 Gehen Sie hierzu wie folgt vor:
 
-1. Erstellen Sie eine Kopie der Datenbanken auf allen Instanzen in der Quellumgebung,
-1. Stellen Sie diese Kopien auf allen Instanzen der Zielumgebung wieder her,
+1. Erstellen Sie eine Kopie der Datenbanken auf allen Instanzen in der Quellumgebung.
+1. Wiederherstellen dieser Kopien auf allen Instanzen der Zielumgebung,
 1. Führen Sie die **nms:freezeInstance.js** Warnhinweisskript für die Zielumgebung erstellen, bevor sie gestartet wird.
 
    Dieser Prozess hat keine Auswirkungen auf die Server und deren Konfiguration.

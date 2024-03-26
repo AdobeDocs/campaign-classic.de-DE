@@ -9,7 +9,7 @@ exl-id: 0cbb8e4c-8cb4-4dd7-ad09-b8b3165c19a8
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
 source-wordcount: '238'
-ht-degree: 100%
+ht-degree: 59%
 
 ---
 
@@ -23,7 +23,7 @@ Hier können Sie entweder neue Vorlagen erstellen oder ein bestehendes Formular 
 
 ## Ein bestehendes Formular in eine Vorlage umwandeln {#convert-an-existing-form-into-a-template}
 
-Sie können ein Formular in eine Vorlage umwandeln und seine Konfiguration wiederverwenden. Wählen Sie dazu das Formular aus, führen Sie einen Rechtsklick darauf aus und wählen Sie **[!UICONTROL Aktionen > Als Vorlage speichern...]** aus.
+Ein Formular kann in eine Vorlage umgewandelt und seine Konfiguration wiederverwendet werden. Wählen Sie dazu das Formular aus, klicken Sie mit der rechten Maustaste darauf und wählen Sie **[!UICONTROL Aktionen > Als Vorlage speichern...]**.
 
 ![](assets/s_ncs_admin_survey_saveastemplate.png)
 
@@ -31,11 +31,11 @@ Dadurch öffnet sich ein Fenster zur Erstellung von Webanwendungen. Dort können
 
 ## Neue Formularvorlage erstellen {#create-a-new-form-template}
 
-Klicken Sie zur Erstellung einer Webformularvorlage mit der rechten Maustaste auf die Webanwendungsvorlagen-Liste und wählen Sie **[!UICONTROL Neu]** aus oder verwenden Sie die Schaltfläche **[!UICONTROL Neu]** oberhalb der Vorlagenliste.
+Um eine Webformularvorlage zu erstellen, klicken Sie mit der rechten Maustaste auf die Liste der Webanwendungsvorlagen und wählen Sie **[!UICONTROL Neu]**. Sie können auch die **[!UICONTROL Neu]** oberhalb der Vorlagenliste.
 
 ![](assets/s_ncs_admin_survey_createtemplate.png)
 
-Geben Sie den Namen der Vorlage ein. Wählen Sie im Feld **[!UICONTROL Instanzordner]** den Ordner aus, in dem die auf dieser Vorlage basierenden Webformulare gespeichert werden sollen. Über das Feld **[!UICONTROL Art]** können Sie eine Beschreibung zur Sortierung und/oder Filterung der unterschiedlichen Webanwendungsvorlagen hinzufügen.
+Geben Sie den Namen der Vorlage ein. Im **[!UICONTROL Instanzordner]** auswählen, den Ordner, in dem die auf dieser Vorlage basierenden Webformulare gespeichert werden. Die **[!UICONTROL Natur]** -Feld können Sie beschreibende Informationen hinzufügen, um Ihre verschiedenen Webanwendungsvorlagen zu sortieren und/oder zu filtern.
 
 ![](assets/s_ncs_admin_survey_createtemplate_details.png)
 

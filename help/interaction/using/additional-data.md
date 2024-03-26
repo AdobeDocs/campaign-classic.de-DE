@@ -11,7 +11,7 @@ exl-id: 01adb584-5308-4d41-a6f1-223a97efa10f
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '746'
-ht-degree: 100%
+ht-degree: 78%
 
 ---
 
@@ -68,7 +68,7 @@ Wenn Sie diese Daten in der Vorschlagstabelle speichern möchten, muss außerdem
 
 ### Eingehender Kanal (Webseite) {#input-channel--web-page-}
 
-Um bei der Angebotsmodul-Abfrage zusätzliche Daten zu übergeben, muss der JavaScript-Code der Web-Seite um die Variable **interactionGlobalCtx** ergänzt werden. Fügen Sie in diese Variable den die Aufrufdaten enthaltenden **Interaction**-Knoten ein. Verwenden Sie dabei die gleiche XML-Struktur wie bei der Erweiterung des Schemas **nms:interaction**. Siehe [Weitere Konfigurationsmöglichkeiten](#additional-data-configuration).
+Um beim Aufruf des Moduls zusätzliche Daten zu übertragen, müssen Sie die **interactionGlobalCtx** in den JavaScript-Code der Webseite ein. Fügen Sie die **Interaction** Knoten, der die Aufrufdaten in diese Variable enthält. Sie müssen dieselbe XML-Struktur beachten, die sich im **nms:interaction** Schema. Siehe [Weitere Konfigurationsmöglichkeiten](#additional-data-configuration).
 
 ```
 interactionGlobalCtx = "<interaction navigationLanguage='"+myLanguage+"'/>";
@@ -90,9 +90,9 @@ Sie können beispielsweise die Unterbreitung eines Angebots auf Kontakte beschr�
 
 >[!NOTE]
 >
->Die Regel muss sich auf die Kanäle beziehen, für die die Daten definiert wurden. Im vorliegenden Beispiel wurde die Regel auf den eingehenden Web-Kanal begrenzt (Feld **[!UICONTROL Berücksichtigt wenn]**).
+>Sie müssen die Regel auf die Kanäle beschränken, für die die Daten definiert sind. In unserem Beispiel begrenzen wir die Regel auf den eingehenden Webkanal (**[!UICONTROL Wird berücksichtigt, wenn]** -Feld).
 
-### Personalisierung     {#personalization}
+### Personalisierung {#personalization}
 
 Zusätzliche Daten können des Weiteren bei der Angebotspersonalisierung zum Einsatz kommen. Sie können beispielsweise eine Bedingung bezüglich der Browsersprache des Besuchers formulieren.
 
@@ -102,7 +102,7 @@ Zusätzliche Daten können des Weiteren bei der Angebotspersonalisierung zum Ein
 >
 >Die Regel muss sich auf die Kanäle beziehen, für die die Daten definiert wurden. Im vorliegenden Beispiel wurde die Regel auf den eingehenden Web-Kanal begrenzt.
 
-Wenn Sie ein Angebot mit zusätzlichen Daten personalisieren, werden diese nicht automatisch in der Angebotsvorschau angezeigt, da sie nicht in der Datenbank enthalten sind. Fügen Sie daher im Tab **[!UICONTROL Aufrufdatenbeispiel]** Musterwerte ein, die in der Vorschau verwendet werden können. Hierbei ist die gleiche XML-Struktur wie im erweiterten Schema **nms:interaction** zu verwenden. Lesen Sie diesbezüglich auch den Abschnitt [Weitere Konfigurationsmöglichkeiten](#additional-data-configuration).
+Wenn Sie ein Angebot mithilfe zusätzlicher Daten personalisiert haben, werden diese Daten nicht standardmäßig in der Vorschau angezeigt, da sie nicht in der Datenbank verfügbar sind. In der Umwelt **[!UICONTROL Beispiel für Aufrufdaten]** hinzufügen, müssen Sie Wertbeispiele hinzufügen, die in der Vorschau verwendet werden sollen. Beachten Sie die gleiche XML-Struktur wie im **nms:interaction** Schemaerweiterung. Lesen Sie diesbezüglich auch den Abschnitt [Weitere Konfigurationsmöglichkeiten](#additional-data-configuration).
 
 ![](assets/ita_calldata_preview.png)
 
@@ -120,7 +120,7 @@ Zum Zeitpunkt der Abfrage des Angebotsmoduls besteht die Möglichkeit, die zusä
 
 Gehen Sie in den Tab **[!UICONTROL Speicherung]** der Platzierung und klicken Sie auf **[!UICONTROL Hinzufügen]**.
 
-Wählen Sie in der Spalte **[!UICONTROL Speicherpfad]** das Feld aus der Vorschlagstabelle aus, das zur Speicherung der zusätzlichen Daten verwendet werden soll. Wählen Sie dann in der Spalte **[!UICONTROL Ausdruck]** das entsprechende Feld aus dem **[!UICONTROL Interaction]**-Knoten aus.
+Im **[!UICONTROL Speicherpfad]** das Speicherfeld in der Vorschlagstabelle auswählen. Im **[!UICONTROL Ausdruck]** das zusätzliche Feld im **[!UICONTROL Interaction]** Knoten.
 
 Die Aufrufdaten können entweder zum Zeitpunkt der Vorschlagserzeugung oder zum Zeitpunkt seiner Annahme (durch Klick des Kontakts auf das Angebot) abgerufen werden.
 

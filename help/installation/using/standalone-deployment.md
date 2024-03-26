@@ -11,7 +11,7 @@ exl-id: 194366ab-fd9f-4431-9163-ae16c1f96db2
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '1086'
-ht-degree: 6%
+ht-degree: 5%
 
 ---
 
@@ -190,7 +190,7 @@ Gehen Sie wie folgt vor:
 
    >[!NOTE]
    >
-   >Ab 20.1 wird empfohlen, stattdessen den folgenden Befehl zu verwenden (für Linux): **systemctl Beginn nlserver**
+   >Ab Version 20.1 wird empfohlen, stattdessen den folgenden Befehl zu verwenden (für Linux): **systemctl start nlserver**
 
    ```
    12:09:54 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY

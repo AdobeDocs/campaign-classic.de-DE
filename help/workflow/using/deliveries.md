@@ -6,8 +6,8 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Cla
 feature: Workflows
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '330'
-ht-degree: 100%
+source-wordcount: '331'
+ht-degree: 57%
 
 ---
 
@@ -28,22 +28,22 @@ Die folgenden Workflows werden standardmäßig mit dem Modul **Sendungen** insta
   <tr> 
    <td> <span class="uicontrol">Bericht-Aggregate</span> <br /> </td> 
    <td> <span class="uicontrol">reportingAggregates</span> <br /> </td> 
-   <td> Aktualisiert die in Berichten verwendeten Aggregate. Wird standardmäßig täglich um 2 Uhr gestartet.<br /> </td> 
+   <td> Dieser Workflow aktualisiert die in Berichten verwendeten Aggregate. Er wird standardmäßig täglich um 2 Uhr ausgelöst.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Fakturierung</span> <br /> </td> 
    <td> <span class="uicontrol">billing</span> <br /> </td> 
-   <td> Übermittelt per E-Mail den Aktivitätsbericht des Systems an den fakturierungsverantwortlichen Benutzer ('billing'). Wird standardmäßig an jedem 25. des Monats gestartet.<br /> </td> 
+   <td> Dieser Workflow übermittelt per E-Mail den Aktivitätsbericht des Systems an den fakturierungsverantwortlichen Benutzer ('billing'). Er wird standardmäßig am 25. jedes Monats ausgelöst.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Alias-Verwaltung</span> <br /> </td> 
    <td> <span class="uicontrol">aliasCleansing</span> <br /> </td> 
-   <td> Vereinheitlicht Aufzählungswerte. Wird standardmäßig täglich um 3 Uhr gestartet.<br /> </td> 
+   <td> Dieser Workflow standardisiert Auflistungswerte. Er wird standardmäßig täglich um 3 Uhr ausgelöst.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Zustellbarkeit</span> <br /> </td> 
    <td> <span class="uicontrol">deliverabilityUpdate</span> <br /> </td> 
-   <td> Erstellt die Liste der Qualifizierungsregeln für Bounce-Messages sowie die Liste der Domains und MX der Plattform. Der Workflow wird nur bei geöffnetem HTTPS-Port ausgeführt. Wenn das Zustellbarkeitsmodul (Email Deliverability) nicht installiert ist, werden die Listen nicht aktualisiert.<br /> </td> 
+   <td> Erstellt die Liste der Qualifizierungsregeln für Bounce Messages sowie die Liste der Domains und MXs der Plattform. Dieser Workflow funktioniert nur, wenn der HTTPS-Port geöffnet ist. Diese Listen werden nur aktualisiert, wenn das Zustellbarkeits-Modul installiert ist.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Datenbankbereinigung</span> <br /> </td> 
@@ -63,12 +63,12 @@ Die folgenden Workflows werden standardmäßig mit dem Modul **Sendungen** insta
   <tr> 
    <td> <span class="uicontrol">Planungen</span> <br /> </td> 
    <td> <span class="uicontrol">forecasting</span> <br /> </td> 
-   <td> Analysiert die im Planungskalender verzeichneten Sendungen (Erstellung von Planungslogs). Wird standardmäßig täglich um 1 Uhr gestartet.<br /> </td> 
+   <td> Dieser Workflow analysiert die im Planungskalender gespeicherten Sendungen (Erstellung von Planungslogs). Er wird standardmäßig täglich um 1 Uhr ausgelöst.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Tracking</span> <br /> </td> 
    <td> <span class="uicontrol">tracking</span> <br /> </td> 
-   <td> Ruft Trackinginformationen ab und konsolidiert sie. Aktualisiert außerdem die Berechnung der Tracking- und Versandstatistiken, insbesondere die von den Message-Center-Archivierungs-Workflows verwendeten. Wird standardmäßig stündlich gestartet. <br /> </td> 
+   <td> Dieser Workflow ruft Tracking-Informationen ab und konsolidiert sie. Außerdem wird die Neuberechnung der Tracking- und Versandstatistiken, insbesondere der von den Archivierungs-Workflows des Message-Centers verwendeten, sichergestellt. Standardmäßig wird sie einmal pro Stunde ausgelöst. <br /> </td> 
   </tr> 
  </tbody> 
 </table>

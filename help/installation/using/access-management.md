@@ -7,8 +7,8 @@ badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Cla
 exl-id: af88e4e7-0ee3-48b4-9db4-7dd390d9d46a
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 25%
+source-wordcount: '381'
+ht-degree: 18%
 
 ---
 
@@ -24,7 +24,7 @@ Standardmäßig ist der WebApp-Benutzer ein Administrator. Um die Sicherheit zu 
 
 * Fügen Sie den WebApp-Operator in Ordnern (hauptsächlich Empfängerordner) hinzu, um Empfängern Lese-/Schreibzugriff zu gewähren. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../platform/using/access-management.md).
 
-* Wenn Sie in einer Instanz mehrere Marken (oder mehrere regionale Standorte) verwalten, ist es empfehlenswert, die WebApp-Zugriffsberechtigung auf verschiedene Empfängerordner aufzuteilen. Gehen Sie dabei folgendermaßen vor:
+* Wenn Sie eine Instanz mit mehreren Marken (oder mehreren geografischen Standorten) verwenden, sollten Sie den Webanwendungszugriff auf verschiedene Empfängerordner aufteilen. Gehen Sie dabei folgendermaßen vor:
 
    1. Den WebApp-Operator duplizieren
 
@@ -48,4 +48,4 @@ Adobe Campaign bietet drei allgemeine Berechtigungen durch [spezifische Berechti
 
 * **SQL**: ermöglicht die Ausführung von SQL-Skripten in der Datenbank (sodass das Sicherheitsmodell umgangen werden kann). Hinweis: Wenn Sie komplexe Berechnungen durchführen müssen (z. B. Filtern), können Sie Ihren Datenbankadministrator bitten, eine SQL-Funktion zu erstellen und sie der Zulassungsliste hinzuzufügen. Weitere Informationen finden Sie auf [dieser Seite](../../installation/using/scripting-coding-guidelines.md).
 
-* **Gewähren Sie diese Privilegien nur sehr wenigen (und vertrauenswürdigen) Benutzern.**
+* **Gewähren Sie sie nur sehr wenigen (und vertrauenswürdigen) Benutzern.**

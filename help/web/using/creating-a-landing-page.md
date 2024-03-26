@@ -8,8 +8,8 @@ feature: Landing Pages
 exl-id: 71c737c2-b0d6-4ae8-a5df-28a08dff82d7
 source-git-commit: 6dc6aeb5adeb82d527b39a05ee70a9926205ea0b
 workflow-type: tm+mt
-source-wordcount: '776'
-ht-degree: 100%
+source-wordcount: '782'
+ht-degree: 94%
 
 ---
 
@@ -79,7 +79,7 @@ Gehen Sie wie folgt vor, um die Vorlage auf die erste Seite zu laden:
 
    >[!CAUTION]
    >
-   >Sie müssen warten, bis Sie die folgende Meldung erhalten, bevor Sie den Vorgang schließen: **[!UICONTROL Die externen Ressourcen wurden online gestellt]**.
+   >Sie müssen warten, bis Sie die folgende Meldung erhalten, bevor Sie den Vorgang schließen: **[!UICONTROL Die externen Ressourcen wurden erfolgreich veröffentlicht]**.
 
 1. Gehen Sie in den Tab **[!UICONTROL Eigenschaften]**.
 1. Geben Sie für jede Seite einen **Titel** ein (z. B.: Seite 1=Datenerfassung, Seite 2=Dankeseite).
@@ -134,7 +134,7 @@ Sie können Felder nach Bedarf zu Pflichtfeldern machen: Beispielsweise können 
 
 Dieser Schritt ist unbedingt erforderlich, da die Webanwendung damit die Reihenfolge der nächsten Schritte feststellen kann: Speichern der erfassten Daten in der Datenbank und die Anzeige der nächsten Seite (**Dankeseite**).
 
-1. Wählen Sie die **[!UICONTROL Senden]**-Schaltfläche der Seite **[!UICONTROL Sammlung]** aus.
+1. Wählen Sie die **[!UICONTROL Schicken Sie es!]** Schaltfläche des **[!UICONTROL Sammlung]** Seite.
 1. Öffnen Sie die Dropdown-Liste **[!UICONTROL Aktion]**.
 1. Wählen Sie die Aktion **[!UICONTROL Nächste Seite]** aus.
 

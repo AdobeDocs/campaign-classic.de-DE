@@ -6,7 +6,7 @@ feature: Schema Extension
 exl-id: 60f15ae5-b2bd-48f9-aa45-8f795a3071aa
 source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
 workflow-type: tm+mt
-source-wordcount: '2014'
+source-wordcount: '2016'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## Inhaltsmodell {#content-model-4}
 
-element:==(attribute | Compute-string | dbindex | default | element | help | join | key | sysFilter | translateDefault)
+element:==(attribute | compute-string | dbindex | default | element | help | join | key | sysFilter | translateDefault)
 
 ## Attribute {#attributes-4}
 
@@ -97,7 +97,7 @@ Es gibt vier Arten von `<element>`  -Elemente in Adobe Campaign:
   SQL-Eigenschaftstabellen werden automatisch basierend auf dem charakteristischen Typ erstellt:
 
    * dediziert: `Ft_[name_of_the_schema_containing_the_characteristic]_[name_of_the_characteristic]`
-   * shared: `Ft_[type_of_key_of_the_schema_containing_the_characteristic]_[type_of_the_characteristic]`
+   * freigegeben: `Ft_[type_of_key_of_the_schema_containing_the_characteristic]_[type_of_the_characteristic]`
 
   Es gibt zwei Arten von Eigenschaftenfeldern: einfache Felder, in denen ein einzelner Wert für das Merkmal zulässig ist, und Multiple-Choice-Felder, in denen das Merkmal mit einem Kollektionselement verknüpft ist, das mehrere Werte enthalten kann.
 
@@ -194,11 +194,11 @@ Es gibt vier Arten von `<element>`  -Elemente in Adobe Campaign:
    * long
    * Memo
    * MNTOKEN
-   * percent
+   * Prozent
    * primarykey
    * short
    * Zeichenfolge
-   * Zeit
+   * time
    * timespan
    * uuid
 

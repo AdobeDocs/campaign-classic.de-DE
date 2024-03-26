@@ -7,8 +7,8 @@ feature: Audiences, Data Management
 exl-id: 21656cc2-15a1-4156-8897-ea4fe3e9b97f
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1205'
-ht-degree: 100%
+source-wordcount: '1207'
+ht-degree: 93%
 
 ---
 
@@ -26,7 +26,7 @@ Im rechten unteren Bereich der Listenanzeige zeigt ein **[!UICONTROL Zähler]** 
 
 ![](assets/s_ncs_user_nb_200_0.png)
 
-Wenn anstelle der Gesamtzahl ein &quot;**?**&quot; angezeigt wird, können Sie durch Klick auf das Feld die Gesamtzahl abrufen.
+Wenn **?**&quot; anstelle der Zahl auf der rechten Seite angezeigt wird, klicken Sie auf den Zähler, um die Berechnung zu starten.
 
 ### Laden von weiteren Datensätzen {#loading-more-records}
 
@@ -77,7 +77,7 @@ Eine weitere Möglichkeit zum Hinzufügen von Spalten besteht im Listenkonfigura
 
    >[!NOTE]
    >
-   >Erweiterte Felder werden standardmäßig nicht angezeigt. Verwenden Sie das Symbol **Erweiterte Felder anzeigen** im rechten unteren Bereich der Liste der verfügbaren Felder, um sie sichtbar zu machen.
+   >Erweiterte Felder werden standardmäßig nicht angezeigt. Um sie anzuzeigen, klicken Sie auf **Erweiterte Felder anzeigen** rechts neben der Liste der verfügbaren Felder.
    >
    >Die Titel werden nach Tabellen geordnet und innerhalb der Tabellen in alphabetischer Reihenfolge angezeigt.
    >
@@ -115,7 +115,7 @@ Wählen Sie im Bereich der **[!UICONTROL Ausgabespalten]** des Listenkonfigurati
 
 ![](assets/s_ncs_user_removecolumn_icon.png)
 
-Wiederholen Sie dies für jede Spalte, die ausgeblendet werden soll, und klicken Sie auf **[!UICONTROL OK]**, um die Konfigurationen zu bestätigen und das Ergebnis anzuzeigen.
+Wiederholen Sie diesen Vorgang für jede Spalte, die maskiert werden soll. Wählen Sie **[!UICONTROL OK]** aus, um die Konfigurationen zu bestätigen und das Ergebnis anzuzeigen.
 
 ### Spaltenbreite anpassen {#adjust-column-width}
 
@@ -164,7 +164,7 @@ Wählen Sie im Fenster der Ordnereigenschaften **[!UICONTROL Speichern]** aus, u
 
 ## Exportieren einer Liste {#exporting-a-list}
 
-Zum Exportieren von Listendaten steht Ihnen der Export-Assistent zur Verfügung. Markieren Sie die zu exportierenden Datensätze und klicken Sie mit der rechten Maustaste auf die Liste. Wählen Sie dann im Kontextmenü die Option **[!UICONTROL Exportieren…]**.
+Um Daten aus einer Liste zu exportieren, müssen Sie einen Export-Assistenten verwenden. Um darauf zuzugreifen, wählen Sie die zu exportierenden Elemente in der Liste aus, klicken Sie mit der rechten Maustaste und wählen Sie **[!UICONTROL Exportieren…]** aus.
 
 Die Verwendung der Import- und Exportfunktionen wird unter [Allgemeine Importe und Exporte](../../platform/using/about-generic-imports-exports.md) erläutert.
 
@@ -199,7 +199,7 @@ Sie können die Sortierung konfigurieren oder Sortierkriterien kombinieren. Gehe
 
 ### Suchen nach Elementen {#running-a-search}
 
-In Editoren haben Sie die Möglichkeit, mithilfe des **[!UICONTROL Suchen]**-Feldes die Auswahl der verfügbaren Felder einzuschränken. Mit der **Enter**-Taste können Sie die Liste durchsuchen. Die Ihrem Suchkriterium entsprechenden Felder erscheinen fettgedruckt.
+Sie können eine Suche der verfügbaren Felder in einem Editor mit dem **[!UICONTROL Suche]** oberhalb der Feldliste. Presse **Eingabe** auf der Tastatur oder durchsuchen Sie die Liste. Die Felder, die Ihrer Suche entsprechen, sind fett markiert.
 
 >[!NOTE]
 >

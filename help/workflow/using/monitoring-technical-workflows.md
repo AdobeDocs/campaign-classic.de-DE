@@ -8,7 +8,7 @@ exl-id: 5e77d196-5c71-438e-8dae-10c6a6e4f29c
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
 source-wordcount: '540'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -42,7 +42,7 @@ In diesem [Abschnitt](about-technical-workflows.md) erfahren Sie, was jeder tech
 
 **[!UICONTROL Datenbankbereinigungs-Workflow (‘cleanup’)]**:
 
-1. Vergewissern Sie sich, dass der Workflow **[!UICONTROL Datenbankbereinigung]** täglich ausgeführt und erfolgreich abgeschlossen wird. Weiterführende Informationen dazu finden Sie auf dieser [Seite](../../production/using/database-cleanup-workflow.md).
+1. Stellen Sie sicher, dass die **[!UICONTROL Datenbankbereinigung]** Der Workflow wird täglich erfolgreich ausgeführt und abgeschlossen. Weitere Informationen hierzu finden Sie in diesem Abschnitt [page](../../production/using/database-cleanup-workflow.md).
 1. Vergewissern Sie sich anhand des Protokolls, dass die verstrichene Zeit langfristig relativ konstant bleibt und andere Workflows nicht beeinträchtigt.
 
 **[!UICONTROL Tracking-Workflow (‘tracking’)]**:
@@ -61,7 +61,7 @@ Für die **[!UICONTROL Zustellbarkeit (deliverabilityUpdate)]**:
 
 ## Workflow-Supervision {#workflow-supervision}
 
-In der Gruppe **[!UICONTROL Workflow-Supervisoren]** sollten Benutzer enthalten sein, die von Fehlschlägen informiert werden müssen und umgehend Abhilfemaßnahmen setzen können.
+In der Gruppe **[!UICONTROL Workflow-Verantwortliche]** sollten Benutzer enthalten sein, die von Fehlschlägen informiert werden müssen und umgehend Abhilfemaßnahmen setzen können.
 
 ![](assets/monitoring_technical_workflows3.png)
 

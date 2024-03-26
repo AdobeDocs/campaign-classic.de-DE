@@ -32,7 +32,7 @@ Bei Bedarf kann die Validierung auch einem einzelnen oder durch die Verwendung v
   >
   >Nur der ausgewählte Benutzer verfügt über die Berechtigung zur Validierung der Aufgabe.
 
-* Es besteht die Möglichkeit, eine Abfrage zu erstellen, um die zur Validierung berechtigten Benutzer zu filtern. Wählen Sie hierzu im Feld **[!UICONTROL Zuweisungstyp]** die Option **[!UICONTROL Filter]** und klicken Sie auf den Link **[!UICONTROL Erweiterte Parameter...]**, um die Filterkriterien zu definieren, wie in unten stehendem Beispiel dargestellt:
+* Es besteht die Möglichkeit, eine Abfrage zu erstellen, um die für die Validierung verantwortlichen Benutzenden zu filtern. Wählen Sie hierzu im Feld **[!UICONTROL Zuweisungstyp]** die Option **[!UICONTROL Filter]** aus und klicken Sie auf den Link **[!UICONTROL Erweiterte Parameter…]**, um die Filterkriterien zu definieren, wie im unten stehendem Beispiel dargestellt:
 
   ![](assets/s_advuser_validation_box_filter.png)
 
@@ -74,4 +74,4 @@ Ein Validierungsbeispiel finden Sie im Abschnitt [Validierungen definieren](defi
 
 * **[!UICONTROL responseOperator]**
 
-  Kennung des Benutzers, der die Validierung vorgenommen hat. Dieses Feld enthält einen numerischen Wert, ist aber vom Typ **[!UICONTROL String]**.
+  Kennung der Person, die geantwortet hat. Dieses Feld ist ein numerischer Wert, aber ein Feld mit einer **[!UICONTROL Zeichenfolge]**.

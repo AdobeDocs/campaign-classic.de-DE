@@ -7,8 +7,8 @@ feature: Distributed Marketing
 exl-id: 17b5865a-5e04-4b3b-8b6a-12d5c1a9c1da
 source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
 workflow-type: tm+mt
-source-wordcount: '1703'
-ht-degree: 100%
+source-wordcount: '1705'
+ht-degree: 97%
 
 ---
 
@@ -70,11 +70,11 @@ Es stehen vier unterschiedliche Web-Schnittstellentypen zur Verfügung:
 
   >[!NOTE]
   >
-  >Bei der verwendeten Web-Anwendung handelt es sich um ein Beispiel. Um ein Formular zu verwenden, muss vorab eine spezifische Web-Anwendung erstellt werden. Lesen Sie hierzu den Abschnitt [APIs](../../configuration/using/about-web-services.md).
+  >Die in diesem Beispiel verwendete Webanwendung ist ein Beispiel. Sie müssen eine bestimmte Web-App erstellen, um ein Formular verwenden zu können. Siehe Abschnitt [API](../../configuration/using/about-web-services.md).
 
   ![](assets/mkt_distr_7.png)
 
-* **[!UICONTROL Externes Formular]**: Die Lokalstelle hat Zugriff auf die Parameter der Kampagne über ihr Extranet (nicht über Adobe Campaign). Die Parameter sind identisch mit denen einer lokalen Kampagne mit Webschnittstellentyp **Standardformular**.
+* **[!UICONTROL Nach externem Formular]**: Lokalstelle hat Zugriff auf Kampagnenparameter im Extranet (nicht in Adobe Campaign). Diese Parameter sind mit denen einer **lokalen Kampagne (nach Formular)** identisch.
 * **[!UICONTROL Einfach]**: Die Lokalstelle bestellt die Kampagne über das Standardformular, ohne sie zu lokalisieren.
 
   ![](assets/mkt_distr_5.png)
@@ -106,7 +106,7 @@ Wenn keine Angabe validierungsverantwortlicher Benutzer für die Kampagnen gewü
 
 ### Dokumente {#documents}
 
-Sie können den Benutzern der Lokalstelle ermöglichen, der lokalen Kampagne bei der Bestellung Dokumente hinzuzufügen (Textdateien, Tabellen, Grafiken, Beschreibung der Kampagne etc.). Über den Link **[!UICONTROL Erweiterte Kampagnenerfassungs-Parameter...]** kann im Feld **[!UICONTROL Anzahl Dokumente]** die maximale Anzahl an Dokumenten festgelegt werden.
+Sie können Benutzenden von Lokalstellen erlauben, beim Erstellen der Bestellung Dokumente (Textdateien, Tabellen, Bilder, Kampagnenbeschreibungen etc.) mit der lokalen Kampagne zu verknüpfen. Über den Link **[!UICONTROL Erweiterte Kampagnenerfassungs-Parameter…]** können Sie die Anzahl der Dokumente einschränken. Geben Sie dazu einfach die maximal zulässige Anzahl in das Feld **[!UICONTROL Anzahl Dokumente]** ein.
 
 ![](assets/s_advuser_mkg_dist_local_docs.png)
 
@@ -146,7 +146,7 @@ Konfigurieren Sie bei Bedarf die Maximalgröße des Versands:
 
 ![](assets/mkg_dist_local_op_creation4e.png)
 
-Passen Sie nun die HTML-Version des Versands den lokalen Bedürfnissen an. Gehen Sie beispielsweise in **[!UICONTROL Versand > Aktuelle Bestellung > Zusätzliche Felder]** und nutzen Sie das Feld **[!UICONTROL Altersgruppen]**, um eine altersabhängige Kampagne zu schalten.
+Suchen Sie die HTML Ihres Versands. Gehen Sie beispielsweise zu **[!UICONTROL Versand > Aktuelle Bestellung > Zusätzliche Felder]** und nutzen Sie das Feld **[!UICONTROL Altersgruppe]**, um den Versand anhand des Alters der Zielgruppe zu suchen.
 
 ![](assets/mkt_dist_local_campaign_localize_html.png)
 
@@ -189,7 +189,7 @@ Diese und andere Informationen sind über den Link in der den Lokalstellen gesen
 
 ![](assets/s_advuser_mkg_dist_local_notif.png)
 
-### Audience {#audience}
+### Zielgruppe {#audience}
 
 Für eine lokale Kampagne kann die Zentralstelle die teilnehmenden Lokalstellen durch Ankreuzen der Option **[!UICONTROL Kampagnenkit auf gewisse Lokalstellen beschränken]** festlegen.
 
@@ -301,15 +301,15 @@ Wenn eine Lokalstelle eine Kampagne bestellt hat, werden die validierungsverantw
 
 #### Validierung über die Adobe Campaign-Konsole {#approving-via-the-adobe-campaign-console}
 
-Die Bestellungsvalidierung kann auch in die Konsole über die Übersicht der Kampagnenbestellungen erfolgen. Um eine Bestellung zu validieren, wählen Sie diese aus und klicken Sie auf die Schaltfläche **[!UICONTROL Anmeldung validieren]**.
+Die Bestellung kann auch über die Konsole in der Übersicht der Kampagnenbestellungen validiert werden. Um einen Auftrag zu genehmigen, wählen Sie ihn aus und klicken Sie auf **[!UICONTROL Bestellung genehmigen]**.
 
 ![](assets/mkg_dist_local_order_valid.png)
 
 >[!NOTE]
 >
->Die Kampagne kann bis zu ihrem Verfügbarkeitsdatum jederzeit bearbeitet und ihre Parameter verändert werden. Die Lokalstelle hat auch die Möglichkeit, die Kampagne über die Schaltfläche **[!UICONTROL Abbrechen]** zu annulieren.
+>Die Kampagne kann bis zum Verfügbarkeitsdatum der Kampagne bearbeitet und neu konfiguriert werden. Die Lokalstellen können die Kampagne auch durch Klicken auf die Schaltfläche **[!UICONTROL Abbrechen]** ablehnen.
 
-#### Kampagnen erstellen         {#creating-a-campaign}
+#### Erstellen einer Kampagne {#creating-a-campaign}
 
 Wenn eine Bestellung validiert wurde, kann es von der Lokalstelle konfiguriert und ausgeführt werden.
 

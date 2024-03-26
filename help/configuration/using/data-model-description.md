@@ -8,15 +8,15 @@ role: Data Engineer, Developer
 exl-id: fc0fd23c-f9ea-4e30-b47b-a84143d882ca
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
-source-wordcount: '2390'
-ht-degree: 4%
+source-wordcount: '2411'
+ht-degree: 3%
 
 ---
 
 # Beschreibung des Campaign-Datenmodells{#data-model-description}
 
 
-Adobe Campaign enthält ein vordefiniertes Datenmodell. Dieser Abschnitt enthält einige Details zu den integrierten Tabellen des Adobe Campaign-Datenmodells und deren Interaktion.
+Adobe Campaign enthält ein vordefiniertes Datenmodell. In diesem Abschnitt finden Sie einige Details zu den integrierten Tabellen des Adobe Campaign-Datenmodells und deren Interaktion.
 
 Um Beschreibungen der einzelnen Tabellen aufzurufen, navigieren Sie zu **[!UICONTROL &quot;Admin&quot; > &quot;Konfiguration&quot; > &quot;Datenschemata&quot;]**, wählen Sie eine Ressource aus der Liste und klicken Sie auf die Registerkarte **[!UICONTROL Dokumentation]**.
 
@@ -54,7 +54,7 @@ Das Feld iFolderId ist der Fremdschlüssel, der den Empfänger mit seinem Ausfü
 
 Das Feld sCountryCode ist der ISO-Code 3166-1 Alpha 2 (2 Zeichen) des Empfängerlandes. Dieses Feld ist tatsächlich ein Fremdschlüssel in der Länderreferenztabelle (NmsCountry), der die Länderbezeichnungen und andere Ländercodedaten enthält. Wenn das Land nicht ausgefüllt ist, wird der Wert &quot;XX&quot;gespeichert (und anstelle eines Null-ID-Datensatzes verwendet).
 
-Weitere Informationen zur Empfängertabelle finden Sie in [diesem Abschnitt](../../configuration/using/about-data-model.md#default-recipient-table).
+Weitere Informationen zur Empfängertabelle finden Sie unter [diesem Abschnitt](../../configuration/using/about-data-model.md#default-recipient-table).
 
 ### NmsGroup {#NmsGroup}
 
@@ -181,9 +181,9 @@ Die folgenden Indikatoren werden während der Ausführung der Hypothese automati
 * Reaktionsrate der Kontrollgruppe: **dProofReactRate**. Reaktionsrate der Hypothesenkontrollgruppe.
 * Gesamtumsatz Kontakte: **dContactReactTotalAmount**. Gesamtumsatz der Kontakte in der Hypothese.
 * Durchschnittlicher Umsatz Kontrollgruppe: **dContactReactAvgAmount**. Durchschnittlicher Umsatz der Zielgruppenkontakte in der Hypothese.
-* Gesamtumsatz der Kontrollgruppe: **dProofReactTotalAmount**. Gesamtumsatz der in der Hypothese bestimmten Kontrollgruppe.
+* Gesamtumsatz der Kontrollgruppe: **dProofReactTotalAmount**. Gesamtumsatz der Hypothesenkontrollgruppe.
 * Durchschnittlicher Umsatz Kontrollgruppe: **dProofReactAvgAmount**. Durchschnittlicher Umsatz der Hypothesenkontrollgruppe.
-* Gesamtspanne Kontakte: **dContactReactTotalMargin**. Gesamtspanne der in der Hypothese bestimmten Kontakte.
+* Gesamtspanne Kontakte: **dContactReactTotalMargin**. Gesamtspanne Kontakte, die in der Hypothese berücksichtigt wurden.
 * Durchschnittliche Spanne Kontakte: **dContactReactAvgMargin**. Durchschnittliche Spanne Kontakte, die in der Hypothese berücksichtigt werden.
 * Gesamtspanne der Kontrollgruppe: **dProofReactTotalMargin**. Gesamtspanne der in der Hypothese enthaltenen Kontrollgruppe.
 * Durchschnittliche Spanne der Kontrollgruppe: **dProofReactAvgMargin**. Durchschnittliche Spanne der in der Hypothese enthaltenen Kontrollgruppe.

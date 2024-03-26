@@ -9,8 +9,8 @@ level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '939'
-ht-degree: 100%
+source-wordcount: '936'
+ht-degree: 97%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 
 
-Adobe Campaign Classic veröffentlicht regelmäßig Produktaktualisierungen, die neue Funktionen und Fehlerkorrekturen beinhalten und die Leistung, Sicherheit und Benutzerfreundlichkeit verbessern. Diese Aktualisierungen werden als **Produkt-Builds** veröffentlicht. Detaillierte Informationen zu den einzelnen neuen Builds finden Sie in den [Versionshinweisen](latest-release.md).
+Adobe Campaign Classic veröffentlicht regelmäßig Produktaktualisierungen, die neue Funktionen und Fehlerkorrekturen beinhalten und die Performance, Sicherheit und Benutzerfreundlichkeit verbessern. Diese Aktualisierungen werden als **Produkt-Builds** veröffentlicht. Detaillierte Informationen zu den einzelnen neuen Builds finden Sie in den [Versionshinweisen](latest-release.md).
 
 ## Versionsstatus{#rn-statuses}
 
@@ -73,7 +73,7 @@ Erfahren Sie mehr über den [Upgrade-Prozess](../../production/using/build-upgra
 
 Adobe ist bestrebt, Ihnen mit unseren Software-Lösungen das bestmögliche Erlebnis und den optimalen Nutzen zu bieten. Adobe stellt sicher, dass Sie Zugriff auf die aktuellen Versionen der in unseren Lösungen verwendeten Technologien haben.
 
-Adobe Campaign Classic verwendet spezielle Technologien, um Mehrwert zu erzielen. Diese Kombination von Technologien erfordert eine regelmäßige Aktualisierung Ihrer Campaign Classic-Instanzen, um sicherzustellen, dass Sie die jeweils aktuellen Versionen verwenden und über maximale Sicherheit, Stabilität und Leistung verfügen.
+Adobe Campaign Classic verwendet spezielle Technologien, um Mehrwert zu erzielen. Diese Kombination von Technologien erfordert eine regelmäßige Aktualisierung Ihrer Campaign Classic-Instanzen, um sicherzustellen, dass Sie die jeweils aktuellen Versionen verwenden und über maximale Sicherheit, Stabilität und Performance verfügen.
 
 Als gehosteter Benutzer erhalten Sie automatisch das Upgrade mit dem aktuellen GA-Build, ohne dass Sie aktiv werden müssen. Weitere Informationen finden Sie in den häufig gestellten Fragen weiter unten.
 

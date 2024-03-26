@@ -86,7 +86,7 @@ Es existieren folgende Standardgruppen:
 
    Diese Gruppe verleiht Benutzern die Berechtigung, die von Kampagnen unabhängigen Workflows zu verwalten.
 
-1. **[!UICONTROL Workflow-Supervisoren]**
+1. **[!UICONTROL Workflow-Verantwortliche]**
 
    Die Benutzer dieser Gruppe werden im Falle von Meldungen bezüglich Kampagnen-Workflows per E-Mail benachrichtigt.
 

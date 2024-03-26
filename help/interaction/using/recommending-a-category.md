@@ -23,7 +23,7 @@ Es kann vorkommen, dass für einen Empfänger aufgrund der definierten Filter un
 
 Gehen Sie wie folgt vor, um eine Kategorie immer in die Empfehlungen einzuschließen:
 
-1. Klicken Sie im Navigationsbaum auf einen Angebotskatalog.
+1. Öffnen Sie den Explorer und klicken Sie in der Baumstruktur auf einen Angebotskatalog.
 1. Klicken Sie im Tab **[!UICONTROL Eignung]** auf **[!UICONTROL Diese Kategorie immer in die Empfehlungen einschließen]**.
 1. Klicken Sie zum Abschluss auf **[!UICONTROL Speichern]**.
 

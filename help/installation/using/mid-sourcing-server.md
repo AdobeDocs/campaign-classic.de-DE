@@ -11,8 +11,8 @@ topic-tags: additional-configurations
 exl-id: 3e55d7f5-2858-4390-bba9-8fb5be0c3d98
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '1076'
-ht-degree: 5%
+source-wordcount: '1069'
+ht-degree: 4%
 
 ---
 
@@ -144,7 +144,7 @@ Das Attribut &#39;@name&#39; muss die folgenden Regeln beachten:
 
 &#39;affinity_group&#39; bezieht sich auf die Subaffinität, die im Zielgruppen-Mapping deklariert wurde, das in jedem Versand verwendet wird. Der letzte Teil, der &quot;.&quot;enthält wird ignoriert, wenn keine Unter-Affinität vorhanden ist. Zulässige Zeichen sind `[a-z]``[A-Z]``[0-9]`.
 
-Sie müssen den Server anhalten und dann neu starten, damit die Änderung übernommen wird.
+Sie müssen den Server stoppen und dann neu starten, damit die Änderung berücksichtigt wird.
 
 ## Tracking auf einem Mid-Sourcing-Server konfigurieren {#configuring-tracking-on-a-mid-sourcing-server}
 
@@ -167,7 +167,7 @@ Sie müssen den Server anhalten und dann neu starten, damit die Änderung übern
 **Konfiguration der Kundenplattform**
 
 1. Gehen Sie zum externen Mid-Sourcing-Routing-Konto.
-1. Im **[!UICONTROL Mid-Sourcing]** auf, geben Sie die Mid-Sourcing-Server-Verbindungsparameter an.
+1. Geben Sie auf der Registerkarte **[!UICONTROL Mid-Sourcing]** die Verbindungsparameter für den Mid-Sourcing-Server an.
 
    ![](assets/s_ncs_install_midsourcing_tracking06.png)
 

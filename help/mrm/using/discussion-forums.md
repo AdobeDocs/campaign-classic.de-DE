@@ -11,7 +11,7 @@ exl-id: 222853c5-c754-4c0b-8ee4-a64b2f8677a4
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '811'
-ht-degree: 100%
+ht-degree: 87%
 
 ---
 
@@ -39,13 +39,13 @@ Um den Inhalt einer Nachricht anzuzeigen, klicken Sie auf ihren Titel.
 
 **Neue Diskussionen beginnen**
 
-Um eine neue Diskussion zu beginnen, klicken Sie auf die Schaltfläche **[!UICONTROL Diskussion hinzufügen]** rechts oben. Daraufhin erscheint das Fenster **[!UICONTROL Diskussionsforum]** (siehe weiter unten).
+Um eine neue Diskussion zu beginnen, klicken Sie auf die Schaltfläche **[!UICONTROL Diskussion hinzufügen]** in der oberen rechten Ecke. Das Feld **[!UICONTROL Diskussionsforum]** wird angezeigt (siehe unten).
 
 ![](assets/mrm_forum_new_thread.png)
 
 **Nachrichten in einer existierenden Diskussion posten**
 
-Um eine Nachricht in einer existierenden Diskussion zu posten, öffnen Sie die Nachricht, auf die Sie antworten möchten, und klicken Sie auf den Link **[!UICONTROL Antworten]** links oberhalb der Nachricht. Das Fenster **[!UICONTROL Diskussionsforum]** erscheint (siehe unten).
+Um eine Nachricht in einer existierenden Diskussion zu posten, öffnen Sie die Nachricht, die Sie beantworten möchten, und klicken Sie auf die Schaltfläche **[!UICONTROL Antwort]** in der oberen linken Ecke. Das Feld **[!UICONTROL Diskussionsforum]** wird angezeigt (siehe unten).
 
 ![](assets/mrm_forum_answer_msg.png)
 
@@ -76,7 +76,7 @@ Sie haben die Möglichkeit, eine Nachricht im persönlichen Forum eines Benutzer
 
 Es gibt folgende Möglichkeiten, auf ein Benutzerforum zuzugreifen:
 
-* Wählen Sie, wenn Sie über die entsprechenden Berechtigungen verfügen, im Knoten **[!UICONTROL Administration > Zugriffe > Benutzer]** das Dashboard des gewünschten Benutzers aus und klicken Sie auf die Schaltfläche **[!UICONTROL Forum]** oben rechts.
+* Wählen Sie, wenn Sie über die entsprechenden Berechtigungen verfügen, im Knoten **[!UICONTROL Administration > Zugriffe > Benutzer]** des Explorers das Dashboard des gewünschten Benutzers aus und klicken Sie auf den Link **[!UICONTROL Forum]** oben rechts.
 * Wenn nicht, suchen Sie den Namen des Benutzers in Adobe Campaign (über eine von diesem Benutzer im Forum gepostete Nachricht, eine ihm zugewiesene Aufgabe) und klicken Sie darauf, um auf sein Dashboard zuzugreifen. Sie können Ihren Administrator auch bitten, eine Ansicht des Benutzerordners zu erstellen.
 
 ## Forum abonnieren {#subscribing-to-a-forum}
@@ -93,7 +93,7 @@ Sie können ein Forum abonnieren, um den enthaltenen Diskussionen zu folgen und 
 
   ![](assets/mrm_forum_unsubscribe.png)
 
-* In Ihrem persönlichen Dashboard werden die von Ihnen abonnierten Foren aufgelistet. Klicken Sie auf den Link **[!UICONTROL Forum-Abonnements]**, um die Liste anzuzeigen, und anschließend auf das Forum, auf das Sie zugreifen möchten.
+* In Ihrem persönlichen Dashboard werden die Foren aufgelistet, die Sie abonniert haben. Klicken Sie auf **[!UICONTROL Teilnahme an Diskussionsforen]** -Link, um die Liste anzuzeigen, und klicken Sie dann auf das Element, das Sie für den Zugriff auf das Forum interessiert.
 
   ![](assets/platform_dashboard_operator_subscr_forums.png)
 
@@ -114,4 +114,4 @@ Falls Abonnenten eines Forums nicht die erwarteten Benachrichtigungen erhalten, 
    * Gehen Sie von der Adobe-Campaign-Startseite aus zu **[!UICONTROL Kampagnen > Navigation > Sendungen]** und öffnen Sie den Versand **[!UICONTROL Benachrichtigungen bezüglich Diskussionforen]**.
    * Gehen Sie im Explorer zum Knoten **[!UICONTROL Administration > Automatisch erstellte Objekte > Technische Sendungen > Workflow-Benachrichtigungen]** und klicken Sie auf **[!UICONTROL Benachrichtigungen bezüglich Diskussionsforen]**.
 
-  Im Fenster **[!UICONTROL Benachrichtigungen bezüglich Diskussionsforen]** befinden sich die Versandlogs im Tab **[!UICONTROL Bearbeiten > Versand]**. Überprüfen Sie ebenfalls die Tabs **[!UICONTROL Verfolgung > Protokoll]** und **[!UICONTROL Ausschlussgründe]**.
+  Im **[!UICONTROL Benachrichtigungen zu Diskussionsforen]** die Versandlogs im **[!UICONTROL Bearbeiten > Versand]** Registerkarte. Sie können auch die **[!UICONTROL Tracking > Protokoll]** und **[!UICONTROL Ausschlussgründe]** Registerkarten.

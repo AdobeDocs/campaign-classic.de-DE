@@ -8,9 +8,9 @@ feature: Email Design, Personalization
 role: User
 exl-id: 5bf727d2-83b1-4a99-be25-041eee8d234c
 source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
-workflow-type: ht
-source-wordcount: '1311'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1307'
+ht-degree: 98%
 
 ---
 
@@ -71,7 +71,7 @@ Beziehen Sie stets einen Link zur Mirrorseite ein. Die bevorzugte Position ist a
 
 ### Abmelde-Link
 
-Ein Abmelde-Link muss unbedingt vorhanden sein. Er muss gut sichtbar und gültig sein, und das Formular muss funktionieren. Bei der Analyse einer Nachricht wird standardmäßig von einer [Typologieregel](steps-validating-the-delivery.md#validation-process-with-typologies) überprüft, ob ein Abmelde-Link vorhanden ist. Ist dies nicht der Fall, wird ein Warnhinweis erstellt.
+Ein Abmelde-Link muss unbedingt vorhanden sein. Er muss gut sichtbar und gültig sein, und das Formular muss funktionieren. Bei der Analyse einer Nachricht wird standardmäßig ein [Typologieregel](steps-validating-the-delivery.md#validation-process-with-typologies) prüft, ob ein Abmelde-Link vorhanden ist, und erzeugt einen Warnhinweis, falls dieser fehlen sollte.
 
 **Tipp**: Da menschliche Fehler immer möglich sind, prüfen Sie vor jedem Versand, ob der Abmelde-Link ordnungsgemäß funktioniert. Achten Sie beispielsweise beim Testversand darauf, dass der Link gültig ist, das Formular online ist und dass sich das Feld „Diese Person nicht mehr kontaktieren“ auf „Ja“ ändert.
 
@@ -79,7 +79,7 @@ Ein Abmelde-Link muss unbedingt vorhanden sein. Er muss gut sichtbar und gültig
 
 ### Größe der E-Mail
 
-Um Leistungs- oder Zustellbarkeitsprobleme zu vermeiden, wird eine E-Mail mit einer maximalen Größe von **35 KB** empfohlen. Um die Nachrichtengröße zu überprüfen, wählen Sie auf der Registerkarte **[!UICONTROL Vorschau]** ein Testprofil aus. Nach der Erstellung der Nachricht wird deren Größe in der Ecke rechts oben dargestellt.
+Um Performance- oder Zustellbarkeitsprobleme zu vermeiden, wird eine E-Mail mit einer maximalen Größe von **35 KB** empfohlen. Um die Nachrichtengröße zu überprüfen, wählen Sie auf der Registerkarte **[!UICONTROL Vorschau]** ein Testprofil aus. Nach der Erstellung der Nachricht wird deren Größe in der Ecke rechts oben dargestellt.
 
 Um Ihre E-Mail unter dem Grenzwert zu halten, beachten Sie Folgendes:
 
@@ -95,7 +95,7 @@ Testen Sie alle Änderungen vor dem endgültigen Senden.
 
 Standardmäßig kommt in Bezug auf die maximal zulässige Zeichenanzahl einer SMS der Mobilfunkstandard GSM (Global System for Mobile Communications) zur Anwendung. SMS, die das GSM-Alphabet verwenden, sind auf 160 Zeichen begrenzt oder auf 153 Zeichen pro SMS bei Nachrichten, die in mehreren Teilen gesendet werden.
 
-Transliteration bezeichnet in einer SMS die Ersetzung eines Zeichens durch ein anderes, wenn das ursprüngliche Zeichen nicht von GSM unterstützt wird. Die Verwendung von Personalisierungsfeldern im SMS-Inhalt führt u. U. dazu, dass nicht von GSM unterstützte Zeichen eingefügt werden. Sie können die Transliteration von Zeichen zulassen, indem Sie die entsprechende Option im Tab mit den Parametern des SMPP-Kanals des entsprechenden **[!UICONTROL externen Kontos]** aktivieren.
+Die Transliteration besteht darin, ein Zeichen einer SMS durch ein anderes zu ersetzen, wenn dieses Zeichen vom GSM-Standard nicht berücksichtigt wird. Beachten Sie, dass durch das Einfügen von Personalisierungsfeldern in den Inhalt Ihrer SMS-Nachricht Zeichen eingeführt werden können, die von der GSM-Kodierung nicht berücksichtigt werden. Sie können die Transliteration von Zeichen zulassen, indem Sie das entsprechende Kästchen auf der Registerkarte „SMPP-Kanaleinstellungen“ des entsprechenden **[!UICONTROL externen Kontos]** markieren.
 Weiterführende Informationen finden Sie [in diesem Abschnitt](sms-set-up.md#creating-an-smpp-external-account).
 
 **Tipps**:
