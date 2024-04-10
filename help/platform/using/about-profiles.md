@@ -7,10 +7,10 @@ feature: Profiles, Audiences
 role: User, Data Architect
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
-source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+source-git-commit: c4fa3ea6d5a9d9acae267fc1ca27cf3bc140683c
 workflow-type: tm+mt
-source-wordcount: '852'
-ht-degree: 88%
+source-wordcount: '925'
+ht-degree: 73%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 88%
 
 Alle Profile werden in der Adobe Campaign-Datenbank zentral gespeichert. Die Akquise von Profilen und die Datenbankerstellung können auf verschiedenste Weisen erfolgen: Online-Akquise über Web-Formulare, manueller oder automatisierter Import von Textdateien, Replikation von bereits existierenden Datenbanken oder Informationssystemen des Unternehmens. Mit Adobe Campaign können Sie Marketing-Verlauf, Kaufinformationen, Voreinstellungen, CRM-Daten und alle relevanten PI-Daten in eine konsolidierte Ansicht integrieren, um sie zu analysieren und Maßnahmen zu ergreifen.
 
-**Profil** bezeichnet einen Datensatz, der einen Endkunden, einen Interessenten oder Lead repräsentiert. Bei diesen Daten kann es sich z. B. um einen Datensatz in der nmsRecipient-Tabelle oder einer externen Tabelle handeln, die die Kennung eines Cookies, eines Kunden oder eines Mobiltelefons oder andere für einen bestimmten Kanal relevante Informationen enthält.
+&quot;**Profil**&quot; bedeutet einen Datensatz, der einen Endkunden, einen Interessenten oder einen Lead repräsentiert (z. B. einen Datensatz in der nmsRecipient-Tabelle oder eine externe Tabelle, die eine Cookie-ID, Kunden-ID, mobile Kennung oder andere für einen bestimmten Kanal relevante Informationen enthält).
 
 In Adobe Campaign sind die Standardprofile für Sendungen (E-Mails, SMS usw.) die Empfänger. Mit den in der Datenbank gespeicherten Empfängerdaten können Sie die Zielgruppe filtern, die einen bestimmten Versand erhalten soll, und Personalisierungsdaten in den Versandinhalt einfügen. In der Datenbank gibt es noch andere Arten von Profilen. Sie sind für unterschiedliche Zwecke gedacht. So werden beispielsweise Testprofile erstellt, um Ihre Sendungen zu testen, bevor sie an die endgültige Zielgruppe gesendet werden.
 
@@ -90,21 +90,19 @@ Auf [dieser Seite](../../platform/using/adobe-campaign-explorer.md) wird die all
 
 ## Aktive Profile {#active-profiles}
 
-Aktive Profile sind die Profile, die zu Fakturierungszwecken berücksichtigt werden.
+Ein aktives Profil ist ein Profil, mit dem der Kunde in den letzten 12 Monaten über einen beliebigen Kanal kommuniziert hat.
 
-Für die Fakturierung werden nur **aktive** Profile berücksichtigt. Ein Profil wird als aktiv betrachtet, wenn es in den vergangenen zwölf Monaten über einen beliebigen Kanal angesprochen wurde oder mit ihm kommuniziert wurde.
+Gemäß Ihrem Vertrag erhalten alle Ihre Campaign-Instanzen eine bestimmte Anzahl aktiver Profile, die zu Abrechnungszwecken gezählt werden. Informationen zur Anzahl der gekauften aktiven Profile finden Sie in Ihrem aktuellen Vertrag. Weitere Informationen finden Sie in der [Adobe Campaign-Produktbeschreibung](https://helpx.adobe.com/de/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
-Ein Profil, das für mehrere Sendungen ausgewählt wurde, wird nur einmal gezählt.
+Sie können die Anzahl der aktiven Profile in Ihrer Instanz direkt über das Control Panel von Campaign überwachen. Weitere Informationen hierzu finden Sie in der [Dokumentation zu Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html?lang=de){target="_blank"}.
 
->[!NOTE]
->
->Die Kanäle Facebook und X (früher bekannt als Twitter) werden nicht berücksichtigt.
+Es gelten die folgenden Limits und Einschränkungen:
 
-Die Anzahl der aktiven Profile ist nur für **Marketing-Instanzen** verfügbar. Sie ist nicht für Ausführungsinstanzen verfügbar, d. h. MID (Mid-Sourcing)- und RT (Message Center-/Echtzeit-Messaging)-Instanzen.
+* Ein Profil, das durch mehrere Sendungen angesprochen wurde, wird nur einmal gezählt.
+* Profile, die im Rahmen von Social Marketing auf X (Twitter) oder Facebook angesprochen werden, werden nicht als aktive Profile berücksichtigt.
+* Die Anzahl der aktiven Profile ist verfügbar für **Marketinginstanzen** nur. Sie ist nicht für Ausführungsinstanzen verfügbar, d. h. MID (Mid-Sourcing)- und RT (Message Center-/Echtzeit-Messaging)-Instanzen.
+* Die Zählung basiert auf dem Primärschlüssel des Empfängers. Wenn also ein Profil in zwei verschiedenen Empfängertabellen vorhanden ist, kann es doppelt als aktives Profil gezählt werden.
 
->[!NOTE]
->
->Sie können auch die Anzahl der aktiven Profile in Ihrer Instanz direkt über das Control Panel von Campaign überwachen. Weitere Informationen hierzu finden Sie in der [Dokumentation zu Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html?lang=de).
 
 ## Anleitungsvideo {#create-profiles-video}
 
