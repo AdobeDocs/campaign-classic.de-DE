@@ -49,7 +49,7 @@ Im Folgenden finden Sie die Integrationsschritte für das Campaign SDK.
 
   Ab der SDK-Version 1.0.26 wird diese Erlaubnis nicht mehr verwendet.
 
-* **In iOS**: die **libNeolaneSDK.a** und **Neolane_SDK.h** -Dateien müssen mit dem Projekt verknüpft sein. Ab Version 1.0.24 des SDK die Option **ENABLE_BITCODE** aktiviert ist.
+* **In iOS**: die **libNeolaneSDK.a** und **In: neolane_sdk.h** Dateien müssen mit dem Projekt verknüpft sein. Ab Version 1.0.24 des SDK wird die Option **ENABLE_BITCODE** ist aktiviert.
 
   >[!NOTE]
   >
@@ -153,7 +153,7 @@ Die Registrierungsfunktion ermöglicht
 
   Trackingfunktionen ermöglichen das Tracking der Benachrichtigungsanzeige (Impression) und die Aktivierung der Benachrichtigungen (Öffnungen).
 
-  So verfolgen Sie die Anzeige der Benachrichtigung (durch Aufruf der **notifyReceive** -Funktion des SDK), folgen Sie der unten stehenden Implementierung. Wenn Sie FCM (Firebase Cloud Messaging) verwenden, empfehlen wir Ihnen, die **notifyReceive** Funktion beim **onMessageReceived** -Funktion vom Android-System aufgerufen.
+  So verfolgen Sie die Anzeige der Benachrichtigung (erfolgt durch Aufruf der **notifyReceive** Funktion des SDK), folgen Sie der unten stehenden Implementierung. Beachten Sie, dass wir Ihnen bei Verwendung von FCM (Firebase Cloud Messaging) empfehlen, **notifyReceive** -Funktion verwenden, wenn die **onMessageReceived** -Funktion wird vom Android-System aufgerufen.
 
   ```
   package com.android.YourApplication;
@@ -249,7 +249,7 @@ Die Registrierungsfunktion ermöglicht
   }
   ```
 
-  Im Folgenden finden Sie ein Implementierungsbeispiel zum Verfolgen eines geöffneten Benachrichtigungs-Workflows (ausgeführt durch Aufruf der **notifyOpening** -Funktion des SDK). Die **NotificationActivity** -Klasse entspricht der zum Erstellen der **notifIntent** -Objekt im vorherigen Beispiel.
+  Im Folgenden finden Sie ein Implementierungsbeispiel für das Tracking einer geöffneten Benachrichtigung (ausgeführt durch Aufruf der **notifyOpening** Funktion des SDK). Die **Benachrichtigungsaktivität** Klasse entspricht der Klasse, die zum Erstellen des **notifIntent** -Objekt im vorherigen Beispiel.
 
   ```
   public class NotificationActivity extends Activity {
@@ -297,7 +297,7 @@ Die Registrierungsfunktion ermöglicht
 
   >[!NOTE]
   >
-  >Ab Version 7.0, sobald die Variable **`application:didReceiveRemoteNotification:fetchCompletionHandler`** -Funktion implementiert ist, ruft das Betriebssystem nur diese Funktion auf. Die **`application:didReceiveRemoteNotification`** -Funktion nicht aufgerufen.
+  >Ab Version 7.0 gilt Folgendes: **`application:didReceiveRemoteNotification:fetchCompletionHandler`** ist implementiert, ruft das Betriebssystem nur diese Funktion auf. Die **`application:didReceiveRemoteNotification`** Die Funktion wird daher nicht aufgerufen.
 
 +++
 
