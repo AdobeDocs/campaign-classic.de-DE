@@ -2,15 +2,14 @@
 product: campaign
 title: Nachverfolgen und Überwachen von Nachrichten
 description: Erfahren Sie, wie Sie Nachrichten nachverfolgen und überwachen
-badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
+badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Monitoring, Reporting
 role: User
 exl-id: a039a288-2e7b-4f35-9885-ead3ed4347af
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 92%
+source-wordcount: '449'
+ht-degree: 91%
 
 ---
 

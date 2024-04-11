@@ -2,13 +2,12 @@
 product: campaign
 title: Übersetzen eines Web-Formulars
 description: Übersetzen eines Web-Formulars
-badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
+badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Web Forms
 exl-id: 72959141-ca18-4512-80c7-239efd31f711
-source-git-commit: 4661688a22bd1a82eaf9c72a739b5a5ecee168b1
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '1644'
+source-wordcount: '1641'
 ht-degree: 76%
 
 ---

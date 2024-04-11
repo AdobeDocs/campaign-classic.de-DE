@@ -2,15 +2,14 @@
 product: campaign
 title: Aktualisieren der Bounce-Qualifizierung nach einem ISP-Ausfall
 description: Erfahren Sie, wie Sie die Bounce-Qualifizierung nach einem ISP-Ausfall aktualisieren
-badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
+badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Deliverability
 hide: true
 hidefromtoc: true
 exl-id: 7a9afe0a-0219-40f1-9fe2-6374db8d555c
-source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '503'
 ht-degree: 92%
 
 ---
@@ -56,8 +55,8 @@ Auf der Grundlage des Zeitrahmens des Vorfalls und des ISP befinden sich unten d
 
    * **Fehlertext (Quarantänetext)** enthält „Momen_Code10_InvalidRecipient“
    * **E-Mail-Domain (@domain)** gleich domain1.com ODER **E-Mail-Domain (@domain)** gleich domain2.com ODER **E-Mail-Domain (@domain)** gleich domain3.com
-   * **Statusaktualisierung (@lastModified)** am oder später als `MM/DD/YYYY HH:MM:SS AM`
-   * **Status aktualisieren (@lastModified)** auf oder vor `MM/DD/YYYY HH:MM:SS PM`
+   * **Statusaktualisierung (@lastModified)** `MM/DD/YYYY HH:MM:SS AM` oder später
+   * **Statusaktualisierung (@lastModified)** `MM/DD/YYYY HH:MM:SS PM` oder früher 
 
 * Für Campaign-Umgebungen mit SMTP-Bounce-Antwortinformationen im Feld **[!UICONTROL Fehlertext]** der Quarantäneliste:
 

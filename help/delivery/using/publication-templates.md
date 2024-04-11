@@ -2,15 +2,14 @@
 product: campaign
 title: Veröffentlichungsvorlagen
 description: Veröffentlichungsvorlagen
-badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
+badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Templates
 role: User
 exl-id: 3b6e4974-4551-4da2-8eca-577c4f9cbd91
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '845'
-ht-degree: 93%
+source-wordcount: '842'
+ht-degree: 92%
 
 ---
 

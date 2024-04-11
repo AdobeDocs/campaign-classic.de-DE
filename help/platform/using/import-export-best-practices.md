@@ -3,16 +3,15 @@ product: campaign
 title: Best Practices beim Import und Export
 description: Erfahren Sie mehr über Best Practices, die beim Importieren oder Exportieren von Daten befolgt werden sollten
 feature: Data Management
-badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
+badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 audience: automating
 content-type: reference
 topic-tags: workflow-general-operation
 exl-id: 03d35202-d221-4136-aad4-00704aabb356
-source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '530'
-ht-degree: 100%
+source-wordcount: '527'
+ht-degree: 99%
 
 ---
 

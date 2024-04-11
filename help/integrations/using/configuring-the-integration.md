@@ -3,15 +3,14 @@ product: campaign
 title: Konfigurieren der Integration mit Adobe Experience Manager
 description: Hier erfahren Sie, wie Sie die Integration von Campaign mit AEM konfigurieren.
 feature: Experience Manager Integration
-badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
+badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 audience: integrations
 content-type: reference
 exl-id: 54ee88b2-e646-4fb9-abec-957f0096f15f
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '553'
-ht-degree: 95%
+source-wordcount: '550'
+ht-degree: 94%
 
 ---
 

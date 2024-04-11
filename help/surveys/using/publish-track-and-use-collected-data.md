@@ -2,14 +2,13 @@
 product: campaign
 title: Erfasste Daten veröffentlichen, tracken und verwenden
 description: Erfahren Sie, wie Sie in einer Umfrage erfasste Daten veröffentlichen, tracken und verwenden.
-badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
+badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Surveys
 exl-id: 3cf3c486-6640-4d67-95cf-50d5767deb60
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '892'
-ht-degree: 78%
+source-wordcount: '889'
+ht-degree: 77%
 
 ---
 

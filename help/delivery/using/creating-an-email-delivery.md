@@ -2,15 +2,14 @@
 product: campaign
 title: Erstellen eines E-Mail-Versands
 description: Erfahren Sie, wie Sie einen E-Mail-Versand erstellen
-badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
+badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Email
 role: User
 exl-id: 7f44e732-4257-4d2a-800c-bde847e20f52
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '110'
-ht-degree: 78%
+source-wordcount: '107'
+ht-degree: 73%
 
 ---
 

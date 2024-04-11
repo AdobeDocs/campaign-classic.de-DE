@@ -2,15 +2,14 @@
 product: campaign
 title: Erstellen von Testadressen
 description: Erfahren Sie, wie Sie Testadressen erstellen und verwenden.
-badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
+badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Seed Address
 role: User, Data Engineer
 exl-id: f7dc97f0-3423-4b6f-88e2-08180f9adf8a
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 89%
+source-wordcount: '449'
+ht-degree: 88%
 
 ---
 

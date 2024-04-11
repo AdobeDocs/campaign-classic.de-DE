@@ -2,15 +2,14 @@
 product: campaign
 title: Über den Briefpost-Kanal
 description: Über den Briefpost-Kanal
-badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
+badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Direct Mail
 role: User
 exl-id: 6474cf2e-c4db-4430-b001-18bf4911b0ea
-source-git-commit: ba542c0811141e707589568706d44c73c280c0d3
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '170'
-ht-degree: 100%
+source-wordcount: '167'
+ht-degree: 97%
 
 ---
 

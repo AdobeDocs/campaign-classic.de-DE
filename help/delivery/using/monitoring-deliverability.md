@@ -2,15 +2,14 @@
 product: campaign
 title: Überwachen der Zustellbarkeit in Adobe Campaign
 description: Erfahren Sie mehr über Tools und Richtlinien zum Überwachen der Zustellbarkeit in Adobe Campaign
-badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
+badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Deliverability
 role: User, Admin
 exl-id: e4caa316-242f-46cd-a20b-a5eee5a0c456
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '568'
-ht-degree: 100%
+source-wordcount: '565'
+ht-degree: 99%
 
 ---
 

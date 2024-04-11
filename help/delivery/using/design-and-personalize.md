@@ -2,15 +2,14 @@
 product: campaign
 title: Personalisierte Inhalte erstellen
 description: Erfahren Sie, wie Sie personalisierte Inhalte in Adobe Campaign-Sendungen erstellen
-badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
+badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Email Design, Personalization
 role: User
 exl-id: 5bf727d2-83b1-4a99-be25-041eee8d234c
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '1307'
-ht-degree: 98%
+source-wordcount: '1304'
+ht-degree: 97%
 
 ---
 

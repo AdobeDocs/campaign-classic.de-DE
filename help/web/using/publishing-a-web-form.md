@@ -2,14 +2,13 @@
 product: campaign
 title: Veröffentlichen eines Web-Formulars
 description: Veröffentlichen eines Web-Formulars
-badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
+badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Web Forms
 exl-id: 1c66b8e8-7590-4767-9b2f-a9a509df4508
-source-git-commit: 8bb839bd0118010ac8e3e4bde88f6f3972786ed0
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '1376'
-ht-degree: 52%
+source-wordcount: '1373'
+ht-degree: 51%
 
 ---
 

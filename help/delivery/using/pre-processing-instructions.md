@@ -2,15 +2,14 @@
 product: campaign
 title: Anweisungen zur Vorab-Bearbeitung von getrackten URLs
 description: Erfahren Sie mehr über die Vorab-Bearbeitungsanweisung, mit der Sie die URL einer E-Mail skripten und dennoch tracken können
-badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
+badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Monitoring
 role: User, Data Engineer, Developer
 exl-id: 9d3f5c74-377a-4e24-81e5-bb605f69cf8a
-source-git-commit: d2f5f2a662c022e258fb3cc56c8502c4f4cb2849
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 100%
+source-wordcount: '653'
+ht-degree: 99%
 
 ---
 

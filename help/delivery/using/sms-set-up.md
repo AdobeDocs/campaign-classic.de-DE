@@ -2,15 +2,14 @@
 product: campaign
 title: Konfigurieren des SMS-Kanals in Campaign
 description: Erfahren Sie, wie Sie den SMS-Kanal in Campaign konfigurieren
-badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
-badge-v8: label="v8" type="Positive" tooltip="Gilt auch für Campaign v8"
+badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: SMS
 role: User, Developer, Admin
 exl-id: a2783a5e-6d38-41a1-b5c6-24ab489116f8
-source-git-commit: 4165f5988dfeee2f3b4d872c445ace11c9aa4fe1
+source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '1853'
-ht-degree: 100%
+source-wordcount: '1850'
+ht-degree: 99%
 
 ---
 
