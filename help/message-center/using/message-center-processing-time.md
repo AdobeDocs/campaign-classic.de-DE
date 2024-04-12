@@ -3,14 +3,13 @@ product: campaign
 title: Message-Center-Verarbeitungsdauer
 description: Weitere Informationen über den Bericht „Message Center-Verarbeitungsdauer“
 feature: Transactional Messaging, Message Center
-badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 audience: message-center
 content-type: reference
 topic-tags: reports
 exl-id: c797fd94-0c8d-480b-b22a-1489ac331e77
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '253'
 ht-degree: 100%
 
 ---

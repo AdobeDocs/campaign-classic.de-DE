@@ -2,13 +2,12 @@
 product: campaign
 title: Extraktion (Datei)
 description: Erfahren Sie mehr über die Workflow-Aktivität "Extraktion (Datei)".
-badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Workflows, Data Management Activity
 exl-id: 06eafedd-6386-498f-a80d-7f57ddcccad6
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '358'
-ht-degree: 83%
+source-wordcount: '351'
+ht-degree: 96%
 
 ---
 
@@ -31,7 +30,7 @@ Gehen Sie wie folgt vor, um eine Extraktion zu konfigurieren:
 
    Die Option **[!UICONTROL Gruppierungen verwalten (GROUP BY + HAVING)]** fügt eine weitere Etappe hinzu, die die Filterung des Aggregats ermöglicht (z. B. nach einer bestimmten Art von Bestellung, nach Kunden mit mehr als zehn Bestellungen etc.).
 
-1. Bei Bedarf können Sie der Ausgabedatei neue Spalten hinzufügen, z. B. Berechnungen oder Verarbeitungsergebnisse. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Hinzufügen]** Symbol.
+1. Bei Bedarf können Sie der Ausgabedatei zusätzliche Spalten hinzufügen, zum Beispiel die Ergebnisse von Auswertungen oder Verarbeitungen. Wählen Sie hierzu das Symbol **[!UICONTROL Hinzufügen]**.
 
    ![](assets/s_advuser_extract_file_add_col.png)
 
@@ -39,11 +38,11 @@ Gehen Sie wie folgt vor, um eine Extraktion zu konfigurieren:
 
    ![](assets/s_advuser_extract_file_add_exp.png)
 
-   Sie gelangen dann in das Auswahlfenster. Klicks **[!UICONTROL Erweiterte Auswahl]** , um den auf die Daten anzuwendenden Prozess auszuwählen.
+   Sie greifen dann auf das Auswahlfenster zu. Klicken Sie auf **[!UICONTROL Erweiterte Auswahl]**, um den auf die Daten anzuwendenden Prozess auszuwählen.
 
    ![](assets/s_advuser_extract_file_advanced_selection.png)
 
-   Kreuzen Sie den gewünschten Formeltyp an.
+   Kreuzen Sie die gewünschte Formel an.
 
    ![](assets/s_advuser_extract_file_agregate_values.png)
 

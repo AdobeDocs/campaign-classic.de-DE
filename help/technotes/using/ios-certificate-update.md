@@ -3,11 +3,10 @@ product: campaign
 title: Technote - Aktualisierung des Apple Push Notification Service-Zertifikats
 description: Aktualisierung des Server-Zertifikats des Push-Benachrichtigungs-Service von Apple
 feature: Technote, Push
-badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 exl-id: 263fb4b5-ca62-4b92-a82d-8820ee998296
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '148'
+source-wordcount: '141'
 ht-degree: 94%
 
 ---

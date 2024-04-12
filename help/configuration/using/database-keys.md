@@ -4,18 +4,17 @@ title: Schlüsselverwaltung in Datenschemata
 description: Schlüsselverwaltung in Datenschemata
 feature: Configuration, Instance Settings
 role: Data Engineer, Developer
-badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 exl-id: faf63c8f-9d10-43c1-a990-91361594af9f
-source-git-commit: 46dcd80d5adc31a66b47c6d75e7914b0a686326b
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '625'
-ht-degree: 23%
+source-wordcount: '618'
+ht-degree: 30%
 
 ---
 
 # Schlüsselverwaltung in Schemata {#management-of-keys}
 
-Jede mit einem Datenschema verknüpfte Tabelle muss über mindestens einen Schlüssel zur Identifizierung eines Datensatzes in einer Tabelle verfügen.
+Jede mit einem Datenschema verknüpfte Tabelle benötigt mindestens einen Schlüssel zur Identifizierung eines Eintrags in einer Tabelle.
 
 Ein Schlüssel wird über das Hauptelement des Datenschemas deklariert.
 
@@ -27,7 +26,7 @@ Ein Schlüssel wird über das Hauptelement des Datenschemas deklariert.
 </key>
 ```
 
-Ein Schlüssel wird als &quot;Primärschlüssel&quot;bezeichnet, wenn er der erste im Schema ist, der ausgefüllt werden soll, oder wenn er die Variable `internal` auf &quot;true&quot;gesetzt ist.
+Ein Schlüssel wird als „Primärschlüssel“ bezeichnet, wenn er an erster Stelle im auszufüllenden Schema steht oder wenn er ein `internal`-Attribut enthält, das auf „true“ festgelegt ist.
 
 Die folgenden Regeln gelten für Schlüssel:
 
@@ -60,7 +59,7 @@ Die folgenden Regeln gelten für Schlüssel:
   </srcSchema>
   ```
 
-  Generiertes Schema:
+  Das generierte Schema:
 
   ```sql
   <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
@@ -102,7 +101,7 @@ Die folgenden Regeln gelten für Schlüssel:
   </srcSchema>
   ```
 
-  Generiertes Schema:
+  Das generierte Schema:
 
   ```sql
   <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
@@ -187,5 +186,5 @@ Weitere Informationen finden Sie unter den folgenden Links:
 * [Erste Schritte mit Schemata](about-schema-reference.md)
 * [Schemastruktur](schema-structure.md)
 * [Datenbank-Mapping](database-mapping.md)
-* [Link-Management](database-links.md)
+* [Verknüpfungs-Management](database-links.md)
 * [Campaign-Datenmodell](about-data-model.md)

@@ -4,12 +4,11 @@ title: Regenerieren von Schemata
 description: Erfahren Sie, wie Sie Campaign-Schemata neu generieren
 feature: Custom Resources
 role: Data Engineer, Developer
-badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 exl-id: 6c48cfea-6d20-4462-a485-71e1575a08a7
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '143'
-ht-degree: 6%
+source-wordcount: '136'
+ht-degree: 2%
 
 ---
 

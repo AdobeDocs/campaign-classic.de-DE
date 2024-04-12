@@ -2,13 +2,12 @@
 product: campaign
 title: Erstellen von Filtern
 description: Erfahren Sie, wie Sie bei Abfragen einen Filter erstellen können
-badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Query Editor, Workflows
 exl-id: 297ea1e1-39ef-4b99-aaaa-9e88611fb1bf
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 80%
+source-wordcount: '231'
+ht-degree: 79%
 
 ---
 

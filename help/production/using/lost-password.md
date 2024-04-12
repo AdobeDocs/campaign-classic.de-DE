@@ -3,16 +3,15 @@ product: campaign
 title: Vergessenes Passwort
 description: Vergessenes Passwort
 feature: Monitoring, Access Management
-badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 badge-v7-prem: label="On-Premise und Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
 audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 064eb41f-6685-4ac1-adc5-40f9d5a2f96d
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '191'
-ht-degree: 15%
+source-wordcount: '184'
+ht-degree: 12%
 
 ---
 

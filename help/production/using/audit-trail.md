@@ -3,12 +3,11 @@ product: campaign
 title: Audit-Protokoll
 description: Erfahren Sie, wie Sie Ihre Instanz mit dem Campaign Audit-Protokoll überwachen.
 feature: Audit Trail, Monitoring, Workflows
-badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 exl-id: 8508d879-fb38-4b1f-9f55-0341bb8d0c67
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '503'
-ht-degree: 17%
+source-wordcount: '496'
+ht-degree: 16%
 
 ---
 

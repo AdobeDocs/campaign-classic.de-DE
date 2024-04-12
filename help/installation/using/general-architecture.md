@@ -3,15 +3,14 @@ product: campaign
 title: Allgemeine Architektur von Campaign Classic
 description: Erfahren Sie, wie Sie Campaign Classic installieren und konfigurieren
 feature: Installation, Architecture
-badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 audience: installation
 content-type: reference
 topic-tags: architecture-and-hosting-models
 exl-id: 04e6dc17-427b-4745-84cc-bf45c03dbf81
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '1349'
-ht-degree: 51%
+source-wordcount: '1342'
+ht-degree: 50%
 
 ---
 

@@ -3,12 +3,11 @@ product: campaign
 title: Datensynchronisierung über CRM-Connectoren
 description: Daten zwischen Campaign und Ihrem CRM verwalten
 feature: Microsoft CRM Integration, Salesforce Integration
-badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 exl-id: 7f9eda15-76e8-40a1-8302-004cea085778
-source-git-commit: 209ccbcac20052826dad0c55b35173be20b10114
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '1627'
-ht-degree: 92%
+source-wordcount: '1620'
+ht-degree: 95%
 
 ---
 
@@ -251,7 +250,7 @@ Zur Löschung von Objekten im CRM ist die Angabe der Primärschlüssel der zu l�
 
 ![](assets/crm_delete_in_crm.png)
 
-Die **[!UICONTROL Verhalten]** -Tab ermöglicht die Aktivierung der Zurückweisungsverarbeitung. Diese Option erzeugt eine zweite ausgehende Transition für die **[!UICONTROL CRM-Connector]** -Aktivität. Konsultieren Sie diesbezüglich die [Fehlerverarbeitung](#error-processing).
+Die Registerkarte **[!UICONTROL Verhalten]** ermöglicht es, die Verarbeitung von Zurückweisungen zu aktivieren. Diese Option erzeugt eine zweite ausgehende Transition für die Aktivität **[!UICONTROL CRM-Connector]**. Mehr dazu finden Sie unter [Fehlerverarbeitung](#error-processing).
 
 >[!NOTE]
 >

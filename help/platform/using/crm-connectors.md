@@ -3,14 +3,13 @@ product: campaign
 title: CRM-Connectoren
 description: Erste Schritte mit CRM-Connectoren in Campaign
 feature: Microsoft CRM Integration, Salesforce Integration
-badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 7ccab3a4-f323-464a-9ec4-dd597279d0eb
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '165'
+source-wordcount: '158'
 ht-degree: 100%
 
 ---

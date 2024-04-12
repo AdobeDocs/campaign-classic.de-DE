@@ -3,13 +3,12 @@ product: campaign
 title: Sendungen für eine Marketing-Kampagne
 description: Erfahren Sie mehr über Sendungen zur Marketing-Kampagne
 role: User
-badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Campaigns, Resource Management, Cross Channel Orchestration
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '1557'
-ht-degree: 87%
+source-wordcount: '1550'
+ht-degree: 93%
 
 ---
 
@@ -45,7 +44,7 @@ Wenn alle Validierungsanfragen akzeptiert wurden, erhält der Versand den Status
 
 ![](assets/s_ncs_user_edit_del_to_start_from_del.png)
 
-Die Informationen werden auch im Dashboard der Kampagne angezeigt. Die **[!UICONTROL Versand bestätigen]** -Link ermöglicht den Start des Versands.
+Die Informationen werden auch auf dem Kampagnen-Dashboard angezeigt. Der Link **[!UICONTROL Absendung bestätigen]** ermöglicht es, den Versand zu beginnen.
 
 ![](assets/s_ncs_user_edit_del_to_start.png)
 
@@ -80,11 +79,11 @@ Weitere Informationen hierzu finden Sie unter [Validieren einer Extraktionsdatei
 
   Zunächst muss die Zielgruppe der Testsendungen bestimmt werden.
 
-  Sie können so viele Testsendungen wie nötig erstellen. Diese werden über die **[!UICONTROL Briefpost...]** Link der Versanddetails.
+  Sie können so viele Testsendungen wie nötig erstellen. Über den Link **[!UICONTROL Briefpost…]** der Versanddetails können Sie auf sie zugreifen.
 
   ![](assets/s_ncs_user_file_notif_submit_proof.png)
 
-* Der Versandstatus ändert sich in **[!UICONTROL Senden]**. Klicken Sie auf **[!UICONTROL Testsendungen durchführen]** -Schaltfläche, um den Validierungsprozess zu starten.
+* Der Versandstatus ändert sich zu **[!UICONTROL Zu unterbreiten]**. Klicken Sie auf die Schaltfläche **[!UICONTROL Testsendungen unterbreiten]**, um den Validierungsprozess zu beginnen.
 
   ![](assets/s_ncs_user_file_notif_submit_proof_validation.png)
 
@@ -188,12 +187,12 @@ Klicken Sie anschließend auf **[!UICONTROL Versandentwurf hinzufügen]**. Es wi
 
 Ein Versandentwurf kann Artikel, Personalisierungsfelder, Ressourcen und Angebote enthalten:
 
-* Artikel sind beispielsweise physische Dokumente, die an dieser Stelle referenziert und beschrieben und schließlich dem Versand angehängt werden.
-* Mit Personalisierungsfeldern können Sie Personalisierungselemente erstellen, die sich auf Sendungen und nicht auf Empfänger beziehen. Auf diese Weise können Werte erstellt werden, die in Sendungen mit einer bestimmten Zielgruppe verwendet werden (Willkommensangebot, Rabatt usw.) Sie werden in Adobe Campaign erstellt und über das **[!UICONTROL Personalisierungsfelder importieren..]** -Link.
+* Artikel sind beispielsweise physische Dokumente, die an dieser Stelle referenziert und beschrieben und dem Versand angehängt werden.
+* Mit Personalisierungsfeldern können Sie Personalisierungselemente erstellen, die sich auf Sendungen statt auf Empfängerinnen oder Empfänger beziehen. Auf diese Weise können Werte erstellt werden, die in Sendungen mit einer bestimmten Zielgruppe verwendet werden sollen (Willkommensangebot, Rabatt usw.) Sie werden in Adobe Campaign erstellt und über den Link **[!UICONTROL Personalisierungsfelder importieren…]** in den Entwurf importiert.
 
   ![](assets/s_ncs_user_op_add_composition_field.png)
 
-  Über das Symbol **[!UICONTROL Hinzufügen]** rechts vom Bereich der Liste können dem Entwurf auch direkt Personalisierungselemente hinzugefügt werden.
+  Über das Symbol **[!UICONTROL Hinzufügen]** rechts vom Bereich der Liste können in dem Entwurf auch direkt Personalisierungselemente erstellt werden.
 
   ![](assets/s_ncs_user_op_add_composition_field_button.png)
 

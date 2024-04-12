@@ -4,20 +4,19 @@ title: Datenbank-Mapping
 description: Datenbank-Mapping
 feature: Configuration, Instance Settings
 role: Data Engineer, Developer
-badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 exl-id: e05dcd81-bbca-4767-8da3-ea064f7f6c8e
-source-git-commit: 46dcd80d5adc31a66b47c6d75e7914b0a686326b
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '939'
-ht-degree: 57%
+source-wordcount: '932'
+ht-degree: 99%
 
 ---
 
-# Link-Management {#links--relation-between-tables}
+# Verknüpfungs-Management {#links--relation-between-tables}
 
-Eine Relation beschreibt die Zuordnung einer Tabelle zu einer anderen.
+Eine Verknüpfung beschreibt die Zuordnung einer Tabelle zu einer anderen.
 
-Die Vereinigungen, auch Kardinalität genannt, sind im Folgenden aufgeführt.
+Die Verbindungstypen, auch Kardinalitäten genannt, sind im Folgenden aufgeführt.
 
 * 1-1-Kardinalität: Eine Entität in der Quelltabelle kann maximal mit einer Entität in der Zieltabelle in Beziehung stehen.
 * 1-N-Kardinalität: Eine Entität in der Quelltabelle kann mit mehreren Entitäten in der Zieltabelle in Beziehung stehen, aber eine Entität in der Zieltabelle kann nur maximal mit einer Entität in der Quelltabelle in Beziehung stehen.
@@ -29,14 +28,14 @@ Für Join-Beziehungen mit einer Campaign-Tabelle/-Datenbank:
 
 * ![](assets/join_with_campaign11.png): 1-1-Kardinalität. Dies kann etwa eine Beziehung zwischen einem Empfänger und einer aktuellen Bestellung sein. Ein Empfänger kann jeweils nur mit einer Entität der aktuellen Tabelle zu Bestellungen verknüpft sein.
 * ![](assets/externaljoin11.png): 1-1-Kardinalität, externer Join. Dies kann etwa eine Beziehung zwischen einem Empfänger und dem ihm zugehörigen Land sein. Ein Empfänger kann nur mit einer Entität der Ländertabelle verknüpft sein. Der Inhalt der Ländertabelle wird nicht gespeichert.
-* ![](assets/join_with_campaign1n.png): 1-N-Kardinalität. Dies kann etwa eine Beziehung zwischen einem Empfänger und der Tabelle zu Abonnements sein. Ein Empfänger kann mit mehreren Vorkommen in der Abonnementtabelle in Verbindung gebracht werden.
+* ![](assets/join_with_campaign1n.png): 1-N-Kardinalität. Dies kann etwa eine Beziehung zwischen einem Empfänger und der Tabelle zu Abonnements sein. Ein Empfänger oder eine Empfängerin kann mit mehreren Instanzen in der Abonnements-Tabelle verknüpft sein.
 
-Für Verknüpfungsrelationen mit Federated Database Access (FDA):
+Für Join-Beziehungen, die Federated Data Access (FDA) nutzen:
 
 * ![](assets/join_fda_11.png): 1-1-Kardinalität
 * ![](assets/join_fda_1m.png): 1-N-Kardinalität
 
-Weitere Informationen zu FDA-Tabellen finden Sie unter [Zugriff auf externe Datenbanken](../../installation/using/about-fda.md).
+Weitere Informationen zu FDA-Tabellen finden Sie unter [Zugriff auf eine externe Datenbank](../../installation/using/about-fda.md).
 
 In dem Schema, das den Fremdschlüssel der Tabelle enthält, muss über das Hauptelement eine Relation angegeben werden:
 
@@ -52,36 +51,36 @@ Für Relationen gelten folgende Regeln:
 
 * Die Definition einer Relation erfolgt über den Typ **link** für **`<element>`**, wobei folgende Attributen eingegeben werden:
 
-   * **name**: Name des Links aus der Quelltabelle
+   * **name**: Name der Verknüpfung aus der Quelltabelle
    * **target**: Name des Zielschemas
-   * **label**: Link-Titel
-   * **revLink** (optional): Name des Reverse-Links aus dem Zielschema (standardmäßig automatisch abgezogen)
-   * **Integrität** (optional): referenzielle Integrität des Vorkommens der Quelltabelle mit dem Vorkommen der Zieltabelle.
+   * **label**: Titel der Verknüpfung
+   * **revLink** (optional): Name der Umkehrverknüpfung aus dem Zielschema (wird standardmäßig automatisch abgeleitet)
+   * **integrity** (optional): Referenzintegrität der Instanz aus der Quelltabelle zur Instanz der Zieltabelle.
 Mögliche Werte:
 
-      * **definieren**: Das Quellvorkommen kann gelöscht werden, wenn es nicht mehr durch ein Zielvorkommen referenziert wird.
-      * **normal**: Beim Löschen des Vorkommens der Quelle werden die Schlüssel der Relation zum Vorkommen der Zielgruppe initialisiert (Standardmodus). Dieser Integritätstyp initialisiert alle Fremdschlüssel
-      * **own**: Das Löschen des Vorkommens der Quelle führt zum Löschen des Vorkommens der Zielgruppe
-      * **owncopy**: entspricht **own** (im Falle einer Löschung) oder dupliziert die Vorkommnisse (im Fall einer Duplizierung).
+      * **define**: Es ist möglich, die Quellinstanz zu löschen, wenn diese nicht mehr durch eine Zielinstanz referenziert wird.
+      * **normal**: Durch Löschen der Quellinstanz werden die Schlüssel der Verknüpfung mit der Zielinstanz initialisiert (Standardmodus). Bei diesem Integritätstyp werden alle Fremdschlüssel initialisiert.
+      * **own**: Durch Löschen der Quellinstanz wird auch die Zielinstanz gelöscht
+      * **owncopy**: Führt dieselbe Operation aus wie **own** (im Falle des Löschens) oder dupliziert die Instanzen (im Falle der Duplizierung).
       * **neutral**: kein spezifisches Verhalten
 
-   * **revIntegrity** (optional): Integrität des Zielschemas (optional, standardmäßig &quot;normal&quot;)
-   * **revCardinality** (optional): mit dem Wert &quot;single&quot;wird die Kardinalität mit dem Typ 1-1 ausgefüllt (standardmäßig 1-N)
+   * **revIntegrity** (optional): Integrität im Zielschema (optional, Standardwert ist „normal“)
+   * **revCardinality** (optional): Mit dem Wert „single“ wird die Kardinalität mit dem Typ 1:1 ausgefüllt (standardmäßig 1:n).
    * **externalJoin** (optional): Erzwingt den äußeren Join.
    * **revExternalJoin** (optional): Erzwingt den äußeren Join am Umkehr-Link.
 
 * Eine Relation referenziert ein oder mehrere Felder aus der Quelltabelle mit der Zieltabelle. Die Felder, aus denen sich der Join zusammensetzt (`<join>`-Element), müssen nicht ausgefüllt werden, da sie standardmäßig aus dem internen Schlüssel des Zielschemas abgeleitet werden.
-* Im erweiterten Schema wird dem Fremdschlüssel der Relation automatisch ein Index hinzugefügt.
+* Im erweiterten Schema wird dem Fremdschlüssel der Verknüpfung automatisch ein Index hinzugefügt.
 * Eine Relation setzt sich aus zwei Halb-Relationen zusammen, wobei die erste über das Quellschema deklariert und die zweite automatisch im erweiterten Schema des Zielschemas erstellt wird.
 * Ein Join kann ein äußerer Join sein, wenn das Attribut **externalJoin** mit dem Wert &quot;true&quot; hinzugefügt wird (unterstützt in PostgreSQL).
 
 >[!NOTE]
 >
->Standardmäßig sind Links die Elemente, die am Ende des Schemas deklariert werden.
+>Standardmäßig sind Verknüpfungen die am Ende des Schemas deklarierten Elemente.
 
-## Beispiel: Reverse-Link {#example-1}
+## Beispiel: Umkehrverknüpfung {#example-1}
 
-Im folgenden Beispiel deklarieren wir eine 1:N-Relation zur Schematabelle &quot;cus:company&quot;:
+Im folgenden Beispiel deklarieren wir eine 1:n-Verknüpfung mit der Schematabelle „cus:company“:
 
 ```sql
 <srcSchema name="recipient" namespace="cus">
@@ -92,7 +91,7 @@ Im folgenden Beispiel deklarieren wir eine 1:N-Relation zur Schematabelle &quot;
 </srcSchema>
 ```
 
-Generiertes Schema:
+Das generierte Schema:
 
 ```sql
 <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
@@ -142,9 +141,9 @@ Ein Umkehrlink zur Tabelle &quot;cus:recipient&quot; wurde mit folgenden Paramet
 * **unbound**: Relation wird als Sammlungselement für eine 1-N-Kardinalität deklariert (standardmäßig)
 * **integrity**: Standardwert ist &quot;define&quot; (kann mit dem Attribut &quot;revIntegrity&quot; in der Definition der Relation im Quellschema erzwungen werden)
 
-## Beispiel: einfacher Link {#example-2}
+## Beispiel: einfache Verknüpfung {#example-2}
 
-In diesem Beispiel deklarieren wir einen Link zur Schematabelle &quot;nms:address&quot;. Der Join ist ein äußere Join und wird explizit mit der E-Mail-Adresse des Empfängers und dem Feld &quot;@address&quot;der verknüpften Tabelle (&quot;nms:address&quot;) ausgefüllt.
+In diesem Beispiel wird eine Verknüpfung mit der Schematabelle „nms:address“ deklariert. Der Join ist ein externer Join und wird explizit mit der E-Mail-Adresse des Empfängers oder der Empfängerin und dem Feld „@address“ der verknüpften Tabelle („nms:address“) ausgefüllt.
 
 ```sql
 <srcSchema name="recipient" namespace="cus">
@@ -159,15 +158,15 @@ In diesem Beispiel deklarieren wir einen Link zur Schematabelle &quot;nms:addres
 
 ## Beispiel: eindeutige Kardinalität {#example-3}
 
-In diesem Beispiel erstellen wir eine 1:1-Relation zur Schematabelle &quot;cus:extension&quot;:
+In diesem Beispiel erstellen wir eine 1:1-Verknüpfung mit der Schematabelle „cus:extension“:
 
 ```sql
 <element integrity="own" label="Extension" name="extension" revCardinality="single" revLink="recipient" target="cus:extension" type="link"/>
 ```
 
-## Beispiel: Link zu einem Ordner {#example-4}
+## Beispiel: Verknüpfung mit einem Ordner {#example-4}
 
-In diesem Beispiel deklarieren wir einen Link zu einem Ordner ( Schema &quot;xtk:folder&quot;):
+In diesem Beispiel deklarieren wir eine Verknüpfung mit einem Ordner (Schema „xtk:folder“):
 
 ```sql
 <element default="DefaultFolder('nmsFolder')" label="Folder" name="folder" revDesc="Recipients in the folder" revIntegrity="own" revLabel="Recipients" target="xtk:folder" type="link"/>
@@ -175,9 +174,9 @@ In diesem Beispiel deklarieren wir einen Link zu einem Ordner ( Schema &quot;xtk
 
 Der Standardwert gibt die Kennung der ersten qualifizierten Parametertypdatei zurück, die in der Funktion &quot;DefaultFolder(&#39;nmsFolder&#39;)&quot; eingegeben wurde.
 
-## Beispiel: Erstellen eines Schlüssels für einen Link {#example-5}
+## Beispiel: Erstellen eines Schlüssels für eine Verknüpfung {#example-5}
 
-In diesem Beispiel erstellen wir einen Schlüssel für einen Link (&quot;company&quot; zu &quot;cus:company&quot;-Schema) mit dem **xlink** und ein Feld der Tabelle (&quot;email&quot;):
+In diesem Beispiel erstellen wir einen Schlüssel für eine Verknüpfung (zwischen Schema „company“ und Schema „cus:company“) mit dem Attribut **xlink** und einem Feld der Tabelle „email“:
 
 ```sql
 <srcSchema name="recipient" namespace="cus">
@@ -193,7 +192,7 @@ In diesem Beispiel erstellen wir einen Schlüssel für einen Link (&quot;company
 </srcSchema>
 ```
 
-Generiertes Schema:
+Das generierte Schema:
 
 ```sql
 <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">  
@@ -221,7 +220,7 @@ Generiertes Schema:
 </schema>
 ```
 
-Die Definition des Namensschlüssels &quot;companyEmail&quot;wurde um den Fremdschlüssel der &quot;company&quot;-Relation erweitert. Dieser Schlüssel generiert einen eindeutigen Index für beide Felder.
+Die Definition des Namensschlüssels „companyEmail“ wurde um den Fremdschlüssel der Verknüpfung „company“ erweitert. Dieser Schlüssel generiert einen eindeutigen Index für beide Felder.
 
 ## Weitere Informationen
 

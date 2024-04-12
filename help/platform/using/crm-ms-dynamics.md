@@ -3,11 +3,10 @@ product: campaign
 title: Campaign – Microsoft Dynamics CRM-Connector
 description: Erfahren Sie, wie Sie Campaign und Microsoft Dynamics verbinden
 feature: Microsoft CRM Integration
-badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '1136'
+source-wordcount: '1129'
 ht-degree: 100%
 
 ---

@@ -2,13 +2,12 @@
 product: campaign
 title: Erstellen eines Workflows
 description: Erfahren Sie, wie Sie einen Workflow erstellen
-badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Workflows
 exl-id: 8ba20ccd-b03f-4c4f-87c1-a21e80d8e4be
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '1686'
-ht-degree: 92%
+source-wordcount: '1679'
+ht-degree: 94%
 
 ---
 
@@ -150,7 +149,7 @@ In den folgenden Abschnitten finden Sie Details zum Erstellen eines Zielgruppen-
 1. **Vorbereiten** der Daten auf die Versandanforderungen – Siehe [Anreichern und Ändern von Daten](targeting-data.md#enriching-and-modifying-data)
 1. **Verwenden** von Daten zur Durchführung von Aktualisierungen oder innerhalb eines Versands – Siehe [Aktualisieren der Datenbank](how-to-use-workflow-data.md#updating-the-database)
 
-Die Ergebnisse der Anreicherungen werden gespeichert und können über Personalisierungsfelder beispielsweise zur Gestaltung individueller Nachrichten verwendet werden. Weitere Informationen hierzu finden Sie unter [Zielgruppendaten](data-life-cycle.md#target-data)
+Die Ergebnisse aller Anreicherungen und aller Behandlungen, die während der Zielgruppenbestimmung durchgeführt werden, werden gespeichert und können über Personalisierungsfelder beispielsweise zur Gestaltung individueller Nachrichten verwendet werden. Weitere Informationen hierzu finden Sie unter [Zielgruppendaten](data-life-cycle.md#target-data)
 
 ### Zielgruppen- und Filterdimensionen {#targeting-and-filtering-dimensions}
 
@@ -160,9 +159,9 @@ Angenommen, Sie möchten alle Kunden auswählen, die seit mehr als fünf Jahren 
 
 Nach Auswahl einer Zielgruppendimension stehen nur die Filterdimensionen zur Verfügung, die mit der gewählten Zielgruppendimension kompatibel sind.
 
-Diese beiden Dimensionen müssen miteinander verknüpft sein. So wird der Inhalt der **[!UICONTROL Filterdimension]** Die Liste hängt von der im ersten Feld angegebenen Zielgruppendimension ab.
+Diese beiden Dimensionen müssen miteinander verknüpft sein. Der Inhalt der Liste **[!UICONTROL Filterdimension]** hängt somit von der im ersten Feld angegebenen Zielgruppendimension ab.
 
-Bei Auswahl der Empfänger (**recipent**) im Feld Zielgruppendimension stehen folgende Filterdimensionen zur Verfügung:
+Bei Auswahl der Empfängerinnen und Empfänger (**Empfänger**) stehen folgende Filterdimensionen zur Verfügung:
 
 ![](assets/query_filter_target_dimensions_1.png)
 

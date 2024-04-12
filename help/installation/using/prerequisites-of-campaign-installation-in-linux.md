@@ -1,37 +1,36 @@
 ---
 product: campaign
-title: Voraussetzungen für die Installation von Kampagne unter Linux
+title: Voraussetzungen für die Installation von Campaign unter Linux
 description: Voraussetzungen für die Installation von Campaign unter Linux
 feature: Installation, Instance Settings
-badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 badge-v7-prem: label="On-Premise und Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: acbd2873-7b1c-4d81-bc62-cb1246c330af
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 3%
+source-wordcount: '916'
+ht-degree: 2%
 
 ---
 
-# Voraussetzungen für die Installation von Kampagne unter Linux{#prerequisites-of-campaign-installation-in-linux}
+# Voraussetzungen für die Installation von Campaign unter Linux{#prerequisites-of-campaign-installation-in-linux}
 
 
 
-## Software-Voraussetzungen {#software-prerequisites}
+## Softwarevoraussetzungen {#software-prerequisites}
 
-In diesem Abschnitt werden die vorläufigen Konfigurationsschritte beschrieben, die vor der Installation Adobe Campaign erforderlich sind.
+In diesem Abschnitt werden die Vorkonfigurationsschritte beschrieben, die vor der Installation von Adobe Campaign erforderlich sind.
 
 Die für die Installation von Adobe Campaign erforderlichen technischen und Softwarekonfigurationen werden im Abschnitt [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md).
 
 Zur Erinnerung: Die folgenden Komponenten müssen installiert und korrekt konfiguriert werden:
 
-* Apache, siehe [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md),
+* Apache, siehe [Kompatibilität Matrix](../../rn/using/compatibility-matrix.md),
 * Java JDK und OpenJDK, siehe [Java Development Kit - JDK](../../installation/using/application-server.md#java-development-kit---jdk),
 * Bibliotheken, siehe [Bibliotheken](#libraries),
-* Datenbankzugriffsschichten, siehe [Datenbankzugriffsebenen](#database-access-layers),
+* Datenbankzugriffsschichten, siehe [Datenbankzugriffsschichten](#database-access-layers),
 * LibreOffice, siehe [Installieren von LibreOffice für Debian](#installing-libreoffice-for-debian) und [Installieren von LibreOffice für CentOS](#installing-libreoffice-for-centos),
 * Schriftarten, siehe [Schriftarten für MTA-Statistiken](#fonts-for-mta-statistics) und [Schriftarten für japanische Instanzen](#fonts-for-japanese-instances).
 
@@ -53,15 +52,15 @@ Um Adobe Campaign unter Linux zu installieren, stellen Sie bitte sicher, dass Si
 
   Für RHEL 7/8-Distributionen ist Version 1.0 von OpenSSL erforderlich.
 
-* Um Adobe Campaign verwenden zu können, muss die **libicu** Bibliothek installiert sein.
+* Für die Verwendung von Adobe Campaign benötigen Sie die **libicu** Bibliothek installiert.
 
-  Die folgenden Versionen von **libicu** werden unterstützt (32bit oder 64bit):
+  Die folgenden Versionen von **libicu** werden unterstützt (32 Bit oder 64 Bit):
 
    * RHEL 7/8, CentOS 7: libicu50
    * Debian 8: libicu52
    * Debian 9: libicu57
 
-  Um Adobe Campaign verwenden zu können, muss die libc-ares-Bibliothek installiert sein. Führen Sie unter RHEL/CentOS den folgenden Befehl aus:
+  Um Adobe Campaign zu verwenden, müssen Sie die Bibliothek libc-ares installiert haben. Führen Sie unter RHEL/CentOS den folgenden Befehl aus:
 
   ```
   yum install c-ares
@@ -73,9 +72,9 @@ Um Adobe Campaign unter Linux zu installieren, stellen Sie bitte sicher, dass Si
   aptitude install libc-ares2
   ```
 
-### SELinux {#selinux}
+### Selinux {#selinux}
 
-Bei Verwendung muss das SELinux-Modul ordnungsgemäß konfiguriert sein.
+Bei der Verwendung muss das SELinux-Modul ordnungsgemäß konfiguriert sein.
 
 Melden Sie sich dazu als Root an und geben Sie den folgenden Befehl ein:
 
@@ -105,7 +104,7 @@ SELINUX=disabled
 
 Damit die Berichte zu MTA-Statistiken (nms/fra/jsp/stat.jsp) bestellen korrekt angezeigt werden, müssen Sie Schriftarten hinzufügen.
 
-Fügen Sie in Debian den Befehl hinzu:
+Fügen Sie in Debian den folgenden Befehl hinzu:
 
 ```
 aptitude install xfonts-base xfonts-75dpi ttf-bitstream-vera ttf-dejavu
@@ -125,7 +124,7 @@ Verwenden Sie in Redhat den folgenden Befehl:
   dnf install xorg-x11-fonts-misc xorg-x11-fonts-75dpi dejavu-lgc-sans-fonts  dejavu-sans-fonts dejavu-sans-mono-fonts dejavu-serif-fonts
   ```
 
-### Schriftarten für Japanisch Instanzen {#fonts-for-japanese-instances}
+### Schriftarten für japanische Instanzen {#fonts-for-japanese-instances}
 
 Spezifische Schriften sind für die japanischen Instanzen erforderlich, um die Berichte in das PDF-Format zu exportieren.
 
@@ -135,7 +134,7 @@ Fügen Sie in Debian den Befehl hinzu:
 aptitude install fonts-ipafont
 ```
 
-Fügen Sie in Red Hat den Befehl hinzu:
+Fügen Sie in Red Hat den folgenden Befehl hinzu:
 
 * Für RHEL 7:
 
@@ -173,7 +172,7 @@ Die folgenden Konfigurationen sind für CentOS notwendig:
 yum install libreoffice-headless libreoffice-writer libreoffice-calc
 ```
 
-## Datenbankzugriffsebenen {#database-access-layers}
+## Zugriffsschichten auf Datenbanken {#database-access-layers}
 
 Die Zugriffsebenen für die verwendete Datenbank-Engine müssen auf Ihrem Server installiert sein und über das Adobe Campaign-Konto zugänglich sein. Versionen und Installationsmodi variieren je nach verwendeter Datenbank-Engine.
 
@@ -183,15 +182,15 @@ Die unterstützte Pilotversion wird in [Kompatibilitätsmatrix](../../rn/using/c
 
 ### PostgreSQL {#postgresql}
 
-Adobe Campaign unterstützt alle Versionen der PostgreSQL-Client-Bibliotheken ab Version 7.2: (libpq.so.5 **,** libpq.so.4 **,** libpq.so.3.2 **und** libpq.so.3.1 ****).
+Adobe Campaign unterstützt alle Versionen der PostgreSQL-Client-Bibliotheken ab Version 7.2: (**libpq.so.5**, **libpq.so.4**, **libpq.so.3.2** und **libpq.so.3.1**).
 
-Die Verwendung von PostgreSQL mit Adobe Campaign erfordert auch die Installation des entsprechenden **pgcrypto-Bibliotheken** .
+Für die Verwendung von PostgreSQL mit Adobe Campaign ist auch die Installation der entsprechenden **pgcrypto** -Bibliotheken.
 
 ### Oracle {#oracle}
 
-Rufen Sie die Bibliothek Version für 64-Bit-Debian ab, d.h.: **libclntsh.so**, **libclntsh.so.11.1** und **libclntsh.so.10.1**.
+Rufen Sie die Bibliotheksversion für 64-Bit Debian ab, d. h.: **libclntsh.so**, **libclntsh.so.11.1** und **libclntsh.so.10.1**.
 
-Sie können ein Linux-RPM-Paket vom Oracle Technology Network erhalten.
+Sie können ein Linux RPM-Paket vom Oracle Technology Network erhalten.
 
 >[!NOTE]
 >
@@ -199,11 +198,11 @@ Sie können ein Linux-RPM-Paket vom Oracle Technology Network erhalten.
 
 **Fehlerbehebung und Best Practices**
 
-Probleme können nach einem Oracle-Client oder einer Serveraktualisierung, einer Versionsänderung oder der ersten Installation der Instanz auftreten.
+Probleme können nach einem Oracle-Client- oder Server-Update, einem Versionswechsel oder bei der ersten Installation der Instanz auftreten.
 
-Wenn Sie in der Clientkonsole feststellen, dass unerwartete Zeitverzögerungen (eine oder mehrere Stunden) in den Protokollen, der letzten Verarbeitung des Workflows, der nächsten Verarbeitung usw. auftreten, kann es zu einem Problem zwischen der Bibliothek des Oracle-Clients und dem Oracle-Server kommen. Um solche Probleme zu vermeiden
+Wenn Sie in der Clientkonsole feststellen, dass es unerwartete Zeitverzögerungen (eine oder mehrere Stunden) in den Protokollen, arbeitsablauf letzten Verarbeitung, der nächsten Verarbeitung usw. gibt, besteht möglicherweise ein Herausforderung zwischen der Bibliothek des Oracle-Clients und der Oracle-Server. Um solche Probleme zu vermeiden,
 
-1. Stellen Sie sicher, dass die **Vollständiger Client**.
+1. Stellen Sie sicher, dass Sie den **vollständigen Client** verwenden.
 
    Bei der Verwendung der Oracle Instant Client-Version wurden verschiedene Probleme identifiziert. Darüber hinaus ist es unmöglich, die Zeitzonen-Datei auf dem Instant Client zu ändern.
 
@@ -211,9 +210,9 @@ Wenn Sie in der Clientkonsole feststellen, dass unerwartete Zeitverzögerungen (
 
    Es ist bekannt, dass das Mischen von Versionen trotz der Kompatibilitätsmatrix von Oracle und der Empfehlung zur Ausrichtung von Client- und Serverversionen Probleme verursacht.
 
-   Überprüfen Sie auch den Wert ORACLE_HOME , um sicherzustellen, dass er auf die erwartete Clientversion verweist (falls mehrere Versionen auf dem Computer installiert sind).
+   Überprüfen Sie auch ORACLE_HOME Wert, um sicherzustellen, dass er auf die erwartete Clientversion verweist (falls mehrere Versionen auf dem Computer installiert sind).
 
-1. Stellen Sie sicher, dass Client und Server dasselbe verwenden **timezone file**.
+1. Stellen Sie sicher, dass Client und Server dieselbe **Zeitzonendatei** verwenden.
 
 ### DB2 {#db2}
 
@@ -225,7 +224,7 @@ Adobe Campaign-Installationen für Linux müssen in der folgenden Reihenfolge du
 
 Der Installationsprozess wird in diesem Kapitel beschrieben. Die Installationsschritte lauten wie folgt:
 
-* Schritt 1: Installieren des Applikation Servers, siehe [Installieren von Paketen unter Linux](../../installation/using/installing-packages-with-linux.md).
-* Schritt 2: Integration mit einem Webserver (optional, abhängig von den bereitgestellten Komponenten)
+* Schritt 1: Installieren des Anwendungsservers, siehe [Installieren von Paketen mit Linux](../../installation/using/installing-packages-with-linux.md).
+* Schritt 2: Integration mit einem Webserver (optional, je nach bereitgestellter Komponente).
 
-Nach Abschluss der Installationsschritte müssen Sie die Instanzen, die Datenbank und den Server konfigurieren. Weitere Informationen finden Sie unter [Über die Erstkonfiguration](../../installation/using/about-initial-configuration.md).
+Nach Abschluss der Installationsschritte müssen Sie die Instanzen, die Datenbank und den Server konfigurieren. Weitere Informationen hierzu finden Sie unter [Über die Erstkonfiguration](../../installation/using/about-initial-configuration.md).

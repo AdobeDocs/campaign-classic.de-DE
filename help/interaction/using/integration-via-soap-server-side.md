@@ -3,14 +3,13 @@ product: campaign
 title: Integration mittels SOAP (Server-seitig)
 description: Integration mittels SOAP (Server-seitig)
 feature: Interaction, Offers
-badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 exl-id: 3eaef689-44fa-41b3-ade8-9fe447e165ec
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '317'
 ht-degree: 88%
 
 ---

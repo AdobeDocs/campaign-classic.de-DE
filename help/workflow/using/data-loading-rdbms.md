@@ -2,13 +2,12 @@
 product: campaign
 title: Laden (DBMS)
 description: Erfahren Sie mehr über die Workflow-Aktivität "Laden (DBMS)".
-badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Workflows, Data Management Activity
 exl-id: 6e24d5fe-4830-49b4-a0fe-624c5644c920
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '210'
-ht-degree: 66%
+source-wordcount: '203'
+ht-degree: 100%
 
 ---
 
@@ -26,7 +25,7 @@ Gehen Sie wie folgt vor:
 
    ![](assets/s_advuser_wf_sgbd_sample_1.png)
 
-   Der Name der Tabelle, die in das entsprechende Feld eingegeben wurde, dient als Vorlage für die Datenerfassung in der externen Datenbank. Der Name der vom Workflow verarbeiteten Tabelle kann durch die eingehende Transition der Aktivität zum Laden der Daten berechnet oder übermittelt werden. Klicken Sie auf die Schaltfläche **[!UICONTROL Erweitert..]**. und wählen Sie die Option **[!UICONTROL Wird durch die Transition angegeben]** oder **[!UICONTROL Explizit]**.
+   Der im zugehörigen Feld eingetragene Name der Tabelle dient als Vorlage zum Abruf der Daten in der externen Datenbank. Der Name der Tabelle, die vom Workflow verarbeitet wird, kann berechnet oder von der eingehenden Transition der Datenladeaktivität übermittelt werden. Um die zu verwendende Tabelle auszuwählen, klicken Sie auf den Link **[!UICONTROL Erweitert…]**. und wählen Sie die Option **[!UICONTROL Wird durch die Transition angegeben]** oder **[!UICONTROL Explizit]**.
 
    ![](assets/s_advuser_wf_sgbd_sample_5.png)
 
@@ -34,6 +33,6 @@ Gehen Sie wie folgt vor:
 
    ![](assets/s_advuser_wf_sgbd_sample_2.png)
 
-1. Sie können einen Filter für diese Daten definieren. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Abfrage bearbeiten...]** -Link.
+1. Sie können einen Filter für diese Daten definieren. Klicken Sie dazu auf den Link **[!UICONTROL Abfrage bearbeiten…]**.
 
-   Derart abgerufene Daten sind im weiteren Verlauf des Workflows verwendbar.
+   Die derart abgerufenen Daten sind im weiteren Verlauf des Workflows verwendbar.

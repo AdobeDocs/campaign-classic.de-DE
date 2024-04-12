@@ -2,13 +2,12 @@
 product: campaign
 title: Zielgruppendaten
 description: Weitere Informationen zu Zielgruppendaten in einem Workflow.
-badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Query Editor, Data Management, Workflows
 exl-id: 74b82019-bdab-4442-84cf-5ad18d0db788
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '2033'
-ht-degree: 81%
+source-wordcount: '2026'
+ht-degree: 98%
 
 ---
 
@@ -34,7 +33,7 @@ Nach Hinzufügung der zusätzlichen Daten können Sie diese bearbeiten oder zur 
 
 ![](assets/wf_add_data_edit_link.png)
 
-Um Daten zu den zuvor definierten Ausgabespalten hinzuzufügen, wählen Sie sie in der Liste der verfügbaren Felder aus. Um eine neue Ausgabespalte zu erstellen, klicken Sie auf das **[!UICONTROL Hinzufügen]** Symbol, wählen Sie das Feld aus und klicken Sie auf **[!UICONTROL Ausdruck bearbeiten]**.
+Um Daten zu den zuvor definierten Ausgabespalten hinzuzufügen, wählen Sie sie in der Liste der verfügbaren Felder aus. Um eine neue Ausgabespalte zu erstellen, klicken Sie auf das Symbol **[!UICONTROL Hinzufügen]**, wählen Sie das Feld aus und klicken Sie auf **[!UICONTROL Ausdruck bearbeiten]**.
 
 ![](assets/query_add_an_output_column.png)
 
@@ -48,13 +47,13 @@ Kreuzen Sie den gewünschten Formeltyp an, beispielsweise Aggregat.
 
 Die Unterelemente erscheinen als Unterordner der Sammlung, der sie angehören.
 
-Sammlungen werden im **[!UICONTROL Sammlungen]** Unterregisterkarte. Sie können die erfassten Elemente filtern, indem Sie auf die **[!UICONTROL Detail]** Symbol der ausgewählten Sammlung. Im Filterassistenten können Sie die abgerufenen Daten auswählen und die auf die Daten der Kollektion anzuwendenden Filterbedingungen festlegen.
+Sammlungen werden in der Unterregisterkarte **[!UICONTROL Sammlungen]** angezeigt. Sie können die gesammelten Elemente filtern, indem Sie auf das Symbol **[!UICONTROL Detail]** der ausgewählten Sammlung klicken. Mit dem Filterassistenten können Sie die gesammelten Daten auswählen und die auf die Daten in der Sammlung anzuwendenden Filterbedingungen festlegen.
 
 ![](assets/query_add_columns_collection.png)
 
 ### Einschränken der Zielgruppe mithilfe zusätzlicher Daten {#refining-the-target-using-additional-data}
 
-Die abgerufenen Zusatzdaten können die Filterung der Daten in der Datenbank verfeinern. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Verfeinern Sie die Zielgruppe mithilfe zusätzlicher Daten...]** -Link: ermöglicht die Überfilterung der hinzugefügten Daten.
+Mit den gesammelten zusätzlichen Daten können Sie die Datenfilterung in der Datenbank verfeinern. Klicken Sie dazu auf den Link **[!UICONTROL Zielgruppe mithilfe zusätzlicher Daten einschränken…]**: Dies ermöglicht die Überfilterung der hinzugefügten Daten.
 
 ![](assets/wf_add_data_use_additional_data.png)
 
@@ -72,9 +71,9 @@ In den Aktivitäten **[!UICONTROL Vereinigung]**, **[!UICONTROL Schnittmenge]** 
 
 ### Erstellen von Teilmengen {#creating-subsets}
 
-Über die **[!UICONTROL Aufspaltungsaktivität]** lassen sich gemäß bestimmten Kriterien entsprechende Teilmengen erstellen. Aktivieren Sie hierfür in der Teilmenge die Option zur Erstellung von Filterbedingungen und definieren Sie im sich öffnenden Abfragefenster die Kriterien zur Zielgruppensegmentierung.
+Über die **[!UICONTROL Aufspaltungsaktivität]** lassen sich gemäß bestimmten Kriterien entsprechende Teilmengen erstellen. Aktivieren Sie hierfür in jeder Teilmenge die Option zur Erstellung von Filterbedingungen für die Population und definieren Sie im sich öffnenden Abfragefenster die Kriterien zur Zielgruppensegmentierung.
 
-Sie können eine Zielgruppe in mehrere Teilmengen unterteilen, indem Sie als Filterbedingungen oder zusätzlich zu den Zielgruppendaten nur Zusatzdaten verwenden. Wenn Sie die **Federated Data Access** -Option.
+Sie können eine Zielgruppe in mehrere Teilmengen unterteilen, indem Sie als Filterbedingungen nur zusätzliche Daten oder aber diese zusätzlich zu den Zielgruppendaten verwenden. Sie können auch externe Daten nutzen, wenn Sie die Option **Federated Data Access** besitzen.
 
 Weitere Informationen hierzu finden Sie unter [Teilmengen mithilfe der Aufspaltungs-Aktivität erstellen](#creating-subsets-using-the-split-activity).
 
@@ -130,9 +129,9 @@ Die Schnittmengenaktivität wird im Abschnitt [Schnittmenge](intersection.md) de
 
 ### Ausschließen von Populationen (Ausschluss) {#excluding-a-population--exclusion-}
 
-Über die Ausschlussaktivität lassen sich Elemente aus einer Population ausschließen, die auch in mindestens einer anderen Population enthalten sind. Die Zielgruppendimension am Aktivitätsausgang entspricht der der Hauptmenge.
+Über die Ausschlussaktivität lassen sich Elemente aus einer Zielgruppe ausschließen, die auch in mindestens einer anderen Zielgruppenpopulation enthalten sind. Die Zielgruppendimension am Aktivitätsausgang entspricht der der Hauptmenge.
 
-Bei Bedarf können die eingehenden Tabellen angepasst werden. Um eine Zielgruppe aus einer anderen Dimension auszuschließen, muss diese Zielgruppe auf dieselbe Zielgruppendimension wie die Hauptzielgruppe zurückgesetzt werden. Klicken Sie dazu auf **[!UICONTROL Hinzufügen]** und geben Sie die Bedingungen für die Dimensionsänderung an.
+Bei Bedarf können eingehende Tabellen angepasst werden. Um eine Zielgruppe aus einer anderen Dimension auszuschließen, muss diese Zielgruppe zur selben Zielgruppendimension wie die Hauptzielgruppe zurückgeführt werden. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Hinzufügen]** und geben Sie die Bedingungen der Dimensionsänderung an.
 
 Die Abstimmung der Daten kann über die Kennungen, eine Achsenänderung oder einen Join erfolgen. Ein Beispiel finden Sie unter [Verwendung von Daten aus einer Liste: Liste lesen](../../platform/using/import-export-workflows.md#using-data-from-a-list--read-list).
 
@@ -164,7 +163,7 @@ Zur Konfiguration wählen Sie zunächst die Bedingungen aus:
 
    Sie können der Teilmenge außerdem einen Segment-Code zuweisen, welcher ihre Identifizierung und ihre Verwendung als Zielgruppe ermöglicht.
 
-   Bei Bedarf können die Zielgruppen- und Filterdimensionen für jede zu erstellende Teilmenge einzeln angepasst werden. Bearbeiten Sie dazu die Filterbedingung der Teilmenge und aktivieren Sie die Option **[!UICONTROL Verwenden einer bestimmten Filterdimension]** -Option.
+   Bei Bedarf können die Zielgruppenbestimmungs- und Filterungsdimensionen für jede Teilmenge, die Sie erstellen wollen, einzeln angepasst werden. Bearbeiten Sie dazu die Filterbedingung der Teilmenge und aktivieren Sie die Option **[!UICONTROL Spezifische Filterdimension verwenden]**.
 
    ![](assets/split-subset-config-specific-filtering.png)
 
@@ -192,7 +191,7 @@ Danach müssen neue Teilmengen hinzugefügt werden:
 
    ![](assets/wf_split_edit_filtering.png)
 
-1. Bei Bedarf können Sie die Filterdimension für jede Teilmenge einzeln ändern. Auf diese Weise können Sie einen Satz für alle Inhaber von Gold-Karten erstellen, einen für alle Empfänger, die im neuesten Newsletter geklickt haben, und einen dritten für Personen zwischen 18 und 25 Jahren, die innerhalb der letzten 30 Tage einen In-Store-Kauf getätigt haben, die alle dieselbe Aufspaltungsaktivität verwenden. Wählen Sie dazu die **[!UICONTROL Verwenden einer bestimmten Filterdimension]** und wählen Sie den Kontext der Datenfilterung aus.
+1. Bei Bedarf kann die Filterdimension für jede Teilmenge individuell angepasst werden. Auf diese Weise können Sie etwa mithilfe derselben Aktivität „Aufspaltung“ eine Teilmenge für alle Kundinnen und Kunden mit einer Gold-Karte aufbauen, eine zweite für alle Empfängerinnen und Empfänger, die auf den letzten Newsletter geklickt haben, und eine dritte für Kundinnen und Kunden zwischen 18 und 25 Jahren, die in den letzten 30 Tagen einen Kauf in einem Ihrer Geschäfte getätigt haben. Wählen Sie dazu die Option **[!UICONTROL Spezifische Filterdimension verwenden]** und wählen Sie den Kontext der Datenfilterung aus.
 
    ![](assets/wf_split_change_dimension.png)
 
@@ -200,11 +199,11 @@ Danach müssen neue Teilmengen hinzugefügt werden:
    >
    >Wenn Sie die **Federated Data Access** -Option können Sie Teilmengen erstellen, die auf Informationen in einer externen Basis basieren. Wählen Sie dazu das Schema der externen Tabelle im **[!UICONTROL Zielgruppendimension]** -Feld. Weitere Informationen hierzu finden Sie unter [Zugriff auf externe Datenbanken (FDA)](accessing-an-external-database-fda.md).
 
-Standardmäßig erzeugt die Aufspaltungsaktivität für jede Teilmenge eine ausgehende Transition:
+Nach der Erstellung von Teilmengen zeigt die Aufspaltungsaktivität standardmäßig so viele ausgehende Transitionen an, wie Teilmengen vorhanden sind:
 
 ![](assets/wf_split_multi_outputs.png)
 
-Sie können alle Teilmengen in einer ausgehenden Transition gruppieren. In diesem Fall ist der Link zu den entsprechenden Teilmengen beispielsweise im Segmentcode sichtbar. Wählen Sie dazu die **[!UICONTROL Alle Teilmengen in derselben Tabelle generieren]** -Option.
+Sie können alle Teilmengen in einer einzelnen ausgehenden Transition gruppieren. In diesem Fall ist die Verknüpfung mit den entsprechenden Teilmengen beispielsweise im Segment-Code sichtbar. Wählen Sie dazu die Option **[!UICONTROL Alle Teilmengen in derselben Tabelle erzeugen]**.
 
 ![](assets/wf_split_select_option_single_output.png)
 

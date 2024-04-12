@@ -3,13 +3,12 @@ product: campaign
 title: Installieren von nativen Campaign Classic-Packages
 description: Erfahren Sie, wie Sie native Campaign-Pakete installieren.
 feature: Installation, Application Settings
-badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 badge-v7-prem: label="On-Premise und Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 59156851156338c9462781d31ce81a651362f2da
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '1306'
-ht-degree: 12%
+source-wordcount: '1299'
+ht-degree: 11%
 
 ---
 

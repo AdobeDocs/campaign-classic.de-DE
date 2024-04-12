@@ -3,13 +3,12 @@ product: campaign
 title: Synchronisieren von Web-Programmen
 description: Erfahren Sie, wie Sie Web-Programme mit dem ACS-Connector synchronisieren
 feature: ACS Connector
-badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 hide: true
 hidefromtoc: true
 exl-id: 975bdc94-5da4-45ae-a3bd-e8674b447098
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '859'
 ht-degree: 78%
 
 ---

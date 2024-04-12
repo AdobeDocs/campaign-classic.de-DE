@@ -3,12 +3,11 @@ product: campaign
 title: Zugriff auf Microsoft SQL Server konfigurieren
 description: Informationen zum Konfigurieren des Zugriffs auf Microsoft SQL Server
 feature: Installation, Federated Data Access
-badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 exl-id: 65ab4577-3126-4579-8fcc-e93772ebd1e8
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '514'
-ht-degree: 9%
+source-wordcount: '507'
+ht-degree: 8%
 
 ---
 

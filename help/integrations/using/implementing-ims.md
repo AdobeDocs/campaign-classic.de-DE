@@ -3,15 +3,14 @@ product: campaign
 title: Implementieren von IMS
 description: Implementieren von IMS
 feature: Configuration
-badge-v7: label="v7" type="Informative" tooltip="Gilt für Campaign Classic v7"
 badge-v7-prem: label="On-Premise und Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
 audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 58552d6e-fbed-4944-85c4-9c14bf60d823
-source-git-commit: 49271e291953483ee14709b26ec053217a336718
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '83'
+source-wordcount: '77'
 ht-degree: 100%
 
 ---

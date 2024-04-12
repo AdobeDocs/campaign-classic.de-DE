@@ -3,17 +3,16 @@ product: campaign
 title: Anpassen der Konfiguration
 description: Erfahren Sie, wie Sie Ihre Konfiguration vor und nach einer Migration zu Campaign v7 anpassen.
 feature: Upgrade
-badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 audience: migration
 content-type: reference
 topic-tags: migration-procedure
 hide: true
 hidefromtoc: true
 exl-id: ad71dead-c0ca-42d5-baa8-0f340979231a
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '477'
-ht-degree: 6%
+source-wordcount: '470'
+ht-degree: 4%
 
 ---
 

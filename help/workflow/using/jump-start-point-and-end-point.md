@@ -2,17 +2,16 @@
 product: campaign
 title: Sprung (Start und Ziel)
 description: Sprung (Start und Ziel)
-badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Workflows
 exl-id: 0d2d04e7-cb86-4456-b7cf-513c71210355
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '124'
+source-wordcount: '117'
 ht-degree: 100%
 
 ---
 
-# Sprung (Start und Ende){#jump-start-point-and-end-point}
+# Sprung (Start und Ziel){#jump-start-point-and-end-point}
 
 
 

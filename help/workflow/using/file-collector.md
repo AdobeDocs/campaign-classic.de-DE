@@ -2,13 +2,12 @@
 product: campaign
 title: Datei-Wächter
 description: Erfahren Sie mehr über die Workflow-Aktivität "Datei-Wächter".
-badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Workflows, Data Management
 exl-id: bbec389e-c2ba-4b23-847f-b01dca6b8d5a
-source-git-commit: 1f87a5fba1298955fa07b9a045b21718c76a7fce
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '572'
-ht-degree: 91%
+source-wordcount: '565'
+ht-degree: 90%
 
 ---
 

@@ -2,14 +2,13 @@
 product: campaign
 title: Beschreibung des Adobe Campaign Classic-Datenmodells
 description: Dieses Dokument beschreibt das Adobe Campaign-Datenmodell
-badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Data Model
 role: Data Engineer, Developer
 exl-id: fc0fd23c-f9ea-4e30-b47b-a84143d882ca
-source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '2411'
-ht-degree: 3%
+source-wordcount: '2404'
+ht-degree: 2%
 
 ---
 

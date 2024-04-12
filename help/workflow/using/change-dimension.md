@@ -2,17 +2,16 @@
 product: campaign
 title: Dimensionsänderung
 description: Dimensionsänderung
-badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Workflows, Targeting Activity
 exl-id: c3de99f8-089f-4c7c-be11-f375a9463eaa
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '397'
 ht-degree: 100%
 
 ---
 
-# Ändern der Dimension{#change-dimension}
+# Dimensionsänderung{#change-dimension}
 
 
 

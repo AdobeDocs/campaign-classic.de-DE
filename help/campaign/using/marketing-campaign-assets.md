@@ -3,13 +3,12 @@ product: campaign
 title: Dokumente und Versandentwürfe für Marketing-Kampagnen
 description: Weitere Informationen zu Dokumenten und Versandentwürfen für Marketing-Kampagnen
 role: User
-badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Campaigns
 exl-id: 891252b0-4700-4a2a-a632-63aad5ce75d7
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '791'
-ht-degree: 93%
+source-wordcount: '784'
+ht-degree: 100%
 
 ---
 
@@ -87,12 +86,12 @@ Klicken Sie anschließend auf **[!UICONTROL Versandentwurf hinzufügen]**. Es wi
 
 Ein Versandentwurf kann Artikel, Personalisierungsfelder, Ressourcen und Angebote enthalten:
 
-* Artikel sind beispielsweise physische Dokumente, die an dieser Stelle referenziert und beschrieben und schließlich dem Versand angehängt werden.
-* Mit Personalisierungsfeldern können Sie Personalisierungselemente erstellen, die sich auf Sendungen und nicht auf Empfänger beziehen. Auf diese Weise können Werte erstellt werden, die in Sendungen mit einer bestimmten Zielgruppe verwendet werden (Willkommensangebot, Rabatt usw.) Sie werden in Adobe Campaign erstellt und über das **[!UICONTROL Personalisierungsfelder importieren..]** -Link.
+* Artikel sind beispielsweise physische Dokumente, die an dieser Stelle referenziert und beschrieben und dem Versand angehängt werden.
+* Mit Personalisierungsfeldern können Sie Personalisierungselemente erstellen, die sich auf Sendungen statt auf Empfängerinnen oder Empfänger beziehen. Auf diese Weise können Werte erstellt werden, die in Sendungen mit einer bestimmten Zielgruppe verwendet werden sollen (Willkommensangebot, Rabatt usw.) Sie werden in Adobe Campaign erstellt und über den Link **[!UICONTROL Personalisierungsfelder importieren…]** in den Entwurf importiert.
 
   ![](assets/s_ncs_user_op_add_composition_field.png)
 
-  Über das Symbol **[!UICONTROL Hinzufügen]** rechts vom Bereich der Liste können dem Entwurf auch direkt Personalisierungselemente hinzugefügt werden.
+  Über das Symbol **[!UICONTROL Hinzufügen]** rechts vom Bereich der Liste können in dem Entwurf auch direkt Personalisierungselemente erstellt werden.
 
   ![](assets/s_ncs_user_op_add_composition_field_button.png)
 

@@ -2,13 +2,12 @@
 product: campaign
 title: Laden (Datei)
 description: Erfahren Sie mehr über die Workflow-Aktivität "Laden (Datei)".
-badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Workflows, Data Management Activity
 exl-id: a380e486-a40c-4bf6-b7f4-7dcd76c34085
-source-git-commit: 229844437770c460d958724e2dc15941e35939a6
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '1256'
-ht-degree: 81%
+source-wordcount: '1249'
+ht-degree: 90%
 
 ---
 
@@ -30,7 +29,7 @@ Im oberen Bereich des Fensters zur Konfiguration dieser Aktivität wird das Date
 
 ## Vorab-Bearbeitungsetappe anwenden {#pre-processing}
 
-Sie können eine Vorab-Bearbeitung definieren, die beim Dateiimport ausgeführt werden soll, um beispielsweise die Datei nicht auf dem Server entpacken zu müssen (und damit Speicherplatz für die entpackte Datei zu sparen), sondern die Dateiverarbeitung mit der Dekomprimierung zu beauftragen. [Erfahren Sie, wie Sie eine Datei vor der Verarbeitung dekomprimieren oder entschlüsseln](../../platform/using/unzip-decrypt.md).
+Es besteht die Möglichkeit, eine Vorab-Bearbeitung zu definieren, die während des Dateiimports ausgeführt werden soll. Hierbei kann es sich z. B. darum handeln, dass die Datei nicht auf dem Server, sondern im Zuge der Dateiverarbeitung entpackt wird (was Speicherplatz für die entpackte Datei spart). [Erfahren Sie, wie Sie eine Datei vor der Verarbeitung dekomprimieren oder entschlüsseln](../../platform/using/unzip-decrypt.md).
 
 Wählen Sie dazu die **[!UICONTROL Vorab-Bearbeitung der Datei]** und wählen Sie eine der drei Optionen: **[!UICONTROL Keines]**, **[!UICONTROL Dekomprimierung]** (zcat) oder **[!UICONTROL Entschlüsseln]** (g).
 
@@ -75,7 +74,7 @@ Verschiedene Optionen zum Umgang mit den Spaltenwerten stehen zur Auswahl:
    * **[!UICONTROL Großbuchstaben]**: Alle Buchstaben des Strings werden großgeschrieben.
    * **[!UICONTROL Kleinbuchstaben]**: Alle Buchstaben des Strings werden kleingeschrieben.
 
-* **[!UICONTROL Verwaltung von Leerraum]**: Gibt an, ob bestimmte Leerzeichen in einer Zeichenfolge ignoriert werden müssen. Die **[!UICONTROL Leerzeichen ignorieren]** -Wert erlaubt nur, Leerzeichen am Anfang und am Ende einer Zeichenfolge zu ignorieren.
+* **[!UICONTROL Umgang mit Leerzeichen]**: Angabe, ob gewisse Leerzeichen einem String ignoriert werden sollen. Der Wert **[!UICONTROL Leerzeichen ignorieren]** erlaubt es nur, Leerzeichen am Anfang und am Ende eines Strings zu ignorieren.
 * **[!UICONTROL Umgang mit Fehlern]**: Definition des Verhaltens beim Auftritt von Fehlern.
 
    * **[!UICONTROL Wert ignorieren]**: Der Wert wird ignoriert. Im Ausführungsprotokoll des Workflows wird ein Hinweis erzeugt.
@@ -136,6 +135,6 @@ Im vorliegenden Beispiel wird täglich eine Datei vom Server abgerufen, ihr Inha
 
    ![](assets/s_advuser_load_file_sample_6.png)
 
-1. Definieren Sie dann die Prozesse für jeden Populationstyp. In unserem Beispiel werden wir **[!UICONTROL Daten aktualisieren]** in der Datenbank. Platzieren Sie dazu eine **[!UICONTROL Daten aktualisieren]** -Aktivität am Ende jeder ausgehenden Transition aus der Aufspaltungsaktivität.
+1. Definieren Sie dann die auszuführenden Prozesse für jeden Populationstyp. In unserem Beispiel werden wir in der Datenbank die **[!UICONTROL Daten aktualisieren]**. Platzieren Sie dazu die Aktivität **[!UICONTROL Daten-Update]** am Ende jeder ausgehenden Transition der Aktivität „Aufspaltung“.
 
    Die Aktivität **[!UICONTROL Daten-Update]** wird im Abschnitt [Daten-Update](update-data.md) genauer beschrieben.

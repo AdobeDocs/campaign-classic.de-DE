@@ -3,12 +3,11 @@ product: campaign
 title: Erste Schritte mit Federated Data Access
 description: Erfahren Sie, wie Sie Daten in einer externen Datenbank aufrufen und verarbeiten können
 feature: Installation, Federated Data Access
-badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 exl-id: 9d8d1e9c-63e4-40c4-8338-b921d08ea405
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '170'
-ht-degree: 49%
+source-wordcount: '163'
+ht-degree: 47%
 
 ---
 

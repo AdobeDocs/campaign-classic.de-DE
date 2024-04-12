@@ -2,17 +2,16 @@
 product: campaign
 title: Scripts/JavaScript-Templates
 description: Scripts/JavaScript-Templates
-badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Workflows
 exl-id: 4a3647d1-cf8c-4867-871e-472287be7c6a
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '1275'
+source-wordcount: '1268'
 ht-degree: 91%
 
 ---
 
-# JavaScript-Scripte und -Vorlagen{#javascript-scripts-and-templates}
+# Scripts/JavaScript-Templates{#javascript-scripts-and-templates}
 
 
 

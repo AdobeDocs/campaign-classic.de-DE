@@ -3,15 +3,14 @@ product: campaign
 title: Kosten kontrollieren
 description: Erfahren Sie, wie Sie Kosten kontrollieren können
 feature: Resource Management
-badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: 6765e307-915a-44d2-a486-85c64e8ec52e
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '2566'
-ht-degree: 89%
+source-wordcount: '2559'
+ht-degree: 99%
 
 ---
 
@@ -89,7 +88,7 @@ In Kampagnen können je nach Verbindlichkeitsniveau Kosten für eine zukünftige
 
 >[!CAUTION]
 >
->Bei der Erstellung einer Kampagne wird der Fortschritt in **[!UICONTROL Budget]** muss auf **[!UICONTROL Definiert]** für die bei der Ausführung zu berücksichtigenden Kosten. Wenn der Status **[!UICONTROL In Bearbeitung]** werden die Kosten nicht konsolidiert.
+>Bei der Erstellung einer Kampagne muss der Fortschrittsstatus im **[!UICONTROL Budget]** auf **[!UICONTROL Angegeben]** eingestellt sein, damit die Kosten bei der Ausführung berücksichtigt werden. Wenn der Status **[!UICONTROL In Bearbeitung]** ist, werden die Kosten nicht konsolidiert.
 >   
 >Die Option **[!UICONTROL Verbindlichkeitsniveau]** stellt eine Schätzung der zukünftigen Kosten dar, bevor diese dem Budget angerechnet werden. Entsprechend dem Fortschritt einer Kampagne, einer Aufgabe oder eines Versands kann mithilfe der Dropdown-Liste ein höheres oder niedrigeres Niveau zugewiesen werden (1. Geplant, 2. Reserviert, 3. Eingesetzt).
 
@@ -122,7 +121,7 @@ Wenn eine Ausgabe in Rechnung gestellt und diese Rechnung beglichen wird, wird d
 
 ### Ausgabenkategorien {#expense-categories}
 
-Die Beträge können in verschiedene Ausgabenkategorien verteilt werden, um eine bessere Lesbarkeit der Daten und eine detailliertere Berichterstattung über Marketinginvestitionen zu erreichen. Die Ausgabenkategorien werden bei der Budgeterstellung über die Variable **[!UICONTROL Budgets]** Knoten des Baums.
+Die Beträge können in verschiedene Ausgabenkategorien verteilt werden, um eine bessere Lesbarkeit der Daten und eine detailliertere Berichterstattung über Marketing-Investitionen zu erreichen. Die Ausgabenkategorien werden bei der Budgeterstellung über den Knoten **[!UICONTROL Budgets]** des Baums definiert.
 
 Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]** im unteren Abschnitt des Fensters, um eine Kategorie hinzuzufügen.
 
@@ -132,7 +131,7 @@ Sie können eine der existierenden Kategorien auswählen oder eine neue definier
 
 ### Zuordnung von Budgets untereinander {#linking-a-budget-to-another}
 
-Sie können ein Budget mit einem Hauptbudget verknüpfen. Wählen Sie dazu das Hauptbudget im **[!UICONTROL verwandtes Budget]** -Feld der sekundären Budgets.
+Sie können ein Budget mit einem Hauptbudget verknüpfen. Wählen Sie dazu das Hauptbudget im Feld **[!UICONTROL Übergeordnetes Budget]** der sekundären Budgets aus.
 
 ![](assets/budget_link.png)
 
@@ -158,7 +157,7 @@ Damit enthält jede Ausgabenzeile folgende Informationen:
 * die entsprechende Rechnungszeile (ausschließlich in MRM);
 * die Liste der berechneten Kosten je Kostenkategorie (wenn eine Kostenstruktur existiert).
 
-Im obigen Beispiel enthält die bearbeitete Ausgabenzeile die für die **Neue Karten** -Versand für **Loyalty Spring Pack** Kampagne. Bei der Bearbeitung des Versands wird die **[!UICONTROL Briefpost]** -Tab zeigt an, wie die Ausgabenzeile berechnet wird.
+Im obigen Beispiel enthält die bearbeitete Ausgabenzeile die berechneten Kosten für den Versand **Neue Karten** für die Kampagne **Loyalty Spring Pack**. Bei der Bearbeitung des Versands zeigt die Registerkarte **[!UICONTROL Briefpost]** an, wie die Ausgabenzeile berechnet wird.
 
 Als Grundlage der Kostenberechnung für diesen Versand dienen die für den betroffenen Dienstleister ausgewählten Kostenkategorien.
 
@@ -182,9 +181,9 @@ Kosten werden in drei Kategorien eingeteilt:
 
 1. Plankosten
 
-   Die Plankosten entsprechen einer Schätzung der Kosten für die Kampagnenprozesse. Solange sie bearbeitet wird, werden die erfassten Beträge nicht konsolidiert. Sie muss **[!UICONTROL Angegeben]** Status für die in den Berechnungen zu berücksichtigenden Beträge.
+   Die Plankosten entsprechen einer Schätzung der Kosten für die Kampagnenprozesse. Solange sie bearbeitet werden, werden die eingegebenen Beträge nicht konsolidiert. Der Status **[!UICONTROL Angegeben]** ist hier nötig, damit die eingegebenen Beträge in den Berechnungen berücksichtigt werden.
 
-   Dieser Betrag wird manuell eingegeben und kann in mehrere Ausgabenkategorien unterteilt werden. Klicken Sie auf die Schaltfläche **[!UICONTROL Verteilung..]** und dann die **[!UICONTROL Hinzufügen]** -Schaltfläche, um einen neuen Betrag zu definieren.
+   Dieser Betrag wird manuell eingegeben und kann in mehrere Ausgabenkategorien unterteilt werden. Klicken Sie zum Aufschlüssen von Kosten auf den Link **[!UICONTROL Aufschlüsselung…]** und dann auf die Schaltfläche **[!UICONTROL Hinzufügen]**, um einen neuen Betrag zu definieren.
 
    ![](assets/s_user_edit_budget_tab_ventil.png)
 
@@ -363,7 +362,7 @@ Rechnungen werden im Knoten **[!UICONTROL MRM > Rechnungen]** des Adobe-Campaign
 
 ![](assets/s_user_cost_create_invoice.png)
 
-Eine Rechnung besteht aus Rechnungszeilen, deren Summe die automatische Berechnung des Betrags ermöglicht. Diese Zeilen werden manuell über die **[!UICONTROL Rechnungszeilen]** Registerkarte. Sie können einer Bestellung zugeordnet werden, um die Informationen auf die Bestellungen hochzuladen.
+Eine Rechnung besteht aus Rechnungszeilen, deren Summe die automatische Berechnung des Betrags ermöglicht. Diese Zeilen werden manuell über die Registerkarte **[!UICONTROL Rechnungszeilen]** erstellt. Sie können einer Bestellung zugeordnet werden, um die Informationen in die Bestellungen hochzuladen.
 
 ![](assets/s_user_cost_invoice_add_line.png)
 

@@ -1,17 +1,16 @@
 ---
 product: campaign
 title: Erstellen von Angebotsplatzierungen
-description: Erstellen von Angebotsplatzierungen
+description: Angebotsplatzierungen
 feature: Interaction, Offers
-badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: bdda98f7-a083-4f3b-b691-c28ec79af780
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '1044'
-ht-degree: 88%
+source-wordcount: '1037'
+ht-degree: 87%
 
 ---
 

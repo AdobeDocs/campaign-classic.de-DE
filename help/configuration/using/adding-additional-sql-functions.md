@@ -4,12 +4,11 @@ title: Hinzufügen zusätzlicher SQL-Funktionen
 description: Erfahren Sie, wie Sie zusätzliche SQL-Funktionen definieren
 feature: Configuration, Instance Settings
 role: Data Engineer, Developer
-badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 exl-id: 04b0a0e5-d6df-447c-ac67-66adb1bdf717
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '1044'
-ht-degree: 1%
+source-wordcount: '1037'
+ht-degree: 0%
 
 ---
 

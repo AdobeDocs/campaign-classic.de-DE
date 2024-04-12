@@ -2,13 +2,12 @@
 product: campaign
 title: Unter-Workflow
 description: Erfahren Sie mehr über die Unter-Workflow-Aktivität.
-badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Workflows
 exl-id: bc64ca11-2c50-4896-b6c6-ae42c0315924
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '448'
-ht-degree: 95%
+source-wordcount: '441'
+ht-degree: 100%
 
 ---
 
@@ -42,7 +41,7 @@ Im folgenden Beispiel ruft ein primärer Workflow einen Unter-Workflow mithilfe 
    ![](assets/subworkflow_selection.png)
 
 1. Es besteht auch die Möglichkeit, ein Konfigurationsscript hinzuzufügen, um die Funktionsweise des referenzierten Workflows anzupassen.
-1. Klicks **[!UICONTROL Ok]**. Es wird automatisch eine ausgehende Transition mit dem Titel der **[!UICONTROL Sprung (Startpunkt)]** -Aktivität aus dem ausgewählten Workflow aus.
+1. Klicken Sie auf **[!UICONTROL OK]**. Dadurch wird automatisch eine ausgehende Transition mit dem Titel der Aktivität **[!UICONTROL Sprung (Start)]** aus dem ausgewählten Workflow erstellt.
 
    ![](assets/subworkflow_outbound.png)
 

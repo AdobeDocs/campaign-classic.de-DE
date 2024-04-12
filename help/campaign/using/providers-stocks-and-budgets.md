@@ -3,13 +3,12 @@ product: campaign
 title: Dienstleister, Lager und Budgets
 description: Dienstleister, Lager und Budgets
 role: User
-badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Budget Management, Campaigns
 exl-id: c60c4f86-a957-4c44-a0fe-39b6e3f0e5d6
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '2017'
-ht-degree: 79%
+source-wordcount: '2010'
+ht-degree: 97%
 
 ---
 
@@ -70,7 +69,7 @@ Um eine Dienstleistungsvorlage zu erstellen und ihren Inhalt zu bestimmen, gehen
 
    ![](assets/s_ncs_user_supplier_node_create_template.png)
 
-1. Erstellen Sie die Kostenstellen für jeden Prozesstyp (Briefpost/E-Mail/etc. oder Aufgabe). Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Kostenstellen]** und dann die **[!UICONTROL Hinzufügen]** und geben Sie die Parameter jeder Kostenstelle an.
+1. Erstellen Sie die Kostenkategorien für jeden Prozesstyp (Versand durch Direkt-Mail/E-Mail/etc. oder Aufgabe). Klicken Sie dazu auf die Registerkarte **[!UICONTROL Kostenkategorien]** und dann auf die Schaltfläche **[!UICONTROL Hinzufügen]** und geben Sie die Parameter jeder Kostenkategorie an.
 
    ![](assets/s_ncs_user_supplier_node_03.png)
 
@@ -95,13 +94,13 @@ Um eine Dienstleistungsvorlage zu erstellen und ihren Inhalt zu bestimmen, gehen
 
 Eine Kostenstruktur gibt für jede Kostenkategorie die anzuwendenden Berechnungsregeln an.
 
-Klicken Sie auf **[!UICONTROL Kostenstruktur]** um die Kostenberechnung für jede Kostenstelle und jeden Kostentyp zu konfigurieren. Klicks **[!UICONTROL Hinzufügen]** und geben Sie die Kostenstruktur an.
+Klicken Sie auf die Registerkarte **[!UICONTROL Kostenstruktur]**, um die Kostenberechnung für jede Kostenkategorie und jeden Kostentyp zu konfigurieren. Klicken Sie auf **[!UICONTROL Hinzufügen]** und geben Sie die Kostenstruktur ein.
 
 ![](assets/s_ncs_user_supplier_node_04.png)
 
-* Um die Kostenstruktur zu erstellen, wählen Sie in den Dropdown-Listen den Nachrichtentyp, die betreffende Kostenstelle sowie den Kostentyp aus, auf den die Berechnungsregel angewendet werden soll. Der Inhalt dieser Dropdown-Listen stammt aus den Informationen, die über die **[!UICONTROL Kostenstellen]** Registerkarte.
+* Um die Kostenstruktur zu erstellen, wählen Sie in den Dropdown-Listen den Nachrichtentyp, die betreffende Kostenkategorie sowie den Kostentyp aus, auf den die Berechnungsregel angewendet werden soll. Der Inhalt dieser Dropdown-Listen stammt aus den Informationen, die über die Registerkarte **[!UICONTROL Kostenkategorien]** eingetragen wurden.
 
-  Sie müssen der Kostenstruktur einen Titel zuweisen. Standardmäßig hat sie den folgenden Versandentwurf: **Kostenstelle - Kostentyp**.
+  Sie müssen der Kostenstruktur einen Titel zuweisen. Standardmäßig hat sie den folgenden Versandentwurf: **Kostenkategorie – Kostentyp**.
 
   Dieser kann jedoch angepasst werden: Erfassen Sie den gewünschten Wert direkt im Feld **[!UICONTROL Titel]**.
 
@@ -133,7 +132,7 @@ Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]** rechts von der Li
 
 #### Konstante Struktur mit Schwellen {#constant-structure-by-threshold}
 
-Schließlich können Sie eine Kostenberechnung entsprechend der Gesamtzahl der Nachrichten konfigurieren. Wählen Sie dazu eine **[!UICONTROL Konstante durch Schwelle]** Berechnungsstruktur. Beispielsweise werden die Kosten für 1 bis 100 Nachrichten auf einen festen Betrag von 12,00 gesetzt, für 1 bis 100 Nachrichten auf 100,00 für einen Versand von 101 bis 1000 Nachrichten und 500,00 für einen Versand über 1000 Nachrichten, unabhängig von der Gesamtzahl.
+Schließlich können Sie eine Kostenberechnung entsprechend der Gesamtzahl der Nachrichten konfigurieren. Wählen Sie dazu die Berechnungsstruktur **[!UICONTROL Pauschal mit Schwellen]**. Beispielsweise werden die Kosten für 1 bis 100 Nachrichten auf einen festen Betrag von 12,00 gesetzt, für einen Versand von 101 bis 1000 Nachrichten auf 100,00 und für jeden Versand von über 1000 Nachrichten auf 500,00, unabhängig von der Gesamtzahl.
 
 ![](assets/s_ncs_user_supplier_cost_structure_calc_04.png)
 
@@ -145,11 +144,11 @@ Klicken Sie auf den Tab **[!UICONTROL Vorgänge]**, um die Übermittlung von Inf
 
 ![](assets/s_ncs_user_supplier_node_02.png)
 
-* Die **[!UICONTROL Dateiextraktion]** gibt die Exportvorlage an, die bei Auswahl dieses Dienstes für den Versand verwendet wird. Sie können den Namen der Ausgabedatei im **[!UICONTROL Extraktionsdatei]** -Feld. Die rechts vom Feld gelegene Schaltfläche ermöglicht das Einfügen von Variablen.
+* Der Abschnitt **[!UICONTROL Dateiextraktion]** gibt die Exportvorlage an, die bei Auswahl dieses Dienstes für den Versand verwendet wird. Sie können den Namen der Ausgabedatei im Feld **[!UICONTROL Extraktionsdatei]** angeben. Die rechts vom Feld gelegene Schaltfläche ermöglicht das Einfügen von Variablen.
 
   ![](assets/s_ncs_user_supplier_node_02a.png)
 
-* Im Abschnitt **[!UICONTROL Benachrichtigungs-E-Mail]** können Sie die Vorlage für die Benachrichtigung von Dienstanbietern nach dem Versand von Dateien angeben. Wählen Sie die Vorlage, mit der die Benachrichtigung erstellt werden soll, und die Gruppe der Empfänger.
+* Im Abschnitt **[!UICONTROL Benachrichtigungs-E-Mail]** können Sie die Vorlage für die Benachrichtigung von Dienstanbietern nach dem Versand von Dateien angeben. Wählen Sie die Vorlage, mit der die Warnmeldung erstellt werden soll, und die Gruppe der Empfängerinnen und Empfänger.
 
   Die Versandvorlagen der Benachrichtigungen werden standardmäßig im Knoten **[!UICONTROL Administration > Kampagnen > Vorlagen technischer Sendungen]** des Explorers gespeichert.
 
@@ -159,11 +158,11 @@ Klicken Sie auf den Tab **[!UICONTROL Vorgänge]**, um die Übermittlung von Inf
 
 Services werden über Sendungen oder Aufgaben mit Kampagnen verknüpft. Dienstleister werden mit Versandvorlagen verknüpft, um ihre Services in den über diese Vorlage erstellten Sendungen anzubieten.
 
-Wenn ein Service ausgewählt wird, werden die dem Versandtyp (Direkt-Mail, E-Mail usw.) entsprechenden Kostenkategorien automatisch in der zentralen Tabelle angegeben, ebenso wie die bereits definierten Vorgangsoptionen.
+Wenn ein Dienst ausgewählt wird, werden die dem Versandtyp (Briefpost, E-Mail usw.) entsprechenden Kostenkategorien automatisch in der zentralen Tabelle angegeben, ebenso wie die bereits definierten Verarbeitungsoptionen.
 
 >[!NOTE]
 >
->Wenn bei der Auswahl einer Dienstleistung keine Kostenstelle angezeigt wird, bedeutet dies, dass für diese Art von Prozess keine Kostenstelle definiert wurde. Beispiel: Bei einem E-Mail-Versand, falls nicht **[!UICONTROL Email]** Kostenstelle wurde definiert, es wird keine Kategorie angezeigt und die Auswahl des Dienstes hat keine Auswirkungen.
+>Wenn bei der Auswahl eines Dienstes keine Kostenkategorie angezeigt wird, bedeutet dies, dass für diese Art von Prozess keine Kostenkategorie definiert wurde. Beispiel: Falls bei einem E-Mail-Versand keine Kostenkategorie mit dem Typ **[!UICONTROL E-Mail]** definiert wurde, wird keine Kategorie angezeigt und die Auswahl des Dienstes hat keine Auswirkungen.
 
 * In Direkt-Mail-Sendungen können Sie den Service über das Konfigurationsfenster auswählen.
 
@@ -235,11 +234,11 @@ Klicken Sie auf die Schaltfläche **[!UICONTROL Erstellen]**, um die Parameter d
 
 ![](assets/s_ncs_user_stocks_new_line.png)
 
-* Geben Sie die Anfangsmenge des Lagerbestands im **[!UICONTROL Anfangsbestand]** -Feld. Die **[!UICONTROL Entnommen]** und **[!UICONTROL Auf Lager]** -Felder werden automatisch berechnet und mit dem Fortschritt der Kampagnen aktualisiert.
+* Geben Sie die Anfangsmenge des Lagerbestands im Feld **[!UICONTROL Anfangsbestand]** an. Die Felder **[!UICONTROL Entnommen]** und **[!UICONTROL Restbestand]** werden automatisch berechnet und entsprechend dem Fortschritt der Kampagnen aktualisiert.
 
   ![](assets/s_ncs_user_stocks_create_line.png)
 
-* Geben Sie im Feld **[!UICONTROL Meldebestand]** die Schwelle an, bei der die Benutzer von einer notwendigen Lagerergänzung benachrichtigt werden sollen. Mit Erreichen des Meldebestands wird im Validierungsfenster der Sendungen, die auf dieses Lager zugreifen, ein Warnhinweis angezeigt.
+* Geben Sie im Feld **[!UICONTROL Meldebestand]** den Schwellenwert an, bei dem die Benutzenden über eine notwendige Lagerergänzung benachrichtigt werden sollen. Beim Erreichen des Meldebestands wird im Validierungsfenster der Sendungen, die auf dieses Lager zugreifen, ein Warnhinweis angezeigt.
 
 #### Lagerpositionen zu Kostenkategorien zuordnen {#associating-a-stock-with-cost-categories}
 
@@ -271,7 +270,7 @@ Um eine neue Ergänzung zu speichern, öffnen Sie die entsprechende Lagerpositio
 
 ![](assets/s_ncs_user_stocks_node_08.png)
 
-Die **[!UICONTROL Verbrauch]** enthält das pro Kampagne verbrauchte Volumen. Die Informationen in diesem Tab werden entsprechend den durchgeführten Sendungen automatisch angegeben. Klicken Sie auf **[!UICONTROL Bearbeiten]** -Schaltfläche, um die betreffende Kampagne zu öffnen.
+Die Registerkarte **[!UICONTROL Entnahmen]** enthält das pro Kampagne entnommene Volumen. Die Informationen in dieser Registerkarte werden entsprechend den durchgeführten Sendungen automatisch angegeben. Klicken Sie auf die Schaltfläche **[!UICONTROL Bearbeiten]**, um die betroffene Kampagne zu öffnen.
 
 ![](assets/s_ncs_user_stocks_edit_from_board_consumed.png)
 

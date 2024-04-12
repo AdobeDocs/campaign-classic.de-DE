@@ -2,12 +2,11 @@
 product: campaign
 title: E-Mail-Anreicherung mit benutzerdefinierten Datumsfeldern
 description: Erfahren Sie, wie Sie E-Mails mit benutzerdefinierten Datumsfeldern anreichern.
-badge-v7-only: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Workflows
 exl-id: 85e0ec2a-b7cb-4d0b-a281-9ad72594403a
-source-git-commit: 8debcd3d8fb883b3316cf75187a86bebf15a1d31
+source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '631'
 ht-degree: 82%
 
 ---
@@ -81,7 +80,7 @@ Konfigurieren Sie anschließend die Aktivität **[!UICONTROL Anreicherung]**:
 
    ![](assets/uc_enrichment_12.png)
 
-1. Klicks **[!UICONTROL Ok]**. Ihre Anreicherung ist jetzt fertig.
+1. Klicken Sie auf **[!UICONTROL OK]**. Ihre Anreicherung ist jetzt fertig.
 
 Nach der Aktivität **[!UICONTROL Anreicherung]** können Sie einen Versand hinzufügen. In unserem Fall haben wir einen E-Mail-Versand hinzugefügt, mit dem Empfänger, die im aktuellen Monat Geburtstag feiern, ein spezielles Angebot mit Gültigkeitsdaten erhalten.
 
