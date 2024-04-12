@@ -3,14 +3,14 @@ product: campaign
 title: Voraussetzungen für die Installation von Campaign unter Linux
 description: Voraussetzungen für die Installation von Campaign unter Linux
 feature: Installation, Instance Settings
-badge-v7-prem: label="On-Premise und Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
+badge-v7-prem: label="Nur On-Premise/Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: acbd2873-7b1c-4d81-bc62-cb1246c330af
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '917'
 ht-degree: 2%
 
 ---
@@ -202,7 +202,7 @@ Probleme können nach einem Oracle-Client- oder Server-Update, einem Versionswec
 
 Wenn Sie in der Clientkonsole feststellen, dass es unerwartete Zeitverzögerungen (eine oder mehrere Stunden) in den Protokollen, arbeitsablauf letzten Verarbeitung, der nächsten Verarbeitung usw. gibt, besteht möglicherweise ein Herausforderung zwischen der Bibliothek des Oracle-Clients und der Oracle-Server. Um solche Probleme zu vermeiden,
 
-1. Stellen Sie sicher, dass Sie den **vollständigen Client** verwenden.
+1. Stellen Sie sicher, dass die **Vollständiger Client**.
 
    Bei der Verwendung der Oracle Instant Client-Version wurden verschiedene Probleme identifiziert. Darüber hinaus ist es unmöglich, die Zeitzonen-Datei auf dem Instant Client zu ändern.
 
