@@ -4,10 +4,10 @@ title: HTTP-Übertragung
 description: Erfahren Sie mehr über die Workflow-Aktivität "HTTP-Übertragung".
 feature: Workflows
 exl-id: b6005eae-5fbc-4e22-ab3a-c9b7ed6506f6
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: a0c0c7d13704b0155004e578d6739852ceb43c81
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 82%
+source-wordcount: '538'
+ht-degree: 68%
 
 ---
 
@@ -58,6 +58,10 @@ Die **HTTP-Übertragung** lädt Dateien über eine explizite URL, ein externes K
 1. **Erweiterte Parameter**
 
    Der Link **[!UICONTROL Erweiterte Parameter...]** bietet Zugriff auf folgende Optionen:
+
+   * **[!UICONTROL Folgen Sie den Anweisungen]**: Mithilfe der Dateiumleitung können Sie Überschreibungen verwenden, um die Dateneingabe oder -ausgabe an ein Gerät eines anderen Typs zu leiten.
+   * **[!UICONTROL Hinzufügen der HTTP-Header zur Datei]**: In einigen Fällen können Sie einer Datei zusätzliche HTTP-Header hinzufügen. In den meisten Fällen werden diese Header verwendet, um zusätzliche Informationen zur Fehlerbehebung bereitzustellen, um [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/docs/Web/HTTP/CORS), oder um bestimmte Caching-Anweisungen festzulegen.
+   * **[!UICONTROL Den HTTP-Rückgabecode ignorieren]**: HTTP-Rückgabe-Codes, auch HTTP-Status-Codes genannt, geben das Ergebnis einer HTTP-Anfrage an.
 
    ![](assets/download_web_edit_advanced.png)
 
