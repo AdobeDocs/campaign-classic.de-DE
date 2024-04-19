@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3732'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Die entsprechenden Aktualisierungen finden Sie in den [Versionshinweisen zu Adob
 
 ### März 2024 {#mar-2024}
 
-Der Abschnitt zur Konfiguration mobiler Apps wurde für eine auf iOS-Token basierende Verbindung zu APNS aktualisiert. [Weitere Informationen](../../delivery/using/configuring-the-mobile-application.md#creating-ios-app)
+Der Abschnitt zur Mobile-App-Konfiguration wurde für Token-basierte iOS-Verbindungen mit APNs aktualisiert. [Weitere Informationen](../../delivery/using/configuring-the-mobile-application.md#creating-ios-app)
 
 ### Januar 2024 {#jan-2024}
 
