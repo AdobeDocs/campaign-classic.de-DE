@@ -5,7 +5,7 @@ description: Diese Beispiele zeigen, wie Sie JavaScript-Code in einem Workflow v
 feature: Workflows
 exl-id: 7213ea64-3dec-4b16-9d93-4ae941ddfaa7
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1702'
 ht-degree: 100%
 
