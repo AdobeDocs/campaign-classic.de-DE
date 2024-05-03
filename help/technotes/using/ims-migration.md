@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie technische Campaign-Benutzerinnen bzw. -Benut
 feature: Technote
 role: Admin
 exl-id: 1a409daf-57be-43c9-a3d9-b8ab54c88068
-source-git-commit: c63fea4d400440005ecf3733413c346bd4a2fd18
+source-git-commit: c8ff250c1e4013d4c8271a3a388ddbabcfaeea38
 workflow-type: tm+mt
 source-wordcount: '1748'
-ht-degree: 91%
+ht-degree: 90%
 
 ---
 
@@ -75,7 +75,7 @@ Diese Campaign-Versionen werden im Abschnitt [Versionshinweise](../../rn/using/l
 
 Integrationen werden im Rahmen eines **Projekts** in der Adobe Developer Console erstellt. Weitere Informationen zu Projekten sind in der [Dokumentation zur Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/projects/){target="_blank"} zu finden.
 
-Sie können jedes zuvor von Ihnen erstellte Projekt verwenden oder ein neues Projekt erstellen. Die Schritte zum Erstellen eines Projekts werden im Detail in der [Dokumentation zur Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started/) beschrieben{target="_blank"}. Nachfolgend finden Sie die wichtigsten Schritte.
+Sie können jedes zuvor von Ihnen erstellte Projekt verwenden oder ein neues Projekt erstellen. Die Schritte zum Erstellen eines Projekts werden im Detail in der [Dokumentation zur Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started/){target="_blank"} beschrieben. Nachfolgend finden Sie die wichtigsten Schritte.
 
 <!--
 For this migration, you must add below APIs in your project: **I/O Management API** and **Adobe Campaign**.
@@ -166,7 +166,7 @@ Um die Verbindung zu testen, führen Sie die Schritte aus, die im [Handbuch zu d
 
 ### Schritt 8: Aktualisieren der API-Integrationen von Drittanbieterfirmen {#ims-migration-step-8}
 
-Sie müssen jetzt die API-Integrationen aktualisieren, die Aufrufe an Adobe Campaign tätigen, um das neu erstellte technische Konto zu verwenden.
+Sie müssen jetzt alle API-Integrationen, die Aufrufe an Adobe Campaign tätigen, aktualisieren, um das neu erstellte technische Konto zu verwenden.
 
 Weitere Informationen zu den Schritten zur API-Integration finden Sie in den folgenden Codebeispielen.
 
