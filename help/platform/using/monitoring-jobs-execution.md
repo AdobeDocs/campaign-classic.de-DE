@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 415c5137-2eb0-4581-a46e-26e8e3d264fa
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '201'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -54,7 +54,7 @@ Jeder Status wird durch ein spezielles Symbol und eine spezielle Bezeichnung rep
 
 * **Ausgesetzt**
 
-  Klicks **[!UICONTROL Anhalten]**: Der Auftrag wird ausgesetzt. Er kann durch Klicken auf **[!UICONTROL Starten]**.
+  Klick auf die Schaltfläche **[!UICONTROL Pause]**:Der Vorgang ist ausgesetzt. Er kann durch Klicken auf **[!UICONTROL Starten]** neu gestartet werden.
 
 * **Abgeschlossen**
 

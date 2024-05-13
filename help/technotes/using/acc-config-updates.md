@@ -1,15 +1,15 @@
 ---
 product: campaign
-title: Technote - Aktualisierungen der Adobe Campaign-Konfiguration
+title: Technote – Adobe Campaign-Konfigurationsaktualisierungen
 description: Adobe Campaign-Konfigurationsaktualisierungen
 feature: Technote, Upgrade
 hide: true
 hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1103'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

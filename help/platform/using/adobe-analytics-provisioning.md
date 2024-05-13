@@ -2,15 +2,15 @@
 product: campaign
 title: Bereitstellung des Adobe Analytics-Connectors
 description: Erfahren Sie mehr über die Bereitstellung des Adobe Analytics-Connectors.
-badge-v7-prem: label="Nur On-Premise/Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für On-Premise- und Hybridbereitstellungen von v7"
+badge-v7-prem: label="Nur On-Premise/Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen für v7"
 feature: Analytics Integration
 role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '830'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -80,7 +80,7 @@ Weiterführende Informationen zu Produktprofilen finden Sie in der [Dokumentatio
 
 1. Fügen Sie für die Funktion **[!UICONTROL Dimensionen]** die für zukünftige Konfigurationen benötigten **[!UICONTROL Dimensionen]** hinzu.
 
-   Stellen Sie sicher, dass die ausgewählten Dimensionen mit den im externen Konto konfigurierten übereinstimmen und mit der entsprechenden eVars-Nummer aus Adobe Analytics übereinstimmen.
+   Stellen Sie sicher, dass die ausgewählten Dimensionen mit den unter dem externen Konto konfigurierten Dimensionen übereinstimmen, und stimmen Sie sie mit den entsprechenden Nummern der eVars aus Adobe Analytics ab.
 
 1. Fügen Sie für die Funktion **[!UICONTROL Report Suite-Tools]** die folgenden Berechtigungen hinzu:
 

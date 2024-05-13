@@ -7,9 +7,9 @@ feature: Deliverability
 role: User, Data Engineer
 exl-id: cc793d7b-0a26-4a75-97ed-d79c87d9b3b8
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '465'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -53,4 +53,4 @@ Bei mangelhafter Zustellbarkeit überprüfen Sie Folgendes:
 * **Die Zielgruppe des Versands**: Die Versand-Performance kann durch Softbounce-Fehler beeinträchtigt werden, die entsprechend der Konfiguration der Neuversuche gehandhabt werden. Je größer die Anzahl der Fehler ist, desto mehr Neuversuche sind nötig.
 * **Die Gesamtlast der Plattform**: Wenn mehrere große Sendungen ausgeführt werden, kann die gesamte Plattform beeinträchtigt sein. Sie können auch die IP-Reputation und Probleme mit der Zustellbarkeit überprüfen. Weitere Informationen finden Sie in [diesem Abschnitt](about-deliverability.md) und im [Adobe-Handbuch mit den Best Practices zur Zustellbarkeit](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=de).
 
-Die Wartung der Plattform und der Datenbank kann sich auch auf die Leistung beim Versand auswirken. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../production/using/database-performances.md).
+Auch die Wartung der Plattform und der Datenbank kann die Leistung beim Versand beeinträchtigen. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../production/using/database-performances.md).

@@ -6,9 +6,9 @@ feature: Push
 role: User, Developer
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '682'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -102,7 +102,7 @@ Im folgenden Beispiel werden **mediaURl** und **mediaExt** hinzugefügt, um Rich
 
 1. Wählen Sie im Feld **[!UICONTROL Anwendungssymbol]** ein vordefiniertes Symbol aus, um die Mobile App in Ihrem Dienst zu personalisieren.
 
-1. Wählen Sie die **[!UICONTROL Authentifizierungsmodus]**.
+1. Wählen Sie den **[!UICONTROL Authentifizierungsmodus]** aus.
 
    ![](assets/nmac_ios_5.png)
 
@@ -114,7 +114,7 @@ Im folgenden Beispiel werden **mediaURl** und **mediaExt** hinzugefügt, um Rich
 
    >[!NOTE]
    >
-   > Adobe empfiehlt, **[!UICONTROL Token-basierte Authentifizierung]** für Ihre iOS-Konfiguration verwenden, da P8-Authentifizierungsschlüssel neuer und sicherer sind.
+   > Adobe empfiehlt die Verwendung der **[!UICONTROL Token-basierten Authentifizierung]** für Ihre iOS-Konfiguration, da die P8-Authentifizierungsschlüssel neuer und sicherer sind.
 
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Verbindung testen]**, um Ihre Konfiguration zu validieren.
 

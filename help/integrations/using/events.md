@@ -8,9 +8,9 @@ audience: integrations
 content-type: reference
 exl-id: 13717b3b-d34a-40bc-9c9e-dcf578fc516e
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1212'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -219,7 +219,7 @@ Die Ereignisse können mit einem einfachen Formular, das auf dem Ereignisschema 
 
 >[!NOTE]
 >
->Der Knoten &quot;Pipeline Event&quot; ist nicht nativ und muss hinzugefügt werden. Außerdem muss in Campaign das zugehörige Formular erstellt werden. Diese Aufgaben sind erfahrenen Benutzern vorbehalten. Weitere Informationen hierzu finden Sie in den folgenden Abschnitten: [Navigationshierarchie](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy). und [Formulare bearbeiten](../../configuration/using/editing-forms.md).
+>Der Knoten &quot;Pipeline Event&quot; ist nicht nativ und muss hinzugefügt werden. Außerdem muss in Campaign das zugehörige Formular erstellt werden. Diese Aufgaben sind erfahrenen Benutzern vorbehalten. Lesen Sie diesbezüglich auch diese Abschnitte: [Navigationshierarchie](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy). und [Formulare bearbeiten](../../configuration/using/editing-forms.md).
 
 ![](assets/triggers_7.png)
 

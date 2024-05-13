@@ -5,9 +5,9 @@ description: Überwachen technischer Workflows
 feature: Workflows
 exl-id: 5e77d196-5c71-438e-8dae-10c6a6e4f29c
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '533'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ In diesem [Abschnitt](about-technical-workflows.md) erfahren Sie, was jeder tech
 
 **[!UICONTROL Datenbankbereinigungs-Workflow (‘cleanup’)]**:
 
-1. Stellen Sie sicher, dass die **[!UICONTROL Datenbankbereinigung]** Der Workflow wird täglich erfolgreich ausgeführt und abgeschlossen. Weitere Informationen hierzu finden Sie in diesem Abschnitt [page](../../production/using/database-cleanup-workflow.md).
+1. Vergewissern Sie sich, dass der **[!UICONTROL Datenbankbereinigungs-Workflow]** täglich ausgeführt und erfolgreich abgeschlossen wird. Weiterführende Informationen hierzu finden Sie auf [dieser Seite](../../production/using/database-cleanup-workflow.md).
 1. Vergewissern Sie sich anhand des Protokolls, dass die verstrichene Zeit langfristig relativ konstant bleibt und andere Workflows nicht beeinträchtigt.
 
 **[!UICONTROL Tracking-Workflow (‘tracking’)]**:

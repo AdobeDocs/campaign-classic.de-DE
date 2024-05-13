@@ -1,14 +1,14 @@
 ---
 product: campaign
 title: Filterregeln
-description: Erfahren Sie, wie Sie Filterregeln in Adobe Campaign verwenden.
+description: Informationen zur Verwendung von Filterregeln in Adobe Campaign
 role: User, Data Engineer
 feature: Typology Rules, Campaigns
 exl-id: a4d12445-5680-4704-9c67-e43e0ea6631b
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '531'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 

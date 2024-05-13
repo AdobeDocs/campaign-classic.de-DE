@@ -5,9 +5,9 @@ description: Erfahren Sie mehr über die Workflow-Aktivität "Externes Signal".
 feature: Workflows
 exl-id: da84d3ff-1e64-45ef-bef0-da4a24d93461
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '171'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Wenn eine Aufgabe „Externes Signal“ aktiviert wird, wird sie unbegrenzt oder
 
 Weiterführende Hinweise zu SOAP-Aufrufen und der PostEvent-Funktion finden Sie in der einschlägigen Online-Literatur.
 
-Sie können diese Aktivität konfigurieren, um Ereignisse zu definieren, wenn kein Signal empfangen wird. Bearbeiten Sie hierzu die Aktivität und klicken Sie auf die Schaltfläche **[!UICONTROL Ablauf]** Registerkarte. Klicken Sie auf **[!UICONTROL Einfügen]** -Schaltfläche, um ein Ereignis zu erstellen und zu konfigurieren.
+Sie können diese Aktivität so konfigurieren, dass Ereignisse definiert werden, wenn kein Signal empfangen wird. Bearbeiten Sie hierzu die Aktivität und klicken Sie auf die Registerkarte **[!UICONTROL Gültigkeit]**. Klicken Sie auf die Schaltfläche **[!UICONTROL Einfügen]**, um ein Ereignis zu erstellen und zu konfigurieren.
 
 ![](assets/edit_signal.png)
 

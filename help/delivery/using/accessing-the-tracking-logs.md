@@ -7,9 +7,9 @@ feature: Monitoring
 role: User
 exl-id: df494786-5950-4646-aa9c-4dde45845057
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '102'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -27,4 +27,4 @@ Sie stehen darüber hinaus im **[!UICONTROL Tracking]**-Tab des entsprechenden V
 
 >[!NOTE]
 >
->Wenn die Variable **[!UICONTROL Tracking]** -Tab eines Versands bedeutet dies, dass das Tracking nicht aktiviert wurde. Weitere Informationen finden Sie in [diesem Abschnitt](how-to-configure-tracked-links.md).
+>Wenn die Registerkarte **[!UICONTROL Tracking]** eines Versands nicht sichtbar ist, bedeutet dies, dass das Tracking nicht aktiviert wurde. Weitere Informationen finden Sie in [diesem Abschnitt](how-to-configure-tracked-links.md).

@@ -5,9 +5,9 @@ description: Erfahren Sie mehr über die Workflow-Aktivität "Laden (Datei)".
 feature: Workflows, Data Management Activity
 exl-id: a380e486-a40c-4bf6-b7f4-7dcd76c34085
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1249'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -27,17 +27,17 @@ Im oberen Bereich des Fensters zur Konfiguration dieser Aktivität wird das Date
 
 ![](assets/s_advuser_wf_etl_file.png)
 
-## Vorab-Bearbeitungsetappe anwenden {#pre-processing}
+## Anwenden der Vorab-Bearbeitungsetappe {#pre-processing}
 
 Es besteht die Möglichkeit, eine Vorab-Bearbeitung zu definieren, die während des Dateiimports ausgeführt werden soll. Hierbei kann es sich z. B. darum handeln, dass die Datei nicht auf dem Server, sondern im Zuge der Dateiverarbeitung entpackt wird (was Speicherplatz für die entpackte Datei spart). [Erfahren Sie, wie Sie eine Datei vor der Verarbeitung dekomprimieren oder entschlüsseln](../../platform/using/unzip-decrypt.md).
 
-Wählen Sie dazu die **[!UICONTROL Vorab-Bearbeitung der Datei]** und wählen Sie eine der drei Optionen: **[!UICONTROL Keines]**, **[!UICONTROL Dekomprimierung]** (zcat) oder **[!UICONTROL Entschlüsseln]** (g).
+Wählen Sie dazu die Option **[!UICONTROL Datei vorab bearbeiten]** aus und wählen Sie dann eine der drei Optionen aus: **[!UICONTROL Keine]**, **[!UICONTROL Dekomprimierung]** (zcat) oder **[!UICONTROL Entschlüsseln]** (gpg).
 
 ![](assets/preprocessing-dataloading.png)
 
 >[!CAUTION]
 >
->Wenn Sie mit einer hybriden oder On-Premise-Implementierung arbeiten, funktionieren Vorverarbeitungsbefehle möglicherweise nicht vorkonfiguriert, da ihre Standardkonfiguration &quot;zcat&quot;verwendet, was unter Windows nicht verfügbar ist. In diesem Fall müssen Sie die **preProcessCommand** Knoten in der Server-Konfigurationsdatei (serverConf.xml), um Ihre Anforderungen zu erfüllen. [Erfahren Sie, wie Sie Vorab-Bearbeitungsbefehle in der Serverkonfigurationsdatei konfigurieren](../../installation/using/the-server-configuration-file.md#preprocesscommand)
+>Wenn Sie mit einer hybriden oder On-Premise-Implementierung arbeiten, funktionieren Vorverarbeitungsbefehle möglicherweise nicht nativ, da ihre Standardkonfiguration den Befehl „zcat“ verwendet, der unter Windows nicht verfügbar ist. In diesem Fall müssen Sie den Knoten **preProcessCommand** in der Server-Konfigurationsdatei (serverConf.xml) anpassen, damit Ihre Anforderungen erfüllt werden können. [Erfahren Sie, wie Sie Vorab-Bearbeitungsbefehle in der Server-Konfigurationsdatei konfigurieren](../../installation/using/the-server-configuration-file.md#preprocesscommand)
 
 ## Datei formatieren {#defining-the-file-format}
 
@@ -119,7 +119,7 @@ Im vorliegenden Beispiel wird täglich eine Datei vom Server abgerufen, ihr Inha
    * Die erste Spalte enthält einen dem Ereignis entsprechenden Code: Kauf (Transaktionsbetrag kleiner oder größer als 3000 Euro), Kein Kauf oder Rückgabe eines oder mehrerer Artikel.
    * Die anderen Spalten enthalten jeweils die Vornamen, Nachnamen und E-Mail-Adressen der Kunden sowie die Kundennummern.
 
-   Die Formatkonfiguration der zu ladenden Datei entspricht der Definition während eines Datenimports in Adobe Campaign. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../platform/using/executing-import-jobs.md#step-2---source-file-selection).
+   Die Format-Konfiguration der zu ladenden Datei geschieht auf die gleiche Weise wie bei einem Datenimport in Adobe Campaign. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../platform/using/executing-import-jobs.md#step-2---source-file-selection).
 
 1. Positionieren Sie im Anschluss eine Aufspaltungsaktivität und geben Sie je nach Wert in der **Ereignis**-Spalte die zu erstellenden Teilmengen an.
 

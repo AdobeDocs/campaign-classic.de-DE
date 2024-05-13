@@ -7,9 +7,9 @@ feature: Monitoring, Email
 role: User
 exl-id: 43779505-9917-4e99-af25-b00a9d29a645
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '693'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -21,9 +21,9 @@ Dank der Tracking-Funktionen können Sie mit Adobe Campaign die versendeten Nach
 
 Diese Informationen werden auf der Registerkarte **[!UICONTROL Tracking]** des Profils jedes Versandempfängers abgerufen. Auf dieser Registerkarte werden alle verfolgten URL-Links angezeigt, auf die der in der Liste ausgewählte Empfänger geklickt hat. Dies ist die Akkumulation aller URLs, die in den Sendungen verfolgt werden, die noch im Versandbildschirm vorhanden sind. Die Liste kann konfiguriert werden und enthält normalerweise die angeklickte URL, das Datum und die Uhrzeit des Klicks sowie das Dokument, in dem die URL gefunden wurde. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../platform/using/editing-a-profile.md#tracking-tab).
 
-Die **Versand-Dashboard** ist auch wichtig, um Ihre Sendungen zu überwachen und eventuelle Probleme beim Nachrichtenversand zu erkennen. Weitere Informationen hierzu finden Sie unter [diesem Abschnitt](delivery-dashboard.md).
+Im **Versand-Dashboard** können Sie Sendungen überwachen und etwaige Probleme beim Nachrichtenversand erkennen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](delivery-dashboard.md).
 
-Das folgende Diagramm zeigt die Phasen des Dialogs zwischen dem Benutzer und den verschiedenen Servern.
+Das folgende Diagramm zeigt die Phasen des Dialogs zwischen Benutzenden und den verschiedenen Servern.
 
 ![](assets/tracking-diagram.png)
 

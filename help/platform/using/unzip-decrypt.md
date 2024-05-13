@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 1a79da3b-2abc-4bfc-a0ee-8471c478638d
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '724'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -86,15 +86,15 @@ Die Schritte zum Ausführen dieses Anwendungsfalls lauten wie folgt:
 
 1. Öffnen Sie die Aktivität **[!UICONTROL Laden (Datei)]** und konfigurieren Sie sie entsprechend Ihren Anforderungen. Globale Konzepte zur Konfiguration der Aktivität finden Sie in [diesem Abschnitt](../../workflow/using/data-loading-file.md).
 
-   Fügen Sie der Aktivität eine Vorab-Bearbeitungsetappe hinzu, um die eingehenden Daten zu entschlüsseln. Wählen Sie dazu die **[!UICONTROL Vorab-Bearbeitung der Datei]** und wählen Sie **[!UICONTROL Entschlüsseln]** aus dem **[!UICONTROL Befehl]** Dropdownliste:
+   Fügen Sie der Aktivität eine Vorab-Bearbeitungsetappe hinzu, um die eingehenden Daten zu entschlüsseln. Wählen Sie dazu aus der Dropdown-Liste **[!UICONTROL Befehl]** die Option **[!UICONTROL Datei vorab bearbeiten]** und dann **[!UICONTROL Entschlüsseln]** aus:
 
    ![](assets/gpg_load.png)
 
    >[!NOTE]
    >
-   >Wenn Änderungen an den verfügbaren Befehlen erforderlich sind, können Sie sich an [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) , um die Einstellungen von preProcessCommand anzupassen.
+   >Wenn Änderungen an den verfügbaren Befehlen erforderlich sind, können Sie sich an die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) wenden, um die preProcessCommand-Einstellungen anzupassen.
    >
-   >Wenn Sie mit einer Hybridbereitstellung arbeiten, können Sie diese Befehle direkt in der Serverkonfigurationsdatei (serverConf.xml) konfigurieren. [Erfahren Sie, wie Sie Vorab-Bearbeitungsbefehle in der Serverkonfigurationsdatei konfigurieren](../../installation/using/the-server-configuration-file.md#preprocesscommand)
+   >Wenn Sie mit einer Hybrid-Implementierung arbeiten, können Sie diese Befehle direkt in der Server-Konfigurationsdatei (serverConf.xml) konfigurieren. [Informationen dazu, wie Sie Vorverarbeitungsbefehle in der Server-Konfigurationsdatei konfigurieren](../../installation/using/the-server-configuration-file.md#preprocesscommand)
 
 1. Wählen Sie **[!UICONTROL OK]** aus, um die Konfiguration der Aktivität zu bestätigen.
 
