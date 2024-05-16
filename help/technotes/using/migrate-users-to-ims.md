@@ -2,10 +2,10 @@
 title: Migrieren von Campaign-Benutzenden zum Adobe Identity Management System (IMS)
 description: Erfahren Sie, wie Sie Campaign-Benutzende zum Adobe Identity Management System (IMS) migrieren
 exl-id: f01948c7-b523-492d-a4e8-67f4adde5fc5
-source-git-commit: 59156851156338c9462781d31ce81a651362f2da
+source-git-commit: c8cd1ef5e79e14c3ce804c32be0e995408d9358c
 workflow-type: tm+mt
-source-wordcount: '1278'
-ht-degree: 98%
+source-wordcount: '1279'
+ht-degree: 99%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 98%
 
 Im Rahmen der Bemühungen, die Sicherheit und den Authentifizierungsprozess zu verbessern, empfiehlt Adobe Campaign dringend, den Authentifizierungsmodus für Endbenutzende von der nativen Authentifizierung mit Login/Passwort auf das Adobe Identity Management System (IMS) zu migrieren. Alle Benutzerinnen bzw. Benutzer sollten das [Adobe Identity Management System (IMS)](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"} implementieren, um eine Verbindung mit Campaign herzustellen.
 
-Beachten Sie, dass in Campaign v8 die Verbindung mit Benutzer/Kennwort (auch als native Authentifizierung bezeichnet) nicht zulässig ist. **Adobe empfiehlt, diese Migration in Campaign v7.3.5 durchzuführen, um eine reibungslose Migration zu Campaign v8 zu ermöglichen.**
+Hinweis: In Campaign v8 ist das Verbinden mit Benutzername/Passwort (auch als native Authentifizierung bezeichnet) nicht zulässig. **Adobe empfiehlt, diese Migration in Campaign v7.3.5 durchzuführen, um eine reibungslose Migration zu Campaign v8 zu ermöglichen.**
 
 ## Was hat sich geändert?{#move-to-ims-changes}
 
@@ -77,6 +77,7 @@ Die wichtigsten Schritte für diese Migration sind unten aufgeführt:
 1. Implementieren Sie Adobe IMS für Ihre Verbindung, wie auf [dieser Seite](../../integrations/using/implementing-ims.md) beschrieben.
 
 Sie können auch Ihre technischen Benutzenden zur Adobe Developer Console migrieren, wie in [dieser Technote](ims-migration.md) beschrieben.
+
 
 
 ## Häufig gestellte Fragen {#ims-migration-faq}
@@ -152,5 +153,5 @@ Sie können jetzt die Liste Ihrer **Benutzenden** und deren **Authentifizierungs
 ## Nützliche Links {#ims-useful-links}
 
 * [Migration von technischen Benutzerinnen und Benutzern zur Adobe Developer Console](ims-migration.md)
-* [Versionshinweise von Adobe Campaign v8](../../rn/using/latest-release.md)
+* [Versionshinweise zu Adobe Campaign Classic v7](../../rn/using/latest-release.md)
 * [Was ist das Adobe Identity Management System (IMS)?](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"}
