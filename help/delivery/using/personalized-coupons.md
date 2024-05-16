@@ -6,10 +6,10 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Personalization
 role: User
 exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 8e5a328bee7701adfedec6a533cc21b4ce548187
 workflow-type: tm+mt
-source-wordcount: '975'
-ht-degree: 72%
+source-wordcount: '992'
+ht-degree: 90%
 
 ---
 
@@ -17,15 +17,17 @@ ht-degree: 72%
 
 Durch das Hinzufügen von Gutscheinen können Sie Ihren Empfängern Produkte und Dienstleistungen mit einem Mehrwert anbieten. Mit dem Campaign-Gutscheinmodul können Sie Gutscheine erstellen und zu einem späteren Zeitpunkt Marketing-Angeboten bei deren Erstellung zuweisen. Da Gutscheine nur für einen ausgewählten Zeitraum gültig sind, ist ein zugewiesener Gutschein eindeutig mit einer bestimmten Versandnachricht verknüpft. Zusätzlich wird von Campaign vor dem Versand bestätigt, dass genügend Gutscheine für die Anzahl der Nachrichten vorhanden sind.
 
->[!NOTE]
+>[!AVAILABILITY]
 >
->Die Couponverwaltung ist ein Package, das installiert werden muss. Um festzustellen, ob Sie dieses Package installiert haben, gehen Sie zu **[!UICONTROL Administration > Konfiguration > Packageverwaltung > Installierte Packages.]**
->
->Gutscheindaten können im CSV- und XML-Format importiert und exportiert werden. Weitere Informationen zum Import und Export finden Sie unter [diesem Abschnitt](../../platform/using/get-started-data-import-export.md).
+>Die Couponverwaltung ist in Campaign v8 im Kontext einer Enterprise (FFDA)-Bereitstellung nicht verfügbar. Weitere Informationen finden Sie unter [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/architecture/ffda/enterprise-deployment){target="_blank"}.
+
+Die Couponverwaltung beruht auf einem Package, das installiert werden muss. Um festzustellen, ob Sie dieses Package installiert haben, gehen Sie zu **[!UICONTROL Administration > Konfiguration > Packageverwaltung > Installierte Packages.]**
+
+Gutscheindaten können im CSV- und XML-Format importiert und exportiert werden. [Weitere Informationen](../../platform/using/get-started-data-import-export.md).
 
 ## Erstellen eines Gutscheins {#creating-a-coupon}
 
-Für die Erstellung von Gutscheinen bietet Ihnen das Gutscheinmodul zwei Möglichkeiten:
+Das Modul Couponverwaltung bietet zwei Optionen beim Erstellen von Gutscheinen:
 
 * **Anonym**: ein Standardgutschein für ausgewählte Empfänger oder Empfängerlisten
 * **Individuell**: ein personalisierter Gutschein für ausgewählte Empfänger
@@ -37,7 +39,7 @@ Bevor Sie die folgenden Schritte ausführen, entscheiden Sie sich für einen Gut
    ![](assets/deliv_coup_01.png)
 
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Neu]**.
-1. Geben Sie den Namen des Gutscheins in **[!UICONTROL Titel]** -Feld. Ein eindeutiger Code wurde automatisch in **[!UICONTROL Couponcode]**. Sie können den Code beibehalten oder einen neuen eingeben.
+1. Geben Sie im **[!UICONTROL Titelfeld]** den Namen des Gutscheins ein. In das Feld **[!UICONTROL Couponcode]** wurde automatisch ein eindeutiger Code eingefügt. Sie können den Code beibehalten oder einen neuen eingeben.
 
    ![](assets/deliv_coup_02.png)
 
@@ -48,7 +50,7 @@ Bevor Sie die folgenden Schritte ausführen, entscheiden Sie sich für einen Gut
 
    **[!UICONTROL Individuelle Gutscheine]**: Individuelle Gutscheine können mit zusätzlichen Couponcodes weiter personalisiert werden. Beispiel: Für den Ausverkauf in einem Sportgeschäft wird ein individueller Gutschein erstellt. Doch die Empfängerliste ist lang und die Empfänger sind an unterschiedlichen Sportarten interessiert. Deshalb können Sie dem individuellen Gutschein einen Codenamen für die jeweilige Sportart hinzufügen (z. B. Fußball, Baseball) und die Codes an die entsprechenden Empfänger senden.
 
-   1. Bei der Auswahl von Individuell wird links unten ein neuer Tab, Coupons, angezeigt. Navigieren Sie zu **[!UICONTROL Coupons]** Registerkarte und klicken Sie auf **[!UICONTROL Hinzufügen]**.
+   1. Bei der Auswahl individueller Gutscheine erscheint links unten ein neuer Coupons-Tab. Wählen Sie in diesem **[!UICONTROL Coupons]**-Tab **[!UICONTROL Hinzufügen]** aus.
    1. Geben Sie für den individuellen Gutschein einen eindeutigen Code ein, wenn Sie vom Pop-up dazu aufgefordert werden.
    1. Klicken Sie auf **[!UICONTROL Speichern]**, um den Gutschein zu erstellen.
 
@@ -56,7 +58,7 @@ Bevor Sie die folgenden Schritte ausführen, entscheiden Sie sich für einen Gut
 
    >[!NOTE]
    >
-   >Individuelle Gutscheine können stapelweise importiert werden. Weitere Informationen zum Import und Export finden Sie unter [diesem Abschnitt](../../platform/using/get-started-data-import-export.md).
+   >Individuelle Gutscheine können gesammelt importiert werden. Weiterführende Informationen zum Importieren und Exportieren finden Sie in [diesem Abschnitt](../../platform/using/get-started-data-import-export.md).
 
 ### Konfigurieren von individuellen Gutscheinen {#configuring-individual-coupons}
 
@@ -69,11 +71,11 @@ Der Coupons-Tab erscheint nur bei individuellen Gutscheinen. Nach der Verknüpfu
 * **[!UICONTROL Kanal]**: der für den Versand des Gutscheins verwendete Kanal
 * **[!UICONTROL Adresse]**: die E-Mail-Adresse der Empfänger
 
-Werte für **[!UICONTROL status]**, **[!UICONTROL channel]**, und **[!UICONTROL Adresse]** automatisch abgeschlossen werden. Die Werte für **[!UICONTROL eingelöst am]** nicht von Campaign abgerufen werden. Sie können ausgefüllt werden, indem Sie eine Datei importieren, die die Details für die Gutscheineinlösung enthält.
+Die Werte für **[!UICONTROL Status]**, **[!UICONTROL Kanal]** und **[!UICONTROL Adresse]** werden automatisch ausgefüllt. Nur die Werte für **[!UICONTROL Eingelöst am]** werden nicht von Campaign abgerufen. Sie können aber durch den Import einer Datei eingefügt werden, in der die Details für die Gutscheineinlösung enthalten sind.
 
 ## Einfügen eines Gutscheins in einen E-Mail-Versand {#inserting-a-coupon-into-an-email-delivery}
 
-Im folgenden Beispiel wird der Versand von der Startseite aus erstellt. Detaillierte Anweisungen zur Erstellung eines Versands finden Sie unter [diesem Abschnitt](about-email-channel.md). Sie können einem Versand auch einen Gutschein in einem Workflow hinzufügen.
+Im folgenden Beispiel wird von der Startseite aus ein Versand erstellt. Weiterführende Informationen zum Erstellen eines Versands finden Sie in [diesem Abschnitt](about-email-channel.md). Sie können auch in einem Workflow einem Versand einen Gutschein hinzufügen.
 
 1. Gehen Sie zu **[!UICONTROL Kampagnen]** und wählen Sie **[!UICONTROL Sendungen]** aus.
 1. Wählen Sie **[!UICONTROL Erstellen]** aus.
@@ -82,7 +84,7 @@ Im folgenden Beispiel wird der Versand von der Startseite aus erstellt. Detailli
 
 1. Geben Sie im **[!UICONTROL Titelfeld]** einen Namen ein und wählen Sie **[!UICONTROL Fortfahren]** aus.
 1. Wählen Sie **[!UICONTROL An]** aus, um Empfänger hinzuzufügen.
-1. Klicks **[!UICONTROL Hinzufügen]** um Empfänger für den Versand auszuwählen. Klicken Sie nach Auswahl der Empfänger auf **[!UICONTROL Ok]** , um zum Versand zurückzukehren.
+1. Wählen Sie **[!UICONTROL Hinzufügen]** aus, um Empfänger für den Versand auszuwählen. Wählen Sie nach der Auswahl der Empfänger **[!UICONTROL OK]**, um zum Versand zurückzukehren.
 
    ![](assets/deliv_coup_05.png)
 
@@ -95,7 +97,7 @@ Im folgenden Beispiel wird der Versand von der Startseite aus erstellt. Detailli
 
    ![](assets/deliv_coup_07.png)
 
-1. Wählen Sie den Gutschein aus und klicken Sie auf **[!UICONTROL Ok]**. Klicks **[!UICONTROL Ok]** erneut.
+1. Wählen Sie den Gutschein und danach **[!UICONTROL OK]** aus. Wählen Sie erneut **[!UICONTROL OK]** aus.
 
    ![](assets/deliv_coup_08.png)
 
@@ -129,7 +131,7 @@ Im folgenden Beispiel wird der Versand von der Startseite aus erstellt. Detailli
 
    ![](assets/deliv_coup_15.png)
 
-1. Klicken Sie auf **[!UICONTROL Analysieren]**. Wenn im Analyseprotokoll bestätigt wird, dass für alle Empfänger genügend Gutscheine vorhanden sind, klicken Sie auf **[!UICONTROL Versand bestätigen]** , um es zu versenden.
+1. Klicken Sie auf **[!UICONTROL Analysieren]**. Wenn im Analyseprotokoll bestätigt wird, dass für alle Empfänger genügend Gutscheine vorhanden sind, versenden Sie die Nachrichten durch die Auswahl von **[!UICONTROL Absendung bestätigen]**.
 
    ![](assets/deliv_coup_16.png)
 
