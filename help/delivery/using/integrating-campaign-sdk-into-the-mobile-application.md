@@ -5,10 +5,10 @@ description: Erfahren Sie, wie Sie das Campaign SDK in Ihre Mobile App integrier
 feature: Mobile SDK Integration, Push
 role: User, Developer
 exl-id: a5f6b82d-5561-4e56-b2ed-7fd6fd8c2b55
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: efd333aed2b14667dc95f92341fc16482f0fb6aa
 workflow-type: tm+mt
 source-wordcount: '988'
-ht-degree: 87%
+ht-degree: 92%
 
 ---
 
@@ -38,7 +38,7 @@ Im Folgenden finden Sie die Integrationsschritte für das Campaign SDK.
   Neolane.getInstance().setTrackingHost("https://yourTrackingHost:yourTrackingPort/");
   ```
 
-  Folgende Erlaubnis ermöglicht den Abruf einer eindeutigen Kennung für jedes Telefon:
+  Mit der folgenden Berechtigung können Sie die eindeutige Kennung eines Mobilgeräts wiederherstellen:
 
   ```
   <uses-permission android:name="android.permission.READ_PHONE_STATE" /> 
@@ -48,7 +48,7 @@ Im Folgenden finden Sie die Integrationsschritte für das Campaign SDK.
 
   Ab der SDK-Version 1.0.26 wird diese Erlaubnis nicht mehr verwendet.
 
-* **In iOS**: die **libNeolaneSDK.a** und **Neolane_SDK.h** -Dateien müssen mit dem Projekt verknüpft sein. Ab Version 1.0.24 des SDK die Option **ENABLE_BITCODE** aktiviert ist.
+* **iOS**: erfordert die Verknüpfung der Dateien **libNeolaneSDK.a** und **Neolane_SDK.h** mit dem Projekt. Ab der SDK-Version 1.0.24 ist die Option **ENABLE_BITCODE** aktiviert.
 
   >[!NOTE]
   >
@@ -248,7 +248,7 @@ Die Registrierungsfunktion ermöglicht
   }
   ```
 
-  Im Folgenden finden Sie ein Implementierungsbeispiel zum Verfolgen eines geöffneten Benachrichtigungs-Workflows (ausgeführt durch Aufruf der **notifyOpening** -Funktion des SDK). Die **NotificationActivity** -Klasse entspricht der zum Erstellen der **notifIntent** -Objekt im vorherigen Beispiel.
+  Sehen Sie im Folgenden ein Implementierungsbeispiel für das (mittels des Aufrufs der SDK-Funktion **notifyOpening** erzeugte) Tracking der Öffnung einer Benachrichtigung. Die Klasse **NotificationActivity** entspricht der im vorangehenden Beispiel für die Erstellung des **notifIntent**-Objekts verwendeten Klasse.
 
   ```
   public class NotificationActivity extends Activity {

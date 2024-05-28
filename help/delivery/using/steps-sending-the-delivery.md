@@ -6,10 +6,10 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Channel Configuration
 role: User
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: efd333aed2b14667dc95f92341fc16482f0fb6aa
 workflow-type: tm+mt
-source-wordcount: '1622'
-ht-degree: 89%
+source-wordcount: '1624'
+ht-degree: 95%
 
 ---
 
@@ -99,7 +99,7 @@ Dies bietet die Möglichkeit, den Versand auf einen späteren Zeitpunkt zu versc
 
   Klicken Sie auf die Schaltfläche **[!UICONTROL Senden]**, wählen Sie **[!UICONTROL Versand terminieren]**, starten Sie die Analyse und bestätigen Sie den Versand. Auf diese Weise wird die Analyse durchgeführt und die Zielgruppe vorbereitet. Am angegebenen Stichtag werden die Nachrichten dann automatisch versendet.
 
-Datum und Uhrzeit werden in der Zeitzone des aktuellen Benutzers angegeben. Die **[!UICONTROL Zeitzone]** in der Dropdown-Liste unter dem Eingabefeld Kontaktdatum können Sie das eingegebene Datum und die eingegebene Uhrzeit automatisch in die ausgewählte Zeitzone konvertieren.
+Datum und Uhrzeit beziehen sich jeweils auf den aktuellen Benutzer. Die unter dem Eingabefeld des Kontaktdatums situierte Dropdown-Liste **[!UICONTROL Zeitzone]** ermöglicht es, die oberhalb eingegebene Uhrzeit der ausgewählten Zeitzone anzupassen.
 
 Wenn Sie also beispielsweise einen Versand für 8 Uhr Brüsseler Zeit terminieren, wird die Uhrzeit automatisch in die ausgewählte Zeitzone konvertiert:
 
@@ -122,7 +122,7 @@ Um eine gleichmäßige Auslastung der Kapazitäten zu gewährleisten, können Si
 
    * Definieren Sie die Größe für jeden Schub. Wenn Sie beispielsweise im entsprechenden Feld **[!UICONTROL 30 %]** eingeben, enthält jeder Schub 30 % der Versandnachrichten und der letzte Schub 10 % der Nachrichten.
 
-     Im **[!UICONTROL Zeitraum]** geben Sie die Verzögerung zwischen dem Start zweier aufeinander folgender Schübe an. Wenn Sie zum Beispiel **[!UICONTROL 2d]** eingeben, startet der erste Schub sofort, der zweite Schub startet in zwei Tagen, der dritte in vier Tagen usw.
+     Geben Sie im Feld **[!UICONTROL Zeitraum]** die Verzögerung zwischen dem Start zweier aufeinanderfolgender Schübe an. Wenn Sie zum Beispiel **[!UICONTROL 2d]** eingeben, startet der erste Schub sofort, der zweite Schub startet in zwei Tagen, der dritte in vier Tagen usw.
 
      ![](assets/s_ncs_user_wizard_waves_create_size.png)
 
@@ -154,15 +154,15 @@ Im Folgenden finden Sie die häufigsten Anwendungsbeispiele für Schübe.
 
   Um zu verhindern, dass Ihre Sendungen als Spam eingestuft werden, können Sie das gesendete Volumen schrittweise mithilfe von Schüben erhöhen. Damit gewährleisten Sie eine problemlose Entwicklung in der Anfangsphase und die Verringerung der Anzahl der ungültigen Adressen.
 
-  Verwenden Sie dazu die Option **[!UICONTROL Schübe in einem Kalender definieren]**. Setzen Sie beispielsweise den ersten Schub auf 10 %, den zweiten auf 15 % usw.
+  Verwenden Sie dazu die Option **[!UICONTROL Schübe in einem Kalender definieren]**. Wählen Sie beispielsweise für den ersten Schub 10 %, für den zweiten 15 % usw.
 
   ![](assets/s_ncs_user_wizard_waves_ramp-up.png)
 
 * **Kampagnen, die ein Callcenter beinhalten**
 
-  Bei telefonischen Treuekampagnen verfügen Unternehmen oft über begrenzte Kapazitäten für die Verarbeitung der Anrufe an Abonnenten.
+  Bei der telefonischen Verwaltung einer Treuekampagne verfügt Ihr Unternehmen über eine begrenzte Kapazität zur Verarbeitung der Anzahl der Anrufe an Abonnenten.
 
-  Mithilfe von Schüben kann die Anzahl der Nachrichten auf 20 pro Tag beschränkt werden, was der täglichen Verarbeitungskapazität eines Callcenters entspricht.
+  Mithilfe von Schüben können Sie die Anzahl der Nachrichten auf 20 pro Tag beschränken, beispielsweise unter Berücksichtigung der täglichen Verarbeitungskapazität eines Callcenters.
 
   Wählen Sie dazu die Option **[!UICONTROL Mehrere Schübe derselben Größe planen]**. Geben Sie **[!UICONTROL 20]** als Schubgröße und **[!UICONTROL 1d]** im Feld **[!UICONTROL Zeitraum]** ein.
 
@@ -170,7 +170,7 @@ Im Folgenden finden Sie die häufigsten Anwendungsbeispiele für Schübe.
 
 ## Konfigurieren der weiteren Zustellversuche {#configuring-retries}
 
-Vorübergehend nicht zugestellte Nachrichten aufgrund einer **Soft** oder **Ignoriert** -Fehler werden automatisch wiederholt. Typen und Ursachen für fehlgeschlagene Sendungen werden in diesem Abschnitt beschrieben. [Abschnitt](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+Vorübergehend nicht zustellbare Nachrichten aufgrund eines **Softbounce** oder eines **ignorierten Fehlers** werden automatisch für einen erneuten Versuch vorgesehen. Die Typen und Ursachen für fehlgeschlagene Sendungen finden Sie in diesem [Abschnitt](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
 
 >[!IMPORTANT]
 >
@@ -180,7 +180,7 @@ Bei On-Premise-Installationen und gehosteten/hybriden Installationen, die den be
 
 ![](assets/s_ncs_user_wizard_retry_param.png)
 
-Standardmäßig sind innerhalb der ersten 24 Stunden des Versands fünf erneute Versuche im Abstand von mindestens einer Stunde vorgesehen. An den folgenden Tagen und bis zum Ablauf der Versandgültigkeit, die in der Variablen **[!UICONTROL Gültigkeit]** Registerkarte. Siehe [Definieren des Gültigkeitszeitraums](#defining-validity-period).
+Standardmäßig sind innerhalb der ersten 24 Stunden des Versands fünf erneute Versuche im Abstand von mindestens einer Stunde vorgesehen. An den folgenden Tagen wird bis zum Ablauf der Versandgültigkeit, die auf der Registerkarte **[!UICONTROL Gültigkeit]** festgelegt wird, jeweils ein Zustellversuch unternommen. Siehe [Definieren des Gültigkeitszeitraums](#defining-validity-period).
 
 ## Definieren des Gültigkeitszeitraums {#defining-validity-period}
 
