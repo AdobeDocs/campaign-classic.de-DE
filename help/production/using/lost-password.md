@@ -8,10 +8,10 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 064eb41f-6685-4ac1-adc5-40f9d5a2f96d
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: ef7f3888e010cbe331b5e06cd1ea5e07127a47d2
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 11%
+source-wordcount: '212'
+ht-degree: 8%
 
 ---
 
@@ -28,7 +28,12 @@ Es gibt zwei mögliche Szenarien:
 ## Passwort, das von einem Campaign-Benutzer verloren geht {#password-lost-by-campaign-operator}
 
 Wenn ein Adobe Campaign-Benutzer sein Kennwort verliert, können Sie es ändern.
-Gehen Sie dazu wie folgt vor:
+
+>[!NOTE]
+>
+>Dieses Verfahren gilt nur für Benutzer, die mit nativer Authentifizierung eine Verbindung zu Campaign herstellen. Informationen zur Adobe IMS-Authentifizierung finden Sie unter [diese Dokumentation](https://helpx.adobe.com/ie/manage-account/using/change-or-reset-password.html){target="_blank"}.
+
+Gehen Sie wie folgt vor, um ein Campaign-Kennwort zurückzusetzen:
 
 1. Verbindung über einen Benutzer mit Administratorrechten
 1. Klicken Sie mit der rechten Maustaste auf einen Operator.
@@ -45,31 +50,32 @@ Gehen Sie dazu wie folgt vor:
 >Dieser Abschnitt gilt nur für On-Premise-Kunden.
 
 Wenn das interne Kennwort verloren geht, müssen Sie es erneut initialisieren.
+
 Gehen Sie dazu wie folgt vor:
 
 1. Bearbeiten Sie die **/usr/local/neolane/nl6/conf/serverConf.xml** -Datei.
 
 1. Navigieren Sie zu **internalPassword** Linie.
 
-   ```
+   ```xml
    <!-- XTK authentication mode internalPassword : Password of internal account -->
    <xtk internalPassword="myPassword"/>
    ```
 
-1. Löschen Sie in diesem Fall die Zeichenfolge in Anführungszeichen: **myPassword**
+1. Löschen Sie in diesem Fall die Zeichenfolge in Anführungszeichen: `myPassword`. Sie erhalten die folgende Zeile:
 
-   Sie erhalten somit die folgende Zeile:
-
-   ```
-   !-- XTK authentication mode internalPassword : Password of internal account -->
-   <xtk internalPassword=""/
+   ```xml
+   <!-- XTK authentication mode internalPassword : Password of internal account -->
+   <xtk internalPassword=""/>
    ```
 
 1. Speichern Sie die Änderungen und schließen Sie die Datei.
 
+1. Stoppen Sie die `nlserver` Prozess
+
 1. Konfigurieren Sie das neue Kennwort. Geben Sie dazu die folgenden Befehle ein:
 
-   ```
+   ```javascript
    nlserver config -internalpassword
    HH:MM:SS > Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
    Enter current password.
@@ -78,5 +84,7 @@ Gehen Sie dazu wie folgt vor:
    Password: 
    Confirmation 
    ```
+
+1. Starten Sie die `nlserver` Prozess
 
 1. Sie können jetzt Ihr neues Kennwort verwenden, um eine Verbindung herzustellen in **intern** -Modus.
