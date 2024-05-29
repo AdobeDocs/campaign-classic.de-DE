@@ -8,16 +8,14 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 12a255fe-66f9-40ce-b19e-c24322c2e009
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: b7dedddc080d1ea8db700fabc9ee03238b3706cc
 workflow-type: tm+mt
 source-wordcount: '425'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 # Administration{#administration}
-
-
 
 Automatischer Start der Adobe Campaign-Module (**Web**, **mta**, **wfserver** usw.) wird vom **nlserver** -Server bereitgestellt.
 

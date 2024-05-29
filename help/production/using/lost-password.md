@@ -8,7 +8,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 064eb41f-6685-4ac1-adc5-40f9d5a2f96d
-source-git-commit: ef7f3888e010cbe331b5e06cd1ea5e07127a47d2
+source-git-commit: b7dedddc080d1ea8db700fabc9ee03238b3706cc
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 8%
@@ -71,7 +71,7 @@ Gehen Sie dazu wie folgt vor:
 
 1. Speichern Sie die Änderungen und schließen Sie die Datei.
 
-1. Stoppen Sie die `nlserver` Prozess
+1. Stoppen Sie die `nlserver` -Prozess.
 
 1. Konfigurieren Sie das neue Kennwort. Geben Sie dazu die folgenden Befehle ein:
 
@@ -85,6 +85,6 @@ Gehen Sie dazu wie folgt vor:
    Confirmation 
    ```
 
-1. Starten Sie die `nlserver` Prozess
+1. Starten Sie die `nlserver` -Prozess.
 
 1. Sie können jetzt Ihr neues Kennwort verwenden, um eine Verbindung herzustellen in **intern** -Modus.

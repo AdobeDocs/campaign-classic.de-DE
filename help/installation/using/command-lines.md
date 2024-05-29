@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 5cd4abb0-2bd2-4b23-902c-41b08a1d2f7a
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: b7dedddc080d1ea8db700fabc9ee03238b3706cc
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 4%
@@ -24,7 +24,7 @@ Die folgenden Befehlszeilen erfordern die Möglichkeit, auf den Anwendungsserver
 
 Die Instanzerstellung kann mithilfe von Befehlszeilen mit der folgenden Syntax ausgeführt werden:
 
-```
+```sql
 nlserver config -addinstance:instance/masques DNS[/lang]
 ```
 
@@ -36,7 +36,7 @@ Der Befehl **nlserver config -addinstance:instance1/demo&#42;/eng** ermöglicht 
 
 Sie können eine vorhandene Datenbank über die Befehlszeile mit einer Instanz verknüpfen, indem Sie die folgende Syntax verwenden:
 
-```
+```sql
 nlserver config -setdblogin:[rbdms:]account[:database][/password]@server
 ```
 
@@ -49,6 +49,6 @@ Die folgenden Werte sind möglich für die **`[rdbms]`** Parameter:
 
 Der folgende Befehl konfiguriert die **Demo** -Instanz mit dem SQL-Typ-Server, bekannt als **base6**, verknüpft mit der **Kampagne** und **password** auf **dbsrv** server:
 
-```
+```sql
  nlserver config -setdblogin:db:campaign:myBase/password@dbServer -instance:demo
 ```
