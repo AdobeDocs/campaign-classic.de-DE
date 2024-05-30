@@ -8,15 +8,14 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: d2451b62-bddf-4dee-8789-35aaae8348e1
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: ht
-source-wordcount: '1977'
-ht-degree: 100%
+source-git-commit: 5d237d42adabe42a07bc759913dd9453df650671
+workflow-type: tm+mt
+source-wordcount: '1910'
+ht-degree: 99%
 
 ---
 
 # Datenschutz und Einverständniserklärung{#privacy-and-recommendations}
-
 
 
 ## Allgemeine Empfehlungen {#general-recommendations}
@@ -31,18 +30,7 @@ Lesen Sie auch die [Checkliste zu Sicherheit und Datenschutz](../../installation
 
 ### Datenschutzbestimmungen {#privacy-regulations}
 
-Um den Datenschutz korrekt zu handhaben und personenbezogene Daten zu verwalten, müssen Sie die für die Region(en) geltenden Gesetze einhalten, in denen Sie tätig sind. Zu diesen Verordnungen gehören:
-* [DSGVO](https://ec.europa.eu/info/law/law-topic/data-protection/reform/what-does-general-data-protection-regulation-gdpr-govern_de) (Europäische Datenschutz-Grundverordnung)
-* [DPA](https://www.gov.uk/data-protection) (Umsetzung der DSGVO durch das Vereinigte Königreich)
-* [Europäische Richtlinie über Datenschutz und elektronische Kommunikation](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02002L0058-20091219)
-* [CAN-SPAM Act](https://www.ftc.gov/tips-advice/business-center/guidance/can-spam-act-compliance-guide-business) (US-Gesetz zur Festlegung der Regeln und Anforderungen für kommerzielle E-Mails)
-* [CCPA](https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&amp;division=3.&amp;title=1.81.5.&amp;part=4.&amp;chapter=&amp;article=) (kalifornisches Verbraucherschutzgesetz)
-* [PDPA](https://secureprivacy.ai/thailand-pdpa-summary-what-businesses-need-to-know/) (thailändisches Gesetz zum Schutz personenbezogener Daten)
-* [LGPD](https://iapp.org/media/pdf/resource_center/Brazilian_General_Data_Protection_Law.pdf) (Brasilianische Datenschutz-Grundverordnung)
-
->[!NOTE]
->
->Weitere Informationen zur Anwendung von DSGVO, CCPA, PDPA und LGPD auf Adobe Campaign finden Sie auf [dieser Seite](../../platform/using/privacy-management.md#privacy-management-regulations).
+Um den Datenschutz korrekt zu handhaben und personenbezogene Daten zu verwalten, müssen Sie die für die Region(en) geltenden Gesetze einhalten, in denen Sie tätig sind. Die Funktionen von Adobe Campaign helfen Ihnen bei der Einhaltung der in [diese Seite](../../platform/using/privacy-management.md#privacy-management-regulations).
 
 ### Adobe Experience Cloud – Datenschutz {#experience-cloud-privacy}
 

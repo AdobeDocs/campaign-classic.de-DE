@@ -8,20 +8,20 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 23c873fd-9016-4d32-842c-772cfff0e23e
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: ht
-source-wordcount: '883'
-ht-degree: 100%
+source-git-commit: 5d237d42adabe42a07bc759913dd9453df650671
+workflow-type: tm+mt
+source-wordcount: '905'
+ht-degree: 81%
 
 ---
 
 # Datenschutzverwaltung {#privacy-management}
 
 
-
 Adobe Campaign bietet eine Reihe von Tools, die Sie bei der Einhaltung der [Datenschutzverordnungen](#privacy-management-regulations) (einschließlich DSGVO, CCPA, PDPA, LGPD) unterstützen.
 
-Hier sind die fünf Hauptfunktionen von Adobe Campaign, um die Unterstützung der DSGVO und anderen Datenschutzbestimmungen sicherzustellen:
+Im Folgenden finden Sie die fünf wichtigsten Funktionen von Adobe Campaign, mit denen die Einhaltung von Datenschutzbestimmungen sichergestellt werden kann:
+
 * **Recht auf Zugriff**
 * **Recht auf Löschen**
 * **Einverständnisverwaltung**
@@ -40,12 +40,14 @@ It also contains information on important features to manage Privacy ([Consent, 
 
 Die Funktionen von Adobe Campaign helfen Ihnen bei der Einhaltung der folgenden Verordnungen:
 
-* Die **DSGVO** ([Datenschutz-Grundverordnung](https://ec.europa.eu/info/law/law-topic/data-protection/reform/what-does-general-data-protection-regulation-gdpr-govern_de)) ist das Datenschutzgesetz der Europäischen Union (EU), in dem die Anforderungen an den Datenschutz in den Ländern der EU harmonisiert und neu geregelt werden.
-* Der **CCPA** ([California Consumer Privacy Act](https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&amp;division=3.&amp;title=1.81.5.&amp;part=4.&amp;chapter=&amp;article=)) gibt in Kalifornien ansässigen Personen neue Rechte in Bezug auf ihre personenbezogenen Daten und verpflichtet bestimmte in Kalifornien tätige Unternehmen zur Einhaltung von Datenschutzvorschriften.
-* Der **PDPA** ([Personal Data Protection Act](https://secureprivacy.ai/thailand-pdpa-summary-what-businesses-need-to-know/)) ist das neue Datenschutzgesetz, in dem die Anforderungen an den Datenschutz in Thailand vereinheitlicht und neu geregelt werden.
-* Das **LGPD** ([Lei Geral de Proteção de Dados](https://iapp.org/media/pdf/resource_center/Brazilian_General_Data_Protection_Law.pdf)) gilt ab Frühjahr 2021 für alle Firmen, die personenbezogene Daten in Brasilien erheben oder verarbeiten.
+* **DSGVO** (Datenschutz-Grundverordnung) ist das Datenschutzgesetz der Europäischen Union (EU), in dem die Anforderungen an den Datenschutz in den EU-Ländern harmonisiert und neu geregelt werden.
+* **CCPA** (California Consumer Privacy Act) gibt in Kalifornien ansässigen Personen neue Rechte in Bezug auf ihre personenbezogenen Daten und verpflichtet bestimmte in Kalifornien tätige Unternehmen zur Einhaltung von Datenschutzvorschriften.
+* **PDPA** (Personal Data Protection Act) ist das Datenschutzgesetz, in dem die Anforderungen an den Datenschutz in Thailand harmonisiert und neu geregelt werden.
+* **LGPD** (Lei Geral de Proteção de Dados) gilt für alle Unternehmen, die personenbezogene Daten in Brasilien erheben oder verarbeiten.
+* **CASL** (kanadisches Anti-Spam-Gesetz) umfasst alle Nachrichten, die in oder aus Kanada gesendet werden, jedoch keine Nachrichten, die über Kanada gesendet werden;
+* **VCDPA** (Virginia Consumer Data Protection Act) und **CPA** (Colorado Privacy Act) gilt für alle Unternehmen, die in diesen Staaten geschäftlich tätig sind oder Personen mit Wohnsitz in diesen Staaten aufnehmen.
 
-Alle diese Verordnungen gelten für Adobe Campaign-Kunden, die Daten für betroffene Personen mit Wohnsitz in den oben genannten Regionen oder Ländern (EU, Kalifornien, Thailand, Brasilien) besitzen.
+Alle diese Vorschriften gelten für Adobe Campaign-Kunden, die Daten von Datensubjekten mit Wohnsitz in den oben genannten Regionen oder Ländern besitzen.
 
 <!--Several Privacy capabilities are available in Adobe Campaign, including consent management, data retention settings, and rights management. See [Consent, Retention and Roles](#consent-retention-roles). In addition to this, Adobe Campaign helps facilitate your readiness as Data Controller for certain Privacy requests. See [Right to Access and Right to be Forgotten](#right-access-forgotten).-->
 
