@@ -9,10 +9,10 @@ index: y
 internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: ht
-source-wordcount: '794'
-ht-degree: 100%
+source-git-commit: a08b386ff73fd9a2e9b3909c8f8de5e419104ce4
+workflow-type: tm+mt
+source-wordcount: '922'
+ht-degree: 82%
 
 ---
 
@@ -38,7 +38,11 @@ Bevor Sie mit dieser Implementierung beginnen, überprüfen Sie, ob Folgendes vo
 
 >[!AVAILABILITY]
 >
-> JWT (JSON Web Tokens) wird gerade eingestellt und durch OAuth ersetzt. Die Umstellung erfolgt schrittweise mit den anstehenden Campaign-Versionen. Die Dokumentation wird entsprechend diesen Aktualisierungen aktualisiert.
+> Die Berechtigung für Dienstkonten (JWT) wird von Adobe nicht mehr unterstützt. Campaign-Integrationen mit Adobe-Lösungen müssen jetzt auf OAuth Server-zu-Server-Anmeldedaten angewiesen sein. </br>
+>
+> * Wenn Sie eingehende Integrationen mit Campaign implementiert haben, müssen Sie Ihr technisches Konto wie in dieser Dokumentation beschrieben migrieren. Die bestehenden JWT-Anmeldedaten (Service Account) funktionieren weiterhin bis zum 27. Januar 2025. Darüber hinaus ist die Erstellung neuer JWT-Anmeldedaten (Service Account) in der Developer Console ab dem 3. Juni 2024 nicht mehr möglich. Eine neue JWT-Berechtigung (Service Account) kann nach diesem Datum nicht mehr erstellt oder einem Projekt hinzugefügt werden. </br>
+>
+> * Wenn Sie ausgehende Integrationen implementiert haben, z. B. die Integration von Campaign mit Analytics oder Experience Cloud Trigger, funktionieren diese bis zum 27. Januar 2025 weiterhin. Vor diesem Datum müssen Sie jedoch Ihre Campaign-Umgebung auf Version 7.4.1 aktualisieren und Ihr technisches Konto auf oAuth migrieren. Da die Erstellung neuer Service Account (JWT)-Anmeldedaten in der Developer Console ab dem 3. Juni 2024 nicht mehr möglich ist, können Sie nach diesem Datum keine neue ausgehende Integration erstellen, die auf JWT basiert
 
 1. Greifen Sie auf [!DNL Adobe I/O] zu und melden Sie sich mit den Entwicklerzugangsdaten Ihrer Organisation an. Stellen Sie sicher, dass Sie beim richtigen Portal der Organisation angemeldet sind.
 
