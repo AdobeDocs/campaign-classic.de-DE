@@ -6,9 +6,9 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 5d107e03ec572838dc2010446233c3bc5debf27e
+source-git-commit: a94774daa4005fe95066b85f921d9baa981b2a7c
 workflow-type: tm+mt
-source-wordcount: '750'
+source-wordcount: '751'
 ht-degree: 98%
 
 ---
@@ -100,7 +100,7 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 <p>11</p>
 <p>9</p>
 <p>8</p>
-<p>Mehr über JDK und Campaign in <a href="../../installation/using/application-server.md#java-development-kit---jdk">diese Seite</a>.</p>
+<p>Mehr über JDK und Campaign in <a href="https://experienceleague.adobe.com/en/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/deployment-guidelines/application-server#java-development-kit---jdk" target="_blank">diese Seite</a>.</p>
 </td>
 </tr>
 <tr>
@@ -148,7 +148,7 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 <p>2017</p>
 <p>2016</p>
 <p>2014</p>
-<p><strong>Wichtig</strong>: Microsoft SQL Server wird nicht als primäre Datenbank unterstützt, wenn der Campaign-Server auf Linux läuft. <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/installing-campaign-in-linux/prerequisites-of-campaign-installation-in-linux.html?lang=de#database-access-layers">Weitere Informationen</a>.</p>
+<p><strong>Wichtig</strong>: Microsoft SQL Server wird nicht als primäre Datenbank unterstützt, wenn der Campaign-Server auf Linux läuft. <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/installing-campaign-in-linux/prerequisites-of-campaign-installation-in-linux.html?lang=de#database-access-layers" target="_blank">Weitere Informationen</a>.</p>
 </td>
 </tr>
 </tbody>

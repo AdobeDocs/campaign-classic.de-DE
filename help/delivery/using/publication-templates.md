@@ -6,10 +6,10 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Templates
 role: User
 exl-id: 3b6e4974-4551-4da2-8eca-577c4f9cbd91
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: a94774daa4005fe95066b85f921d9baa981b2a7c
 workflow-type: tm+mt
 source-wordcount: '842'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Der Identifikationsschlüssel eines Stylesheets ist eine Zeichenfolge, die den N
 
 ## Erstellen und Konfigurieren der Vorlage {#creating-and-configuring-the-template}
 
-Veröffentlichungsvorlagen werden standardmäßig im **[!UICONTROL Administration > Konfiguration > Veröffentlichungsvorlagen]** Knoten. Um eine neue Vorlage zu erstellen, klicken Sie auf das **[!UICONTROL Neu]** oberhalb der Vorlagenliste.
+Standardmäßig werden Veröffentlichungsvorlagen im Knoten **[!UICONTROL Administration > Konfiguration > Veröffentlichungsvorlagen]** gespeichert. Klicken Sie dort zur Erstellung einer neuen Vorlage auf die Schaltfläche **[!UICONTROL Neu]**.
 
 Geben Sie den Namen der Vorlage (d. h. den aus Namespace und Namen bestehenden Identifikationsschlüssel), den Titel, das zugeordnete Datenschema sowie das entsprechende Formular an.
 
@@ -73,11 +73,11 @@ Des Weiteren können folgende Veröffentlichungsparameter konfiguriert werden:
 
   Die Variablen sind wie folgt anzugeben: **`$(<xpath>)`**, wobei **`<xpath>`** den Pfad eines Felds des der Veröffentlichungsvorlage zugrunde liegenden Datenschemas bezeichnet.
 
-  Der Name einer Datei kann aus einem Feld vom Typ Datum bestehen. Um dieses Feld korrekt zu formatieren, verwenden Sie die **$date-format** -Funktion, wobei der Pfad des Felds und das Ausgabeformat als Parameter verwendet werden.
+  Beispielsweise kann der Dateiname auf ein Datumsfeld verweisen. In diesem Fall ist die Funktion **$date-format** zu verwenden und Feldpfad sowie Ausgabeformat sind anzugeben.
 
   Standardmäßig wird der Dateiname unter Verwendung der Variablen &quot;@name&quot; und &quot;@date&quot; konstruiert:
 
-  ```
+  ```xml
   ct_$(@name)_$date-format(@date,'%4Y%2M%2D').htm
   ```
 
@@ -117,7 +117,7 @@ Ziel ist es, eine Hauptseite zu erzeugen, die die Kapitel auflistet und die Mög
 
 Das entsprechende Stylesheet (&quot;cus:Buch.xsl&quot;) stellt sich wie folgt dar:
 
-```
+```xml
 <?xml version="1.0" encoding="ISO-8859-1" ?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
   <xsl:output encoding="ISO-8859-1" method="html"/>
@@ -140,7 +140,7 @@ Das entsprechende Stylesheet (&quot;cus:Buch.xsl&quot;) stellt sich wie folgt da
 
 Ein zweites Stylesheet (&quot;cus:Kapitel.xsl&quot;) ist erforderlich, um die Kapiteldetails zu erzeugen:
 
-```
+```xml
 <?xml version="1.0" encoding="ISO-8859-1" ?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
   <xsl:output encoding="ISO-8859-1" method="html"/>
@@ -167,7 +167,7 @@ Ein zweites Stylesheet (&quot;cus:Kapitel.xsl&quot;) ist erforderlich, um die Ka
 
 Das Trennzeichen wird zu Beginn jeder Seite angegeben, die in die zu erzeugende Datei einzuschließen ist.
 
-```
+```xml
 <xsl:comment> #nl:output_replace($(path)/<xsl:value-of select="@id"/>.htm)</xsl:comment>
 ```
 
