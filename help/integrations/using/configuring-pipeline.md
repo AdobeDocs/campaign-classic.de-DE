@@ -1,60 +1,50 @@
 ---
 product: campaign
-title: Konfigurieren der Pipeline
-description: Erfahren Sie, wie Sie die Pipeline konfigurieren.
+title: Pipeline konfigurieren
+description: Erfahren Sie, wie Sie die Pipeline für die Integration von Campaign mit Trigger konfigurieren
 feature: Triggers
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 audience: integrations
 content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: ht
-source-wordcount: '928'
-ht-degree: 100%
+source-git-commit: 271e0f9fde0cbfb016e201c8390b26673d8fc696
+workflow-type: tm+mt
+source-wordcount: '886'
+ht-degree: 63%
 
 ---
 
 # Pipeline konfigurieren {#configuring-pipeline}
 
-
-
 Authentifizierungsparameter wie die Kunden-ID, der private Schlüssel und der Authentifizierungsendpunkt werden in den Konfigurationsdateien der Instanz konfiguriert.
-Die Liste der zu verarbeitenden Auslöser wird in einer Option im JSON-Format konfiguriert.
+
+Die Liste der zu verarbeitenden Trigger wird in einer Option im JSON-Format konfiguriert.
+
 Die Auslöser werden für die Zielgruppenbestimmung eines Kampagnen-Workflows verwendet, der E-Mails sendet. Die Kampagne ist so eingerichtet, dass ein Kunde, der beide Auslöserereignisse aufweist, eine E-Mail erhält.
 
 ## Voraussetzungen {#prerequisites}
 
-Bevor Sie mit dieser Konfiguration beginnen, überprüfen Sie, ob Sie Folgendes verwenden:
+Bevor Sie mit dieser Konfiguration beginnen, überprüfen Sie, ob folgende Voraussetzungen gegeben sind:
 
-* Mindestens einer der folgenden Adobe Campaign-Builds:
-   * 19.1.8.9039
-   * 19.1.4.9032 – Gold Standard 11
-   * 20.2.4.9187
-   * 20.3.1
-* Adobe Analytics Standard-Version
-
-Sie benötigen außerdem:
-
-* Projektauthentifizierung für Adobe I/O
-* eine gültige Organisations-ID. Auf [dieser Seite](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=de){_blank} erfahren Sie, wie Sie Ihre Organisations-ID finden.
-* ein Entwicklerzugriff auf Ihr Unternehmen
-* Triggers-Konfiguration, ausgeführt in Adobe Analytics
+* Ein Adobe Developer-Projekt
+* Eine gültige Organisations-ID - Informationen zum Auffinden Ihrer Organisations-ID finden Sie unter [diese Seite](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255){_blank}
+* Entwicklerzugriff auf Ihre Organisation
+* Gültige Trigger-Konfiguration in Adobe Analytics
 
 ## Authentifizierung und Konfigurationsdateien {#authentication-configuration}
 
-Da das Pipeline-Hosting in Adobe Experience Cloud erfolgt, ist eine Authentifizierung erforderlich.
-Hierfür wird ein Schlüsselpaar aus öffentlichem und privatem Schlüssel verwendet. Der Prozess entspricht der Verwendung einer Kombination aus Benutzer und Passwort, ist aber sicherer.
-Die Authentifizierung für Experience Cloud wird über das Adobe I/O-Projekt umgesetzt.
+Die Authentifizierung ist erforderlich, da die Pipeline in der Adobe Experience Cloud gehostet wird. Hierfür wird ein Schlüsselpaar aus öffentlichem und privatem Schlüssel verwendet. Dieser Prozess hat dieselbe Funktion wie ein Benutzer/Kennwort, ist jedoch sicherer. Die Authentifizierung für das Marketing Cloud wird über das Adobe Developer-Projekt unterstützt.
 
-## Schritt 1: Erstellen/Aktualisieren eines Adobe I/O-Projekts {#creating-adobe-io-project}
+## Schritt 1: Erstellen/Aktualisieren Sie Ihr Adobe Developer-Projekt {#creating-adobe-io-project}
 
-Kunden gehosteter Bereitstellungen können ein Ticket bei der Adobe-Kundenunterstützung eröffnen, um die Triggers-Integration für ihre Organisation über Adobe I/O-Token für technische Konten zu aktivieren.
+Wenden Sie sich bei gehosteten Kunden an Ihren Adobe-Support-Mitarbeiter/an die Kundenunterstützung, um Ihre Organisation mit Adobe Developer-Konto-Token für die Trigger-Integration zu aktivieren.
 
-Kunden von On-Premise-Bereitstellungen finden Informationen hierzu auf der Seite [Konfigurieren von Adobe I/O für Adobe Experience Cloud Triggers](../../integrations/using/configuring-adobe-io.md). Beachten Sie, dass für die den Adobe I/O-Anmeldedaten hinzugefügte API **[!UICONTROL Adobe Analytics]** ausgewählt sein muss.
+On-Premise-/Hybrid-Kunden finden Informationen hierzu im Abschnitt [Adobe I/O für Adobe Experience Cloud Triggers konfigurieren](../../integrations/using/configuring-adobe-io.md) Seite. Beachten Sie, dass Sie **[!UICONTROL Adobe Analytics]** beim Hinzufügen der API zur Adobe Developer-Berechtigung.
 
-## Schritt 2: Konfigurieren der Pipeline-Option &quot;NmsPipeline_Config&quot;  {#configuring-nmspipeline}
+## Schritt 2: Pipeline-Option konfigurieren {#configuring-nmspipeline}
 
-Sobald die Authentifizierung eingerichtet ist, ruft die Pipeline die Ereignisse ab. Sie verarbeitet nur Auslöser, die in Adobe Campaign konfiguriert wurden. Der Auslöser muss in Adobe Analytics generiert und an die Pipeline gesendet worden sein; diese verarbeitet nur Auslöser, die in Adobe Campaign konfiguriert wurden.
+Sobald die Authentifizierung eingerichtet ist, ruft die Pipeline die Ereignisse ab. Sie verarbeitet nur Auslöser, die in Adobe Campaign konfiguriert wurden. Der Trigger muss aus Adobe Analytics generiert und an die Pipeline gesendet worden sein, die nur Trigger verarbeitet, die in Adobe Campaign konfiguriert sind.
+
 Die Option kann auch mit einem Platzhalter konfiguriert werden, um alle Auslöser unabhängig vom Namen zu erfassen.
 
 1. Rufen Sie in Adobe Campaign über **[!UICONTROL Administration]** > **[!UICONTROL Plattform]** > **[!UICONTROL Optionen]** das Optionsmenü im **[!UICONTROL Explorer]** auf.
@@ -63,7 +53,7 @@ Die Option kann auch mit einem Platzhalter konfiguriert werden, um alle Auslöse
 
 1. Im Feld **[!UICONTROL Wert (Memo)]** können Sie den folgenden JSON-Code einfügen, der zwei Auslöser angibt. Die Kommentare müssen Sie dabei entfernen.
 
-   ```
+   ```json
    {
    "topics": [ // list of "topics" that the pipelined is listening to.
       {
@@ -85,7 +75,7 @@ Die Option kann auch mit einem Platzhalter konfiguriert werden, um alle Auslöse
 
 1. Sie können auch folgenden JSON-Code einfügen, der alle Auslöser abdeckt.
 
-   ```
+   ```json
    {
    "topics": [
      {
@@ -102,7 +92,7 @@ Die Option kann auch mit einem Platzhalter konfiguriert werden, um alle Auslöse
    }
    ```
 
-### Der Parameter &quot;Consumer&quot;  {#consumer-parameter}
+### Legen Sie den Parameter &quot;Consumer&quot;fest {#consumer-parameter}
 
 Die Pipeline funktioniert wie ein Anbieter-Verbraucher-Modell. Nachrichten werden nur von einem einzelnen Verbraucher &quot;konsumiert&quot;; jeder Verbraucher erhält eine eigene Kopie der Nachrichten.
 
@@ -114,18 +104,18 @@ Der Pipeline-Dienst dokumentiert die von jedem Verbraucher abgerufenen Nachricht
 
 Für die Konfiguration der Pipeline-Option wird Folgendes empfohlen:
 
-* Wenn Sie Trigger bearbeiten oder hinzufügen, tun Sie dies unter **[!UICONTROL Triggers]**; den Rest sollten Sie nicht bearbeiten.
-* Vergewissern Sie sich, dass die JSON gültig ist. Verwenden Sie einen JSON-Validator, z. B. den auf dieser [Website](https://jsonlint.com/).
-* &quot;name&quot; entspricht der Auslöser-ID. Ein Platzhalter (*) deckt alle Auslöser ab.
-* &quot;Consumer&quot; entspricht dem Namen der aufrufenden Instanz oder Anwendung.
-* Pipelined unterstützt auch das Thema &quot;Aliases&quot;.
-* Starten Sie pipelined grundsätzlich neu, nachdem Sie Änderungen vorgenommen haben.
+* Hinzufügen oder Bearbeiten von Triggern unter **[!UICONTROL Trigger]**.
+* Vergewissern Sie sich, dass die JSON gültig ist.
+* Die **Name** -Parameter der Trigger-ID entspricht. Ein Platzhalter (*) deckt alle Auslöser ab.
+* Die **Verbraucher** -Parameter dem Namen der aufrufenden Instanz oder Anwendung entspricht.
+* die `pipelined`-Prozess unterstützt auch das Thema &quot;Aliase&quot;.
+* Sie sollten immer neu starten `pipelined`verarbeiten, nachdem Sie Änderungen vorgenommen haben.
 
 ## Schritt 3: Optionale Konfiguration {#step-optional}
 
-Sie können einige interne Parameter entsprechend Ihren Lastanforderungen ändern; stellen Sie jedoch sicher, dass Sie diese testen, bevor Sie sie in die Produktion übernehmen.
+Sie können einige interne Parameter entsprechend Ihren Ladeanforderungen ändern. Stellen Sie jedoch sicher, dass Sie diese testen, bevor Sie sie auf Ihre Produktionsumgebung anwenden.
 
-Die Liste der optionalen Parameter ist nachfolgend aufgeführt:
+Die Liste optionaler Parameter lautet:
 
 | Option | Beschreibung  |
 |:-:|:-:|
@@ -146,11 +136,11 @@ Die Liste der optionalen Parameter ist nachfolgend aufgeführt:
 
 ### Automatischer Start des Pipelined-Prozesses {#pipelined-process-autostart}
 
-Der Pipelined-Prozess muss automatisch gestartet werden.
+Die `pipelined` -Prozess automatisch gestartet werden.
 
-Legen Sie dazu das Element &lt; pipelined > in der Konfigurationsdatei auf autostart=&quot;true&quot; fest:
+Legen Sie dazu die `<`pipelined`>` -Element in der Konfigurationsdatei zu autostart=&quot;true&quot;:
 
-```
+```sql
  <pipelined autoStart="true" ... "/>
 ```
 
@@ -158,7 +148,7 @@ Legen Sie dazu das Element &lt; pipelined > in der Konfigurationsdatei auf aut
 
 Ein Neustart ist erforderlich, damit die Änderungen wirksam werden:
 
-```
+```sql
 nlserver restart pipelined@instance
 ```
 
@@ -166,6 +156,6 @@ nlserver restart pipelined@instance
 
 Gehen Sie wie folgt vor, um die Pipeline-Einrichtung für die Bereitstellung zu validieren:
 
-* Vergewissern Sie sich, dass der [!DNL pipelined]-Prozess ausgeführt wird.
-* Prüfen Sie die Pipeline-Verbindungsprotokolle in der Datei &quot;pipelined.log&quot;.
+* Vergewissern Sie sich, dass der `pipelined`-Prozess ausgeführt wird.
+* Überprüfen Sie die `pipelined.log` für Pipeline-Verbindungsprotokolle.
 * Überprüfen Sie, ob die Verbindung besteht und Pings empfangen werden. Kunden gehosteter Bereitstellungen können über die Client-Konsole &quot;Monitoring&quot; verwenden.

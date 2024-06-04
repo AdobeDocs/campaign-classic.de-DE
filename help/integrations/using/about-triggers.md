@@ -7,10 +7,10 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 audience: integrations
 content-type: reference
 exl-id: 0e337620-a49f-4e14-8c67-9279d74736f1
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: ht
-source-wordcount: '261'
-ht-degree: 100%
+source-git-commit: 271e0f9fde0cbfb016e201c8390b26673d8fc696
+workflow-type: tm+mt
+source-wordcount: '258'
+ht-degree: 91%
 
 ---
 
@@ -20,9 +20,9 @@ ht-degree: 100%
 
 >[!CAUTION]
 >
->Diese Funktion ist nicht im Produkt vorkonfiguriert. Für diese Implementierung müssen Sie zunächst ein Ticket beim Adobe-Support öffnen. Sie können dann die auf dieser [Seite](../../integrations/using/configuring-pipeline.md#prerequisites) beschriebenen Schritte durchführen.
+>Diese Funktion ist nicht im Produkt vorkonfiguriert. Wenden Sie sich für diese Implementierung an Ihren Adobe-Support-Mitarbeiter/Kundendienst. Sie können dann die auf dieser [Seite](../../integrations/using/configuring-pipeline.md#prerequisites) beschriebenen Schritte durchführen.
 
-[!DNL Triggers] führen nach der Aktion eines Benutzers in einem kurzen Zeitraum Marketing-Aktionen aus. Die typische Reaktionszeit beträgt weniger als eine Stunde.
+[!DNL Triggers] führen nach der Aktion eines Benutzers innerhalb kurzer Zeit Marketing-Aktionen aus. Die typische Reaktionszeit beträgt weniger als eine Stunde.
 
 Dadurch werden flexiblere Integrationen möglich, da der Konfigurationsaufwand minimal ist und keine Drittanbieter beteiligt sind.
 Unterstützt werden auch große Traffic-Volumen, ohne dass die Performance von Marketing-Aktivitäten leidet. Beispielsweise kann die Integration eine Million Auslöser pro Stunde verarbeiten.
