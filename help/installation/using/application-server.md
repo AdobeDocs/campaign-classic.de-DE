@@ -8,20 +8,20 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 87103c31-1530-4f8d-ab3a-6ff73093b80c
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 30670fba2fb84b968ef2e8a8f24746c81cc05f57
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '565'
 ht-degree: 3%
 
 ---
 
 # Anwendungs-Server{#application-server}
 
-
-
 Die erforderlichen Datenbankzugriffsebenen müssen auf dem Server installiert sein und über das Adobe Campaign-Konto zugänglich sein.
 
 ## Java Development Kit - JDK {#java-development-kit---jdk}
+
+Java Development Kit (JDK) ist ein Software Development Kit. Es ist die grundlegende Komponente, die die Java-Anwendungs- und Java-Applet-Entwicklung ermöglicht.
 
 Der dynamische Web-Seiten-Generator verwendet die JSP 1.2-Technologie. Dazu ist eine Tomcat-Engine (von Apache) in der Anwendung enthalten. Dazu ist ein Java Development Kit (JDK) erforderlich, das auf allen Servern installiert ist, auf denen die Adobe Campaign-Anwendung installiert ist.
 
@@ -31,33 +31,46 @@ Der Antrag wurde für das Java Development Kit (JDK) genehmigt, das von Oracle e
 
 Die unterstützten Versionen werden in Campaign beschrieben. [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md).
 
->[!NOTE]
->
->Es kann mit der entsprechenden JDK-Version installiert werden, die bereits von anderen Anwendungen auf dem Computer verwendet wird.
->  
->Bei der Installation müssen Sie die Integration mit den Webbrowsern nicht durchführen.
->
->Auf einem Computer, der nur Versandagenten ausführt (**nlserver mta** Prozess) oder dem Workflow-Server (**nlserver wfserver** Prozess), ist die Installation eines JDK nicht erforderlich.
 
-Um Java JDK herunterzuladen, verbinden Sie sich mit: [https://www.oracle.com/technetwork/java/javase/downloads/index.html](https://www.oracle.com/technetwork/java/javase/downloads/index.html).
 
-**Warnung: Sie müssen ein JDK herunterladen, kein JRE.**
+### Empfehlungen
+
+Java Development Kit kann mit der entsprechenden JDK-Version installiert werden, die bereits von anderen Anwendungen auf dem Computer verwendet wird.
+
+Bei der Installation des JDK ist die Integration mit den Webbrowsern nicht erforderlich.
+
+Auf einem Computer, der nur Versandagenten ausführt (**nlserver mta** Prozess) oder dem Workflow-Server (**nlserver wfserver** Prozess), ist die Installation eines JDK nicht erforderlich.
+
 
 >[!CAUTION]
 >
->Um die Leistung des Plattformbetriebs zu erhalten und die Kompatibilität mit der installierten Version sicherzustellen, müssen Sie die automatischen JDK-Aktualisierungsfunktionen in Windows und Linux deaktivieren.
+> Um die Leistung des Plattformbetriebs zu erhalten und die Kompatibilität mit der installierten Version sicherzustellen, müssen Sie die automatischen JDK-Aktualisierungsfunktionen in Windows und Linux deaktivieren.
+>
+> Beim Aktualisieren Ihrer Java-Version müssen Sie zunächst die vorherige Version deinstallieren. Beide Versionen von Java, die auf demselben Computer installiert sind, können Konflikte verursachen.
 
-Um JDSL in einer Linux-Umgebung zu installieren, ist es vorzuziehen, einen Package Manager zu verwenden.
 
-Verwenden Sie in Debian 8 und 9 den folgenden Befehl:
+### Installationsschritte
 
-```
+Java Development Kit ist plattformspezifisch: Für jedes Betriebssystem sind separate Installationsprogramme erforderlich.
+
+Um Java JDK herunterzuladen, verbinden Sie sich mit [Oracle-Website](https://www.oracle.com/technetwork/java/javase/downloads/index.html){target="_blank"}.
+
+>[!CAUTION]
+>
+> Laden Sie unbedingt ein Java Development Kit (JDK) herunter, nicht eine Java Runtime Environment (JRE).
+
+
+Um die JDSL in einer Linux-Umgebung zu installieren, empfiehlt Adobe die Verwendung eines Paketmanagers.
+
+Verwenden Sie für Debian den folgenden Befehl:
+
+```sql
 aptitude install openjdk-8-jdk
 ```
 
-Verwenden Sie für RHEL 7 den folgenden Befehl:
+Verwenden Sie für RHEL den folgenden Befehl:
 
-```
+```sql
 yum install java-1.8.0-openjdk
 ```
 
@@ -65,9 +78,13 @@ yum install java-1.8.0-openjdk
 
 Unter Linux muss OpenSSL installiert sein. Adobe Campaign unterstützt OpenSSL-Version 1.0.2 oder höher.
 
-## Berichtexport {#exporting-reports}
+## Berichte exportieren {#exporting-reports}
 
-Mit Adobe Campaign können Sie Plattformberichte im Microsoft Excel- und Adobe PDF-Format exportieren. Für das Microsoft Excel-Format verwendet Adobe Campaign **LibreOffice**. Für das Adobe PDF-Format verwendet Adobe Campaign die **PhantomJS** Konverter. PhantomJs ist im Factory-Paket enthalten und LibreOffice muss auf den Computern installiert sein, auf denen der Adobe Campaign-Anwendungsserver ausgeführt wird (**nlserver web** Prozess).
+Sie können Adobe Campaign verwenden, um Berichte in Microsoft Excel und Adobe PDF zu exportieren.
+
+* Beim Excel-Format von Microsoft verlässt sich Adobe Campaign auf **LibreOffice**.
+
+* Für das Adobe PDF-Format verwendet Adobe Campaign die **PhantomJS** Konverter. PhantomJs ist im Factory-Paket enthalten und LibreOffice muss auf den Computern installiert sein, auf denen der Adobe Campaign-Anwendungsserver ausgeführt wird (**nlserver web** Prozess).
 
 >[!NOTE]
 >
