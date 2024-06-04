@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: b7339512d85a7bd0c5aae24af46739daafb1ba51
+source-git-commit: 7e1c3b256cf43232e49d9daa0bf44d1e114b565b
 workflow-type: tm+mt
 source-wordcount: '753'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -100,7 +100,7 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 <p>11</p>
 <p>9</p>
 <p>8</p>
-<p>Campaign unterstützt das von Oracle und OpenJDK entwickelte Java Development Kit (JDK).</p>
+<p>Weitere Informationen zu JDK und Campaign finden Sie auf [dieser Seite](../../installation/using/application-server.md#java-development-kit—jdk).</p>
 </td>
 </tr>
 <tr>
