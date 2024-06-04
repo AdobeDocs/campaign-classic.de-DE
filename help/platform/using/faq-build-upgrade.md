@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: ht
-source-wordcount: '1999'
-ht-degree: 100%
+source-git-commit: 991ad88101468c3e7f5d676586dfdd05d63e7c6d
+workflow-type: tm+mt
+source-wordcount: '2045'
+ht-degree: 96%
 
 ---
 
@@ -122,13 +122,17 @@ Für gehostete Kunden fallen für die Installation des Build-Upgrades keine Kost
 
 Nein. Der Server wird während des Upgrades deaktiviert, um die Datenintegrität zu schützen. Danach wird er neu gestartet und alle Dienste werden fortgesetzt.
 
+## Kann ich meine Campaign-Instanz während des Aktualisierungsprozesses weiterhin verwenden?
+
+Nein. Adobe empfiehlt, während des Wartungszeitraums alle Kampagnenvorgänge zu deaktivieren, um zu vermeiden, dass Daten fehlen oder verloren gehen. Sie dürfen während der Aktualisierung keine Kampagnen, Abfragen, Workflows oder Sendungen erstellen oder bereitstellen.
+
 ## Werden während des Upgrades weiterhin E-Mails von Message Center gesendet?
 
 Wenn Message Center (RT) aktualisiert wird, werden keine E-Mails von dieser Instanz gesendet. Hinweis: Alle Prozesse, die angehalten werden, wenn das Campaign-System abgeschaltet wird, werden automatisch wieder fortgesetzt, wenn das System wieder aktiviert wird. Hierzu zählen auch aktive oder geplante Sendungen, das Tracking und die Berechnung von Metriken für zuvor durchgeführte Sendungen.
 
 ## Werden Workflows und Sendungen weiterhin durchgeführt?
 
-Nein. Während des Build-Upgrades werden sowohl Workflows als auch Mail-Dienste angehalten. Das bedeutet, dass weder Workflows noch Sendungen durchgeführt werden. Diese werden fortgesetzt, sobald das System wieder gestartet wurde. Adobe empfiehlt jedoch, dass alle kritischen Pfad-Workflows nach dem Upgrade überprüft werden, um sicherzustellen, dass sie aktiv und fehlerfrei sind.
+Nein. Während des Build-Upgrades werden sowohl Workflows als auch Mail-Dienste angehalten. Das bedeutet, dass weder Workflows noch Sendungen durchgeführt werden. Diese werden fortgesetzt, sobald das System wieder gestartet wurde. Adobe empfiehlt jedoch dringend, dass alle kritischen Pfad-Workflows nach einer Aktualisierung überprüft werden, um sicherzustellen, dass sie ausgeführt und fehlerfrei sind.
 
 ## Funktionieren meine Tracking-Links während des Upgrades?
 
