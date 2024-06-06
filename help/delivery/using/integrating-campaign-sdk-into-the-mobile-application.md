@@ -8,7 +8,7 @@ exl-id: a5f6b82d-5561-4e56-b2ed-7fd6fd8c2b55
 source-git-commit: 00d46a7508def4d472e6bb8940a4d40a23c4fb07
 workflow-type: tm+mt
 source-wordcount: '987'
-ht-degree: 88%
+ht-degree: 95%
 
 ---
 
@@ -152,7 +152,7 @@ Die Registrierungsfunktion ermöglicht
 
   Trackingfunktionen ermöglichen das Tracking der Benachrichtigungsanzeige (Impression) und die Aktivierung der Benachrichtigungen (Öffnungen).
 
-  So verfolgen Sie die Anzeige der Benachrichtigung (durch Aufruf der **notifyReceive** -Funktion des SDK), folgen Sie der unten stehenden Implementierung. Wenn Sie FCM (Firebase Cloud Messaging) verwenden, empfehlen wir Ihnen, die **notifyReceive** Funktion beim **onMessageReceived** -Funktion vom Android-System aufgerufen.
+  Um die Benachrichtigungsanzeige zu tracken (durch Aufruf der SDK-Funktion **notifyReceive**), folgen Sie der unten beschriebenen Implementierung. Bitte beachten Sie: Wenn Sie FCM (Firebase Cloud Messaging) verwenden, empfehlen wir, beim Aufruf der Funktion **onMessageReceived** durch das Android-System die Funktion **notifyReceive** zu nutzen.
 
   ```
   package com.android.YourApplication;
@@ -296,7 +296,7 @@ Die Registrierungsfunktion ermöglicht
 
   >[!NOTE]
   >
-  >Ab Version 7.0, sobald die Variable **`application:didReceiveRemoteNotification:fetchCompletionHandler`** -Funktion implementiert ist, ruft das Betriebssystem nur diese Funktion auf. Die **`application:didReceiveRemoteNotification`** -Funktion nicht aufgerufen.
+  >Ab Version 7.0 ruft das Betriebssystem, sobald die Funktion **`application:didReceiveRemoteNotification:fetchCompletionHandler`** implementiert ist, nur diese Funktion auf. Die Funktion **`application:didReceiveRemoteNotification`** wird daher nicht aufgerufen.
 
 +++
 

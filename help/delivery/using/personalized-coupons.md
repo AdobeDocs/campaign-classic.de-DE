@@ -9,7 +9,7 @@ exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
 source-git-commit: 8e5a328bee7701adfedec6a533cc21b4ce548187
 workflow-type: tm+mt
 source-wordcount: '992'
-ht-degree: 90%
+ht-degree: 95%
 
 ---
 
@@ -46,7 +46,7 @@ Bevor Sie die folgenden Schritte ausführen, entscheiden Sie sich für einen Gut
 1. Wählen Sie das **[!UICONTROL Startdatum]** und das **[!UICONTROL Enddatum]**, um den Gültigkeitszeitraum des Gutscheins festzulegen.
 1. Wählen Sie in **[!UICONTROL Coupontyp]** zwischen einem anonymen und einem individuellen Gutschein.
 
-   **[!UICONTROL Anonyme Gutscheine]** : Ein anonymer Gutschein ist für alle Empfänger identisch. Vergewissern Sie sich, dass Anonym im **Coupontyp** Menü und klicken Sie **Speichern** , um den Gutschein zu generieren.
+   **[!UICONTROL Anonyme Gutscheine]**: Anonyme Gutscheine sind für alle Empfänger gleich. Bestätigen Sie im Menü **Coupontyp** Ihre Auswahl eines anonymen Gutscheins und wählen Sie danach **Speichern**, um den Gutschein zu erstellen.
 
    **[!UICONTROL Individuelle Gutscheine]**: Individuelle Gutscheine können mit zusätzlichen Couponcodes weiter personalisiert werden. Beispiel: Für den Ausverkauf in einem Sportgeschäft wird ein individueller Gutschein erstellt. Doch die Empfängerliste ist lang und die Empfänger sind an unterschiedlichen Sportarten interessiert. Deshalb können Sie dem individuellen Gutschein einen Codenamen für die jeweilige Sportart hinzufügen (z. B. Fußball, Baseball) und die Codes an die entsprechenden Empfänger senden.
 
@@ -119,7 +119,7 @@ Im folgenden Beispiel wird von der Startseite aus ein Versand erstellt. Weiterf�
 
    ![](assets/deliv_coup_12.png)
 
-1. Führen Sie einen Test durch, um den Namen zu bestätigen, den Sie dem Gutschein zugewiesen haben. Navigieren Sie zu **[!UICONTROL Vorschau]** Registerkarte und klicken Sie auf **[!UICONTROL Personalisierung testen]**. Wählen Sie einen Empfänger für den Test aus.
+1. Führen Sie einen Test durch, um den von Ihnen dem Gutschein zugewiesenen Namen zu überprüfen. Klicken Sie dazu auf der Registerkarte **[!UICONTROL Vorschau]** auf **[!UICONTROL Personalisierung testen]**. Wählen Sie eine Empfängerin bzw. einen Empfänger für den Test aus.
 
    ![](assets/deliv_coup_13.png)
 

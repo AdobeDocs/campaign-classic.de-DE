@@ -9,7 +9,7 @@ exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
 source-git-commit: 8fbfc211c4e791b324c34d3d180daa7597c00c7f
 workflow-type: tm+mt
 source-wordcount: '1221'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -30,9 +30,9 @@ Folgende Versandkanäle stehen in Adobe Campaign zur Verfügung:
 1. **E-Mail-Kanal**: Ein E-Mail-Versand richtet personalisierte elektronische Nachrichten an eine zuvor bestimmte Zielpopulation. Siehe [Über den E-Mail-Kanal](about-email-channel.md).
 1. **Briefpost-Kanal**: Ein Briefpost-Versand erzeugt eine Ausgabedatei, die die Daten der Zielpopulation enthält. Weitere Informationen finden Sie unter [Über den Briefpost-Kanal](about-direct-mail-channel.md).
 1. **Mobile-Kanal**: Ein Versand über den Mobile-Kanal richtet personalisierte SMS- oder LINE-Nachrichten an eine zuvor bestimmte Zielpopulation. Siehe [SMS-Kanal](sms-channel.md).
-1. **Mobile-App-Kanal**: Mit Mobile-App-Sendungen können Sie Benachrichtigungen an iOS- und Android-Systeme senden. Siehe Abschnitt [Mobile-App-Kanal](about-mobile-app-channel.md) Kapitel.
+1. **Mobile-App-Kanal**: Mit Mobile-App-Sendungen können Sie Benachrichtigungen an iOS- und Android-Systeme senden. Siehe hierzu das Kapitel [Mobile-App-Kanal](about-mobile-app-channel.md).
 
-   Weitere Kanäle werden beschrieben unter [diesem Abschnitt](#other-channels).
+   Sonstige Kanäle werden in [diesem Abschnitt](#other-channels) beschrieben.
 
    >[!NOTE]
    >
@@ -54,8 +54,8 @@ Der [E-Mail-Kanal](about-email-channel.md) ist einer der wichtigsten Kanäle in 
 Verschiedene Typen von E-Mails können gesendet werden:
 
 * Einmalige E-Mails: E-Mails, die ein einziges Mal an eine definierte Zielgruppe gesendet werden. Sie werden zur Verbreitung spezifischer Inhalte verwendet, die nur ein einziges Mal vorbereitet und gesendet werden (Newsletter, Werbe-E-Mails etc.).
-* Wiederkehrende E-Mails: In einer Kampagne wird regelmäßig dieselbe E-Mail gesendet und jeder Versand und seine Berichte werden regelmäßig aggregiert. Dieselbe E-Mail wird gesendet, in der Regel aber an eine andere Zielgruppe, basierend auf der für den Versandtag infrage kommenden Zielgruppe. Ein häufiges Beispiel ist eine Geburtstags-E-Mail. Weitere Informationen hierzu finden Sie unter [Wiederkehrende Sendungen](../../workflow/using/recurring-delivery.md).
-* Transaktions-E-Mails: einzelne E-Mails, die auf der Basis des Kundenverhaltens ausgelöst werden. Siehe auch [Transaktionsnachrichten](../../message-center/using/about-transactional-messaging.md).
+* Wiederkehrende E-Mails: In einer Kampagne wird ein und dieselbe E-Mail regelmäßig gesendet und die Sendungen und Berichte werden regelmäßig aggregiert. Die gesendete E-Mail bleibt unverändert, doch die Zielgruppe ändert sich je nach Versandtag. Ein Beispiel dafür sind Geburtstags-E-Mails. Weiterführende Informationen dazu finden Sie unter [Wiederkehrender Versand](../../workflow/using/recurring-delivery.md).
+* Transaktions-E-Mails: einzelne E-Mails, die auf der Basis des Kundenverhaltens ausgelöst werden. Siehe [Transaktionsnachrichten](../../message-center/using/about-transactional-messaging.md).
 
 Weiterführende Informationen zum Versand und Empfehlungen dazu finden Sie im Abschnitt [Best Practices beim Versand](delivery-best-practices.md).
 
@@ -114,11 +114,11 @@ Workflows bieten abhängig vom zu verwendeten Kanal auch spezifische Versandakti
 
 Mit einem **wiederkehrenden Versand** können Sie jedes Mal, wenn eine bestimmte Aktivität ausgeführt wird, einen neuen Versand erstellen. Dadurch müssen Sie für sich wiederholende Aufgaben nicht jedes Mal erneut einen Versand erstellen.
 
-Wenn Sie diese Aktivität beispielsweise einmal im Monat ausführen, ergibt das im Jahr 12 Sendungen.
+Wenn Sie diese Aktivität beispielsweise einmal im Monat ausführen, ergibt das im Jahr 12 Sendungen.
 
-Wiederkehrende Sendungen werden über Workflows mit der Aktivität [](../../workflow/using/recurring-delivery.md)Wiederkehrender Versand erstellt. Ein Beispiel für diese Aktivität finden Sie in diesem Abschnitt: [Erstellen eines wiederkehrenden Versands in einem Zielgruppen-Workflow](../../workflow/using/sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
+Wiederkehrende Sendungen werden über Workflows mit der Aktivität [](../../workflow/using/recurring-delivery.md)Wiederkehrender Versand erstellt. Ein Beispiel für diese Aktivität finden Sie im Abschnitt [Erstellen eines wiederkehrenden Versands in einem Zielgruppen-Workflow](../../workflow/using/sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
 
-### Versand (fortlaufend) {#continuous-delivery}
+### Fortlaufender Versand {#continuous-delivery}
 
 Bei einem **fortlaufenden Versand** können Sie einem bestehenden Versand neue Empfänger hinzufügen, sodass Sie nicht jedes Mal einen neuen Versand erstellen müssen.
 

@@ -9,7 +9,7 @@ exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
 source-git-commit: efd333aed2b14667dc95f92341fc16482f0fb6aa
 workflow-type: tm+mt
 source-wordcount: '1624'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -107,7 +107,7 @@ Wenn Sie also beispielsweise einen Versand für 8 Uhr Brüsseler Zeit terminiere
 
 ## Versenden in mehreren Schüben {#sending-using-multiple-waves}
 
-Um eine gleichmäßige Auslastung der Kapazitäten zu gewährleisten, können Sie Sendungen in mehrere Schübe unterteilen. Konfigurieren Sie die Anzahl der Schübe und ihre Größe in Bezug auf den gesamten Versand.
+Um eine gleichmäßige Auslastung sicherzustellen, können Sie Sendungen in mehrere Schübe unterteilen. Konfigurieren Sie die Anzahl der Schübe und ihre Größe in Bezug auf den gesamten Versand.
 
 >[!NOTE]
 >
@@ -120,7 +120,7 @@ Um eine gleichmäßige Auslastung der Kapazitäten zu gewährleisten, können Si
 
 1. Zur Konfiguration von Schüben haben Sie die folgenden Möglichkeiten:
 
-   * Definieren Sie die Größe für jeden Schub. Wenn Sie beispielsweise im entsprechenden Feld **[!UICONTROL 30 %]** eingeben, enthält jeder Schub 30 % der Versandnachrichten und der letzte Schub 10 % der Nachrichten.
+   * Definieren Sie die Größe eines jeden Schubs. Wenn Sie beispielsweise im entsprechenden Feld **[!UICONTROL 30 %]** eingeben, enthält jeder Schub 30 % der Versandnachrichten und der letzte Schub 10 % der Nachrichten.
 
      Geben Sie im Feld **[!UICONTROL Zeitraum]** die Verzögerung zwischen dem Start zweier aufeinanderfolgender Schübe an. Wenn Sie zum Beispiel **[!UICONTROL 2d]** eingeben, startet der erste Schub sofort, der zweite Schub startet in zwei Tagen, der dritte in vier Tagen usw.
 
@@ -154,15 +154,15 @@ Im Folgenden finden Sie die häufigsten Anwendungsbeispiele für Schübe.
 
   Um zu verhindern, dass Ihre Sendungen als Spam eingestuft werden, können Sie das gesendete Volumen schrittweise mithilfe von Schüben erhöhen. Damit gewährleisten Sie eine problemlose Entwicklung in der Anfangsphase und die Verringerung der Anzahl der ungültigen Adressen.
 
-  Verwenden Sie dazu die Option **[!UICONTROL Schübe in einem Kalender definieren]**. Wählen Sie beispielsweise für den ersten Schub 10 %, für den zweiten 15 % usw.
+  Verwenden Sie dazu die Option **[!UICONTROL Schübe in einem Kalender definieren]**. Wählen Sie beispielsweise für den ersten Schub 10 %, für den zweiten 15 % usw. aus.
 
   ![](assets/s_ncs_user_wizard_waves_ramp-up.png)
 
 * **Kampagnen, die ein Callcenter beinhalten**
 
-  Bei der telefonischen Verwaltung einer Treuekampagne verfügt Ihr Unternehmen über eine begrenzte Kapazität zur Verarbeitung der Anzahl der Anrufe an Abonnenten.
+  Bei telefonischen Treuekampagnen haben Unternehmen oft nur begrenzte Kapazitäten, um Abonnierende anzurufen.
 
-  Mithilfe von Schüben können Sie die Anzahl der Nachrichten auf 20 pro Tag beschränken, beispielsweise unter Berücksichtigung der täglichen Verarbeitungskapazität eines Callcenters.
+  Mithilfe von Schüben kann die Anzahl der Nachrichten beispielsweise auf 20 pro Tag beschränkt werden, sofern dies der täglichen Verarbeitungskapazität eines Callcenters entspricht.
 
   Wählen Sie dazu die Option **[!UICONTROL Mehrere Schübe derselben Größe planen]**. Geben Sie **[!UICONTROL 20]** als Schubgröße und **[!UICONTROL 1d]** im Feld **[!UICONTROL Zeitraum]** ein.
 
@@ -184,7 +184,7 @@ Standardmäßig sind innerhalb der ersten 24 Stunden des Versands fünf erneute
 
 ## Definieren des Gültigkeitszeitraums {#defining-validity-period}
 
-Nach dem Start des Versands können die Nachrichten (und alle weiteren Zustellversuche) bis zum Ablauf der Versandgültigkeit gesendet werden. Dies wird in den Versandeigenschaften über die Variable **[!UICONTROL Gültigkeit]** Registerkarte.
+Nach dem Start des Versands können die Nachrichten (und alle weiteren Zustellversuche) bis zum Ablauf der Versandgültigkeit gesendet werden. Dies wird auf der Registerkarte **[!UICONTROL Gültigkeit]** der Versandeigenschaften festgelegt.
 
 ![](assets/s_ncs_user_email_del_valid_period.png)
 

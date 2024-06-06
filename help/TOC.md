@@ -108,7 +108,7 @@ ht-degree: 99%
          + [Verbinden mit Salesforce.com](platform/using/crm-sfdc.md)
          + [Synchronisieren von Daten mit dem CRM](platform/using/crm-data-sync.md)
       + Adobe Analytics Connector{#analytics-connector}
-         + [Erste Schritte mit Adobe Analytics Connector](platform/using/gs-aa.md)
+         + [Erste Schritte mit dem Adobe Analytics Connector](platform/using/gs-aa.md)
          + [Bereitstellung des Adobe Analytics Connectors](platform/using/adobe-analytics-provisioning.md)
          + [Migrieren zum Adobe Analytics Connector](technotes/using/aa-connector-migration.md)
    + [Hilfe- und Support-Optionen](support.md)
