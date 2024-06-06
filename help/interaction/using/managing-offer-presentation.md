@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: 6158ffaa-cb08-4f77-82b8-b3e5e1bf7fd7
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1098'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -67,7 +67,7 @@ Auf die Anwendungskriterien kann im **[!UICONTROL Allgemein]**-Tab der Typologie
 
 Die im Tab **[!UICONTROL Angebotsunterbreitung]** konfigurierten Dimensionen für die Unterbreitungsregel müssen mit denen auf Umgebungsebene übereinstimmen.
 
-Die **[!UICONTROL Zielgruppendimension]** entspricht der Empfängertabelle (standardmäßig: `nms:recipients`), die die Angebotsvorschläge erhalten. Die **[!UICONTROL Speicherdimension]** entspricht der Tabelle, die den mit der Zielgruppendimension verknüpften Vorschlagsverlauf enthält (standardmäßig: `nms:propositionRcp`).
+Die **[!UICONTROL Zielgruppendimension]** entspricht der Tabelle (standardmäßig: `nms:recipients`) mit den Empfängern , die die Angebotsvorschläge erhalten. Die **[!UICONTROL Speicherdimension]** entspricht der Tabelle (standardmäßig: `nms:propositionRcp`), die den mit der Zielgruppendimension verknüpften Vorschlagsverlauf enthält.
 
 ![](assets/offer_typology_009.png)
 
@@ -106,7 +106,7 @@ Standardmäßig kann nach Kanal, betroffenen Angeboten und Vorschlagstatus gefil
 
 ![](assets/offer_typology_014.png)
 
-Diese Kriterien stellen die häufigsten Anwendungen der Unterbreitungsregeln dar. Um andere Kriterien zu verwenden, können Sie eine Abfrage mit der **[!UICONTROL Vorschläge begrenzen...]** -Link. Lesen Sie diesbezüglich auch den Abschnitt [Abfrage bezüglich der Vorschläge erstellen](#creating-a-query-on-propositions).
+Hierbei handelt es sich um die gängigsten Anwendungen für Unterbreitungsregeln. Wenn Sie andere Kriterien verwenden möchten, haben Sie die Möglichkeit, mithilfe des Links **[!UICONTROL Vorschläge begrenzen...]** eine Abfrage zu konfigurieren. Lesen Sie diesbezüglich auch den Abschnitt [Abfrage bezüglich der Vorschläge erstellen](#creating-a-query-on-propositions).
 
 * **Kanalfilter**
 

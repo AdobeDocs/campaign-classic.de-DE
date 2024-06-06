@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: unitary-interactions
 exl-id: 3eaef689-44fa-41b3-ade8-9fe447e165ec
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '317'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ Als Antwort auf die Abfrage gibt der SOAP-Dienst folgende Parameter zurück:
 Ergänzen Sie die URL mit dem Befehl **nms:interaction#UpdateStatus** und folgenden Parametern:
 
 * **proposition** - die die vom Angebotsmodul ausgegebene Vorschlagskennung enthaltende Zeichenfolge. Siehe [Angebotsvorschläge](#offer-proposition).
-* **status**: String-Typ, der den neuen Status des Angebots angibt. Die möglichen Werte sind im Abschnitt **propositionStatus** Auflistung, in der **nms:common** Schema. Beispielsweise entspricht die vordefinierte Zahl 3 dem **Akzeptiert** -Status.
+* **status** - Zeichenfolge, die den neuen Status des Angebots angibt. Die möglichen Werte sind in der Auflistung **propositionStatus**, im Schema **nms:common** aufgeführt. Beispielsweise entspricht die Zahl 3 werksmäßig dem Status **Akzeptiert**.
 * **context** - XML-Element, mit dem Sie Kontextdaten zum Platzierungsschema hinzufügen können. Wenn das verwendete Schema **nms:interaction** lautet, sollte **`<empty>`** hinzugefügt werden.
 
 ## Anwendungsbeispiel eines SOAP-Aufrufs {#example-using-a-soap-call}

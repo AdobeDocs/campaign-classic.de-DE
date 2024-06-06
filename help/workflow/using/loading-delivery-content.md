@@ -5,9 +5,9 @@ description: Laden des Versandinhalts
 feature: Workflows
 exl-id: a52baffd-402b-4b33-ab72-ac954e4dee85
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '345'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ Gehen Sie dazu wie folgt vor:
 
    ![](assets/delivery_loadcontent_script.png)
 
-1. Speichern und starten Sie den Workflow. Ein neuer Versand mit dem geladenen Inhalt wird unter erstellt. **[!UICONTROL Kampagnenverwaltung]** > **[!UICONTROL Sendungen]**.
+1. Speichern und starten Sie den Workflow. Unter **[!UICONTROL Kampagnenverwaltung]** > **[!UICONTROL Sendungen]** wird ein neuer Versand mit dem geladenen Inhalt erstellt.
 
 >[!NOTE]
 >

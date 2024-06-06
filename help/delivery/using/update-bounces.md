@@ -8,9 +8,9 @@ hide: true
 hidefromtoc: true
 exl-id: 7a9afe0a-0219-40f1-9fe2-6374db8d555c
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '503'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -26,9 +26,9 @@ Globale Probleme bei Apple oder Gmail können beispielsweise dazu führen, dass 
 
 * „550 5.1.1 &#39;E-Mail-Adresse&#39;: Benutzer oder Benutzerin erfolgreich gefunden, aber kein Benutzerdatensatz gefunden.“
 
-* Empfänger &quot;550 &#39;email address&#39; abgelehnt
+* „550 &#39;E-Mail-Adresse&#39; Empfänger oder Empfängerin abgelehnt“
 
-Beachten Sie, dass bei verzögerten Bounces mit der Meldung &quot;452 angeforderte Aktion abgebrochen: später erneut versuchen&quot;beobachtet wird. Diese werden automatisch wiederholt und es sind keine Aktionen erforderlich. Die Situation sollte sich verbessern, sobald der ISP seine volle Kapazität wieder erreicht.
+Bitte beachten: Wenn Aufschub-Bounces mit der Nachricht „452 angeforderte Aktion abgebrochen: Versuchen Sie es später erneut“ auftreten, werden diese automatisch wiederholt und es sind keine Aktionen erforderlich. Die Situation sollte sich verbessern, sobald der ISP seine volle Kapazität wieder erreicht.
 
 >[!NOTE]
 >

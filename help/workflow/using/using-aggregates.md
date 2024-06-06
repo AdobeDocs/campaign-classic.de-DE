@@ -5,9 +5,9 @@ description: Machen Sie sich mit der Verwendung von Aggregaten vertraut
 feature: Workflows
 exl-id: 12b173e9-5068-4d45-9e1e-2aecc9866e9c
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '673'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -33,11 +33,11 @@ Die Konfiguration eines Empfängerfilters vom Typ **Erstellungsdatum = max (Erst
 1. Erstellen Sie eine Abfrage. Ziel ist die Berechnung des letzten bekannten Erstellungsdatums aus allen in der Datenbank enthaltenen Empfängern. Die Abfrage enthält somit keinen Filter.
 1. Klicken Sie auf den Link **[!UICONTROL Daten hinzufügen...]**.
 1. Wählen Sie in den aufeinanderfolgenden Fenstern die Optionen **[!UICONTROL Daten in Relation mit der Filterdimension]** und **[!UICONTROL Daten der Filterdimension]**.
-1. Im **[!UICONTROL Daten zum Hinzufügen]** eine Spalte zur Berechnung des Höchstwerts für **Erstellungsdatum** in der Empfängertabelle angezeigt. Sie können den Ausdruckseditor verwenden oder **max(@created)** direkt in ein Feld im **[!UICONTROL Ausdruck]** Spalte. Klicken Sie anschließend auf **[!UICONTROL Beenden]** Schaltfläche.
+1. Definieren Sie im Fenster **[!UICONTROL Hinzuzufügende Daten]** eine neue Spalte zur Berechnung des maximalen Werts im Feld **Erstellungsdatum** der Empfängertabelle. Verwenden Sie hierzu den Ausdruckseditor oder geben Sie direkt **max(@created)** in der **[!UICONTROL Ausdruck]**-Spalte ein. Klicken Sie dann auf **[!UICONTROL Beenden]**.
 
    ![](assets/datamanagement_usecase_2.png)
 
-1. Klicks **[!UICONTROL Zusätzliche Daten bearbeiten]** then **[!UICONTROL Erweiterte Parameter...]**. Überprüfen Sie die **[!UICONTROL Automatische Hinzufügung der Primärschlüssel der Zielgruppendimension deaktivieren]** -Option.
+1. Klicken Sie auf **[!UICONTROL Zusätzliche Daten bearbeiten...]** und dann auf **[!UICONTROL Erweiterte Parameter…]**. Aktivieren Sie die Option **[!UICONTROL Automatisches Hinzufügen der Primärschlüssel der Zielgruppendimension deaktivieren]**.
 
    Diese Option ermöglicht es, nicht alle Empfänger als Ergebnis auszugeben und nur die Daten beizubehalten, die explizit hinzugefügt wurden. Hier handelt es sich um das Datum, an dem zuletzt ein Empfänger erstellt wurde.
 

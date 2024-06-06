@@ -6,9 +6,9 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Reporting, Monitoring
 exl-id: 05f76bdf-6dcd-4360-9e72-0ba6a4dd0d5e
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2661'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -109,7 +109,7 @@ Wählen Sie den Menüpunkt **[!UICONTROL Ausdruck]**, um die anzuzeigenden Werte
 
 * Erfassen Sie einen Titel, zum Beispiel in einer Header-Zelle.
 
-  Verwenden Sie dazu den gleichen Prozess wie beim Einfügen eines Felds in die Datenbank, wählen Sie jedoch keinen Ausdruck aus. Geben Sie den Titel im **[!UICONTROL Titel]** -Feld. Sie wird wie besehen angezeigt.
+  Gehen Sie hierzu vor wie beim Einfügen eines Datenbank-Felds, aber wählen Sie keinen Ausdruck aus. Erfassen Sie den Titel im Feld **[!UICONTROL Titel]**. Er wird genau so angezeigt.
 
 * Berechnen Sie ein Aggregat (Durchschnitt, Summe etc.) und lassen Sie es in einer Zelle anzeigen.
 
@@ -331,11 +331,11 @@ In diesem Schritt wird die erste Seite des Berichts konfiguriert. Gehen Sie wie 
 
 1. Markieren Sie diese Zelle, um die Fehlerrate der Sendungen als Bargraph darzustellen.
 
-   Rufen Sie dazu das Zellenformat auf und navigieren Sie dann zum **[!UICONTROL Mehr]** Registerkarte. Wählen Sie die **[!UICONTROL Wertleiste]** in der Dropdown-Liste ein und wählen Sie die **[!UICONTROL Zellenwert ausblenden]** -Option.
+   Gehen Sie hierzu in den Tab **[!UICONTROL Mehr]** des Zellenformats. Wählen Sie dort das Format **[!UICONTROL Bargraph]** in der Dropdown-Liste aus und aktivieren Sie die Option **[!UICONTROL Zellenwert ausblenden]**.
 
    ![](assets/s_advuser_report_listgroup_023.png)
 
-   Sie können nun eine Darstellung des Berichts anzeigen. Klicken Sie auf **[!UICONTROL Vorschau]** und wählen Sie die **[!UICONTROL Global]** -Option: Zeigt die Liste aller Sendungen in der Adobe Campaign-Datenbank an, die mit einer Kampagne verknüpft sind.
+   Sie können nun eine Darstellung des Berichts anzeigen. Klicken Sie auf die Registerkarte **[!UICONTROL Vorschau]** und wählen Sie die Option **[!UICONTROL Allgemein]** aus: Die Liste aller mit einer Kampagne verbundenen Sendungen aus der Adobe Campaign-Datenbank wird angezeigt.
 
    ![](assets/s_advuser_report_listgroup_025.png)
 
@@ -407,7 +407,7 @@ Es werden eine zweite Abfrage und eine zweite Seite hinzugefügt, um die Details
 1. Passen Sie die Tabelle im Tab **[!UICONTROL Daten]** wie folgt an:
 
    * Fügen Sie rechts zwei zusätzliche Spalten ein.
-   * Fügen Sie in der ersten Zelle der Detailzeile den **[!UICONTROL rowNum()-1]** Ausdruck zur Zählung der Zeilenanzahl. Ändern Sie dann das Format der Zelle: im **[!UICONTROL Extra]** Registerkarte auswählen **[!UICONTROL Farbregisterkarte]** und klicken **[!UICONTROL Ok]**.
+   * Fügen Sie in der ersten Zelle der Detailzeile den Ausdruck **[!UICONTROL rowNum()-1]** hinzu, um die Anzahl der Zeilen zu zählen. Ändern Sie anschließend das Format der Zelle: Wählen Sie auf der Registerkarte **[!UICONTROL Mehr]** die Option **[!UICONTROL Farbplakette]** aus und klicken Sie auf **[!UICONTROL OK]**.
 
      ![](assets/s_advuser_report_listgroup_018.png)
 
@@ -420,7 +420,7 @@ Es werden eine zweite Abfrage und eine zweite Seite hinzugefügt, um die Details
 
 1. Fügen Sie der Seite über das Kontextmenü ein Kreisdiagramm hinzu und geben Sie ihm den Titel **E-Mail-Domains**. Weitere Informationen finden Sie unter [Grafiktypen und ihre Parameter](../../reporting/using/creating-a-chart.md#chart-types-and-variants).
 1. Klicken Sie auf den Link **[!UICONTROL Grafikparameter...]** und deaktivieren Sie die Optionen **[!UICONTROL Titel anzeigen]** und **[!UICONTROL Legende anzeigen]**.
-1. Überprüfen Sie, ob keine Wertesortierung konfiguriert ist. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../reporting/using/processing-a-report.md#configuring-the-layout-of-a-descriptive-analysis-report).
+1. Stellen Sie sicher, dass keine Wertesortierung konfiguriert wurde. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../reporting/using/processing-a-report.md#configuring-the-layout-of-a-descriptive-analysis-report).
 
    ![](assets/s_advuser_report_listgroup_0191.png)
 
@@ -461,6 +461,6 @@ Durch Klick auf den Link einer der Sendungen wird die Verteilung dieses Versands
 
 Dieser Tabellentyp ermöglicht die Anzeige von Statistiken über die Datenbank.
 
-Die Konfiguration dieser Berichtstypen ähnelt der für den Analyse-Assistenten verwendeten. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-quantitative-distribution-template).
+Die Konfiguration derartiger Berichte entspricht der im Assistenten zur deskriptiven Analyse verwendeten. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-quantitative-distribution-template).
 
 Die Erstellung einer Pivot-Tabelle wird in [diesem Abschnitt](../../reporting/using/ac-cubes.md) beschrieben.

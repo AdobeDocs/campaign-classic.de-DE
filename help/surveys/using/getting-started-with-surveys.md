@@ -6,9 +6,9 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Surveys
 exl-id: 22e14b24-59ba-4a92-8ffb-f5336793d64f
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '986'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ Um eine neue Umfrage zu erstellen, rufen Sie die Registerkarte **[!UICONTROL Kam
 
 ## Schritt 2: Auswählen der Vorlage {#step-2---selecting-the-template}
 
-Wählen Sie eine Umfragevorlage aus und geben Sie der Umfrage einen Namen. Dieser Name wird von den Endbenutzern nicht angezeigt, ermöglicht jedoch die Identifizierung der Umfrage innerhalb von Adobe Campaign. Klicks **[!UICONTROL Speichern]** , um die Umfrage zur Liste der Webanwendungen hinzuzufügen.
+Wählen Sie eine Umfragevorlage aus und benennen Sie die Umfrage. Dieser Name ist für die Endbenutzer unsichtbar, er dient lediglich zur Identifikation der Umfrage innerhalb von Adobe Campaign. Wählen Sie **[!UICONTROL Speichern]**, um die Umfrage zur Liste der Web-Anwendungen hinzuzufügen.
 
 ![](assets/s_ncs_admin_survey_wz_00.png)
 
@@ -61,13 +61,13 @@ Eine Umfrage muss **zumindest** die folgenden drei Komponenten enthalten: eine S
 
 ## Schritt 4: Erstellen des Seiteninhalts {#step-4---creating-the-page-content}
 
-Im folgenden Beispiel verwenden wir eine **[!UICONTROL Seite (V5-Kompatibilität)]** Geben Sie page ein. Der Zugriff auf diesen Seitentyp erfolgt über das erweiterte Menü der **[!UICONTROL Bearbeiten]** Registerkarte.
+Im folgenden Beispiel wird die Seite vom Typ **[!UICONTROL Seite (V5-Kompatibilität)]** verwendet. Der Zugriff auf diesen Seitentyp erfolgt über das erweiterte Menü auf der Registerkarte **[!UICONTROL Bearbeiten]**.
 
 ![](assets/s_ncs_admin_survey_pagev5.png)
 
 * **Eingabefelder hinzufügen**
 
-  Um den Inhalt der Seite zu erstellen, müssen Sie sie bearbeiten: Doppelklicken Sie dazu auf die **[!UICONTROL Seite]** -Objekt. Klicken Sie auf das erste Symbol in der Symbolleiste, um den Assistenten zur Felderstellung zu öffnen. Um ein Eingabefeld für den Benutzernamen zu erstellen, der im entsprechenden Feld des Empfängerprofils gespeichert werden soll, wählen Sie **[!UICONTROL Empfänger bearbeiten]**.
+  Um den Inhalt der Seite zu erstellen, müssen Sie sie bearbeiten: Doppelklicken Sie dazu auf das Objekt **[!UICONTROL Seite]**. Wählen Sie das erste Symbol in der Symbolleiste aus, um den Feld-Assistenten zu öffnen. Um ein Eingabefeld für den Benutzernamen zu erstellen, der im entsprechenden Feld des Empfängerprofils gespeichert werden soll, wählen Sie **[!UICONTROL Empfänger bearbeiten]**.
 
   ![](assets/s_ncs_admin_survey_add_field_menu.png)
 
@@ -91,7 +91,7 @@ Im folgenden Beispiel verwenden wir eine **[!UICONTROL Seite (V5-Kompatibilität
 
   ![](assets/s_ncs_admin_survey_add_qu.png)
 
-  Geben Sie den Titel der Frage ein und fügen Sie die Antwortfelder als Unterzweig der Frage ein. Dazu muss bei der Erstellung des Antwortfelds der mit der Frage verknüpfte Knoten ausgewählt werden. Hinzufügen einer **[!UICONTROL Dropdown-Liste]** mithilfe der **[!UICONTROL Auswahldialog]** oder durch Rechtsklick, wie unten dargestellt:
+  Geben Sie den Titel der Frage ein und fügen Sie die Antwortfelder als Unterverzweigung der Frage ein. Beim Erstellen des Antwortfeldes muss der mit der Frage verknüpfte Knoten ausgewählt sein. Fügen Sie eine **[!UICONTROL Dropdown-Liste]** mithilfe des Symbols **[!UICONTROL Auswahldialog]** oder durch Rechtsklicken wie unten gezeigt hinzu:
 
   ![](assets/s_ncs_admin_survey_add_list.png)
 
@@ -107,7 +107,7 @@ Im folgenden Beispiel verwenden wir eine **[!UICONTROL Seite (V5-Kompatibilität
 
   >[!NOTE]
   >
-  >Für jedes Feld oder jede Frage können Sie das Seitenlayout an Ihre Anforderungen anpassen, dank der Optionen im **[!UICONTROL Erweitert]** Registerkarte. Das Layout der Umfragefenster wird im Abschnitt [diesem Abschnitt](../../web/using/about-web-forms.md).
+  >Mit den Optionen im Tab **[!UICONTROL Erweitert]** können Sie für jedes Feld oder jede Frage das Seitenlayout nach Bedarf anpassen. Das Layout der Umfragefenster wird in [diesem Abschnitt](../../web/using/about-web-forms.md) näher beschrieben.
 
   Wählen Sie im Detailfenster den Tab **[!UICONTROL Vorschau]** aus, um sich die Darstellung der soeben erstellten Umfrage anzusehen.
 

@@ -4,9 +4,9 @@ title: Sendung an Mid-Sourcing-Server
 description: Erfahren Sie mehr über die Workflows "Sendung an Mid-Sourcing-Server".
 feature: Workflows
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '107'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Die folgenden Workflows werden standardmäßig mit dem Modul **Sendung an Mid-So
   <tr> 
    <td> <span class="uicontrol">Mid-Sourcing (Versandlogs)</span> <br /> </td> 
    <td> <span class="uicontrol">defaultMidSourcingLog</span> <br /> </td> 
-   <td> Ruft Versandlogs auf dem Mid-Sourcing-Server ab. Er wird standardmäßig jede Stunde ausgelöst.<br /> </td> 
+   <td> Ruft Versandlogs vom Mid-Sourcing-Server ab. Wird standardmäßig stündlich gestartet.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

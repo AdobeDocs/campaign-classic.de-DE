@@ -5,9 +5,9 @@ description: Erfahren Sie mehr über die Workflow-Aktivität "Warten".
 feature: Workflows
 exl-id: 4872f756-14d7-4e37-a9cf-b929c77e34ca
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '193'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
@@ -27,6 +27,6 @@ Im Feld **[!UICONTROL Dauer]** können, wenn in den regionalen Parametern des Be
 
   Die Standardeinheit ist **T** für Tag.
 
-* Wenn beispielsweise die regionalen Gegebenheiten auf &quot;Français&quot; gesetzt werden, **s** für Sekunden, **mn** für Minuten, **h** für Stunden, **j** für Tage, **m** für Monate, **a** für Jahre. Zum Zeitpunkt der Validierung wird der Wert automatisch in die am besten lesbare Einheit konvertiert, wie im obigen Beispiel **90 s** wurde in **1 min 30 s**.
+* Wenn die regionalen Parameter für Deutschland definiert wurden, sind folgende Einheiten zu verwenden: **s** für Sekunden, **min** für Minuten, **h** für Stunden, **T** für Tage, **M** für Monate und **J** für Jahre. Sobald die Eingabe validiert wird, wird der Wert in die am besten lesbare Einheit umgewandelt. So wurde in oben stehender Abbildung die Eingabe **90s** in **1 min 30 s** umgewandelt.
 
   Die Standardeinheit ist **T** für Tag.

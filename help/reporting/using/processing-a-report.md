@@ -6,9 +6,9 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Reporting, Monitoring
 exl-id: d133efec-33e1-4711-a90f-e40385059386
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '885'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Diese Optionen entsprechen denen von Standardberichten. Sie werden auf [dieser S
 
 ## Konfigurieren des Layouts eines beschreibenden Analyseberichts {#configuring-the-layout-of-a-descriptive-analysis-report}
 
-Sie können die Anzeige und das Layout Ihrer Daten in den Diagrammen und Tabellen der deskriptiven Analyse personalisieren. Auf alle Optionen kann über die Adobe Campaign-Struktur im **[!UICONTROL Bearbeiten]** jedes Berichts.
+Sie können die Anzeige und Anordnung Ihrer Daten in den Grafiken und Tabellen anpassen. Gehen Sie hierzu ausgehend vom Explorer in den Tab **[!UICONTROL Bearbeiten]** des Berichts, den Sie anpassen möchten.
 
 ### Anzeigemodus des Analyseberichts {#analysis-report-display-mode}
 
@@ -99,14 +99,14 @@ Um zur ursprünglichen Anzeige zurückzukehren, aktualisieren Sie die Ansicht.
 
 ### Grafikoptionen in Analyseberichten {#analysis-report-chart-options}
 
-Die Anzeige der Daten im Diagramm kann personalisiert werden. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Variablen...]** -Link, der während der Diagrammtyp-Auswahl verfügbar ist.
+Auch die Anzeige der Daten einer Grafik kann vom Benutzer angepasst werden. Klicken Sie hierzu bei der Grafiktyp-Auswahl auf den Link **[!UICONTROL Grafikparameter...]**.
 
 ![](assets/s_ncs_advuser_report_wizard_3c.png)
 
 Folgende Optionen stehen zur Verfügung:
 
 * Im oberen Abschnitt des Fensters kann der Anzeigebereich der Grafik verändert werden.
-* Standardmäßig werden Beschriftungen im Diagramm angezeigt. Sie können sie ausblenden, indem Sie die Option **[!UICONTROL Werte anzeigen]** -Option.
+* Standardmäßig werden die Titel in der Grafik angezeigt. Um sie auszublenden, deaktivieren Sie die Option **[!UICONTROL Werte anzeigen]**.
 * Die Option **[!UICONTROL Werte kumulieren]** ermöglicht das Addieren der unterschiedlichen, von einer Serie zur anderen zurückgegebenen Werte.
 * Die Legende der Grafik kann durch Deaktivieren der entsprechenden Option ausgeblendet werden. Die Legende wird standardmäßig außerhalb der Grafik oben rechts angezeigt.
 

@@ -7,9 +7,9 @@ feature: Workflows
 role: User
 exl-id: bc6ebf5d-cc21-4750-9713-2bf259e7d6bf
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1209'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -88,7 +88,7 @@ Der Inhalt wird in der Aktivität &quot;Content Management&quot; konfiguriert:
 
 Ausgehend von der Veröffentlichungsvorlage wird im Inhaltskanal-Ordner eine neue Inhaltsinstanz erstellt.
 
-In unserem Beispiel haben wir den Betreff des Versands überschrieben. Es wird anstelle des im **[!UICONTROL Versand]** Vorlage.
+Im vorliegenden Beispiel wurde der Versandbetreff überschrieben. Er ersetzt den in der Versandvorlage der **[!UICONTROL Versand]**-Aktivität angegebenen Betreff.
 
 Der Inhalt wird automatisch durch den von der angegebenen URL heruntergeladenen XML-Stream ergänzt:
 
@@ -215,11 +215,11 @@ Die Aktivität endet mit der Vorbereitung und dem Start des Versands.
 
 ### Inhalt von FTP importieren {#importing-content-from-ftp}
 
-Wenn Ihr Versandinhalt in einer HTML-Datei auf FTP- oder SFTP-Servern verfügbar ist, können Sie diesen Inhalt einfach in Adobe Campaign-Sendungen laden. Siehe Abschnitt [Dieses Beispiel](../../workflow/using/loading-delivery-content.md).
+Wenn Ihr Versandinhalt in einer auf FTP- oder SFTP-Servern befindlichen HTML-Datei verfügbar ist, können Sie diesen Inhalt einfach in Adobe Campaign-Sendungen laden. In [diesem Beispiel](../../workflow/using/loading-delivery-content.md) wird dies näher erläutert.
 
 ### Inhalt von Amazon Simple Storage Service-Connector (S3) importieren {#importing-content-from-amazon-simple-storage-service--s3--connector}
 
-Wenn sich Ihr Versandinhalt in Amazon Simple Storage Service (S3) Buckets befindet, können Sie diesen Inhalt einfach in Adobe Campaign-Sendungen laden. Siehe Abschnitt [Dieses Beispiel](../../workflow/using/loading-delivery-content.md).
+Wenn Ihr Versandinhalt in Amazon Simple Storage Service (S3) Buckets verfügbar ist, können Sie diesen Inhalt einfach in Adobe Campaign-Sendungen laden. In [diesem Beispiel](../../workflow/using/loading-delivery-content.md) wird dies näher erläutert.
 
 ## Halbautomatische Aktualisierung {#semi-automatic-update}
 

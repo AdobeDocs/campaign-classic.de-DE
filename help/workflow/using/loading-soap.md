@@ -5,9 +5,9 @@ description: Laden (SOAP)
 feature: Workflows
 exl-id: 20414e73-2ba9-44f9-8e16-cb6604933ee0
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '267'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ Gehen Sie wie folgt vor:
 
    Durch Klick auf **[!UICONTROL Beispiel erneut analysieren]**, können Sie das Beispiel aktualisieren.
 
-   Sie können das Format der Spaltendaten auch über die **[!UICONTROL Erweiterte Parameter]** -Link. Weiterführende Informationen zur Formatierung importierter Daten finden Sie in diesem Abschnitt [Abschnitt](../../platform/using/executing-import-jobs.md).
+   Der Link **[!UICONTROL Erweiterte Parameter...]** erlaubt eine benutzerdefinierte Formatierung der Spaltendaten. Weiterführende Informationen zur Formatierung von importierten Daten finden Sie in diesem [Abschnitt](../../platform/using/executing-import-jobs.md).
 
 1. Als Kennung kann die Zeilennummer verwendet werden und/oder Sie können angeben, dass der SOAP-Aufruf mehrere Elemente zurückgibt.
 1. Geben Sie die erforderlichen Scripts in den entsprechenden Tabs ein:

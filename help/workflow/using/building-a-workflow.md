@@ -5,9 +5,9 @@ description: Erfahren Sie, wie Sie einen Workflow erstellen
 feature: Workflows
 exl-id: 8ba20ccd-b03f-4c4f-87c1-a21e80d8e4be
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1679'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ In diesem Abschnitt werden die wichtigsten Grundsätze und Best Practices für d
 
 ## Erstellen eines neuen Workflows {#creating-a-new-workflow}
 
-Aus dem **[!UICONTROL Explorer]**, greifen Sie auf einen Workflow-Ordner zu. Standardmäßig können Sie **[!UICONTROL Profile und Zielgruppen]** > **[!UICONTROL Aufträge]** > **[!UICONTROL Zielgruppen-Workflows]**.
+Öffnen Sie in **[!UICONTROL Explorer]** einen Workflow-Ordner. Standardmäßig können Sie **[!UICONTROL Profile und Zielgruppen]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Zielgruppen-Workflow]** verwenden.
 
 Klicken Sie auf die Schaltfläche **[!UICONTROL Neu]** oberhalb der Workflow-Liste, um einen neuen Workflow zu erstellen.
 
@@ -117,7 +117,7 @@ Doppelklicken Sie auf eine Aktivität, um sie zu konfigurieren oder klicken Sie 
 >
 >Aktivitäten des Kampagnen-Workflows werden in [diesem Abschnitt](about-activities.md) erläutert.
 
-Der erste Tab enthält die grundlegende Konfiguration. Die **[!UICONTROL Erweitert]** enthält die zusätzlichen Parameter, die insbesondere zur Definition des Verhaltens bei Fehlern, zur Angabe der Ausführungsdauer einer Aktivität und zur Eingabe eines Initialisierungsskripts verwendet werden.
+Die erste Registerkarte enthält die grundlegende Konfiguration. Die Registerkarte **[!UICONTROL Erweitert]** enthält zusätzliche Parameter, die insbesondere für die Bestimmung des Verhaltens bei auftretenden Fehlern, die Angabe der Ausführungsdauer einer Aktivität und die Eingabe eines Initialisierungsskripts verwendet werden.
 
 Für eine optimale Lesbarkeit des Workflows und zum besseren Verständnis seiner Aktivitäten können Sie in den Aktivitäten Kommentare verfassen. Diese werden angezeigt, wenn Sie im Diagramm eine Aktivität mit dem Mauszeiger überfahren.
 
@@ -187,7 +187,7 @@ Weitere Informationen zu Kampagnen-Workflows und entsprechende Anwendungsbeispie
 
 ## Technische Workflows {#technical-workflows}
 
-Technische Workflows werden standardmäßig mit Adobe Campaign bereitgestellt. Es handelt sich um Vorgänge oder Aufträge, die für die periodische Ausführung auf dem Server geplant sind. Sie ermöglichen die Wartung der Datenbank, die Weiterleitung von Trackinginformationen zu Sendungen und die Einrichtung vorläufiger Versandverfahren. Technische Workflows werden über den Knoten **[!UICONTROL Administration > Produktion > Technische Workflows]** konfiguriert.
+Technische Workflows sind standardmäßg in Adobe Campaign enthalten. Sie steuern regelmäßige Server-Abläufe, wie beispielsweise Datenbankbereinigungen, den Abruf von Tracking-Informationen oder geplante Vorgänge zur Versandvorbereitung. Technische Workflows werden über den Knoten **[!UICONTROL Administration > Produktion > Technische Workflows]** konfiguriert.
 
 ![](assets/navtree.png)
 

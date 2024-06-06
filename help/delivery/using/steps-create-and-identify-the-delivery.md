@@ -7,9 +7,9 @@ feature: Channel Configuration
 role: User
 exl-id: 6e37bc14-b1a9-42af-8c28-ae4b5bcaa055
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '292'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 84%
 Die Erstellung eines Versands ist in der Übersicht oder im Menü **[!UICONTROL Erstellen > Versand]** möglich.
 
 
-Um einen Versand zu erstellen, klicken Sie auf **[!UICONTROL Erstellen]** oberhalb der Versandliste. Bei der Erstellung eines neuen Versands müssen Sie den verwendeten Versandkanal angeben. Wählen Sie dazu aus der Dropdown-Liste im **[!UICONTROL Versandvorlage]** -Feld.
+Um einen Versand zu erstellen, klicken Sie auf **[!UICONTROL Erstellen]** oberhalb der Versandliste. Bei der Erstellung eines neuen Versands müssen Sie den verwendeten Versandkanal angeben. Wählen Sie im Feld **[!UICONTROL Versandvorlage]** aus der Dropdown-Liste das dem gewünschten Kanal entsprechende Modell aus.
 
 ![](assets/s_ncs_user_wizard_email01_1.png)
 

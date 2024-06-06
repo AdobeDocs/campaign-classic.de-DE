@@ -5,9 +5,9 @@ description: Erfahren Sie mehr über die Workflow-Aktivität "Anreicherung".
 feature: Workflows, Enrichment Activity
 exl-id: ab786cf1-74a4-4185-a63d-84e776a2f776
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '828'
-ht-degree: 60%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ In diesem Anwendungsbeispiel werden mögliche Verwendungen der Aktivität **[!UI
 
 In [diesem Abschnitt](email-enrichment-with-custom-date-fields.md) finden Sie außerdem ein Anwendungsbeispiel zur Anreicherung eines E-Mail-Versands mit benutzerdefinierten Datumsangaben.
 
-Den Kontakten in der Marketingdatenbank wird über eine Webanwendung eine Einladung zur Teilnahme an einem Wettbewerb geschickt. Die Ergebnisse des Wettbewerbs werden im **[!UICONTROL Wettbewerbsergebnisse]** Tabelle. Diese Tabelle ist mit der Kontakttabelle verknüpft (**[!UICONTROL Empfänger]**). Die **[!UICONTROL Wettbewerbsergebnisse]** -Tabelle enthält die folgenden Felder:
+Den in der Marketing-Datenbank enthaltenen Kontakten soll über eine Webapp ein Preisausschreiben angeboten werden. Die Ergebnisse des Wettbewerbs werden in der Tabelle **[!UICONTROL Wettbewerbsergebnisse]** gespeichert. Diese Tabelle steht in Relation mit der Tabelle der Kontakte (**[!UICONTROL Empfänger]**). Die Tabelle **[!UICONTROL Wettbewerbsergebnisse]** enthält folgende Spalten:
 
 * Wettbewerbsname (@game),
 * Versuchnummer (@trial),
@@ -42,7 +42,7 @@ Der Workflow für dieses Anwendungsbeispiel stellt sich wie folgt dar:
 Die Workflow-Erstellung gliedert sich in folgende Schritte:
 
 1. Platzierung von zwei **[!UICONTROL Abfragen]** und einer **[!UICONTROL Schnittmenge]** zum Abruf aller neuen Abonnenten, die am letzten Wettbewerb teilgenommen haben.
-1. Die **[!UICONTROL Anreicherung]** -Aktivität ermöglicht es uns, im **[!UICONTROL Wettbewerbsergebnisse]** Tabelle. Die **[!UICONTROL Ergebnis]** -Feld, in dem unsere Versandpersonalisierung durchgeführt wird, wird der Arbeitstabelle des Workflows hinzugefügt.
+1. Im Anschluss daran folgt eine **[!UICONTROL Anreicherung]**, die es ermöglicht, die Daten aus der Tabelle **[!UICONTROL Wettbewerbsergebnisse]** zu verwenden. Das für die Personalisierung benötigte Feld **[!UICONTROL Score]** wird daher zur Workflow-Arbeitstabelle hinzugefügt.
 1. Mithilfe der **[!UICONTROL Aufspaltung]** werden nun je nach erreichtem Score Teilmengen erstellt.
 1. An jede Teilmenge wird ein **[!UICONTROL Versand]** angeschlossen.
 
@@ -60,7 +60,7 @@ Die **[!UICONTROL Schnittmenge]** ermittelt dann die Population, die beiden Bedi
 
 ## 2. Schritt: Anreicherung {#step-2--enrichment}
 
-In diesem Beispiel möchten wir Sendungen entsprechend der Variablen **[!UICONTROL Ergebnis]** im Feld gespeichert **[!UICONTROL Wettbewerbsergebnisse]** Tabelle. Diese Tabelle weist eine 1:n-Relation zur Empfängertabelle auf. Die **[!UICONTROL Anreicherung]** -Aktivität ermöglicht es, Daten aus einer mit der Filterdimension verknüpften Tabelle zur Arbeitstabelle des Workflows hinzuzufügen.
+Im vorliegenden Beispiel sollen die Sendungen basierend auf dem in der Tabelle **[!UICONTROL Wettbewerbsergebnisse]** enthaltenen Feld **[!UICONTROL Score]** personalisiert werden. Diese Tabelle weist eine 1:n-Relation zur Empfängertabelle auf. Die **[!UICONTROL Anreicherungsaktivität]** ermöglicht es, Daten aus einer mit der Filterdimension in Relation stehenden Tabelle zur Arbeitstabelle des Workflows hinzuzufügen.
 
 1. Klicken Sie auf den Link **[!UICONTROL Daten hinzufügen...]** im Bearbeitungsbildschirm der Anreicherung und aktivieren Sie die Option **[!UICONTROL Daten in Relation mit der Filterdimension]**. Klicken Sie dann auf **[!UICONTROL Weiter]**.
 
@@ -70,19 +70,19 @@ In diesem Beispiel möchten wir Sendungen entsprechend der Variablen **[!UICONTR
 
    ![](assets/uc1_enrich_7.png)
 
-1. Geben Sie eine ID und einen Titel ein und wählen Sie die **[!UICONTROL Zeilenanzahl begrenzen]** in der **[!UICONTROL Erfasste Daten]** -Feld. Im **[!UICONTROL Abrufen von Zeilen]** als Wert &quot;1&quot;ein. Für jeden Empfänger fügt die Anreicherungsaktivität eine Zeile aus der **[!UICONTROL Wettbewerbsergebnisse]** in die Arbeitstabelle des Workflows. Klicken Sie auf **[!UICONTROL Weiter]**.
+1. Geben Sie eine Kennung und einen Titel an und wählen Sie im Feld **[!UICONTROL Abgerufene Daten]** die Option **[!UICONTROL Zeilenanzahl begrenzen]** aus. Geben Sie dann im Feld **[!UICONTROL Abzurufende Zeilen]** den Wert &#39;1&#39; an. Für jeden Empfänger fügt die Anreicherungsaktivität somit genau eine Zeile aus der Tabelle **[!UICONTROL Wettbewerbsergebnisse]** in die Workflow-Arbeitstabelle ein. Klicken Sie auf **[!UICONTROL Weiter]**.
 
    ![](assets/uc1_enrich_8.png)
 
-1. In diesem Beispiel möchten wir das höchste Ergebnis des Empfängers abrufen, jedoch nur für den letzten Wettbewerb. Fügen Sie dazu einen Filter zum **[!UICONTROL Wettbewerbsname]** -Feld, um alle Zeilen auszuschließen, die sich auf frühere Auswahlverfahren beziehen. Klicken Sie auf **[!UICONTROL Weiter]**.
+1. Im vorliegenden Beispiel soll das beste Ergebnis der Empfänger aus dem letzten Wettbewerb abgerufen werden. Filtern Sie hierzu die Tabelle nach dem Feld **[!UICONTROL Wettbewerb]** und rufen Sie nur die Datensätze ab, die dem letzten Wettbewerb entsprechen. Klicken Sie auf **[!UICONTROL Weiter]**.
 
    ![](assets/uc1_enrich_9.png)
 
-1. Navigieren Sie zu **[!UICONTROL Sortieren]** und klicken Sie auf **[!UICONTROL Hinzufügen]** -Schaltfläche, wählen Sie die **[!UICONTROL Ergebnis]** und aktivieren Sie das Kontrollkästchen im **[!UICONTROL absteigend]** -Spalte, um Elemente der **[!UICONTROL Ergebnis]** in absteigender Reihenfolge. Für jeden Empfänger fügt die Anreicherungsaktivität eine Zeile hinzu, die dem höchsten Wert für das letzte Spiel entspricht. Klicken Sie auf **[!UICONTROL Weiter]**.
+1. Klicken Sie im Bildschirm **[!UICONTROL Sortierung]** auf die Schaltfläche **[!UICONTROL Hinzufügen]**, wählen Sie das Feld **[!UICONTROL Score]** aus und aktivieren Sie das Kästchen in der Spalte **[!UICONTROL Absteigend]**, um die Elemente der **[!UICONTROL Score]**-Felder in absteigender Reihenfolge zu sortieren. Für jede Empfängerin und jeden Empfänger fügt die Anreicherungsaktivität somit die Zeile ein, die dem höchsten Score für das letzte Spiel entspricht. Klicken Sie auf **[!UICONTROL Weiter]**.
 
    ![](assets/uc1_enrich_10.png)
 
-1. Im **[!UICONTROL Daten zum Hinzufügen]** durch Doppelklick auf das **[!UICONTROL Ergebnis]** -Feld. Für jeden Empfänger fügt die Anreicherungsaktivität nur die **[!UICONTROL Ergebnis]** -Feld. Klicken Sie auf **[!UICONTROL Beenden]**.
+1. Doppelklicken Sie im Bildschirm **[!UICONTROL Hinzuzufügende Daten]** auf das Feld **[!UICONTROL Score]**. Auf diese Weise fügt die Anreicherungsaktivität nur das Feld **[!UICONTROL Score]** hinzu. Klicken Sie auf **[!UICONTROL Beenden]**.
 
    ![](assets/uc1_enrich_11.png)
 
@@ -116,7 +116,7 @@ Im Anschluss an die Anreicherung sorgt die **[!UICONTROL Aufspaltung]** für die
 
    ![](assets/uc1_enrich_17.png)
 
-1. Die dritte (**Verlierer**) enthält alle anderen Empfänger. Navigieren Sie zu **[!UICONTROL Allgemein]** und überprüfen Sie die **[!UICONTROL Komplement erzeugen]** , um alle Empfänger auszuwählen, die nicht die beiden höchsten Werte erreicht haben.
+1. Die dritte Teilmenge (**Verlierer**) enthält die verbleibenden Empfänger. Kreuzen Sie im **[!UICONTROL Allgemein]**-Tab die Option **[!UICONTROL Komplement erzeugen]** an, um alle die Empfänger abzurufen, die weder den höchsten noch den zweithöchsten Score erzielt haben.
 
    ![](assets/uc1_enrich_19.png)
 

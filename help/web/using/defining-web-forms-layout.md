@@ -6,9 +6,9 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Web Forms
 exl-id: 23ca17f8-de1a-4f9c-8357-3965dc3329b1
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '538'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Im obigen Beispiel wird das Rendering wie folgt ausgeführt:
 
 Das Layout des Web-Formulars wird in jedem Container Seite für Seite definiert und kann bei Bedarf überschrieben werden.
 
-Seiten sind in Spalten unterteilt: Jede Seite enthält eine bestimmte Anzahl von Spalten. Jedes Feld der Seite belegt **n** Zellen. Container umfassen auch eine bestimmte Anzahl von Spalten, und die darin enthaltenen Felder umfassen eine bestimmte Anzahl von Zellen.
+Seiten sind in Spalten unterteilt: Jede Seite enthält eine bestimmte Anzahl von Spalten. Jedes Feld der Seite belegt **n** Zellen. Container umfassen auch eine gewisse Anzahl von Spalten und die in ihnen enthaltenen Felder haben eine bestimmte Anzahl von Zellen.
 
 Standardmäßig werden Seiten auf einer einzigen Spalte erstellt und jedes Element hat eine einzige Zelle. Das bedeutet, dass Felder untereinander angezeigt werden, wobei jedes wie unten dargestellt eine ganze Zeile umfasst:
 
@@ -68,7 +68,7 @@ Sie können die Formatierung in jedem Container ändern. In unserem Beispiel kö
 
 ![](assets/s_ncs_admin_survey_container_ex2_rend.png)
 
-Der Titel und die Liste belegen jeweils eine Zelle (und daher eine ganze Zeile des Containers) und das Kontrollkästchen erstreckt sich über zwei Zellen. Die Anzahl der dem Eingabefeld zugeordneten Zellen wird im Abschnitt **[!UICONTROL Allgemein]** oder **[!UICONTROL Erweitert]** -Tab entsprechend dem Feldtyp:
+Der Titel und die Liste belegen jeweils eine Zelle (und daher eine ganze Zeile des Containers) und das Kontrollkästchen erstreckt sich über zwei Zellen. Die Anzahl der dem Eingabefeld zugeordneten Zellen ist auf der Registerkarte **[!UICONTROL Allgemein]** oder auf der Registerkarte **[!UICONTROL Erweitert]** entsprechend dem Feldtyp definiert:
 
 ![](assets/s_ncs_admin_survey_container_ex2.png)
 
@@ -78,7 +78,7 @@ Sie können die Ausrichtung von Feldern und Titeln im Formular definieren.
 
 Standardmäßig übernehmen die Anzeigeparameter für Felder und andere Inhalte der Seite die allgemeine Konfiguration des Formulars, die Konfiguration der Seite oder die Konfiguration des übergeordneten Containers, sofern einer vorhanden ist.
 
-Die globalen Anzeigeparameter für das gesamte Formular werden im Feld &quot;Formulareigenschaften&quot;angegeben. Die **[!UICONTROL Rendering]** -Tab können Sie die Position der Titel auswählen.
+Die globalen Anzeigeparameter für das gesamte Formular werden im Eigenschaftsfeld des Formulars festgelegt. Im Tab **[!UICONTROL Rendering]** kann die Position der Titel ausgewählt werden.
 
 ![](assets/s_ncs_admin_survey_label_position.png)
 

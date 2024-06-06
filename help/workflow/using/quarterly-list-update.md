@@ -5,9 +5,9 @@ description: In diesem Anwendungsfall dient eine inkrementelle Abfrage zur autom
 feature: Workflows
 exl-id: 0d3e7046-313a-42a6-9155-3365e8d60bac
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '285'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Jeweils zu Beginn einer neuen Saison werden geeignete sportliche Aktivitäten be
 
 1. Da die Liste jeweils zu Saisonbeginn aktualisiert werden soll, muss als Häufigkeit **[!UICONTROL Monatlich]** ausgewählt werden.
 1. Wählen Sie im nächsten Bildschirm die Monate März, Juni, September und Dezember aus. Geben Sie als Tag den 20. des Monats an und die Uhrzeit, an der der Workflow gestartet werden soll.
-1. Wählen Sie anschließend die Gültigkeitsdauer der Abfrage aus. Wenn diese Aktivität beispielsweise dauerhaft aktiv sein soll, wählen Sie **[!UICONTROL Dauerhafte Gültigkeit]**.
+1. Geben Sie abschließend den Gültigkeitszeitraum der Abfrage an. Im vorliegenden Beispiel wurde **[!UICONTROL Dauerhaft gültig]** ausgewählt.
 
    ![](assets/incremental_query_example_2.png)
 

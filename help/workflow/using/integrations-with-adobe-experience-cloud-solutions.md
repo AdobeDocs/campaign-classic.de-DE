@@ -5,9 +5,9 @@ description: Erfahren Sie mehr über die Integrationen mit Workflows von Adobe E
 feature: Workflows, Audiences, People Core Service Integration
 topic-tags: technical-workflows
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '109'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Die folgenden Workflows werden mit dem Modul **Integration mit Adobe Experience 
   <tr> 
    <td> <span class="uicontrol">Zielgruppenexport zu Adobe Experience Cloud</span> <br /> </td> 
    <td> <span class="uicontrol">exportSharedAudience</span> <br /> </td> 
-   <td> Dieser Workflow exportiert Zielgruppen als freigegebene Zielgruppen/Segmente. Diese Zielgruppen können in den verschiedenen von Ihnen verwendeten Adobe Experience Cloud-Lösungen verwendet werden.<br /> </td> 
+   <td> Dieser Workflow exportiert freigegebene Zielgruppen. Diese können dann in anderen von Ihnen verwendeten Lösungen der Adobe Experience Cloud genutzt werden.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

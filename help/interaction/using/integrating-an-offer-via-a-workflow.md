@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: delivering-an-offer
 exl-id: 33d318f3-1eb4-4c74-8c20-8b9f0442c7c3
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1094'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -79,7 +79,7 @@ Nach der Konfiguration Ihrer Anfrage (siehe [Workflow](../../workflow/using/quer
 1. Geben Sie eine Kennung und einen Titel für den hinzuzufügenden Vorschlag an.
 1. Konfigurieren Sie die Angebotsauswahl. Zwei Optionen stehen zur Auswahl:
 
-   * **[!UICONTROL Suche nach dem besten Angebot einer Kategorie]** : Kreuzen Sie diese Option an und geben Sie die Parameter für die Abfrage des Angebotsmoduls an (Platzierung, Kategorie oder Themen, Kontaktdatum, Anzahl beizubehaltender Angebote). Das Angebotsmodul berechnet automatisch die zu verwendenden Angebote entsprechend diesen Parametern. Es wird empfohlen, **[!UICONTROL Kategorie]** oder **[!UICONTROL Design]** nicht beides gleichzeitig.
+   * **[!UICONTROL Suche nach dem besten Angebot in einer Kategorie]**: Markieren Sie diese Option und geben Sie die verschiedenen Parameter der Abfrage des Angebotsmoduls an (Platzierung, Kategorie oder Themen, Kontaktdatum, Anzahl beizubehaltender Angebote). Das Modul berechnet automatisch die den Parametern entsprechenden hinzuzufügenden Angebote. Wir empfehlen, entweder das Feld **[!UICONTROL Kategorie]** oder das Feld **[!UICONTROL Thema]** vollständig auszufüllen, und nicht beide gleichzeitig.
 
      ![](assets/int_enrichment_offer3.png)
 
@@ -138,7 +138,7 @@ Gehen Sie wie folgt vor, wenn Sie diese Informationen dennoch speichern möchten
 
 1. Bestätigen Sie Ihre Wahl und speichern Sie den Workflow.
 
-Der Versand speichert automatisch Rang und Gewichtung der Angebote. Diese Informationen werden im Versand angezeigt. **[!UICONTROL Angebote]** Registerkarte.
+Der Versand speichert automatisch die Rangfolge und Gewichtung der Angebote. Diese Informationen werden in der Registerkarte **[!UICONTROL Angebote]** des Versands angezeigt.
 
 ## Angebotsmodul {#offer-engine}
 

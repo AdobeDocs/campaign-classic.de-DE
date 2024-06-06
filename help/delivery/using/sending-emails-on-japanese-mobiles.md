@@ -7,9 +7,9 @@ feature: Email, Email Design
 role: User
 exl-id: 44634227-2340-49c4-b330-740c739ea551
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '773'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Damit ein Empfänger, der eines dieser Formate verwendet, Nachrichten korrekt an
 
 Wenn Sie hingegen im Feld **[!UICONTROL E-Mail-Format]** eine der Optionen **[!UICONTROL Unbekannt]**, **[!UICONTROL HTML]** oder **[!UICONTROL Text]** auswählen, erkennt Adobe Campaign bei Versand der E-Mail das japanische Format, das zu verwenden ist, um eine korrekte Anzeige zu gewährleisten.
 
-Dieses automatische Erkennungssystem basiert auf der Liste vordefinierter Domains, die im **[!UICONTROL Verwaltung von E-Mail-Formaten]** E-Mail-Regelsatz. Weitere Informationen zur Verwaltung von E-Mail-Formaten finden Sie unter [diese Seite](../../installation/using/email-deliverability.md#managing-email-formats).
+Dieses automatische Erkennungssystem beruht auf der in den E-Mail-Regeln **[!UICONTROL E-Mail-Formatverwaltung]** gespeicherten Domainliste. Weiterführende Informationen zur Verwaltung von E-Mail-Formaten finden Sie auf [dieser Seite](../../installation/using/email-deliverability.md#managing-email-formats).
 
 ## Einschränkungen und Empfehlungen {#limitations-and-recommendations}
 
@@ -103,4 +103,4 @@ Der Nachrichteninhalt wird sowohl für Empfänger mit japanischen Mobiltelefonen
 
 >[!IMPORTANT]
 >
->Achten Sie darauf, dass Sie die mit den verschiedenen japanischen E-Mail-Formaten (Deco-mail, Decoration Mail und Decore Mail) verbundenen besonderen Funktionen berücksichtigen. Weitere Informationen zu Einschränkungen finden Sie unter [diesem Abschnitt](#limitations-and-recommendations).
+>Beachten Sie die Einschränkungen, denen die verschiedenen japanischen Formate (Deco-mail, Decoration Mail und Decore Mail) unterliegen. Weiterführende Informationen zu Einschränkungen finden Sie in [diesem Abschnitt](#limitations-and-recommendations).

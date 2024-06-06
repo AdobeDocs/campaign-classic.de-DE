@@ -6,9 +6,9 @@ role: User
 feature: Campaigns, Cross Channel Orchestration, Programs
 exl-id: a8fce21f-ffe3-4819-87ca-ac0ad9f21e41
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1289'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -58,7 +58,7 @@ Um Ihre Ordnerhierarchie für Marketing-Pläne und -Programme zu konfigurieren, 
 
 ### Hinzufügen einer Kampagne {#adding-a-campaign}
 
-Sie können eine Kampagne über die Kampagnenliste erstellen. Um diese Ansicht anzuzeigen, wählen Sie die **[!UICONTROL Kampagnen]** im Menü **[!UICONTROL Kampagnen]** Dashboard.
+Sie können eine Kampagne über die Kampagnenliste erstellen. Klicken Sie auf den Link **[!UICONTROL Kampagnen]** in der gleichnamigen Rubrik, um zu dieser Übersicht zu gelangen.****
 
 ![](assets/s_ncs_user_add_an_op_from_list.png)
 
@@ -66,7 +66,7 @@ Im Feld **[!UICONTROL Programm]** können Sie das Programm auswählen, dem die K
 
 ![](assets/s_ncs_user_new_op_wz_a.png)
 
-Kampagnen können auch über ein Programm erstellt werden. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Hinzufügen]** im **[!UICONTROL Zeitplan]** des betreffenden Programms.
+Kampagnen können auch von einem Programm aus erstellt werden. Klicken Sie hierzu auf die Schaltfläche **[!UICONTROL Hinzufügen]** im Tab **[!UICONTROL Planung]** des jeweiligen Programms.
 
 ![](assets/s_ncs_user_add_an_op.png)
 
@@ -74,7 +74,7 @@ Wenn Sie eine Kampagne über die Registerkarte **[!UICONTROL Planung]** eines Pr
 
 Wählen Sie im Fenster zur Kampagnenerstellung die Kampagnenvorlage aus und fügen Sie einen Namen und eine Beschreibung der Kampagne hinzu. Sie können auch das Anfangs- und Enddatum der Kampagne angeben.
 
-Klicken Sie auf **[!UICONTROL OK]**, um die Kampagne zu erstellen. Sie wird dem Programmkalender hinzugefügt.
+Klicken Sie auf **[!UICONTROL OK]**, um die Kampagne zu erstellen. Sie wird daraufhin der Programmplanung hinzugefügt.
 
 ![](assets/s_ncs_user_program_planning_with_op.png)
 
@@ -135,7 +135,7 @@ Der Konfigurationsmodus der Ausführungsplanung entspricht dem Objekt **[!UICONT
 
    >[!NOTE]
    >
-   >Dieser Workflow muss als wiederkehrende Workflow-Vorlage gespeichert werden. Bearbeiten Sie dazu die Workflow-Eigenschaften und wählen Sie die **[!UICONTROL Wiederkehrende Workflow-Vorlage]** in der **[!UICONTROL Ausführung]** Registerkarte.
+   >Dieser Workflow muss als Vorlage für einen wiederkehrenden Workflow gespeichert werden. Öffnen Sie hierzu die Eigenschaften des Workflows und wählen Sie die Option **[!UICONTROL Vorlage für einen wiederkehrenden Workflow]** im Tab **[!UICONTROL Ausführung]** aus.
 
    ![](assets/s_ncs_user_op_template_recur_wf_option.png)
 
@@ -152,14 +152,14 @@ Um eine wiederkehrende Kampagne zu erstellen und ihre Workflows der festgelegten
 
    Für jede Zeile können die folgenden ergänzenden Optionen hinzugefügt werden:
 
-   * **[!UICONTROL Zu genehmigen]** : erzwingt die Validierung eines Versands im Workflow.
+   * **[!UICONTROL Zu validieren]**: forciert den Versand der Validierungsanfragen für die im Workflow vorgesehenen Sendungen;
    * **[!UICONTROL Zu starten]**: startet den Workflow automatisch bei Erreichen des geplanten Startdatums.
 
    Das Feld **[!UICONTROL Im Voraus erstellen für]** ermöglicht es, alle Workflows für den angegebenen Zeitraum zu erstellen.
 
    Bei Ausführung des **[!UICONTROL Kampagnenvorgänge]**-Workflows werden die dedizierten Workflows entsprechend der zuvor festgelegten Kampagnenplanung erstellt, d. h. ein Workflow für jedes Ausführungsdatum.
 
-1. Wiederkehrende Workflows werden automatisch aus der in der Kampagne vorhandenen Workflow-Vorlage erstellt. Sie sind in der **[!UICONTROL Zielbestimmungen und Workflows]** der Kampagne.
+1. Wiederkehrende Workflows werden automatisch über die Workflow-Vorlage in der Kampagne erstellt. Sie werden im Tab **[!UICONTROL Zielbestimmungen und Workflows]** der Kampagne angezeigt.
 
    ![](assets/s_ncs_user_op_recur_planning_wfs.png)
 

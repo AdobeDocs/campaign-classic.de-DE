@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: advanced-parameters
 exl-id: 232e2bfc-f497-40ad-811e-118dbfcabbcf
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '118'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Dieses Kapitel behandelt die verschiedenen fortgeschrittenen Konfigurationsmögl
 >Die folgenden Ausführungen richten sich vor allem an **technische Administratoren**.
 
 * Sie können zusätzliche kontextuelle Daten verwenden. Weiterführende Informationen finden Sie im Abschnitt [Zusätzliche Daten](../../interaction/using/additional-data.md).
-* Sie können die Anwendungskontexte der vorgeschlagenen Angebote über einen eingehenden Kanal anreichern. Dazu muss die Variable **nms:interaction** Interaktionsschema muss erweitert werden. Den vollständigen Vorgang finden Sie im Abschnitt [Beispiel einer Erweiterung](../../interaction/using/extension-example.md).
+* Sie haben die Möglichkeit, den Anwendungskontext von Angeboten anzureichern, die über einen eingehenden Kanal vorgeschlagenen werden. Hierzu ist eine Erweiterung des Interaktionsschemas **nms:interaction** erforderlich. Den vollständigen Vorgang finden Sie im Abschnitt [Beispiel einer Erweiterung](../../interaction/using/extension-example.md).
 * Das Erstellen einer Testumgebung ist im Abschnitt [Erstellung einer Testumgebung](../../interaction/using/creating-a-test-environment.md) ausführlich beschrieben.
 * Sie können das standardmäßige Verhalten der Moduls mithilfe von Erweiterungspunkten ändern. Weitere Informationen hierzu finden Sie im Abschnitt [Erweiterungspunkte](../../interaction/using/hooks.md)
 * Die Verwendung von Interaction in verteilten Architekturen wird im Abschnitt [Verteilte Architekturmodelle](../../interaction/using/distributed-architectures.md) behandelt.

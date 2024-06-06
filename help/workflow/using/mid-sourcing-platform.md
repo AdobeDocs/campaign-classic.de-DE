@@ -4,9 +4,9 @@ title: Mid-Sourcing-Plattform
 description: Mid-Sourcing-Plattform
 feature: Workflows
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '52'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Der unten beschriebene Workflow wird standardmäßig mit dem Modul **Mid-Sourcin
   <tr> 
    <td> <span class="uicontrol">Versandindikatoren</span> <br /> </td> 
    <td> <span class="uicontrol">deliveryIndicators</span> <br /> </td> 
-   <td> Dieser Workflow aktualisiert die Trackingindikatoren eines Versands. Dieser Workflow wird standardmäßig stündlich ausgelöst.<br /> </td> 
+   <td> Aktualisiert Trackingindikatoren von Sendungen. Wird standardmäßig stündlich gestartet.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

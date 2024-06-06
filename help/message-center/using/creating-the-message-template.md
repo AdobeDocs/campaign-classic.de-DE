@@ -5,9 +5,9 @@ description: Erfahren Sie, wie Sie in Adobe Campaign Classic eine Transaktionsna
 feature: Transactional Messaging, Message Center, Templates
 exl-id: a52bc140-072e-4f81-b6da-f1b38662bce5
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '511'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -79,7 +79,7 @@ Gehen Sie wie folgt vor, um Personalisierungsfelder in einen E-Mail-Nachrichteni
 
    ![](assets/messagecenter_create_custo_002.png)
 
-1. Füllen Sie das Tag mit der folgenden Syntax aus: **Elementname**.@**Attributname** wie unten dargestellt.
+1. Ergänzen Sie das Feld unter Einhaltung folgender Syntax: **Elementname**.@**Attributname**. Beispiel:
 
    ![](assets/messagecenter_create_custo_003.png)
 

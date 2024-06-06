@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: advanced-parameters
 exl-id: 49ac279b-bc67-4311-b0a4-0e23f2a99c52
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '126'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -34,6 +34,6 @@ Gehen Sie wie folgt vor, um eine Testumgebung (Sandbox) zu erstellen:
    ![](assets/offer_env_creation_001bis.png)
 
 1. Erstellen Sie auf die gleiche Weise die Unterordner und Elemente der Umgebung und führen Sie die gewünschten Tests durch.
-1. Duplizieren Sie nach Abschluss Ihrer Tests die Angebote und Platzierungen in Ihrer Design-Umgebung, indem Sie die Produktionsumgebung verwenden. (Rechtsklick > **[!UICONTROL Aktionen]** > **[!UICONTROL Bereitstellen]** ).
+1. Nach Abschluss Ihrer Tests können Sie die in der Testumgebung enthaltenen Elemente zur tatsächlichen Verwendung freigeben. Duplizieren Sie hierzu die Angebote und Platzierungen in Ihre Live-Umgebung (Rechtsklick > **[!UICONTROL Aktionen]** > **[!UICONTROL Bereitstellen]** ).
 
    ![](assets/migration_interaction_5.png)

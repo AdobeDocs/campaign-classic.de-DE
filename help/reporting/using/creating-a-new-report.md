@@ -5,9 +5,9 @@ description: Erfahren Sie die wichtigsten Schritte zum Erstellen eines neuen Ber
 feature: Reporting, Monitoring
 exl-id: 4c2aad47-0e2d-4d0b-8898-b437f4a05e11
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '961'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Gehen Sie wie folgt vor, um einen Bericht zu erstellen:
 
    Nähere Informationen über diese Berichtvorlagen erhalten Sie in [diesem Abschnitt](../../reporting/using/about-descriptive-analysis.md).
 
-1. Geben Sie den Namen des Berichts und seine Beschreibung in die entsprechenden Felder ein. Geben Sie die **[!UICONTROL schema]** auf den der Bericht angewendet wird.
+1. Erfassen Sie den Namen des Berichts und seine Beschreibung in den entsprechenden Feldern. Geben Sie das **[!UICONTROL Schema]** an, auf das sich der Bericht beziehen soll.
 
    ![](assets/s_ncs_advuser_report_wizard_020.png)
 

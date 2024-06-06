@@ -7,9 +7,9 @@ feature: Data Model
 role: User, Developer, Data Engineer
 exl-id: 3e28bfee-0321-40f4-9ef6-1bdb5b25041b
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '567'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -175,4 +175,4 @@ Das Speichern des Quellschemas löst automatisch die Erzeugung des erweiterten S
 
 >[!NOTE]
 >
->Die **Name** edit control ermöglicht die Eingabe des Schemas-Schlüssels, bestehend aus Name und Namespace. Die **name** und **namespace** -Attribute des Schemastamm-Elements werden automatisch im XML-Bearbeitungsfeld des Schemas aktualisiert.
+>Im Feld **Name** kann der Schemaschlüssel - bestehend aus Name und Namensraum - erfasst werden. Die Attribute **name** und **namespace** der Wurzel werden automatisch im XML-Editor des Schemas aktualisiert.

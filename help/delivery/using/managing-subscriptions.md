@@ -7,9 +7,9 @@ feature: Subscriptions
 role: User
 exl-id: 16dddd4a-2e1a-4c78-8168-f656657bb9b8
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1174'
-ht-degree: 63%
+ht-degree: 100%
 
 ---
 
@@ -56,11 +56,11 @@ Um einen vorhandenen Dienst zu bearbeiten, klicken Sie auf seinen Namen. Um eine
   >
   >Facebook- und X-Abonnements werden in [diesem Abschnitt](../../social/using/about-social-marketing.md) ausführlich beschrieben. Mobile App-Abonnements werden im Abschnitt [Über den Mobile-App-Kanal](about-mobile-app-channel.md) beschrieben.
 
-* Wählen Sie für einen Dienst vom Typ E-Mail die **Versandmodus**. Die möglichen Modi sind: **[!UICONTROL Newsletter]** oder **[!UICONTROL Viral]**.
-* Sie können **Bestätigungsnachrichten** für eine An- oder Abmeldung. Wählen Sie dazu die Versandvorlagen aus, die zur Erstellung der entsprechenden Sendungen verwendet werden sollen. **[!UICONTROL Abonnement]** und **[!UICONTROL Abmeldung]** -Felder. Diese Vorlagen müssen mit einer **[!UICONTROL Abonnement]** Geben Sie Zielgruppen-Mapping ohne definierte Zielgruppe ein. Siehe Abschnitt [Über den E-Mail-Kanal](about-email-channel.md).
-* Standardmäßig sind Abonnements unbegrenzt. Sie können die Auswahl der **[!UICONTROL Unbegrenzt]** -Option, um eine Gültigkeitsdauer für den Dienst festzulegen. Die Dauer kann in Tagen (**[!UICONTROL d]** ) oder Monate (**[!UICONTROL m]** ).
+* Wählen Sie für einen Dienst vom Typ E-Mail den **Versandmodus**. Die möglichen Modi sind: **[!UICONTROL Newsletter]** oder **[!UICONTROL Viral]**.
+* Sie haben die Möglichkeit, bei An- und Abmeldungen **Bestätigungsnachrichten** zu versenden. Wählen Sie in diesem Fall neben den Feldern **[!UICONTROL Anmeldung]** und **[!UICONTROL Abmeldung]** die jeweils zu verwendenden Versandvorlagen aus. Die Vorlagen müssen mit einem Zielgruppen-Mapping des Typs **[!UICONTROL Abonnements]** und ohne Angabe einer Zielgruppe konfiguriert werden. Siehe Abschnitt [Über den E-Mail-Kanal](about-email-channel.md).
+* Standardmäßig sind Abonnements unbegrenzt. Sie können jedoch die Option **[!UICONTROL Unbegrenzt]** abwählen und eine Gültigkeitsdauer für den Dienst festlegen. Die Gültigkeitsdauer kann in Tagen (**[!UICONTROL T]**) oder Monaten (**[!UICONTROL M]**) festgelegt werden.
 
-Nachdem der Dienst gespeichert wurde, wird er der Liste Dienste und Abonnements hinzugefügt: Klicken Sie auf seinen Namen, um ihn zu bearbeiten. Es stehen mehrere Registerkarten zur Verfügung. Die **[!UICONTROL Abonnements]** bietet die Möglichkeit, die Liste der Abonnenten des Informationsdienstes (**[!UICONTROL Aktive Abonnements]** oder den Verlauf der An-/Abmeldung (**[!UICONTROL Geschichte]** Registerkarte). An dieser Stelle können Sie auch Abonnenten hinzufügen und löschen. Siehe [Abonnenten hinzufügen und löschen](#adding-and-deleting-subscribers).
+Nachdem der Dienst gespeichert wurde, wird er der Liste „Dienste und Abonnements“ hinzugefügt: Klicken Sie auf seinen Namen, um ihn zu bearbeiten. Es stehen mehrere Registerkarten zur Verfügung. Die Registerkarte **[!UICONTROL Abonnements]** wird die Liste aller angemeldeten Benutzer (Unterregisterkarte **[!UICONTROL Aktive Abonnements]**) bzw. aller An- und Abmeldungen (Unterregisterkarte **[!UICONTROL Verlauf]**) angezeigt. Sie haben an dieser Stelle auch die Möglichkeit, Abonnenten hinzuzufügen oder zu entfernen. Siehe [Abonnenten hinzufügen und löschen](#adding-and-deleting-subscribers).
 
 ![](assets/s_ncs_user_services_subscriptions.png)
 
@@ -74,9 +74,9 @@ Klicken Sie zur Verfolgung der Abonnements (Anmeldungen, Abonnentenanzahl usw.) 
 
 ## Abonnenten hinzufügen und löschen {#adding-and-deleting-subscribers}
 
-Aus dem **[!UICONTROL Abonnements]** Registerkarte eines Informationsdienst-Klicks **[!UICONTROL Hinzufügen]** , um Abonnenten hinzuzufügen. Sie können auch mit der rechten Maustaste auf die Abonnentenliste klicken und **[!UICONTROL Hinzufügen]**. Wählen Sie den Ordner aus, in dem die abonnierten Profile gespeichert werden sollen, wählen Sie die Profile aus, die abonniert werden sollen, und klicken Sie auf **[!UICONTROL OK]** validieren.
+Klicken Sie im **[!UICONTROL Abonnements]**-Tab eines Dienstes auf die Schaltfläche **[!UICONTROL Hinzufügen]**. (Eine weitere Möglichkeit ist, in der Abonnentenliste einen Rechtsklick zu machen und die Option **[!UICONTROL Hinzufügen]** zu wählen.) Geben Sie den die anzumeldenden Empfänger enthaltenden Ordner an, markieren Sie die neuen Abonnenten und klicken Sie zur Bestätigung auf **[!UICONTROL OK]**.
 
-Um Abonnenten zu löschen, wählen Sie sie aus und klicken Sie auf **[!UICONTROL Löschen]**. Sie können auch mit der rechten Maustaste auf die Teilnehmerliste klicken und **[!UICONTROL Löschen]**.
+Um Abonnenten zu entfernen, markieren Sie sie und klicken Sie auf **[!UICONTROL Löschen]**. (Sie haben auch die Möglichkeit, auf der Abonnentenliste einen Rechtsklick zu machen und die Option **[!UICONTROL Löschen]** zu wählen.)
 
 In beiden Fällen können Sie eine Bestätigungsnachricht an die betreffenden Benutzer senden, wenn eine Versandvorlage für Abmeldungen mit dem Dienst verknüpft wurde (siehe [Informationsdienste erstellen](#creating-an-information-service)). Mit einem Warnhinweis können Sie diesen Versand validieren oder nicht validieren:
 
@@ -113,7 +113,7 @@ Sie haben die Möglichkeit, An- und Abmeldevorgänge sowie die Abonnentenverwalt
 >Sie können neuen Abonnenten und jenen, die sich abmelden, eine Bestätigungsnachricht senden.\
 >Der Inhalt dieser Nachricht wird im Informationsdienst im Abschnitt Bestätigungsnachrichten im Feld **[!UICONTROL Anmeldung]** bzw. **[!UICONTROL Abmeldung]** konfiguriert.
 >
->Die Bestätigungsnachrichten werden in den in diesen Feldern angegebenen Versandvorlagen erstellt. Diese Zielgruppen-Mappings müssen **[!UICONTROL Abonnements]**.
+>Die Bestätigungsnachrichten werden ausgehend von den Vorlagen erstellt, die hier angegeben werden. Das Zielgruppen-Mapping der Vorlagen muss vom Typ **[!UICONTROL Abonnements]** sein.
 
 ![](assets/s_ncs_user_subscribe_confirmation.png)
 
@@ -125,7 +125,7 @@ Sie haben verschiedene Möglichkeiten, um einen Empfänger für einen Dienst anz
 
   Lesen Sie diesbezüglich auch über die Bearbeitung von Empfängerprofilen in [diesem Abschnitt](../../platform/using/editing-a-profile.md).
 
-* automatisch eine Gruppe von Empfängern für diesen Dienst anmelden. Die Empfängerliste kann aus einem Filtervorgang, einer Gruppe, einem Ordner, einem Import oder einer direkten Auswahl mit der Maus stammen. Um diese Empfänger anzumelden, wählen Sie die Profile aus und klicken Sie mit der rechten Maustaste darauf. Auswählen **[!UICONTROL Aktionen > Auswahl für einen Dienst anmelden...]**, wählen Sie den betreffenden Dienst aus und starten Sie den Vorgang.
+* Gruppe von Empfängerinnen und Empfängern automatisch für einen Dienst anmelden. Die Liste der Empfänger kann aus einer Filterung, einer Gruppe, einem Ordner, einem Import oder einer direkten Auswahl mithilfe der Maus stammen. Um diese Empfänger anzumelden, wählen Sie die Profile aus und klicken Sie mit der rechten Maustaste darauf. Wählen Sie **[!UICONTROL Aktionen > Auswahl für einen Dienst anmelden...]** aus, wählen Sie den betreffenden Service aus und starten Sie den Prozess.
 * Empfänger im Zuge eines Imports für einen Dienst anmelden. Geben Sie im letzten Schritt des Import-Assistenten den gewünschten Dienst an.
 
   Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../platform/using/executing-import-jobs.md).
@@ -150,17 +150,17 @@ Der standardmäßige Abmelde-Link wird über die letzte Schaltfläche in der Sym
 
 Die Empfänger können sich allerdings von einem Dienst abmelden, ohne sich von allen Diensten abmelden zu müssen. Dazu können Sie ein Webformular verwenden (siehe [diesen Abschnitt](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes)) oder einen personalisierten Abmelde-Link einfügen (siehe [Gestaltungsbausteine](personalization-blocks.md)).
 
-Sie können sich auch manuell vom Empfängerprofil abmelden. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Abonnements]** den oder die betroffenen Informationsdienste aus und klicken Sie auf **[!UICONTROL Löschen]**.
+Des Weiteren können Sie einen Empfänger manuell über sein Profil abmelden. Klicken Sie hierfür auf den **[!UICONTROL Abonnements]**-Tab, markieren Sie die entsprechenden Informationsdienste und klicken Sie auf **[!UICONTROL Löschen]**.
 
-Über den entsprechenden Informationsdienst können Sie sich abmelden. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Abonnements]** im Tab Dienst die betroffenen Empfänger auswählen und auf **[!UICONTROL Löschen]**.
+Eine andere Möglichkeit ist die Abmeldung eines oder mehrerer Empfänger direkt im betroffenen Informationsdienst. Klicken Sie hierfür auf den **[!UICONTROL Abonnements]**-Tab des Dienstes, markieren Sie die Empfänger und klicken Sie auf **[!UICONTROL Löschen]**.
 
 #### Automatische Abmeldung {#automatic-unsubscription}
 
-Ein Informationsdienst kann eine begrenzte Dauer haben. Die Abmeldung erfolgt automatisch, wenn die Gültigkeitsdauer abgelaufen ist. Dieser Zeitraum wird im Abschnitt **[!UICONTROL Bearbeiten]** Registerkarte der Diensteigenschaften. Sie wird in Tagen definiert.
+Ein Informationsdienst kann eine begrenzte Dauer haben. Die Abmeldung erfolgt automatisch, wenn die Gültigkeitsdauer abgelaufen ist. Die Dauer der Gültigkeit wird auf der Registerkarte **[!UICONTROL Bearbeiten]** der Diensteigenschaften konfiguriert. Sie wird in Tagen definiert.
 
 ![](assets/s_ncs_user_services_delay.png)
 
-Sie können auch einen Abmelde-Workflow für eine Population einrichten. Gehen Sie dazu wie bei einem Abonnement-Workflow vor, wählen Sie jedoch die **[!UICONTROL Abmeldung]** -Option. Siehe [Empfänger für Informationsdienste anmelden](#subscribing-a-recipient-to-a-service).
+Sie haben außerdem die Möglichkeit, einen Abmelde-Workflow für eine bestimmte Population zu erstellen. Gehen Sie wie oben für einen Anmelde-Workflow beschrieben vor und kreuzen Sie in der Abonnements-Aktivität die Option **[!UICONTROL Abmeldung]** an. Siehe [Empfänger für Informationsdienste anmelden](#subscribing-a-recipient-to-a-service).
 
 ### Abonnement-Verfolgung {#subscriber-tracking}
 

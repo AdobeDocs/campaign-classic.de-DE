@@ -7,9 +7,9 @@ feature: Email
 role: User
 exl-id: 7f44e732-4257-4d2a-800c-bde847e20f52
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '107'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Gehen Sie wie folgt vor, um einen neuen E-Mail-Versand zu erstellen:
 >Allgemeine Methoden zur Versanderstellung finden Sie in [diesem Abschnitt](steps-about-delivery-creation-steps.md).
 
 1. Erstellen Sie einen neuen Versand beispielsweise im Versand-Dashboard.
-1. Versandvorlage auswählen **Email delivery (mail)** oder einer von Ihnen erstellten E-Mail-Versandvorlage. Weiterführende Informationen zu Versandvorlagen finden Sie im Abschnitt [diesem Abschnitt](about-templates.md).
+1. Wählen Sie die Versandvorlage **E-Mail-Versand (Mail)** oder eine von Ihnen erstellte E-Mail-Versandvorlage aus. Weiterführende Informationen zu Versandvorlagen finden Sie in [diesem Abschnitt](about-templates.md).
 
    ![](assets/s_ncs_user_wizard_email01_1.png)
 

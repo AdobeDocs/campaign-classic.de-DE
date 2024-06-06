@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: asset-sharing
 exl-id: f3897a40-b080-47e5-9e31-4d861c1bacd5
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '543'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Dieser Abschnitt beschreibt die in Adobe Campaign erforderlichen Konfigurationss
 >Die Integrationen können sich mitunter gegenseitig beeinflussen. Lesen Sie deshalb aufmerksam folgende Informationen, bevor Sie irgendeine Konfiguration vornehmen.
 
 * Bei der Integration mit **Experience Cloud Assets** besteht die Möglichkeit, Bilder aus Ihrer Adobe Experience Cloud-Bibliothek zu verwenden. Diese Integration muss eingerichtet werden, indem das integrierte Package **[!UICONTROL Integration mit Adobe Experience Cloud]** in Adobe Campaign installiert wird.
-* Integration mit **AEM Assets**: Mit dieser Integration können Sie Bilder aus Ihrer Adobe Experience Manager Assets-Bibliothek einfügen. Diese Integration muss durch Installation der **[!UICONTROL AEM]** natives Paket in Adobe Campaign. Beachten Sie, dass diese Integration ab Adobe Experience Manager 6.4 nicht mehr verfügbar ist.
+* Bei der Integration mit **AEM Assets** besteht die Möglichkeit, Bilder aus Ihrer Adobe Experience Manager Assets-Bibliothek zu verwenden. Diese Integration muss eingerichtet werden, indem das integrierte Package **[!UICONTROL Integration mit Adobe Experience Manager]** in Adobe Campaign installiert wird. Beachten Sie, dass diese Integration ab Adobe Experience Manager 6.4 nicht mehr verfügbar ist.
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ Um die aus der Integration von Adobe Campaign und Experience Cloud Assets result
 * Adobe Experience Cloud-Organisation,
 * Aktivierten IMS-Authentifizierungsmodus von Adobe
 
-Um die Verbindung zwischen Adobe Campaign und Adobe Experience Cloud zu aktivieren, konfigurieren Sie die Verbindung über IMS (Adobe ID-Verbindungsdienst). Diese Konfiguration wird im Abschnitt [Verbindung über Adobe ID](../../integrations/using/about-adobe-id.md) Dokument. Er umfasst:
+Um die Verbindung zwischen Adobe Campaign und Adobe Experience Cloud zu aktivieren, konfigurieren Sie die Verbindung über IMS (Adobe-ID-Verbindungsservice). Weiterführende Informationen zu dieser Konfiguration finden Sie im Dokument [Verbindung mit Adobe ID](../../integrations/using/about-adobe-id.md). Sie umfasst:
 
 * Die Installation des Packages **[!UICONTROL Integration mit Adobe Experience Cloud]**,
 * die Konfiguration eines externen Adobe Experience Cloud-Kontos.
@@ -64,14 +64,14 @@ Vor der Integration von AEM Assets mit Adobe Campaign ist zunächst die Integrat
 
 Nach der Integration können Sie eine neue Versandvorlage in Adobe Campaign konfigurieren, um die AEM-Assets-Bibliothek zu verwenden. Gehen Sie dazu folgendermaßen vor:
 
-1. Erstellen Sie eine neue Versandvorlage oder duplizieren Sie eine vorhandene. Versandvorlagen werden im Abschnitt [diese Seite](../../delivery/using/about-templates.md).
+1. Erstellen Sie eine neue Versandvorlage oder duplizieren Sie eine vorhandene. Weiterführende Informationen zu Versandvorlagen finden Sie auf [dieser Seite](../../delivery/using/about-templates.md).
 1. Bearbeiten Sie die **Eigenschaften** dieser Vorlage.
 1. Wählen Sie im Tab **[!UICONTROL Erweitert]** für **[!UICONTROL Inhaltserstellung]** die Option **DCE**.
 1. Wählen Sie das externe **[!UICONTROL AEM-Konto]**, mit dem Sie auf Ihre AEM-Assets-Bibliothek zugreifen.
 
    ![](assets/dam_aem_assets1.png)
 
-Wenn Sie Bilder in Versandinhalte einfügen, die auf dieser Vorlage basieren, wird die **[!UICONTROL Freigegebene Assets auswählen]** können Sie dann Bilder in der AEM Assets-Bibliothek durchsuchen. Weiterführende Informationen finden Sie in [diesem Abschnitt](../../integrations/using/inserting-a-shared-asset.md).
+Beim Einfügen von Bildern in Versandinhalte auf der Basis dieser Vorlage haben Sie nun die Möglichkeit, über die Option **[!UICONTROL Freigegebenes Asset auswählen]** die AEM-Assets-Bibliothek nach Bildern zu durchsuchen. Weiterführende Informationen finden Sie in [diesem Abschnitt](../../integrations/using/inserting-a-shared-asset.md).
 
 >[!NOTE]
 >

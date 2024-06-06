@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: response-manager
 exl-id: 428c7677-454b-4618-bae7-0be7df6dfcaa
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1516'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -67,7 +67,7 @@ Im Tab **[!UICONTROL Allgemein]** der Vorlage werden die allgemeinen Optionen de
 
   Die Bestimmung und Konfiguration von Kontrollgruppen werden in [diesem Abschnitt](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group) beschrieben.
 
-* **[!UICONTROL Kanal]**: Sie können einen bestimmten Kanal auswählen oder die Hypothese-Vorlage für alle Kanäle in der Adobe Campaign-Konsole verfügbar machen, indem Sie in der Dropdown-Liste **[!UICONTROL Alle Kanäle]** auswählen. Wenn Sie die Vorlage für einen bestimmten Kanal konfigurieren, können Sie Sendungen bei der Erstellung der Hypothese automatisch nach Kanal filtern. [Weitere Informationen](creating-hypotheses.md)   
+* **[!UICONTROL Kanal]**: Sie können einen bestimmten Kanal auswählen oder die Hypothese-Vorlage für alle Kanäle in der Adobe Campaign-Konsole verfügbar machen, indem Sie in der Dropdown-Liste **[!UICONTROL Alle Kanäle]** auswählen. Wenn Sie die Vorlage für einen bestimmten Kanal konfigurieren, können die Sendungen bei der Hypothesenerstellung automatisch nach Kanal gefiltert werden. [Weitere Informationen](creating-hypotheses.md)   
 
   ![](assets/response_properties_001.png)
 
@@ -117,7 +117,7 @@ Im Tab **[!UICONTROL Allgemein]** der Vorlage können zudem die Ausführungspara
 
 Dieser Tab enthält Felder und Tabellen, mithilfe derer Sie den Verlauf der Empfängerreaktionen bei Transaktionen speichern können. Weiterführende Informationen zu den für die Reaktionsverwaltung verwendeten Tabellen finden Sie in diesem [Abschnitt](../../configuration/using/about-schema-reference.md).
 
-* **[!UICONTROL Schema (Speicherung des Reaktionslogs)]**: Wählen Sie die Empfängerreaktionstabelle aus. Die vordefinierte Tabelle in Adobe Campaign lautet **NmsRemaMatchRcp**.
+* **[!UICONTROL Schema (Speicherung des Reaktionslogs)]**: Wählen Sie die Empfängerreaktionstabelle aus. Die standardmäßige Adobe Campaign-Tabelle hierfür ist **NmsRemaMatchRcp**.
 * **[!UICONTROL Transaktionsschema]**: Wählen Sie die Tabelle aus, auf die sich die Hypothesen beziehen sollen (also die die Bestellungen enthaltende Transaktionstabelle).
 * **[!UICONTROL Abfrageschema]**: Wählen Sie Kriterien zur Filterung der Hypothese aus.
 * **[!UICONTROL Relation zu den Individuen]**: Geben Sie die Relation zwischen den Individuen und der als Transaktionschema ausgewählten Tabelle an.
@@ -185,7 +185,7 @@ Nachdem die Transkationstabelle sowie die von der Hypothese betroffenen Felder d
 
 ## Beispiel: Erstellen einer Hypothesenvorlage für einen Versand {#example--creating-a-hypothesis-template-on-a-delivery}
 
-In diesem Beispiel wird eine Hypothesenvorlage für einen Briefpost-Versand erstellt. Die Transaktionstabelle (**Käufe** in unserem Beispiel), auf dem die Hypothesen basieren, Bestellzeilen enthalten, die mit Artikeln oder Produkten verknüpft sind. Wir möchten unser Modell so konfigurieren, dass Hypothesen über Artikel oder Produkte in der Bestelltabelle erstellt werden.
+Im folgenden Beispiel wird eine Hypothesenvorlage für einen Briefpost-Versand erstellt. Die Transaktionstabelle (**Bestellungen** in unserem Beispiel), auf welcher die Hypothesen basieren, enthält Bestellzeilen, denen Produkte zugeordnet sind. Die Vorlage wird so konfiguriert, dass die Hypothesen sich auf eben diese Produkte bezieht.
 
 1. Positionieren Sie sich im Knoten **[!UICONTROL Ressourcen > Vorlagen > Hypothesenvorlagen]** des Adobe-Campaign-Explorers.
 1. Klicken Sie auf **[!UICONTROL Neu]**, um eine Vorlage zu erstellen.

@@ -6,9 +6,9 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Surveys
 exl-id: 3cf3c486-6640-4d67-95cf-50d5767deb60
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '889'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ Die Herkunft wird in der Umfrage-URL durch Hinzufügen folgender Buchstaben geke
 ?origin=xxx
 ```
 
-während die Umfrage bearbeitet wird, enthält ihre URL den Parameter **[!UICONTROL __uuid]**, was anzeigt, dass es sich in einer Testphase befindet und noch nicht online ist. Wenn Sie über diese URL auf die Umfrage zugreifen, werden die erstellten Datensätze beim Tracking (in Berichten) nicht berücksichtigt. Der Ursprung wird auf den Wert **[!UICONTROL Adobe Campaign]**.
+Während der Bearbeitung der Umfrage enthält die URL den Parameter **[!UICONTROL __uuid]**, der darauf hinweist, dass sich die Umfrage in einer Testphase befindet und noch nicht online ist. Wenn Sie auf die Umfrage über diese URL zugreifen, werden die erzeugten Einträge beim Tracking (in Berichten) nicht berücksichtigt. Für die Herkunft wird der Wert **[!UICONTROL Adobe Campaign]** übernommen.
 
 Weiterführende Informationen zu URL-Parametern finden Sie auf [dieser Seite](../../web/using/defining-web-forms-properties.md#form-url-parameters).
 
@@ -72,7 +72,7 @@ Im Tab **[!UICONTROL Berichte]** sind zwei weitere Berichte zu Webumfragen verf�
 
 * Antwortenverteilung
 
-  Dieser Bericht zeigt die Antwortenverteilung für jede Frage. Diese Aufschlüsselung ist nur für Antworten auf Felder verfügbar, die in gespeichert sind. **[!UICONTROL Frage]** Typbehälter. Sie gilt nur für Auswahldialoge (beispielsweise keine Aufschlüsselung für Textfelder).
+  Dieser Bericht zeigt die Antwortenverteilung für jede Frage. Diese Verteilung ist nur für Antworten auf Felder verfügbar, die in Containern vom Typ **[!UICONTROL Frage]** gespeichert sind. Sie gilt nur für Auswahldialoge (beispielsweise keine Aufschlüsselung für Textfelder).
 
   ![](assets/s_ncs_admin_survey_report_2.png)
 
@@ -88,7 +88,7 @@ Antworten auf Umfragen können zur späteren Verarbeitung in eine externe Datei 
 
 1. Antworten exportieren
 
-   Um Antworten zu exportieren, klicken Sie auf die Schaltfläche **[!UICONTROL Antworten]** und klicken Sie mit der rechten Maustaste auf die Umfrage. Auswählen **[!UICONTROL Export...]**.
+   Um Antworten zu exportieren, wählen Sie in der Umfrage die Registerkarte **[!UICONTROL Antworten]** aus und rechtsklicken Sie darauf. Wählen Sie dann **[!UICONTROL Exportieren...]** aus.
 
    ![](assets/s_ncs_admin_survey_logs_export_menu.png)
 
@@ -102,7 +102,7 @@ Antworten auf Umfragen können zur späteren Verarbeitung in eine externe Datei 
    * die exportierte Datei formatieren;
    * das Codierungsformat für die Daten in der Datei auswählen.
 
-   Wenn die zu exportierende Umfrage mehrere **[!UICONTROL Mehrzeiliger Text]** oder **[!UICONTROL HTML-Text]** -Felder, muss er exportiert werden in **[!UICONTROL XML]** Format. Wählen Sie dazu dieses Format in der Dropdown-Liste der **[!UICONTROL Ausgabeformat]** wie unten gezeigt:
+   Wenn die zu exportierende Umfrage mehrere Felder mit **[!UICONTROL mehrzeiligem Text]** oder **[!UICONTROL HTML-Text]** enthält, muss sie im **[!UICONTROL XML]**-Format exportiert werden. Wählen Sie dazu dieses Format aus der Dropdown-Liste im Feld **[!UICONTROL Ausgabeformat]** wie unten dargestellt aus:
 
    ![](assets/s_ncs_admin_survey_logs_export_xml.png)
 
@@ -114,7 +114,7 @@ Antworten auf Umfragen können zur späteren Verarbeitung in eine externe Datei 
 
 ## Die erfassten Daten nutzen {#using-the-collected-data}
 
-Die mithilfe von Online-Umfragen gesammelten Informationen können im Rahmen eines Zielgruppen-Workflows abgerufen werden. Verwenden Sie dazu die **[!UICONTROL Umfrageantworten]** ankreuzen.
+Die durch Online-Umfragen gesammelten Daten können im Rahmen eines Zielgruppen-Workflows abgerufen werden. Verwenden Sie zu diesem Zweck die Box **[!UICONTROL Umfrageantworten]**.
 
 Im folgenden Beispiel soll den fünf Empfängern, die bei einer Online-Umfrage die höchste Punktzahl hatten und mindestens zwei Kinder haben, ein Webangebot gemacht werden. Die Antworten auf die Umfrage lauteten:
 
@@ -150,7 +150,7 @@ Bearbeiten Sie die Aufspaltungsbox, um sie zu konfigurieren:
 
   ![](assets/s_ncs_admin_survey_responses_wf_box_7.png)
 
-* Wählen Sie die **[!UICONTROL Nur die ersten Datensätze nach der Sortierung beibehalten]** und wählen Sie die Sortierungsspalte aus. Überprüfen Sie die **[!UICONTROL Absteigende Sortierung]** -Option.
+* Wählen Sie die Option **[!UICONTROL Die ersten aus einer Sortierung hervorgehenden Elemente beibehalten]** und dann die Spalte, nach der sortiert werden soll, aus. Aktivieren Sie die Option **[!UICONTROL Absteigende Sortierung]**.
 
   ![](assets/s_ncs_admin_survey_responses_wf_box_8.png)
 

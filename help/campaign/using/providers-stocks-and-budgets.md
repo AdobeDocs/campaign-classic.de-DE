@@ -6,9 +6,9 @@ role: User
 feature: Budget Management, Campaigns
 exl-id: c60c4f86-a957-4c44-a0fe-39b6e3f0e5d6
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2010'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -82,7 +82,7 @@ Um eine Dienstleistungsvorlage zu erstellen und ihren Inhalt zu bestimmen, gehen
      >Die Lagerpositionen werden im Knoten **[!UICONTROL Lagerverwaltung]** definiert.\
      >Weitere Informationen finden Sie unter [Verwaltung von Lagern und Lagerergänzungen](#stock-and-order-management).
 
-1. Sie können einen Wert für diese Kostenstelle vorab auswählen, der standardmäßig in den Kostenstellen des Dienstleisters angeboten wird (anstatt leer zu sein). Wählen Sie dazu die Option im **[!UICONTROL Ausgewählt]** Spalte für die betreffende Kategorie:
+1. Sie können einen Wert für diese Kostenkategorie vorab auswählen. Dieser wird dann der Standardwert in den Kostenkategorien des Dienstleisters (anstelle eines leeren Werts) vorausgefüllt. Wählen Sie dazu in der Spalte **[!UICONTROL Ausgewählt]** für den betreffende Kategorietyp die Option aus:
 
    ![](assets/s_ncs_user_supplier_cost_structure_defaut.png)
 
@@ -175,7 +175,7 @@ Wenn ein Dienst ausgewählt wird, werden die dem Versandtyp (Briefpost, E-Mail u
 
 Über die Spalte **[!UICONTROL Zu belastender Betrag]** können Kosten für diese Stelle im Kontext des betreffenden Versands oder der Aufgabe hinzugefügt werden.
 
-Sie können bei der Definition der Kostenstellen eines Versands die obligatorische Auswahl eines Kostentyps vorschreiben. Wählen Sie dazu **[!UICONTROL Auswahl eines Werts aus der Kostentypliste erforderlich]**.
+Sie können die Auswahl eines Kostentyps bei der Bestimmung der Kostenkategorien in einem Versand obligatorisch machen. Wählen Sie dazu **[!UICONTROL Auswahl eines Werts aus der Kostentypliste erforderlich]**.
 
 ![](assets/s_ncs_user_supplier_cost_structure_select.png)
 

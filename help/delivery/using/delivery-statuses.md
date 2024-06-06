@@ -7,9 +7,9 @@ feature: Monitoring, Deliverability
 role: User
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '646'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -82,7 +82,7 @@ Weitere Informationen zu den verschiedenen fehlgeschlagenen Sendungen und deren 
   </tr> 
   <tr> 
    <td> Vorbereitet<br /> </td> 
-   <td> Zwischenstatus, der nur für externe Connectoren wie den Mobile-Kanal verwendet wird. Er folgt dem Status 'Ausstehend' und ist der externe Connector, der den folgenden Status bestimmt.<br /> </td> 
+   <td> Hierbei handelt es sich um einen Zwischenstatus, der ausschließlich für externe Connectoren (z. B. Mobile-Kanal) verwendet wird. Er folgt dem Status 'Ausstehend' und ist der externe Connector, der den folgenden Status bestimmt.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -93,7 +93,7 @@ Weitere Informationen zur Optimierung der Zustellbarkeit von mit Adobe Campaign 
 
 Nach der Bestätigung des Versands ist dessen Status **[!UICONTROL Ausstehend]**. Das bedeutet, dass im Ausführungsprozess auf die Verfügbarkeit von Ressourcen gewartet wird.
 
-Die **[!UICONTROL Ausstehend]** Der Status kann zunächst bedeuten, dass Ihr Versand geplant wurde und bis zum angegebenen Datum ausstehend ist. Weitere Informationen hierzu finden Sie im Abschnitt [Versandplanung](steps-sending-the-delivery.md#scheduling-the-delivery-sending) Abschnitt.
+Der Status **[!UICONTROL Ausstehend]** kann bedeuten, dass der Versand terminiert wurde und bis zum entsprechenden Datum in der Warteschlange bleibt. Weitere Informationen hierzu finden Sie im Abschnitt [Versandauslösung](steps-sending-the-delivery.md#scheduling-the-delivery-sending).
 
 Wenn der Versand nicht durchgeführt wird und sein Status **[!UICONTROL Ausstehend]** bleibt, kann dies folgende Gründe haben:
 

@@ -6,9 +6,9 @@ feature: Social Marketing
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 exl-id: 10fd561f-1b07-490e-9f66-d67e44a0def5
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '621'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Wenn ein Empfänger auf das Symbol eines der vorgeschlagenen Netzwerke klickt, w
 
 >[!NOTE]
 >
->Dieser Gestaltungsbaustein enthält alle Links (für den Nachrichtenversand und die Freigabe für alle sozialen Netzwerke). Es kann Ihren Bedürfnissen entsprechend angepasst werden. Die Konfiguration ist jedoch erfahrenen Benutzern vorbehalten. Um den entsprechenden Gestaltungsbaustein zu bearbeiten, navigieren Sie zum **[!UICONTROL Ressourcen > Kampagnenverwaltung > Gestaltungsbausteine]** -Knoten des Adobe Campaign-Baums.
+>Dieser Gestaltungsbaustein enthält alle Links (für den Nachrichtenversand und die Freigabe für alle sozialen Netzwerke). Es kann Ihren Bedürfnissen entsprechend angepasst werden. Die Konfiguration ist jedoch erfahrenen Benutzern vorbehalten. Auf den Baustein kann im Knoten **[!UICONTROL Ressourcen > Kampagnenverwaltung > Gestaltungsbausteine]** zugegriffen werden.
 
 ## Weiterleiten von Nachrichten {#viral-marketing--forward-to-a-friend}
 
@@ -67,7 +67,7 @@ Folgende Schritte sind dazu nötig:
 
    >[!NOTE]
    >
-   >Der Inhalt dieser Nachricht kann Ihren Bedürfnissen entsprechend personalisiert werden. Sie wird basierend auf der Variablen **[!UICONTROL Übermittlung der ursprünglichen Nachricht]** Vorlage, die im **[!UICONTROL Administration > Kampagnenverwaltung > Vorlagen technischer Sendungen]** Knoten.
+   >Der Inhalt der Mitteilung kann Ihren Bedürfnissen angepasst werden. Er beruht auf der Vorlage **[!UICONTROL Weiterleitung der ursprünglichen Nachricht]** und ist im Knoten **[!UICONTROL Administration > Kampagnenverwaltung > Vorlagen technischer Sendungen]** zugänglich.
    >
    >Sie können außerdem das Weiterleitungsformular Ihren Wünschen entsprechend ändern. Dies geschieht über die Webanwendung **Teilen-Formular**, auf die Sie im Knoten **[!UICONTROL Ressourcen > Online > Webanwendungen]** zugreifen können.
 
@@ -77,11 +77,11 @@ Folgende Schritte sind dazu nötig:
 
    >[!NOTE]
    >
-   >Diese Konfiguration kann angepasst werden. Dazu müssen Sie die **Empfänger-Abonnement** Webanwendung, die im **[!UICONTROL Ressourcen > Online > Webanwendungen]** Knoten.
+   >Auch hier haben Sie die Möglichkeit, die Konfigurationen anzupassen. Begeben Sie sich hierzu in den Knoten **[!UICONTROL Ressourcen > Online > Webanwendungen]** und wählen Sie **Empfängeranmeldung** aus.
    >
    >Weitere Informationen zu Webanwendungen finden Sie in [diesem Abschnitt](../../web/using/about-web-applications.md).
 
-   Nach der Validierung wird ihnen eine Bestätigungsnachricht gesendet: Sie werden erst dann für die Dauer registriert, wenn sie den Link in der Bestätigungsnachricht aktivieren. Diese Nachricht wird basierend auf der Variablen **[!UICONTROL Registrierungsbestätigung]** Vorlage, die im **[!UICONTROL Administration > Kampagnenverwaltung > Vorlagen technischer Sendungen]** Knoten.
+   Eine automatische Nachricht bestätigt die Registrierung des Kontakts, seine Daten werden jedoch erst in der Datenbank gespeichert, wenn er den in der Bestätigung enthaltenen Link aktiviert. Die Bestätigungsnachricht wird unter Verwendung der Vorlage **[!UICONTROL Anmeldebestätigung]** erstellt, die im Knoten **[!UICONTROL Administration > Kampagnenverwaltung > Vorlagen technischer Sendungen]** zugänglich ist.
 
    Der geworbene Kontakt wird nun im **Empfänger**-Ordner der Datenbank gespeichert. Standardmäßig wurde er außerdem automatisch für den Informationsdienst **Newsletter** angemeldet.
 

@@ -4,9 +4,9 @@ title: Marketing-Ressourcen (MRM)
 description: Marketing-Ressourcen (MRM)
 feature: Workflows, Targeting Activity
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '92'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ Die folgenden Workflows werden standardmäßig mit dem Modul **Marketing-Ressour
   <tr> 
    <td> <span class="uicontrol">Vorgänge in Diskussionsforen</span> <br /> </td> 
    <td> <span class="uicontrol">newsgroupMgt</span> <br /> </td> 
-   <td> Dieser Workflow verwaltet den Versand von Benachrichtigungen in Diskussionsforen. Sie wird ausgelöst, wenn ein Genehmigungssignal empfangen wird.<br /> </td> 
+   <td> Sendet Benachrichtigungen in Diskussionsforen. Wird gestartet, sobald ein Validierungssignal empfangen wird.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

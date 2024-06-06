@@ -5,9 +5,9 @@ description: Scripts/JavaScript-Templates
 feature: Workflows
 exl-id: 4a3647d1-cf8c-4867-871e-472287be7c6a
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1268'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -63,7 +63,7 @@ Klicken Sie auf **[!UICONTROL OK]**, um den Assistenten zu schließen und starte
 
 ## Variablen {#variables}
 
-Die Variablen sind die freien Eigenschaften der **[!UICONTROL instance]**, **[!UICONTROL Aufgabe]** und **[!UICONTROL event]** Objekte. Die für diese Variablen zulässigen JavaScript-Typen sind **[!UICONTROL Zeichenfolge]**, **[!UICONTROL number]** und **[!UICONTROL Datum]**.
+Variablen sind freie Eigenschaften der Objekte **[!UICONTROL instance]**, **[!UICONTROL task]** und **[!UICONTROL event]**. Die für diese Variablen zulässigen JavaScript-Typen sind **[!UICONTROL string]**,**[!UICONTROL number]** und **[!UICONTROL Date]**.
 
 ### Instanzvariablen {#instance-variables}
 
@@ -83,7 +83,7 @@ Ereignisvariablen (**[!UICONTROL vars.xxx]**) ermöglichen den Austausch von Dat
 
 Ereignisvariablen sind die am häufigsten verwendeten Variablen und sind Instanzvariablen vorzuziehen.
 
-Bestimmte Ereignisvariablen werden von den verschiedenen Aktivitäten geändert oder gelesen. Dies sind alle Variablen vom Typ Zeichenfolge. Beispielsweise wird bei einem Export der Wert **[!UICONTROL vars.filename]** mit dem vollständigen Namen der Datei, die gerade exportiert wurde. Alle diese gelesenen oder geänderten Variablen werden in [Über Aktivitäten](about-activities.md) in den Abschnitten **Eingabeparameter** und **Ausgabeparameter** der Aktivitäten beschrieben.
+Bestimmte Ereignisvariablen werden von den verschiedenen Aktivitäten geändert oder gelesen. Dies sind alle Variablen vom Typ Zeichenfolge. Beispiel: Ein Export definiert die Variable **[!UICONTROL vars.filename]** mit dem vollständigen Namen der Datei, die gerade exportiert wurde. Alle diese gelesenen oder geänderten Variablen werden in [Über Aktivitäten](about-activities.md) in den Abschnitten **Eingabeparameter** und **Ausgabeparameter** der Aktivitäten beschrieben.
 
 ### Anwendungsfälle {#example}
 
@@ -193,7 +193,7 @@ Eine Aktivitätseigenschaft kann unter bestimmten Bedingungen zum Zeitpunkt der 
 
 Die Mehrzahl der Aktivitätseigenschaften kann dynamisch berechnet werden, entweder unter Verwendung eines JavaScript-Templates oder weil die Workflow-Eigenschaften die Berechnung des Werts durch ein Script explizit erlauben.
 
-Für andere Eigenschaften müssen Sie jedoch das Initialisierungsscript verwenden. Dieses Skript wird ausgewertet, bevor die Aufgabe ausgeführt wird. Die **[!UICONTROL activity]** referenziert die Aktivität, die der Aufgabe entspricht. Die Eigenschaften dieser Aktivität können geändert werden und betreffen nur diese Aufgabe.
+Für andere Eigenschaften müssen Sie jedoch das Initialisierungsskript verwenden. Dieses Skript wird ausgewertet, bevor die Aufgabe ausgeführt wird. Die Variable **[!UICONTROL activity]** referenziert die der Aufgabe entsprechende Aktivität. Die Eigenschaften dieses Objekts können geändert werden und betreffen nur diese Aufgabe.
 
 **Verwandte Themen**
 [Beispiele für JavaScript-Code in Workflows](javascript-in-workflows.md)

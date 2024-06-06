@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: unitary-interactions
 exl-id: a8face46-a933-4f2c-8299-ccb66f05967d
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '443'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Bei der Erstellung einer anonymen Umgebung mithilfe des Assistenten ist im Tab *
 
 Die **[!UICONTROL Zielgruppendimension]** wird vorausgefüllt und verweist standardmäßig auf die Besuchertabelle.
 
-Die **[!UICONTROL Besucherordner]** angezeigt. Es wird automatisch abgeschlossen, um eine Verknüpfung zum **[!UICONTROL Besucher]** Ordner. In diesem Feld können Sie auswählen, wo Besucherprofile gespeichert werden sollen.
+Das Feld **[!UICONTROL Besucherordner]** erscheint. Es enthält bereits den Link zum Ordner **[!UICONTROL Besucher]**. In diesem Feld können Sie auswählen, wo Besucherprofile gespeichert werden sollen.
 
 ![](assets/anonymous_environment_option.png)
 

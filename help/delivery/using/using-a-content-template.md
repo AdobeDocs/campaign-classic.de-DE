@@ -6,9 +6,9 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Templates
 exl-id: e43dd68e-2e95-4367-9029-4622fbcb1759
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '448'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Sie haben die Möglichkeit, bei der Versanderstellung eine Inhaltsvorlage anzuge
 
 ![](assets/s_ncs_content_deliver_a_content.png)
 
-Das Layout wird automatisch auf der Basis der ausgewählten Einstellungen angewendet. Um sie anzuzeigen, klicken Sie auf das **[!UICONTROL HTML-Vorschau]** (oder **[!UICONTROL Textvorschau]** ) und wählen Sie einen Empfänger aus, um Personalisierungselemente zu testen.
+Das Layout wird automatisch auf der Basis der ausgewählten Einstellungen angewendet. Klicken Sie zu ihrer Prüfung auf die Registerkarte **[!UICONTROL HTML-Vorschau]** bzw. **[!UICONTROL Text-Vorschau]** und wählen Sie eine Empfängerin bzw. einen Empfänger aus, um die Personalisierung zu testen.
 
 ![](assets/s_ncs_content_deliver_a_content_html.png)
 
@@ -60,7 +60,7 @@ Gehen Sie wie folgt vor:
 
    ![](assets/s_ncs_content_folder_use_a_template_preview.png)
 
-1. Nach seiner Erstellung wird der Inhalt der Liste der verfügbaren Inhalte hinzugefügt. Klicken Sie auf **[!UICONTROL Eigenschaften]** -Link, um Titel, Status oder den Verlauf zu ändern.
+1. Nach seiner Erstellung erscheint der Inhalt in der Liste der verfügbaren Inhalte. Durch Klick auf die **[!UICONTROL Eigenschaften]**-Schaltfläche können Sie Titel und Status ändern und den Verlauf ansehen.
 
    ![](assets/s_ncs_content_folder_template_properties.png)
 
@@ -72,7 +72,7 @@ Gehen Sie wie folgt vor:
    >
    >Sie haben auch die Möglichkeit, die Erzeugung nicht validierter Inhalte zuzulassen. Ändern Sie in diesem Fall die entsprechende Option in der Veröffentlichungsvorlage. Weitere Informationen hierzu finden Sie unter [Erstellung und Konfiguration der Vorlagen](publication-templates.md#creating-and-configuring-the-template).
 
-   HTML- und Textinhalte werden standardmäßig im **Veröffentlichung** Ordner der Adobe Campaign-Instanz. Sie können den Veröffentlichungsordner über die **NcmPublishingDir** -Option.
+   HTML- und Text-Inhalte werden standardmäßig im **Veröffentlichungs**-Ordner der Adobe Campaign-Instanz erzeugt. Ausgehend von der Option **NcmPublishingDir** können Sie einen anderen Ordner wählen.
 
 ## Versand einer Inhaltsinstanz {#delivering-a-content-instance}
 

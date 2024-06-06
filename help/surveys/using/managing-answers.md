@@ -6,9 +6,9 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Surveys
 exl-id: 0b5dc602-e16f-4bf1-bd8f-352e0bc78996
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '904'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Zusätzlich zu den Standard-Speichermodi, die für alle Webformulare in Adobe Ca
 
 ### In einem archivierten Feld speichern {#storing-in-an-archived-field}
 
-Es ist einfach, die Datenvorlage zu erweitern, indem neue Speicherorte hinzugefügt werden, um die in Umfragen bereitgestellten Antworten zu speichern. Wählen Sie dazu die **[!UICONTROL Antworten auf Fragen speichern]** bei der Erstellung des Eingabefelds. Klicken Sie auf **[!UICONTROL Neues Feld...]** und geben Sie seine Eigenschaften an:
+Es ist einfach, die Datenvorlage zu erweitern, indem neue Speicherorte hinzugefügt werden, um die in Umfragen bereitgestellten Antworten zu speichern. Wählen Sie dazu bei der Erstellung des Eingabefelds die Option **[!UICONTROL Antworten auf eine Frage speichern]** aus. Klicken Sie auf **[!UICONTROL Neues Feld...]** und geben Sie seine Eigenschaften an:
 
 ![](assets/s_ncs_admin_survey_new_space.png)
 
@@ -60,7 +60,7 @@ Im Tab **[!UICONTROL Allgemein]** des Felds können Sie über den Link **[!UICON
 
 Um verschiedene Arten von Verträgen gemeinsam in einem Feld zu speichern, erstellen Sie ein Eingabefeld vom Typ **[!UICONTROL Text]** und wählen Sie die Option **[!UICONTROL Antworten auf eine Frage speichern]** aus.
 
-Klicken Sie auf **[!UICONTROL Neues Feld...]** und geben Sie die Feldeigenschaften ein. Wählen Sie die **[!UICONTROL Mehrere Werte]** -Option, um die Speicherung mehrerer Werte zu ermöglichen.
+Klicken Sie auf **[!UICONTROL Neues Feld...]** und geben Sie die Feldeigenschaften ein. Wählen Sie die Option **[!UICONTROL Mehrfachwerte]** aus, um die Speicherung mehrerer Werte zu ermöglichen.
 
 ![](assets/s_ncs_admin_survey_storage_multi_ex1.png)
 
@@ -80,7 +80,7 @@ Die Verträge können im Tab **[!UICONTROL Antworten]** der Umfrage aufgerufen w
 
 ![](assets/s_ncs_admin_survey_storage_multi_ex4.png)
 
-Sie können Empfänger auch nach Antworten filtern, um nur die für Sie interessanten Benutzer anzuzeigen. Erstellen Sie dazu einen Zielgruppen-Workflow und verwenden Sie die **[!UICONTROL Umfrageantworten]** ankreuzen.
+Sie können Empfänger auch auf der Basis ihrer Antworten filtern, sodass nur die für Sie interessanten Benutzer angezeigt werden. Erstellen Sie dazu einen Zielgruppen-Workflow unter Verwendung der Box **[!UICONTROL Umfrageantworten]**.
 
 ![](assets/s_ncs_admin_survey_read_responses_wf.png)
 
@@ -113,7 +113,7 @@ Gehen Sie dazu wie folgt vor:
 
 ![](assets/s_ncs_admin_survey_xml_archive_option.png)
 
-Sie können sie standardmäßig für alle Umfragen aktivieren (diese Option wird bei der Veröffentlichung der Umfrage angewendet). Erstellen Sie dazu die **[!UICONTROL NmsWebApp_XmlBackup]** Option und Wert zuweisen **[!UICONTROL 1]** wie unten gezeigt:
+Sie können sie standardmäßig für alle Umfragen aktivieren (diese Option wird bei der Veröffentlichung der Umfrage angewendet). Erstellen Sie dazu die Option **[!UICONTROL NmsWebApp_XmlBackup]** und weisen Sie den Wert **[!UICONTROL 1]** zu, wie unten gezeigt:
 
 ![](assets/s_ncs_admin_survey_xml_global_option.png)
 

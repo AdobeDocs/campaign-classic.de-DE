@@ -6,9 +6,9 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Web Forms, Landing Pages
 exl-id: 827b6575-7206-4dfc-b2c6-b95a6d5730b1
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2466'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ Spezifizieren Sie den Speichermodus für Antworten: ein Feld in der Datenbank ak
 
 ## Feld-Assistent {#field-creation-wizard}
 
-Über die erste Schaltfläche in der Symbolleiste können Sie für jede Formularseite ein Feld hinzufügen. Gehen Sie dazu zum **[!UICONTROL Mithilfe des Assistenten hinzufügen]** Menü.
+Über die erste Schaltfläche der Symbolleiste können Sie Felder in jede Formularseite einfügen. Gehen Sie dazu zum Menü **[!UICONTROL Mit Hilfe des Assistenten hinzufügen]**.
 
 ![](assets/s_ncs_admin_survey_add_field_menu.png)
 
@@ -98,11 +98,11 @@ Auf einer Formularseite können fünf Typen von Textfeldern eingefügt werden:
 
   ![](assets/s_ncs_admin_survey_txthtmli_ex.png)
 
-  Sie können den Typ des Editors auswählen, der den Benutzern angeboten wird. Verwenden Sie dazu die Dropdown-Liste der **[!UICONTROL HTML-Editor]** im Feld **[!UICONTROL Erweitert]** Registerkarte.
+  Sie können den Typ des Editors auswählen, der den Benutzern bereitgestellt wird. Verwenden Sie dazu im Tab **[!UICONTROL Erweitert]** die Dropdown-Liste des Felds **[!UICONTROL HTML-Editor]**.
 
   ![](assets/webapp_enrich_text_type.png)
 
-  Die Anzahl der angezeigten Symbole variiert je nach Editor-Typ. Für **[!UICONTROL Erweitert]** -Editor verwenden, sieht das Rendering wie folgt aus:
+  Die Anzahl der angezeigten Symbole variiert je nach Editor-Typ. Bei einem Editor des Typs **[!UICONTROL Erweitert]** sieht das Rendering wie folgt aus:
 
   ![](assets/webapp_enrich_text_max.png)
 
@@ -134,7 +134,7 @@ Um eine Dropdown-Liste in eine Formularseite einzufügen, wählen Sie in der Sym
 
 Wählen Sie den Speichermodus für die Antworten aus und bestätigen Sie Ihre Auswahl.
 
-Definieren Sie die Titel und Werte der Liste im unteren Bereich des **[!UICONTROL Allgemein]** Registerkarte. Wenn die Informationen in einem vorhandenen Feld der Datenbank gespeichert sind und es sich um ein Auflistungsfeld handelt, können Sie die Werte automatisch ausfüllen lassen, indem Sie auf **[!UICONTROL Initialisieren der Werteliste aus der Datenbank]** , wie unten dargestellt:
+Definieren Sie die Titel und Werte der Liste im unteren Bereich der Registerkarte **[!UICONTROL Allgemein]**. Wenn die Informationen in einem vorhandenen Feld der Datenbank gespeichert werden und es sich um ein Auflistungsfeld handelt, können Sie die Werte automatisch ausfüllen lassen, indem Sie wie unten gezeigt **[!UICONTROL Werteliste aus der Datenbank übernehmen]** auswählen:
 
 ![](assets/s_ncs_admin_survey_database_values.png)
 
@@ -142,7 +142,7 @@ Definieren Sie die Titel und Werte der Liste im unteren Bereich des **[!UICONTRO
 >
 >Die Reihenfolge der Werte können Sie mit den Pfeilen rechts neben der Liste ändern.
 
-Wenn die Daten in einer verknüpften Tabelle gespeichert sind, können Sie das Feld auswählen, in dem die in der Liste vorgeschlagenen Werte gespeichert werden. Wenn Sie beispielsweise die Ländertabelle auswählen, klicken Sie auf **[!UICONTROL Initialisieren der Werteliste aus der Datenbank..]** und wählen Sie das gewünschte Feld aus.
+Wenn die Daten in einer verknüpften Tabelle gespeichert sind, können Sie das Feld auswählen, in dem die in der Liste vorgeschlagenen Werte gespeichert werden. Wenn Sie beispielsweise die Tabelle der Länder auswählen, wählen Sie zuerst **[!UICONTROL Werteliste aus der Datenbank übernehmen…]** und danach das gewünschte Feld aus.
 
 ![](assets/s_ncs_admin_survey_preload_values.png)
 
@@ -168,9 +168,9 @@ Geben Sie im Tab **[!UICONTROL Allgemein]** im Feld **[!UICONTROL Titel]** den T
 
 ![](assets/s_ncs_admin_survey_check_box_edit.png)
 
-Mit einem Kontrollkästchen können Sie dem Speicherfeld (oder Wert) einen Wert zuweisen, je nachdem, ob das Kontrollkästchen aktiviert ist oder nicht. Die **[!UICONTROL Werte]** -Abschnitt gibt den zuzuweisenden Wert ein, wenn das Kästchen markiert wird (im **[!UICONTROL Wert]** und den zuzuweisenden Wert, wenn er nicht aktiviert ist (im **[!UICONTROL Leerer Wert]** -Feld). Diese Werte hängen vom Datenspeicherformat ab.
+Mit einer Checkbox können Sie dem Speicherfeld (oder Wert) einen Wert zuweisen, je nachdem ob das Kästchen markiert ist oder nicht. Im Bereich **[!UICONTROL Werte]** können Sie einen Wert eingeben, der zugewiesen wird, wenn das Kästchen markiert wird (im Feld **[!UICONTROL Wert]**), und einen Wert, der zugewiesen wird, wenn das Kästchen nicht markiert wird (im Feld **[!UICONTROL Leerer Wert]**). Diese Werte hängen vom Datenspeicherungsformat ab.
 
-Wenn das Speicherfeld (oder die Variable) boolesch ist, wird der zuzuweisende Wert automatisch abgezogen, wenn das Kästchen nicht markiert wird. In diesem Fall wird nur die **[!UICONTROL Wert bei Aktivierung]** wie unten gezeigt angeboten wird:
+Wenn das Speicherfeld (oder die Variable) boolesch ist, wird der zuzuweisende Wert automatisch abgezogen, wenn das Kästchen nicht markiert wird. In diesem Fall wird nur das Feld **[!UICONTROL Wert, wenn angekreuzt]** angeboten, wie unten gezeigt:
 
 ![](assets/s_ncs_admin_survey_check_box_enum.png)
 
@@ -239,7 +239,7 @@ Pro Tabellenzeile kann nur eine Option ausgewählt werden.
 
 >[!NOTE]
 >
->In unserem Beispiel ist die Bezeichnung des Rasters ausgeblendet. Gehen Sie dazu zum **[!UICONTROL Erweitert]** Registerkarte, die **[!UICONTROL Titelposition]** display ist definiert als **[!UICONTROL Ausgeblendet]** . Siehe [Die Position von Titeln definieren](defining-web-forms-layout.md#defining-the-position-of-labels).
+>In unserem Beispiel ist der Titel der Tabelle ausgeblendet. Gehen Sie dazu zur Registerkarte **[!UICONTROL Erweitert]**. Die Anzeige **[!UICONTROL Titelposition]** ist als **[!UICONTROL Ausgeblendet]** definiert. Siehe [Die Position von Titeln definieren](defining-web-forms-layout.md#defining-the-position-of-labels).
 
 ## Datum und Zahlen hinzufügen {#adding-dates-and-numbers}
 
@@ -335,7 +335,7 @@ Um ein Captcha in ein Formular einzufügen, wählen Sie in der Symbolleiste die 
 
 ![](assets/s_ncs_admin_survey_add_captcha.png)
 
-Geben Sie den Titel des Felds ein. Dieser Titel wird vor dem Captcha-Anzeigebereich angezeigt. Sie können die Position dieser Bezeichnung im **[!UICONTROL Erweitert]** Registerkarte.
+Geben Sie den Titel des Felds ein. Dieser Titel wird vor dem Captcha-Anzeigebereich angezeigt. Sie können die Position dieses Titels im Tab **[!UICONTROL Erweitert]** ändern.
 
 ![](assets/s_ncs_admin_survey_captcha_adv.png)
 
@@ -351,7 +351,7 @@ Wenn der Inhalt des Captcha falsch eingegeben wurde, verfärbt sich das Eingabef
 
 ![](assets/s_ncs_admin_survey_captcha_error.png)
 
-Sie können eine Fehlermeldung zur Anzeige erstellen. Verwenden Sie dazu die **[!UICONTROL Nachricht personalisieren]** -Link in **[!UICONTROL Allgemein]** Registerkarte.
+Sie können eine Fehlermeldung zur Anzeige erstellen. Verwenden Sie dazu den Link **[!UICONTROL Nachricht personalisieren]** auf der Registerkarte **[!UICONTROL Allgemein]**.
 
 ![](assets/s_ncs_admin_survey_captcha_error_msg.png)
 
@@ -367,7 +367,7 @@ Sie können ein Upload-Feld zu einer Seite hinzufügen. Diese Funktion kann z. B
 
 Um ein Upload-Feld in eine Formularseite einzufügen, wählen Sie in der Symbolleiste des Seiteneditors die Schaltfläche **[!UICONTROL Erweiterte Steuerelemente > Datei...]** aus.
 
-Standardmäßig werden die hochgeladenen Dateien in Ressourcendateien gespeichert, auf die über die **[!UICONTROL Ressourcen > Online > Öffentliche Ressourcen]** Menü. Sie können ein Skript verwenden, um dieses Verhalten zu ändern. Dieses Skript kann die in [Dokumentation zu Campaign JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=de), einschließlich derjenigen, die die Dateibearbeitung betreffen.
+Standardmäßig werden die hochgeladenen Dateien in Ressourcendateien gespeichert, auf die über das Menü **[!UICONTROL Ressourcen > Online > Öffentliche Ressourcen]** zugegriffen werden kann. Sie können ein Skript verwenden, um dieses Verhalten zu ändern. Dieses Script kann die in der [Campaign JSAPI-Dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=de) definierten Funktionen verwenden, einschließlich derjenigen zur Dateibearbeitung.
 
 Sie können den Link zu diesen Dateien in einer lokalen Variablen oder in einem Datenbankfeld speichern. Beispielsweise können Sie das Empfängerschema erweitern und einen Link zu dateibasierten Ressourcen hinzufügen.
 

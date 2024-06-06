@@ -6,9 +6,9 @@ role: User, Data Engineer
 feature: Typology Rules, Campaigns
 exl-id: 09ec0fc0-76ed-4c73-8bdf-c931e2103aa9
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1051'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -59,7 +59,7 @@ Schlichtungen werden jede Nacht automatisch durch den Datenbankbereinigungs-Work
 
 Wenn beispielsweise ein Prozess die Marketing-Datenbank wöchentlich mit Neigungsscores und Bestelldaten der Kunden anreichert, ist es nicht notwendig, auf diesen Werten basierende Daten täglich neu zu berechnen.
 
-Dazu muss die Variable **[!UICONTROL Häufigkeit]** des **[!UICONTROL Allgemein]** erlaubt die Bestimmung eines maximalen Zeitraums für die Zielgruppenspeicherung. Der Standardwert **0** gibt an, dass die Berechnung bis zur nächsten Ausführung der täglichen Neuschlichtung gültig bleibt.
+Geben Sie hierzu im Feld **[!UICONTROL Frequenz]** des Tabs **[!UICONTROL Allgemein]** an, wie lange die Berechnungen höchstens beibehalten werden sollen. Der Standardwert **0s** veranlasst, dass die Berechnungen bis zur nächsten Ausführung der täglichen Neuschlichtung gültig bleiben.
 
 Um die Ergebnisse über diese Begrenzung hinaus beizubehalten, geben Sie einen Wert von über 12h im Feld **[!UICONTROL Frequenz]** an: Wenn diese Frist abgelaufen ist, werden alle Regeln erneut angewandt.
 
@@ -90,13 +90,13 @@ Im Standard-Ausführungsmodus werden die Regeln in der folgenden Reihenfolge aus
 >
 >Wenn Sie das Modul &quot;Interaction&quot; nutzen, werden die Eignungsregeln gleichzeitig mit den Filterregeln (für Angebote in Versandentwürfen) oder während der Personalisierungsphase beim Aufruf des Angebotsmoduls angewendet.
 
-Sie können die Ausführungsreihenfolge von Regeln mit demselben Typ mithilfe des entsprechenden Felds im **[!UICONTROL Allgemein]** -Registerkarte der Regel. Wenn mehrere Regeln in derselben Verarbeitungsphase der Nachricht ausgeführt werden, können Sie deren Ausführungsreihenfolge in der **[!UICONTROL Ausführungssequenz]** -Feld.
+Sie können die Anwendungsreihenfolge von Regeln mit demselben Typ mithilfe des entsprechenden Felds auf der Registerkarte **[!UICONTROL Allgemein]** der Regel anpassen. Dies ist insbesondere interessant, wenn in der gleichen Verarbeitungsphase der Nachrichten mehrere Regeln zur Anwendung kommen.****
 
 Beispielsweise wird eine Druckregel mit einer Anwendungsreihenfolge von 20 vor einer Druckregel mit einem Wert von 30 ausgeführt.
 
 ### Kontrollregeln {#control-rules}
 
-Für **[!UICONTROL Kontrolle]** Regeln festlegen, können Sie festlegen, zu welchem Zeitpunkt des Versand-Lebenszyklus die Regel angewendet wird (vor oder nach der Zielgruppenbestimmung, zu Beginn der Personalisierung, am Ende der Analyse). Wählen Sie den gewünschten Wert in der Dropdown-Liste des Felds **[!UICONTROL Phase]** auf der Registerkarte **[!UICONTROL Allgemein]** der Typologieregel aus.
+**[!UICONTROL Kontrollregeln]** können zu verschiedenen Zeitpunkten eines Versands zum Tragen kommen. Wählen Sie den gewünschten Wert in der Dropdown-Liste des Felds **[!UICONTROL Phase]** auf der Registerkarte **[!UICONTROL Allgemein]** der Typologieregel aus.
 
 ![](assets/campaign_opt_define_control_phase.png)
 
@@ -131,7 +131,7 @@ Mögliche Werte:
 >[!NOTE]
 >
 >Die Affinitätenverwaltung gilt nicht für **[!UICONTROL Filter]**-Typologien.\
->Affinitäten werden in der Konfigurationsdatei der Instanz auf dem Adobe Campaign-Server definiert. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/about-initial-configuration.md).
+>Affinitäten werden direkt in der Konfigurationsdatei der Instanz auf dem Adobe-Campaign-Server bestimmt. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/about-initial-configuration.md).
 
 ### Kampagnenoptimierung und dezentrales Marketing {#campaign-optimization-and-distributed-marketing}
 

@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: b29340a0-954d-41e4-b0a3-9d356e4dc753
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '317'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Adobe Campaign ist keine auf Berichterstellung spezialisierte Anwendung: Die hie
 
 ## Wie kann ich Statistikberichte zu Populationen erstellen und teilen? {#how-can-i-design-and-share-statistic-reports-on-populations-}
 
-Adobe Campaign [deskriptive Analyseberichte](../../reporting/using/about-descriptive-analysis.md) Sie können Statistikberichte zu Ihren Populationen erstellen und teilen. [Newsletter-Zielgruppe erkunden](../../reporting/using/use-cases.md#analyzing-a-population)oder [Erstellung eines Berichts über die Population einer Workflow-Transition;](../../reporting/using/use-cases.md#analyzing-a-transition-target-in-a-workflow). Sie können beispielsweise auch [Reaktionsrate der Newsletter-Empfänger analysieren](../../reporting/using/use-cases.md#analyzing-recipient-tracking-logs).
+[Berichte zur deskriptiven Analyse](../../reporting/using/about-descriptive-analysis.md) von Adobe Campaign ermöglichen Ihnen, Statistikberichte zu Ihren Populationen zu erstellen und zu teilen, [eine Newsletter-Audience zu analysieren](../../reporting/using/use-cases.md#analyzing-a-population) oder [einen Bericht über die Population einer Workflow-Transition zu erstellen](../../reporting/using/use-cases.md#analyzing-a-transition-target-in-a-workflow). Sie können beispielsweise auch [die Reaktionsrate von Newsletter-Empfängern analysieren](../../reporting/using/use-cases.md#analyzing-recipient-tracking-logs).
 
 [Hier erfahren Sie mehr dazu](../../reporting/using/about-descriptive-analysis.md).
 

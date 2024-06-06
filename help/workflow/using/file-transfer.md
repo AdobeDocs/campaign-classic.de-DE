@@ -5,9 +5,9 @@ description: Erfahren Sie mehr über die Workflow-Aktivität "Dateiübertragung"
 feature: Workflows, Data Management
 exl-id: 8025d207-3bc0-400f-b6a4-a72765e5a9d2
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '645'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
@@ -42,13 +42,13 @@ Die weitere Konfiguration hängt von der gewählten Aktion ab.
 
 1. **Dateiübertragung**
 
-   Um eine Datei an einen Server zu senden, wählen Sie **[!UICONTROL Datei-Upload]** im **[!UICONTROL Aktion]** -Feld. Sie müssen den Zielserver im **[!UICONTROL Remote-Server]** des Editors. Die Parameter sind mit denen für eingehende Dateien identisch. Siehe oben.
+   Um eine Datei an einen Server zu senden, wählen Sie **[!UICONTROL Datei-Upload]** im Feld **[!UICONTROL Aktion]**. Sie müssen den Ziel-Server im Abschnitt **[!UICONTROL Remote-Server]** des Editors angeben. Die Parameter sind mit denen für eingehende Dateien identisch. Siehe oben.
 
-   Die Quelldatei kann aus der vorherigen Aktivität stammen. In diesem Fall wird die **[!UICONTROL Verwenden Sie die von der vorangehenden Aktivität erzeugte Datei.]** muss ausgewählt sein.
+   Die Quelldatei kann aus der vorherigen Aktivität stammen. In diesem Fall muss die Option **[!UICONTROL Durch vorhergehende Aktivität erzeugte Datei verwenden]** ausgewählt sein.
 
    ![](assets/file_transfert_edit_send.png)
 
-   Dies kann sich auch auf eine oder mehrere andere Dateien beziehen. Um sie auszuwählen, deaktivieren Sie die Option und klicken Sie auf **[!UICONTROL Einfügen]**. Geben Sie den Zugriffspfad der zu sendenden Datei an. Um eine weitere Datei hinzuzufügen, klicken Sie auf **[!UICONTROL Einfügen]** erneut. Die Dateien haben nun jeweils einen eigenen Tab.
+   Dies kann sich auch auf eine oder mehrere andere Dateien beziehen. Um sie auszuwählen, deaktivieren Sie die Option und klicken Sie auf **[!UICONTROL Einfügen]**. Geben Sie den Zugriffspfad der zu sendenden Datei an. Um eine weitere Datei hinzuzufügen, klicken Sie erneut auf **[!UICONTROL Einfügen]**. Die Dateien haben nun alle ihre eigenen Registerkarten.
 
    ![](assets/file_transfert_source.png)
 
@@ -58,13 +58,13 @@ Die weitere Konfiguration hängt von der gewählten Aktion ab.
 
 1. **Existenztest einer Datei**
 
-   Um das Vorhandensein einer Datei zu testen, wählen Sie die **[!UICONTROL Existenztest einer Datei]** in der **[!UICONTROL Aktion]** -Feld. Die Konfiguration des Remote-Servers entspricht der für den Dateidownload. Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](#properties).
+   Um das Vorhandensein einer Datei zu prüfen, wählen Sie im Feld **[!UICONTROL Aktion]** die Option **[!UICONTROL Existenztest einer Datei]** aus. Die Konfiguration des Remote-Servers entspricht der für das Herunterladen einer Datei. Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](#properties).
 
    ![](assets/file_transfert_edit_test.png)
 
 1. **Dateiauflistung**
 
-   Um die Dateien aufzulisten, wählen Sie die **[!UICONTROL Dateiauflistung]** Option aus der **[!UICONTROL Aktion]** -Feld. Die Konfiguration des Remote-Servers entspricht der für den Dateiempfang. Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](#properties).
+   Um eine Liste der vorhandenen Dateien zu erhalten, wählen Sie im Feld **[!UICONTROL Aktion]** die Option **[!UICONTROL Dateiauflistung]** aus. Die Konfiguration des Remote-Servers entspricht der für das Herunterladen einer Datei. Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](#properties).
 
    Die Option **[!UICONTROL Alle Dateien auflisten]**, die bei Auswahl der Aktion **[!UICONTROL Dateiauflistung]** erscheint, ermöglicht es, alle auf dem Server befindlichen Dateien in der Ereignisvariable **vars.filenames** zu erfassen. Die Dateinamen werden durch `\n`-Zeichen getrennt angegeben.
 

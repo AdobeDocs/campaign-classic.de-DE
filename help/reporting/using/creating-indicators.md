@@ -7,9 +7,9 @@ hide: true
 hidefromtoc: true
 exl-id: e4806bb8-de9d-47e4-8b37-d6c0565b7f5a
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '748'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Um einen Cube zu erstellen, klicken Sie auf die oberhalb der Cube-Liste gelegene
 
 ![](assets/s_advuser_cube_create.png)
 
-Wählen Sie das Faktenschema aus, d. h. das Schema mit den Elementen, die Sie untersuchen möchten. In diesem Beispiel wählen wir die **Empfänger** Tabelle.
+Wählen Sie ein Faktenschema aus, d. h. das Schema, das die zu analysierenden Elemente enthält. In diesem Beispiel wählen wir die Tabelle **Empfänger**.
 
 ![](assets/s_advuser_cube_wz_02.png)
 
@@ -88,13 +88,13 @@ Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**, um eine neue Dim
 
   ![](assets/s_advuser_cube_wz_10.png)
 
-  Nur die Werte in der Auflistung werden angezeigt. Die anderen werden unter dem im Feld **[!UICONTROL Titel der anderen Werte]** -Feld.
+  Nur die in der Auflistung vorhandenen Werte werden angezeigt. Alle anderen werden unter einem Titel zusammengefasst, den Sie im Feld **[!UICONTROL Titel der anderen Werte]** definieren können.
 
   Weitere Informationen hierzu finden Sie unter [Klassen dynamisch verwalten](../../reporting/using/concepts-and-methodology.md#dynamically-managing-bins).
 
 ## Erstellen von Indikatoren {#building-indicators}
 
-Nachdem die Dimensionen definiert wurden, müssen Sie einen Berechnungsmodus für die in den Zellen anzuzeigenden Werte festlegen. Erstellen Sie dazu die entsprechenden Indikatoren im **[!UICONTROL Maßnahmen]** Registerkarte: Erstellen Sie so viele Kennzahlen wie Spalten, die im Bericht angezeigt werden sollen und den Cube verwenden.
+Sobald die Dimensionen definiert sind, müssen Sie den Berechnungsmodus für die Werte festlegen, die in den Zellen angezeigt werden sollen. Erstellen Sie hierzu die jeweiligen Kennzahlen auf der gleichnamigen Registerkarte: Die Anzahl der Kennzahlen muss der Anzahl der Spalten entsprechen, die im Bericht angezeigt werden.****
 
 Gehen Sie hierzu wie folgt vor:
 

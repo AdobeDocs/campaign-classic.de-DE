@@ -6,9 +6,9 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Surveys
 exl-id: 387bc362-4064-4181-9385-8e0c3423ba3e
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '131'
-ht-degree: 38%
+ht-degree: 100%
 
 ---
 
@@ -26,6 +26,6 @@ Die verfügbaren Parameter werden in [diesem Dokument](../../web/using/defining-
 
 ## Speicherung der Umfragedaten {#survey-data-storage}
 
-Standardmäßig werden die Felder des Webformulars in der Empfängertabelle gespeichert. Um eine andere Tabelle zu verwenden, wählen Sie sie im **[!UICONTROL Dokumenttyp]** -Feld. Die **[!UICONTROL Zoom]** -Symbol zeigt den Inhalt der ausgewählten Tabelle an.
+Standardmäßig werden die Felder des Webformulars in der Empfängertabelle gespeichert. Um eine andere Tabelle zu verwenden, wählen Sie sie im Feld **[!UICONTROL Dokumenttyp]** aus. Mit dem **[!UICONTROL Zoom]**-Symbol können Sie den Inhalt der ausgewählten Tabelle anzeigen.
 
-Die von Benutzern bereitgestellten Umfrageantworten, die nicht in den Feldern (sondern in lokalen Variablen) gespeichert sind, werden im **Antworten auf Umfragen** Tabelle. Sie können das verwendete Schema anhand der Variablen **[!UICONTROL Bibliothek]** -Feld. Dieses Feld ist nur verfügbar für **Umfragen**.
+Die nicht in den Feldern (sondern in lokalen Variablen) gespeicherten Umfrageantworten werden in der Tabelle **Umfrageantworten** gespeichert. Sie können das verwendete Schema im Feld **[!UICONTROL Bibliothek]** ändern. Dieses Feld steht nur für **Umfragen** zur Verfügung.

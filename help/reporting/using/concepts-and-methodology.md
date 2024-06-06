@@ -8,9 +8,9 @@ hide: true
 hidefromtoc: true
 exl-id: 5f22fa2c-b648-4126-9a24-1798adfa8f34
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1580'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -50,9 +50,9 @@ Im unten stehenden Beispiel werden Sprachen in drei Gruppen verteilt: Englisch-D
 
 ![](assets/s_advuser_cube_class_03.png)
 
-Sie können eine SQL-Maske verwenden, um mehrere Werte zu einem Filter zu kombinieren. Überprüfen Sie hierzu die Option **[!UICONTROL Ja]** im **[!UICONTROL Verwenden einer SQL-Maske]** und geben Sie den anzuwendenden SQL-Filter im **[!UICONTROL Wert oder Ausdruck]** Spalte.
+Sie können eine SQL-Maske nutzen, um mehrere Werte nach einem Filter zu gruppieren. Aktivieren Sie hierzu die Option **[!UICONTROL Ja]** in der Spalte **[!UICONTROL SQL-Maske benutzen]** und geben Sie den anzuwendenden SQL-Filter in der Spalte **[!UICONTROL Werte oder Ausdruck]** an.
 
-Im folgenden Beispiel werden alle E-Mail-Domänen, die mit **yahoo** (yahoo.fr, yahoo.com, yahoo.be usw.) oder mit **ymail** (ymail.com, ymail.eu usw.) wird unter dem Titel gruppiert **YAHOO!** sowie Adressen mit **rocketmail.com** Domäne.
+Im folgenden Beispiel werden alle mit **yahoo** (yahoo.fr, yahoo.com, yahoo.be usw.) oder mit **ymail** (ymail.com, ymail.eu usw.) beginnenden Domains unter dem Titel **YAHOO!** gruppiert, ebenso wie Adressen der Domain **rocketmail.com**.
 
 ![](assets/s_advuser_cube_class_03b.png)
 
@@ -81,7 +81,7 @@ Geben Sie anschließend die oberen und unteren Grenzwerte an und klicken Sie zur
 
 ### Automatisches Erzeugen von Klassen {#generating-bins-automatically}
 
-Es ist auch möglich, Klassen automatisch zu generieren. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Klassen generieren...]** -Link.
+Es besteht auch die Möglichkeit, die Klassen automatisch zu erzeugen. Klicken Sie hierzu auf den Link **[!UICONTROL Klassen erzeugen...]**.
 
 ![](assets/s_advuser_cube_class_06.png)
 
@@ -109,13 +109,13 @@ Diese Auflistung ist nach folgendem Modell gestaltet:
 
 ![](assets/nmx_enum_domain.png)
 
-Um einen Bericht mit dieser Auflistung zu erstellen, erstellen Sie einen Cube mit der **[!UICONTROL E-Mail-Domain]** Dimension. Wählen Sie die **[!UICONTROL Klassierung aktivieren]** Option dann **[!UICONTROL Dynamische Verknüpfung der Werte mit einer Auflistung]**. Wählen Sie dann die **Domänen** -Auflistung wie oben gezeigt. Alle Werte ohne angegebenen Alias werden unter der **sonstige** Beschriftung.
+Um einen diese Auflistung verwendenden Bericht zu erstellen, müssen Sie zunächst einen die Dimension **[!UICONTROL E-Mail-Domain]** verwendenden Cube erstellen. Wählen Sie die Option **[!UICONTROL Klassierung aktivieren]** und dann **[!UICONTROL Klassen aus einer Auflistung ableiten (dynamisch)]**. Wählen Sie anschließend die oben dargestellte Auflistung **Domains (domain)** aus. Alle Werte, für die kein Alias definiert worden ist, werden unter dem Titel **Sonstige** gruppiert.
 
 ![](assets/nmx_add_dimension.png)
 
 Erstellen Sie anschließend einen auf diesem Cube basierenden Bericht, um die Werte anzuzeigen.
 
-Sie müssen nur die Auflistung ändern, um den entsprechenden Bericht zu aktualisieren. Erstellen Sie beispielsweise das **Adobe** und fügen Sie **adobe.com** Alias und der Bericht werden auf Auflistungsebene automatisch mit dem Adobe-Wert aktualisiert.
+Dabei genügt es, die Auflistung abzuändern, um den entsprechenden Bericht zu aktualisieren. Erstellen Sie beispielsweise den Wert **Adobe** und fügen Sie auf Auflistungsniveau den Alias **adobe.com** hinzu: Der Bericht wird automatisch mit dem Wert „Adobe“ aktualisiert.
 
 ![](assets/nmx_add_alias.png)
 
@@ -150,7 +150,7 @@ Gehen Sie wie folgt vor, um ein neues Aggregat zu erstellen:
 
    ![](assets/s_advuser_cube_agregate_04.png)
 
-   * Die **[!UICONTROL Planung]** ermöglicht die Bestimmung der Aktualisierungshäufigkeit der Berechnungen. Die Planung wird im Abschnitt [diesem Abschnitt](../../workflow/using/scheduler.md).
+   * Die Aktivität **[!UICONTROL Planung]** ermöglicht es, die Aktualisierungshäufigkeit der Berechnungen zu bestimmen. Weiterführende Informationen zur Planung finden Sie in [diesem Abschnitt](../../workflow/using/scheduler.md).
    * Über die Aktivität **[!UICONTROL Aggregat-Update]** wird der anzuwendende Aktualisierungsmodus ausgewählt: vollständig oder teilweise.
 
      Standardmäßig wird das Aggregat bei jeder Ausführung vollständig aktualisiert. Bei Auswahl der teilweisen Aktualisierung sind mithilfe des entsprechenden Links die Aktualisierungsbedingungen zu definieren.
@@ -171,7 +171,7 @@ Gehen Sie wie folgt vor, um eine neue Kennzahl zu definieren:
 
 1. Wählen Sie je nach gewählter Funktion den Ausdruck aus, auf den sich die Berechnung bezieht.
 
-   Die **[!UICONTROL Erweiterte Auswahl]** -Schaltfläche können Sie komplexe Formeln erstellen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../platform/using/about-queries-in-campaign.md).
+   Über die Schaltfläche **[!UICONTROL Erweiterte Auswahl]** können komplexe Formeln erstellt werden. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../platform/using/about-queries-in-campaign.md).
 
    ![](assets/s_advuser_cube_create_a_measure_01.png)
 
@@ -225,7 +225,7 @@ Klicken Sie hierzu auf das Symbol **[!UICONTROL Berichteigenschaften anzeigen]**
 
 ![](assets/cube_share_option.png)
 
-Geben Sie die Kategorie, zu der der Bericht gehört, sowie seine Relevanz an. Weitere Informationen hierzu finden Sie unter [diese Seite](../../reporting/using/configuring-access-to-the-report.md#report-display-context) der **Anzeigesequenz** und **Filteroptionen definieren** Abschnitte.
+Geben Sie die Kategorie, der der Bericht angehört, und seine Relevanz an. Weiterführende Informationen dazu finden Sie auf [dieser Seite](../../reporting/using/configuring-access-to-the-report.md#report-display-context) in den Abschnitten **Anzeigereihenfolge** und **Filteroptionen definieren**.
 
 Um die Änderungen zu bestätigen, muss der Bericht gespeichert werden.
 
@@ -263,7 +263,7 @@ Gehen Sie dazu wie folgt vor:
 
 Klicken Sie nach jeder Hinzufügung, Änderung oder Löschung von Filtern auf den Pfeil, um die Berechnung neu zu starten.
 
-Filter können auch basierend auf einer Auswahl erstellt werden. Wählen Sie dazu die Quellzellen, -zeilen und -spalten aus und klicken Sie auf die Schaltfläche **[!UICONTROL Filter hinzufügen]** Symbol.
+Filter können auch basierend auf einer Auswahl erstellt werden. Wählen Sie hierzu die Quellzellen, -zeilen und -spalten und klicken Sie auf das Symbol **[!UICONTROL Filter hinzufügen]**.
 
 Um eine Zeile, Spalte oder Zelle auszuwählen, klicken Sie diese mit der linken Maustaste an. Klicken Sie ein zweites Mal, um sie wieder abzuwählen.
 

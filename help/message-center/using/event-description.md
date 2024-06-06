@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: introduction
 exl-id: 9f7f4b6c-2ee8-4091-847d-f616d6abeb6b
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '750'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -120,7 +120,7 @@ Die obligatorischen Attribute der Elemente **`<rtevent>`** und **`<batchevent>`*
 <rtEvent type="order_confirmation" email="john.doe@domain.com" origin="eCommerce" wishedChannel="0" externalId="1242" mobilePhone="+33620202020"> 
 ```
 
-In diesem Beispiel werden zwei Kanäle bereitgestellt: die E-Mail-Adresse und die Mobiltelefonnummer. Die **wishedChannel** ermöglicht die Auswahl des Kanals, der bei der Umwandlung des Ereignisses in eine Nachricht verwendet werden soll. Der Wert &quot;0&quot; entspricht dem E-Mail-Kanal, der Wert &quot;1&quot; dem Mobile-Kanal usw.
+In diesem Beispiel sind mit der E-Mail-Adresse und der Mobiltelefonnummer zwei Kanäle angegeben. Das Feld **wishedChannel** ermöglicht die Bestimmung des Kanals, der bei der Reaktion auf ein Ereignis verwendet werden soll. Der Wert &quot;0&quot; entspricht dem E-Mail-Kanal, der Wert &quot;1&quot; dem Mobile-Kanal usw.
 
 Wenn Sie den Versand eines Ereignisses verschieben möchten, fügen Sie das Feld **[!UICONTROL geplant]** gefolgt von dem gewünschten Datum hinzu. Das Ereignis wird an diesem Datum in eine Nachricht umgewandelt.
 

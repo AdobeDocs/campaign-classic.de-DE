@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: creating-queries
 exl-id: cf914366-8bac-4d68-a0cc-2a43d102eef2
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '952'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Folgende Schritte sind auszuführen, um eine Abfrage in Adobe Campaign zu erstel
 
 ## 1. Schritt – Tabelle auswählen {#step-1---choose-a-table}
 
-Wählen Sie die Tabelle mit den Daten aus, die Sie in der **[!UICONTROL Dokumenttyp]** Fenster. Filtern Sie bei Bedarf die Daten mithilfe des Filterfelds oder des **[!UICONTROL Filter]** Schaltfläche.
+Wählen Sie im Fenster **[!UICONTROL Dokumenttyp]** die Tabelle aus, die die Daten enthält, für die Sie eine Abfrage erstellen möchten. Bei Bedarf können Sie die Auswahl unter Verwendung des Filterfeldes oder der Schaltfläche **[!UICONTROL Filter]** einschränken.
 
 ![](assets/query_editor_nveau_21.png)
 
@@ -47,11 +47,11 @@ Wählen Sie beispielsweise: **[!UICONTROL Alter]**, **[!UICONTROL Primärschlüs
 
 ![](assets/query_editor_nveau_01.png)
 
-Sie können einen Ausdruck bearbeiten, indem Sie eine Formel darin einfügen oder einen Prozess für eine Aggregatfunktion ausführen. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Ausdruck]** Spaltenfeld und wählen Sie **[!UICONTROL Ausdruck bearbeiten]**.
+Sie können einen Ausdruck definieren, indem Sie eine Formel oder eine Aggregatfunktion einfügen. Klicken Sie hierfür in der Spalte **[!UICONTROL Ausdruck]** auf **[!UICONTROL Ausdruck bearbeiten]**.
 
 ![](assets/query_editor_nveau_97.png)
 
-Die Daten der Ausgabespalten können gruppiert werden. Überprüfen Sie hierzu die Option **[!UICONTROL Ja]** im **[!UICONTROL Gruppe]** Spalte **[!UICONTROL Zu extrahierende Daten]** Fenster. Diese Funktion erzeugt ein Ergebnis um die angekreuzte Gruppierungsachse. Ein Beispiel für eine Abfrage mit Gruppierung finden Sie unter [diesem Abschnitt](../../workflow/using/querying-delivery-information.md).
+Die Daten der Ausgabespalten können gruppiert werden. Wählen Sie hierfür im Fenster **[!UICONTROL Zu extrahierende Daten]** in der Spalte **[!UICONTROL Gruppieren]** die Option **[!UICONTROL Ja]**. Diese Funktion erzeugt ein Ergebnis für die markierte Gruppierungsachse. Ein Beispiel für eine Abfrage mit Gruppierung wird in [diesem Abschnitt](../../workflow/using/querying-delivery-information.md) dargestellt.
 
 ![](assets/query_editor_nveau_56.png)
 
@@ -87,7 +87,7 @@ Nach Auswahl der **[!UICONTROL Filterbedingungen]** gelangen Sie zum Abschnitt *
 
   ![](assets/query_editor_15.png)
 
-* Die in der **[!UICONTROL Generischer Abfrageeditor]** in anderen Abfrageanwendungen verfügbar sind und umgekehrt. Um einen Filter zu speichern, klicken Sie auf die Schaltfläche **[!UICONTROL Speichern]** Symbol.
+* Die im **[!UICONTROL Generischen Abfragetool]** erstellten Filter können in anderen Abfragen der Anwendung verwendet werden (und umgekehrt). Klicken Sie hierzu auf das Symbol **[!UICONTROL Speichern]**.
 
   >[!NOTE]
   >
@@ -121,7 +121,7 @@ Eine nicht-angekreuzte Spalte wird nicht im Datenvorschaufenster angezeigt.
 
 ![](assets/query_editor_nveau_10.png)
 
-Die **[!UICONTROL Transformation]** -Spalte können Sie den Spaltentitel in Groß- oder Kleinschreibung ändern. Wählen Sie die Spalte aus und klicken Sie auf die Schaltfläche **[!UICONTROL Transformation]** Spalte. Sie können Folgendes auswählen:
+In der Spalte **[!UICONTROL Schreibweise]** haben Sie die Möglichkeit, Groß- und Kleinschreibung zu verändern. Wählen Sie eine Zeile aus und klicken Sie in die Spalte **[!UICONTROL Schreibweise]**. Wählen Sie zwischen:
 
 * **[!UICONTROL Alles in Kleinbuchstaben]**,
 * **[!UICONTROL Alles in Großbuchstaben]**,
@@ -131,7 +131,7 @@ Die **[!UICONTROL Transformation]** -Spalte können Sie den Spaltentitel in Gro�
 
 ## 6. Schritt – Vorschau der Daten anzeigen {#step-6---preview-data}
 
-Die **[!UICONTROL Datenvorschau]** -Fenster ist die letzte Etappe. Klicks **[!UICONTROL Datenvorschau starten]** , um Ihr Abfrageergebnis abzurufen. Sie ist in Spalten oder im XML-Format verfügbar. Klicken Sie auf **[!UICONTROL Generierte SQL-Abfragen]** , um die Abfrage im SQL-Format anzuzeigen.
+Im letzten Schritt, der **[!UICONTROL Datenvorschau]**, können Sie sich das Ergebnis der Abfrage ansehen. Wählen Sie hierfür **[!UICONTROL Datenvorschau starten]** aus. Das Ergebnis liegt in Spalten oder im XML-Format vor. Wählen Sie **[!UICONTROL Erzeugte SQL-Abfragen]** aus, um sich die SQL-Entsprechung der Abfrage anzusehen.
 
 Im vorliegenden Beispiel wurden die Daten nach dem Alter der ausgewählten Empfänger in aufsteigender Reihenfolge geordnet.
 
@@ -139,4 +139,4 @@ Im vorliegenden Beispiel wurden die Daten nach dem Alter der ausgewählten Empf�
 
 >[!NOTE]
 >
->Standardmäßig werden nur die ersten 200 Zeilen im **[!UICONTROL Datenvorschau]** Fenster. Um dies zu ändern, geben Sie eine Zahl im **[!UICONTROL Anzuzeigende Zeilen]** und klicken Sie auf **[!UICONTROL Datenvorschau starten]**.
+>Standardmäßig werden in der **[!UICONTROL Datenvorschau]** die 200 ersten Zeilen angezeigt. Geben Sie einen anderen Wert im Feld **[!UICONTROL Angezeigte Zeilen]** ein und klicken Sie auf **[!UICONTROL Datenvorschau starten]**.

@@ -5,9 +5,9 @@ description: Erfahren Sie mehr über die Funktionsweise von Transaktionsnachrich
 feature: Transactional Messaging, Message Center
 exl-id: dc52e789-d0bf-4e8f-b448-9d69a2762cc1
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '644'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Grundlage dieser Funktion ist eine spezielle Architektur, bei der die **Ausführ
 
 >[!NOTE]
 >
->Um neue Benutzer für auf der Adobe Cloud gehostete Message-Center-Ausführungsinstanzen zu erstellen, müssen Sie sich an den [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Message Center-Benutzer sind bestimmte Benutzer, die spezielle Zugriffsberechtigungen benötigen **[!UICONTROL Echtzeit-Ereignisse (nmsRtEvent)]** Ordner.
+>Um neue Benutzer für in Adobe Cloud gehostete Message Center-Ausführungsinstanzen zu erstellen, kontaktieren Sie die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Benutzer von Message Center benötigen spezifische Berechtigungen für den Zugriff auf die Ordner für **[!UICONTROL Echtzeit-Ereignisse (nmsRtEvent)]**.
 
 Der gesamte Prozess der Transaktionsnachrichten kann wie folgt beschrieben werden:
 

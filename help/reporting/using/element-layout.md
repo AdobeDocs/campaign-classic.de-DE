@@ -6,9 +6,9 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Reporting, Monitoring
 exl-id: 79d5c901-905b-4a0e-adb9-91fd6acb186f
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '441'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 66%
 
 Zusätzlich zu den verschiedenen Diagrammen, die [hier](../../reporting/using/creating-a-chart.md#chart-types-and-variants) beschrieben sind, können Sie die Anzeige anpassen und Elemente zu den Berichtsseiten hinzufügen.
 
-Sie können Container verwenden: Mithilfe dieser Elemente können Sie mehrere Elemente einer Seite verknüpfen und ihr Layout in Spalten und/oder Zellen konfigurieren. Weitere Informationen zu ihrer Verwendung finden Sie unter [diesem Abschnitt](../../web/using/defining-web-forms-layout.md#creating-containers).
+Sie können beispielsweise Container verwenden: Diese ermöglichen es, mehrere Elemente einer Seite zu gruppieren und in Spalten oder Zellen anzuordnen. Nähere Informationen zu ihrer Konfiguration werden in [diesem Abschnitt](../../web/using/defining-web-forms-layout.md#creating-containers) erläutert.
 
 Sie können das Layout des Berichts in der Seite konfigurieren (an der Wurzel des Navigationsbaums) und es für jeden Container überschreiben. Sowohl Seiten als auch Container sind in Spalten organisiert. Nur statische Elemente und Grafiken sind in Zellen organisiert.
 
@@ -30,11 +30,11 @@ Der Tab **[!UICONTROL Allgemein]** erlaubt es, den Titel der Seite zu ändern, d
 
 ![](assets/s_ncs_advuser_report_wizard_022.png)
 
-Die **[!UICONTROL Titel]** -Feld können Sie den Titel in der Kopfzeile der Berichtsseite personalisieren. Der Titel des Fensters kann über die **[!UICONTROL Eigenschaften]** des Berichts. Weitere Informationen hierzu finden Sie unter [Header und Footer hinzufügen](#adding-a-header-and-a-footer).
+Im Feld **[!UICONTROL Titel]** kann der Titel angepasst werden, der im Header der Berichtseite angezeigt wird. Der Titel des Fensters lässt sich in den **[!UICONTROL Eigenschaften]** des Berichts angegeben. Weitere Informationen hierzu finden Sie unter [Header und Footer hinzufügen](#adding-a-header-and-a-footer).
 
-Die **[!UICONTROL Anzeigeeinstellungen]** Mit den Optionen können Sie die Position der Kontrollbeschriftung innerhalb einer Berichtseite auswählen und die Anzahl der Spalten auf der Seite definieren. Weitere Informationen zum Seitenlayout finden Sie im Abschnitt **Elementlayout** Abschnitt [diesem Abschnitt](../../web/using/defining-web-forms-layout.md#positioning-the-fields-on-the-page).
+Die Optionen der **[!UICONTROL Anzeigeparameter]** ermöglichen es, die Positionierung der Legende in der Seite eines Berichts sowie die Spaltenanzahl der Seite zu bestimmen. Mehr Informationen zum Layout erhalten Sie im Abschnitt **Anordnung der Elemente** in [diesem Abschnitt](../../web/using/defining-web-forms-layout.md#positioning-the-fields-on-the-page).
 
-Wählen Sie die verschiedenen Optionen im **[!UICONTROL Durchsuchen]** -Abschnitt verwenden, um das Browsen von einer Berichtseite zu einer anderen zu erlauben. Wenn die Variable **[!UICONTROL Nächste Seite deaktivieren]** oder **[!UICONTROL Vorherige Seite deaktivieren]** ausgewählt ist, wird die **[!UICONTROL Nächste]** und **[!UICONTROL Vorherige]** -Schaltflächen auf der Berichtsseite verschwinden.
+Konfigurieren Sie die unterschiedlichen Optionen des Abschnitts **[!UICONTROL Navigation]**, um einen Übergang zwischen den Seiten des Berichts zu erlauben oder nicht. Bei Aktivierung der Option **[!UICONTROL Rückkehr zur vorhergehenden Seite nicht zulassen]** oder der Option **[!UICONTROL Weiter zur nächsten Seite nicht zulassen]** sind die Schaltflächen **[!UICONTROL Weiter]** oder **[!UICONTROL Zurück]** in der Berichtseite nicht mehr verfügbar.
 
 ## Hinzufügen einer Kopf- und einer Fußzeile {#adding-a-header-and-a-footer}
 

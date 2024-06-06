@@ -5,9 +5,9 @@ description: Erfahren Sie mehr über die Workflow-Aktivität "Datei-Wächter".
 feature: Workflows, Data Management
 exl-id: bbec389e-c2ba-4b23-847f-b01dca6b8d5a
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '565'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -69,7 +69,7 @@ Auf dem ersten Tab der Aktivität **[!UICONTROL Datei-Wächter]** können Sie de
 
    Informationen zum Schritt **[!UICONTROL Verlaufserstellung]** finden Sie unter [HTTP-Übertragung](web-download.md).
 
-Die Dateiverarbeitungsreihenfolge kann nicht bestimmt werden. Um einen Dateisatz sequenziell zu verarbeiten, verwenden Sie die **[!UICONTROL Beenden, sobald eine Datei verarbeitet wurde]** und erstellen Sie eine Schleife. In diesem Fall werden die Dateien in alphabetischer Reihenfolge verarbeitet. Die **[!UICONTROL Fehlen von Dateien bearbeiten]** -Option können Sie die Iteration abschließen.
+Die Reihenfolge der Dateiverarbeitung kann nicht beeinflusst werden. Um eine Reihe von Dateien schrittweise zu verarbeiten, kann die Option **[!UICONTROL Beenden, sobald eine Datei bearbeitet wurde]** in Verbindung mit einer Schlaufe verwendet werden. In diesem Fall werden die Dateien in alphabetischer Reihenfolge verarbeitet. Die Option **[!UICONTROL Fehlen von Dateien bearbeiten]** beendet die Schlaufe.
 
 ![](assets/file_collect_loop.png)
 

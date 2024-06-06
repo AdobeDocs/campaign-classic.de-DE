@@ -5,9 +5,9 @@ description: Erfahren Sie, wie Sie eine partizipative Kampagne erstellen
 feature: Distributed Marketing
 exl-id: 17313fe5-ad42-45ca-a35a-1e7aa89380ef
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '990'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -80,11 +80,11 @@ Der Kampagnenworkflow muss die Aktivität **Lokale Validierung** beinhalten. Die
 * **[!UICONTROL Verteilungskontext]**: Explizit;
 * **[!UICONTROL Datenverteilung]**: Lokalstellen-Datenverteilung.
 
-**Lokalstellen-Verteilung** Datenverteilung vom Typ muss erstellt werden. Die Verteilungsvorlage ermöglicht die Begrenzung der Datensatzanzahl ausgehend von einer Liste von Gruppierungswerten. In **[!UICONTROL Ressourcen > Kampagnenverwaltung > Datenverteilung]**, klicken Sie auf die **[!UICONTROL Neu]** Symbol zum Erstellen eines neuen **[!UICONTROL Datenverteilung]**. Weiterführende Informationen zur Datenverteilung finden Sie im Abschnitt [Workflows](../../workflow/using/using-the-local-approval-activity.md#step-1--creating-the-data-distribution-template-) Handbuch.
+Erstellen Sie eine Datenverteilung vom Typ **Lokalstellen-Datenverteilung**. Mit der Datenverteilungsvorlage können Sie die Anzahl der Datensätze aus einer Liste von Gruppierungswerten begrenzen. Klicken Sie unter **[!UICONTROL Ressourcen > Kampagnen-Management > Datenverteilung]** auf das Symbol **[!UICONTROL Neu]**, um eine neue **[!UICONTROL Datenverteilung]** zu erstellen. Mehr Informationen über Datenverteilungen finden Sie im [Workflows-Handbuch](../../workflow/using/using-the-local-approval-activity.md#step-1--creating-the-data-distribution-template-).
 
 ![](assets/mkg_dist_data_distribution.png)
 
-Wählen Sie die **Zielgruppendimension** und **[!UICONTROL Verteilungsfeld]**. Für **[!UICONTROL Zuweisungstyp]** auswählen **Lokalstelle**.
+Geben Sie die **Zielgruppendimension** sowie das **[!UICONTROL Verteilungsfeld]** an. Wählen Sie als **[!UICONTROL Zuweisungstyp]** die Option **Lokalstelle** aus.
 
 Fügen Sie im Tab **[!UICONTROL Verteilung]** ein Feld für jede Lokalstelle hinzu und geben Sie den jeweiligen Wert an.
 
@@ -152,7 +152,7 @@ Im automatischen Modus wird die Lokalstelle automatisch für die Kampagne angeme
 
 ### Benachrichtigungen {#notifications}
 
-Die Konfiguration der Benachrichtigungen entspricht den Benachrichtigungen für eine Lokalstelle. Weitere Informationen finden Sie in [diesem Abschnitt](creating-a-local-campaign.md#notifications).
+Die Konfiguration der Benachrichtigungen entspricht der für lokale Kampagnen. Weitere Informationen finden Sie in [diesem Abschnitt](creating-a-local-campaign.md#notifications).
 
 ## Bestellen einer Kampagne {#ordering-a-campaign}
 
@@ -174,4 +174,4 @@ Weitere Informationen hierzu finden Sie im Abschnitt [Validierungsprozess](creat
 
 ## Validieren einer Bestellung {#approving-an-order}
 
-Die Validierung der Bestellung eines partizipativen Kampagnenkits entspricht der von lokalen Kampagnen. Weitere Informationen finden Sie in [diesem Abschnitt](creating-a-local-campaign.md#approving-an-order).
+Die Validierung der Bestellung eines partizipativen Kampagnen-Kits entspricht der von lokalen Kampagnen. Weitere Informationen finden Sie in [diesem Abschnitt](creating-a-local-campaign.md#approving-an-order).

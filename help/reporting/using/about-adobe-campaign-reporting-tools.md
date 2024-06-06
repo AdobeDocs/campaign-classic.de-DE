@@ -6,9 +6,9 @@ feature: Reporting, Monitoring
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 exl-id: 1ef30004-e1b0-4dde-8104-0ee9e8aa9d8b
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '344'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Neben den [nativen Berichten](../../reporting/using/about-campaign-built-in-repo
 
 Adobe Campaign ist keine auf Reporting spezialisierte Anwendung: Die hier erstellten Berichte dienen hauptsächlich der Visualisierung aggregierter Daten. Adobe-Campaign-Berichte erlauben somit die Darstellung und Analyse von Daten, sind aber nicht zum Export dieser aus der Datenbank geeignet.
 
-Um Daten aus der Adobe Campaign-Datenbank zu exportieren, müssen Sie einen Workflow erstellen und eine Datenexport -Aktivität verwenden. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../workflow/using/about-action-activities.md).
+Der Export von Daten aus Adobe Campaign ist mithilfe der Datenexport-Aktivität im Rahmen eines Workflows möglich. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../workflow/using/about-action-activities.md).
 
 Adobe Campaign bietet verschiedene Reporting-Tools:
 

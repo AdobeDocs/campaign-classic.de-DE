@@ -6,9 +6,9 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Reporting, Monitoring
 exl-id: 848d67c7-d1dc-4eba-bcb8-672e76d8ce87
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1656'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -85,7 +85,7 @@ Die vorgeschlagenen Optionen können abhängig vom Inhalt dieses Felds variieren
   >Diese Option sollte mit Vorsicht angewandt werden, da sie Performance und Lesbarkeit des Berichts stark beeinträchtigen kann.
 
 * **[!UICONTROL Automatisch]**: Die n am meisten vertretenen Werte werden angezeigt. Sie werden automatisch berechnet und bilden in Abhängigkeit von der angegebenen Klassenanzahl einen bestimmten Prozentsatz der gewünschten Variablen ab. Wenn es sich um numerische Werte handelt, verteilt Adobe Campaign die Daten automatisch in n Klassen.
-* **[!UICONTROL Manuell]** : Diese Option funktioniert wie die **[!UICONTROL Auto]** -Option, allerdings können Sie diese Werte manuell festlegen. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Hinzufügen]** rechts neben der Wertetabelle.
+* **[!UICONTROL Manuell]**: Diese Option funktioniert wie die Option **[!UICONTROL Automatisch]**, mit dem Unterschied, dass die Werte benutzerdefiniert werden können. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Hinzufügen]** rechts neben der Wertetabelle.
 
   Die Werte können vor der Benutzerdefinierung automatisch von Adobe Campaign initialisiert werden: Geben Sie hierzu die Anzahl an zu erzeugenden Klassen an und klicken Sie auf den Link **[!UICONTROL Initialiseren mit]**, wie im nachstehenden Beispiel:
 
@@ -129,13 +129,13 @@ Geben Sie dann den gewünschten Grafiktyp an.
 
 >[!NOTE]
 >
->Sie können die Variablen in einem Diagramm und einer Tabelle gleichzeitig anzeigen. Geben Sie dazu die Variablen im **[!UICONTROL Tabellenkonfiguration]** Fenster. Klicks **[!UICONTROL Nächste]** und wählen Sie den Grafiktyp im Grafikkonfigurationsfenster aus. Wenn in der Tabelle Unterdimensionen definiert sind, werden sie nicht in der Grafik angezeigt.
+>Sie können die Variablen sowohl in grafischer als auch in tabellarischer Form anzeigen lassen. Geben Sie in diesem Fall die Variablen im Fenster **[!UICONTROL Tabellenkonfiguration]** an. Klicken Sie dann auf **[!UICONTROL Weiter]** und wählen Sie den gewünschten Grafiktyp im Grafikkonfigurations-Fenster aus. In der Tabelle definierte Unterdimensionen werden nicht in der Grafik angezeigt.
 
 Klicken Sie auf den Link **[!UICONTROL Grafikparameter...]**, um die Eigenschaften der Grafik zu ändern.
 
 ![](assets/reporting_descriptive_graphe_options.png)
 
-Die verfügbaren Optionen hängen vom gewählten Grafiktyp ab. Weitere Informationen dazu finden Sie auf [dieser Seite](../../reporting/using/creating-a-chart.md#chart-types-and-variants).
+Die zur Verfügung stehenden Optionen hängen vom gewählten Grafiktyp ab. Weitere Informationen dazu finden Sie auf [dieser Seite](../../reporting/using/creating-a-chart.md#chart-types-and-variants).
 
 ### Statistikberechnung {#statistics-calculation}
 
@@ -159,7 +159,7 @@ Folgende Funktionen stehen zur Auswahl:
 
   ![](assets/s_ncs_user_report_wizard_026.png)
 
-* **[!UICONTROL Berechnetes Feld]** , um einen personalisierten Benutzer zu erstellen (nur für Tabellen verfügbar). Die **[!UICONTROL Benutzerfunktion]** im Feld wird die auf die Daten anzuwendende Berechnung angegeben.
+* **[!UICONTROL Berechnetes Feld]**: ermöglicht die Erstellung einer benutzerdefinierten Funktion (nur für Tabellen verfügbar). Im Feld **[!UICONTROL Benutzerfunktion]** wird die auf die Daten anzuwendende Berechnung angegeben.
 
   Beispiel zur Berechnung des durchschnittlichen Einkaufsbetrags pro Kunde, nach Land und Herkunft:
 
@@ -173,7 +173,7 @@ Folgende Funktionen stehen zur Auswahl:
 
       ![](assets/report_compute_data_sample2.png)
 
-   1. Diese Statistik wird nicht in der Tabelle angezeigt. Sie müssen die Option **[!UICONTROL Anzeige in der Tabelle]** der **[!UICONTROL Erweitert]** Registerkarte.
+   1. Diese Statistik soll nicht in der Tabelle angezeigt werden. Deaktivieren Sie also die Option **[!UICONTROL In der Tabelle anzeigen]** im Tab **[!UICONTROL Erweitert]**.
 
       ![](assets/report_compute_data_sample3.png)
 

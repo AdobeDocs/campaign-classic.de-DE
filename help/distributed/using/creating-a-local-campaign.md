@@ -5,9 +5,9 @@ description: Erstellen einer lokalen Kampagne
 feature: Distributed Marketing
 exl-id: 17b5865a-5e04-4b3b-8b6a-12d5c1a9c1da
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1698'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -69,7 +69,7 @@ Es stehen vier unterschiedliche Web-Schnittstellentypen zur Verfügung:
 
   >[!NOTE]
   >
-  >Die in diesem Beispiel verwendete Webanwendung ist ein Beispiel. Sie müssen eine bestimmte Web-App erstellen, um ein Formular verwenden zu können. Siehe Abschnitt [API](../../configuration/using/about-web-services.md).
+  >Bei der hier verwendeten Web-Anwendung handelt es sich nur um ein Beispiel. Um ein Formular verwenden zu können, muss vorab eine spezifische Web-Anwendung erstellt werden. Lesen Sie hierzu den Abschnitt [APIs](../../configuration/using/about-web-services.md).
 
   ![](assets/mkt_distr_7.png)
 
@@ -300,7 +300,7 @@ Wenn eine Lokalstelle eine Kampagne bestellt hat, werden die validierungsverantw
 
 #### Validierung über die Adobe Campaign-Konsole {#approving-via-the-adobe-campaign-console}
 
-Die Bestellung kann auch über die Konsole in der Übersicht der Kampagnenbestellungen validiert werden. Um einen Auftrag zu genehmigen, wählen Sie ihn aus und klicken Sie auf **[!UICONTROL Bestellung genehmigen]**.
+Die Bestellungsvalidierung kann auch in die Konsole über die Übersicht der Kampagnenbestellungen erfolgen. Um einen Auftrag zu genehmigen, wählen Sie ihn aus und klicken Sie auf **[!UICONTROL Bestellung genehmigen]**.
 
 ![](assets/mkg_dist_local_order_valid.png)
 

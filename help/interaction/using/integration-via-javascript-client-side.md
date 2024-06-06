@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: unitary-interactions
 exl-id: a9842e59-120c-4a35-abdf-6540a0bbdd6d
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1164'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -154,7 +154,7 @@ Der Parameter &quot;**env**&quot; erhält den internen Namen der Live-Umgebung.
 
 Der optionale Parameter &quot;**cb**&quot; erhält den Namen der Funktion, die den vom Angebotsmodul zurückgegebenen XML-Knoten auswerten wird (Callback).
 
-Die &quot;**t** Der Parameter erhält den Wert der Zielgruppe, nur für eine identifizierte Interaktion. Dieser Parameter kann auch mit der **interactionTarget** -Variable. Dieser Parameter ist optional.
+Der optionale Parameter „**t**“ erhält bei Interaktionen mit identifizierten Kontakten die Kennung des Kontakts. Der Parameter kann auch mit der Variablen **interactionTarget** übergeben werden. Dieser Parameter ist optional.
 
 Der optionale Parameter &quot;**c**&quot; erhält die Liste der internen Kategorienamen.
 
@@ -214,7 +214,7 @@ Das folgende Anwendungsbeispiel beschreibt die in Adobe Campaign vorzunehmenden 
    >
    >Jedes Element muss zweimal definiert werden. CDATA-Elemente (&quot;_jst&quot;) können Personalisierungsfelder enthalten.
    >
-   >Vergessen Sie nicht, die Datenbankstruktur zu aktualisieren. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../configuration/using/updating-the-database-structure.md).
+   >Danach ist eine Aktualisierung der Datenbankstruktur erforderlich. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../configuration/using/updating-the-database-structure.md).
 
    >[!NOTE]
    >

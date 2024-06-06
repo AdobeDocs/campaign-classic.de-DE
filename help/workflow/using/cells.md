@@ -5,9 +5,9 @@ description: Segmente
 feature: Workflows, Targeting Activity
 exl-id: 7b562dba-7e4b-40a7-91db-7b9379de44ca
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '135'
-ht-degree: 56%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Die **[!UICONTROL Segmente]**-Aktivität bietet eine Ansicht der verschiedenen T
 
 ![](assets/wf_split_cells.png)
 
-Diese Aktivität kann so konfiguriert werden, dass bestimmte Parameter entsprechend den Benutzeranforderungen eingegeben werden. Standardmäßig werden die Details der einzelnen Teilmengen in einem dedizierten Fenster über die **[!UICONTROL Auswahl]** und **[!UICONTROL Erweitert]** Registerkarten. Im folgenden Beispiel wurde das Formular geändert: a **[!UICONTROL Daten]** wurde hinzugefügt, um die Zuordnung eines Angebots und einer Prioritätsstufe für jede Teilmenge zu ermöglichen.
+Diese Aktivität kann so konfiguriert werden, dass bestimmte Parameter entsprechend den Benutzeranforderungen eingegeben werden. Standardmäßig können Details in einem dedizierten Fenster mit den Registerkarten **[!UICONTROL Auswahl]** und **[!UICONTROL Erweitert]** eingesehen werden. Im unten abgebildeten Beispiel wurde das entsprechende Formular angepasst und eine Registerkarte **[!UICONTROL Daten]** hinzugefügt, um die Zuordnung von Angeboten und Prioritätsniveaus zu den einzelnen Teilmengen zu erlauben:
 
 ![](assets/wf_split_cells_with_customization.png)
 

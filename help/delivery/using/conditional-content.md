@@ -7,9 +7,9 @@ feature: Personalization, Multilingual Messages
 role: User
 exl-id: 12595ee4-6a52-4e06-b80d-85fe633a5a11
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '509'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Die Konfiguration bedingter Inhalte erlaubt eine dynamische Personalisierung, be
 
 Im folgenden Beispiel erfahren Sie, wie Sie eine Nachricht erstellen und entsprechend dem Geschlecht und den Interessen des Empfängers dynamisch personalisieren können.
 
-* Anzeige mit &quot;Herr&quot;oder &quot;Frau&quot; nach dem Wert der **[!UICONTROL Geschlecht]** Feld (M oder F) in der Datenquelle,
+* Anzeige von „Herr“ oder „Frau“ entsprechend dem Wert im Feld **[!UICONTROL Geschlecht]** der Datenquelle (männlich bzw. weiblich).
 * Individuell auf den Empfänger zugeschnittene Zusammenstellung eines Newsletters oder eines Angebots in Abhängigkeit von seinen angegebenen oder erkannten Interessen:
 
    * Interessen 1 -- > Baustein 1
@@ -63,7 +63,7 @@ Gehen Sie wie folgt vor, um einen von einem Feldwert abhängigen bedingten Inhal
 
      ![](assets/s_ncs_user_conditional_content06.png)
 
-Sie können weitere Fälle hinzufügen und je nach den Werten eines oder mehrerer Felder unterschiedliche Inhalte definieren. Verwenden Sie dazu **[!UICONTROL Bedingter Inhalt > Sonst]** und **[!UICONTROL Bedingter Inhalt > Sonst , wenn]**. Diese Ausdrücke werden auf die gleiche Weise wie die **if** Ausdruck.
+Sie können weitere Bedingungen hinzufügen und Inhalte in Abhängigkeit von einem oder mehreren Feldwerten konfigurieren. Dies ist mit den Optionen **[!UICONTROL Bedingter Inhalt > Sonst]** und **[!UICONTROL Bedingter Inhalt > Sonst wenn]** möglich. Die Vorgehensweise ist die gleiche wie beim **If**-Ausdruck.
 
 ![](assets/s_ncs_user_conditional_content07.png)
 
@@ -79,7 +79,7 @@ Klicken Sie nun auf den **[!UICONTROL Vorschau]**-Tab und wählen Sie einen Empf
 
 Im folgenden Beispiel erfahren Sie, wie Sie eine mehrsprachige E-Mail erstellen. Inhalte werden in der bevorzugten Sprache des Empfängers angezeigt.
 
-1. Erstellen Sie eine E-Mail und wählen Sie die Zielpopulation aus. In diesem Beispiel basiert die Bedingung, dass die eine Version oder die andere angezeigt wird, auf der **Sprache** Wert des Empfängerprofils. In diesem Beispiel werden diese Werte auf **DE**, **FR**, **ES**.
+1. Erstellen Sie eine E-Mail und wählen Sie die Zielpopulation aus. In diesem Beispiel basiert die Bedingung für die Darstellung einer bestimmten Version auf dem Wert **Sprache** des Empfängerprofils. In unserem Beispiel sind diese Werte auf **EN**, **FR**, **ES** gesetzt.
 1. Klicken Sie im HTML-Inhalt der E-Mail auf den Tab **[!UICONTROL Quelle]** und fügen Sie folgenden Code ein:
 
    ```

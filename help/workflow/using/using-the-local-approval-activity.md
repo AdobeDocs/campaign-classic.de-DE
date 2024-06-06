@@ -5,9 +5,9 @@ description: Erfahren Sie, wie Sie die lokale Validierungsaktivität verwenden
 feature: Workflows
 exl-id: cc29eec9-9c97-4d1b-9567-2581154d7b3f
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1441'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Der lokale Validierungsprozess gliedert sich in folgende Schritte:
 
    ![](assets/local_validation_intro_4.png)
 
-1. Nach Ablauf der Validierungsfrist startet der Workflow erneut. In diesem Beispiel wird die **[!UICONTROL Versand]** -Aktivität beginnt und der Versand an die validierten Zielgruppen erfolgt.
+1. Mit Ablauf der Validierungsfrist nimmt der Workflow die Ausführung wieder auf. Im vorliegenden Beispiel wird die **[!UICONTROL Versandaktivität]** aktiviert und der Versand an die validierten Empfänger gestartet.
 
    >[!NOTE]
    >
@@ -49,7 +49,7 @@ Der lokale Validierungsprozess gliedert sich in folgende Schritte:
 
 ## 1. Schritt: Erstellung der Datenverteilungsvorlage {#step-1--creating-the-data-distribution-template-}
 
-Die Verteilungsvorlage ermöglicht es, die aus der Zielgruppenbestimmung resultierende Population mithilfe einer Datengruppierung zu begrenzen, wobei jeder Wert einem lokalen Verantwortlichen zugewiesen werden kann. In diesem Beispiel haben wir die Variable **[!UICONTROL Domain der E-Mail-Adresse]** als Verteilungsfeld ein und jedem lokalen Verantwortlichen eine Domäne zugewiesen.
+Die Verteilungsvorlage ermöglicht es, die aus der Zielgruppenbestimmung resultierende Population mithilfe einer Datengruppierung zu begrenzen, wobei jeder Wert einem lokalen Verantwortlichen zugewiesen werden kann. In diesem Beispiel haben wir die Variable **[!UICONTROL Domain der E-Mail-Adresse]** als Verteilungsfeld ein und jedem lokalen Verantwortlichen eine Domain zugewiesen.
 
 Weitere Informationen zum Erstellen einer Datenverteilungsvorlage finden Sie unter [Anzahl an Datensätzen in Teilmengen durch Datenverteilung begrenzen](split.md#limiting-the-number-of-subset-records-per-data-distribution).
 
@@ -61,9 +61,9 @@ Weitere Informationen zum Erstellen einer Datenverteilungsvorlage finden Sie unt
 
    ![](assets/local_validation_data_distribution_2.png)
 
-1. Geben Sie die **[!UICONTROL Titel]** und **[!UICONTROL Verteilungskontext]**. In diesem Beispiel haben wir die Variable **[!UICONTROL Empfänger]** Zielgruppenschema und **[!UICONTROL E-Mail-Domain]** als Verteilungsfeld. Die Empfängerliste wird nach Domain aufgeschlüsselt.
-1. Im **[!UICONTROL Verteilungstyp]** ein, wählen Sie aus, wie der Zielbegrenzungswert im **[!UICONTROL Distribution]** Registerkarte. Hier haben wir **[!UICONTROL Prozentsatz]**.
-1. Im **[!UICONTROL Validierungsspeicherung]** das Speicherschema der Validierungen eingeben, das dem verwendeten Zielgruppenschema entspricht. Im Folgenden wird das standardmäßige Speicherschema verwendet: **[!UICONTROL Lokale Validierung der Empfänger]**.
+1. Vergeben Sie einen **[!UICONTROL Titel]** und füllen Sie die Felder zum **[!UICONTROL Verteilungskontext]** aus. Im vorliegenden Beispiel wurden die **[!UICONTROL Empfänger]** als Zielgruppendimension und das Feld **[!UICONTROL E-Mail-Domain]** als Verteilungsfeld gewählt. Die Empfängerliste wird somit nach Domain verteilt.
+1. Wählen Sie im Feld **[!UICONTROL Verteilungstyp]** die Art aus, in der die Zielgruppenbegrenzung im Tab **[!UICONTROL Verteilung]** ausgedrückt werden soll. Im vorliegenden Beispiel wurde **[!UICONTROL Prozent]** ausgewählt.
+1. Geben Sie im Feld **[!UICONTROL Validierungsspeicherung]** das dem verwendeten Zielgruppenschema entsprechende Speicherschema an. Im Folgenden wird das standardmäßige Speicherschema verwendet: **[!UICONTROL Lokale Validierung der Empfangenden]**.
 1. Klicken Sie dann auf den Link **[!UICONTROL Erweiterte Parameter...]**
 
    ![](assets/local_validation_data_distribution_3.png)
@@ -71,7 +71,7 @@ Weitere Informationen zum Erstellen einer Datenverteilungsvorlage finden Sie unt
 1. Damit alle Empfänger in der Liste der zu validierenden Empfänger erscheinen, lassen Sie die Option **[!UICONTROL Nachrichten validieren]** angekreuzt.
 1. Behalten Sie im Feld **[!UICONTROL Versandtitel]** den Standardausdruck bei (Compute String des Versands). Auf diese Weise wird in der Versandreaktionen-Benachrichtigung der ursprüngliche Versandtitel verwendet.
 1. Geben Sie im **[!UICONTROL Gruppierungsfeld]** das **[!UICONTROL Geschlecht]** als Kriterium für die Gruppierung der Empfänger in den Benachrichtigungen an.
-1. Im **[!UICONTROL Bearbeiten von zielgerichteten Nachrichten]** -Abschnitt, haben wir die **[!UICONTROL Empfänger bearbeiten]** Webanwendung und **[!UICONTROL recipientId]** -Parameter. In den Validierungs- und Feedback-Benachrichtigungen werden die Empfänger angeklickt und auf die URL der Webanwendung verweisen. Der zusätzliche URL-Parameter wird **[!UICONTROL recipientId]**.
+1. Im Abschnitt **[!UICONTROL Nachrichten bearbeiten]** haben wir die Web-Anwendung **[!UICONTROL Empfänger bearbeiten]** und den Parameter **[!UICONTROL recipientId]** ausgewählt. Auf diese Weise werden die Empfangenden in den Genhemigungs- und Feedback-Benachrichtigungen anklickbar und leiten auf die entsprechende URL der Web-Anwendung weiter. Der zusätzliche Parameter der URL ist **[!UICONTROL recipientId]**.
 1. Schließen Sie die erweiterten Parameter und gehen Sie in den Tab **[!UICONTROL Verteilung]**. Füllen Sie für jede Domain die folgenden Felder aus:
 
    ![](assets/local_validation_data_distribution_4.png)
@@ -104,11 +104,11 @@ Folgende Aktivitäten wurden verwendet:
 
 ### Abfragen, Schnittmenge und Teilung {#queries--intersection-and-split}
 
-Die nachfolgende Zielgruppenbestimmung besteht aus zwei Abfragen, einer Schnittmenge und einer Aufspaltung. Die aus der Zielgruppenbestimmung resultierende Population kann mithilfe einer **[!UICONTROL Aufspaltung]** -Aktivität mithilfe einer Datenverteilungsvorlage.
+Die Zielgruppenbestimmung geschieht mithilfe zweier Abfragen und einer Schnittmenge. Die **[!UICONTROL Aufspaltung]** schränkt die resultierende Population über eine Datenverteilungsvorlage ein.
 
 Weitere Informationen zum Konfigurieren einer Aufspaltungsaktivität finden Sie unter [Aufspaltung](split.md). Die Erstellung einer Datenverteilungsvorlage wird unter [Anzahl an Datensätzen in Teilmengen durch Datenverteilung begrenzen](split.md#limiting-the-number-of-subset-records-per-data-distribution) ausführlich beschrieben.
 
-Wenn Sie die aus der Abfrage resultierende Population nicht einschränken möchten, müssen Sie die **[!UICONTROL Abfrage]**, **[!UICONTROL Schnittmenge]**, und **[!UICONTROL Aufspaltung]** Aktivitäten. Füllen Sie in diesem Fall die Datenverteilungsvorlage in der ersten **[!UICONTROL Lokale Validierung]** -Aktivität.
+Wenn Sie die aus der Abfrage resultierende Population nicht einschränken möchten, ist die Verwendung der **[!UICONTROL Abfragen]**, **[!UICONTROL Schnittmenge]** und **[!UICONTROL Aufspaltung]** nicht erforderlich. Konfigurieren Sie in diesem Fall die Verteilungsvorlage in der ersten Aktivität vom Typ **[!UICONTROL Lokale Validierung]**.
 
 1. Öffnen Sie die Aufspaltung und kreuzen Sie im Bereich **[!UICONTROL Begrenzung der Anzahl von Datensätzen]** die Option **[!UICONTROL Anzahl von Datensätzen begrenzen]** an. Klicken Sie anschließend auf den Link **[!UICONTROL Bearbeiten...]**.
 
@@ -118,7 +118,7 @@ Wenn Sie die aus der Abfrage resultierende Population nicht einschränken möcht
 
    ![](assets/local_validation_split_1bis.png)
 
-1. Im **[!UICONTROL Spalten sortieren]** hinzufügen, das Feld hinzufügen, auf das die Sortierung angewendet wird. Hier haben wir die **[!UICONTROL Email]** -Feld. Klicken Sie auf **[!UICONTROL Weiter]**.
+1. Fügen Sie im Bereich **[!UICONTROL Sortierungsspalten]** das Feld hinzu, nach dem die Liste sortiert werden soll. Im vorliegenden Beispiel ist dies **[!UICONTROL E-Mail]**. Klicken Sie auf **[!UICONTROL Weiter]**.
 
    ![](assets/local_validation_split_2.png)
 
@@ -145,7 +145,7 @@ Folgende Angaben sind erforderlich:
 
    Wenn die resultierende Population nicht begrenzt werden soll, ist die Option **[!UICONTROL Explizit]** anzukreuzen und im Feld **[!UICONTROL Datenverteilung]** die zuvor erstellte Verteilungsvorlage anzugeben.
 
-1. Im **[!UICONTROL Benachrichtigung]** die Versandvorlage und den Betreff der Benachrichtigungs-E-Mail auswählen. Hier haben wir die Standardvorlage ausgewählt: **[!UICONTROL Benachrichtigung bezüglich lokaler Validierungen]**.
+1. Wählen Sie im Bereich **[!UICONTROL Validierungsverwaltung]** die Versandvorlage aus und geben Sie den Betreff für die Benachrichtigungs-E-Mail an. Hier haben wir die Standardvorlage ausgewählt: **[!UICONTROL Benachrichtigung bezüglich lokaler Validierungen]**.
 1. Definieren Sie außerdem den **[!UICONTROL Validierungstyp]**. Im vorliegenden Beispiel wurde die Standardoption beibehalten, d. h. die Validierung muss spätestens 3 Tage nach dem Unterbreitungsdatum erfolgen, andernfalls werden die nicht validierten Empfänger beim Versand nicht berücksichtigt.
 
 Die von der Aktivität **[!UICONTROL Lokale Validierung]** an lokale Verantwortliche gesendete Benachrichtigung stellt sich wie folgt dar:
@@ -154,7 +154,7 @@ Die von der Aktivität **[!UICONTROL Lokale Validierung]** an lokale Verantwortl
 
 ### Warten {#wait}
 
-Die Warteaktivität verzögert den Start der zweiten lokalen Validierungsaktivität, die die Versandreaktionen-Benachrichtigung sendet. Im **[!UICONTROL Dauer]** eingeben. **[!UICONTROL 5d]** Wert (5 Tage). Die von den Empfängern innerhalb von 5 Tagen nach dem Versand durchgeführten Aktionen werden in die Feedback-Benachrichtigung aufgenommen.
+Die Warteaktivität verzögert den Start der zweiten Validierungsaktivität, welche die Versandreaktionen-Benachrichtigungen versendet. Im Feld **[!UICONTROL Wartezeit]** wurde hier **[!UICONTROL 5T]**, also 5 Tage, angegeben. Auf diese Weise werden die Empfängerreaktionen der nächsten fünf Tage in der Versandreaktionen-Benachrichtigung berücksichtigt.
 
 ![](assets/local_validation_workflow_3.png)
 
@@ -186,7 +186,7 @@ Eine weitere Zugriffsmöglichkeit besteht über den Tab **[!UICONTROL Validierun
 
 ![](assets/local_validation_admin_2.png)
 
-Wählen Sie die zu überwachende Aufgabe aus und klicken Sie auf die Schaltfläche **[!UICONTROL Detail]** Schaltfläche. Die **[!UICONTROL Allgemein]** im Tab Lokale Validierung der Aufgabe Informationen zur Aufgabe anzeigen. Bei Bedarf können Sie die Validierungs- und Erinnerungsdaten ändern.
+Markieren Sie die zu prüfende Aufgabe und klicken Sie auf die Schaltfläche **[!UICONTROL Detail]**. Im **[!UICONTROL Allgemein]**-Tab der Aufgabe werden die wichtigsten Informationen zur Aufgabe angezeigt. Es besteht des Weiteren die Möglichkeit, die Validierungs-Deadline und das Erinnerungsdatum zu ändern.
 
 ![](assets/local_validation_admin_3.png)
 
@@ -202,7 +202,7 @@ Im Tab **[!UICONTROL Verteilung]** der Aufgabe werden die Validierungslogs und -
 
 ![](assets/local_validation_admin_4.png)
 
-Wählen Sie ein Validierungsprotokoll aus und klicken Sie auf die Schaltfläche **[!UICONTROL Detail]** -Schaltfläche, um weitere Informationen anzuzeigen. Die **[!UICONTROL Allgemein]** im lokalen Validierungsprotokoll allgemeine Protokollinformationen anzeigen. Sie können auch den Genehmigungsstatus ändern.
+Markieren Sie ein Validierungslog und klicken Sie auf die Schaltfläche **[!UICONTROL Details...]** für genauere Informationen. Die Registerkarte **[!UICONTROL Allgemein]** des Validierungslogs zeigt allgemeine Log-Informationen an. Darüber hinaus kann der Validierungsstatus geändert werden.
 
 ![](assets/local_validation_admin_5.png)
 

@@ -6,9 +6,9 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Web Forms
 exl-id: 0cbb8e4c-8cb4-4dd7-ad09-b8b3165c19a8
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '235'
-ht-degree: 57%
+ht-degree: 100%
 
 ---
 
@@ -30,11 +30,11 @@ Dadurch öffnet sich ein Fenster zur Erstellung von Webanwendungen. Dort können
 
 ## Neue Formularvorlage erstellen {#create-a-new-form-template}
 
-Um eine Webformularvorlage zu erstellen, klicken Sie mit der rechten Maustaste auf die Liste der Webanwendungsvorlagen und wählen Sie **[!UICONTROL Neu]**. Sie können auch die **[!UICONTROL Neu]** oberhalb der Vorlagenliste.
+Um eine Web-Formularvorlage zu erstellen, klicken Sie mit der rechten Maustaste auf die Liste der Web-Anwendungsvorlagen und wählen Sie **[!UICONTROL Neu]**. Sie können auch die Schaltfläche **[!UICONTROL Neu]** oberhalb der Vorlagenliste verwenden.
 
 ![](assets/s_ncs_admin_survey_createtemplate.png)
 
-Geben Sie den Namen der Vorlage ein. Im **[!UICONTROL Instanzordner]** auswählen, den Ordner, in dem die auf dieser Vorlage basierenden Webformulare gespeichert werden. Die **[!UICONTROL Natur]** -Feld können Sie beschreibende Informationen hinzufügen, um Ihre verschiedenen Webanwendungsvorlagen zu sortieren und/oder zu filtern.
+Geben Sie den Namen der Vorlage ein. Wählen Sie im Feld **[!UICONTROL Instanzordner]** den Ordner aus, in dem die auf dieser Vorlage basierenden Webformulare gespeichert werden sollen. Über das Feld **[!UICONTROL Art]** können Sie eine Beschreibung zur Sortierung und/oder Filterung der unterschiedlichen Webanwendungsvorlagen hinzufügen.
 
 ![](assets/s_ncs_admin_survey_createtemplate_details.png)
 

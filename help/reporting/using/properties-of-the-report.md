@@ -6,9 +6,9 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Reporting, Monitoring
 exl-id: dfa9d329-1086-4f6d-9d03-df159cad5495
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '460'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -53,7 +53,7 @@ Mögliche Optionen sind:
 
 ## Übersetzen des Berichts {#report-localization}
 
-Sie können die Sprachen konfigurieren, in die der Bericht übersetzt werden soll. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Lokalisierung]** Registerkarte.
+Die Sprachen, in die der Bericht übersetzt werden soll, können konfiguriert werden. Klicken Sie hierzu auf den Tab **[!UICONTROL Lokalisierung]**.
 
 ![](assets/s_ncs_advuser_report_properties_06.png)
 

@@ -7,9 +7,9 @@ feature: Email
 role: User, Developer, Data Engineer
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '990'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -95,7 +95,7 @@ Zusätzlich zum Standardmodus stehen die folgenden Optionen zur Verfügung:
 
 * **[!UICONTROL Mirrorseitenerzeugung forcieren]**: Erstellt eine Mirror-Seite, selbst wenn im Versandinhalt kein entsprechender Link enthalten ist.
 * **[!UICONTROL Keine Mirrorseite erzeugen]**: Erstellt keine Mirror-Seite, selbst wenn im Versandinhalt der entsprechende Link enthalten ist.
-* **[!UICONTROL Erzeugt eine Mirrorseite, auf die nur die Nachrichtenkennung zugreifen kann]**: Diese Option ermöglicht den Zugriff auf den Inhalt der Mirrorseite mit Personalisierungsinformationen im Versandlog-Fenster. Klicken Sie dazu nach dem Ende des Versands auf die Schaltfläche **[!UICONTROL Versand]** und wählen Sie die Zeile des Empfängers aus, dessen Mirrorseite Sie sehen möchten. Klicken Sie auf **[!UICONTROL Mirrorseite für diese Nachricht anzeigen...]** -Link.
+* **[!UICONTROL Von der Nachrichtenkennung aus zugängliche Mirrorseite erzeugen]**: Diese Option ermöglicht den Zugriff auf den Inhalt der Mirror-Seite einschließlich aller Personalisierungsinformationen von den Versandlogs aus. Klicken Sie hierfür nach Durchführung des Versands auf die Registerkarte **[!UICONTROL Versand]** und wählen Sie die Zeile des Empfängers aus, dessen Mirrorseite Sie ansehen möchten. Klicken Sie dann auf den Link **[!UICONTROL Mirrorseite dieser Nachricht anzeigen...]**.
 
   ![](assets/s_ncs_user_wizard_miror_page_link.png)
 
@@ -117,7 +117,7 @@ Auf der Registerkarte **[!UICONTROL SMTP]** der Versandeigenschaften lässt sich
 
 Standardmäßig gehen Bounce Messages im [Standard-Fehlerpostfach der Plattform](../../installation/using/deploying-an-instance.md#parameters-for-delivered-emails-parameters-for-delivered-emails) ein. Es besteht jedoch die Möglichkeit, für einen Versand durch Abwählen der Standardoption eine spezifische Fehleradresse anzugeben.
 
-Sie können auch eine bestimmte Adresse auf diesem Bildschirm definieren, um die Gründe für Bounce Messages zu untersuchen, die nicht automatisch von der Anwendung qualifiziert werden konnten. Für jedes dieser Felder muss die **Personalisierte Felder hinzufügen** -Symbol ermöglicht das Hinzufügen von Personalisierungsparametern.
+Sie können eine weitere Adresse angeben, die es ermöglicht, die Unzustellbarkeitsursache derjenigen E-Mails zu untersuchen, bei denen das Programm sie nicht automatisch erkannt hat. Bei beiden Feldern können Sie durch Klick auf das entsprechende Symbol **Personalisierungsfelder hinzufügen**.
 
 ![](assets/s_ncs_user_email_del_properties_smtp_tab.png)
 

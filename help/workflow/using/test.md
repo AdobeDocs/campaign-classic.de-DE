@@ -5,9 +5,9 @@ description: Erfahren Sie mehr über die Workflow-Aktivität "Test".
 feature: Workflows
 exl-id: 6f246d56-01c8-43f5-b12b-c40d258b93c8
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '192'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -15,9 +15,9 @@ ht-degree: 82%
 
 
 
-Ein **Test** aktiviert die erste Transition, welche die ihm zugeordneten Bedingungen erfüllt. Wenn keine der Bedingungen &#39;wahr&#39; zurückgibt, wird die **[!UICONTROL Standard-Verzweigung]** aktiviert, vorrausgesetzt, die entsprechende Option wurde angekreuzt.
+Eine Aktivität vom Typ **Test** aktiviert die erste Transition, die die mit ihr verbundene Bedingung erfüllt. Wenn keine Bedingung erfüllt ist und die Option **[!UICONTROL Standard-Verzweigung verwenden]** angekreuzt ist, wird der Standardübergang aktiviert.
 
-Eine Bedingung ist ein JavaScript-Ausdruck, der als &quot;true&quot;oder &quot;false&quot;ausgewertet werden muss. Um den Ausdruck einzugeben, klicken Sie auf das Symbol rechts neben dem Namen der Bedingung und wählen Sie **[!UICONTROL Bearbeiten...]**.
+Eine Bedingung ist ein JavaScript-Ausdruck, der als &#39;true&#39; oder &#39;false&#39; ausgewertet werden muss. Um den Ausdruck einzugeben, klicken Sie auf das Symbol rechts neben dem Namen der Bedingung und wählen Sie **[!UICONTROL Bearbeiten…]**.
 
 ![](assets/edit_test.png)
 

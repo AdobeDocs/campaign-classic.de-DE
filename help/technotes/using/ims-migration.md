@@ -5,9 +5,9 @@ feature: Technote
 role: Admin
 exl-id: 1a409daf-57be-43c9-a3d9-b8ab54c88068
 source-git-commit: c8ff250c1e4013d4c8271a3a388ddbabcfaeea38
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1748'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ Diese Campaign-Versionen werden im Abschnitt [Versionshinweise](../../rn/using/l
 
 * Campaign-gehostete und Managed Services-Kundinnen und -Kunden
 
-  Für API-Aufrufe in die Message-Center-Instanz(en) muss das Produktprofil (siehe unten) während der Aktualisierung auf Campaign v7.3.5 (oder andere) erstellt werden. [Kompatible Version der IMS-Migration](#ims-versions-tech)) oder während der Bereitstellung der Instanz. Wenn das Produktprofil nicht angezeigt wird, wenden Sie sich an Ihren Transition Manager oder an den Support, um das Produktprofil zu erhalten, bevor Sie mit der IMS-Migration beginnen. Dieses Produktprofil hat den Namen:
+  Für API-Aufrufe in die Message Center-Instanzen sollte das Produktprofil (unten beschrieben) während des Upgrades auf Campaign v7.3.5 (oder eine andere [mit der IMS-Migration kompatible Version](#ims-versions-tech)) oder während der Bereitstellung der Instanz erstellt worden sein. Wenn das Produktprofil nicht angezeigt wird, wenden Sie sich an Ihren Transition Manager oder an den Support, um das Produktprofil zu erhalten, bevor Sie mit der IMS-Migration beginnen. Dieses Produktprofil hat den Namen:
 
   `campaign - <your campaign marketing instance> - messagecenter`
 
@@ -116,9 +116,9 @@ When the API has been successfully connected, you can access the newly generated
 
 Wie im Abschnitt „Voraussetzungen“ beschrieben, müssen Sie die entsprechenden Produktprofile zuweisen, die das Projekt verwenden soll. In diesem Schritt wählen Sie die Produktprofile, die das zu erstellende technische Konto verwenden soll.
 
-Wenn dieses technische Konto zum Ausführen von API-Aufrufen an die Message-Center-Instanz verwendet wird, wählen Sie für die mit Message Center verknüpfte Marketinginstanz das Adobe-Produktprofil aus, das mit messageCenter endet.
+Wenn dieses technische Konto zum Ausführen von API-Aufrufen an die Message-Center-Instanz verwendet wird, wählen Sie für die mit Message Center verknüpfte Marketing-Instanz das Adobe-Produktprofil aus, das mit messageCenter endet.
 
-Wählen Sie für API-Aufrufe an die Marketing-Instanz(en) das Produktprofil aus, das der Instanz entspricht, und z. B. Benutzergruppe `campaign - <your campaign marketing instance> - Admin`.
+Wählen Sie für API-Aufrufe an die Marketing-Instanz(en) das Produktprofil aus, das der Instanz und der Benutzergruppe entspricht, z. B. für `campaign - <your campaign marketing instance> - Admin`.
 
 Klicken Sie nach Auswahl der gewünschten Produktprofile auf **Konfigurierte API speichern** unten auf dem Bildschirm.
 
@@ -166,9 +166,9 @@ Um die Verbindung zu testen, führen Sie die Schritte aus, die im [Handbuch zu d
 
 ### Schritt 8: Aktualisieren der API-Integrationen von Drittanbieterfirmen {#ims-migration-step-8}
 
-Sie müssen jetzt alle API-Integrationen, die Aufrufe an Adobe Campaign tätigen, aktualisieren, um das neu erstellte technische Konto zu verwenden.
+Sie müssen jetzt alle API-Integrationen aktualisieren, die Aufrufe an Adobe Campaign tätigen, um das neu erstellte technische Konto zu verwenden.
 
-Weitere Informationen zu den Schritten zur API-Integration finden Sie in den folgenden Codebeispielen.
+Weitere Informationen zu den Schritten zur API-Integration finden Sie in den folgenden Code-Beispielen.
 
 >[!BEGINTABS]
 

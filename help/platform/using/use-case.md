@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: filtering-data
 exl-id: 85ded096-7d27-41b3-8ef2-93f5ca8def82
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '285'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -57,6 +57,6 @@ Gehen Sie wie folgt vor:
 
    ![](assets/s_ncs_user_filter_on_events.png)
 
-   Der Name des aktuellen Filters wird oberhalb der Liste angezeigt. Um den Filter abzubrechen, klicken Sie auf die Schaltfläche **[!UICONTROL Filter löschen]** Symbol.
+   Der Name des aktuellen Filters wird oberhalb der Liste angezeigt. Um den Filter aufzuheben, klicken Sie auf das Symbol **[!UICONTROL Diesen Filter entfernen]**.
 
    ![](assets/s_ncs_user_filter_on_subscriptions.png)

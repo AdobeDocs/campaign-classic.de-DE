@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 9f1b0974-f8bd-430f-88fe-9c09b0074d3b
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '504'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -36,13 +36,13 @@ Als gehosteter Kunde können Sie von einer jährlichen Campaign-Aktualisierung p
 
 ## 2. Was ist der Workflow &quot;Bereinigung der Datenbank&quot;? {#what-is-the-database-cleanup-workflow-}
 
-Der Datenbankbereinigungs-Workflow löscht veraltete Daten, um das exponentielle Anwachsen der Datenbank zu vermeiden. Dieser integrierte technische Workflow wird automatisch ohne Benutzereingriff ausgelöst. Der Zugriff erfolgt über die **[!UICONTROL Administration > Betreibung > Technische Workflows]** Knoten des Campaign-Explorers.
+Der Workflow zur Datenbankbereinigung löscht veraltete Daten, um ein exponentielles Anwachsen der Datenbank zu vermeiden. Dieser integrierte technische Workflow wird automatisch ohne Benutzereingriff ausgelöst. Der Zugriff erfolgt über den Knoten **[!UICONTROL Administration > Betreibung > Technische Workflows]** von Campaign Explorer.
 
 [Hier erfahren Sie mehr](../../production/using/database-cleanup-workflow.md) über den Datenbankbereinigungs-Workflow.
 
 ## 3. Wie kann ich Sicherheitszonen konfigurieren? {#how-can-i-configure-security-zones-}
 
-Die Self-Service-Oberfläche für Sicherheitszonen kann verwendet werden, um Einträge in der VPN-Sicherheitszonen-Konfiguration einer Adobe Campaign Classic-Bereitstellung zu verwalten. Lesen [diesem Abschnitt](../../installation/using/security-zones.md) , um mehr über Sicherheitszonen in Campaign zu erfahren.
+Die Konfiguration der VPN-Sicherheitszone in Adobe Campaign Classic erfolgt über die Sicherheitszonen-Benutzeroberfläche durch den Administrator. Lesen Sie [diesen Abschnitt](../../installation/using/security-zones.md), um mehr über Sicherheitszonen in Campaign zu erfahren.
 
 [Hier erfahren Sie mehr](https://helpx.adobe.com/de/campaign/kb/configuring-security-zones-self-service.html) über die Sicherheitszonen-Benutzeroberfläche.
 

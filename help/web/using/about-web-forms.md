@@ -6,9 +6,9 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Landing Pages, Web Forms
 exl-id: 63602bed-ace6-4632-a735-5d268a7d72d0
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '521'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -77,8 +77,8 @@ In den folgenden Abschnitten wird beschrieben, wie Sie den Inhalt und das Layout
 
 >[!NOTE]
 >
->* Während des Seitenentwurfs können Sie das endgültige Rendering im **[!UICONTROL Vorschau]** Registerkarte. Um Änderungen anzuzeigen, speichern Sie das Formular zuerst. Alle Fehler werden im **[!UICONTROL Protokoll]** Registerkarte.
->* Um sicherzustellen, dass die Seitenanzeige und die Informationsspeicherung in der gewünschten Reihenfolge ablaufen, aktivieren Sie den Debug-Modus im Webformular. Gehen Sie dazu zum **[!UICONTROL Vorschau]** Unterregisterkarte und überprüfen Sie die **[!UICONTROL Aktivieren des Debug-Modus]** Feld: Alle erfassten Informationen und möglichen Ausführungsfehler werden am unteren Rand jeder Seite angezeigt.
+>* Während Sie die Seite erstellen, können Sie sich auf der Registerkarte **[!UICONTROL Vorschau]** das endgültige Rendering ansehen. Um Änderungen anzuzeigen, muss das Formular zuerst gespeichert werden. Etwaige Fehler werden im Tab **[!UICONTROL Log]** angezeigt.
+>* Damit die Anzeige der Seiten und die Speicherung der Informationen in der richtigen Reihenfolge ablaufen, aktivieren Sie im Webformular den Debug-Modus. Gehen Sie dazu zur Unter-Registerkarte **[!UICONTROL Vorschau]** und überprüfen Sie das Feld **[!UICONTROL Debug-Modus aktivieren]**: Alle erfassten Informationen und möglichen Ausführungsfehler werden am unteren Rand jeder Seite angezeigt.
 >
 
 ### Symbole der Symbolleiste verwenden {#using-the-icons-in-the-toolbar}

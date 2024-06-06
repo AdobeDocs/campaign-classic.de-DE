@@ -8,9 +8,9 @@ hide: true
 hidefromtoc: true
 exl-id: ade4c857-9233-4bc8-9ba1-2fec84b7c3e6
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '413'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ Die hauptsächlichen Verwendungskontexte der Cubes sind folgende:
 
   ![](assets/cube_create_new.png)
 
-  Cubes sehen aus wie Vorlagen, auf deren Grundlage Berichte erstellt werden. Klicken Sie nach Auswahl einer Vorlage auf **[!UICONTROL Erstellen]** um den entsprechenden Bericht zu konfigurieren und anzuzeigen.
+  Cubes sehen aus wie Vorlagen, auf deren Grundlage Berichte erstellt werden. Klicken Sie nach der Auswahl einer Vorlage auf die Schaltfläche **[!UICONTROL Erstellen]**, um den entsprechenden Bericht zu konfigurieren und zu visualisieren.
 
   Sie können die Kennzahlen anpassen, den Anzeigemodus ändern oder eine Tabelle konfigurieren und dann den Bericht über die zentrale Schaltfläche erzeugen.
 
@@ -56,7 +56,7 @@ Die hauptsächlichen Verwendungskontexte der Cubes sind folgende:
 
   ![](assets/s_advuser_query_using_a_cube.png)
 
-* Sie können auch eine auf einem Cube basierende Pivot-Tabelle in eine beliebige Seite eines Berichts einfügen. Referenzieren Sie dazu den Cube, damit er auf der Registerkarte **[!UICONTROL Daten]** der Pivot-Tabelle auf der entsprechenden Seite verwendet wird.
+* Sie können außerdem eine auf einem Cube basierte Pivot-Tabelle in eine beliebige Seite eines Berichts einfügen. Referenzieren Sie dazu den Cube, damit er auf der Registerkarte **[!UICONTROL Daten]** der Pivot-Tabelle auf der entsprechenden Seite verwendet wird.
 
   ![](assets/s_advuser_cube_in_report.png)
 

@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: advanced-parameters
 exl-id: e1d7d7c2-61e7-40d6-a8ce-69bc976f8c73
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '523'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -121,7 +121,7 @@ return aReturnedProps;
 
 Diese Art Erweiterungspunkt ermöglicht die Abfrage eines externes Moduls, um eine Produktliste in Zusammenhang mit einem Angebot auszuwählen. Die Abfrage erfolgt nach Anwendung der Eignungsregeln, aber vor den Typologieregeln.
 
-Vorab sollte der Integrator die Vorschläge erweitern **PropositionRcp** -Schema mit den zusätzlichen Informationen zum Produkt. Um anzugeben, wo diese Daten gespeichert werden sollen, muss eine **[!UICONTROL Vorgeschlagener Vorschlag]** -Link ist im **[!UICONTROL Speicherung]** Registerkarte des Leerzeichens
+Der Integrator muss zuvor das Vorschlagsschema **PropositionRcp** um die mit dem Vorschlag zu speichernden zusätzlichen Produktdaten erweitern. Über die Relation **[!UICONTROL Aktueller Vorschlag]** auf der Registerkarte **[!UICONTROL Speicherung]** der Platzierung lässt sich die Speicherung dieser Daten (z. B. Produktnummer) definieren.
 
 ![](assets/interaction_hooks_3.png)
 

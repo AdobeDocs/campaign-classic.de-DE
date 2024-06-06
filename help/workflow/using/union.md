@@ -5,9 +5,9 @@ description: Erfahren Sie mehr über die Workflow-Aktivität "Vereinigung".
 feature: Workflows, Targeting Activity
 exl-id: 1cda3146-c333-4743-a871-c44583b6e5b2
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '316'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 

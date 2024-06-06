@@ -5,9 +5,9 @@ description: Erfahren Sie mehr über die Workflow-Aktivität "Planung".
 feature: Workflows
 exl-id: 30a9bd2a-afb1-481c-ab5f-5acebd9cbb5a
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '339'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 

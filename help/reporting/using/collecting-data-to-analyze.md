@@ -6,9 +6,9 @@ feature: Reporting, Monitoring
 badge: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 exl-id: cf621374-88f9-4def-8bea-87e0ea69ecd3
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '533'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ In der Abfrage-Aktivität stehen drei verschiedene Methoden zur Verfügung:
 1. Analyse der Daten aus einer Liste;
 1. Verwendung der Daten eines existierenden Cubes.
 
-Die Wahl der Methode hängt von der Art der Berechnung, dem Datenvolumen und ihrer Beständigkeit ab. Alle diese Parameter müssen sorgfältig geprüft werden, um zu vermeiden, dass die Adobe Campaign-Datenbank überlastet wird, und um die Erzeugung und Bearbeitung der erstellten Berichte zu optimieren. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../reporting/using/best-practices.md#optimizing-report-creation).
+Die Wahl der einen oder der anderen Methode hängt vom auszuführenden Berechnungstyp, dem zu bewegenden Datenvolumen, ihrer Beständigkeit und mehr ab. Diese Parameter müssen genau durchdacht werden, um die Adobe Campaign-Datenbank nicht zu überlasten und die Generierung und Änderung der erstellten Berichte zu optimieren. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../reporting/using/best-practices.md#optimizing-report-creation).
 
 In jedem Fall werden die Daten über eine Aktivität vom Typ **[!UICONTROL Abfrage]** abgerufen.
 
@@ -56,7 +56,7 @@ Sie können einen Cube zur Definition der Abfrage auswählen.
 
 ![](assets/reporting_query_from_cube.png)
 
-Cubes ermöglichen es, die Kapazitäten der Datenexploration und -analyse zu erweitern und gleichzeitig die Konfiguration von Berichten und Tabellen für Endbenutzer zu vereinfachen: Wählen Sie einfach einen existierenden, vollständig konfigurierten Cube aus und verwenden Sie dessen Berechnungen, Messungen und Statistiken. Weitere Informationen zur Erstellung von Cubes finden Sie unter [diesem Abschnitt](../../reporting/using/ac-cubes.md).
+Cubes ermöglichen es, die Kapazitäten der Datenexploration und-analyse zu erweitern und gleichzeitig die Konfiguration der Berichte und Tabellen für die Endbenutzer zu vereinfachen: Wählen Sie einfach einen existierenden, vollständig konfigurierten Cube aus, um dessen Berechnungen, Messungen und Statistiken zu nutzen. Weiterführende Informationen zum Erstellen von Cubes finden Sie in [diesem Abschnitt](../../reporting/using/ac-cubes.md).
 
 Klicken Sie auf den Link **[!UICONTROL Abfrage bearbeiten...]** und wählen Sie die Indikatoren aus, die im Bericht angezeigt oder genutzt werden sollen.
 

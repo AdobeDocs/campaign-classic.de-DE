@@ -5,9 +5,9 @@ description: Erfahren Sie, wie Sie Workflow-Berechtigungen verwalten.
 feature: Workflows
 exl-id: 88995fb3-d336-4355-acd4-33118dd0e2b0
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '336'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -33,10 +33,10 @@ Folgende Benutzergruppen sind im Zusammenhang mit Workflows von Bedeutung:
 
 ## Spezifische Berechtigungen {#named-rights}
 
-Nur die spezifische Berechtigung WORKFLOW bezieht sich auf Workflows: Sie ermöglicht die Erstellung, den Start und das Anhalten von Workflows. Leserechte für die Workflow-Datei sind erforderlich, damit die spezifische Berechtigung angewendet werden kann. Bei Zielgruppen-Workflows die Leseberechtigung auf der **[!UICONTROL Profile und Zielgruppen]** -Datei erforderlich ist.
+Nur die spezifische Berechtigung WORKFLOW bezieht sich auf Workflows: Sie ermöglicht die Erstellung, den Start und das Anhalten von Workflows. Leserechte für die Workflow-Datei sind erforderlich, damit die spezifische Berechtigung angewendet werden kann. Für Zielgruppen-Workflows ist außerdem der Lesezugriff auf den Ordner **[!UICONTROL Profile und Zielgruppen]** erforderlich.
 
 ## Workflow-Ausführungskonto {#workflow-execution-account}
 
 Das Ausführungskonto eines Workflows wird auf Niveau der Vorlage definiert. Das Ausführungskonto ermöglicht die direkte Zuordnung der Rechte zum Workflow, unabhängig vom Adobe-Campaign-Benutzer, der die Ausführung startet. Standardmäßig wird jeder Workflow mit den Rechten des Benutzers ausgeführt, der ihn gestartet hat.
 
-Gehen Sie zur Zuordnung eines Ausführungskontos zu einem Workflow in die Liste der Workflow-Vorlagen und klicken Sie mit der rechten Maustaste auf die dem Workflow entsprechende Vorlage. Auswählen **[!UICONTROL Aktion > Ausführungskonto ändern...]** und wählen Sie das zu verwendende Konto aus.
+Gehen Sie zur Zuordnung eines Ausführungskontos zu einem Workflow in die Liste der Workflow-Vorlagen und klicken Sie mit der rechten Maustaste auf die dem Workflow entsprechende Vorlage. Verwenden Sie die Option **[!UICONTROL Aktionen > Ausführungskonto ändern...]** und wählen Sie das zu verwendende Konto aus.

@@ -6,9 +6,9 @@ role: User
 feature: Campaigns, Monitoring
 exl-id: c2b523ac-e900-4db8-85b0-dafc6ddb3eca
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '258'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ In jeder Kampagne können über den Tab **[!UICONTROL Tracking]** die ausgeführ
 
   ![](assets/s_ncs_user_op_edit_exe_tab_a.png)
 
-* Die **[!UICONTROL Sendungen]** Der Untertab enthält alle Sendungen der Kampagne, die von dieser Ansicht aus bearbeitet werden können. Wählen Sie dazu einen Versand aus und klicken Sie auf das Symbol **[!UICONTROL Details]**.
+* In der Unterregisterkarte **[!UICONTROL Sendungen]** werden alle Sendungen der Kampagne zusammengefasst. Sie können aus dieser Übersicht heraus geöffnet werden. Wählen Sie dazu einen Versand aus und klicken Sie auf das Symbol **[!UICONTROL Details]**.
 
   ![](assets/s_ncs_user_op_edit_exe_tab_b.png)
 
@@ -30,7 +30,7 @@ In jeder Kampagne können über den Tab **[!UICONTROL Tracking]** die ausgeführ
 
   ![](assets/s_ncs_user_op_edit_exe_tab_e.png)
 
-* Die Workflows, die zum Generieren von Nachrichten für Dienstleister erstellt wurden, werden im Abschnitt **[!UICONTROL Bearbeitungsvorgänge bezüglich der Dienstleister]** Unterregisterkarte. Klicken Sie auf **[!UICONTROL Detail]** -Symbol, um den ausgewählten Workflow anzuzeigen.
+* Die zur Generierung der Nachrichten an Dienstleister erstellten Workflows werden im Untertab **[!UICONTROL Bearbeitungsvorgänge bezüglich der Dienstleister]** aufgelistet. Klicken Sie auf das Symbol **[!UICONTROL Details]**, um den ausgewählten Workflow anzuzeigen.
 
   ![](assets/s_ncs_user_op_edit_exe_tab_d.png)
 

@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: reports
 exl-id: 04d4791b-a1dd-4361-a469-6f5aff0f41b8
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '151'
-ht-degree: 57%
+ht-degree: 100%
 
 ---
 
@@ -24,6 +24,6 @@ Beim Öffnen des Berichts entsprechen die standardmäßig angezeigten Daten der 
 
 ![](assets/messagecenter_reporting_001.png)
 
-Sie können die für jeden Ereignistyp spezifischen Daten für jeden Zeitraum anzeigen. Die **[!UICONTROL Veranstaltungen]** -Spalte entspricht der Anzahl der pro Kontrollinstanz empfangenen Ereignisse. Die Anzahl der Ereignisse, die in personalisierte Transaktionsnachrichten umgewandelt werden, wird im Abschnitt **[!UICONTROL Gesendet]** Spalte.
+Sie haben zudem die Möglichkeit, für jeden Zeitraum die Daten jedes Ereignisses zu visualisieren. Die Spalte **[!UICONTROL Ereignisse]** entspricht der Anzahl von der Kontrollinstanz empfangenen Ereignisse. In der Spalte **[!UICONTROL Gesendet]** werden die als Reaktion auf die Ereignisse gesendeten personalisierten Transaktionsnachrichten berechnet.
 
-Die **[!UICONTROL Ereignisverlauf]** ist ein Bericht vom Typ Pivot-Tabelle. Weitere Informationen hierzu finden Sie im Abschnitt [Populationen analysieren](../../reporting/using/about-descriptive-analysis.md) Abschnitt.
+Der Bericht **[!UICONTROL Ereignisverlauf]** ist eine Pivot-Tabelle. Nähere Informationen hierzu erhalten Sie im Abschnitt [Populationen analysieren](../../reporting/using/about-descriptive-analysis.md).

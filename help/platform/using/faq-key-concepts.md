@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: f0d884ae-0789-4ad9-a8fa-adeffbb560ea
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '828'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -79,7 +79,7 @@ So bieten Workflows beispielsweise die Möglichkeit, Dateien von einem Server he
 
 Oder benachrichtigen Sie andere Benutzer und fordern Sie sie dazu auf, Vorgänge zu validieren oder an Abstimmungen teilzunehmen. Auf diese Weise können Versandaktionen erstellt und anderen Benutzern vor dem Nachrichtenversand Aufgaben wie die Gestaltung des Inhalts, die Bestimmung der Zielgruppe und die Validierung von Testsendungen zugewiesen werden.
 
-[Hier erfahren Sie mehr dazu](../../workflow/using/about-workflows.md) über Workflows. Sie können auch [Best Practices für Workflows](../../workflow/using/building-a-workflow.md).
+[Hier erfahren Sie mehr](../../workflow/using/about-workflows.md) zu Workflows. Informationen über [Best Practices bei Workflows finden Sie hier](../../workflow/using/building-a-workflow.md).
 
 ## Wie erstelle und sende ich die erste E-Mail? {#how-to-create-and-send-a-first-email-}
 
@@ -117,7 +117,7 @@ Lesen Sie die [Checkliste zur Sicherheitskonfiguration](https://helpx.adobe.com/
 
 ## Wie übersetze ich eine Fehlermeldung? {#how-to-translate-an-error-message-}
 
-Eine Fehlermeldung wird in einer Fremdsprache angezeigt? Alle Fehlermeldungen und deren Übersetzung werden in [diese Seite](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=de).
+Eine Fehlermeldung wird in einer Fremdsprache angezeigt? Alle Fehlermeldungen und deren Übersetzung werden auf [dieser Seite](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=de) aufgelistet.
 
 ## Kann ich in Campaign ein Web-Formular erstellen und Antworten sammeln? {#can-i-create-a-webform-and-collect-answers-in-campaign-}
 

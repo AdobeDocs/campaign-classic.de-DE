@@ -6,9 +6,9 @@ role: User, Data Engineer
 feature: Typology Rules, Campaigns
 exl-id: 5a5f26f6-38da-4488-aadb-81fcb5359331
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '393'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Mehrere standardmäßige Regeln führen grundlegende Kontrollen durch. Es handel
 
 ## Kontrollregeln erstellen {#creating-a-control-rule}
 
-Sie können nach Bedarf neue Kontrollregeln erstellen. Erstellen Sie dazu eine **[!UICONTROL Kontrolle]** Typologieregel und geben Sie die Kontrollformel in SQL im **[!UICONTROL Code]** Registerkarte.
+Sie können entsprechend Ihren Bedürfnissen neue Kontrollregeln hinzufügen. Erstellen Sie hierfür eine Typologieregel vom Typ **[!UICONTROL Kontrolle]** und geben Sie die SQL-Kontrollformel im Tab **[!UICONTROL Code]** ein.
 
 **Beispiel:**
 
@@ -39,7 +39,7 @@ Im folgenden Beispiel wird eine Regel erstellt, die den Versand eines Angebots a
 
 Gehen Sie wie folgt vor:
 
-1. Erstellen Sie eine **[!UICONTROL Kontrolle]** Typologieregel. Wählen Sie eine **[!UICONTROL Warnung]** Warnhinweisebene.
+1. Erstellen Sie eine Typologieregel vom Typ **[!UICONTROL Kontrolle]**. Wählen Sie das Niveau **[!UICONTROL Warnung]** aus.
 
    ![](assets/campaign_opt_create_control_01.png)
 

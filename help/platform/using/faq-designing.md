@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 48926e87-03d9-4aa0-89cb-e3fb4f99c1f5
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '341'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -52,15 +52,15 @@ Die mit Adobe Campaign versendeten Nachrichten können auf verschiedene Art und 
 
 * Das Nachrichtenformat personalisieren. [Hier erfahren Sie mehr darüber](../../delivery/using/defining-the-email-content.md#message-content).
 * Dynamische Personalisierungsfelder einfügen. [Hier erfahren Sie mehr darüber](../../delivery/using/personalization-fields.md).
-* Fügen Sie vordefinierte Gestaltungsbausteine ein oder erstellen Sie einen eigenen Baustein. [Hier erfahren Sie mehr darüber](../../delivery/using/personalization-blocks.md).
-* Bedingte Inhalte erstellen. [Hier erfahren Sie mehr dazu](../../delivery/using/conditional-content.md) und lesen [diesem Abschnitt](../../delivery/using/conditional-content.md).
+* Einfügen vorkonfigurierter Gestaltungsbausteine oder Erstellen eigener Bausteine. [Hier erfahren Sie mehr darüber](../../delivery/using/personalization-blocks.md).
+* Bedingte Inhalte erstellen. [Hier](../../delivery/using/conditional-content.md) und [in diesem Abschnitt](../../delivery/using/conditional-content.md) erfahren Sie mehr dazu.
 
 ## Kann ich mehrsprachige Nachrichten senden? {#can-i-send-multilingual-messages-}
 
 Sie können an Empfänger je nach deren Einstellungen und deren Land mehrsprachige Nachrichten senden.
 
-Zu diesem Zweck können Sie den Nachrichteninhalt lokalisieren und entsprechend dem Empfängerprofil mithilfe von [Bedingungen](../../delivery/using/conditional-content.md). Sie können auch [Workflows](../../workflow/using/split.md) , um die Version der zu sendenden Nachricht in Abhängigkeit von einem Test in der bevorzugten Sprache auszuwählen.
+Zu diesem Zweck können Sie die Nachricht mithilfe der Option [Bedingungen](../../delivery/using/conditional-content.md) lokalisieren und entsprechend dem Empfängerprofil personalisieren. Sie können auch mithilfe von [Workflows](../../workflow/using/split.md) die Version der zu sendenden Nachricht auswählen und dabei die bevorzugte Sprache über einen Test ermitteln.
 
 ## Wie kann ich ein Web-Formular übersetzen? {#how-can-i-localize-a-webform-}
 
-Sie können eine Webanwendung in mehrere Sprachen lokalisieren. Der Übersetzungsmechanismus wird im Abschnitt [diesem Abschnitt](../../web/using/translating-a-web-form.md).
+Sie können eine Web-Anwendung in mehrere Sprachen übersetzen. Das Verfahren zur Übersetzung wird in [diesem Abschnitt](../../web/using/translating-a-web-form.md) beschrieben.

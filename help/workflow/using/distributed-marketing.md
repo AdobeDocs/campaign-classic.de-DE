@@ -4,9 +4,9 @@ title: Dezentrales Marketing
 description: Erfahren Sie mehr über das Package "Dezentrales Marketing".
 feature: Workflows, Data Management, Distributed Marketing
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '69'
-ht-degree: 59%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Der folgende Workflow wird mit dem Modul **Dezentrales Marketing** installiert. 
   <tr> 
    <td> <span class="uicontrol">Bearbeitungsvorgänge des dezentralen Marketings</span> <br /> </td> 
    <td> <span class="uicontrol">centralLocalMgt</span> <br /> </td> 
-   <td> Dieser Workflow startet die Verarbeitung im Zusammenhang mit der Verwendung des dezentralen Marketing-Moduls. Es startet die Erstellung lokaler Kampagnen und verwaltet Benachrichtigungen im Zusammenhang mit Bestellungen und der Verfügbarkeit von Kampagnenkits.<br /> </td> 
+   <td> Führt die Vorgänge im Zusammenhang mit dem Distributed-Marketing-Modul aus. Erstellt lokale Kampagnen und verwaltet Benachrichtigungen in Bezug auf Bestellungen und der Verfügbarkeit von Kampagnenkits.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

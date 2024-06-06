@@ -6,9 +6,9 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: cb76f3dc-7f3a-49de-89cb-c106865ecb17
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '546'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ Dort finden Sie vier Symbole:
   >
   >Bei der Auswahl eines neuen Inhalts wird der aktuelle Inhalt automatisch ersetzt.
 
-* Die **Als Vorlage speichern** speichert den aktuellen Inhalt als Vorlage. Geben Sie den Titel und den internen Namen der Vorlage ein. Vorlagen werden im **[!UICONTROL Ressourcen > Vorlagen > Inhaltsvorlagen]** Knoten.
+* Mit dem Symbol **Als Vorlage speichern** können Sie den aktuellen Inhalt als Vorlage speichern. Geben Sie den Titel und den internen Namen der Vorlage ein. Vorlagen werden im Knoten **[!UICONTROL Ressourcen > Vorlagen > Inhaltsvorlagen]** gespeichert.
 
   ![](assets/dce_popup_savetemplate.png)
 
@@ -85,4 +85,4 @@ Diese Symbolleiste ist ein **Pop-up-Element** in der Benutzeroberfläche des DCE
 
 >[!CAUTION]
 >
->Gewisse Funktionen der Schaltfläche betreffen die Formatierung des HTML-Inhalts. Wenn die Seite jedoch ein CSS-Stylesheet enthält, wird die **instructions** aus dem Stylesheet **priority** über die in der Symbolleiste angegebenen Anweisungen.
+>Gewisse Funktionen der Schaltfläche betreffen die Formatierung des HTML-Inhalts. Wenn die betroffene Seite jedoch ein CSS-Stylesheet enthält, können sich die **Anweisungen** des Stylesheets als **vorrangig** erweisen.

@@ -5,9 +5,9 @@ description: Erfahren Sie, wie Sie die Workflow-Daten verwenden.
 feature: Workflows, Data Management
 exl-id: 5354d608-2fea-45f9-a0aa-11c7e965ab04
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '416'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -63,6 +63,6 @@ Auch im Rahmen eines E-Mail-Versands können Personalisierungsfelder auf Daten z
 
 ![](assets/s_advuser_add_data_email.png)
 
-Wenn ein Segmentcode in einer Zielgruppenbestimmungsaktivität angegeben wird, wird er einer bestimmten Spalte der Workflow-Tabelle hinzugefügt und zusammen mit den Personalisierungsfeldern angeboten. Um alle Personalisierungsfelder anzuzeigen, klicken Sie auf das **[!UICONTROL Target-Erweiterung > Sonstige...]** über die Personalisierungsschaltfläche zugänglich.
+Wenn ein Segment-Code in einer Zielgruppenbestimmungsaktivität angegeben wird, wird er einer bestimmten Spalte der Workflow-Tabelle hinzugefügt und zusammen mit den Personalisierungsfeldern angeboten. Klicken Sie zur Anzeige aller Personalisierungsfelder auf die entsprechende Schaltfläche im Versand und wählen Sie die Option **[!UICONTROL Erweiterung des Zieldatensatzes > Sonstige...]** aus.
 
 ![](assets/s_advuser_segment_code_select.png)

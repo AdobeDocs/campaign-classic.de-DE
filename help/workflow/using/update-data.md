@@ -5,9 +5,9 @@ description: Erfahren Sie mehr über die Workflow-Aktivität "Daten-Update".
 feature: Workflows, Targeting Activity, Data Management
 exl-id: 9f5735d2-73b8-469f-bc10-482c99cdd4a1
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '949'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -53,11 +53,11 @@ Es besteht auch die Möglichkeit, die Zuordnung manuell vorzunehmen, indem Sie d
 
 ![](assets/s_advuser_update_data_3.png)
 
-Wählen Sie alle zu aktualisierenden Felder aus und fügen Sie bei Bedarf Bedingungen hinzu, die von der Aktualisierung abhängen. Dies ist in der Spalte **[!UICONTROL Berücksichtigt wenn]** möglich. Bedingungen werden nacheinander und in der Reihenfolge der Liste angewendet. Mit den Pfeilen rechts können Sie die Reihenfolge der Aktualisierungen ändern.
+Wählen Sie alle zu aktualisierenden Felder aus und geben Sie bei Bedarf Bedingungen für die Aktualisierung an. Dies ist in der Spalte **[!UICONTROL Berücksichtigt wenn]** möglich. Die Bedingungen werden nacheinander, in Reihenfolge der Liste geprüft. Die Reihenfolge kann mithilfe der blauen Pfeile rechts der Tabelle angepasst werden.
 
 Ein Zielfeld kann mehrmals verwendet werden.
 
-Innerhalb eines **[!UICONTROL Einfügen oder Aktualisieren]** -Funktion können Sie die zu verwendende Kampagne entweder einzeln oder für jedes Feld auswählen. Wählen Sie dazu den gewünschten Wert im **[!UICONTROL Vorgang]** Spalte.
+Wenn Sie die Option **[!UICONTROL Hinzufügen oder aktualisieren]** gewählt haben, können Sie für jedes Feld individuell entscheiden, welche der möglichen Aktionen ausgeführt werden soll. Wählen Sie dazu den gewünschten Wert in der Spalte **[!UICONTROL Vorgang]** aus.
 
 ![](assets/s_advuser_update_data_5.png)
 
@@ -72,7 +72,7 @@ Nur Datensätze, die mindestens eine Änderung aufweisen, werden aktualisiert. A
 * **[!UICONTROL Bei leerem Quellwert (NULL) den Zielwert löschen]** (standardmäßig aktiviert);
 * **[!UICONTROL Alle Spalten mit übereinstimmenden Namen aktualisieren]**;
 * Angabe von Bedingungen bezüglich der Quellelemente mithilfe eines Ausdrucks im Feld **[!UICONTROL Berücksichtigung]**;
-* Geben Sie Bedingungen an, die Duplikate mithilfe eines Ausdrucks berücksichtigen. Wenn Sie die Variable **[!UICONTROL Datensätze ignorieren, die dieselbe Zielgruppe betreffen]** -Option, wird nur der erste in der Liste der Ausdrücke berücksichtigt.
+* Angabe von Bedingungen zur Berücksichtigung von Dubletten mithilfe eines Ausdrucks. Wenn die Option **[!UICONTROL Den gleichen Zielkontakt betreffende Datensätze ignorieren]** aktiviert ist, wird nur der erste Datensatz der Ausdruckliste berücksichtigt.
 
 **[!UICONTROL Ausgehende Transition erzeugen]**
 
@@ -100,7 +100,7 @@ Die Aktualisierung mit Fusion von Sammlungen ermöglicht die Aktualisierung von 
 
 1. Geben Sie die in den Hauptdatensatz zu verschiebenden Sammlungen und die zu aktualisierenden Felder an.
 
-   Geben Sie die Regeln an, die für diese gelten, sobald ein oder mehrere sekundäre Datensätze identifiziert wurden. Dazu können Sie den Ausdruckseditor verwenden. Weitere Informationen hierzu finden Sie in diesem Abschnitt [Abschnitt](../../platform/using/defining-filter-conditions.md#building-expressions). Sie müssen beispielsweise angeben, dass aus allen verschiedenen Datensätzen der zuletzt aktualisierte Wert beibehalten werden soll.
+   Geben Sie die Regeln an, die für diese gelten, sobald ein oder mehrere sekundäre Einträge identifiziert wurden. Dazu können Sie den Ausdruckseditor verwenden. Weiterführende Informationen dazu finden Sie in diesem [Abschnitt](../../platform/using/defining-filter-conditions.md#building-expressions). Geben Sie beispielsweise an, dass bei Werten aus verschiedenen möglichen Datensätzen jeweils der zuletzt aktualisierte Wert beibehalten werden soll.
 
    Geben Sie die Bedingungen zur Berücksichtigung der Regel an.
 

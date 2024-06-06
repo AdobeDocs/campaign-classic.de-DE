@@ -5,9 +5,9 @@ description: Erfahren Sie, wie Sie mit einem Workflow eine Geburtstags-E-Mail se
 feature: Workflows
 exl-id: 38006cca-e945-4b9d-8e2d-ed537b8541d9
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '933'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -88,7 +88,7 @@ Gehen Sie hierzu wie folgt vor:
 
    Klicken Sie zur Bestätigung auf **[!UICONTROL Beenden]**.
 
-1. Wiederholen Sie diesen Vorgang, um den dem aktuellen Monat entsprechenden Geburtsmonat abzurufen. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wiederholen Sie die Schritte 3 bis 10, ersetzen Sie **[!UICONTROL Tag]** mit **[!UICONTROL Monat]**.
+1. Wiederholen Sie diesen Vorgang, um den dem aktuellen Monat entsprechenden Geburtsmonat abzurufen. Klicken Sie hierzu auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wiederholen Sie die Schritte 3 bis 10 unter Ersetzung der Funktion **[!UICONTROL Day]** durch die Funktion **[!UICONTROL Month]**.
 
    Die vollständige Formel lautet wie folgt:
 
@@ -128,7 +128,7 @@ Die Auswahl der Empfänger, deren Geburtstag dem aktuellen Datum entspricht, wir
 
 Prüfen Sie mithilfe einer **[!UICONTROL Test]**-Aktivität, ob das aktuelle Jahr ein Schaljahr und ob das aktuelle Datum der 1. März ist.
 
-Wenn der Test überprüft wird (das Jahr ist kein Schaltjahr - es gibt keinen 29. Februar - und das aktuelle Datum ist tatsächlich der 1. März), wird die **[!UICONTROL True]** Die Transition ist aktiviert und die Empfänger, die am 29. Februar Geburtstag haben, werden zum Versand am 1. März hinzugefügt. Andernfalls wird die **[!UICONTROL False]** Transition aktiviert ist und nur die Empfänger, die am aktuellen Datum Geburtstag haben, den Versand erhalten.
+Wenn der Test wahr ist (d. h. es ist kein Schaltjahr – es gibt keinen 29. Februar – und das aktuelle Datum ist der 1. März), wird die Transition **[!UICONTROL Wahr]** aktiviert und die Empfänger, die am 29. Februar Geburtstag haben, werden zum Versand des 1. März hinzugefügt. Andernfalls wird die Transition **[!UICONTROL Falsch]** aktiviert und nur die Empfänger, die am aktuellen Datum Geburtstag haben, erhalten den Versand.
 
 Kopieren Sie den unten stehenden Code und fügen Sie ihn im Bereich **[!UICONTROL Initialisierungsscript]** des **[!UICONTROL Erweitert]**-Tabs ein.
 

@@ -6,9 +6,9 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Web Forms
 exl-id: 364d90af-4b18-4104-8b6a-be80cfde3b0b
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1079'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -64,7 +64,7 @@ Um einen Hypertext-Link hinzuzufügen, gehen Sie zu **[!UICONTROL Statische Elem
 
   ![](assets/s_ncs_admin_survey_send_an_email.png)
 
-* Sie können den Link als Schaltfläche oder Bild anzeigen lassen. Wählen Sie dazu den Anzeigetyp im **[!UICONTROL Typ]** -Feld.
+* Der Link kann als Schaltfläche oder Bild dargestellt werden. Wählen Sie dazu im Feld **[!UICONTROL Typ]** den Typ der Anzeige aus.
 
 ### Link-Typen {#types-of-links}
 
@@ -86,7 +86,7 @@ Sie können auch andere Aktionen für den Link definieren, sodass der Benutzer d
 
   ![](assets/s_ncs_admin_survey_link_next.png)
 
-  Sie können **[!UICONTROL Nächste]** und/oder **[!UICONTROL Zurück]** -Schaltflächen, wenn sie durch einen Link ersetzt werden sollen. Mehr dazu erfahren Sie auf [dieser Seite](defining-web-forms-page-sequencing.md).
+  Sie können die Schaltflächen **[!UICONTROL Weiter]** und/oder **[!UICONTROL Zurück]** verbergen, wenn diese durch einen Link ersetzt werden sollen. Mehr dazu erfahren Sie auf [dieser Seite](defining-web-forms-page-sequencing.md).
 
   Der Link ersetzt die standardmäßig verwendete Schaltfläche **[!UICONTROL Weiter]**.
 
@@ -98,7 +98,7 @@ Sie können auch andere Aktionen für den Link definieren, sodass der Benutzer d
 
   ![](assets/s_ncs_admin_survey_link_viral.png)
 
-  Standardmäßig hat eine Seite nur eine ausgehende Transition. Um neue Transitionen zu erstellen, wählen Sie die Seite aus und klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]** im **[!UICONTROL Ausgabeübergänge]** wie unten gezeigt:
+  Standardmäßig hat eine Seite nur eine ausgehende Transition. Um neue Transitionen zu erstellen, wählen Sie wie unten gezeigt die Seite und klicken Sie danach im Bereich **[!UICONTROL Ausgehende Transitionen]** auf die Schaltfläche **[!UICONTROL Hinzufügen]**:
 
   ![](assets/s_ncs_admin_survey_add_transition.png)
 

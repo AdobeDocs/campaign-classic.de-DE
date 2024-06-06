@@ -6,9 +6,9 @@ role: User, Data Engineer
 feature: Typology Rules, Campaigns
 exl-id: 6d5b8584-4aa1-4d9a-89d9-d41da75dd323
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '477'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Mit Adobe Campaign können vier Arten von Typologieregeln erstellt und angewende
 * **Kapazitätsregeln**; erlauben es, die Auslastung zu begrenzen, um optimale Verarbeitungsbedingungen zu gewährleisten. Weitere Informationen hierzu finden Sie unter [Kontrollieren der Kapazitätsauslastung](consistency-rules.md#controlling-capacity).
 * **Kontrollregeln**; erlauben es, die Gültigkeit von Nachrichten zu überprüfen, bevor sie gesendet werden. Weiterführende Informationen hierzu finden Sie unter [Kontrollregeln](control-rules.md).
 
-Nach ihrer Erstellung werden die Typologieregeln in Kampagnentypologien gruppiert, auf die in Sendungen verwiesen wird. Siehe [Anwenden von Typologien](#applying-typologies).
+Nach ihrer Erstellung werden die Typologieregeln in Kampagnentypologien gruppiert, die in den Sendungen referenziert werden. Siehe [Anwenden von Typologien](#applying-typologies).
 
 ## Typologien {#typologies}
 
@@ -56,9 +56,9 @@ Gehen Sie wie folgt vor, um eine Typologie zu erstellen und auf Ihre Sendungen a
    Die Typologien befinden sich im Verzeichnisknoten **[!UICONTROL Administration > Kampagnenverwaltung > Typologieverwaltung]** > **[!UICONTROL Typologien]**.
 
 1. Konfigurieren Sie Ihren Versand so, dass er die von Ihnen erstellte Typologie verwendet. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](applying-rules.md#applying-a-typology-to-a-delivery).
-1. Testen und steuern Sie das Verhalten mithilfe von Kampagnensimulationen. Weitere Informationen zu Kampagnensimulationen finden Sie unter [diesem Abschnitt](campaign-simulations.md).
+1. Testen und steuern Sie das Verhalten mithilfe von Kampagnensimulationen. Näheres zur Simulation von Kampagnen finden Sie in [diesem Abschnitt](campaign-simulations.md).
 
-Bei der Versandvorbereitung werden Empfänger ausgeschlossen, wenn das Kriterium erfüllt ist. Sie können Protokolle überprüfen, um Ausschlüsse zu überwachen. Anwendungsbeispiele zu Drucktypologieregeln finden Sie auf [dieser Seite](pressure-rules.md#use-cases-on-pressure-rules).
+Bei der Versandvorbereitung werden Empfangende ausgeschlossen, wenn ein bestimmtes Kriterium erfüllt ist. Sie können Protokolle überprüfen, um Ausschlüsse zu überwachen. Anwendungsbeispiele zu Drucktypologieregeln finden Sie auf [dieser Seite](pressure-rules.md#use-cases-on-pressure-rules).
 
 ## Anleitungsvideos {#typologies-video}
 

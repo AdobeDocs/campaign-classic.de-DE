@@ -6,9 +6,9 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Delivery Templates
 exl-id: b0d1cf0e-656e-4d24-9a31-16fef4cd40d0
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1235'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -185,7 +185,7 @@ Gehen Sie wie folgt vor, um ein Formular für das Content Management zu erstelle
 
    >[!NOTE]
    >
-   >Damit beide Elemente automatisch übereinstimmen, sollten Sie denselben Namen wie für das verknüpfte Datenschema verwenden. Verwenden Sie die **[!UICONTROL Einfügen]** oberhalb des Eingabefelds, um Felder aus dem mit dem Formular verknüpften Schema hinzuzufügen.
+   >Um die automatische Verknüpfung zwischen Datenschema und Formular zu erzeugen, wird empfohlen, für beide den gleichen Namen zu verwenden. Auf diese Weise können Sie die aus dem Schema stammenden Felder ganz einfach über die **[!UICONTROL Einfügen]**-Schaltfläche hinzufügen.
 
    ![](assets/s_ncs_content_param_form_edit_step2.png)
 
@@ -360,7 +360,7 @@ Gehen Sie wie folgt vor:
 
 1. Erstellen Sie im Knoten **[!UICONTROL Administration > Konfiguration > Veröffentlichungsvorlagen]** eine neue Vorlage.
 1. Geben Sie Namen und Titel an und wählen Sie das jeweils zu verwendende Schema und Formular aus.
-1. Geben Sie dann den Namen der Vorlage ein und wählen Sie den gewünschten Rendermodus aus. Hier haben wir eine **[!UICONTROL JavaScript]** Typ Rendering basierend auf der oben erstellten Vorlage.
+1. Geben Sie dann den Namen der Vorlage ein und wählen Sie den gewünschten Rendermodus aus. Im vorliegenden Beispiel handelt es sich gemäß der zuvor erstellten Vorlage um JavaScript.****
 
    ![](assets/s_ncs_content_param_form_publish.png)
 

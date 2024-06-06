@@ -6,9 +6,9 @@ role: User
 feature: Approvals, Campaigns
 exl-id: 8cbb2445-f5e4-4a25-ba7e-56e39ca9d3ce
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2606'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Das Validierungsverfahren wird in [diesem Abschnitt](#checking-and-approving-del
 
 >[!NOTE]
 >
->Nur die für einen Versand verantwortliche Person kann den Versand starten. Damit ein anderer Benutzer (oder eine Benutzergruppe) einen Versand starten kann, muss er als Validierer im **[!UICONTROL Versandstart:]** -Feld.\
+>Nur die für einen Versand verantwortliche Person kann den Versand starten. Damit andere Benutzer (oder Benutzergruppen) einen Versand starten können, müssen sie im Feld **[!UICONTROL Versand-Start:]** als Validierungsverantwortliche hinzugefügt werden.\
 >[Weitere Informationen](#selecting-reviewers).
 
 ## Grundprinzip {#operating-principle-}
@@ -62,14 +62,14 @@ Für jeden Validierungstyp werden die für die Validierung verantwortlichen Benu
 
 ![](assets/s_user_validation_add_operator.png)
 
-Wenn kein Validierungsverantwortlicher angegeben wird, ist der Kampagnenverantwortliche für die Validierung verantwortlich und erhält die Benachrichtigungen. Der Kampagnenverantwortliche wird im Abschnitt **[!UICONTROL Bearbeiten > Eigenschaften]** Tab der Kampagne:
+Wenn kein Prüfer angegeben ist, ist der Kampagnenverantwortliche für die Validierungen verantwortlich und erhält die Benachrichtigungen. Diese Person wird auf der Registerkarte **[!UICONTROL Bearbeiten > Eigenschaften]** der Kampagne angegeben:
 
 ![](assets/s_user_op_manager_field.png)
 
 >[!NOTE]
 >
 >Alle über **[!UICONTROL Administrator]**-Berechtigungen verfügende Adobe-Campaign-Benutzer sind ebenfalls befugt, Prozesse zu validieren. Sie erhalten jedoch keine Benachrichtigungen.\
->Wenn validierungsverantwortliche Benutzer definiert wurden, kann der Kampagnenverantwortliche standardmäßig weder die Validierung vornehmen noch den Versand starten. Sie können dieses Verhalten ändern und den Kampagnenverantwortlichen ermächtigen, Sendungen zu validieren/zu starten, indem Sie die **NmsCampaign_Activate_OwnerConfirmation** Option mit **1** als Wert.
+>Wenn validierungsverantwortliche Benutzer definiert sind, kann der kampagnenverantwortliche Benutzer standardmäßig nicht die Validierung vornehmen oder den Versand starten. Wenn Sie zulassen möchten, dass der kampagnenverantwortliche Benutzer Sendungen validieren und starten kann, geben Sie für die Option **NmsCampaign_Activate_OwnerConfirmation** den Wert **1** ein.
 
 ## Validierungsmodi {#approval-modes}
 
@@ -79,7 +79,7 @@ Um einen Vorgang über Konsole oder Webschnittstelle zu validieren, klicken Sie 
 
 ![](assets/s_user_validation_from_console.png)
 
-Überprüfen Sie die zu validierenden Informationen, entscheiden Sie, ob Sie die Validierung akzeptieren oder ablehnen, und geben Sie gegebenenfalls einen Kommentar ein. Klicks **[!UICONTROL Ok]** speichern.
+Überprüfen Sie die zu validierenden Informationen und entscheiden Sie, ob Sie die Validierung akzeptieren oder ablehnen. Erfassen Sie gegebenenfalls einen Kommentar und klicken Sie zum Speichern auf **[!UICONTROL OK]**.
 
 >[!NOTE]
 >
@@ -188,7 +188,7 @@ Die Kampagne erhält daraufhin den Status **[!UICONTROL Zu validieren]**.
 
 >[!NOTE]
 >
->Wenn in einem Zielgruppen-Workflow während der Nachrichtenvorbereitung ein Konfigurationsfehler auftritt, wird der Link **[!UICONTROL Nachrichtenvorbereitung neu starten]** im Dashboard angezeigt. Korrigieren Sie den Fehler und klicken Sie auf diesen Link, um die Nachrichtenvorbereitung unter Umgehung der Zielbestimmung neu zu starten.
+>Wenn in einem Zielgruppen-Workflow während der Nachrichtenvorbereitung ein Konfigurationsfehler auftritt, wird der Link **[!UICONTROL Nachrichtenvorbereitung neu starten]** im Dashboard angezeigt. Korrigieren Sie den Fehler und klicken Sie anschließend auf diesen Link, um die Nachrichtenvorbereitung ohne die Zielbestimmung erneut durchzuführen.
 
 ![](assets/s_user_validation_relaunch_message_preparation.png)
 

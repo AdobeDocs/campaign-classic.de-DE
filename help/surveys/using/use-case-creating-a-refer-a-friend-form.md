@@ -6,9 +6,9 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Surveys
 exl-id: bd94c41a-813a-4ddb-a2bd-c3deab022482
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '633'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Um den Freunde-Werben-Bereich zu konfigurieren und zu erstellen, gehen Sie folge
 
    >[!NOTE]
    >
-   >Solange der Empfänger nicht sein Einverständnis gegeben hat, können Sie ihn nicht mit den Empfängern in der Datenbank speichern. Sie werden vorübergehend in der **Besucher** table (**nms:visitor**) für Viral-Marketing-Kampagnen. Diese Tabelle wird regelmäßig bereinigt, dank **Datenbereinigung** Vorgänge.
+   >Solange der Angeworbene noch nicht sein Einverständnis gegeben hat, können Sie ihn nicht gemeinsam mit den Werbern in der Datenbank speichern. Er wird deshalb vorübergehend in der **Besuchertabelle** gespeichert (**nms:visitor**), die für Viral-Marketing-Kampagnen verwendet wird. Diese Tabelle wird regelmäßig durch **Bereinigungsprozesse** geleert.
    >
    >In diesem Beispiel möchten wir Angeworbene dazu bewegen, an dem von den Werbern empfohlenen Gewinnspiel teilzunehmen. Zusätzlich möchten wir ihnen ein Abonnement für eines unserer Informationsdienste anbieten. Wenn sie sich dazu anmelden, können sie in der Datenbank gespeichert werden.
 
@@ -64,7 +64,7 @@ Um den Freunde-Werben-Bereich zu konfigurieren und zu erstellen, gehen Sie folge
 
    ![](assets/s_ncs_admin_survey_viral_sample_4b.png)
 
-1. Erstellen Sie dann die Versandvorlage, die mit dem in Schritt 1 erstellten Informationsdienst verknüpft ist. Sie wird im **[!UICONTROL Szenario auswählen]** -Feld des Informationsdienstes.
+1. Erstellen Sie dann die Versandvorlage, die mit dem in Schritt 1 erstellten Informationsdienst verknüpft ist. Sie wird im Feld **[!UICONTROL Choose scenario]** des Informationsdienstes ausgewählt.
 
    Die Versandvorlage zur Erstellung der Freunde-Werben-Nachricht enthält die folgenden Informationen:
 
@@ -82,7 +82,7 @@ Um den Freunde-Werben-Bereich zu konfigurieren und zu erstellen, gehen Sie folge
 
    * Diese Vorlage enthält einen Link zum Gewinnspielformular und den Abonnementlink, über den der Angeworbene einen Newsletter abonnieren kann.
 
-     Der Anmelde-Link wird über einen Gestaltungsbaustein eingefügt. Standardmäßig können Profile für die **Newsletter** -Dienst. Dieser Gestaltungsbaustein kann Ihren Bedürfnissen entsprechend angepasst werden, z. B. um den Empfänger für einen anderen Dienst anzumelden.
+     Der Abonnementlink wird über einen Gestaltungsbaustein eingefügt. Standardmäßig können Profile für den **Newsletter**-Dienst angemeldet werden. Dieser Gestaltungsbaustein kann entsprechend Ihren Anforderungen angepasst werden, sodass Sie den Empfänger auch für einen anderen Dienst anmelden können.
 
    * Der interne Name (hier &quot;referrer&quot;) wird im Nachrichtenversand-Skript wie unten dargestellt verwendet.
 
@@ -117,7 +117,7 @@ Um den Freunde-Werben-Bereich zu konfigurieren und zu erstellen, gehen Sie folge
     </delivery>)
    ```
 
-1. Veröffentlichen Sie das Gewinnspielformular und senden Sie den Empfängern der ursprünglichen Zielgruppe eine Einladung. Wenn einer von ihnen einen Freund einlädt, einen Versand, der auf der **Verweisangebot** -Vorlage erstellt.
+1. Veröffentlichen Sie das Gewinnspielformular und senden Sie den Kontakten der ursprünglichen Zielgruppe eine Einladung. Wenn einer davon einen Freund einlädt, wird ein Versand auf der Basis der **Freunde-Werben**-Vorlage erstellt.
 
    ![](assets/s_ncs_admin_survey_viral_sample_8.png)
 

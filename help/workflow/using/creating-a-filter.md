@@ -5,9 +5,9 @@ description: Erfahren Sie, wie Sie bei Abfragen einen Filter erstellen können
 feature: Query Editor, Workflows
 exl-id: 297ea1e1-39ef-4b99-aaaa-9e88611fb1bf
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '231'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -49,10 +49,10 @@ Um dem Filter zu entsprechen, muss das Benutzerkonto eine der folgenden Bedingun
 >
 >Bei Verwendung der Funktion **[!UICONTROL Upper]** werden bei einer Abfrage Groß- und Kleinschreibung nicht beachtet.
 
-Die **[!UICONTROL Wird berücksichtigt, wenn]** -Spalte können Sie die Anwendungskriterien für diese Filterbedingungen definieren. Hier wird die **$(/tmp/@text)** -Zeichen stellen den Inhalt des mit dem Filter verknüpften Eingabefelds dar:
+Die Spalte **[!UICONTROL Berücksichtigt wenn]** ermöglicht die Konfiguration von Voraussetzungen dafür, dass die Filterbedingungen zum Tragen kommen. Die Zeichen **$(/tmp/@text)** entsprechen dem Inhalt des dem Filter zugeordneten Eingabefelds:
 
 ![](assets/query_editor_filter_sample_5.png)
 
 Hier ist **$(/tmp/@text)=&#39;Filiale&#39;**.
 
-Die **$(/tmp/@text)!=&#39;&#39;** Der Ausdruck wendet jede Bedingung an, wenn das Eingabefeld nicht leer ist.
+Der Ausdruck **$(/tmp/@text)!** prüft jede Bedingung, wenn das Eingabefeld nicht leer ist.

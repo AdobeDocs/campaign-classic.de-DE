@@ -5,9 +5,9 @@ description: Erfahren Sie, wie Sie Aggregate in Abfragen berechnen
 feature: Workflows
 exl-id: 5b05788f-498b-4a84-bdde-2852900f0129
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '245'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ In diesem Beispiel wird die Anzahl der Empfänger gesucht, die in Berlin wohnen,
 
 Gehen Sie wie folgt vor:
 
-1. In **[!UICONTROL Zu extrahierende Daten]**, definieren Sie eine Anzahl für den Primärschlüssel (wie im vorherigen Beispiel gezeigt). Fügen Sie die **[!UICONTROL Geschlecht]** in der Ausgabespalte. Überprüfen Sie die **[!UICONTROL Gruppe]** in der **[!UICONTROL Geschlecht]** Spalte. Auf diese Weise werden die Empfänger nach Geschlecht gruppiert.
+1. Konfigurieren Sie im Fenster **[!UICONTROL Zu extrahierende Daten]** wie im vorangehenden Beispiel eine Primärschlüssel-Zählung. Fügen Sie das Feld **[!UICONTROL Geschlecht]** zu den Ausgabespalten hinzu. Kreuzen Sie die Option **[!UICONTROL Gruppieren]** der Spalte **[!UICONTROL Geschlecht]** an. Auf diese Weise werden die Empfänger nach Geschlecht angeordnet.
 
    ![](assets/query_editor_nveau_27.png)
 

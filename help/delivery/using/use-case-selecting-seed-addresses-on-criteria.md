@@ -6,9 +6,9 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Seed Address
 exl-id: 091648b8-bf2d-4595-8be3-287f1ac48edd
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '926'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -87,13 +87,13 @@ Weitere Informationen zu Schemaerweiterungen finden Sie unter [diesem Abschnitt]
 
    ![](assets/dlv_seeds_usecase_13.png)
 
-1. Befolgen Sie den Assistenten, bis Sie zur Seite gelangen, um das Update auszuführen. Klicken Sie auf die Schaltfläche **[!UICONTROL Starten]**.
+1. Durchlaufen Sie den Assistenten, bis Sie zur Seite zur Ausführung der Aktualisierung gelangen. Klicken Sie auf die Schaltfläche **[!UICONTROL Starten]**.
 
    ![](assets/dlv_seeds_usecase_14.png)
 
    Nach Abschluss der Aktualisierung können Sie den Assistenten schließen.
 
-1. Trennen Sie die Verbindung und verbinden Sie sich dann erneut mit Adobe Campaign. Die im Testadressen-Schema vorgenommenen Änderungen sind nun wirksam. Damit sie im Testadressen-Bildschirm sichtbar sind, müssen Sie die zugehörigen **[!UICONTROL Formular]**. Weitere Informationen finden Sie im Abschnitt [Aktualisieren des Eingabeformulars](#updating-the-input-form).
+1. Trennen Sie die Verbindung und verbinden Sie sich dann erneut mit Adobe Campaign. Die im Testadressen-Schema vorgenommenen Änderungen sind nun wirksam. Damit sie im Eingabefenster der Testadressen sichtbar werden, ist eine Anpassung des **[!UICONTROL entsprechenden Formulars]** erforderlich. Weitere Informationen finden Sie im Abschnitt [Aktualisieren des Eingabeformulars](#updating-the-input-form).
 
 #### Erweitern des Datenschemas ausgehend von einer verknüpften Tabelle {#extending-the-data-schema-from-a-linked-table}
 
@@ -103,7 +103,7 @@ Angenommen, ein Benutzer möchte das Feld **[!UICONTROL Domain-Endung]**, das in
 
 ![](assets/dlv_seeds_usecase_06.png)
 
-Sie müssen daher das Testadressen-Datenschema wie im Abschnitt beschrieben erweitern. Die Codezeilen, die bei integriert werden sollen **Schritt 4** wie folgt aussehen:
+Sie müssen daher das Testadressen-Datenschema wie im Abschnitt beschrieben erweitern. Die Code-Zeilen, die in **Schritt 4** integriert werden sollen, sehen wie folgt aus:
 
 ```
 <element name="country">
@@ -146,7 +146,7 @@ Weitere Informationen finden Sie im Abschnitt [Aktualisieren des Eingabeformular
    ![](assets/dlv_seeds_usecase_21.png)
 
 1. Speichern Sie Ihre Änderungen.
-1. Öffnen Sie eine Testadresse. Die **[!UICONTROL Abteilung]** wird im Feld **[!UICONTROL Empfänger]** Tabelle.
+1. Öffnen Sie eine Testadresse. Das Feld **[!UICONTROL Abteilung]** wird in der Tabelle **[!UICONTROL Empfänger]** angezeigt.
 
    ![](assets/dlv_seeds_usecase_22.png)
 
@@ -164,17 +164,17 @@ Sie können nun die dynamische Bedingung für die Testadressen-Auswahl definiere
 
    ![](assets/dlv_seeds_usecase_02.png)
 
-1. Wählen Sie den Ausdruck aus, der die Auswahl der gewünschten Testadressen ermöglicht. Hier wählt der Benutzer die **[!UICONTROL Abteilung (@workField)]** Ausdruck.
+1. Wählen Sie den Ausdruck aus, der Ihnen die Filterung der gewünschten Testadressen ermöglicht. Hier wählt der Benutzer den Ausdruck **[!UICONTROL Abteilung (@workField)]** aus.
 
    ![](assets/dlv_seeds_usecase_03.png)
 
-1. Wählen Sie den gewünschten Wert aus. In diesem Beispiel wählt der Benutzer die **Einkauf** aus der Dropdown-Liste der Werte.
+1. Wählen Sie den gewünschten Wert aus. In diesem Beispiel wählt der Benutzer die Abteilung **Einkauf** aus der Dropdown-Liste der Werte aus.
 
    ![](assets/dlv_seeds_usecase_17.png)
 
    >[!NOTE]
    >
-   >Die zuvor erstellte Schemaerweiterung stammt aus dem **recipient** Schema. Die auf dem obigen Bildschirm angezeigten Werte stammen aus einer Auflistung der **recipient** Schema.
+   >Die zuvor vorgenommene Schemaerweiterung beruht auf dem Empfängerschema **recipient**. Dies gilt auch für die Auflistung, aus der die oben zu sehenden Werte stammen.****
 
 1. Bestätigen Sie die Aktion mit der Schaltfläche **[!UICONTROL OK]**.
 

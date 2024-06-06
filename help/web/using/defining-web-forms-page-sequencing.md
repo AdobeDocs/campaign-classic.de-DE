@@ -6,9 +6,9 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Web Forms
 exl-id: c5b5c398-c13b-4ebe-88b2-8ff84741422e
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '748'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -32,11 +32,11 @@ Mit dem Objekt **[!UICONTROL Sprung]** gelangt der Benutzer bei der Auswahl von 
 
 Folgende Zielorte sind möglich:
 
-* Eine andere Seite des Formulars. Wählen Sie dazu **[!UICONTROL Interne Aktivität]** und geben Sie dann die gewünschte Seite an, wie unten dargestellt:
+* Eine andere Seite des Formulars. Wählen Sie dazu **[!UICONTROL Interne Aktivität]** aus und spezifizieren Sie dann die gewünschte Seite wie unten dargestellt:
 
   ![](assets/s_ncs_admin_jump_param1.png)
 
-* Ein anderes Formular. Wählen Sie dazu die **[!UICONTROL Explizit]** und geben Sie das Zielformular an.
+* Ein anderes Formular. Wählen Sie dazu die Option **[!UICONTROL Explizit]** aus und spezifizieren Sie das Zielformular.
 
   ![](assets/s_ncs_admin_jump_param2.png)
 
@@ -74,7 +74,7 @@ Im folgenden Beispiel soll ein Webformular konfiguriert werden, das nach der Val
 
 ## Link zu einer anderen Seite des Formulars einfügen {#inserting-a-link-to-another-page-of-the-form}
 
-Sie können Links zu anderen Seiten des Formulars einfügen. Fügen Sie dazu eine **[!UICONTROL Link]** Geben Sie ein statisches Element zur Seite ein. Weitere Informationen hierzu finden Sie unter [Link einfügen](static-elements-in-a-web-form.md#inserting-a-link).
+Sie können Links zu anderen Formularseiten einfügen. Fügen Sie dazu ein statisches Element vom Typ **[!UICONTROL Link]** zur Seite hinzu. Weitere Informationen hierzu finden Sie unter [Link einfügen](static-elements-in-a-web-form.md#inserting-a-link).
 
 ## Bedingte Anzeige von Seiten {#conditional-page-display}
 
@@ -82,7 +82,7 @@ Sie können Links zu anderen Seiten des Formulars einfügen. Fügen Sie dazu ein
 
 Mit der Komponente **[!UICONTROL Test]** können Sie die Reihenfolge der Formularseiten entsprechend bestimmter Bedingungen ändern. Sie können mehrere Verzweigungen definieren, die je nach Testergebnis aktiviert werden. Dadurch werden abhängig von den Benutzerantworten unterschiedliche Seiten angezeigt.
 
-Sie können beispielsweise eine andere Seite für Kunden anzeigen, die bereits online bestellt haben, und eine andere für Kunden, die mehr als zehn Bestellungen aufgegeben haben. Fügen Sie dazu auf der ersten Seite des Formulars eine **[!UICONTROL Zahl]** Geben Sie ein Eingabefeld ein, in dem der Benutzer angeben kann, wie viele Bestellungen er aufgegeben hat.
+Beispielsweise können Sie Kunden, die zuvor eine Online-Bestellung aufgegeben haben, eine andere Seite anzeigen wie jenen, die über zehn Bestellungen aufgegeben haben. Fügen Sie dazu auf der ersten Formularseite ein Eingabefeld vom Typ **[!UICONTROL Zahl]** ein, in dem der Benutzer angeben kann, wie viele Bestellungen er bereits aufgegeben hat.
 
 ![](assets/s_ncs_admin_survey_test_ex0.png)
 
@@ -116,11 +116,11 @@ Mit dem Objekt **[!UICONTROL Script]** können Sie ein JavaScript-Element direkt
 
 ## Endseite personalisieren {#personalizing-the-end-page}
 
-Sie müssen eine Endseite am Ende des Diagramms platzieren. Die Endseite wird angezeigt, wenn der Benutzer auf die **[!UICONTROL Genehmigen]** im Webformular.
+Am Ende des Diagramms muss eine Endseite platziert werden. Diese wird angezeigt, wenn der Benutzer im Webformular die Schaltfläche **[!UICONTROL Validieren]** auswählt.
 
 Um diese Seite anzupassen, führen Sie einen Doppelklick auf die **[!UICONTROL Ende]**-Komponente aus und geben Sie in den mittig angeordneten Editor den Seiteninhalt ein.
 
 ![](assets/s_ncs_admin_survey_end_page_edit.png)
 
-* Sie können vorhandenen HTML-Inhalt kopieren und einfügen. Klicken Sie dazu auf **[!UICONTROL Quellcode anzeigen]** und fügen Sie den HTML-Code ein.
+* Sie können vorhandenen HTML-Inhalt kopieren und einfügen. Wählen Sie dazu **[!UICONTROL Quellcode anzeigen]** aus und geben Sie den HTML-Code ein.
 * Sie können eine externe URL verwenden. Wählen Sie dazu die entsprechende Option aus und geben Sie die URL der anzuzeigenden Seite ein.

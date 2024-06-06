@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: ed97a1b5-c870-4b67-98b6-16adc316fd46
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '289'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Gehen Sie wie folgt vor, um eine neue Kategorie zu erstellen:
 
    ![](assets/offer_cat_create_002.png)
 
-1. Benennen Sie die Kategorie neu. Sie können den Titel später mithilfe der **[!UICONTROL Allgemein]** Registerkarte.
+1. Benennen Sie die Kategorie. Der Titel kann später auch über den **[!UICONTROL Allgemein]**-Tab der Kategorie geändert werden.
 
    ![](assets/offer_cat_create_003.png)
 
@@ -58,6 +58,6 @@ Gehen Sie wie folgt vor, um eine neue Kategorie zu erstellen:
 
      ![](assets/offer_cat_create_006.png)
 
-Eine Zusammenfassung der Eignungsregeln finden Sie im Dashboard der in der Kategorie enthaltenen Angebote. Um sie anzuzeigen, klicken Sie auf das **[!UICONTROL Planung und Eignungsregeln des Angebots]** -Link.
+Eine Zusammenfassung der Eignungsregeln finden Sie im Dashboard der in der Kategorie enthaltenen Angebote. Um sie anzuzeigen, klicken Sie auf den Link **[!UICONTROL Zeitplan und Eignungsregeln des Angebots]**.
 
 ![](assets/offer_create_006.png)

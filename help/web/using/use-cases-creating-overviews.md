@@ -6,9 +6,9 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Web Apps
 exl-id: a1ac3aab-dc81-4533-9207-26d5dc5e1c88
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1041'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -220,6 +220,6 @@ Diese beiden Elemente werden im selben Container abgelegt, damit sie in der Übe
 
    ![](assets/s_ncs_configuration_webapp_orderelements.png)
 
-Die Webanwendung ist jetzt konfiguriert. Sie können auf die **[!UICONTROL Vorschau]** um eine Vorschau anzuzeigen.
+Die Webanwendung ist jetzt konfiguriert. Wählen Sie den Tab **[!UICONTROL Vorschau]** aus, um sie in der Vorschau anzuzeigen.
 
 ![](assets/s_ncs_configuration_webapp_result.png)

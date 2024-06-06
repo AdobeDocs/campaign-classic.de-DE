@@ -5,9 +5,9 @@ description: Erfahren Sie, wie Sie Listen durchsuchen und konfigurieren.
 feature: Audiences, Data Management
 exl-id: 21656cc2-15a1-4156-8897-ea4fe3e9b97f
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1200'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Im rechten unteren Bereich der Listenanzeige zeigt ein **[!UICONTROL Zähler]** 
 
 ![](assets/s_ncs_user_nb_200_0.png)
 
-Wenn **?**&quot; anstelle der Zahl auf der rechten Seite angezeigt wird, klicken Sie auf den Zähler, um die Berechnung zu starten.
+Wenn ein „**?**“ anstelle der Gesamtzahl angezeigt wird, können Sie durch Klick auf das Feld die Gesamtzahl abrufen.
 
 ### Laden von weiteren Datensätzen {#loading-more-records}
 
@@ -76,7 +76,7 @@ Eine weitere Möglichkeit zum Hinzufügen von Spalten besteht im Listenkonfigura
 
    >[!NOTE]
    >
-   >Erweiterte Felder werden standardmäßig nicht angezeigt. Um sie anzuzeigen, klicken Sie auf **Erweiterte Felder anzeigen** rechts neben der Liste der verfügbaren Felder.
+   >Erweiterte Felder werden standardmäßig nicht angezeigt. Verwenden Sie das Symbol **Erweiterte Felder anzeigen** im rechten unteren Bereich der Liste der verfügbaren Felder, um sie sichtbar zu machen.
    >
    >Die Titel werden nach Tabellen geordnet und innerhalb der Tabellen in alphabetischer Reihenfolge angezeigt.
    >
@@ -114,7 +114,7 @@ Wählen Sie im Bereich der **[!UICONTROL Ausgabespalten]** des Listenkonfigurati
 
 ![](assets/s_ncs_user_removecolumn_icon.png)
 
-Wiederholen Sie diesen Vorgang für jede Spalte, die maskiert werden soll. Wählen Sie **[!UICONTROL OK]** aus, um die Konfigurationen zu bestätigen und das Ergebnis anzuzeigen.
+Wiederholen Sie dies für jede Spalte, die ausgeblendet werden soll. Wählen Sie **[!UICONTROL OK]** aus, um die Konfigurationen zu bestätigen und das Ergebnis anzuzeigen.
 
 ### Spaltenbreite anpassen {#adjust-column-width}
 
@@ -198,7 +198,7 @@ Sie können die Sortierung konfigurieren oder Sortierkriterien kombinieren. Gehe
 
 ### Suchen nach Elementen {#running-a-search}
 
-Sie können eine Suche der verfügbaren Felder in einem Editor mit dem **[!UICONTROL Suche]** oberhalb der Feldliste. Presse **Eingabe** auf der Tastatur oder durchsuchen Sie die Liste. Die Felder, die Ihrer Suche entsprechen, sind fett markiert.
+In Editoren haben Sie die Möglichkeit, mithilfe des **[!UICONTROL Suchen]**-Feldes die Auswahl der verfügbaren Felder einzuschränken. Mit der **Enter**-Taste können Sie die Liste durchsuchen. Die Ihrem Suchkriterium entsprechenden Felder erscheinen fettgedruckt.
 
 >[!NOTE]
 >

@@ -5,9 +5,9 @@ description: Workflow-Aktivität für eingehende SMS für Mid-Sourcing-Infrastru
 feature: Technote, SMS
 exl-id: 756039b2-5f57-4dc5-8166-a421206b886b
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '423'
-ht-degree: 5%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 5%
 
 ## Implementierung {#implementation}
 
-1. Hinzufügen einer Erweiterung zum `nms:inSMS` Schema in Ihrer Marketing-Instanz. Die Erweiterung fügt dem `nms:inSMS` Schema und verfolgen Sie den Primärschlüssel des InSMS-Datensatzes, der von der Mid-Sourcing-Instanz stammt.
+1. Hinzufügen einer Erweiterung zum `nms:inSMS`-Schema in Ihrer Marketing-Instanz. Die Erweiterung fügt dem `nms:inSMS`-Schema ein neues Attribut hinzu und verfolgt den Primärschlüssel des InSMS-Eintrags, der von der Mid-Sourcing-Instanz stammt.
 
    ```xml
    <element img="nms:miniatures/mini-sms.png" label="Incoming SMS"
@@ -35,23 +35,23 @@ ht-degree: 5%
    </element>
    ```
 
-1. Um die Änderungen an den Schemas anzuwenden, starten Sie den Datenbankaktualisierungs-Assistenten. Auf diesen Assistenten kann über **Instrumente** > **Erweitert** > **Datenbankstruktur aktualisieren**. Er prüft, ob die physische Struktur der Datenbank mit der logischen Beschreibung übereinstimmt, und führt die SQL-Update-Skripte aus. [Weitere Informationen](../../configuration/using/updating-the-database-structure.md)
+1. Um die an den Schemata vorgenommenen Änderungen anzuwenden, starten Sie den Datenbankaktualisierungs-Assistenten. Auf diesen Assistent kann über **Tools** > **Erweitert** > **Datenbankstruktur aktualisieren** zugegriffen werden. Er prüft, ob die physische Struktur der Datenbank mit ihrer logischen Beschreibung übereinstimmt, und führt die SQL-Aktualisierungs-Skripts aus. [Weitere Informationen](../../configuration/using/updating-the-database-structure.md)
 
 1. Beenden Sie den Workflow mit dem **SMS-Empfang**.
 
    Sichern Sie den entsprechenden Optionszeiger im folgenden Format: `SMS_MO_INDEX_{internal name of the workflow}_{name of the insms workflow activity}_{internal name of the external account to access the mid}`.
 
-[Weitere Informationen zur Sicherung](../../production/using/backup.md)
+[Weitere Informationen zum Backup](../../production/using/backup.md)
 
 1. (**OPTIONAL**), wenn Sie bereits eine Planung verwenden, öffnen Sie den Workflow und konfigurieren Sie ihn wie folgt neu:
 
-   1. Replizieren Sie die aktuellen Einstellungen über die **Zeitplan** Registerkarte Ihres **SMS-Empfang** -Aktivität in Ihre externe **Planung** -Aktivität.
+   1. Replizieren Sie die aktuellen Einstellungen über die Registerkarte **Zeitplan** Ihrer Aktivität **SMS-Empfang** Ihre externe Aktivität **Planung**.
 
-   1. Deaktivieren Sie die aktuelle Einstellung im **Zeitplan** Tab von **SMS-Empfang** -Aktivität.
+   1. Deaktivieren Sie die aktuelle Einstellung auf der Registerkarte **Zeitplan** der Aktivität **SMS-Empfang**.
 
       ![](assets/inbound_sms_1.png)
 
-1. Aktualisieren Sie die **SMS-Empfang** benutzerdefiniertes Skript.
+1. Aktualisieren Sie das benutzerdefinierte Skript **SMS-Empfang**.
 
    Ersetzen Sie den folgenden Block. Beachten Sie, dass dieses Skript ggf. variieren kann, wenn Sie diesen Code zuvor angepasst haben.
 
@@ -69,11 +69,11 @@ ht-degree: 5%
    return 2;
    ```
 
-   Mit dem folgenden neuen benutzerdefinierten Skript können Sie inSMS-Daten anhand eines zusammengesetzten Schlüssels aktualisieren, indem Sie den Primärschlüssel des Mid-Sourcing-Datensatzes und die externe Konto-ID des Marketing SMS-Routing kombinieren.
+   Mit dem folgenden neuen benutzerdefinierten Skript können Sie inSMS-Daten anhand eines zusammengesetzten Schlüssels aktualisieren, indem Sie den Primärschlüssel des Mid-Sourcing-Eintrags und die externe Konto-ID des Marketing-SMS-Routing kombinieren.
 
-   Befolgen Sie die unten stehenden Voraussetzungen:
+   Gehen Sie dazu wie folgt vor:
 
-   * Geben Sie den tatsächlichen Wert für ein `<EXTERNAL_ACCOUNT_ID>`, z. B. `var iExtAccountId=72733155`.
+   * Geben Sie den tatsächlichen Wert für `<EXTERNAL_ACCOUNT_ID>` ein, z. B. `var iExtAccountId=72733155`.
    * Achten Sie darauf, die folgenden Elemente im benutzerdefinierten Skript zu behalten:
       * `_operation="insertOrUpdate"`
       * `_key="@midInSMSId,@extAccount-id"`
@@ -144,4 +144,4 @@ ht-degree: 5%
    > * Sie können eine beliebige externe Konto-ID verwenden. Die Rolle des Fremdschlüssels besteht darin, die Integrität der Datenabstimmung in Szenarien mit verschiedenen Mid-Sourcing-Servern zu wahren, in denen die Mid-Sourcing-SMS-ID in anderen Mid-Sourcing-Instanzen identisch sein kann.
    > * Wenn mehrere InSMS-Workflows pro Mid-Sourcing-Instanz vorhanden sind, kann es zu einer Datenduplizierung kommen, da die Mid-Sourcing-SMS-ID konstant bleibt, während die externen Konto-IDs variieren.
 
-1. Speichern und starten Sie den Workflow neu.
+1. Speichern Sie und starten Sie den Workflow erneut.

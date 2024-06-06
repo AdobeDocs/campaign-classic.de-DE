@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: d585a5d4-ea33-43c8-aa37-4d892025374a
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1120'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -72,7 +72,7 @@ Außerdem ist bei der Angabe eines Pfades zu einem externen SFTP-Server in Campa
 
 Im Folgenden finden Sie die Informationen, die Sie prüfen und dem Adobe-Supportteam über die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) zur Verfügung stellen müssen, wenn ein Verbindungsproblem mit von Adobe gehosteten SFTP-Servern auftritt.
 
-1. Überprüfen Sie, ob Ihre Instanz ausgeführt wird. Öffnen Sie dazu den Browser und erstellen Sie eine **[!UICONTROL GET]** Aufruf der Instanz **[!UICONTROL /r/test]** Endpunkt:
+1. Überprüfen Sie, ob Ihre Instanz ausgeführt wird. Öffnen Sie dazu Ihren Browser und führen Sie einen **[!UICONTROL GET]**-Aufruf am Endpunkt **[!UICONTROL /r/test]** der Instanz durch:
 
    ```
    https://instanceUrl/r/test

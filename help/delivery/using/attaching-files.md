@@ -7,9 +7,9 @@ feature: Email
 role: User
 exl-id: db65e83e-276f-4163-98c3-3658a48acffc
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1082'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Sie können an einen E-Mail-Versand eine oder mehrere Dateien anhängen.
 Sie haben zwei Möglichkeiten:
 
 * Datei unverändert anhängen.
-* Personalisieren Sie den Inhalt des Anhangs für jeden Empfänger. In diesem Fall müssen Sie eine **berechnete Anlage**: Der Name des Anhangs wird zum Zeitpunkt des Versands für jede Nachricht entsprechend dem Empfänger berechnet. Wenn Sie zum Zeitpunkt der Bereitstellung über die **Variablendigitaler Druck** -Option.
+* Den Inhalt des Anhangs für jeden Empfänger personalisieren. In diesem Fall ist die Erstellung eines **berechneten Anhangs** erforderlich. Der Titel des Anhangs wird für jede Nachricht zum Zeitpunkt des Versands berechnet und kann somit Empfänger-spezifisch sein. Die personalisierten Anhänge vor dem Senden in eine PDF-Datei umwandeln, wenn Sie über die Lizenz für **Variable Digital Printing** verfügen.
 
 >[!NOTE]
 >
@@ -123,7 +123,7 @@ Gehen Sie wie folgt vor, um diese Art von Anhang zu konfigurieren:
 
 ### Berechnete Datei anhängen {#attach-a-calculated-file}
 
-Sie können den Anlagennamen während der Versandvorbereitung berechnen. Wählen Sie dazu die Option **[!UICONTROL Dateiname wird bei der Versandanalyse berechnet (unabhängig vom Empfänger)]**.
+Sie können den Namen des Anhangs während der Versandvorbereitung berechnen lassen. Wählen Sie dazu die Option **[!UICONTROL Dateiname wird bei der Versandanalyse berechnet (unabhängig vom Empfänger)]** aus.
 
 >[!NOTE]
 >
@@ -169,7 +169,7 @@ Bei der Auswahl des Anhangs können Sie die Option **[!UICONTROL Dateiname wird 
 
 ### Einstellungen für den Anhang {#attachment-settings}
 
-Für die ersten beiden Optionen können Sie **[!UICONTROL Datei auf den Server hochladen]** durch Auswahl der entsprechenden Option. Die **[!UICONTROL Datei auf dem Server aktualisieren]** -Link können Sie mit dem Hochladen beginnen.
+Für die ersten beiden Optionen können Sie **[!UICONTROL Datei auf den Server hochladen]** durch Auswahl der entsprechenden Option wählen. Über den Link **[!UICONTROL Datei auf dem Server aktualisieren]** können Sie mit dem Hochladen beginnen.
 
 ![](assets/s_ncs_user_wizard_email01_137.png)
 
@@ -183,7 +183,7 @@ Ein Warnhinweis erscheint, wenn die Datei geändert wurde:
 
 Im **[!UICONTROL Erweitert]**-Tab können Sie für Anhänge die folgenden Optionen konfigurieren:
 
-* Sie können Filteroptionen definieren, um zu vermeiden, dass die angehängte Datei an alle Empfänger gesendet wird. Die Option **[!UICONTROL Aktivieren der Filterung von Empfängern, die den Anhang erhalten]** aktiviert ein Eingabefeld, das zur Definition eines in JavaScript anzugebenden Auswahlskripts für Empfänger verwendet wird.
+* Auswahl der Empfänger, die den Anhang erhalten sollen. Kreuzen Sie die Option **[!UICONTROL Empfängerfilter bezüglich des Anhangs aktivieren]** an und geben Sie im Eingabefenster in Form eines JavaScripts das Auswahlkriterium an.
 * Erstellung eines Scripts, um den Dateinamen zu personalisieren.
 
   Geben Sie unter Verwendung der Dropdown-Liste mit den Personalisierungsfeldern im Eingabefenster den gewünschten Text ein. In unten stehendem Beispiel wurde der Dateiname mit dem Tagesdatum und dem Nachnamen des Empfängers personalisiert.

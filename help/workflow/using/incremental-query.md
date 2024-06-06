@@ -5,9 +5,9 @@ description: Erfahren Sie mehr über die Workflow-Aktivität "Inkrementelle Abfr
 feature: Workflows, Targeting Activity
 exl-id: abc08232-1a92-41e8-90f1-02e0a673539b
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '380'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Die Konfiguration der Abfrage entspricht der von Standardabfragen, aber die Ausf
 
 Gehen Sie dazu wie folgt vor:
 
-1. Im **[!UICONTROL Planung und Verlauf]** auswählen, wählen Sie die **[!UICONTROL Ausführung planen]** -Option. Die Aufgabe bleibt aktiv, sobald sie erstellt wurde, und wird nur zu den im Zeitplan für die Ausführung der Abfrage angegebenen Zeitpunkten ausgelöst. Wenn die Option jedoch deaktiviert ist, wird die Abfrage sofort ausgeführt **und in einem Schritt**.
+1. Aktivieren Sie auf der Registerkarte **[!UICONTROL Planung und Verlauf]** die Option **[!UICONTROL Ausführung planen]**. Nach Erstellung bleibt die Aufgabe aktiv, aber sie startet nur zu den in der Planung angegebenen Zeitpunkten, um die Abfrage auszuführen. Wenn die Option deaktiviert wurde, wird die Abfrage **einmalig und sofort** ausgeführt.
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Ändern...]**.
 
    Im sich öffnenden **[!UICONTROL Planungsassistent]**-Fenster können Sie den Ausführungsrhythmus und den Gültigkeitszeitraum definieren.

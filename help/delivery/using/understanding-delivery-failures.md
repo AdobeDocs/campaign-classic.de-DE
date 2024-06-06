@@ -7,9 +7,9 @@ feature: Monitoring, Deliverability
 role: User
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2618'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -57,7 +57,7 @@ Mögliche Ursachen für fehlgeschlagene Sendungen sind:
    <td> Konto deaktiviert </td> 
    <td> Softbounce / Hardbounce </td> 
    <td> 4 </td> 
-   <td> Das mit der Adresse verknüpfte Konto ist nicht mehr aktiv. Wenn der Internet Access Provider (IAP) eine längere Inaktivität feststellt, kann er das Konto des Benutzers schließen. Sendungen an die Adresse des Benutzers sind dann nicht mehr möglich. Wenn das Konto vorübergehend wegen einer sechsmonatigen Inaktivität deaktiviert ist und weiterhin aktiviert werden kann, wird der Status Mit Fehlern zugewiesen und der Versuch für das Konto wird wiederholt, bis der Fehlerzähler 5 erreicht hat. Wenn der Fehler signalisiert, dass das Konto dauerhaft deaktiviert ist, wird es direkt in Quarantäne gesetzt.<br /> </td> 
+   <td> Das mit der Adresse verknüpfte Konto ist nicht mehr aktiv. Wenn der Internetanbieter (IAP, Internet Access Provider) eine längere Inaktivität feststellt, kann er das Konto der Person schließen. Sendungen an die Adresse dieser Person sind dann nicht mehr möglich. Wenn das Konto aufgrund einer sechsmonatigen Inaktivität vorübergehend deaktiviert wurde und noch aktiviert werden kann, wird der Status „Mit Fehlern“ zugewiesen und der Zustellversuch wird wiederholt, bis der Fehlerzähler 5 erreicht. Wenn die Fehlermeldung besagt, dass das Konto permanent deaktiviert ist, wird es sofort unter Quarantäne gestellt.<br /> </td> 
   </tr> 
   <tr> 
    <td> Adresse in Quarantäne </td> 
@@ -117,7 +117,7 @@ Mögliche Ursachen für fehlgeschlagene Sendungen sind:
    <td> Ungültige Domain </td> 
    <td> Soft </td> 
    <td> 2 </td> 
-   <td> Die Domain der E-Mail-Adresse ist fehlerhaft oder existiert nicht mehr. An dieses Profil werden wiederholte Zustellversuche unternommen, bis die Fehleranzahl 5 erreicht. Danach wird der Datensatz in den Quarantänestatus versetzt und es wird kein weiterer Versuch unternommen.<br /> </td> 
+   <td> Die Domain der E-Mail-Adresse ist fehlerhaft oder existiert nicht mehr. An dieses Profil werden wiederholte Zustellversuche unternommen, bis die Fehleranzahl 5 erreicht. Danach wird der Eintrag in den Quarantänestatus versetzt und die Zustellversuche werden eingestellt.<br /> </td> 
   </tr> 
   <tr> 
    <td> Postfach voll </td> 
@@ -135,7 +135,7 @@ Mögliche Ursachen für fehlgeschlagene Sendungen sind:
    <td> Unbestimmt </td> 
    <td> Unbestimmt </td> 
    <td> 0 </td> 
-   <td> Die Adresse ist qualifiziert, da der Fehler noch nicht inkrementiert wurde. Dieser Fehlertyp tritt auf, wenn der Server eine neue Fehlermeldung sendet: Es kann sich um einen einmaligen Fehler handeln. Sollte er sich jedoch wiederholen, wird der Fehlerzähler erhöht, was die technischen Teams warnt. Sie können dann über den Knoten <span class="uicontrol">Administration</span> / <span class="uicontrol">Campaign Management</span> / <span class="uicontrol">Unzustellbarkeitsverwaltung</span> in der Baumstruktur eine Nachrichtenanalyse durchführen und diesen Fehler qualifizieren.<br /> </td> 
+   <td> Die Adresse befindet sich in der Qualifizierungsphase, da Fehler noch nicht inkrementiert worden sind. Dieser Fehlertyp tritt auf, wenn der Server eine bis dahin unbekannte Fehlermeldung sendet: Hierbei kann es sich um einen einmaligen Fehler handeln. Sollte er sich jedoch wiederholen, wird der Fehlerzähler erhöht, was die zuständigen technischen Mitarbeitenden auf das Problem aufmerksam macht. Sie können dann über den Knoten <span class="uicontrol">Administration</span> / <span class="uicontrol">Campaign Management</span> / <span class="uicontrol">Unzustellbarkeitsverwaltung</span> in der Baumstruktur eine Nachrichtenanalyse durchführen und diesen Fehler qualifizieren.<br /> </td> 
   </tr> 
   <tr> 
    <td> Kommt nicht für die Angebote infrage </td> 
@@ -147,7 +147,7 @@ Mögliche Ursachen für fehlgeschlagene Sendungen sind:
    <td> Zurückgewiesen </td> 
    <td> Softbounce / Hardbounce </td> 
    <td> 20 </td> 
-   <td> Die Adresse wurde wegen eines Sicherheits-Feedbacks unter Quarantäne gestellt, da die Nachricht als Spam gemeldet wurde. Je nach Fehler wird der Zustellversuch wiederholt, bis der Fehlerzähler 5 erreicht hat, oder die Adresse wird direkt unter Quarantäne gestellt.<br /> </td> 
+   <td> Die Adresse wurde wegen eines Sicherheits-Feedbacks unter Quarantäne gestellt, da die Nachricht als Spam gemeldet wurde. Je nach Fehler wird der Zustellversuch wiederholt, bis der Fehlerzähler 5 erreicht hat, oder die Adresse wird sofort unter Quarantäne gestellt.<br /> </td> 
   </tr> 
   <tr> 
    <td> Größe der Zielgruppe begrenzt </td> 
@@ -165,7 +165,7 @@ Mögliche Ursachen für fehlgeschlagene Sendungen sind:
    <td> Unerreichbar </td> 
    <td> Softbounce / Hardbounce </td> 
    <td> 3 </td> 
-   <td> In der Verteilungskette der Nachricht ist ein Fehler aufgetreten. Es kann sich um einen Vorfall beim SMTP-Server handeln, eine zeitweilig unerreichbare Domain usw. Je nach Fehler wird der Zustellversuch wiederholt, bis der Fehlerzähler 5 erreicht hat, oder die Adresse wird direkt unter Quarantäne gestellt.<br /> </td> 
+   <td> In der Versandkette der Nachricht ist ein Fehler aufgetreten. Es könnte sich um einen Vorfall auf dem SMTP-Relais, eine zeitweilig unerreichbare Domain o. a. handeln. Je nach Fehler wird der Zustellversuch wiederholt, bis der Fehlerzähler 5 erreicht hat, oder die Adresse wird sofort unter Quarantäne gestellt.<br /> </td> 
   </tr> 
   <tr> 
    <td> Unbekannter Nutzer </td> 
@@ -176,7 +176,7 @@ Mögliche Ursachen für fehlgeschlagene Sendungen sind:
  </tbody> 
 </table>
 
-## Weitere Zustellversuche nach einem vorübergehend fehlgeschlagenen Versand     {#retries-after-a-delivery-temporary-failure}
+## Weitere Zustellversuche nach einem vorübergehend fehlgeschlagenen Versand {#retries-after-a-delivery-temporary-failure}
 
 Wenn die Zustellung vorübergehend wegen eines **Softbounce** oder eines **ignorierten Fehlers** fehlschlägt, werden während der Versandlaufzeit erneute Zustellversuche vorgenommen.
 
@@ -239,11 +239,11 @@ Auf die entsprechende Liste kann im Knoten **[!UICONTROL Administration > Kampag
 
 ![](assets/tech_quarant_rules_qualif.png)
 
-Die vom Remote-Server beim ersten Auftreten dieses Fehlertyps zurückgegebene Nachricht wird im **[!UICONTROL Erster Text]** Spalte **[!UICONTROL Versandlogqualifizierung]** Tabelle. Wenn diese Spalte nicht angezeigt wird, klicken Sie auf die Schaltfläche **[!UICONTROL Liste konfigurieren]** rechts unten in der Liste, um sie auszuwählen.
+Die vom Remote-Server beim ersten Auftreten dieses Fehlertyps zurückgegebene Nachricht wird in der Spalte **[!UICONTROL Erster Text]** der Tabelle **[!UICONTROL Versandlogqualifizierung]** angezeigt. Wird diese Spalte nicht angezeigt, wählen Sie in der Liste rechts unten die Schaltfläche **[!UICONTROL Liste konfigurieren]**, um die Spalte auszuwählen.
 
 ![](assets/tech_quarant_rules_qualif_text.png)
 
-Adobe Campaign filtert diese Nachricht, um den variablen Inhalt zu löschen (wie IDs, Daten, E-Mail-Adressen, Telefonnummern usw.) und zeigt das gefilterte Ergebnis in der **[!UICONTROL Text]** Spalte. Die Variablen werden durch **`#xxx#`** ersetzt, mit Ausnahme der Adressen, die durch ersetzt **`*`** werden.
+Adobe Campaign filtert diese Nachricht, um den variablen Inhalt zu löschen (wie IDs, Daten, E-Mail-Adressen, Telefonnummern usw.) und zeigt das gefilterte Ergebnis in der Spalte **[!UICONTROL Text]**. Die Variablen werden durch **`#xxx#`** ersetzt, mit Ausnahme der Adressen, die durch ersetzt **`*`** werden.
 
 Dadurch können alle Fehlschläge desselben Typs zusammengefasst werden und mehrfache Einträge für ähnliche Fehler in die Versandlogqualifizierungs-Tabelle werden vermieden.
 
@@ -253,7 +253,7 @@ Dadurch können alle Fehlschläge desselben Typs zusammengefasst werden und mehr
 
 Folgende Qualifikationsstatus von Bounce Messages treten auf:
 
-* **[!UICONTROL Zu qualifizieren]**: die Bounce Message konnte nicht qualifiziert werden. Die Qualifizierung muss dem Zustellbarkeits-Team zugewiesen werden, um eine effiziente Zustellbarkeit der Plattform zu gewährleisten. Solange sie nicht qualifiziert ist, wird die Bounce Message nicht zur Anreicherung der Liste der E-Mail-Verwaltungsregeln verwendet.
+* **[!UICONTROL Zu qualifizieren]**: die Bounce Message konnte nicht qualifiziert werden. Die Qualifizierung muss dem Zustellbarkeits-Team zugewiesen werden, um eine effiziente Zustellbarkeit der Plattform zu gewährleisten. Solange sie nicht qualifiziert ist, wird die Bounce-Nachricht nicht zur Anreicherung der Liste der E-Mail-Verwaltungsregeln herangezogen.
 * **[!UICONTROL Beibehalten]**: Die Bounce Message wurde qualifiziert und wird vom Workflow **Zustellbarkeit** verwendet, um mit den existierenden E-Mail-Regeln verglichen zu werden und eventuell die Liste zu ergänzen.
 * **[!UICONTROL Ignorieren]**: Die Bounce Message wird vom Campaign MTA ignoriert, was bedeutet, dass diese Bounce Message nie dazu führt, dass die Adresse des Empfängers unter Quarantäne gestellt wird. Sie wird vom Workflow **Zustellbarkeit** nicht verwendet und auch nicht an Client-Instanzen gesendet.
 
@@ -275,7 +275,7 @@ Auf E-Mail-Regeln kann im Knoten **[!UICONTROL Administration > Kampagnen > Unzu
 
 >[!NOTE]
 >
->Die Standardparameter der Plattform werden im Softwareverteilungs-Assistenten konfiguriert. Weiterführende Informationen erhalten Sie in [diesem Abschnitt](../../installation/using/deploying-an-instance.md).
+>Die Standardparameter der Plattform werden im Bereitstellungsassistenten konfiguriert. Weiterführende Informationen erhalten Sie in [diesem Abschnitt](../../installation/using/deploying-an-instance.md).
 
 Folgende Regeln sind in der Standardkonfiguration vorgesehen.
 
@@ -294,7 +294,7 @@ For on-premise installations and hosted/hybrid installations using the legacy Ca
 
 Die **[!UICONTROL Regeln für eingehende E-Mails]** enthalten eine Liste von Zeichenfolgen, die von Remote-Servern zurückgegeben werden können und die es Ihnen ermöglichen, den Fehler zu qualifizieren (**Hardbounce**, **Softbounce** oder **Ignoriert**).
 
-Wenn eine E-Mail fehlschlägt, gibt der Remote-Server eine Bounce-Nachricht an die in der [Plattformparameter](../../installation/using/deploying-an-instance.md). Adobe Campaign vergleicht den Inhalt jeder Bounce Message mit den in der Regelliste verzeichneten Strings und ordnet ihn einem der drei [Fehlertypen](#delivery-failure-types-and-reasons) zu.
+Wenn die Zustellung einer E-Mail fehlschlägt, sendet der Remote-Server eine Bounce-Nachricht an die in den [Plattform-Parametern](../../installation/using/deploying-an-instance.md) angegebene Adresse. Adobe Campaign vergleicht den Inhalt jeder Bounce Message mit den in der Regelliste verzeichneten Strings und ordnet ihn einem der drei [Fehlertypen](#delivery-failure-types-and-reasons) zu.
 
 >[!NOTE]
 >

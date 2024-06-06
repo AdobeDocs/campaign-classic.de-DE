@@ -6,9 +6,9 @@ feature: Reporting, Monitoring
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 exl-id: 8b51d0fc-1692-41cd-9aa8-3bb8f4ee454e
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '636'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ Die referenzierten Scripts müssen in JavaScript verfasst und mit gängigen Brow
 
 Verwenden Sie beim [Entwerfen Ihres Berichts](../../reporting/using/creating-a-new-report.md#modelizing-the-chart) die **[!UICONTROL Script]**-Aktivität, um Daten zu verarbeiten und ganz leicht komplexe Abfragen zu erstellen, die keine SQL-Sprache aktivieren. Sie können Ihre Abfrage direkt im Script-Fenster eingeben.
 
-Die **[!UICONTROL Texte]** -Tab ermöglicht die Definition von Textzeichenfolgen. Sie können dann mit der folgenden Syntax verwendet werden: **$(Identifier)**. Weitere Informationen zur Verwendung von Texten finden Sie unter [Header und Footer hinzufügen](../../reporting/using/element-layout.md#adding-a-header-and-a-footer).
+Auf dem Tab **[!UICONTROL Texte]** können Sie Text-Strings definieren. Sie können dann mit der folgenden Syntax verwendet werden: **$(Identifier)**. Weitere Informationen zur Verwendung von Texten finden Sie unter [Header und Footer hinzufügen](../../reporting/using/element-layout.md#adding-a-header-and-a-footer).
 
 >[!CAUTION]
 >

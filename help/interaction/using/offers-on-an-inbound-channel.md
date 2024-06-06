@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: case-study
 exl-id: 90afced3-465d-4370-8a33-51a7e4356135
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2163'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ Das Ergebnis ist eine Navigationsstruktur, welche Ihre neue Umgebung enthält:
    >
    >Die Platzierung wird automatisch der anonymen Umgebung zugeordnet.
 
-1. Ändern Sie den Titel und wählen Sie die **[!UICONTROL Inbound Web]** -Kanal. Sie müssen auch die **[!UICONTROL Einzelmodus aktivieren]** ankreuzen.
+1. Benennen Sie die Platzierung und wählen Sie den Kanal **[!UICONTROL Web (eingehend)]**. Aktivieren Sie darüber hinaus auch die Option **[!UICONTROL Einzelmodus zulassen]**.
 
    ![](assets/offer_inbound_anonymous_example_006.png)
 
@@ -278,7 +278,7 @@ Erstellen Sie nun jeweils zwei Angebote in jeder der zuvor erstellten Kategorien
 
    ![](assets/offer_inbound_fallback_example_036.png)
 
-1. Führen Sie den Validierungszyklus für jedes Angebot aus, um es live zu schalten. Aktivieren Sie bei der Inhaltsvalidierung die **Partner** oder **Premium** Platzierung entsprechend dem Angebot.
+1. Lassen Sie alle Angebote den Validierungszyklus durchlaufen, um sie in der Live-Umgebung verfügbar zu machen. Stellen Sie sicher, dass im Zuge der Inhaltsvalidierung je nach Angebot entweder die Platzierung **Partner** oder die Platzierung **Premium** aktiviert wird.
 
 ### Konfiguration der Platzierungen für die identifizierte Umgebung {#configure-the-offer-spaces-in-the-identified-environment}
 
@@ -363,7 +363,7 @@ Erstellen Sie nun in jeder Kategorie zwei Angebote, d. h. vier Angebote insgesam
    ![](assets/offer_inbound_fallback_example_017.png)
 
 1. Definieren Sie im Tab **[!UICONTROL Eignung]** die gleiche Gewichtung wie für das erste Angebot dieser Kategorie, damit die Angebote abwechselnd auf der Webseite angezeigt werden.
-1. Führen Sie den Validierungszyklus für jedes Angebot aus, um mit der Aktualisierung zu beginnen. Aktivieren Sie bei der Inhaltsvalidierung die **Partner** oder **Premium** Platzierungen.
+1. Lassen Sie alle Angebote den Validierungszyklus durchlaufen, um sie in der Live-Umgebung verfügbar zu machen. Stellen Sie sicher, dass im Zuge der Inhaltsvalidierung je nach Angebot entweder die Platzierung **Partner** oder die Platzierung **Premium** aktiviert wird.
 
 ### Konfiguration der Angebotsplatzierungen auf der Website {#configuring-offer-spaces-on-the-web-page}
 
@@ -383,11 +383,11 @@ Gehen Sie wie folgt vor, um die Platzierungen der Angebote in der HTML-Seite der
 
    ![](assets/offer_inbound_fallback_example_040.png)
 
-   In diesem Beispiel **ContBO1** und **ContBO2** erhält den Wert **OsWebBestOfferIdentified**, d. h. der interne Name des **Premium** Platzierung, die zuvor in der identifizierten Umgebung erstellt wurde. Die **CatBestOffer** und **CatBestOfferAnonym** -Werte entsprechen dem internen Namen der **Premium** Kategorien für anonyme und identifizierte Umgebungen.
+   Im vorliegenden Beispiel nehmen **ContBO1** und **ContBO2** den Wert **SPC24** an, d. h. den internen Namen der zuvor in der identifizierten Umgebung erstellten **Premium**-Platzierung. Die Werte **CatBestOffer** bzw. **CatBestOfferAnonym** entsprechen den internen Namen der **Premium**-Kategorie der anonymen bzw. identifizierten Umgebung.
 
    ![](assets/offer_inbound_fallback_example_041.png)
 
-   Ebenso **ContPtn** empfängt die **OSWebPartnerIdentified** -Wert, der mit dem internen Namen der **Partner** Platzierung, die in der identifizierten Umgebung erstellt wurde. **CatPartner** und **CatPartnerAnonym** mit dem internen Namen der **Partner** Kategorien für anonyme und identifizierte Umgebungen.
+   Des Weiteren nimmt **ContPtn** den Wert **OSWebPartnerIdentified** an, was dem internen Namen der in der identifizierten Umgebung erstellten **Partner**-Platzierung entspricht. **CatPartner** bzw. **CatPartnerAnonym** entsprechen den internen Namen der **Partner**-Kategorie der anonymen bzw. identifizierten Umgebung.
 
    ![](assets/offer_inbound_fallback_example_042.png)
 
@@ -405,6 +405,6 @@ Gehen Sie wie folgt vor, um die Platzierungen der Angebote in der HTML-Seite der
 
 Bei Aufruf der Webseite löst das Script die Abfrage des Angebotsmoduls aus, damit der Angebotsinhalt in den hierfür vorgesehenen Platzierungen angezeigt wird. Mit nur einer Abfrage des Adobe-Campaign-Servers erkennt das Angebotsmodul die auszuwählende Umgebung, Platzierung und Angebotskategorie.
 
-In diesem Beispiel erkennt die Engine die identifizierte Umgebung (**EnvNeobankIdnRecip**). Er identifiziert die Platzierung (**OSWebBestOfferIdentified**) und der **Premium** category (**CatBestOffer**) für die ersten und zweiten Angebotsplatzierungen auf der Webseite sowie die (**OSWebPartnerIdentified**) die Platzierung und **Partner** category (**CatPartner**) für die dritte Platzierung auf der Site.
+In diesem Beispiel erkennt die Engine die identifizierte Umgebung (**EnvNeobankIdnRecip**). Sie identifiziert die Platzierung (**OSWebBestOfferIdentified**) und die **Premium**-Kategorie (**CatBestOffer**) für die erste und zweite Platzierung der Web-Seite sowie die Platzierung (**OSWebPartnerIdentified**) und die **Partner**-Kategorie (**CatPartner**) für die dritte Platzierung der Web-Seite.
 
 Wenn das Modul den Besucher nicht identifizieren kann, wechselt es zu den anonymen Platzierungen, die in den identifizierten Platzierungen referenziert wurden, und zu den anonymen Kategorien (**OC12** bzw. **OC13**), wie im Script angegeben.

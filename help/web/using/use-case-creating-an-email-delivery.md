@@ -6,9 +6,9 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: e2679f12-459b-466d-9c82-60a28363b104
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '796'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -65,7 +65,7 @@ Sie können diesen Inhalt als Vorlage zur späteren Verwendung speichern. Nachde
 
 * Vor- und Nachnamen der Empfänger anzeigen
 
-  Um den Vor- und Nachnamen der Empfänger in ein Textfeld Ihres Versands einzufügen, klicken Sie auf das gewünschte Textfeld und platzieren Sie den Cursor an die Stelle, an der Sie ihn anzeigen möchten. Klicken Sie auf das erste Symbol in der Popup-Symbolleiste und dann auf **[!UICONTROL Gestaltungsbaustein]**. Auswählen **[!UICONTROL Greetings]** Klicken Sie auf **[!UICONTROL OK]**.
+  Um den Vor- und Nachnamen der Empfänger in ein Textfeld Ihres Versands einzufügen, klicken Sie auf das gewünschte Textfeld und platzieren Sie den Cursor an die Stelle, wo der Name angezeigt werden soll. Klicken Sie auf das erste Symbol in der Pop-up-Symbolleiste und danach auf **[!UICONTROL Gestaltungsbaustein]**. Wählen Sie **[!UICONTROL Grußformeln]** und danach **[!UICONTROL OK]** aus.
 
   ![](assets/dce_personalizationblock_greetings.png)
 
@@ -81,7 +81,7 @@ Sie können diesen Inhalt als Vorlage zur späteren Verwendung speichern. Nachde
 
 * Link in Text einfügen
 
-  Um einen externen Link in den Text Ihres Versands zu integrieren, wählen Sie Text oder einen Textblock aus und klicken Sie dann auf das erste Symbol in der Pop-up-Symbolleiste. Klicks **[!UICONTROL Link zu einer externen URL]**, geben Sie die Linkadresse in die **[!UICONTROL URL]** -Feld. Weitere Informationen finden Sie unter [Link hinzufügen](editing-content.md#adding-a-link).
+  Um einen externen Link in den Text Ihres Versands einzufügen, wählen Sie Text aus und klicken Sie auf das erste Symbol der Pop-up-Symbolleiste. Wählen Sie **[!UICONTROL Link auf eine externe URL]** aus und geben Sie im Feld **[!UICONTROL URL]** die Adresse des Links ein. Weitere Informationen finden Sie unter [Link hinzufügen](editing-content.md#adding-a-link).
 
   Der Link kann jederzeit im rechten Fensterbereich geändert werden.
 
@@ -93,7 +93,7 @@ Sie können diesen Inhalt als Vorlage zur späteren Verwendung speichern. Nachde
 
   Um Empfängern zu ermöglichen, Ihren Versandinhalt in einem Webbrowser zu sehen, können Sie in Ihrem Versand einen Link zu einer Mirrorseiten integrieren.
 
-  Klicken Sie auf das Textfeld, in dem der Link erscheinen soll. Klicken Sie auf das erste Symbol in der Popup-Symbolleiste und wählen Sie **[!UICONTROL Gestaltungsbaustein]**, dann **[!UICONTROL Link zur Mirrorseite (MirrorPage)]**. Klicken Sie zur Bestätigung auf **[!UICONTROL Speichern]**.
+  Klicken Sie auf das Textfeld, in dem der Link erscheinen soll. Klicken Sie auf das erste Symbol in der Pop-up-Symbolleiste und wählen Sie **[!UICONTROL Gestaltungsbaustein]** und danach **[!UICONTROL Mirrorseiten-Link (MirrorPage)]** aus. Klicken Sie zur Bestätigung auf **[!UICONTROL Speichern]**.
 
   ![](assets/dce_mirrorpage.png)
 
@@ -105,7 +105,7 @@ Sie können diesen Inhalt als Vorlage zur späteren Verwendung speichern. Nachde
 
   Mit dem Digital Content Editor können Sie über die Adobe Campaign-Konsole Links auf Webanwendungen integrieren, z. B. auf eine Landingpage oder Formularseite. Weitere Informationen hierzu finden Sie unter [Link auf eine Webanwendung](editing-content.md#link-to-a-web-application).
 
-  Wählen Sie ein Textfeld für Ihren Link auf eine Webanwendung aus und klicken Sie dann auf das erste Symbol. Auswählen **[!UICONTROL Link zu einer Webanwendung]** und wählen Sie dann die gewünschte Anwendung aus, indem Sie auf das Symbol am Ende des **Webanwendung** -Feld.
+  Wählen Sie ein Textfeld für Ihren Link auf eine Webanwendung aus und klicken Sie dann auf das erste Symbol. Wählen Sie **[!UICONTROL Link auf eine Webanwendung]** und danach die gewünschte Anwendung aus, indem Sie auf das Symbol am Ende des Feldes **Webanwendung** klicken.
 
   ![](assets/dce_webapp.png)
 

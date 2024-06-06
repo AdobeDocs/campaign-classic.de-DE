@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: c736ac1cda9490548f1e4b56142d61fccaca5c4a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3787'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -23,11 +23,11 @@ Die entsprechenden Aktualisierungen finden Sie in den [Versionshinweisen zu Adob
 
 ### April 2024 {#apr-2024}
 
-Es wurde ein Warnhinweis zur Benutzererstellung mit Adobe Identity Management System (IMS) hinzugefügt. [Weitere Informationen](../../platform/using/access-management.md)
+Es wurde ein Warnhinweis zur Erstellung von Benutzern mithilfe von Adobe Identity Management System (IMS) hinzugefügt. [Weitere Informationen](../../platform/using/access-management.md)
 
-Es wurden fehlende Optionen für die Workflow-Aktivität Webdownload hinzugefügt. [Weitere Informationen](../../workflow/using/web-download.md)
+Es wurden fehlende Optionen für die Workflow-Aktivität „Web-Download“ hinzugefügt. [Weitere Informationen](../../workflow/using/web-download.md)
 
-Der **Dimension ändern** und **Datenquelle ändern** Aktivitäten bezüglich ihrer Verwendung in einem Workflow. [Weitere Informationen](../../workflow/using/change-data-source.md)
+Den Aktivitäten **Dimension ändern** und **Datenquelle ändern** wurde ein Warnhinweis zu ihrer Verwendung in einem Workflow hinzugefügt. [Weitere Informationen](../../workflow/using/change-data-source.md)
 
 ### März 2024 {#mar-2024}
 

@@ -6,9 +6,9 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Landing Pages
 exl-id: 71c737c2-b0d6-4ae8-a5df-28a08dff82d7
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '779'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -133,7 +133,7 @@ Sie können Felder nach Bedarf zu Pflichtfeldern machen: Beispielsweise können 
 
 Dieser Schritt ist unbedingt erforderlich, da die Webanwendung damit die Reihenfolge der nächsten Schritte feststellen kann: Speichern der erfassten Daten in der Datenbank und die Anzeige der nächsten Seite (**Dankeseite**).
 
-1. Wählen Sie die **[!UICONTROL Schicken Sie es!]** Schaltfläche des **[!UICONTROL Sammlung]** Seite.
+1. Wählen Sie die Schaltfläche **[!UICONTROL Senden]** der Seite **[!UICONTROL Sammlung]** aus.
 1. Öffnen Sie die Dropdown-Liste **[!UICONTROL Aktion]**.
 1. Wählen Sie die Aktion **[!UICONTROL Nächste Seite]** aus.
 

@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: response-manager
 exl-id: e0b3bc9f-5e81-463f-a59e-cd972a47109b
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1076'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Es gibt folgende Möglichkeiten, Hypothesen einem Angebot oder einem Kampagnenve
 * über den Tab **[!UICONTROL Bearbeiten]** > **[!UICONTROL Messung]** einer Kampagne;
 * über die Option **[!UICONTROL Messung]** eines von einer Kampagne aus erstellten Versands.
 
-Hypothesen können erst berechnet werden, nachdem die Marketingkampagne gestartet und die Empfänger den Versand erhalten haben. Basiert die Hypothese auf einem Angebotsvorschlag, muss dieser zumindest unterbreitet werden und dennoch aktiv sein. Angebots- und Versandhypothesen werden über das **[!UICONTROL Messhypothesen]** und basieren auf einer Hypothesenvorlage. Es ist jedoch möglich, eine Hypothese direkt im Versand oder in der Kampagne zu referenzieren, bevor die Kampagne beginnt. In diesem Fall werden die Hypothesen nach dem Start der Marketingkampagne unter Berücksichtigung der Ausführungsparameter automatisch berechnet. [Weitere Informationen](hypothesis-templates.md#hypothesis-template-execution-settings)   
+Hypothesen können erst berechnet werden, nachdem die Marketing-Kampagne gestartet wurde und die Empfangenden den Versand erhalten haben. Basiert die Hypothese auf einem Angebotsvorschlag, muss dieser zumindest unterbreitet werden und dennoch aktiv sein. Angebots- und Versandhypothesen werden über den Ordner **[!UICONTROL Messhypothesen]** erstellt und basieren auf einer Hypothesenvorlage. Sie haben des Weiteren die Möglichkeit, eine Hypothese direkt in einem Versand oder einer Kampagne zu referenzieren, bevor die Kampagne gestartet wird. In diesem Fall werden die Hypothesen automatisch nach dem Start der Marketing-Kampagne unter Berücksichtigung der Ausführungsparameter berechnet. [Weitere Informationen](hypothesis-templates.md#hypothesis-template-execution-settings)   
 
 ## Erstellen einer Hypothese direkt in einem Versand {#creating-a-hypothesis-on-the-fly-on-a-delivery}
 
@@ -64,7 +64,7 @@ Um eine Hypothese für einen bestehenden Versand zu erstellen, gehen Sie wie fol
    >[!CAUTION]
    >
    >Wenn Sie die Option **[!UICONTROL Ausführungs-Workflow beibehalten]** aktiviert haben, können Sie auf den Workflow zugreifen.\
-   >Diese Option darf nur zu Debugging-Zwecken bei Fehlern bei der Ausführung der Hypothese aktiviert werden. Automatisch generierte Workflows werden im **[!UICONTROL Administration]** > **[!UICONTROL Produktion]** > **[!UICONTROL Automatisch erstellte Objekte]** > **[!UICONTROL Kampagnen-Workflows]** Ordner im Adobe Campaign-Explorer.
+   >Die Option sollte jedoch nur Debugging-Zwecken bei fehlerhaften Hypothesenausführungen aktiviert werden. Automatisch generierte Workflows werden im Ordner **[!UICONTROL Administration]** > **[!UICONTROL Betreibung]** > **[!UICONTROL Automatisch erstellte Objekte]** > **[!UICONTROL Kampagnen-Workflows]** des Adobe-Campaign-Explorers gespeichert.
    > 
    >Automatisch generierte Workflows sollten zudem nicht verändert werden. Jede dennoch vorgenommene Änderung wird nur für nachfolgende Berechnungen berücksichtigt.
    >

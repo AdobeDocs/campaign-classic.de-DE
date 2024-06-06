@@ -6,9 +6,9 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Web Apps
 exl-id: 82c5c610-8161-4686-aa79-1b690e763765
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '384'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Wählen Sie mindestens eine weitere Sprache im Tab **[!UICONTROL Lokalisierung]*
 
 Mit dieser Option können Sie angeben, ob der Inhaltsbaustein übersetzt werden muss oder nicht.
 
-Zu übersetzende Strings werden auf dieselbe Weise erfasst wie die anderen Strings der Webanwendung, über die **[!UICONTROL Übersetzungen]** Registerkarte der Anwendung. Weitere Informationen hierzu finden Sie auf [dieser Seite](translating-a-web-form.md).
+Zu übersetzende Strings werden auf dieselbe Weise erfasst wie die anderen Strings der Webanwendung, nämlich über den Tab der Anwendung **[!UICONTROL Übersetzungen]**. Weitere Informationen hierzu finden Sie auf [dieser Seite](translating-a-web-form.md).
 
 So kennzeichnen Sie die zu übersetzenden Strings:
 

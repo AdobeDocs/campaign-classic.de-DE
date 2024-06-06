@@ -5,9 +5,9 @@ description: Erfahren Sie, wie Sie einen Workflow starten, und lernen Sie die Sy
 feature: Workflows
 exl-id: d345ba62-c2fb-43df-a2a1-e9e4292d301a
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1202'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 73%
 
 Workflows werden grundsätzlich manuell gestartet, Nach dem Starten können sie jedoch inaktiv bleiben, je nachdem, welche Informationen über eine Planung (siehe [Planung](scheduler.md)) oder Aktivitätsplanung angegeben wurden.
 
-Aktionen im Zusammenhang mit der Ausführung des Zielgruppen-Workflows (Start, Stopp, Pause etc.) are **asynchron** Prozesse: Die Reihenfolge wird aufgezeichnet und wird wirksam, sobald der Server verfügbar ist, um sie anzuwenden.
+Aktionen im Zusammenhang mit der Ausführung des Zielgruppen-Workflows (Start, Stopp, Pause usw.) sind **asynchrone** Prozesse: der Auftrag wird gespeichert und erst dann ausgeführt, wenn der Server verfügbar ist.
 
 Anhand der Schaltflächen der Symbolleiste kann die Ausführung des Workflows gesteuert und überwacht werden.
 
@@ -29,7 +29,7 @@ Die im Menü **[!UICONTROL Aktionen]** und im Kontextmenü verfügbaren Befehle 
 
 ## Aktionen-Symbolleiste {#actions-toolbar}
 
-Die Schaltflächen der Symbolleiste werden in diesem Abschnitt beschrieben. [Abschnitt](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow). Die **[!UICONTROL Aktionen]** -Schaltfläche bietet Zugriff auf zusätzliche Ausführungsoptionen für die Bearbeitung ausgewählter Workflows. Sie können auch das Menü **[!UICONTROL Datei > Aktionen]** verwenden oder mit der rechten Maustaste auf einen Workflow klicken und dann **[!UICONTROL Aktionen]** auswählen.
+Die Symbolleiste wird in diesem [Abschnitt](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow) beschrieben. Die Schaltfläche **[!UICONTROL Aktionen]** bietet weiterführende Optionen, um auf die Ausführung eines oder mehrerer Workflows Einfluss zu nehmen. Sie können auch das Menü **[!UICONTROL Datei > Aktionen]** verwenden oder mit der rechten Maustaste auf einen Workflow klicken und dann **[!UICONTROL Aktionen]** auswählen.
 
 ![](assets/purge_historique.png)
 
@@ -45,7 +45,7 @@ Die Schaltflächen der Symbolleiste werden in diesem Abschnitt beschrieben. [Abs
 
 * **[!UICONTROL Anhalten]**
 
-  Diese Aktion hält die Ausführung eines Workflows an. Der Status der Instanz ist auf **Abgeschlossen**. Laufende Vorgänge werden nach Möglichkeit beendet. Importe und SQL-Abfragen werden sofort abgebrochen.
+  Dieser Befehl hält die Ausführung eines laufenden Workflows an. Der Status der Workflow-Instanz wechselt zu **Abgeschlossen**. Laufende Aktionen werden nach Möglichkeit unterbrochen. Gestartete Importe oder SQL-Abfragen werden sofort abgebrochen.
 
   >[!IMPORTANT]
   >
@@ -63,7 +63,7 @@ Die Schaltflächen der Symbolleiste werden in diesem Abschnitt beschrieben. [Abs
 
   Dieser Befehl hält einen Workflow zunächst an und startet ihn dann erneut.In den meisten Fällen ermöglicht diese Vorgehensweise einen schnelleren Neustart als die separate Verwendung der Anhalten- und Starten-Schaltflächen. Dies ist insbesondere dann nützlich, wenn das Anhalten eines Workflows geraume Zeit in Anspruch nimmt, da der Befehl &quot;Starten&quot; erst wieder verfügbar ist, wenn der Workflow tatsächlich angehalten wurde.
 
-  Die **[!UICONTROL Start/Pause/Stopp/Neu starten]** Aktionen sind auch über die Ausführungssymbole in der Symbolleiste verfügbar. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../campaign/using/marketing-campaign-deliveries.md#creating-a-targeting-workflow).
+  Die Befehle **[!UICONTROL Starten/Aussetzen/Anhalten/Neu starten]** sind auch über die entsprechenden Schaltflächen der Symbolleiste verfügbar. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../campaign/using/marketing-campaign-deliveries.md#creating-a-targeting-workflow).
 
 * **[!UICONTROL Verlaufsbereinigung]**
 
@@ -71,29 +71,29 @@ Die Schaltflächen der Symbolleiste werden in diesem Abschnitt beschrieben. [Abs
 
 * **[!UICONTROL Im Simulationsmodus starten]**
 
-  Mit dieser Option können Sie den Workflow im Simulationsmodus starten, nicht im eigentlichen Modus. Wenn Sie diesen Modus aktivieren, werden nur Aktivitäten ausgeführt, die keine Auswirkungen auf die Datenbank oder das Dateisystem haben (z. B. **[!UICONTROL Abfrage]**, **[!UICONTROL Vereinigung]**, **[!UICONTROL Schnittmenge]** usw.). Aktivitäten, die einen Einfluss haben (z. B. **[!UICONTROL Export]**, **[!UICONTROL Import]** usw.) sowie die darauf folgenden (im selben Zweig) nicht ausgeführt werden.
+  Mithilfe dieses Befehls wird der Workflow im Simulationsmodus gestartet. Wenn Sie diesen Modus aktivieren, werden nur Aktivitäten ausgeführt, die keine Auswirkungen auf die Datenbank oder das Dateisystem haben (z. B. **[!UICONTROL Abfrage]**, **[!UICONTROL Vereinigung]**, **[!UICONTROL Schnittmenge]** usw.). Aktivitäten, die einen Einfluss haben (z. B. **[!UICONTROL Export]**, **[!UICONTROL Import]** usw.) sowie die darauf folgenden (im selben Zweig) werden nicht ausgeführt.
 
 * **[!UICONTROL Vorgezogene Ausführung der ausstehenden Aufgaben]**
 
-  Mit dieser Aktion können Sie alle ausstehenden Aufgaben so bald wie möglich starten. Um eine bestimmte Aufgabe zu starten, klicken Sie mit der rechten Maustaste auf ihre Aktivität und wählen Sie **[!UICONTROL Ausstehende Aufgabe(n) jetzt ausführen]**.
+  Dieser Befehl bietet die Möglichkeit, so schnell wie möglich alle ausstehenden Aufgaben zu starten. Wenn Sie eine bestimmte Aufgabe starten möchten, klicken Sie auf die entsprechende Aktivität und wählen Sie **[!UICONTROL Aufgabe(n) jetzt bearbeiten]**.
 
 * **[!UICONTROL Als Vorlage speichern]**
 
-  Dadurch wird basierend auf dem ausgewählten Workflow eine neue Workflow-Vorlage erstellt. Sie müssen den Ordner angeben, in dem er gespeichert werden soll (im **[!UICONTROL Ordner]** -Feld).
+  Dieser Befehl erstellt eine neue, auf dem markierten Workflow basierende Workflow-Vorlage. Geben Sie im Feld **[!UICONTROL Ordner]** den gewünschten Speicherordner an.
 
-  Die **[!UICONTROL Ausgewählte Zeilen gebündelt aktualisieren]** und **[!UICONTROL Ausgewählte Zeilen zusammenführen]** -Optionen sind allgemeine Plattformoptionen, die in allen **[!UICONTROL Aktionen]** Menüs. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../platform/using/updating-data.md).
+  Die Optionen **[!UICONTROL Ausgewählte Zeilen gebündelt aktualisieren...]** und **[!UICONTROL Ausgewählte Zeilen fusionieren...]** sind allgemeine Optionen der Plattform, die in allen Menüs **[!UICONTROL Aktionen]** zur Verfügung stehen. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../platform/using/updating-data.md).
 
 
 ## Best Practices für die Workflow-Ausführung {#workflow-execution-best-practices}
 
 **Es wird empfohlen, Workflows nicht öfter als alle 15 Minuten auszuführen**, da die Gesamt-Performance des Systems beeinträchtigt werden kann und Blockierungen in der Datenbank entstehen können.
 
-**Verhindern Sie, dass Ihre Workflows ausgesetzt werden.**. Wenn Sie einen temporären Workflow erstellen, stellen Sie sicher, dass dieser ordnungsgemäß beendet werden kann und nicht in einem **[!UICONTROL pausiert]** state. Wenn sie angehalten wird, würde dies bedeuten, dass Sie die temporären Tabellen beibehalten und somit die Größe der Datenbank erhöhen müssen. Weisen Sie unter „Workflow-Eigenschaften“ Workflow-Verantwortliche zu, um eine Warnung zu senden, wenn ein Workflow fehlschlägt oder vom System ausgesetzt wird.
+**Vermeiden Sie es, Ihre Workflows in einem angehaltenen Zustand zu belassen**. Wenn Sie einen temporären Workflow erstellen, stellen Sie sicher, dass er korrekt beendet werden kann und nicht in einem **[!UICONTROL pausierten]** Zustand bleibt. Wenn er pausiert ist, bedeutet dies nämlich, dass Sie die temporären Tabellen beibehalten müssen und somit die Größe der Datenbank erhöhen. Weisen Sie unter „Workflow-Eigenschaften“ Workflow-Verantwortliche zu, um eine Warnung zu senden, wenn ein Workflow fehlschlägt oder vom System ausgesetzt wird.
 
 So vermeiden Sie, dass Workflows ausgesetzt werden:
 
 * Prüfen Sie Ihre Workflows regelmäßig, um sicherzustellen, dass keine unerwarteten Fehler auftreten.
-* Bauen Sie Ihre Workflows möglichst einfach auf, indem Sie beispielsweise große Workflows in mehrere Workflows aufteilen. Sie können **[!UICONTROL Externes Signal]** -Aktivitäten ihre Ausführung auf der Grundlage der Ausführung anderer Workflows Trigger haben.
+* Bauen Sie Ihre Workflows möglichst einfach auf, indem Sie beispielsweise große Workflows in mehrere kleine unterteilen. Mit der Aktivität **[!UICONTROL Externes Signal]** können Sie Workflows durch andere Workflows auslösen.
 * Vermeiden Sie es, Aktivitäten mit Flüssen in Ihren Workflows zu deaktivieren, die Threads offen lassen und zu vielen temporären Tabellen führen, die viel Platz verbrauchen können. Behalten Sie in Ihren Workflows keine Aktivitäten im Status **[!UICONTROL Nicht aktivieren]** oder **[!UICONTROL Aktivieren, aber nicht ausführen]**.
 
 **Stoppen von nicht verwendeten Workflows**. Workflows, die weiterhin ausgeführt werden, halten Verbindungen zur Datenbank aufrecht.

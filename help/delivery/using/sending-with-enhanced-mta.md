@@ -7,9 +7,9 @@ feature: Email
 role: User, Admin, Developer
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1404'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -110,7 +110,7 @@ Weitere Informationen zur Bounce-Qualifizierung finden Sie in [diesem Abschnitt]
 
 ### Versand
 
-Ein Versand kann nicht angehalten werden, nachdem er in den erweiterten MTA übertragen wurde - auch wenn er mit der **[!UICONTROL Angehalten]** Status in Campaign.
+Ein Versand kann nicht angehalten werden, nachdem er in den erweiterten MTA übertragen wurde - auch wenn er in Campaign mit dem Status **[!UICONTROL Angehalten]** angezeigt wird.
 
 ### Versanddurchsatz
 

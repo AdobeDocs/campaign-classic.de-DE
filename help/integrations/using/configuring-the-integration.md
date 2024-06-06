@@ -8,9 +8,9 @@ audience: integrations
 content-type: reference
 exl-id: 54ee88b2-e646-4fb9-abec-957f0096f15f
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '550'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -54,7 +54,7 @@ Sie müssen für diesen Operator eine Sicherheitszone konfigurieren, um über Ad
 
 >[!CAUTION]
 >
->Es wird dringend empfohlen, eine Sicherheitszone für AEM zu erstellen, um Sicherheitsprobleme zu vermeiden. Weitere Informationen hierzu finden Sie im Abschnitt Installation . [Handbuch](../../installation/using/security-zones.md).
+>Wir empfehlen dringend die Erstellung einer Sicherheitszone für AEM, um Sicherheitsprobleme zu vermeiden. Weiterführende Informationen dazu finden Sie im [Installationshandbuch](../../installation/using/security-zones.md).
 
 Wenn Ihre Campaign-Instanz von Adobe gehostet wird, wenden Sie sich an das Team der [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Gehen Sie wie folgt vor, wenn Sie eine On-Premise-Bereitstellung von Campaign verwenden:
 

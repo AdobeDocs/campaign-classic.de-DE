@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 05909ea6-2c93-42ff-9142-1dd14fa6fdec
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3219'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Mit Adobe Campaign können Sie Daten aus einer oder mehreren Dateien im Text-, C
 
 >[!NOTE]
 >
->Um Daten zu importieren, ohne sie mit Daten in der Datenbank zu mappen, steht die Funktion **[!UICONTROL Liste importieren]** zur Verfügung. Die Daten können dann ausschließlich in Workflows über die **[!UICONTROL Liste lesen]** -Objekt. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../workflow/using/read-list.md).
+>Um Daten zu importieren, ohne sie mit Daten in der Datenbank zu mappen, steht die Funktion **[!UICONTROL Liste importieren]** zur Verfügung. Diese Daten können dann ausschließlich in Workflows mit dem Objekt **[!UICONTROL Liste lesen]** verwendet werden. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../workflow/using/read-list.md).
 
 Mit dem Import-Assistenten können Sie einen Import konfigurieren, seine Optionen definieren (z. B. Formatierung) und die Ausführung starten. Es handelt sich dabei um eine Reihe von Bildschirmen, deren Inhalt von der Art des Imports (einfach oder mehrfach) und den Rechten des Benutzers abhängt.
 
@@ -48,10 +48,10 @@ Beim Start des Import-Assistenten muss zunächst eine Vorlage ausgewählt werden
 
 1. Klicken Sie zur Auswahl der gewünschten Vorlage rechts vom Feld **[!UICONTROL Importvorlage]** entweder auf den Pfeil oder auf **[!UICONTROL Verknüpftes Element auswählen]**, um den Navigationsbaum zu durchsuchen.
 
-   Die native Vorlage lautet **[!UICONTROL Neuer Textimport]**. Diese Vorlage darf nicht geändert werden. Sie können sie jedoch duplizieren, um entsprechend Ihren Anforderungen eine neue Vorlage zu konfigurieren. Standardmäßig werden Importvorlagen im **[!UICONTROL Profile und Zielgruppen > Vorlagen > Bearbeitungsvorlagen]** Knoten.
+   Die native Vorlage lautet **[!UICONTROL Neuer Textimport]**. Diese Vorlage darf nicht geändert werden. Sie können sie jedoch duplizieren, um entsprechend Ihren Anforderungen eine neue Vorlage zu konfigurieren. Standardmäßig werden Importvorlagen im Knoten **[!UICONTROL Ressourcen > Vorlagen > Bearbeitungsvorlagen]** gespeichert.
 
 1. Geben Sie im Feld **[!UICONTROL Titel]** einen Namen für diesen Import ein und fügen Sie eventuell eine Beschreibung hinzu.
-1. Wählen Sie im entsprechenden Feld den Importtyp aus. Es gibt zwei Arten von Importen: **[!UICONTROL Einfacher Import]** nur eine Datei zu importieren und **[!UICONTROL Mehrmaliger Import]** um mehrere Dateien in einer Ausführung zu importieren.
+1. Wählen Sie anschließend den Importtyp aus. Es gibt zwei mögliche Importtypen: **[!UICONTROL Einfacher Import]**, um nur eine Datei zu importieren, und **[!UICONTROL Mehrfacher Import]**, um mehrere Dateien in einer Ausführung zu importieren.
 
    Wählen Sie, wenn Sie mehrere Dateien gleichzeitig importieren möchten, im ersten Schritt des Import-Assistenten die Option **[!UICONTROL Multipler Import]** aus der Dropdown-Liste des Felds **[!UICONTROL Importtyp]** aus.
 
@@ -91,7 +91,7 @@ Der Link **[!UICONTROL Erweiterte Parameter...]** bietet Zugriff auf folgende Op
 
 * Im Tab **[!UICONTROL Variablen]**
 
-  Sie können dem Auftrag zugeordnete Variablen definieren, auf die in den Abfrageeditoren und berechneten Feldern zugegriffen werden kann. Um eine Variable zu erstellen, klicken Sie auf **[!UICONTROL Hinzufügen]** und verwenden Sie den Variableneditor.
+  Hier besteht die Möglichkeit, dem Vorgang zugeordnete Variablen zu definieren, auf die im Abfragetool und in berechneten Feldern zugegriffen werden kann. Klicken Sie hierfür auf **[!UICONTROL Hinzufügen]** und machen Sie im Variableneditor die entsprechenden Angaben.
 
   >[!IMPORTANT]
   >
@@ -101,7 +101,7 @@ Der Link **[!UICONTROL Erweiterte Parameter...]** bietet Zugriff auf folgende Op
 
 Die Quelldatei kann entweder in Textformat (TXT, CSV, TAB, feste Spalten) oder in XML vorliegen.
 
-Standardmäßig ist **[!UICONTROL Datei auf den Server hochladen]** ausgewählt ist. Klicken Sie auf den Ordner rechts neben dem **[!UICONTROL Lokale Datei]** -Feld, um die lokale Festplatte zu durchsuchen und die zu importierende Datei auszuwählen. Sie können diese Option deaktivieren, um den Zugriffspfad und den Namen der zu importierenden Datei anzugeben, wenn sie sich auf dem Server befindet.
+Standardmäßig ist die Option **[!UICONTROL Datei auf den Server laden]** angekreuzt. Durchsuchen Sie Ihre lokale Festplatte, indem Sie auf das Ordnersymbol rechts vom Feld **[!UICONTROL Lokale Datei]** klicken und wählen Sie die zu importierende Datei aus. Sie haben die Möglichkeit, diese Option abzuwählen und den Pfad und Namen der Datei anzugeben, wenn sie sich bereits auf dem Server befindet.
 
 ![](assets/s_ncs_user_import_wizard02_1.png)
 
@@ -114,7 +114,7 @@ Verschiedene Optionen stehen zur Konfiguration des Imports zur Verfügung. Die h
 * Die Option **[!UICONTROL Zur Formatänderung hier klicken...]** erlaubt die Überprüfung des Formats und eventuell seine Anpassung.
 * **[!UICONTROL Auf dem Server aktualisieren...]** ermöglicht die Übertragung der lokalen Datei auf den Server. Diese Option ist nur verfügbar, wenn **[!UICONTROL Datei auf den Server hochladen]** ausgewählt ist.
 * Die Option **[!UICONTROL Herunterladen]** ist nur verfügbar, wenn die Datei auf den Server geladen wurde.
-* **[!UICONTROL Format automatisch erkennen]** wird verwendet, um das Format der Datenquelle neu zu initialisieren. Mit dieser Option können Sie die ursprünglichen Formate erneut auf Daten anwenden, die über die **[!UICONTROL Klicken Sie hier , um das Dateiformat zu ändern...]** -Option.
+* **[!UICONTROL Format automatisch erkennen]** wird verwendet, um das Format der Datenquelle neu zu initialisieren. Diese Option stellt das ursprüngliche Format von durch die Option **[!UICONTROL Zur Formatänderung hier klicken...]** formatierten Daten wieder her.
 * Der Link **[!UICONTROL Erweiterte Parameter...]** bietet Filtermöglichkeiten der Quelldaten und weitere Optionen. So haben Sie beispielsweise die Möglichkeit, nur einen Teil einer Datei zu importieren oder nur bestimmte Kriterien erfüllende Datensätze (Empfänger vom Typ &#39;Interessent&#39; oder &#39;Kunde&#39;). Die Verwendung dieser Optionen ist in JavaScript bewanderten Benutzern vorbehalten.
 
 ### Dateiformat ändern {#changing-the-file-format}
@@ -135,10 +135,10 @@ Wählen Sie nun das Zielschema aus und ordnen Sie die Quellfelder den Datenbankf
 
 ![](assets/s_ncs_user_import_wizard03_1.png)
 
-* Die **[!UICONTROL Zielschema]** -Feld das Schema auswählen, in das die Daten importiert werden sollen. Diese Information ist obligatorisch. Klicken Sie auf **[!UICONTROL Link auswählen]** -Symbol, um eines der vorhandenen Schemas auszuwählen. Klicks **[!UICONTROL Link bearbeiten]** , um den Inhalt der ausgewählten Tabelle anzuzeigen.
+* Das Feld **[!UICONTROL Zielschema]** ermöglicht Ihnen die Auswahl des Schemas, in das die Daten importiert werden sollen. Diese Angabe ist obligatorisch. Klicken Sie auf das Symbol **[!UICONTROL Verknüpftes Element auswählen]**, um ein existierendes Schema auszuwählen. Klicken Sie auf **[!UICONTROL Verknüpftes Element öffnen]**, um die Struktur der zugrunde liegenden Tabelle anzusehen.
 * Im mittleren Bereich des Fensters werden alle in der Quelldatei enthaltenen Felder angezeigt. Kreuzen Sie die zu importierenden Felder an und ordnen Sie ihnen ein Zielfeld zu. Dies kann manuell oder automatisch geschehen.
 
-  Um ein Feld manuell zuzuordnen, aktivieren Sie das Kontrollkästchen, um das Quellfeld auszuwählen, und klicken Sie auf die zweite Spalte, um die dem ausgewählten Feld entsprechende Zelle zu aktivieren. Klicken Sie anschließend auf das **[!UICONTROL Ausdruck bearbeiten]** -Symbol, um alle Felder der aktuellen Tabelle anzuzeigen. Wählen Sie das Zielfeld aus und klicken Sie auf **[!UICONTROL OK]** , um die Zuordnung zu validieren.
+  Kreuzen Sie für eine manuelle Zuordnung das gewünschte Quellfeld an und klicken Sie dann in die zweite Spalte, um die zugehörige Zelle zu aktivieren. Klicken Sie auf **[!UICONTROL Ausdruck bearbeiten]**, um alle verfügbaren Felder der Tabelle anzuzeigen. Wählen Sie das Zielfeld aus und bestätigen Sie die Zuordnung mit **[!UICONTROL OK]**.
 
   Die Schaltfläche **[!UICONTROL Zielfelder automatisch zuordnen]** rechts im Fenster schlägt für jedes Quellfeld automatisch ein Zielfeld vor. Die getroffene Auswahl kann bei Bedarf geändert werden.
 
@@ -146,7 +146,7 @@ Wählen Sie nun das Zielschema aus und ordnen Sie die Quellfelder den Datenbankf
   >
   >Prüfen Sie die ordnungsgemäße Zuordnung, bevor Sie zum nächsten Schritt übergehen.
 
-* Sie können die importierten Felder umwandeln. Klicken Sie dazu in der Zelle des **[!UICONTROL Transformation]** und wählen Sie die anzuwendende Umwandlung aus.
+* Es besteht die Möglichkeit, die Schreibweise der importierten Felder anzupassen. Klicken Sie hierfür in der Spalte **[!UICONTROL Schreibweise]** in die dem Feld entsprechende Zelle und wählen Sie die gewünschte Option aus.
 
   ![](assets/s_ncs_user_import_wizard03_2.png)
 
@@ -169,7 +169,7 @@ Vier verschiedene Feldtypen stehen zur Verfügung:
 
   ![](assets/s_ncs_user_import_wizard03_3.png)
 
-  Die **[!UICONTROL Vorschau]** -Tab können Sie das Ergebnis der definierten Konfiguration anzeigen. Hier wird die **[!UICONTROL Abonnement]** wurde hinzugefügt. Der Wert wird aus dem **Status** -Feld.
+  Im **[!UICONTROL Vorschau]**-Tab können Sie das Ergebnis der Konfiguration ansehen. Im Beispiel wurde die Spalte **[!UICONTROL Abonnements]** hinzugefügt. Der Wert wird vom Feld **Status** ausgehend berechnet.
 
   ![](assets/s_ncs_user_import_wizard03_4.png)
 
@@ -181,7 +181,7 @@ Der Import-Assistent bietet die Möglichkeit, durch die Angabe von Abstimmkriter
 
 Der mittlere Bereich des dargestellten Bildschirms zeigt die Felder und Tabellen der Adobe-Campaign-Datenbank an, in die die Daten importiert werden.
 
-Für jeden Knoten (Tabelle oder Feld) stehen spezielle Optionen zur Verfügung. Wenn Sie auf den betreffenden Knoten in der Liste klicken, werden unten seine Parameter und eine kurze Beschreibung angezeigt. Das für jedes Element definierte Verhalten wird im entsprechenden **[!UICONTROL Verhalten]** Spalte.
+Für jeden Knoten (Tabelle oder Feld) stehen spezielle Optionen zur Verfügung. Wenn Sie auf den betreffenden Knoten in der Liste klicken, werden unten seine Parameter und eine kurze Beschreibung angezeigt. Für jedes Element werden in der Spalte **[!UICONTROL Verhalten]** die Auswirkungen der gewählten Optionen angegeben.
 
 ![](assets/s_ncs_user_import_wizard04_2.png)
 
@@ -231,7 +231,7 @@ Um die Erstellung doppelter Datensätze zu vermeiden, dürfen im Abstimmschlüss
 >
 >Ein Duplikat ist ein Element, das sowohl in der Quelldatei als auch in der Datenbank enthalten ist.
 
-Die **[!UICONTROL Verwaltung von Dubletten]** -Feld können Sie die Deduplizierung der Daten konfigurieren. Deduplizierung bezieht sich auf Datensätze, die mehrmals angezeigt werden **in der Quelldatei** (oder Quelldateien bei einem Import mit mehreren Dateien), d. h. Zeilen, für die die Felder des Abstimmschlüssels identisch sind.
+Das Feld **[!UICONTROL Dublettenverwaltung]** dient der Konfiguration der Deduplizierung in Bezug auf Dubletten. Deduplizierung in Bezug auf Dubletten, d. h. Einträge, die wiederholt in der **Quelldatei** (oder den Quelldateien bei einem multiplen Import) vorkommen. Bei Dubletten sind die den Abstimmschlüssel bildenden Felder identisch.
 
 * Im Modus **[!UICONTROL Aktualisieren]** löst die Dublettenverwaltung keine Deduplizierung aus. Dies bedeutet, dass der neueste Datensatz Priorität vor älteren Datensätzen hat. Demzufolge werden Dubletten in diesem Modus nicht gezählt.
 * In den Modi **[!UICONTROL Ignorieren]** oder **[!UICONTROL Entität zurückweisen]** werden Dubletten beim Import durch die Dublettenverwaltung ausgeschlossen, d. h. keiner der wiederholt vorkommenden Datensätze wird importiert.
@@ -242,7 +242,7 @@ Die **[!UICONTROL Verwaltung von Dubletten]** -Feld können Sie die Deduplizieru
 >
 >Die Deduplizierung erfolgt nur im Speicher, was die Größe eines Imports mit Deduplizierung limitiert. Die Limitierung hängt von diversen Parametern ab (Kapazität des Anwendungs-Servers, Aktivität, Anzahl der Felder im Schlüssel usw.). Als Richtlinie kann man von einer maximalen Größe von 1.000.000 Zeilen für einen Import mit Deduplizierung ausgehen.
 
-Deduplizierung bezieht sich auf einen Datensatz, der sowohl in der Quelldatei als auch in der Datenbank vorhanden ist. Dies betrifft nur Vorgänge mit Aktualisierung (d. h. **[!UICONTROL Aktualisieren und einfügen]** oder **[!UICONTROL Aktualisieren]**). Die **[!UICONTROL Dublettenverwaltung]** -Option können Sie den Datensatz aktualisieren oder ignorieren, wenn er sich sowohl in der Quelldatei als auch in der Datenbank befindet. Die **[!UICONTROL Aktualisieren oder Einfügen basierend auf dem Ursprung]** -Option gehört zum optionalen Modul und kann nicht in einem Standardkontext verwendet werden.
+Deduplizierung bezieht sich auf einen Datensatz, der sowohl in der Quelldatei als auch in der Datenbank vorhanden ist. Es kommt nur bei Importen mit Datenaktualisierung zum Tragen (**[!UICONTROL Aktualisieren und einfügen]** oder **[!UICONTROL Aktualisieren]**). Die Option **[!UICONTROL Duplikataverwaltung]** ermöglicht es, einen Datensatz entweder zu aktualisieren oder zu ignorieren, wenn er sowohl in der Quelldatei als auch der Datenbank vorkommt. Die Option **[!UICONTROL Je nach Herkunft aktualisieren oder hinzufügen]** ist Teil eines optionalen Moduls, sie steht im Standardkontext nicht zur Verfügung.
 
 Die Optionen **[!UICONTROL Zurückweisen]** und **[!UICONTROL Ignorieren]** arbeiten auf die gleiche Weise wie zuvor beschrieben.
 
@@ -296,15 +296,15 @@ Der folgende Schritt im Import-Assistenten ermöglicht die Auswahl oder Erstellu
       >
       >Der Standardordner des Benutzers entspricht dem ersten Ordner, für den der Benutzer Schreibzugriff hat. Weitere Informationen finden Sie unter [Ordnerzugriffsverwaltung](../../platform/using/access-management-folders.md).
 
-      Um den Importordner auszuwählen, klicken Sie auf den Pfeil rechts neben dem **[!UICONTROL Ordner]** und wählen Sie den gewünschten Ordner aus. Sie können auch die **[!UICONTROL Link auswählen]** -Symbol, um den Baum in einem neuen Fenster anzuzeigen oder einen neuen Ordner zu erstellen.
+      Klicken Sie zur Auswahl des Importordners auf den Pfeil rechts des **[!UICONTROL Ordner]**-Feldes und wählen Sie den gewünschten Ordner aus. Über das Symbol **[!UICONTROL Verknüpftes Element auswählen]** können Sie den Navigationsbaum in einem neuen Fenster anzeigen und einen neuen Ordner erstellen.
 
       ![](assets/s_ncs_user_import_wizard05_2.png)
 
-      Um einen neuen Ordner zu erstellen, wählen Sie den Knoten aus, von dem Sie einen Ordner hinzufügen möchten, und klicken Sie mit der rechten Maustaste darauf. Auswählen **[!UICONTROL Neuen Ordner &quot;Empfänger&quot;erstellen]**.
+      Wählen Sie zur Erstellung eines neuen Ordners den Knoten aus, in den der Ordner eingefügt werden soll, und klicken Sie mit der rechten Maustaste. Wählen Sie **[!UICONTROL Empfänger-Ordner hinzufügen]**.
 
       ![](assets/s_ncs_user_import_wizard05_3.png)
 
-      Der Ordner wird unter dem aktuellen Knoten hinzugefügt. Geben Sie den Namen des neuen Ordners ein, drücken Sie zur Bestätigung die Eingabetaste und klicken Sie auf **[!UICONTROL OK]**.
+      Der Ordner wird als Unterordner des aktuellen Knotens eingefügt. Geben Sie den Namen des neuen Ordners an, drücken Sie zum Bestätigen die Enter-Taste und klicken Sie auf **[!UICONTROL OK]**.
 
       ![](assets/s_ncs_user_import_wizard05_4.png)
 
@@ -322,11 +322,11 @@ Der folgende Schritt im Import-Assistenten ermöglicht die Auswahl oder Erstellu
 
    1. Anmeldung für einen Dienst
 
-      Um alle importierten Empfänger für einen Informationsdienst anzumelden, klicken Sie auf das **[!UICONTROL Bearbeiten...]** Link der **[!UICONTROL Empfänger für einen Dienst anmelden]** um den Informationsdienst auszuwählen oder zu erstellen, den die Empfänger abonniert haben. Sie können die **[!UICONTROL Bestätigungsnachricht senden]** option: Der Inhalt dieser Nachricht wird in der Versandvorlage definiert, die dem Abonnementdienst zugeordnet ist.
+      Um alle importierten Empfänger für einen Informationsdienst anzumelden, klicken Sie auf den Link **[!UICONTROL Bearbeiten...]** der Option **[!UICONTROL Empfänger für einen Dienst anmelden]**, um den Informationsdienst auszuwählen oder zu erstellen, für den die Empfänger angemeldet werden sollen. Aktivieren Sie **[!UICONTROL Benachrichtigung versenden]**, wenn die Empfänger von der Anmeldung in Kenntnis gesetzt werden sollen. Der Benachrichtigungsinhalt wird in den die An- und Abmeldungen betreffenden Versandvorlagen bestimmt.
 
       ![](assets/s_ncs_user_import_wizard05_7.png)
 
-      Sie können einen neuen Dienst für diese Empfänger erstellen, indem Sie auf **[!UICONTROL Link auswählen]** und dann **[!UICONTROL Erstellen]** Symbol. Die Verwaltung von Informationsdiensten wird im Abschnitt [diesem Abschnitt](../../delivery/using/managing-subscriptions.md).
+      Sie haben auch die Möglichkeit, einen neuen Informationsdienst für diese Empfängerinnen und Empfänger zu erstellen. Klicken Sie hierfür auf **[!UICONTROL Verknüpftes Element auswählen]** und dann auf das Symbol **[!UICONTROL Erstellen]**. Informationsdienste werden in [diesem Abschnitt](../../delivery/using/managing-subscriptions.md) näher erläutert.
 
 * Das Feld **[!UICONTROL Herkunft]** bietet die Möglichkeit, eine Information bezüglich der Empfängerherkunft im Profil zu hinterlegen. Dies ist insbesondere bei multiplen Importen empfehlenswert.
 
@@ -334,7 +334,7 @@ Klicken Sie auf **[!UICONTROL Weiter]**, um die in diesem Schritt vorgenommenen 
 
 ## 6. Schritt – Import starten {#step-6---launching-the-import}
 
-Im letzten Schritt des Assistenten können Sie den Datenimport starten. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Starten]** Schaltfläche.
+Im letzten Schritt des Assistenten wird der Datenimport ausgelöst. Klicken Sie hierfür auf die Schaltfläche **[!UICONTROL Starten]**.
 
 ![](assets/s_ncs_user_import_wizard06_1.png)
 

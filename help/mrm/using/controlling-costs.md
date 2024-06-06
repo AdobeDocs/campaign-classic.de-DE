@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: 6765e307-915a-44d2-a486-85c64e8ec52e
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2559'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ Zur Nutzung der Budget-Verwaltung mit MRM sind folgende Etappen umzusetzen:
 
 ## Erstellen eines Budgets {#creating-a-budget}
 
-Die Budgets werden in der Landkarte über die **[!UICONTROL Kampagnenverwaltung > Budgets]** Knoten. Die **[!UICONTROL Neu]** in der Symbolleiste können Sie ein Budget erstellen.
+Budgets werden in der Karte im Knoten **[!UICONTROL Kampagnenverwaltung > Budgets]** erstellt. Die Schaltfläche **[!UICONTROL Neu]** in der Symbolleiste ermöglicht es Ihnen, ein Budget zu erstellen.
 
 * Neues Budget hinzufügen
 

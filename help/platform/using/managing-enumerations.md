@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: administration-basics
 exl-id: 2ece058d-b493-4fea-b3db-322cf7ea7f4f
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '942'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -68,7 +68,7 @@ Der eingegebene Wert kann:
 
 ### Alias verwenden {#using-aliases}
 
-Die Option **[!UICONTROL Alias-Verwaltung]** ermöglicht die Verwendung von Alias für die ausgewählte Auflistung. Wenn diese Option ausgewählt ist, wird unten im Fenster die Registerkarte **[!UICONTROL Alias]** angezeigt.
+Die Option **[!UICONTROL Alias-Verwaltung]** ermöglicht es, die Alias für die ausgewählte Auflistung zu verwalten. Wenn diese Option ausgewählt ist, wird unten im Fenster die Registerkarte **[!UICONTROL Alias]** angezeigt.
 
 ![](assets/s_ncs_user_itemized_list_alias_option.png)
 
@@ -90,7 +90,7 @@ Geben Sie den zu konvertierenden Alias und den anzuwendenden Wert an und klicken
 
 ![](assets/s_ncs_user_itemized_list_alias_create_3.png)
 
-Wenn ein Benutzer also den Wert eingibt **NEILSEN** in einem Feld &quot;Firma&quot;(in der Adobe Campaign-Konsole oder in einem Formular) wird dieser automatisch durch den Wert **NIELSEN Ltd.**. Die Wertersetzung wird von der **Alias-Verwaltung** Arbeitsablauf. Weitere Informationen finden Sie unter [Datenbereinigung durchführen](#running-data-cleansing).
+Wenn der Benutzer also z. B. den Wert **NIELSEN** im Feld „Firma“ (in der Adobe Campaign-Konsole oder in einem Formular) eingibt, wird dieser durch den Wert **NIELSEN Ltd** ersetzt. Die Werteersetzung wird vom Workflow **Alias-Verwaltung** durchgeführt. Weitere Informationen finden Sie unter [Datenbereinigung durchführen](#running-data-cleansing).
 
 ![](assets/s_ncs_user_itemized_list_alias_use.png)
 
@@ -114,7 +114,7 @@ Nach erfolgreicher Konvertierung wird der Alias der Alias-Liste hinzugefügt.
 
 #### Aliastreffer abrufen {#retrieving-alias-hits}
 
-Die von den Benutzern eingegebenen Werte können in Alias konvertiert werden. Wenn der Benutzer einen Wert eingibt, der nicht in der Auflistungsliste enthalten ist, wird der Wert in der **[!UICONTROL Alias]** Registerkarte.
+Die von den Benutzern eingegebenen Werte können in Alias konvertiert werden. Wenn der Benutzer einen Wert eingibt, der sich nicht in den Auflistungswerten befindet, wird dieser im Tab **[!UICONTROL Alias]** gespeichert.
 
 Der technische Workflow **Alias-Verwaltung** (aliasCleansing) ruft diese Werte jede Nacht ab, um die Auflistungen zu aktualisieren. Weitere Informationen finden Sie unter [Datenbereinigung durchführen](#running-data-cleansing).
 
@@ -122,7 +122,7 @@ Wenn gewünscht, kann in der Spalte **[!UICONTROL Treffer]** die Anzahl der Eing
 
 ### Durchführen einer Datenbereinigung {#running-data-cleansing}
 
-Die Datenbereinigung wird vom technischen Workflow der **[!UICONTROL Alias-Verwaltung]** durchgeführt. Die für Auflistungen definierten Konfigurationen werden während der Ausführung angewendet. Siehe [Workflow Alias-Verwaltung](#alias-cleansing-workflow).
+Die Datenbereinigung wird vom technischen Workflow der **[!UICONTROL Alias-Verwaltung]** durchgeführt. Die für die Auflistungen festgelegten Konfigurationen werden während der Ausführung des Workflows berücksichtigt. Siehe [Workflow Alias-Verwaltung](#alias-cleansing-workflow).
 
 Die Datenbereinigung kann über den Link **[!UICONTROL Werte bereinigen...]** ausgelöst werden.
 
@@ -136,13 +136,13 @@ Klicken Sie auf die Schaltfläche **[!UICONTROL Starten]**, um die Datenbereinig
 
 #### Eingabeanzahl berechnen {#calculating-entry-occurrences}
 
-Die **[!UICONTROL Alias]** Unter-Tab einer Auflistung kann die Anzahl der Erscheinungen eines Alias unter allen eingegebenen Werten anzeigen. Es handelt sich bei dieser Information um eine Schätzung. Sie wird in der Spalte **[!UICONTROL Treffer]** angezeigt.
+Die Unterregisterkarte **[!UICONTROL Alias]** einer Auflistung kann die Anzahl der Vorkommen eines Alias unter allen eingegebenen Werten anzeigen. Es handelt sich bei dieser Information um eine Schätzung. Sie wird in der Spalte **[!UICONTROL Treffer]** angezeigt.
 
 >[!CAUTION]
 >
 >Die Berechnung der Anzahl der Alias-Erscheinungen kann zeitaufwändig sein. Diese Funktion sollte daher mit Vorsicht angewandt werden.
 
-Sie können die Trefferberechnung manuell über den Link **[!UICONTROL Werte bereinigen…]** ausführen. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Erweiterte Parameter...]** und wählen Sie die gewünschte(n) Option(en) aus.
+Sie können die Trefferberechnung manuell über den Link **[!UICONTROL Werte bereinigen…]** ausführen. Klicken Sie hierfür auf den Link **[!UICONTROL Erweiterte Parameter...]** und wählen Sie die gewünschte(n) Option(en) aus.
 
 ![](assets/s_ncs_user_itemized_list_alias_hits.png)
 

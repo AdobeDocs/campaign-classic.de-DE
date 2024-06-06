@@ -10,9 +10,9 @@ hide: true
 hidefromtoc: true
 exl-id: 4693dca1-ee55-43f0-b3dc-62a5b67a8058
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '903'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -91,9 +91,9 @@ Je nach der Art der Implementierung können verschiedene Probleme auftreten.
 
 * **Ich möchte mit einem Workflow eine Profilliste nach Campaign Standard übertragen, kann aber in Campaign Standard meine Zielgruppe nicht finden**.
 
-  Zielgruppen finden Sie im Abschnitt **[!UICONTROL Zielgruppen]** Menü in Campaign Standard. Sie haben die in der Variablen **[!UICONTROL Listen-Update]** Aktivität in Ihrem Campaign v7-Workflow. Sie unterliegen dem Ordner-Mapping, das während der Implementierung definiert wird.
+  Zielgruppen finden Sie in Campaign Standard im Menü **[!UICONTROL Zielgruppen]**. Ihr Titel wird im Campaign v7-Workflow in der Aktivität **[!UICONTROL Listen-Update]** spezifiziert. Zielgruppen basieren auf dem Ordner-Mapping, das während der Implementierung definiert wird.
 
-  Zunächst muss geprüft werden, ob der Workflow ohne Fehler abgeschlossen wurde. Wenn Sie einen Fehler bei der **[!UICONTROL Listen-Update]** -Aktivität, bedeutet dies, dass die Synchronisierung mit Campaign Standard möglicherweise fehlgeschlagen ist. Um weitere Informationen zu den Fehlern zu erhalten, gehen Sie zu **[!UICONTROL Administration]** > **[!UICONTROL ACS Connector]** > **[!UICONTROL Prozess]** > **[!UICONTROL Diagnose]**. Dieser Ordner enthält Synchronisations-Workflows, die von der **[!UICONTROL Listen-Update]** Aktivitätsausführung.
+  Zunächst sollten Sie überprüfen, ob der Workflow ohne Fehler abgeschlossen wurde. Wenn bei der Aktivität **[!UICONTROL Listen-Update]** ein Fehler auftritt, ist möglicherweise die Synchronisation mit Campaign Standard fehlgeschlagen. Um zu sehen, wo der Fehler liegt, gehen Sie zu **[!UICONTROL Administration]** > **[!UICONTROL ACS Connector]** > **[!UICONTROL Prozesse]** > **[!UICONTROL Prüfung]**. Dieser Ordner enthält Synchronisations-Workflows, die von der Aktivität **[!UICONTROL Listen-Update]** ausgelöst wurden.
 
   Vergewissern Sie sich außerdem, dass die Option **[!UICONTROL In ACS freigeben]** in der Aktivität **[!UICONTROL Listen-Update]** mit einem Häkchen versehen ist und dass der Workflow korrekt ausgeführt wurde.
 
@@ -101,7 +101,7 @@ Je nach der Art der Implementierung können verschiedene Probleme auftreten.
 
   Wird eine Liste mit Profilen übertragen, von denen keines mit Campaign Standard synchronisiert wird, wird in Campaign Standard eine leere Abfrage-Zielgruppe erstellt, die nicht verwendet werden kann.
 
-* **Ich habe eine Benachrichtigung erhalten, die mich darüber informiert, dass ein Synchronisations-Workflow einen Fehler aufweist. Was soll ich tun?**
+* **Ich habe eine Nachricht über den Fehlerstatus eines Synchronisations-Workflows erhalten. Was soll ich tun?**
 
   Prüfen Sie die externe Kontokonfiguration von sowohl Campaign Standard als auch Campaign v7, indem Sie die Verbindung testen:
 
@@ -112,7 +112,7 @@ Je nach der Art der Implementierung können verschiedene Probleme auftreten.
 
   Synchronisieren Sie zunächst Ihre Sicherheitsgruppen in **[!UICONTROL Administration > ACS Connector > Berechtigungs-Management > Sicherheitsgruppen]**. Damit werden die in Campaign Standard verfügbaren Sicherheitsgruppen überprüft. Danach stehen die Sicherheitsgruppen beim Konfigurieren des Ordner-Mappings zur Verfügung.
 
-* **Ich kann in Campaign Standard kein Profil, keine Zielgruppe oder keine Landingpage bearbeiten. Was bedeutet das?**
+* **Ich kann in Campaign Standard weder ein Profil noch eine Zielgruppe oder Landingpage bearbeiten. Was bedeutet das?**
 
   Alle von Campaign v7 synchronisierten Ressourcen sind in Campaign Standard im schreibgeschützten Modus vorhanden, um eine homogene Datenbasis sicherzustellen. Wenn Sie eines dieser Elemente bearbeiten müssen, tun Sie das in Campaign v7 und replizieren Sie dann die Änderung nach Campaign Standard.
 

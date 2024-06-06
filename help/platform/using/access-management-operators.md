@@ -8,9 +8,9 @@ role: User, Admin
 level: Beginner
 exl-id: 580282ce-ee30-422a-8724-9c328637cc39
 source-git-commit: e1a085384fb27ec165c487c112fbc70fe9738d9e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1303'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 79%
 
 >[!CAUTION]
 >
->Ab Campaign Classic v7.3.1 sollten alle Operatoren [Adobe Identity Management System (IMS)](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"} , um eine Verbindung mit Campaign herzustellen.
+>Ab Campaign Classic v7.3.1 sollten alle Benutzenden das [Adobe Identity Management System (IMS)](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"} verwenden, um eine Verbindung mit Campaign herzustellen.
 >
->Im Rahmen der Bemühungen, die Sicherheit und den Authentifizierungsprozess zu verbessern, empfiehlt Adobe Campaign dringend, den Authentifizierungsmodus für alle vorhandenen Operatoren vom nativen Login-/Passwort-Authentifizierungs-Modus zum Adobe Identity Management-System (IMS) zu migrieren. Erfahren Sie, wie Sie Ihre Benutzer in migrieren können. [diese Seite](../../technotes/using/migrate-users-to-ims.md).
+>Im Rahmen der Bemühungen, die Sicherheit und den Authentifizierungsprozess zu verbessern, empfiehlt Adobe Campaign dringend, den Authentifizierungsmodus aller vorhandenen Benutzenden von der nativen Authentifizierung mit Login/Passwort auf das Adobe Identity Management System (IMS) zu migrieren. Auf [dieser Seite](../../technotes/using/migrate-users-to-ims.md) erfahren Sie, wie Sie Ihre Benutzenden migrieren können.
 > 
->Beachten Sie nach dieser Migration, dass der folgende Abschnitt nicht mehr gilt.  Erfahren Sie, wie Sie Berechtigungen mit Adobe IMS einrichten in [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html?lang=de){target="_blank"}.
+>Beachten Sie, dass nach dieser Migration der folgende Abschnitt nicht mehr gilt.  In der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html?lang=de){target="_blank"} erfahren Sie, wie Sie mit Adobe IMS Berechtigungen einrichten können.
 
 
 ## Erste Schritte mit Campaign-Benutzern  {#about-operators}
@@ -41,9 +41,9 @@ Auf [dieser Seite](../../installation/using/connecting-through-ldap.md) finden S
 
 >[!IMPORTANT]
 >
->Benutzer müssen mit einer Sicherheitszone verknüpft sein, um sich bei einer Instanz anmelden zu können. Weitere Informationen zu Sicherheitszonen in Adobe Campaign finden Sie unter [diese Seite](../../installation/using/security-zones.md).
+>Benutzer müssen einer Sicherheitszone zugeordnet sein, um sich auf einer Instanz anmelden zu können. Mehr Informationen über Sicherheitszonen in Adobe Campaign können auf [dieser Seite](../../installation/using/security-zones.md) nachgelesen werden.
 
-Benutzer können über ihre Adobe ID auch direkt eine Verbindung zu Adobe Campaign herstellen. Weiterführende Informationen hierzu finden Sie auf [dieser Seite](../../integrations/using/about-adobe-id.md).
+Benutzer können auch über ihre Adobe ID eine direkt Verbindung mit Adobe Campaign herstellen. Weiterführende Informationen hierzu finden Sie auf [dieser Seite](../../integrations/using/about-adobe-id.md).
 
 ## Erstellen eines Benutzers {#creating-an-operator}
 
@@ -53,9 +53,9 @@ Gehen Sie wie folgt vor, um einen neuen Benutzer zu erstellen und Berechtigungen
 
    ![](assets/s_ncs_user_operator_new.png)
 
-1. Geben Sie die **[!UICONTROL Identifizierungsparameter]** des Benutzers: Login, Passwort und Name. Login und Passwort werden vom Benutzer verwendet, um sich bei Adobe Campaign anzumelden. Sobald der Benutzer angemeldet ist, kann er sein Passwort über die **[!UICONTROL Tools > Kennwort ändern]** Menü. Die E-Mail-Adresse des Benutzers ist unbedingt erforderlich, da sie es dem Benutzer ermöglicht, Benachrichtigungen zu erhalten, z. B. bei der Verarbeitung von Validierungen.
+1. Geben Sie die **[!UICONTROL Identifizierungsparameter]** der Benutzerin bzw. des Benutzers an: Login, Passwort und Name. Login und Passwort werden von der Benutzerin bzw. vom Benutzer verwendet, um sich bei Adobe Campaign anzumelden. Sobald die Benutzerin bzw. der Benutzer angemeldet ist, kann er oder sie das Passwort über das Menü **[!UICONTROL Tools > Passwort ändern]** ändern. Die E-Mail-Adresse der Benutzerin bzw. des Benutzers ist notwendig, um ihr oder ihm Benachrichtigungen zukommen zu lassen, beispielsweise wenn sie oder er für Validierungen verantwortlich ist.
 
-   In diesem Abschnitt können Sie auch einen Benutzer mit einer Organisationseinheit verknüpfen. Weitere Informationen hierzu finden Sie im Abschnitt [diese Seite](../../distributed/using/about-distributed-marketing.md).
+   In diesem Abschnitt kann ein Benutzer zudem einer Organisationseinheit zugeordnet werden. Siehe hierzu auch [diese Seite](../../distributed/using/about-distributed-marketing.md).
 
 1. Wählen Sie die dem Benutzer erteilten Berechtigungen im Bereich **[!UICONTROL Zugriffsberechtigungen des Benutzers]** aus.
 
@@ -75,9 +75,9 @@ Gehen Sie wie folgt vor, um einen neuen Benutzer zu erstellen und Berechtigungen
 
 >[!NOTE]
 >
->Sie können die Benutzer nach Ihren Anforderungen organisieren, indem Sie neue Benutzerordner erstellen. Klicken Sie dazu mit der rechten Maustaste auf den Ordner &quot;operator&quot;und wählen Sie **[!UICONTROL Ordner &quot;Operatoren&quot;hinzufügen]**.
+>Die Benutzer können bei Bedarf verschiedenen Ordnern zugewiesen werden. Klicken Sie zur Erstellung weiterer Ordner mit der rechten Maustaste auf den Benutzer-Ordner und wählen Sie **[!UICONTROL Benutzer-Ordner hinzufügen]** aus.
 
-Nachdem das Benutzerprofil erstellt wurde, können Sie dessen Informationen hinzufügen oder aktualisieren. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Bearbeiten]** Registerkarte.
+Wenn das Benutzerprofil erstellt wurde, können darin enthaltende Informationen vervollständigt oder aktualisiert werden. Klicken Sie hierzu auf den Tab **[!UICONTROL Bearbeiten]**.
 
 ![](assets/operator_edit_profile.png)
 
@@ -114,7 +114,7 @@ Im Tab **[!UICONTROL Zugriffsberechtigungen]** können die dem Benutzer zugeordn
   >Auch wenn sein Konto deaktiviert ist, kann der Benutzer weiterhin Warnungen oder Benachrichtigungen von Campaign empfangen. Um das Senden von Campaign-Benachrichtigungen an diesen Benutzer zu stoppen, empfiehlt Adobe, die E-Mail-Adresse aus seinem Profil zu entfernen.
 
 * Über die Option **[!UICONTROL Zugriff von der Clientkonsole aus sperren]** kann die Nutzung von Adobe Campaign auf den [Webzugriff](../../platform/using/adobe-campaign-workspace.md#console-and-web-access) oder den Zugriff über APIs beschränkt werden: Der Zugriff auf die Adobe-Campaign-Clientkonsole ist nicht mehr verfügbar.
-* Es ist möglich, eine Sicherheitszone mit dem Benutzer zu verknüpfen. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../installation/using/security-zones.md).
+* Dem Benutzer kann eine Sicherheitszone zugeordnet werden. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../installation/using/security-zones.md).
 * Zudem kann über den entsprechenden Link eine Maske vertrauenswürdiger IP-Adressen hinzugefügt werden.
 
   Der Benutzer kann sich in Adobe Campaign einloggen, ohne sein Passwort erfassen zu müssen, wenn seine IP-Adresse in dieser Liste enthalten ist.

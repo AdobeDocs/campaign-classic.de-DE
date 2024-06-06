@@ -7,9 +7,9 @@ feature: Email Design
 role: User
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2032'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ Informationen zum Einfügen und Verwenden von Personalisierungsfeldern finden Si
 
 ## Nachrichtenbetreff {#message-subject}
 
-Der Betreff der Nachricht wird im entsprechenden Feld konfiguriert. Sie können sie direkt in das Feld eingeben oder auf die Schaltfläche **[!UICONTROL Betreff]** -Link, um ein Skript einzugeben. Über den Personalisierungslink können Sie Datenbankfelder in den Betreff einfügen.
+Der Betreff der Nachricht wird im gleichnamigen Feld konfiguriert. Sie können ihn direkt im Feld eingeben oder auf den Link **[!UICONTROL Betreff]** klicken, um ein Script zu erfassen. Die Personalisierungsschaltfläche ermöglicht die Einfügung eines Datenbankfeldes.
 
 >[!IMPORTANT]
 >
@@ -66,7 +66,7 @@ Der eigentliche Nachrichteninhalt wird im unteren Bereich des Versandkonfigurati
 
 Standardmäßig werden die Nachrichten den Angaben des Empfängers entsprechend im HTML- oder Textformat versandt. Um die korrekte Anzeige in allen E-Mail-Systemen zu gewährleisten, wird empfohlen, jeweils sowohl HTML- als auch Textinhalte zu erstellen. Weitere Informationen hierzu finden Sie unter [Wahl des Nachrichtenformats](email-parameters.md#selecting-message-formats).
 
-* Verwenden Sie zum Importieren eines HTML-Inhalts die **[!UICONTROL Öffnen]** Schaltfläche. Sie können den Quellcode auch direkt in die **[!UICONTROL Quelle]** Unterregisterkarte.
+* Verwenden Sie die Schaltfläche **[!UICONTROL Öffnen]**, um HTML-Inhalt zu importieren. Sie haben auch die Möglichkeit, den Quellcode direkt in den Tab **[!UICONTROL Quelle]** einzufügen.
 
   Wenn Sie den [Digital Content Editor](../../web/using/about-campaign-html-editor.md) (DCE) verwenden, lesen Sie den Abschnitt zur [Auswahl einer Inhaltsvorlage](../../web/using/use-case-creating-an-email-delivery.md#step-3---selecting-a-content).
 
@@ -80,7 +80,7 @@ Standardmäßig werden die Nachrichten den Angaben des Empfängers entsprechend 
 
   ![](assets/s_ncs_user_wizard_email01_138.png)
 
-  Sie können Bilder aus einer lokalen Datei oder aus einer Bildbibliothek in Adobe Campaign in Nachrichten einfügen. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Bild]** und wählen Sie die entsprechende Option aus.
+  Sie können Bilder aus einer lokalen Datei oder aus einer Bildbibliothek in Adobe Campaign in Nachrichten einfügen. Klicken Sie dazu auf das Symbol **[!UICONTROL Bild]** und wählen Sie die entsprechende Option aus.
 
   ![](assets/s_ncs_user_wizard_email01_18.png)
 
@@ -92,7 +92,7 @@ Standardmäßig werden die Nachrichten den Angaben des Empfängers entsprechend 
   >
   >Die Verwendung von Personalisierungsfeldern wird im Abschnitt [Über die Personalisierung](about-personalization.md) beschrieben.
 
-  In den Tabs am unteren Seitenrand können Sie den HTML-Code der zu erstellenden Seite anzeigen und das Rendering der Nachricht mit ihrer Personalisierung anzeigen. Um diese Anzeige zu starten, klicken Sie auf **[!UICONTROL Vorschau]** und wählen Sie einen Empfänger mithilfe der **[!UICONTROL Personalisierung testen]** in der Symbolleiste. Sie können einen Empfänger aus der/den definierten Zielgruppe(n) auswählen oder einen anderen Empfänger auswählen.
+  In den Registerkarten am unteren Seitenrand können Sie den HTML-Code der zu erstellenden Seite anzeigen und das Rendering der Nachricht mit ihrer Personalisierung anzeigen. Klicken Sie hierfür auf die Registerkarte **[!UICONTROL Vorschau]** und wählen Sie über die Symbolleisten-Schaltfläche **[!UICONTROL Personalisierung testen...]** eine Empfängerin bzw. einen Empfänger aus. Sie können eine Empfängerin bzw. einen Empfänger aus der/den definierten Zielgruppe(n) auswählen oder eine andere Empfängerin bzw. einen anderen Empfänger auswählen.
 
   ![](assets/s_ncs_user_wizard_email01_139.png)
 
@@ -117,7 +117,7 @@ Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](defining-i
 
 ## Verwenden von Content-Management {#using-content-management}
 
-Sie können den Inhalt des Versands mithilfe der Inhaltsverwaltungsformulare direkt im Versand-Assistenten definieren. Referenzieren Sie hierzu die Veröffentlichungsvorlage des zu verwendenden Content Managements im **[!UICONTROL Erweitert]** in den Versandeigenschaften.
+Sie können den Inhalt des Versands mithilfe der Inhaltsverwaltungsformulare direkt im Versand-Assistenten definieren. Die zu verwendende Veröffentlichungsvorlage für den Inhalt muss in den Versandeigenschaften auf der Registerkarte **[!UICONTROL Erweitert]** angegeben werden.
 
 ![](assets/s_ncs_content_in_delivery.png)
 
@@ -144,7 +144,7 @@ Informationen zum Anpassen der Emoticon-Liste finden Sie auf dieser [Seite](cust
 
 ## Hinzufügen von Bildern {#adding-images}
 
-E-Mail-Sendungen im HTML-Format können Bilder enthalten. Im Versand-Assistenten können Sie eine HTML-Seite mit Bildern importieren oder Bilder direkt mithilfe des HTML-Editors über die **[!UICONTROL Bild]** Symbol.
+E-Mail-Sendungen im HTML-Format können Bilder enthalten. Sie können im Versand-Assistenten entweder eine fertige HTML-Seite mit Bildern importieren oder Bilder im HTML-Editor über das Symbol **[!UICONTROL Bild]** einfügen.
 
 
 ### Schutzmechanismen {#img-guardrails}
@@ -166,7 +166,7 @@ Diese Bilder können:
 
 ### Einfügen und Verwalten von Bildern {#manage-images}
 
-Mit dem Versand-Assistenten können Sie lokale oder in der Bibliothek gespeicherte Bilder zum Nachrichteninhalt hinzufügen. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Bild]** in der Symbolleiste für HTML-Inhalt.
+Der Versand-Assistent bietet die Möglichkeit, lokale oder in der Bibliothek enthaltene Bilder in den Inhalt der Nachrichten einzuschließen. Wählen Sie hierfür die Schaltfläche **[!UICONTROL Bild]** in der Symbolleiste des HTML-Inhalts aus.
 
 ![](assets/s_ncs_user_image_from_library.png)
 
@@ -215,11 +215,11 @@ Für jedes erkannte Bild können Sie den Status prüfen:
 
 >[!NOTE]
 >
->Bilder werden anhand ihres Inhalts und nicht anhand ihrer Zugriffspfade identifiziert. Das bedeutet, dass ein zuvor unter einem anderen Namen oder in einem anderen Verzeichnis hochgeladenes Bild als **[!UICONTROL Bereits online]**.
+>Ein Bild wird über seinen Inhalt und nicht seinen Namen oder Pfad identifiziert. Daher wird auch ein Bild, das zuvor bereits unter einem anderen Namen oder aus einem anderen Verzeichnis online gestellt wurde, als **[!UICONTROL Bereits online]** erkannt.
 
 Bilder werden im Zuge der Nachrichtenanalyse auf den Server geladen, um von außerhalb zugänglich zu sein. Dies gilt nicht für lokal gespeicherte Bilder, die im Vorfeld hochzuladen sind.
 
-Sie können die Arbeit vorantreiben und Bilder hochladen, damit sie von anderen Adobe Campaign-Benutzern angezeigt werden können. Dies kann bei der Zusammenarbeit nützlich sein. Klicken Sie dazu auf **[!UICONTROL Laden Sie die Bilder sofort hoch ...]** , um die Bilder auf den Server hochzuladen.
+Sie können die Arbeit vorantreiben und Bilder hochladen, damit sie von anderen Adobe Campaign-Benutzern angezeigt werden können. Dies kann bei der Zusammenarbeit nützlich sein. Wählen Sie hierfür die Option **[!UICONTROL Bilder sofort online stellen…]** und klicken Sie auf den Link, um den Upload der Bilder auf den Server zu starten.
 
 ![](assets/s_ncs_user_images_in_delivery_wiz_3.png)
 
@@ -245,7 +245,7 @@ Die Barcode-Lösung bietet die Möglichkeit, verschiedene ein- oder zweidimensio
 
 Barcodes können in Form eines Bitmaps dynamisch mithilfe eines durch Kundenkriterien definierten Werts erzeugt werden. Personalisierte Barcodes lassen sich dann über E-Mails in Marketingkampagnen integrieren. Der Empfänger kann die Nachricht ausdrucken und sie dem Unternehmen (z. B. bei einem Zahlvorgang) zum Scannen vorlegen.
 
-Um einen Barcode in eine E-Mail einzufügen, platzieren Sie den Cursor an der Stelle im Inhalt, an der er angezeigt werden soll, und klicken Sie dann auf die Personalisierungsschaltfläche . Auswählen **[!UICONTROL Include > Barcode..]**.
+Positionieren Sie den Cursor im Inhalt an der Stelle, an der der Barcode eingefügt werden soll, und klicken Sie auf die Personalisierungsschaltfläche. Wählen Sie **[!UICONTROL Einfügen > Barcode...]**.
 
 ![](assets/barcode_insert_14.png)
 
@@ -276,13 +276,13 @@ Konfigurieren Sie dann die verschiedenen Elemente je nach Bedarf:
 1. Geben Sie die gewünschte Größe des Barcodes an. Durch Angabe eines Faktors von x1 bis x10 kann die Größe angepasst werden.
 1. Das Feld **[!UICONTROL Wert]** dient der Bestimmung des Barcode-Werts. Dieser kann einem Sonderangebot entsprechen oder durch eine Bedingungsfunktion definiert werden, beispielsweise den Wert eines kundenbezogenen Datenbankfelds.
 
-   Dieses Beispiel zeigt einen EAN-8-Barcode, dem die Kundennummer eines Empfängers hinzugefügt wurde. Klicken Sie auf die Personalisierungsschaltfläche rechts vom **[!UICONTROL Wert]** Feld und wählen Sie **[!UICONTROL Empfänger > Kontonummer]**.
+   Unten stehendes Beispiel zeigt einen EAN-8-Barcode, in dem die Kundennummer eines Empfängers enthalten ist. Klicken Sie auf die Personalisierungsschaltfläche rechts vom Feld **[!UICONTROL Wert]** und wählen Sie die Option **[!UICONTROL Empfänger > Kundennummer]**.
 
    ![](assets/barcode_insert_15.png)
 
 1. Im Feld **[!UICONTROL Höhe]** können Sie die Höhe des Barcodes anpassen, ohne die Breite und somit die Abstände zwischen den Balken zu verändern.
 
-   Je nach Barcode-Typ gibt es keine einschränkende Eingabekontrolle. Wenn ein Barcode-Wert falsch ist, wird er nur in **Vorschau** -Modus, in dem der Barcode rot durchkreuzt wird.
+   Es erfolgt keine einschränkende Kontrolle Ihrer Eingaben in Bezug auf den Barcode-Typ. Sollte ein falscher oder nicht kompatibler Wert eingegeben werden, sehen Sie dies erst in der **Vorschau**. In diesem Fall ist der Barcode rot durchkreuzt.
 
    >[!NOTE]
    >
@@ -292,7 +292,7 @@ Konfigurieren Sie dann die verschiedenen Elemente je nach Bedarf:
    >
    >Wenn Sie beispielsweise einen GS1-128-Barcode verwenden und zusätzlich zum Wert die Kundennummer des Empfängers angeben möchten, klicken Sie auf die Personalisierungsschaltfläche und wählen Sie die Option **[!UICONTROL Empfänger > Kundennummer]**. Wenn die Kundennummer des Empfängers korrekt in der Datenbank gespeichert ist, wird sie im Barcode berücksichtigt.
 
-Nachdem diese Elemente konfiguriert wurden, können Sie Ihre E-Mail abschließen und senden. Um Fehler zu vermeiden, sollten Sie vor dem Versand stets sicherstellen, dass Ihr Inhalt korrekt angezeigt wird. Klicken Sie hierzu auf die Schaltfläche **[!UICONTROL Vorschau]** Registerkarte.
+Nachdem diese Elemente konfiguriert wurden, können Sie Ihre E-Mail abschließen und senden. Um Fehler zu vermeiden, sollten Sie vor dem Versand stets sicherstellen, dass Ihr Inhalt korrekt angezeigt wird. Klicken Sie hierzu auf die Registerkarte **[!UICONTROL Vorschau]**.
 
 ![](assets/barcode_insert_10.png)
 

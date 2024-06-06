@@ -5,9 +5,9 @@ description: Erfahren Sie, wie Sie mit einem Workflow einen Bericht an eine List
 feature: Workflows
 exl-id: cb24aea5-f3c7-4b17-8899-1792ea18c235
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '728'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -110,7 +110,7 @@ Für das Anwendungsbeispiel ist ein Workflow mit drei Aktivitäten zu erstellen:
 
    Hierbei werden folgende Variablen verwendet:
 
-   * **var reportName**: Geben Sie den internen Namen des Berichts in doppelte Anführungszeichen ein. In diesem Fall ist der interne Name der **Trackingindikator** ist &quot;deliveryFeedback&quot;.
+   * **var reportName**: der interne Name des Berichts in Anführungsstrichen. Im vorliegenden Beispiel lautet der interne Name des **Trackingindikatoren**-Berichts &quot;deliveryFeedback&quot;.
    * **var path**: Speicherpfad der Datei (&quot;tmp/files/&quot;), Name des Anhangs (&quot;deliveryFeedback&quot;) und Dateiendung (&quot;.pdf&quot;). Im vorliegenden Beispiel ist der Name des Anhangs mit dem internen Namen des Berichts identisch. Die Werte müssen in Anführungszeichen gesetzt und durch das Zeichen &quot;+&quot; verbunden werden.
 
      >[!CAUTION]

@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: profile-management
 exl-id: 0f3a5582-5c90-4393-bee8-d9e2f07e5982
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '487'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -54,7 +54,7 @@ Hier werden zudem der Qualitätsindex sowie die Anzahl von fehlgeschlagenen Send
 
 ## Tab &quot;Sonstige&quot; {#other-tab}
 
-Dieser Bildschirm enthält benutzerdefinierte Felder, die je nach Bedarf personalisiert werden können. Sie können auch die Namen der Felder ändern und ihr Format festlegen, indem Sie **[!UICONTROL Feldeigenschaften...]**, wie unten dargestellt:
+Dieser Bildschirm enthält frei vom Benutzer definierbare Felder. Sie haben über das Menü **[!UICONTROL Feldeigenschaften...]** die Möglichkeit, Felder umzubenennen oder das Format zu ändern, wie das folgende Beispiel zeigt:
 
 ![](assets/s_ncs_user_profile_others_tab.png)
 
@@ -64,7 +64,7 @@ Dieser Bildschirm enthält benutzerdefinierte Felder, die je nach Bedarf persona
 
 ## Tab &quot;Listen&quot; {#lists-tab}
 
-Auf diesem Bildschirm werden die Gruppen angezeigt, zu denen das ausgewählte Profil gehört. Klicks **[!UICONTROL Hinzufügen]** , um das Profil für eine Liste anzumelden. Klicks **[!UICONTROL Detail]** um die Beschreibung und die Liste der Profile in der ausgewählten Liste anzuzeigen.
+Dieser Bildschirm zeigt an, welchen Gruppen der ausgewählte Empfänger angehört. Durch Klick auf die Schaltfläche **[!UICONTROL Hinzufügen]** kann das Profil zu einer Liste hinzugefügt werden. Klicken Sie auf die Schaltfläche **[!UICONTROL Details]**, um die Beschreibung der Liste und alle enthaltenen Profile anzuzeigen.
 
 ![](assets/s_ncs_user_profile_groups_tab_details.png)
 
@@ -76,7 +76,7 @@ Dieser Bildschirm enthält die Informationsdienste, die das Profil abonniert hat
 
 ![](assets/s_ncs_user_profile_subscript_tab_details.png)
 
-Die **[!UICONTROL Detail]** zeigt die Eigenschaften des ausgewählten Abonnements an. Die **[!UICONTROL Hinzufügen]** -Schaltfläche wird verwendet, um ein neues Abonnement manuell hinzuzufügen.
+Die Schaltfläche **[!UICONTROL Details]** zeigt die Eigenschaften des ausgewählten Abonnements an. Die Schaltfläche **[!UICONTROL Hinzufügen]** erlaubt die manuelle Anmeldung eines Empfängers für einen Informationsdienst.
 
 Weitere Informationen hierzu finden Sie auf [dieser Seite](../../delivery/using/managing-subscriptions.md).
 

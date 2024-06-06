@@ -5,9 +5,9 @@ description: Erfahren Sie, wie Sie Abfragen mit Hilfe der Gruppierungsverwaltung
 feature: Query Editor, Workflows
 exl-id: 23bccb48-60ab-46c9-be26-2fa35243d61e
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '314'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Gehen Sie wie folgt vor:
 
    ![](assets/query_editor_02.png)
 
-1. Im **[!UICONTROL Zu extrahierende Daten]** auswählen, wählen Sie die **[!UICONTROL E-Mail-Domain]** und **[!UICONTROL Primärer Schlüssel]** -Felder. Führen Sie eine Zählung für die **[!UICONTROL Primärer Schlüssel]** -Feld.
+1. Im Fenster **[!UICONTROL Zu extrahierende Daten]** wählen Sie die Felder **[!UICONTROL E-Mail-Domain]** und **[!UICONTROL Primärschlüssel]** aus. Führen Sie eine Zählung des Felds **[!UICONTROL Primärschlüssel]** durch.
 
    Weiterführende Informationen zu Primärschlüsselzählungen finden Sie in [diesem Abschnitt](../../platform/using/defining-filter-conditions.md#building-expressions).
 
@@ -43,11 +43,11 @@ Gehen Sie wie folgt vor:
 
    ![](assets/query_editor_nveau_29.png)
 
-1. Im **[!UICONTROL Sortierung]** -Fenster E-Mail-Domains in absteigender Reihenfolge sortieren. Überprüfen Sie hierzu die Option **[!UICONTROL Ja]** im **[!UICONTROL Absteigende Sortierung]** Spalte. Klicken Sie auf **[!UICONTROL Weiter]**.
+1. Ordnen Sie im Fenster **[!UICONTROL Sortierung]** die E-Mail-Domains in absteigender Reihenfolge. Kreuzen Sie hierfür in der Spalte **[!UICONTROL Absteigende Sortierung]** die Option **[!UICONTROL Ja]** an. Klicken Sie auf **[!UICONTROL Weiter]**.
 
    ![](assets/query_editor_nveau_70.png)
 
-1. In **[!UICONTROL Datenfilterung]** auswählen **[!UICONTROL Filterbedingungen]**. Navigieren Sie zu **[!UICONTROL Zielelemente]** Fenster und klicken Sie auf **[!UICONTROL Nächste]**.
+1. Wählen Sie dann im Fenster **[!UICONTROL Datenfilter]** die Option **[!UICONTROL Filterbedingungen]**. Wechseln Sie zum Fenster **[!UICONTROL Zielelemente]** und klicken Sie auf **[!UICONTROL Weiter]**.
 1. Klicken Sie im Fenster **[!UICONTROL Gruppierung der Daten]** auf **[!UICONTROL Hinzufügen]** und wählen Sie das Feld **[!UICONTROL E-Mail-Domain]** aus.
 
    Die Gruppierung (GROUP BY) erfolgt an dieser Stelle. Das Fenster wird nur angezeigt, wenn die Option **[!UICONTROL Gruppierungen verwalten (GROUP BY + HAVING)]** angekreuzt wurde.

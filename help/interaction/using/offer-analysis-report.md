@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: tracking-offers
 exl-id: 44c57b0c-3561-4943-812f-945f5fcbb142
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '85'
-ht-degree: 60%
+ht-degree: 100%
 
 ---
 
@@ -38,6 +38,6 @@ Die Statistiken gliedern sich nach drei Merkmalen:
 
   ![](assets/offer_report_perdeliveries.png)
 
-Die Daten können nach den verschiedenen Kriterien im oberen Bereich des Berichts gefiltert werden. Klicken Sie nach Auswahl der gewünschten Kriterien auf die **[!UICONTROL Aktualisieren]** -Link, um sie auf den Bericht anzuwenden.
+Im Berichtskopf können Sie die angezeigten Daten mithilfe bestimmter Kriterien einschränken. Wählen Sie z. B. einen Zeitraum aus und klicken Sie abschließend auf **[!UICONTROL Aktualisieren]**, um die Filter auf den Bericht anzuwenden.
 
 ![](assets/offer_report_criteria.png)

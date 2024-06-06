@@ -7,9 +7,9 @@ hide: true
 hidefromtoc: true
 exl-id: 689b6117-5143-4f85-8582-2c74cae72ca2
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2092'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -83,7 +83,7 @@ Die Replikation von Versandkennungen und E-Mail-Logs ermöglicht den Zugriff auf
 
 ACS Connector synchronisiert Quarantänen zwischen Campaign v7 und Campaign Standard.
 
-Beispielsweise enthält ein von Campaign v7 nach Campaign Standard repliziertes Profil eine E-Mail-Adresse. Wenn die E-Mail-Adresse von einem Campaign Standard unter Quarantäne gestellt wird, werden die Daten bei der nächsten Synchronisierung an Campaign v7 übergeben. Weitere Informationen zu Quarantänen finden Sie unter [Quarantäneverwaltung](../../delivery/using/understanding-quarantine-management.md) und [Campaign Standard Quarantänen](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=de).
+Beispiel: Ein von Campaign v7 nach Campaign Standard repliziertes Profil enthält eine E-Mail-Adresse. Wenn die E-Mail-Adresse von Campaign Standard unter Quarantäne gestellt wird, werden diese Daten während der nächsten Synchronisation an Campaign v7 übermittelt. Weiterführende Informationen zu Quarantänen finden Sie unter [Quarantäne-Verwaltung](../../delivery/using/understanding-quarantine-management.md) und [Quarantäne in Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=de).
 
 ### Verwenden von replizierten Profilen {#using-replicated-profiles}
 
@@ -310,7 +310,7 @@ Mit der einfachen Implementierung werden die vordefinierten Empfängerfelder rep
 
    ![](assets/acs_connect_implementation_7.png)
 
-1. Öffnen Sie den dedizierten Workflow für die Profilreplikation (nicht die Vorlage, sondern die Workflow-Instanz selbst). Ändern Sie die **[!UICONTROL Abfrage]** und **[!UICONTROL Daten aktualisieren]** -Aktivitäten, um diese Felder einzuschließen. Siehe [Technische und Replikations-Workflows](#technical-and-replication-workflows).
+1. Öffnen Sie den Profilreplikations-Workflow (nicht die Vorlage, sondern die Workflow-Instanz selbst). Ändern Sie die Aktivitäten **[!UICONTROL Abfrage]** und **[!UICONTROL Daten-Update]** so, dass diese Felder eingeschlossen sind. Siehe [Technische und Replikations-Workflows](#technical-and-replication-workflows).
 
    ![](assets/acs_connect_implementation_8.png)
 

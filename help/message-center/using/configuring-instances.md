@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: instance-configuration
 exl-id: 23a384d1-27ce-46c2-98c3-0fb60a5c50ee
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1291'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -70,7 +70,7 @@ Gehen Sie wie folgt vor, um ein externes Konto vom Typ **[!UICONTROL Ausführung
 
    ![](assets/messagecenter_create_extaccount_004.png)
 
-1. Das Konto muss mit dem Message Center Agent übereinstimmen, der im Benutzerordner definiert ist. Standardmäßig ist das von Adobe Campaign bereitgestellte native Konto **[!UICONTROL mc]** .
+1. Das Konto muss dem Message Center Agent entsprechen, der im Benutzerordner definiert wurde. Standardmäßig handelt es sich um das Konto **[!UICONTROL mc]** .
 
    ![](assets/messagecenter_create_extaccount_005.png)
 
@@ -189,18 +189,18 @@ Damit mehrere Kontrollinstanzen verwendet werden können, muss diese Konfigurati
 
    ![](assets/messagecenter_multi_control_3.png)
 
-1. Erstellen Sie die **mc1** und **mc2** Benutzer durch Duplizierung des standardmäßig bereitgestellten Message-Center-Benutzers (**mc**). Die Erstellung von Benutzern wird im Abschnitt [diesem Abschnitt](../../platform/using/access-management-operators.md).
+1. Erstellen Sie die Benutzer **mc1** und **mc2**, indem Sie den standardmäßig vorhandenen Message Center-Benutzer **mc** duplizieren. Die Erstellung von Benutzern wird in [diesem Abschnitt](../../platform/using/access-management-operators.md) detailliert beschrieben.
 
    ![](assets/messagecenter_multi_control_4.png)
 
    >[!NOTE]
    >
-   >**mc1** und **mc2** müssen **[!UICONTROL Message Center-Ausführung]** -Berechtigungen und können nicht auf die Adobe Campaign-Clientkonsole zugreifen. Benutzer müssen stets einer Sicherheitszone zugeordnet sein. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/security-zones.md).
+   >Die Benutzer **mc1** und **mc2** müssen über die Berechtigung **[!UICONTROL Message-Center-Ausführung]** verfügen. Sie dürfen jedoch keinen Zugriff auf die Adobe Campaign-Client-Konsole haben. Ein Benutzer muss stets einer Sicherheitszone zugeordnet werden. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/security-zones.md).
 
 1. Kreuzen Sie für jeden Benutzer die Option **[!UICONTROL Beschränken auf Daten in den Unterordnern von]** an und wählen Sie den dem jeweiligen Benutzer entsprechenden Ordner aus (**Ordner 1** für den Benutzer **mc1** und **Order 2** für den Benutzer **mc2**).
 
    ![](assets/messagecenter_multi_control_5.png)
 
-1. Weisen Sie jedem Benutzer Lese- und Schreibberechtigungen für seinen Ordner zu. Klicken Sie dazu mit der rechten Maustaste auf den Ordner und wählen Sie **[!UICONTROL Eigenschaften]** . Wählen Sie dann die **[!UICONTROL Sicherheit]** und fügen Sie den entsprechenden Operator hinzu (**mc1** für **Ordner 1** und **mc2** für **Ordner 2**). Stellen Sie sicher, dass die Variable **[!UICONTROL Daten lesen/schreiben]** -Kästchen markiert sind.
+1. Weisen Sie jedem Benutzer Lese- und Schreibberechtigungen für seinen Ordner zu. Klicken Sie dazu mit der rechten Maustaste auf den Ordner und wählen Sie **[!UICONTROL Eigenschaften]**. Wählen Sie dann die **[!UICONTROL Sicherheit]** und fügen Sie den entsprechenden Operator hinzu (**mc1** für **Ordner 1** und **mc2** für **Ordner 2**). Stellen Sie sicher, dass die Zugriffsberechtigungen **[!UICONTROL Daten lesen/speichern]** ausgewählt sind.
 
    ![](assets/messagecenter_multi_control_6.png)

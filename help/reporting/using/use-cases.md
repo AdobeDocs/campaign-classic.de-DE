@@ -6,9 +6,9 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Reporting, Monitoring
 exl-id: e326e32e-7bb0-46ff-9ba5-94ccd1169af2
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1431'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Markieren Sie hierzu die betreffenden Sendungen und wählen Sie per Rechtsklick 
 
 Im ersten Schritt des Assistenten können Sie die zu verwendende deskriptive Analysevorlage auswählen. Standardmäßig bietet Adobe Campaign zwei Vorlagen: **[!UICONTROL Qualitative Verteilung]** und **[!UICONTROL Quantitative Verteilung]**. Lesen Sie diesbezüglich den Abschnitt [Vorlage „Quantitative Verteilung“ konfigurieren](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-qualitative-distribution-template). Die verschiedenen Renderings werden im Abschnitt [Über die deskriptive Analyse](../../reporting/using/about-descriptive-analysis.md) dargestellt.
 
-Wählen Sie für dieses Beispiel die **[!UICONTROL Qualitative Verteilung]** und wählen Sie eine Anzeige mit einem Diagramm und einer Tabelle (Array). Benennen Sie den Bericht (&quot;Deskriptive Analyse&quot;) und klicken Sie auf **[!UICONTROL Nächste]**.
+Wählen Sie für das Beispiel die Vorlage **[!UICONTROL Qualitative Verteilung]** und eine Anzeige mit Grafik und Tabelle aus. Nennen Sie den Bericht &quot;Meine deskriptive Analyse&quot; und klicken Sie auf die Schaltfläche **[!UICONTROL Weiter]**.
 
 ![](assets/reporting_descriptive_quickstart_step_1.png)
 
@@ -46,9 +46,9 @@ Klicken Sie auf den Link **[!UICONTROL Hinzufügen]**, um die Variable auszuwäh
 
 ![](assets/reporting_descriptive_quickstart_step_2.png)
 
-In den Spalten wird die Anzahl der Käufe pro Unternehmen angezeigt. In diesem Beispiel werden die Beträge im **Webkäufe** -Feld.
+Die Spalten sollen den jeweiligen Einkaufsbetrag der Empfänger anzeigen. In unserem Beispiel werden die Beträge im Feld **Online-Bestellungen** aggregiert.
 
-In unserem Beispiel soll die Klassierung der Ergebnisse definiert werden, um deren Anzeige zu verdeutlichen. Wählen Sie dazu die **[!UICONTROL Manuell]** Klassifizierungsoption und legen Sie die Berechnungsklassen für die anzuzeigenden Segmente fest:
+In unserem Beispiel soll die Klassifizierung der Ergebnisse definiert werden, um deren Anzeige zu verdeutlichen. Wählen Sie dazu die Klassifizierungsoption **[!UICONTROL Manuell]** und legen Sie die Berechnungsklassen für die anzuzeigenden Segmente fest:
 
 ![](assets/reporting_descriptive_quickstart_step_2a.png)
 
@@ -131,7 +131,7 @@ Sie können Daten über die Symbolleiste oberhalb der Tabelle speichern, exporti
 
    Klicken Sie zur Bestätigung auf **[!UICONTROL Weiter]**.
 
-1. Geben Sie dann die zu berechnenden Statistiken an: Behalten Sie die Standardanzahl bei und erstellen Sie eine neue Statistik. Klicken Sie dazu auf **[!UICONTROL Hinzufügen]** und wählen **[!UICONTROL Verteilung in Prozent]** als Operator.
+1. Geben Sie anschließend die zu berechnenden Statistiken an: Behalten Sie die Standard-Zählung bei und erstellen Sie eine neue Statistik. Klicken Sie dazu auf **[!UICONTROL Hinzufügen]** und wählen Sie **[!UICONTROL Verteilung in Prozent]** als Operator.
 
    ![](assets/s_ncs_user_report_wizard_03.png)
 
@@ -143,7 +143,7 @@ Sie können Daten über die Symbolleiste oberhalb der Tabelle speichern, exporti
 
    ![](assets/s_ncs_user_report_wizard_06.png)
 
-1. Nachdem der Analysebericht erstellt wurde, können Sie die Anzeige Ihren Bedürfnissen entsprechend anpassen, ohne die Konfiguration zu ändern. Sie können beispielsweise die Achsen wechseln: Klicken Sie mit der rechten Maustaste auf die Domänennamen und wählen Sie **[!UICONTROL drehen]** im Kontextmenü.
+1. Nachdem der Analysebericht erstellt wurde, können Sie die Anzeige Ihren Bedürfnissen entsprechend anpassen, ohne die Konfiguration zu ändern. Sie haben beispielsweise die Möglichkeit, die Achsen zu vertauschen: Rechtsklicken Sie hierzu einen Rechtsklick auf die die Domains enthaltende Zeile und wählen Sie im Kontextmenü **[!UICONTROL Umkehren]**.
 
    ![](assets/s_ncs_user_report_wizard_07.png)
 
@@ -161,7 +161,7 @@ Sie können Daten über die Symbolleiste oberhalb der Tabelle speichern, exporti
 
    Klicken Sie zur Bestätigung auf die Schaltfläche **[!UICONTROL Weiter]**.
 
-1. Wählen Sie die **[!UICONTROL Alter]** und geben Sie den Titel ein. Geben Sie an, ob es sich um eine Ganzzahl handelt, und klicken Sie auf **[!UICONTROL Nächste]**.
+1. Wählen Sie anschließend die Variable **[!UICONTROL Alter]** aus und benennen Sie sie. Geben Sie an, dass es sich um einen Integer handelt und klicken Sie dann auf **[!UICONTROL Weiter]**.
 
    ![](assets/s_ncs_user_report_wizard_011.png)
 
@@ -206,7 +206,7 @@ Die Analyse einer Zielgruppe in einem Workflow setzt voraus, dass die Population
 >[!CAUTION]
 >
 >Die Option **[!UICONTROL Zwischen zwei Ausführungen die ermittelte Population festhalten]** darf nur in Entwicklungsphasen und niemals in einer Produktionsumgebung verwendet werden.\
->Die zwischenzeitlichen Populationen werden automatisch bereinigt, sobald ihre Aufbewahrungsfrist erreicht ist. Dieser Termin wird in den Workflow-Eigenschaften festgelegt **[!UICONTROL Ausführung]** Registerkarte.
+>Die betreffenden Populationen werden automatisch bereinigt, sobald ihre Beibehaltungsdauer abgelaufen ist. Diese Dauer wird im Tab **[!UICONTROL Ausführung]** der Workflow-Eigenschaften festgelegt.
 
 ## Analyse der Empfänger-Trackinglogs {#analyzing-recipient-tracking-logs}
 
@@ -216,7 +216,7 @@ Im folgenden Beispiel wird die Reaktionsrate der Empfänger von Newslettern unte
 
 Gehen Sie hierzu wie folgt vor:
 
-1. Öffnen Sie den Analyse-Assistenten über die **[!UICONTROL Tools > Deskriptive Analyse]** und ändern Sie die standardmäßige Arbeitstabelle. Auswählen **[!UICONTROL Trackinglogs der Empfänger]** und fügen Sie einen Filter hinzu, um Testsendungen auszuschließen und Newsletter einzuschließen.
+1. Öffnen Sie den Analyse-Assistenten über das Menü **[!UICONTROL Werkzeuge > Deskriptive Analyse...]** und ändern Sie die standardmäßige Arbeitstabelle. Wählen Sie **[!UICONTROL Trackinglogs der Empfangenden]** aus. Fügen Sie einen Filter hinzu, damit die Analyse sich nur auf Newsletter bezieht und Testsendungen ausschließt.
 
    ![](assets/reporting_descriptive_sample_tracking_1.png)
 
@@ -272,7 +272,7 @@ Gehen Sie hierzu wie folgt vor:
 
 ## Analyse der Versandausschluss-Logs {#analyzing-delivery-exclusion-logs}
 
-Wenn sich die Analyse auf einen Versand bezieht, können Sie die ausgeschlossene Population analysieren. Markieren Sie hierzu die zu analysierenden Sendungen und klicken Sie mit der rechten Maustaste auf den **[!UICONTROL Aktion > Ausschlüsse analysieren]** Menü.
+Wenn sich die Analyse auf einen Versand bezieht, besteht die Möglichkeit, die ausgeschlossene Population zu analysieren. Markieren Sie hierzu die zu analysierenden Sendungen und wählen Sie per Rechtsklick im Kontextmenü **[!UICONTROL Aktion > Ausschlüsse analysieren...]** aus.
 
 ![](assets/reporting_descriptive_exclusion_menu.png)
 

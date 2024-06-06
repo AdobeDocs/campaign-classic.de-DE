@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 4582b524-2b6d-484c-bace-29d2e69f60e9
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1119'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ Gehen Sie wie folgt vor, um eine als Textdatei vorliegende Empfängerliste in di
 
 1. Vorlage auswählen
 
-   * Klicken Sie auf der Adobe Campaign-Startseite auf das **[!UICONTROL Profile und Zielgruppen]** Link, dann **[!UICONTROL Aufträge]**. Klicken Sie über der Auftragsliste auf **[!UICONTROL Neuer Import]**.
+   * Klicken Sie auf den Link **[!UICONTROL Vorgänge]** im Menü **[!UICONTROL Profile und Zielgruppen]** der Adobe Campaign-Startseite. Klicken Sie über der Auftragsliste auf **[!UICONTROL Neuer Import]**.
    * Behalten Sie die standardmäßig vorgeschlagene Vorlage **[!UICONTROL Neuer Textimport]** bei.
    * Passen Sie Titel und Beschreibung an.
    * Wählen Sie die Option **[!UICONTROL Einfacher Import]**.
@@ -67,7 +67,7 @@ Gehen Sie wie folgt vor, um eine als Textdatei vorliegende Empfängerliste in di
 
 1. Felder zuordnen
 
-   Klicken Sie auf **[!UICONTROL Zielfelder auswerten]** -Symbol, um die Quell- und Zielschemata automatisch zuzuordnen. Überprüfen Sie die Informationen in diesem Fenster, bevor Sie auf **[!UICONTROL Nächste]**.
+   Die Option **[!UICONTROL Zielfelder automatisch zuordnen]** schlägt für jedes Quellfeld automatisch ein Zielfeld vor. Prüfen Sie die Informationen dieses Bildschirms, bevor Sie auf **[!UICONTROL Weiter]** klicken.
 
    ![](assets/s_ncs_user_import_example03_01.png)
 
@@ -92,7 +92,7 @@ Gehen Sie wie folgt vor, um eine als Textdatei vorliegende Empfängerliste in di
 
      ![](assets/s_ncs_user_import_example06_01.png)
 
-     Die **[!UICONTROL Tracking]** -Modus können Sie die Details des Imports für jeden Datensatz in der Quelldatei verfolgen. Klicken Sie dazu auf der Startseite auf **[!UICONTROL Profile und Zielgruppen]** then **[!UICONTROL Prozesse]**, wählen Sie den entsprechenden Import aus und suchen Sie nach der **[!UICONTROL Allgemein]**, **[!UICONTROL Protokoll]** und **[!UICONTROL Zurückweisungen]** Registerkarten.
+     Im Modus **[!UICONTROL Tracking]** haben Sie die Möglichkeit, den Importverlauf für jeden einzelnen Eintrag der Quelldatei detailliert zu betrachten. Klicken Sie hierfür auf den Menüpunkt **[!UICONTROL Vorgänge]** in der Rubrik **[!UICONTROL Profile und Zielgruppen]** auf der Startseite und wählen Sie den entsprechenden Import aus. Die Registerkarten **[!UICONTROL Allgemein]**, **[!UICONTROL Protokoll]** und **[!UICONTROL Zurückweisungen]** enthalten alle wichtigen Informationen.
 
       * Importverlauf ansehen
 

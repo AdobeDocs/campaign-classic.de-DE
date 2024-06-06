@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: 222853c5-c754-4c0b-8ee4-a64b2f8677a4
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '804'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -38,13 +38,13 @@ Um den Inhalt einer Nachricht anzuzeigen, klicken Sie auf ihren Titel.
 
 **Neue Diskussionen beginnen**
 
-Um eine neue Diskussion zu beginnen, klicken Sie auf die Schaltfläche **[!UICONTROL Diskussion hinzufügen]** in der oberen rechten Ecke. Das Feld **[!UICONTROL Diskussionsforum]** wird angezeigt (siehe unten).
+Um eine neue Diskussion zu beginnen, klicken Sie auf die Schaltfläche **[!UICONTROL Diskussion hinzufügen]** rechts oben. Das Feld **[!UICONTROL Diskussionsforum]** wird angezeigt (siehe unten).
 
 ![](assets/mrm_forum_new_thread.png)
 
 **Nachrichten in einer existierenden Diskussion posten**
 
-Um eine Nachricht in einer existierenden Diskussion zu posten, öffnen Sie die Nachricht, die Sie beantworten möchten, und klicken Sie auf die Schaltfläche **[!UICONTROL Antwort]** in der oberen linken Ecke. Das Feld **[!UICONTROL Diskussionsforum]** wird angezeigt (siehe unten).
+Um eine Nachricht in einer existierenden Diskussion zu posten, öffnen Sie die Nachricht, auf die Sie antworten möchten, und klicken Sie auf den Link **[!UICONTROL Antworten]** links oberhalb der Nachricht. Das Feld **[!UICONTROL Diskussionsforum]** wird angezeigt (siehe unten).
 
 ![](assets/mrm_forum_answer_msg.png)
 
@@ -92,7 +92,7 @@ Sie können ein Forum abonnieren, um den enthaltenen Diskussionen zu folgen und 
 
   ![](assets/mrm_forum_unsubscribe.png)
 
-* In Ihrem persönlichen Dashboard werden die Foren aufgelistet, die Sie abonniert haben. Klicken Sie auf **[!UICONTROL Teilnahme an Diskussionsforen]** -Link, um die Liste anzuzeigen, und klicken Sie dann auf das Element, das Sie für den Zugriff auf das Forum interessiert.
+* In Ihrem persönlichen Dashboard werden die von Ihnen abonnierten Foren aufgelistet. Klicken Sie auf den Link **[!UICONTROL Forum-Abonnements]**, um die Liste anzuzeigen, und anschließend auf das Forum, auf das Sie zugreifen möchten.
 
   ![](assets/platform_dashboard_operator_subscr_forums.png)
 
@@ -113,4 +113,4 @@ Falls Abonnenten eines Forums nicht die erwarteten Benachrichtigungen erhalten, 
    * Gehen Sie von der Adobe-Campaign-Startseite aus zu **[!UICONTROL Kampagnen > Navigation > Sendungen]** und öffnen Sie den Versand **[!UICONTROL Benachrichtigungen bezüglich Diskussionforen]**.
    * Gehen Sie im Explorer zum Knoten **[!UICONTROL Administration > Automatisch erstellte Objekte > Technische Sendungen > Workflow-Benachrichtigungen]** und klicken Sie auf **[!UICONTROL Benachrichtigungen bezüglich Diskussionsforen]**.
 
-  Im **[!UICONTROL Benachrichtigungen zu Diskussionsforen]** die Versandlogs im **[!UICONTROL Bearbeiten > Versand]** Registerkarte. Sie können auch die **[!UICONTROL Tracking > Protokoll]** und **[!UICONTROL Ausschlussgründe]** Registerkarten.
+  Im Fenster **[!UICONTROL Benachrichtigungen bezüglich Diskussionsforen]** befinden sich die Versandlogs im Tab **[!UICONTROL Bearbeiten > Versand]**. Überprüfen Sie ebenfalls die Tabs **[!UICONTROL Verfolgung > Protokoll]** und **[!UICONTROL Ausschlussgründe]**.

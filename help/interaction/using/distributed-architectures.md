@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: advanced-parameters
 exl-id: 083be073-aad4-4c81-aff2-77f5ef3e80db
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1028'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -63,7 +63,7 @@ Das Interaction-Package muss auf allen Instanzen installiert werden (Kontroll- u
 
 >[!NOTE]
 >
->Wenn Sie das Package installieren, werden die Felder vom Typ **long** der Tabelle **nms:proposition**, z. B. die Vorschlagskennung, zu Feldern vom Typ **int64**. Diese Art von Daten wird im Abschnitt [diesem Abschnitt](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data).
+>Wenn Sie das Package installieren, werden die Felder vom Typ **long** der Tabelle **nms:proposition**, z. B. die Vorschlagskennung, zu Feldern vom Typ **int64**. Weiterführende Informationen zu Datentypen finden Sie in diesem [Abschnitt](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data).
 
 Für jede Instanz muss außerdem die Aufbewahrungsdauer der Daten konfiguriert werden (im Fenster **[!UICONTROL Datenbereinigung]** des Bereitstellungassistenten). Bei den Ausführungsinstanzen muss diese Dauer der Verlaufstiefe entsprechen, die für die Berechnung der Eignungs- bzw. Typologieregeln (beweglicher Zeitraum) erforderlich ist.
 
@@ -77,7 +77,7 @@ Bei den Kontrollinstanzen müssen Sie darüber hinaus:
    * Wählen Sie den Typ **[!UICONTROL Ausführungsinstanz]** aus.
    * Kreuzen Sie die Option **[!UICONTROL Aktiviert]** an.
    * Geben Sie die Verbindungsparameter zur Ausführungsinstanz an.
-   * Jede Ausführungsinstanz muss mit einer ID verknüpft sein. Diese ID wird zugewiesen, wenn Sie auf die **[!UICONTROL Verbindung initialisieren]** Schaltfläche.
+   * Jeder Ausführungsinstanz muss eine Kennung zugeordnet werden. Dies geschieht durch Klick auf die Schaltfläche **[!UICONTROL Verbindung initialisieren]**.
    * Kreuzen Sie die verwendete Anwendung an: **[!UICONTROL Message Center]**, **[!UICONTROL Interaction]** oder beide.
    * Geben Sie das genutzte FDA-Konto an. Benutzer müssen in den Ausführungsinstanzen erstellt werden und über die folgenden Lese- und Schreibberechtigungen in den entsprechenden Instanzen verfügen:
 

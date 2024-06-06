@@ -8,9 +8,9 @@ hide: true
 hidefromtoc: true
 exl-id: 32696bbf-1415-4214-837f-5437fdb8b4d4
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1009'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -99,7 +99,7 @@ Standardmäßig wird nur eine Kennzahl angezeigt. Um Kennzahlen hinzuzufügen od
 
    Sie können insbesondere bestimmen, ob die Titel der Kennzahlen angezeigt werden sollen. Weitere Informationen hierzu finden Sie unter [Konfigurieren der Anzeige](../../reporting/using/concepts-and-methodology.md#configuring-the-display).
 
-1. Es ist möglich, neue Maßnahmen zu erstellen, die bestehende verwenden. Klicken Sie dazu auf **[!UICONTROL Kennzahl erstellen]** und konfigurieren Sie diese.
+1. Sie können neue Kennzahlen auf Basis von bereits existierenden erstellen. Klicken Sie dazu auf **[!UICONTROL Kennzahl erstellen]** und konfigurieren Sie diese.
 
    ![](assets/s_advuser_cube_in_report_config_02a.png)
 
@@ -117,7 +117,7 @@ Standardmäßig wird nur eine Kennzahl angezeigt. Um Kennzahlen hinzuzufügen od
 
    ![](assets/s_advuser_cube_in_report_config_02b.png)
 
-   Nachdem Sie eine Kennzahl erstellt haben, können Sie sie bearbeiten und bei Bedarf ihre Konfiguration ändern. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Maßnahmen]** und gehen Sie dann zum Tab der zu bearbeitenden Kennzahl.
+   Nach der Erstellung können Sie die Kennzahl bearbeiten und bei Bedarf ihre Konfiguration ändern. Klicken Sie hierzu auf die Schaltfläche **[!UICONTROL Kennzahlen]** und dann auf den Tab der zu bearbeitenden Kennzahl.
 
    Klicken Sie anschließend auf die Schaltfläche **[!UICONTROL Dynamische Kennzahl bearbeiten]**, um auf die Einstellungen zuzugreifen.
 

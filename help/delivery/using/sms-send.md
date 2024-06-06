@@ -7,9 +7,9 @@ feature: SMS
 role: User
 exl-id: 442672ee-5037-49b7-a06f-3a99920ce2b6
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '980'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Die detaillierten Schritte zur Validierung und zum Versand von Nachrichten finde
 
 ## Erweiterte Parameter {#advanced-parameters}
 
-Die **[!UICONTROL Eigenschaften]** -Schaltfläche bietet Zugriff auf den erweiterten Versandparameter. Die SMS-spezifischen Parameter befinden sich im Abschnitt **[!UICONTROL SMS-Parameter]** Abschnitt **[!UICONTROL Versand]** Registerkarte.
+Die Schaltfläche **[!UICONTROL Eigenschaften]** gibt Zugriff auf erweiterte Versandparameter. Der Abschnitt **[!UICONTROL SMS-Parameter]** im **[!UICONTROL Senden]**-Tab ermöglicht spezifische Konfigurationen.
 
 Folgende Optionen stehen zur Verfügung:
 
@@ -41,8 +41,8 @@ Folgende Optionen stehen zur Verfügung:
   >Überprüfen Sie die gültige Rechtslage Ihres Landes bezüglich der Änderung des Absendernamens. Stellen Sie außerdem sicher, dass Ihr Provider diese Funktionalität anbietet.
 
 * **Übermittlungsmodus**: Art der SMS-Übermittlung.
-* **Priorität**: Einer Nachricht zugewiesene Wichtigkeit. **[!UICONTROL Normal]** ist standardmäßig ausgewählt. Fragen Sie Ihren Dienstleister nach den Kosten der mit gesendeten SMS. **[!UICONTROL Hoch]** Priorität.
-* **Anwendungstyp**: Wählen Sie die Anwendung aus, die Sie Ihrem SMS-Versand zuweisen möchten. Die **[!UICONTROL Direktmarketing]** ist standardmäßig ausgewählt und die am häufigsten verwendete Option.
+* **Priorität**: Einer Nachricht zugewiesene Wichtigkeit. **[!UICONTROL Normal]** ist standardmäßig ausgewählt. Fragen Sie Ihren Provider nach den Kosten für mit der Priorität **[!UICONTROL Hoch]** versendete SMS.
+* **Anwendungstyp**: Wählen Sie die Anwendung aus, die Sie Ihrem SMS-Versand zuweisen möchten. Standardmäßig wird **[!UICONTROL Direkt-Marketing]** vorgeschlagen, da es sich um den am häufigsten verwendeten Typ handelt.
 
 **Den NetSize-Connector betreffende Parameter**
 
@@ -77,7 +77,7 @@ Das Modul **nlserver sms** ruft in regelmäßigen Abständen den Verarbeitungsfo
   > * Empfangsbestätigungen eines externen Kontos für gelöschte SMS nicht korrekt verarbeitet werden können.
   > * ein SMS-Konto nur mit einem externen Konto verknüpft sein darf, damit die Empfangsbestätigungen korrekt zugeordnet werden können
 
-* **Abmeldung**: Empfänger, die keine SMS-Sendungen mehr erhalten möchten, können eine Nachricht mit dem Wort STOP zurückgeben. Wenn Ihr Provider dies gemäß den Vertragsbedingungen zulässt, können Sie Nachrichten über die **SMS-Empfang** Workflow-Aktivität erstellen und anschließend eine Abfrage erstellen, um die **Empfänger nicht mehr kontaktieren** für die betroffenen Empfänger.
+* **Abmeldung**: Empfangende, die keine SMS-Sendungen mehr erhalten möchten, können eine Nachricht mit dem Wort STOP zurückgeben. Wenn es Ihr Providervertrag vorsieht, können Sie diese Nachrichten mithilfe der Workflow-Aktivität **SMS-Empfang** abrufen. Dies ermöglicht die Erstellung einer Abfrage, die die Option **Diese Person nicht mehr kontaktieren** für die entsprechenden Empfänger aktiviert.
 
   Nähere Informationen hierzu finden Sie im [Workflows](../../workflow/using/architecture.md)-Handbuch.
 

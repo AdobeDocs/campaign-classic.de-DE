@@ -8,9 +8,9 @@ topic-tags: use-cases
 feature: Workflows, Data Management
 exl-id: 3f606d3a-0af5-4315-bb08-1b21a71f1721
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '520'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
@@ -51,7 +51,7 @@ Gehen Sie wie folgt vor:
 
 1. Wählen Sie im Feld **[!UICONTROL Typ]** des Fensters **[!UICONTROL Definition eines berechneten Export-Feldes]** die Option **[!UICONTROL Auflistungen]** aus.
 
-   Definieren Sie die Spalte, auf die sich das neue berechnete Feld beziehen soll. Wählen Sie dazu die **[!UICONTROL Geschlecht]** im Dropdown-Menü des **[!UICONTROL Quellspalte]** -Feld: Die Zielwerte entsprechen dem **[!UICONTROL Geschlecht]** Spalte.
+   Definieren Sie die Spalte, auf die sich das neue berechnete Feld beziehen soll. Wählen Sie hierzu aus der Dropdown-Liste des Felds **[!UICONTROL Quellspalte]** die Spalte **[!UICONTROL Geschlecht]** aus. Die Zielwerte beziehen sich auf diese Spalte **[!UICONTROL Geschlecht]**.
 
    ![](assets/query_editor_nveau_76.png)
 
@@ -79,10 +79,10 @@ Gehen Sie wie folgt vor:
 
    ![](assets/query_editor_nveau_78.png)
 
-   Wenn Sie beispielsweise das Geschlecht &quot;2&quot;nicht im **[!UICONTROL Liste der Auflistungswerte]** und die **[!UICONTROL Warnhinweis erzeugen und fortfahren]** Funktion der **[!UICONTROL In anderen Fällen]** ausgewählt ist, wird ein Warnprotokoll angezeigt. Dieses Protokoll zeigt an, dass das Geschlecht &quot;2&quot; (Weiblich) nicht eingegeben wurde. Sie wird im **[!UICONTROL Beim Export erzeugte Protokolle]** -Feld des Datenvorschaufensters.
+   Wenn Sie beispielsweise in der **[!UICONTROL Liste der Auflistungswerte]** das Geschlecht „2“ nicht eingeben und die Funktion **[!UICONTROL Warnhinweis generieren und fortfahren]** des Feldes **[!UICONTROL Andernfalls]** ausgewählt ist, erhalten Sie ein Warnprotokoll. Dieses Protokoll zeigt an, dass das Geschlecht „2“ (weiblich) nicht eingegeben wurde. Dieser Hinweis wird im Bereich **[!UICONTROL Beim Export erzeugte Logs]** des Datenvorschaufensters angezeigt.
 
    ![](assets/query_editor_nveau_79.png)
 
-   Nehmen wir ein anderes Beispiel und sagen, dass der Auflistungswert &quot;2&quot; nicht eingegeben wurde. Wählen Sie die **[!UICONTROL Fehler erzeugen und Zeile zurückweisen]** Funktion: Alle geschlechtsspezifischen &quot;2&quot;-Empfänger rufen Anomalien und die anderen Informationen in der Zeile auf (Vor- und Nachname usw.) wird nicht exportiert. Ein Fehlerprotokoll wird im **[!UICONTROL Beim Export erzeugte Protokolle]** -Feld des Datenvorschaufensters. Dieses Protokoll zeigt an, dass der Auflistungswert &quot;2&quot; nicht eingegeben wurde.
+   Nehmen wir ein anderes Beispiel und gehen wir davon aus, dass der Auflistungswert „2“ nicht eingegeben wurde. Wählen Sie die Funktion **[!UICONTROL Fehler erzeugen und Zeile zurückweisen]**: Sämtliche Empfangenden des Geschlechts „2“ werden als Fehler ausgegeben und alle anderen Informationen der Zeile (Nachname, Vorname usw.) werden nicht exportiert. Im Feld **[!UICONTROL Beim Export erzeugte Logs]** des Datenvorschaufensters wird eine entsprechende Fehlernachricht ausgegeben. Dieses Protokoll zeigt an, dass der Auflistungswert „2“ nicht eingegeben wurde.
 
    ![](assets/query_editor_nveau_80.png)

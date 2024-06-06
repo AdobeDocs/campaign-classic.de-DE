@@ -5,9 +5,9 @@ description: Erfahren Sie mehr über die Workflow-Aktivität "HTTP-Übertragung"
 feature: Workflows
 exl-id: b6005eae-5fbc-4e22-ab3a-c9b7ed6506f6
 source-git-commit: a0c0c7d13704b0155004e578d6739852ceb43c81
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '538'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Die **HTTP-Übertragung** lädt Dateien über eine explizite URL, ein externes K
 
    * Bei Verwendung eines **[!UICONTROL externen Kontos]** wird das Konto aus der Dropdown-Liste ausgewählt und die zu ladende Datei angegeben.
 
-     Externe Konten werden über die **[!UICONTROL Administration > Plattform > Externe Konten]** -Knoten des Adobe Campaign-Baums. Die Kontoparameter können im **[!UICONTROL Link bearbeiten]** Symbol.
+     Externe Konten werden über den Knoten **[!UICONTROL Administration > Plattform > Externe Konten]** im Adobe Campaign-Navigationsbaum konfiguriert. Die Kontoparameter können über das Symbol **[!UICONTROL Link bearbeiten]** bearbeitet werden.
 
      ![](assets/download_web_edit_external.png)
 
@@ -45,7 +45,7 @@ Die **HTTP-Übertragung** lädt Dateien über eine explizite URL, ein externes K
 
    Folgende Optionen stehen zur Verfügung:
 
-   * **[!UICONTROL Standardspeicherverzeichnis verwenden]**: Die Datei wird immer verschoben, bevor sie verarbeitet wird. Wenn diese Option aktiviert ist, wird die Datei in das standardmäßige Speicherverzeichnis (das **vars** -Ordner des Adobe Campaign-Installationsordners). Um einen Speicherordner anzugeben, deaktivieren Sie das Kontrollkästchen und geben Sie seinen Pfad im **[!UICONTROL Speicherordner]** field
+   * **[!UICONTROL Standard-Speicherverzeichnis nutzen]**: Die Datei wird immer verschoben, bevor sie verarbeitet wird. Wenn diese Option aktiviert ist, wird die Datei in das Standard-Speicherverzeichnis (das Verzeichnis **vars** im Adobe-Campaign-Installationsordner) verschoben. Um ein Speicherverzeichnis anzugeben, deaktivieren Sie das Kontrollkästchen und geben Sie seinen Pfad in das Feld **[!UICONTROL Speicherverzeichnis]** ein.
    * **[!UICONTROL Anzahl Dateien]**: Geben Sie die Anzahl an Dateien an, die maximal im Speicherverzeichnis beibehalten werden soll.
    * **[!UICONTROL Maximale Größe (in MB)]**: Geben Sie die Größe an, die das Speicherverzeichnis nicht überschreiten darf (in Megabytes).
 
@@ -59,9 +59,9 @@ Die **HTTP-Übertragung** lädt Dateien über eine explizite URL, ein externes K
 
    Der Link **[!UICONTROL Erweiterte Parameter...]** bietet Zugriff auf folgende Optionen:
 
-   * **[!UICONTROL Folgen Sie den Anweisungen]**: Mithilfe der Dateiumleitung können Sie Überschreibungen verwenden, um die Dateneingabe oder -ausgabe an ein Gerät eines anderen Typs zu leiten.
-   * **[!UICONTROL Hinzufügen der HTTP-Header zur Datei]**: In einigen Fällen können Sie einer Datei zusätzliche HTTP-Header hinzufügen. In den meisten Fällen werden diese Header verwendet, um zusätzliche Informationen zur Fehlerbehebung bereitzustellen, um [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/docs/Web/HTTP/CORS), oder um bestimmte Caching-Anweisungen festzulegen.
-   * **[!UICONTROL Den HTTP-Rückgabecode ignorieren]**: HTTP-Rückgabe-Codes, auch HTTP-Status-Codes genannt, geben das Ergebnis einer HTTP-Anfrage an.
+   * **[!UICONTROL Den Weiterleitungen folgen]**: Mithilfe der Dateiweiterleitung können Sie Überschreibungen verwenden, um die Dateneingabe oder -ausgabe an ein Gerät eines anderen Typs zu leiten.
+   * **[!UICONTROL HTTP-Header zur Datei hinzufügen]**: In einigen Fällen ist es vorteilhaft, einer Datei zusätzliche HTTP-Header hinzuzufügen. In den meisten Fällen werden diese Header verwendet, um zusätzliche Informationen zur Fehlerbehebung zu liefern, oder für [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/docs/Web/HTTP/CORS) oder um bestimmte Caching-Anweisungen festzulegen.
+   * **[!UICONTROL HTTP-Ausgabecode ignorieren]**: HTTP-Ausgabe-Codes, auch HTTP-Status-Codes genannt, geben das Ergebnis einer HTTP-Anfrage an.
 
    ![](assets/download_web_edit_advanced.png)
 

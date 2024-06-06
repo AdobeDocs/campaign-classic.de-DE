@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: cc1200fa-f6d8-4f41-aed1-d1a7f229447a
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3912'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -70,7 +70,7 @@ Aufgaben können zudem über das Dashboard einer Kampagne erstellt werden: In di
 
 ![](assets/s_ncs_user_task_create_new_from_op.png)
 
-Nachdem eine Aufgabe erstellt wurde, wird sie zum Kampagnenkalender und zur Aufgabenliste hinzugefügt. Um eine Aufgabe zu bearbeiten, wählen Sie sie aus dem Zeitplan aus oder klicken Sie in der Aufgabenübersicht auf ihren Namen und klicken Sie auf **[!UICONTROL Öffnen]** -Link.
+Nach der Erstellung wird die Aufgabe dem Kampagnenkalender und der Aufgabenliste hinzugefügt. Um sie zu bearbeiten, wählen Sie die Aufgabe im Kalender oder in der Aufgabenübersicht aus und klicken Sie auf den Link **[!UICONTROL Öffnen]**.
 
 ![](assets/s_ncs_user_task_edit_simple.png)
 
@@ -88,7 +88,7 @@ Der Lebenszyklus einer Aufgabe wird im Abschnitt [Lebenszyklus](#life-cycle) bes
 
 Der für eine Aufgabe verantwortliche Benutzer ist als Einziger dazu berechtigt, die Aufgabe zu beenden.
 
-Wenn ein Adobe Campaign-Benutzer eine Aufgabe erstellt, wird diese ihm standardmäßig automatisch zugewiesen. Um einen anderen Operator auszuwählen, verwenden Sie die **[!UICONTROL Zugeordnet zu]** -Feld.
+Wenn ein Adobe-Campaign-Benutzer eine Aufgabe erstellt, wird ihm diese automatisch zugewiesen. Im Feld **[!UICONTROL Zugeordneter Benutzer]** kann jedoch auch ein anderer Verantwortlicher ausgewählt werden.
 
 ![](assets/s_ncs_user_task_edit_simple_general_tab.png)
 
@@ -98,7 +98,7 @@ Wenn ein Adobe Campaign-Benutzer eine Aufgabe erstellt, wird diese ihm standardm
 
 Neben dem Verantwortlichen können auch andere an der Ausführung der Aufgabe beteiligte Benutzer angegeben werden. Diese können nur den ihnen zugewiesenen Teil der Aufgabe validieren; sie sind nicht dazu berechtigt, sie abzuschließen.
 
-Sie werden mithilfe der Variablen **[!UICONTROL Ressourcen]** in der Symbolleiste der Aufgabe. Klicken Sie auf **[!UICONTROL Hinzufügen]** und wählen Sie die betroffenen Benutzer aus.
+Sie werden über das Symbol **[!UICONTROL Ressourcen]** in der Menüleiste der Aufgabe angegeben. Klicken Sie auf **[!UICONTROL Hinzufügen]** und wählen Sie die betroffenen Benutzer aus.
 
 ![](assets/s_ncs_user_task_add_resources.png)
 
@@ -120,7 +120,7 @@ Das Profil des zugeordneten Adobe-Campaign-Benutzers kann über das Symbol **[!U
 
 ### Validierung {#reviewers}
 
-Neben den Teilnehmern können auch Benutzer definiert werden, die die Aufgabe überprüfen, nachdem sie von der für sie zuständigen Person beendet wurde. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Aufgabenvalidierung aktivieren]** im unteren linken Bereich des **[!UICONTROL Ressourcen]** Fenster. Dabei kann es sich um einen einzelnen Benutzer, eine Benutzergruppe oder eine Benutzerliste handeln.
+Neben den Beteiligten können Benutzer festgelegt werden, die die Aufgabe validieren, nachdem ihre Bearbeitung durch den Verantwortlichen beendet wurde. Klicken Sie hierzu im Fenster der **[!UICONTROL Ressourcen]** in der Mitte links auf die Option **[!UICONTROL Aufgabenvalidierung aktivieren]**. Dabei kann es sich um einen einzelnen Benutzer, eine Benutzergruppe oder eine Benutzerliste handeln.
 
 ![](assets/s_ncs_user_task_edit_resource_validation.png)
 

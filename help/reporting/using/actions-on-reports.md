@@ -6,9 +6,9 @@ feature: Reporting, Monitoring
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 exl-id: b30cdeaf-4ad6-473d-bdbc-91984755b609
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '578'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Sie können Ihren Bericht für den Export im PDF-, Excel- oder OpenOffice-Format
 
 Die Exportoptionen sind über die **[!UICONTROL Seite]**-Aktivität(en) des Berichts im Tab **[!UICONTROL Erweitert]** zugänglich.
 
-Ändern Sie die Einstellungen von **[!UICONTROL Papier]** und **[!UICONTROL Ränder]** nach Ihren Bedürfnissen. Sie können auch den Export einer Seite nur im PDF-Format zulassen. Deaktivieren Sie dazu die **[!UICONTROL Aktivieren des OpenOffice-/Microsoft Excel-Exports]** -Option.
+Ändern Sie die Einstellungen von **[!UICONTROL Papier]** und **[!UICONTROL Ränder]** nach Ihren Bedürfnissen. Sie können auch den Export einer Seite nur im PDF-Format zulassen. Deaktivieren Sie hierzu die Option **[!UICONTROL Export in OpenOffice/Excel aktivieren]**.
 
 ![](assets/s_ncs_advuser_report_wizard_021.png)
 
@@ -52,7 +52,7 @@ Für Berichte vom Typ **[!UICONTROL Liste mit Gruppierung]**, die im Excel-Forma
 
   ![](assets/export_limitations_hide_label.png)
 
-* Die Berichte müssen keine spezifische Formatierung verwenden, die auf Zellenebene definiert ist. Es ist vorzuziehen, **[!UICONTROL Formularwiedergabe]** , um das Format der Zellen in der Tabelle zu definieren. Die **[!UICONTROL Formularwiedergabe]** kann über **[!UICONTROL Administration > Konfiguration > Formular-Rendering]**.
+* Die Berichte dürfen keine spezifische Zellenformatierung aufweisen. Es empfiehlt sich, das **[!UICONTROL Formular-Rendering]** zu verwenden, um das Format der Zellen der Tabelle zu definieren. Der Zugriff auf das **[!UICONTROL Formular-Rendering]** erfolgt im Knoten **[!UICONTROL Administration > Konfiguration > Formular-Rendering]**.
 * Es wird empfohlen, keinen HTML-Inhalt einzufügen.
 * Wenn ein Bericht mehrere Elemente vom Typ Tabelle, Grafik etc. enthält, werden diese untereinander exportiert.
 * Sie können den Zeilenumbruch in Zellen erzwingen: Diese Konfiguration wird in Excel beibehalten. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../reporting/using/creating-a-table.md#defining-cell-format).
@@ -107,6 +107,6 @@ Die gespeicherten Verläufe können über das Ein-/Ausblende-Symbol angezeigt we
 
 ![](assets/s_ncs_advuser_report_history_04.png)
 
-Ein Berichtsarchiv kann gelöscht werden. Gehen Sie dazu zum Knoten Adobe Campaign , in dem Ihre Berichte gespeichert sind. Klicken Sie auf **[!UICONTROL Archive]** auf, wählen Sie die zu löschende Registerkarte aus und klicken Sie auf **[!UICONTROL Löschen]**.
+Ein Berichtsarchiv kann gelöscht werden. Gehen Sie dazu zum Adobe Campaign-Knoten, in dem Ihre Berichte gespeichert sind. Klicken Sie auf den Tab **[!UICONTROL Verläufe]**, markieren Sie den betreffenden Verlauf und klicken Sie auf **[!UICONTROL Löschen]**.
 
 ![](assets/s_ncs_advuser_report_history_01.png)
