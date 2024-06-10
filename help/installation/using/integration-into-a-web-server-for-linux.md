@@ -8,15 +8,14 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: 4f8ea358-a38d-4137-9dea-f398e60c5f5d
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 0e88ac270423ad419237264e562a03ab0c42efb5
 workflow-type: tm+mt
 source-wordcount: '565'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
-# Integration in einen Webserver für Linux{#integration-into-a-web-server-for-linux}
-
+# Integration in einen Webserver für Linux {#integration-into-a-web-server-for-linux}
 
 
 Adobe Campaign enthält Apache Tomcat, der über HTTP (und SOAP) als Einstiegspunkt im Anwendungsserver fungiert.
@@ -29,7 +28,7 @@ In diesem Fall:
 * Die Clientkonsole Konsolen stellt dann eine Verbindung über eine URL her, z. B.:
 
   ```
-  http://<computer>:8080
+  https://<computer>:8080
   ```
 
 Aus Sicherheits- und Verwaltungsgründen empfehlen wir jedoch die Verwendung eines dedizierten Webservers als Haupteinstiegspunkt für HTTP-Traffic, wenn der Computer, auf dem Adobe Campaign ausgeführt wird, im Internet verfügbar ist und Sie den Zugriff auf die Konsole außerhalb Ihres Netzwerks öffnen möchten.
