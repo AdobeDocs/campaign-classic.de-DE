@@ -4,9 +4,9 @@ title: Aktualisierung auf den neuen Zustellbarkeits-Server
 description: Erfahren Sie, wie Sie eine Aktualisierung auf den neuen Zustellbarkeits-Server von Campaign durchführen
 feature: Technote, Deliverability
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: a08b386ff73fd9a2e9b3909c8f8de5e419104ce4
+source-git-commit: 514f390b5615a504f3805de68f882af54e0c3949
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1429'
 ht-degree: 88%
 
 ---
@@ -50,7 +50,7 @@ Zur Integration des neuen Zustellbarkeits-Servers muss Campaign mit Adobe Shared
 >
 > Die Berechtigung für Dienstkonten (JWT) wird von Adobe nicht mehr unterstützt. Campaign-Integrationen mit Adobe-Lösungen müssen jetzt auf OAuth Server-zu-Server-Anmeldedaten angewiesen sein. </br>
 >
-> * Wenn Sie eingehende Integrationen mit Campaign implementiert haben, müssen Sie Ihr technisches Konto wie in dieser Dokumentation beschrieben migrieren. Die bestehenden JWT-Anmeldedaten (Service Account) funktionieren weiterhin bis zum 27. Januar 2025. Darüber hinaus ist die Erstellung neuer JWT-Anmeldedaten (Service Account) in der Developer Console ab dem 3. Juni 2024 nicht mehr möglich. Eine neue JWT-Berechtigung (Service Account) kann nach diesem Datum nicht mehr erstellt oder einem Projekt hinzugefügt werden. </br>
+> * Wenn Sie eingehende Integrationen mit Campaign implementiert haben, müssen Sie Ihr technisches Konto migrieren, wie im Abschnitt [diese Dokumentation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank). Die bestehenden JWT-Anmeldedaten (Service Account) funktionieren weiterhin bis zum 27. Januar 2025. Darüber hinaus ist die Erstellung neuer JWT-Anmeldedaten (Service Account) in der Developer Console ab dem 3. Juni 2024 nicht mehr möglich. Eine neue JWT-Berechtigung (Service Account) kann nach diesem Datum nicht mehr erstellt oder einem Projekt hinzugefügt werden. </br>
 >
 > * Wenn Sie ausgehende Integrationen implementiert haben, z. B. die Integration von Campaign mit Analytics oder Experience Cloud Trigger, funktionieren diese bis zum 27. Januar 2025 weiterhin. Vor diesem Datum müssen Sie jedoch Ihre Campaign-Umgebung auf Version 7.4.1 aktualisieren und Ihr technisches Konto auf oAuth migrieren. Da die Erstellung neuer Service Account (JWT)-Anmeldedaten in der Developer Console ab dem 3. Juni 2024 nicht mehr möglich ist, können Sie nach diesem Datum keine neue ausgehende Integration erstellen, die auf JWT basiert
 
