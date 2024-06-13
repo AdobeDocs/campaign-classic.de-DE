@@ -6,9 +6,9 @@ feature: Mobile SDK Integration, Push
 role: User, Developer
 exl-id: a5f6b82d-5561-4e56-b2ed-7fd6fd8c2b55
 source-git-commit: 00d46a7508def4d472e6bb8940a4d40a23c4fb07
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '987'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ Im Folgenden finden Sie die Integrationsschritte für das Campaign SDK.
   Neolane.getInstance().setTrackingHost("https://yourTrackingHost:yourTrackingPort/");
   ```
 
-  Mit der folgenden Berechtigung können Sie die eindeutige Kennung eines Mobilgeräts wiederherstellen:
+  Folgende Erlaubnis ermöglicht den Abruf einer eindeutigen Kennung für jedes Mobilgerät:
 
   ```
   <uses-permission android:name="android.permission.READ_PHONE_STATE" /> 
@@ -542,7 +542,7 @@ Um die **registerDeviceStatus**-Delegation zu implementieren, gehen Sie folgende
 
 +++**Variablen**
 
-Mit den Variablen können Sie das Verhalten von Mobile Apps nach dem Erhalt einer Benachrichtigung festlegen. Diese Variablen müssen im Mobile-App-Code und in der Adobe Campaign-Konsole im **[!UICONTROL Variablen]** in der dedizierten Mobile App (siehe [Mobile App in Adobe Campaign konfigurieren](configuring-the-mobile-application.md)). Im Folgenden finden Sie ein Beispiel für einen Code, mit dem eine Mobile App alle hinzugefügten Variablen in einer Benachrichtigung erfassen kann. In unserem Beispiel verwenden wir die Variable „VAR“.
+Mit den Variablen können Sie das Verhalten von Mobile Apps nach dem Erhalt einer Benachrichtigung festlegen. Diese Variablen müssen im Code der Mobile App und in der Adobe Campaign-Konsole auf der Registerkarte **[!UICONTROL Variablen]** in der dedizierten Mobile App definiert werden (siehe [Konfigurieren einer Mobile App in Adobe Campaign](configuring-the-mobile-application.md)). Im Folgenden finden Sie ein Beispiel für einen Code, mit dem eine Mobile App alle hinzugefügten Variablen in einer Benachrichtigung erfassen kann. In unserem Beispiel verwenden wir die Variable „VAR“.
 
 * **Für Android**:
 

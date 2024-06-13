@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 23c873fd-9016-4d32-842c-772cfff0e23e
 source-git-commit: 5d237d42adabe42a07bc759913dd9453df650671
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '905'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 81%
 
 Adobe Campaign bietet eine Reihe von Tools, die Sie bei der Einhaltung der [Datenschutzverordnungen](#privacy-management-regulations) (einschließlich DSGVO, CCPA, PDPA, LGPD) unterstützen.
 
-Im Folgenden finden Sie die fünf wichtigsten Funktionen von Adobe Campaign, mit denen die Einhaltung von Datenschutzbestimmungen sichergestellt werden kann:
+Im Folgenden sind die fünf wichtigsten Funktionen von Adobe Campaign zur Einhaltung der Datenschutzbestimmungen aufgeführt:
 
 * **Recht auf Zugriff**
 * **Recht auf Löschen**
@@ -40,20 +40,20 @@ It also contains information on important features to manage Privacy ([Consent, 
 
 Die Funktionen von Adobe Campaign helfen Ihnen bei der Einhaltung der folgenden Verordnungen:
 
-* **DSGVO** (Datenschutz-Grundverordnung) ist das Datenschutzgesetz der Europäischen Union (EU), in dem die Anforderungen an den Datenschutz in den EU-Ländern harmonisiert und neu geregelt werden.
-* **CCPA** (California Consumer Privacy Act) gibt in Kalifornien ansässigen Personen neue Rechte in Bezug auf ihre personenbezogenen Daten und verpflichtet bestimmte in Kalifornien tätige Unternehmen zur Einhaltung von Datenschutzvorschriften.
-* **PDPA** (Personal Data Protection Act) ist das Datenschutzgesetz, in dem die Anforderungen an den Datenschutz in Thailand harmonisiert und neu geregelt werden.
-* **LGPD** (Lei Geral de Proteção de Dados) gilt für alle Unternehmen, die personenbezogene Daten in Brasilien erheben oder verarbeiten.
-* **CASL** (kanadisches Anti-Spam-Gesetz) umfasst alle Nachrichten, die in oder aus Kanada gesendet werden, jedoch keine Nachrichten, die über Kanada gesendet werden;
-* **VCDPA** (Virginia Consumer Data Protection Act) und **CPA** (Colorado Privacy Act) gilt für alle Unternehmen, die in diesen Staaten geschäftlich tätig sind oder Personen mit Wohnsitz in diesen Staaten aufnehmen.
+* Die **DSGVO** (Datenschutz-Grundverordnung) ist das Datenschutzgesetz der Europäischen Union (EU), in dem die Anforderungen an den Datenschutz in den Ländern der EU harmonisiert und neu geregelt werden. 
+* Der **CCPA** (California Consumer Privacy Act) gibt in Kalifornien ansässigen Personen neue Rechte in Bezug auf ihre personenbezogenen Daten und verpflichtet bestimmte in Kalifornien tätige Unternehmen zur Einhaltung von Datenschutzvorschriften.
+* Der **PDPA** (Personal Data Protection Act) ist das neue Datenschutzgesetz, in dem die Anforderungen an den Datenschutz in Thailand harmonisiert und neu geregelt werden.
+* Der **LGPD** (Lei Geral de Proteção de Dados) gilt für alle Unternehmen, die in Brasilien personenbezogene Daten sammeln oder verarbeiten.
+* Das **CASL** (Canadian Anti-Spam Law) betrifft alle Nachrichten, die in oder aus Kanada gesendet werden, jedoch keine Nachrichten, die durch Kanada geleitet werden.
+* Der **VCDPA** (Virginia Consumer Data Protection Act) und **CPA** (Colorado Privacy Act) gelten für alle Unternehmen, die in diesen Bundesstaaten geschäftlich tätig sind oder Personen mit Wohnsitz in diesen Staaten aufnehmen.
 
-Alle diese Vorschriften gelten für Adobe Campaign-Kunden, die Daten von Datensubjekten mit Wohnsitz in den oben genannten Regionen oder Ländern besitzen.
+Alle diese Verordnungen gelten für Adobe Campaign-Kundinnen und -Kunden, die über Daten von betroffenen Personen mit Wohnsitz in den oben genannten Regionen oder Ländern verfügen.
 
 <!--Several Privacy capabilities are available in Adobe Campaign, including consent management, data retention settings, and rights management. See [Consent, Retention and Roles](#consent-retention-roles). In addition to this, Adobe Campaign helps facilitate your readiness as Data Controller for certain Privacy requests. See [Right to Access and Right to be Forgotten](#right-access-forgotten).-->
 
 >[!NOTE]
 >
->Weitere Informationen zu personenbezogenen Daten und zu den verschiedenen Entitäten, die Daten verwalten (Datenverantwortlicher, Auftragsverarbeiter und betroffene Person), finden Sie unter [Personenbezogene Daten und Personas](../../platform/using/privacy-and-recommendations.md#personal-data).
+>Weitere Informationen zu personenbezogenen Daten und zu den verschiedenen Entitäten, die Daten verwalten (Datenverantwortliche, Auftragsverarbeiter und betroffene Personen), finden Sie unter [Personenbezogene Daten und Personas](../../platform/using/privacy-and-recommendations.md#personal-data).
 
 ## Recht auf Zugriff und Recht auf Vergessenwerden {#right-access-forgotten}
 

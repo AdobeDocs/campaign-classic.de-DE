@@ -7,27 +7,27 @@ feature: Personalization
 role: User
 exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
 source-git-commit: 8e5a328bee7701adfedec6a533cc21b4ce548187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '992'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 # Personalisierte Gutscheine{#personalized-coupons}
 
-Durch das Hinzufügen von Gutscheinen können Sie Ihren Empfängern Produkte und Dienstleistungen mit einem Mehrwert anbieten. Mit dem Campaign-Gutscheinmodul können Sie Gutscheine erstellen und zu einem späteren Zeitpunkt Marketing-Angeboten bei deren Erstellung zuweisen. Da Gutscheine nur für einen ausgewählten Zeitraum gültig sind, ist ein zugewiesener Gutschein eindeutig mit einer bestimmten Versandnachricht verknüpft. Zusätzlich wird von Campaign vor dem Versand bestätigt, dass genügend Gutscheine für die Anzahl der Nachrichten vorhanden sind.
+Durch das Hinzufügen von Coupons zu Ihren Sendungen können Sie Ihren Empfängerinnen und Empfängern Produkte und Dienstleistungen mit einem Mehrwert anbieten. Mit dem Campaign-Couponmodul können Sie Coupons erstellen und zu einem späteren Zeitpunkt Marketing-Angeboten bei deren Erstellung zuweisen. Da Coupons nur für einen ausgewählten Zeitraum gültig sind, ist ein zugewiesener Coupon eindeutig mit einer bestimmten Versandnachricht verknüpft. Zusätzlich wird von Campaign vor dem Versand bestätigt, dass genügend Coupons für die Anzahl der Nachrichten vorhanden sind.
 
 >[!AVAILABILITY]
 >
->Die Couponverwaltung ist in Campaign v8 im Kontext einer Enterprise (FFDA)-Bereitstellung nicht verfügbar. Weitere Informationen finden Sie unter [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/architecture/ffda/enterprise-deployment){target="_blank"}.
+>Die Couponverwaltung ist in Campaign v8 nicht im Kontext einer Enterprise-Bereitstellung (FFDA) verfügbar. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/architecture/ffda/enterprise-deployment){target="_blank"}.
 
-Die Couponverwaltung beruht auf einem Package, das installiert werden muss. Um festzustellen, ob Sie dieses Package installiert haben, gehen Sie zu **[!UICONTROL Administration > Konfiguration > Packageverwaltung > Installierte Packages.]**
+Die Couponverwaltung basiert auf einem Kit, das installiert werden muss. Um festzustellen, ob Sie dieses Kit zur Couponverwaltung installiert haben, gehen Sie zu **[!UICONTROL Administration > Konfiguration > Kit-Verwaltung > Installierte Kits.]**
 
-Gutscheindaten können im CSV- und XML-Format importiert und exportiert werden. [Weitere Informationen](../../platform/using/get-started-data-import-export.md).
+Coupondaten können im CSV- und XML-Format importiert und exportiert werden. [Weitere Informationen](../../platform/using/get-started-data-import-export.md).
 
-## Erstellen eines Gutscheins {#creating-a-coupon}
+## Erstellen eines Coupons {#creating-a-coupon}
 
-Das Modul Couponverwaltung bietet zwei Optionen beim Erstellen von Gutscheinen:
+Für die Erstellung von Coupons bietet Ihnen das Couponverwaltungsmodul zwei Möglichkeiten:
 
 * **Anonym**: ein Standardgutschein für ausgewählte Empfänger oder Empfängerlisten
 * **Individuell**: ein personalisierter Gutschein für ausgewählte Empfänger

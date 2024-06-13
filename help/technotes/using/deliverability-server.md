@@ -5,9 +5,9 @@ description: Erfahren Sie, wie Sie eine Aktualisierung auf den neuen Zustellbark
 feature: Technote, Deliverability
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
 source-git-commit: 514f390b5615a504f3805de68f882af54e0c3949
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1429'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -48,11 +48,11 @@ Zur Integration des neuen Zustellbarkeits-Servers muss Campaign mit Adobe Shared
 
 >[!AVAILABILITY]
 >
-> Die Berechtigung für Dienstkonten (JWT) wird von Adobe nicht mehr unterstützt. Campaign-Integrationen mit Adobe-Lösungen müssen jetzt auf OAuth Server-zu-Server-Anmeldedaten angewiesen sein. </br>
+> Die Anmeldedaten für Service-Konten (JWT) werden von Adobe demnächst eingestellt. Campaign-Integrationen mit Adobe-Lösungen und -Apps müssen jetzt mit OAuth-Server-to-Server-Anmeldedaten arbeiten. </br>
 >
-> * Wenn Sie eingehende Integrationen mit Campaign implementiert haben, müssen Sie Ihr technisches Konto migrieren, wie im Abschnitt [diese Dokumentation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank). Die bestehenden JWT-Anmeldedaten (Service Account) funktionieren weiterhin bis zum 27. Januar 2025. Darüber hinaus ist die Erstellung neuer JWT-Anmeldedaten (Service Account) in der Developer Console ab dem 3. Juni 2024 nicht mehr möglich. Eine neue JWT-Berechtigung (Service Account) kann nach diesem Datum nicht mehr erstellt oder einem Projekt hinzugefügt werden. </br>
+> * Wenn Sie eingehende Integrationen in Campaign implementiert haben, müssen Sie Ihr technisches Konto migrieren, wie in [dieser Dokumentation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank) beschrieben. Bestehende Anmeldedaten für Service-Konten (JWT) sind noch bis zum 27. Januar 2025 gültig. Darüber hinaus ist die Erstellung neuer Anmeldedaten für Service-Konten (JWT) in der Developer Console seit dem 3. Juni 2024 nicht mehr möglich. Seitdem ist es nicht mehr möglich, Anmeldedaten für Service-Konten (JWT) zu erstellen oder einem Projekt hinzuzufügen. </br>
 >
-> * Wenn Sie ausgehende Integrationen implementiert haben, z. B. die Integration von Campaign mit Analytics oder Experience Cloud Trigger, funktionieren diese bis zum 27. Januar 2025 weiterhin. Vor diesem Datum müssen Sie jedoch Ihre Campaign-Umgebung auf Version 7.4.1 aktualisieren und Ihr technisches Konto auf oAuth migrieren. Da die Erstellung neuer Service Account (JWT)-Anmeldedaten in der Developer Console ab dem 3. Juni 2024 nicht mehr möglich ist, können Sie nach diesem Datum keine neue ausgehende Integration erstellen, die auf JWT basiert
+> * Wenn Sie ausgehende Integrationen implementiert haben, z. B. die Integration von Campaign mit Analytics oder Experience Cloud Triggers, funktionieren diese noch bis zum 27. Januar 2025. Vor diesem Datum müssen Sie jedoch Ihre Campaign-Umgebung auf v7.4.1 aktualisieren und Ihr technisches Konto auf OAuth migrieren. Da die Erstellung neuer Anmeldedaten für Service-Konten (JWT) in der Developer Console seit dem 3. Juni 2024 nicht mehr möglich ist, können Sie seit diesem Datum keine neue ausgehende Integration mehr erstellen, die auf JWT basiert.
 
 ### Voraussetzungen{#prerequisites}
 
@@ -83,7 +83,7 @@ Wenn Sie **Adobe Campaign** nicht sehen können, wenden Sie sich an die [Adobe-K
 >Wenn Sie On-Premise-Kunde sind und auf Ihrer Seite eine Firewall implementiert ist, müssen Sie die URL `https://deliverability-service.adobe.io` zu Ihrer Zulassungsliste hinzufügen. [Weitere Informationen](../../installation/using/url-permissions.md).
 
 
-### Schritt 1: Erstellen/Aktualisieren Sie Ihr Adobe Developer-Projekt {#adobe-io-project}
+### Schritt 1: Erstellen/Aktualisieren Ihres Adobe Developer-Projekts {#adobe-io-project}
 
 1. Rufen Sie die [Adobe Developer Console](https://developer.adobe.com/console/home) auf und melden Sie sich mit den Entwicklerzugriffsdaten Ihrer Organisation an. Stellen Sie sicher, dass Sie beim richtigen Portal der Organisation angemeldet sind.
    **Achtung**: Wenn Sie mehrere Organisationen haben, achten Sie darauf, dass die richtige ausgewählt ist. Weitere Informationen zu Organisationen finden Sie [auf dieser Seite](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=de#ims-org-id){_blank}.
