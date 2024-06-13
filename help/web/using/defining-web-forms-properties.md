@@ -5,10 +5,10 @@ description: Definieren der Eigenschaften von Web-Formularen
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Web Forms
 exl-id: 37aaaa03-0656-4a9b-bcae-74de33e3737b
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: ht
-source-wordcount: '1277'
-ht-degree: 100%
+source-git-commit: 1d4990917fea54e67ed23cd0771295de03a4f01a
+workflow-type: tm+mt
+source-wordcount: '1439'
+ht-degree: 88%
 
 ---
 
@@ -83,6 +83,32 @@ Themen werden im Knoten **[!UICONTROL Administration > Konfiguration > Formular-
 Das jeweilige Rendering wird im unteren Teil des Eigenschaftenfensters angezeigt. Über das Symbol **[!UICONTROL Link bearbeiten]** kann die Konfiguration für das ausgewählte Thema aufgerufen werden.
 
 ![](assets/s_ncs_admin_survey_properties_render.png)
+
+## Logo im Formular {#logo-in-the-form}
+
+Sie können das im Formular verwendete Logo durch Ihr eigenes Logo ändern.
+
+Im **[!UICONTROL Rendering]** Registerkarte innerhalb der **[!UICONTROL Eigenschaften]** Klicken Sie in Ihrer Web-App auf das Glassymbol Ihrer Vorlage :
+
+![](assets/logo_glass.png)
+
+Klicken Sie im neuen Fenster auf die Schaltfläche **[!UICONTROL Seitenlayout]** link :
+
+![](assets/logo_pagelayout.png)
+
+Sie können den Pfad des Logobilds hier ändern:
+
+![](assets/logo_path.png)
+
+Die verfügbaren Bilder finden Sie unter **[!UICONTROL Administration]** > **[!UICONTROL Konfiguration]** > **[!UICONTROL Bilder]**. Hier können Sie Ihr Logo hinzufügen.
+
+Diese Bilder werden im Backend-Verzeichnis der Instanz abgelegt *datakit\nms\fra\img\activities* oder *datakit\nms\eng\img\activities* (eng oder fra, je nach Sprache der Instanz).
+
+Um ein neues Bild in diesem Verzeichnis (und in Bildern) verfügbar zu machen, wenden Sie sich an den Adobe-Support, um Änderungen an den Backend-Verzeichnissen vorzunehmen.
+
+Bei lokalen Instanzen können Sie dem Datakit selbst Bilder hinzufügen.
+
+Das hochgeladene Bild muss nicht vom Campaign-Client aus sichtbar sein. Der richtige Pfad reicht aus, um als neues Logo zu verwenden.
 
 ## Texte im Formular {#texts-in-the-form}
 
