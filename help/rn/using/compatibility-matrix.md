@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: 28302b40d4fa43b400a3e1b6dd3e133976a01418
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '856'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 
 ## Betriebssysteme {#OperatingSystems}
 
-Als On-Premise-/Hybrid-Kunde müssen Sie Adobe Campaign in einem der unten aufgeführten Betriebssysteme installieren. Weitere Informationen zu den Installationsschritten von Campaign Classic v7 finden Sie unter [diese Seite](../../installation/using/application-server.md).
+Als On-Premise-/Hybrid-Kundin bzw. Kunde müssen Sie Adobe Campaign unter einem der unten aufgeführten Betriebssysteme installieren. Mehr über die Schritte bei der Installation von Campaign Classic v7 erfahren Sie auf [dieser Seite](../../installation/using/application-server.md).
 
 
 <table> 
@@ -76,7 +76,7 @@ Als On-Premise-/Hybrid-Kunde müssen Sie Adobe Campaign in einem der unten aufge
 
 ## Webserver {#WebServers}
 
-Als On-Premise-/Hybrid-Kunde müssen Sie je nach Betriebssystem Campaign in einen der unten aufgeführten Webserver integrieren. Weitere Informationen zu den Konfigurationsschritten für Webserver finden Sie unter [diese Seite](../../installation/using/integration-into-a-web-server-for-windows.md) (für Windows) und [diese Seite](../../installation/using/integration-into-a-web-server-for-linux.md) (für Linux) .
+Als On-Premise-/Hybrid-Kundin bzw. Kunde müssen Sie je nach Betriebssystem Campaign in einen der unten aufgeführten Webserver integrieren. Weitere Informationen zu den Konfigurationsschritten für Webserver finden Sie auf [dieser Seite](../../installation/using/integration-into-a-web-server-for-windows.md) (für Windows) und auf [dieser Seite](../../installation/using/integration-into-a-web-server-for-linux.md) (für Linux).
 
 <table>
 <tbody>
@@ -97,7 +97,7 @@ Als On-Premise-/Hybrid-Kunde müssen Sie je nach Betriebssystem Campaign in eine
 
 ## Tools {#Tools}
 
-Als On-Premise-/Hybrid-Kunde müssen Sie die unten aufgeführten Tools installieren und konfigurieren. [Weitere Informationen](../../installation/using/application-server.md).
+Als On-Premise-/Hybrid-Kundin bzw. Kunde müssen Sie die unten aufgeführten Tools installieren und konfigurieren. [Weitere Informationen](../../installation/using/application-server.md).
 
 <table>
 <tbody>
@@ -127,7 +127,7 @@ Als On-Premise-/Hybrid-Kunde müssen Sie die unten aufgeführten Tools installie
 
 ## Relation Database Management Systems (RDBMS){#RDBMSservers}
 
-Als On-Premise-/Hybrid-Kunde müssen Sie eine der unten aufgeführten Datenbanken installieren und konfigurieren. [Weitere Informationen](../../installation/using/creating-and-configuring-the-database.md).
+Als On-Premise-/Hybrid-Kundin bzw. Kunde müssen Sie eine der unten aufgeführten Datenbanken installieren und konfigurieren. [Weitere Informationen](../../installation/using/creating-and-configuring-the-database.md).
 
 
 <table>
@@ -168,7 +168,7 @@ Als On-Premise-/Hybrid-Kunde müssen Sie eine der unten aufgeführten Datenbanke
 >
 >* RDBMS-Treiber muss der RDBMS-Server-Version entsprechen.
 >
->* PostgreSQL ist das RDBMS für gehostete/verwaltete Cloud Service-Umgebungen.
+>* PostgreSQL ist das RDBMS für gehostete/Managed Cloud Services-Umgebungen.
 
 ## CRM-Connectoren{#CRMconnectors}
 
