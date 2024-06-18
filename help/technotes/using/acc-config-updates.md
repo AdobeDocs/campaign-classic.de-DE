@@ -6,8 +6,8 @@ feature: Technote, Upgrade
 hide: true
 hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: ht
+source-git-commit: 8de62db2499449fc9966b6464862748e2514a774
+workflow-type: tm+mt
 source-wordcount: '1103'
 ht-degree: 100%
 
@@ -123,11 +123,11 @@ Das Upgrade auf eine der folgenden neuen Versionen ist obligatorisch:
 
 **Wie wird die Aktualisierung durchgeführt?**
 
-Sobald die Instanzen auf eine neuere Version aktualisiert wurden, müssen alle Kunden das [Verfahren zum Wechsel in den neuen Authentifizierungsmodus](../../integrations/using/configuring-adobe-io.md) befolgen. Hierfür muss das neue Adobe I/O-Token generiert und in der Implementierung verwendet werden. 
+Sobald die Instanzen auf eine neuere Version aktualisiert wurden, müssen alle Kunden das [Verfahren zum Wechsel in den neuen Authentifizierungsmodus](../../integrations/using/about-triggers.md#implement) befolgen. Hierfür muss das neue Adobe I/O-Token generiert und in der Implementierung verwendet werden. 
 
 Kunden mit Hybrid-Umgebungen müssen darüber hinaus sicherstellen, dass Pipeline auf einer Mid-Sourcing-Instanz konfiguriert ist. [Weitere Informationen](../../integrations/using/configuring-pipeline.md).
 
-[Erfahren Sie, wie Sie zu Adobe I/O migrieren](../../integrations/using/configuring-adobe-io.md).
+[Erfahren Sie, wie Sie zu Adobe I/O migrieren](../../integrations/using/about-triggers.md#implement).
 
 ## APNs-Aktualisierungen {#acc-apns-updates}
 

@@ -6,10 +6,10 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Personalization
 role: User
 exl-id: 67fd9a67-cb05-46cd-acd5-e42fde6f4d4f
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: ht
-source-wordcount: '937'
-ht-degree: 100%
+source-git-commit: 0cf7f249f366a6ef0e9bd0326ec14131fcf7dc18
+workflow-type: tm+mt
+source-wordcount: '1070'
+ht-degree: 87%
 
 ---
 
@@ -86,7 +86,7 @@ Sollten Sie beispielsweise beim Versand an zahlreiche Empfänger Performance-Pro
 Um diese Option zu verwenden, gehen Sie wie folgt vor:
 
 1. Kampagne erstellen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign).
-1. Fügen Sie im Tab **[!UICONTROL Zielgruppenbestimmungen und Workflows]** Ihrer Kampagne eine **Abfrage-** Aktivität zu Ihrem Workflow hinzu. Weiterführende Informationen zur Verwendung dieser Aktivität finden Sie in [diesem Abschnitt](../../workflow/using/query.md).
+1. Fügen Sie auf der Registerkarte **[!UICONTROL Zielgruppenbestimmungen und Workflows]** Ihrer Kampagne eine **Abfrage-** Aktivität zu Ihrem Workflow hinzu. Weiterführende Informationen zur Verwendung dieser Aktivität finden Sie in [diesem Abschnitt](../../workflow/using/query.md).
 1. Fügen Sie zum Workflow die Aktivität **[!UICONTROL E-Mail-Versand]** hinzu und öffnen Sie ihn. Weiterführende Informationen zur Verwendung dieser Aktivität finden Sie in [diesem Abschnitt](../../workflow/using/delivery.md).
 1. Gehen Sie zum Tab **[!UICONTROL Analyse]** der **[!UICONTROL Versandeigenschaften]** und wählen Sie die Option **[!UICONTROL Personalisierungsdaten mit einem Workflow vorbereiten]** aus.
 
@@ -115,6 +115,26 @@ Wenn die Personalisierungsphase während der Vorschau oder beim Senden die in di
 Der Standardwert ist 5 Sekunden.
 
 Wenn Sie diese Option auf 0 setzen, gilt für die Personalisierungsphase keine Zeitbeschränkung.
+
+## Registerkarte &quot;Personalisierung&quot; {#personalization-tab}
+
+In den Versandeigenschaften befindet sich der Tab Personalisierung .
+
+Sie können der Profilabfrage der Zielgruppendimension Daten hinzufügen, indem Sie auf die **&quot;Abfrage zum Laden des Empfängerprofils bearbeiten&quot;**. Sie können die direkt in einem Ausdruck extrahierten Daten verwenden, um die tatsächlich benötigten Daten zu extrahieren. Diese Daten werden dem Kontext hinzugefügt.
+
+![](assets/persotab-edit.png){zoomable="yes"}
+
+Wenn die Daten, die Sie hinzufügen möchten, nicht zur Zielgruppendimension gehören, können Sie auf **&quot;Fügen Sie Objekte im Ausführungskontext der Skripte hinzu&quot;**.
+
+![](assets/persotab_addobjects.png){zoomable="yes"}
+
+Sie können dort das gewünschte Objektschema auswählen und diese Daten dann in Ihrem JavaScript-Code verwenden, der während der Versandvorbereitung ausgeführt wird.
+
+![](assets/persotab_addobjects_articles.png){zoomable="yes"}
+
+Durch Hinzufügen des Objektschemas können Sie die Felder auswählen, die Sie dem Kontext hinzufügen möchten:
+
+![](assets/persotab_addobjects_fields.png){zoomable="yes"}
 
 ## Anleitungsvideo {#personalization-fields-video}
 

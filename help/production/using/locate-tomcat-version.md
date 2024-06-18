@@ -8,16 +8,14 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 76411b29-d300-4aaa-8d3b-d8ff74c3ce93
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 757e3a5395f24e0bdd04737aba0458881e4ea780
 workflow-type: tm+mt
-source-wordcount: '497'
-ht-degree: 1%
+source-wordcount: '505'
+ht-degree: 2%
 
 ---
 
 # Tomcat-Version suchen{#locate-tomcat-version}
-
-
 
 Adobe Campaign verwendet eine **eingebettetes Webservlet namens Apache Tomcat** zur Verarbeitung von HTTP/HTTPS-Anforderungen zwischen der Anwendung und einer beliebigen externen Schnittstelle (einschließlich Client-Konsole, getrackte URL-Links, SOAP-Aufrufe und andere). Oft liegt ein externer Webserver (normalerweise IIS oder Apache) vor diesem für alle externen Adobe Campaign-Instanzen.
 
@@ -31,6 +29,12 @@ Der in Adobe Campaign verwendete Tomcat ist eine angepasste eingebettete Version
 
 Neue oder aktualisierte Versionen der eingebetteten Versionen von Tomcat werden nur mit neuen Builds von Adobe Campaign selbst veröffentlicht und nicht als separate Patches außerhalb der Adobe Campaign-Builds.
 
+>[!AVAILABILITY]
+>
+>
+> Ab Campaign v7.4.1 ist Tomcat 10.1 die Standardversion.
+>
+
 ## Suchen der eingebetteten Tomcat-Version
 
 Gehen Sie wie folgt vor, um die Version des eingebetteten Tomcat in einer Instanz von Adobe Campaign zu finden.
@@ -39,7 +43,7 @@ Gehen Sie wie folgt vor, um die Version des eingebetteten Tomcat in einer Instan
 >
 >Sie müssen Zugriff auf die Dateien auf dem Adobe Campaign-Server haben, den Sie überprüfen müssen. Das unten beschriebene Verfahren gilt nur für **On-Premise-Hosting-Modelle**.
 
-1. Navigieren Sie zum *\tomcat-7\lib* Unterordner im Adobe Campaign-Installationsordner (z. B. *C:\Program Dateien\ [Installation_folder]* unter Windows oder */usr/local/neolane/nl6* in Linux).
+1. Navigieren Sie zum *\tomcat-11\lib* Unterordner im Adobe Campaign-Installationsordner (z. B. *C:\Program Dateien\ [Installation_folder]* unter Windows oder */usr/local/neolane/nl6* in Linux).
 
 1. Datei kopieren *catalina.jar* in einen externen temporären Ordner (z. B. Ihren Desktop) und benennen Sie die Erweiterung von .jar in .zip um.
 
@@ -49,11 +53,11 @@ Gehen Sie wie folgt vor, um die Version des eingebetteten Tomcat in einer Instan
 
 1. Löschen Sie nach Abschluss die von Ihnen erstellten temporären Dateien, wenn sie sich auf einem Servercomputer befinden.
 
-Beispiel: *ServerInfo.properties* -Datei für Adobe Campaign enthält die folgenden Informationen, die Tomcat v8.5.X angeben:
+Beispiel: *ServerInfo.properties* -Datei für Adobe Campaign enthält die folgenden Informationen, die Tomcat v11.X angeben:
 
-*`server.info=Apache Tomcat/8.5.X`*
+*`server.info=Apache Tomcat/11.X`*
 
-*`server.number=8.5.X.Y`*
+*`server.number=A.B.X.Y`*
 
 *`server.built=MM DD YYY HH:MM:SS`*
 

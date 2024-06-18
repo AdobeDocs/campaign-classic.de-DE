@@ -6,65 +6,76 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 28302b40d4fa43b400a3e1b6dd3e133976a01418
-workflow-type: ht
-source-wordcount: '856'
-ht-degree: 100%
+source-git-commit: b23632d0718d62d61e94e636937b93aa39bbe43f
+workflow-type: tm+mt
+source-wordcount: '840'
+ht-degree: 64%
 
 ---
 
-# Kompatibilitätsmatrix{#compatibility-matrix}
+# Kompatibilitätsmatrix {#compatibility-matrix}
 
-
-
-In diesem Dokument werden alle Systeme und Komponenten aufgelistet, die für den [aktuellen Build](../../rn/using/latest-release.md) von **Adobe Campaign Classic v7** unterstützt werden. Produkte und Versionen, die nicht in dieser Liste enthalten sind, sind nicht mit Adobe Campaign kompatibel.
-
-Wenn Sie ein [!DNL Gold Standard]-Benutzer sind, sehen Sie in der [[!DNL Gold Standard] -Kompatibilitätsmatrix](../../rn/using/gold-standard.md#compatibility-matrix-gs) nach.
-
-## Wichtige Hinweise{#important-notes}
+In [neueste Version](../../rn/using/latest-release.md), ist Adobe Campaign Classic v7 mit allen Systemen und Tools kompatibel, die auf dieser Seite aufgelistet sind. Wenn bestimmte Versionen dieser Drittanbietersysteme und -Tools bei ihren Erstanbietern das Ende des Lebenszyklus (End of Life, EOL) erreichen, ist Adobe Campaign nicht mehr mit ihnen kompatibel. Diese Versionen werden daher mit der nächsten Produktversion aus unserer Kompatibilitätsmatrix entfernt. Stellen Sie sicher, dass Sie unterstützte Versionen aller in dieser Kompatibilitätsmatrix aufgelisteten Systeme verwenden, um Probleme zu vermeiden. Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](../../rn/using/deprecated-features.md).
 
 Sofern nicht anders angegeben, werden alle Nebenversionen unterstützt.
 
-Der [aktuelle Build](../../rn/using/latest-release.md) von Adobe Campaign Classic ist mit allen Systemen und Tools kompatibel, die auf dieser Seite aufgelistet sind. Wenn bestimmte Versionen dieser Drittanbietersysteme und -Tools bei ihren Erstanbietern das Ende des Lebenszyklus (End of Life, EOL) erreichen, ist Adobe Campaign nicht mehr mit ihnen kompatibel. Diese Versionen werden daher mit der nächsten Produktversion aus unserer Kompatibilitätsmatrix entfernt. Verwenden Sie, um Probleme zu vermeiden, ausschließlich unterstützte Versionen von Systemen, die in der Kompatibilitätsmatrix aufgeführt sind.
-
-Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](../../rn/using/deprecated-features.md).
-
 >[!CAUTION]
 >
->Diese Matrix wird regelmäßig aktualisiert, wenn neue unterstützte Elemente hinzugefügt und veraltete Elemente entfernt werden.
+>Diese Matrix wird regelmäßig aktualisiert, indem neue unterstützte Systeme und Tools hinzugefügt und entfernt werden.
 
 ## Betriebssysteme {#OperatingSystems}
 
 Als On-Premise-/Hybrid-Kundin bzw. Kunde müssen Sie Adobe Campaign unter einem der unten aufgeführten Betriebssysteme installieren. Mehr über die Schritte bei der Installation von Campaign Classic v7 erfahren Sie auf [dieser Seite](../../installation/using/application-server.md).
 
-
 <table> 
 <tbody> 
+<td><strong>Betriebssystem</strong></td>
+<td><strong>Betriebssystemversion</strong></td>
+<td><strong>Mindestens Campaign-Version</strong></td>
 <tr> 
 <td>CentOs</td>
 <td>
 <p>7.x</p>
 </td>
+<td>
+<p></p>
+</td>
 </tr>
 <tr>
 <td>Debian</td>
 <td>
-<p>11 (ab Campaign v7.3)</p>
+<p>11</p>
 <p>10</p>
+</td>
+<td>
+<p>v7.3</p>
+<p></p>
 </td>
 </tr>
 <tr>
 <td>RHEL</td>
 <td>
+<p>9.x</p>
 <p>8.x</p>
 <p>7.x</p>
+</td>
+<td>
+<p>v7.4</p>
+<p></p>
+<p></p>
 </td>
 </tr>
 <tr>
 <td>Windows Server</td>
 <td>
-<p>2019 (ab Campaign v7.2)</p>
+<p>2022</p>
+<p>2019</p>
 <p>2016</p>
+</td>
+<td>
+<p>v7.4</p>
+<p>v7.2</p>
+<p></p>
 </td>
 </tr>
 </tbody>
@@ -72,7 +83,7 @@ Als On-Premise-/Hybrid-Kundin bzw. Kunde müssen Sie Adobe Campaign unter einem 
 
 >[!IMPORTANT]
 >
->Wenn Sie RHEL verwenden, müssen Sie SELinux deaktivieren. Andernfalls können Ihre Programmierer und Programmiererinnen auch benutzerdefinierte SELinux-Regeln verfassen, mit denen sichergestellt werden kann, dass ein aktiviertes SELinux keine Probleme mit Campaign-Vorgängen verursacht.
+>Wenn Sie RHEL verwenden, müssen Sie bereit sein, [SELinux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#selinux) oder Ihre Architekten benutzerdefinierte SELinux-Regeln schreiben lassen, um zu überprüfen, ob ein aktiviertes SELinux keine Probleme mit Campaign-Vorgängen verursacht.
 
 ## Webserver {#WebServers}
 
@@ -83,13 +94,13 @@ Als On-Premise-/Hybrid-Kundin bzw. Kunde müssen Sie je nach Betriebssystem Camp
 <tr>
 <td>Microsoft IIS</td>
 <td>
-<p>10.0 auf Windows Server 2016 und 2019</p>
+<p>10.0 auf Windows Server</p>
 </td>
 </tr>
 <tr>
 <td>Apache</td>
 <td>
-<p>2.4 für RHEL7 – CentOS 7, Debian 8/9, Windows</p>
+<p>2,4</p>
 </td>
 </tr>
 </tbody>
@@ -101,64 +112,101 @@ Als On-Premise-/Hybrid-Kundin bzw. Kunde müssen Sie die unten aufgeführten Too
 
 <table>
 <tbody>
+<td><strong>Tool</strong></td>
+<td><strong>Version</strong></td>
+<td><strong>Minium Campaign-Version</strong></td>
 <tr>
-<td>Java Development Kit (JDK)</td>
+<td><p>Java Development Kit (JDK)</p>
+<p>Weitere Informationen finden Sie auf <a href="../../installation/using/application-server.md#jdk" target="_blank">dieser Seite</a>.</p>
+</td>
 <td>
 <p>11</p>
 <p>9</p>
 <p>8</p>
-<p>Mehr Informationen über JDK und Campaign finden Sie auf <a href="https://experienceleague.adobe.com/de/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/deployment-guidelines/application-server#java-development-kit---jdk" target="_blank">dieser Seite</a>.</p>
+<p></p>
 </td>
+<td>
+<p>erforderlich ab v7.4.1</p>
+<p>bis v7.4.1</p>
+<p>bis v7.4.1</p>
 </tr>
 <tr>
-<td>Libre Office</td>
+<td><p>Libre Office</p></td>
 <td>
 <p>7 (und frühere Versionen, sofern in Ihrem System vorhanden)</p>
 </td>
+<td>
+<p></p>
+</td>
 </tr>
 <tr>
-<td>SpamAssassin</td>
+<td><p>SpamAssassin</p></td>
 <td>
 <p>3.4.x</p>
 </td>
-</tr>
+<td>
+<p></p>
+</td>
 </tbody>
 </table>
 
-## Relation Database Management Systems (RDBMS){#RDBMSservers}
+## Relation Database Management Systems (RDBMS) {#RDBMSservers}
 
 Als On-Premise-/Hybrid-Kundin bzw. Kunde müssen Sie eine der unten aufgeführten Datenbanken installieren und konfigurieren. [Weitere Informationen](../../installation/using/creating-and-configuring-the-database.md).
 
 
 <table>
 <tbody>
+<td><strong>Datenbanksystem</strong></td>
+<td><strong>Datenbankversion</strong></td>
+<td><strong>Mindestens Campaign-Version</strong></td>
 <tr>
 <td>Oracle</td>
 <td>
+<p>23c</p>
 <p>19c</p>
 <p>18c</p>
 <p>12c</p>
 <p>11g R2</p>
 </td>
+<td>
+<p>v7.4</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+</td>
 </tr>
 <tr>
 <td>PostgreSQL</td>
 <td>
-<p>14.x (ab Campaign v7.3.2)</p>
+<p>14.x</p>
 <p>13.x</p>
 <p>12.x</p>
 <p>11.x</p>
-<p><strong>Hinweis:</strong> Sie können für PostgreSQL auch Amazon RDS mit den oben angegebenen Versionen verwenden.</p>
+</td>
+<td>
+<p>v7.3.2</p>
+<p></p>
+<p></p>
+<p></p>
 </td>
 </tr>
 <tr>
-<td>SQL-Server</td>
+<td>Microsoft SQL Server</td>
 <td>
+<p>2022</p>
 <p>2019</p>
 <p>2017</p>
 <p>2016</p>
 <p>2014</p>
-<p><strong>Wichtig</strong>: Microsoft SQL Server wird nicht als primäre Datenbank unterstützt, wenn der Campaign-Server auf Linux läuft. <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/install-campaign-on-prem/installing-campaign-in-linux/prerequisites-of-campaign-installation-in-linux.html?lang=de#database-access-layers" target="_blank">Weitere Informationen</a>.</p>
+</td>
+<td>
+<p>v7.4</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
 </td>
 </tr>
 </tbody>
@@ -166,11 +214,16 @@ Als On-Premise-/Hybrid-Kundin bzw. Kunde müssen Sie eine der unten aufgeführte
 
 >[!NOTE]
 >
->* RDBMS-Treiber muss der RDBMS-Server-Version entsprechen.
+>* Der RDBMS-Treiber muss mit der RDBMS-Serverversion übereinstimmen.
+>
+>* Microsoft SQL Server wird nicht als primäre Datenbank unterstützt, wenn der Campaign-Server unter Linux ausgeführt wird. [Weitere Informationen](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers).
+>
+>* Sie können Amazon RDS für PostgreSQL auch mit den oben angegebenen Versionen verwenden.
 >
 >* PostgreSQL ist das RDBMS für gehostete/Managed Cloud Services-Umgebungen.
 
-## CRM-Connectoren{#CRMconnectors}
+
+## CRM-Connectoren {#CRMconnectors}
 
 Unten finden Sie die mit Adobe Campaign kompatiblen CRM-Systeme (Customer Relationship Management). [Weitere Informationen](../../platform/using/crm-connectors.md) zu CRM-Connectoren für Campaign.
 
@@ -201,17 +254,17 @@ Die externen Datenbanken, die mit dem [Federated Data Access-Modul](../../instal
 <tbody>
 <td><strong>Datenbanksystem</strong></td>
 <td><strong>Datenbankversion</strong></td>
-<td><strong>Campaign-Version</strong></td>
+<td><strong>Mindestens Campaign-Version</strong></td>
 <tr>
 <td>Amazon Redshift</td>
 <td><p> </p>
-<td>Mindestens v7.0 19.1.4</td>
+<td>v7.0 19.1.4</td>
 </td>
 </tr>
 <tr>
 <td>Google BigQuery</td>
 <td> </td>
-<td>Mindestens 7.2</td>
+<td>v7.2</td>
 </tr>
 <tr>
 <td>PostgreSQL</td>
@@ -221,17 +274,17 @@ Die externen Datenbanken, die mit dem [Federated Data Access-Modul](../../instal
 <p>12.x</p>
 <p>11.x</p>
 </td>
-<td>Mindestens v7.0 19.1.4</td>
+<td>v7.0 19.1.4</td>
 </tr>
 <tr>
 <td>Snowflake</td>
 <td> </td>
-<td>Mindestens 7.2</td>
+<td>v7.2</td>
 </tr>
 <tr>
 <td>Vertica Analytics</td>
 <td> </td>
-<td>Mindestens v7.0 19.1.4</td>
+<td>v7.0 19.1.4 </td>
 </tr>
 </tbody>
 </table>
@@ -242,11 +295,11 @@ Ferner kann Campaign in **Hybrid**- und **On-Premise**-Umgebungen auch mit den f
 <tbody>
 <td><strong>Datenbanksystem</strong></td>
 <td><strong>Datenbankversion</strong></td>
-<td><strong>Campaign-Version</strong></td>
+<td><strong>Mindestens Campaign-Version</strong></td>
 <tr>
 <td>Microsoft Azure Synapse Analytics</td>
 <td> </td>
-<td>Mindestens v7.0 19.1.4</td>
+<td></td>
 </tr>
 <tr><td>MySQL</td>
 <td>
@@ -254,27 +307,29 @@ Ferner kann Campaign in **Hybrid**- und **On-Premise**-Umgebungen auch mit den f
 <p>5.7</p>
 </td>
 <td>
-<p>Mindestens v7.3</p>
-<p>Mindestens v7.0</p>
+<p>v7.3</p>
+<p></p>
 </td>
 </tr>
 <tr>
 <td>Netezza</td>
 <td>
-<p>7.2</p>
+<p>v7.2</p>
 </td>
-<td>Mindestens v7.0</td>
+<td></td>
 </tr>
 <tr>
 <td>Oracle</td>
 <td>
+<p>23c</p>
 <p>19c</p>
 <p>18c</p>
 <p>12c</p>
 <p>11g</p>
 </td>
 <td>
-<p>Mindestens v7.0</p>
+<p>v7.4</p>
+<p></p>
 <p></p>
 <p></p>
 <p></p>
@@ -285,17 +340,18 @@ Ferner kann Campaign in **Hybrid**- und **On-Premise**-Umgebungen auch mit den f
 <td>
 <p>Version 1 SPS 12</p>
 </td>
-<td>Mindestens v7.0</td>
+<td></td>
 </tr>
-<tr><td>SQL-Server</td>
+<tr><td>SQL Server</td>
 <td>
+<p>2022 (ab Campaign v7.4)</p>
 <p>2019</p>
 <p>2017</p>
 <p>2016</p>
 <p>2014</p>
 <p>2012 SP1 und SP2</p>
 </td>
-<td>Mindestens v7.0</td>
+<td></td>
 </tr>
 <tr>
 <td>Sybase</td>
@@ -303,7 +359,7 @@ Ferner kann Campaign in **Hybrid**- und **On-Premise**-Umgebungen auch mit den f
 <p>IQ 16</p>
 <p>ASE 15.7</p>
 </td>
-<td>Mindestens v7.0</td>
+<td></td>
 </tr>
 <tr>
 <td>Teradata</td>
@@ -311,7 +367,7 @@ Ferner kann Campaign in **Hybrid**- und **On-Premise**-Umgebungen auch mit den f
 <p>17.x</p>
 <p>16.x (letzte Version)</p>
 </td>
-<td>Mindestens v7.0</td>
+<td></td>
 </tr>
 <tr><td>Hadoop über HiveSQL</td>
 <td>
@@ -319,14 +375,13 @@ Ferner kann Campaign in **Hybrid**- und **On-Premise**-Umgebungen auch mit den f
 <p>HDInsight 3.4 (HDP 2.4), 3.5 (HDP 2.5), 3.6 (HDP 2.6)</p>
 <p>Cloudera CDH6.x</p>
 </td>
-<td>Mindestens v7.0</td>
+<td></td>
 </tr>
 </tbody>
 </table>
 
 
-
-## Client-Konsole {#ClientConsoleoperatingsystems}
+## Client-Konsole {#ClientOS}
 
 Für die Verwendung der [Campaign-Client-Konsole](../../installation/using/installing-the-client-console.md) sind die folgenden Betriebssysteme und Browser **erforderlich**.
 
@@ -336,7 +391,7 @@ Für die Verwendung der [Campaign-Client-Konsole](../../installation/using/insta
 <tbody>
 <td><strong>System</strong></td>
 <td><strong>Betriebssystemversion</strong></td>
-<td><strong>Campaign-Version</strong></td>
+<td><strong>Minium Campaign-Version</strong></td>
 <tr>
 <td>Microsoft Windows</td>
 <td>
@@ -344,56 +399,62 @@ Für die Verwendung der [Campaign-Client-Konsole](../../installation/using/insta
 <p>10</p>
 </td>
 <td>
-<p>Mindestens v7.3</p>
+<p>v7.3</p>
 <p></p>
 <p></p>
 </tr>
 <tr>
 <td>Microsoft Windows Server</td>
 <td>
+<p>2022</p>
 <p>2019</p>
 <p>2016</p>
 </td>
 <td>
-<p>Mindestens v7.2.1</p>
-<p></p>
+<p>v7.4.1</p>
+<p>v7.2.1</p>
 <p></p>
 </tbody>
 </table>
 
-### Microsoft WebView2 Runtime
+### Microsoft WebView2 Runtime {#webview}
 
 Die neueste Version von Microsoft Edge WebView2 Runtime ist für die Campaign-Client-Konsole erforderlich.
 
 Microsoft Edge WebView2 kann von der [Microsoft-Entwickler-Site](https://www.adobe.com/go/acc-ms-webview2-runtime-download_de) heruntergeladen werden
 
 
-## Mobile SDK{#MobileSDK}
+## Mobile SDK {#MobileSDK}
 
-Sie können Campaign verwenden, um [Push-Benachrichtigungen](../../delivery/using/about-mobile-app-channel.md) auf den unten aufgeführten Betriebssystemen zu senden, indem Sie das zugehörige [mobile SDK](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md) verwenden.
+Sie können Campaign verwenden, um [Push-Benachrichtigungen senden](../../delivery/using/about-mobile-app-channel.md)über das Adobe Experience Platform Mobile SDK durch Konfiguration der Adobe Campaign-Erweiterung in der Datenerfassungs-Benutzeroberfläche.
 
-Sie können auch das Adobe Experience Platform Mobile SDK verwenden, indem Sie die Adobe Campaign-Erweiterung in der Benutzeroberfläche „Datenerfassung“ konfigurieren.
+Das Campaign SDK lautet [veraltet](deprecated-features.md) Starten von Campaign v7.4 Um einen reibungslosen Übergang für die vorhandene Implementierung zum AEP Mobile SDK sicherzustellen, können Sie ihn weiterhin auf den unten aufgeführten Betriebssystemen verwenden<!--, using the associated [mobile SDK](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)-->.
+
 
 <table>
 <tbody>
 <tr>
 <td>Google Android</td>
 <td>
-<p>12 (ab Campaign v7.3), 9.0, 8.x, 7.x</p>
-<p>mit Mobile SDK Build 1.1.1</p>
+<p>7. bis 14.</p>
+<p>mit Mobile SDK Build 1.1.1.</p>
+<p>Android 13 und 14 werden ab Campaign v7.4 unterstützt.</p>
+<p>Android 12 wird ab Campaign v7.3 unterstützt.</p>
 </td>
 </tr>
 <tr>
 <td>Apple iOS</td>
 <td>
-<p>iOS 9 bis 15</p>
-<p>mit Mobile SDK (Build 1.0.26), kompatibel mit 32- und 64-Bit-Versionen. iOS 15 wird ab Campaign v7.3 unterstützt</p>
+<p>iOS 9 bis 17</p>
+<p>mit Mobile SDK Build 1.0.26.</p>
+<p>Apple iOS 15 wird ab Campaign v7.3 unterstützt. </p>
+<p>Apple iOS 16 und 17 werden ab Campaign v7.4 unterstützt.</p>
 </td>
 </tr>
 </tbody>
 </table>
 
-## Browser{#Browsers}
+## Browser {#Browsers}
 
 Die folgenden Browser sind in der jeweils aktuellen Version mit Campaign für den [Web-Zugriff](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-) kompatibel.
 
@@ -404,10 +465,10 @@ Die folgenden Browser sind in der jeweils aktuellen Version mit Campaign für de
 
 
 
-## Ähnliche Themen {#Morelikethis}
-
-* [Versionshinweise zu Campaign Classic](../../rn/using/latest-release.md)
-* [Campaign – allgemeine Architektur](../../installation/using/general-architecture.md)
-* [Empfehlungen zur Hardware-Dimensionierung](../../technotes/using/hardware-sizing.md)
-* [Veraltete Funktionen und Systeme](../../rn/using/deprecated-features.md)
-* [Vorgehen beim Build-Upgrade](../../production/using/build-upgrade.md)
+>[!MORELIKETHIS]
+>
+>* [Versionshinweise zu Campaign Classic](../../rn/using/latest-release.md)
+>* [Allgemeine Campaign-Architektur](../../installation/using/general-architecture.md)
+>* [Empfehlungen zur Hardwaredimensionierung](../../technotes/using/hardware-sizing.md)
+>* [Veraltete Funktionen und Systeme](../../rn/using/deprecated-features.md)
+>* [Vorgehen beim Build-Upgrade](../../production/using/build-upgrade.md)

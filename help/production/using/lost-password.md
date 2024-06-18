@@ -8,16 +8,18 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 064eb41f-6685-4ac1-adc5-40f9d5a2f96d
-source-git-commit: b7dedddc080d1ea8db700fabc9ee03238b3706cc
+source-git-commit: 8aceafa362b80f6e34edfd91a71551a58501a3d0
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 8%
+source-wordcount: '224'
+ht-degree: 7%
 
 ---
 
 # Vergessenes Passwort{#lost-password}
 
-
+>[!NOTE]
+>
+>Diese Seite gilt nur für Benutzer, die mit nativer Authentifizierung eine Verbindung zu Campaign herstellen.
 
 Sie können ein verlorenes Passwort ändern oder wiederherstellen.
 Es gibt zwei mögliche Szenarien:

@@ -8,7 +8,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: b5aa5663-1902-4f50-9202-783e73a28838
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 1be1528d657537786c430ea9c8bdb3aad58ba20d
 workflow-type: tm+mt
 source-wordcount: '660'
 ht-degree: 11%
@@ -79,7 +79,7 @@ Es kann mehrere Ursachen für dieses Problem geben. Gehen Sie zur Lösung des Pr
    >
    >Erhöhen Sie die **[!UICONTROL NmsOperation_LimitConcurrency]** -Optionsschwellenwert kann zu Leistungsproblemen in Ihrer Instanz führen. Führen Sie dies auf keinen Fall allein durch und kontaktieren Sie Ihren Ansprechpartner bei Adobe Campaign.
 
-Weitere Informationen zur Überwachung Ihrer Workflows finden Sie in [diesem Abschnitt](../../workflow/using/monitoring-workflow-execution.md).
+Weitere Informationen zum Überwachen Ihrer Workflows finden Sie in [diesem Abschnitt](../../workflow/using/monitoring-workflow-execution.md).
 
 ## In Bearbeitung {#start-in-progress}
 
@@ -91,7 +91,7 @@ Um dies zu überprüfen und bei Bedarf das Modul zu starten, gehen Sie wie folgt
 
    Ein Admin-Benutzer kann auch überprüfen, ob die Variable **wfserver@`<instance>`** auf Ihrem Hauptanwendungsserver mithilfe des folgenden Befehls gestartet.
 
-   ```
+   ```sql
    nlserver pdump
    HH:MM:SS > Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
    [...]

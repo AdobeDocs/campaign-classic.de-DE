@@ -2,21 +2,20 @@
 product: campaign
 title: Integration mit freigegebenen Audiences in Adobe Campaign konfigurieren
 description: Erfahren Sie, wie Sie die Freigabe von Audiences konfigurieren.
-feature: Audiences, People Core Service Integration
+feature: Audiences
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: a3e26cff-9609-4d91-8976-9213a30c3fd2
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: ht
-source-wordcount: '613'
-ht-degree: 100%
+source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
+workflow-type: tm+mt
+source-wordcount: '609'
+ht-degree: 97%
 
 ---
 
 # Integration mit freigegebenen Audiences in Adobe Campaign konfigurieren{#configuring-shared-audiences-integration-in-adobe-campaign}
-
 
 
 Nach Übermittlung dieses Antrags wird dieser von Adobe bearbeitet. Sie werden ersucht, Informationen bereitzustellen, und darauf hingewiesen, dass Sie die Konfiguration abschließen müssen:
@@ -88,13 +87,13 @@ So konfigurieren Sie die Datenquelle **[!UICONTROL Empfänger - Besucher-ID]**:
 
 ## Schritt 3: Konfigurieren Sie den Campaign Tracking Server.  {#step-3--configure-campaign-tracking-server}
 
-Für die Konfiguration der Integration mit People Core Service oder Audience Manager muss auch der Campaign Tracking Server konfiguriert werden.
+Zur Konfiguration der Integration mit Audience Manager müssen wir auch den Campaign Tracking Server konfigurieren.
 
 Damit freigegebene Zielgruppen mit der Besucher-ID funktionieren, sollte die Tracking-Server-Domain eine Subdomain der angeklickten URL oder der Haupt-Website sein.
 
 >[!IMPORTANT]
 >
->Stellen Sie sicher, dass der Campaign Tracking Server auf der Domain (CNAME) registriert ist. Mehr Informationen zur Delegation von Domain-Namen finden Sie in [diesem Artikel](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=de).
+>Stellen Sie sicher, dass der Campaign Tracking Server auf der Domain (CNAME) registriert ist. Weitere Informationen zur Delegierung von Domains finden Sie in [diesem Artikel](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=de).
 
 ## Schritt 4: Konfigurieren Sie den Visitor-ID-Dienst. {#step-4--configure-the-visitor-id-service}
 

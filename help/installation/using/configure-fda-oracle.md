@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 320bfbb4-533b-4c45-a46f-c3c8dd68221f
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: f032ed3bdc0b402c8281bc34e6cb29f3c575aaf9
 workflow-type: tm+mt
 source-wordcount: '365'
-ht-degree: 52%
+ht-degree: 70%
 
 ---
 
@@ -28,11 +28,11 @@ Verwenden von Campaign [Federated Data Access](../../installation/using/about-fd
 Die Verbindung zu einer externen Oracle-Datenbank über die FDA-Option erfordert die zusätzlichen unten aufgeführten Konfigurationen auf dem Adobe Campaign-Server:
 
 1. Installieren Sie den vollständigen Oracle-Client für Ihre jeweilige Oracle-Version.
-1. Fügen Sie Ihre TNS-Definitionen zu Ihrer Installation hinzu. Geben Sie dazu sie in einem **tnsnames.ora** -Datei im Repository /etc/oracle. Wenn dieses Repository nicht vorhanden ist, erstellen Sie es.
+1. Fügen Sie der Installation Ihre TNS-Definitionen hinzu. Spezifizieren Sie diese Definitionen dazu in der Datei **tnsnames.ora** im Verzeichnis /etc/oracle. Wenn dieses Verzeichnis nicht vorhanden ist, erstellen Sie es.
 
    Erstellen Sie dann eine neue TNS_ADMIN-Umgebungsvariable: Exportieren Sie TNS_ADMIN=/etc/oracle und starten Sie das Gerät neu.
 
-1. Integrieren Sie Oracle in Ihren Adobe Campaign-Server (nlserver). Überprüfen Sie dazu, ob die Variable **customer.sh** -Datei im Ordner &quot;nl6&quot;der Adobe Campaign-Serverstruktur vorhanden ist und die Links zu den Oracle-Bibliotheken enthält.
+1. Integrieren Sie Oracle in Ihren Adobe Campaign-Server (nlserver). Dazu muss die Datei **customer.sh** im Navigationsbaum des Adobe Campaign-Servers im Ordner &quot;nl6&quot; vorhanden sein; und die Datei muss die Links zu den Oracle-Bibliotheken enthalten.
 
    Beispiel für einen Client in 11.2:
 
@@ -58,7 +58,7 @@ Die Verbindung zu einer externen Oracle-Datenbank über die FDA-Option erfordert
    * **libaio1**
 
      ```
-     aptitude install libaio1
+     apt install libaio1
      or
      yum install libaio1
      ```

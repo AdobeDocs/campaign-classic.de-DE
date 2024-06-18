@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: f40bab8c-5064-40d9-beed-101a9f22c094
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: f032ed3bdc0b402c8281bc34e6cb29f3c575aaf9
 workflow-type: tm+mt
-source-wordcount: '1375'
+source-wordcount: '1352'
 ht-degree: 1%
 
 ---
@@ -58,7 +58,7 @@ Identifizieren Sie den Server und wählen Sie den auszuführenden Vorgangstyp au
 Je nach ausgewählter Datenbank-Engine können die Informationen zur Serveridentifizierung variieren.
 
 * Für **Oracle** Engine, füllen Sie die **TNS-Name** für den Anwendungsserver definiert.
-* Für **PostgreSQL** oder **DB2** angegeben, müssen Sie den DNS-Namen (oder die IP-Adresse) angeben, der auf dem Anwendungsserver für den Zugriff auf den Datenbankserver definiert ist.
+* Für **PostgreSQL** angegeben, müssen Sie den DNS-Namen (oder die IP-Adresse) angeben, der auf dem Anwendungsserver für den Zugriff auf den Datenbankserver definiert ist.
 * Für **Microsoft SQL Server** Engine definieren, müssen Sie den DNS-Namen (oder die IP-Adresse) definieren, der auf dem Anwendungsserver für den Zugriff auf den Datenbankserver definiert ist: **DNS** oder **DNS`\<instance>`** (Instanzmodus),
 
   >[!CAUTION]
@@ -78,7 +78,6 @@ Geben Sie dazu den Namen und das Kennwort eines **Administratorsystemkonto** die
 * **System** für eine Oracle-Datenbank,
 * **sa** für eine Microsoft SQL Server-Datenbank,
 * **postgres** für eine PostgreSQL-Datenbank,
-* **db2inst1** für eine DB2-Datenbank.
 
 ### 3. Schritt - Verbindung und Merkmale der Datenbank {#step-3---connection-and-characteristics-of-the-database}
 
@@ -89,11 +88,6 @@ Im folgenden Schritt können Sie die Einstellungen für die Anmeldung bei der Da
 Sie müssen die folgenden Einstellungen definieren:
 
 * Geben Sie den Namen der zu erstellenden Datenbank an.
-
-  >[!NOTE]
-  >
-  >Bei einer DB2-Datenbank darf der Name der Datenbank 8 Zeichen nicht überschreiten.
-
 * Geben Sie das Kennwort des mit dieser Datenbank verknüpften Kontos ein.
 * Geben Sie an, ob die Datenbank in Unicode vorliegen muss.
 
@@ -182,7 +176,7 @@ Identifizieren Sie den Server und wählen Sie den Vorgangstyp aus, den Sie ausf�
 Je nach ausgewählter Datenbank-Engine können die Informationen zur Serveridentifizierung variieren.
 
 * Für **Oracle** Engine, füllen Sie die **TNS-Name** für den Anwendungsserver definiert.
-* Für **PostgreSQL** oder **DB2** angegeben, müssen Sie den DNS-Namen (oder die IP-Adresse) angeben, der auf dem Anwendungsserver für den Zugriff auf den Datenbankserver definiert ist.
+* Für **PostgreSQL** angegeben, müssen Sie den DNS-Namen (oder die IP-Adresse) angeben, der auf dem Anwendungsserver für den Zugriff auf den Datenbankserver definiert ist.
 * Für **Microsoft SQL Server** müssen Sie Folgendes definieren:
 
    1. den DNS-Namen (oder die IP-Adresse), der auf dem Anwendungsserver für den Zugriff auf den Datenbankserver definiert ist,

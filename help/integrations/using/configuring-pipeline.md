@@ -7,10 +7,10 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 audience: integrations
 content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
-source-git-commit: 271e0f9fde0cbfb016e201c8390b26673d8fc696
-workflow-type: ht
-source-wordcount: '886'
-ht-degree: 100%
+source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
+workflow-type: tm+mt
+source-wordcount: '844'
+ht-degree: 92%
 
 ---
 
@@ -31,19 +31,17 @@ Bevor Sie mit der Konfiguration beginnen, überprüfen Sie bitte, ob Folgendes v
 * Ein Entwicklerzugriff auf die Organisation
 * Eine gültige Trigger-Konfiguration in Adobe Analytics
 
-## Authentifizierung und Konfigurationsdateien {#authentication-configuration}
-
-Da das Pipeline-Hosting in Adobe Experience Cloud erfolgt, ist eine Authentifizierung erforderlich. Hierfür wird ein Schlüsselpaar aus öffentlichem und privatem Schlüssel verwendet. Der Prozess entspricht der Verwendung einer Kombination aus Benutzerin bzw. Benutzer und Passwort, ist aber sicherer. Die Authentifizierung für Experience Cloud wird über das Adobe Developer-Projekt umgesetzt.
+Da das Pipeline-Hosting in Adobe Experience Cloud erfolgt, ist eine Authentifizierung erforderlich. Es wird eine Authentifizierung verwendet, die über ein Adobe Developer-Projekt unterstützt wird.
 
 ## Schritt 1: Erstellen/Aktualisieren Ihres Adobe Developer-Projekts {#creating-adobe-io-project}
 
-Wenden Sie sich bei gehosteter Kundschaft an den Adobe-Support/die Kundenunterstützung, um Ihre Organisation mit Adobe Developer-Konto-Token für die Integration von Triggers zu aktivieren.
+Sie müssen Ihre Organisation mit Adobe Developer-Konto-Token aktivieren, um die Trigger-Integration zu ermöglichen.
 
-Kundinnen und Kunden von On-Premise/Hybrid-Bereitstellungen finden Informationen hierzu auf der Seite [Konfigurieren von Adobe I/O für Adobe Experience Cloud Triggers](../../integrations/using/configuring-adobe-io.md). Beachten Sie, dass Sie beim Hinzufügen einer API zu den Adobe Developer-Anmeldedaten **[!UICONTROL Adobe Analytics]** auswählen müssen.
+Erfahren Sie, wie Sie Ihr technisches Adobe-Konto in [diese Seite](../../integrations/using/oauth-technical-account.md). Beachten Sie, dass Sie beim Hinzufügen einer API zu den Adobe Developer-Anmeldedaten **[!UICONTROL Adobe Analytics]** auswählen müssen.
 
 ## Schritt 2: Konfigurieren der Pipeline-Option {#configuring-nmspipeline}
 
-Sobald die Authentifizierung eingerichtet ist, ruft die Pipeline die Ereignisse ab. Sie verarbeitet nur Auslöser, die in Adobe Campaign konfiguriert wurden. Der Trigger muss in Adobe Analytics generiert und an die Pipeline gesendet worden sein. Diese verarbeitet nur Trigger, die in Adobe Campaign konfiguriert wurden.
+Sobald die Authentifizierung festgelegt ist, ruft die Pipeline die Ereignisse ab. Es werden nur Trigger verarbeitet, die in Adobe Campaign konfiguriert sind. Der Trigger muss in Adobe Analytics generiert und an die Pipeline gesendet worden sein. Diese verarbeitet nur Trigger, die in Adobe Campaign konfiguriert wurden.
 
 Die Option kann auch mit einem Platzhalter konfiguriert werden, um alle Auslöser unabhängig vom Namen zu erfassen.
 
@@ -51,7 +49,7 @@ Die Option kann auch mit einem Platzhalter konfiguriert werden, um alle Auslöse
 
 1. Wählen Sie die Option **[!UICONTROL NmsPipeline_Config]** aus.
 
-1. Im Feld **[!UICONTROL Wert (Memo)]** können Sie den folgenden JSON-Code einfügen, der zwei Auslöser angibt. Die Kommentare müssen Sie dabei entfernen.
+1. Im Feld **[!UICONTROL Wert (Memo)]** können Sie den folgenden JSON-Code einfügen, der zwei Auslöser angibt. Entfernen Sie unbedingt die Kommentare.
 
    ```json
    {
@@ -111,7 +109,7 @@ Für die Konfiguration der Pipeline-Option wird Folgendes empfohlen:
 * Der Prozess `pipelined` unterstützt auch das Thema „Alias“.
 * Starten Sie den Prozess `pipelined` grundsätzlich neu, nachdem Sie Änderungen vorgenommen haben.
 
-## Schritt 3: Optionale Konfiguration {#step-optional}
+## (optional) Schritt 3: Zusätzliche Konfiguration {#step-optional}
 
 Sie können einige interne Parameter entsprechend Ihren Lastanforderungen ändern, aber stellen Sie sicher, dass Sie sie testen, bevor Sie sie in Ihrer Produktionsumgebung anwenden.
 

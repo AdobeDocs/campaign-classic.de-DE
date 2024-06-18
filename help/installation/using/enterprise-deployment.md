@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 38c14010-203a-47ab-b23d-6f431dab9a88
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 1be1528d657537786c430ea9c8bdb3aad58ba20d
 workflow-type: tm+mt
 source-wordcount: '1218'
 ht-degree: 7%
@@ -89,7 +89,7 @@ Die Schritte zur Installation des ersten Servers sind:
 
 1. Nachdem der Adobe Campaign-Server installiert ist, starten Sie den Anwendungsserver (Web) mit dem Befehl . **nlserver web -tomcat** (Mit dem Webmodul können Sie Tomcat im eigenständigen Webserver-Modus starten, der Port 8080 überwacht) und sicherstellen, dass Tomcat ordnungsgemäß gestartet wird:
 
-   ```
+   ```sql
    12:08:18 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
    12:08:18 >   Starting Web server module (pid=28505, tid=-1225184768)...
    12:08:18 >   Tomcat started
@@ -136,7 +136,7 @@ Die Schritte zur Installation des ersten Servers sind:
 
 1. Bearbeiten Sie die **config-demo.xml** -Datei (erstellt über den vorherigen Befehl und befindet sich neben dem **config-default.xml** ), überprüfen Sie, ob die **mta** (Versand), **wfserver** (Workflow), **inMail** (rebound mails) und **stat** (Statistiken) Prozesse aktiviert sind, konfigurieren Sie dann die Adresse der **App** Statistikserver:
 
-   ```
+   ```xml
    <?xml version='1.0'?>
    <serverconf>  
      <shared>    
@@ -156,7 +156,7 @@ Die Schritte zur Installation des ersten Servers sind:
 
 1. Bearbeiten Sie die **serverConf.xml** und geben Sie die Versanddomäne an. Geben Sie dann die IP- (oder Host-)Adressen der DNS-Server an, die vom MTA-Modul zur Beantwortung von DNS-Abfragen vom MX-Typ verwendet werden.
 
-   ```
+   ```xml
    <dnsConfig localDomain="campaign.com" nameServers="192.0.0.1, 192.0.0.2"/>
    ```
 
@@ -175,7 +175,7 @@ Die Schritte zur Installation des ersten Servers sind:
    >Ab Version 20.1 wird empfohlen, stattdessen den folgenden Befehl zu verwenden (für Linux): **systemctl start nlserver**
 
 
-   ```
+   ```sql
    12:09:54 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
    syslogd@default (7611) - 9.2 MB
    stat@demo (5988) - 1.5 MB
@@ -214,7 +214,7 @@ Gehen Sie wie folgt vor:
 
 1. Bearbeiten Sie die **config-demo.xml** -Datei (erstellt über den vorherigen Befehl und befindet sich neben dem **config-default.xml** ), überprüfen Sie, ob die **mta** (Versand), **wfserver** (Workflow), **inMail** (rebound mails) und **stat** (Statistiken) Prozesse aktiviert sind, konfigurieren Sie dann die Adresse der **App** Statistikserver:
 
-   ```
+   ```xml
    <?xml version='1.0'?>
    <serverconf>  
      <shared>    
@@ -234,7 +234,7 @@ Gehen Sie wie folgt vor:
 
 1. Bearbeiten Sie die **serverConf.xml** Datei und füllen Sie die DNS-Konfiguration des MTA-Moduls:
 
-   ```
+   ```xml
    <dnsConfig localDomain="campaign.com" nameServers="192.0.0.1, 192.0.0.2"/>
    ```
 
@@ -266,7 +266,7 @@ Zusammenfassend sind folgende Etappen zu durchlaufen:
 1. Kopieren Sie die **config-demo.xml** und **serverConf.xml** Dateien, die während der Installation erstellt wurden. Im **config-demo.xml** -Datei, aktivieren Sie die **trackinglogd** verarbeiten und deaktivieren Sie **mta**, **Postversand**, **wfserver** und **stat** Prozesse.
 1. Bearbeiten Sie die **serverConf.xml** Datei und füllen Sie die redundanten Tracking-Server in die Parameter der Umleitung:
 
-   ```
+   ```xml
    <spareServer enabledIf="$(hostname)!='front_srv1'" id="1" url="https://front_srv1:8080"/>
    <spareServer enabledIf="$(hostname)!='front_srv2'" id="2" url="https://front_srv2:8080"/>
    ```
@@ -275,13 +275,13 @@ Zusammenfassend sind folgende Etappen zu durchlaufen:
 
    Der Browser sollte die folgenden Meldungen anzeigen (je nach URL, die vom Lastenausgleich umgeleitet wird):
 
-   ```
+   ```xml
    <redir status="OK" date="AAAA/MM/JJ HH:MM:SS" build="XXXX" host="tracking.campaign.net" localHost="front_srv1"/>
    ```
 
    oder
 
-   ```
+   ```xml
    <redir status="OK" date="AAAA/MM/JJ HH:MM:SS" build="XXXX" host="tracking.campaign.net" localHost="front_srv2"/>
    ```
 

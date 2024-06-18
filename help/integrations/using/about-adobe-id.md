@@ -7,10 +7,10 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 8dad8fa9-674c-433c-af30-8c6d0aadf525
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: ht
-source-wordcount: '170'
-ht-degree: 100%
+source-git-commit: ffab91fc9fa7e60973fdda930239f5836671a341
+workflow-type: tm+mt
+source-wordcount: '180'
+ht-degree: 84%
 
 ---
 
@@ -27,7 +27,10 @@ Benutzerinnen und Benutzer von Campaign können mit ihrer Adobe ID eine Verbindu
 
 >[!IMPORTANT]
 >
-> Hinweis: In Campaign v8 ist das Verbinden mit Benutzername/Passwort (auch als native Authentifizierung bezeichnet) nicht zulässig. **Adobe empfiehlt, diese Migration in Campaign v7.3.5 durchzuführen, um eine reibungslose Migration zu Campaign v8 zu ermöglichen.**
+> Hinweis: In Campaign v8 ist das Verbinden mit Benutzername/Passwort (auch als native Authentifizierung bezeichnet) nicht zulässig. **Adobe empfiehlt, diese Migration ab Campaign v7.3.5 durchzuführen, um eine reibungslose Migration zu Campaign v8 zu ermöglichen.**
+>
+>Informationen zur Migration zu Adobe IMS finden Sie in [diesem Abschnitt](../../technotes/using/ac-ims.md).
+>
 
 
 <!--

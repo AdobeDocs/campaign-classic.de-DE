@@ -3,11 +3,13 @@ product: campaign
 title: Aktualisierung auf den neuen Zustellbarkeits-Server
 description: Erfahren Sie, wie Sie eine Aktualisierung auf den neuen Zustellbarkeits-Server von Campaign durchführen
 feature: Technote, Deliverability
+hide: true
+hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 514f390b5615a504f3805de68f882af54e0c3949
-workflow-type: ht
-source-wordcount: '1429'
-ht-degree: 100%
+source-git-commit: 19b40f0b827c4b5b7b6484fe4953aebe61d00d1d
+workflow-type: tm+mt
+source-wordcount: '997'
+ht-degree: 92%
 
 ---
 
@@ -50,9 +52,9 @@ Zur Integration des neuen Zustellbarkeits-Servers muss Campaign mit Adobe Shared
 >
 > Die Anmeldedaten für Service-Konten (JWT) werden von Adobe demnächst eingestellt. Campaign-Integrationen mit Adobe-Lösungen und -Apps müssen jetzt mit OAuth-Server-to-Server-Anmeldedaten arbeiten. </br>
 >
-> * Wenn Sie eingehende Integrationen in Campaign implementiert haben, müssen Sie Ihr technisches Konto migrieren, wie in [dieser Dokumentation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank) beschrieben. Bestehende Anmeldedaten für Service-Konten (JWT) sind noch bis zum 27. Januar 2025 gültig. Darüber hinaus ist die Erstellung neuer Anmeldedaten für Service-Konten (JWT) in der Developer Console seit dem 3. Juni 2024 nicht mehr möglich. Seitdem ist es nicht mehr möglich, Anmeldedaten für Service-Konten (JWT) zu erstellen oder einem Projekt hinzuzufügen. </br>
+> * Wenn Sie eingehende Integrationen in Campaign implementiert haben, müssen Sie Ihr technisches Konto migrieren, wie in [dieser Dokumentation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank) beschrieben. Die bestehenden JWT-Anmeldedaten (Service Account) funktionieren weiterhin bis zum 27. Januar 2025. </br>
 >
-> * Wenn Sie ausgehende Integrationen implementiert haben, z. B. die Integration von Campaign mit Analytics oder Experience Cloud Triggers, funktionieren diese noch bis zum 27. Januar 2025. Vor diesem Datum müssen Sie jedoch Ihre Campaign-Umgebung auf v7.4.1 aktualisieren und Ihr technisches Konto auf OAuth migrieren. Da die Erstellung neuer Anmeldedaten für Service-Konten (JWT) in der Developer Console seit dem 3. Juni 2024 nicht mehr möglich ist, können Sie seit diesem Datum keine neue ausgehende Integration mehr erstellen, die auf JWT basiert.
+> * Wenn Sie ausgehende Integrationen implementiert haben, z. B. die Integration von Campaign mit Analytics oder Experience Cloud Triggers, funktionieren diese noch bis zum 27. Januar 2025. Vor diesem Datum müssen Sie jedoch Ihre Campaign-Umgebung auf Version 7.4.1 aktualisieren und Ihr technisches Konto auf oAuth migrieren.
 
 ### Voraussetzungen{#prerequisites}
 
@@ -85,69 +87,13 @@ Wenn Sie **Adobe Campaign** nicht sehen können, wenden Sie sich an die [Adobe-K
 
 ### Schritt 1: Erstellen/Aktualisieren Ihres Adobe Developer-Projekts {#adobe-io-project}
 
-1. Rufen Sie die [Adobe Developer Console](https://developer.adobe.com/console/home) auf und melden Sie sich mit den Entwicklerzugriffsdaten Ihrer Organisation an. Stellen Sie sicher, dass Sie beim richtigen Portal der Organisation angemeldet sind.
-   **Achtung**: Wenn Sie mehrere Organisationen haben, achten Sie darauf, dass die richtige ausgewählt ist. Weitere Informationen zu Organisationen finden Sie [auf dieser Seite](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=de#ims-org-id){_blank}.
-1. Wählen Sie **[!UICONTROL Neues Projekt erstellen]** aus.
-   ![](assets/New-Project.png)
+Um mit der Konfiguration Ihres Adobe Analytics-Connectors fortzufahren, greifen Sie auf die Adobe Developer-Konsole zu und erstellen Sie Ihr OAuth Server-to-Server-Projekt.
 
-   >[!CAUTION]
-   >
-   >Wenn Sie bereits die JWT-Authentifizierungsfunktion von Adobe IO für eine andere Integration verwenden, z. B. für den Analytics-Connector oder Adobe Triggers, müssen Sie Ihr Projekt aktualisieren, indem Sie zu diesem Projekt die **Campaign-API** hinzufügen.
-
-1. Wählen Sie **[!UICONTROL API hinzufügen]**.
-   ![](assets/Add-API.png)
-1. Wählen Sie im Fenster **[!UICONTROL API hinzufügen]** die Option **[!UICONTROL Adobe Campaign]**.
-   ![](assets/AC-API.png)
-1. Wenn Ihre Client-ID leer war, wählen Sie **[!UICONTROL Schlüsselpaar generieren]** aus, um ein Paar aus öffentlichem und privatem Schlüssel zu erstellen.
-   ![](assets/Generate-a-key-pair.png)
-
-   Die Schlüssel werden dann automatisch mit einem Standardablaufdatum von 365 Tagen heruntergeladen. Nach dem Ablaufdatum müssen Sie ein neues Schlüsselpaar erstellen und die Integration in der Konfigurationsdatei aktualisieren. Mit Option 2 können Sie Ihren **[!UICONTROL öffentlichen Schlüssel]** manuell mit einem längeren Ablaufdatum erstellen und hochladen.
-   ![](assets/New-key-pair.png)
-
-   >[!CAUTION]
-   >
-   >Sie sollten die Datei `config.zip` speichern, wenn die Aufforderung zum Herunterladen angezeigt wird, da Sie sie nicht erneut herunterladen können.
-
-1. Klicken Sie auf **[!UICONTROL Weiter]**.
-1. Wählen Sie ein vorhandenes **[!UICONTROL Produktprofil]** aus oder erstellen Sie ggf. ein neues. Für dieses **[!UICONTROL Produktprofil]** ist keine Berechtigung erforderlich. Weitere Informationen zu **[!UICONTROL Produktprofilen]** finden Sie auf [dieser Seite](https://helpx.adobe.com/de/enterprise/using/manage-developers.html){_blank}.
-   ![](assets/Product-Profile-API.png)
-
-   Klicken Sie dann auf **[!UICONTROL Konfigurierte API speichern]**.
-
-1. Wählen Sie in Ihrem Projekt **[!UICONTROL Adobe Campaign]** und kopieren Sie die folgenden Informationen unter **[!UICONTROL Service Account (JWT)]**.
-
-   ![](assets/Config-API.png)
-
-   * **[!UICONTROL Client ID]** (Client-ID)
-   * **[!UICONTROL Client Secret]** (Client-Geheimnis)
-   * **[!UICONTROL Technical account ID]** (Kennung des technischen Kontos)
-   * **[!UICONTROL Organization ID]** (Organisationskennung)
-
->[!CAUTION]
->
->Das Adobe Developer-Zertifikat läuft nach 12 Monaten ab. Sie müssen jedes Jahr ein neues Schlüsselpaar generieren.
+Siehe Abschnitt [diese Seite](../../integrations/using/oauth-technical-account.md#oauth-service) für die ausführliche Dokumentation.
 
 ### Schritt 2: Hinzufügen der Projektanmeldedaten in Adobe Campaign {#add-credentials-campaign}
 
-Der private Schlüssel sollte im Base64-UTF-8-Format kodiert sein.
-
-Gehen Sie dabei folgendermaßen vor:
-
-1. Verwenden Sie den in den obigen Schritten generierten privaten Schlüssel.
-1. Codieren Sie den privaten Schlüssel mit dem folgenden Befehl: `base64 ./private.key > private.key.base64`. Dadurch wird der base64-Inhalt in einer neuen Datei `private.key.base64` gespeichert.
-
-   >[!NOTE]
-   >
-   >Manchmal werden beim Kopieren/Einfügen des privaten Schlüssels automatisch zusätzliche Zeilen hinzugefügt. Vergessen Sie nicht, diese zu entfernen, bevor Sie Ihren privaten Schlüssel codieren.
-
-1. Kopieren Sie die Inhalte aus der Datei `private.key.base64`.
-1. Melden Sie sich über SSH bei jedem Container an, in dem die Adobe Campaign-Instanz installiert ist, und fügen Sie die Projektanmeldeinformationen in Adobe Campaign hinzu, indem Sie den folgenden Befehl als `neolane`-Benutzer ausführen. Dadurch werden die Anmeldeinformationen für das **[!UICONTROL Technische Konto]** in die Konfigurationsdatei der Instanz eingefügt.
-
-   ```sql
-   nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID/<Client_Secret>/<Base64_encoded_Private_Key>
-   ```
-
-1. Sie müssen den Server anhalten und dann neu starten, damit die Änderung übernommen wird. Sie können auch einen `config -reload`-Befehl ausführen.
+Führen Sie die Schritte aus, die unter [diese Seite](../../integrations/using/oauth-technical-account.md#add-credentials) , um Ihre OAuth-Projektanmeldedaten in Adobe Campaign hinzuzufügen.
 
 ### Schritt 3: Überprüfen Sie Ihre Konfiguration
 

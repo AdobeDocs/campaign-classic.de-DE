@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: a38d53f4b37aadbc53446b5e399af2eae56c12af
 workflow-type: tm+mt
 source-wordcount: '1152'
 ht-degree: 31%
@@ -54,7 +54,7 @@ Als gehosteter Kunde haben Sie zwei Möglichkeiten, Ihre Client-Konsole(n) zu in
 
    **Benutzer benötigen Administratorzugriff, um die Aktualisierung abzuschließen. Wenn die Benutzer keine Administratorrechte haben, muss ein Systemadministrator für alle Clientkonsolen bereitstellen**
 
-## Hybride und On-Premise-Implementierungen {#hybrid-onprem-customers}
+## Hybrid- und On-Premise-Implementierungen {#hybrid-onprem-customers}
 
 Damit sich Adobe Campaign-Benutzer bei der von Ihnen erstellten und konfigurierten Instanz anmelden können, müssen sie die Clientkonsole verwenden.
 

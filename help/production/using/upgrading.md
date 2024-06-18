@@ -8,7 +8,7 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: 4aaa6256-256a-441d-80c9-430f8e427875
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 1be1528d657537786c430ea9c8bdb3aad58ba20d
 workflow-type: tm+mt
 source-wordcount: '1154'
 ht-degree: 7%
@@ -57,7 +57,7 @@ Um alle Dateien durch die neue Version zu ersetzen, müssen Sie alle Instanzen d
 
 1. Vergewissern Sie sich, dass keine Aufgaben aktiv sind, indem Sie die **nlserver pdump** Befehl. Folgendes sollte angezeigt werden:
 
-   ```
+   ```sql
    C:<installation path>Adobe Campaign v7bin>nlserver pdump
    HH:MM:SS > Application Server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
    No tasks

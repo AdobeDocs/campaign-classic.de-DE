@@ -5,9 +5,9 @@ description: Erfahren Sie, wie Sie native Campaign-Pakete installieren.
 feature: Installation, Application Settings
 badge-v7-prem: label="Nur On-Premise/Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
 workflow-type: tm+mt
-source-wordcount: '1300'
+source-wordcount: '1299'
 ht-degree: 11%
 
 ---
@@ -192,7 +192,7 @@ In der folgenden Tabelle sind alle in Campaign integrierten Packages aufgeführt
   </tr> 
   <tr> 
    <td> Web Analytics-Connectoren<br /> </td> 
-   <td> Ermöglicht die Interaktion zwischen Adobe Campaign und Adobe Analytics über das Web Analytics Connectors-Paket. Nicht kompatibel mit Transaktionsnachrichten (Message Center Package). <a href="../../platform/using/gs-aa.md">Weitere Infos</a><br /> </td> 
+   <td> Ermöglicht die Interaktion zwischen Adobe Campaign und Adobe Analytics über das Web Analytics Connectors-Paket. Nicht kompatibel mit Transaktionsnachrichten (Message Center Package). <a href="../../integrations/using/gs-aa.md">Weitere Infos</a><br /> </td> 
    <td> Marketing </td> 
   </tr> 
   <tr> 
@@ -202,7 +202,7 @@ In der folgenden Tabelle sind alle in Campaign integrierten Packages aufgeführt
   </tr> 
   <tr> 
    <td> Integration von freigegebenen Adobe Experience Cloud-Zielgruppen<br /> </td> 
-   <td> Ermöglicht den Austausch und die Freigabe von Zielgruppen/Segmenten mit Adobe Experience Cloud-Lösungen und Hauptdiensten. Erfordert IMS. <a href="../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md">Weitere Infos</a> <br /> </td> 
+   <td> Ermöglicht den Austausch und die Freigabe von Zielgruppen/Segmenten mit Adobe Experience Cloud-Lösungen und -Apps. Erfordert IMS. <a href="../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md">Weitere Infos</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
