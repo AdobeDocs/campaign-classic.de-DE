@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: f032ed3bdc0b402c8281bc34e6cb29f3c575aaf9
+source-git-commit: d31aa28da06e65664da655b6b082563767b35f7a
 workflow-type: tm+mt
 source-wordcount: '357'
-ht-degree: 18%
+ht-degree: 19%
 
 ---
 
@@ -17,10 +17,9 @@ ht-degree: 18%
 
 Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der **aktuellen Version Campaign Classic v7** aufgelistet. Jeder neue Build weist einen Status auf, der durch eine bestimmte Farbe dargestellt wird. Sie erfahren mehr über den Build-Status von Campaign Classic v7 auf [dieser Seite](rn-overview.md).
 
-## Version 7.4.1 - Build XXX {#release-7-4-1}
+## Version 7.4.1 – Build 9383 {#release-7-4-1}
 
 [!BADGE Allgemeine Verfügbarkeit]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=de#rn-statuses" tooltip="Allgemeine Verfügbarkeit"}
-
 
 _Mittwoch, 18. Juni 2024_
 
