@@ -5,7 +5,7 @@ description: Erfahren Sie mehr über die Integrationen mit Workflows von Adobe E
 feature: Workflows, Audiences
 topic-tags: technical-workflows
 source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '109'
 ht-degree: 100%
 
