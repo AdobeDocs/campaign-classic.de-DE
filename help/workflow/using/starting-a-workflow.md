@@ -4,10 +4,10 @@ title: Starten eines Workflows
 description: Erfahren Sie, wie Sie einen Workflow starten, und lernen Sie die Symbolleiste sowie das Kontextmenü für Workflow-Aktionen kennen
 feature: Workflows
 exl-id: d345ba62-c2fb-43df-a2a1-e9e4292d301a
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: ht
-source-wordcount: '1202'
-ht-degree: 100%
+source-git-commit: 98815fe0417f9126826e0273caa80888164793ec
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -64,6 +64,16 @@ Die Symbolleiste wird in diesem [Abschnitt](../../campaign/using/marketing-campa
   Dieser Befehl hält einen Workflow zunächst an und startet ihn dann erneut.In den meisten Fällen ermöglicht diese Vorgehensweise einen schnelleren Neustart als die separate Verwendung der Anhalten- und Starten-Schaltflächen. Dies ist insbesondere dann nützlich, wenn das Anhalten eines Workflows geraume Zeit in Anspruch nimmt, da der Befehl &quot;Starten&quot; erst wieder verfügbar ist, wenn der Workflow tatsächlich angehalten wurde.
 
   Die Befehle **[!UICONTROL Starten/Aussetzen/Anhalten/Neu starten]** sind auch über die entsprechenden Schaltflächen der Symbolleiste verfügbar. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../campaign/using/marketing-campaign-deliveries.md#creating-a-targeting-workflow).
+
+  Beachten Sie Folgendes: **Neu starten** Aktion löscht nicht die Workflow-Instanzvariablen im Vergleich zu **Ausführung**, **Anhalten**, und **Starten** Aktionen (das Löschen der Instanzvariablen erfolgt bei der Aktion Start ). Beim Neustart eines Workflows sind Instanzvariablen weiterhin für die Verwendung mit beibehaltenen Werten verfügbar. Um sie zu löschen, haben Sie folgende Möglichkeiten:
+   * Ausführen **Anhalten** und **Starten** Aktionen.
+   * Fügen Sie am Ende der Workflow-Ausführung folgenden JavaScript-Code hinzu:
+
+     ```
+     var wkf = xtk.workflow.load(instance.id)
+     wkf.variables='<variables/>'
+     wkf.save()
+     ```
 
 * **[!UICONTROL Verlaufsbereinigung]**
 
