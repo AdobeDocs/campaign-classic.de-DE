@@ -6,9 +6,9 @@ feature: Push
 role: User, Developer
 exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
 source-git-commit: 81b47231b027a189bc8b9029b7d48939734d08ed
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '934'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -90,7 +90,7 @@ Nachdem Sie den Dienst erstellt haben, müssen Sie jetzt Ihre Android-Mobile-App
 
    ![](assets/nmac_android.png)
 
-1. Stellen Sie sicher, dass Sie dasselbe **[!UICONTROL Integrationsschlüssel]** wird in Adobe Campaign und im Anwendungscode über das SDK definiert. <!--For more on this, refer to [this section](integrating-campaign-sdk-into-the-mobile-application.md).-->
+1. Stellen Sie sicher, dass in Adobe Campaign und im Anwendungs-Code derselbe **[!UICONTROL Integrationsschlüssel]** definiert ist (über das SDK). <!--For more on this, refer to [this section](integrating-campaign-sdk-into-the-mobile-application.md).-->
 
    >[!NOTE]
    >
@@ -152,8 +152,8 @@ Sie müssen die **appsubscriptionRcp** erweitern, um in der Campaign-Datenbank n
 
 1. Erstellen Sie eine Erweiterung des Schemas **[!UICONTROL Abonnentenanwendungen (nms:appsubscriptionRcp)]** und definieren Sie die neuen Felder. Weitere Informationen zur Erweiterung eines Schemas finden Sie auf [dieser Seite](../../configuration/using/about-schema-edition.md)
 
-1. Geben Sie im Tab **[!UICONTROL Abonnementparameter]** das Mapping an.
+1. Geben Sie auf der Registerkarte **[!UICONTROL Abonnementparameter]** das Mapping an.
 
    >[!CAUTION]
    >
-   >Stellen Sie sicher, dass die Konfigurationsnamen in der **[!UICONTROL Abonnementparameter]** sind mit denen im Code der Mobile App identisch. <!--Refer to [this section](integrating-campaign-sdk-into-the-mobile-application.md).-->
+   >Stellen Sie sicher, dass die Parameterbezeichnungen auf der Registerkarte **[!UICONTROL Abonnementparameter]** mit denen im Anwendungs-Code übereinstimmen. <!--Refer to [this section](integrating-campaign-sdk-into-the-mobile-application.md).-->

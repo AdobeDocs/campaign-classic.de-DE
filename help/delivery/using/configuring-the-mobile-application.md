@@ -6,9 +6,9 @@ feature: Push
 role: User, Developer
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
 source-git-commit: 81b47231b027a189bc8b9029b7d48939734d08ed
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '674'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -94,7 +94,7 @@ Im folgenden Beispiel werden **mediaURl** und **mediaExt** hinzugefügt, um Rich
 
 1. Klicken Sie auf **[!UICONTROL Weiter]**, um mit dem Konfigurieren der Entwicklungsanwendung zu beginnen.
 
-1. Stellen Sie sicher, dass in Adobe Campaign und im Anwendungs-Code derselbe **[!UICONTROL Integrationsschlüssel]** definiert ist (über das SDK). <!--For more on this, refer to [this page](integrating-campaign-sdk-into-the-mobile-application.md).--> Mit diesem anwendungsspezifischen Integrationsschlüssel können Sie die Mobile App mit der Adobe Campaign-Plattform verknüpfen.
+1. Stellen Sie sicher, dass in Adobe Campaign und im Anwendungs-Code derselbe **[!UICONTROL Integrationsschlüssel]** definiert ist (über das SDK). <!--For more on this, refer to [this page](integrating-campaign-sdk-into-the-mobile-application.md).--> Mit diesem anwendungsspezifischen Integrationsschlüssel können Sie die Mobile App mit der Adobe Campaign-Plattform verbinden.
 
    >[!NOTE]
    >

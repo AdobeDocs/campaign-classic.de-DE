@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Erste Schritte mit Campaign-Benutzern
+title: Erste Schritte mit Campaign-Benutzenden
 description: Erfahren Sie, wie Sie Campaign-Benutzer erstellen und verwalten.
 badge: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Access Management, Permissions
@@ -8,9 +8,9 @@ role: User, Admin
 level: Beginner
 exl-id: 580282ce-ee30-422a-8724-9c328637cc39
 source-git-commit: 8aceafa362b80f6e34edfd91a71551a58501a3d0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1324'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -25,11 +25,11 @@ ht-degree: 98%
 >Beachten Sie, dass nach dieser Migration der folgende Abschnitt nicht mehr gilt.  In der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html?lang=de){target="_blank"} erfahren Sie, wie Sie mit Adobe IMS Berechtigungen einrichten können.
 
 
-## Erste Schritte mit Campaign-Benutzern {#about-operators}
+## Erste Schritte mit Campaign-Benutzenden {#about-operators}
 
 >[!NOTE]
 >
->Diese Verfahren gelten nur für Benutzer, die mit nativer Authentifizierung eine Verbindung zu Campaign herstellen. Informationen zur Adobe IMS-Authentifizierung finden Sie unter [diese Dokumentation](https://helpx.adobe.com/enterprise/using/manage-users-individually.html#_blank).
+>Diese Verfahren gelten nur für Benutzende, die mit nativer Authentifizierung eine Verbindung zu Campaign herstellen. Informationen zur Adobe IMS-Authentifizierung finden Sie in [dieser Dokumentation](https://helpx.adobe.com/de/enterprise/using/manage-users-individually.html#_blank).
 
 Ein Benutzer ist ein Benutzer von Adobe Campaign, der die Berechtigung besitzt, sich anzumelden und Aktionen durchzuführen.
 

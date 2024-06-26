@@ -7,9 +7,9 @@ user-guide-description: Produktdokumentation für Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 3307c75ed7df0fcd357dd7c684481c62e0457e04
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2552'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -97,7 +97,7 @@ ht-degree: 99%
       + [Erste Schritte mit Berechtigungen](platform/using/access-management.md)
       + [Erstellen und Verwalten von Benutzern](platform/using/access-management-operators.md)
       + [Gruppen erstellen und verwalten](platform/using/access-management-groups.md)
-      + [Spezifische Berechtigungen zum Einrichten von Berechtigungen verwenden](platform/using/access-management-named-rights.md)
+      + [Verwenden spezifischer Berechtigungen zum Einrichten von Zugriffsberechtigungen](platform/using/access-management-named-rights.md)
       + [Zugriff auf Ordner verwalten](platform/using/access-management-folders.md)
    + Daten-Packages und Auflistungen {#administration-basics}
       + [Daten-Packages](platform/using/working-with-data-packages.md)
@@ -350,12 +350,12 @@ ht-degree: 99%
    + [Umfragen konfigurieren](surveys/using/configuring-surveys.md)
    + [Anwendungsfall: Erstellen eines Empfehlungsformulars](surveys/using/use-case-creating-a-refer-a-friend-form.md)
    + [Anwendungsbeispiel: Anzeigen eines Berichts zu Antworten auf eine Online-Umfrage](surveys/using/use-case-displaying-report-on-answers-to-an-online-survey.md)
-+ Mit Adobe Experience Cloud integrieren {#integrating-with-adobe-experience-cloud}
++ Integrieren mit Adobe Experience Cloud {#integrating-with-adobe-experience-cloud}
    + [Erste Schritte mit Campaign-Integrationen](integrations/using/about-campaign-integrations.md)
-   + [Technisches Adobe-Konto erstellen](integrations/using/oauth-technical-account.md)
+   + [Erstellen eines technischen Adobe-Kontos](integrations/using/oauth-technical-account.md)
    + Adobe Experience Cloud Triggers {#experience-triggers}
       + [Arbeiten mit  [!DNL Experience Cloud Triggers]](integrations/using/about-triggers.md)
-      + [Pipeline konfigurieren](integrations/using/configuring-pipeline.md)
+      + [Konfigurieren einer Pipeline](integrations/using/configuring-pipeline.md)
       + [Ereignisse für benutzerdefinierte Implementierungen konfigurieren](integrations/using/events.md)
       + [Pipeline-Überwachung](integrations/using/pipeline-monitoring.md)
       + [Fehlerbehebung bei Pipelines](integrations/using/pipeline-troubleshooting.md)

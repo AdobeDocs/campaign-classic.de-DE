@@ -7,9 +7,9 @@ feature: Personalization
 role: User
 exl-id: 67fd9a67-cb05-46cd-acd5-e42fde6f4d4f
 source-git-commit: 0cf7f249f366a6ef0e9bd0326ec14131fcf7dc18
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1070'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -116,15 +116,15 @@ Der Standardwert ist 5 Sekunden.
 
 Wenn Sie diese Option auf 0 setzen, gilt für die Personalisierungsphase keine Zeitbeschränkung.
 
-## Registerkarte &quot;Personalisierung&quot; {#personalization-tab}
+## Registerkarte „Personalisierung“ {#personalization-tab}
 
-In den Versandeigenschaften befindet sich der Tab Personalisierung .
+In den Versandeigenschaften befindet sich die Registerkarte „Personalisierung“.
 
-Sie können der Profilabfrage der Zielgruppendimension Daten hinzufügen, indem Sie auf die **&quot;Abfrage zum Laden des Empfängerprofils bearbeiten&quot;**. Sie können die direkt in einem Ausdruck extrahierten Daten verwenden, um die tatsächlich benötigten Daten zu extrahieren. Diese Daten werden dem Kontext hinzugefügt.
+Sie können der Profilabfrage der Zielgruppendimension Daten hinzufügen, indem Sie auf **„Ladeabfrage des Empfängerprofils bearbeiten“** klicken. Sie können die direkt in einem Ausdruck extrahierten Daten verwenden, um die tatsächlich benötigten Daten zu extrahieren. Diese Daten werden zum Kontext hinzugefügt.
 
 ![](assets/persotab-edit.png){zoomable="yes"}
 
-Wenn die Daten, die Sie hinzufügen möchten, nicht zur Zielgruppendimension gehören, können Sie auf **&quot;Fügen Sie Objekte im Ausführungskontext der Skripte hinzu&quot;**.
+Wenn die Daten, die Sie hinzufügen möchten, nicht zur Zielgruppendimension gehören, können Sie auf **„Objekte im Ausführungskontext der Skripte hinzufügen“** klicken.
 
 ![](assets/persotab_addobjects.png){zoomable="yes"}
 

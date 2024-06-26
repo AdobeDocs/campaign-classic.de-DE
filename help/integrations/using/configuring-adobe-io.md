@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Konfigurieren der Developer Console für Adobe Experience Cloud Triggers
-description: Erfahren Sie, wie Sie die Developer Console Adobe Experience Cloud Triggers konfigurieren
+description: Informationen zum Konfigurieren der Developer Console für Adobe Experience Cloud Triggers
 feature: Triggers
 audience: integrations
 content-type: reference
@@ -12,9 +12,9 @@ exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
 hide: true
 hidefromtoc: true
 source-git-commit: 8de62db2499449fc9966b6464862748e2514a774
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '312'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
@@ -40,27 +40,27 @@ Bevor Sie mit dieser Implementierung beginnen, überprüfen Sie, ob Folgendes vo
 * eine gültige **Organisationskennung**: Die Organisations-ID ist die eindeutige Kennung innerhalb der Adobe Experience Cloud, die zum Beispiel für den VisitorID-Dienst und das IMS Single-Sign On (SSO) verwendet wird. [Weitere Informationen](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=de)
 * ein **Entwicklerzugriff** auf Ihr Unternehmen. Der Systemadministrator der Organisation muss das Verfahren zum **Hinzufügen von Entwicklern zu einem einzelnen Produktprofil** befolgen, das [auf dieser Seite](https://helpx.adobe.com/de/enterprise/using/manage-developers.html) beschrieben wird. Damit ermöglicht er den Entwicklerzugriff für das `Analytics - {tenantID}` Produktprofil des Adobe Analytics-Produkts, das mit Triggers verbunden ist.
 
-## Schritt 1: Erstellen/Aktualisieren eines OAuth-Projekts {#creating-adobe-io-project}
+## Schritt 1: Erstellen/Aktualisieren des OAuth-Projekts {#creating-adobe-io-project}
 
 >[!AVAILABILITY]
 >
 > Die Anmeldedaten für Service-Konten (JWT) werden von Adobe demnächst eingestellt. Campaign-Integrationen mit Adobe-Lösungen und -Apps müssen jetzt mit OAuth-Server-to-Server-Anmeldedaten arbeiten. </br>
 >
-> * Wenn Sie eingehende Integrationen in Campaign implementiert haben, müssen Sie Ihr technisches Konto migrieren, wie in [dieser Dokumentation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank) beschrieben. Die bestehenden JWT-Anmeldedaten (Service Account) funktionieren weiterhin bis zum 27. Januar 2025.</br>
+> * Wenn Sie eingehende Integrationen in Campaign implementiert haben, müssen Sie Ihr technisches Konto migrieren, wie in [dieser Dokumentation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank) beschrieben. Bestehende Anmeldedaten für Service-Konten (JWT) sind noch bis zum 27. Januar 2025 gültig.</br>
 >
-> * Wenn Sie ausgehende Integrationen implementiert haben, z. B. die Integration von Campaign mit Analytics oder Experience Cloud Triggers, funktionieren diese noch bis zum 27. Januar 2025. Vor diesem Datum müssen Sie jedoch Ihre Campaign-Umgebung auf Version 7.4.1 aktualisieren und Ihr technisches Konto auf oAuth migrieren.
+> * Wenn Sie ausgehende Integrationen implementiert haben, z. B. die Integration von Campaign mit Analytics oder Experience Cloud Triggers, funktionieren diese noch bis zum 27. Januar 2025. Vor diesem Datum müssen Sie jedoch Ihre Campaign-Umgebung auf v7.4.1 aktualisieren und Ihr technisches Konto auf OAuth migrieren.
 
-Um mit der Konfiguration Ihres Adobe Analytics-Connectors fortzufahren, greifen Sie auf die Adobe Developer-Konsole zu und erstellen Sie Ihr OAuth Server-to-Server-Projekt.
+Um mit der Konfiguration Ihres Adobe Analytics-Connectors fortzufahren, greifen Sie auf die Adobe Developer Console zu und erstellen Sie Ihr OAuth-Server-zu-Server-Projekt.
 
-Siehe Abschnitt [diese Seite](oauth-technical-account.md#oauth-service) für die ausführliche Dokumentation.
+Auf [dieser Seite](oauth-technical-account.md#oauth-service) finden Sie die ausführliche Dokumentation.
 
 ## Schritt 2: Hinzufügen der Projektanmeldedaten in Adobe Campaign {#add-credentials-campaign}
 
-Führen Sie die Schritte aus, die unter [diese Seite](oauth-technical-account.md#add-credentials) , um Ihre OAuth-Projektanmeldedaten in Adobe Campaign hinzuzufügen.
+Führen Sie die Schritte aus, die auf [dieser Seite](oauth-technical-account.md#add-credentials) beschrieben sind, um Ihre OAuth-Projektanmeldedaten in Adobe Campaign hinzuzufügen.
 
 ## Schritt 3: Aktualisieren des Pipelined-Tags {#update-pipelined-tag}
 
-Zu aktualisieren [!DNL pipelined] -Tag, müssen Sie den Authentifizierungstyp in der Konfigurationsdatei auf das Entwickler-Konsolenprojekt aktualisieren. **config-&lt; Name der Instanz >.xml** wie folgt:
+Um das [!DNL pipelined]-Tag zu aktualisieren, müssen Sie den Authentifizierungstyp in der Konfigurationsdatei **config-&lt; Instanzname >.xml** wie folgt entsprechend dem Developer Console-Projekt aktualisieren:
 
 ```
 <pipelined ... authType="imsJwtToken"  ... />

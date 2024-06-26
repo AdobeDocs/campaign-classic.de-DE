@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: audience-sharing
 exl-id: c2293fc5-c9ba-4a73-8f39-fa7cdd06e8dd
 source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '621'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 75%
 
 ## Audience importieren {#importing-an-audience}
 
-Sie können Zielgruppen/Segmente aus Audience Manager über die Empfängerlisten in Adobe Campaign importieren.
+Der Import von Zielgruppen/Segmenten aus Audience Manager in Adobe Campaign erfolgt mithilfe von Empfängerlisten.
 
 1. Gehen Sie in den Knoten **[!UICONTROL Profile und Zielgruppen]** > **[!UICONTROL Listen]** des Adobe Campaign Explorer.
 1. Klicken Sie in der Aktionsleiste auf die Schaltfläche **[!UICONTROL Neu]** > **[!UICONTROL Freigegebene Zielgruppe erstellen...]**
@@ -44,19 +44,19 @@ Sie können Zielgruppen/Segmente aus Audience Manager über die Empfängerlisten
 
 Die Audience wird mithilfe eines technischen Workflows importiert. Die importierte Liste enthält die Elemente, die mithilfe der AMC-Datenquelle abgestimmt werden konnten. Von Adobe Campaign nicht erkannte Elemente werden nicht importiert.
 
-Die Synchronisation des Importvorgangs dauert 24 bis 36 Stunden, wenn Segmente direkt aus Audience Manager importiert werden. Danach ist die neue Audience in Adobe Campaign auffindbar und verwendbar.
+Wenn Segmente direkt aus Audience Manager importiert werden, dauert die Synchronisation des Imports 24 bis 36 Stunden. Danach ist die neue Zielgruppe in Adobe Campaign auffindbar und kann verwendet werden.
 
 >[!NOTE]
 >
->Wenn Sie Zielgruppen aus Adobe Analytics in Adobe Campaign importieren, müssen diese Zielgruppen zunächst in Audience Manager freigegeben werden. Dieser Vorgang dauert 12-24 Stunden, die zu der 24-36-Stunden-Synchronisation mit Campaign hinzugefügt werden müssen.
+>Beim Import von Zielgruppen von Adobe Analytics nach Adobe Campaign müssen diese Zielgruppen zuerst in Audience Manager freigegeben werden. Dieser Prozess dauert 12 bis 24 Stunden, die zu den 24 bis 36 Stunden für die Synchronisation mit Campaign hinzugezählt werden müssen.
 >
->Die Freigabe einer Audience kann demnach bis zu 60 Stunden dauern. Weitere Informationen zur Freigabe von Adobe Analytics-Zielgruppen in Audience Manager finden Sie unter [Adobe Analytics-Dokumentation](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html?lang=de){target="_blank"}.
+>Die Freigabe einer Zielgruppe kann demnach in diesem Fall bis zu 60 Stunden dauern. Weitere Informationen zur Freigabe einer Adobe Analytics-Zielgruppe in Audience Manager finden Sie in der [Dokumentation zu Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html?lang=de){target="_blank"}.
 
 Bei jeder späteren Synchronisation werden alle Daten der zuvor erstellten Audience vollständig ersetzt. Nur Segmente können importiert werden. Granulare Daten wie Schlüssel/Wert-Paare, Merkmale und Regeln werden nicht unterstützt.
 
 ## Audiences exportieren {#exporting-an-audience}
 
-Sie können eine Zielgruppe mithilfe eines Workflows aus Adobe Campaign in Audience Manager exportieren. Weiterführende Informationen zur Erstellung und Verwendung von Workflows finden Sie in [diesem Dokument](../../workflow/using/building-a-workflow.md). Die exportierten Zielgruppen werden als Segmente gespeichert:
+Der Export von Zielgruppen aus Adobe Campaign in Audience Manager erfolgt mithilfe eines Workflows. Weiterführende Informationen zur Erstellung und Verwendung von Workflows finden Sie in [diesem Dokument](../../workflow/using/building-a-workflow.md). Die exportierten Zielgruppen werden als Segmente gespeichert:
 
 1. Erstellen Sie einen neuen Zielgruppen-Workflow.
 1. Verwenden Sie die diversen zur Verfügung stehenden Aktivitäten, um eine Gruppe von Empfängern auszuwählen.
@@ -80,8 +80,8 @@ Sie können eine Zielgruppe mithilfe eines Workflows aus Adobe Campaign in Audie
 
 Die Audience wird daraufhin exportiert. Die Aktivität zum Audience-Export weist zwei ausgehende Transitionen auf. Die erste Transition enthält die Empfänger, die erfolgreich exportiert wurden. Die zweite Transition enthält die Empfänger, denen keine Besucherkennung oder Declared ID zugeordnet werden konnte.
 
-Die Synchronisation zwischen Lösungen dauert 24 bis 36 Stunden. Danach können Sie Ihre neue Zielgruppe finden und sie in anderen Adobe Experience Cloud-Lösungen wiederverwenden. Weiterführende Informationen zur Verwendung einer freigegebenen Adobe Campaign-Zielgruppe finden Sie in diesem Abschnitt [Dokumentation](https://experienceleague.adobe.com/en/docs/core-services/interface/services/audiences/create){target="_blank"}.
+Die Synchronisation zwischen Lösungen dauert 24 bis 36 Stunden. Danach ist Ihre neue Zielgruppe auffindbar und kann in anderen Adobe Experience Cloud-Lösungen verwendet werden. Weiterführende Informationen zur Verwendung einer in Adobe Campaign freigegebenen Zielgruppe finden Sie in dieser [Dokumentation](https://experienceleague.adobe.com/de/docs/core-services/interface/services/audiences/create){target="_blank"}.
 
 >[!NOTE]
 >
->Um abgestimmt werden zu können, müssen die Datensätze eine Adobe Experience Cloud-Kennung (&#39;visitor ID&#39; oder &#39;declared ID&#39;) aufweisen. Datensätze, die keine Adobe Experience Cloud-Kennung aufweisen, werden beim Import und Export der Audiences ignoriert.
+>Um abgestimmt werden zu können, müssen die Einträge eine Adobe Experience Cloud-ID („visitor ID“ oder „declared ID“) aufweisen. Einträge, die keine Adobe Experience Cloud-ID aufweisen, werden beim Import und Export der Zielgruppen ignoriert.

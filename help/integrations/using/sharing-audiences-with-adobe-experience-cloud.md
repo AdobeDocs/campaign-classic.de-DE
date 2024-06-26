@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: audience-sharing
 exl-id: 1c90e913-3375-476c-ab60-89f20239eb0d
 source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '245'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -24,9 +24,9 @@ ht-degree: 82%
 
 Mit Adobe Campaign können Sie Zielgruppen und Segmente für Adobe Experience Cloud-Dienste freigeben. Dazu sind zwei Optionen verfügbar:
 
-1. Senden Sie Adobe Experience Platform-Segmentdaten an Adobe Campaign. Zur Implementierung dieser Integration müssen Sie Ihre Echtzeit-Kundendatenplattform mit Campaign (RTCDP) verbinden. [Weitere Informationen finden Sie in diesem Abschnitt .](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html?lang=de){target="_blank"}.
+1. Senden Sie Adobe Experience Platform-Segmentdaten an Adobe Campaign. Zur Implementierung dieser Integration müssen Sie Ihre Echtzeit-Kundendatenplattform mit Campaign (RTCDP) verbinden. [Weiterführende Informationen finden Sie in diesem Abschnitt](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html?lang=de){target="_blank"}.
 
-1. Integrieren **Adobe Campaign** mit  **Experience Cloud Audiences** oder **Adobe Audience Manager**. Anschließend können Sie:
+1. Integrieren Sie **Adobe Campaign** mit **Experience Cloud Audiences** oder **Adobe Audience Manager**. Anschließend können Sie:
 
    * Import von Audiences/Segmenten aus den verschiedenen Lösungen der Adobe Experience Cloud in Adobe Campaign. Der Import von Audiences erfolgt in Adobe Campaign in Listen.
 
@@ -39,5 +39,5 @@ Diese Integration unterstützt zwei Arten von Adobe Experience Cloud-IDs:
 
   >[!NOTE]
   >
-  > Die deklarierte ID-Datenquelle kann jetzt auch mit der Experience Cloud Assets-Integration verwendet werden.
+  > Eine Declared ID-Datenquelle kann jetzt auch mit der Integration von Experience Cloud Assets verwendet werden.
   >

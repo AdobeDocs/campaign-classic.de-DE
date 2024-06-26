@@ -8,9 +8,9 @@ level: Beginner
 hidefromtoc: true
 exl-id: 0cd6bf20-da72-4cf0-9f5d-d4e8acdd324d
 source-git-commit: a1dbef3e1feca1e3347de013db8bd7809d315016
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2586'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -185,7 +185,7 @@ Weiterführende Informationen finden Sie in der [Campaign-Kompatibilitätsmatrix
 
 **Eingestellte Funktionen**
 
-* Ab Campaign Version 21.1 wird der Adobe Analytics Data Connector nicht mehr unterstützt. Wenn Sie diesen Connector verwenden, müssen Sie Ihre Implementierung entsprechend mit dem neuen Connector Adobe Analytics Connector anpassen.
+* Ab Campaign Version 21.1 wird der Adobe Analytics Data Connector nicht mehr unterstützt. Wenn Sie diesen Connector verwenden, müssen Sie Ihre Implementierung auf den neuen Adobe Analytics Connector anpassen.
 * Debian 8 wird jetzt nicht mehr unterstützt.
 * Nach der Einstellung von Oracle CRM in Version 20.3 wurde das zugehörige externe Konto aus der Benutzeroberfläche entfernt.
 

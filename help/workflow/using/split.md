@@ -5,7 +5,7 @@ description: Erfahren Sie mehr über die Workflow-Aktivität "Aufspaltung".
 feature: Workflows, Targeting Activity
 exl-id: 4204350a-c2d2-4033-9bdf-87b49d8211b9
 source-git-commit: 13eb777e96602ddd3463f721c6b2a3e6b67cb329
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2169'
 ht-degree: 100%
 
@@ -19,7 +19,7 @@ Diese Aktivität löst keine Vereinigung der eingehenden Populationen aus. Wenn 
 
 >[!NOTE]
 >
->Aufspaltungsvorgänge können nicht für Tabellen mit unterschiedlichen Quellen durchgeführt werden. Zu diesem Zweck muss vor der Aktivität **Aufspaltung** eine Aktivität vom Typ **Anreicherung** hinzugefügt werden.
+>Aufspaltungsvorgänge können nicht für Tabellen mit unterschiedlichen Quellen durchgeführt werden. Zu diesem Zweck müssen Sie eine **Anreicherungsaktivität** vor der **Aufspaltungsaktivität** hinzufügen.
 
 * Ein Beispiel der verwendeten Aufspaltungs-Aktivität finden Sie unter [Teilmengen mithilfe der Aufspaltungs-Aktivität erstellen](targeting-data.md#creating-subsets-using-the-split-activity).
 * Ein Beispiel für die Verwendung der Aufspaltungs-Aktivität zur Segmentierung der Zielgruppe in unterschiedliche Populationen mithilfe von Filterbedingungen finden Sie in [diesem Abschnitt](cross-channel-delivery-workflow.md).

@@ -7,9 +7,9 @@ hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
 source-git-commit: 19b40f0b827c4b5b7b6484fe4953aebe61d00d1d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '997'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -52,9 +52,9 @@ Zur Integration des neuen Zustellbarkeits-Servers muss Campaign mit Adobe Shared
 >
 > Die Anmeldedaten für Service-Konten (JWT) werden von Adobe demnächst eingestellt. Campaign-Integrationen mit Adobe-Lösungen und -Apps müssen jetzt mit OAuth-Server-to-Server-Anmeldedaten arbeiten. </br>
 >
-> * Wenn Sie eingehende Integrationen in Campaign implementiert haben, müssen Sie Ihr technisches Konto migrieren, wie in [dieser Dokumentation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank) beschrieben. Die bestehenden JWT-Anmeldedaten (Service Account) funktionieren weiterhin bis zum 27. Januar 2025. </br>
+> * Wenn Sie eingehende Integrationen in Campaign implementiert haben, müssen Sie Ihr technisches Konto migrieren, wie in [dieser Dokumentation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank) beschrieben. Bestehende Anmeldedaten für Service-Konten (JWT) sind noch bis zum 27. Januar 2025 gültig. </br>
 >
-> * Wenn Sie ausgehende Integrationen implementiert haben, z. B. die Integration von Campaign mit Analytics oder Experience Cloud Triggers, funktionieren diese noch bis zum 27. Januar 2025. Vor diesem Datum müssen Sie jedoch Ihre Campaign-Umgebung auf Version 7.4.1 aktualisieren und Ihr technisches Konto auf oAuth migrieren.
+> * Wenn Sie ausgehende Integrationen implementiert haben, z. B. die Integration von Campaign mit Analytics oder Experience Cloud Triggers, funktionieren diese noch bis zum 27. Januar 2025. Vor diesem Datum müssen Sie jedoch Ihre Campaign-Umgebung auf v7.4.1 aktualisieren und Ihr technisches Konto auf OAuth migrieren.
 
 ### Voraussetzungen{#prerequisites}
 
@@ -87,13 +87,13 @@ Wenn Sie **Adobe Campaign** nicht sehen können, wenden Sie sich an die [Adobe-K
 
 ### Schritt 1: Erstellen/Aktualisieren Ihres Adobe Developer-Projekts {#adobe-io-project}
 
-Um mit der Konfiguration Ihres Adobe Analytics-Connectors fortzufahren, greifen Sie auf die Adobe Developer-Konsole zu und erstellen Sie Ihr OAuth Server-to-Server-Projekt.
+Um mit der Konfiguration Ihres Adobe Analytics-Connectors fortzufahren, greifen Sie auf die Adobe Developer Console zu und erstellen Sie Ihr OAuth-Server-zu-Server-Projekt.
 
-Siehe Abschnitt [diese Seite](../../integrations/using/oauth-technical-account.md#oauth-service) für die ausführliche Dokumentation.
+Eine detaillierte Dokumentation dazu finden Sie auf [dieser Seite](../../integrations/using/oauth-technical-account.md#oauth-service).
 
 ### Schritt 2: Hinzufügen der Projektanmeldedaten in Adobe Campaign {#add-credentials-campaign}
 
-Führen Sie die Schritte aus, die unter [diese Seite](../../integrations/using/oauth-technical-account.md#add-credentials) , um Ihre OAuth-Projektanmeldedaten in Adobe Campaign hinzuzufügen.
+Führen Sie die Schritte aus, die auf [dieser Seite](../../integrations/using/oauth-technical-account.md#add-credentials) beschrieben werden, um Ihre OAuth-Projektanmeldedaten in Adobe Campaign hinzuzufügen.
 
 ### Schritt 3: Überprüfen Sie Ihre Konfiguration
 

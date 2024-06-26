@@ -8,9 +8,9 @@ audience: integrations
 content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
 source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '844'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -35,13 +35,13 @@ Da das Pipeline-Hosting in Adobe Experience Cloud erfolgt, ist eine Authentifizi
 
 ## Schritt 1: Erstellen/Aktualisieren Ihres Adobe Developer-Projekts {#creating-adobe-io-project}
 
-Sie müssen Ihre Organisation mit Adobe Developer-Konto-Token aktivieren, um die Trigger-Integration zu ermöglichen.
+Sie müssen Ihre Organisation mit Adobe Developer-Konto-Token aktivieren, um die Triggers-Integration zu ermöglichen.
 
-Erfahren Sie, wie Sie Ihr technisches Adobe-Konto in [diese Seite](../../integrations/using/oauth-technical-account.md). Beachten Sie, dass Sie beim Hinzufügen einer API zu den Adobe Developer-Anmeldedaten **[!UICONTROL Adobe Analytics]** auswählen müssen.
+Auf [dieser Seite](../../integrations/using/oauth-technical-account.md) erfahren Sie, wie Sie Ihr technisches Adobe-Konto erstellen. Beachten Sie, dass Sie beim Hinzufügen einer API zu den Adobe Developer-Anmeldedaten **[!UICONTROL Adobe Analytics]** auswählen müssen.
 
 ## Schritt 2: Konfigurieren der Pipeline-Option {#configuring-nmspipeline}
 
-Sobald die Authentifizierung festgelegt ist, ruft die Pipeline die Ereignisse ab. Es werden nur Trigger verarbeitet, die in Adobe Campaign konfiguriert sind. Der Trigger muss in Adobe Analytics generiert und an die Pipeline gesendet worden sein. Diese verarbeitet nur Trigger, die in Adobe Campaign konfiguriert wurden.
+Sobald die Authentifizierung eingerichtet ist, ruft die Pipeline die Ereignisse ab. Sie verarbeitet nur Trigger, die in Adobe Campaign konfiguriert wurden. Der Trigger muss in Adobe Analytics generiert und an die Pipeline gesendet worden sein. Diese verarbeitet nur Trigger, die in Adobe Campaign konfiguriert wurden.
 
 Die Option kann auch mit einem Platzhalter konfiguriert werden, um alle Auslöser unabhängig vom Namen zu erfassen.
 
@@ -71,7 +71,7 @@ Die Option kann auch mit einem Platzhalter konfiguriert werden, um alle Auslöse
    }
    ```
 
-1. Sie können auch folgenden JSON-Code einfügen, der alle Auslöser abdeckt.
+1. Sie können auch folgenden JSON-Code einfügen, der alle Trigger abdeckt.
 
    ```json
    {
@@ -109,7 +109,7 @@ Für die Konfiguration der Pipeline-Option wird Folgendes empfohlen:
 * Der Prozess `pipelined` unterstützt auch das Thema „Alias“.
 * Starten Sie den Prozess `pipelined` grundsätzlich neu, nachdem Sie Änderungen vorgenommen haben.
 
-## (optional) Schritt 3: Zusätzliche Konfiguration {#step-optional}
+## Schritt 3 (optional): Zusätzliche Konfiguration {#step-optional}
 
 Sie können einige interne Parameter entsprechend Ihren Lastanforderungen ändern, aber stellen Sie sicher, dass Sie sie testen, bevor Sie sie in Ihrer Produktionsumgebung anwenden.
 

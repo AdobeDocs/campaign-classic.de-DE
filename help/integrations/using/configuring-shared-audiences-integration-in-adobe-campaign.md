@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: audience-sharing
 exl-id: a3e26cff-9609-4d91-8976-9213a30c3fd2
 source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '609'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -87,7 +87,7 @@ So konfigurieren Sie die Datenquelle **[!UICONTROL Empfänger - Besucher-ID]**:
 
 ## Schritt 3: Konfigurieren Sie den Campaign Tracking Server.  {#step-3--configure-campaign-tracking-server}
 
-Zur Konfiguration der Integration mit Audience Manager müssen wir auch den Campaign Tracking Server konfigurieren.
+Für die Konfiguration der Integration mit Audience Manager muss auch der Campaign Tracking Server konfiguriert werden.
 
 Damit freigegebene Zielgruppen mit der Besucher-ID funktionieren, sollte die Tracking-Server-Domain eine Subdomain der angeklickten URL oder der Haupt-Website sein.
 

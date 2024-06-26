@@ -1,33 +1,34 @@
 ---
 product: campaign
-title: Erstellen und konfigurieren Sie Ihr technisches Adobe-Konto für APIs
-description: Erfahren Sie mehr darüber, wie Sie Ihr Adobe-API-Konto erstellen
+title: Erstellen und Konfigurieren Ihres technischen Adobe-Kontos für APIs
+description: Informationen zum Erstellen Ihres Adobe-API-Kontos
 role: User, Admin
 level: Beginner
-source-git-commit: efd09fd71069878a5096bfa3592e6ebbaa9dd4e4
-workflow-type: tm+mt
+exl-id: 5d830ea0-a0a3-4b35-8dc4-e955380431fb
+source-git-commit: 8eadea9f9cc0a44522726024bfbc825e3b4cad98
+workflow-type: ht
 source-wordcount: '318'
-ht-degree: 16%
+ht-degree: 100%
 
 ---
 
-# Technisches Adobe-Konto erstellen {#create-service-account}
+# Erstellen eines technischen Adobe-Kontos {#create-service-account}
 
 Mit den Server-zu-Server-Authentifizierungsberechtigungen kann der Server Ihrer Anwendung Zugriffstoken generieren und API-Aufrufe im Namen Ihrer Anwendung selbst durchführen. [Weitere Informationen](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/)
 
-## Vorhandene Integrationen migrieren {#migrate-jwt}
+## Migrieren vorhandener Integrationen {#migrate-jwt}
 
-Die Berechtigung für Dienstkonten (JWT) wird von Adobe nicht mehr unterstützt. Campaign-Integrationen mit Adobe-Lösungen und -Apps müssen jetzt auf OAuth Server-zu-Server-Anmeldedaten basieren.
+Die Berechtigung für Service-Konten (JWT) wird von Adobe nicht mehr unterstützt. Campaign-Integrationen mit Adobe-Lösungen und -Apps müssen jetzt mit OAuth-Server-zu-Server-Anmeldedaten arbeiten.
 
-Wenn Sie vor Juni 2024 eingehende oder ausgehende Integrationen mit Campaign implementiert haben, müssen Sie Ihre Campaign-Umgebung auf Version 7.4.1 aktualisieren und Ihr technisches Konto so detailliert zu oAuth migrieren [in dieser Dokumentation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration){target="_blank"}. Vorhandene Service-Konto-Anmeldedaten (JWT) funktionieren weiterhin, bis **27. Januar 2025**.
+Wenn Sie vor Juni 2024 eingehende oder ausgehende Integrationen mit Campaign implementiert haben, müssen Sie Ihre Campaign-Umgebung auf Version 7.4.1 aktualisieren und Ihr technisches Konto zu OAuth migrieren, wie [in dieser Dokumentation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration) beschrieben{target="_blank"}. Bereits vorhandene Service-Konto(JWT)-Anmeldedaten funktionieren noch bis zum **27. Januar 2025** weiterhin.
 
-Nach Abschluss der Migration müssen Sie Ihre neuen Anmeldedaten Campaign zuweisen, wie hier beschrieben: [diesem Abschnitt](#add-credentials).
+Nach Abschluss der Migration müssen Sie Ihre neuen Anmeldedaten Campaign zuweisen, wie in [diesem Abschnitt](#add-credentials) beschrieben.
 
-## Neues OAuth-technisches Konto für neue Integrationen erstellen {#oauth-service}
+## Erstellen eines neuen technischen OAuth-Kontos für neue Integrationen {#oauth-service}
 
 Gehen Sie wie folgt vor, um Ihr technisches OAuth-Konto für neue Integrationen zu erstellen:
 
-1. Zugriff auf die Adobe Developer-Konsole und Anmeldung als **Systemadministrator** Ihrer Organisation.
+1. Greifen Sie auf die Adobe Developer Console zu und melden Sie sich als **Systemadmin** Ihrer Organisation an.
 
    Weiterführende Informationen zu Administratorrollen finden Sie auf dieser [Seite](https://helpx.adobe.com/de/enterprise/using/admin-roles.html).
 
@@ -39,24 +40,24 @@ Gehen Sie wie folgt vor, um Ihr technisches OAuth-Konto für neue Integrationen 
 
    ![](assets/api-account-2.png)
 
-1. Wählen Sie das Produkt aus, das Sie in Campaign integrieren möchten, und klicken Sie auf **[!UICONTROL Nächste]**.
+1. Wählen Sie das Produkt aus, das Sie in Campaign integrieren möchten, und klicken Sie auf **[!UICONTROL Weiter]**.
 
-1. Auswählen **[!UICONTROL OAuth Server-zu-Server]** als Authentifizierungstyp und klicken Sie auf **[!UICONTROL Nächste]**.
+1. Wählen Sie als Authentifizierungstyp **[!UICONTROL OAuth-Server-zu-Server]** aus und klicken Sie auf **[!UICONTROL Weiter]**.
 
    ![](assets/api-account-3.png)
 
-1. Wählen Sie die **[!UICONTROL Produktprofil]** zu Ihrem Projekt.
+1. Wählen Sie den **[!UICONTROL Produktprofil]**-Link zu Ihrem Projekt.
 
-   Bei Bedarf können Sie eine neue erstellen. [Weitere Informationen](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html)
+   Bei Bedarf können Sie einen neuen erstellen. [Weitere Informationen](https://helpx.adobe.com/de/enterprise/using/manage-product-profiles.html)
 
 1. Klicken Sie dann auf **[!UICONTROL Konfigurierte API speichern]**.
 
    ![](assets/api-account-4.png)
 
-1. Wählen Sie in Ihrem Projekt unter &quot;Berechtigungen&quot;die Option [!DNL OAuth Server-to-Server] und kopieren Sie die folgenden Informationen:
+1. Wählen Sie in Ihrem Projekt unter „Berechtigungen“ die Option [!DNL OAuth Server-to-Server] und kopieren Sie die folgenden Informationen:
 
-   * **[!UICONTROL Client ID]** (Client-ID)
-   * **[!UICONTROL Client-Geheimschlüssel]**
+   * **[!UICONTROL Client-ID]**
+   * **[!UICONTROL Client-Geheimnis]**
    * **[!UICONTROL Technical account ID]** (Kennung des technischen Kontos)
    * **[!UICONTROL Organization ID]** (Organisationskennung)
 
@@ -66,7 +67,7 @@ Gehen Sie wie folgt vor, um Ihre OAuth-Projektanmeldedaten in Adobe Campaign hin
 
 1. Melden Sie sich über SSH bei jedem Container an, in dem die Adobe Campaign-Instanz installiert ist.
 
-1. Fügen Sie Ihre OAuth-Projektanmeldedaten in Adobe Campaign hinzu, indem Sie den folgenden Befehl ausführen als `neolane` Benutzer. Dadurch werden die Anmeldeinformationen für das **[!UICONTROL Technische Konto]** in die Konfigurationsdatei der Instanz eingefügt.
+1. Fügen Sie Ihre OAuth-Projektanmeldedaten in Adobe Campaign hinzu, indem Sie den folgenden Befehl als `neolane`-Benutzerin oder -Benutzer ausführen. Dadurch werden die Anmeldeinformationen für das **[!UICONTROL Technische Konto]** in die Konfigurationsdatei der Instanz eingefügt.
 
    ```
    nlserver config -instance:<instance_name> -setimsoauth:ims-org-id/client-id/technical-account-id/client-secret

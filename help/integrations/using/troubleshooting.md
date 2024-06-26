@@ -11,9 +11,9 @@ hide: true
 hidefromtoc: true
 exl-id: 61bb184e-affa-430c-8571-56e911cd5a3d
 source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '147'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -34,4 +34,4 @@ Im Fall von Fehlermeldungen achten Sie darauf, dass die folgenden Elemente richt
 
   Vergewissern Sie sich in **[!UICONTROL Administration > Plattform > AMC Data sources]**, dass die AMC-Datenquelle richtig konfiguriert ist.
 
-Es kann vorkommen, dass einige Daten beim Freigeben einer Audience über Experience Cloud Audience oder beim Import einer Audience fehlen. Es werden nämlich nur Datensätze übertragen, deren Kennung (&#39;Visitor ID&#39; oder &#39;Declared ID&#39;) mit der Profildimension abgestimmt werden konnte. IDs aus Segmenten, die von Adobe Campaign nicht erkannt werden, werden nicht importiert.
+Es kann vorkommen, dass manche Daten bei der Freigabe einer Zielgruppe über Experience Cloud Audience oder beim Import einer Zielgruppe fehlen. Es werden nämlich nur Einträge übertragen, deren ID („Visitor ID“ oder „Declared ID“) mit der Profildimension abgestimmt werden konnte. IDs aus Segmenten, die von Adobe Campaign nicht erkannt werden, werden nicht importiert.

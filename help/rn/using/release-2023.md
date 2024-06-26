@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 8ed11e96-9f23-4e2e-bae2-25c51cfb549a
 source-git-commit: f39dc6077a7ddc3fb9b53d4082c08e65e7683f10
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2337'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -30,11 +30,11 @@ _5. Dezember 2023_
 
 * Wenn jetzt ein Web-Formular den Status **Veröffentlichung ausstehend** hat, wird es nicht automatisch live geschaltet. Um Sicherheitsprobleme zu vermeiden, muss es veröffentlicht werden, bevor es **online** und über die Web-Formular-URL in einem Webbrowser abrufbar ist. [Weitere Informationen](../../web/using/publishing-a-web-form.md#life-cycle-of-a-form)
 
-### Weitere Verbesserungen {#release-7-3-5-other}
+### Andere Verbesserungen {#release-7-3-5-other}
 
 Ab dieser Version funktionieren Tracking-Links für bereits gesendete E-Mails während der Aktualisierung weiterhin. [Weitere Informationen](../../platform/using/faq-build-upgrade.md)
 
-### Patches  {#release-7-3-5-patches}
+### Patches {#release-7-3-5-patches}
 
 * Fehlerkorrektur – Bei der Verwendung von Daten aus einer Google Big Query-Datenbank und der Aktualisierung von Daten in einer Oracle-Datenbank werden jetzt nicht mehr alle Schlüssel in der temporären Workflow-Tabelle auf `0` gesetzt. (NEO-65091)
 * Fehlerkorrektur – Die Ausführung eines Workflows funktioniert jetzt auch dann, wenn zwei Abfragen einer Google Big Query-Datenbank in einer **Vereinigungs**-Workflow-Aktivität kombiniert werden. (NEO-63705)
@@ -68,7 +68,7 @@ _7. September 2023_
 * Die Sicherheit wurde verbessert, um zu verhindern, dass personenbezogene Daten in den Web-Protokollfehlern offengelegt werden. (NEO-46827)
 * Die Sicherheit wurde optimiert, um zu verhindern, dass das Sicherheits-Token in die URL der Campaign-Startseite aufgenommen wird. (NEO-38519)
 
-### Aktualisierungen zur Kompatibilität  {#release-7-3-4-compat}
+### Kompatibilitätsaktualisierungen  {#release-7-3-4-compat}
 
 * Tomcat wurde auf Version 8.5.91 aktualisiert
 * Die Bibliothek „libexpat“ wurde auf Version 2.5.0 aktualisiert, um die Sicherheit zu verbessern. (NEO-51023)
@@ -165,7 +165,7 @@ _20. März 2023_
 
 _21. November 2022_
 
-### Aktualisierungen zur Kompatibilität {#release-7-3-2-compat}
+### Kompatibilitätsaktualisierungen {#release-7-3-2-compat}
 
 * Adobe Campaign ist jetzt mit PostgreSQL 14 kompatibel. Weiterführende Informationen befinden sich in dieser [Technote](../../technotes/using/tech-stack-upgrade.md).
 

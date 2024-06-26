@@ -9,9 +9,9 @@ hidefromtoc: true
 hide: true
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
 source-git-commit: 8de62db2499449fc9966b6464862748e2514a774
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1774'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -58,7 +58,7 @@ Build 9032@d030c36 umfasst die folgende Fehlerkorrektur:
 >
 > * Wenn Sie über Adobe Identity Management Service (IMS) mit Ihrer Adobe ID eine Verbindung zu Campaign herstellen, ist eine Aktualisierung erforderlich, damit sowohl der Campaign-Server als auch die Client-Konsole nach dem **30. Juni 2021** eine Verbindung zu Campaign herstellen können. [Weitere Informationen](../../technotes/using/ims-updates.md)
 > * Diese Version enthält eine [Sicherheitskorrektur](https://helpx.adobe.com/de/security/products/campaign/apsb21-04.html): Die Aktualisierung ist zwingend erforderlich, um die Sicherheit Ihrer Umgebung zu erhöhen.
-> * Wenn Sie die Experience Cloud Trigger-Integration über die OAuth-Authentifizierung verwenden, müssen Sie wie beschrieben zu Adobe I/O wechseln [auf dieser Seite](../../integrations/using/about-triggers.md#implement). Die alte oAuth-Authentifizierungsmethode mit Campaign [wurde eingestellt](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411?profile.language=de) am **September 2021**. Gehostete Umgebungen profitieren von einer Verlängerung bis zum **23. Februar 2022**. Wenden Sie sich als On-Premise- oder Hybrid-Kunde an die Kundenunterstützung von Adobe, um den Support bis Februar 2022 zu verlängern. Dazu müssen Sie Adobe [die App-ID der OAuth-Anwendung](../../integrations/using/configuring-pipeline.md#step-optional) bereitstellen.
+> * Wenn Sie die Experience Cloud Triggers-Integration über die OAuth-Authentifizierung verwenden, müssen Sie wie [auf dieser Seite](../../integrations/using/about-triggers.md#implement) beschrieben zu Adobe I/O wechseln. Die alte OAuth-Authentifizierungsmethode mit Campaign [wurde](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411?profile.language=de) am **September 2021** eingestellt. Gehostete Umgebungen profitieren von einer Verlängerung bis zum **23. Februar 2022**. Wenden Sie sich als On-Premise- oder Hybrid-Kunde an die Kundenunterstützung von Adobe, um den Support bis Februar 2022 zu verlängern. Dazu müssen Sie Adobe [die App-ID der OAuth-Anwendung](../../integrations/using/configuring-pipeline.md#step-optional) bereitstellen.
 >
 >Weitere Informationen finden in diesem [[!DNL Gold Standard] Abschnitt](../../rn/using/gold-standard.md).
 
@@ -341,7 +341,7 @@ In diesem Abschnitt sind alle Systeme und Komponenten aufgeführt, die für Buil
 </td>
 </tr>
 <tr>
-<td>SQL-Server</td>
+<td>SQL Server</td>
 <td>
 <p>2019</p>
 <p>2017</p>
@@ -418,7 +418,7 @@ In diesem Abschnitt sind alle Systeme und Komponenten aufgeführt, die für Buil
 <p>9.4.x</p>
 </td>
 </tr>
-<tr><td>SQL-Server</td>
+<tr><td>SQL Server</td>
 <td>
 <p>2019</p>
 <p>2017</p>

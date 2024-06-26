@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Verwenden bestimmter Rechte zum Einrichten von Berechtigungen
+title: Verwenden spezifischer Berechtigungen zum Einrichten von Zugriffsberechtigungen
 description: Erfahren Sie, wie Sie spezifische Berechtigungen zum Einrichten von Berechtigungen verwenden.
 badge: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Access Management, Permissions
@@ -8,19 +8,19 @@ role: User, Admin
 level: Beginner
 exl-id: 07470a91-d8d2-4c41-9555-05522c8068f0
 source-git-commit: 8aceafa362b80f6e34edfd91a71551a58501a3d0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '579'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# Verwenden bestimmter Rechte zum Einrichten von Berechtigungen{#named-rights}
+# Verwenden spezifischer Berechtigungen zum Einrichten von Zugriffsberechtigungen{#named-rights}
 
 >[!NOTE]
 >
->Diese Seite gilt nur für Benutzer, die mit nativer Authentifizierung eine Verbindung zu Campaign herstellen. Informationen zur Adobe IMS-Authentifizierung finden Sie unter [diese Dokumentation](https://helpx.adobe.com/enterprise/using/manage-permissions-and-roles.html).
+>Diese Seite betrifft nur Benutzende, die mit nativer Authentifizierung eine Verbindung zu Campaign herstellen. Informationen zur Adobe IMS-Authentifizierung finden Sie in [dieser Dokumentation](https://helpx.adobe.com/de/enterprise/using/manage-permissions-and-roles.html).
 
-Adobe Campaign bietet standardmäßig eine Reihe von spezifischen Berechtigungen, die Benutzern und Gruppen bestimmte Rechte einräumen. Diese Berechtigungen können über den Verzeichnisknoten **[!UICONTROL Administration > Zugriffe > Spezifische Berechtigungen]** bearbeitet werden.
+Adobe Campaign bietet standardmäßig eine Reihe von spezifischen Berechtigungen, die Benutzenden und Gruppen bestimmte Rechte einräumen. Diese Berechtigungen können über den Verzeichnisknoten **[!UICONTROL Administration > Zugriffe > Spezifische Berechtigungen]** bearbeitet werden.
 
 ![](assets/s_ncs_admin_named_rights.png)
 

@@ -4,9 +4,9 @@ product: campaign
 title: Produktdokumentation zu Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
 source-git-commit: fb19195c7331a2adc0bcf7a37ae7678078dce5e6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '353'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -21,9 +21,9 @@ Hier erhalten Sie einen Einblick in die neuesten Produktverbesserungen bei Adobe
 >[!BEGINTABS]
 
 
->[!TAB Die Version vom Juni ist live!]
+>[!TAB Die Juni-Version ist live!]
 
-Entdecken Sie Updates, Verbesserungen und Patches von Campaign Classic v7.4.1.
+Entdecken Sie Updates, Verbesserungen und Patches für Campaign Classic v7.4.1.
 
 [![Bild](assets/do-not-localize/learn-more-button.svg)](rn/using/latest-release.md)
 
@@ -113,4 +113,4 @@ Einige wichtige Änderungen am FCM-Dienst (Android Firebase Cloud Messaging) wer
 
 ## Zusätzliche Ressourcen
 
-[Liste der Fehlermeldungen](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=de) - [Adobe Campaign-Produktbeschreibung](https://helpx.adobe.com/de/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Kompatibilitätsmatrix](rn/using/compatibility-matrix.md) - [Tutorials](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de){target="_blank"} - [Control Panel für Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=de){target="_blank"}
+[Liste der Fehlermeldungen](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=de) – [Adobe Campaign-Produktbeschreibung](https://helpx.adobe.com/de/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} – [Kompatibilitätsmatrix](rn/using/compatibility-matrix.md) – [Tutorials](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de){target="_blank"} – [Control Panel für Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=de){target="_blank"}

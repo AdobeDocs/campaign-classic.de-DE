@@ -5,9 +5,9 @@ description: Erfahren Sie, wie Sie einen Workflow starten, und lernen Sie die Sy
 feature: Workflows
 exl-id: d345ba62-c2fb-43df-a2a1-e9e4292d301a
 source-git-commit: 98815fe0417f9126826e0273caa80888164793ec
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '1265'
+ht-degree: 100%
 
 ---
 
@@ -65,8 +65,8 @@ Die Symbolleiste wird in diesem [Abschnitt](../../campaign/using/marketing-campa
 
   Die Befehle **[!UICONTROL Starten/Aussetzen/Anhalten/Neu starten]** sind auch über die entsprechenden Schaltflächen der Symbolleiste verfügbar. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../campaign/using/marketing-campaign-deliveries.md#creating-a-targeting-workflow).
 
-  Beachten Sie Folgendes: **Neu starten** Aktion löscht nicht die Workflow-Instanzvariablen im Vergleich zu **Ausführung**, **Anhalten**, und **Starten** Aktionen (das Löschen der Instanzvariablen erfolgt bei der Aktion Start ). Beim Neustart eines Workflows sind Instanzvariablen weiterhin für die Verwendung mit beibehaltenen Werten verfügbar. Um sie zu löschen, haben Sie folgende Möglichkeiten:
-   * Ausführen **Anhalten** und **Starten** Aktionen.
+  Beachten Sie, dass die Aktion **Neustart** die Workflow-Instanzvariablen im Vergleich zu den Aktionen **Ausführung**, **Anhalten** und **Starten** nicht löscht (das Löschen der Instanzvariablen erfolgt bei der Aktion „Starten“). Beim Neustart eines Workflows sind Instanzvariablen weiterhin für die Verwendung mit beibehaltenen Werten verfügbar. Zum Löschen haben Sie folgende Möglichkeiten:
+   * Führen Sie die Aktionen **Anhalten** und **Starten** aus.
    * Fügen Sie am Ende der Workflow-Ausführung folgenden JavaScript-Code hinzu:
 
      ```

@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Benutzergruppen erstellen und verwalten
+title: Erstellen und Verwalten von Benutzergruppen
 description: Erfahren Sie, wie Sie Benutzergruppen Zugriff gewähren.
 badge: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Access Management, Permissions
@@ -8,17 +8,17 @@ role: User, Admin
 level: Beginner
 exl-id: d5833d3d-e8ef-4f2b-8084-4ba825c79525
 source-git-commit: 8aceafa362b80f6e34edfd91a71551a58501a3d0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '580'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# Benutzergruppen erstellen und verwalten {#operator-groups}
+# Erstellen und Verwalten von Benutzergruppen {#operator-groups}
 
 >[!NOTE]
 >
->Diese Verfahren gelten nur für Benutzer, die mit nativer Authentifizierung eine Verbindung zu Campaign herstellen. Informationen zur Adobe IMS-Authentifizierung finden Sie unter [diese Dokumentation](https://helpx.adobe.com/de/enterprise/using/user-groups.html).
+>Diese Verfahren gelten nur für Benutzende, die mit nativer Authentifizierung eine Verbindung zu Campaign herstellen. Informationen zur Adobe IMS-Authentifizierung finden Sie in [dieser Dokumentation](https://helpx.adobe.com/de/enterprise/using/user-groups.html).
 
 Benutzergruppen werden über den Verzeichnisknoten **[!UICONTROL Administration > Zugriffe > Benutzergruppen]** erstellt.
 
