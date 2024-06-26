@@ -4,26 +4,26 @@ title: Aufspaltung
 description: Erfahren Sie mehr über die Workflow-Aktivität "Aufspaltung".
 feature: Workflows, Targeting Activity
 exl-id: 4204350a-c2d2-4033-9bdf-87b49d8211b9
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: ht
-source-wordcount: '2144'
+source-git-commit: 13eb777e96602ddd3463f721c6b2a3e6b67cb329
+workflow-type: tm+mt
+source-wordcount: '2169'
 ht-degree: 100%
 
 ---
 
 # Aufspaltung{#split}
 
-
-
 Über die **Aufspaltung** lässt sich eine Population in verschiedene Teilmengen splitten. Die Zielgruppe wird aus allen eingehenden Ergebnissen erstellt, dies bedeutet, dass die vorgeschalteten Aktivitäten beendet sein müssen, bevor die Aufspaltung ausgeführt werden kann.
 
 Diese Aktivität löst keine Vereinigung der eingehenden Populationen aus. Wenn mehrere eingehende Transitionen in einer Split-Aktivität landen, wird empfohlen, eine **[!UICONTROL Vereinigung]** vorzuschalten.
 
-Ein Beispiel der verwendeten Aufspaltungs-Aktivität finden Sie unter [Teilmengen mithilfe der Aufspaltungs-Aktivität erstellen](targeting-data.md#creating-subsets-using-the-split-activity).
+>[!NOTE]
+>
+>Aufspaltungsvorgänge können nicht für Tabellen mit unterschiedlichen Quellen durchgeführt werden. Zu diesem Zweck muss vor der Aktivität **Aufspaltung** eine Aktivität vom Typ **Anreicherung** hinzugefügt werden.
 
-Ein Beispiel für die Verwendung der Aufspaltungs-Aktivität zur Segmentierung der Zielgruppe in unterschiedliche Populationen mithilfe von Filterbedingungen finden Sie in [diesem Abschnitt](cross-channel-delivery-workflow.md).
-
-Ein Beispiel für die Verwendung einer Instanzvariablen in einer Aufspaltungs-Aktivität finden Sie in [diesem Abschnitt](javascript-scripts-and-templates.md).
+* Ein Beispiel der verwendeten Aufspaltungs-Aktivität finden Sie unter [Teilmengen mithilfe der Aufspaltungs-Aktivität erstellen](targeting-data.md#creating-subsets-using-the-split-activity).
+* Ein Beispiel für die Verwendung der Aufspaltungs-Aktivität zur Segmentierung der Zielgruppe in unterschiedliche Populationen mithilfe von Filterbedingungen finden Sie in [diesem Abschnitt](cross-channel-delivery-workflow.md).
+* Ein Beispiel für die Verwendung einer Instanzvariablen in einer Aufspaltungs-Aktivität finden Sie in [diesem Abschnitt](javascript-scripts-and-templates.md).
 
 Konfigurieren Sie die Aktivität, indem Sie im Tab **[!UICONTROL Teilmengen]** jeweils einen Titel und die Auswahlkriterien der Teilmengen angeben. Geben Sie im Tab **[!UICONTROL Allgemein]** die Zielgruppendimension an.
 
@@ -44,7 +44,7 @@ Gehen Sie wie folgt vor:
 
 1. Sie können die Anzahl an Einträgen festlegen, die maximal aus der Zielgruppe extrahiert werden sollen, um die Teilmenge zu erstellen. Markieren Sie hierfür die Option **[!UICONTROL Ausgewählte Einträge einschränken]** und klicken Sie auf den Link **[!UICONTROL Bearbeiten...]**.
 
-   Mit einem Assistenten können Sie den Auswahlmodus für Datensätze dieser Teilmenge auswählen. Die Schritte finden Sie unter [Anzahl an Datensätzen in Teilmengen begrenzen](#limiting-the-number-of-subset-records).
+   Mit einem Assistenten können Sie den Auswahlmodus für Einträge dieser Teilmenge auswählen. Die Schritte finden Sie unter [Anzahl an Datensätzen in Teilmengen begrenzen](#limiting-the-number-of-subset-records).
 
    ![](assets/s_user_segmentation_partage4.png)
 

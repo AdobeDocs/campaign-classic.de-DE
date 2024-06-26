@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie technische Campaign-Benutzerinnen bzw. -Benut
 feature: Technote
 role: Admin
 exl-id: 1a409daf-57be-43c9-a3d9-b8ab54c88068
-source-git-commit: 89255032afb61801d6e38d2b1acfcfc2e7fdb620
+source-git-commit: af811b2df325efcaee38a967252b6952e67680d1
 workflow-type: tm+mt
-source-wordcount: '1755'
-ht-degree: 91%
+source-wordcount: '1779'
+ht-degree: 90%
 
 ---
 
@@ -159,6 +159,12 @@ Um die Verbindung zu testen, führen Sie die Schritte aus, die im [Handbuch zu d
 Sie müssen jetzt alle API-Integrationen aktualisieren, die Aufrufe an Adobe Campaign tätigen, um das neu erstellte technische Konto zu verwenden.
 
 Weitere Informationen zu den Schritten zur API-Integration finden Sie in den folgenden Code-Beispielen.
+
+Bei Verwendung der Adobe Identity Management System (IMS)-Authentifizierung zum Generieren einer WSDL-Datei sollten Sie die Autorisierung hinzufügen: Bearer &lt;ims_technical_token_token> im Postman-Aufruf:
+
+```
+curl --location --request POST 'https://<instance_url>/nl/jsp/schemawsdl.jsp?schema=nms:rtEvent' \--header 'Authorization: Bearer <Technical account access token>'
+```
 
 >[!BEGINTABS]
 

@@ -4,23 +4,24 @@ title: Technote – Aktivieren von Microsoft Edge Chromium in Ihrer Campaign-Umg
 description: Campaign – Edge Chromium
 feature: Technote, Upgrade
 exl-id: 22f4cbaf-ca37-47b9-b7dd-1ee73d5b348d
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: ht
-source-wordcount: '242'
-ht-degree: 100%
+source-git-commit: 8734e6ef26a7342042a5242d54854b7d3a5e6244
+workflow-type: tm+mt
+source-wordcount: '263'
+ht-degree: 92%
 
 ---
 
 # Wie Sie Microsoft Edge Chromium in Ihrer Umgebung aktivieren {#edge-conf}
-
-
-
 
 ## Was hat sich geändert?
 
 Nach dem Auslaufen von Microsoft Internet Explorer 11 verwendet die HTML-Render-Engine für Dashboards in der Client-Konsole nun Edge Chromium, beginnend mit Campaign Classic v7.3.
 
 Zusätzlich zur Installation der Microsoft Edge Webview 2-Laufzeit, die jetzt [für jede Client-Konsolen-Installation erforderlich ist](../../installation/using/installing-the-client-console.md#webview), muss Microsoft Edge Chromium in Ihren Instanzen aktiviert sein.
+
+>[!NOTE]
+>
+>Nach der Aktivierung von Microsoft Edge Chromium wird die `Ctrl+F` (Windows) oder `Command+F` (Mac) verwenden, um das Suchdialogfeld des Browsers zu öffnen, funktioniert nicht mehr.
 
 ## Sind Sie betroffen?
 
