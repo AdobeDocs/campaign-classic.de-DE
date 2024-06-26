@@ -9,7 +9,7 @@ exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 33d06c00ca9c7cd0ff077341df2b5b52ddf747a4
 workflow-type: tm+mt
 source-wordcount: '1636'
-ht-degree: 94%
+ht-degree: 99%
 
 ---
 
@@ -44,8 +44,8 @@ Kunden wird empfohlen, die Nutzung der Funktionen in ihrer aktuellen Bereitstell
    <td><strong>Details</strong></td>
   </tr>
   <tr>
- <td>Veraltetes Campaign-SDK (Neolane)</td>
- <td><p>Das Campaign-SDK (Neolane) für mobile Anwendungen wird jetzt nicht mehr unterstützt. Verwenden Sie stattdessen das Adobe Experience Platform Mobile SDK , indem Sie die Adobe Campaign-Erweiterung in der Datenerfassungs-Benutzeroberfläche konfigurieren. Mit dem Adobe Experience Platform Mobile SDK können Sie die Experience Cloud-Lösungen und -Dienste von Adobe in Ihren mobilen Apps nutzen. Die SDK-Konfiguration wird über die Datenerfassungs-Benutzeroberfläche verwaltet, um eine flexible Konfiguration und erweiterbare, regelbasierte Integrationen zu ermöglichen. Erfahren Sie, wie Sie den Mobile-App-Kanal in konfigurieren <a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/push/push-settings">Dokumentation zu Campaign v8</a>.</p>
+ <td>Campaign-SDK-Vorgängerversion (Neolane)</td>
+ <td><p>Das Campaign-SDK (Neolane) für mobile Anwendungen wird jetzt nicht mehr unterstützt. Verwenden Sie stattdessen das Adobe Experience Platform Mobile SDK, indem Sie die Adobe Campaign-Erweiterung in der Datenerfassungs-Benutzeroberfläche konfigurieren. Mit dem Adobe Experience Platform Mobile SDK können Sie die Experience Cloud-Lösungen und -Dienste von Adobe in Ihren mobilen Apps nutzen. Die SDK-Konfiguration wird über die Datenerfassungs-Benutzeroberfläche verwaltet, um eine flexible Konfiguration und erweiterbare, regelbasierte Integrationen zu ermöglichen. In der <a href="https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/push/push-settings">Dokumentation zu Campaign v8</a> erfahren Sie, wie Sie den Mobile App-Kanal konfigurieren.</p>
 <p>Geplantes Datum für die Entfernung: Sommer 2025 </p>
 </td>
 </tr>
@@ -88,7 +88,7 @@ In diesem Abschnitt werden Funktionen und Leistungsmerkmale aufgelistet, die aus
  </tr>
   <tr>
   <td>OAuth-Authentifizierung (OAuth und JWT)<br></td>
-  <td><p> Die Authentifizierung der Trigger-Integration, die ursprünglich auf der OAuth-Authentifizierung basierte und für den Zugriff auf die Pipeline eingerichtet wurde, wurde geändert und in Adobe I/O verschoben. Dieser Authentifizierungsmodus wurde mit Campaign-Version 20.3 eingestellt.<p>
+  <td><p> Die Authentifizierung für die Triggers-Integration, die ursprünglich auf dem OAuth-Authentifizierungs-Setup für den Zugriff auf die Pipeline basierte, wurde nun geändert und zu Adobe I/O verschoben. Dieser Authentifizierungsmodus wurde mit der Campaign-Version 20.3 eingestellt.<p>
   <p>Wenn Sie die Triggers-Integration verwenden, erfahren Sie <a href="../../integrations/using/about-triggers.md#implement">auf dieser Seite</a>, wie Sie Ihre Implementierung anpassen können.</p> 
   <p>Weitere Informationen zur Einstellung der OAuth-Authentifizierung finden Sie auf dieser <a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md">Seite</a>.</p> 
   <!--p><em>Target removal date: October 20, 2021. Hosted environments benefit from an extension until May 25, 2022. </em></p-->
