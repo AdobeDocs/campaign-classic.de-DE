@@ -8,16 +8,14 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: fe69efda-a052-4f67-9c13-665f011d0a2b
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 6803b6628313db9108a191fd143dac68ee799149
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '738'
 ht-degree: 9%
 
 ---
 
 # Performance- und Durchsatzprobleme{#performance-and-throughput-issues}
-
-
 
 Zunächst sollten Sie überprüfen, ob der neueste Build installiert ist. Dadurch wird sichergestellt, dass Sie über die neuesten Funktionen und Fehlerkorrekturen verfügen.
 
@@ -54,6 +52,11 @@ Im Folgenden finden Sie eine Liste von Artikeln zu Best Practices für die Anwen
 
 * MTA- und MTAChild-Prozesse und -Speicher: die **mta** -Modul verteilt Nachrichten an seine **mtachild** untergeordnete Module. Jeder **mtachild** erstellt Nachrichten, bevor eine Autorisierung vom Statistikserver angefordert wird, und sendet sie. Weitere Informationen finden Sie auf dieser [Seite.](../../installation/using/email-deliverability.md)
 * TLS-Konfiguration: Die globale Aktivierung von TLS wird nicht empfohlen, da dadurch der Durchsatz reduziert werden kann. Stattdessen sollten die vom Zustellbarkeitsteam verwalteten TLS-Einstellungen pro Domäne entsprechend den Anforderungen angepasst werden. Weitere Informationen finden Sie auf dieser [Seite.](../../installation/using/email-deliverability.md#mx-configuration)
+
+  >[!NOTE]
+  >
+  >Die Interaktion des Zustellbarkeitsteams basiert auf einem Vertrag. Kunden sollten sich an ihren Adobe-Support-Mitarbeiter wenden, um Informationen zur Zustellbarkeit zu erhalten.
+
 * DKIM: Um das Sicherheitsniveau des DKIM zu gewährleisten, empfiehlt sich die Verschlüsselungsgröße 1024b. Niedrigere DKIM-Schlüssel werden von den meisten Zugangsanbietern nicht als gültig betrachtet. Mehr dazu erfahren Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=de#authentication).
 
 ## Probleme mit der Zustellbarkeit {#deliverability-issues}
@@ -62,10 +65,15 @@ Im Folgenden finden Sie eine Liste mit Best Practices und Artikeln zur Zustellba
 
 * IP-Reputation: Wenn die IP-Reputation nicht gut genug ist, wirkt sich dies auf die Leistung aus. Die **Zustellbarkeits-Monitoring** bietet verschiedene Tools, um die Zustellbarkeitsleistung Ihrer Plattform zu verfolgen. Mehr dazu erfahren Sie auf [dieser Seite](../../delivery/using/monitoring-deliverability.md).
 * IP-Warmup: Die IP-Aufwärmung wird vom Zustellbarkeitsteam durchgeführt. Hierzu gehört eine schrittweise Erhöhung der Anzahl der E-Mails durch neue IP-Adressen über einen Zeitraum von einigen Wochen.
+
+  >[!NOTE]
+  >
+  >Die Interaktion des Zustellbarkeitsteams basiert auf einem Vertrag. Kunden sollten sich an ihren Adobe-Support-Mitarbeiter wenden, um Informationen zur Zustellbarkeit zu erhalten.
+
 * IP-Affinitäts-Setup: Eine falsche IP-Affinitätseinstellung kann die E-Mails ganz stoppen (falscher Operator-/Affinitätsname in der Konfiguration) oder den Durchsatz reduzieren (geringe Anzahl von IPs in der Affinität). Mehr dazu erfahren Sie auf [dieser Seite](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use).
 * E-Mail-Größe: Die E-Mail-Größe spielt eine wichtige Rolle beim Durchsatz. Die empfohlene maximale E-Mail-Größe beträgt 60 KB. Siehe hierzu [page](https://helpx.adobe.com/legal/product-descriptions/campaign.html). Im [Versanddurchsatz](../../reporting/using/global-reports.md#delivery-throughput) -Bericht die Anzahl der Bytes überprüfen, die nach Stunde übertragen wurden.
 * Große Anzahl ungültiger Empfänger: Bei einer großen Anzahl ungültiger Empfänger kann dies den Durchsatz beeinträchtigen. Der MTA versucht weiterhin, E-Mails an ungültige Empfänger zu senden. Bitte stellen Sie sicher, dass Ihre Datenbank gut gepflegt ist.
-* Personalisierungsbetrag: Wenn ein Versand in &quot;Gestaltete Personalisierung&quot; verbleibt, überprüfen Sie das in Gestaltungsbausteinen verwendete JavaScript.
+* Personalisierungsbetrag: Wenn ein Versand in &quot;Personalization in Bearbeitung&quot;bleibt, überprüfen Sie die JavaScript, die in Gestaltungsbausteinen verwendet wird.
 
 >[!NOTE]
 >

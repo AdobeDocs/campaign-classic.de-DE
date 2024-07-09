@@ -6,10 +6,10 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: SMS
 role: Developer, Data Engineer
 exl-id: fded088a-11a2-4b87-a368-7b197334aca4
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: ht
-source-wordcount: '8445'
-ht-degree: 100%
+source-git-commit: 6803b6628313db9108a191fd143dac68ee799149
+workflow-type: tm+mt
+source-wordcount: '8466'
+ht-degree: 99%
 
 ---
 
@@ -382,6 +382,10 @@ Wenn Sie die Anzahl der Verbindungen genau steuern müssen, z. B. aufgrund von P
 #### Name der SMSC-Implementierung {#smsc-implementation-name}
 
 Legt den Namen der SMSC-Implementierung fest. Sollte auf den Namen Ihres Providers eingestellt werden. Wenden Sie sich an den Administrator oder das Zustellbarkeitsteam, um zu erfahren, was in diesem Feld hinzugefügt werden muss. Die Rolle dieses Felds wird im Abschnitt [Umgang mit SR-Fehlern](sms-protocol.md#sr-error-management) beschrieben.
+
+>[!NOTE]
+>
+>Die Interaktion des Zustellbarkeitsteams basiert auf einem Vertrag. Kunden sollten sich an ihren Adobe-Support-Mitarbeiter wenden, um Informationen zur Zustellbarkeit zu erhalten.
 
 #### Server {#server}
 

@@ -6,10 +6,10 @@ feature: Technote, Upgrade
 role: User
 level: Beginner
 exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: ht
-source-wordcount: '2204'
-ht-degree: 100%
+source-git-commit: 6803b6628313db9108a191fd143dac68ee799149
+workflow-type: tm+mt
+source-wordcount: '2225'
+ht-degree: 95%
 
 ---
 
@@ -37,7 +37,7 @@ Die globalen Auswirkungen auf die Datenbank und Infrastruktur sind nachstehend a
 
 * **Besteht das Risiko von Datenverlust?**
 
-  Die Datenbank wird aus dem alten Rechenzentrum entfernt und in der Public Cloud (AWS) wiederhergestellt. Beim Neustart im neuen Rechenzentrum wird die Anwendung genau in dem Zustand fortgesetzt, in dem sie sich vor der Migration befand. Die Benutzer werden keinen Unterschied bemerken, außer dass sich einige geplante Aufgaben verzögern.
+  Die Datenbank wird aus dem alten Rechenzentrum entfernt und in der Public Cloud (AWS) wiederhergestellt. Beim Neustart im neuen Rechenzentrum wird die Anwendung genau in dem Zustand fortgesetzt, in dem sie sich vor der Migration befand. Die Benutzenden werden keinen Unterschied bemerken, außer dass sich einige geplante Aufgaben verzögern.
 
 * **Gibt es Unterschiede in der Größe des Pakets zwischen dem alten Rechenzentrum und der Public Cloud?**
 
@@ -79,6 +79,10 @@ Die globalen Auswirkungen auf IPs, Blockierungsliste, Subdomains und URLs sind u
 
   Bestehende Subdomains werden vom alten Rechenzentrum in die Public Cloud (AWS) verschoben. Dieser Prozess wird im Rahmen des Migrationsprozesses vom Zustellbarkeitsteam von Adobe gehandhabt.
 
+  >[!NOTE]
+  >
+  >Die Interaktion des Zustellbarkeitsteams basiert auf einem Vertrag. Kunden sollten sich an ihren Adobe-Support-Mitarbeiter wenden, um Informationen zur Zustellbarkeit zu erhalten.
+
   Adobe führt den Kunden durch die erforderlichen Tests, um sicherzustellen, dass die Konfiguration nach der Migration auf den neuen Public Cloud-Servern (AWS) erfolgreich durchgeführt wurde.
 
 * **Entstehen durch die Migration neue URLs für Tracking, Ressourcen und Web-Anwendungen?**
@@ -91,7 +95,7 @@ Die globalen Auswirkungen auf IPs, Blockierungsliste, Subdomains und URLs sind u
 
 * **Was ist der Plan für IP Warming?**
 
-  Zunächst wird die Zustellbarkeitsstatus der Plattform durch das Zustellbarkeits-Team von Adobe geprüft und ein Plan für den Wechsel zu den neuen IPs empfohlen. 
+  Zunächst bewertet die Adobe-Zustellbarkeit den Zustellbarkeitsstatus der Plattform und empfiehlt einen Plan für den Wechsel zu den neuen IPs
 
   Nach der Migration ist kein Warm-up erforderlich. Sollte jedoch in Ausnahmefällen ein Warm-up nötig sein, nimmt die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign#support) Kontakt zu den jeweiligen Kunden auf.
 
@@ -145,7 +149,7 @@ Globale Auswirkungen auf die Konfiguration, die Konnektivität mit anderen Syste
 
 * **Was ist mit Kunden, die keine Organisations-ID für die IMS-Integration haben?**
 
-  Kunden, die noch nicht in das IMS integriert sind, erhalten eine Organisations-ID, die mit ihrer Instanz verknüpft ist.
+  Kunden, die nicht über IMS verfügen, erhalten eine: Eine Organisations-ID wird an ihre Instanz angehängt.
 
 * **Sind Multi-Branding-Konfigurationen von der Migration betroffen?**
 
@@ -223,7 +227,7 @@ Die globalen Auswirkungen während der Migration werden unten aufgeführt.
 
 * **Sollten Vorkehrungen getroffen werden, um die Marketing-Aktivitäten während der Migration einzustellen?**
 
-  Adobe empfiehlt, die Ausführung von Sendungen und Workflows zu verlangsamen und im Idealfall anzuhalten, bevor die Anwendung im alten Rechenzentrum heruntergefahren wird. Auf diese Weise wird der Neustart auf dem Cloud-Server (AWS) vereinfacht, da die Prozesse ausreichend Zeit hatten, ordnungsgemäß zu pausieren und den aktuellen Ausführungsstatus zu speichern.
+  Adobe empfiehlt, die Ausführung von Sendungen und Workflows zu verlangsamen und im Idealfall anzuhalten, bevor die Anwendung im alten Rechenzentrum heruntergefahren wird. Dadurch wird der Neustart auf Cloud Server (AWS) vereinfacht, da die Prozesse ausreichend Zeit hatten, um &quot;ordentlich&quot;anzuhalten und den Ausführungsstatus zu speichern.
 
 * **Sind Ausfallzeiten des Adobe Campaign-Service zu erwarten?**
 
@@ -241,7 +245,7 @@ Die globalen Auswirkungen während der Migration werden unten aufgeführt.
 
 * **Wie hoch ist die geschätzte Ausfallzeit für die Migration einer Instanz?**
 
-  Die Ausfallzeit hängt zur Gänze von der Größe der Datenbank und des SFTP-Dateispeichers des Kunden ab. Bitte wenden Sie sich an Ihre Kundenunterstützung, um eine ungefähre Dauer zu erfahren.
+  Die Ausfallzeit hängt vollständig von der Größe der Kundendatenbank und der SFTP-Dateispeichergröße ab. Bitte wenden Sie sich an Ihre Kundenunterstützung, um eine ungefähre Dauer zu erfahren.
 
 * **Was ist mit Nachrichten, die vom alten Server gesendet werden? Kann zu jedem Zeitpunkt auf Links zugegriffen werden?**
 
