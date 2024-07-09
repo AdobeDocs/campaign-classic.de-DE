@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: d585a5d4-ea33-43c8-aa37-4d892025374a
-source-git-commit: b02089bd205de58c6af86fc8de3d5b3294ec9975
+source-git-commit: e40331266f34e2d6aa7b7720948d0cf26d4c6009
 workflow-type: tm+mt
-source-wordcount: '1071'
-ht-degree: 92%
+source-wordcount: '1077'
+ht-degree: 90%
 
 ---
 
@@ -43,11 +43,11 @@ Um solche Probleme zu vermeiden, empfiehlt Adobe, die unten stehenden Best Pract
 
 >[!NOTE]
 >
->Sie können Ihren SFTP-Serverspeicher mit der Campaign Classic überwachen. [Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html?lang=de){target="_blank"}.
+>* Sie können Ihren SFTP-Serverspeicher mit der Campaign Classic überwachen. [Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html?lang=de){target="_blank"}.
 >
->Das Control Panel steht allen Admins zur Verfügung. Die Schritte, um Benutzenden Administratorzugriff zu gewähren, finden Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=de#discover-control-panel){target="_blank"}.
+>* Das Control Panel steht allen Admins zur Verfügung. Die Schritte, um Benutzenden Administratorzugriff zu gewähren, finden Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=de#discover-control-panel){target="_blank"}.
 >
->Beachten Sie, dass Ihre Instanz mit der [aktuellen GA-Version](../../rn/using/rn-overview.md) aktualisiert sein muss. Erfahren Sie in [diesem Abschnitt](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version){target="_blank"}, wie Sie Ihre Version überprüfen.
+>* Beachten Sie, dass Ihre Instanz mit der [aktuellen GA-Version](../../rn/using/rn-overview.md) aktualisiert sein muss. Erfahren Sie in [diesem Abschnitt](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version){target="_blank"}, wie Sie Ihre Version überprüfen.
 
 * Die Größe des Servers variiert je nach Ihrer Lizenz. Achten Sie in jedem Fall darauf, dass die Datengröße möglichst gering ist und bewahren Sie Daten nur so lange auf, wie dies erforderlich ist (15 Tage ist das obere Zeitlimit).
 
@@ -72,13 +72,13 @@ Im folgenden Abschnitt finden Sie die Informationen, die Sie dem Adobe-Supportte
 
 1. Überprüfen Sie, ob Ihre Instanz ausgeführt wird. Öffnen Sie dazu Ihren Browser und führen Sie einen **[!UICONTROL GET]**-Aufruf am Endpunkt **[!UICONTROL /r/test]** der Instanz durch:
 
-   ```
+   ```xml
    https://instanceUrl/r/test
    ```
 
    Wenn die Instanz ausgeführt wird, erhalten Sie in etwa diese Antwort:
 
-   ```
+   ```xml
    <redir status='OK' date='YYYY-MM-DD HH:MM:SS' build='XXXX' instance='instance-name'
    sourceIP='AAA.BB.CCC.DD' host='instanceUrl' localHost='instance-name'/>
    ```
@@ -87,7 +87,7 @@ Im folgenden Abschnitt finden Sie die Informationen, die Sie dem Adobe-Supportte
 
 1. Überprüfen Sie, ob der ausgehende Port 22 dort geöffnet ist, wo Sie versuchen, die SFTP-Verbindung aufzubauen. Verwenden Sie dazu den folgenden Befehl:
 
-   ```
+   ```xml
    bash-3.2$ nc -vz <SFTP_URL> 22
    # Replace the SFTP_URL with actual SFTP instance URL
    # If the port 22 is opened you will see output similar to the below one
@@ -109,7 +109,7 @@ In diesem Abschnitt finden Sie Informationen zu den Prüfungen und Aktionen, die
 
 Das Workflow-Journal zeigt die folgenden Protokolle an:
 
-```
+```xml
 16/05/2016 12:49:03    fileTransfer    Upload error in cURL
 16/05/2016 12:49:03    fileTransfer    Couldn't resolve host name
 16/05/2016 12:49:03    fileTransfer    Couldn't resolve host name
@@ -144,8 +144,8 @@ Dieser Fehler gibt an, dass der Domain-Name des FTP-Servers nicht ordnungsgemä�
 
    Überprüfen Sie andernfalls:
 
-   * Das Kennwort enthält kein „@“. Die Verbindung ist fehlgeschlagen, wenn das Kennwort „@“ enthält.
+   * Das Kennwort enthält nicht die `@` Zeichen. Die Verbindung schlägt bei einer `@` im Kennwort.
    * Es gibt keine Firewall-Probleme, die die Kommunikation zwischen dem Adobe Campaign-Anwendungs-Server und dem SFTP-Server behindern können.
    * Führen Sie die Befehle „tracert“ und „telnet“ vom Campaign-Server zum SFTP-Server aus, um zu prüfen, ob es Verbindungsprobleme gibt.
    * Es gibt keine Probleme mit dem Kommunikationsprotokoll.
-   * Der Port ist offen.
+   * Der Port ist geöffnet.
