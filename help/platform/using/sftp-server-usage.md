@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: d585a5d4-ea33-43c8-aa37-4d892025374a
 source-git-commit: e40331266f34e2d6aa7b7720948d0cf26d4c6009
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1077'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Wenn Dateien und Daten für ETL-Zwecke verwaltet werden, werden diese Dateien au
 
 * Verwenden Sie eine schlüsselbasierte Authentifizierung anstelle einer passwortbasierten Authentifizierung, um das Ablaufen von Passwörtern zu vermeiden (Passwörter haben eine Gültigkeitsdauer von 90 Tagen). Außerdem ermöglicht die schlüsselbasierte Authentifizierung die Erstellung mehrerer Schlüssel, wenn beispielsweise mehrere Entitäten verwaltet werden. Im Gegensatz dazu erfordert die passwortbasierte Authentifizierung, dass das Passwort mit allen verwalteten Entitäten geteilt wird.
 
-  Das unterstützte Schlüsselformat ist SSH-2 RSA 2048. Das Tool zum Generieren von SSH-Schlüsseln für Windows ist PuTTYgen und ssh-keygen für Linux. Sie können öffentliche SSH-Schlüssel über das Campaign Control Panel hochladen. [Weitere Informationen](https://experienceleague.adobe.com/en/docs/control-panel/using/sftp-management/key-management){target="_blank"}
+  Das unterstützte Schlüsselformat ist SSH-2 RSA 2048. Zum Generieren von SSH-Schlüsseln wird für Windows PuTTYgen und für Linux ssh-keygen verwendet. Sie können öffentliche SSH-Schlüssel über das Campaign Control Panel hochladen. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/control-panel/using/sftp-management/key-management){target="_blank"}
 
 * Verwenden Sie Batch-Prozesse bei SFTP-Uploads und in Workflows.
 
@@ -31,9 +31,9 @@ Wenn Dateien und Daten für ETL-Zwecke verwaltet werden, werden diese Dateien au
 
 * Standardmäßig sind alle von Ihnen erstellten Ordner im Lese-/Schreibmodus ausschließlich für Ihre Kennung verfügbar. Wenn Sie Ordner erstellen, auf die Campaign Zugriff haben soll, konfigurieren Sie sie mit Lese-/Schreibrechten für die gesamte Gruppe. Andernfalls ist es für Workflows unmöglich, Dateien zu erstellen oder zu löschen, da sie aus Sicherheitsgründen innerhalb derselben Gruppe unter einer anderen Kennung ausgeführt werden.
 
-* Die öffentlichen IPs, mit denen Sie die SFTP-Verbindung aufbauen, müssen in der Campaign-Instanz auf der Zulassungsliste stehen. Die öffentlichen IPs können über das Control Panel hinzugefügt werden. [Weitere Informationen](https://experienceleague.adobe.com/en/docs/control-panel/using/sftp-management/ip-range-allow-listing){target="_blank"}
+* Die öffentlichen IPs, mit denen Sie die SFTP-Verbindung aufbauen, müssen in der Campaign-Instanz auf der Zulassungsliste stehen. Die öffentlichen IPs können über das Control Panel hinzugefügt werden. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/control-panel/using/sftp-management/ip-range-allow-listing){target="_blank"}
 
-## Best Practices zur Nutzung von SFTP-Speicher {#sftp-server-best-practices}
+## Best Practices für die Nutzung des SFTP-Speichers {#sftp-server-best-practices}
 
 SFTP-Server sind als vorübergehende Datenspeicher konzipiert, auf denen Sie die Aufbewahrung und Löschung von Dateien selbst kontrollieren können.
 
@@ -43,7 +43,7 @@ Um solche Probleme zu vermeiden, empfiehlt Adobe, die unten stehenden Best Pract
 
 >[!NOTE]
 >
->* Sie können Ihren SFTP-Serverspeicher mit der Campaign Classic überwachen. [Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html?lang=de){target="_blank"}.
+>* Sie können den SFTP-Server-Speicher mit dem [Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html?lang=de){target="_blank"} von Campaign Classic überwachen.
 >
 >* Das Control Panel steht allen Admins zur Verfügung. Die Schritte, um Benutzenden Administratorzugriff zu gewähren, finden Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=de#discover-control-panel){target="_blank"}.
 >
@@ -68,7 +68,7 @@ Außerdem ist bei der Angabe eines Pfades zu einem externen SFTP-Server in Campa
 
 ## Verbindungsprobleme mit einem Adobe-gehosteten SFTP-Server {#sftp-server-troubleshooting}
 
-Im folgenden Abschnitt finden Sie die Informationen, die Sie dem Adobe-Supportteam bereitstellen können. [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"} bei Verbindungsproblemen mit von Adobe gehosteten SFTP-Servern.
+Im Folgenden finden Sie die Informationen, die Sie prüfen und dem Adobe-Supportteam über die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"} zur Verfügung stellen müssen, wenn ein Verbindungsproblem mit von Adobe gehosteten SFTP-Servern auftritt.
 
 1. Überprüfen Sie, ob Ihre Instanz ausgeführt wird. Öffnen Sie dazu Ihren Browser und führen Sie einen **[!UICONTROL GET]**-Aufruf am Endpunkt **[!UICONTROL /r/test]** der Instanz durch:
 
@@ -144,8 +144,8 @@ Dieser Fehler gibt an, dass der Domain-Name des FTP-Servers nicht ordnungsgemä�
 
    Überprüfen Sie andernfalls:
 
-   * Das Kennwort enthält nicht die `@` Zeichen. Die Verbindung schlägt bei einer `@` im Kennwort.
+   * Das Passwort enthält kein `@`-Zeichen. Die Verbindung schlägt fehl, wenn das Passwort ein `@`-Zeichen enthält.
    * Es gibt keine Firewall-Probleme, die die Kommunikation zwischen dem Adobe Campaign-Anwendungs-Server und dem SFTP-Server behindern können.
    * Führen Sie die Befehle „tracert“ und „telnet“ vom Campaign-Server zum SFTP-Server aus, um zu prüfen, ob es Verbindungsprobleme gibt.
    * Es gibt keine Probleme mit dem Kommunikationsprotokoll.
-   * Der Port ist geöffnet.
+   * Der Port ist offen.

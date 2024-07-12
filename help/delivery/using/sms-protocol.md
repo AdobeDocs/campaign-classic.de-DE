@@ -7,9 +7,9 @@ feature: SMS
 role: Developer, Data Engineer
 exl-id: fded088a-11a2-4b87-a368-7b197334aca4
 source-git-commit: 6803b6628313db9108a191fd143dac68ee799149
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '8466'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -385,7 +385,7 @@ Legt den Namen der SMSC-Implementierung fest. Sollte auf den Namen Ihres Provide
 
 >[!NOTE]
 >
->Die Interaktion des Zustellbarkeitsteams basiert auf einem Vertrag. Kunden sollten sich an ihren Adobe-Support-Mitarbeiter wenden, um Informationen zur Zustellbarkeit zu erhalten.
+>Die Beauftragung des Zustellbarkeits-Teams ist vertraglich geregelt. Kundinnen und Kunden sollten sich an den Adobe-Support wenden, um diesbezügliche Informationen zu erhalten.
 
 #### Server {#server}
 
