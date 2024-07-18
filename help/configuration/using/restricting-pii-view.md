@@ -5,10 +5,10 @@ description: Erfahren Sie, wie Sie die Anzeige von personenbezogenen Daten einsc
 feature: PI
 role: Data Engineer, Developer
 exl-id: 0f32d62d-a10a-4feb-99fe-4679b98957d4
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: e198defd60f4b12681025b04b12a1498df015047
 workflow-type: tm+mt
-source-wordcount: '401'
-ht-degree: 66%
+source-wordcount: '449'
+ht-degree: 59%
 
 ---
 
@@ -53,9 +53,13 @@ Die Verwendung dieses Attributs in Campaign hat folgende Folgen:
 * Beim Speichern der Zielpopulation in einer Gruppe (Liste) sind die Eigenschaften der gespeicherten Felder identisch mit der Datenquelle.
 * Die Daten sind standardmäßig nicht für JS-Code verfügbar.
 
+>[!IMPORTANT]
+>
+>Die Verwendung des Attributs **accessibleIf** bei kritischen Parametern (z. B. bei zusammengesetzten Schlüsseln) kann zu Fehlern für Benutzer führen, die die Daten aufgrund ausgeblendeter Daten nicht lesen dürfen. Dies kann zu Abfragefehlern oder unerwartetem Verhalten führen. Stellen Sie sicher, dass wichtige Parameter verfügbar sind, um Unterbrechungen zu verhindern.
+
 ## Empfehlungen {#recommendations}
 
-Bei jedem Versand werden die E-Mail-Adressen in die **[!UICONTROL broadLog]** und **[!UICONTROL forecastLog]** -Tabellen: Daher müssen auch diese Felder geschützt werden.
+In jedem Versand werden E-Mail-Adressen in die Tabellen **[!UICONTROL broadLog]** und **[!UICONTROL forecastLog]** kopiert. Daher müssen auch diese Felder geschützt werden.
 
 Nachfolgend finden Sie ein Beispiel für die Erweiterung der Protokolltabelle, um Folgendes zu implementieren:
 
