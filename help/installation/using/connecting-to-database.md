@@ -10,7 +10,7 @@ exl-id: 240d7e11-da3a-4d64-8986-1f1c8ebcea3c
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
 source-wordcount: '688'
-ht-degree: 65%
+ht-degree: 87%
 
 ---
 
@@ -41,7 +41,7 @@ Sie können auf eine gemeinsam genutzte externe Datenbank über Adobe Campaign z
    ![](assets/wf-external-account-create.png)
 
 1. Deselektieren Sie nötigenfalls die Option **[!UICONTROL Aktiviert]**, um den Zugriff auf diese Datenbank zu deaktivieren, ohne ihre Konfiguration zu löschen.
-1. Damit Adobe Campaign auf diese Datenbank zugreifen kann, müssen Sie die SQL-Funktionen bereitstellen. Klicken Sie auf **[!UICONTROL Parameter]** und dann **[!UICONTROL Bereitstellen von Funktionen]** Schaltfläche.
+1. Um Adobe Campaign Zugriff auf diese Datenbank zu erlauben, müssen Sie die SQL-Funktionen bereitstellen. Klicken Sie dazu auf den Tab **[!UICONTROL Parameter]** und danach auf die Schaltfläche **[!UICONTROL Funktionen freigeben]**.
 
    ![](assets/wf-external-account-functions.png)
 
@@ -49,11 +49,11 @@ Auf der Registerkarte **[!UICONTROL Parameter]** können Sie spezifische Arbeits
 
 ## Herstellen einer temporären Verbindung {#creating-a-temporary-connection}
 
-Sie können eine Verbindung zu einer externen Datenbank direkt über Workflow-Aktivitäten definieren. In diesem Fall befindet er sich in einer lokalen externen Datenbank, die für die Verwendung in einem aktuellen Workflow reserviert ist. Er wird nicht in den externen Konten gespeichert. Diese Art der pünktlichen Verbindung kann für verschiedene Aktivitäten des Workflows erstellt werden, insbesondere für die **[!UICONTROL Abfrage]**, die **[!UICONTROL Laden (RDBMS)]**, die **[!UICONTROL Anreicherung]** oder **[!UICONTROL Aufspaltung]** -Aktivität.
+Sie können eine Verbindung zu einer externen Datenbank direkt über Workflow-Aktivitäten definieren. In diesem Fall befindet er sich in einer lokalen externen Datenbank, die für die Verwendung in einem aktuellen Workflow reserviert ist. Er wird nicht in den externen Konten gespeichert. Diese Art der pünktlichen Verbindung kann für verschiedene Aktivitäten des Workflows erstellt werden, insbesondere für die Aktivität **[!UICONTROL Abfrage]**, das Laden (RDBMS)]**, die Aktivität**[!UICONTROL  Anreicherung ]**oder die Aktivität**[!UICONTROL  Aufspaltung ]**.**[!UICONTROL 
 
 >[!CAUTION]
 >
->Diese Art der Konfiguration wird nicht empfohlen, kann jedoch regelmäßig zur Datenerfassung verwendet werden. Sie sollten jedoch ein externes Konto erstellen, wie im Abschnitt [Geteilte Verbindung erstellen](#creating-a-shared-connection) Abschnitt.
+>Diese Art der Konfiguration wird nicht empfohlen, kann aber regelmäßig verwendet werden, um Daten abzurufen. Dennoch sollten Sie ein externes Konto gemäß der Beschreibung in Abschnitt [Erstellen einer geteilten Verbindung](#creating-a-shared-connection) erstellen.
 
 Gehen Sie in der Abfrageaktivität zur Erstellung einer periodischen Verbindung zu einer externen Datenbank beispielsweise folgendermaßen vor:
 
@@ -76,12 +76,12 @@ Gehen Sie in der Abfrageaktivität zur Erstellung einer periodischen Verbindung 
 
    ![](assets/wf_add_data_local_external_data_select_table.png)
 
-1. Klicken Sie auf **[!UICONTROL Hinzufügen]** -Schaltfläche, um ein oder mehrere Abstimmfelder zwischen den Daten der externen Datenbank und den Daten der Adobe Campaign-Datenbank zu definieren. Die **[!UICONTROL Ausdruck bearbeiten]** Symbole der **[!UICONTROL Remote-Feld]** und **[!UICONTROL Lokales Feld]** bietet Zugriff auf die Liste der Felder der einzelnen Tabellen.
+1. Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**, um ein oder mehrere Abstimmungsfelder zwischen den Daten der externen Datenbank und den Daten in der Adobe Campaign-Datenbank zu definieren. Über die Symbole **[!UICONTROL Ausdruck bearbeiten]** der Option **[!UICONTROL Remote-Feld]** und **[!UICONTROL Lokales Feld]** erhalten Sie Zugriff auf die Liste mit den Feldern einer jeden Tabelle.
 
    ![](assets/wf_add_data_local_external_data_join.png)
 
 1. Spezifizieren Sie nötigenfalls eine Filterbedingung und den Datensortierungsmodus.
-1. Wählen Sie die zusätzlichen Daten aus, die in der externen Datenbank erfasst werden sollen. Doppelklicken Sie dazu auf die Felder, die Sie hinzufügen möchten, um sie im **[!UICONTROL Ausgabespalten]**.
+1. Wählen Sie zusätzlich in der externen Datenbank zu sammelnden Daten aus. Doppelklicken Sie dazu auf die Felder, die Sie hinzufügen möchten, damit sie in den **[!UICONTROL Ausgabespalten]** angezeigt werden.
 
    ![](assets/wf_add_data_local_external_data_select.png)
 
@@ -95,7 +95,7 @@ Gehen Sie in der Abfrageaktivität zur Erstellung einer periodischen Verbindung 
 
 Sie können durch das Konfigurieren eines externen FDA-Kontos eine sichere Verbindung für den Zugriff auf eine externe Datenbank herstellen.
 
-Fügen Sie dazu &quot;**:ssl**&quot; nach der Serveradresse und Adresse des verwendeten Ports. Beispiel: **192 168 0,52:4501:ssl**.
+Schreiben Sie zu diesem Zweck &quot;**:ssl**&quot; hinter die Serveradresse und die Adresse des verwendeten Ports. Beispiel: **192.168.0.52:4501:ssl**.
 
 Die Daten werden dadurch unter Verwendung des sicheren SSL-Protokolls gesendet.
 

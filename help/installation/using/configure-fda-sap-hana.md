@@ -18,10 +18,10 @@ ht-degree: 63%
 
 
 
-Verwenden von Campaign [Federated Data Access](../../installation/using/about-fda.md) (FDA), um in externen Datenbanken gespeicherte Informationen zu verarbeiten. Gehen Sie wie folgt vor, um den Zugriff auf SAP HANA zu konfigurieren.
+Verwenden Sie die Option Campaign [Federated Data Access](../../installation/using/about-fda.md) (FDA) , um in externen Datenbanken gespeicherte Informationen zu verarbeiten. Gehen Sie wie folgt vor, um den Zugriff auf SAP HANA zu konfigurieren.
 
-1. Konfigurieren [SAP HANA-Datenbank](#sap-config)
-1. SAP HANA konfigurieren [externes Konto](#sap-external) in Campaign
+1. Konfigurieren der [SAP HANA-Datenbank](#sap-config)
+1. Konfigurieren des externen SAP HANA [Kontos](#sap-external) in Campaign
 
 ## SAP HANA-Treiber {#sap-config}
 
@@ -30,7 +30,7 @@ Die Verbindung mit einer externen SAP-HANA-Datenbank über die FDA-Option erford
 1. Installieren Sie entsprechend dem verwendeten Betriebssystem die nötigen ODBC-Treiber für SAP HANA:
 
    * **hdb_client_linux.tgz für Linux: Dekomprimieren Sie die Datei, führen Sie den hdbinst-Befehl aus und folgen Sie der Anleitung zur Installation der Treiber.**
-   * **hdb_client_windows.zip** für Windows. Dekomprimieren Sie die Datei und starten Sie die ausführbare Datei: **hdbinst.exe**. Folgen Sie den Anweisungen des Assistenten, um die Installation der Treiber abzuschließen.
+   * **hdb_client_windows.zip** für Windows. Entpacken Sie die Datei und starten Sie die ausführbare Datei: **hdbinst.exe**. Folgen Sie den Anweisungen des Assistenten, um die Installation der Treiber abzuschließen.
 
 1. Konfigurieren sie den ODBC-Treiber. Die Konfiguration kann in den Standarddateien ausgeführt werden: /etc/odbc.ini für allgemeine Parameter und /etc/odbcinst.ini zur Deklarierung der Treiber.
 
@@ -65,7 +65,7 @@ Die Verbindung mit einer externen SAP-HANA-Datenbank über die FDA-Option erford
 
 Mit dem externen SAP HANA-Konto können Sie Ihre Campaign-Instanz mit Ihrer externen SAP HANA-Datenbank verbinden.
 
-1. Von Campaign **[!UICONTROL Explorer]** klicken **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Plattform]** &#39;>&#39; **[!UICONTROL Externe Konten]**.
+1. Klicken Sie in Campaign **[!UICONTROL Explorer]** auf **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Plattform]** &#39;>&#39; **[!UICONTROL Externe Konten]**.
 
 1. Klicken Sie auf **[!UICONTROL Neu]** und wählen Sie **[!UICONTROL Externe Datenbank]** als **[!UICONTROL Typ]** aus.
 

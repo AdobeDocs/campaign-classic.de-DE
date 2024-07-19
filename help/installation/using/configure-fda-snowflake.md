@@ -10,16 +10,16 @@ exl-id: bdb5e422-ecfe-42eb-bd15-39fe5ec0ff1d
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
 source-wordcount: '518'
-ht-degree: 32%
+ht-degree: 34%
 
 ---
 
 # Zugriff auf Snowflake konfigurieren {#configure-access-to-snowflake}
 
-Verwenden von Campaign **Federated Data Access** (FDA), um in einer externen Datenbank gespeicherte Informationen zu verarbeiten. Gehen Sie wie folgt vor, um den Zugriff auf [!DNL Snowflake].
+Verwenden Sie die Option Campaign **Federated Data Access** (FDA) , um in einer externen Datenbank gespeicherte Informationen zu verarbeiten. Gehen Sie wie folgt vor, um den Zugriff auf [!DNL Snowflake] zu konfigurieren.
 
-1. Konfigurieren [!DNL Snowflake] on [Linux](#snowflake-linux).
-1. Konfigurieren Sie die [!DNL Snowflake] [externes Konto](#snowflake-external) in Campaign
+1. Konfigurieren Sie [!DNL Snowflake] für [Linux](#snowflake-linux).
+1. Konfigurieren des externen [!DNL Snowflake] [Kontos](#snowflake-external) in Campaign
 
 >[!NOTE]
 >
@@ -29,7 +29,7 @@ Verwenden von Campaign **Federated Data Access** (FDA), um in einer externen Dat
 
 ## Snowflake unter Linux {#snowflake-linux}
 
-So konfigurieren Sie [!DNL Snowflake] Gehen Sie unter Linux wie folgt vor:
+Gehen Sie wie folgt vor, um [!DNL Snowflake] unter Linux zu konfigurieren:
 
 1. Überprüfen Sie vor der ODBC-Installation, ob die folgenden Pakete auf Ihrer Linux-Distribution installiert sind:
 
@@ -49,7 +49,7 @@ So konfigurieren Sie [!DNL Snowflake] Gehen Sie unter Linux wie folgt vor:
      apt-get install -y grep sed tar wget perl curl
      ```
 
-1. Bevor Sie das Skript ausführen, können Sie mit der `--help` Option:
+1. Bevor Sie das Skript ausführen, können Sie mit der Option `--help` auf weitere Informationen zugreifen:
 
    ```
    cd /usr/local/neolane/nl6/bin/fda-setup-scripts/
@@ -70,35 +70,35 @@ So konfigurieren Sie [!DNL Snowflake] Gehen Sie unter Linux wie folgt vor:
    systemctl start nlserver.service
    ```
 
-1. In Campaign können Sie dann Ihre [!DNL Snowflake] externes Konto. Weitere Informationen zur Konfiguration Ihres externen Kontos finden Sie unter [diesem Abschnitt](#snowflake-external).
+1. In Campaign können Sie dann Ihr externes [!DNL Snowflake] -Konto konfigurieren. Weiterführende Informationen zur Konfiguration Ihres externen Kontos finden Sie in [diesem Abschnitt](#snowflake-external).
 
 ## Externes Snowflake-Konto {#snowflake-external}
 
-Sie müssen eine [!DNL Snowflake] externes Konto, um Ihre Campaign-Instanz mit Ihrer [!DNL Snowflake] externe Datenbank.
+Sie müssen ein externes [!DNL Snowflake] -Konto erstellen, um Ihre Campaign-Instanz mit Ihrer externen [!DNL Snowflake] -Datenbank zu verbinden.
 
-1. Von Campaign **[!UICONTROL Explorer]** klicken **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Plattform]** &#39;>&#39; **[!UICONTROL Externe Konten]**.
+1. Klicken Sie in Campaign **[!UICONTROL Explorer]** auf **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Plattform]** &#39;>&#39; **[!UICONTROL Externe Konten]**.
 
 1. Wählen Sie **[!UICONTROL Neu]** aus.
 
 1. Wählen Sie **[!UICONTROL Externe Datenbank]** als **[!UICONTROL Typ]** Ihres externen Kontos aus.
 
-1. under **[!UICONTROL Konfiguration]** auswählen [!DNL Snowflake] aus dem **[!UICONTROL Typ]** angezeigt.
+1. Wählen Sie unter **[!UICONTROL Konfiguration]** [!DNL Snowflake] aus der Dropdown-Liste **[!UICONTROL Typ]** aus.
 
    ![](assets/snowflake_5.png)
 
-1. Fügen Sie Ihre **[!UICONTROL Server]** URL und **[!UICONTROL Datenbank]**.
+1. Fügen Sie Ihre **[!UICONTROL Server]**-URL und Ihre **[!UICONTROL Datenbank]** hinzu.
 
-1. Konfigurieren Sie die **[!UICONTROL Snowflake]** Externe Kontoauthentifizierung:
+1. Konfigurieren Sie die Authentifizierung des externen **[!UICONTROL Snowflake]** -Kontos:
 
    * Für die Konto-/Kennwortauthentifizierung müssen Sie Folgendes angeben:
 
       * **[!UICONTROL Konto]**: Name des Benutzers
 
-      * **[!UICONTROL Passwort]**: Kennwort für Benutzerkonten.
+      * **[!UICONTROL Kennwort]**: Kennwort für Benutzerkonten.
 
      ![](assets/snowflake.png)
 
-   * Klicken Sie für die Keypair-Authentifizierung auf die **[!UICONTROL Keypair Auth]** Registerkarte zur Verwendung Ihrer **[!UICONTROL Privater Schlüssel]** , um sich zu authentifizieren und Ihre **[!UICONTROL Privater Schlüssel]**.
+   * Klicken Sie für die Keypair-Authentifizierung auf die Registerkarte **[!UICONTROL Keypair Auth]** , um Ihren **[!UICONTROL privaten Schlüssel]** zum Authentifizieren und Kopieren Ihres **[!UICONTROL privaten Schlüssels]** zu verwenden.
 
      ![](assets/snowflake_4.png)
 
@@ -110,7 +110,7 @@ Sie müssen eine [!DNL Snowflake] externes Konto, um Ihre Campaign-Instanz mit I
 
    ![](assets/snowflake_2.png)
 
-1. Klicks **[!UICONTROL Speichern]** wenn Ihre Konfiguration abgeschlossen ist.
+1. Klicken Sie auf **[!UICONTROL Speichern]** , wenn Ihre Konfiguration abgeschlossen ist.
 
 Der Connector unterstützt die folgenden Optionen:
 
@@ -120,7 +120,7 @@ Der Connector unterstützt die folgenden Optionen:
 | warehouse | Name des zu verwendenden Standard-Warehouse. Dadurch wird die Standardeinstellung des Benutzers außer Kraft gesetzt. |
 | TimeZoneName | Standardmäßig leer, d. h. die Systemzeitzone des Campaign Classic-App-Servers wird verwendet. Mit dieser Option können Sie den Sitzungsparameter TIMEZONE erzwingen. <br>Weiterführende Informationen hierzu finden Sie auf dieser [Seite](https://docs.snowflake.net/manuals/sql-reference/parameters.html#timezone). |
 | WeekStart | Sitzungsparameter WEEK_START. Standardmäßig auf 0 gesetzt <br>Weiterführende Informationen hierzu finden Sie auf dieser [Seite](https://docs.snowflake.com/de/sql-reference/parameters.html#week-start). |
-| UseCachedResult | Sitzungsparameter USE_CACHED_RESULTS. Standardmäßig ist TRUE festgelegt. Diese Option kann verwendet werden, um zwischengespeicherte Ergebnisse im Snowflake zu deaktivieren. <br>Weiterführende Informationen hierzu finden Sie auf dieser [Seite](https://docs.snowflake.net/manuals/user-guide/querying-persisted-results.html). |
+| UseCachedResult | Sitzungsparameter USE_CACHED_RESULTS. Standardmäßig ist TRUE festgelegt. Diese Option kann verwendet werden, um zwischengespeicherte Ergebnisse von Snowflake zu deaktivieren. <br>Weiterführende Informationen hierzu finden Sie auf dieser [Seite](https://docs.snowflake.net/manuals/user-guide/querying-persisted-results.html). |
 | bulkThreads | Anzahl der Threads, die für Snowflake-Bulk-Loader verwendet werden sollen, mehr Threads bedeuten eine bessere Leistung bei größeren Bulk-Ladungen. Standardmäßig auf 1 gesetzt Die Zahl kann je nach Anzahl der Maschinenthread angepasst werden. |
-| chunkSize | Bestimmt die Dateigröße des Stapels für Ladegeräte. Standardmäßig auf 128 MB eingestellt. Kann für eine optimale Leistung geändert werden, wenn BulkThreads verwendet werden. Gleichzeitigere aktive Threads bedeuten eine bessere Leistung. <br>Weitere Informationen hierzu finden Sie unter [Snowflake-Dokumentation](https://docs.snowflake.net/manuals/sql-reference/sql/put.html). |
+| chunkSize | Bestimmt die Dateigröße des Stapels für Ladegeräte. Standardmäßig auf 128 MB eingestellt. Kann für eine optimale Leistung geändert werden, wenn BulkThreads verwendet werden. Gleichzeitigere aktive Threads bedeuten eine bessere Leistung. <br>Weitere Informationen hierzu finden Sie in der [Snowflake-Dokumentation](https://docs.snowflake.net/manuals/sql-reference/sql/put.html). |
 | StageName | Name des vorab bereitgestellten internen Schritts. Sie wird bei Bulk Load verwendet, anstatt eine neue temporäre Phase zu erstellen. |

@@ -11,7 +11,7 @@ exl-id: 8a0426c1-9e8d-4053-bc2b-6a550e2eed2f
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
 source-wordcount: '282'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
@@ -23,13 +23,13 @@ Der Datenbankserver kann unabhängig vom vom vom Anwendungsserver oder den Serve
 
 Das Betriebssystem des Datenbankservers ist nicht wichtig, solange die Verbindung mit den verschiedenen Komponenten von Adobe Campaign verfügbar ist.
 
-Überprüfen Sie auch die [Datenbankzugriffsebenen](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers) Abschnitt.
+Überprüfen Sie auch den Abschnitt [Datenbankzugriffsebenen](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers) .
 
 ## Microsoft SQL Server {#microsoft-sql-server}
 
 Der native Client muss auf den Adobe Campaign-Anwendungsservern installiert sein.
 
-Sie können den nativen Client auf dem Server über das Konfigurationsfenster des ODBC-Treibers unter **SQL Server Native Client 11.0**.
+Sie können über das Konfigurationsfenster des ODBC-Treibers unter **SQL Server Native Client 11.0** nach dem nativen Client auf dem Server suchen.
 
 Die folgende Zugriffs-DLL muss vorhanden sein: **sqlncli11.dll**.
 
@@ -45,11 +45,11 @@ Zugriffs-DLLs finden Sie auf der Microsoft-Website.
 >
 >Spaltennamen mit Multibytezeichen werden nicht unterstützt.
 
-Die **NLS_NCHAR_CHARACTERSET** und **NLS_CHARACTERSET** -Parameter ordnungsgemäß konfiguriert werden müssen, damit die Datenbank in Unicode oder ANSI funktioniert.
+Die Parameter **NLS_NCHAR_CHARACTERSET** und **NLS_CHARACTERSET** müssen ordnungsgemäß konfiguriert sein, damit die Datenbank in Unicode oder ANSI funktioniert.
 
 Adobe Campaign verwendet die standardmäßige Oracle-Kodierung. Bei Verwendung einer anderen Kodierung kann es zu Problemen mit der Kompatibilität der Trigger kommen. Wenden Sie sich in diesem Fall an den technischen Support.
 
-Um mehr über Ihre Kodierung zu erfahren, verwenden Sie Folgendes **sqlplus** command:
+Verwenden Sie den folgenden Befehl **sqlplus** , um mehr über Ihre Kodierung zu erfahren:
 
 ```
 SELECT * FROM nls_database_parameters ;
@@ -68,7 +68,7 @@ SELECT * FROM nls_database_parameters ;
   NLS_CHARACTERSET WE8MSWIN1252
 ```
 
-So melden Sie sich bei **sqlplus** verwenden Sie das Oracle-Benutzerprofil:
+Um sich bei **sqlplus** anzumelden, verwenden Sie das Oracle-Benutzerprofil:
 
 ```
 su - oracle 
@@ -76,7 +76,7 @@ sqlplus
 [login] [password]
 ```
 
-Sie können auch [Oracle Client unter Linux](../../installation/using/installing-packages-with-linux.md#oracle-client-in-linux).
+Sie können auch auf den [Oracle-Client unter Linux](../../installation/using/installing-packages-with-linux.md#oracle-client-in-linux) verweisen.
 
 ## PostgresSQL {#postgressql}
 

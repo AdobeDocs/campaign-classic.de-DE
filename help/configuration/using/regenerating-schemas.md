@@ -17,10 +17,10 @@ ht-degree: 2%
 Wenn Sie ein Schema ändern und die Änderungen speichern, wird automatisch ein erweitertes Schema generiert. Es kann jedoch erforderlich sein, die Schemata manuell zu regenerieren, um Änderungen vorzunehmen. Gehen Sie dazu wie folgt vor:
 
 1. Wählen Sie die Schemas aus, die Sie neu generieren möchten.
-1. Rechtsklick und Auswahl **[!UICONTROL Aktionen > Ausgewählte Schemata regenerieren...]** .
-1. Klicks **[!UICONTROL OK]** , um den Prozess zu bestätigen und zu starten.
+1. Klicken Sie mit der rechten Maustaste und wählen Sie **[!UICONTROL Aktionen > Ausgewählte Schemas regenerieren...]** .
+1. Klicken Sie auf **[!UICONTROL OK]** , um den Prozess zu bestätigen und zu starten.
 
-Anschließend können Sie die Struktur des erstellten Schemas auf den Registerkarten Vorschau und Dokumentation überprüfen. Weitere Informationen hierzu finden Sie im Abschnitt [Grundsätze](../../configuration/using/data-schemas.md#principles) Abschnitt.
+Anschließend können Sie die Struktur des erstellten Schemas auf den Registerkarten Vorschau und Dokumentation überprüfen. Weitere Informationen hierzu finden Sie im Abschnitt [Prinzipien](../../configuration/using/data-schemas.md#principles) .
 
 >[!NOTE]
 >

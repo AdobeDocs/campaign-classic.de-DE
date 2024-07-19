@@ -14,7 +14,7 @@ ht-degree: 46%
 
 # Datenbank-Mapping{#database-mapping}
 
-Die SQL-Zuordnung des beschriebenen Beispielschemas [auf dieser Seite](schema-structure.md) generiert das folgende XML-Dokument:
+Die SQL-Zuordnung des Beispielschemas, das [auf dieser Seite](schema-structure.md) beschrieben ist, generiert das folgende XML-Dokument:
 
 ```sql
 <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">
@@ -35,7 +35,7 @@ Die SQL-Zuordnung des beschriebenen Beispielschemas [auf dieser Seite](schema-st
 </schema>
 ```
 
-Das Stammelement des Schemas wurde in **`<srcschema>`** nach **`<schema>`**.
+Das Stammelement des Schemas wurde in **`<srcschema>`** in **`<schema>`** geändert.
 
 Dieser andere Dokumenttyp wird automatisch aus dem Quellschema generiert und einfach als Schema bezeichnet.
 
@@ -43,7 +43,7 @@ Die SQL-Namen werden automatisch anhand des Elementnamens und des Elementtyps be
 
 Die SQL-Benennungsregeln lauten wie folgt:
 
-* **table**: Verkettung des Schema-Namespace und des Namens
+* **table**: Verkettung von Schema-Namespace und Name
 
   In diesem Beispiel wird der Tabellenname über das Hauptelement des Schemas im Attribut **sqltable** eingegeben:
 
@@ -51,7 +51,7 @@ Die SQL-Benennungsregeln lauten wie folgt:
   <element name="recipient" sqltable="CusRecipient">
   ```
 
-* **field**: Name des Elements, dem ein Präfix vorangestellt ist, das nach Typ definiert wurde: &quot;i&quot; für Integer, &quot;d&quot; für Dublette, &quot;s&quot; für Zeichenfolge, &quot;ts&quot; für Datumsangaben usw.
+* **field**: Name des Elements, dem ein Präfix vorangestellt ist, das nach Typ definiert wurde: &quot;i&quot;für Integer, &quot;d&quot;für Dublette, &quot;s&quot;für Zeichenfolge, &quot;ts&quot;für Datumsangaben usw.
 
   Der Feldname wird über das Attribut **sqlname** für die verschiedenen Eingaben von **`<attribute>`** und **`<element>`** eingegeben:
 
@@ -80,7 +80,7 @@ In Bezug auf SQL-Felder gelten folgende Einschränkungen:
 
 ## XML-Felder {#xml-fields}
 
-Standardmäßig sind alle  **`<attribute>`** und **`<element>`** -typisiertes Element einem SQL-Feld der Datenschematabelle zugeordnet. Sie können dieses Feld jedoch anstatt in SQL auch in XML referenzieren. Das bedeutet, dass die Daten in einem Memo-Feld (&quot;mData&quot;) der Tabelle gespeichert werden, in der Werte aller XML-Felder enthalten sind. Als Speicher dieser Daten fungiert ein XML-Dokument, das die Struktur des Schemas beibehält.
+Standardmäßig werden alle Elemente vom Typ **`<attribute>`** und **`<element>`** einem SQL-Feld der Datenschematabelle zugeordnet. Sie können dieses Feld jedoch anstatt in SQL auch in XML referenzieren. Das bedeutet, dass die Daten in einem Memo-Feld (&quot;mData&quot;) der Tabelle gespeichert werden, in der Werte aller XML-Felder enthalten sind. Als Speicher dieser Daten fungiert ein XML-Dokument, das die Struktur des Schemas beibehält.
 
 Um ein Feld in XML auszufüllen, müssen Sie dem betreffenden Element das Attribut **xml** mit dem Wert &quot;true&quot; hinzufügen.
 
@@ -119,7 +119,7 @@ Ein Index wird aus dem Hauptelement des Datenschemas deklariert.
 Indizes folgen den folgenden Regeln:
 
 * Ein Index kann auf ein oder mehrere Felder in der Tabelle verweisen
-* Ein Index kann in allen Feldern eindeutig sein (um Duplikate zu vermeiden), wenn die Variable **eindeutig** -Attribut den Wert &quot;true&quot;enthält
+* Ein Index kann in allen Feldern eindeutig sein (um Duplikate zu vermeiden), wenn das Attribut **unique** den Wert &quot;true&quot;enthält
 * Der SQL-Name des Index wird anhand des SQL-Namens der Tabelle und des Indexnamens bestimmt
 
 >[!NOTE]

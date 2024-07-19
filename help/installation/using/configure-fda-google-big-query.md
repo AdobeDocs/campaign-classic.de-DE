@@ -18,15 +18,15 @@ ht-degree: 7%
 
 
 
-Verwenden von Adobe Campaign Classic **Federated Data Access** (FDA), um in einer externen Datenbank gespeicherte Informationen zu verarbeiten. Gehen Sie wie folgt vor, um den Zugriff auf [!DNL Google BigQuery].
+Verwenden Sie die Option Adobe Campaign Classic **Federated Data Access** (FDA), um in einer externen Datenbank gespeicherte Informationen zu verarbeiten. Gehen Sie wie folgt vor, um den Zugriff auf [!DNL Google BigQuery] zu konfigurieren.
 
-1. Konfigurieren [!DNL Google BigQuery] on [Windows](#google-windows) oder [Linux](#google-linux)
-1. Konfigurieren Sie die [!DNL Google BigQuery] [externes Konto](#google-external) in Adobe Campaign Classic
-1. Einrichten [!DNL Google BigQuery] Bulk-Load des Connectors [Windows](#bulk-load-windows) oder [Linux](#bulk-load-linux)
+1. Konfigurieren Sie [!DNL Google BigQuery] für [Windows](#google-windows) oder [Linux](#google-linux)
+1. Konfigurieren des externen [!DNL Google BigQuery] [-Kontos](#google-external) in Adobe Campaign Classic
+1. Richten Sie [!DNL Google BigQuery] Massenladevorgänge des Connectors unter [Windows](#bulk-load-windows) oder [Linux](#bulk-load-linux) ein.
 
 >[!NOTE]
 >
-> [!DNL Google BigQuery] Connector ist für gehostete, hybride und On-Premise-Implementierungen verfügbar. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../installation/using/capability-matrix.md).
+> Der [!DNL Google BigQuery]-Connector ist für gehostete, hybride und On-Premise-Implementierungen verfügbar. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../installation/using/capability-matrix.md).
 
 ![](assets/snowflake_3.png)
 
@@ -34,13 +34,13 @@ Verwenden von Adobe Campaign Classic **Federated Data Access** (FDA), um in eine
 
 ### Treiber unter Windows eingerichtet {#driver-window}
 
-1. Laden Sie die [ODBC-Treiber für Windows](https://cloud.google.com/bigquery/docs/reference/odbc-jdbc-drivers).
+1. Laden Sie den ODBC-Treiber für Windows](https://cloud.google.com/bigquery/docs/reference/odbc-jdbc-drivers) herunter.[
 
 1. Konfigurieren Sie den ODBC-Treiber unter Windows. Weitere Informationen hierzu finden Sie auf [dieser Seite](https://storage.googleapis.com/simba-bq-release/jdbc/Simba%20JDBC%20Driver%20for%20Google%20BigQuery%20Install%20and%20Configuration%20Guide.pdf).
 
-1. Für [!DNL Google BigQuery] -Connector verwenden, erfordert Adobe Campaign Classic die folgenden Parameter für die Verbindung:
+1. Damit der [!DNL Google BigQuery] -Connector funktioniert, müssen für Adobe Campaign Classic die folgenden Parameter für die Verbindung verwendet werden:
 
-   * **[!UICONTROL Projekt]**: Erstellen oder verwenden Sie ein vorhandenes Projekt.
+   * **[!UICONTROL Projekt]**: Erstellen oder Verwenden eines vorhandenen Projekts.
 
      Weiterführende Informationen dazu finden Sie auf dieser [Seite](https://cloud.google.com/resource-manager/docs/creating-managing-projects).
 
@@ -48,15 +48,15 @@ Verwenden von Adobe Campaign Classic **Federated Data Access** (FDA), um in eine
 
      Weiterführende Informationen dazu finden Sie auf dieser [Seite](https://cloud.google.com/iam/docs/creating-managing-service-accounts).
 
-   * **[!UICONTROL Pfad der Schlüsseldatei]**: die **[!UICONTROL Dienstkonto]** erfordert **[!UICONTROL Schlüsseldatei]** für [!DNL Google BigQuery] Verbindung über ODBC.
+   * **[!UICONTROL Pfad der Schlüsseldatei]**: Für das **[!UICONTROL Dienstkonto]** ist eine **[!UICONTROL Schlüsseldatei]** für eine [!DNL Google BigQuery]-Verbindung über ODBC erforderlich.
 
      Weiterführende Informationen dazu finden Sie auf dieser [Seite](https://cloud.google.com/iam/docs/creating-managing-service-account-keys).
 
-   * **[!UICONTROL Datensatz]**: **[!UICONTROL Datensatz]** ist für eine ODBC-Verbindung optional. Da jede Abfrage den Datensatz bereitstellen muss, in dem sich die Tabelle befindet, muss eine **[!UICONTROL Datensatz]** ist für [!DNL Google BigQuery] FDA-Connector in Adobe Campaign Classic.
+   * **[!UICONTROL Datensatz]**: **[!UICONTROL Datensatz]** ist für eine ODBC-Verbindung optional. Da jede Abfrage den Datensatz bereitstellen muss, in dem sich die Tabelle befindet, ist die Angabe eines **[!UICONTROL Datensatzes]** für den [!DNL Google BigQuery] FDA-Connector in Adobe Campaign Classic obligatorisch.
 
      Weiterführende Informationen dazu finden Sie auf dieser [Seite](https://cloud.google.com/bigquery/docs/datasets).
 
-1. In Adobe Campaign Classic können Sie dann Ihre [!DNL Google BigQuery] externes Konto. Weitere Informationen zur Konfiguration Ihres externen Kontos finden Sie unter [diesem Abschnitt](#google-external).
+1. In Adobe Campaign Classic können Sie dann Ihr externes [!DNL Google BigQuery] -Konto konfigurieren. Weiterführende Informationen zur Konfiguration Ihres externen Kontos finden Sie in [diesem Abschnitt](#google-external).
 
 ### Massenladeeinrichtung unter Windows {#bulk-load-window}
 
@@ -64,17 +64,17 @@ Verwenden von Adobe Campaign Classic **Federated Data Access** (FDA), um in eine
 >
 >Damit das Google Cloud SDK funktioniert, muss Python installiert sein.
 >
->Wir empfehlen die Verwendung von Python3, siehe dies [page](https://www.python.org/downloads/).
+>Wir empfehlen die Verwendung von Python3, siehe diese [Seite](https://www.python.org/downloads/).
 
 Das Bulk Load-Dienstprogramm ermöglicht eine schnellere Übertragung, die über das Google Cloud SDK erreicht wird.
 
-1. Laden Sie das 64-Bit-Archiv für Windows (x86_64) von diesem herunter [page](https://cloud.google.com/sdk/docs/downloads-versioned-archives) und extrahieren Sie sie in das entsprechende Verzeichnis.
+1. Laden Sie das 64-Bit-Archiv für Windows (x86_64) von dieser [Seite](https://cloud.google.com/sdk/docs/downloads-versioned-archives) herunter und extrahieren Sie es in das entsprechende Verzeichnis.
 
-1. Führen Sie die `google-cloud-sdk\install.sh` Skript. Sie müssen die Einstellung der Pfadvariablen akzeptieren.
+1. Führen Sie das Skript `google-cloud-sdk\install.sh` aus. Sie müssen die Einstellung der Pfadvariablen akzeptieren.
 
 1. Überprüfen Sie nach der Installation, ob die Pfadvariable `...\google-cloud-sdk\bin` festgelegt ist. Wenn nicht, fügen Sie es manuell hinzu.
 
-1. Im  `..\google-cloud-sdk\bin\bq.cmd` -Datei, fügen Sie die `CLOUDSDK_PYTHON` lokale Variable, die zum Speicherort der Python-Installation umleitet.
+1. Fügen Sie in der Datei `..\google-cloud-sdk\bin\bq.cmd` die lokale Variable `CLOUDSDK_PYTHON` hinzu, die zum Speicherort der Python-Installation umgeleitet wird.
 
    Beispiel:
 
@@ -88,7 +88,7 @@ Das Bulk Load-Dienstprogramm ermöglicht eine schnellere Übertragung, die über
 
 Beachten Sie vor dem Einrichten des Treibers, dass Skript und Befehle vom Root-Benutzer ausgeführt werden müssen. Es wird außerdem empfohlen, während der Skripterstellung das Google DNS 8.8.8.8 zu verwenden.
 
-So konfigurieren Sie [!DNL Google BigQuery] Gehen Sie unter Linux wie folgt vor:
+Gehen Sie wie folgt vor, um [!DNL Google BigQuery] unter Linux zu konfigurieren:
 
 1. Überprüfen Sie vor der ODBC-Installation, ob die folgenden Pakete auf Ihrer Linux-Distribution installiert sind:
 
@@ -144,7 +144,7 @@ So konfigurieren Sie [!DNL Google BigQuery] Gehen Sie unter Linux wie folgt vor:
 >
 >Damit das Google Cloud SDK funktioniert, muss Python installiert sein.
 >
->Wir empfehlen die Verwendung von Python3, siehe dies [page](https://www.python.org/downloads/).
+>Wir empfehlen die Verwendung von Python3, siehe diese [Seite](https://www.python.org/downloads/).
 
 Das Bulk Load-Dienstprogramm ermöglicht eine schnellere Übertragung, die über das Google Cloud SDK erreicht wird.
 
@@ -175,9 +175,9 @@ Das Bulk Load-Dienstprogramm ermöglicht eine schnellere Übertragung, die über
 
 ## Externes Google BigQuery-Konto {#google-external}
 
-Sie müssen eine [!DNL Google BigQuery] Externes Konto zum Verbinden Ihrer Adobe Campaign Classic-Instanz mit Ihrer [!DNL Google BigQuery] externe Datenbank.
+Sie müssen ein externes [!DNL Google BigQuery] -Konto erstellen, um Ihre Adobe Campaign Classic-Instanz mit Ihrer externen [!DNL Google BigQuery]-Datenbank zu verbinden.
 
-1. Aus Adobe Campaign Classic **[!UICONTROL Explorer]** klicken **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Plattform]** &#39;>&#39; **[!UICONTROL Externe Konten]**.
+1. Klicken Sie in Adobe Campaign Classic **[!UICONTROL Explorer]** auf **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Plattform]** &#39;>&#39; **[!UICONTROL Externe Konten]**.
 
 1. Wählen Sie **[!UICONTROL Neu]** aus.
 
@@ -187,16 +187,16 @@ Sie müssen eine [!DNL Google BigQuery] Externes Konto zum Verbinden Ihrer Adobe
 
    * **[!UICONTROL Typ]**: [!DNL Google BigQuery]
 
-   * **[!UICONTROL Dienstkonto]**: E-Mail Ihrer **[!UICONTROL Dienstkonto]**. Weitere Informationen hierzu finden Sie unter [Dokumentation zu Google Cloud](https://cloud.google.com/iam/docs/creating-managing-service-accounts).
+   * **[!UICONTROL Dienstkonto]**: E-Mail Ihres **[!UICONTROL Dienstkontos]**. Weitere Informationen hierzu finden Sie in der [Dokumentation zur Google Cloud](https://cloud.google.com/iam/docs/creating-managing-service-accounts).
 
-   * **[!UICONTROL Projekt]**: Name Ihres **[!UICONTROL Projekt]**. Weitere Informationen hierzu finden Sie unter [Dokumentation zu Google Cloud](https://cloud.google.com/resource-manager/docs/creating-managing-projects).
+   * **[!UICONTROL Projekt]**: Name Ihres **[!UICONTROL Projekts]**. Weitere Informationen hierzu finden Sie in der [Dokumentation zur Google Cloud](https://cloud.google.com/resource-manager/docs/creating-managing-projects).
 
    * **[!UICONTROL Pfad der Schlüsseldatei]**:
-      * **[!UICONTROL Laden Sie die Schlüsseldatei auf den Server hoch]**: select **[!UICONTROL Hier klicken zum Hochladen]** , wenn Sie den Schlüssel über Adobe Campaign Classic hochladen möchten.
+      * **[!UICONTROL Laden Sie die Schlüsseldatei auf den Server hoch]**: Wählen Sie **[!UICONTROL Hier klicken, um den Schlüssel hochzuladen]** , wenn Sie den Schlüssel über Adobe Campaign Classic hochladen möchten.
 
       * **[!UICONTROL Geben Sie den Pfad der Schlüsseldatei manuell ein]**: Kopieren/fügen Sie Ihren absoluten Pfad in dieses Feld ein, wenn Sie einen bereits vorhandenen Schlüssel verwenden möchten.
 
-   * **[!UICONTROL Datensatz]**: Name Ihres **[!UICONTROL Datensatz]**. Weitere Informationen hierzu finden Sie unter [Dokumentation zu Google Cloud](https://cloud.google.com/bigquery/docs/datasets-intro).
+   * **[!UICONTROL Datensatz]**: Name Ihres **[!UICONTROL Datensatzes]**. Weitere Informationen hierzu finden Sie in der [Dokumentation zur Google Cloud](https://cloud.google.com/bigquery/docs/datasets-intro).
 
    ![](assets/google-big-query.png)
 
@@ -210,7 +210,7 @@ Der Connector unterstützt die folgenden Optionen:
 | ProxyUid | Benutzername für den authentifizierten Proxy |
 | ProxyPwd | ProxyUid-Kennwort |
 | bqpath | Beachten Sie, dass dies nur für Tools mit Massenladevorgang (Cloud SDK) gilt. </br> Um die Verwendung der PATH-Variablen zu vermeiden oder den Ordner google-cloud-sdk an einen anderen Speicherort zu verschieben, können Sie mit dieser Option den genauen Pfad zum Ordner &quot;cloud sdk bin&quot;auf dem Server angeben. |
-| GCloudConfigName | Beachten Sie, dass dies ab Version 7.3.4 und nur für Tools mit Massenladevorgang (Cloud SDK) gilt.</br> Das Google Cloud SDK verwendet Konfigurationen zum Laden von Daten in BigQuery-Tabellen. Die Konfiguration namens `accfda` speichert die Parameter zum Laden der Daten. Mit dieser Option können Benutzer jedoch einen anderen Namen für die Konfiguration angeben. |
-| GCloudDefaultConfigName | Beachten Sie, dass dies ab Version 7.3.4 und nur für Tools mit Massenladevorgang (Cloud SDK) gilt.</br> Die aktive Google Cloud SDK-Konfiguration kann nicht gelöscht werden, ohne dass das aktive Tag zuerst in eine neue Konfiguration übertragen wird. Diese temporäre Konfiguration ist erforderlich, um die Hauptkonfiguration für das Laden von Daten neu zu erstellen. Der Standardname für die temporäre Konfiguration lautet `default`, kann dies bei Bedarf geändert werden. |
-| GCloudRecreateConfig | Beachten Sie, dass dies ab Version 7.3.4 und nur für Tools mit Massenladevorgang (Cloud SDK) gilt.</br> Wenn festgelegt auf `false`, verhindert der Massenlademechanismus den Versuch, die Google Cloud SDK-Konfigurationen neu zu erstellen, zu löschen oder zu ändern. Stattdessen wird das Laden der Daten mit der vorhandenen Konfiguration auf dem Computer fortgesetzt. Diese Funktion ist nützlich, wenn andere Vorgänge von Google Cloud SDK-Konfigurationen abhängig sind. </br> Wenn der Benutzer diese Engine-Option ohne ordnungsgemäße Konfiguration aktiviert, gibt der Massenlademechanismus eine Warnmeldung aus: `No active configuration found. Please either create it manually or remove the GCloudRecreateConfig option`. Um weitere Fehler zu vermeiden, wird dann der standardmäßige ODBC-Array-Einfügemechanismus für Massen-Ladevorgänge verwendet. |
+| GCloudConfigName | Beachten Sie, dass dies ab Version 7.3.4 und nur für Tools mit Massenladevorgang (Cloud SDK) gilt.</br> Das Google Cloud-SDK verwendet Konfigurationen zum Laden von Daten in BigQuery-Tabellen. Die Konfiguration mit dem Namen `accfda` speichert die Parameter zum Laden der Daten. Mit dieser Option können Benutzer jedoch einen anderen Namen für die Konfiguration angeben. |
+| GCloudDefaultConfigName | Beachten Sie, dass dies ab Version 7.3.4 und nur für Tools mit Massenladevorgang (Cloud SDK) gilt.</br> Die aktive Google Cloud SDK-Konfiguration kann nicht gelöscht werden, ohne dass das aktive Tag zuerst in eine neue Konfiguration übertragen wird. Diese temporäre Konfiguration ist erforderlich, um die Hauptkonfiguration für das Laden von Daten neu zu erstellen. Der Standardname für die temporäre Konfiguration ist `default`. Dieser kann bei Bedarf geändert werden. |
+| GCloudRecreateConfig | Beachten Sie, dass dies ab Version 7.3.4 und nur für Tools mit Massenladevorgang (Cloud SDK) gilt.</br> Wenn der Wert auf `false` festgelegt ist, verhindert der Mechanismus zum Laden von Massengütern nicht den Versuch, die Google Cloud SDK-Konfigurationen neu zu erstellen, zu löschen oder zu ändern. Stattdessen wird das Laden der Daten mit der vorhandenen Konfiguration auf dem Computer fortgesetzt. Diese Funktion ist nützlich, wenn andere Vorgänge von Google Cloud SDK-Konfigurationen abhängig sind. </br> Wenn der Benutzer diese Engine-Option ohne ordnungsgemäße Konfiguration aktiviert, gibt der Massenlademechanismus eine Warnmeldung aus: `No active configuration found. Please either create it manually or remove the GCloudRecreateConfig option`. Um weitere Fehler zu vermeiden, wird dann der standardmäßige ODBC-Array-Einfügemechanismus für Massen-Ladevorgänge verwendet. |
 

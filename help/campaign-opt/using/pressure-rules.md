@@ -6,7 +6,7 @@ role: User, Data Engineer
 feature: Fatigue Management, Typology Rules, Campaigns
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3513'
 ht-degree: 100%
 
@@ -34,7 +34,7 @@ Die Schlichtungskriterien (Nachrichtengewichtung und/oder Schwelle der Nachricht
 
 Die Schlichtungsregel zur Bestimmung der geeigneten Nachrichten wird in der Analyseetappe angewandt. Die Nachricht wird für jede Empfängerin und jeden Empfänger und den betroffenen Zeitraum versandt, wenn folgende Formel wahr ist: **(Anzahl gesendeter Nachrichten) + (Anzahl der Nachrichten mit einer größeren Gewichtung) &lt; Schwelle**
 
-Im gegensätzlichen Fall erscheint in den Logs der Hinweis **[!UICONTROL Ausgeschlossen nach Schlichtung]**. Weitere Informationen hierzu finden Sie unter [Ausschlüsse nach Schlichtung](#exclusion-after-arbitration).
+Andernfalls ist die Empfängerin bzw. der Empfänger **[!UICONTROL Ausgeschlossen nach Schlichtung]**. Weitere Informationen hierzu finden Sie unter [Ausschlüsse nach Schlichtung](#exclusion-after-arbitration).
 
 ## Druckregel erstellen {#creating-a-pressure-rule}
 
@@ -46,7 +46,7 @@ Um eine Typologieregel vom Typ **[!UICONTROL Druck]** zu erstellen und zu konfig
 
    ![](assets/campaign_opt_create_a_rule_01.png)
 
-1. Wählen Sie im Tab **[!UICONTROL Allgemein]** der neuen Regel den Regeltyp **Druck** aus und geben Sie einen Namen und eine Beschreibung ein.
+1. Wählen Sie auf der Registerkarte **[!UICONTROL Allgemein]** der neuen Regel den Regeltyp **Druck** aus und geben Sie einen Namen sowie eine Beschreibung ein.
 
    ![](assets/campaign_opt_create_a_rule_02.png)
 
@@ -337,7 +337,7 @@ Konfigurieren Sie zuerst die Druckregel.
 Erstellen und konfigurieren Sie jetzt einen Workflow für jeden Versand, auf den die Druckregel angewendet werden soll.
 
 1. Kampagne erstellen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign).
-1. Fügen Sie im Tab **[!UICONTROL Zielgruppenbestimmungen und Workflows]** Ihrer Kampagne eine **Abfrage-** Aktivität zu Ihrem Workflow hinzu. Weiterführende Informationen zur Verwendung dieser Aktivität finden Sie in [diesem Abschnitt](../../workflow/using/query.md).
+1. Fügen Sie auf der Registerkarte **[!UICONTROL Zielgruppenbestimmungen und Workflows]** Ihrer Kampagne eine **Abfrage-** Aktivität zu Ihrem Workflow hinzu. Weiterführende Informationen zur Verwendung dieser Aktivität finden Sie in [diesem Abschnitt](../../workflow/using/query.md).
 1. Fügen Sie zum Workflow die Aktivität **[!UICONTROL E-Mail-Versand]** hinzu und öffnen Sie ihn. Weiterführende Informationen zur Verwendung dieser Aktivität finden Sie in [diesem Abschnitt](../../workflow/using/delivery.md).
 1. Gehen Sie zum Tab **[!UICONTROL Validierungen]** der **[!UICONTROL Versandeigenschaften]** und deaktivieren Sie alle Validierungen.
 

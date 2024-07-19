@@ -11,7 +11,7 @@ exl-id: 91662d6d-2177-4440-b31f-7b031bd953cb
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
 source-wordcount: '130'
-ht-degree: 16%
+ht-degree: 19%
 
 ---
 
@@ -19,15 +19,15 @@ ht-degree: 16%
 
 
 
-A **Stapelablaufverfolgung** stellt eine in einer **core** Datei eingeben. Diese Datei wird im Falle eines Maschinenfehlers generiert. Sie kann die Herkunft des Fehlers identifizieren.
+Ein **Stacktrace** steht für eine Spur, die in einer Datei vom Typ **core** enthalten ist. Diese Datei wird im Falle eines Maschinenfehlers generiert. Sie kann die Herkunft des Fehlers identifizieren.
 
 >[!NOTE]
 >
->* A **core** -Datei heißt **Core.`<num>`**.
+>* Eine **core** -Datei heißt **core.`<num>`**.
 >* **gdb - Der GNU-Debugger** muss auf dem Computer installiert sein.
 >
 
-Der technische Support von Adobe Campaign kann Sie dazu bitten **Stapelablaufverfolgung**. Geben Sie zum Abrufen die folgenden Befehle in Linux ein:
+Der technische Support von Adobe Campaign kann Sie nach diesem **Stacktrace** fragen. Geben Sie zum Abrufen die folgenden Befehle in Linux ein:
 
 ```
 su - neolane
@@ -56,7 +56,7 @@ gdb nlserver <coreFile>
 
 Der technische Support von Adobe Campaign kann Sie bitten, diesen Befehl mit einer bestimmten ausführbaren Datei auszuführen (die von uns bereitgestellt wird).
 
-Führen Sie in diesem Fall einfach den folgenden Befehl aus, indem Sie **nlserver** mit der ausführbaren Datei, die von Adobe Campaign bereitgestellt wird:
+Führen Sie in diesem Fall einfach den folgenden Befehl aus, indem Sie **nlserver** durch die von Adobe Campaign bereitgestellte ausführbare Datei ersetzen:
 
 ```
 gdb nlserver <coreFile>

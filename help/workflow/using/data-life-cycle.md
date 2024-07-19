@@ -5,7 +5,7 @@ description: Erfahren Sie mehr über den Lebenszyklus der Arbeitsdaten in Workfl
 feature: Workflows, Data Management
 exl-id: 366acc1e-d769-4053-9fa1-f47182627c07
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '531'
 ht-degree: 100%
 

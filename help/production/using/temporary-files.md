@@ -11,7 +11,7 @@ exl-id: e77800f5-c0ae-446d-8ff3-bc8a18c97dbd
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
 source-wordcount: '142'
-ht-degree: 9%
+ht-degree: 11%
 
 ---
 
@@ -21,11 +21,11 @@ ht-degree: 9%
 
 Fehlermeldungen wie die folgenden werden möglicherweise angezeigt (insbesondere in Versandlogs), wenn das System in die Produktion aufgenommen wird:
 
-*Die Datei &quot;/tmp/tmp0000.tmp&quot;kann nicht in /usr/local/neolane/nl6/bin/..//var/XXX/mta/86510470.xml umbenannt werden;(errno=18, Invalid cross-device link) (iRc=-52)*
+*Datei &quot;/tmp/tmp0000.tmp&quot;kann nicht in /usr/local/neolane/nl6/bin/..//var/XXX/mta/86510470.xml umbenannt werden;(errno=18, Invalid cross-device link) (iRc=-52)*
 
 Die Ursache lautet wie folgt:
 
-Adobe Campaign generiert temporäre Dateien unter **/tmp** und benennt sie dann um, um sie in **/usr/local/neolane/nl6/var**. Dieser Fehler tritt auf, wenn beide Ordner (**/tmp** und **/usr/local/neolane/nl6/var**, was in der Tat eine symbolische Verknüpfung zu **/var/nl6**) verschiedenen Geräten entsprechen. Die **df** -Befehl wird zur Überprüfung verwendet.
+Adobe Campaign generiert temporäre Dateien unter **/tmp** und benennt sie dann um, um sie in **/usr/local/neolane/nl6/var** zu verschieben. Dieser Fehler tritt auf, wenn beide Ordner (**/tmp** und **/usr/local/neolane/nl6/var**, also eine symbolische Verknüpfung zu **/var/nl6**) verschiedenen Geräten entsprechen. Der Befehl **df** wird zur Überprüfung verwendet.
 
 Um dieses Problem zu beheben, müssen die temporären Dateien auf demselben Gerät wie das Ziel generiert werden.
 

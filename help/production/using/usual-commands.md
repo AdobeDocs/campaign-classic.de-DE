@@ -29,17 +29,17 @@ Der Parameter **`<command>`** entspricht dem -Modul.
 
 >[!NOTE]
 >
->* Auf jeden Fall können Sie die **-noconsole** -Argument zum Löschen von Kommentaren, die nach dem Start der Module angezeigt werden.
->* Umgekehrt können Sie das -Argument hinzufügen **-verbose** , um weitere Informationen anzuzeigen.
+>* Auf jeden Fall können Sie das Argument **-noconsole** hinzufügen, um die nach dem Start der Module angezeigten Kommentare zu löschen.
+>* Umgekehrt können Sie das Argument **-verbose** hinzufügen, um weitere Informationen anzuzeigen.
 >
 
 ## Überwachen von Befehlen {#monitoring-commands-}
 
 >[!NOTE]
 >
->Um alle Module aufzulisten, müssen Sie die **nlserver pdump** Befehl.
+>Um alle Module aufzulisten, müssen Sie den Befehl **nlserver pdump** verwenden.
 
-Sie können den Parameter hinzufügen **-who** , um die laufenden Verbindungen (Datenbank und Anwendung) aufzulisten.
+Sie können den Parameter **-who** hinzufügen, um die ausgeführten Verbindungen (Datenbank und Anwendung) aufzulisten.
 
 ```sql
 nlserver pdump -who
@@ -61,9 +61,9 @@ Datasource Server Provider Login
 default xxxxx myserver myprovider test400
 ```
 
-Ein weiterer nützlicher Befehl ist **nlserver-Monitor**. Sie listet die XML-Überwachungsdatei auf (abgerufen im Adobe Campaign-Client oder über die **monitor.jsp** Webseite).
+Ein weiterer nützlicher Befehl ist **nlserver monitor**. Es listet die XML-Überwachungsdatei auf (abgerufen im Adobe Campaign-Client oder über die Webseite **monitor.jsp** ).
 
-Sie können den Parameter hinzufügen **-missing** , um die fehlenden Module aufzulisten (Fehler in Modulen, heruntergefahren von Modulen usw.)
+Sie können den Parameter **-missing** hinzufügen, um die fehlenden Module aufzulisten (Fehler in Modulen, heruntergefahren von Modulen usw.)
 
 ```sql
 nlserver monitor -missing
@@ -89,7 +89,7 @@ nlserver stop <module>@<INSTANCE>
 
 >[!NOTE]
 >
->**`<instance>`** dem in den Konfigurationsdateien angegebenen Namen der Instanz entspricht oder **default** für Mono-Instanzmodule.
+>**`<instance>`** entspricht dem Namen der Instanz, der in den Konfigurationsdateien eingegeben wurde, oder **default** für Mono-Instanzmodule.
 
 ## Dienste beenden {#shut-down-services}
 
@@ -137,9 +137,9 @@ Um Adobe Campaign neu zu starten, können Sie einen der folgenden Befehle verwen
 
 ## Konfigurationsbefehl {#the-config-command}
 
-Die **config** -Befehl können Sie die Serverkonfiguration verwalten, einschließlich der Neukonfiguration der Datenbankverbindung.
+Mit dem Befehl **config** können Sie die Serverkonfiguration verwalten, einschließlich der Neukonfiguration der Datenbankverbindung.
 
-Verwenden Sie die **config** des **nlserver** ausführbare Datei mit **-setdblogin** -Parameter.
+Verwenden Sie den Befehl **config** der ausführbaren Datei **nlserver** mit dem Parameter **-setdblogin** .
 
 ```sql
 nlserver config -setdblogin:<[dbms:]account[:database][/password]@server>
@@ -151,15 +151,15 @@ nlserver config -setdblogin:PostgreSQL:<accountName>:test6@dbserver
 
 Geben Sie das Passwort ein.
 
-So ändern Sie die **intern** password: **nlserver config -internalpassword**
+So ändern Sie das Kennwort **internal**: **nlserver config -internalpassword**
 
 >[!IMPORTANT]
 >
->So melden Sie sich mit dem **intern** Kennung, müssen Sie zuvor ein Kennwort definiert haben. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#internal-identifier).
+>Um sich mit der Kennung **Internal** anzumelden, müssen Sie zuvor ein Kennwort definiert haben. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
 >[!NOTE]
 >
->* Anstatt die Konfigurationsdateien manuell zu ändern, können Sie im Allgemeinen die **config** command
+>* Im Allgemeinen können Sie den Befehl **config** verwenden, anstatt die Konfigurationsdateien manuell zu ändern
 >* Um die Liste der Parameter abzurufen, verwenden Sie die **-?** Parameter: **nlserver config -?**
 >* Bei einer Oracle-Datenbank darf das Konto nicht angegeben werden. Die Syntax lautet wie folgt:
 >

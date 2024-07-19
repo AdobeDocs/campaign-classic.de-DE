@@ -20,7 +20,7 @@ Ein Webtrackingtag ist einfach eine URL, die mit den entsprechenden Parametern e
 
 ## Format der zu sendenden Daten {#format-of-the-data-to-be-sent}
 
-Das Format einer Web-Tracking-URL lautet wie folgt: **https://`<name_of_redirection_server>`:`<port>`/r/`<random_number>`?`<parameters>`**
+Das Format einer Web-Tracking-URL lautet: **https://`<name_of_redirection_server>`:`<port>`/r/`<random_number>`?`<parameters>`**
 
 >[!NOTE]
 >
@@ -78,7 +78,8 @@ Die folgende Tabelle enthält eine Liste von speziellen Parametern, die vom Weit
                               <p>URL-Parameter</p> 
                            </td>
                            <td>
-                              <p>Die Versandkennung, die verwendet wird, wenn kein Sitzungs-Cookie vorhanden ist. Dieser Wert ist in hexadezimaler Darstellung anzugeben.
+                              <p>Die Versandkennung, die verwendet wird, wenn kein Sitzungs-Cookie vorhanden ist. Dieser Wert muss
+                                 in Hexadezimalzahl ausgedrückt.
                               </p> 
                            </td> 
                         </tr>
@@ -90,7 +91,9 @@ Die folgende Tabelle enthält eine Liste von speziellen Parametern, die vom Weit
                               <p>URL-Parameter</p> 
                            </td>
                            <td>
-                              <p>Parameter zur Identifizierung des Internetbenutzers. Das Format dieses Parameters ist "name=value", wobei der Name ein Feld des Empfängerschemas ist. Dieser Parameter hat Vorrang vor der im Sitzungs-Cookie enthaltenen Kennung.
+                              <p>Parameter zur Identifizierung des Internetbenutzers. Das Format dieses Parameters ist "name=value",
+                                 wobei der Name ein Feld des Empfängerschemas ist. Dieser Parameter hat Vorrang vor
+                                 die im Sitzungs-Cookie enthaltene Kennung.
                               </p> 
                            </td> 
                         </tr> 
@@ -127,5 +130,5 @@ Die folgende Tabelle enthält eine Liste von speziellen Parametern, die vom Weit
 
 Die folgenden Methoden sind möglich:
 
-* Einfügen der URL in die **&quot;src&quot;** -Attribut einer HTML **`<img>`** -Tag, das in die Webseite eingefügt wurde, die Sie verfolgen möchten.
+* Einfügen der URL in das Attribut **&quot;src&quot;** eines HTML **`<img>`** -Tags, das in die Webseite eingefügt wurde, die Sie verfolgen möchten.
 * Direkter Aufruf an den Weiterleitungsserver, wenn die Webseite, die Sie verfolgen möchten, generiert wird.

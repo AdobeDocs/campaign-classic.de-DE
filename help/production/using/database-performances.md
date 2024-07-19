@@ -32,15 +32,15 @@ Die meisten Leistungsprobleme hängen mit der Datenbankwartung zusammen. Im Folg
 
 >[!NOTE]
 >
->Weitere Informationen finden Sie unter [Handbuch zur Hardwarebemessung von Adobe Campaign](https://helpx.adobe.com/de/campaign/kb/hardware-sizing-guide.html) für Einblicke.
+>Einblicke finden Sie im Leitfaden zur Hardwaredimensionierung von Adobe Campaign ](https://helpx.adobe.com/de/campaign/kb/hardware-sizing-guide.html).[
 
 ## Plattformkonfiguration {#platform-configuration}
 
-Eine unangemessene Konfiguration kann sich auf die Leistung der Plattform auswirken. Es wird empfohlen, die Netzwerkkonfiguration, die Optionen für die Zustellbarkeit von Plattformen sowie die MTA-Konfiguration im Abschnitt **serverConf.xml** -Datei.
+Eine unangemessene Konfiguration kann sich auf die Leistung der Plattform auswirken. Es wird empfohlen, die Netzwerkkonfiguration, die Bereitstellungsoptionen der Plattform sowie die MTA-Konfiguration in der Datei **serverConf.xml** zu überprüfen.
 
 ## Wartung der Datenbank {#database-maintenance}
 
-**Aufgabe &quot;Datenbankbereinigung&quot;**
+**Aufgabe zur Datenbankbereinigung**
 
 Stellen Sie sicher, dass die Datenbankbereinigung funktioniert. Zeigen Sie dazu die Protokolldateien an, um zu sehen, ob sie Fehler enthalten. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../production/using/database-cleanup-workflow.md).
 
@@ -58,13 +58,13 @@ Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../prod
 >
 >Wenn Sie eine Mid-Sourcing-Konfiguration verwenden, ist es wichtig, dass Datenbanken regelmäßig gepflegt werden. Bei der Analyse eines Versands auf der Marketing-Plattform sendet die Marketing-Instanz Informationen an die Mid-Sourcing-Instanz. Wenn der Prozess verlangsamt wird, wirkt sich dies auf die Marketing-Instanz aus.
 
-**Arbeitstabellen verwalten**
+**Verwalten von Arbeitstabellen**
 
 Bitte überprüfen Sie Anzahl und Größe der Arbeitstabellen. Wenn sie eine bestimmte Größe überschreiten, wirkt sich dies auf die Datenbankleistung aus. Diese Tabellen werden durch Workflows und Sendungen erstellt. Sie bleiben in der Datenbank, während Workflows und Sendungen aktiv sind. Um die Größe von Arbeitstabellen zu begrenzen, können Sie die folgenden Aktionen durchführen:
 
-* Sendungen mit den folgenden Status anhalten oder löschen: **[!UICONTROL Fehlgeschlagen]**, **[!UICONTROL Gestartet]**, **[!UICONTROL Versandbereit]** oder **[!UICONTROL Angehalten]**.
+* Sendungen mit den folgenden Status anhalten oder löschen: **[!UICONTROL Fehlgeschlagen]**, **[!UICONTROL Gestartet]**, **[!UICONTROL Versandbereit]** oder **[!UICONTROL Ausgesetzt]**.
 * Workflows, die aufgrund eines Fehlers ausgesetzt wurden, beenden oder löschen.
-* Beenden Sie alle Workflows, die für Tests verwendet werden, die keine **[!UICONTROL Ende]** Tätigkeit, deren Status somit erhalten bleibt **[!UICONTROL Angehalten]**.
+* Beenden Sie alle Workflows, die für Tests verwendet werden, die keine **[!UICONTROL Ende]** -Aktivität enthalten und deren Status daher weiterhin **[!UICONTROL Ausgesetzt]** lautet.
 
 >[!IMPORTANT]
 >
@@ -75,7 +75,7 @@ Bitte überprüfen Sie Anzahl und Größe der Arbeitstabellen. Wenn sie eine bes
 Abhängig von den Adobe Campaign-Installationseinstellungen können für die Plattformüberwachung zwei Tools verwendet werden:
 
 * Die Produktionsseite der Instanz. Weitere Informationen hierzu finden Sie unter [Manuelle Überwachung](../../production/using/monitoring-processes.md#manual-monitoring).
-* Die *netreport* Skript. Weitere Informationen hierzu finden Sie unter [Automatische Überwachung über Adobe Campaign-Skripte](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts).
+* Das Skript *netreport* . Weitere Informationen hierzu finden Sie unter [Automatische Überwachung über Adobe Campaign-Skripte](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts).
 
 ## Spezifikationen {#specifics}
 

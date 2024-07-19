@@ -23,10 +23,10 @@ Mit der FDA-Option können Sie Ihr Datenmodell in einer Drittanbieterdatenbank e
 
 Um diese Funktion nutzen zu können, sind im Folgenden die Voraussetzungen aufgeführt:
 
-* **Konfiguration**: Die Liste kompatibler externer Datenbanken hängt von Ihrer [Hosting-Modell](../../installation/using/hosting-models.md).
-* **Externe Datenbankversion**: Sie benötigen eine externe Datenbank, die mit dem FDA-Modul von Adobe Campaign kompatibel ist.
+* **Konfiguration**: Die Liste kompatibler externer Datenbanken hängt von Ihrem [Hosting-Modell](../../installation/using/hosting-models.md) ab.
+* **Externe Datenbankversion**: Sie benötigen eine externe Datenbank, die mit dem Adobe Campaign FDA-Modul kompatibel ist.
 
-  Die Liste der Datenbanksysteme und kompatiblen Versionen je Hosting-Modell finden Sie in Campaign . [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md#FederatedDataAccessFDA).
+  Die Liste der Datenbanksysteme und kompatiblen Versionen pro Hosting-Modell finden Sie in der Campaign [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md#FederatedDataAccessFDA) .
 
-* **Berechtigungen**: Die Benutzer müssen auch über die [erforderliche Berechtigungen](../../installation/using/remote-database-access-rights.md) in Adobe Campaign und in der externen Datenbank.
+* **Berechtigungen**: Benutzer müssen auch über die [erforderlichen Berechtigungen](../../installation/using/remote-database-access-rights.md) in Adobe Campaign und in der externen Datenbank verfügen.
 

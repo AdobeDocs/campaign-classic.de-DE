@@ -51,11 +51,11 @@ Die Zugriffsverwaltung ist ein wichtiger Bestandteil des Sicherheits-Managements
 
 Bei Entwicklungsaufgaben in Adobe Campaign (Workflows, JavaScript, JSSP usw.) sollten Sie sich grundsätzlich an diesen Leitlinien orientieren:
 
-* **Skripterstellung**: Vermeiden Sie SQL-Anweisungen, verwenden Sie parametrierte Funktionen anstelle von String-Verkettung und vermeiden Sie SQL-Injection, indem Sie die zu verwendenden SQL-Funktionen zur Zulassungsliste &quot;&quot;hinzufügen.
+* **Skripterstellung**: Vermeiden Sie SQL-Anweisungen, verwenden Sie parametrierte Funktionen anstelle von String-Verkettung, vermeiden Sie SQL-Injection, indem Sie die zu verwendenden SQL-Funktionen zur Zulassungsliste hinzufügen.
 
 * **Schutz des Datenmodells**: Verwenden Sie spezifische Berechtigungen, um Benutzeraktionen einzuschränken, und fügen Sie Systemfilter hinzu (sysFilter).
 
-* **Hinzufügen von Captchas in Webanwendungen**: Hier erfahren Sie, wie Sie Captchas zu Ihren öffentlichen Landingpages und Anmeldeseiten hinzufügen.
+* **Captchas in Webanwendungen hinzufügen**: Hier erfahren Sie, wie Sie Captchas zu Ihren öffentlichen Landingpages und Anmeldeseiten hinzufügen.
 
 [Mehr dazu](../../installation/using/scripting-coding-guidelines.md)
 
@@ -74,17 +74,17 @@ Außerdem müssen Sie die Sicherheit Ihrer Datenbank-Engine unbedingt befolgen.
 
 <img src="assets/do-not-localize/icon_server.svg" width="60px">
 
-Die Konfiguration muss auf allen Servern durchgeführt werden. Die Konfigurationsdateien sind vom Typ **serverConf.xml** und **`config-<instance>.xml`**. Im Folgenden finden Sie die wichtigsten Elemente, die überprüft werden müssen:
+Die Konfiguration muss auf allen Servern durchgeführt werden. Die Konfigurationsdateien weisen die Typen **serverConf.xml** und **`config-<instance>.xml`** auf. Im Folgenden finden Sie die wichtigsten Elemente, die überprüft werden müssen:
 
 * **Sicherheitszonen**: Konfigurieren Sie Sicherheitszonen, damit die IP-Adressen von Clients eines Proxys automatisch berücksichtigt werden.
 
-* **Schutz vor Datei-Uploads**: Beschränken Sie die Dateitypen, die mit einem neuen uploadAllowList -Attribut auf den Adobe Campaign-Server hochgeladen werden können. Dies kann in der Serverkonfigurationsdatei verwendet werden.
+* **Schutz vor Datei-Upload**: Beschränken Sie die Dateitypen, die mit einem neuen uploadAllowList -Attribut auf den Adobe Campaign-Server hochgeladen werden können. Dies kann in der Serverkonfigurationsdatei verwendet werden.
 
 * **Relais**: Optimieren Sie die Relais-Konfiguration, indem Sie die Relais-Regeln für nicht verwendete Module/Anwendungen deaktivieren.
 
 * **Schutz der ausgehenden Verbindung** und **Befehlsbeschränkung** (serverseitig)
 
-* Sie können auch zusätzliche HTTP-Header hinzufügen, checkIPConsistent, enableTLS, sessionTimeOutSec usw. aktivieren. Siehe Abschnitt [Dokumentation zur Konfiguration des Campaign-Servers](../../installation/using/configuring-campaign-server.md) und [Beschreibung der Serverkonfigurationsdatei](../../installation/using/the-server-configuration-file.md) für weitere Informationen.
+* Sie können auch zusätzliche HTTP-Header hinzufügen, checkIPConsistent, enableTLS, sessionTimeOutSec usw. aktivieren. Weitere Informationen finden Sie in der Dokumentation zur Konfiguration des Campaign-Servers ](../../installation/using/configuring-campaign-server.md) und in der Beschreibung der [Server-Konfigurationsdatei](../../installation/using/the-server-configuration-file.md) .[
 
 [Mehr dazu](../../installation/using/server-configuration.md)
 

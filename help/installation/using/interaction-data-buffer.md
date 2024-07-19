@@ -20,21 +20,21 @@ ht-degree: 4%
 
 Sie können eine Pufferzone konfigurieren, um die Leistung von Interaction in das Eingangspuffersystem zu erhöhen, indem Sie die Synchronisierung der Angebotsvorschlagsberechnungen aufheben. Diese Konfiguration erfolgt in der Konfigurationsdatei der Instanz (config-Instance.xml).
 
-In Adobe Campaign **Pufferspeicher-Zone** wurde im Interaction-Modul eingeführt. Auf diese Weise können Sie **Steigerung der Leistung** der eingehenden Interaction durch die Aufhebung der Synchronisation der Bestands- und Angebotsberechnungen.
+In Adobe Campaign wurde eine **Pufferzone** für Daten im Interaction-Modul eingeführt. Dadurch können Sie die Leistung von eingehenden Interaktionen um **1} erhöhen, indem Sie die Synchronisierung von Bestands- und Angebotsberechnungen aufheben.**
 
 Dies betrifft nur eingehende Interaktionen, sei es durch einen Aufruf (mit oder ohne Aufrufdaten) oder durch ein Statusupdate (updateStatus).
 
-Um beim Schreiben von Vorschlägen für einen Empfänger eine Warteschlange zu vermeiden, generiert ein neuer Prozess eine **Pufferspeicher-Zone** , die Vorschläge ermöglicht, **asynchron geschrieben**. Diese Pufferzone wird regelmäßig gelesen und geleert. Der Standardzeitraum beträgt ca. eine Sekunde. Daher wird die Schreibweise des Vorschlags gruppiert.
+Um beim Schreiben von Vorschlägen, die sich auf einen Empfänger beziehen, eine Warteschlange zu vermeiden, generiert ein neuer Prozess einen **Pufferspeicher-Bereich** , der es ermöglicht, Vorschläge **asynchron zu schreiben**. Diese Pufferzone wird regelmäßig gelesen und geleert. Der Standardzeitraum beträgt ca. eine Sekunde. Daher wird die Schreibweise des Vorschlags gruppiert.
 
 >[!NOTE]
 >
 >Diese Konfiguration ist zwingend erforderlich, wenn Sie Interaction in einer verteilten Architektur verwenden.
 
-Pufferspeicher-Zone **Konfiguration** kann in der Konfigurationsdatei der Instanz ausgeführt werden (config-Instance.xml).
+Die Pufferzone **configuration** kann in der Konfigurationsdatei der Instanz ausgeführt werden (config-Instance.xml).
 
 >[!CAUTION]
 >
->Einige Konfigurationen können nur von Adobe für Bereitstellungen durchgeführt werden, die von Adobe gehostet werden. Beispielsweise um auf die Server- und Instanzkonfigurationsdateien zuzugreifen. Weitere Informationen zu den verschiedenen Implementierungen finden Sie im Abschnitt [Hosting-Modelle](../../installation/using/hosting-models.md) oder [diese Seite](../../installation/using/capability-matrix.md).
+>Einige Konfigurationen können nur von Adobe für Bereitstellungen durchgeführt werden, die von Adobe gehostet werden. Beispielsweise um auf die Server- und Instanzkonfigurationsdateien zuzugreifen. Weitere Informationen zu den verschiedenen Bereitstellungen finden Sie im Abschnitt [Hosting-Modelle](../../installation/using/hosting-models.md) oder auf [dieser Seite](../../installation/using/capability-matrix.md) .
 >
 >Änderungen an der Konfiguration erfordern einen Neustart des Webservers (Apache:IIS) und der Adobe Campaign-Prozesse.\
 >Stellen Sie nach der Konfiguration der Pufferzone sicher, dass eine angepasste Hardware-Konfiguration verfügbar ist. (Speicherkapazität vorhanden).

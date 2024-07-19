@@ -11,7 +11,7 @@ exl-id: 08e179aa-fd83-4c0a-879e-ab7aec168d92
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
 source-wordcount: '505'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 3%
 
 ## Anwendungswartung {#application-maintenance}
 
-Adobe Campaign bietet einen integrierten Workflow, mit dem Sie bestimmte Aufgaben zur Datenbankwartung planen können: die **Datenbankbereinigungs-Workflow**. Dieser Workflow führt die folgenden Aufgaben aus:
+Adobe Campaign bietet einen integrierten Workflow, mit dem Sie bestimmte Aufgaben zur Datenbankwartung planen können: den Workflow zur Datenbankbereinigung **1}.** Dieser Workflow führt die folgenden Aufgaben aus:
 
 * Löschung abgelaufener Datensätze,
 * Löschen verwaister Datensätze und Neuinitialisierung des Status für abgelaufene Objekte,
@@ -72,14 +72,14 @@ Es stehen verschiedene Strategien zur Verfügung:
    <td> Abhängig von der Datenbank können diese Defragmentierungsmethoden als RDBMS-Option (Oracle) bereitgestellt werden und sind nicht immer die effizienteste Methode zum Umgang mit größeren Tabellen.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Aufheben und Wiederherstellen<br /> </td> 
-   <td> Ziehen Sie die Tabelle in eine Datei, löschen Sie die Tabelle in der Datenbank und stellen Sie sie aus der Ablage wieder her.<br /> </td> 
+   <td> Sprung und Wiederherstellung<br /> </td> 
+   <td> Ziehen Sie die Tabelle in eine Datei, löschen Sie die Tabelle in der Datenbank und stellen Sie sie aus dem Dump wieder her.<br /> </td> 
    <td> Auf diese Weise lässt sich eine Tabelle am einfachsten defragmentieren. Auch die einzige Lösung, wenn die Datenbank fast voll ist.<br /> </td> 
    <td> Da die Tabelle gelöscht und neu erstellt wird, kann die Anwendung nicht online gelassen werden, auch nicht im schreibgeschützten Modus (die Tabelle ist während der Wiederherstellungsphase nicht verfügbar).<br /> </td> 
   </tr> 
   <tr> 
    <td> Duplizieren, umbenennen und ablegen<br /> </td> 
-   <td> Dadurch wird eine Kopie einer Tabelle und ihrer Indizes erstellt, dann wird die vorhandene Tabelle abgelegt und die Kopie wird umbenannt, damit sie ersetzt wird.<br /> </td> 
+   <td> Dadurch wird eine Kopie einer Tabelle und ihrer Indizes erstellt, dann wird die vorhandene gelöscht und die Kopie wird umbenannt, damit sie ersetzt wird.<br /> </td> 
    <td> Diese Methode ist schneller als der erste Ansatz, da sie weniger I/Os generiert (keine Kopie als Datei und keine Lektüre aus dieser Datei).<br /> </td> 
    <td> Erfordert doppelt so viel Platz.<br /> Alle aktiven Prozesse, die während des Prozesses in die Tabelle geschrieben werden, müssen angehalten werden. Lesevorgänge sind jedoch nicht betroffen, da die Tabelle im letzten Moment nach der Wiederherstellung ausgetauscht wird. <br /> </td> 
   </tr> 

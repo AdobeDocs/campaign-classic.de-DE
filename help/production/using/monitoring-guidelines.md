@@ -17,7 +17,7 @@ ht-degree: 26%
 
 ## Instanz-Monitoring-Dashboard {#instance-monitoring-dashboard}
 
-Die **[!UICONTROL Überwachung]** tab, auf den Sie von der Campaign Classic-Startseite aus zugreifen können, ist der Haupteinstiegspunkt, der Sie bei der Überwachung Ihrer Instanz unterstützt.
+Die Registerkarte **[!UICONTROL Monitoring]** , auf die über die Campaign Classic-Startseite zugegriffen werden kann, ist der Haupteinstiegspunkt, der Sie bei der Überwachung Ihrer Instanz unterstützt.
 
 Es bietet ein Dashboard darüber, was auf Ihrer Instanz geschieht: Status (Build-Version, installierte Packages usw.), Systemindikatoren, Protokolle, derzeit ausgeführte Workflows, Status der letzten gesendeten Nachrichten usw.
 
@@ -68,11 +68,11 @@ Die Workflow-Heatmap bietet eine visuelle Darstellung aller Workflows, die auf I
 
 **Audit-Protokoll**
 
-Im Audit-Protokoll können Sie alle in Workflows vorgenommenen Änderungen sowie deren aktuellen Status visualisieren. [Hier klicken](../../production/using/audit-trail.md).
+Im Audit-Protokoll können Sie alle in Workflows vorgenommenen Änderungen sowie deren aktuellen Status visualisieren. [Klicken Sie hier](../../production/using/audit-trail.md).
 
 **Fehlerbehebung bei Workflows**
 
-Bei Problemen mit der Ausführung eines Workflows können spezifische Aktionen durchgeführt werden. [Hier klicken](../../production/using/workflow-execution.md) für weitere Informationen
+Bei Problemen mit der Ausführung eines Workflows können spezifische Aktionen durchgeführt werden. [Klicken Sie hier](../../production/using/workflow-execution.md) für weitere Informationen
 
 **Workflow-Statusüberwachung**
 
@@ -94,7 +94,7 @@ SMTP-Berichte zeigen Versandstatistiken und SMTP-Fehler nach Domain an. [Weitere
 
 **Best Practices**
 
-[Best Practices für Versand und Entwurf](../../delivery/using/delivery-best-practices.md) kann Ihnen dabei helfen, ihre Leistung zu verbessern.
+[Best Practices für den Versand und die Erstellung von Sendungen](../../delivery/using/delivery-best-practices.md) können Ihnen dabei helfen, ihre Leistung zu verbessern.
 
 **Fehlerbehebung beim Versand**
 Bei Problemen mit Sendungen können spezifische Aktionen durchgeführt werden:
@@ -125,7 +125,7 @@ Es wird empfohlen, die Datenbankwartung regelmäßig durchzuführen, um zu verme
 
 *Nur On-Premise- und Hybrid-Hosting-Modelle*
 
-Eine Sicherung ist unerlässlich, um zu verhindern, dass Daten im Falle eines (physischen oder systembezogenen) Problems auf einem Computer verloren gehen. [Hier klicken](../../production/using/backup.md) für weitere Informationen. Das Wiederherstellungsverfahren wird unter [diesem Abschnitt](../../production/using/restoration.md).
+Eine Sicherung ist unerlässlich, um zu verhindern, dass Daten im Falle eines (physischen oder systembezogenen) Problems auf einem Computer verloren gehen. [Klicken Sie hier](../../production/using/backup.md) für weitere Informationen. Das Wiederherstellungsverfahren wird in [diesem Abschnitt](../../production/using/restoration.md) beschrieben.
 
 ## Campaign Classic-technische Grundsätze {#campaign-classic-technical-principles}
 

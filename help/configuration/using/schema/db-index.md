@@ -43,7 +43,7 @@ Mit diesem Element können Sie einen mit einer Tabelle verknüpften Index defini
 
 Es ist möglich, mehrere Indizes zu definieren. Ein Index kann auf ein oder mehrere Felder der Tabelle verweisen. Die Indexdeklaration folgt in der Regel der Definition des Hauptschemaelements.
 
-Die Reihenfolge der `<keyfield>` -Elemente, die in `<dbindex>` ist sehr wichtig. Die erste `<keyfield>` muss das Indexierungskriterium sein, auf dem die Abfragen hauptsächlich basieren.
+Die Reihenfolge der `<keyfield>` -Elemente, die in einem `<dbindex>` definiert sind, ist sehr wichtig. Das erste `<keyfield>` muss das Indexierungskriterium sein, auf dem die Abfragen hauptsächlich basieren.
 
 Der Name des Index in der Datenbank wird durch Verkettung des Tabellennamens und des Indexnamens berechnet. Beispiel: Tabellenname &quot;Sample&quot;, Namespace &quot;Cus&quot;, Indexname &quot;MyIndex&quot;-> Name des Indexfelds bei der Indexerstellung. Abfrage: &quot;CusSample_myIndex&quot;.
 
@@ -64,11 +64,11 @@ Der Name des Index in der Datenbank wird durch Verkettung des Tabellennamens und
 * **applyIf (string)**: Bedingung für die Berücksichtigung des Index - empfängt einen XTK-Ausdruck.
 * **label (string)**: Indexbezeichnung.
 * **name (MNTOKEN)**: eindeutiger Indexname.
-* **unique (boolean)**: Wenn diese Option aktiviert ist (@unique=&quot;true&quot;), garantiert das Attribut die Eindeutigkeit des Index in allen Feldern.
+* **unique (boolean)**: Wenn diese Option aktiviert ist (@unique=&quot;true&quot;), garantiert das Attribut die Eindeutigkeit des Index in allen seinen Feldern.
 
 ## Beispiele {#examples-3}
 
-Erstellung eines Index im Feld &quot;id&quot;. (Attribut &quot;@unique&quot; im `<dbindex>` Element-Trigger, die das SQL-Schlüsselwort &quot;UNIQUE&quot; hinzufügen, wenn der Index in der Datenbank erstellt wird (Abfrage).
+Erstellung eines Index im Feld &quot;id&quot;. (Attribut &quot;@unique&quot; in den Triggern `<dbindex>` element , die das SQL-Schlüsselwort &quot;UNIQUE&quot; hinzufügen, wenn der Index in der Datenbank erstellt wird (Abfrage)).
 
 ```
 <element label="Sample" name="Sample">

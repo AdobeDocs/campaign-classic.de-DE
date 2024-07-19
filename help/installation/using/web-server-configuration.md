@@ -24,21 +24,21 @@ Nachfolgend finden Sie einige der wichtigsten Best Practices im Zusammenhang mit
 
 * Alte SSL-Version und -Ziffern deaktivieren:
 
-  **Auf Apache**, bearbeiten Sie /etc/apache2/mods-available/ssl.conf. Hier ein Beispiel:
+  **Bearbeiten Sie auf Apache** /etc/apache2/mods-available/ssl.conf. Hier ein Beispiel:
 
    * `SSLProtocol all -SSLv2 -SSLv3 -TLSv1`
    * `SSLCipherSuite HIGH:MEDIUM:!aNULL:!MD5:!SSLv3:!SSLv2:!TLSv1`
 
-  **Bei IIS** (siehe [Dokumentation](https://support.microsoft.com/en-us/kb/245030)), führen Sie die folgende Konfiguration durch:
+  **Führen Sie auf IIS** (siehe die [Dokumentation](https://support.microsoft.com/en-us/kb/245030)) die folgende Konfiguration durch:
 
    * Fügen Sie einen Registrierungs-Unterschlüssel in HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL hinzu.
-   * Damit das System die Protokolle verwenden kann, die nicht standardmäßig ausgehandelt werden (z. B. TLS 1.2), ändern Sie die DWORD-Wertdaten des Wertes DisabledByDefault in 0x0 in den folgenden Registrierungsschlüsseln unter **Protokolle** key:
+   * Damit das System die Protokolle verwenden kann, die nicht standardmäßig ausgehandelt werden (z. B. TLS 1.2), ändern Sie in den folgenden Registrierungsschlüsseln unter dem Schlüssel **Protokolle** die DWORD-Wertdaten des Wertes DisabledByDefault in 0x0:
 
      SCHANNEL\Protokolle\TLS 1.2\Client
 
      SCHANNEL\Protokolle\TLS 1.2\Server
 
-  **SSL x.0 deaktivieren**
+  **SSL x.0** deaktivieren
 
   SCHANNEL\Protocols\SSL 3.0\Client: DisabledByDefault: DWORD (32-Bit) Wert zu 1
 
@@ -46,28 +46,28 @@ Nachfolgend finden Sie einige der wichtigsten Best Practices im Zusammenhang mit
 
 * Entfernen Sie die **TRACE**-Methode:
 
-  **Auf Apache**, bearbeiten Sie in /etc/apache2/conf.d/security: TraceEnable **Aus**
+  **Bearbeiten Sie auf Apache** in /etc/apache2/conf.d/security: TraceEnable **Off**
 
-  **Bei IIS** (siehe [Dokumentation](https://www.iis.net/configreference/system.webserver/security/requestfiltering/verbs)), führen Sie die folgende Konfiguration durch:
+  **Führen Sie auf IIS** (siehe die [Dokumentation](https://www.iis.net/configreference/system.webserver/security/requestfiltering/verbs)) die folgende Konfiguration durch:
 
    * Achten Sie darauf, dass der **Request-Filtering**-Rollendienst oder die entsprechende Funktion installiert ist.
-   * Im **Anforderungsfilterung** auf die Registerkarte &quot;HTTP Verbs&quot;und klicken Sie dann auf &quot;Verb verweigern&quot;. Geben Sie im Bereich &quot;Aktionen&quot;im Dialogfeld &quot;Öffnen&quot;TRACE ein.
+   * Klicken Sie im Bereich **Anforderungsfilter** auf die Registerkarte &quot;HTTP-Verben&quot;und dann auf &quot;Verb verweigern&quot;. Geben Sie im Bereich &quot;Aktionen&quot;im Dialogfeld &quot;Öffnen&quot;TRACE ein.
 
 * Entfernen Sie das Banner:
 
-  **Auf Apache**, bearbeiten Sie /etc/apache2/conf.d/security:
+  **Bearbeiten Sie auf Apache** /etc/apache2/conf.d/security:
 
    * ServerSignature auf **Off**
    * ServerTokens auf **Prod**
 
-  **Bei IIS**, führen Sie die folgende Konfiguration durch:
+  **Führen Sie auf IIS** die folgende Konfiguration durch:
 
    * Installieren Sie **URLScan**.
    * Ändern Sie die Datei **Urlscan.ini** in **RemoveServerHeader=1**.
 
 * Begrenzen Sie die Größe der Abfrage, um zu verhindern, dass wichtige Dateien hochgeladen werden.
 
-  **Auf Apache**, fügen Sie die **LimitRequestBody** Anweisung (Größe in Byte) in / Verzeichnis.
+  **Fügen Sie auf Apache** die Anweisung **LimitRequestBody** (Größe in Byte) in / Verzeichnis hinzu.
 
   ```
   <Directory />
@@ -77,9 +77,9 @@ Nachfolgend finden Sie einige der wichtigsten Best Practices im Zusammenhang mit
   </Directory>
   ```
 
-  **Bei IIS** (siehe [Dokumentation](https://www.iis.net/configreference/system.webserver/security/requestfiltering/requestlimits)), legen Sie die **maxAllowedContentLength** (maximal zulässige Inhaltslänge) in den Inhaltsfilteroptionen.
+  **Legen Sie auf IIS** (siehe die [Dokumentation](https://www.iis.net/configreference/system.webserver/security/requestfiltering/requestlimits)) die **maxAllowedContentLength** (maximal zulässige Inhaltslänge) in den Inhaltsfilteroptionen fest.
 
 Verwandte Themen:
 
-* [Übersicht über die Einhaltung von Adobe Marketing Cloud](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/overview#privacy)
-* [Sicherheitsübersicht für Adobe Campaign](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/overview#security)
+* [Adobe Marketing Cloud Compliance Overview](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/overview#privacy)
+* [Adobe Campaign-Sicherheitsübersicht](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/overview#security)

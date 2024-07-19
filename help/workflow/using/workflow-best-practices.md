@@ -5,7 +5,7 @@ description: Machen Sie sich mit Best Practices bei Campaign-Workflows vertraut.
 feature: Workflows
 exl-id: 39c57f61-2629-4214-91e4-cb97dc039deb
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1416'
 ht-degree: 100%
 
@@ -136,7 +136,7 @@ Um den Workflow leichter erkennbar zu machen, empfehlen wir, am Anfang und Ende 
 
 ### Signal {#signal}
 
-Meistens ist nicht bekannt, wo das Signal ausgelöst wurde. Um dies zu vermeiden, notieren Sie im Tab **[!UICONTROL Erweitert]** der Signalaktivität im Feld **[!UICONTROL Kommentar]** den erwarteten Auslöser eines Signals für diese Aktivität.
+Meistens ist nicht bekannt, wo das Signal ausgelöst wurde. Um dies zu vermeiden, notieren Sie im Feld **[!UICONTROL Kommentar]** auf der Registerkarte **[!UICONTROL Erweitert]** der Signalaktivität die erwartete Herkunft eines Signals für diese Aktivität.
 
 ![](assets/workflow-signal-bp.png)
 

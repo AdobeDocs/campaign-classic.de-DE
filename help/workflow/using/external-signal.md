@@ -5,7 +5,7 @@ description: Erfahren Sie mehr über die Workflow-Aktivität "Externes Signal".
 feature: Workflows
 exl-id: da84d3ff-1e64-45ef-bef0-da4a24d93461
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 100%
 

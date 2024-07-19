@@ -16,12 +16,12 @@ ht-degree: 1%
 
 # Liste der Campaign Classic-Optionen{#configuring-campaign-options}
 
-Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die Konfiguration von Adobe Campaign-Optionen. Einige sind bei der Installation von Campaign integriert, andere können bei Bedarf manuell hinzugefügt werden. Die verfügbaren Optionen variieren je nach den mit Ihrer Instanz installierten Packages.
+Im Knoten **[!UICONTROL Administration / Plattform / Optionen]** können Sie Adobe Campaign-Optionen konfigurieren. Einige sind bei der Installation von Campaign integriert, andere können bei Bedarf manuell hinzugefügt werden. Die verfügbaren Optionen variieren je nach den mit Ihrer Instanz installierten Packages.
 
 
 >[!CAUTION]
 >
->* Optionen, die nicht auf dieser Seite aufgeführt sind, sind nur intern und **darf nicht geändert werden**.
+>* Optionen, die nicht auf dieser Seite aufgeführt sind, sind nur intern und **dürfen nicht geändert werden**.
 >
 >* Das Ändern oder Aktualisieren von Adobe Campaign-Optionen kann nur von erfahrenen Benutzern durchgeführt werden.
 
@@ -36,12 +36,12 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
  </thead> 
  <tbody> 
   <tr> 
-   <td> <span class="uicontrol">Deliverability_LastBroadLogMsgDate</span> <br /> </td> 
+   <td> <span class="uicontrol">Zustellbarkeit_LastBroadLogMsgDate</span> <br /> </td> 
    <td> Datum des letzten von der Zustellbarkeitsinstanz abgerufenen broadLogMsg.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Deliverability_LastBroadLogMsgSent</span> <br /> </td> 
-   <td> Datum des letzten broadLogMsg, das an die Zustellbarkeitsinstanz gesendet wurde.<br /> </td> 
+   <td> Datum des letzten an die Zustellbarkeitsinstanz gesendeten broadLogMsg.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">DmRendering_cuid</span> <br /> </td> 
@@ -57,7 +57,7 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr>
   <tr> 
    <td> <span class="uicontrol">NMS_ActivateOwnerConfirmation</span> <br /> </td> 
-   <td><p> Hiermit können Sie dem für den Versand verantwortlichen Benutzer die Validierung des Versands gestatten, wenn in den Versandeigenschaften ein bestimmter Benutzer oder eine Benutzergruppe für den Start eines Versands bestimmt ist.</p><p> Aktivieren Sie dazu die Option, indem Sie "1" als Wert eingeben. Um diese Option zu deaktivieren, geben Sie "0" ein.</p><p> Der Versandvalidierungsprozess funktioniert dann standardmäßig: Nur der in den Versandeigenschaften für den Versand bestimmte Benutzer oder die Benutzergruppe (oder ein Administrator) kann den Versand bestätigen und durchführen. Weitere Informationen finden Sie in diesem <a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">Abschnitt</a>.</p> </td> 
+   <td><p> Hiermit können Sie dem für den Versand verantwortlichen Benutzer die Validierung des Versands gestatten, wenn in den Versandeigenschaften ein bestimmter Benutzer oder eine Benutzergruppe für den Start eines Versands bestimmt ist.</p><p> Aktivieren Sie dazu die Option, indem Sie "1" als Wert eingeben. Um diese Option zu deaktivieren, geben Sie "0" ein.</p><p> Der Versandvalidierungsprozess funktioniert dann standardmäßig: Nur der in den Versandeigenschaften für den Versand bestimmte Benutzer oder die Benutzergruppe (oder ein Administrator) kann den Versand bestätigen und durchführen. Weitere Informationen finden Sie <a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">in diesem Abschnitt</a>.</p> </td> 
    <tr> 
    <td> <span class="uicontrol">Nms_DefaultRcpSchema</span> <br /> </td> 
    <td> Adobe Campaign verwendet eine globale Variable "Nms_DefaultRcpSchema", um ein Dialogfeld mit der standardmäßigen Empfängerdatenbank (nms:recipient) zu erstellen.<br /> Der Optionswert muss dem Namen des Schemas entsprechen, das der externen Empfängertabelle entspricht.<br /> </td> 
@@ -72,7 +72,7 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_LogsPerTransac</span> <br /> </td> 
-   <td> Minimale Batch-Größe (Anzahl der Zeilen) für das Einfügen von broadLogs während einer Versandvorbereitung.<br /> </td> 
+   <td> Minimale Batch-Größe (Anzahl Zeilen) für das Einfügen von broadLogs während einer Versandvorbereitung.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_MaxDelayPerTransac</span> <br /> </td> 
@@ -80,10 +80,10 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_MidAnalyzeBatchSize</span> <br /> </td> 
-   <td> Gruppierung der Versandteile bei der Analyse von Mid-Sourcing-Sendungen.<br /> </td> 
+   <td> Gruppierungsgröße der Versandteile bei der Analyse von Mid-Sourcing-Sendungen.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">NmsBroadcast_MsgValidityDuration</span> <br /> </td> 
+   <td> <span class="uicontrol">NmsBroadcast_msgValidityDuration</span> <br /> </td> 
    <td> Standard-Versandzeitraum für einen Versand (in Sekunden).<br /> </td> 
   </tr> 
   <tr> 
@@ -92,11 +92,11 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_RemoveBlackList</span> <br /> </td> 
-   <td> Durch Eingabe von "1"als Wert können Sie Empfänger ausschließen, die nicht mehr kontaktiert werden möchten.<br /> </td> 
+   <td> Durch Eingabe von "1" als Wert können Sie Empfänger ausschließen, die nicht mehr kontaktiert werden möchten.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_RemoveDuplicatesRecipients</span> <br /> </td> 
-   <td> Wenn Sie als Wert "1"eingeben, können Sie Dubletten automatisch ignorieren.<br /> </td> 
+   <td> Durch Eingabe von "1"als Wert können Sie Dubletten automatisch ignorieren.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_ErrorAddressMask</span> <br /> </td> 
@@ -112,7 +112,7 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
  <tr> 
    <td> <span class="uicontrol">NmsDelivery_MaxDownloadedImageSize</span> <br /> </td> 
-   <td> Ermöglicht die Definition der maximalen Größe (in Byte) für ein Bild, das von einer personalisierten URL heruntergeladen und an eine E-Mail angehängt wird. Der Standardwert ist 100.000 Bytes (100 KB). Beim Testversand und Herunterladen des bzw. der Bilder zur Verarbeitung der E-Mail, wenn die Größe eines Bildes diesen Wert überschreitet oder wenn ein Download-Problem vorliegt, wird in den Versandlogs ein Fehler angezeigt und der Testversand schlägt fehl.<br /> </td> 
+   <td> Ermöglicht die Definition der maximalen Größe (in Byte) für ein Bild, das von einer personalisierten URL heruntergeladen und an eine E-Mail angehängt wird. Der Standardwert ist 100.000 Bytes (100 KB). Wenn Sie einen Testversand durchführen und das Bild/die Bilder herunterladen, um die E-Mail zu verarbeiten, wenn die Größe eines Bildes diesen Wert überschreitet oder wenn ein Download-Problem vorliegt, wird in den Versandlogs ein Fehler angezeigt und der Testversand schlägt fehl.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_MaxRecommendedAttachments</span> <br /> </td> 
@@ -124,39 +124,39 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_PublishingScript</span> <br /> </td> 
-   <td> Veröffentlichungsskript<br /> </td> 
+   <td> Veröffentlichungsskript.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_NoCountBroadLogMsgPush</span> <br /> </td> 
-   <td> Deaktivieren Sie die broadLogMsg -Anzahl für Push-Nachrichten.<br /> </td> 
+   <td> Deaktivieren Sie die broadLogMsg-Anzahl für Push-Nachrichten.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDeliveryWizard_ShowDeliveryWeight</span> <br /> </td> 
-   <td> Die Nachrichtengewichtung wird im Versand-Assistenten angezeigt.<br /> </td> 
+   <td> Zeigen Sie die Nachrichtengewichtung im Versand-Assistenten an.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_DefaultErrorAddr</span> <br /> </td> 
-   <td> Die Standard-E-Mail-Adresse "Fehler"auf Instanzebene, die für den E-Mail-Versand verwendet wird, wenn sie vom Benutzer leer gelassen wird.<br /> </td> 
+   <td> Standard-E-Mail-Adresse "Fehler"auf Instanzebene, die für den E-Mail-Versand verwendet wird, wenn vom Benutzer leer gelassen.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_DefaultFromAddr</span> <br /> </td> 
-   <td> Die Standard-E-Mail-Adresse "von"auf der Ebene der Instanz, die für den E-Mail-Versand verwendet wird, wenn sie vom Benutzer leer gelassen wird.<br /> </td> 
+   <td> Die Standard-E-Mail-Adresse "von"auf Instanzebene, die für den E-Mail-Versand verwendet wird, wenn sie vom Benutzer leer gelassen wird.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_DefaultReplyToAddr</span> <br /> </td> 
-   <td> Die Standard-E-Mail-Adresse "Antwort auf" auf Instanzenebene, die für den E-Mail-Versand verwendet wird, wenn sie vom Benutzer leer gelassen wird.<br /> </td> 
+   <td> Standard-E-Mail-Adresse "Antwort auf" auf Instanzenebene, die für den E-Mail-Versand verwendet wird, wenn vom Benutzer leer gelassen.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_ExpOrganisation</span> <br /> </td> 
-   <td> Allgemeiner Name des Kunden. Wird in einigen Warnmeldungen verwendet, die den Empfängern angezeigt werden.<br /> "Sie erhalten diese Nachricht, weil Sie mit "Organisation" oder einem verbundenen Unternehmen in Kontakt gekommen sind. So empfangen Sie keine Nachrichten mehr von "Organisation"<br /> </td> 
+   <td> Allgemeiner Name des Kunden. Wird in einigen Warnmeldungen verwendet, die den Empfängern angezeigt werden.<br /> "Sie erhalten diese Nachricht, weil Sie mit "Organisation"oder einem verbundenen Unternehmen in Kontakt gekommen sind. So empfangen Sie keine Nachrichten mehr von "Organisation"<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_FromName</span> <br /> </td> 
-   <td> Die standardmäßige E-Mail-Bezeichnung "Von"auf Ebene der Instanz, die für den E-Mail-Versand verwendet wird, wenn sie vom Benutzer leer gelassen wird.<br /> </td> 
+   <td> Die standardmäßige E-Mail-Beschriftung "Von"auf Instanzebene, die für den E-Mail-Versand verwendet wird, wenn sie vom Benutzer leer gelassen wird.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_ReplyToName</span> <br /> </td> 
-   <td> Der Standard-E-Mail-Titel 'Antwort auf' wird auf der Ebene der Instanz verwendet, die für den E-Mail-Versand verwendet wird, wenn er vom Benutzer leer gelassen wird.<br /> </td> 
+   <td> Die standardmäßige E-Mail-Bezeichnung "Antwort auf" auf Instanzenebene, die für den E-Mail-Versand verwendet wird, wenn sie vom Benutzer leer gelassen wird.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_RetryCount</span> <br /> </td> 
@@ -172,11 +172,11 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsInmail_AllowlistEmails</span> <br /> </td> 
-   <td> Liste der autorisierten E-Mail-Adressen für die Weiterleitung (vom Modul für die Verarbeitung eingehender E-Mails). Die Adressen müssen durch Kommas getrennt werden (oder *, um alle zuzulassen). Beispiel: xyz@abc.com, pqr@abc.com.<br /> </td> 
+   <td> Liste der autorisierten E-Mail-Adressen für die Weiterleitung (vom Modul für die Verarbeitung eingehender E-Mails). Die Adressen müssen durch Kommas getrennt werden (oder *, um alle zuzulassen). z. B. xyz@abc.com,pqr@abc.com.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsLine_AESKey</span> <br /> </td> 
-   <td> AES-Schlüssel, der im "lineImage"-Servlet zum Kodieren der URLs (LINE-Kanal) verwendet wird.<br /> </td> 
+   <td> AES-Schlüssel, der im "lineImage"-Servlet verwendet wird, um die URLs zu kodieren (LINE-Kanal).<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsNPAI_EmailMaxError</span> <br /> </td> 
@@ -184,7 +184,7 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsNPAI_EmailSignificantErrorDelay</span> <br /> </td> 
-   <td> Bei Kanal "E-Mail"(als Standard verwenden) : Minimaler Zeitraum seit dem vorherigen referenzierten SOFT-Fehler, bevor ein neuer SOFT-Fehler berücksichtigt wird.<br /> </td> 
+   <td> Im Kanal "E-Mail"(als Standard verwenden) : Minimale Dauer seit dem vorherigen referenzierten SOFT-Fehler, bevor ein neuer SOFT-Fehler berücksichtigt wird.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsNPAI_MobileMaxError</span> <br /> </td> 
@@ -192,7 +192,7 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsNPAI_MobileSignificantErrorDelay</span> <br /> </td> 
-   <td> Bei Kanal "mobil" : Minimaler Zeitraum, der seit dem zuvor referenzierten SOFT-Fehler verbracht wurde, bevor ein neuer SOFT-Fehler berücksichtigt wurde.<br /> </td> 
+   <td> Bei Kanal "mobile" : Minimale Dauer, die seit dem vorherigen referenzierten SOFT-Fehler verbracht wurde, bevor ein neuer SOFT-Fehler berücksichtigt wurde.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsMidSourcing_LogsPeriodHour</span> <br /> </td>
@@ -208,7 +208,7 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_DeliveryPreparationWindow</span> <br /> </td> 
-   <td><p>Diese Option wird von der <span class="uicontrol"><a href="../../workflow/using/about-technical-workflows.md">operationMgt</a></span> technischer Workflow bei der Zählung der Anzahl laufender Sendungen.</p>Sie können damit die Anzahl der Tage festlegen, ab denen Sendungen mit inkonsistentem Status von der Zählung laufender Sendungen ausgeschlossen werden.</p><p>Standardmäßig ist der Wert auf "7"gesetzt, was bedeutet, dass inkonsistente Sendungen, die älter als 7 Tage sind, ausgeschlossen werden.</p></td> 
+   <td><p>Diese Option wird vom technischen Workflow <span class="uicontrol"><a href="../../workflow/using/about-technical-workflows.md">operationMgt</a></span> verwendet, wenn die Anzahl der ausgeführten Sendungen gezählt wird.</p>Sie können damit die Anzahl der Tage festlegen, ab denen Sendungen mit inkonsistentem Status von der Zählung laufender Sendungen ausgeschlossen werden.</p><p>Standardmäßig ist der Wert auf "7"gesetzt, was bedeutet, dass inkonsistente Sendungen, die älter als 7 Tage sind, ausgeschlossen werden.</p></td> 
   </tr>
   <tr> 
    <td> <span class="uicontrol">NmsPaper_SenderLine1</span> <br /> </td> 
@@ -236,11 +236,11 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsSMS_Priority</span> <br /> </td> 
-   <td> Parameter für gesendete SMS-Nachrichten: Informationen, die an das SMS-Gateway übermittelt werden, um die Priorität der Nachricht anzugeben.<br /> </td> 
+   <td> Parameter der gesendeten SMS-Nachrichten: Informationen, die an das SMS-Gateway übermittelt werden, um die Priorität der Nachricht anzugeben.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsSMS_RetryCount</span> <br /> </td> 
-   <td> Anzahl der weiteren Zustellversuche beim Versand von SMS-Nachrichten.<br /> </td> 
+   <td> Anzahl weiterer Zustellversuche beim Senden von SMS-Nachrichten.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsSMS_RetryPeriod</span> <br /> </td> 
@@ -248,11 +248,11 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsUserAgentStats_LastConsolidation</span> <br /> </td> 
-   <td> Letzter Konsolidierungszeitpunkt für <span class="uicontrol">NmsUserAgent</span> Statistiken.<br /> </td> 
+   <td> Letztes Konsolidierungsdatum für <span class="uicontrol">NmsUserAgent</span>-Statistiken.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsWebSegments_LastStates</span> <br /> </td> 
-   <td> Name der Option, die die Websegmente und deren Status enthält.<br /> </td> 
+   <td> Name der Option, die die Websegmente und ihre Status enthält.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkBarcode_SpecialChar</span> <br /> </td> 
@@ -264,7 +264,7 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkSecurity_Restrict_EditXML</span> </td> 
-   <td> Fügen Sie diese Option mit dem Wert "0" hinzu, um die Bearbeitung des XML-Codes von Sendungen zu deaktivieren (Rechtsklick / <span class="uicontrol">XML-Quelle bearbeiten</span> oder <span class="uicontrol">STRG + F4</span> Verknüpfung).<br /> </td> 
+   <td> Fügen Sie diese Option mit dem Wert "0"hinzu, um die Bearbeitung des XML-Codes von Sendungen zu deaktivieren (Rechtsklick / <span class="uicontrol">XML-Quelle bearbeiten</span> oder Tastaturbefehl <span class="uicontrol">STRG + F4</span> ).<br /> </td> 
   </tr>  
  </tbody> 
 </table>
@@ -295,7 +295,7 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_DefaultIgnoriertImage</span> <br /> </td> 
-   <td> Liste der URL-Masken für die Bilder, die beim Hochladen übersprungen wurden.<br /> </td> 
+   <td> Liste der URL-Masken für die beim Hochladen übersprungenen Bilder.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_ImagePublishing</span> </td> 
@@ -311,11 +311,11 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NcmPublishingDir</span> <br /> </td> 
-   <td> Stammordner für Veröffentlichungen.<br /> Weitere Informationen zur Erstellung von HTML- und Textinhalten finden Sie unter <a href="../../delivery/using/using-a-content-template.md">diesem Abschnitt</a>.<br /> </td> 
+   <td> Stammordner für Veröffentlichungen.<br /> Weiterführende Informationen zur Erstellung von HTML- und Textinhalten finden Sie in <a href="../../delivery/using/using-a-content-template.md">diesem Abschnitt</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkImageUrl</span> <br /> </td> 
-   <td> Hiermit können Sie den Server definieren, auf dem die in den Sendungen verwendeten Bilder gespeichert werden, damit sie vom Browser abgerufen werden können.<br /> Für Build-Versionen &lt;= 5098 verwenden wir die URL der Bilder, die auf die Instanz hochgeladen wurden.<br /> Für Build-Versionen &gt; 5098 verwenden wir stattdessen die öffentliche URL des Versands oder die <span class="uicontrol">XtkFileRes_Public_URL</span> URL der Option.<br /> </td> 
+   <td> Hiermit können Sie den Server definieren, auf dem die in den Sendungen verwendeten Bilder gespeichert werden, damit sie vom Browser abgerufen werden können.<br /> Für Build-Versionen &lt;= 5098 verwenden wir die URL der Bilder, die in die Instanz hochgeladen wurden.<br /> Für Build-Versionen &gt; 5098 verwenden wir stattdessen die öffentliche URL des Versands oder die URL der Option <span class="uicontrol">XtkFileRes_Public_URL</span> .<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_MediaInstance</span> <br /> </td> 
@@ -323,7 +323,7 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_MediaPassword</span> <br /> </td> 
-   <td> Ermöglicht die Konfiguration des Kennworts für das Hochladen von Bildern.<br /> </td> 
+   <td> Ermöglicht Ihnen die Konfiguration des Kennworts für das Hochladen von Bildern.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_MediaServers</span> <br /> </td> 
@@ -356,7 +356,7 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_Duration</span> <br /> </td> 
-   <td> Standardgültigkeitsdauer einer Kampagne (in Sekunden).<br /> </td> 
+   <td> Standardgültigkeitszeitraum einer Kampagne (in Sekunden).<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_LimitConcurrency</span> <br /> </td> 
@@ -364,11 +364,11 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_OperationMgtDebug</span> <br /> </td> 
-   <td> Ermöglicht es Ihnen, die <a href="../../workflow/using/about-technical-workflows.md">operationMgt</a> technische Workflow-Ausführung. Bei Aktivierung (Wert "1") werden die Ausführungsinformationen in den Workflow-Auditprotokollen protokolliert.<br /> </td> 
+   <td> Ermöglicht die Überwachung der Ausführung des technischen Workflows <a href="../../workflow/using/about-technical-workflows.md">operationMgt</a>. Bei Aktivierung (Wert "1") werden die Ausführungsinformationen in den Workflow-Auditprotokollen protokolliert.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_TimeRange</span> <br /> </td> 
-   <td> Zeitraum für Targeting- und Extraktionsbedingungen im terminierten Modus.<br /> </td> 
+   <td> Zeitraum für Targeting- und Extraktionsbedingungen im geplanten Modus.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Workflow_AnalysisThreshold</span> <br /> </td> 
@@ -380,7 +380,7 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsServer_PausedWorkflowPeriod</span> <br /> </td> 
-   <td> Anzahl der Tage, die zwischen den Prüfungen auf angehaltene Workflows gewartet werden sollen<br /> </td> 
+   <td> Anzahl der Tage, die zwischen den Prüfungen auf angehaltene Workflows gewartet werden sollen.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsCampaign_Activate_OwnerConfirmation</span> <br /> </td> 
@@ -404,7 +404,7 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
  </thead> 
  <tbody> 
   <tr> 
-   <td> <span class="uicontrol">RestrictEditingOTBSchema</span> <br /> </td> 
+   <td> <span class="uicontrol">RestrictEditingOOTBSchema</span> <br /> </td> 
    <td> (ab Version 21.1.3) Wenn 1 ausgewählt ist (Standardwert), deaktiviert diese Option die Bearbeitung von integrierten Schemas.<br /> </td> 
   </tr> 
   <tr> 
@@ -413,7 +413,7 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkAcceptOldPasswords</span> <br /> </td> 
-   <td> (Kompatibilitätsmodus installieren: Build &gt; 6000) Wenn aktiviert (Wert "1"), ermöglicht diese Option die Verwendung alter in der Datenbank gespeicherter Passwörter für die Verbindung zu externen Konten oder zur Instanz.<br /> </td> 
+   <td> (Kompatibilitätsmodus installieren: Build &gt; 6000) Wenn aktiviert (Wert "1"), ermöglicht diese Option die Verwendung alter in der Datenbank gespeicherter Kennwörter für die Verbindung zu externen Konten oder zur Instanz.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkKey</span> <br /> </td> 
@@ -421,7 +421,7 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkSecurity_Allow_PrivilegeEscalation</span> <br /> </td> 
-   <td> Wenn 1 ausgewählt ist, aktivieren Sie diese Option, um die PrivilegeEscalation in JavaScript zu ermöglichen.<br /> </td> 
+   <td> Wenn 1 ausgewählt ist, aktivieren Sie diese Option, um die PrivilegeEscalation in JavaScript zuzulassen.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkSecurity_Disable_ControlsOnFileDownload</span> <br /> </td> 
@@ -437,7 +437,7 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkSecurity_Unsafe_DecryptString</span> <br /> </td> 
-   <td> Wenn 1 ausgewählt ist, kann diese Option decryptString verwenden, um einige Passwörter zu entschlüsseln.<br /> </td> 
+   <td> Wenn 1 ausgewählt ist, können Sie mit dieser Option decryptString verwenden, um einige Passwörter zu entschlüsseln.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkTraceDeleteLogin</span> <br /> </td> 
@@ -460,8 +460,8 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
    <td> <span class="uicontrol">MC_EnrichmentCustomJs</span> <br /> </td> 
    <td> JavaScript-Bibliothek, die für die Anreicherung von Ereignissen personalisiert werden soll. Muss die Implementierung dieser beiden Funktionen enthalten:<br /> 
     <ul> 
-     <li> <p> <span class="uicontrol">enrichRtEvents(aiEventId);</span> : erweitert und speichert Ereignisse in der Datenbank (wobei <span class="uicontrol">aiEventId</span> entspricht der Tabelle der verarbeiteten Echtzeit-Ereignisse).</p> </li> 
-     <li> <p> <span class="uicontrol">enrichBatchEvents(aiEventId);</span> : erweitert und speichert Ereignisse in der Datenbank (wobei <span class="uicontrol">aiEventId</span> entspricht der ID-Tabelle der verarbeiteten Batch-Ereignisse).</p> </li> 
+     <li> <p> <span class="uicontrol">enrichRtEvents(aiEventId);</span> : Hiermit werden Ereignisse in der Datenbank angereichert und gespeichert (wobei <span class="uicontrol">aiEventId</span> der Tabelle der verarbeiteten Echtzeit-Ereignisse entspricht).</p> </li> 
+     <li> <p> <span class="uicontrol">enrichBatchEvents(aiEventId);</span> : Hiermit werden Ereignisse angereichert und in der Datenbank gespeichert (wobei <span class="uicontrol">aiEventId</span> der ID-Tabelle der verarbeiteten Batch-Ereignisse entspricht).</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -470,19 +470,19 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RoutingCustomJs</span> <br /> </td> 
-   <td> JavaScript-Bibliothek, die für Routing-Ereignisse personalisiert werden soll. Muss die Implementierung dieser beiden Funktionen enthalten:<br /> 
+   <td> JavaScript-Bibliothek, die für Routing-Ereignisse personalisiert wird. Muss die Implementierung dieser beiden Funktionen enthalten:<br /> 
     <ul> 
-     <li> <p> <span class="uicontrol">dispatcherRtEvent(iEventId);</span> : gibt den internen Namen der Transaktionsnachricht zurück, die zur Verarbeitung des Echtzeit-Ereignisses ausgewählt wurde (wobei <span class="uicontrol">iEventId</span> entspricht der ID des verarbeiteten Echtzeit-Ereignisses).</p> </li> 
-     <li> <p> <span class="uicontrol">dispatchBatchEvent(iEventId);</span> : gibt den internen Namen der für die Verarbeitung des Batch-Ereignisses ausgewählten Transaktionsnachricht zurück (wobei <span class="uicontrol">iEventId</span> entspricht der Kennung des verarbeiteten Batch-Ereignisses).</p> </li> 
+     <li> <p> <span class="uicontrol">patchRtEvent(iEventId);</span> : gibt den internen Namen der für die Verarbeitung des Echtzeit-Ereignisses ausgewählten Transaktionsnachricht zurück (wobei <span class="uicontrol">iEventId</span> der Kennung des verarbeiteten Echtzeit-Ereignisses entspricht).</p> </li> 
+     <li> <p> <span class="uicontrol">dispatchBatchEvent(iEventId);</span> : gibt den internen Namen der für die Verarbeitung des Batch-Ereignisses ausgewählten Transaktionsnachricht zurück (wobei <span class="uicontrol">iEventId</span> der Kennung des verarbeiteten Batch-Ereignisses entspricht).</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventAvgDeliveryTimeAlert</span> <br /> </td> 
-   <td> Warnschwellenwert der durchschnittlichen Sendezeit von Echtzeit-Ereignissen.<br /> </td> 
+   <td> Warnschwellenwert für die durchschnittliche Versandzeit von Echtzeit-Ereignissen.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventAvgDeliveryTimeWarning</span> <br /> </td> 
-   <td> Warnungsschwelle für die durchschnittliche Sendezeit von Echtzeit-Ereignissen.<br /> </td> 
+   <td> Warnungsschwelle für die durchschnittliche Versandzeit von Echtzeit-Ereignissen.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventAvgProcessTimeAlert</span> <br /> </td> 
@@ -490,11 +490,11 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventAvgProcessTimeWarning</span> <br /> </td> 
-   <td> Warnungsschwelle für die durchschnittliche Verarbeitungszeit von Echtzeit-Ereignissen.<br /> </td> 
+   <td> Warnschwellenwert für die durchschnittliche Verarbeitungszeit von Echtzeit-Ereignissen.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventAvgQueueAlert</span> <br /> </td> 
-   <td> Warnschwellenwert für die durchschnittliche Anzahl der Echtzeit-Ereignisse in der Warteschlange.<br /> </td> 
+   <td> Schwellenwert für Warnhinweise für die durchschnittliche Anzahl von Echtzeit-Ereignissen in der Warteschlange.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventAvgQueueTimeAlert</span> <br /> </td> 
@@ -502,7 +502,7 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventAvgQueueTimeWarning</span> <br /> </td> 
-   <td> Warnungsschwelle für die durchschnittliche Wartezeit von Echtzeit-Ereignissen.<br /> </td> 
+   <td> Warnschwellenwert für die durchschnittliche Wartezeit von Echtzeit-Ereignissen.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventAvgQueueWarning</span> <br /> </td> 
@@ -558,7 +558,7 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsLine_MessageCenterURL</span> <br /> </td> 
-   <td> Message Center Server URL, die zum Senden von Willkommensnachrichten verwendet wird (LINE-Kanal).<br /> </td> 
+   <td> Message Center-Server-URL, die zum Senden von Willkommensnachrichten verwendet wird (LINE-Kanal).<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -628,7 +628,7 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcCapabilities_AzureDw</span> <br /> </td> 
-   <td> Azure SQL Data Warehouse-Connector-Optionen.<br /> </td> 
+   <td> Azure SQL Datawarehouse-Connector-Optionen.<br /> </td> 
   </tr>
    <tr> 
    <td> <span class="uicontrol">WdbcKillSessionPolicy</span> <br /> </td> 
@@ -639,23 +639,23 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr>  
     <tr> 
    <td> <span class="uicontrol">WdbcOptions_TableSpaceUser</span> <br /> </td> 
-   <td> Name des Tablespace, der die Daten der Adobe Campaign-OTB-Tabellen enthalten soll.<br />Siehe <a href="../../installation/using/creating-and-configuring-the-database.md">Datenbank erstellen und konfigurieren</a>.</td> 
+   <td> Name des Tablespace, der die Daten der Adobe Campaign-OTB-Tabellen enthalten soll.<br />Siehe <a href="../../installation/using/creating-and-configuring-the-database.md">Erstellen und Konfigurieren der Datenbank</a>.</td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcOptions_TableSpaceIndex</span> <br /> </td> 
-   <td> Name des Tablespace, der die Indizes der Adobe Campaign-OOTB-Tabellen enthalten soll.<br />Siehe <a href="../../installation/using/creating-and-configuring-the-database.md">Datenbank erstellen und konfigurieren</a>.</td> 
+   <td> Name des Tablespace, der die Indizes der Adobe Campaign-OOTB-Tabellen enthalten soll.<br />Siehe <a href="../../installation/using/creating-and-configuring-the-database.md">Erstellen und Konfigurieren der Datenbank</a>.</td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcOptions_TableSpaceWork</span> <br /> </td> 
-   <td> Name des Tablespace, der die Daten der Adobe Campaign-Arbeitstabellen enthalten soll.<br />Siehe <a href="../../installation/using/creating-and-configuring-the-database.md">Datenbank erstellen und konfigurieren</a>.</td> 
+   <td> Name des Tablespace, der die Daten der Adobe Campaign-Arbeitstabellen enthalten soll.<br />Siehe <a href="../../installation/using/creating-and-configuring-the-database.md">Erstellen und Konfigurieren der Datenbank</a>.</td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcOptions_TableSpaceWorkIndex</span> <br /> </td> 
-   <td> Name des Tablespace, der die Indizes der Adobe Campaign-Arbeitstabellen enthalten soll.<br />Siehe <a href="../../installation/using/creating-and-configuring-the-database.md">Datenbank erstellen und konfigurieren</a>.</td> 
+   <td> Name des Tablespace, der die Indizes der Adobe Campaign-Arbeitstabellen enthalten soll.<br />Siehe <a href="../../installation/using/creating-and-configuring-the-database.md">Erstellen und Konfigurieren der Datenbank</a>.</td> 
   </tr> 
     <tr> 
    <td> <span class="uicontrol">WdbcOptions_TempDbName</span> <br /> </td> 
-   <td> Ermöglicht die Konfiguration einer separaten Datenbank für Arbeitstabellen auf Microsoft SQL Server, um Backups und Replikation zu optimieren. Die Option entspricht dem Namen der temporären Datenbank: Arbeitstabellen werden in diese Datenbank geschrieben, falls angegeben. Beispiel: "tempdb.dbo". (Beachten Sie, dass der Name mit einem Punkt enden muss). <a href="../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server">Mehr dazu</a> <br /> </td> 
+   <td> Ermöglicht die Konfiguration einer separaten Datenbank für Arbeitstabellen auf Microsoft SQL Server, um Backups und Replikation zu optimieren. Die Option entspricht dem Namen der temporären Datenbank: Arbeitstabellen werden in diese Datenbank geschrieben, falls angegeben. Beispiel: "tempdb.dbo". (Beachten Sie, dass der Name mit einem Punkt enden muss). <a href="../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server">mehr lesen</a> <br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcTimeZone</span> <br /> </td> 
@@ -679,7 +679,7 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkQuery_Schema_LineCount</span> <br /> </td> 
-   <td> Maximale Anzahl der Ergebnisse, die von einer Abfrage für xtk:schema und xtk:srcSchema zurückgegeben werden.<br /> </td> 
+   <td> Maximale Anzahl an Ergebnissen, die von einer Abfrage für xtk:schema und xtk:srcSchema zurückgegeben werden.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkSequence_AutoGeneration</span> <br /> </td> 
@@ -691,7 +691,7 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NlMigration_KeepFolderStructure</span> <br /> </td> 
-   <td> Während der Migration wird die Baumstruktur automatisch basierend auf den neuen Versionsstandards neu organisiert.<br /> Mit dieser Option können Sie die automatische Migration der Navigationsstruktur deaktivieren. Wenn Sie es verwenden, müssen Sie nach der Migration veraltete Ordner löschen, die neuen Ordner hinzufügen und alle erforderlichen Prüfungen durchführen.<br /> 
+   <td> Während der Migration wird die Baumstruktur automatisch basierend auf den neuen Versionsstandards neu organisiert.<br /> Mit dieser Option können Sie die automatische Migration der Navigationsstruktur deaktivieren. Wenn Sie es verwenden, müssen Sie nach der Migration veraltete Ordner löschen, die neuen Ordner hinzufügen und alle erforderlichen Prüfungen ausführen.<br /> 
     <ul> 
      <li> <p> <span class="uicontrol">Datentyp:</span> Ganzzahl</p> </li> 
      <li> <p> <span class="uicontrol">Wert (text)</span> : 1 </p> </li> 
@@ -699,15 +699,15 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsLastErrorStatCoalesce</span> <br /> </td> 
-   <td> Letztes Verarbeitungsdatum des <span class="uicontrol">NmsEmailErrorStat</span> Tabellenbereinigung.<br /> </td> 
+   <td> Letztes Verarbeitungsdatum der <span class="uicontrol">NmsEmailErrorStat</span> -Tabellenbereinigung.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">PostUpgradeLastError</span> <br /> </td> 
-   <td> Informationen zum Fehler, der beim Postupgrade aufgetreten ist, entsprechend der folgenden Syntax:<br /> <strong>{Build number}:{mode: pre/post/..}:{The 'lessThan'/'greaterOrEquelThan' where error occur + sub step}</strong> </td> 
+   <td> Informationen zum Fehler, der im Postupgrade aufgetreten ist, entsprechend der unten stehenden Syntax:<br /> <strong>{Build number}:{mode: pre/post/..}:{The 'lessThan'/'greaterOrEquelThan' where error occur + sub step}</strong> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkCleanup_NoStats</span> <br /> </td> 
-   <td> Geben Sie den Wert "1" ein, damit die Aktualisierung der Statistiken nicht über den Bereinigungs-Workflow erfolgt.<br /> </td> 
+   <td> Geben Sie den Wert "1"ein, damit die Aktualisierung der Statistiken nicht über den Bereinigungs-Workflow erfolgt.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -728,31 +728,31 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">nmsPipeline_config</span> <br /> </td> 
-   <td> Ermöglicht die Konfiguration von Experience Cloud-Triggern. Der Datentyp ist "long text"und muss im JSON-Format vorliegen. Siehe <a class="anchorLink" href="https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html#PipelineoptionNmsPipelineConfig" target="_blank">Verwendung von Experience Cloud-Triggern mit Adobe Campaign Classic</a>.<br /> </td> 
+   <td> Ermöglicht die Konfiguration von Experience Cloud-Triggern. Der Datentyp ist "long text"und muss im JSON-Format vorliegen. Siehe <a class="anchorLink" href="https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html#PipelineoptionNmsPipelineConfig" target="_blank">Verwenden von Experience Cloud-Triggern mit Adobe Campaign Classic</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">LASTIMPORT_&lt;%=instance.internalName%&gt;_&lt;%=activityName%&gt;</span> <br /> </td> 
    <td> Diese Option wird beim Import von Daten aus einem Drittanbietersystem über einen CRM-Connector verwendet. Durch Aktivierung dieser Option können nur die seit dem letzten Import geänderten Objekte erfasst werden. Diese Option muss manuell wie unten dargestellt erstellt und ausgefüllt werden: 
     <ul> 
      <li> <p> <span class="uicontrol">Interner Name</span> : LASTIMPORT_&lt;%=instance.internalName%&gt;_&lt;%=activityName%&gt;</p> </li> 
-     <li> <p> <span class="uicontrol">Wert (Feld)</span> : Datum des letzten Imports mit JJJJ/MM/TT HH:mm:ss-Format. </p> </li> 
+     <li> <p> <span class="uicontrol">Wert (Feld)</span> : Datum des letzten Imports mit dem Format jjj/MM/tt und h:mm:ss. </p> </li> 
     </ul><br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">TNT_EdgeServer</span> <br /> </td> 
-   <td> Für die Integration verwendeter Adobe Target-Server. Diese Option ist standardmäßig bereits ausgewählt. Dieser Wert entspricht dem Adobe Target Domain Server , gefolgt vom Wert /m2. Beispiel: tt.omtrdc.net/m2.<br /> Siehe <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">diesem Abschnitt</a>.<br /> </td> 
+   <td> Für die Integration verwendeter Adobe Target-Server. Diese Option ist standardmäßig ausgefüllt. Dieser Wert entspricht dem Adobe Target Domain Server , gefolgt vom Wert /m2. Beispiel: tt.omtrdc.net/m2.<br /> Siehe <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">diesen Abschnitt</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">TNT_TenantName</span> <br /> </td> 
-   <td> Name der Adobe Target-Organisation. Dieser Wert entspricht dem Namen des Adobe Target-Clients.<br /> Siehe <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">diesem Abschnitt</a>.<br /> </td> 
+   <td> Name der Adobe Target-Organisation. Dieser Wert entspricht dem Namen des Adobe Target-Clients.<br /> Siehe <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">diesen Abschnitt</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">AAM_DataSourceId</span> <br /> </td> 
-   <td> Die für die Integration mit Adobe Audience Manager verwendete Option.<br /> </td> 
+   <td> Für die Integration mit Adobe Audience Manager verwendete Option.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">AAM_DestinationId</span> <br /> </td> 
-   <td> Die für die Integration mit Adobe Audience Manager verwendete Option.<br /> </td> 
+   <td> Für die Integration mit Adobe Audience Manager verwendete Option.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcCapabilities_Teradata</span> <br /> </td> 
@@ -797,7 +797,7 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsModule_CouponsEnabled</span> <br /> </td> 
-   <td> Ermöglicht die Aktivierung von Coupons.<br /> </td> 
+   <td> Ermöglicht Ihnen die Aktivierung von Gutscheinen.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -826,7 +826,7 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsServer_LastPostUpgrade</span> <br /> </td> 
-   <td> Build-Nummer der AC-Instanz vor der letzten Aktualisierung.<br /> </td> 
+   <td> Build-Nummer der AC-Instanz vor dem letzten Upgrade.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsServer_URL</span> <br /> </td> 
@@ -851,7 +851,7 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_Available</span> <br /> </td> 
-   <td> Option zur Aktivierung des Trackings.<br /> </td> 
+   <td> Option, die die Aktivierung des Trackings ermöglicht.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_ClickFormula</span> <br /> </td> 
@@ -863,7 +863,7 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_Instance</span> <br /> </td> 
-   <td> Ermöglicht die Definition des Instanznamens auf dem Tracking-Server.<br /> </td> 
+   <td> Hiermit können Sie den Instanznamen auf dem Tracking-Server definieren.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_LastConsolidation</span> <br /> </td> 
@@ -878,7 +878,7 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
    <td> Kennwort für den Tracking-Server<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">NmsTracking_Pointer</span> <br /> </td> 
+   <td> <span class="uicontrol">NmsTracking_pointer</span> <br /> </td> 
    <td> Der Zeiger verfolgt die letzten Nachrichtenereignisse, die über ihre IDs und ihr Datum verarbeitet wurden.<br /> </td> 
   </tr> 
   <tr> 
@@ -887,7 +887,7 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_ServerUrl</span> <br /> </td> 
-   <td> URL des Frontaltracking-Servers<br /> </td> 
+   <td> URL des Frontaltracking-Servers.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_ServerUrlList</span> <br /> </td> 
@@ -895,7 +895,7 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_UserAgentRules</span> <br /> </td> 
-   <td> Regelsatz zur Browseridentifizierung.<br /> </td> 
+   <td> Regelsatz für die Browseridentifizierung.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsTracking_WebFormula</span> <br /> </td> 
@@ -928,11 +928,11 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Privacy_Request_ConfirmDeletePendingDelay</span> <br /> </td> 
-   <td> Die Verzögerung zwischen der Anforderung, die auf das Löschen der Bestätigung wartet, und der Abbruch der Anforderung.<br /> </td> 
+   <td> Die Verzögerung zwischen der Anforderung, die auf das Löschen der Bestätigung wartet, und der Löschvorgang der Anforderung wird abgebrochen.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Privacy_Request_MaxErrorAllowed</span> <br /> </td> 
-   <td> Die maximale Fehleranzahl, die beim Verarbeiten/Löschen einer Datenschutzanfrage zulässig ist.<br /> </td> 
+   <td> Die maximal zulässige Fehleranzahl beim Verarbeiten/Löschen einer Datenschutzanfrage.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">privacy_request_purgeDelay</span> <br /> </td> 
@@ -997,7 +997,7 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_RightsAttr</span> <br /> </td> 
-   <td> LDAP-Attribut mit dem Autorisierungsnamen.<br /> </td> 
+   <td> LDAP-Attribut, das den Autorisierungsnamen enthält.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_RightsBase</span> <br /> </td> 
@@ -1017,7 +1017,7 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkLdap_Server</span> <br /> </td> 
-   <td> LDAP-Server-Adresse (es ist möglich, einen Port durch Angabe von ":"als Trennzeichen anzugeben).<br /> </td> 
+   <td> LDAP-Server-Adresse (es ist möglich, einen Port anzugeben, indem ":"als Trennzeichen angegeben wird).<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1038,19 +1038,19 @@ Die **[!UICONTROL Administration/Plattform/Optionen]** -Knoten ermöglicht die K
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkWebForm_Instance</span> <br /> </td> 
-   <td> Instanz, die für die Invalidierung eines Webformulars im Modus "Andere Server(s)"verwendet wird.<br /> </td> 
+   <td> Instanz, die für die Invalidierung eines Webformulars im Modus "Andere Server(s)"verwendet werden soll.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkWebForm_Password</span> <br /> </td> 
-   <td> Kennwort der Instanz, die für die Invalidierung eines Webformulars im Modus "Andere Server" verwendet werden soll.<br /> </td> 
+   <td> Kennwort der Instanz, die für die Invalidierung eines Webformulars im Modus "Andere Server(s)"verwendet werden soll.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkWebForm_ServersMode</span> <br /> </td> 
-   <td> Option, mit der Sie den Invalidierungsmodus für Webformulare festlegen können: standardmäßig lokal, verwendet Trackingserver, wenn die Option 'tracking' ist, und verwendet eine personalisierte Liste mit der Option 'other server'.<br /> </td> 
+   <td> Option, mit der Sie den Invalidierungsmodus für Webformulare festlegen können: standardmäßig lokal, verwendet Trackingserver, wenn die Option 'tracking' ist, und verwendet eine personalisierte Liste mit der Option 'other server(s)'.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkWebForm_ServersURLs</span> <br /> </td> 
-   <td> Personalisierte Adressliste der Server, die bei der Invalidierung eines Webformulars kontaktiert werden sollen ("anderer Server"-Modus).<br /> </td> 
+   <td> Personalisierte Adressliste der Server, die bei der Invalidierung eines Webformulars kontaktiert werden sollen ("Modus anderer Server(s)").<br /> </td> 
   </tr> 
  </tbody> 
 </table>

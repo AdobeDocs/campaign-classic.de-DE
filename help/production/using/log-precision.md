@@ -11,7 +11,7 @@ exl-id: c2470098-62f3-4fee-b1c5-800ed0e91f75
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
 source-wordcount: '327'
-ht-degree: 78%
+ht-degree: 79%
 
 ---
 
@@ -49,7 +49,7 @@ Adobe Campaign kann mit zwei Protokollierungsstufen betrieben werden:
 
    >[!NOTE]
    >
-   >Wenn Sie **tracefilter:&#42;**, werden alle Protokolltypen aktiviert: ncm, rdr, nms, jst, timing, wdbc, ldap, soap, xtk, xtkquery, session, xtkwriter, network, pop3, inmail\
+   >Wenn Sie **trackingFilter:&#42;** verwenden, werden alle Protokolltypen aktiviert: ncm, rdr, nms, jst, timing, wdbc, ldap, soap, xtk, xtkquery, session, xtkwriter, network, pop3, inmail\
    Die nützlichsten Protokolltypen sind: **wdbc** (zeigt alle SQL-Abfragen an), **soap** (zeigt alle SOAP-Aufrufe an), **ldap** (zeigt alle LDAP-Abfragen nach der Authentifizierung an), **xtkquery** (zeigt die Liste aller Abfragedef an).\
    Sie können sie einzeln verwenden (**z. B. trackFilter:soap,wdbc** ). Sie können auch alle aktivieren und bestimmte andere ausschließen: **-tracefilter:&#42;,!soap**
 
@@ -71,7 +71,7 @@ Vergewissern Sie sich vor dem Senden dieses Befehls, dass kein laufender Auftrag
 nlserver pdump -who
 ```
 
-Fahren Sie als Nächstes herunter und starten Sie das Modul neu in **TraceFilter** mode:
+Fahren Sie anschließend das Modul herunter und starten Sie es im Modus **TraceFilter** neu:
 
 ```
 nlserver stop web; LD_PRELOAD=libjsig.so nlserver web -tomcat -verbose -tracefilter:* -tracefile:web_debug@default

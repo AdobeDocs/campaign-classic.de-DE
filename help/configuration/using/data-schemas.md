@@ -40,16 +40,16 @@ Die Vorschau generiert automatisch das erweiterte Schema:
 >
 >Beim Speichern des Quellschemas wird die Generierung des erweiterten Schemas automatisch gestartet.
 
-Wenn Sie die gesamte Struktur eines Schemas überprüfen müssen, können Sie den Vorschau -Tab verwenden. Wenn das Schema erweitert wurde, können Sie alle seine Erweiterungen visuell darstellen. Als Komplement werden auf der Registerkarte Dokumentation alle Schemaattribute und -elemente sowie deren Eigenschaften (SQL-Feld, Typ/Länge, Titel, Beschreibung) angezeigt. Der Tab Dokumentation gilt nur für erstellte Schemata. Weitere Informationen hierzu finden Sie im Abschnitt [Regenerieren von Schemata](../../configuration/using/regenerating-schemas.md) Abschnitt.
+Wenn Sie die gesamte Struktur eines Schemas überprüfen müssen, können Sie den Vorschau -Tab verwenden. Wenn das Schema erweitert wurde, können Sie alle seine Erweiterungen visuell darstellen. Als Komplement werden auf der Registerkarte Dokumentation alle Schemaattribute und -elemente sowie deren Eigenschaften (SQL-Feld, Typ/Länge, Titel, Beschreibung) angezeigt. Der Tab Dokumentation gilt nur für erstellte Schemata. Weitere Informationen hierzu finden Sie im Abschnitt [Regenerating schemas](../../configuration/using/regenerating-schemas.md) .
 
 ## Beispiel: Erstellen einer Vertragstabelle {#example--creating-a-contract-table}
 
-Im folgenden Beispiel möchten wir eine neue Tabelle für **Aufträge** im Datenbankmodell der Adobe Campaign-Datenbank. In dieser Tabelle können Sie Vor- und Nachnamen sowie E-Mail-Adressen von Inhabern und Mitinhabern für jeden Vertrag speichern.
+Im folgenden Beispiel wird eine neue Tabelle für **Auftragnehmer** im Datenbankmodell der Adobe Campaign-Datenbank erstellt. In dieser Tabelle können Sie Vor- und Nachnamen sowie E-Mail-Adressen von Inhabern und Mitinhabern für jeden Vertrag speichern.
 
 Dazu müssen Sie das Schema der Tabelle erstellen und die Datenbankstruktur aktualisieren, um die entsprechende Tabelle zu erstellen. Folgende Schritte sind dazu nötig:
 
-1. Bearbeiten Sie die **[!UICONTROL Administration > Konfiguration > Datenschemata]** Knoten der Adobe Campaign-Struktur und klicken Sie auf **[!UICONTROL Neu]** .
-1. Wählen Sie die **[!UICONTROL Erstellen einer neuen Tabelle im Datenmodell]** und klicken Sie auf **[!UICONTROL Nächste]** .
+1. Bearbeiten Sie den Knoten **[!UICONTROL Administration > Konfiguration > Datenschemata]** des Adobe Campaign-Baums und klicken Sie auf **[!UICONTROL Neu]** .
+1. Wählen Sie die Option **[!UICONTROL Neue Tabelle im Datenmodell erstellen]** und klicken Sie auf **[!UICONTROL Weiter]** .
 
    ![](assets/s_ncs_configuration_create_new_schema.png)
 

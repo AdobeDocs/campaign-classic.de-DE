@@ -5,7 +5,7 @@ description: Erfahren Sie mehr über die Workflow-Aktivität "Dateiübertragung"
 feature: Workflows, Data Management
 exl-id: 8025d207-3bc0-400f-b6a4-a72765e5a9d2
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '645'
 ht-degree: 100%
 

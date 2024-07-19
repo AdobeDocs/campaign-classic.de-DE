@@ -21,7 +21,7 @@ Die grundlegende Struktur eines Schemas wird nachfolgend beschrieben.
 
 ## Datenschemata  {#data-schema}
 
-Für `<srcschema>`, lautet die Struktur wie folgt:
+Für einen `<srcschema>` ist die Struktur wie folgt:
 
 ```sql
 <srcSchema>
@@ -105,7 +105,7 @@ In unserem Beispiel wird das Hauptelement durch die folgende Zeile dargestellt:
 <element name="recipient">
 ```
 
-Die **`<attribute>`** und **`<element>`** -Elemente, die dem Hauptelement folgen, werden verwendet, um die Speicherorte und Namen der Datenelemente in der XML-Struktur zu definieren.
+Die Elemente **`<attribute>`** und **`<element>`**, die dem Hauptelement folgen, werden verwendet, um die Speicherorte und Namen der Datenelemente in der XML-Struktur zu definieren.
 
 In unserem Beispielschema sind dies:
 
@@ -134,7 +134,7 @@ Es gelten die folgenden Regeln:
 
 Der Datentyp wird über das Attribut **type** in den Elementen **`<attribute>`** und **`<element>`** eingegeben.
 
-Eine detaillierte Liste finden Sie in der Beschreibung der [`<attribute>` element](../../configuration/using/schema/attribute.md) und [`<element>` element](../../configuration/using/schema/element.md).
+Eine detaillierte Liste finden Sie in der Beschreibung des Elements [`<attribute>` ](../../configuration/using/schema/attribute.md) und des Elements [`<element>` ](../../configuration/using/schema/element.md).
 
 Wenn dieses Attribut nicht gefüllt wird, ist **string** der Standarddatentyp, es sei denn, das Element enthält untergeordnete Elemente. Wenn es gefüllt ist, wird es nur zur hierarchischen Strukturierung der Elemente verwendet (Element **`<location>`** in unserem Beispiel).
 
@@ -151,11 +151,11 @@ Die folgenden Datentypen werden in Schemata unterstützt:
 * **datetimenotz**: Datum + Uhrzeit ohne Zeitzonendaten.
 * **timespan**: Dauer. Beispiel: Betriebszugehörigkeit.
 * **memo**: Langtextfelder (mehrere Zeilen). Beispiele: eine Beschreibung, ein Kommentar usw.
-* **uuid**: Felder &quot;uniqueidentifier&quot;, um eine GUID zu unterstützen (nur in Microsoft SQL Server unterstützt).
+* **uuid**: Felder &quot;uniqueidentifier&quot;, um eine GUID zu unterstützen (nur bei Microsoft SQL Server unterstützt).
 
   >[!NOTE]
   >
-  >So enthalten Sie eine **uuid** -Feld in RDBMS außer Microsoft SQL Server, `the newuuid()` -Funktion hinzugefügt und mit dem Standardwert ausgefüllt werden.
+  >Um ein Feld **uuid** in einem anderen RDBMS als Microsoft SQL Server zu enthalten, muss die Funktion `the newuuid()` hinzugefügt und mit dem Standardwert ausgefüllt werden.
 
 Im Folgenden finden Sie unser Schema mit den eingegebenen Typen:
 
@@ -186,10 +186,10 @@ In der folgenden Tabelle sind die Zuordnungen für die Datentypen aufgeführt, d
   <tr> 
    <td> String <br /> </td> 
    <td> VARCHAR(255)<br /> </td> 
-   <td> VARCHAR2 (NVARCHAR2, falls Unicode vorhanden)<br /> </td> 
+   <td> VARCHAR2 (NVARCHAR2 bei Unicode)<br /> </td> 
   </tr> 
   <tr> 
-   <td> Boolesch<br /> </td> 
+   <td> Boolean<br /> </td> 
    <td> SMALLINT<br /> </td> 
    <td> NUMBER(3)<br /> </td> 
   </tr> 
@@ -199,17 +199,17 @@ In der folgenden Tabelle sind die Zuordnungen für die Datentypen aufgeführt, d
    <td> NUMBER(3)<br /> </td> 
   </tr> 
   <tr> 
-   <td> Short<br /> </td> 
+   <td> short<br /> </td> 
    <td> SMALLINT<br /> </td> 
    <td> NUMBER(5)<br /> </td> 
   </tr> 
   <tr> 
    <td> Double<br /> </td> 
-   <td> DOPPELPRÄZISE<br /> </td> 
-   <td> FLUSS<br /> </td> 
+   <td> DOPPELPRÄZISION<br /> </td> 
+   <td> FLOAT<br /> </td> 
   </tr> 
   <tr> 
-   <td> Lang<br /> </td> 
+   <td> Long<br /> </td> 
    <td> INTEGER<br /> </td> 
    <td> NUMBER(10)<br /> </td> 
   </tr> 
@@ -220,33 +220,33 @@ In der folgenden Tabelle sind die Zuordnungen für die Datentypen aufgeführt, d
   </tr> 
   <tr> 
    <td> Datum<br /> </td> 
-   <td> DATUM<br /> </td> 
-   <td> DATUM<br /> </td> 
+   <td> DATE<br /> </td> 
+   <td> DATE<br /> </td> 
   </tr> 
   <tr> 
    <td> Zeit<br /> </td> 
    <td> ZEIT<br /> </td> 
-   <td> FLUSS<br /> </td> 
+   <td> FLOAT<br /> </td> 
   </tr> 
   <tr> 
-   <td> DatumUhrzeit<br /> </td> 
+   <td> dateTime<br /> </td> 
    <td> TIMESTAMPZ<br /> </td> 
-   <td> DATUM<br /> </td> 
+   <td> DATE<br /> </td> 
   </tr> 
   <tr> 
    <td> Datetimenotz<br /> </td> 
    <td> TIMESTAMPZ<br /> </td> 
-   <td> DATUM<br /> </td> 
+   <td> DATE<br /> </td> 
   </tr> 
   <tr> 
-   <td> Zeitbereich<br /> </td> 
-   <td> DOPPELPRÄZISE<br /> </td> 
-   <td> FLUSS<br /> </td> 
+   <td> Timespan<br /> </td> 
+   <td> DOPPELPRÄZISION<br /> </td> 
+   <td> FLOAT<br /> </td> 
   </tr> 
   <tr> 
    <td> Memo<br /> </td> 
    <td> TEXT<br /> </td> 
-   <td> CLOB (NCLOB, wenn Unicode)<br /> </td> 
+   <td> CLOB (NCLOB bei Unicode)<br /> </td> 
   </tr> 
   <tr> 
    <td> Blob<br /> </td> 
@@ -258,7 +258,7 @@ In der folgenden Tabelle sind die Zuordnungen für die Datentypen aufgeführt, d
 
 ## Eigenschaften {#properties}
 
-Die **`<elements>`** und **`<attributes>`** -Elemente des Datenschemas können mit verschiedenen Eigenschaften angereichert werden. Sie können ein Label ausfüllen, um das aktuelle Element zu beschreiben.
+Die Elemente **`<elements>`** und **`<attributes>`** des Datenschemas können mit verschiedenen Eigenschaften angereichert werden. Sie können ein Label ausfüllen, um das aktuelle Element zu beschreiben.
 
 ### Labels und Beschreibungen {#labels-and-descriptions}
 
@@ -294,9 +294,9 @@ Die **`<elements>`** und **`<attributes>`** -Elemente des Datenschemas können m
 
 ### Standardwerte {#default-values}
 
-Verwenden Sie die **default** -Eigenschaft zum Definieren eines Ausdrucks, der bei der Inhaltserstellung einen Standardwert zurückgibt.
+Verwenden Sie die Eigenschaft **default** , um einen Ausdruck zu definieren, der bei der Inhaltserstellung einen Standardwert zurückgibt.
 
-Der Wert muss ein mit der XPath-Sprache kompatibler Ausdruck sein. Weitere Informationen hierzu finden Sie unter [Verweisen mit XPath](../../configuration/using/schema-structure.md#referencing-with-xpath).
+Der Wert muss ein mit der XPath-Sprache kompatibler Ausdruck sein. Weitere Informationen hierzu finden Sie unter [Verweisen auf XPath](../../configuration/using/schema-structure.md#referencing-with-xpath).
 
 **Beispiel**:
 
@@ -307,9 +307,9 @@ Der Wert muss ein mit der XPath-Sprache kompatibler Ausdruck sein. Weitere Infor
 
   >[!NOTE]
   >
-  >Navigieren Sie in der Adobe Campaign-Clientkonsole zu **[!UICONTROL Administration > Zähler]** Ordner des Explorers, in dem Zähler verwaltet werden sollen.
+  >Navigieren Sie in der Adobe Campaign-Clientkonsole zum Ordner **[!UICONTROL Administration > Zähler]** des Explorers, um Zähler zu verwalten.
 
-Um einen Standardwert mit einem Feld zu verknüpfen, können Sie die `<default>`  oder  `<sqldefault>`   -Feld.
+Um einen Standardwert mit einem Feld zu verknüpfen, können Sie die `<default>` oder `<sqldefault>` verwenden   -Feld.
 
 `<default>` : ermöglicht es Ihnen, das Feld beim Erstellen von Entitäten mit einem Standardwert vorauszufüllen. Der Wert wird kein SQL-Standardwert sein.
 
@@ -319,7 +319,7 @@ Um einen Standardwert mit einem Feld zu verknüpfen, können Sie die `<default>`
 
 #### Aufzählung öffnen {#free-enumeration}
 
-Die **userEnum** -Eigenschaft können Sie eine geöffnete Auflistung definieren, in der die in diesem Feld eingegebenen Werte gespeichert und angezeigt werden.
+Mit der Eigenschaft **userEnum** können Sie eine geöffnete Auflistung definieren, in der die über dieses Feld eingegebenen Werte gespeichert und angezeigt werden.
 
 Die Syntax sieht folgendermaßen aus:
 
@@ -331,7 +331,7 @@ Diese Werte werden in einer Dropdown-Liste im Formular angezeigt:
 
 >[!NOTE]
 >
->Navigieren Sie in der Adobe Campaign-Clientkonsole zu **[!UICONTROL Administration > Auflistungen]** Ordner des Explorers, in dem Auflistungen verwaltet werden sollen.
+>Navigieren Sie in der Adobe Campaign-Clientkonsole zum Ordner **[!UICONTROL Administration > Auflistungen]** des Explorers, um Auflistungen zu verwalten.
 
 #### Auflistung festlegen {#set-enumeration}
 
@@ -365,11 +365,11 @@ Die Eigenschaften der Auflistung lauten wie folgt:
 Die Werte für die Auflistung werden im Element **`<value>`** mit den folgenden Attributen deklariert:
 
 * **name**: Name des intern gespeicherten Werts
-* **label**: in der grafischen Benutzeroberfläche angezeigter Titel
+* **label**: in der grafischen Benutzeroberfläche angezeigte Bezeichnung
 
 #### dbenum-Auflistung {#dbenum-enumeration}
 
-*Die **dbenum** -Eigenschaft können Sie eine Auflistung definieren, deren Eigenschaften denen der **enum** -Eigenschaft.
+*Mit der Eigenschaft **dbenum** können Sie eine Auflistung definieren, deren Eigenschaften denen der Eigenschaft **enum** ähneln.
 
 Das Attribut **name** speichert den Wert jedoch nicht intern, sondern speichert einen Code, mit dem Sie die betreffenden Tabellen erweitern können, ohne ihr Schema zu ändern.
 
@@ -433,7 +433,7 @@ Elemente werden mit ihren Namen bezeichnet, während den Namen von Attributen ei
 
 * **@email**: wählt die E-Mail-Adresse aus,
 * **location/@city**: wählt das Attribut &quot;city&quot; unter dem Element **`<location>`** aus,
-* **../@email**: wählt die E-Mail-Adresse aus dem übergeordneten Element des aktuellen Elements aus
+* **../@email**: markiert die E-Mail-Adresse des übergeordneten Elements des aktuellen Elements
 * **group`[1]/@label`**: wählt das Attribut &quot;label&quot; aus, das dem ersten **`<group>`**-Sammlungselement untergeordnet ist,
 * **group`[@label='test1']`**: wählt das Attribut &quot;label&quot; aus, das dem Element **`<group>`** untergeordnet ist und den Wert &quot;test1&quot; enthält.
 
@@ -459,8 +459,8 @@ In der Adobe Campaign-Client-Konsole können Sie über einen beliebigen Ausdruck
 **Beispiel**:
 
 * **GetDate()**: gibt das aktuelle Datum zurück,
-* **Year(@created)**: gibt das Jahr des im Attribut &quot;created&quot;enthaltenen Datums zurück.
-* **GetEmailDomain(@email)**: gibt die Domain der E-Mail-Adresse zurück.
+* **Year(@created)**: gibt das Jahr des im Attribut &quot;created&quot;enthaltenen Datums aus
+* **GetEmailDomain(@email)**: gibt die Domäne der E-Mail-Adresse zurück
 
 ## Erstellen einer Zeichenfolge über den Compute string {#building-a-string-via-the-compute-string}
 

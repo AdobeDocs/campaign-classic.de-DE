@@ -33,11 +33,11 @@ Kein(e)
 
 ## Beschreibung {#description-13}
 
-Dieses Element definiert eine Gruppe von `<parameter>`  -Elemente.
+Dieses Element definiert eine Gruppe von `<parameter>` -Elementen.
 
 ## Verwendung und Verwendungskontext {#use-and-context-of-use-8}
 
-Dieses Element ist auch für eine `<param>` untergeordnetes Element des `<method>`  -Element.
+Dieses Element ist obligatorisch, selbst für ein einzelnes untergeordnetes `<param>` -Element des `<method>` -Elements.
 
 ## Attributbeschreibung {#attribute-description-13}
 

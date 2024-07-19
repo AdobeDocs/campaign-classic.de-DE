@@ -26,7 +26,7 @@ keyfield:==EMPTY
 
 ## Eltern {#parents-9}
 
-`<key>`  ,  `<dbindex />`
+`<key>` , `<dbindex />`
 
 ## Untergeordnetes Element {#children-9}
 
@@ -38,8 +38,8 @@ Dieses Element definiert die Felder, die in einen Index oder einen Schlüssel in
 
 ## Attributbeschreibung {#attribute-description-9}
 
-* **xlink (MNTOKEN)**: referenziert automatisch Fremdschlüssel, die im Join für eine Relationstabelle definiert sind (N-N-Link).
-* **xpath (MNTOKEN)**: Definition eines Index oder eines Schlüssels auf einem `<attribute>`  -Element. Dieses Attribut erhält einen Xpath , der den Pfad zum Schemaattribut definiert, das den Schlüssel oder den Index definiert.
+* **xlink (MNTOKEN)**: Ermöglicht es Ihnen, automatisch auf Fremdschlüssel zu verweisen, die im Join für eine Beziehungstabelle definiert sind (N-N-Link).
+* **xpath (MNTOKEN)**: Definition eines Index oder eines Schlüssels für ein `<attribute>` -Element. Dieses Attribut erhält einen Xpath , der den Pfad zum Schemaattribut definiert, das den Schlüssel oder den Index definiert.
 
 ## Beispiele {#examples-}
 

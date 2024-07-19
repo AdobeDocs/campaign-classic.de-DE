@@ -9,7 +9,7 @@ content-type: reference
 topic-tags: case-study
 exl-id: 90afced3-465d-4370-8a33-51a7e4356135
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2163'
 ht-degree: 100%
 
@@ -165,7 +165,7 @@ Es wird von folgendem Szenario ausgegangen:
 
    ![](assets/offer_inbound_fallback_example_051.png)
 
-1. Da es sich bei dem Besucher um einen Neobank-Kunden handelt, meldet er sich mit seinen Kontodaten an.
+1. Da es sich bei dem Besucher um einen Neobank-Kunden handelt, meldet er sich mit seinen Anmeldedaten an.
 
    ![](assets/offer_inbound_fallback_example_052.png)
 

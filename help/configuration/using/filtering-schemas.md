@@ -108,5 +108,5 @@ Sie können weiterhin die Systemfilter der nativen Schemas ändern, die aufgrund
 >Adobe empfiehlt jedoch, die Standardparameter nicht zu ändern, um eine optimale Sicherheit zu gewährleisten.
 
 1. Erstellen Sie eine Erweiterung für das betreffende Schema oder öffnen Sie eine vorhandene Erweiterung.
-1. Untergeordnetes Element hinzufügen **`<sysfilter name="<filter name>" _operation="delete"/>`** im Hauptelement, um die Anwendung des Filters im gleichen Schema des Ursprungs zu löschen.
-1. Bei Bedarf können Sie einen neuen Filter hinzufügen, siehe [Systemfilter](#system-filters).
+1. Fügen Sie im Hauptelement das untergeordnete Element **`<sysfilter name="<filter name>" _operation="delete"/>`** hinzu, um die Anwendung des Filters unter demselben im Ursprungsschema zu löschen.
+1. Bei Bedarf können Sie einen neuen Filter hinzufügen, wie in [Systemfilter](#system-filters) beschrieben.

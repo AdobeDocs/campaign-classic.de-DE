@@ -22,18 +22,18 @@ ht-degree: 4%
 
 Bestimmte wichtige Änderungen in Adobe Campaign v7 erfordern eine spezifische Konfiguration. Diese Konfigurationen können vor oder nach der Migration erforderlich sein.
 
-Während der Migration wird die Variable **NmsRecipient** -Tabelle aus der Schemadefinition neu erstellt. Änderungen an der SQL-Struktur dieser Tabelle außerhalb von Adobe Campaign gehen verloren.
+Während der Migration wird die Tabelle **NmsRecipient** aus der Schemadefinition neu erstellt. Änderungen an der SQL-Struktur dieser Tabelle außerhalb von Adobe Campaign gehen verloren.
 
 Beispiel für zu prüfende Elemente:
 
-* Wenn Sie der **NmsRecipient** -Tabelle, aber Sie haben sie nicht im Schema detailliert, wird dies nicht gespeichert.
-* Die **tablespace** -Attribut nimmt standardmäßig seine Werte zurück, d. h. die im Softwareverteilungs-Assistenten definierten Werte.
-* Wenn Sie der **NmsRecipient** -Tabelle, müssen Sie sie vor der Migration löschen.
+* Wenn Sie der Tabelle **NmsRecipient** eine Spalte (oder einen Index) hinzugefügt haben, diese jedoch nicht im Schema detailliert beschrieben haben, wird dies nicht gespeichert.
+* Das Attribut **tablespace** nimmt seine Werte standardmäßig zurück, d. h. die im Softwareverteilungs-Assistenten definierten Werte.
+* Wenn Sie der Tabelle **NmsRecipient** eine Referenzansicht hinzugefügt haben, müssen Sie diese vor der Migration löschen.
 
 
 ## Vor der Migration {#before-the-migration}
 
-Bei der Migration zu Adobe Campaign v7 müssen die folgenden Elemente konfiguriert werden. Diese Elemente müssen vor dem Start der **postupgrade**.
+Bei der Migration zu Adobe Campaign v7 müssen die folgenden Elemente konfiguriert werden. Diese Elemente müssen vor dem Start des **postupgrade** adressiert werden.
 
 <!--
 
@@ -59,7 +59,7 @@ Bei der Migration zu Adobe Campaign v7 müssen die folgenden Elemente konfigurie
 
 * Passwörter
 
-  Sie müssen die **Admin** und **intern** Kennwörter. [Weitere Informationen](../../migration/using/before-starting-migration.md#user-passwords)
+  Sie müssen die Kennwörter **Admin** und **Intern** konfigurieren. [Weitere Informationen](../../migration/using/before-starting-migration.md#user-passwords)
 
 <!--
 * Tree structure
@@ -78,7 +78,7 @@ Bei der Migration zu Adobe Campaign v7 müssen die folgenden Elemente konfigurie
 
 ## Nach der Migration {#after-the-migration}
 
-Nach Ausführung **postupgrade**, aktivieren und konfigurieren Sie die folgenden Elemente:
+Überprüfen und konfigurieren Sie nach der Ausführung von **postupgrade** die folgenden Elemente:
 
 * Mirrorseiten
 
@@ -86,11 +86,11 @@ Nach Ausführung **postupgrade**, aktivieren und konfigurieren Sie die folgenden
 
   Wenn Sie den Gestaltungsbaustein v5 in Ihren Nachrichten verwendet haben, schlägt die Anzeige der Mirrorseite fehl. Adobe empfiehlt dringend die Verwendung des neuen Gestaltungsbausteins beim Einfügen der Mirrorseite in Ihre Nachrichten.
 
-  Als vorübergehende Problemumgehung (und da die Mirrorseiten noch live sind) können Sie jedoch zum alten Gestaltungsbaustein zurückkehren, um dieses Problem zu vermeiden, indem Sie die Option ändern **[!UICONTROL XtkAcceptOldPasswords]** und legen Sie **[!UICONTROL 1]**. Dies hat keine Auswirkungen auf die Verwendung des neuen Gestaltungsbausteins v6.x.
+  Als vorübergehende Problemumgehung (und da die Mirrorseiten noch aktiv sind) können Sie jedoch zum alten Gestaltungsbaustein zurückkehren, um dieses Problem zu vermeiden, indem Sie die Option **[!UICONTROL XtkAcceptOldPasswords]** ändern und auf **[!UICONTROL 1]** festlegen. Dies hat keine Auswirkungen auf die Verwendung des neuen Gestaltungsbausteins v6.x.
 
 * Syntax
 
-  Wenn während des Postupgrades Syntaxfehler auftreten, müssen Sie die **allowSQLInjection** in der **serverConf.xml** -Datei, da Sie dadurch Zeit haben, den Code neu zu schreiben. Nachdem der Code angepasst wurde, stellen Sie sicher, dass Sie die Sicherheit erneut aktivieren.
+  Wenn während des Postupgrades Syntaxfehler auftreten, müssen Sie vorübergehend die Option **allowSQLInjection** in der Datei **serverConf.xml** aktivieren, da Ihnen dadurch Zeit zum Neuschreiben des Codes gegeben wird. Nachdem der Code angepasst wurde, stellen Sie sicher, dass Sie die Sicherheit erneut aktivieren.
 
 * Konflikte
 
@@ -102,11 +102,11 @@ Nach Ausführung **postupgrade**, aktivieren und konfigurieren Sie die folgenden
 
 * Berichte
 
-  Alle nativen Berichte verwenden derzeit die Rendering-Engine v6.x. Wenn Sie den Berichten JavaScript-Code hinzugefügt haben, können einige Elemente betroffen sein.
+  Alle nativen Berichte verwenden derzeit die Rendering-Engine v6.x. Wenn Sie JavaScript-Code in die Berichte eingefügt haben, können sich dies auf einige Elemente auswirken.
 
 * Webanwendungen
 
-  Wenn Sie nach dem Postupgrade Probleme haben, eine Verbindung zu Ihren identifizierten Webanwendungen herzustellen, müssen Sie die **allowUserPassword** und **sessionTokenOnly** Optionen in **serverConf.xml** -Datei. Um Sicherheitsprobleme zu vermeiden, müssen diese beiden Optionen reaktiviert werden, nachdem das Problem gelöst wurde.
+  Wenn nach dem Postupgrade Probleme beim Herstellen einer Verbindung zu Ihren identifizierten Webanwendungen auftreten, müssen Sie die Optionen **allowUserPassword** und **sessionTokenOnly** in der Datei **serverConf.xml** aktivieren. Um Sicherheitsprobleme zu vermeiden, müssen diese beiden Optionen reaktiviert werden, nachdem das Problem gelöst wurde.
 
   Abhängig vom Typ der Webanwendungen und ihrer Konfiguration müssen Sie zusätzliche Manipulationen durchführen, um sicherzustellen, dass sie ordnungsgemäß funktionieren.
 
@@ -137,7 +137,7 @@ Nach Ausführung **postupgrade**, aktivieren und konfigurieren Sie die folgenden
 
 * Interaktion
 
-  Wenn Sie **Interaction** müssen Sie alle Parameter nach der Migration anpassen.
+  Wenn Sie **Interaction** verwenden, müssen Sie alle Parameter nach der Migration anpassen.
 
 <!--
 

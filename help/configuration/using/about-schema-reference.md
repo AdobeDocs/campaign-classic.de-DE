@@ -18,9 +18,9 @@ ht-degree: 49%
 
 In diesem Kapitel wird beschrieben, wie Sie Erweiterungsschemata konfigurieren, um das konzeptionelle Datenmodell der Adobe Campaign-Datenbank zu erweitern.
 
-Die in Campaign integrierten Tabellen und deren Interaktion werden im Abschnitt [Campaign Classic-Datenmodell](about-data-model.md).
+Ein besseres Verständnis der in Campaign integrierten Tabellen und ihrer Interaktion finden Sie im [Campaign Classic-Datenmodell](about-data-model.md).
 
-In Adobe Campaign wird die physische und logische Struktur der in der Anwendung übertragenen Daten in XML beschrieben. A **schema** ist ein mit einer Datenbanktabelle verknüpftes XML-Dokument. Es definiert die Datenstruktur und beschreibt die SQL-Definition der Tabelle:
+In Adobe Campaign wird die physische und logische Struktur der in der Anwendung übertragenen Daten in XML beschrieben. Ein **schema** ist ein XML-Dokument, das einer Datenbanktabelle zugeordnet ist. Es definiert die Datenstruktur und beschreibt die SQL-Definition der Tabelle:
 
 * Der Name der Tabelle
 * Felder
@@ -73,7 +73,7 @@ Ein Schema wird anhand seines Namens und seines Namespace identifiziert.
 
 Mit einem Namespace können Sie eine Reihe von Schemata nach Interessensgebieten gruppieren. Beispielsweise wird der Namespace **cus** für die kundenspezifische Konfiguration (**customers**) verwendet.
 
-Der Identifikationsschlüssel eines Schemas ist eine Zeichenfolge, die mithilfe des Namespace und des Namens, getrennt durch einen Doppelpunkt, erstellt wird. Beispiel: **cus:recipient**.
+Der Identifikationsschlüssel eines Schemas ist eine Zeichenfolge, die mithilfe des Namespace und des Namens durch einen Doppelpunkt getrennt erstellt wird, z. B.: **cus:recipient**.
 
 >[!IMPORTANT]
 >
@@ -81,5 +81,5 @@ Der Identifikationsschlüssel eines Schemas ist eine Zeichenfolge, die mithilfe 
 >
 >Kennungen dürfen nicht mit numerischen Zeichen beginnen.
 >
->Die folgenden Namespaces sind für Beschreibungen der Systementitäten reserviert, die für den Betrieb der Adobe Campaign-Anwendung erforderlich sind, und dürfen nicht verwendet werden: **xtk**, **nl**, **nms**, **ncm**, **temp**, **ncl**, **crm**, **xxl**.
+>Die folgenden Namespaces sind für Beschreibungen der Systementitäten reserviert, die für den Betrieb der Adobe Campaign-Anwendung erforderlich sind, und dürfen nicht verwendet werden: **xtk**, **nl**, **nms**, **ncm**, **temp**, **ncl**, **crm** , **xxl**
 

@@ -22,10 +22,10 @@ In diesem Abschnitt finden Sie Schritte zur Fehlerbehebung bei allgemeinen Adobe
 
 ## Allgemeine Probleme {#common-and-general-issues}
 
-* Diese [page](../../production/using/modules-and-frequent-issues.md) enthält die häufigsten Probleme, die bei den aufgeführten Modulen aufgetreten sind.
-* Diese [page](../../production/using/workflow-execution.md) listet allgemeine Verfahren zur Fehlerbehebung auf, die Sie bei Problemen mit der Workflow-Ausführung anwenden sollten.
-* Diese [page](../../production/using/lost-password.md) gibt an, wie ein verlorenes Kennwort geändert oder wiederhergestellt werden kann.
-* Diese [page](../../production/using/console-update.md) beschreibt, wie die Aktualisierungsanforderung der Konsole reaktiviert werden kann, wenn Sie die entsprechende Option deaktiviert haben.
+* Diese [Seite](../../production/using/modules-and-frequent-issues.md) enthält die häufigsten Probleme, die bei den aufgelisteten Modulen aufgetreten sind.
+* Auf dieser [Seite](../../production/using/workflow-execution.md) werden die gängigen Verfahren zur Fehlerbehebung aufgelistet, die Sie bei Problemen mit der Workflow-Ausführung anwenden sollten.
+* Diese [Seite](../../production/using/lost-password.md) beschreibt, wie ein verlorenes Kennwort geändert oder wiederhergestellt werden kann.
+* Auf dieser [Seite](../../production/using/console-update.md) wird beschrieben, wie Sie die Aktualisierungsanforderung der Konsole reaktivieren, wenn Sie die entsprechende Option deaktiviert haben.
 
 ## Fehlerbehebung beim Versand {#delivery-troubleshooting}
 
@@ -33,7 +33,7 @@ Bei Problemen mit Sendungen können spezifische Aktionen durchgeführt werden:
 * [Probleme mit der Zustellbarkeit](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
 * [Probleme mit der Bildanzeige](../../production/using/image-display-issues.md)
 * [Bild fehlt](../../production/using/images-missing.md)
-* [Probleme mit temporären Dateien](../../production/using/temporary-files.md) (*Nur On-Premise-Hosting-Modelle*)
+* [Probleme mit temporären Dateien](../../production/using/temporary-files.md) (*nur On-Premise-Hosting-Modelle*)
 
 **Verwandtes Thema**:
 

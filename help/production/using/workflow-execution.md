@@ -30,23 +30,23 @@ Weiterführende Informationen zu Workflows finden Sie in den folgenden Abschnitt
 
 ## So bald wie möglich in Kampagnen starten {#start-as-soon-as-possible-in-campaigns}
 
-In einigen Fällen starten von einer Kampagne aus ausgeführte Workflows nicht, wenn Sie auf die **[!UICONTROL Starten]** Schaltfläche. Statt zu beginnen, wird der Status &quot;Schnellstmöglich starten&quot;angezeigt.
+In einigen Fällen starten Workflows, die von einer Kampagne ausgeführt werden, nicht, wenn auf die Schaltfläche **[!UICONTROL Starten]** geklickt wird. Statt zu beginnen, wird der Status &quot;Schnellstmöglich starten&quot;angezeigt.
 
 Es kann mehrere Ursachen für dieses Problem geben. Gehen Sie zur Lösung des Problems wie folgt vor:
 
-1. Überprüfen Sie die [**[!UICONTROL operationMgt]**](../../workflow/using/about-technical-workflows.md) Status des technischen Workflows. Dieser Workflow verwaltet Aufträge oder Workflows innerhalb einer Kampagne. Schlägt dies fehl, werden Workflows nicht gestartet/angehalten. Starten Sie es neu, um die Ausführung der Kampagnen-Workflows wiederaufzunehmen.
+1. Überprüfen Sie den technischen Workflow-Status [**[!UICONTROL operationMgt]**](../../workflow/using/about-technical-workflows.md) . Dieser Workflow verwaltet Aufträge oder Workflows innerhalb einer Kampagne. Schlägt dies fehl, werden Workflows nicht gestartet/angehalten. Starten Sie es neu, um die Ausführung der Kampagnen-Workflows wiederaufzunehmen.
 
-   Weitere Informationen zur Überwachung technischer Workflows finden Sie unter [diese Seite](../../workflow/using/monitoring-technical-workflows.md).
+   Weitere Informationen zur Überwachung technischer Workflows finden Sie auf [dieser Seite](../../workflow/using/monitoring-technical-workflows.md).
 
    >[!NOTE]
    >
-   >Nachdem der Workflow neu gestartet wurde, müssen Sie die ausstehenden Aufgaben ausführen (klicken Sie mit der rechten Maustaste auf die **[!UICONTROL Planung]** activity / **[!UICONTROL Ausstehende Aufgabe(n) jetzt ausführen]**), um zu überprüfen, ob es bei einer der Aktivitäten erneut fehlschlägt.
+   >Nachdem der Workflow neu gestartet wurde, stellen Sie sicher, dass Sie die ausstehenden Aufgaben ausführen (klicken Sie mit der rechten Maustaste auf die Aktivität **[!UICONTROL Planung]** / **[!UICONTROL Ausstehende Aufgabe(n) jetzt ausführen]**), um zu überprüfen, ob sie bei einer der Aktivitäten erneut fehlschlägt.
 
    Wenn der Workflow weiterhin fehlschlägt, überprüfen Sie das Auditprotokoll auf einen bestimmten Fehler, führen Sie eine entsprechende Fehlerbehebung durch und starten Sie den Workflow dann erneut neu.
 
-1. Überprüfen Sie die **[!UICONTROL wfserver]** Modulstatus in der **[!UICONTROL Überwachung]** Registerkarte, auf die über die Campaign Classic-Homepage zugegriffen werden kann (siehe [Überwachungsverfahren](../../production/using/monitoring-processes.md)). Dieser Prozess ist für die Ausführung aller Workflows verantwortlich.
+1. Überprüfen Sie den Modulstatus **[!UICONTROL wfserver]** auf der Registerkarte **[!UICONTROL Monitoring]**, auf den über die Campaign Classic-Startseite zugegriffen werden kann (siehe [Prozesse überwachen](../../production/using/monitoring-processes.md)). Dieser Prozess ist für die Ausführung aller Workflows verantwortlich.
 
-   Ein Admin-Benutzer kann auch überprüfen, ob die Variable **wfserver@`<instance>`** auf Ihrem Hauptanwendungsserver mithilfe des folgenden Befehls gestartet.
+   Ein Admin-Benutzer kann auch mithilfe des folgenden Befehls überprüfen, ob das Modul **wfserver@`<instance>`** auf dem Hauptanwendungsserver gestartet wird.
 
    ```
    nlserver pdump
@@ -67,29 +67,29 @@ Es kann mehrere Ursachen für dieses Problem geben. Gehen Sie zur Lösung des Pr
    >Ersetzen Sie **`<instance-name>`** durch den Namen Ihrer Instanz (Produktion, Entwicklung usw.). Der Instanzname wird über die Konfigurationsdateien identifiziert:
    >`[path of application]nl6/conf/config-<instance-name>.xml`
 
-   Weitere Informationen zum Neustart von Modulen finden Sie unter [diesem Abschnitt](../../production/using/usual-commands.md#module-launch-commands).
+   Weiterführende Informationen zum Neustart von Modulen finden Sie in [diesem Abschnitt](../../production/using/usual-commands.md#module-launch-commands).
 
-1. Überprüfen Sie, ob die **Anzahl der ausgeführten Kampagnenprozesse** auf der Instanz größer als der Schwellenwert ist. Es gibt eine Begrenzung, die durch die Variable [**[!UICONTROL NmsOperation_LimitConcurrency]**](../../installation/using/configuring-campaign-options.md#campaign-e-workflow-management) Option zur Angabe, wie viele Kampagnenprozesse parallel auf der Instanz ausgeführt werden können. Wenn diese Grenze erreicht ist, bleibt der Workflow im Status &quot;Schnellstmöglicher Start&quot;, solange die Anzahl der ausgeführten Workflows über der Grenze liegt.
+1. Überprüfen Sie, ob die **Anzahl der Kampagnenprozesse, die auf der Instanz ausgeführt werden**, über dem Schwellenwert liegt. Die Option [**[!UICONTROL NmsOperation_LimitConcurrency]**](../../installation/using/configuring-campaign-options.md#campaign-e-workflow-management) gibt eine Begrenzung dafür, wie viele Kampagnenprozesse parallel auf der Instanz ausgeführt werden können. Wenn diese Grenze erreicht ist, bleibt der Workflow im Status &quot;Schnellstmöglicher Start&quot;, solange die Anzahl der ausgeführten Workflows über der Grenze liegt.
 
    Um dieses Problem zu beheben, stoppen Sie unerwünschte Workflows und löschen Sie fehlgeschlagene Sendungen. Wenn der Schwellenwert erreicht wurde, ermöglicht dies die Ausführung neuer Prozesse.
 
-   Um die Anzahl der ausgeführten Workflows Ihrer Instanz zu überprüfen, empfehlen wir die Verwendung der vordefinierten Ansichten, auf die standardmäßig im **[!UICONTROL Administration]** / **[!UICONTROL Prüfung]** Ordner. Weitere Informationen dazu finden Sie auf [dieser Seite](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status).
+   Um die Anzahl der ausgeführten Workflows Ihrer Instanz zu überprüfen, empfehlen wir die Verwendung der vordefinierten Ansichten, auf die standardmäßig im Ordner **[!UICONTROL Administration]** / **[!UICONTROL Audit]** zugegriffen werden kann. Weitere Informationen dazu finden Sie auf [dieser Seite](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status).
 
    >[!IMPORTANT]
    >
-   >Erhöhen Sie die **[!UICONTROL NmsOperation_LimitConcurrency]** -Optionsschwellenwert kann zu Leistungsproblemen in Ihrer Instanz führen. Führen Sie dies auf keinen Fall allein durch und kontaktieren Sie Ihren Ansprechpartner bei Adobe Campaign.
+   >Das Erhöhen des Optionsschwellenwerts **[!UICONTROL NmsOperation_LimitConcurrency]** kann zu Leistungsproblemen in Ihrer Instanz führen. Führen Sie dies auf keinen Fall allein durch und kontaktieren Sie Ihren Ansprechpartner bei Adobe Campaign.
 
 Weitere Informationen zum Überwachen Ihrer Workflows finden Sie in [diesem Abschnitt](../../workflow/using/monitoring-workflow-execution.md).
 
 ## In Bearbeitung {#start-in-progress}
 
-Wenn Workflows nicht ausgeführt werden und ihr Status lautet **In Bearbeitung** kann dies bedeuten, dass das Workflow-Modul nicht gestartet wird.
+Wenn Workflows nicht ausgeführt werden und ihr Status **In Bearbeitung starten** lautet, bedeutet dies möglicherweise, dass das Workflow-Modul nicht gestartet wird.
 
 Um dies zu überprüfen und bei Bedarf das Modul zu starten, gehen Sie wie folgt vor:
 
-1. Überprüfen Sie die **[!UICONTROL wfserver]** Modulstatus in der **[!UICONTROL Überwachung]** Registerkarte, auf die über die Campaign Classic-Homepage zugegriffen werden kann (siehe [Überwachungsverfahren](../../production/using/monitoring-processes.md)).
+1. Überprüfen Sie den Modulstatus **[!UICONTROL wfserver]** auf der Registerkarte **[!UICONTROL Monitoring]**, auf den über die Campaign Classic-Startseite zugegriffen werden kann (siehe [Prozesse überwachen](../../production/using/monitoring-processes.md)).
 
-   Ein Admin-Benutzer kann auch überprüfen, ob die Variable **wfserver@`<instance>`** auf Ihrem Hauptanwendungsserver mithilfe des folgenden Befehls gestartet.
+   Ein Admin-Benutzer kann auch mithilfe des folgenden Befehls überprüfen, ob das Modul **wfserver@`<instance>`** auf dem Hauptanwendungsserver gestartet wird.
 
    ```sql
    nlserver pdump
@@ -99,7 +99,7 @@ Um dies zu überprüfen und bei Bedarf das Modul zu starten, gehen Sie wie folgt
    [...]
    ```
 
-   Weitere Informationen zum Überwachen von Modulen finden Sie unter [diesem Abschnitt](../../production/using/usual-commands.md#monitoring-commands-).
+   Weitere Informationen zum Überwachen von Modulen finden Sie in [diesem Abschnitt](../../production/using/usual-commands.md#monitoring-commands-).
 
 1. Wenn das Modul nicht ausgeführt wird, wenden Sie sich an die Adobe-Kundenunterstützung. Wenn Sie über eine On-Premise-Installation verfügen, muss ein Administrator sie mit dem folgenden Befehl neu starten.
 
@@ -112,12 +112,12 @@ Um dies zu überprüfen und bei Bedarf das Modul zu starten, gehen Sie wie folgt
    >Ersetzen Sie **`<instance-name>`** durch den Namen Ihrer Instanz (Produktion, Entwicklung usw.). Der Instanzname wird über die Konfigurationsdateien identifiziert:
    >`[path of application]nl6/conf/config-<instance-name>.xml`
 
-   Weitere Informationen zum Neustart von Modulen finden Sie unter [diesem Abschnitt](../../production/using/usual-commands.md#module-launch-commands).
+   Weiterführende Informationen zum Neustart von Modulen finden Sie in [diesem Abschnitt](../../production/using/usual-commands.md#module-launch-commands).
 
 ## Fehlgeschlagener Workflow {#failed-workflow}
 
 Wenn ein Workflow fehlschlägt, führen Sie die folgenden Schritte aus:
 
-1. Überprüfen Sie das Workflow-Protokoll. Weitere Informationen hierzu finden Sie im Abschnitt [Ausführung des Workflows überwachen](../../workflow/using/monitoring-workflow-execution.md) und [Protokoll anzeigen](../../workflow/using/monitoring-workflow-execution.md#displaying-logs) Abschnitte.
-1. Technische Workflows überwachen Weitere Informationen hierzu finden Sie unter [diesem Abschnitt](../../workflow/using/monitoring-technical-workflows.md).
+1. Überprüfen Sie das Workflow-Protokoll. Weitere Informationen hierzu finden Sie in den Abschnitten [Ausführung des Workflows überwachen](../../workflow/using/monitoring-workflow-execution.md) und [Protokoll anzeigen](../../workflow/using/monitoring-workflow-execution.md#displaying-logs) .
+1. Technische Workflows überwachen Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../workflow/using/monitoring-technical-workflows.md).
 1. Suchen Sie nach Fehlern bei den einzelnen Workflow-Aktivitäten.

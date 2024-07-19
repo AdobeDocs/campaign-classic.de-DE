@@ -15,7 +15,7 @@ ht-degree: 4%
 # Assistent für neue Felder{#new-field-wizard}
 
 
-Ein Assistent, auf den Sie über zugreifen können **[!UICONTROL Tools > Erweitert > Neue Felder hinzufügen]** ermöglicht das Hinzufügen eines oder mehrerer Felder zu einer Tabelle der Datenbank.
+Über einen Assistenten, auf den Sie über **[!UICONTROL Tools > Erweitert > Neue Felder hinzufügen]** zugreifen können, können Sie einer Tabelle in der Datenbank ein oder mehrere Felder hinzufügen.
 
 Durch Validierung des Assistenten wird das Erweiterungsschema der zu erweiternden Tabelle aktualisiert und das SQL-Skript gestartet, um die physische Struktur der Datenbank zu ändern.
 
@@ -33,7 +33,7 @@ Die Bildschirme des Assistenten umfassen die folgenden Schritte:
 
    ![](assets/d_ncs_integration_schema_addfield2.png)
 
-1. Um die Änderungen zu bestätigen, klicken Sie auf die Schaltfläche **[!UICONTROL Beenden]** Schaltfläche.
+1. Um die Änderungen zu bestätigen, klicken Sie auf die Schaltfläche **[!UICONTROL Beenden]** .
 
 In unserem Beispiel wird automatisch eine Erweiterungsdatei mit dem Namen &quot;cus:recipient&quot;erstellt und das entsprechende SQL-Skript wird ausgeführt:
 
@@ -47,4 +47,4 @@ In unserem Beispiel wird automatisch eine Erweiterungsdatei mit dem Namen &quot;
 
 >[!NOTE]
 >
->Standardmäßig werden die hinzugefügten Felder mit der Eigenschaft deklariert **Benutzer** (mit dem Wert &quot;true&quot;). Auf diese Weise können Sie das Feld im Formular des erweiterten Schemas mithilfe eines Steuerelements vom Typ &quot;treeEdit&quot; anzeigen und bearbeiten (siehe Formular).
+>Standardmäßig werden die hinzugefügten Felder mit der Eigenschaft **user** deklariert (mit dem Wert &quot;true&quot;). Auf diese Weise können Sie das Feld im Formular des erweiterten Schemas mithilfe eines Steuerelements vom Typ &quot;treeEdit&quot; anzeigen und bearbeiten (siehe Formular).

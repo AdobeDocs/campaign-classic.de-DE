@@ -6,7 +6,7 @@ role: User
 feature: Campaigns, Monitoring
 exl-id: c2b523ac-e900-4db8-85b0-dafc6ddb3eca
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '258'
 ht-degree: 100%
 
@@ -30,7 +30,7 @@ In jeder Kampagne können über den Tab **[!UICONTROL Tracking]** die ausgeführ
 
   ![](assets/s_ncs_user_op_edit_exe_tab_e.png)
 
-* Die zur Generierung der Nachrichten an Dienstleister erstellten Workflows werden im Untertab **[!UICONTROL Bearbeitungsvorgänge bezüglich der Dienstleister]** aufgelistet. Klicken Sie auf das Symbol **[!UICONTROL Details]**, um den ausgewählten Workflow anzuzeigen.
+* Die zur Generierung der Nachrichten an Dienstleister erstellten Workflows werden in der Unterregisterkarte **[!UICONTROL Bearbeitungsvorgänge bezüglich der Dienstleister]** aufgelistet. Klicken Sie auf das Symbol **[!UICONTROL Details]**, um den ausgewählten Workflow anzuzeigen.
 
   ![](assets/s_ncs_user_op_edit_exe_tab_d.png)
 

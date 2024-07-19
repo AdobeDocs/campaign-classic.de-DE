@@ -11,7 +11,7 @@ exl-id: ba4db1af-778c-4c34-9a3c-49f41faa49b5
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
 source-wordcount: '76'
-ht-degree: 14%
+ht-degree: 18%
 
 ---
 
@@ -28,4 +28,4 @@ Auf einem sauberen Server sieht das Wiederherstellungsverfahren wie folgt aus:
 * die Datenbank erstellen und neu erstellen,
 * Starten Sie Adobe Campaign.
 
-Weitere Informationen finden Sie im Abschnitt **Installationsanleitung**.
+Weitere Informationen finden Sie im **Installationshandbuch**.

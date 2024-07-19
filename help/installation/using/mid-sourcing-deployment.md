@@ -65,4 +65,4 @@ Die allgemeine Kommunikation zwischen Servern und Prozessen erfolgt gemäß dem 
 
 ### Installation und Konfiguration (Mid-Sourcing-Bereitstellung) {#installing-and-configuring--mid-sourcing-deployment-}
 
-Siehe Abschnitt [Mid-Sourcing-Server](../../installation/using/mid-sourcing-server.md).
+Siehe [Mid-Sourcing-Server](../../installation/using/mid-sourcing-server.md).

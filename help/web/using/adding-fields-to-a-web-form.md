@@ -6,7 +6,7 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Web Forms, Landing Pages
 exl-id: 827b6575-7206-4dfc-b2c6-b95a6d5730b1
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2466'
 ht-degree: 100%
 
@@ -373,7 +373,7 @@ Sie können den Link zu diesen Dateien in einer lokalen Variablen oder in einem 
 
 >[!CAUTION]
 >
->* Dieser Dateityp muss für Formulare mit sicherem Zugriff (über Zugangsdaten) reserviert werden.
+>* Dieser Dateityp muss für Formulare mit sicherem Zugriff (über Anmeldedaten) reserviert werden.
 >* Adobe Campaign kontrolliert nicht die Größe oder den Typ der hochgeladenen Ressource. Deshalb empfehlen wir dringend, Upload-Felder ausschließlich für sichere Intranet-Sites zu verwenden.
 >* Wenn mehrere Server mit der Instanz verbunden sind (Architektur mit Lastausgleich), müssen Sie darauf achten, dass Abfragen zum Webformular auf demselben Server erfolgen.
 >* Diese Implementierungen erfordern die Hilfe des Adobe Campaign-Teams.

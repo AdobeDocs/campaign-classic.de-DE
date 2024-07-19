@@ -24,11 +24,11 @@ Für gehostete Kunden hat dies keine Auswirkungen. Für On-Premise-Installatione
 
 **Apache-Benutzer:**
 
-Apache-Benutzer haben keine Auswirkungen, wenn sie die bereitgestellte **apache_neolane.conf**.
+Apache-Benutzer haben keine Auswirkungen, wenn sie die bereitgestellte **apache_neolane.conf** verwenden.
 
 **IIS-Benutzer:**
 
 Für IIS-Benutzer (unter Windows) werden nach der Build-Aktualisierung mehrere Symbole in der Konsole fehlen. Weitere IIS-Aktualisierungsschritte sind erforderlich:
 
-1. Doppelklicken Sie nach der Build-Aktualisierung auf **is_neolane_setup.vbs** im Installationsordner von Campaign. Der Standardpfad lautet C:\Program Dateien (x86)\Adobe\Adobe Campaign v7\conf
+1. Doppelklicken Sie nach der Build-Aktualisierung im Installationsverzeichnis von Campaign auf **is_neolane_setup.vbs** . Der Standardpfad lautet C:\Program Dateien (x86)\Adobe\Adobe Campaign v7\conf
 1. Starten Sie die IIS-Site neu, die durch den vorherigen Schritt aktualisiert wurde.

@@ -42,15 +42,15 @@ Adobe Campaign basiert auf einer Service-orientierten Architektur (SOA) und umfa
 
 >[!CAUTION]
 >
->Sofern nicht ausdrücklich anders angegeben, obliegt die Installation, Aktualisierung und Wartung auf allen Komponenten einer Adobe Campaign-Plattform dem/den Maschinadministrator(en), der/die diese Komponenten hostet. Dazu gehört die Implementierung der Voraussetzungen für Adobe Campaign-Anwendungen sowie die Einhaltung von Campaign [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md) zwischen Komponenten.
+>Sofern nicht ausdrücklich anders angegeben, obliegt die Installation, Aktualisierung und Wartung auf allen Komponenten einer Adobe Campaign-Plattform dem/den Maschinadministrator(en), der/die diese Komponenten hostet. Dazu gehört die Implementierung der Voraussetzungen für Adobe Campaign-Anwendungen sowie die Einhaltung der Campaign [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md) zwischen Komponenten.
 
 ## Präsentationsebene {#presentation-layer}
 
 Der Zugriff auf die Anwendung ist je nach den Anforderungen der Benutzer auf unterschiedliche Weise möglich: Rich-Client-, Thin-Client- oder API-Integration.
 
-* **Rich-Client**: Die Hauptbenutzeroberfläche des Programms ist ein Rich-Client, d. h. eine native Anwendung (Windows), die ausschließlich mit Standardinternetprotokollen (SOAP, HTTP usw.) mit dem Adobe Campaign-Anwendungsserver kommuniziert. Diese Konsole bietet eine hervorragende Benutzerfreundlichkeit für die Produktivität, verwendet sehr wenig Bandbreite (durch die Verwendung eines lokalen Caches) und ist für eine einfache Implementierung konzipiert. Diese Konsole kann über einen Internetbrowser bereitgestellt werden, kann automatisch aktualisiert werden und erfordert keine spezifische Netzwerkkonfiguration, da sie nur HTTP(S)-Traffic generiert.
-* **Thin Client**: Bestimmte Anwendungsbereiche können über einen einfachen Webbrowser über eine HTML-Benutzeroberfläche aufgerufen werden. Dazu gehören das Berichtsmodul, Etappen der Versandvalidierung, Funktionen des Moduls Dezentrales Marketing (lokal), Instanzüberwachung usw. Auf diese Weise können Adobe Campaign-Funktionen in ein Intranet oder ein Extranet integriert werden.
-* **Integration über APIs**: In bestimmten Fällen kann das System über eine externe Anwendung mithilfe der Web-Services-APIs aufgerufen werden, die über das SOAP-Protokoll verfügbar gemacht werden.
+* **Rich-Client**: Die Hauptbenutzeroberfläche des Programms ist ein Rich-Client, d. h. ein natives Programm (Windows), das ausschließlich mit Standardinternetprotokollen (SOAP, HTTP usw.) mit dem Adobe Campaign-Anwendungsserver kommuniziert. Diese Konsole bietet eine hervorragende Benutzerfreundlichkeit für die Produktivität, verwendet sehr wenig Bandbreite (durch die Verwendung eines lokalen Caches) und ist für eine einfache Implementierung konzipiert. Diese Konsole kann über einen Internetbrowser bereitgestellt werden, kann automatisch aktualisiert werden und erfordert keine spezifische Netzwerkkonfiguration, da sie nur HTTP(S)-Traffic generiert.
+* **Dünner Client**: Bestimmte Anwendungsbereiche können über einen einfachen Webbrowser über eine HTML-Benutzeroberfläche aufgerufen werden. Dazu gehören das Berichtsmodul, Etappen der Versandvalidierung, Funktionen des Moduls Dezentrales Marketing (lokal), Instanzüberwachung usw. Auf diese Weise können Adobe Campaign-Funktionen in ein Intranet oder ein Extranet integriert werden.
+* **Integration über APIs**: In bestimmten Fällen kann das System über die über das SOAP-Protokoll bereitgestellten Web-Services-APIs aus einer externen Anwendung aufgerufen werden.
 
 ## Logische Anwendungsebene {#logical-application-layer}
 
@@ -120,7 +120,7 @@ Dieser Prozess erstellt Statistiken zur Anzahl von Verbindungen, zu an die einze
 
 >[!NOTE]
 >
->Die vollständige Liste der Adobe Campaign-Module finden Sie unter [dieses Dokuments](../../production/using/operating-principle.md).
+>Die vollständige Liste der Adobe Campaign-Module finden Sie in [diesem Dokument](../../production/using/operating-principle.md).
 
 ## Persistenzebene {#persistence-layer}
 

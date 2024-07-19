@@ -11,7 +11,7 @@ exl-id: 6fe8da3b-57b9-4a69-8602-a03993630b27
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
 source-wordcount: '333'
-ht-degree: 30%
+ht-degree: 31%
 
 ---
 
@@ -25,21 +25,21 @@ Standardmäßig sind Instanzen nicht berechtigt, eine Verbindung zu externen URL
 
 >[!NOTE]
 >
->Dieses Verfahren beschränkt sich auf **On-Premise** -Implementierungen.
+>Dieses Verfahren ist auf **On-Premise** -Implementierungen beschränkt.
 >
->Als **gehostet** -Kunde, wenn Sie auf [Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de), können Sie die Benutzeroberfläche für die URL-Genehmigungen zur Selbstbedienung verwenden. [Weitere Informationen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=de)
+>Als **gehosteter** -Kunde können Sie, wenn Sie auf das [Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de) zugreifen können, die Benutzeroberfläche für die URL-Berechtigungen selbst verwenden. [Weitere Informationen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=de)
 >
->Sonstiges **hybrid/gehostet** Kunden müssen sich an das Adobe-Supportteam wenden, um IP zur Zulassungsliste hinzuzufügen.
+>Andere **hybride/gehostete** -Kunden müssen sich an das Adobe-Supportteam wenden, um IP zur Zulassungsliste hinzuzufügen.
 >
 
-Für **Hybrid** und **On-Premise** -Implementierungen muss der Administrator auf eine neue **urlPermission** im **serverConf.xml** -Datei.
+Bei Bereitstellungen vom Typ **Hybrid** und **On-Premise** muss der Administrator in der Datei **serverConf.xml** auf eine neue **urlPermission** verweisen.
 
 
 Drei Verbindungsschutzmodi sind verfügbar:
 
-* **Blockieren**: Alle URLs, die nicht zur Zulassungsliste gehören, werden blockiert und erhalten eine Fehlermeldung. Dies ist der Standardmodus nach einem Postupgrade.
+* **Blocking**: Alle URLs, die nicht zur Zulassungsliste gehören, werden mit einer Fehlermeldung blockiert. Dies ist der Standardmodus nach einem Postupgrade.
 * **Permissive**: Alle URLs, die nicht zur Zulassungsliste gehören, sind zulässig.
-* **Warnung**: Alle URLs, die nicht zur Zulassungsliste gehören, sind zulässig, der JS-Interpreter gibt jedoch eine Warnung aus, damit der Administrator sie erfassen kann. In diesem Modus werden Warnmeldungen vom Typ JST-310027 hinzugefügt.
+* **Warnung**: Alle URLs, die nicht zur Zulassungsliste gehören, sind erlaubt, doch der JS-Interpreter gibt eine Warnung aus, damit der Administrator sie erfassen kann. In diesem Modus werden Warnmeldungen vom Typ JST-310027 hinzugefügt.
 
 ```
 <urlPermission action="warn" debugTrace="true">
@@ -51,9 +51,9 @@ Drei Verbindungsschutzmodi sind verfügbar:
 
 >[!IMPORTANT]
 >
->Standardmäßig verwenden neue Implementierungen die **Blockieren** -Modus.
+>Standardmäßig verwenden neue Implementierungen den Modus **Blocking** .
 >
->Als bestehender Kunde, der aus einer Migration stammt, können Sie die **Warnung** -Modus. Analysieren Sie den ausgehenden Traffic, bevor Sie die URLs zulassen. Sobald die Liste der zulässigen URLs definiert ist, können Sie die URLs zur Zulassungsliste hinzufügen und die **Blockieren** -Modus.
+>Als bestehender Kunde, der aus einer Migration stammt, können Sie den Modus **Warnung** vorübergehend verwenden. Analysieren Sie den ausgehenden Traffic, bevor Sie die URLs zulassen. Sobald die Liste der zulässigen URLs definiert ist, können Sie die URLs zur Zulassungsliste hinzufügen und den Modus **Blocking** aktivieren.
 
 Weitere Informationen finden Sie in den folgenden Abschnitten:
 

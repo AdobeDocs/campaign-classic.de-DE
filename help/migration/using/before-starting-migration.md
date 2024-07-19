@@ -20,7 +20,7 @@ ht-degree: 2%
 
 
 
-Auf dieser Seite werden bestimmte Schritte aufgeführt, die vor dem Starten des Migrationsprozesses ausgeführt werden müssen. Weitere Informationen finden Sie unter [diese Seite](about-migration.md) für weitere Hinweise.
+Auf dieser Seite werden bestimmte Schritte aufgeführt, die vor dem Starten des Migrationsprozesses ausgeführt werden müssen. Weitere Anleitungen finden Sie auf [dieser Seite](about-migration.md) .
 
 >[!NOTE]
 >
@@ -32,17 +32,17 @@ Auf dieser Seite werden bestimmte Schritte aufgeführt, die vor dem Starten des 
 
 ## Migrationsschritte {#migration-steps}
 
-Das Migrationsverfahren muss **all** Server und in einer bestimmten Reihenfolge.
+Der Migrationsprozess muss auf **allen** -Servern und in einer bestimmten Reihenfolge durchgeführt werden.
 
-* Im Falle einer **Standalone-Plattform** (Einzelmodus-Modus), wird die Anwendung vollständig migriert.
-* Im Falle einer **Standardplattform** (Unternehmen) werden die folgenden Migrationsschritte ausgeführt:
+* Bei einer **Standalone-Plattform** (Einzelmodus) wird die Anwendung vollständig migriert.
+* Im Falle einer **Standard-Plattform** (Unternehmen) sind die Migrationsschritte wie folgt:
 
    1. Migrieren des Marketing-Servers
    1. Migrieren Sie den Mailserver (mta).
    1. Migrieren Sie die Umleitungs- und Tracking-Server (Apache/IIS).
 
-* Im Falle einer **Cloud Messaging-Plattform**, werden die Ausführungsserver in Adobe Campaign gehostet. Wenden Sie sich an Adobe Campaign, um die Migration zwischen verschiedenen Servern zu koordinieren.
-* Im Falle einer **Power Booster- oder Power Cluster-Plattform** werden die folgenden Migrationsschritte ausgeführt:
+* Bei einer **Cloud Messaging-Plattform** werden die Ausführungsserver in Adobe Campaign gehostet. Wenden Sie sich an Adobe Campaign, um die Migration zwischen verschiedenen Servern zu koordinieren.
+* Bei einer **Power Booster- oder Power Cluster-Plattform** sind die Migrationsschritte wie folgt:
 
    1. Migrieren Sie die Umleitungs- und Tracking-Server (Apache/IIS).
    1. Migrieren Sie die Power Booster-/Cluster-Server.
@@ -50,7 +50,7 @@ Das Migrationsverfahren muss **all** Server und in einer bestimmten Reihenfolge.
 
 ## Benutzerkennwörter {#user-passwords}
 
-In v7 **intern** und **admin** Die Verbindung des Benutzers muss durch ein Kennwort gesichert werden. Es wird dringend empfohlen, diesen Konten und allen Benutzerkonten Kennwörter zuzuweisen. **vor der Migration**. Wenn Sie kein Kennwort für **intern**, können Sie keine Verbindung herstellen. So weisen Sie ein Kennwort zu **intern** Geben Sie den folgenden Befehl ein:
+In v7 muss die Verbindung für den Operator **internal** und den Operator **admin** durch ein Kennwort gesichert werden. Es wird dringend empfohlen, diesen Konten und allen Benutzerkonten **vor der Migration** Passwörter zuzuweisen. Wenn Sie kein Kennwort für **internal** angegeben haben, können Sie keine Verbindung herstellen. Geben Sie den folgenden Befehl ein, um **internal** ein Kennwort zuzuweisen:
 
 ```
 nlserver config -internalpassword
@@ -58,4 +58,4 @@ nlserver config -internalpassword
 
 >[!CAUTION]
 >
->Die **intern** Das Kennwort muss für alle Tracking-Server identisch sein. Weitere Informationen finden Sie im Abschnitt [Interne Kennung](../../installation/using/configuring-campaign-server.md#internal-identifier) und [Berechtigungen](../../platform/using/access-management.md) Abschnitte.
+>Das Kennwort für **internal** muss für alle Tracking-Server identisch sein. Weitere Informationen finden Sie in den Abschnitten [Interne Kennung](../../installation/using/configuring-campaign-server.md#internal-identifier) und [Berechtigungen](../../platform/using/access-management.md) .

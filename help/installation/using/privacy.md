@@ -25,13 +25,13 @@ Wenn Sie personalisierte Links zu Ihrem Inhalt hinzufügen, achten Sie darauf, d
 
 ### Empfehlung
 
-Um zu überprüfen und sicherzustellen, dass Sie oben nicht verwenden, führen Sie eine Abfrage zur Tracking-URL-Tabelle über aus. [Generischer Kampagnenabfrage-Editor](../../platform/using/steps-to-create-a-query.md) oder erstellen Sie einen Workflow mit Filterkriterien im [Abfrageaktivität](../../workflow/using/query.md).
+Um zu überprüfen und sicherzustellen, dass Sie oben nicht verwenden, führen Sie über den [Generischen Abfrage-Editor für Kampagnen](../../platform/using/steps-to-create-a-query.md) eine Abfrage zur Tracking-URL-Tabelle aus oder erstellen Sie einen Workflow mit Filterkriterien in der [Abfrageaktivität](../../workflow/using/query.md) .
 
 Beispiel:
 
-1. Erstellen Sie einen Workflow und fügen Sie einen **Abfrage** -Aktivität. [Weitere Informationen](../../workflow/using/query.md).
+1. Erstellen Sie einen Workflow und fügen Sie die Aktivität **Abfrage** hinzu. [Weitere Informationen](../../workflow/using/query.md).
 
-1. Öffnen Sie die **Abfrage** und erstellen Sie einen Filter für die `nmsTrackingUrl` Tabelle wie folgt:
+1. Öffnen Sie die Aktivität **Abfrage** und erstellen Sie einen Filter für die Tabelle `nmsTrackingUrl` wie folgt:
 
    `source URL starts with http://<% or source URL starts with https://<%`
 
@@ -50,11 +50,11 @@ Um die Sicherheit zu verbessern, wurde ein Signaturmechanismus für das Tracking
 >
 >Wenn auf eine fehlerhafte signierte URL geklickt wird, wird dieser Fehler zurückgegeben: `Requested URL '…' was not found.`
 
-Darüber hinaus können Sie eine Verbesserung verwenden, um in früheren Builds generierte URLs zu deaktivieren. Diese Funktion ist standardmäßig deaktiviert. Sie können sich an [Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) um diese Funktion zu aktivieren.
+Darüber hinaus können Sie eine Verbesserung verwenden, um in früheren Builds generierte URLs zu deaktivieren. Diese Funktion ist standardmäßig deaktiviert. Sie können sich an die [Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) wenden, um diese Funktion zu aktivieren.
 
 Wenn Sie mit Build 19.1.4 arbeiten, können Probleme beim Versand von Push-Benachrichtigungen unter Verwendung von Tracking-Links oder bei Sendungen unter Verwendung von Anker-Tags auftreten. In diesem Fall wird empfohlen, die URL-Signatur zu deaktivieren.
 
-Als gehosteter, verwalteter oder hybrider Cloud Service einer Kampagne müssen Sie Kontakt mit [Kundenunterstützung](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html) , damit die URL-Signatur deaktiviert wird.
+Als gehosteter, verwalteter oder hybrider Cloud Service von Campaign müssen Sie sich an die [Kundenunterstützung](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html) wenden, damit die URL-Signatur deaktiviert wird.
 
 Wenn Sie Campaign in einer Hybridarchitektur ausführen, stellen Sie vor der Aktivierung der URL-Signatur sicher, dass die gehostete Mid-Sourcing-Instanz wie folgt aktualisiert wurde:
 
@@ -68,15 +68,15 @@ Andernfalls können einige dieser Probleme auftreten:
 
 Um in früheren Builds generierte URLs zu deaktivieren, führen Sie die folgenden Schritte auf allen Campaign-Servern gleichzeitig aus:
 
-1. In der Server-Konfigurationsdatei (`serverConf.xml`), ändern Sie die **blockRedirectForUnsignedTrackingLink** -Option **true**.
-1. Starten Sie den `nlserver` -Dienst.
-1. Im `tracking` Server, starten Sie die `web` server (apache2 unter Debian, httpd unter CentOS/RedHat, IIS unter Windows).
+1. Ändern Sie in der Serverkonfigurationsdatei (`serverConf.xml`) die Option **blockRedirectForUnsignedTrackingLink** in **true**.
+1. Starten Sie den Dienst `nlserver` neu.
+1. Starten Sie auf dem `tracking` -Server den `web` -Server neu (Apache2 unter Debian, httpd unter CentOS/RedHat, IIS unter Windows).
 
 Um die URL-Signatur zu aktivieren, führen Sie die folgenden Schritte auf allen Campaign-Servern gleichzeitig aus:
 
-1. In der Server-Konfigurationsdatei (`serverConf.xml`), ändern **signEmailLinks** Option, um **true**.
+1. Ändern Sie in der Server-Konfigurationsdatei (`serverConf.xml`) die Option **signEmailLinks** in **true**.
 1. Starten Sie den **nlserver**-Service neu.
-1. Im `tracking` Server, starten Sie die `web` server (apache2 unter Debian, httpd unter CentOS/RedHat, IIS unter Windows).
+1. Starten Sie auf dem `tracking` -Server den `web` -Server neu (Apache2 unter Debian, httpd unter CentOS/RedHat, IIS unter Windows).
 
 ## Dateneinschränkung
 
@@ -86,7 +86,7 @@ Mit dieser Einschränkung können Sie Passwortfelder entfernen, das externe Kont
 
 Gehen Sie dazu wie folgt vor:
 
-1. Navigieren Sie zum **[!UICONTROL Administration]** > **[!UICONTROL Konfiguration]** > **[!UICONTROL Datenschemata]** Ordner des Campaign-Explorers.
+1. Navigieren Sie zum Ordner **[!UICONTROL Administration]** > **[!UICONTROL Konfiguration]** > **[!UICONTROL Datenschemata]** im Campaign-Explorer.
 
 1. Erstellen Sie ein Datenschema als **[!UICONTROL Erweiterung eines Schemas]**.
 
@@ -149,7 +149,7 @@ Gehen Sie dazu wie folgt vor:
 
    >[!NOTE]
    >
-   >Sie können `$(loginId) = 0 or $(login) = 'admin'` mit `hasNamedRight('admin')` , damit alle Benutzer mit Administratorrechten diese Passwörter sehen können.
+   >Sie können `$(loginId) = 0 or $(login) = 'admin'` durch `hasNamedRight('admin')` ersetzen, damit alle Benutzer mit Administratorrechten diese Kennwörter sehen können.
 
 ## Protect-Seiten mit API
 
@@ -162,7 +162,7 @@ Ziel dieses Verfahrens ist es, dass diese Seiten nicht indexiert werden, um ein 
 
 Führen Sie die folgenden Schritte aus, um Ihre Seiten zu schützen:
 
-1. Hinzufügen einer `robots.txt` -Datei im Stammverzeichnis Ihres Webservers (Apache oder IIS). Im Folgenden finden Sie den Inhalt der Datei:
+1. Fügen Sie eine `robots.txt` -Datei im Stammverzeichnis Ihres Webservers (Apache oder IIS) hinzu. Im Folgenden finden Sie den Inhalt der Datei:
 
    ```sql
    # Make changes for all web spiders
@@ -170,17 +170,17 @@ Führen Sie die folgenden Schritte aus, um Ihre Seiten zu schützen:
    *Disallow: /
    ```
 
-   Informationen zu IIS, siehe [diese Seite](https://docs.microsoft.com/en-us/iis/extensions/iis-search-engine-optimization-toolkit/managing-robotstxt-and-sitemap-files).
+   Informationen zu IIS finden Sie auf [dieser Seite](https://docs.microsoft.com/en-us/iis/extensions/iis-search-engine-optimization-toolkit/managing-robotstxt-and-sitemap-files).
 
-   Für Apache können Sie die Datei in **/var/www/robots.txt** (Debian).
+   Für Apache können Sie die Datei in **/var/www/robots.txt** (Debian) platzieren.
 
-1. Manchmal wird eine **robots.txt** -Datei ist im Hinblick auf die Sicherheit nicht ausreichend. Wenn beispielsweise eine andere Website einen Link zu Ihrer Seite enthält, kann diese in einem Suchergebnis angezeigt werden.
+1. Manchmal ist das Hinzufügen einer **robots.txt** -Datei aus Sicherheitsgründen nicht ausreichend. Wenn beispielsweise eine andere Website einen Link zu Ihrer Seite enthält, kann diese in einem Suchergebnis angezeigt werden.
 
-   Zusätzlich zu den **robots.txt** hinzugefügt werden, wird empfohlen, eine **X-Robots-Tag** -Kopfzeile. Sie können dies in Apache oder IIS und im **serverConf.xml** Konfigurationsdatei.
+   Zusätzlich zur Datei **robots.txt** wird empfohlen, den Header **X-Robots-Tag** hinzuzufügen. Sie können dies in Apache oder IIS und in der Konfigurationsdatei **serverConf.xml** tun.
 
-   Weitere Informationen finden Sie unter [diesem Artikel](https://developers.google.com/search/reference/robots_meta_tag).
+   Weitere Informationen finden Sie in [diesem Artikel](https://developers.google.com/search/reference/robots_meta_tag).
 
 
 ## Datenschutzanfragen
 
-Siehe Abschnitt [diese Seite](../../platform/using/privacy-management.md) für allgemeine Informationen zu den Funktionen der Datenschutzverwaltung und den Implementierungsschritten in Adobe Campaign. Darüber hinaus finden Sie Best Practices und einen Überblick über den Benutzerprozess und die Rollen.
+Allgemeine Informationen dazu, was unter Datenschutzverwaltung zu verstehen ist, und zu den Implementierungsschritten in Adobe Campaign finden Sie auf [dieser Seite](../../platform/using/privacy-management.md) . Darüber hinaus finden Sie Best Practices und einen Überblick über den Benutzerprozess und die Rollen.

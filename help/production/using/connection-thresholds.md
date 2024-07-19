@@ -23,15 +23,15 @@ Bei stark ausgelasteten Servern kann der Verbindungsschwellenwert überschritten
 
 Es gibt drei unterschiedliche Schwellenwerte:
 
-* Die **Schwellenwert für Webverbindungen** auf Ihrem Webserver konfiguriert. Wenden Sie sich zur Änderung an Ihren Systemadministrator.
+* Der **Schwellenwert für Webverbindungen**, der auf Ihrem Webserver konfiguriert ist. Wenden Sie sich zur Änderung an Ihren Systemadministrator.
 
-* Die **Schwellenwert für Datenbankverbindung**. Wenden Sie sich zur Änderung an Ihren Datenbankadministrator.
+* Der **Schwellenwert für die Datenbankverbindung**. Wenden Sie sich zur Änderung an Ihren Datenbankadministrator.
 
-* Die **Adobe Campaign-Verbindungsschwellen**, verfügbar an zwei Stellen:
+* Der **Adobe Campaign-Verbindungsschwellenwert**, der an zwei Stellen verfügbar ist:
 
-   * **Tomcat** side: alle Abfragen, die tatsächlich auf den Adobe Campaign Tomcat-Client gelangen.
+   * **Tomcat** Seite: Alle Abfragen, die tatsächlich auf den Adobe Campaign Tomcat-Client gelangen.
 
-     Diese Schwelle wird im Abschnitt **nl6/tomcat-X/conf/server.xml** -Datei. Die **maxThreads** -Attribut können Sie die Schwelle der Anzahl der gleichzeitig verarbeiteten Abfragen erhöhen. Sie kann beispielsweise auf 250 geändert werden.
+     Dieser Schwellenwert wird in der Datei **nl6/tomcat-X/conf/server.xml** konfiguriert. Mit dem Attribut **maxThreads** können Sie den Schwellenwert für die Anzahl der gleichzeitig verarbeiteten Abfragen erhöhen. Sie kann beispielsweise auf 250 geändert werden.
 
      ```
      <Connector protocol="HTTP/1.1" port="8080"
@@ -45,9 +45,9 @@ Es gibt drei unterschiedliche Schwellenwerte:
                  unpackWARs="true" autoDeploy="true">
      ```
 
-   * **Datenbank**: Satz aller Verbindungen, die durch einen Prozess gleichzeitig in der Datenbank geöffnet werden.
+   * **Datenbank**: Satz aller Verbindungen, die von einem Prozess gleichzeitig in der Datenbank geöffnet werden.
 
-     Dieser Schwellenwert wird in der Datei konfiguriert **nl6/conf/serverConf.xml**. Die **maxCnx** -Attribut in **Datenquellenpool** erhöht die Schwelle für gleichzeitig verarbeitete Abfragen.
+     Dieser Schwellenwert wird in der Datei **nl6/conf/serverConf.xml** konfiguriert. Mit dem Attribut **maxCnx** im **Datenquellenpool** können Sie den Schwellenwert für gleichzeitig verarbeitete Abfragen erhöhen.
 
      ```
          <!-- Data source

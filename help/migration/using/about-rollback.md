@@ -27,7 +27,7 @@ Das Rollback-Verfahren hängt von Ihrer ursprünglichen Version von Campaign ab.
 Im Folgenden finden Sie das Verfahren zum Wiederherstellen einer v6.1 von v7.
 
 1. Stellen Sie die Sicherung der Datenbank wieder her und stellen Sie sie wieder her.
-1. Wiederherstellen der **Adobe Campaign v6.back** Ordner (**nl6.back** in Linux) umbenennen. **Adobe Campaign v6** (**nl6** in Linux) und stellen Sie ihn wieder an seinem ursprünglichen Speicherort her.
+1. Rufen Sie den Ordner &quot;**Adobe Campaign v6.back**&quot;(**nl6.back** in Linux) auf, benennen Sie ihn in &quot;**Adobe Campaign v6**&quot;(**nl6** in Linux) um und stellen Sie ihn wieder an seinem ursprünglichen Speicherort her.
 1. Konfigurieren Sie IIS neu, indem Sie die Überwachungsanschlüsse neu zuweisen, um die Integration von Adobe Campaign v6.1 auf IIS-Website-Ebene wiederherzustellen.
 1. Beenden Sie den Adobe Campaign v7-Dienst.
 1. Starten Sie IIS neu.

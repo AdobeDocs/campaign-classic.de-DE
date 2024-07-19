@@ -3,7 +3,7 @@ title: Aktualisieren der Campaign-Benutzeroberfläche nach IMS-Migration
 description: Informationen zur Aktivierung der Auswirkungen der Adobe Identity Management System-Migration auf die Benutzeroberfläche
 exl-id: 8b13fe4d-d8d3-43b3-bbe4-c8c5574f585a
 source-git-commit: 8eadea9f9cc0a44522726024bfbc825e3b4cad98
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 100%
 

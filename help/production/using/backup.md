@@ -11,7 +11,7 @@ exl-id: e5ef6aba-dc22-4c8d-9fbb-13d507181b65
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
 source-wordcount: '210'
-ht-degree: 5%
+ht-degree: 7%
 
 ---
 
@@ -30,11 +30,11 @@ Die meisten Daten befinden sich in der Datenbank. Dies entspricht 99 % der zu si
 
 Dateien sind in mehrere Kategorien unterteilt:
 
-* Konfigurationsdateien, gespeichert in **nl6/conf** können Sie Adobe Campaign sehr schnell neu konfigurieren.
+* Konfigurationsdateien, die in **nl6/conf** gespeichert sind, ermöglichen eine sehr schnelle Neukonfiguration von Adobe Campaign.
 
-* Weiterleitungsdateien, gespeichert in  **nl6/var/`<instance-name>`/redir**, befinden sich auf den Tracking-Servern (häufig als &quot;frontal&quot;bezeichnet) und schließen alle vorherigen Kampagnen-Umleitungen ein. Sie werden weiterhin von früheren Kampagnen verwendet.
+* Weiterleitungsdateien, die in **nl6/var/`<instance-name>`/redir** gespeichert sind, befinden sich auf den Tracking-Servern (häufig als &quot;frontal&quot;bezeichnet) und beinhalten alle vorherigen Kampagnenumleitungen. Sie werden weiterhin von früheren Kampagnen verwendet.
 
-* Protokolldateien, gespeichert in **nl6/var/`<instance-name>`/log**, kann zur Verfolgung von Problemen verwendet werden.
+* Protokolldateien, die in **nl6/var/`<instance-name>`/log** gespeichert sind, können zur Verfolgung von Problemen verwendet werden.
 
 Die zu sichernden Verzeichnisse sind daher:
 

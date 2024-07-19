@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Navigationsstruktur von Campaign Explorer bearbeiten{#edition}
 
-Auf den Bildschirm zum Erstellen und Konfigurieren der Navigationshierarchiekonfigurationsdokumente kann über das **[!UICONTROL Administration > Konfiguration > Navigationshierarchien]** node:
+Auf den Bildschirm zum Erstellen und Konfigurieren der Navigationshierarchiekonfigurationsdokumente kann über den Knoten **[!UICONTROL Administration > Konfiguration > Navigationshierarchien]** zugegriffen werden:
 
 ![](assets/d_ncs_integration_navigation_arbo.png)
 
@@ -27,7 +27,7 @@ Das Bearbeitungsfeld stellt den Inhalt des XML-Dokuments bereit:
 
 >[!NOTE]
 >
->Das Eingabefeld &quot;Name&quot; ermöglicht die Eingabe des Dokumentschlüssels, der aus Name und Namespace besteht. Die Attribute &quot;name&quot;und &quot;namespace&quot;der **`<navtree>`** -Element automatisch im XML-Bearbeitungsfeld des Schemas aktualisiert.
+>Das Eingabefeld &quot;Name&quot; ermöglicht die Eingabe des Dokumentschlüssels, der aus Name und Namespace besteht. Die Attribute &quot;name&quot;und &quot;namespace&quot;des Elements **`<navtree>`** werden automatisch im XML-Bearbeitungsfeld des Schemas aktualisiert.
 
 Die Vorschau generiert automatisch das zusammengeführte Dokument mit der vollständigen Konfiguration:
 

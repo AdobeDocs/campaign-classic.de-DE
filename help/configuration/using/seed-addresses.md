@@ -9,7 +9,7 @@ exl-id: a16103bf-0498-4f59-ad96-8bfdeea26577
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
 source-wordcount: '341'
-ht-degree: 9%
+ht-degree: 10%
 
 ---
 
@@ -17,15 +17,15 @@ ht-degree: 9%
 
 
 
-Wenn es sich bei der Empfängertabelle um eine benutzerdefinierte Tabelle handelt, sind zusätzliche Konfigurationen erforderlich. Die **[!UICONTROL nms:seedMember]** -Schema erweitert werden. Den Testadressen wird ein zusätzlicher Tab zur Definition der entsprechenden Felder hinzugefügt, wie unten dargestellt:
+Wenn es sich bei der Empfängertabelle um eine benutzerdefinierte Tabelle handelt, sind zusätzliche Konfigurationen erforderlich. Das Schema **[!UICONTROL nms:seedMember]** muss erweitert werden. Den Testadressen wird ein zusätzlicher Tab zur Definition der entsprechenden Felder hinzugefügt, wie unten dargestellt:
 
 ![](assets/s_ncs_user_seedlist_new_tab.png)
 
-Weitere Informationen zur Verwendung von Testadressen finden Sie unter [diesem Abschnitt](../../delivery/using/about-seed-addresses.md).
+Weiterführende Informationen zur Verwendung von Testadressen finden Sie in [diesem Abschnitt](../../delivery/using/about-seed-addresses.md).
 
 ## Implementierung {#implementation}
 
-Die **nms:seedMember** Schema und das verknüpfte Formular, das standardmäßig bereitgestellt wird, sollen für die Kundenkonfiguration erweitert werden, um alle erforderlichen Felder zu referenzieren. Die Schemadefinition enthält Kommentare zum Konfigurationsmodus.
+Das Schema **nms:seedMember** und das native verknüpfte Formular sollen für die Kundenkonfiguration erweitert werden, um auf alle erforderlichen Felder zu verweisen. Die Schemadefinition enthält Kommentare zum Konfigurationsmodus.
 
 Definition des erweiterten Empfängerschemas der Empfängertabelle:
 
@@ -44,14 +44,14 @@ Definition des erweiterten Empfängerschemas der Empfängertabelle:
 
 Gehen Sie wie folgt vor:
 
-1. Erstellen Sie eine Erweiterung der **nms:seedMember** Schema. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../configuration/using/extending-a-schema.md).
-1. Fügen Sie in dieser neuen Erweiterung ein neues Element am Stammverzeichnis von hinzu. **[!UICONTROL seedMember]** mit den folgenden Parametern:
+1. Erstellen Sie eine Erweiterung des Schemas **nms:seedMember** . Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../configuration/using/extending-a-schema.md).
+1. Fügen Sie in dieser neuen Erweiterung ein neues Element am Stammverzeichnis von **[!UICONTROL seedMember]** mit den folgenden Parametern hinzu:
 
    ```
    name="custom_customNamespace_customSchema"
    ```
 
-   Dieses Element muss die Felder enthalten, die zum Export der Kampagnen erforderlich sind. Diese Felder sollten denselben Namen haben wie die entsprechenden Felder im externen Schema. Wenn das Schema beispielsweise **[!UICONTROL cus:person]** , die **[!UICONTROL nms:seedMember]** Schema sollte wie folgt erweitert werden:
+   Dieses Element muss die Felder enthalten, die zum Export der Kampagnen erforderlich sind. Diese Felder sollten denselben Namen haben wie die entsprechenden Felder im externen Schema. Wenn das Schema beispielsweise **[!UICONTROL cus:person]** ist, sollte das Schema **[!UICONTROL nms:seedMember]** wie folgt erweitert werden:
 
    ```
      <srcSchema extendedSchema="nms:seedMember" label="Seed addresses" labelSingular="Seed address" name="seedMember" namespace="cus">
@@ -70,20 +70,20 @@ Gehen Sie wie folgt vor:
 
    >[!NOTE]
    >
-   >Die Erweiterung der **nms:seedMember** -Schema muss den Strukturen einer Kampagne und eines Versands in Adobe Campaign entsprechen.
+   >Die Erweiterung des Schemas **nms:seedMember** muss den Strukturen einer Kampagne und eines Versands in Adobe Campaign entsprechen.
 
    >[!IMPORTANT]
    >
    >
    >    
    >    
-   >    * Während der Erweiterung müssen Sie eine **SQL-Name (@sqlname)** für das Feld &quot;E-Mail&quot;. Der SQL-Name muss sich von der &#39;sEmail&#39; unterscheiden, die für das Empfängerschema reserviert ist.
-   >    * Sie müssen die Datenbankstruktur mit dem Schema aktualisieren, das beim Erweitern von **nms:seedMember**.
-   >    * Im **nms:seedMember** Erweiterung, muss das Feld, das die E-Mail-Adresse enthält, **name=&quot;email&quot;** als Attribut. Der SQL-Name muss sich von &quot;sEmail&quot;unterscheiden, der bereits für das Empfängerschema verwendet wird. Dieses Attribut muss sofort unter der **`<element name="custom_cus_person" />`** -Element.
+   >    * Während der Erweiterung müssen Sie einen **SQL-Namen (@sqlname)** für das Feld &quot;email&quot;angeben. Der SQL-Name muss sich von der &#39;sEmail&#39; unterscheiden, die für das Empfängerschema reserviert ist.
+   >    * Sie müssen die Datenbankstruktur mit dem Schema aktualisieren, das beim Erweitern von **nms:seedMember** erstellt wurde.
+   >    * In der Erweiterung **nms:seedMember** muss das Feld, das die E-Mail-Adresse enthält, über das Attribut **name=&quot;email&quot;** verfügen. Der SQL-Name muss sich von &quot;sEmail&quot;unterscheiden, der bereits für das Empfängerschema verwendet wird. Dieses Attribut muss sofort unter dem Element **`<element name="custom_cus_person" />`** deklariert werden.
    >    
    >
 
-1. Ändern Sie die **[!UICONTROL seedMember]** dementsprechend das Formular zur Definition eines neuen Tabs &quot;Interner Empfänger&quot;im **[!UICONTROL Testadressen]** Fenster. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../configuration/using/form-structure.md).
+1. Ändern Sie das Formular **[!UICONTROL seedMember]** entsprechend, um eine neue Registerkarte &quot;Interner Empfänger&quot;im Fenster **[!UICONTROL Testadressen]** zu definieren. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../configuration/using/form-structure.md).
 
    ```
    <container colcount="2" label="Internal recipient" name="internal"

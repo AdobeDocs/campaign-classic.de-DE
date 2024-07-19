@@ -18,7 +18,7 @@ ht-degree: 1%
 
 Mit Adobe Campaign können Sie einen Webtracking-Modus auswählen, der definiert, wie Trackinglogs in der Anwendung verarbeitet werden.
 
-Es gibt drei verfügbare Webtracking-Modi: **&quot;Sitzungs-Tracking&quot;**,**&quot;Dauerhaftes Tracking&quot;** und **&quot;Anonym-Tracking&quot;**.
+Es gibt drei verfügbare Webtracking-Modi: **&quot;Sitzungs-Tracking&quot;**,**&quot;Dauerhaftes Tracking&quot;** und **&quot;Anonymes Tracking&quot;**.
 
 ![](assets/s_ncs_install_deployment_wiz_tracking_mode.png)
 
@@ -30,7 +30,7 @@ Jeder Modus weist bestimmte Eigenschaften auf. Der permanente Webtracking-Modus 
 >
 >Der Standardmodus kann jederzeit im Instanzbereitstellungsassistenten geändert werden.
 
-Beachten Sie Folgendes: Wenn Sie die **permanentes Web** oder **anonymous** Tracking-Modus müssen Sie der Spalte &quot;sourceID&quot;(uuid230) in den Tracking-Tabellen (trackingLogXXX) einen Index hinzufügen:
+Beachten Sie, dass bei Verwendung des Tracking-Modus **permanenter Web** oder **anonymous** der Spalte &quot;sourceID&quot;(uuid230) in den Tracking-Tabellen (trackingLogXXX) ein Index hinzugefügt werden muss:
 
 1. Identifizieren Sie die vom permanenten Tracking betroffenen Tracking-Tabellen.
 1. Erweitern Sie die Schemata, die diesen Tabellen entsprechen, indem Sie die folgenden Zeilen hinzufügen:
@@ -41,11 +41,11 @@ Beachten Sie Folgendes: Wenn Sie die **permanentes Web** oder **anonymous** Trac
 </dbindex>
 ```
 
-**Ständig** und **Anonym** Web-Tracking-Modi umfassen zwei Optionen: **Erzwungener Versand** und **Letzter Versand**.
+Die Webtracking-Modi **Dauerhaft** und **Anonym** enthalten zwei Optionen: **Erzwungener Versand** und **Letzter Versand**.
 
-Die **Erzwungener Versand** -Option ermöglicht die Angabe der Versandkennung (@jobid) während des Trackings.
+Mit der Option **Erzwungener Versand** können Sie die Versandkennung (@jobid) während des Trackings angeben.
 
-Die **Letzter Versand** ermöglicht die Verknüpfung des aktuellen Trackinglogs mit dem zuletzt verfolgten Versand.
+Mit der Option **Letzter Versand** können Sie das aktuelle Trackinglog mit dem letzten verfolgten Versand verknüpfen.
 
 **Eigenschaften des Sitzungs-Webtrackings:**
 
@@ -72,7 +72,7 @@ Standardmäßig werden Suchvorgänge in vorherigen Trackinglogs in der Tabelle &
 
 Dieser Modus ist bei der Berechnung während der Protokollabstimmung kostspielig.
 
-**Eigenschaften des anonymen Webtracking-Modus:**
+**Eigenschaften des anonymen Web-Tracking-Modus:**
 
 Mit diesem Webtracking-Modus können Sie ein Trackinglog abrufen, das mit dem anonymen Browsen in Adobe Campaign verknüpft ist. Für jeden Klick auf eine getrackte URL wird automatisch ein Trackinglog erstellt. Dieses Protokoll hat nur den Wert von uuid230. Während einer Marketing-Kampagne wird automatisch ein Trackinglog mit allen Identifizierungsinformationen erstellt (siehe Sitzungs-Tracking). Adobe Campaign sucht in den vorherigen Logs automatisch nach einem &quot;uuid230&quot;-Wert, der dem Wert aus dem Trackinglog für diese Marketing-Kampagne entspricht. Wenn identische Werte gefunden werden, werden alle vorherigen Trackinglogs mit allen Informationen aus dem Trackinglog der Marketing-Kampagne eingegeben.
 
@@ -80,7 +80,7 @@ Dieser Modus ist in Bezug auf Berechnung und Volumen am teuersten.
 
 >[!NOTE]
 >
->Wenn die Variable **[!UICONTROL Leads]** installiert ist, müssen Sie dasselbe für die Aktivitätstabelle tun (**crm:incomingLead**)
+>Wenn das Paket **[!UICONTROL Leads]** installiert ist, müssen Sie dasselbe für die Aktivitätstabelle tun (**crm:incomingLead**).
 
 Das folgende Schema fasst die Funktionen aller drei Webtracking-Modi zusammen:
 

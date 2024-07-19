@@ -10,7 +10,7 @@ exl-id: 3a5856c3-b642-4722-97ff-6ae7107efdbe
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
 source-wordcount: '1655'
-ht-degree: 61%
+ht-degree: 63%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 61%
 
 
 
-Verwenden von Campaign [Federated Data Access](../../installation/using/about-fda.md) (FDA), um in externen Datenbanken gespeicherte Informationen zu verarbeiten. Gehen Sie wie folgt vor, um den Zugriff auf Teradata zu konfigurieren.
+Verwenden Sie die Option Campaign [Federated Data Access](../../installation/using/about-fda.md) (FDA) , um in externen Datenbanken gespeicherte Informationen zu verarbeiten. Gehen Sie wie folgt vor, um den Zugriff auf Teradata zu konfigurieren.
 
-1. Installieren und Konfigurieren [Teradata](#teradata-config)
-1. Konfigurieren des Teradata [externes Konto](#teradata-external) in Campaign
-1. Einrichten [zusätzliche Konfiguration](#teradata-additional-configurations) für Teradata und Campaign-Server
+1. Installieren und Konfigurieren von [Teradata-Treibern](#teradata-config)
+1. Konfigurieren des externen Teradata [1} in Campaign](#teradata-external)
+1. Einrichten von [zusätzlichen Konfigurationen](#teradata-additional-configurations) für Teradata und Campaign-Server
 
 ## Teradata-Konfiguration {#teradata-config}
 
@@ -36,7 +36,7 @@ Sie müssen Treiber installieren, damit Teradata die Verbindung zu Campaign hers
    * tdicu1510 (Installation mit setup_wrapper.sh)
    * tdodbc1510 (Installation mit setup_wrapper.sh)
 
-1. Konfigurieren Sie den ODBC-Treiber. Die Konfiguration kann in den Standarddateien vorgenommen werden: **/etc/odbc.ini** für allgemeine Parameter und /etc/odbcinst.ini zur Deklarierung von Treibern:
+1. Konfigurieren Sie den ODBC-Treiber. Die Konfiguration kann in den Standarddateien ausgeführt werden: **/etc/odbc.ini** für allgemeine Parameter und /etc/odbcinst.ini zur Deklarierung der Treiber:
 
    * **/etc/odbc.ini**
 
@@ -76,7 +76,7 @@ Sie müssen Treiber installieren, damit Teradata die Verbindung zu Campaign hers
 
 Mit dem externen Teradata-Konto können Sie Ihre Campaign-Instanz mit Ihrer externen Teradata-Datenbank verbinden.
 
-1. Von Campaign **[!UICONTROL Explorer]** klicken **[!UICONTROL Administration]** / **[!UICONTROL Plattform]** / **[!UICONTROL Externe Konten]**.
+1. Klicken Sie in Campaign **[!UICONTROL Explorer]** auf **[!UICONTROL Administration]** / **[!UICONTROL Plattform]** / **[!UICONTROL Externe Konten]**.
 
 1. Klicken Sie auf **[!UICONTROL Neu]** und wählen Sie **[!UICONTROL Externe Datenbank]** als **[!UICONTROL Typ]** aus.
 
@@ -84,19 +84,19 @@ Mit dem externen Teradata-Konto können Sie Ihre Campaign-Instanz mit Ihrer exte
 
 1. Zum Konfigurieren des externen **[!UICONTROL Teradata]**-Kontos müssen Sie Folgendes angeben:
 
-   * **[!UICONTROL Typ]**: Wählen Sie die **[!UICONTROL Teradata]** Typ.
+   * **[!UICONTROL Typ]**: Wählen Sie den Typ **[!UICONTROL Teradata]** aus.
 
    * **[!UICONTROL Server]**: URL oder Name Ihres Teradata-Servers
 
    * **[!UICONTROL Konto]**: Name des Kontos, über das auf die Teradata zugegriffen wird
 
-   * **[!UICONTROL Passwort]**: Kennwort für die Verbindung mit der Teradata-Datenbank
+   * **[!UICONTROL Passwort]**: Passwort, mit dem eine Verbindung zur Teradata-Datenbank hergestellt wird
 
    * **[!UICONTROL Datenbank]**: Name der Datenbank (optional)
 
-   * **[!UICONTROL Optionen]**: Optionen, die über Teradata weitergeleitet werden. Verwenden Sie das folgende Format: &#39;parameter=value&#39;. Verwenden Sie ein Semikolon als Trennzeichen zwischen Werten.
+   * **[!UICONTROL Optionen]**: Optionen, die durch Teradata weitergegeben werden sollen. Verwenden Sie das folgende Format: &#39;parameter=value&#39;. Verwenden Sie ein Semikolon als Trennzeichen zwischen Werten.
 
-   * **[!UICONTROL Zeitzone]**: In Teradata festgelegte Zeitzone. [Weitere Informationen](#timezone)
+   * **[!UICONTROL Zeitzone]**: Zeitzone, die in Teradata festgelegt ist. [Weitere Informationen](#timezone)
 
 Der Connector unterstützt die folgenden Optionen:
 
@@ -105,7 +105,7 @@ Der Connector unterstützt die folgenden Optionen:
 | TD_MAX_SESSIONS | Gibt die maximale Anzahl von Anmeldungssitzungen an, die der Teradata Parallel Transporter für einen Operatorauftrag abrufen kann. |
 | TimeZoneName | Name der Zeitzone des Servers. |
 | CharacterSet | Wird zum Konfigurieren eines Teradata-Zeichensatzes verwendet. <br>Weiterführende Informationen hierzu finden Sie auf dieser [Seite](https://docs.teradata.com/r/ODBC-Driver-for-Teradata-User-Guide/May-2017/Configuration-of-odbc.ini-in-UNIX/Linux-and-Apple-OS-X/Teradata-DSN-Options#rub1478609534082__table_N102D3_N102B6_N102B3_N10001). |
-| IANAAppCodePage | ODBC-Anwendungs-Code-Seite. <br>Weitere Informationen hierzu finden Sie unter [diese Seite](https://docs.teradata.com/r/ODBC-Driver-for-Teradata-User-Guide/May-2017/ODBC-Driver-for-Teradata-Application-Development/International-Character-Set-Support/Application-Code-Page) |
+| IANAAppCodePage | ODBC-Anwendungs-Code-Seite. <br>Weitere Informationen hierzu finden Sie auf [dieser Seite](https://docs.teradata.com/r/ODBC-Driver-for-Teradata-User-Guide/May-2017/ODBC-Driver-for-Teradata-Application-Development/International-Character-Set-Support/Application-Code-Page) |
 
 ### Zusätzliche externe ODBC-Konten hinzufügen {#add-external}
 
@@ -115,7 +115,7 @@ Der Connector unterstützt die folgenden Optionen:
 
 Der Teradata-Treiber stellt eine eigene ODBC-Bibliothek bereit, diese Bibliothek ist jedoch möglicherweise nicht mit anderen externen ODBC-Konten kompatibel.
 
-Wenn Sie ein anderes externes Konto konfigurieren möchten, das auch ODBC verwendet, z. B. Snowflake, müssen Sie eine ODBCLib-Option hinzufügen, die auf den Pfad der standardmäßigen ODBC-Bibliothek (`/usr/lib/x86_64-linux-gnu/libodbc.so` auf Debian und `/usr/lib64/libodbc.so` auf RHEL/CentOS).
+Wenn Sie ein anderes externes Konto konfigurieren möchten, das auch ODBC verwendet, z. B. Snowflake, müssen Sie eine ODBCLib-Option hinzufügen, die auf den Pfad der standardmäßigen ODBC-Bibliothek (`/usr/lib/x86_64-linux-gnu/libodbc.so` unter Debian und `/usr/lib64/libodbc.so` unter RHEL/CentOS) festgelegt ist.
 
 ![](assets/ext_account_24.png)
 
@@ -133,9 +133,9 @@ Wenn diese Option konfiguriert ist, sendet Adobe Campaign jedes Mal, wenn ein Ca
 
 Gehen Sie wie folgt vor, um Query Banding zu konfigurieren:
 
-1. Verwenden Sie die  **[!UICONTROL Standard]** , um einen Standardwert für Query Banding einzugeben, der verwendet wird, wenn einem Benutzer kein Query Banding zugeordnet ist. Wenn dieses Feld leer gelassen wird, können Benutzer ohne Query Banding Teradata nicht verwenden.
+1. Verwenden Sie den **[!UICONTROL Standard]** , um einen standardmäßigen Query Banding einzugeben, der verwendet wird, wenn einem Benutzer kein Query Banding zugeordnet ist. Wenn kein Standardwert für Query Banding definiert ist, können Benutzer ohne Query Banding Teradata nicht verwenden.
 
-1. Verwenden Sie die **[!UICONTROL Benutzer]** -Feld, um einen Query Banding für jeden Benutzer anzugeben. Sie können so viele Schlüssel/Wert-Paare hinzufügen, wie Sie benötigen, z. B. priority=1;workload=high. Wenn dem Benutzer kein Query Banding zugewiesen ist, wird die **[!UICONTROL Standard]** wird angewendet.
+1. Verwenden Sie das Feld **[!UICONTROL Benutzer]** , um einen Query Banding für jeden Benutzer anzugeben. Sie können so viele Schlüssel/Wert-Paare hinzufügen, wie Sie benötigen, z. B. priority=1;workload=high. Wenn dem Benutzer kein Query Banding zugewiesen ist, wird das Feld **[!UICONTROL Default]** angewendet.
 
 1. Markieren Sie die Option **[!UICONTROL Aktiv]**, um diese Funktion zu aktivieren.
 
@@ -143,11 +143,11 @@ Gehen Sie wie folgt vor, um Query Banding zu konfigurieren:
 
 Wenn beim Testen der Verbindung der Fehler **TIM-030008 Datum &#39;2&#39;: fehlende Zeichen (iRc = -53)** auftritt, stellen Sie sicher, dass der ODBC-Treiber korrekt installiert ist und LD_LIBRARY_PATH (Linux)/PATH (Windows) für den Campaign-Server festlegt wurde.
 
-Der Fehler **ODB-240000 ODBC-Fehler: [Microsoft][ODBC Driver Manager]-Datenquellenname nicht gefunden und kein Standardtreiber angegeben.** tritt unter Windows auf, wenn Sie einen 16.X-Treiber verwenden. Adobe Campaign erwartet, dass die teradata &quot;&quot;heißt{teradata}&quot; in odbcinst.ini.
+Der Fehler **ODB-240000 ODBC-Fehler: [Microsoft][ODBC Driver Manager]-Datenquellenname nicht gefunden und kein Standardtreiber angegeben.** tritt unter Windows auf, wenn Sie einen 16.X-Treiber verwenden. Adobe Campaign erwartet, dass der teradata in odbcinst.ini den Namen &quot;{teradata}&quot; erhält.
 
 * Ab Campaign 18.10 können Sie ODBCDriverName=&quot;Teradata Database ODBC Driver 16.10&quot; in den Optionen des externen Kontos hinzufügen. Die Versionsnummer kann sich ändern. Sie können den genauen Namen finden, indem Sie odbcad32.exe ausführen und auf die Registerkarte Treiber zugreifen.
 
-* Wenn Sie eine ältere Campaign-Version verwenden, müssen Sie den von der Treiberinstallation erstellten Teradata von odbcinst.ini in einen neuen Abschnitt mit dem Namen Teradata kopieren. In diesem Fall kann Regedit verwendet werden. Wenn Ihre Basis in latin1 ist, müssen Sie **APICharSize=1** in den Optionen.
+* Wenn Sie eine ältere Campaign-Version verwenden, müssen Sie den von der Treiberinstallation erstellten Teradata von odbcinst.ini in einen neuen Abschnitt mit dem Namen Teradata kopieren. In diesem Fall kann Regedit verwendet werden. Wenn Ihre Basis in latin1 liegt, müssen Sie **APICharSize=1** in die Optionen einfügen.
 
 ## Zusätzliche Konfigurationen {#teradata-additional-configurations}
 
@@ -227,7 +227,7 @@ Installieren von SHA-2:
 
 ### UDF_UTF16TO8-Installation {#UDF-UTF16TO8-installation}
 
-Wenn Sie udf_utf16to8-Funktionen in Ihrer Adobe Campaign-Instanz verwenden möchten, installieren Sie die Benutzermodusfunktion in Ihrer Teradata über die **Teradata Unicode-Toolkit**.
+Wenn Sie udf_utf16to8-Funktionen in Ihrer Adobe Campaign-Instanz verwenden möchten, installieren Sie die Benutzermodusfunktion in Ihrer Teradata über das **Teradata unicode-Toolkit**.
 
 Der SHA-1-Wert der heruntergeladenen Datei lautet wie folgt: e58235f434f52c71316a577cb48e20b97d24f470.
 

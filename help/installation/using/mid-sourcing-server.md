@@ -19,15 +19,15 @@ ht-degree: 3%
 
 
 
-In diesem Abschnitt werden die Installation und Konfiguration eines Mid-Sourcing-Servers sowie die Bereitstellung einer Instanz beschrieben, die es Drittanbietern ermöglicht, Nachrichten in **Mid-Sourcing** -Modus.
+In diesem Abschnitt werden die Installation und Konfiguration eines Mid-Sourcing-Servers sowie die Bereitstellung einer Instanz beschrieben, die es Drittanbietern ermöglicht, Nachrichten im Modus **Mid-Sourcing** zu senden.
 
-Die Mid-Sourcing-Architektur wird im Abschnitt [Mid-Sourcing-Bereitstellung](../../installation/using/mid-sourcing-deployment.md).
+Die &quot;Mid-Sourcing&quot;-Architektur wird unter [Mid-Sourcing-Bereitstellung](../../installation/using/mid-sourcing-deployment.md) beschrieben.
 
 Die Installation eines Mid-Sourcing-Servers erfolgt auf die gleiche Weise wie die normale Installation eines Servers (siehe Standardkonfiguration). Es handelt sich um eine unabhängige Instanz mit einer eigenen Datenbank, die für die Durchführung von Sendungen verwendet werden kann. Einfach ausgedrückt, enthält es eine zusätzliche Konfiguration, mit der Remote-Instanzen Sendungen im Mid-Sourcing-Modus ausführen können.
 
 >[!CAUTION]
 >
->Sobald der Mid-Sourcing-Server eingerichtet wurde und die [Synchronisations-Workflows](../../workflow/using/about-technical-workflows.md) zum ersten Mal ausgeführt haben, stellen Sie sicher, dass Sie den internen Namen der externen Mid-Sourcing-Konten nicht aktualisieren.
+>Nachdem der Mid-Sourcing-Server eingerichtet wurde und die [Synchronisations-Workflows](../../workflow/using/about-technical-workflows.md) zum ersten Mal ausgeführt wurden, stellen Sie sicher, dass Sie den internen Namen der externen Mid-Sourcing-Konten nicht aktualisieren.
 
 ## Schritte zum Installieren und Konfigurieren einer Instanz {#steps-for-installing-and-configuring-an-instance}
 
@@ -41,11 +41,11 @@ Im folgenden Verfahren wird eine Konfiguration mit einem einzelnen Mid-Sourcing-
 
 ### Installation und Konfiguration des Anwendungsservers für die Mid-Sourcing-Bereitstellung {#installing-and-configuring-the-application-server-for-mid-sourcing-deployment}
 
-Das Installationsverfahren entspricht dem der eigenständigen Instanz. Siehe Abschnitt [Installation und Konfiguration (ein Computer)](../../installation/using/standalone-deployment.md#installing-and-configuring--single-machine-).
+Das Installationsverfahren entspricht dem der eigenständigen Instanz. Siehe [Installieren und Konfigurieren (einzelner Computer)](../../installation/using/standalone-deployment.md#installing-and-configuring--single-machine-).
 
 Sie müssen jedoch Folgendes anwenden:
 
-* Schritt **5**, müssen Sie die **mta** (Versand) und **inMail** (Bounce Messages) -Modulen. Die **wfserver** (Workflow) aktiviert bleiben.
+* Bei Schritt **5** müssen Sie die Module **mta** (delivery) und **inMail** (Bounce Messages) deaktivieren. Das Modul **wfserver** (Workflow) muss jedoch aktiviert bleiben.
 
   ```
   <?xml version='1.0'?>
@@ -65,8 +65,8 @@ Sie müssen jedoch Folgendes anwenden:
 
   Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#enabling-processes).
 
-* Schritte **6**, **9** und **10** nicht erforderlich sind.
-* Schritte **12** und **13** müssen Sie den 8080-Port in der Verbindungs-URL angeben (da die Konsole direkt mit Tomcat und nicht über den Webserver kommuniziert). Die URL wird zu `http://console.campaign.net:8080`. Schritt **13**, wählen Sie die **[!UICONTROL Problem bei Mid-Sourcing]** -Paket sowie die zu installierenden Pakete.
+* Die Schritte **6**, **9** und **10** sind nicht erforderlich.
+* Während der Schritte **12** und **13** müssen Sie den 8080-Port in der Verbindungs-URL angeben (da die Konsole direkt mit Tomcat kommuniziert, nicht über den Webserver). Die URL wird zu `http://console.campaign.net:8080`. Wählen Sie im Schritt **13** das Paket **[!UICONTROL Problem gegenüber Mid-Sourcing]** sowie die zu installierenden Pakete aus.
 
   ![](assets/s_ncs_install_midsourcing02.png)
 
@@ -76,11 +76,11 @@ Sie müssen jedoch Folgendes anwenden:
 
 ### Mid-Sourcing-Server installieren und konfigurieren {#installing-and-configuring-the-mid-sourcing-server}
 
-Suchen Sie in der Client-Konsole die **E-Mail-Routing mit Mid-Sourcing** Mid-Sourcing-Konto (im **/Administration/Externe Konten/** -Ordner). Füllen Sie die **URL des Servers**, **account**, **password** und **URL der Mirrorseite** Einstellungen mit den Informationen, die vom Server-Provider bereitgestellt werden, der den Mid-Sourcing-Server hostet. Testet die Verbindung
+Suchen Sie in der Clientkonsole das **E-Mail-Routing mithilfe des Mid-Sourcing**-Mid-Sourcing-Kontos (im Ordner **/Administration/Externe Konten/** ). Füllen Sie die Einstellungen **URL des Servers**, **account**, **password** und **Mirrorseiten-URL** mit den Informationen aus, die vom Server-Provider bereitgestellt werden, der den Mid-Sourcing-Server hostet. Testet die Verbindung
 
 >[!NOTE]
 >
->Die **mid-sourcingEmitter** Option erstellt zwei **Mid-Sourcing** Workflows. Dieser Prozess wird standardmäßig alle 1 Stunde und 20 Minuten ausgeführt und erfasst Versandinformationen auf dem Mid-Sourcing-Server.
+>Mit der Option **mid-sourcingEmitter** werden zwei **Mid-Sourcing**-Workflows erstellt. Dieser Prozess wird standardmäßig alle 1 Stunde und 20 Minuten ausgeführt und erfasst Versandinformationen auf dem Mid-Sourcing-Server.
 
 ## Bereitstellen eines Mid-Sourcing-Servers {#deploying-a-mid-sourcing-server}
 
@@ -90,15 +90,15 @@ Suchen Sie in der Client-Konsole die **E-Mail-Routing mit Mid-Sourcing** Mid-Sou
    >
    >Wenn Sie den Mid-Sourcing-Server installieren und zusätzliche Adobe Campaign-Module installieren möchten, empfehlen wir die Verwendung des Versandmoduls und nicht des Campaign-Moduls.
 
-   Gehen Sie wie bei der Standardbereitstellung vor und wählen Sie nur die **[!UICONTROL Mid-Sourcing-Plattform]** -Option.
+   Gehen Sie genauso vor wie bei der Standardbereitstellung und wählen Sie nur die Option **[!UICONTROL Mid-Sourcing-Plattform]** aus.
 
    ![](assets/s_ncs_install_midsourcing01.png)
 
 1. Konfiguration für den Empfang im Mid-Sourcing-Modus
 
-   Legen Sie das Passwort des Sendekontos fest: Im **/Mid-Sourcing/Access Management/Operatoren/** Ordner, die **mid** -Operator wird von der Remote-Instanz für Übermittlungen im Mid-Sourcing-Modus verwendet. Sie müssen ein Kennwort für diesen Benutzer festlegen und es dem Administrator der Sendeinstanz geben.
+   Legen Sie das Passwort des Sendekontos fest: Im Ordner **/Mid-Sourcing/Access Management/Operators/** wird der Operator **mid** von der Remote-Instanz für Übermittlungen im Mid-Sourcing-Modus verwendet. Sie müssen ein Kennwort für diesen Benutzer festlegen und es dem Administrator der Sendeinstanz geben.
 
-   Die **Mid-Sourcing-Plattform** erstellt die Standardordner für die Speicherung der gesendeten Sendungen und den Standardoperator für die Übermittlung.
+   Mit der Option **Mid-Sourcing-Plattform** werden die Standardordner zum Speichern der gesendeten Sendungen sowie der Standardoperator für die Übermittlung erstellt.
 
 ## Multiplexing des Mid-Sourcing-Servers {#multiplexing-the-mid-sourcing-server}
 
@@ -108,24 +108,24 @@ Suchen Sie in der Client-Konsole die **E-Mail-Routing mit Mid-Sourcing** Mid-Sou
 
 Es ist möglich, dass eine Mid-Sourcing-Instanz von mehreren Sendeinstanzen gemeinsam genutzt wird. Jede dieser Instanzen muss mit einem Benutzer in der Mid-Sourcing-Datenbank verknüpft werden. So erstellen Sie ein zweites Konto auf dem Mid-Sourcing-Server:
 
-1. Erstellen Sie einen Ordner im **[!UICONTROL Mid-Sourcing > Sendungen]** -Knoten, der mit dem standardmäßigen Mid-Sourcing-Konto verknüpft wird (z. B. prod).
-1. Erstellen Sie einen Ordner im **[!UICONTROL Mid-Sourcing > Sendungen]** Knoten mit demselben Namen wie das Konto (z. B.: accept_test).
+1. Erstellen Sie im Knoten **[!UICONTROL Mid-Sourcing > Sendungen]** einen Ordner, der mit dem Standard-Mid-Sourcing-Konto verknüpft wird (z. B. prod).
+1. Erstellen Sie im Knoten **[!UICONTROL Mid-Sourcing > Sendungen]** einen Ordner mit demselben Namen wie das Konto (z. B. accept_test).
 
    ![](assets/mid_recette_account.png)
 
-1. In **[!UICONTROL Mid-Sourcing > Zugriffsverwaltung > Benutzer]**, erstellen Sie ein neues Konto.
+1. Erstellen Sie in **[!UICONTROL Mid-Sourcing > Zugriffsverwaltung > Benutzer]** ein neues Konto.
 
    ![](assets/mid_recette_user_create.png)
 
-1. Im **[!UICONTROL Zugriffsberechtigungen]** dem Benutzer die Rechte der **Mid-Sourcing-Übermittlungen** hinzugefügt. Diese Zugriffsberechtigung ist verfügbar unter **[!UICONTROL Mid-Sourcing > Zugriffsverwaltung > Benutzergruppen]**.
+1. Weisen Sie diesem Benutzer auf der Registerkarte **[!UICONTROL Zugriffsberechtigungen]** die Rechte der Gruppe **Mid-Sourcing-Übermittlungen** zu. Diese Zugriffsberechtigung ist in **[!UICONTROL Mid-Sourcing > Zugriffsverwaltung > Benutzergruppen]** verfügbar.
 
    ![](assets/mid_recette_user_rights.png)
 
-1. Wählen Sie die **[!UICONTROL Beschränken Sie sich auf Daten in den Unterordnern von]** und wählen Sie den Ordner Sendungen aus, um diesen Benutzer auf den Ordner Mid-Sourcing-Sendungen zu beschränken.
+1. Wählen Sie die Option **[!UICONTROL Auf Daten in den Unterordnern von]** beschränken und wählen Sie den Ordner Sendungen aus, um diesen Operator auf den Ordner Mid-Sourcing-Sendungen zu beschränken.
 
    ![](assets/mid_recette_user_restrictions.png)
 
-1. Starten Sie das Webmodul mit dem folgenden Befehl neu: **nlserver Neustart Web**.
+1. Starten Sie das Webmodul mit dem folgenden Befehl neu: **nlserver restart web**.
 
 Sie müssen die Mid-Sourcing-Server-Einstellung in der Datei serverConf.xml ändern. Die folgende Zeile muss im Abschnitt &quot;Verwaltung von Affinitäten mit IP-Adressen&quot;unter der vorhandenen Zeile hinzugefügt werden:
 
@@ -147,10 +147,10 @@ Sie müssen den Server stoppen und dann neu starten, damit die Änderung berück
 
 ## Tracking auf einem Mid-Sourcing-Server konfigurieren {#configuring-tracking-on-a-mid-sourcing-server}
 
-**Mid-Sourcing-Server konfigurieren**
+**Konfigurieren des Mid-Sourcing-Servers**
 
-1. Markieren Sie im Explorer den Operator **[!UICONTROL mid]**.
-1. Im **[!UICONTROL Frontalserver]** Geben Sie die Verbindungsparameter des Tracking-Servers ein.
+1. Markieren Sie im Bildschirm &quot;Operatoren&quot;den Operator **[!UICONTROL mid]**.
+1. Geben Sie auf der Registerkarte **[!UICONTROL Frontalserver]** die Verbindungsparameter des Tracking-Servers ein.
 
    Um eine Tracking-Instanz zu erstellen, geben Sie die URL des Tracking-Servers, das Passwort des internen Trackingservers und den Namen der Instanz, ihr Passwort und die damit verknüpften DNS-Masken ein.
 
@@ -161,9 +161,9 @@ Sie müssen den Server stoppen und dann neu starten, damit die Änderung berück
 
    ![](assets/s_ncs_install_midsourcing_tracking03.png)
 
-   Wenn Sie die **[!UICONTROL Tracking-Server]** -Option, werden die Bilder auf den Mid-Sourcing-Server kopiert.
+   Wenn Sie die Option **[!UICONTROL Tracking-Server(s)]** auswählen, werden die Bilder auf den Mid-Sourcing-Server kopiert.
 
-**Konfiguration der Kundenplattform**
+**Konfigurieren der Kundenplattform**
 
 1. Gehen Sie zum externen Mid-Sourcing-Routing-Konto.
 1. Geben Sie auf der Registerkarte **[!UICONTROL Mid-Sourcing]** die Verbindungsparameter für den Mid-Sourcing-Server an.
@@ -173,7 +173,7 @@ Sie müssen den Server stoppen und dann neu starten, damit die Änderung berück
 1. Bestätigen Sie Ihre Konfiguration durch Klicken auf **[!UICONTROL Verbindung testen]**.
 1. Deklarieren Sie die auf dem Mid-Sourcing-Server referenzierte Tracking-Instanz:
 
-   Klicken Sie auf den Link **[!UICONTROL Verwenden Sie diese Plattform als Proxy für den Zugriff auf Tracking-Server]**,
+   Klicken Sie auf den Link **[!UICONTROL Diese Plattform als Proxy verwenden, um auf die Tracking-Server zuzugreifen]**,
 
    Geben Sie den Namen der Tracking-Instanz an und bestätigen Sie dann die Verbindung mit dem Tracking-Server.
 

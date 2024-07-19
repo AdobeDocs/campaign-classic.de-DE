@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## Einfache Methode {#simple-method}
 
-Diese Methode besteht darin, einen HTTP-Aufruf an den Weiterleitungsserver zu senden, indem eine **`<img>`** HTML-Tag im HTML-Quellcode der Webseite, die Sie verfolgen möchten.
+Diese Methode besteht darin, einen HTTP-Aufruf an den Weiterleitungsserver zu senden, indem ein **`<img>`** -HTML-Tag in den HTML-Quellcode der Webseite eingefügt wird, die Sie verfolgen möchten.
 
 >[!IMPORTANT]
 >
@@ -34,13 +34,13 @@ Das eingefügte Tag kontaktiert den Weiterleitungsserver.
 
 Wenn Sie eine Seite definieren, die in der Konsole verfolgt werden soll, können Sie ein Beispiel-Webtrackingtag generieren, das kopiert und in den Quellcode Ihrer Webseite eingefügt wird.
 
-Wenn Sie jedoch Tags vom Typ TRANSACTION verwenden, müssen Sie das Beispiel-Tag mit JavaScript ändern, um die Transaktionsinformationen (Menge, Anzahl der Elemente) und alle von einem Erweiterungsschema definierten Informationen einzufügen.
+Wenn Sie Tags vom Typ TRANSACTION verwenden, müssen Sie jedoch das Beispiel-Tag mit JavaScript ändern, um die Transaktionsinformationen (Menge, Anzahl der Elemente) und alle von einem Erweiterungsschema definierten Informationen einzufügen.
 
 ### Statisches Einfügen von Tags {#static-insertion-of-tags}
 
 Um statische Tags einzufügen, kopieren Sie einfach die von der Konsole generierten oder manuell erstellten Tags und fügen Sie sie in die Quelle Ihrer Webseite ein.
 
-**Beispiel**: Einfügen eines Webtrackingtags auf einer Seite, die ein Formular anzeigt.
+**Beispiel**: Einfügen eines Web-Tracking-Tags auf einer Seite, die ein Formular anzeigt.
 
 ```
 <html>
@@ -125,7 +125,7 @@ Wenn Ihre Webseiten dynamisch generiert werden, können Sie das Webtrackingtag z
 
 Wenn Sie die an den Weiterleitungsserver gesendeten Informationen steuern möchten, ist die zuverlässigste Möglichkeit, die HTTP-Abfrage synchron selbst mithilfe einer Sprache zur Seitenerstellung durchzuführen.
 
-Die URL, die Sie erstellen, muss den in [Webtrackingtag: Definition](../../configuration/using/web-tracking-tag-definition.md).
+Die URL, die Sie erstellen, muss den Syntaxregeln entsprechen, die im Tag [Webtracking: definition](../../configuration/using/web-tracking-tag-definition.md) definiert sind.
 
 ![](assets/d_ncs_integration_webtracking_structure3.png)
 
@@ -133,7 +133,7 @@ Die URL, die Sie erstellen, muss den in [Webtrackingtag: Definition](../../confi
 >
 >Umleitung und Webtracking verwenden Cookies. Es ist wichtig, dass sich der Webserver, der den synchronen HTTP-Aufruf durchführt, in derselben Domäne befindet wie der Umleitungsserver. Die verschiedenen HTTP-Austausche müssen die Cookies &quot;id&quot;, &quot;uuid&quot;und &quot;uuid230&quot;vermitteln.
 
-**Beispiel**: Dynamische Generierung in Java, wobei die Empfängerauthentifizierung anhand der Kundennummer erfolgt.
+**Beispiel**: Dynamische Erzeugung in Java, wobei die Empfängerauthentifizierung die Kontonummer verwendet.
 
 ```
 [...]

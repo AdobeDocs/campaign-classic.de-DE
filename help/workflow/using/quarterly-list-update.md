@@ -5,7 +5,7 @@ description: In diesem Anwendungsfall dient eine inkrementelle Abfrage zur autom
 feature: Workflows
 exl-id: 0d3e7046-313a-42a6-9155-3365e8d60bac
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '285'
 ht-degree: 100%
 

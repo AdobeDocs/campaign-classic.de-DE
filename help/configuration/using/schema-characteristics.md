@@ -9,7 +9,7 @@ exl-id: 099161b4-b4cb-433c-aed6-71157269a536
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
 source-wordcount: '389'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -29,15 +29,15 @@ Die Merkmale eines Schemas, das auf eine vorhandene Tabelle verweist, lauten wie
 
 ## Das Ansichtsattribut {#the-view-attribute}
 
-Quellschemata akzeptieren die **Ansicht** -Attribut für **srcSchema** root -Element. Sie muss verwendet werden, wenn Adobe Campaign in benutzerdefinierten Tabellen bearbeitet wird. Die **view=&quot;true&quot;** weist den Assistenten zur Aktualisierung der Datenbankstruktur an, dieses Schema zu ignorieren. Die Anwendung ist daher nicht berechtigt, die Tabelle, ihre Spalten und Indizes mit dem entsprechenden Schema zu synchronisieren.
+Source-Schemas akzeptieren das Attribut **view** für das Stammelement **srcSchema** . Sie muss verwendet werden, wenn Adobe Campaign in benutzerdefinierten Tabellen bearbeitet wird. Das Attribut **view=&quot;true&quot;** weist den Datenbankstruktur-Aktualisierungsassistenten an, dieses Schema zu ignorieren. Die Anwendung ist daher nicht berechtigt, die Tabelle, ihre Spalten und Indizes mit dem entsprechenden Schema zu synchronisieren.
 
-Wenn dieses Attribut auf **true**, wird das Schema nur verwendet, um SQL-Abfragen für den Zugriff auf die Daten dieser Tabelle zu generieren.
+Wenn dieses Attribut auf **true** festgelegt ist, wird das Schema nur zum Generieren von SQL-Abfragen für den Zugriff auf die Daten dieser Tabelle verwendet.
 
 ## Namen von Tabellen und Spalten {#names-of-tables-and-columns}
 
 Wenn Tabellen vom Tabellenaktualisierungs-Assistenten erstellt werden, werden die Namen der Tabellen und Spalten automatisch anhand der Namen der jeweiligen Schemas und Attribute generiert. Es ist jedoch möglich, die Verwendung der SQL-Namen zu erzwingen, indem die folgenden Attribute eingegeben werden:
 
-* **sqltable** im Hauptelement des Schemas zur Angabe der Tabelle,
+* **sqltable** innerhalb des Hauptelements des Schemas, um die Tabelle anzugeben,
 * **sqlname** innerhalb jedes Attributs, um die Spalten anzugeben.
 
 **Beispiel**:
@@ -55,7 +55,7 @@ Wenn Tabellen vom Tabellenaktualisierungs-Assistenten erstellt werden, werden di
 </element>
 ```
 
-Wenn in diesem Beispiel die Namen der Tabellen und Spalten nicht explizit angegeben wurden, hätte die Anwendung **CusIndividual** für die Tabelle, **lastName** und **firstName** für die Spalten.
+Wenn in diesem Beispiel die Namen der Tabellen und Spalten nicht explizit angegeben wurden, hätte die Anwendung für die Tabelle **CusIndividual**, für die Spalten **lastName** und **firstName** verwendet.
 
 In einem Schema ist es möglich, nur einen Teil der Spalten einer vorhandenen Tabelle auszufüllen. Auf nicht ausgefüllte Spalten kann nicht vom Benutzer zugegriffen werden.
 
@@ -77,7 +77,7 @@ In einem Schema wird ein Index wie folgt definiert:
 
 Daher ist es wichtig, vorhandene Indizes der benutzerdefinierten Tabelle im entsprechenden Schema zu deklarieren.
 
-Ein Index wird implizit für jede Schlüssel- und Link-Deklaration des Quellschemas deklariert. Die Indexdeklaration kann durch Angabe der **noDbIndex=&quot;true&quot;** Attribut:
+Ein Index wird implizit für jede Schlüssel- und Link-Deklaration des Quellschemas deklariert. Die Indexdeklaration kann durch Angabe des Attributs **noDbIndex=&quot;true&quot;** verhindert werden:
 
 **Beispiel**:
 

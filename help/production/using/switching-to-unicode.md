@@ -11,7 +11,7 @@ exl-id: 4cfecf2f-cf98-42c1-b979-cdd26d5de48b
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
 source-wordcount: '130'
-ht-degree: 6%
+ht-degree: 8%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 6%
 
 
 
-Für vorhandene **prod** -Instanz in Linux/PostgreSQL werden die folgenden Schritte für den Umstieg auf Unicode ausgeführt:
+Für eine vorhandene **prod** -Instanz in Linux/PostgreSQL sind die Schritte zum Wechseln zu Unicode wie folgt:
 
 1. Beenden Sie die Prozesse, die in die Datenbank schreiben:
 
@@ -62,7 +62,7 @@ Für vorhandene **prod** -Instanz in Linux/PostgreSQL werden die folgenden Schri
    vi config-prod.xml
    ```
 
-   Fügen Sie die **u** -Zeichen vor dem Wert für die Datenbank-ID (**databaseId**):
+   Fügen Sie das Zeichen **u** vor dem Wert hinzu, der sich auf die Datenbankkennung (**databaseId**) bezieht:
 
    ```
    <web>

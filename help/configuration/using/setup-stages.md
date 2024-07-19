@@ -18,16 +18,16 @@ Das Grundprinzip ist das Einfügen von Web-Tracking-Tags in bestimmte Seiten Ihr
 
 Es gibt zwei Arten von Tags:
 
-* **WEB**: Dieses Tag gibt an, ob die Seite besucht wurde.
-* **TRANSAKTION**: funktioniert wie ein Web-Tag, bietet jedoch die Möglichkeit, Informationen zum generierten Geschäftsvolumen hinzuzufügen (z. B. Transaktionsbetrag, Anzahl der gekauften Artikel usw.).
+* **WEB**: Dieses Tag teilt Ihnen mit, ob die Seite besucht wurde.
+* **TRANSAKTION**: funktioniert wie ein Web-Tag, bietet jedoch die Möglichkeit, Informationen zum generierten Geschäftsvolumen hinzuzufügen, z. B. Transaktionsbetrag, Anzahl der gekauften Artikel usw.
 
 Gehen Sie wie folgt vor, um diese Tags einzurichten:
 
 1. Identifizieren Sie die Seiten, die Sie verfolgen möchten, und bestimmen Sie deren Typ (WEB oder TRANSACTION).
-1. Bestimmen Sie, welche zusätzlichen Informationen Sie erfassen möchten, und erweitern Sie die **nms:webTrackingLog** Schema mit der Beschreibung dieser Informationen. Standardmäßig kann dieses Schema die Transaktionsmengen und die Anzahl der Elemente pro Transaktion speichern.
+1. Ermitteln Sie, welche zusätzlichen Informationen Sie erfassen möchten, und erweitern Sie das Schema **nms:webTrackingLog** mit der Beschreibung dieser Informationen. Standardmäßig kann dieses Schema die Transaktionsmengen und die Anzahl der Elemente pro Transaktion speichern.
 1. Erstellen der Webtracking-Tags. Dazu gibt es zwei Möglichkeiten:
 
-   * Fügen Sie die URLs, die diesen Seiten entsprechen, in Ihre Adobe Campaign-Plattform ein, generieren Sie dann die zugehörigen Web-Tracking-Tags und extrahieren Sie diese (aus dem **[!UICONTROL Kampagnenausführung > Ressourcen > Webtracking-Tags]** -Knoten der Client-Konsole).
+   * Fügen Sie die URLs, die diesen Seiten entsprechen, in Ihre Adobe Campaign-Plattform ein, generieren Sie die zugehörigen Web-Tracking-Tags und extrahieren Sie sie (aus dem Knoten **[!UICONTROL Kampagnenausführung>Ressourcen > Web-Tracking-Tags]** der Clientkonsole).
    * Erstellen Sie die Webtrackingtags selbst im Modus &quot;On-the-fly-Erstellung&quot;: Die den Seiten entsprechenden URLs werden automatisch in Ihre Adobe Campaign-Plattform eingefügt.
 
 1. Fügen Sie diese Tags statisch oder dynamisch zu den Seiten hinzu, die Sie verfolgen möchten.

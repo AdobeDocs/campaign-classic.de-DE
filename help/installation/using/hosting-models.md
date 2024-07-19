@@ -21,21 +21,21 @@ Adobe Campaign bietet drei Hosting-Modelle, die Flexibilität und Freiheit biete
 
 >[!NOTE]
 >
->Bei Adobe-gehosteten Umgebungen können die Haupt-Installations- und Konfigurationsschritte nur durch Adobe ausgeführt werden, z. B. das Konfigurieren des Servers und das Anpassen der Konfigurationsdateien der Instanz. Weitere Informationen zu den Hauptunterschieden zwischen den Implementierungsmodi finden Sie unter [diese Seite](../../installation/using/capability-matrix.md).
+>Bei Adobe-gehosteten Umgebungen können die Haupt-Installations- und Konfigurationsschritte nur durch Adobe ausgeführt werden, z. B. das Konfigurieren des Servers und das Anpassen der Konfigurationsdateien der Instanz. Weitere Informationen zu den Hauptunterschieden zwischen den Bereitstellungsmodi finden Sie auf [dieser Seite](../../installation/using/capability-matrix.md).
 
 ## Managed Services/gehostet
 
-Adobe Campaign kann as a Managed Service bereitgestellt werden: Alle Komponenten von Adobe Campaign, einschließlich Benutzeroberfläche, Ausführungsverwaltungsmodul und Campaign-Datenbank des Kunden, werden vollständig per Adobe gehostet, einschließlich E-Mail-Ausführung, Mirrorseiten, Tracking-Server und extern orientierten Webkomponenten wie z. B. Abmelden von Seiten/Voreinstellungen und Landingpages.
+Adobe Campaign kann as a Managed Service bereitgestellt werden: Alle Komponenten von Adobe Campaign, einschließlich Benutzeroberfläche, Ausführungsverwaltungsmodul und Campaign-Datenbank des Kunden, werden vollständig per Adobe gehostet, einschließlich E-Mail-Ausführung, Mirrorseiten, Tracking-Server und extern orientierten Webkomponenten wie Abmelde-Seite/Voreinstellungszentrum und Landingpages.
 
 ![](assets/deployment_hosted.png)
 
 Als gehosteter Kunde werden die meisten Installations- und Konfigurationsschritte von Adobe ausgeführt. Sie können auf die folgenden Abschnitte zugreifen, um Ihre Implementierung anzupassen:
 
-* Konfigurieren Sie Tracking- und Mirrorseiten-URLs pro Marke. Transaktionsnachrichten, siehe [in diesem Abschnitt](../../message-center/using/additional-configurations.md#configuring-multibranding).
-* Installieren der Clientkonsole, siehe [in diesem Abschnitt](../../installation/using/installing-the-client-console.md).
-* Erfahren Sie mehr über die Zustellbarkeits-Tools und Best Practices im Abschnitt [Detaillierte Dokumentation](../../delivery/using/about-deliverability.md).
-* Campaign-Optionen konfigurieren: siehe [in diesem Abschnitt](../../installation/using/configuring-campaign-options.md).
-* CRM-Connectoren konfigurieren - siehe [in diesem Abschnitt](../../platform/using/crm-connectors.md).
+* Konfigurieren Sie Tracking- und Mirrorseiten-URLs pro Marke. Transaktionsnachrichten finden Sie in [diesem Abschnitt](../../message-center/using/additional-configurations.md#configuring-multibranding).
+* Installieren Sie die Clientkonsole: siehe [diesen Abschnitt](../../installation/using/installing-the-client-console.md).
+* Weitere Informationen zu den Zustellbarkeits-Tools und Best Practices finden Sie in der [detaillierten Dokumentation](../../delivery/using/about-deliverability.md).
+* Kampagnenoptionen konfigurieren: Siehe [diesen Abschnitt](../../installation/using/configuring-campaign-options.md).
+* CRM-Connectoren konfigurieren: siehe [diesen Abschnitt](../../platform/using/crm-connectors.md).
 
 ## On-Premise
 
@@ -45,13 +45,13 @@ Adobe Campaign kann vor Ort bereitgestellt werden: Alle Komponenten von Adobe Ca
 
 Als On-Premise-Kunde müssen Sie vor der Bereitstellung von Campaign Classic folgende Voraussetzungen und Empfehlungen beachten:
 
-* Lesen Sie die [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md) , in dem alle für Adobe Campaign unterstützten Systemversionen und Komponenten aufgelistet sind.
-* Lesen Sie je nach Umgebung die [Voraussetzungen für Windows](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) und [Voraussetzungen für Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md).
-* Empfehlungen zu Datenbank-Engines [in diesem Abschnitt](../../installation/using/database.md).
+* Lesen Sie die [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md) , in der alle Versionen der für Adobe Campaign unterstützten Systeme und Komponenten aufgelistet sind.
+* Lesen Sie je nach Umgebung die Voraussetzungen für Windows](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) und [für Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md) durch.[
+* In diesem Abschnitt ](../../installation/using/database.md) erhalten Sie Empfehlungen zu Datenbankmotoren [.
 * Überprüfen Sie, ob die erforderlichen Datenbankzugriffsebenen auf dem Server installiert sind und über das Adobe Campaign-Konto darauf zugegriffen werden kann. [Weitere Informationen](../../installation/using/application-server.md).
-* Konfigurieren Sie Ihre Netzwerke, da einige Prozesse mit anderen kommunizieren oder auf LAN und Internet zugreifen müssen. Dies bedeutet, dass einige TCP-Ports für diese Prozesse offen sein müssen. [Weitere Infos](../../installation/using/network-configuration.md) Informationen zu den Netzkonfigurationsanforderungen.
-* Lesen [Checkliste für Sicherheit und Datenschutz in Campaign](https://helpx.adobe.com/de/campaign/kb/acc-security.html).
-* Allgemeine Richtlinien zur Schätzung der Hardwareanforderungen für die On-Premise-Implementierung [in diesem Artikel](https://helpx.adobe.com/de/campaign/kb/hardware-sizing-guide.html).
+* Konfigurieren Sie Ihre Netzwerke, da einige Prozesse mit anderen kommunizieren oder auf LAN und Internet zugreifen müssen. Dies bedeutet, dass einige TCP-Ports für diese Prozesse offen sein müssen. [Erfahren Sie mehr](../../installation/using/network-configuration.md) über die Anforderungen an die Netzwerkkonfiguration.
+* Lesen Sie [Checkliste für Sicherheit und Datenschutz in Campaign](https://helpx.adobe.com/de/campaign/kb/acc-security.html).
+* Lesen Sie die allgemeinen Richtlinien zur Schätzung der Hardwareanforderungen für die On-Premise-Implementierung [in diesem Artikel](https://helpx.adobe.com/de/campaign/kb/hardware-sizing-guide.html).
 
 ## Hybrid
 
@@ -61,12 +61,12 @@ Bei der Bereitstellung als Hybridmodell befindet sich die Adobe Campaign-Lösung
 
 Als Hybrid-Kunde werden die meisten Installations- und Konfigurationsschritte von Adobe ausgeführt. Sie können auf die folgenden Abschnitte zugreifen, um Ihre Implementierung anzupassen:
 
-* Transaktionsnachrichten konfigurieren - siehe [in diesem Abschnitt](../../message-center/using/transactional-messaging-architecture.md).
-* Konfigurieren Sie Tracking- und Mirrorseiten-URLs pro Marke. Transaktionsnachrichten, siehe [in diesem Abschnitt](../../message-center/using/additional-configurations.md#configuring-multibranding).
-* Installieren der Clientkonsole, siehe [in diesem Abschnitt](../../installation/using/installing-the-client-console.md).
-* Integrierte Pakete installieren: siehe [in diesem Abschnitt](../../installation/using/installing-campaign-standard-packages.md).
-* Zustellbarkeit: konfigurieren [MX-Regeln](../../installation/using/email-deliverability.md#mx-configuration) und [E-Mail-Formate](../../installation/using/email-deliverability.md#managing-email-formats). Erfahren Sie mehr über die Zustellbarkeits-Tools und Best Practices im Abschnitt [Detaillierte Dokumentation](../../delivery/using/about-deliverability.md).
-* Campaign-Optionen konfigurieren: siehe [in diesem Abschnitt](../../installation/using/configuring-campaign-options.md).
-* Externe Datenbank konfigurieren (Federated Data Access): siehe [in diesem Abschnitt](../../installation/using/about-fda.md).
-* CRM-Connectoren konfigurieren - siehe [in diesem Abschnitt](../../platform/using/crm-connectors.md).
-* Weitere Informationen zu Mid-Sourcing-Implementierungsprinzipien finden Sie unter [in diesem Abschnitt](../../installation/using/mid-sourcing-deployment.md).
+* Transaktionsnachrichten konfigurieren: siehe [diesen Abschnitt](../../message-center/using/transactional-messaging-architecture.md).
+* Konfigurieren Sie Tracking- und Mirrorseiten-URLs pro Marke. Transaktionsnachrichten finden Sie in [diesem Abschnitt](../../message-center/using/additional-configurations.md#configuring-multibranding).
+* Installieren Sie die Clientkonsole: siehe [diesen Abschnitt](../../installation/using/installing-the-client-console.md).
+* Installieren Sie integrierte Pakete: siehe [diesen Abschnitt](../../installation/using/installing-campaign-standard-packages.md).
+* Zustellbarkeit: Konfigurieren Sie die [MX-Regeln](../../installation/using/email-deliverability.md#mx-configuration) und die [E-Mail-Formate](../../installation/using/email-deliverability.md#managing-email-formats). Weitere Informationen zu den Zustellbarkeits-Tools und Best Practices finden Sie in der [detaillierten Dokumentation](../../delivery/using/about-deliverability.md).
+* Kampagnenoptionen konfigurieren: Siehe [diesen Abschnitt](../../installation/using/configuring-campaign-options.md).
+* Externe Datenbank konfigurieren (Federated Data Access): siehe [diesen Abschnitt](../../installation/using/about-fda.md).
+* CRM-Connectoren konfigurieren: siehe [diesen Abschnitt](../../platform/using/crm-connectors.md).
+* Weitere Informationen zu Mid-Sourcing-Bereitstellungsgrundsätzen finden Sie in [diesem Abschnitt](../../installation/using/mid-sourcing-deployment.md).

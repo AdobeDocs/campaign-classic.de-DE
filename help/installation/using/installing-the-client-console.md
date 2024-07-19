@@ -23,16 +23,16 @@ Bevor Sie mit der Installation der Client Console beginnen, müssen Sie Folgende
 * Überprüfen Sie die Kompatibilität Ihres Systems und Ihrer Tools mit Adobe Campaign in der [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)
 * Ermitteln Sie Ihre Campaign-Server-URL
 * Ermitteln Sie Ihre Anwender-Anmeldedaten
-* Setzen Sie die Microsoft Edge Webview2-Laufzeitumgebung auf Ihr System (ab Campaign Classic 7.3 Build-Version). [Weitere Informationen](#webview)
+* Lassen Sie die Microsoft Edge Webview2-Laufzeit auf Ihrem System installiert (von der Campaign Classic 7.3 Build-Version). [Weitere Informationen](#webview)
 
 Die Installation oder Aktualisierung der Clientkonsole hängt von Ihrer Implementierung von Adobe Campaign Classic ab.
 Lesen Sie die folgenden Details, um zu verstehen, was für Ihre Implementierung erforderlich ist.
 
-![](assets/do-not-localize/how-to-video.png) Erfahren Sie, wie Sie den Adobe Campaign Client installieren und einrichten in [Video](#video)
+![](assets/do-not-localize/how-to-video.png) Erfahren Sie, wie Sie den Adobe Campaign-Client in [video](#video) installieren und einrichten.
 
 >[!CAUTION]
 >
->* Die Campaign Client-Konsole und der Campaign-Anwendungsserver müssen ausgeführt werden **auf derselben Produktversion**. Adobe empfiehlt außerdem dringend die Verwendung der **derselbe Produktaufbau**. Erfahren Sie, wie Sie Ihre Campaign-Client- und -Server-Versionen überprüfen in [diesem Abschnitt](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+>* Die Campaign Client-Konsole und der Campaign-Anwendungsserver müssen **auf derselben Produktversion ausführen**. Adobe empfiehlt außerdem dringend die Verwendung von **demselben Produkt-Build**. In [diesem Abschnitt](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version) erfahren Sie, wie Sie Ihre Campaign-Client- und -Server-Versionen überprüfen.
 >
 >* Der Zugriff auf den Installationsordner, in dem die Konsole installiert ist, sollte auf den vorgesehenen Benutzer beschränkt sein, um sicherzustellen, dass die Schreibberechtigungen entsprechend eingeschränkt sind.
 
@@ -42,7 +42,7 @@ Lesen Sie die folgenden Details, um zu verstehen, was für Ihre Implementierung 
 
 Ab der Build-Version 7.3 von Campaign Classic ist die Installation der Microsoft Edge Webview 2-Laufzeitumgebung für jede Konsolen-Installation erforderlich.
 
-WebView wird standardmäßig als Teil des Betriebssystems Windows 11 installiert. Wenn es nicht bereits auf Ihrem System vorhanden ist, werden Sie vom Campaign Classic Console-Installationsprogramm aufgefordert, es von herunterzuladen [Microsoft Developer-Website](https://www.adobe.com/go/acc-ms-webview2-runtime-download_de). Beachten Sie, dass der Download-Link nicht mit Internet Explorer 11 funktioniert, da Microsoft die Unterstützung dieses Browsers eingestellt hat. Stellen Sie sicher, dass Sie einen anderen Browser verwenden, um auf den Link zuzugreifen.
+WebView wird standardmäßig als Teil des Betriebssystems Windows 11 installiert. Wenn es nicht bereits auf Ihrem System vorhanden ist, werden Sie vom Campaign Classic Console-Installationsprogramm aufgefordert, es von der [Microsoft Developer-Website](https://www.adobe.com/go/acc-ms-webview2-runtime-download_de) herunterzuladen. Beachten Sie, dass der Download-Link nicht mit Internet Explorer 11 funktioniert, da Microsoft die Unterstützung dieses Browsers eingestellt hat. Stellen Sie sicher, dass Sie einen anderen Browser verwenden, um auf den Link zuzugreifen.
 
 ## Adobe gehostete Implementierungen {#hosted-customers}
 
@@ -50,7 +50,7 @@ Als gehosteter Kunde haben Sie zwei Möglichkeiten, Ihre Client-Konsole(n) zu in
 
 1. Adobe kann direkt bereitgestellt werden. Nach der Aktualisierung der Konsole werden Benutzer aufgefordert, die neueste Clientkonsolenversion in einem Popup-Fenster herunterzuladen.
 
-1. Sie können von auf Ihre Client-Konsole(n) herunterladen [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html)
+1. Sie können von [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) auf Ihre Client-Konsole(n) herunterladen
 
    **Benutzer benötigen Administratorzugriff, um die Aktualisierung abzuschließen. Wenn die Benutzer keine Administratorrechte haben, muss ein Systemadministrator für alle Clientkonsolen bereitstellen**
 
@@ -75,11 +75,11 @@ Gehen Sie dazu folgendermaßen vor:
 
 ### Option &quot;Frage nicht mehr stellen&quot;
 
-Adobe empfiehlt, die Option zu verlassen **[!UICONTROL Diese Frage stellen Sie nicht mehr]** nicht ausgewählt ist, um sicherzustellen, dass alle Benutzer benachrichtigt werden, wenn eine neue Version der Konsole verfügbar ist.  Wenn diese Option aktiviert ist, wird der Anwender nicht über neue verfügbare Versionen informiert.
+Adobe empfiehlt, die Option **[!UICONTROL Diese Frage nicht mehr stellen]** nicht auszuwählen, um sicherzustellen, dass alle Benutzer benachrichtigt werden, wenn eine neue Konsolenversion verfügbar ist.  Wenn diese Option aktiviert ist, wird der Anwender nicht über neue verfügbare Versionen informiert.
 
-Wenn **[!UICONTROL Diese Frage stellen Sie nicht mehr]**  ausgewählt wurde, können Sie diese Eingabeaufforderung zurücksetzen. Nur Systemadministratoren, die mit der Bearbeitung von Windows Registry vertraut sind, sollten diese Änderungen vornehmen:
+Wenn **[!UICONTROL Diese Frage nicht mehr stellen]** ausgewählt wurde, können Sie diese Aufforderung zurücksetzen. Nur Systemadministratoren, die mit der Bearbeitung von Windows Registry vertraut sind, sollten diese Änderungen vornehmen:
 
-1. Öffnen Sie den Registrierungs-Editor mithilfe der **regedit** -Befehl aus dem **[!UICONTROL Start > Ausführen]** Menü.
+1. Öffnen Sie den Registrierungs-Editor mit dem Befehl **regedit** im Menü **[!UICONTROL Start > Ausführen]** .
 
 1. Suchen Sie nach dem Knoten und erweitern Sie ihn.
 
@@ -87,7 +87,7 @@ Wenn **[!UICONTROL Diese Frage stellen Sie nicht mehr]**  ausgewählt wurde, kö
    \HKEY_CURRENT_USER\Software\Neolane\NL_6\nlclient
    ```
 
-1. Löschen Sie die **confAdvisedUpgrade** Registrieren Sie sich und schließen Sie den Registrierungs-Editor.
+1. Löschen Sie den Eintrag **confAdvisedUpgrade** und schließen Sie den Registrierungs-Editor.
 
 >[!NOTE]
 >
@@ -114,15 +114,15 @@ Benutzer sollten jetzt die Konsole herunterladen und installieren, indem sie die
 
    Verwenden Sie bei Bedarf die Anmeldeinformationen des bei der Instanzerstellung definierten internen Kontos.
 
-1. Klicken Sie auf **[!UICONTROL Herunterladen]** auf der Installationsseite.
+1. Klicken Sie auf der Installationsseite auf den Link **[!UICONTROL Download]** .
 1. Laden Sie die Client-Setup-Datei herunter und speichern Sie sie.
-1. Führen Sie die heruntergeladene Datei auf einem Computer unter Windows aus: Die Installation wird gestartet. Der standardmäßige Installationspfad der Clientkonsole lautet **$PROGRAMFILES$/Adobe/Adobe Campaign Classic vX Client**, wobei &quot;X&quot;&quot;6&quot;oder &quot;7&quot;ist, gemäß Ihrer Adobe Campaign-Version.
+1. Führen Sie die heruntergeladene Datei auf einem Computer unter Windows aus: Die Installation wird gestartet. Der Standardinstallationspfad der Clientkonsole ist **$PROGRAMFILES$/Adobe/Adobe Campaign Classic vX Client**, wobei &quot;X&quot;entsprechend Ihrer Adobe Campaign-Version &quot;6&quot;oder &quot;7&quot;ist.
 
 ### Erstellen der Verbindung - nur Erstbenutzer{#create-the-connection}
 
 Sobald die Client-Konsole installiert ist, führen Sie die folgenden Schritte aus, um die Verbindung zum Anwendungs-Server herzustellen:
 
-1. Starten Sie die Konsole über Windows. **[!UICONTROL Starten]** im Menü **Adobe Campaign** Programmgruppe.
+1. Starten Sie die Konsole über das Menü Windows **[!UICONTROL Start]** in der Programmgruppe **Adobe Campaign**.
 
 1. Klicken Sie in der oberen rechten Ecke der Felder mit den Anmeldedaten auf den Link, um das Fenster für die Verbindungskonfiguration aufzurufen.
 
@@ -134,9 +134,9 @@ Sobald die Client-Konsole installiert ist, führen Sie die folgenden Schritte au
 
 1. Geben Sie per URL eine Verbindung zum Adobe Campaign-Anwendungs-Server an. Verwenden Sie entweder einen DNS oder einen Alias des Computers oder Ihre IP-Adresse.
 
-   Sie können beispielsweise die `https://<machine>.<domain>.com` Typ URL.
+   Sie können beispielsweise die URL vom Typ `https://<machine>.<domain>.com` verwenden.
 
-1. Wenn Adobe IMS für Ihr Unternehmen konfiguriert ist, aktivieren Sie die Option **[!UICONTROL Verbindung zu einer Adobe ID herstellen]**
+1. Wenn Adobe IMS für Ihr Unternehmen konfiguriert ist, aktivieren Sie die Option **[!UICONTROL Verbindung mit einer Adobe ID herstellen]** .
 
 1. Klicken Sie auf **[!UICONTROL OK]**, um Ihre Einstellungen zu speichern.
 
@@ -150,23 +150,23 @@ Sie können so viele Verbindungen wie erforderlich hinzufügen, um z. B. Verbind
 
 Gehen Sie wie folgt vor, um sich bei einer vorhandenen Instanz anzumelden:
 
-1. Starten Sie die Konsole über Windows. **[!UICONTROL Starten]** im Menü **Adobe Campaign** Programmgruppe.
+1. Starten Sie die Konsole über das Menü Windows **[!UICONTROL Start]** in der Programmgruppe **Adobe Campaign**.
 
 1. Klicken Sie in der oberen rechten Ecke der Felder mit den Anmeldedaten auf den Link, um das Fenster für die Verbindungskonfiguration aufzurufen.
 
 1. Wählen Sie die Campaign-Instanz aus, bei der Sie sich anmelden möchten.
 
-1. Klicks **[!UICONTROL Ok]**
+1. Klicken Sie auf **[!UICONTROL OK]**
 
 1. Geben Sie Ihre Anmeldedaten für den Benutzer ein und klicken Sie auf **[!UICONTROL Anmelden]**
 
 >[!NOTE]
 >
->Bei den Build-Versionen 7.3 von Campaign Classic kann es vorkommen, dass die Adobe Campaign-Client-Konsole während der Proxy-Authentifizierung zweimal nach den Proxy-Anmeldeinformationen fragt. Dies liegt daran, dass Microsoft Edge WebView2 im Gegensatz zum Internet Explorer keine Proxy-Anmeldeinformationen im Cache/Kennwortspeicher speichert.
+>Bei den Build-Versionen 7.3 von Campaign Classic kann es vorkommen, dass die Adobe Campaign-Client-Konsole während der Proxy-Authentifizierung zweimal nach den Proxy-Anmeldedaten fragt. Dies liegt daran, dass Microsoft Edge WebView2 im Gegensatz zum Internet Explorer keine Proxy-Anmeldedaten im Cache/Kennwortspeicher speichert.
 
 **Verwandte Themen** 
 
-* [Erstellen einer Instanz und Anmelden](../../installation/using/creating-an-instance-and-logging-on.md).
+* [Erstellen einer Instanz und Anmelden bei](../../installation/using/creating-an-instance-and-logging-on.md).
 * [Kompatibilitätsmatrix](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html)
 
 ## Anleitungsvideo

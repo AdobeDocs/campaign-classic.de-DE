@@ -35,16 +35,16 @@ Standardmäßig ist der WebApp-Benutzer ein Administrator. Um die Sicherheit zu 
 
 Erstellen Sie genügend Sicherheitsgruppen, um Ihren Benutzern ausreichend Rechte zu gewähren, damit sie das tun können, was sie benötigen, und nicht mehr.
 
-Verwenden Sie nicht den Administrator-Operator (oder geben Sie ihn nicht frei). Erstellen Sie einen Benutzer pro physischem Benutzer (für eine genaue Prüfung/Protokollierung). Fügen Sie Ihre neu benannten Administratoren zur Administratorgruppe hinzu. Wenn Sie den Administrator-Operator nicht verwenden, löschen Sie ihn nicht und deaktivieren Sie ihn nicht: Dieser Operator wird intern zur Ausführung der Verarbeitung verwendet. Aber man kann seine [Zugriff auf die Clientkonsole](../../platform/using/access-management.md) und beschränken Sie die Sicherheitszone (auf localhost).
+Verwenden Sie nicht den Administrator-Operator (oder geben Sie ihn nicht frei). Erstellen Sie einen Benutzer pro physischem Benutzer (für eine genaue Prüfung/Protokollierung). Fügen Sie Ihre neu benannten Administratoren zur Administratorgruppe hinzu. Wenn Sie den Administrator-Operator nicht verwenden, löschen Sie ihn nicht und deaktivieren Sie ihn nicht: Dieser Operator wird intern zur Ausführung der Verarbeitung verwendet. Sie können jedoch den [Zugriff auf die Clientkonsole](../../platform/using/access-management.md) verbieten und die Sicherheitszone (auf localhost) einschränken.
 
 Nehmen Sie nicht zu viele Benutzer in die Administrator-Gruppe auf (bzw. Benutzer mit spezifischen Administratorberechtigungen). Diese Benutzer verfügen über umfassende Rechte (sie können alle SQL-Anweisungen und Befehle auf dem Server ausführen etc.).
 
-Adobe Campaign bietet drei allgemeine Berechtigungen durch [spezifische Berechtigungen](../../platform/using/access-management.md#named-rights):
+Adobe Campaign bietet drei allgemeine Berechtigungen über [spezifische Berechtigungen](../../platform/using/access-management.md#named-rights):
 
-* **VERWALTUNG** (admin): bietet Zugriff auf alles und ermöglicht die Durchführung aller spezifischen Rechtsprüfungen, sodass die spezifischen Berechtigungen &quot;PROGRAM EXECUTION&quot;(createProcess) und &quot;SQL&quot; enthalten sind
+* **ADMINISTRATION** (Admin): ermöglicht den Zugriff auf alles und ermöglicht die Durchführung aller Aufgaben, wobei alle benannten Berechtigungsprüfungen umgangen werden, sodass die spezifischen Berechtigungen &quot;PROGRAM EXECUTION&quot;(createProcess) und &quot;SQL&quot; enthalten sind.
 
-* **AUSFÜHRUNG DES PROGRAMMS** (createProcess): ermöglicht die Ausführung externer Programme (auf dem Server).
+* **AUSFÜHRUNG DES PROGRAMMS** (createProcess): ermöglicht die Ausführung externer Programme (auf dem Server)
 
-* **SQL**: ermöglicht die Ausführung von SQL-Skripten in der Datenbank (sodass das Sicherheitsmodell umgangen werden kann). Hinweis: Wenn Sie komplexe Berechnungen durchführen müssen (z. B. Filtern), können Sie Ihren Datenbankadministrator bitten, eine SQL-Funktion zu erstellen und sie der Zulassungsliste hinzuzufügen. Weitere Informationen finden Sie auf [dieser Seite](../../installation/using/scripting-coding-guidelines.md).
+* **SQL**: ermöglicht das Ausführen von SQL-Skripten in der Datenbank (sodass das Sicherheitsmodell umgangen werden kann). Hinweis: Wenn Sie komplexe Berechnungen durchführen müssen (z. B. Filtern), können Sie Ihren Datenbankadministrator bitten, eine SQL-Funktion zu erstellen und sie der Zulassungsliste hinzuzufügen. Weitere Informationen finden Sie auf [dieser Seite](../../installation/using/scripting-coding-guidelines.md).
 
-* **Gewähren Sie sie nur sehr wenigen (und vertrauenswürdigen) Benutzern.**
+* **Gewähren Sie sie nur sehr wenigen (und vertrauenswürdigen) Operatoren**

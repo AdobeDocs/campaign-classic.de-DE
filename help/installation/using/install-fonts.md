@@ -20,4 +20,4 @@ ht-degree: 0%
 
 So können Sie neue Schriftarten auf dem Campaign-Anwendungsserver installieren.
 
-Neue Schriftarten können in der `/usr/local/share/` -Ordner für alle Container, in denen der MTA-Prozess ausgeführt wird.
+Neue Schriftarten können in den Ordner `/usr/local/share/` für alle Container eingefügt werden, in denen der MTA-Prozess ausgeführt wird.

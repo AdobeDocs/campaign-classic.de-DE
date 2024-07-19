@@ -14,11 +14,11 @@ ht-degree: 9%
 
 # SOAP-Methoden in JavaScript{#soap-methods-in-javascript}
 
-Dies ist das JavaScript, das auf dem Adobe Campaign-Server ausgeführt wird.
+Dies ist die auf dem Adobe Campaign-Server ausgeführte JavaScript.
 
 ## Statische Methoden {#static-methods}
 
-Auf statische SOAP-Methoden kann zugegriffen werden, indem eine Methode für das Objekt aufgerufen wird, das das Schema darstellt. Schemas sind Eigenschaften von &quot;namespace&quot;-Objekten. Bei diesen Namespaces handelt es sich um globale Variablen. Daher stellen beispielsweise xtk- oder nms-Variablen die entsprechenden Namespaces dar
+Der Zugriff auf statische SOAP erfolgt durch Aufruf einer Methode für das Objekt, das das Schema darstellt. Schemas sind Eigenschaften von &quot;namespace&quot;-Objekten. Bei diesen Namespaces handelt es sich um globale Variablen. Daher stellen beispielsweise xtk- oder nms-Variablen die entsprechenden Namespaces dar
 
 Im folgenden Beispiel wird die statische PostEvent-Methode des xtk:workflow-Schemas aufgerufen:
 
@@ -28,7 +28,7 @@ xtk.workflow.PostEvent("WKF1", "signal", "", $recipient-id='123', false)
 
 ## Nicht statische Methoden {#non-static-methods}
 
-Um nicht statische SOAP-Methoden zu verwenden, muss zunächst eine Entität mit den Methoden &quot;get&quot;oder &quot;create&quot;für die entsprechenden Schemas abgerufen werden.
+Um nicht statische SOAP zu verwenden, muss zunächst eine Entität mit den Methoden &quot;get&quot;oder &quot;create&quot;für die entsprechenden Schemas abgerufen werden.
 
 Im folgenden Beispiel wird die ExecuteQuery-Methode des Schemas &quot;xtk:queryDef&quot;aufgerufen:
 

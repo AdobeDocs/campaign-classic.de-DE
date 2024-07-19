@@ -66,27 +66,27 @@ In der folgenden Tabelle sind alle in Campaign integrierten Packages aufgeführt
   </tr> 
   <tr> 
    <td> Marketing-Kampagnen (Kampagne)<br /> </td> 
-   <td> Definiert, optimiert, führt und analysiert Kommunikations- und Marketing-Kampagnen. <a href="../../campaign/using/designing-marketing-campaigns.md">Weitere Infos</a><br /> </td> 
+   <td> Definiert, optimiert, führt und analysiert Kommunikations- und Marketing-Kampagnen. <a href="../../campaign/using/designing-marketing-campaigns.md">Mehr erfahren</a><br /> </td> 
    <td> Marketing</td>
   </tr> 
   <tr> 
    <td> Marketing-Ressourcen (MRM)<br /> </td> 
-   <td> Steuerung kollaborativer Marketing-Aktionen durch Verwaltung und Verfolgung von Aufgaben, Budgets und Marketing-Ressourcen. <a href="../../mrm/using/about-marketing-resource-management.md">Weitere Infos</a> <br /> </td> 
+   <td> Steuerung kollaborativer Marketing-Aktionen durch Verwaltung und Verfolgung von Aufgaben, Budgets und Marketing-Ressourcen. <a href="../../mrm/using/about-marketing-resource-management.md">Mehr erfahren</a> <br /> </td> 
    <td> Marketing</td> 
   </tr> 
   <tr> 
    <td> Angebotsmodul (interaction)<br /> </td> 
-   <td> Reagiert in Echtzeit auf eine Interaktion mit einem bestimmten Kontakt (einem Kunden oder einer Zielgruppe), indem er ihm ein oder mehrere angepasste Angebote unterbreitet.  Optional. <a href="../../interaction/using/interaction-and-offer-management.md#packages-configuration">Weitere Infos</a> <br /> </td> 
+   <td> Reagiert in Echtzeit auf eine Interaktion mit einem bestimmten Kontakt (einem Kunden oder einer Zielgruppe), indem er ihm ein oder mehrere angepasste Angebote unterbreitet.  Optional. <a href="../../interaction/using/interaction-and-offer-management.md#packages-configuration">Mehr erfahren</a> <br /> </td> 
    <td> Alle<br /> </td> 
   </tr> 
   <tr> 
    <td> Steuerung des Angebotsmoduls mit der Ausführungsinstanz. Optional.<br /> </td> 
-   <td> Paket zur Installation auf Kontrollinstanz für Angebotsmodul (Interaktion). <a href="../../interaction/using/distributed-architectures.md#packages-configuration">Weitere Infos</a> </td> 
+   <td> Paket zur Installation auf Kontrollinstanz für Angebotsmodul (Interaktion). <a href="../../interaction/using/distributed-architectures.md#packages-configuration">Mehr erfahren</a> </td> 
    <td> Marketing<br /> </td>  
   </tr> 
   <tr> 
    <td> Angebotsmodul für Ausführungsinstanzen. Optional.<br /> </td> 
-   <td> Package zur Installation auf Ausführungsinstanzen für das Angebotsmodul (Interaktion). <a href="../../interaction/using/distributed-architectures.md">Weitere Infos</a> </td> 
+   <td> Package zur Installation auf Ausführungsinstanzen für das Angebotsmodul (Interaktion). <a href="../../interaction/using/distributed-architectures.md">Mehr erfahren</a> </td> 
    <td> Mid, Ausführung <br /> </td>  
   </tr> 
   <!--tr> 
@@ -97,137 +97,137 @@ In der folgenden Tabelle sind alle in Campaign integrierten Packages aufgeführt
   </tr--> 
   <tr> 
    <td> Soziale Netzwerke (Social Marketing) <br /> </td> 
-   <td> Synchronisiert Adobe Campaign mit X (früher Twitter) und Facebook. <a href="../../social/using/about-social-marketing.md">Weitere Infos</a> <br /> </td> 
+   <td> Synchronisiert Adobe Campaign mit X (früher Twitter) und Facebook. <a href="../../social/using/about-social-marketing.md">Mehr erfahren</a> <br /> </td> 
    <td> Alle</td> 
   </tr> 
   <tr> 
    <td> Kontrolle von Transaktionsnachrichten (Message Center - Kontrolle)<br /> </td> 
-   <td> Verwaltet Trigger-Nachrichten, die von Ereignissen generiert wurden, die von Informationssystemen ausgelöst wurden. Optional. <a href="../../message-center/using/about-transactional-messaging.md">Weitere Infos</a> <br /> </td> 
+   <td> Verwaltet Trigger-Nachrichten, die von Ereignissen generiert wurden, die von Informationssystemen ausgelöst wurden. Optional. <a href="../../message-center/using/about-transactional-messaging.md">Mehr erfahren</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
    <td> Ausführung von Transaktionsnachrichten (Message Center - Ausführung) <br /> </td> 
-   <td> Bietet höhere Verfügbarkeit und besseres Lastmanagement. Optional. <a href="../../message-center/using/about-transactional-messaging.md">Weitere Infos</a><br /> </td> 
+   <td> Bietet höhere Verfügbarkeit und besseres Lastmanagement. Optional. <a href="../../message-center/using/about-transactional-messaging.md">Mehr erfahren</a><br /> </td> 
    <td> Ausführung<br /> </td>
   </tr> 
   <tr> 
    <td> LINE-Kanal<br /> </td> 
-   <td> Sendet Sendungen über den LINE-Kanal mit Adobe Campaign. Optional. Transaktionsnachrichten (Message Center Package) erforderlich. <a href="../../delivery/using/line-channel.md">Weitere Infos</a> <br /> </td> 
+   <td> Sendet Sendungen über den LINE-Kanal mit Adobe Campaign. Optional. Transaktionsnachrichten (Message Center Package) erforderlich. <a href="../../delivery/using/line-channel.md">Mehr erfahren</a> <br /> </td> 
    <td> Alle<br /> </td> 
   </tr> 
   <tr> 
    <td> Briefpost-Kanal<br /> </td> 
-   <td> Sendet Sendungen über den Briefpost-Kanal mit Adobe Campaign. Optional. <a href="../../delivery/using/about-direct-mail-channel.md">Weitere Infos</a><br /> </td> 
+   <td> Sendet Sendungen über den Briefpost-Kanal mit Adobe Campaign. Optional. <a href="../../delivery/using/about-direct-mail-channel.md">Mehr erfahren</a><br /> </td> 
    <td> Alle<br /> </td>
   </tr> 
   <tr> 
    <td> Mobiltelefon-Kanal (SMS) <br /> </td> 
-   <td> Sendet Sendungen über den Mobiltelefon-/SMS-Kanal mit Adobe Campaign. Optional. <a href="../../delivery/using/sms-channel.md">Weitere Infos</a> <br /> </td> 
+   <td> Sendet Sendungen über den Mobiltelefon-/SMS-Kanal mit Adobe Campaign. Optional. <a href="../../delivery/using/sms-channel.md">Mehr erfahren</a> <br /> </td> 
    <td> Alle<br /> </td> 
   </tr> 
    <tr> 
    <td> Telefonkanal<br /> </td> 
-   <td> Sendet Sendungen über den Telefonkanal mit Adobe Campaign. Wird für Callcenter verwendet. Optional. <a href="../../delivery/using/communication-channels.md">Weitere Infos</a> <br /> </td> 
+   <td> Sendet Sendungen über den Telefonkanal mit Adobe Campaign. Wird für Callcenter verwendet. Optional. <a href="../../delivery/using/communication-channels.md">Mehr erfahren</a> <br /> </td> 
    <td> Alle<br /> </td> 
   </tr> 
   <tr> 
    <td> Mobile-App-Kanal (Mobile App Channel)<br /> </td> 
-   <td> Verwendet die Adobe Campaign-Plattform zum Senden personalisierter Benachrichtigungen über Apps an iOS- und Android-Geräte. Optional. <a href="../../delivery/using/about-mobile-app-channel.md">Weitere Infos</a> <br /> </td> 
+   <td> Verwendet die Adobe Campaign-Plattform zum Senden personalisierter Benachrichtigungen an iOS- und Android-Terminals über Apps. Optional. <a href="../../delivery/using/about-mobile-app-channel.md">Mehr erfahren</a> <br /> </td> 
    <td> Alle<br /> </td> 
   </tr> 
   <tr> 
    <td> Content Manager<br /> </td> 
-   <td> Erstellt wiederkehrende Newsletter oder Websites und validiert und veröffentlicht Ihre Nachrichten. <a href="../../delivery/using/about-content-management.md">Weitere Infos</a> <br /> </td> 
+   <td> Erstellt wiederkehrende Newsletter oder Websites und validiert und veröffentlicht Ihre Nachrichten. <a href="../../delivery/using/about-content-management.md">Mehr erfahren</a> <br /> </td> 
    <td> </td>
   </tr> 
   <tr> 
    <td> Online-Umfragen (Survey Manager)<br /> </td> 
-   <td> Erstellt und verwaltet Online-Formulare, um Profilinformationen hinzuzufügen oder zu ändern, sich anzumelden, sich abzumelden oder ein Gewinnspielformular zu erstellen. Optional. <a href="../../surveys/using/about-surveys.md">Weitere Infos</a> <br /> </td> 
+   <td> Erstellt und verwaltet Online-Formulare, um Profilinformationen hinzuzufügen oder zu ändern, sich anzumelden, sich abzumelden oder ein Gewinnspielformular zu erstellen. Optional. <a href="../../surveys/using/about-surveys.md">Mehr erfahren</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
    <td> Marketing Analytics<br /> </td> 
-   <td> Ermöglicht die Analyse und Messung von Daten, die Berechnung von Statistiken, die Vereinfachung und Optimierung der Berichterstellung und -berechnung. Außerdem können Sie Berichte erstellen und Zielpopulationen erstellen. Optional. <a href="../../reporting/using/ac-cubes.md">Weitere Infos</a><br /> </td> 
+   <td> Ermöglicht die Analyse und Messung von Daten, die Berechnung von Statistiken, die Vereinfachung und Optimierung der Berichterstellung und -berechnung. Außerdem können Sie Berichte erstellen und Zielpopulationen erstellen. Optional. <a href="../../reporting/using/ac-cubes.md">Mehr erfahren</a><br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
    <td> Reaktionsverwaltung<br /> </td> 
-   <td> Misst den Erfolg und die Rentabilität von Marketing-Kampagnen oder Angebotsvorschlägen für alle Kommunikationskanäle.  Optional. <a href="../../response/using/about-response-manager.md">Weitere Infos</a> <br /> </td> 
+   <td> Misst den Erfolg und die Rentabilität von Marketing-Kampagnen oder Angebotsvorschlägen für alle Kommunikationskanäle.  Optional. <a href="../../response/using/about-response-manager.md">Mehr erfahren</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
    <td> Zugriff auf externe Daten (Federated Data Access)<br /> </td> 
-   <td> Bietet die Option Federated Data Access (FDA), um in externen Datenbanken gespeicherte Informationen zu verarbeiten, sodass Sie auf externe Daten zugreifen können, ohne die Datenstruktur in Adobe Campaign zu verändern.  Optional. <a href="../../workflow/using/accessing-an-external-database-fda.md">Weitere Infos</a> <br /> </td> 
+   <td> Bietet die Option Federated Data Access (FDA), um in externen Datenbanken gespeicherte Informationen zu verarbeiten, sodass Sie auf externe Daten zugreifen können, ohne die Datenstruktur in Adobe Campaign zu verändern.  Optional. <a href="../../workflow/using/accessing-an-external-database-fda.md">Mehr erfahren</a> <br /> </td> 
    <td> Alle<br /> </td> 
   </tr> 
   <tr> 
    <td> Kampagnenoptimierung (Campaign Optimization)<br /> </td> 
-   <td> Die Kontrolle, Filterung und Überwachung des Versands von Nachrichten, damit die gesendeten Nachrichten entsprechend den Kommunikationsrichtlinien des Unternehmens den Anforderungen und Erwartungen der Kunden am besten entsprechen. Optional. <a href="../../campaign-opt/using/about-campaign-typologies.md">Weitere Infos</a> <br /> </td> 
+   <td> Die Kontrolle, Filterung und Überwachung des Versands von Nachrichten, damit die gesendeten Nachrichten entsprechend den Kommunikationsrichtlinien des Unternehmens den Anforderungen und Erwartungen der Kunden am besten entsprechen. Optional. <a href="../../campaign-opt/using/about-campaign-typologies.md">Mehr erfahren</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
    <td> Zustellbarkeits-Monitoring (Email Deliverability)<br /> </td> 
-   <td> Misst den Erfolg Ihrer Kampagnen, die in den Posteingang Ihrer Empfänger gelangen, ohne dass ein Absprung erfolgt oder sie als Spam gekennzeichnet werden. Optional. <a href="../../delivery/using/about-deliverability.md">Weitere Infos</a> <br /> </td> 
+   <td> Misst den Erfolg Ihrer Kampagnen, die in den Posteingang Ihrer Empfänger gelangen, ohne dass ein Absprung erfolgt oder sie als Spam gekennzeichnet werden. Optional. <a href="../../delivery/using/about-deliverability.md">Mehr erfahren</a> <br /> </td> 
    <td> Alle </td> 
   </tr> 
   <tr> 
    <td> Couponverwaltung<br /> </td> 
-   <td> Erstellt eine Reihe von Coupons, die zu anstehenden Marketing-Angeboten hinzugefügt werden sollen. Optional. <a href="../../delivery/using/personalized-coupons.md">Weitere Infos</a> <br /> </td> 
+   <td> Erstellt eine Reihe von Coupons, die zu anstehenden Marketing-Angeboten hinzugefügt werden sollen. Optional. <a href="../../delivery/using/personalized-coupons.md">Mehr erfahren</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
    <td> Inbox Rendering (IR)<br /> </td> 
-   <td> Ermöglicht die Vorschau der Nachricht in den verschiedenen Kontexten, in denen sie empfangen werden kann, und die Überprüfung der Kompatibilität mit den wichtigsten Desktops und Anwendungen. Optional. <a href="../../delivery/using/inbox-rendering.md">Weitere Infos</a><br /> </td> 
+   <td> Ermöglicht die Vorschau der Nachricht in den verschiedenen Kontexten, in denen sie empfangen werden kann, und die Überprüfung der Kompatibilität mit den wichtigsten Desktops und Anwendungen. Optional. <a href="../../delivery/using/inbox-rendering.md">Mehr erfahren</a><br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
    <td> Zentrales/lokales Marketing (dezentrales Marketing)<br /> </td> 
-   <td> Durchführung von Kooperationskampagnen zwischen Zentralstellen (Hauptsitz, Marketingabteilungen usw.) und lokalen Einheiten (Verkaufsstellen, regionale Agenturen usw.). Optional. <a href="../../distributed/using/about-distributed-marketing.md">Weitere Infos</a><br /> </td> 
+   <td> Durchführung von Kooperationskampagnen zwischen Zentralstellen (Hauptsitz, Marketingabteilungen usw.) und lokalen Einheiten (Verkaufsstellen, regionale Agenturen usw.). Optional. <a href="../../distributed/using/about-distributed-marketing.md">Mehr erfahren</a><br /> </td> 
    <td> Marketing </td> 
   </tr> 
   <tr> 
    <td> CRM-Connectoren<br /> </td> 
-   <td> Bietet verschiedene CRM-Connectoren zum Verknüpfen Ihrer Adobe Campaign-Plattform mit Drittanbietersystemen.  <a href="../../platform/using/crm-connectors.md">Weitere Infos</a> <br /> </td> 
+   <td> Bietet verschiedene CRM-Connectoren zum Verknüpfen Ihrer Adobe Campaign-Plattform mit Drittanbietersystemen.  <a href="../../platform/using/crm-connectors.md">Mehr erfahren</a> <br /> </td> 
    <td> Marketing</td> 
   </tr> 
   <tr> 
    <td> Web Analytics-Connectoren<br /> </td> 
-   <td> Ermöglicht die Interaktion zwischen Adobe Campaign und Adobe Analytics über das Web Analytics Connectors-Paket. Nicht kompatibel mit Transaktionsnachrichten (Message Center Package). <a href="../../integrations/using/gs-aa.md">Weitere Infos</a><br /> </td> 
+   <td> Ermöglicht die Interaktion zwischen Adobe Campaign und Adobe Analytics über das Web Analytics Connectors-Paket. Nicht kompatibel mit Transaktionsnachrichten (Message Center Package). <a href="../../integrations/using/gs-aa.md">Mehr erfahren</a><br /> </td> 
    <td> Marketing </td> 
   </tr> 
   <tr> 
-   <td> AEM<br /> </td> 
-   <td> Ermöglicht die direkte Verwaltung des Inhalts Ihres E-Mail-Versands und Ihrer Formulare in Adobe Experience Manager, um von AEM Inhaltsbearbeitungsfunktionen sowie den Versandkapazitäten von Adobe Campaign zu profitieren. <a href="../../integrations/using/about-adobe-experience-manager.md">Weitere Infos</a> <br /> </td> 
+   <td> AEM Integration<br /> </td> 
+   <td> Ermöglicht die direkte Verwaltung des Inhalts Ihres E-Mail-Versands und Ihrer Formulare in Adobe Experience Manager, um von den AEM Inhaltsbearbeitungsfunktionen sowie den Versandkapazitäten von Adobe Campaign zu profitieren. <a href="../../integrations/using/about-adobe-experience-manager.md">Mehr erfahren</a> <br /> </td> 
    <td> Marketing</td> 
   </tr> 
   <tr> 
    <td> Integration von freigegebenen Adobe Experience Cloud-Zielgruppen<br /> </td> 
-   <td> Ermöglicht den Austausch und die Freigabe von Zielgruppen/Segmenten mit Adobe Experience Cloud-Lösungen und -Apps. Erfordert IMS. <a href="../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md">Weitere Infos</a> <br /> </td> 
+   <td> Ermöglicht den Austausch und die Freigabe von Zielgruppen/Segmenten mit Adobe Experience Cloud-Lösungen und -Apps. Erfordert IMS. <a href="../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md">Mehr erfahren</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
    <td> Integration mit Adobe Experience Cloud<br /> </td> 
-   <td> Ermöglicht den Import und Export von Zielgruppen/Segmenten aus verschiedenen Adobe Experience Cloud-Lösungen in Adobe Campaign. Optional. <a href="../../integrations/using/configuring-ims.md#installing-the-package">Weitere Infos</a> </td> 
+   <td> Ermöglicht den Import und Export von Zielgruppen/Segmenten aus verschiedenen Adobe Experience Cloud-Lösungen in Adobe Campaign. Optional. <a href="../../integrations/using/configuring-ims.md#installing-the-package">Mehr erfahren</a> </td> 
    <td> Marketing</td> 
   </tr> 
   <tr> 
    <td> Datenschutzbestimmung<br /> </td> 
-   <td> Enthält zusätzliche Funktionen, die Ihnen bei der Einhaltung von Datenschutzbestimmungen in Campaign Classic helfen. <a href="https://helpx.adobe.com/de/campaign/kb/acc-privacy.html">Weitere Infos</a> <br /> </td> 
+   <td> Enthält zusätzliche Funktionen, die Ihnen bei der Einhaltung von Datenschutzbestimmungen in Campaign Classic helfen. <a href="https://helpx.adobe.com/de/campaign/kb/acc-privacy.html">Mehr erfahren</a> <br /> </td> 
    <td> Alle</td> 
   </tr> 
   <tr> 
    <td> Sendung an Mid-Sourcing-Server <br /> </td> 
-   <td> Details zur Installation und Konfiguration eines Mid-Sourcing-Servers sowie zur Bereitstellung einer Instanz, die es Dritten ermöglicht, Nachrichten im Mid-Sourcing-Modus zu senden. Optional. <a href="../../installation/using/mid-sourcing-server.md">Weitere Infos</a> <br /> </td> 
+   <td> Details zur Installation und Konfiguration eines Mid-Sourcing-Servers sowie zur Bereitstellung einer Instanz, die es Dritten ermöglicht, Nachrichten im Mid-Sourcing-Modus zu senden. Optional. <a href="../../installation/using/mid-sourcing-server.md">Mehr erfahren</a> <br /> </td> 
    <td> Marketing </td> 
   </tr> 
   <tr> 
    <td> Mid-Sourcing-Plattform<br /> </td> 
-   <td> Diese Konfiguration ist eine optimale Zwischenlösung zwischen einer gehosteten (ASP)-Konfiguration und der Internalisierung. Die nach außen gerichteten Ausführungskomponenten werden auf einem "Mid-Sourcing"-Server ausgeführt, der in Adobe Campaign gehostet wird. Optional. <a href="../../installation/using/mid-sourcing-server.md">Weitere Infos</a> <br /> </td> 
+   <td> Diese Konfiguration ist eine optimale Zwischenlösung zwischen einer gehosteten (ASP)-Konfiguration und der Internalisierung. Die nach außen gerichteten Ausführungskomponenten werden auf einem "Mid-Sourcing"-Server ausgeführt, der in Adobe Campaign gehostet wird. Optional. <a href="../../installation/using/mid-sourcing-server.md">Mehr erfahren</a> <br /> </td> 
    <td> Mid-Sourcing </td> 
   </tr> 
   <tr> 
    <td> AMP-Unterstützung<br /> </td> 
-   <td> Ermöglicht die Verwendung des neuen interaktiven AMP für das E-Mail-Format und das Senden dynamischer E-Mails. Optional. <a href="../../delivery/using/defining-interactive-content.md">Weitere Infos</a> <br /> </td> 
+   <td> Ermöglicht die Verwendung des neuen interaktiven AMP für das E-Mail-Format und das Senden dynamischer E-Mails. Optional. <a href="../../delivery/using/defining-interactive-content.md">Mehr erfahren</a> <br /> </td> 
    <td> Alle </td> 
   </tr> 
   <tr> 
@@ -242,30 +242,30 @@ In der folgenden Tabelle sind alle in Campaign integrierten Packages aufgeführt
 
 Sie müssen Versandkanäle (E-Mail, Mobile-Kanal, Mobile-App-Kanal, LINE usw.) installieren. vor der Installation von Transaktionsnachrichten (Message Center-Package). Wenn Sie ein E-Mail-spezifisches Message-Center-Projekt gestartet haben und danach einen neuen Kanal hinzufügen müssen, müssen Sie die folgenden Schritte ausführen:
 
-1. Installieren Sie den neuen Kanal, beispielsweise die **Mobiler Kanal**&#x200B;über den Package-Import-Assistenten ( **[!UICONTROL Tools > Erweitert > Package importieren > Adobe Campaign-Package]**).
-1. Importieren Sie die Datei ( **[!UICONTROL Tools > Erweitert > Package importieren > Datei]**) und wählen Sie:
+1. Installieren Sie den neuen Kanal, z. B. den **Mobile-Kanal**, mithilfe des Package-Import-Assistenten ( **[!UICONTROL Tools > Erweitert > Package importieren > Adobe Campaign-Package]**).
+1. Importieren Sie die Datei ( **[!UICONTROL Tools > Erweitert > Package importieren > Datei]**) und wählen Sie Folgendes aus:
 
    ```
    \datakit\nms\[Your language]\package\messageCenter.xml
    ```
 
-1. Im **[!UICONTROL Zu importierender XML-Dateninhalt]** beibehalten, sollten Sie nur die Nachrichtencenter-Versandvorlage beibehalten, die dem entsprechenden Kanal entspricht. Wenn Sie beispielsweise die Variable **Mobiler Kanal**, behalten Sie nur die **Entitäten** Element, das dem **[!UICONTROL Mobile Transaktionsnachricht]** (smsTriggerMessage). Wenn Sie die **Mobile App Channel**, behalten Sie nur die **iOS-Transaktionsnachricht** templates (iosTriggerMessage) und **Android-Transaktionsnachricht** (androidTriggerMessage).
+1. Behalten Sie im zu importierenden **[!UICONTROL XML-Dateninhalt]** nur die Message Center-Versandvorlage bei, die dem zugehörigen Kanal entspricht. Wenn Sie beispielsweise den Kanal **Mobil** hinzugefügt haben, behalten Sie nur das Element **entitäten** bei, das der Vorlage **[!UICONTROL Mobile Transaktionsnachricht]** (smsTriggerMessage) entspricht. Wenn Sie den **Mobile-App-Kanal** hinzugefügt haben, behalten Sie nur die Vorlagen für die **iOS-Transaktionsnachricht** (iosTriggerMessage) und die **Android-Transaktionsnachricht** (androidTriggerMessage) bei.
 
    ![](assets/messagecenter_install_channel.png)
 
 
 ### [!DNL LINE] Kanaleinrichtung{#line-package}
 
-So richten Sie die [!DNL LINE] -Kanal, müssen Sie zunächst die [!DNL LINE] Paket.
+Um den Kanal [!DNL LINE] einzurichten, müssen Sie zunächst das Paket [!DNL LINE] installieren.
 
 Im Kontext einer Mid-Sourcing-Konfiguration müssen Sie:
 
-* Installieren Sie die [!DNL LINE] -Paket auf Marketing- und MID-Instanz
+* Installieren Sie das Paket [!DNL LINE] sowohl auf der Marketing- als auch auf der MID-Instanz
 
-* Richten Sie die [!DNL LINE] externes Konto auf der Mkt-Instanz, um durch Änderung des Versandmodus auf die Mid-Instanz zu verweisen. [Weitere Informationen](../../delivery/using/line-channel.md#configure-line-external)
+* Richten Sie das externe Konto [!DNL LINE] auf der Mkt-Instanz so ein, dass es auf die Mid-Instanz verweist, indem Sie den Versandmodus ändern. [Weitere Informationen](../../delivery/using/line-channel.md#configure-line-external)
 
-* Richten Sie die [!DNL LINE] Anmeldedaten im externen Konto auf der MID-Instanz.
+* Richten Sie die Anmeldedaten für [!DNL LINE] im externen Konto auf der MID-Instanz ein.
 
 >[!CAUTION]
 >
->Die Message Center-Versandvorlagen für [!DNL LINE] Der Kanal ist nicht verfügbar, wenn die Message Center-Pakete zuvor installiert wurden. [!DNL LINE].
+>Die Message-Center-Versandvorlagen für den Kanal [!DNL LINE] sind nicht verfügbar, wenn die Message-Center-Packages vor [!DNL LINE] installiert sind.

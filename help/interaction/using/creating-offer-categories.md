@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: ed97a1b5-c870-4b67-98b6-16adc316fd46
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 100%
 
@@ -28,7 +28,7 @@ Gehen Sie wie folgt vor, um eine neue Kategorie zu erstellen:
 
    ![](assets/offer_cat_create_001.png)
 
-1. Klicken Sie mit der rechten Maustaste und wählen Sie im Kontextmenü die Option **[!UICONTROL Angebotskategorie-Ordner hinzufügen]** aus.
+1. Klicken Sie mit der rechten Maustaste und wählen Sie im Kontextmenü die Option **[!UICONTROL Neuen Angebotskategorie-Ordner erstellen]** aus.
 
    ![](assets/offer_cat_create_002.png)
 

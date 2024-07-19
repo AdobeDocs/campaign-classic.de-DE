@@ -17,13 +17,13 @@ ht-degree: 2%
 
 # Tomcat-Version suchen{#locate-tomcat-version}
 
-Adobe Campaign verwendet eine **eingebettetes Webservlet namens Apache Tomcat** zur Verarbeitung von HTTP/HTTPS-Anforderungen zwischen der Anwendung und einer beliebigen externen Schnittstelle (einschließlich Client-Konsole, getrackte URL-Links, SOAP-Aufrufe und andere). Oft liegt ein externer Webserver (normalerweise IIS oder Apache) vor diesem für alle externen Adobe Campaign-Instanzen.
+Adobe Campaign verwendet ein **eingebettetes Web-Servlet namens Apache Tomcat**, um HTTP-/HTTPS-Anforderungen zwischen der Anwendung und beliebigen externen Schnittstellen zu verarbeiten (einschließlich Client Console, getrackten URL-Links, SOAP-Aufrufe und anderen). Oft liegt ein externer Webserver (normalerweise IIS oder Apache) vor diesem für alle externen Adobe Campaign-Instanzen.
 
-Gehen Sie wie folgt vor, um die genaue Version von Tomcat zu ermitteln, die in einer **Campaign Classic On-Premise-Instanz** um die Fehlerbehebung zu unterstützen.
+Gehen Sie wie folgt vor, um die genaue Version von Tomcat zu ermitteln, die in einer **On-Premise-Instanz von Campaign Classic** verwendet wird, um Probleme zu beheben.
 
 ## Tomcat wird in Adobe Campaign verwendet
 
-Tomcat läuft auf Java und erfordert die Installation von JDK. Weitere Informationen finden Sie unter Java Development Kit (JDK) im [Campaign-Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md) Abschnitt.
+Tomcat läuft auf Java und erfordert die Installation von JDK. Weitere Informationen finden Sie unter Java Development Kit (JDK) im Abschnitt [Campaign Compatibility Matrix](../../rn/using/compatibility-matrix.md) .
 
 Der in Adobe Campaign verwendete Tomcat ist eine angepasste eingebettete Version, die nicht alle Funktionen der vollständigen allgemein verfügbaren Version von Tomcat nutzt und möglicherweise nicht alle Verwundbarkeiten der Vollversion leidet. Der Tomcat sollte auch nicht für das externe Internet verfügbar sein, und alle Adobe Campaign-Instanzen, die verfügbar gemacht werden, sollten über einen externen Webserver verfügen (IIS, Apache usw.) vor dem Tomcat, um ihn zu schützen.
 
@@ -43,9 +43,9 @@ Gehen Sie wie folgt vor, um die Version des eingebetteten Tomcat in einer Instan
 >
 >Sie müssen Zugriff auf die Dateien auf dem Adobe Campaign-Server haben, den Sie überprüfen müssen. Das unten beschriebene Verfahren gilt nur für **On-Premise-Hosting-Modelle**.
 
-1. Navigieren Sie zum *\tomcat-11\lib* Unterordner im Adobe Campaign-Installationsordner (z. B. *C:\Program Dateien\ [Installation_folder]* unter Windows oder */usr/local/neolane/nl6* in Linux).
+1. Navigieren Sie zum Unterordner &quot;*\tomcat-11\lib*&quot;im Adobe Campaign-Installationsordner (z. B. &quot;*C:\Program Files\ [Installation_folder]*&quot;unter Windows oder &quot;*/usr/local/neolane/nl6*&quot; unter Linux).
 
-1. Datei kopieren *catalina.jar* in einen externen temporären Ordner (z. B. Ihren Desktop) und benennen Sie die Erweiterung von .jar in .zip um.
+1. Kopieren Sie die Datei *catalina.jar* in einen externen temporären Ordner (z. B. Ihren Desktop) und benennen Sie die Erweiterung von .jar in .zip um.
 
 1. Entpacken Sie die kopierte Datei. Dies führt zu vielen Unterordnern und Dateien.
 
@@ -53,7 +53,7 @@ Gehen Sie wie folgt vor, um die Version des eingebetteten Tomcat in einer Instan
 
 1. Löschen Sie nach Abschluss die von Ihnen erstellten temporären Dateien, wenn sie sich auf einem Servercomputer befinden.
 
-Beispiel: *ServerInfo.properties* -Datei für Adobe Campaign enthält die folgenden Informationen, die Tomcat v11.X angeben:
+Beispielsweise enthält die Datei *ServerInfo.properties* für Adobe Campaign die folgenden Informationen, die Tomcat v11.X angeben:
 
 *`server.info=Apache Tomcat/11.X`*
 

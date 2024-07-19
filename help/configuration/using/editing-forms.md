@@ -25,7 +25,7 @@ Sie können Eingabeformulare erstellen und ändern:
 * Sie können die werkseitigen Eingabeformulare ändern, die standardmäßig bereitgestellt werden. Die werkseitigen Eingabeformulare basieren auf den werkseitigen Datenschemata.
 * Sie können benutzerdefinierte Eingabeformulare erstellen, die auf von Ihnen definierten Datenschemata basieren.
 
-Forms sind Entitäten von `xtk:form` Typ. Sie können die Struktur des Eingabeformulars im `xtk:form` Schema. Um dieses Schema anzuzeigen, wählen Sie **[!UICONTROL Administration]** > **[!UICONTROL Konfiguration]** > **[!UICONTROL Datenschemata]** aus dem Menü. Mehr dazu [Formularstruktur](form-structure.md).
+Forms sind Entitäten vom Typ &quot;`xtk:form`&quot;. Sie können die Struktur des Eingabeformulars im Schema `xtk:form` anzeigen. Um dieses Schema anzuzeigen, wählen Sie **[!UICONTROL Administration]** > **[!UICONTROL Konfiguration]** > **[!UICONTROL Datenschemata]** aus dem Menü. Weitere Informationen zu [Formularstruktur](form-structure.md).
 
 Um auf Eingabeformulare zuzugreifen, wählen Sie **[!UICONTROL Administration] > [!UICONTROL Konfiguration] > [!UICONTROL Formulare]** aus dem Menü:
 
@@ -37,7 +37,7 @@ Um Formulare zu entwerfen, bearbeiten Sie den XML-Inhalt im XML-Editor:
 
 [Weitere Informationen](form-structure.md#formatting)
 
-Um eine Vorschau eines Formulars anzuzeigen, klicken Sie auf das **[!UICONTROL Vorschau]** tab:
+Um eine Vorschau eines Formulars anzuzeigen, klicken Sie auf die Registerkarte **[!UICONTROL Vorschau]**:
 
 ![](assets/d_ncs_integration_form_preview.png)
 
@@ -53,7 +53,7 @@ Sie können verschiedene Arten von Eingabeformularen erstellen. Der Formulartyp 
 
 * Content-Management
 
-  Verwenden Sie diesen Formulartyp für das Content Management. Siehe dies [Anwendungsfall](../../delivery/using/use-case-creating-content-management.md).
+  Verwenden Sie diesen Formulartyp für das Content Management. Siehe diesen [Anwendungsfall](../../delivery/using/use-case-creating-content-management.md).
 
   ![](../../delivery/using/assets/d_ncs_content_form13.png)
 
@@ -98,17 +98,17 @@ Verwenden Sie Container zum Organisieren von Inhalten in Formularen:
 * Sie können Felder in Abschnitten gruppieren.
 * Sie können mehrseitigen Formularen Seiten hinzufügen.
 
-Verwenden Sie zum Einfügen eines Containers die `<container>` -Element. [Weitere Informationen](form-structure.md#containers)
+Verwenden Sie zum Einfügen eines Containers das Element `<container>` . [Weitere Informationen](form-structure.md#containers)
 
 #### Gruppenfelder
 
 Verwenden Sie Container, um Eingabefelder in organisierte Abschnitte zu gruppieren.
 
-Verwenden Sie dieses Element, um einen Abschnitt in ein Formular einzufügen: `<container type="frame">`. Wenn Sie optional einen Abschnittstitel hinzufügen möchten, verwenden Sie die `label` -Attribut.
+Verwenden Sie das folgende Element, um einen Abschnitt in ein Formular einzufügen: `<container type="frame">`. Wenn Sie optional einen Abschnittstitel hinzufügen möchten, verwenden Sie das Attribut `label` .
 
 Syntax: `<container type="frame" label="`*section_title*`"> […] </container>`
 
-In diesem Beispiel definiert ein Container die **Erstellung** -Abschnitt, der die **[!UICONTROL Erstellt von]** und **[!UICONTROL Name]** Eingabefelder:
+In diesem Beispiel definiert ein Container den Abschnitt **Erstellung** , der die Eingabefelder **[!UICONTROL Erstellt von]** und **[!UICONTROL Name]** enthält:
 
 ```xml
 <form _cs="Coupons (nms)" entitySchema="xtk:form" img="xtk:form.png" label="Coupons"
@@ -128,7 +128,7 @@ In diesem Beispiel definiert ein Container die **Erstellung** -Abschnitt, der di
 
 Verwenden Sie für mehrseitige Formulare einen Container, um eine Formularseite zu erstellen.
 
-Dieses Beispiel zeigt Container für **Allgemein** und **Details** Formularseiten:
+Dieses Beispiel zeigt Container für die Seiten **Allgemein** und **Details** eines Formulars:
 
 ```xml
 <container img="ncm:book.png" label="General">
@@ -151,11 +151,11 @@ Verwenden Sie Container zum Verschachteln von Formularen in anderen Formularen. 
 
 Um Bilder zu suchen, wählen Sie **[!UICONTROL Administration]** > **[!UICONTROL Konfiguration]** > **[!UICONTROL Bilder]** aus dem Menü.
 
-Um ein Bild mit einem Element im Formular zu verknüpfen, z. B. einem Symbol, können Sie einem Bild einen Verweis hinzufügen. Verwenden Sie die `img` -Attribut, beispielsweise im `<container>` -Element.
+Um ein Bild mit einem Element im Formular zu verknüpfen, z. B. einem Symbol, können Sie einem Bild einen Verweis hinzufügen. Verwenden Sie beispielsweise das Attribut `img` im Element `<container>` .
 
 Syntax: `img="`*`namespace`*`:`*`filename`*`.`*`extension`*`"`
 
-Dieses Beispiel zeigt Verweise auf die `book.png` und `detail.png` Bilder aus `ncm` namespace:
+Dieses Beispiel zeigt Verweise auf die Bilder `book.png` und `detail.png` aus dem Namespace `ncm` :
 
 ```xml
 <container img="ncm:book.png" label="General">
@@ -176,7 +176,7 @@ Diese Bilder werden für Symbole verwendet, auf die Benutzer klicken, um in eine
 Gehen Sie wie folgt vor, um ein Formular zu erstellen:
 
 1. Wählen Sie im Menü **[!UICONTROL Administration]** > **[!UICONTROL Konfiguration]** > **[!UICONTROL Formulare]**.
-1. Klicken Sie auf **[!UICONTROL Neu]** rechts oben in der Liste.
+1. Klicken Sie oben rechts in der Liste auf die Schaltfläche **[!UICONTROL Neu]** .
 
    ![](assets/input-form-create-1.png)
 
@@ -184,7 +184,7 @@ Gehen Sie wie folgt vor, um ein Formular zu erstellen:
 
    * Geben Sie den Formularnamen und den Namespace an.
 
-     Der Formularname und der Namespace können mit dem zugehörigen Datenschema übereinstimmen.  Dieses Beispiel zeigt ein Formular für die `cus:order` Datenschema:
+     Der Formularname und der Namespace können mit dem zugehörigen Datenschema übereinstimmen.  Dieses Beispiel zeigt ein Formular für das Datenschema `cus:order` :
 
      ```xml
      <form entitySchema="xtk:form" img="xtk:form.png" label="Order" name="order" namespace="cus" type="iconbox" xtkschema="xtk:form">
@@ -192,7 +192,7 @@ Gehen Sie wie folgt vor, um ein Formular zu erstellen:
      </form>
      ```
 
-     Alternativ können Sie das Datenschema explizit im `entity-schema` -Attribut.
+     Alternativ können Sie das Datenschema explizit im Attribut `entity-schema` angeben.
 
      ```xml
      <form entity-schema="cus:stockLine" entitySchema="xtk:form" img="xtk:form.png" label="Stock order" name="stockOrder" namespace="cus" xtkschema="xtk:form">
@@ -205,15 +205,15 @@ Gehen Sie wie folgt vor, um ein Formular zu erstellen:
 
      ![](assets/input-form-create-2.png)
 
-     Wenn Sie ein mehrseitiges Formular entwerfen, können Sie den Formulartyp im `<form>` -Element und geben Sie den Typ in einem Container an.
+     Wenn Sie ein mehrseitiges Formular entwerfen, können Sie den Formulartyp im Element `<form>` auslassen und den Typ in einem Container angeben.
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
 1. Fügen Sie die Formularelemente ein.
 
-   Um beispielsweise ein Eingabefeld einzufügen, verwenden Sie die `<input>` -Element. Legen Sie die `xpath` -Attribut der Feldreferenz als XPath-Ausdruck zuweisen. [Weitere Informationen](schema-structure.md#referencing-with-xpath)
+   Verwenden Sie beispielsweise das Element `<input>` , um ein Eingabefeld einzufügen. Setzen Sie das Attribut `xpath` auf die Feldreferenz als XPath-Ausdruck. [Weitere Informationen](schema-structure.md#referencing-with-xpath)
 
-   Dieses Beispiel zeigt Eingabefelder, die auf dem `nms:recipient` Schema.
+   Dieses Beispiel zeigt Eingabefelder basierend auf dem Schema `nms:recipient` .
 
    ```xml
    <input xpath="@firstName"/>
@@ -222,7 +222,7 @@ Gehen Sie wie folgt vor, um ein Formular zu erstellen:
 
 1. Wenn das Formular auf einem bestimmten Schematyp basiert, können Sie die Felder für dieses Schema nachschlagen:
 
-   1. Klicks **[!UICONTROL Einfügen]** > **[!UICONTROL Dokumentfelder]**.
+   1. Klicken Sie auf **[!UICONTROL Einfügen]** > **[!UICONTROL Dokumentfelder]**.
 
       ![](assets/input-form-create-4.png)
 
@@ -244,7 +244,7 @@ Gehen Sie wie folgt vor, um ein Formular zu erstellen:
    | Kontrollkästchen | `type="checkbox"` |
    | Bearbeitungsstruktur | `type="tree"` |
 
-   Mehr dazu [Speicherlistensteuerelemente](form-structure.md#memory-list-controls).
+   Weitere Informationen zu [Speicherlistensteuerelementen](form-structure.md#memory-list-controls).
 
 1. Definieren Sie optional den Zugriff auf die Felder:
 
@@ -284,15 +284,15 @@ Gehen Sie wie folgt vor, um ein Formular zu erstellen:
 
 Sie können mehrseitige Formulare erstellen. Sie können Formulare auch in anderen Formularen verschachteln.
 
-### Erstellen Sie eine `iconbox` Formular
+### Erstellen eines `iconbox` Formulars
 
-Verwenden Sie die `iconbox` Formulartyp zum Anzeigen von Symbolen auf der linken Seite des Formulars, über die Benutzer zu verschiedenen Seiten im Formular gelangen.
+Verwenden Sie den Formulartyp &quot;`iconbox`&quot;, um auf der linken Seite des Formulars Symbole anzuzeigen, über die Benutzer zu verschiedenen Seiten im Formular gelangen.
 
 ![](assets/iconbox_form_preview.png)
 
-So ändern Sie den Typ eines vorhandenen Formulars in `iconbox`führen Sie die folgenden Schritte aus:
+Gehen Sie wie folgt vor, um den Typ eines vorhandenen Formulars in `iconbox` zu ändern:
 
-1. Ändern Sie die `type` -Attribut `<form>` Element zu `iconbox`:
+1. Ändern Sie das Attribut `type` des Elements `<form>` in `iconbox`:
 
    ```xml
    <form […] type="iconbox">
@@ -300,8 +300,8 @@ So ändern Sie den Typ eines vorhandenen Formulars in `iconbox`führen Sie die f
 
 1. Legen Sie für jede Formularseite einen Container fest:
 
-   1. Hinzufügen einer `<container>` -Element als untergeordnetes Element des `<form>` -Element.
-   1. Um eine Beschriftung und ein Bild für das Symbol zu definieren, verwenden Sie die `label` und `img` -Attribute.
+   1. Fügen Sie ein Element `<container>` als untergeordnetes Element des Elements `<form>` hinzu.
+   1. Verwenden Sie die Attribute `label` und `img` , um eine Beschriftung und ein Bild für das Symbol zu definieren.
 
       ```xml
       <form entitySchema="xtk:form" name="Service provider" namespace="nms" type="iconbox" xtkschema="xtk:form">
@@ -320,17 +320,17 @@ So ändern Sie den Typ eines vorhandenen Formulars in `iconbox`führen Sie die f
       </form>
       ```
 
-   Alternativ können Sie die `type="frame"` -Attribut aus dem vorhandenen `<container>` -Elemente.
+   Alternativ können Sie das Attribut `type="frame"` aus den vorhandenen `<container>` -Elementen entfernen.
 
 ### Notebook-Formular erstellen
 
-Verwenden Sie die `notebook` Formulartyp zum Anzeigen von Registerkarten oben im Formular, über die Benutzer zu verschiedenen Seiten gelangen.
+Verwenden Sie den Formulartyp &quot;`notebook`&quot;, um Registerkarten oben im Formular anzuzeigen, über die Benutzer zu verschiedenen Seiten gelangen.
 
 ![](assets/notebook_form_preview.png)
 
-So ändern Sie den Typ eines vorhandenen Formulars in `notebook`führen Sie die folgenden Schritte aus:
+Gehen Sie wie folgt vor, um den Typ eines vorhandenen Formulars in `notebook` zu ändern:
 
-1. Ändern Sie die `type` -Attribut `<form>` Element zu `notebook`:
+1. Ändern Sie das Attribut `type` des Elements `<form>` in `notebook`:
 
    ```xml
    <form […] type="notebook">
@@ -338,8 +338,8 @@ So ändern Sie den Typ eines vorhandenen Formulars in `notebook`führen Sie die 
 
 1. Fügen Sie für jede Formularseite einen Container hinzu:
 
-   1. Hinzufügen einer `<container>` -Element als untergeordnetes Element des `<form>` -Element.
-   1. Um den Titel und das Bild für das Symbol zu definieren, verwenden Sie die `label` und `img` -Attribute.
+   1. Fügen Sie ein Element `<container>` als untergeordnetes Element des Elements `<form>` hinzu.
+   1. Verwenden Sie die Attribute `label` und `img` , um den Titel und das Bild für das Symbol zu definieren.
 
    ```xml
      <form entitySchema="xtk:form" name="Service provider" namespace="nms" type="notebook" xtkschema="xtk:form">
@@ -358,7 +358,7 @@ So ändern Sie den Typ eines vorhandenen Formulars in `notebook`führen Sie die 
      </form>
    ```
 
-   Alternativ können Sie die `type="frame"` -Attribut aus dem vorhandenen `<container>` -Elemente.
+   Alternativ können Sie das Attribut `type="frame"` aus den vorhandenen `<container>` -Elementen entfernen.
 
 ### Verschachteln von Formularen
 
@@ -366,17 +366,17 @@ Sie können Formulare in anderen Formularen verschachteln. Sie können beispiels
 
 Die Ebene der Verschachtelung steuert die Navigation. Benutzer können ein Drilldown zu Teilformularen durchführen.
 
-Um ein Formular in einem anderen Formular zu verschachteln, fügen Sie eine `<container>` -Element und legen Sie die `type` dem Formulartyp zuordnen. Für Formulare der obersten Ebene können Sie den Formulartyp in einem äußeren Container oder im `<form>` -Element.
+Um ein Formular in einem anderen Formular zu verschachteln, fügen Sie ein Element `<container>` ein und legen Sie das Attribut `type` auf den Formulartyp fest. Für Formulare der obersten Ebene können Sie den Formulartyp in einem äußeren Container oder im Element `<form>` festlegen.
 
 ### Beispiel
 
 Dieses Beispiel zeigt ein komplexes Formular:
 
-* Das Formular der obersten Ebene ist ein Iconbox-Formular. Dieses Formular umfasst zwei Behälter mit der Bezeichnung **Allgemein** und **Details**.
+* Das Formular der obersten Ebene ist ein Iconbox-Formular. Dieses Formular umfasst zwei Container mit den Bezeichnungen **Allgemein** und **Details**.
 
-  Daher zeigt das äußere Formular die **Allgemein** und **Details** Seiten auf der obersten Ebene. Um auf diese Seiten zuzugreifen, klicken Benutzer auf die Symbole links im Formular.
+  Daher zeigt das äußere Formular die Seiten **Allgemein** und **Details** auf der obersten Ebene. Um auf diese Seiten zuzugreifen, klicken Benutzer auf die Symbole links im Formular.
 
-* Das Teilformular ist ein Notebook-Formular, das innerhalb der **Allgemein** Container. Das Teilformular besteht aus zwei Containern mit der Beschriftung **Name** und **Kontakt**.
+* Das Teilformular ist ein Notebook-Formular, das im Container **Allgemein** verschachtelt ist. Das Teilformular umfasst zwei Container mit den Bezeichnungen **Name** und **Kontakt**.
 
 ```xml
 <form _cs="Profile (nms)" entitySchema="xtk:form" img="xtk:form.png" label="Profile" name="profile" namespace="nms" xtkschema="xtk:form">
@@ -399,21 +399,21 @@ Dieses Beispiel zeigt ein komplexes Formular:
 </form>
 ```
 
-Daher wird die Variable **Allgemein** -Seite des äußeren Formulars zeigt die **Name** und **Kontakt** Registerkarten.
+Daher werden auf der Seite **Allgemein** des äußeren Formulars die Registerkarten **Name** und **Kontakt** angezeigt.
 
 ![](assets/nested_forms_preview.png)
 
-Um ein Formular in einem anderen Formular zu verschachteln, fügen Sie eine `<container>` -Element und legen Sie die `type` dem Formulartyp zuordnen. Für Formulare der obersten Ebene können Sie den Formulartyp in einem äußeren Container oder im `<form>` -Element.
+Um ein Formular in einem anderen Formular zu verschachteln, fügen Sie ein Element `<container>` ein und legen Sie das Attribut `type` auf den Formulartyp fest. Für Formulare der obersten Ebene können Sie den Formulartyp in einem äußeren Container oder im Element `<form>` festlegen.
 
 ### Beispiel
 
 Dieses Beispiel zeigt ein komplexes Formular:
 
-* Das Formular der obersten Ebene ist ein Iconbox-Formular. Dieses Formular umfasst zwei Behälter mit der Bezeichnung **Allgemein** und **Details**.
+* Das Formular der obersten Ebene ist ein Iconbox-Formular. Dieses Formular umfasst zwei Container mit den Bezeichnungen **Allgemein** und **Details**.
 
-  Daher zeigt das äußere Formular die **Allgemein** und **Details** Seiten auf der obersten Ebene. Um auf diese Seiten zuzugreifen, klicken Benutzer auf die Symbole links im Formular.
+  Daher zeigt das äußere Formular die Seiten **Allgemein** und **Details** auf der obersten Ebene. Um auf diese Seiten zuzugreifen, klicken Benutzer auf die Symbole links im Formular.
 
-* Das Teilformular ist ein Notebook-Formular, das innerhalb der **Allgemein** Container. Das Teilformular besteht aus zwei Containern mit der Beschriftung **Name** und **Kontakt**.
+* Das Teilformular ist ein Notebook-Formular, das im Container **Allgemein** verschachtelt ist. Das Teilformular umfasst zwei Container mit den Bezeichnungen **Name** und **Kontakt**.
 
 ```xml
 <form _cs="Profile (nms)" entitySchema="xtk:form" img="xtk:form.png" label="Profile" name="profile" namespace="nms" xtkschema="xtk:form">
@@ -436,7 +436,7 @@ Dieses Beispiel zeigt ein komplexes Formular:
 </form>
 ```
 
-Daher wird die Variable **Allgemein** -Seite des äußeren Formulars zeigt die **Name** und **Kontakt** Registerkarten.
+Daher werden auf der Seite **Allgemein** des äußeren Formulars die Registerkarten **Name** und **Kontakt** angezeigt.
 
 ![](assets/nested_forms_preview.png)
 
@@ -461,9 +461,9 @@ Sie können Überprüfungssteuerelemente in Formulare aufnehmen.
 
 ### Schreibgeschützten Zugriff auf Felder gewähren
 
-Verwenden Sie die `readOnly="true"` -Attribut. Beispielsweise können Sie den Primärschlüssel eines Datensatzes anzeigen, jedoch mit schreibgeschütztem Zugriff. [Weitere Informationen](form-structure.md#non-editable-fields)
+Verwenden Sie das Attribut `readOnly="true"` , um schreibgeschützten Zugriff auf ein Feld zu gewähren. Beispielsweise können Sie den Primärschlüssel eines Datensatzes anzeigen, jedoch mit schreibgeschütztem Zugriff. [Weitere Informationen](form-structure.md#non-editable-fields)
 
-In diesem Beispiel wird der Primärschlüssel (`iRecipientId`) der `nms:recipient` Schema wird in schreibgeschütztem Zugriff angezeigt:
+In diesem Beispiel wird der Primärschlüssel (`iRecipientId`) des Schemas `nms:recipient` schreibgeschützt angezeigt:
 
 ```xml
 <value xpath="@iRecipientId" readOnly="true"/>
@@ -473,8 +473,8 @@ In diesem Beispiel wird der Primärschlüssel (`iRecipientId`) der `nms:recipien
 
 Sie können obligatorische Informationen überprüfen:
 
-* Verwenden Sie die `required="true"` -Attribut für die erforderlichen Felder.
-* Verwenden Sie die `<leave>` -Knoten, um diese Felder zu überprüfen und Fehlermeldungen anzuzeigen.
+* Verwenden Sie das Attribut `required="true"` für die erforderlichen Felder.
+* Verwenden Sie den Knoten `<leave>` , um diese Felder zu überprüfen und Fehlermeldungen anzuzeigen.
 
 In diesem Beispiel ist die E-Mail-Adresse erforderlich und es wird eine Fehlermeldung angezeigt, wenn der Benutzer diese Informationen nicht angegeben hat:
 
@@ -487,11 +487,11 @@ In diesem Beispiel ist die E-Mail-Adresse erforderlich und es wird eine Fehlerme
 </leave>
 ```
 
-Mehr dazu [Ausdrucksfelder](form-structure.md#expression-field) und [Formularkontext](form-structure.md#context-of-forms).
+Weitere Informationen zu [Ausdrucksfeldern](form-structure.md#expression-field) und [Formularkontext](form-structure.md#context-of-forms).
 
 ### Werte überprüfen
 
-Sie können JavaScript-SOAP-Aufrufe verwenden, um Formulardaten aus der Konsole zu überprüfen. Verwenden Sie diese Aufrufe zur komplexen Validierung, um beispielsweise einen Wert mit einer Liste zulässiger Werte zu vergleichen. [Weitere Informationen](form-structure.md#soap-methods)
+Sie können JavaScript-SOAP-Aufrufe verwenden, um Formulardaten über die Konsole zu überprüfen. Verwenden Sie diese Aufrufe zur komplexen Validierung, um beispielsweise einen Wert mit einer Liste zulässiger Werte zu vergleichen. [Weitere Informationen](form-structure.md#soap-methods)
 
 1. Erstellen Sie eine Validierungsfunktion in einer JS-Datei.
 
@@ -509,13 +509,13 @@ Sie können JavaScript-SOAP-Aufrufe verwenden, um Formulardaten aus der Konsole 
    }
    ```
 
-   In diesem Beispiel erhält die Funktion den Namen `checkValue`. Mit dieser Funktion wird die `recipient` Datentyp in der `nms` Namespace. Der Wert, der überprüft wird, wird protokolliert. Wenn der Wert nicht gültig ist, wird eine Fehlermeldung protokolliert. Wenn der Wert gültig ist, wird der Wert 1 zurückgegeben.
+   In diesem Beispiel trägt die Funktion den Namen `checkValue`. Mit dieser Funktion wird der Datentyp `recipient` im Namespace `nms` überprüft. Der Wert, der überprüft wird, wird protokolliert. Wenn der Wert nicht gültig ist, wird eine Fehlermeldung protokolliert. Wenn der Wert gültig ist, wird der Wert 1 zurückgegeben.
 
    Sie können den zurückgegebenen Wert verwenden, um das Formular zu ändern.
 
-1. Fügen Sie im Formular die `<soapCall>` -Element zu `<leave>` -Element.
+1. Fügen Sie im Formular das Element `<soapCall>` zum Element `<leave>` hinzu.
 
-   In diesem Beispiel wird ein SOAP-Aufruf verwendet, um die `@valueToCheck` Zeichenfolge:
+   In diesem Beispiel wird ein SOAP-Aufruf verwendet, um die `@valueToCheck` -Zeichenfolge zu validieren:
 
    ```xml
    <form name="recipient" (…)>
@@ -528,14 +528,14 @@ Sie können JavaScript-SOAP-Aufrufe verwenden, um Formulardaten aus der Konsole 
    </form>
    ```
 
-   In diesem Beispiel wird die `checkValue` und `nms:recipient` -Dienst wird verwendet:
+   In diesem Beispiel werden die Methode `checkValue` und der Dienst `nms:recipient` verwendet:
 
    * Der Dienst ist der Namespace und der Datentyp.
    * Die Methode ist der Funktionsname. Beim Namen wird zwischen Groß- und Kleinschreibung unterschieden.
 
    Der Aufruf wird synchron ausgeführt.
 
-   Alle Ausnahmen werden angezeigt. Wenn Sie die `<leave>` -Element verwenden, können Benutzer das Formular erst dann speichern, wenn die eingegebenen Informationen validiert wurden.
+   Alle Ausnahmen werden angezeigt. Wenn Sie das Element `<leave>` verwenden, können Benutzer das Formular erst speichern, wenn die eingegebenen Informationen validiert wurden.
 
 Dieses Beispiel zeigt, wie Sie Dienstaufrufe in Formularen durchführen können:
 
@@ -548,4 +548,4 @@ Dieses Beispiel zeigt, wie Sie Dienstaufrufe in Formularen durchführen können:
 </enter>
 ```
 
-In diesem Beispiel ist die Eingabe eine ID, die ein Primärschlüssel ist. Wenn Benutzer das Formular für diese ID ausfüllen, wird ein SOAP-Aufruf mit dieser ID als Eingabeparameter durchgeführt. Die Ausgabe ist ein boolescher Wert, der in dieses Feld geschrieben wird: `/tmp/@count`. Sie können diesen booleschen Wert innerhalb des Formulars verwenden. Mehr dazu [Formularkontext](form-structure.md#context-of-forms).
+In diesem Beispiel ist die Eingabe eine ID, die ein Primärschlüssel ist. Wenn Benutzer das Formular für diese ID ausfüllen, wird SOAP mit dieser ID als Eingabeparameter aufgerufen. Die Ausgabe ist ein boolescher Wert, der in dieses Feld geschrieben wird: `/tmp/@count`. Sie können diesen booleschen Wert innerhalb des Formulars verwenden. Weitere Informationen zu [Formularkontext](form-structure.md#context-of-forms).

@@ -21,14 +21,14 @@ ht-degree: 3%
 
 In diesem Abschnitt werden die Vorkonfigurationsschritte beschrieben, die vor der Installation von Adobe Campaign erforderlich sind.
 
-Die für die Installation von Adobe Campaign erforderlichen technischen und Softwarekonfigurationen werden im Abschnitt [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md).
+Die für die Installation von Adobe Campaign erforderliche technische und Softwarekonfiguration wird in der [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md) beschrieben.
 
 Zur Erinnerung: Die folgenden Komponenten müssen installiert und korrekt konfiguriert werden:
 
 * Apache, siehe [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md),
 * Java JDK und OpenJDK, siehe [Java Development Kit - JDK](../../installation/using/application-server.md#jdk),
 * Bibliotheken, siehe [Bibliotheken](#libraries),
-* Datenbankzugriffsschichten, siehe [Datenbankzugriffsebenen](#database-access-layers),
+* Ebenen für den Datenbankzugriff, siehe [Ebenen für den Datenbankzugriff](#database-access-layers),
 * LibreOffice, siehe [Installieren von LibreOffice für Debian](#installing-libreoffice-for-debian) und [Installieren von LibreOffice für CentOS](#installing-libreoffice-for-centos),
 * Schriftarten, siehe [Schriftarten für MTA-Statistiken](#fonts-for-mta-statistics) und [Schriftarten für japanische Instanzen](#fonts-for-japanese-instances).
 
@@ -43,11 +43,11 @@ Um Adobe Campaign unter Linux zu installieren, stellen Sie sicher, dass Sie übe
 
   Wenn der Befehl keine leere Zeile zurückgibt, bedeutet dies, dass die Konfiguration korrekt ist.
 
-* Sie müssen über die OpenSSL-Version verfügen. **1,0,2** oder höher.
+* Sie müssen über die OpenSSL-Version **1.0.2** oder höher verfügen.
 
   Für RHEL-Distributionen ist Version 1.0 von OpenSSL erforderlich.
 
-* Für die Verwendung von Adobe Campaign benötigen Sie die **libicu** Bibliothek installiert.
+* Um Adobe Campaign verwenden zu können, muss die Bibliothek **libicu** installiert sein.
 
 ### SELinux {#selinux}
 
@@ -59,7 +59,7 @@ Melden Sie sich dazu als Root an und geben Sie den folgenden Befehl ein:
 echo 0 >/selinux/enforce
 ```
 
-Darüber hinaus wird im **/etc/sysconfig/httpd** -Datei wurde die folgende Zeile hinzugefügt, um auf das Adobe Campaign-Umgebungskonfigurationsskript zu verweisen:
+Darüber hinaus wurde in der Datei **/etc/sysconfig/httpd** die folgende Zeile hinzugefügt, um auf das Adobe Campaign-Umgebungskonfigurationsskript zu verweisen:
 
 ```
 . ~neolane/nl6/env.sh
@@ -67,9 +67,9 @@ Darüber hinaus wird im **/etc/sysconfig/httpd** -Datei wurde die folgende Zeile
 
 In RHEL und CentOS wurden bei Aktivierung von SELinux Kompatibilitätsprobleme mit den Client-Ebenen von Datenbanken festgestellt. Um sicherzustellen, dass Adobe Campaign ordnungsgemäß funktioniert, empfehlen wir, SELinux zu deaktivieren.
 
-**Gehen Sie wie folgt vor:**
+**Wenden Sie den folgenden Prozess an:**
 
-* Datei bearbeiten **/etc/selinux/config**
+* Bearbeiten Sie die Datei **/etc/selinux/config** .
 
 * Ändern Sie die SELINUX-Zeile wie folgt:
 
@@ -140,13 +140,13 @@ Die Zugriffsschichten für die von Ihnen verwendete Datenbank-Engine müssen auf
 
 Die unterstützte Pilotversion wird in [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md) erläutert.
 
-Überprüfen Sie auch die allgemeine [Datenbank](../../installation/using/database.md) Abschnitt.
+Überprüfen Sie auch den allgemeinen Abschnitt [Datenbank](../../installation/using/database.md) .
 
 ### PostgreSQL {#postgresql}
 
 Adobe Campaign unterstützt alle Versionen der PostgreSQL-Client-Bibliotheken ab Version 9.6: **libpq.so.5**.
 
-Für die Verwendung von PostgreSQL mit Adobe Campaign ist auch die Installation der entsprechenden **pgcrypto** -Bibliotheken.
+Für die Verwendung von PostgreSQL mit Adobe Campaign müssen auch die entsprechenden **pgcrypto** -Bibliotheken installiert werden.
 
 ### Oracle {#oracle}
 
@@ -164,7 +164,7 @@ Probleme können nach einem Oracle-Client oder einer Serveraktualisierung, einer
 
 Wenn Sie in der Clientkonsole feststellen, dass unerwartete Zeitverzögerungen (eine oder mehrere Stunden) in den Protokollen, der letzten Verarbeitung des Workflows, der nächsten Verarbeitung usw. auftreten, kann es zu einem Problem zwischen der Bibliothek des Oracle-Clients und dem Oracle-Server kommen. Um solche Probleme zu vermeiden
 
-1. Stellen Sie sicher, dass die **Vollständiger Client**.
+1. Stellen Sie sicher, dass Sie den **vollständigen Client** verwenden.
 
    Bei der Verwendung der Oracle Instant Client-Version wurden verschiedene Probleme festgestellt. Darüber hinaus ist es unmöglich, die Zeitzonendatei auf dem Instant Client zu ändern.
 
@@ -174,7 +174,7 @@ Wenn Sie in der Clientkonsole feststellen, dass unerwartete Zeitverzögerungen (
 
    Überprüfen Sie auch den Wert ORACLE_HOME , um sicherzustellen, dass er auf die erwartete Clientversion verweist (falls mehrere Versionen auf dem Computer installiert sind).
 
-1. Stellen Sie sicher, dass Client und Server dasselbe verwenden **timezone file**.
+1. Stellen Sie sicher, dass Client und Server dieselbe **Zeitzonendatei** verwenden.
 
 ## Implementierungsschritte {#implementation-steps}
 

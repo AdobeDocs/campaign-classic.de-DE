@@ -28,8 +28,8 @@ Wenn das Programm auf die Daten einer existierenden Tabelle, einer SQL-Ansicht o
 
 Gehen Sie wie folgt vor, um das entsprechende Schema zu erstellen:
 
-1. Bearbeiten Sie die **[!UICONTROL Administration > Konfiguration > Datenschemata]** Knoten der Adobe Campaign-Struktur und klicken Sie auf **[!UICONTROL Neu]** .
-1. Wählen Sie die **[!UICONTROL Auf Daten aus einer vorhandenen Tabelle oder einer SQL-Ansicht zugreifen]** und klicken Sie auf **[!UICONTROL Nächste]** .
+1. Bearbeiten Sie den Knoten **[!UICONTROL Administration>Konfiguration > Datenschemata]** des Adobe Campaign-Baums und klicken Sie auf **[!UICONTROL Neu]** .
+1. Wählen Sie die Option **[!UICONTROL Zugriff auf Daten aus einer vorhandenen Tabelle oder einer SQL-Ansicht]** aus und klicken Sie auf **[!UICONTROL Weiter]** .
 
    ![](assets/s_ncs_configuration_extand_a_schema.png)
 
@@ -41,7 +41,7 @@ Gehen Sie wie folgt vor, um das entsprechende Schema zu erstellen:
 
    ![](assets/s_ncs_configuration_view_create_schema.png)
 
-   Das Schema muss mit dem Attribut view=&quot;true&quot; im `<srcSchema>` root -Element, um kein SQL-Skript zur Tabellenerstellung zu generieren.
+   Das Schema muss mit dem Attribut view=&quot;true&quot; im Stammelement `<srcSchema>` gefüllt werden, damit kein SQL-Skript zur Tabellenerstellung generiert werden kann.
 
 **Beispiel** :
 
@@ -58,6 +58,6 @@ Gehen Sie wie folgt vor, um das entsprechende Schema zu erstellen:
 
 ## Zugriff auf externe Datenbanken {#accessing-an-external-database}
 
-Die **Federated Data Access - FDA** ermöglicht Ihnen den Zugriff auf die in einer externen Datenbank gespeicherten Daten.
+Mit der Option **Federated Data Access - FDA** haben Sie Zugriff auf die in einer externen Datenbank gespeicherten Daten.
 
-Die Konfiguration der Schemata für den Zugriff auf Daten in einer externen Datenbank wird im Abschnitt [diese Seite](../../installation/using/creating-data-schema.md).
+Die Konfiguration, die für den Zugriff auf Daten in einer externen Datenbank durchgeführt werden soll, wird auf [dieser Seite](../../installation/using/creating-data-schema.md) beschrieben.

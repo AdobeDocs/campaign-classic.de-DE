@@ -30,11 +30,11 @@ Diese Option verbessert die Performance beim Ausführen des Personalisierungssch
 
 Bei mehreren Adobe Campaign-Workflow-Aktivitäten können Sie die in einer externen Datenbank gespeicherten Daten verwenden.
 
-* **Nach externen Daten filtern** - die [Abfrage](../../workflow/using/targeting-data.md#selecting-data) -Aktivität können Sie externe Daten hinzufügen und in den definierten Filterkonfigurationen verwenden. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../workflow/using/targeting-data.md#selecting-data).
+* **Nach externen Daten filtern** - Mit der Aktivität [Abfrage](../../workflow/using/targeting-data.md#selecting-data) können Sie externe Daten hinzufügen und in den definierten Filterkonfigurationen verwenden. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../workflow/using/targeting-data.md#selecting-data).
 
 * **Segmente erstellen** – Die Aktivität [Aufspaltung](../../workflow/using/split.md) ermöglicht die Erstellung von Segmenten. Sie können externe Daten verwenden, um die zu verwendenden Filterkriterien zu definieren. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../workflow/using/split.md).
 
-* **Externe Datenbank laden** - Sie können die externen Daten im [Laden der Daten](../../workflow/using/data-loading-rdbms.md) (RDBMS). Weitere Informationen finden Sie auf [dieser Seite](../../workflow/using/data-loading-rdbms.md).
+* **Externe Datenbank laden** - Sie können die externen Daten in der Aktivität [Laden der Daten](../../workflow/using/data-loading-rdbms.md) (RDBMS) verwenden. Weitere Informationen finden Sie auf [dieser Seite](../../workflow/using/data-loading-rdbms.md).
 
 * **Informationen und Links hinzufügen** – Die Aktivität [Anreicherung](../../workflow/using/enrichment.md) ermöglicht das Hinzufügen zusätzlicher Daten zur Arbeitstabelle des Workflows sowie von Links zu einer externen Tabelle. In diesem Zusammenhang kann es Daten aus einer externen Datenbank verwenden. Weitere Informationen finden Sie auf [dieser Seite](../../workflow/using/enrichment.md).
 

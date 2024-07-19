@@ -32,7 +32,7 @@ Wenn die Adobe Campaign Konsole gestartet wird, greifen Sie auf eine Log-in Seit
 
 Gehen Sie folgen wie folgt vor, um eine neue Instanz zu erstellen:
 
-1. Klicken Sie auf das verknüpfen in der oberen rechten Ecke der Anmeldedatenfelder, um auf das Fenster für die Verbindungskonfiguration zuzugreifen. Dieser Link kann entweder **[!UICONTROL Neu...]** oder einem vorhandenen Instanznamen.
+1. Klicken Sie auf das verknüpfen in der oberen rechten Ecke der Anmeldedatenfelder, um auf das Fenster für die Verbindungskonfiguration zuzugreifen. Dieser Link kann entweder **[!UICONTROL Neu..]** oder ein Name einer vorhandenen Instanz sein.
 
    ![](assets/s_ncs_install_define_connection_01.png)
 
@@ -42,7 +42,7 @@ Gehen Sie folgen wie folgt vor, um eine neue Instanz zu erstellen:
 
 1. Geben Sie per URL eine Verbindung zum Adobe Campaign-Anwendungs-Server an. Verwenden Sie entweder einen DNS oder einen Alias des Computers oder Ihre IP-Adresse.
 
-   Sie können beispielsweise die `https://<machine>.<domain>.com` Typ URL.
+   Sie können beispielsweise die URL vom Typ `https://<machine>.<domain>.com` verwenden.
 
    >[!CAUTION]
    >
@@ -58,7 +58,7 @@ Gehen Sie folgen wie folgt vor, um eine neue Instanz zu erstellen:
 
 1. Geben Sie in den **[!UICONTROL Feldern DNS-Masken die** Liste der DNS-Masken **]** ein, an die die Instanz angehängt werden soll. Der Adobe Campaign-Server verwendet den Hostnamen, der in den HTTP-Anfragen angezeigt wird, um zu bestimmen, welche Instanz erreicht werden soll.
 
-   Der Hostname ist zwischen der Zeichenfolge enthalten. **https://** und dem ersten Schrägstrich **/** der Serveradresse.
+   Der Hostname befindet sich zwischen der Zeichenfolge **https://** und dem ersten Schrägstrich **/** der Serveradresse.
 
    Sie können eine Liste mit durch Kommas getrennten Werten definieren.
 
@@ -72,13 +72,13 @@ Gehen Sie folgen wie folgt vor, um eine neue Instanz zu erstellen:
 
 1. Wählen Sie in der **[!UICONTROL Dropdown-Liste Sprache]** die **Instanz Sprache** aus: Englisch (USA), Englisch (Großbritannien), Französisch oder Japanisch.
 
-   Unterschiede zwischen US-amerikanischem Englisch und britischem Englisch werden im Abschnitt [diesem Abschnitt](../../platform/using/adobe-campaign-workspace.md#date-and-time).
+   Unterschiede zwischen US-amerikanischem Englisch und britischem Englisch werden in [diesem Abschnitt](../../platform/using/adobe-campaign-workspace.md#date-and-time) beschrieben.
 
    >[!CAUTION]
    >
    >Die Instanzsprache kann nach diesem Schritt nicht mehr geändert werden. Adobe Campaign-Instanzen sind nicht mehrsprachig: Sie können die Benutzeroberfläche nicht von einer Sprache in eine andere wechseln.
 
-1. Klicks **[!UICONTROL Ok]** zur Bestätigung der Instanzdeklaration. Melden Sie sich ab und wieder an, um die Datenbank zu deklarieren.
+1. Klicken Sie auf **[!UICONTROL OK]** , um die Instanz-Deklaration zu bestätigen. Melden Sie sich ab und wieder an, um die Datenbank zu deklarieren.
 
    >[!NOTE]
    >

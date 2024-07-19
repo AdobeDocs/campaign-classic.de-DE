@@ -81,10 +81,10 @@ Auflistungen werden zu Beginn eines Schemas definiert (bevor das Hauptelement de
    * uuid
 
 * **default (string)**: Standardwert. Der Standardwert kann auch einer der in der Auflistung definierten Werte sein.
-* **desc (Zeichenfolge)**: Auflistungsbeschreibung.
+* **desc (string)**: Auflistungsbeschreibung.
 * **label (string)**: Auflistungsbezeichnung.
 * **name (string)**: Interner Name der Auflistung.
-* **template (string)**: Dieses Attribut definiert einen Verweis auf eine `<enumeration>` -Element, das von mehreren Schemas gemeinsam genutzt wird. Die Definition wird automatisch in das aktuelle Schema kopiert.
+* **template (string)**: Dieses Attribut definiert einen Verweis auf ein `<enumeration>` -Element, das von mehreren Schemas gemeinsam genutzt wird. Die Definition wird automatisch in das aktuelle Schema kopiert.
 
 ## Beispiele {#examples-4}
 

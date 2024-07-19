@@ -19,7 +19,7 @@ Adobe Campaign Classic bietet verschiedene Module und Optionen. Die Verfügbarke
 
 Auf dieser Seite werden die Hauptunterschiede zwischen gehosteten (Managed Services) und On-Premise-Implementierungen erläutert. Die Besonderheiten hybrider Bereitstellungen hängen von den Elementen ab, die von Adobe gehostet und in Ihren Räumlichkeiten gehostet werden.
 
-Die verschiedenen Hosting-Modelle werden eingeführt [in diesem Abschnitt](../../installation/using/hosting-models.md).
+Die verschiedenen Hosting-Modelle werden mit [in diesem Abschnitt](../../installation/using/hosting-models.md) eingeführt.
 
 ## Verfügbarkeit pro Bereitstellungsmodell {#capability-matrix}
 
@@ -41,11 +41,11 @@ Die verschiedenen Hosting-Modelle werden eingeführt [in diesem Abschnitt](../..
 
 ## Federated Data Access{#fda}
 
-Adobe Campaign stellt die **Federated Data Access** (FDA) zur Verarbeitung von in einer oder mehreren externen Datenbanken gespeicherten Informationen: Sie können auf externe Daten zugreifen, ohne die Datenstruktur in Adobe Campaign zu verändern. [Weitere Informationen](../../installation/using/about-fda.md)
+Adobe Campaign bietet die Option &quot;**Federated Data Access**&quot;(FDA), um in externen Datenbanken gespeicherte Informationen zu verarbeiten: Sie können auf externe Daten zugreifen, ohne die Datenstruktur in Adobe Campaign zu verändern. [Weitere Informationen](../../installation/using/about-fda.md)
 
 >[!CAUTION]
 >
->Kompatible externe Datenbanksysteme hängen von Ihrem Hosting-Modell ab. Weitere Informationen finden Sie unter [Campaign-Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md).
+>Kompatible externe Datenbanksysteme hängen von Ihrem Hosting-Modell ab. Weitere Informationen finden Sie in der [Campaign-Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md).
 >
 
 **Siehe auch**

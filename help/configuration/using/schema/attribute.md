@@ -36,13 +36,13 @@ _operation (string), advanced (boolean), applyIf (string), autoIncrement (boolea
 
 ## Beschreibung {#description}
 
-`<attribute>` -Elemente können Sie ein Feld in der Datenbank definieren.
+Mit den Elementen `<attribute>` können Sie ein Feld in der Datenbank definieren.
 
 ## Verwendung und Verwendungskontext {#use-and-context-of-use}
 
-`<attribute>` -Elemente in einer `<element>` -Element.
+`<attribute>` -Elemente müssen in einem `<element>` -Element deklariert werden.
 
-Die Sequenz, in der `<attribute>` -Elemente in einer `<srcschema>` hat keine Auswirkungen auf die Reihenfolge der Felderstellung in der Datenbank. Die Erstellungssequenz ist alphabetisch.
+Die Reihenfolge, in der `<attribute>` -Elemente in einem `<srcschema>` definiert sind, wirkt sich nicht auf die Reihenfolge der Felderstellung in der Datenbank aus. Die Erstellungssequenz ist alphabetisch.
 
 ## Attributbeschreibung {#attribute-description}
 
@@ -58,11 +58,11 @@ Die Sequenz, in der `<attribute>` -Elemente in einer `<srcschema>` hat keine Aus
    * &quot;update&quot;: update. Das bedeutet, dass Adobe Campaign das Element aktualisiert oder einen Fehler erzeugt, wenn es nicht vorhanden ist.
    * &quot;Löschen&quot;: Löschen. Dies bedeutet, dass Adobe Campaign Elemente wiederherstellt und löscht.
 
-* **advanced (boolean)**: Wenn diese Option aktiviert ist (@advanced=&quot;true&quot;), können Sie das Attribut in der Liste der verfügbaren Felder ausblenden, auf die für die Konfiguration einer Liste in einem Formular zugegriffen werden kann.
-* **applyIf (string)**: Mit diesem Attribut können Sie Felder optional machen. Die `<attribute>` -Element bei der Aktualisierung der Datenbank berücksichtigt werden, wenn die Beschränkung eingehalten wird. &quot;applyIf&quot;erhält einen XTK-Ausdruck.
+* **advanced (boolesch)**: Wenn diese Option aktiviert ist (@advanced=&quot;true&quot;), können Sie das Attribut in der Liste der verfügbaren Felder ausblenden, auf die zum Konfigurieren einer Liste in einem Formular zugegriffen werden kann.
+* **applyIf (string)**: Mit diesem Attribut können Sie Felder optional machen. Das Element `<attribute>` wird bei der Aktualisierung der Datenbank berücksichtigt, wenn die Einschränkung eingehalten wird. &quot;applyIf&quot;erhält einen XTK-Ausdruck.
 * **autoIncrement (boolean)**: Wenn diese Option aktiviert ist, wird das Feld zu einem Zähler. Auf diese Weise können Sie einen Wert (meist IDs) erhöhen. (externe Verwendung)
-* **gehörtTo (Zeichenfolge)**: nimmt den Namen und Namespace der Tabelle, die das Feld gemeinsam verwendet, und füllt das Schema aus, in dem das Attribut deklariert wird. (wird nur in einer `<schema>`).
-* **dataPolicy (Zeichenfolge)**: ermöglicht die Angabe von Genehmigungsbeschränkungen für die im SQL- oder XML-Feld zulässigen Werte. Die Werte für dieses Attribut sind:
+* **gehörtTo (Zeichenfolge)**: Nimmt den Namen und den Namespace der Tabelle, die das Feld gemeinsam verwendet, und füllt das Schema aus, in dem das Attribut deklariert wird. (wird nur in einem `<schema>` verwendet).
+* **dataPolicy (string)**: Ermöglicht die Angabe von Genehmigungsbeschränkungen für die im SQL- oder XML-Feld zulässigen Werte. Die Werte für dieses Attribut sind:
 
    * &quot;none&quot;: kein Wert
    * &quot;smartCase&quot;: erste Buchstaben Großbuchstaben
@@ -73,14 +73,14 @@ Die Sequenz, in der `<attribute>` -Elemente in einer `<srcschema>` hat keine Aus
    * &quot;identifier&quot;: Identifikationsname
    * &quot;resIdentifier&quot;: Dateiname
 
-* **dbEnum (Zeichenfolge)**: empfängt den internen Namen einer &quot;geschlossenen&quot; Auflistung. Die Auflistungswerte müssen im Abschnitt `<srcschema>`.
-* **defOnDuplicate (boolesch)**: Wenn dieses Attribut aktiviert ist, wird bei der Duplizierung eines Datensatzes der (in @default definierte) Standardwert automatisch erneut auf den Datensatz angewendet.
-* **default (string)**: dient der Definition des Werts des Standardfelds (Aufruf einer Funktion, Standardwert). Dieses Attribut erhält einen XTK-Ausdruck.
-* **desc (Zeichenfolge)**: dient dem Einfügen einer Beschreibung des Attributs. Diese Beschreibung wird in der Statusleiste der Benutzeroberfläche angezeigt.
+* **dbEnum (string)**: empfängt den internen Namen einer &quot;geschlossenen&quot; Auflistung. Die Auflistungswerte müssen im `<srcschema>` definiert werden.
+* **defOnDuplicate (boolesch)**: Wenn dieses Attribut aktiviert ist, wird bei der Duplizierung eines Datensatzes der Standardwert (definiert in @default) automatisch erneut auf den Datensatz angewendet.
+* **default (string)**: Ermöglicht die Definition des Werts im Standardfeld (Aufruf einer Funktion, Standardwert). Dieses Attribut erhält einen XTK-Ausdruck.
+* **desc (string)**: ermöglicht das Einfügen einer Beschreibung des Attributs. Diese Beschreibung wird in der Statusleiste der Benutzeroberfläche angezeigt.
 * **edit (string)**: Dieses Attribut gibt den Typ der Eingabe an, die in dem mit dem Schema verknüpften Formular verwendet wird.
-* **enum (string)**: erhält den Namen der mit dem Feld verknüpften Auflistung. Die Auflistung kann im selben Schema oder in ein Remote-Schema eingefügt werden.
-* **expr (Zeichenfolge)**: definiert einen Ausdruck für die Feldvorberechnung. Dieses Attribut empfängt einen Xpath oder einen XTK-Ausdruck.
-* **Funktion (Zeichenfolge)**: definiert ein Merkmalfeld: Diese Felder werden zur Erweiterung der Daten in einer vorhandenen Tabelle verwendet, jedoch mit Speicherung in einer Anhang-Tabelle. Zulässige Werte sind:
+* **enum (string)**: empfängt den Namen der mit dem Feld verknüpften Auflistung. Die Auflistung kann im selben Schema oder in ein Remote-Schema eingefügt werden.
+* **expr (string)**: definiert einen Ausdruck für die Feldberechnung. Dieses Attribut empfängt einen Xpath oder einen XTK-Ausdruck.
+* **feature (string)**: definiert ein Merkmalfeld: Diese Felder werden zum Erweitern der Daten in einer vorhandenen Tabelle verwendet, jedoch mit Speicherung in einer Anhang-Tabelle. Zulässige Werte sind:
 
    * &quot;shared&quot;: Der Inhalt wird in einer freigegebenen Tabelle je Datentyp gespeichert.
    * &quot;dediziert&quot;: Der Inhalt wird in einer speziellen Tabelle gespeichert
@@ -88,17 +88,17 @@ Die Sequenz, in der `<attribute>` -Elemente in einer `<srcschema>` hat keine Aus
   SQL-Eigenschaftstabellen werden automatisch basierend auf dem charakteristischen Typ erstellt:
 
    * dediziert: `Ft_[name_of_the_schema_containing_the_characteristic]_[name_of_the_characteristic]`
-   * freigegeben: `Ft_[type_of_key_of_the_schema_containing_the_characteristic]_[type_of_the_characteristic]`
+   * shared: `Ft_[type_of_key_of_the_schema_containing_the_characteristic]_[type_of_the_characteristic]`
 
   Es gibt zwei Arten von Eigenschaftenfeldern: einfache à¹-Felder, bei denen ein einzelner Wert für das Merkmal zugelassen ist, und ein¹ Multiple-Choice-Felder, bei denen das Merkmal mit einem Kollektionselement verknüpft ist, das mehrere Werte enthalten kann.
 
   Wenn ein Merkmal in einem Schema definiert ist, muss dieses Schema über einen Hauptschlüssel verfügen, der auf einem einzelnen Feld basiert (zusammengesetzte Schlüssel sind nicht autorisiert).
 
-* **featureDate (boolean)**: Attribut, das mit dem Feld &quot;@feature&quot; verknüpft ist. Wenn der Wert &quot;true&quot;ist, können Sie feststellen, wann der Wert zuletzt aktualisiert wurde.
-* **img (Zeichenfolge)**: dient der Definition eines Pfads für ein mit einem Feld verknüpftes Bild (Namespace + Bildname) (Beispiel: img=&quot;cus:mypicture.jpg&quot;). Das Bild muss physisch auf den Anwendungsserver importiert werden.
+* **featureDate (boolean)**: Attribut, das mit dem Feld &quot;@feature&quot;verknüpft ist. Wenn der Wert &quot;true&quot;ist, können Sie feststellen, wann der Wert zuletzt aktualisiert wurde.
+* **img (string)**: ermöglicht die Angabe eines Pfads für ein Bild, das mit einem Feld verknüpft ist (namespace + image name) (Beispiel: img=&quot;cus:mypicture.jpg&quot;). Das Bild muss physisch auf den Anwendungsserver importiert werden.
 * **label (string)**: mit dem Feld verknüpfte Bezeichnung, die hauptsächlich für den Benutzer in der Benutzeroberfläche bestimmt ist. Damit können Sie Benennungsbeschränkungen vermeiden.
-* **length (Zeichenfolge)**: max. Anzahl der Zeichen für einen Wert des SQL-Felds vom Typ &quot;String&quot;. Wenn das Attribut &quot;@length&quot;nicht angegeben ist, erstellt Adobe Campaign automatisch ein Feld für 255 Zeichen.
-* **localizable (boolean)**: Wenn es aktiviert ist, weist dieses Attribut das Tool zur Sammlung an, den Wert des Attributs &quot;@label&quot;für die Übersetzung abzurufen (interne Verwendung).
+* **length (string)**: max. Anzahl der Zeichen für einen Wert des SQL-Felds vom Typ &quot;String&quot;. Wenn das Attribut &quot;@length&quot;nicht angegeben ist, erstellt Adobe Campaign automatisch ein Feld für 255 Zeichen.
+* **lokalisierbar (boolesch)**: Wenn es aktiviert ist, weist dieses Attribut das Sammlungs-Tool an, den Wert des Attributs &quot;@label&quot;für die Übersetzung abzurufen (interne Verwendung).
 * **name (MNTOKEN)**: Name des Attributs, das mit dem Namen des Felds in der Tabelle übereinstimmt. Der Wert des Attributs &quot;@name&quot;muss kurz sein, vorzugsweise auf Englisch, und den XML-Benennungsbeschränkungen entsprechen.
 
   Beim Schreiben des Schemas in die Datenbank werden dem Feldnamen von Adobe Campaign automatisch Präfixe hinzugefügt:
@@ -110,21 +110,21 @@ Die Sequenz, in der `<attribute>` -Elemente in einer `<srcschema>` hat keine Aus
 
   Um den Namen des Felds in der Tabelle vollständig zu definieren, verwenden Sie beim Definieren eines Attributs die Option &quot;@sqlname&quot;.
 
-* **notNull (boolesch)**: definiert das Verhalten von Adobe Campaign bezüglich der Verwaltung von NULL-Datensätzen in der Datenbank neu. Numerische Felder sind standardmäßig nicht null und Felder vom Typ Zeichenfolge und Datum können null sein.
-* **pkgStatus (Zeichenfolge)**: Bei Package-Exporten werden Werte in Abhängigkeit vom Wert von &quot;@pkgStatus&quot;berücksichtigt:
+* **notNull (boolesch)**: ermöglicht Ihnen, das Verhalten von Adobe Campaign bezüglich der Verwaltung von NULL-Datensätzen in der Datenbank neu zu definieren. Numerische Felder sind standardmäßig nicht null und Felder vom Typ Zeichenfolge und Datum können null sein.
+* **pkgStatus (string)**: Bei Package-Exporten werden Werte in Abhängigkeit vom Wert von &quot;@pkgStatus&quot;berücksichtigt:
 
    * &quot;always&quot;: immer vorhanden
    * &quot;never&quot;: niemals präsent
    * &quot;default (oder nichts)&quot;: Der Wert wird exportiert, es sei denn, es handelt sich um den Standardwert oder um ein internes Feld, das nicht mit anderen Instanzen kompatibel ist.
 
-* **ref (string)**: Dieses Attribut definiert einen Verweis auf eine `<attribute>` von mehreren Schemas gemeinsam genutztes Element (Definition Factoring). Die Definition wird nicht in das aktuelle Schema kopiert.
+* **ref (string)**: Dieses Attribut definiert einen Verweis auf ein `<attribute>` -Element, das von mehreren Schemas gemeinsam verwendet wird (Definition-Factoring). Die Definition wird nicht in das aktuelle Schema kopiert.
 * **erforderlich (boolesch)**: Wenn dieses Attribut aktiviert ist (@required=&quot;true&quot;), wird das Feld in der Benutzeroberfläche hervorgehoben. Die Beschriftung des Felds wird in Formularen rot dargestellt.
-* **sql (boolesch)**: Wenn dieses Attribut aktiviert ist (@sql=&quot;true&quot;), wird die Speicherung des SQL-Attributs erzwungen, selbst wenn das Element, das das Attribut enthält, die Eigenschaft xml=&quot;true&quot; aufweist.
+* **sql (boolean)**: Wenn dieses Attribut aktiviert ist (@sql=&quot;true&quot;), erzwingt es die Speicherung des SQL-Attributs, selbst wenn das Element, das das Attribut enthält, die Eigenschaft xml=&quot;true&quot; aufweist.
 * **sqlDefault (string)**: Mit diesem Attribut können Sie den Standardwert definieren, der für die Aktualisierung der Datenbank berücksichtigt wird, wenn das Attribut @notNull aktiviert ist. Wenn dieses Attribut nach der Attributerstellung hinzugefügt wird, ändert sich auch das Schemaverhalten für die neuen Datensätze nicht. Um das Schema zu ändern und den Wert für neue Datensätze zu aktualisieren, müssen Sie das Attribut löschen und erneut erstellen.
-* **sqlname (string)**: des Felds während der Tabellenerstellung. Wenn @sqlname nicht angegeben ist, wird standardmäßig der Wert des Attributs &quot;@name&quot; verwendet. Wenn das Schema in die Datenbank geschrieben wird, werden je nach Feldtyp automatisch Präfixe hinzugefügt.
-* **template (string)**: Dieses Attribut definiert einen Verweis auf eine `<attribute>` -Element, das von mehreren Schemas gemeinsam genutzt wird. Die Definition wird automatisch in das aktuelle Schema kopiert.
-* **translateDefault (string)**: Wenn ein &quot;@default&quot;-Attribut gefunden wird, können Sie mit &quot;@translationDefault&quot;einen Ausdruck neu definieren, der mit dem in &quot;@default&quot;definierten Ausdruck übereinstimmt, der vom Übersetzungs-Tool erfasst werden soll (interne Verwendung).
-* **translateExpr (Zeichenfolge)**: Wenn ein &quot;@expr&quot;-Attribut vorhanden ist, können Sie mit dem Attribut &quot;@translationExpr&quot; einen Ausdruck neu definieren, der mit dem in @expr definierten Ausdruck übereinstimmt, der vom Übersetzungstool (interne Verwendung) erfasst werden soll.
+* **sqlname (string)**: des Felds bei der Tabellenerstellung. Wenn @sqlname nicht angegeben ist, wird standardmäßig der Wert des Attributs &quot;@name&quot; verwendet. Wenn das Schema in die Datenbank geschrieben wird, werden je nach Feldtyp automatisch Präfixe hinzugefügt.
+* **template (string)**: Dieses Attribut definiert einen Verweis auf ein `<attribute>` -Element, das von mehreren Schemas gemeinsam genutzt wird. Die Definition wird automatisch in das aktuelle Schema kopiert.
+* **translatedDefault (string)**: Wenn ein &quot;@default&quot;-Attribut gefunden wird, können Sie mit &quot;@translationDefault&quot;einen Ausdruck neu definieren, der mit dem in &quot;@default&quot;definierten Ausdruck übereinstimmt, der vom Übersetzungs-Tool erfasst werden soll (interne Verwendung).
+* **translatedExpr (string)**: Wenn ein &quot;@expr&quot;-Attribut vorhanden ist, können Sie mit dem &quot;@translationExpr&quot;-Attribut einen Ausdruck neu definieren, der mit dem in @expr definierten Ausdruck übereinstimmt, der vom Übersetzungs-Tool erfasst werden soll (interne Verwendung).
 * **type (MNTOKEN)**: Feldtyp.
 
   Feldtypen sind generisch. Je nach installiertem Datenbanktyp ändert Adobe Campaign den definierten Typ in einen Wert, der für die bei der Strukturaktualisierung installierte Datenbank spezifisch ist.
@@ -162,8 +162,8 @@ Die Sequenz, in der `<attribute>` -Elemente in einer `<srcschema>` hat keine Aus
 
   Wenn das Feld vom Typ STRING ist und der Name des Felds nicht durch das Attribut &quot;@sqlname&quot; angegeben wird, wird dem Namen des Felds in der Datenbank automatisch ein &quot;s&quot; vorangestellt. Dieser Betriebsmodus ähnelt den Feldern vom Typ INTEGER (i), DOUBLE (d) und DATES (ts).
 
-* **userEnum (Zeichenfolge)**: empfängt den internen Namen einer &quot;open&quot;-Auflistung. Die Werte der Auflistung können vom Benutzer in der Benutzeroberfläche definiert werden.
-* **visibleIf (Zeichenfolge)**: definiert eine Bedingung in Form eines XTK-Ausdrucks, um das Attribut ein- oder auszublenden.
+* **userEnum (string)**: empfängt den internen Namen einer &quot;open&quot;-Auflistung. Die Werte der Auflistung können vom Benutzer in der Benutzeroberfläche definiert werden.
+* **visibleIf (string)**: definiert eine Bedingung in Form eines XTK-Ausdrucks, um das Attribut anzuzeigen oder auszublenden.
 
   >[!IMPORTANT]
   >

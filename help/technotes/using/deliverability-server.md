@@ -7,7 +7,7 @@ hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
 source-git-commit: 19b40f0b827c4b5b7b6484fe4953aebe61d00d1d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '997'
 ht-degree: 100%
 
@@ -89,7 +89,7 @@ Wenn Sie **Adobe Campaign** nicht sehen können, wenden Sie sich an die [Adobe-K
 
 Um mit der Konfiguration Ihres Adobe Analytics-Connectors fortzufahren, greifen Sie auf die Adobe Developer Console zu und erstellen Sie Ihr OAuth-Server-zu-Server-Projekt.
 
-Eine detaillierte Dokumentation dazu finden Sie auf [dieser Seite](../../integrations/using/oauth-technical-account.md#oauth-service).
+Auf [dieser Seite](../../integrations/using/oauth-technical-account.md#oauth-service) finden Sie die ausführliche Dokumentation.
 
 ### Schritt 2: Hinzufügen der Projektanmeldedaten in Adobe Campaign {#add-credentials-campaign}
 

@@ -30,7 +30,7 @@ Sie sollten über eine Test-/Entwicklungsumgebung verfügen, um Migrationstests 
 1. Erstellen Sie eine Sicherungskopie der Datenbank der Entwicklungsumgebung.
 1. Beenden Sie alle Adobe Campaign-Prozesse auf der Entwicklungsinstanz.
 1. Erstellen Sie eine Sicherungskopie der Datenbank der Produktionsumgebung und stellen Sie sie als Entwicklungsumgebung wieder her.
-1. Führen Sie vor dem Starten der Adobe Campaign-Dienste den **freezeInstance.js** Warnhinweisskript, mit dem Sie die Datenbank aller Objekte löschen können, die beim Starten der Sicherung ausgeführt wurden.
+1. Führen Sie vor dem Starten der Adobe Campaign-Dienste das Warnskript **freezeInstance.js** aus, mit dem Sie die Datenbank aller Objekte löschen können, die zum Zeitpunkt des Starts der Sicherung ausgeführt wurden.
 
    ```
    nlserver javascript nms:freezeInstance.js -instance:<instance> -arg:<run|dry>
@@ -38,7 +38,7 @@ Sie sollten über eine Test-/Entwicklungsumgebung verfügen, um Migrationstests 
 
    >[!NOTE]
    >
-   >Der Befehl wird standardmäßig in **trocken** und listet alle Anforderungen auf, die von diesem Befehl ausgeführt wurden, ohne sie zu starten. Verwenden Sie zum Ausführen von Warnungsanfragen **run** im -Befehl.
+   >Der Befehl wird standardmäßig im Modus **trocken** gestartet und listet alle Anforderungen auf, die von diesem Befehl ausgeführt wurden, ohne sie zu starten. Verwenden Sie zum Ausführen von Warnanfragen **run** im -Befehl.
 
 1. Stellen Sie sicher, dass Ihre Sicherungen korrekt sind, indem Sie versuchen, sie wiederherzustellen. Stellen Sie sicher, dass Sie Zugriff auf Ihre Datenbank, Ihre Tabellen, Ihre Daten usw. haben.
 1. Testen Sie das Migrationsverfahren in der Entwicklungsumgebung.
@@ -53,7 +53,7 @@ Sie sollten über eine Test-/Entwicklungsumgebung verfügen, um Migrationstests 
 
 Mithilfe verschiedener Optionen können Sie die Auswirkungen einer Migration messen und potenzielle Probleme identifizieren. Diese Optionen werden ausgeführt:
 
-* im **config** command:
+* im Befehl **config** :
 
   ```
   nlserver.exe config <option> -instance:<instance-name>
@@ -67,12 +67,12 @@ Mithilfe verschiedener Optionen können Sie die Auswirkungen einer Migration mes
 
 >[!NOTE]
 >
->* Sie müssen die **-instance:`<instanceame>`** -Option. Es wird empfohlen, die **-allinstances** -Option.
->* Der Adobe Campaign-Aktualisierungsbefehl (**postupgrade**) ermöglicht die Synchronisierung von Ressourcen und die Aktualisierung von Schemata und der Datenbank. Dieser Vorgang kann nur einmal auf dem Anwendungsserver ausgeführt werden. Nach der Synchronisierung der Ressourcen wird die **postupgrade** -Befehl können Sie erkennen, ob die Synchronisation Fehler oder Warnungen erzeugt.
+>* Sie müssen die Option **-instance:`<instanceame>`** verwenden. Es wird nicht empfohlen, die Option **-allinstances** zu verwenden.
+>* Mit dem Adobe Campaign-Aktualisierungsbefehl (**postupgrade**) können Sie Ressourcen synchronisieren und Schemas und die Datenbank aktualisieren. Dieser Vorgang kann nur einmal auf dem Anwendungsserver ausgeführt werden. Nach dem Synchronisieren von Ressourcen können Sie mit dem Befehl **postupgrade** erkennen, ob die Synchronisierung Fehler oder Warnungen erzeugt.
 
 ### Nicht standardmäßige oder fehlende Objekte
 
-* Die **-showCustomEntities** zeigt die Liste aller Objekte an, die nicht dem Standard entsprechen:
+* Die Option **-showCustomEntities** zeigt die Liste aller nicht standardmäßigen Objekte an:
 
   ```
   nlserver.exe config -showCustomEntities -instance:<instance-name>
@@ -84,7 +84,7 @@ Mithilfe verschiedener Optionen können Sie die Auswirkungen einer Migration mes
   xtk_migration:opsecurity2 xtk:entity
   ```
 
-* Die **-showDeletedEntities** zeigt die Liste aller Standardobjekte an, die in der Datenbank oder im Dateisystem fehlen. Für jedes fehlende Objekt wird der Pfad angegeben.
+* Die Option **-showDeletedEntities** zeigt die Liste aller Standardobjekte an, die in der Datenbank oder im Dateisystem fehlen. Für jedes fehlende Objekt wird der Pfad angegeben.
 
   ```
   nlserver.exe config -showDeletedEntities -instance:<instance-name>
@@ -144,7 +144,7 @@ Die folgenden Ausdrücke werden gesucht (Groß-/Kleinschreibung beachten):
    <td> new SoapMethodCall(<br /> </td> 
    <td> PU-0004<br /> </td> 
    <td> Warnung<br /> </td> 
-   <td> Diese Funktion wird nur unterstützt, wenn sie im JavaScript-Code verwendet wird, der aus einer Sicherheitszone ausgeführt wird, die sich in <strong>sessionTokenOnly</strong> -Modus.<br /> </td> 
+   <td> Diese Funktion wird nur unterstützt, wenn sie im JavaScript-Code verwendet wird, der aus einer Sicherheitszone ausgeführt wird, die sich im <strong>sessionTokenOnly</strong> -Modus befindet.<br /> </td> 
   </tr> 
   <tr> 
    <td> sql=<br /> </td> 
@@ -157,14 +157,14 @@ Die folgenden Ausdrücke werden gesucht (Groß-/Kleinschreibung beachten):
    <td> PU-0007<br /> </td> 
    <td> Fehler<br /> </td> 
    <td> Diese Art der Bereitstellung wird nicht mehr unterstützt. Der Bereitstellungstyp des CRM-Connectors für Office 365 und On-Premise Microsoft wurde eingestellt. 
-   </br>Wenn Sie einen dieser veralteten Bereitstellungstypen in einem externen Konto verwenden, sollte dieses externe Konto gelöscht werden. Anschließend sollten Sie die <b>postupgrade</b> Befehl. 
+   </br>Wenn Sie einen dieser veralteten Bereitstellungstypen in einem externen Konto verwenden, sollte dieses externe Konto gelöscht und Sie sollten dann den Befehl <b>postupgrade</b> ausführen. 
    </br>Informationen zum Ändern der Web-API-Bereitstellung finden Sie unter <a href="../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft" target="_blank">Webanwendungen</a>.<br /> </td>
   </tr> 
   <tr> 
    <td> CRM v1(mscrmWorkflow/sfdcWorkflow)<br /> </td> 
    <td> PU-0008<br /> </td> 
    <td> Fehler<br /> </td> 
-   <td> Die Aktionsaktivitäten Microsoft CRM, Salesforce und Oracle CRM On Demand sind nicht mehr verfügbar. Um die Datensynchronisation zwischen Adobe Campaign und einem CRM-System zu konfigurieren, müssen Sie die <a href="../../workflow/using/crm-connector.md" target="_blank">CRM-Connector</a> Zielgruppenbestimmung.<br /> </td>
+   <td> Die Aktionsaktivitäten Microsoft CRM, Salesforce und Oracle CRM On Demand sind nicht mehr verfügbar. Um die Datensynchronisation zwischen Adobe Campaign und einem CRM-System zu konfigurieren, müssen Sie die Targeting-Aktivität <a href="../../workflow/using/crm-connector.md" target="_blank">CRM-Connector</a> verwenden.<br /> </td>
   </tr> 
  </tbody> 
 </table>

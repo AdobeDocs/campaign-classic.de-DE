@@ -9,7 +9,7 @@ content-type: reference
 topic-tags: administration-basics
 exl-id: d3369b63-a29b-43b7-b2ad-d36d4f46c82e
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2544'
 ht-degree: 100%
 
@@ -111,7 +111,7 @@ Der Assistent weist für alle drei Packagetypen die gleichen Schritte auf:
 
    >[!CAUTION]
    >
-   >Beim Export eines Ordners vom Typ **[!UICONTROL Angebotskategorie]**, **[!UICONTROL Angebotsumgebung]**, **[!UICONTROL Programm]** oder **[!UICONTROL Plan]** darf unter keinen Umständen die Entität **xtk:folder** gewählt werden, da dies einen Datenverlust verursachen kann. Wählen Sie stattdessen die jeweils dem Ordner entsprechende Entität aus: **nms:offerCategory** für Angebotskategorien, **nms:offerEnv** für Angebotsumgebungen, **nms:program** für Programme und **nms:plan** für Pläne.
+   >Beim Export eines Ordners vom Typ **[!UICONTROL Angebotskategorie]**, **[!UICONTROL Angebotsumgebung]**, **[!UICONTROL Programm]** oder **[!UICONTROL Plan]** darf unter keinen Umständen die Entität **xtk:folder** ausgewählt werden, da dies einen Datenverlust verursachen kann. Wählen Sie stattdessen die jeweils dem Ordner entsprechende Entität aus: **nms:offerCategory** für Angebotskategorien, **nms:offerEnv** für Angebotsumgebungen, **nms:program** für Programme und **nms:plan** für Pläne.
 
    Die Listenverwaltung ermöglicht das Hinzufügen oder Löschen der Konfiguration der zu exportierenden Entitäten. Klicken Sie auf **[!UICONTROL Hinzufügen]**, um eine neue Entität auszuwählen.
 
@@ -143,7 +143,7 @@ Der Assistent weist für alle drei Packagetypen die gleichen Schritte auf:
 
    ![](assets/ncs_datapackage_export7.png)
 
-### Abhängigkeiten verwalten {#managing-dependencies}
+### Verwalten von Abhängigkeiten {#managing-dependencies}
 
 Der Exportmechanismus ermöglicht es Adobe Campaign, die Relationen zwischen den exportierten Elementen zu verfolgen.
 
@@ -253,7 +253,7 @@ Anschließend können Sie Entitäten zur Package-Definition hinzufügen und dies
 
 ### Entitäten zu einer Package-Definition hinzufügen {#adding-entities-to-a-package-definition}
 
-Klicken Sie im Tab **[!UICONTROL Inhalt]** auf die Schaltfläche **[!UICONTROL Hinzufügen]**, um die Entitäten auszuwählen, die mit dem Package exportiert werden sollen. Best Practices bei der Auswahl von Entitäten werden in [diesem Abschnitt](#exporting-a-set-of-objects-in-a-package) vorgestellt.
+Klicken Sie auf der Registerkarte **[!UICONTROL Inhalt]** auf die Schaltfläche **[!UICONTROL Hinzufügen]**, um die Entitäten auszuwählen, die mit dem Package exportiert werden sollen. Best Practices bei der Auswahl von Entitäten werden in [diesem Abschnitt](#exporting-a-set-of-objects-in-a-package) vorgestellt.
 
 ![](assets/packagedefinition_addentities.png)
 
@@ -289,7 +289,7 @@ Die Package-Erzeugung kann über den Tab **[!UICONTROL Inhalt]** der Package-Def
   >
   >Wenn die Instanz, in der das Package importiert wird, identische Entitäten wie das Package enthält (z. B. mit derselben externen ID), werden die zugehörigen Attribute nicht aktualisiert. Dies kann passieren, wenn die Attribute der vorherigen Instanz Standardwerte aufweisen, da sie nicht im Package enthalten sind.
   >
-  >In diesem Fall würde durch Auswählen der Option **[!UICONTROL Standardwerte einschließen]** die Versionszusammenführung verhindert, da alle Attribute der vorherigen Instanz mit dem Package exportiert würden.
+  >In einem solchen Fall wird durch Auswählen der Option **[!UICONTROL Standardwerte einschließen]** die Versionszusammenführung verhindert, da alle Attribute der vorherigen Instanz mit dem Package exportiert werden.
 
 ### Packages über eine Package-Definition exportieren {#exporting-packages-from-a-package-definition}
 
@@ -331,7 +331,7 @@ Weitere Informationen zu nativen Packages finden Sie auf [dieser Seite](../../in
 
 ## Best Practices für Daten-Packages {#data-package-best-practices}
 
-In diesem Abschnitt wird beschrieben, wie Sie Datenpackages während der ganzen Projektlaufzeit einheitlich organisieren können.
+In diesem Abschnitt wird beschrieben, wie Sie Daten-Packages während der gesamten Projektlaufzeit einheitlich organisieren können.
 
 Packages können verschiedene Arten von Konfigurationen und Elementen enthalten, die gefiltert sein können. Wenn einzelne Elemente fehlen oder Elemente/Packages nicht in der richtigen Reihenfolge importiert werden, kann die Plattformkonfiguration beschädigt werden.
 
@@ -445,7 +445,7 @@ Das Aktualisierungs-Package sollte nur eine spezifische Entität enthalten, um e
 
 #### Package-Dokumentation {#package-documentation}
 
-Wenn Sie ein Package aktualisieren, sollten Sie stets einen Kommentar in das Beschreibungsfeld eingeben, um sämtliche Änderungen und Gründe (z. B. &quot;Hinzufügen eines neuen Schemas&quot; oder &quot;Beheben eines Fehlers&quot;) genau zu dokumentieren.
+Wenn Sie ein Package aktualisieren, sollten Sie stets einen Kommentar in das Beschreibungsfeld eingeben, um sämtliche Änderungen und Gründe (z. B. „Hinzufügen eines neuen Schemas“ oder „Beheben eines Fehlers“) genau zu dokumentieren.
 
 ![](assets/ncs_datapackage_best-practices-2.png)
 

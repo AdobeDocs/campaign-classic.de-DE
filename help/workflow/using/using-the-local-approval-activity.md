@@ -5,7 +5,7 @@ description: Erfahren Sie, wie Sie die lokale Validierungsaktivität verwenden
 feature: Workflows
 exl-id: cc29eec9-9c97-4d1b-9567-2581154d7b3f
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1441'
 ht-degree: 100%
 
@@ -146,7 +146,7 @@ Folgende Angaben sind erforderlich:
    Wenn die resultierende Population nicht begrenzt werden soll, ist die Option **[!UICONTROL Explizit]** anzukreuzen und im Feld **[!UICONTROL Datenverteilung]** die zuvor erstellte Verteilungsvorlage anzugeben.
 
 1. Wählen Sie im Bereich **[!UICONTROL Validierungsverwaltung]** die Versandvorlage aus und geben Sie den Betreff für die Benachrichtigungs-E-Mail an. Hier haben wir die Standardvorlage ausgewählt: **[!UICONTROL Benachrichtigung bezüglich lokaler Validierungen]**.
-1. Definieren Sie außerdem den **[!UICONTROL Validierungstyp]**. Im vorliegenden Beispiel wurde die Standardoption beibehalten, d. h. die Validierung muss spätestens 3 Tage nach dem Unterbreitungsdatum erfolgen, andernfalls werden die nicht validierten Empfänger beim Versand nicht berücksichtigt.
+1. Definieren Sie außerdem den **[!UICONTROL Validierungstyp]**. Im vorliegenden Beispiel wurde die Standardoption beibehalten, d. h. die Validierung muss spätestens 3 Tage nach dem Unterbreitungsdatum erfolgen, andernfalls werden die nicht genehmigten Empfängerinnen und Empfänger beim Versand nicht berücksichtigt.
 
 Die von der Aktivität **[!UICONTROL Lokale Validierung]** an lokale Verantwortliche gesendete Benachrichtigung stellt sich wie folgt dar:
 

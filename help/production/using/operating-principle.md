@@ -11,7 +11,7 @@ exl-id: 1c032ef9-af11-4947-90c6-76cb9434ae85
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
 source-wordcount: '506'
-ht-degree: 12%
+ht-degree: 13%
 
 ---
 
@@ -25,17 +25,17 @@ Es gibt viele Adobe Campaign-Module. Einige werden kontinuierlich ausgeführt, w
 
 Es gibt drei Typen von Adobe Campaign-Modulen:
 
-* Module mit Mehrfach-Instanzen: Für alle Instanzen wird ein einzelner Prozess ausgeführt. Dies gilt für die folgenden Module: **Web**, **syslogd**, **trackinglogd** und **watchdog** (Tätigkeiten aus **config-default.xml** -Datei).
-* Module mit Einfach-Instanz: Für die einzelnen Instanzen wird jeweils ein Prozess ausgeführt. Dies gilt für die folgenden Module: **mta**, **wfserver**, **inMail**, **sms** und **stat** (Tätigkeiten aus **config-`<instance>`.XML** -Datei).
-* Dienstprogrammmodule: Hierbei handelt es sich um Module, die gelegentlich ausgeführt werden, um gelegentliche oder wiederkehrende Vorgänge durchzuführen (**cleanup**, **config**, das Herunterladen von Trackinglogs usw.).
+* Module mit Mehrfach-Instanzen: Für alle Instanzen wird ein einzelner Prozess ausgeführt. Dies gilt für die folgenden Module: **web**, **syslogd**, **trackinglogd** und **watchdog** (Aktivitäten aus der Datei **config-default.xml**).
+* Module mit Einfach-Instanz: Für die einzelnen Instanzen wird jeweils ein Prozess ausgeführt. Dies gilt für die folgenden Module: **mta**, **wfserver**, **inMail**, **sms** und **stat** (Aktivitäten aus der Datei **config-`<instance>`.xml**).
+* Dienstprogrammmodule: Hierbei handelt es sich um Module, die gelegentlich ausgeführt werden, um gelegentliche oder wiederkehrende Vorgänge auszuführen (**cleanup**, **config**, Herunterladen von Trackinglogs usw.).
 
-Die Modulverwaltung erfolgt mithilfe des Befehlszeilen-Tools **nlserver** im **bin** -Ordner des Installationsordners.
+Die Modulverwaltung erfolgt mithilfe des Befehlszeilenwerkzeugs **nlserver**, das im Ordner **bin** des Installationsordners installiert ist.
 
-Die allgemeine Syntax der **nlserver** -Tool lautet wie folgt:
+Die allgemeine Syntax des Tools **nlserver** lautet wie folgt:
 
 **nlserver `<command>``<command arguments>`**
 
-Die Liste der verfügbaren Module finden Sie unter **nlserver** Befehl.
+Verwenden Sie für die Liste der verfügbaren Module den Befehl **nlserver** .
 
 Die verfügbaren Module werden in der folgenden Tabelle beschrieben:
 
@@ -50,7 +50,7 @@ Die verfügbaren Module werden in der folgenden Tabelle beschrieben:
 | importieren | Import in Befehlszeile: sendet an die Befehlszeile ein Importmodell, das in der Adobe Campaign-Clientkonsole erstellt wurde. |
 | inMail | Analyse eingehender Nachrichten |
 | installsetup | Verfügbarkeit der Installationsdatei des Kunden |
-| JavaScript | Ausführen von JavaScript-Skripten mit Zugriff auf SOAP-APIs. |
+| JavaScript | Ausführen von JavaScript-Skripten mit Zugriff auf SOAP APIs. |
 | job | Befehlszeilenverarbeitung |
 | merge | Formular-Zusammenführung |
 | midSourcing | Abruf der Versandinformationen im Mid-Sourcing-Modus |

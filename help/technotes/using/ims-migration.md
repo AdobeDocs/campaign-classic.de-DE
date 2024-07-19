@@ -5,7 +5,7 @@ feature: Technote
 role: Admin
 exl-id: 1a409daf-57be-43c9-a3d9-b8ab54c88068
 source-git-commit: af811b2df325efcaee38a967252b6952e67680d1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1779'
 ht-degree: 100%
 
@@ -456,7 +456,7 @@ Beachten Sie, dass die Benutzenden des technischen Kontos so lange NICHT in Adob
 
 1. Um die für die neuen Benutzenden des technischen Kontos erforderlichen Änderungen anzuwenden, suchen Sie diese in der Campaign Client Console nach E-Mail-Adresse. Diese E-Mail-Adresse wurde während der obigen Schritte zur Projekterstellung und -authentifizierung erstellt.
 
-   Klicken Sie auf die Überschrift **OAuth-Server-zu-Server** im Abschnitt **Anmeldeinformationen** des Projekts, um diese E-Mail-Adresse zu finden.
+   Klicken Sie auf die Überschrift **OAuth-Server-zu-Server** im Abschnitt **Anmeldedaten** des Projekts, um diese E-Mail-Adresse zu finden.
 
    ![](assets/do-not-translate/ims-updates-07.png)
 

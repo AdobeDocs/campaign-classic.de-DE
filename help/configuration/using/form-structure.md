@@ -19,7 +19,7 @@ ht-degree: 89%
 
 Die Beschreibung eines Formulars ist ein strukturiertes XML-Dokument, das die Grammatik des Formularschemas anwendet: **xtk:form**.
 
-Das XML-Dokument des Formulars muss die `<form>` Stammelement mit dem **name** und **namespace** -Attribute zum Ausfüllen des Formularnamens und Namespace.
+Das XML-Dokument des Eingabeformulars muss das Stammelement `<form>` mit den Attributen **name** und **namespace** enthalten, um den Formularnamen und den Namespace auszufüllen.
 
 ```xml
 <form name="form_name" namespace="name_space">
@@ -63,7 +63,7 @@ Das Eingabefeld passt sich automatisch dem gewählten Datentyp an und verwendet 
 
 >[!NOTE]
 >
->Sie können die im Datenschema definierte Bezeichnung durch Hinzufügen der **label** -Attribut `<input>` element:\
+>Sie können die im Datenschema definierte Beschriftung überschreiben, indem Sie das Attribut **label** zum Element `<input>` hinzufügen:\
 >`<input label="Email address" xpath="@name" />`
 
 Standardmäßig wird jedes Feld, je nach Datentyp, einzeilig über den gesamten verfügbaren Platz angezeigt.
@@ -138,7 +138,7 @@ Mithilfe des `<static>`-Tags vom Typ &quot;Hilfe&quot; wurde ein Hilfetext hinzu
 
 Mit Containern können Sie einen Satz von Steuerelementen gruppieren. Sie werden durch das Element **`<container>`** dargestellt. Sie wurden oben verwendet, um Eingabefelder über mehrere Spalten zu formatieren.
 
-Mit dem **xpath**-Attribut auf einem `<container>` können Sie den Verweis auf untergeordnete Eingabefelder vereinfachen. Die Referenzierung von Steuerelementen ist dann relativ zum übergeordneten Element `<container>` -Element.
+Mit dem **xpath**-Attribut auf einem `<container>` können Sie den Verweis auf untergeordnete Eingabefelder vereinfachen. Die Referenzierung von Steuerelementen ist dann relativ zum übergeordneten Element `<container>` .
 
 Beispiel eines Containers ohne &quot;xpath&quot;:
 
@@ -187,7 +187,7 @@ Der Haupt-Container wird durch das Attribut **type=&quot;Notebook&quot;** defini
 
 >[!NOTE]
 >
->A **style=&quot;down|up&quot;**(standardmäßig)**&quot;** erzwingt die vertikale Positionierung von Registerkartenbeschriftungen unter oder über dem Steuerelement. Diese Funktion ist optional.
+>Die Funktion **style=&quot;down|up**(standardmäßig)**&quot;** erzwingt die vertikale Positionierung von Registerkartenbeschriftungen unter oder über dem Steuerelement. Diese Funktion ist optional.
 >`<container style="down" type="notebook">  … </container>`
 
 #### Symbolliste {#icon-list}
@@ -273,7 +273,7 @@ Die Auswahl des Ziels ist über das Bearbeitungsfeld verfügbar. Die Eingabe wir
 
 Eine Dropdown-Liste wird verwendet, um ein Zielelement aus der Liste der bereits erstellten Einträge auszuwählen.
 
-Die **[!UICONTROL Link ändern]** (Ordner-)Symbol startet ein Auswahlformular mit der Liste der Zielelemente und einem Filterbereich:
+Über das Symbol **[!UICONTROL Link ändern]** (Ordner) wird ein Auswahlformular mit der Liste der Zielelemente und einem Filterbereich gestartet:
 
 ![](assets/d_ncs_integration_form_exemple10.png)
 
@@ -464,7 +464,7 @@ Das Einfügen und Bearbeiten der Daten in einer Liste kann in einem separaten Be
 </input>
 ```
 
-Das Bearbeitungsformular wird aus dem `<form>` Element unter Listendefinition. Seine Struktur ist identisch mit der Struktur eines Eingabeformulars. Die Schaltfläche **[!UICONTROL Detail]** wird automatisch hinzugefügt, wenn das Attribut **zoom=&quot;true&quot;** im **`<input>`**-Tag der Liste ausgefüllt ist. Mit diesem Attribut können Sie das Bearbeitungsformular der ausgewählten Zeile starten.
+Das Bearbeitungsformular wird aus dem Element `<form>` unter der Listendefinition ausgefüllt. Seine Struktur ist identisch mit der Struktur eines Eingabeformulars. Die Schaltfläche **[!UICONTROL Detail]** wird automatisch hinzugefügt, wenn das Attribut **zoom=&quot;true&quot;** im **`<input>`**-Tag der Liste ausgefüllt ist. Mit diesem Attribut können Sie das Bearbeitungsformular der ausgewählten Zeile starten.
 
 >[!NOTE]
 >
@@ -546,7 +546,7 @@ Die zu bearbeitenden Eingabefelder sind in einem **`<container>`** gruppiert, da
 
 ## Ausdrucksfeld {#expression-field}
 
-Ein Ausdrucksfeld aktualisiert ein Feld dynamisch von einem Ausdruck; das **`<input>`** -Tag mit einer **xpath** -Attribut, um den Pfad des zu aktualisierenden Felds anzugeben, und ein **expo** -Attribut, das den Aktualisierungsausdruck enthält.
+Ein Ausdrucksfeld aktualisiert ein Feld dynamisch von einem Ausdruck. Das Tag **`<input>`** wird mit dem Attribut **xpath** verwendet, um den Pfad des zu aktualisierenden Felds einzugeben, und das Attribut **expo** , das den Aktualisierungsausdruck enthält.
 
 ```xml
 <!-- Example: updating the boolean1 field from the value contained in the field with path /tmp/@flag -->
@@ -585,7 +585,7 @@ Der Kontext des Formulars kann beim Initialisieren und Schließen des Formulars 
 
 >[!NOTE]
 >
->Die `<enter>` und `<leave>` -Tags können auf der `<container>` von Seiten (&quot;Notebook&quot;- und &quot;Iconbox&quot;-Typen).
+>Die Tags `<enter>` und `<leave>` können auf den `<container>` der Seiten (&quot;notebook&quot;- und &quot;iconbox&quot;-Typen) verwendet werden.
 
 ### Sprache von Ausdrücken {#expression-language-}
 

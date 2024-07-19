@@ -18,13 +18,13 @@ ht-degree: 9%
 
 
 
-Wenn Sie die Option **[!UICONTROL Konsolenaktualisierung nicht anfordern]** und Sie die Aktualisierungsanforderung erneut aktivieren möchten, gehen Sie wie folgt vor:
+Wenn Sie die Option **[!UICONTROL Keine Konsolenaktualisierung anfordern]** ausgewählt haben und die Aktualisierungsanforderung erneut aktivieren möchten, gehen Sie wie folgt vor:
 
-1. Öffnen Sie den Editor der Registrierungsdatenbank mithilfe der **regedit** Befehl unter Windows **[!UICONTROL Start > Ausführen]** Menü.
+1. Öffnen Sie den Editor der Registrierungsdatenbank mithilfe des Befehls **regedit** im Menü Windows **[!UICONTROL Start > Ausführen]** .
 
    ![](assets/ncs_console_update_1.png)
 
-1. Zeigen Sie im Baum die Optionen der **[!UICONTROL HKEY_CURRENT_USERSoftwareneolaneNL_6nlclient]** Knoten.
-1. Löschen Sie die **[!UICONTROL confAdvisedUpgrade]** den Registrierungseditor eintragen und schließen.
+1. Zeigen Sie im Baum die Optionen des Knotens **[!UICONTROL HKEY_CURRENT_USERSoftwareneolaneNL_6nlclient]** an.
+1. Löschen Sie den Eintrag **[!UICONTROL confAdvisedUpgrade]** und schließen Sie den Registrierungs-Editor.
 
    ![](assets/ncs_console_update_2.png)

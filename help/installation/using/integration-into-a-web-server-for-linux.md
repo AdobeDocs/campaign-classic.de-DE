@@ -24,7 +24,7 @@ Sie können diesen integrierten Tomcat-Server verwenden, um HTTP-Anforderungen z
 
 In diesem Fall:
 
-* Der standardmäßige Listening-Anschluss ist 8080. Informationen zu ihrer Änderung finden Sie unter [diesem Abschnitt](configure-tomcat.md).
+* Der standardmäßige Listening-Anschluss ist 8080. Informationen zum Ändern finden Sie in [diesem Abschnitt](configure-tomcat.md).
 * Die Clientkonsole Konsolen stellt dann eine Verbindung über eine URL her, z. B.:
 
   ```
@@ -53,13 +53,13 @@ Gehen Sie wie folgt vor:
    a2dismod auth_basic authn_file authz_default authz_user autoindex cgi dir env negotiation userdir
    ```
 
-   Stellen Sie sicher, dass **alias**, **authz_host** und **mime** -Module sind weiterhin aktiviert. Verwenden Sie dazu den folgenden Befehl:
+   Stellen Sie sicher, dass die Module **alias**, **authz_host** und **mime** weiterhin aktiviert sind. Verwenden Sie dazu den folgenden Befehl:
 
    ```
    a2enmod  alias authz_host mime
    ```
 
-1. Datei erstellen **nlsrv.load** in **/etc/apache2/mods-available** und fügen Sie den folgenden Inhalt ein:
+1. Erstellen Sie die Datei **nlsrv.load** in **/etc/apache2/mods-available** und fügen Sie den folgenden Inhalt ein:
 
    In Debian 8:
 
@@ -67,7 +67,7 @@ Gehen Sie wie folgt vor:
    LoadModule requesthandler24_module /usr/local/[INSTALL]/nl6/lib/libnlsrvmod.so
    ```
 
-1. Datei erstellen **nlsrv.conf** in **/etc/apache2/mods-available** mit dem folgenden Befehl:
+1. Erstellen Sie die Datei **nlsrv.conf** in **/etc/apache2/mods-available** mit dem folgenden Befehl:
 
    ```
    ln -s /usr/local/[INSTALL]/nl6/conf/apache_neolane.conf /etc/apache2/mods-available/nlsrv.conf
@@ -79,13 +79,13 @@ Gehen Sie wie folgt vor:
     a2enmod nlsrv
    ```
 
-   Wenn Sie die **mod_rewrite** -Modul für Adobe Campaign-Seiten verwenden, müssen Sie die **nlsrv.load** und **nlsrv.conf** Dateien in **zz-nlsrv.load** und **zz-nlsrv.conf**. Um das Modul zu aktivieren, führen Sie den folgenden Befehl aus:
+   Wenn Sie das Modul **mod_rewrite** für Adobe Campaign-Seiten verwenden, müssen Sie die Dateien **nlsrv.load** und **nlsrv.conf** in **zz-nlsrv.load** und **zz-nlsrv.conf** umbenennen. Um das Modul zu aktivieren, führen Sie den folgenden Befehl aus:
 
    ```
    a2enmod zz-nlsrv
    ```
 
-1. Bearbeiten Sie die **/etc/apache2/envars** die folgenden Zeilen hinzufügen:
+1. Bearbeiten Sie die Datei **/etc/apache2/envars** und fügen Sie die folgenden Zeilen hinzu:
 
    ```
    # Added Neolane
@@ -114,7 +114,7 @@ Dieses Verfahren wird angewendet, wenn Sie Apache unter einem RPM-Paket (RHEL, C
 
 Gehen Sie wie folgt vor:
 
-1. Im `httpd.conf` -Datei, aktivieren Sie die folgenden Apache-Module:
+1. Aktivieren Sie in der Datei `httpd.conf` die folgenden Apache-Module:
 
    ```
    alias
@@ -153,9 +153,9 @@ Gehen Sie wie folgt vor:
    ForceLanguagePriority
    ```
 
-1. Erstellen Sie eine Adobe Campaign-spezifische Konfigurationsdatei im `/etc/httpd/conf.d/` Ordner. Beispiel `CampaignApache.conf`
+1. Erstellen Sie eine Adobe Campaign-spezifische Konfigurationsdatei im Ordner &quot;`/etc/httpd/conf.d/`&quot;. Beispiel: `CampaignApache.conf`
 
-1. Für **RHEL7** Fügen Sie der Datei die folgenden Anweisungen hinzu:
+1. Fügen Sie für **RHEL7** die folgenden Anweisungen in die Datei ein:
 
    ```
    LoadModule requesthandler24_module /usr/local/neolane/nl6/lib/libnlsrvmod.so
@@ -164,7 +164,7 @@ Gehen Sie wie folgt vor:
 
 1. Für **RHEL7**:
 
-   Fügen Sie die `/etc/systemd/system/httpd.service` -Datei mit folgendem Inhalt:
+   Fügen Sie die Datei `/etc/systemd/system/httpd.service` mit folgendem Inhalt hinzu:
 
    ```
    .include /usr/lib/systemd/system/httpd.service
@@ -245,4 +245,4 @@ Die folgenden Informationen werden angezeigt:
 Connection closed by foreign host.
 ```
 
-Sie können auch die URL anfordern `https://myserver.adobe.com/r/test` von einem Webbrowser aus.
+Sie können die URL `https://myserver.adobe.com/r/test` auch über einen Webbrowser anfordern.

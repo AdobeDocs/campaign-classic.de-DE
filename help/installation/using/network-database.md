@@ -20,7 +20,7 @@ ht-degree: 59%
 
 ## Netzwerkkonfiguration
 
-Bei der Bereitstellung einer On-Premise-Architektur muss unbedingt Folgendes überprüft werden: [Netzwerkkonfiguration](../../installation/using/network-configuration.md). Stellen Sie sicher, dass der Tomcat-Server NICHT direkt außerhalb des Servers zugänglich ist:
+Bei der Bereitstellung einer On-Premise-Architektur muss unbedingt die [Netzwerkkonfiguration](../../installation/using/network-configuration.md) überprüft werden. Stellen Sie sicher, dass der Tomcat-Server NICHT direkt außerhalb des Servers zugänglich ist:
 
 * Schließen Sie den Tomcat-Port (8080) auf externen IP-Adressen (muss auf localhost ausgeführt werden).
 * Ordnen Sie den Standard-HTTP-Port (80) nicht dem Tomcat-Port (8080) zu.

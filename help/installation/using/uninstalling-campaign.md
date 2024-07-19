@@ -44,4 +44,4 @@ rm -rf /user/local/neolane
 
 **Windows:**
 
-Siehe hierzu [page](../../migration/using/migrating-in-windows-for-adobe-campaign-7.md#deleting-and-cleansing-adobe-campaign-previous-version). Vergessen Sie nicht, den Installationsordner von Campaign zu entfernen.
+Weitere Informationen finden Sie auf dieser [Seite](../../migration/using/migrating-in-windows-for-adobe-campaign-7.md#deleting-and-cleansing-adobe-campaign-previous-version). Vergessen Sie nicht, den Installationsordner von Campaign zu entfernen.

@@ -7,7 +7,7 @@ role: User
 level: Beginner
 exl-id: 8ed11e96-9f23-4e2e-bae2-25c51cfb549a
 source-git-commit: f39dc6077a7ddc3fb9b53d4082c08e65e7683f10
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2337'
 ht-degree: 100%
 
@@ -63,7 +63,7 @@ _7. September 2023_
 
 ### Verbesserungen bei der Sicherheit  {#release-7-3-4-security}
 
-* Die Sicherheit in IMS-APIs wurde verbessert. Kundensensible Informationen (d. h. Zugriffstoken) wurden aus den URL-Parametern entfernt. Diese Anmeldeinformationen werden jetzt in der Post-Daten- oder Autorisierungs-Kopfzeile gesendet, um einen sichereren Kommunikationsprozess zu gewährleisten. (NEO-63045)
+* Die Sicherheit in IMS-APIs wurde verbessert. Kundensensible Informationen (d. h. Zugriffstoken) wurden aus den URL-Parametern entfernt. Diese Anmeldedaten werden jetzt in der Post-Daten- oder Autorisierungs-Kopfzeile gesendet, um einen sichereren Kommunikationsprozess zu gewährleisten. (NEO-63045)
 * Die Sicherheit von Web-Apps wurde verbessert, um DDoS-Angriffe zu verhindern. (NEO-50757)
 * Die Sicherheit wurde verbessert, um zu verhindern, dass personenbezogene Daten in den Web-Protokollfehlern offengelegt werden. (NEO-46827)
 * Die Sicherheit wurde optimiert, um zu verhindern, dass das Sicherheits-Token in die URL der Campaign-Startseite aufgenommen wird. (NEO-38519)

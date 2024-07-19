@@ -43,33 +43,33 @@ Die Verwendung einer benutzerdefinierten Empfängertabelle unterliegt folgenden 
 
   Wir empfehlen:
 
-   * Festlegen der **[!UICONTROL nms:BroadLogRcp]** und **[!UICONTROL nms:TrackingLogRcp]** Schemas zu den vordefinierten **[!UICONTROL nms:recipientSchema]**. Diese beiden Protokolltabellen sollten keiner zusätzlichen benutzerdefinierten Empfängertabelle zugeordnet werden.
+   * Zuweisung der Schemas **[!UICONTROL nms:BroadLogRcp]** und **[!UICONTROL nms:TrackingLogRcp]** zu den nativen Schemas **[!UICONTROL nms:Recipientschema]**. Diese beiden Protokolltabellen sollten keiner zusätzlichen benutzerdefinierten Empfängertabelle zugeordnet werden.
    * Definieren dedizierter benutzerdefinierter Broadlog- und Trackinglog-Schemata für jedes neue benutzerdefinierte Empfängerschema. Dies kann automatisch bei der Einrichtung des Zielgruppen-Mappings erfolgen, siehe [Zielgruppen-Mapping](../../configuration/using/target-mapping.md).
 
-* Sie können den Standard nicht verwenden **[!UICONTROL Dienste und Abonnements]** die in der Ware angeboten werden.
+* Sie können die im Produkt angebotenen standardmäßigen **[!UICONTROL Dienste und Abonnements]** nicht verwenden.
 
-  Dies bedeutet, dass die in [diesem Abschnitt](../../delivery/using/managing-subscriptions.md) nicht anwendbar ist.
+  Das bedeutet, dass der in [diesem Abschnitt](../../delivery/using/managing-subscriptions.md) beschriebene Gesamtvorgang nicht anwendbar ist.
 
-* Der Link mit der **[!UICONTROL Besucher]** -Tabelle funktioniert nicht.
+* Die Verknüpfung mit der Tabelle **[!UICONTROL visitor]** funktioniert nicht.
 
-  So verwenden Sie die **[!UICONTROL Social Marketing]** -Modul müssen Sie den Speicherschritt so konfigurieren, dass er auf die richtige Tabelle verweist.
+  Um das Modul **[!UICONTROL Social Marketing]** zu verwenden, müssen Sie daher den Speicherschritt so konfigurieren, dass er auf die richtige Tabelle verweist.
 
   Ebenso muss bei Verwendung von Verweisfunktionen die Standardvorlage für die Erstübermittlung von Nachrichten angepasst werden.
 
 * Es ist nicht möglich, Profile manuell in eine Liste einzufügen.
 
-  Daher wird das in [diesem Abschnitt](../../platform/using/creating-and-managing-lists.md) ist ohne zusätzliche Konfiguration nicht anwendbar.
+  Daher ist das in [diesem Abschnitt](../../platform/using/creating-and-managing-lists.md) beschriebene Verfahren ohne zusätzliche Konfiguration nicht anwendbar.
 
   >[!NOTE]
   >
-  >Sie können weiterhin Empfängerlisten mithilfe von Workflows erstellen. Weitere Informationen hierzu finden Sie unter [Profilliste mit einem Workflow erstellen](../../configuration/using/creating-a-profile-list-with-a-workflow.md).
+  >Sie können weiterhin Empfängerlisten mithilfe von Workflows erstellen. Weitere Informationen hierzu finden Sie unter [Erstellen einer Profilliste mit einem Workflow](../../configuration/using/creating-a-profile-list-with-a-workflow.md).
 
 Es wird außerdem empfohlen, die in den verschiedenen nativen Konfigurationen verwendeten Standardwerte zu überprüfen: Je nach den verwendeten Funktionen müssen verschiedene Anpassungen vorgenommen werden.
 
 Beispiel:
 
-* Bestimmte Standardberichte, insbesondere die von **Interaction** und **Mobile Apps** muss neu entwickelt werden. Siehe Abschnitt [Verwalten von Berichten](../../configuration/using/managing-reports.md) Abschnitt.
-* Die Standardkonfigurationen für bestimmte Workflow-Aktivitäten beziehen sich auf die standardmäßige Empfängertabelle (**[!UICONTROL nms:recipient]**): Diese Konfigurationen müssen geändert werden, wenn sie für eine externe Empfängertabelle verwendet werden. Siehe Abschnitt [Verwalten von Workflows](../../configuration/using/managing-workflows.md) Abschnitt.
-* Der Standard **[!UICONTROL Abmelde-Link]** Gestaltungsbaustein muss angepasst werden.
+* Bestimmte Standardberichte, insbesondere die von **Interaction** und den **Mobile Apps** angebotenen, müssen überarbeitet werden. Siehe Abschnitt [Verwalten von Berichten](../../configuration/using/managing-reports.md) .
+* Die Standardkonfigurationen für bestimmte Workflow-Aktivitäten beziehen sich auf die standardmäßige Empfängertabelle (**[!UICONTROL nms:recipient]**): Diese Konfigurationen müssen geändert werden, wenn sie für eine externe Empfängertabelle verwendet werden. Siehe Abschnitt [Verwalten von Workflows](../../configuration/using/managing-workflows.md) .
+* Der standardmäßige Gestaltungsbaustein **[!UICONTROL Abmelde-Link]** muss angepasst werden.
 * Das Zielgruppen-Mapping der Standard-Versandvorlagen muss geändert werden.
 * V4-Formulare sind nicht für die Verwendung mit externen Empfängertabellen kompatibel: Sie müssen Webanwendungen verwenden.
