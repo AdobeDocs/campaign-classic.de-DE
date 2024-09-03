@@ -8,15 +8,14 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 23c873fd-9016-4d32-842c-772cfff0e23e
-source-git-commit: 5d237d42adabe42a07bc759913dd9453df650671
+source-git-commit: 122d69d3d7474480f7799248413ac89338469ebc
 workflow-type: tm+mt
-source-wordcount: '905'
-ht-degree: 100%
+source-wordcount: '909'
+ht-degree: 99%
 
 ---
 
 # Datenschutzverwaltung {#privacy-management}
-
 
 Adobe Campaign bietet eine Reihe von Tools, die Sie bei der Einhaltung der [Datenschutzverordnungen](#privacy-management-regulations) (einschließlich DSGVO, CCPA, PDPA, LGPD) unterstützen.
 
@@ -105,6 +104,7 @@ Im Folgenden finden Sie die standardmäßige Beibehaltungsdauer für Standardtab
 * **Statistiken zur Ereignisverarbeitung**: 1 Jahr
 * **Ereignisse mit Verlauf**: 1 Jahr
 * **Ignorierte Pipeline-Ereignisse**: 1 Monat
+* **Dynamische Berichterstellung**: 13 Monate
 
 Ähnlich wie beim Löschvorgang kann auch mithilfe von Standard-Workflow-Funktionen die Beibehaltungsdauer für benutzerdefinierte Tabellen festgelegt werden.
 
