@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: audience-sharing
 exl-id: f3c19fcd-12cb-4ca3-b4b7-7dc4be57f4ea
 source-git-commit: 7b4fbefe0f6bd26ee9260d15e8303f716af7ac96
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '130'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -21,12 +21,12 @@ ht-degree: 90%
 >
 >Damit Sie als v7-Benutzer fortfahren können, müssen Sie sicherstellen, dass Adobe Identity Management System (IMS) auf Ihrem System aktiviert ist. [Weitere Informationen](../../integrations/using/about-adobe-id.md).
 
-Sobald der Adobe Identity Management Service (IMS) für Ihre Organisation aktiviert wurde, können Sie die Bereitstellung der [Experience Cloud Audience](https://experienceleague.adobe.com/de/docs/core-services/interface/services/audiences/overview){target="_blank"}-Integration mit Campaign beantragen. Wenden Sie sich dazu an Ihren Adobe-Support-Mitarbeiter und geben Sie die folgenden Informationen ein:
+Sobald der Adobe Identity Management Service (IMS) für Ihre Organisation aktiviert wurde, können Sie die Bereitstellung der [Experience Cloud Audience](https://experienceleague.adobe.com/de/docs/core-services/interface/services/audiences/overview){target="_blank"}-Integration mit Campaign beantragen. Wenden Sie sich dazu an Ihre Adobe-Kontaktperson und stellen Sie die folgenden Informationen bereit:
 
 <table> 
  <tbody> 
   <tr> 
-   <td> <strong>Art des Antrags</strong><br /> </td> 
+   <td> <strong>Art des Anfrage</strong><br /> </td> 
    <td> Zielgruppe konfigurieren – Campaign-Integration </td> 
   </tr> 
   <tr> 
