@@ -1,29 +1,29 @@
 ---
 product: campaign
-title: Assistent für neue Felder
-description: Assistent für neue Felder
+title: Neuer Feldassistent
+description: Neuer Feldassistent
 feature: Schema Extension
 role: Data Engineer, Developer
 exl-id: 2350a531-7a26-4f26-90fe-8dac0cc26605
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: ec774cc10a69a694b3c2bf5a6f662afd12a1435a
 workflow-type: tm+mt
 source-wordcount: '206'
-ht-degree: 4%
+ht-degree: 0%
 
 ---
 
-# Assistent für neue Felder{#new-field-wizard}
+# Neuer Feldassistent{#new-field-wizard}
 
 
-Über einen Assistenten, auf den Sie über **[!UICONTROL Tools > Erweitert > Neue Felder hinzufügen]** zugreifen können, können Sie einer Tabelle in der Datenbank ein oder mehrere Felder hinzufügen.
+Ein Assistent, der über **[!UICONTROL Tools > Erweitert > Neue Felder hinzufügen]** aufgerufen werden kann, ermöglicht das Hinzufügen eines oder mehrerer Felder zu einer Tabelle in der Datenbank.
 
-Durch Validierung des Assistenten wird das Erweiterungsschema der zu erweiternden Tabelle aktualisiert und das SQL-Skript gestartet, um die physische Struktur der Datenbank zu ändern.
+Durch die Validierung des Assistenten wird das Erweiterungsschema der zu erweiternden Tabelle aktualisiert und das SQL-Skript gestartet, um die physische Struktur der Datenbank zu ändern.
 
 Dieser Assistent bietet den Vorteil, dass ein Feld schnell hinzugefügt werden kann, ohne dass die Struktur eines Datenschemas kennengelernt werden muss.
 
 Der Hauptnachteil besteht in der Beschränkung der Daten und der Eigenschaften, die erweitert werden sollen.
 
-Die Bildschirme des Assistenten umfassen die folgenden Schritte:
+Die Assistenten-Bildschirme umfassen die folgenden Schritte:
 
 1. Auf der ersten Seite können Sie den Namen des zu erweiternden Schemas und den Namespace des Erweiterungsschemas eingeben, in dem die Änderungen gespeichert werden:
 

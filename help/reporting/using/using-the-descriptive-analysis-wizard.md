@@ -1,30 +1,30 @@
 ---
 product: campaign
-title: Verwenden des Assistenten für deskriptive Analysen
-description: Verwenden des Assistenten für deskriptive Analysen
+title: Deskriptive Analyseassistent verwenden
+description: Deskriptive Analyseassistent verwenden
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Reporting, Monitoring
 exl-id: 848d67c7-d1dc-4eba-bcb8-672e76d8ce87
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: f90df5a5e5b3a2317d86ff2919560ded38f44f44
 workflow-type: tm+mt
 source-wordcount: '1656'
-ht-degree: 100%
+ht-degree: 85%
 
 ---
 
-# Verwenden des Assistenten für deskriptive Analysen{#using-the-descriptive-analysis-wizard}
+# Deskriptive Analyseassistent verwenden{#using-the-descriptive-analysis-wizard}
 
 
 
-Um einen deskriptiven Analysebericht zu erstellen, befolgen Sie die Schritte des entsprechenden Assistenten. Seine Konfiguration hängt von den zu analysierenden Daten sowie der gewünschten Darstellung ab.
+Verwenden Sie den dedizierten Assistenten, um einen deskriptiven Analysebericht zu erstellen. Seine Konfiguration hängt von den zu analysierenden Daten sowie der gewünschten Darstellung ab.
 
 ## Analysieren von Daten in der Datenbank {#analyzing-data-in-the-database}
 
-Der Deskriptive-Analyse-Assistent kann über das Menü **[!UICONTROL Werkzeuge > Deskriptive Analyse]** gestartet werden: In diesem Fall bezieht sich die Analyse standardmäßig auf die Empfängertabelle (**nms:recipient**). Die Gesamtheit der Daten in Adobe Campaign dient als Basis.
+Der Analyse-Assistent kann über das Menü **[!UICONTROL Werkzeuge > Deskriptive Analyse]** gestartet werden: In diesem Fall bezieht sich die Analyse standardmäßig auf die Empfänger (**nms:recipient**). Sie gilt für alle Daten in der Adobe Campaign-Datenbank.
 
 ![](assets/reporting_descriptive_wz_launch.png)
 
-Wenn Sie eine andere Tabelle analysieren möchten, klicken Sie auf den Link **Erweiterte Parameter...****[!UICONTROL ... im ersten Schritt des Assistenten und wählen Sie die Ihrer Konfiguration entsprechende Tabelle aus, in unserem Beispiel]** nms:visitor **:**
+Um eine andere Tabelle als die Standardempfänger zu analysieren (**nms:recipient**), klicken Sie im letzten Schritt des Assistenten auf den Link **[!UICONTROL Erweiterte Einstellungen..]** und wählen Sie die Ihrer Konfiguration entsprechende Tabelle aus, in diesem Fall **cus:Kontakt**:
 
 ![](assets/reporting_descriptive_other_schema.png)
 
@@ -36,11 +36,11 @@ Die Analyse bezieht sich nur auf Empfänger der Datenbank, die mindestens 16 Jah
 
 ## Analysieren eines Datensatzes {#analyzing-a-set-of-data}
 
-Der Assistent der deskriptiven Analyse kann in verschiedenen anderen Kontexten verwendet werden, z. B. bezogen auf Listen, Workflow-Transitionen, Sendungen oder auf eine Auswahl an Empfängern.
+Sie können den Assistenten zur deskriptiven Analyse in einem anderen Kontext verwenden: einer Liste, einer Workflow-Transition, einem oder mehreren Sendungen, einer Auswahl von Empfängern usw.
 
 Er ist über diverse Knoten des Navigationsbaums zugänglich, die auf die Empfängertabelle zeigen.
 
-Dort kann er über einen Rechtsklick auf die jeweilige Auswahl gestartet werden. In diesem Fall werden nur die Daten der Auswahl analysiert.
+Öffnen Sie den Assistenten zur deskriptiven Analyse, indem Sie Elemente auswählen und mit der rechten Maustaste klicken. In diesem Fall werden nur die Daten der Auswahl analysiert.
 
 ![](assets/reporting_descriptive_from_recipients.png)
 
@@ -64,7 +64,7 @@ Die Vorlage **[!UICONTROL Qualitative Verteilung]** ermöglicht die Erstellung v
 
 Die Konfigurationsoptionen für einen Bericht, der mit der Vorlage **[!UICONTROL Qualitative Verteilung]** erstellt wurde, sind unter [Anzeigen von Daten in der Tabelle](#displaying-data-in-the-table) aufgeführt. Ein vollständiges Beispiel wird in [Analysieren einer Population](../../reporting/using/use-cases.md#analyzing-a-population) beschrieben.
 
-Wenn Sie den Assistenten für deskriptive Analysen verwenden, um Ihre Daten zu analysieren, hängen die verfügbaren Optionen von den gewählten Einstellungen ab. Diese sind im Folgenden aufgeführt.
+Wenn Sie den Assistenten zur deskriptiven Analyse verwenden, um Ihre Daten zu analysieren, hängen die verfügbaren Optionen von den gewählten Einstellungen ab. Diese sind im Folgenden aufgeführt.
 
 ### Daten klassieren {#data-binning}
 
@@ -119,7 +119,7 @@ Sie können den Namen der Statistiken und Zwischensummen anzeigen oder ausblende
 
 ### Anzeigen von Daten in der Grafik {#displaying-data-in-the-chart}
 
-Im ersten Schritt des Analyse-Assistenten können Sie angeben, die Daten nur in grafischer Form und nicht in tabellarischer anzeigen zu lassen. In diesem Fall werden die Variablen im Zuge der Grafikkonfiguration ausgewählt. Wählen Sie zunächst die Anzahl der anzuzeigenden Variablen sowie die betroffenen Datenbankfelder aus.
+Im ersten Schritt des Assistenten zur deskriptiven Analyse können Sie festlegen, dass die Daten nur in Diagrammform und ohne Tabelle angezeigt werden. In diesem Fall werden die Variablen im Zuge der Grafikkonfiguration ausgewählt. Wählen Sie zunächst die Anzahl der anzuzeigenden Variablen sowie die betroffenen Datenbankfelder aus.
 
 ![](assets/s_ncs_user_report_wizard_023.png)
 
@@ -139,7 +139,7 @@ Die zur Verfügung stehenden Optionen hängen vom gewählten Grafiktyp ab. Weite
 
 ### Statistikberechnung {#statistics-calculation}
 
-Mithilfe des Analyse-Assistenten können unterschiedliche Statistiktypen berechnet werden. Standardmäßig ist eine einfache Zählung konfiguriert.
+Der Analyse-Assistent ermöglicht die Berechnung verschiedener Statistiktypen. Standardmäßig ist eine einfache Zählung konfiguriert.
 
 Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**, um eine neue Statistik zu erstellen.
 
@@ -183,7 +183,7 @@ Folgende Funktionen stehen zur Auswahl:
 
 ### Anzeigen des Berichts {#displaying-the-report}
 
-Im letzten Schritt des Assistenten wird der Bericht angezeigt, d. h. die zuvor konfigurierte Tabelle und/oder Grafik.
+Im letzten Schritt des Assistenten wird der Bericht angezeigt, d. h. die Tabelle oder das Diagramm, wie sie/es konfiguriert wurde.
 
 Wenn der Bericht eine Tabelle enthält, ist die Ergebniszelle der Berechnung eingefärbt. Die Intensität der Farbe ist umso stärker, je höher das Ergebnis ausfällt.
 
@@ -205,7 +205,7 @@ Die Vorlage **[!UICONTROL Quantitative Verteilung]** ermöglicht Statistiken üb
 
 Die Konfiguration von auf einer **[!UICONTROL quantitativen Verteilung]** basierenden Berichten wird in einem Umsetzungsbeispiel [Quantitative Datenanalyse](../../reporting/using/use-cases.md#quantitative-data-analysis) beschrieben.
 
-Bei der Nutzung der quantitativen Datenanalyse stehen verschiedene Funktionen zur Verfügung, die im folgenden Beispiel beschrieben werden.
+Die Optionen, die bei der Verwendung des Assistenten zur deskriptiven Analyse zur Erstellung eines quantitativen Berichts verfügbar sind, sind im Folgenden beschrieben.
 
 Zunächst muss eine Variable ausgewählt werden, auf die sich die Berechnungen beziehen:
 
@@ -229,7 +229,7 @@ Folgende Funktionen stehen zur Auswahl:
 
   ![](assets/s_ncs_user_report_wizard_030.png)
 
-  Die letzte Etappe des Assistenten zeigt den quantitativen Analysebericht an.
+  Der letzte Schritt der Assistenzkraft zeigt den quantitativen Analysebericht an.
 
   ![](assets/reporting_descriptive_view_report.png)
 

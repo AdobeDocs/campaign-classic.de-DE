@@ -5,10 +5,10 @@ description: Anwendungsfälle für Berichte
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Reporting, Monitoring
 exl-id: e326e32e-7bb0-46ff-9ba5-94ccd1169af2
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: f90df5a5e5b3a2317d86ff2919560ded38f44f44
 workflow-type: tm+mt
 source-wordcount: '1431'
-ht-degree: 100%
+ht-degree: 87%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 ## Populationen analysieren {#analyzing-a-population}
 
-Im unten stehenden Beispiel wird mithilfe des Assistenten zur deskriptiven Analyse die Zielgruppe einer Newsletter-Serie untersucht.
+Im folgenden Beispiel wird mithilfe des Assistenten zur deskriptiven Analyse die Zielgruppe eines Newsletters untersucht.
 
 Die Durchführungsschritte werden im Nachstehenden beschrieben, die verschiedenen Optionen und ihre Beschreibungen werden in den anderen Abschnitten dieses Kapitels ausführlich dargestellt.
 
@@ -60,7 +60,7 @@ Nach der Festlegung der Zeilen und Spalten können Sie sie über die Symbolleist
 
 ### Anzeigeformat bestimmen {#defining-the-display-format}
 
-Im folgenden Schritt des Assistenten wird der zu erzeugende Grafiktyp festgelegt.
+Im nächsten Schritt des Assistenten können Sie den gewünschten Grafiktyp auswählen.
 
 In diesem Beispiel wird das Histogramm gewählt.
 
@@ -70,7 +70,7 @@ Mögliche Konfigurationen der verschiedenen Grafiken werden im Abschnitt [Grafik
 
 ### Zu berechnende Statistiken konfigurieren {#configuring-the-statistic-to-calculate}
 
-Geben Sie anschließend die mit den abgerufenen Daten durchzuführenden Berechnungen an. Der Analyse-Assistent führt standardmäßig eine einfache Zählung der Werte durch.
+Geben Sie anschließend die mit den abgerufenen Daten durchzuführenden Berechnungen an. Standardmäßig führt der deskriptive Analyse-Assistent eine einfache Zählung der Werte durch.
 
 In diesem Fenster können Sie die Liste der zu berechnenden Statistiken bestimmen.
 
@@ -80,7 +80,7 @@ Um eine neue Statistik zu erstellen, klicken Sie auf die Schaltfläche **[!UICON
 
 ### Berichte anzeigen und nutzen {#viewing-and-using-the-report}
 
-Im letzten Schritt des Assistenten werden Tabelle und Grafik angezeigt.
+Im letzten Schritt des Assistenten werden die Tabelle und das Diagramm angezeigt.
 
 Sie können Daten über die Symbolleiste oberhalb der Tabelle speichern, exportieren oder drucken. Weitere Informationen finden Sie unter [Berichtbearbeitung](../../reporting/using/processing-a-report.md).
 
@@ -92,7 +92,7 @@ Sie können Daten über die Symbolleiste oberhalb der Tabelle speichern, exporti
 
 **Ziel**: Erzeugung eines Analyseberichts über die Standorte von Interessenten und Kunden.
 
-1. Öffnen Sie den Analyse-Assistenten und wählen Sie nur den Anzeigemodus **[!UICONTROL Grafik]** aus.
+1. Öffnen Sie den Analyse-Assistenten und wählen Sie nur **[!UICONTROL Diagramm]** aus.
 
    ![](assets/s_ncs_user_report_wizard_05a.png)
 
@@ -118,7 +118,7 @@ Sie können Daten über die Symbolleiste oberhalb der Tabelle speichern, exporti
 
 **Ziel**: Analyse der E-Mail-Domains unterschiedlicher Firmen.
 
-1. Öffnen Sie den Analyse-Assistenten und wählen Sie nur den Anzeigemodus **[!UICONTROL Tabelle]** aus.
+1. Öffnen Sie den Analyse-Assistenten und wählen Sie nur den Anzeigemodus **[!UICONTROL Array]** aus.
 
    ![](assets/s_ncs_user_report_wizard_03a.png)
 
@@ -155,7 +155,7 @@ Sie können Daten über die Symbolleiste oberhalb der Tabelle speichern, exporti
 
 **Ziel**: Erzeugung eines Berichts zur quantitativen Analyse des Empfängeralters.
 
-1. Öffnen Sie den Assistenten zur deskriptiven Analyse und wählen Sie die Analysevorlage **[!UICONTROL Quantitative Verteilung]** aus.
+1. Öffnen Sie den Assistenten zur deskriptiven Analyse und wählen Sie **[!UICONTROL Quantitative Verteilung]** aus der Dropdownliste aus.
 
    ![](assets/s_ncs_user_report_wizard_011a.png)
 
@@ -191,7 +191,7 @@ Sie können Daten über die Symbolleiste oberhalb der Tabelle speichern, exporti
 
 Die Analyse einer Zielgruppe in einem Workflow setzt voraus, dass die Population noch in der Transition präsent ist. Wenn der Workflow gestartet wurde, kann es sein, dass die Transition und damit die Population bereinigt wird. Sie haben folgende Möglichkeiten, eine Analyse durchzuführen:
 
-* die Transition von ihrer Zielaktivität lösen und den Workflow starten, um sie zu aktivieren. Sobald die Transition blinkt, können Sie den Assistenten wie gewohnt starten.
+* die Transition von ihrer Zielaktivität lösen und den Workflow starten, um sie zu aktivieren. Sobald die Transition blinkt, starten Sie den Assistenten wie gewohnt.
 
   ![](assets/s_ncs_user_report_wizard_018.png)
 
@@ -199,7 +199,7 @@ Die Analyse einer Zielgruppe in einem Workflow setzt voraus, dass die Population
 
   ![](assets/s_ncs_user_report_wizard_020.png)
 
-  Wenn die Transition von der Population bereinigt wurde, fordert eine entsprechende Fehlernachricht dazu auf, die besagte Option zu aktivieren, bevor der Analyse-Assistent gestartet wird.
+  Wenn die Population aus der Transition gelöscht wurde, werden Sie in einer Fehlermeldung aufgefordert, die entsprechende Option auszuwählen, bevor Sie den Assistenten zur deskriptiven Analyse starten.
 
   ![](assets/s_ncs_user_report_wizard_019.png)
 
@@ -210,13 +210,13 @@ Die Analyse einer Zielgruppe in einem Workflow setzt voraus, dass die Population
 
 ## Analyse der Empfänger-Trackinglogs {#analyzing-recipient-tracking-logs}
 
-Mithilfe des Assistenten der deskriptiven Analyse können auch Berichte über andere Arbeitstabellen als die Empfängertabelle erzeugt werden. Sie können zum Beispiel Versandlogs analysieren.
+Der Analyse-Assistent kann Berichte zu anderen Arbeitstabellen erstellen. Sie können zum Beispiel Versandlogs analysieren.
 
 Im folgenden Beispiel wird die Reaktionsrate der Empfänger von Newslettern untersucht.
 
 Gehen Sie hierzu wie folgt vor:
 
-1. Öffnen Sie den Analyse-Assistenten über das Menü **[!UICONTROL Werkzeuge > Deskriptive Analyse...]** und ändern Sie die standardmäßige Arbeitstabelle. Wählen Sie **[!UICONTROL Trackinglogs der Empfangenden]** aus. Fügen Sie einen Filter hinzu, damit die Analyse sich nur auf Newsletter bezieht und Testsendungen ausschließt.
+1. Öffnen Sie den Assistenten zur deskriptiven Analyse über das Menü **[!UICONTROL Werkzeuge > Deskriptive Analyse]** und ändern Sie die standardmäßige Arbeitstabelle. Wählen Sie **[!UICONTROL Trackinglogs der Empfangenden]** aus. Fügen Sie einen Filter hinzu, damit die Analyse sich nur auf Newsletter bezieht und Testsendungen ausschließt.
 
    ![](assets/reporting_descriptive_sample_tracking_1.png)
 
@@ -276,7 +276,7 @@ Wenn sich die Analyse auf einen Versand bezieht, besteht die Möglichkeit, die a
 
 ![](assets/reporting_descriptive_exclusion_menu.png)
 
-Daraufhin öffnet sich der Analyse-Assistent. Die Analyse bezieht sich automatisch auf die Ausschlusslogs.
+Dadurch gelangen Sie zum Assistenten zur deskriptiven Analyse und die Analyse bezieht sich auf die Ausschlusslogs der Empfänger.
 
 Sie können beispielsweise die Domains der ausgeschlossenen Adressen nach Ausschlussdatum anzeigen lassen:
 

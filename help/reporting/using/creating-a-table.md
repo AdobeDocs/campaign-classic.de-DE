@@ -5,10 +5,10 @@ description: Erstellen einer Tabelle
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Reporting, Monitoring
 exl-id: 05f76bdf-6dcd-4360-9e72-0ba6a4dd0d5e
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: f90df5a5e5b3a2317d86ff2919560ded38f44f44
 workflow-type: tm+mt
 source-wordcount: '2661'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -461,6 +461,6 @@ Durch Klick auf den Link einer der Sendungen wird die Verteilung dieses Versands
 
 Dieser Tabellentyp ermöglicht die Anzeige von Statistiken über die Datenbank.
 
-Die Konfiguration derartiger Berichte entspricht der im Assistenten zur deskriptiven Analyse verwendeten. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-quantitative-distribution-template).
+Die Konfiguration dieser Berichtstypen ähnelt der für den Assistenten zur deskriptiven Analyse verwendeten. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-quantitative-distribution-template).
 
 Die Erstellung einer Pivot-Tabelle wird in [diesem Abschnitt](../../reporting/using/ac-cubes.md) beschrieben.
