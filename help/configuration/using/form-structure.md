@@ -6,7 +6,7 @@ feature: Application Settings
 role: Data Engineer, Developer
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 exl-id: e61f2b63-06d3-4b8c-867f-1c729176d2da
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
 source-wordcount: '2416'
 ht-degree: 89%
@@ -613,12 +613,12 @@ Das **`<check expr="<condition>" />`**-Tag in Kombination mit dem **`<error>`**-
 
 ## Assistenten {#wizards}
 
-Ein Assistent führt Sie durch eine Reihe von Schritten zur Dateneingabe in Form von Seiten. Die eingegebenen Daten werden bei der Validierung des Formulars gespeichert.
+Ein Assistent führt Sie in Form von Seiten durch eine Reihe von Schritten zur Dateneingabe. Die eingegebenen Daten werden bei der Validierung des Formulars gespeichert.
 
-Ein Assistent weist die folgende Struktur auf:
+Eine Assistenzkraft hat die folgende Struktur:
 
 ```xml
-<form type="wizard" name="example" namespace="cus" img="nms:rcpgroup32.png" label="Wizard example" entity-schema="nms:recipient">
+<form type="wizard" name="example" namespace="cus" img="nms:rcpgroup32.png" label="Assistant example" entity-schema="nms:recipient">
   <container title="Title of page 1" desc="Long description of page 1">
     <input xpath="@lastName"/>
     <input xpath="comment"/>
@@ -632,7 +632,7 @@ Ein Assistent weist die folgende Struktur auf:
 
 ![](assets/d_ncs_integration_form_exemple19.png)
 
-Durch das Vorhandensein des Attributs **type=&quot;wizard&quot;** im Element `<form>` können Sie den Assistentenmodus beim Aufbau des Formulars definieren. Die Seiten werden aus `<container>`-Elementen ausgefüllt, die dem Element `<form>` untergeordnet sind. Das `<container>`-Element einer Seite wird mit den Titelattributen für den Titel und &quot;desc&quot; gefüllt, um die Beschreibung unter dem Seitentitel anzuzeigen. Die Schaltflächen **[!UICONTROL Zurück]** und **[!UICONTROL Weiter]** werden automatisch hinzugefügt, um das Blättern zwischen Seiten zu ermöglichen.
+Durch das Vorhandensein des Attributs **type=&quot;wizard&quot;** im Element `<form>` können Sie den Assistenzmodus beim Aufbau des Formulars definieren. Die Seiten werden aus `<container>`-Elementen ausgefüllt, die dem Element `<form>` untergeordnet sind. Das `<container>`-Element einer Seite wird mit den Titelattributen für den Titel und &quot;desc&quot; gefüllt, um die Beschreibung unter dem Seitentitel anzuzeigen. Die Schaltflächen **[!UICONTROL Zurück]** und **[!UICONTROL Weiter]** werden automatisch hinzugefügt, um das Blättern zwischen Seiten zu ermöglichen.
 
 Mit der Schaltfläche **[!UICONTROL Beenden]** speichern Sie die eingegebenen Daten und schließen das Formular.
 

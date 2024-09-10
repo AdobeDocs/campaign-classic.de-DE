@@ -4,10 +4,10 @@ title: Technische Workflows
 description: Erfahren Sie mehr über die technischen Workflows, die mit Campaign Classic-Packages verfügbar sind
 feature: Workflows
 exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
 source-wordcount: '1714'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -40,7 +40,7 @@ Weiterführende Informationen zur Verfolgung technischer Workflows finden Sie in
 | **Erfassen von Daten für den HeatMap-Service** (collectDataHeatMapService) | Standardmäßig installiert | Dieser Workflow ruft die für den HeatMap-Service erforderlichen Daten ab. |
 | **Erfassen von Datenschutzanfragen** (collectPrivacyRequests) | Datenschutzbestimmung | Mit diesem Workflow werden die in Adobe Campaign gespeicherten Empfängerdaten abgerufen und auf dem Bildschirm zur Datenschutzanfrage für den Download bereitgestellt. |
 | **Kostenberechnung** (budgetMgt) | Marketing-Kampagnen (Campaign) | Dieser Workflow berechnet Ausgaben- und Kostenposten für Budgets, Pläne, Programme, Kampagnen, Sendungen und Aufgaben. |
-| **Datenbankbereinigung** (cleanup) | Versand | Dieser Workflow ist der Datenbankwartungs-Workflow: Er führt verschiedene Berechnungen mit Statistiken und Prozessen durch und löscht gemäß der definierten Konfiguration im Bereitstellungsassistenten veraltete Daten aus der Datenbank . Er wird standardmäßig jeden Tag um 4 Uhr morgens ausgelöst. Weitere Informationen dazu finden Sie auf [dieser Seite](../../production/using/database-cleanup-workflow.md#monitoring-campaign-classic). |
+| **Datenbankbereinigung** (cleanup) | Versand | Dieser Workflow dient der Datenbankwartung. Er führt verschiedene Berechnungen aus den Statistiken und Prozessen durch und löscht veraltete Daten aus der Datenbank entsprechend der im Softwareverteilungs-Assistenten definierten Konfiguration. Er wird standardmäßig täglich um 4 Uhr ausgelöst. Weitere Informationen dazu finden Sie auf [dieser Seite](../../production/using/database-cleanup-workflow.md#monitoring-campaign-classic). |
 | **Löschen von gesperrten LINE-Benutzern** (deleteBlockedLineUsersV2) | LINE-Kanal | Dieser Workflow stellt sicher, dass die Daten der LINE V2-Benutzer gelöscht werden, nachdem sie das offizielle LINE-Konto 180 Tage lang gesperrt haben. |
 | **Löschen von Datenschutzanfragedaten** (deletePrivacyRequestsData) | Datenschutzbestimmung | Mit diesem Workflow werden die in Adobe Campaign gespeicherten Empfängerdaten gelöscht. |
 | **Versandindikatoren** (deliveryIndicators) | Mid-Sourcing-Plattform | Dieser Workflow aktualisiert Tracking-Indikatoren eines Versands. Er wird standardmäßig stündlich ausgelöst. |

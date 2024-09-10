@@ -8,22 +8,25 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 0533cd50-3aa4-4160-9152-e916e149e77f
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
-source-wordcount: '1208'
+source-wordcount: '1232'
 ht-degree: 1%
 
 ---
 
-# Verbindung über LDAP{#connecting-through-ldap}
+# Verbindung über LDAP {#connecting-through-ldap}
 
 ## Campaign und LDAP konfigurieren {#configuring-campaign-and-ldap}
 
 >[!NOTE]
 >
->Die LDAP-Konfiguration ist nur für On-Premise- oder Hybridinstallationen möglich.
+>* Die LDAP-Konfiguration ist nur für On-Premise- oder Hybridinstallationen möglich.
+>
+>* Stellen Sie sicher, dass Ihr System und Ihre OpenSSL-Versionen in der [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md) mit Campaign kompatibel sind. Veraltete Versionen können sich auf Ihre LDAP-Authentifizierung auswirken.
+>
 
-Die LDAP-Konfiguration wird im Softwareverteilungs-Assistenten durchgeführt. Die Option **[!UICONTROL LDAP integration]** muss während des ersten Konfigurationsschritts ausgewählt sein. Siehe [Softwareverteilungs-Assistent](../../installation/using/deploying-an-instance.md#deployment-wizard).
+Die LDAP-Konfiguration wird im Softwareverteilungs-Assistenten durchgeführt. Die Option **[!UICONTROL LDAP integration]** muss während des ersten Konfigurationsschritts ausgewählt sein. Siehe [Softwareverteilungs-Assistent](../../installation/using/deploying-an-instance.md#deployment-assistant).
 
 Im Fenster können Sie die Identifizierung von Adobe Campaign-Benutzern über den angegebenen LDAP-Ordner konfigurieren.
 
@@ -32,29 +35,19 @@ Im Fenster können Sie die Identifizierung von Adobe Campaign-Benutzern über de
 * Geben Sie die Adresse des LDAP-Servers im Feld **[!UICONTROL LDAP server]** an. Sie können die Portnummer hinzufügen. Standardmäßig wird der Port 389 verwendet.
 * Wählen Sie in der Dropdownliste die Authentifizierungsmethode für Benutzer aus:
 
-   * Verschlüsseltes Kennwort (**md5**)
+   * Verschlüsseltes Kennwort (**md5**) - Standardmodus.
 
-     Standardmodus.
-
-   * Nur-Text-Kennwort + SSL (**TLS**)
-
-     Das gesamte Authentifizierungsverfahren (einschließlich Kennwort) ist verschlüsselt. Der sichere Port 636 darf in diesem Modus nicht verwendet werden: Adobe Campaign wechselt automatisch in den abgesicherten Modus.
+   * Klartextkennwort + SSL (**TLS**) - Das gesamte Authentifizierungsverfahren (einschließlich Kennwort) ist verschlüsselt. Der sichere Port 636 darf in diesem Modus nicht verwendet werden: Adobe Campaign wechselt automatisch in den abgesicherten Modus.
 
      Wenn Sie diesen Authentifizierungsmodus verwenden, wird das Zertifikat unter Linux von einer openLDAP-Client-Bibliothek überprüft. Es wird empfohlen, ein gültiges SSL-Zertifikat zu verwenden, damit das Authentifizierungsverfahren verschlüsselt wird. Andernfalls werden Informationen in Klartext geschrieben.
 
      Das Zertifikat wird auch unter Windows überprüft.
 
-   * Windows NT LAN Manager (**NTLM**)
+   * Windows NT LAN Manager (**NTLM**) - Proprietäre Windows-Authentifizierung. Die **[!UICONTROL eindeutige Kennung]** wird nur für den Domänennamen verwendet.
 
-     Eigenständige Windows-Authentifizierung. Die **[!UICONTROL eindeutige Kennung]** wird nur für den Domänennamen verwendet.
+   * Distributed Password Authentication (**DPA**) - Proprietäre Windows-Authentifizierung. Die **[!UICONTROL eindeutige Kennung]** wird nur für den Domänennamen verwendet (domain.com).
 
-   * Distributed Password Authentication (**DPA**)
-
-     Eigenständige Windows-Authentifizierung. Die **[!UICONTROL eindeutige Kennung]** wird nur für den Domänennamen verwendet (domain.com).
-
-   * Sichtbares Kennwort
-
-     Keine Verschlüsselung (nur zur Verwendung in Testphasen)
+   * Klartext-Kennwort - Keine Verschlüsselung (nur zur Verwendung in Testphasen).
 
 * Wählen Sie den Authentifizierungsmodus für den Benutzer aus: **[!UICONTROL Berechnen Sie automatisch die eindeutige Benutzer-ID]** (siehe Schritt [Berechnung des Distinguished Name](#distinguished-name-calculation)) oder **[!UICONTROL Durchsuchen Sie die eindeutige Benutzer-ID im Verzeichnis]** (siehe Schritt [Suchen nach Identifikatoren](#searching-for-identifiers)).
 

@@ -6,10 +6,10 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Email Design
 role: User
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
 source-wordcount: '2032'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -144,7 +144,7 @@ Informationen zum Anpassen der Emoticon-Liste finden Sie auf dieser [Seite](cust
 
 ## Hinzufügen von Bildern {#adding-images}
 
-E-Mail-Sendungen im HTML-Format können Bilder enthalten. Sie können im Versand-Assistenten entweder eine fertige HTML-Seite mit Bildern importieren oder Bilder im HTML-Editor über das Symbol **[!UICONTROL Bild]** einfügen.
+E-Mail-Sendungen im HTML-Format können Bilder enthalten. Über den Versand-Assistenten können Sie eine HTML-Seite mit Bildern importieren oder Bilder direkt mithilfe des HTML-Editors über das Symbol **[!UICONTROL Bild]** einfügen.
 
 
 ### Schutzmechanismen {#img-guardrails}
@@ -166,7 +166,7 @@ Diese Bilder können:
 
 ### Einfügen und Verwalten von Bildern {#manage-images}
 
-Der Versand-Assistent bietet die Möglichkeit, lokale oder in der Bibliothek enthaltene Bilder in den Inhalt der Nachrichten einzuschließen. Wählen Sie hierfür die Schaltfläche **[!UICONTROL Bild]** in der Symbolleiste des HTML-Inhalts aus.
+Mit dem Versand-Assistenten können Sie lokale oder in der Bibliothek gespeicherte Bilder zum Inhalt von Nachrichten hinzufügen. Wählen Sie hierfür die Schaltfläche **[!UICONTROL Bild]** in der Symbolleiste des HTML-Inhalts aus.
 
 ![](assets/s_ncs_user_image_from_library.png)
 
@@ -186,7 +186,7 @@ So verwalten Sie Bilder über den Versand-Assistenten:
 * Sie können Bilder manuell hochladen, ohne die Versandanalyse abwarten zu müssen. Klicken Sie dazu auf den Link **[!UICONTROL Bilder sofort online stellen...]**.
 * Sie können einen anderen Pfad für Zugriff auf die Bilder auf dem Tracking-Server angeben. Geben Sie dazu einen Pfad in das Feld **[!UICONTROL URL der Bilder]** ein. Dieser Wert setzt den in den Parametern des Installationsassistenten definierten Wert außer Kraft.
 
-Wenn Sie im Versandassistenten HTML-Inhalte mit eingebundenen Bildern öffnen, erhalten Sie eine Nachricht, die Ihnen die Möglichkeit gibt, die Bilder gemäß den Versandparametern sofort hochzuladen.
+Wenn Sie im Versand-Assistenten HTML-Inhalte mit enthaltenen Bildern öffnen, erhalten Sie in einer Nachricht die Möglichkeit, die Bilder entsprechend den Versandparametern sofort hochzuladen.
 
 ![](assets/s_ncs_user_email_del_img_local.png)
 

@@ -8,7 +8,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: f40bab8c-5064-40d9-beed-101a9f22c094
-source-git-commit: f032ed3bdc0b402c8281bc34e6cb29f3c575aaf9
+source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
 source-wordcount: '1352'
 ht-degree: 1%
@@ -133,13 +133,13 @@ Im Fenster **[!UICONTROL Erstellungsschritte]** können Sie das SQL-Skript anzei
 
 ### 6. Schritt - Erstellung der Datenbank {#step-6---creating-the-database}
 
-Im letzten Schritt des Assistenten können Sie die Datenbank erstellen. Klicken Sie zur Bestätigung auf **[!UICONTROL Start]** .
+In der endgültigen Phase der Assistenzzeit können Sie die Datenbank erstellen. Klicken Sie zur Bestätigung auf **[!UICONTROL Start]** .
 
 ![](assets/s_ncs_install_db_oracle_creation06.png)
 
 Nachdem die Datenbank erstellt wurde, können Sie die Verbindung wiederherstellen, um die Instanzkonfiguration abzuschließen.
 
-Sie müssen jetzt den Softwareverteilungs-Assistenten starten, um die Konfiguration der Instanz abzuschließen. Siehe [Softwareverteilungs-Assistent](../../installation/using/deploying-an-instance.md#deployment-wizard).
+Sie müssen jetzt den Softwareverteilungs-Assistenten starten, um die Konfiguration der Instanz abzuschließen. Siehe [Softwareverteilungs-Assistent](../../installation/using/deploying-an-instance.md#deployment-assistant).
 
 Die Verbindungseinstellungen für die mit der Instanz verknüpfte Datenbank werden in der Datei &quot;**`/conf/config-<instance>.xml`**&quot; gespeichert, die sich im Installationsverzeichnis von Adobe Campaign befindet.
 
@@ -224,13 +224,13 @@ Im Fenster **[!UICONTROL Erstellungsschritte]** können Sie das SQL-Skript anzei
 
 ### 5. Schritt - Erstellung der Datenbank {#step-5---creating-the-database}
 
-Im letzten Schritt des Assistenten können Sie die Datenbank erstellen. Klicken Sie zur Bestätigung auf **[!UICONTROL Start]** .
+In der endgültigen Phase der Assistenzzeit können Sie die Datenbank erstellen. Klicken Sie zur Bestätigung auf **[!UICONTROL Start]** .
 
 ![](assets/s_ncs_install_db_oracle_creation06.png)
 
 Sobald die Datenbankerstellung abgeschlossen ist, können Sie die Verbindung wiederherstellen, um die Instanzkonfiguration abzuschließen.
 
-Sie müssen jetzt den Softwareverteilungs-Assistenten starten, um die Konfiguration der Instanz abzuschließen. Siehe [Softwareverteilungs-Assistent](../../installation/using/deploying-an-instance.md#deployment-wizard).
+Sie müssen jetzt den Softwareverteilungs-Assistenten starten, um die Konfiguration der Instanz abzuschließen. Siehe [Softwareverteilungs-Assistent](../../installation/using/deploying-an-instance.md#deployment-assistant).
 
 Die Verbindungseinstellungen für die mit der Instanz verknüpfte Datenbank werden in der Datei &quot;**`/conf/config-<instance>.xml`**&quot; gespeichert, die sich im Installationsverzeichnis von Adobe Campaign befindet.
 

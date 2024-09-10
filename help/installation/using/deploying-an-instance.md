@@ -8,7 +8,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
 source-wordcount: '3539'
 ht-degree: 6%
@@ -21,7 +21,7 @@ ht-degree: 6%
 >
 >Serverseitige Konfigurationen können nur von Adobe für Bereitstellungen durchgeführt werden, die von Adobe gehostet werden. Weitere Informationen zu den verschiedenen Bereitstellungen finden Sie im Abschnitt [Hosting-Modelle](../../installation/using/hosting-models.md) oder auf [dieser Seite](../../installation/using/capability-matrix.md) .
 
-## Implementierungsassistent {#deployment-wizard}
+## Bereitstellungsassistent {#deployment-assistant}
 
 Adobe Campaign bietet einen grafischen Assistenten, der in der Adobe Campaign-Clientkonsole verfügbar ist und die Parameter der Instanz definiert, mit der Sie eine Verbindung herstellen möchten.
 

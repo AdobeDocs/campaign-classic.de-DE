@@ -7,10 +7,10 @@ audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 exl-id: 083be073-aad4-4c81-aff2-77f5ef3e80db
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
 source-wordcount: '1028'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -41,7 +41,7 @@ Die Synchronisation von Vorschlägen erfolgt in Packages. In den Ausführungsins
 
 Die Bereitstellung und Veröffentlichung der Angebote in den Ausführungs- und Kontrollinstanzen erfolgt automatisch.
 
-In der Design-Umgebung gelöschte Angebote werden in allen Live-Instanzen deaktiviert. Obsolete Vorschläge und Angebote werden nach Ablauf der durch die Bereinigungsparameter im Bereitstellungassistenten aller Instanzen definierten Frist und des in den Typologieregeln definierten beweglichen Zeitraums automatisch gelöscht.
+In der Design-Umgebung gelöschte Angebote werden in allen Live-Instanzen deaktiviert. Veraltete Vorschläge und Angebote werden nach Ablauf der (im Softwareverteilungs-Assistenten jeder Instanz festgelegten) Bereinigungszeit und des beweglichen Zeitraums (in den Typologieregeln der eingehenden Vorschläge angegeben) automatisch auf allen Instanzen gelöscht.
 
 ![](assets/interaction_powerbooster_schema2.png)
 
