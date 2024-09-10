@@ -5,10 +5,10 @@ description: Informationen zum Erstellen Ihres Adobe-API-Kontos
 role: User, Admin
 level: Beginner
 exl-id: 5d830ea0-a0a3-4b35-8dc4-e955380431fb
-source-git-commit: 8eadea9f9cc0a44522726024bfbc825e3b4cad98
+source-git-commit: 9516101771899e132dbd3d1344c833e82714f775
 workflow-type: tm+mt
-source-wordcount: '318'
-ht-degree: 100%
+source-wordcount: '352'
+ht-degree: 84%
 
 ---
 
@@ -61,9 +61,16 @@ Gehen Sie wie folgt vor, um Ihr technisches OAuth-Konto für neue Integrationen 
    * **[!UICONTROL Technical account ID]** (Kennung des technischen Kontos)
    * **[!UICONTROL Organization ID]** (Organisationskennung)
 
-## Hinzufügen von OAuth-Projektanmeldedaten in Adobe Campaign {#add-credentials}
+## Hinzufügen von OAuth-Projektanmeldedaten in Campaign {#add-credentials}
 
-Gehen Sie wie folgt vor, um Ihre OAuth-Projektanmeldedaten in Adobe Campaign hinzuzufügen:
+Nachdem die oben genannten Schritte ausgeführt wurden, fügen Sie Ihre OAuth-Projektanmeldedaten in Adobe Campaign hinzu.
+
+>[!NOTE]
+>
+>Als gehosteter oder verwalteter Cloud Service-Kunde ist dies nicht erforderlich: Adobe hat Ihre OAuth-Projektanmeldedaten bereits zu Ihrer Umgebung hinzugefügt.
+>
+
+Führen Sie als On-Premise- oder Hybrid-Kunde die folgenden Schritte aus:
 
 1. Melden Sie sich über SSH bei jedem Container an, in dem die Adobe Campaign-Instanz installiert ist.
 
