@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: 75d3a0af-9a14-4083-b1da-2c1b22f57cbe
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 6c85ca9d50dd970915b7c46939f88f4d7fdf07d8
 workflow-type: tm+mt
 source-wordcount: '2914'
 ht-degree: 1%
@@ -47,7 +47,7 @@ Standardmäßig ist der Workflow **[!UICONTROL Datenbankbereinigung]** so konfig
 >
 >Damit der Workflow **[!UICONTROL Datenbankbereinigung]** an dem in der Planung definierten Datum und zu der dort definierten Uhrzeit gestartet werden kann, muss die Workflow-Engine (wfserver) gestartet werden.
 
-### Implementierungsassistent {#deployment-wizard}
+### Bereitstellungsassistent {#deployment-assistant}
 
 Mit dem über das Menü **[!UICONTROL Tools > Erweitert]** verfügbaren **[!UICONTROL Softwareverteilungs-Assistenten]** können Sie konfigurieren, wie lange Daten gespeichert werden sollen. Die Werte werden in Tagen ausgedrückt. Wenn diese Werte nicht geändert werden, verwendet der Workflow die Standardwerte.
 
@@ -125,7 +125,7 @@ Die erste Aufgabe, die vom Workflow **[!UICONTROL Datenbankbereinigung]** ausgef
 
 Diese Aufgabe löscht alle zu löschenden oder recycelten Sendungen.
 
-1. Der Workflow **[!UICONTROL Datenbankbereinigung]** wählt alle Sendungen aus, für die das Feld **deleteStatus** den Wert **[!UICONTROL Ja]** oder **[!UICONTROL Recycled]** aufweist und deren Löschdatum vor dem in den **[!UICONTROL gelöschten Sendungen]** definierten Zeitraum liegt (**NmsCleanup_RecycledDeliveryDelay**) im Softwareverteilungs-Assistenten. Weitere Informationen hierzu finden Sie unter [Implementierungsassistent](#deployment-wizard). Dieser Zeitraum wird in Bezug auf das aktuelle Server-Datum berechnet.
+1. Der Workflow **[!UICONTROL Datenbankbereinigung]** wählt alle Sendungen aus, für die das Feld **deleteStatus** den Wert **[!UICONTROL Ja]** oder **[!UICONTROL Recycled]** aufweist und deren Löschdatum vor dem in den **[!UICONTROL gelöschten Sendungen]** definierten Zeitraum liegt (**NmsCleanup_RecycledDeliveryDelay**) im Softwareverteilungs-Assistenten. Weitere Informationen hierzu finden Sie im Abschnitt [Softwareverteilungs-Assistent](#deployment-assistant). Dieser Zeitraum wird in Bezug auf das aktuelle Server-Datum berechnet.
 1. Für jeden Mid-Sourcing-Server wählt die Aufgabe die Liste der zu löschenden Sendungen aus.
 1. Der Workflow **[!UICONTROL Datenbankbereinigung]** löscht Versandlogs, Anhänge, Informationen zur Mirrorseite und alle anderen damit verbundenen Daten.
 1. Vor dem endgültigen Löschen des Versands löscht der Workflow verknüpfte Informationen aus den folgenden Tabellen:
@@ -308,7 +308,7 @@ In diesem Schritt können Sie Datensätze löschen, für die während des Import
    DELETE FROM XtkReject WHERE iRejectId IN (SELECT iRejectId FROM XtkReject WHERE tsLog < $(curDate)) LIMIT $(l)
    ```
 
-   wobei `$(curDate)` das aktuelle Server-Datum ist, von dem aus der für die Option **NmsCleanup_RejectsPurgeDelay** definierte Zeitraum abgezogen wird (siehe [Softwareverteilungs-Assistent](#deployment-wizard)), und `$(l)` die maximale Anzahl der zu löschenden Datensätze für die Masse ist.
+   wobei `$(curDate)` das aktuelle Server-Datum ist, von dem wir den für die Option **NmsCleanup_RejectsPurgeDelay** definierten Zeitraum subtrahieren (siehe [Softwareverteilungs-Assistent](#deployment-assistant)) und `$(l)` die maximale Anzahl der zu löschenden Datensätze ist.
 
 1. Alle verwaisten Zurückweisungen werden dann mithilfe der folgenden Abfrage gelöscht:
 
@@ -395,7 +395,7 @@ SELECT iGroupId FROM NmsGroup WHERE iType>0"
 
 ### Besucherbereinigung {#cleanup-of-visitors}
 
-Durch Massenlöschung werden veraltete Datensätze aus der Besuchertabelle gelöscht. Veraltete Datensätze sind jene, deren letzte Änderung vor dem im Softwareverteilungs-Assistenten festgelegten Erhaltungszeitraum liegt (siehe [Softwareverteilungs-Assistent](#deployment-wizard)). Die folgende Abfrage wird verwendet:
+Durch Massenlöschung werden veraltete Datensätze aus der Besuchertabelle gelöscht. Veraltete Datensätze sind jene, deren letzte Änderung vor dem im Softwareverteilungs-Assistenten festgelegten Erhaltungszeitraum liegt (siehe [Softwareverteilungs-Assistent](#deployment-assistant)). Die folgende Abfrage wird verwendet:
 
 ```sql
 DELETE FROM NmsVisitor WHERE iVisitorId IN (SELECT iVisitorId FROM NmsVisitor WHERE iRecipientId = 0 AND tsLastModified < AddDays(GetDate(), -30) AND iOrigin = 0 LIMIT 20000)
@@ -423,7 +423,7 @@ DELETE FROM NmsSubscription WHERE iDeleteStatus <>0
 
 ### Bereinigung der Trackinglogs {#cleanup-of-tracking-logs}
 
-Diese Aufgabe löscht veraltete Datensätze aus den Tracking- und Webtracking-Log-Tabellen. Veraltete Datensätze sind jene, die vor dem im Softwareverteilungs-Assistenten festgelegten Erhaltungszeitraum liegen (siehe [Softwareverteilungs-Assistent](#deployment-wizard)).
+Diese Aufgabe löscht veraltete Datensätze aus den Tracking- und Webtracking-Log-Tabellen. Veraltete Datensätze sind jene, die vor dem im Softwareverteilungs-Assistenten festgelegten Erhaltungszeitraum liegen (siehe den [Softwareverteilungs-Assistenten](#deployment-assistant)).
 
 1. Zunächst wird die Liste der Trackinglog-Tabellen mithilfe der folgenden Abfrage abgerufen:
 
@@ -464,7 +464,7 @@ Auf diese Weise können die in verschiedenen Tabellen gespeicherten Versandlogs 
    DELETE FROM $(tableName) WHERE iBroadLogId IN (SELECT iBroadLogId FROM $(tableName) WHERE tsLastModified < $(option) LIMIT 5000) 
    ```
 
-   wobei `$(tableName)` der Name jeder Tabelle in der Schemakarte und `$(option)` das für die Option **NmsCleanup_BroadLogPurgeDelay** definierte Datum ist (siehe [Softwareverteilungs-Assistent](#deployment-wizard)).
+   wobei `$(tableName)` der Name jeder Tabelle in der Schemakarte und `$(option)` das für die Option **NmsCleanup_BroadLogPurgeDelay** definierte Datum ist (siehe [Softwareverteilungs-Assistent](#deployment-assistant)).
 
 1. Schließlich prüft der Workflow, ob die Tabelle **NmsProviderMsgId** vorhanden ist. Wenn ja, werden alle veralteten Daten mithilfe der folgenden Abfrage gelöscht:
 
@@ -472,7 +472,7 @@ Auf diese Weise können die in verschiedenen Tabellen gespeicherten Versandlogs 
    DELETE FROM NmsProviderMsgId WHERE iBroadLogId IN (SELECT iBroadLogId FROM NmsProviderMsgId WHERE tsCreated < $(option) LIMIT 5000)
    ```
 
-   wobei `$(option)` dem für die Option **NmsCleanup_BroadLogPurgeDelay** definierten Datum entspricht (siehe [Implementierungsassistent](#deployment-wizard)).
+   wobei `$(option)` dem für die Option **NmsCleanup_BroadLogPurgeDelay** definierten Datum entspricht (siehe [Softwareverteilungs-Assistent](#deployment-assistant)).
 
 ### Bereinigung der Tabelle &quot;NmsEmailErrorStat&quot; {#cleanup-of-the-nmsemailerrorstat-table-}
 
@@ -552,7 +552,7 @@ Die Liste der Vorschlagstabellen wird abgerufen und gebündelt gelöscht, indem 
 DELETE FROM NmsPropositionXxx WHERE iPropositionId IN (SELECT iPropositionId FROM NmsPropositionXxx WHERE tsLastModified < $(option) LIMIT 5000) 
 ```
 
-wobei `$(option)` das für die Option **NmsCleanup_PropositionPurgeDelay** definierte Datum ist (siehe [Softwareverteilungs-Assistent](#deployment-wizard)).
+wobei `$(option)` das für die Option **NmsCleanup_PropositionPurgeDelay** definierte Datum ist (siehe [Softwareverteilungs-Assistent](#deployment-assistant)).
 
 ### Bereinigung der Simulationstabellen {#cleanup-of-simulation-tables}
 
