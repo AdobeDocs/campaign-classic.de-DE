@@ -6,10 +6,10 @@ feature: Overview
 role: User, Data Architect
 level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
-source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+source-git-commit: de9ff0b50d819038c97e8515ddb7d6cfeb4547a1
 workflow-type: tm+mt
 source-wordcount: '5959'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -249,7 +249,7 @@ Weitere Informationen zu [Briefpost](../../delivery/using/about-direct-mail-chan
 
 Im Bereitstellungsassistenten werden die Parameter der Campaign-Instanz definiert, wie z. B. der Standard-Namespace, der Zeitplan für die Datenbankbereinigung, die Fristen für die Datenspeicherung und andere technische Einstellungen.
 
-Weitere Informationen über den [Bereitstellungsassistenten](../../installation/using/deploying-an-instance.md#deployment-wizard).
+Erfahren Sie mehr über den [Softwareverteilungs-Assistenten](../../installation/using/deploying-an-instance.md#deployment-assistant).
 +++
 
 +++**Deskriptive Analyse**
@@ -484,7 +484,7 @@ Weitere Informationen zum [Inbox Rendering](../../delivery/using/delivery-dashbo
 
 +++**Instanzeneinstellungen**
 
-Instanzeneinstellungen sind Konfigurationsdetails einer Adobe Campaign-Instanz. Diese Einstellungen werden im Bereitstellungassistenten (Tools > Erweitert > Bereitstellungassistent) oder in den Konfigurationsdateien des Servers und/oder der Instanz definiert.
+Instanzeneinstellungen sind Konfigurationsdetails einer Adobe Campaign-Instanz. Diese Einstellungen werden im Softwareverteilungs-Assistenten (Tools > Erweitert > Softwareverteilungs-Assistent) oder in den Server- und/oder Instanzkonfigurationsdateien definiert.
 
 Weitere Informationen über [Instanzeneinstellungen](../../installation/using/about-initial-configuration.md).
 
@@ -492,7 +492,7 @@ Weitere Informationen über [Instanzeneinstellungen](../../installation/using/ab
 
 +++**Vorgänge (Import und Export)**
 
-Vorgänge werden über ein Assistentensystem verwaltet, mit dem der Datenimport in das Produkt und der Datenexport aus dem Produkt vereinfacht werden. Bei Vorgängen wird aus Gründen der Einfachheit und Konsistenz ein Vorlagensystem verwendet. Außerdem können Vorgänge so definiert werden, dass sie nach einem Zeitplan ausgeführt werden.
+Aufträge werden von einem Assistenzsystem verwaltet, das den Import und Export von Daten in und aus dem Produkt vereinfacht. Bei Vorgängen wird aus Gründen der Einfachheit und Konsistenz ein Vorlagensystem verwendet. Außerdem können Vorgänge so definiert werden, dass sie nach einem Zeitplan ausgeführt werden.
 
 Weitere Informationen über [Import- und Exportvorgänge](../../platform/using/get-started-data-import-export.md).
 +++

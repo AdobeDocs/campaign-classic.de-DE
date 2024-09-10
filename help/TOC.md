@@ -6,10 +6,10 @@ title: Campaign Classic v7 – Handbuch
 user-guide-description: Produktdokumentation für Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 3307c75ed7df0fcd357dd7c684481c62e0457e04
+source-git-commit: de9ff0b50d819038c97e8515ddb7d6cfeb4547a1
 workflow-type: tm+mt
 source-wordcount: '2552'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -294,7 +294,7 @@ ht-degree: 100%
       + [Personen und Empfänger](reporting/using/person-people-recipients.md)
    + Populationen analysieren {#analyzing-populations}
       + [Über die deskriptive Analyse](reporting/using/about-descriptive-analysis.md)
-      + [Verwenden des Assistenten für deskriptive Analysen](reporting/using/using-the-descriptive-analysis-wizard.md)
+      + [Deskriptive Analyseassistent verwenden](reporting/using/using-the-descriptive-analysis-wizard.md)
       + [Berichtseinstellungen](reporting/using/processing-a-report.md)
       + [Anwendungsfälle](reporting/using/use-cases.md)
    + Neue Berichte erstellen {#creating-new-reports}
@@ -538,7 +538,7 @@ ht-degree: 100%
       + [Simulationsverfolgung](interaction/using/simulation-tracking.md)
    + Angebot bereitstellen {#delivering-an-offer}
       + [Über Outbound-Kanäle](interaction/using/about-outbound-channels.md)
-      + [Ein Angebot über den Assistenten einbinden](interaction/using/integrating-an-offer-via-the-wizard.md)
+      + [Integration über die Assistenzkraft](interaction/using/integrating-an-offer-via-the-wizard.md)
       + [Ein Angebot über einen Workflow einbinden](interaction/using/integrating-an-offer-via-a-workflow.md)
    + Einzelne Interaktionen {#unitary-interactions}
       + [Über Inbound-Kanäle](interaction/using/about-inbound-channels.md)
@@ -772,7 +772,7 @@ ht-degree: 100%
       + [Filtern von Schemata](configuration/using/filtering-schemas.md)
       + [Einschränken der PII-Ansicht](configuration/using/restricting-pii-view.md)
       + [Datenbankstruktur aktualisieren](configuration/using/updating-the-database-structure.md)
-      + [Assistent für neue Felder](configuration/using/new-field-wizard.md)
+      + [Neuer Feldassistent](configuration/using/new-field-wizard.md)
       + [Struktur eines Datenschemas](configuration/using/structure-of-a-data-schema.md)
       + [Regenerieren von Schemata](configuration/using/regenerating-schemas.md)
       + [Beispiele für Schemabearbeitung](configuration/using/examples-of-schemas-edition.md)
