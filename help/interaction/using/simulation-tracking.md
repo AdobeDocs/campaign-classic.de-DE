@@ -8,10 +8,10 @@ audience: interaction
 content-type: reference
 topic-tags: simulating-offers
 exl-id: 490ebbea-9bdc-453e-8a02-c02b095e55e9
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '153'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -25,7 +25,7 @@ Das Simulationsergebnis zeigt die Verteilung der Vorschläge nach Rang und Zielg
 
 Sie haben die Möglichkeit, die Ergebnisse zu speichern und sie in Form eines deskriptiven Analyseberichts zu exportieren. Klicken Sie hierfür auf den entsprechenden Link im Ergebnisfenster.
 
-Weiterführende Informationen zur beschreibenden Analyse können Sie [diesem Abschnitt](../../reporting/using/about-descriptive-analysis.md) entnehmen.
+Weitere Informationen zum beschreibenden Analyse-Assistenten finden Sie in [diesem Abschnitt](../../reporting/using/about-descriptive-analysis.md) .
 
 ![](assets/offer_simulation_012.png)
 

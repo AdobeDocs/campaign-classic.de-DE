@@ -5,10 +5,10 @@ description: Erfahren Sie, wie Sie native Campaign-Pakete installieren.
 feature: Installation, Application Settings
 badge-v7-prem: label="Nur On-Premise/Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1299'
-ht-degree: 11%
+ht-degree: 10%
 
 ---
 
@@ -32,7 +32,7 @@ Integrierte Pakete enthalten eine Reihe von Funktionen, die je nach Ihren Anford
 
 So installieren Sie ein integriertes Paket:
 
-1. Greifen Sie über **[!UICONTROL Tools > Erweitert > Package-Import...]** in der Adobe Campaign-Client-Konsole auf den Package-Import-Assistenten zu.
+1. Greifen Sie über &quot;**[!UICONTROL Tools > Erweitert > Package importieren]**&quot; in der Adobe Campaign-Clientkonsole auf den Package-Import-Assistenten zu.
 1. Wählen Sie **[!UICONTROL Standard-Package installieren]** aus.
 1. Überprüfen Sie in der Paketliste die Pakete, die Sie installieren möchten.
    >[!NOTE]

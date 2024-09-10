@@ -5,10 +5,10 @@ description: Validierung
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Direct Mail
 exl-id: 42bb395b-b3fe-4d48-8720-5a4cae191984
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '277'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -32,7 +32,7 @@ Mit der Absendebestätigung wird die Extraktion der Daten in die angegebene Date
 
 ![](assets/s_ncs_user_postal_del_send_confirm_postal.png)
 
-Nun können Sie den Assistenten schließen und die Logs im **[!UICONTROL Versand]**-Tab ansehen, auf den Sie über die Detailansicht des Versands zugreifen können.
+Anschließend können Sie den Assistenten schließen und die Versandlogs im Tab **[!UICONTROL Versand]** ansehen, auf den Sie über die Versanddetails zugreifen können.
 
 Sie können den Abrufmodus der Versandlogs auf der Registerkarte **[!UICONTROL Analyse]** der Versandeigenschaften konfigurieren.
 

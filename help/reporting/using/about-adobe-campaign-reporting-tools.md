@@ -5,10 +5,10 @@ description: Analysieren des Erfolgs Ihrer Kampagnen in nativen oder benutzerdef
 feature: Reporting, Monitoring
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 exl-id: 1ef30004-e1b0-4dde-8104-0ee9e8aa9d8b
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '344'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -28,7 +28,7 @@ Adobe Campaign bietet verschiedene Reporting-Tools:
 
    Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../reporting/using/about-campaign-built-in-reports.md).
 
-1. **Deskriptive Datenanalyse**: Werkzeug, das die Erzeugung fachbezogener Statistiken über die in der Datenbank enthaltenen Daten ermöglicht. Sie können Berichte mit deskriptiven Analysen über einen dedizierten Assistenten erstellen und ihren Inhalt sowie ihre Darstellung Ihren Bedürfnissen entsprechend definieren.
+1. **Deskriptive Datenanalyse**: Adobe Campaign bietet ein visuelles Tool zur Erstellung von Statistiken über die Daten in der Datenbank. Diese ermöglichen die Erstellung deskriptiver Analysen anhand eines speziellen Assistenten, deren Inhalt und Layout Sie nach Bedarf anpassen können.
 
    Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../reporting/using/about-descriptive-analysis.md).
 

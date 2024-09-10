@@ -4,7 +4,7 @@ title: Audit-Protokoll
 description: Erfahren Sie, wie Sie Ihre Instanz mit dem Audit-Protokoll von Campaign überwachen.
 feature: Audit Trail, Monitoring, Workflows
 exl-id: 8508d879-fb38-4b1f-9f55-0341bb8d0c67
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '496'
 ht-degree: 64%
@@ -78,7 +78,7 @@ So greifen Sie auf das **[!UICONTROL Audit-Protokoll]** Ihrer Instanz zu:
 
 >[!NOTE]
 >
->Standardmäßig ist die Aufbewahrungsfrist für **[!UICONTROL Auditprotokolle]** auf 180 Tage festgelegt. Weiterführende Informationen zur Änderung des Aufbewahrungszeitraums finden Sie auf dieser [Seite](../../production/using/database-cleanup-workflow.md#deployment-wizard).
+>Standardmäßig ist die Aufbewahrungsfrist für **[!UICONTROL Auditprotokolle]** auf 180 Tage festgelegt. Weiterführende Informationen zur Änderung des Aufbewahrungszeitraums finden Sie auf dieser [Seite](../../production/using/database-cleanup-workflow.md#deployment-assistant).
 
 ## Aktivieren/Deaktivieren des Audit-Protokolls {#enable-disable-audit-trail}
 

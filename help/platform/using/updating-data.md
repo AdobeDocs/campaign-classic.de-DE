@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 exl-id: f7dfbc22-4ac3-4b61-927f-34ecc4e35154
-source-git-commit: 8aceafa362b80f6e34edfd91a71551a58501a3d0
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '776'
-ht-degree: 100%
+ht-degree: 80%
 
 ---
 
@@ -32,17 +32,17 @@ Für eine manuelle Aktualisierung können Sie entweder das Kontextmenü **[!UICO
 
 ![](assets/s_ncs_user_action_icon.png)
 
-Sie haben die Wahl zwischen einer gebündelten Aktualisierung der ausgewählten Empfänger oder einer Fusion der Datensätze. Ein Assistent ermöglicht es Ihnen jeweils, das Update zu konfigurieren.
+Sie haben die Wahl zwischen einer gebündelten Aktualisierung der ausgewählten Empfänger oder einer Fusion der Datensätze. Für jede Aktion kann ein Assistent die Aktualisierung konfigurieren.
 
 ### Gebündelte Aktualisierung {#mass-update}
 
-Für eine gebündelte Aktualisierung wählen Sie die Option **[!UICONTROL Aktionen > Ausgewählte Zeilen gebündelt aktualisieren...]**. Ein Assistent ermöglicht es Ihnen, das Update zu konfigurieren und zu starten.
+Für eine gebündelte Aktualisierung wählen Sie die Option **[!UICONTROL Aktionen > Ausgewählte Zeilen gebündelt aktualisieren...]**. Der Assistent hilft Ihnen beim Konfigurieren und Ausführen des Updates.
 
-Im ersten Schritt des Assistenten sind die zu aktualisierenden Felder anzugeben.
+Der erste Schritt der Assistenzkraft besteht darin, das/die zu aktualisierende(n) Feld/e anzugeben.
 
-In der linken Spalte des Assistenten befindet sich die Liste der verfügbaren Felder. Mithilfe des **[!UICONTROL Suchen]**-Feldes haben Sie die Möglichkeit, die Auswahl einzuschränken. Mit der **Enter**-Taste können Sie die Liste durchsuchen. Die Ihrem Suchkriterium entsprechenden Felder erscheinen fettgedruckt wie in unten stehendem Beispiel.
+Im linken Bereich des Assistenten wird die Liste der verfügbaren Felder angezeigt. Mithilfe des **[!UICONTROL Suchen]**-Feldes haben Sie die Möglichkeit, die Auswahl einzuschränken. Mit der **Enter**-Taste können Sie die Liste durchsuchen. Die Ihrem Suchkriterium entsprechenden Felder erscheinen fettgedruckt wie in unten stehendem Beispiel.
 
-Durch Doppelklick werden die zu aktualisierenden Felder in der rechten Spalte des Assistenten angezeigt.
+Doppelklicken Sie auf die zu aktualisierenden Felder, um sie im rechten Bereich des Assistenten anzuzeigen.
 
 ![](assets/s_ncs_user_update_wizard01_1.png)
 
@@ -60,19 +60,19 @@ Sie haben die Möglichkeit, die Werteverteilung zu filtern oder den zugrunde lie
 
 ![](assets/s_ncs_user_update_wizard01_3.png)
 
-Schließen Sie das Fenster und klicken Sie auf die Schaltfläche **[!UICONTROL Weiter]**, um zum zweiten Schritt des Aktualisierungsassistenten überzugehen. Klicken Sie nun zur Ausführung des Updates auf die Schaltfläche **[!UICONTROL Starten]**.
+Schließen Sie dieses Fenster und klicken Sie auf **[!UICONTROL Weiter]** , um den zweiten Schritt des Aktualisierungsassistenten anzuzeigen. Klicken Sie nun zur Ausführung des Updates auf die Schaltfläche **[!UICONTROL Starten]**.
 
 ![](assets/s_ncs_user_update_wizard01_4.png)
 
-In der oberen Hälfte des Assistenten werden Informationen bezüglich der Durchführung des Updates angezeigt.
+Informationen zur Update-Ausführung finden Sie im oberen Bereich des Assistenten.
 
 Durch Klick auf die Schaltfläche **[!UICONTROL Abbrechen]** kann die Aktualisierung gestoppt werden. Es ist jedoch möglich, dass einzelne Datensätze bereits verarbeitet wurden, diese Aktualisierungen werden durch den Abbruch nicht rückgängig gemacht.
 
 ### Daten fusionieren {#merge-data}
 
-Die Option **[!UICONTROL Ausgewählte Zeilen fusionieren...]** ermöglicht die Fusion von zwei zuvor ausgewählten Empfängerprofilen. Ein Assistent ermöglicht es Ihnen, die Zusammenführung zu konfigurieren und zu starten.
+Wählen Sie **[!UICONTROL Ausgewählte Zeilen zusammenführen..]** aus, um die Zusammenführung zweier Empfängerprofile zu starten. Vor Auswahl der Option müssen die zusammenzuführenden Profile ausgewählt werden. Die Zusammenführung wird mithilfe eines Assistenten konfiguriert und gestartet.
 
-Der Assistent zeigt die Werte an, die für jedes in einem oder mehreren Quellprofilen ausgefüllte Feld abgerufen werden sollen. Bei unterschiedlichen Werten in den jeweiligen Quellen werden diese im Abschnitt **[!UICONTROL Konfliktliste]** angezeigt. Sie können dann das Standardprofil mithilfe der Optionsfelder unter der Liste auswählen, wie im folgenden Beispiel gezeigt:
+Der Assistent zeigt die Werte an, die für jedes in einem oder mehreren der Quellprofile ausgefüllte Feld abgerufen werden sollen. Bei unterschiedlichen Werten in den jeweiligen Quellen werden diese im Abschnitt **[!UICONTROL Konfliktliste]** angezeigt. Sie können dann das Standardprofil mithilfe der Optionsfelder unter der Liste auswählen, wie im folgenden Beispiel gezeigt:
 
 ![](assets/s_ncs_user_merge_wizard01_1.png)
 
@@ -95,7 +95,7 @@ Der Inhalt einer Liste kann exportiert werden. Um den Export zu konfigurieren un
 
    ![](assets/s_ncs_user_export_list_start.png)
 
-   Weitere Informationen zur Konfiguration des Export-Assistenten finden Sie [in diesem Abschnitt](../../platform/using/executing-export-jobs.md).
+   Weiterführende Informationen zur Konfiguration des Export-Assistenten finden Sie in [diesem Abschnitt](../../platform/using/executing-export-jobs.md).
 
 ## Für einen Service anmelden {#subscribing-to-a-service}
 

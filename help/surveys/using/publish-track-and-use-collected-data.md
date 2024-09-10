@@ -5,10 +5,10 @@ description: Erfahren Sie, wie Sie in einer Umfrage erfasste Daten veröffentlic
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Surveys
 exl-id: 3cf3c486-6640-4d67-95cf-50d5767deb60
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '889'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 

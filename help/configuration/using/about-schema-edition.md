@@ -5,10 +5,10 @@ description: Erste Schritte mit der Schemabearbeitung
 feature: Schema Extension
 role: Data Engineer, Developer
 exl-id: 9e10b24e-c4de-4e76-bbed-0d05f62120b7
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1013'
-ht-degree: 62%
+ht-degree: 63%
 
 ---
 
@@ -213,7 +213,7 @@ Gehen Sie wie im nachfolgenden Beispiel vor, um Felder mit Bezug auf das Erstell
 
 ## Datenbankstruktur aktualisieren {#updating-the-database-structure}
 
-Sobald Ihre Änderungen abgeschlossen und gespeichert sind, müssen alle Änderungen, die sich auf die SQL-Struktur auswirken können, auf die Datenbank angewendet werden. Verwenden Sie dazu den Datenbankaktualisierungs-Assistenten.
+Sobald Ihre Änderungen abgeschlossen und gespeichert sind, müssen alle Änderungen, die sich auf die SQL-Struktur auswirken können, auf die Datenbank angewendet werden. Verwenden Sie dazu den Assistenten für das Datenbank-Update.
 
 ![](assets/schemaextension_getting_started_3.png)
 

@@ -4,10 +4,10 @@ title: Scripts/JavaScript-Templates
 description: Scripts/JavaScript-Templates
 feature: Workflows
 exl-id: 4a3647d1-cf8c-4867-871e-472287be7c6a
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1268'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -59,7 +59,7 @@ logInfo("Start date: " + task.creationDate)
 
 Die Funktion **[!UICONTROL logInfo(message)]** erstellt einen Eintrag im Protokoll.
 
-Klicken Sie auf **[!UICONTROL OK]**, um den Assistenten zu schließen und starten Sie den Workflow mithilfe der Aktionsschaltflächen oben rechts der Workflow-Liste. Rufen Sie nach Ende der Ausführung das Protokoll auf. Bei korrekter Ausführung werden zwei dem Script entsprechende Nachrichten angezeigt: Ein Eintrag zeigt den Workflow-Titel, der zweite das Datum der Script-Aktivierung.
+Klicken Sie auf **[!UICONTROL OK]** , um den Erstellungsassistenten zu schließen, und starten Sie dann den Workflow mithilfe der Aktionsschaltflächen oben rechts in der Liste der Workflows. Rufen Sie am Ende der Ausführung das Protokoll auf. Es sollten zwei dem Script entsprechende Nachrichten angezeigt werden: Eine zeigt den Titel des Workflows an, die andere zeigt das Datum an, an dem das Skript aktiviert wurde.
 
 ## Variablen {#variables}
 

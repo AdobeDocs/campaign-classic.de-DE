@@ -6,10 +6,10 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Monitoring
 role: User, Data Engineer, Developer
 exl-id: 9d3f5c74-377a-4e24-81e5-bb605f69cf8a
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '653'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -25,7 +25,7 @@ Es gibt drei Arten von Anweisungen:
 * **[!DNL value]**: um Zugriff auf die Felder des Versands, Versandvariablen und benutzerdefinierte Objekte zu gewähren, die im Versand geladen werden. [Mehr dazu](#value)
 * **[!DNL foreach]**: um eine Schleife über das Array auszuführen, das als benutzerdefiniertes Objekt geladen wird. [Mehr dazu](#foreach)
 
-Sie können direkt vom Versand-Assistenten aus getestet werden. Sie gelten in der Inhaltsvorschau und wenn Sie auf die Tracking-Schaltfläche klicken, um die Liste der URLs anzuzeigen.
+Sie können direkt vom Versand-Assistenten getestet werden. Sie gelten in der Inhaltsvorschau und wenn Sie auf die Tracking-Schaltfläche klicken, um die Liste der URLs anzuzeigen.
 
 ## [!DNL include] {#include}
 
@@ -57,7 +57,7 @@ Die folgenden Beispiele gehören zu den am häufigsten verwendeten:
   <%@ include option='NmsServer_URL' %>
   ```
 
-  Verwenden Sie die Personalisierungsschaltfläche im Versand-Assistenten, um die richtige Syntax zu erhalten.
+  Verwenden Sie die Personalisierungsschaltfläche im Versand-Assistenten, um die korrekte Syntax zu erhalten.
 
 ## [!DNL value] {#value}
 

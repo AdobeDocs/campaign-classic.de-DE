@@ -5,10 +5,10 @@ description: Wichtige Schritte zum Entwerfen einer Umfrage
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Surveys
 exl-id: 8d83dfd5-70ec-4656-965b-f6b5e6f9eec1
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '831'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -34,7 +34,7 @@ Die Seiten des Formulars werden mit einem speziellen Editor erstellt, der die De
 
 ## Felder hinzufügen {#adding-fields}
 
-Über Formularfelder können Benutzer Informationen eingeben und Optionen auswählen. Diese Felder werden für jede Formularseite mit der ersten Schaltfläche der Symbolleiste im Menü **[!UICONTROL Mit Hilfe des Assistenten hinzufügen]** erstellt.
+Über Formularfelder können Benutzer Informationen eingeben und Optionen auswählen. Sie werden für jede Seite im Formular über die erste Schaltfläche in der Symbolleiste mit dem Menü **[!UICONTROL Hinzufügen mit dem Assistenten]** erstellt.
 
 ![](assets/s_ncs_admin_survey_add_field_menu.png)
 

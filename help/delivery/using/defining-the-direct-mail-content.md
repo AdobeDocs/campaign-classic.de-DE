@@ -6,10 +6,10 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Direct Mail
 role: User
 exl-id: 585b2017-9408-4953-8505-2f6d9db8032f
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '192'
-ht-degree: 100%
+ht-degree: 81%
 
 ---
 
@@ -27,7 +27,7 @@ Bei einem Briefversand wird der Extraktionsinhalt über den Link **[!UICONTROL E
 
 ![](assets/s_ncs_user_mail_delivery_format_link.png)
 
-Über diesen Link gelangen Sie in den Extraktions-Assistenten, mit dessen Hilfe die zu exportierenden Daten (Spalten) festgelegt werden.
+Über diesen Link können Sie auf den Extraktionsassistenten zugreifen und die in die Ausgabedatei zu exportierenden Informationen (Spalten) definieren.
 
 ![](assets/s_ncs_user_mail_delivery_format_wz.png)
 
@@ -35,4 +35,4 @@ Sie können eine personalisierte URL in die Extraktionsdatei einfügen. Weiterf�
 
 >[!NOTE]
 >
->Die Schritte des Assistenten entsprechen denen des im Abschnitt [Erste Schritte](../../platform/using/executing-export-jobs.md) beschriebenen Export-Assistenten.
+>Dieser Assistent enthält die Schritte des Export-Assistenten, die im Abschnitt [Erste Schritte](../../platform/using/executing-export-jobs.md) beschrieben werden.

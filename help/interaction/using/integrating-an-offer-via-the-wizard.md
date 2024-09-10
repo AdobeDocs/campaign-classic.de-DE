@@ -1,20 +1,20 @@
 ---
 product: campaign
-title: Integration über den Assistenten
-description: Integration über den Assistenten
+title: Integration über einen Assistenten
+description: Integration über einen Assistenten
 feature: Interaction, Offers
 audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
 exl-id: 64aea8b9-7f06-4db0-a3e6-6a0e17c3ddcb
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '845'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
-# Integrieren eines Angebots über den Assistenten{#integrating-an-offer-via-the-wizard}
+# Integration über einen Assistenten{#integrating-an-offer-via-the-assistant}
 
 
 

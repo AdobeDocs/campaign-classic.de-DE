@@ -6,10 +6,10 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Monitoring
 role: User
 exl-id: 6c0fd76f-3d79-4b69-b911-f8d99dd18c4b
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '183'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
@@ -29,7 +29,7 @@ Standardmäßig zeigt die Versandliste die Titel und Status aller im ausgewählt
 
 >[!NOTE]
 >
->Bei umfangreichen Sendungen können Sie diese Werte aktualisieren. Markieren Sie hierzu den betreffenden Versand und klicken Sie mit der rechten Maustaste darauf. Wählen Sie **[!UICONTROL Aktion > Sende- und Berichtindikatoren neu berechnen...]** und folgen Sie den einzelnen Schritten des Assistenten.
+>Bei umfangreichen Sendungen können Sie diese Werte aktualisieren. Markieren Sie hierzu den betreffenden Versand und klicken Sie mit der rechten Maustaste darauf. Wählen Sie **[!UICONTROL Aktion > Sende- und Berichtindikatoren neu berechnen..]** und verwenden Sie dann den Assistenten, um diese Informationen zu aktualisieren.
 
 **Verwandte Themen:**
 

@@ -5,10 +5,10 @@ description: "Anwendungsbeispiel: Auswählen von Testadressen nach Kriterien"
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Seed Address
 exl-id: 091648b8-bf2d-4595-8be3-287f1ac48edd
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '926'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -83,15 +83,15 @@ Weitere Informationen zu Schemaerweiterungen finden Sie unter [diesem Abschnitt]
 
    ![](assets/dlv_seeds_usecase_12.png)
 
-1. Klicken Sie im Datenbankaktualisierungs-Assistenten auf **[!UICONTROL Weiter]**, um zur Tabellenbearbeitung zu gelangen.
+1. Wenn der Aktualisierungsassistent angezeigt wird, klicken Sie auf die Schaltfläche **[!UICONTROL Weiter]** , um auf das Fenster Tabellen bearbeiten zuzugreifen. Änderungen am Testadressen-Datenschema erfordern eine Strukturaktualisierung.
 
    ![](assets/dlv_seeds_usecase_13.png)
 
-1. Durchlaufen Sie den Assistenten, bis Sie zur Seite zur Ausführung der Aktualisierung gelangen. Klicken Sie auf die Schaltfläche **[!UICONTROL Starten]**.
+1. Folgen Sie dem Assistenten, bis Sie zur Seite kommen, um die Aktualisierung durchzuführen. Klicken Sie auf die Schaltfläche **[!UICONTROL Starten]**.
 
    ![](assets/dlv_seeds_usecase_14.png)
 
-   Nach Abschluss der Aktualisierung können Sie den Assistenten schließen.
+   Sobald die Aktualisierung abgeschlossen ist, können Sie den Assistenten schließen.
 
 1. Trennen Sie die Verbindung und verbinden Sie sich dann erneut mit Adobe Campaign. Die im Testadressen-Schema vorgenommenen Änderungen sind nun wirksam. Damit sie im Eingabefenster der Testadressen sichtbar werden, ist eine Anpassung des **[!UICONTROL entsprechenden Formulars]** erforderlich. Weitere Informationen finden Sie im Abschnitt [Aktualisieren des Eingabeformulars](#updating-the-input-form).
 

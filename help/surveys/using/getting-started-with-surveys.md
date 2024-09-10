@@ -5,10 +5,10 @@ description: Erste Umfrage mit Campaign erstellen
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Surveys
 exl-id: 22e14b24-59ba-4a92-8ffb-f5336793d64f
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '986'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -67,7 +67,7 @@ Im folgenden Beispiel wird die Seite vom Typ **[!UICONTROL Seite (V5-Kompatibili
 
 * **Eingabefelder hinzufügen**
 
-  Um den Inhalt der Seite zu erstellen, müssen Sie sie bearbeiten: Doppelklicken Sie dazu auf das Objekt **[!UICONTROL Seite]**. Wählen Sie das erste Symbol in der Symbolleiste aus, um den Feld-Assistenten zu öffnen. Um ein Eingabefeld für den Benutzernamen zu erstellen, der im entsprechenden Feld des Empfängerprofils gespeichert werden soll, wählen Sie **[!UICONTROL Empfänger bearbeiten]**.
+  Um den Inhalt der Seite zu erstellen, müssen Sie sie bearbeiten: Doppelklicken Sie dazu auf das Objekt **[!UICONTROL Seite]** . Klicken Sie auf das erste Symbol in der Symbolleiste, um den Assistenten zur Felderstellung zu öffnen. Um ein Eingabefeld für den Benutzernamen zu erstellen, der im entsprechenden Feld des Empfängerprofils gespeichert werden soll, wählen Sie **[!UICONTROL Empfänger bearbeiten]**.
 
   ![](assets/s_ncs_admin_survey_add_field_menu.png)
 
@@ -130,7 +130,7 @@ Wählen Sie zum Bestätigen **[!UICONTROL OK]** und danach **[!UICONTROL Speiche
 Damit die Benutzer auf die HTML-Seiten zugreifen können, muss die Anwendung verfügbar gemacht werden. Dazu müssen Sie vom Bearbeitungsstatus in den Produktionsstatus wechseln, d. h. die Umfrage veröffentlichen. Gehen Sie dazu wie folgt vor:
 
 * Klicken Sie auf die Schaltfläche **[!UICONTROL Veröffentlichen]** oberhalb des Umfrage-Dashboards.
-* Wählen Sie **[!UICONTROL Start]** aus, um die Veröffentlichung zu starten und den Assistenten zu schließen.
+* Klicken Sie auf **[!UICONTROL Starten]** , um die Veröffentlichung zu starten und den Assistenten zu schließen.
 
   ![](assets/s_ncs_admin_survey_start_publ.png)
 

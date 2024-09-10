@@ -5,10 +5,10 @@ description: Informationen zur Verwendung von Filterregeln in Adobe Campaign
 role: User, Data Engineer
 feature: Typology Rules, Campaigns
 exl-id: a4d12445-5680-4704-9c67-e43e0ea6631b
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '531'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -64,7 +64,7 @@ Sie haben die Möglichkeit, Typologien zu erstellen, die nur Filterregeln enthal
 
 ![](assets/campaign_opt_create_typo_filtering.png)
 
-Diese **[!UICONTROL Filtertypologien]** können bei der Zielgruppenbestimmung einem Versand zugeordnet werden: Klicken Sie im Versandassistent auf den Link **[!UICONTROL An]**, dann auf den Tab .
+Diese spezifischen Typologien können bei Auswahl der Zielgruppe mit einem Versand verknüpft werden: Klicken Sie im Versand-Assistenten auf den Link **[!UICONTROL Bis]** und dann auf den Tab **[!UICONTROL Ausschlüsse]** .
 
 ![](assets/campaign_opt_apply_typo_filtering.png)
 

@@ -5,10 +5,10 @@ description: Erfahren Sie, wie Sie mit dem Konfigurieren der Mobile App beginnen
 feature: Push
 role: User, Developer
 exl-id: 95bc07cc-8837-4511-81bc-05fad28191c9
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '306'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -46,7 +46,7 @@ Wenn Sie Campaign als On-Premise-Bereitstellung nutzen, müssen Sie ein integrie
 
 Die Installationsschritte sind:
 
-1. Greifen Sie über **[!UICONTROL Tools > Erweitert > Package-Import...]** in der Adobe Campaign-Client-Konsole auf den Package-Import-Assistenten zu.
+1. Greifen Sie über &quot;**[!UICONTROL Tools > Erweitert > Package importieren]**&quot; in der Adobe Campaign-Clientkonsole auf den Package-Import-Assistenten zu.
 
    ![](assets/package_ios.png)
 

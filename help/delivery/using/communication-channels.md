@@ -6,10 +6,10 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Cross Channel Orchestration, Email, SMS, In App, Direct Mail, Push
 role: User
 exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
-source-git-commit: 8fbfc211c4e791b324c34d3d180daa7597c00c7f
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1221'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 Mit Adobe Campaign können Sie kanalübergreifende Kampagnen wie E-Mails, SMS, LINE-Nachrichten, Push-Benachrichtigungen und Briefpost senden und deren Effektivität mithilfe verschiedener dedizierter [Berichte](../../reporting/using/delivery-reports.md) messen. Diese Nachrichten werden mittels Sendungen entworfen und gesendet und können für jeden Empfänger personalisiert werden.
 
-Zu den Kernfunktionen zählen die Zielgruppenbestimmung, die Definition und Personalisierung von Nachrichten, die Ausführung von Kommunikationen und die damit verbundenen operativen Berichte. Als Hauptzugriffspunkt dient der Versand-Assistent. Dieser Zugriffspunkt führt zu mehreren Funktionen, die von Adobe Campaign abgedeckt werden.
+Zu den Kernfunktionen zählen Zielgruppenbestimmung, Definition und Personalisierung von Nachrichten, Ausführung der Kommunikation und die damit verbundenen operativen Berichte. Der wichtigste funktionale Zugangspunkt ist der Versandassistent. Dieser Zugriffspunkt führt zu mehreren Funktionen, die von Adobe Campaign abgedeckt werden.
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ Sendungen können **online** (per E-Mail, Mobile-Kanal und Push-Benachrichtigung
 Je nach Kanal sind folgende Versandmodi verfügbar:
 
 * Gebündelter Versand via Adobe Campaign (Standardmodus beim E-Mail-Kanal).
-* Externer Versand über spezialisierte Dienstleister. In diesem Fall erzeugt der Versand-Assistent eine Ausgabedatei. (Standardmodus beim Briefpost-Kanal.)
+* Externer Versand über einen spezialisierten Benutzer, der die vom Versandassistenten erstellte Ausgabedatei erhält (Standardmodus für den Briefpost-Kanal).
 
 Die hierfür benötigten externen Konten werden im Knoten **[!UICONTROL Administration > Plattform > Externe Konten]** verwaltet. Die Konfiguration sollte von erfahrenen Benutzern vorgenommen werden.
 

@@ -6,10 +6,10 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Email
 role: User
 exl-id: db65e83e-276f-4163-98c3-3658a48acffc
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1082'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -54,7 +54,7 @@ Gehen Sie wie folgt vor, um eine lokale Datei an einen Versand anzuhängen.
 
    ![](assets/s_ncs_user_wizard_email_attachement.png)
 
-Sie können die Datei auch per Drag-and-Drop direkt in das Versandfeld **[!UICONTROL Anhänge]** ziehen oder das Symbol für **[!UICONTROL Datei anfügen]** in der Symbolleiste des Versand-Assistenten verwenden.
+Sie können die Datei auch direkt per Drag-and-Drop in das Versand-Feld **[!UICONTROL Anhänge]** ziehen oder das Symbol **[!UICONTROL Anhängen]** in der Symbolleiste des Versand-Assistenten verwenden.
 
 ![](assets/s_ncs_user_wizard_add_file_ico.png)
 

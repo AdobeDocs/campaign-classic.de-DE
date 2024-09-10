@@ -6,7 +6,7 @@ feature: Application Settings
 role: Data Engineer, Developer
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 exl-id: 38333669-5598-4811-a121-b677c1413f56
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 3%
@@ -22,7 +22,7 @@ Die Erstellung von Zielgruppen-Mappings ist in zwei Fällen erforderlich:
 * wenn Sie eine andere als die von Adobe Campaign bereitgestellte Empfängertabelle verwenden,
 * wenn Sie im Zielgruppen-Mapping-Bildschirm eine von der Standard-Zielgruppendimension abweichende Filterdimension konfigurieren.
 
-Mit dem Assistenten zur Zielgruppen-Mapping-Erstellung können Sie alle Schemas erstellen, die zur Verwendung Ihrer benutzerdefinierten Tabelle erforderlich sind.
+Der Assistent zur Erstellung von Zielgruppen-Mappings hilft Ihnen beim Erstellen aller Schemas, die zur Verwendung Ihrer benutzerdefinierten Tabelle erforderlich sind.
 
 ## Schemata erstellen und konfigurieren, die mit der benutzerdefinierten Tabelle verknüpft sind {#creating-and-configuring-schemas-linked-to-the-custom-table}
 
@@ -112,7 +112,7 @@ Gehen Sie hierzu wie folgt vor:
 
 1. Klicken Sie auf die Schaltfläche **Speichern** , um den Assistenten zu schließen.
 
-   Der Assistent verwendet das Startschema, um alle anderen Schemata zu erstellen, die für die Funktionsfähigkeit des neuen Zielgruppen-Mappings erforderlich sind.
+   Die Assistenzkraft verwendet das Startschema, um alle anderen Schemata zu erstellen, die erforderlich sind, damit das neue Zielgruppen-Mapping funktioniert.
 
    ![](assets/mapping_schema_list.png)
 

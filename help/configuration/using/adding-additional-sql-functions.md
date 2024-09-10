@@ -5,7 +5,7 @@ description: Erfahren Sie, wie Sie zusätzliche SQL-Funktionen definieren
 feature: Configuration, Instance Settings
 role: Data Engineer, Developer
 exl-id: 04b0a0e5-d6df-447c-ac67-66adb1bdf717
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1037'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Nachdem diese Funktionen hinzugefügt wurden, werden sie im Ausdruckseditor wie 
 
 Die hinzuzufügenden Funktionen befinden sich in der Datei **&quot;package&quot; im XML-Format**, deren Struktur im folgenden Absatz beschrieben wird.
 
-Um es über die Konsole zu installieren, wählen Sie im Menü die Optionen **Tools/Erweitert/Package importieren** , dann die Option **[!UICONTROL Aus Datei installieren]** und befolgen Sie die Anweisungen im Importassistenten.
+Um es über die Konsole zu installieren, wählen Sie im Menü die Optionen **Tools/Erweitert/Package importieren** , dann die Option **[!UICONTROL Aus Datei installieren]** und befolgen Sie die Anweisungen im Import-Assistenten.
 
 >[!IMPORTANT]
 >

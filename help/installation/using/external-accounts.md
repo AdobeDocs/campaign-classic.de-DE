@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: a1dbef3e1feca1e3347de013db8bd7809d315016
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1952'
 ht-degree: 64%
@@ -406,7 +406,7 @@ Um dieses externe Konto für die gemeinsame Verwendung mit Adobe Campaign zu kon
 
   Wählen Sie die Version der API aus.
 
-Für dieses externe Konto müssen Sie Salesforce CRM mit dem Konfigurationsassistenten konfigurieren.
+Für dieses externe Konto müssen Sie Ihr Salesforce CRM mit dem Konfigurationsassistenten konfigurieren.
 
 Weiterführende Informationen zur Konfiguration finden Sie auf dieser [Seite](../../platform/using/crm-connectors.md).
 

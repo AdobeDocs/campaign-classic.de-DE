@@ -5,10 +5,10 @@ description: '„Anwendungsfall: Erstellen des Content-Managements“'
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Delivery Templates
 exl-id: b0d1cf0e-656e-4d24-9a31-16fef4cd40d0
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1235'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -382,7 +382,7 @@ Nun können Sie auf dieser Veröffentlichungsvorlage beruhende Inhalte erstellen
 >
 >Weitere Informationen zum Erstellen von Inhalten finden Sie unter [Verwenden einer Inhaltsvorlage](using-a-content-template.md).
 
-### Erstellen von Inhalten im Versand-Assistenten {#creating-content-in-the-delivery-wizard}
+### Erstellen von Inhalten im Versand-Assistenten {#creating-content-in-the-delivery-assistant}
 
 Gehen Sie wie folgt vor, um direkt im Versand einen Inhalt zu erstellen:
 
@@ -390,7 +390,7 @@ Gehen Sie wie folgt vor, um direkt im Versand einen Inhalt zu erstellen:
 
    ![](assets/s_ncs_content_in_delivery.png)
 
-   Im Versand-Assistenten erscheint ein zusätzlicher Tab, der es ermöglicht, den Versandinhalt über das zuvor erstellte Formular zu erfassen.
+   Im Versand-Assistenten wird ein zusätzlicher Tab hinzugefügt, um den Inhalt mithilfe des Content-Management-Formulars zu definieren.
 
 1. Geben Sie hier die variablen Elemente Ihres Newsletters ein.
 

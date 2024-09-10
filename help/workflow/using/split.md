@@ -4,10 +4,10 @@ title: Aufspaltung
 description: Erfahren Sie mehr über die Workflow-Aktivität "Aufspaltung".
 feature: Workflows, Targeting Activity
 exl-id: 4204350a-c2d2-4033-9bdf-87b49d8211b9
-source-git-commit: 13eb777e96602ddd3463f721c6b2a3e6b67cb329
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '2169'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -44,7 +44,7 @@ Gehen Sie wie folgt vor:
 
 1. Sie können die Anzahl an Einträgen festlegen, die maximal aus der Zielgruppe extrahiert werden sollen, um die Teilmenge zu erstellen. Markieren Sie hierfür die Option **[!UICONTROL Ausgewählte Einträge einschränken]** und klicken Sie auf den Link **[!UICONTROL Bearbeiten...]**.
 
-   Mit einem Assistenten können Sie den Auswahlmodus für Einträge dieser Teilmenge auswählen. Die Schritte finden Sie unter [Anzahl an Datensätzen in Teilmengen begrenzen](#limiting-the-number-of-subset-records).
+   Ein Assistent ermöglicht die Auswahl des Auswahlmodus für Datensätze dieser Teilmenge. Die Schritte finden Sie unter [Anzahl an Datensätzen in Teilmengen begrenzen](#limiting-the-number-of-subset-records).
 
    ![](assets/s_user_segmentation_partage4.png)
 

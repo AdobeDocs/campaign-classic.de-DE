@@ -4,10 +4,10 @@ title: Inkrementelle Abfrage
 description: Erfahren Sie mehr über die Workflow-Aktivität "Inkrementelle Abfrage".
 feature: Workflows, Targeting Activity
 exl-id: abc08232-1a92-41e8-90f1-02e0a673539b
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '380'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -35,7 +35,7 @@ Gehen Sie dazu wie folgt vor:
 1. Aktivieren Sie auf der Registerkarte **[!UICONTROL Planung und Verlauf]** die Option **[!UICONTROL Ausführung planen]**. Nach Erstellung bleibt die Aufgabe aktiv, aber sie startet nur zu den in der Planung angegebenen Zeitpunkten, um die Abfrage auszuführen. Wenn die Option deaktiviert wurde, wird die Abfrage **einmalig und sofort** ausgeführt.
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Ändern...]**.
 
-   Im sich öffnenden **[!UICONTROL Planungsassistent]**-Fenster können Sie den Ausführungsrhythmus und den Gültigkeitszeitraum definieren.
+   Im Fenster **[!UICONTROL Bearbeitungsassistent planen]** können Sie die Häufigkeit, die Wiederholung und den Gültigkeitszeitraum des Ereignisses konfigurieren.
 
    ![](assets/s_user_segmentation_wizard_11.png)
 

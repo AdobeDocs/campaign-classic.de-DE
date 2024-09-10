@@ -6,10 +6,10 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Subscriptions
 role: User
 exl-id: 16dddd4a-2e1a-4c78-8168-f656657bb9b8
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1174'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -126,7 +126,7 @@ Sie haben verschiedene Möglichkeiten, um einen Empfänger für einen Dienst anz
   Lesen Sie diesbezüglich auch über die Bearbeitung von Empfängerprofilen in [diesem Abschnitt](../../platform/using/editing-a-profile.md).
 
 * Gruppe von Empfängerinnen und Empfängern automatisch für einen Dienst anmelden. Die Liste der Empfänger kann aus einer Filterung, einer Gruppe, einem Ordner, einem Import oder einer direkten Auswahl mithilfe der Maus stammen. Um diese Empfänger anzumelden, wählen Sie die Profile aus und klicken Sie mit der rechten Maustaste darauf. Wählen Sie **[!UICONTROL Aktionen > Auswahl für einen Dienst anmelden...]** aus, wählen Sie den betreffenden Service aus und starten Sie den Prozess.
-* Empfänger im Zuge eines Imports für einen Dienst anmelden. Geben Sie im letzten Schritt des Import-Assistenten den gewünschten Dienst an.
+* Empfänger im Zuge eines Imports für einen Dienst anmelden. Wählen Sie dazu im letzten Schritt des Import-Assistenten den entsprechenden Dienst aus.
 
   Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../platform/using/executing-import-jobs.md).
 

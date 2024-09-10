@@ -5,10 +5,10 @@ description: Hinzufügen von Feldern zu einem Web-Formular
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Web Forms, Landing Pages
 exl-id: 827b6575-7206-4dfc-b2c6-b95a6d5730b1
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '2466'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 Über Felder eines Webformulars können Benutzer Informationen eingeben und Optionen auswählen. Webformulare können Eingabefelder, Auswahlfelder sowie statische und erweiterte Inhalte (Captchas, Abonnements etc.) enthalten.
 
-Wenn Sie über den Assistenten Felder hinzufügen, wird der Feldtyp automatisch auf der Basis des ausgewählten Felds oder der Speichervariablen erkannt. Den Feldtyp können Sie im Tab **[!UICONTROL Allgemein]** über das Dropdown-Feld **[!UICONTROL Typ]** bearbeiten.
+Wenn Sie den Assistenten zum Hinzufügen von Feldern verwenden, wird der Feldtyp automatisch anhand des ausgewählten Felds oder der Speichervariablen erkannt. Den Feldtyp können Sie im Tab **[!UICONTROL Allgemein]** über das Dropdown-Feld **[!UICONTROL Typ]** bearbeiten.
 
 ![](assets/s_ncs_admin_webform_change_type.png)
 
@@ -43,9 +43,9 @@ Spezifizieren Sie den Speichermodus für Antworten: ein Feld in der Datenbank ak
 >
 >Standardmäßig wird das Feld am unteren Ende des aktuellen Baums eingefügt. Mit den Pfeilen in der Symbolleiste kann das Feld hinauf und hinunter bewegt werden.
 
-## Feld-Assistent {#field-creation-wizard}
+## Assistent zur Felderstellung {#field-creation-assistant}
 
-Über die erste Schaltfläche der Symbolleiste können Sie Felder in jede Formularseite einfügen. Gehen Sie dazu zum Menü **[!UICONTROL Mit Hilfe des Assistenten hinzufügen]**.
+Über die erste Schaltfläche der Symbolleiste können Sie Felder in jede Formularseite einfügen. Gehen Sie dazu zum Menü **[!UICONTROL Hinzufügen mit dem Assistenten]** .
 
 ![](assets/s_ncs_admin_survey_add_field_menu.png)
 

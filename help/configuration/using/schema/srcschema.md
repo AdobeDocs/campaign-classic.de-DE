@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: bc4329b4-d272-4d32-bdaa-290cb9912af4
-source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 1%
@@ -57,7 +57,7 @@ Die Schemadarstellung ist in [Über die Schemareferenz](../../../configuration/u
 * **desc (string)**: Schemabeschreibung
 * **entitySchema (string)**: Basisschema, auf dem Syntax und Genehmigung basieren (standardmäßig für Adobe Campaign: xtk:srcSchema). Wenn Sie das aktuelle Schema speichern, validiert Adobe Campaign seine Grammatik mit dem im Attribut @xtkschema deklarierten Schema.
 * **extendedSchema (string)**: empfängt den Namen des nativen Schemas, auf dem die aktuelle Schemaerweiterung basiert. Das Formular lautet &quot;namespace:name&quot;.
-* **img (string)**: Mit dem Schema verknüpftes Symbol (kann im Assistenten zur Schemaerstellung definiert werden).
+* **img (string)**: Symbol, das mit dem Schema verknüpft ist (kann im Assistenten zur Schemaerstellung definiert werden).
 * **label (string)**: Schemakennung.
 * **labelSingular (string)**: label (singular) zur Anzeige in der Benutzeroberfläche.
 * **lastModified (datetime)**: Dieses Attribut enthält Informationen zum Datum und zur Uhrzeit der letzten Änderung. Es enthält das Formular &quot;Datum/Uhrzeit&quot;. Die angezeigten Werte werden vom Server übernommen. Die Uhrzeit wird im UTC-Format angezeigt.

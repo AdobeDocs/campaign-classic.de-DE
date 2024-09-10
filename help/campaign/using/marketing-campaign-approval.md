@@ -5,10 +5,10 @@ description: Erfahren Sie, wie Sie Genehmigungen von Marketing-Kampagnen verwalt
 role: User
 feature: Approvals, Campaigns
 exl-id: 8cbb2445-f5e4-4a25-ba7e-56e39ca9d3ce
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '2606'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -321,7 +321,7 @@ Diese Option ermöglicht die Bestimmung einer für die Inhaltsbearbeitung verant
 
    ![](assets/s_ncs_user_validation_submit_content_notif.png)
 
-1. Er kann sich dann mit der Konsole verbinden, um den Versand zu öffnen und diesen mittels eines vereinfachten Assistenten zu bearbeiten, der die Änderung des Betreffs, der HTML- und Textinhalte sowie die Durchführung von Testsendungen ermöglicht.
+1. Sie können sich dann in der Konsole anmelden, den Versand öffnen und ihn mithilfe eines vereinfachten Assistenten bearbeiten, um Betreff, HTML und Textinhalt zu ändern und Testsendungen durchzuführen.
 
    ![](assets/s_user_validation_content_edition.png)
 

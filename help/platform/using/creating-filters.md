@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: filtering-data
 exl-id: 58e54f67-dc87-42f1-8426-6f801e8e4fb6
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '2103'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -204,7 +204,7 @@ Filter sind jedem Benutzer spezifisch und werden bei jeder Cache-Leerung der Cli
 
 Sie haben jedoch die Möglichkeit, einen **Anwendungsfilter** durch die Speicherung eines erweiterten Filters zu erstellen. Einmal gespeichert kann dieser über die rechte Maustaste in jeder Liste oder über die Schaltfläche **[!UICONTROL Filter]** oberhalb der Listen wiederverwendet werden.
 
-Direkter Zugriff auf diese Filter besteht zudem über den Versand-Assistenten bei der Zielgruppenbestimmung (nähere Informationen zur Erstellung von Sendungen erhalten Sie in [diesem Abschnitt](../../delivery/using/creating-an-email-delivery.md)). Es gibt folgende Möglichkeiten, einen Anwendungsfilter zu erstellen:
+Auf diese Filter kann auch direkt über den Versand-Assistenten in der Phase der Zielgruppenauswahl zugegriffen werden (weitere Informationen zur Erstellung von Sendungen finden Sie in [diesem Abschnitt](../../delivery/using/creating-an-email-delivery.md) ). Um den Anwendungsfilter zu erstellen, haben Sie folgende Möglichkeiten:
 
 * Umwandlung eines erweiterten Filters in einen Anwendungsfilter: Wählen Sie hierzu **[!UICONTROL Speichern]** aus, bevor Sie den Editor der erweiterten Filter schließen.
 
@@ -376,6 +376,6 @@ Klicken Sie auf den Tab **[!UICONTROL Parameter]**, um auf folgende Optionen zuz
 
   Aktivieren Sie die Option **[!UICONTROL Filter nicht weiter einschränken]**, wenn der Benutzer nicht berechtigt sein soll, den Filter zu überschreiben.
 
-  Diese Option ist zum Beispiel für die im Versand-Assistenten angebotenen Filter &quot;Versandempfänger&quot; und &quot;Zu einem Ordner gehörende Versandempfänger&quot; aktiv, die nicht überschrieben werden können.
+  Diese Option ist für die im Versand-Assistenten angebotenen Filter &quot;Versandempfänger&quot; und &quot;Zu einem Ordner gehörende Empfänger von Sendungen&quot; aktiviert, die nicht überschrieben werden können.
 
   ![](assets/s_ncs_user_filter_advanced_param.png)

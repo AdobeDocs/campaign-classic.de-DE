@@ -6,16 +6,16 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Monitoring, Email Design, Personalization
 role: User
 exl-id: 3277726a-fd92-4720-8871-3d0422c7db70
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '183'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
 # Konfigurieren von URL-Tracking-Optionen{#personalizing-url-tracking}
 
-Erweiterte Tracking-Parameter können im Versand-Assistenten konfiguriert werden. Klicken Sie hierfür in der Symbolleiste auf die Schaltfläche **[!UICONTROL Tracking &amp; Bilder]**.
+Erweiterte Tracking-Einstellungen für Nachrichten sind über das Symbol **[!UICONTROL Tracking &amp; Bilder]** in der Symbolleiste des Versand-Assistenten verfügbar.
 
 >[!NOTE]
 >

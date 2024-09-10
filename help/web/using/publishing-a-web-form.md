@@ -5,10 +5,10 @@ description: Veröffentlichen eines Web-Formulars
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Web Forms
 exl-id: 1c66b8e8-7590-4767-9b2f-a9a509df4508
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1373'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -140,7 +140,7 @@ Damit Benutzer auf das Formular zugreifen können, muss es sich in Produktion be
 
 ### Formular per E-Mail versenden {#delivering-a-form-via-email}
 
-Wenn Sie eine Einladung per E-Mail versenden, können Sie die Option **[!UICONTROL Adobe-Campaign-Verschlüsselung]** zur Abstimmung der Daten verwenden. Gehen Sie dazu zum Versand-Assistenten und passen Sie den Link an das Formular an, indem Sie die folgenden Parameter hinzufügen:
+Wenn Sie eine Einladung per E-Mail versenden, können Sie die Option **[!UICONTROL Adobe Campaign-Verschlüsselung]** zur Abstimmung der Daten verwenden. Gehen Sie dazu zum Versand-Assistenten und passen Sie den Link an das Formular an, indem Sie den folgenden Parameter hinzufügen:
 
 ```
 <a href="https://server/webApp/APP264?&id=<%=escapeUrl(recipient.cryptedId) %>">

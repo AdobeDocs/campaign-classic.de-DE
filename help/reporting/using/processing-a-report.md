@@ -5,10 +5,10 @@ description: Verwenden eines Analyseberichts
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Reporting, Monitoring
 exl-id: d133efec-33e1-4711-a90f-e40385059386
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '885'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -126,11 +126,11 @@ Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../reporti
 
 ## Erneute Verwendung von bestehenden Berichten und Analysen {#re-using-existing-reports-and-analyses}
 
-Sie können neue Berichte mit deskriptiven Analysen auf bereits existierenden, in Adobe Campaign gespeicherten Berichten basieren. Dieser Verwendungsmodus ist möglich, wenn die Analysen gespeichert oder die Berichte dahingehend erstellt und konfiguriert wurden, dass sie für den Assistenten zugänglich sind.
+Sie können neue Berichte mit deskriptiven Analysen auf bereits existierenden, in Adobe Campaign gespeicherten Berichten basieren. Dieser Modus ist möglich, wenn Analysen gespeichert oder Berichte erstellt und für den Zugriff über den Assistenten zur deskriptiven Analyse konfiguriert wurden.
 
 Informationen zum Speichern deskriptiver Analysen finden Sie unter [Analyseberichte speichern](#saving-an-analysis-report).
 
-Um einen deskriptiven Analysebericht zu erstellen, muss der deskriptive Analyse-Assistent über einen Workflow oder das Menü **[!UICONTROL Werkzeuge > Deskriptive Analyse]** ausgeführt werden.
+Um einen deskriptiven Analysebericht zu erstellen, muss der deskriptive Analyseassistent über eine Workflow-Transition oder über das Menü **[!UICONTROL Werkzeuge > Deskriptive Analyse]** ausgeführt werden.
 
 1. Wählen Sie **[!UICONTROL Existierende Analysen und Berichte]** aus und klicken Sie auf **[!UICONTROL Weiter]**.
 1. Die Liste der verfügbaren Berichte wird angezeigt. Klicken Sie auf den Berichttitel, um ihn zu erzeugen.
@@ -143,7 +143,7 @@ Wenn Sie eine deskriptive Analyse basierend auf einer existierenden Analyse erst
 
 Gehen Sie wie folgt vor, um einen Verlauf zu erstellen:
 
-1. Öffnen Sie eine existierende Analyse oder erstellen Sie einen neuen Analyse-Bericht.
+1. Öffnen Sie eine vorhandene Analyse oder erstellen Sie einen neuen beschreibenden Analyse-Assistenten.
 1. Klicken Sie auf die Schaltfläche zur Erstellung eines Verlaufs in der Symbolleiste und bestätigen Sie Ihre Auswahl, wie im folgenden Beispiel:
 
    ![](assets/reporting_descriptive_historize_icon.png)

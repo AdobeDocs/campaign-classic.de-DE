@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 39bfe775-e182-4a0b-ad3c-b7a901297c90
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 63%
@@ -30,7 +30,7 @@ Die Verbindung mit einer externen SAP-HANA-Datenbank über die FDA-Option erford
 1. Installieren Sie entsprechend dem verwendeten Betriebssystem die nötigen ODBC-Treiber für SAP HANA:
 
    * **hdb_client_linux.tgz für Linux: Dekomprimieren Sie die Datei, führen Sie den hdbinst-Befehl aus und folgen Sie der Anleitung zur Installation der Treiber.**
-   * **hdb_client_windows.zip** für Windows. Entpacken Sie die Datei und starten Sie die ausführbare Datei: **hdbinst.exe**. Folgen Sie den Anweisungen des Assistenten, um die Installation der Treiber abzuschließen.
+   * **hdb_client_windows.zip** für Windows. Entpacken Sie die Datei und starten Sie die ausführbare Datei: **hdbinst.exe**. Befolgen Sie die Anweisungen des Assistenten, um die Installation der Treiber abzuschließen.
 
 1. Konfigurieren sie den ODBC-Treiber. Die Konfiguration kann in den Standarddateien ausgeführt werden: /etc/odbc.ini für allgemeine Parameter und /etc/odbcinst.ini zur Deklarierung der Treiber.
 
