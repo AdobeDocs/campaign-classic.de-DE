@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: f3980859-2837-416b-a0ef-2b369d2d50bd
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 586456f27dbc039ecb39cc8bd1f6dbdf8af823be
 workflow-type: tm+mt
-source-wordcount: '417'
-ht-degree: 73%
+source-wordcount: '464'
+ht-degree: 57%
 
 ---
 
@@ -38,11 +38,13 @@ Bei mehreren Adobe Campaign-Workflow-Aktivitäten können Sie die in einer exter
 
 * **Informationen und Links hinzufügen** – Die Aktivität [Anreicherung](../../workflow/using/enrichment.md) ermöglicht das Hinzufügen zusätzlicher Daten zur Arbeitstabelle des Workflows sowie von Links zu einer externen Tabelle. In diesem Zusammenhang kann es Daten aus einer externen Datenbank verwenden. Weitere Informationen finden Sie auf [dieser Seite](../../workflow/using/enrichment.md).
 
-## FDA-Beschränkungen {#limitations}
+## Schutzmechanismen und Einschränkungen {#fda-limitations}
 
-Die FDA-Option wird zur Bearbeitung der Daten in externen Datenbanken im Batch-Modus in Workflows verwendet. Um Performance-Probleme zu vermeiden, wird nicht empfohlen, das FDA-Modul im Kontext von Einzeloperationen zu verwenden, etwa Personalisierung, Interaktion oder Echtzeit-Messaging.
+Die FDA-Option wurde entwickelt, um die Daten in externen Datenbanken im Batch-Modus in Workflows zu bearbeiten. Um Performance-Probleme zu vermeiden, wird nicht empfohlen, das FDA-Modul im Kontext von Einzeloperationen zu verwenden, etwa Personalisierung, Interaktion oder Echtzeit-Messaging.
 
-Vermeiden Sie möglichst Vorgänge, bei denen sowohl Adobe Campaign als auch die externe Datenbank zum Einsatz kommen. Gehen Sie dazu folgendermaßen vor:
+Das Targeting von Daten aus einer Datenbank und das Filtern der Ergebnisse mithilfe einer Filterdimension, die zu einer anderen Datenbank gehört, wird nicht unterstützt. Tabellen, die sich in unterschiedlichen Datenquellen befinden, können nicht in einer Abfrage zusammengefügt werden. Sie können diese Einschränkung mithilfe anderer Workflow-Aktivitäten wie Dimensionsänderung umgehen.
+
+Vermeiden Sie möglichst Vorgänge, bei denen sowohl die Adobe Campaign als auch die externe Datenbank verwendet werden müssen. Best Practice:
 
 * Exportieren Sie die Adobe Campaign-Datenbank in die externe Datenbank und führen Sie die Aktionen nur in der externen Datenbank aus. Importieren Sie danach die Ergebnisse wieder in Adobe Campaign.
 
