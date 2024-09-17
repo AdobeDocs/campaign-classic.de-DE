@@ -8,16 +8,14 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: 4aaa6256-256a-441d-80c9-430f8e427875
-source-git-commit: 1be1528d657537786c430ea9c8bdb3aad58ba20d
+source-git-commit: 1ab08a89b17fca20e9497696417ecba580e26802
 workflow-type: tm+mt
-source-wordcount: '1154'
+source-wordcount: '1162'
 ht-degree: 7%
 
 ---
 
 # Aktualisierung auf einen neuen Build (On-Premise){#upgrading}
-
-
 
 Ermitteln und bestätigen Sie vor Beginn des Aktualisierungsprozesses, auf welche Version von Adobe Campaign aktualisiert werden soll, und lesen Sie die [Versionshinweise](../../rn/using/latest-release.md) .
 
@@ -119,15 +117,17 @@ Gehen Sie in einer Linux-Umgebung wie folgt vor, um Adobe Campaign auf einen neu
 
 [Erfahren Sie mehr über die Client Console-Verfügbarkeit](../../installation/using/client-console-availability-for-windows.md).
 
->[!NOTE]
->
->Ab Build 8757 wird die Bibliothek von Drittanbietern nicht mehr benötigt.
-
 ### Aktualisierte Pakete abrufen {#obtain-updated-packages}
 
 Rufen Sie zunächst beide aktualisierten Pakete von Adobe Campaign ab: Stellen Sie mithilfe Ihrer Benutzeranmeldeinformationen eine Verbindung zum [Software-Verteilungsportal](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) her. Weitere Informationen zur Softwareverteilung finden Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de).
 
 Die Datei ist **nlserver6-v7-XXX.rpm**
+
+>[!AVAILABILITY]
+>
+>Ab Version 7.4.1 sind Bibliotheken für RPM Linux-Pakete nicht mehr in Campaign enthalten. Sie müssen diese Bibliotheken installieren.
+> 
+
 
 ### Aktualisieren {#perform-an-update}
 
