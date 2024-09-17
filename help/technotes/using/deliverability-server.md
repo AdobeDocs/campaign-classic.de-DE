@@ -6,10 +6,10 @@ feature: Technote, Deliverability
 hide: true
 hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: 8d15a5666b5768bc0f17a4391061c4fcb9f76811
+source-git-commit: c42d4022587846081442a39d03546c0ef335c7a0
 workflow-type: tm+mt
-source-wordcount: '997'
-ht-degree: 98%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -52,7 +52,7 @@ Zur Integration des neuen Zustellbarkeits-Servers muss Campaign mit Adobe Shared
 >
 > Die Anmeldedaten für Service-Konten (JWT) werden von Adobe demnächst eingestellt. Campaign-Integrationen mit Adobe-Lösungen und -Apps müssen jetzt mit OAuth-Server-to-Server-Anmeldedaten arbeiten. </br>
 >
-> * Wenn Sie eingehende Integrationen in Campaign implementiert haben, müssen Sie Ihr technisches Konto migrieren, wie in [dieser Dokumentation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank) beschrieben. Vorhandene [Service-Konto (JWT)-Anmeldedaten](oauth-technical-account.md) funktionieren bis zum 27. Januar 2025 weiterhin. </br>
+> * Wenn Sie eingehende Integrationen in Campaign implementiert haben, müssen Sie Ihr technisches Konto migrieren, wie in [dieser Dokumentation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank) beschrieben. Vorhandene [Service-Konto (JWT)-Anmeldedaten](../../integrations/using/oauth-technical-account.md) funktionieren bis zum 27. Januar 2025 weiterhin. </br>
 >
 > * Wenn Sie ausgehende Integrationen implementiert haben, z. B. die Integration von Campaign mit Analytics oder Experience Cloud Triggers, funktionieren diese noch bis zum 27. Januar 2025. Vor diesem Datum müssen Sie jedoch Ihre Campaign-Umgebung auf v7.4.1 aktualisieren und Ihr technisches Konto auf OAuth migrieren.
 
