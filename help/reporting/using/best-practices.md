@@ -5,10 +5,10 @@ description: Best Practices für Kampagnenberichte
 feature: Reporting, Monitoring
 badge: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 exl-id: 0c7f00f3-b16d-41c5-a7b1-f5a59201bf8c
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 517b85f5d7691acc2522bf4541f07c34c60c7fbf
 workflow-type: tm+mt
-source-wordcount: '851'
-ht-degree: 99%
+source-wordcount: '852'
+ht-degree: 97%
 
 ---
 
@@ -97,7 +97,7 @@ Die oben stehenden Empfehlungen erlauben es, die Berechnung der Berichte zu opti
 
 Adobe Campaign empfiehlt Ihnen zusätzlich die folgenden Verbesserungsmöglichkeiten:
 
-* Bearbeitung des Datenmodells: Vorrangige Verwendung indexierter Felder, um die Berechnungsleistungen zu verbessern.
+* Bearbeiten Sie Ihr Datenmodell: Indexierte Felder müssen hauptsächlich zur Verbesserung von Berechnungsformeln verwendet werden.
 
   Zur einfachen Erkennung von indexierten Feldern ist in Adobe Campaign der Sortierungspfeil neben den Spaltentiteln rot unterstrichen, wenn das Feld indexiert ist.
 

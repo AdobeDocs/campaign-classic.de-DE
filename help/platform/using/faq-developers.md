@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 20552812-5c58-4d48-9636-d5135197685d
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 517b85f5d7691acc2522bf4541f07c34c60c7fbf
 workflow-type: tm+mt
-source-wordcount: '508'
-ht-degree: 100%
+source-wordcount: '509'
+ht-degree: 98%
 
 ---
 
@@ -24,7 +24,7 @@ Adobe Campaign ist eine offene Lösung, die die benutzerdefinierte Nutzung und d
 
 Das konzeptionelle Datenmodell der Adobe Campaign-Datenbank besteht aus einer Reihe integrierter Tabellen und deren Interaktion. Die physische und logische Struktur der in der Anwendung übertragenen Daten wird in XML beschrieben. Sie folgt einer Adobe Campaign-spezifischen Grammatik namens „Schema“. Weiterführende Informationen zu Adobe Campaign-Schemata [finden Sie in diesem Abschnitt](../../configuration/using/about-schema-edition.md).
 
-[Hier erfahren Sie mehr zum Datenmodell von Campaign](https://helpx.adobe.com/de/campaign/kb/acc-datamodel.html).
+[Klicken Sie hier , um mehr über das Campaign-Datenmodell zu erfahren.](https://helpx.adobe.com/de/campaign/kb/acc-datamodel.html)
 
 Best Practices werden [in diesem Artikel](../../configuration/using/data-model-best-practices.md) beschrieben.
 
