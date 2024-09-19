@@ -4,9 +4,9 @@ title: Sendungen
 description: Erfahren Sie mehr über die standardmäßigen Workflows für Sendungen.
 feature: Workflows
 source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '324'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ Die folgenden Workflows werden standardmäßig mit dem Modul **Sendungen** insta
   <tr> 
    <td> <span class="uicontrol">Datenbankbereinigung</span> <br /> </td> 
    <td> <span class="uicontrol">cleanup</span> <br /> </td> 
-   <td> <p>Dieser Workflow dient der Datenbankwartung. Er führt verschiedene Berechnungen aus den Statistiken und Prozessen durch und löscht veraltete Daten aus der Datenbank entsprechend der im Softwareverteilungs-Assistenten definierten Konfiguration. Er wird standardmäßig täglich um 4 Uhr ausgelöst.</p> <p>Weiterführende Informationen dazu finden Sie auf dieser <a href="../../production/using/database-cleanup-workflow.md">Seite</a>.</p> </td> 
+   <td> <p>Dieser Workflow ist der Datenbankwartungs-Workflow: Er führt verschiedene Berechnungen mit Statistiken und Prozessen durch und löscht gemäß der definierten Konfiguration im Bereitstellungsassistenten veraltete Daten aus der Datenbank. Er wird standardmäßig jeden Tag um 4 Uhr morgens ausgelöst.</p> <p>Weiterführende Informationen dazu finden Sie auf dieser <a href="../../production/using/database-cleanup-workflow.md">Seite</a>.</p> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Bereinigung ausgesetzter Workflows</span> <br /> </td> 

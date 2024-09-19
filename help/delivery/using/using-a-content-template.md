@@ -6,9 +6,9 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Templates
 exl-id: e43dd68e-2e95-4367-9029-4622fbcb1759
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '448'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Sie können auch zum Erstellen von Inhaltsinstanzen genutzt werden. Nach der Ers
 
 ## Versanderstellung unter Verwendung des Content Managements {#creating-a-delivery-via-content-management}
 
-Sie haben die Möglichkeit, bei der Versanderstellung eine Inhaltsvorlage anzugeben und mithilfe dieser den Inhalt zu erfassen. Zum Versand-Assistenten wird ein zusätzlicher Tab zur Definition des Versandinhalts hinzugefügt.
+Sie haben die Möglichkeit, bei der Versanderstellung eine Inhaltsvorlage anzugeben und mithilfe dieser den Inhalt zu erfassen. Im Versandassistenten erscheint in diesem Fall ein zusätzlicher Tab mit den Feldern zur Eingabe der variablen Inhaltselemente.
 
 ![](assets/s_ncs_content_deliver_a_content.png)
 
@@ -32,7 +32,7 @@ Das Layout wird automatisch auf der Basis der ausgewählten Einstellungen angewe
 
 ![](assets/s_ncs_content_deliver_a_content_html.png)
 
-Weitere Informationen hierzu finden Sie im vollständigen Implementierungsbeispiel: [Inhalt im Versand-Assistenten erstellen](use-case-creating-content-management.md#creating-content-in-the-delivery-assistant).
+Weitere Informationen finden Sie im vollständigen Implementierungsbeispiel unter [Inhaltserstellung im Versandassistenten](use-case-creating-content-management.md#creating-content-in-the-delivery-assistant).
 
 ## Erstellung einer Inhaltsinstanz {#creating-a-content-instance}
 

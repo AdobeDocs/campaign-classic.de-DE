@@ -6,9 +6,9 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Direct Mail
 exl-id: 42bb395b-b3fe-4d48-8720-5a4cae191984
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '277'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Mit der Absendebestätigung wird die Extraktion der Daten in die angegebene Date
 
 ![](assets/s_ncs_user_postal_del_send_confirm_postal.png)
 
-Anschließend können Sie den Assistenten schließen und die Versandlogs im Tab **[!UICONTROL Versand]** ansehen, auf den Sie über die Versanddetails zugreifen können.
+Nun können Sie den Assistenten schließen und die Versand-Logs auf der Registerkarte **[!UICONTROL Versand]** ansehen, auf die Sie über die Detailansicht des Versands zugreifen können.
 
 Sie können den Abrufmodus der Versandlogs auf der Registerkarte **[!UICONTROL Analyse]** der Versandeigenschaften konfigurieren.
 

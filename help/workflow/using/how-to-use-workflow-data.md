@@ -5,9 +5,9 @@ description: Erfahren Sie, wie Sie die Workflow-Daten verwenden.
 feature: Workflows, Data Management
 exl-id: 5354d608-2fea-45f9-a0aa-11c7e965ab04
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '416'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -53,7 +53,7 @@ Beispielsweise können Sie bei Briefpost-Sendungen Zusatzdaten in die Extraktion
 
 ![](assets/s_advuser_add_data_postal_mail.png)
 
-Zusätzlich zu den üblichen Personalisierungsfeldern können Sie dem Versandinhalt Personalisierungsfelder aus Workflow-Phasen hinzufügen. Die in den Workflow-Aktivitäten definierten Zusatzdaten können, wie im folgenden Beispiel gezeigt, im Versand-Assistenten gespeichert und zur Verfügung gestellt werden, um den Namen der Ausgabedatei im Rahmen des Briefpost-Versands zu definieren:
+Ergänzend zu den üblichen Personalisierungsfeldern können Sie den Versandinhalt mit aus einem Workflow stammenden Daten personalisieren. Tatsächlich können die aus Workflow-Aktivitäten gewonnenen Zusatzdaten gespeichert und im Versandassistenten verfügbar gemacht werden. Unten stehendes Beispiel verdeutlicht dies anhand des Namens der Ausgabedatei eines Briefpost-Versands:
 
 ![](assets/s_advuser_using_additional_data.png)
 

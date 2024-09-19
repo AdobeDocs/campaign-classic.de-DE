@@ -5,9 +5,9 @@ description: Weitere Informationen zu Zielgruppendaten in einem Workflow.
 feature: Query Editor, Data Management, Workflows
 exl-id: 74b82019-bdab-4442-84cf-5ad18d0db788
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2026'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ Kreuzen Sie den gewünschten Formeltyp an, beispielsweise Aggregat.
 
 Die Unterelemente erscheinen als Unterordner der Sammlung, der sie angehören.
 
-Sammlungen werden in der Unterregisterkarte **[!UICONTROL Sammlungen]** angezeigt. Sie können die gesammelten Elemente filtern, indem Sie auf das Symbol **[!UICONTROL Detail]** der ausgewählten Sammlung klicken. Im Filterassistenten können Sie die abgerufenen Daten auswählen und die Filterbedingungen festlegen, die auf die in der Kollektion enthaltenen Daten angewendet werden.
+Sammlungen werden in der Unterregisterkarte **[!UICONTROL Sammlungen]** angezeigt. Sie können die gesammelten Elemente filtern, indem Sie auf das Symbol **[!UICONTROL Detail]** der ausgewählten Sammlung klicken. Mit dem Filterassistenten können Sie die gesammelten Daten auswählen und die auf die Daten in der Sammlung anzuwendenden Filterbedingungen festlegen.
 
 ![](assets/query_add_columns_collection.png)
 

@@ -7,9 +7,9 @@ feature: Cross Channel Orchestration, Email, SMS, In App, Direct Mail, Push
 role: User
 exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1221'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -43,9 +43,9 @@ Sendungen können **online** (per E-Mail, Mobile-Kanal und Push-Benachrichtigung
 Je nach Kanal sind folgende Versandmodi verfügbar:
 
 * Gebündelter Versand via Adobe Campaign (Standardmodus beim E-Mail-Kanal).
-* Externer Versand über einen spezialisierten Benutzer, der die vom Versandassistenten erstellte Ausgabedatei erhält (Standardmodus für den Briefpost-Kanal).
+* Externer Versand über spezialisierte Dienstleister. In diesem Fall erzeugt der Versandassistent eine Ausgabedatei. (Standardmodus beim Briefpost-Kanal.)
 
-Die hierfür benötigten externen Konten werden im Knoten **[!UICONTROL Administration > Plattform > Externe Konten]** verwaltet. Die Konfiguration sollte von erfahrenen Benutzern vorgenommen werden.
+Die hierfür benötigten externen Konten werden im Knoten **[!UICONTROL Administration > Plattform > Externe Konten]** verwaltet. Die Konfiguration sollte von erfahrenen Benutzerinnen und Benutzern vorgenommen werden.
 
 ## E-Mail-Versand {#email-deliveries}
 

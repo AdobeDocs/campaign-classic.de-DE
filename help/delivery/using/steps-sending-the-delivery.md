@@ -7,9 +7,9 @@ feature: Channel Configuration
 role: User
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1624'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -53,9 +53,9 @@ Klicken Sie dazu auf **[!UICONTROL Senden]**, wählen Sie die gewünschte Aktion
 
 ![](assets/s_ncs_user_email_del_send.png)
 
-Klicken Sie abschließend auf **[!UICONTROL Absendung bestätigen]**, um den Versand der Nachrichten zu starten.
+Klicken Sie abschließend auf **[!UICONTROL Versand bestätigen]**, um den Versand der Nachrichten zu starten.
 
-Sie können dann den Versandassistenten schließen und die Ausführung des Versands im Tab **[!UICONTROL Versand]** verfolgen, auf den über die Details dieses Versands oder über die Versandliste zugegriffen werden kann.
+Nun können Sie den Versandassistenten schließen und die Durchführung auf der Registerkarte **[!UICONTROL Versand]** verfolgen (entweder in der Detailansicht des Versands oder in der Versandliste).
 
 Nach dem Nachrichtenversand können Sie Ihre Sendungen überwachen und verfolgen. Lesen Sie diesbezüglich auch diese Abschnitte:
 

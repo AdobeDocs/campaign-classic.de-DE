@@ -6,9 +6,9 @@ role: User
 feature: Approvals, Campaigns
 exl-id: 8cbb2445-f5e4-4a25-ba7e-56e39ca9d3ce
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2606'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -321,7 +321,7 @@ Diese Option ermöglicht die Bestimmung einer für die Inhaltsbearbeitung verant
 
    ![](assets/s_ncs_user_validation_submit_content_notif.png)
 
-1. Sie können sich dann in der Konsole anmelden, den Versand öffnen und ihn mithilfe eines vereinfachten Assistenten bearbeiten, um Betreff, HTML und Textinhalt zu ändern und Testsendungen durchzuführen.
+1. Diese Person kann sich dann bei der Konsole anmelden, den Versand öffnen und diesen mittels eines vereinfachten Assistenten bearbeiten, um den Betreffs, HTML- und Textinhalte zu änder und Testsendungen durchzuführen.
 
    ![](assets/s_user_validation_content_edition.png)
 

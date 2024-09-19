@@ -7,9 +7,9 @@ role: User, Data Architect
 level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
 source-git-commit: de9ff0b50d819038c97e8515ddb7d6cfeb4547a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5959'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -245,11 +245,11 @@ Ein Versandentwurf besteht aus einem strukturierten Satz von Elementen (Dokument
 Weitere Informationen zu [Briefpost](../../delivery/using/about-direct-mail-channel.md).
 +++
 
-+++**Bereitstellungsassistent**
++++**Bereitstellungsassistenten**
 
 Im Bereitstellungsassistenten werden die Parameter der Campaign-Instanz definiert, wie z. B. der Standard-Namespace, der Zeitplan für die Datenbankbereinigung, die Fristen für die Datenspeicherung und andere technische Einstellungen.
 
-Erfahren Sie mehr über den [Softwareverteilungs-Assistenten](../../installation/using/deploying-an-instance.md#deployment-assistant).
+Weitere Informationen zum [Bereitstellungsassistenten](../../installation/using/deploying-an-instance.md#deployment-assistant).
 +++
 
 +++**Deskriptive Analyse**
@@ -484,15 +484,15 @@ Weitere Informationen zum [Inbox Rendering](../../delivery/using/delivery-dashbo
 
 +++**Instanzeneinstellungen**
 
-Instanzeneinstellungen sind Konfigurationsdetails einer Adobe Campaign-Instanz. Diese Einstellungen werden im Softwareverteilungs-Assistenten (Tools > Erweitert > Softwareverteilungs-Assistent) oder in den Server- und/oder Instanzkonfigurationsdateien definiert.
+Instanzeneinstellungen sind Konfigurationsdetails einer Adobe Campaign-Instanz. Diese Einstellungen werden im Softwareverteilungs-Assistenten (Tools > Erweitert > Softwareverteilungs-Assistent) oder in den Konfigurationsdateien des Servers und/oder der Instanz definiert.
 
 Weitere Informationen über [Instanzeneinstellungen](../../installation/using/about-initial-configuration.md).
 
 +++
 
-+++**Vorgänge (Import und Export)**
++++**Aufräge (Import und Export)**
 
-Aufträge werden von einem Assistenzsystem verwaltet, das den Import und Export von Daten in und aus dem Produkt vereinfacht. Bei Vorgängen wird aus Gründen der Einfachheit und Konsistenz ein Vorlagensystem verwendet. Außerdem können Vorgänge so definiert werden, dass sie nach einem Zeitplan ausgeführt werden.
+Aufräge werden über ein Assistentensystem verwaltet, mit dem der Datenimport in das Produkt und der Datenexport aus dem Produkt vereinfacht werden. Bei Aufrägen wird aus Gründen der Einfachheit und Konsistenz ein Vorlagensystem verwendet. Außerdem können Aufräge so definiert werden, dass sie nach einem Zeitplan ausgeführt werden.
 
 Weitere Informationen über [Import- und Exportvorgänge](../../platform/using/get-started-data-import-export.md).
 +++

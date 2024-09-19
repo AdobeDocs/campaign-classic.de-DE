@@ -7,9 +7,9 @@ feature: SMS
 role: User
 exl-id: 94aa4628-d973-433d-b963-b078e2d6672b
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '454'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Gehen Sie wie folgt vor, um einen neuen SMS-Versand zu erstellen:
 
 Um den Inhalt der SMS zu erstellen, gehen Sie wie folgt vor:
 
-1. Geben Sie den Inhalt der Nachricht im Abschnitt **[!UICONTROL Textinhalt]** des Assistenten ein. Die Schaltflächen der Symbolleiste bieten die Möglichkeit, Inhalte zu importieren und zu speichern oder in ihnen zu suchen. Die letzte Schaltfläche in der Symbolleiste dient der Einfügung von Personalisierungsfeldern.
+1. Geben Sie den Nachrichteninhalt im Bereich **[!UICONTROL Textinhalt]** des Assistenten ein. Mit den Schaltflächen der Symbolleiste können Sie Inhalte importieren, speichern oder suchen. Die letzte Schaltfläche in der Symbolleiste dient der Einfügung von Personalisierungsfeldern.
 
    ![](assets/s_ncs_user_wizard_sms01_138.png)
 

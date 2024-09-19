@@ -7,9 +7,9 @@ feature: Subscriptions
 role: User
 exl-id: 16dddd4a-2e1a-4c78-8168-f656657bb9b8
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1174'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -126,7 +126,7 @@ Sie haben verschiedene Möglichkeiten, um einen Empfänger für einen Dienst anz
   Lesen Sie diesbezüglich auch über die Bearbeitung von Empfängerprofilen in [diesem Abschnitt](../../platform/using/editing-a-profile.md).
 
 * Gruppe von Empfängerinnen und Empfängern automatisch für einen Dienst anmelden. Die Liste der Empfänger kann aus einer Filterung, einer Gruppe, einem Ordner, einem Import oder einer direkten Auswahl mithilfe der Maus stammen. Um diese Empfänger anzumelden, wählen Sie die Profile aus und klicken Sie mit der rechten Maustaste darauf. Wählen Sie **[!UICONTROL Aktionen > Auswahl für einen Dienst anmelden...]** aus, wählen Sie den betreffenden Service aus und starten Sie den Prozess.
-* Empfänger im Zuge eines Imports für einen Dienst anmelden. Wählen Sie dazu im letzten Schritt des Import-Assistenten den entsprechenden Dienst aus.
+* Importieren Sie Empfängerinnen und Empfänger und abonnieren Sie sie automatisch für einen Informationsdienst. Geben Sie im letzten Schritt des Import-Assistenten den gewünschten Dienst an.
 
   Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../platform/using/executing-import-jobs.md).
 
@@ -144,9 +144,9 @@ Sie haben verschiedene Möglichkeiten, um einen Empfänger für einen Dienst anz
 
 #### Manuelle Abmeldung {#manual-unsubscribing}
 
-Für kommerzielle E-Mail-Sendungen ist das Einfügen eines Abmelde-Links gesetzlich vorgeschrieben. Empfänger, die nicht mehr kontaktiert werden möchten, können auf den entsprechenden Link klicken und werden so zukünftig aus den Versandzielgruppen ausgeschlossen.
+E-Mail-Sendungen müssen laut Gesetzgeber einen Link zum Abbestellen enthalten. Die Empfängerinnen und Empfänger können diesen Link anklicken, um ihr Profil zu aktualisieren und von künftigen Sendungen ausgeschlossen zu werden.
 
-Der standardmäßige Abmelde-Link wird über die letzte Schaltfläche in der Symbolleiste des Inhaltseditors eingefügt, der im Versand-Assistenten bereitgestellt wird (siehe [Über die Personalisierung](about-personalization.md)). Wenn der Empfänger auf diesen Link klickt, wird das Profil in die Blockierungsliste aufgenommen (Opt-out); der Empfänger wird also von keiner Versandaktion mehr als Ziel ausgewählt.
+Der standardmäßige Abmelde-Link wird über die letzte Schaltfläche in der Symbolleiste des Inhaltseditors eingefügt, der im Versandassistenten bereitgestellt wird (siehe [Über die Personalisierung](about-personalization.md)). Wenn der Empfänger auf diesen Link klickt, wird das Profil in die Blockierungsliste aufgenommen (Opt-out); der Empfänger wird also von keiner Versandaktion mehr als Ziel ausgewählt.
 
 Die Empfänger können sich allerdings von einem Dienst abmelden, ohne sich von allen Diensten abmelden zu müssen. Dazu können Sie ein Webformular verwenden (siehe [diesen Abschnitt](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes)) oder einen personalisierten Abmelde-Link einfügen (siehe [Gestaltungsbausteine](personalization-blocks.md)).
 

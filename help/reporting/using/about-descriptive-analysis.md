@@ -1,22 +1,22 @@
 ---
 product: campaign
-title: Erste Schritte mit der deskriptiven Analyse
-description: Erste Schritte mit der deskriptiven Analyse
+title: Erste Schritte mit deskriptiver Analyse
+description: Erste Schritte mit deskriptiver Analyse
 feature: Reporting, Monitoring
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 exl-id: 19920058-e8e8-4e17-9cc3-24ddf9f96d04
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '210'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
-# Erste Schritte mit der deskriptiven Analyse{#about-descriptive-analysis}
+# Erste Schritte mit deskriptiver Analyse{#about-descriptive-analysis}
 
 
 
-Um Statistiken über die in der Datenbank enthaltenen Daten zu erhalten, erstellen Sie deskriptive Analyseberichte mithilfe des dedizierten Assistenten und passen Sie Inhalt und Präsentation an Ihre Bedürfnisse an.
+Um Statistiken über Daten Ihrer Datenbank zu erzeugen, können Sie Berichte mit deskriptiven Analysen über einen dedizierten Assistenten erstellen und Inhalt und Darstellung entsprechend Ihren Vorstellungen anpassen.
 
 Diese Berichte beziehen sich auf Populationen und sind der Analyse geringer Datenvolumen vorbehalten.
 
@@ -38,7 +38,7 @@ Eine quantitative Analyse bietet globale Statistiken über numerische Daten der 
 
 ![](assets/reporting_descriptive_quantitative_sample.png)
 
-Diese Berichte werden mithilfe des Assistenten zur deskriptiven Analyse erstellt, der auf verschiedenen Schritten aufbaut und es ermöglicht, den zu erstellenden Berichtstyp sowie die Daten und das Layout zu wählen. Der Bericht wird im letzten Schritt angezeigt. Bei Bedarf kann der Bericht veröffentlicht und mit anderen Benutzern geteilt, gedruckt oder in verschiedenen Formaten exportiert werden (Excel, PDF oder OpenDocument).
+Im Assistenten für deskriptive Analysen werden in mehreren Schritten der zu erzeugende Berichtstyp sowie die Daten und ihre Formatierung ausgewählt. Der Bericht wird im letzten Schritt angezeigt. Bei Bedarf kann der Bericht veröffentlicht und mit anderen Benutzern geteilt, gedruckt oder in verschiedenen Formaten exportiert werden (Excel, PDF oder OpenDocument).
 
 Berichte der deskriptiven Analyse sind weniger leistungsfähig als Adobe-Campaign-Berichte, ermöglichen aber einen schnellen Überblick über den Inhalt der Datenbank oder ausgewählte Daten.
 

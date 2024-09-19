@@ -7,9 +7,9 @@ feature: Deliverability
 role: User
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
 source-git-commit: de6e86eb2304a88e836c5759b87d7f38446ed357
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '778'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Weitere Tipps zur Optimierung der Zustellbarkeit beim Entwerfen von Inhalten fin
 
 Bestimmte Internet-Anbieter überprüfen die Gültigkeit der Absenderadresse (**[!UICONTROL Von]**), bevor sie Nachrichten annehmen. Eine fehlerhafte Adresse kann dazu führen, dass sie vom empfangenden Server abgelehnt wird.
 
-Stellen Sie sicher, dass auf Instanzenebene (Menü **[!UICONTROL Tools > Erweitert > Softwareverteilungs-Assistent..]**) oder in den am häufigsten verwendeten Szenarien eine korrekte Adresse angegeben ist.
+Sie müssen sicherstellen, dass auf Instanzebene (Menü **[!UICONTROL Tools > Erweitert > Bereitstellungassistent...]**) oder in den am häufigsten verwendeten Szenarien eine richtige Adresse angegeben wird.
 
 Weitere Informationen hierzu finden Sie auf [dieser Seite](defining-the-email-content.md).
 

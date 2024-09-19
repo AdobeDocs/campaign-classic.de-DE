@@ -8,9 +8,9 @@ role: User, Data Architect
 level: Beginner
 exl-id: 2db1034d-cad6-4fb0-8646-dd9099080ab0
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '190'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 83%
 
 
 
-Die Adobe-Campaign-Plattform bietet ein leistungsstarkes Abfragetool, das bei der Erfüllung verschiedener Funktionen wie Zielgruppenbestimmung, Segmentation des Kundenstamms, Extraktion und Filterung von Trackinglogs sowie Erstellung von Filtern zur Anwendung kommt.
+Das Abfragetool von Adobe Campaign ist auf mehreren Ebenen der Software zu finden: zum Erstellen einer Zielpopulation, zum Segmentieren von Kundinnen und Kunden, zum Extrahieren und Filtern von Trackinglogs, zum Erstellen von Filtern usw.
 
-Mit dem Adobe Campaign-Abfragetool können Sie eine Datenbank mithilfe eines dedizierten Assistenten abfragen: des generischen Abfrageeditors. Der Zugriff darauf erfolgt über das Menü **[!UICONTROL Werkzeuge > Generisches Abfragetool...]** Sie können damit in einer Datenbank gespeicherte Informationen extrahieren sowie organisieren, gruppieren, sortieren usw. So kann ein Benutzer beispielsweise die Empfängerinnen und Empfänger abrufen, die innerhalb eines bestimmten Zeitraums mehr als x-mal auf einen Link in einem Newsletter geklickt haben. Mit diesem Tool können Sie Ergebnisse nach Bedarf sammeln, sortieren und anzeigen.
+Mit dem Adobe Campaign-Abfragetool können Sie eine Datenbank mithilfe eines dedizierten Assistenten abfragen: dem generischen Abfragetool. Der Zugriff darauf erfolgt über das Menü **[!UICONTROL Werkzeuge > Generisches Abfragetool...]** Sie können damit in einer Datenbank gespeicherte Informationen extrahieren sowie organisieren, gruppieren, sortieren usw. So kann ein Benutzer beispielsweise die Empfängerinnen und Empfänger abrufen, die innerhalb eines bestimmten Zeitraums mehr als x-mal auf einen Link in einem Newsletter geklickt haben. Mit diesem Tool können Sie Ergebnisse nach Bedarf sammeln, sortieren und anzeigen.
 
 Alle Abfrageoptionen in Adobe Campaign werden über dieses Tool gesteuert. So lassen sich z. B. Einschränkungsfilter im Tool erstellen und speichern. Derart angelegte Benutzerfilter sind dadurch auch in der Abfrageaktivität eines Zielgruppen-Workflows verfügbar.
 

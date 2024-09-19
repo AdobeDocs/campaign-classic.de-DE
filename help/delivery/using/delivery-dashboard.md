@@ -7,9 +7,9 @@ feature: Monitoring
 role: User, Data Engineer
 exl-id: 44ecc8c6-6584-43eb-96b4-7d8463053123
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1255'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -76,7 +76,7 @@ Im **[!UICONTROL Tracking]**-Tab wird der Tracking-Verlauf des Versands angezeig
 >
 >Sollte das Tracking für einen Versand nicht aktiviert worden sein, wird dieser Tab nicht angezeigt.
 
-Die Tracking-Konfiguration erfolgt in der entsprechenden Phase des Versand-Assistenten. Siehe [Getrackte Links konfigurieren](how-to-configure-tracked-links.md).
+Die Tracking-Konfiguration erfolgt im entsprechenden Schritt im Versandassistenten. Siehe [Getrackte Links konfigurieren](how-to-configure-tracked-links.md).
 
 Interpretationen der **[!UICONTROL Trackingdaten]** finden Sie in den Versandberichten. Weitere Informationen finden Sie [in diesem Abschnitt](../../reporting/using/delivery-reports.md).
 

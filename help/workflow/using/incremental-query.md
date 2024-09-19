@@ -5,9 +5,9 @@ description: Erfahren Sie mehr über die Workflow-Aktivität "Inkrementelle Abfr
 feature: Workflows, Targeting Activity
 exl-id: abc08232-1a92-41e8-90f1-02e0a673539b
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '380'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Gehen Sie dazu wie folgt vor:
 1. Aktivieren Sie auf der Registerkarte **[!UICONTROL Planung und Verlauf]** die Option **[!UICONTROL Ausführung planen]**. Nach Erstellung bleibt die Aufgabe aktiv, aber sie startet nur zu den in der Planung angegebenen Zeitpunkten, um die Abfrage auszuführen. Wenn die Option deaktiviert wurde, wird die Abfrage **einmalig und sofort** ausgeführt.
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Ändern...]**.
 
-   Im Fenster **[!UICONTROL Bearbeitungsassistent planen]** können Sie die Häufigkeit, die Wiederholung und den Gültigkeitszeitraum des Ereignisses konfigurieren.
+   Im sich Fenster **[!UICONTROL Planungsassistent]** können Sie den Ausführungsrhythmus, das Intervall und den Gültigkeitszeitraum des Ereignisses definieren.
 
    ![](assets/s_user_segmentation_wizard_11.png)
 

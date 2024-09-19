@@ -7,9 +7,9 @@ feature: Data Management
 role: User, Developer, Data Engineer
 exl-id: a4472a7c-a16b-4d10-a8ca-f74ca5f62de4
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '678'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ Das **`<collection-recipient>`**-Element stellt das Eingabeelement des Dokuments
 
 ### Abfrage hinzufügen {#adding-a-query}
 
-Die Abfrageparameter werden mithilfe eines Assistenten bearbeitet.
+Ein Assistent führt Sie durch die einzelnen Schritte zur Konfiguration Ihrer Abfrage.
 
 1. Geben Sie im ersten Schritt den Titel und das Schema an, das die abzurufenden Daten enthält.
 

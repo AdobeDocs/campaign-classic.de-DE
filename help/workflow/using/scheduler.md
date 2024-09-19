@@ -5,9 +5,9 @@ description: Erfahren Sie mehr über die Workflow-Aktivität "Planung".
 feature: Workflows
 exl-id: 30a9bd2a-afb1-481c-ab5f-5acebd9cbb5a
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '339'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ Die Planung definiert die Aktivierungsplanung der Transition. Doppelklicken Sie 
 
 ![](assets/s_user_segmentation_scheduler.png)
 
-Ein Assistent ermöglicht die Bestimmung der Häufigkeit und Gültigkeit der Aktivität. Die Konfigurationsschritte lauten wie folgt:
+In den folgenden Schritten des Assistenten lassen sich die Frequenz der Ausführungen und die Gültigkeit der Aktivität festlegen. Die Konfiguration stellt sich wie folgt dar:
 
 1. Kreuzen Sie die gewünschte Häufigkeit an und klicken Sie auf **[!UICONTROL Weiter]**.
 

@@ -5,9 +5,9 @@ description: Erfahren Sie mehr über den Lebenszyklus der Arbeitsdaten in Workfl
 feature: Workflows, Data Management
 exl-id: 366acc1e-d769-4053-9fa1-f47182627c07
 source-git-commit: f90df5a5e5b3a2317d86ff2919560ded38f44f44
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '531'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -35,9 +35,9 @@ Wählen Sie im Kontextmenü die entsprechende Option aus:
 
 * Ergebnis analysieren...
 
-  Über dieses Menü gelangen Sie in den Assistenten zur deskriptiven Analyse, der die Erstellung von Statistiken und Berichten über die Transitionsdaten ermöglicht.
+  Diese Option bietet Zugriff auf den Assistenten für deskriptive Analysen, welcher die Erstellung von Statistiken und Berichten über die in der Transition übermittelten Daten ermöglicht.
 
-  Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../reporting/using/using-the-descriptive-analysis-wizard.md).
+  Weitere Informationen hierzu finden Sie in diesem [Abschnitt](../../reporting/using/using-the-descriptive-analysis-wizard.md).
 
 Die Zielgruppendaten werden bei Ausführung des Workflows bereinigt. Nur die letzte Arbeitstabelle ist zugänglich. Sie haben die Möglichkeit, den Workflow dahingehend zu konfigurieren, dass alle Arbeitstabellen beibehalten werden. Aktivieren Sie hierzu in den Workflow-Eigenschaften die Option **[!UICONTROL Zwischen zwei Ausführungen die ermittelte Population festhalten]**.
 

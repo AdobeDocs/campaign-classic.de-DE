@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 94fc473a-dc49-41e8-b572-51c162b09996
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1037'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -25,11 +25,11 @@ So kann es sinnvoll sein, Tracking-Daten von Kampagnen (Tracking-Verlauf usw.) i
 
 Mit dem Export-Assistenten können Sie einen Export konfigurieren, seine Optionen definieren und die Ausführung starten. Es handelt sich dabei um eine Reihe von Bildschirmen, deren Inhalt von der Art des Exports (einfach oder mehrfach) und den Rechten des Benutzers abhängt.
 
-Der Export-Assistent wird nach der Erstellung eines neuen Exportvorgangs angezeigt (siehe [Erstellen von Import- und Exportvorgängen](../../platform/using/creating-import-export-jobs.md)).
+Der Export-Assistent wird nach der Erstellung eines neuen Exportvorgangs angezeigt (siehe [Erstellen von Import- und Exportaufrägen](../../platform/using/creating-import-export-jobs.md).
 
 ## 1. Schritt – Exportvorlage auswählen {#step-1---choosing-the-export-template}
 
-Beim Starten des Export-Assistenten müssen Sie zunächst eine Vorlage auswählen. Gehen Sie wie folgt vor, um den Export von Empfängern zu konfigurieren, die sich kürzlich registriert haben:
+Beim Start des Export-Assistenten muss zunächst eine Vorlage ausgewählt werden. Um beispielsweise den Export von Empfangenden zu konfigurieren, die sich kürzlich angemeldet haben, gehen Sie folgendermaßen vor:
 
 1. Gehen Sie zum Ordner **[!UICONTROL Profile und Zielgruppen > Vorgang > Allgemeine Importe und Exporte]**.
 1. Wählen Sie **Neu** und danach **Exportieren** aus, um die Exportvorlage zu erstellen.
@@ -95,7 +95,7 @@ An dieser Stelle kann die Sortierreihenfolge der einzelnen Spalten festgelegt we
 
 ## 6. Schritt – Filterbedingungen {#step-6---filter-conditions-}
 
-Um nicht alle Datensätze zu exportieren, haben Sie die Möglichkeit, Filterbedingungen zu konfigurieren. Die Konfiguration dieser Filterung entspricht der Zielgruppenbestimmung des Empfängers im Versand-Assistenten. Mehr dazu erfahren Sie auf [dieser Seite](../../delivery/using/steps-defining-the-target-population.md).
+Um nicht alle Datensätze zu exportieren, haben Sie die Möglichkeit, Filterbedingungen zu konfigurieren. Die Vorgehensweise entspricht der Zielgruppenbestimmung im Versandassistenten. Mehr dazu erfahren Sie auf [dieser Seite](../../delivery/using/steps-defining-the-target-population.md).
 
 ![](assets/s_ncs_user_export_wizard05_b.png)
 
@@ -125,7 +125,7 @@ Klicken Sie auf **[!UICONTROL Datenvorschau starten]**. Standardmäßig werden d
 
 ![](assets/s_ncs_user_export_wizard07.png)
 
-Klicken Sie auf die Registerkarten unten im Assistenten, um von der Vorschau der Ergebnisse in Spalten zu den Ergebnissen in XML zu wechseln. Sie können auch die generierten SQL-Abfragen anzeigen.
+Durch Klick auf die Registerkarten unten im Fenster können Sie von der Ergebnisansicht in Spalten zur XML-Anzeige wechseln. Sie können außerdem die generierten SQL-Abfragen anzeigen.
 
 ## 9. Schritt – Export starten {#step-9---launching-the-export}
 

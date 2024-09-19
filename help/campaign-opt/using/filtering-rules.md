@@ -6,9 +6,9 @@ role: User, Data Engineer
 feature: Typology Rules, Campaigns
 exl-id: a4d12445-5680-4704-9c67-e43e0ea6631b
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '531'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -64,7 +64,7 @@ Sie haben die Möglichkeit, Typologien zu erstellen, die nur Filterregeln enthal
 
 ![](assets/campaign_opt_create_typo_filtering.png)
 
-Diese spezifischen Typologien können bei Auswahl der Zielgruppe mit einem Versand verknüpft werden: Klicken Sie im Versand-Assistenten auf den Link **[!UICONTROL Bis]** und dann auf den Tab **[!UICONTROL Ausschlüsse]** .
+Diese spezifischen Typologien können bei der Zielgruppenbestimmung einem Versand zugeordnet werden: Klicken Sie Versandassistenten auf den Link **[!UICONTROL An]** und dann auf den Tab **[!UICONTROL Ausschlüsse]**.
 
 ![](assets/campaign_opt_apply_typo_filtering.png)
 

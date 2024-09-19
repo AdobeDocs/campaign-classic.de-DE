@@ -7,9 +7,9 @@ feature: Deliverability, Email Rendering, Proofs
 role: User
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1803'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -138,7 +138,7 @@ Gehen Sie wie folgt vor, um einen Testversand durchzuführen:
 
 1. Stellen Sie sicher, dass die Testversand-Zielgruppe wie unter [Spezifische Testversand-Zielgruppe definieren](steps-defining-the-target-population.md#defining-a-specific-proof-target) beschrieben konfiguriert wurde.
 
-1. Klicken Sie in der oberen Leiste des Versand-Assistenten auf **[!UICONTROL Testversand durchführen]** .
+1. Wählen Sie **[!UICONTROL Testversand auslösen]** in der Symbolleiste am oberen Rand des Versandassistenten aus.
 
    ![](assets/s_ncs_user_email_del_send_proof.png)
 
@@ -171,7 +171,7 @@ Folgende Optionen stehen zur Verfügung:
 
 * Beibehaltung von doppelten Adressen und Empfängern;
 * Mit beiden der folgenden Optionen können Sie Empfänger auf der Blockierungsliste und Adressen in der Quarantäne beibehalten. Eine Beschreibung dieser Optionen für die Hauptzielgruppe finden Sie unter [Ausschlussparameter anpassen](steps-defining-the-target-population.md#customizing-exclusion-settings). Im Gegensatz zur Zielgruppe eines Versands, bei dem diese Adressen standardmäßig ausgeschlossen sind, werden sie standardmäßig für die Zielgruppe eines Testversands beibehalten.
-* Mit der Option **[!UICONTROL Versandcode für den Testversand beibehalten]** können Sie dem Testversand denselben Versandcode zuweisen wie den für den Versand, auf den er sich bezieht. Dieser Code wird im ersten Schritt des Versand-Assistenten angegeben.
+* Mit der Option **[!UICONTROL Versand-Code für den Testversand beibehalten]**, können Sie den Testversand mit demselben Versand-Code verknüpfen, der für den Versand, auf den er sich bezieht, definiert ist. Dieser Code wird im ersten Schritt des Versandassistenten angegeben.
 * Standardmäßig wird dem Betreff des Testversands „Testversand #“ vorangestellt, wobei # die Nummer des Testversands ist. Sie können dieses Präfix im Feld **[!UICONTROL Titelpräfix]** ändern.
 
 ## Validierungsprozess mit Typologien {#validation-process-with-typologies}

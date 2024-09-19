@@ -5,9 +5,9 @@ description: Erfahren Sie, wie Sie Campaign und Salesforce verbinden
 feature: Salesforce Integration
 exl-id: 94a1f00d-e952-4edd-9012-f71c87b897ca
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '349'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ Informationen darüber, wo Sie Ihr Security-Token finden, erfahren Sie auf diese
 
    * **[!UICONTROL API-Version]**
 Wählen Sie die Version der API aus.
-1. Führen Sie den Konfigurationsassistenten aus, um die verfügbare CRM-Tabelle zu generieren: Mit dem Konfigurationsassistenten können Sie Tabellen erfassen und das entsprechende Schema erstellen.
+1. Führen Sie den Konfigurationsassistenten aus, um die Tabelle mit verfügbaren CRMs zu generieren: Mit dem Konfigurationsassistenten können Sie Tabellen erfassen und das passende Schema erstellen.
 
    ![](assets/crm_connectors_sfdc_launch.png)
 

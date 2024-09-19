@@ -7,9 +7,9 @@ user-guide-description: Produktdokumentation für Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: de9ff0b50d819038c97e8515ddb7d6cfeb4547a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2552'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -74,7 +74,7 @@ ht-degree: 99%
       + Erstellen allgemeiner Importe und Exporte {#generic-imports-exports}
          + [Erste Schritte mit allgemeinen Importen und Exporten](platform/using/about-generic-imports-exports.md)
          + [Erstellen von Import- und Exportvorlagen](platform/using/creating-import-export-templates.md)
-         + [Erstellen von Import- und Exportvorgängen](platform/using/creating-import-export-jobs.md)
+         + [Erstellen von Import- und Exportaufrägen](platform/using/creating-import-export-jobs.md)
          + [Konfigurieren von Importvorgängen](platform/using/executing-import-jobs.md)
          + [Konfigurieren von Exportvorgängen](platform/using/executing-export-jobs.md)
          + [Überwachen der Ausführung von Vorgängen](platform/using/monitoring-jobs-execution.md)
@@ -215,7 +215,7 @@ ht-degree: 99%
          + [Erste Schritte mit dem Tracking personalisierter Links](delivery/using/tracking-personalized-links.md)
          + [Tracking-URLs erkennen](delivery/using/detecting-tracking-urls.md)
          + [Anweisungen zur Vorab-Bearbeitung für das Tracking](delivery/using/pre-processing-instructions.md)
-      + [URL-Tracking-Optionen konfigurieren](delivery/using/personalizing-url-tracking.md)
+      + [Konfigurieren von URL-Tracking-Optionen](delivery/using/personalizing-url-tracking.md)
       + [Auf Trackinglogs zugreifen](delivery/using/accessing-the-tracking-logs.md)
       + [Tracking testen](delivery/using/testing-tracking.md)
       + [Fehlerbehebung beim Tracking](delivery/using/tracking-troubleshooting.md)
@@ -294,7 +294,7 @@ ht-degree: 99%
       + [Personen und Empfänger](reporting/using/person-people-recipients.md)
    + Populationen analysieren {#analyzing-populations}
       + [Über die deskriptive Analyse](reporting/using/about-descriptive-analysis.md)
-      + [Deskriptive Analyseassistent verwenden](reporting/using/using-the-descriptive-analysis-wizard.md)
+      + [Verwenden des Assistenten für deskriptive Analysen](reporting/using/using-the-descriptive-analysis-wizard.md)
       + [Berichtseinstellungen](reporting/using/processing-a-report.md)
       + [Anwendungsfälle](reporting/using/use-cases.md)
    + Neue Berichte erstellen {#creating-new-reports}
@@ -538,7 +538,7 @@ ht-degree: 99%
       + [Simulationsverfolgung](interaction/using/simulation-tracking.md)
    + Angebot bereitstellen {#delivering-an-offer}
       + [Über Outbound-Kanäle](interaction/using/about-outbound-channels.md)
-      + [Integration über die Assistenzkraft](interaction/using/integrating-an-offer-via-the-wizard.md)
+      + [Einbinden eines Angebots über den Assistenten](interaction/using/integrating-an-offer-via-the-wizard.md)
       + [Ein Angebot über einen Workflow einbinden](interaction/using/integrating-an-offer-via-a-workflow.md)
    + Einzelne Interaktionen {#unitary-interactions}
       + [Über Inbound-Kanäle](interaction/using/about-inbound-channels.md)
@@ -772,7 +772,7 @@ ht-degree: 99%
       + [Filtern von Schemata](configuration/using/filtering-schemas.md)
       + [Einschränken der PII-Ansicht](configuration/using/restricting-pii-view.md)
       + [Datenbankstruktur aktualisieren](configuration/using/updating-the-database-structure.md)
-      + [Neuer Feldassistent](configuration/using/new-field-wizard.md)
+      + [Assistent für neue Felder](configuration/using/new-field-wizard.md)
       + [Struktur eines Datenschemas](configuration/using/structure-of-a-data-schema.md)
       + [Regenerieren von Schemata](configuration/using/regenerating-schemas.md)
       + [Beispiele für Schemabearbeitung](configuration/using/examples-of-schemas-edition.md)

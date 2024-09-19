@@ -7,9 +7,9 @@ feature: Monitoring
 role: User, Data Engineer, Developer
 exl-id: 9d3f5c74-377a-4e24-81e5-bb605f69cf8a
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '653'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Es gibt drei Arten von Anweisungen:
 * **[!DNL value]**: um Zugriff auf die Felder des Versands, Versandvariablen und benutzerdefinierte Objekte zu gewähren, die im Versand geladen werden. [Mehr dazu](#value)
 * **[!DNL foreach]**: um eine Schleife über das Array auszuführen, das als benutzerdefiniertes Objekt geladen wird. [Mehr dazu](#foreach)
 
-Sie können direkt vom Versand-Assistenten getestet werden. Sie gelten in der Inhaltsvorschau und wenn Sie auf die Tracking-Schaltfläche klicken, um die Liste der URLs anzuzeigen.
+Sie können direkt vom Versandassistenten aus getestet werden. Sie gelten in der Inhaltsvorschau und wenn Sie auf die Tracking-Schaltfläche klicken, um die Liste der URLs anzuzeigen.
 
 ## [!DNL include] {#include}
 
@@ -57,7 +57,7 @@ Die folgenden Beispiele gehören zu den am häufigsten verwendeten:
   <%@ include option='NmsServer_URL' %>
   ```
 
-  Verwenden Sie die Personalisierungsschaltfläche im Versand-Assistenten, um die korrekte Syntax zu erhalten.
+  Verwenden Sie die Schaltfläche „Personalisierung“ im Versandassistenten, um die richtige Syntax zu erhalten.
 
 ## [!DNL value] {#value}
 

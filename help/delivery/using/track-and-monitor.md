@@ -7,9 +7,9 @@ feature: Monitoring, Reporting
 role: User
 exl-id: a039a288-2e7b-4f35-9885-ead3ed4347af
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '449'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Tipp: Prüfen Sie die Konfiguration der Traffic-Verwaltung (IP-Affinität). Weit
 
 Um das Verhalten Ihrer Empfänger besser kennenzulernen, können Sie ihre Reaktion auf einen Versand verfolgen: Empfang, Öffnung, Klicks auf Links, Abmeldungen usw. In Campaign Classic werden diese Informationen auf der Registerkarte „Tracking“ der Empfänger, auf die der Versand abzielt, und auf der Registerkarte „Tracking“ des Versands angezeigt.
 
-**Tipp**: Das Nachrichten-Tracking ist standardmäßig aktiviert. Um URLs zu konfigurieren, wählen Sie im unteren Bereich des Versand-Assistenten die Option URLs anzeigen aus. Sie können für jede URL der Nachricht festlegen, ob Sie die Nachverfolgung aktivieren möchten.
+**Tipp:** Das Nachrichten-Tracking ist standardmäßig aktiviert. Um URLs zu konfigurieren, wählen Sie im unteren Bereich des Versandassistenten die Option „URLs anzeigen“ aus. Sie können für jede URL der Nachricht festlegen, ob Sie die Nachverfolgung aktivieren möchten.
 
 Mehr dazu finden Sie im Abschnitt [Konfigurieren der Nachverfolgung](how-to-configure-tracked-links.md) und in der Beschreibung der [Indikatoren für die Nachverfolgung](../../reporting/using/delivery-reports.md#tracking-indicators).
 

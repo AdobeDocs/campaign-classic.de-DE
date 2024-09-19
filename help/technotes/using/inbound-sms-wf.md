@@ -5,9 +5,9 @@ description: Workflow-Aktivität für eingehende SMS für Mid-Sourcing-Infrastru
 feature: Technote, SMS
 exl-id: 756039b2-5f57-4dc5-8166-a421206b886b
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '423'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 94%
    </element>
    ```
 
-1. Um die Änderungen an den Schemas anzuwenden, starten Sie den Datenbankaktualisierungs-Assistenten. Auf diesen Assistenten kann über **Tools** > **Erweitert** > **Datenbankstruktur aktualisieren** zugegriffen werden. Er prüft, ob die physische Struktur der Datenbank mit ihrer logischen Beschreibung übereinstimmt, und führt die SQL-Aktualisierungs-Skripts aus. [Weitere Informationen](../../configuration/using/updating-the-database-structure.md)
+1. Um die an den Schemata vorgenommenen Änderungen anzuwenden, starten Sie den Datenbankaktualisierungsassistenten. Auf diesen Assistenten kann über **Werkzeuge** > **Erweitert** > **Datenbankstruktur aktualisieren** zugegriffen werden. Er prüft, ob die physische Struktur der Datenbank mit ihrer logischen Beschreibung übereinstimmt, und führt die SQL-Aktualisierungs-Skripts aus. [Weitere Informationen](../../configuration/using/updating-the-database-structure.md)
 
 1. Beenden Sie den Workflow mit dem **SMS-Empfang**.
 

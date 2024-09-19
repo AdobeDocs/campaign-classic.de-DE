@@ -7,9 +7,9 @@ feature: Personalization
 role: User
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '978'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -31,8 +31,8 @@ Sie haben die Möglichkeit, neue Bausteine zu definieren, mit denen Sie die Pers
 
 Gehen Sie folgendermaßen vor, um Gestaltungsbausteine in eine Nachricht einzufügen:
 
-1. Klicken Sie im Inhaltseditor des Versand-Assistenten auf das Symbol für personalisierte Felder und wählen Sie das Menü **[!UICONTROL Einschließen]** aus.
-1. Wählen Sie einen Gestaltungsbaustein aus der Liste aus (in der Liste werden die zehn zuletzt verwendeten Gestaltungsbausteine angezeigt) oder greifen Sie über das Menü **[!UICONTROL Sonstige...]** auf die vollständige Liste zu.
+1. Wählen Sie im Inhaltseditor des Versandassistenten das Personalisierungssymbol und danach das Menü **[!UICONTROL Einfügen]** aus.
+1. Wählen Sie einen Gestaltungsbaustein aus der Liste aus (die Liste zeigt die 10 zuletzt verwendeten Bausteine an), oder klicken Sie auf das Menü **[!UICONTROL Sonstiges...]**, um die vollständige Liste aufzurufen.
 
    ![](assets/s_ncs_user_personalized_block01.png)
 
@@ -71,7 +71,7 @@ Zu diesem Zweck müssen wir folgende Gestaltungsbausteine einfügen:
 >Weitere Informationen zur Erstellung der Mirrorseite finden Sie unter [Erzeugen der Mirrorseite](sending-messages.md#generating-the-mirror-page).
 
 1. Erstellen Sie einen neuen Versand oder öffnen Sie einen existierenden E-Mail-Versand.
-1. Klicken Sie im Versand-Assistenten auf **[!UICONTROL Betreff]** , um den Betreff der Nachricht zu bearbeiten und einen Betreff einzugeben.
+1. Klicken Sie im Versandassistenten auf den **[!UICONTROL Betreff]**, um den Betreff der Nachricht zu bearbeiten und einen Betreff einzugeben.
 1. Fügen Sie die Gestaltungsbausteine in den Nachrichtentext ein. Klicken Sie dazu in das Inhaltsfeld der Nachricht und danach auf die Schaltfläche zum Einfügen von Personalisierungsfeldern. Wählen Sie danach das Menü **[!UICONTROL Einfügen]** aus.
 1. Wählen Sie den ersten einzufügenden Gestaltungsbaustein aus. Wiederholen Sie diesen Vorgang, um die beiden anderen Bausteine einzufügen.
 

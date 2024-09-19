@@ -7,9 +7,9 @@ feature: Email Design
 role: User
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
 source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2032'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -117,7 +117,7 @@ Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](defining-i
 
 ## Verwenden von Content-Management {#using-content-management}
 
-Sie können den Inhalt des Versands mithilfe der Inhaltsverwaltungsformulare direkt im Versand-Assistenten definieren. Die zu verwendende Veröffentlichungsvorlage für den Inhalt muss in den Versandeigenschaften auf der Registerkarte **[!UICONTROL Erweitert]** angegeben werden.
+Sie können den Inhalt des Versands mithilfe der Content-Management-Formulare direkt im Versandassistenten definieren. Die zu verwendende Veröffentlichungsvorlage für den Inhalt muss in den Versandeigenschaften auf der Registerkarte **[!UICONTROL Erweitert]** angegeben werden.
 
 ![](assets/s_ncs_content_in_delivery.png)
 
@@ -144,7 +144,7 @@ Informationen zum Anpassen der Emoticon-Liste finden Sie auf dieser [Seite](cust
 
 ## Hinzufügen von Bildern {#adding-images}
 
-E-Mail-Sendungen im HTML-Format können Bilder enthalten. Über den Versand-Assistenten können Sie eine HTML-Seite mit Bildern importieren oder Bilder direkt mithilfe des HTML-Editors über das Symbol **[!UICONTROL Bild]** einfügen.
+E-Mail-Sendungen im HTML-Format können Bilder enthalten. Sie können eine HTML-Seite mit Bildern über den Versandassistenten importieren oder Bilder direkt mithilfe des HTML-Editors über das **[!UICONTROL Bildsymbol]** einfügen.
 
 
 ### Schutzmechanismen {#img-guardrails}
@@ -166,7 +166,7 @@ Diese Bilder können:
 
 ### Einfügen und Verwalten von Bildern {#manage-images}
 
-Mit dem Versand-Assistenten können Sie lokale oder in der Bibliothek gespeicherte Bilder zum Inhalt von Nachrichten hinzufügen. Wählen Sie hierfür die Schaltfläche **[!UICONTROL Bild]** in der Symbolleiste des HTML-Inhalts aus.
+Der Versandassistent bietet die Möglichkeit, lokale oder in der Bibliothek enthaltene Bilder in den Inhalt der Nachrichten einzuschließen. Wählen Sie hierfür die Schaltfläche **[!UICONTROL Bild]** in der Symbolleiste des HTML-Inhalts aus.
 
 ![](assets/s_ncs_user_image_from_library.png)
 
@@ -174,7 +174,7 @@ Mit dem Versand-Assistenten können Sie lokale oder in der Bibliothek gespeicher
 >
 >Um von den Empfängern gesehen werden zu können, müssen die Bilder auf einem extern zugänglichen Server gespeichert werden.
 
-So verwalten Sie Bilder über den Versand-Assistenten:
+So verwalten Sie Bilder über den Versandassistenten:
 
 1. Klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Tracking &amp; Bilder]**.
    ![](assets/s_ncs_user_email_del_img_param.png)
@@ -186,7 +186,7 @@ So verwalten Sie Bilder über den Versand-Assistenten:
 * Sie können Bilder manuell hochladen, ohne die Versandanalyse abwarten zu müssen. Klicken Sie dazu auf den Link **[!UICONTROL Bilder sofort online stellen...]**.
 * Sie können einen anderen Pfad für Zugriff auf die Bilder auf dem Tracking-Server angeben. Geben Sie dazu einen Pfad in das Feld **[!UICONTROL URL der Bilder]** ein. Dieser Wert setzt den in den Parametern des Installationsassistenten definierten Wert außer Kraft.
 
-Wenn Sie im Versand-Assistenten HTML-Inhalte mit enthaltenen Bildern öffnen, erhalten Sie in einer Nachricht die Möglichkeit, die Bilder entsprechend den Versandparametern sofort hochzuladen.
+Wenn Sie im Versandassistenten HTML-Inhalte mit eingebundenen Bildern öffnen, erhalten Sie eine Nachricht, die Ihnen die Möglichkeit gibt, die Bilder gemäß den Versandparametern sofort hochzuladen.
 
 ![](assets/s_ncs_user_email_del_img_local.png)
 

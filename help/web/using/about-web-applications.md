@@ -6,9 +6,9 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Landing Pages, Web Apps
 exl-id: df58221f-f71b-49d5-a6a1-c81ddff27fdb
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '722'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -92,9 +92,9 @@ Standardmäßig bietet Adobe Campaign für jede verfügbare Webanwendung eine Vo
 >
 >Sie können eine vorhandene Web-Anwendung in eine Vorlage konvertieren. Wählen Sie dazu das Formular aus und klicken Sie mit der rechten Maustaste darauf. Wählen Sie **[!UICONTROL Aktionen > Als Vorlage speichern…]** aus.
 
-Neue Vorlagen werden im Adobe Campaign-Baum im Knoten **[!UICONTROL Ressourcen > Vorlagen > Webanwendungsvorlagen]** erstellt.
+Sie können neue Vorlagen über den Knoten **[!UICONTROL Ressourcen > Vorlagen > Web-Anwendungsvorlagen]** im Adobe Campaign-Baum erstellen.
 
-Im Erstellungsassistenten können Sie die zu aktivierenden Optionen auswählen, wie unten dargestellt.
+Im Erstellungsassistenten können Sie wie unten dargestellt die zu aktivierenden Optionen auswählen.
 
 ![](assets/webapp_create_template.png)
 

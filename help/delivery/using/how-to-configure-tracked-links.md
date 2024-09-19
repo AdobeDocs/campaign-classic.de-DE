@@ -7,9 +7,9 @@ feature: Monitoring
 role: User, Developer
 exl-id: ed88e1d6-c0d5-4a85-9f3e-be670f4bcc10
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '604'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ In diesem Beispiel folgt auf die URL https://www.adobe.com ein Semikolon. Das Se
 
 Das Tracking von Nachrichten ist standardmäßig aktiviert. Um das Tracken von URLs zu personalisieren, gehen Sie folgendermaßen vor:
 
-1. Wählen Sie die Option **[!UICONTROL URLs anzeigen]** im unteren Bereich des Versand-Assistenten unter dem Nachrichteninhalt aus.
+1. Wählen Sie die Option **[!UICONTROL URLs anzeigen]** im unteren Bereich des Versandassistenten unter dem Nachrichtentext aus.
 
    ![](assets/s_ncs_user_email_del_display_urls.png)
 

@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: managing-environments
 exl-id: 965c4a6a-6535-454d-bd37-e9c8312b4d13
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '489'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Standardmäßig verfügt Campaign über eine **[!UICONTROL Design]**-Umgebung un
 
 >[!NOTE]
 >
->Um eine andere Tabelle (Besuchertabelle für anonyme Angebote oder eine spezifische Empfängertabelle) auszuwählen, müssen Sie den Assistenten für das Zielgruppen-Mapping verwenden, um die Umgebungen zu erstellen. Weiterführende Informationen dazu finden Sie unter [Angebotsumgebungen](#creating-an-offer-environment).
+>Sollten Sie eine andere Tabelle (beispielsweise die Besuchertabelle für anonyme Angebote oder eine spezifische Empfängertabelle) verwenden wollen, steht Ihnen ein Assistent zur Verfügung, um die Umgebungen mit den entsprechenden Zielgruppen-Mappings zu erstellen. Weiterführende Informationen dazu finden Sie unter [Angebotsumgebungen](#creating-an-offer-environment).
 
 ![](assets/offer_environments_overview_002.png)
 
@@ -47,7 +47,7 @@ Standardmäßig wird Interaction mit einer Umgebung geliefert, die für ein Ziel
 
    ![](assets/offer_env_anonymous_001.png)
 
-1. Klicken Sie auf **[!UICONTROL Weiter]** , um mit dem nächsten Bildschirm im Assistenten fortzufahren, aktivieren Sie das Kontrollkästchen **[!UICONTROL Speicherschema für Vorschläge erstellen]** und klicken Sie auf **[!UICONTROL Speichern]**.
+1. Klicken Sie auf **[!UICONTROL Weiter]** und aktivieren Sie im nächsten Bildschirm das Feld **[!UICONTROL Speicherschema für Vorschläge erzeugen]**. Klicken Sie zum Abschluss auf **[!UICONTROL Speichern]**.
 
    ![](assets/offer_env_anonymous_002.png)
 

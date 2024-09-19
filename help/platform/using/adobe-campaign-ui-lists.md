@@ -5,9 +5,9 @@ description: Erfahren Sie, wie Sie Listen durchsuchen und konfigurieren.
 feature: Audiences, Data Management
 exl-id: 21656cc2-15a1-4156-8897-ea4fe3e9b97f
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1200'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 

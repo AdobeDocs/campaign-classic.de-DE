@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: unitary-interactions
 exl-id: a8face46-a933-4f2c-8299-ccb66f05967d
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '443'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -22,9 +22,9 @@ ht-degree: 83%
 
 ## Umgebung für anonyme Interaktionen {#targeting-and-storing-an-environment-for-anonymous-interactions}
 
-Standardmäßig ist Interaction mit einer vorkonfigurierten Umgebung für die Zielgruppenbestimmung der Empfängertabelle (identifizierte Angebote) ausgestattet. Wenn Sie eine andere Tabelle (Besuchertabelle für anonyme Angebote oder eine spezifische Empfängertabelle) als Ziel auswählen möchten, müssen Sie den Assistenten für Zielgruppenzuordnung verwenden, um die Umgebung zu erstellen. Weiterführende Informationen finden Sie unter [Angebotsumgebungen](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
+Interactio verfügt standardmäßig über eine vorab konfigurierte Umgebung, in der die Empfängertabelle (identifizierte Angebote) ausgewählt werden kann. Um eine andere Tabelle (beispielsweise die Besuchertabelle für anonyme Angebote oder eine spezifische Empfängertabelle) zu verwenden, steht Ihnen ein Assistent zur Verfügung, um die Umgebung mit den entsprechenden Zielgruppen-Mappings zu erstellen. Weiterführende Informationen finden Sie unter [Angebotsumgebungen](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
 
-Wenn Sie eine anonyme Umgebung über den Assistenten zum Erstellen der Zuordnung erstellen, wird das Feld **[!UICONTROL Für anonyme eingehende Interaktionen reservierte Umgebung]** automatisch auf der Registerkarte **[!UICONTROL Allgemein]** der Umgebung aktiviert.
+Bei der Erstellung einer anonymen Umgebung mithilfe des Assistenten zur Zuordnungserstellung ist im Tab **[!UICONTROL Allgemein]** das Feld **[!UICONTROL Für anonyme eingehende Interaktionen reservierte Umgebung]** bereits angekreuzt.
 
 Die **[!UICONTROL Zielgruppendimension]** wird vorausgefüllt und verweist standardmäßig auf die Besuchertabelle.
 

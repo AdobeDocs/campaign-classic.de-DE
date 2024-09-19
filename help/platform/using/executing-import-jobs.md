@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 05909ea6-2c93-42ff-9142-1dd14fa6fdec
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3219'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -25,9 +25,9 @@ Mit Adobe Campaign können Sie Daten aus einer oder mehreren Dateien im Text-, C
 >
 >Um Daten zu importieren, ohne sie mit Daten in der Datenbank zu mappen, steht die Funktion **[!UICONTROL Liste importieren]** zur Verfügung. Diese Daten können dann ausschließlich in Workflows mit dem Objekt **[!UICONTROL Liste lesen]** verwendet werden. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../workflow/using/read-list.md).
 
-Mit dem Import-Assistenten können Sie einen Import konfigurieren, seine Optionen definieren (z. B. die Datenumwandlung) und die Ausführung starten. Es handelt sich dabei um eine Reihe von Bildschirmen, deren Inhalt von der Art des Imports (einfach oder mehrfach) und den Rechten des Benutzers abhängt.
+Mit dem Import-Assistenten können Sie einen Import konfigurieren, seine Optionen definieren (z. B. Formatierung) und die Ausführung starten. Es handelt sich dabei um eine Reihe von Bildschirmen, deren Inhalt von der Art des Imports (einfach oder mehrfach) und den Rechten der Benutzerin bzw. des Benutzers abhängt.
 
-Der Import-Assistent wird nach der Erstellung eines neuen Importvorgangs angezeigt (siehe [Erstellen von Import- und Exportvorgängen](../../platform/using/creating-import-export-jobs.md)).
+Der Import-Assistent wird nach der Erstellung eines neuen Importvorgangs angezeigt (siehe [Erstellen von Import- und Exportaufrägen](../../platform/using/creating-import-export-jobs.md)).
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ Jede Zeile der Quelldatei entspricht einem Datensatz. Die einzelnen Daten innerh
 
 ## 1. Schritt – Importvorlage auswählen {#step-1---choosing-the-import-template}
 
-Beim Starten des Import-Assistenten müssen Sie zunächst eine Vorlage auswählen. Gehen Sie wie folgt vor, um den Import von Empfängern zu konfigurieren, die einen Newsletter erhalten haben:
+Beim Start des Import-Assistenten muss zunächst eine Vorlage ausgewählt werden. Um beispielsweise den Import von Empfangenden zu konfigurieren, die einen Newsletter erhalten haben, gehen Sie folgendermaßen vor:
 
 1. Gehen Sie zum Ordner **[!UICONTROL Profile und Zielgruppen > Vorgang > Allgemeine Importe und Exporte]**.
 1. Wählen Sie **Neu** und danach **Importieren**, um die Importvorlage zu erstellen.
@@ -53,7 +53,7 @@ Beim Starten des Import-Assistenten müssen Sie zunächst eine Vorlage auswähle
 1. Geben Sie im Feld **[!UICONTROL Titel]** einen Namen für diesen Import ein und fügen Sie eventuell eine Beschreibung hinzu.
 1. Wählen Sie anschließend den Importtyp aus. Es gibt zwei mögliche Importtypen: **[!UICONTROL Einfacher Import]**, um nur eine Datei zu importieren, und **[!UICONTROL Mehrfacher Import]**, um mehrere Dateien in einer Ausführung zu importieren.
 
-   Wählen Sie für einen mehrfachen Import im ersten Bildschirm des Import-Assistenten aus der Dropdownliste **[!UICONTROL Importtyp]** die Option **[!UICONTROL Multipler Import]** aus.
+   Wählen Sie zum gleichzeitigen Importieren mehrerer Dateien im ersten Schritt des Import-Assistenten aus der Dropdown-Liste des Felds **[!UICONTROL Importtyp]** die Option **[!UICONTROL Multipler Import]** aus.
 
    ![](assets/s_ncs_user_import_wizard01_2.png)
 
@@ -61,7 +61,7 @@ Beim Starten des Import-Assistenten müssen Sie zunächst eine Vorlage auswähle
 
    ![](assets/s_ncs_user_import_wizard01_3.png)
 
-   Jedes Mal, wenn eine Datei hinzugefügt wird, wird der Bildschirm des Assistenten **[!UICONTROL Zu importierende Datei]** angezeigt. Siehe Abschnitt [Schritt 2 - Source-Dateiauswahl](#step-2---source-file-selection) und führen Sie die Schritte im Assistenten aus, um die Importoptionen wie für einen einfachen Import zu definieren.
+   Jedes Mal, wenn eine Datei hinzugefügt wird, wird der Bildschirm des Assistenten **[!UICONTROL Zu importierende Datei auswählen]** angezeigt. Lesen Sie den Abschnitt [2. Schritt - Quelldatei auswählen](#step-2---source-file-selection) und befolgen Sie die Schritte im Assistenten, um die Importoptionen wie für einen einfachen Import zu definieren.
 
    >[!NOTE]
    >
@@ -175,7 +175,7 @@ Vier verschiedene Feldtypen stehen zur Verfügung:
 
 ## 4. Schritt – Datensätze abstimmen {#step-4---reconciliation}
 
-Im Abstimmungsschritt des Import-Assistenten können Sie festlegen, wie die aus der Datei stammenden Daten mit den in der Datenbank vorhandenen Daten abgestimmt werden sollen, und die Prioritätsregeln zwischen den Dateidaten und den Datenbankdaten festlegen. Das Konfigurationsfenster sieht wie folgt aus:
+Der Import-Assistent bietet die Möglichkeit, durch die Angabe von Abstimmkriterien die Art der Zusammenführung von importierten und existierenden Daten sowie Prioritätsregeln zu definieren. Das Konfigurationsfenster sieht wie folgt aus:
 
 ![](assets/s_ncs_user_import_wizard04_1.png)
 
@@ -278,7 +278,7 @@ Der Navigationsbaum im Zurückweisungsbildschirm einer Importinstanz zeigt die z
 
 ## Schritt 5 – Zusätzlicher Schritt beim Import von Empfängern {#step-5---additional-step-when-importing-recipients}
 
-Im nächsten Schritt des Import-Assistenten können Sie den Ordner auswählen oder erstellen, in den die Daten importiert werden sollen, importierte Empfänger automatisch einer neuen oder vorhandenen Liste zuordnen und Empfänger für einen Dienst anmelden.
+Der folgende Schritt im Import-Assistenten ermöglicht die Auswahl oder Erstellung eines Importordners, die automatische Zuordnung der importierten Empfangenden zu einer neuen oder existierenden Liste und ihre Anmeldung für Informationsdienste.
 
 ![](assets/s_ncs_user_import_wizard05_1.png)
 
@@ -334,7 +334,7 @@ Klicken Sie auf **[!UICONTROL Weiter]**, um die in diesem Schritt vorgenommenen 
 
 ## 6. Schritt – Import starten {#step-6---launching-the-import}
 
-Im letzten Schritt des Assistenten können Sie den Datenimport starten. Klicken Sie hierfür auf die Schaltfläche **[!UICONTROL Starten]**.
+Im letzten Schritt des Assistenten wird der Datenimport ausgelöst. Klicken Sie hierfür auf die Schaltfläche **[!UICONTROL Starten]**.
 
 ![](assets/s_ncs_user_import_wizard06_1.png)
 

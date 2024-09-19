@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: case-study
 exl-id: 90afced3-465d-4370-8a33-51a7e4356135
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2163'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -197,7 +197,7 @@ Gehen Sie wie folgt vor:
 
 ### Erstellung einer Umgebung für anonyme Kontakte {#creating-an-environment-for-anonymous-contacts}
 
-1. Erstellen Sie eine Angebotsumgebung für anonyme eingehende Interaktionen über den Versand-Mapping-Assistenten (**Besucher** -Mapping). Weiterführende Informationen dazu finden Sie unter [Angebotsumgebungen](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
+1. Erstellen Sie mit dem Versand-Zuordnungsassistenten (**Besucher**-Mapping) eine Angebotsumgebung für anonyme eingehende Interaktionen. Weiterführende Informationen dazu finden Sie unter [Angebotsumgebungen](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
 
    ![](assets/offer_env_anonymous_003.png)
 

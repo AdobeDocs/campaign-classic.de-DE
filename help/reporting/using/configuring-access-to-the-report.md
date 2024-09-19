@@ -6,9 +6,9 @@ feature: Reporting, Monitoring
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 exl-id: 1e5ab922-481c-4dce-a05e-a58408002e24
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '809'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -82,7 +82,7 @@ Sie können einen Bericht über einen spezifischen Knoten im Navigationsbaum wie
 
 Als Beispiel wird im Folgenden eine Verknüpfung eines Berichts zu einer Empfängerliste erstellt.
 
-1. Klicken Sie auf **[!UICONTROL Neu]** und wählen Sie **[!UICONTROL Link zu einem vorhandenen Bericht erstellen]** im Assistenten zur Berichtserstellung.
+1. Klicken Sie auf **[!UICONTROL Neu]** und wählen Sie **[!UICONTROL Existierenden Bericht verknüpfen]** im Berichterstellungs-Assistenten aus.
 
    ![](assets/s_ncs_advuser_report_wizard_link_01.png)
 
@@ -126,7 +126,7 @@ Die Funktionsweise dieser Parameter wird im Abschnitt zur Definition von **Webfo
 
 Das Veröffentlichen des Berichts ist obligatorisch, wenn Sie ihn mit anderen Benutzern teilen und in der Liste der verfügbaren Berichte anzeigen möchten (siehe auch [Anzeigekontext von Berichten](#report-display-context)). Dieser Vorgang muss bei jeder Änderung des Berichts erneut durchgeführt werden.
 
-1. Öffnen Sie den Veröffentlichungsassistenten, indem Sie in der Symbolleiste auf **[!UICONTROL Publish]** klicken.
+1. Öffnen Sie den Publikationsassistenten durch Klicken auf **[!UICONTROL Publizieren]** in der Symbolleiste.
 
    ![](assets/s_ncs_advuser_report_publish_01.png)
 

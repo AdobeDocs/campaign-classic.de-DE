@@ -6,9 +6,9 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Surveys
 exl-id: 8d83dfd5-70ec-4656-965b-f6b5e6f9eec1
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '831'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Die Seiten des Formulars werden mit einem speziellen Editor erstellt, der die De
 
 ## Felder hinzufügen {#adding-fields}
 
-Über Formularfelder können Benutzer Informationen eingeben und Optionen auswählen. Sie werden für jede Seite im Formular über die erste Schaltfläche in der Symbolleiste mit dem Menü **[!UICONTROL Hinzufügen mit dem Assistenten]** erstellt.
+Über Formularfelder können Benutzer Informationen eingeben und Optionen auswählen. Diese Felder werden für jede Formularseite mit der ersten Schaltfläche der Symbolleiste im Menü **[!UICONTROL Mithilfe des Assistenten hinzufügen]** erstellt.
 
 ![](assets/s_ncs_admin_survey_add_field_menu.png)
 

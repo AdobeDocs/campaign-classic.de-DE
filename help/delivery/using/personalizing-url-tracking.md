@@ -7,19 +7,19 @@ feature: Monitoring, Email Design, Personalization
 role: User
 exl-id: 3277726a-fd92-4720-8871-3d0422c7db70
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '183'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 # Konfigurieren von URL-Tracking-Optionen{#personalizing-url-tracking}
 
-Erweiterte Tracking-Einstellungen für Nachrichten sind über das Symbol **[!UICONTROL Tracking &amp; Bilder]** in der Symbolleiste des Versand-Assistenten verfügbar.
+Erweiterte Einstellungen für das Tracking von Nachrichten sind über das Symbol **[!UICONTROL Tracking und Bilder]** in der Symbolleiste des Versandassistenten zugänglich.
 
 >[!NOTE]
 >
->Auch die Einstellungen bezüglich der in E-Mails enthaltenen Bilder werden in diesem Fenster vorgenommen. Siehe [Hinzufügen von Bildern](defining-the-email-content.md#adding-images).
+>Die Verwaltung von Bildern in E-Mails wird ebenfalls in diesem Fenster konfiguriert. Siehe [Hinzufügen von Bildern](defining-the-email-content.md#adding-images).
 
 ![](assets/s_ncs_user_email_del_tracking_ico.png)
 
