@@ -7,8 +7,8 @@ level: Beginner
 exl-id: 5d830ea0-a0a3-4b35-8dc4-e955380431fb
 source-git-commit: 2ce7a91aaddb0df412fc0002ff1463d48b2b7c3c
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 84%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -63,14 +63,14 @@ Gehen Sie wie folgt vor, um Ihr technisches OAuth-Konto für neue Integrationen 
 
 ## Hinzufügen von OAuth-Projektanmeldedaten in Campaign {#add-credentials}
 
-Nachdem die oben genannten Schritte ausgeführt wurden, fügen Sie Ihre OAuth-Projektanmeldedaten in Adobe Campaign hinzu.
+Fügen Sie nach Durchführung der oben genannten Schritte Ihre OAuth-Projektanmeldedaten in Adobe Campaign hinzu.
 
 >[!NOTE]
 >
->Als gehosteter oder verwalteter Cloud Service-Kunde ist dies nicht erforderlich: Adobe hat Ihre OAuth-Projektanmeldedaten bereits zu Ihrer Umgebung hinzugefügt.
+>Für Kundinnen und Kunden von Hosted oder Managed Cloud Services ist dies nicht erforderlich: Adobe hat Ihre OAuth-Projektanmeldedaten bereits zu Ihrer Umgebung hinzugefügt.
 >
 
-Führen Sie als On-Premise- oder Hybrid-Kunde die folgenden Schritte aus:
+On-Premise-/Hybrid-Kundinnen und -Kunden müssen die folgenden Schritte ausführen:
 
 1. Melden Sie sich über SSH bei jedem Container an, in dem die Adobe Campaign-Instanz installiert ist.
 
