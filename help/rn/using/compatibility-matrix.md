@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: b23632d0718d62d61e94e636937b93aa39bbe43f
+source-git-commit: 728848eab059fc669c241346a2ff1feebd79222c
 workflow-type: tm+mt
-source-wordcount: '840'
-ht-degree: 100%
+source-wordcount: '843'
+ht-degree: 93%
 
 ---
 
@@ -21,7 +21,7 @@ Sofern nicht anders angegeben, werden alle Nebenversionen unterstützt.
 
 >[!CAUTION]
 >
->Diese Matrix wird regelmäßig aktualisiert, wenn neue unterstützte Systeme und Tools hinzugefügt und veraltete Elemente entfernt werden.
+>Diese Matrix wird regelmäßig aktualisiert, indem neue unterstützte Systeme und Tools hinzugefügt und entfernt werden.
 
 ## Betriebssysteme {#OperatingSystems}
 
@@ -53,7 +53,7 @@ Als On-Premise-/Hybrid-Kundin bzw. Kunde müssen Sie Adobe Campaign unter einem 
 </td>
 </tr>
 <tr>
-<td>RHEL</td>
+<td>Red Hat Enterprise Linux (RHEL)</td>
 <td>
 <p>9.x</p>
 <p>8.x</p>
@@ -83,7 +83,7 @@ Als On-Premise-/Hybrid-Kundin bzw. Kunde müssen Sie Adobe Campaign unter einem 
 
 >[!IMPORTANT]
 >
->Wenn Sie RHEL verwenden, müssen Sie [SELinux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#selinux) deaktivieren. Andernfalls können Ihre Programmierer und Programmiererinnen auch benutzerdefinierte SELinux-Regeln verfassen, mit denen sichergestellt werden kann, dass ein aktiviertes SELinux keine Probleme mit Campaign-Vorgängen verursacht.
+>Mit RHEL müssen Sie bereit sein, [SELinux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#selinux) zu deaktivieren oder Ihre Architekten benutzerdefinierte SELinux-Regeln schreiben zu lassen, um zu überprüfen, ob ein aktiviertes SELinux keine Probleme mit Campaign-Vorgängen verursacht.
 
 ## Webserver {#WebServers}
 
@@ -91,10 +91,12 @@ Als On-Premise-/Hybrid-Kundin bzw. Kunde müssen Sie je nach Betriebssystem Camp
 
 <table>
 <tbody>
+<td><strong>Webserver</strong></td>
+<td><strong>Webserver-Version</strong></td>
 <tr>
 <td>Microsoft IIS</td>
 <td>
-<p>10.0 auf Windows-Server</p>
+<p>10,0</p>
 </td>
 </tr>
 <tr>

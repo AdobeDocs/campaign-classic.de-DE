@@ -8,9 +8,9 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: 4aaa6256-256a-441d-80c9-430f8e427875
-source-git-commit: fee880f4b200b322c2b2a0034f17975993c862b3
+source-git-commit: 728848eab059fc669c241346a2ff1feebd79222c
 workflow-type: tm+mt
-source-wordcount: '1163'
+source-wordcount: '1198'
 ht-degree: 7%
 
 ---
@@ -117,7 +117,7 @@ Gehen Sie in einer Linux-Umgebung wie folgt vor, um Adobe Campaign auf einen neu
 
 [Erfahren Sie mehr über die Client Console-Verfügbarkeit](../../installation/using/client-console-availability-for-windows.md).
 
-### Aktualisierte Pakete abrufen {#obtain-updated-packages}
+### Aktualisierte Pakete installieren {#obtain-updated-packages}
 
 Rufen Sie zunächst beide aktualisierten Pakete von Adobe Campaign ab: Stellen Sie mithilfe Ihrer Benutzeranmeldeinformationen eine Verbindung zum [Software-Verteilungsportal](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) her. Weitere Informationen zur Softwareverteilung finden Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de).
 
@@ -128,15 +128,14 @@ Die Datei ist **nlserver6-v7-XXX.rpm**
 >Ab Version 7.4.1 sind XML-Bibliotheken für RPM Linux-Pakete nicht mehr in Campaign enthalten. Sie müssen diese Bibliotheken installieren.
 > 
 
-
-### Aktualisieren {#perform-an-update}
+Anschließend können Sie die erforderlichen Pakete installieren, wie unten beschrieben:
 
 * RPM-basierte Verteilung (RedHat, SuSe)
 
   Um sie zu installieren, führen Sie sie als Root aus:
 
   ```
-  $rpm -Uvh nlserver6-v7-XXXX.rpm
+  yum install ./nlserver6-v7-XXXX.rpm
   ```
 
   Dabei ist XXX die Version der Datei.
@@ -147,17 +146,20 @@ Die Datei ist **nlserver6-v7-XXX.rpm**
   rpm --nodeps -Uvh nlserver6-v7-XXXX-0.x86_64.rpm
   ```
 
+  Beachten Sie, dass die meisten Abhängigkeiten obligatorisch sind und `nlserver` nicht starten kann, wenn nicht installiert ist. Die einzige Ausnahme ist openjdk. Sie können bei Bedarf ein anderes JDK installieren.
+
+
 * DEB-basierte Distribution (Debian)
 
   Um sie zu installieren, führen Sie sie als Root aus:
 
   ```
-  dpkg -i nlserver6-v7-XXXX-amd64_debX.deb
+  apt install ./nlserver6-v7-XXXX-amd64_debX.deb
   ```
 
 >[!NOTE]
 >
->Die vollständigen Installationsverfahren werden in [diesem Abschnitt](../../installation/using/installing-campaign-standard-packages.md) beschrieben. Ressourcen werden automatisch synchronisiert. Sie müssen jedoch sicherstellen, dass keine Fehler aufgetreten sind. Weitere Informationen hierzu finden Sie unter [Beheben von Aktualisierungskonflikten](#resolving-upgrade-conflicts).
+>Die vollständigen Installationsverfahren werden in [diesem Abschnitt](../../installation/using/installing-packages-with-linux.md) beschrieben. Ressourcen werden automatisch synchronisiert. Sie müssen jedoch sicherstellen, dass keine Fehler aufgetreten sind. Weitere Informationen hierzu finden Sie unter [Beheben von Aktualisierungskonflikten](#resolving-upgrade-conflicts).
 
 ### Webserver neu starten {#reboot-the-web-server}
 

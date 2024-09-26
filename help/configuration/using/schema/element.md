@@ -4,9 +4,9 @@ title: Schemaelemente und Attribute - Element-Element
 description: Element-Element
 feature: Schema Extension
 exl-id: 60f15ae5-b2bd-48f9-aa45-8f795a3071aa
-source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
+source-git-commit: 728848eab059fc669c241346a2ff1feebd79222c
 workflow-type: tm+mt
-source-wordcount: '2016'
+source-wordcount: '2029'
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ In Adobe Campaign gibt es vier Typen von `<element>` -Elementen:
 * **dbEnum (string)**: empfängt den internen Namen einer &quot;geschlossenen&quot; Auflistung. Die Auflistungswerte müssen im `<srcschema>` definiert werden.
 * **defOnDuplicate (boolesch)**: Wenn dieses Attribut aktiviert ist, wird bei der Duplizierung eines Datensatzes der Standardwert (definiert in @default) automatisch erneut auf den Datensatz angewendet.
 * **default (string)**: ermöglicht die Definition des Elementverhaltens (Aufruf einer Funktion, Standardwert). Dieses Attribut erhält einen XTK-Ausdruck.
-* **desc (string)**: ermöglicht das Einfügen einer Beschreibung des Elements. Diese Beschreibung wird in der Statusleiste der Benutzeroberfläche angezeigt.
+* **desc (string)**: ermöglicht das Einfügen einer Beschreibung des Elements. Diese Beschreibung dient dazu, zu verstehen, wofür das Element verwendet wird und wofür es verwendet wird. Sie können es im Formular anzeigen.
 * **displayAsField (boolesch)**: Wenn dieses Attribut aktiviert ist, wird ein &quot;Link&quot;-Typ `<element>` als Feld in der Baumansicht der Schemas angezeigt ( Registerkarte &quot;Struktur&quot;). Auf diese Weise kann ein Link als lokales Feld angezeigt und sein Verhalten während einer Abfrage geändert werden. Wenn das Element im SELECT einer Abfrage gefunden wird, wird der Wert des Link-Ziels verwendet. Wenn das Element im WHERE einer Abfrage gefunden wird, wird der zugrunde liegende Schlüssel des Links verwendet.
 * **edit (string)**: Dieses Attribut gibt den Typ der Eingabe an, die in dem mit dem Schema verknüpften Formular verwendet wird.
 * **enum (string)**: empfängt den Namen der mit dem Feld verknüpften Auflistung. Die Auflistung kann im selben Schema oder in ein Remote-Schema eingefügt werden.

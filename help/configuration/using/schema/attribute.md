@@ -7,9 +7,9 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: e4d34f56-b065-4dce-8974-11dc2767873a
-source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
+source-git-commit: 728848eab059fc669c241346a2ff1feebd79222c
 workflow-type: tm+mt
-source-wordcount: '1558'
+source-wordcount: '1573'
 ht-degree: 1%
 
 ---
@@ -76,7 +76,7 @@ Die Reihenfolge, in der `<attribute>` -Elemente in einem `<srcschema>` definiert
 * **dbEnum (string)**: empfängt den internen Namen einer &quot;geschlossenen&quot; Auflistung. Die Auflistungswerte müssen im `<srcschema>` definiert werden.
 * **defOnDuplicate (boolesch)**: Wenn dieses Attribut aktiviert ist, wird bei der Duplizierung eines Datensatzes der Standardwert (definiert in @default) automatisch erneut auf den Datensatz angewendet.
 * **default (string)**: Ermöglicht die Definition des Werts im Standardfeld (Aufruf einer Funktion, Standardwert). Dieses Attribut erhält einen XTK-Ausdruck.
-* **desc (string)**: ermöglicht das Einfügen einer Beschreibung des Attributs. Diese Beschreibung wird in der Statusleiste der Benutzeroberfläche angezeigt.
+* **desc (string)**: ermöglicht das Einfügen einer Beschreibung des Attributs. Diese Beschreibung dient dazu, zu verstehen, wofür das Element verwendet wird und wofür es verwendet wird. Sie können es im Formular anzeigen.
 * **edit (string)**: Dieses Attribut gibt den Typ der Eingabe an, die in dem mit dem Schema verknüpften Formular verwendet wird.
 * **enum (string)**: empfängt den Namen der mit dem Feld verknüpften Auflistung. Die Auflistung kann im selben Schema oder in ein Remote-Schema eingefügt werden.
 * **expr (string)**: definiert einen Ausdruck für die Feldberechnung. Dieses Attribut empfängt einen Xpath oder einen XTK-Ausdruck.
@@ -90,7 +90,7 @@ Die Reihenfolge, in der `<attribute>` -Elemente in einem `<srcschema>` definiert
    * dediziert: `Ft_[name_of_the_schema_containing_the_characteristic]_[name_of_the_characteristic]`
    * shared: `Ft_[type_of_key_of_the_schema_containing_the_characteristic]_[type_of_the_characteristic]`
 
-  Es gibt zwei Arten von Eigenschaftenfeldern: einfache à¹-Felder, bei denen ein einzelner Wert für das Merkmal zugelassen ist, und ein¹ Multiple-Choice-Felder, bei denen das Merkmal mit einem Kollektionselement verknüpft ist, das mehrere Werte enthalten kann.
+  Es gibt zwei Arten von Eigenschaftenfeldern: einfache à<sup>1</sup> -Felder, bei denen ein einzelner Wert für das Merkmal autorisiert ist, und Multiple-Choice-Felder, bei denen das Merkmal mit einem Kollektionselement verknüpft ist, das mehrere Werte enthalten kann.<sup></sup>
 
   Wenn ein Merkmal in einem Schema definiert ist, muss dieses Schema über einen Hauptschlüssel verfügen, der auf einem einzelnen Feld basiert (zusammengesetzte Schlüssel sind nicht autorisiert).
 
