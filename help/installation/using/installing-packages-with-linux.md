@@ -8,14 +8,14 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: f41c7510-5ad7-44f3-9485-01f54994b6cb
-source-git-commit: b4ab1fe5e98211c2b1bcdb319f10777c032831c7
+source-git-commit: 9526d466dc4613410905d9d7265c6471cd1df599
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1070'
 ht-degree: 1%
 
 ---
 
-# Installieren von Paketen mit Linux{#installing-packages-with-linux}
+# Installieren von Paketen mit Linux {#installing-packages-with-linux}
 
 Adobe Campaign enthält das Paket **nlserver** , das die Binärdateien und Konfigurationsdateien für eine bestimmte Version enthält.
 
@@ -60,6 +60,8 @@ Gehen Sie wie folgt vor, um Adobe Campaign auf einem RPM-Betriebssystem (RHEL, C
    rpm --nodeps -Uvh nlserver6-v7-XXXX-0.x86_64.rpm
    ```
 
+Beachten Sie, dass die meisten aufgelisteten Abhängigkeiten obligatorisch sind und `nlserver` nicht starten kann, wenn sie nicht installiert sind (die Ausnahme ist offen; ein anderes JDK kann installiert werden).
+
 Der für die Ausführung des [netreport](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts) erforderliche Befehl `bc` ist nicht standardmäßig in allen Linux-Distributionen verfügbar. Um zu überprüfen, ob der Befehl verfügbar ist, führen Sie den Befehl `which bc` aus. Wenn nicht, müssen Sie es installieren.
 
 Bei CentOS müssen Sie das Paket bc.x86_64 installieren: Verbinden als **root** und den folgenden Befehl ausführen:
@@ -81,32 +83,9 @@ Gehen Sie wie folgt vor, um Adobe Campaign auf einem 64-Bit-Debian-Betriebssyste
 1. Um es zu installieren, verbinden Sie sich mit **root** und führen Sie den folgenden Befehl aus, wobei **XXXX** die Adobe Campaign-Build-Nummer ist:
 
    ```
-   dpkg -i nlserver6-v7-XXXX-linux-2.6-amd64.deb
+   apt install ./nlserver6-v7-XXXX-linux-2.6-amd64.deb
    ```
 
-   Wenn fehlende Abhängigkeiten vorhanden sind, führen Sie den folgenden Befehl aus:
-
-   ```
-   apt-get install -f
-   ```
-
-
-1. Beachten Sie bei der Installation von Adobe Campaign auf einem Debian-Betriebssystem Folgendes:
-
-* OpenSSL muss zuvor installiert werden.
-* Installieren Sie libicu und libc-aresYY, wobei XX die Version ist, mit den folgenden Befehlen:
-
-  ```
-  apt install libicuXX
-  ```
-
-  ```
-  apt install libc-aresXX
-  ```
-
-  ```
-  apt install openjdk-XX-jdk
-  ```
 
 ## Parameter personalisieren {#personalizing-parameters}
 
