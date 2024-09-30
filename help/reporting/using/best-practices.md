@@ -6,9 +6,9 @@ feature: Reporting, Monitoring
 badge: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 exl-id: 0c7f00f3-b16d-41c5-a7b1-f5a59201bf8c
 source-git-commit: 517b85f5d7691acc2522bf4541f07c34c60c7fbf
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '852'
+ht-degree: 100%
 
 ---
 
@@ -97,7 +97,7 @@ Die oben stehenden Empfehlungen erlauben es, die Berechnung der Berichte zu opti
 
 Adobe Campaign empfiehlt Ihnen zusätzlich die folgenden Verbesserungsmöglichkeiten:
 
-* Bearbeiten Sie Ihr Datenmodell: Indexierte Felder müssen hauptsächlich zur Verbesserung von Berechnungsformeln verwendet werden.
+* Bearbeitung des Datenmodells: Verwendung indizierter Felder vorrangig zum Verbessern der Berechnungsformeln.
 
   Zur einfachen Erkennung von indexierten Feldern ist in Adobe Campaign der Sortierungspfeil neben den Spaltentiteln rot unterstrichen, wenn das Feld indexiert ist.
 
