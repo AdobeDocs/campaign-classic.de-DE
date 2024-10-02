@@ -8,7 +8,7 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: 4aaa6256-256a-441d-80c9-430f8e427875
-source-git-commit: 349c3dfd936527e50d7d3e03aa3408b395502da0
+source-git-commit: cc614ed608f1e8229c0ef1ccf35dbac6cb9dddd3
 workflow-type: tm+mt
 source-wordcount: '1274'
 ht-degree: 7%
@@ -170,7 +170,9 @@ Anschließend können Sie die erforderlichen Pakete installieren, wie unten besc
   nlserver6-v7                    x86_64        XXXX.0.0-1                 @commandline         63 M
   ```
 
-  Wenn Sie `Removing:` anstelle von `Upgrading:` lesen, brechen Sie den Befehl ab. Es gibt wahrscheinlich einige Fehler (siehe oben), die die Entfernung erklären. Korrigieren Sie in diesem Fall diese Fehler, indem Sie die aufgelisteten fehlenden Abhängigkeiten aktualisieren/installieren und versuchen Sie dann erneut, den Befehl auszuführen.
+  >[!IMPORTANT]
+  >
+  >Wenn Sie `Removing:` anstelle von `Upgrading:` lesen, brechen Sie den Befehl ab. Es gibt wahrscheinlich einige Fehler (siehe oben), die die Entfernung erklären. Korrigieren Sie in diesem Fall diese Fehler, indem Sie die aufgelisteten fehlenden Abhängigkeiten aktualisieren/installieren und versuchen Sie dann erneut, den Befehl auszuführen.
 
 * DEB-basierte Distribution (Debian)
 
