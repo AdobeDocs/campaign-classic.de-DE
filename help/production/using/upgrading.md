@@ -8,9 +8,9 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: 4aaa6256-256a-441d-80c9-430f8e427875
-source-git-commit: 728848eab059fc669c241346a2ff1feebd79222c
+source-git-commit: 349c3dfd936527e50d7d3e03aa3408b395502da0
 workflow-type: tm+mt
-source-wordcount: '1198'
+source-wordcount: '1274'
 ht-degree: 7%
 
 ---
@@ -125,7 +125,7 @@ Die Datei ist **nlserver6-v7-XXX.rpm**
 
 >[!AVAILABILITY]
 >
->Ab Version 7.4.1 sind XML-Bibliotheken für RPM Linux-Pakete nicht mehr in Campaign enthalten. Sie müssen diese Bibliotheken installieren.
+>Ab Version 7.4.1 sind XML-Bibliotheken für RPM Linux-Pakete nicht mehr in Campaign enthalten. Sie müssen diese Bibliotheken installieren.
 > 
 
 Anschließend können Sie die erforderlichen Pakete installieren, wie unten beschrieben:
@@ -148,6 +148,29 @@ Anschließend können Sie die erforderlichen Pakete installieren, wie unten besc
 
   Beachten Sie, dass die meisten Abhängigkeiten obligatorisch sind und `nlserver` nicht starten kann, wenn nicht installiert ist. Die einzige Ausnahme ist openjdk. Sie können bei Bedarf ein anderes JDK installieren.
 
+  Wenn das Paket `epel-release` nicht installiert ist, installieren Sie es. Geben Sie dazu den folgenden Befehl als Root ein:
+
+  ```
+  yum install epel-release
+  ```
+
+  Um das Campaign-Package zu installieren, führen Sie es als root aus:
+
+  ```
+  yum update ./nlserver6-v7-XXXX.rpm
+  ```
+
+  Bevor Sie die Aktualisierung bestätigen, stellen Sie sicher, dass die Ausgabe wie folgt aussieht:
+
+  ```
+  ==================================================================================================== 
+  Package                         Architecture  Version                    Repository           Size 
+  ==================================================================================================== 
+  Upgrading: 
+  nlserver6-v7                    x86_64        XXXX.0.0-1                 @commandline         63 M
+  ```
+
+  Wenn Sie `Removing:` anstelle von `Upgrading:` lesen, brechen Sie den Befehl ab. Es gibt wahrscheinlich einige Fehler (siehe oben), die die Entfernung erklären. Korrigieren Sie in diesem Fall diese Fehler, indem Sie die aufgelisteten fehlenden Abhängigkeiten aktualisieren/installieren und versuchen Sie dann erneut, den Befehl auszuführen.
 
 * DEB-basierte Distribution (Debian)
 
@@ -160,6 +183,7 @@ Anschließend können Sie die erforderlichen Pakete installieren, wie unten besc
 >[!NOTE]
 >
 >Die vollständigen Installationsverfahren werden in [diesem Abschnitt](../../installation/using/installing-packages-with-linux.md) beschrieben. Ressourcen werden automatisch synchronisiert. Sie müssen jedoch sicherstellen, dass keine Fehler aufgetreten sind. Weitere Informationen hierzu finden Sie unter [Beheben von Aktualisierungskonflikten](#resolving-upgrade-conflicts).
+>
 
 ### Webserver neu starten {#reboot-the-web-server}
 
@@ -195,12 +219,12 @@ Es gibt zwei Möglichkeiten, das Synchronisierungsergebnis anzuzeigen:
 * In der Befehlszeilenschnittstelle werden Fehler durch einen dreifachen Chevron **>>** materialisiert und die Synchronisation wird automatisch angehalten. Warnungen werden durch einen doppelten Chevron **>>** materialisiert und müssen nach Abschluss der Synchronisation aufgelöst werden. Am Ende des Postupgrades wird an der Eingabeaufforderung eine Zusammenfassung angezeigt. Sie kann wie folgt aussehen:
 
   ```
-  2013-04-09 07:48:39.749Z 00002E7A 1 info log =========Summary of the update==========
-  2013-04-09 07:48:39.749Z 00002E7A 1 info log <instance name> instance, 6 warning(s) and 0 error(s) during the update.
-  2013-04-09 07:48:39.749Z 00002E7A 1 warning log The document with identifier 'mobileAppDeliveryFeedback' and type 'xtk:report' is in conflict with the new version.
-  2013-04-09 07:48:39.749Z 00002E7A 1 warning log The document with identifier 'opensByUserAgent' and type 'xtk:report' is in conflict with the new version.
-  2013-04-09 07:48:39.750Z 00002E7A 1 warning log The document with identifier 'deliveryValidation' and type 'nms:webApp' is in conflict with the new version.
-  2013-04-09 07:48:39.750Z 00002E7A 1 warning log Document of identifier 'nms:includeView' and type 'xtk:srcSchema' updated in the database and found in the file system. You will have to merge the two versions manually.
+  AAAA-MM-DD HH:MM:SS.749Z 00002E7A 1 info log =========Summary of the update==========
+  AAAA-MM-DD HH:MM:SS.749Z 00002E7A 1 info log <instance name> instance, 6 warning(s) and 0 error(s) during the update.
+  AAAA-MM-DD HH:MM:SS.749Z 00002E7A 1 warning log The document with identifier 'mobileAppDeliveryFeedback' and type 'xtk:report' is in conflict with the new version.
+  AAAA-MM-DD HH:MM:SS.749Z 00002E7A 1 warning log The document with identifier 'opensByUserAgent' and type 'xtk:report' is in conflict with the new version.
+  AAAA-MM-DD HH:MM:SS.750Z 00002E7A 1 warning log The document with identifier 'deliveryValidation' and type 'nms:webApp' is in conflict with the new version.
+  AAAA-MM-DD HH:MM:SS.750Z 00002E7A 1 warning log Document of identifier 'nms:includeView' and type 'xtk:srcSchema' updated in the database and found in the file system. You will have to merge the two versions manually.
   ```
 
   Wenn die Warnung einen Ressourcenkonflikt betrifft, muss der Benutzer darauf achten, ihn zu beheben.
@@ -260,7 +284,7 @@ Wenn die Clientkonsolen das nächste Mal verbunden werden, informiert ein Fenste
 Rufen Sie auf dem Computer, auf dem der Adobe Campaign-Anwendungsserver installiert ist (**nlserver web**), das Paket **setup-client-6.XXXX.exe** ab und kopieren Sie es unter dem Namen **/usr/local/neolane/nl6/datakit/nl/eng/jsp**:
 
 ```
- cp setup-client-6.XXXX.exe /usr/local/neolane/nl6/datakit/nl/eng/jsp
+cp setup-client-6.XXXX.exe /usr/local/neolane/nl6/datakit/nl/eng/jsp
 ```
 
 Wenn die Clientkonsolen das nächste Mal verbunden werden, informiert ein Fenster die Benutzer über die Verfügbarkeit eines Updates und bietet ihnen die Möglichkeit, es herunterzuladen und zu installieren.

@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: d3369b63-a29b-43b7-b2ad-d36d4f46c82e
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: ht
+source-git-commit: 349c3dfd936527e50d7d3e03aa3408b395502da0
+workflow-type: tm+mt
 source-wordcount: '2544'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -169,10 +169,10 @@ Packageinhalt:
 <package author="Administrator (admin)" buildNumber="7974" buildVersion="7.1" img=""
 label="" name="" namespace="" vendor="">
  <desc></desc>
- <version buildDate="2013-01-09 10:30:18.954Z"/>
+ <version buildDate="AAAA-MM-DD HH:MM:SS.954Z"/>
  <entities schema="nms:operation">
-  <operation duration="432000" end="2013-01-14" internalName="OP1" label="MyCampaign"
-  modelName="opEmpty" start="2013-01-09">
+  <operation duration="432000" end="AAAA-MM-DD" internalName="OP1" label="MyCampaign"
+  modelName="opEmpty" start="AAAA-MM-DD">
    <controlGroup>
     <where filteringSchema=""/>
    </controlGroup>
@@ -188,7 +188,7 @@ label="" name="" namespace="" vendor="">
    </fcpSeed>
    <owner _operation="none" name="admin" type="0"/>
    <program _operation="none" name="nmsOperations"/>
-   <task end="2013-01-17 10:07:51.000Z" label="MyTask" name="TSK2" start="2013-01-16 10:07:51.000Z"
+   <task end="2023-01-17 10:07:51.000Z" label="MyTask" name="TSK2" start="2023-01-16 10:07:51.000Z"
    status="1">
     <owner _operation="none" name="admin" type="0"/>
     <operation _operation="none" internalName="OP1"/>
@@ -353,7 +353,7 @@ Führen Sie Importe stets innerhalb derselben Version der Plattform durch. Sie m
 
 >[!IMPORTANT]
 >
->Das Importieren zwischen verschiedenen Versionen wird von Adobe nicht unterstützt.<!--This is not allowed. Importing from 6.02 to 6.1, for example, is prohibited. If you do so, R&D won’t be able to help you resolve any issues you encounter.-->
+>Das Importieren zwischen verschiedenen Versionen wird von Adobe nicht unterstützt.<!--This is not allowed. Importing from 6.02 to 6.1, for example, is prohibited. If you do so, R&D won't be able to help you resolve any issues you encounter.-->
 
 Achten Sie auf das Schema und die Datenbankstruktur. Nach dem Importieren von Packages mit einem Schema muss ein Schema erstellt werden.
 
@@ -364,11 +364,11 @@ Achten Sie auf das Schema und die Datenbankstruktur. Nach dem Importieren von Pa
 Definieren Sie zunächst verschiedene Package-Typen. Es werden nur vier Typen verwendet:
 
 **Entitäten**
-* Alle &quot;xtk&quot;- und &quot;nms&quot;-spezifischen Elemente in Adobe Campaign wie Schemata, Formulare, Ordner, Versandvorlagen usw.
-* Sie können eine Entität sowohl als &quot;Admin&quot;- als auch als &quot;Plattform&quot;-Element betrachten.
+* Alle „xtk“- und „nms“-spezifischen Elemente in Adobe Campaign wie Schemata, Formulare, Ordner, Versandvorlagen usw.
+* Sie können eine Entität sowohl als „Admin“- als auch als „Plattform“-Element betrachten.
 * Sie sollten in ein Package, das Sie in eine Campaign-Instanz hochladen möchten, nicht mehr als eine Entität einschließen.
 
-<!--Nothing “works” alone. An entity package does not have a specific role or objective.-->
+<!--Nothing "works" alone. An entity package does not have a specific role or objective.-->
 
 Wenn Sie Ihre Konfiguration in einer neuen Instanz bereitstellen müssen, können Sie alle Ihre Entitäts-Packages importieren.
 
@@ -389,7 +389,7 @@ Nach der Konfiguration kann eine Funktion in eine andere Umgebung exportiert wer
 
 Die erste Lösung bestünde darin, die gesamte Funktion erneut zu exportieren. Um jedoch jegliches Risiko zu vermeiden (d. h. Aktualisieren unerwünschter Elemente), ist es sicherer, ein Package zu nutzen, das nur die Korrektur enthält.
 
-Daher empfehlen wir, ein &quot;Aktualisierungs&quot;-Package zu erstellen, das nur einen Entitätstyp der Funktion enthält.
+Daher empfehlen wir, ein „Aktualisierungs“-Package zu erstellen, das nur einen Entitätstyp der Funktion enthält.
 
 Eine Aktualisierung kann nicht nur aus einer Fehlerbehebung, sondern auch aus einem neuen Element Ihrer Entität/Funktion bzw. Ihres Kampagnen-Packages bestehen. Um eine Bereitstellung des gesamten Packages zu vermeiden, können Sie ein Aktualisierungs-Package exportieren.
 
@@ -422,11 +422,11 @@ Um den Import zu erleichtern, sollten Entitäts-Packages beim Importieren geordn
 
 #### Package 200 {#package-200}
 
-Package-Nummer 200 sollte nicht für spezifische Kampagnen verwendet werden; diese Nummer wird verwendet, um Aspekte zu aktualisieren, die alle Kampagnen betreffen.
+Package-Nummer &quot;200&quot; sollte nicht für eine bestimmte Kampagne verwendet werden: Diese Nummer wird verwendet, um etwas zu aktualisieren, das alle Kampagnen betrifft.
 
 #### Package aktualisieren {#update-package}
 
-Der letzte Punkt betrifft die Aktualisierung der Package-Nummerierung. Das ist Ihre Package-Nummer (Entität, Funktion oder Kampagne) mit einer 5 als Präfix. Beispiel:
+Der letzte Punkt betrifft die Aktualisierung der Package-Nummerierung. Es handelt sich um Ihre Paketnummer (Entität, Funktion oder Kampagne) mit dem Präfix &quot;5&quot;. Beispiel:
 * 5001 zum Aktualisieren eines Schemas
 * 5200 zum Aktualisieren aller Kampagnen
 * 5101 zum Aktualisieren der 101-Funktion
@@ -449,8 +449,8 @@ Wenn Sie ein Package aktualisieren, sollten Sie stets einen Kommentar in das Bes
 
 ![](assets/ncs_datapackage_best-practices-2.png)
 
-Sie sollten auch das Datum des Kommentars angeben. Melden Sie Ihren Kommentar zu einem Aktualisierungs-Package immer an das &quot;übergeordnete&quot; Element (Package ohne Präfix 5).
+Sie sollten auch das Datum des Kommentars angeben. Melden Sie Ihren Kommentar zu einem Aktualisierungspaket immer an das &quot;übergeordnete&quot; Paket (Paket ohne das 5-Präfix).
 
 >[!IMPORTANT]
 >
->Das Beschreibungsfeld darf maximal 2.000 Zeichen enthalten.
+>Das Beschreibungsfeld darf maximal 2.000 Zeichen enthalten.
