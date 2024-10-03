@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 3f6bbf2766a61580c4f232d3919fe955d82a7881
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3805'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -21,15 +21,15 @@ Die entsprechenden Aktualisierungen finden Sie in den [Versionshinweisen zu Adob
 
 ## 2024
 
-### September 2024 {#sept-2024}
+### September 2024 {#sept-2024}
 
-Die Versionsstatus wurden reduziert und vereinfacht. [Weitere Informationen](rn-overview.md)
+Die Versionsstatus wurden gekürzt und vereinfacht. [Weitere Informationen](rn-overview.md)
 
-Die Installation von Linux-Paketen wurde für Version 7.4.1 aktualisiert. [Mehr lesen](../../installation/using/installing-packages-with-linux.md)
+Die Installation von Linux-Paketen wurde für Version 7.4.1 aktualisiert. [Weitere Informationen](../../installation/using/installing-packages-with-linux.md)
 
 ### Juni 2024 {#june-2024}
 
-Der Abschnitt zu Versionshinweisen wurde mit Verbesserungen, Kompatibilitätsaktualisierungen und Patches für Version 7.4.1 aktualisiert. [Weitere Informationen](latest-release.md)
+Der Abschnitt zu den Versionshinweisen wurde aktualisiert und enthält jetzt Informationen zu den in Version 7.4.1 verfügbaren Verbesserungen, Kompatibilitätsaktualisierungen und Patches. [Weitere Informationen](latest-release.md)
 
 Es wurde ein Hinweis hinzugefügt, der angibt, wie Instanzvariablen beim Neustart von Workflows gelöscht werden können. [Weitere Informationen](../../workflow/using/starting-a-workflow.md)
 

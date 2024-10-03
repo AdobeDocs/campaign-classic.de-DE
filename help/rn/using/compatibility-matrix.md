@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: 728848eab059fc669c241346a2ff1feebd79222c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '843'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Sofern nicht anders angegeben, werden alle Nebenversionen unterstützt.
 
 >[!CAUTION]
 >
->Diese Matrix wird regelmäßig aktualisiert, indem neue unterstützte Systeme und Tools hinzugefügt und entfernt werden.
+>Diese Matrix wird regelmäßig aktualisiert, wenn neue unterstützte Systeme und Tools hinzugefügt und veraltete Elemente entfernt werden.
 
 ## Betriebssysteme {#OperatingSystems}
 
@@ -83,7 +83,7 @@ Als On-Premise-/Hybrid-Kundin bzw. Kunde müssen Sie Adobe Campaign unter einem 
 
 >[!IMPORTANT]
 >
->Mit RHEL müssen Sie bereit sein, [SELinux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#selinux) zu deaktivieren oder Ihre Architekten benutzerdefinierte SELinux-Regeln schreiben zu lassen, um zu überprüfen, ob ein aktiviertes SELinux keine Probleme mit Campaign-Vorgängen verursacht.
+>Wenn Sie RHEL verwenden, müssen Sie [SELinux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#selinux) deaktivieren. Alternativ können Ihre Programmierer und Programmiererinnen auch benutzerdefinierte SELinux-Regeln verfassen, mit denen sichergestellt werden kann, dass ein aktiviertes SELinux keine Probleme mit Campaign-Vorgängen verursacht.
 
 ## Webserver {#WebServers}
 
@@ -91,12 +91,12 @@ Als On-Premise-/Hybrid-Kundin bzw. Kunde müssen Sie je nach Betriebssystem Camp
 
 <table>
 <tbody>
-<td><strong>Webserver</strong></td>
-<td><strong>Webserver-Version</strong></td>
+<td><strong>Web-Server</strong></td>
+<td><strong>Web-Server-Version</strong></td>
 <tr>
 <td>Microsoft IIS</td>
 <td>
-<p>10,0</p>
+<p>10.0</p>
 </td>
 </tr>
 <tr>

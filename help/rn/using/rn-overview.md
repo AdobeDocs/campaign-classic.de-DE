@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 source-git-commit: 728848eab059fc669c241346a2ff1feebd79222c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '903'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ Jeder neue Build weist einen Status auf, der durch eine bestimmte Farbe in den [
 | Status | Beschreibung |
 |---|---|
 | [!BADGE Allgemeine Verfügbarkeit]{type=Positive} | Aktueller stabiler Build, in der Produktion validiert und von Adobe empfohlen. |
-| [!BADGE Eingeschränkte Verfügbarkeit]{type=informative} | Bereitstellung nur auf Anfrage. |
+| [!BADGE Eingeschränkte Verfügbarkeit]{type=Informative} | Bereitstellung nur auf Anfrage. |
 | [!BADGE Veraltet]{type=negative} | Keine Bereitstellung. Keine Fehlerbehebung. Bestehende Implementierungen müssen aktualisiert werden. |
 
 ## Versionszyklus{#rn-cycle}
