@@ -8,9 +8,9 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: 4aaa6256-256a-441d-80c9-430f8e427875
-source-git-commit: cc614ed608f1e8229c0ef1ccf35dbac6cb9dddd3
+source-git-commit: e5468f2aa5dc18c2b24c3e80e416e423ad0e13c9
 workflow-type: tm+mt
-source-wordcount: '1274'
+source-wordcount: '1260'
 ht-degree: 7%
 
 ---
@@ -132,22 +132,6 @@ Anschließend können Sie die erforderlichen Pakete installieren, wie unten besc
 
 * RPM-basierte Verteilung (RedHat, SuSe)
 
-  Um sie zu installieren, führen Sie sie als Root aus:
-
-  ```
-  yum install ./nlserver6-v7-XXXX.rpm
-  ```
-
-  Dabei ist XXX die Version der Datei.
-
-  Die rpm-Datei hat Abhängigkeiten von Paketen, die Sie in CentOS/Red Hat-Distributionen finden können. Wenn Sie einige dieser Abhängigkeiten nicht verwenden möchten, müssen Sie möglicherweise die Option &quot;nodeps&quot;von rpm verwenden:
-
-  ```
-  rpm --nodeps -Uvh nlserver6-v7-XXXX-0.x86_64.rpm
-  ```
-
-  Beachten Sie, dass die meisten Abhängigkeiten obligatorisch sind und `nlserver` nicht starten kann, wenn nicht installiert ist. Die einzige Ausnahme ist openjdk. Sie können bei Bedarf ein anderes JDK installieren.
-
   Wenn das Paket `epel-release` nicht installiert ist, installieren Sie es. Geben Sie dazu den folgenden Befehl als Root ein:
 
   ```
@@ -173,6 +157,14 @@ Anschließend können Sie die erforderlichen Pakete installieren, wie unten besc
   >[!IMPORTANT]
   >
   >Wenn Sie `Removing:` anstelle von `Upgrading:` lesen, brechen Sie den Befehl ab. Es gibt wahrscheinlich einige Fehler (siehe oben), die die Entfernung erklären. Korrigieren Sie in diesem Fall diese Fehler, indem Sie die aufgelisteten fehlenden Abhängigkeiten aktualisieren/installieren und versuchen Sie dann erneut, den Befehl auszuführen.
+
+  Die rpm-Datei hat Abhängigkeiten von Paketen, die Sie in CentOS/Red Hat-Distributionen finden können. Wenn Sie einige dieser Abhängigkeiten nicht verwenden möchten, müssen Sie möglicherweise die Option &quot;nodeps&quot;von rpm verwenden:
+
+  ```
+  rpm --nodeps -Uvh nlserver6-v7-XXXX-0.x86_64.rpm
+  ```
+
+  Beachten Sie, dass die meisten Abhängigkeiten obligatorisch sind und `nlserver` nicht starten kann, wenn nicht installiert ist. Die einzige Ausnahme ist openjdk. Sie können bei Bedarf ein anderes JDK installieren.
 
 * DEB-basierte Distribution (Debian)
 
