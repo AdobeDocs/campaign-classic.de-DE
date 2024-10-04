@@ -8,10 +8,10 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: 4aaa6256-256a-441d-80c9-430f8e427875
-source-git-commit: e5468f2aa5dc18c2b24c3e80e416e423ad0e13c9
+source-git-commit: 0da7fb912a909af222d796652efba4b30e39dc1c
 workflow-type: tm+mt
-source-wordcount: '1260'
-ht-degree: 7%
+source-wordcount: '1247'
+ht-degree: 8%
 
 ---
 
@@ -194,7 +194,7 @@ Führen Sie dazu den folgenden Befehl aus:
 >* Ihr Skript könnte **httpd** anstelle von **apache** heißen.
 >* Sie MÜSSEN diesen Befehl ausführen, bis Sie die folgende Antwort erhalten:
 >
->   Dieser Vorgang ist erforderlich, damit Apache die neue Bibliothek anwendet.
+>   `This operation is required in order for Apache to apply the new library.`
 
 Starten Sie dann Apache neu:
 
