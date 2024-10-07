@@ -1,20 +1,18 @@
 ---
 product: campaign
-title: Erste Schritte mit deskriptiver Analyse
-description: Erste Schritte mit deskriptiver Analyse
+title: Deskriptive Analyse
+description: Populationen mit beschreibenden Analyseberichten analysieren
 feature: Reporting, Monitoring
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 exl-id: 19920058-e8e8-4e17-9cc3-24ddf9f96d04
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: ht
-source-wordcount: '210'
-ht-degree: 100%
+source-git-commit: 5e062f9dbdf6c148e442ac10dbb12cf72ba0179b
+workflow-type: tm+mt
+source-wordcount: '209'
+ht-degree: 93%
 
 ---
 
-# Erste Schritte mit deskriptiver Analyse{#about-descriptive-analysis}
-
-
+# Deskriptive Analyse {#about-descriptive-analysis}
 
 Um Statistiken über Daten Ihrer Datenbank zu erzeugen, können Sie Berichte mit deskriptiven Analysen über einen dedizierten Assistenten erstellen und Inhalt und Darstellung entsprechend Ihren Vorstellungen anpassen.
 

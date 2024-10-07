@@ -1,20 +1,18 @@
 ---
 product: campaign
-title: Verwenden des Assistenten für deskriptive Analysen
-description: Verwenden des Assistenten für deskriptive Analysen
+title: Erstellen des ersten beschreibenden Analyseberichts
+description: Erfahren Sie, wie Sie mit dem Assistenten Ihren ersten beschreibenden Analysebericht erstellen
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Reporting, Monitoring
 exl-id: 848d67c7-d1dc-4eba-bcb8-672e76d8ce87
-source-git-commit: f90df5a5e5b3a2317d86ff2919560ded38f44f44
-workflow-type: ht
-source-wordcount: '1656'
-ht-degree: 100%
+source-git-commit: 5e062f9dbdf6c148e442ac10dbb12cf72ba0179b
+workflow-type: tm+mt
+source-wordcount: '1666'
+ht-degree: 98%
 
 ---
 
-# Verwenden des Assistenten für deskriptive Analysen{#using-the-descriptive-analysis-wizard}
-
-
+# Erstellen des ersten beschreibenden Analyseberichts {#using-the-descriptive-analysis-wizard}
 
 Um einen deskriptiven Analysebericht zu erstellen, befolgen Sie die Schritte des dedizierten Assistenten. Seine Konfiguration hängt von den zu analysierenden Daten sowie der gewünschten Darstellung ab.
 

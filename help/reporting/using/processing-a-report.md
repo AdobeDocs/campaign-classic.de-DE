@@ -1,20 +1,18 @@
 ---
 product: campaign
-title: Verwenden eines Analyseberichts
-description: Verwenden eines Analyseberichts
+title: Analyseberichte verwalten und konfigurieren
+description: Analyseberichte verwalten und konfigurieren
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Reporting, Monitoring
 exl-id: d133efec-33e1-4711-a90f-e40385059386
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: ht
-source-wordcount: '885'
-ht-degree: 100%
+source-git-commit: 5e062f9dbdf6c148e442ac10dbb12cf72ba0179b
+workflow-type: tm+mt
+source-wordcount: '891'
+ht-degree: 97%
 
 ---
 
-# Verwenden eines Analyseberichts{#processing-a-report}
-
-
+# Analyseberichte verwalten und konfigurieren {#processing-a-report}
 
 ## Analyseberichte speichern {#saving-an-analysis-report}
 
