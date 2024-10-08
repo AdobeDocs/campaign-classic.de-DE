@@ -6,18 +6,19 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Email, Push
 role: User, Data Engineer
 exl-id: b8642df3-1960-4f2c-8273-c3988a3e85f0
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 287d1bf60b39e9e2b389701097995dbea962dec9
 workflow-type: tm+mt
-source-wordcount: '476'
-ht-degree: 100%
+source-wordcount: '479'
+ht-degree: 92%
 
 ---
 
 # Personalisieren der Emoticon-Liste {#customize-emoticons}
 
 Die im Popup angezeigten Emoticons werden in einer bestimmten Reihenfolge aufgelistet. Damit können Sie die Emoticons in einer Liste darstellen und deren Auswahl für bestimmte Felder beschränken.
-Die Reihenfolge der Emoticon-Liste kann angepasst werden; außerdem können Sie Ihrer Liste weitere Emoticons hinzufügen.
-Emoticons sind für E-Mail- und Push-Nachrichten verfügbar; weiterführende Informationen hierzu finden Sie auf dieser [Seite](defining-the-email-content.md#inserting-emoticons).
+Die Reihenfolge der Emoticon-Liste kann angepasst werden. Sie können Ihrer Liste auch weitere Emoticons hinzufügen.
+
+Beachten Sie, dass Emoticons nur für E-Mail und Push-Benachrichtigungen verfügbar sind. Weiterführende Informationen dazu finden Sie auf dieser [Seite](defining-the-email-content.md#inserting-emoticons).
 
 ## Hinzufügen eines neuen Emoticons {#add-new-emoticon}
 
