@@ -1,20 +1,20 @@
 ---
 product: campaign
-title: Anwendungsfälle für Analyseberichte
-description: Anwendungsfälle für Analyseberichte
+title: Anwendungsfälle für das Analyse-Reporting
+description: Anwendungsfälle für das Analyse-Reporting
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Reporting, Monitoring
 exl-id: e326e32e-7bb0-46ff-9ba5-94ccd1169af2
 source-git-commit: 5e062f9dbdf6c148e442ac10dbb12cf72ba0179b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1436'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Anwendungsfälle für Analyseberichte {#use-cases}
+# Anwendungsfälle für das Analyse-Reporting {#use-cases}
 
-## Populationen analysieren {#analyzing-a-population}
+## Analysieren von Populationen {#analyzing-a-population}
 
 Im unten stehenden Beispiel wird mithilfe des Assistenten für deskriptive Analysen die Population einer Newsletter-Serie untersucht.
 

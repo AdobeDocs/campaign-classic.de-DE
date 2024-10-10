@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: administration-basics
 exl-id: d3369b63-a29b-43b7-b2ad-d36d4f46c82e
 source-git-commit: 349c3dfd936527e50d7d3e03aa3408b395502da0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2544'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -422,11 +422,11 @@ Um den Import zu erleichtern, sollten Entitäts-Packages beim Importieren geordn
 
 #### Package 200 {#package-200}
 
-Package-Nummer &quot;200&quot; sollte nicht für eine bestimmte Kampagne verwendet werden: Diese Nummer wird verwendet, um etwas zu aktualisieren, das alle Kampagnen betrifft.
+Paketnummer 200 sollte nicht für eine spezifische Kampagne verwendet werden. Diese Nummer wird verwendet, um Aspekte zu aktualisieren, die alle Kampagnen betreffen.
 
 #### Package aktualisieren {#update-package}
 
-Der letzte Punkt betrifft die Aktualisierung der Package-Nummerierung. Es handelt sich um Ihre Paketnummer (Entität, Funktion oder Kampagne) mit dem Präfix &quot;5&quot;. Beispiel:
+Der letzte Punkt betrifft die Aktualisierung der Paketnummerierung. Es handelt sich hierbei um Ihre Paketnummer (Entität, Funktion oder Kampagne) mit einer 5 als Präfix. Beispiel:
 * 5001 zum Aktualisieren eines Schemas
 * 5200 zum Aktualisieren aller Kampagnen
 * 5101 zum Aktualisieren der 101-Funktion
@@ -449,7 +449,7 @@ Wenn Sie ein Package aktualisieren, sollten Sie stets einen Kommentar in das Bes
 
 ![](assets/ncs_datapackage_best-practices-2.png)
 
-Sie sollten auch das Datum des Kommentars angeben. Melden Sie Ihren Kommentar zu einem Aktualisierungspaket immer an das &quot;übergeordnete&quot; Paket (Paket ohne das 5-Präfix).
+Sie sollten auch das Datum des Kommentars angeben. Melden Sie Ihren Kommentar zu einem Aktualisierungspaket immer an das „übergeordnete“ Element (Paket ohne das Präfix 5).
 
 >[!IMPORTANT]
 >

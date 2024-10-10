@@ -7,18 +7,18 @@ feature: Email, Push
 role: User, Data Engineer
 exl-id: b8642df3-1960-4f2c-8273-c3988a3e85f0
 source-git-commit: 287d1bf60b39e9e2b389701097995dbea962dec9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '479'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 # Personalisieren der Emoticon-Liste {#customize-emoticons}
 
 Die im Popup angezeigten Emoticons werden in einer bestimmten Reihenfolge aufgelistet. Damit können Sie die Emoticons in einer Liste darstellen und deren Auswahl für bestimmte Felder beschränken.
-Die Reihenfolge der Emoticon-Liste kann angepasst werden. Sie können Ihrer Liste auch weitere Emoticons hinzufügen.
+Die Reihenfolge der Emoticon-Liste kann angepasst werden. Außerdem können Sie der Liste weitere Emoticons hinzufügen.
 
-Beachten Sie, dass Emoticons nur für E-Mail und Push-Benachrichtigungen verfügbar sind. Weiterführende Informationen dazu finden Sie auf dieser [Seite](defining-the-email-content.md#inserting-emoticons).
+Beachten Sie, dass Emoticons nur für E-Mails und Push-Benachrichtigungen verfügbar sind. Weitere Informationen hierzu finden Sie auf dieser [Seite](defining-the-email-content.md#inserting-emoticons).
 
 ## Hinzufügen eines neuen Emoticons {#add-new-emoticon}
 

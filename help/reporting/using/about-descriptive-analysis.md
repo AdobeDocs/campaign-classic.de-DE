@@ -1,18 +1,18 @@
 ---
 product: campaign
-title: Deskriptive Analyse
-description: Populationen mit beschreibenden Analyseberichten analysieren
+title: Informationen zur deskriptiven Analyse
+description: Analysieren von Populationen mit deskriptiven Analyseberichten
 feature: Reporting, Monitoring
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 exl-id: 19920058-e8e8-4e17-9cc3-24ddf9f96d04
 source-git-commit: 5e062f9dbdf6c148e442ac10dbb12cf72ba0179b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '209'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
-# Deskriptive Analyse {#about-descriptive-analysis}
+# Informationen zur deskriptiven Analyse {#about-descriptive-analysis}
 
 Um Statistiken über Daten Ihrer Datenbank zu erzeugen, können Sie Berichte mit deskriptiven Analysen über einen dedizierten Assistenten erstellen und Inhalt und Darstellung entsprechend Ihren Vorstellungen anpassen.
 
