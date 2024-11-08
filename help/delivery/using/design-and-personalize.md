@@ -6,10 +6,10 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Email Design, Personalization
 role: User
 exl-id: 5bf727d2-83b1-4a99-be25-041eee8d234c
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: ht
-source-wordcount: '1304'
-ht-degree: 100%
+source-git-commit: d34f75fadb02b4c03acc0c2d7be52df65320ec2d
+workflow-type: tm+mt
+source-wordcount: '1298'
+ht-degree: 98%
 
 ---
 
@@ -123,7 +123,7 @@ Responsives E-Mail-Design stellt sicher, dass eine E-Mail auf jedem Gerät optim
 
 * Verwenden Sie den Vorschaumodus und Testsendungen, um das Rendering auf möglichst vielen Geräten zu testen.
 
-* Das DCE-Modul (Digital Content Editor) von Adobe Campaign enthält einige im responsiven Design formatierte Vorlagen. Gehen Sie dazu zu **[!UICONTROL Ressourcen]** > **[!UICONTROL Vorlagen]** > **[!UICONTROL Inhaltsvorlagen]**. Weiterführende Informationen finden Sie [in diesem Artikel](https://theblog.adobe.com/responsive-email-design-101/).
+* Das DCE-Modul (Digital Content Editor) von Adobe Campaign Classic enthält einige Vorlagen im responsiven Design-Format für Mobilgeräte, die über **[!UICONTROL Ressourcen]** > **[!UICONTROL Vorlagen]** > **[!UICONTROL Inhaltsvorlagen]** verfügbar sind.
 
 ## Verwalten von Bildern {#manage-images}
 
