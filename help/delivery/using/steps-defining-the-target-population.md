@@ -5,10 +5,10 @@ description: Weitere Informationen zur Definition der Zielpopulation
 feature: Audiences, Proofs
 role: User
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
-source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
+source-git-commit: f469689f9e8a4d805fb95a1ae120ccd35aba3731
 workflow-type: tm+mt
-source-wordcount: '1740'
-ht-degree: 100%
+source-wordcount: '1877'
+ht-degree: 99%
 
 ---
 
@@ -34,7 +34,7 @@ Um die Versandempfänger auszuwählen, gehen Sie wie folgt vor:
 
 1. Wählen Sie Zielgruppen-Mapping aus der Dropdown-Liste **[!UICONTROL Zielgruppen-Mapping]** aus. Die Adobe-Campaign-Standardeinstellung für Zielgruppen-Mapping ist **[!UICONTROL Empfänger]**, basierend auf dem Schema **nms:recipient**.
 
-   Es sind weitere Zielgruppen-Zuordnungen verfügbar, von denen sich einige auf Ihre spezifische Konfiguration beziehen können. Weitere Informationen zu Zielgruppen-Zuordnungen finden Sie unter [Auswahl einer Zielgruppen-Zuordnung](selecting-a-target-mapping.md).
+   Es sind weitere Zielgruppen-Mappings verfügbar, von denen einige mit Ihrer spezifischen Konfiguration in Verbindung stehen können.[Weitere Informationen](#select-a-target-mapping).
 
 1. Wählen Sie zur Konfiguration von Einschränkungsfiltern die Schaltfläche **[!UICONTROL Hinzufügen]** aus.
 
@@ -93,7 +93,7 @@ Gehen Sie dazu wie folgt vor:
 
    ![](assets/s_ncs_user_wizard_external_recipients.png)
 
-1. Standardmäßig werden Empfängerinnen und Empfänger in die Datenbank importiert. Sie müssen das **[!UICONTROL Zielgruppen-Mapping]** auswählen. Weitere Informationen zu Zielgruppen-Zuordnungen finden Sie unter [Auswahl einer Zielgruppen-Zuordnung](selecting-a-target-mapping.md).
+1. Standardmäßig werden Empfängerinnen und Empfänger in die Datenbank importiert. Sie müssen das **[!UICONTROL Zielgruppen-Mapping]** auswählen. [Weitere Informationen](#select-a-target-mapping)
 
    Sie können auch **[!UICONTROL Empfänger nicht in die Datenbank importieren]** auswählen.
 
@@ -225,6 +225,25 @@ Siehe auch:
 * [Auswählen der Zielgruppe für den Testversand](#selecting-the-proof-target)
 * [Über Testadressen](about-seed-addresses.md)
 * [Anwendungsbeispiel: Auswählen von Testadressen nach Kriterien](use-case-selecting-seed-addresses-on-criteria.md)
+
+## Auswählen eines Zielgruppen-Mappings {#select-a-target-mapping}
+
+Standard-Zielgruppe in Versandvorlagen sind die **[!UICONTROL Empfänger]**. Das Zielgruppen-Mapping verwendet also die Felder der Tabelle **nms:recipient**. Adobe Campaign stellt jedoch auch andere Zielgruppen-Mappings zur Verfügung, auf die Sie je nach Bedarf zurückgreifen können.
+
+![](assets/delivery_select_mapping.png)
+
+Folgende Mappings sind vorhanden:
+
+| Name | Verwendung | Standardschema |
+|---|---|---|
+| Bereich Empfänger | Versand richtet sich an die in der Adobe-Campaign-Datenbank enthaltenen Empfänger | nms:recipient |
+| Besucher | Versand richtet sich an Profile, die beispielsweise durch das Weiterleiten von Nachrichten (Virales Marketing) oder durch soziale Netzwerke (Facebook, X – früher bekannt als Twitter) akquiriert wurden. | mns:visitor |
+| Abonnements  | Versand richtet sich an Abonnenten eines Informationsdienstes wie z. B. einen Newsletter | nms:subscription |
+| Besucher-Abonnements | Versand richtet sich an Besucher, die einen Informationsdienst beziehen | nms:visitorSub |
+| Service | Veröffentlichen auf einem X-Konto oder einer Facebook-Seite | nms:service |
+| Benutzer | Versand richtet sich an Adobe-Campaign-Benutzer | nms:operator |
+| Externe Datei | Versand basiert auf einer Datei, die alle notwendigen Informationen enthält | Ohne Schema oder Zielgruppe |
+
 
 ## Anleitungsvideo {#seeds-and-proofs-video}
 

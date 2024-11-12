@@ -7,10 +7,10 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
-source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
-workflow-type: ht
-source-wordcount: '843'
-ht-degree: 100%
+source-git-commit: f469689f9e8a4d805fb95a1ae120ccd35aba3731
+workflow-type: tm+mt
+source-wordcount: '832'
+ht-degree: 99%
 
 ---
 
@@ -169,10 +169,6 @@ Gehen Sie dazu wie folgt vor:
 
 1. Erstellen Sie auf der ](#execution-instance)Ausführungsinstanz[ für jede Marke ein externes Konto mit demselben internen Namen (Schritt 1).
 
-1. Erstellen Sie für jede Marke eine Standard-Versandvorlage.
-
-   >[!NOTE]
-   >
-   >    Näheres dazu, wie Sie eine Versandvorlage erstellen, finden Sie in [diesem Abschnitt](../../delivery/using/creating-a-delivery-template.md#creating-a-new-template).
+1. Erstellen Sie eine [Versandvorlage](../../delivery/using/about-templates.md) pro Marke.
 
 1. Konfigurieren Sie in den **[!UICONTROL Eigenschaften]** der Versandvorlage das Routing zum externen Konto der Marke.
