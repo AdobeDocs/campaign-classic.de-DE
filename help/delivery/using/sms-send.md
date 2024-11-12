@@ -2,13 +2,12 @@
 product: campaign
 title: SMS senden, überwachen und verfolgen
 description: Erfahren Sie, wie Sie SMS in Campaign senden, überwachen und verfolgen.
-badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: SMS
 role: User
 exl-id: 442672ee-5037-49b7-a06f-3a99920ce2b6
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '971'
 ht-degree: 100%
 
 ---

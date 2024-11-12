@@ -2,13 +2,12 @@
 product: campaign
 title: Erstellen und Identifizieren des Versands
 description: Erstellen und Identifizieren des Versands
-badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Channel Configuration
 role: User
 exl-id: 6e37bc14-b1a9-42af-8c28-ae4b5bcaa055
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
 workflow-type: tm+mt
-source-wordcount: '292'
+source-wordcount: '283'
 ht-degree: 100%
 
 ---

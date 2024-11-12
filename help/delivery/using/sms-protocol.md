@@ -2,14 +2,13 @@
 product: campaign
 title: Protokoll und Einstellungen des SMS-Connectors
 description: Erfahren Sie mehr über den SMS-Connector und dessen Konfiguration
-badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: SMS
 role: Developer, Data Engineer
 exl-id: fded088a-11a2-4b87-a368-7b197334aca4
-source-git-commit: 6803b6628313db9108a191fd143dac68ee799149
+source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
 workflow-type: tm+mt
-source-wordcount: '8466'
-ht-degree: 100%
+source-wordcount: '8457'
+ht-degree: 99%
 
 ---
 

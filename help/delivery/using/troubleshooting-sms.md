@@ -2,13 +2,12 @@
 product: campaign
 title: SMS-Fehlerbehebung
 description: Weitere Informationen zur Fehlerbehebung bei SMS-Kanälen
-badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: SMS, Troubleshooting
 role: User
 exl-id: 841f0c2f-90ef-4db0-860a-75fc7c48804a
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
 workflow-type: tm+mt
-source-wordcount: '2764'
+source-wordcount: '2755'
 ht-degree: 100%
 
 ---
@@ -147,7 +146,7 @@ Verringerung der Anzahl von Duplikaten bei einer Wiederholung:
 
 ## Problem bei der Verarbeitung von SR (Empfangsbestätigungen) {#issue-process-SR}
 
-* Sie müssen SMPP-Traces aktivieren, um jegliche Art von SR-Fehlerbehebung durchzuführen.
+* Sie müssen die SMPP-Verfolgung aktivieren, um jegliche Art von SR-Fehlerbehebung durchzuführen.
 
 * Überprüfen Sie, ob die `DELIVER_SM PDU` vom Provider kommt und korrekt formuliert ist.
 

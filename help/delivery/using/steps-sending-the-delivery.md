@@ -2,13 +2,12 @@
 product: campaign
 title: Konfigurieren und Durchführen des Versands
 description: Erfahren Sie, wie Sie den Versand konfigurieren und versenden
-badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Channel Configuration
 role: User
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: ht
-source-wordcount: '1624'
+source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
+workflow-type: tm+mt
+source-wordcount: '1615'
 ht-degree: 100%
 
 ---

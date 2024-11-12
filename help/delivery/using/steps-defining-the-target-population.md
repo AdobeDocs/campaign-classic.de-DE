@@ -2,13 +2,12 @@
 product: campaign
 title: Bestimmen der Zielpopulation
 description: Weitere Informationen zur Definition der Zielpopulation
-badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Audiences, Proofs
 role: User
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
 workflow-type: tm+mt
-source-wordcount: '1749'
+source-wordcount: '1740'
 ht-degree: 100%
 
 ---
@@ -94,7 +93,7 @@ Gehen Sie dazu wie folgt vor:
 
    ![](assets/s_ncs_user_wizard_external_recipients.png)
 
-1. Standardmäßig werden Empfänger in die Datenbank importiert. Sie müssen das **[!UICONTROL Zielgruppen-Mapping]** auswählen. Weitere Informationen zu Zielgruppen-Zuordnungen finden Sie unter [Auswahl einer Zielgruppen-Zuordnung](selecting-a-target-mapping.md).
+1. Standardmäßig werden Empfängerinnen und Empfänger in die Datenbank importiert. Sie müssen das **[!UICONTROL Zielgruppen-Mapping]** auswählen. Weitere Informationen zu Zielgruppen-Zuordnungen finden Sie unter [Auswahl einer Zielgruppen-Zuordnung](selecting-a-target-mapping.md).
 
    Sie können auch **[!UICONTROL Empfänger nicht in die Datenbank importieren]** auswählen.
 
