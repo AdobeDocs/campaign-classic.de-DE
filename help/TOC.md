@@ -6,9 +6,9 @@ title: Campaign Classic v7 – Handbuch
 user-guide-description: Produktdokumentation für Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
+source-git-commit: 446062946b64c9a4d065b6a56d263914cbe628f8
 workflow-type: tm+mt
-source-wordcount: '2560'
+source-wordcount: '2562'
 ht-degree: 100%
 
 ---
@@ -163,7 +163,7 @@ ht-degree: 100%
       + [Definieren des Direkt-Mail-Inhalts](delivery/using/defining-the-direct-mail-content.md)
       + [Validieren](delivery/using/validating.md)
    + Versandvorlagen verwenden{#using-delivery-templates}
-      + [Über Vorlagen](delivery/using/about-templates.md)
+      + [Arbeiten mit Versandvorlagen](delivery/using/about-templates.md)
       + [Versandvorlage erstellen](delivery/using/creating-a-delivery-template.md)
       + [Zielgruppen-Mapping auswählen](delivery/using/selecting-a-target-mapping.md)
       + [Versand aus einer Vorlage erstellen](delivery/using/creating-a-delivery-from-a-template.md)
