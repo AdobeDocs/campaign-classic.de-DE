@@ -5,8 +5,10 @@ description: Sobald Ihre Nachricht fertig ist, führen Sie alle Prüfungen vor d
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Deliverability
 role: User
+hide: true
+hidefromtoc: true
 exl-id: 50d326b0-3c23-4dbf-9df6-d32b48e30f69
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
 workflow-type: tm+mt
 source-wordcount: '911'
 ht-degree: 100%

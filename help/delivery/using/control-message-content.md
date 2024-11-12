@@ -6,10 +6,10 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Deliverability
 role: User
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
-source-git-commit: de6e86eb2304a88e836c5759b87d7f38446ed357
-workflow-type: ht
-source-wordcount: '778'
-ht-degree: 100%
+source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
+workflow-type: tm+mt
+source-wordcount: '760'
+ht-degree: 98%
 
 ---
 
@@ -29,7 +29,7 @@ Weitere Tipps zur Optimierung der Zustellbarkeit beim Entwerfen von Inhalten fin
 
 >[!NOTE]
 >
->Weitere Informationen zum Bearbeiten von E-Mail-Inhalten finden Sie unter [Definieren der E-Mail-Inhalte](defining-the-email-content.md) und [Erstellen personalisierter Inhalte](design-and-personalize.md).
+>Weitere Informationen zum Bearbeiten von E-Mail-Inhalt finden Sie unter [E-Mail-Inhalt definieren](defining-the-email-content.md).
 
 ## Absenderadresse {#sender-address}
 
@@ -44,8 +44,6 @@ Weitere Informationen hierzu finden Sie auf [dieser Seite](defining-the-email-co
 Um das Nutzererlebnis zu verbessern und Empfängerinnen und Empfänger dazu zu bewegen, Ihre E-Mail zu öffnen, ermöglicht Adobe Campaign Ihnen, Ihre Nachrichten zu personalisieren.
 
 Weitere Informationen zur Verwendung von Personalisierungsfeldern in Adobe Campaign finden Sie in [diesem Abschnitt](personalization-fields.md).
-
-Einige Tipps zur Optimierung der Personalisierung beim Erstellen Ihres Inhalts finden Sie in [diesem Abschnitt](design-and-personalize.md#optimize-personalization).
 
 ## Ausschluss-Link und -Formular {#opt-out}
 
