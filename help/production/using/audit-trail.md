@@ -4,10 +4,10 @@ title: Audit-Protokoll
 description: Erfahren Sie, wie Sie Ihre Instanz mit dem Audit-Protokoll von Campaign überwachen.
 feature: Audit Trail, Monitoring, Workflows
 exl-id: 8508d879-fb38-4b1f-9f55-0341bb8d0c67
-source-git-commit: 6d94ca01f23f7f2409fbdcb4e4c4716d694d527f
+source-git-commit: 3d1ed85dcafc5afc4088db98c09d78fb7e9c0a39
 workflow-type: tm+mt
-source-wordcount: '424'
-ht-degree: 86%
+source-wordcount: '425'
+ht-degree: 85%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 86%
 
 >[!INFO]
 >
->Weitere Informationen zur Funktion &quot;Audit-Protokoll&quot;finden Sie in der Dokumentation zu Adobe Campaign v8.
+>Weitere Informationen zur Funktion &quot;Audit-Protokoll&quot;finden Sie in der Dokumentation zu [Adobe Campaign v8-Dokumentation](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/audit-trail) .
 
 In Adobe Campaign erhalten Sie über das **[!UICONTROL Audit-Protokoll]** Zugriff auf den vollständigen Verlauf der in Ihrer Instanz vorgenommenen Änderungen.
 
