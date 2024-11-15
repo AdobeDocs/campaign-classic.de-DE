@@ -5,10 +5,10 @@ description: Informationen zum Erstellen Ihres Adobe-API-Kontos
 role: User, Admin
 level: Beginner
 exl-id: 5d830ea0-a0a3-4b35-8dc4-e955380431fb
-source-git-commit: 2ce7a91aaddb0df412fc0002ff1463d48b2b7c3c
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 5352426fc68cbcb6519127e5c89c1e9f8619ca6b
+workflow-type: tm+mt
+source-wordcount: '362'
+ht-degree: 97%
 
 ---
 
@@ -79,3 +79,9 @@ On-Premise-/Hybrid-Kundinnen und -Kunden müssen die folgenden Schritte ausführ
    ```
    nlserver config -instance:<instance_name> -setimsoauth:ims-org-id/client-id/technical-account-id/client-secret
    ```
+
+   >[!NOTE]
+   >
+   > Verwenden Sie für Versionen, die älter als 7.4.1 sind, `setimsauth` oder `setimsjwtauth` anstelle von `setimsoauth`.
+
+
