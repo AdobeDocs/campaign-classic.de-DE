@@ -5,10 +5,10 @@ description: Weitere Informationen zur Fehlerbehebung bei SMS-Kanälen
 feature: SMS, Troubleshooting
 role: User
 exl-id: 841f0c2f-90ef-4db0-860a-75fc7c48804a
-source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
+source-git-commit: f660dcbb111e73f12737d96ebf9be2aeccbca8ee
 workflow-type: tm+mt
-source-wordcount: '2755'
-ht-degree: 100%
+source-wordcount: '3044'
+ht-degree: 90%
 
 ---
 
@@ -310,3 +310,30 @@ Das Ergebnis sollte wie folgt lauten:
 ```
 
 Vier geöffnete Verbindungen für den SMS-Prozess und zwei pro untergeordnetem MTA-Element mit fünf untergeordneten Elementen.
+
+## Unterschiede zwischen den Status von SMS-Sendungen
+
+Die Unterschiede zwischen den Status **Gesendet**, **An Provider gesendet** und **Auf Mobiltelefon erhalten** werden im Folgenden detailliert definiert:
+
+* **Auf Mobiltelefon erhalten**:
+Die Nachricht wurde erfolgreich an das Gerät des Benutzers gesendet, wobei sowohl vom MT-Versand (Mobile Terminated) als auch von einem Statusbericht (SR) bestätigt wurde.
+
+* **Gesendet**:
+Die Nachricht wurde im Schritt Mobile Terminated (MT) erfolgreich verarbeitet, aber ein Statusbericht (SR), der die Zustellung an das Mobilgerät bestätigt, wurde noch nicht empfangen.
+
+* **An Provider gesendet**:
+Die Nachricht wurde mit dem `SUBMIT_SM command` an den Provider gesendet, aber vom Provider wurde keine `SUBMIT_SM_RESP` Bestätigung empfangen.
+
+Nachrichten können im Status **Gesendet** verbleiben, da die Umstellung auf **Erhalten** von einem Statusbericht (SR) des Benutzergeräts abhängig ist. Wenn der Benutzer Probleme beim Empfang von Zellen oder bei anderen Verbindungsproblemen hat, erhält er die Nachricht möglicherweise nicht sofort. In solchen Fällen ist es Aufgabe des Providers, die Bereitstellung erneut zu versuchen oder zu erklären, warum kein SR generiert wurde. Wenn der Provider Abweichungen feststellt, muss er sicherstellen, dass das Verhalten von Campaign mit den Erwartungen übereinstimmt.
+
+Im Folgenden finden Sie den standardmäßigen SMS-Versandstatus:
+
+* **Ausstehend**: Die Nachricht wurde noch nicht an den Aggregator gesendet.
+
+* **Vom Provider berücksichtigt**: Die Nachricht wurde an den Aggregator gesendet und der Aggregator hat den Empfang bestätigt.
+
+* **Gesendet**: Der Aggregator hat bestätigt, dass die Nachricht erfolgreich ohne sofortigen Fehler an das Mobilfunknetz des Benutzers gesendet wurde.
+
+* **Auf Mobiltelefon erhalten**: Das Mobilgerät des Benutzers hat die Quittung quittiert, was vom Aggregator überprüft wurde.
+
+* **Fehlgeschlagen**: Die Nachricht wurde an den Aggregator gesendet, der versucht hat, die Nachricht für einen bestimmten Zeitraum (z. B. mehrere Stunden) an das Mobilgerät des Benutzers zu senden. Die Bereitstellung schlug aufgrund von Netzwerkproblemen, der Nichtverfügbarkeit des Benutzergeräts oder anderen Gründen letztendlich fehl.
