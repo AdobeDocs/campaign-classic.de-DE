@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 8180f77c2824f9b54ae3c924b1cc45532675cf85
 workflow-type: tm+mt
-source-wordcount: '1952'
+source-wordcount: '1981'
 ht-degree: 64%
 
 ---
@@ -20,9 +20,9 @@ Adobe Campaign enthält eine Reihe vordefinierter externer Konten. Um Verbindung
 
 Externe Konten werden von technischen Prozessen, wie technischen Workflows oder Kampagnen-Workflows, verwendet. Beispiel: Bei der Einrichtung eines Dateitransfers in einem Workflow oder bei einem Datenaustausch mit einem anderen Programm (Adobe Target, Experience Manager usw.) müssen Sie ein externes Konto auswählen.
 
-## Externes Konto erstellen {#creating-an-external-account}
+## Erstellen eines externen Kontos {#creating-an-external-account}
 
-Gehen Sie wie folgt vor, um ein neues externes Konto zu erstellen. Detaillierte Einstellungen hängen vom Typ des externen Kontos ab.
+Gehen Sie wie folgt vor, um ein neues externes Konto zu erstellen.  Detaillierte Einstellungen hängen vom Typ des externen Kontos ab.
 
 1. Wählen Sie in Campaign **[!UICONTROL Explorer]** die Option **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Plattform]** &#39;>&#39; **[!UICONTROL Externe Konten]** aus.
 
@@ -100,6 +100,8 @@ Um ein externes POP3 mit **Microsoft OAuth 2.0** zu konfigurieren, aktivieren Si
 * **[!UICONTROL Azure Redirect URL]**
 
   Die Umleitungs-URL finden Sie im Menü **Authentifizierung** Ihrer Anwendung im Azure-Portal. Sie sollte mit der folgenden Syntax enden: `nl/jsp/oauth.jsp`, z. B. `https://redirect.adobe.net/nl/jsp/oauth.jsp`.
+
+Internet-Zugriff ist für die Einrichtung und die Verwendung der Schaltfläche **[!UICONTROL Verbindung testen]** in der Clientkonsole erforderlich. Nach der Einrichtung kann der InMail-Prozess mit Microsoft-Servern ohne Internet kommunizieren.
 
 Nachdem Sie Ihre unterschiedlichen Anmeldedaten eingegeben haben, können Sie auf **[!UICONTROL Verbindung einrichten]** klicken, um die Konfiguration Ihres externen Kontos abzuschließen.
 
@@ -446,7 +448,7 @@ Informationen darüber, wo Sie die Kennung des Zugriffsschlüssels und den gehei
 
 ### Azur Blob-Speicherung {#azure-blob-external-account}
 
-Mit dem externen Konto **Azure Blob Storage** können Daten mithilfe einer Workflow-Aktivität vom Typ **[!UICONTROL Dateiübertragung]** in Adobe Campaign importiert oder exportiert werden. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../workflow/using/file-transfer.md).
+Mit dem externen Konto **Azure Blob Storage** können Daten mithilfe einer Workflow-Aktivität vom Typ **[!UICONTROL Dateiübertragung]** in Adobe Campaign importiert oder exportiert werden. Weitere Informationen hierzu finden Sie in diesem [Abschnitt](../../workflow/using/file-transfer.md).
 
 ![](assets/ext_account_23.png)
 
