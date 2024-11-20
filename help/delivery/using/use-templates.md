@@ -7,8 +7,8 @@ feature: Delivery Templates
 hide: true
 hidefromtoc: true
 exl-id: a5da3f29-5eab-428c-b7c3-d9e4243fe628
-source-git-commit: f469689f9e8a4d805fb95a1ae120ccd35aba3731
-workflow-type: tm+mt
+source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
+workflow-type: ht
 source-wordcount: '606'
 ht-degree: 100%
 
@@ -20,11 +20,11 @@ ht-degree: 100%
 
 Versandvorlagen ermöglichen eine effiziente Nutzung, da sie für die häufigsten Aktivitäten vordefinierte Szenarien enthalten. Mit Vorlagen können Marketing-Experten rasch neue Kampagnen bei minimaler Anpassung bereitstellen.
 
-Weiterführende Informationen zu Versandvorlagen finden Sie in [diesem Abschnitt](about-templates.md).
+Weiterführende Informationen zu Versandvorlagen finden Sie in [diesem Abschnitt](creating-a-delivery-template.md).
 
 ## Erste Schritte mit Versandvorlagen {#gs-templates}
 
-Mit einer [Versandvorlage](about-templates.md) können Sie ein Set technischer und funktioneller Eigenschaften nach Ihren Anforderungen definieren und für künftige Sendungen wiederverwenden. Sie können damit Zeit sparen und Sendungen bei Bedarf standardisieren.
+Mit einer [Versandvorlage](creating-a-delivery-template.md) können Sie ein Set technischer und funktioneller Eigenschaften nach Ihren Anforderungen definieren und für künftige Sendungen wiederverwenden. Sie können damit Zeit sparen und Sendungen bei Bedarf standardisieren.
 
 Wenn Sie mehrere Marken in Adobe Campaign verwalten, empfiehlt Adobe die Zuweisung einer Subdomain pro Marke. Eine Bank kann beispielsweise für jede ihrer regionalen Niederlassungen über eine Subdomain verfügen. Angenommen die Domain einer Bank heißt bluebank.com, dann könnten ihre Subdomains @ny.bluebank.com, @ma.bluebank.com, @ca.bluebank.com usw. lauten. Mit einer Versandvorlage pro Subdomain können Sie stets die richtigen vorkonfigurierten Parameter für jede Marke verwenden, um Fehler zu verhindern und Zeit zu sparen.
 
@@ -44,7 +44,7 @@ Wenn Sie mehrere Marken in Adobe Campaign verwalten, empfiehlt Adobe die Zuweisu
 
 Gehen Sie wie folgt vor, um Adressen in der Campaign-Benutzeroberfläche zu konfigurieren:
 
-1. Wählen Sie in der [Versandvorlage](about-templates.md) den Tab **[!UICONTROL Von]** aus. Füllen Sie im Fenster **[!UICONTROL E-Mail-Header-Parameter]** die folgenden Felder aus:
+1. Wählen Sie in der [Versandvorlage](creating-a-delivery-template.md) den Tab **[!UICONTROL Von]** aus. Füllen Sie im Fenster **[!UICONTROL E-Mail-Header-Parameter]** die folgenden Felder aus:
 
    ![](assets/d_best_practices_email_header.png)
 
