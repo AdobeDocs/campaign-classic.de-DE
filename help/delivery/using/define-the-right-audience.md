@@ -8,8 +8,8 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: c0533148-b027-4158-9b95-8d2df769e963
-source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
-workflow-type: ht
+source-git-commit: f469689f9e8a4d805fb95a1ae120ccd35aba3731
+workflow-type: tm+mt
 source-wordcount: '496'
 ht-degree: 100%
 
@@ -33,7 +33,7 @@ Standardmäßig werden bei Campaign Classic mit Versandvorlagen **Empfänger** a
 
 So können Sie beispielsweise Nachrichten an Benutzer senden, deren Profile Sie über soziale Netzwerke erfasst haben oder die einen Informationsdienst abonniert haben.
 
-Diese Zuordnungen (Mapping) werden [in diesem Abschnitt](selecting-a-target-mapping.md) dargestellt.
+Diese Zuordnungen (Mapping) werden [in diesem Abschnitt](steps-defining-the-target-population.md#select-a-target-mapping) dargestellt.
 
 Sie können auch ein benutzerdefiniertes Zielgruppen-Mapping erstellen und verwenden. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../configuration/using/target-mapping.md).
 
