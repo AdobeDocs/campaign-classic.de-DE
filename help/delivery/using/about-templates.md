@@ -6,9 +6,9 @@ feature: Delivery Templates
 role: User
 exl-id: d943898c-06fe-451d-aa28-8a95665f4112
 source-git-commit: 446062946b64c9a4d065b6a56d263914cbe628f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '190'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -20,9 +20,9 @@ Eine Versandkonfiguration kann in einer Vorlage gespeichert werden, um zu einem 
 
 Es gibt zwei Arten von Vorlagen:
 
-1. Native Adobe Campaign-Versandvorlagen - Native Vorlagen dürfen NICHT aus dem System gelöscht werden. Sie enthalten für jeden Kanal die notwendige Minimalkonfiguration. Ein Administrator hat jedoch die Möglichkeit, gewisse Funktionen zu beschränken oder den Benutzern Standardwerte vorzugeben (Tracking-Aktivierung, Absender-Adresse usw.). Native Versandvorlagen erscheinen fettgedruckt in der Vorlagenliste. Änderungen können nur an Kopien dieser Vorlagen vorgenommen werden.
+1. Native Adobe Campaign-Versandvorlagen – Native Vorlagen dürfen NICHT aus dem System gelöscht werden. Sie enthalten für jeden Versandkanal die notwendige Minimalkonfiguration. Ein oder eine Admin hat jedoch die Möglichkeit, gewisse Funktionen zu beschränken oder den Benutzenden Standardwerte vorzugeben (Tracking-Aktivierung, Absender-Adresse usw.). Native Versandvorlagen erscheinen fettgedruckt in der Vorlagenliste. Änderungen können nur an Kopien dieser Vorlagen vorgenommen werden.
 
-1. Vordefinierte Versandvorlagen - Der Adobe Campaign-Administrator kann neue Versandvorlagen erstellen. Sie können von Benutzern (mit entsprechenden Zugriffsrechten) oder automatisch von Server-Prozessen wiederverwendet werden. Sie können beispielsweise eine E-Mail-Versandvorlage konfigurieren. Wenn Benutzer einen Versand mithilfe dieser Vorlage erstellen, müssen sie lediglich den Text oder den HTML-Inhalt eingeben und ihn dann versenden. Die anderen Optionen wurden bereits vom Administrator definiert.
+1. Vordefinierte Versandvorlagen – Der oder die Adobe Campaign-Admin kann neue Versandvorlagen erstellen. Sie können von Benutzern (mit entsprechenden Zugriffsrechten) oder automatisch von Server-Prozessen wiederverwendet werden. Sie können beispielsweise eine E-Mail-Versandvorlage konfigurieren. Wenn Benutzende einen Versand mithilfe dieser Vorlage erstellen, müssen sie lediglich den Text oder den HTML-Inhalt eingeben und ihn dann versenden. Die anderen Optionen wurden bereits von der oder dem Admin definiert.
 
 
-Erfahren Sie, wie Sie in der Dokumentation zu Campaign v8 Versandvorlagen erstellen und verwenden](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/create-templates){target="_blank"}.[
+Erfahren Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/create-templates){target="_blank"}, wie Sie Versandvorlagen erstellen und verwenden.

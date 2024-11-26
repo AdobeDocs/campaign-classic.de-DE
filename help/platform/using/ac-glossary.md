@@ -7,9 +7,9 @@ role: User, Data Architect
 level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
 source-git-commit: f469689f9e8a4d805fb95a1ae120ccd35aba3731
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5959'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -198,7 +198,7 @@ Learn more about [Transactional Messaging](../../message-center/using/about-tran
 
 *Kontext: E-Mail-Zustellbarkeit*
 
-Die Zustellbarkeit misst, wie viele Ihrer Nachrichten erfolgreich den Posteingang Ihrer Empfänger erreichen und nicht als unzustellbar zurückgesendet bzw. als Spam gekennzeichnet werden. Genauer gesagt bezieht sich die E-Mail-Zustellbarkeit auf die Menge der Merkmale, die die Fähigkeit einer Nachricht bestimmen, über eine persönliche E-Mail-Adresse innerhalb kurzer Zeit und mit der erwarteten Qualität in Bezug auf Inhalt und Format ihr Ziel zu erreichen.
+Die Zustellbarkeit misst, wie viele Ihrer Kampagnen erfolgreich den Posteingang Ihrer Empfangenden erreichen und nicht als unzustellbar zurückgesendet bzw. als Spam gekennzeichnet werden. Genauer gesagt bezieht sich die E-Mail-Zustellbarkeit auf die Menge der Merkmale, die die Fähigkeit einer Nachricht bestimmen, über eine persönliche E-Mail-Adresse innerhalb kurzer Zeit und mit der erwarteten Qualität in Bezug auf Inhalt und Format ihr Ziel zu erreichen.
 
 Weitere Informationen zur [Zustellbarkeit](../../delivery/using/about-deliverability.md).
 +++
@@ -240,7 +240,7 @@ Learn more about [Deliverability](../../delivery/using/about-deliverability.md).
 
 *Kontext: Briefpost*
 
-Ein Versandentwurf ist ein strukturierter Satz von Elementen (Dokumente, Geschäfte, Gutscheine etc.), die vom Unternehmen und für eine bestimmte Kampagne erstellt wurden. Er wird im Zusammenhang mit Briefpost-Sendungen verwendet.
+Ein Versandentwurf ist ein strukturierter Satz von Elementen (Dokumente, Gutscheine usw.), die für eine bestimmte Kampagne von der Firma erstellt wurden. Er wird im Zusammenhang mit Briefpost-Sendungen verwendet.
 
 Weitere Informationen zu [Briefpost](../../delivery/using/about-direct-mail-channel.md).
 +++
@@ -263,7 +263,7 @@ Weitere Informationen über [deskriptive Analyse](../../reporting/using/about-de
 
 *Kontext: verteiltes Marketing*
 
-Das Add-on für dezentrales Marketing bietet Kampagnenbetreibern einen gemeinsamen Arbeitsbereich für die Implementierung von Kampagnen zwischen Zentralstellen (Hauptsitz, Marketingabteilungen usw.) und Lokalstellen (Verkaufsstellen, regionale Agenturen usw.). Diese Zusammenarbeit basiert auf einem gemeinsamen Arbeitsbereich, auch **Kampagnenkit-Liste** genannt, wobei den lokalen Entitäten die zentral entworfenen Kampagnenvorlagen und Instanzen angeboten werden.
+Das Add-on „Verteiltes Marketing“ bietet Campaign-Benutzenden einen gemeinsamen Arbeitsbereich zur Implementierung von Kampagnen wichtiger Abteilungen (Hauptsitz, Marketing-Abteilungen usw.) und lokalen Einrichtungen (Verkaufsstellen, regionale Agenturen usw.). Diese Zusammenarbeit basiert auf einem gemeinsamen Arbeitsbereich, auch **Kampagnenkit-Liste** genannt, wobei den lokalen Entitäten die zentral entworfenen Kampagnenvorlagen und Instanzen angeboten werden.
 
 Weitere Informationen über [Verteiltes Marketing](../../distributed/using/about-distributed-marketing.md)
 +++
@@ -277,7 +277,7 @@ Weitere Informationen über [Werteverteilung](../../platform/using/defining-filt
 
 +++**Delegation von Domains**
 
-Mit der Subdomain-Konfiguration können Sie einen Unterabschnitt Ihrer Domain (technisch eine &quot;DNS-Zone&quot;) für die Verwendung mit Adobe Campaign konfigurieren.
+Mithilfe einer Subdomain-Konfiguration können Sie einen Teilabschnitt Ihrer Domain (technisch eine „DNS-Zone“) für die Verwendung mit Adobe Campaign konfigurieren.
 Die Domain-Delegation ermöglicht Adobe die Kontrolle und Pflege aller DNS-Aspekte, die für die Bereitstellung, Darstellung und Verfolgung von E-Mail-Kampagnen erforderlich sind.
 
 Weitere Informationen zur [Domain-Delegation](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=de)
@@ -447,7 +447,7 @@ Weitere Informationen zur [Hybrid-Bereitstellung](../../installation/using/hosti
 
 *Kontext: Campaign Interaction*
 
-Der Identifikationsmodus bezieht sich auf den Status eines Kontakts. Er kann explizit, implizit oder anonym sein.
+Der Authentifizierungsmodus bezieht sich auf den Status eines Kontakts. Er kann explizit, implizit oder anonym sein.
 
 * **Explizit**: Der Kontakt konnte identifiziert werden, da er sich mit seinen Kundendaten in der Kanalschnittstelle angemeldet hat.
 * **Implizit**: Der Kontakt konnte mithilfe eines Cookies (Sitzungs- oder permanenter Cookie) identifiziert werden. Er kann entweder wie ein anonymer oder wie ein identifizierter Kontakt gehandhabt werden.
@@ -506,7 +506,7 @@ Weitere Informationen zu [Listen](../../platform/using/creating-and-managing-lis
 
 +++**Lokaler Cache**
 
-Der lokale Cache ist die Information, die lokal auf dem Computer des Benutzers gespeichert wird. Gecachte Daten werden von der Konsole verwendet, um den erforderlichen Traffic auf den Server zu reduzieren und die Performance zu verbessern. Durch das regelmäßige Löschen des lokalen Caches (über das Menü &quot;Datei&quot;) werden die gespeicherten Daten aktualisiert und die Performance und Stabilität verbessert.
+Der lokale Cache umfasst die Informationen, die lokal auf dem Computer des bzw. der Benutzenden gespeichert werden. Gecachte Daten werden von der Konsole verwendet, um den erforderlichen Traffic auf den Server zu reduzieren und die Performance zu verbessern. Durch das regelmäßige Löschen des lokalen Caches (über das Menü &quot;Datei&quot;) werden die gespeicherten Daten aktualisiert und die Performance und Stabilität verbessert.
 
 Weitere Informationen zum [lokalen Cache](../../platform/using/faq-campaign-config.md#perform-soft-cache-clear).
 +++
@@ -539,7 +539,7 @@ Weitere Informationen zu [spezifischen Berechtigungen](../../platform/using/acce
 
 +++**Namespace**
 
-Der Namespace ist eine Partition, die Kundendatentypen von den nativen Datentypen von Adobe Campaign im Datenmodell trennt. Er dient auch dazu, die Migration von Definitionen von einer Instanz in eine andere zu erleichtern, wie etwa das Verschieben eines Schemata oder einer Vorlage von der Entwicklungsinstanz in die Produktionsinstanz.
+Der Namespace ist eine Partition, durch die Kundendatentypen von den nativen Datentypen von Adobe Campaign im Datenmodell getrennt werden. Er dient auch dazu, die Migration von Definitionen von einer Instanz in eine andere zu erleichtern, wie etwa das Verschieben eines Schemata oder einer Vorlage von der Entwicklungsinstanz in die Produktionsinstanz.
 
 Weitere Informationen zum [Namespace](../../configuration/using/about-schema-reference.md#identification-of-a-schema).
 +++
@@ -622,7 +622,7 @@ Weitere Informationen über [Campaign Interaction](../../interaction/using/inter
 
 *Kontext: Campaign Interaction*
 
-Die Angebotsumgebung ist der Stammordner, der einen Angebotskatalog, seine verfügbaren Platzierungen und die vordefinierten Filter der Umgebung definiert. Benutzende müssen für jede Zielgruppendimension eine Umgebung erstellen. Es gibt zwei Arten von Angebotsumgebungen: Design und Live.
+Die Angebotsumgebung ist der Stammordner, in dem der Angebotskatalog, seine verfügbaren Platzierungen und die vordefinierten Filter der Umgebung definiert werden. Benutzende müssen für jede Zielgruppendimension eine Umgebung erstellen. Es gibt zwei Arten von Angebotsumgebungen: Design und Live.
 
 Weitere Informationen über [Angebotsumgebungen](../../interaction/using/fundamental-principles.md).
 +++
@@ -640,7 +640,7 @@ Weitere Informationen über [Live-Umgebungen von Angeboten](../../interaction/us
 
 *Kontext: Campaign Interaction*
 
-Angebotsunterbreitungsregeln sind Typologieregeln, auf die in der Angebotsumgebung verwiesen wird. Benutzer können bestimmte Angebote ausschließen, indem sie den Vorschlagsverlauf des Empfängers berücksichtigen.
+Regeln der Angebotsunterbreitung sind in der Angebotsumgebung referenzierte Typologieregeln, die es den Benutzenden ermöglichen, bestimmte Angebote auf der Grundlage der einem Kontakt bereits vorgeschlagenen Angebote auszuschließen.
 
 Weitere Informationen über [Regeln der Angebotsunterbreitung](../../interaction/using/managing-offer-presentation.md#presentation-rules-overview).
 +++
@@ -676,7 +676,7 @@ Weitere Informationen über [Campaign Interaction](../../interaction/using/inter
 
 *Kontext: Campaign Interaction*
 
-Mit einer Angebotssimulation können Benutzer die Angebotsverteilung über einen bestimmten Umfang (Versanddatum, Zielsegment, Anzahl der Angebote, Thema usw.) testen, bevor sie die Angebote tatsächlich senden. Eine Simulation kann verwendet werden, um Angebotsprioritäten und Eignungsregeln anzupassen und so die Effektivität des Angebots zu maximieren.
+Mit einer Angebotssimulation können Benutzende die Bereitstellung des Angebots in einem bestimmten Umfang testen (Versanddatum, Zielsegment, Anzahl der Angebote, Thema usw.), bevor sie die Angebote tatsächlich versenden. Eine Simulation kann verwendet werden, um Angebotsprioritäten und Eignungsregeln anzupassen und so die Effektivität des Angebots zu maximieren.
 
 Weitere Informationen über [Angebotssimulationen](../../interaction/using/about-offers-simulation.md).
 +++
@@ -775,7 +775,7 @@ Weitere Informationen über [Personalisierungsfelder](../../delivery/using/perso
 
 +++**Personalisierungsvariablen**
 
-Personalization-Variablen sind Code-Bestandteile in einem Versand, die je nach Empfängerinformationen unterschiedlichen Text anzeigen können. Diese Felder können entweder als Personalisierungsfeld oder -block implementiert werden.
+Personalisierungsvariablen sind Code-Abschnitte in einem Versand, die je nach Empfängerinformationen unterschiedlichen Text an unterschiedliche Empfangende anzeigen können. Diese Felder können entweder als Personalisierungsfeld oder -block implementiert werden.
 
 Weitere Informationen zu [Personalisierungsvariablen](../../delivery/using/about-personalization.md).
 +++
@@ -845,7 +845,7 @@ Weitere Informationen zu [Push](../../delivery/using/about-mobile-app-channel.md
 
 +++**Empfangende**
 
-In Adobe Campaign sind Empfänger die Standardprofile, mit denen Ihre Kunden Sendungen (E-Mails, SMS usw.) durchführen können. Die in der Datenbank gespeicherten Empfängerdaten ermöglichen die Filterung der Zielgruppe und das Hinzufügen von Personalisierungsdaten. In der Regel handelt es sich hierbei um personenbezogene, Kontakt-, demografische und Transaktionsdaten. Es kann sich jedoch um jede Art von Daten handeln, die Marketing- und Analysefunktionen unterstützen.
+In Adobe Campaign sind Empfangende die Standardprofile, die für den Versand von Sendungen (E-Mails, SMS usw.) an Ihre Kundschaft vorgesehen sind. Die in der Datenbank gespeicherten Empfängerdaten ermöglichen die Filterung der Zielgruppe und das Hinzufügen von Personalisierungsdaten. In der Regel handelt es sich hierbei um personenbezogene, Kontakt-, demografische und Transaktionsdaten. Es kann sich jedoch um jede Art von Daten handeln, die Marketing- und Analysefunktionen unterstützen.
 
 Weitere Informationen über [Empfangende](../../configuration/using/about-data-model.md).
 +++
@@ -883,7 +883,7 @@ Weitere Informationen über die [Schemaerweiterung](../../configuration/using/ex
 
 +++**Testadressen**
 
-Testadressen ermöglichen den Versand an Empfangende, die nicht den vorliegenden Zielgruppenkriterien entsprechen. Auf diese Weise können Empfangende, die außerhalb des Versandperimeters liegen, die Nachricht so wie jede(r) andere Empfangende innerhalb der Zielgruppe erhalten. Sie werden zur Audience einer Nachricht hinzugefügt, um Missbrauch bei der Nutzung Ihrer Empfängerdatenbank zu erkennen oder die Zustellung sicherzustellen.
+Testadressen ermöglichen den Versand an Empfangende, die nicht den vorliegenden Zielgruppenkriterien entsprechen. Auf diese Weise können Empfangende, die außerhalb des Versandperimeters liegen, die Nachricht so wie jede(r) andere Empfangende innerhalb der Zielgruppe erhalten. Sie werden zur Zielgruppe einer Nachricht hinzugefügt, um Missbrauch bei der Nutzung Ihrer Empfängerdatenbank zu erkennen oder den Versand sicherzustellen.
 
 Weitere Informationen zu [Testadressen](../../delivery/using/about-seed-addresses.md).
 +++

@@ -6,9 +6,9 @@ feature: SMS
 role: Developer, Data Engineer
 exl-id: fded088a-11a2-4b87-a368-7b197334aca4
 source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '8457'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -841,8 +841,8 @@ Die SMS sollte im Versandlog als empfangen markiert sein. Das Versandlog sollte 
   `SR yourProvider stat=DELIVRD err=000|#MESSAGE`
 Vergewissern Sie sich, dass Sie den Namen des Versand-Providers geändert haben. Das Versandlog sollte in Produktionsumgebungen niemals **SR Generic** enthalten.
 
-* **Überprüfen, ob MO verarbeitet werden**
-Wenn Sie MO verarbeiten müssen (automatische Antworten, MO-Speicherung in der Datenbank usw.), versuchen Sie, einige Tests durchzuführen. Senden Sie ein paar SMS für alle automatischen Antwortschlüsselwörter und prüfen Sie, ob die Antwort schnell genug ist, also nicht länger als ein paar Sekunden dauert.
+* **Überprüfen, ob MO verarbeitet werden** 
+Wenn Sie MO verarbeiten müssen (automatische Antworten, MO-Speicherung in der Datenbank usw.), versuchen Sie, einige Tests durchzuführen. Senden Sie einige SMS für alle automatischen Antwortschlüsselwörter und prüfen Sie, ob die Antwort schnell genug ist, also nicht länger als ein paar Sekunden dauert.
 Prüfen Sie im Protokoll, ob Adobe Campaign mit einem erfolgreichen `DELIVER_SM_RESP` (command_status=0) antwortet.
 
 ### Überprüfen der PDUs {#check-pdus}

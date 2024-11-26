@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Personalisierte Inhalte erstellen
+title: Erstellen personalisierter Inhalte
 description: Erfahren Sie, wie Sie personalisierte Inhalte in Adobe Campaign-Sendungen erstellen
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Email Design, Personalization
@@ -9,13 +9,13 @@ hide: true
 hidefromtoc: true
 exl-id: 5bf727d2-83b1-4a99-be25-041eee8d234c
 source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1298'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# Personalisierte Inhalte erstellen {#build-personalized-content}
+# Erstellen personalisierter Inhalte {#build-personalized-content}
 
 Versuchen Sie beim Entwerfen Ihres Nachrichteninhalts gängige Probleme zu vermeiden, die den Versand verhindern könnten. Meist betreffen Fehler die [Personalisierung](about-personalization.md), die [Formatierung](defining-the-email-content.md#message-content) und [Bilder](defining-the-email-content.md#adding-images).
 
@@ -125,7 +125,7 @@ Responsives E-Mail-Design stellt sicher, dass eine E-Mail auf jedem Gerät optim
 
 * Verwenden Sie den Vorschaumodus und Testsendungen, um das Rendering auf möglichst vielen Geräten zu testen.
 
-* Das DCE-Modul (Digital Content Editor) von Adobe Campaign Classic enthält einige Vorlagen im responsiven Design-Format für Mobilgeräte, die über **[!UICONTROL Ressourcen]** > **[!UICONTROL Vorlagen]** > **[!UICONTROL Inhaltsvorlagen]** verfügbar sind.
+* Das DCE-Modul (Digital Content Editor) von Adobe Campaign enthält einige im responsiven Design formatierte Vorlagen. Gehen Sie dazu zu **[!UICONTROL Ressourcen]** > **[!UICONTROL Vorlagen]** > **[!UICONTROL Inhaltsvorlagen]**.
 
 ## Verwalten von Bildern {#manage-images}
 
@@ -157,8 +157,8 @@ Damit Empfänger auf die Bilder zugreifen können, müssen die in E-Mails und ö
 
 ## Sehen Sie sich Ihre Nachricht in der Vorschau an {#preview-msg}
 
-Adobe empfiehlt eine Vorschau Ihrer Nachricht, um die Personalisierung zu überprüfen und festzustellen, wie Ihre Empfänger den Versand sehen werden.
+Adobe empfiehlt eine Vorschau Ihrer Nachricht, um die Personalisierung zu überprüfen und festzustellen, wie Ihre Empfängerinnen und Empfänger den Versand sehen werden.
 
-* Im Versandassistenten können Sie auf der Unterregisterkarte **[!UICONTROL Vorschau]** das Rendering der einzelnen Inhalte für eine Empfängerin oder einen Empfänger anzeigen. Die Personalisierungsfelder und bedingten Inhaltselemente werden durch die entsprechenden Informationen für das ausgewählte Profil ersetzt – [Weitere Informationen](defining-the-email-content.md#message-content)
+* Im Versandassistenten können Sie auf der Unterregisterkarte **[!UICONTROL Vorschau]** das Rendering der einzelnen Inhalte für eine Empfängerin oder einen Empfänger anzeigen. Die Personalisierungsfelder und bedingten Inhaltselemente werden durch die entsprechenden Informationen für das ausgewählte Profil ersetzt.  [Weitere Informationen](defining-the-email-content.md#message-content)
 
 * Die Vorschauerzeugung löst automatisch die Durchführung einer Anti-Spam-Prüfung aus. Überprüfen Sie auf der Unterregisterkarte **[!UICONTROL Vorschau]** die Spam-Bewertung von [SpamAssassin](spamassassin.md). Klicken Sie auf **[!UICONTROL Details...]**, um mehr über die Warnung zu erfahren. Stellen Sie zuvor sicher, dass SpamAssassin auf dem Adobe Campaign-Anwendungs-Server ordnungsgemäß installiert und konfiguriert ist – [Weitere Informationen](../../installation/using/configuring-spamassassin.md)

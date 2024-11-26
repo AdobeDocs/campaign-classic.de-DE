@@ -6,9 +6,9 @@ feature: Audiences, Proofs
 role: User
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
 source-git-commit: f469689f9e8a4d805fb95a1ae120ccd35aba3731
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1877'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Um die Versandempfänger auszuwählen, gehen Sie wie folgt vor:
 
 1. Wählen Sie Zielgruppen-Mapping aus der Dropdown-Liste **[!UICONTROL Zielgruppen-Mapping]** aus. Die Adobe-Campaign-Standardeinstellung für Zielgruppen-Mapping ist **[!UICONTROL Empfänger]**, basierend auf dem Schema **nms:recipient**.
 
-   Es sind weitere Zielgruppen-Mappings verfügbar, von denen einige mit Ihrer spezifischen Konfiguration in Verbindung stehen können.[Weitere Informationen](#select-a-target-mapping).
+   Es sind weitere Zielgruppen-Mappings verfügbar, von denen sich einige auf Ihre spezifische Konfiguration beziehen können. [Weitere Informationen](#select-a-target-mapping).
 
 1. Wählen Sie zur Konfiguration von Einschränkungsfiltern die Schaltfläche **[!UICONTROL Hinzufügen]** aus.
 
@@ -71,14 +71,14 @@ Um die Versandempfänger auszuwählen, gehen Sie wie folgt vor:
    * **[!UICONTROL Empfänger]**: Auswahl eines spezifischen Empfängers aus der Datenbank.
    * **[!UICONTROL Empfängerliste]**: Auswahl einer die Empfänger enthaltenden Liste. Listen finden Sie in [diesem Abschnitt](../../platform/using/creating-and-managing-lists.md).
    * **[!UICONTROL Benutzerfilter]**: ermöglicht den Zugriff auf vom Benutzer erstellte Filter. Weiterführende Informationen zu Benutzerfiltern finden Sie in [diesem Abschnitt](../../platform/using/creating-filters.md#saving-a-filter).
-   * Die Option **[!UICONTROL Empfänger dieses Segments ausschließen]** ermöglicht es, die Zielbestimmung umzukehren. Der Versand wird nicht an die Empfänger gerichtet, die den Filterkriterien entsprechen, sondern im Gegenteil an jene, die ihnen nicht entsprechen. Kreuzen Sie in diesem Fall die Option an und konfigurieren Sie die Zielgruppe wie zuvor beschrieben.
+   * Die Option **[!UICONTROL Empfänger, die diesem Segment entsprechen, ausschließen]** ermöglicht es Ihnen, Empfängerinnen und Empfänger anzusprechen, die die definierten Zielkriterien nicht erfüllen. Um diese Option zu verwenden, aktivieren Sie das entsprechende Kästchen und wenden Sie dann die zuvor definierte Zielgruppenbestimmung an, um die resultierenden Profile auszuschließen.
 
      ![](assets/s_ncs_user_wizard_email02g.png)
 
-1. Standardmäßig wird der Filter nach dem ersten Kriterium benannt. Vergeben Sie daher im Fall von kombinierten Kriterien im Feld **[!UICONTROL Titel]** einen expliziten Namen.
+1. Geben Sie im Feld **[!UICONTROL Titel]** einen Namen für diese Zielgruppenbestimmung ein. Der Titel entspricht standardmäßig dem Titel der ersten Zielgruppenbestimmung. Für eine Kombination ist es besser, einen expliziten Namen zu verwenden.
 1. Bestätigen Sie die Zielgruppenkonfiguration durch Klick auf die Schaltfläche **[!UICONTROL Beenden]**.
 
-   Die derart festgelegten Zielbestimmungskriterien werden im mittleren Bereich des Hauptzielgruppe-Tabs zusammengefasst. Durch Klick auf ein Kriterium können Sie seinen Inhalt (Konfiguration und Vorschau) prüfen. Klicken Sie auf das rote Kreuz rechts, um das Kriterium zu löschen.
+   Die derart festgelegten Zielbestimmungskriterien werden im mittleren Bereich der Registerkarte „Hauptzielgruppe“ zusammengefasst. Durch Klicken auf ein Kriterium können Sie den Inhalt (Konfiguration und Vorschau) prüfen. Klicken Sie auf das rote Kreuz rechts, um das Kriterium zu löschen.
 
    ![](assets/s_ncs_user_wizard_email02h.png)
 
@@ -149,7 +149,7 @@ Folgende Optionen stehen zur Verfügung:
   >
   >Weitere Informationen zur Quarantäneverwaltung finden Sie unter [Funktionsweise der Quarantäneverwaltung](understanding-quarantine-management.md).
 
-* **[!UICONTROL Begrenzung des Versands]** auf eine bestimmte Anzahl an Nachrichten: Mit dieser Option können Sie die maximale Anzahl der zu versendenden Nachrichten eingeben. Wenn der Inhalt der Zielgruppe die angegebene Anzahl von Nachrichten überschreitet, wird eine Zufallsauswahl auf die Zielgruppe angewendet.
+* **[!UICONTROL Versand begrenzen]**: Die Begrenzung erfolgt auf eine bestimmte Anzahl an Nachrichten. Mit dieser Option können Sie die maximale Anzahl der zu versendenden Nachrichten eingeben. Wenn der Inhalt der Zielgruppe die angegebene Anzahl von Nachrichten überschreitet, wird eine Zufallsauswahl auf die Zielgruppe angewendet.
 
 ### Verringern der Größe der Zielpopulation {#reducing-the-size-of-the-target-population}
 
@@ -228,7 +228,7 @@ Siehe auch:
 
 ## Auswählen eines Zielgruppen-Mappings {#select-a-target-mapping}
 
-Standard-Zielgruppe in Versandvorlagen sind die **[!UICONTROL Empfänger]**. Das Zielgruppen-Mapping verwendet also die Felder der Tabelle **nms:recipient**. Adobe Campaign stellt jedoch auch andere Zielgruppen-Mappings zur Verfügung, auf die Sie je nach Bedarf zurückgreifen können.
+Standard-Zielgruppe in Versandvorlagen sind die **[!UICONTROL Empfangenden]**. Das Zielgruppen-Mapping verwendet also die Felder der Tabelle **nms:recipient**. Adobe Campaign stellt jedoch auch andere Zielgruppen-Mappings zur Verfügung, auf die Sie je nach Bedarf zurückgreifen können.
 
 ![](assets/delivery_select_mapping.png)
 

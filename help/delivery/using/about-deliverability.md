@@ -7,15 +7,15 @@ feature: Deliverability
 role: User
 exl-id: f301b34c-244c-4279-b23f-8224ea8eedbe
 source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '654'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # Was ist Zustellbarkeit{#about-deliverability}
 
-Die Zustellbarkeit misst, wie viele Ihrer Nachrichten erfolgreich den Posteingang Ihrer Empfänger erreichen und nicht als unzustellbar zurückgesendet bzw. als Spam gekennzeichnet werden. [Hier erfahren Sie, warum Zustellbarkeit wichtig ist](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/deliverability-strategy-and-definition.html?lang=de#why-deliverability-matters).
+Die Zustellbarkeit misst, wie viele Ihrer Kampagnen erfolgreich den Posteingang Ihrer Empfangenden erreichen und nicht als unzustellbar zurückgesendet bzw. als Spam gekennzeichnet werden. [Hier erfahren Sie, warum Zustellbarkeit wichtig ist](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/deliverability-strategy-and-definition.html?lang=de#why-deliverability-matters).
 
 Genauer gesagt bezieht sich die E-Mail-Zustellbarkeit auf die Menge der Merkmale, die die Fähigkeit einer Nachricht bestimmen, über eine persönliche E-Mail-Adresse innerhalb kurzer Zeit und mit der erwarteten Qualität in Bezug auf Inhalt und Format ihr Ziel zu erreichen.
 
@@ -40,7 +40,7 @@ Die Zustellbarkeitsrate ist der Anteil der Nachrichten, die die Postfächer der 
 Bei Adobe Campaign hängt die Zustellrate von zahlreichen Faktoren ab, insbesondere von:
 
 * Korrekte Konfiguration der Instanzen: Wenden Sie sich zwecks Hilfe an Ihren Adobe-Support-Mitarbeiter.
-* Zulässige Netzwerkkonfiguration: siehe [Domain-Einrichtung und -Strategie](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=de#domain-setup-and-strategy).
+* Legitime Netzwerkkonfiguration: siehe [Domain-Setup und Strategie](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=de#domain-setup-and-strategy).
 * Reputation Ihrer IP-Adresse: siehe [IP-Strategie](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=de#ip-strategy).
 * Ein niedriger Anteil von [Beschwerden](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/complaints.html?lang=de) und [Hardbounces](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html?lang=de#hard-bounces).
 * Inhalt Ihrer Nachricht: Siehe [Kontrollieren von E-Mail-Inhalten](control-message-content.md).
@@ -56,7 +56,7 @@ Adobe Campaign bietet verschiedene Tools zur Verfolgung und Verbesserung der Zus
 
 Befolgen Sie beim Konfigurieren, Entwerfen und Testen Ihrer Nachricht die in den folgenden Abschnitten aufgeführten Best Practices. Die Nutzung aller von Adobe Campaign bereitgestellten Funktionen hilft Ihnen, die Zustellbarkeit zu verbessern.
 
-* [Best Practices beim Versand](delivery-best-practices.md)
+* [Best Practices für den Versand](delivery-best-practices.md)
 * [Kontrollieren von E-Mail-Inhalten](control-message-content.md)
 * [Inbox Rendering](inbox-rendering.md)
 * [Durchführen eines Testversands](steps-validating-the-delivery.md#sending-a-proof)

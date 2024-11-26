@@ -7,7 +7,7 @@ user-guide-description: Produktdokumentation für Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 446062946b64c9a4d065b6a56d263914cbe628f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2562'
 ht-degree: 100%
 
@@ -116,11 +116,11 @@ ht-degree: 100%
       + [Zielgruppe definieren](delivery/using/steps-defining-the-target-population.md)
       + [Versand validieren](delivery/using/steps-validating-the-delivery.md)
       + [Versand durchführen](delivery/using/steps-sending-the-delivery.md)
-      + [Best Practices beim Versand](delivery/using/delivery-best-practices.md)
+      + [Best Practices für den Versand](delivery/using/delivery-best-practices.md)
       + Best Practices beim Versand {#delivery-bestpractices}
          + [Optimieren des Versands](delivery/using/optimize-delivery.md)
          + [Vorlagen verwenden](delivery/using/use-templates.md)
-         + [Personalisierte Inhalte erstellen](delivery/using/design-and-personalize.md)
+         + [Erstellen personalisierter Inhalte](delivery/using/design-and-personalize.md)
          + [Festlegen der richtigen Audience](delivery/using/define-the-right-audience.md)
          + [Vor dem Senden prüfen](delivery/using/check-before-sending.md)
          + [Tracken und überwachen](delivery/using/track-and-monitor.md)
@@ -162,10 +162,10 @@ ht-degree: 100%
       + [Briefpostversand erstellen](delivery/using/creating-a-direct-mail-delivery.md)
       + [Definieren des Direkt-Mail-Inhalts](delivery/using/defining-the-direct-mail-content.md)
       + [Validieren](delivery/using/validating.md)
-   + Versandvorlagen verwenden{#using-delivery-templates}
+   + Verwenden von Versandvorlagen {#using-delivery-templates}
       + [Arbeiten mit Versandvorlagen](delivery/using/about-templates.md)
       + [Versandvorlage erstellen](delivery/using/creating-a-delivery-template.md)
-      + [Zielgruppen-Mapping auswählen](delivery/using/selecting-a-target-mapping.md)
+      + [Auswählen eines Zielgruppen-Mappings](delivery/using/selecting-a-target-mapping.md)
       + [Versand aus einer Vorlage erstellen](delivery/using/creating-a-delivery-from-a-template.md)
    + Sendungen personalisieren {#personalizing-deliveries}
       + [Über die Personalisierung](delivery/using/about-personalization.md)
