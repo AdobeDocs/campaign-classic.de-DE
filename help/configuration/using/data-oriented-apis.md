@@ -14,27 +14,27 @@ ht-degree: 1%
 
 # Datenorientierte APIs{#data-oriented-apis}
 
-Datenorientierte APIs ermöglichen es Ihnen, das gesamte Datenmodell anzusprechen.
+Mit datenorientierten APIs können Sie das gesamte Datenmodell adressieren.
 
 ## Übersicht über das Datenmodell {#overview-of-the-datamodel}
 
-Adobe Campaign bietet keine dedizierte Lese-API pro Entität (keine getRecipient- oder getDelivery-Funktion usw.). Verwenden Sie die Lese- und Änderungsmethoden für die Daten von QUERY &amp; WRITER , um auf die Daten des Modells zuzugreifen.
+Adobe Campaign bietet keine dedizierte Lese-API pro Entität (keine getRecipient- oder getDelivery-Funktion usw.). Verwenden Sie die Lese- und Änderungsmethoden für ABFRAGE- und SCHREIBDATEN , um auf die Daten des Modells zuzugreifen.
 
-Adobe Campaign ermöglicht die Verwaltung von Kollektionen: Abfragen ermöglichen den Abruf von auf der Basis erfassten Informationen. Im Gegensatz zum Zugriff im SQL-Modus geben Adobe Campaign-APIs eine XML-Baumstruktur anstelle von Datenspalten zurück. Adobe Campaign erstellt so zusammengesetzte Dokumente mit allen erfassten Daten.
+Mit Adobe Campaign können Sie Sammlungen verwalten: Mit Abfragen können Sie einen Satz von Informationen abrufen, die in der gesamten Datenbank erfasst werden. Im Gegensatz zum Zugriff im SQL-Modus geben Adobe Campaign-APIs eine XML-Struktur anstelle von Datenspalten zurück. Adobe Campaign erstellt daher zusammengesetzte Dokumente mit allen erfassten Daten.
 
-Dieser Betriebsmodus bietet keine Eins-zu-Eins-Zuordnung zwischen den Attributen und Elementen der XML-Dokumente und den Spalten der Tabellen in der Datenbank.
+Dieser Betriebsmodus bietet keine Eins-zu-eins-Zuordnung zwischen den Attributen und Elementen der XML-Dokumente und den Spalten der Tabellen in der Datenbank.
 
 XML-Dokumente werden in Feldern vom Typ MEMO der Datenbank gespeichert.
 
 ## Beschreibung des Modells {#description-of-the-model}
 
-Sie müssen mit dem Adobe Campaign-Datenmodell vertraut sein, um die Datenbankfelder in Ihren Skripten ansprechen zu können.
+Sie müssen mit dem Adobe Campaign-Datenmodell vertraut sein, um die Datenbankfelder in Ihren Skripten bearbeiten zu können.
 
 Eine Darstellung des Datenmodells finden Sie in der [Beschreibung des Adobe Campaign-Datenmodells](../../configuration/using/data-model-description.md).
 
 ## Abfrage und Writer {#query-and-writer}
 
-Das folgende Einführungsschema beschreibt den Austausch auf niedriger Ebene zum Lesen (ExecuteQuery) und Schreiben (Writer) zwischen Datenbank und Kunde (Webseiten oder Adobe Campaign-Clientkonsole).
+Das folgende Einführungsschema beschreibt den Austausch auf niedriger Ebene zwischen Datenbank und Kunde (Web-Seiten oder Adobe Campaign-Client-Konsole) zum Lesen (ExecuteQuery) und Schreiben (Writer).
 
 ![](assets/s_ncs_integration_webservices_schema_writer.png)
 
@@ -42,27 +42,27 @@ Das folgende Einführungsschema beschreibt den Austausch auf niedriger Ebene zum
 
 Für Spalten und Bedingungen können Sie Abfragen verwenden.
 
-Auf diese Weise können Sie die zugrunde liegende SQL isolieren. Die Sprache der Abfrage hängt nicht von der zugrunde liegenden Engine ab: Einige Funktionen werden neu zugeordnet, was mehrere SELECT-SQL-Bestellungen generieren kann.
+Auf diese Weise können Sie die zugrunde liegende SQL isolieren. Die Abfragesprache hängt nicht von der zugrunde liegenden Engine ab: Einige Funktionen werden neu zugeordnet, was mehrere SELECT SQL-Bestellungen erzeugen kann.
 
-Weiterführende Informationen dazu finden Sie im Abschnitt [Beispiel für die Methode &quot;ExecuteQuery&quot;des Schemas &quot;xtk:queryDef&quot;](../../configuration/using/web-service-calls.md#example-on-the--executequery--method-of-schema--xtk-querydef-).
+Weitere Informationen hierzu finden Sie unter [Beispiel zur Methode „ExecuteQuery“ des Schemas „xtk:queryDef“](../../configuration/using/web-service-calls.md#example-on-the--executequery--method-of-schema--xtk-querydef-).
 
-Die Methode **ExecuteQuery** wird in [ExecuteQuery (xtk:queryDef)](#executequery--xtk-querydef-) beschrieben.
+Die **ExecuteQuery**-Methode wird in &quot;[ExecuteQuery (xtk:queryDef)“ ](#executequery--xtk-querydef-).
 
 ### Schreiben {#write}
 
-Mit Schreibbefehlen können Sie einfache oder komplexe Dokumente mit Einträgen in einer oder mehreren Tabellen der Basis schreiben.
+Mit Write-Befehlen können Sie einfache oder komplexe Dokumente mit Einträgen in einer oder mehreren Tabellen der Basis schreiben.
 
-Mit Transaktions-APIs können Sie Abstimmungen über den Befehl **updateOrInsert** verwalten: Mit einem Befehl können Sie Daten erstellen oder aktualisieren. Sie können auch die Änderungszusammenführung (**merge**) konfigurieren: Mit diesem Betriebsmodus können Sie Teilaktualisierungen zulassen.
+Mit Transaktions-APIs können Sie Abstimmungen über den Befehl **updateOrInsert** verwalten: Mit einem Befehl können Sie Daten erstellen oder aktualisieren. Sie können auch die Änderungszusammenführung konfigurieren **merge**: In diesem Betriebsmodus können Sie partielle Aktualisierungen genehmigen.
 
 Die XML-Struktur bietet eine logische Ansicht der Daten und ermöglicht es Ihnen, die physische Struktur der SQL-Tabelle zu umgehen.
 
-Die Write-Methode wird unter [Write / WriteCollection (xtk:session)](#write---writecollection--xtk-session-) beschrieben.
+Die Write-Methode wird in [Write/WriteCollection (xtk:session) ](#write---writecollection--xtk-session-).
 
 ## ExecuteQuery (xtk:queryDef) {#executequery--xtk-querydef-}
 
-Mit dieser Methode können Sie Abfragen aus Daten durchführen, die mit einem Schema verknüpft sind. Es benötigt eine Authentifizierungszeichenfolge (muss angemeldet sein) und ein XML-Dokument, das die als Parameter zu übermittelnde Abfrage beschreibt. Der Parameter return ist ein XML-Dokument, das das Ergebnis der Abfrage im Format des Schemas enthält, auf das sich die Abfrage bezieht.
+Mit dieser Methode können Sie Abfragen aus Daten durchführen, die mit einem Schema verknüpft sind. Dazu sind eine Authentifizierungszeichenfolge (muss angemeldet sein) und ein XML-Dokument erforderlich, das die als Parameter zu sendende Abfrage beschreibt. Der Rückgabeparameter ist ein XML-Dokument, das das Ergebnis der Abfrage im Format des Schemas enthält, auf das sich die Abfrage bezieht.
 
-Definition der Methode &quot;ExecuteQuery&quot;im Schema &quot;xtk:queryDef&quot;:
+Definition der Methode „ExecuteQuery“ im Schema „xtk:queryDef“:
 
 ```xml
 <method name="ExecuteQuery" const="true">
@@ -74,11 +74,11 @@ Definition der Methode &quot;ExecuteQuery&quot;im Schema &quot;xtk:queryDef&quot
 
 >[!NOTE]
 >
->Dies ist eine &quot;const&quot;-Methode. Die Eingabeparameter sind in einem XML-Dokument im Format des Schemas &quot;xtk:queryDef&quot; enthalten.
+>Dies ist eine „const“-Methode. Die Eingabeparameter sind in einem XML-Dokument im Format des Schemas „xtk:queryDef“ enthalten.
 
 ### Format des XML-Dokuments der Eingabeabfrage {#format-of-the-xml-document-of-the-input-query}
 
-Die Struktur des XML-Dokuments der Abfrage wird im Schema &quot;xtk:queryDef &quot; beschrieben. In diesem Dokument werden die Klauseln einer SQL-Abfrage beschrieben: &quot;select&quot;, &quot;where&quot;, &quot;order by&quot;, &quot;group by&quot;, &quot;having&quot;.
+Die Struktur des XML-Dokuments der Abfrage wird im Schema „xtk:queryDef &quot; beschrieben. Dieses Dokument beschreibt die Klauseln einer SQL-Abfrage: „select“, „where“, „order by“, „group by“, „have“.
 
 ```xml
 <queryDef schema="schema_key" operation="operation_type">
@@ -110,9 +110,9 @@ Die Struktur des XML-Dokuments der Abfrage wird im Schema &quot;xtk:queryDef &qu
 </queryDef>
 ```
 
-Eine Unterabfrage ( `<subquery>` ) kann in einem `<condition> ` -Element definiert werden. Die Syntax für eine   `<subquery> `   -Element basiert auf der Syntax eines    `<querydef>`
+Eine Unterabfrage ( `<subquery>` ) kann in einem `<condition> ` definiert werden. Die Syntax für ein   `<subquery> `   -Element basiert auf der Syntax eines    `<querydef>`.
 
-Beispiel eines `<subquery>  : </subquery>`
+Beispiel einer `<subquery>  : </subquery>`
 
 ```xml
 <condition setOperator="NOT IN" expr="@id" enabledIf="$(/ignored/@ownerType)=1">
@@ -128,20 +128,20 @@ Beispiel eines `<subquery>  : </subquery>`
   
 ```
 
-Eine Abfrage muss auf ein Startschema aus dem Attribut **schema** verweisen.
+Eine Abfrage muss ausgehend vom Attribut **schema“ auf** Startschema verweisen.
 
-Der gewünschte Vorgangstyp wird in das Attribut **operation** eingegeben und enthält einen der folgenden Werte:
+Der gewünschte Vorgangstyp wird im Attribut **operation** eingegeben und enthält einen der folgenden Werte:
 
-* **get**: ruft einen Datensatz aus der Tabelle ab und gibt einen Fehler zurück, wenn die Daten nicht vorhanden sind.
+* **GET**: ruft einen Datensatz aus der Tabelle ab und gibt einen Fehler zurück, wenn die Daten nicht vorhanden sind.
 * **getIfExists**: Ruft einen Datensatz aus der Tabelle ab und gibt ein leeres Dokument zurück, wenn die Daten nicht vorhanden sind.
-* **select**: erstellt einen Cursor, um mehrere Datensätze zurückzugeben, und gibt ein leeres Dokument zurück, wenn keine Daten vorhanden sind;
-* **count**: gibt eine Datenanzahl zurück.
+* **Auswählen**: erstellt einen Cursor, der mehrere Datensätze zurückgibt, und gibt ein leeres Dokument zurück, wenn keine Daten vorhanden sind,
+* **count**: Gibt eine Anzahl von Daten zurück.
 
-Die Syntax **XPath** wird verwendet, um Daten basierend auf dem Eingabeschema zu suchen. Weitere Informationen zu XPaths finden Sie unter [Datenschemata](../../configuration/using/data-schemas.md).
+Die **XPath**-Syntax wird verwendet, um Daten basierend auf dem Eingabeschema zu finden. Weitere Informationen zu XPaths finden Sie unter [Datenschemata](../../configuration/using/data-schemas.md).
 
-#### Beispiel mit dem &quot;get&quot;-Vorgang {#example-with-the--get--operation}
+#### Beispiel mit dem Vorgang „get“ {#example-with-the--get--operation}
 
-Ruft den Vor- und Nachnamen eines Empfängers (Schema &quot;nms:recipient&quot;) mit einem Filter für die E-Mail ab.
+Ruft den Vor- und Nachnamen eines Empfängers (Schema „nms:recipient„) mit einem E-Mail-Filter ab.
 
 ```xml
 <queryDef schema="nms:recipient" operation="get">
@@ -158,9 +158,9 @@ Ruft den Vor- und Nachnamen eines Empfängers (Schema &quot;nms:recipient&quot;)
 </queryDef>
 ```
 
-#### Beispiel mit dem Vorgang &quot;select&quot; {#example-with-the--select--operation}
+#### Beispiel mit dem Vorgang „select“ {#example-with-the--select--operation}
 
-Gibt die Liste der Empfänger zurück, die nach einem Ordner gefiltert wurden, sowie die E-Mail-Domain, deren Sortierung am Geburtsdatum in absteigender Reihenfolge erfolgt.
+Gibt die Liste der Empfänger zurück, die nach Ordner und E-Mail-Domain gefiltert wurden, wobei am Geburtsdatum eine Sortierung in absteigender Reihenfolge erfolgt.
 
 ```xml
 <queryDef schema="nms:recipient" operation="select">
@@ -183,9 +183,9 @@ Gibt die Liste der Empfänger zurück, die nach einem Ordner gefiltert wurden, s
 </queryDef>
 ```
 
-Ausdrücke können einfache Felder oder komplexe Ausdrücke sein, wie arithmetische Vorgänge oder die Verkettung von Zeichenfolgen.
+Ausdrücke können einfache Felder oder komplexe Ausdrücke wie arithmetische Operationen oder die Verkettung von Zeichenfolgen sein.
 
-Um die Anzahl der zurückzugebenden Datensätze zu begrenzen, fügen Sie das Attribut **lineCount** zum Element `<querydef>` hinzu.
+Um die Anzahl der zurückzugebenden Datensätze zu begrenzen, fügen Sie dem `<querydef>`-Element **Attribut** lineCount) hinzu.
 
 So begrenzen Sie die Anzahl der von der Abfrage zurückgegebenen Datensätze auf 100:
 
@@ -201,9 +201,9 @@ Um die nächsten 100 Datensätze abzurufen, führen Sie dieselbe Abfrage erneut 
 ...
 ```
 
-#### Beispiel mit dem Vorgang &quot;count&quot; {#example-with-the--count--operation}
+#### Beispiel mit dem Vorgang „count“ {#example-with-the--count--operation}
 
-So zählen Sie die Anzahl an Datensätzen in einer Abfrage:
+So zählen Sie die Anzahl der Datensätze in einer Abfrage:
 
 ```xml
 <queryDef schema="nms:recipient" operation="count"">
@@ -216,7 +216,7 @@ So zählen Sie die Anzahl an Datensätzen in einer Abfrage:
 
 >[!NOTE]
 >
->Auch hier verwenden wir die Bedingung aus dem vorherigen Beispiel. Die `<select>` - und -Klauseln werden nicht verwendet. `</select>`
+>Auch hier verwenden wir die Bedingung aus dem vorherigen Beispiel. Die `<select>` und -Klauseln werden nicht verwendet. `</select>`
 
 #### Datengruppierung {#data-grouping}
 
@@ -242,7 +242,7 @@ So rufen Sie E-Mail-Adressen ab, auf die mehrmals verwiesen wird:
 </queryDef>
 ```
 
-Die Abfrage kann vereinfacht werden, indem das Attribut **groupBy** direkt zum zu gruppierenden Feld hinzugefügt wird:
+Die Abfrage kann vereinfacht werden, indem das Attribut **groupBy** direkt zu dem zu gruppierenden Feld hinzugefügt wird:
 
 ```xml
 <select>
@@ -252,13 +252,13 @@ Die Abfrage kann vereinfacht werden, indem das Attribut **groupBy** direkt zum z
 
 >[!NOTE]
 >
->Es ist nicht mehr erforderlich, das Element `<groupby>` zu füllen.
+>Es ist nicht mehr erforderlich, das `<groupby>`-Element auszufüllen.
 
-#### Bremsung unter Bedingungen {#bracketing-in-conditions}
+#### Einklammern in Bedingungen {#bracketing-in-conditions}
 
-Im Folgenden finden Sie zwei Beispiele für die Verwendung von Klammern für dieselbe Bedingung.
+Im Folgenden finden Sie zwei Beispiele für Klammern in derselben Bedingung.
 
-* Die einfache Version in einem einzelnen Ausdruck:
+* Die einfache Version in einem einzigen Ausdruck:
 
   ```xml
   <where>
@@ -266,7 +266,7 @@ Im Folgenden finden Sie zwei Beispiele für die Verwendung von Klammern für die
   </where>
   ```
 
-* Die strukturierte Version mit `<condition>` -Elementen:
+* Die strukturierte Version mit `<condition>` Elementen:
 
   ```xml
   <where>
@@ -281,7 +281,7 @@ Im Folgenden finden Sie zwei Beispiele für die Verwendung von Klammern für die
   </where>
   ```
 
-Der Operator &quot;OR&quot;kann durch den Vorgang &quot;IN&quot;ersetzt werden, wenn mehrere Bedingungen für dasselbe Feld gelten:
+Es ist möglich, den Operator „OR“ durch den Vorgang „IN“ zu ersetzen, wenn mehrere Bedingungen für dasselbe Feld gelten:
 
 ```xml
 <where>
@@ -296,9 +296,9 @@ Diese Syntax vereinfacht die Abfrage, wenn mehr als zwei Daten in der Bedingung 
 
 #### Beispiele für Links {#examples-on-links}
 
-* Links 1-1 oder N1: Wenn die Tabelle den Fremdschlüssel enthält (der Link beginnt in der Tabelle), können die Felder der verknüpften Tabelle direkt gefiltert oder abgerufen werden.
+* Relationen 1-1 oder N1: Wenn die Tabelle den Fremdschlüssel hat (der Link beginnt in der Tabelle), können die Felder der verknüpften Tabelle gefiltert oder direkt abgerufen werden.
 
-  Beispiel eines Filters für die Ordnername:
+  Beispiel für einen Filter auf der Ordnerbeschriftung:
 
   ```xml
   <where>
@@ -306,7 +306,7 @@ Diese Syntax vereinfacht die Abfrage, wenn mehr als zwei Daten in der Bedingung 
   </where>
   ```
 
-  So rufen Sie die Felder des Ordners aus dem Schema &quot;nms:recipient&quot;ab:
+  Abrufen der Felder des Ordners aus dem Schema „nms:recipient“:
 
   ```xml
   <select>
@@ -317,9 +317,9 @@ Diese Syntax vereinfacht die Abfrage, wenn mehr als zwei Daten in der Bedingung 
   </select>
   ```
 
-* Kollektionslinks (1N): Die Filterung der Felder einer Kollektionstabelle muss über den Operator **EXISTS** oder **NOT EXISTS** erfolgen.
+* Sammlungsrelationen (1N): Die Filterung der Felder einer Sammlungstabelle muss über den Operator **EXISTS** oder **NOT EXISTS** erfolgen.
 
-  So filtern Sie die Empfänger, die den Informationsdienst &#39;Newsletter&#39; abonniert haben:
+  So filtern Sie die Empfänger, die sich für den Informationsdienst „Newsletter“ angemeldet haben:
 
   ```xml
   <where>
@@ -329,9 +329,9 @@ Diese Syntax vereinfacht die Abfrage, wenn mehr als zwei Daten in der Bedingung 
   </where>
   ```
 
-  Es wird nicht empfohlen, die Felder eines Kollektionslinks direkt aus der `<select>` -Klausel abzurufen, da die Abfrage ein Kardinalprodukt zurückgibt. Sie wird nur verwendet, wenn die verknüpfte Tabelle nur einen Datensatz enthält (Beispiel: `<node expr="">`).
+  Der direkte Abruf der Felder einer Sammlungsrelation aus der `<select>`-Klausel wird nicht empfohlen, da die Abfrage ein Kardinalprodukt zurückgibt. Sie wird nur verwendet, wenn die verknüpfte Tabelle nur einen Datensatz enthält (Beispiel `<node expr="">`).
 
-  Beispiel für den Kollektionslink &quot;Abonnement&quot;:
+  Beispiel für den Sammlungslink „Abonnement“:
 
   ```xml
   <select>
@@ -339,11 +339,11 @@ Diese Syntax vereinfacht die Abfrage, wenn mehr als zwei Daten in der Bedingung 
   </select>
   ```
 
-  Es ist möglich, eine Unterliste abzurufen, die die Elemente eines Kollektionslinks in der `<select>`-Klausel enthält. Die XPaths der referenzierten Felder sind kontextuell aus dem Kollektionselement.
+  Es ist möglich, eine Unterliste abzurufen, die die Elemente einer Sammlungsrelation in der `<select>`-Klausel enthält. Die XPaths der referenzierten Felder sind kontextuell aus dem Sammlungselement.
 
-  Die Elemente zum Filtern ( `<orderby>` ) und zur Einschränkung ( `<where>` ) können dem Kollektionselement hinzugefügt werden.
+  Die Filterelemente ( `<orderby>` ) und Einschränkungselemente ( `<where>` ) können dem Sammlungselement hinzugefügt werden.
 
-  In diesem Beispiel gibt die Abfrage für jeden Empfänger die E-Mail-Adresse und die Liste der Informationsdienste zurück, die der Empfänger abonniert:
+  In diesem Beispiel gibt die Abfrage für jeden Empfänger die E-Mail-Adresse und eine Liste der Informationsdienste zurück, die der Empfänger abonniert:
 
   ```xml
   <queryDef schema="nms:recipient" operation="select">
@@ -365,11 +365,11 @@ Diese Syntax vereinfacht die Abfrage, wenn mehr als zwei Daten in der Bedingung 
   </queryDef>
   ```
 
-#### Parameter der &#39;where&#39;- und &#39;select&#39;-Klausel binden {#binding-the-parameters-of-the--where--and--select--clause}
+#### Binden der Parameter der WHERE- und SELECT-Klausel {#binding-the-parameters-of-the--where--and--select--clause}
 
-Durch die Bindung von Parametern kann die Engine die Werte der in der Abfrage verwendeten Parameter festlegen. Dies ist sehr nützlich, da die Engine für die Maskierung von Werten verantwortlich ist und es den zusätzlichen Vorteil eines Caches gibt, damit die Parameter abgerufen werden können.
+Durch die Parameterbindung kann die Engine die Werte der in der Abfrage verwendeten Parameter festlegen. Dies ist sehr nützlich, da die Engine für das Maskieren von Werten zuständig ist und es den zusätzlichen Vorteil eines Cache für die abzurufenden Parameter gibt.
 
-Wenn eine Abfrage erstellt wird, werden die &quot;gebundenen&quot; Werte durch ein Zeichen (? in ODBC, `#[index]#` in postgres...) im Text der SQL-Abfrage.
+Wenn eine Abfrage erstellt wird, werden die „gebundenen“ Werte durch das Zeichen (? `#[index]#` Sie in ODBC in postgres…) im Hauptteil der SQL-Abfrage.
 
 ```xml
 <select>
@@ -380,24 +380,24 @@ Wenn eine Abfrage erstellt wird, werden die &quot;gebundenen&quot; Werte durch e
 </select>
 ```
 
-Um das Binden eines Parameters zu vermeiden, muss das Attribut &quot;noSqlBind&quot;mit dem Wert &quot;true&quot;ausgefüllt werden.
+Um die Bindung eines Parameters zu vermeiden, muss das Attribut „noSqlBind“ mit dem Wert „true“ ausgefüllt werden.
 
 >[!IMPORTANT]
 >
->Wenn die Abfrage &quot;order-by&quot;- oder &quot;group-by&quot;-Anweisungen enthält, können die Datenbank-Engines keine Werte &quot;binden&quot;. Sie müssen das Attribut @noSqlBind=&quot;true&quot; in den Anweisungen &quot;select&quot; und/oder &quot;where&quot; der Abfrage platzieren.
+>Wenn die Abfrage „order-by“- oder „group-by“-Anweisungen enthält, können die Datenbank-Engines keine Werte „binden“. Sie müssen das Attribut @noSqlBind=„true“ auf den „select“- und/oder „where“-Anweisungen der Abfrage platzieren.
 
 
-### Ausgabedokumentformat {#output-document-format}
+### Format des Ausgabedokuments {#output-document-format}
 
-Der Parameter return ist ein XML-Dokument im Format des Schemas, das der Abfrage zugeordnet ist.
+Der Rückgabeparameter ist ein XML-Dokument im Format des Schemas, das mit der Abfrage verknüpft ist.
 
-Beispiel einer Rückgabe aus dem Schema &quot;nms:recipient&quot;bei einem &quot;get&quot;-Vorgang:
+Beispiel für eine Rückgabe aus dem Schema „nms:recipient“ über einen „get“-Vorgang:
 
 ```
 <recipient email="john.doe@adobe.com" lastName"Doe" firstName="John"/>
 ```
 
-Bei einem &quot;select&quot;-Vorgang ist das zurückgegebene Dokument eine Auflistung von Elementen:
+Bei einem „select“-Vorgang ist das zurückgegebene Dokument eine Auflistung von Elementen:
 
 ```xml
 <!-- the name of the first element does not matter -->
@@ -408,7 +408,7 @@ Bei einem &quot;select&quot;-Vorgang ist das zurückgegebene Dokument eine Aufli
 </recipient-collection>  
 ```
 
-Beispiel eines für den Vorgang vom Typ &quot;count&quot; zurückgegebenen Dokuments:
+Beispiel eines Dokuments, das für einen Vorgang vom Typ „count“ zurückgegeben wird:
 
 ```xml
 <recipient count="3"/>
@@ -416,7 +416,7 @@ Beispiel eines für den Vorgang vom Typ &quot;count&quot; zurückgegebenen Dokum
 
 #### Alias {#alias}
 
-Mit einem Alias können Sie den Speicherort der Daten im Ausgabedokument ändern. Das Attribut **alias** muss einen XPath im entsprechenden Feld angeben.
+Mit einem Alias können Sie den Speicherort von Daten im Ausgabedokument ändern. Das **alias**-Attribut muss einen XPath für das entsprechende Feld angeben.
 
 ```xml
 <queryDef schema="nms:recipient" operation="get">
@@ -428,13 +428,13 @@ Mit einem Alias können Sie den Speicherort der Daten im Ausgabedokument ändern
 </queryDef>
 ```
 
-Gibt Folgendes zurück:
+Gibt zurück:
 
 ```xml
 <recipient My_folder="Recipients" First name ="John" lastName="Doe"/>
 ```
 
-Statt:
+anstelle von:
 
 ```xml
 <recipient firstName="John" lastName="Doe">
@@ -442,7 +442,7 @@ Statt:
 </recipient>
 ```
 
-### Beispiel SOAP Nachrichten {#example-of-soap-messages}
+### Beispiel für SOAP-Nachrichten {#example-of-soap-messages}
 
 * Abfrage:
 
@@ -486,15 +486,15 @@ Statt:
 
 ## Write/WriteCollection (xtk:session) {#write---writecollection--xtk-session-}
 
-Diese Dienste werden zum Einfügen, Aktualisieren oder Löschen einer Entität (&quot;Write&quot;-Methode) oder einer Sammlung von Entitäten (&quot;WriteCollection&quot;-Methode) verwendet.
+Diese Dienste werden verwendet, um eine Entität („Write“-Methode) oder eine Auflistung von Entitäten („WriteCollection“-Methode) einzufügen, zu aktualisieren oder zu löschen.
 
-Die zu aktualisierenden Entitäten sind mit einem Datenschema verknüpft. Die Eingabeparameter sind eine Authentifizierungszeichenfolge (muss angemeldet sein) und ein XML-Dokument, das die zu aktualisierenden Daten enthält.
+Die zu aktualisierenden Entitäten sind mit einem Datenschema verknüpft. Die Eingabeparameter sind eine Authentifizierungszeichenfolge (muss angemeldet sein) und ein XML-Dokument mit den zu aktualisierenden Daten.
 
-Dieses Dokument wird durch Anweisungen zur Konfiguration der Schreibverfahren ergänzt.
+Dieses Dokument wird durch Anweisungen zum Konfigurieren der Schreibvorgänge ergänzt.
 
-Der Aufruf gibt außer Fehlern keine Daten zurück.
+Der Aufruf gibt keine Daten zurück, mit Ausnahme von Fehlern.
 
-Definition der Methoden &quot;Write&quot;und &quot;WriteCollection&quot;im Schema &quot;xtk:session&quot;:
+Definition der Methoden „Write“ und „WriteCollection“ im Schema „xtk:session“:
 
 ```xml
 <method name="Write" static="true">
@@ -511,27 +511,27 @@ Definition der Methoden &quot;Write&quot;und &quot;WriteCollection&quot;im Schem
 
 >[!NOTE]
 >
->Dies ist eine &quot;statische&quot;Methode. Die Eingabeparameter sind in einem XML-Dokument im Format des zu aktualisierenden Schemas enthalten.
+>Dies ist eine „statische“ Methode. Die Eingabeparameter sind in einem XML-Dokument im Format des zu aktualisierenden Schemas enthalten.
 
 ### Übersicht {#overview}
 
-Die Abstimmung der Daten basiert auf der Definition der im zugehörigen Schema eingegebenen Schlüssel. Beim Schreiben wird basierend auf den im Eingabedokument eingegebenen Daten nach dem ersten geeigneten Schlüssel gesucht. Die Entität wird je nach ihrer Existenz in der Datenbank hinzugefügt oder aktualisiert.
+Die Datenabstimmung basiert auf der Definition der Schlüssel, die in das verknüpfte Schema eingegeben wurden. Beim Schreibvorgang wird basierend auf den im Eingabedokument eingegebenen Daten nach dem ersten qualifizierten Schlüssel gesucht. Die Entität wird eingefügt oder aktualisiert, je nachdem, ob sie in der Datenbank vorhanden ist.
 
-Der Schlüssel des Schemas der zu aktualisierenden Entität wird basierend auf dem Attribut **xtkschema** abgeschlossen.
+Der Schlüssel des Schemas der zu aktualisierenden Entität wird anhand des Attributs **xtkschema** abgeschlossen.
 
 Der Abstimmschlüssel kann daher mit dem Attribut **_key** erzwungen werden, das die Liste der XPaths enthält, aus denen der Schlüssel besteht (durch Kommas getrennt).
 
-Sie können den Vorgangstyp erzwingen, indem Sie das Attribut **_operation** mit den folgenden Werten ausfüllen:
+Es ist möglich, den Vorgangstyp zu erzwingen, indem das Attribut **_operation** mit den folgenden Werten ausgefüllt wird:
 
-* **insert**: forciert das Einfügen des Datensatzes (der Abstimmschlüssel wird nicht verwendet);
-* **insertOrUpdate**: Aktualisiert oder fügt den Datensatz je nach Abstimmschlüssel ein (Standardmodus),
-* **update**: Aktualisiert den Datensatz; macht nichts, wenn die Daten nicht vorhanden sind;
+* **insert**: erzwingt das Einfügen des Datensatzes (der Abstimmschlüssel wird nicht verwendet),
+* **insertOrUpdate**: aktualisiert oder fügt den Datensatz in Abhängigkeit vom Abstimmschlüssel ein (Standardmodus).
+* **Aktualisieren**: aktualisiert den Datensatz; hat keine Auswirkung, wenn die Daten nicht vorhanden sind,
 * **delete**: löscht die Datensätze,
-* **none**: Wird nur für die Abstimmung von Links verwendet, ohne Aktualisierung oder Einfügung.
+* **none**: Wird nur für die Link-Abstimmung ohne Aktualisierung oder Einfügen verwendet.
 
-### Beispiel mit der Methode &quot;Write&quot; {#example-with-the--write--method}
+### Beispiel mit der „Write“-Methode {#example-with-the--write--method}
 
-Aktualisieren oder Einfügen eines Empfängers (impliziter Vorgang &quot;insertOrUpdate&quot;) mit E-Mail-Adresse, Geburtsdatum und Ort:
+Aktualisieren oder Einfügen eines Empfängers (impliziter Vorgang „insertOrUpdate„) mit E-Mail-Adresse, Geburtsdatum und Stadt:
 
 ```xml
 <recipient xtkschema="nms:recipient" email="john.doe@adobe.com" birthDate="1956/05/04" folder-id=1203 _key="@email, [@folder-id]">
@@ -539,7 +539,7 @@ Aktualisieren oder Einfügen eines Empfängers (impliziter Vorgang &quot;insertO
 </recipient>
 ```
 
-Empfänger löschen:
+Empfänger wird gelöscht:
 
 ```xml
 <recipient xtkschema="nms:recipient" _operation="delete" email="rene.dupont@adobe.com" folder-id=1203 _key="@email, [@folder-id]"/>
@@ -549,9 +549,9 @@ Empfänger löschen:
 >
 >Bei einem Löschvorgang darf das Eingabedokument nur die Felder enthalten, aus denen der Abstimmschlüssel besteht.
 
-### Beispiel mit der Methode &quot;WriteCollection&quot; {#example-with-the--writecollection--method}
+### Beispiel mit der „WriteCollection“-Methode {#example-with-the--writecollection--method}
 
-Aktualisieren oder einfügen für mehrere Empfänger:
+Für mehrere Empfänger aktualisieren oder einfügen:
 
 ```xml
 <recipient-collection xtkschema="nms:recipient">    
@@ -565,7 +565,7 @@ Aktualisieren oder einfügen für mehrere Empfänger:
 
 #### Beispiel 1 {#example-1}
 
-Zuordnung des Ordners zu einem Empfänger basierend auf seinem internen Namen (@name).
+Verknüpfen des Ordners mit einem Empfänger auf Grundlage seines internen Namens (@name).
 
 ```xml
 <recipient _key="[folder/@name], @email" email="john.doe@adobe.net" lastName="Doe" firstName="John" xtkschema="nms:recipient">
@@ -573,17 +573,17 @@ Zuordnung des Ordners zu einem Empfänger basierend auf seinem internen Namen (@
 </recipient>
 ```
 
-Die Attribute &quot;_key&quot;und &quot;_operation&quot;können in einem verknüpften Element eingegeben werden. Das Verhalten dieses Elements ist mit dem des Hauptelements des Eingabeschemas identisch.
+Die Attribute „_key“ und „_operation“ können für ein verknüpftes Element eingegeben werden. Das Verhalten in diesem Element ist dasselbe wie im Hauptelement des Eingabeschemas.
 
-Die Definition des Schlüssels der Hauptentität (&quot;nms:recipient&quot;) besteht aus einem Feld aus einer verknüpften Tabelle (Element `<folder>` Schema &quot;xtk:folder&quot;) und der E-Mail.
+Die Definition des Schlüssels der Hauptentität („nms:recipient„) besteht aus einem Feld einer verknüpften Tabelle (Element `<folder>` Schema „xtk:folder„) und der E-Mail.
 
 >[!NOTE]
 >
->Der im Ordnerelement eingegebene Vorgang &quot;none&quot; definiert eine Abstimmung im Ordner ohne Aktualisierung oder Einfügen.
+>Der Vorgang „none“, der für das Ordnerelement eingegeben wurde, definiert eine Abstimmung für den Ordner ohne Aktualisierung oder Einfügen.
 
 #### Beispiel 2 {#example-2}
 
-Aktualisieren des Unternehmens (verknüpfte Tabelle im Schema &quot;cus:Firma&quot;) von einem Empfänger:
+Aktualisieren des Unternehmens (verknüpfte Tabelle im Schema „cus:company„) von einem Empfänger:
 
 ```xml
 <recipient _key="[folder/@name], @email" email="john.doe@adobe.net" lastName="Doe" firstName="John" xtkschema="nms:recipient">
@@ -593,7 +593,7 @@ Aktualisieren des Unternehmens (verknüpfte Tabelle im Schema &quot;cus:Firma&qu
 
 #### Beispiel 3 {#example-3}
 
-Hinzufügen eines Empfängers zu einer Gruppe mit der Gruppierungstabelle (&quot;nms:rcpGrpRel&quot;):
+Hinzufügen eines Empfängers zu einer Gruppe mit der Gruppenbeziehungstabelle („nms:rcpGrpRel„):
 
 ```xml
 <recipient _key="@email" email="martin.ledger@adobe.net" xtkschema="nms:recipient">
@@ -605,13 +605,13 @@ Hinzufügen eines Empfängers zu einer Gruppe mit der Gruppierungstabelle (&quot
 
 >[!NOTE]
 >
->Die Definition des Schlüssels wird nicht im Element `<rcpgroup>` eingegeben, da ein impliziter Schlüssel, der auf dem Gruppennamen basiert, im Schema &quot;nms:group&quot;definiert ist.
+>Die Definition des Schlüssels wird nicht im `<rcpgroup>`-Element eingegeben, da im Schema „nms:group“ ein impliziter Schlüssel definiert ist, der auf dem Gruppennamen basiert.
 
-### XML-Erfassungselemente {#xml-collection-elements}
+### XML-Sammlungselemente {#xml-collection-elements}
 
-Standardmäßig müssen alle Kollektionselemente ausgefüllt werden, um die XML-Kollektionselemente zu aktualisieren. Daten aus der Datenbank werden durch Daten aus dem Eingabedokument ersetzt. Wenn das Dokument nur die zu aktualisierenden Elemente enthält, müssen Sie das Attribut &quot;_operation&quot;für alle zu aktualisierenden Kollektionselemente angeben, um eine Zusammenführung mit den XML-Daten der Datenbank zu erzwingen.
+Standardmäßig müssen alle Sammlungselemente gefüllt werden, damit die XML-Sammlungselemente aktualisiert werden können. Daten aus der Datenbank werden durch Daten aus dem Eingabedokument ersetzt. Wenn das Dokument nur die zu aktualisierenden Elemente enthält, müssen Sie das Attribut „_operation“ für alle zu aktualisierenden Sammlungselemente ausfüllen, um eine Zusammenführung mit den XML-Daten der Datenbank zu erzwingen.
 
-### Beispiel SOAP Nachrichten {#example-of-soap-messages-1}
+### Beispiel für SOAP-Nachrichten {#example-of-soap-messages-1}
 
 * Abfrage:
 

@@ -16,32 +16,32 @@ ht-degree: 9%
 
 ## Übersicht {#overview}
 
-Wenn das Programm auf die Daten einer existierenden Tabelle, einer SQL-Ansicht oder Daten aus einer Remote-Datenbank zugreifen muss, erstellen Sie das Schema in Adobe Campaign mit den folgenden Daten:
+Wenn die Anwendung auf die Daten einer bestehenden Tabelle, einer SQL-Ansicht oder auf Daten aus einer Remote-Datenbank zugreifen muss, erstellen Sie ihr Schema in Adobe Campaign mit den folgenden Daten:
 
-* Name der Tabelle: Geben Sie den Namen der Tabelle (mit Alias bei Verwendung einer Datenbankverbindung) mit dem Attribut &quot;sqltable&quot; ein,
-* Schemaschlüssel: Referenzieren Sie die Abstimmfelder,
-* Indizes: zum Generieren von Abfragen verwendet,
-* die Felder und ihre Position in der XML-Struktur: Füllen Sie nur die in der Anwendung verwendeten Felder aus;
-* Links: wenn es Verknüpfungen mit anderen Tabellen der Basis gibt.
+* Tabellenname: Geben Sie den Namen der Tabelle (mit ihrem Alias, wenn ein DbLink verwendet wird) mit dem Attribut „sqltable“ ein.
+* Schemaschlüssel: Referenzieren der Abstimmfelder,
+* -Indizes: zum Generieren von Abfragen,
+* Die Felder und ihre Position in der XML-Struktur: Ausfüllen der im Programm verwendeten Felder,
+* Relationen: Wenn Joins mit den anderen Tabellen der Basis vorhanden sind.
 
 ## Implementierung {#implementation}
 
 Gehen Sie wie folgt vor, um das entsprechende Schema zu erstellen:
 
-1. Bearbeiten Sie den Knoten **[!UICONTROL Administration>Konfiguration > Datenschemata]** des Adobe Campaign-Baums und klicken Sie auf **[!UICONTROL Neu]** .
-1. Wählen Sie die Option **[!UICONTROL Zugriff auf Daten aus einer vorhandenen Tabelle oder einer SQL-Ansicht]** aus und klicken Sie auf **[!UICONTROL Weiter]** .
+1. Bearbeiten Sie den Knoten **[!UICONTROL Administration>Konfiguration>]** Datenschemata der Adobe Campaign-Struktur und klicken Sie auf **[!UICONTROL Neu]** .
+1. Wählen Sie die Option **[!UICONTROL Daten aus einer vorhandenen Tabelle oder einer SQL-Ansicht aufrufen]** und klicken Sie auf **[!UICONTROL Weiter]** .
 
    ![](assets/s_ncs_configuration_extand_a_schema.png)
 
-1. Wählen Sie die Tabelle oder die vorhandene Ansicht aus:
+1. Tabelle oder vorhandene Ansicht auswählen:
 
    ![](assets/s_ncs_configuration_select_table.png)
 
-1. Passen Sie den Inhalt des Schemas an Ihre Anforderungen an.
+1. Passen Sie den Schemainhalt an Ihre Anforderungen an.
 
    ![](assets/s_ncs_configuration_view_create_schema.png)
 
-   Das Schema muss mit dem Attribut view=&quot;true&quot; im Stammelement `<srcSchema>` gefüllt werden, damit kein SQL-Skript zur Tabellenerstellung generiert werden kann.
+   Das Schema muss mit dem Attribut view=„true“ im `<srcSchema>` Stammelement gefüllt werden, damit kein SQL-Script zur Tabellenerstellung generiert wird.
 
 **Beispiel** :
 
@@ -58,6 +58,6 @@ Gehen Sie wie folgt vor, um das entsprechende Schema zu erstellen:
 
 ## Zugriff auf externe Datenbanken {#accessing-an-external-database}
 
-Mit der Option **Federated Data Access - FDA** haben Sie Zugriff auf die in einer externen Datenbank gespeicherten Daten.
+Die **Federated Data Access - FDA**-Option bietet Ihnen Zugriff auf die in einer externen Datenbank gespeicherten Daten.
 
-Die Konfiguration, die für den Zugriff auf Daten in einer externen Datenbank durchgeführt werden soll, wird auf [dieser Seite](../../installation/using/creating-data-schema.md) beschrieben.
+Die Konfiguration für die Schemata zum Zugriff auf Daten in einer externen Datenbank wird auf [ Seite beschrieben](../../installation/using/creating-data-schema.md).

@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Schemaelemente und Attribute - Schlüsselelement
+title: Schemaelemente und -attribute - Schlüsselelement
 description: Schlüsselelement
 feature: Schema Extension
 exl-id: 3d0ef574-27a3-40f2-91a0-70e9583d9980
@@ -17,18 +17,18 @@ ht-degree: 1%
 
 ## Inhaltsmodell {#content-model-8}
 
-key:==keyfield
+key:==keyField
 
 ## Attribute {#attributes-8}
 
-* @allowEmptyPart (boolean)
-* @applyIf (string)
-* @internal (boolean)
-* @label (string)
+* @allowEmptyPart (Boolesch)
+* @applicableIf (Zeichenfolge)
+* @internal (Boolesch)
+* @label (Zeichenfolge)
 * @name (MNTOKEN)
-* @noDbIndex (boolean)
+* @noDbIndex (Boolesch)
 
-## Eltern {#parents-8}
+## Übergeordnete Elemente {#parents-8}
 
 `<element>`
 
@@ -38,32 +38,32 @@ key:==keyfield
 
 ## Beschreibung {#description-8}
 
-Mit diesem Element können Sie einen Schlüssel definieren, um einen Datensatz in der Tabelle zu identifizieren.
+Mit diesem Element können Sie einen Schlüssel zur Identifizierung eines Datensatzes in der Tabelle definieren.
 
 Eine Tabelle muss mindestens einen Schlüssel haben.
 
-## Verwendung und Verwendungskontext {#use-and-context-of-use-6}
+## Verwendung und Nutzungskontext {#use-and-context-of-use-6}
 
 In der Regel werden Schlüssel nach dem Hauptelement des Schemas und der Indizes deklariert.
 
-Ein Schlüssel wird als zusammengesetzt bezeichnet, wenn er mehrere Felder enthält (d. h. mehrere untergeordnete `<keyfield>` Felder). Verwenden Sie keinen zusammengesetzten Schlüssel, um einen Primärschlüssel zu definieren.
+Ein Schlüssel wird als zusammengesetzter Schlüssel bezeichnet, wenn er mehrere Felder (d. h. mehrere `<keyfield>` untergeordnete Elemente) enthält. Verwenden Sie keinen zusammengesetzten Schlüssel zum Definieren eines Primärschlüssels.
 
-Wenn das Hauptelement des Schemas das Attribut &quot;@autopk=true&quot; enthält, ist der Primärschlüssel eindeutig. Pro Schema kann nur ein Primärschlüssel verwendet werden.
+Wenn das Hauptelement des Schemas das Attribut &quot;@autopk=true“ enthält, ist der Primärschlüssel eindeutig. Pro Schema kann nur ein Primärschlüssel verwendet werden.
 
-Die ersten 1000 Kennungen sind reserviert. Wenn also ein Wertebereich für Schlüssel definiert werden muss, beginnen Sie bei 1000.
+Die ersten 1.000 Kennungen sind reserviert. Wenn also ein Wertebereich für Schlüssel definiert werden muss, beginnen Sie bei 1.000.
 
 ## Attributbeschreibung {#attribute-description-8}
 
-* **allowEmptyPart (boolean)**: Bei einem zusammengesetzten Schlüssel gilt dieser Schlüssel, wenn dieses Attribut aktiviert ist, als gültig, wenn mindestens einer seiner Schlüssel nicht leer ist. Ist dies der Fall, ist der leere Nennwert &quot;0&quot;(boolescher Wert oder für alle Typen numerischer Daten). Standardmäßig müssen alle Schlüssel, aus denen ein zusammengesetzter Schlüssel besteht, eingegeben werden.
-* **applyIf (string)**: Mit diesem Attribut können Sie den Schlüssel optional machen. Sie definiert die Bedingung, nach der die Schlüsseldefinition angewendet wird. Dieses Attribut erhält einen XTK-Ausdruck.
-* **internal (boolean)**: Wenn es aktiviert ist, informiert dieses Attribut Adobe Campaign, dass der Schlüssel primär ist.
-* **label (string)**: Titel des Schlüssels.
+* **allowEmptyPart (boolean)**: Bei zusammengesetzten Schlüsseln wird der Schlüssel als gültig betrachtet, wenn mindestens einer der Schlüssel nicht leer ist, wenn dieses Attribut aktiviert ist. Wenn dies der Fall ist, ist der leere Begriffswert „0“ (boolesch oder für alle Arten numerischer Daten). Standardmäßig müssen alle Schlüssel eingegeben werden, aus denen sich ein zusammengesetzter Schlüssel zusammensetzt.
+* **applicableIf (Zeichenfolge)**: Mit diesem Attribut können Sie den Schlüssel optional machen. Sie definiert die Bedingung, gemäß der die Schlüsseldefinition angewendet wird. Dieses Attribut erhält einen XTK-Ausdruck.
+* **Intern (Boolesch)**: Wenn es aktiviert ist, informiert dieses Attribut Adobe Campaign darüber, dass der Schlüssel „primary“ ist.
+* **label (Zeichenfolge)**: Bezeichnung des Schlüssels.
 * **name (MNTOKEN)**: Interner Name des Schlüssels.
-* **noDbIndex (boolean)**: Wenn es aktiviert ist (noDbIndex=&quot;true&quot;), wird das dem Schlüssel entsprechende Feld nicht indiziert.
+* **noDbIndex (Boolescher Wert)**: Wenn er aktiviert ist (noDbIndex=„true„), wird das Feld, das dem Schlüssel entspricht, nicht indiziert.
 
 ## Beispiele {#examples-------}
 
-Deklaration eines zusammengesetzten Schlüssels, der das Leeren des Felds &quot;@expr&quot;oder &quot;alias&quot;zulässt:
+Deklaration eines zusammengesetzten Schlüssels, der die Leerung des Felds &quot;@expr“ oder „Alias“ zulässt:
 
 ```
 <key name="node" allowEmptyPart="true">
@@ -72,7 +72,7 @@ Deklaration eines zusammengesetzten Schlüssels, der das Leeren des Felds &quot;
  </key>
 ```
 
-Deklaration eines Primärschlüssels im Feld &quot;Name&quot; des STRING-Typs in einem `<srcschema>` und der entsprechenden SQL-Abfrage:
+Deklaration eines Primärschlüssels im Feld „Name“ vom Typ STRING in einer `<srcschema>` und der entsprechenden SQL-Abfrage:
 
 ```
  

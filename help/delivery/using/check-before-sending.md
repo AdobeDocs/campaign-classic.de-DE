@@ -9,7 +9,7 @@ hide: true
 hidefromtoc: true
 exl-id: 50d326b0-3c23-4dbf-9df6-d32b48e30f69
 source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '911'
 ht-degree: 100%
 
@@ -43,7 +43,7 @@ Weitere Informationen finden Sie in [diesem Abschnitt](inbox-rendering.md).
 
 ## Nachrichten in Testsendungen {#proof-messages}
 
-Mit Testsendungen können Sie den Abmelde-Link, die Mirrorseite und andere Links testen, die Nachricht validieren, die Anzeige von Bildern überprüfen, mögliche Fehler erkennen etc. Außerdem können Sie Ihr Design und die Darstellung auf verschiedenen Geräten testen.
+Mit Testsendungen können Sie den Ausschluss-Link, die Mirrorseite und andere Links testen, die Nachricht validieren, die Anzeige von Bildern überprüfen und mögliche Fehler erkennen. Außerdem können Sie das Design und die Darstellung auf verschiedenen Geräten testen.
 
 Weiterführende Informationen finden Sie [in diesem Abschnitt](steps-validating-the-delivery.md#sending-a-proof).
 

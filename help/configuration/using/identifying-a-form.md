@@ -17,8 +17,8 @@ ht-degree: 38%
 
 
 
-Mit einem Formular können Sie eine mit einem Datenschema verknüpfte Instanz in der Adobe Campaign-Clientkonsole bearbeiten.
+Mit einem Eingabeformular können Sie eine Instanz, die mit einem Datenschema verknüpft ist, über die Adobe Campaign-Client-Konsole bearbeiten.
 
 Das Formular wird anhand seines Namens und seines Namespace identifiziert.
 
-Der Identifikationsschlüssel eines Formulars ist eine Zeichenfolge, die aus dem Namespace und dem Namen besteht, getrennt durch einen Doppelpunkt (&#39;:&#39;) (z. B. &quot;cus:contact&quot;).
+Der Identifizierungsschlüssel eines Formulars ist eine Zeichenfolge, die den Namespace und den Namen enthält, getrennt durch einen Doppelpunkt (&#39;:&#39;) (zum Beispiel: „cus:contact„).

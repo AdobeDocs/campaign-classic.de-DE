@@ -14,7 +14,7 @@ ht-degree: 46%
 
 # Datenbank-Mapping{#database-mapping}
 
-Die SQL-Zuordnung des Beispielschemas, das [auf dieser Seite](schema-structure.md) beschrieben ist, generiert das folgende XML-Dokument:
+Die SQL-Zuordnung des auf [ Seite beschriebenen Beispielschemas ](schema-structure.md) das folgende XML-Dokument:
 
 ```sql
 <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">
@@ -43,7 +43,7 @@ Die SQL-Namen werden automatisch anhand des Elementnamens und des Elementtyps be
 
 Die SQL-Benennungsregeln lauten wie folgt:
 
-* **table**: Verkettung von Schema-Namespace und Name
+* **table**: Verkettung des Namespace und Namens des Schemas
 
   In diesem Beispiel wird der Tabellenname über das Hauptelement des Schemas im Attribut **sqltable** eingegeben:
 
@@ -51,7 +51,7 @@ Die SQL-Benennungsregeln lauten wie folgt:
   <element name="recipient" sqltable="CusRecipient">
   ```
 
-* **field**: Name des Elements, dem ein Präfix vorangestellt ist, das nach Typ definiert wurde: &quot;i&quot;für Integer, &quot;d&quot;für Dublette, &quot;s&quot;für Zeichenfolge, &quot;ts&quot;für Datumsangaben usw.
+* **field**: Name des Elements mit vorangestelltem Präfix, das nach Typ definiert wird: „i“ für Integer, „d“ für Double, „s“ für String, „ts“ für Datumsangaben usw.
 
   Der Feldname wird über das Attribut **sqlname** für die verschiedenen Eingaben von **`<attribute>`** und **`<element>`** eingegeben:
 
@@ -80,7 +80,7 @@ In Bezug auf SQL-Felder gelten folgende Einschränkungen:
 
 ## XML-Felder {#xml-fields}
 
-Standardmäßig werden alle Elemente vom Typ **`<attribute>`** und **`<element>`** einem SQL-Feld der Datenschematabelle zugeordnet. Sie können dieses Feld jedoch anstatt in SQL auch in XML referenzieren. Das bedeutet, dass die Daten in einem Memo-Feld (&quot;mData&quot;) der Tabelle gespeichert werden, in der Werte aller XML-Felder enthalten sind. Als Speicher dieser Daten fungiert ein XML-Dokument, das die Struktur des Schemas beibehält.
+Standardmäßig werden alle **`<attribute>`** und **`<element>`** Elemente einem SQL-Feld der Datenschematabelle zugeordnet. Sie können dieses Feld jedoch anstatt in SQL auch in XML referenzieren. Das bedeutet, dass die Daten in einem Memo-Feld (&quot;mData&quot;) der Tabelle gespeichert werden, in der Werte aller XML-Felder enthalten sind. Als Speicher dieser Daten fungiert ein XML-Dokument, das die Struktur des Schemas beibehält.
 
 Um ein Feld in XML auszufüllen, müssen Sie dem betreffenden Element das Attribut **xml** mit dem Wert &quot;true&quot; hinzufügen.
 
@@ -100,11 +100,11 @@ Um ein Feld in XML auszufüllen, müssen Sie dem betreffenden Element das Attrib
 
   Über den Typ &quot;html&quot; können Sie HTML-Inhalte in einem CDATA-Tag speichern und eine spezielle HTML-Bearbeitungsprüfung in der Benutzeroberfläche des Adobe Campaign-Clients anzeigen.
 
-Verwenden Sie XML-Felder, um neue Felder hinzuzufügen, ohne die physische Struktur der Datenbank zu ändern. Ein weiterer Vorteil besteht darin, dass Sie weniger Ressourcen verwenden (Größe für SQL-Felder, Anzahl der Felder pro Tabelle usw.). Beachten Sie jedoch, dass Sie ein XML-Feld nicht indizieren oder filtern können.
+Verwenden Sie XML-Felder, um neue Felder hinzuzufügen, ohne die physische Struktur der Datenbank zu ändern. Ein weiterer Vorteil besteht darin, dass weniger Ressourcen benötigt werden (SQL-Feldern zugewiesene Größe, Anzahl der Felder pro Tabelle usw.). Beachten Sie jedoch, dass Sie ein XML-Feld nicht indizieren oder filtern können.
 
-## Indexierte Felder {#indexed-fields}
+## Indizierte Felder {#indexed-fields}
 
-Indizes ermöglichen die Optimierung der Leistung der in der Anwendung verwendeten SQL-Abfragen.
+Mit Indizes können Sie die Leistung der in der Anwendung verwendeten SQL-Abfragen optimieren.
 
 Ein Index wird aus dem Hauptelement des Datenschemas deklariert.
 
@@ -116,21 +116,21 @@ Ein Index wird aus dem Hauptelement des Datenschemas deklariert.
 </key>
 ```
 
-Indizes folgen den folgenden Regeln:
+Indizes befolgen die folgenden Regeln:
 
 * Ein Index kann auf ein oder mehrere Felder in der Tabelle verweisen
-* Ein Index kann in allen Feldern eindeutig sein (um Duplikate zu vermeiden), wenn das Attribut **unique** den Wert &quot;true&quot;enthält
-* Der SQL-Name des Index wird anhand des SQL-Namens der Tabelle und des Indexnamens bestimmt
+* Ein Index kann in allen Feldern eindeutig sein (um Duplikate zu vermeiden), wenn das Attribut **unique** den Wert „true“ enthält
+* Der SQL-Name des Index wird aus dem SQL-Namen der Tabelle und dem Namen des Index bestimmt
 
 >[!NOTE]
 >
->* Standardmäßig sind Indizes die ersten Elemente, die aus dem Hauptelement des Schemas deklariert werden.
+>* Standardmäßig sind Indizes die ersten Elemente, die über das Hauptelement des Schemas deklariert werden.
 >
->* Indizes werden während der Tabellenzuordnung (Standard oder FDA) automatisch erstellt.
+>* Indizes werden während der Tabellenzuordnung automatisch erstellt (Standard oder FDA).
 
 **Beispiel**:
 
-* Hinzufügen eines Index zur E-Mail-Adresse und Stadt:
+* Hinzufügen eines Index zur E-Mail-Adresse und zum Ort:
 
   ```sql
   <srcSchema name="recipient" namespace="cus">
@@ -148,7 +148,7 @@ Indizes folgen den folgenden Regeln:
   </srcSchema>
   ```
 
-* Hinzufügen eines eindeutigen Index zum Feld &quot;id&quot;-Name:
+* Hinzufügen eines eindeutigen Index zum Namensfeld „id“:
 
   ```sql
   <srcSchema name="recipient" namespace="cus">

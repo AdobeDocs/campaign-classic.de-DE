@@ -19,7 +19,7 @@ ht-degree: 89%
 
 Die Beschreibung eines Formulars ist ein strukturiertes XML-Dokument, das die Grammatik des Formularschemas anwendet: **xtk:form**.
 
-Das XML-Dokument des Eingabeformulars muss das Stammelement `<form>` mit den Attributen **name** und **namespace** enthalten, um den Formularnamen und den Namespace auszufüllen.
+Das XML-Dokument eines Formulars muss das `<form>` Stammelement mit den Attributen **name** und **namespace** zum Ausfüllen des Formularnamens und des Namespace enthalten.
 
 ```xml
 <form name="form_name" namespace="name_space">
@@ -63,7 +63,7 @@ Das Eingabefeld passt sich automatisch dem gewählten Datentyp an und verwendet 
 
 >[!NOTE]
 >
->Sie können die im Datenschema definierte Beschriftung überschreiben, indem Sie das Attribut **label** zum Element `<input>` hinzufügen:\
+>Sie können das in seinem Datenschema definierte Label überschreiben, indem Sie dem `<input>` das **label**-Attribut hinzufügen:\
 >`<input label="Email address" xpath="@name" />`
 
 Standardmäßig wird jedes Feld, je nach Datentyp, einzeilig über den gesamten verfügbaren Platz angezeigt.
@@ -138,7 +138,7 @@ Mithilfe des `<static>`-Tags vom Typ &quot;Hilfe&quot; wurde ein Hilfetext hinzu
 
 Mit Containern können Sie einen Satz von Steuerelementen gruppieren. Sie werden durch das Element **`<container>`** dargestellt. Sie wurden oben verwendet, um Eingabefelder über mehrere Spalten zu formatieren.
 
-Mit dem **xpath**-Attribut auf einem `<container>` können Sie den Verweis auf untergeordnete Eingabefelder vereinfachen. Die Referenzierung von Steuerelementen ist dann relativ zum übergeordneten Element `<container>` .
+Mit dem **xpath**-Attribut auf einem `<container>` können Sie den Verweis auf untergeordnete Eingabefelder vereinfachen. Die Referenzierung der Eingabefelder erfolgt dann relativ zum übergeordneten `<container>`.
 
 Beispiel eines Containers ohne &quot;xpath&quot;:
 
@@ -158,11 +158,11 @@ Beispiel mit dem Zusatz &quot;xpath&quot; zum Element &quot;location&quot;:
 </container>
 ```
 
-### Behältertypen {#types-of-container}
+### Container-Typen {#types-of-container}
 
 Container werden verwendet, um komplexe Eingabefelder mithilfe eines Satzes von Feldern zu konstruieren, die in Seiten formatiert sind.
 
-#### Tab-Container {#tab-container}
+#### Registerkarten-Container {#tab-container}
 
 Ein Registerkarten-Container formatiert Daten in Seiten, auf die über Registerkarten zugegriffen werden kann.
 
@@ -187,12 +187,12 @@ Der Haupt-Container wird durch das Attribut **type=&quot;Notebook&quot;** defini
 
 >[!NOTE]
 >
->Die Funktion **style=&quot;down|up**(standardmäßig)**&quot;** erzwingt die vertikale Positionierung von Registerkartenbeschriftungen unter oder über dem Steuerelement. Diese Funktion ist optional.
+>Eine **style=„down|up**(default)**&quot;**-Funktion erzwingt die vertikale Positionierung von Registerkartenbeschriftungen unter oder über dem Steuerelement. Diese Funktion ist optional.
 >`<container style="down" type="notebook">  … </container>`
 
 #### Symbolliste {#icon-list}
 
-In diesem Container wird eine vertikale Symbolleiste angezeigt, mit der Sie die anzuzeigenden Seiten auswählen können.
+Dieser Container enthält eine vertikale Symbolleiste, mit der Sie die anzuzeigenden Seiten auswählen können.
 
 ![](assets/d_ncs_integration_form_exemple8.png)
 
@@ -217,7 +217,7 @@ Die Bilder sind im Knoten **[!UICONTROL Administration > Konfiguration > Bilder]
 
 #### Sichtbarkeitscontainer {#visibility-container}
 
-Sie können eine Gruppe von Steuerelementen über eine dynamische Bedingung maskieren.
+Sie können einen Satz von Eingabefeldern über eine dynamische Bedingung maskieren.
 
 Dieses Beispiel veranschaulicht die Sichtbarkeit von Eingabefeldern für den Wert des Feldes &quot;Geschlecht&quot;:
 
@@ -238,7 +238,7 @@ Beispiele für die Bedingungssyntax:
 * **visibleIf=&quot;@gender >= 1 and @gender != 2&quot;**: Bedingung für einen numerischen Wert.
 * **visibleIf=&quot;@boolean1=true oder @boolean2=false&quot;**: Testen von booleschen Feldern.
 
-#### Container aktivieren {#enabling-container}
+#### Container wird aktiviert {#enabling-container}
 
 Mit diesem Container können Sie einen Datensatz aus einer dynamischen Bedingung aktivieren oder deaktivieren. Durch Deaktivieren eines Eingabefeldes wird dessen Bearbeitung verhindert. Das folgende Beispiel veranschaulicht die Aktivierung von Eingabefeldern über den Wert des Feldes &quot;Geschlecht&quot;:
 
@@ -273,7 +273,7 @@ Die Auswahl des Ziels ist über das Bearbeitungsfeld verfügbar. Die Eingabe wir
 
 Eine Dropdown-Liste wird verwendet, um ein Zielelement aus der Liste der bereits erstellten Einträge auszuwählen.
 
-Über das Symbol **[!UICONTROL Link ändern]** (Ordner) wird ein Auswahlformular mit der Liste der Zielelemente und einem Filterbereich gestartet:
+Mit **[!UICONTROL Symbol „Relation ändern]** (Ordner) wird ein Auswahlformular mit der Liste der Zielelemente und einem Filterbereich gestartet:
 
 ![](assets/d_ncs_integration_form_exemple10.png)
 
@@ -363,7 +363,7 @@ Filtern und Sortieren können beim Laden der Liste angewendet werden:
 </input>
 ```
 
-### Relationstabelle {#relationship-table}
+### Beziehungstabelle {#relationship-table}
 
 Mit einer Beziehungstabelle können Sie zwei Tabellen mit N-N-Kardinalität verknüpfen. Die Beziehungstabelle enthält nur die Verknüpfungen zu den beiden Tabellen.
 
@@ -406,7 +406,7 @@ Mit dem Attribut **xpathChoiceTarget** können Sie ein Auswahlformular aus der e
 * **xpathEditTarget**: Legt die Bearbeitung für die eingegebene Relation fest
 * **xpathChoiceTarget**: Startet beim Hinzufügen das Auswahlformular für die eingegebene Relation
 
-## Speicherlisten-Steuerelemente {#memory-list-controls}
+## Eingabefeld mit Liste von gespeicherten Elementen {#memory-list-controls}
 
 Mithilfe von Listen von gespeicherten Elementen können Sie die Sammlungselemente bearbeiten, indem Sie Listen-Daten vorausfüllen. Diese Liste kann nicht gefiltert oder konfiguriert werden.
 
@@ -464,7 +464,7 @@ Das Einfügen und Bearbeiten der Daten in einer Liste kann in einem separaten Be
 </input>
 ```
 
-Das Bearbeitungsformular wird aus dem Element `<form>` unter der Listendefinition ausgefüllt. Seine Struktur ist identisch mit der Struktur eines Eingabeformulars. Die Schaltfläche **[!UICONTROL Detail]** wird automatisch hinzugefügt, wenn das Attribut **zoom=&quot;true&quot;** im **`<input>`**-Tag der Liste ausgefüllt ist. Mit diesem Attribut können Sie das Bearbeitungsformular der ausgewählten Zeile starten.
+Das Bearbeitungsformular wird aus dem `<form>` Element unter „Listendefinition“ heraus ausgefüllt. Seine Struktur ist identisch mit der Struktur eines Eingabeformulars. Die Schaltfläche **[!UICONTROL Detail]** wird automatisch hinzugefügt, wenn das Attribut **zoom=&quot;true&quot;** im **`<input>`**-Tag der Liste ausgefüllt ist. Mit diesem Attribut können Sie das Bearbeitungsformular der ausgewählten Zeile starten.
 
 >[!NOTE]
 >
@@ -523,7 +523,7 @@ Eine Checkbox gibt den booleschen Status an (ausgewählt oder nicht). Standardm�
 
 <!-- to be completed -->
 
-## Navigationshierarchiebearbeitung {#navigation-hierarchy-edit}
+## Navigationsbaum bearbeiten {#navigation-hierarchy-edit}
 
 Dieses Eingabefeld erstellt einen Baum für einen Satz zu bearbeitender Felder.
 
@@ -546,7 +546,7 @@ Die zu bearbeitenden Eingabefelder sind in einem **`<container>`** gruppiert, da
 
 ## Ausdrucksfeld {#expression-field}
 
-Ein Ausdrucksfeld aktualisiert ein Feld dynamisch von einem Ausdruck. Das Tag **`<input>`** wird mit dem Attribut **xpath** verwendet, um den Pfad des zu aktualisierenden Felds einzugeben, und das Attribut **expo** , das den Aktualisierungsausdruck enthält.
+Ein Ausdrucksfeld aktualisiert ein Feld dynamisch von einem Ausdruck aus. Das **`<input>`**-Tag wird mit dem Attribut **xpath** verwendet, um den Pfad des zu aktualisierenden Felds und ein Attribut **expo** mit dem Aktualisierungsausdruck einzugeben.
 
 ```xml
 <!-- Example: updating the boolean1 field from the value contained in the field with path /tmp/@flag -->
@@ -585,7 +585,7 @@ Der Kontext des Formulars kann beim Initialisieren und Schließen des Formulars 
 
 >[!NOTE]
 >
->Die Tags `<enter>` und `<leave>` können auf den `<container>` der Seiten (&quot;notebook&quot;- und &quot;iconbox&quot;-Typen) verwendet werden.
+>Die Tags `<enter>` und `<leave>` können auf den `<container>` von Seiten verwendet werden (vom Typ „notebook“ und „iconbox„).
 
 ### Sprache von Ausdrücken {#expression-language-}
 
@@ -615,7 +615,7 @@ Das **`<check expr="<condition>" />`**-Tag in Kombination mit dem **`<error>`**-
 
 Ein Assistent führt Sie in Form von Seiten durch eine Reihe von Schritten zur Dateneingabe. Die eingegebenen Daten werden bei der Validierung des Formulars gespeichert.
 
-Eine Assistenzkraft hat die folgende Struktur:
+Ein Assistent weist die folgende Struktur auf:
 
 ```xml
 <form type="wizard" name="example" namespace="cus" img="nms:rcpgroup32.png" label="Assistant example" entity-schema="nms:recipient">
@@ -632,7 +632,7 @@ Eine Assistenzkraft hat die folgende Struktur:
 
 ![](assets/d_ncs_integration_form_exemple19.png)
 
-Durch das Vorhandensein des Attributs **type=&quot;wizard&quot;** im Element `<form>` können Sie den Assistenzmodus beim Aufbau des Formulars definieren. Die Seiten werden aus `<container>`-Elementen ausgefüllt, die dem Element `<form>` untergeordnet sind. Das `<container>`-Element einer Seite wird mit den Titelattributen für den Titel und &quot;desc&quot; gefüllt, um die Beschreibung unter dem Seitentitel anzuzeigen. Die Schaltflächen **[!UICONTROL Zurück]** und **[!UICONTROL Weiter]** werden automatisch hinzugefügt, um das Blättern zwischen Seiten zu ermöglichen.
+Durch das Vorhandensein des Attributs **type=„wizard“** im `<form>` können Sie den Assistentenmodus beim Aufbau des Formulars definieren. Die Seiten werden aus `<container>`-Elementen ausgefüllt, die dem Element `<form>` untergeordnet sind. Das `<container>`-Element einer Seite wird mit den Titelattributen für den Titel und &quot;desc&quot; gefüllt, um die Beschreibung unter dem Seitentitel anzuzeigen. Die Schaltflächen **[!UICONTROL Zurück]** und **[!UICONTROL Weiter]** werden automatisch hinzugefügt, um das Blättern zwischen Seiten zu ermöglichen.
 
 Mit der Schaltfläche **[!UICONTROL Beenden]** speichern Sie die eingegebenen Daten und schließen das Formular.
 

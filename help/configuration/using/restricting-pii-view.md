@@ -8,7 +8,7 @@ exl-id: 0f32d62d-a10a-4feb-99fe-4679b98957d4
 source-git-commit: e198defd60f4b12681025b04b12a1498df015047
 workflow-type: tm+mt
 source-wordcount: '449'
-ht-degree: 59%
+ht-degree: 69%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 59%
 
 ## Übersicht {#overview}
 
-Manche Kunden benötigen Marketing-Benutzer, um auf Datendatensätze zugreifen zu können, aber nicht möchten, dass sie personenbezogene Daten (PII) wie Vorname, Nachname oder E-Mail-Adresse sehen. Adobe Campaign bietet eine Möglichkeit, den Datenschutz zu schützen und zu verhindern, dass Daten von regulären Kampagnenbetreibern missbraucht werden.
+Einige Kunden benötigen Marketing-Benutzer, um auf Datensätze zugreifen zu können, möchten aber nicht, dass sie personenbezogene Daten (PII) sehen, wie Vorname, Nachname oder E-Mail-Adresse. Adobe Campaign schlägt eine Möglichkeit vor, die Privatsphäre zu schützen und zu verhindern, dass Daten von regulären Campaign-Benutzenden missbraucht werden.
 
 ## Implementierung {#implementation}
 
-Den Schemas wurde ein neues Attribut hinzugefügt, das auf beliebige Elemente oder Attribute angewendet werden kann. Es ergänzt das vorhandene Attribut **[!UICONTROL visibleIf]** . Dieses Attribut ist: **[!UICONTROL accessibleIf]**. Wenn ein XTK-Ausdruck im Zusammenhang mit dem aktuellen Benutzerkontext enthalten ist, kann z. B. **[!UICONTROL HasNamedRight]** oder **[!UICONTROL $(login)]** genutzt werden.
+Zu den Schemata wurde ein neues Attribut hinzugefügt, das auf beliebige Elemente oder Attribute angewendet werden kann. Es ergänzt das vorhandene Attribut **[!UICONTROL visibleIf]** . Dieses Attribut ist: **[!UICONTROL accessibleIf]**. Wenn ein XTK-Ausdruck im Zusammenhang mit dem aktuellen Benutzerkontext enthalten ist, kann z. B. **[!UICONTROL HasNamedRight]** oder **[!UICONTROL $(login)]** genutzt werden.
 
 Nachfolgend finden Sie ein Beispiel für eine Erweiterung des Empfängerschemas, das diese Nutzung zeigt:
 
@@ -40,7 +40,7 @@ Nachfolgend finden Sie ein Beispiel für eine Erweiterung des Empfängerschemas,
 Die wichtigsten Eigenschaften sind:
 
 * **[!UICONTROL visibleIf]** : Blendet die Felder aus den Metadaten aus, sodass sie nicht in einer Schemaansicht, Spaltenauswahl oder einem Ausdrucksassistenten aufgerufen werden können. Dadurch werden jedoch keine Daten ausgeblendet. Wenn der Feldname manuell in einen Ausdruck eingegeben wird, wird der Wert angezeigt.
-* **[!UICONTROL accessibleIf]** : Blendet die Daten aus der resultierenden Abfrage aus (und ersetzt sie durch leere Werte). Wenn visibleIf leer ist, erhält es denselben Ausdruck wie **[!UICONTROL accessibleIf]** .
+* **[!UICONTROL accessibleIf]** : Blendet die Daten aus der resultierenden Abfrage aus (und ersetzt sie durch leere Werte). Wenn „visibleIf“ leer ist, erhält es denselben Ausdruck wie **[!UICONTROL accessibleIf]** .
 
 Die Verwendung dieses Attributs in Campaign hat folgende Folgen:
 
@@ -55,11 +55,11 @@ Die Verwendung dieses Attributs in Campaign hat folgende Folgen:
 
 >[!IMPORTANT]
 >
->Die Verwendung des Attributs **accessibleIf** bei kritischen Parametern (z. B. bei zusammengesetzten Schlüsseln) kann zu Fehlern für Benutzer führen, die die Daten aufgrund ausgeblendeter Daten nicht lesen dürfen. Dies kann zu Abfragefehlern oder unerwartetem Verhalten führen. Stellen Sie sicher, dass wichtige Parameter verfügbar sind, um Unterbrechungen zu verhindern.
+>Die Verwendung des Attributs **accessibleIf** bei kritischen Parametern (z. B. bei zusammengesetzten Schlüsseln) kann zu Fehlern für Benutzende führen, die die Daten aufgrund ausgeblendeter Daten nicht lesen dürfen. Dies kann zu Abfragefehlern oder unerwartetem Verhalten führen. Stellen Sie sicher, dass wichtige Parameter verfügbar sind, um Unterbrechungen zu verhindern.
 
 ## Empfehlungen {#recommendations}
 
-In jedem Versand werden E-Mail-Adressen in die Tabellen **[!UICONTROL broadLog]** und **[!UICONTROL forecastLog]** kopiert. Daher müssen auch diese Felder geschützt werden.
+Bei jedem Versand werden E-Mail-Adressen in die Tabellen **[!UICONTROL broadLog]** und **[!UICONTROL forecastLog]** kopiert. Daher müssen diese Felder auch geschützt werden.
 
 Nachfolgend finden Sie ein Beispiel für die Erweiterung der Protokolltabelle, um Folgendes zu implementieren:
 
@@ -92,4 +92,4 @@ Nachfolgend finden Sie ein Beispiel für die Erweiterung der Protokolltabelle, u
 
 >[!NOTE]
 >
->Diese Einschränkung gilt für nicht technische Benutzer: Ein technischer Benutzer mit entsprechenden Berechtigungen kann Daten abrufen. Diese Methode ist daher nicht zu 100 % sicher.
+>Diese Einschränkung gilt für nicht-technische Benutzer: Ein technischer Benutzer mit den entsprechenden Berechtigungen kann Daten abrufen. Diese Methode ist daher nicht 100% sicher.

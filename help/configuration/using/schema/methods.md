@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Schemaelemente und Attribute - Methodenelement
+title: Schemaelemente und -attribute - Methodenelement
 description: Methodenelement
 feature: Schema Extension
 exl-id: f45e32ce-6534-4df2-ac7c-ba1134f0ffc8
@@ -11,7 +11,7 @@ ht-degree: 11%
 
 ---
 
-# methods element {#methods--element}
+# Methodenelement {#methods--element}
 
 ![](../../../assets/v7-only.svg)
 
@@ -23,17 +23,17 @@ methods:==method
 
 Kein(e)
 
-## Eltern {#parents-11}
+## Übergeordnete Elemente {#parents-11}
 
 `<srcschema>`
 
 ## Untergeordnetes Element {#children-11}
 
-method
+Methode
 
 ## Beschreibung {#description-11}
 
-Mit diesem Element können Sie ein `<method>` -Element definieren. Die Angabe einer Methode ist zwingend erforderlich.
+Mit diesem Element können Sie ein `<method>` definieren. Sie ist obligatorisch für die Deklaration einer Methode.
 
 ## Attributbeschreibung {#attribute-description-11}
 

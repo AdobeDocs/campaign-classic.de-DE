@@ -24,7 +24,7 @@ Die Verbindungstypen, auch Kardinalitäten genannt, sind im Folgenden aufgeführ
 
 In der Benutzeroberfläche werden Kardinalitäten mit einem bestimmten Symbol dargestellt.
 
-Für Join-Beziehungen mit einer Campaign-Tabelle/-Datenbank:
+Für Join-Beziehungen mit einer Kampagnen-Tabelle/-Datenbank:
 
 * ![](assets/join_with_campaign11.png): 1-1-Kardinalität. Dies kann etwa eine Beziehung zwischen einem Empfänger und einer aktuellen Bestellung sein. Ein Empfänger kann jeweils nur mit einer Entität der aktuellen Tabelle zu Bestellungen verknüpft sein.
 * ![](assets/externaljoin11.png): 1-1-Kardinalität, externer Join. Dies kann etwa eine Beziehung zwischen einem Empfänger und dem ihm zugehörigen Land sein. Ein Empfänger kann nur mit einer Entität der Ländertabelle verknüpft sein. Der Inhalt der Ländertabelle wird nicht gespeichert.

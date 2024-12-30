@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Schemaelemente und Attribute - Auflistungselement
+title: Schemaelemente und -attribute - Auflistungselement
 description: Auflistungselement
 feature: Schema Extension
 exl-id: 4cd67278-2623-4508-9a9f-9007c6a5f8ac
@@ -17,18 +17,18 @@ ht-degree: 8%
 
 ## Inhaltsmodell {#content-model-5}
 
-enumeration:==(help| value)
+enumeration:==(help| Wert)
 
 ## Attribute {#attributes-5}
 
-* @basetype (string)
-* @default (string)
-* @desc (string)
-* @label (string)
-* @name (string)
-* @template (string)
+* @basetype (Zeichenfolge)
+* @default (Zeichenfolge)
+* @desc (Zeichenfolge)
+* @label (Zeichenfolge)
+* @name (Zeichenfolge)
+* @template (Zeichenfolge)
 
-## Eltern {#parents-5}
+## Übergeordnete Elemente {#parents-5}
 
 `<srcschema>`
 
@@ -39,52 +39,52 @@ enumeration:==(help| value)
 
 ## Beschreibung {#description-5}
 
-Mit diesem Element können wir eine Werteauflistung definieren. Eine Auflistung gehört zu dem Schema, in dem sie definiert ist, kann jedoch über ein anderes Schema aufgerufen werden.
+Mit diesem Element können Sie eine Auflistung mit Werten definieren. Eine Auflistung gehört zu dem Schema, in dem sie definiert ist, ist aber über ein anderes Schema zugänglich.
 
-## Verwendung und Verwendungskontext {#use-and-context-of-use-4}
+## Verwendung und Nutzungskontext {#use-and-context-of-use-4}
 
 Auflistungen werden zu Beginn eines Schemas definiert (bevor das Hauptelement definiert wird).
 
 ## Attributbeschreibung {#attribute-description-5}
 
-* **basetype (string)**: Typ der in der Auflistung gespeicherten Werte.
+* **baseType (Zeichenfolge)**: Typ der in der Auflistung gespeicherten Werte.
 
   Liste der verfügbaren Typen:
 
    * BELIEBIGE
-   * bin
-   * blob
+   * Eimer
+   * Klecks
    * Boolesch
    * Byte
    * CDATA
    * datetime
-   * datetimetz
+   * datetimets
    * datetimenotz
    * date
-   * DOMDdocument
+   * DOMDocument
    * DOMElement
    * double
-   * enum
+   * Aufzählung
    * float
-   * html
+   * HTML
    * int64
    * link
-   * long
+   * lang
    * Memo
    * MNTOKEN
    * Prozent
-   * primarykey
-   * short
+   * Primärschlüssel
+   * Short
    * Zeichenfolge
    * time
    * timespan
    * uuid
 
-* **default (string)**: Standardwert. Der Standardwert kann auch einer der in der Auflistung definierten Werte sein.
-* **desc (string)**: Auflistungsbeschreibung.
-* **label (string)**: Auflistungsbezeichnung.
-* **name (string)**: Interner Name der Auflistung.
-* **template (string)**: Dieses Attribut definiert einen Verweis auf ein `<enumeration>` -Element, das von mehreren Schemas gemeinsam genutzt wird. Die Definition wird automatisch in das aktuelle Schema kopiert.
+* **default (Zeichenfolge)**: Standardwert. Der Standardwert kann auch einer der in der Auflistung definierten Werte sein.
+* **desc (Zeichenfolge)**: Beschreibung der Auflistung.
+* **label (Zeichenfolge)**: Auflistungsbezeichnung.
+* **name (Zeichenfolge)**: Interner Name der Auflistung.
+* **template (Zeichenfolge)** Dieses Attribut definiert einen Verweis auf ein `<enumeration>`, das von mehreren Schemata gemeinsam genutzt wird. Die Definition wird automatisch in das aktuelle Schema kopiert.
 
 ## Beispiele {#examples-4}
 

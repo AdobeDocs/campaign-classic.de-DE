@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Webtracking-Tags in Ihre Site einfügen
-description: Erfahren Sie, wie Sie Web-Tracking-Tags in Ihre Site einfügen
+title: Einfügen von Webtracking-Tags in Ihre Site
+description: Erfahren Sie, wie Sie Webtracking-Tags in Ihre Site einfügen
 feature: Configuration
 role: Data Engineer, Developer
 exl-id: e7fcec75-82fe-45ff-8d45-7d6e95baeb14
@@ -12,15 +12,15 @@ ht-degree: 0%
 
 ---
 
-# Einfügen von Web-Tracking-Tags in Ihre Site{#inserting-tags-in-your-site}
+# Einfügen von Webtracking-Tags in Ihre Site{#inserting-tags-in-your-site}
 
 ## Einfache Methode {#simple-method}
 
-Diese Methode besteht darin, einen HTTP-Aufruf an den Weiterleitungsserver zu senden, indem ein **`<img>`** -HTML-Tag in den HTML-Quellcode der Webseite eingefügt wird, die Sie verfolgen möchten.
+Bei dieser Methode wird ein HTTP-Aufruf an den Weiterleitungsserver gesendet, indem ein **`<img>`** HTML-Tag in den HTML-Quellcode der Webseite eingefügt wird, die verfolgt werden soll.
 
 >[!IMPORTANT]
 >
->Diese Methode verwendet die vom Webbrowser gesendeten Cookies, um den Empfänger zu identifizieren. Sie ist nicht zu 100 % zuverlässig.
+>Diese Methode verwendet die vom Webbrowser gesendeten Cookies, um den Empfänger zu identifizieren, und ist nicht 100 % zuverlässig.
 
 **Beispiel**:
 
@@ -32,15 +32,15 @@ Das eingefügte Tag kontaktiert den Weiterleitungsserver.
 
 ![](assets/d_ncs_integration_webtracking_structure2.png)
 
-Wenn Sie eine Seite definieren, die in der Konsole verfolgt werden soll, können Sie ein Beispiel-Webtrackingtag generieren, das kopiert und in den Quellcode Ihrer Webseite eingefügt wird.
+Wenn Sie eine Seite definieren, die in der Konsole verfolgt werden soll, können Sie ein Beispiel-Webtracking-Tag generieren, das Sie kopieren und in den Quell-Code Ihrer Web-Seite einfügen können.
 
-Wenn Sie Tags vom Typ TRANSACTION verwenden, müssen Sie jedoch das Beispiel-Tag mit JavaScript ändern, um die Transaktionsinformationen (Menge, Anzahl der Elemente) und alle von einem Erweiterungsschema definierten Informationen einzufügen.
+Wenn Sie jedoch Tags vom Typ TRANSAKTION verwenden, müssen Sie das Beispiel-Tag mit JavaScript ändern, um die Transaktionsinformationen (Betrag, Anzahl der Elemente) und alle Informationen einzufügen, die durch ein Erweiterungsschema definiert sind.
 
 ### Statisches Einfügen von Tags {#static-insertion-of-tags}
 
-Um statische Tags einzufügen, kopieren Sie einfach die von der Konsole generierten oder manuell erstellten Tags und fügen Sie sie in die Quelle Ihrer Webseite ein.
+Kopieren Sie zum Einfügen statischer Tags einfach die von der Konsole generierten oder manuell erstellten Tags und fügen Sie sie in die Quelle Ihrer Web-Seite ein.
 
-**Beispiel**: Einfügen eines Web-Tracking-Tags auf einer Seite, die ein Formular anzeigt.
+**Beispiel**: Einfügen eines Webtracking-Tags auf einer Seite, auf der ein Formular angezeigt wird.
 
 ```
 <html>
@@ -62,7 +62,7 @@ Um statische Tags einzufügen, kopieren Sie einfach die von der Konsole generier
 </html>
 ```
 
-Einfügen eines Webtrackingtags vom Typ TRANSACTION in die Bestätigungsseite (&quot;amount.md&quot;).
+Einfügen eines Web-Tracking-Tags vom Typ TRANSACTION auf der Bestätigungsseite („amount.md„).
 
 ```
 <html>
@@ -84,9 +84,9 @@ Einfügen eines Webtrackingtags vom Typ TRANSACTION in die Bestätigungsseite (&
 </html>
 ```
 
-### Dynamische Generierung von Web-Tracking-Tags {#dynamic-generation-of-web-tracking-tags}
+### Dynamische Erstellung von Webtracking-Tags {#dynamic-generation-of-web-tracking-tags}
 
-Wenn Ihre Webseiten dynamisch generiert werden, können Sie das Webtrackingtag zum Zeitpunkt der Seitenerstellung hinzufügen.
+Wenn Ihre Web-Seiten dynamisch generiert werden, können Sie das Web-Tracking-Tag zum Zeitpunkt der Seitenerstellung hinzufügen.
 
 **Beispiel**: Webtracking zu JSPs hinzugefügt.
 
@@ -121,19 +121,19 @@ Wenn Ihre Webseiten dynamisch generiert werden, können Sie das Webtrackingtag z
 </html>
 ```
 
-## Optimum-Methode {#optimum-method-}
+## Optimale Methode {#optimum-method-}
 
-Wenn Sie die an den Weiterleitungsserver gesendeten Informationen steuern möchten, ist die zuverlässigste Möglichkeit, die HTTP-Abfrage synchron selbst mithilfe einer Sprache zur Seitenerstellung durchzuführen.
+Wenn Sie die an den Weiterleitungsserver gesendeten Informationen steuern möchten, ist es am zuverlässigsten, die HTTP-Abfrage mithilfe einer Seitengenerierungssprache selbst synchron durchzuführen.
 
-Die URL, die Sie erstellen, muss den Syntaxregeln entsprechen, die im Tag [Webtracking: definition](../../configuration/using/web-tracking-tag-definition.md) definiert sind.
+Die von Ihnen erstellte URL muss den unter (Webtracking[Tag: Definition) definierten Syntaxregeln ](../../configuration/using/web-tracking-tag-definition.md).
 
 ![](assets/d_ncs_integration_webtracking_structure3.png)
 
 >[!NOTE]
 >
->Umleitung und Webtracking verwenden Cookies. Es ist wichtig, dass sich der Webserver, der den synchronen HTTP-Aufruf durchführt, in derselben Domäne befindet wie der Umleitungsserver. Die verschiedenen HTTP-Austausche müssen die Cookies &quot;id&quot;, &quot;uuid&quot;und &quot;uuid230&quot;vermitteln.
+>Weiterleitung und Webtracking verwenden Cookies. Es ist wichtig, dass sich der Webserver, der den synchronen HTTP-Aufruf ausführt, in derselben Domain wie der Weiterleitungsserver befindet. Die verschiedenen HTTP-Austausche müssen die Cookies „id“, „uuid“ und „uuid230“ übermitteln.
 
-**Beispiel**: Dynamische Erzeugung in Java, wobei die Empfängerauthentifizierung die Kontonummer verwendet.
+**Beispiel**: Dynamische Generierung in Java, bei der die Empfängerauthentifizierung die Kontonummer verwendet.
 
 ```
 [...]

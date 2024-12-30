@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Erste Schritte mit Schemata in Adobe Campaign
-description: Erfahren Sie, wie Sie mit Schemata arbeiten und das konzeptionelle Datenmodell der Adobe Campaign-Datenbank erweitern.
+description: Erfahren Sie, wie Sie mit Schemata arbeiten und das konzeptionelle Datenmodell der Adobe Campaign-Datenbank erweitern
 feature: Schema Extension
 role: Data Engineer, Developer
 exl-id: f36a1b01-a002-4a21-9255-ea78b5f173fe
@@ -14,13 +14,13 @@ ht-degree: 49%
 
 # Erste Schritte mit Schemata {#about-schema-reference}
 
-## Was ist ein Schema? {#what-is-a-schema}
+## Was ist ein Schema {#what-is-a-schema}
 
-In diesem Kapitel wird beschrieben, wie Sie Erweiterungsschemata konfigurieren, um das konzeptionelle Datenmodell der Adobe Campaign-Datenbank zu erweitern.
+In diesem Kapitel wird beschrieben, wie Sie Erweiterungsschemata konfigurieren können, um das konzeptionelle Datenmodell der Adobe Campaign-Datenbank zu erweitern.
 
-Ein besseres Verständnis der in Campaign integrierten Tabellen und ihrer Interaktion finden Sie im [Campaign Classic-Datenmodell](about-data-model.md).
+Genauere Informationen zu den integrierten Campaign-Tabellen und ihrer Interaktion finden Sie im [Campaign Classic-Datenmodell](about-data-model.md).
 
-In Adobe Campaign wird die physische und logische Struktur der in der Anwendung übertragenen Daten in XML beschrieben. Ein **schema** ist ein XML-Dokument, das einer Datenbanktabelle zugeordnet ist. Es definiert die Datenstruktur und beschreibt die SQL-Definition der Tabelle:
+In Adobe Campaign wird die physische und logische Struktur der im Programm übertragenen Daten in XML beschrieben. Ein **Schema** ist ein XML-Dokument, das mit einer Datenbanktabelle verknüpft ist. Es definiert die Datenstruktur und beschreibt die SQL-Definition der Tabelle:
 
 * Der Name der Tabelle
 * Felder
@@ -73,7 +73,7 @@ Ein Schema wird anhand seines Namens und seines Namespace identifiziert.
 
 Mit einem Namespace können Sie eine Reihe von Schemata nach Interessensgebieten gruppieren. Beispielsweise wird der Namespace **cus** für die kundenspezifische Konfiguration (**customers**) verwendet.
 
-Der Identifikationsschlüssel eines Schemas ist eine Zeichenfolge, die mithilfe des Namespace und des Namens durch einen Doppelpunkt getrennt erstellt wird, z. B.: **cus:recipient**.
+Der Identifizierungsschlüssel eines Schemas ist eine Zeichenfolge, die den Namespace und den Namen enthält, getrennt durch einen Doppelpunkt (z. B. **cus:recipient**.
 
 >[!IMPORTANT]
 >
@@ -81,5 +81,5 @@ Der Identifikationsschlüssel eines Schemas ist eine Zeichenfolge, die mithilfe 
 >
 >Kennungen dürfen nicht mit numerischen Zeichen beginnen.
 >
->Die folgenden Namespaces sind für Beschreibungen der Systementitäten reserviert, die für den Betrieb der Adobe Campaign-Anwendung erforderlich sind, und dürfen nicht verwendet werden: **xtk**, **nl**, **nms**, **ncm**, **temp**, **ncl**, **crm** , **xxl**
+>Die folgenden Namespaces sind für Beschreibungen der Systementitäten reserviert, die für den Betrieb der Adobe Campaign-Anwendung erforderlich sind, und dürfen nicht verwendet werden: **xtk**, **nl**, **nms**, **ncm**, **temp**, **ncl**, **crm**, **xxl**.
 

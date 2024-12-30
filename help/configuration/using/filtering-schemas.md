@@ -101,12 +101,12 @@ Standardmäßig sind integrierte Schemata nur mit SCHREIB-Berechtigungen für Be
 
 ## Systemfilter der integrierten Schemata ändern {#modifying-system-filters-of-built-in-schemas}
 
-Sie können weiterhin die Systemfilter der nativen Schemas ändern, die aufgrund von Kompatibilitätsproblemen mit älteren Versionen standardmäßig geschützt sind.
+Sie können die Systemfilter der vordefinierten Schemata, die aufgrund von Kompatibilitätsproblemen mit älteren Versionen standardmäßig geschützt sind, weiterhin ändern.
 
 >[!NOTE]
 >
->Adobe empfiehlt jedoch, die Standardparameter nicht zu ändern, um eine optimale Sicherheit zu gewährleisten.
+>Adobe empfiehlt jedoch, die Standardparameter nicht zu ändern, um optimale Sicherheit zu gewährleisten.
 
 1. Erstellen Sie eine Erweiterung für das betreffende Schema oder öffnen Sie eine vorhandene Erweiterung.
-1. Fügen Sie im Hauptelement das untergeordnete Element **`<sysfilter name="<filter name>" _operation="delete"/>`** hinzu, um die Anwendung des Filters unter demselben im Ursprungsschema zu löschen.
-1. Bei Bedarf können Sie einen neuen Filter hinzufügen, wie in [Systemfilter](#system-filters) beschrieben.
+1. Fügen Sie ein untergeordnetes Element **`<sysfilter name="<filter name>" _operation="delete"/>`** im Hauptelement hinzu, um die Anwendung des Filters unter demselben Element im Ursprungsschema zu löschen.
+1. Wenn Sie möchten, können Sie einen neuen Filter hinzufügen, wie unter [ beschrieben](#system-filters).

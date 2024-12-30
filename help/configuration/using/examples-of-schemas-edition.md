@@ -15,9 +15,9 @@ ht-degree: 2%
 
 # Beispiele für Schemabearbeitung{#examples-of-schemas-edition}
 
-## Tabelle erweitern {#extending-a-table}
+## Erweitern einer Tabelle {#extending-a-table}
 
-Gehen Sie wie folgt vor, um die Empfängertabelle des Schemas **nms:recipient** zu erweitern:
+Gehen Sie wie folgt vor, um die **nms:recipient**-Schema-Empfängertabelle zu erweitern:
 
 1. Erstellen Sie das Erweiterungsschema (**cus:extension**) mit den folgenden Daten:
 
@@ -40,7 +40,7 @@ Gehen Sie wie folgt vor, um die Empfängertabelle des Schemas **nms:recipient** 
    </srcSchema>
    ```
 
-   In diesem Beispiel wird ein indiziertes Feld (**fidelity**) hinzugefügt und das Element **location** (das bereits im Schema **nms:recipient** vorhanden ist) wird durch ein Aufzählungsfeld (**area**) ergänzt.
+   In diesem Beispiel wird ein indiziertes Feld (**fidelity**) hinzugefügt und das Element **location** (das bereits im **nms:recipient**-Schema vorhanden ist) wird durch ein Aufzählungsfeld (**area**) ergänzt.
 
    >[!IMPORTANT]
    >
@@ -72,7 +72,7 @@ Gehen Sie wie folgt vor, um die Empfängertabelle des Schemas **nms:recipient** 
    </schema>
    ```
 
-   Das vom Datenbankaktualisierungs-Assistenten generierte SQL-Skript stellt sich wie folgt dar:
+   Das vom Assistenten zur Datenbankaktualisierung generierte SQL-Script sieht wie folgt aus:
 
    ```
    ALTER TABLE NmsRecipient ADD iFidelity INTEGER;
@@ -84,7 +84,7 @@ Gehen Sie wie folgt vor, um die Empfängertabelle des Schemas **nms:recipient** 
 
 ## Verknüpfte Sammlungstabelle {#linked-collection-table}
 
-In diesem Abschnitt wird beschrieben, wie Sie eine mit der Empfängertabelle verknüpfte Bestelltabelle mit Kardinalität 1-N erstellen.
+In diesem Abschnitt wird beschrieben, wie Sie eine mit der Empfängertabelle verknüpfte Ordnungstabelle mit Kardinalität 1-N erstellen.
 
 Quellschema der Bestelltabelle:
 
@@ -101,9 +101,9 @@ Quellschema der Bestelltabelle:
 </srcSchema>
 ```
 
-Der Tabellentyp ist **autopk** , um einen automatisch generierten Primärschlüssel zu erstellen, der vom Join des Links zur Empfängertabelle verwendet wird.
+Der Tabellentyp ist **autopk**, um einen automatisch generierten Primärschlüssel zu erstellen, der vom Join der Relation zur Empfängertabelle verwendet wird.
 
-Schema generiert:
+Erzeugtes Schema:
 
 ```
 <schema label="Order" mappingType="sql" name="order" namespace="cus" xtkschema="xtk:schema">  
@@ -134,7 +134,7 @@ Schema generiert:
 </schema>
 ```
 
-Das SQL-Skript zur Tabellenerstellung sieht wie folgt aus:
+Das SQL-Script zur Tabellenerstellung sieht wie folgt aus:
 
 ```
 CREATE TABLE CusOrder(dTotal DOUBLE PRECISION NOT NULL Default 0, iOrderId INTEGER NOT NULL Default 0, iRecipientId INTEGER NOT NULL Default 0, sNumber VARCHAR(128), tsDate TIMESTAMP Default NULL);
@@ -145,13 +145,13 @@ INSERT INTO CusOrder (iOrderId) VALUES (0);
 
 >[!NOTE]
 >
->Mit dem SQL-Befehl INSERT INTO am Ende des Skripts können Sie einen Kennungsdatensatz mit dem Wert 0 einfügen, um äußere Joins zu simulieren.
+>Mit dem SQL-Befehl INSERT INTO am Ende des Skripts können Sie einen Kennungsdatensatz einfügen, der auf 0 gesetzt ist, um äußere Joins zu simulieren.
 
 ## Erweiterungstabelle {#extension-table}
 
-Mit einer Erweiterungstabelle können Sie den Inhalt einer existierenden Tabelle in einer verknüpften Tabelle mit Kardinalität 1-1 erweitern.
+Mit einer Erweiterungstabelle können Sie den Inhalt einer vorhandenen Tabelle in einer verknüpften Tabelle mit Kardinalität 1-1 erweitern.
 
-Mit einer Erweiterungstabelle sollen Begrenzungen der Anzahl der in einer Tabelle unterstützten Felder vermieden oder der für die Daten belegte Speicherplatz optimiert werden, der bei Bedarf genutzt wird.
+Erweiterungstabellen dienen dazu, Einschränkungen bei der Anzahl der in einer Tabelle unterstützten Felder zu vermeiden oder den von den Daten belegten Speicherplatz zu optimieren, der bei Bedarf in Anspruch genommen wird.
 
 Erstellen des Erweiterungstabellenschemas (**cus:feature**):
 
@@ -165,7 +165,7 @@ Erstellen des Erweiterungstabellenschemas (**cus:feature**):
 </srcSchema>
 ```
 
-Erstellen eines Erweiterungsschemas für die Empfängertabelle, um die Relation der Kardinalität 1-1 hinzuzufügen:
+Erstellen eines Erweiterungsschemas in der Empfängertabelle, um die Relation mit der Kardinalität 1-1 hinzuzufügen:
 
 ```
 <srcSchema extendedSchema="nms:recipient" label="Recipient" mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:srcSchema">  
@@ -177,9 +177,9 @@ Erstellen eines Erweiterungsschemas für die Empfängertabelle, um die Relation 
 
 >[!NOTE]
 >
->Die Definition der Relation zwischen der Empfängertabelle und der Erweiterungstabelle muss aus dem Schema, das den Fremdschlüssel enthält, stammen.
+>Die Definition der Relation zwischen der Empfängertabelle und der Erweiterungstabelle muss aus dem Schema gefüllt werden, das den Fremdschlüssel enthält.
 
-Das SQL-Skript zum Erstellen der Erweiterungstabelle lautet wie folgt:
+Das SQL-Script zur Erstellung der Erweiterungstabelle sieht wie folgt aus:
 
 ```
 CREATE TABLE CusFeature(  iChildren NUMERIC(3) NOT NULL Default 0, iFeatureId INTEGER NOT NULL Default 0, iSingle NUMERIC(3) NOT NULL Default 0, sSpouseFirstName VARCHAR(100));
@@ -187,7 +187,7 @@ CREATE UNIQUE INDEX CusFeature_id ON CusFeature(iFeatureId);
 INSERT INTO CusFeature (iFeatureId) VALUES (0); 
 ```
 
-Das SQL-Aktualisierungsskript für die Empfängertabelle stellt sich wie folgt dar:
+Das SQL-Aktualisierungsskript der Empfängertabelle sieht wie folgt aus:
 
 ```
 ALTER TABLE NmsRecipient ADD iFeatureId INTEGER;
@@ -199,11 +199,11 @@ CREATE INDEX NmsRecipient_featureId ON NmsRecipient(iFeatureId);
 
 ## Überlauftabelle {#overflow-table}
 
-Eine Überlauftabelle ist eine Erweiterungstabelle (Kardinalität 1-1). Die Deklaration der Relation zur zu erweiternden Tabelle wird jedoch im Schema der Überlauftabelle ausgefüllt.
+Eine Überlauftabelle ist eine Erweiterungstabelle (Kardinalität 1-1), aber die Deklaration der Relation zu der zu erweiternden Tabelle wird im Schema der Überlauftabelle ausgefüllt.
 
-Die Überlauftabelle enthält den Fremdschlüssel der Tabelle, die erweitert werden soll. Die zu erweiternde Tabelle wird daher nicht geändert. Die Relation zwischen den beiden Tabellen ist der Wert des Primärschlüssels der zu erweiternden Tabelle.
+Die Überlauftabelle enthält den Fremdschlüssel für die zu erweiternde Tabelle. Die zu erweiternde Tabelle wird daher nicht geändert. Die Beziehung zwischen den beiden Tabellen entspricht dem Wert des Primärschlüssels der zu erweiternden Tabelle.
 
-Erstellen des Überlauftabellenschemas (**cus:overflow**):
+Erstellen des Overflow-Tabellenschemas (**cus:overflow**):
 
 ```
 <srcSchema label="Overflow" name="overflow" namespace="cus" xtkschema="xtk:srcSchema">  
@@ -222,22 +222,22 @@ Erstellen des Überlauftabellenschemas (**cus:overflow**):
 
 >[!NOTE]
 >
->Der Primärschlüssel der Überlauftabelle ist die Relation zur Tabelle, die erweitert werden soll ( Schema &quot;nms:recipient&quot; in unserem Beispiel).
+>Der Primärschlüssel der Überlauftabelle ist die Relation zu der zu erweiternden Tabelle (in unserem Beispiel das Schema „nms:recipient„).
 
-Das SQL-Skript zur Tabellenerstellung sieht wie folgt aus:
+Das SQL-Script zur Tabellenerstellung sieht wie folgt aus:
 
 ```
 CREATE TABLE CusOverflow(iChildren NUMERIC(3) NOT NULL Default 0, iRecipientId INTEGER NOT NULL Default 0, iSingle NUMERIC(3) NOT NULL Default 0, sSpouseFirstName VARCHAR(100));
 CREATE UNIQUE INDEX CusOverflow2_id ON CusOverflow2(iRecipientId);  
 ```
 
-## Relationstabelle {#relationship-table}
+## Beziehungstabelle {#relationship-table}
 
-Mithilfe einer Beziehungstabelle können Sie zwei Tabellen mit Kardinalität N-N verknüpfen. Diese Tabelle enthält nur die Fremdschlüssel der zu verknüpfenden Tabellen.
+Mit einer Beziehungstabelle können Sie zwei Tabellen mit Kardinalität N-N verknüpfen. Diese Tabelle enthält nur die Fremdschlüssel der zu verknüpfenden Tabellen.
 
 Beispiel einer Beziehungstabelle zwischen Gruppen (**nms:group**) und Empfängern (**nms:recipient**).
 
-Source-Schema der Beziehungstabelle:
+Source-Schema der Beziehungstabelle
 
 ```
 <srcSchema name="rcpGrpRel" namespace="cus">
@@ -253,7 +253,7 @@ Source-Schema der Beziehungstabelle:
 </srcSchema>
 ```
 
-Das generierte Schema stellt sich wie folgt dar:
+Das Schema wird wie folgt generiert:
 
 ```
 <schema mappingType="sql" name="rcpGrpRel" namespace="cus" xtkschema="xtk:schema">  
@@ -289,7 +289,7 @@ Das generierte Schema stellt sich wie folgt dar:
 </schema>
 ```
 
-Das SQL-Skript zur Tabellenerstellung sieht wie folgt aus:
+Das SQL-Script zur Tabellenerstellung sieht wie folgt aus:
 
 ```
 CREATE TABLE CusRcpGrpRel( iRcpGroupId INTEGER NOT NULL Default 0, iRecipientId INTEGER NOT NULL Default 0);
@@ -297,13 +297,13 @@ CREATE UNIQUE INDEX CusRcpGrpRel_id ON CusRcpGrpRel(iRcpGroupId, iRecipientId);
 CREATE INDEX CusRcpGrpRel_recipientId ON CusRcpGrpRel(iRecipientId);
 ```
 
-## Anwendungsbeispiel: Feld mit einer vorhandenen Referenztabelle verknüpfen {#uc-link}
+## Anwendungsfall: Verknüpfen eines Felds mit einer vorhandenen Referenztabelle {#uc-link}
 
 Dieser Anwendungsfall zeigt, wie Sie eine vorhandene Referenztabelle als Alternative zu den integrierten Adobe Campaign-Auflistungsmechanismen (enum, userEnum oder dbEnum) verwenden können.
 
-Sie können auch eine vorhandene Referenztabelle als Auflistung in Ihren Schemas verwenden. Dies kann erreicht werden, indem eine Verknüpfung zwischen einer Tabelle und der Referenztabelle erstellt und das Attribut **displayAsField=&quot;true&quot;** hinzugefügt wird.
+Sie können auch eine vorhandene Referenztabelle als Auflistung in Ihren Schemata verwenden. Dies kann durch Erstellen einer Relation zwischen einer Tabelle und der Referenztabelle sowie durch Hinzufügen des Attributs „displayAsField **„true“** erreicht werden.
 
-In diesem Beispiel enthält die Referenztabelle eine Liste von Banknamen und Kennungen:
+In diesem Beispiel enthält die Referenztabelle eine Liste von Banknamen und -kennungen:
 
 ```
 <srcSchema entitySchema="xtk:srcSchema" img="cus:bank16x16.png" label="Bank" mappingType="sql" name="bank" namespace="cus"
@@ -319,19 +319,19 @@ xtkschema="xtk:srcSchema">
 </srcSchema>
 ```
 
-Definieren Sie in jeder Tabelle, die diese Referenztabelle verwendet, einen Link und fügen Sie das Attribut **displayAsField=&quot;true&quot;** hinzu.
+Definieren Sie in jeder Tabelle, die diese Referenztabelle verwendet, eine Relation und fügen Sie das Attribut **displayAsField=„true“** hinzu.
 
 ```
 <element displayAsField="true" label="Bank" name="bank" target="cus:bank" type="link" noDbIndex="true"/>
 ```
 
-In der Benutzeroberfläche wird kein Link, sondern ein Feld angezeigt. Wenn Benutzer dieses Feld auswählen, können sie einen Wert aus der Referenztabelle auswählen oder die Funktion für die automatische Vervollständigung verwenden.
+Auf der Benutzeroberfläche wird kein Link, sondern ein Feld angezeigt. Wenn Benutzer dieses Feld auswählen, können sie einen Wert aus der Referenztabelle auswählen oder die Funktion zur automatischen Vervollständigung verwenden.
 
 ![](assets/schema-edition-ex.png)
 
-* Damit sie automatisch ausgefüllt werden kann, müssen Sie eine Compute-String in der Referenztabelle definieren.
+* Damit sie automatisch vervollständigt wird, müssen Sie einen Compute-String in der Referenztabelle definieren.
 
-* Fügen Sie das Attribut **noDbIndex=&quot;true&quot;** in die Link-Definition ein, um zu verhindern, dass Adobe Campaign einen Index für die in der Quelltabelle des Links gespeicherten Werte erstellt.
+* Fügen Sie das Attribut **noDbIndex=„true“** in der Relationsdefinition hinzu, um zu verhindern, dass Adobe Campaign einen Index für die Werte erstellt, die in der Quelltabelle der Relation gespeichert sind.
 
 ## Verwandte Themen
 

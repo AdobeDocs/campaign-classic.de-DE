@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Schemaelemente und Attribute - Parameter-Element
-description: Parameter-Element
+title: Schemaelemente und -attribute - Parameterelement
+description: Parameterelement
 feature: Schema Extension
 exl-id: 54538c3e-3232-4bf7-a09c-dacf0f072be5
 source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
@@ -11,7 +11,7 @@ ht-degree: 12%
 
 ---
 
-# Parameter-Element {#parameters--element}
+# Parameterelement {#parameters--element}
 
 ![](../../../assets/v7-only.svg)
 
@@ -23,7 +23,7 @@ parameters:==param
 
 Kein(e)
 
-## Eltern {#parents-13}
+## Übergeordnete Elemente {#parents-13}
 
 `<method>`
 
@@ -33,11 +33,11 @@ Kein(e)
 
 ## Beschreibung {#description-13}
 
-Dieses Element definiert eine Gruppe von `<parameter>` -Elementen.
+Dieses Element definiert eine Gruppe von `<parameter>`.
 
-## Verwendung und Verwendungskontext {#use-and-context-of-use-8}
+## Verwendung und Nutzungskontext {#use-and-context-of-use-8}
 
-Dieses Element ist obligatorisch, selbst für ein einzelnes untergeordnetes `<param>` -Element des `<method>` -Elements.
+Dieses Element ist obligatorisch, auch für ein einzelnes `<param>` untergeordnetes Element des `<method>`.
 
 ## Attributbeschreibung {#attribute-description-13}
 

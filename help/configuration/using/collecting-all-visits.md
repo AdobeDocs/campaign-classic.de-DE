@@ -14,23 +14,23 @@ ht-degree: 3%
 
 # Erfassen aller Besuche{#collecting-all-visits}
 
-Mit dem von Adobe Campaign bereitgestellten Webtracking-Modul können Sie die Besuche auf bestimmten Seiten der Site erfassen, die von einem Empfänger im Rahmen des Site-Trackings nach einem Klick in einer Nachricht ausgeführt werden.
+Mit dem von Adobe Campaign bereitgestellten Webtracking-Modul können Sie die Besuche auf bestimmten Seiten der Website erfassen, die von einem Empfänger im Rahmen des Site-Trackings nach einem Klick in einer Nachricht ausgeführt werden.
 
-Sie können Ihre Plattform jedoch so konfigurieren, dass alle Besuche auf Seiten mit einem Web-Tracking-Tag durch einen Benutzer erfasst werden, der der Plattform bekannt ist.
+Sie können Ihre Plattform jedoch so konfigurieren, dass alle Besuche auf Seiten mit einem Webtracking-Tag durch einen der Plattform bekannten Benutzer erfasst werden.
 
-Ein Benutzer, der der Plattform bekannt ist, ist ein Empfänger, der bereits in der Zielgruppe eines Versands war und mindestens einmal in einer empfangenen Nachricht geklickt hat. Dieser Empfänger wird anhand eines permanenten Cookies identifiziert.
+Ein der Plattform bekannter Benutzer ist ein Empfänger, der bereits in einen Versand einbezogen wurde und der mindestens einmal auf eine empfangene Nachricht geklickt hat. Zur Identifizierung dieses Empfängers wird ein permanentes Cookie verwendet.
 
 >[!IMPORTANT]
 >
->Die Adobe Campaign-Plattform ist nicht zur Verwendung als Website-Tracking-Tool vorgesehen, das über den Kontext des Besuchs der Site nach einem Klick in einer Nachricht hinausgeht. Wenn diese Option aktiviert ist, kann dies zu einer sehr hohen Nutzung von Ressourcen auf den Computern führen, auf denen Ihre Server gehostet werden (Umleitung, Anwendung und Datenbank). Es wird empfohlen, sicherzustellen, dass Ihre Hardware-Architektur diese Auslastung unterstützen kann, und zu vermeiden, dass Webtrackingtags auf den am häufigsten besuchten Seiten wie der Startseite platziert werden.
+>Die Adobe Campaign-Plattform ist nicht für die Verwendung als Website-Tracking-Tool über den Kontext des Besuchs der Website nach einem Klick in einer Nachricht hinaus vorgesehen. Wenn diese Option aktiviert ist, kann dies zu einem sehr hohen Ressourcenverbrauch auf den Computern führen, auf denen Ihre Server gehostet werden (Umleitung, Anwendung und Datenbank). Es wird empfohlen sicherzustellen, dass Ihre Hardwarearchitektur diese Last unterstützen kann, und Web-Tracking-Tags nicht auf den am häufigsten besuchten Seiten zu platzieren, z. B. auf der Startseite.
 
 ## Serverkonfiguration {#server-configuration}
 
-Die Server werden durch Überladen bestimmter Elemente der Datei **serverConf.xml** konfiguriert. Diese Dateien werden im Unterverzeichnis **conf** des Adobe Campaign-Installationsordners gespeichert.
+Die Server werden durch Überladen bestimmter Elemente der Datei **serverConf.xml“**. Diese Dateien werden im Unterverzeichnis **conf** des Adobe Campaign-Installationsverzeichnisses gespeichert.
 
-### Weiterleitungsserver {#redirection-server}
+### Weiterleitungs-Server {#redirection-server}
 
-Setzen Sie für den Weiterleitungsserver das Attribut **trackWebVisitors** des Elements **redirection** auf **true**.
+Legen Sie für den Weiterleitungsserver das Attribut **trackWebVisitors** des Elements **redirect** auf **true** fest.
 
 ```
 <redirection P3PCompactPolicy="CAO DSP COR CURa DEVa TAIa OUR BUS IND UNI COM NAV"
@@ -39,11 +39,11 @@ startRedirection="true" startRedirectionInModule="true" trackWebVisitors="true"
 trackingPassword=""
 ```
 
-## Standardkampagne konfigurieren {#configuring-a-default-matching-campaign}
+## Konfigurieren einer standardmäßigen Abgleichskampagne {#configuring-a-default-matching-campaign}
 
-Um Tracking-Informationen über Ihre Clientkonsole anzuzeigen, müssen Sie:
+Um Tracking-Informationen über Ihre Client-Konsole anzuzeigen, müssen Sie:
 
-* Erstellen Sie einen **Platzhalterversand** (das Versand-Mapping muss mit dem Mapping des Zielschemas identisch sein),
-* Geben Sie den **internen Namen** dieses Versands in die Option **NmsTracking_WebTrackingDelivery** ein.
+* Erstellen Sie **einen Pseudo-Versand** (das Versand-Mapping muss mit dem Mapping des Zielschemas identisch sein),
+* Geben Sie den **internen Namen** dieses Versands in der Option **NmsTracking_WebTrackingDelivery** ein.
 
-Alle Site-Tracking-Informationen, die nicht direkt nach einem Klick in eine E-Mail folgen, können im erstellten Platzhalterversand angezeigt werden.
+Alle Site-Tracking-Informationen, die nicht direkt nach einem Klick in einer E-Mail angezeigt werden, können im erstellten Dummy-Versand angezeigt werden.

@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Informationen zum Konfigurationshandbuch
-description: Informationen zum Konfigurationshandbuch
+title: Über das Konfigurationshandbuch
+description: Über das Konfigurationshandbuch
 feature: Configuration
 audience: configuration
 content-type: reference
@@ -14,7 +14,7 @@ ht-degree: 10%
 ---
 
 
-# Informationen zum Konfigurationshandbuch{#about}
+# Über das Konfigurationshandbuch{#about}
 
 
 

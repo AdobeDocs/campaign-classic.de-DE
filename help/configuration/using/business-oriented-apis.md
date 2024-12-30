@@ -14,43 +14,43 @@ ht-degree: 2%
 
 # Geschäftsorientierte APIs{#business-oriented-apis}
 
-Die Business-API ist für jeden Objekttyp spezifisch. Sie wirken sich auf Folgendes aus:
+Business-APIs sind für jeden Objekttyp spezifisch. Sie haben Auswirkungen auf:
 
 * Sendungen:
 
-   * Erstellen einer Versandaktion, siehe [SubmitDelivery (nms:delivery)](#submitdelivery--nms-delivery-),
-   * Versand einer Kampagne (Start, Pause, Stopp, Testversand),
-   * Abruf der Versandlogs.
+   * Informationen zum Erstellen einer Versandaktion finden Sie unter [SubmitDelivery (nms:delivery)](#submitdelivery--nms-delivery-),
+   * Senden einer Kampagne (Starten, Pausieren, Stoppen, Testversand),
+   * Abruf der Versandlogs
 
 * Workflows:
 
-   * Workflow starten,
+   * Starten eines Workflows,
    * Überprüfen von Prozessen usw.
 
-     Siehe [SOAP Methoden in JavaScript](../../configuration/using/soap-methods-in-javascript.md).
+     Siehe [SOAP-Methoden in JavaScript](../../configuration/using/soap-methods-in-javascript.md).
 
-* Content Management
-* Abonnementverwaltung, siehe [Abonnement (nms:subscription)](#subscribe--nms-subscription-) und [Abmeldung (nms:subscription)](#unsubscribe--nms-subscription-).
+* Content-Management
+* Informationen zur Abonnementverwaltung finden Sie unter [Abonnieren (nms:subscription)](#subscribe--nms-subscription-) und [Abmelden (nms:subscription)](#unsubscribe--nms-subscription-).
 * Datenprozesse: Importe, Exporte.
 
-In diesem Abschnitt wird die Verwendung der Dienste &quot;Abonnieren&quot;, &quot;Abmelden&quot;und &quot;SendenVersand&quot;beschrieben.
+In diesem Abschnitt wird die Verwendung der Services „Abonnieren“, „Abmelden“ und „SubmitDelivery“ beschrieben.
 
 >[!IMPORTANT]
 >
->Die JSAPI-Dokumentation für Campaign ](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=de) enthält zusätzliche Informationen zu SOAP-Aufrufen und zur Verwendung von JavaScript in Adobe Campaign sowie einen vollständigen Verweis auf alle in der Anwendung verwendeten Methoden und Funktionen.[
+>[Campaign JSAPI](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=de)Dokumentation) enthält zusätzliche Informationen zu SOAP-Aufrufen und zur Verwendung von JavaScript in Adobe Campaign sowie einen vollständigen Verweis auf alle Methoden und Funktionen, die in der Anwendung verwendet werden.
 
 ## Abonnieren (nms:subscription) {#subscribe--nms-subscription-}
 
-Mit diesem Dienst können Sie einen Empfänger für einen Informationsdienst anmelden und das Empfängerprofil aktualisieren.
+Mit diesem Service können Sie einen Empfänger für einen Informations-Service anmelden und das Empfängerprofil aktualisieren.
 
-Die folgenden Parameter sind erforderlich, um den Dienst aufzurufen:
+Die folgenden Parameter sind erforderlich, um den Service aufzurufen:
 
-* eine Authentifizierung,
-* interner Name des Anmeldedienstes,
-* ein XML-Dokument mit den Empfängerinformationen (aus dem Schema &quot;nms:recipient&quot;),
-* einen booleschen Wert für die Empfängererstellung, falls noch keiner vorhanden ist.
+* einer Authentifizierung,
+* Interner Name des Anmeldedienstes,
+* ein XML-Dokument, das die Empfängerinformationen enthält (aus dem Schema „nms:recipient„),
+* Ein boolescher Wert für die Empfängererstellung, falls noch kein solcher vorhanden ist.
 
-Beschreibung der Methode &quot;subscribe&quot;im Schema &quot;nms:subscription&quot;:
+Beschreibung der Methode „subscribe“ im Schema „nms:subscription“:
 
 ```
 <method name="Subscribe" static="true">
@@ -62,25 +62,25 @@ Beschreibung der Methode &quot;subscribe&quot;im Schema &quot;nms:subscription&q
 </method>
 ```
 
-Die Definition des Abstimmschlüssels muss über das Attribut _**key** im Element `<recipient>` des XML-Dokuments eingegeben werden. Der Inhalt dieses Attributs ist eine kommagetrennte XPath-Liste.
+Die Definition des Abstimmschlüssels muss über das Attribut _**key** im `<recipient>` des XML-Dokuments eingegeben werden. Der Inhalt dieses Attributs ist eine kommagetrennte XPath-Liste.
 
-Mit Ausnahme von Fehlern gibt dieser Aufruf keine Daten zurück.
+Dieser Aufruf gibt keine Daten zurück, mit Ausnahme von Fehlern.
 
 ### Beispiele {#examples}
 
-Anmeldung mit Empfänger-Abstimmschlüssel in der E-Mail-Adresse: Das XML-Eingabedokument muss auf die E-Mail-Adresse und die Definition des Schlüssels in diesem Feld verweisen.
+Abonnement mit Empfänger-Abstimmschlüssel in der E-Mail-Adresse: Das XML-Eingabedokument muss auf die E-Mail-Adresse und die Definition des Schlüssels in diesem Feld verweisen.
 
 ```
 <recipient _key="email" email= "john.doe@adobe.com"/>
 ```
 
-Aktualisieren des Empfängers sowie des Abonnements
+Aktualisieren der Empfängerin bzw. des Empfängers sowie des Abonnements
 
 ```
 <recipient _key="email, [folder-id]" email= "john.doe@adobe.com" folder-id="1305" firstName="John" lastName="Doe"/>
 ```
 
-### Beispiel SOAP Nachrichten {#example-of-soap-messages}
+### Beispiel für SOAP-Nachrichten {#example-of-soap-messages}
 
 * Abfrage:
 
@@ -112,17 +112,17 @@ Aktualisieren des Empfängers sowie des Abonnements
   </SOAP-ENV:Envelope>
   ```
 
-## Abmeldung (nms:subscription) {#unsubscribe--nms-subscription-}
+## Abo beenden (nms:subscription) {#unsubscribe--nms-subscription-}
 
-Mit diesem Dienst können Sie einen Empfänger von einem Informationsdienst abmelden und das Empfängerprofil aktualisieren.
+Mit diesem Service können Sie ein Abonnement für einen Empfänger von einem Informations-Service kündigen und das Empfängerprofil aktualisieren.
 
-Die folgenden Parameter sind erforderlich, um den Dienst aufzurufen:
+Die folgenden Parameter sind erforderlich, um den Service aufzurufen:
 
-* eine Authentifizierung,
-* Interner Name des Dienstes, von dem sich abmelden soll,
-* ein XML-Dokument mit den Empfängerinformationen (aus dem Schema &quot;nms:recipient&quot;),
+* einer Authentifizierung,
+* Interner Name des Services, für den das Abonnement beendet werden soll,
+* ein XML-Dokument, das die Empfängerinformationen enthält (aus dem Schema „nms:recipient„),
 
-Beschreibung der Methode &quot;Unsubscribe&quot;im Schema &quot;nms:subscription&quot;:
+Beschreibung der Methode „Unsubscribe“ im Schema „nms:subscription“:
 
 ```
 <method name="Unsubscribe" static="true">
@@ -133,17 +133,17 @@ Beschreibung der Methode &quot;Unsubscribe&quot;im Schema &quot;nms:subscription
 </method>
 ```
 
-Die Definition des Abstimmschlüssels muss über das Attribut _key im Element `<recipient>` des XML-Dokuments erfolgen. Der Inhalt dieses Attributs ist eine kommagetrennte XPath-Liste.
+Die Definition des Abstimmschlüssels muss über das Attribut _key im `<recipient>` des XML-Dokuments eingegeben werden. Der Inhalt dieses Attributs ist eine kommagetrennte XPath-Liste.
 
-Wenn der Empfänger nicht in der Datenbank vorhanden ist oder nicht den entsprechenden Informationsdienst abonniert hat, führt der Dienst keine Aktion durch und erzeugt keinen Fehler.
+Wenn der Empfänger nicht in der Datenbank vorhanden oder den betreffenden Informationsdienst nicht abonniert hat, führt der Dienst keine Aktion durch und erzeugt keinen Fehler.
 
 >[!NOTE]
 >
->Wenn der Dienstname nicht als Parameter angegeben ist, wird der Empfänger automatisch auf der Blockierungsliste &quot;&quot;(@blackList=&quot;1&quot;) gespeichert.
+>Wenn der Service-Name nicht als Parameter angegeben wird, wird der Empfänger automatisch auf Blockierungsliste (@blackList=„1„) angezeigt.
 
-Mit Ausnahme von Fehlern gibt dieser Aufruf keine Daten zurück.
+Dieser Aufruf gibt keine Daten zurück, mit Ausnahme von Fehlern.
 
-### Beispiel SOAP Nachrichten {#example-of-soap-messages-1}
+### Beispiel für SOAP-Nachrichten {#example-of-soap-messages-1}
 
 Abfrage:
 
@@ -175,15 +175,15 @@ Antwort:
 
 ## SubmitDelivery (nms:delivery) {#submitdelivery--nms-delivery-}
 
-Mit diesem Dienst können Sie eine Versandaktion erstellen und senden.
+Mit diesem Service können Sie eine Versandaktion erstellen und senden.
 
-Die folgenden Parameter sind erforderlich, um den Dienst aufzurufen:
+Die folgenden Parameter sind erforderlich, um den Service aufzurufen:
 
-* eine Authentifizierung,
+* einer Authentifizierung,
 * interner Name der Versandvorlage,
-* ein optionales XML-Dokument, das zusätzliche Versanddaten enthält.
+* ein optionales XML-Dokument mit zusätzlichen Versanddaten.
 
-Diese API sollte nicht vollständig aufgerufen werden, da Leistungsprobleme auftreten können.
+Diese API sollte nicht in großen Mengen aufgerufen werden, da dies zu Leistungsproblemen führen kann.
 
 Beschreibung der Methode in ihrem Schema:
 
@@ -196,15 +196,15 @@ Beschreibung der Methode in ihrem Schema:
 </method>
 ```
 
-In der Adobe Campaign-Clientkonsole muss eine Versandvorlage erstellt werden. Sie enthält die für alle Sendungen gemeinsamen Parameter (Absenderadresse oder Gültigkeitsdauer der Nachricht).
+Über die Adobe Campaign-Client-Konsole muss eine Versandvorlage erstellt werden. Sie enthält die für alle Sendungen gemeinsamen Parameter (Absenderadresse oder Gültigkeitsdauer der Nachricht).
 
-Das XML-Eingabedokument ist ein Versandvorlagenfragment, das der Struktur des Schemas &quot;nms:delivery&quot;entspricht. Sie enthält alle zusätzlichen Daten, die nicht statisch in der Versandvorlage definiert werden konnten (z. B. die Liste der Zielgruppenempfänger).
+Das XML-Eingabedokument ist ein Fragment einer Versandvorlage, das der Struktur des Schemas „nms:delivery“ entspricht. Sie enthält alle zusätzlichen Daten, die nicht statisch in der Versandvorlage definiert werden konnten (z. B. Liste der an die Zielgruppe adressierten Empfänger).
 
-Mit Ausnahme von Fehlern gibt dieser Aufruf keine Daten zurück.
+Dieser Aufruf gibt keine Daten zurück, mit Ausnahme von Fehlern.
 
-### Beispiel für XML-Dokument {#xml-document-example}
+### Beispiel eines XML-Dokuments {#xml-document-example}
 
-Dieses Beispiel basiert auf einer benutzerdefinierten Versandvorlage aus einer externen Datenquelle (in diesem Fall eine Datei). Die Konfiguration wird in der Versandvorlage ausführlich beschrieben, sodass nur der Inhalt der Datei aus dem Element `<externalsource>` gesendet werden muss, wenn der Aufruf erfolgt.
+Dieses Beispiel basiert auf einer benutzerdefinierten Versandvorlage aus einer externen Datenquelle (in diesem Fall einer Datei). Die Konfiguration ist in der Versandvorlage vollständig beschrieben. Daher muss beim Aufruf nur noch der Inhalt der Datei aus dem `<externalsource>`-Element gesendet werden.
 
 ```
 <delivery>
@@ -217,7 +217,7 @@ Dieses Beispiel basiert auf einer benutzerdefinierten Versandvorlage aus einer e
 </delivery>
 ```
 
-Wenn Sie keine Versandvorlage haben, können Sie das folgende Beispiel verwenden:
+Wenn Sie keine Versandvorlage haben, können Sie folgendes Beispiel verwenden:
 
 ```
 <delivery>

@@ -7,7 +7,7 @@ feature: Deliverability
 role: User
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
 source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '760'
 ht-degree: 100%
 

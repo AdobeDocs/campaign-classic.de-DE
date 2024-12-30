@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Schemaelemente und Attribute - Parameter-Element
-description: param-Element
+title: Schemaelemente und -attribute - param-Element
+description: Parameterelement
 feature: Schema Extension
 exl-id: d8960a2e-6900-4346-9f06-e7dd9d7b5139
 source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
@@ -11,7 +11,7 @@ ht-degree: 9%
 
 ---
 
-# param-Element {#param--element}
+# Parameterelement {#param--element}
 
 ![](../../../assets/v7-only.svg)
 
@@ -21,17 +21,17 @@ param:==help
 
 ## Attribute {#attributes-12}
 
-* @_operation (string)
-* @desc (string)
-* @enum (string)
-* @inout (string)
-* @label (string)
-* @localizable (string)
+* @_operation (Zeichenfolge)
+* @desc (Zeichenfolge)
+* @enum (Zeichenfolge)
+* @inout (Zeichenfolge)
+* @label (Zeichenfolge)
+* @localizable (Zeichenfolge)
 * @name (MNTOKEN)
 * @namespace (MNTOKEN)
-* @type (string)
+* @type (Zeichenfolge)
 
-## Eltern {#parents-12}
+## Übergeordnete Elemente {#parents-12}
 
 `<parameters>`
 
@@ -45,39 +45,39 @@ Mit diesem Element können Sie einen Parameter zum Aufrufen einer SOAP-Methode d
 
 ## Attributbeschreibung {#attribute-description-12}
 
-* **desc (string)**: Beschreibung, die das Element `<param>` betrifft.
-* **inout (string)**: Dieses Attribut definiert, ob sich der Parameter an der Eingabe (in) oder Ausgabe (out) des SOAP-Aufrufs befindet. Wenn dieses Attribut nicht angegeben ist, lautet der Standardparameter input (&quot;@inout=in&quot;).
-* **label (string)**: `<param>` label
-* **lokalisierbar (Zeichenfolge)**: Wenn es aktiviert ist, weist dieses Attribut das Sammlungs-Tool an, den Wert des Attributs &quot;@label&quot;für die Übersetzung abzurufen (interne Verwendung).
+* **desc (Zeichenfolge)**: Beschreibung, die das `<param>` betrifft.
+* **inout (Zeichenfolge)** Dieses Attribut definiert, ob sich der Parameter an der Eingabe (in) oder Ausgabe (out) des SOAP-Aufrufs befindet. Wenn dieses Attribut nicht angegeben wird, ist der Standardparameter input (“@inout=in„).
+* **label (Zeichenfolge)**: `<param>` label
+* **Localizable (String)**: Wenn es aktiviert ist, weist dieses Attribut das Sammlungs-Tool an, den Wert des Attributs &quot;@label“ für die Übersetzung abzurufen (interne Verwendung).
 * **name (MNTOKEN)**: Interner Name des `<param>`
-* **type (string)**: Dieses Attribut definiert den Typ des Elements `<param>`
+* **type (Zeichenfolge)** Dieses Attribut definiert den Typ `<param>` Elements
 
   Liste der verfügbaren Typen:
 
    * BELIEBIGE
-   * bin
-   * blob
+   * Eimer
+   * Klecks
    * Boolesch
    * Byte
    * CDATA
    * datetime
-   * datetimetz
+   * datetimets
    * datetimenotz
    * date
-   * DOMDdocument
+   * DOMDocument
    * DOMElement
    * double
-   * enum
+   * Aufzählung
    * float
-   * html
+   * HTML
    * int64
    * link
-   * long
+   * lang
    * Memo
    * MNTOKEN
    * Prozent
-   * primarykey
-   * short
+   * Primärschlüssel
+   * Short
    * Zeichenfolge
    * time
    * timespan
@@ -85,7 +85,7 @@ Mit diesem Element können Sie einen Parameter zum Aufrufen einer SOAP-Methode d
 
 ## Beispiele {#examples-9}
 
-Definition der Einstellung &quot;serviceName&quot; für den Zeichenfolgentyp:
+Definition der eingehenden Einstellung „serviceName“ vom Typ String:
 
 ```
 <param desc="Name of the information service(s) (separated with commas)"

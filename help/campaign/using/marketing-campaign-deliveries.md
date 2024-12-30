@@ -8,7 +8,7 @@ exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
 source-wordcount: '1550'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -187,8 +187,8 @@ Klicken Sie anschließend auf **[!UICONTROL Versandentwurf hinzufügen]**. Es wi
 
 Ein Versandentwurf kann Artikel, Personalisierungsfelder, Ressourcen und Angebote enthalten:
 
-* Artikel sind beispielsweise physische Dokumente, die an dieser Stelle referenziert und beschrieben und dem Versand angehängt werden.
-* Mit Personalisierungsfeldern können Sie Personalisierungselemente erstellen, die sich auf Sendungen statt auf Empfängerinnen oder Empfänger beziehen. Auf diese Weise können Werte erstellt werden, die in Sendungen mit einer bestimmten Zielgruppe verwendet werden sollen (Willkommensangebot, Rabatt usw.) Sie werden in Adobe Campaign erstellt und über den Link **[!UICONTROL Personalisierungsfelder importieren…]** in den Entwurf importiert.
+* Artikel sind beispielsweise physische Dokumente, die an dieser Stelle referenziert und beschrieben und schließlich dem Versand angehängt werden.
+* Mit Personalisierungsfeldern können Sie Personalisierungselemente erstellen, die sich auf Sendungen und nicht auf Empfänger beziehen. So ist es möglich, Werte zu erstellen, die in Sendungen für eine bestimmte Zielgruppe verwendet werden (Willkommensangebot, Rabatt usw.) Sie werden in Adobe Campaign erstellt und über den Link **[!UICONTROL Personalisierungsfelder importieren…]** in den Versandentwurf importiert.
 
   ![](assets/s_ncs_user_op_add_composition_field.png)
 

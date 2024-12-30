@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Schemaelemente und Attribute - Hilfelement
-description: help-Element
+title: Schemaelemente und -attribute - Hilfeelement
+description: Hilfe-Element
 feature: Schema Extension
 exl-id: 8207868c-25ff-4ca9-afdd-41b324c7ac0d
 source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
@@ -11,7 +11,7 @@ ht-degree: 12%
 
 ---
 
-# help-Element {#help--element}
+# Hilfe-Element {#help--element}
 
 ![](../../../assets/v7-only.svg)
 
@@ -23,9 +23,9 @@ help:==EMPTY
 
 Kein(e)
 
-## Eltern {#parents-6}
+## Übergeordnete Elemente {#parents-6}
 
-`<srcschema>` , `<element>`   ,   `<attribute>`    ,    `<enumeration>`     ,     `<value>`      ,     `<param />`      `<method />`
+`<srcschema>` , `<element>`   ,   `<attribute>`    ,    `<enumeration>`     ,     `<value>`      ,     `<param />`,      `<method />`
 
 ## Untergeordnetes Element {#children-6}
 
@@ -33,7 +33,7 @@ Kein(e)
 
 ## Beschreibung {#description-6}
 
-Mit diesem Element können Sie einen `<element>` oder einen `<attribute>` beschreiben   -Element. Sie darf nur Text enthalten und wird in XML in der Datenbank gespeichert.
+Mit diesem Element können Sie eine `<element>` oder einen `<attribute>` beschreiben   -Element. Sie darf nur Text enthalten und wird in XML in der Datenbank gespeichert.
 
 ## Attributbeschreibung {#attribute-description-6}
 

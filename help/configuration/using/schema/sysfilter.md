@@ -14,7 +14,7 @@ ht-degree: 17%
 
 ---
 
-# sysfilter-Element {#sysfilter--element}
+# sysFilter-Element {#sysfilter--element}
 
 ![](../../../assets/v7-only.svg)
 
@@ -26,7 +26,7 @@ sysFilter:==condition
 
 Kein(e)
 
-## Eltern {#parents-15}
+## Übergeordnete Elemente {#parents-15}
 
 `<element>`
 
@@ -44,7 +44,7 @@ Dieses Element hat keine Attribute.
 
 ## Beispiele {#examples-12}
 
-Definition eines Filters mit einer Bedingung für das Attribut @name :
+Definition eines Filters mit einer Bedingung für das @name:
 
 ```
 <sysFilter>

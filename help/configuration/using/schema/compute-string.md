@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Elemente und Attribute - Compute-String-Element
-description: Compute-string-Element
+description: Compute-String Element
 feature: Schema Extension
 exl-id: 8a079bb8-3f53-4144-a065-5bd402649cc7
 source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
@@ -11,7 +11,7 @@ ht-degree: 5%
 
 ---
 
-# Compute-string-Element {#compute-string--element}
+# Compute-String Element {#compute-string--element}
 
 ![](../../../assets/v7-only.svg)
 
@@ -23,7 +23,7 @@ compute-string:==EMPTY
 
 @expr
 
-## Eltern {#parents-1}
+## Übergeordnete Elemente {#parents-1}
 
 `<element>`
 
@@ -33,15 +33,15 @@ Kein(e)
 
 ## Beschreibung {#description-1}
 
-Mit dem Element `<compute-string>` können Sie eine Zeichenfolge generieren, die auf einem XTK-Ausdruck basiert, um in der Benutzeroberfläche eine &quot;integrierte&quot;Bezeichnung anzuzeigen, die auf mehreren Werten basiert.
+Mit dem `<compute-string>` können Sie eine Zeichenfolge generieren, die auf einem XTK-Ausdruck basiert, um eine auf mehreren Werten basierende „erstellte“ Kennzeichnung in der Schnittstelle anzuzeigen.
 
-## Verwendung und Verwendungskontext {#use-and-context-of-use-1}
+## Verwendung und Nutzungskontext {#use-and-context-of-use-1}
 
-Wenn kein `<compute-string>` definiert ist, wird standardmäßig ein `<compute-string>` -Element mit den Werten des Primärschlüssels im Schema eingegeben.
+Wenn kein `<compute-string>` definiert ist, wird standardmäßig ein `<compute-string>` mit den Werten des Primärschlüssels im Schema eingegeben.
 
 ## Attributbeschreibung {#attribute-description-1}
 
-* **expr (string)**: XTK- und/oder Xpath-Ausdruck
+* **expr (Zeichenfolge)**: XTK- und/oder Xpath-Ausdruck
 
 ## Beispiele {#examples-1}
 
@@ -50,7 +50,7 @@ Wenn kein `<compute-string>` definiert ist, wird standardmäßig ein `<compute-s
 <compute-string expr="ToString([@centralCatalog-id]) + ',' + ToString([@localOrgUnit-id])" />
 ```
 
-Ergebnis der für einen Empfänger berechneten Zeichenfolge: &quot;John Doe (john.doe@aol.com)&quot;:
+Ergebnis der für einen Empfänger berechneten Zeichenfolge: „Martin Müller (john.doe@aol.com)“:
 
 ```
 <element name="recipient">

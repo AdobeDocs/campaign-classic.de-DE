@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Schemaelemente und Attribute - Element verknüpfen
-description: join-Element
+title: Schemaelemente und -attribute - join-Element
+description: Verknüpfungsglied
 feature: Schema Extension
 exl-id: a7ca0300-d250-429c-8ae1-2ae7dee82cf5
 source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
@@ -11,7 +11,7 @@ ht-degree: 2%
 
 ---
 
-# join-Element {#join--element}
+# Verknüpfungsglied {#join--element}
 
 ![](../../../assets/v7-only.svg)
 
@@ -22,10 +22,10 @@ join:==EMPTY
 ## Attribute {#attributes-7}
 
 * @dstFilterExpr (Zeichenfolge)
-* @xpath-dst (string)
+* @xpath-dst (Zeichenfolge)
 * @xpath-src (Zeichenfolge)
 
-## Eltern {#parents-7}
+## Übergeordnete Elemente {#parents-7}
 
 `<element>`
 
@@ -35,33 +35,33 @@ Kein(e)
 
 ## Beschreibung {#description-7}
 
-Ermöglicht die Definition der Felder, die eine Verknüpfung zwischen SQL-Tabellen herstellen.
+Ermöglicht die Definition der Felder, die eine Verbindung zwischen SQL-Tabellen herstellen.
 
-## Verwendung und Verwendungskontext {#use-and-context-of-use-5}
+## Verwendung und Nutzungskontext {#use-and-context-of-use-5}
 
-Ein Element `<join>` kann nur verwendet werden, wenn das übergeordnete Element `<element>` vom Typ &quot;Link&quot;ist. Das bedeutet, dass für das übergeordnete Element das Attribut &quot;@type=link&quot;deklariert sein muss.
+Ein `<join>` kann nur verwendet werden, wenn das übergeordnete `<element>` vom Typ „link“ ist. Das bedeutet, dass für das übergeordnete Element das Attribut &quot;@type=link“ deklariert sein muss.
 
-Es ist nicht erforderlich, den Namen und Namespace der Remote-Tabelle im Element `<join>` anzugeben. Sie müssen im übergeordneten `<element>` angegeben werden.
+Es ist nicht erforderlich, den Namen und den Namespace der Remote-Tabelle im `<join>` anzugeben. Sie müssen im übergeordneten `<element>` angegeben werden.
 
 Standardmäßig werden Links am Ende des Schemas definiert.
 
-Wenn das Element `<join>` bei der Definition des Relationstypelements nicht angegeben ist, wird der Link automatisch in die Primärschlüssel der beiden Tabellen eingefügt.
+Wenn das `<join>` bei der Definition des Elements vom Typ Relation nicht angegeben wird, wird die Relation automatisch auf den Primärschlüsseln beider Tabellen platziert.
 
 ## Attributbeschreibung {#attribute-description-7}
 
-* **dstFilterExpr (string)**: Mit diesem Attribut können Sie die Anzahl der zulässigen Werte in der Remote-Tabelle einschränken.
-* **xpath-dst (string)**: Dieses Attribut erhält einen Xpath (@name -Attribut der Remote-Tabelle).
-* **xpath-src (string)**: Dieses Attribut erhält einen Xpath (@name -Attribut im aktuellen Schema).
+* **dstFilterExpr (Zeichenfolge)**: Mit diesem Attribut können Sie die Anzahl der zulässigen Werte in der Remote-Tabelle einschränken.
+* **xpath-dst (Zeichenfolge)**: Dieses Attribut empfängt einen Xpath (@name Attribut der Remote-Tabelle).
+* **xpath-src (Zeichenfolge)**: Dieses Attribut empfängt einen Xpath (@name Attribut im aktuellen Schema).
 
 ## Beispiele {#examples-6}
 
-Relation zwischen dem Feld &#39;email&#39; der aktuellen Tabelle und dem Feld &quot;@company-id&quot; der Remote-Tabelle:
+Relation zwischen dem Feld „E-Mail“ der aktuellen Tabelle und dem Feld &quot;@compagny-id“ der Remote-Tabelle:
 
 ```
 <join xpath-dst="@compagny-id" xpath-src="@email"/>
 ```
 
-Gefilterter Link zur Tabelle &quot;cus:Country&quot;, basierend auf dem Inhalt des Felds &quot;@country&quot;, das den Wert &quot;EN&quot; enthalten muss:
+Link zur Tabelle „cus:country“ gefiltert, basierend auf dem Inhalt des Feldes &quot;@country“, das den Wert „en“ enthalten muss:
 
 ```
 <element name="StockEN" type="link" label="MyLink" target="cus:Stock">

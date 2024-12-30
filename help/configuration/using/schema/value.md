@@ -14,7 +14,7 @@ ht-degree: 4%
 
 ---
 
-# Wert-Element {#value--element}
+# Wertelement {#value--element}
 
 ![](../../../assets/v7-only.svg)
 
@@ -24,15 +24,15 @@ value:==help
 
 ## Attribute {#attributes-16}
 
-* @applyIf (string)
-* @desc (string)
+* @applicableIf (Zeichenfolge)
+* @desc (Zeichenfolge)
 * @enabledIf (Zeichenfolge)
-* @img (string)
-* @label (string)
-* @name (string)
-* @value (string)
+* @img (Zeichenfolge)
+* @label (Zeichenfolge)
+* @name (Zeichenfolge)
+* @value (Zeichenfolge)
 
-## Eltern {#parents-16}
+## Übergeordnete Elemente {#parents-16}
 
 `<enumeration>`
 
@@ -46,13 +46,13 @@ Mit diesem Element können Sie die in einer Auflistung gespeicherten Werte defin
 
 ## Attributbeschreibung {#attribute-description-16}
 
-* **applyIf (string)**: Mit diesem Attribut können Sie einen Auflistungswert optional machen. Er erhält einen XTK-Ausdruck.
-* **desc (string)**: Beschreibung des Auflistungswerts.
-* **enabledIf (string)**: Bedingung zum Aktivieren des Auflistungswerts.
-* **img (string)**: Bild, das mit der Auflistung im Formular &quot;namespace:image_name&quot;verknüpft ist. Das Bild muss auf den Anwendungsserver importiert werden.
-* **label (string)**: Titel des Auflistungswerts.
-* **name (string)**: Interner Name des Auflistungswerts.
-* **value (string)**: Wert des Auflistungswerts. Der Werttyp wird basierend auf dem Auflistungstyp definiert. Wenn es sich bei der Auflistung um eine Auflistung vom Typ Zeichenfolge handelt, darf sie nur Zeichenfolgenwerte vom Typ Zeichenfolge enthalten.
+* **applicableIf (Zeichenfolge)**: Mit diesem Attribut können Sie einen Auflistungswert optional machen. Sie erhält einen XTK-Ausdruck.
+* **desc (Zeichenfolge)**: Beschreibung des Auflistungswerts.
+* **enabledIf (Zeichenfolge)**: Bedingung für die Aktivierung des Auflistungswerts.
+* **img (Zeichenfolge)**: Bild, das mit der Auflistung im Formular „namespace:image_name“ verknüpft ist. Das Bild muss auf den Anwendungsserver importiert werden.
+* **label (Zeichenfolge)**: Bezeichnung des Auflistungswerts.
+* **name (Zeichenfolge)**: Interner Name des Auflistungswerts.
+* **value (Zeichenfolge)**: Wert des -Auflistungswerts. Der Typ des Werts wird anhand des Typs der Auflistung definiert. Wenn die Auflistung vom Typ Zeichenfolge ist, darf sie nur Zeichenfolgenwerte enthalten.
 
 ## Beispiele {#examples-13}
 

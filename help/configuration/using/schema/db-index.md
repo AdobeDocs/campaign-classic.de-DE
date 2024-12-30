@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Elemente und Attribute - Dbindex-Element
+title: Elemente und Attribute - dbindex-Element
 description: dbindex-Element
 feature: Schema Extension
 exl-id: d7d1e427-12e0-4f07-9e01-d184dbe2ebf1
@@ -17,17 +17,17 @@ ht-degree: 1%
 
 ## Inhaltsmodell {#content-model-3}
 
-dbindex:==keyfield
+dbindex:==keyField
 
 ## Attribute {#attributes-3}
 
-* @_operation (string)
-* @applyIf (string)
-* @label (string)
+* @_operation (Zeichenfolge)
+* @applicableIf (Zeichenfolge)
+* @label (Zeichenfolge)
 * @name (MNTOKEN)
-* @unique (boolean)
+* @unique (Boolesch)
 
-## Eltern {#parents-3}
+## Übergeordnete Elemente {#parents-3}
 
 `<element>`
 
@@ -39,36 +39,36 @@ dbindex:==keyfield
 
 Mit diesem Element können Sie einen mit einer Tabelle verknüpften Index definieren.
 
-## Verwendung und Verwendungskontext {#use-and-context-of-use-3}
+## Verwendung und Nutzungskontext {#use-and-context-of-use-3}
 
-Es ist möglich, mehrere Indizes zu definieren. Ein Index kann auf ein oder mehrere Felder der Tabelle verweisen. Die Indexdeklaration folgt in der Regel der Definition des Hauptschemaelements.
+Es ist möglich, mehrere Indizes zu definieren. Ein Index kann auf ein oder mehrere Felder der Tabelle verweisen. Die Indexdeklaration folgt normalerweise der Definition des Hauptschemaelements.
 
-Die Reihenfolge der `<keyfield>` -Elemente, die in einem `<dbindex>` definiert sind, ist sehr wichtig. Das erste `<keyfield>` muss das Indexierungskriterium sein, auf dem die Abfragen hauptsächlich basieren.
+Die Reihenfolge der in einem `<dbindex>` definierten `<keyfield>` ist sehr wichtig. Die erste `<keyfield>` muss das Indexierungskriterium sein, auf dem die Abfragen hauptsächlich basieren.
 
-Der Name des Index in der Datenbank wird durch Verkettung des Tabellennamens und des Indexnamens berechnet. Beispiel: Tabellenname &quot;Sample&quot;, Namespace &quot;Cus&quot;, Indexname &quot;MyIndex&quot;-> Name des Indexfelds bei der Indexerstellung. Abfrage: &quot;CusSample_myIndex&quot;.
+Der Name des Index in der Datenbank wird berechnet, indem der Tabellenname und der Indexname verkettet werden. Beispiel: Tabellenname „Sample“, Namespace „Cus“, Indexname „MyIndex“-> Name des Indexfelds während der Indexerstellungsabfrage: „CusSample_myIndex“.
 
 ## Attributbeschreibung {#attribute-description-3}
 
-* **_operation (string)**: definiert den Schreibtyp in der Datenbank.
+* **_operation (Zeichenfolge)**: definiert den Typ des Schreibens in der Datenbank.
 
-  Dieses Attribut wird hauptsächlich bei der Erweiterung von nativen Schemata verwendet.
+  Dieses Attribut wird hauptsächlich bei der Erweiterung von vordefinierten Schemata verwendet.
 
-  Die verfügbaren Werte sind:
+  Folgende Werte sind verfügbar:
 
-   * &quot;none&quot;: Abstimmung allein. Das bedeutet, dass Adobe Campaign das Element wiederherstellt, ohne es zu aktualisieren, oder einen Fehler erzeugt, wenn es nicht vorhanden ist.
-   * &quot;insertOrUpdate&quot;: Update mit Einfügung. Das bedeutet, dass Adobe Campaign das Element aktualisiert oder erstellt, falls es nicht vorhanden ist.
-   * &quot;insert&quot;: insert. Das bedeutet, dass Adobe Campaign das Element einfügt, ohne zu überprüfen, ob es vorhanden ist.
-   * &quot;update&quot;: update. Das bedeutet, dass Adobe Campaign das Element aktualisiert oder einen Fehler erzeugt, wenn es nicht vorhanden ist.
-   * &quot;Löschen&quot;: Löschen. Dies bedeutet, dass Adobe Campaign Elemente wiederherstellt und löscht.
+   * „none“: Aussöhnung allein. Dies bedeutet, dass Adobe Campaign das Element wiederherstellt, ohne es zu aktualisieren oder einen Fehler zu erzeugen, wenn es nicht existiert.
+   * „insertOrUpdate“: Mit dem Einfügen aktualisieren. Das bedeutet, dass Adobe Campaign das Element aktualisiert oder erstellt, wenn es nicht vorhanden ist.
+   * „INSERT“: Einfügen. Dies bedeutet, dass Adobe Campaign das Element einfügt, ohne zu überprüfen, ob es vorhanden ist.
+   * „UPDATE“: Aktualisieren. Das bedeutet, dass Adobe Campaign das Element aktualisiert oder einen Fehler generiert, wenn es nicht vorhanden ist.
+   * „delete“: Löschung. Dies bedeutet, dass Adobe Campaign Elemente wiederherstellt und löscht.
 
-* **applyIf (string)**: Bedingung für die Berücksichtigung des Index - empfängt einen XTK-Ausdruck.
-* **label (string)**: Indexbezeichnung.
+* **applicableIf (Zeichenfolge)**: Bedingung für die Berücksichtigung des Index - empfängt einen XTK-Ausdruck.
+* **label (Zeichenfolge)**: Indexbezeichnung.
 * **name (MNTOKEN)**: eindeutiger Indexname.
-* **unique (boolean)**: Wenn diese Option aktiviert ist (@unique=&quot;true&quot;), garantiert das Attribut die Eindeutigkeit des Index in allen seinen Feldern.
+* **unique (boolean)**: Wenn diese Option aktiviert ist (@unique=„true„), garantiert das Attribut die Eindeutigkeit des Index in allen seinen Feldern.
 
 ## Beispiele {#examples-3}
 
-Erstellung eines Index im Feld &quot;id&quot;. (Attribut &quot;@unique&quot; in den Triggern `<dbindex>` element , die das SQL-Schlüsselwort &quot;UNIQUE&quot; hinzufügen, wenn der Index in der Datenbank erstellt wird (Abfrage)).
+Erstellung eines Index für das Feld „id“ (Das Attribut &quot;@unique“ im `<dbindex>`-Element Trigger, die das SQL-Schlüsselwort „UNIQUE“ hinzufügen, wenn der Index in der Datenbank erstellt wird (Abfrage)).
 
 ```
 <element label="Sample" name="Sample">
@@ -87,7 +87,7 @@ ALTER TABLE CusSample ALTER COLUMN iSampleId SET NOT NULL;
 CREATE UNIQUE INDEX CusSample_myIndex ON CusSample(iSampleId);
 ```
 
-Erstellung eines zusammengesetzten Index für die Felder &quot;@mail&quot; und &quot;@phoneNumber&quot;:
+Erstellen eines zusammengesetzten Index für die Felder &quot;@mail“ und &quot;@phoneNumber“:
 
 ```
 <element label="NewSchemaUser" name="NewSchemaUser">

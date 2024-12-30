@@ -14,19 +14,19 @@ ht-degree: 4%
 
 # Über Webtracking{#about-web-tracking}
 
-Zusätzlich zur standardmäßigen Verfolgung, die das Verhalten eines Internetbenutzers anzeigt, der in einer E-Mail-Nachricht auf einen Link klickt, können Sie mit der Adobe Campaign-Plattform Informationen darüber sammeln, wie Internetbenutzer auf Ihrer Website surfen. Diese Datenerfassung wird vom Webtracking-Modul durchgeführt.
+Zusätzlich zum Standard-Tracking, das das Verhalten eines Internetbenutzers anzeigt, der auf einen Link in einer E-Mail-Nachricht klickt, können Sie mit der Adobe Campaign-Plattform Informationen darüber sammeln, wie Internetbenutzer Ihre Website durchsuchen. Diese Datenerfassung wird vom Webtrackingmodul durchgeführt.
 
-Wenn ein Internetbenutzer von einem bestimmten Versand aus auf einen verfolgten Link in einer E-Mail klickt, speichert der kontaktierte Weiterleitungsserver ein Sitzungs-Cookie mit der Broadlog-Kennung (broadlogId) und der Versandkennung (deliveryId).
+Wenn ein Internetnutzer bei einem bestimmten Versand auf einen getrackten Link in einer E-Mail klickt, hinterlegt der kontaktierte Weiterleitungsserver ein Sitzungs-Cookie, das die Broadlog-Kennung (broadlogId) und die Versandkennung (deliveryId) enthält.
 
-Der Webclient sendet dieses Cookie dann jedes Mal an den Server, wenn der Benutzer eine Seite besucht, die ein Webtrackingtag enthält. Dies wird während der gesamten Sitzung fortgesetzt, d. h. bis der Web-Client geschlossen wird.
+Der Webclient sendet dieses Cookie dann jedes Mal an den Server, wenn der Benutzer eine Seite mit einem Webtracking-Tag besucht. Dies erfolgt während der gesamten Sitzung, d. h. bis der Webclient geschlossen wird.
 
-Der Weiterleitungsserver erfasst auf diese Weise die folgenden Daten:
+Der Weiterleitungs-Server erfasst auf diese Weise die folgenden Daten:
 
-* URL der angezeigten Seite über eine als Parameter gesendete Kennung,
-* den Versand, von dem aus die Webseite über das Sitzungs-Cookie besucht wurde,
-* Kennung des Internetbenutzers, der über das Sitzungs-Cookie geklickt hat,
-* zusätzliche Informationen, z. B. das generierte Geschäftsvolumen.
+* URL der aufgerufenen Seite über eine als Parameter gesendete Kennung
+* den Versand, von dem aus die Web-Seite über das Sitzungs-Cookie besucht wurde,
+* Kennung des Internetnutzers, der über das Sitzungs-Cookie geklickt hat,
+* Zusätzliche Informationen wie das generierte Geschäftsvolumen.
 
-Das folgende Diagramm zeigt die Phasen des Dialogfelds zwischen dem Client und den verschiedenen Servern.
+Das folgende Diagramm zeigt die Phasen des Dialogs zwischen dem Client und den verschiedenen Servern.
 
 ![](assets/d_ncs_integration_webtracking_structure1.png)

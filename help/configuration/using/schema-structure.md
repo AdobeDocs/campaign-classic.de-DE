@@ -15,13 +15,13 @@ ht-degree: 65%
 
 ---
 
-# Grundlegendes zur Schemastruktur {#schema-structure}
+# Schemastruktur verstehen {#schema-structure}
 
-Die grundlegende Struktur eines Schemas wird nachfolgend beschrieben.
+Die grundlegende Struktur eines Schemas wird unten beschrieben.
 
 ## Datenschemata  {#data-schema}
 
-Für einen `<srcschema>` ist die Struktur wie folgt:
+Für einen `<srcschema>` lautet die Struktur wie folgt:
 
 ```sql
 <srcSchema>
@@ -95,9 +95,9 @@ Mit dem zugehörigen Datenschema:
 </srcSchema>
 ```
 
-## Beschreibung  {#description}
+## Beschreibung {#description}
 
-Der Einstiegspunkt des Schemas ist sein Hauptelement. Es ist einfach zu identifizieren, da es denselben Namen wie das Schema hat und das Stammelement untergeordnet sein sollte. Die Beschreibung des Inhalts beginnt mit diesem Element.
+Der Einstiegspunkt des Schemas ist sein Hauptelement. Sie ist einfach zu identifizieren, da sie denselben Namen wie das Schema hat und dem Stammelement untergeordnet sein sollte. Die Beschreibung des Inhalts beginnt mit diesem Element.
 
 In unserem Beispiel wird das Hauptelement durch die folgende Zeile dargestellt:
 
@@ -105,7 +105,7 @@ In unserem Beispiel wird das Hauptelement durch die folgende Zeile dargestellt:
 <element name="recipient">
 ```
 
-Die Elemente **`<attribute>`** und **`<element>`**, die dem Hauptelement folgen, werden verwendet, um die Speicherorte und Namen der Datenelemente in der XML-Struktur zu definieren.
+Die **`<attribute>`**- und **`<element>`**, die dem Hauptelement folgen, werden verwendet, um die Speicherorte und Namen der Datenelemente in der XML-Struktur zu definieren.
 
 In unserem Beispielschema sind dies:
 
@@ -118,13 +118,13 @@ In unserem Beispielschema sind dies:
 </element>
 ```
 
-Es gelten die folgenden Regeln:
+Es gelten folgende Regeln:
 
 * Jedes **`<element>`** und **`<attribute>`** müssen mit dem Namen über das Attribut **name** identifiziert werden.
 
   >[!IMPORTANT]
   >
-  >Der Name des Elements sollte kurz sein, vorzugsweise auf Englisch, und nur Zeichen einschließen, die in XML-Benennungsregeln zulässig sind.
+  >Der Name des Elements sollte kurz sein, vorzugsweise in Englisch, und nur Zeichen enthalten, die in XML-Benennungsregeln zulässig sind.
 
 * In der XML-Struktur dürfen nur **`<element>`**-Elemente **`<attribute>`**-Elemente und **`<element>`**-Elemente enthalten.
 * Ein **`<attribute>`**-Element muss einen eindeutigen Namen innerhalb eines **`<element>`** haben.
@@ -134,7 +134,7 @@ Es gelten die folgenden Regeln:
 
 Der Datentyp wird über das Attribut **type** in den Elementen **`<attribute>`** und **`<element>`** eingegeben.
 
-Eine detaillierte Liste finden Sie in der Beschreibung des Elements [`<attribute>` ](../../configuration/using/schema/attribute.md) und des Elements [`<element>` ](../../configuration/using/schema/element.md).
+Eine detaillierte Liste ist in der Beschreibung des [`<attribute>` Elements ](../../configuration/using/schema/attribute.md) des [`<element>` Elements ](../../configuration/using/schema/element.md).
 
 Wenn dieses Attribut nicht gefüllt wird, ist **string** der Standarddatentyp, es sei denn, das Element enthält untergeordnete Elemente. Wenn es gefüllt ist, wird es nur zur hierarchischen Strukturierung der Elemente verwendet (Element **`<location>`** in unserem Beispiel).
 
@@ -151,11 +151,11 @@ Die folgenden Datentypen werden in Schemata unterstützt:
 * **datetimenotz**: Datum + Uhrzeit ohne Zeitzonendaten.
 * **timespan**: Dauer. Beispiel: Betriebszugehörigkeit.
 * **memo**: Langtextfelder (mehrere Zeilen). Beispiele: eine Beschreibung, ein Kommentar usw.
-* **uuid**: Felder &quot;uniqueidentifier&quot;, um eine GUID zu unterstützen (nur bei Microsoft SQL Server unterstützt).
+* **uuid**: „uniqueIdentifier“-Felder zur Unterstützung einer GUID (nur in Microsoft SQL Server unterstützt).
 
   >[!NOTE]
   >
-  >Um ein Feld **uuid** in einem anderen RDBMS als Microsoft SQL Server zu enthalten, muss die Funktion `the newuuid()` hinzugefügt und mit dem Standardwert ausgefüllt werden.
+  >Um ein **uuid**-Feld in einem anderen RDBMS als Microsoft SQL Server zu enthalten, muss `the newuuid()` Funktion hinzugefügt und mit ihrem Standardwert ausgefüllt werden.
 
 Im Folgenden finden Sie unser Schema mit den eingegebenen Typen:
 
@@ -172,9 +172,9 @@ Im Folgenden finden Sie unser Schema mit den eingegebenen Typen:
 </srcSchema>
 ```
 
-### Mapping der Typen von Adobe Campaign/DBMS-Daten {#mapping-the-types-of-adobe-campaign-dbms-data}
+### Zuordnen der Typen von Adobe Campaign-/DBMS-Daten {#mapping-the-types-of-adobe-campaign-dbms-data}
 
-In der folgenden Tabelle sind die Zuordnungen für die Datentypen aufgeführt, die von Adobe Campaign für die verschiedenen Datenbankverwaltungssysteme generiert wurden.
+In der folgenden Tabelle sind die Zuordnungen für die Datentypen aufgeführt, die von Adobe Campaign für die verschiedenen Datenbankverwaltungssysteme generiert werden.
 
 <table> 
  <tbody> 
@@ -186,67 +186,67 @@ In der folgenden Tabelle sind die Zuordnungen für die Datentypen aufgeführt, d
   <tr> 
    <td> String <br /> </td> 
    <td> VARCHAR(255)<br /> </td> 
-   <td> VARCHAR2 (NVARCHAR2 bei Unicode)<br /> </td> 
+   <td> VARCHAR2 (NVARCHAR2, wenn Unicode)<br /> </td> 
   </tr> 
   <tr> 
-   <td> Boolean<br /> </td> 
+   <td> Boolesch<br /> </td> 
    <td> SMALLINT<br /> </td> 
-   <td> NUMBER(3)<br /> </td> 
+   <td> ZAHL(3)<br /> </td> 
   </tr> 
   <tr> 
-   <td> Byte<br /> </td> 
+   <td> byte<br /> </td> 
    <td> SMALLINT<br /> </td> 
-   <td> NUMBER(3)<br /> </td> 
+   <td> ZAHL(3)<br /> </td> 
   </tr> 
   <tr> 
-   <td> short<br /> </td> 
+   <td> Kurz<br /> </td> 
    <td> SMALLINT<br /> </td> 
-   <td> NUMBER(5)<br /> </td> 
+   <td> ZAHL(5)<br /> </td> 
   </tr> 
   <tr> 
-   <td> Double<br /> </td> 
-   <td> DOPPELPRÄZISION<br /> </td> 
-   <td> FLOAT<br /> </td> 
+   <td> Doppelt<br /> </td> 
+   <td> DOPPELTE GENAUIGKEIT<br /> </td> 
+   <td> SCHWEBEN<br /> </td> 
   </tr> 
   <tr> 
-   <td> Long<br /> </td> 
-   <td> INTEGER<br /> </td> 
-   <td> NUMBER(10)<br /> </td> 
+   <td> Lang<br /> </td> 
+   <td> GANZZAHL<br /> </td> 
+   <td> ZAHL(10)<br /> </td> 
   </tr> 
   <tr> 
-   <td> Int64<br /> </td> 
+   <td> int64<br /> </td> 
    <td> BIGINT<br /> </td> 
-   <td> NUMBER(20)<br /> </td> 
+   <td> ZAHL(20)<br /> </td> 
   </tr> 
   <tr> 
    <td> Datum<br /> </td> 
-   <td> DATE<br /> </td> 
-   <td> DATE<br /> </td> 
+   <td> DATUM<br /> </td> 
+   <td> DATUM<br /> </td> 
   </tr> 
   <tr> 
    <td> Zeit<br /> </td> 
    <td> ZEIT<br /> </td> 
-   <td> FLOAT<br /> </td> 
+   <td> SCHWEBEN<br /> </td> 
   </tr> 
   <tr> 
-   <td> dateTime<br /> </td> 
-   <td> TIMESTAMPZ<br /> </td> 
-   <td> DATE<br /> </td> 
+   <td> Datum/Uhrzeit<br /> </td> 
+   <td> ZEITSTEMPEL<br /> </td> 
+   <td> DATUM<br /> </td> 
   </tr> 
   <tr> 
-   <td> Datetimenotz<br /> </td> 
-   <td> TIMESTAMPZ<br /> </td> 
-   <td> DATE<br /> </td> 
+   <td> datetimenotz<br /> </td> 
+   <td> ZEITSTEMPEL<br /> </td> 
+   <td> DATUM<br /> </td> 
   </tr> 
   <tr> 
-   <td> Timespan<br /> </td> 
-   <td> DOPPELPRÄZISION<br /> </td> 
-   <td> FLOAT<br /> </td> 
+   <td> timespan<br /> </td> 
+   <td> DOPPELTE GENAUIGKEIT<br /> </td> 
+   <td> SCHWEBEN<br /> </td> 
   </tr> 
   <tr> 
    <td> Memo<br /> </td> 
    <td> TEXT<br /> </td> 
-   <td> CLOB (NCLOB bei Unicode)<br /> </td> 
+   <td> CLOB (NCLOB, wenn Unicode)<br /> </td> 
   </tr> 
   <tr> 
    <td> Blob<br /> </td> 
@@ -258,7 +258,7 @@ In der folgenden Tabelle sind die Zuordnungen für die Datentypen aufgeführt, d
 
 ## Eigenschaften {#properties}
 
-Die Elemente **`<elements>`** und **`<attributes>`** des Datenschemas können mit verschiedenen Eigenschaften angereichert werden. Sie können ein Label ausfüllen, um das aktuelle Element zu beschreiben.
+Die **`<elements>`**- und **`<attributes>`** des Datenschemas können mit verschiedenen Eigenschaften angereichert werden. Sie können ein Label ausfüllen, um das aktuelle Element zu beschreiben.
 
 ### Labels und Beschreibungen {#labels-and-descriptions}
 
@@ -274,13 +274,13 @@ Die Elemente **`<elements>`** und **`<attributes>`** des Datenschemas können mi
   <attribute name="email" type="string" length="80" label="Email"/>
   ```
 
-  Der Titel wird im Eingabeformular der Adobe Campaign-Clientkonsole angezeigt:
+  Der Titel wird im Eingabeformular für die Adobe Campaign-Client-Konsole angezeigt:
 
   ![](assets/d_ncs_integration_schema_label.png)
 
 * Mit der Eigenschaft **desc** können Sie eine lange Beschreibung eingeben.
 
-  Die Beschreibung wird im Formular in der Statusleiste des Hauptfensters der Adobe Campaign-Clientkonsole angezeigt.
+  Die Beschreibung wird im Eingabeformular in der Statusleiste des Hauptfensters der Adobe Campaign-Client-Konsole angezeigt.
 
   >[!NOTE]
   >
@@ -294,9 +294,9 @@ Die Elemente **`<elements>`** und **`<attributes>`** des Datenschemas können mi
 
 ### Standardwerte {#default-values}
 
-Verwenden Sie die Eigenschaft **default** , um einen Ausdruck zu definieren, der bei der Inhaltserstellung einen Standardwert zurückgibt.
+Verwenden Sie die **default**-Eigenschaft, um einen Ausdruck zu definieren, der bei der Inhaltserstellung einen Standardwert zurückgibt.
 
-Der Wert muss ein mit der XPath-Sprache kompatibler Ausdruck sein. Weitere Informationen hierzu finden Sie unter [Verweisen auf XPath](../../configuration/using/schema-structure.md#referencing-with-xpath).
+Der Wert muss ein mit der XPath-Sprache kompatibler Ausdruck sein. Weitere Informationen hierzu finden Sie unter [Referenzieren mit XPath](../../configuration/using/schema-structure.md#referencing-with-xpath).
 
 **Beispiel**:
 
@@ -307,9 +307,9 @@ Der Wert muss ein mit der XPath-Sprache kompatibler Ausdruck sein. Weitere Infor
 
   >[!NOTE]
   >
-  >Navigieren Sie in der Adobe Campaign-Clientkonsole zum Ordner **[!UICONTROL Administration > Zähler]** des Explorers, um Zähler zu verwalten.
+  >Navigieren Sie in der Adobe Campaign-Client-Konsole zum Ordner **[!UICONTROL Administration > Zähler]** des Explorers, um die Zähler zu verwalten.
 
-Um einen Standardwert mit einem Feld zu verknüpfen, können Sie die `<default>` oder `<sqldefault>` verwenden   -Feld.
+Um einen Standardwert mit einem Feld zu verknüpfen, können Sie die `<default>` oder `<sqldefault>` verwenden   Feld.
 
 `<default>` : ermöglicht es Ihnen, das Feld beim Erstellen von Entitäten mit einem Standardwert vorauszufüllen. Der Wert wird kein SQL-Standardwert sein.
 
@@ -317,9 +317,9 @@ Um einen Standardwert mit einem Feld zu verknüpfen, können Sie die `<default>`
 
 ### Auflistungen {#enumerations}
 
-#### Aufzählung öffnen {#free-enumeration}
+#### Auflistung öffnen {#free-enumeration}
 
-Mit der Eigenschaft **userEnum** können Sie eine geöffnete Auflistung definieren, in der die über dieses Feld eingegebenen Werte gespeichert und angezeigt werden.
+Mit **Eigenschaft „userEnum** können Sie eine offene Auflistung definieren, um die in diesem Feld eingegebenen Werte zu speichern und anzuzeigen.
 
 Die Syntax sieht folgendermaßen aus:
 
@@ -331,7 +331,7 @@ Diese Werte werden in einer Dropdown-Liste im Formular angezeigt:
 
 >[!NOTE]
 >
->Navigieren Sie in der Adobe Campaign-Clientkonsole zum Ordner **[!UICONTROL Administration > Auflistungen]** des Explorers, um Auflistungen zu verwalten.
+>Navigieren Sie in der Adobe Campaign-Client-Konsole zum Ordner **[!UICONTROL Administration >]**&quot; des Explorers, um Auflistungen zu verwalten.
 
 #### Auflistung festlegen {#set-enumeration}
 
@@ -357,7 +357,7 @@ Eine Auflistung wird über das Element **`<enumeration>`** außerhalb des Haupte
 
 Die Eigenschaften der Auflistung lauten wie folgt:
 
-* **baseType**: Datentyp, der den Werten zugeordnet ist
+* **baseType**: Datentyp, der mit den Werten verknüpft ist
 * **label**: Beschreibung der Auflistung
 * **name**: Name der Auflistung
 * **default**: Standardwert der Auflistung
@@ -365,11 +365,11 @@ Die Eigenschaften der Auflistung lauten wie folgt:
 Die Werte für die Auflistung werden im Element **`<value>`** mit den folgenden Attributen deklariert:
 
 * **name**: Name des intern gespeicherten Werts
-* **label**: in der grafischen Benutzeroberfläche angezeigte Bezeichnung
+* **label**: in der grafischen Oberfläche angezeigter Titel
 
 #### dbenum-Auflistung {#dbenum-enumeration}
 
-*Mit der Eigenschaft **dbenum** können Sie eine Auflistung definieren, deren Eigenschaften denen der Eigenschaft **enum** ähneln.
+*Mit der **dbenum**-Eigenschaft können Sie eine Auflistung definieren, deren Eigenschaften denen der **enum**-Eigenschaft ähnlich sind.
 
 Das Attribut **name** speichert den Wert jedoch nicht intern, sondern speichert einen Code, mit dem Sie die betreffenden Tabellen erweitern können, ohne ihr Schema zu ändern.
 
@@ -421,7 +421,7 @@ Mit Projektion des XML-Inhalts:
 <group label="Group2"/>
 ```
 
-## Verweisen mit XPath {#referencing-with-xpath}
+## Referenzieren mit XPath {#referencing-with-xpath}
 
 Die XPath-Sprache wird in Adobe Campaign verwendet, um ein zu einem Datenschema gehörendes Element oder Attribut zu adressieren.
 
@@ -433,7 +433,7 @@ Elemente werden mit ihren Namen bezeichnet, während den Namen von Attributen ei
 
 * **@email**: wählt die E-Mail-Adresse aus,
 * **location/@city**: wählt das Attribut &quot;city&quot; unter dem Element **`<location>`** aus,
-* **../@email**: markiert die E-Mail-Adresse des übergeordneten Elements des aktuellen Elements
+* **../@email**: wählt die E-Mail-Adresse aus dem übergeordneten Element des aktuellen Elements aus,
 * **group`[1]/@label`**: wählt das Attribut &quot;label&quot; aus, das dem ersten **`<group>`**-Sammlungselement untergeordnet ist,
 * **group`[@label='test1']`**: wählt das Attribut &quot;label&quot; aus, das dem Element **`<group>`** untergeordnet ist und den Wert &quot;test1&quot; enthält.
 
@@ -448,7 +448,7 @@ Elemente werden mit ihren Namen bezeichnet, während den Namen von Attributen ei
 Es ist auch möglich, komplexe Ausdrücke wie die folgenden arithmetischen Operationen zu definieren:
 
 * **@gender+1**: fügt 1 zum Inhalt des Attributs **gender** hinzu,
-* **@email + &#39;(&#39;+@created+&#39;)&#39;**: erstellt einen String, indem der Wert der E-Mail-Adresse, die zum Erstellungsdatum hinzugefügt wurde, in Klammern gesetzt wird (für den String-Typ muss die Konstante in Anführungszeichen gesetzt werden).
+* **@email + &#39;(&#39;+@created+&#39;)&#39;**: erstellt eine Zeichenfolge unter Verwendung des Werts der E-Mail-Adresse, zu der das Erstellungsdatum zwischen Klammern hinzugefügt wird (für den Typ „Zeichenfolge“ muss die Konstante in Anführungszeichen gesetzt werden).
 
 Die Ausdrücke wurden um Funktionen auf hoher Ebene erweitert, um das Potenzial dieser Sprache zu erweitern.
 
@@ -459,8 +459,8 @@ In der Adobe Campaign-Client-Konsole können Sie über einen beliebigen Ausdruck
 **Beispiel**:
 
 * **GetDate()**: gibt das aktuelle Datum zurück,
-* **Year(@created)**: gibt das Jahr des im Attribut &quot;created&quot;enthaltenen Datums aus
-* **GetEmailDomain(@email)**: gibt die Domäne der E-Mail-Adresse zurück
+* **Year(@created)**: gibt das Jahr des Datums zurück, das im Attribut „created“ enthalten ist,
+* **GetEmailDomain(@email)**: gibt die Domain der E-Mail-Adresse zurück.
 
 ## Erstellen einer Zeichenfolge über den Compute string {#building-a-string-via-the-compute-string}
 

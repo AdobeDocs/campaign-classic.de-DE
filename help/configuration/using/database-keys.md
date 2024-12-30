@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Schlüsselverwaltung in Datenschemata
-description: Schlüsselverwaltung in Datenschemata
+description: Grundlegendes zur Schlüsselverwaltung in Datenschemata
 feature: Configuration, Instance Settings
 role: Data Engineer, Developer
 exl-id: faf63c8f-9d10-43c1-a990-91361594af9f
@@ -31,17 +31,17 @@ Ein Schlüssel wird als „Primärschlüssel“ bezeichnet, wenn er an erster St
 Die folgenden Regeln gelten für Schlüssel:
 
 * Ein Schlüssel kann auf ein oder mehrere Felder in der Tabelle verweisen
-* Für jede Schlüsseldefinition wird implizit ein eindeutiger Index deklariert. Die Erstellung eines Index für den Schlüssel kann durch Festlegen des Attributs `noDbIndex` auf &quot;true&quot;verhindert werden.
+* Für jede Schlüsseldefinition wird implizit ein eindeutiger Index deklariert. Die Erstellung eines Index für den Schlüssel kann verhindert werden, indem das Attribut `noDbIndex` auf „true“ gesetzt wird.
 
 >[!NOTE]
 >
->* Standardmäßig sind Schlüssel die Elemente, die aus dem Hauptelement des Schemas deklariert werden, nachdem Indizes definiert wurden.
+>* Standardmäßig sind Schlüssel die Elemente, die vom Hauptelement des Schemas deklariert werden, nachdem Indizes definiert wurden.
 >
->* Schlüssel werden während der Tabellenzuordnung (Standard oder FDA) erstellt, Adobe Campaign findet eindeutige Indizes.
+>* Schlüssel werden während der Tabellenzuordnung erstellt (Standard oder FDA). Adobe Campaign findet eindeutige Indizes.
 
 **Beispiel**:
 
-* Hinzufügen eines Schlüssels zur E-Mail-Adresse und Stadt:
+* Hinzufügen eines Schlüssels zur E-Mail-Adresse und zum Ort:
 
   ```sql
   <srcSchema name="recipient" namespace="cus">
@@ -124,23 +124,23 @@ Die folgenden Regeln gelten für Schlüssel:
   </schema>
   ```
 
-## Automatischer inkrementeller Schlüssel {#auto-incremental-key}
+## Automatisch inkrementeller Schlüssel {#auto-incremental-key}
 
-Der Primärschlüssel der meisten Adobe Campaign-Tabellen ist eine von der Datenbank-Engine automatisch generierte 32-Bit-Ganzzahl. Die Berechnung des Schlüsselwerts hängt von einer Sequenz ab (standardmäßig die SQL-Funktion **XtkNewId** ), die eine in der gesamten Datenbank eindeutige Zahl generiert. Der Inhalt des Schlüssels wird beim Einfügen des Datensatzes automatisch eingegeben.
+Der Primärschlüssel der meisten Adobe Campaign-Tabellen ist eine 32-Bit-Ganzzahl, die automatisch von der Datenbank-Engine generiert wird. Die Berechnung des Schlüsselwerts hängt von einer Sequenz ab (standardmäßig die SQL-Funktion **XtkNewId**), die eine in der gesamten Datenbank eindeutige Zahl generiert. Der Inhalt des Schlüssels wird beim Einfügen des Datensatzes automatisch eingegeben.
 
-Der Vorteil eines inkrementellen Schlüssels besteht darin, dass er einen nicht änderbaren technischen Schlüssel für die Joins zwischen Tabellen bereitstellt. Darüber hinaus belegt dieser Schlüssel nicht viel Speicher, da er eine Double-Byte-Ganzzahl verwendet.
+Der Vorteil eines inkrementellen Schlüssels besteht darin, dass er einen nicht veränderbaren technischen Schlüssel für die Joins zwischen Tabellen bereitstellt. Darüber hinaus benötigt dieser Schlüssel nicht viel Speicher, da er eine Doppelbyte-Ganzzahl verwendet.
 
-Sie können im Quellschema den Namen der Sequenz angeben, die mit dem Attribut **pkSequence** verwendet werden soll. Wenn dieses Attribut nicht im Quellschema angegeben ist, wird die Standardsequenz **XtkNewId** verwendet. Die Anwendung verwendet dedizierte Sequenzen für die Schemas **nms:broadLog** und **nms:trackingLog** (**NmsBroadLogId** bzw. **NmsTrackingLogId**), da dies die Tabellen sind, die die meisten Datensätze enthalten.
+Sie können im Quellschema den Namen der mit dem Attribut **pkSequence** zu verwendenden Sequenz angeben. Wenn dieses Attribut nicht im Quellschema angegeben ist, wird die **XtkNewId** Standardsequenz verwendet. Die Anwendung verwendet dedizierte Sequenzen für die **nms:broadLog**- und **nms:trackingLog**-Schemas (**NmsBroadLogId** bzw. **NmsTrackingLogId**), da dies die Tabellen sind, die die meisten Einträge enthalten.
 
-Ab ACC 18.10 ist **XtkNewId** nicht mehr der Standardwert für die Sequenz in den nativen Schemas. Sie können jetzt ein Schema erstellen oder ein vorhandenes Schema mit einer dedizierten Sequenz erweitern.
+Ab ACC 18.10 **XtkNewId** nicht mehr der Standardwert für die Sequenz in den vordefinierten Schemata. Sie können jetzt ein Schema erstellen oder ein vorhandenes Schema mit einer dedizierten Sequenz erweitern.
 
 >[!IMPORTANT]
 >
 >Beim Anlegen eines neuen Schemas oder bei einer Schema-Erweiterung müssen Sie für das gesamte Schema den gleichen Wert für die Primärschlüsselsequenz (@pkSequence) beibehalten.
 
-Eine Sequenz, auf die in einem Adobe Campaign-Schema verwiesen wird (**NmsTrackingLogId** ), muss mit einer SQL-Funktion verknüpft sein, die die Anzahl der IDs in den Parametern zurückgibt, getrennt durch Kommas. Diese Funktion muss **GetNew** XXX **Ids** heißen, wobei **XXX** der Name der Sequenz ist (**GetNewNmsTrackingLogIds** beispielsweise). Zeigen Sie die Dateien **postgres-nms.sql**, **mssql-nms.sql** oder **oracle-nms.sql** an, die mit der Anwendung im Verzeichnis **datakit/nms/eng/sql/** bereitgestellt wurden, um das Beispiel einer &quot;NmsTrackingLogId&quot;-Sequenzerstellung für jede Datenbank-Engine abzurufen.
+Eine Sequenz, auf die in einem Adobe Campaign-Schema (**NmsTrackingLogId** verwiesen wird), muss mit einer SQL-Funktion verknüpft sein, die die Anzahl der IDs in den Parametern zurückgibt, getrennt durch Kommas. Diese Funktion muss als **GetNew** XXX **Ids** bezeichnet werden, wobei **XXX** der Name der Sequenz ist (z. B **GetNewNmsTrackingLogIds**). Sehen Sie sich die **postgres-nms.sql**, **mssql-nms.sql** oder **oracle-nms.sql** an, die mit der Anwendung im Verzeichnis **datakit/nms/eng/sql/** bereitgestellt werden, um das Beispiel einer Sequenzerstellung „NmsTrackingLogId“ für jede Datenbank-Engine abzurufen.
 
-Um einen eindeutigen Schlüssel zu deklarieren, füllen Sie das Attribut **autopk** (mit dem Wert &quot;true&quot;) im Hauptelement des Datenschemas aus.
+Um einen eindeutigen Schlüssel zu deklarieren, füllen **das Attribut &quot;**&quot; (mit dem Wert „true„) im Hauptelement des Datenschemas auf.
 
 **Beispiel**:
 
@@ -172,7 +172,7 @@ Generiertes Schema:
 </schema>
 ```
 
-Zusätzlich zur Definition des Schlüssels und seines Index wurde dem erweiterten Schema ein numerisches Feld namens &quot;id&quot;hinzugefügt, das den automatisch generierten Primärschlüssel enthält.
+Zusätzlich zur Definition des Schlüssels und seines Index wurde dem erweiterten Schema ein numerisches Feld namens „id“ hinzugefügt, das den automatisch generierten Primärschlüssel enthält.
 
 >[!IMPORTANT]
 >

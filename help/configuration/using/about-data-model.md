@@ -18,29 +18,29 @@ Das konzeptionelle Datenmodell der Adobe Campaign-Datenbank besteht aus einer Re
 
 ## Übersicht {#data-model-overview}
 
-Adobe Campaign stützt sich auf eine relationale Datenbank mit Tabellen, die miteinander verknüpft sind. Die grundlegende Struktur des Adobe Campaign-Datenmodells kann wie folgt beschrieben werden:
+Adobe Campaign stützt sich auf eine relationale Datenbank, die miteinander verknüpfte Tabellen enthält. Die Grundstruktur des Adobe Campaign-Datenmodells lässt sich wie folgt beschreiben.
 
 ### Empfängertabelle {#recipient-table}
 
-Das Datenmodell beruht auf einer Haupt-Tabelle, die standardmäßig die Empfängertabelle (**NmsRecipient**) ist. Diese Tabelle ermöglicht eine Speicherung aller Marketing-Profile.
+Das Datenmodell basiert auf einer Haupttabelle, die standardmäßig die Empfängertabelle (**NmsRecipient**) ist. Diese Tabelle ermöglicht eine Speicherung aller Marketing-Profile.
 
-Weitere Informationen zur Empfängertabelle finden Sie in [diesem Abschnitt](#default-recipient-table).
+Weitere Informationen zur Empfängertabelle finden Sie [diesem Abschnitt](#default-recipient-table).
 
 ### Versandtabelle {#delivery-table}
 
-Das Datenmodell enthält auch einen Teil, in dem alle Marketing-Aktivitäten gespeichert werden. Normalerweise handelt es sich dabei um die Versandtabelle (**NmsDelivery**). Jeder Datensatz in dieser Tabelle stellt eine Versandaktion oder Versandvorlage dar. Er enthält alle erforderlichen Parameter zum Ausführen von Sendungen wie Zielgruppe, Inhalt usw.
+Das Datenmodell enthält auch einen Teil, der dem Speichern aller Marketing-Aktivitäten dient. Normalerweise handelt es sich dabei um die Versandtabelle (**NmsDelivery**). Jeder Datensatz in dieser Tabelle stellt eine Versandaktion oder Versandvorlage dar. Er enthält alle erforderlichen Parameter zum Ausführen von Sendungen wie Zielgruppe, Inhalt usw.
 
 ### Protokolltabellen {#log-tables}
 
-Ein anderer Teil des Datenmodells ermöglicht die zeitweilige Speicherung aller Logs, die mit der Ausführung der Kampagnen verbunden sind.
+Ein anderer Teil des Datenmodells ermöglicht es, vorübergehend alle Protokolle zu speichern, die mit der Ausführung der Kampagnen verbunden sind.
 
-Versand-Logs sind sämtliche Nachrichten, die über alle Kanäle hinweg an Empfänger oder Geräte gesendet werden. Die Haupttabelle Versandlogs (**NmsBroadLog**) enthält die Versandlogs aller Empfänger.
-Die Tabelle der Trackinglogs (**NmsTrackingLog**) speichert die Trackinglogs für alle Empfänger. Die Trackinglogs beziehen sich auf Reaktionen von Empfängern wie E-Mail-Öffnungen und Klicks. Jede Reaktion entspricht einem Trackinglog.
+Versand-Logs sind sämtliche Nachrichten, die über alle Kanäle hinweg an Empfänger oder Geräte gesendet werden. Die Haupttabelle der Versandlogs (**NmsBroadLog**) enthält die Versandlogs für alle Empfänger.
+Die Haupt-Trackinglog-Tabelle (**NmsTrackingLog**) speichert die Trackinglogs für alle Empfänger. Die Trackinglogs beziehen sich auf Reaktionen von Empfängern wie E-Mail-Öffnungen und Klicks. Jede Reaktion entspricht einem Trackinglog.
 Versand-Logs und Trackinglogs werden nach einem bestimmten Zeitraum gelöscht, der in Adobe Campaign angegeben und änderbar ist. Daher wird dringend empfohlen, die Logs regelmäßig zu exportieren.
 
 ### Technische Tabellen {#technical-tables}
 
-Schließlich besteht ein Teil des Datenmodells aus technischen Daten, die für den Anwendungsprozess verwendet werden, einschließlich Operatoren und Benutzerrechte (**NmsGroup**), Ordnern (**XtkFolder**).
+Schließlich besteht ein Teil des Datenmodells aus technischen Daten, die für den jeweiligen Prozess verwendet werden, einschließlich Benutzer- und Benutzerrechten (**NmsGroup**), Ordnern (**XtkFolder**).
 
 ## Verwenden der integrierten Empfängertabelle {#default-recipient-table}
 
@@ -48,31 +48,31 @@ Die integrierte Empfängertabelle in Adobe Campaign bietet einen guten Ausgangsp
 
 Die Verwendung der integrierten Empfängertabelle bietet folgende Vorteile:
 
-* Integrierte Funktionen wie Abonnements, Seed-Listen und mehr
-* Bereitstellung einer Marketing-Datenbank mit einem empfängerorientierten Datenmodell.
+* Arbeiten mit integrierten Funktionen wie Abonnements, Testadressenlisten und mehr.
+* Bereitstellen einer Marketing-Datenbank mit einem Empfänger-orientierten Datenmodell.
 * Schnellere Implementierung.
 * Einfache Wartung durch Support und Partner.
 
-Es ist jedoch möglich, die Empfängertabelle zu erweitern, aber nicht die Anzahl der Felder oder Links in der Tabelle zu reduzieren.
+Es ist jedoch möglich, die Empfängertabelle zu erweitern. Die Anzahl der Felder oder Links in der Tabelle lässt sich jedoch nicht verringern.
 
 >[!IMPORTANT]
 >
->Es wird empfohlen, Felder in der Empfängertabelle nicht zu löschen (auch wenn sie nutzlos sind), da dies zu Fehlern in den integrierten Modulen führen kann.
+>Es wird empfohlen, keine Felder in der Empfängertabelle zu löschen (auch wenn sie nutzlos sind), da dies zu Fehlern in den integrierten Modulen führen kann.
 
-Da die Empfängertabelle Teil des Produkts ist, entwickeln sich sowohl die Tabelle als auch das zugehörige Formular, sobald sich das Produkt ändert. Daher ist eine zusätzliche Wartung erforderlich, um sicherzustellen, dass alle Erweiterungen nach der Aktualisierung weiterhin gültig sind.
+Da die Empfängertabelle Teil des Produkts ist, ändern sich sowohl die Tabelle als auch die zugehörige Form, wenn sich das Produkt ändert. Daher ist zusätzliche Wartung erforderlich, um zu überprüfen, ob alle Erweiterungen nach dem Upgrade noch gültig sind.
 
-## Erweitern des Datenmodells {#extending-data-model}
+## Datenmodell erweitern {#extending-data-model}
 
 Wenn Sie mit Adobe Campaign beginnen, müssen Sie das Standarddatenmodell evaluieren, um zu prüfen, welche Tabelle am besten zur Speicherung Ihrer Marketing-Daten geeignet ist.
 
-Falls relevant, können Sie die standardmäßige Empfängertabelle mit den nativen Feldern verwenden, wie in [diesem Abschnitt](#default-recipient-table) beschrieben.
+Bei Bedarf können Sie die standardmäßige Empfängertabelle mit den vordefinierten Feldern verwenden, wie in ([ Abschnitt) ](#default-recipient-table).
 
 Bei Bedarf können Sie sie mit zwei Verfahren erweitern:
 
-* Erweitern einer vorhandenen Tabelle um neue Felder. Sie können der Empfängertabelle beispielsweise ein neues Feld „Treue“ hinzufügen.
-* Erstellen Sie eine neue Tabelle, z. B. eine &quot;Kauf&quot;-Tabelle, die alle von jedem Profil der Datenbank getätigten Käufe auflistet, und verknüpfen Sie sie mit der Empfängertabelle.
+* Erweitern einer vorhandenen Tabelle mit neuen Feldern. Sie können der Empfängertabelle beispielsweise ein neues Feld „Treue“ hinzufügen.
+* Erstellen Sie eine neue Tabelle, z. B. eine Tabelle „Einkauf“, in der alle von den einzelnen Profilen der Datenbank getätigten Käufe aufgelistet sind, und verknüpfen Sie sie mit der Empfängertabelle.
 
-Weitere Informationen zum Konfigurieren von Erweiterungsschemata zum Erweitern des konzeptionellen Datenmodells finden Sie unter [Über die Schemabearbeitung](../../configuration/using/about-schema-edition.md).
+Weitere Informationen zum Konfigurieren von Erweiterungsschemata zur Erweiterung des konzeptionellen Datenmodells finden Sie unter [Über die Schemabearbeitung](../../configuration/using/about-schema-edition.md).
 
 >[!IMPORTANT]
 >
@@ -80,41 +80,41 @@ Weitere Informationen zum Konfigurieren von Erweiterungsschemata zum Erweitern d
 
 ## Verwenden einer benutzerdefinierten Empfängertabelle {#custom-recipient-table}
 
-Beim Entwerfen Ihres Adobe Campaign-Datenmodells können Sie die integrierte Empfängertabelle ](#default-recipient-table) von [oder eine benutzerdefinierte Empfängertabelle [3} verwenden, um Ihre Marketing-Profile zu speichern.](../../configuration/using/about-custom-recipient-table.md)
+Beim Entwerfen Ihres Adobe Campaign-Datenmodells können Sie die [integrierte Empfängertabelle) verwenden ](#default-recipient-table) oder eine [benutzerdefinierte Empfängertabelle) ](../../configuration/using/about-custom-recipient-table.md), um Ihre Marketing-Profile zu speichern.
 
-Wenn Ihr Datenmodell nicht zur empfängerorientierten Struktur passt, können Sie andere Tabellen als Zielgruppendimension in Adobe Campaign einrichten. Dies kann z. B. relevant sein, wenn Sie Haushalte, Konten (wie Mobiltelefone) und Unternehmen/Sites anvisieren müssen und nicht nur Empfänger.
+Wenn Ihr Datenmodell nicht zur empfängerorientierten Struktur passt, können Sie in Adobe Campaign andere Tabellen als Zielgruppendimension einrichten. Dies kann beispielsweise relevant sein, wenn Sie Haushalte, Konten (wie Mobiltelefone) und Unternehmen/Websites anstatt nur Empfänger ansprechen möchten.
 
 >[!NOTE]
 >
->In diesem Fall müssen Sie ein neues [Zielgruppen-Mapping](../../configuration/using/target-mapping.md) erstellen.
+>In diesem Fall müssen Sie ein neues „Zielgruppen[Mapping“ ](../../configuration/using/target-mapping.md).
 
-Alle Prinzipien und Schritte, die bei der Verwendung einer benutzerdefinierten Empfängertabelle erforderlich sind, werden in [diesem Abschnitt](../../configuration/using/about-custom-recipient-table.md) beschrieben.
+Alle Prinzipien und Schritte, die bei der Verwendung einer benutzerdefinierten Empfängertabelle erforderlich sind, werden in [diesem Abschnitt) ](../../configuration/using/about-custom-recipient-table.md).
 
 Die Verwendung einer benutzerdefinierten Empfängertabelle bietet folgende Vorteile:
 
-* **Flexibles Datenmodell** - Die integrierte Empfängertabelle ist nutzlos, wenn Sie die meisten Tabellenfelder der Empfänger nicht benötigen oder wenn das Datenmodell nicht empfängerzentriert ist.
+* **Flexibles Datenmodell** - Die integrierte Empfängertabelle ist nutzlos, wenn Sie die meisten Empfängertabellenfelder nicht benötigen oder wenn das Datenmodell nicht empfängerzentriert ist.
 
-* **Skalierbarkeit** - Große Volumina erfordern für ein effizientes Design eine optimierte Tabelle mit wenigen Feldern. Die integrierte Empfängertabelle hätte zu viele nutzlose Felder, was sich auf die Leistung auswirken und die Effizienz beeinträchtigen könnte.
+* **Skalierbarkeit** - Für ein effizientes Design sind große Datenmengen mit einer optimierten Tabelle und wenigen Feldern erforderlich. Die integrierte Empfängertabelle enthält zu viele nutzlose Felder, was sich auf die Leistung auswirken und die Effizienz beeinträchtigen könnte.
 
-* **Datenspeicherort** - Wenn sich Daten in einer externen vorhandenen Marketing-Datenbank befinden, kann es zu viel Aufwand erfordern, die integrierte Empfängertabelle zu verwenden. Die Erstellung einer neuen Struktur auf der Grundlage einer vorhandenen Struktur ist einfacher.
+* **Datenspeicherort** - Wenn sich Daten in einer externen, vorhandenen Marketing-Datenbank befinden, kann es zu viel Aufwand erfordern, die integrierte Empfängertabelle zu verwenden. Die Erstellung einer neuen auf einer vorhandenen Struktur basierenden ist einfacher.
 
-* **Einfache Migration** - Es ist keine Wartung erforderlich, um zu überprüfen, ob alle Erweiterungen nach der Aktualisierung noch gültig sind.
+* **Einfache Migration** - Es ist keine Wartung erforderlich, um zu überprüfen, ob alle Erweiterungen beim Upgrade noch gültig sind.
 
 >[!IMPORTANT]
 >
->Die Verwendung einer benutzerdefinierten Empfängertabelle ist erfahrenen Benutzern vorbehalten und unterliegt gewissen Einschränkungen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../configuration/using/about-custom-recipient-table.md).
+>Die Verwendung einer benutzerdefinierten Empfängertabelle ist erfahrenen Benutzern vorbehalten und unterliegt einigen Einschränkungen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../configuration/using/about-custom-recipient-table.md).
 
 ## Verwandte Themen
 
-Weitere Informationen zum Campaign-Datenmodell finden Sie in diesen Abschnitten:
+Weitere Informationen zum Campaign-Datenmodell finden Sie in den folgenden Abschnitten:
 
-* **Beschreibung der Haupttabellen** - Weitere Informationen zur Standardbeschreibung des Campaign Classic-Datenmodells finden Sie in [diesem Abschnitt](../../configuration/using/data-model-description.md).
+* **Beschreibung der Haupttabellen** - Weitere Informationen zur standardmäßigen Campaign Classic-Datenmodellbeschreibung finden Sie [diesem Abschnitt](../../configuration/using/data-model-description.md).
 
-* **Vollständige Beschreibung jeder Tabelle** - Um auf die vollständige Beschreibung jeder Tabelle zuzugreifen, gehen Sie zu **[!UICONTROL Admin > Konfiguration > Datenschemata]**, wählen Sie eine Ressource aus der Liste aus und klicken Sie auf die Registerkarte **[!UICONTROL Dokumentation]** .
+* **Vollständige Beschreibung jeder Tabelle** - Um die vollständige Beschreibung jeder Tabelle aufzurufen, navigieren Sie zu **[!UICONTROL Admin > Konfiguration > Datenschemata]** wählen Sie eine Ressource aus der Liste und klicken Sie auf die Registerkarte **[!UICONTROL Dokumentation]**.
 
   ![](assets/data-model_documentation-tab.png)
 
 
-* **Kampagnenschemas** - Die physische und logische Struktur der in der Anwendung übertragenen Daten wird in XML beschrieben. Sie folgt einer Adobe Campaign-spezifischen Grammatik namens „Schema“. Weitere Informationen zu Adobe Campaign-Schemata finden Sie in [diesem Abschnitt](../../configuration/using/about-schema-reference.md).
+* **Campaign-Schemata** - Die physische und logische Struktur der im Programm übertragenen Daten wird in XML beschrieben. Sie folgt einer Adobe Campaign-spezifischen Grammatik namens „Schema“. Weitere Informationen zu Adobe Campaign-Schemata finden Sie [ (diesem Abschnitt](../../configuration/using/about-schema-reference.md).
 
-* **Best Practices für Datenmodelle** - Erfahren Sie in [diesem Abschnitt](../../configuration/using/data-model-best-practices.md#data-model-architecture) die Architektur des Datenmodells in Campaign und die entsprechenden Best Practices.
+* **Best Practices für Datenmodelle** - Erfahren Sie mehr über die Architektur von Campaign-Datenmodellen und die zugehörigen Best Practices in [diesem Abschnitt](../../configuration/using/data-model-best-practices.md#data-model-architecture).

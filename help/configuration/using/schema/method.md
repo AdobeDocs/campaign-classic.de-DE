@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Schemaelemente und Attribute - Methodelement
+title: Schemaelemente und -attribute - Methodenelement
 description: Methodenelement
 feature: Schema Extension
 exl-id: 0fb74318-fe09-473c-8e33-1f3afd66b4cc
@@ -17,21 +17,21 @@ ht-degree: 1%
 
 ## Inhaltsmodell {#content-model-10}
 
-Methode:==( help | Parameter)
+Method:==( Hilfe | Parameter)
 
 ## Attribute {#attributes-10}
 
-* @_operation (string)
-* @access (string)
-* @const (boolean)
-* @hidden (boolean)
-* @label (string)
-* @library (string)
+* @_operation (Zeichenfolge)
+* @access (Zeichenfolge)
+* @const (Boolesch)
+* @hidden (Boolesch)
+* @label (Zeichenfolge)
+* @library (Zeichenfolge)
 * @name (MNTOKEN)
-* @pkonly (boolean)
-* @static (boolean)
+* @pkonly (Boolesch)
+* @static (Boolesch)
 
-## Eltern {#parents-10}
+## Übergeordnete Elemente {#parents-10}
 
 `<methods>` , `<interface />`
 
@@ -42,26 +42,26 @@ Methode:==( help | Parameter)
 
 ## Beschreibung {#description-10}
 
-Mit diesem Element können Sie eine SOAP definieren.
+Mit diesem Element können Sie eine SOAP-Methode definieren.
 
-## Verwendung und Verwendungskontext {#use-and-context-of-use-7}
+## Verwendung und Nutzungskontext {#use-and-context-of-use-7}
 
-SOAP Methoden ermöglichen Anwendungsprozesse.
+SOAP-Methoden ermöglichen Anwendungsprozesse.
 
-Die &quot;@library&quot;ist für die Deklarierung einer neuen (nicht nativen) Methode erforderlich: Der Namespace und der Name, der für die Bibliothek verwendet wird, sind unabhängig vom Namespace und Namen des Schemas, in dem die Deklaration enthalten ist.
+Das &quot;@library“ ist für die Deklaration einer neuen Methode (nicht nativ) erforderlich: Der Namespace und der für die Bibliothek verwendete Name sind unabhängig vom Namespace und vom Namen des Schemas, in dem sich die Deklaration befindet.
 
 ## Attributbeschreibung {#attribute-description-10}
 
-* **access (string)**: Dieses Attribut definiert die Zugriffskontrolle für die Verwendung der Methode. Wenn dieses Attribut fehlt, ist eine Identifizierung erforderlich. Verfügbare Werte sind: &#39;anonymous&#39;, &#39;admin&#39; und &#39;sql&#39;.
-* **const (boolean)**: Wenn es aktiviert ist, bedeutet dieses Attribut, dass die deklarierte Methode die Entität ändert
-* **label (string)**: Titel der Methode.
-* **library (string)**: Diese Methode ist nicht nativ für die Anwendung. Dieses Attribut nimmt den Wert der Methodenbibliothek an, in der die Methodendefinition gefunden wird (nms:mylibrary.js).
-* **name (MNTOKEN)**: eindeutiger Methodenname.
-* **static (boolean)**: Wenn dieses Attribut aktiviert ist, gilt die Methode als autonom, alle Parameter müssen der Methode zum Zeitpunkt des Abrufs zugewiesen werden.
+* **access (Zeichenfolge)** Dieses Attribut definiert die Zugriffssteuerung für die Verwendung der Methode. Wenn dieses Attribut fehlt, ist eine Identifizierung obligatorisch. Verfügbare Werte sind: „anonym“, „admin“ und „sql“.
+* **const (Boolesch)**: Wenn es aktiviert ist, bedeutet dieses Attribut, dass die deklarierte Methode die Entität ändert
+* **label (Zeichenfolge)**: Bezeichnung der Methode.
+* **Library (String)**: Diese Methode ist nicht programmspezifisch. Dieses Attribut übernimmt den Wert der Methodenbibliothek, in der sich die Methodendefinition befindet (nms:mylibrary.js).
+* **name (MNTOKEN)**: Eindeutiger Methodenname.
+* **static (boolean)**: Wenn dieses Attribut aktiviert ist, wird die Methode als autonom betrachtet, alle Parameter müssen für die Methode beim Aufruf angegeben werden.
 
 ## Beispiele {#examples-7}
 
-Definition der vordefinierten Anmeldemethode:
+Definition der vorkonfigurierten Methode „Subscribe“:
 
 ```
  

@@ -15,12 +15,12 @@ ht-degree: 11%
 
 # Erstellen von Filtern{#creating-filters}
 
-Wie die integrierte Empfängertabelle in Adobe Campaign kann auch die neue Empfängertabelle eine Reihe vordefinierter Filter erhalten.
+Genau wie die in Adobe Campaign bereitgestellte integrierte Empfängertabelle kann die neue Empfängertabelle einen Stapel vordefinierter Filter erhalten.
 
-Diese Filter stehen im Fenster der Zielgruppenauswahl zur Verfügung und weisen die gleichen Funktionen auf wie die Empfängersegmente (unter Verwendung von Formularen zur Parametereingabe, Ordnern usw.).
+Diese Filter stehen im Zielauswahl-Fenster mit denselben Funktionen wie Segmente für Empfänger zur Verfügung (Verwendung von Formularen zur Parametereingabe, Ordnern usw.).
 
-1. Wechseln Sie zum Knoten **[!UICONTROL Administration > Konfiguration > Vordefinierte Filter]** .
+1. Wechseln Sie zum Knoten **[!UICONTROL Administration > Konfiguration > Vordefinierte Filter]**.
 1. Erstellen Sie einen neuen Filter.
-1. Geben Sie den **[!UICONTROL Titel]** des Filters ein und wählen Sie dann im Feld **[!UICONTROL Dokumenttyp]** das Schema aus, das mit der externen Empfängertabelle übereinstimmt.
-1. Erstellen Sie Ihre **[!UICONTROL Filterbedingungen]** basierend auf den Feldern Ihres Schemas.
+1. Geben Sie den **[!UICONTROL Titel]** des Filters ein und wählen Sie dann im Feld **[!UICONTROL Dokumenttyp]** das Schema aus, das der externen Empfängertabelle entspricht.
+1. Erstellen Sie **[!UICONTROL Filterbedingungen]** basierend auf den Feldern Ihres Schemas.
 1. Speichern Sie den Filter.

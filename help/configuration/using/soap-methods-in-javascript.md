@@ -14,11 +14,11 @@ ht-degree: 9%
 
 # SOAP-Methoden in JavaScript{#soap-methods-in-javascript}
 
-Dies ist die auf dem Adobe Campaign-Server ausgeführte JavaScript.
+Dies ist die JavaScript, die auf dem Adobe Campaign-Server ausgeführt wird.
 
 ## Statische Methoden {#static-methods}
 
-Der Zugriff auf statische SOAP erfolgt durch Aufruf einer Methode für das Objekt, das das Schema darstellt. Schemas sind Eigenschaften von &quot;namespace&quot;-Objekten. Bei diesen Namespaces handelt es sich um globale Variablen. Daher stellen beispielsweise xtk- oder nms-Variablen die entsprechenden Namespaces dar
+Auf statische SOAP-Methoden kann durch Aufrufen einer -Methode für das -Objekt zugegriffen werden, das das Schema darstellt. Schemata sind Eigenschaften von „namespace“-Objekten. Diese Namespaces sind globale Variablen, daher stellen beispielsweise xtk- oder nms-Variablen die entsprechenden Namespaces dar
 
 Im folgenden Beispiel wird die statische PostEvent-Methode des xtk:workflow-Schemas aufgerufen:
 
@@ -28,9 +28,9 @@ xtk.workflow.PostEvent("WKF1", "signal", "", $recipient-id='123', false)
 
 ## Nicht statische Methoden {#non-static-methods}
 
-Um nicht statische SOAP zu verwenden, muss zunächst eine Entität mit den Methoden &quot;get&quot;oder &quot;create&quot;für die entsprechenden Schemas abgerufen werden.
+Um nicht statische SOAP-Methoden zu verwenden, müssen Sie zunächst eine Entität mit den Methoden „get“ oder „create“ für die entsprechenden Schemata abrufen.
 
-Im folgenden Beispiel wird die ExecuteQuery-Methode des Schemas &quot;xtk:queryDef&quot;aufgerufen:
+Im folgenden Beispiel wird die ExecuteQuery-Methode des Schemas „xtk:queryDef“ aufgerufen:
 
 ```
 var query = xtk.queryDef.create(
@@ -49,7 +49,7 @@ for each (var w in res.workflow)
 
 ## Beispiele {#examples}
 
-* Abfrage zur Empfängertabelle mit &quot;get&quot;-Vorgang:
+* Abfrage der Empfängertabelle mit einer „get“-Operation:
 
   ```
   var query = xtk.queryDef.create(  
@@ -70,7 +70,7 @@ for each (var w in res.workflow)
   logInfo(recipient.@lastName)
   ```
 
-* Abfrage zur Empfängertabelle mit dem Vorgang &quot;select&quot;:
+* Abfrage der Empfängertabelle mit dem Vorgang „Auswählen“:
 
   ```
   var query = xtk.queryDef.create(  

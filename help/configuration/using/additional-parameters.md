@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Zusätzliche Web-Tracking-Parameter
-description: Erfahren Sie mehr über die Parameter für das Web-Tracking
+title: Zusätzliche Webtracking-Parameter
+description: Weitere Informationen zu Parametern für das Webtracking
 feature: Configuration, Instance Settings
 role: Data Engineer, Developer
 exl-id: d14d94fd-b078-4893-be84-31d37a1d50f5
@@ -12,14 +12,14 @@ ht-degree: 0%
 
 ---
 
-# Zusätzliche Web-Tracking-Parameter{#additional-parameters}
+# Zusätzliche Webtracking-Parameter{#additional-parameters}
 
-## Parameter definieren {#definition-of-parameters}
+## Definition von Parametern {#definition-of-parameters}
 
-Ihre Adobe Campaign-Plattform bietet standardmäßig zwei Webtrackingparameter vom Typ TRANSACTION :
+Ihre Adobe Campaign-Plattform bietet standardmäßig zwei Webtrackingparameter vom Typ TRANSAKTION :
 
-* **amount**: entspricht dem Transaktionsbetrag;
-* **article**: stellt die Anzahl der Elemente in einer Transaktion dar.
+* **amount**: gibt den Betrag einer Transaktion an,
+* **article**: Gibt die Anzahl der Elemente in einer Transaktion an.
 
 Diese Parameter werden im Schema **nms:webTrackingLog** definiert und sind einige der Indikatoren, die in Berichten angezeigt werden.
 
@@ -39,23 +39,23 @@ Um zusätzliche Parameter zu definieren, müssen Sie dieses Schema erweitern.
 </srcSchema>
 ```
 
-Sie können die Werte dieser Parameter anzeigen, indem Sie die Trackinglog-Liste (eines Versands oder eines Empfängers) konfigurieren.
+Sie können die Werte dieser Parameter anzeigen, indem Sie die Trackinglog-Liste (eines Versands oder Empfängers) konfigurieren.
 
 ## Konfiguration des Weiterleitungsservers {#redirection-server-configuration}
 
-In der Serverkonfiguration können Sie die maximale Zeichenanzahl definieren, die für Ihre Webtracking-Parameter berücksichtigt werden soll.
+In der Server-Konfiguration können Sie die maximale Anzahl von Zeichen definieren, die für Ihre Webtracking-Parameter berücksichtigt werden sollen.
 
 >[!IMPORTANT]
 >
->Eine Erhöhung der maximal zu berücksichtigenden Zeichenanzahl kann sich auf die Webtracking-Leistung Ihrer Plattform auswirken.
+>Eine Erhöhung der maximalen Anzahl der zu berücksichtigenden Zeichen kann sich auf die Webtracking-Leistung Ihrer Plattform auswirken.
 
-Ändern Sie dazu das Attribut **webTrackingParamSize** des Elements **`<trackinglogd>`** in der Datei **serverConf.xml**. Diese Datei wird im Unterverzeichnis **conf** des Adobe Campaign-Installationsordners gespeichert.
+Ändern Sie dazu das Attribut **webTrackingParamSize** des **`<trackinglogd>`** in der Datei **serverConf.xml**. Diese Datei wird im Unterverzeichnis **conf** des Adobe Campaign-Installationsverzeichnisses gespeichert.
 
 **Beispiel**:
 
-Der Standardwert ist 64 Zeichen. Mit diesem Wert können Sie die Standardparameter **amount** und **article** (&quot;amount=xxxxxxxxxx&amp;article=xxxxxxxx&quot;) berücksichtigen.
+Der Standardwert ist 64 Zeichen. Mit diesem Wert können Sie die Standardparameter **amount** und **article** („amount=xxxxxxxx&amp;article=xxxxxxxx„) berücksichtigen.
 
-Unter Berücksichtigung der beiden im Beispiel des Erweiterungsschemas angegebenen Parameter (Größe des Namens + Größe des Werts) können Sie die Konfiguration so ändern, dass 100 Zeichen berücksichtigt werden (&quot;amount=xxxxxxxxxx&amp;article=xxxxxxxxxxxx&amp;mode=xxxxxxxxxx&amp;code=xxxxxxx&quot;).
+Wenn Sie beide Parameter (Größe des Namens + Größe des Werts) berücksichtigen, die im obigen Beispiel für das Erweiterungsschema angegeben sind, können Sie die Konfiguration so ändern, dass 100 Zeichen berücksichtigt werden („amount=xxxxxxx&amp;article=xxxxxxx&amp;mode=xxxxxxx&amp;code=xxxxx„).
 
 ```
 <trackinglogd args="" autoStart="false" initScript="" maxCreateFileRetry="5" maxLogsSizeOnDiskMb="500"
@@ -64,25 +64,25 @@ processRestartTime="06:00:00" purgeLogsPeriod="50000" runLevel="10"
 webTrackingParamSize="64"/>
 ```
 
-Nachdem die Konfiguration geändert wurde, müssen Sie:
+Wenn die Konfiguration geändert wurde, müssen Sie:
 
-* Beenden Sie den Webserver, der das Weiterleitungsmodul hostet (Apache, IIS usw.),
-* Beenden Sie den Adobe Campaign-Server: **net stop nlserver6** in Windows, **/etc/init.d/nlserver6 stop** in Linux,
-
-  >[!NOTE]
-  >
-  >Ab Version 20.1 wird empfohlen, stattdessen den folgenden Befehl zu verwenden (für Linux): **systemctl stop nlserver**
-
-* Löschen Sie unter Linux die freigegebenen Speichersegmente mit dem Befehl **ipcrm**,
-* Starten Sie den Adobe Campaign-Server neu: **net start nlserver6** in Windows, **/etc/init.d/nlserver6 start** in Linux,
+* Beenden Sie den Webserver, der das Umleitungsmodul hostet (Apache, IIS usw.),
+* Beenden Sie den Adobe Campaign-Server: **net stop nlserver6** unter Windows, **/etc/init.d/nlserver6 stop** unter Linux,
 
   >[!NOTE]
   >
-  >Ab Version 20.1 wird empfohlen, stattdessen den folgenden Befehl zu verwenden (für Linux): **systemctl start nlserver**
+  >Ab 20.1 wird stattdessen der folgende Befehl empfohlen (für Linux): **systemctl stop nlserver**
+
+* Löschen Sie unter Linux die Segmente des geteilten Speichers mithilfe des **ipcrm**-Befehls,
+* Starten Sie den Adobe Campaign-Server neu: **net start nlserver6** unter Windows, **/etc/init.d/nlserver6 start** unter Linux,
+
+  >[!NOTE]
+  >
+  >Ab 20.1 wird empfohlen, stattdessen den folgenden Befehl zu verwenden (für Linux): **systemctl start nlserver**
 
 * Starten Sie den Webserver neu.
 
-**Beispiel**: Berücksichtigen Sie die Konfiguration unter Linux.
+**Beispiel**: unter Berücksichtigung der Konfiguration unter Linux.
 
 ```
 adobe@selma:~$ systemctl stop nlserver

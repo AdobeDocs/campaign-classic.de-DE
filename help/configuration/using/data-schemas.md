@@ -40,16 +40,16 @@ Die Vorschau generiert automatisch das erweiterte Schema:
 >
 >Beim Speichern des Quellschemas wird die Generierung des erweiterten Schemas automatisch gestartet.
 
-Wenn Sie die gesamte Struktur eines Schemas überprüfen müssen, können Sie den Vorschau -Tab verwenden. Wenn das Schema erweitert wurde, können Sie alle seine Erweiterungen visuell darstellen. Als Komplement werden auf der Registerkarte Dokumentation alle Schemaattribute und -elemente sowie deren Eigenschaften (SQL-Feld, Typ/Länge, Titel, Beschreibung) angezeigt. Der Tab Dokumentation gilt nur für erstellte Schemata. Weitere Informationen hierzu finden Sie im Abschnitt [Regenerating schemas](../../configuration/using/regenerating-schemas.md) .
+Wenn Sie die vollständige Struktur eines Schemas überprüfen müssen, können Sie die Registerkarte Vorschau verwenden. Wenn das Schema erweitert wurde, können Sie alle seine Erweiterungen visuell darstellen. Ergänzend zeigt die Registerkarte Dokumentation alle Schemaattribute und -elemente sowie deren Eigenschaften (SQL-Feld, Typ/Länge, Bezeichnung, Beschreibung) an. Die Registerkarte Dokumentation gilt nur für generierte Schemata. Weiterführende Informationen hierzu finden Sie im Abschnitt [Regenerieren ](../../configuration/using/regenerating-schemas.md) Schemata“.
 
-## Beispiel: Erstellen einer Vertragstabelle {#example--creating-a-contract-table}
+## Beispiel: Vertragstabelle erstellen {#example--creating-a-contract-table}
 
-Im folgenden Beispiel wird eine neue Tabelle für **Auftragnehmer** im Datenbankmodell der Adobe Campaign-Datenbank erstellt. In dieser Tabelle können Sie Vor- und Nachnamen sowie E-Mail-Adressen von Inhabern und Mitinhabern für jeden Vertrag speichern.
+Im folgenden Beispiel möchten wir eine neue Tabelle für (**)** Datenbankmodell der Adobe Campaign-Datenbank erstellen. In dieser Tabelle können Sie Vor- und Nachnamen sowie E-Mail-Adressen von Inhabern und Mitinhabern für jeden Vertrag speichern.
 
 Dazu müssen Sie das Schema der Tabelle erstellen und die Datenbankstruktur aktualisieren, um die entsprechende Tabelle zu erstellen. Folgende Schritte sind dazu nötig:
 
-1. Bearbeiten Sie den Knoten **[!UICONTROL Administration > Konfiguration > Datenschemata]** des Adobe Campaign-Baums und klicken Sie auf **[!UICONTROL Neu]** .
-1. Wählen Sie die Option **[!UICONTROL Neue Tabelle im Datenmodell erstellen]** und klicken Sie auf **[!UICONTROL Weiter]** .
+1. Bearbeiten Sie den Knoten **[!UICONTROL Administration > Konfiguration > Datenschemata]** in der Adobe Campaign-Struktur und klicken Sie auf **[!UICONTROL Neu]** .
+1. Wählen Sie die **[!UICONTROL Neue Tabelle im Datenmodell erstellen]** und klicken Sie auf **[!UICONTROL Weiter]** .
 
    ![](assets/s_ncs_configuration_create_new_schema.png)
 
@@ -61,7 +61,7 @@ Dazu müssen Sie das Schema der Tabelle erstellen und die Datenbankstruktur aktu
    >
    >Standardmäßig werden von Benutzern erstellte Schemata im Namespace &#39;cus&#39; gespeichert. Weitere Informationen hierzu finden Sie unter [Identifizierung eines Schemas](../../configuration/using/about-schema-reference.md#identification-of-a-schema).
 
-1. Erstellen Sie den Inhalt der Tabelle. Es wird empfohlen, den Eintragsassistenten zu verwenden, um sicherzustellen, dass keine Einstellungen fehlen. Klicken Sie dazu auf **[!UICONTROL Einfügen]** und wählen Sie die Art der Einstellung, die hinzugefügt werden soll.
+1. Erstellen Sie den Inhalt der Tabelle. Es wird empfohlen, den Einstiegsassistenten zu verwenden, um sicherzustellen, dass keine Einstellungen fehlen. Klicken Sie dazu auf **[!UICONTROL Einfügen]** und wählen Sie die Art der Einstellung, die hinzugefügt werden soll.
 
    ![](assets/s_ncs_configuration_create_new_content.png)
 
@@ -83,7 +83,7 @@ Dazu müssen Sie das Schema der Tabelle erstellen und die Datenbankstruktur aktu
    </srcSchema>
    ```
 
-   Fügen Sie den Vertragstyp hinzu und fügen Sie einen Index auf die Vertragsnummer ein.
+   Fügen Sie den Vertragstyp hinzu und platzieren Sie einen Index auf der Vertragsnummer.
 
    ```
    <srcSchema _cs="Contracts (cus)" desc="Active contracts" entitySchema="xtk:srcSchema" img="ncm:channels.png"
@@ -113,7 +113,7 @@ Dazu müssen Sie das Schema der Tabelle erstellen und die Datenbankstruktur aktu
    </srcSchema>
    ```
 
-1. Speichern Sie das Schema, um die Struktur zu erstellen:
+1. Speichern Sie das Schema, um die Struktur zu generieren:
 
    ![](assets/s_ncs_configuration_structure.png)
 

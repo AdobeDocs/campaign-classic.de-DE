@@ -14,12 +14,12 @@ ht-degree: 10%
 
 # Struktur eines Datenschemas{#structure-of-a-data-schema}
 
-Die Struktur eines Datenschemas wird in Form einer Baumstruktur dargestellt. Um es grafisch in der Adobe Campaign-Clientkonsole anzuzeigen, wählen Sie das Zielschema aus und klicken Sie auf die Unterregisterkarte **[!UICONTROL Struktur]** .
+Die Struktur eines Datenschemas wird in Form einer Baumstruktur angezeigt. Um es grafisch in der Adobe Campaign-Client-Konsole anzuzeigen, wählen Sie das Zielschema aus und klicken Sie auf die Unterregisterkarte **[!UICONTROL Struktur]**.
 
 ![](assets/d_ncs_integration_schema_arbo.png)
 
-Standardmäßig werden die Felder zuerst angezeigt (aktiv, aktiviert usw.) und in alphabetischer Reihenfolge. Die strukturierenden Elemente kommen als Nächstes (Postanschrift, Ort) und schließlich als Links (E-Mail-Informationen, Ordner usw.).
+Standardmäßig werden die Felder zuerst (Aktiv, Aktiviert usw.) und in alphabetischer Reihenfolge angezeigt. Als Nächstes folgen die Strukturierungselemente (Postanschrift, Standort) und schließlich die Links (E-Mail-Informationen, Ordner usw.).
 
-Primäre Schlüssel werden durch einen roten Schlüssel identifiziert, Fremdschlüssel durch einen gelben Schlüssel.
+Primäre Schlüssel werden durch einen roten Schlüssel und Fremdschlüssel durch einen gelben Schlüssel identifiziert.
 
-Links werden grafisch unterschieden, je nachdem, ob sie zur Tabelle gehören. Diejenigen, die von der Tabelle ausgehend beginnen, d. h. die den Fremdschlüssel in der Tabelle haben, werden zuerst angezeigt (E-Mail-Informationen, Ordner, Land). Sammlungslinks &quot;Umkehren&quot;(Abonnements, Bestellungen usw.) werden am Ende angezeigt.
+Relationen werden grafisch danach unterschieden, ob sie zur Tabelle gehören. Diejenigen, die von der Tabelle ausgehen, d. h. die den Fremdschlüssel in der Tabelle haben, werden zuerst angezeigt (E-Mail-Informationen, Ordner, Land). Sammlungslinks, die den Status „umgekehrt“ haben (Abonnement, Bestellungen usw.) werden am Ende angezeigt.

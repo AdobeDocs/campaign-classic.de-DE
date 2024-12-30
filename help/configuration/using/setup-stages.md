@@ -14,27 +14,27 @@ ht-degree: 2%
 
 # Einrichtungsschritte{#setup-stages}
 
-Das Grundprinzip ist das Einfügen von Web-Tracking-Tags in bestimmte Seiten Ihrer Website.
+Das Grundprinzip ist das Einfügen von Webtracking-Tags in bestimmte Seiten Ihrer Website.
 
 Es gibt zwei Arten von Tags:
 
-* **WEB**: Dieses Tag teilt Ihnen mit, ob die Seite besucht wurde.
-* **TRANSAKTION**: funktioniert wie ein Web-Tag, bietet jedoch die Möglichkeit, Informationen zum generierten Geschäftsvolumen hinzuzufügen, z. B. Transaktionsbetrag, Anzahl der gekauften Artikel usw.
+* **WEB**: Dieses Tag gibt an, ob die Seite besucht wurde.
+* **TRANSACTION**: Funktioniert wie ein Web-Tag, aber mit der Möglichkeit, Informationen über das generierte Geschäftsvolumen hinzuzufügen, z. B. (Transaktionsbetrag, Anzahl der gekauften Artikel usw.).
 
 Gehen Sie wie folgt vor, um diese Tags einzurichten:
 
-1. Identifizieren Sie die Seiten, die Sie verfolgen möchten, und bestimmen Sie deren Typ (WEB oder TRANSACTION).
-1. Ermitteln Sie, welche zusätzlichen Informationen Sie erfassen möchten, und erweitern Sie das Schema **nms:webTrackingLog** mit der Beschreibung dieser Informationen. Standardmäßig kann dieses Schema die Transaktionsmengen und die Anzahl der Elemente pro Transaktion speichern.
+1. Identifizieren Sie die Seiten, die Sie verfolgen möchten, und bestimmen Sie deren Typ (WEB oder TRANSAKTION).
+1. Legen Sie fest, welche zusätzlichen Informationen erfasst werden sollen, und erweitern Sie das **nms:webTrackingLog**-Schema mit der Beschreibung dieser Informationen. Standardmäßig kann dieses Schema die Transaktionsbeträge und die Anzahl der Elemente pro Transaktion speichern.
 1. Erstellen der Webtracking-Tags. Dazu gibt es zwei Möglichkeiten:
 
-   * Fügen Sie die URLs, die diesen Seiten entsprechen, in Ihre Adobe Campaign-Plattform ein, generieren Sie die zugehörigen Web-Tracking-Tags und extrahieren Sie sie (aus dem Knoten **[!UICONTROL Kampagnenausführung>Ressourcen > Web-Tracking-Tags]** der Clientkonsole).
-   * Erstellen Sie die Webtrackingtags selbst im Modus &quot;On-the-fly-Erstellung&quot;: Die den Seiten entsprechenden URLs werden automatisch in Ihre Adobe Campaign-Plattform eingefügt.
+   * Fügen Sie die URLs für diese Seiten in Ihre Adobe Campaign-Plattform ein und generieren und extrahieren Sie dann die zugehörigen Webtracking-Tags (aus dem Knoten **[!UICONTROL Kampagnenausführung>Ressourcen>]**-Tags der Client-Konsole).
+   * Erstellen Sie die Webtracking-Tags selbst im Modus „On-the-fly-Erstellung“: Die URLs zu diesen Seiten werden automatisch in Ihre Adobe Campaign-Plattform eingefügt.
 
-1. Fügen Sie diese Tags statisch oder dynamisch zu den Seiten hinzu, die Sie verfolgen möchten.
+1. Fügen Sie diese Tags den Seiten, die Sie verfolgen möchten, statisch oder dynamisch hinzu.
 
    >[!NOTE]
    >
-   >Alle WEBtypen-Tags können so hinzugefügt werden, wie sie zu den Seiten Ihrer Site gehören. TRANSAKTIONS-Tags müssen dynamisch geändert oder hinzugefügt werden, um zusätzliche Informationen (Menge, Elemente usw.) zu enthalten.
+   >Alle WEB-artigen Tags können so wie auf den Seiten Ihrer Site hinzugefügt werden. TRANSAKTIONS-Tags müssen dynamisch geändert oder hinzugefügt werden, damit sie die zusätzlichen Informationen (Betrag, Elemente usw.) enthalten.
 
 **Beispiel**:
 

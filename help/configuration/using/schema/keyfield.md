@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Schemaelemente und Attribute - keyfield-Element
-description: keyfield-Element
+title: Schemaelemente und -attribute - keyField-Element
+description: Schlüsselfeldelement
 feature: Schema Extension
 exl-id: fb0862f9-5dcc-49f2-b99b-9822aaf3a680
 source-git-commit: fd5e4bbc87a48f029a09b14ab1d927b9afe4ac52
@@ -11,7 +11,7 @@ ht-degree: 4%
 
 ---
 
-# keyfield-Element {#keyfield--element}
+# Schlüsselfeldelement {#keyfield--element}
 
 ![](../../../assets/v7-only.svg)
 
@@ -24,7 +24,7 @@ keyfield:==EMPTY
 * @xlink (MNTOKEN)
 * @xpath (MNTOKEN)
 
-## Eltern {#parents-9}
+## Übergeordnete Elemente {#parents-9}
 
 `<key>` , `<dbindex />`
 
@@ -38,12 +38,12 @@ Dieses Element definiert die Felder, die in einen Index oder einen Schlüssel in
 
 ## Attributbeschreibung {#attribute-description-9}
 
-* **xlink (MNTOKEN)**: Ermöglicht es Ihnen, automatisch auf Fremdschlüssel zu verweisen, die im Join für eine Beziehungstabelle definiert sind (N-N-Link).
-* **xpath (MNTOKEN)**: Definition eines Index oder eines Schlüssels für ein `<attribute>` -Element. Dieses Attribut erhält einen Xpath , der den Pfad zum Schemaattribut definiert, das den Schlüssel oder den Index definiert.
+* **xlink (MNTOKEN)**: ermöglicht die automatische Referenzierung von Fremdschlüsseln, die im Join für eine Beziehungstabelle definiert sind (N-N-Link).
+* **xpath (MNTOKEN)**: Definition eines Index oder Schlüssels für ein `<attribute>`. Dieses Attribut erhält einen XPath, der den Pfad zum Schemaattribut definiert, das den Schlüssel oder den Index definiert.
 
 ## Beispiele {#examples-}
 
-Auswahl des Felds &quot;sName&quot;in einem Index mit Xpath auf &quot;@name&quot;:
+Auswahl des Felds „sName“ in einem Index mit einem Xpath zu &quot;@name“:
 
 ```
 <keyfield xpath="@name"/>

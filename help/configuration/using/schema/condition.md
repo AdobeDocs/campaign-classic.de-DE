@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Schemaelemente und Attribute - Bedingungselement
+title: Schemaelemente und -attribute - Bedingungselement
 description: Bedingungselement
 feature: Schema Extension
 exl-id: 71e98d45-3660-4d86-a5ca-8e55ae5896eb
@@ -17,15 +17,15 @@ ht-degree: 5%
 
 ## Inhaltsmodell {#content-model-2}
 
-Bedingung:==EMPTY
+condition:==EMPTY
 
 ## Attribute {#attributes-2}
 
 * @boolOperator (Zeichenfolge)
 * @enabledIf (Zeichenfolge)
-* @expr (string)
+* @expr (Zeichenfolge)
 
-## Eltern {#parents-2}
+## Übergeordnete Elemente {#parents-2}
 
 `<sysfilter>`
 
@@ -35,17 +35,17 @@ Kein(e)
 
 ## Beschreibung {#description-2}
 
-In diesem Element können Sie eine Filterbedingung definieren.
+Mit diesem Element können Sie eine Filterbedingung definieren.
 
-## Verwendung und Verwendungskontext {#use-and-context-of-use-2}
+## Verwendung und Nutzungskontext {#use-and-context-of-use-2}
 
-Ein `<sysfiler>` -Element kann mehrere Filterbedingungen enthalten.
+Ein `<sysfiler>` kann mehrere Filterbedingungen enthalten.
 
 ## Attributbeschreibung {#attribute-description-2}
 
-* **boolOperator (Zeichenfolge)**: Wenn mehrere `<conditions>` innerhalb desselben `<sysfilter>`-Elements definiert sind, können Sie sie mit diesem Attribut kombinieren. Standardmäßig ist die logische Verknüpfung zwischen `<condition>` -Elementen &quot;AND&quot;. Mit dem Attribut &quot;@boolOperator&quot; können Sie Links vom Typ &quot;OR&quot; und &quot;AND&quot; kombinieren.
+* **boolOperator (Zeichenfolge)**: Wenn mehrere `<conditions>` innerhalb desselben `<sysfilter>` definiert sind, ermöglicht Ihnen dieses Attribut das Kombinieren. Standardmäßig lautet die logische Verknüpfung zwischen `<condition>` Elementen „AND“. Mit dem Attribut &quot;@boolOperator“ können Sie Links vom Typ „OR“ und „AND“ kombinieren.
 * **enabledIf (Zeichenfolge)**: Bedingungsaktivierungstest.
-* **expr (string)**: ein XTK-Ausdruck.
+* **expr (Zeichenfolge)**: ein XTK-Ausdruck.
 
 ## Beispiele {#examples-2}
 
