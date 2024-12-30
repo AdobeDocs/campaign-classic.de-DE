@@ -1,13 +1,13 @@
 ---
 product: campaign
-title: Personalisierungsfelder
+title: 'Personalisierungsfelder '
 description: Erfahren Sie, wie Sie Personalisierungsfelder verwenden
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Personalization
 role: User
 exl-id: 67fd9a67-cb05-46cd-acd5-e42fde6f4d4f
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1070'
 ht-degree: 100%
 

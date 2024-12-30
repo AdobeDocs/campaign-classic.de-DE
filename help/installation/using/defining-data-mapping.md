@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Externes Daten-Mapping definieren
-description: Erfahren Sie, wie Sie Daten in einer externen Datenbank zuordnen.
+title: Definieren der externen Datenzuordnung
+description: Erfahren Sie, wie Sie Daten in einer externen Datenbank zuordnen
 feature: Installation, Instance Settings
 exl-id: a7253ca7-47e5-4def-849d-3ce1c9b948fb
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
@@ -11,7 +11,7 @@ ht-degree: 91%
 
 ---
 
-# Externes Daten-Mapping definieren {#defining-data-mapping}
+# Definieren der externen Datenzuordnung {#defining-data-mapping}
 
 
 

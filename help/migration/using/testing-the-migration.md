@@ -24,13 +24,13 @@ ht-degree: 0%
 
 Je nach Konfiguration gibt es mehrere Möglichkeiten, Migrationstests durchzuführen.
 
-Sie sollten über eine Test-/Entwicklungsumgebung verfügen, um Migrationstests durchzuführen. Adobe Campaign-Umgebungen unterliegen einer Lizenz: Überprüfen Sie Ihren Lizenzvertrag oder kontaktieren Sie Ihren Adobe-Support-Mitarbeiter.
+Sie sollten über eine Test-/Entwicklungsumgebung verfügen, um Migrationstests durchzuführen. Adobe Campaign-Umgebungen sind lizenzpflichtig: Überprüfen Sie Ihren Lizenzvertrag oder wenden Sie sich an den Adobe-Support.
 
-1. Stoppen Sie alle laufenden Entwicklungen und übertragen Sie sie in die Produktionsumgebung.
+1. Halten Sie alle laufenden Entwicklungen an und übertragen Sie sie in die Produktionsumgebung.
 1. Erstellen Sie eine Sicherungskopie der Datenbank der Entwicklungsumgebung.
 1. Beenden Sie alle Adobe Campaign-Prozesse auf der Entwicklungsinstanz.
-1. Erstellen Sie eine Sicherungskopie der Datenbank der Produktionsumgebung und stellen Sie sie als Entwicklungsumgebung wieder her.
-1. Führen Sie vor dem Starten der Adobe Campaign-Dienste das Warnskript **freezeInstance.js** aus, mit dem Sie die Datenbank aller Objekte löschen können, die zum Zeitpunkt des Starts der Sicherung ausgeführt wurden.
+1. Erstellen Sie ein Backup der Datenbank der Produktionsumgebung und stellen Sie sie als Entwicklungsumgebung wieder her.
+1. Bevor Sie die Adobe Campaign-Services starten, führen Sie das Skript **freezeInstance.js** aus, mit dem Sie die Datenbank von allen Objekten löschen können, die beim Starten des Backups ausgeführt wurden.
 
    ```
    nlserver javascript nms:freezeInstance.js -instance:<instance> -arg:<run|dry>
@@ -38,22 +38,22 @@ Sie sollten über eine Test-/Entwicklungsumgebung verfügen, um Migrationstests 
 
    >[!NOTE]
    >
-   >Der Befehl wird standardmäßig im Modus **trocken** gestartet und listet alle Anforderungen auf, die von diesem Befehl ausgeführt wurden, ohne sie zu starten. Verwenden Sie zum Ausführen von Warnanfragen **run** im -Befehl.
+   >Der Befehl wird standardmäßig im **-**-Modus gestartet und listet alle Anforderungen auf, die von diesem Befehl ausgeführt wurden, ohne sie zu starten. Verwenden Sie zum Ausführen von Kauterisierungsanfragen **Befehl** run“.
 
-1. Stellen Sie sicher, dass Ihre Sicherungen korrekt sind, indem Sie versuchen, sie wiederherzustellen. Stellen Sie sicher, dass Sie Zugriff auf Ihre Datenbank, Ihre Tabellen, Ihre Daten usw. haben.
+1. Stellen Sie sicher, dass Ihre Backups korrekt sind, indem Sie versuchen, sie wiederherzustellen. Stellen Sie sicher, dass Sie auf Ihre Datenbank, Ihre Tabellen, Ihre Daten usw. zugreifen können.
 1. Testen Sie das Migrationsverfahren in der Entwicklungsumgebung.
-1. Wenn die Migration der Entwicklungsumgebung erfolgreich ist, können Sie die Produktionsumgebung migrieren.
+1. Wenn die Migration der Entwicklungsumgebung erfolgreich war, können Sie die Produktionsumgebung migrieren.
 
 >[!CAUTION]
 >
->Aufgrund von Änderungen an der Datenstruktur ist der Import und Export von Datenpaketen zwischen einer v5-Plattform und einer v7-Plattform nicht möglich.
+>Aufgrund von Änderungen an der Datenstruktur ist der Import und Export von Datenpaketen zwischen einer v5- und einer v7-Plattform nicht möglich.
 
 
-## Migrationswerkzeuge {#migration-tools}
+## Migrations-Tools {#migration-tools}
 
-Mithilfe verschiedener Optionen können Sie die Auswirkungen einer Migration messen und potenzielle Probleme identifizieren. Diese Optionen werden ausgeführt:
+Verschiedene Optionen ermöglichen es Ihnen, die Auswirkungen einer Migration zu messen und die potenziellen Probleme zu identifizieren. Die folgenden Optionen sind auszuführen:
 
-* im Befehl **config** :
+* Im Befehl **config**:
 
   ```
   nlserver.exe config <option> -instance:<instance-name>
@@ -67,12 +67,12 @@ Mithilfe verschiedener Optionen können Sie die Auswirkungen einer Migration mes
 
 >[!NOTE]
 >
->* Sie müssen die Option **-instance:`<instanceame>`** verwenden. Es wird nicht empfohlen, die Option **-allinstances** zu verwenden.
->* Mit dem Adobe Campaign-Aktualisierungsbefehl (**postupgrade**) können Sie Ressourcen synchronisieren und Schemas und die Datenbank aktualisieren. Dieser Vorgang kann nur einmal auf dem Anwendungsserver ausgeführt werden. Nach dem Synchronisieren von Ressourcen können Sie mit dem Befehl **postupgrade** erkennen, ob die Synchronisierung Fehler oder Warnungen erzeugt.
+>* Sie müssen die Option **-instance:`<instanceame>`** verwenden. Es wird davon abgeraten, die Option **-allInstances** zu verwenden.
+>* Mit dem Adobe Campaign-Aktualisierungsbefehl **postupgrade** können Sie Ressourcen synchronisieren und Schemas und die Datenbank aktualisieren. Dieser Vorgang kann nur einmal und nur auf dem Anwendungsserver ausgeführt werden. Nach der Synchronisierung von Ressourcen können Sie mit **Befehl** postupgrade“ erkennen, ob die Synchronisierung Fehler oder Warnungen erzeugt.
 
 ### Nicht standardmäßige oder fehlende Objekte
 
-* Die Option **-showCustomEntities** zeigt die Liste aller nicht standardmäßigen Objekte an:
+* Mit der Option **-showCustomEntities** wird die Liste aller nicht standardmäßigen Objekte angezeigt:
 
   ```
   nlserver.exe config -showCustomEntities -instance:<instance-name>
@@ -96,11 +96,11 @@ Mithilfe verschiedener Optionen können Sie die Auswirkungen einer Migration mes
   Out of the box object 'nms:deliveryCustomizationMdl' belonging to the 'xtk:srcSchema' schema has not been found in the file system.
   ```
 
-### Überprüfungsverfahren {#verification-process}
+### Verifizierungsprozess {#verification-process}
 
-Dieser Prozess ist standardmäßig in den Befehl postupgrade integriert und ermöglicht die Anzeige von Warnungen und Fehlern, die dazu führen können, dass die Migration fehlschlägt. **Wenn Fehler angezeigt werden, wurde die Migration nicht ausgeführt.** Korrigieren Sie in diesem Fall alle Fehler und starten Sie das Postupgrade erneut.
+Dieser Prozess ist standardmäßig im Postupgrade-Befehl integriert und ermöglicht die Anzeige von Warnungen und Fehlern, die zu einem Fehlschlagen der Migration führen können. **Wenn Fehler angezeigt werden, wurde die Migration nicht ausgeführt.** Wenn dies eintritt, korrigieren Sie alle Fehler und starten Sie das Postupgrade erneut.
 
-Mit dem folgenden Befehl können Sie den Verifizierungsprozess selbst (ohne Migration) starten:
+Sie können den Verifizierungsprozess eigenständig (ohne Migration) mit dem Befehl starten:
 
 ```
 nlserver.exe config -postupgrade -check -instance:<instance-name>
@@ -108,15 +108,15 @@ nlserver.exe config -postupgrade -check -instance:<instance-name>
 
 >[!NOTE]
 >
->Mit dem JST-310040-Code können Sie alle Warnungen und Fehler ignorieren.
+>Sie können alle Warnungen und Fehler mit dem JST-310040-Code ignorieren.
 
-Die folgenden Ausdrücke werden gesucht (Groß-/Kleinschreibung beachten):
+Bei den folgenden Ausdrücken wird nach gesucht (von Schreibweise abhängig):
 
 <table> 
  <thead> 
   <tr> 
    <th> Ausdruck<br /> </th> 
-   <th> Fehler-Code<br /> </th> 
+   <th> Fehlercode<br /> </th> 
    <th> Protokolltyp<br /> </th> 
    <th> Kommentare<br /> </th> 
   </tr> 
@@ -126,7 +126,7 @@ Die folgenden Ausdrücke werden gesucht (Groß-/Kleinschreibung beachten):
    <td> .@<br /> </td> 
    <td> PU-0001<br /> </td> 
    <td> Warnung<br /> </td> 
-   <td> Diese Syntax wird bei der Versandpersonalisierung nicht mehr unterstützt. <br /> </td> 
+   <td> Diese Art von Syntax wird bei der Versandpersonalisierung nicht mehr unterstützt. <br /> </td> 
   </tr> 
   <tr> 
    <td> common.js<br /> </td> 
@@ -135,7 +135,7 @@ Die folgenden Ausdrücke werden gesucht (Groß-/Kleinschreibung beachten):
    <td> Diese Bibliothek darf nicht verwendet werden.<br /> </td> 
   </tr> 
   <tr> 
-   <td> logon(<br /> </td> 
+   <td> LOGON(<br /> </td> 
    <td> PU-0003<br /> </td> 
    <td> Warnung<br /> </td> 
    <td> Diese Verbindungsmethode darf nicht mehr verwendet werden.<br /> </td> 
@@ -144,36 +144,36 @@ Die folgenden Ausdrücke werden gesucht (Groß-/Kleinschreibung beachten):
    <td> new SoapMethodCall(<br /> </td> 
    <td> PU-0004<br /> </td> 
    <td> Warnung<br /> </td> 
-   <td> Diese Funktion wird nur unterstützt, wenn sie im JavaScript-Code verwendet wird, der aus einer Sicherheitszone ausgeführt wird, die sich im <strong>sessionTokenOnly</strong> -Modus befindet.<br /> </td> 
+   <td> Diese Funktion wird nur unterstützt, wenn sie in JavaScript-Code verwendet wird, der von einer Sicherheitszone im Modus <strong>sessionTokenOnly</strong> ausgeführt wird<br /> </td> 
   </tr> 
   <tr> 
-   <td> sql=<br /> </td> 
+   <td> SQL=<br /> </td> 
    <td> PU-0005<br /> </td> 
    <td> Fehler<br /> </td> 
-   <td> Dieser Fehlertyp führt zu einem Migrationsfehler.<br /> </td> 
+   <td> Diese Art von Fehler führt zu einem Migrationsfehler.<br /> </td> 
   </tr> 
   <tr> 
-   <td> crmDeploymentType="onpremise"<br /> </td> 
+   <td> crmDeploymentType=„OnPremise“<br /> </td> 
    <td> PU-0007<br /> </td> 
    <td> Fehler<br /> </td> 
-   <td> Diese Art der Bereitstellung wird nicht mehr unterstützt. Der Bereitstellungstyp des CRM-Connectors für Office 365 und On-Premise Microsoft wurde eingestellt. 
-   </br>Wenn Sie einen dieser veralteten Bereitstellungstypen in einem externen Konto verwenden, sollte dieses externe Konto gelöscht und Sie sollten dann den Befehl <b>postupgrade</b> ausführen. 
-   </br>Informationen zum Ändern der Web-API-Bereitstellung finden Sie unter <a href="../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft" target="_blank">Webanwendungen</a>.<br /> </td>
+   <td> Diese Art der Bereitstellung wird nicht mehr unterstützt. Der Bereitstellungstyp für Office 365- und On-Premise-Microsoft CRM-Connectoren wird jetzt nicht mehr unterstützt. 
+   </br>Wenn Sie einen dieser veralteten Bereitstellungstypen in einem externen Konto verwenden, sollte dieses externe Konto gelöscht werden und Sie sollten dann den Befehl <b>postupgrade</b> ausführen. 
+   </br>Informationen zum Ändern der Web-API-Bereitstellung finden Sie unter <a href="../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft" target="_blank">Web-Anwendungen</a>.<br /> </td>
   </tr> 
   <tr> 
    <td> CRM v1(mscrmWorkflow/sfdcWorkflow)<br /> </td> 
    <td> PU-0008<br /> </td> 
    <td> Fehler<br /> </td> 
-   <td> Die Aktionsaktivitäten Microsoft CRM, Salesforce und Oracle CRM On Demand sind nicht mehr verfügbar. Um die Datensynchronisation zwischen Adobe Campaign und einem CRM-System zu konfigurieren, müssen Sie die Targeting-Aktivität <a href="../../workflow/using/crm-connector.md" target="_blank">CRM-Connector</a> verwenden.<br /> </td>
+   <td> Aktionsaktivitäten von Microsoft CRM, Salesforce, Oracle CRM On Demand sind nicht mehr verfügbar. Um die Datensynchronisation zwischen Adobe Campaign und einem CRM-System zu konfigurieren, müssen Sie die Zielgruppenbestimmungsaktivität <a href="../../workflow/using/crm-connector.md" target="_blank">CRM-Connector</a> verwenden.<br /> </td>
   </tr> 
  </tbody> 
 </table>
 
-Außerdem wird eine Datenbank- und Schema-Konsistenz-Prüfung durchgeführt.
+Außerdem wird eine Datenbank- und Schemakohäsionsprüfung durchgeführt.
 
 ### Wiederherstellungsoption {#restoration-option}
 
-Mit dieser Option können Sie native Objekte wiederherstellen, wenn sie geändert wurden. Für jedes wiederhergestellte Objekt wird eine Sicherung Ihrer Änderungen im ausgewählten Ordner gespeichert:
+Mit dieser Option können Sie vordefinierte Objekte wiederherstellen, wenn sie geändert wurden. Für jedes wiederhergestellte Objekt wird eine Sicherung Ihrer Änderungen im ausgewählten Ordner gespeichert:
 
 ```
 nlserver.exe config -postupgrade -restoreFactory:<backupfolder> -instance:<instance-name>
@@ -181,8 +181,8 @@ nlserver.exe config -postupgrade -restoreFactory:<backupfolder> -instance:<insta
 
 >[!NOTE]
 >
->Es wird dringend empfohlen, absolute Ordnerpfade zu verwenden und die Ordnerstruktur beizubehalten. Beispiel: backupFolder\nms\srcSchema\billing.xml.
+>Es wird dringend empfohlen, absolute Ordnerpfade zu verwenden und die Ordnerbaumstruktur beizubehalten. Beispiel: backupFolder\nms\srcSchema\billing.xml.
 
-### Migration fortsetzen {#resuming-migration}
+### Fortsetzen der Migration {#resuming-migration}
 
-Wenn Sie das Postupgrade nach einem Migrationsfehler neu starten, wird es von der Stelle fortgesetzt, an der es angehalten wurde.
+Wenn Sie das Postupgrade nach einem Migrationsfehler neu starten, wird es an der Stelle fortgesetzt, an der es gestoppt wurde.

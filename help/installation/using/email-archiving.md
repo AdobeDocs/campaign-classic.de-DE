@@ -28,13 +28,13 @@ Dazu werden E-Mail-Dateien, die den gesendeten E-Mails entsprechen, auf einen Re
 
 * Die Funktion &quot;E-Mail-BCC&quot; ist optional. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
 * Wenden Sie sich bei **gehosteten und hybriden Architekturen** an Ihren Kundenbetreuer, um sie zu aktivieren. Die gewünschte BCC-E-Mail-Adresse muss dem Adobe-Team, das die Adresse für Sie konfigurieren wird, mitgeteilt werden.
-* Für On-Premise-Installationen **befolgen Sie die unten stehenden Richtlinien, um sie zu aktivieren. Weitere Informationen dazu finden Sie in den Abschnitten [Aktivieren von E-Mail-BCC (vor Ort)](#activating-email-archiving--on-premise-) und [Konfigurieren der BCC-E-Mail-Adresse (vor Ort)](#configuring-the-bcc-email-address--on-premise-) .**
+* Befolgen **bei On-Premise** Installationen die folgenden Richtlinien zur Aktivierung. Weitere Informationen finden Sie in den Abschnitten [Aktivieren von E-Mail-BCC (On-Premise)](#activating-email-archiving--on-premise-) und [Konfigurieren der BCC-E-Mail-Adresse (On-Premise)](#configuring-the-bcc-email-address--on-premise-).
 * Sie können nur eine einzige BCC-E-Mail-Adresse verwenden.
 * Nachdem E-Mail-BCC konfiguriert wurde, stellen Sie sicher, dass die Funktion in der Versandvorlage oder im Versand über die Option **[!UICONTROL E-Mail-BCC]** aktiviert ist. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../delivery/using/sending-messages.md#archiving-emails).
 * Nur erfolgreich gesendete E-Mails werden berücksichtigt, Absprünge nicht.
-* Das E-Mail-Archivierungssystem wurde mit Adobe Campaign 17.2 (Build 8795) geändert. Wenn Sie bereits die E-Mail-Archivierung verwendet haben, müssen Sie manuell auf das neue E-Mail-BCC-System aktualisieren. Weiterführende Informationen dazu finden Sie im Abschnitt [Wechseln zur neuen E-Mail-BCC](#updated-email-archiving-system--bcc-) .
+* Das E-Mail-Archivierungssystem wurde mit Adobe Campaign 17.2 (Build 8795) geändert. Wenn Sie bereits die E-Mail-Archivierung verwendet haben, müssen Sie das Upgrade auf das neue E-Mail-BCC-System manuell durchführen. Weiterführende Informationen hierzu finden Sie im Abschnitt [Wechseln zum neuen E-Mail-BCC](#updated-email-archiving-system--bcc-).
 
-## Aktivieren von E-Mail-BCC (vor Ort) {#activating-email-archiving--on-premise-}
+## Aktivieren von E-Mail-BCC (On-Premise) {#activating-email-archiving--on-premise-}
 
 [!BADGE Hybrid und On-Premise]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"}
 
@@ -69,7 +69,7 @@ C:\emails\2018-12-02\13h\4012-8040-sent.eml
 
 >[!NOTE]
 >
->In einer Mid-Sourcing-Instanz befindet sich der Ordner für die BCC-E-Mails auf dem Mid-Sourcing-Server.
+>In einer Mid-Sourcing-Instanz befindet sich das Verzeichnis für die BCC-E-Mails auf dem Mid-Sourcing-Server.
 >
 >Die deliveryID und die BroadlogID stammen vom Mid-Sourcing-Server, wenn der Status der E-Mails nicht gesendet wird. Sobald der Status auf **[!UICONTROL Gesendet]** geändert wurde, stammen diese IDs vom Marketing-Server.
 
@@ -92,7 +92,7 @@ Nachdem der lokale Ordnerpfad definiert wurde, fügen Sie die folgenden Elemente
 * **compressBatchSize**: Anzahl der eml-Dateien, die einem Archiv hinzugefügt wurden (.zip-Datei).
 
 
-* **archivingType**: zu verwendende Archivierungsstrategie. Der einzig mögliche Wert ist **1**. Rohkopien gesendeter E-Mails werden im .eml-Format im Ordner **dataLogPath** gespeichert und über SMTP an die BCC-E-Mail-Adresse gesendet. Sobald die E-Mail-Kopien an die BCC-Adresse gesendet werden, wird der Name der Archivdatei **`<deliveryid>-<broadlogid>-sent-archived.eml`** und die Datei wird in den Ordner **dataLogPath/archives** verschoben. Der Pfad der gesendeten und archivierten E-Mail-Datei wird dann **`<datalogpath>archivesYYYY-MM-DDHHh<deliveryid>- <broadlogid>-sent-archived.eml`** angezeigt.
+* **archivingType**: zu verwendende Archivierungsstrategie. Der einzige mögliche Wert ist **1**. Rohkopien der gesendeten E-Mails werden im .eml-Format im Ordner **dataLogPath** gespeichert und über SMTP an die BCC-E-Mail-Adresse gesendet. Sobald die E-Mail-Kopien an die BCC-Adresse gesendet werden, wird der Name der Archivdatei **`<deliveryid>-<broadlogid>-sent-archived.eml`** und die Datei wird in den Ordner **dataLogPath/archives** verschoben. Der Pfad der gesendeten und archivierten E-Mail-Datei wird dann **`<datalogpath>archivesYYYY-MM-DDHHh<deliveryid>- <broadlogid>-sent-archived.eml`** angezeigt.
 
   <!--
   **0**: raw copies of sent emails are saved in .eml format to the **dataLogPath** folder (default value). An archiving copy of the **`<deliveryid>-<broadlogid>-sent.eml`** file is saved to the **dataLogPath/archives** folder. The sent email file path becomes **`<datalogpath>archivesYYYY-MM-DDHHh <deliveryid>-<broadlogid>-sent.eml`**.-->
@@ -105,7 +105,7 @@ Nachdem der lokale Ordnerpfad definiert wurde, fügen Sie die folgenden Elemente
 
 Stellen Sie sicher, dass Sie diese Parameter an den E-Mail-Versand-Durchsatz anpassen. In einer Konfiguration, in der die MTA 30.000 E-Mails pro Stunde sendet, können Sie den Parameter **pollDelay** auf 600, den Parameter **acquisitionLimit** auf 5000 und den Parameter **smtpNbConnection** auf 2 setzen. Das bedeutet, dass bei Verwendung von 2 SMTP-Verbindungen alle 10 Minuten 5.000 E-Mails an die BCC-Adresse gesendet werden.
 
-## BCC-E-Mail-Adresse konfigurieren (vor Ort) {#configuring-the-bcc-email-address--on-premise-}
+## Konfigurieren der BCC-E-Mail-Adresse (On-Premise) {#configuring-the-bcc-email-address--on-premise-}
 
 [!BADGE Hybrid und On-Premise]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"}
 
@@ -149,16 +149,16 @@ To do this, make the following changes to the **`config-<instance>.xml`** file:
 Once email BCC is configured, make sure you select the **[!UICONTROL Email BCC]** option in the delivery template or the delivery. For more on this, see [this section](../../delivery/using/sending-messages.md#archiving-emails).
 -->
 
-## Best Practices für Email BCC {#best-practices}
+## Best Practices für E-Mail-BCC {#best-practices}
 
 * **BCC-Adresszeile**: Stellen Sie sicher, dass es über genügend Aufnahmekapazität verfügt, um alle E-Mails zu archivieren, die von der MTA gesendet werden.
-* **MTA-Pooling**: Die BCC-Archivierungsfunktion funktioniert auf MTA-Ebene. Damit können Sie alle E-Mails, die von der MTA gesendet werden, Duplikat werden. Da der MTA über mehrere Instanzen (z. B. dev, test oder prod) oder sogar über mehrere Clients (in einer Mid-Sourcing-Umgebung) hinweg gepoolt werden kann, wirkt sich die Einrichtung dieser Funktion auf die Sicherheit aus:
+* **MTA-Pooling**: Die BCC-Archivierungsfunktion funktioniert auf MTA-Ebene. Damit können Sie alle E-Mails, die von der MTA gesendet werden, Duplikat werden. Da der MTA über mehrere Instanzen hinweg (z. B. Entwicklung, Test oder Produktion) oder sogar über mehrere Clients hinweg (in einer Mid-Sourcing-Umgebung) gepoolt werden kann, wirkt sich das Einrichten dieser Funktion negativ auf die Sicherheit aus:
 
    * Wenn Sie eine MTA für mehrere Clients freigeben und bei einem dieser Clients diese Option aktiviert ist, greift dieser Client auf alle E-Mails der anderen Clients zu, die dieselbe MTA verwenden. Um eine solche Situation zu vermeiden, verwenden Sie für jeden Client eine andere MTA.
    * Wenn Sie dieselbe MTA für mehrere Instanzen verwenden (Entwicklung, Test, Test), werden die Nachrichten, die von allen drei Instanzen gesendet werden, von der Option dataLogPath dupliziert.
 
 * **E-Mails pro Verbindung**: Die BCC E-Mail-Archivierung funktioniert durch Öffnen einer Verbindung und Versenden aller E-Mails über diese Verbindung. Adobe empfiehlt, mit Ihrem internen technischen Ansprechpartner die Anzahl der E-Mails zu überprüfen, die in einer bestimmten Verbindung akzeptiert werden. Eine Erhöhung dieser Zahl kann einen großen Einfluss auf den BCC-Durchsatz haben.
-* **BCC sendet IPs**: Derzeit werden BCC-E-Mails nicht über die normalen MTA-Proxys gesendet. Stattdessen wird eine direkte Verbindung vom MTA-Server zum Ziel-E-Mail-Server geöffnet. Dies bedeutet, dass Sie je nach Konfiguration des E-Mail-Servers zusätzliche IPs zur Zulassungsliste in Ihrem Netzwerk hinzufügen müssen.
+* **BCC sendet IPs**: Derzeit werden BCC-E-Mails nicht über die normalen MTA-Proxys gesendet. Stattdessen wird eine direkte Verbindung vom MTA-Server zum Ziel-E-Mail-Server geöffnet. Dies bedeutet, dass Sie je nach E-Mail-Server-Konfiguration möglicherweise zusätzliche IPs zu der -Zulassungsliste in Ihrem Netzwerk hinzufügen müssen.
 
 <!--## Email BCC with Enhanced MTA {#email-bcc-with-enhanced-mta}
 

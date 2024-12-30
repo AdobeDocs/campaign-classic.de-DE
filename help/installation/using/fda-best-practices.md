@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Best Practices und Einschränkungen der Campaign FDA
+title: Best Practices und Einschränkungen von Campaign FDA
 description: Best Practices und Einschränkungen beim Arbeiten mit einer externen Datenbank (FDA)
 feature: Installation, Federated Data Access
 audience: platform
@@ -18,7 +18,7 @@ ht-degree: 57%
 
 
 
-## E-Mail-Personalisierung mit externen Daten optimieren {#optimizing-email-personalization-with-external-data}
+## Optimieren der E-Mail-Personalisierung mit externen Daten {#optimizing-email-personalization-with-external-data}
 
 Sie können die Nachrichtenpersonalisierung in einem speziellen Workflow vorab verarbeiten. Verwenden Sie dazu die Option **[!UICONTROL Personalisierungsdaten mit einem Workflow vorbereiten]**, die auf der Registerkarte **[!UICONTROL Analyse]** der Versandeigenschaften verfügbar ist.
 
@@ -26,25 +26,25 @@ Diese Option ermöglicht es, im Zuge der Versandanalyse automatisch einen Workfl
 
 Diese Option verbessert die Performance beim Ausführen des Personalisierungsschritts erheblich.
 
-## Daten aus einer externen Datenbank in einem Workflow verwenden {#using-data-from-an-external-database-in-a-workflow}
+## Verwenden von Daten aus einer externen Datenbank in einem Workflow {#using-data-from-an-external-database-in-a-workflow}
 
-Bei mehreren Adobe Campaign-Workflow-Aktivitäten können Sie die in einer externen Datenbank gespeicherten Daten verwenden.
+In mehreren Adobe Campaign-Workflow-Aktivitäten können Sie die in einer externen Datenbank gespeicherten Daten verwenden.
 
-* **Nach externen Daten filtern** - Mit der Aktivität [Abfrage](../../workflow/using/targeting-data.md#selecting-data) können Sie externe Daten hinzufügen und in den definierten Filterkonfigurationen verwenden. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../workflow/using/targeting-data.md#selecting-data).
+* **Filter für externe Daten** - Die Aktivität [Abfrage](../../workflow/using/targeting-data.md#selecting-data) ermöglicht es Ihnen, externe Daten hinzuzufügen und sie in den definierten Filterkonfigurationen zu verwenden. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../workflow/using/targeting-data.md#selecting-data).
 
 * **Segmente erstellen** – Die Aktivität [Aufspaltung](../../workflow/using/split.md) ermöglicht die Erstellung von Segmenten. Sie können externe Daten verwenden, um die zu verwendenden Filterkriterien zu definieren. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../workflow/using/split.md).
 
-* **Externe Datenbank laden** - Sie können die externen Daten in der Aktivität [Laden der Daten](../../workflow/using/data-loading-rdbms.md) (RDBMS) verwenden. Weitere Informationen finden Sie auf [dieser Seite](../../workflow/using/data-loading-rdbms.md).
+* **Externe Datenbank laden** - Sie können die externen Daten in der Aktivität [Laden](../../workflow/using/data-loading-rdbms.md) (RDBMS) verwenden. Weitere Informationen finden Sie auf [dieser Seite](../../workflow/using/data-loading-rdbms.md).
 
-* **Informationen und Links hinzufügen** – Die Aktivität [Anreicherung](../../workflow/using/enrichment.md) ermöglicht das Hinzufügen zusätzlicher Daten zur Arbeitstabelle des Workflows sowie von Links zu einer externen Tabelle. In diesem Zusammenhang kann es Daten aus einer externen Datenbank verwenden. Weitere Informationen finden Sie auf [dieser Seite](../../workflow/using/enrichment.md).
+* **Informationen und Links hinzufügen** – Die Aktivität [Anreicherung](../../workflow/using/enrichment.md) ermöglicht das Hinzufügen zusätzlicher Daten zur Arbeitstabelle des Workflows sowie von Links zu einer externen Tabelle. In diesem Kontext können Daten aus einer externen Datenbank verwendet werden. Weitere Informationen finden Sie auf [dieser Seite](../../workflow/using/enrichment.md).
 
 ## Schutzmechanismen und Einschränkungen {#fda-limitations}
 
-Die FDA-Option wurde entwickelt, um die Daten in externen Datenbanken im Batch-Modus in Workflows zu bearbeiten. Um Performance-Probleme zu vermeiden, wird nicht empfohlen, das FDA-Modul im Kontext von Einzeloperationen zu verwenden, etwa Personalisierung, Interaktion oder Echtzeit-Messaging.
+Die FDA-Option dient zur Bearbeitung der Daten in externen Datenbanken im Batch-Modus in Workflows. Um Performance-Probleme zu vermeiden, wird nicht empfohlen, das FDA-Modul im Kontext von Einzeloperationen zu verwenden, etwa Personalisierung, Interaktion oder Echtzeit-Messaging.
 
-Das Targeting von Daten aus einer Datenbank und das Filtern der Ergebnisse mithilfe einer Filterdimension, die zu einer anderen Datenbank gehört, wird nicht unterstützt. Tabellen, die sich in unterschiedlichen Datenquellen befinden, können nicht in einer Abfrage zusammengefügt werden. Sie können diese Einschränkung mithilfe anderer Workflow-Aktivitäten wie Dimensionsänderung umgehen.
+Das Targeting von Daten aus einer Datenbank und das Filtern der Ergebnisse mithilfe einer Filterdimension, die zu einer anderen Datenbank gehört, wird nicht unterstützt. Sie können Tabellen, die sich in verschiedenen Datenquellen befinden, nicht in einer Abfrage verknüpfen. Sie können diese Einschränkung mithilfe anderer Workflow-Aktivitäten wie Dimensionsänderung überwinden.
 
-Vermeiden Sie möglichst Vorgänge, bei denen sowohl die Adobe Campaign als auch die externe Datenbank verwendet werden müssen. Best Practice:
+Vermeiden Sie die Vorgänge, die sowohl die Adobe Campaign als auch die externe Datenbank verwenden müssen, so weit wie möglich. Best Practice ist Folgendes:
 
 * Exportieren Sie die Adobe Campaign-Datenbank in die externe Datenbank und führen Sie die Aktionen nur in der externen Datenbank aus. Importieren Sie danach die Ergebnisse wieder in Adobe Campaign.
 

@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Netzwerk, Datenbank und SSL/TLS
-description: Erfahren Sie mehr über die Best Practices für die Konfiguration von Netzwerk, Datenbank und SSL/TLS
+description: Erfahren Sie mehr über Best Practices für Netzwerk-, Datenbank- und SSL-/TLS-Konfiguration
 feature: Installation, Instance Settings
 audience: installation
 content-type: reference
@@ -18,7 +18,7 @@ ht-degree: 59%
 
 ## Netzwerkkonfiguration
 
-Bei der Bereitstellung einer On-Premise-Architektur muss unbedingt die [Netzwerkkonfiguration](../../installation/using/network-configuration.md) überprüft werden. Stellen Sie sicher, dass der Tomcat-Server NICHT direkt außerhalb des Servers zugänglich ist:
+Eine sehr wichtige Sache, die bei der Bereitstellung einer On-Premise-Architektur zu überprüfen ist, ist die [Netzwerkkonfiguration](../../installation/using/network-configuration.md). Stellen Sie sicher, dass der Tomcat-Server NICHT direkt außerhalb des Servers zugänglich ist:
 
 * Schließen Sie den Tomcat-Port (8080) auf externen IP-Adressen (muss auf localhost ausgeführt werden).
 * Ordnen Sie den Standard-HTTP-Port (80) nicht dem Tomcat-Port (8080) zu.
@@ -27,7 +27,7 @@ Verwenden Sie möglichst eine sichere Verbindung: POP3S statt POP3 (oder POP3 ü
 
 ## Datenbank
 
-Sie müssen die Best Practices für die Sicherheit Ihrer Datenbank-Engine anwenden.
+Sie müssen die Best Practices für die Datenbankmodul-Sicherheit anwenden.
 
 ## SSL-/TLS-Konfiguration
 

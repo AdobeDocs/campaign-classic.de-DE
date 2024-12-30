@@ -7,7 +7,7 @@ feature: Monitoring, Deliverability
 role: User
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
 source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2618'
 ht-degree: 100%
 
@@ -243,7 +243,7 @@ Die vom Remote-Server beim ersten Auftreten dieses Fehlertyps zurückgegebene Na
 
 ![](assets/tech_quarant_rules_qualif_text.png)
 
-Adobe Campaign filtert diese Nachricht, um den variablen Inhalt zu löschen (wie IDs, Daten, E-Mail-Adressen, Telefonnummern usw.) und zeigt das gefilterte Ergebnis in der Spalte **[!UICONTROL Text]**. Die Variablen werden durch **`#xxx#`** ersetzt, mit Ausnahme der Adressen, die durch ersetzt **`*`** werden.
+Adobe Campaign filtert diese Nachricht, um den variablen Inhalt (wie IDs, Daten, E-Mail-Adressen, Telefonnummern usw.) zu löschen, und zeigt das gefilterte Ergebnis in der Spalte **[!UICONTROL Text]** an. Die Variablen werden durch **`#xxx#`** ersetzt, mit Ausnahme der Adressen, die durch ersetzt **`*`** werden.
 
 Dadurch können alle Fehlschläge desselben Typs zusammengefasst werden und mehrfache Einträge für ähnliche Fehler in die Versandlogqualifizierungs-Tabelle werden vermieden.
 

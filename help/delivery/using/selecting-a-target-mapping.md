@@ -8,7 +8,7 @@ hidefromtoc: true
 role: User
 exl-id: b5514fa3-1e65-45dc-8e40-d1ba3b673e7a
 source-git-commit: 446062946b64c9a4d065b6a56d263914cbe628f8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '185'
 ht-degree: 100%
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 # Auswählen eines Zielgruppen-Mappings{#selecting-a-target-mapping}
 
-Standard-Zielgruppe in Versandvorlagen sind die **[!UICONTROL Empfänger]**. Das Zielgruppen-Mapping verwendet also die Felder der Tabelle **nms:recipient**. Adobe Campaign stellt jedoch auch andere Zielgruppen-Mappings zur Verfügung, auf die Sie je nach Bedarf zurückgreifen können.
+Standard-Zielgruppe in Versandvorlagen sind die **[!UICONTROL Empfangenden]**. Das Zielgruppen-Mapping verwendet also die Felder der Tabelle **nms:recipient**. Adobe Campaign stellt jedoch auch andere Zielgruppen-Mappings zur Verfügung, auf die Sie je nach Bedarf zurückgreifen können.
 
 ![](assets/delivery_select_mapping.png)
 

@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Verwenden von Adobe Campaign und Adobe Target
+title: 'Verwenden von Adobe Campaign und Adobe Target '
 description: Hier erfahren Sie, wie Sie Adobe Campaign mit Adobe Target integrieren
 feature: Target Integration
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"

@@ -1,13 +1,13 @@
 ---
 product: campaign
-title: Gestaltungsbausteine
+title: 'Gestaltungsbausteine '
 description: Erfahren Sie, wie Sie Gestaltungsbausteine verwenden
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Personalization
 role: User
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '978'
 ht-degree: 100%
 
@@ -138,7 +138,7 @@ Gehen Sie im Explorer wie folgt vor, um Gestaltungsbausteine zu erstellen:
 
      ![](assets/s_ncs_user_personalized_block_b.png)
 
-   * Geben Sie den Inhalt des Gestaltungsbausteins (in HTML, Text, JavaScript usw.) ein und klicken Sie auf **[!UICONTROL Speichern]**.
+   * Geben Sie den Inhalt der Gestaltungsbausteine (in HTML, Text, JavaScript usw.) ein und klicken Sie auf **[!UICONTROL Speichern]**.
 
 ## Anleitungsvideo {#personalization-blocks-video}
 

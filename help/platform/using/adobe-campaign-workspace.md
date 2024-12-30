@@ -9,7 +9,7 @@ exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
 source-wordcount: '942'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -99,7 +99,7 @@ Listen z. B. sind somit über den Link **[!UICONTROL Listen]** verfügbar, der s
 
 In jeder Rubrik können Sie sich innerhalb der verschiedenen Elemente bewegen. Nutzen Sie hierzu die im Abschnitt **[!UICONTROL Navigation]** zur Verfügung stehenden Verknüpfungen. Der Link **[!UICONTROL Andere Optionen]** erlaubt den Zugriff auf alle anderen Seiten, unabhängig von der aktuellen Rubrik.
 
-Sie können ein neues Element erstellen (Versand, Web-Anwendung, Workflow usw.), indem Sie die Tastaturbefehle im Bereich **[!UICONTROL Erstellen]** auf der linken Bildschirmseite verwenden. Die Schaltfläche **[!UICONTROL Erstellen]** rechts oberhalb der Liste erlaubt das Hinzufügen eines neuen Listenelements.
+Sie können ein neues Element (Versand, Web-Anwendung, Workflow usw.) mithilfe der Tastaturbefehle im Abschnitt **[!UICONTROL Erstellen]** auf der linken Bildschirmseite erstellen. Die Schaltfläche **[!UICONTROL Erstellen]** rechts oberhalb der Liste erlaubt das Hinzufügen eines neuen Listenelements.
 
 Nutzen Sie beispielsweise auf der Seite der Sendungen die Schaltfläche **[!UICONTROL Erstellen]**, um einen neuen Versand anzulegen.
 

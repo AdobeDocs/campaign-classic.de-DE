@@ -21,12 +21,12 @@ Adobe Campaign bietet die Option **Federated Data Access** (FDA), um in externen
 
 Mit der FDA-Option können Sie Ihr Datenmodell in einer Drittanbieterdatenbank erweitern. Sie erkennt automatisch die Struktur der ausgewählten Tabellen und verwendet Daten aus den SQL-Quellen.
 
-Um diese Funktion nutzen zu können, sind im Folgenden die Voraussetzungen aufgeführt:
+Um diese Funktion verwenden zu können, müssen folgende Voraussetzungen erfüllt sein:
 
 * **Konfiguration**: Die Liste kompatibler externer Datenbanken hängt von Ihrem [Hosting-Modell](../../installation/using/hosting-models.md) ab.
 * **Externe Datenbankversion**: Sie benötigen eine externe Datenbank, die mit dem Adobe Campaign FDA-Modul kompatibel ist.
 
-  Die Liste der Datenbanksysteme und kompatiblen Versionen pro Hosting-Modell finden Sie in der Campaign [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md#FederatedDataAccessFDA) .
+  Die Liste der Datenbanksysteme und kompatiblen Versionen pro Hosting-Modell wird in der Campaign-Kompatibilitätsmatrix [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md#FederatedDataAccessFDA).
 
-* **Berechtigungen**: Benutzer müssen auch über die [erforderlichen Berechtigungen](../../installation/using/remote-database-access-rights.md) in Adobe Campaign und in der externen Datenbank verfügen.
+* **Berechtigungen**: Benutzende müssen auch über die [erforderlichen Berechtigungen](../../installation/using/remote-database-access-rights.md) in Adobe Campaign und in der externen Datenbank verfügen.
 

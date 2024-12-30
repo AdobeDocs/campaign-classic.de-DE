@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Netzwerkkonfiguration
-description: Richtlinien zur Systemkommunikation
+description: Kennenlernen der Systemkommunikationsrichtlinien
 feature: Installation, Instance Settings
 badge-v7-prem: label="Nur On-Premise/Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
 audience: installation
@@ -21,13 +21,13 @@ ht-degree: 3%
 
 ## Kommunikation zwischen Prozessen {#communication-between-processes}
 
-Bestimmte Prozesse der Anwendung müssen mit anderen kommunizieren oder auf LAN und Internet zugreifen. Dies bedeutet, dass einige TCP-Ports für diese Prozesse offen sein müssen.
+Bestimmte Prozesse der Anwendung müssen mit anderen kommunizieren oder auf das LAN und das Internet zugreifen. Dies bedeutet, dass einige TCP-Ports für diese Prozesse offen sein müssen.
 
 Verwenden Sie den eingebetteten Apache Tomcat-Port als Priorität (standardmäßig 8080) für die interne Kommunikation zwischen den verschiedenen Anwendungsservern einer Adobe Campaign-Plattform.
 
-### Versandserver {#delivery-server}
+### Versand-Server {#delivery-server}
 
-Für den Versandserver (**nlserver mta**) müssen die folgenden Ports geöffnet sein:
+Für den Versandserver (**nlserver mta**) müssen die folgenden Ports offen sein:
 
 <table> 
  <tbody> 
@@ -37,31 +37,31 @@ Für den Versandserver (**nlserver mta**) müssen die folgenden Ports geöffnet 
    <td> Kommentare<br /> </td> 
   </tr> 
   <tr> 
-   <td> 25/tcp (smtp)<br /> </td> 
-   <td> Anywhere<br /> </td> 
-   <td> SMTP-Traffic für E-Mail-Übertragung.<br /> </td> 
+   <td> 25/TCP (SMTP)<br /> </td> 
+   <td> Überall<br /> </td> 
+   <td> SMTP-Traffic für E-Mail-Broadcasting.<br /> </td> 
   </tr> 
   <tr> 
-   <td> 53/udp (domain)<br /> </td> 
+   <td> 53/UDP (Domain)<br /> </td> 
    <td> DNS-Server<br /> </td> 
    <td> DNS-Abfragen.<br /> </td> 
   </tr> 
   <tr> 
-   <td> 38000/tcp (Standardanschluss)<br /> </td> 
+   <td> 38000/TCP (Standard-Port)<br /> </td> 
    <td> SMS-Gateway<br /> </td> 
-   <td> Wird zum Senden von SMS-Traffic an den NetSize-SMS-Router verwendet [Option].<br /> </td> 
+   <td> Wird verwendet, um SMS-Traffic an den NetSize-SMS-Router zu senden [option].<br /> </td> 
   </tr> 
   <tr> 
-   <td> 7777/udp<br /> </td> 
-   <td> Statistikserver<br /> </td> 
+   <td> 7777/UDP<br /> </td> 
+   <td> Statistik-Server<br /> </td> 
    <td> Zugriff auf den Statistikserver.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### Eingehende Post {#inbound-mail}
+### Posteingang {#inbound-mail}
 
-Für den Wiederherstellungsprozess für eingehende E-Mails (**nlserver inMail**) müssen die folgenden Ports geöffnet sein:
+Für den Wiederherstellungsprozess eingehender E-Mails (**nlserver inMail**) müssen die folgenden Ports geöffnet sein:
 
 <table> 
  <tbody> 
@@ -71,21 +71,21 @@ Für den Wiederherstellungsprozess für eingehende E-Mails (**nlserver inMail**)
    <td> Kommentare<br /> </td> 
   </tr> 
   <tr> 
-   <td> 110/tcp (pop3)<br /> </td> 
-   <td> Interner E-Mail-Server<br /> </td> 
-   <td> POP3-Traffic zum Abruf von Bounce Messages.<br /> </td> 
+   <td> 110/TCP (POP3)<br /> </td> 
+   <td> Interner Mailserver<br /> </td> 
+   <td> POP3-Traffic zum Erfassen von Bounce-Nachrichten.<br /> </td> 
   </tr> 
   <tr> 
-   <td> 25/tcp (smtp)<br /> </td> 
-   <td> Interner E-Mail-Server<br /> </td> 
-   <td> SMTP-Traffic zum Senden der verbleibenden Bounce-Nachrichten, die nicht automatisch von den vordefinierten Regeln verarbeitet werden.<br /> </td> 
+   <td> 25/TCP (SMTP)<br /> </td> 
+   <td> Interner Mailserver<br /> </td> 
+   <td> SMTP-Traffic zum Senden verbleibender Bounce-Nachrichten, die nicht automatisch durch die vordefinierten Regeln verarbeitet werden.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### Anwendungs-Server {#application-server}
 
-Für den Anwendungsserver (**nlserver web**) müssen die folgenden Ports geöffnet sein:
+Für den Anwendungs-Server (**nlserver web**) müssen die folgenden Ports offen sein:
 
 <table> 
  <tbody> 
@@ -95,18 +95,18 @@ Für den Anwendungsserver (**nlserver web**) müssen die folgenden Ports geöffn
    <td> Kommentare<br /> </td> 
   </tr> 
   <tr> 
-   <td> 80/tcp (http)<br /> 443/tcp (https)<br /> </td> 
-   <td> Anywhere<br /> </td> 
-   <td> HTTP- oder HTTPS-Traffic (auch für das Zustellbarkeits-Angebot).<br /> </td> 
+   <td> 80/TCP (HTTP)<br /> 443/TCP (HTTPS)<br /> </td> 
+   <td> Überall<br /> </td> 
+   <td> HTTP- oder HTTPS-Traffic (einschließlich für das Zustellbarkeitsangebot).<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Wenn mehrere Anwendungsserver einer Adobe Campaign-Plattform miteinander kommunizieren müssen, empfehlen wir, den Port des Apache Tomcat-Servers (standardmäßig 8080) anstelle des HTTP-Ports des Webservers zu verwenden, mit dem die Umleitungsmodulintegration durchgeführt wurde. Dies bedeutet, dass der Port zwischen diesen Servern geöffnet sein muss.
+Wenn mehrere Anwendungs-Server einer Adobe Campaign-Plattform miteinander kommunizieren müssen, empfehlen wir, den Port des Apache Tomcat-Servers (standardmäßig: 8080) anstelle des HTTP-Ports des Webservers zu verwenden, mit dem die Umleitungsmodul-Integration durchgeführt wurde. Dies bedeutet, dass der Port zwischen diesen Servern offen sein muss.
 
-### SMS-Versandstatus {#sms-delivery-status}
+### Status des SMS-Versands {#sms-delivery-status}
 
-Um SMS-Sendungen (**nlserver sms**) zu verfolgen, muss der folgende Port geöffnet sein:
+Um SMS-Sendungen (**nlserver sms**) zu verfolgen, muss der folgende Port offen sein:
 
 <table> 
  <tbody> 
@@ -116,16 +116,16 @@ Um SMS-Sendungen (**nlserver sms**) zu verfolgen, muss der folgende Port geöffn
    <td> Kommentare<br /> </td> 
   </tr> 
   <tr> 
-   <td> 38000/tcp (Standardanschluss)<br /> </td> 
+   <td> 38000/TCP (Standard-Port)<br /> </td> 
    <td> SMS-Gateway<br /> </td> 
-   <td> Fragt den Status der Versandwarteschlange ab, der vom NetSize-SMS-Gateway verwaltet wird [Option].<br /> </td> 
+   <td> Fragt den Status der vom NetSize SMS-Gateway verwalteten Versandwarteschlange ab [option].<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### Rich-Client {#rich-client}
 
-Für den Rich-Client von Adobe Campaign (**nlclient**) müssen die folgenden Ports geöffnet sein:
+Für den Adobe Campaign Rich-Client **nlclient**) müssen die folgenden Ports offen sein:
 
 <table> 
  <tbody> 
@@ -135,16 +135,16 @@ Für den Rich-Client von Adobe Campaign (**nlclient**) müssen die folgenden Por
    <td> Kommentare<br /> </td> 
   </tr> 
   <tr> 
-   <td><p> 80/tcp (http)</p><p>443/tcp (https)</p><br /> </td> 
-   <td> Anwendungsserver<br /> </td> 
-   <td> SOAP Traffic (HTTP).<br /> </td> 
+   <td><p> 80/TCP (HTTP)</p><p>443/TCP (HTTPS)</p><br /> </td> 
+   <td> Anwendungs-Server<br /> </td> 
+   <td> SOAP-Traffic (HTTP).<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Datenbankzugriff {#database-access}
 
-Alle Komponenten, die die Datenbank verwenden, müssen eine Verbindung mit ihr herstellen können. Dies gilt für die meisten Komponenten, mit Ausnahme des Umleitungsservers, der allein funktionieren kann, und des Thin Win32-Clients, der nur HTTP (oder HTTPS) verwendet, um mit dem Anwendungsserver zu kommunizieren.
+Alle Komponenten, die die Datenbank verwenden, müssen eine Verbindung zu ihr herstellen können. Dies ist bei den meisten Komponenten der Fall, mit Ausnahme des Weiterleitungsservers, der allein funktionieren kann, und des dünnen Win32-Clients, der HTTP (oder HTTPS) nur zur Kommunikation mit dem Anwendungsserver verwendet.
 
 Die Standardanschlüsse sind:
 
@@ -157,97 +157,97 @@ Die Standardanschlüsse sind:
   </tr> 
   <tr> 
    <td> <strong>Oracle</strong><br /> </td> 
-   <td> 1521/tcp<br /> </td> 
-   <td> Datenbankserver<br /> </td> 
+   <td> 1521/TCP<br /> </td> 
+   <td> Datenbank-Server<br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>PostgreSQL</strong><br /> </td> 
-   <td> 5432/tcp<br /> </td> 
+   <td> 5432/TCP<br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Microsoft SQL Server</strong><br /> </td> 
-   <td> 1433/tcp<br /> </td> 
+   <td> 1433/TCP<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Externer Zugriff {#external-access}
 
-Darüber hinaus müssen bestimmte Komponenten über das öffentliche Internet zugänglich sein, damit E-Mail-Kampagnen, die direkt über Adobe Campaign ausgeführt werden, angezeigt werden können. Dies bedeutet, dass einige Ports für Komponenten geöffnet sein müssen.
+Darüber hinaus müssen bestimmte Komponenten über das öffentliche Internet zugänglich sein, damit E-Mail-Kampagnen, die direkt von Adobe Campaign ausgeführt werden, angezeigt werden können. Das bedeutet, dass einige Ports für Komponenten offen sein müssen.
 
-### Weiterleitungsserver {#redirection-server}
+### Weiterleitungs-Server {#redirection-server}
 
 <table> 
  <tbody> 
   <tr> 
-   <td> Listening-Anschluss<br /> </td> 
-   <td> Position<br /> </td> 
+   <td> Listen-Port<br /> </td> 
+   <td> Standort<br /> </td> 
   </tr> 
   <tr> 
-   <td><p> 80/tcp (http)</p><p> 443/tcp (https)</p><br /> </td> 
-   <td> Überall. Jeder Klick auf einen verfolgten Link generiert eine HTTP-Anforderung auf dem Server.<br /> </td> 
+   <td><p> 80/TCP (HTTP)</p><p> 443/TCP (HTTPS)</p><br /> </td> 
+   <td> Überall. Jeder Klick auf einen getrackten Link generiert eine HTTP-Anfrage auf dem Server.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### Externer Webserver {#external-web-server}
 
-Dieser Server hostet Webformulare, Mirrorseiten usw. Die folgenden Ports müssen geöffnet sein:
+Auf diesem Server werden Web-Formulare, Mirrorseiten usw. gehostet. Die folgenden Ports müssen geöffnet sein:
 
 <table> 
  <tbody> 
   <tr> 
-   <td> Listening-Anschluss<br /> </td> 
-   <td> Position<br /> </td> 
+   <td> Listen-Port<br /> </td> 
+   <td> Standort<br /> </td> 
   </tr> 
   <tr> 
-   <td><p> 80/tcp (http)</p><p> 443/tcp (https)</p><br /> </td> 
-   <td> Überall. Erforderlich, wenn Webformulare direkt von der Adobe Campaign-Plattform aus verwaltet werden oder wenn Mirrorseiten verwendet werden.<br /> </td> 
+   <td><p> 80/TCP (HTTP)</p><p> 443/TCP (HTTPS)</p><br /> </td> 
+   <td> Überall. Erforderlich, wenn Web-Formulare direkt über die Adobe Campaign-Plattform verwaltet werden oder wenn Mirrorseiten verwendet werden.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### Interner Anwendungsserver (Web) {#internal-application-server--web-}
+### Interner Anwendungs-Server (Web) {#internal-application-server--web-}
 
 <table> 
  <tbody> 
   <tr> 
-   <td> Listening-Anschluss<br /> </td> 
-   <td> Position<br /> </td> 
+   <td> Listen-Port<br /> </td> 
+   <td> Standort<br /> </td> 
   </tr> 
   <tr> 
-   <td><p> 80/tcp (http)</p><p> 443/tcp (https)</p><br /> </td> 
-   <td> Alle Computer, die den Thin Client oder Rich Client ausführen.<br /> </td> 
+   <td><p> 80/TCP (HTTP)</p><p> 443/TCP (HTTPS)</p><br /> </td> 
+   <td> Alle Computer, die den Thin-Client oder Rich-Client ausführen.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Integration mit Adobe Experience Manager {#integration-with-adobe-experience-manager}
 
-Die Integration zwischen Adobe Campaign und Adobe Experience Manager erfordert das Öffnen mehrerer Ports, wenn die Installation &quot;On-Premise&quot;ist. Weitere Informationen zum Konfigurieren dieser Integration finden Sie in der [ausführlichen Dokumentation](../../integrations/using/about-adobe-experience-manager.md).
+Für die Integration zwischen Adobe Campaign und Adobe Experience Manager müssen mehrere Ports geöffnet werden, wenn die Installation „On-Premise“ erfolgt. Weitere Informationen zur Konfiguration dieser Integration finden Sie in der [ Dokumentation](../../integrations/using/about-adobe-experience-manager.md).
 
 <table> 
  <tbody> 
   <tr> 
-   <td> Listening-Anschluss<br /> </td> 
+   <td> Listen-Port<br /> </td> 
    <td> Beschreibung<br /> </td> 
   </tr> 
   <tr> 
-   <td> 80<br /> </td> 
-   <td> AEM Verbindung zu Adobe Campaign<br /> </td> 
+   <td> 80 <br /> </td> 
+   <td> AEM-Verbindung mit Adobe Campaign<br /> </td> 
   </tr> 
   <tr> 
    <td><p> 4502</p><p> 4503</p><br /> </td> 
-   <td> Adobe Campaign-Verbindung zu AEM "Authoring"- und "Publishing"-Instanzen. Die zu öffnenden Ports unterscheiden sich je nach AEM Konfiguration möglicherweise von den Standardanschlüssen.<br /> </td> 
+   <td> Adobe Campaign-Verbindung zu den „Authoring“- und „Publishing“-Instanzen von AEM. Die zu öffnenden Ports unterscheiden sich möglicherweise von den Standardports, je nach AEM-Konfiguration.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Bandbreite {#bandwidth}
 
-Ein weiterer Schlüsselparameter der zu berücksichtigenden Netzwerkkonfiguration. Es ist fast immer ausgehend und sehr gefragt bei E-Mail-Sendungen. Im Folgenden finden Sie einige Beispiele für Konfigurationen, die auf unserem Erlebnis basieren:
+Ein weiterer Schlüsselparameter der Netzwerkkonfiguration, der zu berücksichtigen ist. Es ist fast immer ausgehend und wird bei E-Mail-Übertragungen stark nachgefragt. Im Folgenden finden Sie einige Beispiele für Konfigurationen, die auf unseren Erfahrungen basieren:
 
-* 1 MB/s für 10.000 E-Mails pro Stunde (durchschnittliche Größe 30 KB)
-* 8 bis 10 MB/s für 100.000 E-Mails pro Stunde (durchschnittliche Größe 30 KB)
+* 1 MB/s für 10.000 E-Mails pro Stunde (durchschnittliche Größe von 30 KB)
+* 8 bis 10 MB/s für 100.000 E-Mails pro Stunde (durchschnittliche Größe von 30 KB)
 
-Wenn Sie Bandbreiteneinschränkungen haben, ist es möglich, Kampagnen so zu planen, dass sie nachts ausgeführt werden, wenn die Nachfrage geringer ist.
+Wenn Sie Einschränkungen in Bezug auf die Bandbreite haben, ist es möglich, Kampagnen so zu planen, dass sie während der Nacht ausgeführt werden, wenn die Nachfrage geringer ist.

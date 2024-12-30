@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Checkliste für Sicherheit und Datenschutz
-description: Erfahren Sie mehr über die wichtigsten zu prüfenden Elemente in Bezug auf Sicherheit und Datenschutz
+description: Erfahren Sie mehr über die wichtigsten zu überprüfenden Elemente bezüglich Sicherheit und Datenschutz
 feature: Installation, Privacy, Access Management, Privacy Tools
 audience: installation
 content-type: reference
@@ -18,7 +18,7 @@ ht-degree: 52%
 
 
 
-In diesem Abschnitt erfahren Sie, welche Schlüsselelemente geprüft werden müssen, um Sicherheit und Datenschutz zu gewährleisten. Einige Konfigurationen können nur von On-Premise-Kunden durchgeführt werden.
+In diesem Abschnitt erfahren Sie mehr über die wichtigsten Elemente, die im Hinblick auf Sicherheit und Datenschutz überprüft werden müssen. Einige Konfigurationen können nur von On-Premise-Kunden durchgeführt werden.
 
 ## Datenschutz
 
@@ -51,11 +51,11 @@ Die Zugriffsverwaltung ist ein wichtiger Bestandteil des Sicherheits-Managements
 
 Bei Entwicklungsaufgaben in Adobe Campaign (Workflows, JavaScript, JSSP usw.) sollten Sie sich grundsätzlich an diesen Leitlinien orientieren:
 
-* **Skripterstellung**: Vermeiden Sie SQL-Anweisungen, verwenden Sie parametrierte Funktionen anstelle von String-Verkettung, vermeiden Sie SQL-Injection, indem Sie die zu verwendenden SQL-Funktionen zur Zulassungsliste hinzufügen.
+* auf die Zulassungsliste setzen **Scripting**: SQL-Anweisungen vermeiden, parametrisierte Funktionen anstelle von Zeichenfolgenverkettung verwenden, SQL-Injection vermeiden, indem die zu verwendenden SQL-Funktionen zur hinzufügen.
 
 * **Schutz des Datenmodells**: Verwenden Sie spezifische Berechtigungen, um Benutzeraktionen einzuschränken, und fügen Sie Systemfilter hinzu (sysFilter).
 
-* **Captchas in Webanwendungen hinzufügen**: Hier erfahren Sie, wie Sie Captchas zu Ihren öffentlichen Landingpages und Anmeldeseiten hinzufügen.
+* **Hinzufügen von Captchas in Web-Anwendungen**: Erfahren Sie, wie Sie Captchas in Ihren öffentlichen Landingpages und Anmeldeseiten hinzufügen.
 
 [Mehr dazu](../../installation/using/scripting-coding-guidelines.md)
 
@@ -65,7 +65,7 @@ Bei Entwicklungsaufgaben in Adobe Campaign (Workflows, JavaScript, JSSP usw.) so
 
 Bei der Einrichtung einer On-Premise-Architektur muss unbedingt die Netzwerkkonfiguration geprüft werden.
 
-Außerdem müssen Sie die Sicherheit Ihrer Datenbank-Engine unbedingt befolgen.
+Es ist auch zwingend erforderlich, dass Sie die Sicherheit Ihrer Datenbank-Engine befolgen.
 
 [Mehr dazu](../../installation/using/network-database.md)
 
@@ -74,17 +74,17 @@ Außerdem müssen Sie die Sicherheit Ihrer Datenbank-Engine unbedingt befolgen.
 
 <img src="assets/do-not-localize/icon_server.svg" width="60px">
 
-Die Konfiguration muss auf allen Servern durchgeführt werden. Die Konfigurationsdateien weisen die Typen **serverConf.xml** und **`config-<instance>.xml`** auf. Im Folgenden finden Sie die wichtigsten Elemente, die überprüft werden müssen:
+Die Konfiguration muss auf allen Servern durchgeführt werden. Die Konfigurationsdateien sind vom Typ **serverConf.xml** und **`config-<instance>.xml`**. Im Folgenden sind die wichtigsten Elemente aufgeführt, die überprüft werden müssen:
 
 * **Sicherheitszonen**: Konfigurieren Sie Sicherheitszonen, damit die IP-Adressen von Clients eines Proxys automatisch berücksichtigt werden.
 
-* **Schutz vor Datei-Upload**: Beschränken Sie die Dateitypen, die mit einem neuen uploadAllowList -Attribut auf den Adobe Campaign-Server hochgeladen werden können. Dies kann in der Serverkonfigurationsdatei verwendet werden.
+* **Schutz vor Datei-Uploads**: Beschränken Sie die Dateitypen, die mit einem neuen Attribut „uploadAllowList“ auf den Adobe Campaign-Server hochgeladen werden können. Dies kann in der Server-Konfigurationsdatei verwendet werden.
 
 * **Relais**: Optimieren Sie die Relais-Konfiguration, indem Sie die Relais-Regeln für nicht verwendete Module/Anwendungen deaktivieren.
 
-* **Schutz der ausgehenden Verbindung** und **Befehlsbeschränkung** (serverseitig)
+* **Schutz ausgehender Verbindungen** und **Befehlsbeschränkung** (Server-seitig)
 
-* Sie können auch zusätzliche HTTP-Header hinzufügen, checkIPConsistent, enableTLS, sessionTimeOutSec usw. aktivieren. Weitere Informationen finden Sie in der Dokumentation zur Konfiguration des Campaign-Servers ](../../installation/using/configuring-campaign-server.md) und in der Beschreibung der [Server-Konfigurationsdatei](../../installation/using/the-server-configuration-file.md) .[
+* Sie können auch zusätzliche HTTP-Kopfzeilen hinzufügen, checkIPConsistent aktivieren, TLS aktivieren, sessionTimeOutSec aktivieren usw. Weitere Informationen finden Sie in der [Dokumentation zur Campaign](../../installation/using/configuring-campaign-server.md)Serverkonfiguration und in der [](../../installation/using/the-server-configuration-file.md)Beschreibung der Serverkonfigurationsdatei“.
 
 [Mehr dazu](../../installation/using/server-configuration.md)
 
@@ -92,11 +92,11 @@ Die Konfiguration muss auf allen Servern durchgeführt werden. Die Konfiguration
 
 <img src="assets/do-not-localize/icon_web.svg" width="60px">
 
-Beim Konfigurieren des Webservers (Apache/IIS) sollten verschiedene Best Practices befolgt werden:
+Bei der Konfiguration Ihres Webservers (Apache/IIS) sollten Sie verschiedene Best Practices befolgen:
 
 * Deaktivieren Sie die alte SSL-Version und -Ziffern.
-* Entfernen Sie die TRACE-Methode
+* TRACE-Methode entfernen
 * Entfernen Sie das Banner
-* Begrenzen der Abfragegröße, um das Hochladen wichtiger Dateien zu verhindern
+* Begrenzung der Abfragegröße, um das Hochladen wichtiger Dateien zu verhindern
 
 [Mehr dazu](../../installation/using/web-server-configuration.md)

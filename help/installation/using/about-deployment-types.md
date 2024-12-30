@@ -18,12 +18,12 @@ ht-degree: 6%
 
 
 
-Das modulare Design von Adobe Campaign ermöglicht eine breite Palette von Implementierungskonfigurationen, von eigenständigen Setups (alle Komponenten auf einem Computer) bis hin zu Enterprise-Implementierungen mit vollständig redundanter und verteilter Architektur mit mehreren Servern. Alles hängt von der erforderlichen Leistung und Sicherheit ab.
+Das modulare Design von Adobe Campaign ermöglicht eine breite Palette von Bereitstellungskonfigurationen, von eigenständigen Setups (alle Komponenten auf einem Computer) bis hin zu Unternehmensbereitstellungen mit vollständig redundanter und verteilter Architektur mit mehreren Servern. Alles hängt von der erforderlichen Leistung und Sicherheit ab.
 
 Bei einer Konfiguration auf mehreren Computern müssen Sie nicht überall dasselbe Betriebssystem verwenden: Sie können beispielsweise einen Weiterleitungsserver unter Linux + Apache mit Bereitstellungsservern unter Windows verwenden.
 
 >[!NOTE]
 >
->Die wichtigsten Installationskonfigurationsschritte können nur von Adobe für von Adobe gehostete Bereitstellungen ausgeführt werden, um beispielsweise die Server- und Instanzkonfigurationsdateien zu konfigurieren.
+>Die Hauptkonfigurationsschritte für die Installation können nur bei Bereitstellungen, die auf Adobe gehostet werden, per Adobe ausgeführt werden, z. B. um die Server- und Instanzkonfigurationsdateien zu konfigurieren.
 >
->Weitere Informationen zu den Hauptunterschieden zwischen Bereitstellungen finden Sie im Abschnitt [Hosting-Modelle](../../installation/using/hosting-models.md) oder in den [Funktionsunterschieden bei gehosteten und On-Premise-Bereitstellungen](../../installation/using/capability-matrix.md).
+>Weitere Informationen zu den wichtigsten Unterschieden zwischen Bereitstellungen finden Sie im Abschnitt [Hosting-Modelle](../../installation/using/hosting-models.md) oder im Abschnitt [Funktionsunterschiede für gehostete und On-Premise-Bereitstellungen](../../installation/using/capability-matrix.md).

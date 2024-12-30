@@ -18,18 +18,18 @@ ht-degree: 66%
 
 
 
-Verwenden Sie die Option Campaign **Federated Data Access** (FDA) , um in externen Datenbanken gespeicherte Informationen zu verarbeiten. Gehen Sie wie folgt vor, um den Zugriff auf Sybase IQ zu konfigurieren.
+Verwenden Sie die **-Option (Federated Data Access** (FDA) von Campaign, um in einer externen Datenbank gespeicherte Informationen zu verarbeiten. Gehen Sie wie folgt vor, um den Zugriff auf Sybase IQ zu konfigurieren.
 
-1. Konfigurieren von [Sybase IQ-Datenbank](#configuring-sybase)
-1. Konfigurieren des externen Sybase IQ [1} in Campaign](#sybase-external)
+1. [Sybase IQ-Datenbank ](#configuring-sybase)
+1. Konfigurieren des Sybase IQ [externen Kontos](#sybase-external) in Campaign
 
 ## Sybase IQ-Konfiguration {#configuring-sybase}
 
-Die Verbindung zu einer externen Sybase IQ-Datenbank über die FDA-Option erfordert die folgenden zusätzlichen Konfigurationen auf dem Adobe Campaign-Server.
+Für die Verbindung mit einer externen Sybase IQ-Datenbank in FDA sind zusätzliche Konfigurationen unten auf dem Adobe Campaign-Server erforderlich.
 
 >[!NOTE]
 >
->Stellen Sie vor dem Start sicher, dass sich das Paket **unixodbc** auf dem Server befindet.
+>Stellen Sie vor dem Start sicher **dass sich das Paket** unixodbc“ auf dem Server befindet.
 
 1. Installieren Sie **iq_odbc**. Nach Abschluss der Installation wird möglicherweise ein Fehler angezeigt, der ignoriert werden kann.
 
@@ -69,9 +69,9 @@ Die Verbindung zu einer externen Sybase IQ-Datenbank über die FDA-Option erford
 
 ## Externes sybase IQ-Konto {#sybase-external}
 
-Mit dem externen Sybase IQ-Konto können Sie Ihre Campaign-Instanz mit Ihrer externen Sybase IQ-Datenbank verbinden.
+Mit dem externen Konto Sybase IQ können Sie Ihre Campaign-Instanz mit Ihrer externen Sybase IQ-Datenbank verbinden.
 
-1. Klicken Sie in Campaign **[!UICONTROL Explorer]** auf **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Plattform]** &#39;>&#39; **[!UICONTROL Externe Konten]**.
+1. Klicken Sie **[!UICONTROL Campaign-]** auf **[!UICONTROL Administration]** &quot;>&quot; **[!UICONTROL Plattform]** &quot;>&quot; **[!UICONTROL Externe Konten]**.
 
 1. Klicken Sie auf **[!UICONTROL Neu]** und wählen Sie **[!UICONTROL Externe Datenbank]** als **[!UICONTROL Typ]** aus.
 

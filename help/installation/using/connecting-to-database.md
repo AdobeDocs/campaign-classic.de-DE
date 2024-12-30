@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Herstellen einer Verbindung zu einer externen Datenbank
-description: Erfahren Sie, wie Sie eine Verbindung zu einer externen Datenbank herstellen.
+title: Verbindung zu einer externen Datenbank herstellen
+description: Erfahren Sie, wie Sie eine Verbindung zu einer externen Datenbank herstellen
 feature: Installation, Federated Data Access
 audience: platform
 content-type: reference
@@ -49,7 +49,7 @@ Auf der Registerkarte **[!UICONTROL Parameter]** können Sie spezifische Arbeits
 
 ## Herstellen einer temporären Verbindung {#creating-a-temporary-connection}
 
-Sie können eine Verbindung zu einer externen Datenbank direkt über Workflow-Aktivitäten definieren. In diesem Fall befindet er sich in einer lokalen externen Datenbank, die für die Verwendung in einem aktuellen Workflow reserviert ist. Er wird nicht in den externen Konten gespeichert. Diese Art der pünktlichen Verbindung kann für verschiedene Aktivitäten des Workflows erstellt werden, insbesondere für die Aktivität **[!UICONTROL Abfrage]**, das Laden (RDBMS)]**, die Aktivität**[!UICONTROL  Anreicherung ]**oder die Aktivität**[!UICONTROL  Aufspaltung ]**.**[!UICONTROL 
+Sie können eine Verbindung zu einer externen Datenbank direkt über Workflow-Aktivitäten definieren. In diesem Fall befindet sie sich in einer lokalen externen Datenbank, die für die Verwendung in einem aktuellen Workflow reserviert ist. Sie wird nicht in den externen Konten gespeichert. Diese Art der pünktlichen Verbindung kann für verschiedene Aktivitäten des Workflows erstellt werden, insbesondere für die Aktivität **[!UICONTROL Abfrage]**, das **[!UICONTROL Laden (RDBMS)]** die Aktivität **[!UICONTROL Anreicherung]** oder die Aktivität **[!UICONTROL Aufspaltung]**.
 
 >[!CAUTION]
 >

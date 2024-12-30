@@ -9,7 +9,7 @@ hide: true
 hidefromtoc: true
 exl-id: 24b2ee47-bec7-43ce-81b3-0b2d1a5cebae
 source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '743'
 ht-degree: 100%
 
@@ -76,6 +76,6 @@ Wenn Sie auf einer neuen Plattform erstmals E-Mails versenden, verwenden Sie mö
 
 ## Anmeldemöglichkeit mit doppelter Bestätigung (Double opt-in) {#double-opt-in}
 
-Um den Nachrichtenversand an ungültige Adressen zu vermeiden, unnütze Kommunikation zu minimieren und die Reputation des Absenders zu schützen, empfiehlt Adobe die doppelte Anmeldung zur Bestätigung eines Abonnements. Damit können Sie sicherstellen, dass sich ein Empfänger absichtlich angemeldet hat.
+Um den Nachrichtenversand an ungültige Adressen zu vermeiden, unnütze Kommunikation zu minimieren und die Reputation des Absenders zu schützen, empfiehlt Adobe die doppelte Anmeldung zur Bestätigung eines Abonnements. Damit können Sie sicherstellen, dass sich eine Empfängerin bzw. ein Empfänger absichtlich angemeldet hat.
 
 Einzelheiten zur Implementierung dieses Mechanismus sind in [diesem Abschnitt](../../web/using/use-cases-web-forms.md) beschrieben.

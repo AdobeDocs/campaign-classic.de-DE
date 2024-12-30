@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Konfiguration des Zugriffs auf  [!DNL Vertica Analytics]
-description: Erfahren Sie, wie Sie den Zugriff auf [!DNL Vertica Analytics] in FDA konfigurieren
+description: Erfahren Sie, wie Sie den Zugriff auf  [!DNL Vertica Analytics]  FDA konfigurieren
 feature: Installation, Federated Data Access
 audience: platform
 content-type: reference
@@ -18,27 +18,27 @@ ht-degree: 23%
 
 
 
-Verwenden Sie die Option Campaign **Federated Data Access** (FDA) , um in einer externen Datenbank gespeicherte Informationen zu verarbeiten. Gehen Sie wie folgt vor, um den Zugriff auf [!DNL Vertica Analytics] zu konfigurieren.
+Verwenden Sie die **-Option (Federated Data Access** (FDA) von Campaign, um in einer externen Datenbank gespeicherte Informationen zu verarbeiten. Gehen Sie wie folgt vor, um den Zugriff auf [!DNL Vertica Analytics] zu konfigurieren.
 
-1. Konfigurieren Sie [!DNL Vertica Analytics] für [CentOS](#vertica-centos), [Windows](#vertica-windows) oder [Debian](#vertica-debian)
-1. Konfigurieren des externen [!DNL Vertica Analytics] [Kontos](#vertica-external) in Campaign
+1. [!DNL Vertica Analytics] auf [CentOS](#vertica-centos), [Windows](#vertica-windows) oder [Debian](#vertica-debian)
+1. Konfigurieren des [!DNL Vertica Analytics] [externen Kontos](#vertica-external) in Campaign
 
 ![](assets/snowflake_3.png)
 
-## [!DNL Vertica Analytics] bei CentOS {#vertica-centos}
+## [!DNL Vertica Analytics] auf CentOS {#vertica-centos}
 
-Gehen Sie wie folgt vor, um [!DNL Vertica Analytics] für CentOS zu konfigurieren:
+Gehen Sie wie folgt vor, um [!DNL Vertica Analytics] auf CentOS zu konfigurieren:
 
-1. Laden Sie die ODBC-Treiber für [!DNL Vertica Analytics] herunter. [Klicken Sie hier](https://www.vertica.com/download/vertica/client-drivers/) und laden Sie die neueste Version des Linux RPM herunter.
+1. Laden Sie die ODBC-Treiber für [!DNL Vertica Analytics] herunter. [Hier klicken](https://www.vertica.com/download/vertica/client-drivers/) und das neueste Linux RPM herunterladen.
 
-1. Anschließend müssen Sie unixODBC mit dem folgenden Befehl installieren:
+1. Sie müssen dann unixODBC mit dem folgenden Befehl installieren:
 
    ```
    yum search unixODBC
    yum install unixODBC.x86_64
    ```
 
-1. Wenn Sie den [!DNL Vertica Analytics]-Server bereits installiert haben, wird bereits ein ODBC-Treiber installiert. Aktualisieren Sie in diesem Fall das Laufwerk wie folgt:
+1. Wenn Sie den [!DNL Vertica Analytics] Server bereits installiert haben, ist bereits ein ODBC-Treiber installiert. Aktualisieren Sie in diesem Fall das Laufwerk wie folgt:
 
    ```
    #Switch to root
@@ -77,27 +77,27 @@ Gehen Sie wie folgt vor, um [!DNL Vertica Analytics] für CentOS zu konfiguriere
    rm vertica-client-x.x.x-x.x86_64.rpm
    ```
 
-1. In Adobe Campaign können Sie dann Ihr externes [!DNL Vertica Analytics] -Konto konfigurieren. Weiterführende Informationen zur Konfiguration Ihres externen Kontos finden Sie in [diesem Abschnitt](#vertica-external).
+1. In Adobe Campaign können Sie dann Ihr externes [!DNL Vertica Analytics]-Konto konfigurieren. Weiterführende Informationen zur Konfiguration Ihres externen Kontos finden Sie in [diesem Abschnitt](#vertica-external).
 
 ## [!DNL Vertica Analytics] unter Windows {#vertica-windows}
 
-1. Laden Sie den [ODBC-Treiber für Windows](https://www.vertica.com/download/vertica/client-drivers/) herunter. Um den Treiber für Windows zu installieren, müssen Sie .NET Framework 3.5 aktivieren. Andernfalls versucht der Installationsassistent automatisch zu aktivieren und herunterzuladen.
+1. Laden Sie den [ODBC-Treiber für Windows](https://www.vertica.com/download/vertica/client-drivers/) herunter. Um den Treiber für Windows zu installieren, müssen Sie .NET Framework 3.5 aktivieren, oder der Installationsassistent versucht, ihn automatisch zu aktivieren und herunterzuladen.
 
 1. Konfigurieren Sie den ODBC-Treiber unter Windows. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](https://www.vertica.com/docs/9.2.x/HTML/Content/Authoring/ConnectingToVertica/ClientODBC/SettingUpADSN.htm)
 
-1. In Adobe Campaign können Sie dann Ihr externes [!DNL Vertica Analytics] -Konto konfigurieren. Weiterführende Informationen zur Konfiguration Ihres externen Kontos finden Sie in [diesem Abschnitt](#vertical-external).
+1. In Adobe Campaign können Sie dann Ihr externes [!DNL Vertica Analytics]-Konto konfigurieren. Weiterführende Informationen zur Konfiguration Ihres externen Kontos finden Sie in [diesem Abschnitt](#vertical-external).
 
-## [!DNL Vertica Analytics] unter Debian {#vertica-debian}
+## [!DNL Vertica Analytics] auf Debian {#vertica-debian}
 
 1. Laden Sie die ODBC-Treiber für [!DNL Vertica Analytics] herunter. [Klicken Sie hier](https://sfc-repo.snowflakecomputing.com/odbc/linux/latest/index.html), um mit dem Herunterladen zu beginnen.
 
-1. Anschließend müssen Sie unixODBC mit dem folgenden Befehl installieren:
+1. Sie müssen dann unixODBC mit dem folgenden Befehl installieren:
 
    ```
    apt-get install unixODBC
    ```
 
-1. Wenn Sie den [!DNL Vertica Analytics]-Server bereits installiert haben, wird bereits ein ODBC-Treiber installiert. Aktualisieren Sie in diesem Fall das Laufwerk wie folgt:
+1. Wenn Sie den [!DNL Vertica Analytics] Server bereits installiert haben, ist bereits ein ODBC-Treiber installiert. Aktualisieren Sie in diesem Fall das Laufwerk wie folgt:
 
    ```
    #Switch to root
@@ -139,19 +139,19 @@ Gehen Sie wie folgt vor, um [!DNL Vertica Analytics] für CentOS zu konfiguriere
    Port = 5433
    ```
 
-1. In Adobe Campaign können Sie dann Ihr externes [!DNL Vertica Analytics] -Konto konfigurieren. Weiterführende Informationen zur Konfiguration Ihres externen Kontos finden Sie in [diesem Abschnitt](#vertica-external).
+1. In Adobe Campaign können Sie dann Ihr externes [!DNL Vertica Analytics]-Konto konfigurieren. Weiterführende Informationen zur Konfiguration Ihres externen Kontos finden Sie in [diesem Abschnitt](#vertica-external).
 
 ## Externes Konto [!DNL Vertica Analytics] {#vertica-external}
 
-Sie müssen ein externes [!DNL Vertica Analytics] -Konto erstellen, um Ihre Campaign-Instanz mit Ihrer externen [!DNL Vertica Analytics] -Datenbank zu verbinden.
+Sie müssen ein [!DNL Vertica Analytics] externes Konto erstellen, um Ihre Campaign-Instanz mit Ihrer [!DNL Vertica Analytics] externen Datenbank zu verbinden.
 
-1. Klicken Sie in Campaign **[!UICONTROL Explorer]** auf **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Plattform]** &#39;>&#39; **[!UICONTROL Externe Konten]**.
+1. Klicken Sie **[!UICONTROL Campaign-]** auf **[!UICONTROL Administration]** &quot;>&quot; **[!UICONTROL Plattform]** &quot;>&quot; **[!UICONTROL Externe Konten]**.
 
 1. Wählen Sie **[!UICONTROL Neu]** aus.
 
 1. Wählen Sie **[!UICONTROL Externe Datenbank]** als **[!UICONTROL Typ]** Ihres externen Kontos aus.
 
-1. Konfigurieren Sie das externe Konto **[!UICONTROL Vertica analytics]** , indem Sie Folgendes angeben:
+1. Konfigurieren Sie das externe Konto {]**}Vertica analyticss. Sie müssen Folgendes angeben:**[!UICONTROL 
 
    * **[!UICONTROL Typ]**: [!DNL Vertica Analytics]
 
@@ -169,5 +169,5 @@ Der Connector unterstützt die folgenden Optionen:
 
 | Option | Beschreibung  |
 |---|---|
-| TimeZoneName | Standardmäßig leer, d. h. die Systemzeitzone des Campaign Classic-App-Servers wird verwendet. Die Option kann verwendet werden, um den Sitzungsparameter TIMEZONE zu erzwingen. |
+| TimeZoneName | Standardmäßig leer, d. h. die Systemzeitzone des Campaign Classic-App-Servers wird verwendet. Mit der Option können Sie den Sitzungsparameter TIMEZONE erzwingen. |
 

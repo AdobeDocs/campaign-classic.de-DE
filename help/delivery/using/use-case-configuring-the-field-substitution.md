@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: "Anwendungsbeispiel: Konfigurieren der Wertersetzung"
-description: "Anwendungsbeispiel: Konfigurieren der Wertersetzung"
+title: 'Anwendungsbeispiel: Konfigurieren der Feld-Ersetzung'
+description: 'Anwendungsbeispiel: Konfigurieren der Feld-Ersetzung'
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Seed Address
 exl-id: 3f567b2d-6f98-4831-af84-7db17fd12c6e

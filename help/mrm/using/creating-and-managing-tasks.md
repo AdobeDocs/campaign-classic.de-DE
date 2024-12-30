@@ -368,7 +368,7 @@ Eine Benachrichtigungsaufgabe kann folgende Status haben:
 
 ![](assets/mrm_task_notif_dashboard.png)
 
-Bei der Erstellung müssen folgende Elemente der Aufgabe erfasst werden:
+Bei der Erstellung müssen folgende Elemente der Aufgabe eingegeben werden:
 
 * **[!UICONTROL Zugeordneter Benutzer]**: Es handelt sich um den Benutzer bzw. die Benutzergruppe, die die E-Mail erhält. Wenn die Aufgabe nach dem Versand neu zugeordnet wird, wird die E-Mail nicht mehr an den neu zugeordneten Benutzer versandt (hierzu muss die Aufgabe zurückgesetzt und ihr Beginn angepasst werden).
 * **Beginn der Aufgabe**: Es handelt sich um das Datum, an dem die Benachrichtigungs-E-Mail versandt wird. Dieses Datum muss zum Zeitpunkt der Aufgabenspeicherung zwingend in der Zukunft liegen.

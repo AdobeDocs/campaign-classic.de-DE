@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Konfiguration des Webservers
-description: Erfahren Sie mehr über die wichtigsten Best Practices für die Konfiguration von Webservern
+description: Erfahren Sie mehr über die wichtigsten Best Practices für die Webserver-Konfiguration
 feature: Installation, Instance Settings
 audience: installation
 content-type: reference
@@ -18,27 +18,27 @@ ht-degree: 32%
 
 
 
-Nachfolgend finden Sie einige der wichtigsten Best Practices im Zusammenhang mit der Konfiguration des Webservers (Apache/IIS).
+Unten finden Sie einige der wichtigsten Best Practices in Bezug auf die Konfiguration von Webservern (Apache/IIS).
 
 * Ändern Sie Standard-Fehlerseiten.
 
 * Alte SSL-Version und -Ziffern deaktivieren:
 
-  **Bearbeiten Sie auf Apache** /etc/apache2/mods-available/ssl.conf. Hier ein Beispiel:
+  **Auf Apache**, bearbeiten Sie /etc/apache2/mods-available/ssl.conf. Hier ein Beispiel:
 
    * `SSLProtocol all -SSLv2 -SSLv3 -TLSv1`
    * `SSLCipherSuite HIGH:MEDIUM:!aNULL:!MD5:!SSLv3:!SSLv2:!TLSv1`
 
-  **Führen Sie auf IIS** (siehe die [Dokumentation](https://support.microsoft.com/en-us/kb/245030)) die folgende Konfiguration durch:
+  **In IIS** (siehe [Dokumentation](https://support.microsoft.com/en-us/kb/245030)) führen Sie die folgende Konfiguration durch:
 
    * Fügen Sie einen Registrierungs-Unterschlüssel in HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL hinzu.
-   * Damit das System die Protokolle verwenden kann, die nicht standardmäßig ausgehandelt werden (z. B. TLS 1.2), ändern Sie in den folgenden Registrierungsschlüsseln unter dem Schlüssel **Protokolle** die DWORD-Wertdaten des Wertes DisabledByDefault in 0x0:
+   * Damit das System die Protokolle verwenden kann, die nicht standardmäßig ausgehandelt werden (z. B. TLS 1.2), ändern Sie die DWORD-Wertdaten des DisabledByDefault-Werts in den folgenden Registrierungsschlüsseln unter dem Schlüssel **Protokolle** in 0x0:
 
-     SCHANNEL\Protokolle\TLS 1.2\Client
+     SCHANNEL\Protocols\TLS 1.2\Client
 
-     SCHANNEL\Protokolle\TLS 1.2\Server
+     SCHANNEL\Protocols\TLS 1.2\Server
 
-  **SSL x.0** deaktivieren
+  **SSL x.0 deaktivieren**
 
   SCHANNEL\Protocols\SSL 3.0\Client: DisabledByDefault: DWORD (32-Bit) Wert zu 1
 
@@ -46,28 +46,28 @@ Nachfolgend finden Sie einige der wichtigsten Best Practices im Zusammenhang mit
 
 * Entfernen Sie die **TRACE**-Methode:
 
-  **Bearbeiten Sie auf Apache** in /etc/apache2/conf.d/security: TraceEnable **Off**
+  **Auf Apache**, Bearbeiten in /etc/apache2/conf.d/security: TraceEnable **Off**
 
-  **Führen Sie auf IIS** (siehe die [Dokumentation](https://www.iis.net/configreference/system.webserver/security/requestfiltering/verbs)) die folgende Konfiguration durch:
+  **In IIS** (siehe [Dokumentation](https://www.iis.net/configreference/system.webserver/security/requestfiltering/verbs)) führen Sie die folgende Konfiguration durch:
 
    * Achten Sie darauf, dass der **Request-Filtering**-Rollendienst oder die entsprechende Funktion installiert ist.
-   * Klicken Sie im Bereich **Anforderungsfilter** auf die Registerkarte &quot;HTTP-Verben&quot;und dann auf &quot;Verb verweigern&quot;. Geben Sie im Bereich &quot;Aktionen&quot;im Dialogfeld &quot;Öffnen&quot;TRACE ein.
+   * Klicken Sie im Bereich **Anforderungsfilterung** auf die Registerkarte HTTP-Verben und dann auf Verb ablehnen . Geben Sie im Bereich Aktionen im Dialogfeld Öffnen TRACE ein.
 
 * Entfernen Sie das Banner:
 
-  **Bearbeiten Sie auf Apache** /etc/apache2/conf.d/security:
+  **Auf Apache** bearbeiten Sie /etc/apache2/conf.d/security:
 
    * ServerSignature auf **Off**
    * ServerTokens auf **Prod**
 
-  **Führen Sie auf IIS** die folgende Konfiguration durch:
+  **In IIS** führen Sie die folgende Konfiguration durch:
 
    * Installieren Sie **URLScan**.
    * Ändern Sie die Datei **Urlscan.ini** in **RemoveServerHeader=1**.
 
 * Begrenzen Sie die Größe der Abfrage, um zu verhindern, dass wichtige Dateien hochgeladen werden.
 
-  **Fügen Sie auf Apache** die Anweisung **LimitRequestBody** (Größe in Byte) in / Verzeichnis hinzu.
+  **Fügen Sie** Apache die Direktive **LimitRequestBody** (Größe in Byte) im Verzeichnis / hinzu.
 
   ```
   <Directory />
@@ -77,9 +77,9 @@ Nachfolgend finden Sie einige der wichtigsten Best Practices im Zusammenhang mit
   </Directory>
   ```
 
-  **Legen Sie auf IIS** (siehe die [Dokumentation](https://www.iis.net/configreference/system.webserver/security/requestfiltering/requestlimits)) die **maxAllowedContentLength** (maximal zulässige Inhaltslänge) in den Inhaltsfilteroptionen fest.
+  **In IIS** (siehe [Dokumentation](https://www.iis.net/configreference/system.webserver/security/requestfiltering/requestlimits)) legen Sie die **maxAllowedContentLength** (maximal zulässige Inhaltslänge) in den Inhaltsfilteroptionen fest.
 
 Verwandte Themen:
 
-* [Adobe Marketing Cloud Compliance Overview](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/overview#privacy)
+* [Übersicht über die Adobe Marketing Cloud-Konformität](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/overview#privacy)
 * [Adobe Campaign-Sicherheitsübersicht](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/overview#security)

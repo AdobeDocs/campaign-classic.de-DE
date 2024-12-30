@@ -15,10 +15,10 @@ ht-degree: 22%
 
 
 
-Im Folgenden finden Sie die verschiedenen Endpunkte, die im Campaign Classic verwendet werden.
+Im Folgenden finden Sie die verschiedenen Endpunkte, die beim Campaign Classic verwendet werden.
 
 | Kontext | URL |
 |--- |--- |
 | Browser-Endpunkte | `https://*.experiencecloud.adobe.com` (SSO-Provider)<br>`https://*.campaign.adobe.com` (Campaign-Instanz)<br>`https://adobeid-na1.services.adobe.com` (Adobe-Anmeldung) |
 | Inbox Rendering (Litmus) | `https://deliverability-app.neolane.net/deliverability` |
-| Branding-URL, Mirrorseiten, Tracking, Datei (Softwareverteilungs-Assistent) | Überprüfen Sie die für Sie konfigurierten URLs. |
+| Branding-URL, Mirror-Seiten, Tracking, fileref (Bereitstellungsassistent) | Überprüfen Sie die für Sie konfigurierten URLs. |

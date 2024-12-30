@@ -18,35 +18,35 @@ ht-degree: 4%
 
 
 
-Die folgenden Befehlszeilen erfordern die Möglichkeit, auf den Anwendungsserver zuzugreifen. Bei Bereitstellungen, die von Adobe gehostet werden, können diese Befehle nur von Adobe ausgeführt werden.
+Für die folgenden Befehlszeilen ist der Zugriff auf den Anwendungsserver erforderlich. Bei Bereitstellungen, die von Adobe gehostet werden, können diese Befehle nur von Adobe ausgeführt werden.
 
-## Erstellen einer Instanz {#creating-an-instance}
+## Instanz erstellen {#creating-an-instance}
 
-Die Instanzerstellung kann mithilfe von Befehlszeilen mit der folgenden Syntax ausgeführt werden:
+Die Instanzerstellung kann über Befehlszeilen mit der folgenden Syntax ausgeführt werden:
 
 ```sql
 nlserver config -addinstance:instance/masques DNS[/lang]
 ```
 
-(wobei **eng** und **fra** mögliche Werte für den Parameter `[lang]` sind)
+(wobei **eng** und **fra** mögliche Werte für den `[lang]` sind)
 
-Mit dem Befehl **nlserver config -addinstance:instance1/demo&#42;/eng** können Sie eine Instanz mit dem Namen **instance1** in englischer Sprache mit der DNS-Maske demo&#42; erstellen.
+Der Befehl **nlserver config -addinstance:instance1/demo&#42;/eng** ermöglicht die Erstellung einer Instanz namens **instance1** in englischer Sprache mit der DNS-Maske demo&#42;.
 
 ## Datenbank deklarieren {#declaring-a-database}
 
-Sie können eine vorhandene Datenbank über die Befehlszeile mit einer Instanz verknüpfen, indem Sie die folgende Syntax verwenden:
+Sie können eine vorhandene Datenbank mit einer -Instanz über die Befehlszeile verknüpfen, indem Sie die folgende Syntax verwenden:
 
 ```sql
 nlserver config -setdblogin:[rbdms:]account[:database][/password]@server
 ```
 
-Die folgenden Werte sind für den Parameter **`[rdbms]`** möglich:
+Die folgenden Werte sind für den **`[rdbms]`** Parameter möglich:
 
-* **postgresql**: für PostgreSQL,
+* **PostgreSQL**: für PostgreSQL,
 * **oracle**: für Oracle,
 * **mssql**: für Microsoft SQL Server,
 
-Mit dem folgenden Befehl wird die Instanz **demo** mit dem SQL-Typ-Server namens **base6** konfiguriert, der mit dem Konto **campaign** und seinem **password** auf dem Server **dbsrv** verknüpft ist:
+Mit dem folgenden Befehl wird die **demo**-Instanz mit dem SQL-Servertyp **base6** konfiguriert, der mit dem **campaign**-Konto und dessen **password** auf dem **dbsrv**-Server verknüpft ist:
 
 ```sql
  nlserver config -setdblogin:db:campaign:myBase/password@dbServer -instance:demo

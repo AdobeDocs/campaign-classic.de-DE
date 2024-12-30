@@ -9,7 +9,7 @@ hide: true
 hidefromtoc: true
 exl-id: a039a288-2e7b-4f35-9885-ead3ed4347af
 source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 100%
 
@@ -21,7 +21,7 @@ Sie haben auf die Schaltfläche **Senden** geklickt? Lassen Sie uns sehen, was d
 
 ## Überwachen von Sendungen {#monitoring-deliveries}
 
-Um Ihre Kampagnen steuern zu können, müssen Sie zunächst sichergehen, dass Ihre Nachricht bei Ihren Empfängern tatsächlich angekommen ist.
+Um Ihre Kampagnen steuern zu können, müssen Sie zunächst sichergehen, dass Ihre Nachricht bei Ihren Empfängerinnen und Empfängern tatsächlich angekommen ist.
 
 Prüfen Sie im Versand-Dashboard von Campaign die verarbeiteten Nachrichten und Versand-Logs.
 In den Versand-Logs können Sie den Status der Nachrichten feststellen. [Weitere Informationen](about-delivery-monitoring.md).
@@ -40,7 +40,7 @@ Tipp: Prüfen Sie die Konfiguration der Traffic-Verwaltung (IP-Affinität). Weit
 
 ## Nachverfolgen von Verhaltensmustern {#track-behaviour}
 
-Um das Verhalten Ihrer Empfänger besser kennenzulernen, können Sie ihre Reaktion auf einen Versand verfolgen: Empfang, Öffnung, Klicks auf Links, Abmeldungen usw. In Campaign Classic werden diese Informationen auf der Registerkarte „Tracking“ der Empfänger, auf die der Versand abzielt, und auf der Registerkarte „Tracking“ des Versands angezeigt.
+Um das Verhalten Ihrer Empfangenden besser kennenzulernen, können Sie ihre Reaktion auf einen Versand verfolgen: Empfang, Öffnung, Klicks auf Links, Abmeldungen usw. In Campaign Classic werden diese Informationen auf der Registerkarte „Tracking“ der Empfänger, auf die der Versand abzielt, und auf der Registerkarte „Tracking“ des Versands angezeigt.
 
 **Tipp:** Das Nachrichten-Tracking ist standardmäßig aktiviert. Um URLs zu konfigurieren, wählen Sie im unteren Bereich des Versandassistenten die Option „URLs anzeigen“ aus. Sie können für jede URL der Nachricht festlegen, ob Sie die Nachverfolgung aktivieren möchten.
 

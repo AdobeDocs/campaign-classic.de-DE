@@ -19,37 +19,37 @@ ht-degree: 6%
 
 
 
-Der Datenbankserver kann unabhängig vom vom vom Anwendungsserver oder den Servern verwendeten Betriebssystem auf einem beliebigen Betriebssystem ausgeführt werden, sofern eine Netzwerkverbindung besteht.
+Der Datenbankserver kann auf jedem beliebigen Betriebssystem ausgeführt werden, unabhängig vom Betriebssystem, das vom Anwendungsserver bzw. den Anwendungsservern verwendet wird, sofern eine Netzwerkverbindung zwischen ihnen besteht.
 
-Das Betriebssystem des Datenbankservers ist nicht wichtig, solange die Verbindung mit den verschiedenen Komponenten von Adobe Campaign verfügbar ist.
+Das Betriebssystem des Datenbankservers ist nicht wichtig, solange eine Verbindung mit den verschiedenen Komponenten von Adobe Campaign verfügbar ist.
 
-Überprüfen Sie auch den Abschnitt [Datenbankzugriffsebenen](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers) .
+Überprüfen Sie auch den [Datenbankzugriffsebenen](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers).
 
 ## Microsoft SQL Server {#microsoft-sql-server}
 
-Der native Client muss auf den Adobe Campaign-Anwendungsservern installiert sein.
+Der native Client muss auf den Adobe Campaign-Anwendungsservern installiert werden.
 
-Sie können über das Konfigurationsfenster des ODBC-Treibers unter **SQL Server Native Client 11.0** nach dem nativen Client auf dem Server suchen.
+Sie können über das Bedienfeld für die ODBC-Treiberkonfiguration unter **SQL Server Native Client 11.0** prüfen, ob der native Client auf dem Server vorhanden ist.
 
 Die folgende Zugriffs-DLL muss vorhanden sein: **sqlncli11.dll**.
 
-Zugriffs-DLLs finden Sie auf der Microsoft-Website.
+Zugriffs-DLLs befinden sich auf der Microsoft-Website.
 
 >[!NOTE]
 >
->Der Zugriff auf Microsoft SQL Server von einem Anwendungsserver, der unter Linux ausgeführt wird, wird nicht unterstützt.
+>Der Zugriff auf Microsoft SQL Server von einem Anwendungsserver unter Linux wird nicht unterstützt.
 
 ## Oracle {#oracle}
 
 >[!NOTE]
 >
->Spaltennamen mit Multibytezeichen werden nicht unterstützt.
+>Spaltennamen mit Multibyte-Zeichen werden nicht unterstützt.
 
-Die Parameter **NLS_NCHAR_CHARACTERSET** und **NLS_CHARACTERSET** müssen ordnungsgemäß konfiguriert sein, damit die Datenbank in Unicode oder ANSI funktioniert.
+Die **NLS_NCHAR_CHARACTERSET** und **NLS_CHARACTERSET** müssen ordnungsgemäß konfiguriert sein, damit die Datenbank in Unicode oder ANSI funktioniert.
 
-Adobe Campaign verwendet die standardmäßige Oracle-Kodierung. Bei Verwendung einer anderen Kodierung kann es zu Problemen mit der Kompatibilität der Trigger kommen. Wenden Sie sich in diesem Fall an den technischen Support.
+Adobe Campaign verwendet die standardmäßige Oracle-Kodierung. Die Verwendung anderer Kodierungen kann zu Problemen mit der Trigger-Kompatibilität führen: Wenden Sie sich in diesem Fall an den technischen Support.
 
-Verwenden Sie den folgenden Befehl **sqlplus** , um mehr über Ihre Kodierung zu erfahren:
+Verwenden Sie den folgenden Befehl **sqlplus**, um Ihre Kodierung zu ermitteln:
 
 ```
 SELECT * FROM nls_database_parameters ;
@@ -62,13 +62,13 @@ SELECT * FROM nls_database_parameters ;
   NLS_CHARACTERSET         AL32UTF8
   ```
 
-* Bei einer ANSI-Installation (Nicht-Unicode) wird nur die folgende Kodierung unterstützt:
+* Für eine ANSI-Installation (ohne Unicode) wird nur die folgende Kodierung unterstützt:
 
 ```
   NLS_CHARACTERSET WE8MSWIN1252
 ```
 
-Um sich bei **sqlplus** anzumelden, verwenden Sie das Oracle-Benutzerprofil:
+Verwenden Sie zum Anmelden bei **sqlplus** das Oracle-Benutzerprofil:
 
 ```
 su - oracle 
@@ -76,12 +76,12 @@ sqlplus
 [login] [password]
 ```
 
-Sie können auch auf den [Oracle-Client unter Linux](../../installation/using/installing-packages-with-linux.md#oracle-client-in-linux) verweisen.
+Weitere Informationen finden Sie unter [Oracle-Client unter Linux](../../installation/using/installing-packages-with-linux.md#oracle-client-in-linux).
 
 ## PostgresSQL {#postgressql}
 
-Es wird empfohlen, die UTF-8-Unterstützung bei der Installation der Datenbank-Engine zu installieren. Auf diese Weise können Sie Unicode-Datenbanken erstellen.
+Es wird empfohlen, bei der Installation der Datenbank-Engine die UTF-8-Unterstützung zu installieren. Auf diese Weise können Sie Unicode-Datenbanken erstellen.
 
 **Verwandtes Thema**
 
-* [Nicht angemeldete Option in Adobe Campaign Classic-Tabellen](https://helpx.adobe.com/campaign/kb/unlogged-tables-classic.html)
+* [Option „Nicht protokolliert“ in Adobe Campaign Classic-Tabellen](https://helpx.adobe.com/campaign/kb/unlogged-tables-classic.html)

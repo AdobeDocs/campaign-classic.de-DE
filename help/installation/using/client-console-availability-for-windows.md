@@ -19,44 +19,44 @@ ht-degree: 8%
 
 
 
-Damit sich Adobe Campaign-Benutzer bei der von Ihnen erstellten und konfigurierten Instanz anmelden können, müssen sie die Clientkonsole verwenden.
+Damit sich Adobe Campaign-Benutzende bei der von Ihnen erstellten und konfigurierten Instanz anmelden können, müssen sie die Client-Konsole verwenden.
 
-## Bereitstellen der Client-Konsole
+## Client-Konsole verfügbar machen
 
-Wenn der zum Starten eines Adobe Campaign-Anwendungsservers verwendete Computer (**nlserver web**) Benutzerverbindungen von der Clientkonsole erhält, können Sie ihn so konfigurieren, dass das Installationsprogramm für den Rich-Client von Adobe Campaign über eine HTML-Schnittstelle verfügbar gemacht wird. Sobald eine neue Version der Client-Konsole verfügbar ist, werden Benutzer aufgefordert, sie beim Start ihrer Client-Konsole herunterzuladen.
+Wenn der Computer, der zum Starten eines Adobe Campaign-Anwendungsservers (**nlserver web**) verwendet wird, Benutzerverbindungen von der Client-Konsole erhält, können Sie ihn so konfigurieren, dass das Installationsprogramm für den Adobe Campaign Rich-Client über eine HTML-Schnittstelle verfügbar gemacht wird. Wenn eine neue Version der Client-Konsole verfügbar ist, werden Benutzer beim Starten ihrer Client-Konsole aufgefordert, diese herunterzuladen.
 
 Gehen Sie dazu folgendermaßen vor:
 
-1. Wählen Sie das Paket aus, das das Konsoleninstallationsprogramm enthält.
+1. Wählen Sie das Paket aus, das das Konsolen-Installationsprogramm enthält.
 
-   Diese Datei heißt `setup-client-7.X.XXXX.exe`, wobei `X` die Unterversion von Adobe Campaign und `XXXX` die Build-Nummer ist.
+   Diese Datei wird als `setup-client-7.X.XXXX.exe` bezeichnet, wobei `X` die Unterversion von Adobe Campaign und `XXXX` die Build-Nummer ist.
 
-1. Kopieren Sie dieses Paket und fügen Sie es in den Adobe Campaign-Installationsordner (auf dem Marketing-Server für hybride Installationen) unter &quot;**/datakit/nl/eng/jsp**&quot;ein.
+1. Kopieren Sie dieses Paket und fügen Sie es in den Adobe Campaign-Installationsordner (auf dem Marketing-Server für Hybridinstallationen) unter **/datakit/nl/eng/jsp** ein.
 1. Starten Sie den Adobe Campaign-Server.
 
-Campaign-Benutzer können dann das Installationsprogramm der Konsole über einen Webbrowser herunterladen. Die URL lautet dazu:
+Campaign-Benutzer können dann das Installationsprogramm für die Konsole über einen Webbrowser unter folgender URL herunterladen:
 
 ```
 https://<your Adobe Campaign server>:>port number>/nl/jsp/logon.jsp
 ```
 
-Für diese Seite sind ein Login und ein Kennwort erforderlich, die in der Anwendung definiert sind.
+Für diese Seite sind ein Login und ein Passwort erforderlich, die im Programm definiert sind.
 
-In diesem Abschnitt ](../../installation/using/installing-the-client-console.md) erfahren Sie, wie Sie die Konsole [installieren.
+Wie Sie die Konsole installieren, erfahren [ (in diesem Abschnitt](../../installation/using/installing-the-client-console.md).
 
-## Endbenutzer vorschlagen, ihre Clientkonsole zu aktualisieren
+## Endbenutzenden vorschlagen, ihre Client-Konsole zu aktualisieren
 
-Sobald die Konsole im Ordner des Campaign-Servers verfügbar ist, werden die Benutzer aufgefordert, die neueste Clientkonsolenversion in einem dedizierten Eingabeaufforderungsfenster herunterzuladen. Adobe empfiehlt, die Option **[!UICONTROL Diese Frage nicht mehr stellen]** nicht auszuwählen, um sicherzustellen, dass alle Benutzer benachrichtigt werden, wenn eine neue Konsolenversion verfügbar ist.
+Sobald die Konsole im Campaign-Server-Ordner verfügbar ist, werden die Benutzer in einem speziellen Eingabeaufforderungsfenster eingeladen, die neueste Version der Client-Konsole herunterzuladen. Adobe empfiehlt, die Option **[!UICONTROL Diese Frage nicht mehr stellen]** deaktiviert zu lassen, um sicherzustellen, dass alle Benutzenden benachrichtigt werden, wenn eine neue Konsolenversion verfügbar ist.
 
-Wenn Sie diese Option auswählen und sich gegen den Download der neuesten Version entscheiden, wird kein anderer Benutzer über die neuen verfügbaren Versionen informiert.
+Wenn Sie diese Option wählen und nicht die neueste Version herunterladen möchten, wird kein anderer Benutzer über neue verfügbare Versionen informiert.
 
-Wenn die Option ausgewählt wurde, können Sie diese Eingabeaufforderung zurücksetzen. Nur Systemadministratoren, die mit der Bearbeitung von Windows Registry vertraut sind, sollten diese Änderungen vornehmen:
+Falls die Option ausgewählt wurde, können Sie diese Eingabeaufforderung zurücksetzen. Diese Änderungen sollten nur von Systemadministratoren vorgenommen werden, die mit der Bearbeitung der Windows-Registrierung vertraut sind:
 
-1. Öffnen Sie den Registrierungs-Editor mit dem Befehl **regedit** im Menü **[!UICONTROL Start > Ausführen]** .
+1. Öffnen Sie den Registrierungs-Editor mit dem Befehl **regedit** im Menü **[!UICONTROL Start > Ausführen]**.
 1. Suchen Sie nach dem Knoten und erweitern Sie ihn.
 
    ```
    \HKEY_CURRENT_USER\Software\Neolane\NL_6\nlclient
    ```
 
-1. Löschen Sie den Eintrag **confAdvisedUpgrade** und schließen Sie den Registrierungs-Editor.
+1. Löschen Sie den **confAdvisedUpgrade**-Eintrag und schließen Sie den Registrierungs-Editor.

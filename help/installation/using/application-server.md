@@ -17,55 +17,55 @@ ht-degree: 2%
 
 # Anwendungs-Server{#application-server}
 
-Die erforderlichen Datenbankzugriffsebenen müssen auf dem Server installiert sein und über das Adobe Campaign-Konto zugänglich sein.
+Die erforderlichen Datenbankzugriffsebenen müssen auf dem Server installiert sein und vom Adobe Campaign-Konto aus zugänglich sein.
 
 ## Java Development Kit - JDK {#jdk}
 
-Java Development Kit (JDK) ist ein Software Development Kit. Es ist die grundlegende Komponente, die die Java-Anwendungs- und Java-Applet-Entwicklung ermöglicht.
+Das Java Development Kit (JDK) ist ein Software Development Kit. Sie ist die grundlegende Komponente, die die Entwicklung von Java-Anwendungen und Java-Applets ermöglicht.
 
-Der dynamische Web-Seiten-Generator verwendet die JSP-Technologie. Dazu ist eine Tomcat-Engine (von Apache) in der Anwendung enthalten. Dazu ist ein Java Development Kit (JDK) erforderlich, das auf allen Servern installiert ist, auf denen die Adobe Campaign-Anwendung installiert ist.
+Der dynamische Web-Seiten-Generator verwendet die JSP-Technologie. Dazu ist eine Tomcat-Engine (von Apache) im Programm enthalten. Dazu ist ein Java Development Kit (JDK) erforderlich, das auf allen Servern installiert ist, auf denen die Adobe Campaign-Anwendung installiert ist.
 
-Sie müssen zunächst ein JDK auf den Computern installieren, auf denen Sie den Adobe Campaign-Anwendungsserver ausführen möchten (**nlserver web** -Prozess), da es einen Servlet-Container, Apache Tomcat, enthält, der zum Generieren dynamischer Webseiten (Berichte, Webformulare usw.) verwendet wird.
+Sie müssen zunächst ein JDK auf den Computern installieren, auf denen Sie den Adobe Campaign-Anwendungsserver ausführen möchten (**nlserver web** process), da es den Servlet-Container Apache Tomcat enthält, mit dem dynamische Web-Seiten (Berichte, Web-Formulare usw.) generiert werden.
 
 Die Anwendung wurde für das von Oracle entwickelte Java Development Kit (JDK) sowie für **OpenJDK** genehmigt.
 
-Die unterstützten Versionen werden in der Campaign [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md) beschrieben.
+Die unterstützten Versionen werden in der Campaign-[ (Kompatibilitätsmatrix) ](../../rn/using/compatibility-matrix.md).
 
 
 >[!AVAILABILITY]
 >
->* Ab Version 7.4.1 erfordert Campaign mindestens **Java JDK 11**. Wenn Ihr Campaign-Server in einer Windows-Umgebung installiert ist, wird Java Runtime (JRE) nicht mehr automatisch erkannt. Die Umgebungsvariable JRE_HOME muss auf den Ordner festgelegt werden, in dem Campaign die Datei `bin/server/jvm.dll` finden kann. Wenn beispielsweise Ihr JDK 11 im Ordner &quot;`C:\Program Files\Java\jdk-11`&quot;installiert ist, muss Ihr JRE_HOME &quot;`C:\Program Files\Java\jdk-11`&quot;lauten.
+>* Ab Version 7.4.1 erfordert Campaign mindestens **Java JDK 11**. Wenn Ihr Campaign-Server in einer Windows-Umgebung installiert ist, wird die Java Runtime (JRE) nicht mehr automatisch erkannt. Die Umgebungsvariable JRE_HOME muss auf den Ordner festgelegt sein, in dem Campaign die `bin/server/jvm.dll`-Datei finden kann. Wenn beispielsweise Ihr JDK 11 im Ordner `C:\Program Files\Java\jdk-11` installiert ist, muss Ihr JRE_HOME `C:\Program Files\Java\jdk-11` sein.
 >
 >* Ab Version 7.4.1 ist Tomcat 10.1 die Standardversion.
 >
 
 ### Empfehlungen
 
-Wenden Sie beim Installieren und Aktualisieren Ihres Java Development Kits die folgenden Empfehlungen an:
+Befolgen Sie bei der Installation und Aktualisierung Ihres Java Development Kits die folgenden Empfehlungen:
 
-* Java Development Kit kann mit der entsprechenden JDK-Version installiert werden, die bereits von anderen Anwendungen auf dem Computer verwendet wird.
+* Das Java Development Kit kann mit der entsprechenden JDK-Version installiert werden, die bereits von anderen Anwendungen auf dem Computer verwendet wird.
 
-* Bei der Installation des JDK ist die Integration mit den Webbrowsern nicht erforderlich.
+* Bei der Installation des JDK ist die Integration in die Webbrowser nicht erforderlich.
 
-* Auf einem Computer, auf dem nur Versandagenten (**nlserver mta** -Prozess) oder der Workflow-Server (**nlserver wfserver** -Prozess) ausgeführt werden, ist die Installation eines JDK nicht erforderlich.
+* Auf einem Computer, der nur Versandagenten (**nlserver mta**-Prozess) oder den Workflow-Server (**nlserver wfserver**-Prozess) ausführt, ist die Installation eines JDK nicht erforderlich.
 
-* Beim Aktualisieren Ihrer Java-Version müssen Sie zunächst die vorherige Version deinstallieren. Beide Versionen von Java, die auf demselben Computer installiert sind, können Konflikte verursachen.
+* Beim Upgrade der Java-Version müssen Sie zunächst die vorherige Version deinstallieren. Beide auf demselben Computer installierten Java-Versionen können Konflikte verursachen.
 
-  Als On-Premise-Kunde können Sie überprüfen, ob die Umgebungsvariable `LD_LIBRARY_PATH` [2} auf die neueste Version eingestellt ist (z. B. ](installing-packages-with-linux.md#environment-variables) java11). Wenn sie auf eine frühere Version festgelegt ist (z. B. Java8), dann muss sie aktualisiert werden. Für JDK 11 lautet der Pfad zum Suchen von JDK-Bibliotheken `/usr/lib/jvm/java-11-openjdk-amd64/lib`.
+  Als On-Premise-Kunde können Sie überprüfen, ob `LD_LIBRARY_PATH` [Umgebungsvariable](installing-packages-with-linux.md#environment-variables) auf die neueste Version festgelegt ist (z. B. Java11). Wenn eine frühere Version verwendet wird (z. B. Java8), dann muss es aktualisiert werden. Für JDK 11 lautet der Pfad zum Suchen von JDK-Bibliotheken `/usr/lib/jvm/java-11-openjdk-amd64/lib`.
 
 
 ### Installationsschritte
 
 Java Development Kit ist plattformspezifisch: Für jedes Betriebssystem sind separate Installationsprogramme erforderlich.
 
-Um JDK herunterzuladen, stellen Sie eine Verbindung zur [Oracle-Website](https://www.oracle.com/technetwork/java/javase/downloads/index.html){target="_blank"} her.
+Um JDK herunterzuladen, verbinden Sie sich mit der [Oracle-Website](https://www.oracle.com/technetwork/java/javase/downloads/index.html){target="_blank"}.
 
 >[!CAUTION]
 >
-> Laden Sie unbedingt ein Java Development Kit (JDK) herunter, nicht eine Java Runtime Environment (JRE).
+> Stellen Sie sicher, dass Sie ein Java Development Kit (JDK) und keine Java Runtime Environment (JRE) herunterladen.
 
 
-Um die JDSL in einer Linux-Umgebung zu installieren, empfiehlt Adobe die Verwendung eines Paketmanagers.
+Um JDSL in einer Linux-Umgebung zu installieren, empfiehlt Adobe die Verwendung eines Package Managers.
 
 Verwenden Sie für Debian den folgenden Befehl:
 
@@ -85,22 +85,22 @@ dnf install java-11-openjdk-headless
 
 Sie können Adobe Campaign verwenden, um Berichte in Microsoft Excel und Adobe PDF zu exportieren.
 
-* Beim Excel-Format für Microsoft verlässt sich Adobe Campaign auf **LibreOffice**.
+* Für das Microsoft Excel-Format stützt sich Adobe Campaign auf **LibreOffice**.
 
-* Für das Adobe PDF-Format verwendet Adobe Campaign den Konverter **PhantomJS** . PhantomJs ist im Factory-Paket enthalten und LibreOffice muss auf den Computern installiert sein, auf denen der Adobe Campaign-Anwendungsserver ausgeführt wird (**nlserver web** -Prozess).
+* Für das Adobe PDF-Format verwendet Adobe Campaign den **PhantomJS**-Konverter. PhantomJs ist im Werkspaket enthalten und LibreOffice muss auf dem/den Computer(n) installiert sein, auf dem/denen der Adobe Campaign-Anwendungsserver ausgeführt wird (**nlserver-**).
 
 >[!NOTE]
 >
->Für Linux müssen Sie Schriftarten hinzufügen. Weitere Informationen hierzu finden Sie unter [Schriftarten für MTA-Statistiken](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#fonts-for-mta-statistics).
+>Für Linux müssen Sie Schriftarten hinzufügen. Weitere Informationen hierzu finden Sie unter [ für MTA-Statistiken](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#fonts-for-mta-statistics).
 
 ## SpamAssassin {#spamassassin}
 
-Mit SpamAssassin können Sie E-Mails eine Punktzahl zuweisen, um festzustellen, ob eine Nachricht von Anti-Spam-Tools, die beim Empfang verwendet werden, als unerwünscht betrachtet werden kann. Die Installation ist optional.
+Mit SpamAssassin können Sie E-Mails eine Punktzahl zuweisen, um festzustellen, ob eine Nachricht von Anti-Spam-Tools, die beim Empfang verwendet werden, als unerwünscht eingestuft werden könnte. Die Installation ist optional.
 
-Die Einstufung von E-Mails als unerwünscht durch SpamAssassin basiert ausschließlich auf Filter- und Scoring-Regeln. Diese Regeln müssen daher mindestens einmal täglich aktualisiert werden, damit Ihre SpamAssassin-Installation und ihre Integration in Adobe Campaign voll funktionsfähig sind und die Relevanz der für Ihre Sendungen zugewiesenen Bewertungen vor dem Versand gewährleistet ist. Für diese Aktualisierung ist der Serveradministrator verantwortlich, der SpamAssassin hostet.
+Die Qualifizierung von E-Mails als unerwünscht durch SpamAssassin basiert ausschließlich auf Filter- und Bewertungsregeln. Diese Regeln müssen daher mindestens einmal täglich aktualisiert werden, damit Ihre SpamAssassin-Installation und ihre Integration in Adobe Campaign voll funktionsfähig sind und die Relevanz der Ihren Sendungen vor dem Versand zugewiesenen Bewertungen gewährleistet ist. Dieses Update liegt in der Verantwortung des Serveradministrators, der SpamAssassin hostet.
 
-Die mindestens unterstützte Version ist: **3.4**
+Die unterstützte Mindestversion ist: **3.4**
 
-SpamAssassin benötigt einen HTTP-Internetzugang (tcp/80).
+SpamAssassin benötigt einen HTTP-Internetzugang (TCP/80).
 
-Die Installations- und Konfigurationsschritte für SpamAssassin finden Sie unter [SpamAssassin konfigurieren](../../installation/using/configuring-spamassassin.md) .
+Die Installations- und Konfigurationsphasen von SpamAssassin werden unter [Konfigurieren von SpamAssassin](../../installation/using/configuring-spamassassin.md) beschrieben.

@@ -16,12 +16,12 @@ ht-degree: 27%
 
 # Zugriff auf Amazon Redshift konfigurieren {#configure-access-to-redshift}
 
-Verwenden Sie die Option Campaign **Federated Data Access** (FDA) , um in externen Datenbanken gespeicherte Informationen zu verarbeiten. Gehen Sie wie folgt vor, um den Zugriff auf Amazon Redshift zu konfigurieren.
+Verwenden Sie die **-Option (Federated Data Access** (FDA) von Campaign, um in einer externen Datenbank gespeicherte Informationen zu verarbeiten. Gehen Sie wie folgt vor, um den Zugriff auf Amazon Redshift zu konfigurieren.
 
-1. Konfigurieren der [Amazon Redshift-Datenbank](#configuring-redshift)
-1. Konfigurieren des externen Amazon Redshift [account](#redshift-external) in Campaign
+1. [Amazon Redshift-Datenbank konfigurieren](#configuring-redshift)
+1. Konfigurieren des Amazon Redshift [externes Konto](#redshift-external) in Campaign
 
-## Amazon Redshift unter Linux {#redshift-linux}
+## Amazon Redshift auf Linux {#redshift-linux}
 
 Gehen Sie wie folgt vor, um [!DNL Amazon Redshift] unter Linux zu konfigurieren:
 
@@ -43,28 +43,28 @@ Gehen Sie wie folgt vor, um [!DNL Amazon Redshift] unter Linux zu konfigurieren:
       apt-get install -y grep sed tar wget perl curl
      ```
 
-1. Bevor Sie das Skript ausführen, können Sie mit der Option `--help` auf weitere Informationen zugreifen:
+1. Vor Ausführung des Skripts können Sie mit der Option `--help` auf weitere Informationen zugreifen:
 
    ```
    cd /usr/local/neolane/nl6/bin/fda-setup-scripts/
    ./redshift_odbc-setup.sh --help
    ```
 
-1. Rufen Sie den Ordner auf, in dem sich das Skript befindet, und führen Sie das folgende Skript als Stammbenutzer aus:
+1. Greifen Sie auf das Verzeichnis zu, in dem sich das Skript befindet, und führen Sie das folgende Skript als Root-Benutzer aus:
 
    ```
      cd /usr/local/neolane/nl6/bin/fda-setup-scripts
      ./redshift_odbc-setup.sh
    ```
 
-1. Nach der Installation der ODBC-Treiber müssen Sie Campaign Classic neu starten. Führen Sie dazu den folgenden Befehl aus:
+1. Nach der Installation der ODBC-Treiber müssen Sie den Campaign Classic neu starten. Führen Sie dazu den folgenden Befehl aus:
 
    ```
    systemctl stop nlserver.service
    systemctl start nlserver.service
    ```
 
-1. In Campaign können Sie dann Ihr externes [!DNL Amazon Redshift] -Konto konfigurieren. Weiterführende Informationen zur Konfiguration Ihres externen Kontos finden Sie in [diesem Abschnitt](#redshift-external).
+1. In Campaign können Sie dann Ihr [!DNL Amazon Redshift] externes Konto konfigurieren. Weiterführende Informationen zur Konfiguration Ihres externen Kontos finden Sie in [diesem Abschnitt](#redshift-external).
 
 ## Externes Amazon Redshift-Konto {#redshift-external}
 
@@ -76,9 +76,9 @@ Mit dem externen Konto [!DNL Amazon Redshift] können Sie Ihre Campaign-Instanz 
 
 1. Wählen Sie **[!UICONTROL Externe Datenbank]** als **[!UICONTROL Typ]** Ihres externen Kontos aus.
 
-1. Konfigurieren Sie das externe Konto **[!UICONTROL Amazon Redshift]** , indem Sie Folgendes angeben:
+1. Konfigurieren Sie das externe Konto **[!UICONTROL Amazon Redshift]**. Sie müssen Folgendes angeben:
 
-   * **[!UICONTROL Typ]**: Amazon Redshift
+   * **[!UICONTROL Type]**: Amazon Redshift
 
    * **[!UICONTROL Server]**: Name des DNS
 

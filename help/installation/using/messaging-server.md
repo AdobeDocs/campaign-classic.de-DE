@@ -19,14 +19,14 @@ ht-degree: 9%
 
 
 
-Adobe Campaign verarbeitet ausgehende E-Mails nativ, doch ist ein herkömmlicher E-Mail-Server erforderlich, um eingehende Nachrichten zu erhalten, die mit zurückgegebenen E-Mails verknüpft sind (von Mailer-Daemons). Die auf diesem Server konfigurierten Postfächer werden automatisch von der Anwendung verarbeitet.
+Adobe Campaign verarbeitet ausgehende E-Mails nativ. Ein herkömmlicher E-Mail-Server ist jedoch erforderlich, um eingehende Nachrichten zu empfangen, die mit zurückgegebenen E-Mails verknüpft sind (von E-Mail-Daemons). Die auf diesem Server konfigurierten Postfächer werden automatisch von der Anwendung verarbeitet.
 
-Alle für den POP3-Zugriff konfigurierten Server können für den Empfang von E-Mails verwendet werden, wenn sie beim Abruf der E-Mail die SMTP-Header &quot;Message-ID&quot;beibehalten. Beispielsweise sind Implementierungen mit Qmail, SendMail und Microsoft Exchange derzeit in Produktion. Einige Installationen von Lotus Notes/domino zeigten jedoch ein Problem bei der Pflege von &quot;Message-Id&quot;-Kopfzeilen.
+Alle Server, die für den POP3-Zugriff konfiguriert sind, können für den Empfang von Rücksendungen verwendet werden, wenn sie beim Abholen der E-Mail die SMTP-Kopfzeilen „Message-ID“ beibehalten. Beispielsweise befinden sich Implementierungen mit Qmail, SendMail und Microsoft Exchange derzeit in der Produktionsumgebung. Einige Installationen von Lotus Notes/Domino haben jedoch ein Problem mit der Pflege von „Message-Id“-Headern aufgedeckt.
 
 >[!CAUTION]
 >
->Dieser E-Mail-Server muss möglicherweise eine hohe Auslastung bewältigen: In ersten Phasen können typische Listen bis zu 10 % der Absprungraten produzieren (wenn Sie 100.000 Nachrichten senden, erwarten Sie 10.000 Bounces).
+>Dieser Mail-Server ist möglicherweise mit hohen Belastungen konfrontiert: In der Anfangsphase können typische Listen eine Absprungrate von bis zu 10 % aufweisen (wenn Sie 100.000 Nachrichten senden, rechnen Sie mit 10.000 Absprüngen).
 >
->Daher empfehlen wir, für diese Aufgabe nicht Ihren Unternehmens-Messaging-Server zu verwenden, da dies stark beeinträchtigt sein kann.
+>Daher empfehlen wir, bei dieser Aufgabe nicht den Messaging-Server Ihres Unternehmens zu verwenden, da er stark betroffen sein kann.
 >
 >Es wird empfohlen, eine bestimmte Subdomain Ihres DNS und einen dedizierten Server für Bounce Messages zu konfigurieren.

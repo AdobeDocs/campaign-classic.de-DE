@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Deinstallieren von Campaign
+title: Campaign deinstallieren
 description: Informationen zur Deinstallation von Campaign
 feature: Installation
 audience: installation
@@ -16,13 +16,13 @@ ht-degree: 2%
 
 ---
 
-# Deinstallieren von Campaign{#uninstalling-campaign}
+# Campaign deinstallieren{#uninstalling-campaign}
 
 
 
 >[!CAUTION]
 >
->Durch diese Verfahren wird Adobe Campaign dauerhaft deinstalliert. Alle Daten gehen verloren.
+>Mit diesen Verfahren wird Adobe Campaign dauerhaft deinstalliert. Alle Daten gehen verloren.
 
 **RHEL:**
 
@@ -44,4 +44,4 @@ rm -rf /user/local/neolane
 
 **Windows:**
 
-Weitere Informationen finden Sie auf dieser [Seite](../../migration/using/migrating-in-windows-for-adobe-campaign-7.md#deleting-and-cleansing-adobe-campaign-previous-version). Vergessen Sie nicht, den Installationsordner von Campaign zu entfernen.
+Mehr dazu erfahren Sie [Seite](../../migration/using/migrating-in-windows-for-adobe-campaign-7.md#deleting-and-cleansing-adobe-campaign-previous-version). Vergessen Sie nicht, den Campaign-Installationsordner zu entfernen.

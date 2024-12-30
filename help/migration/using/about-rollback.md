@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Zurücksetzen auf die vorherige Version
-description: Erfahren Sie, wie Sie zur vorherigen Version zurückkehren.
+description: Erfahren Sie, wie Sie ein Rollback zur vorherigen Version durchführen
 feature: Upgrade
 audience: migration
 content-type: reference
@@ -22,16 +22,16 @@ ht-degree: 0%
 
 Nach einer Migration müssen Sie bei Problemen möglicherweise zur vorherigen Version von Campaign zurückkehren.
 
-Das Rollback-Verfahren hängt von Ihrer ursprünglichen Version von Campaign ab.
+Das Rollback-Verfahren hängt von Ihrer ursprünglichen Campaign-Version ab.
 
-Im Folgenden finden Sie das Verfahren zum Wiederherstellen einer v6.1 von v7.
+Im Folgenden finden Sie das Verfahren zum Wiederherstellen von v6.1 aus einer v7.
 
 1. Stellen Sie die Sicherung der Datenbank wieder her und stellen Sie sie wieder her.
-1. Rufen Sie den Ordner &quot;**Adobe Campaign v6.back**&quot;(**nl6.back** in Linux) auf, benennen Sie ihn in &quot;**Adobe Campaign v6**&quot;(**nl6** in Linux) um und stellen Sie ihn wieder an seinem ursprünglichen Speicherort her.
-1. Konfigurieren Sie IIS neu, indem Sie die Überwachungsanschlüsse neu zuweisen, um die Integration von Adobe Campaign v6.1 auf IIS-Website-Ebene wiederherzustellen.
-1. Beenden Sie den Adobe Campaign v7-Dienst.
+1. Stellen Sie den Ordner **Adobe Campaign v6.back** (**nl6.back** unter Linux) wieder her, benennen Sie ihn in **Adobe Campaign v6** (**nl6** unter Linux) um und stellen Sie ihn an seinem ursprünglichen Speicherort wieder her.
+1. Konfigurieren Sie IIS neu, indem Sie die Listener-Ports neu zuweisen, um die Integration von Adobe Campaign v6.1 auf IIS-Website-Ebene wiederherzustellen.
+1. Beenden Sie den Adobe Campaign v7-Service.
 1. Starten Sie IIS neu.
-1. Starten Sie den Adobe Campaign v6.1-Dienst neu.
+1. Starten Sie den Adobe Campaign v6.1-Service neu.
 
 <!--
 	

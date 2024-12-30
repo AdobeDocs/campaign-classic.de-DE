@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Funktionsmatrix für On-Premise-, Hybrid- und gehostete Campaign-Versionen
-description: Wichtige Unterschiede zwischen gehosteten und On-Premise-Implementierungen
+title: Campaign On-Premise-, Hybrid- und Hosted-Funktionsmatrix
+description: Die wichtigsten Unterschiede zwischen gehosteten und On-Premise-Bereitstellungen
 feature: Installation, Architecture
 exl-id: a2c425a8-9bde-4259-9140-5ada5397ed5f
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
@@ -15,11 +15,11 @@ ht-degree: 32%
 
 
 
-Adobe Campaign Classic bietet verschiedene Module und Optionen. Die Verfügbarkeit dieser Module und ihre Verwendung können von der Art der Bereitstellung Ihrer Installation abhängen. In diesem Artikel werden einige Details zu den Hauptunterschieden bei bestimmten Funktionen zwischen vollständig gehosteten (Managed Services) und On-Premise-Bereitstellungen vorgestellt.
+Adobe Campaign Classic bietet verschiedene Module und Optionen. Die Verfügbarkeit dieser Module und ihre Verwendung können von der Art der Bereitstellung Ihrer Installation abhängen. In diesem Artikel werden einige Details zu den wichtigsten Unterschieden bei bestimmten Funktionen zwischen vollständig gehosteten (Managed Services) und On-Premise-Bereitstellungen erläutert.
 
-Auf dieser Seite werden die Hauptunterschiede zwischen gehosteten (Managed Services) und On-Premise-Implementierungen erläutert. Die Besonderheiten hybrider Bereitstellungen hängen von den Elementen ab, die von Adobe gehostet und in Ihren Räumlichkeiten gehostet werden.
+Auf dieser Seite werden die Hauptunterschiede zwischen gehosteten (Managed Services) und On-Premise-Bereitstellungen angezeigt. Die Besonderheiten von Hybridbereitstellungen hängen von den Elementen ab, die von Adobe gehostet und in Ihren -Standorten gehostet werden.
 
-Die verschiedenen Hosting-Modelle werden mit [in diesem Abschnitt](../../installation/using/hosting-models.md) eingeführt.
+Die verschiedenen Hosting-Modelle werden [in diesem Abschnitt) ](../../installation/using/hosting-models.md).
 
 ## Verfügbarkeit pro Bereitstellungsmodell {#capability-matrix}
 
@@ -28,24 +28,24 @@ Die verschiedenen Hosting-Modelle werden mit [in diesem Abschnitt](../../install
 | Campaign-Server konfigurieren | On-Demand | Verfügbar | Verfügbar | [Weitere Informationen](../../installation/using/the-server-configuration-file.md) |
 | E-Mail-BCC | On-Demand | On-Demand | Verfügbar | [Weitere Informationen](../../installation/using/email-archiving.md) |
 | Message Center-Ausführungsinstanz verwalten | On-Demand | On-Demand | Verfügbar | [Weitere Informationen](../../message-center/using/about-transactional-messaging.md) |
-| Verwalten der Mid-Sourcing-Plattform | On-Demand | On-Demand | Verfügbar | [Weitere Informationen](../../installation/using/mid-sourcing-server.md) |
+| Mid-Sourcing-Plattform verwalten | On-Demand | On-Demand | Verfügbar | [Weitere Informationen](../../installation/using/mid-sourcing-server.md) |
 | Inbox Rendering über Litmus | On-Demand | On-Demand | Verfügbar | [Weitere Informationen](../../delivery/using/inbox-rendering.md) |
-| Integration mit IMS (Adobe ID) | On-Demand | On-Demand | On-Demand | [Weitere Informationen](../../integrations/using/about-adobe-id.md) |
+| Integrieren mit IMS (Adobe ID) | On-Demand | On-Demand | On-Demand | [Weitere Informationen](../../integrations/using/about-adobe-id.md) |
 | Verschlüsseln/Entschlüsseln von Daten für Dateiübertragungen | On-Demand | Verfügbar | Verfügbar | [Weitere Informationen](../../platform/using/unzip-decrypt.md) |
-| Dateien komprimieren/dekomprimieren | On-Demand | Verfügbar | Verfügbar | [Weitere Informationen](../../platform/using/unzip-decrypt.md) |
-| Delegation von Domänennamen | On-Demand | On-Demand | Nicht verfügbar | [Weitere Informationen](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=de) |
-| SpamAssassin installieren | On-Demand | Verfügbar | Verfügbar | [Weitere Informationen](../../delivery/using/spamassassin.md) |
-| Auf Zustellbarkeitsberichte zugreifen | Verfügbar | On-Demand | Verfügbar | [Weitere Informationen](../../delivery/using/monitoring-deliverability.md) |
-| LDAP-Authentifizierung konfigurieren | Nicht verfügbar | Verfügbar | Verfügbar | [Weitere Informationen](../../installation/using/connecting-through-ldap.md) |
+| Komprimieren/Dekomprimieren von Dateien | On-Demand | Verfügbar | Verfügbar | [Weitere Informationen](../../platform/using/unzip-decrypt.md) |
+| Delegation von Domain-Namen | On-Demand | On-Demand | Nicht verfügbar | [Weitere Informationen](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=de) |
+| Installieren von SpamAssassin | On-Demand | Verfügbar | Verfügbar | [Weitere Informationen](../../delivery/using/spamassassin.md) |
+| Zugreifen auf Zustellbarkeitsberichte | Verfügbar | On-Demand | Verfügbar | [Weitere Informationen](../../delivery/using/monitoring-deliverability.md) |
+| Konfigurieren der LDAP-Authentifizierung | Nicht verfügbar | Verfügbar | Verfügbar | [Weitere Informationen](../../installation/using/connecting-through-ldap.md) |
 
 
 ## Federated Data Access{#fda}
 
-Adobe Campaign bietet die Option &quot;**Federated Data Access**&quot;(FDA), um in externen Datenbanken gespeicherte Informationen zu verarbeiten: Sie können auf externe Daten zugreifen, ohne die Datenstruktur in Adobe Campaign zu verändern. [Weitere Informationen](../../installation/using/about-fda.md)
+Adobe Campaign bietet die Option **Federated Data Access** (FDA) zur Verarbeitung von Informationen, die in einer oder mehreren externen Datenbanken gespeichert sind: Sie können auf externe Daten zugreifen, ohne die Datenstruktur in Adobe Campaign ändern zu müssen. [Weitere Informationen](../../installation/using/about-fda.md)
 
 >[!CAUTION]
 >
->Kompatible externe Datenbanksysteme hängen von Ihrem Hosting-Modell ab. Weitere Informationen finden Sie in der [Campaign-Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md).
+>Kompatible externe Datenbanksysteme hängen von Ihrem Hosting-Modell ab. Weitere Informationen finden Sie in [Campaign-Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md).
 >
 
 **Siehe auch**

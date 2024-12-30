@@ -18,10 +18,10 @@ ht-degree: 74%
 
 
 
-Verwenden Sie die Option Campaign **Federated Data Access** (FDA) , um in externen Datenbanken gespeicherte Informationen zu verarbeiten. Gehen Sie wie folgt vor, um den Zugriff auf Hadoop zu konfigurieren.
+Verwenden Sie die **-Option (Federated Data Access** (FDA) von Campaign, um in einer externen Datenbank gespeicherte Informationen zu verarbeiten. Gehen Sie wie folgt vor, um den Zugriff auf Hadoop zu konfigurieren.
 
-1. Konfigurieren der [Hadoop-Datenbank](#configuring-hadoop)
-1. Konfigurieren des externen Hadoop [Kontos](#hadoop-external) in Campaign
+1. [Hadoop-Datenbank ](#configuring-hadoop)
+1. Konfigurieren des Hadoop [externen Kontos](#hadoop-external) in Campaign
 
 ## Konfigurieren von Hadoop 3.0 {#configuring-hadoop}
 
@@ -83,14 +83,14 @@ Der Connector unterstützt außerdem die folgenden Hive-Optionen:
 | fileFormat | PARQUET | Standarddateiformat für Arbeitstabellen. |
 
 
-## Hadoop 2.1 konfigurieren {#configure-access-hadoop-2}
+## Konfigurieren von Hadoop 2.1 {#configure-access-hadoop-2}
 
-Wenn Sie eine Verbindung zu Hadoop 2.1 herstellen müssen, führen Sie die folgenden Schritte für [Windows](#for-windows) oder [Linux](#for-linux) aus.
+Wenn Sie eine Verbindung zu Hadoop 2.1 herstellen müssen, führen Sie die unten beschriebenen Schritte für [Windows](#for-windows) oder [Linux](#for-linux) aus.
 
 ### Hadoop 2.1 für Windows {#for-windows}
 
 1. Installieren Sie die ODBC- und [Azure HD Insight](https://www.microsoft.com/en-us/download/details.aspx?id=40886)-Treiber für Windows.
-1. Erstellen Sie den DSN (Data Source Name), indem Sie das Tool ODBC DataSource Administrator ausführen. Dort finden Sie ein Beispiel für einen System-DSN für Hive, das Sie anpassen können.
+1. Erstellen Sie den DSN (Data Source Name), indem Sie das ODBC-Tool DataSource Administrator ausführen. Dort finden Sie ein Beispiel für einen System-DSN für Hive, das Sie anpassen können.
 
    ```
    Description: vorac (or any name you like)
@@ -101,7 +101,7 @@ Wenn Sie eine Verbindung zu Hadoop 2.1 herstellen müssen, führen Sie die folge
    User/Password: admin/<your password here>
    ```
 
-1. Erstellen Sie das externe Hadoop-Konto, wie in [diesem Abschnitt](#hadoop-external) beschrieben.
+1. Erstellen Sie das externe Hadoop-Konto, wie in [ Abschnitt beschrieben](#hadoop-external).
 
 ### Hadoop 2.1 für Linux {#for-linux}
 
@@ -111,7 +111,7 @@ Wenn Sie eine Verbindung zu Hadoop 2.1 herstellen müssen, führen Sie die folge
    apt-get install unixodbc
    ```
 
-1. Laden Sie ODBC-Treiber für Apache Hive von HortonWorks herunter und installieren Sie sie: [https://www.cloudera.com/downloads.html](https://www.cloudera.com/downloads.html).
+1. Herunterladen und Installieren von ODBC-Treibern für Apache Hive von HortonWorks: [https://www.cloudera.com/downloads.html](https://www.cloudera.com/downloads.html).
 
    ```
    dpkg -i hive-odbc-native_2.1.10.1014-2_amd64.deb
@@ -156,7 +156,7 @@ Wenn Sie eine Verbindung zu Hadoop 2.1 herstellen müssen, führen Sie die folge
    >
    >Der Parameter **UseNativeQuery** ist dabei sehr wichtig. Campaign unterstützt Hive und funktioniert nur dann ordnungsgemäß, wenn UseNativeQuery eingerichtet ist. Üblicherweise formuliert der Treiber oder Hive SQL Connector Abfragen um und ändert die Spaltenanordnung.
 
-   Die Authentifizierungseinrichtung hängt von der Hive/Hadoop-Konfiguration ab. Verwenden Sie beispielsweise für HD Insight AuthMech=6 für Benutzer-/Kennwortauthentifizierung, wie [hier](https://www.simba.com/products/Spark/doc/ODBC_InstallGuide/unix/content/odbc/hi/configuring/authenticating/azuresvc.htm) beschrieben.
+   Die Authentifizierungseinstellungen hängen von der Hive/Hadoop-Konfiguration ab. Verwenden Sie beispielsweise für HD Insight AuthMech=6 für die Benutzer-/Passwort-Authentifizierung, wie [hier) ](https://www.simba.com/products/Spark/doc/ODBC_InstallGuide/unix/content/odbc/hi/configuring/authenticating/azuresvc.htm).
 
 1. Exportieren Sie die Variablen.
 
@@ -188,4 +188,4 @@ Wenn Sie eine Verbindung zu Hadoop 2.1 herstellen müssen, führen Sie die folge
    isql vorac -v
    ```
 
-1. Erstellen Sie das externe Hadoop-Konto, wie in [diesem Abschnitt](#hadoop-external) beschrieben.
+1. Erstellen Sie das externe Hadoop-Konto, wie in [ Abschnitt beschrieben](#hadoop-external).

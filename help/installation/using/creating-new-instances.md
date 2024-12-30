@@ -18,14 +18,14 @@ ht-degree: 0%
 
 
 
-Nachdem Adobe Campaign installiert und die Instanz erstellt wurde, können Sie in der Konsole eine neue Instanz hinzufügen. Mit diesem Erstellungsmodus können Sie Tracking-Instanzen erstellen, ohne auf die Konsole zugreifen zu müssen.
+Sobald Adobe Campaign installiert und die Instanz erstellt wurde, können Sie eine neue Instanz über die Konsole hinzufügen. Mit diesem Erstellungsmodus können Sie Tracking-Instanzen erstellen, ohne auf die Konsole zugreifen zu müssen.
 
 Melden Sie sich dazu bei einer vorhandenen Datenbank an und führen Sie die folgenden Schritte aus:
 
-1. Eine neue Instanz deklarieren
+1. Neue Instanz deklarieren
 
-   Navigieren Sie zu **[!UICONTROL Tools > Erweitert > Eine neue Instanz deklarieren...]** , um den Assistenten zu starten.
+   Gehen Sie **[!UICONTROL Tools > Erweitert > Neue Instanz deklarieren…]**, um den Assistenten zu starten.
 
    ![](assets/s_ncs_install_declare_instance_menu.png)
 
-   Geben Sie die Parameter der neuen Instanz an. Weitere Informationen hierzu finden Sie unter [Erstellen einer Instanz und Anmelden bei](../../installation/using/creating-an-instance-and-logging-on.md).
+   Geben Sie die Parameter der neuen Instanz an. Weitere Informationen hierzu finden Sie unter [Instanz erstellen und anmelden](../../installation/using/creating-an-instance-and-logging-on.md).

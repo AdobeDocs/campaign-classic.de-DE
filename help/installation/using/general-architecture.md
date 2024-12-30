@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Allgemeine Architektur von Campaign Classic
+title: Allgemeine Campaign Classic-Architektur
 description: Erfahren Sie, wie Sie Campaign Classic installieren und konfigurieren
 feature: Installation, Architecture
 audience: installation
@@ -10,7 +10,7 @@ exl-id: 04e6dc17-427b-4745-84cc-bf45c03dbf81
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
 source-wordcount: '1342'
-ht-degree: 50%
+ht-degree: 46%
 
 ---
 
@@ -22,7 +22,7 @@ Die typische Bereitstellung einer Adobe Campaign-Lösung setzt sich aus folgende
 
 * **Personalisierte Client-Umgebung**
 
-  Intuitive grafische Benutzeroberfläche, über die Benutzer Marketingangebote kommunizieren und verfolgen, Kampagnen erstellen, alle Marketing-Aktivitäten, Programme und Pläne - einschließlich E-Mails, Workflows und Landingpages - überprüfen und verwalten, Kundenprofile erstellen und verwalten sowie Kundentypen definieren können.
+  Intuitive grafische Benutzeroberfläche, über die Benutzer Marketing-Angebote kommunizieren und verfolgen, Kampagnen erstellen, alle Marketing-Aktivitäten, -Programme und -Pläne (einschließlich E-Mails, Workflows und Landingpages) überprüfen und verwalten, Kundenprofile erstellen und verwalten und Zielgruppentypen definieren können.
 
 * **Entwicklungsumgebung**
 
@@ -30,39 +30,39 @@ Die typische Bereitstellung einer Adobe Campaign-Lösung setzt sich aus folgende
 
 * **Datenbank-Container**
 
-  Basierend auf relativer Datenbanktechnologie speichert die Adobe Campaign-Datenbank alle Kundeninformationen, Kampagnenkomponenten, Angebote und Workflows sowie Kampagnenergebnisse in Container mit Kundendatenbanken.
+  Basierend auf relationaler Datenbanktechnologie speichert die Adobe Campaign-Datenbank alle Kundeninformationen, Kampagnenkomponenten, Angebote und Workflows sowie die Kampagnenergebnisse in Containern der Kundendatenbank.
 
-Adobe Campaign basiert auf einer Service-orientierten Architektur (SOA) und umfasst mehrere Funktionsmodule. Diese Module können auf einem oder mehreren Computern in einzelnen oder mehreren Instanzen bereitgestellt werden, je nach Einschränkungen hinsichtlich Skalierbarkeit, Verfügbarkeit und Dienstisolierung. Der Umfang der Implementierungskonfigurationen ist daher sehr breit angelegt und erstreckt sich über einen zentralen Computer bis hin zu Konfigurationen, die mehrere dedizierte Server über mehrere Sites hinweg umfassen.
+Adobe Campaign basiert auf einer Service-orientierten Architektur (SOA) und umfasst mehrere Funktionsmodule. Diese Module können auf einem oder mehreren Computern in einzelnen oder mehreren Instanzen bereitgestellt werden, je nach Einschränkungen in Bezug auf Skalierbarkeit, Verfügbarkeit und Service-Isolierung. Der Umfang der Bereitstellungskonfigurationen ist daher sehr breit gefächert und erstreckt sich von einem einzelnen, zentralen Computer bis hin zu Konfigurationen mit mehreren dedizierten Servern über mehrere Standorte.
 
 >[!NOTE]
 >
->Als Softwareanbieter spezifizieren wir kompatible Hardware- und Software-Infrastrukturen. Die hier gegebenen Hardware-Empfehlungen dienen nur zu Informationszwecken und basieren auf unserer Erfahrung. Adobe haftet nicht für Entscheidungen, die auf der Grundlage dieser Entscheidungen getroffen werden. Dies hängt auch von Ihren Geschäftsregeln und -praktiken sowie von der Kritikalität und den erforderlichen Leistungsstufen des Projekts ab.
+>Als Software-Anbieter spezifizieren wir kompatible Hardware- und Software-Infrastruktur. Die hier angegebenen Hardware-Empfehlungen dienen nur zu Informationszwecken und basieren auf unseren Erfahrungen. Adobe haftet nicht für Entscheidungen, die auf dieser Grundlage getroffen werden. Dies hängt auch von Ihren Geschäftsregeln und -praktiken sowie der Wichtigkeit und den erforderlichen Leistungsstufen des Projekts ab.
 
 ![](assets/s_ncs_install_architecture.png)
 
 >[!CAUTION]
 >
->Sofern nicht ausdrücklich anders angegeben, obliegt die Installation, Aktualisierung und Wartung auf allen Komponenten einer Adobe Campaign-Plattform dem/den Maschinadministrator(en), der/die diese Komponenten hostet. Dazu gehört die Implementierung der Voraussetzungen für Adobe Campaign-Anwendungen sowie die Einhaltung der Campaign [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md) zwischen Komponenten.
+>Sofern nicht ausdrücklich anders angegeben, sind die Installation, Updates und Wartung für alle Komponenten einer Adobe Campaign-Plattform in der Verantwortung der Computeradministratoren, die die Komponenten hosten. Dazu gehört die Implementierung der Voraussetzungen für Adobe Campaign-Anwendungen sowie die Einhaltung der Campaign-[Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md) zwischen Komponenten.
 
 ## Präsentationsebene {#presentation-layer}
 
-Der Zugriff auf die Anwendung ist je nach den Anforderungen der Benutzer auf unterschiedliche Weise möglich: Rich-Client-, Thin-Client- oder API-Integration.
+Der Zugriff auf das Programm erfolgt je nach Bedarf der Benutzer auf unterschiedliche Weise: Rich-Client-, Thin-Client- oder API-Integration.
 
-* **Rich-Client**: Die Hauptbenutzeroberfläche des Programms ist ein Rich-Client, d. h. ein natives Programm (Windows), das ausschließlich mit Standardinternetprotokollen (SOAP, HTTP usw.) mit dem Adobe Campaign-Anwendungsserver kommuniziert. Diese Konsole bietet eine hervorragende Benutzerfreundlichkeit für die Produktivität, verwendet sehr wenig Bandbreite (durch die Verwendung eines lokalen Caches) und ist für eine einfache Implementierung konzipiert. Diese Konsole kann über einen Internetbrowser bereitgestellt werden, kann automatisch aktualisiert werden und erfordert keine spezifische Netzwerkkonfiguration, da sie nur HTTP(S)-Traffic generiert.
-* **Dünner Client**: Bestimmte Anwendungsbereiche können über einen einfachen Webbrowser über eine HTML-Benutzeroberfläche aufgerufen werden. Dazu gehören das Berichtsmodul, Etappen der Versandvalidierung, Funktionen des Moduls Dezentrales Marketing (lokal), Instanzüberwachung usw. Auf diese Weise können Adobe Campaign-Funktionen in ein Intranet oder ein Extranet integriert werden.
-* **Integration über APIs**: In bestimmten Fällen kann das System über die über das SOAP-Protokoll bereitgestellten Web-Services-APIs aus einer externen Anwendung aufgerufen werden.
+* **Rich-Client**: Die Hauptbenutzeroberfläche des Programms ist ein Rich-Client, d. h. ein natives Programm (Windows), das ausschließlich über Standard-Internet-Protokolle (SOAP, HTTP usw.) mit dem Adobe Campaign-Anwendungs-Server kommuniziert. Diese Konsole bietet hohe Benutzerfreundlichkeit für Produktivität, verbraucht sehr wenig Bandbreite (durch die Verwendung eines lokalen Cache) und wurde für eine einfache Bereitstellung entwickelt. Diese Konsole kann über einen Internet-Browser bereitgestellt werden, kann automatisch aktualisiert werden und erfordert keine spezielle Netzwerkkonfiguration, da sie nur HTTP(S)-Traffic erzeugt.
+* **Thin Client**: Einige Bereiche des Programms können über einen einfachen Webbrowser mittels HTML-Benutzeroberfläche aufgerufen werden, darunter etwa das Reporting-Modul, die einzelnen Phasen der Versandvalidierung oder auch Funktionen des Moduls für dezentrales Marketing (zentral/lokal) bzw. das Instanz-Monitoring. Dieser Modus ermöglicht es, Adobe Campaign-Funktionen in ein Intranet oder ein Extranet einzubinden.
+* **Integration über die APIs**: In bestimmten Fällen kann das System über die via SOAP-Protokoll bereitgestellten Web Services-APIs von einem externen Programm aus aufgerufen werden.
 
 ## Logische Anwendungsebene {#logical-application-layer}
 
-Adobe Campaign führt verschiedene Programme in einer zentralen Plattform zusammen und schafft so eine offenen und zugleich skalierbare Architektur. Die Adobe Campaign-Plattform ist auf einer flexiblen Anwendungsebene konzipiert und lässt sich einfach an die geschäftlichen Anforderungen eines Unternehmens anpassen. Dies entspricht sowohl aus funktionaler als auch aus technischer Perspektive den wachsenden Anforderungen des Unternehmens. Dank der verteilten Architektur ist das System linear von mehreren Tausend auf mehrere Millionen Nachrichten skalierbar.
+Adobe Campaign führt verschiedene Programme in einer zentralen Plattform zusammen und schafft so eine offenen und zugleich skalierbare Architektur. Die Adobe Campaign-Plattform basiert auf einer flexiblen Anwendungsebene und kann einfach konfiguriert werden, um die Geschäftsanforderungen eines Unternehmens zu erfüllen. Damit wird den wachsenden Anforderungen des Unternehmens sowohl aus funktionaler als auch aus technischer Sicht Rechnung getragen. Dank der verteilten Architektur ist das System linear von mehreren Tausend auf mehrere Millionen Nachrichten skalierbar.
 
-Adobe Campaign stützt sich auf eine Reihe von serverseitigen Prozessen, die zusammenarbeiten.
+Adobe Campaign beruht auf einer Reihe von Server-seitigen Prozessen, die zusammenarbeiten.
 
 Dies sind die wichtigsten Prozesse:
 
 **Anwendungs-Server** (nlserver web)
 
-Dieser Prozess stellt das gesamte Spektrum an Adobe Campaign-Funktionen mittels Web-Services-APIs (SOAP - HTTP + XML) zur Verfügung. Darüber hinaus kann er dynamisch die Web-Seiten generieren, die für den HTML-basierten Zugriff verwendet werden (Berichte, Web-Formulare usw.). Um dies zu ermöglichen, umfasst der Prozess einen Apache Tomcat JSP-Server. Dies ist der Prozess, mit dem die Konsole eine Verbindung herstellt.
+Dieser Prozess stellt das gesamte Spektrum an Adobe Campaign-Funktionen mittels Web-Services-APIs (SOAP - HTTP + XML) zur Verfügung. Darüber hinaus kann er dynamisch die Web-Seiten generieren, die für den HTML-basierten Zugriff verwendet werden (Berichte, Web-Formulare usw.). Um dies zu ermöglichen, umfasst der Prozess einen Apache Tomcat JSP-Server. Dies ist der Prozess, mit dem sich die Konsole verbindet.
 
 **Workflow-Engine** (nlserver wfserver)
 
@@ -72,7 +72,7 @@ Außerdem verarbeitet sie zeitweise ausgeführte technische Workflows, darunter:
 
 * Tracking: Wiederherstellen und Konsolidieren von Trackinglogs. Dadurch können Protokolle vom Weiterleitungs-Server abgerufen und die vom Reporting-Modul verwendeten aggregierten Indikatoren erstellt werden.
 * Bereinigung: zur Bereinigung von Datenbanken. Dabei wird die Datenbank von alten Datensätzen bereinigt, um zu vermeiden, dass sie übermäßig wächst.
-* Rechnungsstellung: Automatischer Versand eines Aktivitätsberichts für die Plattform (Datenbankgröße, Anzahl der Marketing-Aktionen, Anzahl der aktiven Profile usw.)
+* Abrechnung : Automatisches Senden eines Berichts zu Aktivitäten auf der Plattform (Datenbankgröße, Anzahl der Marketing-Aktionen, Anzahl der aktiven Profile usw.)
 
 **Versand-Server** (nlserver mta)
 
@@ -90,7 +90,7 @@ Daneben sind auch noch weitere technische Prozesse verfügbar:
 
 **Handhabung von Bounce-E-Mails** (nlserver inMail)
 
-Dieser Prozess ermöglicht den automatischen Abruf von E-Mails aus Postfächern, die für den Empfang von Nachrichten konfiguriert sind, die bei fehlgeschlagenem Versand als unzustellbar zurückgesendet werden. Diese Nachrichten werden dann regelbasiert verarbeitet, um die Gründe für die Unzustellbarkeit (z. B. Empfänger unbekannt, Nachrichtenkontingente ausgeschöpft) zu ermitteln und den Versandstatus in der Datenbank zu aktualisieren.
+Dieser Prozess ermöglicht den automatischen Abruf von E-Mails aus Postfächern, die für den Empfang von Nachrichten konfiguriert sind, die bei fehlgeschlagenem Versand als unzustellbar zurückgesendet werden. Diese Nachrichten werden dann regelbasiert verarbeitet, um die Gründe für die Unzustellbarkeit (z. B. Empfänger unbekannt, Nachrichtenkontingente ausgeschöpft) zu ermitteln und den Versandstatus in der Datenbank zu aktualisieren.
 
 Alle diese Operationen laufen vollkommen automatisch und sind vorkonfiguriert.
 
@@ -124,8 +124,8 @@ Dieser Prozess erstellt Statistiken zur Anzahl von Verbindungen, zu an die einze
 
 ## Persistenzebene {#persistence-layer}
 
-Die Datenbank wird als Persistenzschicht verwendet und enthält fast alle von Adobe Campaign verwalteten Informationen. Dazu gehören funktionale Daten (Profile, Abonnements, Inhalte usw.), technische Daten (Versandaufträge und Protokolle, Trackinglogs usw.) und Arbeitsdaten (Einkäufe, Leads).
+Die Datenbank wird als Persistenzschicht verwendet und enthält fast alle von Adobe Campaign verwalteten Informationen. Dazu gehören sowohl funktionale Daten (Profile, Abonnements, Inhalte usw.), technische Daten (Versandvorgänge und -protokolle, Trackinglogs usw.) als auch Arbeitsdaten (Käufe, Leads).
 
-Die Zuverlässigkeit der Datenbank ist von größter Bedeutung, da die meisten Adobe Campaign-Komponenten für die Ausführung ihrer Aufgaben Zugriff auf die Datenbank benötigen (mit Ausnahme des Umleitungsmoduls).
+Die Zuverlässigkeit der Datenbank ist von größter Bedeutung, da die meisten Adobe Campaign-Komponenten Zugriff auf die Datenbank benötigen, um ihre Aufgaben ausführen zu können (mit Ausnahme des Weiterleitungsmoduls).
 
-Die Plattform wird mit einem vordefinierten Marketing-zentrierten Datenstrom geliefert oder kann mithilfe eines der wichtigsten RDBMS (Relational Database Management Systems) einfach auf einem vorhandenen Datenstrom und Schema platziert werden. Alle Daten im Datamart werden von der Adobe Campaign-Plattform über SQL-Aufrufe von Adobe Campaign zur Datenbank aufgerufen. Adobe Campaign bietet außerdem ein vollständiges Komplement der ETL-Tools (Extract, Transform, Load – Extrahieren, Umwandeln, Laden), mittels dessen Daten in das und aus dem System importiert und exportiert werden können.
+Die Plattform verfügt über einen vordefinierten Marketing-zentrierten Datamart oder kann mithilfe eines der wichtigsten relationalen Datenbankmanagementsysteme (RDBMS) einfach auf einem vorhandenen Datamart und Schema platziert werden. Auf alle Daten im Datamart wird von der Adobe Campaign-Plattform über SQL-Aufrufe von Adobe Campaign an die Datenbank zugegriffen. Adobe Campaign bietet außerdem ein vollständiges Komplement der ETL-Tools (Extract, Transform, Load – Extrahieren, Umwandeln, Laden), mittels dessen Daten in das und aus dem System importiert und exportiert werden können.

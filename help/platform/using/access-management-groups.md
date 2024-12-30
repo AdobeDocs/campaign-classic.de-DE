@@ -10,7 +10,7 @@ exl-id: d5833d3d-e8ef-4f2b-8084-4ba825c79525
 source-git-commit: 8aceafa362b80f6e34edfd91a71551a58501a3d0
 workflow-type: tm+mt
 source-wordcount: '580'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -65,7 +65,7 @@ Es existieren folgende Standardgruppen:
 
 1. **[!UICONTROL Kampagnenverantwortliche Benutzer]**
 
-   Die Benutzer dieser Gruppe können Marketing-Kampagnen verwalten. Diese Berechtigung verleiht Zugriff auf mit Kampagnen verbundene Elemente (Pläne, Programme, Workflows, Budgets etc.) im Rahmen von **[!UICONTROL Campaign]** (optionales Adobe Campaign-Modul).
+   Die Benutzer dieser Gruppe können Marketing-Kampagnen verwalten. Damit können Sie auf die mit Kampagnen verknüpften Objekte (Pläne, Programme, Workflows, Budgets usw.) im Rahmen von **[!UICONTROL Kampagne]** (optionales Adobe Campaign-Modul) zugreifen.
 
    Die Gruppe beinhaltet folgende spezifische Berechtigungen:
 

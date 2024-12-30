@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Installieren von Schriftarten
-description: Erfahren Sie, wie Sie Schriftarten installieren.
+description: Erfahren Sie, wie Sie Schriftarten installieren
 feature: Installation, Application Settings
 audience: installation
 content-type: reference
@@ -18,6 +18,6 @@ ht-degree: 0%
 
 
 
-So können Sie neue Schriftarten auf dem Campaign-Anwendungsserver installieren.
+So können Sie neue Schriftarten auf dem Campaign-Anwendungs-Server installieren.
 
-Neue Schriftarten können in den Ordner `/usr/local/share/` für alle Container eingefügt werden, in denen der MTA-Prozess ausgeführt wird.
+Neue Schriftarten können in den `/usr/local/share/` Ordner in allen Containern platziert werden, in denen der MTA-Prozess ausgeführt wird.

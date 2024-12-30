@@ -7,7 +7,7 @@ feature: Monitoring, Deliverability
 role: User
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
 source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3090'
 ht-degree: 100%
 
@@ -73,7 +73,7 @@ Folgende Informationen stehen für jede Adresse zur Verfügung:
 >
 >Ende 1. Jahr: (1 &#42; 0,33) / (1 + 0,5) = 22 %.
 >
->Ende 2. Jahr: ((1,22 &#42; 0,33) + 0,33) / (1,5 + 0,75) = 32,5 %.
+Ende 2. Jahr: ((1,22 &#42; 0,33) + 0,33) / (1,5 + 0,75) = 32,5 %.
 
 ### Identifizieren von in Quarantäne befindlichen Adressen in Versandberichten {#identifying-quarantined-addresses-in-delivery-reports}
 
@@ -108,7 +108,7 @@ Wenn ein Benutzer eine E-Mail als Spam kennzeichnet ([Feedback Loop](https://exp
 
 >[!NOTE]
 >
->Bei der Quarantänefunktion in Adobe Campaign wird die Groß-/Kleinschreibung beachtet. Achten Sie darauf, E-Mail-Adressen in Kleinbuchstaben zu importieren, damit sie später nicht erneut verwendet werden.
+Bei der Quarantänefunktion in Adobe Campaign wird die Groß-/Kleinschreibung beachtet. Achten Sie darauf, E-Mail-Adressen in Kleinbuchstaben zu importieren, damit sie später nicht erneut verwendet werden.
 
 Bei Adressen in Quarantäne (siehe [Identifizieren von für die gesamte Plattform in Quarantäne befindlichen Adressen](#identifying-quarantined-addresses-for-the-entire-platform)) zeigt das Feld **[!UICONTROL Fehlerursache]** an, wodurch die Quarantäne ausgelöst wurde.
 
@@ -144,7 +144,7 @@ Ihr Status ändert sich dann in **[!UICONTROL Gültig]**.
 
 >[!IMPORTANT]
 >
->Empfängerinnen und Empfänger mit einer Adresse im Status **[!UICONTROL Quarantäne]** oder **[!UICONTROL Auf Blockierungsliste]** werden niemals entfernt, auch wenn sie eine E-Mail erhalten.
+Empfängerinnen und Empfänger mit einer Adresse im Status **[!UICONTROL Quarantäne]** oder **[!UICONTROL Auf Blockierungsliste]** werden niemals entfernt, auch wenn sie eine E-Mail erhalten.
 
 ### Manuelle Aktualisierungen {#unquarantine-manual}
 
@@ -241,7 +241,7 @@ Wenn der APNS für eine Nachricht den Status &quot;abgemeldet&quot; zurückgibt,
    <td> Nein<br /> </td> 
   </tr> 
   <tr> 
-   <td> Problem mit Zertifikat (Passwort, Beschädigung etc.) und Problem bei Testverbindung mit APNs<br /> </td> 
+   <td> Problem mit Zertifikat (Passwort, Beschädigung etc.) und Fehler bei Testverbindung mit APNS<br /> </td> 
    <td> Fehlgeschlagen<br /> </td> 
    <td> Verschiedene Fehlernachrichten je nach Fehler<br /> </td> 
    <td> Soft<br /> </td> 
@@ -291,13 +291,13 @@ Während der Versandanalyse werden alle Geräte, die von der Zielgruppe ausgesch
 
 >[!NOTE]
 >
->Im Folgenden finden Sie die unterschiedlichen Fehlertypen für den Baidu-Connector:
+Im Folgenden finden Sie die unterschiedlichen Fehlertypen für den Baidu-Connector:
 >
->* Verbindungsproblem zu Beginn des Versands: Fehlertyp **[!UICONTROL Undefiniert]**, Grund **[!UICONTROL Unerreichbar]**, Neuversuch wird unternommen.
->* Verbindung während des Versands unterbrochen: Softbounce, Grund für den Fehler **[!UICONTROL Abgelehnt]**, Neuversuch wird unternommen.
->* Während des Versands von Baidu synchroner Fehler zurückgegeben: Hardbounce, Grund für den Fehler **[!UICONTROL Abgelehnt]**, es wird kein Neuversuch unternommen.
+* Verbindungsproblem zu Beginn des Versands: Fehlertyp **[!UICONTROL Undefiniert]**, Grund **[!UICONTROL Unerreichbar]**, Neuversuch wird unternommen.
+* Verbindung während des Versands unterbrochen: Softbounce, Grund für den Fehler **[!UICONTROL Abgelehnt]**, Neuversuch wird unternommen.
+* Während des Versands von Baidu synchroner Fehler zurückgegeben: Hardbounce, Grund für den Fehler **[!UICONTROL Abgelehnt]**, es wird kein Neuversuch unternommen.
 >
->Adobe Campaign kontaktiert den Baidu-Server alle 10 Minuten, um den Status der gesendeten Nachricht abzurufen, und aktualisiert die Broadlogs. Wenn eine Nachricht als gesendet gemeldet wird, wird der Status der Nachricht in den Broadlogs auf **[!UICONTROL Erhalten]** festgelegt. Wenn Baidu einen Fehler meldet, wird der Status auf **[!UICONTROL Fehlgeschlagen]** festgelegt.
+Adobe Campaign kontaktiert den Baidu-Server alle 10 Minuten, um den Status der gesendeten Nachricht abzurufen, und aktualisiert die Broadlogs. Wenn eine Nachricht als gesendet gemeldet wird, wird der Status der Nachricht in den Broadlogs auf **[!UICONTROL Erhalten]** festgelegt. Wenn Baidu einen Fehler meldet, wird der Status auf **[!UICONTROL Fehlgeschlagen]** festgelegt.
 
 **Für Android V2**
 
@@ -516,7 +516,7 @@ Der Quarantänemechanismus für SMS-Nachrichten ist global gesehen mit dem allge
 
 >[!NOTE]
 >
->Die Tabelle **[!UICONTROL Versandlogqualifizierung]** gilt nicht für den Connector **Erweitertes allgemeines SMPP**.
+Die Tabelle **[!UICONTROL Versandlogqualifizierung]** gilt nicht für den Connector **Erweitertes allgemeines SMPP**.
 
 <table> 
  <tbody> 
@@ -575,9 +575,9 @@ Bevor ein neuer Fehlertyp qualifiziert wird, wird der Fehlergrund immer standard
 
 >[!NOTE]
 >
->Die Typen und Ursachen für Fehlschläge sind dieselben wie für E-Mails. Siehe [Typen und Ursachen für fehlgeschlagene Sendungen](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+Die Typen und Ursachen für Fehlschläge sind dieselben wie für E-Mails. Siehe [Typen und Ursachen für fehlgeschlagene Sendungen](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
 >
->Erkundigen Sie sich bei Ihrem Provider nach einer Liste mit Status- und Fehlercodes, um in der Versandlogqualifizierungs-Tabelle die korrekten Fehlertypen und -ursachen anzugeben.
+Erkundigen Sie sich bei Ihrem Provider nach einer Liste mit Status- und Fehlercodes, um in der Versandlogqualifizierungs-Tabelle die korrekten Fehlertypen und -ursachen anzugeben.
 
 Beispiel einer generierten Nachricht:
 

@@ -19,33 +19,33 @@ ht-degree: 2%
 
 
 
-## Dateiformat des Uploads begrenzen {#limiting-uploadable-files}
+## Upload-Dateiformat begrenzen {#limiting-uploadable-files}
 
-Verwenden Sie das Attribut **uploadWhiteList** , um die für den Upload auf den Adobe Campaign-Server verfügbaren Dateitypen zu beschränken.
+Verwenden Sie das **uploadWhiteList**-Attribut, um die Dateitypen einzuschränken, die für den Upload auf den Adobe Campaign-Server verfügbar sind.
 
-Dieses Attribut ist im Element **dataStore** der Datei **serverConf.xml** verfügbar. Alle in **serverConf.xml** verfügbaren Parameter sind in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md) aufgeführt.
+Dieses Attribut ist im **dataStore** der Datei **serverConf.xml** verfügbar. Alle in der Datei **serverConf.xml** verfügbaren Parameter werden in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md) aufgeführt.
 
-Der Standardwert dieses Attributs ist **.+** und ermöglicht das Hochladen eines beliebigen Dateityps.
+Der Standardwert dieses Attributs ist **.+** und ermöglicht den Upload beliebiger Dateitypen.
 
-Um die möglichen Formate einzuschränken, ersetzen Sie den Attributwert durch einen gültigen regulären Java-Ausdruck. Sie können mehrere Werte eingeben, indem Sie sie durch ein Komma trennen.
+Um die möglichen Formate zu begrenzen, ersetzen Sie den Attributwert durch einen gültigen regulären Java-Ausdruck. Sie können mehrere Werte eingeben, indem Sie sie durch ein Komma trennen.
 
-Beispiel: **uploadWhiteList=&quot;.&#42;.png,Mit &#42;.jpg&quot;** können Sie PNG- und JPG-Formate auf den Server hochladen. Es werden keine anderen Formate akzeptiert.
+Beispiel: **uploadWhiteList=&quot;.&#42;.png,.&#42;.jpg“** ermöglicht das Hochladen von PNG- und JPG-Formaten auf den Server. Andere Formate werden nicht akzeptiert.
 
-Sie können auch verhindern, dass wichtige Dateien hochgeladen werden, indem Sie den Webserver konfigurieren. [Weitere Informationen](web-server-configuration.md)
+Sie können das Hochladen wichtiger Dateien auch verhindern, indem Sie den Webserver konfigurieren. [Weitere Informationen](web-server-configuration.md)
 
 >[!NOTE]
 >
->Das Attribut **uploadWhiteList** beschränkt die für den Upload auf den Adobe Campaign-Server verfügbaren Dateitypen. Wenn der Veröffentlichungsmodus jedoch **Tracking-Server(s)** oder **Andere Adobe Campaign-Server(s)** ist, muss das Attribut **uploadWhitelist** ebenfalls auf diesen Servern aktualisiert werden.
+>Das **uploadWhiteList**-Attribut beschränkt die Dateitypen, die auf dem Adobe Campaign-Server hochgeladen werden können. Wenn der Veröffentlichungsmodus jedoch **Tracking-Server(**) oder **Andere(r) Adobe Campaign-Server** ist, muss das Attribut **uploadWhitelist** auch auf diesen Servern aktualisiert werden.
 
 ## Proxy-Verbindungskonfiguration {#proxy-connection-configuration}
 
-Sie können den Campaign-Server über einen Proxy mit einem externen System verbinden, indem Sie beispielsweise die Workflow-Aktivität **Dateiübertragung** verwenden. Dazu müssen Sie den Abschnitt **proxyConfig** der Datei **serverConf.xml** über einen bestimmten Befehl konfigurieren. Alle in **serverConf.xml** verfügbaren Parameter sind in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md) aufgeführt.
+Sie können den Campaign-Server über einen Proxy mit einem externen System verbinden, z. B **mithilfe einer Workflow** Aktivität vom Typ „Dateiübertragung“. Dazu müssen Sie den Abschnitt **proxyConfig** der Datei **serverConf.xml** mit einem bestimmten Befehl konfigurieren. Alle in der Datei **serverConf.xml** verfügbaren Parameter werden in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md) aufgeführt.
 
-Die folgenden Proxy-Verbindungen sind möglich: HTTP, HTTPS, FTP, SFTP. Beachten Sie, dass ab Campaign-Version 20.2 die HTTP- und HTTPS-Protokollparameter **nicht mehr verfügbar sind**. Diese Parameter werden weiter unten erwähnt, da sie in früheren Builds - einschließlich 9032 - weiterhin verfügbar sind.
+Die folgenden Proxy-Verbindungen sind möglich: HTTP, HTTPS, FTP, SFTP. Beachten Sie, dass ab Campaign-Version 20.2 die HTTP- und HTTPS-Protokollparameter nicht **verfügbar**. Diese Parameter werden weiter unten erwähnt, da sie in früheren Builds verfügbar bleiben - einschließlich 9032.
 
 >[!CAUTION]
 >
->Nur der grundlegende Authentifizierungsmodus wird unterstützt. Die NTLM-Authentifizierung wird nicht unterstützt.
+>Es wird nur der Standardauthentifizierungsmodus unterstützt. NTLM-Authentifizierung wird nicht unterstützt.
 >
 >SOCKS-Proxys werden nicht unterstützt.
 >
@@ -56,17 +56,17 @@ Sie können den folgenden Befehl verwenden:
 nlserver config -setproxy:[protocol]/[serverIP]:[port]/[login][:‘https’|'http’]
 ```
 
-Protokollparameter können &quot;http&quot;, &quot;https&quot;oder &quot;ftp&quot;sein.
+Protokollparameter können „http“, „https“ oder „ftp“ sein.
 
-Wenn Sie FTP für denselben Port wie HTTP/HTTPS-Traffic einrichten, können Sie Folgendes verwenden:
+Wenn Sie FTP auf demselben Port wie HTTP/HTTPS-Traffic einrichten, können Sie Folgendes verwenden:
 
 ```
 nlserver config -setproxy:http/198.51.100.0:8080/user
 ```
 
-Die Optionen &quot;http&quot;und &quot;https&quot;werden nur verwendet, wenn der Protokollparameter &quot;ftp&quot;ist und angibt, ob die Tunnelung am angegebenen Port über HTTPS oder HTTP erfolgt.
+Die Optionen „http“ und „https“ werden nur verwendet, wenn der Protokollparameter „ftp“ ist und angeben, ob das Tunneling am angegebenen Port über HTTPS oder über HTTP durchgeführt wird.
 
-Wenn Sie für FTP/SFTP- und HTTP/HTTPS-Traffic über den Proxyserver unterschiedliche Ports verwenden, sollten Sie den Protokollparameter &quot;ftp&quot;festlegen.
+Wenn Sie unterschiedliche Ports für FTP-/SFTP- und HTTP/HTTPS-Traffic über den Proxy-Server verwenden, sollten Sie den Protokollparameter „ftp“ einstellen.
 
 
 Beispiel:
@@ -77,7 +77,7 @@ nlserver config -setproxy:ftp/198.51.100.0:8080/user:’http’
 
 Geben Sie dann das Kennwort ein.
 
-HTTP-Verbindungen werden im Parameter proxyHTTP definiert:
+HTTP-Verbindungen werden im ProxyHTTP-Parameter definiert:
 
 ```
 <proxyConfig enabled=“1” override=“localhost*” useSingleProxy=“0”>
@@ -85,7 +85,7 @@ HTTP-Verbindungen werden im Parameter proxyHTTP definiert:
 </proxyConfig>
 ```
 
-HTTPS-Verbindungen werden im ProxyHTTPS-Parameter definiert:
+HTTPS-Verbindungen werden im Parameter proxyHTTPS definiert:
 
 ```
 <proxyConfig enabled=“1" override=“localhost*” useSingleProxy=“0">
@@ -93,7 +93,7 @@ HTTPS-Verbindungen werden im ProxyHTTPS-Parameter definiert:
 </proxyConfig>
 ```
 
-FTP-/FTPS-Verbindungen werden im Parameter proxyFTP definiert:
+FTP-/FTPS-Verbindungen werden im ProxyFTP-Parameter definiert:
 
 ```
 <proxyConfig enabled=“1" override=“localhost*” useSingleProxy=“0">
@@ -101,34 +101,34 @@ FTP-/FTPS-Verbindungen werden im Parameter proxyFTP definiert:
 </proxyConfig>
 ```
 
-Wenn Sie denselben Proxy für mehrere Verbindungstypen verwenden, wird nur proxyHTTP mit useSingleProxy definiert, dessen Wert auf &quot;1&quot; oder &quot;true&quot; festgelegt ist.
+Wenn Sie denselben Proxy für mehrere Verbindungstypen verwenden, wird nur der Proxy-HTTP definiert, wobei useSingleProxy auf „1“ oder „true“ gesetzt ist.
 
-Wenn Sie interne Verbindungen haben, die nicht durch den Proxy führen sollen, fügen Sie sie im Parameter override hinzu.
+Wenn Sie interne Verbindungen haben, die nicht über den Proxy gehen sollen, fügen Sie diese im Parameter „override“ hinzu.
 
-Wenn Sie die Proxy-Verbindung vorübergehend deaktivieren möchten, setzen Sie den aktivierten Parameter auf &quot;false&quot; oder &quot;0&quot;.
+Wenn Sie die Proxy-Verbindung vorübergehend deaktivieren möchten, setzen Sie den enabled-Parameter auf „false“ oder „0“.
 
-Wenn Sie den iOS HTTP/2-Connector über einen Proxy verwenden müssen, werden die folgenden HTTP-Proxymodi unterstützt:
+Wenn Sie den iOS HTTP/2-Connector über einen Proxy verwenden müssen, werden die folgenden HTTP-Proxy-Modi unterstützt:
 
 * HTTP ohne Authentifizierung
-* Grundlegende HTTP-Authentifizierung
+* HTTP-Standardauthentifizierung
 
-Um den Proxy-Modus zu aktivieren, muss die folgende Änderung in der Datei `serverconf.xml` vorgenommen werden:
+Um den Proxy-Modus zu aktivieren, muss die folgende Änderung in der `serverconf.xml`-Datei vorgenommen werden:
 
 ```
 <nmac useHTTPProxy="true">
 ```
 
-Weitere Informationen zu diesem iOS HTTP/2-Connector finden Sie auf dieser [Seite](../../delivery/using/about-mobile-app-channel.md).
+Weitere Informationen zu diesem iOS HTTP/2-Connector finden Sie auf [Seite](../../delivery/using/about-mobile-app-channel.md).
 
-## Verwalten öffentlicher Ressourcen {#managing-public-resources}
+## Öffentliche Ressourcen verwalten {#managing-public-resources}
 
-Um öffentlich verfügbar zu sein, müssen die Bilder, die in E-Mails und öffentlichen Ressourcen verwendet werden, die mit Kampagnen verknüpft sind, auf einem extern zugänglichen Server vorhanden sein. Sie können dann externen Empfängern oder Benutzern zur Verfügung stehen. [Weitere Informationen](../../installation/using/deploying-an-instance.md#managing-public-resources).
+Um öffentlich verfügbar zu sein, müssen die in E-Mails verwendeten Bilder und die mit den Kampagnen verknüpften öffentlichen Ressourcen auf einem extern zugänglichen Server vorhanden sein. Sie können dann für externe Empfänger oder Benutzer verfügbar sein. [Weitere Informationen](../../installation/using/deploying-an-instance.md#managing-public-resources).
 
-Öffentliche Ressourcen werden im Ordner &quot;**/var/res/instance**&quot;des Adobe Campaign-Installationsordners gespeichert.
+Öffentliche Ressourcen werden im Verzeichnis **/var/res/instance** des Adobe Campaign-Installationsverzeichnisses gespeichert.
 
-Die übereinstimmende URL lautet: **http://server/res/instance** , wobei **instance** der Name der Tracking-Instanz ist.
+Die entsprechende URL lautet: **http://server/res/instance** wobei **instance** der Name der Tracking-Instanz ist.
 
-Sie können einen anderen Ordner angeben, indem Sie der Datei **conf-`<instance>`.xml** einen Knoten hinzufügen, um den Speicher auf dem Server zu konfigurieren. Dies bedeutet, dass die folgenden Zeilen hinzugefügt werden:
+Sie können ein anderes Verzeichnis angeben, indem Sie der Datei **conf-`<instance>`.xml** einen Knoten hinzufügen, um den Speicher auf dem Server zu konfigurieren. Dies bedeutet, dass die folgenden Zeilen hinzugefügt werden:
 
 ```
 <serverconf>
@@ -141,4 +141,4 @@ Sie können einen anderen Ordner angeben, indem Sie der Datei **conf-`<instance>
 </serverconf>
 ```
 
-In diesem Fall sollte die im oberen Teil des Fensters des Softwareverteilungs-Assistenten angegebene neue URL für die öffentlichen Ressourcen auf diesen Ordner verweisen.
+In diesem Fall sollte die neue URL für die öffentlichen Ressourcen im oberen Teil des Fensters des Bereitstellungsassistenten auf diesen Ordner verweisen.
