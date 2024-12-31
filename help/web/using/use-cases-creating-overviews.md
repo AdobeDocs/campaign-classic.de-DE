@@ -1,12 +1,12 @@
 ---
 product: campaign
-title: "Anwendungsfälle: Erstellen von Übersichten"
-description: "Anwendungsfälle: Erstellen von Übersichten"
+title: 'Anwendungsfälle: Erstellen von Übersichten'
+description: 'Anwendungsfälle: Erstellen von Übersichten'
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Web Apps
 exl-id: a1ac3aab-dc81-4533-9207-26d5dc5e1c88
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1041'
 ht-degree: 100%
 

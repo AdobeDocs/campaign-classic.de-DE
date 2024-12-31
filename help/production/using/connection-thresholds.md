@@ -19,19 +19,19 @@ ht-degree: 10%
 
 
 
-Bei stark ausgelasteten Servern kann der Verbindungsschwellenwert überschritten werden. Auf jeden Fall ist es nützlich herauszufinden, warum.
+Bei stark ausgelasteten Servern kann der Verbindungsschwellenwert überschritten werden. Auf jeden Fall ist es nützlich, die Gründe dafür zu erfahren.
 
-Es gibt drei unterschiedliche Schwellenwerte:
+Es gibt drei verschiedene Schwellenwerte:
 
-* Der **Schwellenwert für Webverbindungen**, der auf Ihrem Webserver konfiguriert ist. Wenden Sie sich zur Änderung an Ihren Systemadministrator.
+* Der **Schwellenwert für Webverbindungen**, der auf Ihrem Webserver konfiguriert ist. Wenden Sie sich an Ihren Systemadministrator, um sie zu ändern.
 
-* Der **Schwellenwert für die Datenbankverbindung**. Wenden Sie sich zur Änderung an Ihren Datenbankadministrator.
+* Der **Schwellenwert für Datenbankverbindungen**. Wenden Sie sich an Ihren Datenbankadministrator, um sie zu ändern.
 
 * Der **Adobe Campaign-Verbindungsschwellenwert**, der an zwei Stellen verfügbar ist:
 
-   * **Tomcat** Seite: Alle Abfragen, die tatsächlich auf den Adobe Campaign Tomcat-Client gelangen.
+   * **Tomcat** Seite: Alle Abfragen, die tatsächlich auf dem Adobe Campaign Tomcat-Client ankommen.
 
-     Dieser Schwellenwert wird in der Datei **nl6/tomcat-X/conf/server.xml** konfiguriert. Mit dem Attribut **maxThreads** können Sie den Schwellenwert für die Anzahl der gleichzeitig verarbeiteten Abfragen erhöhen. Sie kann beispielsweise auf 250 geändert werden.
+     Dieser Schwellenwert wird in der Datei **nl6/tomcat-X/conf/server.xml** konfiguriert. Mit dem **maxThreads**-Attribut können Sie den Schwellenwert für die Anzahl der gleichzeitig verarbeiteten Abfragen erhöhen. Sie kann beispielsweise in 250 geändert werden.
 
      ```
      <Connector protocol="HTTP/1.1" port="8080"
@@ -45,9 +45,9 @@ Es gibt drei unterschiedliche Schwellenwerte:
                  unpackWARs="true" autoDeploy="true">
      ```
 
-   * **Datenbank**: Satz aller Verbindungen, die von einem Prozess gleichzeitig in der Datenbank geöffnet werden.
+   * **Datenbank**: Satz aller Verbindungen, die gleichzeitig in der Datenbank von einem Prozess geöffnet sind.
 
-     Dieser Schwellenwert wird in der Datei **nl6/conf/serverConf.xml** konfiguriert. Mit dem Attribut **maxCnx** im **Datenquellenpool** können Sie den Schwellenwert für gleichzeitig verarbeitete Abfragen erhöhen.
+     Dieser Schwellenwert wird in der Datei **nl6/conf/serverConf.xml** konfiguriert. Mit dem **maxCnx**-Attribut im **Datenquellenpool** können Sie den Schwellenwert für gleichzeitig verarbeitete Abfragen erhöhen.
 
      ```
          <!-- Data source

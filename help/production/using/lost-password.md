@@ -24,26 +24,26 @@ ht-degree: 12%
 Sie können ein verlorenes Passwort ändern oder wiederherstellen.
 Es gibt zwei mögliche Szenarien:
 
-* [Passwort, das von einem Adobe Campaign-Benutzer verloren geht](#password-lost-by-campaign-operator)
-* [Internes Kennwort verloren ](#internal-password-lost) (nur On-Premise-Kunden)
+* [Kennwort, das von einem Adobe Campaign-Benutzer verloren wurde](#password-lost-by-campaign-operator)
+* [Internes Kennwort verloren](#internal-password-lost) (nur On-Premise-Kunden)
 
-## Passwort, das von einem Campaign-Benutzer verloren geht {#password-lost-by-campaign-operator}
+## Passwort, das ein Campaign-Benutzer verloren hat {#password-lost-by-campaign-operator}
 
 Wenn ein Adobe Campaign-Benutzer sein Kennwort verliert, können Sie es ändern.
 
 >[!NOTE]
 >
->Dieses Verfahren gilt nur für Benutzer, die mit nativer Authentifizierung eine Verbindung zu Campaign herstellen. Informationen zur Adobe IMS-Authentifizierung finden Sie in [dieser Dokumentation](https://helpx.adobe.com/ie/manage-account/using/change-or-reset-password.html){target="_blank"}.
+>Dieses Verfahren gilt nur für Benutzer, die eine Verbindung zu Campaign mit nativer Authentifizierung herstellen. Informationen zur Adobe IMS-Authentifizierung finden Sie [dieser Dokumentation](https://helpx.adobe.com/ie/manage-account/using/change-or-reset-password.html){target="_blank"}.
 
 Gehen Sie wie folgt vor, um ein Campaign-Kennwort zurückzusetzen:
 
-1. Verbindung über einen Benutzer mit Administratorrechten
-1. Klicken Sie mit der rechten Maustaste auf einen Operator.
+1. Stellen Sie über einen Benutzer mit Administratorrechten eine Verbindung her.
+1. Klicken Sie mit der rechten Maustaste auf einen Benutzer.
 1. Wählen Sie **[!UICONTROL Aktionen]** > **[!UICONTROL Kennwort zurücksetzen]** aus.
 
    ![](assets/operator-passwd.png)
 
-1. Legen Sie das neue Kennwort des Benutzers fest. Es wird empfohlen, dass der Benutzer sein Kennwort ändert, wenn er sich zum ersten Mal erneut anmeldet.
+1. Legen Sie das neue Kennwort des Benutzers fest. Es wird empfohlen, dass Benutzende ihr Kennwort ändern, wenn sie die Verbindung zum ersten Mal wiederherstellen.
 
 ## Internes Kennwort verloren {#internal-password-lost}
 
@@ -55,9 +55,9 @@ Wenn das interne Kennwort verloren geht, müssen Sie es erneut initialisieren.
 
 Gehen Sie dazu wie folgt vor:
 
-1. Bearbeiten Sie die Datei &quot;**/usr/local/neolane/nl6/conf/serverConf.xml**&quot;.
+1. Bearbeiten Sie die Datei **/usr/local/neolane/nl6/conf/serverConf.xml**.
 
-1. Wechseln Sie zur Zeile **internalPassword** .
+1. Wechseln Sie zur Zeile **internalPassword**.
 
    ```xml
    <!-- XTK authentication mode internalPassword : Password of internal account -->
@@ -71,9 +71,9 @@ Gehen Sie dazu wie folgt vor:
    <xtk internalPassword=""/>
    ```
 
-1. Speichern Sie die Änderungen und schließen Sie die Datei.
+1. Speichern Sie die Änderungen und schließen Sie die Datei .
 
-1. Beenden Sie den `nlserver`-Prozess.
+1. Stoppen Sie den `nlserver`.
 
 1. Konfigurieren Sie das neue Kennwort. Geben Sie dazu die folgenden Befehle ein:
 
@@ -87,6 +87,6 @@ Gehen Sie dazu wie folgt vor:
    Confirmation 
    ```
 
-1. Starten Sie den `nlserver`-Prozess.
+1. Starten Sie den `nlserver`.
 
 1. Sie können jetzt Ihr neues Kennwort verwenden, um eine Verbindung im Modus **Intern** herzustellen.

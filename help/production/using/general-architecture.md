@@ -18,42 +18,42 @@ ht-degree: 4%
 
 
 
-## Mindestarchitektur {#minimum-architecture}
+## Minimale Architektur {#minimum-architecture}
 
-In einer Mindestkonfiguration funktioniert Adobe Campaign mit:
+Bei einer Mindestkonfiguration wird Adobe Campaign wie folgt ausgeführt:
 
 * den Adobe Campaign-Anwendungsserver,
-* Datenbank.
+* Die Datenbank.
 
   ![](assets/formation_exploitation.png)
 
-Dieses Diagramm zeigt, dass der einzige Traffic, der im Kontext einer minimalen Architektur involviert ist, Folgendes ist:
+Dieses Diagramm zeigt, dass der einzige Traffic, der im Kontext einer Mindestarchitektur involviert ist, ist:
 
-1. HTTP-Protokolldatenverkehr zum Adobe Campaign-Server über das Internet,
-1. SMTP-Protokolltraffic vom und zum Adobe Campaign-Server über das Internet.
+1. HTTP-Protokollverkehr zum Adobe Campaign-Server über das Internet,
+1. SMTP-Protokoll-Traffic vom und zum Adobe Campaign-Server über das Internet.
 
 ## Verteilte Architektur {#distributed-architecture}
 
-Adobe Campaign besteht aus mehreren Modulen, die auf mehrere Maschinen verteilt werden können. Dieser Betriebsmodus hat mehrere Vorteile:
+Adobe Campaign besteht aus mehreren Modulen, die auf mehrere Computer verteilt werden können. Diese Betriebsart hat mehrere Vorteile:
 
-* Lastenausgleich,
+* Lastausgleich,
 * Einrichtung der Modulredundanz,
-* Aufbau einer über mehrere Dienstleister verteilten Architektur (Segmentierung der angebotenen Dienste).
+* Aufbau einer auf mehrere Dienstleister aufgegliederten Architektur (Segmentierung der erbrachten Dienstleistungen).
 
 ![](assets/architecturerepartie.png)
 
-Die Verteilung der Module über mehrere Maschinen bietet große Flexibilität bei der Bedienung und verbesserte Anpassungsfähigkeit.
+Die Modulverteilung auf mehrere Maschinen bietet eine hohe Flexibilität und verbesserte Anpassungsfähigkeit.
 
 >[!NOTE]
 >
->Weitere Informationen zu den verschiedenen Architekturen finden Sie in [diesem Abschnitt](../../installation/using/general-architecture.md).
+>Weiterführende Informationen zu den verschiedenen Architekturen finden Sie [diesem Abschnitt](../../installation/using/general-architecture.md).
 
-## Liste offener Ports {#list-of-open-ports}
+## Liste der offenen Ports {#list-of-open-ports}
 
-| Port-Nummer | Betroffenes Adobe Campaign-Modul oder -Anwendung | Konfigurierbar |
+| Portnummer | Betroffenes Adobe Campaign-Modul oder Programm | Konfigurierbar |
 |---|---|---|
-| 443/tcp oder 80/tcp | Webserver (Apache/IIS) | JA |
-| 6666/udp (lokal) | Adobe Campaign: Syslogd | JA |
-| 8005/tcp (lokal) | Adobe Campaign: Webmodul | JA |
-| 8080/tcp | Adobe Campaign: Webmodul (tomcat) | JA |
-| 7777 | Statistikserver (stat-Server) | JA |
+| 443/TCP oder 80/TCP | Webserver (Apache/IIS) | JA |
+| 6666/UDP (lokal) | Adobe Campaign: syslogd | JA |
+| 8005/TCP (lokal) | Adobe Campaign: Web-Modul | JA |
+| 8080/TCP | Adobe Campaign: Web-Modul (Tomcat) | JA |
+| 7777 | Statistikserver (stat-server) | JA |

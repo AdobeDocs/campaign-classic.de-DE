@@ -19,27 +19,27 @@ ht-degree: 5%
 
 
 
-Die Protokolldateien sind wie folgt organisiert:
+Die Protokolldateien sind wie folgt aufgebaut:
 
 ![](assets/d_ncs_directory.png)
 
-Jedes Modul **nlserver** generiert eine Protokolldatei, die im folgenden Verzeichnis gespeichert ist: **`<installation directory>`/var/`<instance>`/log/`<module>`.log**.
+Jedes **nlserver**-Modul generiert eine Protokolldatei, die im folgenden Verzeichnis gespeichert ist: **`<installation directory>`/var/`<instance>`/log/`<module>`.log**.
 
-Das Modul **nlserver syslogd** speichert die Protokolle auf der Festplatte. Dieses Modul ähnelt dem Unix- **syslog-Daemon**, wurde jedoch für die Kompatibilität zwischen Unix und Windows angepasst. Die anderen Adobe Campaign-Module speichern ihre Protokolle nicht auf der Festplatte. Sie delegieren diese Aufgabe an das Modul **syslogd**, indem sie es UDP-Pakete senden.
+Das **nlserver syslogd**-Modul speichert die Protokolle auf der Festplatte. Dieses Modul ähnelt dem Unix **syslog-Daemon**, wurde jedoch aus Gründen der Kompatibilität zwischen Unix und Windows angepasst. Die anderen Adobe Campaign-Module speichern ihre Protokolle nicht auf der Festplatte, sondern delegieren diese Aufgabe an das **syslogd**-Modul, indem sie UDP-Pakete senden.
 
-Standardmäßig ist auf der Adobe Campaign-Plattform das Modul &quot;**syslogd**&quot; installiert. Es ist jedoch möglich, einen anderen &quot;**syslog Daemon**&quot; zu verwenden. Dieses Modul erstellt die Protokolldateien im Verzeichnis **log** .
+Standardmäßig ist auf der Adobe Campaign-Plattform das Modul **syslogd** installiert, es kann jedoch auch ein anderer **syslog-Daemon** verwendet werden. Dieses Modul erstellt die Protokolldateien im Verzeichnis **log**.
 
-Die Protokolle von Modulen mit mehreren Instanzen werden im folgenden Verzeichnis gespeichert: **`<installation directory>`/var/default/log/**. Dieselbe Protokolldatei wird von allen Instanzen freigegeben (z. B. **web.log**).
+Die Protokolle von Modulen mit mehreren Instanzen werden im folgenden Verzeichnis gespeichert: **`<installation directory>`/var/default/log/**. Alle Instanzen nutzen dieselbe Protokolldatei (z. B. **web.log**).
 
 Die Protokolle der anderen Module werden in einem Unterordner gespeichert, der nach der Instanz benannt ist. Jede Instanz verfügt über eigene Protokolldateien.
 
-Protokolldateien mit mehreren Instanzen sind in der folgenden Tabelle aufgeführt:
+Protokolldateien für mehrere Instanzen sind in der folgenden Tabelle aufgeführt:
 
 | Datei | Beschreibung |
 |---|---|
-| web.log | Webmodulprotokolle (Clientkonsole, Berichte, SOAP API usw.) |
+| web.log | Web-Modulprotokolle (Client-Konsole, Berichte, SOAP-API usw.) |
 | webmdl.log | Protokolle aus dem Umleitungsmodul |
-| watchdog.log | Protokolle vom Adobe Campaign-Prozessüberwachungsmodul |
+| watchdog.log | Protokolle aus dem Adobe Campaign-Prozessüberwachungsmodul |
 | trackinglogd.log | Trackinglogs          |
 
 Die Protokolldateien der Mono-Instanz sind in der folgenden Tabelle aufgeführt:
@@ -47,22 +47,22 @@ Die Protokolldateien der Mono-Instanz sind in der folgenden Tabelle aufgeführt:
 | Datei | Beschreibung |
 |---|---|
 | mta.log | MTA-Modulprotokolle |
-| mtachild.log | Verarbeitungslogs der Nachrichten |
+| mtachild.log | Verarbeitungsprotokolle des Nachrichtenversands |
 | wfserver.log | Protokolle des Workflow-Server-Moduls |
-| runwf.log | Workflow-Ausführungsprotokolle |
+| runwf.log | Ausführungsprotokolle des Workflows |
 | inMail.log | Bounce-Message-Modulprotokoll |
 | logins.log | Protokolliert alle Anmeldeversuche für Adobe Campaign (erfolgreich oder nicht) |
 
 >[!IMPORTANT]
 >
->Der Ordner &quot;**redir**&quot; ist nur auf Umleitungsservern vorhanden. Das Unterverzeichnis **url** enthält die Übereinstimmungen mit den umzuleitenden URLs und das Unterverzeichnis **log** enthält die Trackinglogs. Um Trackinglogs zu generieren, muss das Modul **trackinglogd** ausgeführt werden.
+>Das **redir**-Verzeichnis existiert nur auf Weiterleitungs-Servern. Der Unterordner **url** enthält die Übereinstimmungen mit den umzuleitenden URLs, und der Unterordner **log** enthält die Trackinglogs. Zum Generieren von Trackinglogs muss **Modul** trackinglogd“ ausgeführt werden.
 
-Zur Optimierung der Leistung und des Speicherplatzes wird die Datei &quot;login.log&quot;in mehrere Dateien aufgeteilt, wobei jeder Tag (login.yy-mm-dd.log) mit maximal 365 Dateien gespeichert wird. Die Anzahl der Tage kann in der Datei serverConf.xml unter syslogd geändert werden (**maxNumberOfLoginsFiles** Option). Weitere Informationen finden Sie in der Dokumentation zur [Server-Konfigurationsdatei](../../installation/using/the-server-configuration-file.md#syslogd).
+Zur Leistungsoptimierung und Speicheroptimierung wird die Datei logins.log in mehrere Dateien aufgeteilt, eine pro Tag (logins.yy-mm-dd.log), wobei maximal 365 Dateien beibehalten werden. Die Anzahl der Tage kann in der Datei serverConf.xml unter der Option syslogd (**maxNumberOfLoginsFiles**) geändert werden. Weitere Informationen finden Sie in der Dokumentation zur [Server-Konfigurationsdatei](../../installation/using/the-server-configuration-file.md#syslogd).
 
-Standardmäßig sind die Protokolle auf zwei 10 MB Dateien pro Modul und Instanz beschränkt. Die zweite Datei heißt: **`<modulename>`_2.log**. Die Größe der Protokolle ist daher auf 2&#42;10 MB pro Modul und Instanz beschränkt.
+Standardmäßig sind die Protokolle auf zwei 10 MB-Dateien pro Modul und Instanz beschränkt. Die zweite Datei heißt: **`<modulename>`_2.log**. Die Größe der Protokolle ist daher auf 2,&#42; MB pro Modul und Instanz beschränkt.
 
-Sie können jedoch größere Dateien beibehalten. Um dies zu aktivieren, ändern Sie den Wert der Einstellung **maxFileSizeMb=&quot;10&quot;** im Knoten **syslogd** der Datei **conf/serverConf.xml** . Dieser Wert stellt die maximale Größe einer Protokolldatei in MB dar.
+Sie können jedoch größere Dateien beibehalten. Ändern Sie dazu den Wert der Einstellung **maxFileSizeMb=„10“** im Knoten **syslogd** der Datei **conf/serverConf.xml**. Dieser Wert stellt die maximale Größe in MB einer Protokolldatei dar.
 
-Wenn Sie weitere Detailstufen in den Protokollen beibehalten möchten, können Sie die Adobe Campaign-Module mit dem Parameter **-verbose** starten:
+Wenn Sie weitere Detaillierungsstufen in den Protokollen beibehalten möchten, können Sie die Adobe Campaign-Module mit dem Parameter **-verbose** starten:
 
 **nlserver start `<MODULE>`@`<INSTANCE>` -verbose**

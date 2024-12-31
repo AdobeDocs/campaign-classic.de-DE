@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: "Anwendungsbeispiele: Webformulare"
-description: "Anwendungsbeispiele: Webformulare"
+title: 'Anwendungsbeispiele: Web-Formulare'
+description: 'Anwendungsbeispiele: Web-Formulare'
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Web Forms
 exl-id: 7aa4646d-1325-47c2-b553-6fe375c48973

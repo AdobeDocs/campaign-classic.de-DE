@@ -19,15 +19,15 @@ ht-degree: 19%
 
 
 
-Ein **Stacktrace** steht für eine Spur, die in einer Datei vom Typ **core** enthalten ist. Diese Datei wird im Falle eines Maschinenfehlers generiert. Sie kann die Herkunft des Fehlers identifizieren.
+Ein **Stacktrace** stellt eine in einer Datei vom Typ **Core** enthaltene Ablaufverfolgung dar. Diese Datei wird im Falle eines Computerfehlers generiert. Sie kann die Ursache des Fehlers identifizieren.
 
 >[!NOTE]
 >
->* Eine **core** -Datei heißt **core.`<num>`**.
->* **gdb - Der GNU-Debugger** muss auf dem Computer installiert sein.
+>* Eine **core**-Datei heißt **core.`<num>`**.
+>* **gdb - Der GNU Debugger** muss auf dem Rechner installiert sein.
 >
 
-Der technische Support von Adobe Campaign kann Sie nach diesem **Stacktrace** fragen. Geben Sie zum Abrufen die folgenden Befehle in Linux ein:
+Der technische Support von Adobe Campaign kann Sie nach diesem **Stack Trace** fragen. Um es zu erhalten, geben Sie die folgenden Befehle in Linux ein:
 
 ```
 su - neolane
@@ -54,7 +54,7 @@ gdb nlserver <coreFile>
 #16 0x5565918a in clone () from /lib/tls/libc.so.6
 ```
 
-Der technische Support von Adobe Campaign kann Sie bitten, diesen Befehl mit einer bestimmten ausführbaren Datei auszuführen (die von uns bereitgestellt wird).
+Der technische Support von Adobe Campaign bittet Sie möglicherweise, diesen Befehl mit einer bestimmten ausführbaren Datei auszuführen (die von uns bereitgestellt wird).
 
 Führen Sie in diesem Fall einfach den folgenden Befehl aus, indem Sie **nlserver** durch die von Adobe Campaign bereitgestellte ausführbare Datei ersetzen:
 

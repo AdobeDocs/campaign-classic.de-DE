@@ -18,44 +18,44 @@ ht-degree: 4%
 
 
 
-Integrierte Objekte sollten überwacht werden, und es ist wichtig zu verhindern, dass sie zu stark wachsen.
+Integrierte Objekte sollten überwacht werden. Es ist daher wichtig, zu verhindern, dass sie zu stark anwachsen.
 
-## Sequenz von IDs {#sequence-of-ids}
+## ID-Sequenz {#sequence-of-ids}
 
-Adobe Campaign verwendet eine ID-Sequenz, die entsprechend genutzt werden muss: **xtkNewId**. Wenn die Sequenz sehr schnell verwendet wird (d. h. ab 100.000 pro Tag), müssen Sie überprüfen, ob sie Ihren Geschäftsanforderungen entspricht, z. B. dem Versand von Millionen E-Mails pro Tag. Es ist möglich, eine eigene Sequenz für bestimmte Tabellen zu definieren. Sie können einen Workflow zur Überwachung der ID-Nutzung einrichten.
+Adobe Campaign verwendet eine ID-Sequenz, die entsprechend genutzt werden muss: **xtkNewId**. Wenn die Sequenz sehr schnell verwendet wird (d. h. ab 100.000 pro Tag), müssen Sie sicherstellen, dass sie mit Ihren Geschäftsanforderungen übereinstimmt, z. B. indem Sie täglich Millionen von E-Mails senden. Es ist möglich, eine dedizierte Sequenz für bestimmte Tabellen zu definieren. Sie können einen Workflow zur Überwachung der ID-Nutzung einrichten.
 
-Wenn die Sequenz mehr als 2 Milliarden erreicht (2.147.483.648 ist die genaue Zahl), geht sie zurück auf null. Es muss vermieden werden und es gibt Probleme, weshalb diese Reihenfolge überwacht werden muss.
+Wenn die Sequenz mehr als 2 Milliarden erreicht (2.147.483.648 ist die exakte Zahl), geht sie zurück auf null. Sie muss vermieden werden und schafft Probleme, weshalb diese Abfolge überwacht werden muss.
 
 Um dies bei großen Tabellen zu verhindern, sollten Sie eine bestimmte Sequenz verwenden. Dies kann mit dem Attribut **pkSequence** im Schema erfolgen.
 
-Hochfrequente Workflows, die viele Protokolle erstellen, verbrauchen viele IDs. Es wird daher dringend empfohlen, zu viele Protokolle und hohe Frequenzen in Workflows zu vermeiden.
+Häufige Workflows, die viele Protokolle erstellen, verbrauchen viele IDs. Es wird daher dringend empfohlen, zu viele Protokolle und hohe Häufigkeiten in Workflows zu vermeiden.
 
-Wenn die Sequenz bereits einen Zyklus durchlaufen hat, besteht die beste Lösung darin, zu negativen IDs zu wechseln, beginnend bei -2.147.483.648.
+Wenn die Sequenz bereits getaktet ist, ist die beste Lösung, auf negative IDs umzuschalten, beginnend bei -2.147.483.648.
 
 ## Ordner {#folders}
 
-Es sollte in jeder Instanz weniger als 1000 Ordner geben. Wenn mehr Ordner vorhanden sind, kann dies zu Leistungsproblemen beim Campaign-Client führen. Sie können einen Überwachungsauftrag einrichten, um die Anzahl der Ordner, Workflows usw. zu zählen und regelmäßig Berichte zu erstellen.
+Es sollte auf jeder Instanz weniger als 1000 Ordner geben. Mehr Ordner als diese Anzahl kann zu Leistungsproblemen mit dem Campaign-Client führen. Sie können einen Überwachungsauftrag einrichten, um die Anzahl der Ordner, Workflows usw. zu zählen und Berichte in regelmäßigen Abständen zu erstellen.
 
 Diese Methode hebt auch Benutzer hervor, die zu viele Objekte erstellen.
 
 ## Sendungen {#deliveries}
 
-Es sollten zu jedem Zeitpunkt weniger als 1000 Sendungen in der Instanz durchgeführt werden. Viele Sendungen verbrauchen Speicherplatz in der Datenbank und verursachen Probleme. Eine Instanz, die mehr als 10 Sendungen pro Tag erstellt, muss entsprechend den Geschäftsanforderungen geprüft werden. Erwägen Sie die Verwendung von fortlaufenden Sendungen, um weniger Sendungen zu erstellen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../workflow/using/continuous-delivery.md).
+Es sollten zu jedem Zeitpunkt weniger als 1.000 Sendungen in der Instanz vorhanden sein. Viele Sendungen belasten den Datenbankspeicherplatz und verursachen Probleme. Eine Instanz, die mehr als 10 Sendungen pro Tag erstellt, muss mit den Geschäftsanforderungen abgeglichen werden. Verwenden Sie fortlaufende Sendungen, um weniger Sendungen zu erstellen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../workflow/using/continuous-delivery.md).
 
 Sendungen, die älter als zwei Jahre sind, sollten aus der Instanz gelöscht werden.
 
 ## Dateien {#files}
 
-Die Anzahl der Dateien auf der Festplatte des Anwendungsservers sollte nicht unbegrenzt steigen.
+Die Anzahl der Dateien auf dem Anwendungsserverdatenträger sollte nicht unbegrenzt ansteigen.
 
-Import-Workflows erstellen Dateien und verursachen so eine Festplattenerweiterung. Dies lässt sich durch die Verwendung der standardmäßigen [Datei-Wächter](../../workflow/using/file-collector.md) -Aktivität verhindern. Der Datei-Wächter verschiebt Dateien in einen temporären Ordner und löscht sie automatisch.
+Import-Workflows erstellen Dateien und führen daher zu einer Festplattenerweiterung. Dies kann mithilfe der standardmäßigen Aktivität [Datei-Wächter](../../workflow/using/file-collector.md) verhindert werden. Der Datei-Wächter verschiebt Dateien in einen temporären Ordner und löscht sie automatisch.
 
-Wenn ein Workflow Dateien importiert und nicht die Standardfunktionen nutzt, muss er bereinigt werden, um Speicherplatz auf ein Minimum zu beschränken.
+Wenn ein Workflow Dateien importiert und nicht die Standardfunktionen verwendet, muss er bereinigt werden, um den Speicherplatz auf ein Minimum zu beschränken.
 
-## Transaktionsdaten und -logs {#transactional-data-and-logs}
+## Transaktionsdaten und -protokolle {#transactional-data-and-logs}
 
-Jeder [Workflow](../../workflow/using/data-life-cycle.md#work-table), der Daten in Adobe Campaign importiert, bewirkt, dass die Datenbankgröße zunimmt.
+Jeder [Workflow](../../workflow/using/data-life-cycle.md#work-table) der Daten in Adobe Campaign importiert, vergrößert die Datenbank entsprechend.
 
-Vergewissern Sie sich, dass die Bereinigungs- oder Bereinigungs-Workflows ausgeführt werden und dass die Datensätze effektiv bereinigt werden. Alle Transaktionsdaten und -protokolle müssen bereinigt werden. Die Bereinigungsaufgabe bereinigt nur die Standardtabellen: Tracking und Broadlogs. Bestimmte Tabellen müssen durch bestimmte Workflows bereinigt werden. Weitere Informationen finden Sie in [diesem Abschnitt](../../workflow/using/monitoring-workflow-execution.md#purging-the-logs).
+Überprüfen Sie, ob Bereinigungs- oder Bereinigungs-Workflows ausgeführt werden und Datensätze effektiv bereinigen. Alle Transaktionsdaten und -protokolle müssen bereinigt werden. Die Bereinigungsaufgabe löscht nur die Standardtabellen „Tracking“ und „Umfassende Protokolle“. Bestimmte Tabellen müssen durch bestimmte Workflows bereinigt werden. Weitere Informationen finden Sie in [diesem Abschnitt](../../workflow/using/monitoring-workflow-execution.md#purging-the-logs).
 
-Achten Sie auf Alterungsdaten von Transaktionsdaten, indem Sie das älteste Erstellungsdatum der Datensätze überprüfen.
+Achten Sie auf veraltete Transaktionsdaten, indem Sie das älteste Erstellungsdatum der Datensätze überprüfen.

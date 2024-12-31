@@ -18,14 +18,14 @@ ht-degree: 6%
 
 
 
-Wenn bei einer gesendeten Nachricht Probleme mit der Bildanzeige auftreten, können die Gründe mit einer fehlerhaften Position in Zusammenhang stehen:
+Wenn in einer gesendeten Nachricht Probleme mit der Bildanzeige auftreten, können Gründe mit einer fehlerhaften Position verknüpft sein:
 
-* Die Standorte stimmen möglicherweise nicht überein oder Bilder wurden möglicherweise nicht korrekt an den duplizierten Tracking-Server gesendet: Überprüfen Sie Ihre Konfiguration.
-* Bilder befinden sich möglicherweise nicht im Ordner der öffentlichen Ressource auf der Marketing-Instanz: Laden Sie die Bilder in Ihren Ressourcenordner hoch, um das Problem zu beheben.
-* Wenn Sie in einer Mid-Sourcing-Architektur arbeiten: Prüfen Sie, ob Bilder beim Versand von Testsendungen fehlerfrei hochgeladen werden (Informationen werden in den Analyseprotokollen angezeigt).
+* Speicherorte stimmen möglicherweise nicht überein oder Bilder wurden möglicherweise nicht korrekt an den doppelten Tracking-Server gepusht: Überprüfen Sie Ihre Konfiguration.
+* Bilder befinden sich möglicherweise nicht im Ordner „Öffentliche Ressourcen“ der Marketing-Instanz: Laden Sie die Bilder in Ihren Ressourcenordner hoch, um das Problem zu beheben.
+* Wenn Sie in einer Mid-Sourcing-Architektur arbeiten: Beim Senden von Testsendungen werden die Scheckbilder fehlerfrei hochgeladen (Informationen werden in den Analyseprotokollen angezeigt).
 
 Fehlerbehebung:
 
 1. Senden Sie einen Testversand, der die Bilder anzeigt.
-1. Überprüfen Sie, ob die Ressourcenkonfiguration in der Instanzeinrichtung korrekt ist.
-1. Überprüfen Sie den Ordner der öffentlichen Ressourcen oder, falls er sich nicht im Ordner der öffentlichen Ressourcen befindet, den im Versand referenzierten Ordner.
+1. Überprüfen Sie, ob die Ressourcenkonfiguration in der Instanz korrekt ist.
+1. Überprüfen Sie den Ordner mit öffentlichen Ressourcen oder, falls dieser nicht im Ordner mit öffentlichen Ressourcen enthalten ist, den im Versand referenzierten Ordner.

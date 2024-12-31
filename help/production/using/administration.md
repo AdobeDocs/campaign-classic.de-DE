@@ -11,13 +11,13 @@ exl-id: 12a255fe-66f9-40ce-b19e-c24322c2e009
 source-git-commit: b7dedddc080d1ea8db700fabc9ee03238b3706cc
 workflow-type: tm+mt
 source-wordcount: '425'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
 # Administration{#administration}
 
-Automatischer Start der Adobe Campaign-Module (**Web**, **mta**, **wfserver** usw.) wird vom **nlserver** -Server bereitgestellt.
+Der automatische Start der Adobe Campaign-Module (**web**, **mta**, **wfserver** usw.) wird vom Server **nlserver** bereitgestellt.
 
 Bei der Installation von Adobe Campaign wird der Rechner automatisch so konfiguriert, dass der **nlserver** -Dienst während der Startsequenz Beginn wird.
 

@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: "Anwendungsbeispiel: Bericht zu Antworten auf eine Online-Umfrage erstellen"
-description: "Anwendungsbeispiel: Bericht zu Antworten auf eine Online-Umfrage erstellen"
+title: 'Anwendungsbeispiel: Bericht zu Antworten auf eine Online-Umfrage erstellen'
+description: 'Anwendungsbeispiel: Bericht zu Antworten auf eine Online-Umfrage erstellen'
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Surveys
 exl-id: 6be12518-86d1-4a13-bbc2-b2ec5141b505

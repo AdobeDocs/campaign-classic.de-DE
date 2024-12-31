@@ -19,13 +19,13 @@ ht-degree: 11%
 
 
 
-Fehlermeldungen wie die folgenden werden möglicherweise angezeigt (insbesondere in Versandlogs), wenn das System in die Produktion aufgenommen wird:
+Fehlermeldungen wie die folgende können (insbesondere in Versandlogs) angezeigt werden, wenn das System in die Produktion geht:
 
-*Datei &quot;/tmp/tmp0000.tmp&quot;kann nicht in /usr/local/neolane/nl6/bin/..//var/XXX/mta/86510470.xml umbenannt werden;(errno=18, Invalid cross-device link) (iRc=-52)*
+*Datei &#39;/tmp/tmp0000.tmp&#39; kann nicht in /usr/local/neolane/nl6/bin/..//var/XXX/mta/86510470.xml umbenannt werden;(errno=18, ungültige geräteübergreifende Verknüpfung) (iRc=-52)*
 
-Die Ursache lautet wie folgt:
+Die Ursache ist wie folgt:
 
-Adobe Campaign generiert temporäre Dateien unter **/tmp** und benennt sie dann um, um sie in **/usr/local/neolane/nl6/var** zu verschieben. Dieser Fehler tritt auf, wenn beide Ordner (**/tmp** und **/usr/local/neolane/nl6/var**, also eine symbolische Verknüpfung zu **/var/nl6**) verschiedenen Geräten entsprechen. Der Befehl **df** wird zur Überprüfung verwendet.
+Adobe Campaign generiert temporäre Dateien unter **/tmp** und benennt sie dann um, um sie nach **/usr/local/neolane/nl6/var** zu verschieben. Dieser Fehler tritt auf, wenn beide Ordner (**/tmp** und **/usr/local/neolane/nl6/var**, was in der Tat eine symbolische Verknüpfung zu **/var/nl6** ist) verschiedenen Geräten entsprechen. Der Befehl **df** wird zur Überprüfung verwendet.
 
 Um dieses Problem zu beheben, müssen die temporären Dateien auf demselben Gerät wie das Ziel generiert werden.
 

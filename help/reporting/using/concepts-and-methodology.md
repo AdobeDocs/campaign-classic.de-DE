@@ -10,7 +10,7 @@ exl-id: 5f22fa2c-b648-4126-9a24-1798adfa8f34
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '1580'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -52,7 +52,7 @@ Im unten stehenden Beispiel werden Sprachen in drei Gruppen verteilt: Englisch-D
 
 Sie können eine SQL-Maske nutzen, um mehrere Werte nach einem Filter zu gruppieren. Aktivieren Sie hierzu die Option **[!UICONTROL Ja]** in der Spalte **[!UICONTROL SQL-Maske benutzen]** und geben Sie den anzuwendenden SQL-Filter in der Spalte **[!UICONTROL Werte oder Ausdruck]** an.
 
-Im folgenden Beispiel werden alle mit **yahoo** (yahoo.fr, yahoo.com, yahoo.be usw.) oder mit **ymail** (ymail.com, ymail.eu usw.) beginnenden Domains unter dem Titel **YAHOO!** gruppiert, ebenso wie Adressen der Domain **rocketmail.com**.
+Im folgenden Beispiel werden alle E-Mail-Domains, die mit **yahoo** (yahoo.fr, yahoo.com, yahoo.be usw.) oder mit **ymail** (ymail.com, ymail.eu usw.) beginnen, unter der Bezeichnung **YAHOO!** gruppiert, ebenso wie Adressen der Domain **rocketmail.com**.
 
 ![](assets/s_advuser_cube_class_03b.png)
 

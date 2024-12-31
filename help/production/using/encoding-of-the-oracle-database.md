@@ -19,6 +19,6 @@ ht-degree: 68%
 
 
 
-Adobe Campaign verwendet die standardmäßigen Oracle-Kodierungen.
+Adobe Campaign verwendet die standardmäßigen Oracle-Codierungen.
 
-Wenn Sie andere verwenden, kann es zu einer Inkompatibilität kommen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/database.md#oracle).
+Bei Verwendung verschiedener Formate kann es zu Inkompatibilitäten kommen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/database.md#oracle).

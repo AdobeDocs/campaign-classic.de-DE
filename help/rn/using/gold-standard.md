@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: "[!DNL Gold Standard] Versionen"
+title: '[!DNL Gold Standard]-Versionen'
 description: Versionshinweise und Kompatibilitätsmatrix für Campaign Classic [!DNL Gold Standard]
 feature: Release Notes
 role: User
@@ -9,7 +9,7 @@ hidefromtoc: true
 hide: true
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1774'
 ht-degree: 100%
 
@@ -38,7 +38,7 @@ _Freitag, 27. August 2021_
 
 Build 9032@99a3894 umfasst die folgenden Fehlerkorrekturen:
 
-* Die Tracking-Signaturfunktion wurde verbessert, um Fehler zu verhindern, die in Zusammenhang mit der Art und Weise stehen, in der Drittanbieter-Tools (E-Mail-Clients, Internet-Browser usw.) Sonderzeichen verarbeiten. URL-Parameter sind jetzt codiert.
+* Die Tracking-Signatur-Funktion wurde verbessert. So sollen Fehler verhindert werden, die in Zusammenhang damit stehen, wie Drittanbieter-Tools (E-Mail-Clients, Internet-Browser) Sonderzeichen verarbeiten. URL-Parameter sind jetzt codiert.
 * Fehlerkorrektur – Bei der Datumsauswahl wird in der Konsole keine Blocker-Fehlermeldung mehr angezeigt. (NEO-36345)
 
 ### Version [!DNL Gold Standard] 11{#gs-11}

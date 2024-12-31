@@ -10,7 +10,7 @@ exl-id: 3f606d3a-0af5-4315-bb08-1b21a71f1721
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
 source-wordcount: '520'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -83,6 +83,6 @@ Gehen Sie wie folgt vor:
 
    ![](assets/query_editor_nveau_79.png)
 
-   Nehmen wir ein anderes Beispiel und gehen wir davon aus, dass der Auflistungswert „2“ nicht eingegeben wurde. Wählen Sie die Funktion **[!UICONTROL Fehler erzeugen und Zeile zurückweisen]**: Sämtliche Empfangenden des Geschlechts „2“ werden als Fehler ausgegeben und alle anderen Informationen der Zeile (Nachname, Vorname usw.) werden nicht exportiert. Im Feld **[!UICONTROL Beim Export erzeugte Logs]** des Datenvorschaufensters wird eine entsprechende Fehlernachricht ausgegeben. Dieses Protokoll zeigt an, dass der Auflistungswert „2“ nicht eingegeben wurde.
+   Nehmen wir ein anderes Beispiel und gehen wir davon aus, dass der Auflistungswert „2“ nicht eingegeben wurde. Wählen Sie die Funktion **[!UICONTROL Fehler erzeugen und Zeile ablehnen]** aus: Alle Empfänger mit „Geschlecht 2“ melden Anomalien, und die anderen Informationen in der Zeile (Vor- und Nachname usw.) werden nicht exportiert. Im Feld **[!UICONTROL Beim Export erzeugte Logs]** des Datenvorschaufensters wird eine entsprechende Fehlernachricht ausgegeben. Dieses Protokoll zeigt an, dass der Auflistungswert „2“ nicht eingegeben wurde.
 
    ![](assets/query_editor_nveau_80.png)

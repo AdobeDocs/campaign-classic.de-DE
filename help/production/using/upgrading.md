@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Aktualisierung auf einen neuen Build
-description: Technische Schritte zum Upgrade auf einen neuen Build
+title: Aktualisieren auf einen neuen Build
+description: Erfahren Sie mehr über die technischen Schritte beim Upgrade auf einen neuen Build
 feature: Monitoring, Upgrade
 badge-v7-prem: label="Nur On-Premise/Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
 audience: production
@@ -15,27 +15,27 @@ ht-degree: 8%
 
 ---
 
-# Aktualisierung auf einen neuen Build (On-Premise){#upgrading}
+# Aktualisieren auf einen neuen Build (On-Premise){#upgrading}
 
-Ermitteln und bestätigen Sie vor Beginn des Aktualisierungsprozesses, auf welche Version von Adobe Campaign aktualisiert werden soll, und lesen Sie die [Versionshinweise](../../rn/using/latest-release.md) .
+Bevor Sie mit dem Upgrade-Prozess beginnen, stellen Sie fest, welche Version von Adobe Campaign auf aktualisiert werden soll, und lesen Sie die [Versionshinweise](../../rn/using/latest-release.md) .
 
 >[!IMPORTANT]
 >
 >* Adobe empfiehlt dringend, vor der Aktualisierung eine Datenbanksicherung für jede Instanz durchzuführen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../production/using/backup.md).
->* Um eine Aktualisierung durchzuführen, stellen Sie sicher, dass Sie über die Möglichkeit und die Berechtigung zum Zugriff auf Instanzen und Protokolle verfügen.
->* Lesen Sie [diesen Abschnitt](../../installation/using/general-architecture.md) und das Kapitel [Build-Aktualisierung](https://helpx.adobe.com/de/campaign/kb/acc-build-upgrade.html) , bevor Sie beginnen.
+>* Um ein Upgrade durchzuführen, stellen Sie sicher, dass Sie über die Fähigkeit und die Berechtigungen zum Zugriff auf Instanzen und Protokolle verfügen.
+>* Lesen Sie [ Abschnitt und ](../../installation/using/general-architecture.md) Kapitel [Build-Upgrade](https://helpx.adobe.com/de/campaign/kb/acc-build-upgrade.html), bevor Sie beginnen.
 >
 
 ## Windows {#in-windows}
 
 Gehen Sie in einer Windows-Umgebung wie folgt vor, um Adobe Campaign auf einen neuen Build zu aktualisieren:
 
-* [Herunterfahren von Diensten](#shut-down-services),
-* [ Aktualisierung des Anwendungsservers](#upgrade-the-adobe-campaign-server-application),
+* [Dienste beenden](#shut-down-services),
+* [Aktualisieren des Anwendungsservers](#upgrade-the-adobe-campaign-server-application),
 * [Ressourcen synchronisieren](#synchronize-resources),
-* [Starten Sie die Dienste neu.](#restart-services)
+* [Dienste neu ](#restart-services).
 
-Informationen zum Aktualisieren der Clientkonsole finden Sie in [diesem Abschnitt](../../installation/using/client-console-availability-for-windows.md).
+Informationen zum Aktualisieren der Client-Konsole finden Sie in [diesem Abschnitt](../../installation/using/client-console-availability-for-windows.md).
 
 ### Dienste beenden {#shut-down-services}
 
@@ -45,7 +45,7 @@ Um alle Dateien durch die neue Version zu ersetzen, müssen Sie alle Instanzen d
 
    * Webdienste (IIS):
 
-     **iisreset /stop**
+     **iisreset/stop**
 
    * Adobe-Campaign-Dienst: **net stop nlserver6**
 
@@ -61,7 +61,7 @@ Um alle Dateien durch die neue Version zu ersetzen, müssen Sie alle Instanzen d
    No tasks
    ```
 
-   Sie können den Windows Task Manager verwenden, um sicherzustellen, dass alle Prozesse angehalten werden.
+   Sie können den Windows Task-Manager verwenden, um sicherzustellen, dass alle Prozesse angehalten werden.
 
 ### Aktualisieren Sie die Adobe-Campaign-Server-Anwendung. {#upgrade-the-adobe-campaign-server-application}
 
@@ -69,21 +69,21 @@ Gehen Sie wie folgt vor, um die Aktualisierungsdatei auszuführen:
 
 1. Führen Sie **setup.exe** aus.
 
-   Um diese Datei herunterzuladen, stellen Sie mithilfe Ihrer Benutzeranmeldeinformationen eine Verbindung zum [Software Distribution-Portal](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) her. Weitere Informationen zur Softwareverteilung finden Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de).
+   Um diese Datei herunterzuladen, verbinden Sie sich mit dem [Software Distribution-Portal](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) mit Ihren Benutzeranmeldeinformationen. Weitere Informationen zur Software-Verteilung finden [ auf dieser Seite ](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de).
 
-1. Wählen Sie den Installationsmodus aus: Wählen Sie **[!UICONTROL Aktualisieren oder Reparieren]**
-1. Klicken Sie auf **[!UICONTROL Weiter]** .
-1. Klicken Sie auf **[!UICONTROL Beenden]** .
+1. Installationsmodus auswählen: Wählen Sie **[!UICONTROL Aktualisieren oder reparieren]**
+1. Klicken Sie **[!UICONTROL Weiter]** .
+1. Klicken Sie **[!UICONTROL Beenden]** .
 
    Das Installationsprogramm kopiert dann die neuen Dateien.
 
-1. Klicken Sie nach Abschluss des Vorgangs auf **[!UICONTROL Beenden]** .
+1. Nachdem der Vorgang abgeschlossen ist, klicken Sie auf **[!UICONTROL Beenden]** .
 
 ### Ressourcen synchronisieren {#synchronize-resources}
 
 Verwenden Sie die folgende Befehlszeile:
 
-**nlserver config -postupgrade -allinstances**
+**nlserver config -postupgrade -allInstances**
 
 Auf diese Weise können Sie die folgenden Vorgänge ausführen:
 
@@ -93,17 +93,17 @@ Auf diese Weise können Sie die folgenden Vorgänge ausführen:
 
 >[!NOTE]
 >
->Dieser Vorgang sollte nur einmal und nur auf einem Anwendungsserver (**nlserver web**) ausgeführt werden.
+>Dieser Vorgang sollte nur einmal und nur auf einem Anwendungs-Server (**nlserver web**) ausgeführt werden.
 
-Überprüfen Sie dann, ob die Synchronisation Fehler oder Warnungen erzeugt hat. Weitere Informationen hierzu finden Sie unter [Beheben von Upgrade-Konflikten](#resolving-upgrade-conflicts).
+Überprüfen Sie dann, ob die Synchronisierung Fehler oder Warnungen erzeugt hat. Weitere Informationen hierzu finden Sie unter [ von Upgrade-Konflikten](#resolving-upgrade-conflicts).
 
 ### Dienste wieder starten {#restart-services}
 
-Folgende Dienste sollen neu gestartet werden:
+Die neu zu startenden Dienste sind:
 
 * Webdienste (IIS):
 
-  **iisreset /start**
+  **iisreset/start**
 
 * Adobe-Campaign-Dienst: **net start nlserver6**
 
@@ -111,34 +111,34 @@ Folgende Dienste sollen neu gestartet werden:
 
 Gehen Sie in einer Linux-Umgebung wie folgt vor, um Adobe Campaign auf einen neuen Build zu aktualisieren:
 
-* [Laden Sie die aktualisierten Pakete herunter](#obtain-updated-packages),
-* [Führen Sie die Aktualisierung durch](#perform-an-update),
-* [Starten Sie den Webserver neu.](#reboot-the-web-server)
+* [Herunterladen der aktualisierten Pakete](#obtain-updated-packages),
+* [Aktualisierung durchführen](#perform-an-update),
+* [Starten Sie den Webserver neu](#reboot-the-web-server).
 
-[Erfahren Sie mehr über die Client Console-Verfügbarkeit](../../installation/using/client-console-availability-for-windows.md).
+[Weitere Informationen zur Verfügbarkeit der Client-Konsole](../../installation/using/client-console-availability-for-windows.md).
 
-### Aktualisierte Pakete installieren {#obtain-updated-packages}
+### Installieren aktualisierter Pakete {#obtain-updated-packages}
 
-Rufen Sie zunächst beide aktualisierten Pakete von Adobe Campaign ab: Stellen Sie mithilfe Ihrer Benutzeranmeldeinformationen eine Verbindung zum [Software-Verteilungsportal](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) her. Weitere Informationen zur Softwareverteilung finden Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de).
+Stellen Sie zunächst die beiden aktualisierten Adobe Campaign-Pakete wieder her: Stellen Sie mithilfe Ihrer Benutzeranmeldeinformationen eine Verbindung [Software Distribution-](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) her. Weitere Informationen zur Software-Verteilung finden [ auf dieser Seite ](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de).
 
-Die Datei ist **nlserver6-v7-XXX.rpm**
+Die Datei lautet **nlserver6-v7-XXX.rpm**
 
 >[!AVAILABILITY]
 >
 >Ab Version 7.4.1 sind XML-Bibliotheken für RPM Linux-Pakete nicht mehr in Campaign enthalten. Sie müssen diese Bibliotheken installieren.
 > 
 
-Anschließend können Sie die erforderlichen Pakete installieren, wie unten beschrieben:
+Anschließend können Sie die erforderlichen Pakete wie unten beschrieben installieren:
 
-* RPM-basierte Verteilung (RedHat, SuSe)
+* RPM-basierte Verteilung (RedHat, SuSE)
 
-  Wenn das Paket `epel-release` nicht installiert ist, installieren Sie es. Geben Sie dazu den folgenden Befehl als Root ein:
+  Wenn das `epel-release` nicht installiert ist, installieren Sie es. Geben Sie dazu den folgenden Befehl als root ein:
 
   ```
   yum install epel-release
   ```
 
-  Um das Campaign-Package zu installieren, führen Sie es als root aus:
+  Um das Campaign-Paket zu installieren, führen Sie als Stammordner aus:
 
   ```
   yum update ./nlserver6-v7-XXXX.rpm
@@ -156,19 +156,19 @@ Anschließend können Sie die erforderlichen Pakete installieren, wie unten besc
 
   >[!IMPORTANT]
   >
-  >Wenn Sie `Removing:` anstelle von `Upgrading:` lesen, brechen Sie den Befehl ab. Es gibt wahrscheinlich einige Fehler (siehe oben), die die Entfernung erklären. Korrigieren Sie in diesem Fall diese Fehler, indem Sie die aufgelisteten fehlenden Abhängigkeiten aktualisieren/installieren und versuchen Sie dann erneut, den Befehl auszuführen.
+  >Wenn Sie `Removing:` anstelle von `Upgrading:` lesen, brechen Sie den Befehl ab. Wahrscheinlich gibt es einige Fehler (siehe oben), die die Entfernung erklären. Korrigieren Sie in diesem Fall diese Fehler, indem Sie die aufgelisteten fehlenden Abhängigkeiten aktualisieren/installieren und dann erneut versuchen, den Befehl auszuführen.
 
-  Die rpm-Datei hat Abhängigkeiten von Paketen, die Sie in CentOS/Red Hat-Distributionen finden können. Wenn Sie einige dieser Abhängigkeiten nicht verwenden möchten, müssen Sie möglicherweise die Option &quot;nodeps&quot;von rpm verwenden:
+  Die rpm-Datei weist Abhängigkeiten von Paketen auf, die Sie in CentOS/Red Hat-Distributionen finden können. Wenn Sie einige dieser Abhängigkeiten nicht verwenden möchten, müssen Sie möglicherweise die Option „nodeps“ von rpm verwenden:
 
   ```
   rpm --nodeps -Uvh nlserver6-v7-XXXX-0.x86_64.rpm
   ```
 
-  Beachten Sie, dass die meisten Abhängigkeiten obligatorisch sind und `nlserver` nicht starten kann, wenn nicht installiert ist. Die einzige Ausnahme ist openjdk. Sie können bei Bedarf ein anderes JDK installieren.
+  Beachten Sie, dass die meisten Abhängigkeiten obligatorisch sind und `nlserver` nicht gestartet werden können, wenn sie nicht installiert sind. Die einzige Ausnahme ist OpenJDK. Sie können bei Bedarf ein anderes JDK installieren.
 
 * DEB-basierte Distribution (Debian)
 
-  Um sie zu installieren, führen Sie sie als Root aus:
+  Um sie zu installieren, führen Sie als root aus:
 
   ```
   apt install ./nlserver6-v7-XXXX-amd64_debX.deb
@@ -176,12 +176,12 @@ Anschließend können Sie die erforderlichen Pakete installieren, wie unten besc
 
 >[!NOTE]
 >
->Die vollständigen Installationsverfahren werden in [diesem Abschnitt](../../installation/using/installing-packages-with-linux.md) beschrieben. Ressourcen werden automatisch synchronisiert. Sie müssen jedoch sicherstellen, dass keine Fehler aufgetreten sind. Weitere Informationen hierzu finden Sie unter [Beheben von Aktualisierungskonflikten](#resolving-upgrade-conflicts).
+>Die vollständigen Installationsverfahren werden in [diesem Abschnitt) ](../../installation/using/installing-packages-with-linux.md). Ressourcen werden automatisch synchronisiert. Sie müssen jedoch sicherstellen, dass keine Fehler aufgetreten sind. Weitere Informationen hierzu finden Sie unter [Beheben von Upgrade-Konflikten](#resolving-upgrade-conflicts).
 >
 
-### Webserver neu starten {#reboot-the-web-server}
+### Neustarten des Webservers {#reboot-the-web-server}
 
-Sie müssen Apache herunterfahren, damit die neue Bibliothek angewendet wird.
+Sie müssen Apache beenden, damit die neue Bibliothek angewendet wird.
 
 Führen Sie dazu den folgenden Befehl aus:
 
@@ -191,7 +191,7 @@ Führen Sie dazu den folgenden Befehl aus:
 
 >[!IMPORTANT]
 >
->* Ihr Skript könnte **httpd** anstelle von **apache** heißen.
+>* Ihr Skript heißt möglicherweise **httpd** anstelle von **apache**.
 >* Sie MÜSSEN diesen Befehl ausführen, bis Sie die folgende Antwort erhalten:
 >
 >   `This operation is required in order for Apache to apply the new library.`
@@ -202,15 +202,15 @@ Starten Sie dann Apache neu:
 /etc/init.d/apache start
 ```
 
-## Beheben von Aktualisierungskonflikten {#resolving-upgrade-conflicts}
+## Upgrade-Konflikte lösen {#resolving-upgrade-conflicts}
 
-Bei der Synchronisation von Ressourcen können Sie mit dem Befehl **postupgrade** erkennen, ob bei der Synchronisierung Fehler oder Warnungen aufgetreten sind.
+Während der Ressourcensynchronisierung können Sie mit dem **postupgrade**-Befehl erkennen, ob die Synchronisierung Fehler oder Warnungen erzeugt hat.
 
-### Synchronisierungsergebnis anzeigen {#view-the-synchronization-result}
+### Anzeigen des Synchronisierungsergebnisses {#view-the-synchronization-result}
 
 Es gibt zwei Möglichkeiten, das Synchronisierungsergebnis anzuzeigen:
 
-* In der Befehlszeilenschnittstelle werden Fehler durch einen dreifachen Chevron **>>** materialisiert und die Synchronisation wird automatisch angehalten. Warnungen werden durch einen doppelten Chevron **>>** materialisiert und müssen nach Abschluss der Synchronisation aufgelöst werden. Am Ende des Postupgrades wird an der Eingabeaufforderung eine Zusammenfassung angezeigt. Sie kann wie folgt aussehen:
+* In der Befehlszeilenschnittstelle werden Fehler durch einen dreifachen Pfeil **>>** materialisiert und die Synchronisierung wird automatisch angehalten. Warnungen werden durch einen doppelten Pfeil **>>** materialisiert und müssen nach Abschluss der Synchronisierung aufgelöst werden. Am Ende des Postupgrades wird in der Eingabeaufforderung eine Zusammenfassung angezeigt. Er kann wie folgt aussehen:
 
   ```
   AAAA-MM-DD HH:MM:SS.749Z 00002E7A 1 info log =========Summary of the update==========
@@ -221,21 +221,21 @@ Es gibt zwei Möglichkeiten, das Synchronisierungsergebnis anzuzeigen:
   AAAA-MM-DD HH:MM:SS.750Z 00002E7A 1 warning log Document of identifier 'nms:includeView' and type 'xtk:srcSchema' updated in the database and found in the file system. You will have to merge the two versions manually.
   ```
 
-  Wenn die Warnung einen Ressourcenkonflikt betrifft, muss der Benutzer darauf achten, ihn zu beheben.
+  Wenn die Warnung einen Ressourcenkonflikt betrifft, ist ein Eingreifen des Benutzers erforderlich, um ihn zu lösen.
 
-* Die Protokolldatei **postupgrade_`<server version number>_<time of postupgrade>`.log** enthält das Synchronisierungsergebnis. Sie ist standardmäßig im folgenden Verzeichnis verfügbar: **`<installation directory>/var/<instance/postupgrade`**. Fehler und Warnungen werden durch die Fehler- und Warnattribute angezeigt.
+* Die Protokolldatei **postupgrade_`<server version number>_<time of postupgrade>`.**&quot; enthält das Synchronisierungsergebnis. Sie ist standardmäßig im folgenden Verzeichnis verfügbar: **`<installation directory>/var/<instance/postupgrade`**. Fehler und Warnungen werden durch die Attribute error und warning gekennzeichnet.
 
 ### Konflikte lösen {#resolving-conflicts}
 
 Gehen Sie wie folgt vor, um einen Konflikt zu lösen:
 
-1. Wechseln Sie im Adobe Campaign-Baum zu **[!UICONTROL Administration > Konfiguration > Package-Management > Konflikte bearbeiten]** .
+1. Gehen Sie in der Adobe Campaign-Struktur zu **[!UICONTROL Administration > Konfiguration > Paketverwaltung > Konflikte bearbeiten]** .
 1. Wählen Sie in der Liste den Konflikt aus, den Sie lösen möchten.
 
 Es gibt drei Möglichkeiten, einen Konflikt zu lösen:
 
-* **[!UICONTROL Als aufgelöst deklarieren]** : erfordert vorab ein Eingreifen des Benutzers.
-* **[!UICONTROL Neue Version akzeptieren]** : Wird empfohlen, wenn die mit Adobe Campaign bereitgestellten Ressourcen vom Benutzer nicht geändert wurden.
+* **[!UICONTROL Als aufgelöst deklarieren]** : Erfordert vorab das Eingreifen des Benutzers.
+* **[!UICONTROL Neue Version akzeptieren]** : Wird empfohlen, wenn die mit Adobe Campaign bereitgestellten Ressourcen von den Benutzenden nicht geändert wurden.
 * **[!UICONTROL Aktuelle Version beibehalten]** : bedeutet, dass die Aktualisierung abgelehnt wird.
 
   >[!IMPORTANT]
@@ -244,45 +244,45 @@ Es gibt drei Möglichkeiten, einen Konflikt zu lösen:
 
 Wenn Sie den Konflikt manuell lösen möchten, gehen Sie wie folgt vor:
 
-1. Suchen Sie im unteren Abschnitt des Fensters nach der Zeichenfolge **_conflict_** , um die Entitäten mit Konflikten zu finden. Die mit der neuen Version installierte Entität enthält das **new** -Argument. Die Entität, die mit der vorherigen Version übereinstimmt, enthält das **cus** -Argument.
+1. Suchen Sie im unteren Bereich des Fensters nach der Zeichenfolge **_Konflikt_**, um die Entitäten mit Konflikten zu finden. Die mit der neuen Version installierte Entität enthält das **new**-Argument. Die Entität, die mit der vorherigen Version übereinstimmt, enthält das **cus**-Argument.
 
    ![](assets/s_ncs_production_conflict002.png)
 
-1. Löschen Sie die Version, die Sie nicht beibehalten möchten. Löschen Sie die Zeichenfolge **_conflict_argument_** der Entität, die Sie beibehalten.
+1. Löschen Sie die Version, die Sie nicht behalten möchten. Löschen Sie die **_CONFLICT_ARGUMENT_**-Zeichenfolge der Entität, die Sie beibehalten.
 
    ![](assets/s_ncs_production_conflict003.png)
 
-1. Gehen Sie zu dem Konflikt, den Sie gelöst haben. Klicken Sie auf das Symbol **[!UICONTROL Aktionen]** und wählen Sie **[!UICONTROL Als aufgelöst erklären]** aus.
+1. Navigieren Sie zu dem Konflikt, den Sie gelöst haben. Klicken Sie auf **[!UICONTROL Aktionen]** und wählen Sie **[!UICONTROL Als aufgelöst deklarieren]** aus.
 1. Speichern Sie Ihre Änderungen: Der Konflikt ist jetzt gelöst.
 
 ### Best Practices {#best-practices}
 
-Ein Aktualisierungsfehler kann mit der Datenbankkonfiguration verknüpft sein. Stellen Sie sicher, dass die Konfigurationen des technischen Administrators und des Datenbankadministrators kompatibel sind.
+Möglicherweise liegt ein Aktualisierungsfehler in der Datenbankkonfiguration vor. Stellen Sie sicher, dass die vom technischen Administrator und vom Datenbankadministrator durchgeführten Konfigurationen kompatibel sind.
 
 Beispielsweise darf eine Unicode-Datenbank nicht nur die Speicherung von LATIN1-Daten usw. zulassen.
 
-## Client-Konsolen des verfügbaren Updates warnen {#warn-the-client-consoles-of-the-available-update}
+## Client-Konsolen über das verfügbare Update warnen {#warn-the-client-consoles-of-the-available-update}
 
 ### Windows {#in-windows-1}
 
-Laden Sie auf dem Computer, auf dem der Adobe Campaign-Anwendungsserver installiert ist (**nlserver web**), die Datei &quot;**setup-client-6.XXXX.exe**&quot;in den Pfad &quot;**[path of the application]/datakit/nl/eng/jsp**&quot; herunter und kopieren Sie sie.
+Laden Sie auf dem Computer, auf dem der Adobe Campaign-Anwendungsserver installiert ist (**nlserver web**), die Datei **setup-client-6.XXXX.exe** in **[Pfad der Anwendung]/datakit/nl/eng/jsp** herunter und kopieren Sie sie.
 
-Wenn die Clientkonsolen das nächste Mal verbunden werden, informiert ein Fenster die Benutzer über die Verfügbarkeit eines Updates und bietet ihnen die Möglichkeit, es herunterzuladen und zu installieren.
+Wenn die Client-Konsolen das nächste Mal verbunden werden, informiert ein Fenster den Benutzer über die Verfügbarkeit eines Updates und bietet ihm die Möglichkeit, es herunterzuladen und zu installieren.
 
 >[!NOTE]
 >
->Stellen Sie sicher, dass der IIS_XPG-Benutzer über die entsprechenden Leseberechtigungen für diese Installationsdatei verfügt, und lesen Sie das [Installationshandbuch](../../installation/using/general-architecture.md) , um weitere Informationen zu erhalten.
+>Stellen Sie sicher, dass der IIS_XPG-Benutzer über die entsprechenden Leseberechtigungen für diese Installationsdatei verfügt, und lesen Sie das [Installationshandbuch](../../installation/using/general-architecture.md), um weitere Informationen zu erhalten.
 
 ### Linux {#in-linux-1}
 
-Rufen Sie auf dem Computer, auf dem der Adobe Campaign-Anwendungsserver installiert ist (**nlserver web**), das Paket **setup-client-6.XXXX.exe** ab und kopieren Sie es unter dem Namen **/usr/local/neolane/nl6/datakit/nl/eng/jsp**:
+Rufen Sie auf dem Computer, auf dem der Adobe Campaign-Anwendungsserver (**nlserver web**) installiert ist, das Paket **setup-client-6.XXXX.exe** ab und kopieren Sie es unter dem Namen **/usr/local/neolane/nl6/datakit/nl/eng/jsp**:
 
 ```
 cp setup-client-6.XXXX.exe /usr/local/neolane/nl6/datakit/nl/eng/jsp
 ```
 
-Wenn die Clientkonsolen das nächste Mal verbunden werden, informiert ein Fenster die Benutzer über die Verfügbarkeit eines Updates und bietet ihnen die Möglichkeit, es herunterzuladen und zu installieren.
+Wenn die Client-Konsolen das nächste Mal verbunden werden, informiert ein Fenster den Benutzer über die Verfügbarkeit eines Updates und bietet ihm die Möglichkeit, es herunterzuladen und zu installieren.
 
 >[!NOTE]
 >
->Stellen Sie sicher, dass der Apache-Benutzer über die entsprechenden Leseberechtigungen für diese Installationsdatei verfügt, und lesen Sie das [Installationshandbuch](../../installation/using/general-architecture.md) , um weitere Informationen zu erhalten.
+>Stellen Sie sicher, dass der Apache-Benutzer über die entsprechenden Leserechte für diese Installationsdatei verfügt, und lesen Sie das [Installationshandbuch](../../installation/using/general-architecture.md), um weitere Informationen zu erhalten.

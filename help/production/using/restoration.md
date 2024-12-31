@@ -19,13 +19,13 @@ ht-degree: 18%
 
 
 
-Auf einem sauberen Server sieht das Wiederherstellungsverfahren wie folgt aus:
+Auf einem sauberen Server erfolgt die Wiederherstellung wie folgt:
 
 * auf einem installierten und konfigurierten Betriebssystem (Netzwerke),
-* Drittanbieteranwendungen installieren: Webserver, JDK (falls erforderlich),
-* Adobe Campaign-Binärdateien mit demselben Build wie das Quellsystem installieren,
+* Installieren Sie Anwendungen von Drittanbietern: Webserver, JDK (falls erforderlich),
+* Installieren Sie Adobe Campaign-Binärdateien mit demselben Build wie das Quellsystem,
 * Konfigurationsdateien, Trackinglogs und Weiterleitungsdateien kopieren,
-* die Datenbank erstellen und neu erstellen,
+* Datenbank erstellen und neu erstellen,
 * Starten Sie Adobe Campaign.
 
 Weitere Informationen finden Sie im **Installationshandbuch**.

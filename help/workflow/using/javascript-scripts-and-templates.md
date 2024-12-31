@@ -7,7 +7,7 @@ exl-id: 4a3647d1-cf8c-4867-871e-472287be7c6a
 source-git-commit: d4a2138e03a33092403d5ca00a41a3d7f9aea33e
 workflow-type: tm+mt
 source-wordcount: '1268'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -159,7 +159,7 @@ Das Beispiel zeigt, dass die Aktivität **JavaScript-Code** auf die Instanz- und
 
 In Aktivitäten definierte Instanzvariablen können in Workflow-Abfragen wiederverwendet werden.
 
-Um also eine Variable **instance.vars.xxx = &quot;yyy&quot;** in einem Filter aufzurufen, geben Sie **$(instance/vars/@xxx)** ein.
+Geben Sie beispielsweise zum Abruf der Variablen **instance.vars.xxx = &quot;yyy&quot;** folgende Filterbedingung ein: **$(instance/vars/@xxx)**.
 
 Beispiel:
 

@@ -5,7 +5,7 @@ description: Erfahren Sie mehr über die Workflow-Aktivität "Abfrage".
 feature: Workflows, Targeting Activity, Query Editor
 exl-id: 20d03627-cd56-46da-bc02-73b48a02a350
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1694'
 ht-degree: 100%
 

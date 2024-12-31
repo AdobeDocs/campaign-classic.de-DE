@@ -16,9 +16,9 @@ ht-degree: 27%
 
 
 
-## syslogd-Listening-Port ändern {#changing-the-syslogd-listening-port}
+## Ändern des syslogd-Listening-Ports {#changing-the-syslogd-listening-port}
 
-Standardmäßig ist der Listening-Port für **syslogd** auf 666 (udp) gesetzt. Sie können sie bei Bedarf mithilfe einer Umgebungsvariablen ändern.
+Standardmäßig ist der **syslogd** Listening-Port 666 (udp). Sie können sie bei Bedarf mit einer Umgebungsvariablen ändern.
 
 Nach der Konfiguration wird diese Variable von allen Adobe Campaign-Modulen berücksichtigt.
 
@@ -40,8 +40,8 @@ Sie müssen die Umgebungsvariable **TRACE_ADDR** mit dem Wert **localhost** erst
 
 ## Konfigurieren von Sicherheitszonen {#configuring-security-zones}
 
-Jeder Operator muss mit einer Zone verknüpft sein, um sich bei einer Instanz anmelden zu können, und die IP des Operators muss in die Adressen oder Adresssätze aufgenommen werden, die in der Sicherheitszone definiert sind. Die Konfiguration der technischen Zone erfolgt in der Konfigurationsdatei des Adobe Campaign-Servers. Die Verknüpfung eines Benutzers mit einer Sicherheitszone muss in der Konsole definiert werden ( Knoten **[!UICONTROL Administration > Zugriffe > Benutzer]** ).
+Jeder Operator muss mit einer Zone verknüpft sein, um sich bei einer Instanz anmelden zu können, und die IP des Operators muss in die Adressen oder Adresssätze aufgenommen werden, die in der Sicherheitszone definiert sind. Die Konfiguration des technischen Bereichs erfolgt in der Konfigurationsdatei des Adobe Campaign-Servers. Die Verknüpfung eines Benutzers mit einer Sicherheitszone muss in der Konsole definiert werden (Knoten **[!UICONTROL Administration > Zugriffsverwaltung > Benutzer]**).
 
 >[!NOTE]
 >
->Weitere Informationen zum Konfigurieren von Sicherheitszonen finden Sie in [diesem Abschnitt](../../installation/using/security-zones.md).
+>Weiterführende Informationen zur Konfiguration von Sicherheitszonen finden Sie [diesem Abschnitt](../../installation/using/security-zones.md).

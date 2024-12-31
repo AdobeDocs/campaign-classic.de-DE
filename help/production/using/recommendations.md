@@ -19,10 +19,10 @@ ht-degree: 12%
 
 
 
-Adobe Campaign ist ein hochgradig transaktionales System (OLTP-Datenbank). Dies bedeutet, dass die zugrunde liegende Datenbank häufig aktualisiert wird, was zu einer Leistungsbeeinträchtigung im Laufe der Zeit führt. Um dieses Problem zu vermeiden, ist eine regelmäßige Datenbankwartung erforderlich.
+Adobe Campaign ist ein stark transaktionales System (OLTP-Datenbank). Dies bedeutet, dass die zugrunde liegende Datenbank häufig aktualisiert wird, was im Laufe der Zeit zu Leistungseinbußen führt. Um diese Art von Problem zu vermeiden, ist eine regelmäßige Wartung der Datenbank erforderlich.
 
 >[!IMPORTANT]
 >
->Eine Datenbank funktioniert nur optimal, wenn sie regelmäßig gepflegt wird. Die automatische Wartung, die von einigen RDBMS angeboten wird, reicht nicht aus und ersetzt nicht die eingehende Wartung, wie dies bei anderen Transaktionsverwaltungssystemen der relationalen Datenbank der Fall ist.
+>Eine Datenbank funktioniert nur dann optimal, wenn sie regelmäßig gepflegt wird. Die von einigen RDBMS angebotene automatische Wartung ist nicht ausreichend und ersetzt nicht die eingehende Wartung, wie bei allen relationalen Datenbanktransaktionsmanagement-Systemen.
 >  
->Die in diesem Dokument beschriebenen Verfahren sind Empfehlungen. Für Wartungspläne ist Ihr Datenbankadministrator verantwortlich, der bei Problemen als erster Ansprechpartner fungieren muss.
+>Die in diesem Dokument beschriebenen Verfahren sind Empfehlungen. Wartungspläne liegen in der Verantwortung Ihres Datenbankadministrators, der bei Problemen Ihr erster Ansprechpartner sein muss.

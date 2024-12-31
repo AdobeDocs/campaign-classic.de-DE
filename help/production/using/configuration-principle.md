@@ -19,29 +19,29 @@ ht-degree: 8%
 
 
 
-Die Adobe Campaign-Plattform basiert auf dem Konzept von Instanzen, ähnlich wie bei virtuellen Hosts, die von Apache verwendet werden. Diese Funktionsweise ermöglicht die gemeinsame Nutzung eines Servers durch Zuweisung mehrerer Instanzen. Instanzen sind völlig voneinander getrennt und arbeiten mit ihrer eigenen Datenbank und Konfigurationsdatei.
+Die Adobe Campaign-Plattform basiert auf dem Konzept der Instanzen, ähnlich dem von virtuellen Hosts, die von Apache verwendet werden. In diesem Betriebsmodus können Sie einen Server freigeben, indem Sie ihm mehrere Instanzen zuweisen. Instanzen sind vollständig voneinander getrennt und arbeiten mit ihrer eigenen Datenbank und Konfigurationsdatei.
 
-Für einen bestimmten Server gibt es zwei gemeinsame Elemente für alle Adobe Campaign-Instanzen:
+Für einen bestimmten Server gibt es zwei Elemente, die für alle Adobe Campaign-Instanzen gelten:
 
-* Das Kennwort **internal** : Dies ist das allgemeine Administratorkennwort. Dies ist für alle Instanzen eines bestimmten Anwendungsservers üblich.
+* Das **interne** Kennwort: Dies ist das allgemeine Administratorkennwort. Sie ist in allen Instanzen eines bestimmten Anwendungs-Servers gleich.
 
   >[!IMPORTANT]
   >
-  >Um sich mit der Kennung **Internal** anzumelden, müssen Sie zuvor ein Kennwort definiert haben. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#internal-identifier).
+  >Für die Anmeldung mit der **internen** Kennung muss zuvor ein Kennwort definiert worden sein. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
-* Mehrere technische Serverkonfigurationen: Diese Konfigurationen können alle in der spezifischen Konfiguration einer Instanz überschrieben werden.
+* Mehrere technische Server-Konfigurationen: Diese Konfigurationen können alle in der spezifischen Konfiguration einer -Instanz überladen werden.
 
-Die Konfigurationsdateien werden im Ordner &quot;**conf**&quot;des Installationsordners gespeichert. Die Konfiguration ist in drei Dateien unterteilt:
+Die Konfigurationsdateien werden im Verzeichnis **conf** des Installationsverzeichnisses gespeichert. Die Konfiguration ist in drei Dateien unterteilt:
 
-* **serverConf.xml**: Gesamtkonfiguration für alle Instanzen.
+* **serverConf.**: Gesamtkonfiguration für alle Instanzen.
 * **config-**`<instance>`**.xml** (wobei **`<instance>`** der Instanzname ist): spezifische Konfiguration einer Instanz.
-* **serverConf.xml.diff**: Differenz zwischen der ersten Konfiguration und der aktuellen Konfiguration. Diese Datei wird automatisch von der Anwendung generiert und darf nicht manuell geändert werden. Sie wird verwendet, um beim Aktualisieren einer Build-Version automatisch Benutzeränderungen zu propagieren.
+* **serverConf.xml.diff**: Delta zwischen der anfänglichen Konfiguration und der aktuellen Konfiguration. Diese Datei wird automatisch von der Anwendung generiert und darf nicht manuell geändert werden. Er wird verwendet, um Benutzeränderungen beim Aktualisieren einer Build-Version automatisch zu propagieren.
 
 Eine Instanzkonfiguration wird wie folgt geladen:
 
-* Das Modul lädt die Datei **serverConf.xml** , um die von allen Instanzen freigegebenen Parameter abzurufen.
-* Anschließend wird die Datei **config-**`<instance>`**.xml** geladen. Die Werte in dieser Datei haben Vorrang vor den Werten in **serverConf.xml**.
+* Das Modul lädt die **serverConf.xml**, um die von allen Instanzen gemeinsam genutzten Parameter abzurufen.
+* Anschließend wird die Datei **config-**`<instance>`**.xml** geladen. Die in dieser Datei gefundenen Werte haben Vorrang vor den in „serverConf **xml“ enthaltenen**.
 
-  Diese beiden Dateien haben das gleiche Format. Jeder Wert in **serverConf.xml** kann für eine bestimmte Instanz in der Datei **config-`<instance>`.xml** überschrieben werden.
+  Diese beiden Dateien haben dasselbe Format. Jeder Wert in **serverConf.xml** kann für eine bestimmte Instanz in der Datei **config-`<instance>`.xml** überladen werden.
 
-Dieser Betriebsmodus bietet große Flexibilität bei der Konfiguration.
+Dieser Betriebsmodus bietet eine große Flexibilität bei der Konfiguration.

@@ -17,22 +17,22 @@ ht-degree: 7%
 
 # Backup{#backup}
 
-Eine Sicherung ist unerlässlich, um zu verhindern, dass Daten im Falle eines (physischen oder systembezogenen) Problems auf einem Computer verloren gehen.
+Eine Sicherung ist unerlässlich, um Datenverluste im Falle eines Problems (physisch oder systembedingt) auf einem Computer zu vermeiden.
 
-Die Daten werden an zwei verschiedenen Speicherorten gespeichert:
+Die Daten werden an zwei separaten Speicherorten gespeichert:
 
-* physische Dateien werden in den Adobe Campaign-Verzeichnissen gespeichert;
-* andere Daten in der Datenbank gespeichert werden.
+* Physische Dateien werden in den Adobe Campaign-Verzeichnissen gespeichert.
+* Andere Daten werden in der Datenbank gespeichert.
 
 Die meisten Daten befinden sich in der Datenbank. Dies entspricht 99 % der zu sichernden Informationen.
 
 ## Physische Dateien {#physical-files}
 
-Dateien sind in mehrere Kategorien unterteilt:
+Die Dateien sind in verschiedene Kategorien unterteilt:
 
-* Konfigurationsdateien, die in **nl6/conf** gespeichert sind, ermöglichen eine sehr schnelle Neukonfiguration von Adobe Campaign.
+* Konfigurationsdateien, gespeichert in **nl6/conf**, ermöglichen es Ihnen, Adobe Campaign sehr schnell neu zu konfigurieren.
 
-* Weiterleitungsdateien, die in **nl6/var/`<instance-name>`/redir** gespeichert sind, befinden sich auf den Tracking-Servern (häufig als &quot;frontal&quot;bezeichnet) und beinhalten alle vorherigen Kampagnenumleitungen. Sie werden weiterhin von früheren Kampagnen verwendet.
+* Weiterleitungsdateien, die in **nl6/var/`<instance-name>`/redir** gespeichert sind, befinden sich auf den Tracking-Servern (oft als „frontal“ bezeichnet) und enthalten alle vorherigen Kampagnenumleitungen. Sie werden weiterhin von vorherigen Kampagnen verwendet.
 
 * Protokolldateien, die in **nl6/var/`<instance-name>`/log** gespeichert sind, können zur Verfolgung von Problemen verwendet werden.
 
@@ -44,16 +44,16 @@ Die zu sichernden Verzeichnisse sind daher:
 
 * nl6/var/`<instance-name>`/log (optional)
 
-* nl6/var/`<instance-name>`/relay (optional)
+* NL6/VAR/`<instance-name>`/Relais (optional)
 
 
 ## Datenbank {#database}
 
 >[!IMPORTANT]
 >
->Es ist unbedingt erforderlich, die Datenbank zu sichern.
+>Es ist zwingend erforderlich, die Datenbank zu sichern.
 
 
-Die Datenbank enthält alle in der Rich-Client-Konsole von Adobe Campaign angezeigten Informationen sowie alle Geschäftsdaten.
+Die -Datenbank enthält alle in der Rich-Client-Konsole von Adobe Campaign angezeigten Informationen sowie alle Branchendaten.
 
-Für diesen Vorgang sind Ihr Hosting-Unternehmen und insbesondere dessen Datenbankadministratoren verantwortlich.
+Für diesen Vorgang ist Ihr Hosting-Unternehmen und insbesondere dessen Datenbankadministratoren verantwortlich.

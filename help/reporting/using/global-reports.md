@@ -8,7 +8,7 @@ exl-id: 6839fd7e-ecf4-4504-90a8-0207bc3991e4
 source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
 workflow-type: tm+mt
 source-wordcount: '2495'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -167,9 +167,9 @@ In der Tabelle werden folgende Indikatoren dargestellt:
 
 ### Teilen über soziale Netzwerke {#sharing-to-social-networks}
 
-Mit viralem Marketing können Empfängerinnen und Empfänger eines Versands Informationen über ihr Kontaktnetzwerk austauschen: Sie können einen Link zu ihrem Profil hinzufügen, etwa Facebook, X (früher bekannt als Twitter) usw. oder eine Nachricht an eine Freundin oder einen Freund senden. Jede Freigabe und jeder Zugriff auf freigegebene Informationen werden innerhalb des Versands nachverfolgt. Weitere Informationen zum viralen Marketing finden Sie in [diesem Abschnitt](../../delivery/using/viral-and-social-marketing.md).
+Mit Viral Marketing können Versandempfänger Informationen über ihr Kontaktnetzwerk austauschen: Sie können ihrem Profil einen Link hinzufügen (Facebook, X - ehemals Twitter usw.) oder eine Nachricht an einen Freund senden. Jede Freigabe und jeder Zugriff auf freigegebene Informationen werden innerhalb des Versands nachverfolgt. Weitere Informationen zum viralen Marketing finden Sie in [diesem Abschnitt](../../delivery/using/viral-and-social-marketing.md).
 
-Dieser Bericht zeigt die Aufschlüsselung der geteilten und geöffneten Nachrichten nach sozialem Netzwerk (Facebook, X, etc.) und/oder über E-Mail.
+Dieser Bericht zeigt die Aufschlüsselung der freigegebenen und geöffneten Nachrichten nach sozialen Netzwerken (Facebook, X usw.) und/oder E-Mails.
 
 ![](assets/s_ncs_user_social_report.png)
 
@@ -202,7 +202,7 @@ Dieser Bereich veranschaulicht in zwei Diagrammen die Verteilung von Teilungen u
 
 ## Statistiken zu Teilungsaktivitäten {#statistics-on-sharing-activities}
 
-Dieser Bericht zeigt die Entwicklung von Teilungen in sozialen Netzwerken wie Facebook, X (früher bekannt als Twitter) usw.  im Zeitverlauf.
+Dieser Bericht zeigt die Entwicklung von Freigaben in sozialen Netzwerken (Facebook, X - früher als Twitter, E-Mail usw. bekannt) im Zeitverlauf.
 
 Weitere Informationen zum Viral-Marketing finden Sie in [diesem Abschnitt](../../delivery/using/viral-and-social-marketing.md).
 

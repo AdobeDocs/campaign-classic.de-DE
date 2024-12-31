@@ -19,65 +19,65 @@ ht-degree: 13%
 
 
 
-Technisch betrachtet basiert die Adobe Campaign-Plattform auf mehreren Modulen.
+Technisch gesehen basiert die Adobe Campaign-Plattform auf mehreren Modulen.
 
-Es gibt viele Adobe Campaign-Module. Einige werden kontinuierlich ausgeführt, während andere gelegentlich gestartet werden, um administrative Aufgaben auszuführen (z. B. zur Konfiguration der Datenbankverbindung) oder um eine wiederkehrende Aufgabe auszuführen (z. B. Konsolidierung von Tracking-Informationen).
+Es gibt viele Adobe Campaign-Module. Einige werden ununterbrochen ausgeführt, andere wiederum nur gelegentlich zur Durchführung administrativer Aufgaben (z.B. zur Konfiguration der Datenbankverbindung) oder zur Ausführung wiederkehrender Aufgaben (z.B. zur Konsolidierung von Tracking-Informationen) gestartet.
 
 Es gibt drei Typen von Adobe Campaign-Modulen:
 
 * Module mit Mehrfach-Instanzen: Für alle Instanzen wird ein einzelner Prozess ausgeführt. Dies gilt für die folgenden Module: **web**, **syslogd**, **trackinglogd** und **watchdog** (Aktivitäten aus der Datei **config-default.xml**).
 * Module mit Einfach-Instanz: Für die einzelnen Instanzen wird jeweils ein Prozess ausgeführt. Dies gilt für die folgenden Module: **mta**, **wfserver**, **inMail**, **sms** und **stat** (Aktivitäten aus der Datei **config-`<instance>`.xml**).
-* Dienstprogrammmodule: Hierbei handelt es sich um Module, die gelegentlich ausgeführt werden, um gelegentliche oder wiederkehrende Vorgänge auszuführen (**cleanup**, **config**, Herunterladen von Trackinglogs usw.).
+* Dienstprogramm-Module: Hierbei handelt es sich um Module, die von Zeit zu Zeit für gelegentlich notwendige oder wiederkehrende Operationen ausgeführt werden **z. B** Bereinigung, **config** Herunterladen von Trackinglogs.
 
-Die Modulverwaltung erfolgt mithilfe des Befehlszeilenwerkzeugs **nlserver**, das im Ordner **bin** des Installationsordners installiert ist.
+Die Modulverwaltung erfolgt über das Befehlszeilen-Tool **nlserver**, das im **bin** des Installationsordners installiert ist.
 
-Die allgemeine Syntax des Tools **nlserver** lautet wie folgt:
+Die allgemeine Syntax des **nlserver**-Tools lautet wie folgt:
 
 **nlserver `<command>``<command arguments>`**
 
-Verwenden Sie für die Liste der verfügbaren Module den Befehl **nlserver** .
+Um eine Liste der verfügbaren Module zu erhalten, verwenden Sie den Befehl **nlserver**.
 
-Die verfügbaren Module werden in der folgenden Tabelle beschrieben:
+Die verfügbaren Module werden in der folgenden Tabelle aufgeführt:
 
 | Befehl | Beschreibung |
 |---|---|
-| aliasCleansing | Standardisierung der Auflistungswerte |
+| aliasCleansing | Standardisieren von Auflistungswerten |
 | billing | Senden des Systemaktivitätsberichts an billing@neolane.net |
-| cleanup | Datenbank bereinigen: Löscht veraltete Daten aus der Datenbank und führt eine Aktualisierung der vom Datenbankmodul-Optimierer verwendeten Statistiken durch. |
-| config | Ändern der Serverkonfiguration |
-| export | In Befehlszeile exportieren: sendet an die Befehlszeile ein Exportmodell, das in der Adobe Campaign-Clientkonsole erstellt wurde. |
-| fileconvert | Datei mit festgelegter Größe konvertieren |
-| importieren | Import in Befehlszeile: sendet an die Befehlszeile ein Importmodell, das in der Adobe Campaign-Clientkonsole erstellt wurde. |
-| inMail | Analyse eingehender Nachrichten |
-| installsetup | Verfügbarkeit der Installationsdatei des Kunden |
-| JavaScript | Ausführen von JavaScript-Skripten mit Zugriff auf SOAP APIs. |
+| cleanup | Bereinigen der Datenbank: Löscht veraltete Daten aus der Datenbank und führt eine Aktualisierung der vom Datenbank-Engine-Optimizer verwendeten Statistiken durch. |
+| Konfiguration | Ändern der Server-Konfiguration |
+| Export | In Befehlszeile exportieren: sendet ein in der Adobe Campaign-Client-Konsole erstelltes Exportmodell an die Befehlszeile |
+| DateiKonvertieren | Konvertieren einer Datei mit festgelegter Größe |
+| importieren | In Befehlszeile importieren: sendet ein in der Adobe Campaign-Client-Konsole erstelltes Importmodell an die Befehlszeile. |
+| inMail | Analysator eingehender Nachrichten |
+| InstallSetup | Verfügbarkeit der Kundeninstallationsdatei |
+| JavaScript | Ausführen von JavaScript-Skripten mit Zugriff auf SOAP-APIs. |
 | job | Befehlszeilenverarbeitung |
-| merge | Formular-Zusammenführung |
-| midSourcing | Abruf der Versandinformationen im Mid-Sourcing-Modus |
-| überwachen | XML-Darstellung des Status von Serverprozessen und geplanten Aufgaben nach Instanz. |
-| mta | Hauptübermittlungsnachricht für Agenten |
-| package | Entitätspaket-Dateien importieren oder exportieren |
-| pdump | Anzeigen des Serverprozessstatus |
+| Fusionieren | Formularzusammenführung |
+| Mid-Sourcing | Abruf von Versandinformationen im Mid-Sourcing-Modus |
+| überwachen | XML-Anzeige des Status von Serverprozessen und geplanten Aufgaben nach Instanz. |
+| mta | Hauptagenten-Übertragungsnachricht |
+| Packstück | Importieren oder Exportieren von Entitätspaketdateien |
+| pumpen | Anzeigen des Status von Serverprozessen |
 | Prepareda | Versandaktion vorbereiten |
-| Neustart | Teilweise Neustart des Servers |
+| Neustart | Teilweiser Neustart des Servers |
 | runwf | Ausführung einer Workflow-Instanz |
-| Herunterfahren | Vollständiger Systemausfall |
+| Abschalten | Vollständiges Herunterfahren des Systems |
 | sms | SMS-Benachrichtigungsverarbeitung |
-| sql | Ausführung von SQL-Scripts |
-| start | Weitere Starts |
-| stat | Führt Statistiken über MTA-Verbindungen |
-| stop | Teilweise Herunterfahren des Systems |
-| submitda | Senden einer Versandaktion |
-| syslogd | Protokollierungs- und Ablaufverfolgungsserver |
-| tracking | Trackinglogs konsolidieren und abrufen |
-| trackinglogd | Tracking von Protokollschreibungs- und Bereinigungs-Server |
-| watchdog | Start- und Überwachungsinstanz |
+| SQL | Ausführung von SQL-Scripts |
+| start | Zusätzliche Starts |
+| Bundesland | Führt Statistiken über MTA-Verbindungen |
+| Stoppen | Teilweise Abschalten des Systems |
+| submitda | Übermitteln eines Versands |
+| syslogd | Log- und Spurenschreibserver |
+| tracking | Analyse und Abruf von Trackinglogs |
+| trackingLog | Trackinglog-Schreib- und Löschserver |
+| Wachhund | Instanz starten und überwachen |
 | Web | Anwendungsserver (HTTP und SOAP) |
 | wfserver | Workflow-Server |
 
 >[!IMPORTANT]
 >
->Es gibt ein letztes Modul: das Tracking- und Relais-Modul, das mit dem Anwendungsserver verknüpft ist und der Leistung halber über native Mechanismen über eine dynamische Bibliothek in einen Apache- oder IIS-Webserver integriert wird. Es gibt keinen Adobe Campaign-Befehl, mit dem Sie dieses Modul starten oder verwalten können. Daher müssen Sie die Befehle des Webservers selbst verwenden.
+>Es gibt noch ein letztes Modul: das mit dem Anwendungs-Server verknüpfte Tracking- und Relais-Modul, das aus Leistungsgründen über native Mechanismen über eine dynamische Bibliothek in einen Apache- oder IIS-Webserver integriert wird. Es gibt keinen Adobe Campaign-Befehl, mit dem Sie dieses Modul starten oder verwalten können. Sie müssen daher die Befehle des Webservers selbst verwenden.
 
 Die Modulverwendung und die Syntax ihrer Parameter werden mit dem folgenden Befehl angezeigt: **nlserver `[module]` -?**
 

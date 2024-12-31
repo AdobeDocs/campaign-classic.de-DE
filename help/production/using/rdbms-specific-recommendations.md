@@ -19,13 +19,13 @@ ht-degree: 4%
 
 
 
-Um Sie bei der Einrichtung von Wartungsplänen zu unterstützen, finden Sie in diesem Abschnitt einige Empfehlungen und Best Practices, die an die verschiedenen von Adobe Campaign unterstützten RDBMS-Engines angepasst sind. Dies sind jedoch nur Empfehlungen. Es liegt an Ihnen, sie entsprechend Ihren internen Verfahren und Einschränkungen Ihren Bedürfnissen anzupassen. Ihr Datenbankadministrator ist dafür verantwortlich, diese Pläne zu erstellen und auszuführen.
+Um Sie beim Einrichten von Wartungsplänen zu unterstützen, werden in diesem Abschnitt einige Empfehlungen und Best Practices aufgeführt, die an die verschiedenen von Adobe Campaign unterstützten RDBMS-Engines angepasst sind. Dies sind jedoch nur Empfehlungen. Es liegt an Ihnen, sie an Ihre Bedürfnisse anzupassen, in Übereinstimmung mit Ihrem internen Verfahren und Einschränkungen. Ihr Datenbankadministrator ist dafür verantwortlich, diese Pläne zu erstellen und auszuführen.
 
 ## PostgreSQL {#postgresql}
 
-### Große Tabellen erkennen {#detecting-large-tables}
+### Erkennen großer Tabellen {#detecting-large-tables}
 
-1. Sie können Ihrer Datenbank die folgende Ansicht hinzufügen:
+1. Sie können die folgende Ansicht zu Ihrer Datenbank hinzufügen:
 
    ```
    create or replace view uvSpace
@@ -40,13 +40,13 @@ Um Sie bei der Einrichtung von Wartungsplänen zu unterstützen, finden Sie in d
     ORDER BY 3 DESC, 1, 2 DESC;
    ```
 
-1. Sie können diese Abfrage ausführen, um große Tabellen und Indizes zu sehen:
+1. Sie können diese Abfrage ausführen, um große Tabellen und Indizes zu erkennen:
 
    ```
    SELECT * FROM uvSpace;
    ```
 
-   Alternativ können Sie diese Abfrage ausführen, um beispielsweise alle Indexgrößen gemeinsam anzuzeigen:
+   Alternativ können Sie beispielsweise diese Abfrage ausführen, um alle Indexgrößen gemeinsam anzuzeigen:
 
    ```
    SELECT
@@ -84,22 +84,22 @@ Um Sie bei der Einrichtung von Wartungsplänen zu unterstützen, finden Sie in d
 
 >[!IMPORTANT]
 >
->Adobe empfiehlt dringend, VACUUM FULL nicht auf von Campaign Adobe gehosteten Datenbankkonfigurationen auszuführen. Die vorgeschlagene Wartung ist nur ein Leitfaden für ON-PREMISE-Installationen. Verwenden Sie für benutzerdefinierte Tabellenimplementierungen und -schemata VACUUM FULL auf Ihr eigenes Risiko, da VACUUM - ohne Überwachung - ausschließlich Tabellen sperren kann, die angehaltene Abfragen verursachen - und in einigen Fällen die gesamte Datenbank sperren kann.
+>Adobe empfiehlt dringend, VACUUM FULL nicht auf Campaign Adobe-gehosteten Datenbankeinstellungen auszuführen. Die empfohlenen Wartungsarbeiten sind nur für On-Premise-Installationen gedacht. Verwenden Sie für benutzerdefinierte Tabellenimplementierungen und Schemata VACUUM FULL auf eigene Gefahr, da VACUUM - ohne Überwachung - ausschließlich Tabellen sperren kann, die zu angehaltenen Abfragen führen, und in einigen Fällen die gesamte Datenbank sperren kann.
 
-In PostgreSQL können Sie die folgenden typischen Suchbegriffe verwenden:
+In PostgreSQL können Sie die folgenden typischen Schlüsselwörter verwenden:
 
-* VACUUM (VOLLSTÄNDIG, ANALYSE, VERBOSE)
+* VAKUUM (VOLL, ANALYSIEREN, AUSFÜHRLICH)
 
-Um den VACUUM-Vorgang auszuführen und zu analysieren und zu analysieren, können Sie diese Syntax verwenden:
+Um den Vorgang VACUUM auszuführen und zu analysieren und zu timen, können Sie diese Syntax verwenden:
 
 ```
 \timing on
 VACUUM (FULL, ANALYZE, VERBOSE) <table>;
 ```
 
-Es wird dringend empfohlen, die ANALYZE -Anweisung nicht wegzulassen. Andernfalls wird der leere Tisch ohne Statistiken belassen. Der Grund dafür ist, dass eine neue Tabelle erstellt und dann die alte gelöscht wird. Daher ändert sich die Objekt-ID (OID) der Tabelle, es werden jedoch keine Statistiken berechnet. Folglich treten sofort Leistungsprobleme auf.
+Es wird dringend empfohlen, die ANALYZE-Anweisung nicht wegzulassen. Andernfalls bleibt die gesaugte Tabelle ohne Statistiken. Der Grund dafür ist, dass eine neue Tabelle erstellt wird und dann die alte gelöscht wird. Als Ergebnis ändert sich die Objekt-ID (OID) der Tabelle, es werden jedoch keine Statistiken berechnet. Folglich treten sofort Leistungsprobleme auf.
 
-Im Folgenden finden Sie ein typisches Beispiel für einen regelmäßig auszuführenden SQL-Wartungsplan:
+Im Folgenden finden Sie ein typisches Beispiel für einen SQL-Wartungsplan, der regelmäßig ausgeführt werden soll:
 
 ```
 \timing on
@@ -141,25 +141,25 @@ VACUUM (FULL, ANALYZE, VERBOSE) nmsmirrorpageinfo;
 
 >[!NOTE]
 >
->* Adobe empfiehlt, mit kleineren Tabellen zu beginnen: Auf diese Weise wurde zumindest ein Teil der Wartung abgeschlossen, wenn der Prozess bei großen Tabellen fehlschlägt (bei denen das Fehlerrisiko am größten ist).
->* Adobe empfiehlt, die für Ihr Datenmodell spezifischen Tabellen hinzuzufügen, die erheblich aktualisiert werden können. Dies kann für **NmsRecipient** der Fall sein, wenn Sie über große tägliche Datenreplikationsflüsse verfügen.
->* Die VACUUM-Anweisung sperrt die Tabelle, wodurch einige Prozesse während der Wartung angehalten werden.
->* Bei sehr großen Tabellen (in der Regel über 5 GB) kann die VACUUM FULL-Anweisung sehr ineffizient werden und sehr lange dauern. Adobe rät davon ab, es für die Tabelle **YyyNmsBroadLogXxx** zu verwenden.
->* Dieser Wartungsvorgang kann mithilfe einer **[!UICONTROL SQL]** -Aktivität von einem Adobe Campaign-Workflow implementiert werden. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../workflow/using/architecture.md). Stellen Sie sicher, dass Sie die Wartung für eine niedrige Aktivitätsdauer planen, die nicht mit Ihrem Sicherungsfenster kollidiert.
+>* Adobe empfiehlt, mit kleineren Tabellen zu beginnen: Auf diese Weise ist, wenn der Vorgang bei großen Tabellen fehlschlägt (bei denen das Fehlerrisiko am höchsten ist), zumindest ein Teil der Wartung abgeschlossen.
+>* Adobe empfiehlt, die Tabellen hinzuzufügen, die für Ihr Datenmodell spezifisch sind und daher erheblich aktualisiert werden können. Dies kann bei „NmsRecipient **der Fall sein** wenn Sie über große tägliche Datenreplikationsflüsse verfügen.
+>* Die VACUUM-Anweisung sperrt die Tabelle, wodurch einige Prozesse angehalten werden, während die Wartung durchgeführt wird.
+>* Bei sehr großen Tabellen (typischerweise über 5 GB) kann die VACUUM FULL-Anweisung sehr ineffizient werden und sehr lange dauern. Adobe empfiehlt nicht, es für die Tabelle **YyyNmsBroadLogXxx** zu verwenden.
+>* Dieser Wartungsvorgang kann durch einen Adobe Campaign-Workflow mithilfe einer **[!UICONTROL SQL]**-Aktivität implementiert werden. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../workflow/using/architecture.md). Stellen Sie sicher, dass Sie die Wartung für eine kurze Zeitspanne ohne Kollision mit dem Backup-Fenster planen.
 >
 
 ### Datenbank neu erstellen {#rebuilding-a-database}
 
-PostgreSQL bietet keine einfache Möglichkeit, eine Online-Tabellen-Neuerstellung durchzuführen, da die VACUUM FULL-Anweisung die Tabelle sperrt, wodurch eine reguläre Produktion verhindert wird. Dies bedeutet, dass die Wartung durchgeführt werden muss, wenn die Tabelle nicht verwendet wird. Sie haben folgende Möglichkeiten:
+PostgreSQL bietet keine einfache Möglichkeit, einen Online-Tabellen-Neuaufbau durchzuführen, da die VACUUM FULL-Anweisung die Tabelle sperrt und so die reguläre Produktion verhindert. Dies bedeutet, dass eine Wartung durchgeführt werden muss, wenn die Tabelle nicht verwendet wird. Sie haben folgende Möglichkeiten:
 
-* Wartung durchführen, wenn die Adobe Campaign-Plattform angehalten wird,
-* Beenden Sie die verschiedenen Adobe Campaign-Unterdienste, die wahrscheinlich in die neu erstellte Tabelle schreiben (**nlserver stop wfserver instance_name** , um den Workflow-Prozess zu stoppen).
+* eine Wartung durchführen, wenn die Adobe Campaign-Plattform angehalten wird,
+* Beenden Sie die verschiedenen Adobe Campaign-Unterdienste, die wahrscheinlich in die neu aufgebaute Tabelle schreiben werden (**nlserver stop wfserver instance_name**, um den Workflow-Prozess zu stoppen).
 
-Im Folgenden finden Sie ein Beispiel für die Tabellendefragmentierung mit bestimmten Funktionen zum Generieren der erforderlichen DDL. Mit der folgenden SQL können Sie zwei neue Funktionen erstellen: **GenRebuildTablePart1** und **GenRebuildTablePart2**, die zum Generieren des erforderlichen DDL für die Neuerstellung einer Tabelle verwendet werden können.
+Im Folgenden finden Sie ein Beispiel für die Tabellendefragmentierung mithilfe spezifischer Funktionen zum Generieren der erforderlichen DDL. Mit dem folgenden SQL-Code können Sie zwei neue Funktionen erstellen: **GenRebuildTablePart1** und **GenRebuildTablePart2**, mit denen die erforderliche DDL zum Erstellen einer Tabelle generiert werden kann.
 
-* Mit der ersten Funktion können Sie eine Arbeitstabelle (** _tmp** hier) erstellen, die eine Kopie der ursprünglichen Tabelle ist.
+* Mit der ersten Funktion können Sie eine Arbeitstabelle (hier ** _tmp**) erstellen, die eine Kopie der ursprünglichen Tabelle ist.
 * Die zweite Funktion löscht dann die ursprüngliche Tabelle und benennt die Arbeitstabelle und ihre Indizes um.
-* Die Verwendung von zwei statt einer Funktion bedeutet, dass bei einem Ausfall der ersten nicht das Risiko besteht, die ursprüngliche Tabelle zu löschen.
+* Die Verwendung von zwei Funktionen anstelle einer bedeutet, dass Sie bei einem Fehler der ersten nicht das Risiko eingehen, die ursprüngliche Tabelle zu löschen.
 
 ```
  -- --------------------------------------------------------------------------
@@ -375,7 +375,7 @@ Im Folgenden finden Sie ein Beispiel für die Tabellendefragmentierung mit besti
  $$ LANGUAGE plpgsql;
 ```
 
-Das folgende Beispiel kann in einem Workflow verwendet werden, um die erforderlichen Tabellen neu zu erstellen, anstatt den Befehl **vakuum/rebuild** zu verwenden:
+Das folgende Beispiel kann in einem Workflow verwendet werden, um die erforderlichen Tabellen neu zu erstellen, anstatt den Befehl **vacuum/rebuild** zu verwenden:
 
 ```
 function sqlGetMemo(strSql)
@@ -406,38 +406,38 @@ function sqlGetMemo(strSql)
 
 ## Oracle {#oracle}
 
-Wenden Sie sich an Ihren Datenbankadministrator, um herauszufinden, welche Verfahren für Ihre Oracle-Version am besten geeignet sind.
+Wenden Sie sich an Ihren Datenbankadministrator, um mehr über die Verfahren zu erfahren, die für Ihre Oracle-Version am besten geeignet sind.
 
 ## Microsoft SQL Server {#microsoft-sql-server}
 
 >[!NOTE]
 >
->Für Microsoft SQL Server können Sie den auf [dieser Seite](https://ola.hallengren.com/sql-server-index-and-statistics-maintenance.html) beschriebenen Wartungsplan verwenden.
+>Für Microsoft SQL Server können Sie den Wartungsplan verwenden, der auf ([ Seite) beschrieben ](https://ola.hallengren.com/sql-server-index-and-statistics-maintenance.html).
 
-Das folgende Beispiel betrifft Microsoft SQL Server 2005. Wenn Sie eine andere Version verwenden, wenden Sie sich an Ihren Datenbankadministrator, um Informationen über die Wartungsmaßnahmen zu erhalten.
+Das folgende Beispiel betrifft Microsoft SQL Server 2005. Wenn Sie eine andere Version verwenden, wenden Sie sich an Ihren Datenbankadministrator, um mehr über die Wartungsmaßnahmen zu erfahren.
 
-1. Stellen Sie zunächst eine Verbindung zu Microsoft SQL Server Management Studio mit einer Anmeldung mit Administratorrechten her.
-1. Wechseln Sie zum Ordner **[!UICONTROL Management > Wartungspläne]** , klicken Sie mit der rechten Maustaste darauf und wählen Sie **[!UICONTROL Wartungsplanassistent]** aus.
-1. Klicken Sie auf **[!UICONTROL Weiter]** , wenn die erste Seite angezeigt wird.
-1. Wählen Sie den Typ des zu erstellenden Wartungsplans aus (separate Zeitpläne für jede Aufgabe oder einzelne Zeitpläne für den gesamten Plan) und klicken Sie dann auf die Schaltfläche **[!UICONTROL Ändern..]** .
-1. Wählen Sie im Fenster **[!UICONTROL Eigenschaften des Auftragsplanplans]** die gewünschten Ausführungsparameter aus, klicken Sie auf **[!UICONTROL OK]** und dann auf **[!UICONTROL Weiter]**.
-1. Wählen Sie die Wartungsaufgaben aus, die Sie ausführen möchten, und klicken Sie dann auf **[!UICONTROL Weiter]**.
-
-   >[!NOTE]
-   >
-   >Es wird empfohlen, mindestens die unten aufgeführten Wartungsaufgaben durchzuführen. Sie können auch die Aufgabe Statistikaktualisierung auswählen, die jedoch bereits vom Datenbankbereinigungs-Workflow durchgeführt wird.
-
-1. Wählen Sie in der Dropdown-Liste die Datenbank aus, für die Sie die Aufgabe **[!UICONTROL Datenbanküberprüfung der Integrität]** ausführen möchten.
-1. Wählen Sie die Datenbank aus, klicken Sie auf **[!UICONTROL OK]** und dann auf **[!UICONTROL Weiter]**.
-1. Konfigurieren Sie die Ihrer Datenbank zugewiesene Maximalgröße und klicken Sie auf **[!UICONTROL Weiter]**.
+1. Stellen Sie zunächst eine Verbindung zu Microsoft SQL Server Management Studio her und melden Sie sich als Administrator an.
+1. Wechseln Sie zum Ordner **[!UICONTROL Verwaltung > Wartungspläne]**, klicken Sie mit der rechten Maustaste darauf und wählen Sie **[!UICONTROL Wartungsplan-Assistent]**.
+1. Klicken Sie **[!UICONTROL Weiter]** wenn die erste Seite angezeigt wird.
+1. Wählen Sie die Art des Wartungsplans aus, den Sie erstellen möchten (separate Zeitpläne für jede Aufgabe oder einen einzelnen Zeitplan für den gesamten Plan), und klicken Sie dann auf die Schaltfläche **[!UICONTROL Ändern…]**.
+1. Wählen Sie im Fenster **[!UICONTROL Eigenschaften der Auftragsplanung]** die gewünschten Ausführungseinstellungen aus, klicken Sie auf **[!UICONTROL OK]** und dann auf **[!UICONTROL Weiter]**.
+1. Wählen Sie die Wartungsaufgaben aus, die Sie durchführen möchten, und klicken Sie dann auf **[!UICONTROL Weiter]**.
 
    >[!NOTE]
    >
-   >Wenn die Größe der Datenbank diesen Schwellenwert überschreitet, versucht der Wartungsplan, nicht verwendete Daten zu löschen, um Speicherplatz zu sparen.
+   >Es wird empfohlen, mindestens die unten aufgeführten Wartungsaufgaben durchzuführen. Sie können auch die Aufgabe Statistikaktualisierung auswählen, die jedoch bereits vom Datenbankbereinigungs -Workflow ausgeführt wird.
 
-1. Organisieren oder erstellen Sie den Index neu:
+1. Wählen Sie in der Dropdown-Liste die Datenbank aus, für die Sie die Aufgabe **[!UICONTROL Datenbankintegritätsprüfung]** ausführen möchten.
+1. Wählen Sie die Datenbank aus und klicken Sie **[!UICONTROL OK]** und dann auf **[!UICONTROL Weiter]**.
+1. Konfigurieren Sie die maximale Größe, die Ihrer Datenbank zugewiesen ist, und klicken Sie dann auf **[!UICONTROL Weiter]**.
 
-   * Wenn die Indexfragmentierungsrate zwischen 10 % und 40 % liegt, wird eine Neuorganisation empfohlen.
+   >[!NOTE]
+   >
+   >Wenn die Größe der Datenbank diesen Schwellenwert überschreitet, versucht der Wartungsplan, nicht verwendete Daten zu löschen, um Speicherplatz freizugeben.
+
+1. Index neu organisieren oder neu erstellen:
+
+   * Wenn die Indexfragmentierungsrate zwischen 10 % und 40 % liegt, wird eine Reorganisation empfohlen.
 
      Wählen Sie aus, welche Datenbanken und Objekte (Tabellen oder Ansichten) Sie neu organisieren möchten, und klicken Sie dann auf **[!UICONTROL Weiter]**.
 
@@ -445,24 +445,24 @@ Das folgende Beispiel betrifft Microsoft SQL Server 2005. Wenn Sie eine andere V
      >
      >Je nach Konfiguration können Sie entweder die zuvor ausgewählten Tabellen oder alle Tabellen in Ihrer Datenbank auswählen.
 
-   * Wenn die Indexfragmentierungsrate über 40 % liegt, wird eine Neuerstellung empfohlen.
+   * Wenn die Indexfragmentierungsrate höher als 40 % ist, wird eine Neuerstellung empfohlen.
 
-     Wählen Sie die Optionen aus, die Sie auf die Aufgabe zum Neuerstellen des Index anwenden möchten, und klicken Sie dann auf **[!UICONTROL Weiter]**.
+     Wählen Sie die Optionen aus, die Sie auf die Aufgabe zur Neuerstellung des Index anwenden möchten, und klicken Sie dann auf **[!UICONTROL Weiter]**.
 
      >[!NOTE]
      >
-     >Der Prozess zur Neuerstellung von Indizes ist im Hinblick auf die Prozessorverwendung strenger und sperrt die Datenbankressourcen. Wählen Sie die Option **[!UICONTROL Index während Neuindizierung online halten]** aus, wenn der Index während der Neuerstellung verfügbar sein soll.
+     >Der Neuaufbau-Indexprozess ist im Hinblick auf die Prozessornutzung restriktiver und blockiert die Datenbankressourcen. Wählen Sie die Option **[!UICONTROL Index während der Neuindizierung online halten]**, wenn der Index während der Neuindizierung verfügbar sein soll.
 
 1. Wählen Sie die Optionen aus, die Sie im Aktivitätsbericht anzeigen möchten, und klicken Sie dann auf **[!UICONTROL Weiter]**.
-1. Überprüfen Sie die Liste der für den Wartungsplan konfigurierten Aufgaben und klicken Sie auf **[!UICONTROL Beenden]**.
+1. Überprüfen Sie die Liste der für den Wartungsplan konfigurierten Aufgaben und klicken Sie dann auf **[!UICONTROL Beenden]**.
 
-   Eine Zusammenfassung des Wartungsplans und der Status der einzelnen Schritte wird angezeigt.
+   Eine Zusammenfassung des Wartungsplans und der Status seiner verschiedenen Schritte wird angezeigt.
 
-1. Sobald der Wartungsplan abgeschlossen ist, klicken Sie auf **[!UICONTROL Schließen]**.
-1. Doppelklicken Sie im Microsoft SQL Server-Explorer auf den Ordner **[!UICONTROL Management > Wartungspläne]** .
-1. Wählen Sie den Adobe Campaign-Wartungsplan aus: Die verschiedenen Schritte werden in einem Workflow beschrieben.
+1. Klicken Sie nach Abschluss des Wartungsplans auf **[!UICONTROL Schließen]**.
+1. Doppelklicken Sie im Microsoft SQL Server-Explorer auf den Ordner **[!UICONTROL Verwaltung >]**&quot;.
+1. Wählen Sie den Adobe Campaign-Wartungsplan aus: die verschiedenen Schritte werden in einem Workflow beschrieben.
 
-   Beachten Sie, dass ein Objekt im Ordner &quot;**[!UICONTROL SQL Server Agent > Aufträge]**&quot;erstellt wurde. Mit diesem Objekt können Sie den Wartungsplan starten. In unserem Beispiel gibt es nur ein Objekt, da alle Wartungsaufgaben Teil desselben Plans sind.
+   Beachten Sie, dass im Ordner **[!UICONTROL SQL Server-Agent > Vorgänge“ ein]** erstellt wurde. Mit diesem Objekt können Sie den Wartungsplan starten. In unserem Beispiel gibt es nur ein -Objekt, da alle Wartungsaufgaben Teil desselben Plans sind.
 
    >[!IMPORTANT]
    >
@@ -476,8 +476,8 @@ Das folgende Beispiel betrifft Microsoft SQL Server 2005. Wenn Sie eine andere V
 
 Mit der Option **WdbcOptions_TempDbName** können Sie eine separate Datenbank für Tabellen auf Microsoft SQL Server konfigurieren. Dadurch werden Backups und Replikation optimiert.
 
-Diese Option kann verwendet werden, wenn Arbeitstabellen (z. B. die bei Ausführung eines Workflows erstellten Tabellen) in einer anderen Datenbank erstellt werden sollen.
+Diese Option kann verwendet werden, wenn die Arbeitstabellen (z. B. die während der Ausführung eines Workflows erstellten Tabellen) in einer anderen Datenbank erstellt werden sollen.
 
-Wenn Sie die Option auf &quot;tempdb.dbo.&quot;festlegen, werden die Arbeitstabellen in der temporären Standarddatenbank von Microsoft SQL Server erstellt. Der Datenbankadministrator muss Schreibzugriff auf die tempdb-Datenbank zulassen.
+Wenn Sie die Option auf „tempdb.dbo.“ setzen, werden die Arbeitstabellen in der standardmäßigen temporären Datenbank von Microsoft SQL Server erstellt. Der Datenbankadministrator muss Schreibzugriff auf die temporäre Datenbank zulassen.
 
-Wenn die Option festgelegt ist, wird sie in allen in Adobe Campaign konfigurierten Microsoft SQL Server-Datenbanken (Hauptdatenbank und externe Konten) verwendet. Beachten Sie, dass Konflikte auftreten können, wenn zwei externe Konten denselben Server teilen (da die tempdb-Datei eindeutig ist). Wenn zwei Campaign-Instanzen denselben MSSQL-Server verwenden, kann es auf die gleiche Weise zu Konflikten kommen, wenn sie dasselbe tempdb verwenden.
+Wenn die Option festgelegt ist, wird sie für alle in Adobe Campaign konfigurierten Microsoft SQL Server-Datenbanken (Hauptdatenbank und externe Konten) verwendet. Beachten Sie, dass Konflikte auftreten können, wenn zwei externe Konten denselben Server gemeinsam nutzen (da tempdb eindeutig ist). Wenn zwei Campaign-Instanzen denselben MSSQL-Server verwenden, kann es auf dieselbe Weise zu Konflikten kommen, wenn sie dieselbe tempdb verwenden.

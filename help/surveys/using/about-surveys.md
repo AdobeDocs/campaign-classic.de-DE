@@ -8,7 +8,7 @@ exl-id: 7061a4f1-006f-4f19-8761-918d8930d885
 source-git-commit: 8e5a328bee7701adfedec6a533cc21b4ce548187
 workflow-type: tm+mt
 source-wordcount: '567'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -43,7 +43,7 @@ Verwenden Sie in Adobe Campaign [Web-Anwendungen](../../web/using/about-web-form
 * Personalisierung hinzuzufügen und die Feldposition zu definieren,
 * die Anzeige von Umfragefeldern von den Antworten abhängig zu machen,
 * die Anzeige von Seiten abhängig von einer Bedingung zu machen,
-* Informationen vor der Genehmigung zu prüfen, je nach Art der erwarteten Daten (Nummer, E-Mail-Adresse, Daten usw.) Pflichtfelder hinzuzufügen,
+* Informationen vor der Genehmigung zu prüfen, je nach Art der erwarteten Daten (Nummer, E-Mail-Adresse, Daten usw.) und Pflichtfeldern,
 * E-Mail-Einladungen/Benachrichtigungen zu senden,
 * Fehler- und Endseiten zu personalisieren,
 * Bilder, Videos, Hypertext-Links, Captcha usw. in Formularen hinzuzufügen.

@@ -49,9 +49,9 @@ Adobe Campaign kann mit zwei Protokollierungsstufen betrieben werden:
 
    >[!NOTE]
    >
-   >Wenn Sie **trackingFilter:&#42;** verwenden, werden alle Protokolltypen aktiviert: ncm, rdr, nms, jst, timing, wdbc, ldap, soap, xtk, xtkquery, session, xtkwriter, network, pop3, inmail\
+   >Wenn Sie **tracefilter:&#42;** verwenden, werden alle Protokolltypen aktiviert: ncm, rdr, nms, jst, timing, wdbc, ldap, soap, xtk, xtkquery, session, xtkwriter, network, pop3, inmail\
    Die nützlichsten Protokolltypen sind: **wdbc** (zeigt alle SQL-Abfragen an), **soap** (zeigt alle SOAP-Aufrufe an), **ldap** (zeigt alle LDAP-Abfragen nach der Authentifizierung an), **xtkquery** (zeigt die Liste aller Abfragedef an).\
-   Sie können sie einzeln verwenden (**z. B. trackFilter:soap,wdbc** ). Sie können auch alle aktivieren und bestimmte andere ausschließen: **-tracefilter:&#42;,!soap**
+   Sie können sie einzeln verwenden (**z. B. trackFilter:soap,wdbc** ). Sie können sie auch alle aktivieren und bestimmte andere ausschließen: **-tracefilter:&#42;,!soap**
 
    Vergewissern Sie sich, dass der Fehler tatsächlich aufgetreten ist, und starten Sie den Prozess auf die normale Weise neu:
 
@@ -65,13 +65,13 @@ Die Protokolle dieser Befehle werden in der Protokolldatei des Moduls gespeicher
 
 Hier ist ein Beispiel speziell für das Webmodul. Die anderen Module funktionieren wie oben angegeben.
 
-Vergewissern Sie sich vor dem Senden dieses Befehls, dass kein laufender Auftrag betroffen ist:
+Vergewissern Sie sich vor dem Senden dieses Befehls, dass kein in Bearbeitung befindlicher Auftrag betroffen ist:
 
 ```
 nlserver pdump -who
 ```
 
-Fahren Sie anschließend das Modul herunter und starten Sie es im Modus **TraceFilter** neu:
+Beenden Sie anschließend das Modul im Modus **TraceFilter** und starten Sie es neu:
 
 ```
 nlserver stop web; LD_PRELOAD=libjsig.so nlserver web -tomcat -verbose -tracefilter:* -tracefile:web_debug@default

@@ -50,7 +50,7 @@ _7. September 2021_
 
 * Nach seinem End-of-Life wurde Flash aus allen damit verbundenen Campaign-Funktionen und -Komponenten entfernt und durch HTML5 ersetzt. Der Diagrammtyp **Tacho** wurde entfernt. (NEO-30330) [Mehr dazu](../../reporting/using/creating-a-chart.md)
 * Bei der Installation der Client-Konsole unter Windows überprüft das Installationsprogramm jetzt, ob ein übergeordneter Registrierungsknoten vorhanden ist, und erstellt einen, wenn er fehlt. Dadurch werden potenzielle Probleme beim Starten der Konsole verhindert. (NEO-34854)
-* Die Tracking-Signatur-Funktion wurde verbessert, um Fehler zu verhindern, die in Zusammenhang mit der Art und Weise stehen, in der Drittanbieter-Tools (E-Mail-Clients, Internet-Browser usw.) Sonderzeichen verarbeiten. URL-Parameter sind jetzt codiert.
+* Die Tracking-Signatur-Funktion wurde verbessert. So sollen Fehler verhindert werden, die in Zusammenhang damit stehen, wie Drittanbieter-Tools (E-Mail-Clients, Internet-Browser) Sonderzeichen verarbeiten. URL-Parameter sind jetzt codiert.
 
 **Sonstige Änderungen**
 

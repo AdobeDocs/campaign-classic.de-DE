@@ -19,16 +19,16 @@ ht-degree: 8%
 
 
 
-Für eine vorhandene **prod** -Instanz in Linux/PostgreSQL sind die Schritte zum Wechseln zu Unicode wie folgt:
+Für eine vorhandene **prod**-Instanz in Linux/PostgreSQL sind die Schritte zum Wechseln zu Unicode wie folgt:
 
-1. Beenden Sie die Prozesse, die in die Datenbank schreiben:
+1. Stoppen Sie die Prozesse, die in die Datenbank schreiben:
 
    ```
    su - neolane
    nlserver shutdown
    ```
 
-1. Datenbank abrufen:
+1. Dump der Datenbank:
 
    ```
    su - postgres
@@ -62,7 +62,7 @@ Für eine vorhandene **prod** -Instanz in Linux/PostgreSQL sind die Schritte zum
    vi config-prod.xml
    ```
 
-   Fügen Sie das Zeichen **u** vor dem Wert hinzu, der sich auf die Datenbankkennung (**databaseId**) bezieht:
+   Fügen Sie das **u** vor dem Wert ein, der sich auf die Datenbankkennung (**databaseId**) bezieht:
 
    ```
    <web>
@@ -78,7 +78,7 @@ Für eine vorhandene **prod** -Instanz in Linux/PostgreSQL sind die Schritte zum
    vi config-prod.xml
    ```
 
-   Ändern Sie die Datenbankreferenz:
+   Ändern der Datenbankreferenz:
 
    ```
    <dataSource name="default">
@@ -97,7 +97,7 @@ Für eine vorhandene **prod** -Instanz in Linux/PostgreSQL sind die Schritte zum
    /etc/init.d/apache start
    ```
 
-1. Bestätigen Sie den Schalter. Stellen Sie dazu eine Verbindung über die Adobe Campaign-Konsole her und:
+1. Den Schalter bestätigen. Stellen Sie dazu eine Verbindung über die Adobe Campaign-Konsole her und:
 
-   * Überprüfen Sie, ob die Daten korrekt angezeigt werden, insbesondere die akzentuierten Zeichen:
-   * Starten Sie einen Versand und vergewissern Sie sich, dass der Tracking-Abruf funktioniert.
+   * Überprüfen Sie, ob die Daten korrekt angezeigt werden, insbesondere die hervorgehobenen Zeichen:
+   * Starten Sie einen Versand und überprüfen Sie, ob der Tracking-Abruf funktioniert.

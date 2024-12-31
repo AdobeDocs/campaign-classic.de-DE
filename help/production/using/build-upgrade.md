@@ -19,33 +19,33 @@ ht-degree: 37%
 
 
 
-In diesem Abschnitt erhalten Sie eine ausführliche Anleitung zum Upgrade-Prozess und zu den Schritten zur Ermittlung und Lösung von Konflikten.
+In diesem Abschnitt finden Sie eine ausführliche Anleitung zum Upgrade-Prozess und zu den Schritten zum Identifizieren und Beheben von Konflikten.
 
-Das Build-Upgrade muss mit Vorsicht durchgeführt werden, seine Auswirkungen müssen im Voraus umfassend berücksichtigt werden und das Verfahren muss mit einem hohen Maß an Disziplin abgeschlossen werden. Um eine erfolgreiche Aktualisierung sicherzustellen, stellen Sie sicher, dass nur erfahrene Benutzer die unten beschriebenen Schritte ausführen. Darüber hinaus empfehlen wir dringend, sich mit der [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) in Verbindung zu setzen, bevor Sie mit einem Upgrade beginnen.
+Das Build-Upgrade muss mit Vorsicht durchgeführt werden, seine Auswirkungen müssen zuvor vollständig berücksichtigt werden und das Verfahren muss mit einem hohen Maß an Disziplin abgeschlossen werden. Um ein erfolgreiches Upgrade sicherzustellen, stellen Sie sicher, dass nur erfahrene Benutzer die unten beschriebenen Schritte ausführen. Darüber hinaus empfehlen wir dringend, sich vor einem Upgrade an die [Adobe-Kundenunterstützung ](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) wenden.
 
-Folgende Voraussetzungen sind erforderlich:
+Die folgenden Voraussetzungen sind erforderlich:
 
 * Kenntnis der Campaign-Architektur
 * Kenntnis der Systeme und Server
 * Administratorrechte und Berechtigungen
 
-Weitere Informationen finden Sie in den folgenden Abschnitten: [Aktualisieren von Adobe Campaign](../../production/using/upgrading.md), [Migrieren zu einer neuen Version](../../migration/using/about-migration.md).
+Adobe Campaign Weitere Informationen finden Sie in den folgenden Abschnitten: [Aktualisieren von ](../../production/using/upgrading.md), [Migrieren zu einer neuen Version](../../migration/using/about-migration.md).
 
-Bei gehosteten und hybriden Instanzen müssen Sie das Build-Upgrade beim Adobe Technical Operations-Team anfordern. Weitere Informationen hierzu finden Sie im Abschnitt Häufig gestellte Fragen am unteren Rand dieser Seite. Lesen Sie auch die [FAQ zum Build-Upgrade](../../platform/using/faq-build-upgrade.md).
+Bei gehosteten und hybriden Instanzen müssen Sie das Build-Upgrade an das Adobe-Team für technische Vorgänge anfordern. Weiterführende Informationen hierzu finden Sie im Abschnitt Häufig gestellte Fragen unten auf dieser Seite. Lesen Sie auch die [häufig gestellte Fragen zum Build-Upgrade](../../platform/using/faq-build-upgrade.md).
 
-## Vorbereiten des Upgrades
+## Upgrade vorbereiten
 
 ![](assets/do-not-localize/icon_planification.png)
 
-Vor Beginn des Build-Upgrades müssen Sie eine vollständige Vorbereitung wie unten beschrieben durchführen.
-Sobald das System für die Aktualisierung bereit ist, dauert ein Build-Upgrade **mindestens** 2 Stunden.
+Bevor Sie mit dem Build-Upgrade beginnen, müssen Sie eine vollständige Vorbereitung wie unten beschrieben durchführen.
+Sobald das System für ein Upgrade bereit ist, dauert ein Build-Upgrade **mindestens** 2 Stunden.
 
 Für das Build-Upgrade sind die folgenden Ressourcen erforderlich:
 
-* ein Adobe-Architekt, der die Datenbankstrukturen (vordefinierte Schemas und alle hinzugefügten zusätzlichen Schemas, Kampagnenentwürfe und alle wichtigen Pfadfunktionen, die in einer bestimmten Reihenfolge gestartet und getestet werden müssen) versteht.
-* Projektmanager - Wenn das Build-Upgrade viele verschiedene Instanzen (Produktion, Staging, Tests) und andere Drittanbieter-Server und -Anwendungen (Datenbanken, SFTP-Sites, Messaging-Service-Provider) umfasst, gilt ein Projektmanager zur Koordinierung aller Tests als Best Practice.
+* Ein Adobe-Architekt: Zum Verständnis der Datenbankstrukturen (vordefinierte Schemata und alle zusätzlichen Schemata, die hinzugefügt wurden, Kampagnendesigns und alle kritischen Pfadfunktionen, die in einer bestimmten Reihenfolge gestartet und getestet werden müssen).
+* Projektmanager: Für den Fall, dass das Build-Upgrade viele verschiedene Instanzen (Produktion, Staging, Tests) und andere Server und Anwendungen von Drittanbietern (Datenbanken, SFTP-Sites, Messaging-Service-Provider) umfasst, ist es als Best Practice zu betrachten, einen Projektmanager zu haben, der alle Tests koordiniert.
 * ein Adobe-Campaign-Administrator: Er kennt die Konfiguration des Servers, u. a. Anforderungen in Bezug auf Sicherheit, Ordneraufbau, Reporting und den Import und Export. Bitte nehmen Sie kein Build-Upgrade ohne Ihren Administrator vor.
-* ein Adobe Campaign-Benutzer (Marketing-Benutzer): Ein erfolgreiches Upgrade hängt von der Fähigkeit des Benutzers ab, seine täglichen Aufgaben erfolgreich durchzuführen. Aus diesem Grund sollten Sie mindestens einen Ihrer täglichen Benutzer in Ihre Tests der aktualisierten Server einbeziehen.
+* Ein Adobe Campaign-Benutzer (Marketing-Benutzer): Für ein erfolgreiches Upgrade ist die Fähigkeit des Benutzers erforderlich, seine täglichen Aufgaben erfolgreich auszuführen. Aus diesem Grund sollten Sie immer mindestens einen Ihrer täglichen Benutzer in Ihre Tests der aktualisierten Server einbeziehen.
 
 ### Planung
 
@@ -55,59 +55,59 @@ Dies sind die wichtigsten Schritte zur Planung eines Build-Upgrades:
 1. Stellen Sie Kontaktdetails für Adobe- und Kundenmitarbeiter bereit.
 1. Für gehostete Instanzen: die Adobe- und Kundenmitarbeiter bestimmen den Zeitpunkt des Upgrades sowie die Person, die ihn durchführt.
 1. Für On-Premise-Instanzen: die Kundenmitarbeiter führen den gesamten Prozess aus. Wenn Hilfe beim Testen benutzerdefinierter Workflows und Sendungen benötigt wird, sollten Beratungsdienste in Anspruch genommen werden.
-1. Ermitteln und bestätigen Sie, auf welche Version von Adobe Campaign Sie aktualisieren möchten - lesen Sie die [Adobe Campaign Classic-Versionshinweise](../../rn/using/rn-overview.md).
+1. Ermitteln und bestätigen Sie, auf welche Version von Adobe Campaign Sie ein Upgrade durchführen möchten - lesen Sie die [Versionshinweise zu Adobe Campaign Classic](../../rn/using/rn-overview.md).
 1. Bestätigen Sie das Vorhandensein ausführbarer Upgrade-Dateien.
 
-### Wichtige Personen
+### Schlüsselpersonen
 
-Für das Build-Upgrade müssen die folgenden Personen beteiligt sein:
+Für den Build-Upgrade-Prozess müssen die folgenden Personen beteiligt sein:
 
 * Adobe-Architekt: Bei gehosteten oder hybriden Architekturen muss sich der Architekt mit der Adobe Campaign-Kundenunterstützung abstimmen.
 
 * Projektmanager:
-   * für On-Premise-Installationen: Der interne Projektleiter des Kunden leitet die Aktualisierung und verwaltet Lebenszyklustests.
+   * Bei On-Premise-Installationen: Der interne Projektleiter des Kunden leitet das Upgrade und verwaltet Lebenszyklustests.
 
-   * für gehostete Installationen: Das Hosting-Team arbeitet mit dem Adobe Campaign Client Care-Team und dem Kunden zusammen, um den Zeitplan für die Aktualisierung für alle Instanzen zu koordinieren.
+   * bei gehosteter Installation: Das Hosting-Team arbeitet mit dem Adobe Campaign-Kundenunterstützungs-Team und dem Kunden zusammen, um den Zeitplan für die Aktualisierung für alle Instanzen zu koordinieren.
 
 * Adobe Campaign-Administrator:
-   * für On-Premise-Installationen: Der Administrator führt das Upgrade durch.
+   * Bei On-Premise-Installationen: Der Administrator führt das Upgrade durch.
 
    * für gehostete Installationen: Das Hosting-Team führt das Upgrade durch.
 
 * Adobe Campaign-Benutzer/Marketing-Benutzer: Der Benutzer führt Tests für Entwicklungs-, Test- und Produktionsinstanzen durch.
 
-### Build-Aktualisierung vorbereiten
+### Build-Upgrade vorbereiten
 
-Vor Beginn der Build-Aktualisierung müssen On-Premise-Kunden die folgende Vorbereitung durchführen:
+Vor Beginn des Build-Upgrades müssen On-Premise-Kunden die folgende Vorbereitung durchführen:
 
 1. Vergewissern Sie sich, dass alle Entwicklungsarbeiten exportiert werden können, bevor das Upgrade durchgeführt wird. Führen Sie den Export als Packages durch.
 
-1. Führen Sie eine vollständige Sicherung der Datenbanken für alle Instanzen der Quell- und Zielumgebungen durch.
+1. Führen Sie ein vollständiges Backup der Datenbanken für alle Instanzen der Quell- und Zielumgebung durch.
 
-1. Rufen Sie die neueste Version Ihrer [Server-Konfigurationsdatei](../../installation/using/the-server-configuration-file.md) ab.
+1. Erhalten Sie die neueste Version Ihrer [Server-Konfigurationsdatei](../../installation/using/the-server-configuration-file.md).
 
 1. [Laden Sie den neuesten Build herunter](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html). [Weitere Informationen](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de).
 
-Außerdem müssen Sie alle [nützlichen Befehlszeilen](../../installation/using/command-lines.md) kennen, bevor Sie mit einem Build-Upgrade beginnen:
+Außerdem müssen Sie alle [nützlichen Befehlszeilen“ kennen](../../installation/using/command-lines.md) bevor Sie ein Build-Upgrade starten:
 
 * **nlserver pdump**: listet aktuelle Prozesse auf
 * **nlserver pdump -who**: listet aktive Client-Sitzungen auf
 * **nlserver monitor -missing**: listet fehlende Eigenschaften auf
-* **nlserver start process@instance-name**: startet einen Prozess
-* **nlserver stop process@instance-name**: stoppt einen Prozess
-* **nlserver restart process@instance-name**: startet einen Prozess neu
-* **nlserver shutdown**: beendet alle Campaign-Prozesse
+* **nlserver start process@instance-name**: Startet einen Prozess
+* **nlserver stop process@instance-name**: Beendet einen Prozess
+* **nlserver restart process@instance-name**: Startet einen Prozess neu
+* **nlserver shutdown**: Beendet alle Campaign-Prozesse
 * **nlserver watchdog -svc**: startet den Watchdog-Prozess (nur UNIX)
 
-## Führen Sie das Upgrade durch
+## Durchführen des Upgrades
 
 ![](assets/do-not-localize/icon_process.png)
 
-Die folgenden Verfahren werden nur von **On-Premise** -Kunden durchgeführt. Für gehostete Kunden wird dies vom Hosting-Team übernommen. Um Adobe Campaign auf einen neuen Build zu aktualisieren, wird das entsprechende Verfahren unten beschrieben.
+Die folgenden Verfahren werden nur von On **Premise-Kunden**. Für gehostete Kunden wird dies vom Hosting-Team übernommen. Um Adobe Campaign auf einen neuen Build zu aktualisieren, wird im Folgenden das detaillierte Verfahren beschrieben.
 
-### Umgebung duplizieren
+### Duplizieren der Umgebung
 
-So duplizieren Sie eine Adobe Campaign-Umgebung, um eine Quellumgebung in eine Zielumgebung wiederherzustellen, was zu zwei identischen Arbeitsumgebungen führt.
+So duplizieren Sie eine Adobe Campaign-Umgebung, um eine Quellumgebung in einer Zielumgebung wiederherzustellen, was zu zwei identischen Arbeitsumgebungen führt.
 
 Gehen Sie dazu wie folgt vor:
 
@@ -115,15 +115,15 @@ Gehen Sie dazu wie folgt vor:
 
 1. Stellen Sie diese Kopien auf allen Instanzen der Zielumgebung wieder her.
 
-1. Führen Sie das Warnungsskript **nms:freezeInstance.js** in der Zielumgebung aus, bevor Sie es starten. Dadurch werden alle Prozesse beendet, die mit der Außenwelt interagieren: Protokolle, Tracking, Sendungen, Kampagnen-Workflows usw.
+1. Führen Sie **Skript &quot;:freezeInstance.js** vor dem Start in der Zielumgebung aus. Dadurch werden alle Prozesse gestoppt, die mit der Außenwelt interagieren: Protokolle, Tracking, Sendungen, Kampagnen-Workflows usw.
 
    ```
    nlserverjavacsriptnms:freezeInstance.js–instance:<dev> -arg:run
    ```
 
-1. Überprüfen Sie die Vorsicht wie folgt:
+1. Die Kauterisierung wie folgt überprüfen:
 
-   * Vergewissern Sie sich, dass der einzige Lieferteil der ist, für den die ID auf **0** festgelegt ist:
+   * Vergewissern Sie sich, dass nur der Versandteil mit der ID &quot;**&quot;**:
 
      ```
      SELECT * FROM neolane.nmsdeliverypart;
@@ -144,29 +144,29 @@ Gehen Sie dazu wie folgt vor:
 
 ### Dienste beenden
 
-Um alle Dateien durch die neue Version zu ersetzen, müssen alle Instanzen des nlserverservice beendet werden.
+Um alle Dateien durch die neue Version zu ersetzen, müssen alle Instanzen des nlserverservice heruntergefahren werden.
 
 1. Beenden Sie die folgenden Dienste:
 
-   * Webdienste (IIS): **iisreset /stop**
+   * Webdienste (IIS): **iisreset/stop**
    * Adobe-Campaign-Dienst: **net stop nlserver6**
 
    >[!NOTE]
    >
-   >Stellen Sie sicher, dass der Weiterleitungsserver (webmdl) angehalten ist, damit die von IIS verwendete Datei nlsrvmod.dll durch die neue Version ersetzt werden kann.
+   >Stellen Sie sicher, dass der Weiterleitungsserver (webmdl) gestoppt ist, damit die von IIS verwendete Datei „nlsrvmod.dll“ durch die neue Version ersetzt werden kann.
    >
 
-1. Vergewissern Sie sich, dass keine Aufgaben aktiv sind, indem Sie den Befehl **nlserver pdump** ausführen. Wenn keine Aufgaben vorhanden sind, sollte die Ausgabe wie folgt aussehen:
+1. Überprüfen Sie, ob keine Aufgaben aktiv sind, indem Sie den Befehl **nlserver pdump** ausführen. Wenn keine Aufgaben vorhanden sind, sollte die Ausgabe der folgenden ähneln:
 
    ```
    C:\<installation path>\bin>nlserverpdump HH:MM:SS > Application Server for Adobe Campaign version x.x (build xxx) dated xx/xx/xxxx No tasks
    ```
 
-1. Überprüfen Sie den Windows Task Manager, um sicherzustellen, dass alle Prozesse beendet wurden.
+1. Überprüfen Sie im Windows Task-Manager, ob alle Prozesse angehalten wurden.
 
 ### Aktualisieren der Adobe Campaign-Serveranwendung
 
-1. Führen Sie die Datei **Setup.exe** aus. Wenn Sie diese Datei herunterladen müssen, rufen Sie [das Download-Center](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) auf.
+1. Führen Sie die Datei **Setup.exe** aus. Wenn Sie diese Datei herunterladen müssen, rufen Sie [Download-Center](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) auf.
 
 1. Wählen Sie den Installationsmodus aus: **Aktualisieren** oder **Reparieren**.
 
@@ -188,7 +188,7 @@ Um alle Dateien durch die neue Version zu ersetzen, müssen alle Instanzen des n
 
    >[!NOTE]
    >
-   >Dieser Vorgang sollte nur einmal und nur auf einem nlserverweb-Anwendungsserver ausgeführt werden.
+   >Dieser Vorgang sollte nur einmal und nur auf einem nlserverwebanwendungsserver ausgeführt werden.
    >
 
    Um nur eine Datenbank zu synchronisieren, führen Sie den folgenden Befehl aus:
@@ -197,7 +197,7 @@ Um alle Dateien durch die neue Version zu ersetzen, müssen alle Instanzen des n
    nlserver config -postupgrade -instance: <instance_name>
    ```
 
-1. Überprüfen Sie, ob bei der Synchronisierung Fehler oder Warnungen aufgetreten sind.
+1. Überprüfen Sie, ob bei der Synchronisierung Fehler oder Warnungen erzeugt wurden.
 
 ### Dienste wieder starten
 
@@ -208,7 +208,7 @@ Die folgenden Dienste müssen wieder gestartet werden:
 
 ### Aktualisierung der Client-Konsolen
 
-Die Client-Konsole muss denselben Build haben wie die Server-Instanz.
+Die Client-Konsole muss auf demselben Build wie die Server-Instanz erstellt werden.
 
 Laden Sie auf der Maschine, auf der der Adobe Campaign-Anwendungsserver installiert ist (nlserverweb), diese Datei herunter und kopieren Sie sie:
 
@@ -220,37 +220,37 @@ Wenn das nächste Mal Clientkonsolen verbunden werden, werden die Benutzer darau
 
 ### Spezifische zusätzliche Aufgaben
 
-Einige Konfigurationen erfordern bestimmte zusätzliche Aufgaben, um auf einen neuen Build aktualisiert zu werden.
+Einige Konfigurationen erfordern bestimmte zusätzliche Aufgaben, um auf einen neuen Build zu aktualisieren.
 
-#### Transaktionsnachrichtenversand
+#### Transaktionsnachrichten
 
-Wenn Transaktionsnachrichten (Message Center) in Ihrer Campaign-Instanz aktiviert ist, müssen Sie die folgenden zusätzlichen Schritte ausführen, um eine Aktualisierung durchzuführen:
+Wenn Transaktionsnachrichten (Message Center) auf Ihrer Campaign-Instanz aktiviert ist, müssen Sie diese zusätzlichen Schritte ausführen, um ein Upgrade durchzuführen:
 
 1. Aktualisieren Sie den Message-Center-Produktionsserver auf die gewünschte Version.
 1. Führen Sie die Postupgrade-Scripts aus.
 1. Führen Sie Tests durch und stellen Sie sicher, dass der E-Mail-Empfang über die Message-Center-Produktionsinstanz funktioniert.
 1. Aktualisieren Sie die Clients und leeren Sie den Cache.
 1. Packages exportieren:
-   * Packages mithilfe des Client-Package-Export-Tools exportieren
-   * Schema-Package importieren
+   * Exportieren von Paketen mit dem Tool zum Exportieren von Clientpaketen
+   * Schemapaket importieren
    * Client trennen und erneut verbinden
    * Datenbank aktualisieren
-   * Trennen und erneutes Verbinden
-   * Admin-Package importieren
+   * Trennen und erneut verbinden
+   * Admin-Paket importieren
    * Inhaltspaket importieren
-   * Import Content Management Package
-   * Trennen und erneutes Verbinden
-   * Durchführen einer schnellen Überprüfung der Workflows
+   * Content-Management-Paket importieren
+   * Trennen und erneut verbinden
+   * Durchführen einer schnellen Konsistenzprüfung von Workflows
 
 1. Publizieren Sie Message-Center-Vorlagen, um sicherzugehen, dass die Schnittstelle zwischen den Servern und der Message-Center-Instanz funktioniert.
-1. Führen Sie Tests durch, um sicherzustellen, dass E-Mails erfolgreich über die Message-Center-Produktionsinstanz empfangen werden.
+1. Führen Sie Tests durch, um sicherzustellen, dass E-Mails erfolgreich über die Produktionsinstanz von Message Center empfangen werden.
 1. Führen Sie Workflow-Tests bei der Produktion durch, um sicherzugehen, dass der Nachrichtenempfang funktioniert.
 
 #### Mid-Sourcing
 
-Im Kontext einer Mid-Sourcing-Umgebung müssen Sie die folgenden zusätzlichen Schritte ausführen, um eine Aktualisierung durchzuführen:
+Im Kontext einer Mid-Sourcing-Umgebung müssen Sie die folgenden zusätzlichen Schritte ausführen, um ein Upgrade durchzuführen:
 
-1. Wenden Sie sich an die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html), um die Aktualisierung des Mid-Sourcing-Servers zu koordinieren.
+1. Wenden Sie sich an die [Adobe](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)Kundenunterstützung, um das Upgrade des Mid-Sourcing-Servers zu koordinieren.
 1. Überprüfen Sie, ob die Version aktualisiert wurde, indem Sie einen Test-Link ausführen. Beispiel:
 
    ```
@@ -259,7 +259,7 @@ Im Kontext einer Mid-Sourcing-Umgebung müssen Sie die folgenden zusätzlichen S
 
 >[!NOTE]
 >
->Der Mid-Sourcing-Server muss immer dieselbe Version (oder eine neuere Version) wie die Marketing-Server ausführen.
+>Der Mid-Sourcing-Server muss immer dieselbe Version (oder eine neuere Version) ausführen wie die Marketing-Server.
 >
 
 ## Bei Konflikten
@@ -268,7 +268,7 @@ Im Kontext einer Mid-Sourcing-Umgebung müssen Sie die folgenden zusätzlichen S
 
 Sie müssen das Synchronisierungsergebnis überprüfen. Dieser Schritt wird nur von On-Premise-Kunden ausgeführt. Für gehostete Kunden übernimmt diese Aufgabe das Hosting-Team. Es gibt zwei Möglichkeiten, das Synchronisationsergebnis anzuzeigen:
 
-In der Befehlszeilenschnittstelle werden Fehler durch ein dreifaches Chevron &quot;>>>&quot;materialisiert und die Synchronisation wird automatisch angehalten. Warnungen werden durch ein doppeltes Chevron &quot;>>&quot;erzeugt und müssen nach Abschluss der Synchronisation behoben werden. Am Ende des Postupgrades wird an der Eingabeaufforderung eine Zusammenfassung angezeigt. Sie kann wie folgt aussehen:
+In der Befehlszeilenschnittstelle werden Fehler durch einen dreifachen Chevron &#39;>>>&#39; materialisiert und die Synchronisierung wird automatisch angehalten. Warnungen werden durch einen doppelten Pfeil &quot;>>&quot; materialisiert und müssen nach Abschluss der Synchronisierung aufgelöst werden. Am Ende des Postupgrades wird in der Eingabeaufforderung eine Zusammenfassung angezeigt. Er kann wie folgt aussehen:
 
 ```
 YYYY-MM-DD HH:MM:SS.749Z 00002E7A 1 info log =========Summary of the update==========
@@ -279,15 +279,15 @@ YYYY-MM-DD HH:MM:SS.750Z 00002E7A 1 warning log The document with identifier 'de
 YYYY-MM-DD HH:MM:SS.750Z 00002E7A 1 warning log Document of identifier 'nms:includeView‘ and type 'xtk:srcSchema' updated in the database and found in the file system. You will have to merge the two versions manually.
 ```
 
-Wenn die Warnung einen Ressourcenkonflikt betrifft, muss der Benutzer darauf achten, ihn zu beheben.
+Wenn die Warnung einen Ressourcenkonflikt betrifft, ist ein Eingreifen des Benutzers erforderlich, um ihn zu lösen.
 
-Die Datei **postupgrade_ServerVersionNumber_TimeOfPostupgrade.log** enthält das Synchronisierungsergebnis. Sie ist standardmäßig im folgenden Ordner verfügbar: **installationDirectory/var/`<instance-name>`/postupgrade**. Fehler und Warnungen werden durch die Fehler- und Warnattribute angezeigt.
+Die Datei **postupgrade_ServerVersionNumber_TimeOfPostupgrade.log** enthält das Synchronisierungsergebnis. Sie ist standardmäßig im folgenden Verzeichnis verfügbar: **installationDirectory/var/`<instance-name>`/postupgrade**. Fehler und Warnungen werden durch die Attribute error und warning gekennzeichnet.
 
 ### Konflikte analysieren
 
-**Wie wird ein Konflikt gefunden?**
+**Wie kommt es zu einem Konflikt?**
 
-Konflikte finden Sie auf dem betreffenden Server im postupgrade.log oder in der Campaign-Client-Oberfläche (Administration > Konfiguration > Package-Management > Konflikte bearbeiten).
+Konflikte finden sich im Protokoll „postupgrade.log“ auf dem betreffenden Server oder in der Client-Benutzeroberfläche von Campaign (Administration > Konfiguration > Paketverwaltung > Konflikte bearbeiten).
 
 Das Dokument mit der Kennung ‘stockOverview’ vom Typ ‘nms:webApp’ steht im Konflikt mit der neuen Version.
 
@@ -304,23 +304,23 @@ Wenn keine dieser Fragen bejaht wird, ist dies eine Falschmeldung und es besteht
 1. Fragen Sie den Kunden, ob er das Objekt verändert hat.
 1. Ist an dem Objekt etwas ungewöhnlich?
 1. Ist das letzte Änderungsdatum im Code des Objekts angegeben?
-1. Prüfen Sie den XML-Code des Konflikts auf &quot;_conflict&quot;-Attribute. Sieht es wie eine Anpassung aus?
+1. Untersuchen Sie den XML-Code aus dem Konflikt auf „_konflikt“-Attribute. Sieht es wie eine Anpassung aus?
 
 **Wurde das Objekt im neuen Build geändert?**
 
 1. Prüfen Sie die üblichen Verursacher: integrierte Web-Anwendungen oder Berichte (z. B.: &#39;deliveryValidation&#39;, &#39;deliveryOverview&#39;, &#39;budget&#39;).
 1. Prüfen Sie die Änderungsprotokolle auf Updates.
-1. Fragen Sie Adobe Campaign-Experten.
+1. Fragen Sie Adobe Campaign-Fachleute.
 1. Führen Sie einen &quot;Diff&quot;-Befehl für den Code aus.
 
-### Beheben eines Konflikts
+### Konflikt lösen
 
 Gehen Sie wie folgt vor, um einen Konflikt zu lösen:
 
 1. Gehen Sie im Adobe-Campaign-Explorer zu **Administration > Konfiguration > Packageverwaltung > Konflikte bearbeiten**.
 
-1. Wählen Sie in der Liste den Konflikt aus, den Sie lösen möchten.
-Es gibt drei Optionen zum Auflösen von Konflikten: **Akzeptieren der neuen Version**, **Behalten Sie die aktuelle Version**, **Zusammenführen des Codes (und deklarieren Sie ihn als aufgelöst)**, **Ignorieren Sie den Konflikt (nicht empfohlen)**.
+1. Wählen Sie in der Liste den Konflikt aus, den Sie auflösen möchten.
+Es gibt drei Optionen zum Beheben von Konflikten: **Neue Version akzeptieren**, **Aktuelle Version beibehalten**, **Code zusammenführen (und als aufgelöst deklarieren)** **Konflikt ignorieren (nicht empfohlen)**.
 
 **Wann kann ich die neue Version akzeptieren?**
 
@@ -338,9 +338,9 @@ Es gibt drei Optionen zum Auflösen von Konflikten: **Akzeptieren der neuen Vers
 * Nur Formulare, Berichte und Webanwendungen können zusammengeführt werden.
 * Einige geringfügige Zusammenführungen können durchgeführt werden, ohne den Code zu verstehen.
 * Kompliziertere Zusammenführungen sollten jedoch von einer Fachkraft durchgeführt werden.
-* Siehe [Führen Sie eine Zusammenführung durch](#perform-a-merge).
+* Siehe [Durchführen einer Zusammenführung](#perform-a-merge).
 
-**Was passiert, wenn ich die Konflikte ignoriere?**
+**Was ist, wenn ich die Konflikte ignoriere?**
 
 * Der Konflikt bleibt bestehen.
 * Das Objekt wird nicht aktualisiert.
@@ -350,27 +350,27 @@ Es gibt drei Optionen zum Auflösen von Konflikten: **Akzeptieren der neuen Vers
 >Es wird dringend empfohlen, Konflikte zu lösen.
 >
 
-### Zusammenführen{#perform-a-merge}
+### Zusammenführung durchführen{#perform-a-merge}
 
 Es gibt verschiedene Arten von Zusammenführungen:
 
-1. Einfache Zusammenführung: Benutzerdefinierte und neue Elemente sind klein und nicht miteinander verbunden und es ist keine Kodierung erforderlich.
+1. Einfaches Zusammenführen: Benutzerdefinierte und neue Elemente sind klein und nicht verwandt, und es ist keine Codierung erforderlich.
 1. Keine Änderungen: die neue Version wird akzeptiert, nur letztes Aktualisierungsdatum wurde geändert, nur Kommentare, Tabs, Leerzeichen oder neue Zeilen. Beispiel: irrtümliches Speichern.
 1. Triviale Änderungen: nur eine einzige Zeile wurde geändert. Beispiel: xpathToLoad
-1. Komplexe Zusammenführung: wenn eine Kodierung erforderlich ist. Entwicklungsfähigkeiten sind erforderlich. Siehe [Komplexe Zusammenführungen](#complex-merges).
+1. Komplexe Zusammenführung: wenn Kodierung erforderlich ist. Entwicklungsfähigkeiten sind erforderlich. Siehe [Komplexe Zusammenführungen](#complex-merges).
 
 #### Wie erfolgt die Zusammenführung?
 
 1. Rufen Sie alle drei Versionen ab: die Originalversion, die neue Version und die benutzerdefinierte Version.
-1. Führen Sie einen &quot;Vergleich&quot;zwischen der ursprünglichen und der neuen Version aus.
+1. Führen Sie einen „Unterschied“ zwischen der ursprünglichen und der neuen Version aus.
 1. Isolieren Sie die Änderungen.
 1. Wenn keine Änderungen vorhanden sind, lösen Sie den Konflikt, indem Sie die aktuelle Version beibehalten.
 
 #### Wo finden Sie den Code?
 
-1. Integrierter Code wird in XML-Dateien im Ordner datakit gespeichert. Suchen Sie die XML-Datei, die dem widersprüchlichen Objekt entspricht. Beispiel: installationDirectory\datakit\nms\fra\form\recipient.xml
-1. Rufen Sie die Originalversion ab: über das [Download-Center](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) oder eine andere nicht aktualisierte Installation des Produkts.
-1. Rufen Sie die neue Version ab: über das [Download-Center](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) oder die vom Kunden installierten Dateien.
+1. Der integrierte Code wird in XML-Dateien im Datakit-Ordner gespeichert. Suchen Sie die XML-Datei, die dem widersprüchlichen Objekt entspricht. Beispiel: installationDirectory\datakit\nms\fra\form\recipient.xml
+1. Rufen Sie die Originalversion ab: über [Download-Center](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) oder eine andere nicht aktualisierte Installation des Produkts.
+1. Rufen Sie die neue Version ab: über [Download-Center](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) oder die installierten Dateien des Kunden.
 1. Rufen Sie die benutzerdefinierte Version ab: Rufen Sie den Quellcode des Objekts vom Campaign-Client ab.
 
 ### Wie erstelle ich eine Diff-Datei?
@@ -384,28 +384,28 @@ Es gibt verschiedene Arten von Zusammenführungen:
 
 1. Beginnen Sie mit der benutzerdefinierten Version.
 1. Wenden Sie die Änderungen an.
-1. Lösen Sie den Konflikt, indem Sie ihn als gelöst erklären.
+1. Lösen Sie den Konflikt, indem Sie ihn für gelöst erklären.
 1. Auf Nicht-Regressionen prüfen.
 
 Wenn Sie den Konflikt manuell lösen möchten, gehen Sie folgendermaßen vor:
 
-1. Suchen Sie im unteren Abschnitt des Fensters nach **_conflict_string_** , um die Entitäten mit Konflikten zu finden. Die mit der neuen Version installierte Entität enthält das neue Argument. Die Entität, die mit der vorherigen Version übereinstimmt, enthält das benutzerdefinierte Argument.
-1. Löschen Sie die Version, die Sie nicht beibehalten möchten. Löschen Sie die Zeichenfolge **_conflict_argument_** der Entität, die Sie beibehalten.
-1. Gehen Sie zu dem Konflikt, den Sie gelöst haben. Klicken Sie auf das Symbol **Aktionen** und wählen Sie **Als aufgelöst erklären** aus.
+1. Suchen Sie im unteren Abschnitt des Fensters nach der **_CONFLICT_STRING_**, um die Entitäten mit Konflikten zu finden. Die mit der neuen Version installierte Entität enthält das neue Argument, die mit der vorherigen Version übereinstimmende Entität enthält das benutzerdefinierte Argument.
+1. Löschen Sie die Version, die Sie nicht behalten möchten. Löschen Sie die **_CONFLICT_ARGUMENT_**-Zeichenfolge der Entität, die Sie beibehalten.
+1. Navigieren Sie zu dem Konflikt, den Sie gelöst haben. Klicken Sie auf **Aktionen** und wählen Sie **Als aufgelöst deklarieren** aus.
 1. Speichern Sie Ihre Änderungen: Der Konflikt ist jetzt gelöst.
 
 #### Komplexe Zusammenführungen{#complex-merges}
 
-1. Erfahren Sie, was die Änderung bewirkt: Sie können die Änderungen rückgängig machen, die Änderungsprotokolle untersuchen und mit Adobe Campaign-Experten zusammenarbeiten.
-1. Entscheiden Sie, was mit der Änderung zu tun ist.
-1. Machen Sie sich mit den Anpassungen vertraut: Reverse Engineering der Änderungen
+1. Machen Sie sich mit den Auswirkungen der Änderung vertraut: Reverse Engineering der Änderungen, Prüfung der Änderungsprotokolle, Follow-up mit Adobe Campaign-Experten.
+1. Entscheide, was mit der Änderung geschehen soll.
+1. Verstehen, was die Anpassungen bewirken: Änderungen zurückentwickeln
 
 So nehmen Sie eine komplexe Zusammenführung vor:
 
-1. Codebits aus dem Änderungssatz kopieren
+1. Kopieren Sie Code-Bits aus dem Änderungssatz
 1. In die angepasste Version einfügen
-1. Prüfung auf Nichtregressionen der Anpassung
-1. Prüfung auf Funktionsfähigkeit von Änderungen
+1. Testen auf Nicht-Regressionen der Anpassung
+1. Testen der Funktion von Änderungen
 1. Durchführen von Benutzerakzeptanztests
 1. Führen Sie die Zusammenführung in einer Testumgebung durch.
 
@@ -419,4 +419,4 @@ So nehmen Sie eine komplexe Zusammenführung vor:
 * [Häufig gestellte Fragen zur Build-Aktualisierung](../../platform/using/faq-build-upgrade.md)
 * [Versionshinweise zu Campaign Classic](../../rn/using/rn-overview.md)
 * [Hilfe- und Support-Optionen für Campaign Classic](../../support.md)
-* [Jährliches Upgrade-Programm für Campaign](../../rn/using/rn-overview.md)
+* [Campaign-Programm mit jährlichen Aktualisierungen](../../rn/using/rn-overview.md)

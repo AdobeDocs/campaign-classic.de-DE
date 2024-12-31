@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: "Anwendungsbeispiel: Anzeigen eines Berichts über Antworten auf eine Online-Umfrage"
-description: "Anwendungsbeispiel: Anzeigen eines Berichts über Antworten auf eine Online-Umfrage"
+title: 'Anwendungsbeispiel: Anzeigen eines Berichts zu Antworten auf eine Online-Umfrage'
+description: 'Anwendungsbeispiel: Anzeigen eines Berichts zu Antworten auf eine Online-Umfrage'
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Reporting, Monitoring, Surveys
 exl-id: 6be12518-86d1-4a13-bbc2-b2ec5141b505

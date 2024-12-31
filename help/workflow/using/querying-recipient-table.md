@@ -5,7 +5,7 @@ description: Erfahren Sie, wie Sie die Empfängertabelle abfragen
 feature: Query Editor, Workflows
 exl-id: 5b037798-b092-4c98-9f6a-4af7fc7941c6
 source-git-commit: d6bed05e083b2e349db331e6016cbb8f91f00eaf
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 100%
 

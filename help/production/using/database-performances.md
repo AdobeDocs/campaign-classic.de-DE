@@ -19,7 +19,7 @@ ht-degree: 8%
 
 
 
-Die meisten Leistungsprobleme hängen mit der Datenbankwartung zusammen. Im Folgenden finden Sie vier wichtige Hinweise, die Ihnen bei der Suche nach der Ursache für eine langsame Leistung helfen:
+Die meisten Leistungsprobleme hängen mit der Datenbankwartung zusammen. Im Folgenden finden Sie vier wichtige Hinweise, die Ihnen dabei helfen, die Ursache für die langsame Leistung zu finden:
 
 * Konfiguration
 * Installation und Konfiguration der Adobe Campaign-Plattform
@@ -28,59 +28,59 @@ Die meisten Leistungsprobleme hängen mit der Datenbankwartung zusammen. Im Folg
 
 ## Konfiguration {#configuration}
 
-Überprüfen Sie, ob die ursprüngliche Adobe Campaign-Plattformkonfiguration weiterhin gültig ist, und überprüfen Sie bei Bedarf die Anforderungen Ihres Kunden hinsichtlich Zustellbarkeit oder Datenbankgröße neu. Es wird auch empfohlen, eine vollständige Hardware-Prüfung durchzuführen (CPU, RAM, IO-System).
+Vergewissern Sie sich, dass die anfängliche Adobe Campaign-Plattformkonfiguration weiterhin gültig ist, und bewerten Sie bei Bedarf die Anforderungen Ihres Kunden in Bezug auf Zustellbarkeit oder Datenbankgröße neu. Es wird außerdem empfohlen, eine vollständige Hardwareprüfung durchzuführen (CPU, RAM, IO-System).
 
 >[!NOTE]
 >
->Einblicke finden Sie im Leitfaden zur Hardwaredimensionierung von Adobe Campaign ](https://helpx.adobe.com/de/campaign/kb/hardware-sizing-guide.html).[
+>Weitere Informationen finden Sie in der Anleitung zur Hardware-Dimensionierung ](https://helpx.adobe.com/de/campaign/kb/hardware-sizing-guide.html) [Adobe Campaign.
 
-## Plattformkonfiguration {#platform-configuration}
+## Platform-Konfiguration {#platform-configuration}
 
-Eine unangemessene Konfiguration kann sich auf die Leistung der Plattform auswirken. Es wird empfohlen, die Netzwerkkonfiguration, die Bereitstellungsoptionen der Plattform sowie die MTA-Konfiguration in der Datei **serverConf.xml** zu überprüfen.
+Unsachgemäße Konfigurationen können die Plattformleistung beeinträchtigen. Es wird empfohlen, die Netzwerkkonfiguration, Plattformzustellbarkeitsoptionen sowie die MTA-Konfiguration in der Datei **serverConf.xml** zu überprüfen.
 
 ## Wartung der Datenbank {#database-maintenance}
 
-**Aufgabe zur Datenbankbereinigung**
+**Datenbankbereinigungsaufgabe**
 
-Stellen Sie sicher, dass die Datenbankbereinigung funktioniert. Zeigen Sie dazu die Protokolldateien an, um zu sehen, ob sie Fehler enthalten. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../production/using/database-cleanup-workflow.md).
+Stellen Sie sicher, dass die Datenbankbereinigung betriebsbereit ist. Sehen Sie sich dazu die Protokolldateien an, um festzustellen, ob sie Fehler enthalten. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../production/using/database-cleanup-workflow.md).
 
 **Wartungspläne**
 
-Stellen Sie sicher, dass die Datenbankwartung korrekt geplant und ausgeführt wurde. Wenden Sie sich diesbezüglich an Ihren Datenbankadministrator, um mehr über folgende Themen zu erfahren:
+Stellen Sie sicher, dass die Datenbankwartung korrekt geplant und ausgeführt wird. Wenden Sie sich dazu an Ihren Datenbankadministrator, um mehr über Folgendes zu erfahren:
 
-* Instandhaltungsplan
+* Ihr Wartungsplan
 * Zuvor ausgeführte Wartungspläne
-* Skriptprotokolle anzeigen
+* Anzeigen der Skriptprotokolle
 
 Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../production/using/recommendations.md).
 
 >[!IMPORTANT]
 >
->Wenn Sie eine Mid-Sourcing-Konfiguration verwenden, ist es wichtig, dass Datenbanken regelmäßig gepflegt werden. Bei der Analyse eines Versands auf der Marketing-Plattform sendet die Marketing-Instanz Informationen an die Mid-Sourcing-Instanz. Wenn der Prozess verlangsamt wird, wirkt sich dies auf die Marketing-Instanz aus.
+>Wenn Sie eine Mid-Sourcing-Konfiguration verwenden, ist es wichtig, dass Datenbanken regelmäßig gepflegt werden. Bei der Analyse eines Versands auf der Marketing-Plattform sendet die Marketing-Instanz Informationen an die Mid-Sourcing-Instanz. Wenn der Prozess verlangsamt wird, ist die Marketing-Instanz betroffen.
 
-**Verwalten von Arbeitstabellen**
+**Arbeitstabellen verwalten**
 
-Bitte überprüfen Sie Anzahl und Größe der Arbeitstabellen. Wenn sie eine bestimmte Größe überschreiten, wirkt sich dies auf die Datenbankleistung aus. Diese Tabellen werden durch Workflows und Sendungen erstellt. Sie bleiben in der Datenbank, während Workflows und Sendungen aktiv sind. Um die Größe von Arbeitstabellen zu begrenzen, können Sie die folgenden Aktionen durchführen:
+Bitte Anzahl und Größe der Arbeitstabellen überprüfen. Wenn sie eine bestimmte Größe überschreiten, wird die Datenbankleistung beeinträchtigt. Diese Tabellen werden von Workflows und Sendungen erstellt. Sie verbleiben in der Datenbank, während Workflows und Sendungen aktiv sind. Um die Größe von Arbeitstabellen zu begrenzen, können Sie die folgenden Vorgänge ausführen:
 
-* Sendungen mit den folgenden Status anhalten oder löschen: **[!UICONTROL Fehlgeschlagen]**, **[!UICONTROL Gestartet]**, **[!UICONTROL Versandbereit]** oder **[!UICONTROL Ausgesetzt]**.
-* Workflows, die aufgrund eines Fehlers ausgesetzt wurden, beenden oder löschen.
-* Beenden Sie alle Workflows, die für Tests verwendet werden, die keine **[!UICONTROL Ende]** -Aktivität enthalten und deren Status daher weiterhin **[!UICONTROL Ausgesetzt]** lautet.
+* Beenden oder löschen Sie Sendungen mit den Status **[!UICONTROL Fehlgeschlagen]**, **[!UICONTROL In]**, **[!UICONTROL Bereit für Versand]** oder **[!UICONTROL Paused]**.
+* Beenden oder Löschen von Workflows, die aufgrund eines Fehlers angehalten wurden.
+* Beenden Sie alle Workflows, die für Tests verwendet werden, die keine **[!UICONTROL Ende]**-Aktivität enthalten und deren Status daher &quot;**[!UICONTROL &quot;]**.
 
 >[!IMPORTANT]
 >
->Wenn der Vorgang lange dauert und viel Speicherplatz freisetzt, bedeutet dies, dass eine gründliche Wartung erforderlich ist (Neuerstellung von Indizes usw.). Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../production/using/recommendations.md).
+>Wenn der Vorgang lange dauert und viel Platz freisetzt, bedeutet dies, dass eine gründliche Wartung erforderlich ist (Neuerstellung des Index usw.). Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../production/using/recommendations.md).
 
 **Adobe Campaign-Prozessüberwachung**
 
-Abhängig von den Adobe Campaign-Installationseinstellungen können für die Plattformüberwachung zwei Tools verwendet werden:
+Abhängig von den Adobe Campaign-Installationseinstellungen können zwei Tools zur Plattformüberwachung verwendet werden:
 
 * Die Produktionsseite der Instanz. Weitere Informationen hierzu finden Sie unter [Manuelle Überwachung](../../production/using/monitoring-processes.md#manual-monitoring).
-* Das Skript *netreport* . Weitere Informationen hierzu finden Sie unter [Automatische Überwachung über Adobe Campaign-Skripte](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts).
+* Das *netreport*-Skript. Weitere Informationen hierzu finden Sie unter [Automatische Überwachung über Adobe Campaign-Skripte](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts).
 
-## Spezifikationen {#specifics}
+## Besonderheiten {#specifics}
 
-Es kann erforderlich werden, eine Echtzeitdiagnose durchzuführen, um die Ursache des Problems zu ermitteln. Überprüfen Sie zunächst die Prozess- und Plattformprotokolldateien und überwachen Sie dann die Datenbankaktivität, während Sie das Problem neu erstellen. Beachten Sie insbesondere Folgendes:
+Es kann erforderlich werden, eine Echtzeitdiagnose durchzuführen, um die Ursache des Problems zu identifizieren. Überprüfen Sie zunächst die Prozess- und Platform-Protokolldateien und überwachen Sie dann die Datenbankaktivität, während Sie das Problem neu erstellen. Achten Sie insbesondere auf Folgendes:
 
-* Instandhaltungsplan
-* SQL-Abfragen werden ausgeführt
-* Gibt an, ob externe Prozesse gleichzeitig ausgeführt werden (Bereinigung, Importe, Aggregatberechnung usw.).
+* Der Plan zur Wartungsausführung
+* Ausgeführte SQL-Abfragen
+* Ob gleichzeitig externe Prozesse ausgeführt werden (Bereinigung, Importe, Aggregatberechnung usw.).

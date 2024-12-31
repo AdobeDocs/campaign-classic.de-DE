@@ -19,7 +19,7 @@ ht-degree: 36%
 
 
 
-Wenn bestimmte **jsp**-Aufträge nicht erfolgreich ausgeführt werden, müssen Sie sie zur Neukompilierung zwingen.
+Wenn bestimmte **jsp**-Aufträge nicht erfolgreich ausgeführt werden, müssen Sie die Neukompilierung erzwingen.
 
 Geben Sie dazu die folgenden Befehle ein:
 
@@ -30,4 +30,4 @@ rm -r work/
 nlserver start web
 ```
 
-Die **jsp**-Aufträge werden beim nächsten Verbinden neu generiert.
+Die **jsp**-Aufträge werden bei der nächsten Verbindung neu generiert.
