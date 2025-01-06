@@ -4,10 +4,10 @@ title: Technote – Aktualisierung des Server-Zertifikats des Push-Benachrichtig
 description: Aktualisierung des Server-Zertifikats des Push-Benachrichtigungs-Service von Apple
 feature: Technote, Push
 exl-id: 263fb4b5-ca62-4b92-a82d-8820ee998296
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 0143e0d6ebcdbd96d183ddd0c7f07beb149a9670
 workflow-type: tm+mt
-source-wordcount: '141'
-ht-degree: 100%
+source-wordcount: '143'
+ht-degree: 64%
 
 ---
 
@@ -15,17 +15,17 @@ ht-degree: 100%
 
 
 
-Am 29. März 2021 wirkte sich eine Infrastrukturaktualisierung des Push-Benachrichtigungsdienstes von Apple (Apple Push Notification service, APNs) auf den iOS-Kanal von Adobe Campaign Classic aus. Eine Anpassung der Konfiguration des Betriebssystems ist **obligatorisch**, um einen Ausfall des iOS-Push-Kanals zu vermeiden.
+Am 17. Oktober 2024 hatte ein Infrastrukturupdate des Apple Push Notification Service (APNs) Auswirkungen auf den Adobe Campaign Classic iOS-Kanal. Eine Anpassung der Konfiguration des Betriebssystems ist **obligatorisch**, um einen Ausfall des iOS-Push-Kanals zu vermeiden.
 
-Weitere Informationen zu APNs-Änderungen finden Sie [auf dieser Seite](https://developer.apple.com/news/?id=7gx0a2lp).
+Weitere Informationen zu APNs-Änderungen finden Sie [auf dieser Seite](https://developer.apple.com/news/?id=09za8wzy).
 
 Als gehosteter Kunde besteht kein Handlungsbedarf: Adobe hat das neue Stammzertifikat bereits in Ihre Umgebung integriert.
 
-Als On-Premise-/Hybrid-Kunde müssen Sie Ihre Konfiguration aktualisieren, um einen nahtlosen Übergang **vor dem 29. März 2021** zu gewährleisten.
+Als On-Premise-/Hybrid-Kunde müssen Sie Ihre Konfiguration aktualisieren, um einen nahtlosen Übergang sicherzustellen (**24. Februar 2025**.
 
 Gehen Sie wie folgt vor, um das neue Zertifikat zu integrieren:
 
-1. Laden Sie das Stammzertifikat **AAACertificateServices 5/12/2020** [von dieser Seite](https://support.sectigo.com/Com_KnowledgeDetailPage?Id=kA03l00000117cL) herunter.
+1. Laden Sie das **SHA-2-Stammzertifikat : USERTrust RSA Certification Authority Certificate**-Stammzertifikat [von dieser Seite](https://www.sectigo.com/knowledge-base/detail/Sectigo-Intermediate-Certificates/kA01N000000rfBO) herunter.
 
 1. Überprüfen Sie, ob das AAA-Zertifikat sowohl in Ihrem Betriebssystem als auch in den JAVA-TrustStores vorhanden ist. Ist dies nicht der Fall, fügen Sie es hinzu.
 
