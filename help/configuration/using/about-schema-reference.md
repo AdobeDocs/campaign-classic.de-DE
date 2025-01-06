@@ -5,7 +5,7 @@ description: Erfahren Sie, wie Sie mit Schemata arbeiten und das konzeptionelle 
 feature: Schema Extension
 role: Data Engineer, Developer
 exl-id: f36a1b01-a002-4a21-9255-ea78b5f173fe
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 44c40bbd8bff16cbe220d3af3a7bb2847762f58b
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 49%
@@ -77,9 +77,9 @@ Der Identifizierungsschlüssel eines Schemas ist eine Zeichenfolge, die den Name
 
 >[!IMPORTANT]
 >
->Der Name des Namespace muss kurz sein und darf nur autorisierte Zeichen gemäß den XML-Benennungsregeln enthalten.
+>* Der Name des Namespace muss kurz sein und darf nur autorisierte Zeichen gemäß den XML-Benennungsregeln enthalten.
 >
->Kennungen dürfen nicht mit numerischen Zeichen beginnen.
+>* Kennungen dürfen nicht mit numerischen Zeichen beginnen.
 >
->Die folgenden Namespaces sind für Beschreibungen der Systementitäten reserviert, die für den Betrieb der Adobe Campaign-Anwendung erforderlich sind, und dürfen nicht verwendet werden: **xtk**, **nl**, **nms**, **ncm**, **temp**, **ncl**, **crm**, **xxl**.
-
+>* Die folgenden Namespaces sind für Beschreibungen der Systementitäten reserviert, die für den Betrieb der Adobe Campaign-Anwendung erforderlich sind, und dürfen nicht verwendet werden: **xtk**, **nl**, **nms**, **ncm**, **temp**, **ncl**, **crm**, **xxl**.
+>
