@@ -4,7 +4,7 @@ title: Starten eines Workflows
 description: Erfahren Sie, wie Sie einen Workflow starten, und lernen Sie die Symbolleiste sowie das Kontextmenü für Workflow-Aktionen kennen
 feature: Workflows
 exl-id: d345ba62-c2fb-43df-a2a1-e9e4292d301a
-source-git-commit: 7453db63a0ed2c617e9f7e4cbfa3480b3ed5020d
+source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
 source-wordcount: '1272'
 ht-degree: 98%
