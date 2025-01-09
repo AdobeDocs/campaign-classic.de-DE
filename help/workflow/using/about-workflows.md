@@ -5,7 +5,7 @@ description: Automatisieren Sie Prozesse mit Workflows, verwalten Sie Daten und 
 feature: Workflows, Data Management
 exl-id: 51be6b90-2a7a-4757-9754-d16c540a87ff
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '655'
 ht-degree: 100%
 
