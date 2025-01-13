@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 3e55d7f5-2858-4390-bba9-8fb5be0c3d98
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: b500b2cbf68fd46bd84ddbfa71cf9431c6b60060
 workflow-type: tm+mt
-source-wordcount: '1063'
+source-wordcount: '1061'
 ht-degree: 3%
 
 ---
@@ -125,7 +125,7 @@ Es ist möglich, dass eine Mid-Sourcing-Instanz von mehreren sendenden Instanzen
 
    ![](assets/mid_recette_user_restrictions.png)
 
-1. Starten Sie das Web-Modul mit dem folgenden Befehl neu: **nlserver restart web**.
+1. Starten Sie das Web-Modul mit dem folgenden Befehl neu: ** web**.
 
 Sie müssen die Mid-Sourcing-Server-Einstellung in der Datei „serverConf.xml“ ändern. Die folgende Zeile muss zum Abschnitt „Verwalten der Affinitäten mit IP-Adressen“ unter der vorhandenen Zeile hinzugefügt werden:
 
