@@ -6,9 +6,9 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Surveys
 exl-id: 7061a4f1-006f-4f19-8761-918d8930d885
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '567'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ Verwenden Sie in Adobe Campaign [Web-Anwendungen](../../web/using/about-web-form
 * Personalisierung hinzuzufügen und die Feldposition zu definieren,
 * die Anzeige von Umfragefeldern von den Antworten abhängig zu machen,
 * die Anzeige von Seiten abhängig von einer Bedingung zu machen,
-* Informationen vor der Genehmigung zu prüfen, je nach Art der erwarteten Daten (Nummer, E-Mail-Adresse, Daten usw.) und Pflichtfeldern,
+* Informationen vor der Validierung zu überprüfen, abhängig vom erwarteten Datentyp (Zahl, E-Mail-Adresse, Datum usw.) und von den Pflichtfeldern,
 * E-Mail-Einladungen/Benachrichtigungen zu senden,
 * Fehler- und Endseiten zu personalisieren,
 * Bilder, Videos, Hypertext-Links, Captcha usw. in Formularen hinzuzufügen.

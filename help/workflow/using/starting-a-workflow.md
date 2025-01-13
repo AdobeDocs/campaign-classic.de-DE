@@ -5,9 +5,9 @@ description: Erfahren Sie, wie Sie einen Workflow starten, und lernen Sie die Sy
 feature: Workflows
 exl-id: d345ba62-c2fb-43df-a2a1-e9e4292d301a
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1272'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -81,7 +81,7 @@ Die Symbolleiste wird in diesem [Abschnitt](../../campaign/using/marketing-campa
 
 * **[!UICONTROL Im Simulationsmodus starten]**
 
-  Mithilfe dieses Befehls wird der Workflow im Simulationsmodus gestartet. Wenn Sie diesen Modus aktivieren, werden nur Aktivitäten ausgeführt, die keine Auswirkungen auf die Datenbank oder das Dateisystem haben (z. B. **[!UICONTROL Abfrage]**, **[!UICONTROL Vereinigung]**, **[!UICONTROL Schnittmenge]** usw.). Aktivitäten, die eine Auswirkung haben (z. B. **[!UICONTROL Export]**, **[!UICONTROL Import]** usw.), sowie die Aktivitäten danach (in derselben Verzweigung) werden nicht ausgeführt.
+  Mithilfe dieses Befehls wird der Workflow im Simulationsmodus gestartet. Wenn Sie diesen Modus aktivieren, werden nur Aktivitäten ausgeführt, die keine Auswirkungen auf die Datenbank oder das Dateisystem haben (z. B. **[!UICONTROL Abfrage]**, **[!UICONTROL Vereinigung]**, **[!UICONTROL Schnittmenge]** usw.). Aktivitäten, die eine Auswirkung haben (z. B. **[!UICONTROL Export]**, **[!UICONTROL Import]** usw.), sowie die Aktivitäten danach (in derselben Verzweigung) werden nicht ausgeführt.
 
 * **[!UICONTROL Vorgezogene Ausführung der ausstehenden Aufgaben]**
 
