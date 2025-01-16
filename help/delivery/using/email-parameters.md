@@ -6,10 +6,10 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Email
 role: User, Developer, Data Engineer
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: f7da066d32391341e449397d64853fcbae639a59
 workflow-type: tm+mt
 source-wordcount: '990'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -33,7 +33,7 @@ Beim Erstellen eines neuen Versands oder einer neuen Versandvorlage ist E-Mail-B
 
 >[!NOTE]
 >
->Wenn Sie E-Mail-BCC mit Enhanced MTA verwenden, ist diese Option automatisch für alle Sendungen aktiviert.
+>Wenn Sie E-Mail-BCC mit [Enhanced MTA](ending-with-enhanced-mta.md) verwenden, ist diese Option automatisch für alle Sendungen aktiviert.
 
 Gehen Sie wie folgt vor, um E-Mail-BCC für eine E-Mail-Versandvorlage zu aktivieren:
 
