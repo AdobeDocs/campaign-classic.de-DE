@@ -192,7 +192,7 @@ Auf der Registerkarte **[!UICONTROL Berechnungen]** können Sie Berichtsachsen b
 >[!NOTE]
 >
 >Es ist empfehlenswert, die Berichtsachsen in einer Simulationsvorlage zu bestimmen und nicht in jeder einzelnen Simulation.\
->Die Simulationsvorlagen werden im Knoten **[!UICONTROL Ressourcen > Vorlagen > Simulationsvorlagen]** des Adobe-Campaign-Navigationsbaums gespeichert.
+>Die Simulationsvorlagen werden im Knoten **[!UICONTROL Ressourcen > Vorlagen > Simulationsvorlagen]** des Adobe Campaign-Navigationsbaums gespeichert.
 
 **Beispiel:**
 

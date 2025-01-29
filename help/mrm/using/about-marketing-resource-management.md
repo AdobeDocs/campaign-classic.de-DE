@@ -20,7 +20,7 @@ ht-degree: 100%
 
 Das Modul **Marketing Resource Management (MRM)** ermöglicht die Steuerung kollaborativer Marketing-Aktionen durch eine vollständige Verwaltung und Echtzeit-Verfolgung von Aufgaben, Budgets und verwendeten Marketing-Ressourcen.
 
-Adobe-Campaign-Benutzer können so ihre Aktionen koordinieren und mithilfe von umfassenden Validierungsprozessen und benutzerfreundlichen Verfolgungswerkzeugen den reibunglosen Ablauf aller Etappen sicherstellen: Berichte, Validierungsverfolgung, Benachrichtigungen, Forumsdiskussionen etc. Die Benutzer werden im Falle von Fehlern oder Verspätungen und bei jeder neuen Validierungsetappe benachrichtigt.
+Adobe Campaign-Benutzer können so ihre Aktionen koordinieren und mithilfe von umfassenden Validierungsprozessen und benutzerfreundlichen Verfolgungswerkzeugen den reibunglosen Ablauf aller Etappen sicherstellen: Berichte, Validierungsverfolgung, Benachrichtigungen, Forumsdiskussionen etc. Die Benutzer werden im Falle von Fehlern oder Verspätungen und bei jeder neuen Validierungsetappe benachrichtigt.
 
 So können im Rahmen von Programmen und Unterprogrammen der Marketing-Pläne Aufgaben erstellt, den beteiligten Benutzern zugewiesen und über ihre gesamte Ausführung hinweg verwaltet werden.
 

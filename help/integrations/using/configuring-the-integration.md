@@ -34,7 +34,7 @@ Erweiterte Konfigurationen wie die Verwaltung von Personalisierungsfeldern und -
 
 Installieren Sie zunächst das **[!UICONTROL AEM-Integrations]**-Package.
 
-1. Wählen Sie in Ihrer Adobe-Campaign-Instanz aus der oberen Symbolleiste die Option **[!UICONTROL Werkzeuge]** aus.
+1. Wählen Sie in Ihrer Adobe Campaign-Instanz aus der oberen Symbolleiste die Option **[!UICONTROL Werkzeuge]** aus.
 1. Wählen Sie **[!UICONTROL Tools > Erweitert > Package-Import...]** aus.
 
    ![](assets/aem_config_1.png)

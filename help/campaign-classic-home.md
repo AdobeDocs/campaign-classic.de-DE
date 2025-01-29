@@ -1,5 +1,5 @@
 ---
-keywords: Campaign Standard;Startseite;beliebte Themen
+keywords: Campaign Classic;Startseite;beliebte Themen
 product: campaign
 title: Produktdokumentation zu Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157

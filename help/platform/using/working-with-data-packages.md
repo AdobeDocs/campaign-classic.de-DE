@@ -23,9 +23,9 @@ ht-degree: 100%
 
 Adobe Campaign ermöglicht den Export oder Import von Plattformkonfigurationen und Daten mithilfe eines Package-Systems. Packages können unterschiedliche Konfigurationen und gefilterte oder ungefilterte Elemente enthalten.
 
-Datenpackages ermöglichen den Austausch von Entitäten innerhalb der Adobe-Campaign-Datenbank über XML-Dateien. Jede in einem Package enthaltene Entität wird mit der Gesamtheit ihrer Daten dargestellt.
+Datenpackages ermöglichen den Austausch von Entitäten innerhalb der Adobe Campaign-Datenbank über XML-Dateien. Jede in einem Package enthaltene Entität wird mit der Gesamtheit ihrer Daten dargestellt.
 
-Das Prinzip der **Daten-Packages** besteht darin, eine Datenkonfiguration zu exportieren und in ein anderes Adobe-Campaign-System zu integrieren. In diesem [Abschnitt](#data-package-best-practices) erfahren Sie, wie Sie einen konsistenten Satz von Daten-Packages aufrechterhalten.
+Das Prinzip der **Daten-Packages** besteht darin, eine Datenkonfiguration zu exportieren und in ein anderes Adobe Campaign-System zu integrieren. In diesem [Abschnitt](#data-package-best-practices) erfahren Sie, wie Sie einen konsistenten Satz von Daten-Packages aufrechterhalten.
 
 ### Typen von Packages {#types-of-packages}
 
@@ -83,7 +83,7 @@ In unserem Beispiel wurden die Joins der &quot;folder&quot;- und &quot;company&q
 
 Das Attribut **`operation`** mit dem Wert &quot;none&quot; definiert eine Abstimmrelation.
 
-Ein Datenpackage kann manuell über einen beliebigen Texteditor erstellt werden. Es muss nur sichergestellt werden, dass die Struktur des XML-Dokuments mit dem &quot;xtk:navtree&quot;-Datenschema übereinstimmt. Die Adobe-Campaign-Konsole ist mit einem Modul zum Import und Export von Datenpackages ausgestattet.
+Ein Datenpackage kann manuell über einen beliebigen Texteditor erstellt werden. Es muss nur sichergestellt werden, dass die Struktur des XML-Dokuments mit dem &quot;xtk:navtree&quot;-Datenschema übereinstimmt. Die Adobe Campaign-Konsole ist mit einem Modul zum Import und Export von Datenpackages ausgestattet.
 
 ## Packages exportieren {#exporting-packages}
 

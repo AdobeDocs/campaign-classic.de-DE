@@ -32,9 +32,9 @@ Damit ein Benutzer über FDA Aktionen in einer Datenbank ausführen kann, muss e
      >
      >Der Teil **:base** ist in Oracle optional.
 
-1. Speichern Sie die spezifische Berechtigung und verknüpfen Sie sie dann mit dem ausgewählten Benutzer über den Knoten **[!UICONTROL Administration > Zugriffe > Benutzer]** im Adobe-Campaign-Explorer.
+1. Speichern Sie die spezifische Berechtigung und verknüpfen Sie sie dann mit dem ausgewählten Benutzer über den Knoten **[!UICONTROL Administration > Zugriffe > Benutzer]** im Adobe Campaign-Explorer.
 
-Damit die in einer externen Datenbank enthaltenen Daten verarbeitet werden können, muss der Adobe-Campaign-Benutzer zumindest Schreibberechtigungen für die Datenbank besitzen, damit er Arbeitstabellen erstellen kann. Diese werden automatisch von Adobe Campaign gelöscht.
+Damit die in einer externen Datenbank enthaltenen Daten verarbeitet werden können, muss der Adobe Campaign-Benutzer zumindest Schreibberechtigungen für die Datenbank besitzen, damit er Arbeitstabellen erstellen kann. Diese werden automatisch von Adobe Campaign gelöscht.
 
 Generell sind die folgenden Berechtigungen erforderlich:
 

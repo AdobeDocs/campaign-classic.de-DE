@@ -33,7 +33,7 @@ Durch dieses Vorgehen erhält der Kunde mindestens einen Versionszyklus Zeit, um
 
 In diesem Abschnitt werden Funktionen aufgeführt, die bei den aktuellen Campaign Classic-Versionen als eingestellt gekennzeichnet wurden.
 
-Im Allgemeinen werden Funktionen, die in einer zukünftigen Version entfernt werden sollen, zuerst als eingestellt gekennzeichnet. Diese Funktionen sind für neue Campaign Standard-Kunden entweder nicht mehr verfügbar oder sollten für keine neue Implementierung mehr verwendet werden. Sie werden auch aus der Produktdokumentation entfernt.
+Im Allgemeinen werden Funktionen, die in einer zukünftigen Version entfernt werden sollen, zuerst als eingestellt gekennzeichnet. Diese Funktionen sind für neue Campaign Classic-Kunden entweder nicht mehr verfügbar oder sollten für keine neue Implementierung mehr verwendet werden. Sie werden auch aus der Produktdokumentation entfernt.
 
 Kunden wird empfohlen, die Nutzung der Funktionen in ihrer aktuellen Bereitstellung zu prüfen und Pläne zur Änderung ihrer Bereitstellung zu erstellen. Achten Sie auf das geplante Datum für die Entfernung, um Ihre Umgebungs- und Projektaktualisierungen zu planen.
 
@@ -66,7 +66,7 @@ Kunden wird empfohlen, die Nutzung der Funktionen in ihrer aktuellen Bereitstell
 
 ## Entfernte Funktionen {#removed-features}
 
-In diesem Abschnitt werden Funktionen und Leistungsmerkmale aufgelistet, die aus Campaign Standard entfernt wurden.
+In diesem Abschnitt werden Funktionen und Leistungsmerkmale aufgelistet, die aus Campaign Classic entfernt wurden.
 
 <table> 
  <tbody>

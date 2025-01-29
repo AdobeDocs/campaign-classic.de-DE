@@ -36,7 +36,7 @@ Mit dieser Integration kann beispielsweise ein Newsletter in Adobe Experience Ma
 
    ![](assets/aem_uc_3.png)
 
-1. Wählen Sie im Tab **[!UICONTROL Cloud-Services]** die Option **[!UICONTROL Adobe Campaign]** für **[!UICONTROL Cloud-Service-Konfigurationen]** und in der zweiten Dropdown-Liste Ihre Adobe-Campaign-Instanz.
+1. Wählen Sie im Tab **[!UICONTROL Cloud-Services]** die Option **[!UICONTROL Adobe Campaign]** für **[!UICONTROL Cloud-Service-Konfigurationen]** und in der zweiten Dropdown-Liste Ihre Adobe Campaign-Instanz.
 
    ![](assets/aem_uc_4.png)
 

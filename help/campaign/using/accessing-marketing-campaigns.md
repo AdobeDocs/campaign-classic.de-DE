@@ -37,7 +37,7 @@ Der **[!UICONTROL Navigationsblock]** im Tab **[!UICONTROL Kampagnen]** enthält
 
 >[!NOTE]
 >
->Der strukturelle Aufbau der Adobe-Campaign-Konsole, Berechtigungen sowie die Profilverwaltung werden in [diesem Abschnitt](../../platform/using/adobe-campaign-workspace.md) beschrieben.
+>Der strukturelle Aufbau der Adobe Campaign-Konsole, Berechtigungen sowie die Profilverwaltung werden in [diesem Abschnitt](../../platform/using/adobe-campaign-workspace.md) beschrieben.
 >
 >Im Zusammenhang mit Kanälen und Sendungen stehende Funktionalitäten werden in [diesem Abschnitt](../../delivery/using/steps-about-delivery-creation-steps.md) erläutert.
 
@@ -152,7 +152,7 @@ Kampagnen werden basierend auf Kampagnenvorlagen erstellt. Diese wiederverwendba
 
 ## Web-Zugriff {#using-the-web-interface-}
 
-Sie haben die Möglichkeit, über einen Webbrowser auf die Adobe-Campaign-Konsole zuzugreifen, um alle Kampagnen und ihre Sendungen sowie Berichte und Informationen bezüglich der Profile Ihrer Datenbank einzusehen. Über den Webzugriff können keine Datensätze erstellt werden. Sie können jedoch eingesehen und entsprechend der jeweiligen Benutzerberechtigungen weiterverarbeitet werden. So können beispielsweise Inhalte und Zielgruppen der Kampagnen validiert oder Sendungen unterbrochen werden.
+Sie haben die Möglichkeit, über einen Webbrowser auf die Adobe Campaign-Konsole zuzugreifen, um alle Kampagnen und ihre Sendungen sowie Berichte und Informationen bezüglich der Profile Ihrer Datenbank einzusehen. Über den Webzugriff können keine Datensätze erstellt werden. Sie können jedoch eingesehen und entsprechend der jeweiligen Benutzerberechtigungen weiterverarbeitet werden. So können beispielsweise Inhalte und Zielgruppen der Kampagnen validiert oder Sendungen unterbrochen werden.
 
 1. Melden Sie sich wie gewohnt über https://`<your instance>:<port>/view/home` an.
 1. Über die unterschiedlichen Rubriken besteht Zugriff auf Listen und weitere Navigationselemente.

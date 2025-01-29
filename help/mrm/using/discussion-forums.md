@@ -18,7 +18,7 @@ ht-degree: 100%
 
 
 
-Adobe-Campaign-Benutzer haben die Möglichkeit, über Diskussionsforen Informationen auszutauschen. Die folgenden Elemente bieten ihr eigenes Forum: Pläne, Programme, Kampagnen, Ressourcen, Simulationen und Lager. Jeder Benutzer verfügt zudem über ein persönliches Forum. Alle Diskussionen sind öffentlich, auch die der Benutzer-Foren.
+Adobe Campaign-Benutzer haben die Möglichkeit, über Diskussionsforen Informationen auszutauschen. Die folgenden Elemente bieten ihr eigenes Forum: Pläne, Programme, Kampagnen, Ressourcen, Simulationen und Lager. Jeder Benutzer verfügt zudem über ein persönliches Forum. Alle Diskussionen sind öffentlich, auch die der Benutzer-Foren.
 
 Benutzer können Foren abonnieren, um per E-Mail über jede gepostete Nachricht informiert zu werden.
 
@@ -80,7 +80,7 @@ Es gibt folgende Möglichkeiten, auf ein Benutzerforum zuzugreifen:
 
 ## Forum abonnieren {#subscribing-to-a-forum}
 
-Sie können ein Forum abonnieren, um den enthaltenen Diskussionen zu folgen und über jede im Forum gepostete Nachricht per E-Mail informiert zu werden. Die E-Mail enthält sowohl die Nachricht als auch mögliche Anhänge. Sie können direkt auf die Nachricht antworten, indem Sie in den E-Mail-Body klicken und sich anschließend über den Adobe-Campaign-Webzugriff anmelden. Wenn Sie ein Forum abonnieren, ist dies für alle Benutzer sichtbar.
+Sie können ein Forum abonnieren, um den enthaltenen Diskussionen zu folgen und über jede im Forum gepostete Nachricht per E-Mail informiert zu werden. Die E-Mail enthält sowohl die Nachricht als auch mögliche Anhänge. Sie können direkt auf die Nachricht antworten, indem Sie in den E-Mail-Body klicken und sich anschließend über den Adobe Campaign-Webzugriff anmelden. Wenn Sie ein Forum abonnieren, ist dies für alle Benutzer sichtbar.
 
 * Um ein Forum zu abonnieren, klicken Sie auf die Schaltfläche **[!UICONTROL Forum abonnieren]** rechts oberhalb der Diskussionsliste.
 
@@ -110,7 +110,7 @@ Falls Abonnenten eines Forums nicht die erwarteten Benachrichtigungen erhalten, 
 * Gehen Sie zum Knoten **[!UICONTROL Administration > Betreibung > Technische Workflows > Kampagnenprozesse]** und stellen Sie sicher, dass der Workflow **[!UICONTROL Vorgänge in Diskussionsforen]** gestartet und nicht fehlgeschlagen ist.
 * Überprüfen Sie die Versandlogs, die wie folgt zugänglich sind:
 
-   * Gehen Sie von der Adobe-Campaign-Startseite aus zu **[!UICONTROL Kampagnen > Navigation > Sendungen]** und öffnen Sie den Versand **[!UICONTROL Benachrichtigungen bezüglich Diskussionforen]**.
+   * Gehen Sie von der Adobe Campaign-Startseite aus zu **[!UICONTROL Kampagnen > Navigation > Sendungen]** und öffnen Sie den Versand **[!UICONTROL Benachrichtigungen bezüglich Diskussionforen]**.
    * Gehen Sie im Explorer zum Knoten **[!UICONTROL Administration > Automatisch erstellte Objekte > Technische Sendungen > Workflow-Benachrichtigungen]** und klicken Sie auf **[!UICONTROL Benachrichtigungen bezüglich Diskussionsforen]**.
 
   Im Fenster **[!UICONTROL Benachrichtigungen bezüglich Diskussionsforen]** befinden sich die Versandlogs auf der Registerkarte **[!UICONTROL Bearbeiten > Versand]**. Überprüfen Sie ebenfalls die Tabs **[!UICONTROL Verfolgung > Protokoll]** und **[!UICONTROL Ausschlussgründe]**.

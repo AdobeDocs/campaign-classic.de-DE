@@ -327,7 +327,7 @@ Bei On-Premise-Installationen und gehosteten/hybriden Installationen, die den be
 
 * MX-Verwaltungsregeln ermöglichen die Regulierung des Volumens der ausgehenden E-Mails nach Domains. Sie analysieren die Bounce Messages und blockieren falls nötig den Versand.
 
-* Der Adobe-Campaign-E-Mail-Server wendet zunächst die spezifischen Domain-Regeln an und anschließend die Regeln für den allgemeinen Fall, der in der Liste der Regeln mit einem Sternchen (*) gekennzeichnet ist.
+* Der Adobe Campaign-E-Mail-Server wendet zunächst die spezifischen Domain-Regeln an und anschließend die Regeln für den allgemeinen Fall, der in der Liste der Regeln mit einem Sternchen (*) gekennzeichnet ist.
 
 * Um eigene MX-Verwaltungsregeln zu erstellen, sind die Angabe einer Schwelle und die Auswahl gewisser SMTP-Parameter erforderlich. Die **Schwelle** entspricht einem Prozentsatz an Fehlern, der bei Überschreiten den Versand an die betroffene Domain unterbricht. So wird beispielsweise der Versand drei Stunden lang unterbrochen, wenn bei einem Volumen von mindestens 300 Nachrichten die Fehlerquote 90 % erreicht.
 

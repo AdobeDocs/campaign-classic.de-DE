@@ -18,7 +18,7 @@ ht-degree: 100%
 
 
 
-Adobe Campaign ermöglicht die Erstellung von Aufgaben sowie die Verwaltung ihres gesamten Lebenszyklus innerhalb der Anwendung selbst. Die Ausführung von Programmen und Kampagnen kann in Aufgaben unterteilt werden, die Adobe-Campaign-Benutzern oder externen Dienstleistern zugeordnet werden. Dank dieser Funktionsweise ist eine reibungslose Zusammenarbeit aller internen und externen Projektbeteiligten möglich.
+Adobe Campaign ermöglicht die Erstellung von Aufgaben sowie die Verwaltung ihres gesamten Lebenszyklus innerhalb der Anwendung selbst. Die Ausführung von Programmen und Kampagnen kann in Aufgaben unterteilt werden, die Adobe Campaign-Benutzern oder externen Dienstleistern zugeordnet werden. Dank dieser Funktionsweise ist eine reibungslose Zusammenarbeit aller internen und externen Projektbeteiligten möglich.
 
 Die Aufgaben können in der Aufgabenliste und über das Dashboard einer Kampagne erstellt, angesehen und verfolgt werden. Ansicht und Verfolgung sind darüber hinaus auch in den Marketing-Plan-, Programm- und Kampagnenkalendern möglich.
 
@@ -110,7 +110,7 @@ Zudem ist es möglich, für jeden Benutzer einen geplanten sowie einen realisier
 
 Sie können eine Erinnerung festlegen, die den an der Erfüllung der Aufgabe beteiligten Benutzern vor dem Enddatum der Aufgabe automatisch zugeschickt wird.
 
-Das Profil des zugeordneten Adobe-Campaign-Benutzers kann über das Symbol **[!UICONTROL Verknüpftes Element öffnen]** angesehen werden.
+Das Profil des zugeordneten Adobe Campaign-Benutzers kann über das Symbol **[!UICONTROL Verknüpftes Element öffnen]** angesehen werden.
 
 ![](assets/s_ncs_user_task_edit_resource_profile.png)
 

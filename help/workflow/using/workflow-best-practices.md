@@ -5,7 +5,7 @@ description: Machen Sie sich mit Best Practices bei Campaign-Workflows vertraut.
 feature: Workflows
 exl-id: 39c57f61-2629-4214-91e4-cb97dc039deb
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1416'
 ht-degree: 100%
 

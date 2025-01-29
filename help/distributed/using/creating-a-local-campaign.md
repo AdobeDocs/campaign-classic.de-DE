@@ -232,7 +232,7 @@ Um eine von der Zentralstelle angebotene Kampagne nutzen zu können, muss die Lo
 
 Gehen Sie wie folgt vor:
 
-1. Klicken Sie auf den Link **[!UICONTROL Kampagne bestellen]** in der Benachrichtigungs-E-Mail oder klicken Sie auf die entsprechende Schaltfläche in Ihrer Adobe-Campaign-Konsole.
+1. Klicken Sie auf den Link **[!UICONTROL Kampagne bestellen]** in der Benachrichtigungs-E-Mail oder klicken Sie auf die entsprechende Schaltfläche in Ihrer Adobe Campaign-Konsole.
 
    Geben Sie Ihre Kennung und Ihr Passwort ein, um die Bestellung vorzunehmen. Sie werden zu der Webanwendung weitergeleitet, die das von der Zentralstelle konfigurierte Formular enthält.
 
@@ -324,7 +324,7 @@ Ein validierungsverantwortlicher Benutzer kann die Validierung eines Kampagnenki
 
 Wenn der validierungsverantwortliche Benutzer eine Bestellung ablehnt, werden die betroffenen Lokalstellen hiervon automatisch per E-Mail benachrichtigt. Die E-Mail enthält gegebenenfalls einen Kommentar des Validierers.
 
-Die Ablehnung wird in der Liste der Kampagnenkits oder der Kampagnenbestellungen angezeigt. Für Lokalstellen mit Zugriff auf die Adobe-Campaign-Konsole ist dies eine weitere Möglichkeit, über Ablehnungen informiert zu werden.
+Die Ablehnung wird in der Liste der Kampagnenkits oder der Kampagnenbestellungen angezeigt. Für Lokalstellen mit Zugriff auf die Adobe Campaign-Konsole ist dies eine weitere Möglichkeit, über Ablehnungen informiert zu werden.
 
 ![](assets/mkg_dist_do_not_valid_view.png)
 

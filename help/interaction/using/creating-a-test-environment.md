@@ -24,7 +24,7 @@ Gehen Sie wie folgt vor, um eine Testumgebung (Sandbox-Modus) zu erstellen:
 >
 >Verwenden Sie diese Erstellungsmethode für Umgebungen nur für Testumgebungen. Verwenden Sie in allen anderen Fällen den Assistenten für das Zielgruppen-Mapping. Weiterführende Informationen dazu finden Sie unter [Angebotsumgebungen](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
 
-1. Gehen Sie in den Adobe-Campaign-Explorer und markieren Sie die Wurzel der Instanz.
+1. Gehen Sie in den Adobe Campaign-Explorer und markieren Sie die Wurzel der Instanz.
 1. Klicken Sie mit der rechten Maustaste und fügen Sie mithilfe des Kontextmenüs einen **[!UICONTROL Kind]**-Ordner hinzu.
 
    ![](assets/offer_env_creation_001.png)

@@ -23,12 +23,12 @@ Versuchen Sie beim Entwerfen Ihres Nachrichteninhalts gängige Probleme zu verme
 
 Um allgemeine Probleme bei der Zustellung Ihrer Nachrichten zu verhindern und das Benutzererlebnis zu verbessern, können Sie Ihre Nachrichten in Adobe Campaign personalisieren.
 
-Sie können die Empfängerdaten verwenden, die in der Adobe-Campaign-Datenbank gespeichert sind oder mithilfe von Tracking, Landingpages, Abonnements etc. erfasst wurden.
+Sie können die Empfängerdaten verwenden, die in der Adobe Campaign-Datenbank gespeichert sind oder mithilfe von Tracking, Landingpages, Abonnements etc. erfasst wurden.
 Die Grundlagen der Personalisierung werden in [diesem Abschnitt](personalization-fields.md) dargestellt.
 
 Stellen Sie sicher, dass Ihr Nachrichteninhalt korrekt aufgebaut ist, um oft mit der Personalisierung in Verbindung stehende Probleme zu verhindern.
 
-**Tipps**: Der externe HTML-Inhalt, der in Personalisierungsfeldern bereitgestellt wird und von externen Dateien von Drittanbietern stammt, kann falsch sein. Um das zu vermeiden, prüfen Sie die Syntax, die Verwendung von Tags, Zeichen usw. Ein Adobe-Campaign-Personalisierungs-Tag sieht stets wie folgt aus: &lt;%=table.field%>. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](about-personalization.md).
+**Tipps**: Der externe HTML-Inhalt, der in Personalisierungsfeldern bereitgestellt wird und von externen Dateien von Drittanbietern stammt, kann falsch sein. Um das zu vermeiden, prüfen Sie die Syntax, die Verwendung von Tags, Zeichen usw. Ein Adobe Campaign-Personalisierungs-Tag sieht stets wie folgt aus: &lt;%=table.field%>. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](about-personalization.md).
 
 Die falsche Verwendung von Parametern in Gestaltungsbausteinen kann Probleme verursachen. Variablen in JavaScript sollten beispielsweise folgendermaßen verwendet werden:
 
@@ -125,7 +125,7 @@ Responsives E-Mail-Design stellt sicher, dass eine E-Mail auf jedem Gerät optim
 
 * Verwenden Sie den Vorschaumodus und Testsendungen, um das Rendering auf möglichst vielen Geräten zu testen.
 
-* Das DCE-Modul (Digital Content Editor) von Adobe Campaign enthält einige im responsiven Design formatierte Vorlagen. Gehen Sie dazu zu **[!UICONTROL Ressourcen]** > **[!UICONTROL Vorlagen]** > **[!UICONTROL Inhaltsvorlagen]**.
+* Das DCE-Modul (Digital Content Editor) von Adobe Campaign Classic enthält einige im responsiven Design formatierte Vorlagen. Gehen Sie dazu zu **[!UICONTROL Ressourcen]** > **[!UICONTROL Vorlagen]** > **[!UICONTROL Inhaltsvorlagen]**.
 
 ## Verwalten von Bildern {#manage-images}
 

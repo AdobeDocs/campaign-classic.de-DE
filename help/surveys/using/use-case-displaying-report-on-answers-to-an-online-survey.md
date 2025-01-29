@@ -16,7 +16,7 @@ ht-degree: 100%
 
 
 
-Die Antworten auf Adobe-Campaign-Fragebögen können abgerufen und in dedizierten Berichten analysiert werden.
+Die Antworten auf Adobe Campaign-Fragebögen können abgerufen und in dedizierten Berichten analysiert werden.
 
 Im unten stehenden Beispiel werden die Antworten auf eine Online-Umfrage gesammelt und in einem Bericht in Form einer Pivot-Tabelle angezeigt.
 

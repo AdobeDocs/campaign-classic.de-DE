@@ -22,7 +22,7 @@ Ein Angebotskatalog besteht aus diversen Angebotskategorien, die entweder Unterk
 
 Ein Angebotskatalog ist jeweils nur einer Umgebung zugeordnet. Die im Katalog enthaltenen Angebote können demzufolge nur für die in der entsprechenden Umgebung definierten Platzierungen verwendet werden.
 
-Die Angebotsverwaltung geschieht ausgehend vom Navigationsbaum des Adobe-Campaign-Explorers.
+Die Angebotsverwaltung geschieht ausgehend vom Navigationsbaum des Adobe Campaign-Explorers.
 
 Bevor Sie Angebote erstellen, müssen Sie zunächst eine Umgebung angeben (siehe [Umgebung – Übersicht](../../interaction/using/environments-overview.md)). Sie enthält alle Merkmale (Eignung, Einschränkungen der Zielgruppe, Unterbreitungsregeln) eines Angebotspakets, sortiert nach Kategorien, sowie die Liste ihrer Platzierungen.
 

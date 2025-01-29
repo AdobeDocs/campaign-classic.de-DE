@@ -21,7 +21,7 @@ Die **HTTP-Übertragung** lädt Dateien über eine explizite URL, ein externes K
 
 1. **Auswahl der Webdatei**
 
-   Die Angabe der zu übertragenden Datei kann entweder über eine explizite URL, über ein externes HTTP-Konto oder über eine Adobe-Campaign-Instanz erfolgen. Folgende Parameter stehen zur Verfügung:
+   Die Angabe der zu übertragenden Datei kann entweder über eine explizite URL, über ein externes HTTP-Konto oder über eine Adobe Campaign-Instanz erfolgen. Folgende Parameter stehen zur Verfügung:
 
    * **[!UICONTROL Explizite URL]**: Die URL wird im entsprechenden Feld angegeben. Die URL kann Variablen enthalten.
 
@@ -33,7 +33,7 @@ Die **HTTP-Übertragung** lädt Dateien über eine explizite URL, ein externes K
 
      ![](assets/download_web_edit_external.png)
 
-   * **[!UICONTROL Adobe-Campaign-Instanz]**: Die Übertragung erfolgt über eine Adobe-Campaign-Instanz.
+   * **[!UICONTROL Adobe Campaign-Instanz]**: Die Übertragung erfolgt über eine Adobe Campaign-Instanz.
 
      ![](assets/download_web_edit_instance.png)
 
@@ -45,7 +45,7 @@ Die **HTTP-Übertragung** lädt Dateien über eine explizite URL, ein externes K
 
    Folgende Optionen stehen zur Verfügung:
 
-   * **[!UICONTROL Standard-Speicherverzeichnis nutzen]**: Die Datei wird immer verschoben, bevor sie verarbeitet wird. Wenn diese Option aktiviert ist, wird die Datei in das Standard-Speicherverzeichnis (das Verzeichnis **vars** im Adobe-Campaign-Installationsordner) verschoben. Um ein Speicherverzeichnis anzugeben, deaktivieren Sie das Kontrollkästchen und geben Sie seinen Pfad in das Feld **[!UICONTROL Speicherverzeichnis]** ein.
+   * **[!UICONTROL Standard-Speicherverzeichnis nutzen]**: Die Datei wird immer verschoben, bevor sie verarbeitet wird. Wenn diese Option aktiviert ist, wird die Datei in das Standard-Speicherverzeichnis (das Verzeichnis **vars** im Adobe Campaign-Installationsordner) verschoben. Um ein Speicherverzeichnis anzugeben, deaktivieren Sie das Kontrollkästchen und geben Sie seinen Pfad in das Feld **[!UICONTROL Speicherverzeichnis]** ein.
    * **[!UICONTROL Anzahl Dateien]**: Geben Sie die Anzahl an Dateien an, die maximal im Speicherverzeichnis beibehalten werden soll.
    * **[!UICONTROL Maximale Größe (in MB)]**: Geben Sie die Größe an, die das Speicherverzeichnis nicht überschreiten darf (in Megabytes).
 

@@ -48,7 +48,7 @@ Sie können eine benutzerdefinierte Empfängertabelle in Campaign erstellen und 
 
 Das Abfragetool von Adobe Campaign ermöglicht das leistungsstarke Analysieren von Daten und Erstellen von Segmenten.
 
-Die Adobe-Campaign-Plattform bietet ein leistungsstarkes Abfragetool, das bei der Erfüllung verschiedener Funktionen wie Zielgruppenbestimmung, Segmentation des Kundenstamms, Extraktion und Filterung von Trackinglogs sowie Erstellung von Filtern zur Anwendung kommt.
+Die Adobe Campaign-Plattform bietet ein leistungsstarkes Abfragetool, das bei der Erfüllung verschiedener Funktionen wie Zielgruppenbestimmung, Segmentation des Kundenstamms, Extraktion und Filterung von Trackinglogs sowie Erstellung von Filtern zur Anwendung kommt.
 
 Sie können mit diesem generischen Abfrage-Tool Daten aus der Campaign-Datenbank abrufen. Der Zugriff darauf erfolgt über das Menü **Werkzeuge > Generisches Abfragetool...** Sie können damit in einer Datenbank gespeicherte Informationen extrahieren sowie organisieren, gruppieren, sortieren usw. So kann ein Benutzer beispielsweise die Empfängerinnen und Empfänger abrufen, die innerhalb eines bestimmten Zeitraums mehr als x-mal auf einen Link in einem Newsletter geklickt haben. Mit diesem Tool können Sie Ergebnisse nach Bedarf sammeln, sortieren und anzeigen. Alle Abfrageoptionen in Adobe Campaign werden über dieses Tool gesteuert. So lassen sich z. B. Einschränkungsfilter im Tool erstellen und speichern. Derart angelegte Benutzerfilter sind dadurch auch in der Abfrageaktivität eines Zielgruppen-Workflows verfügbar.
 
@@ -60,7 +60,7 @@ Abfragen werden entweder mit den in der ausgewählten Tabelle enthaltenen Felder
 
 Adobe Campaign ermöglicht über ein Package-System den Export oder Import von Plattformkonfigurationen und Daten. Mithilfe von Datenpackages können Entitäten in der Adobe Campaign-Datenbank als Dateien im XML-Format dargestellt werden. Dies umfasst alle Daten einer in einem Package enthaltenen Entität.
 
-Das Prinzip der Datenpackages besteht darin, eine Datenkonfiguration zu exportieren und in ein anderes Adobe-Campaign-System zu integrieren.
+Das Prinzip der Datenpackages besteht darin, eine Datenkonfiguration zu exportieren und in ein anderes Adobe Campaign-System zu integrieren.
 
 [Hier erfahren Sie](../../platform/using/working-with-data-packages.md), wie Sie Datenpackages zum Importieren und Exportieren von Campaign-Konfigurationen verwenden.
 

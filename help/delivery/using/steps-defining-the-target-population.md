@@ -6,7 +6,7 @@ feature: Audiences, Proofs
 role: User
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1877'
 ht-degree: 100%
 
@@ -32,7 +32,7 @@ Um die Versandempfänger auszuwählen, gehen Sie wie folgt vor:
 
    ![](assets/s_ncs_user_wizard_email02a.png)
 
-1. Wählen Sie Zielgruppen-Mapping aus der Dropdown-Liste **[!UICONTROL Zielgruppen-Mapping]** aus. Die Adobe-Campaign-Standardeinstellung für Zielgruppen-Mapping ist **[!UICONTROL Empfänger]**, basierend auf dem Schema **nms:recipient**.
+1. Wählen Sie Zielgruppen-Mapping aus der Dropdown-Liste **[!UICONTROL Zielgruppen-Mapping]** aus. Die Adobe Campaign-Standardeinstellung für Zielgruppen-Mapping ist **[!UICONTROL Empfänger]**, basierend auf dem Schema **nms:recipient**.
 
    Es sind weitere Zielgruppen-Mappings verfügbar, von denen sich einige auf Ihre spezifische Konfiguration beziehen können. [Weitere Informationen](#select-a-target-mapping).
 
@@ -129,7 +129,7 @@ Wählen Sie den Link **[!UICONTROL Bearbeiten...]** aus, um die Standardkonfigur
 
 Folgende Optionen stehen zur Verfügung:
 
-* **[!UICONTROL Doppelte Adressen vom Versand ausschließen]**: Diese standardmäßig aktivierte Option dedupliziert die E-Mail-Adressen vor dem Versand. Die Vorgehensweise hängt dabei von der Art der Verwendung der Adobe-Campaign-Software und den in der Datenbank enthaltenen Daten ab.
+* **[!UICONTROL Doppelte Adressen vom Versand ausschließen]**: Diese standardmäßig aktivierte Option dedupliziert die E-Mail-Adressen vor dem Versand. Die Vorgehensweise hängt dabei von der Art der Verwendung der Adobe Campaign-Software und den in der Datenbank enthaltenen Daten ab.
 
   Der Standardwert dieser Option kann für jede Versandvorlage konfiguriert werden.
 
@@ -236,12 +236,12 @@ Folgende Mappings sind vorhanden:
 
 | Name | Verwendung | Standardschema |
 |---|---|---|
-| Bereich Empfänger | Versand richtet sich an die in der Adobe-Campaign-Datenbank enthaltenen Empfänger | nms:recipient |
+| Bereich Empfänger | Versand richtet sich an die in der Adobe Campaign-Datenbank enthaltenen Empfänger | nms:recipient |
 | Besucher | Versand richtet sich an Profile, die beispielsweise durch das Weiterleiten von Nachrichten (Virales Marketing) oder durch soziale Netzwerke (Facebook, X – früher bekannt als Twitter) akquiriert wurden. | mns:visitor |
 | Abonnements  | Versand richtet sich an Abonnenten eines Informationsdienstes wie z. B. einen Newsletter | nms:subscription |
 | Besucher-Abonnements | Versand richtet sich an Besucher, die einen Informationsdienst beziehen | nms:visitorSub |
 | Service | Veröffentlichen auf einem X-Konto oder einer Facebook-Seite | nms:service |
-| Benutzer | Versand richtet sich an Adobe-Campaign-Benutzer | nms:operator |
+| Benutzer | Versand richtet sich an Adobe Campaign-Benutzer | nms:operator |
 | Externe Datei | Versand basiert auf einer Datei, die alle notwendigen Informationen enthält | Ohne Schema oder Zielgruppe |
 
 

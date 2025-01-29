@@ -25,7 +25,7 @@ Nach ihrer Erstellung und Konfiguration werden die Cubes in den Abfrage-Aktivit�
 
 >[!CAUTION]
 >
->**Marketing Analytics** ist ein Adobe-Campaign-Modul. Es muss auf Ihrer Instanz installiert sein, damit Sie die unten beschriebenen Funktionen nutzen können.
+>**Marketing Analytics** ist ein Adobe Campaign-Modul. Es muss auf Ihrer Instanz installiert sein, damit Sie die unten beschriebenen Funktionen nutzen können.
 
 Verwenden Sie das Marketing Analytics-Modul von Campaign, um:
 

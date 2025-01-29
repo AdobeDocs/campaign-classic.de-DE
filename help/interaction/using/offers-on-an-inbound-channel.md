@@ -301,7 +301,7 @@ Erstellen Sie die beiden Platzierungen auf die gleiche Weise wie die anonymen Pl
 
 ### Definition der erweiterten Parameter der identifizierten Umgebung {#specifying-the-advanced-settings-of-the-identified-offer-spaces}
 
-Im vorliegenden Beispiel soll der Kontakt über seine E-Mail-Adresse in der Adobe-Campaign-Datenbank identifiziert werden. Fügen Sie die E-Mail-Adresse des Empfängers wie folgt in die Platzierung ein:
+Im vorliegenden Beispiel soll der Kontakt über seine E-Mail-Adresse in der Adobe Campaign-Datenbank identifiziert werden. Fügen Sie die E-Mail-Adresse des Empfängers wie folgt in die Platzierung ein:
 
 1. Gehen Sie in der identifizierten Umgebung in den Platzierungsknoten.
 1. Wählen Sie die Platzierung **Premium** aus und klicken Sie auf **[!UICONTROL Erweiterte Parameter...]**.
@@ -403,7 +403,7 @@ Gehen Sie wie folgt vor, um die Platzierungen der Angebote in der HTML-Seite der
 
    Die URL enthält den internen Namen (**liveRcp**) der identifizierten Umgebung.
 
-Bei Aufruf der Webseite löst das Script die Abfrage des Angebotsmoduls aus, damit der Angebotsinhalt in den hierfür vorgesehenen Platzierungen angezeigt wird. Mit nur einer Abfrage des Adobe-Campaign-Servers erkennt das Angebotsmodul die auszuwählende Umgebung, Platzierung und Angebotskategorie.
+Bei Aufruf der Webseite löst das Script die Abfrage des Angebotsmoduls aus, damit der Angebotsinhalt in den hierfür vorgesehenen Platzierungen angezeigt wird. Mit nur einer Abfrage des Adobe Campaign-Servers erkennt das Angebotsmodul die auszuwählende Umgebung, Platzierung und Angebotskategorie.
 
 In diesem Beispiel erkennt die Engine die identifizierte Umgebung (**EnvNeobankIdnRecip**). Sie identifiziert die Platzierung (**OSWebBestOfferIdentified**) und die **Premium**-Kategorie (**CatBestOffer**) für die erste und zweite Platzierung der Web-Seite sowie die Platzierung (**OSWebPartnerIdentified**) und die **Partner**-Kategorie (**CatPartner**) für die dritte Platzierung der Web-Seite.
 

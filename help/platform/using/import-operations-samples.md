@@ -25,7 +25,7 @@ Gehen Sie wie folgt vor, um eine Empfängerliste aus der Listenübersicht zu ers
 
 1. Liste erstellen
 
-   * Klicken Sie auf den Link **[!UICONTROL Listen]** im Menü **[!UICONTROL Profile und Zielgruppen]** der Adobe-Campaign-Startseite.
+   * Klicken Sie auf den Link **[!UICONTROL Listen]** im Menü **[!UICONTROL Profile und Zielgruppen]** der Adobe Campaign-Startseite.
    * Klicken Sie nun auf die Dropdown-Liste **[!UICONTROL Erstellen]** und wählen Sie die Option **[!UICONTROL Liste importieren]**.
 
 1. Zu importierende Datei auswählen
@@ -48,7 +48,7 @@ Gehen Sie wie folgt vor, um eine Empfängerliste aus der Listenübersicht zu ers
 
 ## Import neuer Datensätze aus einer Textdatei {#example--import-new-records-from-a-text-file-}
 
-Gehen Sie wie folgt vor, um eine als Textdatei vorliegende Empfängerliste in die Adobe-Campaign-Datenbank zu importieren:
+Gehen Sie wie folgt vor, um eine als Textdatei vorliegende Empfängerliste in die Adobe Campaign-Datenbank zu importieren:
 
 1. Vorlage auswählen
 

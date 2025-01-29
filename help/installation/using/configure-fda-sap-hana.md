@@ -25,7 +25,7 @@ Verwenden Sie die [-Option (Federated Data Access](../../installation/using/abou
 
 ## SAP HANA-Treiber {#sap-config}
 
-Die Verbindung mit einer externen SAP-HANA-Datenbank über die FDA-Option erfordert gewisse zusätzliche Konfigurationen auf dem Adobe-Campaign-Server:
+Die Verbindung mit einer externen SAP-HANA-Datenbank über die FDA-Option erfordert gewisse zusätzliche Konfigurationen auf dem Adobe Campaign-Server:
 
 1. Installieren Sie entsprechend dem verwendeten Betriebssystem die nötigen ODBC-Treiber für SAP HANA:
 

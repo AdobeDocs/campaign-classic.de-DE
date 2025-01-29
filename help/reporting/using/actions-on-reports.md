@@ -32,7 +32,7 @@ Wählen Sie in der Dropdown-Liste das Format aus, in dem der Bericht exportiert 
 
 Wenn ein Bericht mehrere Seiten enthält, muss der Vorgang für jede Seite wiederholt werden.
 
-Sie können Ihren Bericht für den Export im PDF-, Excel- oder OpenOffice-Format konfigurieren. Öffnen Sie den Adobe-Campaign-Explorer und wählen Sie den betreffenden Bericht aus.
+Sie können Ihren Bericht für den Export im PDF-, Excel- oder OpenOffice-Format konfigurieren. Öffnen Sie den Adobe Campaign-Explorer und wählen Sie den betreffenden Bericht aus.
 
 Die Exportoptionen sind über die **[!UICONTROL Seite]**-Aktivität(en) des Berichts im Tab **[!UICONTROL Erweitert]** zugänglich.
 

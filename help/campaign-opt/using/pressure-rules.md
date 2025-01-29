@@ -38,7 +38,7 @@ Andernfalls ist die Empfängerin bzw. der Empfänger **[!UICONTROL Ausgeschlosse
 
 ## Druckregel erstellen {#creating-a-pressure-rule}
 
-Um eine Schlichtung zwischen Adobe-Campaign-Kampagnen einzurichten, müssen zunächst Kampagnentypologien erstellt und die damit verbundenen Typologieregeln definiert werden.****
+Um eine Schlichtung zwischen Adobe Campaign-Kampagnen einzurichten, müssen zunächst Kampagnentypologien erstellt und die damit verbundenen Typologieregeln definiert werden.****
 
 Um eine Typologieregel vom Typ **[!UICONTROL Druck]** zu erstellen und zu konfigurieren, durchlaufen Sie folgende Etappen:
 

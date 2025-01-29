@@ -5,7 +5,7 @@ description: Erfahren Sie, wie Sie einen Workflow starten, und lernen Sie die Sy
 feature: Workflows
 exl-id: d345ba62-c2fb-43df-a2a1-e9e4292d301a
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1272'
 ht-degree: 100%
 

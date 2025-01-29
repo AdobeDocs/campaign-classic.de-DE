@@ -32,7 +32,7 @@ Dokumente können auf Kampagnenebene (kontextuelle Dokumente) oder Programmebene
 
 Der Tab **[!UICONTROL Dokumente]** enthält:
 
-* die Liste aller für den Inhalt notwendigen Dokumente (Vorlagen, Bilder usw.), die von berechtigten Adobe-Campaign-Benutzern lokal heruntergeladen werden können;
+* die Liste aller für den Inhalt notwendigen Dokumente (Vorlagen, Bilder usw.), die von berechtigten Adobe Campaign-Benutzern lokal heruntergeladen werden können;
 * Informationen für den Router enthaltende Dokumente, wenn vorhanden.
 
 Die Dokumente werden über den Tab **[!UICONTROL Bearbeiten > Dokumente]** einem Programm oder einer Kampagne zugeordnet.

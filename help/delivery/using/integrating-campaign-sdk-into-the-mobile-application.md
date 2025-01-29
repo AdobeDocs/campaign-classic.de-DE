@@ -30,7 +30,7 @@ Im Folgenden finden Sie die Integrationsschritte für das Campaign SDK.
 
 * **Android**: erfordert die Verknüpfung der Datei **neolane_sdk-release.aar** mit dem Projekt.
 
-  Folgende Erlaubnis ermöglicht den Zugriff auf den Adobe-Campaign-Server:
+  Folgende Erlaubnis ermöglicht den Zugriff auf den Adobe Campaign-Server:
 
   ```
   Neolane.getInstance().setIntegrationKey("your Adobe mobile app integration key");
@@ -60,13 +60,13 @@ Im Folgenden finden Sie die Integrationsschritte für das Campaign SDK.
 
 Zur Integration des Campaign SDK in die Mobile App benötigt der Entwickler folgende Informationen vom funktionalen Administrator:
 
-* **Integrationsschlüssel**: zur Identifizierung der Mobile App durch die Adobe-Campaign-Plattform.
+* **Integrationsschlüssel**: zur Identifizierung der Mobile App durch die Adobe Campaign-Plattform.
 
   >[!NOTE]
   >
   >Der Integrationsschlüssel ist in der Adobe Campaign-Konsole im Tab **[!UICONTROL Informationen]** des dedizierten Dienstes der Mobile App angegeben. Weitere Informationen finden Sie unter [Konfiguration einer Mobile App in Adobe Campaign](configuring-the-mobile-application.md).
 
-* **Tracking-URL**: entspricht der Adresse des Adobe-Campaign-Trackingservers.
+* **Tracking-URL**: entspricht der Adresse des Adobe Campaign-Trackingservers.
 * **Marketing-URL**: um die Sammlung der Abonnements zu ermöglichen.
 
 * **Für Android**:

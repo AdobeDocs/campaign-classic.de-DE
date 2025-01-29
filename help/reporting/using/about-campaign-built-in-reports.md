@@ -16,7 +16,7 @@ ht-degree: 100%
 
 
 
-Dieses Kapitel enthält eine Liste der nativen Adobe-Campaign-Berichte, ihren Inhalt und den Kontext ihrer Verwendung. Die nachfolgenden Erläuterungen sollen es den Benutzern ermöglichen, standardmäßig in der Plattform verfügbare Berichte zu nutzen und somit unnötigen Konfigurationsaufwand zu vermeiden.
+Dieses Kapitel enthält eine Liste der nativen Adobe Campaign-Berichte, ihren Inhalt und den Kontext ihrer Verwendung. Die nachfolgenden Erläuterungen sollen es den Benutzern ermöglichen, standardmäßig in der Plattform verfügbare Berichte zu nutzen und somit unnötigen Konfigurationsaufwand zu vermeiden.
 
 >[!NOTE]
 >

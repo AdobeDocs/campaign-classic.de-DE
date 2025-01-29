@@ -163,7 +163,7 @@ Das Schema stellt sich also wie folgt dar:
 
 ## Schritt 3: Erstellen des Eingabeformulars {#step-3---creating-the-input-form}
 
-Formulare ermöglichen die Bearbeitung einer Inhaltsinstanz über eine Eingabeschnittstelle der Adobe-Campaign-Clientkonsole.
+Formulare ermöglichen die Bearbeitung einer Inhaltsinstanz über eine Eingabeschnittstelle der Adobe Campaign-Clientkonsole.
 
 Die Beschreibung eines Formulars ist ein strukturiertes XML-Dokument, welches die Grammatik des Formularschemas &quot;xtk:form&quot; anwendet.
 

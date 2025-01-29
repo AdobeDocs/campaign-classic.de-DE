@@ -53,7 +53,7 @@ Sie können ein unverbindliches Verfügbarkeitsdatum für die Ressource festlege
 
 ## Kollaboratives Arbeiten an Ressourcen {#collaborative-work-on-resources}
 
-Sie haben die Möglichkeit, eine Marketing-Ressource jederzeit zu ändern und zu aktualisieren sowie bei Bedarf andere Adobe-Campaign-Benutzer davon in Kenntnis zu setzen. Sie können:
+Sie haben die Möglichkeit, eine Marketing-Ressource jederzeit zu ändern und zu aktualisieren sowie bei Bedarf andere Adobe Campaign-Benutzer davon in Kenntnis zu setzen. Sie können:
 
 * Ressourcen lokal herunterladen, um sie zu bearbeiten;
 * Dateien auf dem Server aktualisieren und für andere Benutzer zugänglich machen;
@@ -85,7 +85,7 @@ Sie können das geplante Rückgabedatum im Tab **[!UICONTROL Verfolgung]** der R
 
 ![](assets/s_ncs_user_mkg_resource_lock_date.png)
 
-Auf diese Weise können andere Adobe-Campaign-Benutzer darüber informiert werden, wann die Ressource wieder entsperrt wird.
+Auf diese Weise können andere Adobe Campaign-Benutzer darüber informiert werden, wann die Ressource wieder entsperrt wird.
 
 Nach der Aktualisierung wird die Ressource automatisch entsperrt, um sie wieder für alle Benutzer verfügbar zu machen.
 
@@ -103,7 +103,7 @@ Die Funktionsweise von Foren in Adobe Campaign wird im Abschnitt [Diskussionfore
 
 ## Lebenszyklus von Marketing-Ressourcen {#life-cycle-of-a-marketing-resource}
 
-Bei der Erstellung einer Ressource werden Adobe-Campaign-Benutzer für den Entwurf sowie die Korrektur, Validerung und Veröffentlichung der Ressource bestimmt. Für diese Vorgänge kann eine Dauer definiert werden.
+Bei der Erstellung einer Ressource werden Adobe Campaign-Benutzer für den Entwurf sowie die Korrektur, Validerung und Veröffentlichung der Ressource bestimmt. Für diese Vorgänge kann eine Dauer definiert werden.
 
 Der Tab **[!UICONTROL Verfolgung]** ermöglicht die Überprüfung der an der Ressource vorgenommenen Änderungen: Validierungen, Validierungsablehnungen, Kommentare und Veröffentlichungen.
 

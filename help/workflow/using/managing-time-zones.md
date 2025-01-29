@@ -37,7 +37,7 @@ Mögliche Werte:
 
 * Benutzer-Zeitzone
 
-  Verwendet die Zeitzone des Adobe-Campaign-Benutzers, der die Ausführung des Workflows startet.
+  Verwendet die Zeitzone des Adobe Campaign-Benutzers, der die Ausführung des Workflows startet.
 
 * Zeitzone der Datenbank
 

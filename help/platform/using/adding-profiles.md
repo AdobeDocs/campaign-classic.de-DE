@@ -23,4 +23,4 @@ Meist werden Profile [über einen Workflow in Campaign importiert](../../platfor
 
 Machen Sie die erforderlichen Angaben zum Profil. Die auszufüllenden Tabs und Felder werden unter [Profile bearbeiten](../../platform/using/editing-a-profile.md) beschrieben.
 
-Verwenden Sie **[!UICONTROL Speichern]**, um die Profilerstellung abzuschließen. Das Profil wird der Adobe-Campaign-Datenbank hinzugefügt.
+Verwenden Sie **[!UICONTROL Speichern]**, um die Profilerstellung abzuschließen. Das Profil wird der Adobe Campaign-Datenbank hinzugefügt.

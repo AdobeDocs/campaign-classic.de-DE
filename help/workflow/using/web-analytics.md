@@ -42,7 +42,7 @@ Die folgenden Workflows werden standardmäßig mit dem Modul **Web Analytics-Con
   <tr> 
    <td> <span class="uicontrol">Abruf der Web-Ereignisse</span> <br /> </td> 
    <td> <span class="uicontrol">webAnalyticsGetWebEvents</span> <br /> </td> 
-   <td> Ruft stündlich die Segmente ab, die sich auf das Besucherverhalten der angegebenen Webseite beziehen, fügt die Daten zur Adobe-Campaign-Datenbank hinzu und startet den Remarketing-Workflow. <br /> </td> 
+   <td> Ruft stündlich die Segmente ab, die sich auf das Besucherverhalten der angegebenen Webseite beziehen, fügt die Daten zur Adobe Campaign-Datenbank hinzu und startet den Remarketing-Workflow. <br /> </td> 
   </tr> 
  </tbody> 
 </table>

@@ -34,7 +34,7 @@ Sobald alle Validierungen erteilt wurden, kann der Versand gestartet werden. Der
 
 ### Starten eines Online-Versands {#starting-an-online-delivery}
 
-Wenn alle Validierungsanfragen akzeptiert wurden, erhält der Versand den Status **[!UICONTROL Genehmigung ausstehend]** und kann von einem Benutzer gestartet werden. Gegebenenfalls wird der Adobe-Campaign-Benutzer (oder die Benutzergruppe), der für die Validierung des Versandstarts zuständig ist, über den startbereiten Versand informiert.
+Wenn alle Validierungsanfragen akzeptiert wurden, erhält der Versand den Status **[!UICONTROL Genehmigung ausstehend]** und kann von einem Benutzer gestartet werden. Gegebenenfalls wird der Adobe Campaign-Benutzer (oder die Benutzergruppe), der für die Validierung des Versandstarts zuständig ist, über den startbereiten Versand informiert.
 
 >[!NOTE]
 >
@@ -133,7 +133,7 @@ Dokumente können auf Kampagnenebene (kontextuelle Dokumente) oder Programmebene
 
 Der Tab **[!UICONTROL Dokumente]** enthält:
 
-* die Liste aller für den Inhalt notwendigen Dokumente (Vorlagen, Bilder usw.), die von berechtigten Adobe-Campaign-Benutzern lokal heruntergeladen werden können;
+* die Liste aller für den Inhalt notwendigen Dokumente (Vorlagen, Bilder usw.), die von berechtigten Adobe Campaign-Benutzern lokal heruntergeladen werden können;
 * Informationen für den Router enthaltende Dokumente, wenn vorhanden.
 
 Die Dokumente werden über den Tab **[!UICONTROL Bearbeiten > Dokumente]** einem Programm oder einer Kampagne zugeordnet.

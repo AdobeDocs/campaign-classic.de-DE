@@ -31,7 +31,7 @@ Die für das **Inbox Rendering** in Adobe Campaign verfügbaren Clients für Mob
 
 >[!NOTE]
 >
->Zum Testen der Personalisierung in Sendungen ist kein Inbox Rendering nötig. Die Personalisierung kann auch mit Adobe-Campaign-Tools, z. B. der **[!UICONTROL Vorschau]** und [Testsendungen](steps-validating-the-delivery.md#sending-a-proof), überprüft werden.
+>Zum Testen der Personalisierung in Sendungen ist kein Inbox Rendering nötig. Die Personalisierung kann auch mit Adobe Campaign-Tools, z. B. der **[!UICONTROL Vorschau]** und [Testsendungen](steps-validating-the-delivery.md#sending-a-proof), überprüft werden.
 
 ## Inbox Rendering aktivieren{#activating-inbox-rendering}
 

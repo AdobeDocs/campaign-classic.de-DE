@@ -38,7 +38,7 @@ Eine quantitative Analyse bietet globale Statistiken über numerische Daten der 
 
 Im Assistenten für deskriptive Analysen werden in mehreren Schritten der zu erzeugende Berichtstyp sowie die Daten und ihre Formatierung ausgewählt. Der Bericht wird im letzten Schritt angezeigt. Bei Bedarf kann der Bericht veröffentlicht und mit anderen Benutzern geteilt, gedruckt oder in verschiedenen Formaten exportiert werden (Excel, PDF oder OpenDocument).
 
-Berichte der deskriptiven Analyse sind weniger leistungsfähig als Adobe-Campaign-Berichte, ermöglichen aber einen schnellen Überblick über den Inhalt der Datenbank oder ausgewählte Daten.
+Berichte der deskriptiven Analyse sind weniger leistungsfähig als Adobe Campaign-Berichte, ermöglichen aber einen schnellen Überblick über den Inhalt der Datenbank oder ausgewählte Daten.
 
 >[!CAUTION]
 >

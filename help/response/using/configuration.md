@@ -21,7 +21,7 @@ ht-degree: 100%
 
 Dieses Kapitel richtet sich an die für die Konfiguration der Reaktionsverwaltung zuständigen Benutzer. Die Umsetzung dieser Konfiguration erfordert Kenntnisse über Schemaerweiterung, Workflow-Erstellung und -Verwaltung sowie SQL-Programmierung.
 
-Es wird erklärt, wie die Standard-Datenmodelle den Besonderheiten einer Adobe-Campaign-externen Transaktionstabelle mittels der Individuentabelle angepasst werden. Diese Individuentabelle kann der in Adobe Campaign verfügbaren Empfängertabelle oder einer anderen Tabelle entsprechen.
+Es wird erklärt, wie die Standard-Datenmodelle den Besonderheiten einer Adobe Campaign-externen Transaktionstabelle mittels der Individuentabelle angepasst werden. Diese Individuentabelle kann der in Adobe Campaign verfügbaren Empfängertabelle oder einer anderen Tabelle entsprechen.
 
 Messhypothesen werden vom Kampagnenvorgänge-Workflow **[!UICONTROL operationMgt]** gestartet. Jede Hypothese repräsentiert einen separaten Prozess, der asynchron ausgeführt wird und über einen Ausführungsstatus verfügt (In Bearbeitung, Ausstehend, Abgeschlossen etc.). Er unterliegt einer Steuerung, die Prioritätseinschränkungen, Begrenzungen der Anzahl simultaner Prozesse, Zeitpunkte mit geringer Auslastung und die automatische Ausführung mit Ausführungsfrequenz berücksichtigt und verwaltet.
 
@@ -37,7 +37,7 @@ Vor dem Einsatz des Reaktionsmoduls ist eine Anwendungsintegration erforderlich,
 
 Das anwendungseigene Schema **[!UICONTROL nms:remaMatch]** enthält die Tabelle der Reaktionslogs d. h. die Relation zwischen Individuen, Hypothese und Transaktionstabelle. Dieses Schema ist als Erbschema für die endgültige Zieltabelle der Reaktionslogs zu verwenden.
 
-Das ebenfalls anwendungseigene Schema **[!UICONTROL nms:remaMatchRcp]** enthält Reaktionslogs der Adobe-Campaign-Empfänger (**[!UICONTROL nms:recipient]**). Um das Schema zu verwenden, muss es zunächst erweitert werden, um anschließend mit der Transaktionstabelle (Bestelldaten) verknüpft werden zu können.
+Das ebenfalls anwendungseigene Schema **[!UICONTROL nms:remaMatchRcp]** enthält Reaktionslogs der Adobe Campaign-Empfänger (**[!UICONTROL nms:recipient]**). Um das Schema zu verwenden, muss es zunächst erweitert werden, um anschließend mit der Transaktionstabelle (Bestelldaten) verknüpft werden zu können.
 
 ### Transaktionstabellen und -details {#transaction-tables-and-transaction-details}
 
@@ -63,7 +63,7 @@ In diesem Beispiel wird unter Verwendung der in Adobe Campaign integrierten Empf
 
 Die Tabelle der Antwort-Logs eines **[!UICONTROL nms:remaMatchRcp]**-Empfängers wird erweitert, um einen Link zum Bestelltabelle-Schema hinzuzufügen. Im folgenden Beispiel heißt die Bestelltabelle **demo:purchase**.
 
-1. Gehen Sie im Adobe-Campaign-Explorer in den Knoten **[!UICONTROL Administration]** > **[!UICONTROL Kampagnen]** > **[!UICONTROL Zielgruppen-Mappings]**.
+1. Gehen Sie im Adobe Campaign-Explorer in den Knoten **[!UICONTROL Administration]** > **[!UICONTROL Kampagnen]** > **[!UICONTROL Zielgruppen-Mappings]**.
 1. Machen Sie einen Rechtsklick auf **Empfänger** und wählen Sie **[!UICONTROL Aktionen]** und **[!UICONTROL Optionen der Zielgruppendimension ändern...]** aus.
 
    ![](assets/delivery_mapping1.png)
@@ -108,7 +108,7 @@ In diesem Beispiel wird unter Verwendung einer Individuentabelle, also nicht der
 
 * Erstellung eines neuen Reaktionslog-Schemas basierend auf dem Schema **[!UICONTROL nms:remaMatch]**.
 
-  Da es sich nicht um die Adobe-Campaign-Empfängertabelle handelt, ist es notwendig, ein neues Reaktionslog-Schema auf Grundlage des **[!UICONTROL nms:remaMatch]**-Schemas zu erstellen. Anschließend müssen die Relationen zu den Versandlogs und der die Bestelldaten enthaltenden Transaktionstabelle hinzugefügt werden.
+  Da es sich nicht um die Adobe Campaign-Empfängertabelle handelt, ist es notwendig, ein neues Reaktionslog-Schema auf Grundlage des **[!UICONTROL nms:remaMatch]**-Schemas zu erstellen. Anschließend müssen die Relationen zu den Versandlogs und der die Bestelldaten enthaltenden Transaktionstabelle hinzugefügt werden.
 
   Im folgenden Beispiel werden das Schema **demo:broadLogPers** und die Transaktionstabelle **demo:purchase** verwendet:
 

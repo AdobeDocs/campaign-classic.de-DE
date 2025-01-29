@@ -17,7 +17,7 @@ ht-degree: 100%
 
 Gehen Sie wie folgt vor, um einen Bericht zu erstellen:
 
-1. Öffnen Sie den Adobe-Campaign-Explorer und wählen Sie im Knoten **[!UICONTROL Administration > Konfiguration]** den Ordner **[!UICONTROL Berichte]** aus.
+1. Öffnen Sie den Adobe Campaign-Explorer und wählen Sie im Knoten **[!UICONTROL Administration > Konfiguration]** den Ordner **[!UICONTROL Berichte]** aus.
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Neu]** rechts oberhalb der Liste der Berichte.
 1. Wählen Sie **[!UICONTROL Neuen Bericht basierend auf einer Vorlage erstellen]** aus und klicken Sie auf **[!UICONTROL Weiter]**.
 

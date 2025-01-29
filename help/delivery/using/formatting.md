@@ -517,7 +517,7 @@ Sie können jederzeit eine Vorschau des Ausgabedokuments erzeugen, indem Sie ein
 
 Die im HTML-Ausgabedokument angegebenen Bilder können mit relativen oder absoluten Pfadangaben adressiert werden.
 
-Bei der relativen Adressierung kann in den Optionen **NcmRessourcesDir** und **NcmRessourcesDirPreview** die URL des Servers, auf dem die Bilder gespeichert sind, angegeben werden. Die Optionen enthalten den Speicherort der Bilder in der Adobe-Campaign-Clientkonsole für die Veröffentlichung und die Vorschau.
+Bei der relativen Adressierung kann in den Optionen **NcmRessourcesDir** und **NcmRessourcesDirPreview** die URL des Servers, auf dem die Bilder gespeichert sind, angegeben werden. Die Optionen enthalten den Speicherort der Bilder in der Adobe Campaign-Clientkonsole für die Veröffentlichung und die Vorschau.
 
 Auf beide Optionen kann im Explorer über den Knoten **[!UICONTROL Administration > Plattform > Optionen]** zugegriffen werden.
 

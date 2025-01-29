@@ -40,7 +40,7 @@ Die Verbindung kann auch mit einem spezifischen Login/Passwort hergestellt werde
 
 1. Geben Sie im Feld **[!UICONTROL Login]** die Kontokennung des Benutzers ein.
 
-   Diese wird vom Administrator der Adobe-Campaign-Plattform vergeben.
+   Diese wird vom Administrator der Adobe Campaign-Plattform vergeben.
 
 1. Geben Sie im Feld **[!UICONTROL Passwort]** Ihr Passwort ein.
 
@@ -75,7 +75,7 @@ Anschließend sind die Verbindungsparameter wie folgt zu konfigurieren:
 
 ## Benutzer und Berechtigungen {#operators-and-permissions}
 
-Kennungen, Passwörter und Zugriffsberechtigungen werden vom Adobe-Campaign-Systemadministrator im Verzeichnisknoten **[!UICONTROL Administration > Zugriffe > Benutzer]** des Adobe-Campaign-Navigationsbaums festgelegt.
+Kennungen, Passwörter und Zugriffsberechtigungen werden vom Adobe Campaign-Systemadministrator im Verzeichnisknoten **[!UICONTROL Administration > Zugriffe > Benutzer]** des Adobe Campaign-Navigationsbaums festgelegt.
 
 Diese Funktionen werden im Abschnitt [Zugriffsverwaltung](../../platform/using/access-management.md) beschrieben.
 

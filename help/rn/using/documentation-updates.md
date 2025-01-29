@@ -7,7 +7,7 @@ role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3805'
 ht-degree: 100%
 
@@ -238,7 +238,7 @@ Es wurde eine neue Technote erstellt, in der erklärt wird, wie die Bounce-Quali
 
 Der Abschnitt [Erste Schritte mit SMS](../../delivery/using/sms-channel.md) wurde neu organisiert und verbessert. In speziellen Abschnitten erfahren Sie nun, wie Sie [den SMS-Kanal konfigurieren](../../delivery/using/sms-set-up.md), [eine SMS erstellen](../../delivery/using/sms-create.md) sowie [SMS senden und verfolgen](../../delivery/using/sms-send.md) können.
 
-Die Seite &quot;Hilfe und Support-Optionen&quot; für Campaign Standard wurde in die Hauptdokumentation integriert. [Mehr dazu](../../support.md)
+Die Seite „Hilfe und Support-Optionen“ für Campaign Classic wurde in die Hauptdokumentation integriert. [Mehr dazu](../../support.md)
 
 Es wurde ein neuer Abschnitt zu Best Practices und Überprüfungen für Sicherheit und Datenschutz hinzugefügt. [Mehr dazu](../../installation/using/get-started-security-privacy.md)
 

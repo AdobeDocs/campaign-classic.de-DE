@@ -47,7 +47,7 @@ Als Datenverantwortlicher sind Sie daher außerdem verpflichtet, die Identität 
 
 ## Installieren des Datenschutz-Package {#install-privacy-package}
 
-Um diese Funktion nutzen zu können, müssen Sie das Package **[!UICONTROL Datenschutzbestimmung]** über das Menü **[!UICONTROL Werkzeuge]** > **[!UICONTROL Erweitert]** > **[!UICONTROL Package-Import]** > **[!UICONTROL Adobe-Campaign-Package]** installieren. Weitere Informationen zum Installieren von Packages finden Sie im [entsprechenden Handbuch](../../installation/using/installing-campaign-standard-packages.md).
+Um diese Funktion nutzen zu können, müssen Sie das Package **[!UICONTROL Datenschutzbestimmung]** über das Menü **[!UICONTROL Werkzeuge]** > **[!UICONTROL Erweitert]** > **[!UICONTROL Package-Import]** > **[!UICONTROL Adobe Campaign-Package]** installieren. Weitere Informationen zum Installieren von Packages finden Sie im [entsprechenden Handbuch](../../installation/using/installing-campaign-standard-packages.md).
 
 Zwei neue speziell für den Datenschutz vorgesehene Ordner werden unter **[!UICONTROL Administration]** > **[!UICONTROL Plattform]** erstellt:
 

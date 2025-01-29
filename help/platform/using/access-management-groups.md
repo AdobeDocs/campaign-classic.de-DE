@@ -94,7 +94,7 @@ Es existieren folgende Standardgruppen:
 
 1. Lokale/Zentrale Verwaltung
 
-   Diese Gruppen ermöglichen den Einsatz des **[!UICONTROL Dezentralen Marketings]** (optionales Adobe-Campaign-Modul).
+   Diese Gruppen ermöglichen den Einsatz des **[!UICONTROL Dezentralen Marketings]** (optionales Adobe Campaign-Modul).
 
 1. **[!UICONTROL Angebotsverantwortliche Benutzer]**
 

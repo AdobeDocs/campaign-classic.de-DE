@@ -64,7 +64,7 @@ Externe Datenbanken, die über Federated Data Access (FDA) mit Campaign kompatib
 
 ## Kann Adobe Campaign mit LDAP integriert werden? {#can-adobe-campaign-integrate-with-ldap-}
 
-On-Premise-/Hybrid-Kunden können Campaign mit ihrem LDAP-Verzeichnis integrieren.
+On-Premise-/Hybrid-Kunden können Campaign Classic mit ihrem LDAP-Verzeichnis integrieren.
 
 [Hier erfahren Sie mehr darüber](../../installation/using/connecting-through-ldap.md).
 

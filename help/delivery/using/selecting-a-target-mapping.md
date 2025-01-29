@@ -24,12 +24,12 @@ Folgende Mappings sind vorhanden:
 
 | Name | Verwendung | Standardschema |
 |---|---|---|
-| Bereich Empfänger | Versand richtet sich an die in der Adobe-Campaign-Datenbank enthaltenen Empfänger | nms:recipient |
+| Bereich Empfänger | Versand richtet sich an die in der Adobe Campaign-Datenbank enthaltenen Empfänger | nms:recipient |
 | Besucher | Versand richtet sich an Profile, die beispielsweise durch das Weiterleiten von Nachrichten (Virales Marketing) oder durch soziale Netzwerke (Facebook, X – früher bekannt als Twitter) akquiriert wurden. | mns:visitor |
 | Abonnements  | Versand richtet sich an Abonnenten eines Informationsdienstes wie z. B. einen Newsletter | nms:subscription |
 | Besucher-Abonnements | Versand richtet sich an Besucher, die einen Informationsdienst beziehen | nms:visitorSub |
 | Service | Veröffentlichen auf einem X-Konto oder einer Facebook-Seite | nms:service |
-| Benutzer | Versand richtet sich an Adobe-Campaign-Benutzer | nms:operator |
+| Benutzer | Versand richtet sich an Adobe Campaign-Benutzer | nms:operator |
 | Externe Datei | Versand basiert auf einer Datei, die alle notwendigen Informationen enthält | Ohne Schema oder Zielgruppe |
 
 >[!NOTE]

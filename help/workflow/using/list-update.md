@@ -29,7 +29,7 @@ Wenn die Liste bereits existiert, werden die neuen Datensätze hinzugefügt, es 
 
 Kreuzen Sie die Option **[!UICONTROL Liste mit eigener Tabelle erstellen oder verwenden]** an, wenn die erstellte oder aktualisierte Liste nicht die Empfängertabelle verwenden soll.
 
-In diesem Fall müssen die entsprechenden Tabellen zuvor in der Adobe-Campaign-Instanz konfiguriert werden.
+In diesem Fall müssen die entsprechenden Tabellen zuvor in der Adobe Campaign-Instanz konfiguriert werden.
 
 Im Allgemeinen stellt die Speicherung einer Zielgruppe in einer Liste das Ende eines Workflows dar. Standardmäßig bietet die **[!UICONTROL Listen-Update]**-Aktivität daher keine ausgehende Transition. Dies kann durch Ankreuzen der Option **[!UICONTROL Ausgehende Transition erzeugen]** umgangen werden.
 

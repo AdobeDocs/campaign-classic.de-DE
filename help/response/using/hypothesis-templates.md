@@ -25,7 +25,7 @@ Die Konfiguration einer Hypothesenvorlage ermöglicht die Bestimmung des Kontext
 
 Folgen Sie den nachstehenden Etappen, um eine Hypothesenvorlage zu erstellen:
 
-1. Rufen Sie im Adobe-Campaign-Explorer den Verzeichnisknoten **[!UICONTROL Ressourcen > Vorlagen > Hypothesenvorlagen]** auf.
+1. Rufen Sie im Adobe Campaign-Explorer den Verzeichnisknoten **[!UICONTROL Ressourcen > Vorlagen > Hypothesenvorlagen]** auf.
 
    ![](assets/response_hypothesis_model_creation_001.png)
 
@@ -187,7 +187,7 @@ Nachdem die Transkationstabelle sowie die von der Hypothese betroffenen Felder d
 
 Im folgenden Beispiel wird eine Hypothesenvorlage für einen Briefpost-Versand erstellt. Die Transaktionstabelle (**Bestellungen** in unserem Beispiel), auf welcher die Hypothesen basieren, enthält Bestellzeilen, denen Produkte zugeordnet sind. Die Vorlage wird so konfiguriert, dass die Hypothesen sich auf eben diese Produkte bezieht.
 
-1. Positionieren Sie sich im Knoten **[!UICONTROL Ressourcen > Vorlagen > Hypothesenvorlagen]** des Adobe-Campaign-Explorers.
+1. Positionieren Sie sich im Knoten **[!UICONTROL Ressourcen > Vorlagen > Hypothesenvorlagen]** des Adobe Campaign-Explorers.
 1. Klicken Sie auf **[!UICONTROL Neu]**, um eine Vorlage zu erstellen.
 
    ![](assets/response_hypothesis_model_example_001.png)

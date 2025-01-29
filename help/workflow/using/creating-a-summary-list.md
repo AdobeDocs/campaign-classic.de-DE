@@ -55,7 +55,7 @@ Die Daten stammen aus der Datei &quot;Verkauf.txt&quot;
 
 1. Ziehen Sie die Aktivitäten **Datei-Wächter** und **Laden (Datei)** in das Workflow-Diagramm.
 
-   Der **Datei-Wächter** sammelt Dateien und sendet sie auf den Adobe-Campaign-Server.
+   Der **Datei-Wächter** sammelt Dateien und sendet sie auf den Adobe Campaign-Server.
 
    Die Aktivität **Laden (Datei)** lädt die gesammelten Daten in die Arbeitstabelle des Workflows.
 

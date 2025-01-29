@@ -7,7 +7,7 @@ role: Data Engineer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '942'
 ht-degree: 100%
 
@@ -29,7 +29,7 @@ In der Mitte des Fensters haben Sie die Möglichkeit, auf die Online-Dokumentati
 
 >[!NOTE]
 >
->Die in Ihrer Instanz verfügbaren Adobe-Campaign-Funktionen hängen von den installierten Modulen und Add-ons ab. Je nach Ihren Berechtigungen und Konfigurationen sind manche möglicherweise nicht verfügbar.
+>Die in Ihrer Instanz verfügbaren Adobe Campaign-Funktionen hängen von den installierten Modulen und Add-ons ab. Je nach Ihren Berechtigungen und Konfigurationen sind manche möglicherweise nicht verfügbar.
 >
 >Prüfen Sie Ihren Lizenzvertrag oder kontaktieren Sie Ihren Adobe-Kundenbetreuer, bevor Sie Module oder Add-ons installieren.
 
@@ -110,7 +110,7 @@ Nutzen Sie beispielsweise auf der Seite der Sendungen die Schaltfläche **[!UICO
 
 ### Datum und Uhrzeit {#date-and-time}
 
-Die Sprache Ihrer Adobe-Campaign-Classic-Instanz hat Auswirkungen auf das Format von Datum und Uhrzeit.
+Die Sprache Ihrer Adobe Campaign Classic-Instanz hat Auswirkungen auf das Format von Datum und Uhrzeit.
 
 Die Sprache wird während der Installation von Campaign ausgewählt und kann danach nicht mehr geändert werden. Zur Auswahl stehen: Englisch (US), Englisch (EN), Französisch, Deutsch oder Japanisch. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../installation/using/creating-an-instance-and-logging-on.md).
 
