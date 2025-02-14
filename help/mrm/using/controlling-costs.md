@@ -5,9 +5,11 @@ description: Erfahren Sie, wie Sie Kosten kontrollieren können
 feature: Resource Management
 audience: campaign
 content-type: reference
+hide: true
+hidefromtoc: true
 topic-tags: tasks--resources-and-budgets
 exl-id: 6765e307-915a-44d2-a486-85c64e8ec52e
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 942edcf028207eab2ea583949ebc99ab61539ea0
 workflow-type: tm+mt
 source-wordcount: '2559'
 ht-degree: 100%
@@ -22,7 +24,7 @@ Adobe Campaign ermöglicht mit dem MRM-Modul die Kontrolle der geplanten, einges
 
 Die für die unterschiedlichen Kampagnenvorgänge anfallenden Kosten werden einem zuvor festgesetzten Budget zugeteilt. Die Beträge können in verschiedene Kategorien verteilt werden, um eine bessere Lesbarkeit und detailliertere Berichte der Marketing-Kosten zu ermöglichen.
 
-Die Budgetverwaltung und -verfolgung sind in einem dedizierten Knoten des Adobe-Campaign-Navigationsbaums zentralisiert. Von hier aus können Sie alle Budgets sowie die zugeteilten, reservierten, eingesetzten und verbrauchten Beträge kontrollieren.
+Die Budgetverwaltung und -verfolgung sind in einem dedizierten Knoten des Adobe Campaign-Navigationsbaums zentralisiert. Von hier aus können Sie alle Budgets sowie die zugeteilten, reservierten, eingesetzten und verbrauchten Beträge kontrollieren.
 
 ![](assets/s_ncs_user_budget_node_02.png)
 
@@ -358,7 +360,7 @@ Geben Sie die Nummer der Lagerergänzung, den entsprechenden Dienstleister sowie
 
 Sie können für jeden Dienstleister Rechnungen speichern und ihren Status sowie das betroffene Budget angeben.
 
-Rechnungen werden im Knoten **[!UICONTROL MRM > Rechnungen]** des Adobe-Campaign-Navigationsbaums erstellt.
+Rechnungen werden im Knoten **[!UICONTROL MRM > Rechnungen]** des Adobe Campaign-Navigationsbaums erstellt.
 
 ![](assets/s_user_cost_create_invoice.png)
 
