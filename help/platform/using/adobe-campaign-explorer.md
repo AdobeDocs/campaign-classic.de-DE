@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: f91d69a4-b794-40f0-b450-de862d7333e2
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 22aa5f76541e6ff1612907ab0b34f0ac468fb9a6
 workflow-type: tm+mt
-source-wordcount: '454'
-ht-degree: 100%
+source-wordcount: '87'
+ht-degree: 58%
 
 ---
 
@@ -20,68 +20,74 @@ ht-degree: 100%
 
 Auf den Adobe Campaign-Explorer kann über das entsprechende Symbol in der Symbolleiste zugegriffen werden. Mit seiner Hilfe gelangen Sie zu allen Adobe Campaign-Funktionen und in die verschiedenen Konfigurationsbildschirme der Adobe Campaign-Plattform und können einige Plattformelemente im Detail anzeigen.
 
-Der **[!UICONTROL Explorer]**-Arbeitsbereich ist in drei Bereiche unterteilt:
+>[!NOTE]
+>
+>Weitere Informationen zu Adobe Campaign Explorer finden Sie auf den folgenden Seiten in der Dokumentation zu Campaign v8: Weitere [Informationen zur Benutzeroberfläche](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui#ac-explorer-ui){target=_blank}, [Einstellungen](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/configuration/ui-settings){target=_blank} oder [Verwalten von Ordnern und Ansichten im Explorer](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
+
+
+<!--
+The **[!UICONTROL Explorer]** workspace is divided into three zones:
 
 ![](assets/s_ncs_user_navigation.png)
 
-**1 – Baum**: Sie können den Inhalt des Baums anpassen (Knoten hinzufügen, verschieben oder löschen). Dies sollte nur von Experten durchgeführt werden. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](#about-navigation-hierarchy).
+**1 - Tree**: you can personalize the content of the tree (add, move, or delete nodes). This procedure is intended for expert users only. For more on this, refer to  [this section](#about-navigation-hierarchy).).
 
-**2 – Liste**: Sie können diese Liste filtern, Suchvorgänge durchführen, Informationen hinzufügen und Daten darin sortieren. [Weitere Informationen](adobe-campaign-ui-lists.md).
+**2 - List**: you can filter this list, run searches, add information, or sort data. [Learn more](adobe-campaign-ui-lists.md).
 
-**3 – Details**: Sie können Details des ausgewählten Elements anzeigen. Mit dem Symbol rechts oben können Sie die Anzeige zum Vollbildschirm vergrößern.
+**3 - Details**: you can display the details of the selected element. The icon in the upper right-hand section lets you display this information in full-screen format.
 
-## Ordner und Navigationsbaum{#about-navigation-hierarchy}
+## Folders and navigation tree{#about-navigation-hierarchy}
 
-Der Navigationsbaum funktioniert wie ein Datei-Browser (z. B. Windows Explorer). Ordner können Unterordner enthalten. Wenn Sie einen Knoten auswählen, wird die dem Knoten entsprechende Ansicht angezeigt.
+The navigation tree works like a file browser (e.g. Windows Explorer). Folders may contain sub-folders. Selecting a node displays the view corresponding to the node.
 
-Die angezeigte Ansicht ist eine Liste, die mit einem Schema und einem Eingabeformular zur Bearbeitung der ausgewählten Zeile verknüpft ist.
+The view displayed is a list associated with a schema and an input form to edit the selected line.
 
 ![](assets/d_ncs_integration_navigation.png)
 
-Um dem Baum einen neuen Ordner hinzuzufügen, klicken Sie mit der rechten Maustaste auf den Ordner in der Verzweigung, wo Sie einen Ordner einfügen möchten, und wählen Sie **[!UICONTROL Neuen Ordner hinzufügen]** aus. Wählen Sie im Shortcut-Menü den zu erstellenden Dateityp aus.
+To add a new folder to the tree, right-click the folder in the branch where you wish to insert a folder, and select **[!UICONTROL Add new folder]** . In the shortcut menu, select the type of file to be created.
 
 ![](assets/d_ncs_integration_navigation_create.png)
 
-[In diesem Abschnitt](../../configuration/using/configuration.md) erfahren Sie, wie Sie den Campaign-Navigationsbaum konfigurieren.
+Learn how to configure Campaign navigation tree [in this section](../../configuration/using/configuration.md).
 
-[In diesem Abschnitt](access-management-folders.md) erfahren Sie, wie Sie Berechtigungen für Ordner festlegen.
+Learn how to set permissions on folders [in this section](access-management-folders.md).
 
-## Best Practices für die Ordnerkonfiguration
+## Folder configuration best practices
 
-* **Integrierte Ordner verwenden**
+* **Use built-in folders**
 
-  Die Verwendung der integrierten Ordner macht es für nicht am Projekt beteiligte Personen einfacher, das Programm zu verwenden, zu warten und Fehler zu beheben. Sie sollten keine benutzerdefinierten Ordnerstrukturen für Empfänger, Listen, Versand usw. erstellen, sondern die Standardordner wie &quot;Administration&quot;, &quot;Profile und Zielgruppen&quot; und &quot;Kampagnenverwaltung&quot; verwenden.
+  Using the built-in folders makes it easier for people not involved in the project to use, maintain and troubleshoot the application. You should not create custom folder structures for recipients, lists, deliveries, etc., but use the standard folders such as Administration, Profiles & Targets, Campaign management.
 
-* **Unterordner erstellen**
+* **Create sub-folders**
 
-  Legen Sie technische Workflows im Standardordner &quot;Administration/Produktion/Technische Workflows&quot; ab und legen Sie für jeden Workflow-Typ Unterverzeichnisse an.
+  Place technical workflows under the standard folder: Administration / Production / Technical Workflows, and create subdirectories per workflow type.
+  
+* **Set a naming convention**
 
-* **Namenskonventionen festlegen**
+  For example you can name the workflows in alphabetical order, so that they appear sorted in the order of execution.
+  
+  For example:
+  
+  * A1 – import recipients, starts at 10:00;
+  * A2 – import tickets, starts at 11:00.
 
-  Sie können die Workflows beispielsweise in alphabetischer Reihenfolge benennen, sodass sie nach der Reihenfolge der Ausführung geordnet angezeigt werden.
+* **Create templates for users to start with**
 
-  Beispiel:
+  Create delivery templates, workflow templates, campaign templates specific to users. This structure can save time and make sure that the right delivery mapping and typologies are used for each user.
 
-   * A1 – Empfänger importieren, Beginn um 10:00 Uhr;
-   * A2 – Tickets importieren, Beginn um 11:00 Uhr.
+## Screen resolution {#screen-resolution}
 
-* **Vorlagen als Ausgangsbasis für Benutzer erstellen**
-
-  Erstellen Sie benutzerspezifische Versandvorlagen, Workflow-Vorlagen und Kampagnenvorlagen. Dies kann Zeit sparen und sicherstellen, dass für jeden Benutzer das richtige Versand-Mapping und die korrekten Typologien verwendet werden.
-
-## Bildschirmauflösung {#screen-resolution}
-
-Adobe empfiehlt für optimale Navigation und Nutzung eine Bildschirmauflösung von mindestens 1600 x 900 Pixel.
+For optimal navigation and usability, Adobe recommends using a minimum screen resolution of 1600x900 pixels.
 
 >[!CAUTION]
 >
->Auflösungen von weniger als 1.600 x 900 Pixeln werden von Adobe Campaign nicht unterstützt.
+>Resolutions under 1600x900 pixels are not supported by Adobe Campaign.
 
-Wenn im **[!UICONTROL Explorer]**-Arbeitsbereich einige Teile des Bereichs **[!UICONTROL Details]** abgeschnitten sind, erweitern Sie den Bereich mit dem Pfeil am oberen Rand oder klicken Sie auf die Schaltfläche **[!UICONTROL Vergrößern]**.
-
+In the **[!UICONTROL Explorer]** workspace, if some parts of the **[!UICONTROL Details]** zone appear to be truncated, expand it using the arrow on top of the zone or click the **[!UICONTROL Enlarge]** button.
 
 ![](assets/s_ncs_user_resolution.png)
 
-## Durchsuchen und Anpassen von Listen {#browsing-lists}
+## Browse and customize lists {#browsing-lists}
 
-[In diesem Abschnitt ](adobe-campaign-ui-lists.md) erfahren Sie, wie Sie Listen durchsuchen, verwalten und anpassen.
+Learn how to browse, manage and customize lists [in this section](adobe-campaign-ui-lists.md).
+-->
