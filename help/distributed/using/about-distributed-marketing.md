@@ -5,9 +5,9 @@ description: Erste Schritte mit verteiltem Marketing
 feature: Distributed Marketing
 exl-id: c166409b-e040-491e-840a-a41310935d75
 source-git-commit: a6b3c2c23ea5ee35e8829c750c35080d1ff56e00
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '140'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Kampagnen präsentieren sich in Form von sogenannten Kits, welche auf eine lokal
 
 >[!NOTE]
 >
->Weitere Informationen zum verteilten Marketing für Adobe Campaign und dessen Verwendung finden Sie in der [ zu Campaign v8 ](https://experienceleague.adobe.com/en/docs/campaign/automation/distributed-marketing/about-distributed-marketing){target=_blank}.
+>Weitere Informationen zum verteilten Marketing für Adobe Campaign und dessen Verwendung finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/automation/distributed-marketing/about-distributed-marketing){target=_blank}.
 
 <!--
 ## Terminology {#terminology}

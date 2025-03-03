@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: filtering-data
 exl-id: 58e54f67-dc87-42f1-8426-6f801e8e4fb6
 source-git-commit: 813ef65ff45407a92c5f9d7f3d07189972a5742b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '173'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Beim Navigieren im Adobe Campaign-**[!UICONTROL Explorer]** (zugänglich über d
 
 >[!NOTE]
 >
->Weitere Informationen zu Filtern und deren Verwendung finden Sie in der Dokumentation zu [Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/audience/create-audiences/create-filters){target=_blank}.
+>Weitere Informationen zu Filtern und deren Verwendung finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/audience/create-audiences/create-filters){target=_blank}.
 
 
 <!--

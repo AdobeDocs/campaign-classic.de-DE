@@ -5,9 +5,9 @@ description: Erfahren Sie, wie Sie Listen durchsuchen und konfigurieren.
 feature: Audiences, Data Management
 exl-id: 21656cc2-15a1-4156-8897-ea4fe3e9b97f
 source-git-commit: f43b15e61fb286a612f057d8d3bf5a1ff6ecb253
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '66'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ In der Campaign-Client-Console werden die Daten in Listen angezeigt. Sie können
 
 >[!NOTE]
 >
->Informationen zum Verwalten und Anpassen von Listen in Adobe Campaign finden Sie in der [ zu Campaign v8 ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings#customize-lists){target=_blank}.
+>Informationen zum Verwalten und Anpassen von Listen in Adobe Campaign finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/configuration/ui-settings#customize-lists){target=_blank}.
 
 <!--
 ## Count records {#counting-records}

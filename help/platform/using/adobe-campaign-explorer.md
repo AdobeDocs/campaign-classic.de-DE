@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: f91d69a4-b794-40f0-b450-de862d7333e2
 source-git-commit: 22aa5f76541e6ff1612907ab0b34f0ac468fb9a6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '87'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Auf den Adobe Campaign-Explorer kann über das entsprechende Symbol in der Symbo
 
 >[!NOTE]
 >
->Weitere Informationen zu Adobe Campaign Explorer finden Sie auf den folgenden Seiten in der Dokumentation zu Campaign v8: Weitere [Informationen zur Benutzeroberfläche](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui#ac-explorer-ui){target=_blank}, [Einstellungen](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/configuration/ui-settings){target=_blank} oder [Verwalten von Ordnern und Ansichten im Explorer](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
+>Weitere Informationen zum Adobe Campaign-Explorer finden Sie auf den folgenden Seiten in der Dokumentation zu Campaign v8. Die Seiten befassen sich mit der [Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/campaign-ui#ac-explorer-ui){target=_blank}, mit ihren [Einstellungen](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/configuration/ui-settings){target=_blank} und mit dem [Verwalten von Ordnern und Ansichten im Explorer](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
 
 
 <!--
