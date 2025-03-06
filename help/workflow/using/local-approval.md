@@ -3,8 +3,10 @@ product: campaign
 title: Lokale Validierung
 description: Lokale Validierung
 feature: Workflows
+hide: true
+hidefromtoc: true
 exl-id: 2d9cbfc8-1f99-4b38-8460-77c7c986e9ca
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '700'
 ht-degree: 100%
@@ -91,7 +93,7 @@ Dem Benutzer bieten sich zwei verschiedene Möglichkeiten, um einen Versand zu v
 
   Die an die zuvor gewählte Benutzergruppe gesandte Benachrichtigung ermöglicht die Validierung der Versandzielgruppe. Die Benachrichtigung enthält den in der Vorlage definierten Text, wobei der JavaScript-Ausdruck durch den berechneten Wert (hier &#39;574&#39;) ersetzt wird.
 
-  Klicken Sie zur Validierung auf den entsprechenden Link in der Benachrichtigung und verbinden Sie sich mit der Adobe-Campaign-Konsole.
+  Klicken Sie zur Validierung auf den entsprechenden Link in der Benachrichtigung und verbinden Sie sich mit der Adobe Campaign-Konsole.
 
   ![](assets/new-workflow-valid-webaccess.png)
 

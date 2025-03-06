@@ -6,10 +6,10 @@ title: Campaign Classic v7 – Handbuch
 user-guide-description: Produktdokumentation für Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 446062946b64c9a4d065b6a56d263914cbe628f8
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
-source-wordcount: '2562'
-ht-degree: 100%
+source-wordcount: '2571'
+ht-degree: 99%
 
 ---
 
@@ -238,6 +238,8 @@ ht-degree: 100%
       + [Inhalte anreichern](delivery/using/enriching-content.md)
       + [Automatisieren über Workflows](delivery/using/automating-via-workflows.md)
 + Marketing-Kampagnen organisieren {#orchestrating-campaigns}
+   + [Über Marketing-Kampagnen](campaign/using/about-marketing-campaigns.md)
+   + [Über die Kampagnenoptimierung](campaign-opt/using/about-campaign-optimization.md)
    + Über Marketing-Kampagnen {#about-marketing-campaigns}
       + [Marketing-Kampagnen entwerfen](campaign/using/designing-marketing-campaigns.md)
       + [Auf Marketing-Kampagnen zugreifen](campaign/using/accessing-marketing-campaigns.md)
@@ -250,14 +252,14 @@ ht-degree: 100%
       + [Genehmigungen einrichten und verwalten](campaign/using/marketing-campaign-approval.md)
       + [Kampagnen überwachen](campaign/using/marketing-campaign-monitoring.md)
       + [Dienstleister, Lager und Budgets](campaign/using/providers-stocks-and-budgets.md)
-   + Kampagnenoptimierung {#campaign-optimization}
-      + [Über Kampagnentypologien](campaign-opt/using/about-campaign-typologies.md)
-      + [Druckregeln](campaign-opt/using/pressure-rules.md)
-      + [Kohärenzregeln](campaign-opt/using/consistency-rules.md)
-      + [Kontrollregeln](campaign-opt/using/control-rules.md)
-      + [Filterregeln](campaign-opt/using/filtering-rules.md)
-      + [Regeln anwenden](campaign-opt/using/applying-rules.md)
-      + [Kampagnensimulation](campaign-opt/using/campaign-simulations.md)
+      + Kampagnenoptimierung {#campaign-optimization}
+         + [Über Kampagnentypologien](campaign-opt/using/about-campaign-typologies.md)
+         + [Druckregeln](campaign-opt/using/pressure-rules.md)
+         + [Kohärenzregeln](campaign-opt/using/consistency-rules.md)
+         + [Kontrollregeln](campaign-opt/using/control-rules.md)
+         + [Filterregeln](campaign-opt/using/filtering-rules.md)
+         + [Regeln anwenden](campaign-opt/using/applying-rules.md)
+         + [Kampagnensimulation](campaign-opt/using/campaign-simulations.md)
 + Verwaltung von Marketing-Ressourcen {#mrm}
    + [Über die Verwaltung von Marketing-Ressourcen](mrm/using/about-marketing-resource-management.md)
    + [Aufgaben erstellen und verwalten](mrm/using/creating-and-managing-tasks.md)
@@ -391,6 +393,7 @@ ht-degree: 100%
       + [Web-Anwendungen synchronisieren](integrations/using/synchronizing-web-applications.md)
       + [Fehlerbehebung bei [!DNL ACS Connector]](integrations/using/troubleshooting-the-acs-connector.md)
 + Mit Workflows automatisieren {#automating-with-workflows}
+   + [Über die Workflow-Automatisierung](workflow/using/about-workflow-automation.md)
    + Erste Schritte mit Workflows {#introduction}
       + [Über Workflows](workflow/using/about-workflows.md)
       + [Über Aktivitäten](workflow/using/about-activities.md)

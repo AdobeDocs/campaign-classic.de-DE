@@ -3,8 +3,10 @@ product: campaign
 title: Workflow für einen kanalübergreifenden Versand
 description: Weitere Informationen zu Workflows für einen kanalübergreifenden Versand.
 feature: Workflows, Channels Activity
+hide: true
+hidefromtoc: true
 exl-id: dfd36d2c-44ff-49a9-80b4-09eaf3377072
-source-git-commit: de9ff0b50d819038c97e8515ddb7d6cfeb4547a1
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
 workflow-type: tm+mt
 source-wordcount: '762'
 ht-degree: 100%

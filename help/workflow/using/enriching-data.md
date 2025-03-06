@@ -3,9 +3,11 @@ product: campaign
 title: Anreichern von Daten
 description: Erfahren Sie mehr über die Workflow-Aktivität "Anreicherung".
 feature: Workflows, Enrichment Activity
+hide: true
+hidefromtoc: true
 exl-id: ab786cf1-74a4-4185-a63d-84e776a2f776
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
-workflow-type: ht
+source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+workflow-type: tm+mt
 source-wordcount: '828'
 ht-degree: 100%
 
@@ -33,7 +35,7 @@ Ein in der **[!UICONTROL Empfängertabelle]** enthaltener Kontakt kann mehrere E
 
 ![](assets/uc1_enrich_2.png)
 
-Ziel des vorliegenden Beispiels ist es, den Teilnehmern des letzten Wettbewerbs eine je nach erreichtem Score personalisierte Mitteilung zukommen zu lassen. Der Teilnehmer mit dem höchsten Score erhält den ersten Preis, der Teilnehmer mit dem zweithöchsten Score einen Trostpreis und alle anderen Teilnehmer werden aufgefordert, ihr Glück beim nächsten Wettbewerb erneut zu versuchen.
+Ziel des vorliegenden Beispiels ist es, den Teilnehmern des letzten Wettbewerbs eine je nach erreichtem Score personalisierte Nachricht zukommen zu lassen. Der Teilnehmer mit dem höchsten Score erhält den ersten Preis, der Teilnehmer mit dem zweithöchsten Score einen Trostpreis und alle anderen Teilnehmer werden aufgefordert, ihr Glück beim nächsten Wettbewerb erneut zu versuchen.
 
 Der Workflow für dieses Anwendungsbeispiel stellt sich wie folgt dar:
 
