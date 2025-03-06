@@ -4,8 +4,10 @@ title: Sendungen für eine Marketing-Kampagne
 description: Erfahren Sie mehr über Sendungen zur Marketing-Kampagne
 role: User
 feature: Campaigns, Resource Management, Cross Channel Orchestration
+hide: true
+hidefromtoc: true
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
 workflow-type: tm+mt
 source-wordcount: '1550'
 ht-degree: 96%

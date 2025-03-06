@@ -4,8 +4,10 @@ title: Einrichten und Verwalten des Validierungsprozesses
 description: Erfahren Sie, wie Sie Genehmigungen von Marketing-Kampagnen verwalten.
 role: User
 feature: Approvals, Campaigns
+hide: true
+hidefromtoc: true
 exl-id: 8cbb2445-f5e4-4a25-ba7e-56e39ca9d3ce
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
 workflow-type: tm+mt
 source-wordcount: '2606'
 ht-degree: 100%
@@ -68,7 +70,7 @@ Wenn kein Prüfer angegeben ist, ist der Kampagnenverantwortliche für die Valid
 
 >[!NOTE]
 >
->Alle über **[!UICONTROL Administrator]**-Berechtigungen verfügende Adobe-Campaign-Benutzer sind ebenfalls befugt, Prozesse zu validieren. Sie erhalten jedoch keine Benachrichtigungen.\
+>Alle über **[!UICONTROL Administrator]**-Berechtigungen verfügende Adobe Campaign-Benutzer sind ebenfalls befugt, Prozesse zu validieren. Sie erhalten jedoch keine Benachrichtigungen.\
 >Wenn validierungsverantwortliche Benutzer definiert sind, kann der kampagnenverantwortliche Benutzer standardmäßig nicht die Validierung vornehmen oder den Versand starten. Wenn Sie zulassen möchten, dass der kampagnenverantwortliche Benutzer Sendungen validieren und starten kann, geben Sie für die Option **NmsCampaign_Activate_OwnerConfirmation** den Wert **1** ein.
 
 ## Validierungsmodi {#approval-modes}
@@ -240,7 +242,7 @@ Die Einstellungen können jedoch für jede Kampagne und jeden Versand überschri
 
 Um die Validierungseinstellungen einer Kampagne zu verändern, klicken Sie auf den Tab **[!UICONTROL Bearbeiten > Eigenschaften]**, öffnen Sie den Link **[!UICONTROL Erweitere Kampagnenparameter...]** und gehen Sie in den Untertab **[!UICONTROL Validierungen]**.
 
-Hier können Sie die zu validierenden Vorgänge aus- und abwählen sowie die für die Validierung verantwortlichen Adobe-Campaign-Benutzer bestimmen. Es kann sich hierbei um einzelne Benutzer, Benutzergruppen oder eine Liste von Benutzern handeln.
+Hier können Sie die zu validierenden Vorgänge aus- und abwählen sowie die für die Validierung verantwortlichen Adobe Campaign-Benutzer bestimmen. Es kann sich hierbei um einzelne Benutzer, Benutzergruppen oder eine Liste von Benutzern handeln.
 
 Um eine Benutzerliste zu erstellen, klicken Sie auf den Link **[!UICONTROL Bearbeiten...]** rechts von dem Feld, in dem der erste Validierungsverantwortliche angegeben wird. Fügen Sie nun so viele zusätzliche Benutzer wie nötig hinzu, wie im folgenden Beispiel:
 
@@ -333,7 +335,7 @@ Diese Option ermöglicht die Bestimmung einer für die Inhaltsbearbeitung verant
 
    Hierfür hat er folgende Möglichkeiten:
 
-   * Klick auf den Link **[!UICONTROL Inhalt unterbreiten]** über die Adobe-Campaign-Konsole.
+   * Klick auf den Link **[!UICONTROL Inhalt unterbreiten]** über die Adobe Campaign-Konsole.
 
      ![](assets/s_ncs_user_validation_submit_content_available.png)
 
