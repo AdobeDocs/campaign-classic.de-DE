@@ -8,7 +8,7 @@ exl-id: 07cfa2b3-4e70-437a-ad5f-15fbfe717d5c
 source-git-commit: dd6bcb16fe41b6a3f1e3f5aaf2f753b29ad4bc1d
 workflow-type: tm+mt
 source-wordcount: '296'
-ht-degree: 38%
+ht-degree: 42%
 
 ---
 
@@ -18,7 +18,7 @@ Adobe Campaign umfasst mehrere Lösungen, mit denen Sie Kampagnen personalisiere
 
 Kampagnen umfassen Aktionen (Sendungen) und Prozesse (Import oder Extraktion von Dateien) sowie Ressourcen (Marketing-Dokumente, Versandentwürfe). Sie werden in Marketing-Kampagnen verwendet. Kampagnen sind Teil eines Programms und Programme Teil eines Kampagnenplans.
 
-Weitere Informationen zur Kampagnenverwaltung finden Sie in der Dokumentation zu [ v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}.
+Weitere Informationen zum Kampagnen-Management finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=de){target=_blank}.
 
 ![](assets/do-not-localize/campaign.jpg){width="40%"}
 

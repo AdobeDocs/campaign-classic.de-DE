@@ -7,7 +7,7 @@ exl-id: 024a7344-9376-4ff3-926a-003148229f9f
 source-git-commit: dd6bcb16fe41b6a3f1e3f5aaf2f753b29ad4bc1d
 workflow-type: tm+mt
 source-wordcount: '274'
-ht-degree: 60%
+ht-degree: 64%
 
 ---
 
@@ -21,7 +21,7 @@ Oder benachrichtigen Sie andere Benutzer und fordern Sie sie dazu auf, Vorgänge
 
 In Adobe Campaign kommen Workflows in unterschiedlichsten Kontexten und zu verschiedenen Zeitpunkten innerhalb der Kampagnenprozesse zum Einsatz.
 
-Weitere Informationen zur Verwaltung von Workflows finden Sie in der Dokumentation [Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=de){target=_blank}.
+Weitere Informationen zur Verwaltung von Workflows finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=de){target=_blank}.
 
 ![](assets/do-not-localize/workflow.jpg){width="40%"}
 
