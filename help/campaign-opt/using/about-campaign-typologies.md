@@ -8,9 +8,9 @@ hide: true
 hidefromtoc: true
 exl-id: 6d5b8584-4aa1-4d9a-89d9-d41da75dd323
 source-git-commit: dd6bcb16fe41b6a3f1e3f5aaf2f753b29ad4bc1d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '104'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Abhängig von Ihrem Abonnement ist die Kampagnenoptimierung entweder im Lieferum
 
 >[!NOTE]
 >
->Weitere Informationen zur Kampagnenoptimierung für Adobe Campaign und deren Verwendung finden Sie in der Dokumentation zu [ v8 ](https://experienceleague.adobe.com/de/docs/campaign/automation/campaign-optimization/campaign-typologies){target=_blank}.
+>Weitere Informationen zur Kampagnenoptimierung für Adobe Campaign und deren Verwendung finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/automation/campaign-optimization/campaign-typologies){target=_blank}.
 
 <!--
 
