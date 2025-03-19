@@ -58,7 +58,7 @@ Informationen zur Überwachung der Workflow-Ausführung in Campaign [finden Sie 
 
 ## 6. Wie kann ich eine Verbindung zu Campaign Classic herstellen? {#how-can-i-connect-to-campaign-classic-}
 
-Starten Sie die Adobe Campaign-Clientkonsole und geben Sie Ihr Login und Passwort in Ihre Instanz ein.
+Um eine Verbindung zu Adobe Campaign Classic herzustellen, starten Sie die Adobe Campaign-Client-Konsole und geben Sie Ihr Login und Passwort in Ihre Instanz ein.
 
 [Hier erfahren Sie mehr darüber](../../platform/using/launching-adobe-campaign.md).
 

@@ -25,13 +25,13 @@ In diesem Kapitel werden Server-seitige Konfigurationen beschrieben, die entspre
 
 Diese Verfahren sind auf On **Premise-/****Hybrid** Bereitstellungen beschränkt und erfordern Administratorberechtigungen.
 
-Bei **gehosteten** Bereitstellungen können Server-seitige Einstellungen nur per Adobe konfiguriert werden. Auf die Zulassungsliste setzen Einige Einstellungen können jedoch im Control Panel von [ eingerichtet werden](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=de) z. B. die IP-Dateiverwaltung oder URL-Berechtigungen. [Weitere Informationen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=de).
+Bei **gehosteten** können Server-seitige Einstellungen nur von Adobe konfiguriert werden. Auf die Zulassungsliste setzen Einige Einstellungen können jedoch im Control Panel von [ eingerichtet werden](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=de) z. B. die IP-Dateiverwaltung oder URL-Berechtigungen. [Weitere Informationen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=de).
 
 Weitere Informationen finden Sie in den folgenden Abschnitten:
 
 * [Control Panel-Dokumentation](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de)
 * [Hosting-Modelle](../../installation/using/hosting-models.md)
-* [Campaign Classic-On-Premise- und Hosted-Funktionsmatrix](../../installation/using/capability-matrix.md)
+* [Matrix mit On-Premise- und gehosteten Funktionen von Campaign Classic](../../installation/using/capability-matrix.md)
 
 ## Konfigurationsdateien
 
@@ -257,7 +257,7 @@ Dieser Benutzer muss der Audier-Liste des Adobe Campaign-Benutzers „neolane“
 
 ## Redundante Verfolgung {#redundant-tracking}
 
-Wenn mehrere Server für die Umleitung verwendet werden, müssen sie über SOAP-Aufrufe miteinander kommunizieren können, um Informationen aus den umzuleitenden URLs austauschen zu können. Beim Start des Versands sind möglicherweise nicht alle Weiterleitungsserver verfügbar, sodass diese möglicherweise nicht über dieselbe Informationsstufe verfügen.
+Wenn mehrere Server für die Umleitung verwendet werden, müssen sie in der Lage sein, über SOAP-Aufrufe miteinander zu kommunizieren, um Informationen aus den umzuleitenden URLs auszutauschen. Beim Start des Versands sind möglicherweise nicht alle Weiterleitungsserver verfügbar, sodass diese möglicherweise nicht über dieselbe Informationsstufe verfügen.
 
 >[!NOTE]
 >

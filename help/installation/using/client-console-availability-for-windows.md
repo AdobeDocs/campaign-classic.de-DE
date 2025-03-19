@@ -23,7 +23,7 @@ Damit sich Adobe Campaign-Benutzende bei der von Ihnen erstellten und konfigurie
 
 ## Client-Konsole verfügbar machen
 
-Wenn der Computer, der zum Starten eines Adobe Campaign-Anwendungsservers (**nlserver web**) verwendet wird, Benutzerverbindungen von der Client-Konsole erhält, können Sie ihn so konfigurieren, dass das Installationsprogramm für den Adobe Campaign Rich-Client über eine HTML-Schnittstelle verfügbar gemacht wird. Wenn eine neue Version der Client-Konsole verfügbar ist, werden Benutzer beim Starten ihrer Client-Konsole aufgefordert, diese herunterzuladen.
+Wenn der Computer, der zum Starten eines Adobe Campaign-Anwendungsservers (**nlserver web**) verwendet wird, Benutzerverbindungen von der Client-Konsole erhält, können Sie ihn so konfigurieren, dass das Installationsprogramm für den Adobe Campaign Rich-Client über eine HTML-Oberfläche verfügbar gemacht wird. Wenn eine neue Version der Client-Konsole verfügbar ist, werden Benutzer beim Starten ihrer Client-Konsole aufgefordert, diese herunterzuladen.
 
 Gehen Sie dazu folgendermaßen vor:
 

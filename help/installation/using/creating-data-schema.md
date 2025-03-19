@@ -27,7 +27,7 @@ So erstellen Sie ein Schema für eine externe Datenbank:
 
 1. Wählen Sie im Feld **[!UICONTROL Tabellenname]** die Tabelle aus, die die zu erfassenden Daten enthält.
 
-   Mit Snowflake können Sie hier Ihre Ansichten auswählen, ob dem Datenbankbenutzer die richtigen Berechtigungen gewährt wurden. Beachten Sie, dass Adobe Campaign bei Verwendung von Ansichten das XML-Schema nicht automatisch generieren kann, sondern selbst erstellen muss. Weitere Informationen zu Ansichten finden Sie in der [Snowflake-Dokumentation](https://docs.snowflake.com/en/user-guide/views-introduction.html).
+   Bei Snowflake können Sie hier Ihre Ansichten auswählen, ob dem Datenbankbenutzer die richtigen Berechtigungen gewährt wurden. Beachten Sie, dass Adobe Campaign bei Verwendung von Ansichten das XML-Schema nicht automatisch generieren kann, sondern selbst erstellen muss. Weitere Informationen zu Ansichten finden Sie in der [Dokumentation zu Snowflake](https://docs.snowflake.com/en/user-guide/views-introduction.html).
 
    ![](assets/wf_new_schema_select_table_fda.png)
 

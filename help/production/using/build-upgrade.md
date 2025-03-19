@@ -21,7 +21,7 @@ ht-degree: 37%
 
 In diesem Abschnitt finden Sie eine ausführliche Anleitung zum Upgrade-Prozess und zu den Schritten zum Identifizieren und Beheben von Konflikten.
 
-Das Build-Upgrade muss mit Vorsicht durchgeführt werden, seine Auswirkungen müssen zuvor vollständig berücksichtigt werden und das Verfahren muss mit einem hohen Maß an Disziplin abgeschlossen werden. Um ein erfolgreiches Upgrade sicherzustellen, stellen Sie sicher, dass nur erfahrene Benutzer die unten beschriebenen Schritte ausführen. Darüber hinaus empfehlen wir dringend, sich vor einem Upgrade an die [Adobe-Kundenunterstützung ](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) wenden.
+Das Build-Upgrade muss mit Vorsicht durchgeführt werden, seine Auswirkungen müssen zuvor vollständig berücksichtigt werden und das Verfahren muss mit einem hohen Maß an Disziplin abgeschlossen werden. Um ein erfolgreiches Upgrade sicherzustellen, stellen Sie sicher, dass nur erfahrene Benutzer die unten beschriebenen Schritte ausführen. Darüber hinaus empfehlen wir dringend, sich vor einem Upgrade an die [Adobe](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)Kundenunterstützung zu wenden.
 
 Die folgenden Voraussetzungen sind erforderlich:
 
@@ -31,7 +31,7 @@ Die folgenden Voraussetzungen sind erforderlich:
 
 Adobe Campaign Weitere Informationen finden Sie in den folgenden Abschnitten: [Aktualisieren von ](../../production/using/upgrading.md), [Migrieren zu einer neuen Version](../../migration/using/about-migration.md).
 
-Bei gehosteten und hybriden Instanzen müssen Sie das Build-Upgrade an das Adobe-Team für technische Vorgänge anfordern. Weiterführende Informationen hierzu finden Sie im Abschnitt Häufig gestellte Fragen unten auf dieser Seite. Lesen Sie auch die [häufig gestellte Fragen zum Build-Upgrade](../../platform/using/faq-build-upgrade.md).
+Bei gehosteten und hybriden Instanzen müssen Sie das Build-Upgrade an das Team für technische Vorgänge in Adobe anfordern. Weiterführende Informationen hierzu finden Sie im Abschnitt Häufig gestellte Fragen unten auf dieser Seite. Lesen Sie auch die [häufig gestellte Fragen zum Build-Upgrade](../../platform/using/faq-build-upgrade.md).
 
 ## Upgrade vorbereiten
 

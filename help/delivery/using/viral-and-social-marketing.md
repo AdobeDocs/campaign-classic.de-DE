@@ -63,7 +63,7 @@ Folgende Schritte sind dazu nötig:
 
    ![](assets/s_ncs_user_viral_email_msg.png)
 
-   Der Klick auf die Schaltfläche **[!UICONTROL Senden]** löst den Versand der Mitteilung aus.
+   Der Klick auf die Schaltfläche **[!UICONTROL Senden]** löst den Versand der Nachricht aus.
 
    >[!NOTE]
    >

@@ -23,7 +23,7 @@ Bevor Sie mit der Installation der Client-Konsole beginnen, müssen Sie:
 * Überprüfen Sie die Kompatibilität Ihres Systems und Ihrer Tools mit Adobe Campaign in der [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)
 * Ermitteln Sie Ihre Campaign-Server-URL
 * Ermitteln Sie Ihre Anwender-Anmeldedaten
-* Microsoft Edge Webview2 Runtime auf Ihrem System installieren (ab Campaign Classic 7.3 Build-Version). [Weitere Informationen](#webview)
+* Die Microsoft Edge Webview2-Laufzeitumgebung muss auf Ihrem System installiert sein (ab Campaign Classic 7.3-Build-Version). [Weitere Informationen](#webview)
 
 Der Prozess zum Installieren oder Aktualisieren der Client-Konsole hängt von der Implementierung der Adobe Campaign Classic ab.
 Bitte überprüfen Sie die folgenden Details, um zu verstehen, was für Ihre Implementierung erforderlich ist.
@@ -44,11 +44,11 @@ Ab der Build-Version 7.3 von Campaign Classic ist die Installation der Microsoft
 
 WebView wird standardmäßig als Teil des Betriebssystems Windows 11 installiert. Wenn es nicht bereits auf Ihrem System vorhanden ist, werden Sie vom Installationsprogramm der Campaign Classic-Konsole aufgefordert, es von der [Microsoft Developer Website herunterzuladen](https://www.adobe.com/go/acc-ms-webview2-runtime-download_de). Beachten Sie, dass der Download-Link nicht mit Internet Explorer 11 funktioniert, da Microsoft die Unterstützung dieses Browsers eingestellt hat. Stellen Sie sicher, dass Sie einen anderen Browser verwenden, um auf den Link zuzugreifen.
 
-## Gehostete Adobe-Implementierungen {#hosted-customers}
+## Von Adobe gehostete Implementierungen {#hosted-customers}
 
 Als gehosteter Kunde haben Sie zwei Möglichkeiten, Ihre Client-Konsole(en) zu installieren oder zu aktualisieren:
 
-1. Adobe kann direkt bereitgestellt werden. Sobald die Konsole aktualisiert wurde, werden Benutzer in einem Popup-Fenster aufgefordert, die neueste Version der Client-Konsole herunterzuladen.
+1. Adobe kann direkt bereitstellen. Sobald die Konsole aktualisiert wurde, werden Benutzer in einem Popup-Fenster aufgefordert, die neueste Version der Client-Konsole herunterzuladen.
 
 1. Sie können von „Software Distribution“ auf [ Client-Konsole(en) ](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html)
 
@@ -60,7 +60,7 @@ Damit sich Adobe Campaign-Benutzende bei der von Ihnen erstellten und konfigurie
 
 ### Konsole für Benutzer verfügbar machen {#make-console-available}
 
-Wenn der Computer, der zum Starten eines Adobe Campaign-Anwendungsservers (nlserver web) verwendet wird, Benutzerverbindungen von der Client-Konsole erhält, können Sie ihn so konfigurieren, dass das Installationsprogramm für den Adobe Campaign Rich-Client über eine HTML-Schnittstelle verfügbar gemacht wird. Wenn eine neue Version der Client-Konsole verfügbar ist, werden Benutzer beim Starten ihrer Client-Konsole aufgefordert, diese herunterzuladen.
+Wenn der Computer, der zum Starten eines Adobe Campaign-Anwendungsservers (nlserver web) verwendet wird, Benutzerverbindungen von der Client-Konsole erhält, können Sie ihn so konfigurieren, dass das Installationsprogramm für den Adobe Campaign Rich-Client über eine HTML-Oberfläche verfügbar gemacht wird. Wenn eine neue Version der Client-Konsole verfügbar ist, werden Benutzer beim Starten ihrer Client-Konsole aufgefordert, diese herunterzuladen.
 
 Gehen Sie dazu folgendermaßen vor:
 
@@ -116,7 +116,7 @@ Benutzer sollten jetzt die Konsole herunterladen und installieren, indem sie die
 
 1. Klicken Sie auf der **[!UICONTROL auf]** Link „Herunterladen“.
 1. Laden Sie die Client-Setup-Datei herunter und speichern Sie sie.
-1. Führen Sie die heruntergeladene Datei auf einem Computer unter Windows aus: Die Installation wird gestartet. Der Standardinstallationspfad der Client-Konsole lautet **$PROGRAMFILES$/Adobe/Adobe Campaign Classic vX Client**, wobei „X“ je nach Adobe Campaign-Version „6“ oder „7“ ist.
+1. Führen Sie die heruntergeladene Datei auf einem Computer unter Windows aus: Die Installation wird gestartet. Der standardmäßige Installationspfad der Client-Konsole lautet **$PROGRAMFILES$/Adobe/Adobe Campaign Classic vX Client**, wobei „X“ je nach Adobe Campaign-Version „6“ oder „7“ ist.
 
 ### Verbindung erstellen - nur erstmalige Benutzer{#create-the-connection}
 

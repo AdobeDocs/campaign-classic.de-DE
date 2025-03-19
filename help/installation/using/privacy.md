@@ -54,7 +54,7 @@ Darüber hinaus können Sie eine Verbesserung verwenden, um in vorherigen Builds
 
 Wenn Sie mit dem Build 19.1.4 arbeiten, können Probleme mit Push-Benachrichtigungs-Sendungen unter Verwendung von Tracking-Links oder Sendungen unter Verwendung von Anker-Tags auftreten. Wenn ja, empfehlen wir, die URL-Signatur zu deaktivieren.
 
-Als gehosteter Campaign-, Managed Cloud Service- oder Hybrid-Kunde müssen Sie sich an die [Kundenunterstützung“ wenden](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html) um die URL-Signatur deaktivieren zu lassen.
+Als gehosteter Campaign-, Managed Cloud Services- oder Hybrid-Kunde müssen Sie sich an die [Kundenunterstützung“ wenden](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html) um die URL-Signatur deaktivieren zu lassen.
 
 Wenn Sie Campaign in einer Hybridarchitektur ausführen, müssen Sie vor dem Aktivieren der URL-Signatur sicherstellen, dass die gehostete Mid-Sourcing-Instanz wie folgt aktualisiert wurde:
 
@@ -151,7 +151,7 @@ Gehen Sie dazu wie folgt vor:
    >
    >Sie können `$(loginId) = 0 or $(login) = 'admin'` durch `hasNamedRight('admin')` ersetzen, damit diese Kennwörter für alle Benutzer mit Administratorrechten angezeigt werden.
 
-## Protect-Seiten mit API
+## Schützen von Seiten mit personenbezogenen Daten
 
 Wir empfehlen On-Premise-Kunden dringend, die Seiten zu schützen, die möglicherweise personenbezogene Daten (PI) enthalten, wie Mirror-Seiten, Web-Anwendungen usw.
 

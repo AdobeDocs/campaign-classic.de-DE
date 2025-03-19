@@ -20,7 +20,7 @@ ht-degree: 67%
 
 Verwenden Sie die [-Option (Federated Data Access](../../installation/using/about-fda.md) (FDA) von Campaign, um in einer externen Datenbank gespeicherte Informationen zu verarbeiten. Gehen Sie wie folgt vor, um den Zugriff auf Netezza zu konfigurieren.
 
-1. Installieren und Konfigurieren von [Netezza-Treibern](#netezza-config)
+1. [Netezza-Treiber installieren und konfigurieren](#netezza-config)
 1. Konfigurieren des Netezza [externen Kontos](#netezza-external) in Campaign
 
 ## Netezza-Konfiguration {#netezza-config}
@@ -70,9 +70,9 @@ Die Verbindung zu einer externen Netezza-Datenbank über die FDA-Option erforder
    * **ODBCINI**: Pfad der odbc.ini-Datei (z. B. /etc/odbc.ini).
    * **NZ_ODBC_INI_PATH**: Pfad der Datei „odbc.ini“. In Netezza ist auch diese zweite Variable zur Verwendung der odbc.ini-Datei erforderlich.
 
-## Externes netezza-Konto {#netezza-external}
+## Externes Netezza-Konto {#netezza-external}
 
-Mit dem externen Netezza-Konto können Sie Ihre Campaign-Instanz mit Ihrer externen Netezza-Datenbank verbinden.
+Mit dem externen Konto Netezza können Sie Ihre Campaign-Instanz mit Ihrer externen Netezza-Datenbank verbinden.
 
 1. Klicken Sie **[!UICONTROL Campaign-]** auf **[!UICONTROL Administration]** &quot;>&quot; **[!UICONTROL Plattform]** &quot;>&quot; **[!UICONTROL Externe Konten]**.
 

@@ -9,7 +9,7 @@ topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
 source-git-commit: f032ed3bdc0b402c8281bc34e6cb29f3c575aaf9
 workflow-type: tm+mt
-source-wordcount: '8067'
+source-wordcount: '8066'
 ht-degree: 6%
 
 ---
@@ -20,7 +20,7 @@ Die Gesamtkonfiguration von Adobe Campaign wird in der Datei **serverConf.xml** 
 
 >[!NOTE]
 >
->Server-seitige Konfigurationen können nur von Adobe für Bereitstellungen durchgeführt werden, die von Adobe gehostet werden. Weitere Informationen zu den verschiedenen Bereitstellungen finden Sie im Abschnitt [Hosting](../../installation/using/hosting-models.md) oder auf [dieser Seite](../../installation/using/capability-matrix.md). Die Installations- und Konfigurationsschritte für gehostete und Hybridmodelle werden in diesem [Abschnitt](../../installation/using/hosting-models.md) beschrieben.
+>Server-seitige Konfigurationen können von Adobe nur für Bereitstellungen durchgeführt werden, die von Adobe gehostet werden. Weitere Informationen zu den verschiedenen Bereitstellungen finden Sie im Abschnitt [Hosting](../../installation/using/hosting-models.md) oder auf [dieser Seite](../../installation/using/capability-matrix.md). Die Installations- und Konfigurationsschritte für gehostete und Hybridmodelle werden in diesem [Abschnitt](../../installation/using/hosting-models.md) beschrieben.
 
 Die ersten Parameter befinden sich im Knoten **shared**. Diese beziehen sich auf die Instanz. Sie werden möglicherweise von allen nlserver-Befehlen (nlserver web, nlserver wfserver usw.) verwendet. Die anderen Abschnitte beziehen sich auf einen bestimmten nlserver-Unterbefehl.
 
@@ -582,7 +582,7 @@ Weitere Informationen finden Sie unter [Einschränken autorisierter externer Bef
 
 ## htmlToPDF {#htmltopdf}
 
-Im Folgenden finden Sie die verschiedenen Parameter des **htmlToPdf**-Knotens. Dies ist die Konfiguration des Dienstes zum Konvertieren von Webseiten in PDF-Dokumente.
+Im Folgenden finden Sie die verschiedenen Parameter des **htmlToPdf**-Knotens. Dies ist die Konfiguration des Service zum Konvertieren von Web-Seiten in PDF-Dokumente.
 
 <table> 
  <thead> 
@@ -2897,7 +2897,7 @@ Weitere Informationen finden Sie in diesem [Abschnitt](configuring-campaign-serv
   </tr> 
   <tr> 
    <td> maxDeliveryQueueSize<br /> </td> 
-   <td> Größe der Warteschlange für SubmitDelivery-Aufrufe: Maximale Anzahl an SubmitDelivery-SOAP-Aufrufen, die in die Warteschlange gestellt werden können.<br /> </td> 
+   <td> Größe der Warteschlange für SubmitDelivery-Aufrufe: Maximale Anzahl von SubmitDelivery SOAP-Aufrufen, die in die Warteschlange gestellt werden können.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 50 <br /> </td> 
   </tr> 

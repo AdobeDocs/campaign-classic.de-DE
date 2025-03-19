@@ -88,7 +88,7 @@ Das InSMS-Schema enthält Informationen zu eingehenden SMS. Die Beschreibung die
 * **origin**: Mobiltelefonnummer des Nachrichtenabsenders.
 * **providerId**: Kennung der vom SMS-SC (Short Message Service Centre) zurückgegebenen Nachricht.
 * **created**: Eingangsdatum der Nachricht in Adobe Campaign.
-* **extAccount**: externes Adobe-Campaign-Konto.
+* **extAccount**: externes Adobe Campaign-Konto.
 
   >[!IMPORTANT]
   >
@@ -104,7 +104,7 @@ Das InSMS-Schema enthält Informationen zu eingehenden SMS. Die Beschreibung die
 * **largeAccount**: Code des der eingehenden SMS zugeordneten Kundenkontos.
 * **countryCode**: Ländercode des Betreibers.
 * **operatorCode**: Netzwerkcode des Betreiber.
-* **linkedSmsId**: Adobe-Campaign-Kennung (broadlogId) der ausgehenden SMS, auf die diese SMS antwortet.
+* **linkedSmsId**: Adobe Campaign-Kennung (broadlogId) der ausgehenden SMS, auf die diese SMS antwortet.
 
 ## Automatische Antworten verwalten (US-amerikanische Gesetzgebung) {#managing-automatic-replies--american-regulation-}
 

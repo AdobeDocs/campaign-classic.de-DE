@@ -107,7 +107,7 @@ Wenn Sie bestimmte Felder als Pflichtfelder festlegen möchten, wählen Sie bei 
 
 ![](assets/s_ncs_admin_survey_required_field.png)
 
-Sollte ein Benutzer diese Seite validieren, ohne das Feld ausgefüllt zu haben, wird ihm die folgende Mitteilung angezeigt:
+Sollte ein Benutzer diese Seite validieren, ohne das Feld ausgefüllt zu haben, wird ihm die folgende Meldung angezeigt:
 
 ![](assets/s_ncs_admin_survey_required_default_msg.png)
 
@@ -115,7 +115,7 @@ Sie können diese Mitteilung anpassen, indem Sie den Link **[!UICONTROL Nachrich
 
 ![](assets/s_ncs_admin_survey_required_custom_msg.png)
 
-Sollte ein Benutzer diese Seite validieren, ohne das Feld ausgefüllt zu haben, wird ihm die folgende Mitteilung angezeigt:
+Sollte ein Benutzer diese Seite validieren, ohne das Feld ausgefüllt zu haben, wird ihm die folgende Meldung angezeigt:
 
 ![](assets/s_ncs_admin_survey_required_custom_msg2.png)
 

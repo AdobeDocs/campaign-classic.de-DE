@@ -92,7 +92,7 @@ Die Befehle werden in derselben Reihenfolge angezeigt, in der sie im XML-Dokumen
 
 Mit einem Befehlstrennzeichen können Sie eine Trennleiste zwischen Befehlen anzeigen. Er wird durch den Wert **&#39;-&#39;** identifiziert, der in der Befehlsbeschriftung enthalten ist.
 
-Das optionale Vorhandensein des **`<soapcall>`**-Tags mit seinen Eingabeparametern definiert den Aufruf einer auszuführenden SOAP-Methode. Weitere Informationen zur SOAP-API finden Sie in der [Campaign JSAPI-](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=de).
+Das optionale Vorhandensein des **`<soapcall>`**-Tags mit seinen Eingabeparametern definiert den Aufruf einer auszuführenden SOAP-Methode. Weitere Informationen zur SOAP-API finden Sie in der [Campaign JSAPI-Dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=de).
 
 Der Formularkontext kann bei Initialisierung über das Tag **`<enter>`** aktualisiert werden. Weitere Informationen zu diesem Tag finden Sie in der Dokumentation zu Formularen.
 

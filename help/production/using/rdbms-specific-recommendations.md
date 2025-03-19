@@ -84,7 +84,7 @@ Um Sie beim Einrichten von Wartungsplänen zu unterstützen, werden in diesem Ab
 
 >[!IMPORTANT]
 >
->Adobe empfiehlt dringend, VACUUM FULL nicht auf Campaign Adobe-gehosteten Datenbankeinstellungen auszuführen. Die empfohlenen Wartungsarbeiten sind nur für On-Premise-Installationen gedacht. Verwenden Sie für benutzerdefinierte Tabellenimplementierungen und Schemata VACUUM FULL auf eigene Gefahr, da VACUUM - ohne Überwachung - ausschließlich Tabellen sperren kann, die zu angehaltenen Abfragen führen, und in einigen Fällen die gesamte Datenbank sperren kann.
+>Adobe empfiehlt dringend, VACUUM FULL nicht auf von Campaign Adobe gehosteten Datenbank-Setups auszuführen. Die empfohlenen Wartungsarbeiten dienen nur als Anleitung für On-Premise-Installationen. Verwenden Sie für benutzerdefinierte Tabellenimplementierungen und Schemata VACUUM FULL auf eigene Gefahr, da VACUUM - ohne Überwachung - ausschließlich Tabellen sperren kann, die zu angehaltenen Abfragen führen, und in einigen Fällen die gesamte Datenbank sperren kann.
 
 In PostgreSQL können Sie die folgenden typischen Schlüsselwörter verwenden:
 
@@ -142,9 +142,9 @@ VACUUM (FULL, ANALYZE, VERBOSE) nmsmirrorpageinfo;
 >[!NOTE]
 >
 >* Adobe empfiehlt, mit kleineren Tabellen zu beginnen: Auf diese Weise ist, wenn der Vorgang bei großen Tabellen fehlschlägt (bei denen das Fehlerrisiko am höchsten ist), zumindest ein Teil der Wartung abgeschlossen.
->* Adobe empfiehlt, die Tabellen hinzuzufügen, die für Ihr Datenmodell spezifisch sind und daher erheblich aktualisiert werden können. Dies kann bei „NmsRecipient **der Fall sein** wenn Sie über große tägliche Datenreplikationsflüsse verfügen.
+>* Adobe empfiehlt, die für Ihr Datenmodell spezifischen Tabellen hinzuzufügen, die erheblich aktualisiert werden können. Dies kann bei „NmsRecipient **der Fall sein** wenn Sie über große tägliche Datenreplikationsflüsse verfügen.
 >* Die VACUUM-Anweisung sperrt die Tabelle, wodurch einige Prozesse angehalten werden, während die Wartung durchgeführt wird.
->* Bei sehr großen Tabellen (typischerweise über 5 GB) kann die VACUUM FULL-Anweisung sehr ineffizient werden und sehr lange dauern. Adobe empfiehlt nicht, es für die Tabelle **YyyNmsBroadLogXxx** zu verwenden.
+>* Bei sehr großen Tabellen (typischerweise über 5 GB) kann die VACUUM FULL-Anweisung sehr ineffizient werden und sehr lange dauern. Adobe rät davon ab, sie für die Tabelle **YyyNmsBroadLogXxx** zu verwenden.
 >* Dieser Wartungsvorgang kann durch einen Adobe Campaign-Workflow mithilfe einer **[!UICONTROL SQL]**-Aktivität implementiert werden. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../workflow/using/architecture.md). Stellen Sie sicher, dass Sie die Wartung für eine kurze Zeitspanne ohne Kollision mit dem Backup-Fenster planen.
 >
 
@@ -406,7 +406,7 @@ function sqlGetMemo(strSql)
 
 ## Oracle {#oracle}
 
-Wenden Sie sich an Ihren Datenbankadministrator, um mehr über die Verfahren zu erfahren, die für Ihre Oracle-Version am besten geeignet sind.
+Wenden Sie sich an Ihren Datenbankadministrator, um mehr über die Verfahren zu erfahren, die für Ihre Version von Oracle am besten geeignet sind.
 
 ## Microsoft SQL Server {#microsoft-sql-server}
 

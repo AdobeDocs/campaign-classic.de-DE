@@ -66,7 +66,7 @@ Gehen Sie wie folgt vor, um [!DNL Snowflake] unter Linux zu konfigurieren:
    ./snowflake_odbc-setup.sh
    ```
 
-1. Nach der Installation der ODBC-Treiber müssen Sie den Campaign Classic neu starten. Führen Sie dazu den folgenden Befehl aus:
+1. Nach der Installation der ODBC-Treiber müssen Sie Campaign Classic neu starten. Führen Sie dazu den folgenden Befehl aus:
 
    ```
    systemctl stop nlserver.service
@@ -91,7 +91,7 @@ Sie müssen ein [!DNL Snowflake] externes Konto erstellen, um Ihre Campaign-Inst
 
 1. Fügen Sie Ihre **[!UICONTROL Server]**-URL und **[!UICONTROL Datenbank]** hinzu.
 
-1. Konfigurieren der Authentifizierung für das externe ]****[!UICONTROL  Snowflake}:
+1. Konfigurieren der Authentifizierung für das externe Snowflake ]**-Konto:**[!UICONTROL 
 
    * Für die Konto-/Kennwortauthentifizierung müssen Sie Folgendes angeben:
 
@@ -124,6 +124,6 @@ Der Connector unterstützt die folgenden Optionen:
 | TimeZoneName | Standardmäßig leer, d. h. die Systemzeitzone des Campaign Classic-App-Servers wird verwendet. Mit dieser Option können Sie den Sitzungsparameter TIMEZONE erzwingen. <br>Weiterführende Informationen hierzu finden Sie auf dieser [Seite](https://docs.snowflake.net/manuals/sql-reference/parameters.html#timezone). |
 | WeekStart | Sitzungsparameter WEEK_START. Standardmäßig auf 0 gesetzt <br>Weiterführende Informationen hierzu finden Sie auf dieser [Seite](https://docs.snowflake.com/de/sql-reference/parameters.html#week-start). |
 | UseCachedResult | Sitzungsparameter USE_CACHED_RESULTS. Standardmäßig ist TRUE festgelegt. Diese Option kann verwendet werden, um zwischengespeicherte Ergebnisse von Snowflake zu deaktivieren. <br>Weiterführende Informationen hierzu finden Sie auf dieser [Seite](https://docs.snowflake.net/manuals/user-guide/querying-persisted-results.html). |
-| bulkThreads | Anzahl der Threads, die für das Snowflake von Bulk-Loadern verwendet werden. Mehr Threads bedeuten eine bessere Leistung für größere Bulk-Loader. Standardmäßig auf 1 gesetzt Die Zahl kann in Abhängigkeit von der Maschinengewindeanzahl angepasst werden. |
-| chunkSize | Bestimmt die Dateigröße des Blocks des Bulk-Loaders. Standardmäßig ist dieser Wert auf 128 MB festgelegt. Kann geändert werden, um eine optimale Leistung zu erzielen, wenn es mit bulkThreads verwendet wird. Mehr gleichzeitige aktive Threads bedeuten eine bessere Leistung. <br>Weitere Informationen hierzu finden Sie in der [Snowflake-Dokumentation](https://docs.snowflake.net/manuals/sql-reference/sql/put.html). |
+| bulkThreads | Anzahl der Threads, die für den Snowflake-Bulk-Loader verwendet werden sollen. Mehr Threads bedeuten eine bessere Leistung für größere Bulk-Loads. Standardmäßig auf 1 gesetzt Die Zahl kann in Abhängigkeit von der Maschinengewindeanzahl angepasst werden. |
+| chunkSize | Bestimmt die Dateigröße des Blocks des Bulk-Loaders. Standardmäßig ist dieser Wert auf 128 MB festgelegt. Kann geändert werden, um eine optimale Leistung zu erzielen, wenn es mit bulkThreads verwendet wird. Mehr gleichzeitige aktive Threads bedeuten eine bessere Leistung. <br>Weitere Informationen hierzu finden Sie in der [Dokumentation zu Snowflake](https://docs.snowflake.net/manuals/sql-reference/sql/put.html). |
 | Staging-Name | Name des vorab bereitgestellten internen Schritts. Sie wird beim Massenladen verwendet, anstatt ein neues temporäres Stadium zu erstellen. |

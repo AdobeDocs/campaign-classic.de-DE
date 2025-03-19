@@ -10,8 +10,8 @@ topic-tags: additional-configurations
 exl-id: 515adad2-6129-450a-bb9e-fc80127835af
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '3161'
-ht-degree: 18%
+source-wordcount: '3157'
+ht-degree: 17%
 
 ---
 
@@ -25,11 +25,11 @@ Im folgenden Abschnitt finden Sie einen Überblick über die Konfiguration, die 
 
 >[!NOTE]
 >
->Einige Konfigurationen können nur durch Adobe für Bereitstellungen ausgeführt werden, die von Adobe gehostet werden, z. B. für den Zugriff auf die Server- und Instanzkonfigurationsdateien. Weitere Informationen zu den verschiedenen Bereitstellungen finden Sie im Abschnitt [Hosting](../../installation/using/hosting-models.md) oder auf [dieser Seite](../../installation/using/capability-matrix.md).
+>Einige Konfigurationen können von Adobe nur für Bereitstellungen durchgeführt werden, die von Adobe gehostet werden, z. B. für den Zugriff auf die Server- und Instanzkonfigurationsdateien. Weitere Informationen zu den verschiedenen Bereitstellungen finden Sie im Abschnitt [Hosting](../../installation/using/hosting-models.md) oder auf [dieser Seite](../../installation/using/capability-matrix.md).
 
 Weiterführende Informationen zu den Konzepten und Best Practices in Bezug auf die Zustellbarkeit mit Adobe Campaign finden Sie in diesem [Abschnitt](../../delivery/using/about-deliverability.md).
 
-Einen tieferen Einblick in das Thema der Zustellbarkeit, einschließlich aller technischen Empfehlungen zum effizienten Senden und Empfangen von E-Mails durch eine Adobe-Plattform, erhalten Sie im [Adobe-Handbuch mit den Best Practices zur Zustellbarkeit](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=de).
+Einen tieferen Einblick in das Thema der Zustellbarkeit, einschließlich aller technischen Empfehlungen zum effizienten Senden und Empfangen von E-Mails durch eine Adobe-Plattform, erhalten Sie im [Handbuch mit den Best Practices zur Zustellbarkeit von Adobe](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=de).
 
 ## Grundprinzip {#operating-principle}
 
@@ -192,7 +192,7 @@ user:~ user$ host -t a mta6.am0.yahoodns.net
                 mta6.am0.yahoodns.net has address 66.196.118.33
 ```
 
-Vier der acht IP-Adressen werden bereits in mta5 verwendet (98.136.216.26, 98.138.112.38, 63.250.192.46 und 98.136.217.203). Dieser Eintrag ermöglicht dem Benutzer die Verwendung von vier neuen IP-Adressen. Gleichermaßen verhält es sich mit dem dritten MX-Eintrag.
+4 dieser 8 IP-Adressen werden bereits im MTA5 verwendet (98.136.216.26, 98.138.112.38, 63.250.192.46 und 98.136.217.203). Mit diesem Eintrag kann der Benutzer vier neue IP-Adressen verwenden. Der dritte MX-Eintrag tut dasselbe.
 
 Insgesamt stehen dem Benutzer sechzehn Remote-IP-Adressen zur Verfügung. In Kombination mit den zwei lokalen öffentlichen IPs stehen zweiunddreißig Pfade zum Erreichen der E-Mail-Server von yahoo.com zur Verfügung.
 
@@ -214,7 +214,7 @@ Diese Nachrichten werden so schnell wie möglich gesendet.
 
 ### MX-Verwaltung konfigurieren {#configuring-mx-management}
 
-Die Regeln, die bei MX eingehalten werden müssen, sind im Dokument **[!UICONTROL MX-Verwaltung]** des Knotens **[!UICONTROL Administration > Campaign Management > Unzustellbarkeitsverwaltung > Mail-Regelsätze]** der Baumstruktur definiert.
+Die bei MX einzuhaltenden Regeln werden im Dokument **[!UICONTROL MX-Verwaltung]** des Knotens **[!UICONTROL Administration > Kampagnen-Management > Unzustellbarkeitsverwaltung > Mail-Regelsätze]** des Navigationsbaums definiert.
 
 Wenn das **[!UICONTROL MX-]**-Dokument nicht im Knoten vorhanden ist, können Sie es manuell erstellen. Gehen Sie dazu wie folgt vor:
 
@@ -322,11 +322,11 @@ Dieses Dokument enthält eine Liste aller vordefinierten Domains, die den von Ad
 
 Mit dem **MIME structure** (Multipurpose Internet Mail Extensions) können Sie die Nachrichtenstruktur definieren, die an die verschiedenen E-Mail-Clients gesendet wird. Dabei stehen drei Optionen zur Verfügung:
 
-* **Multipart**: Die Nachricht wird im Text- oder HTML-Format gesendet. Wenn das HTML-Format nicht akzeptiert wird, kann die Nachricht dennoch im Textformat angezeigt werden.
+* **Multipart**: Die Nachricht wird im Text- oder HTML-Format gesendet. Wenn das HTML-Format nicht akzeptiert wird, kann die Nachricht weiterhin im Textformat angezeigt werden.
 
   Standardmäßig lautet die mehrteilige Struktur **multipart/alternative**, sie wird jedoch automatisch **multipart/related**, wenn ein Bild zur Nachricht hinzugefügt wird. Bestimmte Anbieter erwarten standardmäßig das **multipart/related**-Format. Die Option **[!UICONTROL Multipart/related erzwingen]** setzt dieses Format auch dann fest, wenn kein Bild angehängt ist.
 
-* **HTML**: Es wird nur eine Nachricht vom Typ &quot;HTML&quot; gesendet. Wenn das HTML-Format nicht akzeptiert wird, wird die Meldung nicht angezeigt.
+* **HTML**: Es wird nur eine HTML-Nachricht gesendet. Wenn das HTML-Format nicht akzeptiert wird, wird die Meldung nicht angezeigt.
 * **Text**: Eine Nachricht im reinen Textformat wird gesendet. Der Vorteil von Textformatnachrichten ist ihre sehr geringe Größe.
 
 Wenn die Option **[!UICONTROL Bildintegration]** aktiviert ist, werden diese direkt im Textkörper der E-Mail angezeigt. Die Bilder werden dann hochgeladen und die URL-Links werden durch ihren Inhalt ersetzt.

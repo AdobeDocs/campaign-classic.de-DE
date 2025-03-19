@@ -164,7 +164,7 @@ Bei den folgenden Ausdrücken wird nach gesucht (von Schreibweise abhängig):
    <td> CRM v1(mscrmWorkflow/sfdcWorkflow)<br /> </td> 
    <td> PU-0008<br /> </td> 
    <td> Fehler<br /> </td> 
-   <td> Aktionsaktivitäten von Microsoft CRM, Salesforce, Oracle CRM On Demand sind nicht mehr verfügbar. Um die Datensynchronisation zwischen Adobe Campaign und einem CRM-System zu konfigurieren, müssen Sie die Zielgruppenbestimmungsaktivität <a href="../../workflow/using/crm-connector.md" target="_blank">CRM-Connector</a> verwenden.<br /> </td>
+   <td> Aktionsaktivitäten von Microsoft CRM, Salesforce und Oracle CRM On Demand sind nicht mehr verfügbar. Um die Datensynchronisation zwischen Adobe Campaign und einem CRM-System zu konfigurieren, müssen Sie die Zielgruppenbestimmungsaktivität <a href="../../workflow/using/crm-connector.md" target="_blank">CRM-Connector</a> verwenden.<br /> </td>
   </tr> 
  </tbody> 
 </table>

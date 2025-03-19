@@ -3,8 +3,8 @@ title: Migrieren zum Adobe Identity Management System (IMS)
 description: Informationen zur Migration Ihres Authentifizierungsprozesses zum Adobe Identity Management System (IMS)
 exl-id: 84853dbe-8b6f-4875-b29a-c1b755423a3c
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
-workflow-type: ht
-source-wordcount: '0'
+workflow-type: tm+mt
+source-wordcount: '454'
 ht-degree: 100%
 
 ---
@@ -46,7 +46,7 @@ Diese Campaign-Versionen werden in den [Versionshinweisen](../../rn/using/latest
 
 ### Wann kann ich die Migration starten? {#ims-migration-start}
 
-Für die Migration zum [Adobe Identity Management System (IMS)](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"} wird empfohlen, Ihre Umgebung auf Campaign v7.4.1 (oder eine [mit der IMS-Migration kompatible Version](#ims-versions)) zu aktualisieren.
+Eine Empfehlung für die Migration zum [Adobe Identity Management System (IMS)](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"} ist, Ihre Umgebung auf Campaign Classic v7.4.1 (oder eine [mit der IMS-Migration kompatible Version](#ims-versions)) zu aktualisieren.
 
 Sie können die IMS-Migration in Ihrer Staging-Umgebung starten, sobald sie auf Campaign Classic v7.3.5 aktualisiert wurde, und entsprechend für die Produktionsumgebung planen.
 

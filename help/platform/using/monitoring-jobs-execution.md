@@ -66,4 +66,4 @@ Jeder Status wird durch ein spezielles Symbol und eine spezielle Bezeichnung rep
 
 * **Server wird heruntergefahren**
 
-  Der laufende Vorgang wurde aufgrund eines Stopps des Adobe-Campaign-Servers unterbrochen.
+  Der laufende Vorgang wurde aufgrund eines Stopps des Adobe Campaign-Servers unterbrochen.

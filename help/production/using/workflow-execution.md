@@ -56,7 +56,7 @@ Dieses Problem kann mehrere Ursachen haben. Gehen Sie zur Lösung des Problems w
    [...]
    ```
 
-   Wenn das Modul nicht ausgeführt wird, wenden Sie sich an die Kundenunterstützung von Adobe. Wenn Sie über eine On-Premise-Installation verfügen, muss ein Administrator bzw. eine Administratorin den Service mit dem folgenden Befehl neu starten.
+   Wenn das Modul nicht ausgeführt wird, wenden Sie sich an die Adobe-Kundenunterstützung. Wenn Sie über eine On-Premise-Installation verfügen, muss ein Administrator bzw. eine Administratorin den Service mit dem folgenden Befehl neu starten.
 
    ```
    nlserver start wfserver@<instance-name>
@@ -101,7 +101,7 @@ Um dies zu überprüfen und bei Bedarf das Modul zu starten, gehen Sie wie folgt
 
    Weiterführende Informationen zum Überwachen von Modulen finden Sie [diesem Abschnitt](../../production/using/usual-commands.md#monitoring-commands-).
 
-1. Wenn das Modul nicht ausgeführt wird, wenden Sie sich an die Kundenunterstützung von Adobe. Wenn Sie über eine On-Premise-Installation verfügen, muss sie ein Administrator mithilfe des folgenden Befehls neu starten.
+1. Wenn das Modul nicht ausgeführt wird, wenden Sie sich an die Adobe-Kundenunterstützung. Wenn Sie über eine On-Premise-Installation verfügen, muss sie ein Administrator mithilfe des folgenden Befehls neu starten.
 
    ```
    nlserver start wfserver@<instance-name>

@@ -15,7 +15,7 @@ ht-degree: 22%
 
 
 
-Im Folgenden finden Sie die verschiedenen Endpunkte, die beim Campaign Classic verwendet werden.
+Im Folgenden finden Sie die verschiedenen Endpunkte, die in Campaign Classic verwendet werden.
 
 | Kontext | URL |
 |--- |--- |

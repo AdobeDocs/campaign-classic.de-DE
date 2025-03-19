@@ -17,7 +17,7 @@ ht-degree: 100%
 
 ## Inhaltsverwaltungsaktivitäten {#content-management-activity}
 
-Die Erstellung, Bearbeitung und Veröffentlichung von Inhalten kann mithilfe eines in der Adobe-Campaign-Clientkonsole konfigurierten Workflows automatisiert werden.
+Die Erstellung, Bearbeitung und Veröffentlichung von Inhalten kann mithilfe eines in der Adobe Campaign-Clientkonsole konfigurierten Workflows automatisiert werden.
 
 Die Aktivität **Content Management** ist in der **[!UICONTROL Werkzeug]**-Symbolleiste des Workflow-Diagramms enthalten.
 

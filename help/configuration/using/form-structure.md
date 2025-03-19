@@ -311,7 +311,7 @@ Mit dem Element **`<orderby>`** können Sie die Liste auch sortieren:
 * **noZoom**: Kein Bearbeitungsformular für die Relation (mit dem Wert &quot;true&quot;)
 * **form**: Überschreibt das Bearbeitungsformular des Zielelements
 
-## Relationsliste {#list-of-links}
+## Liste der Links {#list-of-links}
 
 Eine Relation, die im Datenschema als Sammlungselement (unbound=&quot;true&quot;) eingetragen ist, muss eine Liste durchlaufen, um alle mit ihr verbundenen Elemente anzuzeigen.
 

@@ -148,7 +148,7 @@ Im Allgemeinen können Sie ein CAPTCHA im DCE hinzufügen, indem Sie einen Gesta
 
      `<div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>`
 
-   Sie sollten die Validierungs-Schaltfläche deaktivieren können, aber da wir keine Standardschaltfläche/keinen Standardlink haben, ist es besser, dies auf der HTML selbst zu tun. Informationen hierzu finden Sie auf [dieser Seite](https://developers.google.com/recaptcha/).
+   Sie sollten die Validierungsschaltfläche deaktivieren können, aber da wir keine Standardschaltfläche/-verknüpfung haben, ist es besser, sie in der HTML selbst zu verwenden. Informationen hierzu finden Sie auf [dieser Seite](https://developers.google.com/recaptcha/).
 
 ### Webanwendung aktualisieren
 
@@ -176,7 +176,7 @@ Im Allgemeinen können Sie ein CAPTCHA im DCE hinzufügen, indem Sie einen Gesta
 
 >[!IMPORTANT]
 >
->Für die reCAPTCHA-Integration müssen Sie Client-seitige JavaScript auf der HTML hinzufügen (in `<head>...</head>`):
+>Für die reCAPTCHA-Integration müssen Sie Client-seitige JavaScript in der HTML hinzufügen (in `<head>...</head>`):
 >
 >`<script src="https://www.google.com/recaptcha/api.js" async defer></script>`
 

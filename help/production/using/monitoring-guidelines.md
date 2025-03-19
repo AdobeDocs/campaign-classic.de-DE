@@ -17,7 +17,7 @@ ht-degree: 26%
 
 ## Instanz-Monitoring-Dashboard {#instance-monitoring-dashboard}
 
-Die Registerkarte **[!UICONTROL Monitoring]**, auf die über die Campaign Classic-Homepage zugegriffen werden kann, ist der wichtigste Einstiegspunkt zur Überwachung Ihrer Instanz.
+Die Registerkarte **[!UICONTROL Monitoring]**, auf die über die Campaign Classic-Startseite zugegriffen werden kann, ist der wichtigste Einstiegspunkt für die Überwachung Ihrer Instanz.
 
 Er bietet ein Dashboard, in dem Sie sehen können, was in Ihrer Instanz passiert: Status (Build-Version, installierte Pakete usw.), Systemindikatoren, Protokolle, derzeit ausgeführte Workflows, Status der zuletzt gesendeten Sendungen usw.
 
@@ -127,9 +127,9 @@ Es wird empfohlen, die Datenbankwartung regelmäßig durchzuführen, um eine üb
 
 Eine Sicherung ist unerlässlich, um Datenverluste im Falle eines Problems (physisch oder systembedingt) auf einem Computer zu vermeiden. [Klicken Sie hier](../../production/using/backup.md) um weitere Informationen zu erhalten. Das Wiederherstellungsverfahren wird in [diesem Abschnitt](../../production/using/restoration.md) beschrieben.
 
-## Technische Grundlagen des Campaign Classic {#campaign-classic-technical-principles}
+## Technische Grundsätze für Campaign Classic {#campaign-classic-technical-principles}
 
-Technische Ressourcen finden Sie in der Campaign Classic-Dokumentation. Es wird empfohlen, sich mit diesen Themen vertraut zu machen, bevor Sie einen technischen Vorgang auf Ihrer Instanz durchführen.
+Technische Ressourcen finden Sie in der Dokumentation zu Campaign Classic. Es wird empfohlen, sich mit diesen Themen vertraut zu machen, bevor Sie einen technischen Vorgang auf Ihrer Instanz durchführen.
 
 **Hosting-Modelle und -Funktionen**
 

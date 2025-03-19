@@ -126,7 +126,7 @@ Die folgenden Kanäle können konfiguriert werden:
 
 Das externe E-Mail-Routing-Konto wird standardmäßig bereitgestellt und an Ihre Konfiguration angepasst.
 
-Als On-Premise-/Hybrid-Kunde können Sie neue externe Routing-Konten erstellen oder Parameter aktualisieren, wie unten beschrieben. Diese Konfiguration ist erfahrenen Benutzern vorbehalten und kann sich auf Ihre Zustellbarkeit auswirken. Wenden Sie sich bei Fragen an die Kundenunterstützung von Adobe oder Ihren Adobe-Support-Mitarbeiter.
+Als On-Premise-/Hybrid-Kunde können Sie neue externe Routing-Konten erstellen oder Parameter aktualisieren, wie unten beschrieben. Diese Konfiguration ist erfahrenen Benutzern vorbehalten und kann sich auf Ihre Zustellbarkeit auswirken. Wenden Sie sich bei Fragen an die Adobe-Kundenunterstützung oder Ihren Adobe-Support-Mitarbeiter.
 
 * Sie können einen Routing **Typ „Mid-Sourcing**, **External** oder **Bulk** Versand verwenden.
 
@@ -229,10 +229,10 @@ Externe Datenbanken, die mit Campaign kompatibel sind, sind in der ([) ](../../r
 
 Die Konfigurationseinstellungen für externe Konten hängen von der Datenbank-Engine ab. Weitere Informationen finden Sie in den folgenden Abschnitten:
 
-* Zugriff auf [Vertica analytics konfigurieren](../../installation/using/configure-fda-vertica.md)
+* Zugriff auf [Vertica Analytics konfigurieren](../../installation/using/configure-fda-vertica.md)
 * Zugriff auf [Snowflake konfigurieren](../../installation/using/configure-fda-snowflake.md)
 * Zugriff auf [Google BigQuery konfigurieren](../../installation/using/configure-fda-google-big-query.md)
-* Zugriff auf [Azure synapse konfigurieren](../../installation/using/configure-fda-synapse.md)
+* Zugriff auf [Azure Synapse konfigurieren](../../installation/using/configure-fda-synapse.md)
 * Zugriff auf [Hadoop konfigurieren](../../installation/using/configure-fda-hadoop.md)
 * Zugriff auf [Oracle konfigurieren](../../installation/using/configure-fda-oracle.md)
 * Zugriff auf [Netezza konfigurieren](../../installation/using/configure-fda-netezza.md)
@@ -242,7 +242,7 @@ Die Konfigurationseinstellungen für externe Konten hängen von der Datenbank-En
 * Zugriff auf [Teradata konfigurieren](../../installation/using/configure-fda-teradata.md)
 
 
-## Adobe Solution Integration External Accounts
+## Externe Konten zur Integration von Adobe-Lösungen
 
 ### Adobe Experience Cloud {#adobe-experience-cloud-external-account}
 

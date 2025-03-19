@@ -260,12 +260,12 @@ Dieser Tabellensatz ist mit dem **Mobile-App-Kanal** verknüpft, der das Senden 
 
 ## Modul für Social Marketing {#social-marketing-module}
 
-Dieser Tabellensatz ist mit dem Modul **Verwalten sozialer Netzwerke** verknüpft, das die Interaktion mit Kunden und potenziellen Kunden über Facebook und X (früher als Twitter bezeichnet) ermöglicht. Weitere Informationen hierzu finden Sie unter [Über Social Marketing](../../social/using/about-social-marketing.md).
+Dieser Satz von Tabellen ist mit dem Modul **Verwalten sozialer Netzwerke** verknüpft, das die Interaktion mit Kunden und potenziellen Kunden über Facebook und X (früher als Twitter bekannt) ermöglicht. Weitere Informationen hierzu finden Sie unter [Über Social Marketing](../../social/using/about-social-marketing.md).
 
 ![](assets/data-model_social.png)
 
 * **NmsVisitor**: Diese Tabelle entspricht dem **nms:visitor**-Schema. Es enthält Informationen zu Besuchern.
-* **NmsVisitorSub**: Diese Tabelle entspricht dem **nms:visitorSub**-Schema. Damit können Sie Besuchende mit den Services verknüpfen, die sie abonniert haben (X oder Facebook).
-* **NmsFriendShipRel**: Diese Tabelle entspricht dem **nms:friendlyRel**-Schema. Dies ermöglicht es Ihnen, Besuchende mit ihren Freunden im Kontext des Facebook-Service zu verknüpfen.
+* **NmsVisitorSub**: Diese Tabelle entspricht dem **nms:visitorSub**-Schema. Sie ermöglicht es, einen Besucher mit den Diensten zu verknüpfen, die er abonniert hat (X oder Facebook).
+* **NmsFriendShipRel**: Diese Tabelle entspricht dem **nms:friendlyRel**-Schema. Sie ermöglicht es, Besucher im Rahmen des Facebook-Service mit ihren Freunden zu verbinden.
 * **NmsVisitorInterestRel**: Diese Tabelle entspricht dem **nms:visitorInterestRel**-Schema. Es ermöglicht Ihnen, Besucher und deren Interessen zu verbinden.
 * **NmsInterest**: Diese Tabelle entspricht dem **nms:interest**-Schema. Es enthält die Liste der Interessen jedes Besuchers.

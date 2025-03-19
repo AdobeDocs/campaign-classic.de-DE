@@ -36,7 +36,7 @@ Sie werden standardmäßig in Unterordner nach Versandmonat unterteilt. Diese Gr
 
 >[!NOTE]
 >
->Bei gehosteten oder hybriden Installationen können nach einem Upgrade auf den [Enhanced MTA](../../delivery/using/sending-with-enhanced-mta.md) auch alle Transaktionsmeldungen mit dem Adobe Campaign Enhanced MTA gesendet werden, um die Zustellbarkeit, den Durchsatz und die Bearbeitung von Bounces zu verbessern. Alle Auswirkungen sind dieselben wie bei standardmäßigen Marketing-Nachrichten.
+>Bei gehosteten oder hybriden Installationen können nach einem Upgrade auf den [Enhanced MTA](../../delivery/using/sending-with-enhanced-mta.md) auch alle Transaktionsnachrichten mit dem Adobe Campaign Enhanced MTA gesendet werden, um die Zustellbarkeit, den Durchsatz und die Bearbeitung von Bounces zu verbessern. Alle Auswirkungen sind dieselben wie bei standardmäßigen Marketing-Nachrichten.
 
 ## Überwachung der Transaktionsnachrichten {#transactional-message-monitoring}
 

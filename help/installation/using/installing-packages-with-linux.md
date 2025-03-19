@@ -151,7 +151,7 @@ Bearbeiten Sie bei Bedarf die Datei **customer.sh** mit dem Befehl **vi customer
   export LD_LIBRARY_PATH=$ORACLE_HOME/lib:$LD_LIBRARY_PATH 
   ```
 
-  Der Inhalt der Umgebungsvariablen ORACLE_HOME entspricht dem Oracle-Installationsverzeichnis.
+  Der Inhalt der Umgebungsvariablen ORACLE_HOME stimmt mit dem Oracle-Installationsverzeichnis überein.
 
   Der Inhalt der Variablen TNS_ADMIN muss mit dem Speicherort der Datei **tnsnames.ora)**.
 
@@ -226,7 +226,7 @@ Wenn Sie Oracle mit Adobe Campaign verwenden, müssen Sie die Oracle-Client-Eben
 
 * Konfiguration für Adobe Campaign
 
-  Um die Installation des Oracle-Clients für Adobe Campaign abzuschließen, müssen Sie einen symbolischen Link für die Datei **.so** erstellen, die von Adobe Campaign verwendet wird.
+  Um die Installation des Oracle-Clients für Adobe Campaign abzuschließen, müssen Sie eine symbolische Verknüpfung für die von Adobe Campaign verwendete Datei **.so** erstellen.
 
   Verwenden Sie dazu die folgenden Befehle:
 
@@ -235,7 +235,7 @@ Wenn Sie Oracle mit Adobe Campaign verwenden, müssen Sie die Oracle-Client-Eben
   ln -s libclntsh.so.10.1 libclntsh.so
   ```
 
-Stellen Sie im Falle eines Problems sicher, dass die in der Installationsdokumentation von Oracle aufgelisteten Pakete korrekt installiert sind.
+Stellen Sie im Falle eines Problems sicher, dass die in der Oracle-Installationsdokumentation aufgelisteten Pakete korrekt installiert sind.
 
 ## Installationsprüfungen {#installation-checks}
 

@@ -20,7 +20,7 @@ ht-degree: 4%
 
 Es ist möglich, SOAP-Methoden in JavaScript zu erstellen. Diese Funktion ermöglicht lediglich anwendungsbezogene Prozesse und kann die Entwicklung von JSPs und deren Aufrufen in den Formularen vermeiden.
 
-Diese SOAP-Methoden verhalten sich genauso wie die nativ im Programm definierten. Es werden die gleichen Attribute unterstützt: static, key only und const.
+Diese SOAP-Methoden verhalten sich auf die gleiche Weise wie die nativ im Programm definierten. Es werden die gleichen Attribute unterstützt: static, key only und const.
 
 ## Definieren einer Methodenbibliothek {#defining-a-method-library}
 

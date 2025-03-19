@@ -29,8 +29,8 @@ Für Angebotsvorschläge über SOAP muss der Befehl **nms:proposition#Propose** 
 * **context** - erlaubt das Einfügen von Kontextdaten in das Platzierungsschema. Wenn das verwendete Schema **nms:interaction** lautet, sollte **`<empty>`** hinzugefügt werden.
 * **categories** - bezeichnet die Kategorie, der die vorgeschlagenen Angebote angehören müssen.
 * **themes** - bezeichnet die Themen, denen die vorgeschlagenen Angebote entsprechen müssen.
-* **uuid** - Wert des permanenten Adobe-Campaign-Cookies (&quot;uuid230&quot;).
-* **nlid** - Wert des Adobe-Campaign-Sitzungs-Cookies (&quot;nlid&quot;).
+* **uuid** - Wert des permanenten Adobe Campaign-Cookies (&quot;uuid230&quot;).
+* **nlid** - Wert des Adobe Campaign-Sitzungs-Cookies (&quot;nlid&quot;).
 * **noProp** - Angabe des Werts &quot;true&quot;, wenn keine Vorschläge eingefügt werden sollen.
 
 >[!NOTE]

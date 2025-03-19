@@ -45,7 +45,7 @@ Abhängig von der externen Datenbank, auf die Sie von Adobe Campaign aus zugreif
 Folgen Sie den unten stehenden Links, um mehr zu erfahren:
 
 * Campaign und [Amazon Redshift verbinden](../../installation/using/configure-fda-redshift.md)
-* Campaign und [Azure synapse verbinden](../../installation/using/configure-fda-synapse.md)
+* Campaign und [Azure Synapse verbinden](../../installation/using/configure-fda-synapse.md)
 * Campaign und [Google BigQuery verbinden](../../installation/using/configure-fda-google-big-query.md)
 * Campaign und [Hadoop verbinden](../../installation/using/configure-fda-hadoop.md)
 * Campaign und [Microsoft SQL Server verbinden](../../installation/using/configure-fda-sql.md)
@@ -56,4 +56,4 @@ Folgen Sie den unten stehenden Links, um mehr zu erfahren:
 * Campaign und [Snowflake verbinden](../../installation/using/configure-fda-snowflake.md)
 * Campaign und [Sybase IQ verbinden](../../installation/using/configure-fda-sybase.md)
 * Campaign und [Teradata verbinden](../../installation/using/configure-fda-teradata.md)
-* Campaign und [Vertica analytics verbinden](../../installation/using/configure-fda-vertica.md)
+* Campaign und [Vertica Analytics verbinden](../../installation/using/configure-fda-vertica.md)

@@ -59,7 +59,7 @@ Höhere Hardware- und Verwaltungskosten.
 * Bounce-Postfach über POP3 zugänglich,
 * Erstellung von zwei DNS-Aliassen im Lastenausgleich:
 
-   * das erste Gerät wird der Öffentlichkeit zur Verfolgung und zum Verweisen auf den Lastenausgleich über eine virtuelle IP-Adresse (VIP) zur Verfügung gestellt, die dann an die beiden Frontserver verteilt wird,
+   * die erste öffentlich zugängliche, zur Verfolgung und zum Verweisen auf den Lastenausgleich über eine virtuelle IP-Adresse (VIP), die dann an die beiden Frontserver verteilt wird,
    * Die zweite wird den internen Benutzern für den Zugriff über die Konsole bereitgestellt und verweist auf einen Lastenausgleich auf einer virtuellen IP-Adresse (VIP), die dann an die beiden Anwendungsserver verteilt wird.
 
 * Firewall konfiguriert, um STMP (25)-, DNS (53)-, HTTP (80)-, HTTPS (443)-, SQL (1521 für Oracle, 5432 für PostgreSQL usw.)-Ports zu öffnen. Weitere Informationen finden Sie im Abschnitt [Datenbankzugriff](../../installation/using/network-configuration.md#database-access).

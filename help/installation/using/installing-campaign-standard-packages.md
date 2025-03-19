@@ -28,7 +28,7 @@ Integrierte Pakete enthalten eine Reihe von Funktionen, die je nach Bedarf und n
 >
 >Nachdem ein Paket installiert wurde, können Sie es nicht mehr deinstallieren.
 >
->Wenden Sie sich als gehosteter oder Hybrid-Kunde an Adobe, um ein neues integriertes Paket bereitzustellen.
+>Wenn Sie gehosteter oder Hybrid-Kunde sind, kontaktieren Sie Adobe , um ein neues integriertes Paket bereitzustellen.
 
 So installieren Sie ein integriertes Paket:
 
@@ -97,7 +97,7 @@ In der folgenden Tabelle sind alle nativen Campaign-Packages aufgeführt.
   </tr--> 
   <tr> 
    <td> Soziale Netzwerke (Social Marketing) <br /> </td> 
-   <td> Synchronisiert Adobe Campaign mit X (früher als Twitter bezeichnet) und Facebook. <a href="../../social/using/about-social-marketing.md">Weitere Informationen</a> <br /> </td> 
+   <td> Synchronisiert Adobe Campaign mit X (ehemals Twitter) und Facebook. <a href="../../social/using/about-social-marketing.md">Weitere Informationen</a> <br /> </td> 
    <td> Alle</td> 
   </tr> 
   <tr> 
@@ -197,7 +197,7 @@ In der folgenden Tabelle sind alle nativen Campaign-Packages aufgeführt.
   </tr> 
   <tr> 
    <td> AEM-Integration<br /> </td> 
-   <td> Mit können Sie den Inhalt Ihrer E-Mail-Sendungen und Ihrer Formulare direkt in Adobe Experience Manager verwalten, um von den Inhaltsbearbeitungsfunktionen von AEM und den Versandkapazitäten von Adobe Campaign zu profitieren. <a href="../../integrations/using/about-adobe-experience-manager.md">Weitere Informationen</a> <br /> </td> 
+   <td> Mit können Sie den Inhalt Ihrer E-Mail-Sendungen und Ihrer Formulare direkt in Adobe Experience Manager verwalten, um von den Inhaltsbearbeitungsfunktionen von AEM sowie den Versandkapazitäten von Adobe Campaign zu profitieren. <a href="../../integrations/using/about-adobe-experience-manager.md">Weitere Informationen</a> <br /> </td> 
    <td> Marketing</td> 
   </tr> 
   <tr> 

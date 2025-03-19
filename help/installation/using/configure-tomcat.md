@@ -78,7 +78,7 @@ Bei Bedarf kann dieser Vorgang Server-seitig reproduziert werden.
 >Diese Änderung ist ab Campaign v7.4.1 nicht mehr erforderlich.
 >
 
-Aus Sicherheitsgründen empfehlen wir dringend, den Tomcat-Fehlerbericht auszublenden. Führen Sie folgende Schritte aus:
+Aus Sicherheitsgründen empfehlen wir dringend, den Tomcat-Fehlerbericht auszublenden. Gehen Sie dazu wie folgt vor:
 
 1. Öffnen Sie die Datei **server** xml) im Verzeichnis **/tomcat-X/** des Adobe Campaign-Installationsordners: `/usr/local/neolane/nl6/tomcat-X/conf`
 1. Fügen Sie unten nach allen vorhandenen Kontextelementen das folgende Element hinzu:

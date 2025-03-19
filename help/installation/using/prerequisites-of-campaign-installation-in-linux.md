@@ -160,9 +160,9 @@ Sie können ein Linux-RPM-Paket vom Oracle Technology Network erhalten.
 
 **Fehlerbehebung und Best Practices**
 
-Probleme können nach einem Oracle-Client oder einem Server-Update, einer Versionsänderung oder bei der ersten Installation der Instanz auftreten.
+Probleme können nach einem Oracle Client- oder Server-Update, einer Versionsänderung oder bei der ersten Installation der Instanz auftreten.
 
-Wenn Sie in der Client-Konsole feststellen, dass es unerwartete Zeitverzögerungen (eine oder mehrere Stunden) in den Protokollen, bei der letzten Workflow-Verarbeitung, bei der nächsten Verarbeitung usw. gibt, kann es ein Problem zwischen der Oracle-Client- und der Oracle-Serverbibliothek geben. So vermeiden Sie solche Probleme
+Wenn Sie in der Client-Konsole feststellen, dass es unerwartete Zeitverzögerungen (eine oder mehrere Stunden) in den Protokollen, bei der letzten Workflow-Verarbeitung, bei der nächsten Verarbeitung usw. gibt, kann es ein Problem zwischen der Bibliothek des Oracle-Clients und dem Oracle-Server geben. So vermeiden Sie solche Probleme
 
 1. Stellen Sie sicher, dass Sie den **Full Client** verwenden.
 
@@ -170,9 +170,9 @@ Wenn Sie in der Client-Konsole feststellen, dass es unerwartete Zeitverzögerung
 
 1. Stellen Sie sicher, dass die Client-**und die****Datenbankserverversion** identisch **** sind.
 
-   Das Mischen von Versionen trotz Oracle-Kompatibilitätsmatrix und der Empfehlung, Client- und Serverversionen aufeinander abzustimmen, verursacht bekanntermaßen Probleme.
+   Das Mischen von Versionen trotz der Kompatibilitätsmatrix von Oracle und der Empfehlung, Client- und Serverversionen aufeinander abzustimmen, verursacht bekanntermaßen Probleme.
 
-   Überprüfen Sie außerdem den Wert ORACLE_HOME, um sicherzustellen, dass er auf die erwartete Client-Version verweist (falls mehrere Versionen auf dem Computer installiert sind).
+   Überprüfen Sie außerdem den Wert für ORACLE_HOME, um sicherzustellen, dass er auf die erwartete Client-Version verweist (falls mehrere Versionen auf dem Computer installiert sind).
 
 1. Stellen Sie sicher, dass der Client und der Server dieselbe **Zeitzonendatei** verwenden.
 

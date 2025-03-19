@@ -51,7 +51,7 @@ Unten finden Sie einige der wichtigsten Best Practices in Bezug auf die Konfigur
   **In IIS** (siehe [Dokumentation](https://www.iis.net/configreference/system.webserver/security/requestfiltering/verbs)) führen Sie die folgende Konfiguration durch:
 
    * Achten Sie darauf, dass der **Request-Filtering**-Rollendienst oder die entsprechende Funktion installiert ist.
-   * Klicken Sie im Bereich **Anforderungsfilterung** auf die Registerkarte HTTP-Verben und dann auf Verb ablehnen . Geben Sie im Bereich Aktionen im Dialogfeld Öffnen TRACE ein.
+   * Klicken Sie im Bereich **Anforderungsfilterung** auf die Registerkarte HTTP-Verben und dann auf Verb ablehnen . Geben Sie im Aktionsbereich TRACE im Dialogfeld „Öffnen“ ein.
 
 * Entfernen Sie das Banner:
 

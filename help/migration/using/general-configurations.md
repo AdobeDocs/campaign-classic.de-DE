@@ -59,7 +59,7 @@ Wenn beim Postupgrade ein **ORA 01805**-Fehler auftritt, bedeutet dies, dass die
 
 Weitere Informationen finden Sie unter: [https://docs.oracle.com/cd/E11882_01/server.112/e10729/ch4datetime.htm#NLSPG004](https://docs.oracle.com/cd/E11882_01/server.112/e10729/ch4datetime.htm#NLSPG004).
 
-Eine Fehlausrichtung der Zeitzone zwischen Client und Server kann ebenfalls zu Verzögerungen führen. Daher empfehlen wir, dieselbe Version der Oracle-Bibliothek Client- und Server-seitig zu verwenden. Beide Zeitzonen müssen identisch sein.
+Eine Fehlausrichtung der Zeitzone zwischen Client und Server kann ebenfalls zu Verzögerungen führen. Daher empfehlen wir, dieselbe Version der Oracle-Bibliothek Client- und serverseitig zu verwenden. Beide Zeitzonen müssen identisch sein.
 
 So überprüfen Sie, ob sich beide Seiten in denselben Zeitzonen befinden:
 
@@ -627,7 +627,7 @@ Alle Standardberichte verwenden derzeit die Rendering-Engine v6.x. Wenn Sie Java
 
 ![](assets/migration_reports_1.png)
 -->
-Wenn Sie von den neuen Berichtsfunktionen profitieren möchten, müssen Sie die Berichte erneut veröffentlichen. Überprüfen Sie in diesem Fall alle Ihre Skripte und ändern Sie sie bei Bedarf. Wenn Sie beim PDF-Export ein spezifisches Skript für Open Office hinzugefügt haben, funktioniert dies mit der neuen PDF-Export-Engine (PhantomJS) nicht mehr.
+Wenn Sie von den neuen Berichtsfunktionen profitieren möchten, müssen Sie die Berichte erneut veröffentlichen. Überprüfen Sie in diesem Fall alle Ihre Skripte und ändern Sie sie bei Bedarf. Wenn Sie im Hinblick auf den PDF-Export ein bestimmtes Skript für Open Office hinzugefügt haben, funktioniert dies nicht mehr mit der neuen PDF-Export-Engine (PhantomJS).
 
 ## Web-Anwendungen {#web-applications}
 

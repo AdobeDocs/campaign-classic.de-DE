@@ -19,7 +19,7 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->Server-seitige Konfigurationen können nur von Adobe für Bereitstellungen durchgeführt werden, die von Adobe gehostet werden. Weitere Informationen zu den verschiedenen Bereitstellungen finden Sie im Abschnitt [Hosting](../../installation/using/hosting-models.md) oder auf [dieser Seite](../../installation/using/capability-matrix.md).
+>Server-seitige Konfigurationen können von Adobe nur für Bereitstellungen durchgeführt werden, die von Adobe gehostet werden. Weitere Informationen zu den verschiedenen Bereitstellungen finden Sie im Abschnitt [Hosting](../../installation/using/hosting-models.md) oder auf [dieser Seite](../../installation/using/capability-matrix.md).
 
 ## Bereitstellungsassistent {#deployment-assistant}
 
@@ -166,7 +166,7 @@ Nachdem die POP-Einstellungen angegeben wurden, klicken Sie auf **Test**, um sic
 
 ### Unverarbeitete Bounce-E-Mails {#unprocessed-bounce-mails}
 
-Bounces werden automatisch von Adobe Campaign verarbeitet, indem die im Knoten **Administration > Campaign Management > Unzustellbarkeitsverwaltung > Versandlogqualifizierung** aufgelisteten Regeln angewendet werden. Weitere Informationen hierzu finden Sie unter [Bounce-Message-Verwaltung](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management).
+Bounces werden automatisch von Adobe Campaign verarbeitet. Dabei werden die im Knoten **Administration > Kampagnenverwaltung > Unzustellbarkeitsverwaltung > Versandlogqualifizierung** aufgelisteten Regeln angewendet. Weitere Informationen hierzu finden Sie unter [Bounce-Message-Verwaltung](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management).
 
 Nicht verarbeitete Bounces werden nicht auf der Adobe Campaign-Benutzeroberfläche angezeigt. Sie werden automatisch gelöscht, es sei denn, sie werden mithilfe der folgenden Felder in ein Postfach eines Drittanbieters übertragen:
 
@@ -176,7 +176,7 @@ Nicht verarbeitete Bounces werden nicht auf der Adobe Campaign-Benutzeroberfläc
 
 >[!IMPORTANT]
 >
->Um nicht verarbeitete Bounce-E-Mails weiterzuleiten, empfiehlt Adobe nur das Ausfüllen des Felds **[!UICONTROL Adresse für Fehler]**. Achten Sie jedoch darauf, dass die verwendete Adresse regelmäßig überprüft wird, da dies den Mail-Server stark belasten könnte. Weitere Informationen erhalten Sie von Ihrem Kundenbetreuer.
+>Zur Weiterleitung nicht verarbeiteter Bounce-E-Mails empfiehlt Adobe nur das Ausfüllen des Felds **[!UICONTROL Adresse für Fehler]**. Achten Sie jedoch darauf, dass die verwendete Adresse regelmäßig überprüft wird, da dies den Mail-Server stark belasten könnte. Weitere Informationen erhalten Sie von Ihrem Kundenbetreuer.
 
 ## Tracking-Konfiguration {#tracking-configuration}
 
@@ -277,7 +277,7 @@ Im vorigen Fenster wird die Registrierung auf der Ebene des Tracking-Servers dur
 
 ![](assets/s_ncs_install_deployment_wiz_tracking_ok.png)
 
-Die Parameter, die mit URL-**verknüpft sind (dürfen nicht geändert werden** für eine Standardinstallation. Für alle anderen Parameter kontaktieren Sie bitte Adobe.
+Die Parameter, die mit URL-**verknüpft sind (dürfen nicht geändert werden** für eine Standardinstallation. Für alle anderen Parameter wenden Sie sich bitte an Adobe.
 
 ## Mobile-Kanalparameter {#mobile-channel-parameters}
 
@@ -342,7 +342,7 @@ Verwenden Sie diese Seite, um die Server-URLs zu füllen, um:
 1. Greifen Sie auf den Anwendungs-Server für Ressourcen zu, die nicht im Web verfügbar gemacht werden: Formulare, Intranet, Bestätigungsseiten.
 1. Rufen Sie die Mirrorseiten der Sendungen auf.
 
-   Eine Mirrorseite ist eine dynamische Seite, die den Inhalt der E-Mail anzeigt. Der Zugriff erfolgt über einen Link, der in die an den Empfänger gesendete Nachricht eingefügt wird und personalisierte Elemente enthalten kann. Die Mirrorseite gibt dem Empfänger die Möglichkeit, die Nachricht in einem Internet-Browser statt in der E-Mail-Software zu lesen, unabhängig vom Versandformat (Text oder HTML). Mirrorseiten werden jedoch nur dann für einen bestimmten Versand erzeugt, wenn der erforderliche HTML-Inhalt definiert wurde.
+   Eine Mirrorseite ist eine dynamische Seite, die den Inhalt der E-Mail anzeigt. Der Zugriff erfolgt über einen Link, der in die an den Empfänger gesendete Nachricht eingefügt wird und personalisierte Elemente enthalten kann. Die Mirrorseite gibt dem Empfänger die Möglichkeit, die Nachricht in einem Internet-Browser statt in der E-Mail-Software zu lesen, unabhängig vom Versandformat (Text oder HTML). Mirrorseiten werden jedoch nur dann für einen bestimmten Versand generiert, wenn der erforderliche HTML-Inhalt definiert wurde.
 
 Mit Adobe Campaign können Sie diese drei URLs unterscheiden, um die Last auf mehrere Plattformen zu verteilen.
 

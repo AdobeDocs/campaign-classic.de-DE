@@ -311,7 +311,7 @@ Mit **[!UICONTROL Knoten Administration / Plattform]** Optionen können Sie Adob
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NcmPublishingDir</span> <br /> </td> 
-   <td> Stammordner für Veröffentlichungen.<br /> Weiterführende Informationen zur Erstellung von HTML- und Textinhalten finden Sie <a href="../../delivery/using/using-a-content-template.md">diesem Abschnitt</a>.<br /> </td> 
+   <td> Stammordner für Veröffentlichungen.<br /> Weiterführende Informationen zur Erstellung von HTML und Textinhalten finden Sie in <a href="../../delivery/using/using-a-content-template.md">diesem Abschnitt</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkImageUrl</span> <br /> </td> 
@@ -728,7 +728,7 @@ Mit **[!UICONTROL Knoten Administration / Plattform]** Optionen können Sie Adob
   </tr> 
   <tr> 
    <td> <span class="uicontrol">nmsPipeline_config</span> <br /> </td> 
-   <td> Ermöglicht die Konfiguration von Experience Cloud-Triggern. Datentyp ist „long text“ und muss im JSON-Format vorliegen. Siehe <a class="anchorLink" href="https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html#PipelineoptionNmsPipelineConfig" target="_blank">Verwenden von Experience Cloud-Triggern mit Adobe Campaign Classic</a>.<br /> </td> 
+   <td> Ermöglicht die Konfiguration von Experience Cloud Trigger. Datentyp ist „long text“ und muss im JSON-Format vorliegen. Siehe <a class="anchorLink" href="https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html#PipelineoptionNmsPipelineConfig" target="_blank">Verwenden von Experience Cloud Trigger mit Adobe Campaign Classic</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">LASTIMPORT_&lt;%=instance.internalName%&gt;_&lt;%=activityName%&gt;</span> <br /> </td> 
@@ -756,7 +756,7 @@ Mit **[!UICONTROL Knoten Administration / Plattform]** Optionen können Sie Adob
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcCapabilities_Teradata</span> <br /> </td> 
-   <td> Teradata-Connector-Optionen.<br /> </td> 
+   <td> Teradata Connector-Optionen.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcCapabilities_Hive</span> <br /> </td> 

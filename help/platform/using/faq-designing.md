@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Häufige Fragen zur Erstellung von Meldungen
+title: Häufige Fragen zur Erstellung von Nachrichten
 description: Häufig gestellte Fragen zu Campaign Classic
 feature: Audiences, Troubleshooting
 audience: platform

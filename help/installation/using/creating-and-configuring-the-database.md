@@ -117,7 +117,7 @@ Im Fenster **[!UICONTROL Erstellungsschritte]** können Sie das zur Erstellung d
 
 ![](assets/s_ncs_install_db_oracle_creation04.png)
 
-* Bei Oracle-, Microsoft SQL Server- oder PostgreSQL-Datenbanken kann der Administrator auch die **Speicherparameter** definieren, die beim Erstellen von Datenbankobjekten verwendet werden sollen.
+* Für eine Oracle-, Microsoft SQL Server- oder PostgreSQL-Datenbank kann der Administrator auch die **Speicherparameter** definieren, die beim Erstellen von Datenbankobjekten verwendet werden sollen.
 
   Diese Parameter erhalten die exakten Tablespace-Namen (Warnung: Groß-/Kleinschreibung beachten). Sie werden jeweils im Knoten **[!UICONTROL Administration > Plattform > Optionen]** in den folgenden Optionen gespeichert (siehe [diesen Abschnitt](../../installation/using/configuring-campaign-options.md#database)):
 
@@ -126,7 +126,7 @@ Im Fenster **[!UICONTROL Erstellungsschritte]** können Sie das zur Erstellung d
    * **WdbcOptions_TableSpaceWork**: Arbeitstabellen ohne Schema
    * **WdbcOptions_TableSpaceWorkIndex**: Index der Arbeitstabellen ohne Schema
 
-* Für eine Oracle-Datenbank muss der Adobe Campaign-Benutzer Zugriff auf die Oracle-Bibliotheken haben, normalerweise als Mitglied der Gruppe **oinstall**.
+* Für eine Oracle-Datenbank muss der Adobe Campaign-Benutzer Zugriff auf die Oracle-Bibliotheken haben, in der Regel als Mitglied der **oinstall**-Gruppe.
 * Mit **[!UICONTROL Option „Administratorkennwort festlegen oder ändern]** können Sie das mit dem Adobe Campaign-Benutzer verknüpfte Kennwort mit Administratorrechten eingeben.
 
   Aus Sicherheitsgründen wird empfohlen, ein Administratorkennwort für das Adobe Campaign-Konto zu definieren.
@@ -198,7 +198,7 @@ Sie müssen die folgenden Einstellungen definieren:
   >[!NOTE]
   >
   >Stellen Sie sicher, dass sowohl der Schemaname als auch der Benutzername übereinstimmen. Es wird empfohlen, die Datenbank über die Client-Konsole der Campaign-Konsole zu erstellen.
-  >Bei einer Oracle-Datenbank müssen Sie den Kontonamen nicht eingeben.
+  >Für eine Oracle-Datenbank müssen Sie den Kontonamen nicht eingeben.
 
 * Gibt an, ob die Datenbank Unicode sein soll oder nicht.
 
@@ -217,7 +217,7 @@ Im Fenster **[!UICONTROL Erstellungsschritte]** können Sie das zur Erstellung d
 ![](assets/s_ncs_install_db_oracle_creation04.png)
 
 * Für Oracle-, Microsoft SQL Server- oder PostgreSQL-Datenbanken kann der Administrator die **Speicherparameter** definieren, die beim Erstellen von Datenbankobjekten verwendet werden sollen.
-* Für eine Oracle-Datenbank muss der Adobe Campaign-Benutzer Zugriff auf die Oracle-Bibliotheken haben, normalerweise als Mitglied der Gruppe **oinstall**.
+* Für eine Oracle-Datenbank muss der Adobe Campaign-Benutzer Zugriff auf die Oracle-Bibliotheken haben, in der Regel als Mitglied der **oinstall**-Gruppe.
 * Mit **[!UICONTROL Option „Administratorkennwort festlegen oder ändern]** können Sie das mit dem Adobe Campaign-Benutzer verknüpfte Kennwort mit Administratorrechten eingeben.
 
   Aus Sicherheitsgründen wird empfohlen, ein Administratorkennwort für das Adobe Campaign-Konto zu definieren.

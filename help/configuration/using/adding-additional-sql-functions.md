@@ -122,7 +122,7 @@ Das Feld **@name** bezieht sich auf den Namen der Funktion, und „args“ ist d
 * Schließlich stellt das **providerPart**-Element die Funktionsimplementierung bereit.
 
    * Das **provider**-Attribut ist obligatorisch. Es gibt die Datenbanksysteme an, für die die Implementierung bereitgestellt wird. Wie im Beispiel gezeigt, können bei unterschiedlichen Ausdruckssyntaxen oder zugrunde liegenden Funktionen alternative Implementierungen je nach Datenbank bereitgestellt werden.
-   * Das Attribut **@body** enthält die Funktionsimplementierung. Hinweis: Diese Implementierung muss ein Ausdruck in der Datenbanksprache sein (kein Code-Block). Je nach Datenbanken können Ausdrücke Unterabfragen sein („(Spalte aus Tabelle auswählen, wobei…)„), die nur einen einzigen Wert zurückgeben. Dies ist z. B. beim Oracle der Fall (die Abfrage muss in Klammern geschrieben werden).
+   * Das Attribut **@body** enthält die Funktionsimplementierung. Hinweis: Diese Implementierung muss ein Ausdruck in der Datenbanksprache sein (kein Code-Block). Je nach Datenbanken können Ausdrücke Unterabfragen sein („(Spalte aus Tabelle auswählen, wobei…)„), die nur einen einzigen Wert zurückgeben. Dies ist beispielsweise der Fall in Oracle (die Abfrage muss in Klammern geschrieben werden).
 
   >[!NOTE]
   >

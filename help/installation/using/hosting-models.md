@@ -21,15 +21,15 @@ Adobe Campaign bietet eine Auswahl von drei Hosting-Modellen, die Flexibilität 
 
 >[!NOTE]
 >
->Für gehostete Adobe-Umgebungen können die wichtigsten Installations- und Konfigurationsschritte nur durch Adobe ausgeführt werden, z. B. das Konfigurieren des Servers und das Anpassen der Konfigurationsdateien der Instanz. Weitere Informationen zu den wichtigsten Unterschieden zwischen Bereitstellungsmodi finden Sie auf [dieser Seite](../../installation/using/capability-matrix.md).
+>Für von Adobe gehostete Umgebungen können die Hauptinstallations- und -konfigurationsschritte nur von Adobe ausgeführt werden, z. B. das Konfigurieren des Servers und das Anpassen der Konfigurationsdateien der Instanz. Weitere Informationen zu den wichtigsten Unterschieden zwischen Bereitstellungsmodi finden Sie auf [dieser Seite](../../installation/using/capability-matrix.md).
 
 ## Managed Services / gehostet
 
-Adobe Campaign kann as a Managed Service bereitgestellt werden: Alle Komponenten von Adobe Campaign, einschließlich der Benutzeroberfläche, der Ausführungsverwaltungs-Engine und der Campaign-Datenbank des Kunden, werden vollständig von Adobe gehostet, einschließlich E-Mail-Ausführung, Mirrorseiten, Tracking-Server und nach außen gerichtete Web-Komponenten wie Abmeldeseite/Präferenzcenter und Landingpages.
+Adobe Campaign kann in as a Managed Service bereitgestellt werden: Alle Komponenten von Adobe Campaign, einschließlich der Benutzeroberfläche, der Ausführungsverwaltungs-Engine und der Campaign-Datenbank des Kunden, werden vollständig von Adobe gehostet, einschließlich E-Mail-Ausführung, Mirror-Seiten, Tracking-Server und nach außen gerichtete Web-Komponenten wie Abmeldeseite/Präferenzcenter und Landingpages.
 
 ![](assets/deployment_hosted.png)
 
-Als gehosteter Kunde werden die meisten Installations- und Konfigurationsschritte per Adobe ausgeführt. Sie können auf die folgenden Abschnitte zugreifen, um Ihre Implementierung anzupassen:
+Als gehosteter Kunde werden die meisten Installations- und Konfigurationsschritte von Adobe ausgeführt. Sie können auf die folgenden Abschnitte zugreifen, um Ihre Implementierung anzupassen:
 
 * Konfigurieren Sie Tracking- und Mirrorseiten-URLs pro Marke. Informationen zu Transaktionsnachrichten finden Sie [in diesem Abschnitt](../../message-center/using/additional-configurations.md#configuring-multibranding).
 * Installieren Sie die Client-Konsole: siehe [diesen Abschnitt](../../installation/using/installing-the-client-console.md).
@@ -55,11 +55,11 @@ Bevor Sie als On-Premise-Kunde mit der Bereitstellung von Campaign Classic begin
 
 ## Hybrid
 
-Bei der Bereitstellung als Hybridmodell befindet sich die Adobe Campaign-Lösungssoftware am Standort des Kunden und die Ausführungsverwaltung erfolgt als Cloud-Service per Adobe. Die Adobe Campaign-Marketing-Instanz wird in der Firewall eines Kunden installiert, sodass personenbezogene Daten (PII) intern bleiben und nur die Daten, die zum Personalisieren von E-Mails erforderlich sind, zur E-Mail-Ausführung an die Cloud gesendet werden. Die in der Cloud gehostete Ausführungsinstanz empfängt die Anfragen von der On-Premise-Instanz zum Versand von E-Mails. Diese Instanz personalisiert alle E-Mails und stellt sie bereit. Keine Daten irgendeiner Art werden dauerhaft in der Cloud gespeichert.
+Bei der Bereitstellung als Hybridmodell befindet sich die Adobe Campaign-Lösungssoftware am Standort des Kunden vor Ort, und die Ausführungsverwaltung wird von Adobe als Cloud-Service bereitgestellt. Die Adobe Campaign-Marketing-Instanz wird in der Firewall eines Kunden installiert, sodass personenbezogene Daten (PII) intern bleiben und nur die Daten, die zum Personalisieren von E-Mails erforderlich sind, zur E-Mail-Ausführung an die Cloud gesendet werden. Die in der Cloud gehostete Ausführungsinstanz empfängt die Anfragen von der On-Premise-Instanz zum Versand von E-Mails. Diese Instanz personalisiert alle E-Mails und stellt sie bereit. Keine Daten irgendeiner Art werden dauerhaft in der Cloud gespeichert.
 
 ![](assets/deployment_hybrid.png)
 
-Als Hybrid-Kunde werden die meisten Installations- und Konfigurationsschritte per Adobe ausgeführt. Sie können auf die folgenden Abschnitte zugreifen, um Ihre Implementierung anzupassen:
+Als Hybrid-Kunde werden die meisten Installations- und Konfigurationsschritte von Adobe ausgeführt. Sie können auf die folgenden Abschnitte zugreifen, um Ihre Implementierung anzupassen:
 
 * Transaktionsnachrichten konfigurieren: siehe [diesen Abschnitt](../../message-center/using/transactional-messaging-architecture.md).
 * Konfigurieren Sie Tracking- und Mirrorseiten-URLs pro Marke. Informationen zu Transaktionsnachrichten finden Sie [in diesem Abschnitt](../../message-center/using/additional-configurations.md#configuring-multibranding).

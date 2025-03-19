@@ -154,7 +154,7 @@ Die `<porttype>` verknüpft die Nachrichten mit dem Vorgang „ExecuteQuery“, 
 
 #### Bindung {#binding}
 
-Der `<binding>` Teil spezifiziert das SOAP-Kommunikationsprotokoll ( `<soap:binding>` ), den Datentransport in HTTP (Wert des Attributs „transport„) und das Datenformat für den Vorgang „ExecuteQuery“. Der Hauptteil des SOAP-Umschlags enthält die Nachrichtensegmente direkt ohne Umwandlung.
+Der `<binding>` Teil spezifiziert das SOAP-Kommunikationsprotokoll ( `<soap:binding>` ), den Datentransport in HTTP (Wert des Attributs „transport„) und das Datenformat für den Vorgang „ExecuteQuery“. Der Hauptteil der SOAP-Hülle enthält die Nachrichtensegmente direkt ohne Umwandlung.
 
 ```
 <binding name="queryDefMethodsSoap" type="tns:queryDefMethodsSoap">
@@ -226,7 +226,7 @@ Beim Zugriff über die Konsole ist dieser:
 * Wird in der Anmeldeantwort (im HTTP-Header) gesendet
 * wird in jeder Abfrage verwendet (im HTTP-Header)
 
-Von einer POST und GET HTTP:
+Aus einem POST- und GET-HTTP:
 
 * Der Server vervollständigt die Links mit dem Token
 * Der Server fügt Formularen ein ausgeblendetes Feld hinzu

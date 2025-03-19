@@ -29,7 +29,7 @@ Standardmäßig sind Instanzen nicht berechtigt, eine Verbindung zu externen URL
 >
 >Wenn Sie als **gehosteter** Kunde auf das [Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de) zugreifen können, können Sie die Benutzeroberfläche zum Self-Service für URL-Berechtigungen verwenden. [Weitere Informationen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=de)
 >
->Andere **hybride/gehostete** Kunden müssen sich an das Support-Team von Adobe auf die Zulassungsliste setzen wenden, um IP-Adressen zur hinzuzufügen.
+>Andere **hybride/gehostete** Kunden müssen sich an das Adobe auf die Zulassungsliste setzen-Supportteam wenden, um IP zur hinzuzufügen.
 >
 
 Bei **Hybrid**- und **On-Premise**-Bereitstellungen muss der Administrator auf eine neue **urlPermission** in der Datei **serverConf.xml** verweisen.

@@ -43,7 +43,7 @@ nlserver config -setdblogin:[rbdms:]account[:database][/password]@server
 Die folgenden Werte sind für den **`[rdbms]`** Parameter möglich:
 
 * **PostgreSQL**: für PostgreSQL,
-* **oracle**: für Oracle,
+* **Oracle**: für Oracle,
 * **mssql**: für Microsoft SQL Server,
 
 Mit dem folgenden Befehl wird die **demo**-Instanz mit dem SQL-Servertyp **base6** konfiguriert, der mit dem **campaign**-Konto und dessen **password** auf dem **dbsrv**-Server verknüpft ist:

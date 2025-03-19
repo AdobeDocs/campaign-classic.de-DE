@@ -5,7 +5,7 @@ description: Automatisieren Sie Prozesse mit Workflows, verwalten Sie Daten und 
 feature: Workflows, Data Management
 exl-id: 024a7344-9376-4ff3-926a-003148229f9f
 source-git-commit: dd6bcb16fe41b6a3f1e3f5aaf2f753b29ad4bc1d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '274'
 ht-degree: 100%
 
@@ -27,9 +27,9 @@ Weitere Informationen zur Verwaltung von Workflows finden Sie in der [Dokumentat
 
 Lernen Sie die wichtigsten Schritte zur Workflow-Verwaltung kennen:
 
-* [Workflow-Aktivitäten](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/activities.html?lang=de){target=_blank}: Eine Aktivität beschreibt eine Aufgabenvorlage. Zu den Workflows gehören Targeting, Flusskontrolle, Aktions- und Ereignisaktivitäten.
+* [Workflow-Aktivitäten](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/activities.html?lang=de){target=_blank}: Eine Aktivität beschreibt eine Aufgabenvorlage. Zu den Workflows gehören Zielgruppenbestimmung, Flusskontrolle, Aktions- und Ereignisaktivitäten.
 
-* [Erstellen eines Workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=de){target=_blank}: Erfahren Sie, wie Sie Targeting-, Kampagnen- und technische Workflows erstellen und ausführen.
+* [Erstellen eines Workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=de){target=_blank}: Erfahren Sie, wie Sie Zielgruppenbestimmungs-, Kampagnen- und technische Workflows erstellen und ausführen.
 
 * [Best Practices](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=de){target=_blank}: Erfahren Sie mehr über allgemeine Richtlinien zur Optimierung der Workflow-Leistung von Campaign, zur Verbesserung des Workflow-Designs und zur Auswahl der richtigen Einstellungen.
 

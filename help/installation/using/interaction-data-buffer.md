@@ -34,7 +34,7 @@ Die Datenpufferzone **configuration** kann in der Konfigurationsdatei der Instan
 
 >[!CAUTION]
 >
->Einige Konfigurationen können nur von Adobe für Bereitstellungen durchgeführt werden, die von Adobe gehostet werden. Beispielsweise für den Zugriff auf die Konfigurationsdateien des Servers und der Instanz. Weitere Informationen zu den verschiedenen Bereitstellungen finden Sie im Abschnitt [Hosting](../../installation/using/hosting-models.md) oder auf [dieser Seite](../../installation/using/capability-matrix.md).
+>Einige Konfigurationen können von Adobe nur für Bereitstellungen durchgeführt werden, die von Adobe gehostet werden. Beispielsweise für den Zugriff auf die Konfigurationsdateien des Servers und der Instanz. Weitere Informationen zu den verschiedenen Bereitstellungen finden Sie im Abschnitt [Hosting](../../installation/using/hosting-models.md) oder auf [dieser Seite](../../installation/using/capability-matrix.md).
 >
 >Alle an der Konfiguration vorgenommenen Änderungen erfordern einen Neustart des Webservers (Apache:IIS) und der Adobe Campaign-Prozesse.\
 >Stellen Sie nach der Konfiguration der Datenpufferzone sicher, dass eine angepasste Hardwarekonfiguration verfügbar ist. (Menge des vorhandenen Speichers).

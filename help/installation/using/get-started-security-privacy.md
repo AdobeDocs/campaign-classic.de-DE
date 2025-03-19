@@ -95,7 +95,7 @@ Die Konfiguration muss auf allen Servern durchgeführt werden. Die Konfiguration
 Bei der Konfiguration Ihres Webservers (Apache/IIS) sollten Sie verschiedene Best Practices befolgen:
 
 * Deaktivieren Sie die alte SSL-Version und -Ziffern.
-* TRACE-Methode entfernen
+* Entfernen der TRACE-Methode
 * Entfernen Sie das Banner
 * Begrenzung der Abfragegröße, um das Hochladen wichtiger Dateien zu verhindern
 

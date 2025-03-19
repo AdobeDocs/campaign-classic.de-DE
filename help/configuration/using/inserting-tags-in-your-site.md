@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## Einfache Methode {#simple-method}
 
-Bei dieser Methode wird ein HTTP-Aufruf an den Weiterleitungsserver gesendet, indem ein **`<img>`** HTML-Tag in den HTML-Quellcode der Webseite eingefügt wird, die verfolgt werden soll.
+Bei dieser Methode wird ein HTTP-Aufruf an den Weiterleitungsserver gesendet, indem ein **`<img>`** HTML-Tag in den HTML-Quell-Code der Web-Seite eingefügt wird, die verfolgt werden soll.
 
 >[!IMPORTANT]
 >

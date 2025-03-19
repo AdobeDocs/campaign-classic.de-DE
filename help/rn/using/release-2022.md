@@ -61,7 +61,7 @@ Weitere Informationen finden Sie in der [Kompatibilitätsmatrix für Campaign](.
 
 * Fehlerkorrektur – Die Größe der IMS-Anmeldeseite kann nun im Gegensatz zum vorherigen Build geändert werden. (NEO-30085)
 * Fehlerkorrektur – Bei der Installation des Content-Manager-Packages auf einer vorhandenen Instanz tritt nun kein Fehler mehr auf. (NEO-32349)
-* Fehlerkorrektur – Im Menü **Kampagnen** wird nicht mehr ständig die Meldung &quot;Vorgang läuft&quot; angezeigt. (NEO-44904)
+* Fehlerkorrektur – Im Menü **Kampagnen** wird nicht mehr ständig die Meldung „Vorgang läuft“ angezeigt. (NEO-44904)
 * Fehlerkorrektur – Bei aktiviertem Adobe Analytics werden die BID (Broadlog-ID) und CID (Kampagnen-ID) nun nicht mehr aus der URL entfernt, wenn eine E-Mail mit einer URL gesendet wird, ohne den Versand zu speichern. (NEO-38678)
 * Fehlerkorrektur – Beim Hochladen eines Bildes im Ordner &quot;Öffentliche Ressourcen&quot; in einer Instanz mit Message Center-spezifischer Konfiguration tritt jetzt kein Fehler mehr auf. Es wird nicht mehr die Fehlermeldung &quot;Bilder können nicht auf die Tracking-Server hochgeladen werden&quot; angezeigt. (NEO-38546, NEO-45572)
 * Es wurde ein Problem behoben, das zum Absturz des Systems führte, wenn die Konfiguration im Falle von fehlerhaften Konfigurationsdateien neu generiert wurde. (NEO-38752)

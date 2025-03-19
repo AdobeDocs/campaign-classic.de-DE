@@ -57,7 +57,7 @@ Gehen Sie wie folgt vor, um [!DNL Amazon Redshift] unter Linux zu konfigurieren:
      ./redshift_odbc-setup.sh
    ```
 
-1. Nach der Installation der ODBC-Treiber müssen Sie den Campaign Classic neu starten. Führen Sie dazu den folgenden Befehl aus:
+1. Nach der Installation der ODBC-Treiber müssen Sie Campaign Classic neu starten. Führen Sie dazu den folgenden Befehl aus:
 
    ```
    systemctl stop nlserver.service

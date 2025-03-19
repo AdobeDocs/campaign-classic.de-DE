@@ -761,7 +761,7 @@ Weitere Informationen über die [Performance-Überwachung](../../production/usin
 
 +++**Gestaltungsbausteine**
 
-Adobe Campaign bietet integrierte Gestaltungsbausteine, die Sie in Ihre Sendungen einfügen können. Sie sind dynamisch, personalisiert und enthalten ein spezifisches Rendering. Sie ermöglichen beispielsweise das Einfügen eines Logos, einer bestimmten Anrede oder auch eines Links zur Mirrorseite. Standardmäßig sind mehrere Gestaltungsbausteine verfügbar. Sie können auch benutzerdefinierte Gestaltungsbausteine erstellen, mit denen Sie Ihre Versandpersonalisierung optimieren können. Die tatsächlichen Daten werden in der Analysephase des Versands in jede erzeugte Nachricht eingefügt.
+Adobe Campaign bietet integrierte Gestaltungsbausteine, die Sie in Ihre Sendungen einfügen können. Sie sind dynamisch, personalisiert und enthalten ein spezifisches Rendering. Sie können zum Beispiel ein Logo, eine Grußnachricht oder einen Link zur Mirrorseite hinzufügen. Standardmäßig sind mehrere Gestaltungsbausteine verfügbar. Sie können auch benutzerdefinierte Gestaltungsbausteine erstellen, mit denen Sie Ihre Versandpersonalisierung optimieren können. Die tatsächlichen Daten werden in der Analysephase des Versands in jede erzeugte Nachricht eingefügt.
 
 Weitere Informationen über [Gestaltungsbausteine](../../delivery/using/personalization-blocks.md).
 +++

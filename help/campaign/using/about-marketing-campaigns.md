@@ -6,7 +6,7 @@ role: User
 feature: Campaigns
 exl-id: 07cfa2b3-4e70-437a-ad5f-15fbfe717d5c
 source-git-commit: dd6bcb16fe41b6a3f1e3f5aaf2f753b29ad4bc1d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 100%
 
@@ -26,7 +26,7 @@ Lernen Sie die wichtigsten Schritte zur Kampagnenverwaltung kennen:
 
 * [Erste Schritte](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=de){target=_blank}: Erfahren Sie mit schrittweisen Anleitungen, wie Sie eine Marketing-Kampagne in Adobe Campaign erstellen und ausführen.
 
-* [Erstellen der ersten Kampagne](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html?lang=de){target=_blank}: Erfahren Sie, wie Sie die Logik zur Orchestrierung von Kampagnen planen und einrichten. In einer Kampagne werden alle Elemente im Zusammenhang mit einer Marketing-Kampagne zusammengefasst: Versand, Targeting-Regeln, Kosten, Exportdateien, zugehörige Dokumente usw.
+* [Erstellen der ersten Kampagne](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html?lang=de){target=_blank}: Erfahren Sie, wie Sie die Logik zur Orchestrierung von Kampagnen planen und einrichten. In einer Kampagne werden alle Elemente im Zusammenhang mit einer Marketing-Kampagne zusammengefasst: Versand, Zielgruppenbestimmungsregeln, Kosten, Exportdateien, zugehörige Dokumente usw.
 
 * [Senden von Nachrichten in einer Kampagne](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=de){target=_blank}: Orchestrieren Sie kanalübergreifende Sendungen in den Kampagnen: Optimieren Sie mit Adobe Campaign die Kommunikation durch personalisierte E-Mails, SMS, Push-Benachrichtigungen und In-App-Nachrichten.
 

@@ -77,9 +77,9 @@ Die Verbindung zu einer externen Oracle-Datenbank über die FDA-Option erfordert
 
 1. In Campaign Classic können Sie dann Ihr externes [!DNL Oracle]-Konto konfigurieren. Weiterführende Informationen zur Konfiguration Ihres externen Kontos finden Sie in [diesem Abschnitt](#oracle-external).
 
-## Externes oracle-Konto {#oracle-external}
+## Externes Oracle-Konto {#oracle-external}
 
-Mit dem externen Konto [!DNL Oracle] können Sie Ihre Campaign-Instanz mit Ihrer externen Oracle-Datenbank verbinden.
+Mit dem externen [!DNL Oracle] -Konto können Sie Ihre Campaign-Instanz mit Ihrer externen Oracle-Datenbank verbinden.
 
 1. Wählen Sie in **[!UICONTROL Explorer]** die Option **[!UICONTROL Administration]** &quot;>&quot; **[!UICONTROL Plattform]** &quot;>&quot; **[!UICONTROL Externe Konten]**.
 

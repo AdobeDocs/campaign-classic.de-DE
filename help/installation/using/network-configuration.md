@@ -234,11 +234,11 @@ Für die Integration zwischen Adobe Campaign und Adobe Experience Manager müsse
   </tr> 
   <tr> 
    <td> 80 <br /> </td> 
-   <td> AEM-Verbindung mit Adobe Campaign<br /> </td> 
+   <td> AEM-Verbindung zu Adobe Campaign<br /> </td> 
   </tr> 
   <tr> 
    <td><p> 4502</p><p> 4503</p><br /> </td> 
-   <td> Adobe Campaign-Verbindung zu den „Authoring“- und „Publishing“-Instanzen von AEM. Die zu öffnenden Ports unterscheiden sich möglicherweise von den Standardports, je nach AEM-Konfiguration.<br /> </td> 
+   <td> Adobe Campaign-Verbindung zu den „Authoring“- und „Publishing“-Instanzen von AEM. Die zu öffnenden Ports unterscheiden sich möglicherweise von den Standard-Ports, je nach Ihrer AEM-Konfiguration.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

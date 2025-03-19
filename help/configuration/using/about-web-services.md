@@ -18,12 +18,12 @@ ht-degree: 8%
 
 Der Adobe Campaign-Anwendungsserver wurde für Offenheit und einfache Integration mit immer vielfältigeren und komplexeren Unternehmensinformationssystemen konzipiert.
 
-Adobe Campaign-APIs werden in JavaScript innerhalb der Anwendung und in SOAP außerhalb der Anwendung verwendet. Sie bilden eine Bibliothek allgemeiner Funktionen, die angereichert werden können. Weitere Informationen finden Sie unter [ von SOAP-Methoden](../../configuration/using/implementing-soap-methods.md).
+Adobe Campaign-APIs werden in JavaScript innerhalb des Programms und in SOAP außerhalb desselben verwendet. Sie bilden eine Bibliothek allgemeiner Funktionen, die angereichert werden können. Weitere Informationen finden Sie unter [ von SOAP-](../../configuration/using/implementing-soap-methods.md).
 
 >[!IMPORTANT]
 >
 >Die Anzahl der autorisierten Engine-Aufrufe pro Tag hängt von Ihrem Lizenzvertrag ab. Weitere Informationen hierzu finden Sie auf [dieser Seite](https://helpx.adobe.com/de/legal/product-descriptions/adobe-campaign-classic---product-description.html).\
->Eine Liste aller APIs einschließlich ihrer vollständigen Beschreibung finden Sie in [dieser speziellen Dokumentation](https://experienceleague.adobe.com/developer/campaign-api/api/index.html.
+>Eine Liste aller APIs einschließlich ihrer vollständigen Beschreibung finden Sie in [dieser speziellen Dokumentation]&#x200B;(https://experienceleague.adobe.com/developer/campaign-api/api/index.html.
 
 ## Voraussetzungen {#prerequisites}
 
@@ -48,7 +48,7 @@ Mit dem SOAP-Protokoll können Sie API-Methoden über den Rich-Client oder Anwen
 
 ![](assets/s_ncs_configuration_architecture.png)
 
-Eine SOAP-Nachricht weist folgende Struktur auf:
+Eine SOAP-Nachricht weist die folgende Struktur auf:
 
 * einen Umschlag, der die Struktur der Nachricht definiert,
 * eine optionale Kopfzeile,
@@ -89,7 +89,7 @@ Weitere Informationen finden Sie unter [ExecuteQuery (xtk:queryDef)](../../confi
 </SOAP-ENV:Envelope>
 ```
 
-Das `<soap-env:envelope>` ist das erste Element der Nachricht, das den SOAP-Umschlag darstellt.
+Das `<soap-env:envelope>` ist das erste Element der Nachricht, das die SOAP-Hülle darstellt.
 
 Das `<soap-env:body>` ist das erste untergeordnete Element der Envelope. Sie enthält die Beschreibung der Nachricht, d. h. den Inhalt der Abfrage oder der Antwort.
 
@@ -132,11 +132,11 @@ ODBC error: [Microsoft][ODBC SQL Server Driver][SQL Server]The statement has bee
 </SOAP-ENV:Envelope>
 ```
 
-Das `<soap-env:fault>` im Textkörper der SOAP-Nachricht dient zur Übermittlung der bei der Verarbeitung des Webdienstes auftretenden Fehlersignale. Dieses besteht aus den folgenden Unterelementen:
+Das `<soap-env:fault>` Element im Textkörper der SOAP-Nachricht wird verwendet, um die bei der Verarbeitung des Webservices auftretenden Fehlersignale zu übermitteln. Dieses besteht aus den folgenden Unterelementen:
 
 * `<faultcode>` : Gibt den Fehlertyp an. Die Fehlertypen sind:
 
-   * „VersionMismatch“ bei Inkompatibilität mit der verwendeten SOAP-Version,
+   * „VersionMismatch“ im Fall von Inkompatibilität mit der verwendeten SOAP-Version,
    * „MustUnderstand“ im Falle eines Problems im Nachrichtenkopf,
    * „Client“ für den Fall, dass dem Client einige Informationen fehlen,
    * „Server“, falls beim Ausführen der Verarbeitung auf dem Server Probleme auftreten.

@@ -69,7 +69,7 @@ Es stehen verschiedene Strategien zur Verfügung:
    <td> Online-<br /> </td> 
    <td> Die meisten Datenbank-Engines bieten Defragmentierungsmethoden.<br /> </td> 
    <td> Verwenden Sie einfach die Methode der Datenbankdefragmentierung. Diese Methoden beheben in der Regel Integritätsprobleme, indem sie die Daten während der Defragmentierung sperren.<br /> </td> 
-   <td> Abhängig von der Datenbank können diese Defragmentierungsmethoden als RDBMS-Option (Oracle) bereitgestellt werden und sind nicht immer die effizienteste Methode für den Umgang mit größeren Tabellen.<br /> </td> 
+   <td> Je nach Datenbank können diese Defragmentierungsmethoden als RDBMS-Option (Oracle) bereitgestellt werden und sind nicht immer die effizienteste Methode zum Umgang mit größeren Tabellen.<br /> </td> 
   </tr> 
   <tr> 
    <td> Dump und Wiederherstellung<br /> </td> 

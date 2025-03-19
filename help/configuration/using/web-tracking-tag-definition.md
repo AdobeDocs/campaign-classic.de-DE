@@ -130,5 +130,5 @@ In der folgenden Tabelle sind die vom Weiterleitungs-Server unterstützten Param
 
 Die folgenden Methoden sind möglich:
 
-* Einfügen der URL in das **„src“**-Attribut eines HTML-**`<img>`**-Tags, das in die zu verfolgende Webseite integriert ist.
+* Einfügen der URL in das **„src“**-Attribut eines HTML **`<img>`**-Tags, das in die zu verfolgende Webseite integriert ist.
 * Direkter Aufruf an den Weiterleitungsserver, wenn die zu verfolgende Web-Seite generiert wird.

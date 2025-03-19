@@ -491,7 +491,7 @@ Lesen Sie mehr über [Ausdrucksfelder](form-structure.md#expression-field) und [
 
 ### Validieren von Werten
 
-Sie können JavaScript-SOAP-Aufrufe verwenden, um Formulardaten in der Konsole zu validieren. Verwenden Sie diese Aufrufe für eine komplexe Validierung, z. B. um einen Wert mit einer Liste autorisierter Werte zu vergleichen. [Weitere Informationen](form-structure.md#soap-methods)
+Sie können JavaScript SOAP-Aufrufe verwenden, um Formulardaten in der Konsole zu überprüfen. Verwenden Sie diese Aufrufe für eine komplexe Validierung, z. B. um einen Wert mit einer Liste autorisierter Werte zu vergleichen. [Weitere Informationen](form-structure.md#soap-methods)
 
 1. Erstellen Sie eine Validierungsfunktion in einer JS-Datei.
 
