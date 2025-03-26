@@ -3,10 +3,10 @@ keywords: Campaign Classic;Startseite;beliebte Themen
 product: campaign
 title: Produktdokumentation zu Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: fb19195c7331a2adc0bcf7a37ae7678078dce5e6
+source-git-commit: ec39e513a3474bdcdcf39be7b5e184d62b98f7a2
 workflow-type: tm+mt
-source-wordcount: '353'
-ht-degree: 100%
+source-wordcount: '357'
+ht-degree: 94%
 
 ---
 
@@ -21,9 +21,9 @@ Hier erhalten Sie einen Einblick in die neuesten Produktverbesserungen bei Adobe
 >[!BEGINTABS]
 
 
->[!TAB Die Juni-Version ist live!]
+>[!TAB Version März 2025 ist live!]
 
-Entdecken Sie Updates, Verbesserungen und Patches für Campaign Classic v7.4.1.
+Entdecken Sie Updates, Verbesserungen und Fehlerbehebungen in Version 7.4.2 von Campaign Classic - vom 25. März.
 
 [![Bild](assets/do-not-localize/learn-more-button.svg)](rn/using/latest-release.md)
 
