@@ -4,11 +4,12 @@ title: Konfigurieren der Mobile App für Android in Adobe Campaign
 description: Erfahren Sie, wie Sie Ihre Mobile App für Android einrichten.
 feature: Push
 role: User, Developer
+level: Intermediate, Experienced
 exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
 source-wordcount: '934'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -57,7 +58,7 @@ Wählen Sie den jeweiligen Connector folgendermaßen aus:
 
 ## Konfigurieren des Android-Service {#configuring-android-service}
 
-![](assets/do-not-localize/how-to-video.png) [Erfahren Sie im Video, wie Sie einen Android-Dienst konfigurieren](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-an-android-service-in-campaign.html?lang=de#configuring-an-android-service-and-creating-an-android-mobile-application-in-campaign){target="_blank"}.
+![](assets/do-not-localize/how-to-video.png) [Erfahren Sie in diesem Video, wie Sie einen Android-Service konfigurieren](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-an-android-service-in-campaign.html?lang=de#configuring-an-android-service-and-creating-an-android-mobile-application-in-campaign){target="_blank"}.
 
 1. Klicken Sie im Knoten **[!UICONTROL Profile und Zielgruppen > Dienste und Abonnements]** auf die Schaltfläche **[!UICONTROL Neu]**.
 

@@ -5,8 +5,9 @@ description: Testadressen
 role: Data Engineer, Developer
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Seed Address
+level: Intermediate, Experienced
 exl-id: a16103bf-0498-4f59-ad96-8bfdeea26577
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
 source-wordcount: '341'
 ht-degree: 10%
@@ -17,7 +18,7 @@ ht-degree: 10%
 
 
 
-Wenn die Empfängertabelle eine benutzerdefinierte Tabelle ist, sind zusätzliche Konfigurationen erforderlich. Das **[!UICONTROL nms:seedMember]**-Schema muss erweitert werden. Zur Definition der entsprechenden Felder wird, wie unten dargestellt, eine zusätzliche Registerkarte zu den Testadressen hinzugefügt:
+If the recipient table is a custom table, additional configurations are required. The **[!UICONTROL nms:seedMember]** schema must be extended. An additional tab is added to the seed addresses for defining the adequate fields, as shown below:
 
 ![](assets/s_ncs_user_seedlist_new_tab.png)
 
@@ -25,9 +26,9 @@ Weiterführende Informationen zur Verwendung von Testadressen finden Sie [diesem
 
 ## Implementierung {#implementation}
 
-Das **nms:seedMember**-Schema und das verknüpfte Formular, die standardmäßig bereitgestellt werden, sollen für die Kundenkonfiguration erweitert werden, um auf alle notwendigen Felder verweisen zu können. Die Schemadefinition enthält Kommentare, die den Konfigurationsmodus detailliert beschreiben.
+The **nms:seedMember** schema and the linked form which come out-of-the-box are meant to be extended for customer configuration, to reference all necessary fields. The schema definition contains comments detailing its configuration mode.
 
-Definition des erweiterten Schemas der Empfängertabelle:
+Definition of the recipients table extended schema:
 
 ```
 <srcSchema label="Person" name="person" namespace="cus">
@@ -45,13 +46,13 @@ Definition des erweiterten Schemas der Empfängertabelle:
 Gehen Sie wie folgt vor:
 
 1. Erstellen Sie eine Erweiterung des Schemas **nms:seedMember**. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../configuration/using/extending-a-schema.md).
-1. Fügen Sie in dieser neuen Erweiterung ein neues Element am Stamm von **[!UICONTROL seedMember]** mit den folgenden Parametern hinzu:
+1. In this new extension, add a new element at the root of **[!UICONTROL seedMember]** with the following parameters:
 
    ```
    name="custom_customNamespace_customSchema"
    ```
 
-   Dieses Element muss die Felder enthalten, die zum Exportieren der Kampagnen erforderlich sind. Diese Felder sollten denselben Namen wie die entsprechenden Felder im externen Schema haben. Wenn das Schema beispielsweise **[!UICONTROL cus:person]** lautet, sollte das **[!UICONTROL nms:seedMember]**-Schema wie folgt erweitert werden:
+   This element must contain the fields required to export the campaigns. These fields should have the same name as the corresponding fields in the external schema. For example, if the schema is **[!UICONTROL cus:person]** , the **[!UICONTROL nms:seedMember]** schema should be extended as follows:
 
    ```
      <srcSchema extendedSchema="nms:seedMember" label="Seed addresses" labelSingular="Seed address" name="seedMember" namespace="cus">
@@ -70,20 +71,20 @@ Gehen Sie wie folgt vor:
 
    >[!NOTE]
    >
-   >Die Erweiterung des Schemas **nms:seedMember** muss den Strukturen einer Kampagne und eines Versands in Adobe Campaign entsprechen.
+   >The extension of the **nms:seedMember** schema must comply with the structures of a campaign and a delivery in Adobe Campaign.
 
    >[!IMPORTANT]
    >
    >
    >    
    >    
-   >    * Während der Erweiterung müssen Sie einen **SQL-Namen (@sqlname)** für das Feld „E-Mail“ angeben. Der SQL-Name muss sich von der „sEmail“ unterscheiden, die für das Empfängerschema reserviert ist.
-   >    * Sie müssen die Datenbankstruktur mit dem Schema aktualisieren, das bei der Erweiterung von **nms:seedMember** erstellt wurde.
-   >    * In der **nms:seedMember**-Erweiterung muss das Feld, das die E-Mail-Adresse enthält, **name=„email“** als Attribut enthalten. Der SQL-Name muss sich von „sEmail“ unterscheiden, der bereits für das Empfängerschema verwendet wird. Dieses Attribut muss sofort unter dem **`<element name="custom_cus_person" />`** deklariert werden.
+   >    * During the extension, you must specify an **SQL name (@sqlname)** for the &#39;email&#39; field. The SQL name must differ from the &#39;sEmail&#39; that is reserved for the recipient schema.
+   >    * You must update the database structure with the schema created when extending **nms:seedMember**.
+   >    * In the **nms:seedMember** extension, the field containing the email address must have **name=&quot;email&quot;** as an attribute. The SQL name must be different from &#39;sEmail&#39; which is already used for the recipient schema. This attribute must be immediately declared under the **`<element name="custom_cus_person" />`** element.
    >    
    >
 
-1. Passen Sie das **[!UICONTROL seedMember]**-Formular entsprechend an, um eine neue Registerkarte „Interner Empfänger“ (Testadressen **[!UICONTROL im Fenster]** definieren. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../configuration/using/form-structure.md).
+1. Modify the **[!UICONTROL seedMember]** form accordingly to define a new &quot;Internal recipient&quot; tab in the **[!UICONTROL Seed addresses]** window. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../configuration/using/form-structure.md).
 
    ```
    <container colcount="2" label="Internal recipient" name="internal"
@@ -98,4 +99,4 @@ Gehen Sie wie folgt vor:
      </container>
    ```
 
-Wenn nicht alle Attribute der Testadresse eingegeben werden, ersetzt Adobe Campaign automatisch die Profile. Diese werden bei der Personalisierung mithilfe von Daten aus einem vorhandenen Profil automatisch eingegeben.
+If all attributes of the seed address aren&#39;t entered, Adobe Campaign automatically substitutes the profiles: they will be entered automatically during personalization using data from an existing profile.
