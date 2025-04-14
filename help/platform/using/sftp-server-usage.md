@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: d585a5d4-ea33-43c8-aa37-4d892025374a
 source-git-commit: b8a6a0db27826309456c285c08d4f1d85de70283
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1086'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ Wenn Dateien und Daten für ETL-Zwecke verwaltet werden, werden diese Dateien au
 
 SFTP-Server sind als vorübergehende Datenspeicher konzipiert, auf denen Sie die Aufbewahrung und Löschung von Dateien selbst kontrollieren können.
 
-Bei nicht ordnungsgemäßer Nutzung oder unzureichender Überwachung belegen diese schnell den physisch auf dem Server verfügbaren Speicherplatz, was dazu führen kann, dass Dateien bei nachfolgenden Uploads abgeschnitten werden. In von Adobe gehosteten SFTP-Servern werden Dateien komprimiert, wenn der SFTP-Speicher einen Schwellenwert von 80 % erreicht. Der Prozess wird automatisch vom Adobe-Überwachungssystem ausgelöst.
+Bei nicht ordnungsgemäßer Nutzung oder unzureichender Überwachung belegen diese schnell den physisch auf dem Server verfügbaren Speicherplatz, was dazu führen kann, dass Dateien bei nachfolgenden Uploads abgeschnitten werden. In von Adobe gehosteten SFTP-Servern werden Dateien komprimiert, wenn der SFTP-Speicher einen Schwellenwert von 80 % erreicht. Der Prozess wird automatisch vom Adobe-Überwachungssystem ausgelöst.
 
 Um solche Probleme zu vermeiden, empfiehlt Adobe, die unten stehenden Best Practices zu befolgen.
 

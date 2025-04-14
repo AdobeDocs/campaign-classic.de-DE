@@ -3,20 +3,21 @@ product: campaign
 title: Neue GCM-basierte Funktionen
 description: Neue GCM-basierte Funktionen
 feature: Technote
-source-git-commit: b8a6a0db27826309456c285c08d4f1d85de70283
-workflow-type: tm+mt
+exl-id: 154dee7a-a1e9-40a2-bfa5-3641382d0574
+source-git-commit: 94ee033a8e5d96e780cac2313e3fc249c345cb04
+workflow-type: ht
 source-wordcount: '578'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
 # GCM-basierte Funktionen {#new-functions}
 
-Um die Sicherheit zu verbessern, haben wir die Verwendung des AES-Algorithmus (Advanced Encryption Standard) mit CBC-Modus (Cipher Block Chaining) für kryptografische Vorgänge verworfen. Neue Verschlüsselungsfunktionen wurden eingeführt. Diese Funktionen verwenden AES mit dem Galois/Counter-Modus (AES-GCM) und bieten so eine sicherere Alternative. Diese Funktionen sind in JavaScript, JSP, SOAP-APIs und XML-Schemata verfügbar, sodass Kunden zur Verschlüsselung und Entschlüsselung von CBC zu GCM wechseln können.
+Um die Sicherheit zu erhöhen, haben wir die Verwendung des AES-Algorithmus (Advanced Encryption Standard) mit dem CBC-Modus (Cipher Block Chaining) für kryptografische Vorgänge eingestellt. Dafür wurden neue Verschlüsselungsfunktionen eingeführt. Diese Funktionen verwenden AES mit dem Galois/Counter Mode (AES-GCM) und bieten so eine sicherere Alternative. Sie sind in JavaScript, JSP, SOAP-APIs und XML-Schemata verfügbar, sodass Kundinnen und Kunden zur Verschlüsselung und Entschlüsselung von CBC zu GCM wechseln können.
 
-Diese Dokumentation listet die neu eingeführten AES-GCM-Funktionen und die CBC-basierten Funktionen auf, die veraltet sind.
+Diese Dokumentation listet die neu eingeführten AES-GCM-Funktionen und die eingestellten CBC-basierten Funktionen auf.
 
-Neue Funktionen:
+Neue Funktionen
 
 * [EncryptString-API-Funktion](#encryptString-api-xtk)
 * [EncryptStringWithServerPassword-API-Funktion](#EncryptStringWithServerPassword-api-xtk)
@@ -24,16 +25,16 @@ Neue Funktionen:
 
 Legacy-Funktionen, die für GCM verwendet werden können:
 
-* [JavaScript-Funktion DecryptString](#decryptString-javascript)
-* [JavaScript-Funktion „DecryptPassword“](#decryptPassword-javascript)
+* [DecryptString-JavaScript-Funktion ](#decryptString-javascript)
+* [DecryptPassword-JavaScript-Funktion](#decryptPassword-javascript)
 
-[Veraltete Funktionen](#depracated-functions)
+[Eingestellte Funktionen](#depracated-functions)
 
 ## API-Funktionen
 
 ### EncryptString {#encryptString-api-xtk}
 
-Verschlüsselt den String mit dem Instanzschlüssel unter Verwendung des AES-Algorithmus im GCM-Modus.
+Verschlüsselt den String mit dem Instanzschlüssel unter Verwendung des AES-Algorithmus mit GCM-Modus.
 
 ```
             String 
@@ -46,17 +47,17 @@ Verschlüsselt den String mit dem Instanzschlüssel unter Verwendung des AES-Alg
          
 ```
 
-**Parameter**: Entschlüsselter Text
+**Parameter**: decrypted
 
-**Rückgabewert(e)**: verschlüsselt
+**Rückgabewert(e)**: encrypted
 
 **Schema**: xtk:session
 
-**static**: Ja
+**Statisch**: Ja
 
 ## EncryptStringWithServerPassword {#EncryptStringWithServerPassword-api-xtk}
 
-Verschlüsselt den String mit dem Serverschlüssel unter Verwendung des AES-Algorithmus im GCM-Modus.
+Verschlüsselt den String mit dem Server-Schlüssel unter Verwendung des AES-Algorithmus mit GCM-Modus.
 
 
 ```
@@ -70,19 +71,19 @@ Verschlüsselt den String mit dem Serverschlüssel unter Verwendung des AES-Algo
          
 ```
 
-**parameter**: entschlüsselt
+**Parameter**: decrypted
 
-**Rückgabewert(e)**: verschlüsselt
+**Rückgabewert(e)**: encrypted
 
 **Schema**: xtk:session
 
-**static**: Ja
+**Statisch**: Ja
 
 ## JavaScript-Funktionen
 
 ### encryptString() {#encryptString-javascript}
 
-Verschlüsselt eine Zeichenfolge mit dem Schlüssel der Instanz oder einem anderen Schlüssel.
+Verschlüsselt einen String mit dem Schlüssel der Instanz oder einem anderen Schlüssel.
 
 ```
             cryptString (str [, key
@@ -92,23 +93,23 @@ Verschlüsselt eine Zeichenfolge mit dem Schlüssel der Instanz oder einem ander
 
 **Parameter**:
 
-* str: Die zu verschlüsselnde Zeichenfolge.
-* Schlüssel: Der AES-Verschlüsselungsschlüssel wird in Basis 64: 256 Bit kodiert, wenn die Schlüssellänge 32 beträgt; 192 Bit, wenn die Schlüssellänge 24 beträgt; 128 Bit, wenn die Schlüssellänge 16 beträgt oder kein Schlüssel angegeben ist.
-* useSalt: Verwendet ein Salz der zu verschlüsselnden Daten. Standardmäßig „true“.
+* str: Der zu verschlüsselnde String.
+* key: Der AES-Verschlüsselungsschlüssel wird mit Base 64 verschlüsselt: 256 Bit bei einer Schlüssellänge von 32, 192 Bit bei einer Schlüssellänge von 24, 128 Bit bei einer Schlüssellänge von 16 oder fehlender Schlüsselangabe.
+* useSalt: Verwenden Sie Salt der zu verschlüsselnden Daten. Standardmäßig „true“.
 
-**Rückgabewert**: Gibt die verschlüsselte Zeichenfolge zurück.
+**Rückgabewert**: Gibt den verschlüsselten String zurück.
 
 **Bemerkungen**
 
 Die Verschlüsselung erfolgt nach folgender Methode:
 
-* Die Unicode-Zeichenfolge wird in eine UTF-8-Zeichenfolge umgewandelt.
+* Der Unicode-String wird in einen UTF-8-String umgewandelt.
 * Am Ende wird im Chiffretext ein Prüfzeichen hinzugefügt.
-* Diese Zeichenfolge wird mit dem AES-Algorithmus im Galois/Counter Mode (GCM)-Modus mit Salt mit einem 12 Byte Initialisierungsvektor und einem 16 Byte-Tag verschlüsselt. Wenn kein Schlüssel als Parameter angegeben wird, wird der Instanzschlüssel verwendet.
+* Dieser String wird mit dem AES-Algorithmus im Galois/Counter Mode (GCM) unter Verwendung von Salt mit einem 12-Byte-Initialisierungsvektor und einem 16-Byte-Tag verschlüsselt. Wenn kein Schlüssel als Parameter angegeben wird, wird der Instanzschlüssel verwendet.
 * Der Chiffretext enthält das Tag und den Initialisierungsvektor.
-* Der verschlüsselte Block wird dann in die Basis 64 umgewandelt.
+* Der verschlüsselte Block wird dann in Base 64 konvertiert.
 
-Die Entschlüsselung erfolgt mit der Funktion decryptString.
+Die Entschlüsselung erfolgt mit der Funktion „decryptString“.
 
 **Funktionen**
 
@@ -120,13 +121,13 @@ Verfügbar in:
 * Typologieregel
 * Import
 * JSSP
-* SOAP-Methode
+* SOAP-Methoden
 * WebApp
 * Workflow
 
 ### decryptString() {#decryptString-javascript}
 
-Verschlüsselt eine Zeichenfolge mit dem Schlüssel der Instanz oder einem anderen Schlüssel. Diese alte Funktion kann mit GCM verwendet werden. Sie ist für die Entschlüsselung von Chiffretext, der mit dem AES-CBC-Modus verschlüsselt wird, veraltet.
+Verschlüsselt einen String mit dem Schlüssel der Instanz oder einem anderen Schlüssel. Diese Legacy-Funktion kann mit GCM verwendet werden. Sie steht für die Entschlüsselung von mit dem AES-CBC-Modus verschlüsselten Chiffretext nicht mehr zur Verfügung.
 
 ```
             decryptString (str [, key
@@ -136,17 +137,17 @@ Verschlüsselt eine Zeichenfolge mit dem Schlüssel der Instanz oder einem ander
 
 **Parameter**:
 
-* str: Die zu entschlüsselnde Zeichenfolge.
-* Schlüssel: Der AES-Verschlüsselungsschlüssel wird in Basis 64: 256 Bit kodiert, wenn die Schlüssellänge 32 beträgt; 192 Bit, wenn die Schlüssellänge 24 beträgt; 128 Bit, wenn die Schlüssellänge 16 beträgt oder kein Schlüssel angegeben ist.
-* useSalt: Verwendet ein Salz der zu entschlüsselnden Daten. Standardmäßig „true“.
+* str: Der zu entschlüsselnde String.
+* key: Der AES-Verschlüsselungsschlüssel wird mit Base 64 verschlüsselt: 256 Bit bei einer Schlüssellänge von 32, 192 Bit bei einer Schlüssellänge von 24, 128 Bit bei einer Schlüssellänge von 16 oder fehlender Schlüsselangabe.
+* useSalt: Verwenden Sie Salt der zu entschlüsselnden Daten. Standardmäßig „true“.
 
-**Rückgabewert**: Gibt die entschlüsselte Zeichenfolge zurück.
+**Rückgabewert**: Gibt den entschlüsselten String zurück.
 
-**Warnung**: In der Datenbank gespeicherte Kennwörter (Optionen/externe Konten) können mit dieser Methode nicht mehr entschlüsselt werden. Verwenden Sie dazu [decryptPassword](#decryptPassword-javascript).
+**Warnung**: In der Datenbank gespeicherte Passwörter (Optionen/externe Konten) können mit dieser Methode nicht mehr entschlüsselt werden. Verwenden Sie dazu [decryptPassword](#decryptPassword-javascript).
 
 ### decryptPassword() {#decryptPassword-javascript}
 
-Entschlüsselt ein in einem externen Konto gespeichertes Kennwort. Diese alte Funktion kann mit GCM verwendet werden. Sie ist für die Entschlüsselung von Chiffretext, der mit dem AES-CBC-Modus verschlüsselt wird, veraltet.
+Entschlüsselt ein in einem externen Konto gespeichertes Passwort. Diese Legacy-Funktion kann mit GCM verwendet werden. Sie steht für die Entschlüsselung von mit dem AES-CBC-Modus verschlüsselten Chiffretext nicht mehr zur Verfügung.
 
 ```
             decryptPassword (str)
@@ -155,13 +156,13 @@ Entschlüsselt ein in einem externen Konto gespeichertes Kennwort. Diese alte Fu
 
 **Parameter**:
 
-* str: Die zu entschlüsselnde Zeichenfolge.
+* str: Der zu entschlüsselnde String.
 
-**Rückgabewert**: Gibt das Kennwort in Textform zurück.
+**Rückgabewert**: Gibt das Passwort in reiner Textform zurück.
 
 **Bemerkungen**
 
-Diese Funktion kann nicht in Workflows, Web-Anwendungen, Berichten oder Sendungen aufgerufen werden. Sie kann in JSSP- oder SOAP-Aufrufimplementierungen aufgerufen werden. Beispiel:
+Diese Funktion kann nicht in Workflows, Web-Anwendungen, Berichten oder Sendungen aufgerufen werden, aber in JSSP- oder SOAP-Aufrufimplementierungen. Beispiel:
 
 ```
         function nms_extAccount_LogonToRemoteInstance(remoteInstanceUrl, login, encryptedPassword) {
@@ -186,9 +187,9 @@ Diese Funktion kann nicht in Workflows, Web-Anwendungen, Berichten oder Sendunge
       
 ```
 
-## Veraltete Funktionen {#depracated-functions}
+## Eingestellte Funktionen {#depracated-functions}
 
-Die folgenden Funktionen sind vollständig veraltet:
+Folgende Funktionen stehen nicht mehr zur Verfügung:
 
 * cryptString
 * Verschlüsseln

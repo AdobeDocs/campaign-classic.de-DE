@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: b8a6a0db27826309456c285c08d4f1d85de70283
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3887'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -23,12 +23,12 @@ Die entsprechenden Aktualisierungen finden Sie in den [Versionshinweisen zu Adob
 
 ### März 2025 {#march-2025}
 
-Im Rahmen einer Promotion-Initiative für Campaign v8 haben wir mit der Neuorganisation des Dokumentationssatzes für Campaign Classic begonnen. In Version 7.4.2 wird der erste Meilenstein veröffentlicht. Die folgenden Handbücher wurden durch Landingpages ersetzt, einschließlich Links zur v8-Dokumentation:
+Im Rahmen einer Promotion-Initiative für Campaign v8 haben wir mit der Neuorganisation der Dokumentation für Campaign Classic begonnen. In Version 7.4.2 wird der erste Meilenstein veröffentlicht. Die folgenden Anleitungen wurden durch Landingpages ersetzt, einschließlich Links zur v8-Dokumentation:
 
-* Orchestrieren von Marketing-Kampagnen: Dieses Handbuch wurde durch eine [Landingpage“ ](../../campaign/using/about-marketing-campaigns.md).
-* Verwaltung von Marketing-Ressourcen: Dieses Handbuch wurde entfernt.
-* Dezentrales Marketing: Dieses Handbuch wurde entfernt.
-* Automatisieren mit Workflows: Dieses Handbuch wurde durch eine [Landingpage“ ](../../workflow/using/about-workflow-automation.md)
+* Orchestrieren von Marketing-Kampagnen: Diese Anleitung wurde durch eine [Landingpage](../../campaign/using/about-marketing-campaigns.md) ersetzt.
+* Verwaltung von Marketing-Ressourcen: Diese Anleitung wurde entfernt.
+* Verteiltes Marketing: Diese Anleitung wurde entfernt.
+* Automatisieren mit Workflows: Diese Anleitung wurde durch eine [Landingpage](../../workflow/using/about-workflow-automation.md) ersetzt.
 
 ## 2024
 

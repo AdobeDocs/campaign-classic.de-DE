@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: unitary-interactions
 exl-id: 3eaef689-44fa-41b3-ade8-9fe447e165ec
 source-git-commit: b8a6a0db27826309456c285c08d4f1d85de70283
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '325'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -52,9 +52,9 @@ Ergänzen Sie die URL mit dem Befehl **nms:interaction#UpdateStatus** und folgen
 
 ## Anwendungsbeispiel eines SOAP-Aufrufs {#example-using-a-soap-call}
 
-Nachfolgend finden Sie ein Beispiel für einen Code für einen SOAP-Aufruf.
+Nachfolgend finden Sie Beispiel-Code für einen SOAP-Aufruf.
 
-Im Folgenden finden Sie ein Beispiel für URL:
+Hier ein URL-Beispiel:
 
 ```
 http://<urlOfYourJSSP>?env=liveRcp&sp=<nameSpaceOfferSpace>&t=<targetID>
