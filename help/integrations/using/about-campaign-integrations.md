@@ -10,9 +10,9 @@ level: Intermediate, Experienced
 topic-tags: campaign-integrations
 exl-id: ceb584da-bc97-4b71-9499-59df5e6d10c3
 source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
-workflow-type: tm+mt
-source-wordcount: '705'
-ht-degree: 97%
+workflow-type: ht
+source-wordcount: '709'
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 97%
 
 Adobe Experience Cloud ist ein umfassender Satz marktführender integrierter Lösungen, die auf einer gemeinsamen Datenplattform mit gemeinsamen leistungsstarken Lösungen und Apps aufbauen.
 
-Weitere Informationen zu funktionalen Integrationen, die zwischen Adobe Campaign- und Adobe Experience Cloud-Lösungen verfügbar sind, finden [ auf dieser Seite ](https://experienceleague.adobe.com/de/docs/core-services/interface/administration/integrations){_blank}.
+Auf [dieser Seite](https://experienceleague.adobe.com/de/docs/core-services/interface/administration/integrations){_blank} erfahren Sie mehr über funktionale Integrationen, die zwischen Adobe Campaign- und Adobe Experience Cloud-Lösungen verfügbar sind.
 
 Die vollständige Liste der Lösungen und App-Services von Adobe, die mit Adobe Campaign integriert werden können, sowie die zugehörige Dokumentation finden Sie in [diesem Abschnitt](#experience-cloud-integrations).
 
