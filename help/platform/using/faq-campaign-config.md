@@ -9,9 +9,9 @@ level: Beginner, Intermediate, Experienced
 topic-tags: starting-with-adobe-campaign
 exl-id: 50bed489-2a0f-4123-a326-3d68c8295662
 source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '762'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -87,7 +87,7 @@ Gehen Sie nach der Anmeldung zu **[!UICONTROL Datei]** > **[!UICONTROL Lokalen C
 
 ![](assets/faq_soft_cache.png)
 
-Wenn dies immer noch nicht hilft, versuchen Sie, den Hard Cache zu löschen, indem Sie die folgenden Schritte ausführen.
+Wenn auch das nicht hilft, versuchen Sie, den Hard Cache zu löschen, indem Sie die folgenden Schritte ausführen.
 
 ## Wie kann der Hard Cache gelöscht werden, wenn die Probleme rechnerspezifisch oder benutzerspezifisch sind? {#perform-hard-cache-clear}
 
