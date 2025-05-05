@@ -170,6 +170,6 @@ In Feldern, die eine Dauer bezeichnen (z. B. Gültigkeit von Versandressourcen, 
 
 In diesem Video wird der Campaign Classic-Arbeitsbereich vorgestellt.
 
->[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/39531?quality=12&captions=ger)
 
 Weitere Anleitungsvideos zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).

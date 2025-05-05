@@ -224,6 +224,6 @@ Jede periodische Kampagne enthält die gleichen Elemente und wird nach der Erste
 
 In diesem Video wird erklärt, wie man einen Marketing-Plan, Programme und Kampagnen erstellt.
 
->[!VIDEO](https://video.tv.adobe.com/v/35132?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/326556?quality=12&captions=ger)
 
 Weitere Anleitungsvideos zu Campaign finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).

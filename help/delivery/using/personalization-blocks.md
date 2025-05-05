@@ -144,6 +144,6 @@ Gehen Sie im Explorer wie folgt vor, um Gestaltungsbausteine zu erstellen:
 
 Erfahren Sie, wie Sie dynamische Inhaltsbausteine erstellen und diese zur Personalisierung des Inhalts Ihres E-Mail-Versands verwenden.
 
->[!VIDEO](https://video.tv.adobe.com/v/24924?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/30080?quality=12&captions=ger)
 
 Weitere Anleitungsvideos zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).

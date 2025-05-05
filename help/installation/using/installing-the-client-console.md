@@ -173,6 +173,6 @@ Gehen Sie wie folgt vor, um sich bei einer vorhandenen Instanz anzumelden:
 
 In diesem Video wird gezeigt, wie Sie den Adobe Campaign-Client installieren und einrichten.
 
->[!VIDEO](https://video.tv.adobe.com/v/35124?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/38268?quality=12&captions=ger)
 
 Weitere Anleitungsvideos zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).

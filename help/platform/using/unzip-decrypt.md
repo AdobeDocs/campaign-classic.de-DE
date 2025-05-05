@@ -106,6 +106,6 @@ Die Schritte zum Ausführen dieses Anwendungsfalls lauten wie folgt:
 
 In diesem Video wird gezeigt, wie Daten mithilfe eines GPG-Schlüssels entschlüsselt werden.
 
->[!VIDEO](https://video.tv.adobe.com/v/36482?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/41359?quality=12&captions=ger)
 
 Weitere Anleitungsvideos zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).

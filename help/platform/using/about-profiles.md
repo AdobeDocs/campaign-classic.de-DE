@@ -109,7 +109,7 @@ Erfahren Sie, wie Sie auf Profildaten zugreifen, Profile sortieren und filtern u
 
 In diesem Video wird auch die Einhaltung der Datenschutz-Grundverordnung durch Adobe Campaign Classic erläutert.
 
->[!VIDEO](https://video.tv.adobe.com/v/35611?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/326750?quality=12&captions=ger)
 
 Weitere Anleitungsvideos zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).
 

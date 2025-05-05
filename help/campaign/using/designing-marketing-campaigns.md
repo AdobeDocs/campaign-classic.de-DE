@@ -68,6 +68,6 @@ Im Folgenden werden Termini dargestellt, die im Zusammenhang mit Campaign von Be
 
 In diesem Video werden die wichtigsten Konzepte von Marketing-Kampagnen vorgestellt.
 
->[!VIDEO](https://video.tv.adobe.com/v/35131?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/326572?quality=12&captions=ger)
 
 Weitere Anleitungsvideos zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).
