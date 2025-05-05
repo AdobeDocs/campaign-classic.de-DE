@@ -81,5 +81,5 @@ Unten finden Sie einige der wichtigsten Best Practices in Bezug auf die Konfigur
 
 Verwandte Themen:
 
-* [Übersicht über die Adobe Marketing Cloud-Konformität](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/overview#privacy)
-* [Adobe Campaign-Sicherheitsübersicht](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/overview#security)
+* [Übersicht über die Adobe Marketing Cloud-Konformität](https://experienceleague.adobe.com/de/docs/experience-platform/landing/governance-privacy-security/overview#privacy)
+* [Adobe Campaign-Sicherheitsübersicht](https://experienceleague.adobe.com/de/docs/experience-platform/landing/governance-privacy-security/overview#security)

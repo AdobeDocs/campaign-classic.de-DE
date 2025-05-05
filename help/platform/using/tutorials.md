@@ -52,4 +52,4 @@ Neben diesen Kurzvideos mit Detailwissen finden Sie auf der Adobe-Website auch [
 
 ### Kurse von Experience League
 
-Außerdem stehen Ihnen mit den [Kursempfehlungen](https://experienceleague.adobe.com/?lang=de#dashboard/learning) für Adobe Campaign Classic von Experten kuratierte Lerninhalte offen, die Ihnen auf effiziente Weise Fähigkeiten und Know-how vermitteln.
+Außerdem stehen Ihnen mit den [Kursempfehlungen](https://experienceleague.adobe.com/de?lang=de#dashboard/learning) für Adobe Campaign Classic von Experten kuratierte Lerninhalte offen, die Ihnen auf effiziente Weise Fähigkeiten und Know-how vermitteln.
