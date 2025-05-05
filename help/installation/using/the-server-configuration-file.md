@@ -1625,9 +1625,9 @@ Im Folgenden finden Sie die verschiedenen Parameter des **mta**-Knotens. Dies is
    <td> statServerAddress<br /> </td> 
    <td> Adresse des Servers der Versandstatistik, angegeben als 
     &lt;DNS oder IP&gt; 
-      <code>[</code>: 
+      <code>&lbrack;</code>: 
      &lt;port&gt; 
-       <code>]</code>. Siehe 
+       <code>&rbrack;</code>. Siehe 
       <a href="../../installation/using/email-deliverability.md#coordinates-of-the-statistics-server" target="_blank">Koordinaten des Statistikservers</a>. 
       <br /> 
      </td> 

@@ -23,7 +23,7 @@ In diesem Kapitel werden Server-seitige Konfigurationen beschrieben, die entspre
 
 ## Einschränkungen
 
-Diese Verfahren sind auf On **Premise-/****Hybrid** Bereitstellungen beschränkt und erfordern Administratorberechtigungen.
+Diese Verfahren sind auf On **Premise-/**&#x200B;**Hybrid** Bereitstellungen beschränkt und erfordern Administratorberechtigungen.
 
 Bei **gehosteten** können Server-seitige Einstellungen nur von Adobe konfiguriert werden. Auf die Zulassungsliste setzen Einige Einstellungen können jedoch im Control Panel von [ eingerichtet werden](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=de) z. B. die IP-Dateiverwaltung oder URL-Berechtigungen. [Weitere Informationen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=de).
 

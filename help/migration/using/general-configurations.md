@@ -458,7 +458,7 @@ Es gibt drei Möglichkeiten, einen Konflikt zu lösen:
 
   >[!IMPORTANT]
   >
-  Wenn Sie diesen Auflösungsmodus auswählen, riskieren Sie, Patches in der neuen Version zu verlieren. Es wird daher dringend empfohlen, diese Option nicht zu verwenden oder nur für erfahrene Benutzer zu reservieren.
+  >Wenn Sie diesen Auflösungsmodus auswählen, riskieren Sie, Patches in der neuen Version zu verlieren. Es wird daher dringend empfohlen, diese Option nicht zu verwenden oder nur für erfahrene Benutzer zu reservieren.
 
 Wenn Sie sich dafür entscheiden, den Konflikt manuell zu lösen, gehen Sie wie folgt vor:
 
@@ -507,13 +507,13 @@ In v7 wurde der Angebotsinhalt verschoben. In Version 6.02 befand sich der Inhal
 
 >[!IMPORTANT]
 >
-Wenn einige Sendungen mit konfigurierten Angeboten nach der Migration gesendet werden sollten, müssen Sie alle diese Sendungen löschen und in v7 neu erstellen. Ist dies nicht möglich, wird ein „Kompatibilitätsmodus“ angeboten. Dieser Modus wird nicht empfohlen, da Sie nicht von allen neuen Funktionen in Interaction v7 profitieren werden. Dies ist ein Übergangsmodus, in dem Sie laufende Kampagnen vor der eigentlichen Migration auf 6.1 abschließen können. Für weitere Informationen zu diesem Modus kontaktieren Sie uns bitte.
+>Wenn einige Sendungen mit konfigurierten Angeboten nach der Migration gesendet werden sollten, müssen Sie alle diese Sendungen löschen und in v7 neu erstellen. Ist dies nicht möglich, wird ein „Kompatibilitätsmodus“ angeboten. Dieser Modus wird nicht empfohlen, da Sie nicht von allen neuen Funktionen in Interaction v7 profitieren werden. Dies ist ein Übergangsmodus, in dem Sie laufende Kampagnen vor der eigentlichen Migration auf 6.1 abschließen können. Für weitere Informationen zu diesem Modus kontaktieren Sie uns bitte.
 
 Ein Beispiel für ein Verschiebungsskript (**interactionTo610_full_XX.js**) ist im Ordner **Migration** im Ordner Adobe Campaign v7 verfügbar. Diese Datei zeigt ein Beispiel für ein Skript für einen Client, bei dem eine einzelne E-Mail-Darstellung pro Angebot verwendet wird (die Felder **[!UICONTROL htmlSource]** und **[!UICONTROL textSource]**). Der Inhalt der Tabelle **NmsEmailOfferView** wurde in die Angebotstabelle verschoben.
 
 >[!NOTE]
 >
-Die Verwendung dieses Skripts ermöglicht es Ihnen nicht, die Optionen „Content-Management“ und „Rendering-Funktionen“ zu nutzen. Um von diesen Funktionen zu profitieren, müssen Sie die Katalogangebote überdenken, insbesondere die Angebotsinhalte und Konfigurationsbereiche.
+>Die Verwendung dieses Skripts ermöglicht es Ihnen nicht, die Optionen „Content-Management“ und „Rendering-Funktionen“ zu nutzen. Um von diesen Funktionen zu profitieren, müssen Sie die Katalogangebote überdenken, insbesondere die Angebotsinhalte und Konfigurationsbereiche.
 
 ```
 loadLibrary("/nl/core/shared/nl.js");
@@ -613,7 +613,7 @@ Im Folgenden finden Sie die Vorgehensweise nach dem Verschieben des Angebotsinha
 
    >[!NOTE]
    >
-   Die Namen von Online-Kategorien und -Angeboten werden nach der Live-Schaltung geändert. Aktualisieren Sie im eingehenden Kanal alle Verweise auf Angebote und Kategorien.
+   >Die Namen von Online-Kategorien und -Angeboten werden nach der Live-Schaltung geändert. Aktualisieren Sie im eingehenden Kanal alle Verweise auf Angebote und Kategorien.
 
 ## Berichte {#reports}
 

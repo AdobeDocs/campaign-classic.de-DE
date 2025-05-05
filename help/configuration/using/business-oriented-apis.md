@@ -62,7 +62,7 @@ Beschreibung der Methode „subscribe“ im Schema „nms:subscription“:
 </method>
 ```
 
-Die Definition des Abstimmschlüssels muss über das Attribut _**key** im `<recipient>` des XML-Dokuments eingegeben werden. Der Inhalt dieses Attributs ist eine kommagetrennte XPath-Liste.
+Die Definition des Abstimmschlüssels muss über das Attribut _&#x200B;**key** im `<recipient>` des XML-Dokuments eingegeben werden. Der Inhalt dieses Attributs ist eine kommagetrennte XPath-Liste.
 
 Dieser Aufruf gibt keine Daten zurück, mit Ausnahme von Fehlern.
 

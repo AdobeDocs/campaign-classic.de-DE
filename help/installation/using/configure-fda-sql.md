@@ -88,7 +88,7 @@ Sie müssen ein [!DNL Microsoft SQL Server] externes Konto erstellen, um Ihre Ca
 
    ![](assets/sql.png)
 
-1. Konfigurieren Sie die Authentifizierung des externen Microsoft SQL Server ]**-Kontos:**[!UICONTROL 
+1. Konfigurieren Sie die Authentifizierung des externen Microsoft SQL Server **-Kontos:**
 
    * **[!UICONTROL Server]**: URL des [!DNL Microsoft SQL Server].
 

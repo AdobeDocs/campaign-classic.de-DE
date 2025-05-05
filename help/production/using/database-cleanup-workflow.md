@@ -49,7 +49,7 @@ Standardmäßig ist der Workflow **[!UICONTROL Datenbankbereinigung]** so konfig
 
 ### Bereitstellungsassistent {#deployment-assistant}
 
-Über **[!UICONTROL Menü**[!UICONTROL  Tools > Erweitert ]**können Sie mit dem Bereitstellungsassistenten]**, wie lange Daten gespeichert werden sollen. Werte werden in Tagen ausgedrückt. Wenn diese Werte nicht geändert werden, verwendet der Workflow die Standardwerte.
+Über **[!UICONTROL Menü**&#x200B;[!UICONTROL &#x200B; Tools > Erweitert &#x200B;]&#x200B;**können Sie mit dem Bereitstellungsassistenten]**, wie lange Daten gespeichert werden sollen. Werte werden in Tagen ausgedrückt. Wenn diese Werte nicht geändert werden, verwendet der Workflow die Standardwerte.
 
 ![](assets/ncs_cleanup_deployment-wizard.png)
 

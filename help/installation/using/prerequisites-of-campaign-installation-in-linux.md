@@ -150,7 +150,7 @@ Die Verwendung von PostgreSQL mit Adobe Campaign erfordert auch die Installation
 
 ### Oracle {#oracle}
 
-Rufen Sie die Bibliothek Version für 64-Bit-Debian ab, z.B.: libclntsh.so, libclntsh.so.19.1 **,** libclntsh.so.18.1 **,** libclntsh.so.12.1 **,** libclntsh.so.11.1 **oder** libclntsh.so.10.1 **.******
+Rufen Sie die Bibliothek Version für 64-Bit-Debian ab, z.B.: libclntsh.so, libclntsh.so.19.1 **,** libclntsh.so.18.1 **,** libclntsh.so.12.1 **,** libclntsh.so.11.1 **oder** libclntsh.so.10.1 **.**&#x200B;**&#x200B;**
 
 Sie können ein Linux-RPM-Paket vom Oracle Technology Network erhalten.
 
@@ -168,7 +168,7 @@ Wenn Sie in der Client-Konsole feststellen, dass es unerwartete Zeitverzögerung
 
    Bei der Verwendung der Oracle Instant Client-Version wurden verschiedene Probleme festgestellt. Darüber hinaus ist es unmöglich, die Zeitzonendatei auf dem Instant Client zu ändern.
 
-1. Stellen Sie sicher, dass die Client-**und die****Datenbankserverversion** identisch **** sind.
+1. Stellen Sie sicher, dass die Client-**und die**&#x200B;**Datenbankserverversion** identisch **&#x200B;**&#x200B;sind.
 
    Das Mischen von Versionen trotz der Kompatibilitätsmatrix von Oracle und der Empfehlung, Client- und Serverversionen aufeinander abzustimmen, verursacht bekanntermaßen Probleme.
 

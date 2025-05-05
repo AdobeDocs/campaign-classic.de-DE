@@ -52,7 +52,7 @@ Im Folgenden finden Sie eine Liste der üblichen Verwaltungsbefehle, auf die unt
   >    * einen anderen Wert, wenn ein Fehler auftritt.
   >
 
-* Beginn/Stopp eines Multi-Instanz- oder Mono-Instanzmoduls (**web**, **trackinglogd**, **syslogd**, **mta**, **wfserver******,inmail):
+* Beginn/Stopp eines Multi-Instanz- oder Mono-Instanzmoduls (**web**, **trackinglogd**, **syslogd**, **mta**, **wfserver**&#x200B;**&#x200B;**,inmail):
 
   **nlserver-Beginn`<module>[@<instance>]`**
 

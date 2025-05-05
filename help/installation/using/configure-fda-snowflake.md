@@ -91,7 +91,7 @@ Sie müssen ein [!DNL Snowflake] externes Konto erstellen, um Ihre Campaign-Inst
 
 1. Fügen Sie Ihre **[!UICONTROL Server]**-URL und **[!UICONTROL Datenbank]** hinzu.
 
-1. Konfigurieren der Authentifizierung für das externe Snowflake ]**-Konto:**[!UICONTROL 
+1. Konfigurieren der Authentifizierung für das externe Snowflake **-Konto:**
 
    * Für die Konto-/Kennwortauthentifizierung müssen Sie Folgendes angeben:
 

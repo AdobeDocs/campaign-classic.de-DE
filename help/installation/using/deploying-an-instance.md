@@ -383,7 +383,7 @@ In einem Versand können Sie Bilder verwenden, die in der öffentlichen Ressourc
 
   Dieser Wert kann für jeden Versand überschrieben werden.
 
-* Für öffentliche Ressourcen ist die URL **https://** server **/res/** instance ****wobei **instance**der Name der Tracking-Instanz ist.
+* Für öffentliche Ressourcen ist die URL **https://** server **/res/** instance **&#x200B;**&#x200B;wobei **instance**&#x200B;der Name der Tracking-Instanz ist.
 
 ### Erkennung der Bilder einer Sendung {#delivery-image-detection}
 

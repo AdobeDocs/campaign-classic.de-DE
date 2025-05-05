@@ -74,7 +74,7 @@ Gehen Sie wie folgt vor, um SpamAssassin unter Windows zu installieren und zu ko
 
 1. Um zu überprüfen, ob die SpamAssassin-Installation erfolgreich war, verwenden Sie den GTUBE-Test (Generic Test for Unsolicited Bulk Email) mit dem folgenden Verfahren:
 
-   1. C:\TestSpamMail.txt Erstellen Sie eine Textdatei und speichern Sie sie unter ****.
+   1. C:\TestSpamMail.txt Erstellen Sie eine Textdatei und speichern Sie sie unter **&#x200B;**.
    1. Fügen Sie den folgenden Inhalt in die Datei ein:
 
       ```
@@ -171,7 +171,7 @@ cpan Mail::SpamAssassin
 
 ### Filterregeln aktualisieren {#updating-filter-rules}
 
-Filterregeln können automatisch mit dem Tool **sa-update** aktualisiert werden. Weitere Informationen finden Sie auf der offiziellen SpamAssassin](https://spamassassin.apache.org/)Website [https://spamassassin.apache.org/.
+Filterregeln können automatisch mit dem Tool **sa-update** aktualisiert werden. Weitere Informationen finden Sie auf der offiziellen SpamAssassin[&#128279;](https://spamassassin.apache.org/)Website https://spamassassin.apache.org/.
 
 In Debian werden Aktualisierungen automatisch jeden Tag durchgeführt.
 

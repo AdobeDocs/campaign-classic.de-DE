@@ -18,7 +18,7 @@ ht-degree: 11%
 >
 >Einige integrierte Schemata dürfen nicht erweitert werden, insbesondere diejenigen, für die die folgenden Einstellungen definiert sind:\
 >**dataSource=„file“** und **mappingType=„xmlFile“**.\
->Die folgenden Schemata dürfen nicht erweitert werden: **xtk:entityBackupNew**, **xtk:entityBackupOriginal**, **xtk:entityOriginal**, **xtk:form**, **xtk:srcSchema**, **ncm:publishing**, **:monitoring**, **nms:calendar**, **nms:remote**, **nms:userAgent,** xtk:builder, **xtk:connections**, xtk:init **, xtk:nvList**, xtk:fusionJSTk: xtkXtk:navtree **, xtk:nvTreeXtkXtkXtk:resourceXtkXtk:****** **** **** **** **** **** **** **** **** **** **** xtkXtk:rtkXtk:rtkXtk:rtkXtk989888888888888898
+>Die folgenden Schemata dürfen nicht erweitert werden: **xtk:entityBackupNew**, **xtk:entityBackupOriginal**, **xtk:entityOriginal**, **xtk:form**, **xtk:srcSchema**, **ncm:publishing**, **:monitoring**, **nms:calendar**, **nms:remote**, **nms:userAgent,** xtk:builder, **xtk:connections**, xtk:init **, xtk:nvList**, xtk:fusionJSTk: xtkXtk:navtree **, xtk:nvTreeXtkXtkXtk:resourceXtkXtk:**&#x200B;**&#x200B;** **&#x200B;**&#x200B;**&#x200B;** **&#x200B;**&#x200B;**&#x200B;** **&#x200B;**&#x200B;**&#x200B;** **&#x200B;**&#x200B;**&#x200B;** **&#x200B;**&#x200B;**&#x200B;** xtkXtk:rtkXtk:rtkXtk:rtkXtk989888888888888898
 >Diese Liste ist nicht vollständig.
 
 Es gibt zwei Methoden zum Erweitern eines vorhandenen Schemas:
