@@ -19,7 +19,7 @@ ht-degree: 100%
 >id="ac_workflow_intersection"
 >title="Aktivität &quot;Schnittmenge&quot;"
 >abstract="Eine Aktivität des Typs &quot;Schnittmenge&quot; erzeugt eine Zielgruppe aus der Schnittmenge der empfangenen Zielgruppen. Über eine Schnittmenge lassen sich nur die Populationen extrahieren, die in allen eingehenden Aktivitätsergebnissen enthalten sind."
->additional-url="https://video.tv.adobe.com/v/341369?captions=ger" text="Demovideo ansehen"
+>additional-url="https://video.tv.adobe.com/v/329373" text="Demovideo ansehen"
 
 
 
