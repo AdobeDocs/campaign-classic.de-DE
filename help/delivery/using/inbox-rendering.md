@@ -7,9 +7,9 @@ feature: Inbox Rendering, Monitoring, Email Rendering
 role: User
 exl-id: a3294e70-ac96-4e51-865f-b969624528ce
 source-git-commit: 9b93603a076b007d66aad52b05e560e17e316eeb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '887'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -90,7 +90,7 @@ Jedes Mal, wenn Sie in einem Versand die Funktion **[!UICONTROL Inbox Rendering]
 >* Wenn Sie für denselben Versand das Inbox Rendering wiederholen, wird die Anzahl der verfügbaren Token nochmals um die Anzahl der erzeugten Renderings reduziert.
 >
 
-Die Anzahl der verbleibenden verfügbaren Token wird im [Inbox Rendering-Bericht“ ](#inbox-rendering-report).
+Die Anzahl der restlichen verfügbaren Token wird im [Inbox-Rendering-Bericht](#inbox-rendering-report) angezeigt.
 
 ![](assets/s_tn_inbox_rendering_tokens.png)
 
@@ -121,15 +121,15 @@ Weiterführende Informationen zur Erstellung, Konzeption und Ausrichtung eines V
 
 ## Inbox-Rendering-Bericht {#inbox-rendering-report}
 
-Dieser Bericht enthält Informationen zum Inbox Rendering, d. h. zur Darstellung der E-Mail in der Inbox des Empfängers. Die Renderings können unterschiedlich aussehen, je nachdem ob die E-Mail in einem Browser, auf einem Mobilgerät oder über eine E-Mail-Anwendung geöffnet wird.
+Dieser Bericht enthält Informationen zum Inbox Rendering, d. h. zur Darstellung der E-Mail in der Inbox der Empfangenden. Die Renderings können unterschiedlich aussehen, je nachdem, ob die E-Mail in einem Browser, auf einem Mobilgerät oder über eine E-Mail-Anwendung geöffnet wird.
 
-Im oberen Bereich wird die Aufteilung der Anzahl der empfangenen Nachrichten, unerwünschten Nachrichten (Spam), nicht empfangenen Nachrichten oder ausstehenden Empfang durch eine grafische farbcodierte Darstellung angezeigt.
+Im oberen Bereich wird in einer grafischen, farbcodierten Darstellung die Aufteilung der Anzahl der empfangenen, unerwünschten (Spam) und nicht empfangenen Nachrichten angezeigt und die Anzahl der Nachrichten, deren Empfang aussteht.
 
 ![](assets/s_tn_inbox_rendering_summary.png){width="40%" align="left"}
 
-Bewegen Sie den Mauszeiger über das Diagramm, um die Details für jede Farbe anzuzeigen. Klicken Sie auf ein Element auf der Liste, um die entsprechende Kategorie im Diagramm auszublenden oder anzuzeigen.
+Bewegen Sie den Mauszeiger über das Diagramm, um Informationen zu jeder Farbe aufzurufen. Klicken Sie auf ein Element in der Liste, um die entsprechende Kategorie im Diagramm auszublenden oder anzuzeigen.
 
-Der Hauptteil des Berichts ist in drei Teile unterteilt: **[!UICONTROL Mobile]**, **[!UICONTROL Desktop]** und **[!UICONTROL Webmails]**. Scrollen Sie im Bericht nach unten, um alle in diese drei Kategorien eingeteilten Renderings anzusehen.
+Der Hauptteil des Berichts ist in drei Teile unterteilt: **[!UICONTROL Mobilgerät]**, **[!UICONTROL Desktop]** und **[!UICONTROL Webmails]**. Scrollen Sie im Bericht nach unten, um alle in diese drei Kategorien eingeteilten Renderings anzusehen.
 
 ![](assets/s_tn_inbox_rendering_report.png)
 
