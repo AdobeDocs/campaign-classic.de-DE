@@ -6,9 +6,9 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 458821770c6233ec1893d4efe60169516b311bdd
+source-git-commit: be7412f2ccf050a44eb32ebe8280c695349faac8
 workflow-type: tm+mt
-source-wordcount: '870'
+source-wordcount: '908'
 ht-degree: 26%
 
 ---
@@ -17,7 +17,20 @@ ht-degree: 26%
 
 Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der **aktuellen Version Campaign Classic v7** aufgelistet. Jeder neue Build weist einen Status auf, der durch eine bestimmte Farbe dargestellt wird. Sie erfahren mehr über den Build-Status von Campaign Classic v7 auf [dieser Seite](rn-overview.md).
 
-## Version 7.4.2 – Build 9390 {#release-7-4-2}
+## Version 7.4.2  {#release-7-4-2}
+
+### Build 9391 {#build-9391}
+
+[!BADGE Eingeschränkte Verfügbarkeit]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=de#rn-statuses" tooltip="Eingeschränkte Verfügbarkeit"}
+
+_Dienstag, 12. Mai 2025_
+
+Dieser Build umfasst die folgenden Fehlerbehebungen:
+
+* Fehlerkorrektur - In Setups, die nicht mit Oracle erstellt wurden, tritt jetzt kein Postupgrade-Problem mehr auf. (NEO-87012)
+* Fehlerkorrektur - Die Client-Konsole und der Server sind jetzt nicht mehr von einem TLS/HTTPS-Backend-Problem betroffen. (NEO-87432)
+
+### Build 9390 {#build-9390}
 
 [!BADGE Allgemeine Verfügbarkeit]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=de#rn-statuses" tooltip="Allgemeine Verfügbarkeit"}
 
@@ -33,13 +46,13 @@ This release comes with the following compatibility updates:
 
 -->
 
-### Verbesserungen bezüglich der Sicherheit {#security-7-4-2}
+**Verbesserungen bezüglich der Sicherheit**
 
 Diese Version enthält mehrere Korrekturen von Sicherheitsproblemen.
 
 Die Verbindung mit Adobe-Lösungen und -Anwendungen über das externe **[!UICONTROL Adobe Experience Cloud]**-Konto wurde aktualisiert, um die Sicherheit zu erhöhen.
 
-### Wichtige Fehlerbehebungen {#release-7-4-2-fixes}
+**Wichtige Fehlerbehebungen**
 
 Diese Version enthält die folgenden Hauptfehlerbehebungen:
 
@@ -58,7 +71,7 @@ Diese Version enthält die folgenden Hauptfehlerbehebungen:
 * Mail Transfer Agent (MTA): Behebung eines Problems, bei dem ein verwaistes untergeordnetes MTA-Element im Status **[!UICONTROL Start ausstehend]** hängen bleibt.
 
 
-### Andere Fehlerbehebungen {#release-7-4-2-other-fixes}
+**Weitere Fehlerbehebungen**
 
 Die folgenden Probleme wurden ebenfalls in dieser Version behoben:
 
