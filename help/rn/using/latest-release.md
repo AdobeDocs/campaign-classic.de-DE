@@ -9,7 +9,7 @@ exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: cdbcfc5aa0614e41ce76cb777fec58fbd01797d2
 workflow-type: tm+mt
 source-wordcount: '908'
-ht-degree: 26%
+ht-degree: 96%
 
 ---
 
@@ -75,61 +75,61 @@ Diese Version enthält die folgenden Hauptfehlerbehebungen:
 
 Die folgenden Probleme wurden ebenfalls in dieser Version behoben:
 
-* Fehlerkorrektur - Die Aktivität **Laden (Datei)** lädt keine Dateien auf den Server<!--after an upgrade to version 8.3.8-->. Benutzer können jetzt Dateien erfolgreich hochladen, ohne dass ein steckengebliebener Fortschritt oder Konsolenfehler auftritt. (NEO-47269)
+* Es wurde ein Problem behoben, bei dem die Aktivität **Laden (Datei)** keine Dateien auf den Server hochladen konnte<!--after an upgrade to version 8.3.8-->. Benutzende können nun Dateien erfolgreich hochladen, ohne dass der Fortschritt einfriert oder Konsolenfehler auftreten. (NEO-47269)
 
-* Behobene Segmentierungsfehler in Apache <!--following an upgrade to Adobe Campaign Classic 7.2.2 build 9349-->. Diese Fehlerbehebung verhindert die Generierung von Kerndateien und stellt einen stabilen Serverbetrieb sicher. (NEO-59059)
+* Es wurden Segmentierungsfehler in Apache <!--following an upgrade to Adobe Campaign Classic 7.2.2 build 9349--> behoben. Diese Fehlerbehebung verhindert die Generierung von Kerndateien und stellt einen stabilen Server-Betrieb sicher. (NEO-59059)
 
-* Es wurde ein Verbindungsproblem mit der Google BigQuery-<!--after upgrading to version 7.3.3 build 9359--> behoben. Benutzer können jetzt mithilfe des externen GCP-Kontos Verbindungen erfolgreich testen. (NEO-62455)
+* Es wurde ein Verbindungsproblem mit der Google BigQuery-Datenbank <!--after upgrading to version 7.3.3 build 9359--> behoben. Benutzende können nun mithilfe des externen GCP-Kontos Verbindungen erfolgreich testen. (NEO-62455)
 
-* Verbesserte Kompatibilität für Spaltenaktualisierungen vom Typ „Boolean“ und „Datum/Uhrzeit“ in Google BigQuery-Tabellen mit Federated Data Access (FDA). Diese Fehlerbehebung stellt eine ordnungsgemäße Verarbeitung von Datentypen während Einfüge-/Aktualisierungsvorgängen sicher. (NEO-65774)
+* Die Kompatibilität bei Aktualisierungen der Spalten vom Typ „Boolesch“ und „Datum/Uhrzeit“ in Google BigQuery-Tabellen wurde mit Federated Data Access (FDA) verbessert. Diese Fehlerbehebung stellt eine ordnungsgemäße Verarbeitung von Datentypen während Einfüge-/Aktualisierungsvorgängen sicher. (NEO-65774)
 
-* Fehlerkorrektur - Beim Einschleusen von Ressourcen tritt jetzt keine Sicherheitslücke mehr auf, durch die Angreifer HTML-Elemente in E-Mail-Endpunkte einfügen können. Diese Sicherheitsverbesserung verhindert unbefugten Zugriff und Phishing-Angriffe. (NEO-66462)
+* Eine Sicherheitslücke beim Einfügen von Ressourcen wurde geschlossen, durch die Angreifende HTML-Elemente in E-Mail-Endpunkte einschleusen konnten. Diese Sicherheitsverbesserung verhindert unbefugten Zugriff und Phishing-Angriffe. (NEO-66462)
 
-* Zeitweise auftretende Fehler beim Einfügen von Daten in Google BigQuery-Tabellen aufgrund von Problemen mit HTTP-Inhalten oder der Übertragungskodierung wurden behoben. Diese Fehlerbehebung stellt stabile Workflows zum Laden von Daten sicher. (NEO-66989)
+* Zeitweise auftretende Fehler beim Einfügen von Daten in Google BigQuery-Tabellen, die aufgrund von Problemen mit HTTP-Inhalten oder der Übertragungskodierung aufgetreten sind, wurden behoben. Diese Fehlerbehebung stellt stabile Workflows zum Laden von Daten sicher. (NEO-66989)
 
-* Behebung einer Verwundbarkeit durch Pfaddurchlauf in der `File.list()`-Methode in Workflows. Diese Sicherheitsverbesserung verhindert nicht autorisierten Verzeichniszugriff und schützt sensible Dateien. (NEO-77898)
+* Es wurde eine Sicherheitslücke beim Pfaddurchlauf in der `File.list()`-Methode in Workflows geschlossen. Diese Sicherheitsverbesserung verhindert unbefugten Verzeichniszugriff und schützt sensible Dateien. (NEO-77898)
 
-* Fehlerkorrektur - SMS-Versandlogs werden jetzt nicht korrekt in den Status „Auf Mobilgerät empfangen“ aktualisiert. Diese Verbesserung gewährleistet ein genaues Reporting der Sendungen. (NEO-78843)
+* Es wurde ein Problem behoben, bei dem SMS-Versandlogs nicht korrekt in den Status „Auf Mobiltelefon erhalten“ wechselten. Diese Verbesserung stellt genaue Versandberichte sicher. (NEO-78843)
 
-* Behobene Anmeldefehler in Adobe Campaign Classic bei Verwendung von Azure Federated Data Access (FDA). Benutzer können sich jetzt erfolgreich über die Client-Konsole anmelden. (NEO-79373)
+* Es wurden Anmeldefehler in Adobe Campaign Classic bei Verwendung von Azure Federated Data Access (FDA) behoben. Benutzende können sich nun erfolgreich über die Client-Konsole anmelden. (NEO-79373)
 
-* Fehlerkorrektur - Die `CCurlAzureBlobStorage::UploadStream()` Methode führt nicht mehr zu einem Absturz in Workflows. Diese Verbesserung gewährleistet eine stabile Ausführung des Workflows. (NEO-79598)
+* Das Problem, dass Workflows durch die Methode `CCurlAzureBlobStorage::UploadStream()` abstürzen, wurde behoben. Diese Verbesserung stellt eine stabile Workflow-Ausführung sicher. (NEO-79598)
 
 * Unter Windows wurden zwei kritische Kompilierungs-Flags (`ControlFlowGuard` und `StackProtection`) aktiviert, um die Produktsicherheit zu erhöhen und Nutzungsrisiken zu minimieren. (NEO-80145)
 
-* Fehlerkorrektur - Ereignisstatus werden jetzt korrekt gesendet, wenn der Broadlog-Status „Fehlgeschlagen“ ist. Diese Verbesserung gewährleistet ein genaues Reporting über Ereignisse. (NEO-80245)
+* Es wurde ein Problem behoben, bei dem Ereignisstatus beim Broadlog-Status „Fehlgeschlagen“ inkorrekt gesendet wurden. Diese Verbesserung stellt genaue Ereignisberichte sicher. (NEO-80245)
 
-* Die POP3 OAuth-Aktualisierung und das Zugriffstoken werden jetzt in der Datenbank gespeichert und `Authentication failure: unknown user name or bad password` Fehler wird nach Ablauf des Aktualisierungstokens nicht mehr angezeigt. (NEO-80683)
+* Die POP3 OAuth-Aktualisierungs- und -Zugriffstoken werden nun in der Datenbank gespeichert und der Fehler `Authentication failure: unknown user name or bad password` wird nach Ablauf des Aktualisierungs-Tokens nicht mehr angezeigt. (NEO-80683)
 
-* Eine Option `XApiKey` wird jetzt als Wert für die Client-ID verwendet, um eine Verbindung zu Adobe Analytics herzustellen, anstatt die Client-ID des externen Marketing Cloud (MAC)-Kontos zu verwenden. (NEO-80434)
+* Anstatt der Client-ID des externen Marketing Cloud(MAC)-Kontos wird nun eine Option `XApiKey` als Wert für die Client-ID verwendet, um eine Verbindung zu Adobe Analytics herzustellen. (NEO-80434)
 
-* Es wurde ein Problem behoben, bei dem inMail-Benutzer aufgrund des Token-Ablaufs auf Authentifizierungsfehler stießen. Benutzer können jetzt die Verbindung testen und den Server neu starten, um ähnliche Probleme zu beheben. (NEO-80683)
+* Es wurde ein Problem behoben, durch das inMail-Benutzende aufgrund des Token-Ablaufs auf Authentifizierungsfehler stießen. Benutzende können nun die Verbindung testen und den Server neu starten, um ähnliche Probleme zu beheben. (NEO-80683)
 
-* Verbesserte Funktionalität der Analytics-API, da sichergestellt wird, dass alle Analytics-Aufrufe einen konsistenten API-Schlüssel (Campaign1) für die Authentifizierung verwenden, auch beim Wechsel zu einer zufälligen Client-ID. Dies stellt ein nahtloses Analytics-Tracking sicher. (NEO-80434)
+* Die Funktionalität des Analyse-APIs wurde verbessert, indem sichergestellt wird, dass alle Analyseaufrufe einen konsistenten API-Schlüssel (Campaign1) zur Authentifizierung verwenden, und zwar auch beim Wechsel zu einer zufälligen Client-ID. Dies stellt ein nahtloses Analyse-Tracking sicher. (NEO-80434)
 
-* Der BigQuery Federated Data Access (FDA)-Connector wurde verbessert, indem Benutzenden ermöglicht wurde, den Timeout-Zeitraum für Abfragen anzupassen. Diese Verbesserung verhindert Zeitüberschreitungsfehler bei lang laufenden Abfragen. (NEO-81222)
+* Der BigQuery Federated Data Access(FDA)-Connector wurde verbessert, indem Benutzende nun den Timeout-Zeitraum für Abfragen anpassen können. Diese Verbesserung verhindert Timeout-Fehler bei lang laufenden Abfragen. (NEO-81222)
 
-* Der Upgrade-Prozess für Campaign <!--7.4.1-->-Versionen wurde aktualisiert und enthält jetzt die erforderlichen Abhängigkeiten. Diese Verbesserung vereinfacht den Upgrade-Prozess für Benutzer. (NEO-81433)
+* Der Upgrade-Prozess für Campaign <!--7.4.1-->-Versionen wurde aktualisiert und enthält jetzt die erforderlichen Abhängigkeiten. Diese Verbesserung vereinfacht den Upgrade-Prozess für Benutzende. (NEO-81433)
 
-* Es wurde ein Konsolen-Absturzproblem bei der Verwendung eines Unter-Workflows in Kombination mit einem `enum` behoben. Diese Verbesserung gewährleistet eine stabile Ausführung des Workflows. (NEO-81864)
+* Das Problem, dass die Konsole bei Verwendung eines Unter-Workflows in Kombination mit einem `enum`-Feld abstürzt, wurde behoben. Diese Verbesserung stellt eine stabile Workflow-Ausführung sicher. (NEO-81864)
 
-* Es wurde ein Problem behoben, bei dem untergeordnete MTA-Prozesse stecken blieben, was die Bereitstellungssteckplätze blockierte. Diese Fehlerbehebung sorgt für reibungslose Versandvorgänge für Push- und WhatsApp-Nachrichten. (NEO-82351)
+* Es wurde ein Problem behoben, durch das untergeordnete MTA-Prozesse hängen geblieben sind, was Versand-Slots blockierte. Diese Fehlerbehebung sorgt für reibungslose Versandvorgänge für Push- und WhatsApp-Nachrichten. (NEO-82351)
 
-* Fehlerkorrektur - Sendungen bleiben jetzt nicht mehr bei ausstehender Personalisierung aufgrund pausierter Versandaktivitäten. Diese Verbesserung stellt die erfolgreiche Ausführung des Versands sicher. (NEO-82781)
+* Es wurde ein Problem behoben, bei dem Sendungen bei ausstehender Personalisierung aufgrund pausierter Versandaktivitäten hängen blieben. Diese Verbesserung stellt die erfolgreiche Ausführung des Versands sicher. (NEO-82781)
 
-* Verbesserte IMS-Anmeldefunktionen durch die Verwendung des CampaignIO-Endpunkts zur Authentifizierung. Diese Verbesserung optimiert den Anmeldeprozess. (NEO-82838)
+* Die IMS-Anmeldefunktionen wurde durch Verwendung des CampaignIO-Endpunkts zur Authentifizierung verbessert. Diese Verbesserung optimiert den Anmeldeprozess. (NEO-82838)
 
-* Google BigQuery Federated Data Access (FDA)-Zeitüberschreitungsfehler wurden erneut behoben, um eine stabile Ausführung der Abfrage nach der Hotfix-Bereitstellung sicherzustellen. (NEO-82923)
+* Google BigQuery Federated Data Access(FDA)-Timeout-Fehler wurden erneut behoben, um eine stabile Ausführung der Abfrage nach der Hotfix-Bereitstellung sicherzustellen. (NEO-82923)
 
-* Es wurde ein Speicherplatzproblem beim Laden großer Datenvolumen in Teradata-Tabellen behoben. Diese Verbesserung gewährleistet stabile Datenladevorgänge. (NEO-83252)
+* Es wurde ein Speicherplatzproblem beim Laden großer Datenvolumen in Teradata-Tabellen behoben. Diese Verbesserung stellt stabile Datenladevorgänge sicher. (NEO-83252)
 
-* Es wurde ein Problem behoben, bei dem GCP-Abfragen aufgrund von nicht übereinstimmenden Datums- und Zeitstempelvergleichen <!--after upgrading to version 9383-->. Diese Verbesserung stellt die Kompatibilität der Abfragen sicher. (NEO-83826)
+* Es wurde ein Problem behoben, bei dem GCP-Abfragen aufgrund von nicht übereinstimmenden Datums- und Zeitstempelvergleichen <!--after upgrading to version 9383--> fehlgeschlagen sind. Diese Verbesserung stellt die Kompatibilität der Abfragen sicher. (NEO-83826)
 
-* Behebung von fehlgeschlagenen Sendungen aufgrund der Wiederaufnahme pausierter Versandaktivitäten Diese Fehlerbehebung stellt eine erfolgreiche Ausführung des Versands sicher. (NEO-83809)
+* Es wurden Versandfehler aufgrund der Wiederaufnahme ausgesetzter Versandaktivitäten behoben. Diese Fehlerbehebung stellt eine erfolgreiche Ausführung des Versands sicher. (NEO-83809)
 
-* Es wurden Authentifizierungsfehler mit dem Snowflake Federated Data Access (FDA)-Connector bei Verwendung der Authentifizierung mit privatem Schlüssel behoben. Diese Verbesserung stellt eine erfolgreiche Datenbankverbindung sicher. (NEO-84024)
+* Es wurden Authentifizierungsfehler mit dem Snowflake Federated Data Access(FDA)-Connector bei Authentifizierung mit privatem Schlüssel behoben. Diese Verbesserung stellt erfolgreiche Datenbankverbindungen sicher. (NEO-84024)
 
-* Watchdog-Änderungen wurden implementiert, um die durch blockierte Prozesse verursachte Blockierung des untergeordneten MTA-Steckplatzes zu beheben. Diese Verbesserung gewährleistet einen reibungslosen Versand. (NEO-84553)
+* Es wurden Watchdog-Änderungen implementiert, um die durch hängen gebliebene Prozesse verursachte Blockierung untergeordneter MTA-Slots zu beheben. Diese Verbesserung stellt reibungslose Versandvorgänge sicher. (NEO-84553)
 
-* Erweiterte JavaScript-Warteprüfungen zur Behebung der Blockierung untergeordneter MTA-Steckplätze, die durch Prozesse in einem Arbeitszustand verursacht wurde. Diese Fehlerbehebung gewährleistet stabile Versandvorgänge. (NEO-85150)
+* JavaScript-Warteprüfungen wurden erweitert, um die durch Prozesse in einem Arbeitszustand verursachte Blockierung untergeordneter MTA-Slots zu beheben. Diese Fehlerbehebung stellt stabile Versandvorgänge sicher. (NEO-85150)
 
