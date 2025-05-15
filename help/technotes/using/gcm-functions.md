@@ -4,10 +4,10 @@ title: Neue GCM-basierte Funktionen
 description: Neue GCM-basierte Funktionen
 feature: Technote
 exl-id: 154dee7a-a1e9-40a2-bfa5-3641382d0574
-source-git-commit: 94ee033a8e5d96e780cac2313e3fc249c345cb04
-workflow-type: ht
+source-git-commit: b6d64f66d287dba79be5eddec48ee852c2c7740c
+workflow-type: tm+mt
 source-wordcount: '578'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -38,7 +38,7 @@ Verschlüsselt den String mit dem Instanzschlüssel unter Verwendung des AES-Alg
 
 ```
             String 
-            encrypted = Encrypt (
+            encrypted = EncryptString (
             String       
             decrypted
             
@@ -86,7 +86,7 @@ Verschlüsselt den String mit dem Server-Schlüssel unter Verwendung des AES-Alg
 Verschlüsselt einen String mit dem Schlüssel der Instanz oder einem anderen Schlüssel.
 
 ```
-            cryptString (str [, key
+            encryptString (str [, key
       ] [, useSalt ])
          
 ```
@@ -127,7 +127,7 @@ Verfügbar in:
 
 ### decryptString() {#decryptString-javascript}
 
-Verschlüsselt einen String mit dem Schlüssel der Instanz oder einem anderen Schlüssel. Diese Legacy-Funktion kann mit GCM verwendet werden. Sie steht für die Entschlüsselung von mit dem AES-CBC-Modus verschlüsselten Chiffretext nicht mehr zur Verfügung.
+Entschlüsselt eine Zeichenfolge mit dem Schlüssel der Instanz oder einem anderen Schlüssel. Diese Legacy-Funktion kann mit GCM verwendet werden. Sie steht für die Entschlüsselung von mit dem AES-CBC-Modus verschlüsselten Chiffretext nicht mehr zur Verfügung.
 
 ```
             decryptString (str [, key
