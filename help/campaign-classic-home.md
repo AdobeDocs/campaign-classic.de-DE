@@ -4,9 +4,9 @@ product: campaign
 title: Produktdokumentation zu Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
 source-git-commit: 961f056ca8bf201e8cedcddb3a2b1f1a4e32b08a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '357'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -21,9 +21,9 @@ Hier erhalten Sie einen Einblick in die neuesten Produktverbesserungen bei Adobe
 >[!BEGINTABS]
 
 
->[!TAB Version April 2025 ist live!]
+>[!TAB Die Version April 2025 ist live.]
 
-Entdecken Sie Updates, Verbesserungen und Fehlerbehebungen in Campaign Classic v7.4.2 - Version April 2025.
+Entdecken Sie Updates, Verbesserungen und Fehlerbehebungen in der Version April 2025: Campaign Classic v7.4.2.
 
 [![Bild](assets/do-not-localize/learn-more-button.svg)](rn/using/latest-release.md)
 
@@ -113,4 +113,4 @@ Einige wichtige Änderungen am FCM-Dienst (Android Firebase Cloud Messaging) wer
 
 ## Zusätzliche Ressourcen
 
-[Liste der Fehlermeldungen](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=de) - [Adobe Campaign-Produktbeschreibung](https://helpx.adobe.com/de/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [Kompatibilitätsmatrix](rn/using/compatibility-matrix.md) - [Tutorials](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de){target="_blank"} - [Control Panel für Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=de){target="_blank"}
+[Liste der Fehlermeldungen](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=de) – [Adobe Campaign-Produktbeschreibung](https://helpx.adobe.com/de/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} – [Kompatibilitätsmatrix](rn/using/compatibility-matrix.md) – [Tutorials](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de){target="_blank"} – [Control Panel für Campaign](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=de){target="_blank"}
