@@ -25,7 +25,7 @@ Workflows sind eine nützliche Methode, um Importverfahren zu automatisieren. Si
 
 >[!NOTE]
 >
->Weitere Informationen zum Importieren und Exportieren von Daten mithilfe von Workflows finden Sie in der Dokumentation zu [ v8 ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/add-profiles/import-profiles){target=_blank}.
+>Weitere Informationen zum Importieren und Exportieren von Daten mithilfe von Workflows finden Sie in der Dokumentation zu [ v8 ](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/audience/add-profiles/import-profiles){target=_blank}.
 
 
 <!--
