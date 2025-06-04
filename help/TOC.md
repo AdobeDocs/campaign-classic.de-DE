@@ -137,7 +137,7 @@ ht-degree: 89%
 + [E-Mails senden](delivery/using/about-email-channel.md)
 + SMS senden {#sending-messages-on-mobiles}
 + [Erste Schritte mit SMS](delivery/using/sms-channel.md)
-+ SMS-Kanal-{#sms-set-up} konfigurieren
++ SMS-Kanal- konfigurieren{#sms-set-up}
 + [Konfigurieren von SMS auf einer eigenständigen Instanz](delivery/using/sms-set-up.md)
 + [Konfigurieren von SMS in einer Mid-Sourcing-Infrastruktur](delivery/using/sms-set-up-mid.md)
 + [SMS-Connector-Protokoll und -Einstellungen](delivery/using/sms-protocol.md)
