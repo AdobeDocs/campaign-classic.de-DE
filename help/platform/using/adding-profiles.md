@@ -23,7 +23,7 @@ Meist werden Profile [über einen Workflow in Campaign importiert](../../platfor
 
 >[!NOTE]
 >
->Weitere Informationen zum Erstellen von Profilen in der Adobe Campaign-Konsole finden Sie in der [ zu Campaign v8 ](https://experienceleague.adobe.com/en/docs/campaign-classic/using/getting-started/profile-management/adding-profiles){target=_blank}
+>Weitere Informationen zum Erstellen von Profilen in der Adobe Campaign-Konsole finden Sie in der [ zu Campaign v8 ](https://experienceleague.adobe.com/de/docs/campaign-classic/using/getting-started/profile-management/adding-profiles){target=_blank}
 
 
 <!--

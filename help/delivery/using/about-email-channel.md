@@ -19,17 +19,17 @@ Erstellen Sie mit Adobe Campaign einen E-Mail-Versand, um personalisierte E-Mail
 
 Die wichtigsten Schritte zur Erstellung eines E-Mail-Versands finden Sie in der Dokumentation zu Campaign v8:
 
-* [E-Mail-Versand erstellen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email.html){target="_blank"} Erfahren Sie mehr über die verschiedenen Schritte, die zum Erstellen eines E-Mail-Versands erforderlich sind.
-* [E-Mail-Inhalt definieren](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html){target="_blank"}: Definieren Sie, was Ihre E-Mail enthalten soll: Absender, Betreff, Inhalt, Bilder.
-* [Interaktive Inhalte definieren](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html){target="_blank"}: Verwenden Sie das interaktive Format von AMP für E-Mail, um dynamische E-Mails zu senden.
-* [E-Mails auf japanischen Mobiltelefonen senden](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html){target="_blank"}: Verwenden Sie eines der drei japanischen Formate für E-Mails auf Mobiltelefonen.
-* [Dateien an eine E-Mail anhängen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html){target="_blank"}: Hier erfahren Sie, wie Sie eine oder mehrere Dateien an eine E-Mail anhängen können.
+* [E-Mail-Versand erstellen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email.html?lang=de){target="_blank"} Erfahren Sie mehr über die verschiedenen Schritte, die zum Erstellen eines E-Mail-Versands erforderlich sind.
+* [E-Mail-Inhalt definieren](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=de){target="_blank"}: Definieren Sie, was Ihre E-Mail enthalten soll: Absender, Betreff, Inhalt, Bilder.
+* [Interaktive Inhalte definieren](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html?lang=de){target="_blank"}: Verwenden Sie das interaktive Format von AMP für E-Mail, um dynamische E-Mails zu senden.
+* [E-Mails auf japanischen Mobiltelefonen senden](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html?lang=de){target="_blank"}: Verwenden Sie eines der drei japanischen Formate für E-Mails auf Mobiltelefonen.
+* [Dateien an eine E-Mail anhängen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html?lang=de){target="_blank"}: Hier erfahren Sie, wie Sie eine oder mehrere Dateien an eine E-Mail anhängen können.
 
 Auf diesen Seiten erfahren Sie mehr über E-Mail-Parameter in der Dokumentation zu Campaign v8:
 
-* [Link zur Mirrorseite](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/mirror-page.html){target="_blank"}: Konfigurieren Sie die Mirrorseite, um sicherzustellen, dass Ihre Clients immer das beste Rendering-Erlebnis erhalten.
+* [Link zur Mirrorseite](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/mirror-page.html?lang=de){target="_blank"}: Konfigurieren Sie die Mirrorseite, um sicherzustellen, dass Ihre Clients immer das beste Rendering-Erlebnis erhalten.
 * [BCC-Adresse hinzufügen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email-bcc.html?lang=de){target="_blank"}: Konfigurieren Sie Adobe Campaign so, dass eine Kopie der von Ihrer Plattform gesendeten E-Mails beibehalten wird.
-* [Definieren zusätzlicher E-Mail-](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email-parameters.html){target="_blank"}: Erfahren Sie mehr über die in den Versandeigenschaften verfügbaren Optionen und Parameter.
+* [Definieren zusätzlicher E-Mail-](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email-parameters.html?lang=de){target="_blank"}: Erfahren Sie mehr über die in den Versandeigenschaften verfügbaren Optionen und Parameter.
 
 Weitere Informationen zum Enhanced MTA [ Sie auch ](sending-with-enhanced-mta.md) dieser Seite .
 
@@ -41,7 +41,7 @@ Before starting sending emails:
 
 * Make sure recipient profiles contain at least an email address.
 * Learn more about the Adobe Campaign [Delivery best practices](delivery-best-practices.md).
-* Read out these sections to learn more about Deliverability: [Deliverability management in Campaign](about-deliverability.md) and [Deliverability best practices guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html).
+* Read out these sections to learn more about Deliverability: [Deliverability management in Campaign](about-deliverability.md) and [Deliverability best practices guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=de).
 
 The key steps to send an email are as follows:
 

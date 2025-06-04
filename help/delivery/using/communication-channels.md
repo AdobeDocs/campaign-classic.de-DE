@@ -20,12 +20,12 @@ Zu den Kernfunktionen zählen Zielgruppenbestimmung, Definition und Personalisie
 
 Die wichtigsten Schritte zur Versanderstellung finden Sie in der Dokumentation zu Campaign v8:
 
-* [Versand erstellen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#create-the-delivery){target="_blank"} Erfahren Sie, wie Sie einen einmaligen Versand erstellen.
-* [Inhalt definieren](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#content-of-the-delivery){target="_blank"}: Konfigurieren des Versandinhalts für jeden Kanal.
-* [Zielgruppe angeben](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#target-population){target="_blank"}: Definieren Sie verschiedene Typen von Zielgruppen: Hauptzielgruppe, Testversand-Zielgruppe, Testadressen und Kontrollgruppen.
-* [Validieren des Versands](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#validate-the-delivery){target="_blank"} Erfahren Sie, wie Sie den Versand validieren, bevor Sie ihn an die Hauptzielgruppe senden.
-* [Versand durchführen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#configuring-and-sending-the-delivery){target="_blank"}: Konfigurieren Sie die Versandeinstellungen und definieren Sie, wie Ihre Nachrichten gesendet werden sollen.
-* [Best Practices beim Versand](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html){target="_blank"} Konsultieren Sie die Best Practices für die Versandfunktionen von Campaign.
+* [Versand erstellen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=de#create-the-delivery){target="_blank"} Erfahren Sie, wie Sie einen einmaligen Versand erstellen.
+* [Inhalt definieren](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=de#content-of-the-delivery){target="_blank"}: Konfigurieren des Versandinhalts für jeden Kanal.
+* [Zielgruppe angeben](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=de#target-population){target="_blank"}: Definieren Sie verschiedene Typen von Zielgruppen: Hauptzielgruppe, Testversand-Zielgruppe, Testadressen und Kontrollgruppen.
+* [Validieren des Versands](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=de#validate-the-delivery){target="_blank"} Erfahren Sie, wie Sie den Versand validieren, bevor Sie ihn an die Hauptzielgruppe senden.
+* [Versand durchführen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=de#configuring-and-sending-the-delivery){target="_blank"}: Konfigurieren Sie die Versandeinstellungen und definieren Sie, wie Ihre Nachrichten gesendet werden sollen.
+* [Best Practices beim Versand](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=de){target="_blank"} Konsultieren Sie die Best Practices für die Versandfunktionen von Campaign.
 
 Auf dieser [Seite“ erfahren ](delivery-settings.md) mehr über bestimmte Bereitstellungseinstellungen für Campaign Classic.
 
@@ -33,7 +33,7 @@ Auf dieser [Seite“ erfahren ](delivery-settings.md) mehr über bestimmte Berei
 
    Learn how to create a one-shot single delivery. You can create other types of deliveries to build your use cases. 
 
-For more information about the different types of deliveries and how to create them, refer to the [Campaign v8 documentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}. 
+For more information about the different types of deliveries and how to create them, refer to the [Campaign v8 documentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=de){target="_blank"}. 
 
 >[!NOTE]
 >

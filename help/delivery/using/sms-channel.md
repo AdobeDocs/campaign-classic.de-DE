@@ -18,13 +18,13 @@ Verwenden Sie Adobe Campaign, um Textnachrichten an die Mobilgeräte Ihrer Kundi
 
 Die wichtigsten Schritte zur Erstellung eines SMS-Versands finden Sie in der Dokumentation zu Campaign v8:
 
-* [SMS-Kanal - Übersicht](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/sms.html){target="_blank"} Erfahren Sie, wie Sie Textnachrichten an die Mobilgeräte Ihrer Kunden senden können.
-* [Erstellen eines SMS-Versands](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/create-sms/create-sms.html){target="_blank"}: Entdecken Sie die verschiedenen Schritte, die zum Erstellen eines neuen SMS-Versands erforderlich sind.
-* [Inhalt definieren](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/create-sms/sms-content.html){target="_blank"}: Erfahren Sie, wie Sie den Inhalt Ihrer SMS-Nachrichten personalisieren können.
-* [Zielgruppe auswählen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/create-sms/sms-audience.html){target="_blank"}: Die Hauptzielgruppe wird aus der Adobe Campaign-Datenbank extrahiert oder kann auch in einer externen Datei gespeichert werden.
-* [SMS-Testsendungen durchführen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/validate-sms/sms-proofs.html): Die Einrichtung eines Versandvalidierungszyklus ist unverzichtbar. Vergewissern Sie sich, dass Ihr Inhalt genehmigt wurde, bevor dieser an Ihre Zielgruppe gesendet wird.
+* [SMS-Kanal - Übersicht](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/sms.html?lang=de){target="_blank"} Erfahren Sie, wie Sie Textnachrichten an die Mobilgeräte Ihrer Kunden senden können.
+* [Erstellen eines SMS-Versands](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/create-sms/create-sms.html?lang=de){target="_blank"}: Entdecken Sie die verschiedenen Schritte, die zum Erstellen eines neuen SMS-Versands erforderlich sind.
+* [Inhalt definieren](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/create-sms/sms-content.html?lang=de){target="_blank"}: Erfahren Sie, wie Sie den Inhalt Ihrer SMS-Nachrichten personalisieren können.
+* [Zielgruppe auswählen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/create-sms/sms-audience.html?lang=de){target="_blank"}: Die Hauptzielgruppe wird aus der Adobe Campaign-Datenbank extrahiert oder kann auch in einer externen Datei gespeichert werden.
+* [SMS-Testsendungen durchführen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/validate-sms/sms-proofs.html?lang=de): Die Einrichtung eines Versandvalidierungszyklus ist unverzichtbar. Vergewissern Sie sich, dass Ihr Inhalt genehmigt wurde, bevor dieser an Ihre Zielgruppe gesendet wird.
 * [An Zielgruppe senden](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/validate-sms/sms-send.html?lang=de): Wenn Ihre SMS validiert wurde, können Sie sie jetzt an die Zielgruppe senden.
-* [SMS überwachen und verfolgen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/sms-monitor.html): Überwachen Sie Ihren SMS-Versand, um sicherzustellen, dass Ihre Marketing-Kampagnen effizient sind.
+* [SMS überwachen und verfolgen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/sms-monitor.html?lang=de): Überwachen Sie Ihren SMS-Versand, um sicherzustellen, dass Ihre Marketing-Kampagnen effizient sind.
 
 Auf diesen Seiten erfahren Sie mehr über die Konfiguration:
 

@@ -36,7 +36,7 @@ Tabs und ihr Inhalt sind abhängig von Ihrer Konfiguration und den installierten
 
 >[!NOTE]
 >
->Weitere Informationen zum Bearbeiten von Profilen und zum Zugriff darauf finden Sie in der ausführlichen Dokumentation zur [Campaign v8-Dokumentation](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/view-profiles){target=_blank}.
+>Weitere Informationen zum Bearbeiten von Profilen und zum Zugriff darauf finden Sie in der ausführlichen Dokumentation zur [Campaign v8-Dokumentation](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/audience/view-profiles){target=_blank}.
 
 
 

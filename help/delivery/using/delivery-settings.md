@@ -13,7 +13,7 @@ ht-degree: 95%
 
 # Versandeinstellungen {#about-delivery-settings}
 
-Die folgenden Einstellungen sind spezifisch für Campaign Classic. Informationen zu anderen Versandeinstellungen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html){target="_blank"}.
+Die folgenden Einstellungen sind spezifisch für Campaign Classic. Informationen zu anderen Versandeinstellungen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html?lang=de){target="_blank"}.
 
 ## Versandanalyse {#delivery-analysis}
 

@@ -27,7 +27,7 @@ Diese Connectoren ermöglichen eine schnelle und einfache Datenintegration: Adob
 >[!NOTE]
 >
 >* Diese Funktion ist in Adobe Campaign über das Package **CRM Connectoren** verfügbar.
->* Weitere Informationen zu CRM-Connectoren und zur Verbindung mit Microsoft Dynamics und Salesforce finden Sie in der Dokumentation zu [Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-crm/crm){target=_blank}.
+>* Weitere Informationen zu CRM-Connectoren und zur Verbindung mit Microsoft Dynamics und Salesforce finden Sie in der Dokumentation zu [Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/connect/ac-crm/crm){target=_blank}.
 
 <!--
 ### Compatible systems {#compatible-crm-systems-and-limitations}
