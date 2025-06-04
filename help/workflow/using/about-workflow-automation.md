@@ -4,21 +4,18 @@ title: Über Workflows
 description: Automatisieren Sie Prozesse mit Workflows, verwalten Sie Daten und Audiences, senden Sie Nachrichten und vieles mehr
 feature: Workflows, Data Management
 exl-id: 024a7344-9376-4ff3-926a-003148229f9f
-source-git-commit: 83874a31321c7d06411b393e46ce2ef43d43d6ed
+source-git-commit: fd082d5427314fbc91966f89048da5f193658f87
 workflow-type: tm+mt
-source-wordcount: '219'
-ht-degree: 51%
+source-wordcount: '236'
+ht-degree: 14%
 
 ---
 
 # Automatisieren mit Workflows {#gs-workflows}
 
-Adobe Campaign enthält ein Workflow-Modul, mit dem Sie die gesamte Bandbreite von Prozessen und Aufgaben über die verschiedenen Module des Anwendungs-Servers hinweg orchestrieren können. In dieser vielseitigen grafischen Umgebung können Sie Prozesse erstellen, wie etwa die Segmentierung, die Kampagnenausführung, die Dateiverarbeitung und den Eingriff durch Personen. Die Ausführung und Nachverfolgung dieser Prozesse erfolgt durch die Workflow-Engine.
+Das Workflow-Modul von Adobe Campaign ermöglicht es Ihrem Team, End-to-End-Geschäftsprozesse plattformübergreifend zu optimieren und zu automatisieren. Mit einer intuitiven grafischen Oberfläche können Sie Workflows entwerfen und verwalten, die Aufgaben wie Datensegmentierung, Kampagnenausführung, Dateiverarbeitung und sogar Benutzergenehmigungen an einem Ort koordinieren.
 
-So bieten Workflows beispielsweise die Möglichkeit, Dateien von einem Server herunterladen, sie zu entkomprimieren und die Datensätze in die Adobe Campaign-Datenbank zu importieren.
-
-![](assets/do-not-localize/workflow.jpg){width="40%" align="center"}
-
+Sie können beispielsweise einen Prozess automatisieren, um eine Datei von einem Remote-Server abzurufen, ihren Inhalt zu extrahieren und die Daten nahtlos auf den Adobe Campaign-Server zu laden. Dies reduziert den manuellen Aufwand und erhöht die betriebliche Effizienz. Die Workflow-Engine stellt sicher, dass jeder Schritt zuverlässig ausgeführt und verfolgt wird, um die Sichtbarkeit und Kontrolle zu gewährleisten.
 
 >[!BEGINTABS]
 
