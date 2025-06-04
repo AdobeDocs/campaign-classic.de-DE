@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 7ccab3a4-f323-464a-9ec4-dd597279d0eb
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
-source-wordcount: '158'
-ht-degree: 100%
+source-wordcount: '134'
+ht-degree: 82%
 
 ---
 
@@ -26,20 +26,23 @@ Diese Connectoren ermöglichen eine schnelle und einfache Datenintegration: Adob
 
 >[!NOTE]
 >
->Diese Funktion ist in Adobe Campaign über das Package **CRM-Connectoren** verfügbar.
+>* Diese Funktion ist in Adobe Campaign über das Package **CRM Connectoren** verfügbar.
+>* Weitere Informationen zu CRM-Connectoren und zur Verbindung mit Microsoft Dynamics und Salesforce finden Sie in der Dokumentation zu [Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-crm/crm){target=_blank}.
 
+<!--
+### Compatible systems {#compatible-crm-systems-and-limitations}
 
-### Kompatible Systeme {#compatible-crm-systems-and-limitations}
-
-Unterstützte CRM-Systeme und Versionen werden in der [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md) von Campaign erläutert.
+Supported CRM and versions are detailed in Campaign [Compatibility matrix](../../rn/using/compatibility-matrix.md).
 
 >[!NOTE]
 >
->Die CRM-Connectoren funktionieren ausschließlich unter Verwendung einer sicheren URL (https).
+>The CRM connectors only work with a secure URL (https).
 
-### Implementierungsschritte {#crm-implementation-steps}
+### Implementation steps {#crm-implementation-steps}
 
-Eine schrittweise Anleitung zum Verbinden von Campaign und Microsoft Dynamics finden Sie [in diesem Abschnitt](../../platform/using/crm-ms-dynamics.md).
+Learn step-by-step procedure to connect Campaign and Microsoft Dynamics [in this section](../../platform/using/crm-ms-dynamics.md)
 
 
-Eine schrittweise Anleitung zum Verbinden von Campaign und Salesforce finden Sie [in diesem Abschnitt](../../platform/using/crm-sfdc.md).
+Learn step-by-step procedure to connect Campaign and Salesforce [in this section](../../platform/using/crm-sfdc.md)
+
+-->

@@ -7,10 +7,10 @@ feature: Query Editor
 role: User, Data Architect
 level: Beginner
 exl-id: 2db1034d-cad6-4fb0-8646-dd9099080ab0
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 100%
+source-wordcount: '207'
+ht-degree: 88%
 
 ---
 
@@ -26,6 +26,8 @@ Alle Abfrageoptionen in Adobe Campaign werden über dieses Tool gesteuert. So la
 
 Abfragen werden entweder mit den in der ausgewählten Tabelle enthaltenen Feldern oder mithilfe einer Formel durchgeführt.
 
-[Klicken Sie hier](../../workflow/using/query.md), um mehr über den Campaign-Abfrageeditor zu erfahren.
+>[!NOTE]
+>
+>Weitere Informationen zu Abfragen und deren Erstellung finden Sie in der Dokumentation zu [Campaign v8](../../workflow/using/query.md).
 
-![](assets/query_recipients_4.png)
+![Screenshot mit einem Beispiel für eine Abfrage.](assets/query_recipients_4.png)

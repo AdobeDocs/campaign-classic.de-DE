@@ -5,10 +5,10 @@ description: Erfahren Sie, wie Sie Zugriff auf Campaign-Funktionen gewähren.
 badge: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Access Management, Permissions
 exl-id: 9b616715-33cd-43ba-8548-8d96a179408e
-source-git-commit: 2759d65150299e4fa679ea986df8136cd9525370
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 100%
+source-wordcount: '309'
+ht-degree: 85%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 100%
 
 >[!CAUTION]
 >
->Ab Campaign Classic v7.3.1 sollten alle Benutzenden das [Adobe Identity Management System (IMS)](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"} verwenden, um eine Verbindung mit Campaign herzustellen.
+>Ab Campaign Classic v7.3.1 sollten alle Benutzer [Adobe Identity Management System (IMS) verwenden](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"} um eine Verbindung mit Campaign herzustellen.
 >
 >Im Rahmen der Bemühungen, die Sicherheit und den Authentifizierungsprozess zu verbessern, empfiehlt Adobe Campaign dringend, den Authentifizierungsmodus aller vorhandenen Benutzenden von der nativen Authentifizierung mit Login/Passwort auf das Adobe Identity Management System (IMS) zu migrieren. Auf [dieser Seite](../../technotes/using/migrate-users-to-ims.md) erfahren Sie, wie Sie Ihre Benutzenden migrieren können.
 > 
->Beachten Sie, dass nach dieser Migration der folgende Abschnitt nicht mehr gilt.  In der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html?lang=de){target="_blank"} erfahren Sie, wie Sie mit Adobe IMS Berechtigungen einrichten können.
+>Beachten Sie, dass nach dieser Migration der folgende Abschnitt nicht mehr gilt.  Wie Sie Berechtigungen mit Adobe IMS einrichten, erfahren Sie in der [ zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html?lang=de){target="_blank"}.
 
 
 Mit Adobe Campaign können Sie die den verschiedenen Benutzerinnen und Benutzern zugewiesenen Rechte definieren und verwalten. Diese bestehen aus einem Satz von Rechten und Einschränkungen, die Folgendes erlauben bzw. verweigern:
@@ -42,25 +42,29 @@ Es gibt zwei Arten von Berechtigungen, die einer Benutzerin oder einem Benutzer 
 
 >[!NOTE]
 >
->Adobe empfiehlt, vor der Definition von Berechtigungen die [Checkliste zur Sicherheitskonfiguration](https://helpx.adobe.com/de/campaign/kb/acc-security.html) zu lesen.
+> * Adobe empfiehlt, vor der Definition von Berechtigungen die [Checkliste zur Sicherheitskonfiguration](https://helpx.adobe.com/de/campaign/kb/acc-security.html) zu lesen.
+> * Weitere Informationen zu Berechtigungen finden Sie in der ausführlichen Erklärung in der Dokumentation zu [Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/admin/permissions/gs-permissions){target=_blank}.
 
-In den folgenden Abschnitten erfahren Sie, wie Sie Zugriff gewähren und Berechtigungen einrichten:
+<!--
 
-* [Benutzer erstellen](access-management-operators.md)
+Learn how to grant access and set up permissions in these sections:
 
-* [Gruppen definieren](access-management-groups.md)
+* [Create operators](access-management-operators.md)
 
-* [Spezifische Berechtigungen hinzufügen](access-management-named-rights.md)
+* [Define groups](access-management-groups.md)
 
-* [Zugriff auf Campaign-Ordner verwalten](access-management-folders.md)
+* [Add Named rights](access-management-named-rights.md)
 
-* [Matrix der Zugriffsberechtigungen](access-management-named-rights.md#access-rights-matrix)
+* [Manage Campaign folder access](access-management-folders.md)
+
+* [Access rights matrix](access-management-named-rights.md#access-rights-matrix)
 
 
-Siehe auch:
+See also:
 
-* [Berechtigungen für Workflows verwalten](../../workflow/using/managing-rights.md)
-* [Berechtigungen für verteiltes Marketing verwalten](../../distributed/using/about-distributed-marketing.md#operators-and-entities)
-* [Berechtigungen für das Interaktionsmodul verwalten](../../interaction/using/operator-profiles.md)
-* [Filterzugriff auf Schemata](../../configuration/using/filtering-schemas.md)
-* [Einschränkung der PI-Ansicht](../../configuration/using/restricting-pii-view.md)
+* [Manage permissions for workflows](../../workflow/using/managing-rights.md)
+* [Manage permissions for distributed marketing](../../distributed/using/about-distributed-marketing.md#operators-and-entities)
+* [Manage permissions for the interaction module](../../interaction/using/operator-profiles.md)
+* [Filter access to schemas](../../configuration/using/filtering-schemas.md)
+* [Restricting PI view](../../configuration/using/restricting-pii-view.md)
+-->

@@ -4,11 +4,13 @@ title: Versand validieren
 description: Erfahren Sie, wie Sie einen Versand validieren
 feature: Deliverability, Email Rendering, Proofs
 role: User
+hide: true
+hidefromtoc: true
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
-source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
 source-wordcount: '1794'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -127,7 +129,7 @@ Einem großen Versand sollte also vorzugsweise eine niedrige Priorität zugewies
 
 ## Durchführen eines Testversands {#sending-a-proof}
 
-Um eventuelle Konfigurationsfehler zu erkennen, ist es empfehlenswert, Ihre Sendungen einem Validierungszyklus zu unterziehen. Auf diese Weise können Sie den Inhalt wiederholt von Testempfängern prüfen lassen. Schalten Sie nach jeder Änderung einen neuen Testversand, um den Inhalt abschließend validieren zu lassen.
+Um mögliche Fehler bei der Nachrichtenkonfiguration zu erkennen, empfiehlt Adobe dringend, einen Versandvalidierungszyklus einzurichten. Auf diese Weise können Sie den Inhalt wiederholt von Testempfängern prüfen lassen. Schalten Sie nach jeder Änderung einen neuen Testversand, um den Inhalt abschließend validieren zu lassen.
 
 >[!NOTE]
 >

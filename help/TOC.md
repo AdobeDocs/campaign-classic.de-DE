@@ -6,10 +6,10 @@ title: Campaign Classic v7 – Handbuch
 user-guide-description: Produktdokumentation für Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: b8a6a0db27826309456c285c08d4f1d85de70283
-workflow-type: ht
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+workflow-type: tm+mt
 source-wordcount: '2574'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
@@ -89,7 +89,7 @@ ht-degree: 100%
       + [Filteroptionen](platform/using/filtering-options.md)
       + [Erstellen von Filtern](platform/using/creating-filters.md)
       + [Anwendungsbeispiel](platform/using/use-case.md)
-   + Abfragen erstellen {#creating-queries}
+   + Erstellen von Abfragen {#creating-queries}
       + [Über Abfragen in Adobe Campaign](platform/using/about-queries-in-campaign.md)
       + [Schritte zum Erstellen einer Abfrage](platform/using/steps-to-create-a-query.md)
       + [Filterbedingungen definieren](platform/using/defining-filter-conditions.md)
@@ -99,7 +99,7 @@ ht-degree: 100%
       + [Gruppen erstellen und verwalten](platform/using/access-management-groups.md)
       + [Verwenden spezifischer Berechtigungen zum Einrichten von Zugriffsberechtigungen](platform/using/access-management-named-rights.md)
       + [Zugriff auf Ordner verwalten](platform/using/access-management-folders.md)
-   + Daten-Packages und Auflistungen {#administration-basics}
+   + Datenpakete und Auflistungen {#administration-basics}
       + [Daten-Packages](platform/using/working-with-data-packages.md)
       + [Auflistungen](platform/using/managing-enumerations.md)
    + CRM-Connectoren {#connectors}
@@ -110,6 +110,7 @@ ht-degree: 100%
    + [Hilfe- und Support-Optionen](support.md)
 + Nachrichten erstellen und senden {#sending-messages}
    + [Erste Schritte mit Nachrichten](delivery/using/communication-channels.md)
+   + [Versandeinstellungen](delivery/using/delivery-settings.md)
    + Die wichtigsten Schritte beim Erstellen eines Versands {#key-steps-when-creating-a-delivery}
       + [Erste Schritte mit Sendungen](delivery/using/steps-about-delivery-creation-steps.md)
       + [Versand erstellen und identifizieren](delivery/using/steps-create-and-identify-the-delivery.md)
@@ -117,7 +118,7 @@ ht-degree: 100%
       + [Versand validieren](delivery/using/steps-validating-the-delivery.md)
       + [Versand durchführen](delivery/using/steps-sending-the-delivery.md)
       + [Best Practices für den Versand](delivery/using/delivery-best-practices.md)
-      + Best Practices beim Versand {#delivery-bestpractices}
+      + Best Practices für den Versand {#delivery-bestpractices}
          + [Optimieren des Versands](delivery/using/optimize-delivery.md)
          + [Vorlagen verwenden](delivery/using/use-templates.md)
          + [Erstellen personalisierter Inhalte](delivery/using/design-and-personalize.md)
@@ -129,24 +130,24 @@ ht-degree: 100%
       + [E-Mail-Versand erstellen](delivery/using/creating-an-email-delivery.md)
       + [Definieren des E-Mail-Inhalts](delivery/using/defining-the-email-content.md)
       + [Definieren interaktiver Inhalte](delivery/using/defining-interactive-content.md)
+      + [Mit Enhanced MTA senden](delivery/using/sending-with-enhanced-mta.md)
       + E-Mail-Versand senden {#sending-an-email}
          + [Wichtigste Schritte zum Senden einer E-Mail](delivery/using/sending-messages.md)
          + [E-Mail-Parameter](delivery/using/email-parameters.md)
-         + [Mit Enhanced MTA senden](delivery/using/sending-with-enhanced-mta.md)
          + [Auf japanische Mobiltelefone senden](delivery/using/sending-emails-on-japanese-mobiles.md)
       + [Dateien anhängen](delivery/using/attaching-files.md)
    + SMS senden {#sending-messages-on-mobiles}
       + [Erste Schritte mit SMS](delivery/using/sms-channel.md)
-      + Konfigurieren des SMS-Kanals {#sms-set-up}
+      + SMS-Kanal konfigurieren {#sms-set-up}
          + [Konfigurieren von SMS auf einer eigenständigen Instanz](delivery/using/sms-set-up.md)
          + [Konfigurieren von SMS in einer Mid-Sourcing-Infrastruktur](delivery/using/sms-set-up-mid.md)
+         + [Protokoll und Einstellungen des SMS-Connectors](delivery/using/sms-protocol.md)
+         + [Zusätzliche Konfiguration](delivery/using/sms-send.md)
+         + [SMS-Fehlerbehebung](delivery/using/troubleshooting-sms.md)
       + [SMS erstellen](delivery/using/sms-create.md)
-      + [SMS senden und verfolgen](delivery/using/sms-send.md)
-      + [Protokoll und Einstellungen des SMS-Connectors](delivery/using/sms-protocol.md)
-      + [SMS-Fehlerbehebung](delivery/using/troubleshooting-sms.md)
       + [Zum erweiterten allgemeinen SMPP-Connector migrieren](delivery/using/unsupported-connector-migration.md)
    + [LINE-Nachrichten senden](delivery/using/line-channel.md)
-   + Push-Benachrichtigungen senden {#sending-push-notifications}
+   + Senden von Push-Benachrichtigungen {#sending-push-notifications}
       + [Erste Schritte mit dem Mobile-App-Kanal](delivery/using/about-mobile-app-channel.md)
       + [Campaign-SDK in die Mobile App integrieren](delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
       + Mobile App konfigurieren{#configure-the-mobile-app}
@@ -199,7 +200,7 @@ ht-degree: 100%
       + [Über Services und Abonnements](delivery/using/about-services-and-subscriptions.md)
       + [Abonnements verwalten](delivery/using/managing-subscriptions.md)
       + [Virales und Social-Media-Marketing](delivery/using/viral-and-social-marketing.md)
-   + Sendungen überwachen {#monitoring-deliveries}
+   + Überwachen von Sendungen {#monitoring-deliveries}
       + [Erste Schritte mit dem Überwachen des Versands](delivery/using/about-delivery-monitoring.md)
       + [Auf die Liste der Sendungen zugreifen](delivery/using/list-of-deliveries.md)
       + [Versand-Dashboard](delivery/using/delivery-dashboard.md)
@@ -211,7 +212,7 @@ ht-degree: 100%
    + Nachrichten tracken {#tracking-messages}
       + [Über das Nachrichten-Tracking](delivery/using/about-message-tracking.md)
       + [Getrackte Links konfigurieren](delivery/using/how-to-configure-tracked-links.md)
-      + Personalisierte Link tracken {#tracking-personalized-links}
+      + Personalisierte Links tracken {#tracking-personalized-links}
          + [Erste Schritte mit dem Tracking personalisierter Links](delivery/using/tracking-personalized-links.md)
          + [Tracking-URLs erkennen](delivery/using/detecting-tracking-urls.md)
          + [Anweisungen zur Vorab-Bearbeitung für das Tracking](delivery/using/pre-processing-instructions.md)
@@ -238,12 +239,12 @@ ht-degree: 100%
       + [Inhalte anreichern](delivery/using/enriching-content.md)
       + [Automatisieren über Workflows](delivery/using/automating-via-workflows.md)
 + [Orchestrieren von Marketing-Kampagnen](campaign/using/about-marketing-campaigns.md)
-+ Marketing-Kampagnen organisieren {#orchestrating-campaigns}
++ Orchestrieren von Marketing-Kampagnen {#orchestrating-campaigns}
    + [Über Kampagnenoptimierung](campaign-opt/using/about-campaign-optimization.md)
    + Über Marketing-Kampagnen {#about-marketing-campaigns}
       + [Marketing-Kampagnen entwerfen](campaign/using/designing-marketing-campaigns.md)
       + [Auf Marketing-Kampagnen zugreifen](campaign/using/accessing-marketing-campaigns.md)
-   + Kampagnen orchestrieren {#orchestrate-campaigns}
+   + Kampagnen koordinieren {#orchestrate-campaigns}
       + [Erste Schritte mit Marketing-Kampagnen](campaign/using/setting-up-marketing-campaigns.md)
       + [Vorlagen erstellen und konfigurieren](campaign/using/marketing-campaign-templates.md)
       + [Sendungen hinzufügen](campaign/using/marketing-campaign-deliveries.md)
@@ -284,7 +285,7 @@ ht-degree: 100%
    + Erste Schritte mit Reporting {#reporting-in-adobe-campaign}
       + [Reporting-Tools](reporting/using/about-adobe-campaign-reporting-tools.md)
       + [Best Practices für das Reporting](reporting/using/best-practices.md)
-   + Auf native Berichte zugreifen {#accessing-built-in-reports}
+   + Zugriff auf integrierte Berichte {#accessing-built-in-reports}
       + [Über native Berichte](reporting/using/about-campaign-built-in-reports.md)
       + [Liste von Berichten](reporting/using/list-of-reports.md)
    + Versandberichte{#reports-on-deliveries}
@@ -299,7 +300,7 @@ ht-degree: 100%
       + [Erstellen des ersten deskriptiven Analyseberichts](reporting/using/using-the-descriptive-analysis-wizard.md)
       + [Verwalten und Konfigurieren des Analyseberichts](reporting/using/processing-a-report.md)
       + [Anwendungsfälle für das Analyse-Reporting](reporting/using/use-cases.md)
-   + Neue Berichte erstellen {#creating-new-reports}
+   + Erstellen neuer Berichte {#creating-new-reports}
       + [Wichtige Schritte zum Entwurf eines Berichts](reporting/using/about-reports-creation-in-campaign.md)
       + [Erstellen eines neuen Berichts](reporting/using/creating-a-new-report.md)
       + [Daten zur Analyse erfassen](reporting/using/collecting-data-to-analyze.md)
@@ -313,7 +314,7 @@ ht-degree: 100%
       + [Zugriff auf den Bericht konfigurieren](reporting/using/configuring-access-to-the-report.md)
       + [Mit Berichten arbeiten](reporting/using/actions-on-reports.md)
    + [Berichte mit Cubes erstellen](reporting/using/ac-cubes.md)
-+ Web-Inhalte gestalten {#designing-content}
++ Web-Inhalte entwerfen {#designing-content}
    + Web-Anwendungen {#web-applications}
       + [Erste Schritte mit Web-Anwendungen](web/using/about-web-applications.md)
       + [Neue Web-Anwendung erstellen](web/using/creating-a-new-web-application.md)
@@ -330,7 +331,7 @@ ht-degree: 100%
       + [Best Practices bei der Inhaltsbearbeitung](web/using/content-editing-best-practices.md)
       + [Landingpage erstellen](web/using/creating-a-landing-page.md)
       + [Anwendungsfall: Erstellen eines E-Mail-Versands](web/using/use-case-creating-an-email-delivery.md)
-   + Web-Formulare {#web-forms}
+   + Webformulare {#web-forms}
       + [Erste Schritte mit Web-Formularen](web/using/about-web-forms.md)
       + [Verwenden einer Web-Formular-Vorlage](web/using/using-a-web-form-template.md)
       + [Felder zu einem Web-Formular hinzufügen](web/using/adding-fields-to-a-web-form.md)
@@ -352,7 +353,7 @@ ht-degree: 100%
    + [Umfragen konfigurieren](surveys/using/configuring-surveys.md)
    + [Anwendungsfall: Erstellen eines Empfehlungsformulars](surveys/using/use-case-creating-a-refer-a-friend-form.md)
    + [Anwendungsbeispiel: Anzeigen eines Berichts zu Antworten auf eine Online-Umfrage](surveys/using/use-case-displaying-report-on-answers-to-an-online-survey.md)
-+ Integrieren mit Adobe Experience Cloud {#integrating-with-adobe-experience-cloud}
++ Integration mit Adobe Experience Cloud {#integrating-with-adobe-experience-cloud}
    + [Erste Schritte mit Campaign-Integrationen](integrations/using/about-campaign-integrations.md)
    + [Erstellen eines technischen Adobe-Kontos](integrations/using/oauth-technical-account.md)
    + Adobe Experience Cloud Triggers {#experience-triggers}
@@ -365,10 +366,10 @@ ht-degree: 100%
       + [Arbeiten mit Quellen und Zielen](integrations/using/get-started-sources-destinations.md)
       + [Adobe Experience Platform-Audiences in Campaign aufnehmen](integrations/using/ingest-aep-data.md)
       + [Daten von Campaign nach Adobe Experience Platform exportieren](integrations/using/export-campaign-data.md)
-   + Adobe Analytics Connector{#analytics-connector}
+   + Adobe Analytics-Connector{#analytics-connector}
       + [Erste Schritte mit dem Adobe Analytics Connector](integrations/using/gs-aa.md)
       + [Bereitstellung des Adobe Analytics Connectors](integrations/using/adobe-analytics-provisioning.md)
-   + Audience-Freigabe {#audience-sharing}
+   + Zielgruppenfreigabe {#audience-sharing}
       + [Audiences freigeben für [!DNL Adobe Experience Cloud]](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
       + [Anfrage an Adobe übermitteln](integrations/using/submitting-request-to-adobe.md)
       + [Integration mit freigegebenen Audiences konfigurieren in [!DNL Adobe Campaign]](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
@@ -386,14 +387,14 @@ ht-degree: 100%
       + [Arbeiten mit  [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
       + [Integration konfigurieren mit [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)
       + [Einfügen eines dynamischen Bilds](integrations/using/inserting-a-dynamic-image.md)
-   + ACS Connector {#acs-connector}
+   + ACS-Connector {#acs-connector}
       + [Erste Schritte mit [!DNL ACS Connector]](integrations/using/acs-connector-principles-and-data-cycle.md)
       + [Profile synchronisieren](integrations/using/synchronizing-profiles.md)
       + [Audiences synchronisieren](integrations/using/synchronizing-audiences.md)
       + [Web-Anwendungen synchronisieren](integrations/using/synchronizing-web-applications.md)
       + [Fehlerbehebung bei [!DNL ACS Connector]](integrations/using/troubleshooting-the-acs-connector.md)
 + [Automatisieren mit Workflows](workflow/using/about-workflow-automation.md)
-+ Mit Workflows automatisieren {#automating-with-workflows}
++ Automatisieren mit Workflows {#automating-with-workflows}
    + Erste Schritte mit Workflows {#introduction}
       + [Über Workflows](workflow/using/about-workflows.md)
       + [Über Aktivitäten](workflow/using/about-activities.md)
@@ -407,7 +408,7 @@ ht-degree: 100%
       + [Lebenszyklus der Arbeitsdaten](workflow/using/data-life-cycle.md)
       + [Genehmigungen definieren](workflow/using/defining-approvals.md)
       + [Architektur](workflow/using/architecture.md)
-   + Zielgruppenbestimmungsaktivitäten {#targeting-activities}
+   + Zielgruppenbestimmungs-Aktivitäten {#targeting-activities}
       + [Über Zielgruppenbestimmungsaktivitäten](workflow/using/about-targeting-activities.md)
       + [Abfrage](workflow/using/query.md)
       + [Inkrementelle Abfrage](workflow/using/incremental-query.md)
@@ -429,7 +430,7 @@ ht-degree: 100%
       + [Daten-Update](workflow/using/update-data.md)
       + [CRM-Connector](workflow/using/crm-connector.md)
       + [Datenquelle ändern](workflow/using/change-data-source.md)
-   + Steuerungsaktivitäten {#flow-control-activities}
+   + Aktivitäten zur Flusskontrolle {#flow-control-activities}
       + [Über Steuerungsaktivitäten](workflow/using/about-flow-control-activities.md)
       + [Start und Ende](workflow/using/start-and-end.md)
       + [Verzweigung](workflow/using/fork.md)
@@ -476,7 +477,7 @@ ht-degree: 100%
          + [Laden des Versandinhalts](workflow/using/loading-delivery-content.md)
          + [Workflow für einen kanalübergreifenden Versand](workflow/using/cross-channel-delivery-workflow.md)
          + [E-Mail-Anreicherung mit benutzerdefinierten Datumsfeldern](workflow/using/email-enrichment-with-custom-date-fields.md)
-      + Überwachung {#monitoring}
+      + Monitoring      {#monitoring}
          + [Senden eines Berichts an eine Liste](workflow/using/sending-a-report-to-a-list.md)
          + [Überwachen Ihrer Workflows](workflow/using/supervising-workflows.md)
          + [Senden personalisierter Warnungen an Benutzer](workflow/using/sending-personalized-alerts-to-operators.md)
@@ -512,7 +513,7 @@ ht-degree: 100%
       + [Ändern von Aktivitätsbildern](workflow/using/managing-activity-images.md)
       + [Verwalten von Zeitzonen](workflow/using/managing-time-zones.md)
       + [Technische Workflows](workflow/using/about-technical-workflows.md)
-+ Verwalten von Angeboten {#managing-offers}
++ Angebote verwalten {#managing-offers}
    + Erste Schritte mit Interaction {#interaction-overview}
       + [Angebote in Interaction](interaction/using/interaction-and-offer-management.md)
       + [Glossar](interaction/using/i-glossary.md)
@@ -526,7 +527,7 @@ ht-degree: 100%
       + [Live-/Design-Umgebungen](interaction/using/live-design-environments.md)
       + [Platzierungen erstellen](interaction/using/creating-offer-spaces.md)
       + [Vordefinierte Filter erstellen](interaction/using/creating-predefined-filters.md)
-   + Angebotskatalog verwalten {#managing-an-offer-catalog}
+   + Verwalten eines Angebotskatalogs {#managing-an-offer-catalog}
       + [Angebotskatalog – Übersicht](interaction/using/offer-catalog-overview.md)
       + [Angebotskategorien erstellen](interaction/using/creating-offer-categories.md)
       + [Kategorie empfehlen](interaction/using/recommending-a-category.md)
@@ -534,7 +535,7 @@ ht-degree: 100%
       + [Angebot genehmigen und aktivieren](interaction/using/approving-and-activating-an-offer.md)
       + [Angebotsvorlagen verwalten](interaction/using/managing-offer-templates.md)
       + [Angebotsunterbreitung verwalten](interaction/using/managing-offer-presentation.md)
-   + Angebotssimulationen{#simulating-offers}
+   + Angebotssimulation{#simulating-offers}
       + [Über die Angebotssimulation](interaction/using/about-offers-simulation.md)
       + [Ausführungsparameter](interaction/using/execution-settings.md)
       + [Simulationsperimeter](interaction/using/simulation-scope.md)
@@ -563,13 +564,13 @@ ht-degree: 100%
       + [Unterbreitungsregeln](interaction/using/presentation-rules.md)
       + [Angebot auf einem Inbound-Kanal](interaction/using/offers-on-an-inbound-channel.md)
       + [Angebot auf einem Outbound-Kanal](interaction/using/offers-on-an-outbound-channel.md)
-+ Transaktionsnachrichtenversand {#transactional-messaging}
++ Transaktionsnachrichten {#transactional-messaging}
    + [Erste Schritte mit Transaktionsnachrichten](message-center/using/about-transactional-messaging.md)
    + Transaktionsnachrichten konfigurieren {#configure-transactional-messaging}
       + [Transaktionsnachrichten-Architektur](message-center/using/transactional-messaging-architecture.md)
       + [Instanzen konfigurieren](message-center/using/configuring-instances.md)
       + [Ergänzende Konfigurationen](message-center/using/additional-configurations.md)
-   + Nachrichtenvorlagen {#message-templates}
+   + Vorlagenkonfiguration {#message-templates}
       + [Ereignistypen erstellen](message-center/using/creating-event-types.md)
       + [Nachrichtenvorlagen entwerfen](message-center/using/creating-the-message-template.md)
       + [Nachrichtenvorlagen testen](message-center/using/testing-message-templates.md)
@@ -586,7 +587,7 @@ ht-degree: 100%
    + [Anwendungsbeispiel](message-center/using/transactional-email-with-attachments.md)
 + Mit Social Media integrieren {#integrating-with-social-media}
    + [Über Social-Media-Marketing](social/using/about-social-marketing.md)
-+ Handbuch zur Installation und Konfiguration {#installing-campaign-classic}
++ Installations- und Konfigurationshandbuch {#installing-campaign-classic}
    + Architektonische Grundsätze {#architecture-and-hosting-models}
       + [Allgemeine Architektur](installation/using/general-architecture.md)
       + Hosting-Modelle{#hosting-models-lp}
@@ -641,8 +642,8 @@ ht-degree: 100%
       + [MX-Server mit Campaign verwenden](installation/using/using-mx-servers.md)
       + [E-Mail-BCC konfigurieren](installation/using/email-archiving.md)
       + [SpamAssassin konfigurieren](installation/using/configuring-spamassassin.md)
-   + Verbindung zu Campaign herstellen{#connect-to-campaign}
-      + [Client-Konsole installieren](installation/using/installing-the-client-console.md)
+   + Herstellen einer Verbindung zu Campaign{#connect-to-campaign}
+      + [Installieren der Client-Konsole](installation/using/installing-the-client-console.md)
       + Über eine Adobe ID verbinden {#connecting-via-an-adobe-id}
          + [Versionsinformationen [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
          + [Konfigurieren von Adobe [!DNL IMS]](integrations/using/configuring-ims.md)
@@ -650,7 +651,7 @@ ht-degree: 100%
          + [Fehlerbehebung bei IMS](integrations/using/ims-troubleshooting.md)
       + [Über LDAP verbinden](installation/using/connecting-through-ldap.md)
    + Campaign mit externen Systemen verbinden {#accessing-external-database}
-      + [Externe Konten konfigurieren](installation/using/external-accounts.md)
+      + [Konfigurieren externer Konten](installation/using/external-accounts.md)
       + Federated Data Access konfigurieren{#configure-fda}
          + [Erste Schritte mit Federated Data Access](installation/using/about-fda.md)
          + [Best Practices und Einschränkungen](installation/using/fda-best-practices.md)
@@ -681,7 +682,7 @@ ht-degree: 100%
       + [Liste der Optionen von Campaign](installation/using/configuring-campaign-options.md)
       + [Campaign deinstallieren](installation/using/uninstalling-campaign.md)
       + [Installieren neuer Schriftarten](installation/using/install-fonts.md)
-+ Überwachungshandbuch {#monitoring-campaign-classic}
++ Anleitung zur Überwachung {#monitoring-campaign-classic}
    + Einleitung {#introduction}
       + [Vorwort](production/using/foreword.md)
       + [Allgemeine Architektur](production/using/general-architecture.md)
@@ -714,7 +715,7 @@ ht-degree: 100%
       + [Anwendungsobjekte](production/using/application-objects.md)
    + Fehlerbehebung {#troubleshooting-toc}
       + [Fehlerbehebung in der Produktion – Übersicht](production/using/troubleshooting.md)
-      + Allgemeine Probleme {#common-general-issues-toc}
+      + Häufige und allgemeine Probleme {#common-general-issues-toc}
          + [Module und häufige Probleme](production/using/modules-and-frequent-issues.md)
          + [Workflow-Ausführung](production/using/workflow-execution.md)
          + [Vergessenes Passwort](production/using/lost-password.md)
@@ -727,10 +728,10 @@ ht-degree: 100%
       + Arbeiten mit Protokollen {#working-with-log-toc}
          + [Protokollgenauigkeit](production/using/log-precision.md)
          + [Probleme mit Trackinglogs](production/using/tracking-logs-issues.md)
-      + Probleme in Bezug auf die Datenbank {#database-issues-toc}
+      + Probleme mit der Datenbank {#database-issues-toc}
          + [Datenbank-Performance](production/using/database-performances.md)
          + [Codierung der Oracle-Datenbank](production/using/encoding-of-the-oracle-database.md)
-      + Verbindungsverbesserungen {#connection-improvements-toc}
+      + Verbesserungen bei Verbindungen {#connection-improvements-toc}
          + [Verbindung schlägt fehl](production/using/failure-to-connect.md)
          + [Verbindungsgrenzwerte](production/using/connection-thresholds.md)
       + Behebung technischer Probleme {#technical-troubleshooting-toc}
@@ -742,7 +743,7 @@ ht-degree: 100%
       + [Über das Datenmodell](configuration/using/about-data-model.md)
       + [Beschreibung des Datenmodells](configuration/using/data-model-description.md)
       + [Best Practices](configuration/using/data-model-best-practices.md)
-   + Mit Schemata arbeiten {#schema-reference}
+   + Arbeiten mit Schemata {#schema-reference}
       + [Erste Schritte mit Schemata](configuration/using/about-schema-reference.md)
       + [Schemastruktur](configuration/using/schema-structure.md)
       + [Datenbank-Mapping](configuration/using/database-mapping.md)
@@ -779,7 +780,7 @@ ht-degree: 100%
       + [Struktur eines Datenschemas](configuration/using/structure-of-a-data-schema.md)
       + [Regenerieren von Schemata](configuration/using/regenerating-schemas.md)
       + [Beispiele für Schemabearbeitung](configuration/using/examples-of-schemas-edition.md)
-   + Formulare {#input-forms}
+   + Eingabeformulare {#input-forms}
       + [Identifizieren eines Formulars](configuration/using/identifying-a-form.md)
       + [Bearbeiten von Formularen](configuration/using/editing-forms.md)
       + [Formularstruktur](configuration/using/form-structure.md)
@@ -791,7 +792,7 @@ ht-degree: 100%
       + [Implementieren von SOAP-Methoden](configuration/using/implementing-soap-methods.md)
       + [SOAP-Methoden in JavaScript](configuration/using/soap-methods-in-javascript.md)
       + [Hinzufügen zusätzlicher SQL-Funktionen](configuration/using/adding-additional-sql-functions.md)
-   + Navigationsbaum {#navigation-hierarchy}
+   + Navigationsstruktur {#navigation-hierarchy}
       + [Explorer-Hierarchie konfigurieren](configuration/using/configuration.md)
       + [Explorer-Hierarchie bearbeiten](configuration/using/edition.md)
    + Verwenden einer benutzerdefinierten Empfängertabelle {#use-a-custom-recipient-table}
@@ -827,7 +828,7 @@ ht-degree: 100%
 + Technotes {#technotes}
    + [Empfehlungen zur Hardware-Dimensionierung](technotes/using/hardware-sizing.md)
    + [Workflow-Aktivität für eingehende SMS für Mid-Sourcing-Infrastruktur](technotes/using/inbound-sms-wf.md)
-   + Upgrade auf IMS{#ims}
+   + Aktualisierung auf IMS{#ims}
       + [Übergang zu Adobe IMS](technotes/using/ac-ims.md)
       + [Migrieren von Benutzenden zu IMS](technotes/using/migrate-users-to-ims.md)
       + [Migration technischer Benutzender zur Developer Console](technotes/using/ims-migration.md)

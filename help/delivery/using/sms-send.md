@@ -5,23 +5,25 @@ description: Erfahren Sie, wie Sie SMS in Campaign senden, überwachen und verfo
 feature: SMS
 role: User
 exl-id: 442672ee-5037-49b7-a06f-3a99920ce2b6
-source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
-source-wordcount: '971'
-ht-degree: 100%
+source-wordcount: '895'
+ht-degree: 99%
 
 ---
 
-# SMS-Sendungen ausführen, überwachen und verfolgen{#sms-properties}
+# Zusätzliche Konfiguration{#sms-properties}
 
-## SMS-Nachrichten senden {#sending-sms-messages}
+<!--
+## Send SMS messages {#sending-sms-messages}
 
-Klicken Sie auf **[!UICONTROL Senden]**, um die Nachrichtenerstellung abzuschließen und den Versand zu starten.
+To approve your message and send it to the recipients of the delivery being created, click **[!UICONTROL Send]**.
 
-Die detaillierten Schritte zur Validierung und zum Versand von Nachrichten finden Sie in den folgenden Abschnitten:
+The detailed process when validating and sending a delivery is presented in the sections below:
 
-* [Versand validieren](steps-validating-the-delivery.md)
-* [Versand durchführen](steps-sending-the-delivery.md)
+* [Validate the delivery](steps-validating-the-delivery.md)
+* [Send the delivery](steps-sending-the-delivery.md)
+-->
 
 ## Erweiterte Parameter {#advanced-parameters}
 
@@ -55,13 +57,15 @@ Folgende Optionen stehen zur Verfügung:
 
 * **Maximale Anzahl an SMS pro Nachricht**: ermöglicht die Angabe der maximalen SMS-Anzahl pro Nachricht, wobei 0 für eine SMS steht. Wenn die Nachricht mehr als die angegebene Anzahl an SMS benötigt, wird sie nicht gesendet.
 
-## SMS überwachen und verfolgen {#monitoring-and-tracking-sms-deliveries}
+<!--
+## Monitor and track SMS {#monitoring-and-tracking-sms-deliveries}
 
-Nach dem Nachrichtenversand können Sie Ihre Sendungen überwachen und verfolgen. Lesen Sie diesbezüglich auch diese Abschnitte:
+After sending messages, you can monitor and track your deliveries. For more on this, refer to these sections:
 
-* [Überwachen von Sendungen](about-delivery-monitoring.md)
-* [Ursachen für das Fehlschlagen von Sendungen](understanding-delivery-failures.md)
-* [Über das Nachrichten-Tracking](about-message-tracking.md)
+* [Monitor a delivery](about-delivery-monitoring.md)
+* [Understand delivery failures](understanding-delivery-failures.md)
+* [About message tracking](about-message-tracking.md)
+-->
 
 ## Eingehende Nachrichten verarbeiten {#processing-inbound-messages}
 

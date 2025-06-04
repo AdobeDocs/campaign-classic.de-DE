@@ -6,10 +6,10 @@ feature: Profiles
 role: User
 level: Beginner
 exl-id: befa8948-ef2e-4f4d-a002-3f26d8516a0d
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
-source-wordcount: '76'
-ht-degree: 100%
+source-wordcount: '62'
+ht-degree: 67%
 
 ---
 
@@ -21,6 +21,13 @@ Meist werden Profile [über einen Workflow in Campaign importiert](../../platfor
 
 ![](assets/s_ncs_user_profile_add.png)
 
-Machen Sie die erforderlichen Angaben zum Profil. Die auszufüllenden Tabs und Felder werden unter [Profile bearbeiten](../../platform/using/editing-a-profile.md) beschrieben.
+>[!NOTE]
+>
+>Weitere Informationen zum Erstellen von Profilen in der Adobe Campaign-Konsole finden Sie in der [ zu Campaign v8 ](https://experienceleague.adobe.com/en/docs/campaign-classic/using/getting-started/profile-management/adding-profiles){target=_blank}
 
-Verwenden Sie **[!UICONTROL Speichern]**, um die Profilerstellung abzuschließen. Das Profil wird der Adobe Campaign-Datenbank hinzugefügt.
+
+<!--
+Enter the information for this profile. The tabs and fields to be completed are described in [Editing a profile](../../platform/using/editing-a-profile.md).
+
+Click **[!UICONTROL Save]** to validate profile creation. The profile is then added in Adobe Campaign database.
+-->
