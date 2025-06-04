@@ -5,9 +5,11 @@ description: Anhänge erstellen
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Email
 role: User
+hide: true
+hidefromtoc: true
 exl-id: db65e83e-276f-4163-98c3-3658a48acffc
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+workflow-type: ht
 source-wordcount: '1082'
 ht-degree: 100%
 

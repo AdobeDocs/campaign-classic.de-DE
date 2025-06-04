@@ -5,9 +5,11 @@ description: Erfahren Sie, wie Sie E-Mails konfigurieren, entwerfen und versende
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Email, Email Design
 role: User
+hide: true
+hidefromtoc: true
 exl-id: 44634227-2340-49c4-b330-740c739ea551
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
-workflow-type: tm+mt
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+workflow-type: ht
 source-wordcount: '773'
 ht-degree: 100%
 

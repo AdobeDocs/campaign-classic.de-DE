@@ -5,9 +5,11 @@ description: Hier erfahren Sie, wie Sie mit Adobe Campaign den E-Mail-Inhalt def
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Email Design
 role: User
+hide: true
+hidefromtoc: true
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
-workflow-type: tm+mt
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+workflow-type: ht
 source-wordcount: '2032'
 ht-degree: 100%
 

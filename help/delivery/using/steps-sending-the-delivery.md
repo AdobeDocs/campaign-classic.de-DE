@@ -4,9 +4,11 @@ title: Konfigurieren und Durchführen des Versands
 description: Erfahren Sie, wie Sie den Versand konfigurieren und versenden
 feature: Channel Configuration
 role: User
+hide: true
+hidefromtoc: true
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
-source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
-workflow-type: tm+mt
+source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+workflow-type: ht
 source-wordcount: '1615'
 ht-degree: 100%
 
