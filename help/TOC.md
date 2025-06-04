@@ -6,9 +6,9 @@ title: Campaign Classic v7 – Handbuch
 user-guide-description: Produktdokumentation für Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 67e5a52666b7a57d1fc17d308a124948bf81f432
+source-git-commit: d2292711cf67332eda3fe9bed78248ab62ca1818
 workflow-type: tm+mt
-source-wordcount: '2572'
+source-wordcount: '2575'
 ht-degree: 89%
 
 ---
@@ -125,7 +125,9 @@ ht-degree: 89%
          + [Festlegen der richtigen Audience](delivery/using/define-the-right-audience.md)
          + [Vor dem Senden prüfen](delivery/using/check-before-sending.md)
          + [Tracken und überwachen](delivery/using/track-and-monitor.md)
-+ E-Mails {#sending-emails}
++ E-Mails senden {#sending-emails}
++ [Erste Schritte mit E-Mails](delivery/using/about-email-channel.md)
++ [Mit Enhanced MTA senden](delivery/using/sending-with-enhanced-mta.md)
 + [E-Mail-Versand erstellen](delivery/using/creating-an-email-delivery.md)
 + [Definieren des E-Mail-Inhalts](delivery/using/defining-the-email-content.md)
 + [Interaktive Inhalte definieren](delivery/using/defining-interactive-content.md)
@@ -134,10 +136,9 @@ ht-degree: 89%
 + [E-Mail-Parameter](delivery/using/email-parameters.md)
 + [Auf japanische Mobiltelefone senden](delivery/using/sending-emails-on-japanese-mobiles.md)
 + [Dateien anhängen](delivery/using/attaching-files.md)
-+ [E-Mails senden](delivery/using/about-email-channel.md)
 + SMS senden {#sending-messages-on-mobiles}
 + [Erste Schritte mit SMS](delivery/using/sms-channel.md)
-+ SMS-Kanal- konfigurieren{#sms-set-up}
++ SMS-Kanal-{#sms-set-up} konfigurieren
 + [Konfigurieren von SMS auf einer eigenständigen Instanz](delivery/using/sms-set-up.md)
 + [Konfigurieren von SMS in einer Mid-Sourcing-Infrastruktur](delivery/using/sms-set-up-mid.md)
 + [SMS-Connector-Protokoll und -Einstellungen](delivery/using/sms-protocol.md)
@@ -840,7 +841,6 @@ ht-degree: 89%
       + [System-Upgrades für 2023](technotes/using/tech-stack-upgrade.md)
       + [IMS-Aktualisierungen](technotes/using/ims-updates.md)
       + [Beendigung der Unterstützung für TLS 1.0 und 1.1](technotes/using/eol-tls-support.md)
-      + [Mit Enhanced MTA senden](delivery/using/sending-with-enhanced-mta.md)
    + E-Mails und Push-Benachrichtigungen{#technotes-email}
       + [Datenschutz für E-Mails in Apple iOS](technotes/using/apple-mail-app-privacy-protection.md)
       + [Aktualisieren falscher Hardbounces](delivery/using/update-bounce-qualification.md)
