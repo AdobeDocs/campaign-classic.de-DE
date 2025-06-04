@@ -23,7 +23,7 @@ Alle Profile werden in der Adobe Campaign-Datenbank zentral gespeichert. Die Akq
 
 In Adobe Campaign sind die Standardprofile für Sendungen (E-Mails, SMS usw.) die Empfänger. Mit den in der Datenbank gespeicherten Empfängerdaten können Sie die Zielgruppe filtern, die einen bestimmten Versand erhalten soll, und Personalisierungsdaten in den Versandinhalt einfügen. In der Datenbank gibt es noch andere Arten von Profilen. Sie sind für unterschiedliche Zwecke gedacht. So werden beispielsweise Testprofile erstellt, um Ihre Sendungen zu testen, bevor sie an die endgültige Zielgruppe gesendet werden.
 
-![Video, das zeigt, was Profile sind und wie sie ](assets/do-not-localize/how-to-video.png)[Verstehen Sie das Konzept von Profilen im Video](#create-profiles-video)
+![Video, das zeigt, was Profile sind und wie sie ](assets/do-not-localize/how-to-video.png) [Verstehen Sie das Konzept von Profilen im Video](#create-profiles-video)
 
 >[!NOTE]
 >
