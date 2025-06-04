@@ -2,13 +2,12 @@
 product: campaign
 title: Wichtige Aspekte bei der Verwaltung der Zustellbarkeit in Adobe Campaign Classic
 description: Die wichtigsten zu überprüfenden Punkte beim Verwalten der Zustellbarkeit in Adobe Campaign
-badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Deliverability, Troubleshooting
 role: User
 exl-id: f94897c1-b44c-4100-ac50-a89b13fa6f2f
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: b353b562bd2f0b0bd2dfde22c6477ab66d499483
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '662'
 ht-degree: 100%
 
 ---
