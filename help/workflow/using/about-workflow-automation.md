@@ -4,16 +4,16 @@ title: Über Workflows
 description: Automatisieren Sie Prozesse mit Workflows, verwalten Sie Daten und Audiences, senden Sie Nachrichten und vieles mehr
 feature: Workflows, Data Management
 exl-id: 024a7344-9376-4ff3-926a-003148229f9f
-source-git-commit: fd082d5427314fbc91966f89048da5f193658f87
+source-git-commit: b45cc49f15f51e3624c46713c95966f465b2e4da
 workflow-type: tm+mt
-source-wordcount: '236'
-ht-degree: 14%
+source-wordcount: '233'
+ht-degree: 10%
 
 ---
 
 # Automatisieren mit Workflows {#gs-workflows}
 
-Das Workflow-Modul von Adobe Campaign ermöglicht es Ihrem Team, End-to-End-Geschäftsprozesse plattformübergreifend zu optimieren und zu automatisieren. Mit einer intuitiven grafischen Oberfläche können Sie Workflows entwerfen und verwalten, die Aufgaben wie Datensegmentierung, Kampagnenausführung, Dateiverarbeitung und sogar Benutzergenehmigungen an einem Ort koordinieren.
+Die Workflows von Adobe Campaign ermöglichen es Ihrem Team, die End-to-End-Geschäftsprozesse plattformübergreifend zu optimieren und zu automatisieren. Mit einer intuitiven grafischen Oberfläche können Sie Workflows entwerfen und verwalten, die Aufgaben wie Datensegmentierung, Kampagnenausführung, Dateiverarbeitung und sogar Benutzergenehmigungen an einem Ort koordinieren.
 
 Sie können beispielsweise einen Prozess automatisieren, um eine Datei von einem Remote-Server abzurufen, ihren Inhalt zu extrahieren und die Daten nahtlos auf den Adobe Campaign-Server zu laden. Dies reduziert den manuellen Aufwand und erhöht die betriebliche Effizienz. Die Workflow-Engine stellt sicher, dass jeder Schritt zuverlässig ausgeführt und verfolgt wird, um die Sichtbarkeit und Kontrolle zu gewährleisten.
 
@@ -31,15 +31,15 @@ Weitere Informationen zur Verwaltung von Workflows finden Sie in der Dokumentati
 
 Erfahren Sie mehr über die wichtigsten Schritte zur Workflow-Verwaltung in der Dokumentation zu Campaign v8:
 
-* [Workflow-Aktivitäten](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/activities.html?lang=de){target=_blank}: Eine Aktivität beschreibt eine Aufgabenvorlage. Zu den Workflows gehören Zielgruppenbestimmung, Flusskontrolle, Aktions- und Ereignisaktivitäten.
+* [Workflow-](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/activities.html?lang=de){target=_blank}: Eine Aktivität ist eine Aufgabenvorlage. Workflows umfassen Zielgruppenbestimmungs-, Fluss-, Aktions- und Ereignisaktivitäten.
 
 * [Workflow erstellen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=de){target=_blank}: Erfahren Sie, wie Sie Zielgruppen-, Kampagnen- und technische Workflows erstellen und ausführen.
 
-* [Best Practices](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=de){target=_blank}: Erfahren Sie mehr über die Richtlinien zur Optimierung der Workflow-Leistung von Campaign, zur Verbesserung Ihres Workflow-Designs und zur Auswahl der richtigen Einstellungen.
+* [Best Practices](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=de){target=_blank}: Erfahren Sie mehr über Richtlinien zur Optimierung der Leistung von Campaign-Workflows, zur Verbesserung der Gestaltung Ihrer Workflows und zur Definition der richtigen Einstellungen.
 
 * [Workflows überwachen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=de){target=_blank} Erfahren Sie, wie Sie die Workflow-Ausführung überwachen, um sicherzustellen, dass alles ordnungsgemäß ausgeführt wird.
 
-* [Workflow-Anwendungsfälle](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/workflow-use-cases.html?lang=de){target=_blank} Lernen Sie verschiedene Kontexte kennen, in denen Workflows verwendet werden können, und erfahren Sie anhand von End-to-End-Anwendungsfällen, wie Sie Workflows implementieren können.
+* [Workflow-Anwendungsfälle](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/workflow-use-cases.html?lang=de){target=_blank} Erfahren Sie mehr über Kontexte, in denen Workflows verwendet werden können, und wie Sie sie durch End-to-End-Anwendungsfälle implementieren.
 
 
 >[!ENDTABS]
