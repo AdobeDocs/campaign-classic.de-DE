@@ -6,9 +6,9 @@ title: Campaign Classic v7 – Handbuch
 user-guide-description: Produktdokumentation für Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: b353b562bd2f0b0bd2dfde22c6477ab66d499483
+source-git-commit: 67e5a52666b7a57d1fc17d308a124948bf81f432
 workflow-type: tm+mt
-source-wordcount: '2573'
+source-wordcount: '2572'
 ht-degree: 89%
 
 ---
@@ -125,7 +125,7 @@ ht-degree: 89%
          + [Festlegen der richtigen Audience](delivery/using/define-the-right-audience.md)
          + [Vor dem Senden prüfen](delivery/using/check-before-sending.md)
          + [Tracken und überwachen](delivery/using/track-and-monitor.md)
-+ E-Mails senden {#sending-emails}
++ E-Mails {#sending-emails}
 + [E-Mail-Versand erstellen](delivery/using/creating-an-email-delivery.md)
 + [Definieren des E-Mail-Inhalts](delivery/using/defining-the-email-content.md)
 + [Interaktive Inhalte definieren](delivery/using/defining-interactive-content.md)
@@ -137,7 +137,7 @@ ht-degree: 89%
 + [E-Mails senden](delivery/using/about-email-channel.md)
 + SMS senden {#sending-messages-on-mobiles}
 + [Erste Schritte mit SMS](delivery/using/sms-channel.md)
-+ SMS-Kanal- konfigurieren{#sms-set-up}
++ SMS-Kanal-{#sms-set-up} konfigurieren
 + [Konfigurieren von SMS auf einer eigenständigen Instanz](delivery/using/sms-set-up.md)
 + [Konfigurieren von SMS in einer Mid-Sourcing-Infrastruktur](delivery/using/sms-set-up-mid.md)
 + [SMS-Connector-Protokoll und -Einstellungen](delivery/using/sms-protocol.md)
