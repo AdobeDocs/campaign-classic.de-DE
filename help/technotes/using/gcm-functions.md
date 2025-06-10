@@ -5,9 +5,9 @@ description: Neue GCM-basierte Funktionen
 feature: Technote
 exl-id: 154dee7a-a1e9-40a2-bfa5-3641382d0574
 source-git-commit: b6d64f66d287dba79be5eddec48ee852c2c7740c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '578'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -127,7 +127,7 @@ Verfügbar in:
 
 ### decryptString() {#decryptString-javascript}
 
-Entschlüsselt eine Zeichenfolge mit dem Schlüssel der Instanz oder einem anderen Schlüssel. Diese Legacy-Funktion kann mit GCM verwendet werden. Sie steht für die Entschlüsselung von mit dem AES-CBC-Modus verschlüsselten Chiffretext nicht mehr zur Verfügung.
+Entschlüsselt einen String mit dem Schlüssel der Instanz oder einem anderen Schlüssel. Diese Legacy-Funktion kann mit GCM verwendet werden. Sie steht für die Entschlüsselung von mit dem AES-CBC-Modus verschlüsselten Chiffretext nicht mehr zur Verfügung.
 
 ```
             decryptString (str [, key

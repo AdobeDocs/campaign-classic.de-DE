@@ -8,9 +8,9 @@ role: User, Data Architect
 level: Beginner
 exl-id: 2db1034d-cad6-4fb0-8646-dd9099080ab0
 source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '207'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -28,6 +28,6 @@ Abfragen werden entweder mit den in der ausgewählten Tabelle enthaltenen Felder
 
 >[!NOTE]
 >
->Weitere Informationen zu Abfragen und deren Erstellung finden Sie in der Dokumentation zu [Campaign v8](../../workflow/using/query.md).
+>Weitere Informationen zu Abfragen und wie diese erstellt werden finden Sie in der [Dokumentation zu Campaign v8](../../workflow/using/query.md).
 
-![Screenshot mit einem Beispiel für eine Abfrage.](assets/query_recipients_4.png)
+![Screenshot eines Beispiels einer Abfrage.](assets/query_recipients_4.png)

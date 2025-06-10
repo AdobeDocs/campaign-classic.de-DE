@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: profile-management
 exl-id: 0f3a5582-5c90-4393-bee8-d9e2f07e5982
 source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '119'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Tabs und ihr Inhalt sind abhängig von Ihrer Konfiguration und den installierten
 
 >[!NOTE]
 >
->Weitere Informationen zum Bearbeiten von Profilen und zum Zugriff darauf finden Sie in der ausführlichen Dokumentation zur [Campaign v8-Dokumentation](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/audience/view-profiles){target=_blank}.
+>Weitere Informationen zum Bearbeiten von Profilen sowie zum auf Profile finden Sie in der ausführlichen Dokumentation in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/audience/view-profiles){target=_blank}.
 
 
 

@@ -1,19 +1,20 @@
 ---
 product: campaign
 title: Über Versandeinstellungen
-description: Ermitteln der spezifischen v7-Versandeinstellungen
+description: Ermitteln der spezifischen Versandeinstellungen für v7
 feature: Channel Configuration
 role: User
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
-workflow-type: tm+mt
+exl-id: 66250817-f829-4b8b-92dd-2daa92a97fe0
+source-git-commit: 00f36c639a21151bc4fccf5012e6f20c27db927e
+workflow-type: ht
 source-wordcount: '747'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 # Versandeinstellungen {#about-delivery-settings}
 
-Die folgenden Einstellungen sind spezifisch für Campaign Classic. Informationen zu anderen Versandeinstellungen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html?lang=de){target="_blank"}.
+Die folgenden Einstellungen sind spezifisch für Campaign Classic. Weitere Informationen zu anderen Versandeinstellungen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/gs-message){target="_blank"}.
 
 ## Versandanalyse {#delivery-analysis}
 
@@ -46,7 +47,7 @@ Einem großen Versand sollte also vorzugsweise eine niedrige Priorität zugewies
 >
 >Um sicherzustellen, dass die Analyse umfangreicher Sendungen die Durchführung Ihrer Workflows nicht bremst, haben Sie die Möglichkeit, die Option **[!UICONTROL Ausführung auf einen Zeitpunkt mit geringer Auslastung verschieben]** anzukreuzen.
 
-## Versand {#delivery-sending}
+## Durchführen eines Versands {#delivery-sending}
 
 ### Konfigurieren der weiteren Zustellversuche {#configuring-retries}
 

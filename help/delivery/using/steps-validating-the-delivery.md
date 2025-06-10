@@ -8,9 +8,9 @@ hide: true
 hidefromtoc: true
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
 source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1794'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -129,11 +129,11 @@ Einem großen Versand sollte also vorzugsweise eine niedrige Priorität zugewies
 
 ## Durchführen eines Testversands {#sending-a-proof}
 
-Um mögliche Fehler bei der Nachrichtenkonfiguration zu erkennen, empfiehlt Adobe dringend, einen Versandvalidierungszyklus einzurichten. Auf diese Weise können Sie den Inhalt wiederholt von Testempfängern prüfen lassen. Schalten Sie nach jeder Änderung einen neuen Testversand, um den Inhalt abschließend validieren zu lassen.
+Um mögliche Fehler in der Nachrichtenkonfiguration zu erkennen,  ist es empfehlenswert, einen Validierungszyklus für den Versand einzurichten.  Stellen Sie sicher, dass Inhalte so oft wie nötig genehmigt werden, indem Sie Testsendungen an Testempfänger und -empfängerinnen senden. Schalten Sie nach jeder Änderung einen neuen Testversand, um den Inhalt abschließend validieren zu lassen.
 
 >[!NOTE]
 >
->Die verfügbaren Validierungsmodi werden unter [Validierungsmodus ändern](steps-validating-the-delivery.md#changing-the-approval-mode) detailliert beschrieben.
+>Die verfügbaren Validierungsmodi werden unter [Ändern des Validierungsmodus](steps-validating-the-delivery.md#changing-the-approval-mode) detailliert beschrieben.
 
 Gehen Sie wie folgt vor, um einen Testversand durchzuführen:
 

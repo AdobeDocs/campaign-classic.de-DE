@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: befa8948-ef2e-4f4d-a002-3f26d8516a0d
 source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '62'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
@@ -17,13 +17,13 @@ ht-degree: 67%
 
 
 
-Meist werden Profile [über einen Workflow in Campaign importiert](../../platform/using/import-export-workflows.md). Es besteht aber auch die Möglichkeit, neue Profile direkt über die Benutzeroberfläche hinzuzufügen. Wählen Sie hierzu die Schaltfläche **[!UICONTROL Erstellen]** aus.
+Meist werden Profile [über einen Workflow in Campaign importiert](../../platform/using/import-export-workflows.md). Es besteht aber auch die Möglichkeit, neue Profile direkt mit der Schaltfläche **[!UICONTROL Erstellen]** über die Benutzeroberfläche hinzuzufügen. Sie werden der Datenbank dann hinzugefügt.
 
 ![](assets/s_ncs_user_profile_add.png)
 
 >[!NOTE]
 >
->Weitere Informationen zum Erstellen von Profilen in der Adobe Campaign-Konsole finden Sie in der [ zu Campaign v8 ](https://experienceleague.adobe.com/de/docs/campaign-classic/using/getting-started/profile-management/adding-profiles){target=_blank}
+>Weitere Informationen zum Erstellen von Profilen in der Adobe Campaign-Konsole finden Sie in der [Dokumentation zu Campaign v8.](https://experienceleague.adobe.com/de/docs/campaign-classic/using/getting-started/profile-management/adding-profiles){target=_blank}
 
 
 <!--

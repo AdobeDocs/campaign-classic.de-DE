@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: creating-queries
 exl-id: cf914366-8bac-4d68-a0cc-2a43d102eef2
 source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '147'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Folgende Schritte sind auszuführen, um eine Abfrage in Adobe Campaign zu erstel
 >
 >* Alle diese Schritte können im generischen Abfragetool durchgeführt werden. In anderen Anwendungskontexten sind u. U. gewisse Schritte nicht nötig.\
 >Das Abfrage-Tool wird in [diesem Abschnitt](../../workflow/using/query.md) beschrieben.
->* Weitere Informationen zu Abfragen und deren Erstellung finden Sie in der Dokumentation zu [Campaign v8](../../workflow/using/query.md).
+>* Weitere Informationen zu Abfragen und wie diese erstellt werden finden Sie in der [Dokumentation zu Campaign v8](../../workflow/using/query.md).
 
 <!--
 ## Step 1 - Choose a table {#step-1---choose-a-table}

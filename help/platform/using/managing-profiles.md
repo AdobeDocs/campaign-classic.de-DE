@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: profile-management
 exl-id: e1d0556a-6f30-4863-9025-eb9c1b8b53d3
 source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '138'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Jeder Knoten entspricht einem Ordner. Die Daten eines Ordners sind als in sich a
 >[!NOTE]
 >
 > * Um eine Liste aller in der Datenbank enthaltenen Empfänger anzuzeigen, ist die Erstellung einer Ansicht erforderlich. Weitere Informationen finden Sie unter [Ordner und Ansichten](../../platform/using/access-management-folders.md).
-> * Weitere Informationen zum Verwalten von Profilen finden Sie in der Dokumentation zu [ v8 ](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
+> * Weitere Informationen zum Verwalten von Profilen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
 
 
 <!--

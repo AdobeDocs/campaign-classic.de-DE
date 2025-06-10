@@ -7,9 +7,9 @@ role: User, Data Architect
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
 source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '234'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -23,11 +23,11 @@ Alle Profile werden in der Adobe Campaign-Datenbank zentral gespeichert. Die Akq
 
 In Adobe Campaign sind die Standardprofile für Sendungen (E-Mails, SMS usw.) die Empfänger. Mit den in der Datenbank gespeicherten Empfängerdaten können Sie die Zielgruppe filtern, die einen bestimmten Versand erhalten soll, und Personalisierungsdaten in den Versandinhalt einfügen. In der Datenbank gibt es noch andere Arten von Profilen. Sie sind für unterschiedliche Zwecke gedacht. So werden beispielsweise Testprofile erstellt, um Ihre Sendungen zu testen, bevor sie an die endgültige Zielgruppe gesendet werden.
 
-![Video, das zeigt, was Profile sind und wie sie ](assets/do-not-localize/how-to-video.png) [Verstehen Sie das Konzept von Profilen im Video](#create-profiles-video)
+![Video mit Informationen zu Profilen und deren Funktionsweise](assets/do-not-localize/how-to-video.png) [Informationen zum Konzept der Profile im Video](#create-profiles-video)
 
 >[!NOTE]
 >
->Weitere Informationen zum Erstellen und Bearbeiten von Profilen finden Sie in der ausführlichen Dokumentation zu [Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/audience/gs-audiences){target=_blank}.
+>Weitere Informationen zu Profilen sowie zum Erstellen und Bearbeiten von Profilen finden Sie in der ausführlichen Dokumentation in der [Dokumentation von Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/audience/gs-audiences){target=_blank}.
 
 <!--
 ## Profile types {#profile-types}
@@ -96,9 +96,9 @@ The general layout of the Adobe Campaign explorer is presented in [this page](..
 
 An active profile is a profile that customer has attempted to communicate with during the past 12 months via any channel.
 
-According to your contract, each of your Campaign instances is provisioned with a specific amount of active profiles that are counted for billing purposes. Please refer to your latest contract for reference on number of purchased active profiles. Learn more in [Adobe Campaign product description](https://helpx.adobe.com/de/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
+According to your contract, each of your Campaign instances is provisioned with a specific amount of active profiles that are counted for billing purposes. Please refer to your latest contract for reference on number of purchased active profiles. Learn more in [Adobe Campaign product description](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
-You can monitor the number of active profiles on your instance directly from Campaign Control Panel. For more on this, refer to the [Control Panel documentation](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html?lang=de){target="_blank"}.
+You can monitor the number of active profiles on your instance directly from Campaign Control Panel. For more on this, refer to the [Control Panel documentation](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html){target="_blank"}.
 
 The following guardrails and limitations apply:
 
@@ -114,13 +114,13 @@ Learn how to access profile data, sort and filter profiles and manually create a
 
 This video also explains the compliance of Adobe Campaign Classic with General Data Protection Regulations. 
 
->[!VIDEO](https://video.tv.adobe.com/v/326750?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/35611?quality=12)
 
-Additional Campaign Classic how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).
+Additional Campaign Classic how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
 
 **See also**
 
-* [Privacy management in Campaign](https://helpx.adobe.com/de/campaign/kb/acc-privacy.html)
+* [Privacy management in Campaign](https://helpx.adobe.com/campaign/kb/acc-privacy.html)
 
 * [Create queries and segment data in workflows](../../workflow/using/targeting-data.md)
 
