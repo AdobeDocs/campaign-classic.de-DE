@@ -10,7 +10,7 @@ exl-id: 0ba8a3d0-36d7-42f3-b281-0255e49b5fa3
 source-git-commit: 6e83067cef2b08b5bee37610bfef515714756ada
 workflow-type: tm+mt
 source-wordcount: '533'
-ht-degree: 91%
+ht-degree: 93%
 
 ---
 
@@ -22,7 +22,7 @@ Jeder Ordner des Explorer-Navigationsbaums verfügt über Lese-, Schreib- und L�
 
 >[!NOTE]
 >
->Weitere Informationen zu Berechtigungen für Ordner finden Sie in der Dokumentation zu [ v8 ](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/admin/permissions/folder-permissions){target=_blank}.
+>Weitere Informationen zu Berechtigungen für Ordner finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/admin/permissions/folder-permissions){target=_blank}.
 
 
 ## Ordner und Ansichten {#folders-and-views}
