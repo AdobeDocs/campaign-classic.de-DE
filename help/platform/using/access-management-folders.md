@@ -7,10 +7,10 @@ feature: Application Settings, Permissions
 role: User, Admin
 level: Beginner
 exl-id: 0ba8a3d0-36d7-42f3-b281-0255e49b5fa3
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: 6e83067cef2b08b5bee37610bfef515714756ada
 workflow-type: tm+mt
-source-wordcount: '797'
-ht-degree: 98%
+source-wordcount: '533'
+ht-degree: 91%
 
 ---
 
@@ -55,16 +55,21 @@ Zur Unterscheidung zwischen Ansichten und Ordnern wird der Name der Ansichten in
 
 ### Ordner hinzufügen und Ansichten erstellen {#adding-folders-and-creating-views}
 
+>[!IMPORTANT]
+>
+>Vorkonfigurierte Ordner sollten nicht als Ansicht markiert werden.
+
+
 Im folgenden Beispiel werden wir neue Ordner erstellen, um bestimmte Daten darzustellen:
 
 1. Erstellen Sie einen neuen Ordner vom Typ **[!UICONTROL Sendungen]** und nennen Sie ihn **Sendungen Deutschland**.
 1. Klicken Sie mit der rechten Maustaste auf diesen Ordner und wählen Sie **[!UICONTROL Eigenschaften...]** aus.
 
-   ![](assets/s_ncs_user_add_folder_exple.png)
+   ![Screenshot mit einem Rechtsklick in die Eigenschaften](assets/s_ncs_user_add_folder_exple.png)
 
 1. Wählen Sie im Tab **[!UICONTROL Einschränkung]** die Option **[!UICONTROL Dieser Ordner ist eine Ansicht]**: Nun werden alle Sendungen der Datenbank in diesem Ordner angezeigt.
 
-   ![](assets/s_ncs_user_add_folder_exple01.png)
+   ![Bildschirm mit dem angekreuzten Ansichtsfeld](assets/s_ncs_user_add_folder_exple01.png)
 
 1. Bestimmen Sie mithilfe des Abfragetools im mittleren Abschnitt des Fensters die Bedingungen, nach denen die Sendungen gefiltert werden sollen: Es werden nur die dem Filter entsprechenden Sendungen angezeigt.
 
@@ -74,7 +79,7 @@ Im folgenden Beispiel werden wir neue Ordner erstellen, um bestimmte Daten darzu
 
    Mit den folgenden Filterbedingungen:
 
-![](assets/s_ncs_user_add_folder_exple00.png)
+![Screenshot mit den verschiedenen Filterbedingungen](assets/s_ncs_user_add_folder_exple00.png)
 
 werden folgende Sendungen in der Ansicht angezeigt:
 
@@ -84,46 +89,48 @@ werden folgende Sendungen in der Ansicht angezeigt:
 >
 >Bei der Verwaltung von Ereignissen des Typs [Transaktionsnachrichten](../../message-center/using/about-transactional-messaging.md) dürfen die Ordner **[!UICONTROL Echtzeitereignis]** oder **[!UICONTROL Batch-Ereignis]** auf den Ausführungsinstanzen nicht als Ansichten festgelegt werden, da dies zu Problemen mit den Zugriffsrechten führen kann. Weiterführende Informationen zum Sammeln von Ereignissen finden Sie in [diesem Abschnitt](../../message-center/using/about-event-processing.md#event-collection).
 
-## Berechtigungen für einen Ordner
+<!--
+## Permissions on a folder
 
-### Berechtigungen für einen Ordner bearbeiten {#edit-permissions-on-a-folder}
+### Edit permissions on a folder {#edit-permissions-on-a-folder}
 
-Um Berechtigungen für einen bestimmten Ordner des Baums zu bearbeiten, gehen Sie folgendermaßen vor:
+To edit permissions on a specific folder of the tree, follow the steps below:
 
-1. Klicken Sie mit der rechten Maustaste auf den entsprechenden Ordner und wählen Sie **[!UICONTROL Eigenschaften...]**.
+1. Right-click on the folder and select **[!UICONTROL Properties...]**.
 
    ![](assets/s_ncs_user_folder_properties.png)
 
-1. Klicken Sie auf den Tab **[!UICONTROL Sicherheit]**, um die Berechtigungen bezüglich des Ordners anzusehen.
+1. Click the **[!UICONTROL Security]** tab to view authorizations on this folder.
 
    ![](assets/s_ncs_user_folder_properties_security.png)
 
-### Berechtigungen ändern {#modify-permissions}
+### Modify permissions {#modify-permissions}
 
-Zum Ändern von Berechtigungen haben Sie folgende Möglichkeiten:
+To modify permissions, you can:
 
-* **Gruppe oder Benutzer ersetzen**: Klicken Sie hierzu auf eine der Gruppen (oder Benutzer), die über Berechtigungen bezüglich des Ordners verfügen, und wählen Sie eine neue Gruppe (oder einen neuen Benutzer) über die Auswahlliste aus:
+* **Replace a group or an operator**. To do this, click one of the groups (or operators) with rights to the folder, and select a new group (or a new operator) from the drop-down list:
 
   ![](assets/s_ncs_user_folder_properties_security02.png)
 
-* **Gruppe oder Benutzerin bzw. Benutzer berechtigen**. Klicken Sie hierzu auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wählen Sie die Gruppe oder die Benutzerin bzw. den Benutzer aus, denen Berechtigungen bezüglich des Ordners zugewiesen werden sollen.
-* **Gruppe oder Benutzerin bzw. Benutzer verbieten**. Klicken Sie hierzu auf die Schaltfläche **[!UICONTROL Löschen]** und wählen Sie die Gruppe oder die Benutzerin bzw. den Benutzer aus, denen Sie jegliche Berechtigung bezüglich des Ordners entziehen möchten.
-* **Berechtigungen einer Gruppe oder eines Benutzers auswählen**: Klicken Sie hierzu auf die betroffene Gruppe oder den Benutzer und wählen Sie anschließend die Zugriffsberechtigungen aus bzw. ab, die Sie zuweisen oder entziehen möchten.
+* **Authorize a group or an operator**. To do this, click the **[!UICONTROL Add]** button and select the group or operator to which you want to assign authorizations for this folder.
+* **Forbid a group or an operator**. To do this, click **[!UICONTROL Delete]** and select the group or operator from which you want to remove authorization for this folder.
+* **Select the rights assigned to a group or an operator**. To do this, click the group or operator concerned, then select the access rights you want to grant and deselect the others.
 
   ![](assets/s_ncs_user_folder_properties_security03.png)
 
-### Berechtigungen ausdehnen {#propagate-permissions}
+### Propagate permissions {#propagate-permissions}
 
-Sie können Berechtigungen und Zugriffsberechtigungen ausdehnen. Wählen Sie dazu die Option **[!UICONTROL Ausdehnen]** in den Dateieigenschaften aus.
+You can propagate authorizations and access rights. To do this, select the **[!UICONTROL Propagate]** option in the folder properties.
 
-Die in diesem Fenster festgelegten Berechtigungen werden dadurch auf alle Unterordner des aktuellen Verzeichnisknotens ausgeweitet. Die Berechtigungen können anschließend für jeden einzelnen der Unterordner überschrieben werden.
+The authorizations defined in this window will then be applied to all the sub-folders of the current node. You can then overload these authorizations for each of the sub-folders.
 
 >[!NOTE]
 >
->Wenn Sie diese Option für einen Ordner abwählen, ist sie nicht automatisch auch für alle Unterordner dieses Ordners abgewählt. Sie muss für jeden Unterordner einzeln abgewählt werden.
+>Clearing this option for a folder does not automatically clear it for the sub-folders. You must clear it explicitly for each of the sub-folders.
 
-### Allen Benutzern Zugriff gewähren {#grant-access-to-all-operators}
+### Grant access to all operators {#grant-access-to-all-operators}
 
-Wenn im Tab **[!UICONTROL Sicherheit]** die Option **[!UICONTROL Systemordner]** angekreuzt ist, haben alle Benutzer ungeachtet ihrer Berechtigungen Zugriff auf die Daten des Ordners. Wenn die Option nicht angekreuzt ist, muss ein Benutzer (oder seine Gruppe) der Liste ausdrücklich hinzugefügt werden, um Zugriff zu erhalten.
+In the **[!UICONTROL Security]** tab, if the **[!UICONTROL System folder]** option is selected, all operators will have access to this data, regardless of their rights. If this option is cleared, you must explicitly add the operator (or their group) to the list of authorizations in order for them to have access.
 
 ![](assets/s_ncs_user_folder_properties_security03b.png)
+-->
