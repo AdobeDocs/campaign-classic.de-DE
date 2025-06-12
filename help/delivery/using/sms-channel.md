@@ -5,16 +5,32 @@ description: Erste Schritte mit dem SMS-Kanal
 feature: SMS
 role: User
 exl-id: 6fc2ab09-8ea7-4865-88ad-bd45eee68958
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
-workflow-type: ht
-source-wordcount: '256'
-ht-degree: 100%
+source-git-commit: d3d731c64cb5a430de6adac3aeb326f74134c436
+workflow-type: tm+mt
+source-wordcount: '370'
+ht-degree: 68%
 
 ---
 
 # Erste Schritte mit dem SMS-Kanal{#sms-channel}
 
 Verwenden Sie Adobe Campaign, um Textnachrichten an die Mobilgeräte Ihrer Kundinnen und Kunden zu senden. Im SMS-Editor können Sie Nachrichten im Textformat erstellen, personalisieren und in der Vorschau anzeigen.
+
+SMS ist ein direkter und höchst effektiver Kanal, um Ihre Benutzer überall zu erreichen. Mit hohen Öffnungsraten und einem nahezu sofortigen Versand ist SMS ideal für zeitkritische Warnhinweise, Transaktions-Updates und knappe Werbenachrichten. Verwenden Sie SMS, um Ihre kanalübergreifende Strategie zu ergänzen und eine wirkungsvolle Echtzeit-Kommunikation bereitzustellen. In der [Dokumentation zu Adobe Campaign v8 erfahren Sie, wie Sie den SMS-Kanal effektiv konfigurieren und ](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/sms/sms){target=_blank}.
+
+Im Rahmen der Promotion-Initiative für Campaign v8 wurde die Dokumentation zu Campaign Classic neu strukturiert. Allgemeine Funktionen sind jetzt nur noch im Dokumentationssatz zu Campaign v8 verfügbar.
+
+>[!BEGINTABS]
+
+>[!TAB Dokumentation zum SMS-Kanal]
+
+Weitere Informationen zum SMS-Kanal finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/sms/sms){target=_blank}.
+
+
+[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/sms/sms){target=_blank}
+
+
+>[!TAB Erstellung eines SMS-Versands]
 
 Die wichtigsten Schritte zur Erstellung eines SMS-Versands finden Sie in der Dokumentation zu Campaign v8:
 
@@ -27,13 +43,20 @@ Vergewissern Sie sich, dass Ihr Inhalt genehmigt wurde, bevor dieser an Ihre Zie
 * [Senden an die Zielgruppe](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/validate-sms/sms-send.html?lang=de): Nach Validierung Ihrer SMS können Sie diese nun an die entsprechende Zielgruppe senden.
 * [Überwachen und Nachverfolgen einer SMS](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/sms/sms-monitor): Es ist wichtig, den Versand Ihrer SMS zu überwachen, um die Effizienz Ihrer Marketing-Kampagnen sicherzustellen.
 
-Auf diesen Seiten erfahren Sie mehr über die Konfiguration:
+
+>[!TAB SMS-Konfiguration]
+
+Auf diesen Seiten erfahren Sie mehr über die SMS-Konfiguration:
 
 * [Eigenständige Konfiguration](sms-set-up.md): Erfahren Sie, wie Sie den SMS-Kanal in einer eigenständigen Instanz konfigurieren.
 * [Mid-Sourcing-Konfiguration](sms-set-up-mid.md): Erfahren Sie, wie Sie mit Mid-Servern an ein Mobiltelefon senden.
 * [SMS-Connector](sms-protocol.md): Erfahren Sie mehr über das Protokoll und die Einstellungen des SMS-Connectors.
 * [Zusätzliche Konfiguration](sms-send.md): Erfahren Sie mehr über die erweiterten Parameter und andere zusätzliche Konfigurationen.
 * [Fehlerbehebung](troubleshooting-sms.md): Wir haben eine Reihe potenzieller Probleme und deren Lösungen aufgelistet.
+
+>[!ENDTABS]
+
+
 
 <!--
 Use Adobe Campaign to send personalized SMS messages.

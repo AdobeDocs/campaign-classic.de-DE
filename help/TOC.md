@@ -6,9 +6,9 @@ title: Campaign Classic v7 – Handbuch
 user-guide-description: Produktdokumentation für Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 1e88021c9209bd23c3c949380f553473e890a9ce
+source-git-commit: d3d731c64cb5a430de6adac3aeb326f74134c436
 workflow-type: tm+mt
-source-wordcount: '2571'
+source-wordcount: '2569'
 ht-degree: 100%
 
 ---
@@ -125,9 +125,8 @@ ht-degree: 100%
       + [Festlegen der richtigen Audience](delivery/using/define-the-right-audience.md)
       + [Vor dem Senden prüfen](delivery/using/check-before-sending.md)
       + [Tracken und überwachen](delivery/using/track-and-monitor.md)
+   + [Senden von E-Mails](delivery/using/about-email-channel.md)
    + Senden von E-Mails {#sending-emails}
-      + [Erste Schritte mit E-Mails](delivery/using/about-email-channel.md)
-      + [Senden mit Enhanced MTA](delivery/using/sending-with-enhanced-mta.md)
       + [E-Mail-Versand erstellen](delivery/using/creating-an-email-delivery.md)
       + [Definieren des E-Mail-Inhalts](delivery/using/defining-the-email-content.md)
       + [Definieren interaktiver Inhalte](delivery/using/defining-interactive-content.md)
@@ -827,6 +826,7 @@ ht-degree: 100%
    + [Rollback-Verfahren](migration/using/about-rollback.md)
 + Technotes {#technotes}
    + [Empfehlungen zur Hardware-Dimensionierung](technotes/using/hardware-sizing.md)
+   + [Senden mit Enhanced MTA](delivery/using/sending-with-enhanced-mta.md)
    + [Workflow-Aktivität für eingehende SMS für Mid-Sourcing-Infrastruktur](technotes/using/inbound-sms-wf.md)
    + Upgrade auf IMS{#ims}
       + [Übergang zu Adobe IMS](technotes/using/ac-ims.md)
