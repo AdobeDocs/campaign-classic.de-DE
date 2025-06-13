@@ -42,7 +42,7 @@ Weitere Informationen zu Berechtigungen in Adobe Campaign finden Sie in der [ zu
 
 Weitere Informationen zum Zugriff auf Ordner und deren Verwaltung finden Sie in der Dokumentation zu [Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/folder-permissions?lang=en#_blank){target=_blank}.
 
-[![Bild](../../assets/do-not-localize/learn-more-button.svg)]([![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/gs-permissions?lang=en#_blank){target=_blank}){target=_blank}
+[![Bild](../../assets/do-not-localize/learn-more-button.svg)] ([![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/gs-permissions?lang=en#_blank){target=_blank}){target=_blank}
 
 >[!ENDTABS]
 
