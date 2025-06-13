@@ -8,9 +8,9 @@ role: User, Admin
 level: Beginner
 exl-id: 0ba8a3d0-36d7-42f3-b281-0255e49b5fa3
 source-git-commit: 6e83067cef2b08b5bee37610bfef515714756ada
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '533'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -57,7 +57,7 @@ Zur Unterscheidung zwischen Ansichten und Ordnern wird der Name der Ansichten in
 
 >[!IMPORTANT]
 >
->Vorkonfigurierte Ordner sollten nicht als Ansicht markiert werden.
+>Vorkonfigurierte Ordner sollten nicht für die Ansicht markiert werden.
 
 
 Im folgenden Beispiel werden wir neue Ordner erstellen, um bestimmte Daten darzustellen:
@@ -65,11 +65,11 @@ Im folgenden Beispiel werden wir neue Ordner erstellen, um bestimmte Daten darzu
 1. Erstellen Sie einen neuen Ordner vom Typ **[!UICONTROL Sendungen]** und nennen Sie ihn **Sendungen Deutschland**.
 1. Klicken Sie mit der rechten Maustaste auf diesen Ordner und wählen Sie **[!UICONTROL Eigenschaften...]** aus.
 
-   ![Screenshot mit einem Rechtsklick in die Eigenschaften](assets/s_ncs_user_add_folder_exple.png)
+   ![Screenshot, in dem mit rechts auf die Eigenschaften geklickt wird](assets/s_ncs_user_add_folder_exple.png)
 
-1. Wählen Sie im Tab **[!UICONTROL Einschränkung]** die Option **[!UICONTROL Dieser Ordner ist eine Ansicht]**: Nun werden alle Sendungen der Datenbank in diesem Ordner angezeigt.
+1. Wählen Sie auf der Registerkarte **[!UICONTROL Einschränkung]** die Option **[!UICONTROL Dieser Ordner ist eine Ansicht]**: Nun werden alle Sendungen der Datenbank in diesem Ordner angezeigt.
 
-   ![Bildschirm mit dem angekreuzten Ansichtsfeld](assets/s_ncs_user_add_folder_exple01.png)
+   ![Screenshot, in dem das Ansichtsfeld ausgewählt wird](assets/s_ncs_user_add_folder_exple01.png)
 
 1. Bestimmen Sie mithilfe des Abfragetools im mittleren Abschnitt des Fensters die Bedingungen, nach denen die Sendungen gefiltert werden sollen: Es werden nur die dem Filter entsprechenden Sendungen angezeigt.
 
