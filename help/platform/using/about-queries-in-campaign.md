@@ -30,17 +30,17 @@ Abfragen werden entweder mit den in der ausgewählten Tabelle enthaltenen Felder
 
 >[!TAB Dokumentation zu Abfragen]
 
-Weitere Informationen zu Abfragen finden Sie in der [ zu Campaign v8.](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/activities){target=_blank}
+Weitere Informationen zu Abfragen finden Sie in der [ zu Campaign v8.](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/wf-activities/activities){target=_blank}
 
 
-[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/activities){target=_blank}
+[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/wf-activities/activities){target=_blank}
 
 
 >[!TAB Abfrage erstellen]
 
-Die wichtigsten Schritte zur Erstellung von Abfragen finden Sie in der [ zu Campaign v8 ](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}.
+Die wichtigsten Schritte zur Erstellung von Abfragen finden Sie in der [ zu Campaign v8 ](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}.
 
-[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}
+[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}
 
 >[!ENDTABS]
 
