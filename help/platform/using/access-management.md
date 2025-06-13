@@ -5,10 +5,10 @@ description: Erfahren Sie, wie Sie Zugriff auf Campaign-Funktionen gewähren.
 badge: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Access Management, Permissions
 exl-id: 9b616715-33cd-43ba-8548-8d96a179408e
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
-workflow-type: ht
-source-wordcount: '309'
-ht-degree: 100%
+source-git-commit: b27b85b126e002c0ea8b5d71da1ed60e1e817980
+workflow-type: tm+mt
+source-wordcount: '202'
+ht-degree: 79%
 
 ---
 
@@ -30,22 +30,37 @@ Mit Adobe Campaign können Sie die den verschiedenen Benutzerinnen und Benutzern
 * Zugriff auf bestimmte Datensätze;
 * Erstellung, Veränderung und/oder Löschung von Datensätzen (Aktionen, Kontakte, Kampagnen, Gruppen etc.).
 
-Die Rechte können sowohl für einzelne Benutzerprofile als auch Benutzergruppen gelten.
+>[!BEGINTABS]
 
-Sie werden durch Sicherheitsparameter ergänzt, die mit dem vom Benutzer zur Verbindung mit Adobe Campaign verwendeten Modus verknüpft sind. Weitere Informationen zu Sicherheitszonen finden Sie auf [dieser Seite](../../installation/using/security-zones.md).
+>[!TAB Dokumentation zu Berechtigungen]
 
-Es gibt zwei Arten von Berechtigungen, die einer Benutzerin oder einem Benutzer erteilt werden können:
+Weitere Informationen zu Berechtigungen in Adobe Campaign finden Sie in der [ zu Campaign v8 ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/gs-permissions?lang=en#_blank){target=_blank}.
 
-* Sie können Benutzergruppen bestimmen, denen Sie Berechtigungen einräumen, und dann die Benutzerinnen und Benutzer einer oder mehreren Gruppen zuweisen. Diese Vorgehensweise ermöglicht die Wiederverwendung von Rechten und eine Vereinheitlichung der Benutzerprofile. Außerdem wird dadurch die Verwaltung und Pflege von Profilen erleichtert. Die Erstellung und Verwaltung von Gruppen wird in [diesem Abschnitt](access-management-groups.md) näher beschrieben.
+[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/gs-permissions?lang=en#_blank){target=_blank}
 
-* Sie können den Benutzern direkt spezifische Berechtigungen einräumen, gegebenenfalls, um über Gruppen eingeräumte Berechtigungen zu überschreiben. Diese Rechte werden auf [dieser Seite](access-management-named-rights.md) näher beschrieben.
+>[!TAB Verwalten des Ordnerzugriffs]
+
+Weitere Informationen zum Zugriff auf Ordner und deren Verwaltung finden Sie in der Dokumentation zu [Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/folder-permissions?lang=en#_blank){target=_blank}.
+
+[![Bild](../../assets/do-not-localize/learn-more-button.svg)]([![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/gs-permissions?lang=en#_blank){target=_blank}){target=_blank}
+
+>[!ENDTABS]
+
+<!--
+The permissions apply to operator profiles or operator groups.
+
+They are completed by safety parameters linked to the operator's connection mode to Adobe Campaign. For more about security zones in [this page](../../installation/using/security-zones.md).
+
+There are two types of permissions you can grant to a user:
+
+* You can define groups of operators to which you attribute rights, then associate the operators with one or more groups. This enables you to reuse rights and make operator profiles more consistent. It also facilitates the management and maintenance of profiles. Group creation and management are presented in [this section](access-management-groups.md).
+
+* You can attribute named rights directly to users, in some cases to overload the rights allocated via groups. These rights are presented in [this page](access-management-named-rights.md).
 
 >[!NOTE]
 >
-> * Adobe empfiehlt, vor der Definition von Berechtigungen die [Checkliste zur Sicherheitskonfiguration](https://experienceleague.adobe.com/de/docs/campaign-classic/using/installing-campaign-classic/security-privacy/get-started-security-privacy) zu lesen.
-> * Weitere Informationen zu Berechtigungen finden Sie in der ausführlichen Erklärung in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/admin/permissions/gs-permissions){target=_blank}.
-
-<!--
+> * Before starting defining permissions, Adobe recommends you to read the [Security configuration checklist](https://helpx.adobe.com/campaign/kb/acc-security.html).
+> * To learn more about permissions, please refer to the detailed explanation on the [Campaign v8 documentation](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/gs-permissions){target=_blank}.
 
 Learn how to grant access and set up permissions in these sections:
 
