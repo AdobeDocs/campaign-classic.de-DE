@@ -6,9 +6,9 @@ feature: Cross Channel Orchestration, Email, SMS, In App, Direct Mail, Push
 role: User
 exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
 source-git-commit: d3d731c64cb5a430de6adac3aeb326f74134c436
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '978'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Mit Adobe Campaign können Sie Cross-Channel-Kampagnen wie E-Mails, SMS, Push-Be
 
 Zu den Kernfunktionen zählen Zielgruppenbestimmung, Definition und Personalisierung von Nachrichten, Ausführung der Kommunikation und die damit verbundenen operativen Berichte.
 
-Im Rahmen der Promotion-Initiative für Campaign v8 wurde die Dokumentation zu Campaign Classic neu strukturiert. Allgemeine Funktionen sind jetzt nur noch im Dokumentationssatz zu Campaign v8 verfügbar.
+Im Rahmen der Promotion-Initiative für Campaign v8 wurde die Dokumentation zu Campaign Classic neu strukturiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar.
 
 
 
@@ -26,24 +26,24 @@ Im Rahmen der Promotion-Initiative für Campaign v8 wurde die Dokumentation zu C
 
 >[!TAB Dokumentation zu Kommunikationskanälen]
 
-Weitere Informationen zu Kommunikationskanälen finden Sie in der [ zu Campaign v8 ](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/gs-message){target=_blank}.
+Weitere Informationen zu Kommunikationskanälen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/gs-message){target=_blank}.
 
 
 [![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/gs-message){target=_blank}
 
 
->[!TAB Versandinhalt und Zielgruppe]
+>[!TAB Versandinhalt und -zielgruppe]
 
-Die wichtigsten Schritte zur Versanderstellung, zu Inhalten und zur Audience finden Sie in der Dokumentation zu Campaign v8:
+Die wichtigsten Informationen zu Erstellung, Inhalt und Zielgruppe eines Versands finden Sie in der Dokumentation zu Campaign v8:
 
 * [Erstellen des Versands](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/create-message#create-the-delivery){target="_blank"}: Auf dieser Seite erfahren Sie, wie Sie einen einmaligen Versand erstellen. 
 * [Definieren des Inhalts](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/create-message#content-of-the-delivery){target="_blank"}: Konfigurieren Sie den spezifischen Versandinhalt für jeden Kanal.
 * [Angeben der Zielgruppe](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/create-message#target-population){target="_blank"}: Definieren Sie verschiedene Typen von Zielgruppen: Hauptzielgruppe, Testversand-Zielgruppe, Testadressen und Kontrollgruppen.
 
 
->[!TAB Versandvalidierung und -versand]
+>[!TAB Versandvalidierung und -durchführung]
 
-Auf diesen Seiten erfahren Sie mehr über die Validierung, das Senden und die Best Practices für den Versand in der Dokumentation zu Campaign v8:
+Auf diesen Seiten in der Dokumentation zu Campaign v8 erfahren Sie mehr über die Validierung und das Durchführen eines Versands sowie die Best Practices diesbezüglich:
 
 * [Validieren des Versands](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/create-message#validate-the-delivery){target="_blank"}: Erfahren Sie, wie Sie den Versand vor dem Senden an die Hauptzielgruppe validieren.
 * [Durchführen des Versands](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/create-message#configuring-and-sending-the-delivery){target="_blank"}: Konfigurieren Sie die Versandeinstellungen und definieren Sie, wie Ihre Nachrichten gesendet werden sollen.
@@ -55,7 +55,7 @@ Die folgenden Einstellungen sind spezifisch für Campaign Classic. Weitere Infor
 
 +++ **Versandanalyse**
 
-**Verbessern der Versandanalyse-Performance**
+**Verbessern der Leistung der Versandanalyse**
 
 Um die Sendungsvorbereitung zu beschleunigen, können Sie vor dem Starten der Analyse die Option **[!UICONTROL Versandteile in der Datenbank vorbereiten]** aktivieren.
 
@@ -68,7 +68,7 @@ Diese Option ist derzeit nur verfügbar, wenn folgende Bedingungen erfüllt sind
 * Eine Population, die aus einer externen Datei stammt, kann nicht Zielgruppe sein. Klicken Sie für einen einzelnen Versand in den **[!UICONTROL E-Mail-Parametern]** auf den Link **[!UICONTROL An]** und stellen Sie sicher, dass die Option **[!UICONTROL Von der Datenbank ausgehend definiert]** aktiviert ist. Achten Sie bei einem Versand, der in einem Workflow verwendet wird, darauf, dass bei den Empfängern **[!UICONTROL Werden durch die Eingangsereignisse angegeben]** auf dem Tab **[!UICONTROL Versand]** markiert ist.
 * Sie müssen eine PostgreSQL-Datenbank verwenden.
 
-**Analysepriorität konfigurieren**
+**Konfigurieren der Analysepriorität**
 
 Wenn Ihr Versand Teil einer Kampagne ist, bietet der **[!UICONTROL Erweitert]**-Tab eine zusätzliche Option, die die Hierarchisierung der Sendungen innerhalb der Kampagne ermöglicht.
 
@@ -86,9 +86,9 @@ Einem großen Versand sollte also vorzugsweise eine niedrige Priorität zugewies
 
 +++
 
-+++ **Versand**
++++ **Durchführen eines Versands**
 
-**Konfigurieren von weiteren Zustellversuchen**
+**Konfigurieren weiterer Zustellversuche**
 
 Vorübergehend nicht zustellbare Nachrichten aufgrund eines **Softbounce** oder eines **ignorierten Fehlers** werden automatisch für einen erneuten Versuch vorgesehen. Die Typen und Ursachen für fehlgeschlagene Sendungen finden Sie in diesem [Abschnitt](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
 
@@ -126,7 +126,7 @@ Nach dem Start des Versands können die Nachrichten (und alle weiteren Zustellve
 
    Learn how to create a one-shot single delivery. You can create other types of deliveries to build your use cases. 
 
-For more information about the different types of deliveries and how to create them, refer to the [Campaign v8 documentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=de){target="_blank"}. 
+For more information about the different types of deliveries and how to create them, refer to the [Campaign v8 documentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}. 
 
 >[!NOTE]
 >

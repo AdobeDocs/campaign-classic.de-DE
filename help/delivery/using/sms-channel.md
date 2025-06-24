@@ -6,9 +6,9 @@ feature: SMS
 role: User
 exl-id: 6fc2ab09-8ea7-4865-88ad-bd45eee68958
 source-git-commit: d3d731c64cb5a430de6adac3aeb326f74134c436
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '370'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
@@ -16,25 +16,25 @@ ht-degree: 68%
 
 Verwenden Sie Adobe Campaign, um Textnachrichten an die Mobilgeräte Ihrer Kundinnen und Kunden zu senden. Im SMS-Editor können Sie Nachrichten im Textformat erstellen, personalisieren und in der Vorschau anzeigen.
 
-SMS ist ein direkter und höchst effektiver Kanal, um Ihre Benutzer überall zu erreichen. Mit hohen Öffnungsraten und einem nahezu sofortigen Versand ist SMS ideal für zeitkritische Warnhinweise, Transaktions-Updates und knappe Werbenachrichten. Verwenden Sie SMS, um Ihre kanalübergreifende Strategie zu ergänzen und eine wirkungsvolle Echtzeit-Kommunikation bereitzustellen. In der [Dokumentation zu Adobe Campaign v8 erfahren Sie, wie Sie den SMS-Kanal effektiv konfigurieren und ](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/sms/sms){target=_blank}.
+SMS ist ein direkter und höchst effektiver Kanal, um Ihre Benutzenden überall zu erreichen. Mit hohen Öffnungsraten und einem nahezu sofortigen Versand ist SMS ideal für zeitkritische Warnhinweise, Transaktions-Updates und kurze Werbenachrichten. Verwenden Sie SMS, um Ihre kanalübergreifende Strategie zu ergänzen und eine wirkungsvolle Echtzeit-Kommunikation bereitzustellen. In der [Dokumentation zu Adobe Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/sms.html?lang=de){target=_blank} erfahren Sie, wie Sie den SMS-Kanal effektiv konfigurieren und verwenden.
 
-Im Rahmen der Promotion-Initiative für Campaign v8 wurde die Dokumentation zu Campaign Classic neu strukturiert. Allgemeine Funktionen sind jetzt nur noch im Dokumentationssatz zu Campaign v8 verfügbar.
+Im Rahmen der Promotion-Initiative für Campaign v8 wurde die Dokumentation zu Campaign Classic neu strukturiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar.
 
 >[!BEGINTABS]
 
 >[!TAB Dokumentation zum SMS-Kanal]
 
-Weitere Informationen zum SMS-Kanal finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/sms/sms){target=_blank}.
+Weitere Informationen zum SMS-Kanal finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/sms.html?lang=de){target=_blank}.
 
 
-[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/sms/sms){target=_blank}
+[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/sms.html?lang=de){target=_blank}
 
 
 >[!TAB Erstellung eines SMS-Versands]
 
 Die wichtigsten Schritte zur Erstellung eines SMS-Versands finden Sie in der Dokumentation zu Campaign v8:
 
-* [SMS-Kanal – Überblick](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/sms/sms){target="_blank"}: Erfahren Sie, wie Sie Textnachrichten an die Mobilgeräte Ihrer Kundinnen und Kunden senden können.
+* [SMS-Kanal – Überblick](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/sms.html?lang=de){target="_blank"}: Erfahren Sie, wie Sie Textnachrichten an die Mobilgeräte Ihrer Kundinnen und Kunden senden können.
 * [Erstellen eines SMS-Versands](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/sms/create-sms/create-sms){target="_blank"}: Entdecken Sie die verschiedenen Schritte, die zum Erstellen eines neuen SMS-Versands erforderlich sind.
 * [Definieren des Inhalts](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/sms/create-sms/sms-content){target="_blank"}: Erfahren Sie, wie Sie den Inhalt Ihrer SMS-Nachrichten personalisieren können.
 * [Auswählen der Zielgruppe](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/sms/create-sms/sms-audience){target="_blank"}: Die Hauptzielgruppe wird aus der Adobe Campaign-Datenbank extrahiert. Sie kann auch in einer externen Datei gespeichert werden.

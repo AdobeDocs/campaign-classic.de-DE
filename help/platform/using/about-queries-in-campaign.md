@@ -8,9 +8,9 @@ role: User, Data Architect
 level: Beginner
 exl-id: 2db1034d-cad6-4fb0-8646-dd9099080ab0
 source-git-commit: 471018f09e5a14635fcce07aeca1e2cf48d9144f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '226'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -30,15 +30,15 @@ Abfragen werden entweder mit den in der ausgewählten Tabelle enthaltenen Felder
 
 >[!TAB Dokumentation zu Abfragen]
 
-Weitere Informationen zu Abfragen finden Sie in der [ zu Campaign v8.](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/wf-activities/activities){target=_blank}
+Weitere Informationen zu Abfragen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/wf-activities/activities){target=_blank}.
 
 
 [![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/wf-activities/activities){target=_blank}
 
 
->[!TAB Abfrage erstellen]
+>[!TAB Erstellen einer Abfrage]
 
-Die wichtigsten Schritte zur Erstellung von Abfragen finden Sie in der [ zu Campaign v8 ](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}.
+Die wichtigsten Schritte zur Erstellung einer Abfrage finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}.
 
 [![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}
 
