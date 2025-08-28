@@ -3,11 +3,13 @@ product: campaign
 title: 'Technote: Aktualisieren Ihrer Umgebung zur Verbindung von Adobe Campaign mit IMS'
 description: Campaign – IMS-Aktualisierungen
 feature: Technote, Upgrade
+hide: true
+hidefromtoc: true
 exl-id: ecb5a258-a150-46a3-8b83-2b2c06d873ee
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 62fc46e45078fce56eadda3518251e61244bf5d0
 workflow-type: tm+mt
 source-wordcount: '562'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -19,11 +21,11 @@ Am 30. Juni 2021 wurden Änderungen an den Anmeldefunktionen des [Adobe Identity
 
 ## Was hat sich geändert?
 
-Adobe Identity Service (IMS) beendete am **30. Juni 2021** die Unterstützung alter Internet Explorer-Versionen. [Weitere Informationen](https://helpx.adobe.com/de/x-productkb/global/update-operating-system-and-browser.html).
+Adobe Identity Service (IMS) stoppte am **30. Juni 2021** die Unterstützung alter Internet Explorer-Versionen. [Weitere Informationen](https://helpx.adobe.com/de/x-productkb/global/update-operating-system-and-browser.html).
 
 Adobe möchte die IMS-Funktionalität für alle Kunden ab dem 30. Juni 2021 beibehalten. IMS ist Teil des Sicherheits-Frameworks, das es Benutzern ermöglicht, sich bei der Client-Konsole anzumelden, also bei Adobe Campaign.
 
-Um diese Funktion beizubehalten, müssen Kunden die Client-Konsole auf jedem Benutzer-Computer aktualisieren und sicherstellen, dass die neueste Aktualisierung Ihrer [Windows-Version](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems) mit **Internet Explorer 11** auf dem Computer jedes Benutzers installiert ist.
+Um diese Funktion beizubehalten, müssen Kunden die Client-Konsole auf jedem Benutzer-Computer aktualisieren und sicherstellen, dass das neueste Update Ihrer [Windows-Version](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems) mit **Internet Explorer 11** auf dem Computer jedes Benutzers installiert ist.
 
 ## Sind Sie betroffen?
 

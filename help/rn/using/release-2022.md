@@ -5,11 +5,13 @@ description: Weiterführende Informationen zu Campaign Classic-Versionen 2022
 feature: Release Notes
 role: User
 level: Beginner
+hide: true
+hidefromtoc: true
 exl-id: 28490323-41d0-4d61-b309-6892fb826d21
-source-git-commit: 668cee663890fafe27f86f2afd3752f7e2ab347a
+source-git-commit: 62fc46e45078fce56eadda3518251e61244bf5d0
 workflow-type: tm+mt
-source-wordcount: '2102'
-ht-degree: 100%
+source-wordcount: '2101'
+ht-degree: 99%
 
 ---
 

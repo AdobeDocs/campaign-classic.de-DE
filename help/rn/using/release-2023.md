@@ -5,11 +5,13 @@ description: Weiterführende Informationen zu Campaign Classic-Versionen 2023
 feature: Release Notes
 role: User
 level: Beginner
+hide: true
+hidefromtoc: true
 exl-id: 8ed11e96-9f23-4e2e-bae2-25c51cfb549a
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 62fc46e45078fce56eadda3518251e61244bf5d0
 workflow-type: tm+mt
-source-wordcount: '2337'
-ht-degree: 100%
+source-wordcount: '2336'
+ht-degree: 99%
 
 ---
 
@@ -79,7 +81,7 @@ _7. September 2023_
 * Das externe BigQuery-Konto wurde um neue Optionen zur Einrichtung des GCloud-SDK erweitert. (NEO-63879) [Mehr dazu](../../installation/using/configure-fda-google-big-query.md#google-external)
 * Es wurde ein neuer `cusHeader`-Abschnitt zur Server-Konfigurationsdatei (serverConf.xml) hinzugefügt. Damit können benutzerdefinierte Kopfzeilen hinzufügt werden, wenn eine Datei von einem externen Server hochgeladen wird. (NEO-58339) [Mehr dazu](../../installation/using/the-server-configuration-file.md#cusheaders).
 * Die Verwaltung des Trackinglogs wurde verbessert, um negative IDs für lastMsgId zu vermeiden. Es wurde von int32 in int64 geändert. (NEO-52290)
-* Der native Mid-Sourcing (Versandstatistiken)-Workflow wurde hinzugefügt. Dieser neue Workflow synchronisiert Versandstatistikdaten (nms:deliveryStat) von der Mid- bis zur Marketing-Instanz. (NEO-36802)
+* Der native Mid-Sourcing (Versandstatistiken)-Workflow wurde hinzugefügt. Dieser neue Workflow synchronisiert Versandstatistikdaten (nms:deliveryStat) von der MID zur Marketing-Instanz. (NEO-36802)
 
 ### Patches {#release-7-3-4-patches}
 
