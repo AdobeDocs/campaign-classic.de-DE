@@ -7,9 +7,9 @@ hide: true
 hidefromtoc: true
 exl-id: ecb5a258-a150-46a3-8b83-2b2c06d873ee
 source-git-commit: 62fc46e45078fce56eadda3518251e61244bf5d0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '562'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Adobe Identity Service (IMS) stoppte am **30. Juni 2021** die Unterstützung alt
 
 Adobe möchte die IMS-Funktionalität für alle Kunden ab dem 30. Juni 2021 beibehalten. IMS ist Teil des Sicherheits-Frameworks, das es Benutzern ermöglicht, sich bei der Client-Konsole anzumelden, also bei Adobe Campaign.
 
-Um diese Funktion beizubehalten, müssen Kunden die Client-Konsole auf jedem Benutzer-Computer aktualisieren und sicherstellen, dass das neueste Update Ihrer [Windows-Version](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems) mit **Internet Explorer 11** auf dem Computer jedes Benutzers installiert ist.
+Wenn diese Funktion beibehalten werden soll, muss die Client-Konsole auf jedem Benutzer-Computer aktualisiert werden. Außerdem müssen Sie sicherstellen, dass die neueste Aktualisierung Ihrer [Windows-Version](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems) mit **Internet Explorer 11** auf den Computern aller Benutzenden installiert ist.
 
 ## Sind Sie betroffen?
 
@@ -49,7 +49,7 @@ Wenn Sie bereits ein Upgrade durchgeführt haben, aber eine alte Version von Mic
 
   Diese Versionen enthalten ein neues Verbindungsprotokoll. Ein Upgrade ist sowohl für den Campaign-Server als auch für die Client-Konsole erforderlich: Nachdem alle Instanzen ein Upgrade erhalten haben, muss die Client-Konsole auf diese Version aktualisiert werden, damit nach dem **30. Juni 2021** eine Verbindung zu Campaign hergestellt werden kann.
 
-Stellen Sie außerdem sicher, dass das neueste Update Ihrer [Windows-Version](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems) mit **Internet Explorer 11** auf dem Computer jedes Benutzers installiert ist.
+Stellen Sie außerdem sicher, dass das neueste Update Ihrer [Windows-Version](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems) mit **Internet Explorer 11** auf den Computern aller Benutzenden installiert ist.
 
 ## Häufig gestellte Fragen
 

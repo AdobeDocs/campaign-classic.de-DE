@@ -7,9 +7,9 @@ hide: true
 hidefromtoc: true
 exl-id: f426bf02-9899-49eb-b699-728d51b57c64
 source-git-commit: 3ffa32fbaa588904b79a1343c39f5b5b5f2b134f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '443'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -63,4 +63,4 @@ Jedes eingehende Ereignis muss eine durch diese Parameter definierte Zielgruppe 
 * schema
 * recCount
 
-Anhand der drei Werte lässt sich die durch die Schnittmenge ermittelte Zielgruppe identifizieren. **[!UICONTROL tableName]** ist der Name der Tabelle, die die Zielkennungen aufzeichnet, **[!UICONTROL schema]** ist das Schema der Population (normalerweise **[!UICONTROL nms:recipient]**) und **[!UICONTROL recCount]** die Anzahl der Elemente in der Tabelle.
+Anhand der drei Werte lässt sich die durch die Schnittmenge ermittelte Zielgruppe identifizieren. **[!UICONTROL tableName]** ist der Name der Tabelle, die die Zielgruppenidentifizierungen enthält, **[!UICONTROL schema]** ist das Schema der Population, (i. d. R. **[!UICONTROL nms:recipient]**) und **[!UICONTROL recCount]** ist die Anzahl an Elementen in der Tabelle.

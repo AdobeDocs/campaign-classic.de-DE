@@ -9,9 +9,9 @@ hide: true
 hidefromtoc: true
 exl-id: 28490323-41d0-4d61-b309-6892fb826d21
 source-git-commit: 62fc46e45078fce56eadda3518251e61244bf5d0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2101'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -147,7 +147,7 @@ Adobe Campaign ist jetzt mit Windows Server 2019 kompatibel. Weitere Information
 **Sonstige Änderungen**
 
 * Nach der Einstellung wurden die Aktionsaktivitäten von Microsoft CRM, Salesforce und Oracle CRM On Demand aus der Benutzeroberfläche entfernt. Um die Datensynchronisation zwischen Adobe Campaign und einem CRM-System zu konfigurieren, können Sie die Aktivität &quot;CRM-Connector&quot; verwenden. [Mehr dazu](../../workflow/using/crm-connector.md)
-* Das Feld **[!UICONTROL Verschlüsselte Kennung]** wurde zum Besucherschema hinzugefügt (nms:visitor). Dieses Feld wird berechnet und ist für Web-Programme vorgesehen. Dies gilt, wenn der Kanal &quot;Line&quot; in der Mid-Sourcing-Instanz konfiguriert ist.
+* Das Feld **[!UICONTROL Verschlüsselte Kennung]** wurde dem Besucherschema hinzugefügt (nms:visitor). Dieses Feld wird berechnet und ist für Web-Programme vorgesehen. Dies gilt, wenn der Kanal &quot;Line&quot; in der Mid-Sourcing-Instanz konfiguriert ist.
 * CRM-Datenquellen können jetzt mit der Aktivität **Datenquelle ändern** verwendet werden.
 * Eine neue Option wurde in den Eigenschaften zum **Umgang mit Fehlern** bei Workflow-Aktivitäten ergänzt: Die Option **Abbruch bei Fehler** sorgt dafür, dass der Workflow automatisch angehalten wird. Danach können Sie ihn nicht mehr neu starten (NEO-29661). [Mehr dazu](../../workflow/using/advanced-parameters.md#in-case-of-errors)
 * Die Primärschlüssel der nmsGroup-Tabelle, die zur Erstellung statistischer Empfängergruppen verwendet wird, werden jetzt in einer speziellen Sequenz erzeugt. Zuvor wurde die Sequenz &quot;xtknewId&quot; verwendet. (NEO-30832)
