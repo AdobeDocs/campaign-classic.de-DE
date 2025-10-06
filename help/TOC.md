@@ -6,9 +6,9 @@ title: Campaign Classic v7 – Handbuch
 user-guide-description: Produktdokumentation für Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: d3d731c64cb5a430de6adac3aeb326f74134c436
-workflow-type: ht
-source-wordcount: '2569'
+source-git-commit: faed7f54dc72937b24ee1ece80d17150a513fa39
+workflow-type: tm+mt
+source-wordcount: '2565'
 ht-degree: 100%
 
 ---
@@ -37,6 +37,7 @@ ht-degree: 100%
          + [Erste Schritte mit der Campaign-Benutzeroberfläche](platform/using/adobe-campaign-workspace.md)
          + [Campaign-Explorer verwenden](platform/using/adobe-campaign-explorer.md)
          + [Durchsuchen und Anpassen von Listen](platform/using/adobe-campaign-ui-lists.md)
+         + [Aufzählungen](platform/using/managing-enumerations.md)
       + [Campaign-Connectoren](platform/using/about-connectors.md)
       + Häufig gestellte Fragen {#faq}
          + [Die häufigsten Fragen](platform/using/common-questions.md)
@@ -99,9 +100,6 @@ ht-degree: 100%
       + [Gruppen erstellen und verwalten](platform/using/access-management-groups.md)
       + [Verwenden spezifischer Berechtigungen zum Einrichten von Zugriffsberechtigungen](platform/using/access-management-named-rights.md)
       + [Zugriff auf Ordner verwalten](platform/using/access-management-folders.md)
-   + Daten-Packages und Auflistungen {#administration-basics}
-      + [Daten-Packages](platform/using/working-with-data-packages.md)
-      + [Auflistungen](platform/using/managing-enumerations.md)
    + CRM-Connectoren {#connectors}
       + [Erste Schritte mit CRM-Connectoren](platform/using/crm-connectors.md)
       + [Verbinden mit Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
@@ -122,7 +120,7 @@ ht-degree: 100%
       + [Optimieren des Versands](delivery/using/optimize-delivery.md)
       + [Vorlagen verwenden](delivery/using/use-templates.md)
       + [Erstellen personalisierter Inhalte](delivery/using/design-and-personalize.md)
-      + [Festlegen der richtigen Audience](delivery/using/define-the-right-audience.md)
+      + [Festlegen der richtigen Zielgruppe](delivery/using/define-the-right-audience.md)
       + [Vor dem Senden prüfen](delivery/using/check-before-sending.md)
       + [Tracken und überwachen](delivery/using/track-and-monitor.md)
    + [Senden von E-Mails](delivery/using/about-email-channel.md)
@@ -247,7 +245,7 @@ ht-degree: 100%
       + [Erste Schritte mit Marketing-Kampagnen](campaign/using/setting-up-marketing-campaigns.md)
       + [Vorlagen erstellen und konfigurieren](campaign/using/marketing-campaign-templates.md)
       + [Sendungen hinzufügen](campaign/using/marketing-campaign-deliveries.md)
-      + [Audience auswählen](campaign/using/marketing-campaign-target.md)
+      + [Zielgruppe auswählen](campaign/using/marketing-campaign-target.md)
       + [Dokumente und Assets verwalten](campaign/using/marketing-campaign-assets.md)
       + [Genehmigungen einrichten und verwalten](campaign/using/marketing-campaign-approval.md)
       + [Kampagnen überwachen](campaign/using/marketing-campaign-monitoring.md)
@@ -332,7 +330,7 @@ ht-degree: 100%
       + [Anwendungsfall: Erstellen eines E-Mail-Versands](web/using/use-case-creating-an-email-delivery.md)
    + Web-Formulare {#web-forms}
       + [Erste Schritte mit Web-Formularen](web/using/about-web-forms.md)
-      + [Verwenden einer Web-Formular-Vorlage](web/using/using-a-web-form-template.md)
+      + [Verwenden einer Web-Formularvorlage](web/using/using-a-web-form-template.md)
       + [Felder zu einem Web-Formular hinzufügen](web/using/adding-fields-to-a-web-form.md)
       + [Statische Elemente in einem Web-Formular](web/using/static-elements-in-a-web-form.md)
       + [Layout eines Web-Formulars definieren](web/using/defining-web-forms-layout.md)
@@ -363,17 +361,17 @@ ht-degree: 100%
       + [Fehlerbehebung bei Pipelines](integrations/using/pipeline-troubleshooting.md)
    + Adobe Experience Platform-Quellen und -Ziele {#aep-sources-destinations}
       + [Arbeiten mit Quellen und Zielen](integrations/using/get-started-sources-destinations.md)
-      + [Adobe Experience Platform-Audiences in Campaign aufnehmen](integrations/using/ingest-aep-data.md)
+      + [Adobe Experience Platform-Zielgruppen in Campaign aufnehmen](integrations/using/ingest-aep-data.md)
       + [Daten von Campaign nach Adobe Experience Platform exportieren](integrations/using/export-campaign-data.md)
    + Adobe Analytics-Connector{#analytics-connector}
       + [Erste Schritte mit dem Adobe Analytics Connector](integrations/using/gs-aa.md)
       + [Bereitstellung des Adobe Analytics Connectors](integrations/using/adobe-analytics-provisioning.md)
    + Zielgruppenfreigabe {#audience-sharing}
-      + [Audiences freigeben für [!DNL Adobe Experience Cloud]](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
+      + [Zielgruppen freigeben für [!DNL Adobe Experience Cloud]](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
       + [Anfrage an Adobe übermitteln](integrations/using/submitting-request-to-adobe.md)
-      + [Integration mit freigegebenen Audiences konfigurieren in [!DNL Adobe Campaign]](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
+      + [Integration mit freigegebenen Zielgruppen konfigurieren in [!DNL Adobe Campaign]](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
       + [Fehlerbehebung](integrations/using/troubleshooting.md)
-      + [Importieren und Exportieren von Audiences](integrations/using/importing-and-exporting-audiences.md)
+      + [Importieren und Exportieren von Zielgruppen](integrations/using/importing-and-exporting-audiences.md)
    + Asset-Freigabe {#asset-sharing}
       + [Freigeben von Assets für [!DNL Adobe Experience Cloud]](integrations/using/sharing-assets-with-adobe-experience-cloud.md)
       + [Konfiguration des Zugriffs auf  [!DNL Assets]](integrations/using/configuring-access-to-assets.md)
@@ -389,7 +387,7 @@ ht-degree: 100%
    + ACS-Connector {#acs-connector}
       + [Erste Schritte mit [!DNL ACS Connector]](integrations/using/acs-connector-principles-and-data-cycle.md)
       + [Profile synchronisieren](integrations/using/synchronizing-profiles.md)
-      + [Audiences synchronisieren](integrations/using/synchronizing-audiences.md)
+      + [Zielgruppen synchronisieren](integrations/using/synchronizing-audiences.md)
       + [Web-Anwendungen synchronisieren](integrations/using/synchronizing-web-applications.md)
       + [Fehlerbehebung bei [!DNL ACS Connector]](integrations/using/troubleshooting-the-acs-connector.md)
 + [Automatisieren mit Workflows](workflow/using/about-workflow-automation.md)
@@ -495,7 +493,7 @@ ht-degree: 100%
       + [Durchführen von Aggregat-Berechnungen](workflow/using/performing-aggregate-computing.md)
       + [Abfrage mit Gruppierungsverwaltung](workflow/using/querying-using-grouping-management.md)
       + [Abfrage mit einer n:n-Beziehung](workflow/using/querying-using-many-to-many-relationship.md)
-      + [Hinzufügen eines berechneten Auflistungsfelds](workflow/using/adding-enumeration-type-calculated-field.md)
+      + [Hinzufügen eines berechneten Aufzählungsfelds](workflow/using/adding-enumeration-type-calculated-field.md)
       + [Erstellen von Filtern](workflow/using/creating-a-filter.md)
       + [Filtern doppelter Empfänger](workflow/using/filtering-duplicated-recipients.md)
    + Überwachen von Workflows {#monitoring-workflows}
@@ -514,7 +512,7 @@ ht-degree: 100%
       + [Technische Workflows](workflow/using/about-technical-workflows.md)
 + Verwalten von Angeboten {#managing-offers}
    + Erste Schritte mit Interaction {#interaction-overview}
-      + [Angebote in Interaction](interaction/using/interaction-and-offer-management.md)
+      + [Interaktion und Angebotsverwaltung](interaction/using/interaction-and-offer-management.md)
       + [Glossar](interaction/using/i-glossary.md)
       + [Best Practices für Interaction](interaction/using/interaction-best-practices.md)
    + Allgemeine Funktionsweise {#general-operation}
@@ -738,6 +736,7 @@ ht-degree: 100%
          + [JSP-Verhalten](production/using/jsp-behavior.md)
          + [Speicherort der Tomcat-Version](production/using/locate-tomcat-version.md)
 + Entwicklerhandbuch {#configuring-campaign-classic}
+   + [Daten-Packages](platform/using/working-with-data-packages.md)
    + Datenmodell {#data-model}
       + [Über das Datenmodell](configuration/using/about-data-model.md)
       + [Beschreibung des Datenmodells](configuration/using/data-model-description.md)
@@ -755,7 +754,7 @@ ht-degree: 100%
          + [Bedingung](configuration/using/schema/condition.md)
          + [DB-Index](configuration/using/schema/db-index.md)
          + [Element](configuration/using/schema/element.md)
-         + [Auflistung](configuration/using/schema/enumeration.md)
+         + [Aufzählung](configuration/using/schema/enumeration.md)
          + [Hilfe](configuration/using/schema/help.md)
          + [Join](configuration/using/schema/join.md)
          + [Schlüssel](configuration/using/schema/key.md)
