@@ -29,7 +29,7 @@ Die mit Adobe Campaign versendeten Nachrichten können in verschiedener Hinsicht
 
 Mit Adobe Campaign können Sie Ihre Sendungen personalisieren, um Nachrichten zu senden, die dem Profil und den Interessen jedes Empfängers entsprechen.
 
-Mit Personalization können Sie Ihre Nachrichten relevanter und ansprechender gestalten. Sie können Empfängerdaten verwenden, um Inhalte anzupassen, dynamische Felder hinzuzufügen oder unterschiedliche Informationen auf Grundlage von Bedingungen anzuzeigen. In der [Dokumentation zu Adobe Campaign v8 erfahren Sie, wie Sie Personalisierungsfunktionen in Ihren Sendungen einrichten und ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html){target=_blank}.
+Mit Personalization können Sie Ihre Nachrichten relevanter und ansprechender gestalten. Sie können Empfängerdaten verwenden, um Inhalte anzupassen, dynamische Felder hinzuzufügen oder unterschiedliche Informationen auf Grundlage von Bedingungen anzuzeigen. In der [Dokumentation zu Adobe Campaign v8 erfahren Sie, wie Sie Personalisierungsfunktionen in Ihren Sendungen einrichten und &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html){target=_blank}.
 
 Im Rahmen der Promotion-Initiative für Campaign v8 wurde die Dokumentation zu Campaign Classic neu strukturiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar.
 
@@ -37,7 +37,7 @@ Im Rahmen der Promotion-Initiative für Campaign v8 wurde die Dokumentation zu 
 
 >[!TAB Dokumentation zur Inhaltspersonalisierung]
 
-Weitere Informationen zur Personalisierung von Inhalten finden Sie in der [ zu Campaign v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html){target=_blank}.
+Weitere Informationen zur Personalisierung von Inhalten finden Sie in der [&#x200B; zu Campaign v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html){target=_blank}.
 
 
 [![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html){target=_blank}
