@@ -5,11 +5,13 @@ description: Erfahren Sie, wie Sie Ihre Mobile App für iOS einrichten
 feature: Push
 role: User, Developer
 level: Intermediate, Experienced
+hide: true
+hidefromtoc: true
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
-source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
-workflow-type: ht
-source-wordcount: '674'
-ht-degree: 100%
+source-git-commit: 89e350c727fb9379d28916f79d9749f22fd4974f
+workflow-type: tm+mt
+source-wordcount: '672'
+ht-degree: 95%
 
 ---
 
@@ -58,7 +60,7 @@ Ihr iOS-Connector ist jetzt konfiguriert. Sie können mit dem Einrichten Ihres D
 
    >[!NOTE]
    >
-   >Das standardmäßige Zielgruppen-Mapping für **[!UICONTROL abonnierte Anwendungen (nms:appSubscriptionRcp)]** ist mit der Empfängertabelle verknüpft. Wenn Sie ein anderes Zielgruppen-Mapping verwenden möchten, müssen Sie ein neues Zielgruppen-Mapping erstellen und es im Feld **[!UICONTROL Zielgruppen-Mapping]** des Dienstes eingeben. Weiterführende Informationen zur Erstellung des Zielgruppen-Mappings finden Sie im [Konfigurationshandbuch](../../configuration/using/about-custom-recipient-table.md).
+   >Das standardmäßige **[!UICONTROL Abonnierte Anwendungen (nms:appSubscriptionRcp)]** Zielgruppen-Mapping ist mit der Empfängertabelle verknüpft. Wenn Sie ein anderes Zielgruppen-Mapping verwenden möchten, müssen Sie ein neues Zielgruppen-Mapping erstellen und es im Feld **[!UICONTROL Zielgruppen-Mapping]** des Dienstes eingeben. Weiterführende Informationen zur Erstellung des Zielgruppen-Mappings finden Sie im [Konfigurationshandbuch](../../configuration/using/about-custom-recipient-table.md).
 
    ![](assets/nmac_ios.png)
 
@@ -85,7 +87,7 @@ Im folgenden Beispiel werden **mediaURl** und **mediaExt** hinzugefügt, um Rich
 
    ![](assets/nmac_ios_3.png)
 
-1. Auf dem Tab **[!UICONTROL Abonnementparameter]** können Sie das Mapping mit einer Erweiterung des Schemas **[!UICONTROL Abonnierte Anwendungen (nms:appsubscriptionRcp)]** definieren.
+1. Auf **[!UICONTROL Registerkarte]** Abonnementparameter“ können Sie das Mapping mit einer Erweiterung des Schemas **[!UICONTROL Abonnierte Anwendungen (nms:appsubscriptionRcp)]**.
 
    >[!NOTE]
    >

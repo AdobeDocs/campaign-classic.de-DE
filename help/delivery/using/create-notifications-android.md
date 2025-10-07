@@ -4,11 +4,13 @@ title: Push-Benachrichtigung für Android-Geräte erstellen
 description: Erfahren Sie, wie Sie Push-Benachrichtigungen für Android erstellen.
 feature: Push
 role: User, Developer, Data Engineer
+hide: true
+hidefromtoc: true
 exl-id: 13ccc5d6-4355-42ba-80dc-30a45d3b69a4
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 89e350c727fb9379d28916f79d9749f22fd4974f
 workflow-type: tm+mt
 source-wordcount: '750'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -68,7 +70,7 @@ Auf den Android-Mobilgeräten der Abonnenten sollten das Bild und die Webseite i
 
 ## Erstellen von Benachrichtigungsinhalten {#creating-notification-message}
 
-![](assets/do-not-localize/how-to-video.png) [Erfahren Sie im Video, wie Sie eine Android-Push-Benachrichtigung erstellen](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html?lang=de#additional-resources){target="_blank"}.
+![](assets/do-not-localize/how-to-video.png) [Erfahren Sie in diesem Video, wie Sie eine Android-Push-Benachrichtigung erstellen](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html?lang=de#additional-resources){target="_blank"}.
 
 1. Gehen Sie zu **[!UICONTROL Kampagnenverwaltung]** > **[!UICONTROL Sendungen]**.
 

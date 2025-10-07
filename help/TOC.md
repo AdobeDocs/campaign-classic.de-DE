@@ -6,10 +6,10 @@ title: Campaign Classic v7 – Handbuch
 user-guide-description: Produktdokumentation für Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: faed7f54dc72937b24ee1ece80d17150a513fa39
+source-git-commit: 89e350c727fb9379d28916f79d9749f22fd4974f
 workflow-type: tm+mt
-source-wordcount: '2565'
-ht-degree: 100%
+source-wordcount: '2561'
+ht-degree: 99%
 
 ---
 
@@ -144,8 +144,8 @@ ht-degree: 100%
       + [Erstellen einer SMS](delivery/using/sms-create.md)
       + [Zum erweiterten allgemeinen SMPP-Connector migrieren](delivery/using/unsupported-connector-migration.md)
    + [LINE-Nachrichten senden](delivery/using/line-channel.md)
+   + [Senden von Push-Benachrichtigungen](delivery/using/about-mobile-app-channel.md)
    + Senden von Push-Benachrichtigungen {#sending-push-notifications}
-      + [Erste Schritte mit dem Mobile-App-Kanal](delivery/using/about-mobile-app-channel.md)
       + [Campaign-SDK in die Mobile App integrieren](delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
       + Konfigurieren der App{#configure-the-mobile-app}
          + [Erste Schritte mit der Mobile-App-Konfiguration](delivery/using/get-started-app-config.md)
@@ -155,9 +155,9 @@ ht-degree: 100%
          + [Push-Nachrichten für iOS erstellen](delivery/using/create-notifications-ios.md)
          + [Push-Nachrichten für Android erstellen](delivery/using/create-notifications-android.md)
       + [Fehlerbehebung](delivery/using/troubleshooting.md)
+   + [Senden von Briefpost](delivery/using/about-direct-mail-channel.md)
    + Senden von Briefpost {#sending-direct-mail}
-      + [Über den Briefpost-Kanal](delivery/using/about-direct-mail-channel.md)
-      + [Briefpostversand erstellen](delivery/using/creating-a-direct-mail-delivery.md)
+      + [Erstellen eines Briefpost-Versands](delivery/using/creating-a-direct-mail-delivery.md)
       + [Definieren des Direkt-Mail-Inhalts](delivery/using/defining-the-direct-mail-content.md)
       + [Validieren](delivery/using/validating.md)
    + Verwenden von Versandvorlagen {#using-delivery-templates}

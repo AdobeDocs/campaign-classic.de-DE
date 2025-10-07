@@ -5,8 +5,10 @@ description: Erfahren Sie, wie Sie Briefpostinhalt definieren
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Direct Mail
 role: User
+hide: true
+hidefromtoc: true
 exl-id: 585b2017-9408-4953-8505-2f6d9db8032f
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 89e350c727fb9379d28916f79d9749f22fd4974f
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 100%
@@ -23,7 +25,7 @@ Standardmäßig wird die Extraktionsdatei erstellt und auf dem Server gespeicher
 
 ![](assets/s_ncs_user_mail_delivery_local_file.png)
 
-Bei einem Briefversand wird der Extraktionsinhalt über den Link **[!UICONTROL Extraktionsdateiformat bearbeiten…]** konfiguriert.
+Bei einem Briefpost-Versand wird der Extraktionsinhalt über den Link **[!UICONTROL Extraktionsdateiformat bearbeiten...]** konfiguriert.
 
 ![](assets/s_ncs_user_mail_delivery_format_link.png)
 
