@@ -736,7 +736,7 @@ ht-degree: 99%
          + [JSP-Verhalten](production/using/jsp-behavior.md)
          + [Speicherort der Tomcat-Version](production/using/locate-tomcat-version.md)
 + Entwicklerhandbuch {#configuring-campaign-classic}
-   + [Daten-Packages](platform/using/working-with-data-packages.md)
+   + [Daten-Paket](platform/using/working-with-data-packages.md)
    + Datenmodell {#data-model}
       + [Über das Datenmodell](configuration/using/about-data-model.md)
       + [Beschreibung des Datenmodells](configuration/using/data-model-description.md)
