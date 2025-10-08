@@ -188,9 +188,9 @@ Im folgenden Abschnitt finden Sie Best Practices zur Optimierung der in Adobe Ca
 
   Weitere Informationen hierzu finden Sie je nach Campaign-Version in den folgenden Abschnitten:
 
-  ![](assets/do-not-localize/v7.jpeg)[Dokumentation zu Campaign v7](../../configuration/using/database-mapping.md)
+  ![](assets/do-not-localize/v7.jpeg) [Dokumentation zu Campaign v7](../../configuration/using/database-mapping.md)
 
-  ![](assets/do-not-localize/v8.png)[Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html?lang=de)
+  ![](assets/do-not-localize/v8.png) [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html?lang=de)
 
 ### Funktionen {#functions}
 
