@@ -7,7 +7,7 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: c6dd2709-06e3-4227-bbec-99f3d80144fe
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 192505e1c4d387de55ca18b578b837d237cc0607
 workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 100%
@@ -48,7 +48,7 @@ Im Tab **[!UICONTROL Eignung]** des Angebots werden der Zeitraum, in dem das Ang
 
 ### Angebotszeitraum definieren {#defining-the-eligibility-period-of-an-offer}
 
-Wählen Sie mithilfe der Dropdown-Listen Start und Ende der Verwendung des Angebots aus den Kalendern aus.
+Wählen Sie mithilfe der Dropdown-Listen Start- und Enddatum der Verwendung des Angebots aus den Kalendern aus.
 
 ![](assets/offer_eligibility_create_002.png)
 
@@ -58,7 +58,7 @@ Außerhalb dieses Zeitraums wird das Angebot nicht vom Angebotsmodul ausgewählt
 
 Sie können mithilfe von Filtern die Zielgruppe der Angebote einschränken.
 
-Klicken Sie hierzu auf den Link **[!UICONTROL Abfrage bearbeiten]** und definieren Sie den anzuwendenden Filter. Lesen Sie diesbezüglich auch [diesen Abschnitt](../../platform/using/steps-to-create-a-query.md#step-4---filter-data).
+Klicken Sie hierzu auf den Link **[!UICONTROL Abfrage bearbeiten]** und definieren Sie den anzuwendenden Filter. Weitere Informationen finden Sie in [diesem Abschnitt](../../platform/using/about-adobe-campaign-classic.md).
 
 ![](assets/offer_eligibility_create_003.png)
 
@@ -114,7 +114,7 @@ Gehen Sie wie folgt vor, um eine Gewichtung zu konfigurieren:
 
 ### Übersicht der für ein Angebot konfigurierten Eignungsregeln {#a-summary-of-offer-eligibility-rules}
 
-Im Dashboard des Angebots können Sie auf die Details der Eignungskonfiguration zugreifen.
+Im Dashboard des Angebots können Sie auf eine Zusammenfassung der Eignungsregeln zugreifen.
 
 Klicken Sie hierfür auf den Link **[!UICONTROL Planung und Eignungsregeln des Angebots]**.
 

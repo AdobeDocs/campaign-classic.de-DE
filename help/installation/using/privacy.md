@@ -4,7 +4,7 @@ title: Personalisierung und Datenschutz
 description: Best Practices für die Sicherheit für Datenschutz und Personalisierung
 feature: Installation, Privacy, Privacy Tools, URL Personalization
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 192505e1c4d387de55ca18b578b837d237cc0607
 workflow-type: tm+mt
 source-wordcount: '815'
 ht-degree: 20%
@@ -25,7 +25,7 @@ Wenn Sie personalisierte Links zu Ihrem Inhalt hinzufügen, achten Sie darauf, d
 
 ### Empfehlung
 
-Um zu validieren und sicherzustellen, dass Sie die oben genannten Funktionen nicht verwenden, führen Sie eine Abfrage in der Tracking-URL-Tabelle über [Campaign Generic Query Editor](../../platform/using/steps-to-create-a-query.md) aus oder erstellen Sie einen Workflow mit Filterkriterien in der [Abfrageaktivität](../../workflow/using/query.md).
+Um zu validieren und sicherzustellen, dass Sie die oben genannten Funktionen nicht verwenden, führen Sie eine Abfrage in der Tracking-URL-Tabelle über [Campaign Generic Query Editor](../../platform/using/about-queries-in-campaign.md) aus oder erstellen Sie einen Workflow mit Filterkriterien in der [Abfrageaktivität](../../workflow/using/query.md).
 
 Beispiel:
 
