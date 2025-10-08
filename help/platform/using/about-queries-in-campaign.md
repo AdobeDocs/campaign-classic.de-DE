@@ -29,10 +29,10 @@ Der generische Abfrage-Editor zentralisiert alle Abfragefunktionen. Sie ermögli
 
 >[!TAB Datenbank abfragen]
 
-Die Schritte zum Erstellen einer Abfrage werden in der Dokumentation **[Campaign v8 (Konsole)) beschrieben](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/query-editor){target=_blank}**
+Die Schritte zum Erstellen einer Abfrage werden in der Dokumentation **[Campaign v8 (Konsole)) beschrieben](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/data/query/query-editor){target=_blank}**
 
 
-[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/query-editor){target=_blank}
+[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/data/query/query-editor){target=_blank}
 
 
 >[!TAB Abfrage in einem Workflow hinzufügen]
@@ -43,9 +43,9 @@ Die wichtigsten Schritte zur Erstellung von Abfragen im Kontext eines Workflows 
 
 >[!TAB Filterbedingungen]
 
-Um Ihre Abfrage zu entwerfen, müssen Sie die Filterbedingungen im Abfrage-Editor auswählen. Die verfügbaren Funktionen und Anwendungsfälle werden in der Dokumentation zu **[v8 beschrieben](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/filter-conditions){target=_blank}**
+Um Ihre Abfrage zu entwerfen, müssen Sie die Filterbedingungen im Abfrage-Editor auswählen. Die verfügbaren Funktionen und Anwendungsfälle werden in der Dokumentation zu **[v8 beschrieben](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/data/query/filter-conditions){target=_blank}**
 
-[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/filter-conditions){target=_blank}
+[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/data/query/filter-conditions){target=_blank}
 
 >[!ENDTABS]
 
