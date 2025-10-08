@@ -7,9 +7,9 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 98b7c827-f31d-46a6-a28d-40a78a4b4248
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 28279c6ec0eab7f914cf6107cd1ec1cebd05113d
 workflow-type: tm+mt
-source-wordcount: '177'
+source-wordcount: '183'
 ht-degree: 100%
 
 ---
@@ -30,22 +30,23 @@ Gehen Sie wie folgt vor, um Ereignistypen für die Verarbeitung in Adobe Campaig
 
 1. Melden Sie sich bei der **Kontrollinstanz** an.
 
-1. Rufen Sie im Navigationsbaum den Ordner **[!UICONTROL Administration > Plattform > Auflistungen]** auf.
+1. Rufen Sie im Navigationsbaum den Ordner **[!UICONTROL Administration > Plattform > Aufzählungen]** auf.
 
 1. Wählen Sie **[!UICONTROL Ereignistyp]** aus der Liste aus.
 
-1. Klicken Sie auf **[!UICONTROL Hinzufügen]**, um einen Auflistungswert zu erstellen. Hierbei kann es sich um eine Bestellbestätigung, eine Passwortänderung, eine Änderung des Bestellversands usw. handeln.
+1. Klicken Sie auf **[!UICONTROL Hinzufügen]**, um einen Aufzählungswert zu erstellen. Hierbei kann es sich um eine Bestellbestätigung, eine Passwortänderung, eine Änderung des Bestellversands usw. handeln.
 
    ![](assets/messagecenter_eventtype_enum_001.png)
 
    >[!IMPORTANT]
    >
-   >Jeder Ereignistyp muss mit einem Wert in der Auflistung **[!UICONTROL Ereignistyp]** übereinstimmen.
+   >Jeder Ereignistyp muss mit einem Wert in der Aufzählung **[!UICONTROL Ereignistyp]** übereinstimmen.
 
 1. Melden Sie sich nach der Erstellung der Auflistungswerte von Ihrer Instanz ab und wieder an, damit die Änderungen berücksichtigt werden.
 
 >[!NOTE]
 >
->Weiterführende Informationen zu Auflistungen finden Sie unter [Auflistungen verwalten](../../platform/using/managing-enumerations.md).
+>Weitere Informationen zum **Arbeiten mit Aufzählungen** finden Sie in der [Dokumentation zu Adobe Campaign v8 (Konsole)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
+
 
 

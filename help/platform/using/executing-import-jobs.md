@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 05909ea6-2c93-42ff-9142-1dd14fa6fdec
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 28279c6ec0eab7f914cf6107cd1ec1cebd05113d
 workflow-type: tm+mt
-source-wordcount: '3219'
-ht-degree: 100%
+source-wordcount: '3229'
+ht-degree: 99%
 
 ---
 
@@ -37,7 +37,7 @@ Der Import-Assistent wird nach der Erstellung eines neuen Importvorgangs angezei
 
 Jede Zeile der Quelldatei entspricht einem Datensatz. Die einzelnen Daten innerhalb des Datensatzes werden durch Trennzeichen (Leerzeichen, Tabstopp oder andere Zeichen) voneinander abgegrenzt. Die Daten werden somit in Form von Spalten abgerufen und jede Spalte wird einem Datenbankfeld zugeordnet.
 
-## 1. Schritt – Importvorlage auswählen {#step-1---choosing-the-import-template}
+## &#x200B;1. Schritt – Importvorlage auswählen {#step-1---choosing-the-import-template}
 
 Beim Start des Import-Assistenten muss zunächst eine Vorlage ausgewählt werden. Um beispielsweise den Import von Empfangenden zu konfigurieren, die einen Newsletter erhalten haben, gehen Sie folgendermaßen vor:
 
@@ -85,9 +85,10 @@ Der Link **[!UICONTROL Erweiterte Parameter...]** bietet Zugriff auf folgende Op
 
      Diese Option ist standardmäßig ausgewählt. Sie ermöglicht es, den Importprozess separat auszuführen, um keine anderen, zur gleichen Zeit in der Datenbank laufenden Prozesse zu beeinträchtigen.
 
-   * **[!UICONTROL Auflistungen nicht aktualisieren]**
+   * **[!UICONTROL Aufzählungen nicht aktualisieren]**
 
-     Aktivieren Sie diese Option, wenn die Liste der Auflistungswerte in der Datenbank nicht ergänzt werden soll. Siehe [Auflistungen verwalten](../../platform/using/managing-enumerations.md).
+     Aktivieren Sie diese Option, wenn die Liste der Aufzählungswerte in der Datenbank nicht ergänzt werden soll. Weitere Informationen zum **Arbeiten mit Aufzählungen** finden Sie in der [Dokumentation zu Adobe Campaign v8 (Konsole)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
+
 
 * Im Tab **[!UICONTROL Variablen]**
 
@@ -97,7 +98,7 @@ Der Link **[!UICONTROL Erweiterte Parameter...]** bietet Zugriff auf folgende Op
   >
   >Der Tab **[!UICONTROL Variablen]** sollte programmierten Verwendungen vom Typ Workflow sowie erfahrenen Benutzern vorbehalten bleiben.
 
-## 2. Schritt – Quelldatei auswählen {#step-2---source-file-selection}
+## &#x200B;2. Schritt – Quelldatei auswählen {#step-2---source-file-selection}
 
 Die Quelldatei kann entweder in Textformat (TXT, CSV, TAB, feste Spalten) oder in XML vorliegen.
 
@@ -129,7 +130,7 @@ Das Ergebnis der Konfigurationen wird im unteren Teil des Fensters angezeigt.
 
 Klicken Sie auf **[!UICONTROL OK]**, um die Formatierung zu speichern, und anschließend auf **[!UICONTROL Weiter]**.
 
-## 3. Schritt – Felder zuordnen {#step-3---field-mapping}
+## &#x200B;3. Schritt – Felder zuordnen {#step-3---field-mapping}
 
 Wählen Sie nun das Zielschema aus und ordnen Sie die Quellfelder den Datenbankfeldern zu.
 
@@ -165,7 +166,7 @@ Vier verschiedene Feldtypen stehen zur Verfügung:
 * **[!UICONTROL Unveränderliche Zeichenfolge]**: Der Wert des berechneten Feldes ist derselbe für jede Zeile der Quelldatei. Damit können Sie den Wert eines Feldes der eingefügten oder aktualisierten Datensätze festlegen. Sie können beispielsweise für alle importierten Datensätze &quot;Ja&quot; festlegen.
 * **[!UICONTROL Zeichenfolge mit JavaScript-Fusion]**: Das berechnete Feld kombiniert eine Zeichenfolge mit JavaScript-Direktiven.
 * **[!UICONTROL JavaScript-Ausdruck]**: Der Wert des berechneten Felds ist das Ergebnis der Auswertung einer JavaScript-Funktion. Der ausgegebene Wert kann einen bestimmten Typ aufweisen (Ziffer, Datum usw.).
-* **[!UICONTROL Auflistungen]**: Der Wert des Felds wird in Abhängigkeit eines Werts der Quelldatei zugeordnet. Der Editor erlaubt die Angabe der Auflistungswerte je Quellspalte, wie in folgendem Beispiel dargestellt:
+* **[!UICONTROL Aufzählungen]**: Der Wert des Felds wird in Abhängigkeit eines Werts der Quelldatei zugeordnet. Der Editor erlaubt die Angabe der Aufzählungswerte je Quellspalte, wie in folgendem Beispiel dargestellt:
 
   ![](assets/s_ncs_user_import_wizard03_3.png)
 
@@ -173,7 +174,7 @@ Vier verschiedene Feldtypen stehen zur Verfügung:
 
   ![](assets/s_ncs_user_import_wizard03_4.png)
 
-## 4. Schritt – Datensätze abstimmen {#step-4---reconciliation}
+## &#x200B;4. Schritt – Datensätze abstimmen {#step-4---reconciliation}
 
 Der Import-Assistent bietet die Möglichkeit, durch die Angabe von Abstimmkriterien die Art der Zusammenführung von importierten und existierenden Daten sowie Prioritätsregeln zu definieren. Das Konfigurationsfenster sieht wie folgt aus:
 
@@ -233,8 +234,8 @@ Um die Erstellung doppelter Datensätze zu vermeiden, dürfen im Abstimmschlüss
 
 Das Feld **[!UICONTROL Dublettenverwaltung]** dient der Konfiguration der Deduplizierung in Bezug auf Dubletten. Deduplizierung in Bezug auf Dubletten, d. h. Einträge, die wiederholt in der **Quelldatei** (oder den Quelldateien bei einem multiplen Import) vorkommen. Bei Dubletten sind die den Abstimmschlüssel bildenden Felder identisch.
 
-* Im Modus **[!UICONTROL Aktualisieren]** löst die Dublettenverwaltung keine Deduplizierung aus. Dies bedeutet, dass der neueste Datensatz Priorität vor älteren Datensätzen hat. Demzufolge werden Dubletten in diesem Modus nicht gezählt.
-* In den Modi **[!UICONTROL Ignorieren]** oder **[!UICONTROL Entität zurückweisen]** werden Dubletten beim Import durch die Dublettenverwaltung ausgeschlossen, d. h. keiner der wiederholt vorkommenden Datensätze wird importiert.
+* Im Modus **[!UICONTROL Aktualisieren]** löst die Duplikatverwaltung keine Deduplizierung aus. Dies bedeutet, dass der neueste Datensatz Priorität vor älteren Datensätzen hat. Demzufolge werden Duplikate in diesem Modus nicht gezählt.
+* In den Modi **[!UICONTROL Ignorieren]** oder **[!UICONTROL Entität zurückweisen]** werden Duplikate beim Import durch die Duplikatverwaltung ausgeschlossen, d. h. keiner der wiederholt vorkommenden Datensätze wird importiert.
 * Im Modus **[!UICONTROL Entität zurückweisen]** werden die entsprechenden Datensätze nicht importiert und im Importprotokoll wird ein Fehler ausgewiesen.
 * Im Modus **[!UICONTROL Ignorieren]** werden die entsprechenden Datensätze ebenfalls nicht importiert, der Fehler wird jedoch nicht protokolliert. Dies optimiert die Performance der Anwendung.
 
@@ -284,7 +285,7 @@ Der folgende Schritt im Import-Assistenten ermöglicht die Auswahl oder Erstellu
 
 >[!NOTE]
 >
->Dieser Schritt wird nur im Falle eines Empfängerimports unter Verwendung der Standardempfängertabelle **nms:recipient** angezeigt.
+>Dieser Schritt wird nur beim Importieren von Empfängern und bei Verwendung der standardmäßigen Adobe Campaign-Empfängertabelle (**nms:recipient**) angezeigt.
 
 * Klicken Sie auf den **[!UICONTROL Bearbeiten]**-Link, um den Ordner, die Liste oder den Dienst auszuwählen, mit denen die Empfänger verknüpft werden sollen.
 
@@ -332,7 +333,7 @@ Der folgende Schritt im Import-Assistenten ermöglicht die Auswahl oder Erstellu
 
 Klicken Sie auf **[!UICONTROL Weiter]**, um die in diesem Schritt vorgenommenen Konfigurationen zu bestätigen.
 
-## 6. Schritt – Import starten {#step-6---launching-the-import}
+## &#x200B;6. Schritt – Import starten {#step-6---launching-the-import}
 
 Im letzten Schritt des Assistenten wird der Datenimport ausgelöst. Klicken Sie hierfür auf die Schaltfläche **[!UICONTROL Starten]**.
 

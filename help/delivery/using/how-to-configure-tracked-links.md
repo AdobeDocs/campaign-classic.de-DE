@@ -6,10 +6,10 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Monitoring
 role: User, Developer
 exl-id: ed88e1d6-c0d5-4a85-9f3e-be670f4bcc10
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 28279c6ec0eab7f914cf6107cd1ec1cebd05113d
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 100%
+source-wordcount: '614'
+ht-degree: 98%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 Sie haben die Möglichkeit, für jeden Versand die Zustellung und Klicks auf enthaltene Links zu verfolgen. Auf diese Weise kann das Verhalten der Nachrichtenempfänger analysiert werden.
 
-Der Begriff Tracking bezieht sich auf den Umgang der Empfänger mit Nachrichten, während Webtracking das Surf-Verhalten von Empfängern dokumentiert (besuchte Seiten, Bestellungen usw.). Die Konfiguration des Webtrackings wird in [diesem Abschnitt](../../configuration/using/about-web-tracking.md) beschrieben.
+Der Begriff Tracking bezieht sich auf den Umgang der Empfänger mit Nachrichten, während Webtracking das Surf-Verhalten von Empfängern dokumentiert (besuchte Seiten, Käufe usw.). Die Konfiguration des Webtrackings wird in [diesem Abschnitt](../../configuration/using/about-web-tracking.md) beschrieben.
 
 >[!NOTE]
 >
@@ -72,4 +72,4 @@ Das Tracking von Nachrichten ist standardmäßig aktiviert. Um das Tracken von U
    * **[!UICONTROL Opt-out]**: Diese URL wird als Opt-out-URL behandelt.
    * **[!UICONTROL Mirrorseite]**: Diese URL wird als Mirrorseite behandelt.
 
-1. Zusätzlich können Sie für jede getrackte URL in der Dropdown-Liste der Spalte **[!UICONTROL Kategorie]** eine Kategorie auswählen. Diese Kategorien können angezeigte Berichte sein, wie z. B. in **[!UICONTROL URLs und Clickstreams]** (siehe [diesen Abschnitt](../../reporting/using/reports-on-deliveries.md#urls-and-click-streams)). Kategorien werden in einer bestimmten Auflistung definiert: **[!UICONTROL urlCategory]** (siehe [Auflistungen verwalten](../../platform/using/managing-enumerations.md)).
+1. Zusätzlich können Sie für jede getrackte URL in der Dropdown-Liste der Spalte **[!UICONTROL Kategorie]** eine Kategorie auswählen. Diese Kategorien können angezeigte Berichte sein, wie z. B. in **[!UICONTROL URLs und Clickstreams]** (siehe [diesen Abschnitt](../../reporting/using/reports-on-deliveries.md#urls-and-click-streams)). Kategorien werden in einer bestimmten Auflistung definiert. Weitere Informationen zum **Arbeiten mit Aufzählungen** finden Sie in der [Dokumentation zu Adobe Campaign v8 (Konsole)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.

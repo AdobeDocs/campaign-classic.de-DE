@@ -5,10 +5,10 @@ description: Versandberichte
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Reporting, Monitoring
 exl-id: 74feb13f-0994-4a6a-ae4f-2538b07cc9c0
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 28279c6ec0eab7f914cf6107cd1ec1cebd05113d
 workflow-type: tm+mt
-source-wordcount: '1646'
-ht-degree: 100%
+source-wordcount: '1652'
+ht-degree: 99%
 
 ---
 
@@ -36,12 +36,12 @@ Ausgehend von der Versandübersicht stehen diverse Berichte zur Verfügung, die 
    * **[!UICONTROL Trackingstatistiken]**: siehe [Trackingstatistiken](#tracking-statistics).
    * **[!UICONTROL URLs und Clickstreams]**: siehe [URLs und Clickstreams](#urls-and-click-streams).
    * **[!UICONTROL Trackingindikatoren]**: siehe [Trackingindikatoren](#tracking-indicators).
-   * **[!UICONTROL Fehler und Bounces]**: siehe [Fehler und Bounces](../../reporting/using/global-reports.md#non-deliverables-and-bounces).
+   * **[!UICONTROL Unzustellbare Nachrichten und Bounces]**: siehe [Unzustellbare Nachrichten und Bounces](../../reporting/using/global-reports.md#non-deliverables-and-bounces).
    * **[!UICONTROL Nutzer-Aktivitäten]**: siehe [Nutzer-Aktivitäten](../../reporting/using/global-reports.md#user-activities).
    * **[!UICONTROL Versandzusammenfassung]**: siehe [Versandzusammenfassung](#delivery-summary).
    * **[!UICONTROL Abonnement-Verfolgung]**: siehe [Abonnement-Verfolgung](../../reporting/using/global-reports.md#subscription-tracking).
    * **[!UICONTROL Versandstatistiken]**: siehe [Versandstatistiken](../../reporting/using/global-reports.md#delivery-statistics).
-   * **[!UICONTROL Öffnungsverteilung]**: siehe [Öffnungsverteilung](../../reporting/using/global-reports.md#breakdown-of-opens).
+   * **[!UICONTROL Aufschlüsselung der Öffnungen]**: siehe [Aufschlüsselung der Öffnungen](../../reporting/using/global-reports.md#breakdown-of-opens).
 
 ## Tracking-Indikatoren {#tracking-indicators}
 
@@ -76,7 +76,7 @@ Dieser Bericht enthält die wichtigsten Indikatoren, die die Verfolgung des Empf
 
 **[!UICONTROL 3. Öffnungs- und Klickrate]**
 
-Die Tabelle zeigt - aufgeschlüsselt nach Domains - Sendungen, Öffnungen, Klicks und Brutto-Reaktionsraten. Folgende Indikatoren werden angezeigt:
+Die Tabelle zeigt – aufgeschlüsselt nach Domains – Sendungen, Öffnungen, Klicks und Brutto-Reaktionsraten. Folgende Indikatoren werden angezeigt:
 
 * **[!UICONTROL Sendungen]**: Gesamtzahl der an die jeweilige Domain gesandten Nachrichten.
 * **[!UICONTROL Beschwerden]**: Anzahl der Nachrichten, die von den Empfängern als unerwünscht erklärt wurden, in Bezug auf die Gesamtzahl der an die Domain gesendeten Nachrichten.
@@ -86,7 +86,7 @@ Die Tabelle zeigt - aufgeschlüsselt nach Domains - Sendungen, Öffnungen, Klick
 
 >[!NOTE]
 >
->Die in diesem Bericht dargestellten Domain-Namen werden in der auf Cube-Niveau verwendeten Auflistung definiert. Um Standard-Domains zu ändern, hinzuzufügen oder zu entfernen, bearbeiten Sie die **[!UICONTROL Domains]**-Auflistung und passen Sie die Werte und Aliase an. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../platform/using/managing-enumerations.md). Die Kategorie **[!UICONTROL Sonstige]** enthält Domain-Namen, die keinem Auflistungswert entsprechen.
+>Die in diesem Bericht dargestellten Domain-Namen werden in der auf Cube-Niveau verwendeten Auflistung definiert. Um Standard-Domains zu ändern, hinzuzufügen oder zu entfernen, bearbeiten Sie die **[!UICONTROL Domains]**-Auflistung und passen Sie die Werte und Aliase an. Weitere Informationen zum **(Arbeiten mit Auflistungen** finden Sie in der [Dokumentation zu Adobe Campaign v8 (Konsole)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}. Die Kategorie **[!UICONTROL Sonstige]** enthält Domain-Namen, die keinem Auflistungswert entsprechen.
 
 **[!UICONTROL 4. Erzeugte Clickstreams]**
 
@@ -143,9 +143,9 @@ Der mittlere Bereich der Tabelle zeigt folgende Indikatoren:
 * **[!UICONTROL Klicks]**: Anzahl an Klicks insgesamt je Link.
 * **[!UICONTROL Klicks (in %)]**: Prozentualer Anteil der Klicks je Link in Bezug auf die Anzahl an Klicks insgesamt.
 
-**[!UICONTROL Zeitliche Klickverteilung]**
+**[!UICONTROL Zeitliche Klickaufschlüsselung]**
 
-Dieses Diagramm zeigt die Verteilung der Klicks insgesamt nach Tagen.
+Dieses Diagramm zeigt die Aufschlüsselung der Klicks insgesamt nach Tagen.
 
 ## Versandzusammenfassung {#delivery-summary}
 
@@ -162,7 +162,7 @@ Dieser Bereich zeigt zwei Indikatoren:
 
 **[!UICONTROL Ausschlussgründe]**
 
-Das Diagramm in der Mitte veranschaulicht die Verteilung der ausgeschlossenen Nachrichten nach Regeln.
+Das Diagramm in der Mitte veranschaulicht die Aufschlüsselung der ausgeschlossenen Nachrichten nach Regeln.
 
 **[!UICONTROL Versandstatistiken]**
 

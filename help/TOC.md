@@ -6,7 +6,7 @@ title: Campaign Classic v7 – Handbuch
 user-guide-description: Produktdokumentation für Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: b4059e43d98643f0f8b5b3f68f03e10b755e8ba3
+source-git-commit: 28279c6ec0eab7f914cf6107cd1ec1cebd05113d
 workflow-type: tm+mt
 source-wordcount: '2559'
 ht-degree: 99%
@@ -39,16 +39,16 @@ ht-degree: 99%
    + [Campaign-Connectoren](platform/using/about-connectors.md)
    + Häufig gestellte Fragen {#faq}
       + [Die häufigsten Fragen](platform/using/common-questions.md)
-         + [Globale Konzepte](platform/using/faq-key-concepts.md)
-         + [Build-Upgrade](platform/using/faq-build-upgrade.md)
-         + [Datenschutz](platform/using/privacy-faq.md)
-         + [Zielgruppen](platform/using/faq-audiences.md)
-         + [Erstellen von Nachrichten](platform/using/faq-designing.md)
-         + [Nachrichten senden](platform/using/faq-messages.md)
-         + [Workflows](platform/using/faq-workflows.md)
-         + [Konfiguration](platform/using/faq-campaign-config.md)
-         + [Berichte](platform/using/faq-reporting.md)
-         + [Entwicklung](platform/using/faq-developers.md)
+      + [Globale Konzepte](platform/using/faq-key-concepts.md)
+      + [Build-Upgrade](platform/using/faq-build-upgrade.md)
+      + [Datenschutz](platform/using/privacy-faq.md)
+      + [Zielgruppen](platform/using/faq-audiences.md)
+      + [Erstellen von Nachrichten](platform/using/faq-designing.md)
+      + [Nachrichten senden](platform/using/faq-messages.md)
+      + [Workflows](platform/using/faq-workflows.md)
+      + [Konfiguration](platform/using/faq-campaign-config.md)
+      + [Berichte](platform/using/faq-reporting.md)
+      + [Entwicklung](platform/using/faq-developers.md)
    + [Glossar](platform/using/ac-glossary.md)
    + Datenschutz {#privacy}
       + [Datenschutz und Einverständniserklärung](platform/using/privacy-and-recommendations.md)

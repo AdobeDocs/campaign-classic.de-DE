@@ -6,7 +6,7 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
-source-git-commit: b4059e43d98643f0f8b5b3f68f03e10b755e8ba3
+source-git-commit: 28279c6ec0eab7f914cf6107cd1ec1cebd05113d
 workflow-type: tm+mt
 source-wordcount: '873'
 ht-degree: 92%
@@ -23,7 +23,7 @@ In der Mitte des Fensters haben Sie die Möglichkeit, auf die Online-Dokumentati
 
 ![](assets/d_ncs_user_interface_home.png)
 
-![](assets/do-not-localize/how-to-video.png) [&#x200B; Campaign-Arbeitsbereich im Video kennenlernen](#video)
+![](assets/do-not-localize/how-to-video.png)[ Campaign-Arbeitsbereich im Video kennenlernen](#video)
 
 >[!NOTE]
 >
@@ -59,7 +59,7 @@ Sie können zwischen fünf verschiedenen Sprachen wählen:
 * Deutsch
 * Japanisch
 
-Die für Ihre Adobe Campaign Classic-Instanz ausgewählte Sprache kann sich auf Datums- und Uhrzeitformate auswirken. Weitere Informationen hierzu finden Sie in der Dokumentation zu [&#x200B; v8 (Konsole](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/campaign-ui#formats){target=_blank}.
+Die für Ihre Adobe Campaign Classic-Instanz ausgewählte Sprache kann sich auf Datums- und Uhrzeitformate auswirken. Weitere Informationen hierzu finden Sie in der Dokumentation zu [ v8 (Konsole](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 
 Weiterführende Informationen zum Erstellen einer Instanz finden Sie auf dieser [Seite](../../installation/using/creating-an-instance-and-logging-on.md).
 
@@ -110,7 +110,7 @@ Auf den Adobe Campaign-Explorer kann über das entsprechende Symbol in der Symbo
 
 Weitere Informationen zu Adobe Campaign Explorer finden Sie auf diesen Seiten in der Dokumentation zu Campaign v8 (Konsole):
 
-* [Übersicht über die Campaign-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/campaign-ui#ac-explorer-ui){target=_blank}
+* [Übersicht über die Campaign-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}
 
 * [Einstellungen der Campaign-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/configuration/ui-settings){target=_blank}
 
@@ -137,4 +137,4 @@ Weitere Informationen zum **Arbeiten mit Aufzählungen** finden Sie in der [Doku
 
 In diesem Video wird der Campaign Classic-Arbeitsbereich vorgestellt.
 
->[!VIDEO](https://video.tv.adobe.com/v/39531?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12)

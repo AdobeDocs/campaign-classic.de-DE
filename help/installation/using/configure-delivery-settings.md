@@ -8,10 +8,10 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 2968d8db-2b4b-48e6-a22e-daba5ffe0576
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 28279c6ec0eab7f914cf6107cd1ec1cebd05113d
 workflow-type: tm+mt
-source-wordcount: '476'
-ht-degree: 7%
+source-wordcount: '484'
+ht-degree: 10%
 
 ---
 
@@ -88,7 +88,8 @@ Gehen Sie hierzu wie folgt vor:
 
    >[!NOTE]
    >
-   >Auflistungen werden in [diesem Dokument](../../platform/using/managing-enumerations.md) beschrieben.
+   >Weitere Informationen zum **Arbeiten mit Aufzählungen** finden Sie in der [Dokumentation zu Adobe Campaign v8 (Konsole)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
+
 
    Anschließend können Sie die zu verwendende Affinität auswählen, wie unten für Typologien dargestellt:
 
