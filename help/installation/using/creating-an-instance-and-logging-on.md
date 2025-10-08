@@ -72,7 +72,7 @@ Gehen Sie wie folgt vor, um eine neue Instanz zu erstellen:
 
 1. Wählen Sie in **[!UICONTROL Dropdown]** Liste Sprache die **Sprache der Instanz**: Englisch (US), Englisch (UK), Französisch oder Japanisch.
 
-   Die Unterschiede zwischen Englisch (USA) und Englisch (Großbritannien) werden in der Dokumentation [Campaign v8 (Konsole)) &#x200B;](.https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui#formats).
+   Die Unterschiede zwischen Englisch (USA) und Englisch (Großbritannien) werden in der Dokumentation [Campaign v8 (Konsole)) &#x200B;](.https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/campaign-ui#formats).
 
    >[!CAUTION]
    >

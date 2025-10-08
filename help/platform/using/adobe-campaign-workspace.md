@@ -59,7 +59,7 @@ Sie können zwischen fünf verschiedenen Sprachen wählen:
 * Deutsch
 * Japanisch
 
-Die für Ihre Adobe Campaign Classic-Instanz ausgewählte Sprache kann sich auf Datums- und Uhrzeitformate auswirken. Weitere Informationen hierzu finden Sie in der Dokumentation zu [&#x200B; v8 (Konsole](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui#formats){target=_blank}.
+Die für Ihre Adobe Campaign Classic-Instanz ausgewählte Sprache kann sich auf Datums- und Uhrzeitformate auswirken. Weitere Informationen hierzu finden Sie in der Dokumentation zu [&#x200B; v8 (Konsole](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/campaign-ui#formats){target=_blank}.
 
 Weiterführende Informationen zum Erstellen einer Instanz finden Sie auf dieser [Seite](../../installation/using/creating-an-instance-and-logging-on.md).
 
