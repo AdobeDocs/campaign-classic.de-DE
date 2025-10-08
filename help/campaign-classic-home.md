@@ -3,9 +3,9 @@ keywords: Campaign Classic;Startseite;beliebte Themen
 product: campaign
 title: Produktdokumentation zu Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 961f056ca8bf201e8cedcddb3a2b1f1a4e32b08a
-workflow-type: ht
-source-wordcount: '357'
+source-git-commit: d56038fc8baf766667d89bb73747c20ec041124c
+workflow-type: tm+mt
+source-wordcount: '342'
 ht-degree: 100%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 ## Neue Funktionen
 
-Hier erhalten Sie einen Einblick in die neuesten Produktverbesserungen bei Adobe Campaign Classic v7 und die Dokumentation! Eine umfassende Liste der Funktionen, Verbesserungen und Fehlerbehebungen finden Sie in den detaillierten [Versionshinweisen](rn/using/latest-release.md).  Aktuelle Informationen zu den neuesten Änderungen in unserer Dokumentation finden Sie auf der [Seite mit den Dokumentationsaktualisierungen](rn/using/documentation-updates.md).
+Hier erhalten Sie einen Einblick in die neuesten Produktverbesserungen bei Adobe Campaign Classic v7 und die Dokumentation! Eine umfassende Liste der Funktionen, Verbesserungen und Fehlerbehebungen finden Sie in den detaillierten [Versionshinweisen](rn/using/latest-release.md).
 
 >[!BEGINTABS]
 

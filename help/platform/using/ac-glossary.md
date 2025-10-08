@@ -6,10 +6,10 @@ feature: Overview
 role: User, Data Architect
 level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
-source-git-commit: f469689f9e8a4d805fb95a1ae120ccd35aba3731
+source-git-commit: d56038fc8baf766667d89bb73747c20ec041124c
 workflow-type: tm+mt
-source-wordcount: '5959'
-ht-degree: 100%
+source-wordcount: '6002'
+ht-degree: 99%
 
 ---
 
@@ -28,7 +28,7 @@ Weitere Informationen zu [A/B-Tests](../../delivery/using/get-started-a-b-testin
 
 +++**Zugriffsverwaltung**
 
-Die Zugriffsverwaltung ermöglicht es Administratoren bzw. Administratorinnen, Benutzenden von Adobe Campaign Zugriff und Berechtigungen zuzuweisen. Zu den Berechtigungen gehört die Möglichkeit, Adobe Campaign-Funktionen anzuzeigen und/oder zu verwenden, z. B. Workflows auszuführen, Schemata zu definieren und Audiences zu verwalten.
+Die Zugriffsverwaltung ermöglicht es Administratoren bzw. Administratorinnen, Benutzenden von Adobe Campaign Zugriff und Berechtigungen zuzuweisen. Zu den Berechtigungen gehört die Möglichkeit, Adobe Campaign-Funktionen anzuzeigen und/oder zu verwenden, z. B. Workflows auszuführen, Schemata zu definieren und Zielgruppen zu verwalten.
 
 Weitere Informationen zur [Zugriffsverwaltung](access-management.md).
 +++
@@ -65,11 +65,11 @@ Die Aktivität &quot;Lokale Validierung&quot; ist eine Workflow-Aktivität, mit 
 Weitere Informationen zur [Aktivität „Lokale Validierung“](../../workflow/using/local-approval.md).
 +++
 
-+++**Audience**
++++**Zielgruppe**
 
-Eine Audience ist die Menge Profilen, die den Kriterien einer Filterdefinition entsprechen und auf Regeln und Attributen basieren.
+Eine Zielgruppe ist die Menge Profilen, die den Kriterien einer Filterdefinition entsprechen und auf Regeln und Attributen basieren.
 
-Weitere Informationen zu [Audiences](../../campaign/using/marketing-campaign-target.md).
+Weitere Informationen zu [Zielgruppen](../../campaign/using/marketing-campaign-target.md).
 +++
 
 +++**Audit-Protokoll**
@@ -140,7 +140,7 @@ Weitere Informationen über die [Inhaltsvalidierung](../../campaign/using/market
 
 +++**Kontrollgruppen**
 
-Verwenden Sie Kontrollgruppen, um die Wirkung Ihrer Kampagnen zu messen, indem Sie einen Teil ihrer Kontakte ausschließen. Benutzende können dann das Verhalten der Zielpopulation, die die Nachricht erhalten hat, mit dem Verhalten der Kontakte vergleichen, die nicht kontaktiert wurden. Anhand der Versandlogs können die Benutzenden in zukünftigen Kampagnen auch eine Kontrollgruppe ansprechen.
+Verwenden Sie Kontrollgruppen, um die Wirkung Ihrer Kampagnen zu messen, indem Sie einen Teil ihrer Zielgruppe ausschließen. Benutzende können dann das Verhalten der Zielpopulation, die die Nachricht erhalten hat, mit dem Verhalten der Kontakte vergleichen, die nicht kontaktiert wurden. Anhand der Versandlogs können die Benutzenden in zukünftigen Kampagnen auch eine Kontrollgruppe ansprechen.
 
 Erfahren Sie mehr über [Kontrollgruppen](../../campaign/using/marketing-campaign-target.md#defining-a-control-group).
 +++
@@ -205,7 +205,7 @@ Weitere Informationen zur [Zustellbarkeit](../../delivery/using/about-deliverabi
 
 +++**Versand**
 
-Ein Versand ist ein spezielles Marketing-Kommunikationselement, das über einen bestimmten Kanal an eine Audience gesendet wird (E-Mail, SMS, Push-Benachrichtigung usw.).   In der Marketing-Terminologie wird dies auch als „Touchpoint“ bezeichnet.
+Ein Versand ist ein spezielles Marketing-Kommunikationselement, das über einen bestimmten Kanal an eine Zielgruppe gesendet wird (E-Mail, SMS, Push-Benachrichtigung usw.).   In der Marketing-Terminologie wird dies auch als „Touchpoint“ bezeichnet.
 
 Weitere Informationen zum [Versand](../../delivery/using/communication-channels.md).
 +++
@@ -341,18 +341,20 @@ Die Aktivität „Anreicherung“ ist eine erweiterte Workflow-Aktivität, die e
 Weitere Informationen zur [Aktivität „Anreicherung“](../../workflow/using/enrichment.md).
 +++
 
-+++**Auflistungen**
++++**Aufzählungen**
 
-Eine Auflistung ist ein Datentyp, der in Schemata oder auf Plattformebene definiert wird und die gültigen Eingabewerte für ein Feld definiert. Auflistungen werden in der Benutzeroberfläche und in Query Builder als Auswahlliste angezeigt.
+Eine Aufzählung ist ein Datentyp, der in Schemata oder auf Plattformebene definiert wird und die gültigen Eingabewerte für ein Feld definiert. Aufzählungen werden in der Benutzeroberfläche und in Query Builder als Auswahlliste angezeigt.
 
-Weitere Informationen zu [Auflistungen](../../platform/using/managing-enumerations.md).
+Weitere Informationen zum **Arbeiten mit Aufzählungen** finden Sie in der [Dokumentation zu Adobe Campaign v8 (Konsole)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
 +++
 
 +++**Explorer-Ansicht**
 
 Die Explorer-Ansicht ist eine hierarchische Darstellung der Ordner, die Adobe Campaign-Artefakte und -Daten enthalten. Beachten Sie, dass das Ordnersystem in Adobe Campaign nicht wie eine typische Baumansicht funktioniert, da jeder Ordner Daten eines bestimmten Typs enthält, z. B. Sendungen, Workflows oder Angebote.
 
-Weitere Informationen zur [Explorer-Ansicht](../../platform/using/adobe-campaign-explorer.md).
+
+Weitere Informationen zur Campaign-Benutzeroberfläche finden Sie in der Dokumentation zu [Adobe Campaign v8 (Konsole](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+
 +++
 
 +++**Externe Konten**
@@ -398,14 +400,15 @@ Weitere Informationen zur [Filterdimension](../../workflow/using/building-a-work
 
 Ein Ordner ist eine Explorer-Ansicht, die Datenbankdatensätze eines bestimmten Datentyps enthält. Der allgemeine Ordnertyp ist dabei eine Ausnahme, denn er wird als Organisationselement verwendet und enthält selbst keine Daten, sondern nur andere Ordner.
 
-Weitere Informationen zu [Ordnern](../../platform/using/adobe-campaign-explorer.md).
+Weitere Informationen zur Campaign-Benutzeroberfläche finden Sie in der Dokumentation zu [Adobe Campaign v8 (Konsole](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+
 +++
 
 +++**Ordneransicht**
 
 Die Ordneransicht ist ein spezieller Explorer-Ordnertyp, der verwendet wird, um alle Datensätze eines ausgewählten Datentyps anzuzeigen, unabhängig davon, zu welchem Ordner er gehört. Ordneransichten werden als administratives Werkzeug verwendet, um partitionierte Daten oder Daten, die in vielen Ordnern verteilt sind, zu verwalten.
 
-Weitere Informationen zur [Ordneransicht](../../platform/using/adobe-campaign-explorer.md).
+Weitere Informationen zur Campaign-Benutzeroberfläche finden Sie in der Dokumentation zu [Adobe Campaign v8 (Konsole](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 +++
 
 +++**Formulare**
@@ -558,7 +561,8 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 
 Der Navigationsbaum stellt die Hauptnavigation in der Explorer-Ansicht von Adobe Campaign dar. Der Navigationsbaum funktioniert wie ein Datei-Browser (z. B. Windows Explorer). Ordner können Unterordner enthalten. Wenn Sie einen Knoten auswählen, wird die entsprechende Ansicht angezeigt. Die angezeigte Ansicht besteht aus einer Liste, die mit einem Schema und einem Eingabeformular zur Bearbeitung der ausgewählten Zeile verknüpft ist. Sie können den Navigationsbaum anpassen und Berechtigungen für Ordner festlegen.
 
-Weitere Informationen zum [Navigationsbaum](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarch).
+Weitere Informationen zur Campaign-Benutzeroberfläche finden Sie in der Dokumentation zu [Adobe Campaign v8 (Konsole](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+
 +++
 
 +++**Ziele**
@@ -942,11 +946,11 @@ Zielgruppen-Mapping ist die Zuordnung von Versandkanälen zu einem bestimmten Da
 Weitere Informationen über das [Zielgruppen-Mapping](../../delivery/using/steps-defining-the-target-population.md#select-a-target-mapping).
 +++
 
-+++**Zielgruppenaktivitäten**
++++**Zielgruppenbestimmungs-Aktivitäten**
 
-Zielgruppenaktivitäten sind Workflow-Aktivitäten, die der Erstellung von Zielgruppen und der Verwendung bzw. Filterung von Populationen dienen. Benutzende können damit eine oder mehrere Zielpopulationen definieren, welche im Anschluss durch Schnittmengen-, Vereinigungs- und Ausschlussaktivitäten aufgeteilt oder zusammengefasst werden können.
+Zielgruppenbestimmungs-Aktivitäten sind Workflow-Aktivitäten, die der Erstellung von Zielgruppen und der Verwendung bzw. Filterung von Populationen dienen. Benutzende können damit eine oder mehrere Zielpopulationen definieren, welche im Anschluss durch Schnittmengen-, Vereinigungs- und Ausschlussaktivitäten aufgeteilt oder zusammengefasst werden können.
 
-Weitere Informationen zu [Zielgruppenaktivitäten](../../workflow/using/about-targeting-activities.md).
+Weitere Informationen zu [Zielgruppenbestimmungs-Aktivitäten](../../workflow/using/about-targeting-activities.md).
 +++
 
 +++**Zielgruppendimension**

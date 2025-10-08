@@ -6,9 +6,9 @@ feature: Application Settings
 role: Data Engineer, Developer
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 exl-id: 9f50f258-845e-4895-b1ef-b73744dea326
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: d56038fc8baf766667d89bb73747c20ec041124c
 workflow-type: tm+mt
-source-wordcount: '320'
+source-wordcount: '304'
 ht-degree: 3%
 
 ---
@@ -24,7 +24,7 @@ Gehen Sie wie folgt vor, um die neue Empfängertabelle in der Adobe Campaign-Ben
 Adobe Campaign verwendet eine globale Variable „Nms_DefaultRcpSchema“ für den Dialog mit der standardmäßigen Empfängerdatenbank (nms:recipient). Diese Variable muss daher geändert werden.
 
 1. Wechseln Sie zum Knoten **[!UICONTROL Administration>Plattform]**> Optionen im Explorer.
-1. Ändern Sie den Wert der Variablen **Nms_DefaultRcpSchema** mit dem Namen des Schemas, das mit der externen Empfängertabelle übereinstimmt (in diesem Fall: cus:individual).
+1. Ändern Sie den Wert der Variablen **Nms_DefaultRcpSchema** mit dem Namen des Schemas, das der externen Empfängertabelle entspricht (in diesem Fall: cus:individual).
 1. Speichern Sie Ihre Änderungen.
 
 ## Neues Formular erstellen {#creating-a-new-form-}
@@ -66,11 +66,7 @@ Durch das Erstellen eines neuen Formulars können Sie die Daten der externen Emp
 1. Erstellen Sie ein neues **xtk:navtree** Typ **navtree** Dokument.
 1. Beschreiben Sie alle Monitoring-Felder und Felder, die Sie je nach Tabellenvorlage benötigen.
 
-   >[!NOTE]
-   >
-   >Weiterführende Informationen zu **navtree**-Dateien finden Sie auf [dieser Seite](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy).
-
-   Im aktuellen Beispiel muss die Datei **navtree** auf dem Schema **cus:individual** basieren und daher die folgende Form aufweisen:
+   Im aktuellen Beispiel muss die Datei **navtree** auf dem Schema **cus:individual** basieren und daher die folgende Form haben:
 
    ```
     <model name="root">

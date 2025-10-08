@@ -8,10 +8,10 @@ audience: integrations
 content-type: reference
 level: Intermediate, Experienced
 exl-id: 13717b3b-d34a-40bc-9c9e-dcf578fc516e
-source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
-workflow-type: ht
-source-wordcount: '1212'
-ht-degree: 100%
+source-git-commit: d56038fc8baf766667d89bb73747c20ec041124c
+workflow-type: tm+mt
+source-wordcount: '1206'
+ht-degree: 98%
 
 ---
 
@@ -35,7 +35,7 @@ Die Pipeline verwendet eine JavaScript-Funktion, um jede Nachricht zu verarbeite
 
 Sie wird in der Option **[!UICONTROL NmsPipeline_Config]** unter dem Attribut &quot;JSConnector&quot; konfiguriert. Dieses JavaScript wird jedes Mal aufgerufen, wenn ein Ereignis empfangen wird. Es wird vom [!DNL pipelined]-Prozess ausgeführt.
 
-Die JavaScript-Beispieldatei lautet &quot;cus:Trigger.js&quot;.
+Die JavaScript-Beispieldatei ist cus:triggers.js.
 
 ### JavaScript-Funktion {#function-js}
 
@@ -114,7 +114,7 @@ Beispiel:
 
 Die Ereignisse werden nacheinander in der Reihenfolge des Versatzes verarbeitet. Jeder Thread des [!DNL pipelined]-Prozesses verarbeitet eine andere Partition.
 
-Der „Versatz“ des letzten abgerufenen Ereignisses wird in der Datenbank gespeichert. Wenn der Prozess angehalten wird, startet er daher bei der letzten Nachricht neu. Diese Daten werden im nativen Schema &quot;xtk:pipelineOffset&quot; gespeichert.
+Der „Versatz“ des letzten abgerufenen Ereignisses wird in der Datenbank gespeichert. Wenn der Prozess angehalten wird, startet er daher bei der letzten Nachricht neu. Diese Daten werden im integrierten Schema xtk:pipelineOffset gespeichert.
 
 Dieser Zeiger ist für jede Instanz und jeden Verbraucher spezifisch. Wenn verschiedene Instanzen auf dieselbe Pipeline mit unterschiedlichen Verbrauchern zugreifen, erhalten diese also alle Nachrichten in derselben Reihenfolge.
 
@@ -220,7 +220,7 @@ Die Ereignisse können mit einem einfachen Formular, das auf dem Ereignisschema 
 
 >[!NOTE]
 >
->Der Knoten &quot;Pipeline Event&quot; ist nicht nativ und muss hinzugefügt werden. Außerdem muss in Campaign das zugehörige Formular erstellt werden. Diese Aufgaben sind erfahrenen Benutzern vorbehalten. Lesen Sie diesbezüglich auch diese Abschnitte: [Navigationshierarchie](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy). und [Formulare bearbeiten](../../configuration/using/editing-forms.md).
+>Der Knoten &quot;Pipeline Event&quot; ist nicht nativ und muss hinzugefügt werden. Außerdem muss in Campaign das zugehörige Formular erstellt werden. Diese Aufgaben sind erfahrenen Benutzern vorbehalten. Weitere Informationen hierzu finden Sie unter [ von Formularen](../../configuration/using/editing-forms.md).
 
 ![](assets/triggers_7.png)
 

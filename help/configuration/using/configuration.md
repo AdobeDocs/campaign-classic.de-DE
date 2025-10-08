@@ -5,9 +5,9 @@ feature: Application Settings
 description: Erfahren Sie, wie Sie den Navigationsbaum von Campaign Explorer konfigurieren
 role: Data Engineer, Developer
 exl-id: c7ae7240-0c12-4420-bbb3-4268c9ade3e7
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: d56038fc8baf766667d89bb73747c20ec041124c
 workflow-type: tm+mt
-source-wordcount: '1207'
+source-wordcount: '1204'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 Als erfahrener Benutzer können Sie Ordner in der Explorer-Struktur hinzufügen und sie anpassen.
 
-Weitere Informationen zum Campaign-Explorer und zur Navigationshierarchie finden [ in diesem Abschnitt ](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy).
+Weitere Informationen zur Campaign-Benutzeroberfläche finden Sie in der Dokumentation zu [Adobe Campaign v8 (Konsole](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 
 Die von der Navigationsliste verwendeten Ordnertypen werden in einem XML-Dokument beschrieben, das der Grammatik des Schemas **xtk:navtree** entspricht.
 
@@ -82,7 +82,7 @@ Die Beschreibung eines globalen Befehls wird in das **`<command>`**-Element mit 
 * **name**: Interner Name des Befehls: Der Name muss eingegeben und eindeutig sein
 * **label**: Bezeichnung des Befehls.
 * **desc**: Beschreibung, die in der Statusleiste des Hauptbildschirms sichtbar ist.
-* **form**: Zu startendes Formular: Der einzugebende Wert ist der Identifizierungsschlüssel des Formulars (z. B. „cus:recipient„)
+* **form**: Zu startendes Formular: Der einzugebende Wert ist der Identifizierungsschlüssel des Formulars (z. B. „cus:recipient)
 * **rights**: Liste der spezifischen Berechtigungen (durch Kommas getrennt), die den Zugriff auf diesen Befehl ermöglichen. Die Liste der verfügbaren Berechtigungen ist über den Ordner **[!UICONTROL Administration > Zugriffsverwaltung > Spezifische Berechtigungen]** zugänglich.
 * **promptLabel**: Zeigt vor Ausführung des Befehls ein Bestätigungsfeld an.
 
@@ -98,7 +98,7 @@ Der Formularkontext kann bei Initialisierung über das Tag **`<enter>`** aktuali
 
 **Beispiel**:
 
-* Deklaration eines globalen Befehls zum Starten des Formulars „xtk:import“:
+* Deklaration eines globalen Befehls zum Starten des „xtk:import&quot;-Formulars:
 
   ```
   <command desc="Start the data import assistant" form="xtk:import" label="&amp;Data import..." name="import" rights="import,recipientImport"/>
@@ -182,7 +182,7 @@ Um die Datensätze der Liste zu bearbeiten, wird implizit das Eingabeformular mi
 
 Die Standardkonfiguration der Listenspalten wird über das Element **`<columns>`** eingegeben. Eine Spalte wird in einem **`<node>`** deklariert, das das Attribut **xpath** mit dem Feld enthält, auf das in seinem Schema als Wert verwiesen werden soll.
 
-**Beispiel**: Deklaration eines Ordnertyps im Schema „nms:recipient“.
+**Beispiel**: Deklaration eines Ordnertyps im Schema &quot;:recipient&quot;.
 
 ```
 <model label="Profiles and targets" name="nmsProfiles">
@@ -251,7 +251,7 @@ Die Beschreibung eines Befehls wird mit den folgenden Eigenschaften in das **`<c
 * **name**: Interner Name des Befehls: Der Name muss eingegeben und eindeutig sein.
 * **label**: Bezeichnung des Befehls.
 * **desc**: Beschreibung, die in der Statusleiste des Hauptbildschirms sichtbar ist.
-* **form**: Zu startendes Formular: Der einzugebende Wert ist der Identifizierungsschlüssel des Formulars (z. B. „cus:recipient„).
+* **form**: Zu startendes Formular: Der einzugebende Wert ist der Identifizierungsschlüssel des Formulars (z. B. „cus:recipient).
 * **rights**: Liste der spezifischen Berechtigungen (durch Kommas getrennt), die den Zugriff auf diesen Befehl ermöglichen. Die Liste der verfügbaren Berechtigungen ist über den Ordner **[!UICONTROL Administration > Zugriffsverwaltung > Spezifische Berechtigungen]** zugänglich.
 * **promptLabel**: Zeigt vor Ausführung des Befehls ein Bestätigungsfeld an
 * **monoSelection**: Erzwingt die Monoauswahl (standardmäßig Mehrfachauswahl).
