@@ -24,7 +24,7 @@ Adobe Campaign ermöglicht es, die verschiedenen Schritte zur Erstellung von Dia
 
 >[!TAB Erste Schritte mit Campaign]
 
-Weitere Informationen zu den Funktionen von Adobe Campaign und zu den ersten Schritten finden Sie in der [ zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/get-started){target=_blank}.
+Weitere Informationen zu den Funktionen von Adobe Campaign und zu den ersten Schritten finden Sie in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/get-started){target=_blank}.
 
 [![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/get-started){target=_blank}
 
