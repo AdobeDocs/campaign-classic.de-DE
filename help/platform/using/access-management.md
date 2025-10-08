@@ -48,7 +48,7 @@ Informationen zum Definieren von **Berechtigungen für Ordner** finden Sie in de
 
 >[!TAB Native Authentifizierung]
 
-Die native Authentifizierung mit Anmeldung/Kennwort ist in Campaign v7 weiterhin verfügbar. Um jedoch den Sicherheits- und Authentifizierungsprozess zu verbessern, empfiehlt Adobe Campaign dringend, [den Endbenutzer-Authentifizierungsmodus) ](../../technotes/using/ac-ims.md) der nativen Anmelde-/Kennwortauthentifizierung zum Adobe Identity Management System (IMS) zu migrieren. Beachten Sie, dass in Campaign v8 eine Verbindung mit Benutzer/Kennwort (auch als native Authentifizierung bezeichnet) nicht zulässig ist.
+Die native Authentifizierung mit Anmeldung/Kennwort ist in Campaign v7 weiterhin verfügbar. Um jedoch den Sicherheits- und Authentifizierungsprozess zu verbessern, empfiehlt Adobe Campaign dringend, [den Endbenutzer-Authentifizierungsmodus) &#x200B;](../../technotes/using/ac-ims.md) der nativen Anmelde-/Kennwortauthentifizierung zum Adobe Identity Management System (IMS) zu migrieren. Beachten Sie, dass in Campaign v8 eine Verbindung mit Benutzer/Kennwort (auch als native Authentifizierung bezeichnet) nicht zulässig ist.
 
 [![Bild](../../assets/do-not-localize/learn-more-button.svg)](../../technotes/using/ac-ims.md)
 
