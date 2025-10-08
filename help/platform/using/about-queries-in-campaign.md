@@ -2,15 +2,14 @@
 product: campaign
 title: Über Abfragen in Adobe Campaign
 description: Über Abfragen in Adobe Campaign
-badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Query Editor
 role: User, Data Architect
 level: Beginner
 exl-id: 2db1034d-cad6-4fb0-8646-dd9099080ab0
-source-git-commit: 11c81e4f04b978381d3803e2b60e23ed791eee44
+source-git-commit: 0bbe3bd199c664d30513a0c50203248d703451cd
 workflow-type: tm+mt
-source-wordcount: '220'
-ht-degree: 11%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -29,23 +28,23 @@ Der generische Abfrage-Editor zentralisiert alle Abfragefunktionen. Sie ermögli
 
 >[!TAB Datenbank abfragen]
 
-Die Schritte zum Erstellen einer Abfrage werden in der Dokumentation **[Campaign v8 (Konsole)) beschrieben](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/data/query/query-editor){target=_blank}**
+Die Schritte zum Erstellen einer Abfrage werden in der Dokumentation **[Campaign v8 (Konsole)) beschrieben](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/query-editor){target=_blank}**
 
 
-[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/data/query/query-editor){target=_blank}
+[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/query-editor){target=_blank}
 
 
 >[!TAB Abfrage in einem Workflow hinzufügen]
 
-Die wichtigsten Schritte zur Erstellung von Abfragen im Kontext eines Workflows finden Sie in der Dokumentation zu **[v8 &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}**
+Die wichtigsten Schritte zur Erstellung von Abfragen im Kontext eines Workflows finden Sie in der Dokumentation zu **[v8 ](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}**
 
 [![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}
 
 >[!TAB Filterbedingungen]
 
-Um Ihre Abfrage zu entwerfen, müssen Sie die Filterbedingungen im Abfrage-Editor auswählen. Die verfügbaren Funktionen und Anwendungsfälle werden in der Dokumentation zu **[v8 beschrieben](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/data/query/filter-conditions){target=_blank}**
+Um Ihre Abfrage zu entwerfen, müssen Sie die Filterbedingungen im Abfrage-Editor auswählen. Die verfügbaren Funktionen und Anwendungsfälle werden in der Dokumentation zu **[v8 beschrieben](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/filter-conditions){target=_blank}**
 
-[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/data/query/filter-conditions){target=_blank}
+[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/filter-conditions){target=_blank}
 
 >[!ENDTABS]
 
