@@ -7,8 +7,10 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 audience: platform
 content-type: reference
 topic-tags: creating-queries
+hide: true
+hidefromtoc: true
 exl-id: b62e23e5-f1b7-44c4-82d9-95c6b3240352
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 11c81e4f04b978381d3803e2b60e23ed791eee44
 workflow-type: tm+mt
 source-wordcount: '3472'
 ht-degree: 100%
@@ -286,15 +288,15 @@ Vier verschiedene Feldtypen stehen zur Verfügung:
 
   ![](assets/query_editor_nveau_62.png)
 
-* **[!UICONTROL Auflistungen]**: Dieser Feldtyp erlaubt die Verwendung/Umwandlung des Inhalts einer anderen Spalte.
+* **[!UICONTROL Aufzählungen]**: Dieser Feldtyp erlaubt die Verwendung/Umwandlung des Inhalts einer anderen Spalte.
 
   Dem Quellwert einer Spalte kann ein Zielwert zugeordnet werden. Es ist der Zielwert, der in der neuen Ausgabespalte angezeigt wird.
 
-  Ein Beispiel zu berechneten **[!UICONTROL Auflistungsfeldern]** können Sie [diesem Abschnitt](../../workflow/using/adding-enumeration-type-calculated-field.md) entnehmen.
+  Ein Beispiel zu berechneten **[!UICONTROL Aufzählungsfeldern]** können Sie [diesem Abschnitt](../../workflow/using/adding-enumeration-type-calculated-field.md) entnehmen.
 
   ![](assets/query_editor_nveau_63.png)
 
-  Ein berechnetes Feld vom Typ **[!UICONTROL Auflistungen]** kann vier Bedingungen enthalten:
+  Ein berechnetes Feld vom Typ **[!UICONTROL Aufzählungen]** kann vier Bedingungen enthalten:
 
    * **[!UICONTROL Quellwert beibehalten]** gibt den Quellwert unverändert als Zielwert aus.
    * **[!UICONTROL Folgenden Wert benutzen]** ermöglicht die Eingabe eines Standard-Zielwerts für fehlende Quellwerte.
@@ -335,7 +337,7 @@ Nachfolgend werden die **[!UICONTROL Formeltypen]** detailliert dargestellt:
 1. **[!UICONTROL Aggregat (Aggregatfunktionen)]**. Nachfolgend einige Beispiele zur Verwendung von Aggregaten:
 
    * **[!UICONTROL Zählung]**: ermöglicht die Zählung eines Primärschlüssels.
-   * **[!UICONTROL Summe]**: berechnet beispielsweise die Gesamtheit aller Bestellungen eines Kunden.
+   * **[!UICONTROL Summe]**: berechnet beispielsweise die Gesamtheit aller Käufe eines Kunden.
    * **[!UICONTROL Maximaler Wert]**: gibt beispielsweise die Kunden aus, die maximal &quot;n&quot; Artikel gekauft haben.
    * **[!UICONTROL Minimaler Wert]**: gibt beispielsweise die Kunden aus, die zuletzt ein Angebot angenommen haben.
    * **[!UICONTROL Durchschnitt]**. Mit dieser Funktion können Sie das durchschnittliche Alter der Empfänger und Empfängerinnen berechnen.

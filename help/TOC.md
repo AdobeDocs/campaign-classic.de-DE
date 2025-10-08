@@ -6,9 +6,9 @@ title: Campaign Classic v7 – Handbuch
 user-guide-description: Produktdokumentation für Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
+source-git-commit: 11c81e4f04b978381d3803e2b60e23ed791eee44
 workflow-type: tm+mt
-source-wordcount: '2566'
+source-wordcount: '2567'
 ht-degree: 97%
 
 ---
@@ -87,10 +87,9 @@ ht-degree: 97%
       + [Filteroptionen](platform/using/filtering-options.md)
       + [Erstellen von Filtern](platform/using/creating-filters.md)
       + [Anwendungsbeispiel](platform/using/use-case.md)
-   + Erstellen von Abfragen {#creating-queries}
-      + [Über Abfragen in Adobe Campaign](platform/using/about-queries-in-campaign.md)
-      + [Schritte zum Erstellen einer Abfrage](platform/using/steps-to-create-a-query.md)
-      + [Filterbedingungen definieren](platform/using/defining-filter-conditions.md)
+   + [Erstellen von Abfragen in Campaign](platform/using/about-queries-in-campaign.md)
+   + [Schritte zum Erstellen einer Abfrage - AUSGEBLENDET](platform/using/steps-to-create-a-query.md)
+   + [Filterbedingungen definieren - HIDDEN](platform/using/defining-filter-conditions.md)
    + Berechtigungen {#permissions}
       + [Erste Schritte mit Berechtigungen](platform/using/access-management.md)
       + [Erstellen und Verwalten von Benutzern](platform/using/access-management-operators.md)
@@ -102,7 +101,7 @@ ht-degree: 97%
       + [Verbinden mit Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
       + [Verbinden mit Salesforce.com](platform/using/crm-sfdc.md)
       + [Synchronisieren von Daten mit dem CRM](platform/using/crm-data-sync.md)
-   + [Hilfe- und Support-Optionen](support.md)
+   + [Hilfe- und Support-Optionen - AUSGEBLENDET](support.md)
 + Erstellen und Senden von Nachrichten {#sending-messages}
    + [Erste Schritte mit Nachrichten](delivery/using/communication-channels.md)
    + [Versandeinstellungen](delivery/using/delivery-settings.md)

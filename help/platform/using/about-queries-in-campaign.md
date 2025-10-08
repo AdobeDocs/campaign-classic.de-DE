@@ -7,41 +7,45 @@ feature: Query Editor
 role: User, Data Architect
 level: Beginner
 exl-id: 2db1034d-cad6-4fb0-8646-dd9099080ab0
-source-git-commit: 471018f09e5a14635fcce07aeca1e2cf48d9144f
-workflow-type: ht
-source-wordcount: '226'
-ht-degree: 100%
+source-git-commit: 11c81e4f04b978381d3803e2b60e23ed791eee44
+workflow-type: tm+mt
+source-wordcount: '220'
+ht-degree: 11%
 
 ---
 
 # Erste Schritte mit Abfragen{#about-queries-in-campaign}
 
+Das Abfrage-Tool ist auf verschiedenen Anwendungsebenen verfügbar und kann verwendet werden, um Zielgruppen zu definieren, Kunden zu segmentieren, Trackinglogs zu extrahieren und zu filtern, Filter zu erstellen und vieles mehr.
 
+Es bietet einen speziellen Assistenten - den generischen Abfrage-Editor -, auf den über das Menü **[!UICONTROL Tools > Generischer Abfrage-Editor…]** zugegriffen werden kann. Dieser Editor ermöglicht Datenbankabfragen zum Extrahieren, Organisieren, Gruppieren und Sortieren von Informationen. Sie kann beispielsweise Empfänger abrufen, die in einem bestimmten Zeitraum mehr als n Mal auf einen Newsletter-Link geklickt haben.
 
-Das Abfragetool von Adobe Campaign ist auf mehreren Ebenen der Software zu finden: zum Erstellen einer Zielpopulation, zum Segmentieren von Kundinnen und Kunden, zum Extrahieren und Filtern von Trackinglogs, zum Erstellen von Filtern usw.
+Der generische Abfrage-Editor zentralisiert alle Abfragefunktionen. Sie ermöglicht die Erstellung und Speicherung von Einschränkungsfiltern, die dann in anderen Kontexten wiederverwendet werden können, wie z. B. im Abfragefeld eines Zielgruppen-Workflows.
 
-Mit dem Adobe Campaign-Abfragetool können Sie eine Datenbank mithilfe eines dedizierten Assistenten abfragen: dem generischen Abfragetool. Der Zugriff darauf erfolgt über das Menü **[!UICONTROL Werkzeuge > Generisches Abfragetool...]** Sie können damit in einer Datenbank gespeicherte Informationen extrahieren sowie organisieren, gruppieren, sortieren usw. So kann ein Benutzer beispielsweise die Empfängerinnen und Empfänger abrufen, die innerhalb eines bestimmten Zeitraums mehr als x-mal auf einen Link in einem Newsletter geklickt haben. Mit diesem Tool können Sie Ergebnisse nach Bedarf sammeln, sortieren und anzeigen.
+![Zugriff auf den Abfrage-Editor und Auswahl einer Tabelle](assets/query_editor_nveau_21.png)
 
-Alle Abfrageoptionen in Adobe Campaign werden über dieses Tool gesteuert. So lassen sich z. B. Einschränkungsfilter im Tool erstellen und speichern. Derart angelegte Benutzerfilter sind dadurch auch in der Abfrageaktivität eines Zielgruppen-Workflows verfügbar.
-
-Abfragen werden entweder mit den in der ausgewählten Tabelle enthaltenen Feldern oder mithilfe einer Formel durchgeführt.
 
 >[!BEGINTABS]
 
->[!TAB Dokumentation zu Abfragen]
+>[!TAB Datenbank abfragen]
 
-Weitere Informationen zu Abfragen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/wf-activities/activities){target=_blank}.
-
-
-[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/wf-activities/activities){target=_blank}
+Die Schritte zum Erstellen einer Abfrage werden in der Dokumentation **[Campaign v8 (Konsole)) beschrieben](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/query-editor){target=_blank}**
 
 
->[!TAB Erstellen einer Abfrage]
+[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/query-editor){target=_blank}
 
-Die wichtigsten Schritte zur Erstellung einer Abfrage finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}.
+
+>[!TAB Abfrage in einem Workflow hinzufügen]
+
+Die wichtigsten Schritte zur Erstellung von Abfragen im Kontext eines Workflows finden Sie in der Dokumentation zu **[v8 ](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}**
 
 [![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}
 
+>[!TAB Filterbedingungen]
+
+Um Ihre Abfrage zu entwerfen, müssen Sie die Filterbedingungen im Abfrage-Editor auswählen. Die verfügbaren Funktionen und Anwendungsfälle werden in der Dokumentation zu **[v8 beschrieben](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/filter-conditions){target=_blank}**
+
+[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/filter-conditions){target=_blank}
+
 >[!ENDTABS]
 
-![Screenshot eines Beispiels einer Abfrage.](assets/query_recipients_4.png)
