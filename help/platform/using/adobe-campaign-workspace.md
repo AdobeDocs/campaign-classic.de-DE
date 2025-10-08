@@ -148,4 +148,4 @@ Weitere Informationen zum **Arbeiten mit Aufzählungen** finden Sie in der [Doku
 
 In diesem Video wird der Campaign Classic-Arbeitsbereich vorgestellt.
 
->[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/39531?quality=12&captions=ger)
