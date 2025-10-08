@@ -6,9 +6,9 @@ title: Campaign Classic v7 – Handbuch
 user-guide-description: Produktdokumentation für Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
+source-git-commit: 34f875f583dd81c2229b66f3344f23965532e802
 workflow-type: tm+mt
-source-wordcount: '2570'
+source-wordcount: '2574'
 ht-degree: 96%
 
 ---
@@ -92,10 +92,11 @@ ht-degree: 96%
    + [Filterbedingungen definieren - HIDDEN](platform/using/defining-filter-conditions.md)
    + Berechtigungen {#permissions}
       + [Erste Schritte mit Berechtigungen](platform/using/access-management.md)
-      + [Erstellen und Verwalten von Benutzern](platform/using/access-management-operators.md)
-      + [Gruppen erstellen und verwalten](platform/using/access-management-groups.md)
+      + Native Authentifizierung (veraltet) {#native}
+         + [Erstellen und Verwalten von Benutzern](platform/using/access-management-operators.md)
+         + [Gruppen erstellen und verwalten](platform/using/access-management-groups.md)
       + [Verwenden spezifischer Berechtigungen zum Einrichten von Zugriffsberechtigungen](platform/using/access-management-named-rights.md)
-      + [Zugriff auf Ordner verwalten](platform/using/access-management-folders.md)
+      + [Zugriff auf Ordner verwalten - AUSGEBLENDET](platform/using/access-management-folders.md)
    + CRM-Connectoren {#connectors}
       + [Erste Schritte mit CRM-Connectoren](platform/using/crm-connectors.md)
       + [Verbinden mit Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)

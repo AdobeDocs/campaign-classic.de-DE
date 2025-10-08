@@ -5,10 +5,10 @@ description: Erfahren Sie, wie Sie Zugriff auf Campaign-Funktionen gewähren.
 badge: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Access Management, Permissions
 exl-id: 9b616715-33cd-43ba-8548-8d96a179408e
-source-git-commit: b27b85b126e002c0ea8b5d71da1ed60e1e817980
-workflow-type: ht
-source-wordcount: '202'
-ht-degree: 100%
+source-git-commit: 34f875f583dd81c2229b66f3344f23965532e802
+workflow-type: tm+mt
+source-wordcount: '261'
+ht-degree: 64%
 
 ---
 
@@ -34,17 +34,28 @@ Mit Adobe Campaign können Sie die den verschiedenen Benutzerinnen und Benutzern
 
 >[!TAB Dokumentation zu Berechtigungen]
 
-Weitere Informationen zu Berechtigungen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/admin/permissions/gs-permissions?lang=de#_blank){target=_blank}.
+Weitere Informationen zu **Berechtigungen in Adobe Campaign** finden Sie in der Dokumentation zu **[Campaign v8 (Konsole)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/admin/permissions/gs-permissions?lang=de#_blank){target=_blank}**.
 
 [![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/admin/permissions/gs-permissions?lang=de#_blank){target=_blank}
 
->[!TAB Verwalten des Ordnerzugriffs]
 
-Weitere Informationen zum Zugriff auf Ordner und zu deren Verwaltung finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/admin/permissions/folder-permissions?lang=de#_blank){target=_blank}.
+>[!TAB Berechtigungen für Ordner verwalten]
 
-[![Bild](../../assets/do-not-localize/learn-more-button.svg)]([![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/admin/permissions/gs-permissions?lang=en#_blank){target=_blank}){target=_blank}
+Informationen zum Definieren von **Berechtigungen für Ordner** finden Sie in der Dokumentation **[Campaign v8 (Konsole)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/admin/permissions/folder-permissions){target=_blank}**.
+
+[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/admin/permissions/folder-permissions){target=_blank}
+
+
+>[!TAB Native Authentifizierung]
+
+Die native Authentifizierung mit Anmeldung/Kennwort ist in Campaign v7 weiterhin verfügbar. Um jedoch den Sicherheits- und Authentifizierungsprozess zu verbessern, empfiehlt Adobe Campaign dringend, [den Endbenutzer-Authentifizierungsmodus) ](../../technotes/using/ac-ims.md) der nativen Anmelde-/Kennwortauthentifizierung zum Adobe Identity Management System (IMS) zu migrieren. Beachten Sie, dass in Campaign v8 eine Verbindung mit Benutzer/Kennwort (auch als native Authentifizierung bezeichnet) nicht zulässig ist.
+
+[![Bild](../../assets/do-not-localize/learn-more-button.svg)](../../technotes/using/ac-ims.md)
+
 
 >[!ENDTABS]
+
+
 
 <!--
 The permissions apply to operator profiles or operator groups.
@@ -59,8 +70,8 @@ There are two types of permissions you can grant to a user:
 
 >[!NOTE]
 >
-> * Before starting defining permissions, Adobe recommends you to read the [Security configuration checklist](https://helpx.adobe.com/de/campaign/kb/acc-security.html).
-> * To learn more about permissions, please refer to the detailed explanation on the [Campaign v8 documentation](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/admin/permissions/gs-permissions){target=_blank}.
+> * Before starting defining permissions, Adobe recommends you to read the [Security configuration checklist](https://helpx.adobe.com/campaign/kb/acc-security.html).
+> * To learn more about permissions, please refer to the detailed explanation on the [Campaign v8 documentation](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/gs-permissions){target=_blank}.
 
 Learn how to grant access and set up permissions in these sections:
 

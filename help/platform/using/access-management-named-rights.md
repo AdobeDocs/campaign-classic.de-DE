@@ -2,25 +2,20 @@
 product: campaign
 title: Verwenden spezifischer Berechtigungen zum Einrichten von Zugriffsberechtigungen
 description: Erfahren Sie, wie Sie spezifische Berechtigungen zum Einrichten von Berechtigungen verwenden.
-badge: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Access Management, Permissions
 role: User, Admin
 level: Beginner
 exl-id: 07470a91-d8d2-4c41-9555-05522c8068f0
-source-git-commit: 8aceafa362b80f6e34edfd91a71551a58501a3d0
+source-git-commit: 34f875f583dd81c2229b66f3344f23965532e802
 workflow-type: tm+mt
-source-wordcount: '579'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Verwenden spezifischer Berechtigungen zum Einrichten von Zugriffsberechtigungen{#named-rights}
+# Spezifische Berechtigungen zum Einrichten von Zugriffsberechtigungen verwenden{#named-rights}
 
->[!NOTE]
->
->Diese Seite betrifft nur Benutzende, die mit nativer Authentifizierung eine Verbindung zu Campaign herstellen. Informationen zur Adobe IMS-Authentifizierung finden Sie in [dieser Dokumentation](https://helpx.adobe.com/de/enterprise/using/manage-permissions-and-roles.html).
-
-Adobe Campaign bietet standardmäßig eine Reihe von spezifischen Berechtigungen, die Benutzenden und Gruppen bestimmte Rechte einräumen. Diese Berechtigungen können über den Verzeichnisknoten **[!UICONTROL Administration > Zugriffe > Spezifische Berechtigungen]** bearbeitet werden.
+Adobe Campaign bietet standardmäßig eine Reihe von spezifischen Berechtigungen, die Benutzern und Gruppen bestimmte Rechte einräumen. Diese Berechtigungen können über den Verzeichnisknoten **[!UICONTROL Administration > Zugriffe > Spezifische Berechtigungen]** bearbeitet werden.
 
 ![](assets/s_ncs_admin_named_rights.png)
 
@@ -76,4 +71,4 @@ Standardgruppen und spezifische Berechtigungen legen den Zugriff auf bestimmte O
 
 Die Matrix der Zugriffsberechtigungen von Adobe Campaign ist [hier](/help/platform/using/assets/access-rights-matrix.pdf) verfügbar.
 
-[![image](assets/do-not-localize/user_management.png)](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf?lang=de)
+[![image](assets/do-not-localize/user_management.png)](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf)

@@ -6,7 +6,7 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
-source-git-commit: 67c4fa449e12b04dab4673bffdc5c2c8b541db69
+source-git-commit: 34f875f583dd81c2229b66f3344f23965532e802
 workflow-type: tm+mt
 source-wordcount: '974'
 ht-degree: 74%
@@ -23,7 +23,7 @@ Sobald Sie mit der Datenbank verbunden sind, rufen Sie die Startseite von Adobe 
 
 ![](assets/d_ncs_user_interface_home.png)
 
-![](assets/do-not-localize/how-to-video.png) [&#x200B; Campaign-Arbeitsbereich im Video kennenlernen](#video)
+![](assets/do-not-localize/how-to-video.png)[ Campaign-Arbeitsbereich im Video kennenlernen](#video)
 
 >[!NOTE]
 >
@@ -59,7 +59,7 @@ Sie können zwischen den folgenden Sprachen wählen:
 * Deutsch
 * Japanisch
 
-Die für Ihre Adobe Campaign Classic-Instanz ausgewählte Sprache kann sich auf Datums- und Uhrzeitformate auswirken. Weitere Informationen hierzu finden Sie in der Dokumentation zu [&#x200B; v8 (Konsole](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+Die für Ihre Adobe Campaign Classic-Instanz ausgewählte Sprache kann sich auf Datums- und Uhrzeitformate auswirken. Weitere Informationen hierzu finden Sie in der Dokumentation zu [ v8 (Konsole](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 
 Weiterführende Informationen zum Erstellen einer Instanz finden Sie auf dieser [Seite](../../installation/using/creating-an-instance-and-logging-on.md).
 
@@ -108,7 +108,7 @@ Nutzen Sie beispielsweise auf der Seite der Sendungen die Schaltfläche **[!UICO
 
 Auf den Adobe Campaign-Explorer kann über das entsprechende Symbol in der Symbolleiste zugegriffen werden. Mit seiner Hilfe gelangen Sie zu allen Adobe Campaign-Funktionen und in die verschiedenen Konfigurationsbildschirme der Adobe Campaign-Plattform und können einige Plattformelemente im Detail anzeigen.
 
-Weitere Informationen zu Adobe Campaign Explorer finden Sie auf diesen Seiten in der Dokumentation zu Campaign v8 (Konsole):
+Weitere Informationen zu Adobe Campaign Explorer finden Sie auf diesen Seiten in der Dokumentation zu **Campaign v8 (Konsole)**:
 
 * [Übersicht über die Campaign-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}
 
@@ -123,14 +123,14 @@ Beim Filtern von Daten wird ein Datensatz so eingegrenzt, dass er nur die Datens
 
 Beim Durchsuchen von Campaign werden die Daten in Listen angezeigt. Sie können integrierte Filter anwenden, um schnell auf eine definierte Teilmenge zuzugreifen, z. B. Adressen in Quarantäne, nicht kontaktierte Empfänger oder Datensätze innerhalb eines bestimmten Altersbereichs oder Erstellungsdatums. Darüber hinaus können Sie benutzerdefinierte Filter erstellen, sie für die zukünftige Verwendung speichern und für andere Campaign-Benutzer freigeben.
 
-In der Dokumentation **Campaign v8 (Konsole** [&#x200B; erfahren Sie, wie Sie auf Filter zugreifen, sie erstellen und freigeben](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+In der Dokumentation **Campaign v8 (Konsole** [ erfahren Sie, wie Sie auf Filter zugreifen, sie erstellen und freigeben](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
 
 
 ## Arbeiten mit Listen {#manage-and-customize-lists}
 
 In der Campaign-Client-Console werden die Daten in Listen angezeigt. Sie können diese Listen Ihren Bedürfnissen entsprechend anpassen. Sie können beispielsweise Spalten hinzufügen, Daten filtern, Einträge zählen und Ihre Einstellungen speichern und freigeben.
 
-Erfahren Sie in **Dokumentation zu** Campaign v8 (Konsole), wie Sie Listen verwalten [&#x200B; anpassen &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/configuration/ui-settings#customize-lists){target=_blank}.
+Erfahren Sie in **Dokumentation zu** Campaign v8 (Konsole), wie Sie Listen verwalten [ anpassen ](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/configuration/ui-settings#customize-lists){target=_blank}.
 
 ## Verwalten von Aufzählungen{#managing-enumerations}
 
@@ -144,4 +144,4 @@ Weitere Informationen zum **(Arbeiten mit Auflistungen** finden Sie in der [Doku
 
 In diesem Video wird der Campaign Classic-Arbeitsbereich vorgestellt.
 
->[!VIDEO](https://video.tv.adobe.com/v/39531?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12)

@@ -7,10 +7,10 @@ feature: Access Management, Permissions
 role: User, Admin
 level: Beginner
 exl-id: d5833d3d-e8ef-4f2b-8084-4ba825c79525
-source-git-commit: 8aceafa362b80f6e34edfd91a71551a58501a3d0
+source-git-commit: 34f875f583dd81c2229b66f3344f23965532e802
 workflow-type: tm+mt
-source-wordcount: '580'
-ht-degree: 94%
+source-wordcount: '621'
+ht-degree: 92%
 
 ---
 
@@ -18,7 +18,9 @@ ht-degree: 94%
 
 >[!NOTE]
 >
->Diese Verfahren gelten nur für Benutzende, die mit nativer Authentifizierung eine Verbindung zu Campaign herstellen. Informationen zur Adobe IMS-Authentifizierung finden Sie in [dieser Dokumentation](https://helpx.adobe.com/de/enterprise/using/user-groups.html).
+>Diese Verfahren gelten nur für Benutzer, die eine Verbindung zu Campaign mit der veralteten nativen Authentifizierung herstellen. Ab Campaign Classic v7.3.1 sollten alle Benutzer [Adobe Identity Management System (IMS) verwenden](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"} um eine Verbindung mit Campaign herzustellen. [Weitere Informationen](../../technotes/using/migrate-users-to-ims.md)
+>
+>Wenn Sie eine Verbindung zu Campaign mit Ihrer Adobe ID herstellen, gilt der folgende Abschnitt nicht mehr. In der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html?lang=de){target="_blank"} erfahren Sie, wie Sie mit Adobe IMS Berechtigungen einrichten können.
 
 Benutzergruppen werden über den Verzeichnisknoten **[!UICONTROL Administration > Zugriffe > Benutzergruppen]** erstellt.
 
@@ -65,7 +67,7 @@ Es existieren folgende Standardgruppen:
 
 1. **[!UICONTROL Kampagnenverantwortliche Benutzer]**
 
-   Die Benutzer dieser Gruppe können Marketing-Kampagnen verwalten. Damit können Sie auf die mit Kampagnen verknüpften Objekte (Pläne, Programme, Workflows, Budgets usw.) im Rahmen von **[!UICONTROL Kampagne]** (optionales Adobe Campaign-Modul) zugreifen.
+   Die Benutzenden in dieser Gruppe können Marketing-Kampagnen verwalten. Diese Berechtigung verleiht Zugriff auf mit Kampagnen verbundene Elemente (Pläne, Programme, Workflows, Budgets etc.) im Framework von **[!UICONTROL Campaign]** (optionales Adobe Campaign-Modul).
 
    Die Gruppe beinhaltet folgende spezifische Berechtigungen:
 
@@ -78,7 +80,7 @@ Es existieren folgende Standardgruppen:
 
 1. **[!UICONTROL Autoren]**
 
-   Benutzer dieser Gruppe haben im Rahmen der **[!UICONTROL Inhaltsverwaltung]** (optionales Adobe Campaign-Modul Content Manager) Zugriff auf Inhaltsordner. Die Gruppe verleiht keine zusätzlichen Berechtigungen.
+   Benutzer dieser Gruppe haben im Rahmen des **[!UICONTROL Content-Managements]** (optionales Adobe Campaign-Modul Content Manager) Zugriff auf Inhaltsordner. Die Gruppe verleiht keine zusätzlichen Berechtigungen.
 
 1. **[!UICONTROL Berichtzugriff]**
 
