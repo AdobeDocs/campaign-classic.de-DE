@@ -87,7 +87,7 @@ Stellen Sie sicher, dass Sie die personenbezogenen Daten in den Profilen von Ben
 
    ![](assets/privacy-ccpa-6.png)
 
-1. Sie können auf die Spalte klicken, um die Empfänger nach den Opt-out-Informationen zu sortieren. Sie können auch einen Filter erstellen, um nur Empfänger anzuzeigen, die sich abgemeldet haben. Weitere Informationen zu Filtern finden Sie in der Dokumentation zu [ v8 (Konsole](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+1. Sie können auf die Spalte klicken, um die Empfänger nach den Opt-out-Informationen zu sortieren. Sie können auch einen Filter erstellen, um nur Empfänger anzuzeigen, die sich abgemeldet haben. Weitere Informationen zu Filtern finden Sie in der Dokumentation zu [&#x200B; v8 (Konsole](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
 
 
    ![](assets/privacy-ccpa-7.png)

@@ -795,7 +795,7 @@ Weitere Informationen über [Pläne](../../campaign/using/setting-up-marketing-c
 
 Vordefinierte Filter sind Abfragen, die zur Wiederverwendung gespeichert wurden. Die Verwendung vordefinierter Filter steigert die Produktivität (da sie nur einmal erstellt werden müssen), verbessert die Konsistenz (da alle Marketer sie verwenden können) und verringert die Anforderungen an Marketer, da sie Code oder Logik verwenden können, die sie möglicherweise nicht in der Lage sind, selbst zu erstellen.
 
-Weitere Informationen zu Filtern finden Sie in der Dokumentation zu [ v8 (Konsole](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+Weitere Informationen zu Filtern finden Sie in der Dokumentation zu [&#x200B; v8 (Konsole](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
 +++
 
 <!--

@@ -70,7 +70,7 @@ Bei noch nicht übersetzten Zeichenfolgen ist das Feld **[!UICONTROL Text]** lee
 
 ### Strings filtern {#filtering-strings}
 
-Standardmäßig wird jede Übersetzungssprache der Web-Anwendung angezeigt. Es gibt zwei Standardfilter: Sprache und Status. Wählen Sie die Schaltfläche **[!UICONTROL Filter]** und dann die Option **[!UICONTROL Nach Sprache oder Status]** aus, um die jeweiligen Dropdown-Listen anzuzeigen. Sie können auch einen erweiterten Filter erstellen. Weitere Informationen zu Filtern finden Sie in der Dokumentation zu [ v8 (Konsole](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+Standardmäßig wird jede Übersetzungssprache der Web-Anwendung angezeigt. Es gibt zwei Standardfilter: Sprache und Status. Wählen Sie die Schaltfläche **[!UICONTROL Filter]** und dann die Option **[!UICONTROL Nach Sprache oder Status]** aus, um die jeweiligen Dropdown-Listen anzuzeigen. Sie können auch einen erweiterten Filter erstellen. Weitere Informationen zu Filtern finden Sie in der Dokumentation zu [&#x200B; v8 (Konsole](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
 
 ![](assets/s_ncs_admin_survey_trad_tab_en.png)
 
@@ -169,7 +169,7 @@ wenn die Sprache der erste oder einzige Parameter der URL ist. Beispiel: **https
 &lang=xx
 ```
 
-wenn es in der URL vor der Sprache noch andere Parameter gibt. Beispiel: **https://myserver/webApp/APP34?status=1&amp;lang=en**
+wenn es in der URL vor der Sprache noch andere Parameter gibt. Beispiel: **https://myserver/webApp/APP34?status=1&lang=en**
 
 Die standardmäßig verfügbaren Übersetzungssprachen und Wörterbücher sind unten aufgeführt.
 
@@ -430,7 +430,7 @@ Fügen Sie **?lang=es** oder **?lang=de** hinzu, um den Inhalt auf Spanisch oder
 >[!NOTE]
 >
 >Wenn für diese Webanwendung bereits andere Parameter verwendet werden, fügen Sie **&amp;lang=** hinzu.\
->Beispiel: **https://myserver/webApp/APP34?status=1&amp;lang=en**
+>Beispiel: **https://myserver/webApp/APP34?status=1&lang=en**
 
 ## Erweiterte Übersetzungskonfiguration {#advanced-translation-configuration}
 
