@@ -37,7 +37,7 @@ Die Schritte zum Erstellen einer Abfrage werden in der Dokumentation **[Campaign
 
 >[!TAB Abfrage in einem Workflow hinzufügen]
 
-Die wichtigsten Schritte zur Erstellung von Abfragen im Kontext eines Workflows finden Sie in der Dokumentation zu **[v8 ](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}**
+Die wichtigsten Schritte zur Erstellung von Abfragen im Kontext eines Workflows finden Sie in der Dokumentation zu **[v8 &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}**
 
 [![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}
 
