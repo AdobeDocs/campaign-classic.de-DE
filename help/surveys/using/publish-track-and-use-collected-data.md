@@ -5,9 +5,9 @@ description: Erfahren Sie, wie Sie in einer Umfrage erfasste Daten veröffentlic
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Surveys
 exl-id: 3cf3c486-6640-4d67-95cf-50d5767deb60
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 0db6f107d2c161b07f42dcf7a932d319130b31e0
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '901'
 ht-degree: 100%
 
 ---
@@ -60,7 +60,7 @@ Der Zugriff auf Umfrageberichte erfolgt über das Dashboard-Tab. Klicken Sie ein
 
 Im Bericht **[!UICONTROL Dokumentation]** wird die Struktur der Umfrage dargestellt.
 
-Im Tab **[!UICONTROL Berichte]** sind zwei weitere Berichte zu Webumfragen verfügbar: **[!UICONTROL Allgemein]** und **[!UICONTROL Antwortenverteilung]**.
+Im Tab **[!UICONTROL Berichte]** sind zwei weitere Berichte zu Webumfragen verfügbar: **[!UICONTROL Allgemein]** und **[!UICONTROL Aufschlüsselung der Antworten]**.
 
 * Allgemein
 
@@ -70,9 +70,9 @@ Im Tab **[!UICONTROL Berichte]** sind zwei weitere Berichte zu Webumfragen verf�
 
   ![](assets/s_ncs_admin_survey_report_0.png)
 
-* Antwortenverteilung
+* Aufschlüsselung der Antworten
 
-  Dieser Bericht zeigt die Antwortenverteilung für jede Frage. Diese Verteilung ist nur für Antworten auf Felder verfügbar, die in Containern vom Typ **[!UICONTROL Frage]** gespeichert sind. Sie gilt nur für Auswahldialoge (beispielsweise keine Aufschlüsselung für Textfelder).
+  Dieser Bericht zeigt die Antwortenaufschlüsselung für jede Frage. Diese Aufschlüsselung ist nur für Antworten auf Felder verfügbar, die in Containern vom Typ **[!UICONTROL Frage]** gespeichert sind. Sie gilt nur für Auswahldialoge (beispielsweise keine Aufschlüsselung für Textfelder).
 
   ![](assets/s_ncs_admin_survey_report_2.png)
 
@@ -158,8 +158,8 @@ Bearbeiten Sie die Aufspaltungsbox, um sie zu konfigurieren:
 
   ![](assets/s_ncs_admin_survey_responses_wf_box_9.png)
 
-* Wählen Sie **[!UICONTROL Beenden]** aus und starten Sie dann den Workflow neu, um die Zielgruppe zu validieren.
+* Wählen Sie **[!UICONTROL Beenden]** aus und starten Sie dann den Workflow neu, um die Zielgruppenbestimmung zu validieren.
 
 ## Daten vereinheitlichen {#standardizing-data}
 
-Sie können in Adobe Campaign für gesammelte Daten Vereinheitlichungsprozesse mithilfe von Alias einrichten. Damit können Sie die in der Datenbank gespeicherten Daten vereinheitlichen. Definieren Sie dazu Alias in den Auflistungen, die die entsprechenden Informationen enthalten. [Weitere Informationen](../../platform/using/managing-enumerations.md#about-enumerations)
+Sie können in Adobe Campaign für gesammelte Daten Vereinheitlichungsprozesse mithilfe von Alias einrichten. Damit können Sie die in der Datenbank gespeicherten Daten vereinheitlichen. Definieren Sie dazu Alias in den Auflistungen, die die entsprechenden Informationen enthalten. Weitere Informationen zum **Arbeiten mit Aufzählungen** finden Sie in der [Dokumentation zu Adobe Campaign v8 (Konsole)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.

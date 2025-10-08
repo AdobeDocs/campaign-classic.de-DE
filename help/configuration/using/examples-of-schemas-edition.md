@@ -5,10 +5,10 @@ description: Beispiele für Schemabearbeitung
 feature: Schema Extension
 role: Data Engineer, Developer
 exl-id: b7ee70e0-89c6-4cd3-8116-2f073d4a2f2f
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 0db6f107d2c161b07f42dcf7a932d319130b31e0
 workflow-type: tm+mt
-source-wordcount: '669'
-ht-degree: 2%
+source-wordcount: '671'
+ht-degree: 5%
 
 ---
 
@@ -40,13 +40,13 @@ Gehen Sie wie folgt vor, um die **nms:recipient**-Schema-Empfängertabelle zu er
    </srcSchema>
    ```
 
-   In diesem Beispiel wird ein indiziertes Feld (**fidelity**) hinzugefügt und das Element **location** (das bereits im **nms:recipient**-Schema vorhanden ist) wird durch ein Aufzählungsfeld (**area**) ergänzt.
+   In diesem Beispiel wird ein indiziertes Feld (**fidelity**) hinzugefügt und das **location**-Element (das bereits im **nms:recipient**-Schema vorhanden ist) wird durch ein Aufzählungsfeld (**area**) ergänzt.
 
    >[!IMPORTANT]
    >
    >Denken Sie daran, das Attribut **extendedSchema** hinzuzufügen, um auf das Erweiterungsschema zu verweisen.
 
-1. Überprüfen Sie, ob das erweiterte Schema das Schema **nms:recipient** ist und ob die zusätzlichen Daten vorhanden sind:
+1. Überprüfen Sie, ob das erweiterte Schema das **nms:recipient**-Schema ist und ob die zusätzlichen Daten vorhanden sind:
 
    ```
    <schema dependingSchemas="cus:extension" mappingType="sql" name="recipient" namespace="nms" xtkschema="xtk:schema">
@@ -222,7 +222,7 @@ Erstellen des Overflow-Tabellenschemas (**cus:overflow**):
 
 >[!NOTE]
 >
->Der Primärschlüssel der Überlauftabelle ist die Relation zu der zu erweiternden Tabelle (in unserem Beispiel das Schema „nms:recipient„).
+>Der Primärschlüssel der Überlauftabelle ist die Relation zur zu erweiternden Tabelle (in unserem Beispiel :recipient Schema „nms„).
 
 Das SQL-Script zur Tabellenerstellung sieht wie folgt aus:
 
@@ -335,8 +335,9 @@ Auf der Benutzeroberfläche wird kein Link, sondern ein Feld angezeigt. Wenn Ben
 
 ## Verwandte Themen
 
-* [Arbeiten mit Auflistungen](../../platform/using/managing-enumerations.md)
+* Weitere Informationen zum **Arbeiten mit Aufzählungen** finden Sie in der [Dokumentation zu Adobe Campaign v8 (Konsole)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
 
 * [Erste Schritte mit Campaign-Schemata](../../configuration/using/about-schema-edition.md)
 
 * [Datenbankstruktur aktualisieren](../../configuration/using/updating-the-database-structure.md)
+
