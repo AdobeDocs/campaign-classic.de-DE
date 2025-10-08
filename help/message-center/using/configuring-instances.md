@@ -185,7 +185,7 @@ Erstellen Sie im Baum aller Ausführungsinstanzen einen Ordner pro Benutzer (**O
 
 Damit mehrere Kontrollinstanzen verwendet werden können, muss diese Konfiguration auf ALLEN Ausführungsinstanzen ausgeführt werden.
 
-1. Erstellen Sie im Knoten **[!UICONTROL Administration > Betreibung > Message Center]** einen Ordner pro Benutzer: **Ordner 1** und **Ordner 2**. Weitere Informationen zu Ordnern und Ansichten finden Sie in [ Dokumentation zu Campaign v8 (Konsole](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
+1. Erstellen Sie im Knoten **[!UICONTROL Administration > Betreibung > Message Center]** einen Ordner pro Benutzer: **Ordner 1** und **Ordner 2**. Weitere Informationen zu Ordnern und Ansichten finden Sie in [&#x200B; Dokumentation zu Campaign v8 (Konsole](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
 
    ![](assets/messagecenter_multi_control_3.png)
 

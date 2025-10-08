@@ -31,7 +31,6 @@ Jeder Knoten entspricht einem Ordner. Die Daten eines Ordners sind als in sich a
 >[!NOTE]
 >
 > * Um eine Liste aller in der Datenbank enthaltenen Empfänger anzuzeigen, ist die Erstellung einer Ansicht erforderlich. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8 (Konsole)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
-
 > * Weitere Informationen zum Verwalten von Profilen finden Sie in der Dokumentation [Campaign v8 (Konsole)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
 
 
