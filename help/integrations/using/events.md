@@ -220,7 +220,7 @@ Die Ereignisse können mit einem einfachen Formular, das auf dem Ereignisschema 
 
 >[!NOTE]
 >
->Der Knoten &quot;Pipeline Event&quot; ist nicht nativ und muss hinzugefügt werden. Außerdem muss in Campaign das zugehörige Formular erstellt werden. Diese Aufgaben sind erfahrenen Benutzern vorbehalten. Weitere Informationen hierzu finden Sie unter [ von Formularen](../../configuration/using/editing-forms.md).
+>Der Knoten &quot;Pipeline Event&quot; ist nicht nativ und muss hinzugefügt werden. Außerdem muss in Campaign das zugehörige Formular erstellt werden. Diese Aufgaben sind erfahrenen Benutzern vorbehalten. Weitere Informationen hierzu finden Sie unter [&#x200B; von Formularen](../../configuration/using/editing-forms.md).
 
 ![](assets/triggers_7.png)
 
