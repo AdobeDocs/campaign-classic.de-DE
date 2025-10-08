@@ -7,7 +7,7 @@ feature: Access Management, Permissions
 role: User, Admin
 level: Beginner
 exl-id: d5833d3d-e8ef-4f2b-8084-4ba825c79525
-source-git-commit: 34f875f583dd81c2229b66f3344f23965532e802
+source-git-commit: a5bbd2e6c102a8afa4cd5931b77b0c83705a7bfa
 workflow-type: tm+mt
 source-wordcount: '621'
 ht-degree: 92%
@@ -18,7 +18,7 @@ ht-degree: 92%
 
 >[!NOTE]
 >
->Diese Verfahren gelten nur für Benutzer, die eine Verbindung zu Campaign mit der veralteten nativen Authentifizierung herstellen. Ab Campaign Classic v7.3.1 sollten alle Benutzer [Adobe Identity Management System (IMS) verwenden](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"} um eine Verbindung mit Campaign herzustellen. [Weitere Informationen](../../technotes/using/migrate-users-to-ims.md)
+>Diese Verfahren gelten nur für Benutzer, die eine Verbindung zu Campaign mit der **veralteten nativen Authentifizierung** herstellen. Ab Campaign Classic v7.3.1 sollten alle Benutzer [Adobe Identity Management System (IMS) verwenden](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"} um eine Verbindung mit Campaign herzustellen. [Weitere Informationen](../../technotes/using/migrate-users-to-ims.md)
 >
 >Wenn Sie eine Verbindung zu Campaign mit Ihrer Adobe ID herstellen, gilt der folgende Abschnitt nicht mehr. In der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html?lang=de){target="_blank"} erfahren Sie, wie Sie mit Adobe IMS Berechtigungen einrichten können.
 
