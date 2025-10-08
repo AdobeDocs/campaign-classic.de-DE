@@ -21,7 +21,7 @@ In der Campaign-Client-Console werden die Daten in Listen angezeigt. Sie können
 
 >[!NOTE]
 >
->Informationen zum Verwalten und Anpassen von Listen in Adobe Campaign finden Sie in der [ zu Campaign v8 ](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/configuration/ui-settings#customize-lists){target=_blank}.
+>Informationen zum Verwalten und Anpassen von Listen in Adobe Campaign finden Sie in der [&#x200B; zu Campaign v8 &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/configuration/ui-settings#customize-lists){target=_blank}.
 
 <!--
 ## Count records {#counting-records}

@@ -38,7 +38,7 @@ Campaign-Anwender stellen über das Adobe Identity Management System (IMS) mit i
 
 Informationen zum Konfigurieren der Campaign Classic v7-Verbindung mit dem Adobe Identity Management Service (IMS) finden Sie [dieser Seite](../../integrations/using/about-adobe-id.md).
 
-Adobe ID Erfahren Sie nach Abschluss der Konfiguration in der Dokumentation zu Campaign v8 [Konsole) , wie Sie eine Verbindung zu Campaign mit Ihrer ](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/connect){target=_blank} herstellen.
+Adobe ID Erfahren Sie nach Abschluss der Konfiguration in der Dokumentation zu Campaign v8 [Konsole) , wie Sie eine Verbindung zu Campaign mit Ihrer &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/connect){target=_blank} herstellen.
 
 
 ### Anmeldung mit einem Login/Passwort
