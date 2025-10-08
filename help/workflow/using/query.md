@@ -6,10 +6,10 @@ feature: Workflows, Targeting Activity, Query Editor
 hide: true
 hidefromtoc: true
 exl-id: 20d03627-cd56-46da-bc02-73b48a02a350
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 9df46ed923831ffdfb28acddfbc371cecafb251c
 workflow-type: tm+mt
-source-wordcount: '1694'
-ht-degree: 100%
+source-wordcount: '1693'
+ht-degree: 98%
 
 ---
 
@@ -30,7 +30,7 @@ Weitere Informationen zu Beispielen für Abfragen finden Sie in diesem [Abschnit
 
 Weitere Informationen zum Verwenden und Verwalten zusätzlicher Daten finden Sie unter [Hinzufügen von Daten](#adding-data).
 
-Klicken Sie auf den Link **[!UICONTROL Abfrage bearbeiten...]** und gehen Sie wie folgt vor, um Zielgruppentyp, Beschränkungen und Auswahlkriterien der anzusprechenden Population zu definieren:
+Klicken Sie auf den Link **[!UICONTROL Abfrage bearbeiten...]** und gehen Sie wie folgt vor, um Zielgruppenbestimmungstyp, Beschränkungen und Auswahlkriterien der anzusprechenden Population zu definieren:
 
 1. Wählen Sie zunächst Zielgruppen- und Filterdimension aus. Standardmäßig wird die Zielgruppe aus den Empfängern ausgewählt. Die vorgeschlagenen Einschränkungsfilter sind dieselben wie bei der Zielgruppenbestimmung in einem Versand.
 
@@ -38,11 +38,11 @@ Klicken Sie auf den Link **[!UICONTROL Abfrage bearbeiten...]** und gehen Sie wi
 
    Filterdimensionen ermöglichen die spezifische Auswahl der Elemente, beispielsweise nach Kriterien wie Verträgen, Altersgruppen etc.
 
-   Weitere Informationen hierzu finden Sie unter [Zielgruppen- und Filterdimension](building-a-workflow.md#targeting-and-filtering-dimensions).
+   Weitere Informationen hierzu finden Sie unter [Zielgruppenbestimmungs- und Filterdimension](building-a-workflow.md#targeting-and-filtering-dimensions).
 
    ![](assets/s_user_segmentation_query_edit.png)
 
-   Eine Abfrage kann sich bei Bedarf auf die Daten der eingehenden Transition beziehen. Aktivieren Sie in diesem Fall bei der Auswahl der Zielgruppen- und Filterdimension die Option **[!UICONTROL Temporäres Schema]**.
+   Eine Abfrage kann sich bei Bedarf auf die Daten der eingehenden Transition beziehen. Aktivieren Sie in diesem Fall bei der Auswahl der Zielgruppenbestimmungs- und Filterdimension die Option **[!UICONTROL Temporäres Schema]**.
 
    ![](assets/query_temporary_table.png)
 
@@ -56,7 +56,7 @@ Klicken Sie auf den Link **[!UICONTROL Abfrage bearbeiten...]** und gehen Sie wi
 
    Darüber hinaus können Sie die gefilterten Daten gruppieren, indem Sie das entsprechende Kästchen aktivieren. Hierzu muss sich die Filterdimension von der Zielgruppendimension der Abfrage unterscheiden.  Weiterführende Informationen finden Sie in [diesem Abschnitt](querying-using-grouping-management.md).
 
-   Sie können auch weitere Kriterien hinzufügen, indem Sie den Expression Builder verwenden und ihn mit den logischen Optionen AND, OR und EXCEPT kombinieren. Sie können dann die **[!UICONTROL Entsprechende SQL-Abfrage...]** für Ihre Kriterienkombination anzeigen. Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](../../platform/using/defining-filter-conditions.md#building-expressions).
+   Sie können auch weitere Kriterien hinzufügen, indem Sie den Expression Builder verwenden und ihn mit den logischen Optionen AND, OR und EXCEPT kombinieren. Sie können dann die **[!UICONTROL Entsprechende SQL-Abfrage...]** für Ihre Kriterienkombination anzeigen. Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](../../platform/using/about-queries-in-campaign.md).
 
    Speichern Sie Ihren Filter, um ihn später erneut verwenden zu können.
 
@@ -64,7 +64,7 @@ Klicken Sie auf den Link **[!UICONTROL Abfrage bearbeiten...]** und gehen Sie wi
 
 ## Hinzufügen von Daten {#adding-data}
 
-Es besteht die Möglichkeit, in Workflows zusätzliche Informationen über die Zielgruppe zu verwenden. Dies können beispielsweise Versicherungsnummern, Abonnements von bestimmten Newslettern oder die Herkunft der Empfänger sein. Diese Informationen können entweder aus der Adobe Campaign-Datenbank oder aus externen Datenbanken stammen.
+Es besteht die Möglichkeit, in Workflows zusätzliche Informationen über die Zielpopulation zu verwenden. Dies können beispielsweise Versicherungsnummern, Abonnements von bestimmten Newslettern oder die Herkunft der Empfänger sein. Diese Informationen können entweder aus der Adobe Campaign-Datenbank oder aus externen Datenbanken stammen.
 
 Die Auswahl dieser Zusatzinformationen erfolgt über den Link **[!UICONTROL Daten hinzufügen...]**.
 
@@ -163,7 +163,7 @@ In folgendem Beispiel sollen alle Männer zwischen 18 und 30 Jahre identifiziert
 * schema
 * recCount
 
-Anhand der drei Werte lässt sich die durch die Abfrage ermittelte Population identifizieren. **[!UICONTROL tableName]** ist der Name der Tabelle, welche die Kennungen der Zielgruppe enthält, **[!UICONTROL schema]** ist das Schema der Population, (in der Regel nms:recipient) und **[!UICONTROL recCount]** ist die Anzahl der Elemente in der Tabelle.
+Anhand der drei Werte lässt sich die durch die Abfrage ermittelte Population identifizieren. **[!UICONTROL tableName]** ist der Name der Tabelle, die die Zielkennungen aufzeichnet, **[!UICONTROL schema]** ist das Schema der Population (normalerweise nms:recipient) und **[!UICONTROL recCount]** die Anzahl der Elemente in der Tabelle.
 
 Dieser Wert ist das Schema der Arbeitstabelle. Dieser Parameter ist für alle Transitionen mit **[!UICONTROL tableName]** und **[!UICONTROL schema]** gültig.
 
@@ -197,7 +197,7 @@ Im folgenden Abschnitt finden Sie Best Practices zur Optimierung der in Adobe Ca
 * Vorsicht vor Funktionen wie `Lower(...)`. Wenn die Funktion „Lower“ verwendet wird, wird der Index nicht verwendet.
 * Überprüfen Sie Abfragen mit der Anweisung „Like“ oder den Anweisungen „Upper“ und „Lower“ sorgfältig. Wenden Sie „Upper“ auf die Benutzereingabe an, nicht auf das Datenbankfeld.
 
-  Weitere Informationen zu Funktionen finden Sie in [diesem Abschnitt](../../platform/using/defining-filter-conditions.md#list-of-functions).
+  Weitere Informationen zu Funktionen finden Sie in [diesem Abschnitt](../../platform/using/about-queries-in-campaign.md).
 
 ### Filterdimensionen {#filtering-dimensions}
 

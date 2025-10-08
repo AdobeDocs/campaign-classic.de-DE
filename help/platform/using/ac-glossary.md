@@ -6,7 +6,7 @@ feature: Overview
 role: User, Data Architect
 level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
-source-git-commit: d56038fc8baf766667d89bb73747c20ec041124c
+source-git-commit: 9df46ed923831ffdfb28acddfbc371cecafb251c
 workflow-type: tm+mt
 source-wordcount: '6002'
 ht-degree: 99%
@@ -272,7 +272,7 @@ Weitere Informationen über [Verteiltes Marketing](../../distributed/using/about
 
 Die Werteverteilung ist ein Tool, das die Verteilung von Werten eines in der Datenbank vorhandenen Schemaattributs anzeigt. Auf diese Weise können Sie feststellen, welche Werte verfügbar sind, wie viele Werte es gibt und wie hoch die Prozentsätze sind. Außerdem können Sie bei der Erstellung einer Abfrage oder eines Ausdrucks Probleme mit der Groß- und Kleinschreibung von Werten vermeiden.
 
-Weitere Informationen über [Werteverteilung](../../platform/using/defining-filter-conditions.md#selecting-data-to-extract)
+Weitere Informationen über [Werteverteilung](../../platform/using/about-queries-in-campaign.md)
 +++
 
 +++**Delegation von Domains**

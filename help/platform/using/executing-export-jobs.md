@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 94fc473a-dc49-41e8-b572-51c162b09996
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 9df46ed923831ffdfb28acddfbc371cecafb251c
 workflow-type: tm+mt
 source-wordcount: '1037'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -19,15 +19,15 @@ ht-degree: 98%
 
 
 
-Mit Exportvorgängen können Sie Daten aus der Datenbank aufrufen und extrahieren: Kontakte, Kunden, Listen, Segmente usw.
+Mit Exportaufträgen können Sie Daten aus der Datenbank aufrufen und extrahieren: Kontakte, Kundinnen und Kunden, Listen, Segmente usw.
 
-Beispielsweise kann es nützlich sein, Tracking-Daten für Kampagnen (Tracking-Verlauf usw.) in einer Tabelle zu verwenden. Die Ausgabedaten können in den Formaten &quot;txt&quot;, &quot;CSV&quot;, &quot;TAB&quot; oder &quot;XML&quot; vorliegen.
+So kann es sinnvoll sein, Tracking-Daten von Kampagnen (Tracking-Verlauf usw.) in einer Tabelle zu verwenden. Die Ausgabedaten können in den Formaten *.txt, *.csv, *.tab oder *.xml vorliegen.
 
 Mit dem Export-Assistenten können Sie einen Export konfigurieren, seine Optionen definieren und die Ausführung starten. Es handelt sich dabei um eine Reihe von Bildschirmen, deren Inhalt von der Art des Exports (einfach oder mehrfach) und den Rechten des Benutzers abhängt.
 
 Der Export-Assistent wird nach der Erstellung eines neuen Exportvorgangs angezeigt (siehe [Erstellen von Import- und Exportaufrägen](../../platform/using/creating-import-export-jobs.md).
 
-## 1. Schritt – Exportvorlage auswählen {#step-1---choosing-the-export-template}
+## &#x200B;1. Schritt – Exportvorlage auswählen {#step-1---choosing-the-export-template}
 
 Beim Start des Export-Assistenten muss zunächst eine Vorlage ausgewählt werden. Um beispielsweise den Export von Empfangenden zu konfigurieren, die sich kürzlich angemeldet haben, gehen Sie folgendermaßen vor:
 
@@ -43,7 +43,7 @@ Beim Start des Export-Assistenten muss zunächst eine Vorlage ausgewählt werden
 1. Geben Sie im Feld **[!UICONTROL Titel]** einen Namen für den Export ein und fügen Sie eventuell eine Beschreibung hinzu.
 1. Wählen Sie den Exporttyp aus. Es gibt zwei mögliche Exporttypen: **[!UICONTROL Einfacher Export]**, um nur eine Datei zu exportieren, und **[!UICONTROL Mehrfacher Export]**, um mehrere Dateien in einer Ausführung zu exportieren, u. U. mit verschiedenen Quelldokumenttypen.
 
-## 2. Schritt – Dateityp auswählen {#step-2---type-of-file-to-export}
+## &#x200B;2. Schritt – Dateityp zum exportieren auswählen {#step-2---type-of-file-to-export}
 
 Wählen Sie den Typ des zu exportierenden Dokuments aus, d. h. das Schema der zu exportierenden Daten.
 
@@ -65,7 +65,7 @@ Bei einem vom Knoten **[!UICONTROL Vorgänge]** ausgehenden Export wird standard
 
   Hier ist die Angabe des Datums der letzten Änderung erforderlich. Dies geschieht durch Abruf aus einem Feld oder durch Berechnung.
 
-## 3. Schritt – Ausgabeformat bestimmen {#step-3---defining-the-output-format}
+## &#x200B;3. Schritt – Ausgabeformat bestimmen {#step-3---defining-the-output-format}
 
 Wählen Sie nun das Ausgabeformat der Exportdatei aus. Mögliche Formate sind Text, Text in festen Spalten, CSV und XML.
 
@@ -76,7 +76,7 @@ Wählen Sie nun das Ausgabeformat der Exportdatei aus. Mögliche Formate sind Te
 * Geben Sie das Format von Datum und Zahl an. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Bearbeiten]** für das entsprechende Feld und verwenden Sie den Editor.
 * Bei Feldern, die Aufzählungswerte enthalten, können Sie **[!UICONTROL Titel anstelle der internen Werte der Auflistungen exportieren]** auswählen. Beispielsweise kann der Titel im Formular gespeichert werden **1 = Herr**, **2 = Fräulein**, **3 = Frau**. Wenn diese Option ausgewählt wird, werden **Mr.**, **Miss** und **Mrs.** exportiert.
 
-## 4. Schritt – Daten auswählen {#step-4---data-selection}
+## &#x200B;4. Schritt – Daten auswählen {#step-4---data-selection}
 
 Wählen Sie die zu exportierenden Felder aus. Gehen Sie dazu folgendermaßen vor:
 
@@ -85,21 +85,21 @@ Wählen Sie die zu exportierenden Felder aus. Gehen Sie dazu folgendermaßen vor
 
    ![](assets/s_ncs_user_export_wizard04.png)
 
-1. Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**, um Funktionen aufzurufen. Weitere Informationen hierzu finden Sie unter [Funktionsliste](../../platform/using/defining-filter-conditions.md#list-of-functions).
+1. Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**, um Funktionen aufzurufen. Weitere Informationen hierzu finden Sie unter [Funktionsliste](../../platform/using/about-queries-in-campaign.md).
 
-## 5. Schritt – Spalten sortieren {#step-5---sorting-columns}
+## &#x200B;5. Schritt – Spalten sortieren {#step-5---sorting-columns}
 
 An dieser Stelle kann die Sortierreihenfolge der einzelnen Spalten festgelegt werden.
 
 ![](assets/s_ncs_user_export_wizard05.png)
 
-## 6. Schritt – Filterbedingungen {#step-6---filter-conditions-}
+## &#x200B;6. Schritt – Filterbedingungen {#step-6---filter-conditions-}
 
 Um nicht alle Datensätze zu exportieren, haben Sie die Möglichkeit, Filterbedingungen zu konfigurieren. Die Vorgehensweise entspricht der Zielgruppenbestimmung im Versandassistenten. Mehr dazu erfahren Sie auf [dieser Seite](../../delivery/using/steps-defining-the-target-population.md).
 
 ![](assets/s_ncs_user_export_wizard05_b.png)
 
-## 7. Schritt – Daten formatieren {#step-7---data-formatting}
+## &#x200B;7. Schritt – Daten formatieren {#step-7---data-formatting}
 
 An dieser Stelle können die Reihenfolge der Spalten in der Ausgabedatei und ihre Titel festgelegt sowie die Schreibweise der Quelldaten angepasst werden.
 
@@ -115,19 +115,19 @@ An dieser Stelle können die Reihenfolge der Spalten in der Ausgabedatei und ihr
 
 * Verwenden Sie die Schaltfläche **[!UICONTROL Berechnetes Feld hinzufügen]**, um eine neue Spalte zu erstellen (z. B. eine Spalte mit Vor- und Nachnamen). Weitere Informationen hierzu finden Sie unter [Berechnete Felder](../../platform/using/executing-import-jobs.md#calculated-fields).
 
-Wenn Sie Sammlungselemente exportieren (beispielsweise Abonnements von Empfängern, Listen, denen sie angehören usw.), müssen Sie angeben, wie viele Elemente exportiert werden sollen.
+Wenn Sie eine Sammlung von Elementen exportieren (beispielsweise Abonnements von Empfängerinnen und Empfängern, Listen, denen sie angehören usw.), müssen Sie angeben, wie viele Elemente der Sammlung exportiert werden sollen.
 
 ![](assets/s_ncs_user_export_wizard06_c.png)
 
-## 8. Schritt – Datenvorschau {#step-8---data-preview}
+## &#x200B;8. Schritt – Datenvorschau {#step-8---data-preview}
 
-Klicken Sie auf **[!UICONTROL Datenvorschau starten]**. Standardmäßig werden die ersten 200 Zeilen des Abfrageergebnisses angezeigt. Durch Eingabe eines anderen Werts im Feld **[!UICONTROL Angezeigte Zeilen]** können Sie die Liste Ihren Bedürfnissen gemäß anpassen.
+Klicken Sie auf **[!UICONTROL Datenvorschau starten]**. Standardmäßig werden die ersten 200 Zeilen des Ergebnisses des Exports angezeigt. Durch Eingabe eines anderen Werts im Feld **[!UICONTROL Angezeigte Zeilen]** können Sie die Liste Ihren Bedürfnissen gemäß anpassen.
 
 ![](assets/s_ncs_user_export_wizard07.png)
 
 Durch Klick auf die Registerkarten unten im Fenster können Sie von der Ergebnisansicht in Spalten zur XML-Anzeige wechseln. Sie können außerdem die generierten SQL-Abfragen anzeigen.
 
-## 9. Schritt – Export starten {#step-9---launching-the-export}
+## &#x200B;9. Schritt – Export starten {#step-9---launching-the-export}
 
 Klicken Sie auf die Schaltfläche **[!UICONTROL Starten]**, um den Exportprozess zu beginnen.
 

@@ -5,10 +5,10 @@ description: Bearbeiten von Inhalten
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: 968430d6-b1dd-47f8-8b31-39aaa18bc05c
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 9df46ed923831ffdfb28acddfbc371cecafb251c
 workflow-type: tm+mt
-source-wordcount: '1252'
-ht-degree: 100%
+source-wordcount: '1251'
+ht-degree: 99%
 
 ---
 
@@ -26,7 +26,7 @@ Markieren Sie den gewünschten Baustein und geben Sie mit dem Ausdrucks-Editor i
 
 >[!NOTE]
 >
->Optionen zur erweiterten Bearbeitung finden Sie auf [dieser Seite](../../platform/using/defining-filter-conditions.md#list-of-functions).
+>Optionen zur erweiterten Bearbeitung finden Sie auf [dieser Seite](../../platform/using/about-queries-in-campaign.md).
 
 ![](assets/dce_popup_visibilitycondition.png)
 
@@ -60,7 +60,7 @@ Es besteht die Möglichkeit, Bausteinen wie Eingabe- oder Auswahlfeldern Datenba
 
 Im Eingabefeld **Feld** können Sie das Datenbankfeld auswählen, das dem Formularfeld zugeordnet werden soll.
 
-Standardmäßig werden die in der Tabelle **nms:recipient** verfügbaren Felder zur Auswahl angeboten.
+Standardmäßig werden die Felder in der Tabelle **nms:recipient** angeboten.
 
 ![](assets/dce_field_selection.png)
 

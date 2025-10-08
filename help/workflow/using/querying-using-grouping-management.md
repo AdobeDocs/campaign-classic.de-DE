@@ -6,10 +6,10 @@ feature: Query Editor, Workflows
 hide: true
 hidefromtoc: true
 exl-id: 23bccb48-60ab-46c9-be26-2fa35243d61e
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 9df46ed923831ffdfb28acddfbc371cecafb251c
+workflow-type: tm+mt
+source-wordcount: '312'
+ht-degree: 76%
 
 ---
 
@@ -29,17 +29,17 @@ Im folgenden Beispiel werden die E-Mail-Domains gesucht, die bei früheren Sendu
 
 * Nach welchen Kriterien werden die Daten gruppiert?
 
-  Nach E-Mail-Domain mit einer Primärschlüsselanzahl von über 30. Hierfür wird die Funktion **[!UICONTROL Gruppierungen verwalten (GROUP BY + HAVING)]** ) verwendet, welche sowohl die Gruppierung (&quot;group by&quot;) als auch die Filterung (&quot;having&quot;) der Daten erlaubt, die gruppiert wurden.****
+  Basierend auf der E-Mail-Domain mit einer Anzahl von Primärschlüsseln über 30. Dieser Vorgang wird mit der Option **[!UICONTROL Gruppieren nach +]** ausgeführt. **[!UICONTROL Gruppieren nach +]**: ermöglicht die Gruppierung von Daten („Gruppieren nach„) und die Auswahl der Gruppierung („Gruppieren nach„).
 
 Gehen Sie wie folgt vor:
 
-1. Öffnen Sie das **[!UICONTROL generische Abfragetool]** und wählen Sie die Empfängertabelle (**nms:recipient**).
+1. Öffnen Sie den **[!UICONTROL generischen Abfrage-Editor]** und wählen Sie die Empfängertabelle (**nms:recipient**) aus.
 
    ![](assets/query_editor_02.png)
 
 1. Im Fenster **[!UICONTROL Zu extrahierende Daten]** wählen Sie die Felder **[!UICONTROL E-Mail-Domain]** und **[!UICONTROL Primärschlüssel]** aus. Führen Sie eine Zählung des Felds **[!UICONTROL Primärschlüssel]** durch.
 
-   Weiterführende Informationen zu Primärschlüsselzählungen finden Sie in [diesem Abschnitt](../../platform/using/defining-filter-conditions.md#building-expressions).
+   Weiterführende Informationen zu Primärschlüsselzählungen finden Sie in [diesem Abschnitt](../../platform/using/about-queries-in-campaign.md).
 
 1. Kreuzen Sie die Option **[!UICONTROL Gruppierungen verwalten (GROUP BY + HAVING)]** an.
 
@@ -52,7 +52,7 @@ Gehen Sie wie folgt vor:
 1. Wählen Sie dann im Fenster **[!UICONTROL Datenfilter]** die Option **[!UICONTROL Filterbedingungen]**. Wechseln Sie zum Fenster **[!UICONTROL Zielelemente]** und klicken Sie auf **[!UICONTROL Weiter]**.
 1. Klicken Sie im Fenster **[!UICONTROL Gruppierung der Daten]** auf **[!UICONTROL Hinzufügen]** und wählen Sie das Feld **[!UICONTROL E-Mail-Domain]** aus.
 
-   Die Gruppierung (GROUP BY) erfolgt an dieser Stelle. Das Fenster wird nur angezeigt, wenn die Option **[!UICONTROL Gruppierungen verwalten (GROUP BY + HAVING)]** angekreuzt wurde.
+   Dieses Datengruppierungsfenster wird nur angezeigt, wenn das Kontrollkästchen **[!UICONTROL Gruppierungen verwalten (GROUP BY + HAVING])** wurde.
 
    ![](assets/query_editor_blocklist_04.png)
 

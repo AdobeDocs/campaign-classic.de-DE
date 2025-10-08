@@ -6,7 +6,7 @@ feature: Workflows, Targeting Activity, Data Management
 hide: true
 hidefromtoc: true
 exl-id: 9f5735d2-73b8-469f-bc10-482c99cdd4a1
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 9df46ed923831ffdfb28acddfbc371cecafb251c
 workflow-type: tm+mt
 source-wordcount: '949'
 ht-degree: 100%
@@ -27,11 +27,11 @@ Geben Sie im Feld **[!UICONTROL Aktionstyp]** an, auf welche Weise die Daten akt
 * **[!UICONTROL Hinzufügen]**: fügt nur neue Daten hinzu (existierende Daten werden nicht verändert).
 * **[!UICONTROL Aktualisieren]**: aktualisiert existierende Daten (fügt keine neuen Datensätze hinzu).
 * **[!UICONTROL Sammlung aktualisieren und fusionieren]**: Aktualisieren Sie Daten und wählen Sie einen primären Datensatz; verknüpfen Sie dann Elemente, die mit den Duplikaten in diesem primären Datensatz verknüpft sind. Anschließend können Duplikate gelöscht werden, ohne dass verwaiste angehängte Elemente erstellt werden.
-* **[!UICONTROL Löschen]** - löscht in der Datenbank existierende Daten.
+* **[!UICONTROL Löschen]**: löscht Daten.
 
 ![](assets/s_advuser_update_data_1.png)
 
-Im Feld **[!UICONTROL Aktualisierungsgröße]** wird bestimmt, wie viele Elemente der eingehenden Transition aktualisiert werden. Bei Angabe von 500 beispielsweise werden die 500 ersten Datensätze aktualisiert.
+Im Feld **[!UICONTROL Batch-Größe]** können Sie festlegen, wie viele Elemente der eingehenden Transition aktualisiert werden sollen. Wenn Sie beispielsweise 500 angeben, werden die ersten 500 verarbeiteten Einträge aktualisiert.
 
 ## Datensatz-Identifizierung {#record-identification}
 
@@ -67,7 +67,7 @@ Die Felder **[!UICONTROL modifiedDate]**, **[!UICONTROL modifiedBy]**, **[!UICON
 
 Nur Datensätze, die mindestens eine Änderung aufweisen, werden aktualisiert. Alle anderen bleiben unverändert.
 
-Über den Link **[!UICONTROL Erweiterte Parameter]** können weitere Optionen zur Aktualisierung und den Umgang mit Dubletten definiert werden:
+Über den Link **[!UICONTROL Erweiterte Parameter]** können weitere Optionen zur Aktualisierung und den Umgang mit Duplikaten definiert werden:
 
 * **[!UICONTROL Automatische Schlüsselverwaltung deaktivieren]**;
 * **[!UICONTROL Audit deaktivieren]**;
@@ -82,7 +82,7 @@ Erzeugt eine ausgehende Transition im Anschluss an die Aktivität. Im Allgemeine
 
 **[!UICONTROL Ausgehende Transition für die Zurückweisungen erzeugen]**
 
-Erzeugt eine ausgehende Transition, welche die Datensätze enthält, die im Zuge der Aktualisierung nicht korrekt verarbeitet werden konnten (z. B. Dubletten). Im Allgemeinen bildet die Daten-Update-Aktivität den Schlusspunkt eines Zielgruppen-Workflows. Aus diesem Grund, wird die ausgehende Transition nicht standardmäßig erzeugt.
+Erzeugt eine ausgehende Transition, welche die Datensätze enthält, die im Zuge der Aktualisierung nicht korrekt verarbeitet werden konnten (z. B. Duplikate). Im Allgemeinen bildet die Daten-Update-Aktivität den Schlusspunkt eines Zielgruppen-Workflows. Aus diesem Grund, wird die ausgehende Transition nicht standardmäßig erzeugt.
 
 ## Aktualisierung und Fusion von Sammlungen {#updating-and-merging-collections}
 
@@ -102,7 +102,7 @@ Die Aktualisierung mit Fusion von Sammlungen ermöglicht die Aktualisierung von 
 
 1. Geben Sie die in den Hauptdatensatz zu verschiebenden Sammlungen und die zu aktualisierenden Felder an.
 
-   Geben Sie die Regeln an, die für diese gelten, sobald ein oder mehrere sekundäre Einträge identifiziert wurden. Dazu können Sie den Ausdruckseditor verwenden. Weiterführende Informationen dazu finden Sie in diesem [Abschnitt](../../platform/using/defining-filter-conditions.md#building-expressions). Geben Sie beispielsweise an, dass bei Werten aus verschiedenen möglichen Datensätzen jeweils der zuletzt aktualisierte Wert beibehalten werden soll.
+   Geben Sie die Regeln an, die für diese gelten, sobald ein oder mehrere sekundäre Einträge identifiziert wurden. Dazu können Sie den Ausdruckseditor verwenden. Weiterführende Informationen dazu finden Sie in diesem [Abschnitt](../../platform/using/about-queries-in-campaign.md). Geben Sie beispielsweise an, dass bei Werten aus verschiedenen möglichen Datensätzen jeweils der zuletzt aktualisierte Wert beibehalten werden soll.
 
    Geben Sie die Bedingungen zur Berücksichtigung der Regel an.
 
@@ -110,7 +110,7 @@ Die Aktualisierung mit Fusion von Sammlungen ermöglicht die Aktualisierung von 
 
    Die Sammlungsfusion ermöglicht die Verschmelzung von heterogenen Daten wie z. B. bei der Liste der Abonnements eines Empfängers. Mithilfe der Regeln kann einer neuer, auf den sekundären Datensätzen beruhender Abonnementverlauf erstellt oder die Liste der Abonnements eines sekundären Datensatzes zum primären Datensatz verschoben werden.
 
-1. Im **[!UICONTROL Dubletten]**-Tab der **[!UICONTROL Erweiterten Parameter]** besteht die Möglichkeit, die Reihenfolge anzugeben, in der die sekundären Datensätze verarbeitet werden sollen.
+1. Auf der Registerkarte **[!UICONTROL Duplikate]** der **[!UICONTROL Erweiterten Parameter]** besteht die Möglichkeit, die Reihenfolge anzugeben, in der die sekundären Datensätze verarbeitet werden sollen.
 
    ![](assets/update_and_merge_collections3.png)
 
@@ -118,7 +118,7 @@ Die Daten der sekundären Datensätze werden dem Hauptdatensatz zugeordnet, wenn
 
 ## Anwendungsbeispiel: Daten-Update nach einer Anreicherung {#example--update-data-following-an-enrichment}
 
-Ein Beispiel für ein Daten-Update nach einer Anreicherungsaktivität finden Sie im Anwendungsbeispiel zur Erstellung einer Zusammenfassungsliste in [Schritt 2: Schreiben der angereicherten Daten in die Tabelle &quot;Bestellungen&quot;](creating-a-summary-list.md#step-2--writing-enriched-data-to-the--purchases--table).
+Ein Beispiel für ein Daten-Update nach einer Anreicherungsaktivität finden Sie im Anwendungsbeispiel zur Erstellung einer Zusammenfassungsliste in [Schritt 2: Schreiben der angereicherten Daten in die Tabelle &quot;Käufe&quot;](creating-a-summary-list.md#step-2--writing-enriched-data-to-the--purchases--table).
 
 ## Eingabeparameter {#input-parameters}
 
