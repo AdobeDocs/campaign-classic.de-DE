@@ -6,10 +6,10 @@ title: Campaign Classic v7 – Handbuch
 user-guide-description: Produktdokumentation für Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 11c81e4f04b978381d3803e2b60e23ed791eee44
+source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
 workflow-type: tm+mt
-source-wordcount: '2567'
-ht-degree: 97%
+source-wordcount: '2570'
+ht-degree: 96%
 
 ---
 
@@ -37,6 +37,7 @@ ht-degree: 97%
    + [Durchsuchen und Anpassen von Listen - AUSGEBLENDET](platform/using/adobe-campaign-ui-lists.md)
    + [Auflistungen - HIDDEN](platform/using/managing-enumerations.md)
    + [Campaign-Connectoren](platform/using/about-connectors.md)
+   + [Erstellen von Abfragen in Campaign](platform/using/about-queries-in-campaign.md)
    + Häufig gestellte Fragen {#faq}
       + [Die häufigsten Fragen](platform/using/common-questions.md)
       + [Globale Konzepte](platform/using/faq-key-concepts.md)
@@ -84,10 +85,9 @@ ht-degree: 97%
          + [Best Practices beim Import und Export](platform/using/import-export-best-practices.md)
          + [Best Practices für die Nutzung von SFTP-Servern und die Fehlerbehebung](platform/using/sftp-server-usage.md)
    + Filtern von Daten {#filtering-data}
-      + [Filteroptionen](platform/using/filtering-options.md)
-      + [Erstellen von Filtern](platform/using/creating-filters.md)
-      + [Anwendungsbeispiel](platform/using/use-case.md)
-   + [Erstellen von Abfragen in Campaign](platform/using/about-queries-in-campaign.md)
+      + [Filteroptionen - AUSGEBLENDET](platform/using/filtering-options.md)
+      + [Filter erstellen - AUSGEBLENDET](platform/using/creating-filters.md)
+      + [Anwendungsfall: Ausgeblendet](platform/using/use-case.md)
    + [Schritte zum Erstellen einer Abfrage - AUSGEBLENDET](platform/using/steps-to-create-a-query.md)
    + [Filterbedingungen definieren - HIDDEN](platform/using/defining-filter-conditions.md)
    + Berechtigungen {#permissions}

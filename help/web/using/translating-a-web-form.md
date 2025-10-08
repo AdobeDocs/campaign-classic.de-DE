@@ -5,10 +5,10 @@ description: Übersetzen eines Web-Formulars
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Web Forms
 exl-id: 72959141-ca18-4512-80c7-239efd31f711
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
 workflow-type: tm+mt
-source-wordcount: '1641'
-ht-degree: 100%
+source-wordcount: '1646'
+ht-degree: 99%
 
 ---
 
@@ -70,7 +70,7 @@ Bei noch nicht übersetzten Zeichenfolgen ist das Feld **[!UICONTROL Text]** lee
 
 ### Strings filtern {#filtering-strings}
 
-Standardmäßig wird jede Übersetzungssprache der Web-Anwendung angezeigt. Es gibt zwei Standardfilter: Sprache und Status. Wählen Sie die Schaltfläche **[!UICONTROL Filter]** und dann die Option **[!UICONTROL Nach Sprache oder Status]** aus, um die jeweiligen Dropdown-Listen anzuzeigen. Sie können auch einen erweiterten Filter erstellen. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../platform/using/creating-filters.md#creating-an-advanced-filter).
+Standardmäßig wird jede Übersetzungssprache der Web-Anwendung angezeigt. Es gibt zwei Standardfilter: Sprache und Status. Wählen Sie die Schaltfläche **[!UICONTROL Filter]** und dann die Option **[!UICONTROL Nach Sprache oder Status]** aus, um die jeweiligen Dropdown-Listen anzuzeigen. Sie können auch einen erweiterten Filter erstellen. Weitere Informationen zu Filtern finden Sie in der Dokumentation zu [ v8 (Konsole](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
 
 ![](assets/s_ncs_admin_survey_trad_tab_en.png)
 
@@ -469,7 +469,7 @@ Gehen Sie wie folgt vor, um eine Sprache hinzuzufügen:
 
 Um Web-Anwendungen in andere Sprachen als die Standardsprachen zu übersetzen (siehe [Anzeigesprache in Formularen ändern](#changing-forms-display-language)), müssen Sie eine neue Übersetzungssprache hinzufügen.
 
-1. Klicken Sie auf den Knoten **[!UICONTROL Administration > Plattform > Auflistungen]** der Adobe Campaign-Baumstruktur und wählen Sie **[!UICONTROL Für die Übersetzung verfügbare Sprachen]** aus der Liste aus. Die Liste der verfügbaren Übersetzungen wird im unteren Bereich des Fensters angezeigt.
+1. Klicken Sie auf den Knoten **[!UICONTROL Administration > Plattform > Aufzählungen]** der Adobe Campaign-Baumstruktur und wählen Sie **[!UICONTROL Für die Übersetzung verfügbare Sprachen]** aus der Liste aus. Die Liste der verfügbaren Übersetzungen wird im unteren Bereich des Fensters angezeigt.
 
    ![](assets/s_ncs_admin_survey_trad_new_itemized_list_1.png)
 

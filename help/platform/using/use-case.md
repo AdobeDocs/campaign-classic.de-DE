@@ -3,17 +3,16 @@ product: campaign
 title: Anwendungsbeispiel
 description: Anwendungsbeispiel
 feature: Subscriptions, Email, Data Management
-badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: filtering-data
 exl-id: 85ded096-7d27-41b3-8ef2-93f5ca8def82
 hide: true
 hidefromtoc: true
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
 workflow-type: tm+mt
-source-wordcount: '285'
-ht-degree: 100%
+source-wordcount: '283'
+ht-degree: 92%
 
 ---
 
@@ -36,7 +35,7 @@ Gehen Sie wie folgt vor:
 
    ![](assets/s_ncs_user_filter_choose_schema.png)
 
-1. Wählen Sie das Schema Abonnements (nms:subscription) aus und klicken Sie auf **[!UICONTROL OK.]**
+1. Wählen Sie das Abonnementschema (nms:subscription) aus und klicken Sie auf **[!UICONTROL OK]**.
 
    ![](assets/s_ncs_user_filter_select_schema.png)
 
@@ -48,7 +47,8 @@ Gehen Sie wie folgt vor:
 
    ![](assets/s_ncs_user_filter_view_schema.png)
 
-   Diese Felder werden für die Bestimmung der Filterbedingungen im Filtereditor zugänglich sein. Die Bestimmung eines Anwendungsfilters erfolgt auf die gleiche Weise wie die eines erweiterten Filters. Weitere Informationen finden Sie unter [Erweiterte Filter erstellen](../../platform/using/creating-filters.md#creating-an-advanced-filter).
+   Diese Felder werden für die Bestimmung der Filterbedingungen im Filtereditor zugänglich sein. Die Bestimmung eines Anwendungsfilters erfolgt auf die gleiche Weise wie die eines erweiterten Filters. Weitere Informationen zu Filtern finden Sie in der Dokumentation zu [ v8 (Konsole](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+
 
 1. Erstellen Sie einen neuen Abonnementfilter, um nur solche Abonnements anzuzeigen, für die kein E-Mail-Format bestimmt wurde:
 

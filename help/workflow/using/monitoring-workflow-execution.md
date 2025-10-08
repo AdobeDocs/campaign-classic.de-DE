@@ -6,10 +6,10 @@ feature: Workflows
 hide: true
 hidefromtoc: true
 exl-id: d589180b-8e1d-4149-9b16-3f541018a41f
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
 workflow-type: tm+mt
-source-wordcount: '2100'
-ht-degree: 100%
+source-wordcount: '2101'
+ht-degree: 99%
 
 ---
 
@@ -157,11 +157,11 @@ Die Ausführung eines - manuell oder aufgrund eines Fehlers - ausgesetzten Workf
 
 Verwenden Sie die Schaltfläche **[!UICONTROL Neu starten]**, um alle Workflow-Aktivitäten erneut auszuführen.
 
-Änderungen an bereits ausgeführten Aktivitäten werden somit nicht berücksichtigt, wenn die Workflow-Ausführung wiederaufgenommen wird.
+Änderungen an bereits ausgeführten Aktivitäten werden somit nicht berücksichtigt, wenn die Workflow-Ausführung neu gestartet wird.
 
-Änderungen an noch nicht ausgeführten Aktivitäten werden jedoch berücksichtigt, wenn die Workflow-Ausführung wiederaufgenommen wird.
+Änderungen an noch nicht ausgeführten Aktivitäten werden jedoch berücksichtigt, wenn die Workflow-Ausführung neu gestartet wird.
 
-Änderungen an der ausgesetzten Aktivität werden bei der Wiederaufnahme der Workflow-Ausführung unter Umständen nicht korrekt berücksichtigt.
+Änderungen an der ausgesetzten Aktivität werden beim Neustart der Workflow-Ausführung unter Umständen nicht korrekt berücksichtigt.
 
 Es wird daher empfohlen, die Workflow-Ausführung nach Änderungen komplett neu zu starten.
 
@@ -222,7 +222,7 @@ instance.vars.isRunning = false
 Bitte beachten Sie Folgendes:
 
 * Den aktuellen Wert der Instanzvariable können Sie im Tab **Variablen** im Workflow **Eigenschaften** prüfen.
-* Beim erneuten Start eines Workflows werden die Instanzvariablen zurückgesetzt.
+* Beim Neustart eines Workflows werden die Instanzvariablen zurückgesetzt.
 * In JavaScript ist ein nicht definierter Wert in einem Test auf false gesetzt. Dadurch kann die Instanzvariable noch vor ihrer Initialisierung geprüft werden.
 * Sie können die aufgrund dieses Mechanismus nicht verarbeiteten Aktivitäten überwachten, indem Sie dem Initialisierungsscript des &quot;Nein&quot;-Zweigs eine Protokollierungsanweisung hinzufügen.
 
@@ -281,7 +281,4 @@ Zusätzlich zu diesen Ansichten können Sie Filterordner einrichten, mit denen S
 
 ![](assets/workflow-monitoring-filter.png)
 
-Weitere Informationen finden Sie in den folgenden Abschnitten:
-
-* [Erweiterte Filter erstellen](../../platform/using/creating-filters.md#creating-an-advanced-filter)
-* [Filter speichern](../../platform/using/creating-filters.md#saving-a-filter)
+Weitere Informationen zu Filtern finden Sie in der Dokumentation zu [ v8 (Konsole](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.

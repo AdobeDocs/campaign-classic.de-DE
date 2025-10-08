@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 8e308a9f-14a4-4a25-9fd0-8d4bdbcf74ce
-source-git-commit: ec774cc10a69a694b3c2bf5a6f662afd12a1435a
+source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 100%
+source-wordcount: '607'
+ht-degree: 96%
 
 ---
 
@@ -73,7 +73,7 @@ Der Datenverantwortliche muss dafür sorgen, dass das Feld ausgefüllt wird und 
 
 Um die Werte auszufüllen, können mehrere Methoden verwendet werden:
 
-* Bearbeiten der Details des Empfängers über die Campaign-Oberfläche
+* Verwenden der Benutzeroberfläche von Campaign durch Bearbeiten der Empfängerdetails
 * API verwenden
 * Über einen Workflow zum Datenimport
 
@@ -87,6 +87,7 @@ Stellen Sie sicher, dass Sie die personenbezogenen Daten in den Profilen von Ben
 
    ![](assets/privacy-ccpa-6.png)
 
-1. Sie können auf die Spalte klicken, um die Empfänger nach den Opt-out-Informationen zu sortieren. Sie können auch einen Filter erstellen, um nur Empfänger anzuzeigen, die sich abgemeldet haben. Weitere Informationen zum Erstellen von Filtern finden Sie in [diesem Abschnitt](../../platform/using/creating-filters.md).
+1. Sie können auf die Spalte klicken, um die Empfänger nach den Opt-out-Informationen zu sortieren. Sie können auch einen Filter erstellen, um nur Empfänger anzuzeigen, die sich abgemeldet haben. Weitere Informationen zu Filtern finden Sie in der Dokumentation zu [ v8 (Konsole](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+
 
    ![](assets/privacy-ccpa-7.png)

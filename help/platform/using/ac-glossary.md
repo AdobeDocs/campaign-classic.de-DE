@@ -6,10 +6,10 @@ feature: Overview
 role: User, Data Architect
 level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
-source-git-commit: 9df46ed923831ffdfb28acddfbc371cecafb251c
+source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
 workflow-type: tm+mt
-source-wordcount: '6002'
-ht-degree: 99%
+source-wordcount: '6010'
+ht-degree: 98%
 
 ---
 
@@ -795,7 +795,7 @@ Weitere Informationen über [Pläne](../../campaign/using/setting-up-marketing-c
 
 Vordefinierte Filter sind Abfragen, die zur Wiederverwendung gespeichert wurden. Die Verwendung vordefinierter Filter steigert die Produktivität (da sie nur einmal erstellt werden müssen), verbessert die Konsistenz (da alle Marketer sie verwenden können) und verringert die Anforderungen an Marketer, da sie Code oder Logik verwenden können, die sie möglicherweise nicht in der Lage sind, selbst zu erstellen.
 
-Weitere Informationen über [vordefinierte Filter](../../platform/using/creating-filters.md#filtering-recipients).
+Weitere Informationen zu Filtern finden Sie in der Dokumentation zu [ v8 (Konsole](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
 +++
 
 <!--
