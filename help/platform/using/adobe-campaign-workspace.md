@@ -23,7 +23,7 @@ Sobald Sie mit der Datenbank verbunden sind, rufen Sie die Startseite von Adobe 
 
 ![](assets/d_ncs_user_interface_home.png)
 
-![](assets/do-not-localize/how-to-video.png)[ Campaign-Arbeitsbereich im Video kennenlernen](#video)
+![](assets/do-not-localize/how-to-video.png) [&#x200B; Campaign-Arbeitsbereich im Video kennenlernen](#video)
 
 >[!NOTE]
 >
@@ -59,7 +59,7 @@ Sie können zwischen den folgenden Sprachen wählen:
 * Deutsch
 * Japanisch
 
-Die für Ihre Adobe Campaign Classic-Instanz ausgewählte Sprache kann sich auf Datums- und Uhrzeitformate auswirken. Weitere Informationen hierzu finden Sie in der Dokumentation zu [ v8 (Konsole](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+Die für Ihre Adobe Campaign Classic-Instanz ausgewählte Sprache kann sich auf Datums- und Uhrzeitformate auswirken. Weitere Informationen hierzu finden Sie in der Dokumentation zu [&#x200B; v8 (Konsole](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 
 Weiterführende Informationen zum Erstellen einer Instanz finden Sie auf dieser [Seite](../../installation/using/creating-an-instance-and-logging-on.md).
 
