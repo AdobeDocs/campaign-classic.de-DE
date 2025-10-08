@@ -6,10 +6,10 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
-source-git-commit: 9df46ed923831ffdfb28acddfbc371cecafb251c
+source-git-commit: 1e0e75c6f0dd5a32584291205047f835e951ee9c
 workflow-type: tm+mt
-source-wordcount: '978'
-ht-degree: 83%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -17,13 +17,13 @@ ht-degree: 83%
 
 ## Über die Benutzeroberfläche von Adobe Campaign {#about-adobe-campaign-interface}
 
-Nach Herstellung der Datenbankverbindung gelangen Sie auf die Startseite von Adobe Campaign. Diese ist wie ein Dashboard gestaltet und besteht aus Links und Verknüpfungen, die Ihnen je nach Installation den Zugriff auf Funktionen und die allgemeinen Konfigurationselemente der Plattform erlauben.
+Sobald Sie mit der Datenbank verbunden sind, rufen Sie die Startseite von Adobe Campaign auf. Diese Seite ist Ihr Dashboard: Sie besteht aus Links und Tastaturbefehlen, über die Sie je nach Installation und allgemeinen Plattformkonfigurationen auf Funktionen zugreifen können.
 
-In der Mitte des Fensters haben Sie die Möglichkeit, auf die Online-Dokumentation, das Forum und die Webseite des Supports zuzugreifen.
+Über die Links im mittleren Bereich der Startseite können Sie auf das Dokumentationsportal von Campaign, die Community und die Website der Adobe-Kundenunterstützung zugreifen.
 
 ![](assets/d_ncs_user_interface_home.png)
 
-![](assets/do-not-localize/how-to-video.png) [&#x200B; Campaign-Arbeitsbereich im Video kennenlernen](#video)
+![](assets/do-not-localize/how-to-video.png)[ Campaign-Arbeitsbereich im Video kennenlernen](#video)
 
 >[!NOTE]
 >
@@ -51,7 +51,7 @@ Die Sprache wird bei der Installation der Adobe Campaign Classic-Instanz ausgew�
 
 ![](assets/language.png)
 
-Sie können zwischen fünf verschiedenen Sprachen wählen:
+Sie können zwischen den folgenden Sprachen wählen:
 
 * Englisch (UK)
 * Englisch (US)
@@ -59,7 +59,7 @@ Sie können zwischen fünf verschiedenen Sprachen wählen:
 * Deutsch
 * Japanisch
 
-Die für Ihre Adobe Campaign Classic-Instanz ausgewählte Sprache kann sich auf Datums- und Uhrzeitformate auswirken. Weitere Informationen hierzu finden Sie in der Dokumentation zu [&#x200B; v8 (Konsole](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+Die für Ihre Adobe Campaign Classic-Instanz ausgewählte Sprache kann sich auf Datums- und Uhrzeitformate auswirken. Weitere Informationen hierzu finden Sie in der Dokumentation zu [ v8 (Konsole](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 
 Weiterführende Informationen zum Erstellen einer Instanz finden Sie auf dieser [Seite](../../installation/using/creating-an-instance-and-logging-on.md).
 
@@ -125,7 +125,7 @@ Beim Durchsuchen von Campaign werden die Daten in Listen angezeigt. Sie können 
 
 >[!NOTE]
 >
->Informationen zum Zugreifen auf, Entwerfen und Freigeben von Filtern finden Sie in der Dokumentation [Campaign v8 (Konsole)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/configuration/ui-settings#customize-lists){target=_blank}.
+>Informationen zum Zugreifen auf, Entwerfen und Freigeben von Filtern finden Sie in der Dokumentation [Campaign v8 (Konsole)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
 
 
 ## Arbeiten mit Listen {#manage-and-customize-lists}
@@ -148,4 +148,4 @@ Weitere Informationen zum **Arbeiten mit Aufzählungen** finden Sie in der [Doku
 
 In diesem Video wird der Campaign Classic-Arbeitsbereich vorgestellt.
 
->[!VIDEO](https://video.tv.adobe.com/v/39531?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12)
