@@ -6,10 +6,10 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Monitoring, Deliverability
 role: User
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
 workflow-type: tm+mt
-source-wordcount: '3090'
-ht-degree: 100%
+source-wordcount: '3087'
+ht-degree: 99%
 
 ---
 
@@ -41,8 +41,7 @@ Die Quarantäne und die Blockierungsliste gelten nicht für dasselbe Objekt:
 
 * Die Aufnahme in die **Blockierungsliste** führt dagegen dazu, dass das **Profil** vom Versand ausgeschlossen wird. Dies ist z. B. nach einer Abmeldung (Opt-out) von einem Kanal der Fall. Wenn beispielsweise ein Profil, das auf der Blockierungsliste für den E-Mail-Kanal steht, zwei E-Mail-Adressen hat, werden beide Adressen vom Versand ausgeschlossen.
 
-  Im Abschnitt **[!UICONTROL Nicht mehr kontaktieren]** der Registerkarte **[!UICONTROL Allgemein]** des Profils können Sie überprüfen, ob sich ein Profil auf der Blockierungsliste für einen oder mehrere Kanäle befindet. Weitere Informationen finden Sie in [diesem Abschnitt](../../platform/using/editing-a-profile.md#general-tab).
-
+  Auf die Blockierungsliste setzen Im Abschnitt Nicht mehr kontaktieren der Registerkarte Allgemein des Profils können Sie überprüfen **[!UICONTROL ob sich]** Profil auf der Seite für einen oder mehrere Kanäle ****.
 >[!NOTE]
 >
 >Die Quarantäne beinhaltet den Status **[!UICONTROL Auf die Blockierungsliste gesetzt]**, der angewendet wird, wenn Empfängerinnen bzw. Empfänger Ihre Nachricht als Spam melden oder auf eine SMS mit einem Keyword wie „STOP“ antworten. In diesem Fall wird die betroffene Adresse oder Telefonnummer des Profils unter Quarantäne gestellt und erhält den Status **[!UICONTROL Auf die Blockierungsliste gesetzt]**. Weiterführende Informationen zur Verwaltung von STOP-SMS-Nachrichten finden Sie in [diesem Abschnitt](../../delivery/using/sms-send.md#processing-inbound-messages).
@@ -85,7 +84,7 @@ Folgende Berichte enthalten Informationen zu Adressen in Quarantäne:
 
    * die Adressen, die infolge des Versands neu unter Quarantäne gestellt wurden.
 
-* In **[!UICONTROL Fehler und Bounces]** finden sich neben den Informationen bezüglich der Quarantäne-Adressen auch Hinweise auf die Fehlertypen und die Verteilung der Fehler nach Domains.
+* In **[!UICONTROL Unzustellbare Nachrichten und Bounces]** finden sich neben den Informationen bezüglich der Quarantäne-Adressen auch Hinweise auf die Fehlertypen und die Aufschlüsselung der Fehler nach Domains.
 
 Diese Informationen stehen für alle Sendungen der Plattform (**[!UICONTROL Startseite > Berichte]**) oder versandspezifisch zur Verfügung. Sie haben auch die Möglichkeit, benutzerdefinierte Berichte zu erstellen und die dort angezeigten Daten Ihren Bedürfnissen entsprechend zu konfigurieren.
 
@@ -167,7 +166,7 @@ Nachfolgend befinden sich die empfohlenen Richtlinien für diese Abfrage:
    * **Statusaktualisierung (@lastModified)** `MM/DD/YYYY HH:MM:SS AM` oder später
    * **Statusaktualisierung (@lastModified)** `MM/DD/YYYY HH:MM:SS PM` oder früher 
 
-* Für Campaign Classic v7-Umgebungen mit SMTP-Bounce-Antwortinformationen im Feld **[!UICONTROL Fehlertext]** der Quarantäneliste:
+* Für Campaign Classic v7-Instanzen mit SMTP-Bounce-Antwortinformationen im Feld **[!UICONTROL Fehlertext]** der Quarantäneliste:
 
    * **Fehlertext (Quarantänetext)** enthält „550-5.1.1“ UND **Fehlertext (Quarantänetext)** enthält „support.ISP.com“,
 

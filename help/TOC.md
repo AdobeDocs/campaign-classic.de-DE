@@ -6,10 +6,10 @@ title: Campaign Classic v7 – Handbuch
 user-guide-description: Produktdokumentation für Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: d78fe2e0fd85ba9c23e709a3f30a135cee411230
+source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
 workflow-type: tm+mt
-source-wordcount: '2557'
-ht-degree: 99%
+source-wordcount: '2566'
+ht-degree: 97%
 
 ---
 
@@ -60,12 +60,12 @@ ht-degree: 99%
       + [Opt-out aus dem Verkauf von personenbezogenen Daten](platform/using/privacy-requests-ccpa.md)
    + Profil-Management {#profile-management}
       + [Über Profile](platform/using/about-profiles.md)
-      + [Bearbeiten von Profilen](platform/using/editing-a-profile.md)
-      + [Hinzufügen von Profilen](platform/using/adding-profiles.md)
-      + [Verwalten von Profilen](platform/using/managing-profiles.md)
+      + [Profil bearbeiten - AUSGEBLENDET](platform/using/editing-a-profile.md)
+      + [Profile hinzufügen - AUSGEBLENDET](platform/using/adding-profiles.md)
+      + [Profile verwalten - AUSGEBLENDET](platform/using/managing-profiles.md)
       + [Daten-Update](platform/using/updating-data.md)
-      + [Importieren und Exportieren von Profilen](platform/using/exporting-and-importing-profiles.md)
-   + [Erstellen und Verwalten von Listen](platform/using/creating-and-managing-lists.md)
+      + [Profile importieren und exportieren - AUSGEBLENDET](platform/using/exporting-and-importing-profiles.md)
+      + [Erstellen und Verwalten von Listen](platform/using/creating-and-managing-lists.md)
    + Importieren und Exportieren von Daten {#importing-and-exporting-data}
       + [Erste Schritte mit dem Datenimport und -export](platform/using/get-started-data-import-export.md)
       + [Verwenden von Workflows zum Importieren und Exportieren von Daten](platform/using/import-export-workflows.md)
@@ -382,11 +382,11 @@ ht-degree: 99%
       + [Integration konfigurieren mit [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)
       + [Einfügen eines dynamischen Bilds](integrations/using/inserting-a-dynamic-image.md)
    + ACS-Connector {#acs-connector}
-      + [Erste Schritte mit [!DNL ACS Connector]](integrations/using/acs-connector-principles-and-data-cycle.md)
-      + [Profile synchronisieren](integrations/using/synchronizing-profiles.md)
-      + [Zielgruppen synchronisieren](integrations/using/synchronizing-audiences.md)
-      + [Web-Anwendungen synchronisieren](integrations/using/synchronizing-web-applications.md)
-      + [Fehlerbehebung bei [!DNL ACS Connector]](integrations/using/troubleshooting-the-acs-connector.md)
+      + [Erste Schritte mit [!DNL ACS Connector] - AUSGEBLENDET](integrations/using/acs-connector-principles-and-data-cycle.md)
+      + [Profile synchronisieren - AUSGEBLENDET](integrations/using/synchronizing-profiles.md)
+      + [Synchronisieren von Audiences - AUSGEBLENDET](integrations/using/synchronizing-audiences.md)
+      + [Synchronisieren von Web-Anwendungen - AUSGEBLENDET](integrations/using/synchronizing-web-applications.md)
+      + [Fehlerbehebung bei  [!DNL ACS Connector] - HIDDEN](integrations/using/troubleshooting-the-acs-connector.md)
 + [Automatisieren mit Workflows](workflow/using/about-workflow-automation.md)
 + Automatisieren mit Workflows {#automating-with-workflows}
    + Erste Schritte mit Workflows {#introduction}

@@ -6,10 +6,10 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Monitoring, Email
 role: User
 exl-id: 43779505-9917-4e99-af25-b00a9d29a645
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
 workflow-type: tm+mt
-source-wordcount: '693'
-ht-degree: 100%
+source-wordcount: '685'
+ht-degree: 95%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 Dank der Tracking-Funktionen können Sie mit Adobe Campaign die versendeten Nachrichten verfolgen und das Verhalten der Empfänger überprüfen: Öffnungen, Klicks auf Links, Abmeldungen usw.
 
-Diese Informationen werden auf der Registerkarte **[!UICONTROL Tracking]** des Profils jedes Versandempfängers abgerufen. Auf dieser Registerkarte werden alle verfolgten URL-Links angezeigt, auf die der in der Liste ausgewählte Empfänger geklickt hat. Dies ist die Akkumulation aller URLs, die in den Sendungen verfolgt werden, die noch im Versandbildschirm vorhanden sind. Die Liste kann konfiguriert werden und enthält normalerweise die angeklickte URL, das Datum und die Uhrzeit des Klicks sowie das Dokument, in dem die URL gefunden wurde. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../platform/using/editing-a-profile.md#tracking-tab).
+Diese Informationen werden auf der Registerkarte **[!UICONTROL Tracking]** des Profils jedes Versandempfängers abgerufen. Auf dieser Registerkarte werden alle verfolgten URL-Links angezeigt, auf die der in der Liste ausgewählte Empfänger geklickt hat. Dies ist die Akkumulation aller URLs, die in den Sendungen verfolgt werden, die noch im Versandbildschirm vorhanden sind. Die Liste kann konfiguriert werden und enthält in der Regel: die angeklickte URL, das Datum und die Uhrzeit des Klicks und das Dokument, in dem die URL gefunden wurde.
 
 Im **Versand-Dashboard** können Sie Sendungen überwachen und etwaige Probleme beim Nachrichtenversand erkennen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](delivery-dashboard.md).
 
@@ -78,7 +78,7 @@ Sie können auch Besuche auf Web-Anwendungsseiten mit Trackingtags verfolgen und
 
 **Opt-out vom Web-Anwendungs-Tracking**
 
-Mit der Opt-Out-Funktion für das Web-Anwendungs-Tracking können Sie das Tracking des Web-Verhaltens von Endbenutzern beenden, die sich gegen das Tracking ihres Verhaltens entschieden haben. Sie können ermöglichen, ein Banner in Web-Anwendungen oder Zielseiten anzuzeigen, damit Benutzer sich abmelden können. [Weitere Informationen](../../web/using/web-application-tracking-opt-out.md)
+Mit der Opt-Out-Funktion für das Web-Anwendungs-Tracking können Sie das Tracking des Web-Verhaltens von Endbenutzern stoppen, die sich gegen das Tracking ihres Verhaltens entschieden haben. Sie können ermöglichen, ein Banner in Web-Anwendungen oder Zielseiten anzuzeigen, damit Benutzer sich abmelden können. [Weitere Informationen](../../web/using/web-application-tracking-opt-out.md)
 
 ## Tracking-Berichte {#tracking-reports}
 

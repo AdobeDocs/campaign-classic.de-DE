@@ -7,9 +7,9 @@ feature: Overview
 role: User, Data Architect
 level: Beginner
 exl-id: 9ac13db3-552f-43cc-ab67-3aea82e0519e
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '129'
 ht-degree: 100%
 
 ---
@@ -19,8 +19,6 @@ ht-degree: 100%
 
 
 Adobe Campaign Classic bietet allgemeine Importe und Exporte. So können Sie beispielsweise eine Liste von Kunden oder potenziellen Kunden extrahieren, die dann Teil einer Zielpopulation werden, oder Ihre Datenbank mit Daten aus externen Dateien versorgen.
-
-![](assets/do-not-localize/how-to-video.png) [Funktion im Video kennenlernen](../../platform/using/exporting-and-importing-profiles.md#import-profiles-video).
 
 Allgemeine Importe und Exporte werden über den Knoten **[!UICONTROL Profile und Zielgruppen > Vorgänge > Allgemeine Importe und Exporte]** der Adobe Campaign-Struktur verwaltet.
 
