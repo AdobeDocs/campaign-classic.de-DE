@@ -6,9 +6,9 @@ title: Campaign Classic v7 – Handbuch
 user-guide-description: Produktdokumentation für Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 28279c6ec0eab7f914cf6107cd1ec1cebd05113d
+source-git-commit: d78fe2e0fd85ba9c23e709a3f30a135cee411230
 workflow-type: tm+mt
-source-wordcount: '2559'
+source-wordcount: '2557'
 ht-degree: 99%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 99%
 + Erste Schritte {#getting-started}
    + [Erste Schritte mit Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
    + [Starten von Adobe Campaign](platform/using/launching-adobe-campaign.md)
-   + [Erste Schritte mit der Campaign-Benutzeroberfläche](platform/using/adobe-campaign-workspace.md)
+   + [Benutzeroberfläche von Campaign](platform/using/adobe-campaign-workspace.md)
    + [Campaign-Explorer verwenden - AUSGEBLENDET](platform/using/adobe-campaign-explorer.md)
    + [Durchsuchen und Anpassen von Listen - AUSGEBLENDET](platform/using/adobe-campaign-ui-lists.md)
    + [Auflistungen - HIDDEN](platform/using/managing-enumerations.md)
