@@ -2,23 +2,17 @@
 product: campaign
 title: Filter erstellen
 description: Filter erstellen
-feature: Profiles
-badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
-audience: platform
-content-type: reference
-topic-tags: filtering-data
 exl-id: 58e54f67-dc87-42f1-8426-6f801e8e4fb6
-source-git-commit: 813ef65ff45407a92c5f9d7f3d07189972a5742b
+source-git-commit: b4059e43d98643f0f8b5b3f68f03e10b755e8ba3
 workflow-type: tm+mt
-source-wordcount: '173'
-ht-degree: 100%
+source-wordcount: '165'
+ht-degree: 89%
 
 ---
 
 # Erstellen von Filtern{#creating-filters}
 
-
-Beim Filtern von Daten wird ein kleinerer Teil Ihrer Datenmenge ausgewählt, nämlich nur die Einträge, die bestimmten Kriterien entsprechen. Diese Untergruppe wird für bestimmte Aktionen (Aktualisierungen, Erstellung von Zielgruppen) oder Analysen verwendet.
+Beim Filtern von Daten wird ein kleinerer Teil Ihrer Datenmenge ausgewählt, nämlich nur die Einträge, die bestimmten Kriterien entsprechen. Diese Teilmenge wird für bestimmte Aktionen (Aktualisierungen, Erstellung von Zielgruppen) oder Analysen verwendet.
 
 Beim Navigieren im Adobe Campaign-**[!UICONTROL Explorer]** (zugänglich über die entsprechende Schaltfläche auf der Startseite) werden die Informationen der Datenbank in Form von Listen angezeigt. Diese Listen können so konfiguriert werden, dass nur die dem Benutzer nützlichen Elemente angezeigt werden. Auf den gefilterten Daten können dann Aktionen gestartet werden. Die Filterkonfiguration ermöglicht eine **[!UICONTROL dynamische]** Auswahl von Daten einer Liste. Bei Datenänderungen werden die gefilterten Daten automatisch aktualisiert.
 
@@ -28,7 +22,7 @@ Beim Navigieren im Adobe Campaign-**[!UICONTROL Explorer]** (zugänglich über d
 
 >[!NOTE]
 >
->Weitere Informationen zu Filtern und deren Verwendung finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/audience/create-audiences/create-filters){target=_blank}.
+>Weitere Informationen zu Filtern und deren Verwendung finden Sie in der Dokumentation zu [Campaign v8 (Konsole)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/audience/create-audiences/create-filters){target=_blank}.
 
 
 <!--

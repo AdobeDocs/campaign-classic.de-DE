@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: a025026e-688e-4ec1-abc4-40ee040d2b3b
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: b4059e43d98643f0f8b5b3f68f03e10b755e8ba3
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '598'
 ht-degree: 9%
 
 ---
@@ -22,17 +22,17 @@ Gehen Sie wie folgt vor, um eine neue Instanz und eine neue Adobe Campaign-Daten
 
 1. Erstellen Sie die Verbindung.
 1. Melden Sie sich an, um die zugehörige Instanz zu erstellen.
-1. Erstellen und konfigurieren Sie die Datenbank.
+1. Erstellen und Konfigurieren der Datenbank.
 
 >[!NOTE]
 >
->Nur der **interne** Bezeichner kann diese Vorgänge ausführen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#internal-identifier).
+>Nur die **interne** Kennung kann diese Vorgänge ausführen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
-Wenn die Adobe Campaign Konsole gestartet wird, greifen Sie auf eine Log-in Seite zu.
+Beim Starten der Adobe Campaign-Konsole greifen Sie auf eine Anmeldeseite zu.
 
-Gehen Sie folgen wie folgt vor, um eine neue Instanz zu erstellen:
+Gehen Sie wie folgt vor, um eine neue Instanz zu erstellen:
 
-1. Klicken Sie auf das verknüpfen in der oberen rechten Ecke der Anmeldedatenfelder, um auf das Fenster für die Verbindungskonfiguration zuzugreifen. Dieser Link kann entweder **[!UICONTROL Neu…]** oder ein vorhandener Instanzname sein.
+1. Klicken Sie auf den Link in der oberen rechten Ecke der Felder mit den Anmeldedaten, um auf das Fenster für die Verbindungskonfiguration zuzugreifen. Dieser Link kann entweder **[!UICONTROL Neu…]** oder ein vorhandener Instanzname sein.
 
    ![](assets/s_ncs_install_define_connection_01.png)
 
@@ -46,33 +46,33 @@ Gehen Sie folgen wie folgt vor, um eine neue Instanz zu erstellen:
 
    >[!CAUTION]
    >
-   >Verwenden Sie für die Verbindung URL nur folgende Zeichen: `[a-z]`, `[A-Z]`, `[0-9]` und Bindestriche (-) oder Punkte.
+   >Verwenden Sie für die Verbindungs-URL nur die folgenden Zeichen: `[a-z]`, `[A-Z]`, `[0-9]` und Bindestriche (-) oder Punkt.
 
-1. Klicken Sie auf **[!UICONTROL &quot;OK]** &quot;, um die Einstellungen zu bestätigen: Sie können jetzt mit der Instanz Erstellung beginnen.
-1. Geben Sie im Fenster Verbindung **[!UICONTROL Einstellungen]** den **internen** Log-in und dessen Kennwort ein, um eine Verbindung zum Adobe Campaign Applikation-Server herzustellen. Sobald die Verbindung hergestellt ist, greifen Sie auf den Erstellungsassistenten für Instanz zu, um eine neue Instanz zu deklarieren
-1. Geben Sie in das **[!UICONTROL Feld &quot;Name]** &quot; den **Instanz** Namen ein. Da dieser Name zum Generieren einer Konfigurationsdatei **config-`<instance>`.xml** verwendet wird und in den Befehlszeilenparametern verwendet wird, um die Instanz zu identifizieren, stellen Sie sicher, dass Sie einen Kurznamen ohne Sonderzeichen wählen. Beispiel: **eMarketing**.
+1. Klicken Sie **[!UICONTROL OK]**, um die Einstellungen zu bestätigen: Sie können jetzt mit dem Prozess zur Instanzerstellung beginnen.
+1. Geben Sie im Fenster **[!UICONTROL Verbindungseinstellungen]** den **internen** Anmeldenamen und dessen Kennwort ein, um eine Verbindung zum Adobe Campaign-Anwendungsserver herzustellen. Sobald die Verbindung hergestellt ist, greifen Sie auf den Assistenten zur Instanzerstellung zu, um eine neue Instanz zu deklarieren
+1. Geben Sie **[!UICONTROL Feld]** den **Instanznamen** ein. Da dieser Name zum Generieren einer Konfigurationsdatei (**-`<instance>`.xml) verwendet** und in den Befehlszeilenparametern zur Identifizierung der Instanz verwendet wird, stellen Sie sicher, dass Sie einen kurzen Namen ohne Sonderzeichen auswählen. Beispiel: **eMarketing**.
 
    ![](assets/s_ncs_install_create_instance.png)
 
-   Der Name der Instanz, die dem Domänennamen hinzugefügt wird, darf nicht länger als 40 Zeichen sein. Auf diese Weise können Sie die Größe von &quot;Message-ID&quot;-Headern begrenzen und verhindern, dass Nachrichten als Spam betrachtet werden, insbesondere von Tools wie SpamAssassin.
+   Der Name der zum Domain-Namen hinzugefügten Instanz darf 40 Zeichen nicht überschreiten. Dadurch können Sie die Größe der „Message-ID“-Header einschränken und verhindern, dass Nachrichten als Spam eingestuft werden, insbesondere durch Tools wie SpamAssassin.
 
-1. Geben Sie in den **[!UICONTROL Feldern DNS-Masken die** Liste der DNS-Masken **]** ein, an die die Instanz angehängt werden soll. Der Adobe Campaign-Server verwendet den Host-Namen, der in den HTTP-Anfragen angezeigt wird, um zu bestimmen, welche Instanz erreicht werden soll.
+1. Geben Sie in **[!UICONTROL DNS]** Masken) die **Liste der DNS-Masken** ein, an die die Instanz angehängt werden soll. Der Adobe Campaign-Server verwendet den Host-Namen, der in den HTTP-Anfragen angezeigt wird, um zu bestimmen, welche Instanz erreicht werden soll.
 
    Der Hostname befindet sich zwischen der Zeichenfolge **https://** und dem ersten Schrägstrich **/** der Serveradresse.
 
    Sie können eine Liste von Werten definieren, die durch Kommas getrennt sind.
 
-   Die ? und &#42; Zeichen können als Platzhalter verwendet werden, um ein oder mehrere Zeichen zu ersetzen (DNS, portieren usw.). Bei Instanz funktioniert der **Demowert&#42;** mit &quot;https://demo&quot; ebenso wie mit &quot;https://demo:8080&quot; und Linear &quot;https://demo2&quot;.
+   Die ? und &#42; Zeichen können als Platzhalter verwendet werden, um ein oder mehrere Zeichen (DNS, Port usw.) zu ersetzen. Beispielsweise funktioniert der Wert **demo&#42;** mit &quot;https://demo&quot; genauso wie mit &quot;https://demo:8080&quot; und sogar &quot;https://demo2&quot;.
 
-   Die verwendeten Namen müssen in Ihrem DNS definiert werden. Sie können die Entsprechung zwischen einem DNS-Namen und einer IP-Adresse auch in der **Datei c:/windows/system32/drivers/etc/hosts** unter Windows und in der **Datei /etc/hosts** unter Linux angeben. Sie müssen daher die Verbindungseinstellungen ändern, um diesen DNS-Namen zu verwenden, bestellen eine Verbindung zu Ihrem ausgewählten Instanz herzustellen.
+   Die verwendeten Namen müssen in Ihrem DNS definiert sein. Sie können auch die Korrespondenz zwischen einem DNS-Namen und einer IP-Adresse in der Datei **c:/windows/system32/drivers/etc/hosts** in Windows und in der Datei **/etc/hosts** in Linux mitteilen. Sie müssen daher die Verbindungseinstellungen so ändern, dass dieser DNS-Name verwendet wird, um eine Verbindung zu der ausgewählten Instanz herzustellen.
 
-   Der Server muss insbesondere beim Hochladen von Bildern in E-Mails mit diesem Namen identifiziert werden.
+   Der Server muss mit diesem Namen identifiziert werden, insbesondere für das Hochladen von Bildern in E-Mails.
 
-   Darüber hinaus muss der Server in der Lage sein, sich mit diesem Namen und, wenn möglich, mit einer Loopback-Adresse - 127.0.0.1 - zu verbinden, insbesondere um den Export von Berichten im PDF-Format zu ermöglichen.
+   Darüber hinaus muss der Server in der Lage sein, über diesen Namen und nach Möglichkeit über eine Loopback-Adresse - 127.0.0.1 - eine Verbindung zu sich selbst herzustellen, insbesondere um den Export von Berichten im PDF-Format zu ermöglichen.
 
-1. Wählen Sie in der **[!UICONTROL Dropdown-Liste Sprache]** die **Instanz Sprache** aus: Englisch (USA), Englisch (Großbritannien), Französisch oder Japanisch.
+1. Wählen Sie in **[!UICONTROL Dropdown]** Liste Sprache die **Sprache der Instanz**: Englisch (US), Englisch (UK), Französisch oder Japanisch.
 
-   Die Unterschiede zwischen Englisch (USA) und Englisch (Großbritannien) werden in [ Abschnitt beschrieben](../../platform/using/adobe-campaign-workspace.md#date-and-time).
+   Die Unterschiede zwischen Englisch (USA) und Englisch (Großbritannien) werden in der Dokumentation [Campaign v8 (Konsole)) ](.https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui#formats).
 
    >[!CAUTION]
    >
@@ -82,4 +82,4 @@ Gehen Sie folgen wie folgt vor, um eine neue Instanz zu erstellen:
 
    >[!NOTE]
    >
-   >Die Instanz kann über die Befehlszeile erstellt werden. Weitere Informationen hierzu finden Sie in den [Befehl Zeilen](../../installation/using/command-lines.md).
+   >Die Instanz kann über die Befehlszeile erstellt werden. Weitere Informationen hierzu finden Sie unter [Befehlszeilen](../../installation/using/command-lines.md).

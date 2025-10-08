@@ -4,10 +4,12 @@ title: Verwalten und Anpassen von Listen
 description: Erfahren Sie, wie Sie Listen durchsuchen und konfigurieren.
 feature: Audiences, Data Management
 exl-id: 21656cc2-15a1-4156-8897-ea4fe3e9b97f
-source-git-commit: f43b15e61fb286a612f057d8d3bf5a1ff6ecb253
+hide: true
+hidefromtoc: true
+source-git-commit: b4059e43d98643f0f8b5b3f68f03e10b755e8ba3
 workflow-type: tm+mt
 source-wordcount: '66'
-ht-degree: 100%
+ht-degree: 72%
 
 ---
 
@@ -15,11 +17,11 @@ ht-degree: 100%
 
 
 
-In der Campaign-Client-Console werden die Daten in Listen angezeigt. Sie können diese Listen Ihren Bedürfnissen entsprechend anpassen. Sie können beispielsweise Spalten hinzufügen, Daten filtern, Datensätze zählen und Ihre Einstellungen speichern und freigeben.
+In der Campaign-Client-Console werden die Daten in Listen angezeigt. Sie können diese Listen Ihren Bedürfnissen entsprechend anpassen. Sie können beispielsweise Spalten hinzufügen, Daten filtern, Einträge zählen und Ihre Einstellungen speichern und freigeben.
 
 >[!NOTE]
 >
->Informationen zum Verwalten und Anpassen von Listen in Adobe Campaign finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/configuration/ui-settings#customize-lists){target=_blank}.
+>Informationen zum Verwalten und Anpassen von Listen in Adobe Campaign finden Sie in der [ zu Campaign v8 ](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/configuration/ui-settings#customize-lists){target=_blank}.
 
 <!--
 ## Count records {#counting-records}

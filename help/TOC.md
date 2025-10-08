@@ -6,9 +6,9 @@ title: Campaign Classic v7 – Handbuch
 user-guide-description: Produktdokumentation für Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 89e350c727fb9379d28916f79d9749f22fd4974f
+source-git-commit: b4059e43d98643f0f8b5b3f68f03e10b755e8ba3
 workflow-type: tm+mt
-source-wordcount: '2561'
+source-wordcount: '2559'
 ht-degree: 99%
 
 ---
@@ -23,24 +23,22 @@ ht-degree: 99%
    + Frühere Versionen {#previous-releases}
       + [2024](rn/using/release-2024.md)
       + [2023](rn/using/release-2023.md)
-      + [2022](rn/using/release-2022.md)
-      + [2021](rn/using/release-2021.md)
-      + [[!DNL Gold Standard]](rn/using/gold-standard.md)
+      + [2022 - AUSGEBLENDET](rn/using/release-2022.md)
+      + [2021 - AUSGEBLENDET](rn/using/release-2021.md)
+      + [[!DNL Gold Standard - HIDDEN]](rn/using/gold-standard.md)
    + [Eingestellte Funktionen](rn/using/deprecated-features.md)
    + [Kompatibilitätsmatrix](rn/using/compatibility-matrix.md)
-   + [Aktualisierungen der Dokumentation](rn/using/documentation-updates.md)
+   + [Dokumentationsaktualisierungen - AUSGEBLENDET](rn/using/documentation-updates.md)
 + Erste Schritte {#getting-started}
-   + Erste Schritte mit Adobe Campaign {#starting-with-adobe-campaign}
-      + [Erste Schritte mit Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
-      + [Starten von Adobe Campaign](platform/using/launching-adobe-campaign.md)
-      + Adobe Campaign-Arbeitsbereich{#campaign-workspace}
-         + [Erste Schritte mit der Campaign-Benutzeroberfläche](platform/using/adobe-campaign-workspace.md)
-         + [Campaign-Explorer verwenden](platform/using/adobe-campaign-explorer.md)
-         + [Durchsuchen und Anpassen von Listen](platform/using/adobe-campaign-ui-lists.md)
-         + [Aufzählungen](platform/using/managing-enumerations.md)
-      + [Campaign-Connectoren](platform/using/about-connectors.md)
-      + Häufig gestellte Fragen {#faq}
-         + [Die häufigsten Fragen](platform/using/common-questions.md)
+   + [Erste Schritte mit Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
+   + [Starten von Adobe Campaign](platform/using/launching-adobe-campaign.md)
+   + [Erste Schritte mit der Campaign-Benutzeroberfläche](platform/using/adobe-campaign-workspace.md)
+   + [Campaign-Explorer verwenden - AUSGEBLENDET](platform/using/adobe-campaign-explorer.md)
+   + [Durchsuchen und Anpassen von Listen - AUSGEBLENDET](platform/using/adobe-campaign-ui-lists.md)
+   + [Auflistungen - HIDDEN](platform/using/managing-enumerations.md)
+   + [Campaign-Connectoren](platform/using/about-connectors.md)
+   + Häufig gestellte Fragen {#faq}
+      + [Die häufigsten Fragen](platform/using/common-questions.md)
          + [Globale Konzepte](platform/using/faq-key-concepts.md)
          + [Build-Upgrade](platform/using/faq-build-upgrade.md)
          + [Datenschutz](platform/using/privacy-faq.md)
@@ -51,16 +49,15 @@ ht-degree: 99%
          + [Konfiguration](platform/using/faq-campaign-config.md)
          + [Berichte](platform/using/faq-reporting.md)
          + [Entwicklung](platform/using/faq-developers.md)
-         + [Tutorials](platform/using/tutorials.md)
-      + [Glossar](platform/using/ac-glossary.md)
-      + Datenschutz {#privacy}
-         + [Datenschutz und Einverständniserklärung](platform/using/privacy-and-recommendations.md)
-         + [Datenschutzverwaltung](platform/using/privacy-management.md)
-         + Datenschutzanfragen {#privacy-requests}
-            + [Datenschutzanfragen](platform/using/privacy-requests.md)
-            + [Erstellen und Verwalten von Datenschutzanfragen](platform/using/privacy-requests-ui.md)
-            + [Automatischer Prozess für Datenschutzanfragen](platform/using/privacy-requests-api.md)
-         + [Opt-out aus dem Verkauf von personenbezogenen Daten](platform/using/privacy-requests-ccpa.md)
+   + [Glossar](platform/using/ac-glossary.md)
+   + Datenschutz {#privacy}
+      + [Datenschutz und Einverständniserklärung](platform/using/privacy-and-recommendations.md)
+      + [Datenschutzverwaltung](platform/using/privacy-management.md)
+      + Datenschutzanfragen {#privacy-requests}
+         + [Datenschutzanfragen](platform/using/privacy-requests.md)
+         + [Erstellen und Verwalten von Datenschutzanfragen](platform/using/privacy-requests-ui.md)
+         + [Automatischer Prozess für Datenschutzanfragen](platform/using/privacy-requests-api.md)
+      + [Opt-out aus dem Verkauf von personenbezogenen Daten](platform/using/privacy-requests-ccpa.md)
    + Profil-Management {#profile-management}
       + [Über Profile](platform/using/about-profiles.md)
       + [Bearbeiten von Profilen](platform/using/editing-a-profile.md)

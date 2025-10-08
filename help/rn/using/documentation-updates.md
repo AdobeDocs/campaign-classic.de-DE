@@ -5,9 +5,11 @@ description: Auf dieser Seite werden alle neuen Funktionen und Aktualisierungen 
 feature: Release Notes
 role: User
 level: Beginner
+hide: true
+hidefromtoc: true
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: b8a6a0db27826309456c285c08d4f1d85de70283
-workflow-type: ht
+source-git-commit: b4059e43d98643f0f8b5b3f68f03e10b755e8ba3
+workflow-type: tm+mt
 source-wordcount: '3887'
 ht-degree: 100%
 
@@ -34,7 +36,7 @@ Im Rahmen einer Promotion-Initiative für Campaign v8 haben wir mit der Neuorga
 
 ### September 2024 {#sept-2024}
 
-Die Versionsstatus wurden gekürzt und vereinfacht. [Weitere Informationen](rn-overview.md)
+Die Veröffentlichungsstatus wurden gekürzt und vereinfacht. [Weitere Informationen](rn-overview.md)
 
 Die Installation von Linux-Paketen wurde für Version 7.4.1 aktualisiert. [Weitere Informationen](../../installation/using/installing-packages-with-linux.md)
 
@@ -258,7 +260,7 @@ Das [Kapitel zur Verwaltung von Berechtigungen](../../platform/using/access-mana
 Näheres zur Erstellung und Verwaltung von Kampagnen finden Sie auf den folgenden Seiten:
 * [Erstellen und Konfigurieren von Kampagnenvorlagen](../../campaign/using/marketing-campaign-templates.md)
 * [Sendungen für eine Marketing-Kampagne](../../campaign/using/marketing-campaign-deliveries.md)
-* [Auswählen der Audience für Ihre Kampagnen](../../campaign/using/marketing-campaign-target.md)
+* [Auswählen der Zielgruppe für Ihre Kampagnen](../../campaign/using/marketing-campaign-target.md)
 * [Verwalten der zugehörigen Dokumente](../../campaign/using/marketing-campaign-assets.md)
 * [Einrichten und Verwalten des Validierungsprozesses](../../campaign/using/marketing-campaign-approval.md)
 

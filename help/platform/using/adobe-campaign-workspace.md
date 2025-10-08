@@ -6,16 +6,14 @@ feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: b4059e43d98643f0f8b5b3f68f03e10b755e8ba3
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 100%
+source-wordcount: '873'
+ht-degree: 92%
 
 ---
 
 # Adobe Campaign-Arbeitsbereich{#adobe-campaign-workspace}
-
-
 
 ## Über die Benutzeroberfläche von Adobe Campaign {#about-adobe-campaign-interface}
 
@@ -61,7 +59,7 @@ Sie können zwischen fünf verschiedenen Sprachen wählen:
 * Deutsch
 * Japanisch
 
-Die für Ihre Adobe Campaign Classic-Instanz ausgewählte Sprache kann sich auf Datums- und Uhrzeitformate auswirken. Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](../../platform/using/adobe-campaign-workspace.md#date-and-time).
+Die für Ihre Adobe Campaign Classic-Instanz ausgewählte Sprache kann sich auf Datums- und Uhrzeitformate auswirken. Weitere Informationen hierzu finden Sie in der Dokumentation zu [ v8 (Konsole](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui#formats){target=_blank}.
 
 Weiterführende Informationen zum Erstellen einer Instanz finden Sie auf dieser [Seite](../../installation/using/creating-an-instance-and-logging-on.md).
 
@@ -106,70 +104,37 @@ Nutzen Sie beispielsweise auf der Seite der Sendungen die Schaltfläche **[!UICO
 ![](assets/d_ncs_user_interface_tab_add_del.png)
 
 
-## Formate und Einheiten {#formats-and-units}
+## Adobe Campaign-Explorer verwenden {#using-adobe-campaign-explorer}
 
-### Datum und Uhrzeit {#date-and-time}
+Auf den Adobe Campaign-Explorer kann über das entsprechende Symbol in der Symbolleiste zugegriffen werden. Mit seiner Hilfe gelangen Sie zu allen Adobe Campaign-Funktionen und in die verschiedenen Konfigurationsbildschirme der Adobe Campaign-Plattform und können einige Plattformelemente im Detail anzeigen.
 
-Die Sprache Ihrer Adobe Campaign Classic-Instanz hat Auswirkungen auf das Format von Datum und Uhrzeit.
+Weitere Informationen zu Adobe Campaign Explorer finden Sie auf diesen Seiten in der Dokumentation zu Campaign v8 (Konsole):
 
-Die Sprache wird während der Installation von Campaign ausgewählt und kann danach nicht mehr geändert werden. Zur Auswahl stehen: Englisch (US), Englisch (EN), Französisch, Deutsch oder Japanisch. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../installation/using/creating-an-instance-and-logging-on.md).
+* [Übersicht über die Campaign-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/campaign-ui#ac-explorer-ui){target=_blank}
 
-Die Hauptunterschiede zwischen US-amerikanischem Englisch und britischem Englisch sind:
+* [Einstellungen der Campaign-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/configuration/ui-settings){target=_blank}
 
-<table> 
- <thead> 
-  <tr> 
-   <th> Formate<br /> </th> 
-   <th> Englisch (US)<br /> </th> 
-   <th> Englisch (EN)<br /> </th> 
-  </tr> 
- </thead> 
- <tbody> 
-  <tr> 
-   <td> Datum<br /> </td> 
-   <td> Woche beginnt am Sonntag<br /> </td> 
-   <td> Woche beginnt am Montag<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> Kurzform des Datums<br /> </td> 
-   <td> <p>%2M/%2D/%4Y</p><p><strong>z. B.: 09/25/2018</strong></p> </td> 
-   <td> <p>%2D/%2M/%4Y</p><p><strong>z. B.: 25/09/2018</strong></p> </td> 
-  </tr> 
-  <tr> 
-   <td> Kurzform des Datums mit Uhrzeit<br /> </td> 
-   <td> <p>%2M/%2D/%4Y %I:%2N:%2S %P</p><p><strong>z. B.: 09/25/2018 10:47:25 PM</strong></p> </td> 
-   <td> <p>%2D/%2M/%4Y %2H:%2N:%2S</p><p><strong>z. B.: 25/09/2018 22:47:25</strong></p> </td> 
-  </tr> 
- </tbody> 
-</table>
+* [Ordner und Ansichten im Explorer verwalten](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
 
-### Werte in einer Auflistung hinzufügen {#add-values-in-an-enumeration}
 
-Mithilfe der Eingabefelder mit Dropdown-Liste können Sie einen Auflistungswert eingeben, der gespeichert und dann als Option in der Dropdown-Liste vorgeschlagen werden kann. Beispiel: Im Feld **[!UICONTROL Ort]** auf der Registerkarte **[!UICONTROL Allgemein]** eines Empfängerprofils können Sie „London“ eingeben. Wenn Sie die Eingabetaste drücken, um diesen Wert zu bestätigen, werden Sie gefragt, ob Sie diesen Wert für die mit dem Feld verknüpfte Auflistung speichern möchten.
+## Arbeiten mit Listen {#manage-and-customize-lists}
 
-![](assets/s_ncs_user_wizard_email_bat_substitute_email.png)
-
-Wenn Sie auf **[!UICONTROL Ja]** klicken, erscheint der Wert zukünftig in der Dropdown-Liste des entsprechenden Feldes. (Hier: **[!UICONTROL Ort]**).
+In der Campaign-Client-Console werden die Daten in Listen angezeigt. Sie können diese Listen Ihren Bedürfnissen entsprechend anpassen. Sie können beispielsweise Spalten hinzufügen, Daten filtern, Einträge zählen und Ihre Einstellungen speichern und freigeben.
 
 >[!NOTE]
 >
->Auflistungen werden vom Administrator im Bereich **[!UICONTROL Administration > Plattform > Auflistungen]** verwaltet. Weitere Informationen hierzu finden Sie im Abschnitt [Auflistungen verwalten](../../platform/using/managing-enumerations.md).
+>Informationen zum Verwalten und Anpassen von Listen in Adobe Campaign finden Sie in der Dokumentation zu [Campaign v8 (Konsole)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/configuration/ui-settings#customize-lists){target=_blank}.
 
-### Standardeinheiten {#default-units}
+## Verwalten von Aufzählungen{#managing-enumerations}
 
-In Feldern, die eine Dauer bezeichnen (z. B. Gültigkeit von Versandressourcen, Validierungszeitraum einer Aufgabe etc.), sind verschiedene **Einheiten** möglich:
+Eine Aufzählung (auch als Aufzählungsliste bezeichnet) ist eine vordefinierte Liste von Werten, die Sie zum Ausfüllen bestimmter Felder verwenden können. Aufzählungen helfen dabei, Feldwerte zu standardisieren, sodass die Dateneingabe konsistenter wird und Abfragen vereinfacht werden.
 
-* **[!UICONTROL s]** für Sekunden,
-* **[!UICONTROL min]** für Minuten,
-* **[!UICONTROL h]** für Stunden,
-* **[!UICONTROL T]** für Tage.
+Wenn Werte definiert sind, werden sie in einer Dropdown-Liste angezeigt. Ein Wert kann direkt ausgewählt oder über eine prädiktive Eingabe eingegeben werden, bei der übereinstimmende Einträge vorgeschlagen und ausgefüllt werden. Einige Felder enthalten vordefinierte Aufzählungen. Bei Bedarf können zusätzliche Aufzählungen erstellt werden.
 
-![](assets/enter_unit_sample.png)
+Weitere Informationen zum **Arbeiten mit Aufzählungen** finden Sie in der [Dokumentation zu Adobe Campaign v8 (Konsole)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
 
 ## Anleitungsvideo {#video}
 
 In diesem Video wird der Campaign Classic-Arbeitsbereich vorgestellt.
 
->[!VIDEO](https://video.tv.adobe.com/v/39531?quality=12&captions=ger)
-
-Weitere Anleitungsvideos zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).
+>[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12)
