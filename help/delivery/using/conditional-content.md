@@ -9,7 +9,7 @@ hide: true
 hidefromtoc: true
 exl-id: 12595ee4-6a52-4e06-b80d-85fe633a5a11
 source-git-commit: a1e9fec0e9c85bf25b79e24a7432dfb45bd1a0cb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '509'
 ht-degree: 100%
 
@@ -113,6 +113,6 @@ Im folgenden Beispiel erfahren Sie, wie Sie eine mehrsprachige E-Mail erstellen.
 
 Erfahren Sie, wie Sie einem Versand bedingte Inhalte hinzufügen können, beispielsweise einen mehrsprachigen Newsletter.
 
->[!VIDEO](https://video.tv.adobe.com/v/30082?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/24926?quality=12)
 
 Weitere Anleitungsvideos zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).

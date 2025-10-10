@@ -9,7 +9,7 @@ hide: true
 hidefromtoc: true
 exl-id: 67fd9a67-cb05-46cd-acd5-e42fde6f4d4f
 source-git-commit: a1e9fec0e9c85bf25b79e24a7432dfb45bd1a0cb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1070'
 ht-degree: 100%
 
@@ -142,6 +142,6 @@ Durch Hinzufügen des Objektschemas können Sie die Felder auswählen, die Sie d
 
 Erfahren Sie, wie Sie der Betreffzeile und dem Inhalt eines E-Mail-Versands ein Personalisierungsfeld hinzufügen.
 
->[!VIDEO](https://video.tv.adobe.com/v/30081?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/24925?quality=12)
 
 Weitere Anleitungsvideos zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).

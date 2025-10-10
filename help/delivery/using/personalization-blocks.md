@@ -9,7 +9,7 @@ hide: true
 hidefromtoc: true
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
 source-git-commit: a1e9fec0e9c85bf25b79e24a7432dfb45bd1a0cb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '978'
 ht-degree: 100%
 
@@ -146,6 +146,6 @@ Gehen Sie im Explorer wie folgt vor, um Gestaltungsbausteine zu erstellen:
 
 Erfahren Sie, wie Sie dynamische Inhaltsbausteine erstellen und diese zur Personalisierung des Inhalts Ihres E-Mail-Versands verwenden.
 
->[!VIDEO](https://video.tv.adobe.com/v/30080?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/24924?quality=12)
 
 Weitere Anleitungsvideos zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).
