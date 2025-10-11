@@ -281,4 +281,4 @@ Zusätzlich zu diesen Ansichten können Sie Filterordner einrichten, mit denen S
 
 ![](assets/workflow-monitoring-filter.png)
 
-Weitere Informationen zu Filtern finden Sie in der Dokumentation zu [&#x200B; v8 (Konsole](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+Weitere Informationen zu Filtern finden Sie in der Dokumentation zu [&#x200B; v8 (Konsole](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.

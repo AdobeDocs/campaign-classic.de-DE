@@ -48,7 +48,7 @@ Um die Versandempfänger auszuwählen, gehen Sie wie folgt vor:
 
    Folgende Zieltypen werden standardmäßig vorgeschlagen:
 
-   * **[!UICONTROL Filterbedingungen]**: Erstellung einer Abfrage mit der Möglichkeit der Vorschau auf das Ergebnis. Weitere Informationen zu Filtern finden Sie in der Dokumentation zu [&#x200B; v8 (Konsole](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+   * **[!UICONTROL Filterbedingungen]**: Erstellung einer Abfrage mit der Möglichkeit der Vorschau auf das Ergebnis. Weitere Informationen zu Filtern finden Sie in der Dokumentation zu [&#x200B; v8 (Konsole](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
    * **[!UICONTROL Abonnenten eines Informationsdienstes]**: Angabe des Newsletters, den die Empfänger abonniert haben müssen, um in die Zielgruppe des Versands aufgenommen zu werden.
 
      ![](assets/s_ncs_user_wizard_email02c.png)
@@ -72,7 +72,7 @@ Um die Versandempfänger auszuwählen, gehen Sie wie folgt vor:
    * **[!UICONTROL Empfänger aus einem Ordner]**: Angabe des Ordners, der die Empfänger erhält.
    * **[!UICONTROL Empfänger]**: Auswahl eines spezifischen Empfängers aus der Datenbank.
    * **[!UICONTROL Empfängerliste]**: Auswahl einer die Empfänger enthaltenden Liste. Listen finden Sie in [diesem Abschnitt](../../platform/using/creating-and-managing-lists.md).
-   * **[!UICONTROL Benutzerfilter]**: ermöglicht den Zugriff auf vom Benutzer erstellte Filter. Weitere Informationen zu Filtern finden Sie in der Dokumentation zu [&#x200B; v8 (Konsole](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+   * **[!UICONTROL Benutzerfilter]**: ermöglicht den Zugriff auf vom Benutzer erstellte Filter. Weitere Informationen zu Filtern finden Sie in der Dokumentation zu [&#x200B; v8 (Konsole](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
    * Die Option **[!UICONTROL Empfänger, die diesem Segment entsprechen, ausschließen]** ermöglicht es Ihnen, Empfängerinnen und Empfänger anzusprechen, die die definierten Zielkriterien nicht erfüllen. Um diese Option zu verwenden, aktivieren Sie das entsprechende Kästchen und wenden Sie dann die zuvor definierte Zielgruppenbestimmung an, um die resultierenden Profile auszuschließen.
 
      ![](assets/s_ncs_user_wizard_email02g.png)

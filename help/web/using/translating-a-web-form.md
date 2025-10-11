@@ -70,7 +70,7 @@ Bei noch nicht übersetzten Zeichenfolgen ist das Feld **[!UICONTROL Text]** lee
 
 ### Strings filtern {#filtering-strings}
 
-Standardmäßig wird jede Übersetzungssprache der Web-Anwendung angezeigt. Es gibt zwei Standardfilter: Sprache und Status. Wählen Sie die Schaltfläche **[!UICONTROL Filter]** und dann die Option **[!UICONTROL Nach Sprache oder Status]** aus, um die jeweiligen Dropdown-Listen anzuzeigen. Sie können auch einen erweiterten Filter erstellen. Weitere Informationen zu Filtern finden Sie in der Dokumentation zu [&#x200B; v8 (Konsole](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+Standardmäßig wird jede Übersetzungssprache der Web-Anwendung angezeigt. Es gibt zwei Standardfilter: Sprache und Status. Wählen Sie die Schaltfläche **[!UICONTROL Filter]** und dann die Option **[!UICONTROL Nach Sprache oder Status]** aus, um die jeweiligen Dropdown-Listen anzuzeigen. Sie können auch einen erweiterten Filter erstellen. Weitere Informationen zu Filtern finden Sie in der Dokumentation zu [&#x200B; v8 (Konsole](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
 
 ![](assets/s_ncs_admin_survey_trad_tab_en.png)
 
