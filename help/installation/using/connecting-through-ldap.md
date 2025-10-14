@@ -23,7 +23,7 @@ ht-degree: 1%
 >
 >* Die LDAP-Konfiguration ist nur für On-Premise- oder Hybridinstallationen möglich.
 >
->* Stellen Sie sicher, dass Ihr System und Ihre OpenSSL-Versionen mit Campaign kompatibel sind, indem Sie die [Kompatibilitätsmatrix) ](../../rn/using/compatibility-matrix.md). Veraltete Versionen können sich auf Ihre LDAP-Authentifizierung auswirken.
+>* Stellen Sie sicher, dass Ihr System und Ihre OpenSSL-Versionen mit Campaign kompatibel sind, indem Sie die [Kompatibilitätsmatrix) &#x200B;](../../rn/using/compatibility-matrix.md). Veraltete Versionen können sich auf Ihre LDAP-Authentifizierung auswirken.
 >
 
 Die LDAP-Konfiguration wird im Bereitstellungsassistenten ausgeführt. Die **[!UICONTROL LDAP-Integration]** Option muss im ersten Konfigurationsschritt ausgewählt werden. Siehe [Bereitstellungsassistent](../../installation/using/deploying-an-instance.md#deployment-assistant).

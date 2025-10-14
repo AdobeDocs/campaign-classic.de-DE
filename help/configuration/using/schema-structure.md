@@ -135,7 +135,7 @@ Es gelten folgende Regeln:
 
 Der Datentyp wird über das Attribut **type** in den Elementen **`<attribute>`** und **`<element>`** eingegeben.
 
-Eine detaillierte Liste ist in der Beschreibung des [`<attribute>` Elements ](../../configuration/using/schema/attribute.md) des [`<element>` Elements ](../../configuration/using/schema/element.md).
+Eine detaillierte Liste ist in der Beschreibung des [`<attribute>` Elements &#x200B;](../../configuration/using/schema/attribute.md) des [`<element>` Elements &#x200B;](../../configuration/using/schema/element.md).
 
 Wenn dieses Attribut nicht gefüllt wird, ist **string** der Standarddatentyp, es sei denn, das Element enthält untergeordnete Elemente. Wenn es gefüllt ist, wird es nur zur hierarchischen Strukturierung der Elemente verwendet (Element **`<location>`** in unserem Beispiel).
 

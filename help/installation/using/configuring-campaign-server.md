@@ -25,7 +25,7 @@ In diesem Kapitel werden Server-seitige Konfigurationen beschrieben, die entspre
 
 Diese Verfahren sind auf On **Premise-/**&#x200B;**Hybrid** Bereitstellungen beschränkt und erfordern Administratorberechtigungen.
 
-Bei **gehosteten** können Server-seitige Einstellungen nur von Adobe konfiguriert werden. Auf die Zulassungsliste setzen Einige Einstellungen können jedoch im Control Panel von [ eingerichtet werden](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=de) z. B. die IP-Dateiverwaltung oder URL-Berechtigungen. [Weitere Informationen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=de).
+Bei **gehosteten** können Server-seitige Einstellungen nur von Adobe konfiguriert werden. Auf die Zulassungsliste setzen Einige Einstellungen können jedoch im Control Panel von [&#x200B; eingerichtet werden](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=de) z. B. die IP-Dateiverwaltung oder URL-Berechtigungen. [Weitere Informationen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=de).
 
 Weitere Informationen finden Sie in den folgenden Abschnitten:
 
@@ -37,7 +37,7 @@ Weitere Informationen finden Sie in den folgenden Abschnitten:
 
 Campaign Classic-Konfigurationsdateien werden im **conf** des Adobe Campaign-Installationsordners gespeichert. Die Konfiguration umfasst zwei Dateien:
 
-* **serverConf.xml**: allgemeine Konfiguration für alle Instanzen. In dieser Datei werden die technischen Parameter des Adobe Campaign-Servers kombiniert: Diese werden von allen Instanzen gemeinsam genutzt. Einige dieser Parameter werden im Folgenden beschrieben. Die verschiedenen Knoten und Parameter, die in diesem [Abschnitt) ](../../installation/using/the-server-configuration-file.md) sind.
+* **serverConf.xml**: allgemeine Konfiguration für alle Instanzen. In dieser Datei werden die technischen Parameter des Adobe Campaign-Servers kombiniert: Diese werden von allen Instanzen gemeinsam genutzt. Einige dieser Parameter werden im Folgenden beschrieben. Die verschiedenen Knoten und Parameter, die in diesem [Abschnitt) &#x200B;](../../installation/using/the-server-configuration-file.md) sind.
 * **config-`<instance>`.xml** (wobei **instance** der Name der Instanz ist): spezifische Konfiguration der Instanz. Wenn Sie Ihren Server für mehrere Instanzen freigeben, geben Sie die für jede Instanz spezifischen Parameter in die entsprechende Datei ein.
 
 ## Konfigurationsumfang
@@ -137,7 +137,7 @@ Sie können das Speicherverzeichnis (**var**-Verzeichnis) der Adobe Campaign-Dat
 
 * Gehen Sie unter Linux zur Datei **customer.sh** und geben Sie Folgendes an: **export XTK_VAR_DIR=/app/log/AdobeCampaign**.
 
-  Weitere Informationen hierzu finden Sie unter [Parameter ](../../installation/using/installing-packages-with-linux.md#personalizing-parameters).
+  Weitere Informationen hierzu finden Sie unter [Parameter &#x200B;](../../installation/using/installing-packages-with-linux.md#personalizing-parameters).
 
 
 ## Dynamische Seitensicherheit und Relais {#dynamic-page-security-and-relays}

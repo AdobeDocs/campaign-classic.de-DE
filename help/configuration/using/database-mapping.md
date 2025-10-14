@@ -14,7 +14,7 @@ ht-degree: 46%
 
 # Datenbank-Mapping{#database-mapping}
 
-Die SQL-Zuordnung des auf [ Seite beschriebenen Beispielschemas ](schema-structure.md) das folgende XML-Dokument:
+Die SQL-Zuordnung des auf [&#x200B; Seite beschriebenen Beispielschemas &#x200B;](schema-structure.md) das folgende XML-Dokument:
 
 ```sql
 <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">

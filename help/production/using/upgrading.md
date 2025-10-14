@@ -23,7 +23,7 @@ Bevor Sie mit dem Upgrade-Prozess beginnen, stellen Sie fest, welche Version von
 >
 >* Adobe empfiehlt dringend, vor der Aktualisierung eine Datenbanksicherung für jede Instanz durchzuführen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../production/using/backup.md).
 >* Um ein Upgrade durchzuführen, stellen Sie sicher, dass Sie über die Fähigkeit und die Berechtigungen zum Zugriff auf Instanzen und Protokolle verfügen.
->* Lesen Sie [ Abschnitt und ](../../installation/using/general-architecture.md) Kapitel [Build-Upgrade](https://helpx.adobe.com/de/campaign/kb/acc-build-upgrade.html), bevor Sie beginnen.
+>* Lesen Sie [&#x200B; Abschnitt und &#x200B;](../../installation/using/general-architecture.md) Kapitel [Build-Upgrade](https://helpx.adobe.com/de/campaign/kb/acc-build-upgrade.html), bevor Sie beginnen.
 >
 
 ## Windows {#in-windows}
@@ -33,7 +33,7 @@ Gehen Sie in einer Windows-Umgebung wie folgt vor, um Adobe Campaign auf einen n
 * [Dienste beenden](#shut-down-services),
 * [Aktualisieren des Anwendungsservers](#upgrade-the-adobe-campaign-server-application),
 * [Ressourcen synchronisieren](#synchronize-resources),
-* [Dienste neu ](#restart-services).
+* [Dienste neu &#x200B;](#restart-services).
 
 Informationen zum Aktualisieren der Client-Konsole finden Sie in [diesem Abschnitt](../../installation/using/client-console-availability-for-windows.md).
 
@@ -69,7 +69,7 @@ Gehen Sie wie folgt vor, um die Aktualisierungsdatei auszuführen:
 
 1. Führen Sie **setup.exe** aus.
 
-   Um diese Datei herunterzuladen, verbinden Sie sich mit dem [Software Distribution-Portal](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) mit Ihren Benutzeranmeldeinformationen. Weitere Informationen zur Software-Verteilung finden [ auf dieser Seite ](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de).
+   Um diese Datei herunterzuladen, verbinden Sie sich mit dem [Software Distribution-Portal](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) mit Ihren Benutzeranmeldeinformationen. Weitere Informationen zur Software-Verteilung finden [&#x200B; auf dieser Seite &#x200B;](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de).
 
 1. Installationsmodus auswählen: Wählen Sie **[!UICONTROL Aktualisieren oder reparieren]**
 1. Klicken Sie **[!UICONTROL Weiter]** .
@@ -95,7 +95,7 @@ Auf diese Weise können Sie die folgenden Vorgänge ausführen:
 >
 >Dieser Vorgang sollte nur einmal und nur auf einem Anwendungs-Server (**nlserver web**) ausgeführt werden.
 
-Überprüfen Sie dann, ob die Synchronisierung Fehler oder Warnungen erzeugt hat. Weitere Informationen hierzu finden Sie unter [ von Upgrade-Konflikten](#resolving-upgrade-conflicts).
+Überprüfen Sie dann, ob die Synchronisierung Fehler oder Warnungen erzeugt hat. Weitere Informationen hierzu finden Sie unter [&#x200B; von Upgrade-Konflikten](#resolving-upgrade-conflicts).
 
 ### Dienste wieder starten {#restart-services}
 
@@ -119,7 +119,7 @@ Gehen Sie in einer Linux-Umgebung wie folgt vor, um Adobe Campaign auf einen neu
 
 ### Installieren aktualisierter Pakete {#obtain-updated-packages}
 
-Stellen Sie zunächst die beiden aktualisierten Adobe Campaign-Pakete wieder her: Stellen Sie mithilfe Ihrer Benutzeranmeldeinformationen eine Verbindung [Software Distribution-](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) her. Weitere Informationen zur Software-Verteilung finden [ auf dieser Seite ](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de).
+Stellen Sie zunächst die beiden aktualisierten Adobe Campaign-Pakete wieder her: Stellen Sie mithilfe Ihrer Benutzeranmeldeinformationen eine Verbindung [Software Distribution-](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) her. Weitere Informationen zur Software-Verteilung finden [&#x200B; auf dieser Seite &#x200B;](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de).
 
 Die Datei lautet **nlserver6-v7-XXX.rpm**
 
@@ -176,7 +176,7 @@ Anschließend können Sie die erforderlichen Pakete wie unten beschrieben instal
 
 >[!NOTE]
 >
->Die vollständigen Installationsverfahren werden in [diesem Abschnitt) ](../../installation/using/installing-packages-with-linux.md). Ressourcen werden automatisch synchronisiert. Sie müssen jedoch sicherstellen, dass keine Fehler aufgetreten sind. Weitere Informationen hierzu finden Sie unter [Beheben von Upgrade-Konflikten](#resolving-upgrade-conflicts).
+>Die vollständigen Installationsverfahren werden in [diesem Abschnitt) &#x200B;](../../installation/using/installing-packages-with-linux.md). Ressourcen werden automatisch synchronisiert. Sie müssen jedoch sicherstellen, dass keine Fehler aufgetreten sind. Weitere Informationen hierzu finden Sie unter [Beheben von Upgrade-Konflikten](#resolving-upgrade-conflicts).
 >
 
 ### Neustarten des Webservers {#reboot-the-web-server}

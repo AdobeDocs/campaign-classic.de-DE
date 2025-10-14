@@ -337,7 +337,7 @@ In dieser Phase muss der IIS-Server angehalten werden. Siehe [Service stoppen](#
      >
      >Wenn die Baumstruktur nicht angezeigt wird, starten Sie IIS neu.
      >
-     >Die folgenden IIS-Konfigurationsschritte werden in [ Abschnitt ](../../installation/using/integration-into-a-web-server-for-windows.md#configuring-the-iis-web-server).
+     >Die folgenden IIS-Konfigurationsschritte werden in [&#x200B; Abschnitt &#x200B;](../../installation/using/integration-into-a-web-server-for-windows.md#configuring-the-iis-web-server).
 
 <!--
 ## Security zones {#security-zones}

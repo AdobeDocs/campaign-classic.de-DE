@@ -29,7 +29,7 @@ Die folgenden Voraussetzungen sind erforderlich:
 * Kenntnis der Systeme und Server
 * Administratorrechte und Berechtigungen
 
-Adobe Campaign Weitere Informationen finden Sie in den folgenden Abschnitten: [Aktualisieren von ](../../production/using/upgrading.md), [Migrieren zu einer neuen Version](../../migration/using/about-migration.md).
+Adobe Campaign Weitere Informationen finden Sie in den folgenden Abschnitten: [Aktualisieren von &#x200B;](../../production/using/upgrading.md), [Migrieren zu einer neuen Version](../../migration/using/about-migration.md).
 
 Bei gehosteten und hybriden Instanzen müssen Sie das Build-Upgrade an das Team für technische Vorgänge in Adobe anfordern. Weiterführende Informationen hierzu finden Sie im Abschnitt Häufig gestellte Fragen unten auf dieser Seite. Lesen Sie auch die [häufig gestellte Fragen zum Build-Upgrade](../../platform/using/faq-build-upgrade.md).
 

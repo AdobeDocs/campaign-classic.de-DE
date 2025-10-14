@@ -18,7 +18,7 @@ ht-degree: 8%
 
 Der Adobe Campaign-Anwendungsserver wurde für Offenheit und einfache Integration mit immer vielfältigeren und komplexeren Unternehmensinformationssystemen konzipiert.
 
-Adobe Campaign-APIs werden in JavaScript innerhalb des Programms und in SOAP außerhalb desselben verwendet. Sie bilden eine Bibliothek allgemeiner Funktionen, die angereichert werden können. Weitere Informationen finden Sie unter [ von SOAP-](../../configuration/using/implementing-soap-methods.md).
+Adobe Campaign-APIs werden in JavaScript innerhalb des Programms und in SOAP außerhalb desselben verwendet. Sie bilden eine Bibliothek allgemeiner Funktionen, die angereichert werden können. Weitere Informationen finden Sie unter [&#x200B; von SOAP-](../../configuration/using/implementing-soap-methods.md).
 
 >[!IMPORTANT]
 >

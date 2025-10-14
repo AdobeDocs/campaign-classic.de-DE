@@ -28,7 +28,7 @@ Die Migration muss zuvor in der Test-/Staging-Umgebung getestet werden, um siche
 
 >[!NOTE]
 >
->Neue Funktionen und Verbesserungen in Adobe Campaign v7 werden in den [ Versionshinweisen ](../../rn/using/latest-release.md).
+>Neue Funktionen und Verbesserungen in Adobe Campaign v7 werden in den [&#x200B; Versionshinweisen &#x200B;](../../rn/using/latest-release.md).
 
 
 ## Voraussetzungen
@@ -53,7 +53,7 @@ Die Durchführung einer Migration kann eine Chance sein, Ihre Umgebung (Datenban
 
 ## Wichtige Migrationsschritte {#key-migration-steps}
 
-Das allgemeine Verfahren zur Migration zu Adobe Campaign v7 wird auf [ Seite beschrieben](../../migration/using/before-starting-migration.md).
+Das allgemeine Verfahren zur Migration zu Adobe Campaign v7 wird auf [&#x200B; Seite beschrieben](../../migration/using/before-starting-migration.md).
 
 
 ## Spezifische Konfigurationen {#specific-configurations}

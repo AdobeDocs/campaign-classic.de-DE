@@ -19,7 +19,7 @@ ht-degree: 15%
 
 Zunächst sollten Sie überprüfen, ob der neueste Build installiert ist. Dadurch wird sichergestellt, dass Sie über die neuesten Funktionen und Fehlerbehebungen verfügen.
 
-Weitere Informationen zum Inhalt [ einzelnen Versionen finden ](../../rn/using/latest-release.md) in den Versionshinweisen .
+Weitere Informationen zum Inhalt [&#x200B; einzelnen Versionen finden &#x200B;](../../rn/using/latest-release.md) in den Versionshinweisen .
 
 ## Hardware und Infrastruktur {#hardware-and-infrastructure}
 

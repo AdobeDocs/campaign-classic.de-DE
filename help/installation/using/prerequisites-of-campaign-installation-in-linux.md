@@ -21,7 +21,7 @@ ht-degree: 3%
 
 In diesem Abschnitt werden die vorbereitenden Konfigurationsschritte beschrieben, die vor der Installation von Adobe Campaign erforderlich sind.
 
-Die für die Installation von Adobe Campaign erforderliche technische Konfiguration und Softwarekonfiguration werden in der [Kompatibilitätsmatrix) ](../../rn/using/compatibility-matrix.md).
+Die für die Installation von Adobe Campaign erforderliche technische Konfiguration und Softwarekonfiguration werden in der [Kompatibilitätsmatrix) &#x200B;](../../rn/using/compatibility-matrix.md).
 
 Zur Erinnerung: Die folgenden Komponenten müssen installiert und ordnungsgemäß konfiguriert sein:
 

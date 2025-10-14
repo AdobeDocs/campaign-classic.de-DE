@@ -31,7 +31,7 @@ Das Erstellen einer Methodenbibliothek umfasst zwei Schritte:
 
 ### Deklaration {#declaration}
 
-Deklarieren Sie zunächst die Methoden in den Schemata (weitere Informationen zum Erstellen und Bearbeiten von Schemata finden Sie [ diesem Abschnitt](../../configuration/using/about-schema-edition.md)).
+Deklarieren Sie zunächst die Methoden in den Schemata (weitere Informationen zum Erstellen und Bearbeiten von Schemata finden Sie [&#x200B; diesem Abschnitt](../../configuration/using/about-schema-edition.md)).
 
 Ihre Deklaration ähnelt der von nativen Methoden, mit dem Unterschied, dass Sie das Attribut „library“ hinzufügen müssen, das den Namen der Methodenbibliothek angibt, in der sich die Definition befindet.
 

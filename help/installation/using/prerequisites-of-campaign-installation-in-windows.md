@@ -19,9 +19,9 @@ ht-degree: 11%
 
 
 
-Die zur Installation von Adobe Campaign erforderliche technische Konfiguration und Software wird in der [Kompatibilitätsmatrix) ](../../rn/using/compatibility-matrix.md).
+Die zur Installation von Adobe Campaign erforderliche technische Konfiguration und Software wird in der [Kompatibilitätsmatrix) &#x200B;](../../rn/using/compatibility-matrix.md).
 
-Der Adobe Campaign-Server-Installationsprozess für die Verwendung in mehreren Instanzen wird unten unter „Installieren [ Servers“ ](../../installation/using/installing-the-server.md).
+Der Adobe Campaign-Server-Installationsprozess für die Verwendung in mehreren Instanzen wird unten unter „Installieren [&#x200B; Servers“ &#x200B;](../../installation/using/installing-the-server.md).
 
 Die wichtigsten Schritte sind:
 

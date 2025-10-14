@@ -108,17 +108,17 @@ In der folgenden Tabelle sind die vom Weiterleitungs-Server unterstützten Param
 
 * Erfassen von Daten zum Geschäftsvolumen
 
-  **https://myserver.adobe.com/r/4567?tagid=command&amp;amount=100&amp;article=2l**
+  **https://myserver.adobe.com/r/4567?tagid=command&amount=100&article=2l**
 
 * Feld angeben, um den Empfänger zu finden
 
-  **https://myserver.adobe.com/r/2353?tagid=home&amp;rcpid=saccount%3D10**
+  **https://myserver.adobe.com/r/2353?tagid=home&rcpid=saccount%3D10**
 
   Ein Empfänger mit der Kontonummer 10 wird auf die Startseite gesendet.
 
 * Standardversand verwenden
 
-  **https://myserver.adobe.com/r/2456?tagid=home&amp;jobid=e6**
+  **https://myserver.adobe.com/r/2456?tagid=home&jobid=e6**
 
   Ein Empfänger wird zur Startseite weitergeleitet. Diese Informationen werden im Versand mit der Kennung 230 (e6 in der Datenbank 16) gespeichert, es sei denn, mit dieser Abfrage wird ein Sitzungs-Cookie mit einer Versandkennung gesendet.
 

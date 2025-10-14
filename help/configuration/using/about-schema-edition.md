@@ -24,7 +24,7 @@ Nähere Erläuterungen zu den in Campaign integrierten Tabellen und ihrer Intera
 
 ## Erweitern oder Erstellen von Schemata {#extending-or-creating-schemas}
 
-Um einem der Kerndatenschemata in Campaign ein Feld, einen Index oder ein anderes Element hinzuzufügen, z. B. die Empfängertabelle (nms:recipient), müssen Sie dieses Schema erweitern. Weitere Informationen hierzu finden Sie im Abschnitt [Erweitern eines ](../../configuration/using/extending-a-schema.md)&quot;.
+Um einem der Kerndatenschemata in Campaign ein Feld, einen Index oder ein anderes Element hinzuzufügen, z. B. die Empfängertabelle (nms:recipient), müssen Sie dieses Schema erweitern. Weitere Informationen hierzu finden Sie im Abschnitt [Erweitern eines &#x200B;](../../configuration/using/extending-a-schema.md)&quot;.
 
 Um einen komplett neuen Datentyp hinzuzufügen, der in Adobe Campaign nicht standardmäßig zur Verfügung gestellt wird (z. B. eine Vertragstabelle), können Sie direkt ein benutzerdefiniertes Schema erstellen. Weiterführende Informationen hierzu finden Sie im Abschnitt [Datenschemata](../../configuration/using/data-schemas.md) .
 
@@ -221,4 +221,4 @@ Weiterführende Informationen finden Sie im Abschnitt [Datenbankstruktur aktuali
 
 >[!NOTE]
 >
->Wenn Änderungen sich nicht auf die Datenbankstruktur auswirken, müssen Sie nur die Schemata neu erstellen. Wählen Sie dazu die zu aktualisierenden Schemata aus, klicken Sie mit der rechten Maustaste und wählen Sie **[!UICONTROL Aktionen > Ausgewählte Schemata wiederherstellen…]** . Weiterführende Informationen hierzu finden Sie im Abschnitt [Regenerieren ](../../configuration/using/regenerating-schemas.md) Schemata“.
+>Wenn Änderungen sich nicht auf die Datenbankstruktur auswirken, müssen Sie nur die Schemata neu erstellen. Wählen Sie dazu die zu aktualisierenden Schemata aus, klicken Sie mit der rechten Maustaste und wählen Sie **[!UICONTROL Aktionen > Ausgewählte Schemata wiederherstellen…]** . Weiterführende Informationen hierzu finden Sie im Abschnitt [Regenerieren &#x200B;](../../configuration/using/regenerating-schemas.md) Schemata“.

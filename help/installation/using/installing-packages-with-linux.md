@@ -222,7 +222,7 @@ Wenn Sie Oracle mit Adobe Campaign verwenden, müssen Sie die Oracle-Client-Eben
 
 * Umgebungsvariablen
 
-  Siehe &quot;[&quot; ](#environment-variables).
+  Siehe &quot;[&quot; &#x200B;](#environment-variables).
 
 * Konfiguration für Adobe Campaign
 
