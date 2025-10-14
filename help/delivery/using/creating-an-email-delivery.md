@@ -20,7 +20,7 @@ Gehen Sie wie folgt vor, um einen neuen E-Mail-Versand zu erstellen:
 
 >[!NOTE]
 >
->Allgemeine Konzepte zur Versanderstellung finden Sie in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}.
+>Allgemeine Konzepte zur Versanderstellung finden Sie in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=de){target="_blank"}.
 
 1. Erstellen Sie einen neuen Versand beispielsweise im Versand-Dashboard.
 1. Wählen Sie die Versandvorlage **E-Mail-Versand (Mail)** oder eine von Ihnen erstellte E-Mail-Versandvorlage aus. Weiterführende Informationen zu Versandvorlagen finden Sie in [diesem Abschnitt](about-templates.md).

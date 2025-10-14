@@ -35,4 +35,4 @@ Die Konzeption eines Versands umfasst folgende Schritte:
 
 >[!NOTE]
 >
->Bei den in diesem Kapitel beschriebenen Schritten wird davon ausgegangen, dass alle Zielgruppenempfängerinnen und -empfänger und ihre Profile in der Datenbank gespeichert werden. Eine Ausnahme bildet der externe Versand (siehe die [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#selecting-external-recipients){target="_blank"}.
+>Bei den in diesem Kapitel beschriebenen Schritten wird davon ausgegangen, dass alle Zielgruppenempfängerinnen und -empfänger und ihre Profile in der Datenbank gespeichert werden. Eine Ausnahme bildet der externe Versand (siehe die [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=de#selecting-external-recipients){target="_blank"}.

@@ -43,7 +43,7 @@ Beim Web-Zugriff ermöglichen die Optionen jedoch vor allem das Anzeigen:
 
 ![Derselbe Benutzer kann von einem Browser aus nur die Kampagne anzeigen und abbrechen.](assets/operation_from_web.png)
 
-Weitere Informationen zur Verwendung der Web-Benutzeroberfläche finden Sie in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html#use-the-web-interface-){target=_blank}.
+Weitere Informationen zur Verwendung der Web-Benutzeroberfläche finden Sie in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html?lang=de#use-the-web-interface-){target=_blank}.
 
 ### Sprachen {#languages}
 
@@ -123,7 +123,7 @@ Beim Filtern von Daten wird ein Datensatz so eingegrenzt, dass er nur die Datens
 
 Beim Durchsuchen von Campaign werden die Daten in Listen angezeigt. Sie können integrierte Filter anwenden, um schnell auf eine definierte Teilmenge zuzugreifen, z. B. Adressen in Quarantäne, nicht kontaktierte Empfänger oder Datensätze innerhalb eines bestimmten Altersbereichs oder Erstellungsdatums. Darüber hinaus können Sie benutzerdefinierte Filter erstellen, sie für die zukünftige Verwendung speichern und für andere Campaign-Benutzer freigeben.
 
-In der Dokumentation **Campaign v8 (Konsole** [&#x200B; erfahren Sie, wie Sie auf Filter zugreifen, sie erstellen und freigeben](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+In der Dokumentation **Campaign v8 (Konsole** [&#x200B; erfahren Sie, wie Sie auf Filter zugreifen, sie erstellen und freigeben](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
 
 
 ## Arbeiten mit Listen {#manage-and-customize-lists}

@@ -22,7 +22,7 @@ Gehen Sie wie folgt vor, um einen neuen SMS-Versand zu erstellen:
 
 >[!NOTE]
 >
->Allgemeine Konzepte zur Versanderstellung finden Sie in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}.
+>Allgemeine Konzepte zur Versanderstellung finden Sie in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=de){target="_blank"}.
 
 1. Erstellen Sie einen neuen Versand beispielsweise im Versand-Dashboard.
 1. Wählen Sie die zuvor erstellte Versandvorlage **Mobiltelefon-Versand (SMPP)** aus. Lesen Sie diesbezüglich auch den Abschnitt [Versandvorlage ändern](sms-set-up.md#changing-the-delivery-template).

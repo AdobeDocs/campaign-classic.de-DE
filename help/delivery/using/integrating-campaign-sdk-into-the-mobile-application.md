@@ -64,7 +64,7 @@ Zur Integration des Campaign SDK in die Mobile App benötigt der Entwickler folg
 
   >[!NOTE]
   >
-  >Der Integrationsschlüssel ist in der Adobe Campaign-Konsole im Tab **[!UICONTROL Informationen]** des dedizierten Dienstes der Mobile App angegeben. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html){target="_blank"}.
+  >Der Integrationsschlüssel ist in der Adobe Campaign-Konsole im Tab **[!UICONTROL Informationen]** des dedizierten Dienstes der Mobile App angegeben. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html?lang=de){target="_blank"}.
 
 * **Tracking-URL**: entspricht der Adresse des Adobe Campaign-Trackingservers.
 * **Marketing-URL**: um die Sammlung der Abonnements zu ermöglichen.

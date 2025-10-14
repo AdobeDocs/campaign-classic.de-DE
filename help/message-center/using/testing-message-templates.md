@@ -100,7 +100,7 @@ Mit Testadressen können Sie außerdem anzeigen, wie die Nachricht bei verschied
 
 Mithilfe von Testadressen haben Sie die Möglichkeit, vor dem eigentlichen Versand einen Testversand durchzuführen.
 
-Das Senden eines Testversands erfolgt nach demselben Verfahren wie bei einem Standardversand. Siehe die [Campaign v8-Dokumentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}. Bei Transaktionsnachrichten müssen Sie jedoch zuvor die folgenden Schritte durchführen:
+Das Senden eines Testversands erfolgt nach demselben Verfahren wie bei einem Standardversand. Siehe die [Campaign v8-Dokumentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=de){target="_blank"}. Bei Transaktionsnachrichten müssen Sie jedoch zuvor die folgenden Schritte durchführen:
 
 * Eine oder mehrere [Testadressen](#managing-seed-addresses-in-transactional-messages) mit [Personalisierungsdaten](#personalization-data) erstellen.
 * [Nachrichteninhalt erstellen](../../message-center/using/creating-the-message-template.md#creating-message-content).
@@ -117,7 +117,7 @@ Gehen Sie zur Durchführung des Testversands wie folgt vor:
 
    ![](assets/messagecenter_send_proof_002.png)
 
-Die Testsendungen können im Tab **[!UICONTROL Verfolgung]** jeder Vorlage eingesehen werden. Weitere Informationen hierzu finden Sie in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}.
+Die Testsendungen können im Tab **[!UICONTROL Verfolgung]** jeder Vorlage eingesehen werden. Weitere Informationen hierzu finden Sie in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=de){target="_blank"}.
 
 ![](assets/messagecenter_send_proof_003.png)
 

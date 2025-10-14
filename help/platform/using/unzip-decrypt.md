@@ -18,7 +18,7 @@ ht-degree: 92%
 
 # Entpacken oder Entschlüsseln von Dateien {#unzipping-or-decrypting-a-file-before-processing}
 
-Mit Adobe Campaign können Sie komprimierte oder verschlüsselte Dateien importieren. Bevor sie in einer Aktivität vom Typ [Laden (Datei)) gelesen werden können](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html){target="_blank"} können Sie eine Vorverarbeitung definieren, um die Datei zu entpacken oder zu entschlüsseln.
+Mit Adobe Campaign können Sie komprimierte oder verschlüsselte Dateien importieren. Bevor sie in einer Aktivität vom Typ [Laden (Datei)) gelesen werden können](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html?lang=de){target="_blank"} können Sie eine Vorverarbeitung definieren, um die Datei zu entpacken oder zu entschlüsseln.
 
 >[!IMPORTANT]
 >
@@ -51,8 +51,8 @@ Im folgenden Anwendungsfall wird ein Beispiel dargestellt.
 
 **Verwandte Themen:**
 
-* [Aktivität &quot;Laden (Datei)&quot;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html){target="_blank"}.
-* [Komprimieren oder Verschlüsseln von Dateien](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html){target="_blank"}.
+* [Aktivität &quot;Laden (Datei)&quot;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html?lang=de){target="_blank"}.
+* [Komprimieren oder Verschlüsseln von Dateien](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html?lang=de){target="_blank"}.
 
 ## Anwendungsfall: Importieren von Daten, die mit einem vom Control Panel generierten Schlüssel verschlüsselt wurden {#use-case-gpg-decrypt}
 
@@ -85,7 +85,7 @@ Die Schritte zum Ausführen dieses Anwendungsfalls lauten wie folgt:
    Allgemeine Konzepte zur Konfiguration der Aktivität finden Sie in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=de){target="_blank"}.
 
 
-1. Öffnen Sie die Aktivität **[!UICONTROL Laden (Datei)]** und konfigurieren Sie sie entsprechend Ihren Anforderungen. Allgemeine Konzepte zur Konfiguration der Aktivität finden Sie in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html){target="_blank"}.
+1. Öffnen Sie die Aktivität **[!UICONTROL Laden (Datei)]** und konfigurieren Sie sie entsprechend Ihren Anforderungen. Allgemeine Konzepte zur Konfiguration der Aktivität finden Sie in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html?lang=de){target="_blank"}.
 
    Fügen Sie der Aktivität eine Vorab-Bearbeitungsetappe hinzu, um die eingehenden Daten zu entschlüsseln. Wählen Sie dazu aus der Dropdown-Liste **[!UICONTROL Befehl]** die Option **[!UICONTROL Datei vorab bearbeiten]** und dann **[!UICONTROL Entschlüsseln]** aus:
 

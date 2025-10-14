@@ -60,8 +60,8 @@ Verwenden Sie für Importe und Exporte möglichst ZIP-Dateien. GZIP wird standar
 
 **Verwandte Themen:**
 
-* [Aktivität &quot;Laden (Datei)&quot;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html){target="_blank"}
-* [Aktivität &quot;Extraktion (Datei)&quot;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html){target="_blank"}.
+* [Aktivität &quot;Laden (Datei)&quot;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html?lang=de){target="_blank"}
+* [Aktivität &quot;Extraktion (Datei)&quot;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html?lang=de){target="_blank"}.
 
 ## Im Deltamodus importieren {#importing-in-delta-mode}
 

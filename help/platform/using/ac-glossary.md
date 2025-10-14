@@ -143,7 +143,7 @@ Weitere Informationen zur Inhaltsvalidierung finden Sie in der [Dokumentation zu
 
 Verwenden Sie Kontrollgruppen, um die Wirkung Ihrer Kampagnen zu messen, indem Sie einen Teil ihrer Zielgruppe ausschließen. Benutzende können dann das Verhalten der Zielpopulation, die die Nachricht erhalten hat, mit dem Verhalten der Kontakte vergleichen, die nicht kontaktiert wurden. Anhand der Versandlogs können die Benutzenden in zukünftigen Kampagnen auch eine Kontrollgruppe ansprechen.
 
-Weitere Informationen zu Kontrollgruppen finden Sie in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html#add-a-control-group){target="_blank"}.
+Weitere Informationen zu Kontrollgruppen finden Sie in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=de#add-a-control-group){target="_blank"}.
 +++
 
 +++**Control Panel**
@@ -215,7 +215,7 @@ Weitere Informationen zum [Versand](../../delivery/using/communication-channels.
 
 Die Versandanalyse wird in der Vorbereitungsphase des Versands durchgeführt. Bei diesem Prozess wird der Nachrichteninhalt mit den Profildaten des/der Empfangenden kombiniert und dadurch die eine personalisierte E-Mail erstellt, die dem/der Empfangenden gesendet wird. Basierend auf der definierten Versandanalyse-Logik können Empfangende aus der Zielgruppe ausgeschlossen oder der Versand ganz gestoppt werden. Dieser Prozess umfasst auch die Auswertung der Logik der dynamischen Inhalte und das Einfügen von spezifisch auf das jeweilige Empfängerprofil zugeschnittenen Angeboten.
 
-Weitere Informationen zur Versandanalyse finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html){target="_blank"}.
+Weitere Informationen zur Versandanalyse finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html?lang=de){target="_blank"}.
 +++
 
 +++**Versandlogs**
@@ -387,7 +387,7 @@ Weitere Informationen über [Federated Data Access](../../installation/using/abo
 
 Bei der Validierung der Dateiextraktion muss ein(e) separate(r) Benutzende(r) oder eine Benutzergruppe den Inhalt und die Konfiguration einer extrahierten Datei genehmigen, bevor sie an einen externen Anbieter gesendet wird, z. B. für einen Briefpost-Versand.
 
-Weitere Informationen zur Validierung der Dateiextraktion finden Sie in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/direct-mail.html#validating){target="_blank"}.
+Weitere Informationen zur Validierung der Dateiextraktion finden Sie in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/direct-mail.html?lang=de#validating){target="_blank"}.
 +++
 
 +++**Filterdimension**
@@ -572,7 +572,7 @@ Weitere Informationen zur Campaign-Benutzeroberfläche finden Sie in der Dokumen
 
 Im Rahmen einer Kampagne, eines Programms oder eines Plans können die Benutzenden mehrere Ziele angeben. Dies sind quantifizierte Werte, die erreicht werden sollen. Am Ende der Kampagne, des Programms oder des Plans ermöglicht das MRM-Modul den Benutzenden, die Ziele und Ergebnisse in speziellen Berichten zu vergleichen.
 
-Weitere Informationen zu den Zielen finden Sie in der Dokumentation zu [Adobe Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/mrm/creating-and-managing-tasks.html#expenses-and-revenues){target=_blank}.
+Weitere Informationen zu den Zielen finden Sie in der Dokumentation zu [Adobe Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/mrm/creating-and-managing-tasks.html?lang=de#expenses-and-revenues){target=_blank}.
 +++
 
 +++**Angebotskatalog**
@@ -754,7 +754,7 @@ Weitere Informationen über den [Package-Export/-Import](../../platform/using/wo
 
 In der Workflow-Palette werden die verfügbaren Aktivitäten angezeigt, die einem Workflow hinzugefügt werden können. Diese Komponente besteht aus Registerkarten, in denen Workflow-Aktivitäten logisch nach ihrer Verwendung gruppiert sind. Die in der Palette verfügbaren Aktivitäten sind abhängig von den in der Campaign-Instanz installierten Add-ons und vom Kontext, in dem der Workflow verwendet wird.
 
-Weitere Informationen zur Palette finden Sie in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html#add-and-link-activities){target="_blank"}.
+Weitere Informationen zur Palette finden Sie in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=de#add-and-link-activities){target="_blank"}.
 +++
 
 +++**Überwachen der Performance**
@@ -796,7 +796,7 @@ Weitere Informationen zu Plänen finden Sie in der [Dokumentation zu Campaign v8
 
 Vordefinierte Filter sind Abfragen, die zur Wiederverwendung gespeichert wurden. Die Verwendung vordefinierter Filter steigert die Produktivität (da sie nur einmal erstellt werden müssen), verbessert die Konsistenz (da alle Marketer sie verwenden können) und verringert die Anforderungen an Marketer, da sie Code oder Logik verwenden können, die sie möglicherweise nicht in der Lage sind, selbst zu erstellen.
 
-Weitere Informationen zu Filtern finden Sie in der Dokumentation zu [&#x200B; v8 (Konsole](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+Weitere Informationen zu Filtern finden Sie in der Dokumentation zu [&#x200B; v8 (Konsole](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
 +++
 
 <!--
@@ -930,14 +930,14 @@ Weitere Informationen zur Abonnement-Aktivität finden Sie in der [&#x200B; zu C
 
 Bei der Zielgruppenvalidierung gibt es eine(n) eigene(n) Benutzende(n) oder eine Benutzergruppe, der/die die endgültige Zielgruppe eines Versands genehmigt (nachdem die Zielgruppe in der Analysephase erstellt wurde), bevor der Versand durchgeführt werden kann.
 
-Weitere Informationen zur Aktivität „Zielgruppenvalidierung“ finden Sie in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/approval.html){target="_blank"}.
+Weitere Informationen zur Aktivität „Zielgruppenvalidierung“ finden Sie in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/approval.html?lang=de){target="_blank"}.
 +++
 
 +++**Zieldaten**
 
 Zieldaten sind die in der Arbeitstabelle (Transition) eines Workflows gespeicherten Daten. Diese Daten stehen innerhalb des Versands zur Personalisierung des Versandinhalts oder zur Definition der Logik dynamischer Elemente des Versands zur Verfügung.
 
-Weitere Informationen zu Zielgruppendaten finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/use-workflow-data.html#target-data){target="_blank"}.
+Weitere Informationen zu Zielgruppendaten finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/use-workflow-data.html?lang=de#target-data){target="_blank"}.
 +++
 
 +++**Zielgruppen-Mapping**
@@ -959,7 +959,7 @@ Weitere Informationen zu Zielgruppenaktivitäten finden Sie in der [ zu Campaign
 
 Die Zielgruppendimension ist der Datentyp, der von einer Abfrage oder anderen Workflow-Aktivitäten erzeugt (zurückgegeben) wird. Beachten Sie, dass Adobe Campaign nur den Primärschlüssel der reagierenden Datenbankzeilen zurückgibt, unabhängig davon, welche Abfrage zum Abrufen verwendet wurde.
 
-Weitere Informationen zur Zielgruppendimension finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html){target="_blank"}.
+Weitere Informationen zur Zielgruppendimension finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html?lang=de){target="_blank"}.
 +++
 
 +++**Aufgabenaktivität**
@@ -1026,7 +1026,7 @@ Weitere Informationen zu [Transaktionsnachrichten](../../message-center/using/ab
 
 Ausgelöste Kampagnen sind Kampagnen, die ausgeführt werden, wenn in einem Workflow eine API-Anfrage empfangen wird. API-Aufrufe werden im Workflow von einer Signal-Aktivität empfangen, die die Ausführung des Workflows auslöst.
 
-Weitere Informationen über ausgelöste Kampagnen finden Sie in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/external-signal.html){target="_blank"}.
+Weitere Informationen über ausgelöste Kampagnen finden Sie in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/external-signal.html?lang=de){target="_blank"}.
 +++
 
 <!--

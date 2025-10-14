@@ -40,7 +40,7 @@ Diese Methode hebt auch Benutzer hervor, die zu viele Objekte erstellen.
 
 ## Sendungen {#deliveries}
 
-Es sollten zu jedem Zeitpunkt weniger als 1.000 Sendungen in der Instanz vorhanden sein. Viele Sendungen belasten den Datenbankspeicherplatz und verursachen Probleme. Eine Instanz, die mehr als 10 Sendungen pro Tag erstellt, muss mit den Geschäftsanforderungen abgeglichen werden. Verwenden Sie fortlaufende Sendungen, um weniger Sendungen zu erstellen. Weitere Informationen hierzu finden Sie in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/continuous-delivery.html){target="_blank"}.
+Es sollten zu jedem Zeitpunkt weniger als 1.000 Sendungen in der Instanz vorhanden sein. Viele Sendungen belasten den Datenbankspeicherplatz und verursachen Probleme. Eine Instanz, die mehr als 10 Sendungen pro Tag erstellt, muss mit den Geschäftsanforderungen abgeglichen werden. Verwenden Sie fortlaufende Sendungen, um weniger Sendungen zu erstellen. Weitere Informationen hierzu finden Sie in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/continuous-delivery.html?lang=de){target="_blank"}.
 
 Sendungen, die älter als zwei Jahre sind, sollten aus der Instanz gelöscht werden.
 
@@ -48,7 +48,7 @@ Sendungen, die älter als zwei Jahre sind, sollten aus der Instanz gelöscht wer
 
 Die Anzahl der Dateien auf dem Anwendungsserverdatenträger sollte nicht unbegrenzt ansteigen.
 
-Import-Workflows erstellen Dateien und führen daher zu einer Festplattenerweiterung. Dies kann mithilfe der standardmäßigen Aktivität [Datei-Wächter](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-collector.html){target="_blank"} verhindert werden. Der Datei-Wächter verschiebt Dateien in einen temporären Ordner und löscht sie automatisch.
+Import-Workflows erstellen Dateien und führen daher zu einer Festplattenerweiterung. Dies kann mithilfe der standardmäßigen Aktivität [Datei-Wächter](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-collector.html?lang=de){target="_blank"} verhindert werden. Der Datei-Wächter verschiebt Dateien in einen temporären Ordner und löscht sie automatisch.
 
 Wenn ein Workflow Dateien importiert und nicht die Standardfunktionen verwendet, muss er bereinigt werden, um den Speicherplatz auf ein Minimum zu beschränken.
 

@@ -119,7 +119,7 @@ Die folgenden Kanäle können konfiguriert werden:
 * [Direkt-Mail](../../delivery/using/about-direct-mail-channel.md)
 * [Agentur](../../delivery/using/communication-channels.md#other-channels)
 * [X (früher bekannt als Twitter)](../../social/using/about-social-marketing.md)
-* [iOS- und Android-Kanäle](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html){target="_blank"}
+* [iOS- und Android-Kanäle](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html?lang=de){target="_blank"}
 
 ### E-Mail-Routing {#email-routing-external-account}
 

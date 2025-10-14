@@ -46,7 +46,7 @@ Eine Liste ist eine statische Gruppe von Empfängern, die als Zielgruppe für Se
 
 Sie können einen Workflow verwenden, um Duplikate von der Zielgruppe eines Versands auszuschließen. Damit verhindern Sie, dass dieselbe Nachricht mehrmals an denselben Empfänger gesendet wird.
 
-Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html){target="_blank"}.
+Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html?lang=de){target="_blank"}.
 
 ## Wie kann ich Abonnenten meines Newsletters identifizieren und ansprechen? {#how-to-identify-and-target-subscribers-to-a-newsletter-}
 

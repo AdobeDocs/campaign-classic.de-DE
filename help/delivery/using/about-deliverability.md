@@ -59,7 +59,7 @@ Befolgen Sie beim Konfigurieren, Entwerfen und Testen Ihrer Nachricht die in den
 * [Best Practices beim Versand](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/delivery-best-practices){target="_blank"}.
 * [Kontrollieren von E-Mail-Inhalten](control-message-content.md)
 * [Inbox Rendering](inbox-rendering.md)
-* [Testversand durchführen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}
+* [Testversand durchführen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=de){target="_blank"}
 
 ### Einverständnis durch doppelten Opt-in überprüfen {#double-opt-in}
 

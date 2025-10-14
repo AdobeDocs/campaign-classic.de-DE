@@ -19,7 +19,7 @@ ht-degree: 90%
 
 Die Bestimmung der Zielpopulation ist besonders wichtig. Gehen Sie bei der Erstellung Ihrer Kontaktlisten sorgfältig vor, testen Sie Ihre E-Mails in den gängigsten E-Mail-Clients, Smartphones und Tablets und stellen Sie sicher, dass Ihre Verteilerlisten aktuell sind (und keine unbekannten oder veralteten Adressen enthalten). Sie können auch Testsendungen vornehmen, um einen vollständigen Validierungszyklus durchzuführen.
 
-Weitere Informationen zu Zielpopulationen finden Sie in diesem Abschnitt in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}.
+Weitere Informationen zu Zielpopulationen finden Sie in diesem Abschnitt in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=de){target="_blank"}.
 
 ## Ansprechen der richtigen Zielgruppe {#target-the-right-audience}
 
@@ -39,7 +39,7 @@ Sie können auch ein benutzerdefiniertes Zielgruppen-Mapping erstellen und verwe
 
 ## Externe Empfänger {#external-recipients}
 
-Sie können Nachrichten an Empfänger senden, die in einer externen Datei anstatt in der Datenbank gespeichert sind. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#selecting-external-recipients){target="_blank"}.
+Sie können Nachrichten an Empfänger senden, die in einer externen Datei anstatt in der Datenbank gespeichert sind. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=de#selecting-external-recipients){target="_blank"}.
 
 ## Versand an Ihre Abonnenten {#send-to-subscribers}
 
@@ -50,7 +50,7 @@ Um den Abonnenten eines Newsletters Nachrichten zu senden, können Sie die Abonn
 
 Nutzen Sie Testsendungen, bevor Sie Ihre Nachricht an die Hauptzielgruppe senden.
 
-Achten Sie darauf, geeignete Testversand-Empfänger auszuwählen, da diese die Form und den Inhalt Ihrer Nachricht validieren. Die Schritte zum Definieren der Testversand-Empfänger werden in der Dokumentation zu [&#x200B; v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#select-the-proof-target){target="_blank"}.
+Achten Sie darauf, geeignete Testversand-Empfänger auszuwählen, da diese die Form und den Inhalt Ihrer Nachricht validieren. Die Schritte zum Definieren der Testversand-Empfänger werden in der Dokumentation zu [&#x200B; v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=de#select-the-proof-target){target="_blank"}.
 
 Testadressen werden verwendet, um Nachrichten an Empfänger zu senden, die nicht den definierten Kriterien der Zielgruppe entsprechen, damit eine Nachricht getestet werden kann, bevor sie an die Hauptzielgruppe gesendet wird. Sie werden [in diesem Abschnitt](about-seed-addresses.md) dargestellt.
 

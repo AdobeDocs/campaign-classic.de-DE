@@ -83,7 +83,7 @@ In diesem Abschnitt werden Funktionen und Leistungsmerkmale aufgelistet, die aus
     <tr>
   <td>Bericht zum technischen Zustellbarkeits-Monitoring<br></td>
    <td><p>Der Bericht zum technischen Zustellbarkeits-Monitoring ist nicht mehr verfügbar. Er wurde mit Campaign-Version 21.1.3 eingestellt.</p>
-   <!--p>If needed, you can receive this report daily by email until the feature removal date. To request it, open a specific <a href="https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">Support Case</a> and specify the name of the instance and the email address(es) to send the report to.</p--> 
+   <!--p>If needed, you can receive this report daily by email until the feature removal date. To request it, open a specific <a href="https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">Support Case</a> and specify the name of the instance and the email address(es) to send the report to.</p--> 
   </td>
  </tr>
   <tr>
@@ -99,7 +99,7 @@ In diesem Abschnitt werden Funktionen und Leistungsmerkmale aufgelistet, die aus
   </tr>
   <tr>  
    <td>Fax-Kanal<br></td>
-   <td><p>Ab Campaign Version 21.1.3 ist der Fax-Kanal nicht mehr verfügbar. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html" target="_blank">Weitere Informationen finden Sie in der Dokumentation zu Campaign v8</a></p>
+   <td><p>Ab Campaign Version 21.1.3 ist der Fax-Kanal nicht mehr verfügbar. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=de" target="_blank">Weitere Informationen finden Sie in der Dokumentation zu Campaign v8</a></p>
   </tr>
   <tr>
   <td>Demdex-Domain<br></td>
@@ -137,7 +137,7 @@ In diesem Abschnitt werden Funktionen und Leistungsmerkmale aufgelistet, die aus
   <tr> 
    <td>decryptString-API</td>
    <td><p>Ab Campaign-Version 18.6 ist die <em>decryptString</em>-API bei neuen Installationen aus Sicherheitsgründen standardmäßig nicht mehr verfügbar.</p> 
-   <p>Im Zusammenhang mit einem Postupgrade auf Version 18.6 (und höher) ist diese API nicht mehr aktiv; sie wurde durch die <em>decryptPassword</em>-Funktion ersetzt. <a href="https://experienceleague.adobe.com/developer/campaign-api/api/f-decryptPassword.html?hl=decrypt">Weitere Informationen</a></p></td>
+   <p>Im Zusammenhang mit einem Postupgrade auf Version 18.6 (und höher) ist diese API nicht mehr aktiv; sie wurde durch die <em>decryptPassword</em>-Funktion ersetzt. <a href="https://experienceleague.adobe.com/developer/campaign-api/api/f-decryptPassword.html?lang=de&hl=decrypt">Weitere Informationen</a></p></td>
   </tr> 
    <tr> 
    <td>Mobiler Kanal – MMS- und WAP-Push-Benachrichtigungen</td>

@@ -26,13 +26,13 @@ Hier erfahren Sie, wie Sie in Adobe Campaign Tests und Validierungen vor dem Nac
 
 Im Zuge der Versandanalyse wird die Zielpopulation berechnet und der Versandinhalt vorbereitet. Nach Abschluss der Analyse kann der Versand gestartet werden. In Logs kann überprüft werden, ob alle Verfahren korrekt ablaufen.
 
-Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html){target="_blank"}.
+Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html?lang=de){target="_blank"}.
 
 ### Warum sollte ich Testsendungen durchführen? {#why-should-i-create-proofs-}
 
 Adobe empfiehlt dringend einen Testversand, um den Versand anhand einer Validierungsgruppe zu überprüfen, bevor er an die Hauptzielgruppe gesendet wird. Damit können Inhalt, Personalisierung und Versandparameter geprüft werden.
 
-Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}.
+Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=de){target="_blank"}.
 
 ### Wie werden Testadressen in Adobe Campaign verwendet? {#how-to-use-seed-addresses-in-adobe-campaign-}
 
@@ -49,7 +49,7 @@ Testadressen bieten folgende Möglichkeiten:
 
 Um eventuelle Konfigurationsfehler zu erkennen, ist es empfehlenswert, Ihre Sendungen einem Validierungszyklus zu unterziehen. Auf diese Weise können Sie den Inhalt wiederholt von Testempfängern prüfen lassen. Schalten Sie nach jeder Änderung einen neuen Testversand, um den Inhalt abschließend validieren zu lassen.
 
-Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}.
+Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=de){target="_blank"}.
 
 ### Was ist eine Typologieregel? {#what-is-a-typology-rule-}
 
@@ -63,19 +63,19 @@ Hier erfahren Sie, wie Sie in Adobe Campaign Nachrichten auf unterschiedlichen K
 
 ### Wie kann ich E-Mails in mehreren Schüben senden? {#how-can-i-send-emails-in-waves-}
 
-Vor dem Versand an eine große Population können Sie Schübe konfigurieren, um Nachrichten in mehreren Teilen zu senden und dadurch eine gleichmäßige Auslastung der Kapazitäten zu gewährleisten. Siehe die [Campaign v8-Dokumentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/configure-and-send.html#sending-using-multiple-waves){target="_blank"}.
+Vor dem Versand an eine große Population können Sie Schübe konfigurieren, um Nachrichten in mehreren Teilen zu senden und dadurch eine gleichmäßige Auslastung der Kapazitäten zu gewährleisten. Siehe die [Campaign v8-Dokumentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/configure-and-send.html?lang=de#sending-using-multiple-waves){target="_blank"}.
 
 ### Was sind die wichtigsten Schritte bei der Erstellung einer E-Mail in Campaign? {#which-are-the-key-steps-to-create-an-email-in-campaign-}
 
 Zunächst wird die E-Mail-Nachricht erstellt und validiert und danach gesendet. Sie können zwischen sofortigem Versand an die Hauptzielgruppe und terminiertem Versand zu einem späteren Zeitpunkt wählen. Davor können Sie auch die Zielpopulation schätzen, sofern dies erforderlich ist.
 
-Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}.
+Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=de){target="_blank"}.
 
 ### Wie wird ein Versand terminiert? {#how-to-schedule-a-delivery-}
 
 Sie können das Senden der Nachrichten auf einen späteren Zeitpunkt verschieben, um z. B. den Werbedruck auf eine bestimmte Population zu kontrollieren.
 
-Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/configure-and-send.html#schedule-delivery-sending){target="_blank"}.
+Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/configure-and-send.html?lang=de#schedule-delivery-sending){target="_blank"}.
 
 ### Kann ich zu E-Mails einen Anhang hinzufügen? {#can-i-add-an-attachment-to-emails-}
 

@@ -98,7 +98,7 @@ Der Tab **[!UICONTROL Audit]** enthält das Versandlog und alle Meldungen zu den
 
 Mit der Schaltfläche **[!UICONTROL Aktualisieren]** können Sie die Daten aktualisieren. Verwenden Sie die Schaltfläche **[!UICONTROL Filter]**, um einen Filter für die Daten zu definieren.
 
-Eventuelle Fehler oder Warnmeldungen werden durch spezifische Symbole hervorgehoben. Weitere Informationen finden Sie in diesem Abschnitt in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html){target="_blank"}.
+Eventuelle Fehler oder Warnmeldungen werden durch spezifische Symbole hervorgehoben. Weitere Informationen finden Sie in diesem Abschnitt in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html?lang=de){target="_blank"}.
 
 Ein Untertab listet die durchgeführten **[!UICONTROL Testsendungen]** auf.
 

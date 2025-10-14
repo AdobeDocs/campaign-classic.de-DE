@@ -93,7 +93,7 @@ Ein Workflow kann auch einen oder mehrere Benutzende einbinden, die benachrichti
 
 ## Wie kann ich Push-Benachrichtigungen senden? {#how-to-send-push-notifications-}
 
-In der Dokumentation zu Campaign v8 erfahren Sie, wie Sie mit [&#x200B; Adobe Campaign eine personalisierte Push-Benachrichtigung &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html){target="_blank"}.
+In der Dokumentation zu Campaign v8 erfahren Sie, wie Sie mit [&#x200B; Adobe Campaign eine personalisierte Push-Benachrichtigung &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html?lang=de){target="_blank"}.
 
 ## Wie erstelle und teile ich eine Online-Umfrage? {#how-to-design-and-share-an-online-survey-}
 

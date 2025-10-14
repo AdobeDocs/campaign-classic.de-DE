@@ -472,7 +472,7 @@ Das Campaign SDK ist ab Campaign v7.4 [veraltet](deprecated-features.md). Um ein
 
 ## Browser {#Browsers}
 
-Die folgenden Browser sind in der jeweils aktuellen Version mit Campaign für den Web-Zugriff kompatibel. Weitere Informationen hierzu finden Sie in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html#use-the-web-interface-){target=_blank}.
+Die folgenden Browser sind in der jeweils aktuellen Version mit Campaign für den Web-Zugriff kompatibel. Weitere Informationen hierzu finden Sie in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html?lang=de#use-the-web-interface-){target=_blank}.
 
 * Google Chrome
 * Microsoft Edge

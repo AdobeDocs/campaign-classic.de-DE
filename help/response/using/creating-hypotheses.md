@@ -156,7 +156,7 @@ Anschließend werden wir die von der Vorlage geerbte Abfrage verfeinern, um eine
 
    >[!NOTE]
    >
-   >Weitere Informationen dazu finden Sie in der entsprechenden [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html#add-a-control-group){target="_blank"}.
+   >Weitere Informationen dazu finden Sie in der entsprechenden [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=de#add-a-control-group){target="_blank"}.
 
 1. Öffnen Sie den zuvor erstellten **[!UICONTROL Briefpost-Versand]** Ihrer Kampagne, klicken Sie auf das Symbol **[!UICONTROL Versandmessung]** und anschließend auf **[!UICONTROL Hinzufügen]**.
 
@@ -178,7 +178,7 @@ Anschließend werden wir die von der Vorlage geerbte Abfrage verfeinern, um eine
 
    ![](assets/response_hypothesis_delivery_example_008.png)
 
-1. Starten Sie Ihren Zielgruppen-Workflow und führen Sie die erforderlichen Prüfungen durch, bis die Kampagne abgeschlossen ist. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html#start-a-delivery){target=_blank}.
+1. Starten Sie Ihren Zielgruppen-Workflow und führen Sie die erforderlichen Prüfungen durch, bis die Kampagne abgeschlossen ist. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=de#start-a-delivery){target=_blank}.
 
    ![](assets/response_hypothesis_delivery_example_009.png)
 

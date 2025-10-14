@@ -31,7 +31,7 @@ Um Daten von Campaign Classic in Ihren S3- oder Azure-Blob-Speicher zu exportier
 
 Hierzu müssen Sie Folgendes hinzufügen und konfigurieren:
 
-* Die Aktivität **[!UICONTROL Extraktion (Datei)]**, um die Zieldaten in eine CSV-Datei zu extrahieren. Weitere Informationen zur Konfiguration dieser Aktivität finden Sie in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html){target="_blank"}.
+* Die Aktivität **[!UICONTROL Extraktion (Datei)]**, um die Zieldaten in eine CSV-Datei zu extrahieren. Weitere Informationen zur Konfiguration dieser Aktivität finden Sie in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html?lang=de){target="_blank"}.
 
   ![](assets/rtcdp-extract-file.png)
 

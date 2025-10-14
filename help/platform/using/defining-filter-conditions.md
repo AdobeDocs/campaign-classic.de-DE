@@ -292,7 +292,7 @@ Vier verschiedene Feldtypen stehen zur Verfügung:
 
   Dem Quellwert einer Spalte kann ein Zielwert zugeordnet werden. Es ist der Zielwert, der in der neuen Ausgabespalte angezeigt wird.
 
-  Ein Beispiel für das Hinzufügen des berechneten Feldtyps **[!UICONTROL Auflistungen]** finden Sie in der [Campaign v8-Dokumentation](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/adding-enumeration-type-calculated-field.html){target="_blank"}.
+  Ein Beispiel für das Hinzufügen des berechneten Feldtyps **[!UICONTROL Auflistungen]** finden Sie in der [Campaign v8-Dokumentation](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/adding-enumeration-type-calculated-field.html?lang=de){target="_blank"}.
 
   ![](assets/query_editor_nveau_63.png)
 

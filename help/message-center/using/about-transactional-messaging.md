@@ -88,6 +88,6 @@ Nachdem Sie die Transaktionsnachrichtenvorlage erstellt und veröffentlicht habe
 ## Verwandte Themen {#related-topics}
 
 * [Erste Schritte mit Kommunikationskanälen](../../delivery/using/communication-channels.md)
-* [Die wichtigsten Schritte bei der Versanderstellung](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}
+* [Die wichtigsten Schritte bei der Versanderstellung](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=de){target="_blank"}
 * [Transaktionsnachrichten-Architektur](../../message-center/using/transactional-messaging-architecture.md)
 * [Zugreifen auf Berichte zu Transaktionsnachrichten](../../message-center/using/about-transactional-messaging-reports.md)

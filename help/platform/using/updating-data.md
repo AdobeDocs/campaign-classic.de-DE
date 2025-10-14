@@ -24,7 +24,7 @@ Empfängerprofildaten können manuell oder automatisch aktualisiert werden.
 
 ## Automatische Aktualisierung einrichten {#setting-up-an-automatic-update}
 
-Automatische Aktualisierungen lassen sich unter Verwendung von Workflows durchführen. Weitere Informationen hierzu finden Sie in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/update-data.html){target="_blank"}.
+Automatische Aktualisierungen lassen sich unter Verwendung von Workflows durchführen. Weitere Informationen hierzu finden Sie in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/update-data.html?lang=de){target="_blank"}.
 
 ## Gebündeltes Update durchführen {#performing-a-mass-update}
 
