@@ -8,10 +8,10 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: a586d70b-1b7f-47c2-a821-635098a70e45
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1281'
-ht-degree: 4%
+source-wordcount: '1273'
+ht-degree: 3%
 
 ---
 
@@ -145,7 +145,7 @@ VACUUM (FULL, ANALYZE, VERBOSE) nmsmirrorpageinfo;
 >* Adobe empfiehlt, die für Ihr Datenmodell spezifischen Tabellen hinzuzufügen, die erheblich aktualisiert werden können. Dies kann bei „NmsRecipient **der Fall sein** wenn Sie über große tägliche Datenreplikationsflüsse verfügen.
 >* Die VACUUM-Anweisung sperrt die Tabelle, wodurch einige Prozesse angehalten werden, während die Wartung durchgeführt wird.
 >* Bei sehr großen Tabellen (typischerweise über 5 GB) kann die VACUUM FULL-Anweisung sehr ineffizient werden und sehr lange dauern. Adobe rät davon ab, sie für die Tabelle **YyyNmsBroadLogXxx** zu verwenden.
->* Dieser Wartungsvorgang kann durch einen Adobe Campaign-Workflow mithilfe einer **[!UICONTROL SQL]**-Aktivität implementiert werden. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../workflow/using/architecture.md). Stellen Sie sicher, dass Sie die Wartung für eine kurze Zeitspanne ohne Kollision mit dem Backup-Fenster planen.
+>* Dieser Wartungsvorgang kann durch einen Adobe Campaign-Workflow mithilfe einer **[!UICONTROL SQL]**-Aktivität implementiert werden. Stellen Sie sicher, dass Sie die Wartung für eine kurze Zeitspanne ohne Kollision mit dem Backup-Fenster planen.
 >
 
 ### Datenbank neu erstellen {#rebuilding-a-database}
@@ -157,7 +157,7 @@ PostgreSQL bietet keine einfache Möglichkeit, einen Online-Tabellen-Neuaufbau d
 
 Im Folgenden finden Sie ein Beispiel für die Tabellendefragmentierung mithilfe spezifischer Funktionen zum Generieren der erforderlichen DDL. Mit dem folgenden SQL-Code können Sie zwei neue Funktionen erstellen: **GenRebuildTablePart1** und **GenRebuildTablePart2**, mit denen die erforderliche DDL zum Erstellen einer Tabelle generiert werden kann.
 
-* Mit der ersten Funktion können Sie eine Arbeitstabelle (hier **&#x200B; _tmp**) erstellen, die eine Kopie der ursprünglichen Tabelle ist.
+* Mit der ersten Funktion können Sie eine Arbeitstabelle (hier ** _tmp**) erstellen, die eine Kopie der ursprünglichen Tabelle ist.
 * Die zweite Funktion löscht dann die ursprüngliche Tabelle und benennt die Arbeitstabelle und ihre Indizes um.
 * Die Verwendung von zwei Funktionen anstelle einer bedeutet, dass Sie bei einem Fehler der ersten nicht das Risiko eingehen, die ursprüngliche Tabelle zu löschen.
 

@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '3834'
+source-wordcount: '3837'
 ht-degree: 1%
 
 ---
@@ -57,8 +57,9 @@ Mit **[!UICONTROL Knoten Administration / Plattform]** Optionen können Sie Adob
   </tr>
   <tr> 
    <td> <span class="uicontrol">NMS_ActivateOwnerConfirmation</span> <br /> </td> 
-   <td><p> Ermöglicht es dem für den Versand verantwortlichen Benutzer, den Versand zu bestätigen, wenn in den Versandeigenschaften ein bestimmter Benutzer oder eine Benutzergruppe für den Start eines Versands angegeben wurde.</p><p> Aktivieren Sie dazu die Option, indem Sie als Wert „1“ eingeben. Um diese Option zu deaktivieren, geben Sie „0“ ein.</p><p> Der Bestätigungsprozess für den Versand funktioniert dann standardmäßig: Nur der in den Versandeigenschaften für den Versand angegebene Benutzer oder die Benutzergruppe (oder ein Administrator) kann den Versand bestätigen und durchführen. Weitere Informationen finden Sie <a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">in diesem Abschnitt</a>.</p> </td> 
-   <tr> 
+   <td><p> Ermöglicht es dem für den Versand verantwortlichen Benutzer, den Versand zu bestätigen, wenn in den Versandeigenschaften ein bestimmter Benutzer oder eine Benutzergruppe für den Start eines Versands angegeben wurde.</p><p> Aktivieren Sie dazu die Option, indem Sie als Wert „1“ eingeben. Um diese Option zu deaktivieren, geben Sie „0“ ein.</p><p> Der Bestätigungsprozess für den Versand funktioniert dann standardmäßig: Nur der in den Versandeigenschaften für den Versand angegebene Benutzer oder die Benutzergruppe (oder ein Administrator) kann den Versand bestätigen und durchführen. Weitere Informationen finden Sie <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html#start-a-delivery" target="_blank">in diesem Abschnitt</a>.</p> </td>
+
+<tr> 
    <td> <span class="uicontrol">Nms_DefaultRcpSchema</span> <br /> </td> 
    <td> Adobe Campaign verwendet eine globale Variable „Nms_DefaultRcpSchema“ für den Dialog mit der standardmäßigen Empfängerdatenbank (nms:recipient).<br /> Der Wert der Option muss mit dem Namen des Schemas übereinstimmen, das mit der externen Empfängertabelle übereinstimmt.<br /> </td> 
   </tr> 
@@ -196,7 +197,7 @@ Mit **[!UICONTROL Knoten Administration / Plattform]** Optionen können Sie Adob
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsMidSourcing_LogsPeriodHour</span> <br /> </td>
-   <td> Ermöglicht die Angabe eines maximalen Zeitraums (ausgedrückt in Stunden), um die Anzahl der bei jeder Ausführung des Synchronisierungs-Workflows wiederhergestellten Broadlogs zu begrenzen.</a>,<br /> </td> 
+   <td> Ermöglicht die Angabe eines maximalen Zeitraums (ausgedrückt in Stunden), um die Anzahl der bei jeder Ausführung des Synchronisierungs-Workflows wiederhergestellten Broadlogs zu begrenzen.</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsMidSourcing_PrepareFlow</span> <br /> </td> 
@@ -208,7 +209,7 @@ Mit **[!UICONTROL Knoten Administration / Plattform]** Optionen können Sie Adob
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_DeliveryPreparationWindow</span> <br /> </td> 
-   <td><p>Diese Option wird vom technischen Workflow <span class="uicontrol"><a href="../../workflow/using/about-technical-workflows.md">operationMgt</a></span> beim Zählen der Anzahl der laufenden Sendungen verwendet.</p>Damit können Sie die Anzahl der Tage festlegen, nach denen Sendungen mit dem Status Inkonsistent von der Zählung der laufenden Sendungen ausgeschlossen werden.</p><p>Standardmäßig ist der Wert auf „7“ festgelegt, was bedeutet, dass inkonsistente Sendungen, die älter als 7 Tage sind, ausgeschlossen werden.</p></td> 
+   <td><p>Diese Option wird vom technischen Workflow <span class="uicontrol"><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html?lang=de" target="_blank">operationMgt</a></span> beim Zählen der Anzahl der laufenden Sendungen verwendet.</p>Damit können Sie die Anzahl der Tage festlegen, nach denen Sendungen mit dem Status Inkonsistent von der Zählung der laufenden Sendungen ausgeschlossen werden.</p><p>Standardmäßig ist der Wert auf „7“ festgelegt, was bedeutet, dass inkonsistente Sendungen, die älter als 7 Tage sind, ausgeschlossen werden.</p></td> 
   </tr>
   <tr> 
    <td> <span class="uicontrol">NmsPaper_SenderLine1</span> <br /> </td> 
@@ -364,7 +365,7 @@ Mit **[!UICONTROL Knoten Administration / Plattform]** Optionen können Sie Adob
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_OperationMgtDebug</span> <br /> </td> 
-   <td> Ermöglicht die Überwachung der Ausführung <a href="../../workflow/using/about-technical-workflows.md"> technischen Workflows </a>operationMgt). Wenn aktiviert (Wert „1„), werden die Ausführungsinformationen in den Workflow-Auditprotokollen protokolliert.<br /> </td> 
+   <td> Ermöglicht die Überwachung der Ausführung <a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html?lang=de" target="_blank"> technischen Workflows </a>operationMgt). Wenn aktiviert (Wert „1„), werden die Ausführungsinformationen in den Workflow-Auditprotokollen protokolliert.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_TimeRange</span> <br /> </td> 
@@ -1022,7 +1023,7 @@ Mit **[!UICONTROL Knoten Administration / Plattform]** Optionen können Sie Adob
  </tbody> 
 </table>
 
-## Webformulare {#web-forms}
+## Web-Formulare {#web-forms}
 
 <table> 
  <thead> 

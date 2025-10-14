@@ -1,24 +1,24 @@
 ---
 product: campaign
-title: Häufig gestellte Fragen zu Profilen und Audiences
+title: Häufig gestellte Fragen zu Profilen und Zielgruppen
 description: Häufig gestellte Fragen zu Campaign Classic
 feature: Audiences, Troubleshooting
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: ba8bf610-cbac-41e9-8b6e-130deb8b97e2
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 100%
+source-wordcount: '262'
+ht-degree: 83%
 
 ---
 
-# Häufig gestellte Fragen zu Profilen und Audiences {#audiences-faq}
+# Häufig gestellte Fragen zu Profilen und Zielgruppen {#audiences-faq}
 
 
 
-Hier erfahren Sie, wie Sie in Adobe Campaign eine Population auswählen und Audiences verwalten.
+Hier erfahren Sie, wie Sie in Adobe Campaign eine Population auswählen und Zielgruppen verwalten.
 
 ## Wie erstelle ich Empfänger? {#how-to-create-recipients-}
 
@@ -32,12 +32,11 @@ Einfache Anwendungsfälle für das Importieren von Profilen finden Sie [hier](..
 
 ## Wie kann ich die Zielpopulation für meine Marketing-Kampagne definieren? {#how-can-i-define-the-target-population-of-a-marketing-campaign-}
 
-Sie können [Workflows zum Erstellen einer Zielpopulation](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow) einer Marketing-Kampagne verwenden.
-
+Sie können Workflows verwenden, um eine Zielpopulation einer Marketing-Kampagne zu erstellen. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target#build-the-main-target-in-a-workflow.html){target="_blank"}.
 
 ## Wie kann ich eine Profilliste erstellen? {#how-can-i-create-a-list-of-profiles-}
 
-Eine Liste ist eine statische Gruppe von Empfängern, die als Zielgruppe für Sendungen verwendet oder durch Importe sowie Workflows aktualisiert werden kann. So kann beispielsweise eine mithilfe einer Abfrage aus der Datenbank gefilterte Population in einer Liste gespeichert werden.
+Eine Liste ist eine statische Gruppe von Empfängern, die als Zielgruppe für Sendungen verwendet oder durch Importe sowie Workflows aktualisiert werden kann. So kann beispielsweise eine mithilfe einer Abfrage aus der Datenbank extrahierte Population in einer Liste gespeichert werden.
 
 [Hier erfahren Sie mehr darüber](../../platform/using/creating-and-managing-lists.md#creating-a-profile-list-from-a-group).
 
@@ -47,7 +46,7 @@ Eine Liste ist eine statische Gruppe von Empfängern, die als Zielgruppe für Se
 
 Sie können einen Workflow verwenden, um Duplikate von der Zielgruppe eines Versands auszuschließen. Damit verhindern Sie, dass dieselbe Nachricht mehrmals an denselben Empfänger gesendet wird.
 
-[In diesem Beispiel erfahren Sie mehr dazu](../../workflow/using/deduplication.md#example--identify-the-duplicates-before-a-delivery).
+Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html){target="_blank"}.
 
 ## Wie kann ich Abonnenten meines Newsletters identifizieren und ansprechen? {#how-to-identify-and-target-subscribers-to-a-newsletter-}
 
@@ -55,4 +54,4 @@ Hier erfahren Sie, wie die Abonnementverwaltung in Campaign erfolgt und wie Sie 
 
 ## Was sind die Best Practices beim Ausschließen von Profilen aus einer Zielpopulation? {#what-is-the-best-practice-to-exclude-profiles-from-a-target-population-}
 
-[Auf dieser Seite](../../workflow/using/read-list.md) erfahren Sie, wie Sie eine Liste mit Profilen aus Ihrer Zielpopulation ausschließen.
+Wie Sie eine Liste von Profilen aus Ihrer Zielpopulation ausschließen, erfahren Sie in der Dokumentation zu [ v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/read-list.html?lang=de){target="_blank"}.

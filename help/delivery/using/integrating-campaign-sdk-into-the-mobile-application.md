@@ -7,10 +7,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: a5f6b82d-5561-4e56-b2ed-7fd6fd8c2b55
-source-git-commit: 81b47231b027a189bc8b9029b7d48939734d08ed
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '987'
-ht-degree: 100%
+source-wordcount: '985'
+ht-degree: 98%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 >
 >Adobe empfiehlt dringend, das Adobe Experience Platform Mobile SDK zu verwenden, indem die Adobe Campaign-Erweiterung in der Benutzeroberfläche „Datenerfassung“ konfiguriert wird. Mit dem Adobe Experience Platform Mobile SDK können Sie die Experience Cloud-Lösungen und -Dienste von Adobe in Ihren mobilen Apps nutzen. Die SDK-Konfiguration wird über die Datenerfassungs-Benutzeroberfläche verwaltet, um eine flexible Konfiguration und erweiterbare, regelbasierte Integrationen zu ermöglichen. [Weitere Informationen finden Sie in der Dokumentation zu Adobe Developer](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}.
 
-Um Campaign SDK (früher bekannt als Neolane SDK) zu erhalten, wenden Sie sich an die [Adobe Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}.
+Um das Campaign SDK (früher bekannt als Neolane SDK) zu erhalten, wenden Sie sich an die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}.
 
 Weitere Informationen zu den verschiedenen unterstützten Android- und iOS-Versionen finden Sie in der [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md#MobileSDK).
 
@@ -64,7 +64,7 @@ Zur Integration des Campaign SDK in die Mobile App benötigt der Entwickler folg
 
   >[!NOTE]
   >
-  >Der Integrationsschlüssel ist in der Adobe Campaign-Konsole im Tab **[!UICONTROL Informationen]** des dedizierten Dienstes der Mobile App angegeben. Weitere Informationen finden Sie unter [Konfiguration einer Mobile App in Adobe Campaign](configuring-the-mobile-application.md).
+  >Der Integrationsschlüssel ist in der Adobe Campaign-Konsole im Tab **[!UICONTROL Informationen]** des dedizierten Dienstes der Mobile App angegeben. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html){target="_blank"}.
 
 * **Tracking-URL**: entspricht der Adresse des Adobe Campaign-Trackingservers.
 * **Marketing-URL**: um die Sammlung der Abonnements zu ermöglichen.

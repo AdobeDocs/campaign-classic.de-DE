@@ -4,10 +4,10 @@ title: Richtlinien für das Überwachen
 description: Entdecken Sie Richtlinien und Best Practices zur Überwachung von Campaign-Instanzen und -Prozessen
 feature: Monitoring
 exl-id: ca0c33c5-7350-462a-bc65-4cab51e529d9
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '744'
-ht-degree: 26%
+source-wordcount: '759'
+ht-degree: 25%
 
 ---
 
@@ -64,7 +64,7 @@ Im Control Panel können Sie mehrere Einstellungen Ihrer Instanz verwalten: URL-
 
 **Workflow-Heatmap**
 
-Die Workflow-Heatmap bietet eine visuelle Darstellung aller Workflows, die auf Ihrer Instanz ausgeführt werden. Damit können Sie die Auslastung der Instanz einfach überwachen und Workflows entsprechend planen. [Klicken Sie hier](../../workflow/using/heatmap.md), um weitere Informationen zu erhalten.
+Die Workflow-Heatmap bietet eine visuelle Darstellung aller Workflows, die auf Ihrer Instanz ausgeführt werden. Damit können Sie die Auslastung der Instanz einfach überwachen und Workflows entsprechend planen. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/heatmap.html?lang=de){target="_blank"}.
 
 **Audit-Protokoll**
 
@@ -76,13 +76,13 @@ Bei Problemen mit der Ausführung eines Workflows können bestimmte Aktionen aus
 
 **Workflow-Statusüberwachung**
 
-Zusätzlich zur Heatmap können Sie einen Workflow erstellen, mit dem Sie den Status einer Reihe von Workflows überwachen und wiederkehrende Nachrichten an Supervisoren senden können. [Klicken Sie hier](../../workflow/using/supervising-workflows.md), um weitere Informationen zu erhalten.
+Zusätzlich zur Heatmap können Sie einen Workflow erstellen, mit dem Sie den Status einer Reihe von Workflows überwachen und wiederkehrende Nachrichten an Supervisoren senden können. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/workflow-supervision.html?lang=de){target="_blank"}.
 
 **Allgemeine Richtlinien**
 
 Die Befolgung von Richtlinien und Best Practices bei der Verwendung von Workflows kann die Leistung verbessern. Weitere Informationen finden Sie in den folgenden Abschnitten:
-* [Best Practices bei der Verwendung von Workflows](../../workflow/using/workflow-best-practices.md)
-* [Ausführung des Workflows überwachen](../../workflow/using/monitoring-workflow-execution.md)
+* [Best Practices bei der Verwendung von Workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=de){target="_blank"}
+* [Ausführung des Workflows überwachen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=de){target="_blank"}
 
 ### Überwachen von Sendungen {#monitoring-deliveries}
 
@@ -94,7 +94,7 @@ SMTP-Berichte enthalten Versandstatistiken und SMTP-Fehler nach Domain. [Weitere
 
 **Best Practices**
 
-[Best Practices für den Versand und die ](../../delivery/using/delivery-best-practices.md) von Sendungen können Sie bei der Verbesserung der Versandleistung unterstützen.
+Informationen zu Best Practices für den Versand und das Design von [ finden ](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/delivery-best-practices){target="_blank"} in der Dokumentation zu Campaign v8 , um die Leistung zu verbessern.
 
 **Fehlerbehebung beim Versand**
 Bei Problemen mit Sendungen können spezifische Aktionen durchgeführt werden:

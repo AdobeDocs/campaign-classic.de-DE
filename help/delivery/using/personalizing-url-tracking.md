@@ -6,10 +6,10 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Monitoring, Email Design, Personalization
 role: User
 exl-id: 3277726a-fd92-4720-8871-3d0422c7db70
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '183'
-ht-degree: 100%
+source-wordcount: '186'
+ht-degree: 96%
 
 ---
 
@@ -19,7 +19,7 @@ Erweiterte Einstellungen für das Tracking von Nachrichten sind über das Symbol
 
 >[!NOTE]
 >
->Die Verwaltung von Bildern in E-Mails wird ebenfalls in diesem Fenster konfiguriert. Siehe [Hinzufügen von Bildern](defining-the-email-content.md#adding-images).
+>Die Verwaltung von Bildern in E-Mails wird ebenfalls in diesem Fenster konfiguriert. Siehe die [Campaign v8-Dokumentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#adding-images){target="_blank"}.
 
 ![](assets/s_ncs_user_email_del_tracking_ico.png)
 

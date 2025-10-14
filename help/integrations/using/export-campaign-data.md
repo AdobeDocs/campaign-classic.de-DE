@@ -6,10 +6,10 @@ feature: Experience Platform Integration
 audience: integrations
 content-type: reference
 exl-id: 8d1404c5-030b-47fe-a4c3-e72f15f09bbb
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '476'
-ht-degree: 96%
+source-wordcount: '482'
+ht-degree: 90%
 
 ---
 
@@ -31,11 +31,11 @@ Um Daten von Campaign Classic in Ihren S3- oder Azure-Blob-Speicher zu exportier
 
 Hierzu müssen Sie Folgendes hinzufügen und konfigurieren:
 
-* Die Aktivität **[!UICONTROL Extraktion (Datei)]**, um die Zieldaten in eine CSV-Datei zu extrahieren. Weiterführende Informationen zur Konfiguration dieser Aktivität finden Sie in [diesem Abschnitt](../../workflow/using/extraction-file.md).
+* Die Aktivität **[!UICONTROL Extraktion (Datei)]**, um die Zieldaten in eine CSV-Datei zu extrahieren. Weitere Informationen zur Konfiguration dieser Aktivität finden Sie in der [ zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html){target="_blank"}.
 
   ![](assets/rtcdp-extract-file.png)
 
-* Die Aktivität **[!UICONTROL Dateiübertragung]**, um die CSV-Datei an Ihren Speicherort zu übertragen. Weiterführende Informationen zur Konfiguration dieser Aktivität finden Sie in [diesem Abschnitt](../../workflow/using/file-transfer.md).
+* Die Aktivität **[!UICONTROL Dateiübertragung]**, um die CSV-Datei an Ihren Speicherort zu übertragen. Weitere Informationen zur Konfiguration dieser Aktivität finden Sie in der [ zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=de){target="_blank"}.
 
   ![](assets/rtcdp-file-transfer.png)
 

@@ -8,10 +8,10 @@ content-type: reference
 level: Intermediate, Experienced
 topic-tags: starting-with-adobe-campaign
 exl-id: 20552812-5c58-4d48-9636-d5135197685d
-source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
-workflow-type: ht
-source-wordcount: '509'
-ht-degree: 100%
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+workflow-type: tm+mt
+source-wordcount: '511'
+ht-degree: 98%
 
 ---
 
@@ -49,13 +49,13 @@ Sie können eine benutzerdefinierte Empfängertabelle in Campaign erstellen und 
 
 Das Abfragetool von Adobe Campaign ermöglicht das leistungsstarke Analysieren von Daten und Erstellen von Segmenten.
 
-Die Adobe Campaign-Plattform bietet ein leistungsstarkes Abfragetool, das bei der Erfüllung verschiedener Funktionen wie Zielgruppenbestimmung, Segmentation des Kundenstamms, Extraktion und Filterung von Trackinglogs sowie Erstellung von Filtern zur Anwendung kommt.
+Die Adobe Campaign-Plattform bietet ein leistungsstarkes Abfragetool, das bei der Erfüllung verschiedener Funktionen wie Zielpopulationsbestimmung, Segmentation des Kundenstamms, Extraktion und Filterung von Trackinglogs sowie Erstellung von Filtern zur Anwendung kommt.
 
 Sie können mit diesem generischen Abfrage-Tool Daten aus der Campaign-Datenbank abrufen. Der Zugriff darauf erfolgt über das Menü **Werkzeuge > Generisches Abfragetool...** Sie können damit in einer Datenbank gespeicherte Informationen extrahieren sowie organisieren, gruppieren, sortieren usw. So kann ein Benutzer beispielsweise die Empfängerinnen und Empfänger abrufen, die innerhalb eines bestimmten Zeitraums mehr als x-mal auf einen Link in einem Newsletter geklickt haben. Mit diesem Tool können Sie Ergebnisse nach Bedarf sammeln, sortieren und anzeigen. Alle Abfrageoptionen in Adobe Campaign werden über dieses Tool gesteuert. So lassen sich z. B. Einschränkungsfilter im Tool erstellen und speichern. Derart angelegte Benutzerfilter sind dadurch auch in der Abfrageaktivität eines Zielgruppen-Workflows verfügbar.
 
 Abfragen werden entweder mit den in der ausgewählten Tabelle enthaltenen Feldern oder mithilfe einer Formel durchgeführt. Die wichtigsten Grundsätze bei der Erstellung einer Abfrage in der Campaign-Datenbank werden auf [dieser Seite](../../platform/using/about-queries-in-campaign.md) beschrieben.
 
-[Klicken Sie hier](../../workflow/using/query.md), um mehr über den Campaign-Abfrageeditor zu erfahren.
+Weitere Informationen über Abfragen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=de){target="_blank"}.
 
 ## Wie kann ich Daten-Packages importieren? {#how-can-i-import-a-data-package-}
 

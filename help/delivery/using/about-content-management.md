@@ -6,10 +6,10 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Landing Pages, Email Design
 role: User
 exl-id: 87434cc2-1636-4558-ab60-255b7f873c0c
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '258'
-ht-degree: 100%
+source-wordcount: '261'
+ht-degree: 93%
 
 ---
 
@@ -19,9 +19,9 @@ Das Adobe Campaign-Modul Inhaltsverwaltung (Content Manager) ist in für Campa
 
 >[!NOTE]
 >
->Dieser Abschnitt bezieht sich auf das Content Management-Modul. Weitere Informationen zum Entwerfen von Inhalten für den E-Mail-Versand finden Sie in [diesem Abschnitt](defining-the-email-content.md).
+>Dieser Abschnitt bezieht sich auf das Content-Management-Modul. Weitere Informationen zum Entwerfen von Inhalten eines E-Mail-Versands finden Sie in der [ zu Campaign v8 ](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/emails/defining-the-email-content){target="_blank"}.
 
-Das Content Management-Modul umfasst Funktionen für Arbeitsgruppen, Workflows und Inhaltsaggregationen. Damit können Nachrichten automatisch formatiert werden: E-Mail, Post, SMS, Web usw.
+Das Content-Management-Modul umfasst Funktionen für Arbeitsgruppen, Workflows und Inhaltsaggregationen. Damit können Nachrichten automatisch formatiert werden: E-Mail, Post, SMS, Web usw.
 
 Die Verwendung des Content-Manager-Moduls ermöglicht es Ihnen, den für die Inhaltserstellung zuständigen Benutzern Eingabe- und Auswahlfelder zur Verfügung zu stellen. Das Layout der Inhalte wird automatisch über ein Stylesheet gesteuert.
 
@@ -31,7 +31,7 @@ Die Verwendung des Content-Manager-Moduls ermöglicht es Ihnen, den für die Inh
 >
 >Jede Änderung am Stylesheet schlägt sich automatisch auf die Sendungen nieder, deren Inhaltsvorlagen auf dem betroffenen Stylesheet beruhen.
 
-Das Content Management bietet folgende Vorteile:
+Das Content-Management bietet folgende Vorteile:
 
 * Strukturierte Redaktion von Inhalten dank der Eingabe-Schnittstellen,
 * Trennung von Daten und ihrer Darstellung (werden im XML-Format erzeugt),

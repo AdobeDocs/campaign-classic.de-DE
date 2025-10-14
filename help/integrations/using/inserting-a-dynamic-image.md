@@ -8,10 +8,10 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-target
 exl-id: 6177f57b-534c-4d86-8f73-d96980c48a77
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '875'
-ht-degree: 100%
+source-wordcount: '878'
+ht-degree: 98%
 
 ---
 
@@ -86,19 +86,19 @@ In unserem Fall benötigen wir zwei Umleitungsangebote. Das dritte (das Standard
 
 ## Zielgruppen erstellen {#audiences-target}
 
-Erstellen Sie in Target die zwei Audiences, in die die Besucher Ihres Angebots unterteilt werden und denen die unterschiedlichen Inhalte präsentiert werden. Fügen Sie für jede Audience eine Regel hinzu, um festzulegen, wer das Angebot sehen kann.
+Erstellen Sie in Target die zwei Zielgruppen, in die die Besucher Ihres Angebots unterteilt werden und denen die unterschiedlichen Inhalte präsentiert werden. Fügen Sie für jede Zielgruppe eine Regel hinzu, um festzulegen, wer das Angebot sehen kann.
 
 1. Um in Target eine neue Audience zu erstellen, klicken Sie auf dem Tab **[!UICONTROL Zielgruppen]** auf **[!UICONTROL Zielgruppe erstellen]**.
 
    ![](assets/audiences_1.png)
 
-1. Fügen Sie Ihrer Audience einen Namen hinzu.
+1. Fügen Sie Ihrer Zielgruppe einen Namen hinzu.
 
    ![](assets/audiences_2.png)
 
 1. Klicken Sie auf **[!UICONTROL Add a rule (Regel hinzufügen)]** und wählen Sie eine Kategorie aus. Die Regel benutzt spezifische Kriterien für die Besucher. Sie können die Regeln verfeinern, indem Sie Bedingungen hinzufügen oder neue Regeln in anderen Kategorien erstellen.
 
-1. Führen Sie dieselben Schritte für die anderen Audiences durch.
+1. Führen Sie dieselben Schritte für die anderen Zielgruppen durch.
 
 ## Experience Targeting-Aktivität erstellen {#creating-targeting-activity}
 
@@ -116,7 +116,7 @@ Wir müssen in Target eine Experience Targeting-Aktivität erstellen, die versch
 
    ![](assets/target_10_2.png)
 
-1. Wählen Sie die Audience aus, die in den vorherigen Schritten erstellt wurde.
+1. Wählen Sie die Zielgruppe aus, die in den vorherigen Schritten erstellt wurde.
 
    ![](assets/target_10_3.png)
 
@@ -124,7 +124,7 @@ Wir müssen in Target eine Experience Targeting-Aktivität erstellen, die versch
 
 ### Definieren des Speicherorts und Inhalts {#defining-location-content}
 
-Fügen Sie für jede Audience Inhalt hinzu:
+Fügen Sie für jede Zielgruppe Inhalt hinzu:
 
 1. Wählen Sie den Namen des Speicherorts, den Sie beim Einfügen des dynamischen Angebots in Adobe Campaign festgelegt haben.
 
@@ -154,7 +154,7 @@ Im Abschnitt **[!UICONTROL Einstellungen für die Berichterstellung]** können S
 
 ## Anzeigen der Vorschau und Senden der Nachricht {#preview-send-email}
 
-Sie können nun in Adobe Campaign Ihre E-Mail in der Vorschau ansehen und ihre Darstellung bei verschiedenen Empfängern testen. Sie werden bemerken, dass sich das Bild entsprechend den unterschiedlichen Erlebnissen ändert. Weiterführende Informationen zur Erstellung von E-Mails finden Sie auf dieser [Seite](../../delivery/using/defining-the-email-content.md).
+Sie können nun in Adobe Campaign Ihre E-Mail in der Vorschau ansehen und ihre Darstellung bei verschiedenen Empfängern testen. Sie werden bemerken, dass sich das Bild entsprechend den unterschiedlichen Erlebnissen ändert. Weitere Informationen zur Erstellung von E-Mails finden Sie in der [ zu Campaign v8 ](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/emails/defining-the-email-content){target="_blank"}.
 
 Jetzt können Sie Ihre E-Mail einschließlich eines dynamischen Angebots von Target versenden.
 

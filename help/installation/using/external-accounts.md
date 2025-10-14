@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1981'
-ht-degree: 64%
+source-wordcount: '1988'
+ht-degree: 68%
 
 ---
 
@@ -47,7 +47,7 @@ Das externe Konto wird erstellt und der Liste der externen Konten hinzugefügt.
 
 ### Bounce-E-Mails {#bounce-mails-external-account}
 
-Das externe Konto **Bounce Messages** gibt das externe POP3-Konto an, das für die Verbindung mit dem E-Mail-Service verwendet werden soll. Weiterführende Informationen dazu finden Sie auf dieser [Seite](../../workflow/using/inbound-emails.md).
+Das externe Konto **Bounce Messages** gibt das externe POP3-Konto an, das für die Verbindung mit dem E-Mail-Service verwendet werden soll. Weitere Informationen zu diesem externen Konto finden Sie in der [ zu Campaign v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html?lang=de){target="_blank"}.
 
 Alle Server, die für den POP3-Zugriff konfiguriert sind, können für den Empfang von Antwortsendungen verwendet werden.
 
@@ -81,7 +81,7 @@ Um das externe Konto für **[!UICONTROL Bounce-Messages (defaultPopAccount)]** z
 
 >[!IMPORTANT]
 >
->Bevor Sie Ihr externes POP3-Konto mit Microsoft OAuth 2.0 konfigurieren, müssen Sie Ihre Anwendung zunächst im Azure-Portal registrieren. Weitere Informationen hierzu finden Sie auf [dieser Seite](https://docs.microsoft.com/de-de/azure/active-directory/develop/quickstart-register-app).
+>Bevor Sie Ihr externes POP3-Konto mit Microsoft OAuth 2.0 konfigurieren, müssen Sie die Anwendung zunächst im Azure-Portal registrieren. Weitere Informationen hierzu finden Sie auf [dieser Seite](https://docs.microsoft.com/de-de/azure/active-directory/develop/quickstart-register-app).
 
 Um ein externes POP3-Programm mit **Microsoft OAuth 2.0** zu konfigurieren, markieren Sie die Option **[!UICONTROL Microsoft OAuth 2.0]** und füllen Sie die folgenden Felder aus:
 
@@ -101,7 +101,7 @@ Um ein externes POP3-Programm mit **Microsoft OAuth 2.0** zu konfigurieren, mark
 
   Die Umleitungs-URL finden Sie im Menü **Authentifizierung** Ihrer Anwendung im Azure-Portal. Sie sollte mit der folgenden Syntax enden: `nl/jsp/oauth.jsp`, z. B. `https://redirect.adobe.net/nl/jsp/oauth.jsp`.
 
-Zum Einrichten und Verwenden der Schaltfläche **[!UICONTROL Verbindung testen]** in der Client-Konsole ist ein Internetzugang erforderlich. Nach dem Setup kann der inMail-Prozess ohne Internet mit Microsoft-Servern kommunizieren.
+Zum Einrichten und Verwenden der Schaltfläche **[!UICONTROL Verbindung testen]** in der Client-Konsole ist ein Internetzugang erforderlich. Nach der Einrichtung kann der inMail-Prozess ohne Internet mit Microsoft-Servern kommunizieren.
 
 Nachdem Sie Ihre unterschiedlichen Anmeldedaten eingegeben haben, können Sie auf **[!UICONTROL Verbindung einrichten]** klicken, um die Konfiguration Ihres externen Kontos abzuschließen.
 
@@ -116,11 +116,10 @@ Die folgenden Kanäle können konfiguriert werden:
 * [E-Mail](#email-routing-external-account)
 * [Mobiltelefon (SMS)](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account)
 * [Telefon](../../delivery/using/communication-channels.md#other-channels)
-* [Briefpost](../../delivery/using/about-direct-mail-channel.md)
+* [Direkt-Mail](../../delivery/using/about-direct-mail-channel.md)
 * [Agentur](../../delivery/using/communication-channels.md#other-channels)
 * [X (früher bekannt als Twitter)](../../social/using/about-social-marketing.md)
-* [iOS-Kanal](../../delivery/using/configuring-the-mobile-application.md)
-* [Android-Kanal](../../delivery/using/configuring-the-mobile-application-android.md)
+* [iOS- und Android-Kanäle](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html){target="_blank"}
 
 ### E-Mail-Routing {#email-routing-external-account}
 
@@ -160,7 +159,7 @@ Weiterführende Informationen zur Konfiguration finden Sie auf dieser [Seite](..
 
 ### FTP {#ftp-external-account}
 
-Mit dem externen FTP -Konto können Sie den Zugriff auf einen Server außerhalb von Adobe Campaign konfigurieren und testen. Um Verbindungen mit externen Systemen wie FTP-Servern 898 für Dateiübertragungen einzurichten, können Sie Ihre eigenen externen Konten erstellen. Weiterführende Informationen hierzu finden Sie auf [dieser Seite](../../workflow/using/file-transfer.md).
+Mit dem externen FTP -Konto können Sie den Zugriff auf einen Server außerhalb von Adobe Campaign konfigurieren und testen. Um Verbindungen mit externen Systemen wie FTP-Servern 898 für Dateiübertragungen einzurichten, können Sie Ihre eigenen externen Konten erstellen. Weitere Informationen hierzu finden Sie in der [ zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=de){target="_blank"}.
 
 Geben Sie dazu in diesem externen Konto die Adresse und die Anmeldedaten für die Verbindungsherstellung zum FTP-Server an.
 
@@ -172,7 +171,7 @@ Geben Sie dazu in diesem externen Konto die Adresse und die Anmeldedaten für di
 
 * **[!UICONTROL Port]**
 
-  Nummer des FTP-Verbindungsports. Standardmäßig ist dies Port 21.
+  Port-Nummer der FTP-Verbindung. Der Standard-Port ist 21.
 
 * **[!UICONTROL Konto]**
 
@@ -190,7 +189,7 @@ Informationen zu diesen Anmeldedaten finden Sie auf dieser [Seite](https://help.
 
 ### SFTP {#sftp-external-account}
 
-Mit dem externen SFTP -Konto können Sie den Zugriff auf einen Server außerhalb von Adobe Campaign konfigurieren und testen. Um Verbindungen mit externen Systemen wie SFTP für Dateiübertragungen einzurichten, können Sie Ihre eigenen externen Konten erstellen. Weiterführende Informationen hierzu finden Sie auf [dieser Seite](../../workflow/using/file-transfer.md).
+Mit dem externen SFTP -Konto können Sie den Zugriff auf einen Server außerhalb von Adobe Campaign konfigurieren und testen. Um Verbindungen mit externen Systemen wie SFTP für Dateiübertragungen einzurichten, können Sie Ihre eigenen externen Konten erstellen. Weitere Informationen hierzu finden Sie in der [ zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=de){target="_blank"}.
 
 ![](assets/ext_account_4.png)
 
@@ -264,15 +263,15 @@ Um über eine Adobe-ID eine Verbindung zur Adobe Campaign-Konsole herzustellen, 
 
 * **[!UICONTROL IMS-Client-Secret]**
 
-  Anmeldedaten für Ihr IMS-Client-Geheimnis.
+  Anmeldedaten Ihres IMS-Client-Geheimnisses.
 
 * **[!UICONTROL Callback-Server]**
 
-  Zugriff auf die URL Ihrer Adobe Campaign-Instanz.
+  Zugriffs-URL Ihrer Adobe Campaign-Instanz.
 
 * **[!UICONTROL Kennung der IMS-Organisation]**
 
-  Kennung Ihrer Organisation. Auf [ Seite erfahren Sie, wie Sie Ihre Organisations-ID ](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=de){_blank}.
+  ID Ihrer Organisation. Auf [dieser Seite](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=de){_blank} finden Sie Ihre Organisations-ID.
 
 * **[!UICONTROL Zuordnungsmaske]**
 
@@ -398,11 +397,11 @@ Um dieses externe Konto für die gemeinsame Verwendung mit Adobe Campaign zu kon
 
 * **[!UICONTROL Client-Kennung]**
 
-  Informationen darüber, wo Sie Ihre Client-Kennung finden, erfahren Sie auf dieser [Seite](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
+  Informationen darüber, wo Sie Ihre Client-Kennung finden, erfahren Sie auf dieser [Seite](https://help.salesforce.com/articleView?id=000205876&type=1).
 
 * **[!UICONTROL Security-Token]**
 
-  Informationen darüber, wo Sie Ihr Security-Token finden, erfahren Sie auf dieser [Seite](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
+  Informationen darüber, wo Sie Ihr Security-Token finden, erfahren Sie auf dieser [Seite](https://help.salesforce.com/articleView?id=000205876&type=1).
 
 * **[!UICONTROL API-Version]**
 
@@ -412,11 +411,11 @@ Für dieses externe Konto müssen Sie Salesforce CRM mit dem Konfigurationsassis
 
 Weiterführende Informationen zur Konfiguration finden Sie auf dieser [Seite](../../platform/using/crm-connectors.md).
 
-## Übertragen von Daten an externe Konten
+## Übertragen von Daten mit externen Konten
 
 ### Amazon Simple Storage Service (S3) {#amazon-simple-storage-service--s3--external-account}
 
-Der Amazon Simple Storage Service (S3)-Connector kann zum Importieren oder Exportieren von Daten in Adobe Campaign verwendet werden. Sie kann in einer Workflow-Aktivität eingerichtet werden. Weiterführende Informationen hierzu finden Sie auf [dieser Seite](../../workflow/using/file-transfer.md).
+Der Amazon Simple Storage Service (S3) Connector kann zum Import oder Export von Daten in Adobe Campaign verwendet werden. Er kann in einer Workflow-Aktivität eingerichtet werden. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=de){target="_blank"}.
 
 ![](assets/ext_account_3.png)
 
@@ -444,19 +443,19 @@ Zum Einrichten dieses neuen externen Kontos benötigen Sie die folgenden Informa
 
 * Die Checkbox **[!UICONTROL Serverseitige Verschlüsselung verwenden]** ermöglicht es Ihnen, Ihre Datei in S3 im verschlüsselten Modus zu speichern.
 
-Informationen dazu, wo Sie die Kennung des Zugriffsschlüssels und den geheimen Zugriffsschlüssel finden, finden Sie unter Amazon Web Services [Dokumentation](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys).
+Informationen darüber, wo Sie die Kennung des Zugriffsschlüssels und den geheimen Zugriffsschlüssel finden, erhalten Sie in der [Dokumentation](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) zu Amazon Web Services.
 
-### Azur Blob-Speicherung {#azure-blob-external-account}
+### Azur Blob Storage {#azure-blob-external-account}
 
-Das externe **Azure Blob Storage**-Konto kann mithilfe einer Workflow-Aktivität vom Typ **[!UICONTROL Dateiübertragung“ zum Importieren]** Exportieren von Daten in Adobe Campaign verwendet werden. Weitere Informationen hierzu finden Sie in diesem [Abschnitt](../../workflow/using/file-transfer.md).
+Das externe **Azure Blob Storage**-Konto kann mithilfe einer Workflow-Aktivität vom Typ **[!UICONTROL Dateiübertragung“ zum Importieren]** Exportieren von Daten in Adobe Campaign verwendet werden. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=de){target="_blank"}.
 
 ![](assets/ext_account_23.png)
 
-Um das externe **[!UICONTROL Azure]** Konto für die Verwendung mit Adobe Campaign zu konfigurieren, müssen Sie die folgenden Details angeben:
+Um das **[!UICONTROL externe Azure-Konto]** für die gemeinsame Verwendung mit Adobe Campaign zu konfigurieren, müssen Sie die folgenden Informationen eingeben:
 
 * **[!UICONTROL Server]**
 
-  URL Ihres Azure Blob Storage-Servers
+  URL Ihres Azure Blob Storage-Servers.
 
 * **[!UICONTROL Verschlüsselung]**
 
@@ -464,4 +463,4 @@ Um das externe **[!UICONTROL Azure]** Konto für die Verwendung mit Adobe Campai
 
 * **[!UICONTROL Zugriffsschlüssel]**
 
-  Auf dieser Seite erfahren Sie **[!UICONTROL wo Sie Ihren]** finden [Zugriffsschlüssel](https://docs.microsoft.com/de-de/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).
+  Informationen darüber, wo Sie Ihren **[!UICONTROL Zugangsschlüssel]** finden, erhalten Sie auf dieser [Seite](https://docs.microsoft.com/de-de/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).

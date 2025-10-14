@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 48926e87-03d9-4aa0-89cb-e3fb4f99c1f5
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '341'
-ht-degree: 100%
+source-wordcount: '360'
+ht-degree: 83%
 
 ---
 
@@ -24,19 +24,19 @@ Hier finden Sie die wichtigsten Anleitungen zum Konzipieren von kanalübergreife
 
 Vor der Konzeption von E-Mails sollten Sie sich über die Konzepte und Best Practices in Bezug auf das Nachrichtendesign und den Versand mit Adobe Campaign erkundigen.
 
-[Hier erfahren Sie mehr darüber](../../delivery/using/delivery-best-practices.md).
+Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/delivery-best-practices){target="_blank"}.
 
 ## Was ist eine Versandvorlage? {#what-is-a-delivery-template-}
 
 Eine Versandvorlage dient zur Speicherung der Versandkonfiguration und der Versandparameter und kann wiederverwendet werden.
 
-[Hier erfahren Sie mehr darüber](../../delivery/using/about-templates.md).
+Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=de){target="_blank"}.
 
 ## Kann ich eine vorhandene HTML-Datei einfach importieren, um eine E-Mail in Campaign zu erstellen? {#can-i-easily-import-an-existing-html-to-create-an-email-in-campaign-}
 
 Sie können mit nur einem Klick eine vorhandene HTML-Datei importieren, um eine E-Mail in Adobe Campaign zu erstellen und zu senden.
 
-[Hier erfahren Sie mehr darüber](../../delivery/using/defining-the-email-content.md#message-content).
+Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#message-content){target="_blank"}.
 
 ## Wie kann ich mit Campaign DCE E-Mail-Inhalt erstellen? {#how-to-use-campaign-dce-to-create-an-email-content-}
 
@@ -50,7 +50,7 @@ Sie können mit nur einem Klick eine vorhandene HTML-Datei importieren, um eine 
 
 Die mit Adobe Campaign versendeten Nachrichten können auf verschiedene Art und Weise personalisiert werden. Sowohl Inhalt als auch Rendering der Nachrichten können dem Empfängerprofil angepasst werden. Im Allgemeinen haben Sie in Adobe Campaign folgende Möglichkeiten:
 
-* Das Nachrichtenformat personalisieren. [Hier erfahren Sie mehr darüber](../../delivery/using/defining-the-email-content.md#message-content).
+* Das Nachrichtenformat personalisieren. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#message-content){target="_blank"}.
 * Dynamische Personalisierungsfelder einfügen. [Hier erfahren Sie mehr darüber](../../delivery/using/personalization-fields.md).
 * Einfügen vorkonfigurierter Gestaltungsbausteine oder Erstellen eigener Bausteine. [Hier erfahren Sie mehr darüber](../../delivery/using/personalization-blocks.md).
 * Bedingte Inhalte erstellen. [Hier](../../delivery/using/conditional-content.md) und [in diesem Abschnitt](../../delivery/using/conditional-content.md) erfahren Sie mehr dazu.
@@ -59,7 +59,7 @@ Die mit Adobe Campaign versendeten Nachrichten können auf verschiedene Art und 
 
 Sie können an Empfänger je nach deren Einstellungen und deren Land mehrsprachige Nachrichten senden.
 
-Zu diesem Zweck können Sie die Nachricht mithilfe der Option [Bedingungen](../../delivery/using/conditional-content.md) lokalisieren und entsprechend dem Empfängerprofil personalisieren. Sie können auch mithilfe von [Workflows](../../workflow/using/split.md) die Version der zu sendenden Nachricht auswählen und dabei die bevorzugte Sprache über einen Test ermitteln.
+Zu diesem Zweck können Sie die Nachricht mithilfe der Option [Bedingungen](../../delivery/using/conditional-content.md) lokalisieren und entsprechend dem Empfängerprofil personalisieren. Sie können auch Workflows verwenden, um die Version der zu sendenden Nachricht abhängig von einem Test in der bevorzugten Sprache auszuwählen. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html){target="_blank"}.
 
 ## Wie kann ich ein Web-Formular übersetzen? {#how-can-i-localize-a-webform-}
 

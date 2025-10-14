@@ -6,9 +6,9 @@ feature: Troubleshooting
 hidefromtoc: true
 hide: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: 192505e1c4d387de55ca18b578b837d237cc0607
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '656'
 ht-degree: 99%
 
 ---
@@ -54,7 +54,7 @@ Wie wird ein Upgrade auf einen neuen Build durchgeführt? Wie lässt sich die Wo
         <ul>
         <li><a href="production/using/performance-and-throughput-issues.md">Performance- und Durchsatzprobleme</a></li>
         <li><a href="delivery/using/delivery-performances.md">Versand-Performance</a></li>
-        <li><a href="workflow/using/workflow-best-practices.md">Optimieren der Workflow-Performance</a></li>
+        <li><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=de" target="_blank">Optimieren der Workflow-Performance</a></li>
         <li><a href="workflow/using/monitoring-workflow-execution.md">Fehlerbehebung bei der Workflow-Ausführung</a></li>
         <li><a href="platform/using/sftp-server-usage.md">Nutzung von SFTP-Servern</a></li>
         <li><a href="delivery/using/understanding-delivery-failures.md">Ursachen für das Fehlschlagen von Sendungen</a></li>
@@ -62,14 +62,14 @@ Wie wird ein Upgrade auf einen neuen Build durchgeführt? Wie lässt sich die Wo
     </td>
    <td valign="top">
         <ul>
-        <li><a href="workflow/using/workflow-best-practices.md">Best Practices bei Workflows</a></li>
+        <li><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=de" target="_blank">Best Practices für Workflows</a></li>
         <li><a href="workflow/using/monitoring-technical-workflows.md">Überwachen technischer Workflows</a></li>
         <li><a href="delivery/using/about-message-tracking.md">Funktionsweise der Tracking-Verwaltung</a></li>
         <li><a href="production/using/monitoring-guidelines.md">Monitoring-Tools</a></li>
         <li><a href="platform/using/import-export-workflows.md">Importieren von Daten mit Workflows</a></li>
         <li><a href="delivery/using/steps-sending-the-delivery.md">Senden von Nachrichten in mehreren Schüben</a></li>
         <li><a href="delivery/using/defining-the-email-content.md">Gestalten von E-Mail-Inhalten</a></li>
-        <li><a href="delivery/using/delivery-best-practices.md">Best Practices beim Versand</a></li>
+        <li><a href="https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/delivery-best-practices" target="_blank">Best Practices beim Versand</a></li>
         </ul>
     </td>
     <td valign="top">

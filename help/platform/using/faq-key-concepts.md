@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: f0d884ae-0789-4ad9-a8fa-adeffbb560ea
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '828'
-ht-degree: 100%
+source-wordcount: '839'
+ht-degree: 94%
 
 ---
 
@@ -65,11 +65,11 @@ Erfahren Sie in [diesen Abschnitt](../../platform/using/adobe-campaign-workspace
 
 ![](assets/do-not-localize/how-to-video.png) [Campaign-Arbeitsbereich im Video kennenlernen](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html?lang=de)
 
-## Wie kann ich die Audience für meine Nachrichten auswählen? {#how-can-i-select-the-target-population-of-my-messages-}
+## Wie kann ich die Zielgruppe für meine Nachrichten auswählen? {#how-can-i-select-the-target-population-of-my-messages-}
 
-Bei Adobe Campaign stehen Ihnen für die Erstellung von Audiences und die Auswahl von Empfängern unterschiedliche Strategien zur Verfügung.
+Bei Adobe Campaign stehen Ihnen für die Erstellung von Zielgruppen und die Auswahl von Empfängern unterschiedliche Strategien zur Verfügung.
 
-[Hier erfahren Sie mehr darüber](../../delivery/using/steps-defining-the-target-population.md).
+Weitere Informationen finden Sie hier in der [ zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/create-message#target-population){target="_blank"}.
 
 ## Was ist ein Workflow? {#what-is-a-workflow-}
 
@@ -77,9 +77,9 @@ Mit Adobe Campaign verfügen Sie über ein integriertes Workflow-Management-Syst
 
 So bieten Workflows beispielsweise die Möglichkeit, Dateien von einem Server herunterladen, sie zu entkomprimieren und die Datensätze in die Adobe Campaign-Datenbank zu importieren.
 
-Oder benachrichtigen Sie andere Benutzer und fordern Sie sie dazu auf, Vorgänge zu validieren oder an Abstimmungen teilzunehmen. Auf diese Weise können Versandaktionen erstellt und anderen Benutzern vor dem Nachrichtenversand Aufgaben wie die Gestaltung des Inhalts, die Bestimmung der Zielgruppe und die Validierung von Testsendungen zugewiesen werden.
+Ein Workflow kann auch einen oder mehrere Benutzende einbinden, die benachrichtigt werden oder Entscheidungen treffen und Prozesse genehmigen können. Auf diese Weise können Versandaktionen erstellt und einem oder mehreren Benutzenden die Bearbeitung von Inhalten, die Bestimmung der Zielgruppen und die Validierung von Testsendungen vor dem Versandbeginn zugewiesen werden.
 
-[Hier erfahren Sie mehr](../../workflow/using/about-workflows.md) zu Workflows. Informationen über [Best Practices bei Workflows finden Sie hier](../../workflow/using/building-a-workflow.md).
+[Hier erfahren Sie mehr](../../workflow/using/about-workflows.md) zu Workflows. Best Practices für Workflows finden Sie auch in der Dokumentation zu [ v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=de){target="_blank"}.
 
 ## Wie erstelle und sende ich die erste E-Mail? {#how-to-create-and-send-a-first-email-}
 
@@ -93,7 +93,7 @@ Oder benachrichtigen Sie andere Benutzer und fordern Sie sie dazu auf, Vorgänge
 
 ## Wie kann ich Push-Benachrichtigungen senden? {#how-to-send-push-notifications-}
 
-Hier erfahren Sie, wie Sie mit Adobe Campaign [eine personalisierte Push-Benachrichtigung](../../delivery/using/create-notifications-ios.md) über Mobile Apps an iOS- und Android-Geräte senden.
+In der Dokumentation zu Campaign v8 erfahren Sie, wie Sie mit [ Adobe Campaign eine personalisierte Push-Benachrichtigung ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html){target="_blank"}.
 
 ## Wie erstelle und teile ich eine Online-Umfrage? {#how-to-design-and-share-an-online-survey-}
 

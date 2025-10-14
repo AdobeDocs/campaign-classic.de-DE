@@ -10,10 +10,10 @@ topic-tags: creating-queries
 hide: true
 hidefromtoc: true
 exl-id: b62e23e5-f1b7-44c4-82d9-95c6b3240352
-source-git-commit: 11c81e4f04b978381d3803e2b60e23ed791eee44
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '3472'
-ht-degree: 100%
+source-wordcount: '3475'
+ht-degree: 99%
 
 ---
 
@@ -292,7 +292,7 @@ Vier verschiedene Feldtypen stehen zur Verfügung:
 
   Dem Quellwert einer Spalte kann ein Zielwert zugeordnet werden. Es ist der Zielwert, der in der neuen Ausgabespalte angezeigt wird.
 
-  Ein Beispiel zu berechneten **[!UICONTROL Aufzählungsfeldern]** können Sie [diesem Abschnitt](../../workflow/using/adding-enumeration-type-calculated-field.md) entnehmen.
+  Ein Beispiel für das Hinzufügen des berechneten Feldtyps **[!UICONTROL Auflistungen]** finden Sie in der [Campaign v8-Dokumentation](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/adding-enumeration-type-calculated-field.html){target="_blank"}.
 
   ![](assets/query_editor_nveau_63.png)
 

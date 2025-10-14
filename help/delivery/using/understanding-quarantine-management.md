@@ -6,10 +6,10 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Monitoring, Deliverability
 role: User
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '3087'
-ht-degree: 99%
+source-wordcount: '3111'
+ht-degree: 97%
 
 ---
 
@@ -27,9 +27,9 @@ Die Profile, deren E-Mail-Adressen oder Telefonnummern unter Quarantäne sind, w
 
 Teilweise werden E-Mails von Providern automatisch als Spam eingestuft, wenn die Anzahl ungültiger Adressen zu hoch ist. Durch die Quarantäne können Sie also vermeiden, von diesen Providern auf eine Blockierungsliste gesetzt zu werden.
 
-Zusätzlich helfen Ihnen Quarantänen, die Kosten des SMS-Versands zu senken, indem fehlerhafte Telefonnummern aus dem Versand ausgeschlossen werden.
+Zusätzlich helfen Ihnen Quarantänen, die Kosten des SMS-Versands zu senken, indem fehlerhafte Telefonnummern aus den Sendungen ausgeschlossen werden.
 
-Weiterführende Informationen zu Best Practices zur Durchführung und Optimierung von Sendungen finden Sie auf [dieser Seite](delivery-best-practices.md).
+Weiterführende Informationen zu Best Practices zur Sicherung und Optimierung Ihrer Sendungen finden Sie auf dieser Seite in der [Campaign v8-Dokumentation](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/delivery-best-practices){target="_blank"}.
 
 ### Quarantäne vs. Blockierungsliste {#quarantine-vs-denylist}
 
@@ -41,7 +41,7 @@ Die Quarantäne und die Blockierungsliste gelten nicht für dasselbe Objekt:
 
 * Die Aufnahme in die **Blockierungsliste** führt dagegen dazu, dass das **Profil** vom Versand ausgeschlossen wird. Dies ist z. B. nach einer Abmeldung (Opt-out) von einem Kanal der Fall. Wenn beispielsweise ein Profil, das auf der Blockierungsliste für den E-Mail-Kanal steht, zwei E-Mail-Adressen hat, werden beide Adressen vom Versand ausgeschlossen.
 
-  Auf die Blockierungsliste setzen Im Abschnitt Nicht mehr kontaktieren der Registerkarte Allgemein des Profils können Sie überprüfen **[!UICONTROL ob sich]** Profil auf der Seite für einen oder mehrere Kanäle **&#x200B;**.
+  Auf die Blockierungsliste setzen Im Abschnitt Nicht mehr kontaktieren der Registerkarte Allgemein des Profils können Sie überprüfen **[!UICONTROL ob sich]** Profil auf der Seite für einen oder mehrere Kanäle ****.
 >[!NOTE]
 >
 >Die Quarantäne beinhaltet den Status **[!UICONTROL Auf die Blockierungsliste gesetzt]**, der angewendet wird, wenn Empfängerinnen bzw. Empfänger Ihre Nachricht als Spam melden oder auf eine SMS mit einem Keyword wie „STOP“ antworten. In diesem Fall wird die betroffene Adresse oder Telefonnummer des Profils unter Quarantäne gestellt und erhält den Status **[!UICONTROL Auf die Blockierungsliste gesetzt]**. Weiterführende Informationen zur Verwaltung von STOP-SMS-Nachrichten finden Sie in [diesem Abschnitt](../../delivery/using/sms-send.md#processing-inbound-messages).
@@ -117,14 +117,14 @@ Bei Adressen in Quarantäne (siehe [Identifizieren von für die gesamte Plattfor
 
 Im Gegensatz zu Hardbounces senden Softbounces eine Adresse nicht sofort in die Quarantäne, sondern erhöhen stattdessen einen Fehlerzähler.
 
-Während der [Versandlaufzeit](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period) werden noch weitere Zustellversuche durchgeführt. Sollte der Zähler eine festgelegte Schwelle überschreiten, wird die Adresse unter Quarantäne gestellt. Weitere Informationen hierzu finden Sie unter [Weitere Zustellversuche nach einem vorübergehend fehlgeschlagenen Versand](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure).
+Während der Versandlaufzeit werden noch weitere Zustellversuche durchgeführt. Siehe diese [Seite](communication-channels.md) unter **Versand** > **Gültigkeitszeitraum definieren**. Sollte der Zähler eine festgelegte Schwelle überschreiten, wird die Adresse unter Quarantäne gestellt. Weitere Informationen hierzu finden Sie unter [Weitere Zustellversuche nach einem vorübergehend fehlgeschlagenen Versand](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure).
 
 Der Fehlerzähler wird erneut initialisiert, wenn der letzte signifikante Fehler vor mehr als 10 Tagen aufgetreten ist. Der Status der Adresse wird auf **Gültig** gesetzt und mithilfe des Workflows [Datenbankbereinigung](../../production/using/database-cleanup-workflow.md) wird die Adresse aus der Quarantäneliste gelöscht.
 
 
 Wenn Sie bei gehosteten oder hybriden Installationen ein Upgrade auf [Enhanced MTA](sending-with-enhanced-mta.md) durchgeführt haben, basiert die maximale Anzahl weiterer Versuche, die im Falle des Status **[!UICONTROL Fehlerhaft]** durchgeführt werden, sowie die Mindestverzögerung zwischen Wiederholungsversuchen jetzt darauf, wie gut eine IP in einer bestimmten Domain sowohl in der Vergangenheit funktioniert hat als auch aktuell funktioniert.
 
-Bei On-Premise-Installationen und gehosteten/hybriden Installationen, die den veralteten Campaign MTA verwenden, können die Anzahl der Fehler und der Zeitraum zwischen zwei Fehlern geändert werden. Ändern Sie dazu die entsprechenden Einstellungen im [Bereitstellungsassistenten](../../installation/using/deploying-an-instance.md) (**[!UICONTROL E-Mail-Kanal]** > **[!UICONTROL Erweiterte Parameter]**) oder [auf Versandebene](../../delivery/using/steps-sending-the-delivery.md#configuring-retries).
+Bei On-Premise-Installationen und gehosteten/hybriden Installationen, die den veralteten Campaign MTA verwenden, können die Anzahl der Fehler und der Zeitraum zwischen zwei Fehlern geändert werden. Ändern Sie dazu die entsprechenden Einstellungen im [Bereitstellungsassistenten](../../installation/using/deploying-an-instance.md) (**[!UICONTROL E-Mail-Kanal]** > **[!UICONTROL Erweiterte Parameter]**) oder auf Versandebene. Weitere Informationen finden [ auf ](communication-channels.md) Seite unter **Versand** > **Weitere Zustellversuche konfigurieren**.
 
 
 ## Entfernen einer Adresse aus der Quarantäne {#removing-a-quarantined-address}

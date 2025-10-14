@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 3e55d7f5-2858-4390-bba9-8fb5be0c3d98
-source-git-commit: b500b2cbf68fd46bd84ddbfa71cf9431c6b60060
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1061'
+source-wordcount: '1062'
 ht-degree: 3%
 
 ---
@@ -27,7 +27,7 @@ Die Installation eines Mid-Sourcing-Servers erfolgt auf die gleiche Weise wie di
 
 >[!CAUTION]
 >
->Nachdem der Mid-Sourcing-Server eingerichtet und die [Synchronisierungs-Workflows](../../workflow/using/about-technical-workflows.md) zum ersten Mal ausgeführt wurden, stellen Sie sicher, dass Sie den internen Namen der externen Mid-Sourcing-Konten nicht aktualisieren.
+>Nachdem der Mid-Sourcing-Server eingerichtet und die [Synchronisierungs-Workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html?lang=de){target="_blank"} zum ersten Mal ausgeführt wurden, stellen Sie sicher, dass Sie den internen Namen der externen Mid-Sourcing-Konten nicht aktualisieren.
 
 ## Schritte zum Installieren und Konfigurieren einer Instanz {#steps-for-installing-and-configuring-an-instance}
 
@@ -125,7 +125,7 @@ Es ist möglich, dass eine Mid-Sourcing-Instanz von mehreren sendenden Instanzen
 
    ![](assets/mid_recette_user_restrictions.png)
 
-1. Starten Sie das Web-Modul mit dem folgenden Befehl neu: **&#x200B; web**.
+1. Starten Sie das Web-Modul mit dem folgenden Befehl neu: ** web**.
 
 Sie müssen die Mid-Sourcing-Server-Einstellung in der Datei „serverConf.xml“ ändern. Die folgende Zeile muss zum Abschnitt „Verwalten der Affinitäten mit IP-Adressen“ unter der vorhandenen Zeile hinzugefügt werden:
 
@@ -139,9 +139,9 @@ Das Attribut &#39;@name&#39; muss die folgenden Regeln einhalten:
 
 &#39;marketing_account_operator_name&#39; bezieht sich auf den internen Namen des Mid-Sourcing-Kontos, das in der Mid-Sourcing-Instanz deklariert wurde.
 
-„affinity_name“ bezieht sich auf den beliebigen Namen, der der Affinität gegeben wurde. Dieser Name muss eindeutig sein. Zulässige Zeichen sind `[a-z]` `[A-Z]` `[0-9]`. Ziel ist es, eine Gruppe von öffentlichen IP-Adressen zu deklarieren.
+„affinity_name“ bezieht sich auf den beliebigen Namen, der der Affinität gegeben wurde. Dieser Name muss eindeutig sein. Zulässige Zeichen sind `[a-z]``[A-Z]``[0-9]`. Ziel ist es, eine Gruppe von öffentlichen IP-Adressen zu deklarieren.
 
-„affinity_group“ bezieht sich auf die Unteraffinität, die in dem Zielgruppen-Mapping deklariert wurde, das in jedem der Sendungen verwendet wird. Der letzte Teil, der das &quot;.“ wird ignoriert, wenn keine Unteraffinität vorliegt. Zulässige Zeichen sind `[a-z]` `[A-Z]` `[0-9]`.
+„affinity_group“ bezieht sich auf die Unteraffinität, die in dem Zielgruppen-Mapping deklariert wurde, das in jedem der Sendungen verwendet wird. Der letzte Teil, der das &quot;.“ wird ignoriert, wenn keine Unteraffinität vorliegt. Zulässige Zeichen sind `[a-z]``[A-Z]``[0-9]`.
 
 Sie müssen den Server anhalten und dann neu starten, damit die Änderung übernommen wird.
 

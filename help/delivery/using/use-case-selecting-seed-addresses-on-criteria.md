@@ -5,10 +5,10 @@ description: 'Anwendungsbeispiel: Auswählen von Testadressen nach Kriterien'
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Seed Address
 exl-id: 091648b8-bf2d-4595-8be3-287f1ac48edd
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '926'
-ht-degree: 100%
+source-wordcount: '925'
+ht-degree: 98%
 
 ---
 
@@ -30,7 +30,7 @@ Zur Verwendung von dynamischen Bedingungen benötigen Sie:
 
 ## Schritt 1: Erstellen eines Versands {#step-1---creating-a-delivery}
 
-Die Schritte zum Erstellen eines Versands finden Sie im Abschnitt [Erstellen eines E-Mail-Versands](creating-an-email-delivery.md).
+Die Schritte zum Erstellen eines Versands werden in der Dokumentation zu [ v8 ](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/emails/email){target="_blank"}.
 
 Im vorliegenden Beispiel hat der Versandverantwortliche zunächst den Newsletter erstellt und die Zielgruppe ausgewählt.
 
@@ -76,7 +76,7 @@ Weitere Informationen zu Schemaerweiterungen finden Sie unter [diesem Abschnitt]
 
    ![](assets/dlv_seeds_usecase_29.png)
 
-   Auf diese Weise konfigurieren Sie in der Testadressentabelle die Erstellung einer neuen Auflistung mit Namen **[!UICONTROL Abteilung]**, welche auf der Standardauflistung **[!UICONTROL @company]** (**Firma** im Testadressenformular) beruht.
+   Auf diese Weise konfigurieren Sie in der Testadressentabelle die Erstellung einer neuen Aufzählung mit Namen **[!UICONTROL Abteilung]**, welche auf der Standardauflistung **[!UICONTROL @company]** (**Firma** im Testadressenformular) beruht.
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
 1. Die im Testadressen-Schema vorgenommenen Änderungen erfordern eine Aktualisierung der Datenbankstruktur. Gehen Sie hierzu in das Menü **[!UICONTROL Werkzeuge > Erweitert]** und wählen Sie die Option **[!UICONTROL Datenbankstruktur aktualisieren...]** aus.

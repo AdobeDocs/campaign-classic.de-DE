@@ -1,80 +1,105 @@
 ---
 product: campaign
 title: Über Workflows
-description: Automatisieren Sie Prozesse mit Workflows, verwalten Sie Daten und Audiences, senden Sie Nachrichten und vieles mehr
+description: Automatisieren Sie Prozesse mit Workflows, verwalten Sie Daten und Zielgruppen, senden Sie Nachrichten und vieles mehr
 feature: Workflows, Data Management
-hide: true
-hidefromtoc: true
-exl-id: 51be6b90-2a7a-4757-9754-d16c540a87ff
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+exl-id: 024a7344-9376-4ff3-926a-003148229f9f
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '232'
 ht-degree: 100%
 
 ---
 
-# Erste Schritte mit Workflows{#gs-workflows}
+# Automatisieren mit Workflows {#gs-workflows}
+
+Die Workflows von Adobe Campaign ermöglichen es Ihrem Team, End-to-End-Geschäftsprozesse plattformübergreifend zu optimieren und zu automatisieren. Mit einer intuitiven grafischen Oberfläche können Sie Workflows entwerfen und verwalten, die Aufgaben wie Datensegmentierung, Kampagnenausführung, Dateiverarbeitung und sogar Benutzergenehmigungen an einem Ort koordinieren.
+
+Sie können beispielsweise einen Prozess automatisieren, um eine Datei von einem Remote-Server abzurufen, ihren Inhalt zu extrahieren und die Daten nahtlos auf den Adobe Campaign-Server zu laden. Dies reduziert den manuellen Aufwand und erhöht die betriebliche Effizienz. Die Workflow-Engine stellt sicher, dass jeder Schritt zuverlässig ausgeführt und verfolgt wird, um Sichtbarkeit und Kontrolle zu gewährleisten.
+
+>[!BEGINTABS]
+
+>[!TAB Workflow-Dokumentation]
+
+Weitere Informationen zur Verwaltung von Workflows finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=de){target=_blank}.
+
+
+[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=de){target=_blank}
+
+
+>[!TAB Nützliche Links]
+
+Die wichtigsten Schritte für die Workflow-Verwaltung finden Sie in der Dokumentation zu Campaign v8:
+
+* [Workflow-Aktivitäten](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/activities.html?lang=de){target=_blank}: Eine Aktivität ist eine Aufgabenvorlage. Zu den Workflows gehören Zielgruppenbestimmung, Flusskontrolle, Aktions- und Ereignisaktivitäten.
+
+* [Erstellen eines Workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=de){target=_blank}: Erfahren Sie, wie Sie Zielgruppenbestimmungs-, Kampagnen- und technische Workflows erstellen und ausführen.
+
+* [Best Practices](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=de){target=_blank}: Lernen Sie Richtlinien zur Optimierung der Workflow-Leistung von Campaign, zur Verbesserung des Workflow-Designs und zur Definition der richtigen Einstellungen kennen.
+
+* [Überwachen von Workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=de){target=_blank}: Erfahren Sie, wie Sie die Workflow-Ausführung überwachen, damit alles ordnungsgemäß verläuft.
+
+* [Anwendungsfälle für Workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/workflow-use-cases.html?lang=de){target=_blank}: Lernen Sie Szenarien kennen, in denen Workflows verwendet werden können, und erfahren Sie anhand von End-to-End-Anwendungsfällen, wie Sie die Workflows implementieren.
+
+
+>[!ENDTABS]
 
 
 
-## Über Workflows{#about-workflows}
 
-Adobe Campaign enthält ein Workflow-Modul, mit dem Sie die gesamte Bandbreite von Prozessen und Aufgaben über die verschiedenen Module des Anwendungs-Servers hinweg orchestrieren können. In dieser vielseitigen grafischen Umgebung können Sie Prozesse erstellen, wie etwa die Segmentierung, die Kampagnenausführung, die Dateiverarbeitung und den Eingriff durch Personen. Die Ausführung und Nachverfolgung dieser Prozesse erfolgt durch die Workflow-Engine.
 
-So bieten Workflows beispielsweise die Möglichkeit, Dateien von einem Server herunterladen, sie zu entkomprimieren und die Datensätze in die Adobe Campaign-Datenbank zu importieren.
+<!--
 
-Oder benachrichtigen Sie andere Benutzer und fordern Sie sie dazu auf, Vorgänge zu validieren oder an Abstimmungen teilzunehmen. Auf diese Weise können Versandaktionen erstellt und anderen Benutzern vor dem Nachrichtenversand Aufgaben wie die Gestaltung des Inhalts, die Bestimmung der Zielgruppe und die Validierung von Testsendungen zugewiesen werden.
+Adobe Campaign uses workflows to:
 
-In Adobe Campaign kommen Workflows in unterschiedlichsten Kontexten und zu verschiedenen Zeitpunkten innerhalb der Kampagnenprozesse zum Einsatz.
+* Carry out targeting campaigns. [Learn more](building-a-workflow.md#implementation-steps-)
+* Build campaigns: for each campaign, the **[!UICONTROL Workflow]** tab lets you build the target and create the deliveries. [Learn more](building-a-workflow.md#campaign-workflows)
+* Perform technical processes: cleanup, collecting tracking information or provisional calculations. [Learn more](building-a-workflow.md#technical-workflows)
 
-Beispielhaft seien folgende Vorgänge genannt:
+A workflow can mean both a process definition (the workflow model, which is a representation of what is supposed to happen) and an instance of this process (a workflow instance, which is a representation of what is actually happening).
 
-* Durchführen einer Zielgruppenbestimmung. [Mehr dazu](building-a-workflow.md#implementation-steps-)
-* Erstellen von Kampagnen: Auf dem Tab **[!UICONTROL Workflow]** können Sie die Zielgruppe und die Sendungen erstellen. [Mehr dazu](building-a-workflow.md#campaign-workflows)
-* Durchführen von technischen Prozessen: Bereinigung, Erfassung von Tracking-Informationen oder vorläufige Berechnungen. [Mehr dazu](building-a-workflow.md#technical-workflows)
-
-Der Begriff Workflow bezeichnet einerseits einen Prozess (Workflow-Vorlage: Darstellung eines theoretischen Ablaufs) und andererseits eine Instanz dieses Prozesses (Workflow-Instanz: Darstellung des tatsächlichen Ablaufs).
-
-Die Workflow-Vorlage beschreibt die verschiedenen zu erfüllenden Aufgaben und ihre Abfolge. Aufgabenvorlagen werden als Aktivitäten bezeichnet und durch Symbole repräsentiert. Sie sind durch Transitionen miteinander verbunden.
+The workflow template describes the various tasks to be performed and how they are linked together. The task templates are called activities and are represented by icons. They are linked together by transitions.
 
 ![](assets/example1.png)
 
-Jeder Workflow besteht aus:
+Each workflow contains:
 
 * **[!UICONTROL Activities]**
 
-  Eine Aktivität beschreibt eine Aufgabenvorlage. Die verschiedenen verfügbaren Aktivitäten werden im Diagramm durch Symbole dargestellt. Jeder Typ verfügt über gemeinsame Eigenschaften und spezifische Eigenschaften. So haben beispielsweise alle Aktivitäten einen Namen und einen Titel, aber nur die Aktivität **[!UICONTROL Validierung]** bietet die Möglichkeit, einem Benutzer eine Aufgabe zuzuweisen.
+  An activity describes a task template. The various activities available are represented on the diagram by icons. Each type has common properties and specific properties. For example, while all activities have a name and label, only the **[!UICONTROL Approval]** activity has an assignment.
 
-  In einem Workflow-Diagramm kann eine einzelne Aktivität verschiedene Aufgaben auslösen. Dies ist insbesondere der Fall bei Schleifen oder (periodisch) wiederkehrenden Aktionen.
+  In a workflow diagram, a given activity can produce multiple tasks, in particular when there is a loop or recurrent (periodic) actions.
 
-  Alle Workflow-Aktivitäten einschließlich Anwendungsbeispiele finden Sie in [diesem Abschnitt](about-activities.md).
+  All workflow activities are listed in [this section](about-activities.md), including use cases and samples.
 
-* **[!UICONTROL Transitionen]**
+* **[!UICONTROL Transitions]**
 
-  Transitionen stellen die Verbindungen zwischen Aktivitäten her und bestimmen die Reihenfolge der Verarbeitung. Jede Transition verbindet eine Quellaktivität mit einer Zielaktivität. Je nach Quellaktivität existieren verschiedene Transitionstypen. Bestimmte Transitionen bieten die Möglichkeit, zusätzliche Eigenschaften wie z. B. eine Dauer, eine Bedingung oder einen Filter zu definieren.
+  Transitions enable you to link activities and to define their sequence. A transition links a source activity to a destination activity. There are several sorts of transitions, which depend on the source activity. Some transitions have additional parameters such as a duration, a condition or a filter.
 
-  Transitionen, die nicht mit einer Zielaktivität verbunden sind, werden als schwebend bezeichnet. Schwebende Transitionen sind orangefarben mit einer Raute anstelle der Pfeilspitze.
+  A transition which is not linked to a destination activity is colored orange and the arrow head is shown as a diamond.
 
   >[!NOTE]
   >
-  >Auch mit schwebenden Transitionen kann ein Workflow ausgeführt werden: Die Ausführung erzeugt einen Warnhinweis und wird bei Aktivierung einer derartigen Transition ausgesetzt. Es wird jedoch kein Fehler erzeugt. Auf diese Weise ist es möglich, einen Workflow zu starten, auch wenn seine Konzeption noch nicht vollständig abgeschlossen ist, und ihn nach und nach zu vervollständigen.
+  >A workflow containing unterminated transitions can still be executed: a warning message will be generated and the workflow will pause once it reaches the transition but it will not generate an error. It is thus possible to start a workflow without it being finished and to add to it as you go along.
 
-  Weiterführende Informationen zur Erstellung eines Workflows finden Sie in [diesem Abschnitt](building-a-workflow.md).
+  For more information about how to build a workflow, refer to [this section](building-a-workflow.md).
 
-* **[!UICONTROL Arbeitstabellen]**
+* **[!UICONTROL Worktables]**
 
-  Arbeitstabellen enthalten alle von der Transition übertragenen Informationen. Dies bedeutet, dass jeder Workflow mehrere Arbeitstabellen beansprucht. Vorausgesetzt, dass sie nicht bereinigt werden, können die Daten der Arbeitstabellen während des ganzen Lebenszyklus eines Workflows verwendet werden. Tatsächlich werden unnütze Tabellen bei jeder Workflow-Passivierung und gegebenenfalls während der Ausführung eines Workflows bereinigt. Letzteres ist bei umfangreichen Arbeitstabellen der Fall, um die Server nicht zu überlasten.
+  The worktable contains all the information carried by the transition. Each workflow uses several worktables. The data conveyed in these tables can be accelerated and used throughout the workflow's life cycle, as long as it is not purged. Indeed, unneeded tables are purged each time the workflow is passivated, and possibly during the execution of the largest workflows to avoid overloading the server.
 
-  Weiterführende Informationen zu Workflow-Daten und Tabellen finden Sie in [diesem Abschnitt](how-to-use-workflow-data.md).
+  Learn more on workflow data and tables in [this section](how-to-use-workflow-data.md).
 
-## Wichtige Grundsätze und Best Practices{#principles-workflows}
+## Key principles and best practices{#principles-workflows}
 
-In den folgenden Abschnitten finden Sie Anleitungen und Best Practices zur Automatisierung von Prozessen mit Workflows:
+Refer to these sections to find guidance and best practices to automate processes with workflows:
 
-* Weiterführende Informationen zu Workflow-Aktivitäten finden Sie auf [dieser Seite](how-to-use-workflow-data.md).
-* Informationen zum Erstellen eines Workflows finden Sie in [diesem Abschnitt](building-a-workflow.md).
-* In [diesem Abschnitt](../../platform/using/import-export-workflows.md) erfahren Sie, wie Sie Daten mithilfe von Workflows in Campaign importieren.
-* Die Best Practices bei Workflows werden auf [dieser Seite](workflow-best-practices.md) beschrieben.
-* Hinweise zur Workflow-Ausführung finden Sie in [diesem Abschnitt](starting-a-workflow.md).
-* Informationen zum Überwachen von Workflows finden Sie auf [dieser Seite](monitoring-workflow-execution.md).
-* Erfahren Sie auf [dieser Seite](managing-rights.md), wie Sie Benutzern Zugriff auf Workflows gewähren.
+* Learn more about workflow activities in [this page](how-to-use-workflow-data.md).
+* Learn how to build a workflow in [this section](building-a-workflow.md).
+* Discover how to use workflows to import data in Campaign in [this section](../../platform/using/import-export-workflows.md).
+* Workflow best practices are detailed in [this page](workflow-best-practices.md).
+* Find guidance about workflow execution in [this section](starting-a-workflow.md).
+* Learn how to monitor workflows in [this page](monitoring-workflow-execution.md).
+* Learn how to grant access to users to use workflows in [this page](managing-rights.md).
+
+-->

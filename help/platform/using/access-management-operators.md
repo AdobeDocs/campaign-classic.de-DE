@@ -7,10 +7,10 @@ feature: Access Management, Permissions
 role: User, Admin
 level: Beginner
 exl-id: 580282ce-ee30-422a-8724-9c328637cc39
-source-git-commit: a5bbd2e6c102a8afa4cd5931b77b0c83705a7bfa
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1300'
-ht-degree: 96%
+source-wordcount: '1302'
+ht-degree: 95%
 
 ---
 
@@ -56,7 +56,7 @@ Gehen Sie wie folgt vor, um einen neuen Benutzer zu erstellen und Berechtigungen
 
 1. Geben Sie die **[!UICONTROL Identifizierungsparameter]** der Benutzerin bzw. des Benutzers an: Login, Passwort und Name. Login und Passwort werden von der Benutzerin bzw. vom Benutzer verwendet, um sich bei Adobe Campaign anzumelden. Sobald die Benutzerin bzw. der Benutzer angemeldet ist, kann er oder sie das Passwort über das Menü **[!UICONTROL Tools > Passwort ändern]** ändern. Die E-Mail-Adresse der Benutzerin bzw. des Benutzers ist notwendig, um ihr oder ihm Benachrichtigungen zukommen zu lassen, beispielsweise wenn sie oder er für Validierungen verantwortlich ist.
 
-   In diesem Abschnitt kann ein Benutzer zudem einer Organisationseinheit zugeordnet werden. Siehe hierzu auch [diese Seite](../../distributed/using/about-distributed-marketing.md).
+   In diesem Abschnitt kann ein Benutzer zudem einer Organisationseinheit zugeordnet werden. Weitere Informationen hierzu finden Sie in der [ zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html?lang=de){target="_blank"}.
 
 1. Wählen Sie die dem Benutzer erteilten Berechtigungen im Bereich **[!UICONTROL Zugriffsberechtigungen des Benutzers]** aus.
 

@@ -7,10 +7,10 @@ feature: Campaigns, Resource Management, Cross Channel Orchestration
 hide: true
 hidefromtoc: true
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1550'
-ht-degree: 100%
+source-wordcount: '1556'
+ht-degree: 99%
 
 ---
 
@@ -28,7 +28,7 @@ Um einen mit einer Kampagne verknüpften Versand zu erstellen, klicken Sie auf d
 
 ![](assets/campaign_op_add_delivery.png)
 
-Die vorgeschlagenen Konfigurationen sind an die unterschiedlichen Versandtypen angepasst: Briefpost, E-Mail, Mobile-Kanäle. [Weitere Informationen](../../delivery/using/steps-about-delivery-creation-steps.md).
+Die vorgeschlagenen Konfigurationen sind an die unterschiedlichen Versandtypen angepasst: Briefpost, E-Mail, Mobile-Kanäle. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}.
 
 ## Starten eines Versands {#starting-a-delivery}
 
@@ -54,7 +54,7 @@ Zur Sicherheit werden Sie in einer Pop-up-Nachricht zur Bestätigung der Aktion 
 
 ### Starten eines Offline-Versands {#starting-an-offline-delivery}
 
-Sobald alle Validierungen erteilt wurden, ändert sich der Versandstatus in **[!UICONTROL Extraktion ausstehend]**. Die Extraktionsdateien werden über einen spezifischen Workflow erstellt, der standardmäßig automatisch startet, wenn ein Briefversand auf Extraktion wartet. Wenn ein Prozess in Bearbeitung ist, wird er im Dashboard angezeigt und kann über seinen Link bearbeitet werden.
+Sobald alle Validierungen erteilt wurden, ändert sich der Versandstatus in **[!UICONTROL Extraktion ausstehend]**. Die Extraktionsdateien werden über einen spezifischen Workflow erstellt, der standardmäßig automatisch startet, wenn ein Briefpost-Versand auf Extraktion wartet. Wenn ein Prozess in Bearbeitung ist, wird er im Dashboard angezeigt und kann über seinen Link bearbeitet werden.
 
 >[!NOTE]
 >
@@ -238,6 +238,6 @@ Die Exportvorlage muss dem gewählten Dienstleister für den betreffenden Versan
 
 In diesem Video wird das Erstellen einer Kampagne und einer E-Mail in Adobe Campaign beschrieben.
 
->[!VIDEO](https://video.tv.adobe.com/v/27488?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
 
 Weitere Anleitungsvideos zu Campaign finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).

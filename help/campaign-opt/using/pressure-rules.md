@@ -7,10 +7,10 @@ feature: Fatigue Management, Typology Rules, Campaigns
 hide: true
 hidefromtoc: true
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '3513'
-ht-degree: 100%
+source-wordcount: '3512'
+ht-degree: 99%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 Mithilfe der Werbedruckverwaltung stellen Sie sicher, dass Sie die Population der Datenbank nicht übermäßig oft ansprechen, was zur sogenannten &quot;Marketing-Müdigkeit&quot; führen könnte. Hierzu kann eine maximale Anzahl an Nachrichten pro Empfänger festgelegt werden. Zudem können zwischen den Kampagnen Schlichtungsregeln eingerichtet werden, auf deren Basis an die jeweilige Zielgruppe die für sie am besten geeignete Nachricht gesendet wird.
 
-**Druckregeln** können beispielsweise dazu beitragen, der Marketing-Müdigkeit entgegenzusteuern, indem die Zahl der an eine Zielgruppe versendeten Newsletter auf zwei begrenzt wird; unter den zur Auswahl stehenden Nachrichten diejenigen ausgewählt werden, die den Interessen der Abonnentengruppe bestmöglich entsprechen; keine Angebote per SMS an einen unzufriedenen Kunden gesendet werden etc.
+**Druckregeln** können beispielsweise dazu beitragen, der Marketing-Ermüdung entgegenzusteuern, indem die Zahl der an eine Zielpopulation versendeten Newsletter auf zwei begrenzt wird; unter den zur Auswahl stehenden Nachrichten diejenigen ausgewählt werden, die den Interessen der Abonnentengruppe bestmöglich entsprechen; keine Angebote per SMS an einen unzufriedenen Kunden gesendet werden etc.
 
 Die Kampagnen werden entsprechend der festgelegten Schwellen und des jeweiligen Gewichts jeder Nachricht ausgewählt.
 
@@ -92,7 +92,7 @@ Um eine Typologieregel vom Typ **[!UICONTROL Druck]** zu erstellen und zu konfig
 
    ![](assets/campaign_opt_create_a_rule_05.png)
 
-1. In der Registerkarte **[!UICONTROL Typologien]** können die Kampagnentypologien eingesehen werden, die diese Typologieregel anwenden. Zudem kann die Regel an dieser Stelle mit einer oder mehreren existierenden Typologien verknüpft werden. Näheres hierzu finden Sie im Abschnitt [Anwenden von Typologien](about-campaign-typologies.md#applying-typologies).
+1. In der Registerkarte **[!UICONTROL Typologien]** können die Kampagnentypologien eingesehen werden, die diese Typologieregel anwenden. Zudem kann die Regel an dieser Stelle mit einer oder mehreren existierenden Typologien verknüpft werden. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=de){target="_blank"}.
 
 ## Definieren von Schwellenwerten und Gewichtungen {#defining-thresholds-and-weights}
 
@@ -106,7 +106,7 @@ Der Schwellwert kann konstant sein oder mithilfe einer Formel berechnet werden, 
 
 >[!CAUTION]
 >
->Eine Schwelle von **0** verhindert jeglichen Versand an die Zielgruppe während des betroffenen Zeitraums.
+>Eine Schwelle von **0** verhindert jeglichen Versand an die Zielpopulation während des betroffenen Zeitraums.
 
 **Beispiel:**
 
@@ -160,7 +160,7 @@ oder
 
 1. den Wert **7T** im Feld **[!UICONTROL Betroffener Zeitraum]** eingeben UND die Option **[!UICONTROL Sendungen im Planungskalender einbeziehen]** ankreuzen: Die bis zu 7 Tage vor dem Datum des Versands, auf den die Regel angewendet wird, verschickten und bis zu 7 Tage nach besagtem Datum geplanten Sendungen werden in der Berechnung berücksichtigt.
 
-Das Anfangsdatum des Zeitraums hängt von der Konfiguration der Datenbank ab.
+Das Startdatum des Zeitraums hängt von der Konfiguration der Datenbank ab.
 
 Wenn man also auf einem Versand vom 12.11. eine Druckregel über einen Zeitraum von 15 Tagen ohne Gruppierung anwendet, werden Sendungen zwischen dem 27.10. und dem 12.11. berücksichtigt. Wenn die Druckregel Sendungen aus dem Planungskalender miteinberechnet, werden Sendungen zwischen dem 27.10. und dem 27.11. gezählt. Wenn man schließlich in der Regel eine Gruppierung nach Kalendermonat festlegt, werden alle Sendungen der Monate November und Dezember in der Schwellenberechnung miteinbezogen (vom 1.11. bis zum 31.12.).
 
@@ -201,7 +201,7 @@ Wenn keine Gruppierung ausgewählt wird, wird nur der **4. Newsletter** nicht ve
 
 Die Schlichtung wird jede Nacht durch den technischen Workflow **[!UICONTROL Planungen]** und den Workflow **[!UICONTROL Kampagnenvorgänge]** erneut durchgeführt.
 
-Der Workflow **[!UICONTROL Planungen]** berechnet die Daten über die (seit dem Beginn des Zeitraums bis zum jetzigen Zeitpunkt) verstrichene Zeitspanne, die zur Anwendung der Typologieregeln während der Analyse notwendig sind. Er berechnet zudem jede Nacht die Ausschlusszähler für die Schlichtungen neu.
+Der Workflow **[!UICONTROL Planungen]** berechnet die Daten über die (seit dem Startdatum bis zum jetzigen Zeitpunkt) verstrichene Zeitspanne, die zur Anwendung der Typologieregeln während der Analyse notwendig sind. Er berechnet zudem jede Nacht die Ausschlusszähler für die Schlichtungen neu.
 
 Adobe Campaign stellt so für jeden Empfänger sicher, dass die Anzahl der zu sendenden Nachrichten die Schwelle nicht überschreitet, unter Berücksichtigung der Anzahl der bereits im betroffenen Zeitraum gesendeten Nachrichten. Diese Informationen sind nur **Indikatoren**, da die Berechnungen zum Zeitpunkt des Versands aktualisiert werden.
 
@@ -304,7 +304,7 @@ Befolgen Sie zur Konfiguration die nachstehenden Etappen:
 
    ![](assets/campaign_opt_pressure_sample_2_2.png)
 
-1. Fügen Sie anschließend einen höheren Wert für die Empfänger ein, die bereits Bestellungen getätigt haben. Für diese soll die Versandgewichtung um 5, für die anderen nur um 4 erhöht werden.
+1. Fügen Sie anschließend einen höheren Wert für die Empfänger ein, die bereits Käufe getätigt haben. Für diese soll die Versandgewichtung um 5, für die anderen nur um 4 erhöht werden.
 
    ![](assets/campaign_opt_pressure_sample_2_3.png)
 
@@ -373,7 +373,7 @@ Angenommen, Anfang der Woche wurde den jeweiligen Empfängern schon eine E-Mail 
    <th> Gewichtung<br /> </th> 
    <th> Extraktionszeitpunkt<br /> </th> 
    <th> Kontaktdatum<br /> </th> 
-   <th> Startzeitpunkt des Versands<br /> </th> 
+   <th> Startdatum/-uhrzeit des Versands<br /> </th> 
    <th> Zeitpunkt der Ausführung des Schlichtungs-Workflows<br /> </th> 
    <th> Versandstatus<br /> </th> 
    <th> Versandzeitpunkt<br /> </th> 

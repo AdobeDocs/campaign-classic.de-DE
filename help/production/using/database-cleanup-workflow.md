@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: 75d3a0af-9a14-4083-b1da-2c1b22f57cbe
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '2914'
+source-wordcount: '2916'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,7 @@ Die Datenbankbereinigung wird auf zwei Ebenen konfiguriert: im Workflow-Planer u
 
 >[!NOTE]
 >
->Weiterführende Informationen zur Planung finden Sie in [diesem Abschnitt](../../workflow/using/scheduler.md).
+>Weitere Informationen zur Planung finden Sie in der [ zu Campaign v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html?lang=de){target="_blank"}.
 
 Standardmäßig ist der Workflow **[!UICONTROL Datenbankbereinigung]** so konfiguriert, dass er täglich um 4 Uhr morgens startet. Mit der -Planung können Sie die Häufigkeit der Workflow-Auslösung ändern. Die folgenden Häufigkeiten sind verfügbar:
 
@@ -49,7 +49,7 @@ Standardmäßig ist der Workflow **[!UICONTROL Datenbankbereinigung]** so konfig
 
 ### Bereitstellungsassistent {#deployment-assistant}
 
-Über **[!UICONTROL Menü**&#x200B;[!UICONTROL &#x200B; Tools > Erweitert &#x200B;]&#x200B;**können Sie mit dem Bereitstellungsassistenten]**, wie lange Daten gespeichert werden sollen. Werte werden in Tagen ausgedrückt. Wenn diese Werte nicht geändert werden, verwendet der Workflow die Standardwerte.
+Über **[!UICONTROL Menü]** Tools > Erweitert **[!UICONTROL können Sie mit dem Bereitstellungsassistenten]**, wie lange Daten gespeichert werden sollen. Werte werden in Tagen ausgedrückt. Wenn diese Werte nicht geändert werden, verwendet der Workflow die Standardwerte.
 
 ![](assets/ncs_cleanup_deployment-wizard.png)
 
@@ -457,7 +457,7 @@ Mit dieser Aufgabe können Sie die in verschiedenen Tabellen gespeicherten Versa
    SELECT distinct(sBroadLogSchema) FROM NmsDeliveryMapping WHERE sBroadLogSchema IS NOT NULL UNION SELECT distinct(sBroadLogExclSchema) FROM NmsDeliveryMapping WHERE sBroadLogExclSchema IS NOT NULL
    ```
 
-1. Bei Verwendung von Mid-Sourcing wird die **NmsBroadLogMid**-Tabelle in Versandzuordnungen nicht referenziert. Das **nms:broadLogMid**-Schema wird der Liste hinzugefügt, die von der vorherigen Abfrage wiederhergestellt wurde.
+1. Bei Verwendung von Mid-Sourcing wird die **NmsBroadLogMid**-Tabelle in Versandzuordnungen nicht referenziert. Das **nms:broadLogMid**-Schema wird der Liste hinzugefügt, die von der vorherigen Abfrage abgerufen wurde.
 1. Der **Datenbankbereinigung** löscht dann veraltete Daten aus zuvor wiederhergestellten Tabellen. Die folgende Abfrage wird verwendet:
 
    ```sql

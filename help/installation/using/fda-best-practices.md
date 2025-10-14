@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: f3980859-2837-416b-a0ef-2b369d2d50bd
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '464'
-ht-degree: 57%
+source-wordcount: '471'
+ht-degree: 44%
 
 ---
 
@@ -30,13 +30,13 @@ Diese Option verbessert die Performance beim Ausführen des Personalisierungssch
 
 In mehreren Adobe Campaign-Workflow-Aktivitäten können Sie die in einer externen Datenbank gespeicherten Daten verwenden.
 
-* **Filter für externe Daten** - Die Aktivität [Abfrage](../../workflow/using/targeting-data.md#selecting-data) ermöglicht es Ihnen, externe Daten hinzuzufügen und sie in den definierten Filterkonfigurationen zu verwenden. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../workflow/using/targeting-data.md#selecting-data).
+* **Filter für externe Daten** - Die Aktivität Abfrage ermöglicht es Ihnen, externe Daten hinzuzufügen und in den definierten Filterkonfigurationen zu verwenden. Weitere Informationen hierzu finden Sie in der Dokumentation zu [ v8]https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html{target="_blank"}.
 
-* **Segmente erstellen** – Die Aktivität [Aufspaltung](../../workflow/using/split.md) ermöglicht die Erstellung von Segmenten. Sie können externe Daten verwenden, um die zu verwendenden Filterkriterien zu definieren. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../workflow/using/split.md).
+* **Erstellen von Teilmengen** - Die Aktivität Aufspaltung ermöglicht die Erstellung von Teilmengen. Sie können externe Daten verwenden, um die zu verwendenden Filterkriterien zu definieren. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html){target="_blank"}.
 
-* **Externe Datenbank laden** - Sie können die externen Daten in der Aktivität [Laden](../../workflow/using/data-loading-rdbms.md) (RDBMS) verwenden. Weitere Informationen finden Sie auf [dieser Seite](../../workflow/using/data-loading-rdbms.md).
+* **Externe Datenbank laden** - Sie können die externen Daten in der Aktivität Laden (DBMS) verwenden. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-rdbms.html){target="_blank"}.
 
-* **Informationen und Links hinzufügen** – Die Aktivität [Anreicherung](../../workflow/using/enrichment.md) ermöglicht das Hinzufügen zusätzlicher Daten zur Arbeitstabelle des Workflows sowie von Links zu einer externen Tabelle. In diesem Kontext können Daten aus einer externen Datenbank verwendet werden. Weitere Informationen finden Sie auf [dieser Seite](../../workflow/using/enrichment.md).
+* **Informationen und Links hinzufügen** - Die Aktivität Anreicherung ermöglicht das Hinzufügen zusätzlicher Daten zur Arbeitstabelle des Workflows sowie von Links zu einer externen Tabelle. In diesem Kontext können Daten aus einer externen Datenbank verwendet werden. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html?lang=de){target="_blank"}.
 
 ## Schutzmechanismen und Einschränkungen {#fda-limitations}
 

@@ -5,9 +5,9 @@ description: Erfahren Sie, wie Sie integrierte Campaign-Pakete installieren
 feature: Installation, Application Settings
 badge-v7-prem: label="Nur On-Premise/Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1299'
+source-wordcount: '1305'
 ht-degree: 11%
 
 ---
@@ -54,7 +54,7 @@ In der folgenden Tabelle sind alle nativen Campaign-Packages aufgeführt.
  <thead> 
   <tr> 
    <th> Package </th> 
-   <th> Beschreibung  </th> 
+   <th> Beschreibung </th> 
    <th> Instanzentyp </th>
   </tr> 
  </thead> 
@@ -66,12 +66,12 @@ In der folgenden Tabelle sind alle nativen Campaign-Packages aufgeführt.
   </tr> 
   <tr> 
    <td> Marketing-Kampagnen (Campaign)<br /> </td> 
-   <td> Definiert, optimiert, führt aus und analysiert Kommunikations- und Marketing-Kampagnen. <a href="../../campaign/using/designing-marketing-campaigns.md">Weitere Informationen</a><br /> </td> 
+   <td> Definiert, optimiert, führt aus und analysiert Kommunikations- und Marketing-Kampagnen. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=de" target="_blank">Weitere Informationen</a><br /> </td> 
    <td> Marketing</td>
   </tr> 
   <tr> 
    <td> Marketing-Ressourcen (MRM)<br /> </td> 
-   <td> Steuert Marketing-Aktionen im kollaborativen Modus durch Verwaltung und Verfolgung von Aufgaben, Budgets und Marketing-Ressourcen. <a href="../../mrm/using/about-marketing-resource-management.md">Weitere Informationen</a> <br /> </td> 
+   <td> Steuert Marketing-Aktionen im kollaborativen Modus durch Verwaltung und Verfolgung von Aufgaben, Budgets und Marketing-Ressourcen. <a href="https://experienceleague.adobe.com/docs/campaign/automation/mrm/about-marketing-resource-management.html?lang=de" target="_blank">Weitere Informationen</a> <br /> </td> 
    <td> Marketing</td> 
   </tr> 
   <tr> 
@@ -157,12 +157,12 @@ In der folgenden Tabelle sind alle nativen Campaign-Packages aufgeführt.
   </tr> 
   <tr> 
    <td> Zugriff auf externe Daten (Federated Data Access)<br /> </td> 
-   <td> Bietet die Option Federated Data Access (FDA) , um in einer oder mehreren externen Datenbanken gespeicherte Informationen zu verarbeiten, sodass Sie auf externe Daten zugreifen können, ohne die Datenstruktur in Adobe Campaign zu ändern.  Optional. <a href="../../workflow/using/accessing-an-external-database-fda.md">Weitere Informationen</a> <br /> </td> 
+   <td> Bietet die Option Federated Data Access (FDA) , um in einer oder mehreren externen Datenbanken gespeicherte Informationen zu verarbeiten, sodass Sie auf externe Daten zugreifen können, ohne die Datenstruktur in Adobe Campaign zu ändern.  Optional. <a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/accessing-an-external-database-fda.html" target="_blank">Weitere Informationen</a> <br /> </td> 
    <td> Alle<br /> </td> 
   </tr> 
   <tr> 
    <td> Kampagnenoptimierung (Campaign Optimization)<br /> </td> 
-   <td> Steuert, filtert und überwacht den Versand von Nachrichten, damit die gesendeten Nachrichten gemäß den Kommunikationsrichtlinien des Unternehmens den Anforderungen und Erwartungen der Kunden entsprechen. Optional. <a href="../../campaign-opt/using/about-campaign-typologies.md">Weitere Informationen</a> <br /> </td> 
+   <td> Steuert, filtert und überwacht den Versand von Nachrichten, damit die gesendeten Nachrichten gemäß den Kommunikationsrichtlinien des Unternehmens den Anforderungen und Erwartungen der Kunden entsprechen. Optional. <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=de" target="_blank">Weitere Informationen</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
@@ -182,7 +182,7 @@ In der folgenden Tabelle sind alle nativen Campaign-Packages aufgeführt.
   </tr> 
   <tr> 
    <td> Zentrales/lokales Marketing (dezentrales Marketing)<br /> </td> 
-   <td> Implementiert Kooperationskampagnen zwischen zentralen Entitäten (Hauptsitz, Marketing-Abteilungen usw.) und lokalen Entitäten (Verkaufsstellen, regionale Agenturen usw.). Optional. <a href="../../distributed/using/about-distributed-marketing.md">Weitere Informationen</a><br /> </td> 
+   <td> Implementiert Kooperationskampagnen zwischen zentralen Entitäten (Hauptsitz, Marketing-Abteilungen usw.) und lokalen Entitäten (Verkaufsstellen, regionale Agenturen usw.). Optional. <a href="https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html?lang=de" target="_blank">Weitere Informationen</a><br /> </td> 
    <td> Marketing </td> 
   </tr> 
   <tr> 
@@ -227,7 +227,7 @@ In der folgenden Tabelle sind alle nativen Campaign-Packages aufgeführt.
   </tr> 
   <tr> 
    <td> AMP-<br /> </td> 
-   <td> Ermöglicht die Verwendung des neuen interaktiven AMP für das E-Mail-Format und das Senden dynamischer E-Mails. Optional. <a href="../../delivery/using/defining-interactive-content.md">Weitere Informationen</a> <br /> </td> 
+   <td> Ermöglicht die Verwendung des neuen interaktiven AMP für das E-Mail-Format und das Senden dynamischer E-Mails. Optional. <a href="https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/emails/defining-interactive-content" target="_blank">Weitere Informationen</a> <br /> </td> 
    <td> Alle </td> 
   </tr> 
   <tr> 

@@ -7,10 +7,10 @@ feature: Campaigns, Cross Channel Orchestration
 hide: true
 hidefromtoc: true
 exl-id: 1278bda1-f83c-4d38-8042-e6611755cf36
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1217'
-ht-degree: 100%
+source-wordcount: '1220'
+ht-degree: 98%
 
 ---
 
@@ -41,7 +41,7 @@ Der **[!UICONTROL Navigationsblock]** im Tab **[!UICONTROL Kampagnen]** enthält
 >
 >Der strukturelle Aufbau der Adobe Campaign-Konsole, Berechtigungen sowie die Profilverwaltung werden in [diesem Abschnitt](../../platform/using/adobe-campaign-workspace.md) beschrieben.
 >
->Im Zusammenhang mit Kanälen und Sendungen stehende Funktionalitäten werden in [diesem Abschnitt](../../delivery/using/steps-about-delivery-creation-steps.md) erläutert.
+>Alle Funktionen im Zusammenhang mit Kanälen und Sendungen werden in der Dokumentation zu [ v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}.
 
 ### Kampagnenkalender {#campaign-calendar}
 
@@ -77,7 +77,7 @@ Zur Konfiguration und Bearbeitung eines Programms stehen die folgenden Registerk
 
   ![](assets/s_ncs_user_interface_campaign02.png)
 
-* Über den Tab **Bearbeiten** kann das Programm konfiguriert und verändert werden (Name, Beginn und Ende, Budget, benötigte Dokumente usw.).
+* Über die Registerkarte **Bearbeiten** kann das Programm konfiguriert und verändert werden (Name, Start- und Enddatum, Budget, verknüpfte Dokumente usw.).
 
   ![](assets/s_ncs_user_interface_campaign05.png)
 
@@ -104,7 +104,7 @@ Kampagnen sind über den Kampagnenkalender, über den Tab **[!UICONTROL Planung]
 
 Alle Kampagnen, Vorgänge und Ressourcen werden in einem zentralen Bildschirm, dem Dashboard, zusammengefasst, um eine kollaborative Verwaltung der Marketing-Aktionen zu ermöglichen.
 
-Das Dashboard einer Kampagne wird wie eine Kontrollschnittstelle verwendet. Es ermöglicht den direkten Zugriff auf die wichtigsten Etappen der Kampagnenerstellung und -verwaltung: Sendungen, Extraktonsdateien, Benachrichtigungen, Budgets usw.
+Das Dashboard einer Kampagne wird wie eine Kontrollschnittstelle verwendet. Es ermöglicht den direkten Zugriff auf die wichtigsten Etappen der Kampagnenerstellung und -verwaltung: Sendungen, Extraktionsdateien, Benachrichtigungen, Budgets usw.
 
 ![](assets/s_ncs_user_op_board_start_del.png)
 
@@ -154,7 +154,7 @@ Kampagnen werden basierend auf Kampagnenvorlagen erstellt. Diese wiederverwendba
 
 ## Web-Zugriff {#using-the-web-interface-}
 
-Sie haben die Möglichkeit, über einen Webbrowser auf die Adobe Campaign-Konsole zuzugreifen, um alle Kampagnen und ihre Sendungen sowie Berichte und Informationen bezüglich der Profile Ihrer Datenbank einzusehen. Über den Webzugriff können keine Datensätze erstellt werden. Sie können jedoch eingesehen und entsprechend der jeweiligen Benutzerberechtigungen weiterverarbeitet werden. So können beispielsweise Inhalte und Zielgruppen der Kampagnen validiert oder Sendungen unterbrochen werden.
+Sie haben die Möglichkeit, über einen Webbrowser auf die Adobe Campaign-Konsole zuzugreifen, um alle Kampagnen und ihre Sendungen sowie Berichte und Informationen bezüglich der Profile Ihrer Datenbank einzusehen. Über den Webzugriff können keine Datensätze erstellt werden. Sie können jedoch eingesehen und entsprechend der jeweiligen Benutzerberechtigungen weiterverarbeitet werden. So können beispielsweise Inhalte und Zielgruppenbestimmung der Kampagnen validiert oder Sendungen unterbrochen werden.
 
 1. Melden Sie sich wie gewohnt über https://`<your instance>:<port>/view/home` an.
 1. Über die unterschiedlichen Rubriken besteht Zugriff auf Listen und weitere Navigationselemente.

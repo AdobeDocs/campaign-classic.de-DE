@@ -5,10 +5,10 @@ description: Liste von Berichten
 badge: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Reporting, Monitoring
 exl-id: c01f4850-ab17-44ac-a5e0-ff082ec206b3
-source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1018'
-ht-degree: 100%
+source-wordcount: '1020'
+ht-degree: 93%
 
 ---
 
@@ -31,7 +31,7 @@ Weitere Informationen zum Inhalt dieser Berichte erhalten Sie in diesem [Abschni
   </tr> 
   <tr> 
    <td> Nutzer-Aktivitäten (recipientActivity)<br /> </td> 
-   <td> Verteilung der Öffnungen, Klicks und Transaktionen der Nutzer nach Zeitspanne<br /> </td> 
+   <td> Aufschlüsselung der Öffnungen, Klicks und Transaktionen der Nutzer nach Zeitspanne<br /> </td> 
    <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
@@ -41,7 +41,7 @@ Weitere Informationen zum Inhalt dieser Berichte erhalten Sie in diesem [Abschni
   </tr> 
   <tr> 
    <td> Fehler und Bounces (errors)<br /> </td> 
-   <td> Verteilung von Fehlern und Bounces nach Ursache und Domain<br /> </td> 
+   <td> Verteilung von unzustellbaren Nachrichten und Bounces nach Ursache und Domain<br /> </td> 
    <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
@@ -106,7 +106,7 @@ Weitere Informationen zum Inhalt dieser Berichte erhalten Sie in diesem [Abschni
   </tr> 
   <tr> 
    <td> Reaktionsrate (deliveryFeedbackSocial)<br /> </td> 
-   <td> Feedback-Rate eines Versands und Feedback-Verteilung<br /> </td> 
+   <td> Feedback-Rate eines Versands und Feedback-Aufschlüsselung<br /> </td> 
    <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
@@ -119,11 +119,11 @@ Weitere Informationen zum Inhalt dieser Berichte erhalten Sie in diesem [Abschni
 
 ## Kampagnenberichte {#reports-on-campaigns}
 
-Berichte zu Kampagnen beziehen sich auf die Daten der Tabelle **nms:operation**.
+Berichte über Kampagnen beziehen sich auf die Daten der Tabelle **nms:operation**.
 
 Die nativen Berichte von Adobe Campaign werden in der folgenden Tabelle aufgelistet.
 
-Weitere Informationen zum Inhalt dieser Berichte erhalten Sie in diesem [Abschnitt](../../campaign/using/designing-marketing-campaigns.md).
+Weitere Informationen zum Inhalt dieser Berichte finden Sie in der Dokumentation zu [ v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=de){target=_blank}.
 
 <table> 
  <tbody> 
@@ -133,7 +133,7 @@ Weitere Informationen zum Inhalt dieser Berichte erhalten Sie in diesem [Abschni
   </tr> 
   <tr> 
    <td> Nutzer-Aktivitäten (operationRecipientActivity)<br /> </td> 
-   <td> Verteilung der Öffnungen, Klicks und Transaktionen der Nutzer nach Zeitspanne; abhängig von Campaign<br /> </td> 
+   <td> Aufschlüsselung der Öffnungen, Klicks und Transaktionen der Nutzer nach Zeitspanne; abhängig von Campaign<br /> </td> 
   </tr> 
   <tr> 
    <td> Versanddurchsatz (operationThroughput)<br /> </td> 
@@ -145,7 +145,7 @@ Weitere Informationen zum Inhalt dieser Berichte erhalten Sie in diesem [Abschni
   </tr> 
   <tr> 
    <td> Fehler und Bounces (operationErrors)<br /> </td> 
-   <td> Verteilung von Fehlern und Bounces nach Ursache und Domain; abhängig von Campaign<br /> </td> 
+   <td> Verteilung von unzustellbaren Nachrichten und Bounces nach Ursache und Domain; abhängig von Campaign<br /> </td> 
   </tr> 
   <tr> 
    <td> Kostenzeilenanalyse (budgetExplorerOperation)<br /> </td> 
@@ -197,8 +197,8 @@ Weitere Informationen zum Inhalt dieser Berichte erhalten Sie in den zugehörige
    <td> Webanwendungen, über die Interessenten akquiriert wurden Hängt vom Social Marketing-Add-on ab.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Abonnement-Verteilung (mobileAppDistribution)<br /> </td> 
-   <td> Verteilung der aktiven Abonnements pro Mobile App; abhängig vom Mobile-App-Kanal-Add-on<br /> </td> 
+   <td> Abonnement-Aufschlüsselung (mobileAppDistribution)<br /> </td> 
+   <td> Aufschlüsselung der aktiven Abonnements pro Mobile App; abhängig vom Mobile-App-Kanal-Add-on<br /> </td> 
   </tr> 
   <tr> 
    <td> Abonnement-Verfolgung (subscriptionsProgress)<br /> </td> 
@@ -219,7 +219,7 @@ Weitere Informationen zum Inhalt dieser Berichte erhalten Sie in den zugehörige
 
 Die nativen Berichte von Adobe Campaign werden in der folgenden Tabelle aufgelistet.
 
-Weitere Informationen zum Inhalt dieser Berichte erhalten Sie in diesem [Abschnitt](../../campaign/using/designing-marketing-campaigns.md).
+Weitere Informationen zum Inhalt dieser Berichte finden Sie in der Dokumentation zu [ v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=de){target=_blank}.
 
 <table> 
  <tbody> 
@@ -230,7 +230,7 @@ Weitere Informationen zum Inhalt dieser Berichte erhalten Sie in diesem [Abschni
   </tr> 
   <tr> 
    <td> Programmen zugeordnete Kosten (budgetProgramCost)<br /> </td> 
-   <td> Verteilung der Programmkosten.<br /> </td> 
+   <td> Aufschlüsselung der Programmkosten.<br /> </td> 
    <td> nms:program<br /> </td> 
   </tr> 
   <tr> 
@@ -290,8 +290,8 @@ Weitere Informationen zum Inhalt dieser Berichte erhalten Sie in den zugehörige
    <td> Detaillierte Tabelle aller Ausschlussgründe<br /> </td> 
   </tr> 
   <tr> 
-   <td> Angebotsverteilung nach Rang (offerSimulationRanking)<br /> </td> 
-   <td> Verteilung der simulierten Angebote nach Rang<br /> </td> 
+   <td> Angebotsaufschlüsselung nach Rang (offerSimulationRanking)<br /> </td> 
+   <td> Aufschlüsselung der simulierten Angebote nach Rang<br /> </td> 
   </tr> 
   <tr> 
    <td> Simulationszusammenfassung (dlvSimuLossesSummary)<br /> </td> 
@@ -310,7 +310,7 @@ Weitere Informationen zum Inhalt dieser Berichte erhalten Sie in den zugehörige
 
 ## Berichte über Web-Anwendungen {#reports-on-web-applications}
 
-Berichte über Web-Anwendungen beziehen sich auf die Daten der Tabelle **nms:WebApp**.
+Berichte über Web-Anwendungen beziehen sich auf die Daten der **nms:WebApp**-Tabelle.
 
 Die nativen Berichte von Adobe Campaign werden in der folgenden Tabelle aufgelistet.
 
@@ -331,8 +331,8 @@ Weitere Informationen zum Inhalt dieser Berichte erhalten Sie in diesem [Abschni
    <td> Eigenschaften der Umfrage<br /> </td> 
   </tr> 
   <tr> 
-   <td> Antwortenverteilung (surveyDistribution)<br /> </td> 
-   <td> Verteilung der Umfrageantworten<br /> </td> 
+   <td> Aufschlüsselung der Antworten (surveyDistribution)<br /> </td> 
+   <td> Aufschlüsselung der Umfrageantworten<br /> </td> 
   </tr> 
  </tbody> 
 </table>

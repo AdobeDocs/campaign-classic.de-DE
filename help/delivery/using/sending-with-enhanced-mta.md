@@ -5,10 +5,10 @@ description: Erfahren Sie mehr über den Umfang und die Besonderheiten des E-Mai
 feature: Email
 role: User, Admin, Developer
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: b353b562bd2f0b0bd2dfde22c6477ab66d499483
-workflow-type: ht
-source-wordcount: '1395'
-ht-degree: 100%
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+workflow-type: tm+mt
+source-wordcount: '1407'
+ht-degree: 98%
 
 ---
 
@@ -121,7 +121,7 @@ Weitere Informationen zum Versanddurchsatz finden Sie in [diesem Abschnitt](../.
 
 Die Einstellungen für weitere Zustellversuche in den Versandeigenschaften werden von Campaign nicht mehr verwendet. Weitere Zustellversuche aufgrund von Softbounces und die Zeitdauer zwischen ihnen werden durch den Enhanced MTA bestimmt, basierend auf Typ und Prioritätsstufe der Bounce-Antworten, die von der E-Mail-Domain der Nachricht zurückgegeben werden.
 
-Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](steps-sending-the-delivery.md#configuring-retries).
+Weitere Informationen zu weiteren Zustellversuchen finden Sie auf [Seite](communication-channels.md) unter **Versand** > **Weitere Zustellversuche konfigurieren**.
 
 ### Gültigkeitszeitraum
 
@@ -131,7 +131,7 @@ Wenn der Gültigkeitszeitraum in Campaign beispielsweise auf den Standardwert vo
 
 Sobald eine Nachricht 3,5 Tage lang in der Warteschlange des Enhanced MTA war und nicht gesendet werden konnte, wird sie mit einem Timeout beendet; ihr Status wird von **[!UICONTROL Gesendet]** in **[!UICONTROL Fehlgeschlagen]** geändert (in den Versandlogs).
 
-Weitere Informationen zum Gültigkeitszeitraum finden Sie in [diesem Abschnitt](steps-sending-the-delivery.md#defining-validity-period).
+Weitere Informationen zum Gültigkeitszeitraum finden Sie auf dieser [Seite](communication-channels.md) unter **Versand** > **Definieren des Gültigkeitszeitraums**.
 
 ### DKIM-Signierung
 
@@ -140,7 +140,7 @@ Weitere Informationen zu DKIM finden Sie im [Adobe-Handbuch mit den Best Practic
 
 ### Berichte zum Versanderfolg
 
-In der Ansicht **[!UICONTROL Zusammenfassung]** des [Dashboards](delivery-dashboard.md) eines E-Mail-Versands beginnt der **[!UICONTROL Erfolgsprozentsatz]** bei 100 % und sinkt dann allmählich während des [Gültigkeitszeitraums](steps-sending-the-delivery.md#defining-validity-period) des Versands, da die Soft- und Hardbounces vom Enhanced MTA an Campaign zurückgemeldet werden.
+In der Ansicht **[!UICONTROL Zusammenfassung]** des [Dashboards](delivery-dashboard.md) eines E-Mail-Versands beginnt der **[!UICONTROL Erfolgsprozentsatz]** bei 100 % und sinkt dann allmählich während des [Gültigkeitszeitraums](communication-channels.md) des Versands, da die Soft- und Hardbounces vom Enhanced MTA an Campaign zurückgemeldet werden.
 
 Alle Nachrichten werden in den [Versandlogs](delivery-dashboard.md#delivery-logs-and-history) als **[!UICONTROL Gesendet]** angezeigt, sobald sie erfolgreich von Campaign an den Enhanced MTA weitergeleitet wurden. Sie bleiben in diesem Status, es sei denn, ein [Bounce](understanding-delivery-failures.md#delivery-failure-types-and-reasons) wird für diese Nachricht vom Enhanced MTA an Campaign zurückgemeldet.
 

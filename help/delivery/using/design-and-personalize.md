@@ -8,16 +8,16 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 5bf727d2-83b1-4a99-be25-041eee8d234c
-source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1298'
-ht-degree: 100%
+source-wordcount: '1318'
+ht-degree: 97%
 
 ---
 
 # Erstellen personalisierter Inhalte {#build-personalized-content}
 
-Versuchen Sie beim Entwerfen Ihres Nachrichteninhalts gängige Probleme zu vermeiden, die den Versand verhindern könnten. Meist betreffen Fehler die [Personalisierung](about-personalization.md), die [Formatierung](defining-the-email-content.md#message-content) und [Bilder](defining-the-email-content.md#adding-images).
+Versuchen Sie beim Entwerfen Ihres Nachrichteninhalts gängige Probleme zu vermeiden, die den Versand verhindern könnten. Meist betreffen Fehler die [Personalisierung](about-personalization.md), die [Formatierung](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#message-content){target="_blank"} und [Bilder](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#adding-images){target="_blank"}.
 
 ## Optimieren der Personalisierung {#optimize-personalization}
 
@@ -26,7 +26,7 @@ Um allgemeine Probleme bei der Zustellung Ihrer Nachrichten zu verhindern und da
 Sie können die Empfängerdaten verwenden, die in der Adobe Campaign-Datenbank gespeichert sind oder mithilfe von Tracking, Landingpages, Abonnements etc. erfasst wurden.
 Die Grundlagen der Personalisierung werden in [diesem Abschnitt](personalization-fields.md) dargestellt.
 
-Stellen Sie sicher, dass Ihr Nachrichteninhalt korrekt aufgebaut ist, um oft mit der Personalisierung in Verbindung stehende Probleme zu verhindern.
+Stellen Sie sicher, dass Ihr Nachrichteninhalt korrekt aufgebaut ist, um oft mit der Personalisierung in Verbindung stehende Fehler zu verhindern.
 
 **Tipps**: Der externe HTML-Inhalt, der in Personalisierungsfeldern bereitgestellt wird und von externen Dateien von Drittanbietern stammt, kann falsch sein. Um das zu vermeiden, prüfen Sie die Syntax, die Verwendung von Tags, Zeichen usw. Ein Adobe Campaign-Personalisierungs-Tag sieht stets wie folgt aus: &lt;%=table.field%>. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](about-personalization.md).
 
@@ -58,7 +58,7 @@ Beachten Sie beim Erstellen Ihrer E-Mails die folgenden allgemeinen Best Practic
 
 ### Betreff
 
-Achten Sie besonders auf den [Betreff](defining-the-email-content.md#message-content), um die Öffnungsraten zu verbessern:
+Erfahren Sie mehr über die Betreffzeile in der [Campaign v8-Dokumentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#sender){target="_blank"} um die Öffnungsraten zu verbessern:
 
 * Vermeiden Sie einen zu langen Betreff. Verwenden Sie maximal 50 Zeichen.
 
@@ -145,13 +145,13 @@ Manche E-Mail-Clients blockieren Bilder standardmäßig. Einstellungen können a
 
 Verwenden Sie responsive, in der Größe veränderbare Bilder. Beachten Sie, dass sich dies auf die Kosten auswirken kann, da die Erstellung länger dauert.
 
-### Verwenden absoluter Bildreferenzen
+### Verwenden absoluter Bildverweise
 
 Damit Empfänger auf die Bilder zugreifen können, müssen die in E-Mails und öffentlichen Ressourcen verwendeten Bilder, die mit Kampagnen verknüpft sind, auf einem extern zugänglichen Server gespeichert sein.
 
 * Sie können überprüfen, ob durch die Instanzenkonfiguration die Verwaltung öffentlicher Ressourcen ermöglicht wird – [Weitere Informationen](../../installation/using/deploying-an-instance.md#managing-public-resources)
 
-* Sie können eine HTML-Seite mit Bildern über den Versandassistenten importieren oder Bilder direkt mithilfe des HTML-Editors über das **[!UICONTROL Bildsymbol]** einfügen. [Weitere Informationen](defining-the-email-content.md#adding-images)
+* Sie können eine HTML-Seite mit Bildern über den Versandassistenten importieren oder Bilder direkt mithilfe des HTML-Editors über das **[!UICONTROL Bildsymbol]** einfügen. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#adding-images){target="_blank"}.
 
 * Wenn keine Bilder dargestellt werden, prüfen Sie, ob die Bilder auf dem Server verfügbar sind. Klicken Sie dazu in Ihrem Versand auf den Tab „Quelle“. Suchen Sie Ihre Bilder und kopieren Sie die URL eines jeden Bildes in einen Web-Browser. Wenn die Bilder nicht dargestellt werden, kontaktieren Sie Ihren IT-Administrator oder den Drittanbieter, der Ihnen den Versandinhalt bereitgestellt hat.
 
@@ -159,6 +159,6 @@ Damit Empfänger auf die Bilder zugreifen können, müssen die in E-Mails und ö
 
 Adobe empfiehlt eine Vorschau Ihrer Nachricht, um die Personalisierung zu überprüfen und festzustellen, wie Ihre Empfängerinnen und Empfänger den Versand sehen werden.
 
-* Im Versandassistenten können Sie auf der Unterregisterkarte **[!UICONTROL Vorschau]** das Rendering der einzelnen Inhalte für eine Empfängerin oder einen Empfänger anzeigen. Die Personalisierungsfelder und bedingten Inhaltselemente werden durch die entsprechenden Informationen für das ausgewählte Profil ersetzt.  [Weitere Informationen](defining-the-email-content.md#message-content)
+* Im Versandassistenten können Sie auf der Unterregisterkarte **[!UICONTROL Vorschau]** das Rendering der einzelnen Inhalte für eine Empfängerin oder einen Empfänger anzeigen. Die Personalisierungsfelder und bedingten Inhaltselemente werden durch die entsprechenden Informationen für das ausgewählte Profil ersetzt.  Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#message-content){target="_blank"}.
 
 * Die Vorschauerzeugung löst automatisch die Durchführung einer Anti-Spam-Prüfung aus. Überprüfen Sie auf der Unterregisterkarte **[!UICONTROL Vorschau]** die Spam-Bewertung von [SpamAssassin](spamassassin.md). Klicken Sie auf **[!UICONTROL Details...]**, um mehr über die Warnung zu erfahren. Stellen Sie zuvor sicher, dass SpamAssassin auf dem Adobe Campaign-Anwendungs-Server ordnungsgemäß installiert und konfiguriert ist – [Weitere Informationen](../../installation/using/configuring-spamassassin.md)

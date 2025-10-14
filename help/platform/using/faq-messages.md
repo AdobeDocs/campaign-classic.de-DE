@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 7fc24ef2-b021-440b-b1f2-8c77e2425328
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 100%
+source-wordcount: '761'
+ht-degree: 88%
 
 ---
 
@@ -26,17 +26,17 @@ Hier erfahren Sie, wie Sie in Adobe Campaign Tests und Validierungen vor dem Nac
 
 Im Zuge der Versandanalyse wird die Zielpopulation berechnet und der Versandinhalt vorbereitet. Nach Abschluss der Analyse kann der Versand gestartet werden. In Logs kann überprüft werden, ob alle Verfahren korrekt ablaufen.
 
-[Hier erfahren Sie mehr darüber](../../delivery/using/steps-validating-the-delivery.md).
+Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html){target="_blank"}.
 
 ### Warum sollte ich Testsendungen durchführen? {#why-should-i-create-proofs-}
 
 Adobe empfiehlt dringend einen Testversand, um den Versand anhand einer Validierungsgruppe zu überprüfen, bevor er an die Hauptzielgruppe gesendet wird. Damit können Inhalt, Personalisierung und Versandparameter geprüft werden.
 
-[Mehr dazu hier](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
+Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}.
 
 ### Wie werden Testadressen in Adobe Campaign verwendet? {#how-to-use-seed-addresses-in-adobe-campaign-}
 
-Testadressen ermöglichen den Versand an Empfänger, die nicht den vorliegenden Zielgruppenkriterien entsprechen. Sie können auf Versand- oder Kampagnenebene importiert oder erstellt werden und werden der Zielgruppe hinzugefügt. Bei Briefsendungen werden sie zum Zeitpunkt der Extraktion in das Ausgabedokument geschrieben.
+Testadressen ermöglichen den Versand an Empfänger, die nicht den vorliegenden Zielgruppenkriterien entsprechen. Sie können auf Versand- oder Kampagnenebene importiert oder erstellt werden und werden der Zielgruppe hinzugefügt. Bei Briefpost-Sendungen werden sie zum Zeitpunkt der Extraktion in das Ausgabedokument geschrieben.
 
 Testadressen bieten folgende Möglichkeiten:
 
@@ -49,13 +49,13 @@ Testadressen bieten folgende Möglichkeiten:
 
 Um eventuelle Konfigurationsfehler zu erkennen, ist es empfehlenswert, Ihre Sendungen einem Validierungszyklus zu unterziehen. Auf diese Weise können Sie den Inhalt wiederholt von Testempfängern prüfen lassen. Schalten Sie nach jeder Änderung einen neuen Testversand, um den Inhalt abschließend validieren zu lassen.
 
-[Hier erfahren Sie mehr darüber](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
+Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}.
 
 ### Was ist eine Typologieregel? {#what-is-a-typology-rule-}
 
 Um Konflikte zwischen Kampagnen zu vermeiden, kann Adobe Campaign verschiedene Kombinationen durch Anwendung spezifischer Beschränkungsregeln testen. Auf diese Weise werden ein ideal auf Kundenbedürfnisse abgestimmter Nachrichtenversand sowie eine kohärente Unternehmenskommunikation sichergestellt.
 
-[Hier erfahren Sie mehr darüber](../../campaign-opt/using/about-campaign-typologies.md).
+Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=de){target="_blank"}.
 
 ## Nachrichten senden {#send-your-messages}
 
@@ -63,25 +63,25 @@ Hier erfahren Sie, wie Sie in Adobe Campaign Nachrichten auf unterschiedlichen K
 
 ### Wie kann ich E-Mails in mehreren Schüben senden? {#how-can-i-send-emails-in-waves-}
 
-Anstatt eine Nachricht an eine große Population zu senden, können Sie [Schübe konfigurieren](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves), um Nachrichten in mehreren Teilen zu senden und dadurch eine gleichmäßige Auslastung der Kapazitäten zu gewährleisten.
+Vor dem Versand an eine große Population können Sie Schübe konfigurieren, um Nachrichten in mehreren Teilen zu senden und dadurch eine gleichmäßige Auslastung der Kapazitäten zu gewährleisten. Siehe die [Campaign v8-Dokumentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/configure-and-send.html#sending-using-multiple-waves){target="_blank"}.
 
 ### Was sind die wichtigsten Schritte bei der Erstellung einer E-Mail in Campaign? {#which-are-the-key-steps-to-create-an-email-in-campaign-}
 
-Zunächst wird die E-Mail-Nachricht erstellt und validiert und danach gesendet. Sie können zwischen sofortigem Versand an die Hauptzielgruppe und terminiertem Versand zu einem späteren Zeitpunkt wählen. Davor können Sie auch die Zielgruppe schätzen, sofern dies erforderlich ist.
+Zunächst wird die E-Mail-Nachricht erstellt und validiert und danach gesendet. Sie können zwischen sofortigem Versand an die Hauptzielgruppe und terminiertem Versand zu einem späteren Zeitpunkt wählen. Davor können Sie auch die Zielpopulation schätzen, sofern dies erforderlich ist.
 
-[Hier erfahren Sie mehr darüber](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
+Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}.
 
 ### Wie wird ein Versand terminiert? {#how-to-schedule-a-delivery-}
 
 Sie können das Senden der Nachrichten auf einen späteren Zeitpunkt verschieben, um z. B. den Werbedruck auf eine bestimmte Population zu kontrollieren.
 
-[Hier erfahren Sie mehr darüber](../../delivery/using/steps-sending-the-delivery.md#scheduling-the-delivery-sending).
+Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/configure-and-send.html#schedule-delivery-sending){target="_blank"}.
 
 ### Kann ich zu E-Mails einen Anhang hinzufügen? {#can-i-add-an-attachment-to-emails-}
 
 Mit Campaign Classic können Sie zu E-Mails personalisierte Anhänge hinzufügen.
 
-[Hier erfahren Sie mehr zu E-Mail-Anhängen](../../delivery/using/attaching-files.md).
+Weitere Informationen zu E-Mail-Anhängen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/emails/attaching-files){target="_blank"}.
 
 ## Verfolgen von Nachrichten und Messung ihrer Wirkung {#track-your-messages-and-measure-their-impact}
 

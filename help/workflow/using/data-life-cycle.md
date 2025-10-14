@@ -6,10 +6,10 @@ feature: Workflows, Data Management
 hide: true
 hidefromtoc: true
 exl-id: 366acc1e-d769-4053-9fa1-f47182627c07
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '531'
-ht-degree: 100%
+source-wordcount: '537'
+ht-degree: 97%
 
 ---
 
@@ -29,7 +29,7 @@ Wählen Sie im Kontextmenü die entsprechende Option aus:
 
 * Ergebnis anzeigen...
 
-  Diese Option ermöglicht die Anzeige der Zielgruppendaten und der Struktur der Arbeitstabelle (Tab **[!UICONTROL Schema]**).
+  Diese Option ermöglicht die Anzeige der Zielpopulationsdaten und der Struktur der Arbeitstabelle (Tab **[!UICONTROL Schema]**).
 
   ![](assets/wf-right-click-display.png)
 
@@ -49,7 +49,7 @@ Bei großen Datenmengen sollte diese Option jedoch nicht aktiviert werden.
 
 ## Zielgruppendaten {#target-data}
 
-Die in den Arbeitstabellen gespeicherten Daten können insbesondere in Personalisierungsfeldern verwendet werden.
+Die in den Arbeitstabellen des Workflows gespeicherten Daten können insbesondere in Personalisierungsfeldern verwendet werden.
 
 Auf diese Weise können Sie in einem Versand mithilfe einer Liste gesammelte oder aus Umfrageantworten stammende Informationen verwenden. Dies geschieht über folgende Syntax:
 
@@ -59,7 +59,7 @@ Auf diese Weise können Sie in einem Versand mithilfe einer Liste gesammelte ode
 
 Personalisierungsinformationen vom Typ **[!UICONTROL Erweiterung des Zieldatensatzes]** (targetData) stehen nur in Zielgruppen-Workflows zur Verfügung. Dies bedeutet, dass die Versandzielgruppe im Workflow zu bestimmen und in der in den Versand eingehenden Transition zu übermitteln ist.
 
-Wenn Sie Testsendungen durchführen möchten, muss die Testversand-Zielgruppe daher im Modus **[!UICONTROL Adressersetzung]** konzipiert werden, damit die Personalisierungsdaten ausgefüllt werden können. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../delivery/using/steps-defining-the-target-population.md#using-address-substitution-in-proof).
+Wenn Sie Testsendungen durchführen möchten, muss die Testversand-Zielgruppe daher im Modus **[!UICONTROL Adressersetzung]** konzipiert werden, damit die Personalisierungsdaten ausgefüllt werden können. Weiterführende Informationen hierzu finden Sie in diesem Abschnitt in der Dokumentation zu [ v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/create-message#target-population){target="_blank"}.
 
 Im folgenden Anwendungsbeispiel sollen Kundeninformationen in einer Liste gesammelt und dann in einer personalisierten E-mail verwendet werden.
 
@@ -105,7 +105,7 @@ Gehen Sie wie folgt vor:
 
    ![](assets/wf-targetdata-sample-5.png)
 
-   Im vorliegenden Beispiel wird der bevorzugte Musikstil des Kunden und der bevorzugte Datenträger (CD oder DVD) - gemäß den Informationen der geladenen Datei - eingefügt.
+   Im vorliegenden Beispiel wird der bevorzugte Musikstil des Kunden und der bevorzugte Datenträger (CD oder DVD) - gemäß den Informationen der durch den Workflow geladenen Datei - eingefügt.
 
    Des Weiteren enthält der Versand ein Angebot für Kunden mit Kundenkarte, d. h. für Kunden, bei denen der Wert &#39;Kundenkarte&#39; gleich 1 ist.
 

@@ -8,10 +8,10 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '2032'
-ht-degree: 100%
+source-wordcount: '2035'
+ht-degree: 99%
 
 ---
 
@@ -68,7 +68,7 @@ Der eigentliche Nachrichteninhalt wird im unteren Bereich des Versandkonfigurati
 
 Standardmäßig werden die Nachrichten den Angaben des Empfängers entsprechend im HTML- oder Textformat versandt. Um die korrekte Anzeige in allen E-Mail-Systemen zu gewährleisten, wird empfohlen, jeweils sowohl HTML- als auch Textinhalte zu erstellen. Weitere Informationen hierzu finden Sie unter [Wahl des Nachrichtenformats](email-parameters.md#selecting-message-formats).
 
-* Verwenden Sie die Schaltfläche **[!UICONTROL Öffnen]**, um HTML-Inhalt zu importieren. Sie haben auch die Möglichkeit, den Quellcode direkt in den Tab **[!UICONTROL Quelle]** einzufügen.
+* Verwenden Sie die Schaltfläche **[!UICONTROL Öffnen]**, um HTML-Inhalt zu importieren. Sie haben auch die Möglichkeit, den Quell-Code direkt in die Unterregisterkarte **[!UICONTROL Quelle]** einzufügen.
 
   Wenn Sie den [Digital Content Editor](../../web/using/about-campaign-html-editor.md) (DCE) verwenden, lesen Sie den Abschnitt zur [Auswahl einer Inhaltsvorlage](../../web/using/use-case-creating-an-email-delivery.md#step-3---selecting-a-content).
 
@@ -115,7 +115,7 @@ Standardmäßig werden die Nachrichten den Angaben des Empfängers entsprechend 
 
 Mit Adobe Campaign können Sie das neue interaktive Format [AMP für E-Mail](https://amp.dev/de/about/email/) testen, das unter bestimmten Bedingungen das Senden dynamischer E-Mails ermöglicht.
 
-Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](defining-interactive-content.md).
+Weitere Informationen hierzu finden Sie in der [ zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/emails/defining-interactive-content){target="_blank"}.
 
 ## Verwenden von Content-Management {#using-content-management}
 
@@ -123,13 +123,13 @@ Sie können den Inhalt des Versands mithilfe der Content-Management-Formulare di
 
 ![](assets/s_ncs_content_in_delivery.png)
 
-Ein zusätzlicher Tab erlaubt nun die Erstellung eines Inhalts, der automatisch den Regeln des Content Managements entsprechend formatiert und integriert wird.
+Eine zusätzliche Registerkarte erlaubt nun die Erstellung von Inhalten, die automatisch entsprechend den Regeln des Content-Managements formatiert und integriert werden.
 
 ![](assets/s_ncs_content_in_delivery_edition_tab.png)
 
 >[!NOTE]
 >
->Weitere Informationen zum Content Management in Adobe Campaign finden Sie in [diesem Abschnitt](about-content-management.md).
+>Weitere Informationen zum Content-Management in Adobe Campaign finden Sie in [diesem Abschnitt](about-content-management.md).
 
 ## Einfügen von Emoticons {#inserting-emoticons}
 
@@ -162,7 +162,7 @@ Diese Bilder können:
 * lokal gespeichert sein oder von einem Server abgerufen werden;
 * aus der Bibliothek der öffentlichen Ressourcen in Adobe Campaign stammen;
 
-  Auf öffentliche Ressourcen kann im Knoten **[!UICONTROL Ressourcen > Online > Öffentliche Ressourcen]** des Navigationsbaums zugegriffen werden. Sie sind in einer Bibliothek zusammengefasst und können in E-Mails, Kampagnen, Aufgaben und dem Content Management verwendet werden.
+  Auf öffentliche Ressourcen kann im Knoten **[!UICONTROL Ressourcen > Online > Öffentliche Ressourcen]** des Navigationsbaums zugegriffen werden. Sie sind in einer Bibliothek zusammengefasst und können in E-Mails, Kampagnen, Aufgaben und dem Content-Management verwendet werden.
 
 * Ein für Adobe Experience Cloud freigegebenes Asset. Weitere Informationen finden Sie in [diesem Abschnitt](../../integrations/using/sharing-assets-with-adobe-experience-cloud.md).
 

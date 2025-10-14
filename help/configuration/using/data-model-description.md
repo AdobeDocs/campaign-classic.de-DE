@@ -5,9 +5,9 @@ description: In diesem Dokument wird das Adobe Campaign-Datenmodell beschrieben
 feature: Data Model
 role: Data Engineer, Developer
 exl-id: fc0fd23c-f9ea-4e30-b47b-a84143d882ca
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '2404'
+source-wordcount: '2359'
 ht-degree: 2%
 
 ---
@@ -39,7 +39,7 @@ Das vordefinierte Adobe Campaign-Datenmodell umfasst die unten aufgeführten Hau
 
 ### NmsRecipient {#NmsRecipient}
 
-Diese Tabelle entspricht dem Schema **nms:recipient**.
+Diese Tabelle entspricht dem **nms:recipient**-Schema.
 
 Dies ist die Standardtabelle für die **Empfänger von Sendungen**. Daher enthält sie die Informationen, die für Sendungen über die verschiedenen Kanäle erforderlich sind:
 
@@ -57,7 +57,7 @@ Weitere Informationen zur Empfängertabelle finden Sie [diesem Abschnitt](../../
 
 ### NmsGroup {#NmsGroup}
 
-Diese Tabelle entspricht dem Schema **nms:group**.
+Diese Tabelle entspricht dem **nms:group**-Schema.
 
 Damit können Sie **statische Empfängergruppen“**. Es besteht eine Viele-zu-Viele-Beziehung zwischen Empfängern und Gruppen. Ein Empfänger kann beispielsweise mehreren Gruppen angehören und eine Gruppe kann mehrere Empfänger enthalten. Gruppen können manuell erstellt werden, entweder über einen Import oder über die Versandzielgruppe. Gruppen werden oft als Versandzielgruppe verwendet. Für das Feld, das den internen Namen der sName-Gruppe darstellt, gibt es einen eindeutigen Index. Die Gruppe ist mit einem Ordner verknüpft (der Schlüssel ist iFolderId). Weitere Informationen hierzu finden Sie unter [XtkFolder](#XtkFolder)).
 
@@ -77,19 +77,19 @@ Das Feld enthält einen eindeutigen Index, der den internen Namen des sName-Dien
 
 ### NmsSubscription {#NmsSubscription}
 
-Diese Tabelle entspricht dem Schema **nms:subscription**.
+Diese Tabelle entspricht dem **nms:subscription**-Schema.
 
 Damit können Sie Empfängerabonnements für Informationsdienste verwalten.
 
 ### NmsSubHisto {#NmsSubHisto}
 
-Diese Tabelle entspricht dem Schema **nms:subHisto**.
+Diese Tabelle entspricht dem **nms:subHisto**-Schema.
 
 Wenn die Abonnements über Web-Formulare oder die Benutzeroberfläche der Anwendung verwaltet werden, werden alle An- und Abmeldungen in der Tabelle NmsSubHisto protokolliert. Das Feld iAction gibt die Aktion (0 für Abmeldung und 1 für Abonnement) an, die an dem im Feld tsDate gespeicherten Datum durchgeführt wird.
 
 ### NmsDelivery {#NmsDelivery}
 
-Diese Tabelle entspricht dem Schema **nms:delivery**.
+Diese Tabelle entspricht dem **nms:delivery**-Schema.
 
 Jeder Datensatz in dieser Tabelle stellt eine **Versandaktion** oder eine **Versandvorlage** dar. Es enthält alle erforderlichen Parameter für die Durchführung von Sendungen (Zielgruppe, Inhalt usw.). Versand-(Broadcast)-Logs (NmsBroadLog) und zugehörige Tracking-URLs (NmsTrackingUrl) werden während der Analysephase erstellt (weitere Informationen zu beiden Tabellen finden Sie weiter unten).
 
@@ -113,23 +113,24 @@ Dieser Tabellensatz ist mit dem Modul **Versand** verknüpft, das die Überwachu
 
 ## Kampagnen-Management {#campaign-management}
 
-Dieser Tabellensatz ist mit dem Modul **Marketing-Kampagnen** verknüpft, mit dem Sie Kommunikations- und Marketing-Kampagnen definieren, optimieren, ausführen und analysieren können. Weitere Informationen hierzu finden Sie unter [Über Marketing-Kampagnen](../../campaign/using/designing-marketing-campaigns.md).
+Dieser Tabellensatz ist mit dem Modul **Marketing-Kampagnen** verknüpft, mit dem Sie Kommunikations- und Marketing-Kampagnen definieren, optimieren, ausführen und analysieren können. Weitere Informationen hierzu finden Sie in der [ zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=de){target=_blank}.
 
 ![](assets/data-model_campaign.png)
 
 * **NmsOperation**: Diese Tabelle entspricht dem **nms:operation**-Schema. Es enthält die Daten von Marketing-Kampagnen.
 * **NmsDeliveryOutline**: Diese Tabelle entspricht dem **nms:deliveryOutline**-Schema. Sie enthält die erweiterten Eigenschaften des Versands (Versandentwurf).
 * **NmsDlvOutlineItem**: Diese Tabelle entspricht dem **nms:dlvOutlineItem**-Schema. Es enthält die Artikel eines Versandentwurfs.
-* **NmsDeliveryCustomization**: Diese Tabelle entspricht dem Schema **nms:deliveryCustomization**. Es enthält die Personalisierungsfelder eines Versands.
+* **NmsDeliveryCustomization**: Diese Tabelle entspricht dem **nms:deliveryCustomization**-Schema. Es enthält die Personalisierungsfelder eines Versands.
 * **NmsBudget**: Diese Tabelle entspricht dem **nms:budget**-Schema. Es enthält Daten zu einem Budget für eine Kampagne, einen Plan, ein Programm, eine Aufgabe und/oder Sendungen.
 * **NmsDocument**: Diese Tabelle entspricht dem **nms:document**-Schema. Sie enthält die Marketingdokumente der Kampagne in Form von Dateien (Bilder, Excel- oder Word-Dateien usw.)
 * **XtkWorkflow**: Diese Tabelle entspricht dem **xtk:workflow**-Schema. Es enthält Kampagnen-Targeting.
 * **NmsTask**: Diese Tabelle entspricht dem **nms:task**-Schema. Sie enthält die Definition einer Marketing-Aufgabe.
-* **NmsAsset**: Diese Tabelle entspricht dem Schema **nms:asset**. Sie enthält die Definition einer Marketing-Ressource.
+* **NmsAsset**: Diese Tabelle entspricht dem **nms:asset**-Schema. Sie enthält die Definition einer Marketing-Ressource.
 
 ## Kommunikationskonsistenz {#communication-consistency}
 
-Dieser Tabellensatz ist mit dem Modul **Kampagnenoptimierung** verknüpft, das die Steuerung, Filterung und Überwachung des Versands von Sendungen ermöglicht. Weitere Informationen hierzu finden Sie unter [Über Kampagnentypologien](../../campaign-opt/using/about-campaign-typologies.md).
+Dieser Tabellensatz ist mit dem Modul **Kampagnenoptimierung** verknüpft, das die Steuerung, Filterung und Überwachung des Versands von Sendungen ermöglicht. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=de){target="_blank"}.
+
 
 ![](assets/data-model_typology.png)
 
@@ -147,14 +148,14 @@ Dieser Tabellensatz ist mit dem Modul **Response Manager** verknüpft, mit dem d
 
 ### NmsRemaHypothesis {#NmsRemaHypothesis}
 
-Diese Tabelle entspricht dem Schema **nms:remaHypothesis** . Sie enthält die Definition der Messhypothese.
+Diese Tabelle entspricht dem Schema **nms:remaHypothesis**. Sie enthält die Definition der Messhypothese.
 
 Diese Tabelle enthält wichtige in XML gespeicherte Informationen, darunter:
 
 **Ausführungskontext (in XML gespeicherte Informationen)**
 
 Der Ausführungskontext füllt die Tabellen und Felder, die für die Messberechnung berücksichtigt werden sollen, nämlich:
-* Das Speicherschema des Reaktionslogs nms:remaMatchRcp.
+* Das Speicherschema :remaMatchRcp nms: Reaktionslog.
 * Das Transaktionstabellenschema (z. B. Käufe).
 * Das Abfrageschema, mit dem Sie die Starttabelle der Hypothesenbedingungen definieren können.
 * Die Verknüpfungen zu Einzelpersonen, mit denen Sie die Person anhand des Abfrageschemas identifizieren können.
@@ -195,7 +196,7 @@ Die folgenden Indikatoren werden während der Ausführung der Hypothese automati
 
 ### NmsRemaMatchRcp {#NmsRemaMatchRcp}
 
-Diese Tabelle entspricht dem Schema **nms:remaMatchRcp**.
+Diese Tabelle entspricht dem **nms:remaMatchRcp**-Schema.
 
 Sie enthält einen Datensatz, der die Reaktion eines Individuums auf eine bestimmte Hypothese darstellt. Diese Datensätze wurden bei der Ausführung der Hypothese erstellt.
 
@@ -205,7 +206,7 @@ Dieser Tabellensatz ist mit dem Modul **Simulation** verknüpft, das es ermögli
 
 ![](assets/data-model_simulation.png)
 
-* **NmsSimulation**: Diese Tabelle entspricht dem Schema **nms:simulation**. Er stellt eine Simulation für eine Gruppe von Sendungen oder Angeboten für eine bestimmte Population dar.
+* **NmsSimulation**: Diese Tabelle entspricht dem **nms:simulation**-Schema. Er stellt eine Simulation für eine Gruppe von Sendungen oder Angeboten für eine bestimmte Population dar.
 * **NmsDlvSimulationRel**: Diese Tabelle entspricht dem **nms:dlvSimulationRel**-Schema. Sie enthält die Liste der in der Simulation berücksichtigten Sendungen. Der Umfang der Simulation wird in XML gespeichert.
 * **NmsOfferSimulationRel**: Diese Tabelle entspricht dem **nms:offerSimulationRel**-Schema. Damit können Sie eine Simulation mit einem Angebot verknüpfen.
 
@@ -213,9 +214,9 @@ Dieser Tabellensatz ist mit dem Modul **Simulation** verknüpft, das es ermögli
 
 Dieser Tabellensatz ist mit dem Modul **Interaction** verknüpft, das es ermöglicht, in Echtzeit während einer Interaktion mit einem bestimmten Kontakt zu reagieren, indem es ihm ein oder mehrere angepasste Angebote unterbreitet. Weitere Informationen hierzu finden Sie unter [Interaction und Angebotsverwaltung](../../interaction/using/interaction-and-offer-management.md).
 
-* **NmsOffer**: Diese Tabelle entspricht dem Schema **nms:offer**. Es enthält die Definition der einzelnen Marketing-Angebote.
-* **NmsPropositionRcp**: Diese Tabelle entspricht dem Schema **nms:propositionRcp**. Es enthält das kanalübergreifende Protokoll der Marketing-Vorschläge, die an jede Person gesendet werden. Der Datensatz wird erstellt, wenn ein Vorschlag vorbereitet oder einem Kontakt effektiv unterbreitet wird.
-* **NmsOfferSpace**: Diese Tabelle entspricht dem **nms:offerSpace**. Es enthält die Definition der Positionen, an denen Vorschläge gemacht werden.
+* **NmsOffer**: Diese Tabelle entspricht dem **nms:offer**-Schema. Es enthält die Definition der einzelnen Marketing-Angebote.
+* **NmsPropositionRcp**: Diese Tabelle entspricht dem **nms:propositionRcp**-Schema. Es enthält das kanalübergreifende Protokoll der Marketing-Vorschläge, die an jede Person gesendet werden. Der Datensatz wird erstellt, wenn ein Vorschlag vorbereitet oder einem Kontakt effektiv unterbreitet wird.
+* **NmsOfferSpace**: Diese Tabelle entspricht dem **nms:offerSpace**-Schema. Es enthält die Definition der Positionen, an denen Vorschläge gemacht werden.
 * **NmsOfferContext**: Diese Tabelle entspricht dem **nms:offerContext**-Schema. Es enthält zusätzliche Kriterien für die Anwendbarkeit des Vorschlags sowie die Definition der Formel zur Berechnung der Gewichtung.
 * **NmsOfferView**: Diese Tabelle entspricht der **nms:offerView**. Es enthält die Angebotsdarstellungen.
 * **NmsOfferCategory**: Diese Tabelle entspricht der **nms:offerCategory**. Es enthält die Angebotskategorien.
@@ -229,13 +230,13 @@ Die folgenden Tabellen sind mit dem Modul **Transaktionsnachrichten** (Message C
 
 ![](assets/data-model_message-center_rt.png)
 
-Diese Tabelle entspricht dem Schema **nms:rtEvent**. Es enthält eine Definition von Echtzeit-Ereignissen.
+Diese Tabelle entspricht dem **nms:rtEvent**-Schema. Es enthält eine Definition von Echtzeit-Ereignissen.
 
 ### NmsBatchEvent {#NmsBatchEvent}
 
 ![](assets/data-model_message-center_batch.png)
 
-Diese Tabelle entspricht dem Schema **nms:batchEvent**. Sie enthält die Definition der Ereignisse nach Batch.
+Diese Tabelle entspricht dem **nms:batchEvent**-Schema. Sie enthält die Definition der Ereignisse nach Batch.
 
 <!--## Microsites Module {#microsites-module}
 
@@ -254,7 +255,7 @@ Dieser Tabellensatz ist mit dem **Mobile-App-Kanal** verknüpft, der das Senden 
 * **NmsMobileApp**: Diese Tabelle entspricht dem **nms:mobileApp**-Schema. Es enthält die in Adobe Campaign definierten Mobile Apps.
 * **NmsAppSubscription**: Diese Tabelle entspricht dem **nms:appSubscription**-Schema. Es enthält die Abonnenteninformationen zu einer oder mehreren Anwendungen.
 * **NmsAppSubscriptionRcp**: Diese Tabelle entspricht dem **nms:appSubscriptionRcp**-Schema. Damit können Sie Besucherinnen und Besucher, die eine Anwendung abonniert haben, mit der Empfängertabelle verknüpfen.
-* **NmsExcludeLogAppSubRcp**: Diese Tabelle entspricht dem **nms:excludeLogAppSubRcp**-Schema.
+* **NmsExcludeLogAppSubRcp**: Diese Tabelle entspricht dem Schema **nms:excludeLogAppSubRcp**.
 * **NmsTrackingLogAppSubRcp**: Diese Tabelle entspricht dem **nms:trackingLogAppSubRcp**-Schema.
 * **NmsBroadLogAppSubRcp**: Diese Tabelle entspricht dem **nms:broadLogAppSubRcp**-Schema.
 
@@ -266,6 +267,6 @@ Dieser Satz von Tabellen ist mit dem Modul **Verwalten sozialer Netzwerke** verk
 
 * **NmsVisitor**: Diese Tabelle entspricht dem **nms:visitor**-Schema. Es enthält Informationen zu Besuchern.
 * **NmsVisitorSub**: Diese Tabelle entspricht dem **nms:visitorSub**-Schema. Sie ermöglicht es, einen Besucher mit den Diensten zu verknüpfen, die er abonniert hat (X oder Facebook).
-* **NmsFriendShipRel**: Diese Tabelle entspricht dem **nms:friendlyRel**-Schema. Sie ermöglicht es, Besucher im Rahmen des Facebook-Service mit ihren Freunden zu verbinden.
+* **NmsFriendShipRel**: Diese Tabelle entspricht dem **nms:friendshipRel**-Schema. Sie ermöglicht es, Besucher im Rahmen des Facebook-Service mit ihren Freunden zu verbinden.
 * **NmsVisitorInterestRel**: Diese Tabelle entspricht dem **nms:visitorInterestRel**-Schema. Es ermöglicht Ihnen, Besucher und deren Interessen zu verbinden.
 * **NmsInterest**: Diese Tabelle entspricht dem **nms:interest**-Schema. Es enthält die Liste der Interessen jedes Besuchers.

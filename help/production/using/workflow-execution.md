@@ -8,10 +8,10 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: b5aa5663-1902-4f50-9202-783e73a28838
-source-git-commit: 1be1528d657537786c430ea9c8bdb3aad58ba20d
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '660'
-ht-degree: 11%
+source-wordcount: '668'
+ht-degree: 10%
 
 ---
 
@@ -24,9 +24,9 @@ Im folgenden Abschnitt finden Sie Informationen zu häufigen Problemen bei der A
 Weiterführende Informationen zu Workflows finden Sie in den folgenden Abschnitten:
 
 * [Über Workflows](../../workflow/using/about-workflows.md)
-* [Workflow starten](../../workflow/using/starting-a-workflow.md)
-* [Lebenszyklus eines Workflows](../../workflow/using/workflow-life-cycle.md)
-* [Best Practices bei der Verwendung von Workflows](../../workflow/using/workflow-best-practices.md)
+* [Workflow starten](https://experienceleague.adobe.com/docs/campaign/automation/workflows/executing-a-workflow/start-a-workflow.html?lang=de){target="_blank"}.
+* [Workflow-Lebenszyklus](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/about-workflows.html?lang=de){target="_blank"}.
+* [Best Practices bei der Verwendung von Workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=de){target="_blank"}.
 
 ## Schnellstmöglicher Start in Kampagnen {#start-as-soon-as-possible-in-campaigns}
 
@@ -34,9 +34,9 @@ In einigen Fällen werden Workflows, die von einer Kampagne ausgeführt werden, 
 
 Dieses Problem kann mehrere Ursachen haben. Gehen Sie zur Lösung des Problems wie folgt vor:
 
-1. Überprüfen Sie den [**[!UICONTROL operationMgt]**](../../workflow/using/about-technical-workflows.md) des technischen Workflows. Dieser Workflow verwaltet Vorgänge oder Workflows innerhalb einer Kampagne. Wenn dies fehlschlägt, führt dies dazu, dass Workflows nicht gestartet/angehalten werden. Starten Sie ihn neu, um die Ausführung der Kampagnen-Workflows fortzusetzen.
+1. Überprüfen Sie den [**[!UICONTROL operationMgt ]**](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html?lang=de){target="_blank"} des technischen Workflows. Dieser Workflow verwaltet Vorgänge oder Workflows innerhalb einer Kampagne. Wenn dies fehlschlägt, führt dies dazu, dass Workflows nicht gestartet/angehalten werden. Starten Sie ihn neu, um die Ausführung der Kampagnen-Workflows fortzusetzen.
 
-   Weiterführende Informationen zur Überwachung technischer Workflows finden Sie auf [dieser Seite](../../workflow/using/monitoring-technical-workflows.md).
+   Weitere Informationen zur Überwachung technischer Workflows finden Sie in der [ zu Campaign v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-technical-workflows.html?lang=de){target="_blank"}.
 
    >[!NOTE]
    >
@@ -73,13 +73,13 @@ Dieses Problem kann mehrere Ursachen haben. Gehen Sie zur Lösung des Problems w
 
    Um dieses Problem zu beheben, stoppen Sie unerwünschte Workflows und löschen Sie fehlgeschlagene Sendungen. Wenn der Schwellenwert erreicht wurde, können neue Prozesse ausgeführt werden.
 
-   Um die Anzahl der in Ihrer Instanz ausgeführten Workflows zu überprüfen, empfehlen wir die Verwendung der vordefinierten Ansichten, auf die standardmäßig im Ordner **[!UICONTROL Administration]** / **[!UICONTROL Audit]** zugegriffen werden kann. Weitere Informationen dazu finden Sie auf [dieser Seite](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status).
+   Um die Anzahl der in Ihrer Instanz ausgeführten Workflows zu überprüfen, empfehlen wir die Verwendung der vordefinierten Ansichten, auf die standardmäßig im Ordner **[!UICONTROL Administration]** / **[!UICONTROL Audit]** zugegriffen werden kann. Weitere Informationen dazu finden Sie in der entsprechenden [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=de){target="_blank"}.
 
    >[!IMPORTANT]
    >
    >Eine Erhöhung des **[!UICONTROL NmsOperation_LimitConcurrency]**-Schwellenwerts kann zu Leistungsproblemen in Ihrer Instanz führen. Führen Sie dies auf keinen Fall eigenständig durch und wenden Sie sich an Ihren Adobe Campaign-Ansprechpartner.
 
-Weitere Informationen zum Überwachen Ihrer Workflows finden Sie in [diesem Abschnitt](../../workflow/using/monitoring-workflow-execution.md).
+Weitere Informationen zur Überwachung Ihrer Workflows finden Sie in der [ zu Campaign v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=de){target="_blank"}.
 
 ## Start in progress {#start-in-progress}
 
@@ -118,6 +118,6 @@ Um dies zu überprüfen und bei Bedarf das Modul zu starten, gehen Sie wie folgt
 
 Wenn ein Workflow fehlschlägt, führen Sie die folgenden Schritte aus:
 
-1. Überprüfen Sie das Workflow-Journal. Weitere Informationen hierzu finden Sie in den Abschnitten [Ausführung des ](../../workflow/using/monitoring-workflow-execution.md) überwachen[ und ](../../workflow/using/monitoring-workflow-execution.md#displaying-logs) anzeigen.
-1. Überwachen technischer Workflows. Weiterführende Informationen hierzu finden Sie [ diesem Abschnitt](../../workflow/using/monitoring-technical-workflows.md).
+1. Überprüfen Sie das Workflow-Journal. Weitere Informationen hierzu finden Sie in der [ zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=de){target="_blank"}.
+1. Überwachen technischer Workflows. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-technical-workflows.html?lang=de){target="_blank"}.
 1. Suchen Sie nach Fehlern bei den einzelnen Workflow-Aktivitäten.

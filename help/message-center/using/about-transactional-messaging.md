@@ -4,10 +4,10 @@ title: Erste Schritte mit Transaktionsnachrichten
 description: Erfahren Sie mehr über die Funktionsweise von Transaktionsnachrichten in Adobe Campaign Classic und die wichtigsten Schritte für ihre Verwendung
 feature: Transactional Messaging, Message Center
 exl-id: dc52e789-d0bf-4e8f-b448-9d69a2762cc1
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 100%
+source-wordcount: '645'
+ht-degree: 99%
 
 ---
 
@@ -88,6 +88,6 @@ Nachdem Sie die Transaktionsnachrichtenvorlage erstellt und veröffentlicht habe
 ## Verwandte Themen {#related-topics}
 
 * [Erste Schritte mit Kommunikationskanälen](../../delivery/using/communication-channels.md)
-* [Wichtigste Schritte bei der Versanderstellung](../../delivery/using/steps-about-delivery-creation-steps.md)
+* [Die wichtigsten Schritte bei der Versanderstellung](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}
 * [Transaktionsnachrichten-Architektur](../../message-center/using/transactional-messaging-architecture.md)
 * [Zugreifen auf Berichte zu Transaktionsnachrichten](../../message-center/using/about-transactional-messaging-reports.md)

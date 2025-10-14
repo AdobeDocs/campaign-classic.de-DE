@@ -1,15 +1,15 @@
 ---
 product: campaign
 title: Adobe Experience Platform-Segmente in Campaign aufnehmen
-description: Erfahren Sie, wie Sie Adobe Experience Platform-Audiences in Campaign Classic aufnehmen
+description: Erfahren Sie, wie Sie Adobe Experience Platform-Zielgruppen in Campaign Classic aufnehmen
 feature: Experience Platform Integration
 audience: integrations
 content-type: reference
 exl-id: 6db8a653-b649-402c-8814-24826edadba7
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 100%
+source-wordcount: '301'
+ht-degree: 95%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 
 
-Um Adobe Experience Platform-Audiences in Campaign aufzunehmen und sie in Ihren Workflows zu verwenden, müssen Sie zunächst Adobe Campaign als ein Adobe Experience Platform-**Ziel** verbinden und mit dem zu exportierenden Segment konfigurieren.
+Um Adobe Experience Platform-Zielgruppen in Campaign aufzunehmen und sie in Ihren Workflows zu verwenden, müssen Sie zunächst Adobe Campaign als ein Adobe Experience Platform-**Ziel** verbinden und mit dem zu exportierenden Segment konfigurieren.
 
 Nachdem das Ziel konfiguriert ist, werden die Daten an Ihren Speicherort exportiert. Zur Aufnahme der Daten muss in Campaign Classic noch ein spezieller Workflow erstellt werden.
 
@@ -35,7 +35,7 @@ Sie können jetzt einen Campaign Classic-Workflow konfigurieren, um das Segment 
 
 Nachdem Campaign Classic als Ziel konfiguriert wurde, müssen Sie einen Workflow erstellen, um die von Adobe Experience Platform exportierte Datei zu importieren.
 
-Fügen Sie dazu die Aktivität **[!UICONTROL Dateiübertragung]** hinzu und konfigurieren Sie sie. Weiterführende Informationen zur Konfiguration dieser Aktivität finden Sie in [diesem Abschnitt](../../workflow/using/file-transfer.md).
+Fügen Sie dazu die Aktivität **[!UICONTROL Dateiübertragung]** hinzu und konfigurieren Sie sie. Weitere Informationen zur Konfiguration dieser Aktivität finden Sie in der [ zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=de){target="_blank"}.
 
 ![](assets/rtcdp-file-transfer.png)
 

@@ -4,10 +4,10 @@ title: Audit-Protokoll
 description: Erfahren Sie, wie Sie Ihre Instanz mit dem Audit-Protokoll von Campaign überwachen.
 feature: Audit Trail, Monitoring, Workflows
 exl-id: 8508d879-fb38-4b1f-9f55-0341bb8d0c67
-source-git-commit: 3d1ed85dcafc5afc4088db98c09d78fb7e9c0a39
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 85%
+source-wordcount: '427'
+ht-degree: 82%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 85%
 
 >[!INFO]
 >
->Weitere Informationen zur Funktion des Audit-Protokolls finden Sie in der Dokumentation zu [Adobe Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/audit-trail).
+>Weitere Informationen zur Funktion des Audit-Protokolls finden Sie in der Dokumentation zu [Adobe Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/audit-trail).
 
 In Adobe Campaign erhalten Sie **[!UICONTROL Audit-Protokoll]** Zugriff auf den vollständigen Verlauf der Änderungen, die in Ihrer Instanz vorgenommen wurden.
 
@@ -47,7 +47,8 @@ In Adobe Campaign erhalten Sie **[!UICONTROL Audit-Protokoll]** Zugriff auf den 
 
   Weiterführende Informationen zu Workflows finden Sie auf [dieser Seite](../../workflow/using/about-workflows.md).
 
-  Weiterführende Informationen zur Überwachung Workflows finden Sie im [entsprechenden Abschnitt](../../workflow/using/monitoring-workflow-execution.md).
+  Weitere Informationen zum Überwachen von Workflows finden Sie in der [ zu Campaign v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=de){target="_blank"}.
+
 
 * Das **Audit-Protokoll für Optionen** ermöglicht Ihnen die Überprüfung der Aktivitäten und der letzten Änderungen an Ihren Optionen.
 

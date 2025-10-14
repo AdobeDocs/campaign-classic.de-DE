@@ -7,10 +7,10 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '832'
-ht-degree: 100%
+source-wordcount: '837'
+ht-degree: 97%
 
 ---
 
@@ -79,9 +79,9 @@ Once the control and execution modules are installed on the same instance, you m
 
 Der Zugriff auf die Transaktionsnachrichten-spezifischen, technischen Workflows erfolgt in der oder den Ausführungsinstanz(en) im Knoten **Administration > Betreibung > Message Center**. Stellen Sie sicher, dass alle Workflows gestartet wurden. Folgende Workflows stehen zur Verfügung:
 
-* **[!UICONTROL Verarbeitung der Batch-Ereignisse]** (interner Name **[!UICONTROL batchEventsProcessing]**): teilt die Batch-Ereignisse einer Warteschlange zu, bis sie einer Nachrichtenvorlage zugeordnet werden.
+* **[!UICONTROL Verarbeitung der Batch-Ereignisse]** (interner Name **[!UICONTROL batchEventsProcessing]**): dieser Workflow teilt die Batch-Ereignisse einer Warteschlange zu, bis sie einer Nachrichtenvorlage zugeordnet werden.
 * **[!UICONTROL Echtzeitereignisse verarbeiten]** (interner Name **[!UICONTROL rtEventsProcessing]**): Mit diesem Workflow schlüsseln Sie Echtzeitereignisse in einer Warteschlange auf, bevor sie mit einer Nachrichtenvorlage verknüpft werden.
-* **[!UICONTROL Update des Ereignisstatus]** (interner Name **[!UICONTROL updateEventStatus]**): ordnet jedem Ereignis einen Status zu.
+* **[!UICONTROL Update des Ereignisstatus]** (interner Name **[!UICONTROL updateEventStatus]**): dieser Workflow ordnet jedem Ereignis einen Status zu.
 
   Folgende Status sind möglich:
 
@@ -120,7 +120,7 @@ Gehen Sie auf den Ausführungsinstanzen wie folgt vor:
    >
    >Näheres dazu, wie Sie ein externes Konto vom Typ Ausführungsinstanz erstellen, finden Sie in [diesem Abschnitt](../../message-center/using/configuring-instances.md#control-instance).
 
-1. Erweitern Sie das Schema nms:extAccount, um die Tracking-URL hinzuzufügen:
+1. Erweitern Sie das nms:extAccount-Schema, um die Tracking-URL hinzuzufügen:
 
    ```
    <attribute advanced="true" desc="URL of the tracking servers" label="Tracking server URL"
@@ -131,7 +131,7 @@ Gehen Sie auf den Ausführungsinstanzen wie folgt vor:
    >
    >Näheres dazu, wie Sie ein vorhandenes Schema erweitern, finden Sie im Abschnitt [Erweitern eines Schemas](../../configuration/using/extending-a-schema.md).
 
-1. Passen Sie das Formular nms:extAccount an:
+1. Ändern Sie das nms:extAccount-Formular:
 
    ```
    <container label="Message domain branding" type="frame">
@@ -169,6 +169,6 @@ Gehen Sie dazu wie folgt vor:
 
 1. Erstellen Sie auf der ](#execution-instance)Ausführungsinstanz[ für jede Marke ein externes Konto mit demselben internen Namen (Schritt 1).
 
-1. Erstellen Sie für jede Marke eine [Versandvorlage](../../delivery/using/about-templates.md).
+1. Erstellen Sie für jede Marke eine Versandvorlage. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=de){target="_blank"}.
 
 1. Konfigurieren Sie in den **[!UICONTROL Eigenschaften]** der Versandvorlage das Routing zum externen Konto der Marke.

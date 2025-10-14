@@ -8,10 +8,10 @@ audience: campaign
 content-type: reference
 topic-tags: response-manager
 exl-id: e0b3bc9f-5e81-463f-a59e-cd972a47109b
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1076'
-ht-degree: 100%
+source-wordcount: '1089'
+ht-degree: 98%
 
 ---
 
@@ -144,9 +144,9 @@ Angebotshypothesen werden auf ähnliche Weise erstellt wie solche, die direkt in
 
 In diesem Beispiel wird eine mit einem Versand verknüpfte Hypothese erstellt. Diese Hypothese basiert auf dem zuvor erstellten Modell. [Weitere Informationen](hypothesis-templates.md#example--creating-a-hypothesis-template-on-a-delivery)   
 
-Anschließend präzisieren wir die vom Modell geerbte Abfrage, um eine Hypothese zu einem bestimmten Artikel in der Bestelltabelle zu erstellen.
+Anschließend werden wir die von der Vorlage geerbte Abfrage verfeinern, um eine Hypothese zu einem bestimmten Artikel in der Bestelltabelle zu erstellen.
 
-1. Erstellen Sie eine Kampagne und einen Versand. [Weitere Informationen](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign)   
+1. Erstellen Sie eine Kampagne und einen Versand. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=de){target=_blank}.
 
    In vorliegenden Beispiel handelt es sich um einen Briefpost-Versand.
 
@@ -156,9 +156,9 @@ Anschließend präzisieren wir die vom Modell geerbte Abfrage, um eine Hypothese
 
    >[!NOTE]
    >
-   >Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
+   >Weitere Informationen dazu finden Sie in der entsprechenden [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html#add-a-control-group){target="_blank"}.
 
-1. Öffnen Sie den zuvor erstellten Versand Ihrer Kampagne, klicken Sie auf das Symbol **[!UICONTROL Versandmessung]** und anschließend auf **[!UICONTROL Hinzufügen]****[!UICONTROL .]**
+1. Öffnen Sie den zuvor erstellten **[!UICONTROL Briefpost-Versand]** Ihrer Kampagne, klicken Sie auf das Symbol **[!UICONTROL Versandmessung]** und anschließend auf **[!UICONTROL Hinzufügen]**.
 
    ![](assets/response_hypothesis_delivery_example_002.png)
 
@@ -178,7 +178,7 @@ Anschließend präzisieren wir die vom Modell geerbte Abfrage, um eine Hypothese
 
    ![](assets/response_hypothesis_delivery_example_008.png)
 
-1. Starten Sie Ihren Zielgruppen-Workflow und führen Sie die erforderlichen Prüfungen durch, bis die Kampagne abgeschlossen ist. [Weitere Informationen](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery)   
+1. Starten Sie Ihren Zielgruppen-Workflow und führen Sie die erforderlichen Prüfungen durch, bis die Kampagne abgeschlossen ist. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html#start-a-delivery){target=_blank}.
 
    ![](assets/response_hypothesis_delivery_example_009.png)
 

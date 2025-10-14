@@ -6,10 +6,10 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Deliverability
 role: User
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
-source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '760'
-ht-degree: 100%
+source-wordcount: '772'
+ht-degree: 92%
 
 ---
 
@@ -29,7 +29,7 @@ Weitere Tipps zur Optimierung der Zustellbarkeit beim Entwerfen von Inhalten fin
 
 >[!NOTE]
 >
->Weitere Informationen zum Bearbeiten von E-Mail-Inhalten finden Sie unter [Definieren des E-Mail-Inhalts](defining-the-email-content.md).
+>Weitere Informationen zum Bearbeiten von E-Mail-Inhalten finden Sie in der [ zu Campaign v8 ](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/emails/defining-the-email-content){target="_blank"}.
 
 ## Absenderadresse {#sender-address}
 
@@ -37,7 +37,7 @@ Bestimmte Internet-Anbieter überprüfen die Gültigkeit der Absenderadresse (**
 
 Sie müssen sicherstellen, dass auf Instanzebene (Menü **[!UICONTROL Tools > Erweitert > Bereitstellungassistent...]**) oder in den am häufigsten verwendeten Szenarien eine richtige Adresse angegeben wird.
 
-Weitere Informationen hierzu finden Sie auf [dieser Seite](defining-the-email-content.md).
+Weitere Informationen hierzu finden Sie in der [ zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/emails/defining-the-email-content){target="_blank"}.
 
 ## Personalisierung {#personalization}
 
@@ -47,7 +47,7 @@ Weitere Informationen zur Verwendung von Personalisierungsfeldern in Adobe Campa
 
 ## Ausschluss-Link und -Formular {#opt-out}
 
-Bei der Analyse einer Nachricht wird standardmäßig von einer [Typologieregel](steps-validating-the-delivery.md#validation-process-with-typologies) überprüft, ob ein Ausschluss-Link vorhanden ist. Ist dies nicht der Fall, wird ein Warnhinweis erstellt. Sie können diese Regel ändern, sodass anstatt eines einfachen Warnhinweises ein Fehler angezeigt wird und ein Versand ohne diesen Link nicht möglich ist.
+Bei der Analyse einer Nachricht wird standardmäßig von einer Typologieregel überprüft, ob ein Abmelde-Link vorhanden ist. Ist dies nicht der Fall, wird ein Warnhinweis erstellt. Sie können diese Regel so ändern, dass statt einer einfachen Warnung ein Fehler ausgelöst wird und ein Versand nicht mehr ohne diesen Link ausgeführt wird. Siehe die [Campaign v8-Dokumentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html){target="_blank"}.
 
 Sie müssen vor jedem Versand überprüfen, ob der Abmelde-Link korrekt funktioniert. Achten Sie beispielsweise beim Testversand darauf, dass der Link gültig ist, das Formular online ist und dass sich durch seine Validierung der Wert des Feldes **[!UICONTROL Diese Person nicht mehr kontaktieren]** auf **[!UICONTROL Ja]** ändert. Führen Sie diese Prüfung regelmäßig durch, da bei der manuellen Eingabe des Links oder der Änderung des Formulars Fehler auftreten können.
 

@@ -6,10 +6,10 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Personalization
 role: User
 exl-id: e5239d99-256b-412b-be20-f64f822da9c3
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
 source-wordcount: '490'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -23,7 +23,7 @@ Unterstützt werden die Formate &quot;.docx&quot;, &quot;.doc&quot; und &quot;.o
 
 Um die entsprechenden Dokumente zu personalisieren, stehen Ihnen die gleichen JavaScript-Funktionen zur Verfügung, die auch bei E-Mails Verwendung finden.
 
-Aktivieren Sie bei der Erstellung des E-Mail-Anhangs die Option **[!UICONTROL Dateiinhalt wird zum Zeitpunkt der Absendung für jede Nachricht personalisiert und in PDF konvertiert]**. Weitere Informationen zum Anhängen einer berechneten Datei finden Sie im Abschnitt [Anhängen von Dateien](attaching-files.md).
+Aktivieren Sie bei der Erstellung des E-Mail-Anhangs die Option **[!UICONTROL Dateiinhalt wird zum Zeitpunkt der Absendung für jede Nachricht personalisiert und in PDF konvertiert]**. Weitere Informationen zum Anhängen einer berechneten Datei finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/emails/attaching-files){target="_blank"}.
 
 Beispiel der Personalisierung eines Rechnungskopfes:
 

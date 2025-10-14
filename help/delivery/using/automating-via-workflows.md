@@ -6,20 +6,20 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Workflows
 role: User
 exl-id: bc6ebf5d-cc21-4750-9713-2bf259e7d6bf
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1209'
-ht-degree: 100%
+source-wordcount: '1213'
+ht-degree: 93%
 
 ---
 
 # Automatisieren mit Workflows{#automating-via-workflows}
 
-## Inhaltsverwaltungsaktivitäten {#content-management-activity}
+## Content-Management-Aktivitäten {#content-management-activity}
 
 Die Erstellung, Bearbeitung und Veröffentlichung von Inhalten kann mithilfe eines in der Adobe Campaign-Clientkonsole konfigurierten Workflows automatisiert werden.
 
-Die Aktivität **Content Management** ist in der **[!UICONTROL Werkzeug]**-Symbolleiste des Workflow-Diagramms enthalten.
+Die Aktivität **Content-Management** ist in der **[!UICONTROL Werkzeug]**-Symbolleiste des Workflow-Diagramms enthalten.
 
 Vier Aktivitätseigenschaften sind zu konfigurieren:
 
@@ -72,7 +72,7 @@ Vier Aktivitätseigenschaften sind zu konfigurieren:
 
 ### Transition {#transition}
 
-Die Option **Ausgehende Transition erzeugen** fügt der Aktivität **[!UICONTROL Content Management]** eine Transition hinzu, damit der Workflow mit einer neuen Aktivität fortgesetzt werden kann. Wenn Sie diese Option ankreuzen, ist die Angabe eines Titels für die Transition erforderlich.
+Die Option **Ausgehende Transition erzeugen** fügt der Aktivität **[!UICONTROL Content-Management]** eine Transition hinzu, damit der Workflow mit einer neuen Aktivität fortgesetzt werden kann. Wenn Sie diese Option ankreuzen, ist die Angabe eines Titels für die Transition erforderlich.
 
 ## Beispiele      {#examples}
 
@@ -82,7 +82,7 @@ Folgender Workflow automatisiert die Erstellung und den Versand eines Inhalts:
 
 ![](assets/d_ncs_content_workflow2.png)
 
-Der Inhalt wird in der Aktivität &quot;Content Management&quot; konfiguriert:
+Der Inhalt wird in der Aktivität &quot;Content-Management&quot; konfiguriert:
 
 ![](assets/d_ncs_content_workflow3.png)
 
@@ -101,7 +101,7 @@ Der Inhalt wird automatisch durch den von der angegebenen URL heruntergeladenen 
 </book>
 ```
 
-Das Datenformat stimmt nicht mit dem Datenschema überein, das in der Veröffentlichungsvorlage eingegeben wurde (**cus:book** in unserem Beispiel); das **`<section>`**-Element muss durch das **`<chapter>`** Element ersetzt werden. Sie müssen das Stylesheet „cus:book-workflow.xsl“ anwenden, um die notwendigen Änderungen vorzunehmen.
+Das Datenformat stimmt nicht mit dem in der Veröffentlichungsvorlage eingegebenen Datenschema überein (**cus:book** in unserem Beispiel). Das **`<section>`** muss durch das **`<chapter>`** ersetzt werden. Wir müssen das Stylesheet „cus:book-workflow.xsl“ anwenden, um die notwendigen Änderungen vorzunehmen.
 
 Quellcode des verwendeten XSLT-Stylesheets:
 
@@ -140,7 +140,7 @@ Quellcode des verwendeten XSLT-Stylesheets:
 
 Die Content-Management-Aktivität endet mit der Speicherung der Inhaltsinstanz und dem Übergang zur nächsten Aktivität.
 
-Die Zielgruppe wird mithilfe der **Abfrage**-Aktivität bestimmt.
+Die Zielgruppenbestimmung erfolgt mithilfe der **Abfrage**-Aktivität.
 
 Damit der Versand erst gestartet wird, wenn die Zielgruppenabfrage und die Aktualisierung des Inhalts abgeschlossen sind, wurde eine **Und-Verknüpfung** hinzugefügt.
 
@@ -201,7 +201,7 @@ In der ersten **Versanderstellungs**-Aktivität wird der Versand konfiguriert.
 
 Die Verzweigung ermöglicht die parallele Ausführung der Zielgruppenberechnung und der Erstellung der Inhaltsinstanz.
 
-Nach Abschluss dieser beiden Aktivitäten aktiviert die Und-Verknüpfung die **Versand**-Aktivität mit dem Inhalt und der Zielgruppe, die zuvor definiert wurden.
+Nach Abschluss dieser beiden Aktivitäten aktiviert die Und-Verknüpfung die **Versand**-Aktivität mit dem Inhalt und der Zielgruppenbestimmung, die zuvor definiert wurden.
 
 ![](assets/d_ncs_content_workflow11.png)
 
@@ -215,11 +215,13 @@ Die Aktivität endet mit der Vorbereitung und dem Start des Versands.
 
 ### Inhalt von FTP importieren {#importing-content-from-ftp}
 
-Wenn Ihr Versandinhalt in einer auf FTP- oder SFTP-Servern befindlichen HTML-Datei verfügbar ist, können Sie diesen Inhalt einfach in Adobe Campaign-Sendungen laden. In [diesem Beispiel](../../workflow/using/loading-delivery-content.md) wird dies näher erläutert.
+Wenn Ihr Versandinhalt in einer auf FTP- oder SFTP-Servern befindlichen HTML-Datei verfügbar ist, können Sie diesen Inhalt einfach in Adobe Campaign-Sendungen laden. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=de){target="_blank"}.
+
 
 ### Inhalt von Amazon Simple Storage Service-Connector (S3) importieren {#importing-content-from-amazon-simple-storage-service--s3--connector}
 
-Wenn Ihr Versandinhalt in Amazon Simple Storage Service (S3) Buckets verfügbar ist, können Sie diesen Inhalt einfach in Adobe Campaign-Sendungen laden. In [diesem Beispiel](../../workflow/using/loading-delivery-content.md) wird dies näher erläutert.
+Wenn Ihr Versandinhalt in Amazon Simple Storage Service (S3) Buckets verfügbar ist, können Sie diesen Inhalt einfach in Adobe Campaign-Sendungen laden. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=de){target="_blank"}.
+
 
 ## Halbautomatische Aktualisierung {#semi-automatic-update}
 
@@ -251,7 +253,7 @@ Die **GetAndTransform**-Methode muss unter dem **`<enter>`**-Element des **`<inp
 
 Die Aktualisierung der Inhaltsinstanz geschieht ausgehend vom im letzten Parameter angegebenen Pfad.
 
-**Beispiel**: Anhand des Schemas &quot;cus:Buch&quot; wird diese Funktion näher erläutert.
+**Beispiel**: Zur Veranschaulichung dieses Beispiels beginnen wir mit dem Schema „cus:book.
 
 Das Formular wird um ein Eingabefeld für die halbautomatische Aktualisierung ergänzt:
 
@@ -271,6 +273,6 @@ Das Formular wird um ein Eingabefeld für die halbautomatische Aktualisierung er
 
 Im Eingabefeld können Sie den Namen der abzurufenden Datei eingeben. Die URL basiert beispielsweise auf folgendem Namen: https://myserver.adobe.com/incomin/data.xml
 
-Das Format der abzurufenden Daten ist das gleiche wie im ersten Beispiel bezüglich der Workflow-Automatisation. Es wird erneut das dort erwähnte Stylesheet &quot;cus:Buch-workflow.xsl&quot; verwendet.
+Das Format der abzurufenden Daten ist das gleiche wie im ersten Beispiel bezüglich der Workflow-Automatisation. Wir verwenden das Stylesheet „cus:book-workflow.xsl“, das in diesem Beispiel gezeigt wird.
 
 Aus der Ausführung des Vorgangs resultiert die Aktualisierung der Inhaltsinstanz ausgehend vom Pfad &#39;.&#39;.

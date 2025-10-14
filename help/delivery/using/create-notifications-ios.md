@@ -7,16 +7,16 @@ role: User, Developer, Data Engineer
 hide: true
 hidefromtoc: true
 exl-id: 4520504a-0d9f-4ea7-a5a8-0c07948af4f0
-source-git-commit: 89e350c727fb9379d28916f79d9749f22fd4974f
-workflow-type: ht
-source-wordcount: '1070'
-ht-degree: 100%
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+workflow-type: tm+mt
+source-wordcount: '1079'
+ht-degree: 96%
 
 ---
 
 # Erstellen von Benachrichtigungen für iOS{#create-notifications-ios}
 
-In diesem Abschnitt werden die Elemente beschrieben, die für den Versand von iOS-Benachrichtigungen erforderlich sind. Allgemeine Methoden zur Versanderstellung finden Sie in [diesem Abschnitt](steps-about-delivery-creation-steps.md).
+In diesem Abschnitt werden die Elemente beschrieben, die für den Versand von iOS-Benachrichtigungen erforderlich sind. Allgemeine Konzepte zur Versanderstellung finden Sie in der [ zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}.
 
 Erstellen Sie zunächst einen neuen Versand:
 
@@ -34,7 +34,7 @@ Gehen Sie wie folgt vor, um eine Push-Benachrichtigung für iOS-Geräte zu erste
 
    >[!NOTE]
    >
-   >Die detaillierten Schritte zur Auswahl der Zielpopulation eines Versands finden Sie in [diesem Abschnitt](steps-defining-the-target-population.md).
+   >Der detaillierte Prozess zur Auswahl der Zielpopulation für einen Versand wird in diesem Abschnitt in der [Campaign v8-Dokumentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#target-population.){target="_blank"} beschrieben.
    >
    >Weitere Informationen zur Verwendung von Personalisierungsfeldern finden Sie in [diesem Abschnitt](about-personalization.md).
    >

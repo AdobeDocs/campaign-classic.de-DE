@@ -4,10 +4,10 @@ title: Datenschutz bei E-Mails in der Mail-App von Apple
 feature: Technote, Privacy, Privacy Tools
 description: Erfahren Sie, wie sich die Apple-Funktion zum Schutz der Privatsphäre bei E-Mails auf Ihre Kampagnen auswirken kann.
 exl-id: e044b35a-b49f-408a-900d-2afe8ff10212
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
 source-wordcount: '2105'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -94,7 +94,7 @@ In diesem Beispiel möchte ein Marketing-Experte ein Prämienangebot an die Empf
 
   ![](assets/identify-email-open-tracking-2.png)
 
-* Sie können einen vordefinierten Filter verwenden. [Weitere Informationen](../../workflow/using/creating-a-filter.md).
+* Sie können einen vordefinierten Filter verwenden. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html?lang=de){target="_blank"}.
 
   ![](assets/identify-email-open-tracking-3.png)
 

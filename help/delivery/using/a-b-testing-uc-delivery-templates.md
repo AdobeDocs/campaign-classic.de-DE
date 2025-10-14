@@ -6,16 +6,16 @@ role: User
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: A/B Testing
 exl-id: 77b3a906-b76e-49e1-b524-b6f1ae537259
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '104'
-ht-degree: 100%
+source-wordcount: '103'
+ht-degree: 71%
 
 ---
 
 # A/B-Tests: Versandvorlagen erstellen {#step-3--creating-two-delivery-templates}
 
-Erstellen Sie nun zwei Versandvorlagen, die jeweils in einem an die Aktivität **[!UICONTROL Aufspaltung]** angeschlossenen **[!UICONTROL E-Mail-Versand]** verwendet werden. Weiterführende Informationen finden Sie in diesem [Abschnitt](about-templates.md). Gehen Sie wie folgt vor:
+Erstellen Sie nun zwei Versandvorlagen. Jede Vorlage wird in einer mit der **[!UICONTROL Aufspaltung“ verknüpften]** E **[!UICONTROL Mail-Versand]** Aktivität referenziert. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=de){target="_blank"}.
 
 1. Gehen Sie im Navigationsbaum in den Ordner **[!UICONTROL Ressourcen > Versandvorlagen]**.
 1. Duplizieren Sie die Vorlage **[!UICONTROL E-Mail]**.

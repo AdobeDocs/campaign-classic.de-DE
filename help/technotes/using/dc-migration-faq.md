@@ -6,10 +6,10 @@ feature: Technote, Upgrade
 role: User
 level: Beginner
 exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '2225'
-ht-degree: 100%
+source-wordcount: '2226'
+ht-degree: 99%
 
 ---
 
@@ -21,7 +21,7 @@ Adobe nutzt das alte Rechenzentrum nicht länger: Campaign Classic-Instanzen mü
 
 Nachstehend finden Sie eine Reihe allgemeiner Fragen zu diesem Projekt und zu den Auswirkungen auf Ihre Campaign-Umgebungen sowie weitere nützliche Informationsquellen.
 
-Für alle anderen Fragen wenden Sie sich bitte an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/de?support-solution=Campaign&amp;lang=de#support).
+Für alle anderen Fragen wenden Sie sich bitte an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign&lang=de#support).
 
 ## Auswirkungen auf die Infrastruktur
 
@@ -51,7 +51,7 @@ Die globalen Auswirkungen auf die Datenbank und Infrastruktur sind nachstehend a
 
 * **Was ist der Plan zur Behebung von Problemen nach der Migration?**
 
-  Vor der Migration der Produktionssysteme sind umfangreiche Tests geplant. Bei Problemen bleibt die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/de?support-solution=Campaign#support) der Hauptansprechpartner. Adobe hat ein Experten-Team zusammengestellt, das bei Bedarf zusätzliche Unterstützung bietet.
+  Vor der Migration der Produktionssysteme sind umfangreiche Tests geplant. Bei Problemen bleibt die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign#support) der Hauptansprechpartner. Adobe hat ein Experten-Team zusammengestellt, das bei Bedarf zusätzliche Unterstützung bietet.
 
 ## Auswirkungen auf die Zustellbarkeit
 
@@ -97,7 +97,7 @@ Die globalen Auswirkungen auf IPs, Blockierungsliste, Subdomains und URLs sind u
 
   Zunächst prüft das Adobe-Zustellbarkeits-Team den Zustellbarkeitsstatus der Plattform und empfiehlt einen Plan für den Wechsel zu den neuen IPs.
 
-  Nach der Migration ist kein Warm-up erforderlich. Sollte jedoch in Ausnahmefällen ein Warm-up nötig sein, nimmt die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/de?support-solution=Campaign#support) Kontakt zu den jeweiligen Kunden auf.
+  Nach der Migration ist kein Warm-up erforderlich. Sollte jedoch in Ausnahmefällen ein Warm-up nötig sein, nimmt die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign&lang=de#support) Kontakt zu den jeweiligen Kunden auf.
 
   Es ist jedoch geplant, diesen Vorgang für Ihr Unternehmen transparent zu gestalten, anders als beim während des Go-Live erfolgten ursprünglichen Ramp-up.
 
@@ -173,7 +173,7 @@ Globale Auswirkungen auf die Konfiguration, die Konnektivität mit anderen Syste
 
   Sie kann sich je nach dem Standort des neuen Servers ändern. Die Kunden können jedoch ihre aktuelle Zeitzone beibehalten.
 
-  [Weitere Informationen](../../workflow/using/managing-time-zones.md) über die Zeitzonenverwaltung in Adobe Campaign Classic v7.
+  Weitere Informationen zur Zeitzonenverwaltung finden Sie in der [ zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/managing-time-zones.html){target="_blank"}.
 
 
 ## Sicherheit und Berechtigungen
@@ -225,7 +225,7 @@ Die Auswirkungen auf Berechtigungen, Zertifikate und SFTP-Zugriff sind unten auf
 
 Die globalen Auswirkungen während der Migration werden unten aufgeführt.
 
-* **Sollten Vorkehrungen getroffen werden, um die Marketing-Aktivitäten während der Migration einzustellen?**
+* **Sollten Vorkehrungen getroffen werden, um die Marketing-Aktivitäten während der Migration zu stoppen?**
 
   Adobe empfiehlt, die Ausführung von Sendungen und Workflows zu verlangsamen und im Idealfall anzuhalten, bevor die Anwendung im alten Rechenzentrum heruntergefahren wird. Auf diese Weise wird der Neustart auf dem Cloud-Server (AWS) vereinfacht, da die Prozesse ausreichend Zeit hatten, ordnungsgemäß zu pausieren und den aktuellen Ausführungsstatus zu speichern.
 

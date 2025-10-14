@@ -6,10 +6,10 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Deliverability
 role: User
 exl-id: f301b34c-244c-4279-b23f-8224ea8eedbe
-source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '654'
-ht-degree: 100%
+source-wordcount: '656'
+ht-degree: 99%
 
 ---
 
@@ -56,10 +56,10 @@ Adobe Campaign bietet verschiedene Tools zur Verfolgung und Verbesserung der Zus
 
 Befolgen Sie beim Konfigurieren, Entwerfen und Testen Ihrer Nachricht die in den folgenden Abschnitten aufgeführten Best Practices. Die Nutzung aller von Adobe Campaign bereitgestellten Funktionen hilft Ihnen, die Zustellbarkeit zu verbessern.
 
-* [Best Practices für den Versand](delivery-best-practices.md)
+* [Best Practices beim Versand](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/delivery-best-practices){target="_blank"}.
 * [Kontrollieren von E-Mail-Inhalten](control-message-content.md)
 * [Inbox Rendering](inbox-rendering.md)
-* [Durchführen eines Testversands](steps-validating-the-delivery.md#sending-a-proof)
+* [Testversand durchführen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}
 
 ### Einverständnis durch doppelten Opt-in überprüfen {#double-opt-in}
 

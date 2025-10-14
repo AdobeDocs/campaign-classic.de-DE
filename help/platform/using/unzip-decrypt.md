@@ -8,17 +8,17 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 1a79da3b-2abc-4bfc-a0ee-8471c478638d
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '724'
-ht-degree: 100%
+source-wordcount: '733'
+ht-degree: 92%
 
 ---
 
 
 # Entpacken oder Entschlüsseln von Dateien {#unzipping-or-decrypting-a-file-before-processing}
 
-Mit Adobe Campaign können Sie komprimierte oder verschlüsselte Dateien importieren. Damit diese in der Aktivität [Daten laden (Datei)](../../workflow/using/data-loading-file.md) gelesen werden können, definieren Sie eine Vorab-Bearbeitung, um die Datei zu dekomprimieren oder zu entschlüsseln.
+Mit Adobe Campaign können Sie komprimierte oder verschlüsselte Dateien importieren. Bevor sie in einer Aktivität vom Typ [Laden (Datei)) gelesen werden können](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html){target="_blank"} können Sie eine Vorverarbeitung definieren, um die Datei zu entpacken oder zu entschlüsseln.
 
 >[!IMPORTANT]
 >
@@ -51,8 +51,8 @@ Im folgenden Anwendungsfall wird ein Beispiel dargestellt.
 
 **Verwandte Themen:**
 
-* [Aktivität &quot;Laden (Datei)&quot;](../../workflow/using/data-loading-file.md).
-* [Komprimieren oder Verschlüsseln von Dateien](../../workflow/using/how-to-use-workflow-data.md#zipping-or-encrypting-a-file).
+* [Aktivität &quot;Laden (Datei)&quot;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html){target="_blank"}.
+* [Komprimieren oder Verschlüsseln von Dateien](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html){target="_blank"}.
 
 ## Anwendungsfall: Importieren von Daten, die mit einem vom Control Panel generierten Schlüssel verschlüsselt wurden {#use-case-gpg-decrypt}
 
@@ -82,9 +82,10 @@ Die Schritte zum Ausführen dieses Anwendungsfalls lauten wie folgt:
 
    ![](assets/gpg_key_transfer.png)
 
-   Globale Konzepte zur Konfiguration der Aktivität finden Sie in [diesem Abschnitt](../../workflow/using/file-transfer.md).
+   Allgemeine Konzepte zur Konfiguration der Aktivität finden Sie in der [ zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=de){target="_blank"}.
 
-1. Öffnen Sie die Aktivität **[!UICONTROL Laden (Datei)]** und konfigurieren Sie sie entsprechend Ihren Anforderungen. Globale Konzepte zur Konfiguration der Aktivität finden Sie in [diesem Abschnitt](../../workflow/using/data-loading-file.md).
+
+1. Öffnen Sie die Aktivität **[!UICONTROL Laden (Datei)]** und konfigurieren Sie sie entsprechend Ihren Anforderungen. Allgemeine Konzepte zur Konfiguration der Aktivität finden Sie in der [ zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html){target="_blank"}.
 
    Fügen Sie der Aktivität eine Vorab-Bearbeitungsetappe hinzu, um die eingehenden Daten zu entschlüsseln. Wählen Sie dazu aus der Dropdown-Liste **[!UICONTROL Befehl]** die Option **[!UICONTROL Datei vorab bearbeiten]** und dann **[!UICONTROL Entschlüsseln]** aus:
 
@@ -106,6 +107,6 @@ Die Schritte zum Ausführen dieses Anwendungsfalls lauten wie folgt:
 
 In diesem Video wird gezeigt, wie Daten mithilfe eines GPG-Schlüssels entschlüsselt werden.
 
->[!VIDEO](https://video.tv.adobe.com/v/41359?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/36482?quality=12)
 
 Weitere Anleitungsvideos zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).

@@ -7,10 +7,10 @@ audience: integrations
 content-type: reference
 topic-tags: asset-sharing
 exl-id: 30a94bce-6d96-4a6d-a62f-7451c822f0e3
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '232'
-ht-degree: 100%
+source-wordcount: '233'
+ht-degree: 99%
 
 ---
 
@@ -26,7 +26,7 @@ Freigegebene Assets der Adobe Experience Cloud können in E-Mails und Landingpag
 
 1. Wählen Sie im Bearbeitungsfenster die Option zum Einfügen eines Bilds aus:
 
-   * Wenn Sie sich im [Standard-Bearbeitungsmodus](../../delivery/using/defining-the-email-content.md#adding-images) befinden, wählen Sie aus der **[!UICONTROL Bild]**-Dropdown-Liste die Option **[!UICONTROL Freigegebenes Asset auswählen]** aus.
+   * Wenn Sie sich im [Standard-Bearbeitungsmodus](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#adding-images){target="_blank"} befinden, wählen Sie aus der **[!UICONTROL Bild]**-Dropdown-Liste die Option **[!UICONTROL Freigegebenes Asset auswählen]** aus.
 
      ![](assets/dam_insert_image_standard.png)
 

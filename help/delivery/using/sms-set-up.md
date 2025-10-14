@@ -6,10 +6,10 @@ feature: SMS
 role: User, Developer, Admin
 level: Experienced
 exl-id: a2783a5e-6d38-41a1-b5c6-24ab489116f8
-source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
-workflow-type: ht
-source-wordcount: '1841'
-ht-degree: 100%
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+workflow-type: tm+mt
+source-wordcount: '1838'
+ht-degree: 99%
 
 ---
 
@@ -76,7 +76,7 @@ Gehen Sie dazu wie folgt vor:
 
    Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](#about-character-transliteration).
 
-1. Im Tab **[!UICONTROL Durchsatz und Dauer]** können Sie den maximalen Durchsatz für ausgehende Nachrichten (&quot;MT&quot;, Mobile Terminated) festlegen. Bei Angabe von &quot;0&quot; im entsprechenden Feld ist der Durchsatz unbegrenzt.
+1. Auf der Registerkarte **[!UICONTROL Durchsatz und Dauer]** können Sie den maximalen Durchsatz für ausgehende Nachrichten (&quot;MT&quot;, Mobile Terminated) festlegen. Bei Angabe von &quot;0&quot; im entsprechenden Feld ist der Durchsatz unbegrenzt.
 
    Werte, die eine Dauer angeben, sind in Sekunden auszudrücken.
 
@@ -353,7 +353,7 @@ Die Schritte zum Einrichten eines externen Kontos mithilfe des Connectors „Erw
 
 ## Ändern der Versandvorlage {#changing-the-delivery-template}
 
-Adobe Campaign bietet Ihnen eine Vorlage für den Versand an Mobilgeräte. Diese Vorlage ist im Knoten **[!UICONTROL Ressourcen > Vorlagen > Versandvorlagen]** verfügbar. Weiterführende Informationen finden Sie im Abschnitt [Über Vorlagen](about-templates.md).
+Adobe Campaign bietet Ihnen eine Vorlage für den Versand an Mobilgeräte. Diese Vorlage ist im Knoten **[!UICONTROL Ressourcen > Vorlagen > Versandvorlagen]** verfügbar. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=de){target="_blank"}.
 
 Um den SMS-Kanal zu nutzen, muss in der Versandvorlage der entsprechende Connector angegeben werden.
 

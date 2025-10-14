@@ -6,10 +6,10 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: A/B Testing
 role: User
 exl-id: 6adf2e75-63b1-44ad-8925-03beb3bc0bdd
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '226'
-ht-degree: 100%
+source-wordcount: '240'
+ht-degree: 83%
 
 ---
 
@@ -17,13 +17,13 @@ ht-degree: 100%
 
 In diesem Abschnitt wird beschrieben, wie Sie einen Workflow zum Durchführen von A/B-Tests erstellen.
 
-1. Erstellen Sie einen neuen Workflow und konfigurieren Sie dann eine [Abfrageaktivität](../../workflow/using/query.md), um die gewünschte Population zu erfassen.
+1. Erstellen Sie einen neuen Workflow und konfigurieren Sie dann eine Abfrage -Aktivität, um die gewünschte Population anzusprechen. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=de){target="_blank"}.
 
-1. Fügen Sie eine [Aufspaltungsaktivität](../../workflow/using/split.md) hinzu, um die Zielpopulation in mehrere Untermengen zu unterteilen.
+1. Fügen Sie die Aktivität Aufspaltung hinzu, um die Zielpopulation in mehrere Teilmengen zu unterteilen. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html){target="_blank"}.
 
 1. Öffnen Sie die Aktivität und konfigurieren Sie dann die einzelnen Untermengen entsprechend Ihren Anforderungen. Weitere Informationen zur Konfiguration einer **[!UICONTROL Aufspaltungsaktivität]** finden Sie in [diesem Abschnitt](../../workflow/using/split.md).
 
-   In diesem Beispiel möchten wir zwei neue Themen für einen Newsletter testen, indem wir sie jeweils 10 % der Zielgruppe präsentieren.
+   In diesem Beispiel möchten wir zwei neue Themen für einen Newsletter testen, indem wir sie jeweils 10 % der Zielpopulation präsentieren.
 
    ![](assets/ab-testing-split.png)
 

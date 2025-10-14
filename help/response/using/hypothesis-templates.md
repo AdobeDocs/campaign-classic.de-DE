@@ -8,10 +8,10 @@ audience: campaign
 content-type: reference
 topic-tags: response-manager
 exl-id: 428c7677-454b-4618-bae7-0be7df6dfcaa
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1516'
-ht-degree: 100%
+source-wordcount: '1519'
+ht-degree: 98%
 
 ---
 
@@ -59,13 +59,13 @@ Im Tab **[!UICONTROL Allgemein]** der Vorlage werden die allgemeinen Optionen de
   >
   >Wenn die Vorlage sich auf Angebote bezieht, wird die Option **[!UICONTROL Vorschlagsstatus aktualisieren]** im Tab **[!UICONTROL Transaktionen]** verfügbar.
 
-* **[!UICONTROL Messung mit Kontrollgruppe]**: Aktivieren Sie diese Option, wenn eine Kontrollgruppe für den jeweiligen Versand oder die jeweilige Kampagne erstellt wurde und diese in den Messindikatoren berücksichtigt werden soll. Die Kontrollgruppe erhält keine Sendungen: Sie dient der Messung der Auswirkung dieser durch den Vergleich mit dem Verhalten der Zielgruppe, die die Sendungen erhält.
+* **[!UICONTROL Messung mit Kontrollgruppe]**: Aktivieren Sie diese Option, wenn eine Kontrollgruppe für den jeweiligen Versand oder die jeweilige Kampagne erstellt wurde und diese in den Messindikatoren berücksichtigt werden soll. Die Kontrollgruppe erhält keine Sendungen: Sie dient der Messung der Auswirkung dieser durch den Vergleich mit dem Verhalten der Zielpopulation, die die Sendungen erhält.
 
   >[!NOTE]
   >
   >Wenn die Konfiguration der Vorlage eine Kontrollgruppe vorsieht, jedoch keine in dem Versand bestimmt ist, auf den sich die Hypothesen beziehen, werden die Ergebnisse nur auf Grundlage der Zielgruppen-Empfänger berechnet.
 
-  Die Bestimmung und Konfiguration von Kontrollgruppen werden in [diesem Abschnitt](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group) beschrieben.
+  Weitere Informationen zum Definieren und Konfigurieren einer Kontrollgruppe finden Sie in der [ zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html#add-a-control-group){target=_blank}.
 
 * **[!UICONTROL Kanal]**: Sie können einen bestimmten Kanal auswählen oder die Hypothese-Vorlage für alle Kanäle in der Adobe Campaign-Konsole verfügbar machen, indem Sie in der Dropdown-Liste **[!UICONTROL Alle Kanäle]** auswählen. Wenn Sie die Vorlage für einen bestimmten Kanal konfigurieren, können die Sendungen bei der Hypothesenerstellung automatisch nach Kanal gefiltert werden. [Weitere Informationen](creating-hypotheses.md)   
 
@@ -118,12 +118,12 @@ Im Tab **[!UICONTROL Allgemein]** der Vorlage können zudem die Ausführungspara
 Dieser Tab enthält Felder und Tabellen, mithilfe derer Sie den Verlauf der Empfängerreaktionen bei Transaktionen speichern können. Weiterführende Informationen zu den für die Reaktionsverwaltung verwendeten Tabellen finden Sie in diesem [Abschnitt](../../configuration/using/about-schema-reference.md).
 
 * **[!UICONTROL Schema (Speicherung des Reaktionslogs)]**: Wählen Sie die Empfängerreaktionstabelle aus. Die standardmäßige Adobe Campaign-Tabelle hierfür ist **NmsRemaMatchRcp**.
-* **[!UICONTROL Transaktionsschema]**: Wählen Sie die Tabelle aus, auf die sich die Hypothesen beziehen sollen (also die die Bestellungen enthaltende Transaktionstabelle).
+* **[!UICONTROL Transaktionsschema]**: Wählen Sie die Tabelle aus, auf die sich die Hypothesen beziehen sollen (also die die Käufe enthaltende Transaktionstabelle).
 * **[!UICONTROL Abfrageschema]**: Wählen Sie Kriterien zur Filterung der Hypothese aus.
 * **[!UICONTROL Relation zu den Individuen]**: Geben Sie die Relation zwischen den Individuen und der als Transaktionschema ausgewählten Tabelle an.
 * **[!UICONTROL Relation zum Haushalt]**: Wählen Sie die Relation mit dem Haushalt im Transaktionsschema aus, wenn Sie alle Mitglieder eines Haushalts in Ihre Hypothese integrieren möchten. Dieses Feld ist optional.
 * **[!UICONTROL Transaktionsdatum]**: Dieses Feld ist optional. Seine Nutzung wird jedoch empfohlen, da es die Begrenzung des Perimeters der Hypothesenberechnung ermöglicht.
-* **[!UICONTROL Zeitraum der Hypothesenberechnung]**: Sie können Anfang und Ende des Zeitraums konfigurieren, während dem die Hypothesen ausgeführt und die Bestellzeilen abgerufen werden.
+* **[!UICONTROL Zeitraum der Hypothesenberechnung]**: Sie können Start- und Enddatum des Zeitraums konfigurieren, während dem die Hypothesen ausgeführt und die Bestellzeilen abgerufen werden.
 
   Wenn eine Hypothese einem Versand zugeordnet wird, wird die Messung automatisch einige Tage nach dem Kontaktdatum (im Fall eines Briefpost-Versands) oder nach dem Versanddatum (im Fall eines E-Mail- oder SMS-Versands) ausgelöst.
 
@@ -185,7 +185,7 @@ Nachdem die Transkationstabelle sowie die von der Hypothese betroffenen Felder d
 
 ## Beispiel: Erstellen einer Hypothesenvorlage für einen Versand {#example--creating-a-hypothesis-template-on-a-delivery}
 
-Im folgenden Beispiel wird eine Hypothesenvorlage für einen Briefpost-Versand erstellt. Die Transaktionstabelle (**Bestellungen** in unserem Beispiel), auf welcher die Hypothesen basieren, enthält Bestellzeilen, denen Produkte zugeordnet sind. Die Vorlage wird so konfiguriert, dass die Hypothesen sich auf eben diese Produkte bezieht.
+Im folgenden Beispiel wird eine Hypothesenvorlage für einen Briefpost-Versand erstellt. Die Transaktionstabelle (**Käufe** in unserem Beispiel), auf welcher die Hypothesen basieren, enthält Bestellzeilen, denen Produkte zugeordnet sind. Die Vorlage wird so konfiguriert, dass die Hypothesen sich auf eben diese Produkte bezieht.
 
 1. Positionieren Sie sich im Knoten **[!UICONTROL Ressourcen > Vorlagen > Hypothesenvorlagen]** des Adobe Campaign-Explorers.
 1. Klicken Sie auf **[!UICONTROL Neu]**, um eine Vorlage zu erstellen.
@@ -202,13 +202,13 @@ Im folgenden Beispiel wird eine Hypothesenvorlage für einen Briefpost-Versand e
 
    >[!NOTE]
    >
-   >Da die Vorlage briefversandspezifisch ist, können die basierend auf dieser Vorlage erstellten Hypothesen keinen Sendungen zugeordnet werden, die andere Kanäle nutzen.
+   >Da die Vorlage briefpostspezifisch ist, können die basierend auf dieser Vorlage erstellten Hypothesen keinen Sendungen zugeordnet werden, die andere Kanäle nutzen.
 
 1. Geben Sie im Tab **[!UICONTROL Transaktionen]** die Empfängerreaktionen-Tabelle an.
 
    ![](assets/response_hypothesis_model_example_006.png)
 
-1. Wählen Sie im Feld **[!UICONTROL Transaktionsschema]** Ihre die Bestellung enthaltende Transaktionstabelle aus.
+1. Wählen Sie im Feld **[!UICONTROL Transaktionsschema]** Ihre den Kauf enthaltende Transaktionstabelle aus.
 
    ![](assets/response_hypothesis_model_example_007.png)
 
@@ -216,11 +216,11 @@ Im folgenden Beispiel wird eine Hypothesenvorlage für einen Briefpost-Versand e
 
    ![](assets/response_hypothesis_model_example_008.png)
 
-1. Wählen Sie die Empfänger aus, die mit der Tabelle der Bestellungen in Relation stehen.
+1. Wählen Sie die Empfänger aus, die mit der Tabelle der Käufe in Relation stehen.
 
    ![](assets/response_hypothesis_model_example_009.png)
 
-1. Wählen Sie das dem Bestelldatum entsprechende Feld aus, um die Hypothesen zeitlich zu beschränken.
+1. Wählen Sie das dem Kaufdatum entsprechende Feld aus, um die Hypothesen zeitlich zu beschränken.
 
    Diese Etappe ist nicht zwingend erforderlich, sie wird jedoch empfohlen.
 
@@ -234,6 +234,6 @@ Im folgenden Beispiel wird eine Hypothesenvorlage für einen Briefpost-Versand e
 
    ![](assets/response_hypothesis_model_example_011.png)
 
-   Die auf diese Weise erstellte Vorlage ermöglicht es Ihnen, Hypothesen für in Ihrer Bestellungen-Tabelle enthaltene Produkte zu erstellen.
+   Die auf diese Weise erstellte Vorlage ermöglicht es Ihnen, Hypothesen für in Ihrer Käufe-Tabelle enthaltene Produkte zu erstellen.
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Erstellung der Vorlage zu beenden.

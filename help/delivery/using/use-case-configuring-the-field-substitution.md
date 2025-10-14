@@ -5,10 +5,10 @@ description: 'Anwendungsbeispiel: Konfigurieren der Feld-Ersetzung'
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Seed Address
 exl-id: 3f567b2d-6f98-4831-af84-7db17fd12c6e
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '463'
-ht-degree: 100%
+source-wordcount: '462'
+ht-degree: 97%
 
 ---
 
@@ -33,7 +33,7 @@ Zur Verwendung der zufälligen Wertersetzung benötigen Sie:
 
 ## Erstellen eines Versands {#step-1---creating-a-delivery}
 
-Die Schritte zum Erstellen eines Versands finden Sie im Abschnitt [Erstellen eines E-Mail-Versands](creating-an-email-delivery.md).
+Die Schritte zum Erstellen eines Versands werden in der Dokumentation zu [ v8 ](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/emails/email){target="_blank"}.
 
 Im vorliegenden Beispiel wurde vom Versand-Manager der unten gezeigte Newsletter erstellt.
 
@@ -50,7 +50,7 @@ Im vorliegenden Beispiel übernimmt das Testadressen-Schema einen im Datenschema
                type="string" userEnum="favoriteLiteraryGenre"/>
 ```
 
-Diese Auflistung ermöglicht es dem Benutzer, das bevorzugte literarische Genre der Kunden anzugeben.
+Diese Aufzählung ermöglicht es dem Benutzer, das bevorzugte literarische Genre der Kunden anzugeben.
 
 Damit diese Änderung des Datenschemas im **Eingabeformular** für Testadressen angezeigt werden kann, müssen Sie es aktualisieren. Weitere Informationen finden Sie im Abschnitt [Aktualisieren des Eingabeformulars](use-case-selecting-seed-addresses-on-criteria.md#updating-the-input-form).
 
@@ -64,7 +64,7 @@ Damit diese Änderung des Datenschemas im **Eingabeformular** für Testadressen 
 
 1. Konfigurieren Sie Ihre Versandliste und die Testadressen. Siehe [Identifizieren von Zielpopulationen](steps-defining-the-target-population.md).
 
-   Im vorliegenden Beispiel soll der Versand an alle Kunden mit dem bevorzugten Genre **Science-Fiction** adressiert werden.
+   Im vorliegenden Beispiel soll der Versand an alle Kunden mit dem bevorzugten Genre **Science-Fiction** als Haupt-Zielpopulation adressiert werden.
 
    ![](assets/dlv_seeds_usecase_26.png)
 

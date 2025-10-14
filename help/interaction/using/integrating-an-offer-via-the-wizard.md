@@ -7,10 +7,10 @@ audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
 exl-id: 64aea8b9-7f06-4db0-a3e6-6a0e17c3ddcb
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '845'
-ht-degree: 100%
+source-wordcount: '849'
+ht-degree: 97%
 
 ---
 
@@ -29,7 +29,7 @@ Um ein Angebot während einer Marketing-Kampagne zu präsentieren, erstellen Sie
 
 ![](assets/offer_delivery_009.png)
 
-Weitere Informationen zum Briefpost-Versand finden Sie [in diesem Abschnitt](../../delivery/using/about-direct-mail-channel.md). Weiterführende Informationen zu Marketing-Kampagnen finden Sie in [diesem Abschnitt](../../campaign/using/setting-up-marketing-campaigns.md).
+Weitere Informationen zum Briefpost-Versand finden Sie [in diesem Abschnitt](../../delivery/using/about-direct-mail-channel.md). Weitere Informationen zu Marketing-Kampagnen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=de){target=_blank}.
 
 ### Angebote in Sendungen einschließen {#main-steps-for-inserting-an-offer-into-a-delivery}
 
@@ -90,7 +90,7 @@ Die Nachrichtenpersonalisierung kann entweder über Felder des Angebots oder im 
 
 Eine weitere Möglichkeit ist die Verwendung von Versandentwürfen, um im Zuge von Kampagnen Angebote zu unterbreiten.
 
-Weiterführende Informationen zu Versandentwürfen können Sie dem [Campaign](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline)-Handbuch entnehmen.
+Weitere Informationen zu Versandentwürfen finden Sie in der [ zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-assets#delivery-outlines.html){target="_blank"}.
 
 1. Erstellen Sie eine neue oder öffnen Sie eine existierende Kampagne.
 1. Versandentwürfe sind im Tab **[!UICONTROL Bearbeiten]** > **[!UICONTROL Dokumente]** der Kampagne zugänglich.

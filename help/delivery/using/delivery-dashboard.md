@@ -6,10 +6,10 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Monitoring
 role: User, Data Engineer
 exl-id: 44ecc8c6-6584-43eb-96b4-7d8463053123
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1255'
-ht-degree: 100%
+source-wordcount: '1262'
+ht-degree: 96%
 
 ---
 
@@ -35,7 +35,7 @@ Die folgenden Informationen können Sie mit den verschiedenen Tabs im Dashboard 
 
 * [Ursachen von fehlgeschlagenen Sendungen](understanding-delivery-failures.md)
 * [Funktionsweise der Quarantäneverwaltung](understanding-quarantine-management.md)
-* [Best Practices beim Versand](delivery-best-practices.md)
+* [Best Practices beim Versand](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/delivery-best-practices){target="_blank"}
 * [Verwalten der Zustellbarkeit](about-deliverability.md)
 
 ## Versandzusammenfassung {#delivery-summary}
@@ -64,17 +64,17 @@ Sie haben die Möglichkeit, beispielsweise nur fehlgeschlagene Zustellversuche a
 
 Mit dem Link **[!UICONTROL Mirrorseite für diese Nachricht anzeigen...]** können Sie die Mirrorseite für den Inhalt des aus der Liste ausgewählten Versands in einem neuen Fenster anzeigen.
 
-Die Mirrorseite steht nur für Sendungen zur Verfügung, für die HTML-Inhalte definiert wurden. Weitere Informationen finden Sie unter [Mirrorseite erstellen](sending-messages.md#generating-the-mirror-page).
+Die Mirrorseite steht nur für Sendungen zur Verfügung, für die HTML-Inhalte definiert wurden. Weitere Informationen hierzu finden Sie in der [ zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/emails/mirror-page){target="_blank"}.
 
 ![](assets/s_ncs_user_wizard_miror_page_link.png)
 
 ## Versandverfolgungslogs und -verlauf {#tracking-logs}
 
-Im **[!UICONTROL Tracking]**-Tab wird der Tracking-Verlauf des Versands angezeigt. Hier werden die Tracking-Informationen bezüglich aller von Adobe Campaign gesendeten Nachrichten, d. h. alle getrackten URLs gelistet. Tracking-Informationen werden stündlich aktualisiert.
+Auf der Registerkarte **[!UICONTROL Tracking]** wird der Tracking-Verlauf für den vorliegenden Versand angezeigt. Auf dieser Registerkarte werden Tracking-Daten zu den gesendeten Nachrichten angezeigt, d. h. zu allen von Adobe Campaign getrackten URLs. Die Tracking-Daten werden stündlich aktualisiert.
 
 >[!NOTE]
 >
->Sollte das Tracking für einen Versand nicht aktiviert worden sein, wird dieser Tab nicht angezeigt.
+>Wenn das Tracking für einen Versand nicht aktiviert ist, wird diese Registerkarte nicht angezeigt.
 
 Die Tracking-Konfiguration erfolgt im entsprechenden Schritt im Versandassistenten. Siehe [Getrackte Links konfigurieren](how-to-configure-tracked-links.md).
 
@@ -98,7 +98,7 @@ Der Tab **[!UICONTROL Audit]** enthält das Versandlog und alle Meldungen zu den
 
 Mit der Schaltfläche **[!UICONTROL Aktualisieren]** können Sie die Daten aktualisieren. Verwenden Sie die Schaltfläche **[!UICONTROL Filter]**, um einen Filter für die Daten zu definieren.
 
-Eventuelle Fehler oder Warnmeldungen werden durch spezifische Symbole hervorgehoben. Siehe [Versand analysieren](steps-validating-the-delivery.md#analyzing-the-delivery).
+Eventuelle Fehler oder Warnmeldungen werden durch spezifische Symbole hervorgehoben. Weitere Informationen finden Sie in diesem Abschnitt in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html){target="_blank"}.
 
 Ein Untertab listet die durchgeführten **[!UICONTROL Testsendungen]** auf.
 
@@ -112,7 +112,7 @@ Im Versand-Dashboard können Sie anhand der verarbeiteten Nachrichten und der Ve
 
 Manche Indikatoren oder Status können falsch oder nicht aktuell sein. Gehen Sie zur Behebung dieses Problems wie folgt vor:
 
-* Wenn der Versandstatus falsch angezeigt wird, vergewissern Sie sich, dass alle nötigen Validierungen für diesen Versand durchgeführt wurden und die Workflows **[!UICONTROL operationMgt]** und **[!UICONTROL deliveryMgt]** problemlos ablaufen. Dieses Problem kann auch auftreten, wenn vom Versand eine Affinität verwendet wird, die in der Sendeinstanz nicht konfiguriert wurde.
+* Wenn der Versandstatus falsch angezeigt wird, vergewissern Sie sich, dass alle nötigen Validierungen für diesen Versand durchgeführt wurden und die Workflows **[!UICONTROL operationMgt]** und **[!UICONTROL deliveryMgt]** fehlerfrei ablaufen. Dieses Problem kann auch auftreten, wenn vom Versand eine Affinität verwendet wird, die in der Sendeinstanz nicht konfiguriert wurde.
 
 * Wenn Ihre Versandindikatoren noch null anzeigen und eine Mid-Sourcing-Konfiguration verwendet wird, überprüfen Sie den technischen Workflow **[!UICONTROL Mid-Sourcing (Versandzähler)]**. Starten Sie ihn, wenn sein Status nicht **[!UICONTROL Gestartet]** lautet. Sie können dann die Indikatoren neu berechnen lassen, indem Sie mit der rechten Maustaste den entsprechenden Versand im Adobe Campaign-Explorer und danach **[!UICONTROL Aktionen]** > **[!UICONTROL Sende- und Berichtindikatoren neu berechnen...]** auswählen. Weiterführende Informationen zu Tracking-Indikatoren finden Sie in diesem [Abschnitt](../../reporting/using/delivery-reports.md#tracking-indicators).
 

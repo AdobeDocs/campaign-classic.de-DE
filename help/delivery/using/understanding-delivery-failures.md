@@ -6,10 +6,10 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Monitoring, Deliverability
 role: User
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
-source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '2618'
-ht-degree: 100%
+source-wordcount: '2629'
+ht-degree: 99%
 
 ---
 
@@ -188,9 +188,9 @@ Wenn die Zustellung vorübergehend wegen eines **Softbounce** oder eines **ignor
 >
 >Bei gehosteten oder hybriden Installationen werden die Einstellungen für den erneuten Versuch im Versand nicht mehr von Campaign verwendet, wenn Sie auf den [Enhanced MTA](sending-with-enhanced-mta.md) aktualisiert haben. Weitere Zustellversuche aufgrund von Softbounces sowie die Zeitdauer zwischen ihnen werden durch den Enhanced MTA bestimmt, basierend auf Typ und Prioritätsstufe der Bounce-Antworten, die von der E-Mail-Domain der Nachricht zurückgegeben werden.
 
-Gehen Sie bei On-Premise-Installationen und gehosteten/hybriden Installationen mit dem bestehenden Campaign-MTA zum Ändern der Versandlaufzeit zu den erweiterten Parametern des Versands oder der Versandvorlage und geben Sie die gewünschte Laufzeit in das entsprechende Feld ein. Weitere Informationen finden Sie unter [Gültigkeitszeitraum bestimmen](steps-sending-the-delivery.md#defining-validity-period).
+Gehen Sie bei On-Premise-Installationen und gehosteten/hybriden Installationen mit dem bestehenden Campaign-MTA zum Ändern der Versandlaufzeit zu den erweiterten Parametern des Versands oder der Versandvorlage und geben Sie die gewünschte Laufzeit in das entsprechende Feld ein. Siehe diese [Seite](communication-channels.md) unter **Versand** > **Gültigkeitszeitraum definieren**.
 
-Standardmäßig sind innerhalb der ersten 24 Stunden fünf Versuche im Abstand von mindestens einer Stunde vorgesehen, an den vier folgenden Tagen je ein Versuch. Die Anzahl weiterer Versuche kann global (kontaktieren Sie Ihren technischen Adobe-Administrator) oder einzeln für jeden Versand oder jede Versandvorlage geändert werden. Siehe [Konfigurieren von weiteren Zustellversuchen](steps-sending-the-delivery.md#configuring-retries).
+Standardmäßig sind innerhalb der ersten 24 Stunden fünf Versuche im Abstand von mindestens einer Stunde vorgesehen, an den vier folgenden Tagen je ein Versuch. Die Anzahl weiterer Versuche kann global (kontaktieren Sie Ihren technischen Adobe-Administrator) oder einzeln für jeden Versand oder jede Versandvorlage geändert werden. Weitere Informationen finden [ auf ](communication-channels.md) Seite unter **Versand** > **Weitere Zustellversuche konfigurieren**.
 
 ## Synchrone und asynchrone Fehler     {#synchronous-and-asynchronous-errors}
 

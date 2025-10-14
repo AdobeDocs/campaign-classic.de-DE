@@ -7,10 +7,10 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 0188c3fe-8176-4904-8505-c47a72c20fcc
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '130'
-ht-degree: 100%
+source-wordcount: '144'
+ht-degree: 67%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 Die Konzeption eines Versands umfasst folgende Schritte:
 
-1. **Versand erstellen und identifizieren** – [mehr dazu](steps-create-and-identify-the-delivery.md)
+1. **Versand erstellen und identifizieren** – Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/create-message#create-the-delivery){target="_blank"}.
 
 1. **Versandinhalt festlegen**. Die Definition des Versandinhalts erfolgt für jeden Kanal einzeln. Weiterführende Informationen dazu finden Sie im entsprechenden Abschnitt:
 
@@ -27,7 +27,7 @@ Die Konzeption eines Versands umfasst folgende Schritte:
    * [Briefpost-Kanal](defining-the-direct-mail-content.md)
    * [Mobile-App-Kanal](about-mobile-app-channel.md)
 
-1. **Zielpopulation bestimmen** – [mehr dazu](steps-defining-the-target-population.md)
+1. **Zielpopulation bestimmen** – Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message#target-population.html){target="_blank"}.
 
 1. **Versand senden** – [mehr dazu](steps-sending-the-delivery.md)
 
@@ -35,4 +35,4 @@ Die Konzeption eines Versands umfasst folgende Schritte:
 
 >[!NOTE]
 >
->Die in diesem Kapitel beschriebenen Schritte setzen voraus, dass alle Empfänger und deren Profile in einer Datenbank gespeichert sind, außer bei externen Sendungen (siehe [Externe Empfänger auswählen](steps-defining-the-target-population.md#selecting-external-recipients)).
+>Bei den in diesem Kapitel beschriebenen Schritten wird davon ausgegangen, dass alle Zielgruppenempfängerinnen und -empfänger und ihre Profile in der Datenbank gespeichert werden. Eine Ausnahme bildet der externe Versand (siehe die [ zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#selecting-external-recipients){target="_blank"}.

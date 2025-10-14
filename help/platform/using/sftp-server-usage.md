@@ -8,10 +8,10 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: d585a5d4-ea33-43c8-aa37-4d892025374a
-source-git-commit: b8a6a0db27826309456c285c08d4f1d85de70283
-workflow-type: ht
-source-wordcount: '1086'
-ht-degree: 100%
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+workflow-type: tm+mt
+source-wordcount: '1087'
+ht-degree: 98%
 
 ---
 
@@ -43,9 +43,9 @@ Um solche Probleme zu vermeiden, empfiehlt Adobe, die unten stehenden Best Pract
 
 >[!NOTE]
 >
->* Sie können den SFTP-Server-Speicher mit dem [Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html?lang=de){target="_blank"} von Campaign Classic überwachen.
+>* Sie können den SFTP-Server-Speicher mit dem Campaign Classic [Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html?lang=de){target="_blank"} überwachen.
 >
->* Das Control Panel steht allen Admins zur Verfügung. Die Schritte, um Benutzenden Administratorzugriff zu gewähren, finden Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=de#discover-control-panel){target="_blank"}.
+>* Das Control Panel steht allen Administratoren zur Verfügung. Die Schritte, um einem Benutzer Administratorzugriff zu gewähren, finden Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=de#discover-control-panel){target="_blank"}.
 >
 >* Beachten Sie, dass Ihre Instanz mit der [aktuellen GA-Version](../../rn/using/rn-overview.md) aktualisiert sein muss. Erfahren Sie in [diesem Abschnitt](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version){target="_blank"}, wie Sie Ihre Version überprüfen.
 
@@ -132,7 +132,7 @@ Dieser Fehler gibt an, dass der Domain-Name des FTP-Servers nicht ordnungsgemä�
 
 1. Fehlerbehebung bei **Sitzungsprotokollen**:
 
-   1. Doppelklicken Sie im Workflow auf die Aktivität [Dateiübertragung](../../workflow/using/file-transfer.md).
+   1. Doppelklicken Sie im Workflow auf die Aktivität [Dateiübertragung](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=de){target="_blank"}.
    1. Wechseln Sie zur Registerkarte **[!UICONTROL Dateiübertragung]** und klicken Sie dann auf **[!UICONTROL Erweiterte Parameter]**.
    1. Aktivieren Sie die Option **[!UICONTROL Sitzungsprotokolle anzeigen]**.
 

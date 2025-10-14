@@ -6,10 +6,10 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Inbox Rendering, Monitoring, Email Rendering
 role: User
 exl-id: a3294e70-ac96-4e51-865f-b969624528ce
-source-git-commit: 9b93603a076b007d66aad52b05e560e17e316eeb
-workflow-type: ht
-source-wordcount: '887'
-ht-degree: 100%
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+workflow-type: tm+mt
+source-wordcount: '896'
+ht-degree: 96%
 
 ---
 
@@ -31,7 +31,7 @@ Die für das **Inbox Rendering** in Adobe Campaign verfügbaren Clients für Mob
 
 >[!NOTE]
 >
->Zum Testen der Personalisierung in Sendungen ist kein Inbox Rendering nötig. Die Personalisierung kann auch mit Adobe Campaign-Tools, z. B. der **[!UICONTROL Vorschau]** und [Testsendungen](steps-validating-the-delivery.md#sending-a-proof), überprüft werden.
+>Zum Testen der Personalisierung in Sendungen ist kein Inbox Rendering nötig. Personalization kann mit Adobe Campaign-Tools wie &quot;**[!UICONTROL &quot;]** „Testsendungen“ überprüft werden. Siehe die [Campaign v8-Dokumentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}.
 
 ## Inbox Rendering aktivieren{#activating-inbox-rendering}
 
@@ -107,7 +107,7 @@ Weiterführende Informationen zur Erstellung, Konzeption und Ausrichtung eines V
 
    ![](assets/s_tn_inbox_rendering_button.png)
 
-   Ein Testversand wird durchgeführt. Die Rendering-Miniaturansichten können wenige Minuten nach dem Versand der E-Mails in diesem Testversand aufgerufen werden. Weiterführende Informationen dazu finden Sie in [diesem Abschnitt](steps-validating-the-delivery.md#sending-a-proof).
+   Ein Testversand wird durchgeführt. Die Rendering-Miniaturansichten können wenige Minuten nach dem Versand der E-Mails in diesem Testversand aufgerufen werden. Weiterführende Informationen zum Testversand finden Sie in der [ zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}.
 
 1. Nach dem Absenden erscheint der Testversand in der Versandliste. Dort kann er durch einen Doppelklick geöffnet werden.
 

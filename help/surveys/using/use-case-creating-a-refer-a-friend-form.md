@@ -5,10 +5,10 @@ description: Lernen Sie die Schritte zum Erstellen eines Freundschaftswerbungsfo
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Surveys
 exl-id: bd94c41a-813a-4ddb-a2bd-c3deab022482
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '633'
-ht-degree: 100%
+source-wordcount: '635'
+ht-degree: 95%
 
 ---
 
@@ -34,7 +34,7 @@ Um den Freunde-Werben-Bereich zu konfigurieren und zu erstellen, gehen Sie folge
 
    >[!NOTE]
    >
-   >Solange der Angeworbene noch nicht sein Einverständnis gegeben hat, können Sie ihn nicht gemeinsam mit den Werbern in der Datenbank speichern. Er wird deshalb vorübergehend in der **Besuchertabelle** gespeichert (**nms:visitor**), die für Viral-Marketing-Kampagnen verwendet wird. Diese Tabelle wird regelmäßig durch **Bereinigungsprozesse** geleert.
+   >Solange der Angeworbene noch nicht sein Einverständnis gegeben hat, können Sie ihn nicht gemeinsam mit den Werbern in der Datenbank speichern. Sie werden vorübergehend in der für virale Marketing-Kampagnen **Besucher** Tabelle (**nms:visitor**) gespeichert. Diese Tabelle wird regelmäßig durch **Bereinigungsprozesse** geleert.
    >
    >In diesem Beispiel möchten wir Angeworbene dazu bewegen, an dem von den Werbern empfohlenen Gewinnspiel teilzunehmen. Zusätzlich möchten wir ihnen ein Abonnement für eines unserer Informationsdienste anbieten. Wenn sie sich dazu anmelden, können sie in der Datenbank gespeichert werden.
 
@@ -88,7 +88,7 @@ Um den Freunde-Werben-Bereich zu konfigurieren und zu erstellen, gehen Sie folge
 
    >[!NOTE]
    >
-   >Weiterführende Informationen zu Versandvorlagen finden Sie auf [dieser Seite](../../delivery/using/about-templates.md).
+   >Weitere Informationen zu Versandvorlagen finden [ in der ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=de){target="_blank"} zu Campaign v8 .
 
 1. Erstellen Sie das zweite Skript zur Bereitstellung der Abonnement-Nachrichten.
 

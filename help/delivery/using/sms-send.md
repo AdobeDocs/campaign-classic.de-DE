@@ -5,10 +5,10 @@ description: Erfahren Sie, wie Sie SMS in Campaign senden, überwachen und verfo
 feature: SMS
 role: User
 exl-id: 442672ee-5037-49b7-a06f-3a99920ce2b6
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
-workflow-type: ht
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+workflow-type: tm+mt
 source-wordcount: '895'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -81,8 +81,6 @@ Das Modul **nlserver sms** ruft in regelmäßigen Abständen den Verarbeitungsfo
   > * ein SMS-Konto nur mit einem externen Konto verknüpft sein darf, damit die Empfangsbestätigungen korrekt zugeordnet werden können
 
 * **Abmeldung**: Empfangende, die keine SMS-Sendungen mehr erhalten möchten, können eine Nachricht mit dem Wort STOP zurückgeben. Wenn es Ihr Providervertrag vorsieht, können Sie diese Nachrichten mithilfe der Workflow-Aktivität **SMS-Empfang** abrufen. Dies ermöglicht die Erstellung einer Abfrage, die die Option **Diese Person nicht mehr kontaktieren** für die entsprechenden Empfänger aktiviert.
-
-  Nähere Informationen hierzu finden Sie im [Workflows](../../workflow/using/architecture.md)-Handbuch.
 
 ## InSMS-Schema {#insms-schema}
 
@@ -169,4 +167,4 @@ Der Absendername für diese Art von Nachrichten besteht aus einer kurzen Nummer 
 >
 >Für diese Arten von Benachrichtigungen wird kein Verlauf erstellt. Sie sind also nicht im Versand-Dashboard enthalten. [Weitere Informationen](delivery-dashboard.md).
 >
->Diese Nachrichten werden in den kommerziellen Druckregeln nicht berücksichtigt. [Weitere Informationen](../../campaign-opt/using/pressure-rules.md).
+>Diese Nachrichten werden in den kommerziellen Druckregeln nicht berücksichtigt. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/pressure-rules.html?lang=de){target="_blank"}.
