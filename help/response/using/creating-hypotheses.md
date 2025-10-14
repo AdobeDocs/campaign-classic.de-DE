@@ -174,7 +174,7 @@ Anschließend werden wir die von der Vorlage geerbte Abfrage verfeinern, um eine
 
    ![](assets/response_hypothesis_delivery_example_006.png)
 
-   Über den Tab **[!UICONTROL Bearbeiten > Messung > Messhypothesen]** der Kampagne können Sie sicherstellen, dass die Hypothese dem Versand zugeordnet wurde.****
+   Über den Tab **[!UICONTROL Bearbeiten > Messung > Messhypothesen]** der Kampagne können Sie sicherstellen, dass die Hypothese dem Versand zugeordnet wurde.**&#x200B;**
 
    ![](assets/response_hypothesis_delivery_example_008.png)
 

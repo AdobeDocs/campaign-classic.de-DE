@@ -123,7 +123,7 @@ Berichte über Kampagnen beziehen sich auf die Daten der Tabelle **nms:operation
 
 Die nativen Berichte von Adobe Campaign werden in der folgenden Tabelle aufgelistet.
 
-Weitere Informationen zum Inhalt dieser Berichte finden Sie in der Dokumentation zu [ v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=de){target=_blank}.
+Weitere Informationen zum Inhalt dieser Berichte finden Sie in der Dokumentation zu [&#x200B; v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=de){target=_blank}.
 
 <table> 
  <tbody> 
@@ -219,7 +219,7 @@ Weitere Informationen zum Inhalt dieser Berichte erhalten Sie in den zugehörige
 
 Die nativen Berichte von Adobe Campaign werden in der folgenden Tabelle aufgelistet.
 
-Weitere Informationen zum Inhalt dieser Berichte finden Sie in der Dokumentation zu [ v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=de){target=_blank}.
+Weitere Informationen zum Inhalt dieser Berichte finden Sie in der Dokumentation zu [&#x200B; v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=de){target=_blank}.
 
 <table> 
  <tbody> 

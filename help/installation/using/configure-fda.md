@@ -51,7 +51,7 @@ Folgen Sie den unten stehenden Links, um mehr zu erfahren:
 * Campaign und [Microsoft SQL Server verbinden](../../installation/using/configure-fda-sql.md)
 * Campaign und [Netezza verbinden](../../installation/using/configure-fda-netezza.md)
 * Campaign und [Oracle verbinden](../../installation/using/configure-fda-oracle.md)
-* Campaign und [PostgreSQL) ](../../installation/using/configure-fda-postgresql.md)
+* Campaign und [PostgreSQL) &#x200B;](../../installation/using/configure-fda-postgresql.md)
 * Campaign und [SAP HANA verbinden](../../installation/using/configure-fda-sap-hana.md)
 * Campaign und [Snowflake verbinden](../../installation/using/configure-fda-snowflake.md)
 * Campaign und [Sybase IQ verbinden](../../installation/using/configure-fda-sybase.md)

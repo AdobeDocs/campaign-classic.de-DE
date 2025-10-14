@@ -41,7 +41,7 @@ Die Quarantäne und die Blockierungsliste gelten nicht für dasselbe Objekt:
 
 * Die Aufnahme in die **Blockierungsliste** führt dagegen dazu, dass das **Profil** vom Versand ausgeschlossen wird. Dies ist z. B. nach einer Abmeldung (Opt-out) von einem Kanal der Fall. Wenn beispielsweise ein Profil, das auf der Blockierungsliste für den E-Mail-Kanal steht, zwei E-Mail-Adressen hat, werden beide Adressen vom Versand ausgeschlossen.
 
-  Auf die Blockierungsliste setzen Im Abschnitt Nicht mehr kontaktieren der Registerkarte Allgemein des Profils können Sie überprüfen **[!UICONTROL ob sich]** Profil auf der Seite für einen oder mehrere Kanäle ****.
+  Auf die Blockierungsliste setzen Im Abschnitt Nicht mehr kontaktieren der Registerkarte Allgemein des Profils können Sie überprüfen **[!UICONTROL ob sich]** Profil auf der Seite für einen oder mehrere Kanäle **&#x200B;**.
 >[!NOTE]
 >
 >Die Quarantäne beinhaltet den Status **[!UICONTROL Auf die Blockierungsliste gesetzt]**, der angewendet wird, wenn Empfängerinnen bzw. Empfänger Ihre Nachricht als Spam melden oder auf eine SMS mit einem Keyword wie „STOP“ antworten. In diesem Fall wird die betroffene Adresse oder Telefonnummer des Profils unter Quarantäne gestellt und erhält den Status **[!UICONTROL Auf die Blockierungsliste gesetzt]**. Weiterführende Informationen zur Verwaltung von STOP-SMS-Nachrichten finden Sie in [diesem Abschnitt](../../delivery/using/sms-send.md#processing-inbound-messages).
@@ -124,7 +124,7 @@ Der Fehlerzähler wird erneut initialisiert, wenn der letzte signifikante Fehler
 
 Wenn Sie bei gehosteten oder hybriden Installationen ein Upgrade auf [Enhanced MTA](sending-with-enhanced-mta.md) durchgeführt haben, basiert die maximale Anzahl weiterer Versuche, die im Falle des Status **[!UICONTROL Fehlerhaft]** durchgeführt werden, sowie die Mindestverzögerung zwischen Wiederholungsversuchen jetzt darauf, wie gut eine IP in einer bestimmten Domain sowohl in der Vergangenheit funktioniert hat als auch aktuell funktioniert.
 
-Bei On-Premise-Installationen und gehosteten/hybriden Installationen, die den veralteten Campaign MTA verwenden, können die Anzahl der Fehler und der Zeitraum zwischen zwei Fehlern geändert werden. Ändern Sie dazu die entsprechenden Einstellungen im [Bereitstellungsassistenten](../../installation/using/deploying-an-instance.md) (**[!UICONTROL E-Mail-Kanal]** > **[!UICONTROL Erweiterte Parameter]**) oder auf Versandebene. Weitere Informationen finden [ auf ](communication-channels.md) Seite unter **Versand** > **Weitere Zustellversuche konfigurieren**.
+Bei On-Premise-Installationen und gehosteten/hybriden Installationen, die den veralteten Campaign MTA verwenden, können die Anzahl der Fehler und der Zeitraum zwischen zwei Fehlern geändert werden. Ändern Sie dazu die entsprechenden Einstellungen im [Bereitstellungsassistenten](../../installation/using/deploying-an-instance.md) (**[!UICONTROL E-Mail-Kanal]** > **[!UICONTROL Erweiterte Parameter]**) oder auf Versandebene. Weitere Informationen finden [&#x200B; auf &#x200B;](communication-channels.md) Seite unter **Versand** > **Weitere Zustellversuche konfigurieren**.
 
 
 ## Entfernen einer Adresse aus der Quarantäne {#removing-a-quarantined-address}

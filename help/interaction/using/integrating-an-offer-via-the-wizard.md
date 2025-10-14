@@ -90,7 +90,7 @@ Die Nachrichtenpersonalisierung kann entweder über Felder des Angebots oder im 
 
 Eine weitere Möglichkeit ist die Verwendung von Versandentwürfen, um im Zuge von Kampagnen Angebote zu unterbreiten.
 
-Weitere Informationen zu Versandentwürfen finden Sie in der [ zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-assets#delivery-outlines.html){target="_blank"}.
+Weitere Informationen zu Versandentwürfen finden Sie in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-assets#delivery-outlines.html){target="_blank"}.
 
 1. Erstellen Sie eine neue oder öffnen Sie eine existierende Kampagne.
 1. Versandentwürfe sind im Tab **[!UICONTROL Bearbeiten]** > **[!UICONTROL Dokumente]** der Kampagne zugänglich.

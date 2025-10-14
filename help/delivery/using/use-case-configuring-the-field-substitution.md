@@ -33,7 +33,7 @@ Zur Verwendung der zufälligen Wertersetzung benötigen Sie:
 
 ## Erstellen eines Versands {#step-1---creating-a-delivery}
 
-Die Schritte zum Erstellen eines Versands werden in der Dokumentation zu [ v8 ](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/emails/email){target="_blank"}.
+Die Schritte zum Erstellen eines Versands werden in der Dokumentation zu [&#x200B; v8 &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/emails/email){target="_blank"}.
 
 Im vorliegenden Beispiel wurde vom Versand-Manager der unten gezeigte Newsletter erstellt.
 

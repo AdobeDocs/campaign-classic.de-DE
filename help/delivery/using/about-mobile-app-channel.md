@@ -16,7 +16,7 @@ ht-degree: 39%
 
 Erstellen Sie mit Adobe Campaign einen Push-Benachrichtigungs-Versand, um personalisierte Nachrichten an Benutzende Ihrer Mobile App zu senden.
 
-Mit Push-Benachrichtigungen können Sie Benutzerinnen und Benutzer in iOS und Android in Echtzeit ansprechen. Unabhängig davon, ob Sie Aktualisierungen, Ankündigungen oder Promotions senden, können Sie Inhalt, Timing und Zielgruppenbestimmung steuern. In der Dokumentation zu [Adobe Campaign v8 erfahren Sie, wie Sie den Push-Kanal einrichten und verwenden, Abonnements verwalten, mit APNs und FCM integrieren und Nachrichten ](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/emails/email){target=_blank}.
+Mit Push-Benachrichtigungen können Sie Benutzerinnen und Benutzer in iOS und Android in Echtzeit ansprechen. Unabhängig davon, ob Sie Aktualisierungen, Ankündigungen oder Promotions senden, können Sie Inhalt, Timing und Zielgruppenbestimmung steuern. In der Dokumentation zu [Adobe Campaign v8 erfahren Sie, wie Sie den Push-Kanal einrichten und verwenden, Abonnements verwalten, mit APNs und FCM integrieren und Nachrichten &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/emails/email){target=_blank}.
 
 Im Zuge der Umstellung von Campaign v7 auf v8 wurde der Campaign Classic-Dokumentationssatz optimiert und neu organisiert. Allgemeine Funktionen sind jetzt ausschließlich im Dokumentationssatz zu Campaign v8 verfügbar.
 
@@ -24,7 +24,7 @@ Im Zuge der Umstellung von Campaign v7 auf v8 wurde der Campaign Classic-Dokumen
 
 >[!TAB Dokumentation zum Push-Kanal]
 
-Weitere Informationen zum Push-Benachrichtigungskanal finden Sie in der [ zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html){target=_blank}.
+Weitere Informationen zum Push-Benachrichtigungskanal finden Sie in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html){target=_blank}.
 
 [![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html){target=_blank}
 
@@ -55,7 +55,7 @@ Die folgenden Informationen sind spezifisch für Campaign Classic.
 
 +++ **Paketinstallation**
 
-![](assets/do-not-localize/how-to-video.png) [Video zur Installation des Mobile-App-Package ](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html?lang=de#sending-messages)
+![](assets/do-not-localize/how-to-video.png) [Video zur Installation des Mobile-App-Package &#x200B;](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html?lang=de#sending-messages)
 
 Wenn Sie Campaign als Hybrid- oder gehostete Bereitstellung nutzen, wenden Sie sich an die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html), um Zugriff auf den Kanal für Push-Benachrichtigungen in Campaign zu erhalten.
 
@@ -85,7 +85,7 @@ Die Installationsschritte sind:
 
 1. **[!UICONTROL Schließen]** Sie das Installationsfenster.
 
-Sobald dieser Schritt abgeschlossen ist, können Sie Ihre Android- und iOS-Apps konfigurieren. Weitere Informationen finden Sie in der [ zu Campaign v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html){target="_blank"}.
+Sobald dieser Schritt abgeschlossen ist, können Sie Ihre Android- und iOS-Apps konfigurieren. Weitere Informationen finden Sie in der [&#x200B; zu Campaign v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html){target="_blank"}.
 
 +++
 
@@ -104,6 +104,6 @@ HTTP/2-Connector: Erlauben Sie die Kommunikation zu und von den folgenden Server
 
 >[!NOTE]
 >
->Weitere Informationen zu den beiden Connectoren finden Sie in der Dokumentation zu Campaign v8 [](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html){target="_blank"}.
+>Weitere Informationen zu den beiden Connectoren finden Sie in der Dokumentation zu Campaign v8 [&#128279;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html){target="_blank"}.
 
 +++

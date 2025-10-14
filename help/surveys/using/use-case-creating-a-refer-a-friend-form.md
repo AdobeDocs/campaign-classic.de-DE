@@ -88,7 +88,7 @@ Um den Freunde-Werben-Bereich zu konfigurieren und zu erstellen, gehen Sie folge
 
    >[!NOTE]
    >
-   >Weitere Informationen zu Versandvorlagen finden [ in der ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=de){target="_blank"} zu Campaign v8 .
+   >Weitere Informationen zu Versandvorlagen finden [&#x200B; in der &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=de){target="_blank"} zu Campaign v8 .
 
 1. Erstellen Sie das zweite Skript zur Bereitstellung der Abonnement-Nachrichten.
 

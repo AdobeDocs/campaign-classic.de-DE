@@ -24,7 +24,7 @@ Darüber hinaus gestattet das Modul **Marketing Resource Management (MRM)** die 
 >[!NOTE]
 >
 >Weitere Informationen zu den Kernfunktionen von Adobe Campaign finden Sie in [diesem Abschnitt](../../platform/using/about-adobe-campaign-classic.md).\
->Die Funktionen für Populations-Targeting, Nachrichtenpersonalisierung und Nachrichtenversand auf den verschiedenen Kanälen werden in der Dokumentation zu [ v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}.
+>Die Funktionen für Populations-Targeting, Nachrichtenpersonalisierung und Nachrichtenversand auf den verschiedenen Kanälen werden in der Dokumentation zu [&#x200B; v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}.
 
 ![](assets/do-not-localize/how-to-video.png) [Entdecken Sie die wichtigsten Konzepte von Marketing-Kampagnen im Video](#video)
 

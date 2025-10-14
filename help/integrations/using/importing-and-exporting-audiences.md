@@ -56,7 +56,7 @@ Bei jeder späteren Synchronisation werden alle Daten der zuvor erstellten Zielg
 
 ## Zielgruppe exportieren {#exporting-an-audience}
 
-Der Export von Zielgruppen aus Adobe Campaign in Audience Manager erfolgt mithilfe eines Workflows. Die Verfahren zum Erstellen und Verwenden eines Workflows werden in der Dokumentation zu [ v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=de){target="_blank"}. Die exportierten Zielgruppen werden als Segmente gespeichert:
+Der Export von Zielgruppen aus Adobe Campaign in Audience Manager erfolgt mithilfe eines Workflows. Die Verfahren zum Erstellen und Verwenden eines Workflows werden in der Dokumentation zu [&#x200B; v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=de){target="_blank"}. Die exportierten Zielgruppen werden als Segmente gespeichert:
 
 1. Erstellen Sie einen neuen Zielgruppen-Workflow.
 1. Verwenden Sie die diversen zur Verfügung stehenden Aktivitäten, um eine Gruppe von Empfängern auszuwählen.

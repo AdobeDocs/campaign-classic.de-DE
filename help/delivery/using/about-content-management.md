@@ -19,7 +19,7 @@ Das Adobe Campaign-Modul Inhaltsverwaltung (Content Manager) ist in für Campa
 
 >[!NOTE]
 >
->Dieser Abschnitt bezieht sich auf das Content-Management-Modul. Weitere Informationen zum Entwerfen von Inhalten eines E-Mail-Versands finden Sie in der [ zu Campaign v8 ](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/emails/defining-the-email-content){target="_blank"}.
+>Dieser Abschnitt bezieht sich auf das Content-Management-Modul. Weitere Informationen zum Entwerfen von Inhalten eines E-Mail-Versands finden Sie in der [&#x200B; zu Campaign v8 &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/emails/defining-the-email-content){target="_blank"}.
 
 Das Content-Management-Modul umfasst Funktionen für Arbeitsgruppen, Workflows und Inhaltsaggregationen. Damit können Nachrichten automatisch formatiert werden: E-Mail, Post, SMS, Web usw.
 

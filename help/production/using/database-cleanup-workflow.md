@@ -32,7 +32,7 @@ Die Datenbankbereinigung wird auf zwei Ebenen konfiguriert: im Workflow-Planer u
 
 >[!NOTE]
 >
->Weitere Informationen zur Planung finden Sie in der [ zu Campaign v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html?lang=de){target="_blank"}.
+>Weitere Informationen zur Planung finden Sie in der [&#x200B; zu Campaign v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html?lang=de){target="_blank"}.
 
 Standardmäßig ist der Workflow **[!UICONTROL Datenbankbereinigung]** so konfiguriert, dass er täglich um 4 Uhr morgens startet. Mit der -Planung können Sie die Häufigkeit der Workflow-Auslösung ändern. Die folgenden Häufigkeiten sind verfügbar:
 
@@ -57,10 +57,10 @@ Die Felder des Fensters **[!UICONTROL Bereinigen von Daten]** entsprechen den fo
 
 * Konsolidiertes Tracking: **NmsCleanup_TrackingStatPurgeDelay** (siehe [Bereinigung von Trackinglogs](#cleanup-of-tracking-logs))
 * Versandlogs: **NmsCleanup_BroadLogPurgeDelay** (siehe [Bereinigung von Versandlogs](#cleanup-of-delivery-logs))
-* Trackinglogs: **NmsCleanup_TrackingLogPurgeDelay** (siehe &quot;[ von Trackinglogs](#cleanup-of-tracking-logs))
+* Trackinglogs: **NmsCleanup_TrackingLogPurgeDelay** (siehe &quot;[&#x200B; von Trackinglogs](#cleanup-of-tracking-logs))
 * Gelöschte Sendungen: **NmsCleanup_RecycledDeliveryPurgeDelay** (siehe [Bereinigung von zu löschenden oder wiederzuverwendenden Sendungen](#cleanup-of-deliveries-to-be-deleted-or-recycled))
 * Importzurückweisungen: **NmsCleanup_RejectsPurgeDelay** (siehe [Bereinigung von durch Importe generierten Zurückweisungen](#cleanup-of-rejects-generated-by-imports-))
-* Besucherprofile: **NmsCleanup_VisitorPurgeDelay** (siehe &quot;[ von Besuchern](#cleanup-of-visitors))
+* Besucherprofile: **NmsCleanup_VisitorPurgeDelay** (siehe &quot;[&#x200B; von Besuchern](#cleanup-of-visitors))
 * Angebotsvorschläge: **NmsCleanup_PropositionPurgeDelay** (siehe [Bereinigung von Vorschlägen](#cleanup-of-propositions))
 
   >[!NOTE]
@@ -74,7 +74,7 @@ Die Felder des Fensters **[!UICONTROL Bereinigen von Daten]** entsprechen den fo
   >
   >Die Felder **[!UICONTROL Ereignisse]** und **[!UICONTROL Ereignisse mit Verlauf]** sind nur verfügbar, wenn das Modul **Message Center** installiert ist.
 
-* Audit-Protokoll: **XtkCleanup_AuditTrailPurgeDelay** (siehe &quot;[ des Audit-Protokolls](#cleanup-of-audit-trail))
+* Audit-Protokoll: **XtkCleanup_AuditTrailPurgeDelay** (siehe &quot;[&#x200B; des Audit-Protokolls](#cleanup-of-audit-trail))
 
 Alle Aufgaben, die vom Workflow **[!UICONTROL Datenbankbereinigung]** ausgeführt werden, werden im folgenden Abschnitt beschrieben.
 

@@ -157,7 +157,7 @@ PostgreSQL bietet keine einfache Möglichkeit, einen Online-Tabellen-Neuaufbau d
 
 Im Folgenden finden Sie ein Beispiel für die Tabellendefragmentierung mithilfe spezifischer Funktionen zum Generieren der erforderlichen DDL. Mit dem folgenden SQL-Code können Sie zwei neue Funktionen erstellen: **GenRebuildTablePart1** und **GenRebuildTablePart2**, mit denen die erforderliche DDL zum Erstellen einer Tabelle generiert werden kann.
 
-* Mit der ersten Funktion können Sie eine Arbeitstabelle (hier ** _tmp**) erstellen, die eine Kopie der ursprünglichen Tabelle ist.
+* Mit der ersten Funktion können Sie eine Arbeitstabelle (hier **&#x200B; _tmp**) erstellen, die eine Kopie der ursprünglichen Tabelle ist.
 * Die zweite Funktion löscht dann die ursprüngliche Tabelle und benennt die Arbeitstabelle und ihre Indizes um.
 * Die Verwendung von zwei Funktionen anstelle einer bedeutet, dass Sie bei einem Fehler der ersten nicht das Risiko eingehen, die ursprüngliche Tabelle zu löschen.
 
@@ -412,7 +412,7 @@ Wenden Sie sich an Ihren Datenbankadministrator, um mehr über die Verfahren zu 
 
 >[!NOTE]
 >
->Für Microsoft SQL Server können Sie den Wartungsplan verwenden, der auf ([ Seite) beschrieben ](https://ola.hallengren.com/sql-server-index-and-statistics-maintenance.html).
+>Für Microsoft SQL Server können Sie den Wartungsplan verwenden, der auf ([&#x200B; Seite) beschrieben &#x200B;](https://ola.hallengren.com/sql-server-index-and-statistics-maintenance.html).
 
 Das folgende Beispiel betrifft Microsoft SQL Server 2005. Wenn Sie eine andere Version verwenden, wenden Sie sich an Ihren Datenbankadministrator, um mehr über die Wartungsmaßnahmen zu erfahren.
 

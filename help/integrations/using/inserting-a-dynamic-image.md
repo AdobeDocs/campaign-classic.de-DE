@@ -154,7 +154,7 @@ Im Abschnitt **[!UICONTROL Einstellungen für die Berichterstellung]** können S
 
 ## Anzeigen der Vorschau und Senden der Nachricht {#preview-send-email}
 
-Sie können nun in Adobe Campaign Ihre E-Mail in der Vorschau ansehen und ihre Darstellung bei verschiedenen Empfängern testen. Sie werden bemerken, dass sich das Bild entsprechend den unterschiedlichen Erlebnissen ändert. Weitere Informationen zur Erstellung von E-Mails finden Sie in der [ zu Campaign v8 ](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/emails/defining-the-email-content){target="_blank"}.
+Sie können nun in Adobe Campaign Ihre E-Mail in der Vorschau ansehen und ihre Darstellung bei verschiedenen Empfängern testen. Sie werden bemerken, dass sich das Bild entsprechend den unterschiedlichen Erlebnissen ändert. Weitere Informationen zur Erstellung von E-Mails finden Sie in der [&#x200B; zu Campaign v8 &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/emails/defining-the-email-content){target="_blank"}.
 
 Jetzt können Sie Ihre E-Mail einschließlich eines dynamischen Angebots von Target versenden.
 

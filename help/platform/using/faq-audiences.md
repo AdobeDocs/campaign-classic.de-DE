@@ -54,4 +54,4 @@ Hier erfahren Sie, wie die Abonnementverwaltung in Campaign erfolgt und wie Sie 
 
 ## Was sind die Best Practices beim Ausschließen von Profilen aus einer Zielpopulation? {#what-is-the-best-practice-to-exclude-profiles-from-a-target-population-}
 
-Wie Sie eine Liste von Profilen aus Ihrer Zielpopulation ausschließen, erfahren Sie in der Dokumentation zu [ v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/read-list.html?lang=de){target="_blank"}.
+Wie Sie eine Liste von Profilen aus Ihrer Zielpopulation ausschließen, erfahren Sie in der Dokumentation zu [&#x200B; v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/read-list.html?lang=de){target="_blank"}.

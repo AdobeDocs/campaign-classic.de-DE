@@ -173,7 +173,7 @@ Globale Auswirkungen auf die Konfiguration, die Konnektivität mit anderen Syste
 
   Sie kann sich je nach dem Standort des neuen Servers ändern. Die Kunden können jedoch ihre aktuelle Zeitzone beibehalten.
 
-  Weitere Informationen zur Zeitzonenverwaltung finden Sie in der [ zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/managing-time-zones.html){target="_blank"}.
+  Weitere Informationen zur Zeitzonenverwaltung finden Sie in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/managing-time-zones.html){target="_blank"}.
 
 
 ## Sicherheit und Berechtigungen

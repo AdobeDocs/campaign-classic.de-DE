@@ -16,7 +16,7 @@ ht-degree: 4%
 
 Verwenden Sie mit Adobe Campaign den LINE-Kanal, um ansprechende Nachrichten direkt an Benutzende in ihrer LINE-App zu senden. Ob für Ankündigungen, Promotions, Customer Service-Updates oder Multimedia-Inhalte, LINE bietet ein Echtzeit-Gesprächsmedium, das Ihre anderen Kanäle ergänzt.
 
-In der [Dokumentation zu Adobe Campaign v8 erfahren Sie, wie Sie den LINE-Kanal einrichten, einen Endversand erstellen, den Inhaltstyp definieren und die Versandleistung ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/line.md){target=_blank}.
+In der [Dokumentation zu Adobe Campaign v8 erfahren Sie, wie Sie den LINE-Kanal einrichten, einen Endversand erstellen, den Inhaltstyp definieren und die Versandleistung &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/line.md){target=_blank}.
 
 Im Zuge der Umstellung von Campaign v7 auf v8 wurde der Campaign Classic-Dokumentationssatz optimiert und neu organisiert. Allgemeine Funktionen sind jetzt ausschließlich im Dokumentationssatz zu Campaign v8 verfügbar.
 
@@ -24,7 +24,7 @@ Im Zuge der Umstellung von Campaign v7 auf v8 wurde der Campaign Classic-Dokumen
 
 >[!TAB LINE-Kanaldokumentation]
 
-Weitere Informationen zum LINE-Kanal finden Sie in der Dokumentation zu [ v8 ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/line.html){target=_blank}.
+Weitere Informationen zum LINE-Kanal finden Sie in der Dokumentation zu [&#x200B; v8 &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/line.html){target=_blank}.
 
 
 [![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/emails/email){target=_blank}

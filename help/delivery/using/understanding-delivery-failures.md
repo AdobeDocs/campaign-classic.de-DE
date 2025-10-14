@@ -190,7 +190,7 @@ Wenn die Zustellung vorübergehend wegen eines **Softbounce** oder eines **ignor
 
 Gehen Sie bei On-Premise-Installationen und gehosteten/hybriden Installationen mit dem bestehenden Campaign-MTA zum Ändern der Versandlaufzeit zu den erweiterten Parametern des Versands oder der Versandvorlage und geben Sie die gewünschte Laufzeit in das entsprechende Feld ein. Siehe diese [Seite](communication-channels.md) unter **Versand** > **Gültigkeitszeitraum definieren**.
 
-Standardmäßig sind innerhalb der ersten 24 Stunden fünf Versuche im Abstand von mindestens einer Stunde vorgesehen, an den vier folgenden Tagen je ein Versuch. Die Anzahl weiterer Versuche kann global (kontaktieren Sie Ihren technischen Adobe-Administrator) oder einzeln für jeden Versand oder jede Versandvorlage geändert werden. Weitere Informationen finden [ auf ](communication-channels.md) Seite unter **Versand** > **Weitere Zustellversuche konfigurieren**.
+Standardmäßig sind innerhalb der ersten 24 Stunden fünf Versuche im Abstand von mindestens einer Stunde vorgesehen, an den vier folgenden Tagen je ein Versuch. Die Anzahl weiterer Versuche kann global (kontaktieren Sie Ihren technischen Adobe-Administrator) oder einzeln für jeden Versand oder jede Versandvorlage geändert werden. Weitere Informationen finden [&#x200B; auf &#x200B;](communication-channels.md) Seite unter **Versand** > **Weitere Zustellversuche konfigurieren**.
 
 ## Synchrone und asynchrone Fehler     {#synchronous-and-asynchronous-errors}
 
@@ -227,7 +227,7 @@ Bei On-Premise-Installationen und gehosteten/hybriden Installationen, die den be
 >
 >Bei gehosteten oder hybriden Installationen, wenn Sie ein Upgrade auf den [Enhanced MTA](sending-with-enhanced-mta.md) durchgeführt haben:
 >
->* Die Bounce-Qualifizierungen in der Tabelle **[!UICONTROL Versandlogqualifizierung]** werden nicht mehr für Fehlernachrichten bei synchronen Sendungen verwendet. **** Der Enhanced MTA bestimmt den Bounce-Typ und die Qualifizierung und sendet diese Informationen an Campaign zurück.
+>* Die Bounce-Qualifizierungen in der Tabelle **[!UICONTROL Versandlogqualifizierung]** werden nicht mehr für Fehlernachrichten bei synchronen Sendungen verwendet. **&#x200B;**&#x200B;Der Enhanced MTA bestimmt den Bounce-Typ und die Qualifizierung und sendet diese Informationen an Campaign zurück.
 >
 >* **Asynchrone** Bounces werden weiterhin vom InMail-Prozess über die Regeln für **[!UICONTROL Eingehende E-Mails]** qualifiziert. Weiterführende Informationen dazu finden Sie im Abschnitt [E-Mail-Verwaltungsregeln](#email-management-rules).
 >

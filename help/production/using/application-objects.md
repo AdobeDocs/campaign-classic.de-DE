@@ -40,7 +40,7 @@ Diese Methode hebt auch Benutzer hervor, die zu viele Objekte erstellen.
 
 ## Sendungen {#deliveries}
 
-Es sollten zu jedem Zeitpunkt weniger als 1.000 Sendungen in der Instanz vorhanden sein. Viele Sendungen belasten den Datenbankspeicherplatz und verursachen Probleme. Eine Instanz, die mehr als 10 Sendungen pro Tag erstellt, muss mit den Geschäftsanforderungen abgeglichen werden. Verwenden Sie fortlaufende Sendungen, um weniger Sendungen zu erstellen. Weitere Informationen hierzu finden Sie in der [ zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/continuous-delivery.html){target="_blank"}.
+Es sollten zu jedem Zeitpunkt weniger als 1.000 Sendungen in der Instanz vorhanden sein. Viele Sendungen belasten den Datenbankspeicherplatz und verursachen Probleme. Eine Instanz, die mehr als 10 Sendungen pro Tag erstellt, muss mit den Geschäftsanforderungen abgeglichen werden. Verwenden Sie fortlaufende Sendungen, um weniger Sendungen zu erstellen. Weitere Informationen hierzu finden Sie in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/continuous-delivery.html){target="_blank"}.
 
 Sendungen, die älter als zwei Jahre sind, sollten aus der Instanz gelöscht werden.
 

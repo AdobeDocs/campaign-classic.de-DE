@@ -24,7 +24,7 @@ Empfängerprofildaten können manuell oder automatisch aktualisiert werden.
 
 ## Automatische Aktualisierung einrichten {#setting-up-an-automatic-update}
 
-Automatische Aktualisierungen lassen sich unter Verwendung von Workflows durchführen. Weitere Informationen hierzu finden Sie in der [ zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/update-data.html){target="_blank"}.
+Automatische Aktualisierungen lassen sich unter Verwendung von Workflows durchführen. Weitere Informationen hierzu finden Sie in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/update-data.html){target="_blank"}.
 
 ## Gebündeltes Update durchführen {#performing-a-mass-update}
 
@@ -123,7 +123,7 @@ In der oberen Hälfte des Assistenten werden Informationen bezüglich der Ausfü
 
 Wenn Sie die Option **[!UICONTROL Vorgang nicht in der Datenbank protokollieren]** abwählen, ist die Auswahl oder Erstellung eines Ausführungsordners erforderlich, in dem die den Vorgang betreffenden Protokollnachrichten gespeichert werden.
 
-Im Tab **[!UICONTROL Abonnements]******, zugänglich über die vom Vorgang betroffenen Empfängerprofile oder den Verzeichnisknoten **[!UICONTROL Profile und Zielgruppen > Dienste und Abonnements]** kann das Ergebnis der Anmeldung geprüft werden.
+Im Tab **[!UICONTROL Abonnements]**&#x200B;**&#x200B;**, zugänglich über die vom Vorgang betroffenen Empfängerprofile oder den Verzeichnisknoten **[!UICONTROL Profile und Zielgruppen > Dienste und Abonnements]** kann das Ergebnis der Anmeldung geprüft werden.
 
 ![](assets/s_ncs_user_selection_subscribe_service_4.png)
 

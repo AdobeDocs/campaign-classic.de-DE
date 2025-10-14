@@ -115,7 +115,7 @@ Standardmäßig werden die Nachrichten den Angaben des Empfängers entsprechend 
 
 Mit Adobe Campaign können Sie das neue interaktive Format [AMP für E-Mail](https://amp.dev/de/about/email/) testen, das unter bestimmten Bedingungen das Senden dynamischer E-Mails ermöglicht.
 
-Weitere Informationen hierzu finden Sie in der [ zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/emails/defining-interactive-content){target="_blank"}.
+Weitere Informationen hierzu finden Sie in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/emails/defining-interactive-content){target="_blank"}.
 
 ## Verwenden von Content-Management {#using-content-management}
 

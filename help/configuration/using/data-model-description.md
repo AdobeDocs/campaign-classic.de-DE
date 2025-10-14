@@ -23,7 +23,7 @@ Um Beschreibungen der einzelnen Tabellen aufzurufen, navigieren Sie zu **[!UICON
 
 >[!NOTE]
 >
->Die physische und logische Struktur der in der Anwendung übertragenen Daten wird in XML beschrieben. Sie folgt einer Adobe Campaign-spezifischen Grammatik namens „Schema“. Weitere Informationen zu Adobe Campaign-Schemata finden Sie [ (diesem Abschnitt](../../configuration/using/about-schema-reference.md).
+>Die physische und logische Struktur der in der Anwendung übertragenen Daten wird in XML beschrieben. Sie folgt einer Adobe Campaign-spezifischen Grammatik namens „Schema“. Weitere Informationen zu Adobe Campaign-Schemata finden Sie [&#x200B; (diesem Abschnitt](../../configuration/using/about-schema-reference.md).
 
 ## Beschreibung der Haupttabellen {#description-main-tables}
 
@@ -113,7 +113,7 @@ Dieser Tabellensatz ist mit dem Modul **Versand** verknüpft, das die Überwachu
 
 ## Kampagnen-Management {#campaign-management}
 
-Dieser Tabellensatz ist mit dem Modul **Marketing-Kampagnen** verknüpft, mit dem Sie Kommunikations- und Marketing-Kampagnen definieren, optimieren, ausführen und analysieren können. Weitere Informationen hierzu finden Sie in der [ zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=de){target=_blank}.
+Dieser Tabellensatz ist mit dem Modul **Marketing-Kampagnen** verknüpft, mit dem Sie Kommunikations- und Marketing-Kampagnen definieren, optimieren, ausführen und analysieren können. Weitere Informationen hierzu finden Sie in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=de){target=_blank}.
 
 ![](assets/data-model_campaign.png)
 

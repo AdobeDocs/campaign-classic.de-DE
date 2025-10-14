@@ -21,12 +21,12 @@ Gehen Sie wie folgt vor, um einen neuen Briefpost-Versand zu erstellen:
 
 >[!NOTE]
 >
->Allgemeine Konzepte zur Versanderstellung finden Sie in der [ zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}.
+>Allgemeine Konzepte zur Versanderstellung finden Sie in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}.
 
 1. Erstellen Sie einen neuen Versand beispielsweise im Versand-Dashboard.
 1. Wählen Sie die Versandvorlage **Briefpost-Versand (Papier)** aus.
 
    ![](assets/direct_mail.png)
 
-1. Geben Sie für Ihren Versand einen Titel, einen Code und eine Beschreibung ein. Weiterführende Informationen hierzu finden Sie in diesem Abschnitt in der Dokumentation zu [ v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/create-message#create-the-delivery){target="_blank"}.
+1. Geben Sie für Ihren Versand einen Titel, einen Code und eine Beschreibung ein. Weiterführende Informationen hierzu finden Sie in diesem Abschnitt in der Dokumentation zu [&#x200B; v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/create-message#create-the-delivery){target="_blank"}.
 1. Klicken Sie auf **Fortfahren**, um die Eingaben zu bestätigen und in das Fenster zur Nachrichtenkonfiguration zu gelangen.

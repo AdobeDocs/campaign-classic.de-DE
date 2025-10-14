@@ -25,7 +25,7 @@ Im Zuge der Umstellung von Campaign v7 auf v8 wurde der Campaign Classic-Dokumen
 
 >[!TAB Dokumentation zum Briefpostkanal]
 
-Weitere Informationen zum Briefpost-Kanal finden Sie in der Dokumentation zu [ v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/direct-mail.html){target=_blank}.
+Weitere Informationen zum Briefpost-Kanal finden Sie in der Dokumentation zu [&#x200B; v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/direct-mail.html){target=_blank}.
 
 
 [![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/direct-mail.html){target=_blank}

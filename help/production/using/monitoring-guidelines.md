@@ -94,7 +94,7 @@ SMTP-Berichte enthalten Versandstatistiken und SMTP-Fehler nach Domain. [Weitere
 
 **Best Practices**
 
-Informationen zu Best Practices für den Versand und das Design von [ finden ](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/delivery-best-practices){target="_blank"} in der Dokumentation zu Campaign v8 , um die Leistung zu verbessern.
+Informationen zu Best Practices für den Versand und das Design von [&#x200B; finden &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/delivery-best-practices){target="_blank"} in der Dokumentation zu Campaign v8 , um die Leistung zu verbessern.
 
 **Fehlerbehebung beim Versand**
 Bei Problemen mit Sendungen können spezifische Aktionen durchgeführt werden:
