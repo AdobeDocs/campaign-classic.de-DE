@@ -259,4 +259,4 @@ Mit der Option **Gestaltungsbaustein** können Sie dynamische und personalisiert
 
 Nach dem Einfügen erscheint der Name des Gestaltungsbausteins gelb hinterlegt im Editor. Er wird während der Personalisierung automatisch an das Empfängerprofil angepasst.
 
-Weitere Informationen zu integrierten Gestaltungsbausteinen und zum Definieren benutzerdefinierter Gestaltungsbausteine finden Sie in der [ zu Campaign v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}.
+Weitere Informationen zu integrierten Gestaltungsbausteinen und zum Definieren benutzerdefinierter Gestaltungsbausteine finden Sie in der [&#x200B; zu Campaign v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}.

@@ -29,7 +29,7 @@ Weitere Tipps zur Optimierung der Zustellbarkeit beim Entwerfen von Inhalten fin
 
 >[!NOTE]
 >
->Weitere Informationen zum Bearbeiten von E-Mail-Inhalten finden Sie in der [ zu Campaign v8 ](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/emails/defining-the-email-content){target="_blank"}.
+>Weitere Informationen zum Bearbeiten von E-Mail-Inhalten finden Sie in der [&#x200B; zu Campaign v8 &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/emails/defining-the-email-content){target="_blank"}.
 
 ## Absenderadresse {#sender-address}
 
@@ -37,13 +37,13 @@ Bestimmte Internet-Anbieter überprüfen die Gültigkeit der Absenderadresse (**
 
 Sie müssen sicherstellen, dass auf Instanzebene (Menü **[!UICONTROL Tools > Erweitert > Bereitstellungassistent...]**) oder in den am häufigsten verwendeten Szenarien eine richtige Adresse angegeben wird.
 
-Weitere Informationen hierzu finden Sie in der [ zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/emails/defining-the-email-content){target="_blank"}.
+Weitere Informationen hierzu finden Sie in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/emails/defining-the-email-content){target="_blank"}.
 
 ## Personalisierung {#personalization}
 
 Um das Nutzererlebnis zu verbessern und Empfängerinnen und Empfänger dazu zu bewegen, Ihre E-Mail zu öffnen, ermöglicht Adobe Campaign Ihnen, Ihre Nachrichten zu personalisieren.
 
-Weiterführende Informationen zur Verwendung von Personalisierungsfeldern in Adobe Campaign finden Sie in der [ zu Campaign v8 ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/personalize/personalization-fields){target="_blank"}.
+Weiterführende Informationen zur Verwendung von Personalisierungsfeldern in Adobe Campaign finden Sie in der [&#x200B; zu Campaign v8 &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/personalize/personalization-fields){target="_blank"}.
 
 ## Ausschluss-Link und -Formular {#opt-out}
 
@@ -51,7 +51,7 @@ Bei der Analyse einer Nachricht wird standardmäßig von einer Typologieregel ü
 
 Sie müssen vor jedem Versand überprüfen, ob der Abmelde-Link korrekt funktioniert. Achten Sie beispielsweise beim Testversand darauf, dass der Link gültig ist, das Formular online ist und dass sich durch seine Validierung der Wert des Feldes **[!UICONTROL Diese Person nicht mehr kontaktieren]** auf **[!UICONTROL Ja]** ändert. Führen Sie diese Prüfung regelmäßig durch, da bei der manuellen Eingabe des Links oder der Änderung des Formulars Fehler auftreten können.
 
-Erfahren Sie in der Dokumentation zu [ v8, wie Sie eine Opt-out-](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"} einfügen.
+Erfahren Sie in der Dokumentation zu [&#x200B; v8, wie Sie eine Opt-out-](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"} einfügen.
 
 Wenn ein Abmeldeproblem erkannt wird, nachdem der Versand bereits begonnen hat, können Sie diejenigen, die auf den Ausschluss-Link klicken, manuell abmelden (z. B. über die gebündelte Aktualisierung), selbst wenn sie ihre Auswahl nicht bestätigen konnten.
 

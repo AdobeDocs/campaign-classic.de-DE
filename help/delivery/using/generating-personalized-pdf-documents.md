@@ -66,7 +66,7 @@ Konfigurieren Sie hierzu einen Gestaltungsbaustein und verweisen Sie auf diesen 
 
 * Gehen Sie in das Menü **[!UICONTROL Ressourcen > Kampagnenverwaltung > Gestaltungsbausteine]**.
 * Erstellen Sie einen neuen Baustein mit dem Titel &quot;Mein Logo&quot; und dem internen Namen &quot;Mein_Logo&quot;.
-* Öffnen Sie den Link **[!UICONTROL Erweiterte Parameter...]** ... und geben Sie an, dass der Baustein in einem Anhang enthalten ist. Mit Auswahl dieser Option wird die Definition des Gestaltungsbausteins direkt in den Inhalt der OpenOffice-Datei kopiert.****
+* Öffnen Sie den Link **[!UICONTROL Erweiterte Parameter...]** ... und geben Sie an, dass der Baustein in einem Anhang enthalten ist. Mit Auswahl dieser Option wird die Definition des Gestaltungsbausteins direkt in den Inhalt der OpenOffice-Datei kopiert.**&#x200B;**
 
   ![](assets/s_ncs_pdf_bloc_option.png)
 
