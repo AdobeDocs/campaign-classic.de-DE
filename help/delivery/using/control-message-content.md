@@ -43,15 +43,15 @@ Weitere Informationen hierzu finden Sie in der [&#x200B; zu Campaign v8](https:/
 
 Um das Nutzererlebnis zu verbessern und Empfängerinnen und Empfänger dazu zu bewegen, Ihre E-Mail zu öffnen, ermöglicht Adobe Campaign Ihnen, Ihre Nachrichten zu personalisieren.
 
-Weiterführende Informationen zur Verwendung von Personalisierungsfeldern in Adobe Campaign finden Sie in der [&#x200B; zu Campaign v8 &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/personalize/personalization-fields){target="_blank"}.
+Weiterführende Informationen zur Verwendung von Personalisierungsfeldern in Adobe Campaign finden Sie in der [&#x200B; zu Campaign v8 &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/personalize/personalization-fields){target="_blank"}.
 
 ## Ausschluss-Link und -Formular {#opt-out}
 
-Bei der Analyse einer Nachricht wird standardmäßig von einer Typologieregel überprüft, ob ein Abmelde-Link vorhanden ist. Ist dies nicht der Fall, wird ein Warnhinweis erstellt. Sie können diese Regel so ändern, dass statt einer einfachen Warnung ein Fehler ausgelöst wird und ein Versand nicht mehr ohne diesen Link ausgeführt wird. Siehe die [Campaign v8-Dokumentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html){target="_blank"}.
+Bei der Analyse einer Nachricht wird standardmäßig von einer Typologieregel überprüft, ob ein Abmelde-Link vorhanden ist. Ist dies nicht der Fall, wird ein Warnhinweis erstellt. Sie können diese Regel so ändern, dass statt einer einfachen Warnung ein Fehler ausgelöst wird und ein Versand nicht mehr ohne diesen Link ausgeführt wird. Siehe die [Campaign v8-Dokumentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html?lang=de){target="_blank"}.
 
 Sie müssen vor jedem Versand überprüfen, ob der Abmelde-Link korrekt funktioniert. Achten Sie beispielsweise beim Testversand darauf, dass der Link gültig ist, das Formular online ist und dass sich durch seine Validierung der Wert des Feldes **[!UICONTROL Diese Person nicht mehr kontaktieren]** auf **[!UICONTROL Ja]** ändert. Führen Sie diese Prüfung regelmäßig durch, da bei der manuellen Eingabe des Links oder der Änderung des Formulars Fehler auftreten können.
 
-Erfahren Sie in der Dokumentation zu [&#x200B; v8, wie Sie eine Opt-out-](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"} einfügen.
+Erfahren Sie in der Dokumentation zu [&#x200B; v8, wie Sie eine Opt-out-](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=de){target="_blank"} einfügen.
 
 Wenn ein Abmeldeproblem erkannt wird, nachdem der Versand bereits begonnen hat, können Sie diejenigen, die auf den Ausschluss-Link klicken, manuell abmelden (z. B. über die gebündelte Aktualisierung), selbst wenn sie ihre Auswahl nicht bestätigen konnten.
 

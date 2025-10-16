@@ -22,7 +22,7 @@ Mit dem Digital Content Editor können Sie Seitenelemente einfügen und formatie
 
 >[!NOTE]
 >
->Wenn Sie Server-seitigen JavaScript-Code hinzufügen müssen, verwenden Sie Gestaltungsbausteine. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}.
+>Wenn Sie Server-seitigen JavaScript-Code hinzufügen müssen, verwenden Sie Gestaltungsbausteine. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=de){target="_blank"}.
 
 >[!CAUTION]
 >
@@ -52,7 +52,7 @@ Um einen **E-Mail-Versand** zu erstellen, müssen Sie folgende Schritte ausführ
 1. Versand aus einer DCE-Vorlage erstellen – [Weitere Informationen](use-case-creating-an-email-delivery.md)
 1. Wählen Sie vorhandenen Inhalt aus oder erstellen Sie Inhalt aus einer [Standardvorlage](template-management.md).
 1. Bearbeiten und konfigurieren Sie den Online-Inhalt.
-1. Versand durchführen - Weitere Informationen finden Sie in der Dokumentation zu [&#x200B; v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}
+1. Versand durchführen - Weitere Informationen finden Sie in der Dokumentation zu [&#x200B; v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=de){target="_blank"}
 
 >[!NOTE]
 >
