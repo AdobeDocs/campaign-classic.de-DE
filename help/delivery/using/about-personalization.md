@@ -17,7 +17,7 @@ ht-degree: 9%
 
 Mit Adobe Campaign können Sie Ihre Sendungen personalisieren, um Nachrichten zu senden, die dem Profil und den Interessen jedes Empfängers entsprechen.
 
-Mit Personalization können Sie Ihre Nachrichten relevanter und ansprechender gestalten. Sie können Empfängerdaten verwenden, um Inhalte anzupassen, dynamische Felder hinzuzufügen oder unterschiedliche Informationen auf Grundlage von Bedingungen anzuzeigen. In der [Dokumentation zu Adobe Campaign v8 erfahren Sie, wie Sie Personalisierungsfunktionen in Ihren Sendungen einrichten und &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html){target=_blank}.
+Mit Personalization können Sie Ihre Nachrichten relevanter und ansprechender gestalten. Sie können Empfängerdaten verwenden, um Inhalte anzupassen, dynamische Felder hinzuzufügen oder unterschiedliche Informationen auf Grundlage von Bedingungen anzuzeigen. In der [Dokumentation zu Adobe Campaign v8 erfahren Sie, wie Sie Personalisierungsfunktionen in Ihren Sendungen einrichten und &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html?lang=de){target=_blank}.
 
 Im Zuge der Umstellung von Campaign v7 auf v8 wurde der Campaign Classic-Dokumentationssatz optimiert und neu organisiert. Allgemeine Funktionen sind jetzt ausschließlich im Dokumentationssatz zu Campaign v8 verfügbar.
 
@@ -25,20 +25,20 @@ Im Zuge der Umstellung von Campaign v7 auf v8 wurde der Campaign Classic-Dokumen
 
 >[!TAB Dokumentation zur Inhaltspersonalisierung]
 
-Weitere Informationen zur Personalisierung von Inhalten finden Sie in der [&#x200B; zu Campaign v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html){target=_blank}.
+Weitere Informationen zur Personalisierung von Inhalten finden Sie in der [&#x200B; zu Campaign v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html?lang=de){target=_blank}.
 
 
-[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html){target=_blank}
+[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html?lang=de){target=_blank}
 
 
 >[!TAB Personalization und bedingte Inhalte]
 
 Erfahren Sie mehr über die wichtigsten Schritte im Zusammenhang mit bedingten Inhalten und **Personalisierung (in der Dokumentation zu Campaign v8**:
 
-* [Personalization-Daten](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-data.html){target="_blank"}: Hier erfahren Sie, wie Sie mithilfe verschiedener Datenquellen personalisieren können, um Ihre Sendungen anzupassen.
-* [Personalisierungsfelder](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-fields.html){target="_blank"}: Erfahren Sie, wie Sie Personalisierungsfelder einfügen und verwenden können, damit jeder Empfänger seine eigenen Daten im Betreff oder Text Ihrer Nachricht sieht.
-* [Gestaltungsbausteine](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"} Erfahren Sie, wie Sie mit Gestaltungsbausteinen auf der Grundlage von Empfängerdaten dynamische, bedingte Inhalte in Ihre Nachrichten einfügen können.
-* [Bedingter Inhalt](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/conditions.html){target="_blank"}: Erfahren Sie, wie Sie bedingte Inhalte basierend auf Empfängerfeldwerten einfügen können.
+* [Personalization-Daten](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-data.html?lang=de){target="_blank"}: Hier erfahren Sie, wie Sie mithilfe verschiedener Datenquellen personalisieren können, um Ihre Sendungen anzupassen.
+* [Personalisierungsfelder](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-fields.html?lang=de){target="_blank"}: Erfahren Sie, wie Sie Personalisierungsfelder einfügen und verwenden können, damit jeder Empfänger seine eigenen Daten im Betreff oder Text Ihrer Nachricht sieht.
+* [Gestaltungsbausteine](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=de){target="_blank"} Erfahren Sie, wie Sie mit Gestaltungsbausteinen auf der Grundlage von Empfängerdaten dynamische, bedingte Inhalte in Ihre Nachrichten einfügen können.
+* [Bedingter Inhalt](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/conditions.html?lang=de){target="_blank"}: Erfahren Sie, wie Sie bedingte Inhalte basierend auf Empfängerfeldwerten einfügen können.
 
 >[!TAB Gutscheine, PDF-Dokumente und Emoticons]
 
@@ -61,7 +61,7 @@ Before starting sending emails:
 
 * Make sure recipient profiles contain at least an email address.
 * Learn more about the Adobe Campaign [Delivery best practices](delivery-best-practices.md).
-* Read out these sections to learn more about Deliverability: [Deliverability management in Campaign](about-deliverability.md) and [Deliverability best practices guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html).
+* Read out these sections to learn more about Deliverability: [Deliverability management in Campaign](about-deliverability.md) and [Deliverability best practices guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=de).
 
 The key steps to send an email are as follows:
 
