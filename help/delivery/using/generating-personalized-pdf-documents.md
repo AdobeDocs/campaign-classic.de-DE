@@ -5,8 +5,10 @@ description: Erfahren Sie, wie Sie personalisierte PDF-Dokumente erstellen
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Personalization
 role: User
+hide: true
+hidefromtoc: true
 exl-id: e5239d99-256b-412b-be20-f64f822da9c3
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
 workflow-type: tm+mt
 source-wordcount: '490'
 ht-degree: 97%
@@ -64,7 +66,7 @@ Konfigurieren Sie hierzu einen Gestaltungsbaustein und verweisen Sie auf diesen 
 
 * Gehen Sie in das Menü **[!UICONTROL Ressourcen > Kampagnenverwaltung > Gestaltungsbausteine]**.
 * Erstellen Sie einen neuen Baustein mit dem Titel &quot;Mein Logo&quot; und dem internen Namen &quot;Mein_Logo&quot;.
-* Öffnen Sie den Link **[!UICONTROL Erweiterte Parameter...]** ... und geben Sie an, dass der Baustein in einem Anhang enthalten ist. Mit Auswahl dieser Option wird die Definition des Gestaltungsbausteins direkt in den Inhalt der OpenOffice-Datei kopiert.**&#x200B;**
+* Öffnen Sie den Link **[!UICONTROL Erweiterte Parameter...]** ... und geben Sie an, dass der Baustein in einem Anhang enthalten ist. Mit Auswahl dieser Option wird die Definition des Gestaltungsbausteins direkt in den Inhalt der OpenOffice-Datei kopiert.****
 
   ![](assets/s_ncs_pdf_bloc_option.png)
 

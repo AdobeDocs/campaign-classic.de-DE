@@ -5,11 +5,13 @@ description: Erfahren Sie, wie Sie personalisierte Gutscheine erstellen und einf
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Personalization
 role: User
+hide: true
+hidefromtoc: true
 exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
-source-git-commit: 8e5a328bee7701adfedec6a533cc21b4ce548187
+source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
 workflow-type: tm+mt
-source-wordcount: '992'
-ht-degree: 100%
+source-wordcount: '991'
+ht-degree: 98%
 
 ---
 
@@ -19,7 +21,7 @@ Durch das Hinzufügen von Coupons zu Ihren Sendungen können Sie Ihren Empfänge
 
 >[!AVAILABILITY]
 >
->Die Couponverwaltung ist in Campaign v8 nicht im Kontext einer Enterprise-Bereitstellung (FFDA) verfügbar. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/architecture/ffda/enterprise-deployment){target="_blank"}.
+>Die Couponverwaltung ist in Campaign v8 nicht im Kontext einer Enterprise-Bereitstellung (FFDA) verfügbar. Weitere Informationen finden Sie in [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/architecture/ffda/enterprise-deployment){target="_blank"}.
 
 Die Couponverwaltung basiert auf einem Kit, das installiert werden muss. Um festzustellen, ob Sie dieses Kit zur Couponverwaltung installiert haben, gehen Sie zu **[!UICONTROL Administration > Konfiguration > Kit-Verwaltung > Installierte Kits.]**
 

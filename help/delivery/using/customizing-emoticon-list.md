@@ -5,8 +5,10 @@ description: Erfahren Sie, wie Sie die Emoticon-Liste unter Verwendung von Adobe
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Email, Push
 role: User, Data Engineer
+hide: true
+hidefromtoc: true
 exl-id: b8642df3-1960-4f2c-8273-c3988a3e85f0
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 94%
@@ -18,7 +20,7 @@ ht-degree: 94%
 Die im Popup angezeigten Emoticons werden in einer bestimmten Reihenfolge aufgezählt. Damit können Sie die Emoticons in einer Liste darstellen und deren Auswahl für bestimmte Felder beschränken.
 Die Reihenfolge der Emoticon-Liste kann angepasst werden. Außerdem können Sie der Liste weitere Emoticons hinzufügen.
 
-Beachten Sie, dass Emoticons nur für E-Mails und Push-Benachrichtigungen verfügbar sind. Weitere Informationen hierzu finden Sie in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=de#inserting-emoticons){target="_blank"}.
+Beachten Sie, dass Emoticons nur für E-Mails und Push-Benachrichtigungen verfügbar sind. Weitere Informationen hierzu finden Sie in der [ zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#inserting-emoticons){target="_blank"}.
 
 
 ## Hinzufügen eines neuen Emoticons {#add-new-emoticon}
@@ -29,7 +31,7 @@ Beachten Sie, dass Emoticons nur für E-Mails und Push-Benachrichtigungen verfü
 
 1. Wählen Sie ein neues Emoticon, das Sie hinzufügen möchten, von dieser [Seite](https://unicode.org/emoji/charts/full-emoji-list.html) aus. Beachten Sie, dass es mit den verschiedenen Plattformen wie Browser und Betriebssystem kompatibel sein muss.
 
-1. Wählen Sie im **[!UICONTROL Explorer]**&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Plattform]** > **[!UICONTROL Aufzählungen]** und klicken Sie auf die native Aufzählung **[!UICONTROL Emoticon-Liste]**.
+1. Wählen Sie im **[!UICONTROL Explorer]****[!UICONTROL Administration]** > **[!UICONTROL Plattform]** > **[!UICONTROL Aufzählungen]** und klicken Sie auf die native Aufzählung **[!UICONTROL Emoticon-Liste]**.
 
    >[!NOTE]
    >
@@ -63,7 +65,7 @@ Ihr neues Emoticon wird automatisch im Speicher abgelegt.
 
 1. Damit Ihre Änderungen wirksam werden, trennen Sie die Verbindung mit Adobe Campaign Classic und stellen Sie sie erneut her. Wenn Ihr neues Emoticon im Popup-Fenster **[!UICONTROL Emoticon einfügen]** immer noch nicht angezeigt wird, müssen Sie möglicherweise Ihren Cache löschen. Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](../../platform/using/faq-campaign-config.md#perform-soft-cache-clear).
 
-1. Ihr neues Emoticon finden Sie in Ihren Sendungen jetzt im Popup-Fenster **[!UICONTROL Emoticon einfügen]** an der 61. Position (wie in den vorherigen Schritten konfiguriert). Weitere Informationen zur Verwendung von Emoticons in Sendungen finden Sie in der [Campaign v8-Dokumentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=de#inserting-emoticons){target="_blank"}.
+1. Ihr neues Emoticon finden Sie in Ihren Sendungen jetzt im Popup-Fenster **[!UICONTROL Emoticon einfügen]** an der 61. Position (wie in den vorherigen Schritten konfiguriert). Weitere Informationen zur Verwendung von Emoticons in Sendungen finden Sie in der [Campaign v8-Dokumentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#inserting-emoticons){target="_blank"}.
 
    ![](assets/emoticon_4.png)
 

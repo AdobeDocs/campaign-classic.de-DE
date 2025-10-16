@@ -7,10 +7,10 @@ role: User, Developer, Data Engineer
 hide: true
 hidefromtoc: true
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
-source-git-commit: b353b562bd2f0b0bd2dfde22c6477ab66d499483
-workflow-type: ht
-source-wordcount: '981'
-ht-degree: 100%
+source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
+workflow-type: tm+mt
+source-wordcount: '983'
+ht-degree: 96%
 
 ---
 
@@ -82,7 +82,7 @@ Im unteren Bereich des Fensters haben Sie die Wahl zwischen:
 
 Eine Mirrorseite ist eine HTML-Seite, die über einen Webbrowser online abgerufen werden kann und deren Inhalt mit dem der E-Mail identisch ist.
 
-Standardmäßig wird die Mirrorseite automatisch generiert, wenn der entsprechende Link in den Inhalt der E-Mail eingefügt wurde. Weitere Informationen zum Einfügen von Gestaltungsbausteinen finden Sie unter [Gestaltungsbausteine](personalization-blocks.md).
+Standardmäßig wird die Mirrorseite automatisch generiert, wenn der entsprechende Link in den Inhalt der E-Mail eingefügt wurde. Weitere Informationen zum Einfügen von Gestaltungsbausteinen finden Sie in der [ zu Campaign v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}.
 
 In den Versandeigenschaften kann die Erzeugung der Seite über das Feld **[!UICONTROL Modus]** im Tab **[!UICONTROL Gültigkeit]** konfiguriert werden.
 
@@ -128,7 +128,7 @@ Weitere Informationen zur Bounce-Message-Verwaltung finden Sie in [diesem Abschn
 
 Sie können Ihren Sendungen auch SMTP-Header hinzufügen. Verwenden Sie dazu den entsprechenden Abschnitt der Registerkarte **[!UICONTROL SMTP]** im Versand.
 
-Das in diesem Fenster erfasste Script muss pro Zeile einen Header im Format **Name: Wert** enthalten.
+Das in diesem Fenster eingegebene Script muss pro Zeile auf einen einzelnen Header verweisen, und zwar in folgendem Format: **name:value**.
 
 Werte werden bei Bedarf automatisch verschlüsselt.
 

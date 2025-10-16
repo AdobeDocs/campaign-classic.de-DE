@@ -6,9 +6,9 @@ title: Campaign Classic v7 – Handbuch
 user-guide-description: Produktdokumentation für Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
 workflow-type: tm+mt
-source-wordcount: '2739'
+source-wordcount: '2744'
 ht-degree: 72%
 
 ---
@@ -164,12 +164,12 @@ ht-degree: 72%
       + [Erstellen eines Versands aus einer Vorlage - AUSGEBLENDET](delivery/using/creating-a-delivery-from-a-template.md)
    + Personalisieren von Sendungen {#personalizing-deliveries}
       + [Über die Personalisierung](delivery/using/about-personalization.md)
-      + [Personalisierungsfelder](delivery/using/personalization-fields.md)
-      + [Gestaltungsbausteine](delivery/using/personalization-blocks.md)
-      + [Bedingter Inhalt](delivery/using/conditional-content.md)
-      + [Personalisierte Gutscheine](delivery/using/personalized-coupons.md)
-      + [Personalisierte PDF-Dokumente erstellen](delivery/using/generating-personalized-pdf-documents.md)
-      + [Emoticon-Liste personalisieren](delivery/using/customizing-emoticon-list.md)
+      + [Personalisierungsfelder - VERBORGEN](delivery/using/personalization-fields.md)
+      + [Gestaltungsbausteine - VERBORGEN](delivery/using/personalization-blocks.md)
+      + [Bedingter Inhalt - AUSGEBLENDET](delivery/using/conditional-content.md)
+      + [Personalisierte Gutscheine - VERSTECKT](delivery/using/personalized-coupons.md)
+      + [Personalisierte PDF-Dokumente erstellen - AUSGEBLENDET](delivery/using/generating-personalized-pdf-documents.md)
+      + [Personalisieren der Emoticon-Liste](delivery/using/customizing-emoticon-list.md)
    + Verwenden von Testadressen {#using-seed-addresses}
       + [Über Testadressen](delivery/using/about-seed-addresses.md)
       + [Testadressen erstellen](delivery/using/creating-seed-addresses.md)

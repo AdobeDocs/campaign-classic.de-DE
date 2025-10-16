@@ -5,9 +5,9 @@ description: Erfahren Sie, wie Sie integrierte Campaign-Pakete installieren
 feature: Installation, Application Settings
 badge-v7-prem: label="Nur On-Premise/Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
 workflow-type: tm+mt
-source-wordcount: '1305'
+source-wordcount: '1306'
 ht-degree: 11%
 
 ---
@@ -157,7 +157,7 @@ In der folgenden Tabelle sind alle nativen Campaign-Packages aufgeführt.
   </tr> 
   <tr> 
    <td> Zugriff auf externe Daten (Federated Data Access)<br /> </td> 
-   <td> Bietet die Option Federated Data Access (FDA) , um in einer oder mehreren externen Datenbanken gespeicherte Informationen zu verarbeiten, sodass Sie auf externe Daten zugreifen können, ohne die Datenstruktur in Adobe Campaign zu ändern.  Optional. <a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/accessing-an-external-database-fda.html?lang=de" target="_blank">Weitere Informationen</a> <br /> </td> 
+   <td> Bietet die Option Federated Data Access (FDA) , um in einer oder mehreren externen Datenbanken gespeicherte Informationen zu verarbeiten, sodass Sie auf externe Daten zugreifen können, ohne die Datenstruktur in Adobe Campaign zu ändern.  Optional. <a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/accessing-an-external-database-fda.html" target="_blank">Weitere Informationen</a> <br /> </td> 
    <td> Alle<br /> </td> 
   </tr> 
   <tr> 
@@ -172,7 +172,7 @@ In der folgenden Tabelle sind alle nativen Campaign-Packages aufgeführt.
   </tr> 
   <tr> 
    <td> Couponverwaltung<br /> </td> 
-   <td> Erstellt einen Couponsatz, der künftigen Marketing-Angeboten hinzugefügt wird. Optional. <a href="../../delivery/using/personalized-coupons.md">Weitere Informationen</a> <br /> </td> 
+   <td> Erstellt einen Couponsatz, der künftigen Marketing-Angeboten hinzugefügt wird. Optional. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalized-coupons.html" target="_blank">Weitere Informationen</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 

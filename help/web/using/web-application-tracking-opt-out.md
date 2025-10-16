@@ -5,10 +5,10 @@ description: Opt-out vom Web-Anwendungs-Tracking
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Web Apps
 exl-id: 4bff6b55-3335-433e-a2ff-5d8c83e8f0d3
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
 workflow-type: tm+mt
 source-wordcount: '676'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -28,7 +28,7 @@ Wenn sich ein Endbenutzer entscheidet, das Verhaltens-Tracking per Cookies oder 
 
 Banner, die in Webanwendungen oder Landingpages angezeigt werden sollen, müssen konfiguriert werden.
 
-Adobe Campaign stellt ein Musterbanner bereit, das Sie an Ihre Anforderungen anpassen müssen. Diese Bannerversion wird im Inhaltsmodell-Ordner als Gestaltungsbaustein angezeigt. Mehr dazu erfahren Sie auf [dieser Seite](../../delivery/using/personalization-blocks.md).
+Adobe Campaign stellt ein Musterbanner bereit, das Sie an Ihre Anforderungen anpassen müssen. Diese Bannerversion wird im Inhaltsmodell-Ordner als Gestaltungsbaustein angezeigt. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}.
 
 >[!IMPORTANT]
 >
@@ -83,7 +83,7 @@ Die verfügbaren clientseitigen APIs zur individuellen Anpassung des Banners sin
 * **NL.ClientWebTracking.forbid()**: Stellt den Opt-out-Cookie-Wert so ein, dass Webtracking verboten ist. Der Besucher muss eine Eingabe vornehmen, damit Webtracking verboten wird.
 * **NL.ClientWebTracking.closeOptOutBanner(bannerDomElt)**: Schließt das Opt-out-Cookie-Banner, nachdem der Besucher auf die Annehmen- oder Ablehnen-Schaltfläche geklickt hat (während der Klick-Event-Bubbling-Phase).
 
-  bannerDomElt {DOMElement}: Das Wurzel-DOM-Element des Cookie-Banners, das entfernt werden muss
+  bannerDomElt {DOMElement} das DOM-Stammelement des Cookie-Banners, das entfernt werden muss
 
 * **NL.ClientWebTracking.hasUserPrefs()**: Gibt &quot;true&quot; zurück, wenn der Besucher Einstellungen für das Webtracking ausgewählt hat.
 * **NL.ClientWebTracking.getUserPrefs()**: Gibt den Opt-out-Cookie-Wert zurück, der die Eigenschaften des Benutzers definiert.
@@ -92,7 +92,7 @@ Zum Schreiben einer JSSP (JavaScript Server Page) stehen serverseitige APIs zur 
 
 * **NL.ServerWebTracking.generateOptOutBanner(escapeJs)**: Erzeugt das Markup für das Opt-out-Banner, das in die JSSP eingefügt wird.
 
-  **escapeJs {Boolean}**: &quot;true&quot;, wenn das erzeugte Markup escapt werden muss, damit es in JavaScript verwendet werden kann.
+  **escapeJs{Boolean}**: Ist diese Option aktiviert, wenn das generierte Markup maskiert werden muss, um innerhalb von JavaScript verwendet zu werden.
 
   Zurückgegeben wird der HTML-Code des Opt-out-Banner-Markups, das auf der Seite angezeigt werden soll.
 
@@ -108,7 +108,7 @@ Zum Schreiben einer JSSP (JavaScript Server Page) stehen serverseitige APIs zur 
 
   Rendert das Markup für das Opt-out-Banner, indem es in die JSSP eingefügt wird. Es wird in der JSSP unverändert zwischen &lt;% %> eingefügt.
 
-  **escapeJs {Boolean}**: &quot;true&quot;, wenn das erzeugte Markup escapt werden muss, damit es in JavaScript verwendet werden kann.
+  **escapeJs{Boolean}**: Ist diese Option aktiviert, wenn das generierte Markup zur Verwendung innerhalb von JavaScript maskiert werden muss
 
 Beispiel für eine JSSP:
 
