@@ -172,7 +172,7 @@ In der folgenden Tabelle sind alle nativen Campaign-Packages aufgeführt.
   </tr> 
   <tr> 
    <td> Couponverwaltung<br /> </td> 
-   <td> Erstellt einen Couponsatz, der künftigen Marketing-Angeboten hinzugefügt wird. Optional. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalized-coupons.html" target="_blank">Weitere Informationen</a> <br /> </td> 
+   <td> Erstellt einen Couponsatz, der künftigen Marketing-Angeboten hinzugefügt wird. Optional. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalized-coupons.html?lang=de" target="_blank">Weitere Informationen</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 

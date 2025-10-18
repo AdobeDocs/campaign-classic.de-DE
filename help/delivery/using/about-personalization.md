@@ -45,8 +45,8 @@ Erfahren Sie mehr über die wichtigsten Schritte im Zusammenhang mit bedingten I
 Auf diesen Seiten erfahren Sie mehr über personalisierte Gutscheine, PDF-Dokumente und die Emoticon-Anpassung **in der Dokumentation zu Campaign v8**:
 
 * [Personalisierte Gutscheine](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/ppersonalized-coupons.html){target="_blank"} Erfahren Sie, wie Sie personalisierte oder anonyme Gutscheine in Ihren E-Mail-Sendungen erstellen und zuweisen.
-* [Personalisierte PDF-Dokumente generieren](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/generating-personalized-pdf-documents.html){target="_blank"}: Erfahren Sie, wie Sie für jede Empfängerin und jeden Empfänger PDF-Anhänge mit personalisierten Inhalten generieren.
-* [Emoticon-Liste anpassen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/customizing-emoticon-list.html){target="_blank"}: Erfahren Sie, wie Sie Emoticons hinzufügen und verwalten können, um E-Mail-Nachrichten zu verbessern.
+* [Personalisierte PDF-Dokumente generieren](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/generating-personalized-pdf-documents.html?lang=de){target="_blank"}: Erfahren Sie, wie Sie für jede Empfängerin und jeden Empfänger PDF-Anhänge mit personalisierten Inhalten generieren.
+* [Emoticon-Liste anpassen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/customizing-emoticon-list.html?lang=de){target="_blank"}: Erfahren Sie, wie Sie Emoticons hinzufügen und verwalten können, um E-Mail-Nachrichten zu verbessern.
 
 >[!ENDTABS]
 
