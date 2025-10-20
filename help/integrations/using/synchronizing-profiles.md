@@ -7,9 +7,9 @@ hide: true
 hidefromtoc: true
 exl-id: 27970a6f-fb22-4418-b29c-c687fd62a78e
 source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1218'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ Wenn ein Empfänger in einer von Campaign Standard gesendeten E-Mail einen Abmel
 
 ## Erstellen eines neuen Empfängers {#creating-a-new-recipient}
 
-1. Erstellen Sie in Campaign v7 einen neuen Empfänger für die Replikation nach Campaign Standard. Geben Sie so viele Informationen wie möglich ein, einschließlich Nachname, Vorname, E-Mail-Adresse und Postanschrift des Empfängers. Wählen Sie jedoch keine **[!UICONTROL Anrede]** da diese im nächsten Abschnitt &quot;[&#x200B; bearbeiten“ &#x200B;](#editing-a-recipient) wird.
+1. Erstellen Sie in Campaign v7 einen neuen Empfänger für die Replikation nach Campaign Standard. Geben Sie so viele Informationen wie möglich ein, einschließlich Nachname, Vorname, E-Mail-Adresse und Postanschrift des Empfängers. Wählen Sie jedoch keine **[!UICONTROL Anrede]**, da diese im nächsten Abschnitt [Bearbeiten einer Empfängerin bzw. eines Empfängers](#editing-a-recipient) hinzugefügt wird.
 
    ![](assets/acs_connect_profile_sync_01.png)
 
@@ -57,11 +57,11 @@ Wenn ein Empfänger in einer von Campaign Standard gesendeten E-Mail einen Abmel
 
 Die folgenden Schritte zum Ändern eines einzelnen Datenpunkts veranschaulichen auf einfache Weise, wie Campaign v7 bei Verwendung von Datenreplikation zur primären Datenbank für Campaign Standard wird. Das Ändern oder Löschen replizierter Daten in Campaign v7 hat dieselbe Wirkung auf die entsprechenden Daten in Campaign Standard.
 
-1. Wählen Sie unter [Neuen Empfänger erstellen](#creating-a-new-recipient) den neu erstellten Empfänger aus und bearbeiten Sie seinen Namen. Wählen Sie beispielsweise eine **[!UICONTROL Anrede]** für den Empfänger (z. B. Herr oder Frau).
+1. Wählen Sie die Empfängerin bzw. den Empfänger, die/den Sie unter [Erstellen einer neuen Empfängerin bzw. eines neuen Empfängers](#creating-a-new-recipient) erstellt haben, und bearbeiten Sie den Empfängernamen. Wählen Sie beispielsweise eine **[!UICONTROL Anrede]** für die Empfängerin bzw. den Empfänger (Herr oder Frau). 
 
    ![](assets/acs_connect_profile_sync_03.png)
 
-1. Vergewissern Sie sich, dass der Name des Empfängers bzw. der Empfängerin in Campaign Standard aktualisiert wurde. Informationen darüber, wo Sie Profile in Campaign Standard ansehen können, finden Sie im Abschnitt [Navigationsprinzipien](https://experienceleague.adobe.com/docs/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html?lang=de).
+1. Vergewissern Sie sich, dass der Empfängername in Campaign Standard aktualisiert wurde. Informationen darüber, wo Sie Profile in Campaign Standard ansehen können, finden Sie im Abschnitt [Navigationsprinzipien](https://experienceleague.adobe.com/docs/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html?lang=de).
 
    ![](assets/acs_connect_profile_sync_04.png)
 
@@ -154,7 +154,7 @@ Folgen Sie den unten beschriebenen Schritten, um einem bestehenden Workflow eine
 
    ![](assets/acs_connect_profile_sync_18.png)
 
-1. Wählen Sie mit einem Doppelklick den Kanal **[!UICONTROL E-Mail-Versand]** aus. **&#x200B;**&#x200B;Klicken Sie auf **[!UICONTROL OK]**, um die Nachrichten zu senden.
+1. Wählen Sie mit einem Doppelklick den Kanal **[!UICONTROL E-Mail-Versand]** aus. **** Klicken Sie auf **[!UICONTROL OK]**, um die Nachrichten zu senden.
 
    ![](assets/acs_connect_profile_sync_19.png)
 
@@ -170,7 +170,7 @@ Befolgen Sie die Anweisungen in [Erstellen eines Workflows](#creating-a-workflow
 
    ![](assets/acs_connect_profile_sync_21.png)
 
-1. Die Empfängerdaten in Campaign v7 werden entsprechend aktualisiert. Bestätigen Sie, dass das Kontrollkästchen **[!UICONTROL Nicht mehr kontaktieren (egal über welchen Kanal)]** für den Empfänger aktiviert ist.
+1. Die Empfängerdaten in Campaign v7 werden entsprechend aktualisiert. Bestätigen Sie, dass die Option **[!UICONTROL Nicht mehr kontaktieren (alle Kanäle)]** für die Empfängerin bzw. den Empfänger aktiviert ist.
 
    ![](assets/acs_connect_profile_sync_22.png)
 

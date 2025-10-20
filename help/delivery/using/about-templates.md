@@ -8,9 +8,9 @@ hide: true
 hidefromtoc: true
 exl-id: d943898c-06fe-451d-aa28-8a95665f4112
 source-git-commit: 89e350c727fb9379d28916f79d9749f22fd4974f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '190'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -27,4 +27,4 @@ Es gibt zwei Arten von Vorlagen:
 1. Vordefinierte Versandvorlagen – Der oder die Adobe Campaign-Admin kann neue Versandvorlagen erstellen. Sie können von Benutzern (mit entsprechenden Zugriffsrechten) oder automatisch von Server-Prozessen wiederverwendet werden. Sie können beispielsweise eine E-Mail-Versandvorlage konfigurieren. Wenn Benutzende einen Versand mithilfe dieser Vorlage erstellen, müssen sie lediglich den Text oder den HTML-Inhalt eingeben und ihn dann versenden. Die anderen Optionen wurden bereits von der oder dem Admin definiert.
 
 
-Wie Sie Versandvorlagen erstellen und verwenden, erfahren Sie in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/create-templates){target="_blank"}.
+Informationen zur Erstellung und Verwendung von Versandvorlagen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/create-templates){target="_blank"}.

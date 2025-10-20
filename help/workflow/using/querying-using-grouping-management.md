@@ -7,9 +7,9 @@ hide: true
 hidefromtoc: true
 exl-id: 23bccb48-60ab-46c9-be26-2fa35243d61e
 source-git-commit: 9df46ed923831ffdfb28acddfbc371cecafb251c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '312'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -29,11 +29,11 @@ Im folgenden Beispiel werden die E-Mail-Domains gesucht, die bei früheren Sendu
 
 * Nach welchen Kriterien werden die Daten gruppiert?
 
-  Basierend auf der E-Mail-Domain mit einer Anzahl von Primärschlüsseln über 30. Dieser Vorgang wird mit der Option **[!UICONTROL Gruppieren nach +]** ausgeführt. **[!UICONTROL Gruppieren nach +]**: ermöglicht die Gruppierung von Daten („Gruppieren nach„) und die Auswahl der Gruppierung („Gruppieren nach„).
+  Nach E-Mail-Domain mit einer Anzahl von über 30 Primärschlüsseln. Dieser Vorgang wird mit der Option **[!UICONTROL Group by + Having]** ausgeführt. **[!UICONTROL Group by + Having]** ermöglicht die Gruppierung von Daten („group by“) und die Auswahl dessen, was gruppiert ist („having“).
 
 Gehen Sie wie folgt vor:
 
-1. Öffnen Sie den **[!UICONTROL generischen Abfrage-Editor]** und wählen Sie die Empfängertabelle (**nms:recipient**) aus.
+1. Öffnen Sie das **[!UICONTROL generische Abfragetool]** und wählen Sie die Empfängertabelle (**nms:recipient**).
 
    ![](assets/query_editor_02.png)
 
@@ -52,7 +52,7 @@ Gehen Sie wie folgt vor:
 1. Wählen Sie dann im Fenster **[!UICONTROL Datenfilter]** die Option **[!UICONTROL Filterbedingungen]**. Wechseln Sie zum Fenster **[!UICONTROL Zielelemente]** und klicken Sie auf **[!UICONTROL Weiter]**.
 1. Klicken Sie im Fenster **[!UICONTROL Gruppierung der Daten]** auf **[!UICONTROL Hinzufügen]** und wählen Sie das Feld **[!UICONTROL E-Mail-Domain]** aus.
 
-   Dieses Datengruppierungsfenster wird nur angezeigt, wenn das Kontrollkästchen **[!UICONTROL Gruppierungen verwalten (GROUP BY + HAVING])** wurde.
+   Das Datengruppierungsfenster wird nur angezeigt, wenn die Option **[!UICONTROL Gruppierungen verwalten (GROUP BY + HAVING])** aktiviert wurde.
 
    ![](assets/query_editor_blocklist_04.png)
 

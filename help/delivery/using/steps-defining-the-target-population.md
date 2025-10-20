@@ -8,9 +8,9 @@ hide: true
 hidefromtoc: true
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
 source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1878'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Um die Versandempfänger auszuwählen, gehen Sie wie folgt vor:
 
    ![](assets/s_ncs_user_wizard_email02a.png)
 
-1. Wählen Sie Zielgruppen-Mapping aus der Dropdown-Liste **[!UICONTROL Zielgruppen-Mapping]** aus. Das standardmäßige Zielgruppen-Mapping in Adobe Campaign **[!UICONTROL „Empfänger]**, basierend auf **nms:recipient**-Schema.
+1. Wählen Sie Zielgruppen-Mapping aus der Dropdown-Liste **[!UICONTROL Zielgruppen-Mapping]** aus. Die Adobe Campaign-Standardeinstellung für Zielgruppen-Mapping ist **[!UICONTROL Empfänger]**, basierend auf dem Schema **nms:recipient**.
 
    Es sind weitere Zielgruppen-Mappings verfügbar, von denen sich einige auf Ihre spezifische Konfiguration beziehen können. [Weitere Informationen](#select-a-target-mapping).
 
@@ -48,7 +48,7 @@ Um die Versandempfänger auszuwählen, gehen Sie wie folgt vor:
 
    Folgende Zieltypen werden standardmäßig vorgeschlagen:
 
-   * **[!UICONTROL Filterbedingungen]**: Erstellung einer Abfrage mit der Möglichkeit der Vorschau auf das Ergebnis. Weitere Informationen zu Filtern finden Sie in der Dokumentation zu [&#x200B; v8 (Konsole](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+   * **[!UICONTROL Filterbedingungen]**: Erstellung einer Abfrage mit der Möglichkeit der Vorschau auf das Ergebnis. Weitere Informationen zu Filtern finden Sie in der [Dokumentation zu Campaign v8 (Konsole)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
    * **[!UICONTROL Abonnenten eines Informationsdienstes]**: Angabe des Newsletters, den die Empfänger abonniert haben müssen, um in die Zielgruppe des Versands aufgenommen zu werden.
 
      ![](assets/s_ncs_user_wizard_email02c.png)
@@ -72,7 +72,7 @@ Um die Versandempfänger auszuwählen, gehen Sie wie folgt vor:
    * **[!UICONTROL Empfänger aus einem Ordner]**: Angabe des Ordners, der die Empfänger erhält.
    * **[!UICONTROL Empfänger]**: Auswahl eines spezifischen Empfängers aus der Datenbank.
    * **[!UICONTROL Empfängerliste]**: Auswahl einer die Empfänger enthaltenden Liste. Listen finden Sie in [diesem Abschnitt](../../platform/using/creating-and-managing-lists.md).
-   * **[!UICONTROL Benutzerfilter]**: ermöglicht den Zugriff auf vom Benutzer erstellte Filter. Weitere Informationen zu Filtern finden Sie in der Dokumentation zu [&#x200B; v8 (Konsole](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+   * **[!UICONTROL Benutzerfilter]**: ermöglicht den Zugriff auf vom Benutzer erstellte Filter. Weitere Informationen zu Filtern finden Sie in der [Dokumentation zu Campaign v8 (Konsole)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
    * Die Option **[!UICONTROL Empfänger, die diesem Segment entsprechen, ausschließen]** ermöglicht es Ihnen, Empfängerinnen und Empfänger anzusprechen, die die definierten Zielkriterien nicht erfüllen. Um diese Option zu verwenden, aktivieren Sie das entsprechende Kästchen und wenden Sie dann die zuvor definierte Zielgruppenbestimmung an, um die resultierenden Profile auszuschließen.
 
      ![](assets/s_ncs_user_wizard_email02g.png)
@@ -230,7 +230,7 @@ Siehe auch:
 
 ## Auswählen eines Zielgruppen-Mappings {#select-a-target-mapping}
 
-Standard-Zielgruppe in Versandvorlagen sind die **[!UICONTROL Empfangenden]**. Ihr Zielgruppen-Mapping verwendet daher die Felder der **nms:recipient**-Tabelle. Adobe Campaign stellt jedoch auch andere Zielgruppen-Mappings zur Verfügung, auf die Sie je nach Bedarf zurückgreifen können.
+Standard-Zielgruppe in Versandvorlagen sind die **[!UICONTROL Empfangenden]**. Das Zielgruppen-Mapping verwendet also die Felder der Tabelle **nms:recipient**. Adobe Campaign stellt jedoch auch andere Zielgruppen-Mappings zur Verfügung, auf die Sie je nach Bedarf zurückgreifen können.
 
 ![](assets/delivery_select_mapping.png)
 
@@ -251,6 +251,6 @@ Folgende Mappings sind vorhanden:
 
 In diesem Video erfahren Sie, wie Sie einer vorhandenen E-Mail Testadressen und Testsendungen hinzufügen und diese ausführen.
 
->[!VIDEO](https://video.tv.adobe.com/v/35532?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/25606?quality=12)
 
 Weitere Anleitungsvideos zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).

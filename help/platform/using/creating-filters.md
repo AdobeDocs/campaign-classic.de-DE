@@ -6,9 +6,9 @@ hide: true
 hidefromtoc: true
 exl-id: 58e54f67-dc87-42f1-8426-6f801e8e4fb6
 source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '124'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 87%
 
 Beim Filtern von Daten wird ein kleinerer Teil Ihrer Datenmenge ausgewählt, nämlich nur die Einträge, die bestimmten Kriterien entsprechen. Diese Teilmenge wird für bestimmte Aktionen (Aktualisierungen, Erstellung von Zielgruppen) oder Analysen verwendet.
 
-Beim Navigieren im Adobe Campaign-**[!UICONTROL Explorer]** (zugänglich über die entsprechende Schaltfläche auf der Startseite) werden die Informationen der Datenbank in Form von Listen angezeigt. Diese Listen können so konfiguriert werden, dass nur die dem Benutzer nützlichen Elemente angezeigt werden. Auf den gefilterten Daten können dann Aktionen gestartet werden. Die Filterkonfiguration ermöglicht eine **[!UICONTROL dynamische]** Auswahl von Daten einer Liste. Bei Datenänderungen werden die gefilterten Daten automatisch aktualisiert.
+Beim Navigieren im Adobe Campaign-**[!UICONTROL Explorer]** (zugänglich über die entsprechende Schaltfläche auf der Startseite) werden die Informationen der Datenbank in Form von Listen angezeigt. Diese Listen können so konfiguriert werden, dass nur die für Benutzende nützlichen Elemente angezeigt werden. Auf den gefilterten Daten können dann Aktionen gestartet werden. Die Filterkonfiguration ermöglicht eine **[!UICONTROL dynamische]** Auswahl von Daten einer Liste. Bei Datenänderungen werden die gefilterten Daten automatisch aktualisiert.
 
-Weitere Informationen zu **Filtern und deren Verwendung** finden Sie in der Dokumentation [Campaign v8 (Konsole)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/audience/create-audiences/create-filters){target=_blank}.
+Weitere Informationen über **Filter und deren Verwendung** finden Sie in der [Dokumentation zu Campaign v8 (Konsole)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/audience/create-audiences/create-filters){target=_blank}.
 
 
 <!--

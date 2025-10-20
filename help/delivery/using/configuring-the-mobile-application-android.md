@@ -9,9 +9,9 @@ hide: true
 hidefromtoc: true
 exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
 source-git-commit: 89e350c727fb9379d28916f79d9749f22fd4974f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '937'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -46,11 +46,11 @@ Wählen Sie den jeweiligen Connector folgendermaßen aus:
 1. Wählen Sie das externe Konto **[!UICONTROL Android-Routing]** aus.
 1. Füllen Sie im **[!UICONTROL Connector]**-Tab das Feld **[!UICONTROL Connector-JavaScript]** aus:
 
-   Für Android v2: https://localhost:8080/nms/jsp/androidPushConnectorV2.js
+   Für Android V2: https://localhost:8080/nms/jsp/androidPushConnectorV2.js
 
    >[!NOTE]
    >
-   > Sie können ihn auch wie unter https://localhost:8080/nms/jsp/androidPushConnector.js konfigurieren. Wir empfehlen Ihnen jedoch, Version 2 des Connectors zu verwenden.
+   > Sie können das Feld auch wie folgt konfigurieren: https://localhost:8080/nms/jsp/androidPushConnector.js; wir empfehlen Ihnen jedoch, Version 2 des Connectors zu verwenden.
 
    ![](assets/nmac_connectors3.png)
 
@@ -60,7 +60,7 @@ Wählen Sie den jeweiligen Connector folgendermaßen aus:
 
 ## Konfigurieren des Android-Service {#configuring-android-service}
 
-![](assets/do-not-localize/how-to-video.png) [Erfahren Sie in diesem Video, wie Sie einen Android-Service konfigurieren](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-an-android-service-in-campaign.html?lang=de#configuring-an-android-service-and-creating-an-android-mobile-application-in-campaign){target="_blank"}.
+![](assets/do-not-localize/how-to-video.png) [Erfahren Sie im Video, wie Sie einen Android-Service konfigurieren](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-an-android-service-in-campaign.html?lang=de#configuring-an-android-service-and-creating-an-android-mobile-application-in-campaign){target="_blank"}.
 
 1. Klicken Sie im Knoten **[!UICONTROL Profile und Zielgruppen > Dienste und Abonnements]** auf die Schaltfläche **[!UICONTROL Neu]**.
 
@@ -71,7 +71,7 @@ Wählen Sie den jeweiligen Connector folgendermaßen aus:
 
    >[!NOTE]
    >
-   >Das standardmäßige **[!UICONTROL Abonnierte Anwendungen (nms:appSubscriptionRcp)]** Zielgruppen-Mapping ist mit der Empfängertabelle verknüpft. Wenn Sie ein anderes Zielgruppen-Mapping verwenden möchten, müssen Sie ein neues Zielgruppen-Mapping erstellen und es im Feld **[!UICONTROL Zielgruppen-Mapping]** des Dienstes eingeben. Weiterführende Informationen zur Erstellung des Zielgruppen-Mappings finden Sie in [diesem Abschnitt](../../configuration/using/about-custom-recipient-table.md).
+   >Das standardmäßige Zielgruppen-Mapping für **[!UICONTROL abonnierte Anwendungen (nms:appSubscriptionRcp)]** ist mit der Empfängertabelle verknüpft. Wenn Sie ein anderes Zielgruppen-Mapping verwenden möchten, müssen Sie ein neues Zielgruppen-Mapping erstellen und es im Feld **[!UICONTROL Zielgruppen-Mapping]** des Dienstes eingeben. Weiterführende Informationen zur Erstellung des Zielgruppen-Mappings finden Sie in [diesem Abschnitt](../../configuration/using/about-custom-recipient-table.md).
 
    ![](assets/nmac_ios.png)
 
@@ -105,7 +105,7 @@ Nachdem Sie den Dienst erstellt haben, müssen Sie jetzt Ihre Android-Mobile-App
 
 1. Klicken Sie auf **[!UICONTROL Beenden]** und danach auf **[!UICONTROL Speichern]**. Ihre Android-Anwendung kann jetzt in Campaign Classic verwendet werden.
 
-Standardmäßig speichert Adobe Campaign einen Schlüssel im Feld **[!UICONTROL Benutzerkennung]** (@userKey) der Tabelle **[!UICONTROL Abonnierte Anwendungen (nms:appSubscriptionRcp)]**. Mit diesem Schlüssel können Sie ein Abonnement mit einem Empfänger verknüpfen. Um zusätzliche Daten zu erfassen (z. B. einen komplexen Abstimmschlüssel), müssen Sie die folgende Konfiguration anwenden:
+Standardmäßig speichert Adobe Campaign einen Schlüssel im Feld **[!UICONTROL Benutzerkennung]** (@userKey) der Tabelle **[!UICONTROL Abonnierte Anwendungen (nms:appSubscriptionRcp)]**. Mit diesem Schlüssel können Sie ein Abonnement mit einer Empfängerin bzw. einem Empfänger verknüpfen. Um zusätzliche Daten zu erfassen (z. B. einen komplexen Abstimmschlüssel), müssen Sie die folgende Konfiguration anwenden:
 
 ### Konfigurieren der API-Version{#select-api-version}
 
@@ -153,7 +153,7 @@ Im Folgenden finden Sie die FCM-Payload-Namen, mit denen Sie Ihre Push-Benachric
 
 Sie müssen die **appsubscriptionRcp** erweitern, um in der Campaign-Datenbank neue zusätzliche Felder zum Speichern von Parametern aus der App zu definieren. Diese Felder werden beispielsweise für die Personalisierung verwendet. Gehen Sie dazu wie folgt vor:
 
-1. Erstellen Sie eine Erweiterung des Schemas **[!UICONTROL Abonnierte Anwendungen (nms:appsubscriptionRcp)]** und definieren Sie die neuen Felder. Weitere Informationen zur Erweiterung eines Schemas finden Sie auf [dieser Seite](../../configuration/using/about-schema-edition.md)
+1. Erweitern Sie das Schema **[!UICONTROL Abonnierte Anwendungen (nms:appsubscriptionRcp)]** und definieren Sie die neuen Felder. Weitere Informationen zur Erweiterung eines Schemas finden Sie auf [dieser Seite](../../configuration/using/about-schema-edition.md)
 
 1. Geben Sie auf der Registerkarte **[!UICONTROL Abonnementparameter]** das Mapping an.
 

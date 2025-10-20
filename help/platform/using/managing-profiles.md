@@ -10,9 +10,9 @@ exl-id: e1d0556a-6f30-4863-9025-eb9c1b8b53d3
 hide: true
 hidefromtoc: true
 source-git-commit: d3a603bbb70dc63e72b6eed87a6503e155aff54e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '141'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Jeder Knoten entspricht einem Ordner. Die Daten eines Ordners sind als in sich a
 >
 > * Um eine Liste aller in der Datenbank enthaltenen Empfänger anzuzeigen, ist die Erstellung einer Ansicht erforderlich. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8 (Konsole)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
 >
-> * Weitere Informationen zum Verwalten von Profilen finden Sie in der Dokumentation [Campaign v8 (Konsole)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
+> * Weitere Informationen zum Verwalten von Profilen finden Sie in der [Dokumentation zu Campaign v8 (Konsole)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
 
 
 <!--
