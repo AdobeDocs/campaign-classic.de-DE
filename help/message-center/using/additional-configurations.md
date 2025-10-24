@@ -104,7 +104,7 @@ In diesem Abschnitt wird eine Lösung beschrieben, mit der Tracking- und Mirrors
 
 ### Kompatibilitätshinweis {#compatibility-note}
 
-Diese alte Branding-Konfiguration ist nicht kompatibel mit dem neuen [zentralisierten Branding](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/branding/branding-gs.html){target="_blank"}-Modell, das in Campaign v8 eingeführt wurde.
+Diese alte Branding-Konfiguration ist nicht kompatibel mit dem neuen [zentralisierten Branding](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/branding/branding-gs.html?lang=de){target="_blank"}-Modell, das in Campaign v8 eingeführt wurde.
 
 Wenn Ihre bestehende Umgebung diese alte Konfiguration verwendet, kann sie nicht direkt zum neuen zentralisierten Branding-Modell migriert werden. Um das neue System zu übernehmen, müssen die Branding-Einstellungen vollständig neu implementiert werden.
 
