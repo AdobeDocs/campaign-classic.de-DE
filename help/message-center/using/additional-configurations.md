@@ -7,10 +7,10 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: bba3f23637dd67a1557203c5ed1b93a6cb044870
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 97%
+source-wordcount: '889'
+ht-degree: 91%
 
 ---
 
@@ -102,6 +102,12 @@ Wenn Sie den Zeitplan des Archivierungs-Workflows ändern, müssen Sie auch den 
 
 In diesem Abschnitt wird eine Lösung beschrieben, mit der Tracking- und Mirrorseiten-URLs einer jeden Marke für Transaktionsnachrichten in Adobe Campaign konfiguriert werden können.
 
+### Kompatibilitätshinweis {#compatibility-note}
+
+Diese alte Branding-Konfiguration ist nicht kompatibel mit dem neuen [zentralisierten Branding](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/branding/branding-gs.html){target="_blank"}-Modell, das in Campaign v8 eingeführt wurde.
+
+Wenn Ihre bestehende Umgebung diese alte Konfiguration verwendet, kann sie nicht direkt zum neuen zentralisierten Branding-Modell migriert werden. Um das neue System zu übernehmen, müssen die Branding-Einstellungen vollständig neu implementiert werden.
+
 ### Voraussetzungen {#prerequisites}
 
 * Alle Hosts müssen der Konfigurationsdatei der Instanz (`config-<instance>.xml`) hinzugefügt werden.
@@ -167,7 +173,7 @@ Auf der Kontrollinstanz müssen Sie Versandvorlagen und externe Konten miteinand
 
 Gehen Sie dazu wie folgt vor:
 
-1. Erstellen Sie auf der [&#128279;](#execution-instance)Ausführungsinstanz für jede Marke ein externes Konto mit demselben internen Namen (Schritt 1).
+1. Erstellen Sie auf der ](#execution-instance)Ausführungsinstanz[ für jede Marke ein externes Konto mit demselben internen Namen (Schritt 1).
 
 1. Erstellen Sie für jede Marke eine Versandvorlage. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=de){target="_blank"}.
 
