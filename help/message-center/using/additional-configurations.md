@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: instance-configuration
 exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
 source-git-commit: bba3f23637dd67a1557203c5ed1b93a6cb044870
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '889'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -104,9 +104,9 @@ In diesem Abschnitt wird eine Lösung beschrieben, mit der Tracking- und Mirrors
 
 ### Kompatibilitätshinweis {#compatibility-note}
 
-Diese alte Branding-Konfiguration ist nicht kompatibel mit dem neuen [zentralisierten Branding](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/branding/branding-gs.html?lang=de){target="_blank"}-Modell, das in Campaign v8 eingeführt wurde.
+Diese Branding-Konfiguration der Vorgängerversion ist nicht kompatibel mit dem neuen Modell für [zentralisiertes Branding](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/branding/branding-gs.html?lang=de){target="_blank"}, das in Campaign v8 eingeführt wurde.
 
-Wenn Ihre bestehende Umgebung diese alte Konfiguration verwendet, kann sie nicht direkt zum neuen zentralisierten Branding-Modell migriert werden. Um das neue System zu übernehmen, müssen die Branding-Einstellungen vollständig neu implementiert werden.
+Wenn Ihre bestehende Umgebung diese alte Konfiguration verwendet, kann sie nicht direkt zum neuen Modell für zentralisiertes Branding migriert werden. Um das neue System zu übernehmen, müssen die Branding-Einstellungen vollständig neu implementiert werden.
 
 ### Voraussetzungen {#prerequisites}
 
@@ -126,7 +126,7 @@ Gehen Sie auf den Ausführungsinstanzen wie folgt vor:
    >
    >Näheres dazu, wie Sie ein externes Konto vom Typ Ausführungsinstanz erstellen, finden Sie in [diesem Abschnitt](../../message-center/using/configuring-instances.md#control-instance).
 
-1. Erweitern Sie das nms:extAccount-Schema, um die Tracking-URL hinzuzufügen:
+1. Erweitern Sie das Schema nms:extAccount, um die Tracking-URL hinzuzufügen:
 
    ```
    <attribute advanced="true" desc="URL of the tracking servers" label="Tracking server URL"
@@ -137,7 +137,7 @@ Gehen Sie auf den Ausführungsinstanzen wie folgt vor:
    >
    >Näheres dazu, wie Sie ein vorhandenes Schema erweitern, finden Sie im Abschnitt [Erweitern eines Schemas](../../configuration/using/extending-a-schema.md).
 
-1. Ändern Sie das nms:extAccount-Formular:
+1. Passen Sie das Formular nms:extAccount an:
 
    ```
    <container label="Message domain branding" type="frame">
@@ -173,7 +173,7 @@ Auf der Kontrollinstanz müssen Sie Versandvorlagen und externe Konten miteinand
 
 Gehen Sie dazu wie folgt vor:
 
-1. Erstellen Sie auf der [&#128279;](#execution-instance)Ausführungsinstanz für jede Marke ein externes Konto mit demselben internen Namen (Schritt 1).
+1. Erstellen Sie auf der ](#execution-instance)Ausführungsinstanz[ für jede Marke ein externes Konto mit demselben internen Namen (Schritt 1).
 
 1. Erstellen Sie für jede Marke eine Versandvorlage. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=de){target="_blank"}.
 

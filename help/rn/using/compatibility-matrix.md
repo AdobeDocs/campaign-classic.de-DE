@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '857'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -472,7 +472,7 @@ Das Campaign SDK ist ab Campaign v7.4 [veraltet](deprecated-features.md). Um ein
 
 ## Browser {#Browsers}
 
-Die folgenden Browser sind in der jeweils aktuellen Version mit Campaign für den Web-Zugriff kompatibel. Weitere Informationen hierzu finden Sie in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html?lang=de#use-the-web-interface-){target=_blank}.
+Die folgenden Browser sind in der jeweils aktuellen Version für den Web-Zugriff mit Campaign kompatibel. Weiterführende Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html?lang=de#use-the-web-interface-){target=_blank}.
 
 * Google Chrome
 * Microsoft Edge

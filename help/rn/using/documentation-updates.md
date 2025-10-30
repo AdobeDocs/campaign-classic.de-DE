@@ -9,9 +9,9 @@ hide: true
 hidefromtoc: true
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3888'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -419,7 +419,7 @@ Zu den folgenden Themen sind jetzt Anleitungsvideos verfügbar:
 
 * [Personalisieren von E-Mails mit Personalisierungsfeldern](../../delivery/using/personalization-fields.md)
 
-* [Verwalten von Testadressen und Testsendungen in einer E-](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/create-message#target-population){target="_blank"}.
+* [Verwalten von Testadressen und Testsendungen in einer E-Mail](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=de#target-population){target="_blank"}.
 
 * [Einrichten eines wiederkehrenden Versands](../../workflow/using/recurring-delivery.md)
 

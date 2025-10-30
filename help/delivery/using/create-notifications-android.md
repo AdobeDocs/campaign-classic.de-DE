@@ -8,15 +8,15 @@ hide: true
 hidefromtoc: true
 exl-id: 13ccc5d6-4355-42ba-80dc-30a45d3b69a4
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '753'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # Erstellen von Benachrichtigungen für Android{#create-notificaations-android}
 
-Verwenden Sie Adobe Campaign, um Push-Benachrichtigungen an Android-Geräte zu senden. Allgemeine Konzepte zur Versanderstellung finden Sie in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=de){target="_blank"}.
+Verwenden Sie Adobe Campaign, um Push-Benachrichtigungen an Android-Geräte zu senden. Allgemeine Methoden zur Versanderstellung finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=de){target="_blank"}.
 
 Erstellen Sie zunächst einen neuen Versand:
 
@@ -47,7 +47,7 @@ Weitere Informationen zu Firebase Cloud Messaging-Nachrichtentypen finden Sie in
 
    ![](assets/nmac_android_7.png)
 
-1. Wählen Sie im Fenster **[!UICONTROL Zieltyp]**&#x200B;**&#x200B;** die Option &quot;Abonnenten einer Android-Mobile-App&quot; aus und klicken Sie auf **[!UICONTROL Weiter]**.
+1. Wählen Sie im Fenster **[!UICONTROL Zieltyp]****** die Option &quot;Abonnenten einer Android-Mobile-App&quot; aus und klicken Sie auf **[!UICONTROL Weiter]**.
 
 1. Wählen Sie aus der Dropdown-Liste **[!UICONTROL Dienst]** den zuvor erstellten Dienst und dann die Anwendung aus. Klicken Sie anschließend auf **[!UICONTROL Beenden]**.
 Die **[!UICONTROL Anwendungsvariablen]** werden je nachdem, was bei den Konfigurationsschritten hinzugefügt wurde, automatisch hinzugefügt.
@@ -70,7 +70,7 @@ Auf den Android-Mobilgeräten der Abonnenten sollten das Bild und die Webseite i
 
 ## Erstellen von Benachrichtigungsinhalten {#creating-notification-message}
 
-![](assets/do-not-localize/how-to-video.png) [Erfahren Sie in diesem Video, wie Sie eine Android-Push-Benachrichtigung erstellen](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html?lang=de#additional-resources){target="_blank"}.
+![](assets/do-not-localize/how-to-video.png) [Erfahren Sie im Video, wie Sie eine Android-Push-Benachrichtigung erstellen](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html?lang=de#additional-resources){target="_blank"}.
 
 1. Gehen Sie zu **[!UICONTROL Kampagnenverwaltung]** > **[!UICONTROL Sendungen]**.
 
@@ -84,7 +84,7 @@ Auf den Android-Mobilgeräten der Abonnenten sollten das Bild und die Webseite i
 
    ![](assets/nmac_android_7.png)
 
-1. Wählen Sie im Fenster **[!UICONTROL Zieltyp]**&#x200B;**&#x200B;** die Option &quot;Abonnenten einer Android-Mobile-App&quot; aus und klicken Sie auf **[!UICONTROL Weiter]**.
+1. Wählen Sie im Fenster **[!UICONTROL Zieltyp]****** die Option &quot;Abonnenten einer Android-Mobile-App&quot; aus und klicken Sie auf **[!UICONTROL Weiter]**.
 
 1. Wählen Sie aus der Dropdown-Liste **[!UICONTROL Dienst]** den zuvor erstellten Dienst und dann die Anwendung aus. Klicken Sie anschließend auf **[!UICONTROL Beenden]**.
 

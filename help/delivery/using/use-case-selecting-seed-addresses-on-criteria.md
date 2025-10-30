@@ -1,18 +1,18 @@
 ---
 product: campaign
-title: 'Anwendungsbeispiel: Auswählen von Testadressen nach Kriterien'
-description: 'Anwendungsbeispiel: Auswählen von Testadressen nach Kriterien'
+title: 'Anwendungsfall: Auswählen von Testadressen nach Kriterien'
+description: 'Anwendungsfall: Auswählen von Testadressen nach Kriterien'
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Seed Address
 exl-id: 091648b8-bf2d-4595-8be3-287f1ac48edd
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '925'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# Anwendungsbeispiel: Auswählen von Testadressen nach Kriterien{#use-case-selecting-seed-addresses-on-criteria}
+# Anwendungsfall: Auswählen von Testadressen nach Kriterien{#use-case-selecting-seed-addresses-on-criteria}
 
 
 Der Link **[!UICONTROL Dynamische Bedingung bearbeiten...]** ermöglicht es, im Rahmen einer Kampagne oder einer Sendung die zu verwendenden Testadressen nach bestimmten Kriterien auszuwählen.
@@ -30,7 +30,7 @@ Zur Verwendung von dynamischen Bedingungen benötigen Sie:
 
 ## Schritt 1: Erstellen eines Versands {#step-1---creating-a-delivery}
 
-Die Schritte zum Erstellen eines Versands werden in der Dokumentation zu [&#x200B; v8 &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/emails/email){target="_blank"}.
+Die Schritte zur Versanderstellung werden in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email.html?lang=de){target="_blank"} beschrieben.
 
 Im vorliegenden Beispiel hat der Versandverantwortliche zunächst den Newsletter erstellt und die Zielgruppe ausgewählt.
 
@@ -174,7 +174,7 @@ Sie können nun die dynamische Bedingung für die Testadressen-Auswahl definiere
 
    >[!NOTE]
    >
-   >Die zuvor vorgenommene Schemaerweiterung beruht auf dem Empfängerschema **recipient**. Dies gilt auch für die Auflistung, aus der die oben zu sehenden Werte stammen.**&#x200B;**
+   >Die zuvor vorgenommene Schemaerweiterung beruht auf dem Empfängerschema **recipient**. Dies gilt auch für die Auflistung, aus der die oben zu sehenden Werte stammen.****
 
 1. Bestätigen Sie die Aktion mit der Schaltfläche **[!UICONTROL OK]**.
 

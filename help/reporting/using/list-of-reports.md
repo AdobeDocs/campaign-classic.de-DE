@@ -6,9 +6,9 @@ badge: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Reporting, Monitoring
 exl-id: c01f4850-ab17-44ac-a5e0-ff082ec206b3
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1020'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -119,11 +119,11 @@ Weitere Informationen zum Inhalt dieser Berichte erhalten Sie in diesem [Abschni
 
 ## Kampagnenberichte {#reports-on-campaigns}
 
-Berichte über Kampagnen beziehen sich auf die Daten der Tabelle **nms:operation**.
+Berichte zu Kampagnen beziehen sich auf die Daten in der Tabelle **nms:operation**.
 
 Die nativen Berichte von Adobe Campaign werden in der folgenden Tabelle aufgelistet.
 
-Weitere Informationen zum Inhalt dieser Berichte finden Sie in der Dokumentation zu [&#x200B; v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=de){target=_blank}.
+Weitere Informationen zum Inhalt dieser Berichte finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=de){target=_blank}.
 
 <table> 
  <tbody> 
@@ -180,7 +180,7 @@ Weitere Informationen zum Inhalt dieser Berichte finden Sie in der Dokumentation
 
 ## Dienstberichte {#reports-on-services}
 
-Berichte über Services beziehen sich auf die Daten der Tabelle **nms:service**.
+Berichte zu Services beziehen sich auf die Daten in der Tabelle **nms:service**.
 
 Die nativen Berichte von Adobe Campaign werden in der folgenden Tabelle aufgelistet.
 
@@ -219,7 +219,7 @@ Weitere Informationen zum Inhalt dieser Berichte erhalten Sie in den zugehörige
 
 Die nativen Berichte von Adobe Campaign werden in der folgenden Tabelle aufgelistet.
 
-Weitere Informationen zum Inhalt dieser Berichte finden Sie in der Dokumentation zu [&#x200B; v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=de){target=_blank}.
+Weitere Informationen zum Inhalt dieser Berichte finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=de){target=_blank}.
 
 <table> 
  <tbody> 
@@ -273,7 +273,7 @@ Weitere Informationen zum Inhalt dieser Berichte finden Sie in der Dokumentation
 
 ## Simulationsberichte {#reports-on-simulations}
 
-Berichte über Simulationen beziehen sich auf die Daten der Tabelle **nms:simulation**.
+Berichte zu Simulationen beziehen sich auf die Daten in der Tabelle **nms:simulation**.
 
 Die nativen Berichte von Adobe Campaign werden in der folgenden Tabelle aufgelistet.
 
@@ -310,7 +310,7 @@ Weitere Informationen zum Inhalt dieser Berichte erhalten Sie in den zugehörige
 
 ## Berichte über Web-Anwendungen {#reports-on-web-applications}
 
-Berichte über Web-Anwendungen beziehen sich auf die Daten der **nms:WebApp**-Tabelle.
+Berichte zu Web-Anwendungen beziehen sich auf die Daten in der Tabelle **nms:WebApp**.
 
 Die nativen Berichte von Adobe Campaign werden in der folgenden Tabelle aufgelistet.
 

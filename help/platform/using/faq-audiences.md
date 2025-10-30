@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: ba8bf610-cbac-41e9-8b6e-130deb8b97e2
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '262'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Einfache Anwendungsfälle für das Importieren von Profilen finden Sie [hier](..
 
 ## Wie kann ich die Zielpopulation für meine Marketing-Kampagne definieren? {#how-can-i-define-the-target-population-of-a-marketing-campaign-}
 
-Sie können Workflows verwenden, um eine Zielpopulation einer Marketing-Kampagne zu erstellen. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target#build-the-main-target-in-a-workflow.html){target="_blank"}.
+Sie können Workflows verwenden, um die Zielpopulation einer Marketing-Kampagne zu definieren. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target#build-the-main-target-in-a-workflow.html?lang=de){target="_blank"}.
 
 ## Wie kann ich eine Profilliste erstellen? {#how-can-i-create-a-list-of-profiles-}
 
@@ -44,7 +44,7 @@ Eine Liste ist eine statische Gruppe von Empfängern, die als Zielgruppe für Se
 
 ## Wie kann ich eine Population vor dem Nachrichtenversand deduplizieren? {#how-can-i-deduplicate-a-population-before-sending-a-message-}
 
-Sie können einen Workflow verwenden, um Duplikate von der Zielgruppe eines Versands auszuschließen. Damit verhindern Sie, dass dieselbe Nachricht mehrmals an denselben Empfänger gesendet wird.
+Sie können einen Workflow verwenden, um Duplikate von der Zielgruppe eines Versands auszuschließen. Damit verhindern Sie, dass dieselbe Nachricht mehrmals an dieselben Empfangenden gesendet wird.
 
 Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html?lang=de){target="_blank"}.
 
@@ -54,4 +54,4 @@ Hier erfahren Sie, wie die Abonnementverwaltung in Campaign erfolgt und wie Sie 
 
 ## Was sind die Best Practices beim Ausschließen von Profilen aus einer Zielpopulation? {#what-is-the-best-practice-to-exclude-profiles-from-a-target-population-}
 
-Wie Sie eine Liste von Profilen aus Ihrer Zielpopulation ausschließen, erfahren Sie in der Dokumentation zu [&#x200B; v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/read-list.html?lang=de){target="_blank"}.
+Wie Sie eine Liste von Profilen aus Ihrer Zielpopulation ausschließen, erfahren Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/read-list.html?lang=de){target="_blank"}.

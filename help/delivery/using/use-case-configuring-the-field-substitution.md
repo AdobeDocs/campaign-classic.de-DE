@@ -1,18 +1,18 @@
 ---
 product: campaign
-title: 'Anwendungsbeispiel: Konfigurieren der Feld-Ersetzung'
-description: 'Anwendungsbeispiel: Konfigurieren der Feld-Ersetzung'
+title: 'Anwendungsfall: Konfigurieren der Feld-Ersetzung'
+description: 'Anwendungsfall: Konfigurieren der Feld-Ersetzung'
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Seed Address
 exl-id: 3f567b2d-6f98-4831-af84-7db17fd12c6e
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '462'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Anwendungsbeispiel: Konfigurieren der Feld-Ersetzung{#use-case-configuring-the-field-substitution}
+# Anwendungsfall: Konfigurieren der Feld-Ersetzung{#use-case-configuring-the-field-substitution}
 
 
 
@@ -33,7 +33,7 @@ Zur Verwendung der zufälligen Wertersetzung benötigen Sie:
 
 ## Erstellen eines Versands {#step-1---creating-a-delivery}
 
-Die Schritte zum Erstellen eines Versands werden in der Dokumentation zu [&#x200B; v8 &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/emails/email){target="_blank"}.
+Die Schritte zur Versanderstellung werden in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email.html?lang=de){target="_blank"} beschrieben.
 
 Im vorliegenden Beispiel wurde vom Versand-Manager der unten gezeigte Newsletter erstellt.
 

@@ -9,9 +9,9 @@ hide: true
 hidefromtoc: true
 exl-id: c0533148-b027-4158-9b95-8d2df769e963
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '511'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 90%
 
 Die Bestimmung der Zielpopulation ist besonders wichtig. Gehen Sie bei der Erstellung Ihrer Kontaktlisten sorgfältig vor, testen Sie Ihre E-Mails in den gängigsten E-Mail-Clients, Smartphones und Tablets und stellen Sie sicher, dass Ihre Verteilerlisten aktuell sind (und keine unbekannten oder veralteten Adressen enthalten). Sie können auch Testsendungen vornehmen, um einen vollständigen Validierungszyklus durchzuführen.
 
-Weitere Informationen zu Zielpopulationen finden Sie in diesem Abschnitt in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=de){target="_blank"}.
+Weitere Informationen zu Zielpopulationen finden Sie in diesem Abschnitt der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=de){target="_blank"}.
 
 ## Ansprechen der richtigen Zielgruppe {#target-the-right-audience}
 
@@ -33,13 +33,13 @@ Standardmäßig werden bei Campaign Classic mit Versandvorlagen **Empfänger** a
 
 So können Sie beispielsweise Nachrichten an Benutzer senden, deren Profile Sie über soziale Netzwerke erfasst haben oder die einen Informationsdienst abonniert haben.
 
-Diese Zuordnungen werden in der Dokumentation zu [&#x200B; v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/audience/add-profiles/target-mappings.html?lang=de){target="_blank"}.
+Diese Zuordnungen werden in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/audience/add-profiles/target-mappings.html?lang=de){target="_blank"} erläutert.
 
 Sie können auch ein benutzerdefiniertes Zielgruppen-Mapping erstellen und verwenden. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../configuration/using/target-mapping.md).
 
 ## Externe Empfänger {#external-recipients}
 
-Sie können Nachrichten an Empfänger senden, die in einer externen Datei anstatt in der Datenbank gespeichert sind. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=de#selecting-external-recipients){target="_blank"}.
+Sie können Nachrichten an Empfangende senden, die in einer externen Datei anstatt in der Datenbank gespeichert sind. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=de#selecting-external-recipients){target="_blank"}.
 
 ## Versand an Ihre Abonnenten {#send-to-subscribers}
 
@@ -50,7 +50,7 @@ Um den Abonnenten eines Newsletters Nachrichten zu senden, können Sie die Abonn
 
 Nutzen Sie Testsendungen, bevor Sie Ihre Nachricht an die Hauptzielgruppe senden.
 
-Achten Sie darauf, geeignete Testversand-Empfänger auszuwählen, da diese die Form und den Inhalt Ihrer Nachricht validieren. Die Schritte zum Definieren der Testversand-Empfänger werden in der Dokumentation zu [&#x200B; v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=de#select-the-proof-target){target="_blank"}.
+Achten Sie darauf, geeignete Testversand-Empfänger auszuwählen, da diese die Form und den Inhalt Ihrer Nachricht validieren. Die Schritte zum Definieren der Empfängerinnen und Empfänger des Testversands werden in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=de#select-the-proof-target){target="_blank"} erläutert.
 
 Testadressen werden verwendet, um Nachrichten an Empfänger zu senden, die nicht den definierten Kriterien der Zielgruppe entsprechen, damit eine Nachricht getestet werden kann, bevor sie an die Hauptzielgruppe gesendet wird. Sie werden [in diesem Abschnitt](about-seed-addresses.md) dargestellt.
 

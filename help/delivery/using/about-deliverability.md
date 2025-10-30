@@ -7,9 +7,9 @@ feature: Deliverability
 role: User
 exl-id: f301b34c-244c-4279-b23f-8224ea8eedbe
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '656'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -56,10 +56,10 @@ Adobe Campaign bietet verschiedene Tools zur Verfolgung und Verbesserung der Zus
 
 Befolgen Sie beim Konfigurieren, Entwerfen und Testen Ihrer Nachricht die in den folgenden Abschnitten aufgeführten Best Practices. Die Nutzung aller von Adobe Campaign bereitgestellten Funktionen hilft Ihnen, die Zustellbarkeit zu verbessern.
 
-* [Best Practices beim Versand](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/delivery-best-practices){target="_blank"}.
+* [Best Practices beim Versand](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=de){target="_blank"}.
 * [Kontrollieren von E-Mail-Inhalten](control-message-content.md)
-* [Inbox Rendering](inbox-rendering.md)
-* [Testversand durchführen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=de){target="_blank"}
+* [Rendern des Posteingangs](inbox-rendering.md)
+* [Durchführen eines Testversands](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=de){target="_blank"}
 
 ### Einverständnis durch doppelten Opt-in überprüfen {#double-opt-in}
 

@@ -9,9 +9,9 @@ hide: true
 hidefromtoc: true
 exl-id: 5bf727d2-83b1-4a99-be25-041eee8d234c
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1318'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -58,7 +58,7 @@ Beachten Sie beim Erstellen Ihrer E-Mails die folgenden allgemeinen Best Practic
 
 ### Betreff
 
-Erfahren Sie mehr über die Betreffzeile in der [Campaign v8-Dokumentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=de#sender){target="_blank"} um die Öffnungsraten zu verbessern:
+Erfahren Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=de#sender){target="_blank"} mehr über die Betreffzeile, um die Öffnungsraten zu verbessern:
 
 * Vermeiden Sie einen zu langen Betreff. Verwenden Sie maximal 50 Zeichen.
 
@@ -153,7 +153,7 @@ Damit Empfänger auf die Bilder zugreifen können, müssen die in E-Mails und ö
 
 * Sie können eine HTML-Seite mit Bildern über den Versandassistenten importieren oder Bilder direkt mithilfe des HTML-Editors über das **[!UICONTROL Bildsymbol]** einfügen. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=de#adding-images){target="_blank"}.
 
-* Wenn keine Bilder dargestellt werden, prüfen Sie, ob die Bilder auf dem Server verfügbar sind. Klicken Sie dazu in Ihrem Versand auf den Tab „Quelle“. Suchen Sie Ihre Bilder und kopieren Sie die URL eines jeden Bildes in einen Web-Browser. Wenn die Bilder nicht dargestellt werden, kontaktieren Sie Ihren IT-Administrator oder den Drittanbieter, der Ihnen den Versandinhalt bereitgestellt hat.
+* Wenn keine Bilder dargestellt werden, prüfen Sie, ob die Bilder auf dem Server verfügbar sind. Klicken Sie dazu in Ihrem Versand auf die Registerkarte „Quelle“. Suchen Sie Ihre Bilder und kopieren Sie die URL eines jeden Bildes in einen Webbrowser. Wenn die Bilder nicht dargestellt werden, kontaktieren Sie Ihre bzw. Ihren IT-Admin oder den Drittanbieter, der Ihnen den Versandinhalt bereitgestellt hat.
 
 ## Sehen Sie sich Ihre Nachricht in der Vorschau an {#preview-msg}
 

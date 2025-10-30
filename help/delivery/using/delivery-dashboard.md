@@ -7,9 +7,9 @@ feature: Monitoring
 role: User, Data Engineer
 exl-id: 44ecc8c6-6584-43eb-96b4-7d8463053123
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1262'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Die folgenden Informationen können Sie mit den verschiedenen Tabs im Dashboard 
 * [Versandzusammenfassung](#delivery-summary)
 * [Versandberichte](#delivery-reports)
 * [Versandlogs, Mirrorseiten, Ausschlüsse](#delivery-logs-and-history)
-* [Versandverfolgungslogs und -verlauf](#tracking-logs)
+* [Versand-Trackinglogs und -Verlauf](#tracking-logs)
 * [Versand-Rendering](#delivery-rendering)
 * [Versandverfolgung](#delivery-audit-)
 
@@ -35,7 +35,7 @@ Die folgenden Informationen können Sie mit den verschiedenen Tabs im Dashboard 
 
 * [Ursachen von fehlgeschlagenen Sendungen](understanding-delivery-failures.md)
 * [Funktionsweise der Quarantäneverwaltung](understanding-quarantine-management.md)
-* [Best Practices beim Versand](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/delivery-best-practices){target="_blank"}
+* [Best Practices beim Versand](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=de){target="_blank"}
 * [Verwalten der Zustellbarkeit](about-deliverability.md)
 
 ## Versandzusammenfassung {#delivery-summary}
@@ -64,13 +64,13 @@ Sie haben die Möglichkeit, beispielsweise nur fehlgeschlagene Zustellversuche a
 
 Mit dem Link **[!UICONTROL Mirrorseite für diese Nachricht anzeigen...]** können Sie die Mirrorseite für den Inhalt des aus der Liste ausgewählten Versands in einem neuen Fenster anzeigen.
 
-Die Mirrorseite steht nur für Sendungen zur Verfügung, für die HTML-Inhalte definiert wurden. Weitere Informationen hierzu finden Sie in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/emails/mirror-page){target="_blank"}.
+Die Mirrorseite steht nur für Sendungen zur Verfügung, für die HTML-Inhalte definiert wurden. Weiterführende Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/mirror-page.html?lang=de){target="_blank"}.
 
 ![](assets/s_ncs_user_wizard_miror_page_link.png)
 
-## Versandverfolgungslogs und -verlauf {#tracking-logs}
+## Versand-Trackinglogs und -Verlauf {#tracking-logs}
 
-Auf der Registerkarte **[!UICONTROL Tracking]** wird der Tracking-Verlauf für den vorliegenden Versand angezeigt. Auf dieser Registerkarte werden Tracking-Daten zu den gesendeten Nachrichten angezeigt, d. h. zu allen von Adobe Campaign getrackten URLs. Die Tracking-Daten werden stündlich aktualisiert.
+Auf der Registerkarte **[!UICONTROL Tracking]** wird der Tracking-Verlauf für den vorliegenden Versand angezeigt. Auf dieser Registerkarte werden Tracking-Daten zu den gesendeten Nachrichten angezeigt, einschließlich aller URLs, die von Adobe Campaign getrackt werden. Die Tracking-Daten werden stündlich aktualisiert.
 
 >[!NOTE]
 >
@@ -82,7 +82,7 @@ Interpretationen der **[!UICONTROL Trackingdaten]** finden Sie in den Versandber
 
 ![](assets/s_ncs_user_delivery_tracking_tab.png)
 
-## Inbox Rendering {#delivery-rendering}
+## Rendern des Posteingangs {#delivery-rendering}
 
 Der Tab **[!UICONTROL Inbox Rendering]** ermöglicht es Ihnen, eine Vorschau der Nachricht in den verschiedenen Kontexten anzuzeigen, in denen sie empfangen werden kann, und die Kompatibilität mit gängigen Desktops und Anwendungen zu überprüfen.
 
@@ -98,9 +98,9 @@ Der Tab **[!UICONTROL Audit]** enthält das Versandlog und alle Meldungen zu den
 
 Mit der Schaltfläche **[!UICONTROL Aktualisieren]** können Sie die Daten aktualisieren. Verwenden Sie die Schaltfläche **[!UICONTROL Filter]**, um einen Filter für die Daten zu definieren.
 
-Eventuelle Fehler oder Warnmeldungen werden durch spezifische Symbole hervorgehoben. Weitere Informationen finden Sie in diesem Abschnitt in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html?lang=de){target="_blank"}.
+Eventuelle Fehler oder Warnmeldungen werden durch spezifische Symbole hervorgehoben. Weitere Informationen finden Sie in diesem Abschnitt der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html?lang=de){target="_blank"}.
 
-Ein Untertab listet die durchgeführten **[!UICONTROL Testsendungen]** auf.
+Eine Unter-Registerkarte listet die durchgeführten **[!UICONTROL Testsendungen]** auf.
 
 ![](assets/s_ncs_user_delivery_log_tab.png)
 

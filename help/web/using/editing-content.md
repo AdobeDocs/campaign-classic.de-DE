@@ -6,9 +6,9 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: 968430d6-b1dd-47f8-8b31-39aaa18bc05c
 source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1254'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -60,7 +60,7 @@ Es besteht die Möglichkeit, Bausteinen wie Eingabe- oder Auswahlfeldern Datenba
 
 Im Eingabefeld **Feld** können Sie das Datenbankfeld auswählen, das dem Formularfeld zugeordnet werden soll.
 
-Standardmäßig werden die Felder in der Tabelle **nms:recipient** angeboten.
+Standardmäßig werden die in der Tabelle **nms:recipient** verfügbaren Felder zur Auswahl angeboten.
 
 ![](assets/dce_field_selection.png)
 
@@ -259,4 +259,4 @@ Mit der Option **Gestaltungsbaustein** können Sie dynamische und personalisiert
 
 Nach dem Einfügen erscheint der Name des Gestaltungsbausteins gelb hinterlegt im Editor. Er wird während der Personalisierung automatisch an das Empfängerprofil angepasst.
 
-Weitere Informationen zu integrierten Gestaltungsbausteinen und zum Definieren benutzerdefinierter Gestaltungsbausteine finden Sie in der [&#x200B; zu Campaign v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=de){target="_blank"}.
+Weiterführende Informationen zu integrierten Gestaltungsbausteinen und zum Festlegen von benutzerdefinierten Gestaltungsbausteinen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=de){target="_blank"}.

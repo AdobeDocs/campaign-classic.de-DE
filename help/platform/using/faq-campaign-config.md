@@ -9,9 +9,9 @@ level: Beginner, Intermediate, Experienced
 topic-tags: starting-with-adobe-campaign
 exl-id: 50bed489-2a0f-4123-a326-3d68c8295662
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '760'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -51,7 +51,7 @@ Lesen Sie zusätzlich zum [Adobe-Handbuch mit den Best Practices zur Zustellbark
 
 Campaign ermöglicht den Einsatz von kollaborativen Validierungsprozessen für die wichtigsten Etappen einer Marketing-Kampagne. Sie können in jeder Kampagne die Zielgruppe der Sendungen, deren Inhalte sowie die anfallenden Kosten validieren. Adobe Campaign-Benutzer können per E-Mail von einer ausstehenden Validierung benachrichtigt werden und diese über die Konsole oder eine Internet-Verbindung akzeptieren oder ablehnen.
 
-Wie Sie die Inhaltsvalidierung eines Versands implementieren, erfahren Sie in der Dokumentation zu [&#x200B; v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval.html?lang=de#review-and-approve-deliveries){target="_blank"}.
+Wie Sie die Validierung des Versandinhalts implementieren, erfahren Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval.html?lang=de#review-and-approve-deliveries){target="_blank"}.
 
 ## Wie kann ich auf in einer externen Datenbank gespeicherte Daten zugreifen? {#how-can-i-access-data-stored-in-an-external-database-}
 

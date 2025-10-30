@@ -4,9 +4,9 @@ product: campaign
 title: Produktdokumentation zu Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '341'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -96,7 +96,7 @@ Einige wichtige Änderungen am FCM-Dienst (Android Firebase Cloud Messaging) wer
     <td>
       <img src="assets/do-not-localize/icon_profile-audience.svg" width="35px">
       <br/>
-      <strong>Profile und Audiences</strong><br/> <a href="platform/using/creating-and-managing-lists.md">Listen erstellen</a> - <a href="delivery/using/about-services-and-subscriptions.md">Services und Abonnements</a> - <a href="platform/using/privacy-management.md">Datenschutz und Einverständnis</a>
+      <strong>Profile und Zielgruppen</strong><br/> <a href="platform/using/creating-and-managing-lists.md">Listen erstellen</a> – <a href="delivery/using/about-services-and-subscriptions.md">Services und Abonnements</a> – <a href="platform/using/privacy-management.md">Datenschutz und Einverständnis</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-configure.svg" width="35px">

@@ -6,9 +6,9 @@ feature: Cross Channel Orchestration, Email, SMS, In App, Direct Mail, Push
 role: User
 exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '998'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Mit Adobe Campaign können Sie Cross-Channel-Kampagnen wie E-Mails, SMS, Push-Be
 
 Zu den Kernfunktionen zählen Zielgruppenbestimmung, Definition und Personalisierung von Nachrichten, Ausführung der Kommunikation und die damit verbundenen operativen Berichte.
 
-Im Zuge der Umstellung von Campaign v7 auf v8 wurde der Campaign Classic-Dokumentationssatz optimiert und neu organisiert. Allgemeine Funktionen sind jetzt ausschließlich im Dokumentationssatz zu Campaign v8 verfügbar.
+Im Zuge der Umstellung von Campaign v7 auf v8 wurde der Campaign Classic-Dokumentationssatz optimiert und neu organisiert. Allgemeine Funktionen sind jetzt nur noch in der Dokumentation zu Campaign v8 verfügbar.
 
 >[!BEGINTABS]
 
@@ -32,12 +32,12 @@ Weitere Informationen zu Kommunikationskanälen finden Sie in der [Dokumentation
 
 >[!TAB Versandinhalt und -zielgruppe]
 
-Die wichtigsten Schritte zur Versanderstellung, zu Inhalten und zur Zielgruppe (**der Dokumentation zu Campaign v8**:
+Die wichtigsten Informationen zu Erstellung, Inhalt und Zielgruppe eines Versands finden Sie in der **Dokumentation zu Campaign v8**:
 
-* [Erstellen des Versands](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/create-message#create-the-delivery){target="_blank"}: Auf dieser Seite erfahren Sie, wie Sie einen einmaligen Versand erstellen. 
+* [Erstellen des Versands](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=de#create-the-delivery){target="_blank"}: Auf dieser Seite erfahren Sie, wie Sie einen einmaligen Versand erstellen. 
 * [Definieren des Inhalts](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/create-message#content-of-the-delivery){target="_blank"}: Konfigurieren Sie den spezifischen Versandinhalt für jeden Kanal.
-* [Angeben der Zielgruppe](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/create-message#target-population){target="_blank"}: Definieren Sie verschiedene Typen von Zielgruppen: Hauptzielgruppe, Testversand-Zielgruppe, Testadressen und Kontrollgruppen.
-* [Arbeiten mit Versandvorlagen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=de){target="_blank"}: Erfahren Sie, wie Sie Vorlagen definieren, um die Erstellung von Sendungen zu erleichtern.
+* [Angeben der Zielgruppe](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=de#target-population){target="_blank"}: Definieren Sie verschiedene Typen von Zielgruppen: Hauptzielgruppe, Testversand-Zielgruppe, Testadressen und Kontrollgruppen.
+* [Arbeiten mit Versandvorlagen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=de){target="_blank"}: Erfahren Sie, wie Sie Vorlagen definieren, um die Versanderstellung zu erleichtern.
 
 
 
@@ -45,11 +45,11 @@ Die wichtigsten Schritte zur Versanderstellung, zu Inhalten und zur Zielgruppe (
 
 >[!TAB Versandvalidierung und -durchführung]
 
-Auf diesen Seiten erfahren Sie mehr über die Validierung, den Versand und die Best Practices **in der Dokumentation zu Campaign v8**:
+Auf diesen Seiten in der **Dokumentation zu Campaign v8** erfahren Sie mehr über die Validierung und das Durchführen eines Versands sowie die Best Practices diesbezüglich:
 
 * [Validieren des Versands](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/create-message#validate-the-delivery){target="_blank"}: Erfahren Sie, wie Sie den Versand vor dem Senden an die Hauptzielgruppe validieren.
 * [Durchführen des Versands](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/create-message#configuring-and-sending-the-delivery){target="_blank"}: Konfigurieren Sie die Versandeinstellungen und definieren Sie, wie Ihre Nachrichten gesendet werden sollen.
-* [Best Practices beim Versand](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/delivery-best-practices){target="_blank"}: Berücksichtigen Sie die Best Practices für die Versandfunktionen von Campaign.
+* [Best Practices beim Versand](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=de){target="_blank"}: Berücksichtigen Sie die Best Practices für die Versandfunktionen von Campaign.
 
 >[!ENDTABS]
 
@@ -102,7 +102,7 @@ Bei On-Premise-Installationen und gehosteten/hybriden Installationen, die den be
 
 ![](assets/s_ncs_user_wizard_retry_param.png)
 
-Standardmäßig sind innerhalb der ersten 24 Stunden des Versands fünf erneute Versuche im Abstand von mindestens einer Stunde vorgesehen. An den folgenden Tagen wird bis zum Ablauf der Versandgültigkeit, die auf der Registerkarte **[!UICONTROL Gültigkeit]** festgelegt wird, jeweils ein Zustellversuch unternommen. Siehe folgenden Abschnitt.
+Standardmäßig sind innerhalb der ersten 24 Stunden des Versands fünf erneute Versuche im Abstand von mindestens einer Stunde vorgesehen. An den folgenden Tagen wird bis zum Ablauf der Versandgültigkeit, die auf der Registerkarte **[!UICONTROL Gültigkeit]** festgelegt wird, jeweils ein Zustellversuch unternommen. Siehe nachfolgenden Abschnitt.
 
 **Definieren des Gültigkeitszeitraums**
 
@@ -128,7 +128,7 @@ Nach dem Start des Versands können die Nachrichten (und alle weiteren Zustellve
 
    Learn how to create a one-shot single delivery. You can create other types of deliveries to build your use cases. 
 
-For more information about the different types of deliveries and how to create them, refer to the [Campaign v8 documentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=de){target="_blank"}. 
+For more information about the different types of deliveries and how to create them, refer to the [Campaign v8 documentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}. 
 
 >[!NOTE]
 >

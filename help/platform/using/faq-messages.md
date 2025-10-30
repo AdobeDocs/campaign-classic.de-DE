@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 7fc24ef2-b021-440b-b1f2-8c77e2425328
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '761'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ Testadressen bieten folgende Möglichkeiten:
 
 ### Wie kann ich vor dem Versand einen Validierungsprozess einrichten? {#how-can-i-set-up-an-approval-process-before-sending-messages-}
 
-Um eventuelle Konfigurationsfehler zu erkennen, ist es empfehlenswert, Ihre Sendungen einem Validierungszyklus zu unterziehen. Auf diese Weise können Sie den Inhalt wiederholt von Testempfängern prüfen lassen. Schalten Sie nach jeder Änderung einen neuen Testversand, um den Inhalt abschließend validieren zu lassen.
+Um eventuelle Konfigurationsfehler zu erkennen, ist es empfehlenswert, Ihre Sendungen einem Validierungszyklus zu unterziehen. Auf diese Weise können Sie den Inhalt wiederholt von Testempfangenden prüfen lassen. Schalten Sie nach jeder Änderung einen neuen Testversand, um den Inhalt abschließend validieren zu lassen.
 
 Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=de){target="_blank"}.
 
@@ -63,7 +63,7 @@ Hier erfahren Sie, wie Sie in Adobe Campaign Nachrichten auf unterschiedlichen K
 
 ### Wie kann ich E-Mails in mehreren Schüben senden? {#how-can-i-send-emails-in-waves-}
 
-Vor dem Versand an eine große Population können Sie Schübe konfigurieren, um Nachrichten in mehreren Teilen zu senden und dadurch eine gleichmäßige Auslastung der Kapazitäten zu gewährleisten. Siehe die [Campaign v8-Dokumentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/configure-and-send.html?lang=de#sending-using-multiple-waves){target="_blank"}.
+Anstatt einen Versand an eine große Population zu senden, können Sie Schübe konfigurieren, um Nachrichten in mehreren Teilen zu senden und dadurch eine gleichmäßige Auslastung der Kapazitäten zu gewährleisten. Weiterführende Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/configure-and-send.html?lang=de#sending-using-multiple-waves){target="_blank"}.
 
 ### Was sind die wichtigsten Schritte bei der Erstellung einer E-Mail in Campaign? {#which-are-the-key-steps-to-create-an-email-in-campaign-}
 
@@ -73,7 +73,7 @@ Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://e
 
 ### Wie wird ein Versand terminiert? {#how-to-schedule-a-delivery-}
 
-Sie können das Senden der Nachrichten auf einen späteren Zeitpunkt verschieben, um z. B. den Werbedruck auf eine bestimmte Population zu kontrollieren.
+Sie können den Versand der Nachrichten auf einen späteren Zeitpunkt verschieben, um z. B. den Werbedruck auf eine bestimmte Population zu kontrollieren.
 
 Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/configure-and-send.html?lang=de#schedule-delivery-sending){target="_blank"}.
 
@@ -81,7 +81,7 @@ Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://e
 
 Mit Campaign Classic können Sie zu E-Mails personalisierte Anhänge hinzufügen.
 
-Weitere Informationen zu E-Mail-Anhängen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/emails/attaching-files){target="_blank"}.
+Weitere Informationen über E-Mail-Anhänge finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html?lang=de){target="_blank"}.
 
 ## Verfolgen von Nachrichten und Messung ihrer Wirkung {#track-your-messages-and-measure-their-impact}
 

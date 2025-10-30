@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 9f1b0974-f8bd-430f-88fe-9c09b0074d3b
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '497'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -52,8 +52,7 @@ Adobe Campaign ist mit einer Reihe von Dashboards und Tools zur Überwachung des
 
 ## &#x200B;5. Kann ich die Ausführung von Workflows überwachen? {#can-i-monitor-workflow-execution}
 
-Informationen zur Überwachung der Workflow-Ausführung in Campaign finden Sie in der [ zu Campaign v8]&#x200B;(https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution
-.html){target="_blank"}.
+Informationen zur Überwachung der Workflow-Ausführung in Campaign finden Sie in der [Dokumentation zu Campaign v8]&#x200B;(https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=de){target="_blank"}.
 
 ## &#x200B;6. Wie kann ich eine Verbindung zu Campaign Classic herstellen? {#how-can-i-connect-to-campaign-classic-}
 

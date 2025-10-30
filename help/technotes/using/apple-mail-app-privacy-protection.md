@@ -5,9 +5,9 @@ feature: Technote, Privacy, Privacy Tools
 description: Erfahren Sie, wie sich die Apple-Funktion zum Schutz der Privatsphäre bei E-Mails auf Ihre Kampagnen auswirken kann.
 exl-id: e044b35a-b49f-408a-900d-2afe8ff10212
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2105'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -348,7 +348,7 @@ Standardmäßig ist das Schema `nms:Recipient` mit drei Schemata verknüpft ist,
 
 | Schema | Content |
 | --- | --- |
-| nms:trackingLogRcp | Nachverfolgen von Daten mit dem Benutzer, der Uhrzeit und der betroffenen Nachricht |
+| nms:trackingLogRcp | Nachverfolgen von Daten mit der Person, der Uhrzeit und der betroffenen Nachricht |
 | nms:trackingUrl | Details zum Link, einschließlich der Art, z. B. Öffnen einer E-Mail oder Clickthrough |
 | nms:userAgent | Informationen bezüglich des Gerätes |
 

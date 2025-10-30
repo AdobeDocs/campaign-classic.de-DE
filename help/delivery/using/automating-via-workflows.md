@@ -7,9 +7,9 @@ feature: Workflows
 role: User
 exl-id: bc6ebf5d-cc21-4750-9713-2bf259e7d6bf
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1213'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -101,7 +101,7 @@ Der Inhalt wird automatisch durch den von der angegebenen URL heruntergeladenen 
 </book>
 ```
 
-Das Datenformat stimmt nicht mit dem in der Veröffentlichungsvorlage eingegebenen Datenschema überein (**cus:book** in unserem Beispiel). Das **`<section>`** muss durch das **`<chapter>`** ersetzt werden. Wir müssen das Stylesheet „cus:book-workflow.xsl“ anwenden, um die notwendigen Änderungen vorzunehmen.
+Das Datenformat stimmt nicht mit dem Datenschema überein, das in der Veröffentlichungsvorlage eingegeben wurde (**cus:book** in unserem Beispiel); das Element „**`<section>`**“ muss durch das Element „**`<chapter>`**“ ersetzt werden. Sie müssen das Stylesheet „cus:book-workflow.xsl“ anwenden, um die notwendigen Änderungen vorzunehmen.
 
 Quellcode des verwendeten XSLT-Stylesheets:
 
@@ -253,7 +253,7 @@ Die **GetAndTransform**-Methode muss unter dem **`<enter>`**-Element des **`<inp
 
 Die Aktualisierung der Inhaltsinstanz geschieht ausgehend vom im letzten Parameter angegebenen Pfad.
 
-**Beispiel**: Zur Veranschaulichung dieses Beispiels beginnen wir mit dem Schema „cus:book.
+**Beispiel**: Anhand des Schemas „cus:book“ wird diese Funktion näher erläutert.
 
 Das Formular wird um ein Eingabefeld für die halbautomatische Aktualisierung ergänzt:
 
@@ -273,6 +273,6 @@ Das Formular wird um ein Eingabefeld für die halbautomatische Aktualisierung er
 
 Im Eingabefeld können Sie den Namen der abzurufenden Datei eingeben. Die URL basiert beispielsweise auf folgendem Namen: https://myserver.adobe.com/incomin/data.xml
 
-Das Format der abzurufenden Daten ist das gleiche wie im ersten Beispiel bezüglich der Workflow-Automatisation. Wir verwenden das Stylesheet „cus:book-workflow.xsl“, das in diesem Beispiel gezeigt wird.
+Das Format der abzurufenden Daten ist das gleiche wie im ersten Beispiel bezüglich der Workflow-Automatisation. Es wird erneut das dort erwähnte Stylesheet „cus:book-workflow.xsl“ verwendet.
 
-Aus der Ausführung des Vorgangs resultiert die Aktualisierung der Inhaltsinstanz ausgehend vom Pfad &#39;.&#39;.
+Aus der Ausführung des Auftrags resultiert die Aktualisierung der Inhaltsinstanz ausgehend vom Pfad &#39;.&#39;.

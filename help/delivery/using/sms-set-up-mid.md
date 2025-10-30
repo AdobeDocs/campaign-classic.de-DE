@@ -7,9 +7,9 @@ role: User, Developer, Admin
 level: Experienced
 exl-id: 6987cb5e-8821-4619-b0e4-f0fad3355bfb
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1078'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -154,7 +154,7 @@ Gehen Sie dazu wie folgt vor:
 
 ## Ändern der Versandvorlage {#changing-the-delivery-template}
 
-Adobe Campaign bietet eine mobile Versandvorlage im Knoten **[!UICONTROL Ressourcen > Vorlagen > Versandvorlagen]** an. Weitere Informationen hierzu finden Sie in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=de){target="_blank"}.
+Adobe Campaign bietet eine mobile Versandvorlage im Knoten **[!UICONTROL Ressourcen > Vorlagen > Versandvorlagen]** an. Weiterführende Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=de){target="_blank"}.
 
 Um Nachrichten über den SMS-Kanal zu senden, müssen Sie eine Vorlage erstellen, die einen Verweis auf den Kanal-Connector enthält.
 

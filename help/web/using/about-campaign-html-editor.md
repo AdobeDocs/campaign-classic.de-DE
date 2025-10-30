@@ -6,9 +6,9 @@ feature: Web Apps, Web Forms, Landing Pages, Email Design
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 exl-id: f5d65e89-6b18-482b-97d8-11ab94f6775e
 source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '276'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ Um einen **E-Mail-Versand** zu erstellen, müssen Sie folgende Schritte ausführ
 1. Versand aus einer DCE-Vorlage erstellen – [Weitere Informationen](use-case-creating-an-email-delivery.md)
 1. Wählen Sie vorhandenen Inhalt aus oder erstellen Sie Inhalt aus einer [Standardvorlage](template-management.md).
 1. Bearbeiten und konfigurieren Sie den Online-Inhalt.
-1. Versand durchführen - Weitere Informationen finden Sie in der Dokumentation zu [&#x200B; v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=de){target="_blank"}
+1. Führen Sie den Versand durch. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=de){target="_blank"}
 
 >[!NOTE]
 >

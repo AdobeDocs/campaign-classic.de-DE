@@ -6,9 +6,9 @@ feature: Email
 role: User, Admin, Developer
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1407'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -121,7 +121,7 @@ Weitere Informationen zum Versanddurchsatz finden Sie in [diesem Abschnitt](../.
 
 Die Einstellungen für weitere Zustellversuche in den Versandeigenschaften werden von Campaign nicht mehr verwendet. Weitere Zustellversuche aufgrund von Softbounces und die Zeitdauer zwischen ihnen werden durch den Enhanced MTA bestimmt, basierend auf Typ und Prioritätsstufe der Bounce-Antworten, die von der E-Mail-Domain der Nachricht zurückgegeben werden.
 
-Weitere Informationen zu weiteren Zustellversuchen finden Sie auf [Seite](communication-channels.md) unter **Versand** > **Weitere Zustellversuche konfigurieren**.
+Weitere Informationen zu weiteren Zustellversuchen finden Sie auf dieser [Seite](communication-channels.md) unter **Versand** > **Konfigurieren weiterer Zustellversuche**.
 
 ### Gültigkeitszeitraum
 

@@ -11,9 +11,9 @@ hide: true
 hidefromtoc: true
 exl-id: b62e23e5-f1b7-44c4-82d9-95c6b3240352
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3475'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -292,7 +292,7 @@ Vier verschiedene Feldtypen stehen zur Verfügung:
 
   Dem Quellwert einer Spalte kann ein Zielwert zugeordnet werden. Es ist der Zielwert, der in der neuen Ausgabespalte angezeigt wird.
 
-  Ein Beispiel für das Hinzufügen des berechneten Feldtyps **[!UICONTROL Auflistungen]** finden Sie in der [Campaign v8-Dokumentation](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/adding-enumeration-type-calculated-field.html?lang=de){target="_blank"}.
+  Ein Beispiel zum Hinzufügen des berechneten Feldtyps **[!UICONTROL Aufzählungen]** finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/adding-enumeration-type-calculated-field.html?lang=de){target="_blank"}.
 
   ![](assets/query_editor_nveau_63.png)
 
@@ -348,7 +348,7 @@ Nachfolgend werden die **[!UICONTROL Formeltypen]** detailliert dargestellt:
 
    ![](assets/query_editor_nveau_71.png)
 
-   Im Abschnitt [&#128279;](#list-of-functions)Funktionsliste finden Sie eine vollständige Liste aller Funktionen.
+   Im Abschnitt ](#list-of-functions)Funktionsliste[ finden Sie eine vollständige Liste aller Funktionen.
 
 ## Funktionsliste {#list-of-functions}
 

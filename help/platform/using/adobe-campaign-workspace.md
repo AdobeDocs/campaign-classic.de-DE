@@ -7,9 +7,9 @@ role: Data Engineer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '980'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -17,13 +17,13 @@ ht-degree: 73%
 
 ## Über die Benutzeroberfläche von Adobe Campaign {#about-adobe-campaign-interface}
 
-Sobald Sie mit der Datenbank verbunden sind, rufen Sie die Startseite von Adobe Campaign auf. Diese Seite ist Ihr Dashboard: Sie besteht aus Links und Tastaturbefehlen, über die Sie je nach Installation und allgemeinen Plattformkonfigurationen auf Funktionen zugreifen können.
+Sobald Sie mit der Datenbank verbunden sind, gelangen Sie auf die Startseite von Adobe Campaign. Diese Seite ist Ihr Dashboard: Sie besteht aus Links und Tastaturbefehlen, über die Sie je nach Installation und allgemeinen Plattformkonfigurationen auf Funktionen zugreifen können.
 
-Über die Links im mittleren Bereich der Startseite können Sie auf das Dokumentationsportal von Campaign, die Community und die Website der Adobe-Kundenunterstützung zugreifen.
+Im zentralen Abschnitt der Startseite finden Sie Links für den Zugriff auf das Campaign-Dokumentationsportal, die Community und die Website der Adobe-Kundenunterstützung.
 
 ![](assets/d_ncs_user_interface_home.png)
 
-![](assets/do-not-localize/how-to-video.png) [&#x200B; Campaign-Arbeitsbereich im Video kennenlernen](#video)
+![](assets/do-not-localize/how-to-video.png)[ Campaign-Arbeitsbereich im Video kennenlernen](#video)
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ Beim Web-Zugriff ermöglichen die Optionen jedoch vor allem das Anzeigen:
 
 ![Derselbe Benutzer kann von einem Browser aus nur die Kampagne anzeigen und abbrechen.](assets/operation_from_web.png)
 
-Weitere Informationen zur Verwendung der Web-Benutzeroberfläche finden Sie in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html?lang=de#use-the-web-interface-){target=_blank}.
+Weitere Informationen zur Verwendung der Web-Benutzeroberfläche finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html?lang=de#use-the-web-interface-){target=_blank}.
 
 ### Sprachen {#languages}
 
@@ -51,7 +51,7 @@ Die Sprache wird bei der Installation der Adobe Campaign Classic-Instanz ausgew�
 
 ![](assets/language.png)
 
-Sie können zwischen den folgenden Sprachen wählen:
+Sie können zwischen folgenden fünf Sprachen wählen:
 
 * Englisch (UK)
 * Englisch (US)
@@ -59,7 +59,7 @@ Sie können zwischen den folgenden Sprachen wählen:
 * Deutsch
 * Japanisch
 
-Die für Ihre Adobe Campaign Classic-Instanz ausgewählte Sprache kann sich auf Datums- und Uhrzeitformate auswirken. Weitere Informationen hierzu finden Sie in der Dokumentation zu [&#x200B; v8 (Konsole](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+Die für Ihre Adobe Campaign Classic-Instanz ausgewählte Sprache kann sich auf Datums- und Uhrzeitformate auswirken. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8 (Konsole)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 
 Weiterführende Informationen zum Erstellen einer Instanz finden Sie auf dieser [Seite](../../installation/using/creating-an-instance-and-logging-on.md).
 
@@ -108,29 +108,29 @@ Nutzen Sie beispielsweise auf der Seite der Sendungen die Schaltfläche **[!UICO
 
 Auf den Adobe Campaign-Explorer kann über das entsprechende Symbol in der Symbolleiste zugegriffen werden. Mit seiner Hilfe gelangen Sie zu allen Adobe Campaign-Funktionen und in die verschiedenen Konfigurationsbildschirme der Adobe Campaign-Plattform und können einige Plattformelemente im Detail anzeigen.
 
-Weitere Informationen zu Adobe Campaign Explorer finden Sie auf diesen Seiten in der Dokumentation zu **Campaign v8 (Konsole)**:
+Weitere Informationen zum Adobe Campaign-Explorer finden Sie auf folgenden Seiten in der **Dokumentation zu Campaign v8 (Konsole)**:
 
-* [Übersicht über die Campaign-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}
+* [Campaign-Benutzeroberfläche – Überblick](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}
 
 * [Einstellungen der Campaign-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/configuration/ui-settings){target=_blank}
 
-* [Ordner und Ansichten im Explorer verwalten](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
+* [Verwalten von Ordnern und Ansichten im Explorer](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
 
 
 ## Filtern von Daten {#filters}
 
-Beim Filtern von Daten wird ein Datensatz so eingegrenzt, dass er nur die Datensätze enthält, die bestimmten Kriterien entsprechen. Diese Teilmenge kann dann für zielgerichtete Aktionen (wie Aktualisierungen oder Zielgruppenerstellung) oder für Analysen verwendet werden.
+Beim Filtern von Daten wird ein Datensatz so eingegrenzt, dass er nur noch Einträge enthält, die bestimmten Kriterien entsprechen. Diese Teilmenge kann dann für zielgerichtete Aktionen (wie Aktualisierungen oder Zielgruppenerstellung) oder für Analysen verwendet werden.
 
-Beim Durchsuchen von Campaign werden die Daten in Listen angezeigt. Sie können integrierte Filter anwenden, um schnell auf eine definierte Teilmenge zuzugreifen, z. B. Adressen in Quarantäne, nicht kontaktierte Empfänger oder Datensätze innerhalb eines bestimmten Altersbereichs oder Erstellungsdatums. Darüber hinaus können Sie benutzerdefinierte Filter erstellen, sie für die zukünftige Verwendung speichern und für andere Campaign-Benutzer freigeben.
+Beim Durchsuchen von Campaign werden die Daten in Listen angezeigt. Sie können integrierte Filter anwenden, um schnell auf eine definierte Teilmenge zuzugreifen, z. B. Adressen in Quarantäne, nicht kontaktierte Empfängerinnen und Empfänger oder Einträge, die in einem bestimmten Altersbereich liegen oder ein bestimmtes Erstellungsdatum haben. Sie können auch benutzerdefinierte Filter erstellen, diese zur späteren Verwendung speichern und für andere Campaign-Benutzende freigeben.
 
-In der Dokumentation **Campaign v8 (Konsole** [&#x200B; erfahren Sie, wie Sie auf Filter zugreifen, sie erstellen und freigeben](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+Wie Sie [auf Filter zugreifen, sie erstellen und freigeben](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/audience/create-filters){target=_blank}, erfahren Sie in der **Dokumentation zu Campaign v8 (Konsole)**.
 
 
 ## Arbeiten mit Listen {#manage-and-customize-lists}
 
 In der Campaign-Client-Console werden die Daten in Listen angezeigt. Sie können diese Listen Ihren Bedürfnissen entsprechend anpassen. Sie können beispielsweise Spalten hinzufügen, Daten filtern, Einträge zählen und Ihre Einstellungen speichern und freigeben.
 
-Erfahren Sie in **Dokumentation zu** Campaign v8 (Konsole), wie Sie Listen verwalten [&#x200B; anpassen &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/configuration/ui-settings#customize-lists){target=_blank}.
+Wie Sie **Listen verwalten und anpassen**, erfahren Sie in der [Dokumentation zu Campaign v8 (Konsole)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/configuration/ui-settings#customize-lists){target=_blank}.
 
 ## Verwalten von Aufzählungen{#managing-enumerations}
 
@@ -138,10 +138,10 @@ Eine Aufzählung (auch als Aufzählungsliste bezeichnet) ist eine vordefinierte 
 
 Wenn Werte definiert sind, werden sie in einer Dropdown-Liste angezeigt. Ein Wert kann direkt ausgewählt oder über eine prädiktive Eingabe eingegeben werden, bei der übereinstimmende Einträge vorgeschlagen und ausgefüllt werden. Einige Felder enthalten vordefinierte Aufzählungen. Bei Bedarf können zusätzliche Aufzählungen erstellt werden.
 
-Weitere Informationen zum **(Arbeiten mit Auflistungen** finden Sie in der [Dokumentation zu Adobe Campaign v8 (Konsole)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
+Weitere Informationen zum **Arbeiten mit Aufzählungen** finden Sie in der [Dokumentation zu Adobe Campaign v8 (Konsole)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
 
 ## Anleitungsvideo {#video}
 
 In diesem Video wird der Campaign Classic-Arbeitsbereich vorgestellt.
 
->[!VIDEO](https://video.tv.adobe.com/v/39531?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12)
