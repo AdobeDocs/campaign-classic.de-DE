@@ -3,9 +3,9 @@ product: campaign
 title: Webtracking-Tag definieren
 description: Webtracking-Tag definieren
 feature: Application Settings
-role: Data Engineer, Developer
+role: Developer
 exl-id: 0b5575be-57e7-4eee-9c0a-e9ef4b0931bf
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 4%
@@ -108,17 +108,17 @@ In der folgenden Tabelle sind die vom Weiterleitungs-Server unterstützten Param
 
 * Erfassen von Daten zum Geschäftsvolumen
 
-  **https://myserver.adobe.com/r/4567?tagid=command&amount=100&article=2l**
+  **https://myserver.adobe.com/r/4567?tagid=command&amp;amount=100&amp;article=2l**
 
 * Feld angeben, um den Empfänger zu finden
 
-  **https://myserver.adobe.com/r/2353?tagid=home&rcpid=saccount%3D10**
+  **https://myserver.adobe.com/r/2353?tagid=home&amp;rcpid=saccount%3D10**
 
   Ein Empfänger mit der Kontonummer 10 wird auf die Startseite gesendet.
 
 * Standardversand verwenden
 
-  **https://myserver.adobe.com/r/2456?tagid=home&jobid=e6**
+  **https://myserver.adobe.com/r/2456?tagid=home&amp;jobid=e6**
 
   Ein Empfänger wird zur Startseite weitergeleitet. Diese Informationen werden im Versand mit der Kennung 230 (e6 in der Datenbank 16) gespeichert, es sei denn, mit dieser Abfrage wird ein Sitzungs-Cookie mit einer Versandkennung gesendet.
 

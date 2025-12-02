@@ -3,9 +3,9 @@ product: campaign
 title: Einfügen von Webtracking-Tags in Ihre Site
 description: Erfahren Sie, wie Sie Webtracking-Tags in Ihre Site einfügen
 feature: Configuration
-role: Data Engineer, Developer
+role: Developer
 exl-id: e7fcec75-82fe-45ff-8d45-7d6e95baeb14
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 0%
@@ -125,7 +125,7 @@ Wenn Ihre Web-Seiten dynamisch generiert werden, können Sie das Web-Tracking-Ta
 
 Wenn Sie die an den Weiterleitungsserver gesendeten Informationen steuern möchten, ist es am zuverlässigsten, die HTTP-Abfrage mithilfe einer Seitengenerierungssprache selbst synchron durchzuführen.
 
-Die von Ihnen erstellte URL muss den unter (Webtracking[Tag: Definition) definierten Syntaxregeln &#x200B;](../../configuration/using/web-tracking-tag-definition.md).
+Die von Ihnen erstellte URL muss den unter (Webtracking[Tag: Definition) definierten Syntaxregeln ](../../configuration/using/web-tracking-tag-definition.md).
 
 ![](assets/d_ncs_integration_webtracking_structure3.png)
 

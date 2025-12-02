@@ -4,12 +4,12 @@ title: Formatierung
 description: Formatierung
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Email Design
-role: User, Developer, Data Engineer
+role: User, Developer
 exl-id: d9688dc4-20c6-4a9a-990f-465f39b2faa2
-source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '1462'
-ht-degree: 100%
+source-wordcount: '1457'
+ht-degree: 93%
 
 ---
 
@@ -25,7 +25,7 @@ Ein JavaScript-Template wird wie Schemata oder Formulare über seinen Namen und 
 
 ### Struktur von JavaScript-Templates {#structure-of-a-javascript-template}
 
-Das folgende Beispiel zeigt ein auf dem Schema &quot;cus:Buch&quot; basierendes JavaScript-Template für ein HTML-Layout:
+Beispiel einer JavaScript HTML-Formatierungsvorlage, die auf dem Schema „cus:book basiert:
 
 ```
 <html>
@@ -43,7 +43,7 @@ Das folgende Beispiel zeigt ein auf dem Schema &quot;cus:Buch&quot; basierendes 
 
 Die verschiedenen JavaScript-Anweisungen werden wie folgt dargestellt:
 
-* Verbindungsfelder: zeigt den Dateninhalt mit der Syntax **`<%= <source> %>`** an, wobei `<source>` das Quellfeld der anzuzeigenden Daten bezeichnet.
+* Zusammenführungsfelder: zeigt den Dateninhalt mit der Syntax **`<%= <source> %>`** an, wobei `<source>` das Quellfeld der anzuzeigenden Daten bezeichnet.
 * Anweisungsblock: führt zwischen den Tags &lt;% und %> enthaltene JavaScript-Anweisungen aus.
 
 Das Objekt **content** steht für das Hauptelement des XML-Quelldokuments.
@@ -191,7 +191,7 @@ Im Folgenden wird die Konfiguration eines JavaScript-Templates dargestellt:
 
 Gehen Sie wie folgt vor:
 
-1. Erstellen Sie folgendes Schema (hier **neo:News**):
+1. Erstellen Sie das folgende Schema (in diesem Fall: **neo:news**):
 
    ```
    <srcSchema _cs="Invitation (neo)"   entitySchema="xtk:srcSchema" img="xtk:schema.png" label="Invitation" mappingType="sql" name="news" namespace="neo" xtkschema="xtk:srcSchema">
@@ -230,7 +230,7 @@ Gehen Sie wie folgt vor:
    </srcSchema>
    ```
 
-1. Erstellen Sie das zugeordnete Formular (**neo:News**) vom Typ **[!UICONTROL Content Management]**:
+1. Erstellen des verknüpften **[!UICONTROL Content-Management]**-Typformulars (**neo:news**)
 
    ```
    <form _cs="News (neo)" entitySchema="xtk:form"  img="xtk:form.png" label="News"  name="news" namespace="neo" type="contentForm" xtkschema="xtk:form">
@@ -376,11 +376,11 @@ Diese Umwandlung wird in einem Stylesheet genannten XML-Dokument beschrieben.
 
 Ein Stylesheet wird wie Schemata oder Formulare über seinen Namen und Namespace identifiziert. Es wird jedoch empfohlen den Namen mit **.xsl** zu ergänzen.
 
-Der Identifikationsschlüssel eines Stylesheets ist eine Zeichenfolge, die den Namespace und den Namen enthält, getrennt durch das Zeichen &#39;:&#39; (z. B. **cus:Buch.xsl**).
+Der Identifizierungsschlüssel eines Stylesheets ist eine Zeichenfolge, die aus dem Namespace und dem Namen besteht, getrennt durch einen Doppelpunkt (z. B. **cus:book.xsl**.
 
 ### Struktur eines Stylesheets {#structure-of-a-stylesheet}
 
-Das folgende Beispiel zeigt ein auf dem Schema &quot;cus:Buch&quot; basierendes Stylesheet für ein HTML-Ausgabedokument:
+Beispiel eines HTML-Formatierungsstylesheets basierend auf dem Beispielschema „cus:book:
 
 ```
 <?xml version="1.0" encoding="ISO-8859-1" ?>
@@ -444,7 +444,7 @@ Die folgenden Anweisungen beschreiben die Stylesheet-Konfiguration zur Formatier
 
 Standardmäßig sucht der XSLT-Prozessor die sich auf den Wurzel- oder Hauptknoten des XML-Quelldokuments beziehende **Vorlage**. Die Erstellung des Ausgabedokuments geschieht auf Basis dieser **Vorlage**.
 
-Im vorliegenden Beispiel wird ausgehend vom Schema &quot;cus:Buch&quot; eine HTML-Seite erzeugt, die den Titel und die Liste der Kapitel des Buches anzeigt.
+In unserem Beispiel wird eine HTML-Seite aus dem Schema „cus:book generiert, indem der Name des Buchs und die Liste der Kapitel angezeigt werden.
 
 >[!NOTE]
 >
@@ -503,7 +503,7 @@ Der Inhalt des Stylesheets wird im Editor erfasst:
 
 ![](assets/d_ncs_content_form14.png)
 
-Sie können jederzeit eine Vorschau des Ausgabedokuments erzeugen, indem Sie einen Inhalt und das Ausgabeformat (HTML, Text, XML) angeben und anschließend auf die Schaltfläche **[!UICONTROL Erzeugen]** klicken.
+Sie können jederzeit eine Vorschau des Ausgabedokuments erzeugen, indem Sie eine Inhaltsinstanz und das Ausgabeformat (HTML, Text, XML) angeben und anschließend auf die Schaltfläche **[!UICONTROL Erzeugen]** klicken.
 
 ![](assets/d_ncs_content_form15.png)
 

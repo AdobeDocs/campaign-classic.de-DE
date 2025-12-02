@@ -3,9 +3,9 @@ product: campaign
 title: Einschränken der Anzeige von personenbezogenen Daten
 description: Erfahren Sie, wie Sie die Anzeige von personenbezogenen Daten einschränken
 feature: PI
-role: Data Engineer, Developer
+role: Developer
 exl-id: 0f32d62d-a10a-4feb-99fe-4679b98957d4
-source-git-commit: e198defd60f4b12681025b04b12a1498df015047
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 69%
@@ -44,7 +44,7 @@ Die wichtigsten Eigenschaften sind:
 
 Die Verwendung dieses Attributs in Campaign hat folgende Folgen:
 
-* Die Daten werden mit dem generischen Abfrage-Tool nicht in der Konsole angezeigt.
+* Die Daten werden mit dem generischen Abfrage-Editor nicht in der Konsole angezeigt.
 * Die Daten sind in Übersichtslisten und der Liste der Einträge (Konsole) nicht sichtbar.
 * Die Daten werden in detaillierter Ansicht schreibgeschützt.
 * Die Daten sind nur innerhalb von Filtern verwendbar (was bedeutet, dass Sie bei einigen Dichotomie-Strategien immer noch Werte schätzen können).

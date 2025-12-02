@@ -2,15 +2,15 @@
 product: campaign
 title: Druckregeln
 description: Erfahren Sie, wie in Adobe Campaign mit Druckregeln gearbeitet wird.
-role: User, Data Engineer
+role: User, Developer
 feature: Fatigue Management, Typology Rules, Campaigns
 hide: true
 hidefromtoc: true
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: ht
-source-wordcount: '3512'
-ht-degree: 100%
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -199,7 +199,7 @@ Wenn keine Gruppierung ausgewählt wird, wird nur der **4. Newsletter** nicht ve
 
 ## Ausschließen nach Schlichtung {#exclusion-after-arbitration}
 
-Die Schlichtung wird jede Nacht durch den technischen Workflow **[!UICONTROL Planungen]** und den Workflow **[!UICONTROL Kampagnenvorgänge]** erneut durchgeführt.
+Die Schlichtung wird jede Nacht durch den technischen Workflow **[!UICONTROL Planungen]** und den Workflow **[!UICONTROL Kampagnenaufträge]** erneut durchgeführt.
 
 Der Workflow **[!UICONTROL Planungen]** berechnet die Daten über die (seit dem Startdatum bis zum jetzigen Zeitpunkt) verstrichene Zeitspanne, die zur Anwendung der Typologieregeln während der Analyse notwendig sind. Er berechnet zudem jede Nacht die Ausschlusszähler für die Schlichtungen neu.
 

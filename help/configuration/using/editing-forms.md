@@ -3,10 +3,10 @@ product: campaign
 title: Bearbeiten von Formularen
 description: Bearbeiten von Formularen
 feature: Configuration
-role: Data Engineer, Developer
+role: Developer
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '1736'
 ht-degree: 3%
@@ -240,7 +240,7 @@ Gehen Sie wie folgt vor, um ein Formular zu erstellen:
 
    | Feld-Editor | Formularattribut |
    | --- | --- |
-   | Radiobutton | `type="radiobutton"` |
+   | Optionsfeld | `type="radiobutton"` |
    | Kontrollkästchen | `type="checkbox"` |
    | Baum bearbeiten | `type="tree"` |
 

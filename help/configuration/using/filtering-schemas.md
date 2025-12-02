@@ -3,12 +3,12 @@ product: campaign
 title: Filtern von Schemata
 description: Filtern von Schemata
 feature: Custom Resources
-role: Data Engineer, Developer
+role: Developer
 exl-id: 009bed25-cd35-437c-b789-5b58a6d2d7c6
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 79%
+source-wordcount: '382'
+ht-degree: 65%
 
 ---
 
@@ -65,7 +65,7 @@ Diese Filter werden auf der **Hauptelementebene** der Schemata eingegeben und k�
 Standardmäßig sind integrierte Schemata nur mit SCHREIB-Berechtigungen für Benutzer mit ADMINISTRATOR-Rechten zugänglich:
 
 * ncm:publishing
-* nl:monitoring
+* NL:monitoring
 * nms:calendar
 * xtk:builder
 * xtk:connections
@@ -97,7 +97,7 @@ Standardmäßig sind integrierte Schemata nur mit SCHREIB-Berechtigungen für Be
 
 >[!IMPORTANT]
 >
->LESE- und SCHREIB-Berechtigungen für das Schema **xtk:sessionInfo** sind nur über das interne Konto einer Adobe Campaign-Instanz zugänglich.
+>LESE- und SCHREIB-Berechtigungen für das **xtk:sessionInfo**-Schema sind nur über das interne Konto einer Adobe Campaign-Instanz zugänglich.
 
 ## Systemfilter der integrierten Schemata ändern {#modifying-system-filters-of-built-in-schemas}
 
@@ -109,4 +109,4 @@ Sie können die Systemfilter der vordefinierten Schemata, die aufgrund von Kompa
 
 1. Erstellen Sie eine Erweiterung für das betreffende Schema oder öffnen Sie eine vorhandene Erweiterung.
 1. Fügen Sie ein untergeordnetes Element **`<sysfilter name="<filter name>" _operation="delete"/>`** im Hauptelement hinzu, um die Anwendung des Filters unter demselben Element im Ursprungsschema zu löschen.
-1. Wenn Sie möchten, können Sie einen neuen Filter hinzufügen, wie unter [&#x200B; beschrieben](#system-filters).
+1. Wenn Sie möchten, können Sie einen neuen Filter hinzufügen, wie unter [ beschrieben](#system-filters).

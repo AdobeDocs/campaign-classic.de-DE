@@ -3,13 +3,13 @@ product: campaign
 title: Hosting-Modelle
 description: Entdecken von Campaign-Hosting-Modellen
 feature: Installation, Architecture, Deployment
-role: Architect
+role: Developer
 level: Beginner
 exl-id: a06b1365-d487-4df1-8f4a-7268b871a427
-source-git-commit: a38d53f4b37aadbc53446b5e399af2eae56c12af
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '615'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -45,12 +45,12 @@ Adobe Campaign kann On-Premise bereitgestellt werden: Alle Komponenten von Adobe
 
 Bevor Sie als On-Premise-Kunde mit der Bereitstellung von Campaign Classic beginnen, beachten Sie die folgenden Voraussetzungen und Empfehlungen:
 
-* Lesen Sie die [Kompatibilitätsmatrix“, &#x200B;](../../rn/using/compatibility-matrix.md) alle Versionen der für Adobe Campaign unterstützten Systeme und Komponenten auflistet.
+* Lesen Sie die [Kompatibilitätsmatrix“, ](../../rn/using/compatibility-matrix.md) alle Versionen der für Adobe Campaign unterstützten Systeme und Komponenten auflistet.
 * Lesen Sie je nach Umgebung die [Voraussetzungen für Windows](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) und [Voraussetzungen für Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md).
 * Weitere Informationen zu Empfehlungen zu Datenbank-Engines [in diesem Abschnitt](../../installation/using/database.md).
 * Überprüfen Sie, ob die erforderlichen Datenbankzugriffsebenen auf dem Server installiert sind und über das Adobe Campaign-Konto zugänglich sind. [Weitere Informationen](../../installation/using/application-server.md).
 * Konfigurieren Sie Ihre Netzwerke, da einige Prozesse mit anderen kommunizieren oder auf das LAN und das Internet zugreifen müssen. Dies bedeutet, dass einige TCP-Ports für diese Prozesse offen sein müssen. [Weitere Informationen](../../installation/using/network-configuration.md) über die Anforderungen an die Netzwerkkonfiguration.
-* Lesen Sie [Campaign-Sicherheits- und Datenschutz-Checkliste](https://helpx.adobe.com/de/campaign/kb/acc-security.html).
+* Lesen Sie [Campaign-Sicherheits- und Datenschutz-Checkliste](https://experienceleague.adobe.com/de/docs/campaign-classic/using/installing-campaign-classic/security-privacy/get-started-security-privacy).
 * Lesen Sie die allgemeinen Richtlinien für die Schätzung der Hardwareanforderungen für die On-Premise-Bereitstellung [in diesem Artikel](https://helpx.adobe.com/de/campaign/kb/hardware-sizing-guide.html).
 
 ## Hybrid

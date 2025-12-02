@@ -3,10 +3,10 @@ product: campaign
 title: Erstellen von Filtern
 description: Erfahren Sie, wie Sie Filter für eine benutzerdefinierte Tabelle erstellen
 feature: Profiles, Custom Resources
-role: Data Engineer, Developer
+role: Developer
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 exl-id: 6fad3dac-9af0-4796-adcf-d1de4b255aca
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '114'
 ht-degree: 11%

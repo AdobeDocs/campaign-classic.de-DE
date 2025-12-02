@@ -3,11 +3,11 @@ product: campaign
 title: Datenorientierte APIs
 description: Datenorientierte APIs
 feature: API
-role: Data Engineer, Developer
+role: Developer
 exl-id: a392c55e-541a-40b1-a910-4a6dc79abd2d
-source-git-commit: 517b85f5d7691acc2522bf4541f07c34c60c7fbf
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '1813'
+source-wordcount: '1796'
 ht-degree: 1%
 
 ---
@@ -44,9 +44,9 @@ Für Spalten und Bedingungen können Sie Abfragen verwenden.
 
 Auf diese Weise können Sie die zugrunde liegende SQL isolieren. Die Abfragesprache hängt nicht von der zugrunde liegenden Engine ab: Einige Funktionen werden neu zugeordnet, was mehrere SELECT SQL-Bestellungen erzeugen kann.
 
-Weitere Informationen hierzu finden Sie unter [Beispiel zur Methode „ExecuteQuery“ des Schemas „xtk:queryDef“](../../configuration/using/web-service-calls.md#example-on-the--executequery--method-of-schema--xtk-querydef-).
+Weitere Informationen hierzu finden Sie unter [Beispiel zur Methode „ExecuteQuery“ des Schemas „xtk:queryDef&quot;](../../configuration/using/web-service-calls.md#example-on-the--executequery--method-of-schema--xtk-querydef-).
 
-Die **ExecuteQuery**-Methode wird in &quot;[ExecuteQuery (xtk:queryDef)“ &#x200B;](#executequery--xtk-querydef-).
+Die **ExecuteQuery**-Methode wird in [ExecuteQuery (xtk:queryDef) ](#executequery--xtk-querydef-).
 
 ### Schreiben {#write}
 
@@ -56,13 +56,13 @@ Mit Transaktions-APIs können Sie Abstimmungen über den Befehl **updateOrInsert
 
 Die XML-Struktur bietet eine logische Ansicht der Daten und ermöglicht es Ihnen, die physische Struktur der SQL-Tabelle zu umgehen.
 
-Die Write-Methode wird in [Write/WriteCollection (xtk:session) &#x200B;](#write---writecollection--xtk-session-).
+Die Write-Methode wird in [Write/WriteCollection (xtk:session) ](#write---writecollection--xtk-session-).
 
 ## ExecuteQuery (xtk:queryDef) {#executequery--xtk-querydef-}
 
 Mit dieser Methode können Sie Abfragen aus Daten durchführen, die mit einem Schema verknüpft sind. Dazu sind eine Authentifizierungszeichenfolge (muss angemeldet sein) und ein XML-Dokument erforderlich, das die als Parameter zu sendende Abfrage beschreibt. Der Rückgabeparameter ist ein XML-Dokument, das das Ergebnis der Abfrage im Format des Schemas enthält, auf das sich die Abfrage bezieht.
 
-Definition der Methode „ExecuteQuery“ im Schema „xtk:queryDef“:
+Definition der Methode „ExecuteQuery“ im Schema &quot;:queryDef&quot;:
 
 ```xml
 <method name="ExecuteQuery" const="true">
@@ -74,11 +74,11 @@ Definition der Methode „ExecuteQuery“ im Schema „xtk:queryDef“:
 
 >[!NOTE]
 >
->Dies ist eine „const“-Methode. Die Eingabeparameter sind in einem XML-Dokument im Format des Schemas „xtk:queryDef“ enthalten.
+>Dies ist eine „const“-Methode. Die Eingabeparameter sind in einem XML-Dokument im Format des Schemas „xtk:queryDef enthalten.
 
 ### Format des XML-Dokuments der Eingabeabfrage {#format-of-the-xml-document-of-the-input-query}
 
-Die Struktur des XML-Dokuments der Abfrage wird im Schema „xtk:queryDef &quot; beschrieben. Dieses Dokument beschreibt die Klauseln einer SQL-Abfrage: „select“, „where“, „order by“, „group by“, „have“.
+Die Struktur des XML-Dokuments der Abfrage wird im Schema „xtk:queryDef beschrieben. Dieses Dokument beschreibt die Klauseln einer SQL-Abfrage: „select“, „where“, „order by“, „group by“, „have“.
 
 ```xml
 <queryDef schema="schema_key" operation="operation_type">
@@ -185,7 +185,7 @@ Gibt die Liste der Empfänger zurück, die nach Ordner und E-Mail-Domain gefilte
 
 Ausdrücke können einfache Felder oder komplexe Ausdrücke wie arithmetische Operationen oder die Verkettung von Zeichenfolgen sein.
 
-Um die Anzahl der zurückzugebenden Datensätze zu begrenzen, fügen Sie dem `<querydef>`-Element **Attribut** lineCount) hinzu.
+Um die Anzahl der zurückzugebenden Datensätze zu begrenzen, fügen Sie dem **-Element** Attribut `<querydef>`lineCount) hinzu.
 
 So begrenzen Sie die Anzahl der von der Abfrage zurückgegebenen Datensätze auf 100:
 
@@ -306,7 +306,7 @@ Diese Syntax vereinfacht die Abfrage, wenn mehr als zwei Daten in der Bedingung 
   </where>
   ```
 
-  Abrufen der Felder des Ordners aus dem Schema „nms:recipient“:
+  So rufen Sie die Felder des Ordners aus dem Schema &quot;:recipient&quot; ab:
 
   ```xml
   <select>
@@ -391,7 +391,7 @@ Um die Bindung eines Parameters zu vermeiden, muss das Attribut „noSqlBind“ 
 
 Der Rückgabeparameter ist ein XML-Dokument im Format des Schemas, das mit der Abfrage verknüpft ist.
 
-Beispiel für eine Rückgabe aus dem Schema „nms:recipient“ über einen „get“-Vorgang:
+Beispiel für eine Rückgabe aus dem Schema &quot;:recipient&quot; bei einem „get“-Vorgang:
 
 ```
 <recipient email="john.doe@adobe.com" lastName"Doe" firstName="John"/>
@@ -494,7 +494,7 @@ Dieses Dokument wird durch Anweisungen zum Konfigurieren der Schreibvorgänge er
 
 Der Aufruf gibt keine Daten zurück, mit Ausnahme von Fehlern.
 
-Definition der Methoden „Write“ und „WriteCollection“ im Schema „xtk:session“:
+Definition der Methoden „Write“ und „WriteCollection“ im Schema &quot;:session&quot;:
 
 ```xml
 <method name="Write" static="true">
@@ -575,7 +575,7 @@ Verknüpfen des Ordners mit einem Empfänger auf Grundlage seines internen Namen
 
 Die Attribute „_key“ und „_operation“ können für ein verknüpftes Element eingegeben werden. Das Verhalten in diesem Element ist dasselbe wie im Hauptelement des Eingabeschemas.
 
-Die Definition des Schlüssels der Hauptentität („nms:recipient„) besteht aus einem Feld einer verknüpften Tabelle (Element `<folder>` Schema „xtk:folder„) und der E-Mail.
+Die Definition des Schlüssels der Hauptentität („nms:recipient„) besteht aus einem Feld aus einer verknüpften Tabelle (Element `<folder>` Schema „xtk:folder„) und der E-Mail.
 
 >[!NOTE]
 >
@@ -583,7 +583,7 @@ Die Definition des Schlüssels der Hauptentität („nms:recipient„) besteht a
 
 #### Beispiel 2 {#example-2}
 
-Aktualisieren des Unternehmens (verknüpfte Tabelle im Schema „cus:company„) von einem Empfänger:
+Aktualisieren des Unternehmens (verknüpfte Tabelle im Schema „cus:company) von einem Empfänger:
 
 ```xml
 <recipient _key="[folder/@name], @email" email="john.doe@adobe.net" lastName="Doe" firstName="John" xtkschema="nms:recipient">
@@ -605,7 +605,7 @@ Hinzufügen eines Empfängers zu einer Gruppe mit der Gruppenbeziehungstabelle (
 
 >[!NOTE]
 >
->Die Definition des Schlüssels wird nicht im `<rcpgroup>`-Element eingegeben, da im Schema „nms:group“ ein impliziter Schlüssel definiert ist, der auf dem Gruppennamen basiert.
+>Die Definition des Schlüssels wird nicht im `<rcpgroup>`-Element eingegeben, da ein impliziter Schlüssel, der auf dem Gruppennamen basiert, im Schema „nms:group&quot; definiert ist.
 
 ### XML-Sammlungselemente {#xml-collection-elements}
 

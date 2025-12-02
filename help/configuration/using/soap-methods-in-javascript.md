@@ -3,11 +3,11 @@ product: campaign
 title: SOAP-Methoden in JavaScript
 feature: Configuration, Instance Settings
 description: SOAP-Methoden in JavaScript
-role: Data Engineer, Developer
+role: Developer
 exl-id: 62020447-fe59-4363-994d-de4d8032bbd7
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '136'
+source-wordcount: '134'
 ht-degree: 9%
 
 ---
@@ -30,7 +30,7 @@ xtk.workflow.PostEvent("WKF1", "signal", "", $recipient-id='123', false)
 
 Um nicht statische SOAP-Methoden zu verwenden, müssen Sie zunächst eine Entität mit den Methoden „get“ oder „create“ für die entsprechenden Schemata abrufen.
 
-Im folgenden Beispiel wird die ExecuteQuery-Methode des Schemas „xtk:queryDef“ aufgerufen:
+Im folgenden Beispiel wird die ExecuteQuery-Methode des Schemas „xtk:queryDef aufgerufen:
 
 ```
 var query = xtk.queryDef.create(

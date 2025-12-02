@@ -3,12 +3,12 @@ product: campaign
 title: Campaign Explorer-Navigationsbaum konfigurieren
 feature: Application Settings
 description: Erfahren Sie, wie Sie den Navigationsbaum von Campaign Explorer konfigurieren
-role: Data Engineer, Developer
+role: Developer
 exl-id: c7ae7240-0c12-4420-bbb3-4268c9ade3e7
-source-git-commit: d56038fc8baf766667d89bb73747c20ec041124c
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '1204'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 Als erfahrener Benutzer können Sie Ordner in der Explorer-Struktur hinzufügen und sie anpassen.
 
-Weitere Informationen zur Campaign-Benutzeroberfläche finden Sie in der Dokumentation zu [Adobe Campaign v8 (Konsole](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
+Weitere Informationen zur Campaign-Benutzeroberfläche finden Sie in der [Dokumentation zu Adobe Campaign v8 (Konsole)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}.
 
 Die von der Navigationsliste verwendeten Ordnertypen werden in einem XML-Dokument beschrieben, das der Grammatik des Schemas **xtk:navtree** entspricht.
 

@@ -3,11 +3,11 @@ product: campaign
 title: Assistent für neue Felder
 description: Assistent für neue Felder
 feature: Schema Extension
-role: Data Engineer, Developer
+role: Developer
 exl-id: 2350a531-7a26-4f26-90fe-8dac0cc26605
-source-git-commit: ec774cc10a69a694b3c2bf5a6f662afd12a1435a
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '206'
+source-wordcount: '205'
 ht-degree: 4%
 
 ---
@@ -35,7 +35,7 @@ Die Assistenten-Bildschirme enthalten die folgenden Schritte:
 
 1. Um die Änderungen zu bestätigen, klicken Sie auf die Schaltfläche **[!UICONTROL Beenden]**.
 
-Eine Erweiterungsdatei mit dem Namen „cus:recipient“ wird in diesem Beispiel automatisch erstellt und das entsprechende SQL-Script wird ausgeführt:
+Eine Erweiterungsdatei mit dem Namen „cus:recipient wird in unserem Beispiel automatisch erstellt und das entsprechende SQL-Script wird ausgeführt:
 
 ```
 <srcSchema extendedSchema="nms:recipient" label="Recipients" name="recipient"  namespace="cus">  

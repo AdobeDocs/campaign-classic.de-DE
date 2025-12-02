@@ -2,15 +2,15 @@
 product: campaign
 title: Anwenden von Typologieregeln
 description: Hier erfahren Sie, wie Sie Typologieregeln anwenden
-role: User, Data Engineer
+role: User, Developer
 feature: Typology Rules, Campaigns
 hide: true
 hidefromtoc: true
 exl-id: 09ec0fc0-76ed-4c73-8bdf-c931e2103aa9
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '1051'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -59,7 +59,7 @@ Bestimmen Sie nun im Abfrage-Editor die Filterbedingungen. Im unten stehenden Be
 
 Schlichtungen werden jede Nacht automatisch durch den Datenbankbereinigungs-Workflow neu ausgeführt. Die Werte können jedoch über diesen Zeitraum hinaus gespeichert werden.
 
-Wenn beispielsweise ein Prozess die Marketing-Datenbank wöchentlich mit Neigungsscores und Bestelldaten der Kunden anreichert, ist es nicht notwendig, auf diesen Werten basierende Daten täglich neu zu berechnen.
+Wenn beispielsweise ein Prozess die Marketing-Datenbank wöchentlich mit Neigungsscores und Kaufdaten der Kunden anreichert, ist es nicht notwendig, auf diesen Werten basierende Daten täglich neu zu berechnen.
 
 Geben Sie hierzu im Feld **[!UICONTROL Frequenz]** der Registerkarte **[!UICONTROL Allgemein]** an, wie lange die Berechnungen höchstens beibehalten werden sollen. Der Standardwert **0s** veranlasst, dass die Berechnungen bis zur nächsten Ausführung der täglichen Neuschlichtung gültig bleiben.
 
@@ -112,7 +112,7 @@ Mögliche Werte:
 
   Wenn Sie die Größe der Zielgruppe kennen müssen, um die Kontrollregel anzuwenden, wählen Sie diese Phase aus.
 
-  Die Kontrollregel **[!UICONTROL Prüfung der Testversandgröße]** beispielsweise wird zwingend nach der Zielbestimmungsphase angewandt: Diese Regel verhindert eine Nachrichtenpersonalisierung, wenn die Zielgruppe des Testversands zu groß ist.
+  Die Kontrollregel **[!UICONTROL Prüfung der Testversandgröße]** beispielsweise wird zwingend nach der Zielgruppenbestimmungsphase angewandt: Diese Regel verhindert eine Nachrichtenpersonalisierung, wenn die Zielgruppe des Testversands zu groß ist.
 
 * **[!UICONTROL Zu Beginn der Personalisierung]**
 

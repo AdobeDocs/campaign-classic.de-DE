@@ -3,12 +3,12 @@ product: campaign
 title: Protokoll und Einstellungen des SMS-Connectors
 description: Erfahren Sie mehr über den SMS-Connector und dessen Konfiguration
 feature: SMS
-role: Developer, Data Engineer
+role: Developer
 exl-id: fded088a-11a2-4b87-a368-7b197334aca4
-source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '8457'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

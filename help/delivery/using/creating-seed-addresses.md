@@ -4,12 +4,12 @@ title: Erstellen von Testadressen
 description: Erfahren Sie, wie Sie Testadressen erstellen und verwenden.
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Seed Address
-role: User, Data Engineer
+role: User, Developer
 exl-id: f7dc97f0-3423-4b6f-88e2-08180f9adf8a
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 100%
+source-wordcount: '447'
+ht-degree: 86%
 
 ---
 
@@ -26,7 +26,7 @@ Adobe Campaign bietet auch die Möglichkeit, Testadressenvorlagen zu erstellen, 
 Gehen Sie zur Erstellung von Testadressen wie folgt vor:
 
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Neu]** oberhalb der Testadressenliste.
-1. Füllen Sie im Tab **[!UICONTROL Empfänger]** die jeweiligen Felder aus. Die verfügbaren Felder entsprechen den Standardfeldern in den Profilen der Versandempfänger (nms:recipient table): Name, Vorname, E-Mail etc.
+1. Geben Sie die mit der Adresse verknüpften Daten in die entsprechenden Felder auf der Registerkarte **[!UICONTROL Empfänger]** ein. Die verfügbaren Felder entsprechen den Standardfeldern in den Profilen der Versandempfänger (nms, :recipient): Name, Vorname, E-Mail usw.
 
    >[!NOTE]
    >
@@ -36,7 +36,7 @@ Gehen Sie zur Erstellung von Testadressen wie folgt vor:
 
    ![](assets/s_ncs_user_seedlist_new_address.png)
 
-1. Geben Sie auf der Registerkarte **[!UICONTROL Adressfelder]** die Werte an, die während der Analysephase in die Versandlogs (Tabelle **[!UICONTROL nms:broadLog]**) geschrieben werden sollen.
+1. Geben **[!UICONTROL auf der Registerkarte]** Adressfelder“ die Werte an, die während der Analysephase in die Versandlogs (Tabelle **[!UICONTROL nms:broadLog]** eingefügt werden sollen.
 
 1. Geben Sie im Tab **[!UICONTROL Zusätzliche Daten]** die Personalisierungsdaten an, die in mit Data Management-Workflows erstellten Sendungen verwendet werden und die durch einen spezifischen Wert ersetzt werden sollen.
 

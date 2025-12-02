@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 3a5856c3-b642-4722-97ff-6ae7107efdbe
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '1655'
+source-wordcount: '1657'
 ht-degree: 63%
 
 ---
@@ -74,7 +74,7 @@ Sie müssen Treiber für Teradata installieren, damit die Verbindung zu Campaign
 
 ## Externes Teradata-Konto{#teradata-external}
 
-Mit dem externen Konto Teradata können Sie Ihre Campaign-Instanz mit Ihrer externen Teradata-Datenbank verbinden.
+Über das externe Konto „Teradata“ können Sie Ihre Campaign-Instanz mit Ihrer externen Teradata-Datenbank verbinden.
 
 1. Klicken Sie **[!UICONTROL Campaign-]** auf **[!UICONTROL Administration]** / **[!UICONTROL Plattform]** / **[!UICONTROL Externe Konten]**.
 
@@ -143,7 +143,7 @@ Gehen Sie wie folgt vor, um das Query Banding zu konfigurieren:
 
 Wenn beim Testen der Verbindung der Fehler **TIM-030008 Datum &#39;2&#39;: fehlende Zeichen (iRc = -53)** auftritt, stellen Sie sicher, dass der ODBC-Treiber korrekt installiert ist und LD_LIBRARY_PATH (Linux)/PATH (Windows) für den Campaign-Server festlegt wurde.
 
-Der Fehler **ODB-240000 ODBC-Fehler: [Microsoft][ODBC Driver Manager]-Datenquellenname nicht gefunden und kein Standardtreiber angegeben.** tritt unter Windows auf, wenn Sie einen 16.X-Treiber verwenden. Adobe Campaign erwartet, dass die Teradata in ODBCinst.ini &quot;{teradata}&quot; benannt werden.
+Der Fehler **ODB-240000 ODBC-Fehler: \[Microsoft\]\[ODBC Driver Manager\] Data source name not found and no default driver specified.** tritt unter Windows auf, wenn Sie einen 16.X-Treiber verwenden. Adobe Campaign erwartet, dass die Teradata in ODBCinst.ini &quot;{teradata}&quot; benannt werden.
 
 * Ab Campaign 18.10 können Sie ODBCDriverName=&quot;Teradata Database ODBC Driver 16.10“ in die Optionen des externen Kontos einfügen. Die Versionsnummer kann geändert werden. Den genauen Namen finden Sie, indem Sie odbcad32.exe ausführen und auf die Registerkarte Treiber zugreifen.
 
@@ -274,7 +274,7 @@ Wenn für Ihre Linux-Distribution kein Paket vorhanden ist, können Sie die Inst
 
 Installieren des ODBC-Treibers:
 
-1. Entpacken Sie die Datei tdodbc1620__linux_indep.16.20.00.00-1.tar.gz.
+1. Extrahieren Sie die Datei tdodbc1620__linux_indep.16.20.00.00-1.tar.gz.
 
 1. Wechseln Sie zum Verzeichnis „tdodbc1620“.
 
@@ -290,7 +290,7 @@ Installieren des ODBC-Treibers:
 
 Installieren der Tools:
 
-1. Entpacken Sie die Datei TeradataToolsAndUtilitiesBase__linux_indep.16.20.01.00.tar.gz.
+1. Extrahieren Sie die Datei TeradataToolsAndUtilitiesBase__linux_indep.16.20.01.00.tar.gz.
 
 1. Wechseln Sie zum Verzeichnis „TeradataToolsAndUtilitiesBase/Linux/i386-x8664/tdicu“.
 

@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 3d43010e-53f8-4aa2-a651-c422a02191fe
-source-git-commit: f032ed3bdc0b402c8281bc34e6cb29f3c575aaf9
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '933'
-ht-degree: 98%
+source-wordcount: '932'
+ht-degree: 96%
 
 ---
 
@@ -22,7 +22,7 @@ Damit ein Benutzer über FDA Aktionen in einer Datenbank ausführen kann, muss e
 
 1. Wählen Sie im Adobe-Campaing-Explorer über den Knoten **[!UICONTROL Administration > Zugriffe > Spezifische Berechtigungen]** aus.
 1. Erstellen Sie eine neue Berechtigung, indem Sie einen Titel eingeben.
-1. Das Feld **[!UICONTROL Name]** muss das Format **user:base@server** aufweisen, wobei:
+1. Das Feld **[!UICONTROL Name]** muss das folgende Format haben **user:base@server**, wobei :
 
    * **user** dem Namen des Benutzers in der externen Datenbank entspricht.
    * **base** dem Namen der externen Datenbank entspricht.
@@ -30,7 +30,7 @@ Damit ein Benutzer über FDA Aktionen in einer Datenbank ausführen kann, muss e
 
      >[!NOTE]
      >
-     >Der Teil **:base** ist in Oracle optional.
+     >Der **:base** Teil ist in Oracle optional.
 
 1. Speichern Sie die spezifische Berechtigung und verknüpfen Sie sie dann mit dem ausgewählten Benutzer über den Knoten **[!UICONTROL Administration > Zugriffe > Benutzer]** im Adobe Campaign-Explorer.
 
@@ -42,7 +42,7 @@ Generell sind die folgenden Berechtigungen erforderlich:
 * **READ Data**: Nur Lesezugriff auf Tabellen, die Kundendaten enthalten,
 * **READ &#39;MetaData&#39;**: Zugriff auf Serverdatenkataloge zum Abruf der Tabellenstruktur,
 * **LOAD**: Ladevorgänge für große Datenmengen in Arbeitstabellen (erforderlich bei der Arbeit an Sammlungen und Joins),
-* **CREATE/DROP** für **TABLE/INDEX/PROCEDURE/FUNCTION** (nur bei von Adobe Campaign generierten Tabellen),
+* **CREATE/DROP** für **TABLE/INDEX/PROCEDURE/FUNCTION** (nur bei von Adobe Campaign generierten Arbeitstabellen),
 * **EXPLAIN** (empfohlen): für die Performance-Überwachung im Fall von Problemen,
 * **WRITE Data** (abhängig vom Integrationsszenario).
 
@@ -75,5 +75,5 @@ Der Datenbankadministrator muss sicherstellen, dass diese Berechtigungen mit den
 | **Überwachen von Ausführungen** | Zur Verwendung der EXPLAIN-Anweisung ist keine Berechtigung erforderlich | Berechtigung SELECT | Nur ein Systemadministrator kann sp_showplan ausführen | Zur Verwendung der EXPLAIN-Anweisung ist keine Berechtigung erforderlich | Zur Verwendung der EXPLAIN-Anweisung ist keine Berechtigung erforderlich |
 | **Schreiben von Daten** | Berechtigungen INSERT und UPDATE | Berechtigungen INSERT und UPDATE | Berechtigungen INSERT und UPDATE | Berechtigungen INSERT und UPDATE | Berechtigungen INSERT und UPDATE |
 | **Laden von Daten in Tabellen** | Berechtigungen SELECT und INSERT, um die Anweisungen COPY TO bzw. COPY FROM zu verwenden | Berechtigung FILE | Seien Sie Eigentümer der Tabelle oder der ALTER-Berechtigung. Je nach der Option -gl kann LOAD TABLE ggf. nur ausgeführt werden, wenn der Benutzer über das Entscheidungsniveau DBA verfügt | Berechtigungen SELECT und INSERT | Berechtigungen SELECT und INSERT |
-| **Zugreifen auf Client-Daten** | Berechtigung SELECT | Berechtigung SELECT | Berechtigung SELECT | Berechtigung SELECT |
+| **Zugreifen auf Client-Daten** | Berechtigung SELECT | Berechtigung SELECT | Berechtigung SELECT | Berechtigung SELECT |  |
 | **Zugreifen auf Metadaten** | Berechtigung SHOW | Berechtigung SELECT | Keine Berechtigung erforderlich für die Verwendung der Anweisung DESCRIBE | Keine Berechtigung erforderlich, um den Befehl „\d table“ zu verwenden | Keine Berechtigung erforderlich, um den SHOW-Befehl zu verwenden |

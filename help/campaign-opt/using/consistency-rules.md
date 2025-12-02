@@ -2,15 +2,15 @@
 product: campaign
 title: Kohärenzregeln
 description: Erfahren Sie, wie in Adobe Campaign mit Kohärenzregeln gearbeitet wird.
-role: User, Data Engineer
+role: User, Developer
 feature: Typology Rules, Campaigns
 hide: true
 hidefromtoc: true
 exl-id: 757328fa-4698-4f85-a5fa-074b5152ec45
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '829'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

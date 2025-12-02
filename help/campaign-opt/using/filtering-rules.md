@@ -2,15 +2,15 @@
 product: campaign
 title: Filterregeln
 description: Informationen zur Verwendung von Filterregeln in Adobe Campaign
-role: User, Data Engineer
+role: User, Developer
 feature: Typology Rules, Campaigns
 hide: true
 hidefromtoc: true
 exl-id: a4d12445-5680-4704-9c67-e43e0ea6631b
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '531'
-ht-degree: 100%
+source-wordcount: '530'
+ht-degree: 98%
 
 ---
 
@@ -30,11 +30,11 @@ Gehen Sie wie folgt vor:
 
    ![](assets/campaign_opt_create_filter_01.png)
 
-1. Verändern Sie die Standard-Zielgruppenbestimmung und wählen Sie die Abonnements aus (**nms:subscription**).
+1. Ändern Sie die Standard-Zielgruppendimension und wählen Sie die Abonnements aus **nms:subscription**.
 
    ![](assets/campaign_opt_create_filter_02.png)
 
-1. Erstellen Sie den Filter über den Link **[!UICONTROL Abfrage von der Zieldimension ausgehend bearbeiten]**.
+1. Erstellen Sie den Filter über den Link **[!UICONTROL Abfrage von der Zielgruppendimension ausgehend bearbeiten]**.
 
    ![](assets/campaign_opt_create_filter_03.png)
 

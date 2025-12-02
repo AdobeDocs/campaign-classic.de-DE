@@ -3,11 +3,11 @@ product: campaign
 title: Schlüsselverwaltung in Datenschemata
 description: Grundlegendes zur Schlüsselverwaltung in Datenschemata
 feature: Configuration, Instance Settings
-role: Data Engineer, Developer
+role: Developer
 exl-id: faf63c8f-9d10-43c1-a990-91361594af9f
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '617'
 ht-degree: 30%
 
 ---
@@ -130,7 +130,7 @@ Der Primärschlüssel der meisten Adobe Campaign-Tabellen ist eine 32-Bit-Ganzza
 
 Der Vorteil eines inkrementellen Schlüssels besteht darin, dass er einen nicht veränderbaren technischen Schlüssel für die Joins zwischen Tabellen bereitstellt. Darüber hinaus benötigt dieser Schlüssel nicht viel Speicher, da er eine Doppelbyte-Ganzzahl verwendet.
 
-Sie können im Quellschema den Namen der mit dem Attribut **pkSequence** zu verwendenden Sequenz angeben. Wenn dieses Attribut nicht im Quellschema angegeben ist, wird die **XtkNewId** Standardsequenz verwendet. Die Anwendung verwendet dedizierte Sequenzen für die **nms:broadLog**- und **nms:trackingLog**-Schemas (**NmsBroadLogId** bzw. **NmsTrackingLogId**), da dies die Tabellen sind, die die meisten Einträge enthalten.
+Sie können im Quellschema den Namen der mit dem Attribut **pkSequence** zu verwendenden Sequenz angeben. Wenn dieses Attribut nicht im Quellschema angegeben ist, wird die **XtkNewId** Standardsequenz verwendet. Die Anwendung verwendet dedizierte Sequenzen für die Schemata **nms:broadLog** und **nms:trackingLog** (**NmsBroadLogId** bzw. **NmsTrackingLogId**), da dies die Tabellen sind, die die meisten Datensätze enthalten.
 
 Ab ACC 18.10 **XtkNewId** nicht mehr der Standardwert für die Sequenz in den vordefinierten Schemata. Sie können jetzt ein Schema erstellen oder ein vorhandenes Schema mit einer dedizierten Sequenz erweitern.
 

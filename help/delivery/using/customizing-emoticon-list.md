@@ -4,14 +4,14 @@ title: Personalisieren der Emoticon-Liste
 description: Erfahren Sie, wie Sie die Emoticon-Liste unter Verwendung von Adobe Campaign personalisieren können
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Email, Push
-role: User, Data Engineer
+role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: b8642df3-1960-4f2c-8273-c3988a3e85f0
-source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
-workflow-type: ht
-source-wordcount: '485'
-ht-degree: 100%
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

@@ -3,11 +3,11 @@ product: campaign
 title: Web-Dienstaufrufe
 description: Web-Dienstaufrufe
 feature: API
-role: Data Engineer, Developer
+role: Developer
 exl-id: ce94e7e7-b8f8-4c82-937f-e87d15e50c34
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '918'
 ht-degree: 1%
 
 ---
@@ -53,7 +53,7 @@ Eine „const“-Methode verfügt implizit über ein XML-Dokument im Format des 
 
 Eine vollständige Beschreibung des `<method>` eines Adobe Campaign-Schemas finden Sie im Kapitel „Schemaverweise“ unter [Methode](../../configuration/using/schema/method.md)
 
-Beispiel der Methode „ExecuteQuery“ vom Typ „const“ aus dem Schema „xtk:queryDef“:
+Beispiel der „const“-Methode „ExecuteQuery“ aus dem „xtk:queryDef&quot;-Schema:
 
 ```
 <method name="ExecuteQuery" const="true">
@@ -64,7 +64,7 @@ Beispiel der Methode „ExecuteQuery“ vom Typ „const“ aus dem Schema „xt
 </method>
 ```
 
-Der Eingabeparameter dieser Methode ist ein XML-Dokument im Format des Schemas „xtk:queryDef“.
+Der Eingabeparameter dieser Methode ist ein XML-Dokument im Format des Schemas „xtk:queryDef.
 
 ## Webdienst-Beschreibung: WSDL {#web-service-description--wsdl}
 
@@ -79,9 +79,9 @@ https://`<server>`/nl/jsp/schemawsdl.jsp?schema=`<schema>`
 Mit:
 
 * **`<server>`**: Der Adobe Campaign-Anwendungsserver (nlserver web)
-* **`<schema>`**: Schema-Identifizierungsschlüssel (namespace:schema_name)
+* **`<schema>`**: Schema-Identifizierungsschlüssel (Namespace:schema_name)
 
-### Beispiel für die Methode „ExecuteQuery“ des Schemas „xtk:queryDef“ {#example-on-the--executequery--method-of-schema--xtk-querydef-}
+### Beispiel für die Methode „ExecuteQuery“ des Schemas „xtk:queryDef&quot; {#example-on-the--executequery--method-of-schema--xtk-querydef-}
 
 Die WSDL-Datei wird aus der URL generiert:
 
@@ -91,7 +91,7 @@ Eine WSDL-Beschreibung beginnt mit der Definition der Typen, die zum Erstellen v
 
 #### Typen {#types}
 
-Typdefinitionen basieren auf XML-Schemata. In unserem Beispiel akzeptiert die Methode „ExecuteQuery“ eine Zeichenfolge „s:string“ und ein XML-Dokument (`<s:complextype>`) als Parameter. Der Rückgabewert der Methode („ExecuteQueryResponse„) ist ein XML-Dokument ( `<s:complextype>`).
+Typdefinitionen basieren auf XML-Schemata. In unserem Beispiel verwendet die Methode „ExecuteQuery“ eine Zeichenfolge „s:string&quot; und ein XML-Dokument (`<s:complextype>`) als Parameter. Der Rückgabewert der Methode („ExecuteQueryResponse„) ist ein XML-Dokument ( `<s:complextype>`).
 
 ```
 <types>

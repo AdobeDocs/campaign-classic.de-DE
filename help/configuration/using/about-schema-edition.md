@@ -3,11 +3,11 @@ product: campaign
 title: Über die Schemabearbeitung
 description: Erste Schritte mit der Schemabearbeitung
 feature: Schema Extension
-role: Data Engineer, Developer
+role: Developer
 exl-id: 9e10b24e-c4de-4e76-bbed-0d05f62120b7
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '1013'
+source-wordcount: '1012'
 ht-degree: 63%
 
 ---
@@ -24,7 +24,7 @@ Nähere Erläuterungen zu den in Campaign integrierten Tabellen und ihrer Intera
 
 ## Erweitern oder Erstellen von Schemata {#extending-or-creating-schemas}
 
-Um einem der Kerndatenschemata in Campaign ein Feld, einen Index oder ein anderes Element hinzuzufügen, z. B. die Empfängertabelle (nms:recipient), müssen Sie dieses Schema erweitern. Weitere Informationen hierzu finden Sie im Abschnitt [Erweitern eines &#x200B;](../../configuration/using/extending-a-schema.md)&quot;.
+Um einem der Standard-Datenschemata in Campaign ein Feld, einen Index oder ein anderes Element hinzuzufügen, z. B. die Empfängertabelle (nms:recipient), müssen Sie dieses Schema erweitern. Weitere Informationen hierzu finden Sie im Abschnitt [Erweitern eines ](../../configuration/using/extending-a-schema.md)&quot;.
 
 Um einen komplett neuen Datentyp hinzuzufügen, der in Adobe Campaign nicht standardmäßig zur Verfügung gestellt wird (z. B. eine Vertragstabelle), können Sie direkt ein benutzerdefiniertes Schema erstellen. Weiterführende Informationen hierzu finden Sie im Abschnitt [Datenschemata](../../configuration/using/data-schemas.md) .
 
@@ -32,9 +32,9 @@ Um einen komplett neuen Datentyp hinzuzufügen, der in Adobe Campaign nicht stan
 
 Nachdem Sie ein Schema erweitert oder erstellt haben, in dem Sie arbeiten können, empfiehlt es sich, die XML-Inhaltselemente in der Reihenfolge zu definieren, in der sie unten angezeigt werden.
 
-## Auflistungen {#enumerations}
+## Aufzählungen {#enumerations}
 
-Auflistungen werden als Erstes definiert, noch vor dem Hauptelement des Schemas. Über sie können Sie Werte in einer Liste anzeigen, um die Auswahl einzuschränken, die der Benutzer für ein bestimmtes Feld hat.
+Aufzählungen werden als Erstes definiert, noch vor dem Hauptelement des Schemas. Über sie können Sie Werte in einer Liste anzeigen, um die Auswahl einzuschränken, die der Benutzer für ein bestimmtes Feld hat.
 
 Beispiel:
 
@@ -46,7 +46,7 @@ Beispiel:
 </enumeration>
 ```
 
-Beim Definieren von Feldern können Sie diese Auflistung wie folgt verwenden:
+Beim Definieren von Feldern können Sie diese Aufzählung wie folgt verwenden:
 
 ```
 <attribute desc="Type of Transaction" label="Transaction Type" name="transactionType" 
@@ -55,7 +55,7 @@ type="string" enum="exTransactionTypeEnum"/>
 
 >[!NOTE]
 >
->Sie können auch benutzerseitig verwaltete Auflistungen verwenden (in der Regel unter **[!UICONTROL Administration]** > **[!UICONTROL Platform]**), um die Werte für ein bestimmtes Feld anzugeben. Dabei handelt es sich um globale Auflistungen. Sie sind besser geeignet, wenn Ihre Auflistung außerhalb des von Ihnen eingesetzten Schemas verwendet werden kann.
+>Sie können auch benutzerseitig verwaltete Aufzählungen verwenden (in der Regel unter **[!UICONTROL Administration]** > **[!UICONTROL Platform]**), um die Werte für ein bestimmtes Feld anzugeben. Dabei handelt es sich um globale Aufzählungen. Sie sind besser geeignet, wenn Ihre Aufzählung außerhalb des von Ihnen eingesetzten Schemas verwendet werden kann.
 
 Weitere Informationen zu Auflistungen finden Sie in den Abschnitten [Auflistungen](../../configuration/using/schema-structure.md#enumerations) und [`<enumeration>` Element](../../configuration/using/schema/enumeration.md).
 
@@ -221,4 +221,4 @@ Weiterführende Informationen finden Sie im Abschnitt [Datenbankstruktur aktuali
 
 >[!NOTE]
 >
->Wenn Änderungen sich nicht auf die Datenbankstruktur auswirken, müssen Sie nur die Schemata neu erstellen. Wählen Sie dazu die zu aktualisierenden Schemata aus, klicken Sie mit der rechten Maustaste und wählen Sie **[!UICONTROL Aktionen > Ausgewählte Schemata wiederherstellen…]** . Weiterführende Informationen hierzu finden Sie im Abschnitt [Regenerieren &#x200B;](../../configuration/using/regenerating-schemas.md) Schemata“.
+>Wenn Änderungen sich nicht auf die Datenbankstruktur auswirken, müssen Sie nur die Schemata neu erstellen. Wählen Sie dazu die zu aktualisierenden Schemata aus, klicken Sie mit der rechten Maustaste und wählen Sie **[!UICONTROL Aktionen > Ausgewählte Schemata wiederherstellen…]** . Weiterführende Informationen hierzu finden Sie im Abschnitt [Regenerieren ](../../configuration/using/regenerating-schemas.md) Schemata“.

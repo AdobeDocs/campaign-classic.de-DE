@@ -3,13 +3,13 @@ product: campaign
 title: Formularstruktur
 description: Formularstruktur
 feature: Application Settings
-role: Data Engineer, Developer
+role: Developer
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 exl-id: e61f2b63-06d3-4b8c-867f-1c729176d2da
-source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '2416'
-ht-degree: 89%
+source-wordcount: '2412'
+ht-degree: 85%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 89%
 
 
 
-Die Beschreibung eines Formulars ist ein strukturiertes XML-Dokument, das die Grammatik des Formularschemas anwendet: **xtk:form**.
+Die Beschreibung eines Formulars ist ein strukturiertes XML-Dokument, das die Grammatik des Formularschemas (**):form**.
 
 Das XML-Dokument eines Formulars muss das `<form>` Stammelement mit den Attributen **name** und **namespace** zum Ausfüllen des Formularnamens und des Namespace enthalten.
 
@@ -27,7 +27,7 @@ Das XML-Dokument eines Formulars muss das `<form>` Stammelement mit den Attribut
 </form>
 ```
 
-Standardmäßig ist ein Formular mit dem Datenschema verknüpft, das denselben Namen und denselben Namespace aufweist. Um ein Formular mit einem anderen Namen zu verknüpfen, setzen Sie das Attribut **entity-schema** des Elements `<form>` auf den Namen des Schemaschlüssels. Um die Struktur eines Formulars zu veranschaulichen, beschreiben wir eine Schnittstelle mit dem Beispielschema &quot;cus:recipient&quot;:
+Standardmäßig ist ein Formular mit dem Datenschema verknüpft, das denselben Namen und denselben Namespace aufweist. Um ein Formular mit einem anderen Namen zu verknüpfen, setzen Sie das Attribut **entity-schema** des Elements `<form>` auf den Namen des Schemaschlüssels. Um die Struktur eines Formulars zu veranschaulichen, beschreiben wir eine Schnittstelle mit dem Beispielschema „cus:recipient:
 
 ```xml
 <srcSchema name="recipient" namespace="cus">
@@ -63,7 +63,7 @@ Das Eingabefeld passt sich automatisch dem gewählten Datentyp an und verwendet 
 
 >[!NOTE]
 >
->Sie können das in seinem Datenschema definierte Label überschreiben, indem Sie dem `<input>` das **label**-Attribut hinzufügen:\
+>Sie können das in seinem Datenschema definierte Label überschreiben, indem Sie dem **das** label`<input>`-Attribut hinzufügen:\
 >`<input label="Email address" xpath="@name" />`
 
 Standardmäßig wird jedes Feld, je nach Datentyp, einzeilig über den gesamten verfügbaren Platz angezeigt.
@@ -211,7 +211,7 @@ Dieser Container enthält eine vertikale Symbolleiste, mit der Sie die anzuzeige
 
 Der Haupt-Container wird durch das Attribut **type=&quot;iconbox&quot;** definiert. Die mit den Symbolen verknüpften Seiten werden in den untergeordneten Containern deklariert. Die Beschriftung der Symbole wird aus dem Attribut **label** gefüllt.
 
-Das Seitensymbol wird aus dem Attribut `img="<image>"` gefüllt, wobei `<image>` der Bildname ist, der dem zugehörigen Bildschlüssel entspricht, der aus dem Namespace und dem Namen besteht (z. B. &quot;xtk:properties.png&quot;).
+Das Seitensymbol wird aus dem Attribut `img="<image>"` gefüllt, wobei `<image>` der Bildname ist, der dem zugehörigen Bildschlüssel entspricht, der aus dem Namespace und dem Namen besteht (z. B. „xtk:properties.png„).
 
 Die Bilder sind im Knoten **[!UICONTROL Administration > Konfiguration > Bilder]** verfügbar.
 
@@ -277,7 +277,7 @@ Mit **[!UICONTROL Symbol „Relation ändern]** (Ordner) wird ein Auswahlformula
 
 ![](assets/d_ncs_integration_form_exemple10.png)
 
-Das Symbol **[!UICONTROL Relation bearbeiten]** (Vergrößerung) startet das Bearbeitungsformular des verknüpften Elements. Das verwendete Formular wird standardmäßig auf den Schlüssel des Zielschemas zurückgeführt. Mit dem Attribut **form** können Sie den Namen des Bearbeitungsformulars erzwingen (z. B. &quot;cus:company2&quot;).
+Das Symbol **[!UICONTROL Relation bearbeiten]** (Vergrößerung) startet das Bearbeitungsformular des verknüpften Elements. Das verwendete Formular wird standardmäßig auf den Schlüssel des Zielschemas zurückgeführt. Mit dem **form**-Attribut können Sie den Namen des Bearbeitungsformulars erzwingen (z. B. „cus:company2„).
 
 Es besteht außerdem die Möglichkeit, die Auswahl von Zielelementen durch Hinzufügen des Elements **`<sysfilter>`** aus der Definition der Relation in das Formular einzuschränken:
 
@@ -378,7 +378,7 @@ Beispiel einer Beziehungstabelle in einem Schema:
 </srcSchema>
 ```
 
-In unserem Beispiel beginnen wir mit dem Eingabeformular des Schemas „cus:recipient“. Die Liste muss die Verbindungen mit Abonnements von Services anzeigen und Sie müssen das Hinzufügen eines Abonnements durch Auswahl eines vorhandenen Services ermöglichen.
+In unserem Beispiel beginnen wir mit dem Eingabeformular des Schemas „cus:recipient. Die Liste muss die Verbindungen mit Abonnements von Services anzeigen und Sie müssen das Hinzufügen eines Abonnements durch Auswahl eines vorhandenen Services ermöglichen.
 
 ![](assets/d_ncs_integration_form_exemple12.png)
 
@@ -494,7 +494,7 @@ Beispiel für das Feld &quot;Geschlecht&quot;:
 <input xpath="@gender" readOnly="true"/>
 ```
 
-## Radiobutton {#radio-button}
+## Optionsfeld {#radio-button}
 
 Mit einem Optionsfeld können Sie aus verschiedenen Optionen wählen. Die **`<input>`**-Tags werden verwendet, um die möglichen Optionen aufzulisten, und das Attribut **checkedValue** gibt den Wert an, der mit der Auswahl verbunden ist.
 
@@ -519,7 +519,7 @@ Eine Checkbox gibt den booleschen Status an (ausgewählt oder nicht). Standardm�
 
 ![](assets/d_ncs_integration_form_exemple20.png)
 
-## Auflistung {#enumeration}
+## Aufzählung {#enumeration}
 
 <!-- to be completed -->
 

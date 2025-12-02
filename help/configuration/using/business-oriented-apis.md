@@ -3,11 +3,11 @@ product: campaign
 title: Geschäftsorientierte APIs
 description: Geschäftsorientierte APIs
 feature: API
-role: Data Engineer, Developer
+role: Developer
 exl-id: e6638870-3141-4f12-b904-db436127c0d1
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '618'
 ht-degree: 2%
 
 ---
@@ -30,7 +30,7 @@ Business-APIs sind für jeden Objekttyp spezifisch. Sie haben Auswirkungen auf:
      Siehe [SOAP-Methoden in JavaScript](../../configuration/using/soap-methods-in-javascript.md).
 
 * Content-Management
-* Informationen zur Abonnementverwaltung finden Sie unter [Abonnieren (nms:subscription)](#subscribe--nms-subscription-) und [Abmelden (nms:subscription)](#unsubscribe--nms-subscription-).
+* Abonnementverwaltung, siehe [Abonnieren (nms:subscription)](#subscribe--nms-subscription-) und [Abmelden (nms:subscription)](#unsubscribe--nms-subscription-).
 * Datenprozesse: Importe, Exporte.
 
 In diesem Abschnitt wird die Verwendung der Services „Abonnieren“, „Abmelden“ und „SubmitDelivery“ beschrieben.
@@ -47,10 +47,10 @@ Die folgenden Parameter sind erforderlich, um den Service aufzurufen:
 
 * einer Authentifizierung,
 * Interner Name des Anmeldedienstes,
-* ein XML-Dokument, das die Empfängerinformationen enthält (aus dem Schema „nms:recipient„),
+* ein XML-Dokument, das die Empfängerinformationen enthält (aus dem Schema &quot;:recipient„),
 * Ein boolescher Wert für die Empfängererstellung, falls noch kein solcher vorhanden ist.
 
-Beschreibung der Methode „subscribe“ im Schema „nms:subscription“:
+Beschreibung der Methode „subscribe“ im Schema „nms:subscription:
 
 ```
 <method name="Subscribe" static="true">
@@ -62,7 +62,7 @@ Beschreibung der Methode „subscribe“ im Schema „nms:subscription“:
 </method>
 ```
 
-Die Definition des Abstimmschlüssels muss über das Attribut _&#x200B;**key** im `<recipient>` des XML-Dokuments eingegeben werden. Der Inhalt dieses Attributs ist eine kommagetrennte XPath-Liste.
+Die Definition des Abstimmschlüssels muss über das Attribut _**key** im `<recipient>` des XML-Dokuments eingegeben werden. Der Inhalt dieses Attributs ist eine kommagetrennte XPath-Liste.
 
 Dieser Aufruf gibt keine Daten zurück, mit Ausnahme von Fehlern.
 
@@ -112,7 +112,7 @@ Aktualisieren der Empfängerin bzw. des Empfängers sowie des Abonnements
   </SOAP-ENV:Envelope>
   ```
 
-## Abo beenden (nms:subscription) {#unsubscribe--nms-subscription-}
+## Abmelden (nms:subscription) {#unsubscribe--nms-subscription-}
 
 Mit diesem Service können Sie ein Abonnement für einen Empfänger von einem Informations-Service kündigen und das Empfängerprofil aktualisieren.
 
@@ -120,9 +120,9 @@ Die folgenden Parameter sind erforderlich, um den Service aufzurufen:
 
 * einer Authentifizierung,
 * Interner Name des Services, für den das Abonnement beendet werden soll,
-* ein XML-Dokument, das die Empfängerinformationen enthält (aus dem Schema „nms:recipient„),
+* ein XML-Dokument, das die Empfängerinformationen enthält (aus dem Schema &quot;:recipient„),
 
-Beschreibung der Methode „Unsubscribe“ im Schema „nms:subscription“:
+Beschreibung der Methode „Unsubscribe“ im Schema „nms:subscription:
 
 ```
 <method name="Unsubscribe" static="true">
@@ -198,7 +198,7 @@ Beschreibung der Methode in ihrem Schema:
 
 Über die Adobe Campaign-Client-Konsole muss eine Versandvorlage erstellt werden. Sie enthält die für alle Sendungen gemeinsamen Parameter (Absenderadresse oder Gültigkeitsdauer der Nachricht).
 
-Das XML-Eingabedokument ist ein Fragment einer Versandvorlage, das der Struktur des Schemas „nms:delivery“ entspricht. Sie enthält alle zusätzlichen Daten, die nicht statisch in der Versandvorlage definiert werden konnten (z. B. Liste der an die Zielgruppe adressierten Empfänger).
+Das XML-Eingabedokument ist ein Fragment einer Versandvorlage, das der Struktur des Schemas „nms:delivery&quot; entspricht. Sie enthält alle zusätzlichen Daten, die nicht statisch in der Versandvorlage definiert werden konnten (z. B. Liste der an die Zielgruppe adressierten Empfänger).
 
 Dieser Aufruf gibt keine Daten zurück, mit Ausnahme von Fehlern.
 

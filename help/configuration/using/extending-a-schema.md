@@ -2,13 +2,13 @@
 product: campaign
 title: Schema erweitern
 description: Erfahren Sie, wie Sie ein Schema erweitern
-role: Data Engineer, Developer
+role: Developer
 feature: Schema Extension
 exl-id: 6e3e666d-6ab3-4346-93ca-fb0155a4660d
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '327'
-ht-degree: 11%
+source-wordcount: '302'
+ht-degree: 12%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 11%
 >
 >Einige integrierte Schemata dürfen nicht erweitert werden, insbesondere diejenigen, für die die folgenden Einstellungen definiert sind:\
 >**dataSource=„file“** und **mappingType=„xmlFile“**.\
->Die folgenden Schemata dürfen nicht erweitert werden: **xtk:entityBackupNew**, **xtk:entityBackupOriginal**, **xtk:entityOriginal**, **xtk:form**, **xtk:srcSchema**, **ncm:publishing**, **:monitoring**, **nms:calendar**, **nms:remote**, **nms:userAgent,** xtk:builder, **xtk:connections**, xtk:init **, xtk:nvList**, xtk:fusionJSTk: xtkXtk:navtree **, xtk:nvTreeXtkXtkXtk:resourceXtkXtk:**&#x200B;**&#x200B;** **&#x200B;**&#x200B;**&#x200B;** **&#x200B;**&#x200B;**&#x200B;** **&#x200B;**&#x200B;**&#x200B;** **&#x200B;**&#x200B;**&#x200B;** **&#x200B;**&#x200B;**&#x200B;** xtkXtk:rtkXtk:rtkXtk:rtkXtk989888888888888898
+>Folgende Schemata dürfen nicht erweitert werden: **xtk:entityBackupNew**, **xtk:entityBackupOriginal**, **xtk:entityOriginal**, **xtk:form**, **xtk:srcSchema**, **ncm:publishing**, **nms:monitoring**, **nms:calendar**, **nms:remoteTracking**,xtk **,:userAgentRules** xtk **: jst:builder**, xtk **:connections** xtk **,:dbInit** xtk **,:funcList** xtk **,:fusion** xtk **,** xtk **,:navtree** xtkTk **, xtkTk:queryDef** **:resourceMenu** **:schema** **:scriptContext** **:session** **:sqlSchema** **:strings**.
 >Diese Liste ist nicht vollständig.
 
 Es gibt zwei Methoden zum Erweitern eines vorhandenen Schemas:
@@ -44,7 +44,7 @@ Es gibt zwei Methoden zum Erweitern eines vorhandenen Schemas:
    </srcSchema>
    ```
 
-   Das **nms:recipient**-Schema wird mit dem Feld ausgefüllt, das im Erweiterungsschema ausgefüllt ist:
+   Das **nms:recipient**-Erweiterungsschema wird mit dem Feld ausgefüllt, das im Erweiterungsschema ausgefüllt wird:
 
    ```
    <schema dependingSchemas="cus:recipient" name="recipient" namespace="nms">

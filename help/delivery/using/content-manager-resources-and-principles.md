@@ -4,12 +4,12 @@ title: Ressourcen und Grundlagen des Content-Manager-Moduls
 description: Ressourcen und Grundlagen des Content-Manager-Moduls
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Templates
-role: User, Developer, Data Engineer
+role: User, Developer
 exl-id: ade3f1d1-2235-4148-9b6f-721d3f521a15
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '247'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

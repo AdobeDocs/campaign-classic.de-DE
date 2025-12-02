@@ -3,13 +3,13 @@ product: campaign
 title: Schemastruktur in Adobe Campaign
 description: Schemastruktur
 feature: Custom Resources
-role: Data Engineer, Developer
+role: Developer
 audience: configuration
 content-type: reference
 level: Intermediate, Experienced
 topic-tags: schema-reference
 exl-id: 3405efb8-a37c-4622-a271-63d7a4148751
-source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '1515'
 ht-degree: 65%
@@ -135,7 +135,7 @@ Es gelten folgende Regeln:
 
 Der Datentyp wird über das Attribut **type** in den Elementen **`<attribute>`** und **`<element>`** eingegeben.
 
-Eine detaillierte Liste ist in der Beschreibung des [`<attribute>` Elements &#x200B;](../../configuration/using/schema/attribute.md) des [`<element>` Elements &#x200B;](../../configuration/using/schema/element.md).
+Eine detaillierte Liste ist in der Beschreibung des [`<attribute>` Elements ](../../configuration/using/schema/attribute.md) des [`<element>` Elements ](../../configuration/using/schema/element.md).
 
 Wenn dieses Attribut nicht gefüllt wird, ist **string** der Standarddatentyp, es sei denn, das Element enthält untergeordnete Elemente. Wenn es gefüllt ist, wird es nur zur hierarchischen Strukturierung der Elemente verwendet (Element **`<location>`** in unserem Beispiel).
 
@@ -316,7 +316,7 @@ Um einen Standardwert mit einem Feld zu verknüpfen, können Sie die `<default>`
 
 `<sqldefault>` : ermöglicht es Ihnen, beim Erstellen eines Felds einen zusätzlichen Wert zu erhalten. Dieser Wert wird als SQL-Ergebnis angezeigt. Während einer Aktualisierung des Schemas wirkt sich dieser Wert nur auf die neuen Einträge aus.
 
-### Auflistungen {#enumerations}
+### Aufzählungen {#enumerations}
 
 #### Auflistung öffnen {#free-enumeration}
 
@@ -334,17 +334,17 @@ Diese Werte werden in einer Dropdown-Liste im Formular angezeigt:
 >
 >Navigieren Sie in der Adobe Campaign-Client-Konsole zum Ordner **[!UICONTROL Administration >]**&quot; des Explorers, um Auflistungen zu verwalten.
 
-#### Auflistung festlegen {#set-enumeration}
+#### Aufzählung festlegen {#set-enumeration}
 
-Mit der Eigenschaft **enum** können Sie eine feste Auflistung definieren, die verwendet wird, wenn die Liste der möglichen Werte im Voraus bekannt ist.
+Mit der Eigenschaft **enum** können Sie eine feste Aufzählung definieren, die verwendet wird, wenn die Liste der möglichen Werte im Voraus bekannt ist.
 
-Das Attribut **enum** bezieht sich auf die Definition einer Auflistungsklasse, die im Schema außerhalb des Hauptelements gefüllt wird.
+Das Attribut **enum** bezieht sich auf die Definition einer Aufzählungsklasse, die im Schema außerhalb des Hauptelements gefüllt wird.
 
-Auflistungen ermöglichen es dem Benutzer, einen Wert aus einer Dropdown-Liste auszuwählen, anstatt ihn in ein reguläres Eingabefeld einzugeben:
+Aufzählungen ermöglichen es dem Benutzer, einen Wert aus einer Dropdown-Liste auszuwählen, anstatt ihn in ein reguläres Eingabefeld einzugeben:
 
 ![](assets/d_ncs_integration_schema_enum.png)
 
-Beispiel für eine Deklaration einer Auflistung im Datenschema:
+Beispiel für eine Deklaration einer Aufzählung im Datenschema:
 
 ```sql
 <enumeration name="gender" basetype="byte" default="0">    
@@ -354,27 +354,27 @@ Beispiel für eine Deklaration einer Auflistung im Datenschema:
 </enumeration>
 ```
 
-Eine Auflistung wird über das Element **`<enumeration>`** außerhalb des Hauptelements deklariert.
+Eine Aufzählung wird über das Element **`<enumeration>`** außerhalb des Hauptelements deklariert.
 
-Die Eigenschaften der Auflistung lauten wie folgt:
+Die Eigenschaften der Aufzählung lauten wie folgt:
 
 * **baseType**: Datentyp, der mit den Werten verknüpft ist
 * **label**: Beschreibung der Auflistung
 * **name**: Name der Auflistung
 * **default**: Standardwert der Auflistung
 
-Die Werte für die Auflistung werden im Element **`<value>`** mit den folgenden Attributen deklariert:
+Die Werte für die Aufzählung werden im Element **`<value>`** mit den folgenden Attributen deklariert:
 
 * **name**: Name des intern gespeicherten Werts
 * **label**: in der grafischen Oberfläche angezeigter Titel
 
-#### dbenum-Auflistung {#dbenum-enumeration}
+#### dbenum-Aufzählung {#dbenum-enumeration}
 
 *Mit der **dbenum**-Eigenschaft können Sie eine Auflistung definieren, deren Eigenschaften denen der **enum**-Eigenschaft ähnlich sind.
 
 Das Attribut **name** speichert den Wert jedoch nicht intern, sondern speichert einen Code, mit dem Sie die betreffenden Tabellen erweitern können, ohne ihr Schema zu ändern.
 
-Diese Auflistung dient beispielsweise zur Angabe der Art von Kampagnen.
+Diese Aufzählung dient beispielsweise zur Angabe der Art von Kampagnen.
 
 ![](assets/d_ncs_configuration_schema_dbenum.png)
 

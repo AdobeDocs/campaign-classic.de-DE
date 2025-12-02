@@ -3,18 +3,18 @@ product: campaign
 title: Schemareferenz
 description: Schemareferenz-Liste
 feature: Custom Resources
-role: Data Engineer, Developer
+role: Developer
 exl-id: 5745fc60-9df3-4ad0-bbeb-f6ae8c86a5aa
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '90'
+source-wordcount: '89'
 ht-degree: 21%
 
 ---
 
 # Schemareferenz {#schema-reference}
 
-Beim Bearbeiten eines Schemas ist ein auf dem Quellschema (xtk:srcSchema) basierendes Validierungssystem verfügbar. Einige Fehler können auch beim Aktualisieren der Datenbank mithilfe des Assistenten zum Aktualisieren der Datenbankstruktur erkannt werden.
+Beim Bearbeiten eines Schemas ist ein auf dem Quellschema (xtk) basierendes :srcSchema verfügbar. Einige Fehler können auch beim Aktualisieren der Datenbank mithilfe des Assistenten zum Aktualisieren der Datenbankstruktur erkannt werden.
 
 Standardmäßig sind in Adobe Campaign-Schemata alle booleschen Typattribute „false“. Um sie zu aktivieren, müssen Sie das Attribut im Schema angeben und seinen Wert auf „true“ festlegen.
 
@@ -25,7 +25,7 @@ Referenzliste:
 * [Bedingung](schema/condition.md)
 * [DB-Index](schema/db-index.md)
 * [Element](schema/element.md)
-* [Auflistung](schema/enumeration.md)
+* [Aufzählung](schema/enumeration.md)
 * [Hilfe](schema/help.md)
 * [Join](schema/join.md)
 * [Schlüssel](schema/key.md)

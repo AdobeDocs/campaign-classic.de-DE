@@ -3,13 +3,13 @@ product: campaign
 title: Glossar für Adobe Campaign
 description: Glossar für Adobe Campaign
 feature: Overview
-role: User, Data Architect
+role: User, Developer
 level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
-source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
-workflow-type: ht
-source-wordcount: '6197'
-ht-degree: 100%
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -493,11 +493,11 @@ Weitere Informationen über [Instanzeneinstellungen](../../installation/using/ab
 
 +++
 
-+++**Aufräge (Import und Export)**
++++**Aufträge (Import und Export)**
 
-Aufräge werden über ein Assistentensystem verwaltet, mit dem der Datenimport in das Produkt und der Datenexport aus dem Produkt vereinfacht werden. Bei Aufrägen wird aus Gründen der Einfachheit und Konsistenz ein Vorlagensystem verwendet. Außerdem können Aufräge so definiert werden, dass sie nach einem Zeitplan ausgeführt werden.
+Aufträge werden über ein Assistentensystem verwaltet, mit dem der Datenimport in das Produkt und der Datenexport aus dem Produkt vereinfacht werden. Bei Aufträgen wird aus Gründen der Einfachheit und Konsistenz ein Vorlagensystem verwendet. Außerdem können Aufträge so definiert werden, dass sie nach einem Zeitplan ausgeführt werden.
 
-Weitere Informationen über [Import- und Exportvorgänge](../../platform/using/get-started-data-import-export.md).
+Weitere Informationen über [Import- und Exportaufträge](../../platform/using/get-started-data-import-export.md).
 +++
 
 +++**Listen**

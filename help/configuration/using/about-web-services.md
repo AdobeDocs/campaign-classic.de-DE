@@ -3,11 +3,11 @@ product: campaign
 title: Über Web-Dienste
 description: Über Web-Dienste
 feature: API
-role: Data Engineer, Developer
+role: Developer
 exl-id: 7aa2aef1-2eb6-48a6-82fa-4451bed66216
-source-git-commit: 517b85f5d7691acc2522bf4541f07c34c60c7fbf
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '644'
 ht-degree: 8%
 
 ---
@@ -18,12 +18,12 @@ ht-degree: 8%
 
 Der Adobe Campaign-Anwendungsserver wurde für Offenheit und einfache Integration mit immer vielfältigeren und komplexeren Unternehmensinformationssystemen konzipiert.
 
-Adobe Campaign-APIs werden in JavaScript innerhalb des Programms und in SOAP außerhalb desselben verwendet. Sie bilden eine Bibliothek allgemeiner Funktionen, die angereichert werden können. Weitere Informationen finden Sie unter [&#x200B; von SOAP-](../../configuration/using/implementing-soap-methods.md).
+Adobe Campaign-APIs werden in JavaScript innerhalb des Programms und in SOAP außerhalb desselben verwendet. Sie bilden eine Bibliothek allgemeiner Funktionen, die angereichert werden können. Weitere Informationen finden Sie unter [ von SOAP-](../../configuration/using/implementing-soap-methods.md).
 
 >[!IMPORTANT]
 >
 >Die Anzahl der autorisierten Engine-Aufrufe pro Tag hängt von Ihrem Lizenzvertrag ab. Weitere Informationen hierzu finden Sie auf [dieser Seite](https://helpx.adobe.com/de/legal/product-descriptions/adobe-campaign-classic---product-description.html).\
->Eine Liste aller APIs einschließlich ihrer vollständigen Beschreibung finden Sie in [dieser speziellen Dokumentation]&#x200B;(https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=de.
+>Eine Liste aller APIs einschließlich ihrer vollständigen Beschreibung finden Sie in [dieser speziellen Dokumentation]&#x200B;(https://experienceleague.adobe.com/developer/campaign-api/api/index.html.
 
 ## Voraussetzungen {#prerequisites}
 
@@ -65,7 +65,7 @@ Das folgende Schema zeigt die verschiedenen Ressourcen, die bei der Verwendung v
 
 In diesem Beispiel ruft eine SOAP-Abfrage die Methode „ExecuteQuery“ auf, die eine Zeichenfolge als Authentifizierungsparameter (Sitzungs-Token) und einen XML-Inhalt für die Beschreibung der auszuführenden Abfrage benötigt.
 
-Weitere Informationen finden Sie unter [ExecuteQuery (xtk:queryDef)](../../configuration/using/data-oriented-apis.md#executequery--xtk-querydef-).
+Weitere Informationen finden Sie unter [ (xtk:queryDef)](../../configuration/using/data-oriented-apis.md#executequery--xtk-querydef-).
 
 >[!NOTE]
 >

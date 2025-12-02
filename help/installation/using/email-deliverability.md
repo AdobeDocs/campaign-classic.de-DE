@@ -8,7 +8,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 515adad2-6129-450a-bb9e-fc80127835af
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '3163'
 ht-degree: 17%
@@ -33,7 +33,7 @@ Einen tieferen Einblick in das Thema der Zustellbarkeit, einschließlich aller t
 
 ## Grundprinzip {#operating-principle}
 
-Es ist möglich, die Ausgabe einer oder mehrerer Adobe Campaign-Instanzen zu steuern, um die Anzahl der gesendeten E-Mails je nach Domain zu beschränken. Beispielsweise können Sie die Ausgabe für „yahoo.com“-Adressen auf 20.000 pro Stunde **&#x200B;**, während Sie für alle anderen Domains 100.000 Nachrichten pro Stunde konfigurieren.
+Es ist möglich, die Ausgabe einer oder mehrerer Adobe Campaign-Instanzen zu steuern, um die Anzahl der gesendeten E-Mails je nach Domain zu beschränken. Beispielsweise können Sie die Ausgabe für „yahoo.com“-Adressen auf 20.000 pro Stunde ****, während Sie für alle anderen Domains 100.000 Nachrichten pro Stunde konfigurieren.
 
 Die Nachrichtenausgabe muss für jede von den Versand-Servern verwendete IP-Adresse gesteuert werden (**mta**). Mehrere **mta**, die auf mehreren Computern verteilt sind und zu verschiedenen Adobe Campaign-Instanzen gehören, können dieselbe IP-Adresse für den E-Mail-Versand verwenden: Es muss ein Prozess eingerichtet werden, um die Verwendung dieser IP-Adressen zu koordinieren.
 
@@ -135,7 +135,7 @@ Standardmäßig überwacht der Statistikserver Port 7777. Dieser Port kann in de
 
 >[!IMPORTANT]
 >
->Bei gehosteten oder hybriden Installationen werden die Versanddurchsatzregeln der **[!UICONTROL MX-Verwaltung]** nicht mehr verwendet, wenn Sie auf den [Enhanced MTA](../../delivery/using/sending-with-enhanced-mta.md) aktualisiert haben. Der Enhanced MTA verwendet seine eigenen MX-Regeln. Mit diesen kann Ihr Durchsatz anhand Ihrer historischen E-Mail-Reputation und dem Echtzeit-Feedback, das von den Domains stammt, von denen Sie E-Mails senden, angepasst werden.
+>Bei gehosteten oder hybriden Installationen werden die Versanddurchsatzregeln der **[!UICONTROL MX-Verwaltung]** nicht mehr verwendet, wenn Sie auf den [Enhanced MTA](../../delivery/using/sending-with-enhanced-mta.md) aktualisiert haben. Der Enhanced MTA verwendet eigene MX-Regeln. Mit diesen kann Ihr Durchsatz für jede Domain anhand Ihrer historischen E-Mail-Reputation und des Echtzeit-Feedbacks von den Domains angepasst werden, über die Sie E-Mails senden.
 
 ### Über MX-Regeln {#about-mx-rules}
 
@@ -331,7 +331,7 @@ Mit dem **MIME structure** (Multipurpose Internet Mail Extensions) können Sie d
 
 Wenn die Option **[!UICONTROL Bildintegration]** aktiviert ist, werden diese direkt im Textkörper der E-Mail angezeigt. Die Bilder werden dann hochgeladen und die URL-Links werden durch ihren Inhalt ersetzt.
 
-Diese Option wird insbesondere auf dem japanischen Markt für **Deco-mail**, **Decore Mail** oder **Decoration Mail** verwendet. Weitere Informationen finden Sie in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles){target="_blank"}.
+Diese Option wird insbesondere auf dem japanischen Markt für **Deco-mail**, **Decore Mail** oder **Decoration Mail** verwendet. Weitere Informationen finden Sie in der [ zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles){target="_blank"}.
 
 >[!IMPORTANT]
 >
@@ -395,14 +395,14 @@ Die Parameter lauten wie folgt:
 
 Im vorherigen Beispiel werden die Adressen unter normalen Bedingungen wie folgt verteilt:
 
-    * „1“: 5 / (5+5+1) = 45%
-    * „2“: 5 / (5+5+1) = 45%
-    * „3“: 1 / (5+5+1) = 10%
+* „1“: 5 / (5+5+1) = 45 %
+* „2“: 5 / (5+5+1) = 45 %
+* „3“: 1 / (5+5+1) = 10%
 
 Wenn beispielsweise die erste Adresse nicht für eine bestimmte MX verwendet werden kann, werden Nachrichten wie folgt gesendet:
 
-    * „2“: 5 / (5+1) = 83%
-    * „3“: 1 / (5+1) = 17%
+* „2“: 5 / (5+1) = 83%
+* „3“: 1 / (5+1) = 17%
 
 * **includeDomains**: Hiermit können Sie diese IP-Adresse für E-Mails reservieren, die zu einer bestimmten Domain gehören. Dies ist eine Liste von Masken, die einen oder mehrere Platzhalter (&#39;&#42;&#39;) enthalten können. Wenn das Attribut nicht angegeben ist, können alle Domains diese IP-Adresse verwenden.
 

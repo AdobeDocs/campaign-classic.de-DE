@@ -1,27 +1,27 @@
 ---
 product: campaign
-title: Berichte verwalten
-description: Berichte verwalten
+title: Verwalten von Berichten
+description: Verwalten von Berichten
 feature: Reporting, Configuration
-role: Data Engineer, Developer
+role: Developer
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 exl-id: 68908664-3cf6-4a6c-a327-c7f059c27aa3
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '173'
+source-wordcount: '172'
 ht-degree: 8%
 
 ---
 
-# Berichte verwalten{#managing-reports}
+# Verwalten von Berichten{#managing-reports}
 
 
 
-Berichte, die auf einem Schema basieren, das speziell für die Standardempfänger von Adobe Campaign gilt (nm:recipient oder Schema linked), müssen neu entwickelt werden, um die Daten aus der benutzerdefinierten Tabelle und deren über das Zielgruppen-Mapping verknüpften Tabellen zu berücksichtigen (siehe Abschnitt [Zielgruppen-Mapping](../../configuration/using/target-mapping.md)).
+Berichte, die auf einem Schema basieren, das spezifisch für die Standardempfänger von Adobe Campaign ist (nm:recipient oder verknüpftes Schema), müssen neu entwickelt werden, um die Daten aus der benutzerdefinierten Tabelle und ihren über das Zielgruppen-Mapping verknüpften Tabellen zu berücksichtigen (siehe Abschnitt [Zielgruppen-Mapping](../../configuration/using/target-mapping.md)).
 
 Informationen zum Erstellen neuer Berichte finden Sie [diesem Abschnitt](../../reporting/using/about-reports-creation-in-campaign.md).
 
-In einigen Fällen müssen Sie auch neue Cubes, die für diese Tabellen spezifisch sind, einfügen. Cubes werden in [&#x200B; Abschnitt &#x200B;](../../reporting/using/ac-cubes.md).
+In einigen Fällen müssen Sie auch neue Cubes, die für diese Tabellen spezifisch sind, einfügen. Cubes werden in [ Abschnitt ](../../reporting/using/ac-cubes.md).
 
 Die folgenden Berichte sind betroffen:
 

@@ -4,12 +4,12 @@ title: Verwenden von Datenschemata in Campaign
 description: Erfahren Sie, wie Sie in Campaign Datenschemata verwenden
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Data Model
-role: User, Developer, Data Engineer
+role: User, Developer
 exl-id: 3e28bfee-0321-40f4-9ef6-1bdb5b25041b
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '567'
-ht-degree: 100%
+source-wordcount: '566'
+ht-degree: 98%
 
 ---
 
@@ -39,7 +39,7 @@ In einem Content-Management-Schema entspricht das Hauptelement folgendem Muster:
 
 Das Attribut **template** ermöglicht die Erweiterung des Schemas um die Eigenschaften, die in allen Inhaltsdefinitionen verwendet werden, wie z. B. Name, Erstellungsdatum, Autor, zugeordneter String usw.
 
-Diese Eigenschaften werden im Schema **ncm:content** beschrieben.
+Diese Eigenschaften werden im **ncm:content**-Schema beschrieben.
 
 >[!NOTE]
 >
@@ -73,13 +73,13 @@ Beispiel eines mit Datentypen komplettierten Content-Management-Schemas:
 
 Verschiedene Eigenschaften können die Elemente (**`<element>`**) und (**`<attribute>`**) des Datenschemas ergänzen.
 
-Im Content Management werden vor allem folgende Eigenschaften verwendet:
+Im Content-Management werden vor allem folgende Eigenschaften verwendet:
 
 * **label**: kurze Beschreibung,
 * **desc**: lange Beschreibung,
 * **default**: Ausdruck, der bei der Inhaltserstellung einen Standardwert ausgibt,
-* **userEnum**: freie Auflistung, die die im Feld eingegebenen Werte speichert und anzeigt,
-* **enum**: Auflistung mit einer festgeschriebenen Werteliste.
+* **userEnum**: freie Aufzählung, die die im Feld eingegebenen Werte speichert und anzeigt,
+* **enum**: Aufzählung mit einer festgeschriebenen Werteliste.
 
 Beispiel des um diese Eigenschaften ergänzten Schemas:
 

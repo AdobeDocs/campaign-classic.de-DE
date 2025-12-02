@@ -2,15 +2,15 @@
 product: campaign
 title: Campaign-Simulationen
 description: Erste Schritte mit Campaign-Simulationen
-role: User, Data Engineer
+role: User, Developer
 feature: Campaigns
 hide: true
 hidefromtoc: true
 exl-id: 709c64a8-34bf-43fa-a820-238295fb26b8
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '1376'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -153,7 +153,7 @@ Um das Ergebnis einer Simulation zu analysieren, nutzen Sie die mit ihr verbunde
 Standardmäßig werden folgende Berichte angeboten:
 
 * **[!UICONTROL Detail der Simulationsausschlüsse]**: Dieser Bericht bietet eine detaillierte Tabelle aller Ausschlussgründe für alle von dieser Simulation betroffenen Sendungen.
-* **[!UICONTROL Simulationszusammenfassung]**: Dieser Bericht zeigt den Umfang der von der Simulation ausgeschlossenen Zielgruppen gestaffelt nach Sendungen an.
+* **[!UICONTROL Simulationszusammenfassung]**: Dieser Bericht zeigt den Umfang der von der Simulation ausgeschlossenen Zielpopulationen gestaffelt nach Sendungen an.
 * **[!UICONTROL Zusammenfassung der simulationsbedingten Ausschlüsse]**: Dieser Bericht zeigt eine Tabelle der Ausschlüsse durch die Simlation an. Des weiteren werden die Typologieregeln aufgeführt, die zum Ausschluss geführt haben sowie ihr jeweiliger Anteil an den regelbedingten Ausschlüssen.
 
 >[!NOTE]

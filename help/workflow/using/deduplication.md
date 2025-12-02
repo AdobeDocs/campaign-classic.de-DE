@@ -6,10 +6,10 @@ feature: Workflows, Targeting Activity
 hide: true
 hidefromtoc: true
 exl-id: 38add4fe-6238-45de-863e-895ebca189b7
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '1172'
-ht-degree: 100%
+source-wordcount: '1171'
+ht-degree: 97%
 
 ---
 
@@ -17,12 +17,12 @@ ht-degree: 100%
 
 
 
-Die Deduplizierung dient der Identifizierung von Dubletten in der oder den eingehenden Aktivitäten. Zur Identifizierung können beispielsweise die E-Mail-Adresse, eine Telefonnummer oder andere Felder herangezogen werden.
+Die Deduplizierung dient der Identifizierung von Duplikaten in der oder den eingehenden Aktivitäten. Zur Identifizierung können beispielsweise die E-Mail-Adresse, eine Telefonnummer oder andere Felder herangezogen werden.
 
 Die Aktivität **[!UICONTROL Deduplizierung]** wird zum Entfernen von Duplikat-Zeilen aus einem Datensatz verwendet. Die folgenden Datensätze können beispielsweise als Duplikate betrachtet werden, da sie dieselbe E-Mail-Adresse und dieselbe Mobil- und/oder Festnetztelefonnummer haben.
 
 | Datum der letzten Änderung | Vorname | Nachname | E-Mail | Mobiltelefon | Telefon |
------|------------|-----------|-------|--------------|------
+|-----|------------|-----------|-------|--------------|------|
 | 3.2.2020 | Bob | Tisner | bob@mycompany.com | 444-444-4444 | 888-888-8888 |
 | 19.5.2020 | Robert | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
 | 22.7.2020 | Bobby | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
@@ -30,7 +30,7 @@ Die Aktivität **[!UICONTROL Deduplizierung]** wird zum Entfernen von Duplikat-Z
 Die Aktivität **[!UICONTROL Deduplizierung]** kann eine ganze Zeile als den einzigen Datensatz speichern, nachdem Duplikate identifiziert wurden. Wenn die Aktivität beispielsweise im oben genannten Anwendungsfall so konfiguriert ist, dass nur der Datensatz mit dem ältesten **[!UICONTROL Datum]** beibehalten wird, lautet das Ergebnis:
 
 | Datum | Vorname | Nachname | E-Mail | Mobiltelefon | Telefon |
------|----------|------------|-------|--------------|------
+|-----|----------|------------|-------|--------------|------|
 | 3.2.2020 | Bob | Tisner | bob@mycompany.com | 444-444-4444 | 888-888-8888 |
 
 Der ausgewählte Hauptdatensatz leitet die Daten weiter, ohne dass Felddaten mit anderen relevanten Daten in den Duplikat-Zeilen zusammengeführt werden.
@@ -38,7 +38,7 @@ Der ausgewählte Hauptdatensatz leitet die Daten weiter, ohne dass Felddaten mit
 Komplement:
 
 | Datum | Vorname | Nachname | E-Mail | Mobiltelefon | Telefon |
------|------------|-----------|-------|--------------|------
+|-----|------------|-----------|-------|--------------|------|
 | 19.5.2020 | Robert | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
 | 22.7.2020 | Bobby | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
 
@@ -75,13 +75,13 @@ Die Aktivität ist zu benennen, Deduplizierungsmethode und -bedingungen sind anz
 
    ![](assets/s_user_segmentation_dedup_param3.png)
 
-1. Wählen Sie aus der Dropdown-Liste die gewünschte Methode aus und geben Sie die Anzahl an beizubehaltenden Dubletten an.
+1. Wählen Sie aus der Dropdown-Liste die gewünschte Methode aus und geben Sie die Anzahl an beizubehaltenden Duplikate an.
 
    ![](assets/s_user_segmentation_dedup_param4.png)
 
    Folgende Methoden stehen zur Verfügung:
 
-   * **[!UICONTROL Automatische Auswahl]**: wählt nach dem Zufallsprinzip unter den Dubletten den beizubehaltenden Datensatz aus.
+   * **[!UICONTROL Automatische Auswahl]**: wählt nach dem Zufallsprinzip unter den Duplikaten den beizubehaltenden Datensatz aus.
    * **[!UICONTROL Gemäß einer Werteliste]**: ermöglicht die Bestimmung einer Reihenfolge nach Priorität von Werten für ein oder mehrere Felder. Wählen Sie zur Bestimmung dieser Werte ein Feld aus oder erstellen Sie einen Ausdruck, fügen Sie dann den oder die Werte der entsprechenden Tabelle hinzu. Verwenden Sie die Schaltfläche **[!UICONTROL Hinzufügen]** oberhalb der Werteliste, um ein neues Feld zu definieren.
 
      ![](assets/s_user_segmentation_dedup_param5.png)
@@ -106,7 +106,7 @@ Die Aktivität ist zu benennen, Deduplizierungsmethode und -bedingungen sind anz
 
    ![](assets/s_user_segmentation_dedup_param8.png)
 
-1. Kreuzen Sie die Option **[!UICONTROL Komplement erzeugen]** an, wenn Sie auch die restliche Population im weiteren Verlauf des Workflows verwenden möchten. Das Komplement enthält in diesem Fall alle Dubletten und die Aktivität weist somit, wie unten abgebildet, eine zusätzliche Transition auf:
+1. Kreuzen Sie die Option **[!UICONTROL Komplement erzeugen]** an, wenn Sie auch die restliche Population im weiteren Verlauf des Workflows verwenden möchten. Das Komplement enthält in diesem Fall alle Duplikate und die Aktivität weist somit, wie unten abgebildet, eine zusätzliche Transition auf:
 
    ![](assets/s_user_segmentation_dedup_param9.png)
 
@@ -114,9 +114,9 @@ Die Aktivität ist zu benennen, Deduplizierungsmethode und -bedingungen sind anz
 
 Im folgenden Beispiel soll die Vereinigung der Ergebnisse dreier Abfragen dedupliziert werden.
 
-Ziel des Workflows ist die Bestimmung einer Versandzielgruppe ohne Dubletten, damit dieselben Empfänger den Versand nicht mehrmals erhalten.
+Ziel des Workflows ist die Bestimmung einer Versandzielgruppe ohne Duplikate, damit dieselben Empfänger den Versand nicht mehrmals erhalten.
 
-Die identifizierten Dubletten werden für eine eventuelle spätere Verwendung in einer spezifischen Liste gespeichert.
+Die identifizierten Duplikate werden für eine eventuelle spätere Verwendung in einer spezifischen Liste gespeichert.
 
 ![](assets/deduplication_example.png)
 
@@ -126,15 +126,15 @@ Die identifizierten Dubletten werden für eine eventuelle spätere Verwendung in
 
 1. Öffnen Sie die Deduplizierungsaktivität und klicken Sie auf den Link **[!UICONTROL Konfiguration bearbeiten...]**, um die Deduplizierungsmethode zu bestimmen.
 1. Wählen Sie im sich öffnenden Fenster die Option **[!UICONTROL Datenbankschema]** aus.
-1. Wählen Sie für die Zielgruppen- und die Filterdimension jeweils **Empfänger** aus.
-1. Kreuzen Sie **[!UICONTROL E-Mail]** als Identifizierungskriterium der Dubletten an, damit jeder Empfänger den Versand nur einmal erhält. Klicken Sie auf **[!UICONTROL Weiter]**.
+1. Wählen Sie für die Zielgruppenbestimmungs- und die Filterdimension jeweils **Empfänger** aus.
+1. Kreuzen Sie **[!UICONTROL E-Mail]** als Identifizierungskriterium der Duplikate an, damit jeder Empfänger den Versand nur einmal erhält. Klicken Sie auf **[!UICONTROL Weiter]**.
 
-   Wenn die Identifizierung der Dubletten auf einem anderen als den angebotenen Feldern basieren soll, kreuzen Sie **[!UICONTROL Sonstige]** an. Im nächsten Schritt können Sie dann das Feld aus den in der zugrundeliegenden Tabelle enthaltenen auswählen.
+   Wenn die Identifizierung der Duplikate auf einem anderen als den angebotenen Feldern basieren soll, kreuzen Sie **[!UICONTROL Sonstige]** an. Im nächsten Schritt können Sie dann das Feld aus den in der zugrundeliegenden Tabelle enthaltenen auswählen.
 
 1. Geben Sie an, dass nur ein Datensatz beibehalten werden soll, wenn dieselbe E-Mail-Adresse für mehrere Empfänger identifiziert wurde.
 1. Wählen Sie als Deduplizierungsmethode **[!UICONTROL Automatische Auswahl]**, damit der beizubehaltende Datensatz zufällig bestimmt wird. Klicken Sie abschließend auf **[!UICONTROL Beenden]**.
 
-Bei Ausführung des Workflows werden die als Dubletten identifizierten Empfänger von der Ergebnismenge (und somit vom Versand) ausgeschlossen und in der Liste der Dubletten gespeichert. Diese Liste kann erneut verwendet werden, um die Identifizierung der Dubletten nicht wiederholt vornehmen zu müssen.
+Bei Ausführung des Workflows werden die als Duplikate identifizierten Empfänger von der Ergebnismenge (und somit vom Versand) ausgeschlossen und in der Liste der Duplikate gespeichert. Diese Liste kann erneut verwendet werden, um die Identifizierung der Duplikate nicht wiederholt vornehmen zu müssen.
 
 ## Zusammenführen von Feldern zu einem einzigen Datensatz {#merging-fields-into-single-record}
 
@@ -175,6 +175,6 @@ Jedes eingehende Ereignis muss eine durch diese Parameter definierte Zielgruppe 
 * schema
 * recCount
 
-Anhand der drei Werte lässt sich die durch die Deduplizierung ermittelte Zielgruppe identifizieren. **[!UICONTROL tableName]** ist der Name der Tabelle, die die Kennungen der Zielgruppenempfänger speichert, **[!UICONTROL schema]** ist das Schema der Population, (i. d. R. nms:recipient) und **[!UICONTROL recCount]** ist die Anzahl an Elementen in der Tabelle.
+Anhand der drei Werte lässt sich die durch die Deduplizierung ermittelte Zielgruppe identifizieren. **[!UICONTROL tableName]** ist der Name der Tabelle, die die Zielkennungen speichert, **[!UICONTROL schema]** ist das Schema der Population (normalerweise nms:recipient) und **[!UICONTROL recCount]** die Anzahl der Elemente in der Tabelle.
 
 Die Transition des Komplements weist die gleichen Parameter auf.

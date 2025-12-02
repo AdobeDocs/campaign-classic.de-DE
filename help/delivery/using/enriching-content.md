@@ -4,12 +4,12 @@ title: Anreicherung von Inhalten
 description: Anreicherung von Inhalten
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Data Management
-role: User, Developer, Data Engineer
+role: User, Developer
 exl-id: a4472a7c-a16b-4d10-a8ca-f74ca5f62de4
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '678'
-ht-degree: 100%
+source-wordcount: '674'
+ht-degree: 87%
 
 ---
 
@@ -23,7 +23,7 @@ Die Abfragen werden im **[!UICONTROL Aggregator]**-Tab der Veröffentlichungsvor
 
 Die auf diese Weise abgerufenen Daten ergänzen das XML-Ausgabedokument in seinem Hauptelement.
 
-Beispiel eines Abfrageergebnisses zum Empfängerschema (**nms:recipient**):
+Beispiel für eine Rückgabe aus einer Abfrage über das Empfängerschema (**nms:recipient**):
 
 ```
 <book name="Content Management">
@@ -68,7 +68,7 @@ Relationen ermöglichen den Abruf von externen, mit dem Inhalt verknüpften Date
 
 Man unterscheidet zwischen zwei Typen verknüpfter Daten:
 
-* Inhaltsrelationen: Es handelt sich hier um den nativen Modus des Content Managements. Der Inhalt der Relation wird automatisch in das XML-Ausgabedokument integriert.
+* Inhaltsrelationen: Es handelt sich hier um den nativen Modus des Content-Managements. Der Inhalt der Relation wird automatisch in das XML-Ausgabedokument integriert.
 * Relationen zu externen Tabellen: Sie ermöglichen den Zugriff auf alle anderen Tabellen der Datenbank, erfordern jedoch die Verwendung eines Aggregators, um die Daten abzurufen.
 
 ### Relation zu einem Inhaltsschema {#link-to-a-content-schema}
@@ -79,9 +79,9 @@ Eine Inhaltsrelation wird auf folgende Weise im Datenschema deklariert:
 <element expandSchemaTarget="cus:chapter" label="Main chapter" name="mainChapter" type="string"/>
 ```
 
-Die Relationsdefinition wird in einem **String**- **`<element>`** notiert; das Attribut **expandSchemaTarget** verweist auf das Zielschema (im vorliegenden Beispiel ist dies „nms:chapter“). Das referenzierte Schema muss ein Inhaltsschema sein.
+Die Definition der Relation wird auf einer **vom Typ** Zeichenfolge **`<element>`** ausgefüllt, und das Attribut **expandSchemaTarget** verweist auf das Zielschema („cus:chapter&quot; in unserem Beispiel). Das referenzierte Schema muss ein Inhaltsschema sein.
 
-Der Inhalt des betroffenen Elements ergänzt das Relationselement, im vorliegenden Beispiel also das Element **`<chapter>`**:
+Der Inhalt des betroffenen Elements ergänzt das Relationselement, im vorliegenden Beispielschema also das Element **`<chapter>`**:
 
 ```
 <mainChapter computeString="Introduction" id="7011" title="Introduction" xtkschema="cus:chapter">    
@@ -137,13 +137,13 @@ Im Datenschema wird eine Relation zu einer externen Tabelle wie folgt deklariert
 <element label="Main contact" name="mainContact" target="nms:recipient" type="link"/>
 ```
 
-Die Relationsdefinition wird in einem **Link**-**`<element>`** notiert; das Attribut **target** verweist auf das Zielschema (im vorliegenden Beispiel ist dies „nms:recipient“).
+Die Definition der Relation erfolgt in einem **vom Typ** link **`<element>`**, und das Attribut **target** verweist auf das Zielschema („nms:recipient&quot; in unserem Beispiel).
 
 Es ist gebräuchlich, die Relationen im Hauptelement des Datenschemas zu deklarieren.
 
 Der **Compute string** und der Schlüssel des betroffenen Elements ergänzen die Attribute **`<name>-id`** und **`<name>-cs`** des Hauptelements.
 
-Im vorliegenden Beispiel wurden die Relation im Schema &quot;cus:Buch&quot; und der Inhalt der Relationsdaten in den Attributen &quot;mainContact-id&quot; sowie &quot;mainContact-cs&quot; notiert:
+In unserem Beispiel wird die Relation im Schema „cus:book&quot; ausgefüllt, der Inhalt der Linkdaten ist in den Attributen „mainContact-id“ und „mainContact-cs“ enthalten:
 
 ```
 <book computeString="Content management" date="2006/06/08" id="6106" language="en" mainContact-cs="John Doe (john.doe@adobe.com)" mainContact-id="3012" name="Content management" xtkschema="cus:book">
@@ -256,6 +256,6 @@ Nach Ausführung des Scripts erhalten Sie folgendes Ergebnis:
 <contact id="11504982510" lastName="Martinez" recipient-cs="Martinez Peter (peter.martinez@adobe.com)" recipient-id="3013"/> 
 ```
 
-Der Inhalt des JavaScript-Codes wird im Ordner **[!UICONTROL Administration > Konfiguration > Content Management > JavaScript-Codes]** gespeichert und muss in der Veröffentlichungsvorlage für jede Umwandlung angegeben werden.
+Der Inhalt des JavaScript-Codes wird im Ordner **[!UICONTROL Administration > Konfiguration > Content-Management > JavaScript-Codes]** gespeichert und muss in der Veröffentlichungsvorlage für jede Umwandlung angegeben werden.
 
 ![](assets/d_ncs_content_link5.png)

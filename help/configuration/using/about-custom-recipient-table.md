@@ -3,12 +3,12 @@ product: campaign
 title: Über die benutzerdefinierte Empfängertabelle
 description: Über die benutzerdefinierte Empfängertabelle
 feature: Configuration, Custom Resources
-role: User, Data Engineer, Developer
+role: User, Developer
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 exl-id: d8cea496-b3f3-420a-bf6e-b7cbb321b30d
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '688'
 ht-degree: 10%
 
 ---
@@ -43,12 +43,12 @@ Die Verwendung einer benutzerdefinierten Empfängertabelle weist die folgenden E
 
   Wir empfehlen:
 
-   * die **[!UICONTROL nms:BroadLogRcp]** und **[!UICONTROL nms:TrackingLogRcp]** für das vorkonfigurierte Schema **[!UICONTROL nms:RecipientSchema]**. Diese beiden Protokolltabellen sollten nicht mit einer zusätzlichen benutzerdefinierten Empfängertabelle verknüpft werden.
+   * Zuweisen der **[!UICONTROL nms:BroadLogRcp]** und **[!UICONTROL nms:TrackingLogRcp]**-Schemata zu den vorkonfigurierten **[!UICONTROL nms:Recipientschema]**. Diese beiden Protokolltabellen sollten nicht mit einer zusätzlichen benutzerdefinierten Empfängertabelle verknüpft werden.
    * Definieren von dedizierten benutzerdefinierten Broadlog- und Trackinglog-Schemata für jedes neue benutzerdefinierte Empfängerschema. Dies kann beim Einrichten des Zielgruppen-Mappings automatisch erfolgen, siehe [Zielgruppen-Mapping](../../configuration/using/target-mapping.md).
 
 * Sie können die im Produkt angebotenen **[!UICONTROL Services und Abonnements]** nicht verwenden.
 
-  Dies bedeutet, dass der in [diesem Abschnitt) beschriebene &#x200B;](../../delivery/using/managing-subscriptions.md) nicht anwendbar ist.
+  Dies bedeutet, dass der in [diesem Abschnitt) beschriebene ](../../delivery/using/managing-subscriptions.md) nicht anwendbar ist.
 
 * Die Verknüpfung mit der **[!UICONTROL Besucher]**-Tabelle funktioniert nicht.
 
@@ -62,7 +62,7 @@ Die Verwendung einer benutzerdefinierten Empfängertabelle weist die folgenden E
 
   >[!NOTE]
   >
-  >Empfängerlisten können weiterhin mithilfe von Workflows erstellt werden. Weitere Informationen hierzu finden Sie unter [&#x200B; einer Profilliste mit einem Workflow](../../configuration/using/creating-a-profile-list-with-a-workflow.md).
+  >Empfängerlisten können weiterhin mithilfe von Workflows erstellt werden. Weitere Informationen hierzu finden Sie unter [ einer Profilliste mit einem Workflow](../../configuration/using/creating-a-profile-list-with-a-workflow.md).
 
 Es wird außerdem empfohlen, die in den verschiedenen vordefinierten Konfigurationen verwendeten Standardwerte zu überprüfen: Je nach den verwendeten Funktionen müssen mehrere Anpassungen vorgenommen werden.
 

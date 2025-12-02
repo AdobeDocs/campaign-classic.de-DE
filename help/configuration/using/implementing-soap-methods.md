@@ -3,11 +3,11 @@ product: campaign
 title: Implementieren von SOAP-Methoden
 description: Implementieren von SOAP-Methoden
 feature: Configuration
-role: Data Engineer, Developer
+role: Developer
 exl-id: 441a0e5c-fa7f-46c8-a65a-5cca4c846d43
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '417'
 ht-degree: 4%
 
 ---
@@ -31,7 +31,7 @@ Das Erstellen einer Methodenbibliothek umfasst zwei Schritte:
 
 ### Deklaration {#declaration}
 
-Deklarieren Sie zunächst die Methoden in den Schemata (weitere Informationen zum Erstellen und Bearbeiten von Schemata finden Sie [&#x200B; diesem Abschnitt](../../configuration/using/about-schema-edition.md)).
+Deklarieren Sie zunächst die Methoden in den Schemata (weitere Informationen zum Erstellen und Bearbeiten von Schemata finden Sie [ diesem Abschnitt](../../configuration/using/about-schema-edition.md)).
 
 Ihre Deklaration ähnelt der von nativen Methoden, mit dem Unterschied, dass Sie das Attribut „library“ hinzufügen müssen, das den Namen der Methodenbibliothek angibt, in der sich die Definition befindet.
 
@@ -73,7 +73,7 @@ Der Name der Funktion muss dem folgenden Format entsprechen:
 
 Beispiel:
 
-Die folgende JavaScript-Funktion ist die Implementierung der oben beschriebenen -Methode. Sie wird in der Entität vom Typ &quot;JavaScript-Code“ unter Verwendung des Namens „cus:test“ definiert.
+Die folgende JavaScript-Funktion ist die Implementierung der oben beschriebenen -Methode. Sie wird in der Entität vom Typ &quot;JavaScript-Code“ unter Verwendung des Namens „cus:test&quot; definiert.
 
 ```
 function nms_recipient_testLog(message)

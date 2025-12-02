@@ -5,10 +5,10 @@ description: Erfahren Sie mehr über den Umfang und die Besonderheiten des E-Mai
 feature: Email
 role: User, Admin, Developer
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: ht
-source-wordcount: '1407'
-ht-degree: 100%
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
+workflow-type: tm+mt
+source-wordcount: '1406'
+ht-degree: 99%
 
 ---
 
@@ -161,6 +161,5 @@ Die nachstehende Tabelle zeigt die verschiedenen Schritte im Versandprozess mit 
 | Nachricht wird erfolgreich von Campaign an den Enhanced MTA weitergeleitet | **[!UICONTROL Erfolgsprozentsatz]** beginnt bei 100 % | Gesendet |
 | Hardbounces werden vom Enhanced MTA zurückgemeldet. | **[!UICONTROL Erfolgsprozentsatz]** wird entsprechend verringert | Fehlgeschlagen |
 | Softbounces werden vom erweiterten MTA zurückgemeldet. | Keine Änderung des **[!UICONTROL Erfolgsprozentsatzes]** | Gesendet |
-| Weitere Zustellversuche von Nachrichten, bei denen ein Softbounce aufgetreten ist, sind erfolgreich | Keine Änderung des **[!UICONTROL Erfolgsprozentsatzes]** | Gesendet | **[!UICONTROL Erfolgsprozentsatz]** wird entsprechend erhöht | Gesendet |
+| Weitere Zustellversuche von Nachrichten, bei denen ein Softbounce aufgetreten ist, sind erfolgreich | Keine Änderung am **[!UICONTROL Erfolg]** Prozentsatz \|  **[!UICONTROL Erfolg]** wird entsprechend erhöht | Gesendet |
 | Weitere Zustellversuche von Nachrichten, bei denen ein Softbounce aufgetreten ist, schlagen fehl | **[!UICONTROL Erfolgsprozentsatz]** wird entsprechend verringert | Fehlgeschlagen |
-

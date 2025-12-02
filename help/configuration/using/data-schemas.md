@@ -3,9 +3,9 @@ product: campaign
 title: Datenschemata
 description: Erste Schritte mit Campaign-Datenschemata
 feature: Schema Extension
-role: Data Engineer, Developer
+role: Developer
 exl-id: d4446035-3988-4d89-b7df-7b8528c2e371
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 56%
@@ -40,7 +40,7 @@ Die Vorschau generiert automatisch das erweiterte Schema:
 >
 >Beim Speichern des Quellschemas wird die Generierung des erweiterten Schemas automatisch gestartet.
 
-Wenn Sie die vollständige Struktur eines Schemas überprüfen müssen, können Sie die Registerkarte Vorschau verwenden. Wenn das Schema erweitert wurde, können Sie alle seine Erweiterungen visuell darstellen. Ergänzend zeigt die Registerkarte Dokumentation alle Schemaattribute und -elemente sowie deren Eigenschaften (SQL-Feld, Typ/Länge, Bezeichnung, Beschreibung) an. Die Registerkarte Dokumentation gilt nur für generierte Schemata. Weiterführende Informationen hierzu finden Sie im Abschnitt [Regenerieren &#x200B;](../../configuration/using/regenerating-schemas.md) Schemata“.
+Wenn Sie die vollständige Struktur eines Schemas überprüfen müssen, können Sie die Registerkarte Vorschau verwenden. Wenn das Schema erweitert wurde, können Sie alle seine Erweiterungen visuell darstellen. Ergänzend zeigt die Registerkarte Dokumentation alle Schemaattribute und -elemente sowie deren Eigenschaften (SQL-Feld, Typ/Länge, Bezeichnung, Beschreibung) an. Die Registerkarte Dokumentation gilt nur für generierte Schemata. Weiterführende Informationen hierzu finden Sie im Abschnitt [Regenerieren ](../../configuration/using/regenerating-schemas.md) Schemata“.
 
 ## Beispiel: Vertragstabelle erstellen {#example--creating-a-contract-table}
 
