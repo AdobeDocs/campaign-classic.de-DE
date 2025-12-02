@@ -125,7 +125,7 @@ Wenn Ihre Web-Seiten dynamisch generiert werden, können Sie das Web-Tracking-Ta
 
 Wenn Sie die an den Weiterleitungsserver gesendeten Informationen steuern möchten, ist es am zuverlässigsten, die HTTP-Abfrage mithilfe einer Seitengenerierungssprache selbst synchron durchzuführen.
 
-Die von Ihnen erstellte URL muss den unter (Webtracking[Tag: Definition) definierten Syntaxregeln ](../../configuration/using/web-tracking-tag-definition.md).
+Die von Ihnen erstellte URL muss den unter (Webtracking[Tag: Definition) definierten Syntaxregeln &#x200B;](../../configuration/using/web-tracking-tag-definition.md).
 
 ![](assets/d_ncs_integration_webtracking_structure3.png)
 

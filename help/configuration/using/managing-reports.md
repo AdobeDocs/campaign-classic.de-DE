@@ -21,7 +21,7 @@ Berichte, die auf einem Schema basieren, das spezifisch für die Standardempfän
 
 Informationen zum Erstellen neuer Berichte finden Sie [diesem Abschnitt](../../reporting/using/about-reports-creation-in-campaign.md).
 
-In einigen Fällen müssen Sie auch neue Cubes, die für diese Tabellen spezifisch sind, einfügen. Cubes werden in [ Abschnitt ](../../reporting/using/ac-cubes.md).
+In einigen Fällen müssen Sie auch neue Cubes, die für diese Tabellen spezifisch sind, einfügen. Cubes werden in [&#x200B; Abschnitt &#x200B;](../../reporting/using/ac-cubes.md).
 
 Die folgenden Berichte sind betroffen:
 

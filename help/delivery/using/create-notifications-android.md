@@ -47,7 +47,7 @@ Weitere Informationen zu Firebase Cloud Messaging-Nachrichtentypen finden Sie in
 
    ![](assets/nmac_android_7.png)
 
-1. Wählen Sie im Fenster **[!UICONTROL Zieltyp]****** die Option &quot;Abonnenten einer Android-Mobile-App&quot; aus und klicken Sie auf **[!UICONTROL Weiter]**.
+1. Wählen Sie im Fenster **[!UICONTROL Zieltyp]**&#x200B;**&#x200B;** die Option &quot;Abonnenten einer Android-Mobile-App&quot; aus und klicken Sie auf **[!UICONTROL Weiter]**.
 
 1. Wählen Sie aus der Dropdown-Liste **[!UICONTROL Dienst]** den zuvor erstellten Dienst und dann die Anwendung aus. Klicken Sie anschließend auf **[!UICONTROL Beenden]**.
 Die **[!UICONTROL Anwendungsvariablen]** werden je nachdem, was bei den Konfigurationsschritten hinzugefügt wurde, automatisch hinzugefügt.
@@ -84,7 +84,7 @@ Auf den Android-Mobilgeräten der Abonnenten sollten das Bild und die Webseite i
 
    ![](assets/nmac_android_7.png)
 
-1. Wählen Sie im Fenster **[!UICONTROL Zieltyp]****** die Option &quot;Abonnenten einer Android-Mobile-App&quot; aus und klicken Sie auf **[!UICONTROL Weiter]**.
+1. Wählen Sie im Fenster **[!UICONTROL Zieltyp]**&#x200B;**&#x200B;** die Option &quot;Abonnenten einer Android-Mobile-App&quot; aus und klicken Sie auf **[!UICONTROL Weiter]**.
 
 1. Wählen Sie aus der Dropdown-Liste **[!UICONTROL Dienst]** den zuvor erstellten Dienst und dann die Anwendung aus. Klicken Sie anschließend auf **[!UICONTROL Beenden]**.
 

@@ -24,7 +24,7 @@ Abhängig von Ihrem Abonnement ist die Kampagnenoptimierung entweder im Lieferum
 
 >[!NOTE]
 >
->Weitere Informationen zur Kampagnenoptimierung für Adobe Campaign und deren Verwendung finden Sie in der Dokumentation zu [ v8 ](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=de){target=_blank}.
+>Weitere Informationen zur Kampagnenoptimierung für Adobe Campaign und deren Verwendung finden Sie in der Dokumentation zu [&#x200B; v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=de){target=_blank}.
 
 <!--
 
