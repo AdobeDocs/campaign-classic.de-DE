@@ -3,12 +3,13 @@ audience: end-user
 breadcrumb-title: Campaign Classic v7 – Dokumentation
 product: campaign
 title: Campaign Classic v7 – Handbuch
+user-guide-title: Campaign Classic v7 – Handbuch
 user-guide-description: Produktdokumentation für Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
+source-git-commit: 3fc803ba8b7e367e199ba47ef05ba64d5f801506
 workflow-type: tm+mt
-source-wordcount: '2744'
+source-wordcount: '2748'
 ht-degree: 100%
 
 ---
@@ -73,10 +74,10 @@ ht-degree: 100%
       + Erstellen allgemeiner Importe und Exporte {#generic-imports-exports}
          + [Erste Schritte mit allgemeinen Importen und Exporten](platform/using/about-generic-imports-exports.md)
          + [Erstellen von Import- und Exportvorlagen](platform/using/creating-import-export-templates.md)
-         + [Erstellen von Import- und Exportaufrägen](platform/using/creating-import-export-jobs.md)
-         + [Konfigurieren von Importvorgängen](platform/using/executing-import-jobs.md)
-         + [Konfigurieren von Exportvorgängen](platform/using/executing-export-jobs.md)
-         + [Überwachen der Ausführung von Vorgängen](platform/using/monitoring-jobs-execution.md)
+         + [Erstellen von Import- und Exportaufträgen](platform/using/creating-import-export-jobs.md)
+         + [Konfigurieren von Importaufträgen](platform/using/executing-import-jobs.md)
+         + [Konfigurieren von Exportaufträgen](platform/using/executing-export-jobs.md)
+         + [Überwachen der Ausführung von Aufträgen](platform/using/monitoring-jobs-execution.md)
          + [Allgemeine Beispiele für den Import](platform/using/import-operations-samples.md)
       + Verwalten von Datenverschlüsselung und -komprimierung {#managing-data-encryption-compression}
          + [Entpacken oder Entschlüsseln von Dateien vor der Verarbeitung](platform/using/unzip-decrypt.md)
@@ -483,7 +484,7 @@ ht-degree: 100%
       + [Einrichten eines Workflows für den wiederkehrenden Import – AUSGEBLENDET](workflow/using/recurring-import-workflow.md)
    + Entwerfen von Abfragen {#designing-queries}
       + [Vierteljährliches Listen-Update mithilfe einer inkrementellen Abfrage – AUSGEBLENDET](workflow/using/quarterly-list-update.md)
-   + Abfrage und Filter {#designing-queries}
+   + Abfrage und Filter {#query-and-filter-hidden}
       + [Abfragen der Empfängertabelle – AUSGEBLENDET](workflow/using/querying-recipient-table.md)
       + [Informationen zum Abfrageversand – AUSGEBLENDET](workflow/using/querying-delivery-information.md)
       + [Durchführen von Aggregat-Berechnungen – AUSGEBLENDET](workflow/using/performing-aggregate-computing.md)
