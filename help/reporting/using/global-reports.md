@@ -120,7 +120,7 @@ Zu jeder Domain erscheint:
 * der prozentuale Anteil der fehlerhaften Nachrichten für diese Domain in Bezug auf die Gesamtzahl der verarbeiteten Nachrichten dieser Domain,
 * der prozentuale Anteil der fehlerhaften Nachrichten für diese Domain in Bezug auf die Gesamtzahl der fehlerhaften Nachrichten.
 
-Jede Zeile der Datentabelle kann durch Klick auf das Symbol ]+[ ausgeklappt werden. Dies ermöglicht die Anzeige der Aufschlüsselung der fehlerhaften Nachrichten nach Fehlertyp für jede Domain.
+Jede Zeile der Datentabelle kann durch Klick auf das Symbol &rbrack;+&lbrack; ausgeklappt werden. Dies ermöglicht die Anzeige der Aufschlüsselung der fehlerhaften Nachrichten nach Fehlertyp für jede Domain.
 
 ![](assets/s_ncs_user_errors_report_detail2.png)
 
