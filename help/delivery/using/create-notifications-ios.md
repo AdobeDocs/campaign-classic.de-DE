@@ -7,8 +7,8 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 4520504a-0d9f-4ea7-a5a8-0c07948af4f0
-source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
-workflow-type: ht
+source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
+workflow-type: tm+mt
 source-wordcount: '1079'
 ht-degree: 100%
 
@@ -130,9 +130,9 @@ Testsendungen und der endgültige Start des Versands werden analog zum E-Mail-Ve
 
 Nach dem Nachrichtenversand können Sie Ihre Sendungen überwachen und verfolgen. Lesen Sie diesbezüglich auch diese Abschnitte:
 
-* [Quarantäne für Push-Benachrichtigungen](understanding-quarantine-management.md#push-notification-quarantines)
+* [Quarantäne für Push-Benachrichtigungen](delivery-failures-quarantine.md#push-notification-quarantines)
 * [Sendungen überwachen](about-delivery-monitoring.md)
-* [Ursachen von fehlgeschlagenen Sendungen](understanding-delivery-failures.md)
+* [Ursachen von fehlgeschlagenen Sendungen](delivery-failures-quarantine.md)
 
 ## Erstellen einer Rich-Benachrichtigung für iOS {#creating-ios-delivery}
 

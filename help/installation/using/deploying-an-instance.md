@@ -8,7 +8,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
 workflow-type: tm+mt
 source-wordcount: '3547'
 ht-degree: 6%
@@ -79,12 +79,12 @@ Diese Parameter können in Versandvorlagen und einzeln für jeden Versand überl
 Geben Sie die folgenden Parameter an:
 
 * **[!UICONTROL Absendername]** : Geben Sie den Absendernamen ein.
-* **[!UICONTROL Absenderadresse]** : Geben Sie die E-Mail-Adresse des Absenders ein. Beim Senden von E-Mails über Adobe Campaign wird **Postfach „Absenderadresse** nicht überwacht und Marketing-Benutzer können nicht auf dieses Postfach zugreifen. Adobe Campaign bietet auch nicht die Möglichkeit, die in diesem Postfach empfangenen E-Mails automatisch zu beantworten oder weiterzuleiten. Weitere Informationen zu Best Practices für die Zustellbarkeit [in dieser Dokumentation](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/ac-starting-new-platform.html?lang=de){_blank}.
+* **[!UICONTROL Absenderadresse]** : Geben Sie die E-Mail-Adresse des Absenders ein. Beim Senden von E-Mails über Adobe Campaign wird **Postfach „Absenderadresse** nicht überwacht und Marketing-Benutzer können nicht auf dieses Postfach zugreifen. Adobe Campaign bietet auch nicht die Möglichkeit, die in diesem Postfach empfangenen E-Mails automatisch zu beantworten oder weiterzuleiten. Weitere Informationen zu Best Practices für die Zustellbarkeit [in dieser Dokumentation](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/ac-starting-new-platform.html){_blank}.
 
 * **[!UICONTROL Text der Antwortadresse]** : Geben Sie den Namen ein, der verwendet wird, wenn der Empfänger auf die Schaltfläche **[!UICONTROL Antworten]** klickt.
 * **[!UICONTROL Antwortadresse]** : Geben Sie die E-Mail-Adresse ein, die verwendet werden soll, wenn der Empfänger in seiner E **[!UICONTROL Mail-Client-Software auf]** Schaltfläche Antworten klickt. Das Feld **Antwortadresse** dient dem Fall, dass der Empfänger an eine andere Adresse als die Absenderadresse **soll**.  Diese Adresse muss eine gültige E-Mail-Adresse sein, mit einer überwachten Mailbox verknüpft und vom Kunden gehostet werden.  Es kann sich beispielsweise um eine Support-Mailbox handeln, `customer-care@customer.com` der E-Mails gelesen und beantwortet werden.
 
-* **[!UICONTROL Fehleradresse]** : Geben Sie die E-Mail-Adresse von fehlerhaften Nachrichten ein. Dies ist die technische Adresse, die für die Handhabung von Bounce Messages verwendet wird, einschließlich E-Mails, die vom Adobe Campaign-Server aufgrund nicht vorhandener Zieladressen empfangen wurden. Diese Adresse muss eine gültige E-Mail-Adresse sein, mit einer überwachten Mailbox verknüpft und vom Kunden gehostet werden. Es könnte sich z. B. um eine Bounce-Mailbox `errors@customer.com`. Diese Adresse kann für einen Versand oder in den Versandvorlagen auf der Registerkarte **SMTP** der Eigenschaften Versand / Versandvorlage geändert werden. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email-parameters.html?lang=de#managing-bounce-emails){target="_blank"}.
+* **[!UICONTROL Fehleradresse]** : Geben Sie die E-Mail-Adresse von fehlerhaften Nachrichten ein. Dies ist die technische Adresse, die für die Handhabung von Bounce Messages verwendet wird, einschließlich E-Mails, die vom Adobe Campaign-Server aufgrund nicht vorhandener Zieladressen empfangen wurden. Diese Adresse muss eine gültige E-Mail-Adresse sein, mit einer überwachten Mailbox verknüpft und vom Kunden gehostet werden. Es könnte sich z. B. um eine Bounce-Mailbox `errors@customer.com`. Diese Adresse kann für einen Versand oder in den Versandvorlagen auf der Registerkarte **SMTP** der Eigenschaften Versand / Versandvorlage geändert werden. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email-parameters.html#managing-bounce-emails){target="_blank"}.
 
 Darüber hinaus können Sie die für die Absenderadresse **Masken** und die Fehleradresse zulässigen angeben. Bei Angabe von mehr als einer Maske sind die Masken durch Kommata zu trennen. Hierbei handelt es sich um eine optionale Konfiguration. Wenn Felder eingegeben werden, prüft Adobe Campaign zum Zeitpunkt des Versands (bei der Analyse, ob die Adresse keine Variablen enthält), ob die Adressen gültig sind. Dieser Betriebsmodus stellt sicher, dass keine Adressen verwendet werden, die Probleme mit dem Versand von Triggern verursachen könnten. Absenderadressen sind auf dem Versandserver zu konfigurieren.
 
@@ -165,7 +165,7 @@ Nachdem die POP-Einstellungen angegeben wurden, klicken Sie auf **Test**, um sic
 
 ### Unverarbeitete Bounce-E-Mails {#unprocessed-bounce-mails}
 
-Bounces werden automatisch von Adobe Campaign verarbeitet. Dabei werden die im Knoten **Administration > Kampagnenverwaltung > Unzustellbarkeitsverwaltung > Versandlogqualifizierung** aufgelisteten Regeln angewendet. Weitere Informationen hierzu finden Sie unter [Bounce-Message-Verwaltung](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management).
+Bounces werden automatisch von Adobe Campaign verarbeitet. Dabei werden die im Knoten **Administration > Kampagnenverwaltung > Unzustellbarkeitsverwaltung > Versandlogqualifizierung** aufgelisteten Regeln angewendet. Weitere Informationen hierzu finden Sie unter [Bounce-Message-Verwaltung](../../delivery/using/delivery-failures-quarantine.md#bounce-mail-management).
 
 Nicht verarbeitete Bounces werden nicht auf der Adobe Campaign-Benutzeroberfläche angezeigt. Sie werden automatisch gelöscht, es sei denn, sie werden mithilfe der folgenden Felder in ein Postfach eines Drittanbieters übertragen:
 
@@ -382,7 +382,7 @@ In einem Versand können Sie Bilder verwenden, die in der öffentlichen Ressourc
 
   Dieser Wert kann für jeden Versand überschrieben werden.
 
-* Für öffentliche Ressourcen ist die URL **https://** server **/res/** instance **&#x200B;**&#x200B;wobei **instance**&#x200B;der Name der Tracking-Instanz ist.
+* Für öffentliche Ressourcen ist die URL **https://** server **/res/** instance ****wobei **instance**der Name der Tracking-Instanz ist.
 
 ### Erkennung der Bilder einer Sendung {#delivery-image-detection}
 
@@ -394,7 +394,7 @@ Im Feld **URL-Masken** können Sie die Liste der URL-Masken angeben, die beim au
 
 Sie können mehrere URL-Masken mithilfe eines Kommas angeben, um jede davon zu trennen.
 
-* Informationen zur Verwendung und Verwaltung von Bildern in E-Mails finden Sie in der [&#x200B; zu Campaign v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=de#adding-images){target="_blank"}.
+* Informationen zur Verwendung und Verwaltung von Bildern in E-Mails finden Sie in der [ zu Campaign v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=de#adding-images){target="_blank"}.
 * Im Versandassistenten haben die von diesen URLs aufgerufenen Bilder den Status „Ignoriert“.
 
 ### Veröffentlichungsmodi {#publication-modes}
@@ -405,7 +405,7 @@ Die folgenden Veröffentlichungsmodi sind verfügbar:
 
 * Trackingserver
 
-  Die Ressourcen werden automatisch auf die verschiedenen Tracking-Server kopiert. Sie werden im Schritt „Tracking[Konfiguration“ &#x200B;](#tracking-configuration).
+  Die Ressourcen werden automatisch auf die verschiedenen Tracking-Server kopiert. Sie werden im Schritt „Tracking[Konfiguration“ ](#tracking-configuration).
 
 * Andere Adobe Campaign-Server
 
@@ -448,7 +448,7 @@ Bei einer Veröffentlichung auf einem Adobe Campaign-Server ohne manuelles Verö
 
 >[!NOTE]
 >
->Es ist möglich, das Verzeichnis der öffentlichen Ressourcenspeicher zu ändern. Weitere Informationen hierzu finden Sie unter &quot;[&#x200B; öffentlicher Ressourcen](#managing-public-resources).
+>Es ist möglich, das Verzeichnis der öffentlichen Ressourcenspeicher zu ändern. Weitere Informationen hierzu finden Sie unter &quot;[ öffentlicher Ressourcen](#managing-public-resources).
 
 ### Synchronisieren von öffentlichen Ressourcen {#synchronizing-public-resources}
 

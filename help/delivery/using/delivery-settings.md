@@ -7,8 +7,8 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 66250817-f829-4b8b-92dd-2daa92a97fe0
-source-git-commit: d3d731c64cb5a430de6adac3aeb326f74134c436
-workflow-type: ht
+source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
+workflow-type: tm+mt
 source-wordcount: '747'
 ht-degree: 100%
 
@@ -53,7 +53,7 @@ Einem großen Versand sollte also vorzugsweise eine niedrige Priorität zugewies
 
 ### Konfigurieren der weiteren Zustellversuche {#configuring-retries}
 
-Vorübergehend nicht zustellbare Nachrichten aufgrund eines **Softbounce** oder eines **ignorierten Fehlers** werden automatisch für einen erneuten Versuch vorgesehen. Die Typen und Ursachen für fehlgeschlagene Sendungen finden Sie in diesem [Abschnitt](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+Vorübergehend nicht zustellbare Nachrichten aufgrund eines **Softbounce** oder eines **ignorierten Fehlers** werden automatisch für einen erneuten Versuch vorgesehen. Die Typen und Ursachen für fehlgeschlagene Sendungen finden Sie in diesem [Abschnitt](delivery-failures-quarantine.md#delivery-failure-types-and-reasons).
 
 >[!IMPORTANT]
 >

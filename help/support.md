@@ -6,7 +6,7 @@ feature: Troubleshooting
 hidefromtoc: true
 hide: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: e60a8391416bc9899548971bddb61705467a80e5
+source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 98%
@@ -51,14 +51,14 @@ Support erhalten Sie über unsere häufig gestellten Fragen, Best Practices, Onl
         <li><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=de" target="_blank">Optimieren der Workflow-Performance</a></li>
         <li><a href="workflow/using/monitoring-workflow-execution.md">Fehlerbehebung bei der Workflow-Ausführung</a></li>
         <li><a href="platform/using/sftp-server-usage.md">Nutzung von SFTP-Servern</a></li>
-        <li><a href="delivery/using/understanding-delivery-failures.md">Ursachen für das Fehlschlagen von Sendungen</a></li>
+        <li><a href="delivery/using/delivery-failures-quarantine.md">Ursachen für das Fehlschlagen von Sendungen</a></li>
         </ul>
     </td>
    <td valign="top">
         <ul>
         <li><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=de" target="_blank">Best Practices für Workflows</a></li>
         <li><a href="workflow/using/monitoring-technical-workflows.md">Überwachen technischer Workflows</a></li>
-        <li><a href="https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/tracking/tracking" target="_blank">Funktionsweise der Tracking-Verwaltung</a></li>
+        <li><a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking" target="_blank">Funktionsweise der Tracking-Verwaltung</a></li>
         <li><a href="production/using/monitoring-guidelines.md">Monitoring-Tools</a></li>
         <li><a href="platform/using/import-export-workflows.md">Importieren von Daten mit Workflows</a></li>
         <li><a href="delivery/using/steps-sending-the-delivery.md">Senden von Nachrichten in mehreren Schüben</a></li>
@@ -71,7 +71,7 @@ Support erhalten Sie über unsere häufig gestellten Fragen, Best Practices, Onl
         <li><a href="production/using/build-upgrade.md">Upgrade auf den aktuellen Build</a></li>
         <li><a href="platform/using/faq-build-upgrade.md">Häufig gestellte Fragen zum Build-Upgrade</a></li>
         <li><a href="delivery/using/about-delivery-monitoring.md">Überwachen von Sendungen</a></li>
-        <li><a href="delivery/using/understanding-quarantine-management.md">Funktionsweise der Quarantäneverwaltung</a></li>
+        <li><a href="delivery/using/delivery-failures-quarantine.md">Funktionsweise der Quarantäneverwaltung</a></li>
         <li><a href="installation/using/get-started-security-privacy.md">Checkliste für Sicherheit und Datenschutz</a></li>
         <li><a href="platform/using/privacy-management.md">Datenschutz- und Einverständnisverwaltung</a></li>
         <li><a href="platform/using/about-queries-in-campaign.md">Erstellen einer Abfrage</a></li>

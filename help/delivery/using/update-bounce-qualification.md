@@ -5,14 +5,14 @@ description: Hier wird erklärt, wie die Bounce-Qualifizierung nach dem Apple-Au
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Deliverability
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
 workflow-type: tm+mt
 source-wordcount: '461'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
-# Update fehlerhafter Hardbounces nach Apple-Ausfall {#update-bounce-qualification.md}
+# Aktualisieren falscher Hardbounces nach einem Apple-Ausfall {#update-bounce-qualification.md}
 
 ## Kontext
 
@@ -56,5 +56,5 @@ Auf der Grundlage des Zeitrahmens des Vorfalls werden im Folgenden die Richtlini
 Sobald Sie die Liste der betroffenen Empfänger haben, können Sie diese entweder auf den Status **[!UICONTROL Gültig]** setzen, damit sie vom Workflow **[!UICONTROL Datenbankbereinigung]** aus der Quarantäneliste entfernt werden, oder sie einfach aus der Tabelle löschen.
 
 **Verwandte Themen:**
-* [Ursachen für das Fehlschlagen von Sendungen](understanding-delivery-failures.md)
-* [Bounce-Message-Qualifizierung](understanding-delivery-failures.md#bounce-mail-qualification)
+* [Ursachen für das Fehlschlagen von Sendungen](delivery-failures-quarantine.md)
+* [Bounce-Message-Qualifizierung](delivery-failures-quarantine.md#bounce-mail-qualification)

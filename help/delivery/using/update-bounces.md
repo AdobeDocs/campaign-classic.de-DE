@@ -7,9 +7,9 @@ feature: Deliverability
 hide: true
 hidefromtoc: true
 exl-id: 7a9afe0a-0219-40f1-9fe2-6374db8d555c
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '501'
 ht-degree: 100%
 
 ---
@@ -32,9 +32,9 @@ Bitte beachten: Wenn Aufschub-Bounces mit der Nachricht „452 angeforderte Akti
 
 >[!NOTE]
 >
->Das Apple-Systemstatus-Dashboard lässt sich auf [dieser Seite](https://www.apple.com/de/support/systemstatus/){_blank} überprüfen.
+>Sie können das Systemstatus-Dashboard auf [dieser Seite](https://www.apple.com/de/support/systemstatus/){_blank} überprüfen.
 >
->Das Status-Dashboard von Google Workspace lässt sich auf [dieser Seite](https://www.google.com/appsstatus#hl=de&amp;v=status){_blank} überprüfen.
+>Sie können das Google Workspace-Status-Dashboard auf [dieser Seite](https://www.google.com/appsstatus#hl=de&v=status){_blank} überprüfen.
 >
 
 ## Auswirkung{#update-bounce-impact}
@@ -71,5 +71,5 @@ Auf der Grundlage des Zeitrahmens des Vorfalls und des ISP befinden sich unten d
 Sobald Sie die Liste der betroffenen Empfänger haben, können Sie diese entweder auf den Status **[!UICONTROL Gültig]** setzen, damit sie vom Workflow **[!UICONTROL Datenbankbereinigung]** aus der Quarantäneliste entfernt werden, oder sie einfach aus der Tabelle löschen.
 
 **Verwandte Themen:**
-* [Ursachen für das Fehlschlagen von Sendungen](understanding-delivery-failures.md)
-* [Bounce-Message-Qualifizierung](understanding-delivery-failures.md#bounce-mail-qualification)
+* [Ursachen für das Fehlschlagen von Sendungen](delivery-failures-quarantine.md)
+* [Bounce-Message-Qualifizierung](delivery-failures-quarantine.md#bounce-mail-qualification)

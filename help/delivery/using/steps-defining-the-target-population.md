@@ -7,8 +7,8 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
-source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
-workflow-type: ht
+source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
+workflow-type: tm+mt
 source-wordcount: '1878'
 ht-degree: 100%
 
@@ -149,7 +149,7 @@ Folgende Optionen stehen zur Verfügung:
 
   >[!NOTE]
   >
-  >Weitere Informationen zur Quarantäneverwaltung finden Sie unter [Funktionsweise der Quarantäneverwaltung](understanding-quarantine-management.md).
+  >Weitere Informationen zur Quarantäneverwaltung finden Sie unter [Funktionsweise der Quarantäneverwaltung](delivery-failures-quarantine.md).
 
 * **[!UICONTROL Versand begrenzen]**: Die Begrenzung erfolgt auf eine bestimmte Anzahl an Nachrichten. Mit dieser Option können Sie die maximale Anzahl der zu versendenden Nachrichten eingeben. Wenn der Inhalt der Zielgruppe die angegebene Anzahl von Nachrichten überschreitet, wird eine Zufallsauswahl auf die Zielgruppe angewendet.
 
@@ -251,6 +251,6 @@ Folgende Mappings sind vorhanden:
 
 In diesem Video erfahren Sie, wie Sie einer vorhandenen E-Mail Testadressen und Testsendungen hinzufügen und diese ausführen.
 
->[!VIDEO](https://video.tv.adobe.com/v/35532?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25606?quality=12)
 
 Weitere Anleitungsvideos zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).

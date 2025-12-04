@@ -5,7 +5,7 @@ description: Erfahren Sie mehr über den Umfang und die Besonderheiten des E-Mai
 feature: Email
 role: User, Admin, Developer
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: a85d94e8ff66e8468b4fe2f071df48437393bbce
+source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
 workflow-type: tm+mt
 source-wordcount: '1408'
 ht-degree: 93%
@@ -105,7 +105,7 @@ Die Bounce-Qualifizierungen in der Tabelle **[!UICONTROL Versandlogqualifizierun
 >
 >Der Enhanced MTA qualifiziert den SMTP-Bounce und sendet diese Qualifizierung zurück an Campaign in Form eines Bouncecodes, der in Campaign einem Bounce-Grund und einer Bounce-Qualifikation zugeordnet ist.
 
-Weitere Informationen zur Bounce-Qualifizierung finden Sie in [diesem Abschnitt](understanding-delivery-failures.md#bounce-mail-qualification).
+Weitere Informationen zur Bounce-Qualifizierung finden Sie in [diesem Abschnitt](delivery-failures-quarantine.md#bounce-mail-qualification).
 
 ### Versand
 
@@ -142,11 +142,11 @@ Weitere Informationen zu DKIM finden Sie im [Adobe-Handbuch mit den Best Practic
 
 In der **[!UICONTROL Zusammenfassung]** eines E-Mail-Versands [Dashboard](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} beginnt der **[!UICONTROL Erfolg]**-Prozentsatz bei 100 % und sinkt dann während des Versand-[Gültigkeitszeitraums](communication-channels.md) schrittweise, da die Soft- und Hardbounces vom Enhanced MTA an Campaign zurückgemeldet werden.
 
-Alle Nachrichten werden in den Versandlogs als **[!UICONTROL gesendet]** angezeigt[&#x200B; sobald sie erfolgreich von Campaign an &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"} Enhanced MTA weitergeleitet wurden. Sie bleiben in diesem Status, bis oder bis ein [Bounce](understanding-delivery-failures.md#delivery-failure-types-and-reasons) für diese Nachricht vom Enhanced MTA an Campaign zurückgesendet wird.
+Alle Nachrichten werden in den Versandlogs als **[!UICONTROL gesendet]** angezeigt[ sobald sie erfolgreich von Campaign an ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"} Enhanced MTA weitergeleitet wurden. Sie bleiben in diesem Status, bis oder bis ein [Bounce](delivery-failures-quarantine.md#delivery-failure-types-and-reasons) für diese Nachricht vom Enhanced MTA an Campaign zurückgesendet wird.
 
 Wenn vom Enhanced MTA Hardbounces zurückgemeldet werden, ändert sich der Status dieser Nachrichten von **[!UICONTROL Gesendet]** in **[!UICONTROL Fehlgeschlagen]** und der **[!UICONTROL Erfolgsprozentsatz]** wird entsprechend verringert.
 
-Wenn vom Enhanced MTA Softbounces zurückgemeldet werden, werden diese Nachrichten weiterhin als **[!UICONTROL Gesendet]** angezeigt und der **[!UICONTROL Erfolgsprozentsatz]** wird noch nicht aktualisiert. Nachrichten, bei denen ein Softbounce aufgetreten ist, erhalten dann während des Gültigkeitszeitraums des Versands [einen erneuten Zustellversuch](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure):
+Wenn vom Enhanced MTA Softbounces zurückgemeldet werden, werden diese Nachrichten weiterhin als **[!UICONTROL Gesendet]** angezeigt und der **[!UICONTROL Erfolgsprozentsatz]** wird noch nicht aktualisiert. Nachrichten, bei denen ein Softbounce aufgetreten ist, erhalten dann während des Gültigkeitszeitraums des Versands [einen erneuten Zustellversuch](delivery-failures-quarantine.md#retries-after-a-delivery-temporary-failure):
 
 * Wenn ein erneuter Versuch vor Ende der Gültigkeitszeitraums erfolgreich ist, bleibt der Nachrichtenstatus weiterhin **[!UICONTROL Gesendet]** und der **[!UICONTROL Erfolgsprozentsatz]** unverändert.
 

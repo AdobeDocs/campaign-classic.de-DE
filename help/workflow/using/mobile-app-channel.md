@@ -5,7 +5,7 @@ description: Mobile-App-Kanal (Mobile App Channel)
 hide: true
 hidefromtoc: true
 feature: Workflows
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
 workflow-type: tm+mt
 source-wordcount: '65'
 ht-degree: 100%
@@ -29,7 +29,7 @@ Der folgende Workflow wird mit dem Modul **Mobile App Channel** installiert. Wei
   <tr> 
    <td> <span class="uicontrol">NMAC-Opt-outs</span> <br /> </td> 
    <td> <span class="uicontrol">mobileAppOptOutMgt</span> <br /> </td> 
-   <td> Aktualisiert die Abmeldungen von Benachrichtigungen auf Mobile-Geräten. Wird standardmäßig alle sechs Stunden zwischen 1 Uhr und Mitternacht gestartet. Weitere Informationen finden Sie in diesem <a href="../../delivery/using/understanding-quarantine-management.md#push-notification-quarantines">Abschnitt</a>.<br /> </td> 
+   <td> Dieser Workflow aktualisiert die Abmeldungen von Benachrichtigungen auf Mobile-Geräten. Wird standardmäßig alle sechs Stunden zwischen 1 Uhr und Mitternacht gestartet. Weitere Informationen finden Sie in diesem <a href="../../delivery/using/delivery-failures-quarantine.md#push-notification-quarantines">Abschnitt</a>.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

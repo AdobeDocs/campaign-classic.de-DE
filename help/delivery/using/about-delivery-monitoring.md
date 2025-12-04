@@ -5,7 +5,7 @@ description: Erfahren Sie mehr über die Funktionen zur Überwachung eines Versa
 feature: Monitoring, Deliverability
 role: User
 exl-id: 9ce11da0-e37b-459e-8ec7-d2bddf59bdf7
-source-git-commit: e60a8391416bc9899548971bddb61705467a80e5
+source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
 workflow-type: tm+mt
 source-wordcount: '835'
 ht-degree: 64%
@@ -73,12 +73,12 @@ In Adobe Campaign Classic wird das **Zustellbarkeits-Monitoring** über den Wo
 **Für On-Premise** Installationen finden Sie hier einige zusätzliche Richtlinien zur Überwachung der Zustellbarkeit:
 
 * Prüfen Sie regelmäßig den [Versanddurchsatz](../../reporting/using/global-reports.md#delivery-throughput) für die gesamte Plattform, um festzustellen, ob er der ursprünglichen Einstellung entspricht.
-* Achten Sie darauf, dass [weitere Zustellversuche](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure) in den Versandvorlagen korrekt eingerichtet sind (30 Minuten für das Versuchsintervall und mehr als 20 weitere Versuche).
-* Prüfen Sie regelmäßig, ob das [Bounce](understanding-delivery-failures.md#bounce-mail-management)-Postfach zugänglich ist, und sorgen Sie dafür, dass die Gültigkeit des Kontos nicht abläuft.
-* Prüfen Sie, ob die einzelnen Versanddurchsätze (über das [&#x200B; Versand-Dashboard](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} abrufbar) der Gültigkeit des Versandinhalts entsprechen (&quot;Flash Sales&quot; zum Beispiel sollten innerhalb von Minuten, nicht von Tagen zugestellt werden).
+* Achten Sie darauf, dass [weitere Zustellversuche](delivery-failures-quarantine.md#retries-after-a-delivery-temporary-failure) in den Versandvorlagen korrekt eingerichtet sind (30 Minuten für das Versuchsintervall und mehr als 20 weitere Versuche).
+* Prüfen Sie regelmäßig, ob das [Bounce](delivery-failures-quarantine.md#bounce-mail-management)-Postfach zugänglich ist, und sorgen Sie dafür, dass die Gültigkeit des Kontos nicht abläuft.
+* Prüfen Sie, ob die einzelnen Versanddurchsätze (über das [ Versand-Dashboard](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} abrufbar) der Gültigkeit des Versandinhalts entsprechen (&quot;Flash Sales&quot; zum Beispiel sollten innerhalb von Minuten, nicht von Tagen zugestellt werden).
 * Wenn der Versand in Schüben erfolgt, stellen Sie sicher, dass genügend Zeit vorhanden ist, damit ein Schub fertiggestellt werden kann, bevor der nächste beginnt.
-* Prüfen Sie, ob die Anzahl der Fehler und der neuen [Quarantänen](understanding-quarantine-management.md) der anderer Sendungen entspricht.
-* Prüfen Sie in den [Versandlogs](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"} sorgfältig die Art der hervorgehobenen Fehler (Blockierungsliste, DNS-Probleme, Anti-Spam-Regeln usw.).
+* Prüfen Sie, ob die Anzahl der Fehler und der neuen [Quarantänen](delivery-failures-quarantine.md) der anderer Sendungen entspricht.
+* Prüfen Sie in den [Versandlogs](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"} sorgfältig die Art der hervorgehobenen Fehler (Blockierungsliste, DNS-Probleme, Anti-Spam-Regeln usw.).
 
 ### Fehlerbehebung {#delivery-troubleshooting}
 
@@ -97,17 +97,17 @@ Die folgenden Ressourcen helfen Ihnen bei der Überwachung und Verfolgung der Ve
 
 Erfahren Sie, wie Sie auf Versandlisten zugreifen und das Versand-Dashboard verwenden können, um Ihre Versandaktivität zu überwachen:
 
-* [Überwachen von Sendungen in der Campaign](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}-Benutzeroberfläche (Dokumentation zu Campaign v8 - gilt für v7 und v8)
-* [Versandstatus](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"} (Dokumentation zu Campaign v8)
+* [Überwachen von Sendungen in der Campaign](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}-Benutzeroberfläche (Dokumentation zu Campaign v8 - gilt für v7 und v8)
+* [Versandstatus](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"} (Dokumentation zu Campaign v8)
 * [Erweitert: Versandlogs anpassen](customize-delivery-logs.md) (nur Hybrid/On-Premise - Schemaerweiterung v7)
 
 ### Nachverfolgen von Nachrichteninteraktionen
 
 Öffnungen, Klicks und Empfängerinteraktionen mit Ihren Sendungen verfolgen:
 
-* [Dokumentation zum Nachrichten-Tracking](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/tracking/tracking){target="_blank"} (Campaign v8-Dokumentation - gilt für v7 und v8)
-* [Konfigurieren getrackter Links](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/tracking/tracked-links){target="_blank"} (Dokumentation zu Campaign v8)
-* [Zugriff auf Trackinglogs](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/tracking/tracking-logs){target="_blank"} (Dokumentation zu Campaign v8)
+* [Dokumentation zum Nachrichten-Tracking](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking){target="_blank"} (Campaign v8-Dokumentation - gilt für v7 und v8)
+* [Konfigurieren getrackter Links](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracked-links){target="_blank"} (Dokumentation zu Campaign v8)
+* [Zugriff auf Trackinglogs](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking-logs){target="_blank"} (Dokumentation zu Campaign v8)
 
 ### Versandleistung optimieren
 
@@ -120,6 +120,6 @@ Best Practices und Fehlerbehebung bei Leistungsproblemen des Versands:
 
 Versandfehler, Bounce Messages und Quarantäneadressen verwalten:
 
-* [Fehlgeschlagene Sendungen analysieren](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (Campaign v8-Dokumentation - umfassende Anleitung für v7 und v8)
-* [Quarantäneverwaltung](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (Campaign v8-Dokumentation - umfassendes Handbuch für v7 und v8)
+* [Fehlgeschlagene Sendungen analysieren](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (Campaign v8-Dokumentation - umfassende Anleitung für v7 und v8)
+* [Quarantäneverwaltung](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (Campaign v8-Dokumentation - umfassendes Handbuch für v7 und v8)
 * [Versandfehler und Quarantänekonfiguration](delivery-failures-quarantine.md) (Hybrid-/On-Premise-spezifische Konfigurationen von v7)

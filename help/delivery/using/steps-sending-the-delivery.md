@@ -7,7 +7,7 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
-source-git-commit: a85d94e8ff66e8468b4fe2f071df48437393bbce
+source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
 workflow-type: tm+mt
 source-wordcount: '1616'
 ht-degree: 99%
@@ -61,7 +61,7 @@ Nun können Sie den Versandassistenten schließen und die Durchführung auf der 
 Nach dem Nachrichtenversand können Sie Ihre Sendungen überwachen und verfolgen. Lesen Sie diesbezüglich auch diese Abschnitte:
 
 * [Überwachen von Sendungen](about-delivery-monitoring.md)
-* [Ursachen für das Fehlschlagen von Sendungen](understanding-delivery-failures.md)
+* [Ursachen für das Fehlschlagen von Sendungen](delivery-failures-quarantine.md)
 * [Über das Nachrichten-Tracking](about-message-tracking.md)
 
 ## Planen des Versandzeitpunkts {#scheduling-the-delivery-sending}
@@ -171,7 +171,7 @@ Im Folgenden finden Sie die häufigsten Anwendungsbeispiele für Schübe.
 
 ## Konfigurieren der weiteren Zustellversuche {#configuring-retries}
 
-Vorübergehend nicht zustellbare Nachrichten aufgrund eines **Softbounce** oder eines **ignorierten Fehlers** werden automatisch für einen erneuten Versuch vorgesehen. Die Typen und Ursachen für fehlgeschlagene Sendungen finden Sie in diesem [Abschnitt](understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+Vorübergehend nicht zustellbare Nachrichten aufgrund eines **Softbounce** oder eines **ignorierten Fehlers** werden automatisch für einen erneuten Versuch vorgesehen. Die Typen und Ursachen für fehlgeschlagene Sendungen finden Sie in diesem [Abschnitt](delivery-failures-quarantine.md#delivery-failure-types-and-reasons).
 
 >[!IMPORTANT]
 >

@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: additional-configurations
 hidefromtoc: true
 exl-id: 47f50bf5-4d5b-4c07-af71-de4390177cf5
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '832'
 ht-degree: 3%
 
 ---
@@ -64,7 +64,7 @@ Adobe Campaign verwaltet diesen Prozess mit einer Übereinstimmung zwischen eine
 
 >[!NOTE]
 >
->Weitere Informationen zu Typen und Ursachen für fehlgeschlagene Sendungen finden Sie in [Abschnitt](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+>Weitere Informationen zu Typen und Ursachen für fehlgeschlagene Sendungen finden Sie in [Abschnitt](../../delivery/using/delivery-failures-quarantine.md#delivery-failure-types-and-reasons).
 
 ## Zustellbarkeitsinstanz {#deliveratbility-env}
 
@@ -90,5 +90,5 @@ Der Modus Benutzerdefiniert ist für fortgeschrittene Clients gedacht, die ihre 
 **Verwandte Themen:**
 * [MX-Konfiguration](../../installation/using/email-deliverability.md#mx-configuration)
 * [Technische E-Mail-Konfiguration](../../installation/using/email-deliverability.md)
-* [Ursachen für das Fehlschlagen von Sendungen](../../delivery/using/understanding-delivery-failures.md)
-* [Campaign Classic - Technische Empfehlungen](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=de)
+* [Ursachen für das Fehlschlagen von Sendungen](../../delivery/using/delivery-failures-quarantine.md)
+* [Campaign Classic - Technische Empfehlungen](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html)
