@@ -6,9 +6,9 @@ feature: Overview
 role: User, Developer
 level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
-source-git-commit: 8a2a3239c08521765592491a6fe88c94d9db0640
+source-git-commit: a85d94e8ff66e8468b4fe2f071df48437393bbce
 workflow-type: tm+mt
-source-wordcount: '6201'
+source-wordcount: '6202'
 ht-degree: 99%
 
 ---
@@ -221,7 +221,7 @@ Weitere Informationen zu Versandanalysen finden Sie in der [Dokumentation zu Cam
 
 Versandlogs enthalten Daten, die beim Nachrichtversand erzeugt werden. In diesen Logs werden Details zum Versand angezeigt, wie etwa welche Nachricht vorbereitet, ignoriert oder gesendet wurde oder aber fehlgeschlagen ist. Diese Logs können direkt über das Versand-Dashboard aufgerufen werden.
 
-Weitere Informationen zu [Versandlogs](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history).
+Weitere Informationen zu [Versandlogs](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}.
 +++
 
 <!--

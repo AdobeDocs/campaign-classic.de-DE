@@ -7,10 +7,10 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: a85d94e8ff66e8468b4fe2f071df48437393bbce
 workflow-type: tm+mt
-source-wordcount: '1615'
-ht-degree: 100%
+source-wordcount: '1616'
+ht-degree: 99%
 
 ---
 
@@ -70,7 +70,7 @@ Sie können den Nachrichtenversand verzögern, indem Sie für den Versand einen 
 
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Senden]** und wählen Sie die Option **[!UICONTROL Versand terminieren]** aus.
 
-1. Geben Sie im Feld **[!UICONTROL Kontaktdatum]** den gewünschten Starttermin an.
+1. Geben Sie im Feld **[!UICONTROL Kontaktdatum]** das gewünschte Startdatum an.
 
 ![](assets/dlv_email_del_plan.png)
 
@@ -94,7 +94,7 @@ Dies bietet die Möglichkeit, den Versand auf einen späteren Zeitpunkt zu versc
 
 * Bei Wahl der Option **[!UICONTROL Versand planen (keine automatische Ausführung)]** können Sie zudem die Analyse des Versands terminieren.
 
-  In diesem Fall erhält der Versand den Status **[!UICONTROL Zielbestimmung ausstehend]** und die Analyse wird zum angegebenen Zeitpunkt gestartet.
+  In diesem Fall erhält der Versand den Status **[!UICONTROL Zielgruppenbestimmung ausstehend]** und die Analyse wird zum angegebenen Zeitpunkt gestartet.
 
 * Bei Wahl der Option **[!UICONTROL Versand planen (automatische Ausführung am geplanten Datum)]** wird nur das Kontaktdatum angegeben.
 
@@ -143,7 +143,7 @@ Um eine gleichmäßige Auslastung sicherzustellen, können Sie Sendungen in mehr
    >
    >Planen Sie bei der Konfiguration der letzten Schübe auch genügend Zeit für zusätzliche Versuche ein. Siehe [diesen Abschnitt](steps-sending-the-delivery.md#configuring-retries).
 
-1. Gehen Sie zur Überwachung Ihrer Sendungen zu den Versandlogs. Weitere Informationen finden Sie auf [dieser Seite](delivery-dashboard.md#delivery-logs-and-history).
+1. Gehen Sie zur Überwachung Ihrer Sendungen zu den Versandlogs. Weitere Informationen finden Sie auf [dieser Seite](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}.
 
    Die Versandlogs enthalten die bereits in den verarbeiteten Schüben durchgeführten Sendungen (Status **[!UICONTROL Gesendet]**) sowie die in den restlichen Schüben durchzuführenden Sendungen (Status **[!UICONTROL Ausstehend]**).
 
