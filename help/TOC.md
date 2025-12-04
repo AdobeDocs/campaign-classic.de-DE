@@ -7,9 +7,9 @@ user-guide-title: Campaign Classic v7 – Handbuch
 user-guide-description: Produktdokumentation für Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 93f32cda33acc53fb0e497f619be35c1c76ff85e
+source-git-commit: 2ebae2b84741bf26dd44c872702dbf3b0ebfc453
 workflow-type: tm+mt
-source-wordcount: '2692'
+source-wordcount: '2685'
 ht-degree: 99%
 
 ---
@@ -114,7 +114,7 @@ ht-degree: 99%
    + [Senden von E-Mails](delivery/using/about-email-channel.md)
    + Senden von E-Mails {#sending-emails}
       + [Erstellen eines E-Mail-Versands – AUSGEBLENDET](delivery/using/creating-an-email-delivery.md)
-      + [Definieren des E-Mail-Inhalts – AUSGEBLENDET &#x200B;](delivery/using/defining-the-email-content.md)
+      + [Definieren des E-Mail-Inhalts – AUSGEBLENDET ](delivery/using/defining-the-email-content.md)
       + [Definieren interaktiver Inhalte – AUSGEBLENDET](delivery/using/defining-interactive-content.md)
       + Senden des E-Mail-Versands {#sending-an-email}
          + [Wichtigste Schritte zum Senden einer E-Mail – AUSGEBLENDET](delivery/using/sending-messages.md)
@@ -186,13 +186,10 @@ ht-degree: 99%
       + [Abonnements verwalten](delivery/using/managing-subscriptions.md)
       + [Virales und Social-Media-Marketing](delivery/using/viral-and-social-marketing.md)
    + Überwachen von Sendungen {#monitoring-deliveries}
-      + [Erste Schritte mit dem Überwachen des Versands](delivery/using/about-delivery-monitoring.md)
-      + [Überwachen von Sendungen in der Campaign-Benutzeroberfläche](delivery/using/delivery-dashboard.md)
-      + [Best Practices für die Versand-Performance](delivery/using/delivery-performances.md)
-      + [Fehlerbehebung beim Versand](delivery/using/delivery-troubleshooting.md)
-      + [Ursachen für das Fehlschlagen von Sendungen](delivery/using/understanding-delivery-failures.md)
-      + [Funktionsweise der Quarantäneverwaltung](delivery/using/understanding-quarantine-management.md)
-      + [Nachrichten-Tracking](delivery/using/about-message-tracking.md)
+      + [Erste Schritte bei der Überwachung eines Versands](delivery/using/about-delivery-monitoring.md)
+      + [Versandleistung und Fehlerbehebung](delivery/using/delivery-performance-troubleshooting.md)
+      + [Versandfehler und Quarantäneverwaltung](delivery/using/delivery-failures-quarantine.md)
+      + [Erweitert: Versandlogs anpassen](delivery/using/customize-delivery-logs.md)
    + Verwaltung der Zustellbarkeit {#deliverability-management}
       + [Was ist Zustellbarkeit](delivery/using/about-deliverability.md)
       + [Steuern des Nachrichteninhalts](delivery/using/control-message-content.md)
