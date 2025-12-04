@@ -33,7 +33,7 @@ Jedes Bereitstellungsmodell verfügt über verschiedene Funktionen und Managemen
 
 [Hier erfahren Sie mehr &#x200B;](../../installation/using/hosting-models.md) Hosting-Modelle und ihre Unterschiede.
 
-**Hinweis:** Campaign v8 ist ausschließlich als Managed Cloud Services verfügbar. [Informationen zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html){target="_blank"}.
+**Hinweis:** Campaign v8 ist ausschließlich als Managed Cloud Services verfügbar. [Informationen zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html?lang=de){target="_blank"}.
 
 ### Was sind die Unterschiede zwischen der On-Premise- und der gehosteten Version? {#what-are-the-differences-when-working-on-premise-vs-in-a-hosted-environment}
 
@@ -60,7 +60,7 @@ Die Migration zu Adobe Managed Services bietet mehr Skalierbarkeit, Sicherheit u
 
 **Erste Schritte:** Wenden Sie sich an Ihren Adobe-Support-Mitarbeiter, um Ihre Umgebung zu bewerten und einen detaillierten Migrationsplan mit Adobe Professional Services zu erstellen.
 
-Weitere Informationen über [Migration zu Managed Services](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic-blogs/migrate-your-adobe-campaign-v7-onprem-hybrid-environment-to/ba-p/681605){target="_blank"}.
+Weitere Informationen über [Migration zu Managed Services](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic-blogs/migrate-your-adobe-campaign-v7-onprem-hybrid-environment-to/ba-p/681605?profile.language=de){target="_blank"}.
 
 ## Build-Upgrades (Campaign Classic v7) {#build-upgrades-v7}
 
@@ -240,7 +240,7 @@ Campaign v8 ist die strategische Plattform von Adobe, die sich ideal für Untern
 
 Mehr dazu:
 
-* [Übersicht über Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html){target="_blank"}
+* [Übersicht über Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html?lang=de){target="_blank"}
 * [Wechsel von Campaign Classic v7 zu v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/v7-to-v8.html){target="_blank"}
 * [Umfassende häufig gestellte Fragen zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}
 
