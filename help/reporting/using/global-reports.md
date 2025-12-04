@@ -5,7 +5,7 @@ description: Allgemeine Berichte
 badge: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Reporting, Monitoring
 exl-id: 6839fd7e-ecf4-4504-90a8-0207bc3991e4
-source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+source-git-commit: 2186b8a30449cb023cb07305ba64d53f2c8adab1
 workflow-type: tm+mt
 source-wordcount: '2495'
 ht-degree: 97%
@@ -35,12 +35,12 @@ Klicken Sie zur Anzeige eines Berichts auf seinen Namen. Standardmäßig stehen 
 * **[!UICONTROL Betriebssysteme]**: siehe [Betriebssysteme](#operating-systems).
 * **[!UICONTROL URLs und Clickstreams]**: siehe [URLs und Clickstreams](../../reporting/using/delivery-reports.md#urls-and-click-streams).
 * **[!UICONTROL Trackingindikatoren]**: siehe [Trackingindikatoren](../../reporting/using/delivery-reports.md#tracking-indicators).
-* **[!UICONTROL Fehler und Bounces]**: siehe [Fehler und Bounces](#non-deliverables-and-bounces).
+* **[!UICONTROL Unzustellbare Nachrichten und Bounces]**: siehe [Unzustellbare Nachrichten und Bounces](#non-deliverables-and-bounces).
 * **[!UICONTROL Nutzer-Aktivitäten]**: siehe [Nutzer-Aktivitäten](#user-activities).
 * **[!UICONTROL Abonnement-Verfolgung]**: siehe [Abonnement-Verfolgung](#subscription-tracking).
 * **[!UICONTROL Versandzusammenfassung]**: siehe [Versandzusammenfassung](../../reporting/using/delivery-reports.md#delivery-summary).
 * **[!UICONTROL Versandstatistiken]**: siehe [Versandstatistiken](#delivery-statistics).
-* **[!UICONTROL Öffnungsverteilung]**: siehe [Öffnungsverteilung](#breakdown-of-opens).
+* **[!UICONTROL Aufschlüsselung der Öffnungen]**: siehe [Aufschlüsselung der Öffnungen](#breakdown-of-opens).
 
 ## Versanddurchsatz {#delivery-throughput}
 
@@ -60,7 +60,7 @@ Sie können die Anzeige durch Ändern des Parameters (z. B. 1 Stunde, 3 Stunden
 
 ## Nutzer-Aktivitäten {#user-activities}
 
-Dieser Bericht zeigt Öffnungen, Klicks und Transaktionen in Form eines Diagramms (Verteilung nach Tagen, Stunden oder halben Stunden).
+Dieser Bericht zeigt Öffnungen, Klicks und Transaktionen in Form eines Diagramms (Aufschlüsselung nach Tagen, Stunden oder halben Stunden).
 
 ![](assets/s_ncs_user_user_report.png)
 
@@ -70,21 +70,21 @@ Folgende Optionen stehen zur Verfügung:
 * **[!UICONTROL Klicks]**: Gesamtzahl der Klicks auf Links in Sendungen. Klicks auf Abmeldungs-Links und Mirrorseiten werden nicht berücksichtigt.
 * **[!UICONTROL Transaktionen]**: Gesamtzahl der Transaktionen nach Erhalt eine Nachricht. Damit die Transaktionen berücksichtigt werden können, muss auf der entsprechenden Webseite ein Web-Tracking-Tag vom Typ Transaktion gesetzt werden. Die Konfiguration des Webtrackings wird in [diesem Abschnitt](../../configuration/using/about-web-tracking.md) erläutert.
 
-## Fehler und Bounces {#non-deliverables-and-bounces}
+## Unzustellbare Nachrichten und Bounces {#non-deliverables-and-bounces}
 
-Dieser Bericht zeigt die Verteilung der Fehler nach Typ und nach Domain.
+Dieser Bericht zeigt die Aufschlüsselung der unzustellbaren Nachrichten nach Typ und nach Domain.
 
 Die **[!UICONTROL Anzahl verarbeiteter Nachrichten]** entspricht der Gesamtzahl der vom Versandserver verarbeiteten Nachrichten. Die Anzahl kann u. U. geringer als die Zahl der zu versendenden Nachrichten ausfallen, wenn ein Teil der Nachrichten vor der Verarbeitung durch den Server gestoppt oder ausgesetzt wurden.
 
 ![](assets/s_ncs_user_errors_report.png)
 
-**[!UICONTROL Verteilung der Fehler nach Typ]**
+**[!UICONTROL Aufschlüsselung der Fehler nach Typ]**
 
 >[!NOTE]
 >
->Die in diesem Bericht angezeigten Fehler lösen einen Quarantäneprozess aus. Weiterführende Informationen zur Quarantäneverwaltung finden Sie im Abschnitt [Quarantäneverwaltung](../../delivery/using/understanding-quarantine-management.md).
+>Die in diesem Bericht angezeigten Fehler lösen einen Quarantäneprozess aus. Weiterführende Informationen zur Quarantäneverwaltung finden Sie im Abschnitt [Quarantäneverwaltung](../../delivery/using/delivery-failures-quarantine.md).
 
-Der erste Teil des Berichts zeigt die Verteilung der fehlgeschlagenen Nachrichten nach Typ in Form einer Tabelle und eines Diagramms.
+Der erste Teil des Berichts zeigt die Aufschlüsselung der unzustellbaren Nachrichten nach Typ in Form einer Tabelle und eines Diagramms.
 
 Zu jedem Fehlertyp erscheint:
 
@@ -106,13 +106,13 @@ Folgende Indikatoren werden angezeigt:
   >
   >Dieser Fehler betrifft nur Sendungen über Mobile-Kanäle. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../delivery/using/sms-channel.md).
 
-  Jede Zeile der Datentabelle kann durch Anklicken des Symbols `[+]` ausgeklappt werden. Damit kann für jeden Fehlertyp die Verteilung der fehlerhaften Nachrichten nach Domain angezeigt werden.
+  Jede Zeile der Datentabelle kann durch Anklicken des Symbols `[+]` ausgeklappt werden. Damit kann für jeden Fehlertyp die Aufschlüsselung der fehlerhaften Nachrichten nach Domain angezeigt werden.
 
   ![](assets/s_ncs_user_errors_report_detail.png)
 
-**[!UICONTROL Verteilung der Fehler nach Domain]**
+**[!UICONTROL Aufschlüsselung der Fehler nach Domain]**
 
-Der zweite Teil des Berichts zeigt die Verteilung der fehlgeschlagenen Nachrichten nach Domains in Form einer Tabelle und eines Diagramms.
+Der zweite Teil des Berichts zeigt die Aufschlüsselung der fehlgeschlagenen Nachrichten nach Domains in Form einer Tabelle und eines Diagramms.
 
 Zu jeder Domain erscheint:
 
@@ -120,7 +120,7 @@ Zu jeder Domain erscheint:
 * der prozentuale Anteil der fehlerhaften Nachrichten für diese Domain in Bezug auf die Gesamtzahl der verarbeiteten Nachrichten dieser Domain,
 * der prozentuale Anteil der fehlerhaften Nachrichten für diese Domain in Bezug auf die Gesamtzahl der fehlerhaften Nachrichten.
 
-Jede Zeile der Datentabelle kann durch Klick auf das Symbol &rbrack;+&lbrack; ausgeklappt werden. Dies ermöglicht die Anzeige der Verteilung der fehlerhaften Nachrichten nach Fehlertyp für jede Domain.
+Jede Zeile der Datentabelle kann durch Klick auf das Symbol ]+[ ausgeklappt werden. Dies ermöglicht die Anzeige der Aufschlüsselung der fehlerhaften Nachrichten nach Fehlertyp für jede Domain.
 
 ![](assets/s_ncs_user_errors_report_detail2.png)
 
@@ -130,7 +130,7 @@ Jede Zeile der Datentabelle kann durch Klick auf das Symbol &rbrack;+&lbrack; au
 
 ## Browser {#browsers}
 
-Dieser Bericht enthält die Verteilung der Browser, die von den Versandempfängern im ausgewählten Zeitraum verwendet wurden.
+Dieser Bericht enthält die Aufschlüsselung der Browser, die von den Versandempfängern im ausgewählten Zeitraum verwendet wurden.
 
 >[!NOTE]
 >
@@ -146,7 +146,7 @@ Folgende Indikatoren werden angezeigt:
 
 * **[!UICONTROL Besucher]**: Gesamtzahl der Zielgruppenempfänger nach Domain, die mindestens einmal in einer Nachricht geklickt haben.
 * **[!UICONTROL Angesehene Seiten]**: Gesamtzahl der Klicks auf Links in Sendungen nach Browser, bezogen auf alle Sendungen.
-* **[!UICONTROL Nutzungsrate]**: Prozentuale Verteilung der Besucher nach Browser in Bezug auf die Gesamt-Besucherzahl.
+* **[!UICONTROL Nutzungsrate]**: Prozentuale Aufschlüsselung der Besucher nach Browser in Bezug auf die Gesamt-Besucherzahl.
 
 **Statistiken nach Browsern**
 
@@ -158,7 +158,7 @@ Die Statistiken werden in Form von Kurven, Diagrammen und Tabellen dargestellt.
 
 Der **[!UICONTROL Verlauf]** zeigt die tägliche Besucherrate des ausgewählten Browsers in Bezug auf die höchste gemessene Besucherzahl.
 
-Die **[!UICONTROL Verteilung nach Versionen]** zeigt den prozentualen Anteil der Besucher je Version in Bezug auf die Gesamt-Besucherzahl für den gewählten Browser.
+Die **[!UICONTROL Aufschlüsselung nach Versionen]** zeigt den prozentualen Anteil der Besucher je Version in Bezug auf die Gesamt-Besucherzahl für den gewählten Browser.
 
 In der Tabelle werden folgende Indikatoren dargestellt:
 
@@ -187,18 +187,18 @@ Der zentrale Bereich zeigt die Teilungs- und Öffnungsstatistiken der E-Mail.
 In der Rubrik **[!UICONTROL Teilungen]** werden folgende Indikatoren angezeigt:
 
 * **[!UICONTROL Anzahl von Teilungen]**: Anzahl der geteilten Nachrichten je sozialem Netzwerk. Der Wert entspricht der Zahl der Klicks auf das dem Gestaltungsbaustein **[!UICONTROL Teilen-Links der sozialen Netzwerke]** entsprechende Symbol.
-* **[!UICONTROL Verteilung]**: Prozentualer Anteil der Teilungen im jeweiligen Medium in Bezug auf die Gesamtzahl der Teilungen.
+* **[!UICONTROL Aufschlüsselung]**: Prozentualer Anteil der Teilungen im jeweiligen Medium in Bezug auf die Gesamtzahl der Teilungen.
 * **[!UICONTROL Teilungsrate]**: Prozentualer Anteil der Teilungen im jeweiligen Medium in Bezug auf die Gesamtzahl der zu sendenden Nachrichten.
 
 In der Rubrik **[!UICONTROL Öffnungen]** werden folgende Indikatoren angezeigt:
 
 * **[!UICONTROL Anz. Öffnungen]**: Anzahl der Nachrichten, die von Personen, an die die Nachricht (über den Gestaltungsbaustein **[!UICONTROL Teilen-Links der sozialen Netzwerke]**) weitergeleitet wurde, geöffnet wurden. Der Wert entspricht der Anzahl der Mirrorseiten-Öffnungen. Öffnungen durch Versandempfänger werden nicht berücksichtigt.
-* **[!UICONTROL Verteilung]**: Prozentualer Anteil der Öffnungen im jeweiligen Medium in Bezug auf die Gesamtzahl der Öffnungen.
+* **[!UICONTROL Aufschlüsselung]**: Prozentualer Anteil der Öffnungen im jeweiligen Medium in Bezug auf die Gesamtzahl der Öffnungen.
 * **[!UICONTROL Öffnungsrate]**: Prozentualer Anteil der Öffnungen im jeweiligen Medium in Bezug auf die Gesamtzahl der Teilungen.
 
-**[!UICONTROL Teilungs- und Öffnungsverteilung]**
+**[!UICONTROL Teilungs- und Öffnungsaufschlüsselung]**
 
-Dieser Bereich veranschaulicht in zwei Diagrammen die Verteilung von Teilungen und Öffnungen nach sozialen Medien.
+Dieser Bereich veranschaulicht in zwei Diagrammen die Aufschlüsselung von Teilungen und Öffnungen nach sozialen Medien.
 
 ## Statistiken zu Teilungsaktivitäten {#statistics-on-sharing-activities}
 
@@ -218,7 +218,7 @@ Folgende Indikatoren werden angezeigt:
 
 ## Betriebssysteme {#operating-systems}
 
-Dieser Bericht enthält die Betriebssysteme, die von den Versandempfängern im ausgewählten Zeitraum verwendet wurden.
+Dieser Bericht enthält die Aufschlüsselung der Betriebssysteme, die von den Versandempfängern im ausgewählten Zeitraum verwendet wurden.
 
 >[!NOTE]
 >
@@ -234,7 +234,7 @@ Folgende Indikatoren werden angezeigt:
 
 * **[!UICONTROL Besucher]**: Durchschnittliche Anzahl der Zielgruppenempfänger pro Tag nach Betriebssystem, die mindestens einmal in einer Nachricht geklickt haben.
 * **[!UICONTROL Angesehene Seiten]**: Durchschnittliche Anzahl von Klicks auf Links in Sendungen nach Betriebssystem, bezogen auf alle Sendungen.
-* **[!UICONTROL Nutzungsrate]**: Prozentuale Verteilung der Besucher nach Betriebssystem in Bezug auf die Gesamt-Besucherzahl.
+* **[!UICONTROL Nutzungsrate]**: Prozentuale Aufschlüsselung der Besucher nach Betriebssystem in Bezug auf die Gesamt-Besucherzahl.
 
 **Statistiken nach Betriebssystem**
 
@@ -246,7 +246,7 @@ Die Statistiken werden in Form von Kurven, Diagrammen und Tabellen dargestellt.
 
 Der **[!UICONTROL Verlauf]** zeigt die tägliche Nutzungsrate des ausgewählten Betriebssystems in Bezug auf die höchste gemessene Besucherzahl.
 
-Die **[!UICONTROL Verteilung nach Versionen]** zeigt den prozentualen Anteil der Besucher je Version in Bezug auf die Gesamt-Besucherzahl für das gewählte Betriebssystem.
+Die **[!UICONTROL Aufschlüsselung nach Versionen]** zeigt den prozentualen Anteil der Besucher je Version in Bezug auf die Gesamt-Besucherzahl für das gewählte Betriebssystem.
 
 In der Tabelle werden folgende Indikatoren dargestellt:
 
@@ -294,15 +294,15 @@ Folgende Indikatoren werden angezeigt:
 
   >[!NOTE]
   >
-  >Weiterführende Informationen zu Hard- und Softbounces finden Sie im Abschnitt [Quarantäneverwaltung](../../delivery/using/understanding-quarantine-management.md).
+  >Weiterführende Informationen zu Hard- und Softbounces finden Sie im Abschnitt [Quarantäneverwaltung](../../delivery/using/delivery-failures-quarantine.md).
 
 * **[!UICONTROL Öffnungen]**: Prozentualer Anteil der unterschiedlichen Zielgruppenempfänger, die mindestens einmal die betreffende Nachricht geöffnet haben, in Bezug auf die Gesamtzahl der verarbeiteten E-Mails.
 * **[!UICONTROL Klicks]**: Prozentualer Anteil der unterschiedlichen Zielgruppenempfänger, die mindestens einmal in eine Nachricht geklickt haben, in Bezug auf die Gesamtzahl der verarbeiteten E-Mails.
 * **[!UICONTROL Abmeldungen]**: Prozentualer Anteil der Klicks auf einen Abmelde-Link in Bezug auf die Gesamtzahl der verarbeiteten E-Mails.
 
-## Öffnungsverteilung {#breakdown-of-opens}
+## Aufschlüsselung der Öffnungen {#breakdown-of-opens}
 
-Dieser Bericht zeigt die Öffnungsverteilung nach Betriebssystem, Geräteart und Browser für den ausgewählten Zeitraum. Für jede Kategorie stehen zwei Diagramme zur Verfügung. Das erste zeigt die Öffnungsstatistiken für Computer und Mobilgeräte an, das zweite nur für Mobilgeräte.
+Dieser Bericht zeigt die Aufschlüsselung der Öffnungen nach Betriebssystem, Geräteart und Browser für den ausgewählten Zeitraum. Für jede Kategorie stehen zwei Diagramme zur Verfügung. Das erste zeigt die Öffnungsstatistiken für Computer und Mobilgeräte an, das zweite nur für Mobilgeräte.
 
 Die Zahl der Öffnungen entspricht der Gesamtzahl der geöffneten Nachrichten. E-Mails im Textformat werden nicht berücksichtigt. Weitere Informationen zum Verfolgen von Öffnungen finden Sie im Abschnitt [Öffnungs-Tracking](../../reporting/using/indicator-calculation.md#tracking-opens-).
 

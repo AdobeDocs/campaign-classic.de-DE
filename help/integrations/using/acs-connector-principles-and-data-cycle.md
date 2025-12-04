@@ -6,10 +6,10 @@ feature: ACS Connector
 hide: true
 hidefromtoc: true
 exl-id: 689b6117-5143-4f85-8582-2c74cae72ca2
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 2186b8a30449cb023cb07305ba64d53f2c8adab1
 workflow-type: tm+mt
-source-wordcount: '2092'
-ht-degree: 100%
+source-wordcount: '2089'
+ht-degree: 96%
 
 ---
 
@@ -36,7 +36,7 @@ In diesem Dokument wird ACS Connector beschrieben. In den folgenden Abschnitten 
 * [Prozesse](#process): Überblick über ACS Connector und die Verwaltung der Datenreplikation
 * [Implementierung](#implementation): Erste Schritte mit ACS Connector und eine Anleitung zur Replikation einfacher und erweiterter Datensätze
 * [Synchronisieren von Profilen](../../integrations/using/synchronizing-profiles.md): Anleitung zur Replikation von Profilen und zur Erstellung von Sendungen mit diesen Profilen.
-* [Synchronisieren von Audiences](../../integrations/using/synchronizing-audiences.md): Anleitung zum Auswählen einer Empfängerliste in Campaign v7 und zur Replikation dieser Liste als Audience in Campaign Standard.
+* [Synchronisieren von Zielgruppen](../../integrations/using/synchronizing-audiences.md): Anleitung zum Auswählen einer Empfängerliste in Campaign v7 und zur Replikation dieser Liste als Zielgruppe in Campaign Standard.
 * [Synchronisieren von Web-Programmen](../../integrations/using/synchronizing-web-applications.md): Anleitung zur Verknüpfung von Web-Programmen in Campaign v7 mit Campaign Standard.
 * [Fehlerbehebung bei ACS-Connectoren](../../integrations/using/troubleshooting-the-acs-connector.md): Antworten auf häufige Probleme.
 
@@ -59,7 +59,7 @@ ACS Connector repliziert regelmäßig die folgenden Elemente von Campaign v7 nac
 
 Standardmäßig erfolgt die periodische Replikation für ACS Connector alle 15 Minuten. Dieser Zeitraum kann auf Ihre Bedürfnisse angepasst werden. Wenn Sie diese Einstellung ändern möchten, kontaktieren Sie Ihren Consultant.
 
-Die Datenreplikation von Empfängern, Abonnements, Diensten und Landingpages ist inkrementell, d. h. dass nur neue Empfänger und Änderungen an vorhandenen Empfängern von Campaign v7 nach Campaign Standard repliziert werden. Die Replikation einer Audience findet jedoch in einer einzigen Instanz statt. Sie können eine Audience in Campaign v7 erstellen und sie einmal nach Campaign Standard replizieren. Die Replikation erfolgt sofort und kann nicht so konfiguriert werden, dass regelmäßig Aktualisierungen durchgeführt werden. Anweisungen finden Sie unter [Synchronisieren von Audiences](../../integrations/using/synchronizing-audiences.md).
+Die Datenreplikation von Empfängern, Abonnements, Diensten und Landingpages ist inkrementell, d. h. dass nur neue Empfänger und Änderungen an vorhandenen Empfängern von Campaign v7 nach Campaign Standard repliziert werden. Die Replikation einer Zielgruppe findet jedoch in einer einzigen Instanz statt. Sie können eine Zielgruppe in Campaign v7 erstellen und sie einmal nach Campaign Standard replizieren. Die Replikation erfolgt sofort und kann nicht so konfiguriert werden, dass regelmäßig Aktualisierungen durchgeführt werden. Anweisungen finden Sie unter [Synchronisieren von Zielgruppen](../../integrations/using/synchronizing-audiences.md).
 
 >[!NOTE]
 >
@@ -83,7 +83,7 @@ Die Replikation von Versandkennungen und E-Mail-Logs ermöglicht den Zugriff auf
 
 ACS Connector synchronisiert Quarantänen zwischen Campaign v7 und Campaign Standard.
 
-Beispiel: Ein von Campaign v7 nach Campaign Standard repliziertes Profil enthält eine E-Mail-Adresse. Wenn die E-Mail-Adresse von Campaign Standard unter Quarantäne gestellt wird, werden diese Daten während der nächsten Synchronisation an Campaign v7 übermittelt. Weiterführende Informationen zu Quarantänen finden Sie unter [Quarantäne-Verwaltung](../../delivery/using/understanding-quarantine-management.md) und [Quarantäne in Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=de).
+Beispiel: Ein von Campaign v7 nach Campaign Standard repliziertes Profil enthält eine E-Mail-Adresse. Wenn die E-Mail-Adresse von Campaign Standard unter Quarantäne gestellt wird, werden diese Daten während der nächsten Synchronisation an Campaign v7 übermittelt. Weiterführende Informationen zu Quarantänen finden Sie unter [Quarantäne-Verwaltung](../../delivery/using/delivery-failures-quarantine.md) und [Quarantäne in Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=de).
 
 ### Verwenden von replizierten Profilen {#using-replicated-profiles}
 
@@ -116,7 +116,7 @@ Für ACS Connector gibt es zwei Arten von Implementierungen. Beide müssen unbed
 >
 >Versuchen Sie unter keinen Umständen, diese Schritte selbst durchzuführen. Sie dürfen ausschließlich von Adobe Campaign-Consultants vorgenommen werden.
 
-Mit der **einfachen Implementierung** können Sie Empfänger (vordefinierte Felder), Dienste und Abonnements, Web-Anwendungen und Audiences replizieren. Diese Replikation erfolgt in nur einer Richtung von Campaign v7 nach Campaign Standard.
+Mit der **einfachen Implementierung** können Sie Empfänger (vordefinierte Felder), Dienste und Abonnements, Web-Anwendungen und Zielgruppen replizieren. Diese Replikation erfolgt in nur einer Richtung von Campaign v7 nach Campaign Standard.
 
 Die **erweiterte Implementierung** kann für komplexere Anwendungsfälle verwendet werden, beispielsweise wenn Sie zusätzliche Empfängerfelder oder benutzerdefinierte Empfängertabellen verwenden (z. B. eine Transaktionstabelle). Siehe [Erweiterte Implementierung](#advanced-implementation).
 
@@ -148,13 +148,13 @@ Die folgenden Replikations-Workflows sind als gebrauchsfertige Vorlagen verfügb
 * **[!UICONTROL `[ACS] Landing pages replication`]** (newLandingPageReplication): Dieser inkrementelle Workflow repliziert die ausgewählten Webanwendungen nach Campaign Standard. Die Campaign v7-Webanwendungen werden als Landingpages in Campaign Standard angezeigt. Siehe Anwendungsfall [Webanwendungen synchronisieren](../../integrations/using/synchronizing-web-applications.md).
 * **[!UICONTROL `[ACS] New replication`]** (newReplication): Dieser inkrementelle Workflow ist ein Beispiel, das zur Replikation einer benutzerdefinierten Tabelle verwendet werden kann. Siehe [Erweiterte Implementierung](#advanced-implementation).
 * **[!UICONTROL `[ACS] Delivery-message replication`]** (newDlvMsgQualification): Dieser inkrementelle Workflow repliziert Versandnachrichten von Campaign Standard nach Campaign v7.
-* **[!UICONTROL `[ACS] Profile delivery log replication`]** (newRcpDeliveryLogReplication): Dieser inkrementelle Workflow repliziert Versandkennungen, E-Mail-Broadlogs und E-Mail-Trackinglogs von Campaign Standard nach Campaign v7. Dabei werden nur Sendungen berücksichtigt, die von Campaign Standard an Profile gesendet werden, die in der Tabelle „nms:recipients“ von Campaign v7 enthalten sind.
+* **[!UICONTROL `[ACS] Profile delivery log replication`]** (newRcpDeliveryLogReplication): Dieser inkrementelle Workflow repliziert Versandkennungen, E-Mail-Broadlogs und E-Mail-Trackinglogs von Campaign Standard nach Campaign v7. Es werden nur Sendungen berücksichtigt, die von Campaign Standard an Profile gesendet werden, die Teil der nms:recipients-Tabelle von Campaign v7 sind.
 
   >[!NOTE]
   >
   > Wenn sowohl Campaign Classic- als auch Campaign Standard-Instanzen zum Senden von E-Mails mit getrackten URLs verwendet werden, kann während der Synchronisierung ein Problem mit doppelten URL-Tag-IDs auftreten. Um dies zu verhindern, aktualisieren Sie die Aktivität **Tracking-URLs aktualisieren** (writerTrackingUrls) im Workflow und fügen Sie dem Quellausdruck @tagId das Präfix &quot;ACS&quot; hinzu.
 
-* **[!UICONTROL `[ACS] New delivery log replication`]** (newRcpDeliveryLogReplication): Dieser inkrementelle Workflow repliziert Versandkennungen, E-Mail-Broadlogs und E-Mail-Trackinglogs von Campaign Standard nach Campaign v7. Dabei werden nur Sendungen berücksichtigt, die von Campaign Standard an Profile gesendet werden, die in einer bestimmten Tabelle (zu definieren, nicht „nms:recipients“) von Campaign v7 enthalten sind.
+* **[!UICONTROL `[ACS] New delivery log replication`]** (newRcpDeliveryLogReplication): Dieser inkrementelle Workflow repliziert Versandkennungen, E-Mail-Broadlogs und E-Mail-Trackinglogs von Campaign Standard nach Campaign v7. Es werden nur Sendungen berücksichtigt, die von Campaign Standard an Profile gesendet wurden, die Teil einer bestimmten Tabelle von Campaign v7 sind (um eine andere :recipients als nms zu definieren).
 
 ### Standard-Empfängerfelder {#default-recipient-fields}
 
@@ -302,7 +302,7 @@ Mit der erweiterten Implementierung werden entsprechend den Kundenbedürfnissen 
 
 Mit der einfachen Implementierung werden die vordefinierten Empfängerfelder repliziert. Wenn Sie benutzerdefinierte, zum Empfängerschema hinzugefügte Felder replizieren möchten, müssen Sie diese identifizieren.
 
-1. Erstellen Sie unter **[!UICONTROL Administration > ACS Connector > Daten-Mapping]** ein Zielgruppen-Mapping auf die **[!UICONTROL nms:recipient]**-Tabelle.
+1. Erstellen **[!UICONTROL unter „Administration“ > „ACS Connector“ > &quot;]**&quot; ein Zielgruppen-Mapping für die Tabelle **[!UICONTROL nms:recipient]**.
 
    ![](assets/acs_connect_implementation_6.png)
 
@@ -320,7 +320,7 @@ Mit der einfachen Implementierung werden die vordefinierten Empfängerfelder rep
 
 Mit der einfachen Implementierung wird die vordefinierte Empfängertabelle repliziert. Wenn Sie benutzerdefinierte Empfängertabellen hinzugefügt haben, identifizieren Sie sie folgendermaßen:
 
-1. Erstellen Sie unter **[!UICONTROL Administration > ACS Connector > Daten-Mapping]** ein Zielgruppen-Mapping auf Ihre benutzerdefinierte Profiltabelle.
+1. Erstellen Sie unter **[!UICONTROL Administration > ACS Connector > Daten-Mapping]** ein Zielgruppenbestimmungs-Mapping auf Ihre benutzerdefinierte Profiltabelle.
 
    ![](assets/acs_connect_implementation_10.png)
 

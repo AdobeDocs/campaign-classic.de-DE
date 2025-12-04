@@ -6,10 +6,10 @@ feature: Workflows
 hide: true
 hidefromtoc: true
 exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 2186b8a30449cb023cb07305ba64d53f2c8adab1
 workflow-type: tm+mt
-source-wordcount: '1714'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -33,12 +33,12 @@ Weiterführende Informationen zur Verfolgung technischer Workflows finden Sie in
 
 ## Liste der technischen Workflows {#list-technical-workflows}
 
-| Technischer Workflow | Package | Beschreibung  |
+| Technischer Workflow | Package | Beschreibung |
 |------|--------|-----------|
 | **Alias-Datenbereinigung** (aliasCleansing) | Versand | Dieser Workflow vereinheitlicht Aufzählungswerte. Er wird standardmäßig täglich um 3 Uhr morgens ausgelöst. |
 | **Abrechnung** (billing) | Versand | Dieser Workflow übermittelt per E-Mail den Aktivitätsbericht des Systems an den fakturierungsverantwortlichen Benutzer (&#39;billing&#39;). Er wird am 25. jedes Monats in der Marketing-Instanz ausgelöst. |
 | **Berechnung der Twitter-Statistiken** (statsTwitter) | Soziale Netzwerke (Social Marketing) – Nur Campaign v7 | Dieser Workflow berechnet Statistiken im Zusammenhang mit Retweets und Besuchen auf X (früher bekannt als Twitter). |
-| **Vorgänge bei Kampagnen** (operationMgt) | Marketing-Kampagnen (Campaign) | Dieser Workflow verwaltet Vorgänge in Marketing-Kampagnen (Zielgruppenbestimmung, Dateiextraktion etc.). Er erstellt darüber hinaus Workflows für wiederkehrende und periodische Kampagnen. |
+| **Aufträge bei Kampagnen** (operationMgt) | Marketing-Kampagnen (Campaign) | Dieser Workflow verwaltet Aufträge in Marketing-Kampagnen (Zielgruppenbestimmung, Dateiextraktion etc.). Er erstellt darüber hinaus Workflows für wiederkehrende und periodische Kampagnen. |
 | **Erfassen von Daten für den HeatMap-Service** (collectDataHeatMapService) | Standardmäßig installiert | Dieser Workflow ruft die für den HeatMap-Service erforderlichen Daten ab. |
 | **Erfassen von Datenschutzanfragen** (collectPrivacyRequests) | Datenschutzbestimmung | Mit diesem Workflow werden die in Adobe Campaign gespeicherten Empfängerdaten abgerufen und auf dem Bildschirm zur Datenschutzanfrage für den Download bereitgestellt. |
 | **Kostenberechnung** (budgetMgt) | Marketing-Kampagnen (Campaign) | Dieser Workflow berechnet Ausgaben- und Kostenposten für Budgets, Pläne, Programme, Kampagnen, Sendungen und Aufgaben. |
@@ -47,15 +47,15 @@ Weiterführende Informationen zur Verfolgung technischer Workflows finden Sie in
 | **Löschen von Datenschutzanfragedaten** (deletePrivacyRequestsData) | Datenschutzbestimmung | Mit diesem Workflow werden die in Adobe Campaign gespeicherten Empfängerdaten gelöscht. |
 | **Versandindikatoren** (deliveryIndicators) | Mid-Sourcing-Plattform | Dieser Workflow aktualisiert Tracking-Indikatoren eines Versands. Er wird standardmäßig stündlich ausgelöst. |
 | **Vorgänge in Diskussionsforen** (newsgroupMgt) | Marketing-Ressourcen (MRM) | Dieser Workflow sendet Benachrichtigungen in Diskussionsforen. Er wird ausgelöst, sobald ein Validierungssignal empfangen wird |
-| **Bearbeitungsvorgänge des verteilten Marketings** (centralLocalMgt) | Zentrales/lokales Marketing (verteiltes Marketing) | Dieser Workflow führt die Vorgänge im Zusammenhang mit dem Modul &quot;verteiltes Marketing&quot; aus. Er erstellt lokale Kampagnen und verwaltet Benachrichtigungen in Bezug auf Bestellungen und die Verfügbarkeit von Campaign-Packages. |
+| **Bearbeitungsvorgänge des verteilten Marketings** (centralLocalMgt) | Zentrales/lokales Marketing (verteiltes Marketing) | Dieser Workflow führt die Vorgänge im Zusammenhang mit dem Modul &quot;verteiltes Marketing&quot; aus. Er erstellt lokale Kampagnen und verwaltet Benachrichtigungen in Bezug auf Bestellungen und die Verfügbarkeit von Kampagnenkits. |
 | **Bereinigen von Ereignissen** (webAnalyticsPurgeWebEvents) | Web Analytics-Connectoren | Mit diesem Workflow können Sie jedes Ereignis aus dem Datenbankfeld entsprechend dem im Feld &quot;Lebensdauer&quot; konfigurierten Zeitraum löschen. |
-| **Exportieren von Audiences zu Adobe Experience Cloud** (exportSharedAudience) | Integration mit Adobe Experience Cloud | Dieser Workflow exportiert freigegebene Audiences/Segmente. Diese können dann in anderen von Ihnen verwendeten Lösungen von Adobe Experience Cloud genutzt werden. |
+| **Exportieren von Zielgruppen zu Adobe Experience Cloud** (exportSharedAudience) | Integration mit Adobe Experience Cloud | Dieser Workflow exportiert freigegebene Zielgruppen/Segmente. Diese können dann in anderen von Ihnen verwendeten Lösungen von Adobe Experience Cloud genutzt werden. |
 | **Prognosen** (forecasting) | Versand | Dieser Workflow analysiert die im Planungskalender verzeichneten Sendungen (Erstellung von Planungslogs). Er wird standardmäßig täglich um 1 Uhr morgens ausgelöst. |
 | **Berechnung des vollständigen Aggregats (propositionrcp-Cube)** (agg_nmspropositionrcp_full) | Angebotsmodul (interaction) | Dieser Workflow aktualisiert das volle Aggregat des Angebotsvorschlag-Cubes. Er wird standardmäßig täglich um 6 Uhr morgens ausgelöst. Dieses Aggregat erfasst die folgenden Dimensionen: Kanal, Versand, Marketing-Angebot und -Datum. Der Cube „Angebotsvorschlag“ wird dann zur Erstellung von angebotsbasierten Berichten verwendet. Weitere Informationen zu Cubes finden Sie in [diesem Abschnitt](../../reporting/using/ac-cubes.md). |
 | **Identifizierung der konvertierten Kontakte** (webAnalyticsFindConverted) | Web Analytics-Connectoren | Dieser Workflow indexiert die Besucher, die nach einer Remarketing-Kampagne einen Kauf getätigt haben. Die von diesem Workflow ermittelten Daten werden im Bericht Remarketing-Effizienz zur Verfügung gestellt (siehe diese Seite). |
-| **Importieren von Audiences aus Adobe Experience Cloud** (importSharedAudience) | Integration mit Adobe Experience Cloud | Dieser Workflow ermöglicht den Import von Audiences/Segmenten aus den unterschiedlichen Adobe Experience Cloud-Lösungen in Adobe Campaign. |
-| **Bearbeitungsvorgänge bezüglich Kampagnensendungen** (deliveryMgt) | Marketing-Kampagnen (Campaign) | Dieser Workflow startet den Versand der validierten Sendungen und die Anschlussvorgänge des Dienstleisters bei externem Versand. Außerdem werden Validierungsbenachrichtigungen und Erinnerungen gesendet. |
-| **Bearbeitungsvorgänge bezüglich der Dienstleister** (supplierMgt) | Marketing-Kampagnen (Campaign) | Dieser Workflow startet Provider-Vorgänge nach erfolgter Versandvalidierung (E-Mail an den Router und Anschlussvorgang). |
+| **Importieren von Zielgruppen aus Adobe Experience Cloud** (importSharedAudience) | Integration mit Adobe Experience Cloud | Dieser Workflow ermöglicht den Import von Zielgruppen/Segmenten aus den unterschiedlichen Adobe Experience Cloud-Lösungen in Adobe Campaign. |
+| **Bearbeitungsaufträge bezüglich Kampagnensendungen** (deliveryMgt) | Marketing-Kampagnen (Campaign) | Dieser Workflow startet den Versand der validierten Sendungen und die Anschlussvorgänge des Dienstleisters bei externem Versand. Außerdem werden Validierungsbenachrichtigungen und Erinnerungen gesendet. |
+| **Bearbeitungsaufträge bezüglich der Dienstleister** (supplierMgt) | Marketing-Kampagnen (Campaign) | Dieser Workflow startet Provider-Vorgänge nach erfolgter Versandvalidierung (E-Mail an den Router und Anschlussvorgang). |
 | **Update des LINE V2-Zugriffs-Tokens** (updateLineV2AccessToken) | LINE-Kanal – nur Campaign v7 | Dieser Workflow aktualisiert das Zugriffs-Token auf LINE V2. |
 | **Migration von MID zu LineUserID** (MIDToUserIDMigration) | LINE-Kanal | Dieser Workflow erzeugt die Kennung von LINE V2-Benutzern für die Migration von LINE V1 nach LINE V2. |
 | **Benachrichtigungen bezüglich Marketing-Ressourcen** (assetMgt) | Marketing-Ressourcen (MRM) | Dieser Workflow verwaltet die Benachrichtigungen bezüglich der Validierung und der Veröffentlichung von Marketing-Ressourcen. |
@@ -63,7 +63,7 @@ Weiterführende Informationen zur Verfolgung technischer Workflows finden Sie in
 | **Berechnung des vollen Message Center-Aggregats** (agg_messageCenter_full) | Kontrolle der Transaktionsnachrichten (Message Center – Kontrolle) | Dieser Workflow aktualisiert das vollständige Aggregat für den Message Center-Cube. Er wird standardmäßig jeden Tag um 3 Uhr morgens ausgelöst. Dieses Aggregat erfasst die folgenden Dimensionen: Kanal, Datum, Status und Ereignistyp. Der Message Center-Cube wird dann zur Erstellung von ereignisbasierten Berichten verwendet. Weitere Informationen zu Cubes finden Sie in [diesem Abschnitt](../../reporting/using/ac-cubes.md) |
 | **Mid-Sourcing (Versandzähler)** (defaultMidSourcingDlv) | Weiterleitung an Mid-Sourcing | Dieser Workflow ruft Informationen bezüglich der Zählung von Sendungen vom Mid-Sourcing-Server ab. Zu diesen Informationen gehören allgemeine Versandindikatoren wie etwa die Anzahl der Sendungen. Tracking-Informationen wie etwa Öffnungen sind nicht enthalten. Dieser Workflow wird standardmäßig alle zehn Minuten ausgelöst. |
 | **Mid-Sourcing (Versand-Logs)** (defaultMidSourcingLog) | Weiterleitung an Mid-Sourcing | Dieser Workflow ruft Versand-Logs vom Mid-Sourcing-Server ab. Er wird standardmäßig stündlich ausgelöst. |
-| **NMAC-Abmeldungsverwaltung** (mobileAppOptOutMgt) | Mobile-App-Kanal | Dieser Workflow aktualisiert die Abmeldungen von Benachrichtigungen auf Smartphones und Tablets. Er wird standardmäßig alle sechs Stunden zwischen 1 Uhr morgens und Mitternacht ausgelöst. Weitere Informationen finden Sie in [diesem Abschnitt](../../delivery/using/understanding-quarantine-management.md#push-notification-quarantines). |
+| **NMAC-Abmeldungsverwaltung** (mobileAppOptOutMgt) | Mobile-App-Kanal | Dieser Workflow aktualisiert die Abmeldungen von Benachrichtigungen auf Smartphones und Tablets. Er wird standardmäßig alle sechs Stunden zwischen 1 Uhr morgens und Mitternacht ausgelöst. Weitere Informationen finden Sie in [diesem Abschnitt](../../delivery/using/delivery-failures-quarantine.md#push-notification-quarantines). |
 | **Benachrichtigung über Angebote** (offerMgt) | Versand | Dieser Workflow stellt validierte Angebote sowie die im Angebotskatalog enthaltenen Kategorien in die Online-Umgebung bereit. |
 | **Bereinigung angehaltener Workflows** (cleanupPausedWorkflows) | Versand | In diesem Workflow werden angehaltene Workflows analysiert, für die eine normale Prioritätsstufe festgelegt wurde. Er löst Warnhinweise und Benachrichtigungen aus, wenn sie zu lange angehalten werden. Nach einem Monat werden ausgesetzte technische Workflows bedingungslos gestoppt. Standardmäßig wird dieser Workflow jeden Montag um 5 Uhr morgens ausgelöst. Weitere Informationen finden Sie unter [Handhabung angehaltener Workflows](monitoring-workflow-execution.md#handling-of-paused-workflows). |
 | **Datenschutzanfragebereinigung** (cleanupPrivacyRequests) | Datenschutzbestimmung | Mit diesem Workflow werden Dateien mit Zugriffsanfragen gelöscht, die älter als 90 Tage sind. |
