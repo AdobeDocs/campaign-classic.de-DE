@@ -5,8 +5,8 @@ description: Die wichtigsten zu überprüfenden Punkte beim Verwalten der Zustel
 feature: Deliverability, Troubleshooting
 role: User
 exl-id: f94897c1-b44c-4100-ac50-a89b13fa6f2f
-source-git-commit: b353b562bd2f0b0bd2dfde22c6477ab66d499483
-workflow-type: ht
+source-git-commit: 0c639cc8b9636c190c868980ab5182a0eccb5f74
+workflow-type: tm+mt
 source-wordcount: '662'
 ht-degree: 100%
 
@@ -49,13 +49,13 @@ Wenn das Problem fortbesteht, kontaktieren Sie die entsprechenden kommerziellen 
 
    * Der Status **[!UICONTROL In Quarantäne]** ist das Ergebnis eines Soft- oder Hardbounce.
 
-  Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](understanding-quarantine-management.md#quarantine-vs-denylist).
+  Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](delivery-failures-quarantine.md#quarantine-vs-denylist).
 
 * **Was bedeuten die unterschiedlichen Gründe für Quarantäne-Fehler?**
 
   Es gibt zehn mögliche Gründe: Unbestimmt, Unbekannter Nutzer, Ungültige Domain, Auf Blockierungsliste, Zurückgewiesen, Fehler ignoriert, Unerreichbar, Konto deaktiviert, Postfach voll, Nicht angemeldet.
 
-  Weitere Informationen hierzu finden Sie unter [Funktionsweise der Quarantäneverwaltung](understanding-quarantine-management.md).
+  Weitere Informationen hierzu finden Sie unter [Funktionsweise der Quarantäneverwaltung](delivery-failures-quarantine.md).
 
 ## Aus Blockierungsliste entfernen {#remove-from-denylist}
 
