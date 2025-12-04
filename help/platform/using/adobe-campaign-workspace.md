@@ -7,9 +7,9 @@ role: Developer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '980'
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Im zentralen Abschnitt der Startseite finden Sie Links für den Zugriff auf das 
 
 ![](assets/d_ncs_user_interface_home.png)
 
-![](assets/do-not-localize/how-to-video.png) [&#x200B; Campaign-Arbeitsbereich im Video kennenlernen](#video)
+![](assets/do-not-localize/how-to-video.png)[ Campaign-Arbeitsbereich im Video kennenlernen](#video)
 
 >[!NOTE]
 >
@@ -144,4 +144,4 @@ Weitere Informationen zum **Arbeiten mit Aufzählungen** finden Sie in der [Doku
 
 In diesem Video wird der Campaign Classic-Arbeitsbereich vorgestellt.
 
->[!VIDEO](https://video.tv.adobe.com/v/39531?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12)

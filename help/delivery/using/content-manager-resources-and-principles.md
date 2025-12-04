@@ -7,9 +7,9 @@ feature: Templates
 role: User, Developer
 exl-id: ade3f1d1-2235-4148-9b6f-721d3f521a15
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '247'
+ht-degree: 100%
 
 ---
 
