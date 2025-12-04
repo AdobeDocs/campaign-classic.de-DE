@@ -58,7 +58,7 @@ Support erhalten Sie über unsere häufig gestellten Fragen, Best Practices, Onl
         <ul>
         <li><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=de" target="_blank">Best Practices für Workflows</a></li>
         <li><a href="workflow/using/monitoring-technical-workflows.md">Überwachen technischer Workflows</a></li>
-        <li><a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking" target="_blank">Funktionsweise der Tracking-Verwaltung</a></li>
+        <li><a href="https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/tracking/tracking" target="_blank">Funktionsweise der Tracking-Verwaltung</a></li>
         <li><a href="production/using/monitoring-guidelines.md">Monitoring-Tools</a></li>
         <li><a href="platform/using/import-export-workflows.md">Importieren von Daten mit Workflows</a></li>
         <li><a href="delivery/using/steps-sending-the-delivery.md">Senden von Nachrichten in mehreren Schüben</a></li>
