@@ -31,7 +31,7 @@ Adobe Campaign Classic v7 bietet drei Bereitstellungsmodelle:
 
 Jedes Bereitstellungsmodell verfügt über verschiedene Funktionen und Managementaufgaben. Die Verfügbarkeit von Modulen, Optionen und Konfigurationen hängt von Ihrem Bereitstellungstyp ab.
 
-[Hier erfahren Sie mehr ](../../installation/using/hosting-models.md) Hosting-Modelle und ihre Unterschiede.
+[Hier erfahren Sie mehr &#x200B;](../../installation/using/hosting-models.md) Hosting-Modelle und ihre Unterschiede.
 
 **Hinweis:** Campaign v8 ist ausschließlich als Managed Cloud Services verfügbar. [Informationen zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html){target="_blank"}.
 
@@ -80,7 +80,7 @@ Adobe Campaign Classic nutzt eine Reihe von Technologien, um Mehrwert zu erziele
 
 **Für On-Premise-/Hybrid-Kunden** Sie sind für die Durchführung von Upgrades verantwortlich. Adobe empfiehlt dringend, mindestens einmal pro Jahr ein Upgrade durchzuführen.
 
-[Lesen Sie diesen Abschnitt](../../production/using/build-upgrade.md) um zu erfahren, wie Sie Ihre Umgebung aktualisieren, und lesen Sie [Häufig gestellte Fragen ](../../platform/using/faq-build-upgrade.md) Build-Upgrades), um detaillierte Fragen zu diesem speziellen Thema zu erhalten.
+[Lesen Sie diesen Abschnitt](../../production/using/build-upgrade.md) um zu erfahren, wie Sie Ihre Umgebung aktualisieren, und lesen Sie [Häufig gestellte Fragen &#x200B;](../../platform/using/faq-build-upgrade.md) Build-Upgrades), um detaillierte Fragen zu diesem speziellen Thema zu erhalten.
 
 ### Was ist die neueste Version von Adobe Campaign Classic v7? {#what-is-the-latest-version-v7}
 
@@ -116,9 +116,9 @@ Bei der Installation von Campaign v7 auf Englisch können Sie entweder Englisch 
 
 Die Self-Service-Schnittstelle für Sicherheitszonen kann verwendet werden, um Einträge in der VPN-Sicherheitszonenkonfiguration einer Adobe Campaign Classic v7-Bereitstellung zu verwalten. Dies ist in erster Linie für On-Premise- und Hybridbereitstellungen relevant.
 
-In [ Abschnitt ](../../installation/using/security-zones.md) Sie mehr über Sicherheitszonen in Campaign v7.
+In [&#x200B; Abschnitt &#x200B;](../../installation/using/security-zones.md) Sie mehr über Sicherheitszonen in Campaign v7.
 
-[Klicken Sie hier, um mehr über ](https://helpx.adobe.com/de/campaign/kb/configuring-security-zones-self-service.html){target="_blank"} Self-Service-Benutzeroberfläche der Sicherheitszone zu erfahren.
+[Klicken Sie hier, um mehr über &#x200B;](https://helpx.adobe.com/de/campaign/kb/configuring-security-zones-self-service.html){target="_blank"} Self-Service-Benutzeroberfläche der Sicherheitszone zu erfahren.
 
 **Hinweis:** Kunden von Hosted/Managed Services sollten sich an Adobe wenden, um Sicherheitszonen zu konfigurieren.
 
