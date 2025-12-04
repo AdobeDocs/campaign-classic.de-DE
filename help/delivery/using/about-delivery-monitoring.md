@@ -2,55 +2,111 @@
 product: campaign
 title: Erste Schritte bei der Überwachung eines Versands
 description: Erfahren Sie mehr über die Funktionen zur Überwachung eines Versands in Campaign Classic
-badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Monitoring, Deliverability
 role: User
 exl-id: 9ce11da0-e37b-459e-8ec7-d2bddf59bdf7
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: eac670cd4e7371ca386cee5f1735dc201bf5410a
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 100%
+source-wordcount: '719'
+ht-degree: 75%
 
 ---
 
 # Erste Schritte bei der Überwachung eines Versands {#about-delivery-monitoring}
 
-Die Überwachung Ihrer Sendungen nach deren Versand ist ein wichtiger Schritt, um sicherzustellen, dass Ihre Marketing-Kampagnen effizient sind und Ihre Kunden erreichen.
+>[!IMPORTANT]
+>
+>Auf dieser Seite werden **Campaign Classic v7-spezifische Überwachungsfunktionen** Hybrid- und On-Premise-Bereitstellungen dokumentiert.
 
-In diesem Abschnitt erfahren Sie mehr über die Informationen, die Sie nach einem Versand überwachen können, sowie darüber, wie fehlgeschlagene Sendungen und Quarantänen verwaltet werden.
+## Überwachungsfunktionen
 
-<img src="assets/do-not-localize/icon_monitor.svg" width="60px">
+### Versandverfolgung {#monitoring-deliveries}
 
-**Sendungen überwachen**
+**Bei Hybrid-/On-Premise-Bereitstellungen** Campaign Classic v7 ist eine zusätzliche Überwachung der Serverressourcen und der MTA-Konfiguration (Mail Transfer Agent) erforderlich.
 
-Mit der Versandliste können Sie alle erstellten Sendungen an einem Ort anzeigen.
+#### Fehlerbehebung bei ausstehenden Sendungen {#pending-deliveries}
 
-Für jeden Versand steht ein eigenes Dashboard zur Verfügung. Sie können damit eventuelle Probleme während des Versands sowie verschiedene Arten von Informationen zum Versand überwachen: Berichte, Mirrorseiten, Ausschlüsse, Trackinglogs, Rendering usw.
+Was passiert, wenn die Nachrichten nicht gesendet werden und ihr Status weiterhin **Ausstehend** lautet?
 
-* [Auf die Versandliste zugreifen](list-of-deliveries.md)
-* [Versand-Dashboard](delivery-dashboard.md)
+* Der Prozess wartet auf die Verfügbarkeit von Ressourcen. Möglicherweise wurde der MTA noch nicht gestartet.
+Prüfen Sie, ob Ihre mta@instance-Module auf den MTA-Servern gestartet wurden. Starten Sie sie gegebenenfalls. [Weitere Informationen](../../production/using/administration.md).
 
-<img src="assets/do-not-localize/icon_guidelines.svg" width="60px">
+* Möglicherweise wird für den Versand eine Affinität verwendet, die in der Sendeinstanz noch nicht konfiguriert wurde.
+Tipp: Prüfen Sie die Konfiguration der Traffic-Verwaltung (IP-Affinität). Weiterführende Informationen dazu finden Sie im Abschnitt Ausgehenden SMTP-Traffic steuern.
 
-**Versand-Performance sicherstellen**
+>[!NOTE]
+>
+>Diese Schritte können nur von einem erfahrenen Benutzer in On-Premise-Installationen ausgeführt werden.
 
-Sie sollten einige Richtlinien befolgen, um sicherzustellen, dass Ihre Sendungen gut funktionieren. Informationen zu häufigen Problemen, die bei Sendungen auftreten können, sind ebenfalls verfügbar, damit Sie Ihre Sendungen effizient ausführen können.
+### Zustellbarkeits-Monitoring {#deliverability-monitoring}
 
+#### Installation des Zustellbarkeitspakets {#deliverability-package}
+
+Diese Funktion ist über ein dediziertes Package in Adobe Campaign verfügbar. Damit Sie es verwenden können, muss dieses Package installiert sein. Starten Sie nach Abschluss des Vorgangs den Server neu, damit das Package berücksichtigt wird.
+
+* Für gehostete und hybride Clients wird das **Zustellbarkeits-Monitoring** auf Ihrer Instanz vom technischen Support und von Beratern von Adobe konfiguriert. Weiterführende Informationen dazu erhalten Sie von Ihrem Adobe-Kundenbetreuer.
+
+* Bei On-Premise-Installationen müssen Sie das Package **[!UICONTROL Zustellbarkeits-Monitoring (Email Deliverability)]** über das Menü **[!UICONTROL Tools]** > **[!UICONTROL Erweitert]** > **[!UICONTROL Package-Import]** installieren. Weitere Informationen hierzu finden Sie unter [Installieren von Campaign Classic-Standardpaketen](../../installation/using/installing-campaign-standard-packages.md).
+
+#### Zustellbarkeits-Workflow {#deliverability-workflow}
+
+In Adobe Campaign Classic wird das **Zustellbarkeits-Monitoring** über den Workflow **[!UICONTROL Zustellbarkeit]** verwaltet. Er wird standardmäßig auf allen Instanzen installiert und ermöglicht es Ihnen, die Liste der Regeln für die Bounce-Message-Qualifizierung, die Liste der Domains und die Liste der MXs zu initialisieren. Sobald das Package **[!UICONTROL Zustellbarkeits-Monitoring (Email Deliverability)]** installiert ist, wird dieser Workflow nächtlich ausgeführt, um die Regelliste regelmäßig zu aktualisieren und die Zustellbarkeit der Plattform aktiv zu verwalten.
+
+**Das Zustellbarkeitspaket bietet Ihnen Zugriff auf:**
+
+* Den [Inbox Rendering-Bericht](inbox-rendering.md), mit dem Sie Ihre Nachrichten auf gängigen E-Mail-Clients als Vorschau anzeigen können, um Inhalte und Reputation zu überprüfen.
+* Übersicht über die Nachrichtenqualität (Zustellung in der Inbox, Spam).
+
+#### Monitoring-Tools {#monitoring-tools}
+
+**Bei On-Premise** Installationen können Sie die folgenden Überwachungs-Tools verwenden:
+
+* Der **[!UICONTROL Versanddurchsatz]**-Bericht bietet einen Überblick über den Durchsatz der gesamten Plattform für einen bestimmten Zeitraum. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../reporting/using/global-reports.md#delivery-throughput).
+* Bei jedem Versand wird ein Bericht mit Versandstatistiken für die verschiedenen Internet-Dienstanbieter (ISPs) erstellt. Es werden verschiedene Datenqualitäts- und Reputationsmetriken angezeigt, die sich auf die Zustellbarkeit auswirken können, einschließlich der folgenden Zahlen:
+   * **[!UICONTROL Hardbounces]** geben Auskunft über die Datenqualität. Diese Zahl sollte unter 2 % liegen.
+   * **[!UICONTROL Softbounces]** geben Auskunft über die Reputation. Diese Zahl sollte bei keinem ISP über 10 % liegen.
+
+  Lesen Sie diesbezüglich auch den Abschnitt [Versandstatistiken](../../reporting/using/global-reports.md#delivery-statistics).
+
+#### Richtlinien für das Überwachen {#monitoring-guidelines}
+
+**Für On-Premise** Installationen finden Sie hier einige zusätzliche Richtlinien zur Überwachung der Zustellbarkeit:
+
+* Prüfen Sie regelmäßig den [Versanddurchsatz](../../reporting/using/global-reports.md#delivery-throughput) für die gesamte Plattform, um festzustellen, ob er der ursprünglichen Einstellung entspricht.
+* Achten Sie darauf, dass [weitere Zustellversuche](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure) in den Versandvorlagen korrekt eingerichtet sind (30 Minuten für das Versuchsintervall und mehr als 20 weitere Versuche).
+* Prüfen Sie regelmäßig, ob das [Bounce](understanding-delivery-failures.md#bounce-mail-management)-Postfach zugänglich ist, und sorgen Sie dafür, dass die Gültigkeit des Kontos nicht abläuft.
+* Prüfen Sie, ob die einzelnen Versanddurchsätze (über das [ Versand-Dashboard](delivery-dashboard.md) abrufbar) der Gültigkeit des Versandinhalts entsprechen (&quot;Flash Sales&quot; zum Beispiel sollten innerhalb von Minuten, nicht von Tagen zugestellt werden).
+* Wenn der Versand in Schüben erfolgt, stellen Sie sicher, dass genügend Zeit vorhanden ist, damit ein Schub fertiggestellt werden kann, bevor der nächste beginnt.
+* Prüfen Sie, ob die Anzahl der Fehler und der neuen [Quarantänen](understanding-quarantine-management.md) der anderer Sendungen entspricht.
+* Prüfen Sie in den [Versandlogs](delivery-dashboard.md#delivery-logs-and-history) sorgfältig die Art der hervorgehobenen Fehler (Blockierungsliste, DNS-Probleme, Anti-Spam-Regeln usw.).
+
+### Fehlerbehebung {#delivery-troubleshooting}
+
+Bei Problemen mit Sendungen in (Hybrid-/On-Premise **-Bereitstellungen können spezifische Aktionen** werden:
+
+* [Probleme mit der Zustellbarkeit](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
+* [Probleme mit der Bildanzeige](../../production/using/image-display-issues.md)
+* [Performance-Probleme beim Versand](delivery-performances.md)
+* [Probleme mit temporären Dateien](../../production/using/temporary-files.md) – *nur On-Premise-Kunden*
+
+## Allgemeine Themen zur Überwachung
+
+**Überwachen Ihrer Sendungen:**
+
+* [Überwachen Ihrer Sendungen in der Campaign-Benutzeroberfläche](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} (Dokumentation zu Campaign v8)
 * [Versand-Performance und Best Practices](delivery-performances.md)
-* [Fehlerbehebung beim Versand](delivery-troubleshooting.md)
+* [Fehlgeschlagene Sendungen analysieren](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (Campaign v8-Dokumentation - umfassende Anleitung für v7 und v8)
 
-<img src="assets/do-not-localize/icon_failure.svg" width="60px">
+**v7-spezifische Konfiguration:**
 
-**Fehlgeschlagene Sendungen**
+* [Konfiguration der Bounce-](understanding-delivery-failures.md)-Verwaltung (v7 Hybrid/On-Premise)
+* [Quarantäneverwaltung](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (Campaign v8-Dokumentation - umfassendes Handbuch für v7 und v8)
+* [Quarantänekonfiguration](understanding-quarantine-management.md) (v7 Hybrid/On-Premise)
 
-Wenn einem Profil eine Nachricht nicht zugestellt werden kann, sendet der Remote-Server automatisch eine Fehlermeldung, die von der Adobe Campaign-Plattform erfasst und ausgewertet wird, um festzustellen, ob die E-Mail-Adresse oder Telefonnummer unter Quarantäne gestellt werden soll.
+**Nachrichten verfolgen:**
 
-[Fehlgeschlagene Sendungen zu verstehen](understanding-delivery-failures.md) ist wichtig, um Ihre Marketing-Kampagnen zu verbessern.
+* [Erste Schritte zum Tracking von Nachrichten](about-message-tracking.md)
 
-<img src="assets/do-not-localize/icon_quarantine.svg" width="60px">
+## Verwandte Themen
 
-**Funktionsweise der Quarantäneverwaltung**
-
-Adobe Campaign verwaltet eine Liste von unter Quarantäne gestellten Adressen. Empfänger, deren Adressen unter Quarantäne gestellt wurden, werden bei der Versandanalyse standardmäßig ausgeschlossen und gehören nicht zur Zielgruppe.
-
-In [diesem Abschnitt](understanding-quarantine-management.md) finden Sie Informationen zum Identifizieren und Verwalten von unter Quarantäne stehenden Adressen und erhalten weitere Informationen über die Bedingungen, die erfüllt werden müssen, um eine Adresse unter Quarantäne zu stellen.
+* [Versandstatus](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"} (Dokumentation zu Campaign v8)

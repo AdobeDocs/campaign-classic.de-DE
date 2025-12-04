@@ -1,132 +1,36 @@
 ---
 product: campaign
-title: Versand-Dashboard
-description: Erfahren Sie mehr darüber, wie Sie Ihre Sendungen mit dem Versand-Dashboard überwachen können
-badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
+title: Überwachen von Sendungen in der Campaign-Benutzeroberfläche
+description: Erfahren Sie, wie Sie auf die Liste der Sendungen zugreifen und das Versand-Dashboard verwenden können, um Ihre Sendungen zu überwachen
 feature: Monitoring
 role: User, Developer
 exl-id: 44ecc8c6-6584-43eb-96b4-7d8463053123
-source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
+source-git-commit: eac670cd4e7371ca386cee5f1735dc201bf5410a
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '555'
+ht-degree: 59%
 
 ---
 
-# Versand-Dashboard {#delivery-dashboard}
-
-
-Im **Versand-Dashboard** können Sie Sendungen beobachten und etwaige Probleme beim Nachrichtenversand erkennen.
-
-Sie können Informationen zu einem Versand abrufen und bei Bedarf bearbeiten. Beachten Sie, dass nach Abschluss des Versands der Inhalt der einzelnen Tabs nicht mehr verändert werden kann und nur zur Ansicht zur Verfügung steht.
-
-Die folgenden Informationen können Sie mit den verschiedenen Tabs im Dashboard überwachen:
-
-* [Versandzusammenfassung](#delivery-summary)
-* [Versandberichte](#delivery-reports)
-* [Versandlogs, Mirrorseiten, Ausschlüsse](#delivery-logs-and-history)
-* [Versand-Trackinglogs und -Verlauf](#tracking-logs)
-* [Versand-Rendering](#delivery-rendering)
-* [Versandverfolgung](#delivery-audit-)
-
-![](assets/s_ncs_user_del_details.png)
-
-**Verwandte Themen:**
-
-* [Ursachen von fehlgeschlagenen Sendungen](understanding-delivery-failures.md)
-* [Funktionsweise der Quarantäneverwaltung](understanding-quarantine-management.md)
-* [Best Practices beim Versand](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=de){target="_blank"}
-* [Verwalten der Zustellbarkeit](about-deliverability.md)
-
-## Versandzusammenfassung {#delivery-summary}
-
-Die Registerkarte **[!UICONTROL Zusammenfassung]** enthält die Merkmale des Versands: Versandstatus, verwendeter Kanal, Absenderinformationen, Betreff, Informationen zur Ausführung.
-
-## Versandberichte {#delivery-reports}
-
-Über den Link **[!UICONTROL Berichte]**, auf den Sie über den Tab **[!UICONTROL Zusammenfassung]** zugreifen können, können Sie eine Berichtserie zur Versandaktion anzeigen: allgemeiner Versandbericht, detaillierter Bericht, Versandbericht, Verteilung von fehlgeschlagenen Nachrichten, Öffnungsrate, Klicks und Transaktionen usw.
-
-Der Inhalt dieses Tabs kann entsprechend Ihren Anforderungen konfiguriert werden. Weitere Informationen zu Versandberichten finden Sie in [diesem Abschnitt](../../reporting/using/delivery-reports.md).
-
-![](assets/delivery-report.png)
-
-## Versandlogs, -verlauf und -ausschlüsse {#delivery-logs-and-history}
-
-Der **[!UICONTROL Versand]**-Tab zeigt die Versandlogs, d. h. die Liste der Zustellversuche, und zeigt für jeden Empfänger den Status des Versands sowie die entsprechenden Nachrichten an.
-
-Sie haben die Möglichkeit, beispielsweise nur fehlgeschlagene Zustellversuche anzuzeigen oder die Empfänger, die in Quarantäne gekommen sind. Klicken Sie hierfür auf die Schaltfläche **[!UICONTROL Filter]** und wählen Sie **[!UICONTROL Nach Status]**. Wählen Sie nun den gewünschten Status aus der Dropdown-Liste aus. Auf [dieser Seite](delivery-statuses.md) werden die unterschiedlichen Status beschrieben.
+# Überwachen von Sendungen in der Campaign-Benutzeroberfläche {#delivery-dashboard}
 
 >[!NOTE]
 >
->Die Liste mit den Versandlogs kann wie jede beliebige Liste im Campaign Classic angepasst werden. Sie können beispielsweise eine Spalte hinzufügen, um zu erfahren, welche IP-Adresse die einzelnen E-Mails in einem Versand gesendet hat. Weitere Informationen hierzu finden Sie im Anwendungsfall in [diesem Abschnitt](#use-case).
+>Eine umfassende Anleitung zum Zugriff auf die Versandliste und zur Verwendung des Versand-Dashboards finden Sie in der Dokumentation zu [ v8 ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard). Diese Inhalte gelten für Benutzende von Campaign Classic v7 und Campaign v8.
+>
+>Auf dieser Seite werden **Campaign Classic v7-spezifische Anpassungen** Hybrid- und On-Premise-Bereitstellungen dokumentiert.
 
-![](assets/s_ncs_user_delivery_delivery_tab.png)
+Die Überwachung Ihrer Sendungen ist wichtig, um sicherzustellen, dass Ihre Kampagnen effizient sind und Ihre Kunden erreichen.
 
-Mit dem Link **[!UICONTROL Mirrorseite für diese Nachricht anzeigen...]** können Sie die Mirrorseite für den Inhalt des aus der Liste ausgewählten Versands in einem neuen Fenster anzeigen.
+Umfassende Informationen zum Zugriff auf die Versandliste, zur Verwendung der Registerkarten des Versand-Dashboards und zur Überwachung Ihrer Sendungen finden Sie in der Dokumentation [Campaign v8-Sendungen überwachen in der Benutzeroberfläche von Campaign](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}.
 
-Die Mirrorseite steht nur für Sendungen zur Verfügung, für die HTML-Inhalte definiert wurden. Weiterführende Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/mirror-page.html?lang=de){target="_blank"}.
+## Versandlogs anpassen {#use-case}
 
-![](assets/s_ncs_user_wizard_miror_page_link.png)
-
-## Versand-Trackinglogs und -Verlauf {#tracking-logs}
-
-Auf der Registerkarte **[!UICONTROL Tracking]** wird der Tracking-Verlauf für den vorliegenden Versand angezeigt. Auf dieser Registerkarte werden Tracking-Daten zu den gesendeten Nachrichten angezeigt, einschließlich aller URLs, die von Adobe Campaign getrackt werden. Die Tracking-Daten werden stündlich aktualisiert.
+Bei Hybrid-/On-Premise-Bereitstellungen von **Campaign Classic v7** Sie Versandlogs anpassen, indem Sie Schemata erweitern. In diesem Abschnitt wird beschrieben, wie Sie die IP-Adressen der Absender zu den Versandlogs hinzufügen.
 
 >[!NOTE]
 >
->Wenn das Tracking für einen Versand nicht aktiviert ist, wird diese Registerkarte nicht angezeigt.
-
-Die Tracking-Konfiguration erfolgt im entsprechenden Schritt im Versandassistenten. Siehe [Getrackte Links konfigurieren](how-to-configure-tracked-links.md).
-
-Interpretationen der **[!UICONTROL Trackingdaten]** finden Sie in den Versandberichten. Weitere Informationen finden Sie [in diesem Abschnitt](../../reporting/using/delivery-reports.md).
-
-![](assets/s_ncs_user_delivery_tracking_tab.png)
-
-## Rendern des Posteingangs {#delivery-rendering}
-
-Der Tab **[!UICONTROL Inbox Rendering]** ermöglicht es Ihnen, eine Vorschau der Nachricht in den verschiedenen Kontexten anzuzeigen, in denen sie empfangen werden kann, und die Kompatibilität mit gängigen Desktops und Anwendungen zu überprüfen.
-
-So können Sie sicherstellen, dass Ihre Nachricht den Empfängern in unterschiedlichen Webclients, Webmails und Geräten optimal dargestellt wird.
-
-Weitere Informationen zum Inbox Rendering finden Sie auf [dieser Seite](inbox-rendering.md).
-
-![](assets/s_tn_inbox_rendering_tokens.png)
-
-## Versandverfolgung {#delivery-audit-}
-
-Der Tab **[!UICONTROL Audit]** enthält das Versandlog und alle Meldungen zu den Testsendungen.
-
-Mit der Schaltfläche **[!UICONTROL Aktualisieren]** können Sie die Daten aktualisieren. Verwenden Sie die Schaltfläche **[!UICONTROL Filter]**, um einen Filter für die Daten zu definieren.
-
-Eventuelle Fehler oder Warnmeldungen werden durch spezifische Symbole hervorgehoben. Weitere Informationen finden Sie in diesem Abschnitt der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html?lang=de){target="_blank"}.
-
-Eine Unter-Registerkarte listet die durchgeführten **[!UICONTROL Testsendungen]** auf.
-
-![](assets/s_ncs_user_delivery_log_tab.png)
-
-Sie können die Anzeige in diesem Fenster (wie auch in den Registerkarten **[!UICONTROL Versand]** bzw. **[!UICONTROL Tracking]**) anpassen und die Spalten auswählen, die angezeigt werden sollen. Klicken Sie hierfür auf das Symbol **[!UICONTROL Liste konfigurieren]** in der rechten unteren Ecke des Bildschirms. Weiterführende Informationen zur Listenanzeige finden Sie in [diesem Abschnitt](../../platform/using/adobe-campaign-workspace.md#configuring-lists).
-
-## Synchronisation des Versand-Dashboards {#delivery-dashboard-synchronization}
-
-Im Versand-Dashboard können Sie anhand der verarbeiteten Nachrichten und der Versandlogs überprüfen, ob Ihr Versand erfolgreich durchgeführt wurde.
-
-Manche Indikatoren oder Status können falsch oder nicht aktuell sein. Gehen Sie zur Behebung dieses Problems wie folgt vor:
-
-* Wenn der Versandstatus falsch angezeigt wird, vergewissern Sie sich, dass alle nötigen Validierungen für diesen Versand durchgeführt wurden und die Workflows **[!UICONTROL operationMgt]** und **[!UICONTROL deliveryMgt]** fehlerfrei ablaufen. Dieses Problem kann auch auftreten, wenn vom Versand eine Affinität verwendet wird, die in der Sendeinstanz nicht konfiguriert wurde.
-
-* Wenn Ihre Versandindikatoren noch null anzeigen und eine Mid-Sourcing-Konfiguration verwendet wird, überprüfen Sie den technischen Workflow **[!UICONTROL Mid-Sourcing (Versandzähler)]**. Starten Sie ihn, wenn sein Status nicht **[!UICONTROL Gestartet]** lautet. Sie können dann die Indikatoren neu berechnen lassen, indem Sie mit der rechten Maustaste den entsprechenden Versand im Adobe Campaign-Explorer und danach **[!UICONTROL Aktionen]** > **[!UICONTROL Sende- und Berichtindikatoren neu berechnen...]** auswählen. Weiterführende Informationen zu Tracking-Indikatoren finden Sie in diesem [Abschnitt](../../reporting/using/delivery-reports.md#tracking-indicators).
-
-* Wenn Ihr Versandzähler nicht die Anzahl Ihrer Sendungen anzeigt, lassen Sie die Indikatoren neu berechnen, indem Sie mit der rechten Maustaste im Adobe Campaign-Explorer den entsprechenden Versand und danach **[!UICONTROL Aktionen]** > **[!UICONTROL Sende- und Berichtindikatoren neu berechnen...]** auswählen, um eine neue Synchronisation durchzuführen. Weiterführende Informationen zu Tracking-Indikatoren finden Sie in diesem [Abschnitt](../../reporting/using/delivery-reports.md#tracking-indicators).
-
-* Wenn Ihr Versandzähler nicht auf dem aktuellen Stand für Mid-Sourcing-Bereitstellungen ist, vergewissern Sie sich, dass der technische Workflow **[!UICONTROL Mid-Sourcing (Versandzähler)]** läuft. Weiterführende Informationen hierzu finden Sie auf [dieser Seite](../../installation/using/mid-sourcing-deployment.md).
-
-Sie können Ihre Sendungen auch mithilfe unterschiedlicher Berichte über das Versand-Dashboard nachverfolgen. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../reporting/using/delivery-reports.md).
-
-## Anwendungsfall: Hinzufügen der IP-Adressen der Absender zu den Logs {#use-case}
-
-In diesem Abschnitt erfahren Sie, wie Sie den Versandlogs Informationen über die IP-Adresse hinzufügen, die die entsprechende E-Mail in einem Versand gesendet hat.
-
->[!NOTE]
+>Diese Anpassung erfordert Schemaerweiterungsfunktionen, die in On-Premise-Bereitstellungen verfügbar sind. Campaign v8 Managed Cloud Services-Benutzer sollten sich an die Adobe-Kundenunterstützung wenden, um Protokollfelder für benutzerdefinierte Sendungen zu erhalten.
 >
 >Diese Änderung wird unterschiedlich ausgeführt, je nachdem, ob Sie eine einzelne Instanz oder eine Mid-Sourcing-Instanz verwenden. Stellen Sie vor der Änderung sicher, dass Sie mit der E-Mail sendenden Instanz verbunden sind.
 
@@ -208,3 +112,12 @@ Rufen Sie dazu die Versandlogs auf und fügen Sie die Spalte &quot;IP-Kennung&qu
 Im Tab **[!UICONTROL Versand]** sollten Sie nach den Änderungen Folgendes sehen:
 
 ![](assets/logs-with-ip.png)
+
+## Verwandte Themen
+
+* [Überwachen von Sendungen in der Campaign-Benutzeroberfläche](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} (Dokumentation zu Campaign v8)
+* [Versandstatus](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"} (Dokumentation zu Campaign v8)
+* [Fehlgeschlagene Sendungen analysieren](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (Campaign v8-Dokumentation - umfassende Anleitung für v7 und v8)
+* [Quarantäneverwaltung](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (Campaign v8-Dokumentation - umfassendes Handbuch für v7 und v8)
+* [Bounce-Message-Konfiguration](understanding-delivery-failures.md) (v7 Hybrid/On-Premise)
+* [Quarantänekonfiguration](understanding-quarantine-management.md) (v7 Hybrid/On-Premise)

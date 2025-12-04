@@ -2,55 +2,61 @@
 product: campaign
 title: Best Practices für die Versand-Performance
 description: Erfahren Sie mehr über die Versand-Performance und die entsprechenden Best Practices
-badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Deliverability
 role: User, Developer
 exl-id: cc793d7b-0a26-4a75-97ed-d79c87d9b3b8
-source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
+source-git-commit: eac670cd4e7371ca386cee5f1735dc201bf5410a
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '362'
+ht-degree: 6%
 
 ---
 
 # Best Practices für die Versand-Performance {#delivery-performances}
 
-Wir empfehlen, die folgenden Richtlinien zu befolgen, um sicherzustellen, dass Ihre Sendungen gut funktionieren, sowie die angegebenen Prüfungen durchzuführen, wenn Sie auf Versandprobleme stoßen.
+>[!NOTE]
+>
+>Eine umfassende Anleitung zur Versandleistung und zu Best Practices finden Sie auf der Seite [Best Practices für den Versand in Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices) . Diese Inhalte gelten für Benutzende von Campaign Classic v7 und Campaign v8.
+>
+>Auf dieser Seite werden **Campaign Classic v7-spezifische Leistungskonfigurationen** Hybrid- und On-Premise-Bereitstellungen dokumentiert.
 
-**Verwandte Themen:**
+Umfassende Best Practices zur Versandleistung, Plattformoptimierung, Quarantäneverwaltung, Datenbankwartung und Planungsempfehlungen finden Sie in der [ zu Best Practices für den Versand in Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"}.
 
-* [Versand-Dashboard](delivery-dashboard.md)
-* [Fehlerbehebung beim Versand](delivery-troubleshooting.md)
-* [Über die Zustellbarkeit](about-deliverability.md)
+## Leistungsoptimierung {#best-practices-performance}
 
-## Best Practices zur Performance-Erhaltung {#best-practices-performance}
+Bei Hybrid-/On-Premise-Bereitstellungen von **Campaign Classic v7** die folgenden Datenbank- und Infrastrukturoptimierungen die Versandleistung verbessern:
 
-* Bewahren Sie auf der Instanz keine fehlgeschlagenen Sendungen auf, da dadurch temporäre Tabellen gespeichert werden, was wiederum die Performance beeinträchtigt.
+### Datenbankoptimierung
 
-* Entfernen Sie nicht mehr benötigte Sendungen.
+**Indexadressen**, um die Leistung der in der Anwendung verwendeten SQL-Abfragen zu optimieren. Ein Index kann über das Hauptelement des Datenschemas deklariert werden. Diese Optimierung erfordert den direkten Datenbankzugriff und die Schemaanpassung, die in On-Premise-Bereitstellungen verfügbar sind.
 
-* Inaktive Empfänger in den letzten 12 Monaten werden aus der Datenbank entfernt, um die Adressenqualität zu erhalten.
+### Infrastrukturoptimierung
 
-* Planen Sie nicht die gleichzeitige Durchführung umfangreicher Sendungen. In einem Zeitraum von 5 bis 10 Minuten wird die Last gleichmäßig über das System verteilt. Koordinieren Sie die Planung von Sendungen mit anderen Team-Mitgliedern, um eine optimale Performance zu gewährleisten. Wenn der Marketing-Server viele verschiedene Aufgaben gleichzeitig ausführt, kann die Performance verlangsamt werden.
-
-* Halten Sie die Größe Ihrer E-Mails so gering wie möglich. Die empfohlene maximale Größe einer E-Mail beträgt ca. 35 KB. Die Größe eines E-Mail-Versands generiert eine bestimmte Menge an Volumen auf den sendenden Servern.
-
-* Große Sendungen wie Sendungen an über eine Million Empfänger benötigen Platz in den Versandwarteschlangen. Dies allein ist kein Problem für den Server, aber in Kombination mit Dutzenden von anderen großen Sendungen, die alle gleichzeitig ausgehen, kann es zu einer Versandverzögerung führen.
-
-* Durch Personalisierung in E-Mails werden Daten für jeden Empfänger aus der Datenbank abgerufen. Bei vielen Personalisierungselementen erhöht sich dadurch die Datenmenge, die zur Vorbereitung des Versands benötigt wird.
-
-* Indexieren von Adressen. Um die Performance der in der Anwendung verwendeten SQL-Abfragen zu optimieren, kann ein Index vom Hauptelement des Datenschemas deklariert werden.
+**Konfiguration großer Sendungen**: Sendungen an mehr als eine Million Empfänger benötigen Speicherplatz in den Versandwarteschlangen. Bei On-Premise-Installationen können die untergeordneten MTA-Elemente so konfiguriert werden, dass benutzerdefinierte Batch-Größen verarbeitet werden. Wenden Sie sich an Ihren Systemadministrator, um diese Einstellungen auf der Grundlage Ihrer Infrastrukturkapazität anzupassen.
 
 >[!NOTE]
 >
->ISPs würden Adressen nach einer Inaktivitätsphase deaktivieren. Bounce-Nachrichten werden an den Absender gesendet, um sie über diesen neuen Status zu informieren.
+>Für Benutzende von Campaign v8 Managed Cloud Services werden die Infrastrukturoptimierung und die MTA-Konfiguration von Adobe verwaltet. Siehe Best Practices beim Versand [ Campaign v8 ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"} Leistungsempfehlungen für Ihre -Bereitstellung.
 
-## Checkliste bei Versandproblemen {#performance-issues}
+## Wartung der Datenbank {#performance-issues}
 
-Bei mangelhafter Zustellbarkeit überprüfen Sie Folgendes:
+Bei **Hybrid-/On-Premise-Bereitstellungen von Campaign Classic v7** sich die Plattform- und Datenbankwartung direkt auf die Versandleistung aus.
 
-* **Die Versandgröße**: Größere Sendungen benötigen zur Ausführung länger. Untergeordnete MTA-Prozesse werden für Standard-Bündelgrößen konfiguriert. Diese sind für die meisten Instanzen ausreichend, müssen jedoch überprüft werden, wenn Sendungen immer zu langsam durchgeführt werden.
-* **Die Zielgruppe des Versands**: Die Versand-Performance kann durch Softbounce-Fehler beeinträchtigt werden, die entsprechend der Konfiguration der Neuversuche gehandhabt werden. Je größer die Anzahl der Fehler ist, desto mehr Neuversuche sind nötig.
-* **Die Gesamtlast der Plattform**: Wenn mehrere große Sendungen ausgeführt werden, kann die gesamte Plattform beeinträchtigt sein. Sie können auch die IP-Reputation und Probleme mit der Zustellbarkeit überprüfen. Weitere Informationen finden Sie in [diesem Abschnitt](about-deliverability.md) und im [Adobe-Handbuch mit den Best Practices zur Zustellbarkeit](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=de).
+Zu den regelmäßigen Wartungsaufgaben gehören:
 
-Auch die Wartung der Plattform und der Datenbank kann die Leistung beim Versand beeinträchtigen. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../production/using/database-performances.md).
+**Datenbankbereinigung**: Verwenden Sie den Datenbankbereinigungs-Workflow, um alte Versandlogs, Tracking-Daten und temporäre Tabellen zu entfernen. Schlechte Datenbankwartung kann die Versandvorbereitung und den Versand verlangsamen.
+
+**Überwachung der Datenbankleistung** Überwachen der Abfrageleistung, der Indexfragmentierung und der Tabellenstatistiken. Ausführliche Anleitungen finden Sie auf [dieser Seite](../../production/using/database-performances.md).
+
+**Technisches Workflow-Monitoring**: Stellen Sie sicher, dass alle technischen Workflows (insbesondere Bereinigungs-, Tracking- und Zustellbarkeits-Update-Workflows) fehlerfrei ordnungsgemäß ausgeführt werden.
+
+>[!NOTE]
+>
+>Benutzende von Campaign v8 Managed Cloud Services überwachen und verwalten die Datenbankwartung und die technischen Workflows von Adobe. Konzentrieren Sie sich auf die versandspezifische Überwachung, wie in der Dokumentation [Überwachen von Sendungen in Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitoring-deliverability){target="_blank"} beschrieben.
+
+## Verwandte Themen
+
+* [Best Practices für den Versand](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"} (Dokumentation zu Campaign v8)
+* [Zustellbarkeit überwachen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitoring-deliverability){target="_blank"} (Dokumentation zu Campaign v8)
+* [Fehlerbehebung beim Versand](delivery-troubleshooting.md)
+* [Datenbankleistung](../../production/using/database-performances.md) (v7 Hybrid/On-Premise)

@@ -7,10 +7,10 @@ user-guide-title: Campaign Classic v7 – Handbuch
 user-guide-description: Produktdokumentation für Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 3fc803ba8b7e367e199ba47ef05ba64d5f801506
+source-git-commit: 93f32cda33acc53fb0e497f619be35c1c76ff85e
 workflow-type: tm+mt
-source-wordcount: '2748'
-ht-degree: 100%
+source-wordcount: '2692'
+ht-degree: 99%
 
 ---
 
@@ -40,17 +40,8 @@ ht-degree: 100%
    + [Campaign-Connectoren](platform/using/about-connectors.md)
    + [Erstellen von Abfragen in Campaign](platform/using/about-queries-in-campaign.md)
    + Häufig gestellte Fragen {#faq}
-      + [Die häufigsten Fragen](platform/using/common-questions.md)
-      + [Globale Konzepte](platform/using/faq-key-concepts.md)
+      + [Häufig gestellte Fragen zu Campaign Classic](platform/using/faq-campaign-classic-v7.md)
       + [Build-Upgrade](platform/using/faq-build-upgrade.md)
-      + [Datenschutz](platform/using/privacy-faq.md)
-      + [Zielgruppen](platform/using/faq-audiences.md)
-      + [Erstellen von Nachrichten](platform/using/faq-designing.md)
-      + [Nachrichten senden](platform/using/faq-messages.md)
-      + [Workflows](platform/using/faq-workflows.md)
-      + [Konfiguration](platform/using/faq-campaign-config.md)
-      + [Berichte](platform/using/faq-reporting.md)
-      + [Entwicklung](platform/using/faq-developers.md)
    + [Glossar](platform/using/ac-glossary.md)
    + Datenschutz {#privacy}
       + [Datenschutz und Einverständniserklärung](platform/using/privacy-and-recommendations.md)
@@ -120,7 +111,6 @@ ht-degree: 100%
       + [Erstellen personalisierter Inhalte – AUSGEBLENDET](delivery/using/design-and-personalize.md)
       + [Definieren der richtigen Zielgruppe – AUSGEBLENDET](delivery/using/define-the-right-audience.md)
       + [Prüfen vor dem Senden – AUSGEBLENDET](delivery/using/check-before-sending.md)
-      + [Nachverfolgen und Überwachen– AUSGEBLENDET](delivery/using/track-and-monitor.md)
    + [Senden von E-Mails](delivery/using/about-email-channel.md)
    + Senden von E-Mails {#sending-emails}
       + [Erstellen eines E-Mail-Versands – AUSGEBLENDET](delivery/using/creating-an-email-delivery.md)
@@ -197,28 +187,15 @@ ht-degree: 100%
       + [Virales und Social-Media-Marketing](delivery/using/viral-and-social-marketing.md)
    + Überwachen von Sendungen {#monitoring-deliveries}
       + [Erste Schritte mit dem Überwachen des Versands](delivery/using/about-delivery-monitoring.md)
-      + [Auf die Liste der Sendungen zugreifen](delivery/using/list-of-deliveries.md)
-      + [Versand-Dashboard](delivery/using/delivery-dashboard.md)
+      + [Überwachen von Sendungen in der Campaign-Benutzeroberfläche](delivery/using/delivery-dashboard.md)
       + [Best Practices für die Versand-Performance](delivery/using/delivery-performances.md)
       + [Fehlerbehebung beim Versand](delivery/using/delivery-troubleshooting.md)
-      + [Versandstatus](delivery/using/delivery-statuses.md)
       + [Ursachen für das Fehlschlagen von Sendungen](delivery/using/understanding-delivery-failures.md)
       + [Funktionsweise der Quarantäneverwaltung](delivery/using/understanding-quarantine-management.md)
-      + Nachverfolgen von Nachrichten {#tracking-messages}
-         + [Über das Nachrichten-Tracking](delivery/using/about-message-tracking.md)
-         + [Getrackte Links konfigurieren](delivery/using/how-to-configure-tracked-links.md)
-      + Nachverfolgen von personalisierten Links {#tracking-personalized-links}
-         + [Erste Schritte mit dem Tracking personalisierter Links](delivery/using/tracking-personalized-links.md)
-         + [Tracking-URLs erkennen](delivery/using/detecting-tracking-urls.md)
-         + [Anweisungen zur Vorab-Bearbeitung für das Tracking](delivery/using/pre-processing-instructions.md)
-      + [Konfigurieren von URL-Tracking-Optionen](delivery/using/personalizing-url-tracking.md)
-      + [Auf Trackinglogs zugreifen](delivery/using/accessing-the-tracking-logs.md)
-      + [Tracking testen](delivery/using/testing-tracking.md)
-      + [Fehlerbehebung beim Tracking](delivery/using/tracking-troubleshooting.md)
+      + [Nachrichten-Tracking](delivery/using/about-message-tracking.md)
    + Verwaltung der Zustellbarkeit {#deliverability-management}
       + [Was ist Zustellbarkeit](delivery/using/about-deliverability.md)
       + [Steuern des Nachrichteninhalts](delivery/using/control-message-content.md)
-      + [Überwachen der Zustellbarkeit](delivery/using/monitoring-deliverability.md)
       + [Rendern des Posteingangs](delivery/using/inbox-rendering.md)
       + [SpamAssassin](delivery/using/spamassassin.md)
       + [Fehlerbehebung](delivery/using/deliverability-faq.md)

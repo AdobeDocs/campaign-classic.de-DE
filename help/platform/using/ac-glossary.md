@@ -6,10 +6,10 @@ feature: Overview
 role: User, Developer
 level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
-source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
+source-git-commit: 17ac1e0d68d2945b01aecc7c45fc5be7e6bd38af
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '6204'
+ht-degree: 99%
 
 ---
 
@@ -511,7 +511,7 @@ Weitere Informationen zu [Listen](../../platform/using/creating-and-managing-lis
 
 Der lokale Cache umfasst die Informationen, die lokal auf dem Computer des bzw. der Benutzenden gespeichert werden. Gecachte Daten werden von der Konsole verwendet, um den erforderlichen Traffic auf den Server zu reduzieren und die Performance zu verbessern. Durch das regelmäßige Löschen des lokalen Caches (über das Menü &quot;Datei&quot;) werden die gespeicherten Daten aktualisiert und die Performance und Stabilität verbessert.
 
-Weitere Informationen zum [lokalen Cache](../../platform/using/faq-campaign-config.md#perform-soft-cache-clear).
+Weitere Informationen zum [lokalen Cache](../../platform/using/faq-campaign-classic-v7.md#how-do-i-clear-console-cache).
 +++
 
 ## M – P {#sec-4}
@@ -1009,7 +1009,7 @@ Learn more about [Total database storage](../../workflow/using/about-workflows.m
 Der technische Tracking-Workflow ruft die Tracking-Daten ab, sobald der Versand ausgeführt und das Tracking aktiviert wurde.
 Diese Daten finden Sie auf der Registerkarte &quot;Tracking&quot; Ihres Versands. Dort finden Sie Informationen zu Öffnungsvorgängen und Klicks auf eine E-Mail sowie andere Interaktionen mit einer empfangenen Nachricht.
 
-Weitere Informationen zu [Trackinglogs](../../delivery/using/accessing-the-tracking-logs.md).
+Erfahren Sie mehr [Trackinglogs in Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/tracking-logs){target="_blank"} oder [v7-spezifischem Tracking](../../delivery/using/about-message-tracking.md).
 +++
 
 +++**Transaktionsnachrichten**

@@ -6,10 +6,10 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Deliverability
 role: User
 exl-id: f301b34c-244c-4279-b23f-8224ea8eedbe
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: ht
-source-wordcount: '656'
-ht-degree: 100%
+source-git-commit: b2b188ee3f202c247ceac1f59a49b7ad1771d537
+workflow-type: tm+mt
+source-wordcount: '663'
+ht-degree: 97%
 
 ---
 
@@ -79,9 +79,8 @@ Teilweise werden E-Mails von Providern automatisch als Spam eingestuft, wenn die
 
 Weiterführende Informationen hierzu finden Sie in den folgenden Abschnitten:
 
-* [Ursachen für das Fehlschlagen von Sendungen](understanding-delivery-failures.md)
-* [Funktionsweise der Quarantäneverwaltung](understanding-quarantine-management.md)
-* [Quarantäne vs. Blockierungsliste](understanding-quarantine-management.md#quarantine-vs-denylist)
+* [Fehlgeschlagene Sendungen analysieren](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (Campaign v8-Dokumentation - umfassendes Handbuch)
+* [Funktionsweise der Quarantäneverwaltung](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (umfassende Anleitung zu Campaign v8-Dokumentation)
 
 ### Verwenden von Tools zum Monitoring und Reporting
 
@@ -91,6 +90,5 @@ Mit Adobe Campaign können Sie die Leistung Ihrer Sendungen anhand einer Reihe i
 
 Weiterführende Informationen hierzu finden Sie in den folgenden Abschnitten:
 
-* [Überwachen der Zustellbarkeit](monitoring-deliverability.md)
 * [Erste Schritte bei der Überwachung eines Versands](about-delivery-monitoring.md)
 * [Erste Schritte mit den integrierten Berichten von Campaign](../../reporting/using/about-campaign-built-in-reports.md)

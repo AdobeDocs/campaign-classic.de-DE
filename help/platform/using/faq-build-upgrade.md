@@ -1,21 +1,26 @@
 ---
 product: campaign
-title: Häufig gestellte Fragen zum Build-Upgrade
-description: Häufige Fragen im Zusammenhang mit Campaign-Build-Upgrades
+title: Häufig gestellte Fragen zur Build-Aktualisierung
+description: Häufige Fragen zu Build-Upgrades für Campaign Classic v7
 feature: Upgrade, Troubleshooting
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
-source-git-commit: f39dc6077a7ddc3fb9b53d4082c08e65e7683f10
+source-git-commit: 295e3596d9291cbcc55e2d264309141526c3806b
 workflow-type: tm+mt
-source-wordcount: '2029'
-ht-degree: 100%
+source-wordcount: '2069'
+ht-degree: 97%
 
 ---
 
-# Häufig gestellte Fragen zum Build-Upgrade {#build-upgrade-faq}
+# Häufig gestellte Fragen zur Build-Aktualisierung {#build-upgrade-faq}
 
+In diesen häufig gestellten Fragen werden Fragen zu Build-Upgrades für Campaign Classic v7 behandelt, insbesondere für On-Premise- und Hybridbereitstellungen.
+
+>[!NOTE]
+>
+>Umfassende Antworten auf häufig gestellte Fragen zu Campaign zu Workflows, Sendungen, Audiences und mehr finden Sie in den häufig gestellten Fragen zu [Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}.
 
 Adobe Campaign wird regelmäßig aktualisiert. Wenn Sie unsere veröffentlichten [Versionshinweise](../../rn/using/rn-overview.md) kennen, wissen Sie wahrscheinlich, dass jedes Jahr im Schnitt zwei bis drei kleinere Versionen mit neuen Funktionen, Verbesserungen und Korrekturen herausgebracht werden. Zusätzlich veröffentlichen wir regelmäßig Builds, die ausschließlich Fehlerkorrekturen enthalten. Durch diese regelmäßige Bereitstellung von Updates soll sichergestellt werden, dass Sie stets die beste und neueste Version nutzen, sodass Ihre Umgebung sicher ist und Ihre Zufriedenheit bei der Nutzung unserer Produkte laufend steigt.
 
@@ -131,7 +136,7 @@ Wenn Message Center (RT) aktualisiert wird, werden keine E-Mails von dieser Inst
 
 ## Werden Workflows und Sendungen weiterhin durchgeführt?
 
-Nein. Während des Build-Upgrades werden sowohl Workflows als auch Mail-Dienste angehalten. Das bedeutet, dass weder Workflows noch Sendungen durchgeführt werden. Diese werden fortgesetzt, sobald das System wieder gestartet wurde. Adobe empfiehlt jedoch, dass alle kritischen Pfad-Workflows nach dem Upgrade überprüft werden, um sicherzustellen, dass sie aktiv und fehlerfrei sind.
+Nein. Während des Build-Upgrades werden sowohl Workflows als auch Mail-Dienste angehalten. Das bedeutet, dass weder Workflows noch Sendungen durchgeführt werden. Diese werden fortgesetzt, sobald das System neu gestartet wurde. Adobe empfiehlt jedoch, dass alle kritischen Pfad-Workflows nach dem Upgrade überprüft werden, um sicherzustellen, dass sie aktiv und fehlerfrei sind.
 
 ## Funktionieren meine Tracking-Links während des Upgrades?
 

@@ -2,95 +2,70 @@
 product: campaign
 title: Fehlerbehebung beim Versand
 description: Erfahren Sie mehr über die Versand-Performance und wie Sie Probleme beim Versand-Monitoring beheben können
-badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Monitoring, Deliverability, Troubleshooting
 role: User
 exl-id: 37b1d7fb-7ceb-4647-9aac-c8a80495c5bf
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: ht
-source-wordcount: '817'
-ht-degree: 100%
+source-git-commit: eac670cd4e7371ca386cee5f1735dc201bf5410a
+workflow-type: tm+mt
+source-wordcount: '334'
+ht-degree: 16%
 
 ---
 
 # Fehlerbehebung beim Versand {#delivery-troubleshooting}
 
-In diesem Abschnitt werden häufig auftretende Probleme beim Versand sowie deren Fehlerbehebung aufgeführt.
+>[!NOTE]
+>
+>Eine umfassende Anleitung zur Fehlerbehebung beim Versand finden Sie in der Dokumentation zu Campaign v8 , die sowohl für Benutzende von Campaign Classic v7 als auch Campaign v8 gilt:
+>
+>* Häufige Versandfehler und -lösungen: [Fehlgeschlagene Sendungen verstehen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}
+>* Diagnose langsamer Sendungen: [Überwachen von Sendungen in der Campaign-Benutzeroberfläche](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}
+>* Best Practices für den Versand: [Best Practices für den Versand](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"}
+>
+>Auf dieser Seite wird die **Campaign Classic v7-spezifische Fehlerbehebung** Hybrid- und On-Premise-Bereitstellungen beschrieben.
 
-Befolgen Sie außerdem die auf [dieser Seite beschriebenen](delivery-performances.md) Best Practices und die Checkliste, um sicherzustellen, dass Ihre Sendungen gut funktionieren.
+## Fehlerbehebung {#v7-specific}
 
-**Verwandte Themen:**
+Bei Hybrid-/On-Premise-Bereitstellungen von **Campaign Classic v7** die folgenden Schritte zur Fehlerbehebung spezifisch für die von Ihnen verwaltete Infrastruktur:
 
-* [Versandstatus](delivery-statuses.md)
-* [Versand-Dashboard](delivery-dashboard.md)
-* [Ursachen von fehlgeschlagenen Sendungen](understanding-delivery-failures.md)
+### MX-Regelkonfiguration
 
-## Langsame Sendungen {#slow-deliveries}
+Wenn bei bestimmten ISPs Einschränkungsprobleme auftreten, müssen Sie möglicherweise Ihre MX-Regelkonfiguration überprüfen und anpassen. Weitere Informationen zu MX-Regeln und -Kontingenten finden Sie [diesem Abschnitt](../../installation/using/email-deliverability.md#about-mx-rules).
 
-Nach dem Klicken auf die Schaltfläche **[!UICONTROL Senden]** dauert der Versand länger als üblich. Dies kann unterschiedliche Ursachen haben:
+### Datenbankwartung für die Versandleistung
 
-* Einige E-Mail-Anbieter haben Ihre IP-Adressen möglicherweise auf eine Blockierungsliste gesetzt. In diesem Fall überprüfen Sie Ihre Broadlogs und konsultieren Sie [diesen Abschnitt](about-deliverability.md).
+Wenn der folgende Fehler in Mid-Sourcing-Bereitstellungen auftritt:
 
-* Ihr Versand könnte für eine rasche Verarbeitung zu groß sein. Dies kann passieren, wenn eine umfassende JavaScript-Personalisierung vorliegt oder die Versandgröße mehr als 60 KB beträgt. Unter [Best Practices beim Versand](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=de){target="_blank"} für Adobe Campaign v8 finden Sie weitere Informationen zu Inhaltsrichtlinien.
+```
+Error during the call of method 'AppendDeliveryPart' on the mid sourcing server: 'Communication error with the server: please check this one is correctly configured. Code HTTP 408 'Service temporarily unavailable'.
+```
 
-* Der Versand könnte im MTA (Message Transfer Agent) von Adobe Campaign gedrosselt worden sein. Dies kann folgende Ursachen haben:
+Die Ursache hängt mit Leistungsproblemen zusammen, bei denen die Marketing-Instanz zu viel Zeit mit dem Erstellen von Daten verbringt, bevor sie diese an den Mid-Sourcing-Server sendet.
 
-   * Nachricht in die Warteschlange gestellt (Meldung **[!UICONTROL Kontingente ausgeschöpft]**): Kontingente, die durch die in Campaign festgelegten deklarativen MX-Regeln angegebenen wurden, wurden ausgeschöpft. Weitere Informationen zu dieser Meldung finden Sie auf [dieser Seite](deliverability-faq.md). Weitere Informationen zu MX-Regeln finden Sie in [diesem Abschnitt](../../installation/using/email-deliverability.md#about-mx-rules).
+**Bei On-Premise** Installationen führen Sie einen Leerlauf durch und indizieren Sie die Datenbank neu. Weiterführende Informationen zur Wartung der Datenbank finden Sie in [diesem Abschnitt](../../production/using/recommendations.md).
 
-   * Nachricht in die Warteschlange gestellt (Fehlermeldung **[!UICONTROL dynamische Durchsatzkontrolle]**): Vom Campaign MTA wurden beim Sendeversuch an einen ISP Fehler entdeckt, weshalb der Versand verlangsamt wurde, um die Fehlerdichte zu verringern und zu vermeiden, dass die IP-Adresse auf eine Blockierungsliste gesetzt wird.
+Zusätzlich sollten Sie alle Workflows mit einer terminierten Aktivität und alle Workflows mit fehlgeschlagenem Status neu starten. Weitere Informationen finden Sie in [diesem Abschnitt](../../workflow/using/scheduler.md).
 
-* Durch einen Systemfehler wird möglicherweise verhindert, dass Server miteinander interagieren. Dadurch kann sich der gesamte Versandvorgang verlangsamen. Überprüfen Sie die Server, um sicherzustellen, dass keine Speicher- oder Ressourcenfehler vorliegen, die Campaign beispielsweise daran hindern können, Personalisierungsdaten abzurufen.
+### Überwachen technischer Workflows
 
-## Terminierte Sendungen {#scheduled-deliveries-}
+Stellen Sie bei On-Premise-Installationen sicher, dass alle technischen Workflows im Zusammenhang mit der Zustellbarkeit fehlerfrei ausgeführt werden:
 
-Wenn Sendungen nicht zum terminierten Zeitpunkt durchgeführt werden, kann die Ursache daran liegen, dass die Server für die Mid-Sourcing-Instanz und die Produktionsinstanz in unterschiedlichen Zeitzonen liegen.
+**Workflow zur Aktualisierung der Zustellbarkeit**: Aktualisiert die Regeln für die Bounce-Message-Qualifizierung und die Zustellbarkeitsindikatoren.
 
-Wenn beispielsweise die Mid-Sourcing-Instanz in der Zeitzone von Brisbane liegt und die Produktionsinstanz in der Zeitzone von Darwin, liegen die beiden Zeitzonen eine halbe Stunde voneinander entfernt. Im Auditprotokoll würden Sie dann sehen, dass ein Versand, dessen Produktion um 11:56 Uhr festgelegt ist, am Mid-Sourcing-Server um 12:26 Uhr terminiert wäre, was einen Unterschied von einer halben Stunde ergibt.
+**Tracking-Workflow**: Verarbeitet Tracking-Daten für gesendete Sendungen.
 
-## Status &quot;Fehlgeschlagen&quot; {#failed-status}
+**Datenbankbereinigungs-Workflow**: Bereinigt regelmäßig alte Versandlogs und temporäre Tabellen, um die Leistung aufrechtzuerhalten.
 
-Wenn der Status eines E-Mail-Versands **[!UICONTROL Fehlgeschlagen]** lautet, kann die Ursache an Problemen mit Gestaltungsbausteinen liegen. Gestaltungsbausteine können bei einem Versand Fehler verursachen, wenn beispielsweise das Schema nicht mit dem Versand-Mapping übereinstimmt.
+Überprüfen Sie den Workflow-Status **[!UICONTROL Administration]** > **** > **[!UICONTROL Technische Workflows]**.
 
-Versandlogs liefern wichtige Informationen über den Grund von fehlgeschlagenen Sendungen, wie z. B.:
+>[!NOTE]
+>
+>Für Benutzende von Campaign v8 Managed Cloud Services werden technische Workflows und die Infrastrukturüberwachung von Adobe verwaltet. Konzentrieren Sie sich auf den Versandinhalt und die Zielgruppenbestimmung, wie in der Dokumentation zu [ v8 ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}.
 
-* Bei Empfängernachrichten wird eine &quot;Unerreichbar&quot;-Fehlermeldung mit folgenden Informationen angezeigt:
+## Verwandte Themen
 
-  ```
-  Error while compiling script 'content htmlContent' line X: `[table]` is not defined. JavaScript: error while evaluating script 'content htmlContent
-  ```
-
-  Die Ursache für dieses Problem ist fast immer eine Personalisierung innerhalb des HTML-Codes, die versucht, eine Tabelle oder ein Feld aufzurufen, die bzw. das bei der vorangegangenen Zielgruppenbestimmung oder beim Zielgruppen-Mapping des Versands nicht definiert oder zugeordnet wurde.
-
-  Um dieses Problem zu beheben, müssen der Workflow und der Versandinhalt überprüft werden, um festzustellen, welcher Personalisierungsinhalt konkret die Tabelle aufrufen möchte und ob die Tabelle zugeordnet werden kann. Danach muss entweder der Aufruf dieser Tabelle in der HTML-Datei entfernt oder das Mapping mit dem Versand korrigiert werden.
-
-* Beim Mid-Sourcing-Bereitstellungsmodell kann die folgende Meldung in den Versandlogs angezeigt werden:
-
-  ```
-  Error during the call of method 'AppendDeliveryPart' on the mid sourcing server: 'Communication error with the server: please check this one is correctly configured. Code HTTP 408 'Service temporarily unavailable'.
-  ```
-
-  Die Ursache hierfür sind Performance-Probleme. Dieser Fehler tritt auf, wenn die Marketing-Instanz zu lange für die Datenerfassung benötigt, bevor diese an den Mid-Sourcing-Server gesendet werden.
-
-  Um dieses Problem zu beheben, wird empfohlen, einen Vacuum-Befehl und eine Neuindizierung der Datenbank durchzuführen. Weiterführende Informationen zur Wartung der Datenbank finden Sie in [diesem Abschnitt](../../production/using/recommendations.md).
-
-  Zusätzlich sollten Sie alle Workflows mit einer terminierten Aktivität und alle Workflows mit fehlgeschlagenem Status neu starten. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html?lang=de){target="_blank"}.
-
-* Wenn ein Versand fehlschlägt, kann der folgende Fehler in den Versandlogs angezeigt werden:
-
-  ```
-  DLV-XXXX The count of message prepared (123) is greater than the number of messages to send (111). Please contact support.
-  ```
-
-  Normalerweise bedeutet dieser Fehler, dass es in der E-Mail ein Personalisierungsfeld oder einen Gestaltungsbaustein gibt, der für einen Empfänger mehr als einen Datensatz abruft.
-
-  Um dieses Problem zu beheben, überprüfen Sie die verwendeten Personalisierungsdaten und danach den Zieldatensatz für die Empfänger, für deren Feld mehr als ein Eintrag vorhanden ist. Sie können vor der Versandaktivität auch die Aktivität **[!UICONTROL Deduplizierung]** im Zielgruppen-Workflow auswählen, damit immer nur ein einziges Personalisierungsfeld verwendet wird. Weitere Informationen zur Deduplizierung finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html?lang=de){target="_blank"}.
-
-* Manche Sendungen können fehlschlagen und eine &quot;Unerreichbar&quot;-Fehlermeldung mit folgenden Informationen anzeigen:
-
-  ```
-  Inbound email bounce (rule 'Auto_replies' has matched this bounce).
-  ```
-
-  Das bedeutet, dass der Versand zwar erfolgreich war, Adobe Campaign aber eine automatische Antwort vom Empfänger erhalten hat (z. B. eine &quot;Abwesend&quot;-Antwort), die den Regeln für eingehende E-Mails &quot;Auto_replies&quot; entspricht.
-
-  Die automatische Antwort-E-Mail wird von Adobe Campaign ignoriert und die Adresse des Empfängers wird nicht unter Quarantäne gestellt.
+* [Fehlgeschlagene Sendungen analysieren](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (Dokumentation zu Campaign v8)
+* [Best Practices für den Versand](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"} (Dokumentation zu Campaign v8)
+* [Überwachen von Sendungen in der Campaign-Benutzeroberfläche](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} (Dokumentation zu Campaign v8)
+* [Datenbankwartung](../../production/using/recommendations.md) (v7 Hybrid/On-Premise)
+* [E-Mail-Zustellbarkeit](../../installation/using/email-deliverability.md) (Hybrid/On-Premise von v7)

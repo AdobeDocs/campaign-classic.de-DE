@@ -2,75 +2,71 @@
 product: campaign
 title: Erste Schritte mit dem Tracking
 description: Weitere Informationen finden Sie in den allgemeinen Richtlinien zum Tracking in Adobe Campaign
-badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Monitoring, Email
 role: User
 exl-id: 43779505-9917-4e99-af25-b00a9d29a645
-source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
-workflow-type: ht
-source-wordcount: '685'
-ht-degree: 100%
+source-git-commit: ba53107ce06c0484070cbe0943ba439d33d5f710
+workflow-type: tm+mt
+source-wordcount: '1267'
+ht-degree: 64%
 
 ---
 
 # Erste Schritte zum Tracking von Nachrichten {#get-started-tracking}
 
+>[!IMPORTANT]
+>
+>Allgemeine **zum Tracking** die sowohl für Campaign Classic v7 als auch für Campaign v8 gelten, finden Sie in der Dokumentation [Campaign v8-Nachrichten-Tracking](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking){target="_blank"}:
+>
+>* [Konfigurieren getrackter Links](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracked-links){target="_blank"}
+>* [URL-Tracking-Optionen konfigurieren](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/url-tracking){target="_blank"}
+>* [Personalisierte Links verfolgen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/personalized-links){target="_blank"}
+>* [Zugriff auf Trackinglogs](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking-logs){target="_blank"}
+>* [Tracking testen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/testing-tracking){target="_blank"}
+>* [Tracking-Berichte](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/reporting/delivery-reports#tracking-indicators){target="_blank"}
+>
+>**Auf dieser Seite werden nur Campaign Classic v7-spezifische Tracking-Funktionen dokumentiert** in erster Linie für Hybrid- und On-Premise-Bereitstellungen.
 
+## Tracking-Funktionen
 
-Dank der Tracking-Funktionen können Sie mit Adobe Campaign die versendeten Nachrichten verfolgen und das Verhalten der Empfänger überprüfen: Öffnungen, Klicks auf Links, Abmeldungen usw.
+### Tracking-Konfiguration {#configure-tracking}
 
-Diese Informationen werden auf der Registerkarte **[!UICONTROL Tracking]** des Profils jedes Versandempfängers abgerufen. Auf dieser Registerkarte werden alle verfolgten URL-Links angezeigt, auf die der in der Liste ausgewählte Empfänger geklickt hat. Dies ist die Akkumulation aller URLs, die in den Sendungen verfolgt werden, die noch im Versandbildschirm vorhanden sind. Die Liste kann konfiguriert werden und enthält normalerweise die angeklickte URL, das Datum und die Uhrzeit des Klicks sowie das Dokument, in dem die URL gefunden wurde.
+Bei Campaign Classic v7 **Hybrid-/On-Premise** Bereitstellungen müssen Sie das Tracking auf Instanzebene konfigurieren, bevor Sie es verwenden können.
 
-Im **Versand-Dashboard** können Sie Sendungen überwachen und etwaige Probleme beim Nachrichtenversand erkennen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](delivery-dashboard.md).
-
-Das folgende Diagramm zeigt die Phasen des Dialogs zwischen Benutzenden und den verschiedenen Servern.
-
-![](assets/tracking-diagram.png)
-
-## Tracking konfigurieren {#configure-tracking}
-
-<img src="assets/do-not-localize/icon-configure.svg" width="60px">
+>[!NOTE]
+>
+>Für Campaign v8 Managed Cloud Services wird die Tracking-Konfiguration von Adobe durchgeführt.
 
 **Grundprinzip**
 
-Bevor Sie das Tracking verwenden, müssen Sie es zunächst für Ihre Instanz konfigurieren. [Weitere Informationen](../../installation/using/deploying-an-instance.md#operating-principle)
+Bevor Sie das Tracking verwenden, müssen Sie es zunächst für Ihre Instanz konfigurieren. Die Konfiguration muss auf den Adobe Campaign-Anwendungsservern und Webservern durchgeführt werden.
+
+In Campaign gibt es zwei Arten von Tracking:
+
+* **Webtracking**: Dieser Modus ermöglicht das Tracking von Besuchen auf Webseiten
+* **Nachrichten-Tracking**: In diesem Modus können Sie den Nachrichtenversand und das Empfängerverhalten verfolgen
+
+Der Tracking-Modus wird während der Installation ausgewählt. Bei On-Premise-Installationen muss die Tracking-Konfiguration auf Instanzebene definiert werden. [Weitere Informationen](../../installation/using/deploying-an-instance.md#operating-principle)
 
 **Tracking-Server**
 
-Für die Konfiguration von Tracking muss Ihre Instanz deklariert und bei dem/den Tracking-Server(n) registriert werden. [Weitere Informationen](../../installation/using/deploying-an-instance.md#tracking-server)
+Für die Konfiguration von Tracking muss Ihre Instanz deklariert und bei dem/den Tracking-Server(n) registriert werden. Der Tracking-Server wird verwendet, um Informationen über von Empfängern angeklickte URLs aufzuzeichnen und abzurufen.
+
+Bei On-Premise-Installationen ist der Tracking-Server normalerweise ein Webserver, auf dem die Adobe Campaign-Webanwendung ausgeführt wird. Die Tracking-Server-URL muss in Ihrer Instanzkonfiguration definiert werden. [Weitere Informationen](../../installation/using/deploying-an-instance.md#tracking-server)
 
 **Tracking speichern**
 
-Sobald das Tracking konfiguriert und Ihre URLs ausgefüllt sind, muss der Tracking-Server registriert werden. [Weitere Informationen](../../installation/using/deploying-an-instance.md#saving-tracking)
+Sobald das Tracking konfiguriert und Ihre URLs ausgefüllt sind, muss der Tracking-Server registriert werden. Die Registrierung ermöglicht es Adobe Campaign, Tracking-Informationen zu speichern und Berichte und Statistiken zu verfolgten Aktivitäten bereitzustellen.
 
-## Nachrichten-Tracking {#message-tracking}
+Bei On-Premise-Installationen werden Tracking-Informationen in der Datenbank gespeichert und über technische Workflows abgerufen. Der technische **Tracking**-Workflow verarbeitet und speichert die vom Weiterleitungs-Server erfassten Tracking-Daten. [Weitere Informationen](../../installation/using/deploying-an-instance.md#saving-tracking)
 
-<img src="assets/do-not-localize/icon-message-tracking.svg" width="60px">
-
-**Getrackte Links**
-
-Sie können den Empfang von Nachrichten und die Aktivierung der im Nachrichteninhalt eingefügten Links verfolgen, um das Verhalten der Empfänger besser zu verstehen. [Weitere Informationen](how-to-configure-tracked-links.md)
-
-**URL-Tracking**
-
-Tracking-Optionen können durch Aktivieren oder Deaktivieren von Tracking-URLs konfiguriert werden. [Weitere Informationen](personalizing-url-tracking.md)
-
-**Personalisierung getrackter Links**
-
-Mit den Tracking-Funktionen von Campaign Classic können Sie Links in E-Mails einfügen, die personalisiert werden können und das Tracking unterstützen. [Weitere Informationen](tracking-personalized-links.md)
-
-**Trackinglogs**
-
-Der technische Tracking-Workflow ruft die Tracking-Daten ab, sobald der Versand ausgeführt und das Tracking aktiviert wurde.
-Diese Daten finden Sie auf der Registerkarte &quot;Tracking&quot; Ihres Versands. [Weitere Informationen](accessing-the-tracking-logs.md)
-
-**Tracking testen**
-
-Bevor Sie Ihre Nachrichten mit Ihrem Tracking senden, können Sie das Tracking auf Ihrer Mirrorseite, in Ihren E-Mail-Protokollen und Links testen. [Weitere Informationen](testing-tracking.md)
-
-## Web-Anwendungs-Tracking {#web-application-tracking}
+### Web-Anwendungs-Tracking {#web-application-tracking}
 
 <img src="assets/do-not-localize/icon-web-app.svg" width="60px">
+
+>[!NOTE]
+>
+>**Das Webanwendungs-Tracking gilt speziell für Campaign Classic v7** und ist in Campaign v8 nicht verfügbar.
 
 **Web-Anwendung tracken**
 
@@ -80,44 +76,244 @@ Sie können auch Besuche auf Web-Anwendungsseiten mit Trackingtags verfolgen und
 
 Mit der Opt-Out-Funktion für das Web-Anwendungs-Tracking können Sie das Tracking des Web-Verhaltens von Endbenutzern stoppen, die sich gegen das Tracking ihres Verhaltens entschieden haben. Sie können ermöglichen, ein Banner in Web-Anwendungen oder Zielseiten anzuzeigen, damit Benutzer sich abmelden können. [Weitere Informationen](../../web/using/web-application-tracking-opt-out.md)
 
-## Tracking-Berichte {#tracking-reports}
-
-<img src="assets/do-not-localize/icon_monitor.svg" width="60px">
-
-**Tracking-Statistiken**
-
-Dieser Bericht enthält Statistiken zu Öffnungen, Klicks und Transaktionen und ermöglicht es Ihnen, die Marketing-Wirkung des Versands zu verfolgen. [Weitere Informationen](../../reporting/using/delivery-reports.md#tracking-statistics)
-
-**URLs und Clickstreams**
-
-Dieser Bericht zeigt die Rangfolge der infolge eines Versands besuchten Web-Seiten. [Weitere Informationen](../../reporting/using/delivery-reports.md#urls-and-click-streams)
-
-**Personen und Empfänger**
-
-Anhand dieses Beispiels können Sie den Unterschied beim Tracking zwischen einer Person/Personen und einem Empfänger in Adobe Campaign besser verstehen. [Weitere Informationen](../../reporting/using/person-people-recipients.md)
-
-**Tracking-Indikatoren**
-
-In diesem Bericht werden die Schlüsselindikatoren zum Tracking des Verhaltens der Empfänger beim Empfang der Sendung zusammengefasst, z. B. Öffnungsraten, Clickthrough-Raten und Clickstreams. [Weitere Informationen](../../reporting/using/delivery-reports.md#tracking-indicators)
-
-**Indikatorberechnung**
-
-In den verschiedenen Tabellen finden Sie nach Versandtyp geordnet die Liste der Indikatoren, die in Berichten verwendet werden, sowie ihre Berechnungsformeln. [Weitere Informationen](../../reporting/using/indicator-calculation.md)
-
 ## Fehlerbehebung beim Tracking {#tracking-troubleshooting}
 
 <img src="assets/do-not-localize/icon-troubleshooting.svg" width="60px">
 
-Die folgenden Tipps zur Fehlerbehebung helfen Ihnen, die häufigsten Probleme zu lösen, die bei der Verwendung von Tracking in Adobe Campaign Classic auftreten. Informationen zur erweiterten Fehlerbehebung finden Sie in [diesem Abschnitt](tracking-troubleshooting.md).
+Die folgenden Tipps zur Fehlerbehebung gelten für **Hybrid-/On-Premise-Bereitstellungen von Campaign Classic v7**. Einige Informationen gelten möglicherweise auch für On-Premise-Bereitstellungen von Campaign v8. Wenden Sie sich für Campaign v8 Managed Cloud Services an Ihren Adobe-Support-Mitarbeiter.
 
-* Überprüfen, ob der trackinglogd-Prozess ausgeführt wird
+Grundlegende Schritte zur Fehlerbehebung bei der Nachverfolgung in Campaign v8 finden Sie in der Dokumentation [Fehlerbehebung bei der Nachverfolgung in Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking-logs#troubleshooting){target="_blank"}.
 
-  Dieser Prozess liest aus dem gemeinsam genutzten IIS/Webserver-Speicher und schreibt die Weiterleitungsprotokolle.
+### Grundlegende Prüfungen {#basic-checks}
 
-  Sie können von der Startseite aus darauf zugreifen, indem Sie in Ihrer Instanz die Registerkarte &quot;Tracking&quot; auswählen. Sie können auch den folgenden Befehl für die Instanz ausführen: `<user>@<instance>:~$ nlserver pdump`
+**Vergewissern Sie sich, dass der trackingLogd-Prozess ausgeführt wird**
 
-  Wenn der trackinglogd-Prozess nicht in der Liste angezeigt wird, starten Sie ihn mit dem folgenden Befehl für die Instanz: `<user>@<instance>:~$ nlserver start trackinglogd`
+Dieser Prozess liest aus dem gemeinsam genutzten IIS/Webserver-Speicher und schreibt die Weiterleitungsprotokolle.
 
-* Überprüfen Sie, ob der technische Tracking-Workflow kürzlich ausgeführt wurde.
+Sie können auf der Startseite darauf zugreifen, indem Sie in Ihrer Instanz auf die Registerkarte Monitoring klicken. Sie können auch den folgenden Befehl für die Instanz ausführen: `<user>@<instance>:~$ nlserver pdump`
 
-  Sie finden den technischen Tracking-Workflow in den Ordnern &quot;Administration&quot; > &quot;Produktion&quot; > &quot;Technische Workflows&quot;. 
+Wenn der trackinglogd-Prozess nicht in der Liste angezeigt wird, starten Sie ihn mit dem folgenden Befehl für die Instanz: `<user>@<instance>:~$ nlserver start trackinglogd`
+
+**Vergewissern Sie sich, dass der technische Tracking-Workflow vor kurzem ausgeführt wurde**
+
+Sie finden den technischen Tracking-Workflow in den Ordnern &quot;Administration&quot; > &quot;Produktion&quot; > &quot;Technische Workflows&quot;. 
+
+### Erweiterte Fehlerbehebung {#advanced-troubleshooting}
+
++++Der Tracking-Workflow schlägt fehl. 
+
+>[!NOTE]
+>
+>Nur für Windows verfügbar
+
+Die beschädigte Trackinglog-Datei .../nl6/var/&lt;Instanzname>/redir/log/0x0000 log kann den Tracking-Workflow stoppen. Mit den folgenden Befehlen können Sie beschädigte Zeilen leicht erkennen und entfernen, um den Tracking-Workflow fortzusetzen. 
+
+**Ich weiß, in welcher Datei die beschädigte Zeile ist**
+
+In diesem Fall können Sie die beschädigten Zeilen in der Datei 0x00000000000A0000.log finden. Der gleiche Vorgang kann jedoch nacheinander auf eine Reihe von Dateien angewendet werden.
+
+```
+$ cd {install directory}/var/{instance name}/redir/log
+$ cat 0x00000000000A0000.log | sed -nE '/^[[:alnum:]]{2}x[[:alnum:]]*\t[0-9T:\.-]*\t[0-9a-fA-F]*\t[0-9a-fA-F]*\t[0-9a-fA-F]*\t[[:alnum:]]*\t[[:alnum:]-]*\t[[:print:]]*\t[[:print:]]*\t[[:print:]]*\t([0-9a-fA-F\.:]*|[0-9a-fA-F\.:]*\t[[:print:]]*|[0-9a-fA-F\.:]*,[[:print:]]*)$/!p'
+```
+
+Anschließend können Sie den Tracking-Workflow stoppen, die beschädigten Zeilen löschen und den Workflow neu starten.
+
+**Ich weiß nicht, in welcher Datei die beschädigte Zeile ist**
+
+1. Verwenden Sie die folgende Befehlszeile, um alle Tracking-Dateien zu prüfen.
+
+   ```
+   $ cd {install directory}/var/{instance name}/redir/log
+   $ cat *.log | sed -nE '/^[[:alnum:]]{2}x[[:alnum:]]*\t[0-9T:\.-]*\t[0-9a-fA-F]*\t[0-9a-fA-F]*\t[0-9a-fA-F]*\t[[:alnum:]]*\t[[:alnum:]-]*\t[[:print:]]*\t[[:print:]]*\t[[:print:]]*\t([0-9a-fA-F\.:]*|[0-9a-fA-F\.:]*\t[[:print:]]*|[0-9a-fA-F\.:]*,[[:print:]]*)$/!p'
+   ```
+
+1. Der Befehl listet alle beschädigten Zeilen auf. Beispiel:
+
+   ```
+   50x000000000FD7EC86 2017-06-24T21:00:50.96 1f506d71 1aeab4b6 1af77020 0 e5155671-4ab7-4ce4-a763-3b82dda6d881 h
+   Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36 52.46.20.64
+   ```
+
+   >[!NOTE]
+   >
+   >Der Zeilenumbruch wurde vor dem Benutzeragenten hinzugefügt, um bessere Lesbarkeit zu ermöglichen, und spiegelt nicht das effektive Rendering wider.
+
+1. Führen Sie einen grep-Befehl aus, um die entsprechende Datei zu finden.
+
+   ```
+   $ grep -Rn <Log Id>
+   # for example:
+   $ grep -Rn 50x000000000FD7EC86
+   ```
+
+1. Suchen Sie nach dem fehlerhaften Log mit dem Dateinamen und der Zeilennummer. Beispiel:
+
+   ```
+   ./0x000000000FD7E000.log:3207:50x000000000FD7EC86 2017-06-24T21:00:50.96 1f506d71 1aeab4b6 1af77020 0 e5155671-4ab7-4ce4-a763-3b82dda6d881 h
+   Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36 52.46.20.64
+   ```
+
+   >[!NOTE]
+   >
+   >Ein Zeilenumbruch wurde vor dem Benutzeragenten hinzugefügt, um bessere Lesbarkeit zu ermöglichen, und spiegelt nicht das effektive Rendering wider.
+
+Anschließend können Sie den Tracking-Workflow stoppen, die beschädigten Zeilen löschen und den Workflow neu starten.
+
++++
+
++++Trackinglinks schlagen gelegentlich fehl
+
+Beim Versuch, auf die Trackinglinks zuzugreifen, wird folgende Meldung angezeigt:
+
+`Requested URL '/r/ id=h787bc0,281a4d8,281a4da&p1=1' cannot be found`
+
+1. Greifen Sie auf die URL &lt;redirect_server>/r/test zu und überprüfen Sie, ob die Build-Nummer und localhost von der Anfrage zurückgegeben wurden.
+
+1. Überprüfen Sie die spareServer-Konfiguration in der Datei serverConf.xml auf den Tracking-Server. Diese Konfiguration sollte sich im Weiterleitungsmodus befinden.
+
+   ```
+   <redirection>
+      <spareServer _operation="update" enabledIf="$(hostname)!='test-rt1'" id="1"
+      url="http://test-rt1:8080"/>
+      <spareServer _operation="insert" enabledIf="$(hostname)!='test-rt4'" id="4"
+      url="http://test-rt4:8080"/>
+      <spareServer _operation="insert" enabledIf="$(hostname)!='test-rt3'" id="3"
+      url="http://test-rt3:8080"/>
+      <spareServer _operation="insert" enabledIf="$(hostname)!=test-rt2'" id="2"
+      url="http://test-rt2:8080"/>
+   </redirection>
+   ```
+
+1. Prüfen Sie manuell, ob die XML-Datei &lt;deliveryID>.xml auf dem Computer im Verzeichnis &quot;... / nl6 / var / &lt;Instanzname> / redir / url / &lt;JJJJ>&quot; vorhanden ist (JJJJ steht für das Versandjahr).
+
+1. Prüfen Sie manuell, ob &lt;trackingUrlId> in der Datei &lt;deliveryID>.xml gefunden werden kann.
+
+1. Prüfen Sie manuell, ob broadlogID im zugehörigen deliveryID-Versand vorhanden ist.
+
+1. Prüfen Sie die Berechtigungen der &lt;deliveryID>.xml-Dateien im Verzeichnis &quot;.../nl6/var/&lt;Instanzname>/redir/url/year&quot;.
+
+   Sie sollten mindestens die Berechtigung &quot;644&quot; haben, damit Apache die Tracking-URLs lesen kann, um den angeforderten Link umzuleiten.
+
++++
+
++++Aktualisieren der Option NmsTracking_Pointer
+
+Gehen Sie beim Aktualisieren der Option &quot;NmsTracking_Pointer&quot; wie folgt vor:
+
+1. Stoppen Sie den Tracking-Workflow an.
+
+1. Stoppen Sie den trackinglogd-Service an.
+
+1. Aktualisieren Sie die Option &quot;NmsTracking_Pointer&quot; auf den gewünschten Wert.
+
+1. Starten Sie den trackinglogd-Service neu.
+
+1. Starten Sie den Tracking-Workflow neu.
+
++++
+
++++Tracking funktioniert nicht mit einigen WebMail
+
+Sie können die Klick-Tracking-Formel anpassen und eine benutzerdefinierte Adobe Analytics-Tracking-Formel angeben.
+
+Diese Art der Anpassung muss mit Vorsicht erfolgen, um zu vermeiden, dass zusätzliche Zeilenvorschubzeichen hinzugefügt werden. Alle Zeilenvorschubzeichen, die außerhalb des JavaScript-Ausdrucks vorhanden sind, sind in der endgültigen Formel enthalten.
+
+Diese Art von zusätzlichem Zeilenvorschubzeichen in der Tracking-URL führt bei einigen WebMail-Services (AOL, GMail usw.) zu Problemen.
+
+**Erstes Beispiel:**
+
+* Falsche Syntax
+
+  ```
+  <%@ include option='NmsTracking_ClickFormula' %><% // Parameters expected by Adobe Analytics
+  var pattern = new RegExp("(nl611\.test15|google\.com)", 'i')
+  if( $(urlstring).match(pattern) && delivery.FCP == false )
+  {
+  %>
+  &cid=<%= message.delivery.internalName %>&bid=<%= message.id.toString().toLowerCase() %><% } %>
+  ```
+
+* Richtige Syntax
+
+  ```
+  <%@ include option='NmsTracking_ClickFormula' %><% // Parameters expected by Adobe Analytics
+  var pattern = new RegExp("(nl611\.test15|google\.com)", 'i')
+  if( $(urlstring).match(pattern) && delivery.FCP == false )
+  {
+  %>&cid=<%= message.delivery.internalName %>&bid=<%= message.id.toString().toLowerCase() %><% } %>
+  ```
+
+Um zu verstehen, wo sich der zusätzliche Zeilenvorschub befindet, können Sie den JavaScript-Ausdruck durch eine unveränderliche STRING-Zeichenkette ersetzen.
+
+```
+// Incorrect
+STRING1
+&cid=STRING2&bid=STRING3
+
+// Correct
+STRING1&cid=STRING2&bid=STRING3
+```
+
+**Zweites Beispiel**
+
+* Falsche Syntax
+
+  ```
+  <%@ include option='NmsTracking_ClickFormula' %>
+  <% // Parameters expected by Adobe Analytics
+  var pattern = new RegExp("(vistaprint|entryUrl)", 'i')
+  if( $(urlstring).match(pattern) && delivery.FCP == false )
+  {%>&cid=<%= message.delivery.internalName%>&bid=<%= message.id.toString().toLowerCase()%>&SHPID=<%= message.recipient.factShopper.shopper_id %><% }
+  
+  %>
+  ```
+
+* Richtige Syntax
+
+  ```
+  <%@ include option='NmsTracking_ClickFormula' %><% // Parameters expected by Adobe Analytics
+  var pattern = new RegExp("(vistaprint|entryUrl)", 'i')
+  if( $(urlstring).match(pattern) && delivery.FCP == false )
+  {%>&cid=<%= message.delivery.internalName%>&bid=<%= message.id.toString().toLowerCase()%>&SHPID=<%= message.recipient.factShopper.shopper_id %><% }
+  
+  %>
+  ```
+
+Um zu verstehen, wo sich der zusätzliche Zeilenvorschub befindet, können Sie den JavaScript-Ausdruck durch eine unveränderliche STRING-Zeichenkette ersetzen.
+
+```
+// Incorrect
+STRING1&cid=STRING2&bid=STRING3&SHPID=STRING4
+
+// Correct
+STRING1&cid=STRING2&bid=STRING3&SHPID=STRING4
+```
+
++++
+
++++Trackinglogs werden zu langsam abgerufen
+
+Wenn die Instanz die Trackinglogs nicht direkt abruft, sondern von einem entfernten Adobe Campaign Classic-Server, werden die Logs über den SOAP-Aufruf &quot;GetTrackingLogs&quot; abgerufen, der im remoteTracking-Schema definiert ist.
+
+Mit einer Option in der Datei serverConf.xml können Sie die Anzahl der Logs festlegen, die mit dieser Methode gleichzeitig abgerufen werden: logCountPerRequest.
+
+Der Standardwert von &quot;logCountPerRequest&quot; ist 1000, was sich in einigen Fällen als zu klein erweisen kann. Die zulässigen Werte müssen zwischen 0 und 10.000 liegen.
+
++++
+
++++Trackinglogs konnten nicht mit Empfängern verknüpft werden
+
+In Adobe Campaign Classic soll ein Zielgruppen-Mapping hinsichtlich des Empfängerschemas im Vergleich zu Broadlog-/Trackinglog-Schemata eindeutig sein.
+
+![](assets/tracking-troubleshooting.png)
+
+Es ist nicht möglich, mehrere Zielgruppenschemata mit demselben Trackinglog-Schema zu verwenden, da der Tracking-Workflow keine Daten mit der Zielgruppenbestimmungs-ID abstimmen kann.
+
+Wenn Sie das vordefinierte Zielgruppen-Mapping nicht mit nms:recipient verwenden möchten, empfehlen wir die folgenden Ansätze:
+
+* Wenn Sie benutzerdefinierte Zielgruppendimensionen verwenden möchten, müssen Sie ein benutzerdefiniertes broadLog/trackingLog-Schema mit nms:broadlog als Vorlage erstellen (z. B. nms:broadLogRcp, nms:broadLogSvc usw.).
+
+* Wenn Sie OOB trackingLogRcp/broadLogRcp verwenden möchten, muss die Zielgruppendimension nms:recipient und die Filterdimension könnte ein benutzerdefiniertes Schema sein.
+
++++

@@ -6,10 +6,10 @@ feature: Troubleshooting
 hidefromtoc: true
 hide: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: ht
-source-wordcount: '656'
-ht-degree: 100%
+source-git-commit: 85bafbac26b5f127499f35f373e96ecfd12b1db8
+workflow-type: tm+mt
+source-wordcount: '631'
+ht-degree: 98%
 
 ---
 
@@ -33,21 +33,15 @@ Support erhalten Sie über unsere häufig gestellten Fragen, Best Practices, Onl
 
 ### Häufig gestellte Fragen
 
-Wie wird ein Upgrade auf einen neuen Build durchgeführt? Wie lässt sich die Workflow-Ausführung überwachen? Was ist der Datenbankbereinigungs-Workflow? [Lesen Sie die zehn am häufigsten gestellten Fragen](platform/using/common-questions.md).
-
 <table>
     <tr><td><strong>Fragen und Antworten nach Themen</strong></td><td><strong>Häufige Probleme</strong></td><td><strong>Best Practices</strong></td><td><strong>Anleitung</strong></td></tr>
     <tr>
     <td valign="top">
         <ul>
-        <li><a href="platform/using/faq-key-concepts.md">Schlüsselkonzepte</a></li>
-        <li><a href="platform/using/faq-campaign-config.md">Campaign-Einstellungen</a></li>
-        <li><a href="platform/using/faq-reporting.md">Reporting</a></li>
+        <li><a href="platform/using/faq-campaign-classic-v7.md">Häufig gestellte Fragen zu Campaign Classic v7</a></li>
         <li><a href="platform/using/faq-build-upgrade.md">Build-Upgrade</a></li>
-        <li><a href="platform/using/faq-messages.md">Testen, Versand und Tracking von Nachrichten</a></li>
-        <li><a href="platform/using/faq-workflows.md">Workflows</a></li>
-        <li><a href="platform/using/faq-developers.md">Entwickler</a></li>
-        <li><a href="delivery/using/monitoring-deliverability.md">Zustellbarkeit</a></li>
+        <li><a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html" target="_blank">Campaign v8 Umfassende FAQs</a></li>
+        <li><a href="delivery/using/about-delivery-monitoring.md">Versandverfolgung</a></li>
         </ul>
     </td>
     <td valign="top">
