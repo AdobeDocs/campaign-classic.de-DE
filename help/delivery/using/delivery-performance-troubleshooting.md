@@ -20,7 +20,7 @@ ht-degree: 5%
 >
 >Auf dieser Seite werden **Campaign Classic v7-spezifische Konfigurationen** Leistungsoptimierung und Fehlerbehebung in Hybrid- und On-Premise-Bereitstellungen dokumentiert.
 
-Umfassende Best Practices zur Versandleistung, Plattformoptimierung, Quarantäneverwaltung, Datenbankwartung und Planungsempfehlungen finden Sie in der [ zu Best Practices für den Versand in Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"}.
+Umfassende Best Practices zur Versandleistung, Plattformoptimierung, Quarantäneverwaltung, Datenbankwartung und Planungsempfehlungen finden Sie in der [&#x200B; zu Best Practices für den Versand in Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"}.
 
 ## Leistungsoptimierung {#performance-optimization}
 
@@ -36,7 +36,7 @@ Bei Hybrid-/On-Premise-Bereitstellungen von **Campaign Classic v7** die folgende
 
 >[!NOTE]
 >
->Für Benutzende von Campaign v8 Managed Cloud Services werden die Infrastrukturoptimierung und die MTA-Konfiguration von Adobe verwaltet. Siehe Best Practices beim Versand [ Campaign v8 ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"} Leistungsempfehlungen für Ihre -Bereitstellung.
+>Für Benutzende von Campaign v8 Managed Cloud Services werden die Infrastrukturoptimierung und die MTA-Konfiguration von Adobe verwaltet. Siehe Best Practices beim Versand [&#x200B; Campaign v8 &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"} Leistungsempfehlungen für Ihre -Bereitstellung.
 
 ### Wartung der Datenbank {#database-maintenance}
 
@@ -96,11 +96,11 @@ Stellen Sie bei On-Premise-Installationen sicher, dass alle technischen Workflow
 
 **Datenbankbereinigungs-Workflow**: Bereinigt regelmäßig alte Versandlogs und temporäre Tabellen, um die Leistung aufrechtzuerhalten.
 
-Überprüfen Sie den Workflow-Status **[!UICONTROL Administration]** > **** > **[!UICONTROL Technische Workflows]**.
+Überprüfen Sie den Workflow-Status **[!UICONTROL Administration]** > **&#x200B;**&#x200B;> **[!UICONTROL Technische Workflows]**.
 
 >[!NOTE]
 >
->Für Benutzende von Campaign v8 Managed Cloud Services werden technische Workflows und die Infrastrukturüberwachung von Adobe verwaltet. Konzentrieren Sie sich auf den Versandinhalt und die Zielgruppenbestimmung, wie in der Dokumentation zu [ v8 ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}.
+>Für Benutzende von Campaign v8 Managed Cloud Services werden technische Workflows und die Infrastrukturüberwachung von Adobe verwaltet. Konzentrieren Sie sich auf den Versandinhalt und die Zielgruppenbestimmung, wie in der Dokumentation zu [&#x200B; v8 &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}.
 
 ## Verwandte Themen
 

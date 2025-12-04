@@ -127,7 +127,7 @@ Diese Regeln stehen im Bereitstellungsassistenten zur Verfügung und können ang
 
 * **[!UICONTROL Limit]**: die maximal zulässige Anzahl von Nachrichten pro Zeitraum.
 
-* **[!UICONTROL Type]**: Der Fehlertyp (Hard, Soft oder Ignoriert), der zum Bestimmen des Versandverhaltens verwendet wird. Definitionen zu Fehlertypen finden [ in der ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} zu Campaign v8 .
+* **[!UICONTROL Type]**: Der Fehlertyp (Hard, Soft oder Ignoriert), der zum Bestimmen des Versandverhaltens verwendet wird. Definitionen zu Fehlertypen finden [&#x200B; in der &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} zu Campaign v8 .
 
 Weiterführende Informationen zur MX-Verwaltung erhalten Sie in [diesem Abschnitt](../../installation/using/email-deliverability.md#about-mx-rules).
 
@@ -157,7 +157,7 @@ So konfigurieren Sie diese Einstellungen:
 
 Wenn der Fehlerzähler den Schwellenwert erreicht, wird die Adresse unter Quarantäne gestellt. Wenn der letzte schwerwiegende Fehler vor mehr als 10 Tagen aufgetreten ist, wird der Fehlerzähler neu initialisiert.
 
-Weitere Informationen finden Sie auf [ Seite ](communication-channels.md) unter **Versand** > **Weitere Zustellversuche konfigurieren**.
+Weitere Informationen finden Sie auf [&#x200B; Seite &#x200B;](communication-channels.md) unter **Versand** > **Weitere Zustellversuche konfigurieren**.
 
 >[!NOTE]
 >
@@ -167,7 +167,7 @@ Weitere Informationen finden Sie auf [ Seite ](communication-channels.md) unter 
 
 Bei On-Premise-Installationen entfernt der technische Workflow **[!UICONTROL Datenbankbereinigung]** automatisch die Quarantäneadressen, die bestimmten Bedingungen entsprechen.
 
-Greifen Sie auf diesen Workflow über **[!UICONTROL Administration]** > **** > **[!UICONTROL Technische Workflows]** > **[!UICONTROL Datenbankbereinigung]** zu.
+Greifen Sie auf diesen Workflow über **[!UICONTROL Administration]** > **&#x200B;**&#x200B;> **[!UICONTROL Technische Workflows]** > **[!UICONTROL Datenbankbereinigung]** zu.
 
 Der Workflow entfernt Adressen in den folgenden Fällen aus der Quarantäne:
 
