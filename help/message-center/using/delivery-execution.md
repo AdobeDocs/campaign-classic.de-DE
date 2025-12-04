@@ -40,7 +40,7 @@ Sie werden standardmäßig in Unterordner nach Versandmonat unterteilt. Diese Gr
 
 ## Überwachung der Transaktionsnachrichten {#transactional-message-monitoring}
 
-Zur Überwachung Ihrer Transaktionsnachrichten können Sie die [Versandlogs](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"} einsehen.
+Zur Überwachung Ihrer Transaktionsnachrichten können Sie die [Versandlogs](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"} einsehen.
 
 Die von der Ausführungsinstanz gesendeten Transaktionsnachrichten werden durch einen technischen Workflow (**[!UICONTROL Message Center-Ausführungsinstanz]**), der stündlich ausgeführt wird, wieder synchronisiert und in die Kontrollinstanz transferiert.
 
