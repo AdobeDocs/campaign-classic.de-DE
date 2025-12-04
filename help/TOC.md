@@ -114,7 +114,7 @@ ht-degree: 99%
    + [Senden von E-Mails](delivery/using/about-email-channel.md)
    + Senden von E-Mails {#sending-emails}
       + [Erstellen eines E-Mail-Versands – AUSGEBLENDET](delivery/using/creating-an-email-delivery.md)
-      + [Definieren des E-Mail-Inhalts – AUSGEBLENDET &#x200B;](delivery/using/defining-the-email-content.md)
+      + [Definieren des E-Mail-Inhalts – AUSGEBLENDET ](delivery/using/defining-the-email-content.md)
       + [Definieren interaktiver Inhalte – AUSGEBLENDET](delivery/using/defining-interactive-content.md)
       + Senden des E-Mail-Versands {#sending-an-email}
          + [Wichtigste Schritte zum Senden einer E-Mail – AUSGEBLENDET](delivery/using/sending-messages.md)

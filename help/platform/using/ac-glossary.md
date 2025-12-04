@@ -6,9 +6,9 @@ feature: Overview
 role: User, Developer
 level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
-source-git-commit: 17ac1e0d68d2945b01aecc7c45fc5be7e6bd38af
+source-git-commit: 8a2a3239c08521765592491a6fe88c94d9db0640
 workflow-type: tm+mt
-source-wordcount: '6204'
+source-wordcount: '6201'
 ht-degree: 99%
 
 ---
@@ -1009,7 +1009,7 @@ Learn more about [Total database storage](../../workflow/using/about-workflows.m
 Der technische Tracking-Workflow ruft die Tracking-Daten ab, sobald der Versand ausgeführt und das Tracking aktiviert wurde.
 Diese Daten finden Sie auf der Registerkarte &quot;Tracking&quot; Ihres Versands. Dort finden Sie Informationen zu Öffnungsvorgängen und Klicks auf eine E-Mail sowie andere Interaktionen mit einer empfangenen Nachricht.
 
-Erfahren Sie mehr [Trackinglogs in Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/tracking-logs){target="_blank"} oder [v7-spezifischem Tracking](../../delivery/using/about-message-tracking.md).
+Weitere Informationen zu [Trackinglogs in Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/tracking-logs){target="_blank"}.
 +++
 
 +++**Transaktionsnachrichten**
