@@ -6,7 +6,7 @@ feature: Overview
 role: User, Developer
 level: Beginner
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
-source-git-commit: a85d94e8ff66e8468b4fe2f071df48437393bbce
+source-git-commit: e60a8391416bc9899548971bddb61705467a80e5
 workflow-type: tm+mt
 source-wordcount: '6202'
 ht-degree: 99%
@@ -482,7 +482,7 @@ Weitere Informationen über [eingehende Interaktionen](../../interaction/using/a
 
 Beim Inbox Rendering handelt es sich um die Erstellung von E-Mail-Vorschauen, mit denen sichergestellt werden kann, dass die Nachricht für die Empfangenden in unterschiedlichen Web-Clients, Web-Mails und Geräten optimal dargestellt wird. Adobe Campaign nutzt Litmus, sodass Erstellende von E-Mail-Inhalten ihren Nachrichteninhalt in über 70 E-Mail-Renderern als Vorschau anzeigen können, unter anderem im Gmail-Posteingang oder im Apple Mail Client.
 
-Weitere Informationen zum [Inbox Rendering](../../delivery/using/delivery-dashboard.md#delivery-rendering).
+Weitere Informationen zum [Inbox Rendering](../../delivery/using/inbox-rendering.md).
 +++
 
 +++**Instanzeneinstellungen**

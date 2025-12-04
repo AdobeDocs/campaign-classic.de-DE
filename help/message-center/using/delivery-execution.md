@@ -7,10 +7,10 @@ audience: message-center
 content-type: reference
 topic-tags: event-processing
 exl-id: 930c6395-0c00-40ee-a925-3e0cae67c55f
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: e60a8391416bc9899548971bddb61705467a80e5
 workflow-type: tm+mt
-source-wordcount: '243'
-ht-degree: 100%
+source-wordcount: '244'
+ht-degree: 99%
 
 ---
 
@@ -40,7 +40,7 @@ Sie werden standardmäßig in Unterordner nach Versandmonat unterteilt. Diese Gr
 
 ## Überwachung der Transaktionsnachrichten {#transactional-message-monitoring}
 
-Zur Überwachung Ihrer Transaktionsnachrichten können Sie die [Versandlogs](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history) einsehen.
+Zur Überwachung Ihrer Transaktionsnachrichten können Sie die [Versandlogs](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"} einsehen.
 
 Die von der Ausführungsinstanz gesendeten Transaktionsnachrichten werden durch einen technischen Workflow (**[!UICONTROL Message Center-Ausführungsinstanz]**), der stündlich ausgeführt wird, wieder synchronisiert und in die Kontrollinstanz transferiert.
 

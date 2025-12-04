@@ -4,10 +4,10 @@ title: Richtlinien für das Überwachen
 description: Entdecken Sie Richtlinien und Best Practices zur Überwachung von Campaign-Instanzen und -Prozessen
 feature: Monitoring
 exl-id: ca0c33c5-7350-462a-bc65-4cab51e529d9
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: e60a8391416bc9899548971bddb61705467a80e5
 workflow-type: tm+mt
 source-wordcount: '759'
-ht-degree: 25%
+ht-degree: 26%
 
 ---
 
@@ -94,13 +94,13 @@ SMTP-Berichte enthalten Versandstatistiken und SMTP-Fehler nach Domain. [Weitere
 
 **Best Practices**
 
-Informationen zu Best Practices für den Versand und das Design von [&#x200B; finden &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/delivery-best-practices){target="_blank"} in der Dokumentation zu Campaign v8 , um die Leistung zu verbessern.
+Informationen zu Best Practices für den Versand und das Design von [ finden ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=de){target="_blank"} in der Dokumentation zu Campaign v8 , um die Leistung zu verbessern.
 
 **Fehlerbehebung beim Versand**
 Bei Problemen mit Sendungen können spezifische Aktionen durchgeführt werden:
 * [Probleme mit der Zustellbarkeit](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
 * [Probleme mit der Bildanzeige](../../production/using/image-display-issues.md)
-* [Performance-Probleme beim Versand](../../delivery/using/delivery-performances.md)
+* [Performance-Probleme beim Versand](../../delivery/using/delivery-performance-troubleshooting.md)
 * [Probleme mit temporären Dateien](../../production/using/temporary-files.md) - *nur On-Premise-Hosting-Modelle*
 
 ### Überwachen der Datenbank {#monitoring-database}
