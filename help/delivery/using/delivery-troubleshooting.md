@@ -56,11 +56,11 @@ Stellen Sie bei On-Premise-Installationen sicher, dass alle technischen Workflow
 
 **Datenbankbereinigungs-Workflow**: Bereinigt regelmäßig alte Versandlogs und temporäre Tabellen, um die Leistung aufrechtzuerhalten.
 
-Überprüfen Sie den Workflow-Status **[!UICONTROL Administration]** > **** > **[!UICONTROL Technische Workflows]**.
+Überprüfen Sie den Workflow-Status **[!UICONTROL Administration]** > **&#x200B;**&#x200B;> **[!UICONTROL Technische Workflows]**.
 
 >[!NOTE]
 >
->Für Benutzende von Campaign v8 Managed Cloud Services werden technische Workflows und die Infrastrukturüberwachung von Adobe verwaltet. Konzentrieren Sie sich auf den Versandinhalt und die Zielgruppenbestimmung, wie in der Dokumentation zu [ v8 ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}.
+>Für Benutzende von Campaign v8 Managed Cloud Services werden technische Workflows und die Infrastrukturüberwachung von Adobe verwaltet. Konzentrieren Sie sich auf den Versandinhalt und die Zielgruppenbestimmung, wie in der Dokumentation zu [&#x200B; v8 &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}.
 
 ## Verwandte Themen
 

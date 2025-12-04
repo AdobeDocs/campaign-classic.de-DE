@@ -129,7 +129,7 @@ Diese Regeln stehen im Bereitstellungsassistenten zur Verfügung und können ang
 
 * **[!UICONTROL Limit]**: die maximal zulässige Anzahl von Nachrichten pro Zeitraum.
 
-* **[!UICONTROL Type]**: Der Fehlertyp (Hard, Soft oder Ignoriert), der zum Bestimmen des Versandverhaltens verwendet wird. Definitionen zu Fehlertypen finden [ in der ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} zu Campaign v8 .
+* **[!UICONTROL Type]**: Der Fehlertyp (Hard, Soft oder Ignoriert), der zum Bestimmen des Versandverhaltens verwendet wird. Definitionen zu Fehlertypen finden [&#x200B; in der &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} zu Campaign v8 .
 
 Weiterführende Informationen zur MX-Verwaltung erhalten Sie in [diesem Abschnitt](../../installation/using/email-deliverability.md#about-mx-rules).
 

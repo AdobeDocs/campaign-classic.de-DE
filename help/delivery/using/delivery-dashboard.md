@@ -16,7 +16,7 @@ ht-degree: 59%
 
 >[!NOTE]
 >
->Eine umfassende Anleitung zum Zugriff auf die Versandliste und zur Verwendung des Versand-Dashboards finden Sie in der Dokumentation zu [ v8 ](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard). Diese Inhalte gelten für Benutzende von Campaign Classic v7 und Campaign v8.
+>Eine umfassende Anleitung zum Zugriff auf die Versandliste und zur Verwendung des Versand-Dashboards finden Sie in der Dokumentation zu [&#x200B; v8 &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard). Diese Inhalte gelten für Benutzende von Campaign Classic v7 und Campaign v8.
 >
 >Auf dieser Seite werden **Campaign Classic v7-spezifische Anpassungen** Hybrid- und On-Premise-Bereitstellungen dokumentiert.
 
