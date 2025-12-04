@@ -7,7 +7,7 @@ user-guide-title: Campaign Classic v7 – Handbuch
 user-guide-description: Produktdokumentation für Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 2ebae2b84741bf26dd44c872702dbf3b0ebfc453
+source-git-commit: a0b8f6adef371bad5342524aaf4ce30f3933f2da
 workflow-type: tm+mt
 source-wordcount: '2685'
 ht-degree: 99%
@@ -114,7 +114,7 @@ ht-degree: 99%
    + [Senden von E-Mails](delivery/using/about-email-channel.md)
    + Senden von E-Mails {#sending-emails}
       + [Erstellen eines E-Mail-Versands – AUSGEBLENDET](delivery/using/creating-an-email-delivery.md)
-      + [Definieren des E-Mail-Inhalts – AUSGEBLENDET &#x200B;](delivery/using/defining-the-email-content.md)
+      + [Definieren des E-Mail-Inhalts – AUSGEBLENDET ](delivery/using/defining-the-email-content.md)
       + [Definieren interaktiver Inhalte – AUSGEBLENDET](delivery/using/defining-interactive-content.md)
       + Senden des E-Mail-Versands {#sending-an-email}
          + [Wichtigste Schritte zum Senden einer E-Mail – AUSGEBLENDET](delivery/using/sending-messages.md)
@@ -186,7 +186,8 @@ ht-degree: 99%
       + [Abonnements verwalten](delivery/using/managing-subscriptions.md)
       + [Virales und Social-Media-Marketing](delivery/using/viral-and-social-marketing.md)
    + Überwachen von Sendungen {#monitoring-deliveries}
-      + [Erste Schritte bei der Überwachung eines Versands](delivery/using/about-delivery-monitoring.md)
+      + [Überwachen der Versandleistung](delivery/using/about-delivery-monitoring.md)
+      + [Nachverfolgen von Nachrichten](delivery/using/about-message-tracking.md)
       + [Versandleistung und Fehlerbehebung](delivery/using/delivery-performance-troubleshooting.md)
       + [Versandfehler und Quarantäneverwaltung](delivery/using/delivery-failures-quarantine.md)
       + [Erweitert: Versandlogs anpassen](delivery/using/customize-delivery-logs.md)
