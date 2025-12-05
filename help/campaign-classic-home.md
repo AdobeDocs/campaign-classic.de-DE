@@ -3,10 +3,10 @@ keywords: Campaign Classic;Startseite;beliebte Themen
 product: campaign
 title: Produktdokumentation zu Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 8a2a3239c08521765592491a6fe88c94d9db0640
+source-git-commit: 7b3d34ddde08f0bfc8d35f4e17e9eef4eb640483
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 99%
+source-wordcount: '341'
+ht-degree: 96%
 
 ---
 
@@ -78,8 +78,8 @@ Einige wichtige Änderungen am FCM-Dienst (Android Firebase Cloud Messaging) wer
   <tr style="border: 0;">
     <td>
       <img src="assets/do-not-localize/icon-start.svg" width="35px">
-<br/>
-<strong>Erste Schritte</strong><br/><a href="platform/using/adobe-campaign-workspace.md">Benutzeroberfläche</a> – <a href="platform/using/ac-glossary.md">Glossar</a> – <a href="platform/using/launching-adobe-campaign.md">Mit Campaign verbinden</a> – <a href="platform/using/get-started-data-import-export.md">Daten importieren und exportieren</a> – <a href="platform/using/access-management.md">Berechtigungen</a>
+    <br/>
+      <strong>Erste Schritte</strong><br/><a href="platform/using/adobe-campaign-workspace.md">Benutzeroberfläche</a> - <a href="platform/using/launching-adobe-campaign.md">Mit Campaign verbinden</a> - <a href="platform/using/get-started-data-import-export.md">Daten importieren und exportieren</a> - <a href="platform/using/access-management.md">Berechtigungen</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-experience.svg" width="35px">
