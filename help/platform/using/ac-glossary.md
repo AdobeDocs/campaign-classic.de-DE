@@ -223,7 +223,7 @@ Weitere Informationen zu Versandanalysen finden Sie in der [Dokumentation zu Cam
 
 Versandlogs enthalten Daten, die beim Nachrichtversand erzeugt werden. In diesen Logs werden Details zum Versand angezeigt, wie etwa welche Nachricht vorbereitet, ignoriert oder gesendet wurde oder aber fehlgeschlagen ist. Diese Logs können direkt über das Versand-Dashboard aufgerufen werden.
 
-Weitere Informationen zu [Versandlogs](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}.
+Weitere Informationen zu [Versandlogs](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}.
 +++
 
 <!--
