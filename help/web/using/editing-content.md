@@ -5,8 +5,8 @@ description: Bearbeiten von Inhalten
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: 968430d6-b1dd-47f8-8b31-39aaa18bc05c
-source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
-workflow-type: ht
+source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
+workflow-type: tm+mt
 source-wordcount: '1254'
 ht-degree: 100%
 
@@ -26,7 +26,7 @@ Markieren Sie den gewünschten Baustein und geben Sie mit dem Ausdrucks-Editor i
 
 >[!NOTE]
 >
->Optionen zur erweiterten Bearbeitung finden Sie auf [dieser Seite](../../platform/using/about-queries-in-campaign.md).
+>Optionen zur erweiterten Bearbeitung finden Sie auf [dieser Seite](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign).
 
 ![](assets/dce_popup_visibilitycondition.png)
 

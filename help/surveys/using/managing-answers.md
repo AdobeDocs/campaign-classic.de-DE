@@ -5,7 +5,7 @@ description: Erfahren Sie, wie Sie Umfrageantworten verwalten
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Surveys
 exl-id: 0b5dc602-e16f-4bf1-bd8f-352e0bc78996
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
 source-wordcount: '904'
 ht-degree: 100%
@@ -32,7 +32,7 @@ Es ist einfach, die Datenvorlage zu erweitern, indem neue Speicherorte hinzugef�
 
 Geben Sie den Titel und den Namen des Felds ein und wählen Sie den Typ des Felds aus: Text, boolesch, ganze Zahl oder Dezimalzahl, Datum etc.
 
-Über den ausgewählten Feldtyp lassen sich auch die von den Benutzern eingegebenen Daten definieren. Bei **Text**-Feldern können Sie eine Einschränkung (Groß-/Kleinschreibung, Format) oder einen Link zu einer vorhandenen Auflistung hinzufügen, um eine Auswahl zu erzwingen.
+Über den ausgewählten Feldtyp lassen sich auch die von den Benutzern eingegebenen Daten definieren. Bei **Text**-Feldern können Sie eine Einschränkung (Groß-/Kleinschreibung, Format) oder einen Link zu einer vorhandenen Aufzählung hinzufügen, um eine Auswahl zu erzwingen.
 
 Um eine Einschränkung hinzuzufügen, wählen Sie sie aus der Dropdown-Liste aus. Es gibt zwei Arten von Einschränkungen:
 
@@ -44,11 +44,11 @@ Um eine Einschränkung hinzuzufügen, wählen Sie sie aus der Dropdown-Liste aus
 
 Wenn dieses Feld in einer Liste verwendet wird, können die Werte der Aufzählung automatisch in der Wertetabelle über den Link **[!UICONTROL Datenbankverbindung über der Liste der Werte]** oberhalb der Werteliste abgerufen werden.
 
-Sie können beispielsweise eine Dropdown-Liste erstellen, aus der der Benutzer seine Muttersprache auswählen kann. Das entsprechende archivierte Feld kann mit der Auflistung **Sprache** verknüpft werden, die eine Liste von Sprachen enthält:
+Sie können beispielsweise eine Dropdown-Liste erstellen, aus der der Benutzer seine Muttersprache auswählen kann. Das entsprechende archivierte Feld kann mit der Aufzählung **Sprache** verknüpft werden, die eine Liste von Sprachen enthält:
 
 ![](assets/s_ncs_admin_survey_database_values_2b.png)
 
-Mit dem Symbol **[!UICONTROL Link bearbeiten]** rechts neben dem Feld können Sie den Inhalt dieser Auflistung bearbeiten:
+Mit dem Symbol **[!UICONTROL Link bearbeiten]** rechts neben dem Feld können Sie den Inhalt dieser Aufzählung bearbeiten:
 
 ![](assets/s_ncs_admin_survey_database_values_2c.png)
 
@@ -96,7 +96,7 @@ Die gegebenen Antworten können in allen Formularen in Feldern oder Titeln verwe
 
 >[!NOTE]
 >
->Die Syntax für andere Feldtypen wird in [diesem Abschnitt](../../platform/using/about-queries-in-campaign.md) beschrieben.
+>Die Syntax für andere Feldtypen wird in [diesem Abschnitt](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign) beschrieben.
 
 ### Speichereinstellungen {#storage-settings}
 

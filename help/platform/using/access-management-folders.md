@@ -9,8 +9,8 @@ level: Beginner
 exl-id: 0ba8a3d0-36d7-42f3-b281-0255e49b5fa3
 hide: true
 hidefromtoc: true
-source-git-commit: b27b85b126e002c0ea8b5d71da1ed60e1e817980
-workflow-type: ht
+source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
+workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 100%
 
@@ -73,11 +73,11 @@ Im folgenden Beispiel werden wir neue Ordner erstellen, um bestimmte Daten darzu
 
    ![Screenshot, in dem das Ansichtsfeld ausgewählt wird](assets/s_ncs_user_add_folder_exple01.png)
 
-1. Bestimmen Sie mithilfe des Abfragetools im mittleren Abschnitt des Fensters die Bedingungen, nach denen die Sendungen gefiltert werden sollen: Es werden nur die dem Filter entsprechenden Sendungen angezeigt.
+1. Bestimmen Sie mithilfe des Abfrage-Editors im mittleren Abschnitt des Fensters die Bedingungen, nach denen die Sendungen gefiltert werden sollen: Es werden nur die dem Filter entsprechenden Sendungen angezeigt.
 
    >[!NOTE]
    >
-   >Der Abfrageeditor wird in [diesem Abschnitt](../../platform/using/about-queries-in-campaign.md) beschrieben.
+   >Der Abfrage-Editor wird in [diesem Abschnitt](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign) beschrieben.
 
    Mit den folgenden Filterbedingungen:
 

@@ -4,10 +4,10 @@ title: Personalisierung und Datenschutz
 description: Best Practices für die Sicherheit für Datenschutz und Personalisierung
 feature: Installation, Privacy, Privacy Tools, URL Personalization
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
 source-wordcount: '827'
-ht-degree: 20%
+ht-degree: 21%
 
 ---
 
@@ -25,7 +25,7 @@ Wenn Sie personalisierte Links zu Ihrem Inhalt hinzufügen, achten Sie darauf, d
 
 ### Empfehlung
 
-Um zu validieren und sicherzustellen, dass Sie die oben genannten Funktionen nicht verwenden, führen Sie eine Abfrage in der Tracking-URL-Tabelle über [Campaign Generic Query Editor) &#x200B;](../../platform/using/about-queries-in-campaign.md) oder erstellen Sie einen Workflow mit Filterkriterien in der Abfrageaktivität. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=de){target="_blank"}.
+Um zu validieren und sicherzustellen, dass Sie die oben genannten Funktionen nicht verwenden, führen Sie eine Abfrage in der Tracking-URL-Tabelle über [Campaign Generic Query Editor) ](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign) oder erstellen Sie einen Workflow mit Filterkriterien in der Abfrageaktivität. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=de){target="_blank"}.
 
 Beispiel:
 

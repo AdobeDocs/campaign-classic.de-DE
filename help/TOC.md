@@ -7,7 +7,7 @@ user-guide-title: Campaign Classic v7 – Handbuch
 user-guide-description: Produktdokumentation für Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 7b3d34ddde08f0bfc8d35f4e17e9eef4eb640483
+source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
 source-wordcount: '2686'
 ht-degree: 99%
@@ -38,7 +38,7 @@ ht-degree: 99%
    + [Durchsuchen und Anpassen von Listen – AUSGEBLENDET](platform/using/adobe-campaign-ui-lists.md)
    + [Auflistungen – AUSGEBLENDET](platform/using/managing-enumerations.md)
    + [Campaign-Connectoren](platform/using/about-connectors.md)
-   + [Erstellen von Abfragen in Campaign](platform/using/about-queries-in-campaign.md)
+   + [Erstellen von Abfragen in Campaign](platform/using/adobe-campaign-workspace.md#about-queries-in-campaign)
    + Häufig gestellte Fragen {#faq}
       + [Häufig gestellte Fragen zu Campaign Classic](platform/using/faq-campaign-classic-v7.md)
       + [Build-Upgrade](platform/using/faq-build-upgrade.md)
@@ -114,7 +114,7 @@ ht-degree: 99%
    + [Senden von E-Mails](delivery/using/about-email-channel.md)
    + Senden von E-Mails {#sending-emails}
       + [Erstellen eines E-Mail-Versands – AUSGEBLENDET](delivery/using/creating-an-email-delivery.md)
-      + [Definieren des E-Mail-Inhalts – AUSGEBLENDET &#x200B;](delivery/using/defining-the-email-content.md)
+      + [Definieren des E-Mail-Inhalts – AUSGEBLENDET ](delivery/using/defining-the-email-content.md)
       + [Definieren interaktiver Inhalte – AUSGEBLENDET](delivery/using/defining-interactive-content.md)
       + Senden des E-Mail-Versands {#sending-an-email}
          + [Wichtigste Schritte zum Senden einer E-Mail – AUSGEBLENDET](delivery/using/sending-messages.md)

@@ -6,10 +6,10 @@ feature: Overview
 role: Developer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
-source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
-workflow-type: ht
-source-wordcount: '980'
-ht-degree: 100%
+source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
+workflow-type: tm+mt
+source-wordcount: '1185'
+ht-degree: 95%
 
 ---
 
@@ -69,13 +69,13 @@ Weiterführende Informationen zum Erstellen einer Instanz finden Sie auf dieser 
 
 ## Navigationsprinzipien {#navigation-basics}
 
-### Seiten durchsuchen {#browsing-pages}
-
 Die Funktionen der Plattform sind in verschiedene Rubriken unterteilt. Verwenden Sie die Links im oberen Bereich der Bedieneroberfläche, um darauf zuzugreifen.
 
 ![](assets/overview_home.png)
 
 Die Liste der Rubriken hängt von den installierten Packages und Add-ons sowie den Zugriffsberechtigungen des aktuellen Benutzers ab.
+
+### Seiten durchsuchen {#browsing-pages}
 
 Jede Funktion umfasst eine Reihe von Funktionen, die auf aufgabenbezogenen Anforderungen und dem Anwendungskontext basieren. So haben Sie z. B. in der Rubrik **[!UICONTROL Profile und Zielgruppen]** Zugriff auf Empfängerlisten, Abonnements, existierende Zielgruppen-Workflows sowie auf Verknüpfungen zur Elementerstellung.
 
@@ -106,7 +106,7 @@ Nutzen Sie beispielsweise auf der Seite der Sendungen die Schaltfläche **[!UICO
 
 ## Adobe Campaign-Explorer verwenden {#using-adobe-campaign-explorer}
 
-Auf den Adobe Campaign-Explorer kann über das entsprechende Symbol in der Symbolleiste zugegriffen werden. Mit seiner Hilfe gelangen Sie zu allen Adobe Campaign-Funktionen und in die verschiedenen Konfigurationsbildschirme der Adobe Campaign-Plattform und können einige Plattformelemente im Detail anzeigen.
+Auf den Adobe Campaign-Explorer kann über das entsprechende Symbol in der Symbolleiste zugegriffen werden. Dadurch können Sie auf alle Adobe Campaign-Funktionen, Konfigurationsbildschirme und eine detailliertere Ansicht einiger Plattformelemente zugreifen.
 
 Weitere Informationen zum Adobe Campaign-Explorer finden Sie auf folgenden Seiten in der **Dokumentation zu Campaign v8 (Konsole)**:
 
@@ -114,25 +114,64 @@ Weitere Informationen zum Adobe Campaign-Explorer finden Sie auf folgenden Seite
 
 * [Einstellungen der Campaign-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/configuration/ui-settings){target=_blank}
 
-* [Verwalten von Ordnern und Ansichten im Explorer](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}.
+* [Verwalten von Ordnern und Ansichten im Explorer](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}
 
 
-## Filtern von Daten {#filters}
+## Arbeiten mit Daten {#work-with-data}
+
+### Filtern von Daten {#filters}
 
 Beim Filtern von Daten wird ein Datensatz so eingegrenzt, dass er nur noch Einträge enthält, die bestimmten Kriterien entsprechen. Diese Teilmenge kann dann für zielgerichtete Aktionen (wie Aktualisierungen oder Zielgruppenerstellung) oder für Analysen verwendet werden.
 
 Beim Durchsuchen von Campaign werden die Daten in Listen angezeigt. Sie können integrierte Filter anwenden, um schnell auf eine definierte Teilmenge zuzugreifen, z. B. Adressen in Quarantäne, nicht kontaktierte Empfängerinnen und Empfänger oder Einträge, die in einem bestimmten Altersbereich liegen oder ein bestimmtes Erstellungsdatum haben. Sie können auch benutzerdefinierte Filter erstellen, diese zur späteren Verwendung speichern und für andere Campaign-Benutzende freigeben.
 
-Wie Sie [auf Filter zugreifen, sie erstellen und freigeben](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/audience/create-filters){target=_blank}, erfahren Sie in der **Dokumentation zu Campaign v8 (Konsole)**.
+In der Dokumentation **Campaign v8 (Konsole** [ erfahren Sie, wie Sie auf Filter zugreifen, sie erstellen und freigeben](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+
+### Abfragen der Datenbank{#about-queries-in-campaign}
+
+Das Abfragetool ist auf verschiedenen Anwendungsebenen verfügbar und kann verwendet werden, um Zielgruppen zu definieren, Kundschaft zu segmentieren, Trackinglogs zu extrahieren und zu filtern, Filter zu erstellen und vieles mehr.
+
++++Über den generischen Abfrage-Editor
+
+Es bietet einen speziellen Assistenten – das generische Abfragetool –, das Sie im Menü **[!UICONTROL Tools > Generisches Abfragetool…]** aufrufen können. Dieses Tool ermöglicht Datenbankabfragen zum Extrahieren, Organisieren, Gruppieren und Sortieren von Informationen. Beispielsweise können Sie Empfangende abrufen, die in einem bestimmten Zeitraum mehr als n-mal auf einen Newsletter-Link geklickt haben.
+
+Das generische Abfragetool zentralisiert alle Abfragefunktionen. Es ermöglicht die Erstellung und Speicherung von Einschränkungsfiltern, die dann in anderen Kontexten wiederverwendet werden können, z. B. im Abfragefeld eines Zielgruppen-Workflows.
+
+![Zugreifen auf das Abfragetool und Auswählen einer Tabelle](assets/query_editor_nveau_21.png)
+
++++
+
+>[!BEGINTABS]
+
+>[!TAB Abfragen der Datenbank]
+
+Die Schritte zum Erstellen einer Abfrage werden in der **[Dokumentation zu Campaign v8 (Konsole)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/data/query/query-editor){target=_blank}** beschrieben
 
 
-## Arbeiten mit Listen {#manage-and-customize-lists}
+[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/data/query/query-editor){target=_blank}
+
+
+>[!TAB Hinzufügen einer Abfrage in einem Workflow]
+
+Die wichtigsten Schritte zur Erstellung von Abfragen im Kontext eines Workflows finden Sie in der **[Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}**
+
+[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/de/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}
+
+>[!TAB Filterbedingungen]
+
+Zur Erstellung Ihrer Abfrage müssen Sie die Filterbedingungen im Abfragetool auswählen. Die verfügbaren Funktionen und Anwendungsfälle werden in der **[Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/data/query/filter-conditions){target=_blank}** beschrieben
+
+[![Bild](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/data/query/filter-conditions){target=_blank}
+
+>[!ENDTABS]
+
+### Verwalten von Listen {#manage-and-customize-lists}
 
 In der Campaign-Client-Console werden die Daten in Listen angezeigt. Sie können diese Listen Ihren Bedürfnissen entsprechend anpassen. Sie können beispielsweise Spalten hinzufügen, Daten filtern, Einträge zählen und Ihre Einstellungen speichern und freigeben.
 
 Wie Sie **Listen verwalten und anpassen**, erfahren Sie in der [Dokumentation zu Campaign v8 (Konsole)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/configuration/ui-settings#customize-lists){target=_blank}.
 
-## Verwalten von Aufzählungen{#managing-enumerations}
+### Verwalten von Aufzählungen{#managing-enumerations}
 
 Eine Aufzählung (auch als Aufzählungsliste bezeichnet) ist eine vordefinierte Liste von Werten, die Sie zum Ausfüllen bestimmter Felder verwenden können. Aufzählungen helfen dabei, Feldwerte zu standardisieren, sodass die Dateneingabe konsistenter wird und Abfragen vereinfacht werden.
 
@@ -144,4 +183,4 @@ Weitere Informationen zum **Arbeiten mit Aufzählungen** finden Sie in der [Doku
 
 In diesem Video wird der Campaign Classic-Arbeitsbereich vorgestellt.
 
->[!VIDEO](https://video.tv.adobe.com/v/39531?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12)

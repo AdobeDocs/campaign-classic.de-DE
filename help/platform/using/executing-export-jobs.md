@@ -1,21 +1,21 @@
 ---
 product: campaign
-title: Konfigurieren von Exportvorgängen
-description: Erfahren Sie, wie Sie in Campaign Exportvorgänge konfigurieren und ausführen.
+title: Konfigurieren von Exportaufträgen
+description: Erfahren Sie, wie Sie in Campaign Exportaufträge konfigurieren und ausführen.
 feature: Overview
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 94fc473a-dc49-41e8-b572-51c162b09996
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: ht
+source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
+workflow-type: tm+mt
 source-wordcount: '1040'
 ht-degree: 100%
 
 ---
 
-# Konfigurieren von Exportvorgängen {#executing-export-jobs}
+# Konfigurieren von Exportaufträgen {#executing-export-jobs}
 
 
 
@@ -25,13 +25,13 @@ So kann es sinnvoll sein, Tracking-Daten von Kampagnen (Tracking-Verlauf usw.) i
 
 Mit dem Export-Assistenten können Sie einen Export konfigurieren, seine Optionen definieren und die Ausführung starten. Es handelt sich dabei um eine Reihe von Bildschirmen, deren Inhalt von der Art des Exports (einfach oder mehrfach) und den Rechten des Benutzers abhängt.
 
-Der Export-Assistent wird nach der Erstellung eines neuen Exportvorgangs angezeigt (siehe [Erstellen von Import- und Exportaufrägen](../../platform/using/creating-import-export-jobs.md).
+Der Export-Assistent wird nach der Erstellung eines neuen Exportauftrags angezeigt (siehe [Erstellen von Import- und Exportaufrägen](../../platform/using/creating-import-export-jobs.md).
 
 ## &#x200B;1. Schritt – Exportvorlage auswählen {#step-1---choosing-the-export-template}
 
 Beim Start des Export-Assistenten muss zunächst eine Vorlage ausgewählt werden. Um beispielsweise den Export von Empfangenden zu konfigurieren, die sich kürzlich angemeldet haben, gehen Sie folgendermaßen vor:
 
-1. Gehen Sie zum Ordner **[!UICONTROL Profile und Zielgruppen > Vorgang > Allgemeine Importe und Exporte]**.
+1. Gehen Sie zum Ordner **[!UICONTROL Profile und Zielgruppen > Auftrag > Allgemeine Importe und Exporte]**.
 1. Wählen Sie **Neu** und danach **Exportieren** aus, um die Exportvorlage zu erstellen.
 
    ![](assets/s_ncs_user_export_wizard01.png)
@@ -85,7 +85,7 @@ Wählen Sie die zu exportierenden Felder aus. Gehen Sie dazu folgendermaßen vor
 
    ![](assets/s_ncs_user_export_wizard04.png)
 
-1. Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**, um Funktionen aufzurufen. Weitere Informationen hierzu finden Sie unter [Funktionsliste](../../platform/using/about-queries-in-campaign.md).
+1. Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**, um Funktionen aufzurufen. Weitere Informationen hierzu finden Sie unter [Funktionsliste](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign).
 
 ## &#x200B;5. Schritt – Spalten sortieren {#step-5---sorting-columns}
 
@@ -133,4 +133,4 @@ Klicken Sie auf die Schaltfläche **[!UICONTROL Starten]**, um den Exportprozess
 
 ![](assets/s_ncs_user_export_wizard08.png)
 
-Anschließend können Sie die Ausführung des Importvorgangs überwachen (siehe [Überwachung der Vorgangsausführung](../../platform/using/monitoring-jobs-execution.md)).
+Anschließend können Sie die Ausführung des Importauftrags überwachen (siehe [Überwachung der Auftragsausführung](../../platform/using/monitoring-jobs-execution.md)).

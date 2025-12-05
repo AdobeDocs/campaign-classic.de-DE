@@ -5,7 +5,7 @@ description: Erfahren Sie, wie Sie den Kontext in Ihren Berichten verwenden
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Reporting, Monitoring
 exl-id: a19e2843-d3f9-48c3-af72-cc1bc54f6360
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
 source-wordcount: '531'
 ht-degree: 100%
@@ -34,11 +34,11 @@ Klicken Sie hierzu auf den im Tab **[!UICONTROL Daten]** verfügbaren Link **[!U
 
 Im folgenden Beispiel soll die Grafik nur die Profile der Empfänger anzeigen, die in Deutschland leben und im laufenden Jahr Einkäufe getätigt haben.
 
-Um diesen Filter zu definieren, positionieren Sie eine Seite im Bericht-Diagramm und öffnen Sie die Aktivität. Klicken Sie auf **[!UICONTROL Daten filtern]** und erstellen Sie den Filter, der den anzuzeigenden Daten entspricht. Mehr Informationen über die Erstellung von Abfragen in Adobe Campaign erhalten Sie in [diesem Abschnitt](../../platform/using/about-queries-in-campaign.md).
+Um diesen Filter zu definieren, positionieren Sie eine Seite im Bericht-Diagramm und öffnen Sie die Aktivität. Klicken Sie auf **[!UICONTROL Daten filtern]** und erstellen Sie den Filter, der den anzuzeigenden Daten entspricht. Mehr Informationen über die Erstellung von Abfragen in Adobe Campaign erhalten Sie in [diesem Abschnitt](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign).
 
 ![](assets/s_ncs_advuser_report_wizard_029.png)
 
-In unserem Beispiel wird die Verteilung der der Abfrage entsprechenden Empfänger nach Ort angezeigt.
+In unserem Beispiel wird die Aufschlüsselung der der Abfrage entsprechenden Empfänger nach Ort angezeigt.
 
 ![](assets/reporting_graph_with_2vars.png)
 

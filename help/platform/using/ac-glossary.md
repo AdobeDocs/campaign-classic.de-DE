@@ -8,7 +8,7 @@ level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
-source-git-commit: 7b3d34ddde08f0bfc8d35f4e17e9eef4eb640483
+source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
 source-wordcount: '6202'
 ht-degree: 99%
@@ -223,7 +223,7 @@ Weitere Informationen zu Versandanalysen finden Sie in der [Dokumentation zu Cam
 
 Versandlogs enthalten Daten, die beim Nachrichtversand erzeugt werden. In diesen Logs werden Details zum Versand angezeigt, wie etwa welche Nachricht vorbereitet, ignoriert oder gesendet wurde oder aber fehlgeschlagen ist. Diese Logs können direkt über das Versand-Dashboard aufgerufen werden.
 
-Weitere Informationen zu [Versandlogs](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}.
+Weitere Informationen zu [Versandlogs](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}.
 +++
 
 <!--
@@ -274,7 +274,7 @@ Weitere Informationen zum verteilten Marketing finden Sie in der [Dokumentation 
 
 Die Werteverteilung ist ein Tool, das die Verteilung von Werten eines in der Datenbank vorhandenen Schemaattributs anzeigt. Auf diese Weise können Sie feststellen, welche Werte verfügbar sind, wie viele Werte es gibt und wie hoch die Prozentsätze sind. Außerdem können Sie bei der Erstellung einer Abfrage oder eines Ausdrucks Probleme mit der Groß- und Kleinschreibung von Werten vermeiden.
 
-Weitere Informationen über [Werteverteilung](../../platform/using/about-queries-in-campaign.md)
+Weitere Informationen über [Werteverteilung](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign)
 +++
 
 +++**Delegation von Domains**

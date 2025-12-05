@@ -7,7 +7,7 @@ badge: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 hide: true
 hidefromtoc: true
 exl-id: 5f22fa2c-b648-4126-9a24-1798adfa8f34
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
 source-wordcount: '1580'
 ht-degree: 98%
@@ -20,19 +20,19 @@ ht-degree: 98%
 
 ## Daten klassieren {#data-binning}
 
-Eine Klassierung ermöglicht die Vereinfachung der Datenanzeige, indem die Werte nach bestimmten Kriterien gruppiert werden. Entsprechend den zur Verfügung stehenden Informationen können Sie Altersgruppen definieren, E-Mail-Domains gruppieren, auf eine Werteauflistung beschränken, die anzuzeigenden Werte explizit beschränken und alle anderen in einer dedizierten Spalte oder Zeile gruppieren etc.
+Eine Klassierung ermöglicht die Vereinfachung der Datenanzeige, indem die Werte nach bestimmten Kriterien gruppiert werden. Entsprechend den zur Verfügung stehenden Informationen können Sie Altersgruppen definieren, E-Mail-Domains gruppieren, auf eine Werteaufzählung beschränken, die anzuzeigenden Werte explizit beschränken und alle anderen in einer dedizierten Spalte oder Zeile gruppieren etc.
 
 Insgesamt sind drei Klassierungstypen möglich:
 
 1. Mit manuell definierten Wertebereichen. Beispielweise Alter, durchschnittlicher Warenkorb, Anzahl der geöffneten Sendungen usw. Weitere Informationen hierzu finden Sie unter [Klassen manuell definieren](#defining-each-bin).
-1. Dynamisch, entsprechend den Werten einer Auflistung: Nur die in der Auflistungen enthaltenen Werte werden angezeigt, alle anderen werden als „Sonstige“ gruppiert. Weitere Informationen hierzu finden Sie unter [Klassen dynamisch verwalten](#dynamically-managing-bins).
+1. Dynamisch, entsprechend den Werten einer Aufzählung: Nur die in der Aufzählungen enthaltenen Werte werden angezeigt, alle anderen werden als „Sonstige“ gruppiert. Weitere Informationen hierzu finden Sie unter [Klassen dynamisch verwalten](#dynamically-managing-bins).
 1. Mit Wertebereichen, wobei alle anderen Bereiche gruppiert werden. Zum Beispiel 18- bis 25-Jährige, 26- bis 59-Jährige und andere. Weitere Informationen hierzu finden Sie unter [Wertebereiche anzeigen](#creating-value-ranges).
 
 Um die Klassierung zu aktivieren, kreuzen Sie die entsprechende Option bei der Erstellung der Dimension an.
 
 ![](assets/s_advuser_cube_class_00.png)
 
-Sie können jede Klasse manuell erstellen oder sie mit einer existierenden Auflistung verknüpfen.
+Sie können jede Klasse manuell erstellen oder sie mit einer existierenden Aufzählung verknüpfen.
 
 Adobe Campaign bietet zudem einen Assistenten, um die Klassen automatisch zu erzeugen: Die Werte können in n Klassen verteilt oder nach den am häufigsten in der Datenbank vertretenen Werten gruppiert werden.
 
@@ -58,16 +58,16 @@ Im folgenden Beispiel werden alle E-Mail-Domains, die mit **yahoo** (yahoo.fr, y
 
 ### Klassen dynamisch verwalten {#dynamically-managing-bins}
 
-Die Werte können über Auflistungen dynamisch verwaltet werden. So werden nur die in der Auflistung enthaltenen Werte angezeigt. Bei Änderung der Auflistungswerte wird der Cube-Inhalt automatisch angepasst.
+Die Werte können über Aufzählungen dynamisch verwaltet werden. So werden nur die in der Aufzählung enthaltenen Werte angezeigt. Bei Änderung der Aufzählungswerte wird der Cube-Inhalt automatisch angepasst.
 
 Gehen Sie wie folgt vor, um diesen Klassierungstyp zu erstellen:
 
 1. Erstellen Sie eine neue Dimension und aktivieren Sie die Klassierung.
-1. Aktivieren Sie die Option **[!UICONTROL Klassen aus einer Auflistung ableiten (dynamisch)]** und wählen Sie die entsprechende Auflistung aus.
+1. Aktivieren Sie die Option **[!UICONTROL Klassen aus einer Aufzählung ableiten (dynamisch)]** und wählen Sie die entsprechende Aufzählung aus.
 
    ![](assets/s_advuser_cube_class_04.png)
 
-   Bei Aktualisierung der Auflistungswerte werden die Klassen automatisch angepasst, ohne benutzerseitige Intervention.
+   Bei Aktualisierung der Aufzählungswerte werden die Klassen automatisch angepasst, ohne benutzerseitige Intervention.
 
 ### Erstellen von Wertebereichen {#creating-value-ranges}
 
@@ -97,11 +97,11 @@ Sie haben folgende Möglichkeiten:
 
 In diesem Fall wird der im Faktenschema gewählte Filter ignoriert.
 
-### Auflistungen {#enumerations}
+### Aufzählungen {#enumerations}
 
-Zur Erhöhung der Lesbarkeit und Relevanz von Berichten bietet Adobe Campaign die Möglichkeit, spezifische Auflistungen zu erstellen, um unterschiedliche Werte in ein und derselben Klasse zu gruppieren. Diese der Klassierung vorbehaltenen Auflistungen können in Cubes referenziert und in Berichten angezeigt werden.
+Zur Erhöhung der Lesbarkeit und Relevanz von Berichten bietet Adobe Campaign die Möglichkeit, spezifische Aufzählungen zu erstellen, um unterschiedliche Werte in ein und derselben Klasse zu gruppieren. Diese der Klassierung vorbehaltenen Aufzählungen können in Cubes referenziert und in Berichten angezeigt werden.
 
-Auf diese Weise bietet Adobe Campaign eine Auflistung von Domains, mithilfe derer sich die Liste der nach ISP gruppierten E-Mail-Domains von allen Datenbankkontakten wie im unten stehenden Beispiel anzeigen lässt:
+Auf diese Weise bietet Adobe Campaign eine Aufzählung von Domains, mithilfe derer sich die Liste der nach ISP gruppierten E-Mail-Domains von allen Datenbankkontakten wie im unten stehenden Beispiel anzeigen lässt:
 
 ![](assets/nmx_report_sample.png)
 
@@ -109,19 +109,19 @@ Diese Auflistung ist nach folgendem Modell gestaltet:
 
 ![](assets/nmx_enum_domain.png)
 
-Um einen diese Auflistung verwendenden Bericht zu erstellen, müssen Sie zunächst einen die Dimension **[!UICONTROL E-Mail-Domain]** verwendenden Cube erstellen. Wählen Sie die Option **[!UICONTROL Klassierung aktivieren]** und dann **[!UICONTROL Klassen aus einer Auflistung ableiten (dynamisch)]**. Wählen Sie anschließend die oben dargestellte Auflistung **Domains (domain)** aus. Alle Werte, für die kein Alias definiert worden ist, werden unter dem Titel **Sonstige** gruppiert.
+Um einen diese Auflistung verwendenden Bericht zu erstellen, müssen Sie zunächst einen die Dimension **[!UICONTROL E-Mail-Domain]** verwendenden Cube erstellen. Wählen Sie die Option **[!UICONTROL Klassierung aktivieren]** und dann **[!UICONTROL Klassen aus einer Aufzählung ableiten (dynamisch)]**. Wählen Sie anschließend die oben dargestellte Aufzählung **Domains (domain)** aus. Alle Werte, für die kein Alias definiert worden ist, werden unter dem Titel **Sonstige** gruppiert.
 
 ![](assets/nmx_add_dimension.png)
 
 Erstellen Sie anschließend einen auf diesem Cube basierenden Bericht, um die Werte anzuzeigen.
 
-Dabei genügt es, die Auflistung abzuändern, um den entsprechenden Bericht zu aktualisieren. Erstellen Sie beispielsweise den Wert **Adobe** und fügen Sie auf Auflistungsniveau den Alias **adobe.com** hinzu: Der Bericht wird automatisch mit dem Wert „Adobe“ aktualisiert.
+Dabei genügt es, die Aufzählung abzuändern, um den entsprechenden Bericht zu aktualisieren. Erstellen Sie beispielsweise den Wert **Adobe** und fügen Sie auf Aufzählungsniveau den Alias **adobe.com** hinzu: Der Bericht wird automatisch mit dem Wert „Adobe“ aktualisiert.
 
 ![](assets/nmx_add_alias.png)
 
-Die Auflistung **[!UICONTROL Domains (domains)]** wird zur Erzeugung der nativen Berichte verwendet, in denen die Domain-Liste angezeigt wird. Sie können diese Liste abändern, um den Inhalt der Berichte anzupassen.
+Die Aufzählung **[!UICONTROL Domains (domains)]** wird zur Erzeugung der nativen Berichte verwendet, in denen die Domain-Liste angezeigt wird. Sie können diese Liste abändern, um den Inhalt der Berichte anzupassen.
 
-Sie können weitere, der Klassierung vorbehaltene Auflistungen erstellen und diese in anderen Cubes verwenden: Alle Alias-Werte werden in den im ersten Tab der Auflistung definierten Klassen gruppiert.
+Sie können weitere, der Klassierung vorbehaltene Aufzählungen erstellen und diese in anderen Cubes verwenden: Alle Alias-Werte werden in den im ersten Tab der Aufzählung definierten Klassen gruppiert.
 
 ## Berechnen und Verwenden von Aggregaten {#calculating-and-using-aggregates}
 
@@ -171,7 +171,7 @@ Gehen Sie wie folgt vor, um eine neue Kennzahl zu definieren:
 
 1. Wählen Sie je nach gewählter Funktion den Ausdruck aus, auf den sich die Berechnung bezieht.
 
-   Über die Schaltfläche **[!UICONTROL Erweiterte Auswahl]** können komplexe Formeln erstellt werden. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../platform/using/about-queries-in-campaign.md).
+   Über die Schaltfläche **[!UICONTROL Erweiterte Auswahl]** können komplexe Formeln erstellt werden. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign).
 
    ![](assets/s_advuser_cube_create_a_measure_01.png)
 
