@@ -23,7 +23,7 @@ Im zentralen Abschnitt der Startseite finden Sie Links für den Zugriff auf das 
 
 ![](assets/d_ncs_user_interface_home.png)
 
-![](assets/do-not-localize/how-to-video.png)[ Campaign-Arbeitsbereich im Video kennenlernen](#video)
+![](assets/do-not-localize/how-to-video.png) [&#x200B; Campaign-Arbeitsbereich im Video kennenlernen](#video)
 
 >[!NOTE]
 >
@@ -125,7 +125,7 @@ Beim Filtern von Daten wird ein Datensatz so eingegrenzt, dass er nur noch Eintr
 
 Beim Durchsuchen von Campaign werden die Daten in Listen angezeigt. Sie können integrierte Filter anwenden, um schnell auf eine definierte Teilmenge zuzugreifen, z. B. Adressen in Quarantäne, nicht kontaktierte Empfängerinnen und Empfänger oder Einträge, die in einem bestimmten Altersbereich liegen oder ein bestimmtes Erstellungsdatum haben. Sie können auch benutzerdefinierte Filter erstellen, diese zur späteren Verwendung speichern und für andere Campaign-Benutzende freigeben.
 
-In der Dokumentation **Campaign v8 (Konsole** [ erfahren Sie, wie Sie auf Filter zugreifen, sie erstellen und freigeben](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+In der Dokumentation **Campaign v8 (Konsole** [&#x200B; erfahren Sie, wie Sie auf Filter zugreifen, sie erstellen und freigeben](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
 
 ### Abfragen der Datenbank{#about-queries-in-campaign}
 
