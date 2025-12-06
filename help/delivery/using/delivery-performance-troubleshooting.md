@@ -60,8 +60,8 @@ Zu den regelmäßigen Wartungsaufgaben gehören:
 >
 >Eine umfassende Anleitung zur Fehlerbehebung beim Versand finden Sie in der Dokumentation zu Campaign v8 , die sowohl für Benutzende von Campaign Classic v7 als auch Campaign v8 gilt:
 >
->* Häufige Versandfehler und -lösungen: [Fehlgeschlagene Sendungen verstehen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}
->* Diagnose langsamer Sendungen: [Überwachen von Sendungen in der Campaign-Benutzeroberfläche](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}
+>* Häufige Versandfehler und -lösungen: [Fehlgeschlagene Sendungen verstehen](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}
+>* Diagnose langsamer Sendungen: [Überwachen von Sendungen in der Campaign-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}
 >* Best Practices für den Versand: [Best Practices für den Versand](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"}
 >
 >In diesem Abschnitt wird die **Campaign Classic v7-spezifische Fehlerbehebung** Hybrid- und On-Premise-Bereitstellungen beschrieben.
@@ -100,13 +100,13 @@ Stellen Sie bei On-Premise-Installationen sicher, dass alle technischen Workflow
 
 >[!NOTE]
 >
->Für Benutzende von Campaign v8 Managed Cloud Services werden technische Workflows und die Infrastrukturüberwachung von Adobe verwaltet. Konzentrieren Sie sich auf den Versandinhalt und die Zielgruppenbestimmung, wie in der Dokumentation zu [&#x200B; v8 &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}.
+>Für Benutzende von Campaign v8 Managed Cloud Services werden technische Workflows und die Infrastrukturüberwachung von Adobe verwaltet. Konzentrieren Sie sich auf den Versandinhalt und die Zielgruppenbestimmung, wie in der Dokumentation zu [&#x200B; v8 &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}.
 
 ## Verwandte Themen
 
-* [Fehlgeschlagene Sendungen analysieren](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (Dokumentation zu Campaign v8)
+* [Fehlgeschlagene Sendungen analysieren](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (Dokumentation zu Campaign v8)
 * [Best Practices für den Versand](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"} (Dokumentation zu Campaign v8)
-* [Überwachen von Sendungen in der Campaign-Benutzeroberfläche](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} (Dokumentation zu Campaign v8)
+* [Überwachen von Sendungen in der Campaign-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} (Dokumentation zu Campaign v8)
 * [Datenbankwartung](../../production/using/recommendations.md) (v7 Hybrid/On-Premise)
 * [E-Mail-Zustellbarkeit](../../installation/using/email-deliverability.md) (Hybrid/On-Premise von v7)
 * [Datenbankleistung](../../production/using/database-performances.md) (v7 Hybrid/On-Premise)

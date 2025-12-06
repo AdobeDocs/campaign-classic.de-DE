@@ -31,7 +31,7 @@ Die Konzeption eines Versands umfasst folgende Schritte:
 
 1. **Versand senden** – [mehr dazu](steps-sending-the-delivery.md)
 
-1. **Versand verfolgen** (Tracking, Quarantäne, Berichte usw.). Weitere Informationen hierzu finden Sie in den Abschnitten [Überwachen von &#x200B;](about-delivery-monitoring.md) und [Nachrichten-Tracking](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking){target="_blank"}.
+1. **Versand verfolgen** (Tracking, Quarantäne, Berichte usw.). Weitere Informationen hierzu finden Sie in den Abschnitten [Überwachen von &#x200B;](about-delivery-monitoring.md) und [Nachrichten-Tracking](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/tracking/tracking){target="_blank"}.
 
 >[!NOTE]
 >

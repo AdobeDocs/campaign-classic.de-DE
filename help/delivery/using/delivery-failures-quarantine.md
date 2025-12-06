@@ -18,14 +18,14 @@ ht-degree: 35%
 >
 >Eine umfassende Anleitung zu fehlgeschlagenen Sendungen und zur Quarantäneverwaltung finden Sie in der Dokumentation zu Campaign v8 . Dieser Inhalt gilt für Benutzende von Campaign Classic v7 und Campaign v8:
 >
->* [Fehlgeschlagene Sendungen verstehen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} - Behandelt Fehlertypen, Fehlerursachen, synchrone/asynchrone Fehler, Verwaltung von Wiederholungsversuchen und Fehlerbehebung
->* [Quarantäneverwaltung](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} - Behandelt Quarantäne vs. Blockierungsliste, weiche Fehlerschwellen, Quarantäneberichte und Adressenentfernung
+>* [Fehlgeschlagene Sendungen verstehen](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} - Behandelt Fehlertypen, Fehlerursachen, synchrone/asynchrone Fehler, Verwaltung von Wiederholungsversuchen und Fehlerbehebung
+>* [Quarantäneverwaltung](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} - Behandelt Quarantäne vs. Blockierungsliste, weiche Fehlerschwellen, Quarantäneberichte und Adressenentfernung
 >
 >Auf dieser Seite wird die **Campaign Classic v7-spezifische Konfiguration** für die Bounce-Message- und Quarantäneverwaltung in Hybrid- und On-Premise-Bereitstellungen dokumentiert.
 
 ## Ursachen von fehlgeschlagenen Sendungen
 
-Informationen zu häufigen Konzepten bei fehlgeschlagenen Sendungen, Fehlertypen und Anleitungen zur Fehlerbehebung finden Sie in der [Dokumentation zu Campaign v8 - Grundlagen zu fehlgeschlagenen Sendungen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}.
+Informationen zu häufigen Konzepten bei fehlgeschlagenen Sendungen, Fehlertypen und Anleitungen zur Fehlerbehebung finden Sie in der [Dokumentation zu Campaign v8 - Grundlagen zu fehlgeschlagenen Sendungen](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}.
 
 ## Bounce-Message-Konfiguration {#bounce-mail-config}
 
@@ -127,7 +127,7 @@ Diese Regeln stehen im Bereitstellungsassistenten zur Verfügung und können ang
 
 * **[!UICONTROL Limit]**: die maximal zulässige Anzahl von Nachrichten pro Zeitraum.
 
-* **[!UICONTROL Type]**: Der Fehlertyp (Hard, Soft oder Ignoriert), der zum Bestimmen des Versandverhaltens verwendet wird. Definitionen zu Fehlertypen finden [&#x200B; in der &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} zu Campaign v8 .
+* **[!UICONTROL Type]**: Der Fehlertyp (Hard, Soft oder Ignoriert), der zum Bestimmen des Versandverhaltens verwendet wird. Definitionen zu Fehlertypen finden [&#x200B; in der &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} zu Campaign v8 .
 
 Weiterführende Informationen zur MX-Verwaltung erhalten Sie in [diesem Abschnitt](../../installation/using/email-deliverability.md#about-mx-rules).
 
@@ -137,7 +137,7 @@ Weiterführende Informationen zur MX-Verwaltung erhalten Sie in [diesem Abschnit
 
 ## Quarantäneverwaltung {#quarantine-management}
 
-Eine umfassende Anleitung zur Quarantäneverwaltung finden Sie in der [Dokumentation zur Quarantäneverwaltung in Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"}.
+Eine umfassende Anleitung zur Quarantäneverwaltung finden Sie in der [Dokumentation zur Quarantäneverwaltung in Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"}.
 
 ## Quarantäne-Konfiguration {#quarantine-config}
 
@@ -189,7 +189,7 @@ Für Campaign Classic v7 folgen Quarantänen für Push-Benachrichtigungen dem al
 
 Für **iOS**- und **Android**-Push-Benachrichtigungen verwendet der Quarantänemechanismus Geräte-Token anstelle von E-Mail-Adressen. Wenn eine Mobile App deinstalliert oder neu installiert wird, wird das zugehörige Token unter Quarantäne gestellt.
 
-Detaillierte Informationen zu Quarantäneszenarien für Push-Benachrichtigungen (Fehlertypen in iOS und Android, Verhalten bei erneuten Zustellversuchen usw.) finden Sie in der [Übersicht zu Versandfehlern](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} die umfassende Fehlertyptabellen für Push-Benachrichtigungen enthält.
+Detaillierte Informationen zu Quarantäneszenarien für Push-Benachrichtigungen (Fehlertypen in iOS und Android, Verhalten bei erneuten Zustellversuchen usw.) finden Sie in der [Übersicht zu Versandfehlern](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} die umfassende Fehlertyptabellen für Push-Benachrichtigungen enthält.
 
 ### Besonderheiten der SMS-Quarantäne {#sms-quarantine-specifics}
 
@@ -201,14 +201,14 @@ Der SMS-Quarantänemechanismus hängt vom verwendeten Connector ab:
 
 * **Erweiterter allgemeiner SMPP-Connector**: Das Fehlermanagement wird mithilfe regulärer Ausdrücke (Regexe) anders gehandhabt, um Statusbericht(SR)-Nachrichten zu analysieren, die vom SMSC-Provider zurückgegeben werden.
 
-Ausführliche Informationen zu SMS-Quarantäneszenarien und Fehlertypen finden Sie in der [Informationen zu Versandfehlern](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} , die umfassende Tabellen zu SMS-Fehlertypen enthält.
+Ausführliche Informationen zu SMS-Quarantäneszenarien und Fehlertypen finden Sie in der [Informationen zu Versandfehlern](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} , die umfassende Tabellen zu SMS-Fehlertypen enthält.
 
 ## Verwandte Themen
 
-* [Fehlgeschlagene Sendungen analysieren](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (Dokumentation zu Campaign v8)
-* [Quarantäneverwaltung](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (Dokumentation zu Campaign v8)
+* [Fehlgeschlagene Sendungen analysieren](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (Dokumentation zu Campaign v8)
+* [Quarantäneverwaltung](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (Dokumentation zu Campaign v8)
 * [Best Practices für den Versand](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"} (Dokumentation zu Campaign v8)
-* [Versandstatus](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"} (Dokumentation zu Campaign v8)
+* [Versandstatus](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"} (Dokumentation zu Campaign v8)
 * [Datenbankbereinigungs-Workflow](../../production/using/database-cleanup-workflow.md) (v7 Hybrid/On-Premise)
 * [Konfigurieren von weiteren Versandversuchen](communication-channels.md) (v7 Hybrid/On-Premise)
 * [Bounce-Qualifizierung aktualisieren](update-bounce-qualification.md) (v7 Hybrid/On-Premise)

@@ -16,11 +16,11 @@ ht-degree: 64%
 
 >[!NOTE]
 >
->Eine umfassende Anleitung zum Zugriff auf die Versandliste und zur Verwendung des Versand-Dashboards finden Sie in der Dokumentation zu [&#x200B; v8 &#x200B;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard). Diese Inhalte gelten für Benutzende von Campaign Classic v7 und Campaign v8.
+>Eine umfassende Anleitung zum Zugriff auf die Versandliste und zur Verwendung des Versand-Dashboards finden Sie in der Dokumentation zu [&#x200B; v8 &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/delivery-dashboard). Diese Inhalte gelten für Benutzende von Campaign Classic v7 und Campaign v8.
 >
 >Auf dieser Seite werden **Campaign Classic v7-spezifische erweiterte Anpassungen** Hybrid- und On-Premise-Bereitstellungen dokumentiert.
 
-Informationen zur Überwachung von Sendungen in der Campaign-Benutzeroberfläche finden Sie in der Dokumentation [Campaign v8-Sendungen überwachen in der Campaign-Benutzeroberfläche](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}.
+Informationen zur Überwachung von Sendungen in der Campaign-Benutzeroberfläche finden Sie in der Dokumentation [Campaign v8-Sendungen überwachen in der Campaign-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}.
 
 ## Versandlogs anpassen {#use-case}
 
@@ -113,9 +113,9 @@ Im Tab **[!UICONTROL Versand]** sollten Sie nach den Änderungen Folgendes sehen
 
 ## Verwandte Themen
 
-* [Überwachen von Sendungen in der Campaign-Benutzeroberfläche](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} (Dokumentation zu Campaign v8)
-* [Versandstatus](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"} (Dokumentation zu Campaign v8)
-* [Fehlgeschlagene Sendungen analysieren](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (Dokumentation zu Campaign v8)
-* [Quarantäneverwaltung](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (Dokumentation zu Campaign v8)
+* [Überwachen von Sendungen in der Campaign-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} (Dokumentation zu Campaign v8)
+* [Versandstatus](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"} (Dokumentation zu Campaign v8)
+* [Fehlgeschlagene Sendungen analysieren](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (Dokumentation zu Campaign v8)
+* [Quarantäneverwaltung](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (Dokumentation zu Campaign v8)
 * [Schema erweitern](../../configuration/using/extending-a-schema.md) (v7 Hybrid/On-Premise)
 

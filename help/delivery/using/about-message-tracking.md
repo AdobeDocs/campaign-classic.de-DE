@@ -16,12 +16,12 @@ ht-degree: 64%
 
 >[!IMPORTANT]
 >
->Allgemeine **zum Tracking** die sowohl für Campaign Classic v7 als auch für Campaign v8 gelten, finden Sie in der Dokumentation [Campaign v8-Nachrichten-Tracking](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking){target="_blank"}:
+>Allgemeine **zum Tracking** die sowohl für Campaign Classic v7 als auch für Campaign v8 gelten, finden Sie in der Dokumentation [Campaign v8-Nachrichten-Tracking](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/tracking/tracking){target="_blank"}:
 >
->* [Konfigurieren getrackter Links](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracked-links){target="_blank"}
->* [URL-Tracking-Optionen konfigurieren](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/url-tracking){target="_blank"}
->* [Personalisierte Links verfolgen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/personalized-links){target="_blank"}
->* [Zugriff auf Trackinglogs](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking-logs){target="_blank"}
+>* [Konfigurieren getrackter Links](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/tracking/tracked-links){target="_blank"}
+>* [URL-Tracking-Optionen konfigurieren](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/tracking/url-tracking){target="_blank"}
+>* [Personalisierte Links verfolgen](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/tracking/personalized-links){target="_blank"}
+>* [Zugriff auf Trackinglogs](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/tracking/tracking-logs){target="_blank"}
 >* [Tracking testen](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/testing-tracking){target="_blank"}
 >* [Tracking-Berichte](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/reporting/delivery-reports#tracking-indicators){target="_blank"}
 >
@@ -82,7 +82,7 @@ Mit der Opt-Out-Funktion für das Web-Anwendungs-Tracking können Sie das Tracki
 
 Die folgenden Tipps zur Fehlerbehebung gelten für **Hybrid-/On-Premise-Bereitstellungen von Campaign Classic v7**. Einige Informationen gelten möglicherweise auch für On-Premise-Bereitstellungen von Campaign v8. Wenden Sie sich für Campaign v8 Managed Cloud Services an Ihren Adobe-Support-Mitarbeiter.
 
-Grundlegende Schritte zur Fehlerbehebung bei der Nachverfolgung in Campaign v8 finden Sie in der Dokumentation [Fehlerbehebung bei der Nachverfolgung in Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking-logs#troubleshooting){target="_blank"}.
+Grundlegende Schritte zur Fehlerbehebung bei der Nachverfolgung in Campaign v8 finden Sie in der Dokumentation [Fehlerbehebung bei der Nachverfolgung in Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/tracking/tracking-logs#troubleshooting){target="_blank"}.
 
 ### Grundlegende Prüfungen {#basic-checks}
 
