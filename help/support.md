@@ -9,7 +9,7 @@ exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
 source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
 source-wordcount: '632'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -38,10 +38,10 @@ Support erhalten Sie über unsere häufig gestellten Fragen, Best Practices, Onl
     <tr>
     <td valign="top">
         <ul>
-        <li><a href="platform/using/faq-campaign-classic-v7.md">Häufig gestellte Fragen zu Campaign Classic v7</a></li>
+        <li><a href="platform/using/faq-campaign-classic-v7.md">Häufig gestellte Fragen zu Campaign Classic v7</a></li>
         <li><a href="platform/using/faq-build-upgrade.md">Build-Upgrade</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html" target="_blank">Campaign v8 Umfassende FAQs</a></li>
-        <li><a href="delivery/using/about-delivery-monitoring.md">Versandverfolgung</a></li>
+        <li><a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html?lang=de" target="_blank">Ausführliche Sammlung häufig gestellter Fragen zu Campaign v8</a></li>
+        <li><a href="delivery/using/about-delivery-monitoring.md">Versand-Monitoring</a></li>
         </ul>
     </td>
     <td valign="top">
@@ -57,7 +57,7 @@ Support erhalten Sie über unsere häufig gestellten Fragen, Best Practices, Onl
    <td valign="top">
         <ul>
         <li><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=de" target="_blank">Best Practices für Workflows</a></li>
-        <li><a href="workflow/using/monitoring-technical-workflows.md">Überwachen technischer Workflows</a></li>
+        <li><a href="workflow/using/monitoring-technical-workflows.md">Monitoring technischer Workflows</a></li>
         <li><a href="https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/tracking/tracking" target="_blank">Funktionsweise der Tracking-Verwaltung</a></li>
         <li><a href="production/using/monitoring-guidelines.md">Monitoring-Tools</a></li>
         <li><a href="platform/using/import-export-workflows.md">Importieren von Daten mit Workflows</a></li>
@@ -132,7 +132,7 @@ Das neue Ticket-System ist über die [Adobe Admin Console](https://adminconsole.
 
 ### Fragen an Experten
 
-Treten Sie der Campaign Classic-Community bei: Suchen Sie nach Antworten in vorhandenen Fragen oder stellen Sie Ihre Frage der Community. [Reden Sie mit](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=de){_blank}.
+Treten Sie der Campaign Classic-Community bei: Suchen Sie nach Antworten in vorhandenen Fragen oder stellen Sie Ihre Frage der Community. [Reden Sie mit](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){_blank}.
 
 ### Aufrufen des Campaign-Download-Centers
 
