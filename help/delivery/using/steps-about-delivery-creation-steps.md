@@ -8,9 +8,9 @@ hide: true
 hidefromtoc: true
 exl-id: 0188c3fe-8176-4904-8505-c47a72c20fcc
 source-git-commit: 8a2a3239c08521765592491a6fe88c94d9db0640
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '145'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Die Konzeption eines Versands umfasst folgende Schritte:
 
 1. **Versand senden** – [mehr dazu](steps-sending-the-delivery.md)
 
-1. **Versand verfolgen** (Tracking, Quarantäne, Berichte usw.). Weitere Informationen hierzu finden Sie in den Abschnitten [Überwachen von &#x200B;](about-delivery-monitoring.md) und [Nachrichten-Tracking](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/tracking/tracking){target="_blank"}.
+1. **Versand verfolgen** (Tracking, Quarantäne, Berichte usw.). Weitere Informationen hierzu finden Sie in den Abschnitten [Versand-Monitoring](about-delivery-monitoring.md) und [Nachrichten-Tracking](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/analytics/tracking/tracking){target="_blank"}.
 
 >[!NOTE]
 >

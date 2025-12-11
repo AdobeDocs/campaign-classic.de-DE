@@ -7,9 +7,9 @@ feature: Data Management
 role: User, Developer
 exl-id: a4472a7c-a16b-4d10-a8ca-f74ca5f62de4
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '674'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Die Abfragen werden im **[!UICONTROL Aggregator]**-Tab der Veröffentlichungsvor
 
 Die auf diese Weise abgerufenen Daten ergänzen das XML-Ausgabedokument in seinem Hauptelement.
 
-Beispiel für eine Rückgabe aus einer Abfrage über das Empfängerschema (**nms:recipient**):
+Beispiel eines Abfrageergebnisses zum Empfängerschema (**nms:recipient**):
 
 ```
 <book name="Content Management">
@@ -79,7 +79,7 @@ Eine Inhaltsrelation wird auf folgende Weise im Datenschema deklariert:
 <element expandSchemaTarget="cus:chapter" label="Main chapter" name="mainChapter" type="string"/>
 ```
 
-Die Definition der Relation wird auf einer **vom Typ** Zeichenfolge **`<element>`** ausgefüllt, und das Attribut **expandSchemaTarget** verweist auf das Zielschema („cus:chapter&quot; in unserem Beispiel). Das referenzierte Schema muss ein Inhaltsschema sein.
+Die Link-Definition wird in einem **string**-Typ **`<element>`** notiert; das Attribut **expandSchemaTarget** verweist auf das Zielschema (im vorliegenden Beispiel ist dies „cus:chapter“). Das referenzierte Schema muss ein Inhaltsschema sein.
 
 Der Inhalt des betroffenen Elements ergänzt das Relationselement, im vorliegenden Beispielschema also das Element **`<chapter>`**:
 
@@ -137,13 +137,13 @@ Im Datenschema wird eine Relation zu einer externen Tabelle wie folgt deklariert
 <element label="Main contact" name="mainContact" target="nms:recipient" type="link"/>
 ```
 
-Die Definition der Relation erfolgt in einem **vom Typ** link **`<element>`**, und das Attribut **target** verweist auf das Zielschema („nms:recipient&quot; in unserem Beispiel).
+Die Link-Definition wird in einem **link**-Typ **`<element>`** notiert; das Attribut **target** verweist auf das Zielschema (im vorliegenden Beispiel ist dies „nms:recipient“).
 
 Es ist gebräuchlich, die Relationen im Hauptelement des Datenschemas zu deklarieren.
 
 Der **Compute string** und der Schlüssel des betroffenen Elements ergänzen die Attribute **`<name>-id`** und **`<name>-cs`** des Hauptelements.
 
-In unserem Beispiel wird die Relation im Schema „cus:book&quot; ausgefüllt, der Inhalt der Linkdaten ist in den Attributen „mainContact-id“ und „mainContact-cs“ enthalten:
+Im vorliegenden Beispiel wurden der Link im Schema „cus:book“ und der Inhalt der Link-Daten in den Attributen „mainContact-id“ und „mainContact-cs“ notiert:
 
 ```
 <book computeString="Content management" date="2006/06/08" id="6106" language="en" mainContact-cs="John Doe (john.doe@adobe.com)" mainContact-id="3012" name="Content management" xtkschema="cus:book">

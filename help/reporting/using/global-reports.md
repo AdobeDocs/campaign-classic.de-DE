@@ -6,9 +6,9 @@ badge: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 feature: Reporting, Monitoring
 exl-id: 6839fd7e-ecf4-4504-90a8-0207bc3991e4
 source-git-commit: 2186b8a30449cb023cb07305ba64d53f2c8adab1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2495'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -120,7 +120,7 @@ Zu jeder Domain erscheint:
 * der prozentuale Anteil der fehlerhaften Nachrichten für diese Domain in Bezug auf die Gesamtzahl der verarbeiteten Nachrichten dieser Domain,
 * der prozentuale Anteil der fehlerhaften Nachrichten für diese Domain in Bezug auf die Gesamtzahl der fehlerhaften Nachrichten.
 
-Jede Zeile der Datentabelle kann durch Klick auf das Symbol &rbrack;+&lbrack; ausgeklappt werden. Dies ermöglicht die Anzeige der Aufschlüsselung der fehlerhaften Nachrichten nach Fehlertyp für jede Domain.
+Jede Zeile der Datentabelle kann durch Klick auf das Symbol ]+[ ausgeklappt werden. Dies ermöglicht die Anzeige der Aufschlüsselung der fehlerhaften Nachrichten nach Fehlertyp für jede Domain.
 
 ![](assets/s_ncs_user_errors_report_detail2.png)
 
@@ -167,9 +167,9 @@ In der Tabelle werden folgende Indikatoren dargestellt:
 
 ### Teilen über soziale Netzwerke {#sharing-to-social-networks}
 
-Empfänger von Sendungen können im Rahmen von Viral-Marketing Informationen mit ihrem Kontaktnetzwerk teilen: Sie können ihrem Profil einen Link hinzufügen (Facebook, X - früher als Twitter bezeichnet) oder eine Nachricht an einen Freund senden. Jede Freigabe und jeder Zugriff auf freigegebene Informationen werden innerhalb des Versands nachverfolgt. Weitere Informationen zum viralen Marketing finden Sie in [diesem Abschnitt](../../delivery/using/viral-and-social-marketing.md).
+Mit viralem Marketing können Empfängerinnen und Empfänger eines Versands Informationen über ihr Kontaktnetzwerk austauschen: Sie können einen Link zu ihrem Profil hinzufügen, etwa Facebook, X (ehemals Twitter) usw. oder einer Freundin oder einem Freund eine Nachricht senden. Jede Freigabe und jeder Zugriff auf freigegebene Informationen werden innerhalb des Versands nachverfolgt. Weitere Informationen zum viralen Marketing finden Sie in [diesem Abschnitt](../../delivery/using/viral-and-social-marketing.md).
 
-Dieser Bericht zeigt die Aufschlüsselung der freigegebenen und geöffneten Nachrichten nach sozialen Netzwerken (Facebook, X usw.) und/oder E-Mails.
+Dieser Bericht zeigt in sozialen Netzwerken (Facebook, X etc.) und/oder per E-Mail geteilte und geöffnete Nachrichten.
 
 ![](assets/s_ncs_user_social_report.png)
 
@@ -202,7 +202,7 @@ Dieser Bereich veranschaulicht in zwei Diagrammen die Aufschlüsselung von Teilu
 
 ## Statistiken zu Teilungsaktivitäten {#statistics-on-sharing-activities}
 
-Dieser Bericht zeigt die Entwicklung der Freigabe für soziale Netzwerke (Facebook, X - früher als Twitter, E-Mail, etc. bekannt) im Laufe der Zeit.
+Dieser Bericht zeigt die Entwicklung von in sozialen Netzwerken wie Facebook, X (ehemals Twitter) usw. geteilten Nachrichten im Zeitverlauf.
 
 Weitere Informationen zum Viral-Marketing finden Sie in [diesem Abschnitt](../../delivery/using/viral-and-social-marketing.md).
 

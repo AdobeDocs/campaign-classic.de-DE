@@ -6,9 +6,9 @@ feature: Email
 role: User, Admin, Developer
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
 source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1408'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -140,9 +140,9 @@ Weitere Informationen zu DKIM finden Sie im [Adobe-Handbuch mit den Best Practic
 
 ### Berichte zum Versanderfolg
 
-In der **[!UICONTROL Zusammenfassung]** eines E-Mail-Versands [Dashboard](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} beginnt der **[!UICONTROL Erfolg]**-Prozentsatz bei 100 % und sinkt dann während des Versand-[Gültigkeitszeitraums](communication-channels.md) schrittweise, da die Soft- und Hardbounces vom Enhanced MTA an Campaign zurückgemeldet werden.
+In der Ansicht **[!UICONTROL Zusammenfassung]** des [Dashboards](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} eines E-Mail-Versands beginnt der **[!UICONTROL Erfolgsprozentsatz]** bei 100 % und sinkt dann allmählich während des [Gültigkeitszeitraums](communication-channels.md) des Versands, da die Soft- und Hardbounces vom Enhanced MTA an Campaign zurückgemeldet werden.
 
-Alle Nachrichten werden in den Versandlogs als **[!UICONTROL gesendet]** angezeigt[&#x200B; sobald sie erfolgreich von Campaign an &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"} Enhanced MTA weitergeleitet wurden. Sie bleiben in diesem Status, bis oder bis ein [Bounce](delivery-failures-quarantine.md#delivery-failure-types-and-reasons) für diese Nachricht vom Enhanced MTA an Campaign zurückgesendet wird.
+Alle Nachrichten werden in den [Versandlogs](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"} als **[!UICONTROL Gesendet]** angezeigt, sobald sie erfolgreich von Campaign an den Enhanced MTA weitergeleitet wurden. Sie bleiben in diesem Status, es sei denn, vom erweiterten MTA wird ein [Bounce](delivery-failures-quarantine.md#delivery-failure-types-and-reasons) für diese Nachricht an Campaign zurückgemeldet.
 
 Wenn vom Enhanced MTA Hardbounces zurückgemeldet werden, ändert sich der Status dieser Nachrichten von **[!UICONTROL Gesendet]** in **[!UICONTROL Fehlgeschlagen]** und der **[!UICONTROL Erfolgsprozentsatz]** wird entsprechend verringert.
 
@@ -161,5 +161,5 @@ Die nachstehende Tabelle zeigt die verschiedenen Schritte im Versandprozess mit 
 | Nachricht wird erfolgreich von Campaign an den Enhanced MTA weitergeleitet | **[!UICONTROL Erfolgsprozentsatz]** beginnt bei 100 % | Gesendet |
 | Hardbounces werden vom Enhanced MTA zurückgemeldet. | **[!UICONTROL Erfolgsprozentsatz]** wird entsprechend verringert | Fehlgeschlagen |
 | Softbounces werden vom erweiterten MTA zurückgemeldet. | Keine Änderung des **[!UICONTROL Erfolgsprozentsatzes]** | Gesendet |
-| Weitere Zustellversuche von Nachrichten, bei denen ein Softbounce aufgetreten ist, sind erfolgreich | Keine Änderung am **[!UICONTROL Erfolg]** Prozentsatz \|  **[!UICONTROL Erfolg]** wird entsprechend erhöht | Gesendet |
+| Weitere Zustellversuche von Nachrichten, bei denen ein Softbounce aufgetreten ist, sind erfolgreich | Keine Änderung am **[!UICONTROL Erfolgsprozentsatz]** \|  **[!UICONTROL Erfolgsprozentsatz]** wird entsprechend erhöht | Gesendet |
 | Weitere Zustellversuche von Nachrichten, bei denen ein Softbounce aufgetreten ist, schlagen fehl | **[!UICONTROL Erfolgsprozentsatz]** wird entsprechend verringert | Fehlgeschlagen |

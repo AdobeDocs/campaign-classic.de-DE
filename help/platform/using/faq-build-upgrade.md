@@ -1,26 +1,26 @@
 ---
 product: campaign
-title: Häufig gestellte Fragen zur Build-Aktualisierung
-description: Häufige Fragen zu Build-Upgrades für Campaign Classic v7
+title: Häufig gestellte Fragen zum Build-Upgrade
+description: Häufige Fragen im Zusammenhang mit Build-Upgrades von Campaign Classic v7
 feature: Upgrade, Troubleshooting
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
 source-git-commit: 295e3596d9291cbcc55e2d264309141526c3806b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2069'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Häufig gestellte Fragen zur Build-Aktualisierung {#build-upgrade-faq}
+# Häufig gestellte Fragen zum Build-Upgrade {#build-upgrade-faq}
 
 In diesen häufig gestellten Fragen werden Fragen zu Build-Upgrades für Campaign Classic v7 behandelt, insbesondere für On-Premise- und Hybridbereitstellungen.
 
 >[!NOTE]
 >
->Umfassende Antworten auf häufig gestellte Fragen zu Campaign zu Workflows, Sendungen, Audiences und mehr finden Sie in den häufig gestellten Fragen zu [Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}.
+>Umfassende Antworten auf häufig gestellte Fragen zu Workflows, Sendungen, Zielgruppen und mehr in Campaign finden Sie in der [ausführlichen Sammlung häufig gestellter Fragen zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html?lang=de){target="_blank"}.
 
 Adobe Campaign wird regelmäßig aktualisiert. Wenn Sie unsere veröffentlichten [Versionshinweise](../../rn/using/rn-overview.md) kennen, wissen Sie wahrscheinlich, dass jedes Jahr im Schnitt zwei bis drei kleinere Versionen mit neuen Funktionen, Verbesserungen und Korrekturen herausgebracht werden. Zusätzlich veröffentlichen wir regelmäßig Builds, die ausschließlich Fehlerkorrekturen enthalten. Durch diese regelmäßige Bereitstellung von Updates soll sichergestellt werden, dass Sie stets die beste und neueste Version nutzen, sodass Ihre Umgebung sicher ist und Ihre Zufriedenheit bei der Nutzung unserer Produkte laufend steigt.
 

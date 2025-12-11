@@ -7,9 +7,9 @@ feature: Email Design
 role: User, Developer
 exl-id: d9688dc4-20c6-4a9a-990f-465f39b2faa2
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1457'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Ein JavaScript-Template wird wie Schemata oder Formulare über seinen Namen und 
 
 ### Struktur von JavaScript-Templates {#structure-of-a-javascript-template}
 
-Beispiel einer JavaScript HTML-Formatierungsvorlage, die auf dem Schema „cus:book basiert:
+Das folgende Beispiel zeigt eine auf dem Schema „cus:book“ basierende JavaScript-Vorlage für ein HTML-Layout:
 
 ```
 <html>
@@ -191,7 +191,7 @@ Im Folgenden wird die Konfiguration eines JavaScript-Templates dargestellt:
 
 Gehen Sie wie folgt vor:
 
-1. Erstellen Sie das folgende Schema (in diesem Fall: **neo:news**):
+1. Erstellen Sie folgendes Schema (hier **neo:news**):
 
    ```
    <srcSchema _cs="Invitation (neo)"   entitySchema="xtk:srcSchema" img="xtk:schema.png" label="Invitation" mappingType="sql" name="news" namespace="neo" xtkschema="xtk:srcSchema">
@@ -230,7 +230,7 @@ Gehen Sie wie folgt vor:
    </srcSchema>
    ```
 
-1. Erstellen des verknüpften **[!UICONTROL Content-Management]**-Typformulars (**neo:news**)
+1. Erstellen Sie das zugeordnete Formular (**neo:news**) vom Typ **[!UICONTROL Content-Management]**:
 
    ```
    <form _cs="News (neo)" entitySchema="xtk:form"  img="xtk:form.png" label="News"  name="news" namespace="neo" type="contentForm" xtkschema="xtk:form">
@@ -374,13 +374,13 @@ Diese Umwandlung wird in einem Stylesheet genannten XML-Dokument beschrieben.
 
 ### Identifizierung von Stylesheets {#identifying-a-stylesheet}
 
-Ein Stylesheet wird wie Schemata oder Formulare über seinen Namen und Namespace identifiziert. Es wird jedoch empfohlen den Namen mit **.xsl** zu ergänzen.
+Ein Stylesheet wird wie Schemata oder Formulare über seinen Namen und Namespace identifiziert. Es wird jedoch empfohlen, den Namen mit **.xsl** zu ergänzen.
 
-Der Identifizierungsschlüssel eines Stylesheets ist eine Zeichenfolge, die aus dem Namespace und dem Namen besteht, getrennt durch einen Doppelpunkt (z. B. **cus:book.xsl**.
+Der Identifikationsschlüssel eines Stylesheets ist ein String, der den Namespace und den Namen enthält, getrennt durch einen Doppelpunkt (z. B. **cus:book.xsl**).
 
 ### Struktur eines Stylesheets {#structure-of-a-stylesheet}
 
-Beispiel eines HTML-Formatierungsstylesheets basierend auf dem Beispielschema „cus:book:
+Das folgende Beispiel zeigt ein auf dem Schema „cus:book“ basierendes Stylesheet für ein HTML-Dokument:
 
 ```
 <?xml version="1.0" encoding="ISO-8859-1" ?>
@@ -444,7 +444,7 @@ Die folgenden Anweisungen beschreiben die Stylesheet-Konfiguration zur Formatier
 
 Standardmäßig sucht der XSLT-Prozessor die sich auf den Wurzel- oder Hauptknoten des XML-Quelldokuments beziehende **Vorlage**. Die Erstellung des Ausgabedokuments geschieht auf Basis dieser **Vorlage**.
 
-In unserem Beispiel wird eine HTML-Seite aus dem Schema „cus:book generiert, indem der Name des Buchs und die Liste der Kapitel angezeigt werden.
+Im vorliegenden Beispiel wird ausgehend vom Schema „cus:book“ eine HTML-Seite erzeugt, die den Titel und die Liste der Kapitel des Buches anzeigt.
 
 >[!NOTE]
 >

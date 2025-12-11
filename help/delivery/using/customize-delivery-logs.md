@@ -1,34 +1,34 @@
 ---
 product: campaign
-title: 'Erweitert: Anpassen von Versandlogs'
-description: Erfahren Sie, wie Sie Versandlog-Schemata erweitern, um benutzerdefinierte Felder in Campaign Classic v7 hinzuzufügen
+title: 'Fortgeschritten: Anpassen von Versandlogs'
+description: Erfahren Sie, wie Sie Versandlog-Schemata erweitern, um benutzerdefinierte Felder in Campaign Classic v7 hinzuzufügen
 feature: Monitoring
 role: User, Developer
 exl-id: 44ecc8c6-6584-43eb-96b4-7d8463053123
 source-git-commit: 2ebae2b84741bf26dd44c872702dbf3b0ebfc453
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '506'
-ht-degree: 64%
+ht-degree: 100%
 
 ---
 
-# Erweitert: Versandlogs anpassen {#customize-delivery-logs}
+# Fortgeschritten: Anpassen von Versandlogs {#customize-delivery-logs}
 
 >[!NOTE]
 >
->Eine umfassende Anleitung zum Zugriff auf die Versandliste und zur Verwendung des Versand-Dashboards finden Sie in der Dokumentation zu [&#x200B; v8 &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/delivery-dashboard). Diese Inhalte gelten für Benutzende von Campaign Classic v7 und Campaign v8.
+>Eine umfassende Anleitung zum Zugriff auf die Versandliste und zur Verwendung des Versand-Dashboards finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/delivery-dashboard). Diese Inhalte gelten für Benutzende von Campaign Classic v7 und Campaign v8.
 >
->Auf dieser Seite werden **Campaign Classic v7-spezifische erweiterte Anpassungen** Hybrid- und On-Premise-Bereitstellungen dokumentiert.
+>Auf dieser Seite werden **Campaign Classic v7-spezifische erweiterte Anpassungen** für Hybrid- und On-Premise-Bereitstellungen dokumentiert.
 
-Informationen zur Überwachung von Sendungen in der Campaign-Benutzeroberfläche finden Sie in der Dokumentation [Campaign v8-Sendungen überwachen in der Campaign-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}.
+Informationen zum Monitoring von Sendungen in der Campaign-Benutzeroberfläche finden Sie in der [Dokumentation zum Monitoring von Sendungen in der Campaign-Benutzeroberfläche von Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}.
 
-## Versandlogs anpassen {#use-case}
+## Anpassen von Versandlogs {#use-case}
 
-Bei Hybrid-/On-Premise-Bereitstellungen von **Campaign Classic v7** Sie Versandlogs anpassen, indem Sie Schemata erweitern. In diesem Abschnitt wird beschrieben, wie Sie die IP-Adressen der Absender zu den Versandlogs hinzufügen.
+Bei **Hybrid-/On-Premise-Bereitstellungen von Campaign Classic v7** können Sie Versandlogs anpassen, indem Sie Schemata erweitern. In diesem Abschnitt wird beschrieben, wie Sie den Versandlogs die IP-Adressen der Absenderinnen und Absender hinzufügen.
 
 >[!NOTE]
 >
->Diese Anpassung erfordert Schemaerweiterungsfunktionen, die in On-Premise-Bereitstellungen verfügbar sind. Campaign v8 Managed Cloud Services-Benutzer sollten sich an die Adobe-Kundenunterstützung wenden, um Protokollfelder für benutzerdefinierte Sendungen zu erhalten.
+>Diese Anpassung erfordert Schemaerweiterungsfunktionen, die in On-Premise-Bereitstellungen verfügbar sind. Benutzende von Campaign v8 Managed Cloud Services sollten sich an die Adobe-Kundenunterstützung wenden, um Informationen zu Feldern für benutzerdefinierte Versandlogs zu erhalten.
 >
 >Diese Änderung wird unterschiedlich ausgeführt, je nachdem, ob Sie eine einzelne Instanz oder eine Mid-Sourcing-Instanz verwenden. Stellen Sie vor der Änderung sicher, dass Sie mit der E-Mail sendenden Instanz verbunden sind.
 
@@ -113,9 +113,9 @@ Im Tab **[!UICONTROL Versand]** sollten Sie nach den Änderungen Folgendes sehen
 
 ## Verwandte Themen
 
-* [Überwachen von Sendungen in der Campaign-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} (Dokumentation zu Campaign v8)
+* [Monitoring von Sendungen in der Campaign-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} (Dokumentation zu Campaign v8)
 * [Versandstatus](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"} (Dokumentation zu Campaign v8)
-* [Fehlgeschlagene Sendungen analysieren](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (Dokumentation zu Campaign v8)
+* [Informationen zu Versandfehlern](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (Dokumentation zu Campaign v8)
 * [Quarantäneverwaltung](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (Dokumentation zu Campaign v8)
-* [Schema erweitern](../../configuration/using/extending-a-schema.md) (v7 Hybrid/On-Premise)
+* [Erweitern eines Schemas](../../configuration/using/extending-a-schema.md) (v7 Hybrid/On-Premise)
 

@@ -6,13 +6,13 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Deliverability
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
 source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '461'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# Aktualisieren falscher Hardbounces nach einem Apple-Ausfall {#update-bounce-qualification.md}
+# Aktualisieren fehlerhafter Hardbounces nach Apple-Ausfall {#update-bounce-qualification.md}
 
 ## Kontext
 
@@ -22,7 +22,7 @@ Dieses Problem trat am 26.04. auf und dauerte von 7:00 bis 13:00 Uhr EST.
 
 >[!NOTE]
 >
->Sie können das Systemstatus-Dashboard auf [dieser Seite](https://www.apple.com/de/support/systemstatus/) überprüfen.
+>Sie können das Apple-Systemstatus-Dashboard auf [dieser Seite](https://www.apple.com/de/support/systemstatus/) überprüfen.
 
 Bei Ausfall eines ISP können über Campaign versendete E-Mails nicht erfolgreich an ihren Empfänger zugestellt werden: Diese E-Mails werden fälschlicherweise als Bounces markiert.
 

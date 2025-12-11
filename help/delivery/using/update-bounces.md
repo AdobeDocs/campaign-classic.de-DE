@@ -8,7 +8,7 @@ hide: true
 hidefromtoc: true
 exl-id: 7a9afe0a-0219-40f1-9fe2-6374db8d555c
 source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '501'
 ht-degree: 100%
 
@@ -32,7 +32,7 @@ Bitte beachten: Wenn Aufschub-Bounces mit der Nachricht „452 angeforderte Akti
 
 >[!NOTE]
 >
->Sie können das Systemstatus-Dashboard auf [dieser Seite](https://www.apple.com/de/support/systemstatus/){_blank} überprüfen.
+>Sie können das Apple-Systemstatus-Dashboard auf [dieser Seite](https://www.apple.com/de/support/systemstatus/){_blank} überprüfen.
 >
 >Sie können das Google Workspace-Status-Dashboard auf [dieser Seite](https://www.google.com/appsstatus#hl=de&v=status){_blank} überprüfen.
 >

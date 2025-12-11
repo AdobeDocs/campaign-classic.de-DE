@@ -7,9 +7,9 @@ feature: Monitoring
 role: User, Developer
 exl-id: 9d3f5c74-377a-4e24-81e5-bb605f69cf8a
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '651'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -74,7 +74,7 @@ Wobei:
 * **[!DNL object]**: Name des Objekts (Beispiel: &quot;delivery&quot;, &quot;provider&quot; usw.).
 Objekt kann sein:
    * **[!DNL delivery]**: für den aktuellen Versand (siehe Details und Einschränkungen im Unterabschnitt unten).
-   * **[!DNL provider]**: für den aktuellen Versandanbieter/das aktuelle Routing (nms:externalAccount).
+   * **[!DNL provider]**: für den aktuellen Versand-Provider bzw. das aktuelle Versand-Routing (nms:externalAccount).
    * Ein zusätzliches Scriptobjekt: wenn ein Objekt im Kontext geladen wird: **Eigenschaften** > **Personalisierung** > **Objekte im Ausführungskontext hinzufügen**.
    * Element der foreach-Schleife: siehe Abschnitt [Foreach](#foreach) weiter unten.
 * **[!DNL xpath]**: Pfad (XPath) des Felds.
@@ -101,13 +101,13 @@ Für die E-Mail-Personalisierung kann auf zwei Arten auf das &quot;delivery&quot
 
 **Vorsicht**
 
-Wenn Sie die folgende Anweisung für Sendungen verwenden, die über Mid-Sourcing gesendet werden, muss das benutzerdefinierte Feld **@myCustomField** sowohl auf Marketing- als auch auf Mid-Sourcing:deliveryPlattformen zum nmsSchema hinzugefügt werden:
+Wenn Sie die folgende Anweisung für den Versand per Mid-Sourcing verwenden, muss das benutzerdefinierte Feld **@myCustomField** auf Marketing- und Mid-Sourcing-Plattformen dem Schema „nms:delivery“ hinzugefügt werden:
 
 ```
 <%@ value object="delivery" xpath="@myCustomField" %>
 ```
 
-Verwenden Sie für Versandparameter/-variablen die folgende Syntax (unter Verwendung des &quot;delivery&quot;-Objekts):
+Verwenden Sie für Versandparameter/-variablen die folgende Syntax (unter Verwendung des „delivery“-Objekts):
 
 ```
 <%@ value object="delivery" xpath="variables/var[@name='myVar']/@stringValue" %>

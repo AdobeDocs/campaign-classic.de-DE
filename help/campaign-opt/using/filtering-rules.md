@@ -8,9 +8,9 @@ hide: true
 hidefromtoc: true
 exl-id: a4d12445-5680-4704-9c67-e43e0ea6631b
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '530'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Gehen Sie wie folgt vor:
 
    ![](assets/campaign_opt_create_filter_01.png)
 
-1. Ändern Sie die Standard-Zielgruppendimension und wählen Sie die Abonnements aus **nms:subscription**.
+1. Ändern Sie die Standard-Zielgruppendimension und wählen Sie die Abonnements aus (**nms:subscription**).
 
    ![](assets/campaign_opt_create_filter_02.png)
 
@@ -62,7 +62,7 @@ In diesem Fall wird die Regel nur auf die Sendungen angewandt, die den Kriterien
 
 ## Erstellen und Verwenden einer Filtertypologie {#creating-and-using-a-filtering-typology}
 
-Sie haben die Möglichkeit, Typologien zu erstellen, die nur Filterregeln enthalten.**&#x200B;**
+Sie haben die Möglichkeit, Typologien zu erstellen, die nur Filterregeln enthalten.****
 
 ![](assets/campaign_opt_create_typo_filtering.png)
 

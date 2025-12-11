@@ -7,9 +7,9 @@ feature: Deliverability
 role: User
 exl-id: f301b34c-244c-4279-b23f-8224ea8eedbe
 source-git-commit: b2b188ee3f202c247ceac1f59a49b7ad1771d537
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '663'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -79,8 +79,8 @@ Teilweise werden E-Mails von Providern automatisch als Spam eingestuft, wenn die
 
 Weiterführende Informationen hierzu finden Sie in den folgenden Abschnitten:
 
-* [Fehlgeschlagene Sendungen analysieren](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (Campaign v8-Dokumentation - umfassendes Handbuch)
-* [Funktionsweise der Quarantäneverwaltung](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (umfassende Anleitung zu Campaign v8-Dokumentation)
+* [Informationen zu Versandfehlern](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} (Campaign v8-Dokumentation – umfassendes Handbuch)
+* [Funktionsweise der Quarantäneverwaltung](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} (Campaign v8-Dokumentation – umfassendes Handbuch)
 
 ### Verwenden von Tools zum Monitoring und Reporting
 

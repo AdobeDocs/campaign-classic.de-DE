@@ -7,9 +7,9 @@ feature: Data Model
 role: User, Developer
 exl-id: 3e28bfee-0321-40f4-9ef6-1bdb5b25041b
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '566'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ In einem Content-Management-Schema entspricht das Hauptelement folgendem Muster:
 
 Das Attribut **template** ermöglicht die Erweiterung des Schemas um die Eigenschaften, die in allen Inhaltsdefinitionen verwendet werden, wie z. B. Name, Erstellungsdatum, Autor, zugeordneter String usw.
 
-Diese Eigenschaften werden im **ncm:content**-Schema beschrieben.
+Diese Eigenschaften werden im Schema **ncm:content** beschrieben.
 
 >[!NOTE]
 >
