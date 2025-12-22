@@ -8,9 +8,9 @@ user-guide-description: Produktdokumentation für Adobe Campaign Classic v7.
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 2e3a14c97706a873f0791ef83708d704d2eed6c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2682'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 99%
    + Häufig gestellte Fragen {#faq}
       + [Häufig gestellte Fragen zu Campaign Classic](platform/using/faq-campaign-classic-v7.md)
       + [Build-Upgrade](platform/using/faq-build-upgrade.md)
-   + [Glossar - HIDDEN](platform/using/ac-glossary.md)
+   + [Glossar – AUSGEBLENDET](platform/using/ac-glossary.md)
    + Datenschutz {#privacy}
       + [Datenschutz und Einverständniserklärung](platform/using/privacy-and-recommendations.md)
       + [Datenschutzverwaltung](platform/using/privacy-management.md)
@@ -113,7 +113,7 @@ ht-degree: 99%
    + [Senden von E-Mails](delivery/using/about-email-channel.md)
    + Senden von E-Mails {#sending-emails}
       + [Erstellen eines E-Mail-Versands – AUSGEBLENDET](delivery/using/creating-an-email-delivery.md)
-      + [Definieren des E-Mail-Inhalts – AUSGEBLENDET &#x200B;](delivery/using/defining-the-email-content.md)
+      + [Definieren des E-Mail-Inhalts – AUSGEBLENDET ](delivery/using/defining-the-email-content.md)
       + [Definieren interaktiver Inhalte – AUSGEBLENDET](delivery/using/defining-interactive-content.md)
       + Senden des E-Mail-Versands {#sending-an-email}
          + [Wichtigste Schritte zum Senden einer E-Mail – AUSGEBLENDET](delivery/using/sending-messages.md)

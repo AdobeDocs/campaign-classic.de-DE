@@ -7,9 +7,9 @@ role: Developer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
 source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1185'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Im zentralen Abschnitt der Startseite finden Sie Links für den Zugriff auf das 
 
 ![](assets/d_ncs_user_interface_home.png)
 
-![](assets/do-not-localize/how-to-video.png) [&#x200B; Campaign-Arbeitsbereich im Video kennenlernen](#video)
+![](assets/do-not-localize/how-to-video.png)[ Campaign-Arbeitsbereich im Video kennenlernen](#video)
 
 >[!NOTE]
 >
@@ -106,7 +106,7 @@ Nutzen Sie beispielsweise auf der Seite der Sendungen die Schaltfläche **[!UICO
 
 ## Adobe Campaign-Explorer verwenden {#using-adobe-campaign-explorer}
 
-Auf den Adobe Campaign-Explorer kann über das entsprechende Symbol in der Symbolleiste zugegriffen werden. Dadurch können Sie auf alle Adobe Campaign-Funktionen, Konfigurationsbildschirme und eine detailliertere Ansicht einiger Plattformelemente zugreifen.
+Auf den Adobe Campaign-Explorer kann über das entsprechende Symbol in der Symbolleiste zugegriffen werden. Mit seiner Hilfe gelangen Sie zu allen Adobe Campaign-Funktionen und in die verschiedenen Konfigurationsbildschirme der Adobe Campaign-Plattform und können einige Plattformelemente im Detail anzeigen.
 
 Weitere Informationen zum Adobe Campaign-Explorer finden Sie auf folgenden Seiten in der **Dokumentation zu Campaign v8 (Konsole)**:
 
@@ -117,7 +117,7 @@ Weitere Informationen zum Adobe Campaign-Explorer finden Sie auf folgenden Seite
 * [Verwalten von Ordnern und Ansichten im Explorer](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}
 
 
-## Arbeiten mit Daten {#work-with-data}
+## Arbeiten mit Daten  {#work-with-data}
 
 ### Filtern von Daten {#filters}
 
@@ -125,13 +125,13 @@ Beim Filtern von Daten wird ein Datensatz so eingegrenzt, dass er nur noch Eintr
 
 Beim Durchsuchen von Campaign werden die Daten in Listen angezeigt. Sie können integrierte Filter anwenden, um schnell auf eine definierte Teilmenge zuzugreifen, z. B. Adressen in Quarantäne, nicht kontaktierte Empfängerinnen und Empfänger oder Einträge, die in einem bestimmten Altersbereich liegen oder ein bestimmtes Erstellungsdatum haben. Sie können auch benutzerdefinierte Filter erstellen, diese zur späteren Verwendung speichern und für andere Campaign-Benutzende freigeben.
 
-In der Dokumentation **Campaign v8 (Konsole** [&#x200B; erfahren Sie, wie Sie auf Filter zugreifen, sie erstellen und freigeben](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
+Wie Sie **auf Filter zugreifen, sie erstellen und freigeben**, erfahren Sie in der [Dokumentation zu Campaign v8 (Konsole)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/audience/create-filters){target=_blank}.
 
 ### Abfragen der Datenbank{#about-queries-in-campaign}
 
 Das Abfragetool ist auf verschiedenen Anwendungsebenen verfügbar und kann verwendet werden, um Zielgruppen zu definieren, Kundschaft zu segmentieren, Trackinglogs zu extrahieren und zu filtern, Filter zu erstellen und vieles mehr.
 
-+++Über den generischen Abfrage-Editor
++++Über das generische Abfragetool
 
 Es bietet einen speziellen Assistenten – das generische Abfragetool –, das Sie im Menü **[!UICONTROL Tools > Generisches Abfragetool…]** aufrufen können. Dieses Tool ermöglicht Datenbankabfragen zum Extrahieren, Organisieren, Gruppieren und Sortieren von Informationen. Beispielsweise können Sie Empfangende abrufen, die in einem bestimmten Zeitraum mehr als n-mal auf einen Newsletter-Link geklickt haben.
 
@@ -183,4 +183,4 @@ Weitere Informationen zum **Arbeiten mit Aufzählungen** finden Sie in der [Doku
 
 In diesem Video wird der Campaign Classic-Arbeitsbereich vorgestellt.
 
->[!VIDEO](https://video.tv.adobe.com/v/39531?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12)
