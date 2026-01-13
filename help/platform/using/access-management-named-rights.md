@@ -25,13 +25,13 @@ Es handelt sich um folgende Berechtigungen:
 
   >[!IMPORTANT]
   >
-  >**Nach der Migration zu IMS:** Nach der Migration zu Adobe Identity Management System (IMS) gewähren alle Produktprofile oder spezifischen Berechtigungen, die das Wort „admin“ im Namen enthalten (z. B. „administrators“, „admin“, „admins“ usw.), automatisch Zugriff auf das Campaign Control Panel. Es wird empfohlen, in spezifischen Berechtigungen oder Rollennamen nicht „admin“ zu verwenden, es sei denn, Sie möchten, dass diese Benutzer Zugriff auf das Control Panel haben. Erfahren Sie mehr über [IMS-Migration](../../technotes/using/migrate-users-to-ims.md) und [Verwalten des Control Panel-Zugriffs](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html){target="_blank"}.
+  >**Nach der Migration zu IMS:** Nach der Migration zu Adobe Identity Management System (IMS) gewähren alle Produktprofile oder spezifischen Berechtigungen, die das Wort „admin“ im Namen enthalten (z. B. „administrators“, „admin“, „admins“ usw.), automatisch Zugriff auf das Campaign Control Panel. Es wird empfohlen, in spezifischen Berechtigungen oder Rollennamen nicht „admin“ zu verwenden, es sei denn, Sie möchten, dass diese Benutzer Zugriff auf das Control Panel haben. Erfahren Sie mehr über [IMS-Migration](../../technotes/using/migrate-users-to-ims.md) und [Verwalten des Control Panel-Zugriffs](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=de){target="_blank"}.
 
 * **[!UICONTROL VALIDIERUNGSADMINISTRATION]**: Sie können verschiedene Validierungsschritte innerhalb von Workflows und Sendungen festlegen, um sicherzustellen, dass der aktuelle Status durch einen zugewiesenen Benutzer oder eine zugewiesene Gruppe validiert wurde. Benutzer mit der Berechtigung **[!UICONTROL VALIDIERUNGSADMINISTRATION]** können Validierungsschritte festlegen und auch einen Benutzer oder eine Benutzergruppe zuweisen, der bzw. die diese Schritte validieren soll.
 
   >[!IMPORTANT]
   >
-  >**Nach der Migration zu IMS:** gewähren Produktprofile oder spezifische Berechtigungen, die das Wort „Admin“ enthalten (z. B. „Genehmigungsadministrator„), Zugriff auf das Campaign Control Panel. Erfahren Sie mehr über [IMS-Migration](../../technotes/using/migrate-users-to-ims.md) und [Verwalten des Control Panel-Zugriffs](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html){target="_blank"}.
+  >**Nach der Migration zu IMS:** gewähren Produktprofile oder spezifische Berechtigungen, die das Wort „Admin“ enthalten (z. B. „Genehmigungsadministrator„), Zugriff auf das Campaign Control Panel. Erfahren Sie mehr über [IMS-Migration](../../technotes/using/migrate-users-to-ims.md) und [Verwalten des Control Panel-Zugriffs](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=de){target="_blank"}.
 
 * **[!UICONTROL ZENTRAL]**: Berechtigt zur zentralen Verwaltung (Dezentrales Marketing).
 
@@ -79,4 +79,4 @@ Standardgruppen und spezifische Berechtigungen legen den Zugriff auf bestimmte O
 
 Die Matrix der Zugriffsberechtigungen von Adobe Campaign ist [hier](/help/platform/using/assets/access-rights-matrix.pdf) verfügbar.
 
-[![image](assets/do-not-localize/user_management.png)](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf)
+[![image](assets/do-not-localize/user_management.png)](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf?lang=de)
