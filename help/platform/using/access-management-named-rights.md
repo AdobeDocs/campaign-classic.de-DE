@@ -6,10 +6,10 @@ feature: Access Management, Permissions
 role: User, Admin
 level: Beginner
 exl-id: 07470a91-d8d2-4c41-9555-05522c8068f0
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: ht
-source-wordcount: '555'
-ht-degree: 100%
+source-git-commit: 02ecc0e6bb3bd361f512baeefc9e0f2271063387
+workflow-type: tm+mt
+source-wordcount: '665'
+ht-degree: 83%
 
 ---
 
@@ -23,7 +23,15 @@ Es handelt sich um folgende Berechtigungen:
 
 * **[!UICONTROL ADMINISTRATION]**: Benutzer mit **[!UICONTROL ADMINISTRATORRECHTEN]** haben vollen Zugriff auf die Instanz. Administratoren können Objekte wie Workflows, Sendungen, Skripte usw. ausführen, erstellen, bearbeiten und löschen.
 
+  >[!IMPORTANT]
+  >
+  >**Nach der Migration zu IMS:** Nach der Migration zu Adobe Identity Management System (IMS) gewähren alle Produktprofile oder spezifischen Berechtigungen, die das Wort „admin“ im Namen enthalten (z. B. „administrators“, „admin“, „admins“ usw.), automatisch Zugriff auf das Campaign Control Panel. Es wird empfohlen, in spezifischen Berechtigungen oder Rollennamen nicht „admin“ zu verwenden, es sei denn, Sie möchten, dass diese Benutzer Zugriff auf das Control Panel haben. Erfahren Sie mehr über [IMS-Migration](../../technotes/using/migrate-users-to-ims.md) und [Verwalten des Control Panel-Zugriffs](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html){target="_blank"}.
+
 * **[!UICONTROL VALIDIERUNGSADMINISTRATION]**: Sie können verschiedene Validierungsschritte innerhalb von Workflows und Sendungen festlegen, um sicherzustellen, dass der aktuelle Status durch einen zugewiesenen Benutzer oder eine zugewiesene Gruppe validiert wurde. Benutzer mit der Berechtigung **[!UICONTROL VALIDIERUNGSADMINISTRATION]** können Validierungsschritte festlegen und auch einen Benutzer oder eine Benutzergruppe zuweisen, der bzw. die diese Schritte validieren soll.
+
+  >[!IMPORTANT]
+  >
+  >**Nach der Migration zu IMS:** gewähren Produktprofile oder spezifische Berechtigungen, die das Wort „Admin“ enthalten (z. B. „Genehmigungsadministrator„), Zugriff auf das Campaign Control Panel. Erfahren Sie mehr über [IMS-Migration](../../technotes/using/migrate-users-to-ims.md) und [Verwalten des Control Panel-Zugriffs](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html){target="_blank"}.
 
 * **[!UICONTROL ZENTRAL]**: Berechtigt zur zentralen Verwaltung (Dezentrales Marketing).
 
@@ -41,7 +49,7 @@ Es handelt sich um folgende Berechtigungen:
 
 * **[!UICONTROL LOKAL]**: Berechtigt zur lokalen Verwaltung (Dezentrales Marketing).
 
-* **[!UICONTROL FUSION]**: Berechtigt zum Verbinden der ausgewählten Datensätze zu einem Datensatz. Wenn Empfänger als Duplikate vorhanden sind, kann der Benutzer mit der Berechtigung **[!UICONTROL FUSION]** die Duplikate auswählen und zu einem primären Empfänger vereinen.
+* **[!UICONTROL ZUSAMMENFÜHRUNG]**: Berechtigt zum Zusammenführen der ausgewählten Datensätze zu einem Datensatz. Wenn Empfänger als Duplikate vorhanden sind, kann der Benutzer mit der Berechtigung **[!UICONTROL ZUSAMMENFÜHRUNG]** die Duplikate auswählen und zu einem primären Empfänger vereinen.
 
 * **[!UICONTROL SENDUNGEN VORBEREITEN]**: Berechtigung zum Erstellen, Bearbeiten und Speichern einer Sendung. Benutzer mit der Berechtigung **[!UICONTROL SENDUNGEN VORBEREITEN]** können auch den Prozess der Versandanalyse starten.
 
@@ -71,4 +79,4 @@ Standardgruppen und spezifische Berechtigungen legen den Zugriff auf bestimmte O
 
 Die Matrix der Zugriffsberechtigungen von Adobe Campaign ist [hier](/help/platform/using/assets/access-rights-matrix.pdf) verfügbar.
 
-[![image](assets/do-not-localize/user_management.png)](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf?lang=de)
+[![image](assets/do-not-localize/user_management.png)](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf)
