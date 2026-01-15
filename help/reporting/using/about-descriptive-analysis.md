@@ -6,7 +6,7 @@ feature: Reporting, Monitoring
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 exl-id: 19920058-e8e8-4e17-9cc3-24ddf9f96d04
 source-git-commit: 5e062f9dbdf6c148e442ac10dbb12cf72ba0179b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '209'
 ht-degree: 100%
 
@@ -28,7 +28,7 @@ Sie haben die Wahl zwischen Berichten für quantitative oder qualitative Analyse
 
   ![](assets/reporting_descriptive_sample_3.png)
 
-* Verteilung nach Segmenten
+* Aufschlüsselung nach Segmenten
 
   ![](assets/reporting_descriptive_sample_2.png)
 

@@ -48,7 +48,7 @@ Beachten Sie beim Erstellen Ihrer E-Mails die folgenden allgemeinen Best Practic
 
 * Halten Sie das Design einfach.
 
-* Denken Sie an Benutzer mit Smartphones und Tablets.
+* Denken Sie an Benutzer mit Mobilgeräten.
 
 * Vermeiden Sie vollständig bildbasierte E-Mails.
 

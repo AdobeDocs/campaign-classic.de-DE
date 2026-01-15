@@ -7,7 +7,7 @@ hide: true
 hidefromtoc: true
 exl-id: 99f82e91-45cd-4dff-b8a4-3ad87f2f9639
 source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '508'
 ht-degree: 100%
 
@@ -41,7 +41,7 @@ Listen können direkt in der Adobe Campaign-Startseite über die Schaltfläche *
 
 **Anwendungsbeispiel: Ausschluss einer Adressenliste von einem Versand**
 
-Im folgenden Beispiel soll eine Datei mit Adressen importiert werden, die gundsätzlich vom E-Mail-Versand auszuschließen sind (beispielsweise, weil die Empfänger nicht mehr existieren).
+Im folgenden Beispiel soll eine Datei mit Adressen importiert werden, die grundsätzlich vom E-Mail-Versand auszuschließen sind (beispielsweise, weil die Empfänger nicht mehr existieren).
 
 ![](assets/s_advuser_list_read_sample_1.png)
 

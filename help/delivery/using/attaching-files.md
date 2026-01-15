@@ -9,13 +9,13 @@ hide: true
 hidefromtoc: true
 exl-id: db65e83e-276f-4163-98c3-3658a48acffc
 source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1082'
 ht-degree: 100%
 
 ---
 
-# Dateien an eine E-Mail anhängen{#attaching-files}
+# Anhängen von Dateien an eine E-Mail{#attaching-files}
 
 ## Über E-Mail-Anhänge {#about-email-attachments}
 
@@ -165,7 +165,7 @@ Bei der Auswahl des Anhangs können Sie die Option **[!UICONTROL Dateiname wird 
 
 1. Analysieren und starten Sie den Versand.
 
-   In unten stehendem Beispiel wurde die angehängte Datei über den mithilfe der Personalisierungsfelder konfigurierten Namen gewählt.
+   In unten stehendem Beispiel wurde die angehängte Datei über den mithilfe der Zusammenführungsfelder konfigurierten Namen gewählt.
 
    ![](assets/s_ncs_user_wizard_email_calc_attachement_011.png)
 

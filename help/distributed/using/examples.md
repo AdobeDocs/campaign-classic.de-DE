@@ -7,7 +7,7 @@ hide: true
 hidefromtoc: true
 exl-id: 2bef6b5e-887e-4c56-bb4b-3583472ca333
 source-git-commit: 36fe54cf6d4d762d96205bd637311a426c741427
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1374'
 ht-degree: 100%
 
@@ -106,7 +106,7 @@ Zusammenfassend sind folgende Etappen zu durchlaufen:
 
    ![](assets/mkg_dist_use_case_target_valid8.png)
 
-1. Über den in der Benachrichtigung enthaltenen Link **[!UICONTROL Kontaktliste aufrufen und Zielgruppe validieren]** hat die Lokalstelle per Web-Schnittstelle Zugriff auf die Liste ihrer für die Kampagne ausgewählten Kontakte.
+1. Über den in der Benachrichtigung enthaltenen Link **[!UICONTROL Kontaktliste aufrufen und Zielgruppenbestimmung validieren]** hat die Lokalstelle per Web-Schnittstelle Zugriff auf die Liste ihrer für die Kampagne ausgewählten Kontakte.
 
    ![](assets/mkg_dist_use_case_target_valid9.png)
 
@@ -132,7 +132,7 @@ Nach den Validierungen kann die Kampagne automatisch beginnen.
    * den **[!UICONTROL Verteilungstyp]** Das Feld **[!UICONTROL Herkunft (@origin)]** aus der Empfängertabelle ermöglicht es hier, die Relation zwischen Kontakt und Lokalstelle zu identifizieren.
    * Das Feld **[!UICONTROL Validierungsspeicherung]**. Wählen Sie die Option **Lokale Validierung eines Empfängers**.
 
-1. Geben Sie im Tab **[!UICONTROL Verteilung]** folgende Parameter an:
+1. Geben Sie im Tab **[!UICONTROL Aufschlüsselung]** folgende Parameter an:
 
    * den **[!UICONTROL Wert des Verteilungsfelds]**, der den an der vorgesehenen Kampagne beteiligten Lokalstellen entspricht;
    * den **[!UICONTROL Titel]** der Lokalstelle;
@@ -145,7 +145,7 @@ Nach den Validierungen kann die Kampagne automatisch beginnen.
 #### Erstellen einer partizipativen Kampagne {#creating-a-collaborative-campaign}
 
 1. Erstellen Sie vom Knoten **[!UICONTROL Kampagnenverwaltung > Kampagnen]** aus eine neue Referenzkampagne unter Verwendung der Vorlage **[!UICONTROL Partizipative Kampagne (Zielgruppenvalidierung)]**.
-1. Erstellen Sie auf der Registerkarte **[!UICONTROL Zielbestimmungen und Workflows]** einen Workflow für die Kampagne. Dieser muss eine Aktivität vom Typ **Aufspaltung** enthalten, deren **[!UICONTROL Begrenzung der Anzahl von Datensätzen]** durch die **[!UICONTROL Datenverteilung]** festgelegt wird.
+1. Erstellen Sie auf der Registerkarte **[!UICONTROL Zielgruppenbestimmungen und Workflows]** einen Workflow für die Kampagne. Dieser muss eine Aktivität vom Typ **Aufspaltung** enthalten, deren **[!UICONTROL Begrenzung der Anzahl von Datensätzen]** durch die **[!UICONTROL Datenverteilung]** festgelegt wird.
 
    ![](assets/mkg_dist_use_case_target_valid5.png)
 
@@ -245,7 +245,7 @@ Zusammenfassend sind folgende Etappen zu durchlaufen:
 
    ![](assets/mkg_dist_use_case_form_4.png)
 
-1. Erfassen Sie bei Bedarf im Tab **[!UICONTROL Beschreibung]** nähere Hinweise zu der geplanten Kampagne. Diese Beschreibung ist in der Benachrichtigung enthalten, die die Lokalstellen bei der Veröffentlichung des Kits erhalten. An dieser Stelle können dem Kit zudem relevante Dokumente angehängt werden.
+1. Erfassen Sie bei Bedarf auf der Registerkarte **[!UICONTROL Beschreibung]** nähere Hinweise zu der geplanten Kampagne. Diese Beschreibung ist in der Benachrichtigung enthalten, die die Lokalstellen bei der Veröffentlichung des Kits erhalten. An dieser Stelle können dem Kampagnenkit zudem relevante Dokumente angehängt werden.
 
    ![](assets/mkg_dist_use_case_form_5.png)
 

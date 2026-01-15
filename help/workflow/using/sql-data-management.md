@@ -7,7 +7,7 @@ hide: true
 hidefromtoc: true
 exl-id: cada78cb-658f-4b9e-8136-31c17cb1d82f
 source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '446'
 ht-degree: 100%
 
@@ -47,7 +47,7 @@ Vor der Konfiguration der Aktivität müssen folgende Voraussetzungen gegeben se
 
    >[!CAUTION]
    >
-   >Der Codierer des SQL-Scripts ist dafür verantwortlich, dass das SQL-Script funktioniert und seine Referenzen (Feldnamen etc.) dem Outbound-Schema entsprechen.
+   >Der Codierer des SQL-Scripts ist dafür verantwortlich, dass das SQL-Script funktioniert und seine Verweise (Feldnamen etc.) dem Outbound-Schema entsprechen.
 
    Wenn Sie einen vorhandenen SQL-Code laden möchten, wählen Sie die Option **[!UICONTROL Der SQL-Code ist in einer in der Datenbank gespeicherten Entität enthalten]** aus. SQL-Scripts müssen im Menü **[!UICONTROL Administration]** / **[!UICONTROL Konfiguration]** / **[!UICONTROL SQL-Scripts]** erstellt und gespeichert werden.
 
@@ -73,7 +73,7 @@ Die Aktivität ist jetzt konfiguriert und kann im Workflow ausgeführt werden.
 >
 >Nachdem die Aktivität ausgeführt wurde, ist die Anzahl der gezählten Datensätze in der ausgehenden Transition nur als Richtwert zu erachten. Dieser kann je nach Komplexität des SQL-Scripts variieren.
 >  
->Wenn die Aktivität erneut gestartet wird, wird das gesamte Script unabhängig vom Ausführungsstatus von vorn ausgeführt.
+>Wenn die Aktivität neu gestartet wird, wird das gesamte Script unabhängig vom Ausführungsstatus von vorn ausgeführt.
 
 ## Muster für SQL-Scripts {#sql-script-samples}
 
@@ -112,7 +112,7 @@ CREATE INDEX ON <%= activity.tableName %> (sEmail);
 ANALYZE <%= activity.tableName %> (sEmail);
 ```
 
-Mit diesem Script können Sie zwei Arbeitstabellen verbinden:
+Mit diesem Skript können Sie zwei Arbeitstabellen zusammenführen:
 
 ```
 CREATE TABLE <%= activity.tableName %>

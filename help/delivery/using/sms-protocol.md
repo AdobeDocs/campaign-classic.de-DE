@@ -45,7 +45,7 @@ Beim Senden von Massen-SMS über einen SMS-Provider kommen drei verschiedene Art
 
 * **SMS MO (Mobile Originated)**: Eine SMS, die von einem Smartphone oder Tablet über den SMPP-Provider an Adobe Campaign gesendet wird.
 
-* **SMS SR (Status Report = Statusbericht) oder DR oder DLR (Delivery Receipt = Empfangsbestätigung)**: Eine vom Smartphone oder Tablet über den SMPP-Provider an Adobe Campaign gesendete Rückbestätigung, die angibt, dass die SMS erfolgreich empfangen wurde. Adobe Campaign erhält möglicherweise auch einen SR, der angibt, dass die Nachricht nicht zugestellt werden konnte, oft mit einer Fehlerbeschreibung.
+* **SMS SR (Status Report = Statusbericht) oder DR oder DLR (Delivery Receipt = Empfangsbestätigung)**: Eine vom Mobilgerät über den SMPP-Provider an Adobe Campaign gesendete Rückbestätigung, die angibt, dass die SMS erfolgreich empfangen wurde. Adobe Campaign erhält möglicherweise auch einen SR, der angibt, dass die Nachricht nicht zugestellt werden konnte, oft mit einer Fehlerbeschreibung.
 
 Sie müssen zwischen Quittungen (RESP PDU, Teil des SMPP-Protokolls) und SR unterscheiden: SR ist eine Art SMS, die über das Netzwerk gesendet wird, während eine Quittung nur bestätigt, dass eine Übertragung erfolgreich war.
 

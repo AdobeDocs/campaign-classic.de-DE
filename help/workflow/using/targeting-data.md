@@ -1,13 +1,13 @@
 ---
 product: campaign
-title: Zielgruppendaten
-description: Weitere Informationen zu Zielgruppendaten in einem Workflow.
+title: Zielgruppenbestimmungsdaten
+description: Weitere Informationen zu Zielgruppenbestimmungsdaten in einem Workflow.
 feature: Query Editor, Data Management, Workflows
 hide: true
 hidefromtoc: true
 exl-id: 74b82019-bdab-4442-84cf-5ad18d0db788
 source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2026'
 ht-degree: 100%
 
@@ -73,7 +73,7 @@ In den Aktivitäten **[!UICONTROL Vereinigung]**, **[!UICONTROL Schnittmenge]** 
 
 ### Erstellen von Teilmengen {#creating-subsets}
 
-Über die **[!UICONTROL Aufspaltungsaktivität]** lassen sich gemäß bestimmten Kriterien entsprechende Teilmengen erstellen. Aktivieren Sie hierfür in jeder Teilmenge die Option zur Erstellung von Filterbedingungen für die Population und definieren Sie im sich öffnenden Abfragefenster die Kriterien zur Zielgruppensegmentierung.
+Über die **[!UICONTROL Aufspaltungsaktivität]** lassen sich anhand von Extraktionsabfragen entsprechende Teilmengen erstellen. Aktivieren Sie hierfür in jeder Teilmenge die Option zur Erstellung von Filterbedingungen für die Population und definieren Sie im sich öffnenden Abfragefenster die Kriterien zur Zielgruppensegmentierung.
 
 Sie können eine Zielgruppe in mehrere Teilmengen unterteilen, indem Sie als Filterbedingungen nur zusätzliche Daten oder aber diese zusätzlich zu den Zielgruppendaten verwenden. Sie können auch externe Daten nutzen, wenn Sie die Option **Federated Data Access** besitzen.
 
@@ -109,7 +109,7 @@ Zur Abstimmung der Daten stehen folgende Optionen zur Verfügung:
 
   >[!CAUTION]
   >
-  >Die Populationen werden im Rahmen der Abstimmung nicht auf Dubletten geprüft.
+  >Die Populationen werden im Rahmen der Abstimmung nicht auf Duplikate geprüft.
 
   Sie können die Populationsgröße auf eine gewisse Anzahl an Datensätzen begrenzen. Kreuzen Sie hierfür die entsprechende Option an und geben Sie die Anzahl an beizubehaltenden Datensätzen an.
 
@@ -163,7 +163,7 @@ Zur Konfiguration wählen Sie zunächst die Bedingungen aus:
 
    Im Feld **[!UICONTROL Titel]** können Sie die erstellte Teilmenge benennen. Der Titel wird auf der ausgehenden Transition angezeigt.
 
-   Sie können der Teilmenge außerdem einen Segment-Code zuweisen, welcher ihre Identifizierung und ihre Verwendung als Zielgruppe ermöglicht.
+   Sie können der Teilmenge außerdem einen Segment-Code zuweisen, welcher ihre Identifizierung und ihre Verwendung als Zielpopulation ermöglicht.
 
    Bei Bedarf können die Zielgruppenbestimmungs- und Filterungsdimensionen für jede Teilmenge, die Sie erstellen wollen, einzeln angepasst werden. Bearbeiten Sie dazu die Filterbedingung der Teilmenge und aktivieren Sie die Option **[!UICONTROL Spezifische Filterdimension verwenden]**.
 
@@ -237,7 +237,7 @@ In Adobe Campaign umfasst das Data Management eine Reihe von Aktivitäten, die m
 
 * Zielbestimmungen vereinfacht, u. a. durch Einschluss von nicht im Datamart modelisierten Daten (Erstellung neuer Tabellen: lokale Erweiterung auf jeden Zielgruppen-Workflow in Abhängigkeit von seiner Konfiguration);
 * Zwischenergebnisse gespeichert und weitergegeben (interessant im Zuge der Zielbestimmung oder der Datenbankadministration);
-* Zugriffe auf externe Datenbanken ermöglicht (optional), was die Berücksichtigung heterogener Datenbanken bei Zielbestimmungsprozessen zulässt.
+* Zugriffe auf externe Datenbanken ermöglicht (optional), was die Berücksichtigung heterogener Datenbanken bei Zielgruppenbestimmungsprozessen zulässt.
 
 Hierfür bietet Adobe Campaign:
 
@@ -253,7 +253,7 @@ Hierfür bietet Adobe Campaign:
 
 ### Anreichern und Ändern von Daten {#enriching-and-modifying-data}
 
-Ergänzend zur Zielgruppendimension ermöglicht die Filterdimension, die Art der abgerufenen Daten zu präzisieren. Siehe [Zielgruppen- und Filterdimensionen](building-a-workflow.md#targeting-and-filtering-dimensions).
+Ergänzend zur Zielgruppendimension ermöglicht die Filterdimension, die Art der abgerufenen Daten zu präzisieren. Siehe [Zielgruppenbestimmungs- und Filterdimensionen](building-a-workflow.md#targeting-and-filtering-dimensions).
 
 Identifizierte und abgerufene Daten können angereichert, zusammengefasst und bearbeitet werden, um die Zielgruppenerstellung zu optimieren. Verwenden Sie dazu zusätzlich zu den im Abschnitt [Daten segmentieren](#segmenting-data) beschriebenen Datenbearbeitungstätigkeiten Folgendes:
 

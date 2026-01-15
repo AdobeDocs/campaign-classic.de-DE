@@ -159,4 +159,4 @@ Sie müssen die **appsubscriptionRcp** erweitern, um in der Campaign-Datenbank n
 
    >[!CAUTION]
    >
-   >Stellen Sie sicher, dass die Parameterbezeichnungen auf der Registerkarte **[!UICONTROL Abonnementparameter]** mit denen im Anwendungs-Code übereinstimmen. <!--Refer to [this section](integrating-campaign-sdk-into-the-mobile-application.md).-->
+   >Stellen Sie sicher, dass die Parameterbezeichnungen auf der Registerkarte **[!UICONTROL Abonnementparameter]** mit denen im App-Code übereinstimmen. <!--Refer to [this section](integrating-campaign-sdk-into-the-mobile-application.md).-->

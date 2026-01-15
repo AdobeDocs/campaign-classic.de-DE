@@ -10,7 +10,7 @@ hidefromtoc: true
 topic-tags: tasks--resources-and-budgets
 exl-id: 6765e307-915a-44d2-a486-85c64e8ec52e
 source-git-commit: 942edcf028207eab2ea583949ebc99ab61539ea0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2559'
 ht-degree: 100%
 
@@ -62,7 +62,7 @@ Budgets werden in der Karte im Knoten **[!UICONTROL Kampagnenverwaltung > Budget
 
 * Gültigkeitszeitraum bestimmen
 
-  Geben Sie Beginn und Ende der Budgetplanung ein. Es handelt sich hierbei lediglich um Richtwerte.
+  Geben Sie Start- und Enddatum der Budgetplanung ein. Es handelt sich hierbei lediglich um Richtwerte.
 
 * Ausgaben
 
@@ -189,7 +189,7 @@ Kosten werden in drei Kategorien eingeteilt:
 
    ![](assets/s_user_edit_budget_tab_ventil.png)
 
-   Jeder Kostenbetrag kann einer Kategorie zugeordnet werden. Dies ermöglicht eine Übersicht der Kostenverteilung nach Ausgabenkategorien im übergeordneten Budget sowie in den Budgetberichten.
+   Jeder Kostenbetrag kann einer Kategorie zugeordnet werden. Dies ermöglicht eine Aufschlüsselung der Kosten nach Ausgabenkategorien im übergeordneten Budget sowie in den Budgetberichten.
 
 1. Berechnete Kosten
 
@@ -204,7 +204,7 @@ Kosten werden in drei Kategorien eingeteilt:
 
    >[!NOTE]
    >
-   >Über den **[!UICONTROL Verteilung]**-Link der berechneten Kosten können Details der Berechnung sowie das Datum der letzten Kostenberechnung eingesehen werden.
+   >Über den **[!UICONTROL Aufschlüsselung]**-Link der berechneten Kosten können Details der Berechnung sowie das Datum der letzten Kostenberechnung eingesehen werden.
 
 1. Tatsächliche Kosten
 
@@ -264,7 +264,7 @@ Im Folgenden wird eine Kampagne mit folgenden Elementen erstellt:
 
    ![](assets/s_user_cost_mgmt_sample_4.png)
 
-1. Geben Sie die Plankosten mit Verteilung an:
+1. Geben Sie die Plankosten mit Aufschlüsselung an:
 
    ![](assets/s_user_cost_mgmt_sample_9.png)
 
@@ -300,7 +300,7 @@ Auf Versandniveau werden die berechneten Kosten mit folgenden Daten aktualisiert
 
 ![](assets/s_user_cost_mgmt_sample_12.png)
 
-Beim Bearbeiten der berechneten Kosten können Sie die Kostenverteilung sowie Status und Datum der Kostenberechnung überprüfen.
+Beim Bearbeiten der berechneten Kosten können Sie die Aufschlüsselung der Kosten sowie Status und Datum der Kostenberechnung überprüfen.
 
 #### Schritt 5: Aufgaben erstellen {#step-5---creating-tasks}
 
@@ -318,7 +318,7 @@ Zu dieser Kampagne fügen wir die beiden Aufgaben hinzu, für die die Kostenstru
 
    Mit Speicherung der Aufgabe übernehmen die berechneten Kosten den für die Plankosten angegebenen Wert.
 
-   Nach Beendung der Aufgabe (Status **[!UICONTROL Abgeschlossen]**) werden die berechneten Kosten automatisch mit den Kosten des Großen Saals aktualisiert (entsprechend der Angabe in seiner Kostenstruktur). Diese Kosten werden ebenfalls der Kategorie zugeordnet.
+   Nach Beendigung der Aufgabe (Status **[!UICONTROL Abgeschlossen]**) werden die berechneten Kosten automatisch mit den Kosten des Großen Saals aktualisiert (entsprechend der Angabe in seiner Kostenstruktur). Diese Kosten werden ebenfalls der Kategorie zugeordnet.
 
 1. Erstellen Sie auf die gleiche Weise eine zweite Aufgabe mit einer Planung über fünf Tage und verbinden Sie sie mit der zuvor erstellen Kostenstruktur.
 

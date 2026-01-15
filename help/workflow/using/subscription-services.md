@@ -7,7 +7,7 @@ hide: true
 hidefromtoc: true
 exl-id: 1b526d1c-4a33-45a1-98f4-dcb803c8d228
 source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '429'
 ht-degree: 100%
 
@@ -35,7 +35,7 @@ Die Konfiguration der Aktivität besteht in der Angabe eines Titels, die Auswahl
 
 ## Anwendungsbeispiel: Empfänger einer Liste für einen Newsletter anmelden {#example--subscribe-a-list-of-recipients-to-a-newsletter}
 
-Im folgenden Beispiel sollen Empfänger der Altersgruppe zwischen 18 und 60 Jahre, die in Berlin leben, für einen speziellen Newsletter angemeldet werden.
+Der folgende Workflow soll in einem einzigen Vorgang eine Liste der Empfänger erstellen, die für einen Newsletter in Frage kommen, der sich an in Paris lebende Berufstätige richtet, um sie zum Abonnieren zu bewegen.
 
 Dabei sollen die Profile, die den Newsletter bereits erhalten, ausgeschlossen werden.
 

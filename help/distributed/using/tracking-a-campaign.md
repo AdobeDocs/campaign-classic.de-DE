@@ -7,7 +7,7 @@ hide: true
 hidefromtoc: true
 exl-id: 87d1909c-d2eb-47ce-a860-0e78a64d2914
 source-git-commit: 36fe54cf6d4d762d96205bd637311a426c741427
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '440'
 ht-degree: 100%
 
@@ -54,7 +54,7 @@ Zentrale Benutzer verfügen über zwei unterschiedliche Möglichkeiten, eine Bes
 
    ![](assets/mkg_dist_catalog_op_command_edit1a.png)
 
-1. Der Benutzer kann auf den Titel des Kits klicken, um ihn zu öffnen und gegebenenfalls bestimmte Parameter zu verändern.
+1. Der Benutzer kann auf den Titel des Kampagnenkits klicken, um ihn zu öffnen und gegebenenfalls bestimmte Parameter zu verändern.
 
    ![](assets/mkg_dist_catalog_op_command_edit2.png)
 
@@ -76,7 +76,7 @@ Auf Niveau einer **partizipativen Kampagne** hat der Abbruch eines Kits folgende
 
    ![](assets/mkg_dist_mutual_op_cancelled.png)
 
-1. Abbruch der Hauptkampagne und Anhalten aller laufenden Vorgänge (Workflows, Sendungen);
+1. Abbruch der Hauptkampagne und Anhalten aller aktiven Vorgänge (Workflows, Sendungen);
 
    ![](assets/mkg_dist_mutual_op_cancelled1.png)
 

@@ -32,7 +32,7 @@ Folgende Schritte sind auszuführen, um eine Abfrage in Adobe Campaign zu erstel
 
 >[!NOTE]
 >
->* Alle diese Schritte können im generischen Abfragetool durchgeführt werden. In anderen Anwendungskontexten sind u. U. gewisse Schritte nicht nötig.\
+>* Alle diese Schritte können im generischen Abfrage-Editor durchgeführt werden. In anderen Anwendungskontexten sind u. U. gewisse Schritte nicht nötig.\
 >Das Abfrage-Tool wird in [diesem Abschnitt](../../workflow/using/query.md) beschrieben.
 >* Weitere Informationen zu Abfragen und wie diese erstellt werden finden Sie in der [Dokumentation zu Campaign v8](../../workflow/using/query.md).
 

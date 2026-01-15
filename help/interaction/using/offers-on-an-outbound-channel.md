@@ -9,7 +9,7 @@ content-type: reference
 topic-tags: case-study
 exl-id: 77fee343-09d1-4d60-be43-efe02953a70c
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '477'
 ht-degree: 100%
 
@@ -43,7 +43,7 @@ Angenommen, Sie verfügen in Ihrer Datenbank über eine Reihe von Angeboten für
 
    ![](assets/offer_delivery_example_005.png)
 
-1. Schließen Sie das Angebotsfenster und erstellen Sie den Inhalt Ihres Versands.
+1. Schließen Sie das Fenster für die Angebotsverwaltung und erstellen Sie den Inhalt Ihres Versands.
 
    ![](assets/offer_delivery_example_006.png)
 
@@ -111,13 +111,13 @@ Angenommen, Sie verfügen in Ihrer Datenbank über eine Reihe von Angeboten für
 
    ![](assets/offer_simulation_example_010.png)
 
-1. Nach Abschluss der Simulation können Sie im Tab **[!UICONTROL Ergebnisse]** die Verteilung der Vorschläge pro Angebot ansehen.
+1. Nach Abschluss der Simulation können Sie im Tab **[!UICONTROL Ergebnisse]** die Aufschlüsselung der Vorschläge pro Angebot ansehen.
 
-   Im vorliegenden Beispiel beruht die Verteilung wie konfiguriert auf drei Vorschlägen.
+   Im vorliegenden Beispiel beruht die Aufschlüsselung wie konfiguriert auf drei Vorschlägen.
 
    ![](assets/offer_simulation_example_011.png)
 
-1. Rufen Sie den Bericht **[!UICONTROL Angebotsverteilung nach Rang]** auf, um die Reihenfolge der durch das Angebotsmodul ausgewählten Angebote im Detail anzusehen.
+1. Rufen Sie den Bericht **[!UICONTROL Angebotsaufschlüsselung nach Rang]** auf, um die Reihenfolge der durch das Angebotsmodul ausgewählten Angebote im Detail anzusehen.
 
    ![](assets/offer_simulation_example_012.png)
 

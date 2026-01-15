@@ -7,7 +7,7 @@ hide: true
 hidefromtoc: true
 exl-id: 7c093b34-6b0e-4403-9d9d-fba9ba39ea41
 source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '206'
 ht-degree: 100%
 
@@ -65,7 +65,7 @@ Sie helfen Ihnen dabei, die verschiedenen Kontexte zu verstehen, in denen Workfl
 * [Aggregat berechnen](performing-aggregate-computing.md)
 * [Abfrage mit Gruppierungsbedingungen](querying-using-grouping-management.md)
 * [Abfrage mit einer n:n-Relation](querying-using-many-to-many-relationship.md)
-* [Hinzufügen eines berechneten Auflistungsfelds](adding-enumeration-type-calculated-field.md)
+* [Hinzufügen eines berechneten Aufzählungsfelds](adding-enumeration-type-calculated-field.md)
 * [Erstellen von Filtern](creating-a-filter.md)
 * [Filtern duplizierter Empfänger](filtering-duplicated-recipients.md)
 * [Aufrufen von Instanzvariablen in Abfragen](javascript-scripts-and-templates.md#calling-an-instance-variable-in-a-query)

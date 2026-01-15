@@ -17,7 +17,7 @@ ht-degree: 100%
 # Entwerfen und Ausführen von Marketing-Kampagnen{#designing-marketing-campaigns}
 
 
-Mit Adobe Campaign können Sie Kommunikations- und Marketing-Kampagnen definieren, optimieren, ausführen und analysieren. Adobe Campaign fungiert dabei als zentrales Befehls- und Ausführungszentrum für Marketing-Strategien. Weitere Informationen finden Sie unter [Auf Kampagnen zugreifen](../../distributed/using/accessing-campaigns.md) und [Marketing-Kampagnen erstellen](../../campaign/using/setting-up-marketing-campaigns.md).
+Mit Adobe Campaign können Sie Kommunikations- und Marketing-Kampagnen definieren, optimieren, ausführen und analysieren. Adobe Campaign fungiert dabei als zentrales Befehls- und Ausführungs-Tool für Marketing-Strategien. Weitere Informationen finden Sie unter [Auf Kampagnen zugreifen](../../distributed/using/accessing-campaigns.md) und [Marketing-Kampagnen erstellen](../../campaign/using/setting-up-marketing-campaigns.md).
 
 Darüber hinaus gestattet das Modul **Marketing Resource Management (MRM)** die Steuerung von Marketing-Aktionen in einem kollaborativen Modus, indem es eine vollständige Verwaltung und ein Echtzeit-Tracking der betreffenden Aufgaben, Budgets und Marketing-Ressourcen erlaubt. Das Marketing Resource Management ermöglicht die Optimierung und Regulierung der Verwaltung von internen und externen Prozessen, Ressourcen und Marketing-Kampagnen sowie der Zusammenarbeit mit externen Dienstleistern (Agenturen, Druckereien etc.). Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../mrm/using/about-marketing-resource-management.md).
 
@@ -68,6 +68,6 @@ Im Folgenden werden Termini dargestellt, die im Zusammenhang mit Campaign von Be
 
 In diesem Video werden die wichtigsten Konzepte von Marketing-Kampagnen vorgestellt.
 
->[!VIDEO](https://video.tv.adobe.com/v/326572?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/35131?quality=12)
 
 Weitere Anleitungsvideos zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).

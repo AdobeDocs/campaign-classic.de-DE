@@ -7,7 +7,7 @@ feature: Seed Address
 role: User
 exl-id: 1f55eda8-c393-4f86-9118-01bcd981c6df
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '400'
 ht-degree: 100%
 
@@ -41,7 +41,7 @@ F체r den Briefpost-Versand werden Testadressen w채hrend der Extraktion hinzugef�
 
 >[!IMPORTANT]
 >
->Bei Briefsendungen muss das Format der Extraktionsdatei folgende Bedingungen erf체llen:
+>Bei Briefpost-Sendungen muss das Format der Extraktionsdatei folgende Bedingungen erf체llen:
 >
 >* Keine Verwendung der Option **[!UICONTROL Gruppierungen verwalten (GROUP BY + HAVING)]**.
 >* Bei der Extraktion von Sammlungselementen bleiben die entsprechenden Felder f체r Testadressen leer, es sei denn, die Option **[!UICONTROL Nur eine Zeile (Expertenmodus)]** wurde ausgew채hlt. Weiterf체hrende Informationen hierzu finden Sie in [diesem Abschnitt](../../platform/using/executing-export-jobs.md#step-7---data-formatting).

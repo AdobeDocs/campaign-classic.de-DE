@@ -7,7 +7,7 @@ hide: true
 hidefromtoc: true
 exl-id: 17b5865a-5e04-4b3b-8b6a-12d5c1a9c1da
 source-git-commit: 36fe54cf6d4d762d96205bd637311a426c741427
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1698'
 ht-degree: 100%
 
@@ -33,7 +33,7 @@ Lokale Kampagnen sind Kampagneninstanzen, die bei jeder Bestellung basierend auf
 
 ## Erstellen Sie eine Vorlage für eine lokale Kampagne {#creating-a-local-campaign-template}
 
-Um ein Kamapgnenkit zu erstellen, muss zunächst eine **Kamapgnenvorlage** im Navigationsknoten **[!UICONTROL Ressourcen > Vorlagen]** erstellt werden.
+Um ein Kampagnenkit zu erstellen, muss zunächst eine **Kamapgnenvorlage** im Navigationsknoten **[!UICONTROL Ressourcen > Vorlagen]** erstellt werden.
 
 Um eine neue Vorlage für eine lokale Kampagne zu erstellen, duplizieren Sie die Standard-Vorlage **[!UICONTROL Lokale Kampagne (opLocal)]**.
 
@@ -125,7 +125,7 @@ Wenn Sie das Hochladen von Dokumenten nicht zulassen möchten, geben Sie im Feld
 
 ### Workflow {#workflow}
 
-Erstellen Sie im Tab **[!UICONTROL Zielbestimmungen und Workflows]** der Kampagnenvorlage den Workflow, der die zuvor in den **[!UICONTROL Erweiterten Kampagnenparametern]** festgelegten **[!UICONTROL Standardwerte]** abruft und Sendungen erstellt.
+Erstellen Sie im Tab **[!UICONTROL Zielgruppenbestimmungen und Workflows]** der Kampagnenvorlage den Workflow, der die zuvor in den **[!UICONTROL Erweiterten Kampagnenparametern]** festgelegten **[!UICONTROL Standardwerte]** abruft und Sendungen erstellt.
 
 ![](assets/mkg_dist_local_op_creation4b.png)
 
@@ -330,7 +330,7 @@ Die Ablehnung wird in der Liste der Kampagnenkits oder der Kampagnenbestellungen
 
 ![](assets/mkg_dist_do_not_valid_view.png)
 
-Der Kommentar kann im Tab **[!UICONTROL Bearbeiten > Verfolgung]** des Kits eingesehen werden.
+Der Kommentar kann auf der Registerkarte **[!UICONTROL Bearbeiten > Verfolgung]** des Kampagnenkits eingesehen werden.
 
 ![](assets/mkg_dist_do_not_valid_tab.png)
 

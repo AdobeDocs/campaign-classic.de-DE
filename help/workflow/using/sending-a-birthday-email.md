@@ -7,7 +7,7 @@ hide: true
 hidefromtoc: true
 exl-id: 38006cca-e945-4b9d-8e2d-ed537b8541d9
 source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '933'
 ht-degree: 100%
 
@@ -29,7 +29,7 @@ In diesem täglich ausgeführten Workflow werden alle Empfänger ausgewählt, de
 
 ![](assets/do-not-localize/how-to-video.png) Dieses Anwendungsbeispiel ist auch als Video unter [Erstellen eines Workflows](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/automating-with-workflows/creating-a-workflow.html?lang=de) verfügbar.
 
-Erstellen Sie eine Kampagne und klicken Sie auf den Tab **[!UICONTROL Zielbestimmungen und Workflows]**. Lesen Sie diesbezüglich auch den Abschnitt [Erstellen einer Hauptzielgruppe im Workflow](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
+Erstellen Sie eine Kampagne und klicken Sie auf den Tab **[!UICONTROL Zielgruppenbestimmungen und Workflows]**. Lesen Sie diesbezüglich auch den Abschnitt [Erstellen einer Hauptzielgruppe im Workflow](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
 
 Gehen Sie dann wie folgt vor:
 
@@ -92,7 +92,7 @@ Gehen Sie hierzu wie folgt vor:
 
 1. Wiederholen Sie diesen Vorgang, um den dem aktuellen Monat entsprechenden Geburtsmonat abzurufen. Klicken Sie hierzu auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wiederholen Sie die Schritte 3 bis 10 unter Ersetzung der Funktion **[!UICONTROL Day]** durch die Funktion **[!UICONTROL Month]**.
 
-   Die vollständige Formel lautet wie folgt:
+   Die vollständige Abfrage lautet wie folgt:
 
    ![](assets/s_ncs_user_create_exp_exple03.png)
 
@@ -114,7 +114,7 @@ Der Workflow für dieses Anwendungsbeispiel stellt sich wie folgt dar:
 
 Sollte es sich bei dem laufenden Jahr **nicht um ein Schaltjahr handeln**, müssen bei der Workflow-Ausführung am 1. März auch die Empfänger ausgewählt und zu der Empfängerliste hinzugefügt werden, deren Geburtstag am 29. Februar ist. In allen anderen Fällen ist keinerlei zusätzliche Maßnahme notwendig.
 
-### 1. Schritt: Auswahl der Empfänger, die am aktuellen Datum Geburtstag haben {#step-1--selecting-the-recipients}
+### &#x200B;1. Schritt: Auswahl der Empfänger, die am aktuellen Datum Geburtstag haben {#step-1--selecting-the-recipients}
 
 Konfigurieren Sie zunächst die **[!UICONTROL Planung]** für eine tägliche Ausführung des Workflows. Identifizieren Sie dann alle Empfänger, deren Geburtstag dem aktuellen Datum entspricht.
 
@@ -126,7 +126,7 @@ Konfigurieren Sie zunächst die **[!UICONTROL Planung]** für eine tägliche Aus
 
 Die Auswahl der Empfänger, deren Geburtstag dem aktuellen Datum entspricht, wird im Abschnitt [Identifizieren von Empfängern, die Geburtstag haben](#identifying-recipients-whose-birthday-it-is) beschrieben.
 
-### 2. Schritt: Test, ob ein Schaltjahr vorliegt {#step-2--select-whether-or-not-it-is-a-leap-year}
+### &#x200B;2. Schritt: Test, ob ein Schaltjahr vorliegt {#step-2--select-whether-or-not-it-is-a-leap-year}
 
 Prüfen Sie mithilfe einer **[!UICONTROL Test]**-Aktivität, ob das aktuelle Jahr ein Schaljahr und ob das aktuelle Datum der 1. März ist.
 
@@ -186,7 +186,7 @@ vars.currentIsALeapYear == 0 && vars.firstOfMarch == 1
 
 ![](assets/birthday-workflow_usecase_4.png)
 
-### 3. Schritt: Auswahl der Empfänger, die am 29. Februar Geburtstag haben {#step-3--select-any-recipients-born-on-february-29th}
+### &#x200B;3. Schritt: Auswahl der Empfänger, die am 29. Februar Geburtstag haben {#step-3--select-any-recipients-born-on-february-29th}
 
 Ziehen Sie eine **[!UICONTROL Verzweigung]** in das Diagramm und schließen Sie an eine der ausgehenden Transitionen eine **[!UICONTROL Abfrage]**-Aktivität an.
 

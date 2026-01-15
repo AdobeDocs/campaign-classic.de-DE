@@ -6,7 +6,7 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Reporting, Monitoring
 exl-id: 05f76bdf-6dcd-4360-9e72-0ba6a4dd0d5e
 source-git-commit: f90df5a5e5b3a2317d86ff2919560ded38f44f44
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2661'
 ht-degree: 100%
 
@@ -47,7 +47,7 @@ Im Folgenden werden die Etappen zur Erstellung einer Tabelle vom Typ &quot;Liste
 1. Gehen Sie zur Grafik des Berichts und platzieren Sie eine **[!UICONTROL Abfrageaktivität]**. Siehe [Sammeln von Daten zur Analyse](../../reporting/using/collecting-data-to-analyze.md).
 1. Geben Sie die Quelltabelle an und wählen Sie die Felder der Tabelle aus, auf die sich die Statistiken beziehen sollen.
 1. Platzieren Sie eine **[!UICONTROL Seitenaktivität]** in der Grafik. Weitere Informationen finden Sie unter [Statische Elemente](../../reporting/using/creating-a-new-report.md#static-elements).
-1. Fügen Sie ein Diagramm vom Typ **[!UICONTROL Liste mit Gruppierung]** in die Seite ein.
+1. Fügen Sie eine Tabelle vom Typ **[!UICONTROL Liste mit Gruppierung]** in die Seite ein.
 1. Geben Sie den Pfad der Daten an, also die als Datenquelle in der Abfrage gewählte Tabelle.
 
    Diese Etappe ist zwingend erforderlich, um die Felder der Quelltabelle zu finden und sie in die Zellen der Tabelle einzufügen.
@@ -198,11 +198,11 @@ Mit dem Tab **Mehr** kann das Layout der Daten ausgewählt werden, zum Beispiel 
 
 ## Anwendungsbeispiel: Bericht mit einer Liste mit Gruppierung erstellen {#use-case--create-a-report-with-a-group-list}
 
-In diesem Beispiel wird ein zweiseitiger Bericht erstellt: Die erste Seite soll die Liste und die Summe der Sendungen pro Kampagne sowie die Anzahl der gesendeten Nachrichten enthalten. Der Titel der Sendungen erhält die Form eines anklickbaren Links und wird den Zugriff auf die zweite Seite des Berichts ermöglichen, um die Verteilung der gesendeten Nachrichten des gewählten Versands pro E-Mail-Domain in einer Tabelle und einer Grafik einzusehen. Auf der zweiten Seite soll die Tabelle als Legende der Grafik dienen.
+In diesem Beispiel wird ein zweiseitiger Bericht erstellt: Die erste Seite soll die Liste und die Summe der Sendungen pro Kampagne sowie die Anzahl der gesendeten Nachrichten enthalten. Der Titel der Sendungen erhält die Form eines anklickbaren Links und wird den Zugriff auf die zweite Seite des Berichts ermöglichen, um die Aufschlüsselung der gesendeten Nachrichten des gewählten Versands pro E-Mail-Domain in einer Tabelle und einer Grafik einzusehen. Auf der zweiten Seite soll die Tabelle als Legende der Grafik dienen.
 
 ![](assets/reporting_quick_start_report-final.png)
 
-### 1. Schritt – Bericht erstellen {#step-1---create-a-report}
+### &#x200B;1. Schritt – Bericht erstellen {#step-1---create-a-report}
 
 Erstellen Sie einen neuen Bericht, der sich auf das Kampagnen-Schema bezieht (**[!UICONTROL Kampagnen (nms)]**).
 
@@ -214,7 +214,7 @@ Positionieren Sie im Bericht die ersten Komponenten zur Erstellung des Inhalts: 
 
 ![](assets/reporting_quick_start_diagram.png)
 
-### 2. Schritt – Erste Abfrage konfigurieren {#step-2---create-the-first-query}
+### &#x200B;2. Schritt – Erste Abfrage konfigurieren {#step-2---create-the-first-query}
 
 Die erste Abfrage soll die Sendungen aller Kampagnen abrufen.
 
@@ -257,7 +257,7 @@ Doppelklicken Sie auf die erste Abfrage, um sie zu öffnen, und konfigurieren Si
 
 1. Klicken Sie zur Speicherung dieser Bedingung auf **[!UICONTROL Beenden]** und zum Schließen des Abfrage-Editors auf **[!UICONTROL OK]**.
 
-### 3. Schritt – Erste Seite konfigurieren {#step-3--create-the-first-page}
+### &#x200B;3. Schritt – Erste Seite konfigurieren {#step-3--create-the-first-page}
 
 In diesem Schritt wird die erste Seite des Berichts konfiguriert. Gehen Sie wie folgt vor:
 
@@ -349,15 +349,15 @@ In diesem Schritt wird die erste Seite des Berichts konfiguriert. Gehen Sie wie 
 
    ![](assets/s_advuser_report_listgroup_026.png)
 
-   Durch die Verbindung der ersten beiden Zellen des Gruppierungs-Headers wird der Abstand zwischen dem Titel der Kampagne und der Liste der ihr zugehörigen Sendungen verkleinert.
+   Durch das Zusammenführen der ersten beiden Zellen des Gruppierungs-Headers wird der Abstand zwischen dem Titel der Kampagne und der Liste der ihr zugehörigen Sendungen verkleinert.
 
    ![](assets/s_advuser_report_listgroup_027.png)
 
    >[!CAUTION]
    >
-   >Dieser Vorgang kann nicht rückgängig gemacht werden. Daher wird ausdrücklich empfohlen, Zellen erst dann zu verbinden, wenn die Erstellung des Berichts abgeschlossen ist.
+   >Dieser Vorgang kann nicht rückgängig gemacht werden. Daher wird ausdrücklich empfohlen, Zellen erst dann zusammenzuführen, wenn die Erstellung des Berichts abgeschlossen ist.
 
-### 4. Schritt – Zweite Abfrage erstellen {#step-4---create-the-second-query}
+### &#x200B;4. Schritt – Zweite Abfrage erstellen {#step-4---create-the-second-query}
 
 Es werden eine zweite Abfrage und eine zweite Seite hinzugefügt, um die Details eines Versands anzuzeigen, wenn er vom Benutzer des Berichts angeklickt wird. Bevor Sie die Abfrage hinzufügen, öffnen Sie die bereits erstellte Seite und aktivieren Sie die ausgehende Transition, um sie mit der Abfrage verbinden zu können.
 
@@ -392,7 +392,7 @@ Es werden eine zweite Abfrage und eine zweite Seite hinzugefügt, um die Details
 
 1. Schließen Sie das Konfigurationsfenster der Abfrage und fügen Sie dem Diagramm im Anschluss an die zweite Abfrage eine Seite hinzu.
 
-### 5. Schritt – Zweite Seite konfigurieren {#step-5---create-the-second-page}
+### &#x200B;5. Schritt – Zweite Seite konfigurieren {#step-5---create-the-second-page}
 
 1. Öffnen Sie die Seite und vergeben Sie einen Titel, hier **E-Mail-Domains**.
 1. Deaktivieren Sie die Option **[!UICONTROL Ausgehende Transitionen aktivieren]**: Diese Seite ist die letzte Aktivität des Berichts.
@@ -453,7 +453,7 @@ Die erste Seite des Berichts zeigt die Liste aller in der Datenbank enthaltenen 
 
 ![](assets/s_advuser_report_listgroup_021.png)
 
-Durch Klick auf den Link einer der Sendungen wird die Verteilung dieses Versands pro E-Mail-Domain angezeigt. Von der zweiten Seite des Berichts können Sie über die entsprechende Schaltfläche auf die vorhergehende Seite zurückkehren.
+Durch Klick auf den Link einer der Sendungen wird die Aufschlüsselung dieses Versands pro E-Mail-Domain angezeigt. Von der zweiten Seite des Berichts können Sie über die entsprechende Schaltfläche auf die vorhergehende Seite zurückkehren.
 
 ![](assets/s_advuser_report_listgroup_022.png)
 

@@ -27,7 +27,7 @@ Um die entsprechenden Dokumente zu personalisieren, stehen Ihnen die gleichen Ja
 
 Aktivieren Sie bei der Erstellung des E-Mail-Anhangs die Option **[!UICONTROL Dateiinhalt wird zum Zeitpunkt der Absendung für jede Nachricht personalisiert und in PDF konvertiert]**. Weitere Informationen zum Anhängen einer berechneten Datei finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html?lang=de){target="_blank"}.
 
-Beispiel der Personalisierung eines Rechnungskopfes:
+Beispiel der Personalisierung eines Rechnungs-Headers:
 
 ![](assets/s_ncs_pdf_simple.png)
 

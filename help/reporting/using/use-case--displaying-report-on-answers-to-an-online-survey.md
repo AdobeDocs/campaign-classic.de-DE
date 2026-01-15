@@ -6,7 +6,7 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Reporting, Monitoring, Surveys
 exl-id: 6be12518-86d1-4a13-bbc2-b2ec5141b505
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '515'
 ht-degree: 100%
 
@@ -24,7 +24,7 @@ Gehen Sie wie folgt vor:
 
 1. Erstellung eines Workflows zum Abruf der Umfrage-Antworten und ihrer Speicherung in einer Liste.
 1. Erstellung eines Cubes, der die Daten der Liste verwendet.
-1. Erstellung eines Berichts mit einer Pivot-Tabelle und Anzeige der Antwortenverteilung.
+1. Erstellung eines Berichts mit einer Pivot-Tabelle und Anzeige der Antwortenaufschlüsselung.
 
 Voraussetzung für die Durchführung dieses Anwendungsbeispiels sind ein Fragebogen und zu analysierende Antworten auf diesen.
 

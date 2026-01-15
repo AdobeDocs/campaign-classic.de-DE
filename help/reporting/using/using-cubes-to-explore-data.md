@@ -8,7 +8,7 @@ hide: true
 hidefromtoc: true
 exl-id: 32696bbf-1415-4214-837f-5437fdb8b4d4
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1009'
 ht-degree: 100%
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 Marketing Analytics ermöglicht es, auf vereinfachte Weise Berichte zu erstellen und Daten aus der Datenbank mithilfe von Cubes zu identifizieren und auszuwählen. Folgende Möglichkeiten stehen zur Verfügung:
 
 * Erstellung von Cube-basierten Berichten. Der Prozess wird hier detailliert beschrieben: [Erkunden der Daten in einem Bericht](#exploring-the-data-in-a-report).
-* Sammeln Sie die Daten in der Datenbank und gruppieren Sie sie in Listen, um beispielsweise Zielgruppen und Sendungen zu identifizieren und zu erstellen. Weitere Informationen finden Sie unter [Erstellen von Zielgruppen](#building-a-target-population).
+* Sammeln Sie die Daten in der Datenbank und gruppieren Sie sie in Listen, um beispielsweise Zielgruppen und Sendungen zu identifizieren und zu erstellen. Weitere Informationen finden Sie unter [Erstellen von Zielpopulationen](#building-a-target-population).
 * Fügen Sie eine Pivot-Tabelle in einen Bericht ein und verweisen Sie auf einen darin vorhandenen Cube. Weitere Informationen hierzu finden Sie unter [Einfügen einer Pivot-Tabelle in einen Bericht](#inserting-a-pivot-table-into-a-report).
 
 >[!NOTE]
@@ -123,7 +123,7 @@ Standardmäßig wird nur eine Kennzahl angezeigt. Um Kennzahlen hinzuzufügen od
 
 ## Erstellen einer Zielpopulation {#building-a-target-population}
 
-Die basierend auf Cubes erstellten Berichte ermöglichen den Abruf von Daten aus der Datenbank und deren Speicherung in einer Liste.
+Die basierend auf Cubes erstellten Berichte ermöglichen den Abruf von Daten aus der Tabelle und deren Speicherung in einer Liste.
 
 Hierzu können Sie diese einem Warenkorb hinzufügen, dessen Inhalt anschließend exportiert wird.
 

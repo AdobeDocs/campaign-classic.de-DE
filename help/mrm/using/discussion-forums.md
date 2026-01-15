@@ -10,7 +10,7 @@ hidefromtoc: true
 topic-tags: tasks--resources-and-budgets
 exl-id: 222853c5-c754-4c0b-8ee4-a64b2f8677a4
 source-git-commit: 942edcf028207eab2ea583949ebc99ab61539ea0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '804'
 ht-degree: 100%
 
@@ -34,7 +34,7 @@ Um auf das Forum einer Kampagne, eines Benutzers usw. zuzugreifen, klicken Sie a
 
 Nachrichten und ihre Antworten werden chronologisch geordnet (von neu nach alt).
 
-Um den Inhalt einer Nachricht anzuzeigen, klicken Sie auf ihren Titel.
+Um den Inhalt einer Nachricht anzuzeigen, klicken Sie auf ihren Header.
 
 ![](assets/mrm_forum_expand_msg.png)
 
@@ -109,7 +109,7 @@ Sie können ein Forum abonnieren, um den enthaltenen Diskussionen zu folgen und 
 Falls Abonnenten eines Forums nicht die erwarteten Benachrichtigungen erhalten, empfehlen wir folgende Vorgehensweise:
 
 * Stellen Sie sicher, dass die Benutzer eine E-Mail-Adresse in ihrem Profil angebeben haben.
-* Gehen Sie zum Knoten **[!UICONTROL Administration > Betreibung > Technische Workflows > Kampagnenprozesse]** und stellen Sie sicher, dass der Workflow **[!UICONTROL Vorgänge in Diskussionsforen]** gestartet und nicht fehlgeschlagen ist.
+* Gehen Sie zum Knoten **[!UICONTROL Administration > Betreibung > Technische Workflows > Kampagnenprozesse]** und stellen Sie sicher, dass der Workflow **[!UICONTROL Aufträge in Diskussionsforen]** gestartet und nicht fehlgeschlagen ist.
 * Überprüfen Sie die Versandlogs, die wie folgt zugänglich sind:
 
    * Gehen Sie von der Adobe Campaign-Startseite aus zu **[!UICONTROL Kampagnen > Navigation > Sendungen]** und öffnen Sie den Versand **[!UICONTROL Benachrichtigungen bezüglich Diskussionforen]**.

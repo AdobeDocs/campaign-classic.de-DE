@@ -5,7 +5,7 @@ description: Erfahren Sie die wichtigsten Schritte zum Erstellen eines neuen Ber
 feature: Reporting, Monitoring
 exl-id: 4c2aad47-0e2d-4d0b-8898-b437f4a05e11
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '961'
 ht-degree: 100%
 
@@ -112,7 +112,7 @@ Alternativ können Sie einen Rechtsklick auf den Knoten machen, um eine der verf
 Eine **[!UICONTROL Seite]** kann folgende Elemente enthalten:
 
 * **[!UICONTROL Grafiken]** vom Typ Histogramm, Kreis- oder Kurvendiagramm etc.
-* **[!UICONTROL Tabellen]** vom Typ Pivot, Gruppierungsliste oder Verteilung.
+* **[!UICONTROL Tabellen]** vom Typ Pivot, Gruppierungsliste oder Aufschlüsselung.
 * **[!UICONTROL Eingabedialoge]** vom Typ Text oder Zahl.
 * **[!UICONTROL Auswahldialoge]** vom Typ Dropdown-Liste, Checkbox, Radiobutton, Multiple Choice, Datum oder Matrix.
 * **[!UICONTROL Erweiterte Dialoge]** vom Typ Link-Editor, Konstante, Ordnerauswahl.

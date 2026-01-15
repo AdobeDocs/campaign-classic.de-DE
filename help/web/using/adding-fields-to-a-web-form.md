@@ -6,7 +6,7 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Web Forms, Landing Pages
 exl-id: 827b6575-7206-4dfc-b2c6-b95a6d5730b1
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2466'
 ht-degree: 100%
 
@@ -134,7 +134,7 @@ Um eine Dropdown-Liste in eine Formularseite einzufügen, wählen Sie in der Sym
 
 Wählen Sie den Speichermodus für die Antworten aus und bestätigen Sie Ihre Auswahl.
 
-Definieren Sie die Titel und Werte der Liste im unteren Bereich der Registerkarte **[!UICONTROL Allgemein]**. Wenn die Informationen in einem vorhandenen Feld der Datenbank gespeichert werden und es sich um ein Auflistungsfeld handelt, können Sie die Werte automatisch ausfüllen lassen, indem Sie wie unten gezeigt **[!UICONTROL Werteliste aus der Datenbank übernehmen]** auswählen:
+Definieren Sie die Titel und Werte der Liste im unteren Bereich der Registerkarte **[!UICONTROL Allgemein]**. Wenn die Informationen in einem vorhandenen Feld der Datenbank gespeichert werden und es sich um ein Aufzählungsfeld handelt, können Sie die Werte automatisch ausfüllen lassen, indem Sie wie unten gezeigt **[!UICONTROL Werteliste aus der Datenbank übernehmen]** auswählen:
 
 ![](assets/s_ncs_admin_survey_database_values.png)
 

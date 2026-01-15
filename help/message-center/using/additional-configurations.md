@@ -165,7 +165,7 @@ Gehen Sie auf den Ausführungsinstanzen wie folgt vor:
 
    >[!IMPORTANT]
    >
-   >Diese Änderungen könnten beim Upgrade Konflikte verursachen. Möglicherweise müssen Sie diese Formeln manuell in ihre neue Version einbinden.
+   >Diese Änderungen könnten beim Upgrade Konflikte verursachen. Möglicherweise müssen Sie diese Formeln manuell mit ihrer neuen Version zusammenführen.
 
 ### Kontrollinstanz {#control-instance}
 

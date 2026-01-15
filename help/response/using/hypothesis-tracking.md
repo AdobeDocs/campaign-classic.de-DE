@@ -9,7 +9,7 @@ content-type: reference
 topic-tags: response-manager
 exl-id: 1dc6d03b-698c-4750-9563-0676fcd185df
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '485'
 ht-degree: 100%
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 
 
-Das Ergebnis der Hypothesenberechnungen kann auf unterschiedlichen Ebenen der Adobe Campaign-Plattform eingesehen werden. So sind die von der Hypothese berechneten Indikatoren und die Empfängerreaktionen in der Messhypothese selbst verfügbar; sie werden darüber hinaus auch in den betreffenden Kampagnen und Sendungen in Form von Hypothesenberichten anschaulich dargestellt.
+Das Ergebnis der Hypothesenberechnungen kann auf unterschiedlichen Ebenen der Adobe Campaign-Plattform eingesehen werden. So sind die von der Hypothese berechneten Indikatoren und die Reaktionen der Zielpopulation in der Messhypothese selbst verfügbar; sie werden darüber hinaus auch in den betreffenden Kampagnen und Sendungen in Form von Hypothesenberichten anschaulich dargestellt.
 
 ## Hypothesenergebnisse {#hypothesis-results}
 
@@ -63,7 +63,7 @@ Folgende Informationen werden von den Indikatoren bereitgestellt:
 Sie können die durch die Hypothesen generierten Empfängerreaktionen im Tab **[!UICONTROL Reaktionen]** einsehen.
 
 1. Gehen Sie nach Abschluss der Hypothesenberechnung in den Knoten **[!UICONTROL Kampagnenverwaltung > Messhypothesen]** des Adobe Campaign-Navigationsbaums.
-1. Wählen Sie die gewünschte Hypothese aus der Liste aus und klicken Sie auf den Tab **[!UICONTROL Reaktionen]**, um die Liste der Empfänger anzuzeigen, die im Anschluss an die Marketing-Kampagne möglicherweise eine Bestellung tätigen.
+1. Wählen Sie die gewünschte Hypothese aus der Liste aus und klicken Sie auf den Tab **[!UICONTROL Reaktionen]**, um die Liste der Empfänger anzuzeigen, die im Anschluss an die Marketing-Kampagne möglicherweise einen Kauf tätigen.
 
    ![](assets/response_hypothesis_reactions_001.png)
 

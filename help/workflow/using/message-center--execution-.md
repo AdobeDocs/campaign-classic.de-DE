@@ -6,7 +6,7 @@ hide: true
 hidefromtoc: true
 feature: Workflows
 source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '223'
 ht-degree: 100%
 
@@ -48,12 +48,12 @@ Weitere Informationen hierzu finden Sie je nach Campaign-Version in den folgende
   <tr> 
    <td> <span class="uicontrol">Verarbeitung der Batch-Ereignisse</span> <br /> </td> 
    <td> <span class="uicontrol">batchEventsProcessing</span> <br /> </td> 
-   <td> Teilt die Batch-Ereignisse in eine Warteschlange ein, bevor ihnen eine Nachrichtenvorlage zugeordnet wird. <br /> </td> 
+   <td> Dieser Workflow teilt die Batch-Ereignisse in eine Warteschlange ein, bevor ihnen eine Nachrichtenvorlage zugeordnet wird. <br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Verarbeitung der Echtzeit-Ereignisse</span> <br /> </td> 
    <td> <span class="uicontrol">rtEventsProcessing</span> <br /> </td> 
-   <td> Teilt die Echtzeit-Ereignisse in eine Warteschlange ein, bevor ihnen eine Nachrichtenvorlage zugeordnet wird. <br /> </td> 
+   <td> Dieser Workflow teilt die Echtzeit-Ereignisse in eine Warteschlange ein, bevor ihnen eine Nachrichtenvorlage zugeordnet wird. <br /> </td> 
   </tr> 
  </tbody> 
 </table>

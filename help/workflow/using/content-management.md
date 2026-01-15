@@ -1,27 +1,27 @@
 ---
 product: campaign
-title: Content Management
-description: Content Management
+title: Content-Management
+description: Content-Management
 feature: Workflows, Data Management
 hide: true
 hidefromtoc: true
 exl-id: eb92a7c7-edfa-4062-b473-6d8b50d35e5f
 source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '463'
 ht-degree: 100%
 
 ---
 
-# Content Management{#content-management}
+# Content-Management{#content-management}
 
 
 
-Mithilfe der Aktivität **Content Management** lassen sich Inhalte erstellen und bearbeiten sowie Inhaltsdateien erzeugen. Die Inhalte können dann im Ramen einer Versandaktivität genutzt werden.
+Mithilfe der Aktivität **Content-Management** lassen sich Inhalte erstellen und bearbeiten sowie Inhaltsdateien erzeugen. Die Inhalte können dann im Ramen einer Versandaktivität genutzt werden.
 
 >[!CAUTION]
 >
->Das Content Management ist ein optionales Modul von Adobe Campaign. Bitte prüfen Sie Ihren Lizenzvertrag.
+>Das Content-Management ist ein optionales Modul von Adobe Campaign. Bitte prüfen Sie Ihren Lizenzvertrag.
 
 Die Konfiguration der Aktivität gliedert sich in drei Schritte:
 
@@ -31,7 +31,7 @@ Die Konfiguration der Aktivität gliedert sich in drei Schritte:
 
   ![](assets/content_mgmt_edit.png)
 
-  Konfiguration und Verwendung des Content Managements in Adobe Campaign werden in diesem [Abschnitt](../../delivery/using/about-content-management.md) detailliert beschrieben.
+  Konfiguration und Verwendung des Content-Managements in Adobe Campaign werden in diesem [Abschnitt](../../delivery/using/about-content-management.md) detailliert beschrieben.
 
 1. **Content**
 

@@ -9,7 +9,7 @@ content-type: reference
 topic-tags: simulating-offers
 exl-id: 4f6b3de2-3fdf-441d-925d-476e20e75c6f
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '250'
 ht-degree: 100%
 
@@ -28,7 +28,7 @@ Folgende Felder müssen zwingend ausgefüllt werden:
 * Angebotsumgebung oder -kategorie
 * Platzierung
 * Kontaktdatum - berücksichtigt werden nur Angebote, die zum Kontaktdatum infrage kommen
-* Zielgruppe
+* Zielpopulation.
 
   Wenn kein Zielgruppenfilter angegeben wird, wird die gesamte Empfängertabelle in der Simulation berücksichtigt.
 

@@ -7,7 +7,7 @@ hide: true
 hidefromtoc: true
 exl-id: b2a05e07-a7d7-436b-b2c6-90ab55d031cd
 source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '372'
 ht-degree: 100%
 
@@ -49,7 +49,7 @@ Geben Sie im Tab **E-Mail-Empfang** die POP3-Parameter sowie das bei Empfang jed
 
         Nummer des POP3-Verbindungsports. Standardmäßig ist dies der Port 110.
 
-   * **[!UICONTROL Beenden, sobald eine E-Mail verarbeitet wurde]**
+   * **[!UICONTROL Stoppen, sobald eine E-Mail verarbeitet wurde]**
 
      Bei Auswahl dieser Option werden die E-Mails einzeln verarbeitet. Die Transition der Aktivität wird nur einmal aktiviert. Alle nicht verarbeiteten Nachrichten bleiben auf dem Server.
 

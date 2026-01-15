@@ -7,7 +7,7 @@ hide: true
 hidefromtoc: true
 exl-id: d345ba62-c2fb-43df-a2a1-e9e4292d301a
 source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1272'
 ht-degree: 100%
 
@@ -47,7 +47,7 @@ Die Symbolleiste wird in diesem [Abschnitt](../../campaign/using/marketing-campa
 
 * **[!UICONTROL Anhalten]**
 
-  Dieser Befehl hält die Ausführung eines laufenden Workflows an. Der Status der Workflow-Instanz wechselt zu **Abgeschlossen**. Laufende Aktionen werden nach Möglichkeit unterbrochen. Gestartete Importe oder SQL-Abfragen werden sofort abgebrochen.
+  Dieser Befehl hält die Ausführung eines laufenden Workflows an. Der Status der Workflow-Instanz wechselt zu **Abgeschlossen**. Laufende Aktionen werden nach Möglichkeit gestoppt. Gestartete Importe oder SQL-Abfragen werden sofort abgebrochen.
 
   >[!IMPORTANT]
   >
@@ -55,7 +55,7 @@ Die Symbolleiste wird in diesem [Abschnitt](../../campaign/using/marketing-campa
 
 * **[!UICONTROL Unbedingter Stopp]**
 
-  Bei Auswahl dieses Befehls wechselt der Workflow-Status zu **[!UICONTROL Abgeschlossen]**. Dieser Befehl darf nur als letztes Mittel eingesetzt werden, wenn das normale Anhalten auch nach mehreren Minuten keine Wirkung zeigt. Verwenden Sie den unbedingten Stopp nur, wenn Sie sicher sind, dass der Workflow keine reellen laufenden Prozesse aufweist.
+  Bei Auswahl dieses Befehls wechselt der Workflow-Status zu **[!UICONTROL Abgeschlossen]**. Dieser Befehl darf nur als letztes Mittel eingesetzt werden, wenn das normale Anhalten auch nach mehreren Minuten keine Wirkung zeigt. Verwenden Sie den unbedingten Stopp nur, wenn Sie sicher sind, dass der Workflow keine reellen laufenden Aufträge aufweist.
 
   >[!CAUTION]
   >
@@ -93,7 +93,7 @@ Die Symbolleiste wird in diesem [Abschnitt](../../campaign/using/marketing-campa
 
   Dieser Befehl erstellt eine neue, auf dem markierten Workflow basierende Workflow-Vorlage. Geben Sie im Feld **[!UICONTROL Ordner]** den gewünschten Speicherordner an.
 
-  Die Optionen **[!UICONTROL Ausgewählte Zeilen gebündelt aktualisieren...]** und **[!UICONTROL Ausgewählte Zeilen fusionieren...]** sind allgemeine Optionen der Plattform, die in allen Menüs **[!UICONTROL Aktionen]** zur Verfügung stehen. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../platform/using/updating-data.md).
+  Die Optionen **[!UICONTROL Ausgewählte Zeilen gebündelt aktualisieren...]** und **[!UICONTROL Ausgewählte Zeilen zusammenführen...]** sind allgemeine Optionen der Plattform, die in allen Menüs **[!UICONTROL Aktionen]** zur Verfügung stehen. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../platform/using/updating-data.md).
 
 
 ## Best Practices für die Workflow-Ausführung {#workflow-execution-best-practices}

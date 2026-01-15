@@ -1,24 +1,24 @@
 ---
 product: campaign
-title: Ziel-Audience der Marketing-Kampagne
-description: Erfahren Sie, wie Sie die Audience Ihrer Marketing-Kampagnen definieren.
+title: Ziel-Zielgruppe der Marketing-Kampagne
+description: Erfahren Sie, wie Sie die Zielgruppe Ihrer Marketing-Kampagnen definieren.
 role: User
 feature: Campaigns, Audiences
 hide: true
 hidefromtoc: true
 exl-id: 04daa67c-4057-42a7-b993-a6eddf2b883d
 source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1586'
 ht-degree: 100%
 
 ---
 
-# Auswählen der Audience für Ihre Kampagnen {#marketing-campaign-deliveries}
+# Auswählen der Zielgruppe für Ihre Kampagnen {#marketing-campaign-deliveries}
 
 In einer Marketing-Kampagne können Sie für jeden Versand Folgendes definieren:
 
-* Die Audience: Erfahren Sie mehr über das [Erstellen der Audience in einem Workflow](#building-the-main-target-in-a-workflow) und das [Auswählen der Zielpopulation](#selecting-the-target-population).
+* Die Zielgruppe: Erfahren Sie mehr über das [Erstellen der Zielgruppe in einem Workflow](#building-the-main-target-in-a-workflow) und das [Auswählen der Zielpopulation](#selecting-the-target-population).
 * Eine Kontrollgruppe: Weitere Informationen finden Sie in [diesem Abschnitt](#defining-a-control-group).
 * Testadressen: Weitere Informationen finden Sie in [diesem Abschnitt](../../delivery/using/about-seed-addresses.md).
 
@@ -40,7 +40,7 @@ Sie haben die Möglichkeit, eine Population in eine Liste zu importieren und die
 
 ![](assets/s_user_target_group_next.png)
 
-## Erstellen der Audience in einem Campaign-Workflow {#building-the-main-target-in-a-workflow}
+## Erstellen der Zielgruppe in einem Campaign-Workflow {#building-the-main-target-in-a-workflow}
 
 Die Hauptzielgruppe eines Versands kann auch über einen Campaign-Workflow definiert werden: Die grafische Umgebung ermöglicht die Erstellung einer Zielgruppe mithilfe von Abfragen, Tests und Funktionen wie Vereinigungen, Deduplizierungen, Aufspaltungen usw.
 
@@ -119,7 +119,7 @@ Bei Aktionen bezüglich der Ausführung des Zielgruppen-Workflows (Start, Stopp,
 
    * Über die Symbolleiste kann die Ausführung des Zielgruppen-Workflows angehalten oder ausgesetzt werden.
 
-     Bei Klick auf das Symbol **[!UICONTROL Aussetzen]** werden laufende Prozesse **[!UICONTROL nicht]** abgebrochen, es wird jedoch bis zur Wiederaufnahme keine andere Aktivität gestartet.
+     Bei Klick auf das Symbol **[!UICONTROL Aussetzen]** werden laufende Prozesse **[!UICONTROL nicht]** abgebrochen, es wird jedoch bis zum Neustart keine andere Aktivität gestartet.
 
      ![](assets/s_user_segmentation_pause.png)
 
@@ -137,7 +137,7 @@ Bei Aktionen bezüglich der Ausführung des Zielgruppen-Workflows (Start, Stopp,
 
      >[!NOTE]
      >
-     >Diese Option erweist sich insbesondere in Entwurfs- und Testphasen einer Zielbestimmung als nützlich.
+     >Diese Option erweist sich insbesondere in Entwurfs- und Testphasen einer Zielgruppenbestimmung als nützlich.
 
      Klicken Sie auf **[!UICONTROL Starten]**, um die Ausführung wieder aufzunehmen.
 
@@ -159,13 +159,13 @@ Bei Aktionen bezüglich der Ausführung des Zielgruppen-Workflows (Start, Stopp,
 
   >[!NOTE]
   >
-  >Diese Option erweist sich insbesondere in Entwurfs- und Testphasen einer Zielbestimmung als nützlich.
+  >Diese Option erweist sich insbesondere in Entwurfs- und Testphasen einer Zielgruppenbestimmung als nützlich.
 
 * Unbedingter Stopp
 
   Wählen Sie im Explorer **[!UICONTROL Administration > Betreibung > Automatisch erstellte Objekte > Kampagnen-Workflows]** aus, um auf einen beliebigen Campaign-Workflow zuzugreifen und diesen zu steuern.
 
-  Sie können Ihren Workflow stoppen, indem Sie das Symbol **[!UICONTROL Aktionen]** und danach **[!UICONTROL Unbedingter Stopp]** auswählen. Damit wird Ihr Kampagnen-Workflow sofort angehalten.
+  Sie können Ihren Workflow stoppen, indem Sie das Symbol **[!UICONTROL Aktionen]** und danach **[!UICONTROL Unbedingter Stopp]** auswählen. Damit wird Ihr Kampagnen-Workflow sofort beendet.
 
   ![](assets/s_user_segmentation_stop_unconditional.png)
 
@@ -222,7 +222,7 @@ Sie haben die Möglichkeit, Empfänger der Hauptzielgruppe eines Versands zu ext
 
 Um eine Kontrollgruppe zu extrahieren, aktivieren Sie diese auf Kampagnen- oder Versandniveau und wählen Sie eine der folgenden Optionen: **[!UICONTROL Zufallsauswahl aktivieren]** oder **[!UICONTROL Die ersten, aus einer Sortierung hervorgehenden Elemente beibehalten]**.
 
-* **[!UICONTROL Zufallsauswahl aktivieren]**: Diese Option wendet eine Zufallsauswahl auf die Empfänger der Zielgruppe an. Wenn Sie anschließend einen Grenzwert von 100 festlegen, wird die Kontrollgruppe aus 100 zufällig aus der Zielgruppe ausgewählten Empfängern zusammengesetzt. Die angewandte Zufallsauswahl hängt von der Datenbank-Engine ab.
+* **[!UICONTROL Zufallsauswahl aktivieren]**: Diese Option wendet eine Zufallsauswahl auf die Empfänger der Zielgruppe an. Wenn Sie anschließend einen Grenzwert von 100 festlegen, wird die Kontrollgruppe aus 100 zufällig aus der Zielpopulation ausgewählten Empfängern zusammengesetzt. Die angewandte Zufallsauswahl hängt von der Datenbank-Engine ab.
 * **[!UICONTROL Die ersten, aus einer Sortierung hervorgehenden Elemente beibehalten]**: Diese Option ermöglicht die Begrenzung der Kontrollgruppe nach einer oder mehreren Sortierreihenfolgen. Wenn Sie das Feld **[!UICONTROL Alter]** als Sortierkriterium wählen und dann 100 als Schwellenwert definieren, setzt sich die Kontrollgruppe aus den 100 jüngsten Empfangenden zusammen. Es könnte zum Beispiel interessant sein, eine Kontrollgruppe zu definieren, die nur Empfangende umfasst, die wenige bzw. häufige Käufe tätigen, und ihr Verhalten mit dem der kontaktierten Empfangenden zu vergleichen.
 
 Klicken Sie auf **[!UICONTROL Weiter]**, um (bei Bedarf) die Sortierreihenfolge festzulegen und die Empfängerbegrenzung zu bestimmen.
@@ -239,13 +239,13 @@ Sie können eine neue, als Kontrollgruppe zu verwendende Population bestimmen. D
 
 >[!NOTE]
 >
->Der Abfrageeditor von Adobe Campaign wird in [diesem Abschnitt](../../workflow/using/query.md) beschrieben.
+>Der Abfrage-Editor von Adobe Campaign wird in [diesem Abschnitt](../../workflow/using/query.md) beschrieben.
 
 
 #### Anleitungsvideo {#create-email-video}
 
 In diesem Video wird das Erstellen einer Kampagne und einer E-Mail in Adobe Campaign beschrieben.
 
->[!VIDEO](https://video.tv.adobe.com/v/27488?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
 
 Weitere Anleitungsvideos zu Campaign finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).

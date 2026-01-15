@@ -7,7 +7,7 @@ hide: true
 hidefromtoc: true
 topic-tags: technical-workflows
 source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '164'
 ht-degree: 100%
 
@@ -34,12 +34,12 @@ Die folgenden Workflows werden standardmäßig mit dem Modul **Kampagne** instal
   <tr> 
    <td> <span class="uicontrol">Kostenberechnung</span> <br /> </td> 
    <td> <span class="uicontrol">budgetMgt</span> <br /> </td> 
-   <td> Berechnet Ausgaben- und Kostenzeilen für Pläne, Programme, Kampagnen, Sendungen und Aufgaben.<br /> </td> 
+   <td> Dieser Workflow berechnet Ausgaben- und Kostenzeilen für Pläne, Programme, Kampagnen, Sendungen und Aufgaben.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Lager: Ergänzungen und Meldebestände</span> <br /> </td> 
    <td> <span class="uicontrol">stockMgt</span> <br /> </td> 
-   <td> Startet die Berechnung der Lagerbestände in den Bestellzeilen und verwaltet Warnschwellen.<br /> </td> 
+   <td> Dieser Workflow startet die Berechnung der Lagerbestände in den Bestellzeilen und verwaltet Warnschwellen.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Bearbeitungsvorgänge bezüglich Kampagnensendungen</span> <br /> </td> 
@@ -54,7 +54,7 @@ Die folgenden Workflows werden standardmäßig mit dem Modul **Kampagne** instal
   <tr> 
    <td> <span class="uicontrol">Bearbeitungsvorgänge bezüglich der Dienstleister</span> <br /> </td> 
    <td> <span class="uicontrol">supplierMgt</span> <br /> </td> 
-   <td> Startet nach erfolgter Versandvalidierung Dienstleistervorgänge (E-Mail an den Router und Anschlussvorgang). <br /> </td> 
+   <td> Dieser Workflow startet nach erfolgter Versandvalidierung Dienstleistervorgänge (E-Mail an den Router und Anschlussverarbeitung). <br /> </td> 
   </tr> 
  </tbody> 
 </table>

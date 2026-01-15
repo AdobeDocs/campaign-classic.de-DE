@@ -7,7 +7,7 @@ hide: true
 hidefromtoc: true
 exl-id: e4806bb8-de9d-47e4-8b37-d6c0565b7f5a
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '748'
 ht-degree: 100%
 
@@ -26,7 +26,7 @@ Ein Cube wird in folgenden Schritten konfiguriert:
 1. Definieren von Kennzahlen. Siehe [Erstellen von Indikatoren](#building-indicators).
 1. Erstellen von Aggregaten (optional). Siehe [Berechnen und Verwenden von Aggregaten](../../reporting/using/concepts-and-methodology.md#calculating-and-using-aggregates).
 
-Das nachstehende Beispiel zeigt, wie schnell ein einfacher Cube erstellt und in einem Bericht zur Kennzahlenanalyse verwendet werden kann.
+Das nachstehende Beispiel zeigt, wie schnell ein einfacher Cube in einem Bericht erstellt werden kann, um dessen Kennzahlen zu exportieren.
 
 Die Durchführungsschritte werden im Nachstehenden beschrieben, die verschiedenen Optionen und ihre Beschreibungen werden in den anderen Abschnitten dieses Kapitels ausführlich dargestellt.
 
@@ -80,15 +80,15 @@ Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**, um eine neue Dim
 
   ![](assets/s_advuser_cube_wz_08.png)
 
-  Sie können auch hier die Klassierung aktivieren, um die Lesbarkeit der Informationen zu erleichtern, und in diesem Fall die Werte mit einem Auflistungswert verknüpfen.
+  Sie können auch hier die Klassierung aktivieren, um die Lesbarkeit der Informationen zu erleichtern, und in diesem Fall die Werte mit einem Aufzählungswert verknüpfen.
 
   ![](assets/s_advuser_cube_wz_09.png)
 
-  Wählen Sie die Auflistung in der Dropdown-Liste aus.
+  Wählen Sie die Aufzählung in der Dropdown-Liste aus.
 
   ![](assets/s_advuser_cube_wz_10.png)
 
-  Nur die in der Auflistung vorhandenen Werte werden angezeigt. Alle anderen werden unter einem Titel zusammengefasst, den Sie im Feld **[!UICONTROL Titel der anderen Werte]** definieren können.
+  Nur die in der Aufzählung vorhandenen Werte werden angezeigt. Alle anderen werden unter einem Titel zusammengefasst, den Sie im Feld **[!UICONTROL Titel der anderen Werte]** definieren können.
 
   Weitere Informationen hierzu finden Sie unter [Klassen dynamisch verwalten](../../reporting/using/concepts-and-methodology.md#dynamically-managing-bins).
 

@@ -7,7 +7,7 @@ hide: true
 hidefromtoc: true
 exl-id: ca6d4bf4-7b3a-4d36-9fc3-0b83531d0132
 source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '651'
 ht-degree: 100%
 
@@ -37,7 +37,7 @@ Um den Status einer Reihe von Workflows zu überwachen, sind folgende Schritte e
 >
 >Weitere Informationen zur **Überwachung der Ausführung Ihrer Workflows** finden Sie in [diesem Abschnitt](monitoring-workflow-execution.md).
 
-## 1. Schritt: Erstellung des Monitoring-Workflows {#step-1--creating-the-monitoring-workflow}
+## &#x200B;1. Schritt: Erstellung des Monitoring-Workflows {#step-1--creating-the-monitoring-workflow}
 
 Der zu überwachende Workflow-Ordner ist **CustomWorkflows** im Knoten **Administration > Betreibung > Technische Workflows**. Dieser Ordner enthält diverse geschäftsrelevante Workflows.
 
@@ -55,7 +55,7 @@ Der vorliegende Workflow besteht aus folgenden Aktivitäten:
 * **Versand** mit den Informationen sur Aufmachung der Nachricht,
 * **Warten** zur Steuerung der zeitlichen Intervalle zwischen den einzelnen Ausführungen des Workflows.
 
-## 2. Schritt: Erstellung des JavaScripts {#step-2--writing-the-javascript}
+## &#x200B;2. Schritt: Erstellung des JavaScripts {#step-2--writing-the-javascript}
 
 Der erste Teil des JavaScript-Codes entspricht einer **Abfrage (queryDef)** zum Abruf der Workflows mit dem Status &quot;ausgesetzt&quot; (@state == 13), &quot;fehlgeschlagen&quot; (@failed == 1) oder &quot;angehalten&quot; (@state == 20).
 
@@ -117,7 +117,7 @@ vars.strWorkflowPaused = strPaused;
 vars.strWorkflowStop = strStop;
 ```
 
-## 3. Schritt: Erstellung der Testaktivität {#step-3--creating-the--test--activity}
+## &#x200B;3. Schritt: Erstellung der Testaktivität {#step-3--creating-the--test--activity}
 
 Die Testaktivität bestimmt, ob ein Versand oder ein neuer Workflow-Zyklus gestartet werden soll. In letzterem Fall wird die Warteaktivität aktiviert.
 
@@ -129,7 +129,7 @@ Die Warteaktivität kann dahingehend konfiguriert werden, dass sie den Monitorin
 
 ![](assets/uc_monitoring_workflow_attente.png)
 
-## 4. Schritt: Vorbereitung des Versands {#step-4--preparing-the-delivery}
+## &#x200B;4. Schritt: Vorbereitung des Versands {#step-4--preparing-the-delivery}
 
 Die Versandaktivität basiert auf einer **Versandvorlage**, auf die über den Knoten **Ressourcen > Vorlagen > Versandvorlagen** zugegriffen werden kann.
 

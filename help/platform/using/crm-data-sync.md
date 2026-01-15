@@ -7,7 +7,7 @@ exl-id: 7f9eda15-76e8-40a1-8302-004cea085778
 hide: true
 hidefromtoc: true
 source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1620'
 ht-degree: 100%
 
@@ -161,7 +161,7 @@ Zum Export von Daten in ein CRM-System ist ein Workflow nach folgendem Muster zu
 
 ![](assets/crm_export_diagram.png)
 
-Gehen Sie bei der Konfiguration der **[!UICONTROL CRM-Connector]**-Aktivität wie folgt vor:
+Gehen Sie für einen Export bei der Konfiguration der **[!UICONTROL CRM-Connector]**-Aktivität wie folgt vor:
 
 1. Wählen Sie den Vorgang vom Typ **[!UICONTROL Export in das CRM]**.
 1. Gehen Sie zur Dropdown-Liste **[!UICONTROL Remote-Objekt]** und wählen Sie das vom Prozess betroffene Objekt aus. Das Objekt entspricht einer der Tabellen, die bei der Connector-Konfiguration in Adobe Campaign erstellt wurden.

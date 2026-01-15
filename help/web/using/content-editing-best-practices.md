@@ -6,7 +6,7 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: c1eccb48-59bf-412f-9c18-9cda2a022096
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '563'
 ht-degree: 100%
 
@@ -39,7 +39,7 @@ Bitte beachten Sie folgende Hinweise, um eine optimale Funktionsweise des Editor
   ![](assets/dce_enchainement.png)
 
 * Achten Sie darauf, dass `<body> </body>` auf der Seite nur einmal vorkommt.
-* Beim Hochladen einer CSS- oder JS-Datei werden die in der ZIP-Datei enthaltenen Bilder nicht hochgeladen. Die in der CSS-Datei vorhandenen Referenzen auf diese Bilder werden deshalb nicht aktualisiert.
+* Beim Hochladen einer CSS- oder JS-Datei werden die in der ZIP-Datei enthaltenen Bilder nicht hochgeladen. Die in der CSS-Datei vorhandenen Verweise auf diese Bilder werden deshalb nicht aktualisiert.
 
 ## Vom Content Editor unterstützte Formate {#content-editor-supported-formats}
 
@@ -47,7 +47,7 @@ Der Digital Content Editor unterstützt das HTML-Format: Sie können jederzeit i
 
 Die Importfunktion des Digital Content Editors funktioniert mit diesen unterstützten Formaten folgendermaßen:
 
-* CSS: Die in der ZIP-Datei vorhandenen Bilder werden nicht importiert. Die Referenzen auf diese Bilder in der CSS-Datei werden nicht aktualisiert.
+* CSS: Die in der ZIP-Datei vorhandenen Bilder werden nicht importiert. Die Verweise auf diese Bilder in der CSS-Datei werden nicht aktualisiert.
 * JS: die in der ZIP-Datei vorhandenen Bilder werden nicht importiert. Die Verweise auf diese Bilder im JS werden nicht aktualisiert.
 * Iframe: Die verknüpften Seiten werden nicht importiert.
 * Landingpages und Webanwendungen: Wenn ein **form**-Tag fehlt, wird eine Warnung angezeigt. Im Nachrichtentext muss immer ein `<form> </form>` vorhanden sein.

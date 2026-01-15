@@ -68,7 +68,7 @@ In der oberen Hälfte des Assistenten werden Informationen zur Durchführung des
 
 Durch Klick auf die Schaltfläche **[!UICONTROL Stoppen]** kann die Aktualisierung gestoppt werden. Es ist jedoch möglich, dass einzelne Einträge bereits verarbeitet wurden, diese Aktualisierungen werden durch den Abbruch nicht rückgängig gemacht.
 
-### Daten fusionieren {#merge-data}
+### Daten zusammenführen {#merge-data}
 
 Wählen Sie **[!UICONTROL Ausgewählte Zeilen zusammenführen]** aus, um zwei zuvor ausgewählte Empfängerprofile zusammenzuführen. Ein Assistent ermöglicht es Ihnen, die Zusammenführung zu konfigurieren und zu starten.
 
@@ -121,7 +121,7 @@ Normalerweise melden sich Empfänger über eine spezielle Landingpage für einen
 
 In der oberen Hälfte des Assistenten werden Informationen bezüglich der Ausführung angezeigt. Mit der Schaltfläche **[!UICONTROL Anhalten]** können Sie den Vorgang stoppen. Bereits verarbeitete Empfänger werden jedoch trotzdem für den entsprechenden Dienst angemeldet.
 
-Wenn Sie die Option **[!UICONTROL Vorgang nicht in der Datenbank protokollieren]** abwählen, ist die Auswahl oder Erstellung eines Ausführungsordners erforderlich, in dem die den Vorgang betreffenden Protokollnachrichten gespeichert werden.
+Wenn Sie die Option **[!UICONTROL Auftrag nicht in der Datenbank protokollieren]** abwählen, ist die Auswahl oder Erstellung eines Ausführungsordners erforderlich, in dem die den Auftrag betreffenden Protokollnachrichten gespeichert werden.
 
 Im Tab **[!UICONTROL Abonnements]******, zugänglich über die vom Vorgang betroffenen Empfängerprofile oder den Verzeichnisknoten **[!UICONTROL Profile und Zielgruppen > Dienste und Abonnements]** kann das Ergebnis der Anmeldung geprüft werden.
 

@@ -9,7 +9,7 @@ content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: 6158ffaa-cb08-4f77-82b8-b3e5e1bf7fd7
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1098'
 ht-degree: 100%
 
@@ -116,7 +116,7 @@ Hierbei handelt es sich um die gängigsten Anwendungen für Unterbreitungsregeln
 
   >[!NOTE]
   >
-  >Es handelt sich hier um den Kanal, nicht um die Platzierung. Wenn die Regel beispielsweise den Ausschluss eines Angebots im Web-Kanal betrifft, wird ein Angebot, das auf einer Webseite in zwei Platzierungen (z. B. in einem Banner und im Textkörper) vorgeschlagen werden soll, weder in der einen noch in der anderen Platzierung auf der Webseite angezeigt, wenn es zuvor bereits auf der Webseite unterbreitet wurde.
+  >Es handelt sich hier um den Kanal, nicht um die Platzierung. Wenn die Regel beispielsweise den Ausschluss eines Angebots im Web-Kanal betrifft, wird ein Angebot, das auf einer Webseite in zwei Platzierungen (z. B. in einem Banner und im Textkörper) vorgeschlagen werden soll, weder in der einen noch in der anderen Platzierung auf der Website angezeigt, wenn es zuvor bereits auf der Website unterbreitet wurde.
   >
   >Im Falle eines Workflows, der eine Angebotsunterbreitung enthält, können Regeln nur korrekt berücksichtigt werden, wenn der Parameter **[!UICONTROL Alle Kanäle]** ausgewählt wurde.
 
@@ -148,7 +148,7 @@ Hierbei handelt es sich um die gängigsten Anwendungen für Unterbreitungsregeln
 
 ### Empfänger definieren {#defining-recipients}
 
-Klicken Sie auf den Link **[!UICONTROL Abfrage von der Zieldimension ausgehend bearbeiten...]** und wählen Sie die von der Regel betroffenen Empfänger aus.
+Klicken Sie auf den Link **[!UICONTROL Abfrage von der Zielgruppendimension ausgehend bearbeiten...]** und wählen Sie die von der Regel betroffenen Empfänger aus.
 
 ![](assets/offer_typology_012.png)
 

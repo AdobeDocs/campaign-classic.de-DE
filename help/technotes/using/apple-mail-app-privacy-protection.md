@@ -82,7 +82,7 @@ Um Einblicke aus Adobe Campaign-Daten zu gewinnen, können Sie vordefinierte Ber
 
 Sie können die Workflows identifizieren, in denen E-Mail-Öffnungen als Kriterium für Segmentierung, Zielgruppenbestimmung und Retargeting verwendet werden.
 
-Verwenden Sie ihierzu das Attribut **[!UICONTROL type]** der getrackten Link-URL (**[!UICONTROL url/@type]**). Bei E-Mail-Öffnungen ist dieses Attribut auf **[!UICONTROL Öffnen]** eingestellt. Dieses Attribut ist im Abfrageeditor verfügbar, in er Aktivität **[!UICONTROL Abfrage]** eines Workflows und in vordefinierten Filtern. Sie können dieses Attribut als Targeting-Kriterium für Marketing-Kampagnen verwenden.
+Verwenden Sie ihierzu das Attribut **[!UICONTROL type]** der getrackten Link-URL (**[!UICONTROL url/@type]**). Bei E-Mail-Öffnungen ist dieses Attribut auf **[!UICONTROL Öffnen]** eingestellt. Dieses Attribut ist im Abfrage-Editor verfügbar, in er Aktivität **[!UICONTROL Abfrage]** eines Workflows und in vordefinierten Filtern. Sie können dieses Attribut als Targeting-Kriterium für Marketing-Kampagnen verwenden.
 
 ![](assets/identify-email-open-tracking-1.png)
 
@@ -188,7 +188,7 @@ Der Workflow umfasst die folgenden Schritte:
    ![](assets/identify-email-open-tracking-17.png)
 
 1. Diese Liste vordefinierter Filter wird verwendet, um die Workflows zu finden, in denen diese Filter verwendet werden.
-1. Beide Workflows werden in einer Liste zusammengefasst.
+1. Beide Workflows werden in einer Liste zusammengeführt.
 
    Zu diesem Zweck wird JavaScript-Code verwendet.
 

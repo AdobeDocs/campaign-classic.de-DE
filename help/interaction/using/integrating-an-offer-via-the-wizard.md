@@ -61,7 +61,7 @@ Gehen Sie wie folgt vor, um Angebotsvorschläge in Sendungen einzufügen:
 
    ![](assets/offer_delivery_007.png)
 
-1. Fügen Sie nun mithilfe der Personalisierungsfelder die Angebotsvorschläge in den Versandinhalt ein. Die Anzahl der verfügbaren Vorschläge hängt von der Konfiguration der Abfrage an das Angebotsmodul, ihre Reihenfolge von der Angebotspriorität ab.
+1. Fügen Sie nun mithilfe der Zusammenführungsfelder die Angebotsvorschläge in den Versandinhalt ein. Die Anzahl der verfügbaren Vorschläge hängt von der Konfiguration der Abfrage an das Angebotsmodul, ihre Reihenfolge von der Angebotspriorität ab.
 
    ![](assets/offer_delivery_008.png)
 
@@ -80,7 +80,7 @@ Gehen Sie wie folgt vor, um Angebotsvorschläge in Sendungen einzufügen:
 
 ### Angebotsvorschläge in einen Versand einfügen {#inserting-an-offer-proposition-into-a-delivery}
 
-Die Darstellung der zu unterbreitenden Angebote wird mithilfe der Personalisierungsfelder in den Body des Versands eingeschlossen. Die Anzahl der einzuschließenden Vorschläge wird in den Parametern der Angebotsmodul-Abfrage konfiguriert.
+Die Darstellung der zu unterbreitenden Angebote wird mithilfe der Zusammenführungsfelder in den Body des Versands eingeschlossen. Die Anzahl der einzuschließenden Vorschläge wird in den Parametern der Angebotsmodul-Abfrage konfiguriert.
 
 Die Nachrichtenpersonalisierung kann entweder über Felder des Angebots oder im Fall von E-Mails über Rendering-Funktionen geschehen.
 

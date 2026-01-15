@@ -13,7 +13,7 @@ ht-degree: 100%
 
 ---
 
-# Aufzählungen verwalten{#managing-enumerations}
+# Verwalten von Aufzählungen{#managing-enumerations}
 
 Eine Aufzählung (auch als Aufzählungsliste bezeichnet) ist eine vordefinierte Liste von Werten, die Sie zum Ausfüllen bestimmter Felder verwenden können. Aufzählungen helfen dabei, Feldwerte zu standardisieren, sodass die Dateneingabe konsistenter wird und Abfragen vereinfacht werden.
 

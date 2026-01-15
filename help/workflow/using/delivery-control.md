@@ -7,7 +7,7 @@ hide: true
 hidefromtoc: true
 exl-id: c7cface2-0837-4e6a-91dc-b8353010a7a4
 source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '180'
 ht-degree: 100%
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 
 
-Die Aktivität **Versand bearbeiten** ermöglicht es, einen Versand zu starten, auszusetzen oder anzuhalten.
+Die Aktivität **Versand bearbeiten** ermöglicht es, einen Versand zu starten, zu stoppen oder anzuhalten.
 
 Hierbei kann es sich um einen durch die eingehende Transition bezeichneten, einen explizit angegebenen oder einen durch ein Script berechneten Versand handeln. Weitere Informationen hierzu finden Sie im Abschnitt [Versand](delivery.md).
 

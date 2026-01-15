@@ -7,7 +7,7 @@ hide: true
 hidefromtoc: true
 exl-id: a52baffd-402b-4b33-ab72-ac954e4dee85
 source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '345'
 ht-degree: 100%
 
@@ -27,7 +27,7 @@ Gehen Sie dazu wie folgt vor:
 
    ![](assets/delivery_loadcontent_filetransfertexamples3.png)
 
-1. Erstellen Sie einen neuen Workflow, beispielsweise in **[!UICONTROL Profile und Zielgruppen]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Zielgruppen-Workflow]**.
+1. Erstellen Sie einen neuen Workflow, beispielsweise in **[!UICONTROL Profile und Zielgruppen]** > **[!UICONTROL Aufträge]** > **[!UICONTROL Zielgruppen-Workflow]**.
 1. Fügen Sie Ihrem Workflow die Aktivität **[!UICONTROL Dateiübertragung]** hinzu und konfigurieren Sie sie durch folgende Angaben:
 
    * das zu verwendende externe Konto für die Verbindung mit dem S3- oder (S)FTP-Server.

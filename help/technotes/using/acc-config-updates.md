@@ -7,7 +7,7 @@ hide: true
 hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
 source-git-commit: 8de62db2499449fc9966b6464862748e2514a774
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1103'
 ht-degree: 100%
 
@@ -73,7 +73,7 @@ Die folgenden **jetzt verfügbaren** Konsolenversionen sollten installiert werde
 
 ## Aktualisierung von Adobe Identity Management System (IMS)
 
-Adobe Identity Service (IMS) beendet am **30. Juni 2021** die Unterstützung alter Internet Explorer-Versionen. [Weitere Informationen](https://helpx.adobe.com/de/x-productkb/global/update-operating-system-and-browser.html).
+Adobe Identity Service (IMS) stoppt am **30. Juni 2021** die Unterstützung alter Internet Explorer-Versionen. [Weitere Informationen](https://helpx.adobe.com/de/x-productkb/global/update-operating-system-and-browser.html).
 
 Um die Kompatibilität mit Adobe IMS sicherzustellen, ist ein Upgrade der Client-Konsole von Campaign erforderlich.
 

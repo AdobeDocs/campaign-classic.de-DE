@@ -148,7 +148,7 @@ Das Prinzip dieser Aktivität entspricht dem der Anreicherung. Auch hier werden 
 
 ![](assets/int_offerengine_activity2.png)
 
-Nach der Konfiguration Ihrer Anfrage (siehe [Workflow](../../workflow/using/query.md)-Handbuch):
+Nach der Konfiguration Ihrer Abfrage (siehe [Workflow](../../workflow/using/query.md)-Handbuch):
 
 1. Platzieren Sie im Anschluss an die Abfrage ein **[!UICONTROL Angebotsmodul]** und öffnen Sie es zur weiteren Bearbeitung.
 1. Konfigurieren Sie die verschiedenen Parameter der Abfrage des Angebotsmoduls (Platzierung, Kategorie oder Themen, Kontaktdatum, Anzahl beizubehaltender Angebote). Das Modul berechnet automatisch die den Parametern entsprechenden Angebote.

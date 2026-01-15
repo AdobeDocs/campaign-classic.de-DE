@@ -7,7 +7,7 @@ exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
 hide: true
 hidefromtoc: true
 source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1129'
 ht-degree: 100%
 
@@ -39,7 +39,7 @@ In Microsoft Dynamics CRM:
 In Campaign Classic:
 1. Neues externes Konto erstellen
 1. Externes Konto mit Microsoft Dynamics-Einstellungen konfigurieren
-1. Verwenden des Konfigurationsassistenten, um Tabellen zuzuordnen und Auflistungen zu synchronisieren
+1. Verwenden des Konfigurationsassistenten, um Tabellen zuzuordnen und Aufzählungen zu synchronisieren
 1. Synchronisations-Workflows erstellen
 
 [Weiterführende Informationen finden Sie in diesem Abschnitt](#configure-acc-for-microsoft)
@@ -48,7 +48,7 @@ In Campaign Classic:
 >[!CAUTION]
 > Bei der Verbindung von Adobe Campaign mit Microsoft Dynamics können Sie Folgendes nicht tun:
 > * Plugins installieren, die das Verhalten des CRM verändern; dadurch könnte es zu Kompatibilitätsproblemen mit Adobe Campaign kommen
-> * Mehrere Auflistungen auswählen
+> * Mehrere Aufzählungen auswählen
 
 ## Microsoft Dynamics CRM konfigurieren {#config-crm-microsoft}
 
@@ -191,7 +191,7 @@ Um Microsoft Dynamics 365 mit Campaign zu verbinden, müssen Sie ein dediziertes
 
    ![](assets/crm_connectors_msdynamics_05.png)
 
-1. Klicken Sie auf den Link **[!UICONTROL Auflistungssynchronisation...]**, um mit dem Synchronisieren von Auflistungen zwischen Adobe Campaign und Microsoft Dynamics zu beginnen.
+1. Klicken Sie auf den Link **[!UICONTROL Aufzählungssynchronisation...]**, um mit dem Synchronisieren von Aufzählungen zwischen Adobe Campaign und Microsoft Dynamics zu beginnen.
 
    ![](assets/crm_connectors_msdynamics_06.png)
 
@@ -211,7 +211,7 @@ Bei Microsoft Dynamics 365 werden folgende Attributtypen unterstützt/nicht unte
 | Basistypen: Boolesch, Datum + Uhrzeit, Dezimalzahl, Gleitkommazahl, Dublette, Integer, Bigint, Zeichenfolge | Ja |
 | Geld (als Dublette) | Ja |
 | memo, entityname, primarykey, uniqueidentifier (als Zeichenfolgen) | Ja |
-| Status, Auswahlliste (wir speichern die möglichen Werte in Auflistungen), Status (Zeichenfolge) | Ja |
+| Status, Auswahlliste (wir speichern die möglichen Werte in Aufzählungen), Status (Zeichenfolge) | Ja |
 | owner (als Zeichenfolge) | Ja |
 | Suche (nur Referenzsuche einzelner Entitäten) | Ja |
 | customer | Nein |

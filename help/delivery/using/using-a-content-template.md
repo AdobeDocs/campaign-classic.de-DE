@@ -6,7 +6,7 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Templates
 exl-id: e43dd68e-2e95-4367-9029-4622fbcb1759
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '448'
 ht-degree: 100%
 
@@ -18,11 +18,11 @@ ht-degree: 100%
 
 ## Über Inhaltsvorlagen {#about-content-templates}
 
-Inhaltsvorlagen können direkt in der Versanderstellung referenziert und verwendet werden. Siehe [Versanderstellung unter Verwendung des Content Managements](#creating-a-delivery-via-content-management).
+Inhaltsvorlagen können direkt in der Versanderstellung referenziert und verwendet werden. Siehe [Versanderstellung unter Verwendung des Content-Managements](#creating-a-delivery-via-content-management).
 
 Sie können auch zum Erstellen von Inhaltsinstanzen genutzt werden. Nach der Erstellung sind diese Instanzen versandbereit (siehe [Versand einer Inhaltsinstanz](#delivering-a-content-instance)) oder exportbereit (siehe [Erstellung einer Inhaltsinstanz](#creating-a-content-instance)).
 
-## Versanderstellung unter Verwendung des Content Managements {#creating-a-delivery-via-content-management}
+## Versanderstellung unter Verwendung des Content-Managements {#creating-a-delivery-via-content-management}
 
 Sie haben die Möglichkeit, bei der Versanderstellung eine Inhaltsvorlage anzugeben und mithilfe dieser den Inhalt zu erfassen. Im Versandassistenten erscheint in diesem Fall ein zusätzlicher Tab mit den Feldern zur Eingabe der variablen Inhaltselemente.
 

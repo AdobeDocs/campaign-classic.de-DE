@@ -7,7 +7,7 @@ hide: true
 hidefromtoc: true
 exl-id: ab786cf1-74a4-4185-a63d-84e776a2f776
 source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '828'
 ht-degree: 100%
 
@@ -48,7 +48,7 @@ Die Workflow-Erstellung gliedert sich in folgende Schritte:
 1. Mithilfe der **[!UICONTROL Aufspaltung]** werden nun je nach erreichtem Score Teilmengen erstellt.
 1. An jede Teilmenge wird ein **[!UICONTROL Versand]** angeschlossen.
 
-## 1. Schritt: Zielgruppenbestimmung {#step-1--targeting}
+## &#x200B;1. Schritt: Zielgruppenbestimmung {#step-1--targeting}
 
 In der ersten Abfrage werden die Kontakte abgerufen, die innerhalb der letzten sechs Monate in die Datenbank aufgenommen wurden.
 
@@ -60,7 +60,7 @@ In der zweiten Abfrage werden die Kontakte abgerufen, die am letzten Wettbewerb 
 
 Die **[!UICONTROL Schnittmenge]** ermittelt dann die Population, die beiden Bedingungen entspricht.
 
-## 2. Schritt: Anreicherung {#step-2--enrichment}
+## &#x200B;2. Schritt: Anreicherung {#step-2--enrichment}
 
 Im vorliegenden Beispiel sollen die Sendungen basierend auf dem in der Tabelle **[!UICONTROL Wettbewerbsergebnisse]** enthaltenen Feld **[!UICONTROL Score]** personalisiert werden. Diese Tabelle weist eine 1:n-Relation zur Empfängertabelle auf. Die **[!UICONTROL Anreicherungsaktivität]** ermöglicht es, Daten aus einer mit der Filterdimension in Relation stehenden Tabelle zur Arbeitstabelle des Workflows hinzuzufügen.
 
@@ -104,7 +104,7 @@ Auch das Schema wurde entsprechend angereichert.
 
 ![](assets/uc1_enrich_14.png)
 
-## 3. Schritt: Aufspaltung und Versand {#step-3--split-and-delivery}
+## &#x200B;3. Schritt: Aufspaltung und Versand {#step-3--split-and-delivery}
 
 Im Anschluss an die Anreicherung sorgt die **[!UICONTROL Aufspaltung]** für die Verteilung der Empfänger nach den erreichten Scores.
 

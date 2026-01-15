@@ -9,7 +9,7 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 23c873fd-9016-4d32-842c-772cfff0e23e
 source-git-commit: 122d69d3d7474480f7799248413ac89338469ebc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '909'
 ht-degree: 100%
 
@@ -44,7 +44,7 @@ Die Funktionen von Adobe Campaign helfen Ihnen bei der Einhaltung der folgenden 
 * Der **PDPA** (Personal Data Protection Act) ist das neue Datenschutzgesetz, in dem die Anforderungen an den Datenschutz in Thailand harmonisiert und neu geregelt werden.
 * Der **LGPD** (Lei Geral de Proteção de Dados) gilt für alle Unternehmen, die in Brasilien personenbezogene Daten sammeln oder verarbeiten.
 * Das **CASL** (Canadian Anti-Spam Law) betrifft alle Nachrichten, die in oder aus Kanada gesendet werden, jedoch keine Nachrichten, die durch Kanada geleitet werden.
-* Der **VCDPA** (Virginia Consumer Data Protection Act) und **CPA** (Colorado Privacy Act) gelten für alle Unternehmen, die in diesen Bundesstaaten geschäftlich tätig sind oder Personen mit Wohnsitz in diesen Staaten aufnehmen.
+* Der **VCDPA** (Virginia Consumer Data Protection Act) und **CPA** (Colorado Privacy Act) gelten für alle Unternehmen, die in diesen Bundesstaaten geschäftlich tätig sind oder Personen mit Wohnsitz in diesen Staaten ansprechen.
 
 Alle diese Verordnungen gelten für Adobe Campaign-Kundinnen und -Kunden, die über Daten von betroffenen Personen mit Wohnsitz in den oben genannten Regionen oder Ländern verfügen.
 
@@ -64,7 +64,7 @@ Um Sie bei der Einhaltung der Datenschutzverordnungen zu unterstützen, ermögli
 
 Weitere Informationen zum Erstellen von **Zugriffs-** und **Löschanfragen** und zur Verarbeitung dieser Anfragen durch Adobe Campaign finden Sie in den [Implementierungsschritten](../../platform/using/privacy-requests.md).
 
-<!--Tutorials on Privacy management in Campaign Standard are also available [here](https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html?lang=de).
+<!--Tutorials on Privacy management in Campaign Standard are also available [here](https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html).
 https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html-->
 
 ## Einverständnis, Datenbeibehaltung und Benutzerrollen {#consent-retention-roles}

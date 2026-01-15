@@ -17,7 +17,7 @@ ht-degree: 100%
 
 Der Link **[!UICONTROL Dynamische Bedingung bearbeiten...]** ermöglicht es, im Rahmen einer Kampagne oder einer Sendung die zu verwendenden Testadressen nach bestimmten Kriterien auszuwählen.
 
-In unserem Anwendungsbeispiel versendet die Webseite **Mein Online-Buchshop** je nach bevorzugtem Genre verschiedene Newsletter an seine Kunden.
+In unserem Anwendungsbeispiel versendet die Website **Mein Online-Buchshop** je nach bevorzugtem Genre verschiedene Newsletter an seine Kunden.
 
 In Absprache mit der Einkaufsabteilung hat der versandverantwortliche Benutzer einen Newsletter für Kunden erstellt, die in der Vergangenheit bereits Kriminalromane bestellt haben.
 

@@ -9,7 +9,7 @@ content-type: reference
 topic-tags: case-study
 exl-id: 90afced3-465d-4370-8a33-51a7e4356135
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2163'
 ht-degree: 100%
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 ## Anonymen Besuchern Angebote unterbreiten {#presenting-an-offer-to-an-anonymous-visitor}
 
-Das Unternehmen Neobank möchte auf seiner Webseite Besuchern, die sich nicht mit ihren Kundendaten angemeldet haben, ein Angebot anzeigen.
+Das Unternehmen Neobank möchte auf seiner Website Besuchern, die sich nicht mit ihren Kundendaten angemeldet haben, ein Angebot anzeigen.
 
 Folgende Etappen sind zur Umsetzung dieser Interaktion zu durchlaufen:
 
@@ -133,7 +133,7 @@ Das Ergebnis ist eine Navigationsstruktur, welche Ihre neue Umgebung enthält:
 
 ### Konfiguration der Angebotsplatzierung auf der Website {#configure-the-web-offer-space-on-the-website}
 
-Damit die zuvor erstellten Angebote auf der Web-Seite erscheinen können, fügen Sie einen JavaScript-Code in die HTML-Seite Ihrer Web-Präsenz ein, der die Abfrage des Angebotsmoduls auslöst (siehe [Über eingehende Kanäle](../../interaction/using/about-inbound-channels.md)).
+Damit die zuvor erstellten Angebote auf der Website erscheinen können, fügen Sie einen JavaScript-Code in die HTML-Seite Ihrer Web-Präsenz ein, der die Abfrage des Angebotsmoduls auslöst (siehe [Über eingehende Kanäle](../../interaction/using/about-inbound-channels.md)).
 
 1. Fügen Sie in der HTML-Seite ein @id-Attribut ein, dessen Wert dem internen Namen der zuvor erstellten anonymen Platzierung entspricht (siehe [Anonyme Platzierungen erstellen](#creating-anonymous-offer-spaces)), mit einem vorangestellten **i_**.
 
@@ -203,7 +203,7 @@ Gehen Sie wie folgt vor:
 
 ### Konfiguration der Platzierungen für die anonyme Umgebung {#configuring-offer-spaces-for-the-anonymous-environment}
 
-Die auf der Webseite zu unterbreitenden Angebote stammen aus zwei verschiedenen Kategorien: **Premium** und **Partner**. Im vorliegenden Beispiel wird für jede Kategorie eine spezifische Platzierung erstellt.
+Die auf der Website zu unterbreitenden Angebote stammen aus zwei verschiedenen Kategorien: **Premium** und **Partner**. Im vorliegenden Beispiel wird für jede Kategorie eine spezifische Platzierung erstellt.
 
 Gehen Sie wie folgt vor, um die Platzierung der Kategorie **Premium** zu erstellen:
 
@@ -391,7 +391,7 @@ Gehen Sie wie folgt vor, um die Platzierungen der Angebote in der HTML-Seite der
 
    ![](assets/offer_inbound_fallback_example_042.png)
 
-1. Ordnen Sie der Variable **interactionTarget** die Informationen zu, die die Identifizierung des Besuchers ermöglichen, der sich auf der Neobank-Webseite anmeldet.
+1. Ordnen Sie der Variable **interactionTarget** die Informationen zu, die die Identifizierung des Besuchers ermöglichen, der sich auf der Neobank-Website anmeldet.
 
    ![](assets/offer_inbound_fallback_example_043.png)
 
