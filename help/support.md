@@ -132,7 +132,7 @@ Das neue Ticket-System ist über die [Adobe Admin Console](https://adminconsole.
 
 ### Fragen an Experten
 
-Treten Sie der Campaign Classic-Community bei: Suchen Sie nach Antworten in vorhandenen Fragen oder stellen Sie Ihre Frage der Community. [Reden Sie mit](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=de){_blank}.
+Treten Sie der Campaign Classic-Community bei: Suchen Sie nach Antworten in vorhandenen Fragen oder stellen Sie Ihre Frage der Community. [Reden Sie mit](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){_blank}.
 
 ### Aufrufen des Campaign-Download-Centers
 
