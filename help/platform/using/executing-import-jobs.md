@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Konfigurieren von Importvorgängen
-description: Erfahren Sie, wie Sie Importvorgänge in Campaign konfigurieren und ausführen.
+title: Konfigurieren von Importaufträgen
+description: Erfahren Sie, wie Sie Importaufträge in Campaign konfigurieren und ausführen.
 feature: Overview
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 audience: platform
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 ---
 
-# Konfigurieren von Importvorgängen {#executing-import-jobs}
+# Konfigurieren von Importaufträgen {#executing-import-jobs}
 
 
 
@@ -27,7 +27,7 @@ Mit Adobe Campaign können Sie Daten aus einer oder mehreren Dateien im Text-, C
 
 Mit dem Import-Assistenten können Sie einen Import konfigurieren, seine Optionen definieren (z. B. Formatierung) und die Ausführung starten. Es handelt sich dabei um eine Reihe von Bildschirmen, deren Inhalt von der Art des Imports (einfach oder mehrfach) und den Rechten der Benutzerin bzw. des Benutzers abhängt.
 
-Der Import-Assistent wird nach der Erstellung eines neuen Importvorgangs angezeigt (siehe [Erstellen von Import- und Exportaufrägen](../../platform/using/creating-import-export-jobs.md)).
+Der Import-Assistent wird nach der Erstellung eines neuen Importauftrags angezeigt (siehe [Erstellen von Import- und Exportaufrägen](../../platform/using/creating-import-export-jobs.md)).
 
 >[!NOTE]
 >
@@ -41,7 +41,7 @@ Jede Zeile der Quelldatei entspricht einem Datensatz. Die einzelnen Daten innerh
 
 Beim Start des Import-Assistenten muss zunächst eine Vorlage ausgewählt werden. Um beispielsweise den Import von Empfangenden zu konfigurieren, die einen Newsletter erhalten haben, gehen Sie folgendermaßen vor:
 
-1. Gehen Sie zum Ordner **[!UICONTROL Profile und Zielgruppen > Vorgang > Allgemeine Importe und Exporte]**.
+1. Gehen Sie zum Ordner **[!UICONTROL Profile und Zielgruppen > Auftrag > Allgemeine Importe und Exporte]**.
 1. Wählen Sie **Neu** und danach **Importieren**, um die Importvorlage zu erstellen.
 
    ![](assets/s_ncs_user_import_wizard01_1.png)
@@ -81,9 +81,9 @@ Der Link **[!UICONTROL Erweiterte Parameter...]** bietet Zugriff auf folgende Op
 
      Kreuzen Sie diese Option an, um die Durchführung Zeile für Zeile zu verfolgen.
 
-   * **[!UICONTROL Vorgang in einem separaten Prozess starten]**
+   * **[!UICONTROL Auftrag in einem separaten Prozess starten]**
 
-     Diese Option ist standardmäßig ausgewählt. Sie ermöglicht es, den Importprozess separat auszuführen, um keine anderen, zur gleichen Zeit in der Datenbank laufenden Prozesse zu beeinträchtigen.
+     Diese Option ist standardmäßig ausgewählt. Sie ermöglicht es, den Importauftrag separat auszuführen, um keine anderen, zur gleichen Zeit in der Datenbank laufenden Aufträge zu beeinträchtigen.
 
    * **[!UICONTROL Aufzählungen nicht aktualisieren]**
 
@@ -339,4 +339,4 @@ Im letzten Schritt des Assistenten wird der Datenimport ausgelöst. Klicken Sie 
 
 ![](assets/s_ncs_user_import_wizard06_1.png)
 
-Anschließend können Sie die Ausführung des Importvorgangs überwachen (siehe [Überwachung der Vorgangsausführung](../../platform/using/monitoring-jobs-execution.md)).
+Anschließend können Sie die Ausführung des Importauftrags überwachen (siehe [Überwachung der Auftragsausführung](../../platform/using/monitoring-jobs-execution.md)).

@@ -211,7 +211,7 @@ Feld-Kategorien:
   </tr> 
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_48.png" /> </td> 
-   <td> Primärschlüssel. Dieses SQL-Feld dient der eindeutigen Identifikation eines Datensatzes.<br /> </td> 
+   <td> Primärschlüssel. Dieses SQL-Feld dient der eindeutigen Identifikation eines Eintrags in einer Tabelle.<br /> </td> 
    <td> Eine Benutzerkennung - von Natur aus "eindeutig" - ist ein Primärschlüssel.<br /> </td> 
   </tr> 
   <tr> 
@@ -1019,7 +1019,7 @@ Er ermöglicht die Verknüpfung von Feldern aus den Datenbanktabellen mit folgen
   </tr> 
   <tr> 
    <td> <strong>PartitionBy</strong><br /> </td> 
-   <td> Partitioniert das Ergebnis einer Abfrage<br /> </td> 
+   <td> Partitioniert das Ergebnis einer Abfrage in einer Tabelle<br /> </td> 
    <td> PartitionBy(&lt;Wert 1&gt;)<br /> </td>  
   </tr> 
   <tr> 

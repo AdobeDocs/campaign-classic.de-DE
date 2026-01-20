@@ -7,7 +7,7 @@ exl-id: 94a1f00d-e952-4edd-9012-f71c87b897ca
 hide: true
 hidefromtoc: true
 source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '349'
 ht-degree: 100%
 
@@ -40,10 +40,10 @@ Konto, mit dem die Anmeldung bei Salesforce CRM erfolgt.
 Passwort, mit dem die Anmeldung bei Salesforce CRM erfolgt.
 
    * **[!UICONTROL Clientkennung]**
-Informationen darüber, wo Sie Ihre Client-Kennung finden, erfahren Sie auf dieser [Seite](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
+Informationen darüber, wo Sie Ihre Client-Kennung finden, erfahren Sie auf dieser [Seite](https://help.salesforce.com/articleView?id=000205876&type=1).
 
    * **[!UICONTROL Sicherheits-Token]**
-Informationen darüber, wo Sie Ihr Security-Token finden, erfahren Sie auf dieser [Seite](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
+Informationen darüber, wo Sie Ihr Security-Token finden, erfahren Sie auf dieser [Seite](https://help.salesforce.com/articleView?id=000205876&type=1).
 
    * **[!UICONTROL API-Version]**
 Wählen Sie die Version der API aus.
@@ -63,7 +63,7 @@ Wählen Sie die Version der API aus.
 
 1. Sobald das Schema erstellt ist, können Sie Aufzählungen in Salesforce automatisch mit Adobe Campaign synchronisieren.
 
-   Klicken Sie hierzu auf den Link **[!UICONTROL Auflistungssynchronisation...]** und wählen Sie die der Salesforce-Auflistung entsprechende Adobe Campaign-Auflistung aus.
+   Klicken Sie hierzu auf den Link **[!UICONTROL Aufzählungssynchronisation...]** und wählen Sie die der Salesforce-Aufzählung entsprechende Adobe Campaign-Aufzählung aus.
 
 
 
@@ -71,18 +71,18 @@ Wählen Sie die Version der API aus.
 
    >[!NOTE]
    >
-   >Sie können alle Werte einer Adobe Campaign-Auflistung durch die des CRM-Systems ersetzen: Wählen Sie hierzu in der Spalte **[!UICONTROL Ersetzen]** die Option **[!UICONTROL Ja]**.
+   >Sie können alle Werte einer Adobe Campaign-Aufzählung durch die des CRM-Systems ersetzen: Wählen Sie hierzu in der Spalte **[!UICONTROL Ersetzen]** die Option **[!UICONTROL Ja]**.
 
 
    Klicken Sie abschließend auf **[!UICONTROL Weiter]** und **[!UICONTROL Starten]**, um mit dem Listenimport zu beginnen.
 
-1. Prüfen Sie die importierten Werte im Menü **[!UICONTROL Administration > Plattform > Auflistungen]**.
+1. Prüfen Sie die importierten Werte im Menü **[!UICONTROL Administration > Plattform > Aufzählungen]**.
 
    ![](assets/crm_connectors_sfdc_exe.png)
 
    >[!NOTE]
    >
-   > Auflistungen mit Mehrfachauswahl werden nicht unterstützt.
+   > Aufzählungen mit Mehrfachauswahl werden nicht unterstützt.
 
 Campaign und Salesforce.com sind jetzt verbunden. Sie können eine Datensynchronisation zwischen den beiden Systemen einrichten.
 

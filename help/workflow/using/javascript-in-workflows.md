@@ -7,7 +7,7 @@ hide: true
 hidefromtoc: true
 exl-id: 7213ea64-3dec-4b16-9d93-4ae941ddfaa7
 source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1702'
 ht-degree: 100%
 
@@ -54,7 +54,7 @@ Zum Schreiben in die Datenbank können Sie die statische `Write`-Methode mit dem
    1. Rufen Sie die `Write`-Methode mit dem `xtk:session`-Schema auf.
 
       >[!IMPORTANT]
-      > Wenn Sie Adobe Campaign v8 verwenden, empfehlen wir, den Staging-Mechanismus mit den **Aufnahme**- und **Datenaktualisierungs/-löschungs**-APIs für die `Write`-Methode in einer Snowflake-Tabelle zu verwenden. [Weitere Informationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html?lang=de){target="_blank"}.
+      > Wenn Sie Adobe Campaign v8 verwenden, empfehlen wir, den Staging-Mechanismus mit den **Aufnahme**- und **Datenaktualisierungs/-löschungs**-APIs für die `Write`-Methode in einer Snowflake-Tabelle zu verwenden. [Weitere Informationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html?lang=de){target="_blank"}
 
    1. Übergeben Sie den XML-Code als Argument für die Schreibabfrage.
 
@@ -564,7 +564,7 @@ Sie können Datensätze einfügen, aktualisieren und löschen. Sie können die `
 * Der `delete`-Vorgang
 
 >[!IMPORTANT]
-> Wenn Sie Adobe Campaign v8 verwenden, empfehlen wir, den Staging-Mechanismus mit den **Aufnahme**- und **Datenaktualisierungs/-löschungs**-APIs für die `Write`-Methode in einer Snowflake-Tabelle zu verwenden. [Weitere Informationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html?lang=de){target="_blank"}.
+> Wenn Sie Adobe Campaign v8 verwenden, empfehlen wir, den Staging-Mechanismus mit den **Aufnahme**- und **Datenaktualisierungs/-löschungs**-APIs für die `Write`-Methode in einer Snowflake-Tabelle zu verwenden. [Weitere Informationen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html?lang=de){target="_blank"}
 
 #### Beispiel 1: Datensatz einfügen oder aktualisieren
 

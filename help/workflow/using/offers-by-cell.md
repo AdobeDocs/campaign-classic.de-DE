@@ -7,7 +7,7 @@ hide: true
 hidefromtoc: true
 exl-id: 72b17b48-093a-4eb9-a848-3c1570e49b61
 source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '159'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ Diese Aktivität kann nur mit **Interaktion** verwendet werden. Weiterführende 
 
 Gehen Sie dazu wie folgt vor:
 
-1. Platzieren Sie im Anschluss an die Abfrage eine Aktivität **[!UICONTROL Angebote pro Segment]** und öffnen Sie sie zur weiteren Bearbeitung.
+1. Platzieren Sie im Anschluss an die Abfrage der Zielpopulation eine Aktivität **[!UICONTROL Angebote pro Segment]** und öffnen Sie sie zur weiteren Bearbeitung.
 1. Wählen Sie auf der Registerkarte **[!UICONTROL Allgemein]** die Platzierung, über die Sie Angebote unterbreiten möchten.
 1. Definieren Sie nun auf der Registerkarte **[!UICONTROL Segmente]** über die Schaltfläche **[!UICONTROL Hinzufügen]** die verschiedenen Segmente:
 

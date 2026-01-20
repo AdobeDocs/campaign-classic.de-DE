@@ -7,7 +7,7 @@ hide: true
 hidefromtoc: true
 exl-id: 7ff5da71-ef82-48a2-a608-06a4ca188bb9
 source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '568'
 ht-degree: 100%
 
@@ -63,7 +63,7 @@ Im unteren Bereich des Editors werden die möglichen Antworten definiert. Jeder 
 
 Klicken Sie auf **[!UICONTROL Erweiterte Parameter...]**, um die für die Benutzerbenachrichtigungen zu verwendende Versandvorlage auszuwählen. Die Standardvorlage (mit internem Namen &#39;notifyAssignee&#39;) übernimmt den Titel und den Nachrichteninhalt sowie einen Link auf die Webseite mit dem Antwortformular.
 
-Die Vorlage kann angepasst werden. Es wird jedoch empfohlen, sie zu duplizieren und unter einem neuen Namen zu speichern. Der Zielgruppenmechanismus (externe Datei, Zielgruppen-Mapping) darf hingegen nicht geändert werden. Er ist für die korrekte Funktionsweise der Benachrichtigungen erforderlich.
+Die Vorlage kann angepasst werden. Es wird jedoch empfohlen, sie zu duplizieren und unter einem neuen Namen zu speichern. Der Zielgruppenmechanismus (externe Datei, Zielgruppenbestimmungs-Mapping) darf hingegen nicht geändert werden. Er ist für die korrekte Funktionsweise der Benachrichtigungen erforderlich.
 
 Ein Validierungsbeispiel finden Sie im Abschnitt [Validierungen definieren](defining-approvals.md).
 

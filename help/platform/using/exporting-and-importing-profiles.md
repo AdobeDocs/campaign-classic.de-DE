@@ -20,7 +20,7 @@ ht-degree: 100%
 
 
 
-Mithilfe von [Workflows](#use-workflows) können Sie Empfängerprofile in die Adobe Campaign-Datenbank importieren oder exportieren oder [allgemeine Import- oder Exportvorgänge einrichten](#create-jobs).
+Mithilfe von [Workflows](#use-workflows) können Sie Empfängerprofile in die Adobe Campaign-Datenbank importieren oder exportieren oder [allgemeine Import- oder Exportaufträge einrichten](#create-jobs).
 
 ![](assets/do-not-localize/how-to-video.png) [Mehr zu dieser Funktion erfahren Sie im Video.](#import-profiles-video).
 
@@ -48,7 +48,7 @@ To configure and execute data imports and exports jobs, go to the **[!UICONTROL 
 
 This video explains how to import profiles in Adobe Campaign, for an occasional import.
 
->[!VIDEO](https://video.tv.adobe.com/v/328394?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/25608?quality=12)
 
-Additional Campaign Classic how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).
+Additional Campaign Classic how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
 -->

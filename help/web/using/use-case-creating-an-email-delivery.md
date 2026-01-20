@@ -6,7 +6,7 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: e2679f12-459b-466d-9c82-60a28363b104
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '796'
 ht-degree: 100%
 

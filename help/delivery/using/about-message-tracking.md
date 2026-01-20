@@ -74,7 +74,7 @@ Sie können auch Besuche auf Web-Anwendungsseiten mit Trackingtags verfolgen und
 
 **Opt-out vom Web-Anwendungs-Tracking**
 
-Mit der Opt-Out-Funktion für das Web-Anwendungs-Tracking können Sie das Tracking des Web-Verhaltens von Endbenutzern stoppen, die sich gegen das Tracking ihres Verhaltens entschieden haben. Sie können ermöglichen, ein Banner in Web-Anwendungen oder Zielseiten anzuzeigen, damit Benutzer sich abmelden können. [Weitere Informationen](../../web/using/web-application-tracking-opt-out.md)
+Mit der Opt-Out-Funktion für das Web-Anwendungs-Tracking können Sie das Tracking des Web-Verhaltens von Endbenutzern stoppen, die sich gegen das Tracking ihres Verhaltens entschieden haben. Sie können ermöglichen, ein Banner in Web-Anwendungen oder Landingpages anzuzeigen, damit Benutzer sich abmelden können. [Weitere Informationen](../../web/using/web-application-tracking-opt-out.md)
 
 ## Fehlerbehebung beim Tracking {#tracking-troubleshooting}
 

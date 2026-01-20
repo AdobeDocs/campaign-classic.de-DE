@@ -8,7 +8,7 @@ audience: integrations
 content-type: reference
 exl-id: 9fa3ce08-3007-4c65-9841-bad339428b7c
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '359'
 ht-degree: 100%
 
@@ -22,7 +22,7 @@ Mit dieser Integration kann beispielsweise ein Newsletter in Adobe Experience Ma
 
 **In Adobe Experience Manager:**
 
-1. Wählen Sie in der AEM-Authoring-Instanz das **Adobe-Experience**-Logo oben links und danach **[!UICONTROL Sites]**.
+1. Wählen Sie in der AEM-Autoreninstanz das **Adobe-Experience**-Logo oben links und danach **[!UICONTROL Sites]**.
 
    ![](assets/aem_uc_1.png)
 
@@ -82,4 +82,4 @@ Ihr Newsletter ist jetzt fertig und in Adobe Campaign synchronisiert.
 
    ![](assets/aem_uc_12.png)
 
-Ihre E-Mail kann jetzt an Ihre Audience gesendet werden.
+Ihre E-Mail kann jetzt an Ihre Zielgruppe gesendet werden.

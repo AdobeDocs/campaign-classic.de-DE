@@ -6,7 +6,7 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Email Design
 role: User
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '544'
 ht-degree: 100%
 

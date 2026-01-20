@@ -7,7 +7,7 @@ hide: true
 hidefromtoc: true
 exl-id: dfd36d2c-44ff-49a9-80b4-09eaf3377072
 source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '762'
 ht-degree: 100%
 
@@ -19,11 +19,11 @@ ht-degree: 100%
 
 In diesem Anwendungsbeispiel wird ein Workflow zum kanalübergreifenden Versand beschrieben. Das allgemeine Konzept kanalübergreifender Sendungen finden Sie in [diesem Abschnitt](cross-channel-deliveries.md).
 
-Das Ziel besteht darin, aus den Empfängern der Datenbank eine Audience auszuwählen und diese in gesonderte Gruppen zu unterteilen, um der einen Gruppe eine E-Mail und der anderen Gruppe eine SMS zukommen zu lassen.
+Das Ziel besteht darin, aus den Empfängern der Datenbank eine Zielgruppe auszuwählen und diese in gesonderte Gruppen zu unterteilen, um der einen Gruppe eine E-Mail und der anderen Gruppe eine SMS zukommen zu lassen.
 
 Die Umsetzung des Anwendungsbeispiels gliedert sich in folgende Schritte:
 
-1. Erstellen der Aktivität **[!UICONTROL Abfrage]**, um eine Audience auszuwählen.
+1. Erstellen der Aktivität **[!UICONTROL Abfrage]**, um eine Zielgruppe auszuwählen.
 1. Erstellen der Aktivität **[!UICONTROL E-Mail-Versand]**, wobei die Nachricht einen Link zu einem Angebot enthalten soll.
 1. Verwenden der Aktivität **[!UICONTROL Aufspaltung]**, um:
 
@@ -33,7 +33,7 @@ Die Umsetzung des Anwendungsbeispiels gliedert sich in folgende Schritte:
 
 ![](assets/wkf_cross-channel_7.png)
 
-## Schritt 1: Auswählen einer Audience {#step-1--targeting-the-audience}
+## Schritt 1: Auswählen einer Zielgruppe {#step-1--targeting-the-audience}
 
 Um Ihre Zielgruppe zu bestimmen, erstellen Sie eine Abfrage zur Identifizierung der Empfänger.
 
@@ -67,7 +67,7 @@ Um Ihre Zielgruppe zu bestimmen, erstellen Sie eine Abfrage zur Identifizierung 
 
    ![](assets/wkf_cross-channel_4.png)
 
-## Schritt 3: Segmentieren der resultierenden Audience {#step-3--segmenting-the-resulting-audience}
+## Schritt 3: Segmentieren der resultierenden Zielgruppe {#step-3--segmenting-the-resulting-audience}
 
 Sobald Ihre Zielgruppe feststeht und Ihr erster Versand bereit ist, müssen Sie die Zielgruppe mithilfe von Filterbedingungen in unterschiedliche Populationen unterteilen.
 

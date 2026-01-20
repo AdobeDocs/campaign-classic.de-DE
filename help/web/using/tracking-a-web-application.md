@@ -6,7 +6,7 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Web Apps, Reporting, Monitoring
 exl-id: 07bd36ce-c701-4998-974f-81fd4fac22a0
 source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '413'
 ht-degree: 100%
 
@@ -22,7 +22,7 @@ Auf diese Weise können Sie mehrere Navigationspfade definieren und ihren Erfolg
 
 Die wichtigsten Verbesserungen in dieser Version sind:
 
-* Möglichkeit, mehrere Trackingtags auf derselben Seite einzufügen, um die Definition des Navigationspfads zu vereinfachen (z. B. Bestellung, Abonnement, Rückgabe)
+* Möglichkeit, mehrere Trackingtags auf derselben Seite einzufügen, um die Definition des Navigationspfads zu vereinfachen (z. B. Kauf, Abonnement, Rückgabe)
 * Ansicht der Navigationspfade und Trackingtags auf den unterschiedlichen Seiten im Webanwendungs-Dashboard.
 
   ![](assets/trackers_1.png)
@@ -33,7 +33,7 @@ Die wichtigsten Verbesserungen in dieser Version sind:
 
   Die wichtigsten Indikatoren sind:
 
-   * **Konvertierungsrate**: Anzahl der Personen, die alle Schritte eines Vorgangs durchlaufen haben.
+   * **Konversionsrate**: Anzahl der Personen, die alle Schritte eines Vorgangs durchlaufen haben.
    * **Bounce-Rate**: Anzahl der Personen, für die nur der erste Schritt angezeigt wurde.
    * **Konversionstrichter**: Verlustrate von einem Schritt zum nächsten.
 

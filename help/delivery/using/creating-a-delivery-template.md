@@ -8,7 +8,7 @@ hidefromtoc: true
 role: User
 exl-id: 40a03e04-56c7-48c0-95b8-aa7bf1121048
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '387'
 ht-degree: 100%
 
@@ -59,7 +59,7 @@ Führen Sie zur Konfiguration einer Versandvorlage die folgenden Schritte aus:
 
    ![](assets/delivery_template_4.png)
 
-1. Tragen Sie der Kategorie **E-Mail-Parameter** den E-Mail-Betreff und die Zielgruppe ein.
+1. Tragen Sie der Kategorie **E-Mail-Parameter** den E-Mail-Betreff und die Zielpopulation ein.
 1. Fügen Sie Ihren **HTML-Inhalt** ein, um Ihre Vorlage zu personalisieren. Sie können auch einen Mirrorseite-Link und einen Abmelde-Link angeben.
 1. Wählen Sie die Registerkarte **Vorschau**. Wählen Sie im Dropdown-Menü **Personalisierung testen** die Option **Empfänger** aus, um sich Ihre Vorlage in der Vorschau anzusehen.
 
@@ -74,18 +74,18 @@ Führen Sie zur Konfiguration einer Versandvorlage die folgenden Schritte aus:
 
 Das folgende Video zeigt, wie man eine Vorlage für einen Ad-hoc-Versand konfiguriert.
 
->[!VIDEO](https://video.tv.adobe.com/v/27531?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/24066?quality=12)
 
 ### Einrichten der Eigenschaften von Versandvorlagen
 
 Das folgende Video zeigt, wie die Eigenschaften der Versandvorlage festgelegt werden, und erklärt die einzelnen Eigenschaften im Detail.
 
->[!VIDEO](https://video.tv.adobe.com/v/39113?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/24067?quality=12)
 
 ### Bereitstellen einer Ad-hoc-Versandvorlage
 
 In diesem Video wird erläutert, wie man eine Ad-hoc-E-Mail-Versandvorlage bereitstellt. Außerdem wird der Unterschied zwischen einem E-Mail-Versand- und einem Versand-Workflow erläutert.
 
->[!VIDEO](https://video.tv.adobe.com/v/27449?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/24065?quality=12)
 
 Weitere Anleitungsvideos zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).

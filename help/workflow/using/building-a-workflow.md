@@ -7,7 +7,7 @@ hide: true
 hidefromtoc: true
 exl-id: 8ba20ccd-b03f-4c4f-87c1-a21e80d8e4be
 source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1679'
 ht-degree: 100%
 
@@ -57,7 +57,7 @@ In diesem Schritt werden die Aktivitäten im Diagramm positioniert, konfiguriert
 
 In den einzelnen Tabs der Palette werden die Aktivitäten nach Kategorie geordnet angezeigt. Die verfügbaren Tabs und Aktivitäten sind je nach Workflow-Typ unterschiedlich (technischer, Zielgruppen- oder Kampagnen-Workflow).
 
-* Der erste Tab enthält Zielgruppen- und Datenmanipulationsaktivitäten. Diese Aktivitäten werden unter [Zielgruppenbestimmungsaktivitäten](about-targeting-activities.md) beschrieben.
+* Der erste Tab enthält Zielgruppenbestimmungs- und Datenmanipulationsaktivitäten. Diese Aktivitäten werden unter [Zielgruppenbestimmungsaktivitäten](about-targeting-activities.md) beschrieben.
 * Der zweite Tab enthält die Planungsaktivitäten, die in erster Linie der Koordination der anderen Aktivitäten dienen. Diese Aktivitäten werden unter [Steuerungsaktivitäten](about-flow-control-activities.md) beschrieben.
 * Der dritte Tab enthält Tools und Aktionen, die im Workflow verwendet werden können. Diese Aktivitäten werden unter [Aktionsaktivitäten](about-action-activities.md) beschrieben.
 * Der vierte Tab enthält die Aktivitäten, die von einem bestimmten Ereignis abhängen, beispielsweise vom Erhalt einer E-Mail oder dem Empfang einer Datei auf dem Server. Diese Aktivitäten werden unter [Ereignisaktivitäten](about-event-activities.md) beschrieben.
@@ -135,9 +135,9 @@ Alle diese Aktivitäten sind im ersten Tab der Workflow-Palette enthalten.
 
 >[!NOTE]
 >
->Zielgruppenaktivitäten werden in diesem [Abschnitt](about-activities.md) beschrieben.
+>Zielgruppenbestimmungs-Aktivitäten werden in diesem [Abschnitt](about-activities.md) beschrieben.
 
-Der Zugriff auf Zielgruppen-Workflows erfolgt im Navigationsbaum über den Knoten **[!UICONTROL Profile und Zielgruppen > Vorgänge > Zielgruppen-Workflows]** oder auf der Startseite über die Rubrik **[!UICONTROL Profile und Zielgruppen]**.
+Der Zugriff auf Zielgruppen-Workflows erfolgt im Navigationsbaum über den Knoten **[!UICONTROL Profile und Zielgruppen > Aufträge > Zielgruppen-Workflows]** oder auf der Startseite über die Rubrik **[!UICONTROL Profile und Zielgruppen]**.
 
 ![](assets/target_wf.png)
 
@@ -153,7 +153,7 @@ In den folgenden Abschnitten finden Sie Details zum Erstellen eines Zielgruppen-
 
 Die Ergebnisse aller Anreicherungen und aller Behandlungen, die während der Zielgruppenbestimmung durchgeführt werden, werden gespeichert und können über Personalisierungsfelder beispielsweise zur Gestaltung individueller Nachrichten verwendet werden. Weitere Informationen hierzu finden Sie unter [Zielgruppendaten](data-life-cycle.md#target-data)
 
-### Zielgruppen- und Filterdimensionen {#targeting-and-filtering-dimensions}
+### Zielgruppenbestimmungs- und Filterdimensionen {#targeting-and-filtering-dimensions}
 
 Bei Vorgängen zur Datensegmentierung wird einer Zielgruppendimension in der Regel eine Filterdimension zugeordnet. Die Zielgruppendimension definiert die Population, die von einer Kampagne angesprochen werden soll: Empfänger, Kunden, Abonnenten, Benutzer etc. Die Filterdimension ermöglicht die Einschränkung der gewählten Population nach bestimmten Kriterien: Kauf eines bestimmten Produkts, Abonnement eines bestimmten Newsletters etc.
 
@@ -173,7 +173,7 @@ Während bei Auswahl der **Webanwendungen** die Liste folgende Filterdimensionen
 
 ## Kampagnen-Workflows {#campaign-workflows}
 
-Sie können für jede Kampagne Workflows erstellen, die über den Tab **[!UICONTROL Zielbestimmungen und Workflows]** ausgeführt werden. Workflows gelten nur für die jeweilige Kampagne.
+Sie können für jede Kampagne Workflows erstellen, die über den Tab **[!UICONTROL Zielgruppenbestimmungen und Workflows]** ausgeführt werden. Workflows gelten nur für die jeweilige Kampagne.
 
 ![](assets/wf-in-op-edit-delivery-tab.png)
 
@@ -189,7 +189,7 @@ Weitere Informationen zu Kampagnen-Workflows und entsprechende Anwendungsbeispie
 
 ## Technische Workflows {#technical-workflows}
 
-Technische Workflows sind standardmäßg in Adobe Campaign enthalten. Sie steuern regelmäßige Server-Abläufe, wie beispielsweise Datenbankbereinigungen, den Abruf von Tracking-Informationen oder geplante Vorgänge zur Versandvorbereitung. Technische Workflows werden über den Knoten **[!UICONTROL Administration > Produktion > Technische Workflows]** konfiguriert.
+Technische Workflows sind standardmäßg in Adobe Campaign enthalten. Sie steuern regelmäßige Server-Abläufe, wie beispielsweise Datenbankbereinigungen, den Abruf von Tracking-Informationen oder geplante Aufträgezur Versandvorbereitung. Technische Workflows werden über den Knoten **[!UICONTROL Administration > Produktion > Technische Workflows]** konfiguriert.
 
 ![](assets/navtree.png)
 

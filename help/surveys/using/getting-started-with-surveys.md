@@ -6,7 +6,7 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Surveys
 exl-id: 22e14b24-59ba-4a92-8ffb-f5336793d64f
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '986'
 ht-degree: 100%
 
@@ -95,7 +95,7 @@ Im folgenden Beispiel wird die Seite vom Typ **[!UICONTROL Seite (V5-Kompatibili
 
   ![](assets/s_ncs_admin_survey_add_list.png)
 
-  Wählen Sie einen Speicherort aus: Wählen Sie ein Auflistungsfeld aus, um die Werte automatisch abzurufen (in diesem Fall das E-Mail-Format).
+  Wählen Sie einen Speicherort aus: Wählen Sie ein Aufzählungsfeld aus, um die Werte automatisch abzurufen (in diesem Fall das E-Mail-Format).
 
   ![](assets/s_ncs_admin_survey_add_itz_list.png)
 

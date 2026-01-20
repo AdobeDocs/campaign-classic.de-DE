@@ -6,7 +6,7 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Web Forms
 exl-id: 7aa4646d-1325-47c2-b553-6fe375c48973
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1005'
 ht-degree: 100%
 
@@ -69,7 +69,7 @@ Bestätigungsnachrichten werden über eine spezielle Versandvorlage gesendet, di
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_3c.png)
 
-### 3. Schritt: Erstellung des Anmeldeformulars {#step-3---creating-the-subscription-form}
+### &#x200B;3. Schritt: Erstellung des Anmeldeformulars {#step-3---creating-the-subscription-form}
 
 Das Webformular ermöglicht sowohl die Anmeldung der Empfänger als auch die Anmeldebestätigung.
 

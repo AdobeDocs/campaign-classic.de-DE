@@ -7,7 +7,7 @@ hide: true
 hidefromtoc: true
 exl-id: cb24aea5-f3c7-4b17-8899-1792ea18c235
 source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '728'
 ht-degree: 100%
 
@@ -27,7 +27,7 @@ Die Umsetzung des Anwendungsbeispiels gliedert sich in folgende Schritte:
 * Erstellung einer Versandvorlage, die bei jeder Workflow-Ausführung einen neuen Versand erzeugt (siehe [2. Schritt: Erstellung der Versandvorlage](#step-2--creating-the-delivery-template)).
 * Erstellung eines Workflows, der den Bericht im PDF-Format erzeugt und an die Empfängerliste sendet (siehe [3. Schritt: Erstellung des Workflows](#step-3--creating-the-workflow)).
 
-## 1. Schritt: Erstellung der Empfängerliste {#step-1--creating-the-recipient-list}
+## &#x200B;1. Schritt: Erstellung der Empfängerliste {#step-1--creating-the-recipient-list}
 
 Wechseln Sie zum Tab **[!UICONTROL Profile und Zielgruppen]**, klicken Sie auf den Link **[!UICONTROL Listen]** und dann auf die Schaltfläche **[!UICONTROL Erstellen]**. Wählen Sie **[!UICONTROL Neue Liste]** aus und erstellen Sie eine neue Empfängerliste, an die der Bericht gesendet werden soll.
 
@@ -35,7 +35,7 @@ Wechseln Sie zum Tab **[!UICONTROL Profile und Zielgruppen]**, klicken Sie auf d
 
 Weiterführende Informationen zum Erstellen von Listen finden Sie in diesem [Abschnitt](../../platform/using/creating-and-managing-lists.md).
 
-## 2. Schritt: Erstellung der Versandvorlage {#step-2--creating-the-delivery-template}
+## &#x200B;2. Schritt: Erstellung der Versandvorlage {#step-2--creating-the-delivery-template}
 
 1. Gehen Sie im Adobe Campaign-Explorer zum Knoten **[!UICONTROL Ressourcen > Vorlagen > Versandvorlagen]** und duplizieren Sie die vordefinierte Vorlage **[!UICONTROL E-Mail-Versand]**.
 
@@ -73,7 +73,7 @@ Weiterführende Informationen zum Erstellen von Listen finden Sie in diesem [Abs
 
      ![](assets/use_case_report_6bis.png)
 
-## 3. Schritt: Erstellung des Workflows {#step-3--creating-the-workflow}
+## &#x200B;3. Schritt: Erstellung des Workflows {#step-3--creating-the-workflow}
 
 Für das Anwendungsbeispiel ist ein Workflow mit drei Aktivitäten zu erstellen:
 

@@ -7,7 +7,7 @@ hide: true
 hidefromtoc: true
 exl-id: 975bdc94-5da4-45ae-a3bd-e8674b447098
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '859'
 ht-degree: 100%
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 In diesem Anwendungsbeispiel versenden wir eine Nachricht mit Campaign Standard, die einen Link zu einer Webanwendung von Campaign v7 enthält. Wenn der Empfänger den Link in der E-Mail anklickt, öffnet sich die Webanwendung mit einem Formular mit mehreren mit Empfängerdaten vorausgefüllten Feldern sowie einem Anmelde-Link zu einem Newsletter. Der Empfänger kann seine Daten aktualisieren und sich für den Dienst anmelden. Sein Profil wir in Campaign v7 aktualisiert und die Informationen werden nach Campaign Standard repliziert.
 
-Wenn Sie über zahlreiche Dienste und Webanwendungen in Campaign v7 verfügen, ist es empfehlenswert, nicht alle nach Campaign Standard zu übertragen. ACS Connector ermöglicht Ihnen, alle bestehenden Campaign v7-Webanwendungen und -Dienste mit einem in Campaign Standard erstellten Versand zu verknüpfen.
+Wenn Sie über zahlreiche Dienste und Webanwendungen in Campaign v7 verfügen, ist es empfehlenswert, nicht alle nach Campaign Standard zu übertragen. Der ACS-Connector ermöglicht Ihnen, alle bestehenden Campaign v7-Webanwendungen und -Dienste mit einem in Campaign Standard erstellten Versand zu verknüpfen.
 
 ## Voraussetzungen {#prerequisites}
 
@@ -78,7 +78,7 @@ Um zu überprüfen, ob die Daten korrekt repliziert wurden, gehen Sie in Campaig
 
    ![](assets/acs_connect_lp_9.png)
 
-1. Klicken Sie links oben auf das **[!UICONTROL Adobe Campaign]**-Logo, wählen Sie dann **Profiles &amp; Audiences > Dienste** aus und vergewissern Sie sich, dass auch der Newsletter-Dienst angezeigt wird.
+1. Klicken Sie links oben auf das **[!UICONTROL Adobe Campaign]**-Logo, wählen Sie dann **Profile und Zielgruppen > Dienste** aus und vergewissern Sie sich, dass auch der Newsletter-Dienst angezeigt wird.
 
    ![](assets/acs_connect_lp_10.png)
 

@@ -96,7 +96,7 @@ Weitere Informationen finden Sie in [diesem Dokument](https://helpx.adobe.com/de
 Für das Build-Upgrade sind die folgenden Ressourcen erforderlich:
 
 * Adobe Architect: Im Fall von gehosteten oder Cloud Messaging-/Hybridarchitekturen koordiniert der Architekt die Aktivitäten mit der Adobe-Kundenunterstützung.
-* Projekt-Manager: Gehostet: Das Hosting-Team arbeitet mit der Adobe-Kundenunterstützung und dem Kunden zusammen, um für alle Instanzen den Zeitrahmen festzulegen.
+* Projekt-Manager: Gehostet: Das Hosting-Team arbeitet mit der Adobe-Kundenunterstützung und dem Kunden zusammen, um für alle Instanzen die Timeline festzulegen.
 * Adobe Campaign-Administrator – Gehostet: Das Hosting-Team nimmt das Upgrade vor.
 * Benutzer/Marketing-Benutzer von Adobe Campaign: Der Benutzer führt Tests auf Entwicklungs-, Test- und Produktionsinstanzen durch.
 

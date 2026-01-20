@@ -6,7 +6,7 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Reporting, Monitoring
 exl-id: e326e32e-7bb0-46ff-9ba5-94ccd1169af2
 source-git-commit: 5e062f9dbdf6c148e442ac10dbb12cf72ba0179b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1436'
 ht-degree: 100%
 
@@ -22,7 +22,7 @@ Die Implementierungsschritte werden im Folgenden detailliert beschrieben, währe
 
 ### Zu analysierende Population identifizieren {#identifying-the-population-to-analyze}
 
-In unserem Beispiel werden die Zielgruppen der im Ordner **Newsletter** enthaltenen Sendungen untersucht.
+In unserem Beispiel werden die Zielpopulationen der im Ordner **Newsletter** enthaltenen Sendungen untersucht.
 
 Markieren Sie hierzu die betreffenden Sendungen und wählen Sie per Rechtsklick im Kontextmenü **[!UICONTROL Aktion > Ergebnis analysieren...]** aus.
 
@@ -44,7 +44,7 @@ Klicken Sie auf den Link **[!UICONTROL Hinzufügen]**, um die Variable auszuwäh
 
 ![](assets/reporting_descriptive_quickstart_step_2.png)
 
-Die Spalten sollen den jeweiligen Einkaufsbetrag der Empfänger anzeigen. In unserem Beispiel werden die Beträge im Feld **Online-Bestellungen** aggregiert.
+Die Spalten sollen den jeweiligen Einkaufsbetrag der Empfänger anzeigen. In unserem Beispiel werden die Beträge im Feld **Online-Käufe** aggregiert.
 
 In unserem Beispiel soll die Klassifizierung der Ergebnisse definiert werden, um deren Anzeige zu verdeutlichen. Wählen Sie dazu die Klassifizierungsoption **[!UICONTROL Manuell]** und legen Sie die Berechnungsklassen für die anzuzeigenden Segmente fest:
 

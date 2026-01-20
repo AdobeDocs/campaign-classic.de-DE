@@ -203,7 +203,7 @@ Hier ist ein Beispiel für einen Versand mit vier Bildern zu sehen:
 
 ![](assets/s_ncs_user_images_in_delivery_wiz_1.png)
 
-Die Bilder stammen aus einem lokalen Verzeichnis oder von einer Webseite, wie Sie im **[!UICONTROL Quelle]**-Tab feststellen können.
+Die Bilder stammen aus einem lokalen Verzeichnis oder von einer Website, wie Sie im **[!UICONTROL Quelle]**-Tab feststellen können.
 
 ![](assets/s_ncs_user_images_in_delivery_wiz_2.png)
 

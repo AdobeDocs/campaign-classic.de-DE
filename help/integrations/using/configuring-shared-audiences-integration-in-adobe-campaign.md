@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Integration mit freigegebenen Audiences in Adobe Campaign konfigurieren
-description: Erfahren Sie, wie Sie die Freigabe von Audiences konfigurieren.
+title: Integration mit freigegebenen Zielgruppen in Adobe Campaign konfigurieren
+description: Erfahren Sie, wie Sie die Freigabe von Zielgruppen konfigurieren.
 feature: Audiences
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 audience: integrations
@@ -9,13 +9,13 @@ content-type: reference
 topic-tags: audience-sharing
 exl-id: a3e26cff-9609-4d91-8976-9213a30c3fd2
 source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '609'
 ht-degree: 100%
 
 ---
 
-# Integration mit freigegebenen Audiences in Adobe Campaign konfigurieren{#configuring-shared-audiences-integration-in-adobe-campaign}
+# Integration mit freigegebenen Zielgruppen in Adobe Campaign konfigurieren{#configuring-shared-audiences-integration-in-adobe-campaign}
 
 
 Nach Übermittlung dieses Antrags wird dieser von Adobe bearbeitet. Sie werden ersucht, Informationen bereitzustellen, und darauf hingewiesen, dass Sie die Konfiguration abschließen müssen:
@@ -40,8 +40,8 @@ Gehen Sie folgendermaßen vor, um die externen Konten in Adobe Campaign zu konfi
 1. Wählen Sie das **[!UICONTROL Explorer]**-Symbol aus.
 1. Gehen Sie zu **[!UICONTROL Administration > Plattform > Externe Konten]**. Die entsprechenden SFTP-Konten sollten von Adobe konfiguriert und die erforderlichen Informationen sollten Ihnen übermittelt worden sein.
 
-   * **[!UICONTROL importSharedAudience]**: Konto für den Audience-Import.
-   * **[!UICONTROL exportSharedAudience]**: Konto für den Audience-Export.
+   * **[!UICONTROL importSharedAudience]**: Konto für den Zielgruppe-Import.
+   * **[!UICONTROL exportSharedAudience]**: Konto für den Zielgruppe-Export.
 
    ![](assets/aam_config_1.png)
 

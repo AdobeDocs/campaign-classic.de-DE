@@ -6,7 +6,7 @@ hide: true
 hidefromtoc: true
 feature: Workflows
 source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '324'
 ht-degree: 100%
 
@@ -59,7 +59,7 @@ Die folgenden Workflows werden standardmäßig mit dem Modul **Sendungen** insta
   <tr> 
    <td> <span class="uicontrol">Angebotsbenachrichtigungen</span> <br /> </td> 
    <td> <span class="uicontrol">offerMgt</span> <br /> </td> 
-   <td> Stellt stündlich validierte Angebote sowie im Angebotskatalog erstellte Kategorien in die Live-Umgebung bereit.<br /> </td> 
+   <td> Dieser Workflow stellt validierte Angebote sowie im Angebotskatalog enthaltene Kategorien in die Live-Umgebung bereit.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Planungen</span> <br /> </td> 

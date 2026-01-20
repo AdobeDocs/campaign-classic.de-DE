@@ -9,7 +9,7 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 1180e664-5ead-4d5d-b1c3-6fe397c1f3a2
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '153'
 ht-degree: 100%
 
@@ -33,5 +33,5 @@ Sie können vorhandene Vorlagen zum Erstellen eigener Vorlagen oder zum Erstelle
 
 Der Prozess zum Konfigurieren einer Vorlage entspricht den in diesen Abschnitten beschriebenen Schritten:
 
-* [Importvorgang konfigurieren](../../platform/using/executing-import-jobs.md)
-* [Exportvorgang konfigurieren](../../platform/using/executing-export-jobs.md)
+* [Importauftrag konfigurieren](../../platform/using/executing-import-jobs.md)
+* [Exportauftrag konfigurieren](../../platform/using/executing-export-jobs.md)

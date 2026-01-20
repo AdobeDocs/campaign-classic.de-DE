@@ -7,7 +7,7 @@ hide: true
 hidefromtoc: true
 exl-id: c3de99f8-089f-4c7c-be11-f375a9463eaa
 source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '397'
 ht-degree: 100%
 
@@ -31,7 +31,7 @@ Gehen Sie wie folgt vor:
 
    ![](assets/s_user_change_dimension_param1.png)
 
-1. Sie können entscheiden, ob alle oder nur bestimmte Elemente in der ausgehenden Transition übermittelt werden sollen. Im vorliegenden Beispiel wird die Anzahl der möglichen Dubletten auf 2 begrenzt.
+1. Sie können entscheiden, ob alle oder nur bestimmte Elemente in der ausgehenden Transition übermittelt werden sollen. Im vorliegenden Beispiel wird die Anzahl der möglichen Duplikate auf 2 begrenzt.
 
    ![](assets/s_user_change_dimension_limit.png)
 
@@ -43,7 +43,7 @@ Gehen Sie wie folgt vor:
 
    ![](assets/s_user_change_dimension_param2.png)
 
-   Mithilfe der blauen Pfeile lässt sich die Reihenfolge der Dublettenverarbeitung bestimmen.
+   Mithilfe der blauen Pfeile lässt sich die Reihenfolge der Duplikatverarbeitung bestimmen.
 
    Im vorliegenden Beispiel erfolgt die Deduplizierung zunächst über die E-Mail-Adresse und bei Bedarf anschließend über die Kundennummer.
 

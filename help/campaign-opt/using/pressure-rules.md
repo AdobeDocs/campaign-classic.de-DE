@@ -289,7 +289,7 @@ Bei der Versandanalyse werden Empfänger ausgeschlossen, wenn sie bereits eine b
 
 Druckregeln können dem Empfängerverhalten entsprechend festgelegt werden. Auf diese Weise kann die Gewichtung eines Versands von einem Empfänger zum anderen nuanciert werden. Der Versand einer bestimmten Nachricht kann beispielsweise bevorzugt werden, je nachdem, ob ein Empfänger Ihre Seite besucht, in eine bestimmte Rubrik des letzten Newsletters geklickt oder einen Informationsdienst abonniert hat oder nicht. Auch Antworten auf Umfragen oder Onlinespiele etc. können berücksichtigt werden.
 
-Im folgenden Beispiel wird ein Versand mit einer Gewichtung von 5 erstellt. Dieser Gewichtung werden Neigungswerte entsprechend dem Empfängerverhalten hinzugefügt: Ein Kunde, der bereits eine Bestellung auf der Webseite aufgegeben hat, erhält einen Neigungswert von 5, während einem Kunde, der noch nie online bestellt hat, ein Neigungswert von 4 zugeordnet wird.
+Im folgenden Beispiel wird ein Versand mit einer Gewichtung von 5 erstellt. Dieser Gewichtung werden Neigungswerte entsprechend dem Empfängerverhalten hinzugefügt: Ein Kunde, der bereits eine Bestellung auf der Website aufgegeben hat, erhält einen Neigungswert von 5, während einem Kunde, der noch nie online bestellt hat, ein Neigungswert von 4 zugeordnet wird.
 
 Für diese Art von Konfiguration muss mit einer Formel die Gewichtung der Nachrichten bestimmt werden. Auf Informationen bezüglich der Neigung und der Umfragenantworten muss über das Datenmodell Zugriff bestehen. Im vorliegenden Beispiel wurde das Feld **Neigungen** hinzugefügt.
 

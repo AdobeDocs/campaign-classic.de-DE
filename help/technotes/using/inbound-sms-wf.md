@@ -5,7 +5,7 @@ description: Workflow-Aktivität für eingehende SMS für Mid-Sourcing-Infrastru
 feature: Technote, SMS
 exl-id: 756039b2-5f57-4dc5-8166-a421206b886b
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '423'
 ht-degree: 100%
 
@@ -37,7 +37,7 @@ ht-degree: 100%
 
 1. Um die an den Schemata vorgenommenen Änderungen anzuwenden, starten Sie den Datenbankaktualisierungsassistenten. Auf diesen Assistenten kann über **Werkzeuge** > **Erweitert** > **Datenbankstruktur aktualisieren** zugegriffen werden. Er prüft, ob die physische Struktur der Datenbank mit ihrer logischen Beschreibung übereinstimmt, und führt die SQL-Aktualisierungs-Skripts aus. [Weitere Informationen](../../configuration/using/updating-the-database-structure.md)
 
-1. Beenden Sie den Workflow mit dem **SMS-Empfang**.
+1. Stoppen Sie den Workflow mit dem **SMS-Empfang**.
 
    Sichern Sie den entsprechenden Optionszeiger im folgenden Format: `SMS_MO_INDEX_{internal name of the workflow}_{name of the insms workflow activity}_{internal name of the external account to access the mid}`.
 
@@ -144,4 +144,4 @@ ht-degree: 100%
    > * Sie können eine beliebige externe Konto-ID verwenden. Die Rolle des Fremdschlüssels besteht darin, die Integrität der Datenabstimmung in Szenarien mit verschiedenen Mid-Sourcing-Servern zu wahren, in denen die Mid-Sourcing-SMS-ID in anderen Mid-Sourcing-Instanzen identisch sein kann.
    > * Wenn mehrere InSMS-Workflows pro Mid-Sourcing-Instanz vorhanden sind, kann es zu einer Datenduplizierung kommen, da die Mid-Sourcing-SMS-ID konstant bleibt, während die externen Konto-IDs variieren.
 
-1. Speichern Sie und starten Sie den Workflow erneut.
+1. Speichern Sie und starten Sie den Workflow neu.

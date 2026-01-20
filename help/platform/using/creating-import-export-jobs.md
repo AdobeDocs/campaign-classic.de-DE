@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Erstellen von Import- und Exportvorgängen
-description: Erfahren Sie, wie Sie in Campaign Import- und Exportvorgänge erstellen.
+title: Erstellen von Import- und Exportaufträgen
+description: Erfahren Sie, wie Sie in Campaign Import- und Exportaufträge erstellen.
 feature: Templates
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 audience: platform
@@ -9,19 +9,19 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 85c48712-3704-41db-a255-a07ca8d02ec4
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '147'
 ht-degree: 100%
 
 ---
 
-# Erstellen von Import- und Exportvorgängen {#creating-import-export-jobs}
+# Erstellen von Import- und Exportaufträgen {#creating-import-export-jobs}
 
 
 
 Import- und Exportvorgänge können nach erfolgter Vorlagenkonfiguration in verschiedenen Kontexten von Adobe Campaign gestartet werden.
 
-* Wählen Sie im Adobe Campaign-Arbeitsbereich im Bereich **[!UICONTROL Profile und Zielgruppen]** den Link **[!UICONTROL Vorgänge]**. Daraufhin wird eine Liste der existierenden Importe und Exporte angezeigt.
+* Wählen Sie im Adobe Campaign-Arbeitsbereich im Bereich **[!UICONTROL Profile und Zielgruppen]** den Link **[!UICONTROL Aufträge]**. Daraufhin wird eine Liste der existierenden Importe und Exporte angezeigt.
 
   Verwenden Sie die Schaltfläche **[!UICONTROL Erstellen]** und wählen Sie die gewünschte Option aus.
 
@@ -38,5 +38,5 @@ Import- und Exportvorgänge können nach erfolgter Vorlagenkonfiguration in vers
 
 Bei all diesen Optionen öffnen sich Datenimport- oder -export-Assistenten. Sie werden in den folgenden Abschnitten beschrieben:
 
-* [Importvorgang konfigurieren](../../platform/using/executing-import-jobs.md)
-* [Exportvorgang konfigurieren](../../platform/using/executing-export-jobs.md)
+* [Importauftrag konfigurieren](../../platform/using/executing-import-jobs.md)
+* [Exportauftrag konfigurieren](../../platform/using/executing-export-jobs.md)

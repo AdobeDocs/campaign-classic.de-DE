@@ -7,7 +7,7 @@ role: User, Admin
 level: Beginner
 exl-id: 985cf088-7546-4875-8e11-cafe5bd3e323
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '200'
 ht-degree: 100%
 
@@ -35,4 +35,4 @@ Bevor Sie damit beginnen, mit dem Adobe Analytics-Connector von Adobe Campaign z
 
 Um diese Integration zu ermöglichen, müssen Sie Ihr technisches Adobe-Konto erstellen, wie auf [dieser Seite](oauth-technical-account.md) beschrieben.
 
-Weitere Informationen dazu, wie Sie mit Adobe Campaign und Adobe Analytics arbeiten können, finden Sie in der [Dokumentation zu Adobe Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/connect/ac-aa){target="_blank"}.
+Weitere Informationen zum Arbeiten mit Adobe Campaign und Adobe Analytics finden Sie in der [Dokumentation zu Adobe Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/connect/ac-aa){target="_blank"}.

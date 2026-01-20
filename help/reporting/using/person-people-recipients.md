@@ -6,7 +6,7 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Reporting, Monitoring
 exl-id: 69b810f3-aa8b-4ab5-95c1-831257d7fcb9
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '800'
 ht-degree: 100%
 
@@ -43,7 +43,7 @@ Folgende Trackinglogs werden ausgegeben:
 
 Für ein besseres Verständnis des Zählmechanismus von Personen und Empfängern werden die den jeweiligen Profilen entsprechenden Logs im Folgenden nacheinander analysiert.
 
-## 1. Schritt: John {#step-1--john}
+## &#x200B;1. Schritt: John {#step-1--john}
 
 **[!UICONTROL John Davis]** öffnet die E-Mail nicht und klickt demzufolge auf keinen der Links.
 
@@ -58,7 +58,7 @@ Da John weder geöffnet noch geklickt hat, erscheint er nicht in den Trackinglog
 | John | - | - | - |
 | Zwischenergebnis | 0 | 0 | 0 |
 
-## 2. Schritt: Marie {#step-2--marie}
+## &#x200B;2. Schritt: Marie {#step-2--marie}
 
 **[!UICONTROL Marie Stuart]** öffnet die E-Mail, klickt jedoch auf keinen der Links.
 
@@ -78,7 +78,7 @@ Die Öffnung wird einem Empfänger zugeordnet (Marie). Adobe Campaign zählt als
 | Marie | - | - | +1 |
 | Zwischenergebnis | 0 | 0 | 1 |
 
-## 3. Schritt: Florian {#step-3--florian}
+## &#x200B;3. Schritt: Florian {#step-3--florian}
 
 **[!UICONTROL Florian David]** öffnet die E-Mail und klickt neunmal auf die Links. Er leitet die E-Mail darüber hinaus an eine Person weiter, welche sie öffnet und zweimal klickt.
 
@@ -123,7 +123,7 @@ Folgende Logs entsprechen der Öffnung und den zwei Klicks der Person, an die Fl
 | Unbekannte Person | - | +1 | - |
 | Zwischenergebnis | 1 | 2 | 2 |
 
-## 4. Schritt: Henry {#step-4--henry}
+## &#x200B;4. Schritt: Henry {#step-4--henry}
 
 **[!UICONTROL Henry Macdonald]** akzeptiert keine Cookies. Er öffnet die E-Mail und klickt viermal auf die Links.
 

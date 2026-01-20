@@ -6,7 +6,7 @@ feature: Reporting, Monitoring
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 exl-id: 1e5ab922-481c-4dce-a05e-a58408002e24
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '809'
 ht-degree: 100%
 
@@ -74,7 +74,7 @@ Um einen Bericht einer Kategorie zuzuordnen, wählen Sie diese im Tab **[!UICONT
 
 ![](assets/report_select_category.png)
 
-Sie können eine neue Kategorie erfassen, die dann in die Liste der verfügbaren Kategorien aufgenommen wird. Die entsprechende Auflistung wird automatisch aktualisiert.
+Sie können eine neue Kategorie erfassen, die dann in die Liste der verfügbaren Kategorien aufgenommen wird. Die entsprechende Aufzählung wird automatisch aktualisiert.
 
 ## Erstellen eines Links zu einem Bericht {#creating-a-link-to-a-report-}
 

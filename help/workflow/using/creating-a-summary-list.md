@@ -7,7 +7,7 @@ hide: true
 hidefromtoc: true
 exl-id: 39cec42a-c7ac-41b1-8f61-799b559ce002
 source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1064'
 ht-degree: 100%
 
@@ -34,7 +34,7 @@ Sie ermöglicht Ihnen Folgendes:
 Gehen Sie wie folgt vor, um eine zusammenfassende Liste zu erstellen:
 
 1. Abruf und Ladung einer Verkaufsdatei in die Workflow-Arbeitstabelle.
-1. Anreicherung der importierten Daten durch Erstellung einer Relation zu einer Referenztabellle.
+1. Anreicherung der importierten Daten durch Erstellung einer Relation zu einer Referenztabelle.
 1. Aktualisierung der Verkaufsdatei mit den Anreicherungsdaten.
 1. Anreicherung der Kontaktdaten mit einem aus der Verkaufstabelle stammenden Aggregat.
 1. Erstellung einer zusammenfassenden Liste.
@@ -112,14 +112,14 @@ Nach der Anreicherung stellen sich die Daten der Workflow-Arbeitstabelle wie fol
 
 ![](assets/uc2_enrich_population1.png)
 
-## Schritt 2: Schreiben der angereicherten Daten in die Tabelle &quot;Bestellungen&quot; {#step-2--writing-enriched-data-to-the--purchases--table}
+## Schritt 2: Schreiben der angereicherten Daten in die Tabelle &quot;Käufe&quot; {#step-2--writing-enriched-data-to-the--purchases--table}
 
-In diesem Schritt wird beschrieben, wie die importierten und angereicherten Daten in die Tabelle „Bestellungen“ geschrieben werden. Dafür müssen wir eine Aktivität vom Typ **Daten-Update** verwenden.
+In diesem Schritt wird beschrieben, wie die importierten und angereicherten Daten in die Tabelle „Käufe“ geschrieben werden. Dafür müssen wir eine Aktivität vom Typ **Daten-Update** verwenden.
 
 Vor der Aktualisierung sind die Daten der Workflow-Arbeitstabelle mit denen aus der Zielgruppendimension **Verkauf** abzustimmen.****
 
 1. Gehen Sie in den Tab **[!UICONTROL Abstimmung]** der Anreicherung.
-1. Wählen Sie die Zieldimension, im vorliegenden Beispiel also das Schema &#39;Verkauf&#39;, aus.
+1. Wählen Sie die Zielgruppendimension, im vorliegenden Beispiel also das Schema &#39;Verkauf&#39;, aus.
 1. Geben Sie einen Quellausdruck für die Daten der Workflow-Arbeitstabelle an (hier &quot;NameGeschäft&quot;).
 1. Geben Sie dann einen Zielausdruck für die Daten der Verkauf-Tabelle an (hier &quot;NameGeschäft&quot;).
 1. Aktivieren Sie die Option **[!UICONTROL Nicht abgestimmte Daten aus der Arbeitstabelle beibehalten]**.
@@ -131,7 +131,7 @@ Konfigurieren Sie die **Datenaktualisierung**-Aktivität wie folgt:
 1. Aktivieren Sie im Feld **[!UICONTROL Aktionstyp]** die Option **[!UICONTROL Hinzufügen oder aktualisieren]**, um zu vermeiden, dass bei jedem Datenabruf neue Datensätze erstellt werden.
 1. Geben Sie bei der Option **[!UICONTROL Datensatz-Identifizierung]** den Wert **[!UICONTROL Über die Zielgruppendimension]** an.
 1. Wählen Sie als **[!UICONTROL Dokumenttyp]** das Schema &quot;Verkauf&quot; aus.
-1. Geben Sie die Liste der zu aktualisierenden Felder an. In der Spalte **[!UICONTROL Ziel]** können Sie die Felder des Schemas „Bestellungen“ definieren. In der Spalte **[!UICONTROL Ausdruck]** können Sie die Felder der Arbeitstabelle auswählen, um eine Zuordnung vorzunehmen.
+1. Geben Sie die Liste der zu aktualisierenden Felder an. In der Spalte **[!UICONTROL Ziel]** können Sie die Felder des Schemas „Käufe“ definieren. In der Spalte **[!UICONTROL Ausdruck]** können Sie die Felder der Arbeitstabelle auswählen, um eine Zuordnung vorzunehmen.
 1. Aktivieren Sie die Option **[!UICONTROL Ausgehende Transition erzeugen]**.
 
 ![](assets/uc2_enrich_miseajour.png)

@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: general-operation
 exl-id: b13ecfc9-1723-42b2-ab30-d5637cc3d0dd
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '338'
 ht-degree: 100%
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 ## Umgebungsbereitstellung {#deploying-environments}
 
-Für jede im Zusammenhang mit der Angebotsverwaltung verwendete Zieldimension existiert ein Umgebungspaar:
+Für jede im Zusammenhang mit der Angebotsverwaltung verwendete Zielgruppendimension existiert ein Umgebungspaar:
 
 * eine Design-Umgebung, in der der Angebotsverantwortliche Angebote erstellt, ändert und kategorisiert sowie ihren Validierungsprozess auslöst, damit sie zum Einsatz kommen können. In dieser Umgebung werden darüber hinaus die für eine Kategorie geltenden Regeln, die Platzierungen, in denen die Angebote unterbreitet werden können und die für die Eignungsprüfung zu verwendenden Filter definiert.
 

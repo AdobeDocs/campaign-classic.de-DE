@@ -6,7 +6,7 @@ hide: true
 hidefromtoc: true
 feature: Workflows, Targeting Activity
 source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '92'
 ht-degree: 100%
 
@@ -29,12 +29,12 @@ Die folgenden Workflows werden standardmäßig mit dem Modul **Marketing-Ressour
   <tr> 
    <td> <span class="uicontrol">Benachrichtigung bezüglich Marketing-Ressourcen</span> <br /> </td> 
    <td> <span class="uicontrol">assetMgt</span> <br /> </td> 
-   <td> Verwaltet die Benachrichtigungen bezüglich der Validierung und der Veröffentlichung von Marketing-Ressourcen. <br /> </td> 
+   <td> Dieser Workflow verwaltet die Benachrichtigungen bezüglich der Validierung und der Veröffentlichung von Marketing-Ressourcen. <br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Benachrichtigung bezüglich Aufgaben</span> <br /> </td> 
    <td> <span class="uicontrol">taskMgt</span> <br /> </td> 
-   <td> Sendet Benachrichtigungen bezüglich Aufgaben in Marketing-Kampagnen.<br /> </td> 
+   <td> Dieser Workflow sendet Benachrichtigungen bezüglich Aufgaben in Marketing-Kampagnen.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Vorgänge in Diskussionsforen</span> <br /> </td> 

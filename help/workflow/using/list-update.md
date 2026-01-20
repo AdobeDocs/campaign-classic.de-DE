@@ -7,7 +7,7 @@ hide: true
 hidefromtoc: true
 exl-id: fcc51131-15d0-4d39-95cb-371d7044373b
 source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '538'
 ht-degree: 100%
 
@@ -46,10 +46,10 @@ Im vorliegenden Beispiel soll eine Liste mit allen Männern über 30 Jahre, die 
    Weitere Informationen zum Erstellen von Abfragen in Workflows finden unter [Abfrage](query.md).
 
 1. Benennen Sie die Aktivität.
-1. Kreuzen Sie die Option **[!UICONTROL Wenn nötig Liste erstellen (Titel berechnet)]** an, damit die Liste bei der ersten Durchführung erstellt und später jeweils aktualisiert wird.
+1. Kreuzen Sie die Option **[!UICONTROL Wenn nötig Liste erstellen (Titel berechnet)]** an, damit die Liste bei Ausführung des ersten Workflows erstellt und später jeweils aktualisiert wird.
 1. Wählen Sie den Ordner aus, in dem die Liste gespeichert werden soll.
 1. Geben Sie den Titel der Liste an. Fügen Sie gegebenenfalls dynamische Felder ein, um den Listentitel automatisch zu berechnen. Im vorliegenden Beispiel hat die Liste den gleichen Namen wie die Abfrage, um den Inhalt leichter identifizieren zu können.
-1. Lassen Sie die Option **[!UICONTROL Wenn sie existiert, Liste leeren und erneut verwenden (nicht vervollständigen)]** aktiv, damit die Empfänger, die nicht mehr den Filterkriterien entsprechen, gelöscht und die neuen Empfänger eingfügt werden.
+1. Lassen Sie die Option **[!UICONTROL Wenn sie existiert, Liste leeren und erneut verwenden (nicht vervollständigen)]** aktiv, damit die Empfänger, die nicht mehr den Targeting-Kriterien entsprechen, gelöscht und die neuen Empfänger eingfügt werden.
 1. Lassen Sie die Option **[!UICONTROL Liste mit eigener Tabelle erstellen oder verwenden]** ebenfalls aktiv.
 1. Lassen Sie die Option **[!UICONTROL Ausgehende Transition erzeugen]** deaktiviert.
 1. Klicken Sie auf **[!UICONTROL OK]** und starten Sie den Workflow.
@@ -73,6 +73,6 @@ Identifiziert die in der Gruppe zu speichernde Population.
 
 In diesem Video wird gezeigt, wie man vom Explorer aus eine Liste von Empfängern erstellt.
 
->[!VIDEO](https://video.tv.adobe.com/v/27502?captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
 
 Weitere Anleitungsvideos zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).

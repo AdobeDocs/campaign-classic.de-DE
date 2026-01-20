@@ -6,7 +6,7 @@ feature: Reporting, Monitoring
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 exl-id: d32b614f-82c1-4363-816c-4ebedaa5cfe9
 source-git-commit: f90df5a5e5b3a2317d86ff2919560ded38f44f44
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '562'
 ht-degree: 100%
 
@@ -62,7 +62,7 @@ Er kann im Abschnitt **[!UICONTROL Grafiktyp]** des Tabs **[!UICONTROL Allgemein
 
 Die Varianten hängen vom gewählten Diagrammtyp ab. Diese werden über den Link **[!UICONTROL Varianten…]** ausgewählt.
 
-### Verteilung: Tortendiagramm {#breakdown--pie-charts}
+### Aufschlüsselung: Kreisdiagramm {#breakdown--pie-charts}
 
 Diese Darstellungsform bietet eine Übersicht der jeweiligen Anteile der gemessenen Elemente.
 

@@ -55,6 +55,6 @@ Wenn Sie die Ausführung eines wiederkehrenden Versands stoppen möchten, sollte
 
 In diesem Video wird das Konfigurieren eines wiederkehrenden Versands und einer Planungsaktivität erläutert.
 
->[!VIDEO](https://video.tv.adobe.com/v/30201?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25040?quality=12)
 
 Weitere Anleitungsvideos zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).
