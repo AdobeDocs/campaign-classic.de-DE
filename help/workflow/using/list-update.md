@@ -73,6 +73,6 @@ Identifiziert die in der Gruppe zu speichernde Population.
 
 In diesem Video wird gezeigt, wie man vom Explorer aus eine Liste von Empfängern erstellt.
 
->[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/27502?captions=ger)
 
 Weitere Anleitungsvideos zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).

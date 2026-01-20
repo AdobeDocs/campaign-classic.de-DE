@@ -246,6 +246,6 @@ Sie können eine neue, als Kontrollgruppe zu verwendende Population bestimmen. D
 
 In diesem Video wird das Erstellen einer Kampagne und einer E-Mail in Adobe Campaign beschrieben.
 
->[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/27488?captions=ger&quality=12)
 
 Weitere Anleitungsvideos zu Campaign finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).

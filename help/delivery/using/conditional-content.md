@@ -113,6 +113,6 @@ Im folgenden Beispiel erfahren Sie, wie Sie eine mehrsprachige E-Mail erstellen.
 
 Erfahren Sie, wie Sie einem Versand bedingte Inhalte hinzufügen können, beispielsweise einen mehrsprachigen Newsletter.
 
->[!VIDEO](https://video.tv.adobe.com/v/24926?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/30082?captions=ger&quality=12)
 
 Weitere Anleitungsvideos zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).
