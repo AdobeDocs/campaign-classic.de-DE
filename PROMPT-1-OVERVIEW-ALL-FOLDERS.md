@@ -9,7 +9,7 @@ ht-degree: 4%
 
 **Genère un rapport Markdown avec vue d&#39;ensemble de tous les dossiers v7**
 
----
+&#x200B;---
 
 ## 📋 COPIER CE-EINGABEAUFFORDERUNG
 
@@ -483,7 +483,7 @@ Make it:
 - ✅ Ready to present to stakeholders
 ```
 
----
+&#x200B;---
 
 ## GEBRAUCH
 
@@ -493,7 +493,7 @@ Make it:
 4. **Abrufen des vollständigen Markdown-Berichts**
 5. **Speichern unter**: `v7-reorganization-overview.md`
 
----
+&#x200B;---
 
 ## AUSGABEVORSCHAU
 

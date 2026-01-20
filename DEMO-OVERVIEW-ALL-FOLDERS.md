@@ -11,7 +11,7 @@ ht-degree: 24%
 **Ordner insgesamt**: 21\
 **Dateien insgesamt**: ~1.500
 
----
+&#x200B;---
 
 ## 📈 Zusammenfassung
 
@@ -25,7 +25,7 @@ ht-degree: 24%
 
 **🎯geschätzte**: 60-75 % (1.500 → 400-600 Dateien)
 
----
+&#x200B;---
 
 ## 📁 nach Priorität
 
@@ -41,7 +41,7 @@ ht-degree: 24%
 | 📂 `/migration/` | 8 | Migration von v6.1 → v7 | v7-spezifisch | ✅ ALLE BEIBEHALTEN |
 | **INSGESAMT** | **108** | **7%** | - | **Badge as v7-only** |
 
----
+&#x200B;---
 
 ### 🔴 2: 60-70 % DELETE - Hohe Duplizierung
 
@@ -54,7 +54,7 @@ ht-degree: 24%
 | 📂 `/campaign/` | 11 | 2 (18 %) | 7 (64 %) | 1 (9 %) | 1 (9 %) | Kampagnen-Management in v8 |
 | **INSGESAMT** | **$** | **£** | **190** | **28** | **£** | **Hohes Reduktionspotenzial** |
 
----
+&#x200B;---
 
 ### 🟡 3: 30-50 % GEMISCHT - detaillierte Analyse erforderlich
 
@@ -68,7 +68,7 @@ ht-degree: 24%
 | 📂 `/message-center/` | 16 | 60 % | 30 % | Transaktionsnachrichten |
 | **INSGESAMT** | **230** | **~55%** | **~25%** | **Erfordert eine Überprüfung je Ordner** |
 
----
+&#x200B;---
 
 ## 🎯 Quick Wins - Woche 1
 
@@ -89,7 +89,7 @@ ht-degree: 24%
 - ✅ `query.md` (Workflow) → `campaign/v8/automation/workflow/query`
 - ✅ `about-workflows.md` → `campaign/v8/automation/workflow`
 
----
+&#x200B;---
 
 ## 📋 Ordneraufschlüsselung
 
@@ -121,7 +121,7 @@ ht-degree: 24%
 - 🗑️ `creating-an-email-delivery.md` → 95 % in `campaign-web/v8/email/create-email`
 - 🗑️ `sms-channel.md` → 90 % in `campaign-web/v8/msg/send-sms`
 
----
+&#x200B;---
 
 ### 📂 Workflow (`/help/workflow/using/`) - 121 Dateien
 
@@ -148,7 +148,7 @@ ht-degree: 24%
 - 🗑️ `split.md` → 95 % in `campaign/v8/automation/workflow/split`
 - 🗑️ `enrichment.md` → 95 % in `campaign/v8/automation/workflow/enrichment`
 
----
+&#x200B;---
 
 ### 📂 (`/help/installation/using/`) - 75 Dateien
 
@@ -165,7 +165,7 @@ ht-degree: 24%
 
 **Grund**: v8 ist nur in der Cloud verfügbar, alle Dokumente zur On-Premise-Einrichtung sind v7-spezifisch.
 
----
+&#x200B;---
 
 ### 📂 Web (`/help/web/using/`) - 26 Dateien
 
@@ -179,40 +179,19 @@ ht-degree: 24%
 
 **Grund**: v7 verfügt über ein vollständiges Web-Anwendungs-Framework, v8 bietet vereinfachte Landingpages.
 
----
+&#x200B;---
 
 ## ✅ Aktionsplan
 
-### Woche 1: Schwerwiegende Löschungen
-- [ ] `/delivery/`: 67 Dateien löschen (E-Mail, SMS, Push-Grundlagen)
-- [ ] `/workflow/`: Löschen von 60 Dateien (allgemeine Aktivitäten)
-- [ ] `/reporting/`: 22 Dateien löschen (Standardberichte)
-- [ ] `/platform/`: Löschen von 34 Dateien (allgemeine Funktionen)
-- [ ] `/campaign/`: 7 Dateien löschen (Kampagnenverwaltung)
-- **Insgesamt**: 190 Dateien gelöscht (13 % Reduktion)
+### Woche 1: Schwerwiegende Löschungen- [ ] `/delivery/`: 67 Dateien löschen (E-Mail, SMS, Push-Grundlagen)- [ ] `/workflow/`: Löschen von 60 Dateien (allgemeine Aktivitäten)- [ ] `/reporting/`: 22 Dateien löschen (Standardberichte)- [ ] `/platform/`: Löschen von 34 Dateien (allgemeine Funktionen)- [ ] `/campaign/`: 7 Dateien löschen (Kampagnenverwaltung)- **Insgesamt**: 190 Dateien gelöscht (13 % Reduktion)
 
-### Woche 2: V7-spezifische Badging-Funktionen
-- [ ] `/installation/`: Badge 71-Dateien als „v7 nur On-Premise“
-- [ ] `/mrm/`: Badge 5-Dateien als „In v8 FFDA nicht verfügbar“
-- [ ] `/surveys/`: Badge 8-Dateien als „In v8 FFDA nicht verfügbar“
-- [ ] `/distributed/`: Badge 7-Dateien als „In v8 FFDA nicht verfügbar“
-- [ ] `/web/`: Badge 24-Dateien als „v7 Web Applications“
-- **Insgesamt**: 115 Dateien mit Badge
+### Woche 2: V7-spezifische Badging-Funktionen- [ ] `/installation/`: Badge 71-Dateien als „v7 nur On-Premise“- [ ] `/mrm/`: Badge 5-Dateien als „In v8 FFDA nicht verfügbar“- [ ] `/surveys/`: Badge 8-Dateien als „In v8 FFDA nicht verfügbar“- [ ] `/distributed/`: Badge 7-Dateien als „In v8 FFDA nicht verfügbar“- [ ] `/web/`: Badge 24-Dateien als „v7 Web Applications“- **Insgesamt**: 115 Dateien mit Badge
 
-### Woche 3: Inhaltsmigration
-- [ ] Tipps zur Fehlerbehebung von `/delivery/` auf v8 migrieren
-- [ ] Best Practices für die Migration von Workflows zu v8
-- [ ] Migrieren von erweiterten Mustern von `/platform/` zu v8
-- **Insgesamt**: 40 Dateien migriert und dann gelöscht
+### Woche 3: Inhaltsmigration- [ ] Tipps zur Fehlerbehebung von `/delivery/` auf v8 migrieren- [ ] Best Practices für die Migration von Workflows zu v8- [ ] Migrieren von erweiterten Mustern von `/platform/` zu v8- **Insgesamt**: 40 Dateien migriert und dann gelöscht
 
-### Woche 4: Manuelle Überprüfung
-- [ ] Überprüfen `/configuration/` gemischten Inhalten
-- [ ] Überprüfen der Verfügbarkeit `/integrations/` Connectors
-- [ ] Überprüfen `/interaction/` Angebotsmodul-Abdeckung
-- [ ] Überprüfen `/response/` Funktionsstatus
-- **Insgesamt**: 50 Dateien geprüft und entschieden
+### Woche 4: Manuelle Überprüfung- [ ] Überprüfen `/configuration/` gemischten Inhalten- [ ] Überprüfen der Verfügbarkeit `/integrations/` Connectors- [ ] Überprüfen `/interaction/` Angebotsmodul-Abdeckung- [ ] Überprüfen `/response/` Funktionsstatus- **Insgesamt**: 50 Dateien geprüft und entschieden
 
----
+&#x200B;---
 
 ## 📊 Ergebnisse erwartet
 
@@ -228,7 +207,7 @@ ht-degree: 24%
 
 **Endziel**: 1.500 → 400-600 Dateien (Reduzierung um 60-73 %)
 
----
+&#x200B;---
 
 ## 🎯 Erfolgsmetriken
 
@@ -240,7 +219,7 @@ ht-degree: 24%
 | Beschädigte Links | 0 | ⏳ ausstehend |
 | Genehmigung durch Stakeholder | ✅ | ⏳ ausstehend |
 
----
+&#x200B;---
 
 **Zuletzt aktualisiert**: 13.01.2026\
 **Nächste Überprüfung**: Nach Woche 1 Ausführung

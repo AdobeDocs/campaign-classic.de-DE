@@ -9,7 +9,7 @@ ht-degree: 0%
 
 **Kopieren Sie die gesamte Eingabeaufforderung in Cursor/ChatGPT, um einen beliebigen v7-Ordner zu analysieren**
 
----
+&#x200B;---
 
 ## 📋 DER EINGABEAUFFORDERUNG (VON HIER KOPIEREN) ⬇️
 
@@ -187,57 +187,27 @@ Generate a complete Markdown report with this structure:
 Generate the complete Markdown report now.
 ```
 
----
+&#x200B;---
 
 ## 🎯 DEMO-ANWEISUNGEN
 
-### Schritt 1: Eingabeaufforderung anzeigen
-1. Diese Datei öffnen (`DEMO-PROMPT-STANDALONE.md`)
-2. Scrollen Sie zum Abschnitt „AUFFORDERUNG“
-3. Sagen Sie: *„Dies ist unsere automatisierte Analyseaufforderung“*
+### Schritt 1: Eingabeaufforderung anzeigen1. Diese Datei öffnen (`DEMO-PROMPT-STANDALONE.md`)2. Scrollen Sie zum Abschnitt „AUFFORDERUNG“3. Sagen Sie: *„Dies ist unsere automatisierte Analyseaufforderung“*
 
-### &#x200B;2. Schritt: Eingabeaufforderung kopieren
-1. Alles von „Dokumentationsanalyse zu Campaign v7“ bis zum Ende auswählen
-2. In Zwischenablage kopieren
-3. Sprich: *„Ich kopiere einfach die gesamte Eingabeaufforderung…“*
+### &#x200B;2. Schritt: Eingabeaufforderung kopieren1. Alles von „Dokumentationsanalyse zu Campaign v7“ bis zum Ende auswählen2. In Zwischenablage kopieren3. Sprich: *„Ich kopiere einfach die gesamte Eingabeaufforderung…“*
 
-### Schritt 3: Einfügen und ausführen
-1. Cursor öffnen
-2. Eingabeaufforderung einfügen
-3. Sagen Sie: &quot;*&quot;…und fügen Sie es in den Cursor ein“*
-4. Enter drücken
+### Schritt 3: Einfügen und ausführen1. Cursor öffnen2. Eingabeaufforderung einfügen3. Sagen Sie: &quot;*&quot;…und fügen Sie es in den Cursor ein“*4. Enter drücken
 
-### Schritt 4: Ergebnisse anzeigen
-1. Auf Generierung warten (~30-60 Sekunden)
-2. Scrollen Sie durch den generierten Bericht
-3. Wichtige Abschnitte hervorheben:
-   - Zusammenfassungsstatus 📊
-   - Datei-für-Datei-Tabelle 📋
-   - ✅ muss Abschnitt behalten
-   - 🗑️ Quick Wins
-   - 🎯 Ausführungsplan
+### Schritt 4: Ergebnisse anzeigen1. Auf Generierung warten (~30-60 Sekunden)2. Scrollen Sie durch den generierten Bericht3. Wichtige Abschnitte hervorheben:   - Zusammenfassungsstatus 📊   - Datei-für-Datei-Tabelle 📋   - ✅ muss Abschnitt behalten   - 🗑️ Quick Wins   - 🎯 Ausführungsplan
 
-### Schritt 5: Wow Moment
-1. Markdown-Vorschau anzeigen
-2. Verweisen Sie auf:
-   - *„111 Dateien werden automatisch analysiert“*
-   - *„67 Dateien können sicher gelöscht werden (Reduzierung um 60 %)“*
-   - *„18 v7-spezifische Dateien identifiziert“*
-   - *„Ausführungsplan mit Zeitplänen abschließen“*
+### Schritt 5: Wow Moment1. Markdown-Vorschau anzeigen2. Verweisen Sie auf:   - *„111 Dateien werden automatisch analysiert“*   - *„67 Dateien können sicher gelöscht werden (Reduzierung um 60 %)“*   - *„18 v7-spezifische Dateien identifiziert“*   - *„Ausführungsplan mit Zeitplänen abschließen“*
 
----
+&#x200B;---
 
 ## TIPPS ZUR 💡
 
-### Interaktiv machen
-**Fragen Sie die**: *„Welchen Ordner sollten wir analysieren?“*
-- ✅ (111 Dateien - beeindruckend)
-- Workflow-✅ (121 Dateien - noch größer)
-- Web-✅ (26 Dateien - Schnelldemo)
-- ✅ (32 Dateien - FAST)
+### Interaktiv machen&#x200B;**Fragen Sie die**: *„Welchen Ordner sollten wir analysieren?“*- ✅ (111 Dateien - beeindruckend)- Workflow-✅ (121 Dateien - noch größer)- Web-✅ (26 Dateien - Schnelldemo)- ✅ (32 Dateien - FAST)
 
-### Anpassen im laufenden Betrieb
-**Flexibilität anzeigen**: Ändern des Ordnerpfads in der Eingabeaufforderung:
+### Anpassen im laufenden Betrieb&#x200B;**Flexibilität anzeigen**: Ändern des Ordnerpfads in der Eingabeaufforderung:
 
 ```
 /help/workflow/using/  → Analyze workflows
@@ -245,19 +215,13 @@ Generate the complete Markdown report now.
 /help/platform/using/  → Analyze platform
 ```
 
-### Wichtige Funktionen hervorheben
-1. **Automation**: *„Keine manuelle Arbeit erforderlich“*
-2. **Genauigkeit**: *„Verwendet v8-Dokumentation zum Vergleich“*
-3. **Aktionable**: *„Ready-to-Execute-Plan mit Kontrollkästchen“*
-4. **Smart**: *„Identifiziert v7-spezifische Funktionen automatisch“*
+### Wichtige Funktionen hervorheben1. **Automation**: *„Keine manuelle Arbeit erforderlich“*2. **Genauigkeit**: *„Verwendet v8-Dokumentation zum Vergleich“*3. **Aktionable**: *„Ready-to-Execute-Plan mit Kontrollkästchen“*4. **Smart**: *„Identifiziert v7-spezifische Funktionen automatisch“*
 
-### Zeitvergleich
-**Vorher**: *„Manuelle Analyse = 2-3 Tage pro Ordner“*\
-**After**: *„Automatisierte Analyse = 30 Sekunden pro Ordner“*
+### Zeitvergleich&#x200B;**Vorher**: *„Manuelle Analyse = 2-3 Tage pro Ordner“*\**After**: *„Automatisierte Analyse = 30 Sekunden pro Ordner“*
 
 **ROI**: *„21 Ordner × 2 Tage = 42 Tage → 15 Minuten“*
 
----
+&#x200B;---
 
 ## VORSCHAU DER ERWARTETEN AUSGABE 📊
 
@@ -304,7 +268,7 @@ Week 2: Badge 18 files
 Week 3: Review 18 files
 ```
 
----
+&#x200B;---
 
 ## 🎬 DEMOSKRIPT
 
@@ -336,7 +300,7 @@ Week 3: Review 18 files
 **Schließen**:
 > „Derselbe Prozess funktioniert für alle 21 Ordner. Was früher 6 Wochen gedauert hat, dauert jetzt 15 Minuten.“
 
----
+&#x200B;---
 
 ## 🚀 BEREIT ZUR DEMO!
 

@@ -9,7 +9,7 @@ ht-degree: 0%
 
 **Genère un rapport Markdown détaillé pour un folder avec % de match**
 
----
+&#x200B;---
 
 ## 📋 COPIER CE-EINGABEAUFFORDERUNG
 
@@ -465,7 +465,7 @@ Include:
 Make all links clickable (v7 files + Experience League URLs).
 ```
 
----
+&#x200B;---
 
 ## GEBRAUCH
 
@@ -475,12 +475,13 @@ Make all links clickable (v7 files + Experience League URLs).
    ```
    📁 **Analyze**: /Users/.../help/[YOUR-FOLDER]/using/
    ```
+
 3. **Einfügen in Cursor**
 4. **Analyse ausführen**
 5. **Abrufen des vollständigen Markdown-Berichts**
 6. **Speichern unter**: `[folder]-detailed-analysis.md`
 
----
+&#x200B;---
 
 ## ORDNERBEISPIELE
 
@@ -490,7 +491,7 @@ Versuchen Sie es mit:
 - `/help/platform/using/` (61 Dateien)
 - `/help/web/using/` (26 Dateien)
 
----
+&#x200B;---
 
 ## AUSGABEVORSCHAU
 

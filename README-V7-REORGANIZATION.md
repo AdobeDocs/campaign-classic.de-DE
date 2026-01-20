@@ -9,7 +9,7 @@ ht-degree: 0%
 
 **2 Eingabeaufforderungen für Analyzer und Réorganisator für DOC v7 → v8**
 
----
+&#x200B;---
 
 ## 📁 Fichiers
 
@@ -20,7 +20,7 @@ ht-degree: 0%
 | `PROMPT-1-OVERVIEW-ALL-FOLDERS.md` | Vue d&#39;ensemble de TOUS les folders v7 | `v7-reorganization-overview.md` |
 | `PROMPT-2-DETAILED-FOLDER.md` | Analyse der Details des UN-Ordners in % Übereinstimmung | `[folder]-detailed-analysis.md` |
 
----
+&#x200B;---
 
 ## 🚀
 
@@ -45,7 +45,7 @@ open PROMPT-1-OVERVIEW-ALL-FOLDERS.md
 
 **Taille** : ~50-60 Seiten Markdown
 
----
+&#x200B;---
 
 ### 2️⃣ Analysieren der Details zum Ordner
 
@@ -78,7 +78,7 @@ open PROMPT-2-DETAILED-FOLDER.md
 
 **Taille** : Markdown für ~30-40 Seiten
 
----
+&#x200B;---
 
 ## 📊 Beispiel für die Ausgabe
 
@@ -117,66 +117,35 @@ open PROMPT-2-DETAILED-FOLDER.md
 ...
 ```
 
----
+&#x200B;---
 
 ## 🎯 Workflow-Empfehlung
 
-### Semaine 1 : Vue d&#39;ensemble
-1. **Eingabeaufforderung 1** → obtenir `v7-reorganization-overview.md`
-2. Priorisierung der Ordner ohne Kennung
-3. Partner hat Stakeholder
+### Semaine 1 : Vue d&#39;ensemble1. **Eingabeaufforderung 1** → obtenir `v7-reorganization-overview.md`2. Priorisierung der Ordner ohne Kennung3. Partner hat Stakeholder
 
-### Semaine 2-4 : Details analysieren
-1. Schachtel-Ordner-Prioritätsstufe :
-   - Ausführen **Eingabeaufforderung 2**
-   - `[folder]-detailed-analysis.md`
-   - Validieren von Entscheidungen
-   - Starterlose Aktionen
+### Semaine 2-4 : Details analysieren1. Schachtel-Ordner-Prioritätsstufe :   - Ausführen **Eingabeaufforderung 2**   - `[folder]-detailed-analysis.md`   - Validieren von Entscheidungen   - Starterlose Aktionen
 
-### Semaine 5+ : Ausführung
-1. Supprimer les fichiers identifiés (DELETE)
-2. Badger les fichiers v7-only (KEEP)
-3. Migrant le contenu manquant (MOVE)
-4. Reviewer les cas ambius (REVIEW)
+### Semaine 5+ : Ausführung1. Supprimer les fichiers identifiés (DELETE)2. Badger les fichiers v7-only (KEEP)3. Migrant le contenu manquant (MOVE)4. Reviewer les cas ambius (REVIEW)
 
----
+&#x200B;---
 
 ## 💡 Tipps
 
-### Keine Eingabeaufforderungen
-- ✅ Copier/Coller l&#39;intégralité du prompt
-- ✅ Ne pas-Modifikator le format
-- ✅ Adapter seulement le chemin du folder (Eingabeaufforderung 2)
+### Keine Eingabeaufforderungen- ✅ Copier/Coller l&#39;intégralité du prompt- ✅ Ne pas-Modifikator le format- ✅ Adapter seulement le chemin du folder (Eingabeaufforderung 2)
 
-### Ausgänge ohne Strom
-- 📝 Output en Markdown (Pas HTML)
-- 🔗 Liens cliquables automatiques
-- ✅ Checkboxes für das Tracking
-- 📊
-- 🎨 Emojis et icônes
+### Ausgänge ohne Strom- 📝 Output en Markdown (Pas HTML)- 🔗 Liens cliquables automatiques- ✅ Checkboxes für das Tracking- 📊- 🎨 Emojis et icônes
 
-### Analyse
-- 🎯 Ordner des Typs „Anfänger ohne Arbeit“ (Versand, Workflow)
-- ⚡ Prioriser les quick wins (95-100% Übereinstimmung)
-- 🔍 Prüfer-Handbuch les cas ambius (&lt;70% Übereinstimmung)
-- ✅ Valider avec SME Avant-Unterdrückung massiv
+### Analyse- 🎯 Ordner des Typs „Anfänger ohne Arbeit“ (Versand, Workflow)- ⚡ Prioriser les quick wins (95-100% Übereinstimmung)- 🔍 Prüfer-Handbuch les cas ambius (&lt;70% Übereinstimmung)- ✅ Valider avec SME Avant-Unterdrückung massiv
 
----
+&#x200B;---
 
 ## ⚠️ wichtig
 
-### Avant de supprimer
-1. ✅ v8-Version
-2. ✅ Verifier qu&#39;il n&#39;y a pas de contenu v7-specific
-3. ✅ Mettre à jour `redirects.csv`
-4. ✅ Valider avec un expert (pour les premiers)
+### Avant de supprimer1. ✅ v8-Version2. ✅ Verifier qu&#39;il n&#39;y a pas de contenu v7-specific3. ✅ Mettre à jour `redirects.csv`4. ✅ Valider avec un expert (pour les premiers)
 
-### Nur für Fischers v7
-1. ✅ Ajouter un badge au debüt du fichier
-2. ✅ Expliquer pourquoi c&#39;est v7-only
-3. ✅ Lien vers les limits v8
+### Nur für Fischers v71. ✅ Ajouter un badge au debüt du fichier2. ✅ Expliquer pourquoi c&#39;est v7-only3. ✅ Lien vers les limits v8
 
----
+&#x200B;---
 
 ## 🆘
 
@@ -185,7 +154,7 @@ open PROMPT-2-DETAILED-FOLDER.md
 - Output trop long → Demander un résumé
 - Besoin d&#39;aide → Ping l&#39;équipe doc
 
----
+&#x200B;---
 
 **Dernière mise à jour** : 13.01.2026
 

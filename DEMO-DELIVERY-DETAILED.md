@@ -11,7 +11,7 @@ ht-degree: 7%
 **Erstellt**: 13.01.2026\
 **Dateien insgesamt**: 111
 
----
+&#x200B;---
 
 ## 📈
 
@@ -25,7 +25,7 @@ ht-degree: 7%
 
 **🎯Auswirkung auf die Neuorganisation**: 67 Dateien müssen gelöscht werden (Reduzierung um 60 %)
 
----
+&#x200B;---
 
 ## 📋 einer vollständigen Dateianalyse
 
@@ -44,7 +44,7 @@ ht-degree: 7%
 
 **Zusammenfassung**: 7 DELETE, 0 KEEP, 0 MOVE, 1 BEWERTUNG
 
----
+&#x200B;---
 
 ### E-Mail 📧 (18 Dateien)
 
@@ -64,7 +64,7 @@ ht-degree: 7%
 
 **Zusammenfassung**: 16 DELETE, 0 KEEP, 0 MOVE, 2 REVIEW
 
----
+&#x200B;---
 
 ### 📱 SMS (7 Dateien)
 
@@ -80,7 +80,7 @@ ht-degree: 7%
 
 **Zusammenfassung**: 5 DELETE, 1 KEEP, 0 MOVE, 1 REVIEW
 
----
+&#x200B;---
 
 ### 🔔 Push-Benachrichtigungen (9 Dateien)
 
@@ -95,7 +95,7 @@ ht-degree: 7%
 
 **Zusammenfassung**: 8 DELETE, 0 KEEP, 0 MOVE, 1 BEWERTUNG
 
----
+&#x200B;---
 
 ### 📮 Briefpost (4 Dateien)
 
@@ -108,7 +108,7 @@ ht-degree: 7%
 
 **Zusammenfassung**: 4 DELETE, 0 KEEP, 0 MOVE, 0 REVIEW
 
----
+&#x200B;---
 
 ### 🎯 Personalization (8 Dateien)
 
@@ -123,7 +123,7 @@ ht-degree: 7%
 
 **Zusammenfassung**: 6 DELETE, 1 KEEP, 0 MOVE, 1 REVIEW
 
----
+&#x200B;---
 
 ### Vorlagen und Testadressen 📋 (6 Dateien)
 
@@ -136,7 +136,7 @@ ht-degree: 7%
 
 **Zusammenfassung**: 6 DELETE, 0 KEEP, 0 MOVE, 0 REVIEW
 
----
+&#x200B;---
 
 ### 📊 (14 Dateien)
 
@@ -149,7 +149,7 @@ ht-degree: 7%
 
 **Zusammenfassung**: 12 DELETE, 0 KEEP, 1 MOVE, 1 REVIEW
 
----
+&#x200B;---
 
 ### Fehlerbehebung bei 🔧 (9 Dateien)
 
@@ -163,7 +163,7 @@ ht-degree: 7%
 
 **Zusammenfassung**: 4 DELETE, 2 KEEP, 2 MOVE, 1 BEWERTUNG
 
----
+&#x200B;---
 
 ### 📬 Zustellbarkeit (8 Dateien)
 
@@ -176,7 +176,7 @@ ht-degree: 7%
 
 **Zusammenfassung**: 4 DELETE, 3 KEEP, 0 MOVE, 1 BEWERTUNG
 
----
+&#x200B;---
 
 ## ✅ müssen - v7-spezifische Funktionen beibehalten
 
@@ -190,7 +190,7 @@ ht-degree: 7%
 | `monitoring-deliverability.md` | On-Premise-Überwachungs-Tools | „Tools zur Überwachung der On-Premise-Zustellbarkeit sind spezifisch für Campaign v7“ |
 | ... | *(14 weitere v7-spezifische Dateien)* | Verschiedene Abzeichen nur für v7 |
 
----
+&#x200B;---
 
 ## 🗑️ Quick Wins - Jetzt sicher löschen
 
@@ -223,7 +223,7 @@ ht-degree: 7%
 
 **Total**: **67 Dateien** Sicher sofort zu löschen
 
----
+&#x200B;---
 
 ## Zuerst zu migrierende Inhalte ➡️
 
@@ -240,7 +240,7 @@ ht-degree: 7%
 
 **Prozess**: Inhalte migrieren → v8 aktualisieren → aus v7 löschen
 
----
+&#x200B;---
 
 ## 🔍 manuelle Überprüfung erforderlich
 
@@ -253,36 +253,22 @@ ht-degree: 7%
 | `sending-emails-on-japanese-mobiles.md` | 0 % | Japan-spezifisch, Relevanz prüfen | Überprüfen, falls weiterhin benötigt |
 | ... | *(15 weitere)* | Verschiedene Teilübereinstimmungen | Manueller Vergleich |
 
----
+&#x200B;---
 
 ## 🎯 Ausführungsplan
 
-### Woche 1: Schnelle Löschungen
-- [ E-Mail-Dateien ] löschen (16)
-- [ ] Löschen von SMS-Dateien (5)
-- [ ] Löschen von Push-Dateien (8)
-- [ ] Löschen von Briefpostdateien (4)
-- [ Vorlagendateien ] (6)
-- [ ] Monitoring-Dateien löschen (12)
-- **Insgesamt**: 51 Dateien gelöscht
+### Woche 1: Schnelle Löschungen- [ E-Mail-Dateien ] löschen (16)- [ ] Löschen von SMS-Dateien (5)- [ ] Löschen von Push-Dateien (8)- [ ] Löschen von Briefpostdateien (4)- [ Vorlagendateien ] (6)- [ ] Monitoring-Dateien löschen (12)- **Insgesamt**: 51 Dateien gelöscht
 
-### Woche 2: Inhaltsmigration
-- [ Tipps zur Fehlerbehebung bei der ]-Migration (2 Dateien)
-- [ ] Best Practices für die Migration (3 Dateien)
-- [ ] Migrieren von erweiterten Mustern (3 Dateien)
-- [ ] Löschen nach der Migration (insgesamt 8 Dateien)
+### Woche 2: Inhaltsmigration- [ Tipps zur Fehlerbehebung bei der ]-Migration (2 Dateien)- [ ] Best Practices für die Migration (3 Dateien)- [ ] Migrieren von erweiterten Mustern (3 Dateien)- [ ] Löschen nach der Migration (insgesamt 8 Dateien)
 
-### Woche 3: Badging und Überprüfung
-- [ ] Badge v7-spezifische Dateien (18 Dateien)
-- [ ] Überprüfen von Teilübereinstimmungen (18 Dateien)
-- [ ] Finale Entscheidungen treffen
+### Woche 3: Badging und Überprüfung- [ ] Badge v7-spezifische Dateien (18 Dateien)- [ ] Überprüfen von Teilübereinstimmungen (18 Dateien)- [ ] Finale Entscheidungen treffen
 
----
+&#x200B;---
 
 **Geschätzte Zeitleiste**: 3 Wochen\
 **Erwartetes Ergebnis**: 111 → 44 Dateien (60 % weniger)
 
----
+&#x200B;---
 
 **Zuletzt aktualisiert**: 13.01.2026\
 **Nächste Aktion**: Löschungen in Woche 1 ausführen
