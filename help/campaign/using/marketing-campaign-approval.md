@@ -1,22 +1,22 @@
 ---
-source-git-commit: 4a7ecd170bd27f43d515da71c212bbdaa306d602
+product: campaign
+title: Einrichten und Verwalten des Validierungsprozesses
+description: Erfahren Sie, wie Sie Genehmigungen von Marketing-Kampagnen verwalten.
+language: en
+role: User
+feature: Approvals, Campaigns
+hide: true
+hidefromtoc: true
+exl-id: 8cbb2445-f5e4-4a25-ba7e-56e39ca9d3ce
+source-git-commit: df014d3f3029a61176e5117e27f3d2e8228fc407
 workflow-type: tm+mt
-source-wordcount: '2853'
-ht-degree: 77%
+source-wordcount: '2834'
+ht-degree: 78%
 
 ---
-—product: campaign
-Titel: Einrichten und Verwalten des Genehmigungsprozesses
-Beschreibung: Erfahren Sie, wie Sie Genehmigungen von Marketing-Kampagnen verwalten.
-Sprache: de
-Rolle: Benutzer
-Funktion: Genehmigungen, Kampagnen
-Ausblenden: Ja
-hideFromToC: Ja
-EXL-ID: 8CB2445-F5E4-4A25-BA7E-56E39CA9D3CE
----
+
+
 # Einrichten und Verwalten des Validierungsprozesses {#approving-marketing-campaigns}
-
 
 Jeder Schritt eines Versands kann einer Validierung unterzogen werden, um eine vollständige Überwachung und Kontrolle der Kampagnenprozesse sicherzustellen. Dazu gehören Zielgruppenbestimmung, Inhalt, Budget, Extraktion und das Senden eines Testversands.
 

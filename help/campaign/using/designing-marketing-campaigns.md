@@ -7,15 +7,15 @@ feature: Campaigns
 hide: true
 hidefromtoc: true
 exl-id: 4e0df18f-3623-4dfb-a2f8-ad293dbc4dd5
-source-git-commit: 4a7ecd170bd27f43d515da71c212bbdaa306d602
+source-git-commit: df014d3f3029a61176e5117e27f3d2e8228fc407
 workflow-type: tm+mt
-source-wordcount: '431'
-ht-degree: 76%
+source-wordcount: '434'
+ht-degree: 80%
 
 ---
 
-# Entwerfen und Ausführen von Marketing-Kampagnen{#designing-marketing-campaigns}
 
+# Entwerfen und Ausführen von Marketing-Kampagnen{#designing-marketing-campaigns}
 
 [!DNL Adobe Campaign] können Sie Kommunikations- und Marketing-Kampagnen definieren, optimieren, ausführen und analysieren. [!DNL Adobe Campaign] fungiert als einheitliches Auftrags- und Ausführungszentrum für Marketing-Strategien. Weitere Informationen finden Sie unter [Auf Kampagnen zugreifen](../../distributed/using/accessing-campaigns.md) und [Marketing-Kampagnen erstellen](../../campaign/using/setting-up-marketing-campaigns.md).
 
@@ -23,8 +23,10 @@ Darüber hinaus gestattet das Modul **Marketing Resource Management (MRM)** die 
 
 >[!NOTE]
 >
->Weiterführende Informationen zu den [!DNL Adobe Campaign] Kernfunktionen finden Sie [diesem Abschnitt](../../platform/using/about-adobe-campaign-classic.md).\
->Die Funktionen für Populations-Targeting, Nachrichtenpersonalisierung und Nachrichtenversand auf den verschiedenen Kanälen werden im [[!DNL Campaign v8 documentation]](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=de){target="_blank"} beschrieben.
+>Weiterführende Informationen zu den [!DNL Adobe Campaign] Kernfunktionen finden Sie [diesem Abschnitt](../../platform/using/about-adobe-campaign-classic.md).
+>
+>Die Bestimmung von Zielgruppen sowie die Personalisierung und der Versand über verschiedene Kanäle werden in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=de){target="_blank"} beschrieben.
+
 
 ![Anleitungsvideo-Miniaturansicht](assets/do-not-localize/how-to-video.png) [Entdecken Sie die wichtigsten Konzepte von Marketing-Kampagnen im Video](#video)
 
@@ -68,6 +70,6 @@ Im Folgenden werden Termini dargestellt, die im Zusammenhang mit Campaign von Be
 
 In diesem Video werden die wichtigsten Konzepte von Marketing-Kampagnen vorgestellt.
 
->[!VIDEO](https://video.tv.adobe.com/v/326572?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/35131?quality=12)
 
 Weitere [!DNL Campaign Classic] Anleitungsvideos finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).
