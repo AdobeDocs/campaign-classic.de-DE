@@ -22,8 +22,8 @@ In diesem Abschnitt wird die Konfiguration beschrieben, die in Adobe Campaign v7
 
 Achten Sie außerdem auf Folgendes:
 
-* Wenn Sie von Version 5.11 migrieren, müssen Sie auch die in [ Abschnitt beschriebene Konfiguration ](../../migration/using/configuring-your-platform.md#specific-configurations-in-v5-11).
-* Wenn Sie von v6.02 migrieren, müssen Sie auch die Konfiguration abschließen, die in [diesem Abschnitt) beschrieben ](../../migration/using/configuring-your-platform.md#specific-configurations-in-v6-02).
+* Wenn Sie von Version 5.11 migrieren, müssen Sie auch die in [&#x200B; Abschnitt beschriebene Konfiguration &#x200B;](../../migration/using/configuring-your-platform.md#specific-configurations-in-v5-11).
+* Wenn Sie von v6.02 migrieren, müssen Sie auch die Konfiguration abschließen, die in [diesem Abschnitt) beschrieben &#x200B;](../../migration/using/configuring-your-platform.md#specific-configurations-in-v6-02).
 
 ## Zeitzonen {#time-zones}
 

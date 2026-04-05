@@ -47,7 +47,7 @@ Das externe Konto wird erstellt und der Liste der externen Konten hinzugefügt.
 
 ### Bounce-E-Mails {#bounce-mails-external-account}
 
-Das externe Konto **Bounce Messages** gibt das externe POP3-Konto an, das für die Verbindung mit dem E-Mail-Service verwendet werden soll. Weitere Informationen zu diesem externen Konto finden Sie in der [ zu Campaign v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html?lang=de){target="_blank"}.
+Das externe Konto **Bounce Messages** gibt das externe POP3-Konto an, das für die Verbindung mit dem E-Mail-Service verwendet werden soll. Weitere Informationen zu diesem externen Konto finden Sie in der [&#x200B; zu Campaign v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html?lang=de){target="_blank"}.
 
 Alle Server, die für den POP3-Zugriff konfiguriert sind, können für den Empfang von Antwortsendungen verwendet werden.
 
@@ -223,7 +223,7 @@ To add SSH keys on Windows:
 
 Verwenden Sie das **Externe Datenbank**-Konto, um eine Verbindung zu einer externen Datenbank herzustellen. Weitere Informationen zur Option „Federated Data Access“ (FDA) finden Sie in [diesem Abschnitt](../../installation/using/about-fda.md).
 
-Externe Datenbanken, die mit Campaign kompatibel sind, sind in der ([) ](../../rn/using/compatibility-matrix.md)
+Externe Datenbanken, die mit Campaign kompatibel sind, sind in der ([) &#x200B;](../../rn/using/compatibility-matrix.md)
 
 ![](assets/ext_account_11.png)
 
