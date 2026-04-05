@@ -5,7 +5,7 @@ description: In diesem Dokument wird das Adobe Campaign-Datenmodell beschrieben
 feature: Data Model
 role: Developer
 exl-id: fc0fd23c-f9ea-4e30-b47b-a84143d882ca
-source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
 source-wordcount: '2359'
 ht-degree: 3%
@@ -23,7 +23,7 @@ Um Beschreibungen der einzelnen Tabellen aufzurufen, navigieren Sie zu **[!UICON
 
 >[!NOTE]
 >
->Die physische und logische Struktur der in der Anwendung übertragenen Daten wird in XML beschrieben. Sie folgt einer Adobe Campaign-spezifischen Grammatik namens „Schema“. Weitere Informationen zu Adobe Campaign-Schemata finden Sie [&#x200B; (diesem Abschnitt](../../configuration/using/about-schema-reference.md).
+>Die physische und logische Struktur der in der Anwendung übertragenen Daten wird in XML beschrieben. Sie folgt einer Adobe Campaign-spezifischen Grammatik namens „Schema“. Weitere Informationen zu Adobe Campaign-Schemata finden Sie [ (diesem Abschnitt](../../configuration/using/about-schema-reference.md).
 
 ## Beschreibung der Haupttabellen {#description-main-tables}
 
@@ -238,7 +238,8 @@ Diese Tabelle entspricht dem **nms:rtEvent**-Schema. Es enthält eine Definition
 
 Diese Tabelle entspricht dem **nms:batchEvent**-Schema. Sie enthält die Definition der Ereignisse nach Batch.
 
-<!--## Microsites Module {#microsites-module}
+<!--
+## Microsites Module {#microsites-module}
 
 This set of tables is linked to the **Web applications** functionality, which allows to create and publish dynamic and interactive web applications with data from the database and content adapted to the rights of the connected user. For more on this, see [About web applications](../../web/using/about-web-applications.md).
 
@@ -246,7 +247,8 @@ This set of tables is linked to the **Web applications** functionality, which al
 
 * **NmsTrackingUrl**: This table matches the **nms:trackingUrl** schema.
 
-* **NmsPurl**: This table matches the **nms:purl** schema.-->
+* **NmsPurl**: This table matches the **nms:purl** schema.
+-->
 
 ## NMAC-Modul {#nmac-module}
 

@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
 source-wordcount: '1988'
-ht-degree: 68%
+ht-degree: 70%
 
 ---
 
@@ -47,7 +47,7 @@ Das externe Konto wird erstellt und der Liste der externen Konten hinzugefügt.
 
 ### Bounce-E-Mails {#bounce-mails-external-account}
 
-Das externe Konto **Bounce Messages** gibt das externe POP3-Konto an, das für die Verbindung mit dem E-Mail-Service verwendet werden soll. Weitere Informationen zu diesem externen Konto finden Sie in der [&#x200B; zu Campaign v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html?lang=de){target="_blank"}.
+Das externe Konto **Bounce Messages** gibt das externe POP3-Konto an, das für die Verbindung mit dem E-Mail-Service verwendet werden soll. Weitere Informationen zu diesem externen Konto finden Sie in der [ zu Campaign v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html?lang=de){target="_blank"}.
 
 Alle Server, die für den POP3-Zugriff konfiguriert sind, können für den Empfang von Antwortsendungen verwendet werden.
 
@@ -116,7 +116,7 @@ Die folgenden Kanäle können konfiguriert werden:
 * [E-Mail](#email-routing-external-account)
 * [Mobiltelefon (SMS)](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account)
 * [Telefon](../../delivery/using/communication-channels.md#other-channels)
-* [Direkt-Mail](../../delivery/using/about-direct-mail-channel.md)
+* [Briefpost](../../delivery/using/about-direct-mail-channel.md)
 * [Agentur](../../delivery/using/communication-channels.md#other-channels)
 * [X (früher bekannt als Twitter)](../../social/using/about-social-marketing.md)
 * [iOS- und Android-Kanäle](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html?lang=de){target="_blank"}
@@ -159,7 +159,7 @@ Weiterführende Informationen zur Konfiguration finden Sie auf dieser [Seite](..
 
 ### FTP {#ftp-external-account}
 
-Mit dem externen FTP -Konto können Sie den Zugriff auf einen Server außerhalb von Adobe Campaign konfigurieren und testen. Um Verbindungen mit externen Systemen wie FTP-Servern 898 für Dateiübertragungen einzurichten, können Sie Ihre eigenen externen Konten erstellen. Weitere Informationen hierzu finden Sie in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=de){target="_blank"}.
+Mit dem externen FTP -Konto können Sie den Zugriff auf einen Server außerhalb von Adobe Campaign konfigurieren und testen. Um Verbindungen mit externen Systemen wie FTP-Servern 898 für Dateiübertragungen einzurichten, können Sie Ihre eigenen externen Konten erstellen. Weiterführende Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=de){target="_blank"}.
 
 Geben Sie dazu in diesem externen Konto die Adresse und die Anmeldedaten für die Verbindungsherstellung zum FTP-Server an.
 
@@ -189,7 +189,7 @@ Informationen zu diesen Anmeldedaten finden Sie auf dieser [Seite](https://help.
 
 ### SFTP {#sftp-external-account}
 
-Mit dem externen SFTP -Konto können Sie den Zugriff auf einen Server außerhalb von Adobe Campaign konfigurieren und testen. Um Verbindungen mit externen Systemen wie SFTP für Dateiübertragungen einzurichten, können Sie Ihre eigenen externen Konten erstellen. Weitere Informationen hierzu finden Sie in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=de){target="_blank"}.
+Mit dem externen SFTP -Konto können Sie den Zugriff auf einen Server außerhalb von Adobe Campaign konfigurieren und testen. Um Verbindungen mit externen Systemen wie SFTP für Dateiübertragungen einzurichten, können Sie Ihre eigenen externen Konten erstellen. Weiterführende Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=de){target="_blank"}.
 
 ![](assets/ext_account_4.png)
 
@@ -209,7 +209,8 @@ Mit dem externen SFTP -Konto können Sie den Zugriff auf einen Server außerhalb
 
   Passwort, das für die Verbindung zum SFTP-Server verwendet wird
 
-<!--To add SSH keys on Windows:
+<!--
+To add SSH keys on Windows:
 
 1. Create the **HOME** environment variable with value set as the installation directory.
 
@@ -222,7 +223,7 @@ Mit dem externen SFTP -Konto können Sie den Zugriff auf einen Server außerhalb
 
 Verwenden Sie das **Externe Datenbank**-Konto, um eine Verbindung zu einer externen Datenbank herzustellen. Weitere Informationen zur Option „Federated Data Access“ (FDA) finden Sie in [diesem Abschnitt](../../installation/using/about-fda.md).
 
-Externe Datenbanken, die mit Campaign kompatibel sind, sind in der ([) &#x200B;](../../rn/using/compatibility-matrix.md)
+Externe Datenbanken, die mit Campaign kompatibel sind, sind in der ([) ](../../rn/using/compatibility-matrix.md)
 
 ![](assets/ext_account_11.png)
 
@@ -447,7 +448,7 @@ Informationen darüber, wo Sie die Kennung des Zugriffsschlüssels und den gehei
 
 ### Azur Blob Storage {#azure-blob-external-account}
 
-Das externe **Azure Blob Storage**-Konto kann mithilfe einer Workflow-Aktivität vom Typ **[!UICONTROL Dateiübertragung“ zum Importieren]** Exportieren von Daten in Adobe Campaign verwendet werden. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=de){target="_blank"}.
+Das externe Konto **Azure Blob Storage** kann mithilfe einer Workflow-Aktivität vom Typ **[!UICONTROL Dateiübertragung“ zum Importieren oder Exportieren]** Adobe Campaign verwendet werden. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=de){target="_blank"}.
 
 ![](assets/ext_account_23.png)
 

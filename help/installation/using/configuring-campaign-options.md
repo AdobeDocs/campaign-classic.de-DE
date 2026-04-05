@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
 source-wordcount: '3837'
 ht-degree: 1%
@@ -270,7 +270,8 @@ Mit **[!UICONTROL Knoten Administration / Plattform]** Optionen können Sie Adob
  </tbody> 
 </table>
 
-<!--<tr> 
+<!--
+<tr> 
    <td> <span class="uicontrol">EMTA_BCC_ADDRESS</span> </td> 
    <td> BCC email address for Momentum to send a raw copy of the sent emails. <br /> </td> 
   </tr>

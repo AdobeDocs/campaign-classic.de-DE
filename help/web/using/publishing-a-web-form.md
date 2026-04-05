@@ -5,8 +5,8 @@ description: Veröffentlichen eines Web-Formulars
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Web Forms
 exl-id: 1c66b8e8-7590-4767-9b2f-a9a509df4508
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: ht
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
+workflow-type: tm+mt
 source-wordcount: '1373'
 ht-degree: 100%
 
@@ -196,6 +196,7 @@ Weitere Informationen zu den verschiedenen Status eines Web-Formulars finden Sie
   >
   >Sie können die neueste Version Ihres Web-Formulars auf der Registerkarte **[!UICONTROL Vorschau]** prüfen.
 
-<!--For RN:
+<!--
+For RN:
 * Now, when a web form has the **Pending publication** status, it must be published before it becomes **Online** and accessible through the web form URL in a web browser. [Read more](../../web/using/publishing-a-web-form.md#life-cycle-of-a-form)
 -->

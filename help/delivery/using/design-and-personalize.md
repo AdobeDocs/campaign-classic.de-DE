@@ -8,9 +8,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 5bf727d2-83b1-4a99-be25-041eee8d234c
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: ht
-source-wordcount: '1318'
+source-git-commit: 0d8cef312371192ee97f88eb33276df9d7fb11f6
+workflow-type: tm+mt
+source-wordcount: '1315'
 ht-degree: 100%
 
 ---
@@ -32,11 +32,13 @@ Stellen Sie sicher, dass Ihr Nachrichteninhalt korrekt aufgebaut ist, um oft mit
 
 Die falsche Verwendung von Parametern in Gestaltungsbausteinen kann Probleme verursachen. Variablen in JavaScript sollten beispielsweise folgendermaßen verwendet werden:
 
-    &lt;%
-    
-    var brand = &quot;xxx&quot;
-    
+```
+    <%
+
+    var brand = "xxx"
+
     %>
+```
 
 Weitere Informationen zu Gestaltungsbausteinen finden Sie in [diesem Abschnitt](personalization-blocks.md).
 

@@ -9,10 +9,10 @@ topic-tags: configuration
 hide: true
 hidefromtoc: true
 exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
-source-git-commit: 349c3dfd936527e50d7d3e03aa3408b395502da0
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
-source-wordcount: '2612'
-ht-degree: 3%
+source-wordcount: '2571'
+ht-degree: 1%
 
 ---
 
@@ -22,8 +22,8 @@ In diesem Abschnitt wird die Konfiguration beschrieben, die in Adobe Campaign v7
 
 Achten Sie außerdem auf Folgendes:
 
-* Wenn Sie von Version 5.11 migrieren, müssen Sie auch die in [&#x200B; Abschnitt beschriebene Konfiguration &#x200B;](../../migration/using/configuring-your-platform.md#specific-configurations-in-v5-11).
-* Wenn Sie von v6.02 migrieren, müssen Sie auch die Konfiguration abschließen, die in [diesem Abschnitt) beschrieben &#x200B;](../../migration/using/configuring-your-platform.md#specific-configurations-in-v6-02).
+* Wenn Sie von Version 5.11 migrieren, müssen Sie auch die in [ Abschnitt beschriebene Konfiguration ](../../migration/using/configuring-your-platform.md#specific-configurations-in-v5-11).
+* Wenn Sie von v6.02 migrieren, müssen Sie auch die Konfiguration abschließen, die in [diesem Abschnitt) beschrieben ](../../migration/using/configuring-your-platform.md#specific-configurations-in-v6-02).
 
 ## Zeitzonen {#time-zones}
 
@@ -114,13 +114,13 @@ nlserver config -internalpassword
   Die von dieser Änderung betroffenen Benutzer werden während des Postupgrades identifiziert und aufgelistet.
 
 * Das Tracking funktioniert nicht mehr, wenn das Kennwort leer ist. In diesem Fall werden Sie über eine Fehlermeldung informiert und aufgefordert, die Konfiguration neu zu konfigurieren.
-* Benutzerkennwörter werden nicht mehr im Schema &quot;**:sessionInfo** gespeichert.
+* Benutzerkennwörter werden nicht mehr im Schema **xtk:sessionInfo** gespeichert.
 * Für die Verwendung der Funktionen **`xtk:builder:EvaluateJavaScript`** und **`xtk:builder:EvaluateJavaScriptTemplate`** sind jetzt Administratorberechtigungen erforderlich.
 
 Bestimmte vordefinierte Schemata wurden geändert und sind jetzt standardmäßig nur mit Schreibzugriff für Benutzer mit der Berechtigung **admin** zugänglich:
 
 * ncm:publishing
-* nl:monitoring
+* NL:monitoring
 * nms:calendar
 * xtk:builder
 * xtk:connections
@@ -172,7 +172,7 @@ Neuer Link mit der Verbindungsseite:
 
 ### SQL-Funktionen {#sql-functions}
 
-Unbekannte SQL-Funktionsaufrufe werden nicht mehr automatisch an den Server gesendet. Derzeit müssen alle SQL-Funktionen zum Schema **xtk:funcList** hinzugefügt werden (weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../configuration/using/adding-additional-sql-functions.md)). Bei der Migration wird während des Postupgrades eine Option hinzugefügt, mit der Sie die Kompatibilität mit alten nicht deklarierten SQL-Funktionen aufrechterhalten können. Wenn Sie diese Funktionen weiterhin verwenden möchten, überprüfen Sie, ob die Option **XtkPassUnknownSQLFunctionsToRDBMS** auf der Knotenebene **[!UICONTROL Administration > Plattform > Optionen]** tatsächlich definiert ist.
+Unbekannte SQL-Funktionsaufrufe werden nicht mehr automatisch an den Server gesendet. Derzeit müssen alle SQL-Funktionen zum Schema **xtk:funcList** hinzugefügt werden (weitere Informationen hierzu finden Sie [diesem Abschnitt](../../configuration/using/adding-additional-sql-functions.md)). Bei der Migration wird während des Postupgrades eine Option hinzugefügt, mit der Sie die Kompatibilität mit alten nicht deklarierten SQL-Funktionen aufrechterhalten können. Wenn Sie diese Funktionen weiterhin verwenden möchten, überprüfen Sie, ob die Option **XtkPassUnknownSQLFunctionsToRDBMS** auf der Knotenebene **[!UICONTROL Administration > Plattform > Optionen]** tatsächlich definiert ist.
 
 >[!IMPORTANT]
 >
@@ -391,7 +391,7 @@ Der Alias ist optional
 
 **Tipps und Tricks**
 
-Referenzieren eines „Feld“-Felds der `<queryDef>` in einem `<subQuery>`-Element   -Element verwenden, die folgende Syntax verwenden: `[../@field]`
+Referenzieren eines „Feld“-Felds der `<subQuery>` in einem `<queryDef>`-Element   -Element verwenden, die folgende Syntax verwenden: `[../@field]`
 
 Beispiel:
 
@@ -503,7 +503,7 @@ $(XTK_INSTALL_DIR)/tomcat-X/lib/el-api.jar
 
 ### Angebotsinhalt {#offer-content}
 
-In v7 wurde der Angebotsinhalt verschoben. In Version 6.02 befand sich der Inhalt in jedem Darstellungsschema (**nms:emailOfferView**). In v7 befindet sich der Inhalt jetzt im Angebotsschema. Nach dem Postupgrade ist der Inhalt daher nicht in der Benutzeroberfläche sichtbar. Nach dem Postupgrade müssen Sie den Angebotsinhalt neu erstellen oder ein Skript entwickeln, das den Inhalt automatisch aus dem Darstellungsschema in das Angebotsschema verschiebt.
+In v7 wurde der Angebotsinhalt verschoben. In Version 6.02 war der Inhalt in jedem Darstellungsschema (**nms:emailOfferView**). In v7 befindet sich der Inhalt jetzt im Angebotsschema. Nach dem Postupgrade ist der Inhalt daher nicht in der Benutzeroberfläche sichtbar. Nach dem Postupgrade müssen Sie den Angebotsinhalt neu erstellen oder ein Skript entwickeln, das den Inhalt automatisch aus dem Darstellungsschema in das Angebotsschema verschiebt.
 
 >[!IMPORTANT]
 >
@@ -623,7 +623,8 @@ Alle Standardberichte verwenden derzeit die Rendering-Engine v6.x. Wenn Sie Java
 
 ### Personalisierte Berichte {#personalized-reports}
 
-<!--If you want to have the blue banner from v7 (allowing you access to the tabs), you must republish reports. If you encounter problems, you can force the v6.0 rendering engine. To do this, go to **[!UICONTROL Properties]** within the report, click **[!UICONTROL Rendering]** and choose the **[!UICONTROL Version 6.0 (Flash & OpenOffice)]** rendering engine.
+<!--
+If you want to have the blue banner from v7 (allowing you access to the tabs), you must republish reports. If you encounter problems, you can force the v6.0 rendering engine. To do this, go to **[!UICONTROL Properties]** within the report, click **[!UICONTROL Rendering]** and choose the **[!UICONTROL Version 6.0 (Flash & OpenOffice)]** rendering engine.
 
 ![](assets/migration_reports_1.png)
 -->

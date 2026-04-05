@@ -5,10 +5,10 @@ description: Erfahren Sie mehr über den Umfang und die Besonderheiten des E-Mai
 feature: Email
 role: User, Admin, Developer
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
-workflow-type: ht
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
+workflow-type: tm+mt
 source-wordcount: '1408'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -42,7 +42,8 @@ Momentum steht für eine innovative, hochleistungsfähige MTA-Technologie, die e
 
 **Was sind die Vorteile?**
 
-* Adobe Campaign-Kunden, die den Enhanced MTA einsetzen, haben eine <!--300%-->massive Steigerung der Gesamtdurchsatzgeschwindigkeit und eine <!--90%+-->deutliche Reduzierung der Softbounces festgestellt.
+* Adobe Campaign-Clients, die den Enhanced MTA verwenden, verzeichnen <!--300%-->einen massiven Anstieg der Gesamtdurchsatzgeschwindigkeit und eine deutliche Verringerung der Softbounces.
+  <!--90%+-->
 * Der Enhanced MTA nutzt die neueste MTA-Technologie, um Ihnen optimale Durchsatzgeschwindigkeiten für Ihren E-Mail-Versand zu bieten.
 * Durch die sofortige und automatische Anpassung an die Rückmeldungen, die er erhält, sorgt er außerdem für einen genaueren und intelligenteren E-Mail-Versand mit Versanddaten in Echtzeit.
 

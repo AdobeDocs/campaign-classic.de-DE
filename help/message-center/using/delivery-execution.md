@@ -7,8 +7,8 @@ audience: message-center
 content-type: reference
 topic-tags: event-processing
 exl-id: 930c6395-0c00-40ee-a925-3e0cae67c55f
-source-git-commit: e60a8391416bc9899548971bddb61705467a80e5
-workflow-type: ht
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
+workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 100%
 
@@ -48,7 +48,8 @@ Die von der Ausführungsinstanz gesendeten Transaktionsnachrichten werden durch 
 >
 >Die Sendungen sammeln die Ereignisse wöchentlich auf der Grundlage der neuesten Ereignisaktualisierung, und nicht am Erstellungsdatum des Ereignisses. Daher kann sich beim Extrahieren von Transaktionsnachrichten-Versandlogs in der Kontrollinstanz die mit jeder Versandlog-Kennung verknüpfte Versandkennung im Laufe der Zeit ändern, wenn das Log aktualisiert wird (z. B. wenn für das Ereignis ein eingehender Bounce empfangen wird).
 
-<!--The transactional deliveries sent from the execution instance are synchronized back to the control instance as follows.
+<!--
+The transactional deliveries sent from the execution instance are synchronized back to the control instance as follows.
 
 Let's take a [delivery template](../../message-center/using/introduction.md) labelled *Template_1*.
 
@@ -73,6 +74,8 @@ Let's take a [delivery template](../../message-center/using/introduction.md) lab
 
 To summarize, the deliveries weekly accumulate the events based on the latest event update, and not on the event creation date.
 
-Therefore, when extracting transactional messaging delivery logs from the control instance, the delivery ID associated with each delivery log ID changes every week.-->
+Therefore, when extracting transactional messaging delivery logs from the control instance, the delivery ID associated with each delivery log ID changes every week.
+
+-->
 
 Näheres zum Thema Überwachung der Aktivitäten und Ausführung der Ausführungsinstanz(en) finden Sie unter [Berichte zu Transaktionsnachrichten](../../message-center/using/about-transactional-messaging-reports.md).

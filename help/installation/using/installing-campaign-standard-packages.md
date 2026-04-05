@@ -5,7 +5,7 @@ description: Erfahren Sie, wie Sie integrierte Campaign-Pakete installieren
 feature: Installation, Application Settings
 badge-v7-prem: label="Nur On-Premise/Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
 source-wordcount: '1306'
 ht-degree: 11%
@@ -89,12 +89,14 @@ In der folgenden Tabelle sind alle nativen Campaign-Packages aufgeführt.
    <td> Auf den Ausführungsinstanzen zu installierendes Package für das Angebotsmodul (Interaction) <a href="../../interaction/using/distributed-architectures.md">Weitere Informationen</a> </td> 
    <td> MID, <br /> </td>  
   </tr> 
-  <!--tr> 
+  <!--
+  tr> 
    <td> Lead Management (Leads) (deprecated)<br /> </td> 
    <td> Simplifies the process of building and maintaining the entire leads management life cycle. <br /> </td> 
    <td> Yes<br /> </td> 
    <td> Optional, <a href="https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html">Learn More</a> </td> 
-  </tr--> 
+  </tr
+  --> 
   <tr> 
    <td> Soziale Netzwerke (Social Marketing) <br /> </td> 
    <td> Synchronisiert Adobe Campaign mit X (ehemals Twitter) und Facebook. <a href="../../social/using/about-social-marketing.md">Weitere Informationen</a> <br /> </td> 
@@ -157,7 +159,7 @@ In der folgenden Tabelle sind alle nativen Campaign-Packages aufgeführt.
   </tr> 
   <tr> 
    <td> Zugriff auf externe Daten (Federated Data Access)<br /> </td> 
-   <td> Bietet die Option Federated Data Access (FDA) , um in einer oder mehreren externen Datenbanken gespeicherte Informationen zu verarbeiten, sodass Sie auf externe Daten zugreifen können, ohne die Datenstruktur in Adobe Campaign zu ändern.  Optional. <a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/accessing-an-external-database-fda.html?lang=de" target="_blank">Weitere Informationen</a> <br /> </td> 
+   <td> Bietet die Option Federated Data Access (FDA) , um in einer oder mehreren externen Datenbanken gespeicherte Informationen zu verarbeiten, sodass Sie auf externe Daten zugreifen können, ohne die Datenstruktur in Adobe Campaign zu ändern.  Optional. <a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/accessing-an-external-database-fda.html" target="_blank">Weitere Informationen</a> <br /> </td> 
    <td> Alle<br /> </td> 
   </tr> 
   <tr> 
@@ -172,7 +174,7 @@ In der folgenden Tabelle sind alle nativen Campaign-Packages aufgeführt.
   </tr> 
   <tr> 
    <td> Couponverwaltung<br /> </td> 
-   <td> Erstellt einen Couponsatz, der künftigen Marketing-Angeboten hinzugefügt wird. Optional. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalized-coupons.html?lang=de" target="_blank">Weitere Informationen</a> <br /> </td> 
+   <td> Erstellt einen Couponsatz, der künftigen Marketing-Angeboten hinzugefügt wird. Optional. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalized-coupons.html" target="_blank">Weitere Informationen</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
@@ -227,7 +229,7 @@ In der folgenden Tabelle sind alle nativen Campaign-Packages aufgeführt.
   </tr> 
   <tr> 
    <td> AMP-<br /> </td> 
-   <td> Ermöglicht die Verwendung des neuen interaktiven AMP für das E-Mail-Format und das Senden dynamischer E-Mails. Optional. <a href="https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/emails/defining-interactive-content" target="_blank">Weitere Informationen</a> <br /> </td> 
+   <td> Ermöglicht die Verwendung des neuen interaktiven AMP für das E-Mail-Format und das Senden dynamischer E-Mails. Optional. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html?lang=de" target="_blank">Weitere Informationen</a> <br /> </td> 
    <td> Alle </td> 
   </tr> 
   <tr> 

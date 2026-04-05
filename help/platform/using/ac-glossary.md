@@ -8,9 +8,9 @@ level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
-source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
-workflow-type: ht
-source-wordcount: '6202'
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
+workflow-type: tm+mt
+source-wordcount: '6200'
 ht-degree: 100%
 
 ---
@@ -288,7 +288,8 @@ Weitere Informationen zur [Domain-Delegation](https://experienceleague.adobe.com
 ## E – H {#sec-2}
 
 <!--
-----DEPRECATED------>
+----DEPRECATED----
+-->
 +++**E4X**
 
 E4X ist die JavaScript-Version, die in Adobe Campaign Classic verwendet wird. Sie wird manchmal als ECMAScript bezeichnet und ist eine Erweiterung von JavaScript, die das Mischen von JavaScript- und XML-Primitiven im selben Code ermöglicht. Beachten Sie, dass E4X als veraltete Sprache klassifiziert ist.
@@ -1021,7 +1022,7 @@ Die Funktion &quot;Transaktionsnachrichten&quot; ist ein Campaign-Modul zur Verw
 Weitere Informationen zu [Transaktionsnachrichten](../../message-center/using/about-transactional-messaging.md).
 +++
 
-&lt;!------- USEFUL HERE??----->
+<!-- USEFUL HERE?? -->
 +++**Ausgelöste Kampagnen**
 
 Ausgelöste Kampagnen sind Kampagnen, die ausgeführt werden, wenn in einem Workflow eine API-Anfrage empfangen wird. API-Aufrufe werden im Workflow von einer Signal-Aktivität empfangen, die die Ausführung des Workflows auslöst.

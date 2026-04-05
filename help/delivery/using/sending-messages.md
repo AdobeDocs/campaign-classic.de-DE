@@ -8,8 +8,8 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: c75a5ea2-8d62-4f98-bccd-7116a4d404fd
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
-workflow-type: ht
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
+workflow-type: tm+mt
 source-wordcount: '227'
 ht-degree: 100%
 
@@ -33,8 +33,10 @@ Nachdem Sie Ihre E-Mail erstellt und konfiguriert haben, können Sie sie an die 
 >In [diesem Abschnitt](steps-validating-the-delivery.md) wird der gesamte Prozess zur Validierung eines Versands beschrieben. Die vollständigen detaillierten Schritte zum Konfigurieren und Ausführen eines Versands finden Sie in [diesem Abschnitt](steps-sending-the-delivery.md).
 
 In den folgenden Abschnitten werden Einstellungen und Konfigurationen beschrieben, die sich speziell auf den Versand von E-Mails beziehen:
-<!--* [Generating the mirror page](generating-mirror-page.md)
-* [Email BCC](email-bcc.md)-->
+<!--
+* [Generating the mirror page](generating-mirror-page.md)
+* [Email BCC](email-bcc.md)
+-->
 * [E-Mail-Parameter](email-parameters.md)
 * [Senden von E-Mails mit dem Enhanced MTA](sending-with-enhanced-mta.md)
 * [Senden von E-Mails auf japanischen Mobiltelefonen](sending-emails-on-japanese-mobiles.md)
