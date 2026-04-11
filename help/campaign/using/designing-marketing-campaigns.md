@@ -5,12 +5,11 @@ description: Definieren, Optimieren, Ausführen und Analysieren von Marketing-Ka
 role: User
 feature: Campaigns
 hide: true
-hidefromtoc: true
 exl-id: 4e0df18f-3623-4dfb-a2f8-ad293dbc4dd5
-source-git-commit: df014d3f3029a61176e5117e27f3d2e8228fc407
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '434'
-ht-degree: 80%
+ht-degree: 73%
 
 ---
 
@@ -19,7 +18,7 @@ ht-degree: 80%
 
 [!DNL Adobe Campaign] können Sie Kommunikations- und Marketing-Kampagnen definieren, optimieren, ausführen und analysieren. [!DNL Adobe Campaign] fungiert als einheitliches Auftrags- und Ausführungszentrum für Marketing-Strategien. Weitere Informationen finden Sie unter [Auf Kampagnen zugreifen](../../distributed/using/accessing-campaigns.md) und [Marketing-Kampagnen erstellen](../../campaign/using/setting-up-marketing-campaigns.md).
 
-Darüber hinaus gestattet das Modul **Marketing Resource Management (MRM)** die Steuerung von Marketing-Aktionen in einem kollaborativen Modus, indem es eine vollständige Verwaltung und Echtzeitverfolgung der betreffenden Aufgaben, Budgets und Marketing-Ressourcen erlaubt. Das Marketing Resource Management ermöglicht die Optimierung und Steuerung der Verwaltung interner und externer Prozesse, Ressourcen und Marketing-Kampagnen. Es unterstützt auch die Beziehungen zu Drittanbietern (Agenturen, Drucker usw.). Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../mrm/using/about-marketing-resource-management.md).
+Darüber hinaus ermöglicht das Modul **Marketing-Ressourcen-Management (MRM** die Steuerung kollaborativer Marketing-Aktionen durch eine umfassende Verwaltung und Echtzeit-Verfolgung von Aufgaben, Budgets und verwendeten Marketing-Ressourcen. Das Marketing Resource Management ermöglicht die Optimierung und Steuerung der Verwaltung interner und externer Prozesse, Ressourcen und Marketing-Kampagnen. Es unterstützt auch die Beziehungen zu Drittanbietern (Agenturen, Drucker usw.). Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../mrm/using/about-marketing-resource-management.md).
 
 >[!NOTE]
 >

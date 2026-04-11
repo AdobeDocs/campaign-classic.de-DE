@@ -5,10 +5,9 @@ description: Erfahren Sie, wie Sie die Zielgruppe Ihrer Marketing-Kampagnen defi
 role: User
 feature: Campaigns, Audiences
 hide: true
-hidefromtoc: true
 exl-id: 04daa67c-4057-42a7-b993-a6eddf2b883d
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '1586'
 ht-degree: 100%
 
@@ -42,7 +41,7 @@ Sie haben die Möglichkeit, eine Population in eine Liste zu importieren und die
 
 ## Erstellen der Zielgruppe in einem Campaign-Workflow {#building-the-main-target-in-a-workflow}
 
-Die Hauptzielgruppe eines Versands kann auch über einen Campaign-Workflow definiert werden: Die grafische Umgebung ermöglicht die Erstellung einer Zielgruppe mithilfe von Abfragen, Tests und Funktionen wie Vereinigungen, Deduplizierungen, Aufspaltungen usw.
+Die Hauptzielgruppe eines Versands kann auch über einen Campaign-Workflow definiert werden: Die grafische Umgebung ermöglicht die Erstellung einer Zielgruppe mithilfe von Abfragen, Tests und Operatoren wie Vereinigungen, Deduplizierungen, Aufspaltungen usw.
 
 >[!IMPORTANT]
 >

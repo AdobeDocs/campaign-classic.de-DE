@@ -4,12 +4,11 @@ title: Campaign Workflow-Heatmap
 description: Überwachen Sie Ihre Workflows mit Workflow-Heatmap.
 feature: Workflows, Heatmap
 hide: true
-hidefromtoc: true
 exl-id: f1016ddf-0c87-4611-a878-d01f3684935f
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
-source-wordcount: '1191'
-ht-degree: 100%
+source-wordcount: '1190'
+ht-degree: 98%
 
 ---
 
@@ -99,7 +98,7 @@ Jede Zeile stellt eine Stunde des Tages dar und jede Zelle entspricht 5 Minuten 
 
 Die Tabelle zeigt alle Workflows an, die für jeden dieser 5-Minuten-Zeiträume gleichzeitig ausgeführt werden.
 
-Im folgenden Beispiel werden zwischen 8:00 und 8:05 Uhr drei Workflows ausgeführt (unabhängig von ihrer individuellen Dauer):
+Im folgenden Beispiel werden zwischen 8:00 und :05am:00 Uhr drei Workflows ausgeführt (unabhängig von ihrer individuellen Dauer):
 
 ![](assets/wkf_monitoring_ex_8am.png)
 

@@ -7,9 +7,8 @@ badge-v7-prem: label="Nur On-Premise/Hybrid" type="Caution" url="https://experie
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
-hidefromtoc: true
 exl-id: 47f50bf5-4d5b-4c07-af71-de4390177cf5
-source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 3%
@@ -36,7 +35,7 @@ Wenn Sie eine E-Mail senden, stellt der Software-Server eine Verbindung mit dem 
 
 Im Verbindungsprotokoll müssen Regeln eingehalten werden, um Spamming und Monopolisierung von Servern zu verhindern. Die wichtigsten sind die folgenden:
 
-* auf die Blockierungsliste setzen **Maximal zulässige Anzahl von Verbindungen**: Wenn diese Anzahl eingehalten wird, werden IPs nicht auf der-Seite angezeigt und E-Mails werden nicht aufgrund von zusätzlichen Verbindungen abgelehnt.
+* **Maximal zulässige Anzahl von Verbindungen**: Wenn diese Anzahl eingehalten wird, werden IPs nicht auf der-Seite angezeigt und E-Mails werden nicht aufgrund von zusätzlichen Verbindungen abgelehnt.
 * **Maximale Nachrichtenanzahl**: Während der Verbindung muss die Anzahl der zu sendenden Nachrichten definiert werden. Wenn diese Zahl nicht definiert ist, sendet der Server so viele E-Mails wie möglich. Dies führt dazu, dass der ISP als Spam identifiziert und der Blockierungsliste hinzugefügt wird.
 * **Nachrichten pro Stunde**: Um eine Übereinstimmung mit Ihrer E-Reputation zu erzielen, steuert Adobe Campaign die Anzahl der E-Mails, die Ihre IPs pro Stunde senden können. Dieses System schützt Sie vor E-Mail-Ablehnung und/oder Blockierungsliste.
 

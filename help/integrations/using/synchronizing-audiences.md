@@ -1,23 +1,22 @@
 ---
 product: campaign
-title: Synchronisieren von Audiences
-description: Erfahren Sie, wie Sie Audiences mit dem ACS-Connector synchronisieren
+title: Synchronisieren von Zielgruppen
+description: Erfahren Sie, wie Sie Zielgruppen mit dem ACS-Connector synchronisieren
 feature: ACS Connector
 hide: true
-hidefromtoc: true
 exl-id: 88e581cf-43cd-4c43-9347-d016c62fdf42
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
-source-wordcount: '1185'
-ht-degree: 100%
+source-wordcount: '1184'
+ht-degree: 98%
 
 ---
 
-# Synchronisieren von Audiences{#synchronizing-audiences}
+# Synchronisieren von Zielgruppen{#synchronizing-audiences}
 
 
 
-Sie können mit den erweiterten Funktionen von Campaign v7 eine umfangreiche Liste erstellen und als Audience direkt und in Echtzeit in Campaign Standard freigeben (einschließlich zusätzlicher Daten). Ihr Campaign-Standard-Benutzer kann dann die Audience in Adobe Campaign Standard verwenden.
+Sie können mit den erweiterten Funktionen von Campaign v7 eine umfangreiche Liste erstellen und als Zielgruppe direkt und in Echtzeit in Campaign Standard freigeben (einschließlich zusätzlicher Daten). Ihr Campaign-Standard-Benutzer kann dann die Zielgruppe in Adobe Campaign Standard verwenden.
 
 Eine komplexe Zielgruppenbestimmung einschließlich zusätzlicher Daten, die nicht in Campaign Standard repliziert werden, kann nur mithilfe von Campaign v7 durchgeführt werden.
 
@@ -34,7 +33,7 @@ Dieser Anwendungsfall zeigt, wie Sie in Campaign v7 einen Zieldatensatz für den
 Dazu ist Folgendes erforderlich:
 
 * Empfänger, die in der Campaign v7-Datenbank gespeichert und mit Campaign Standard synchronisiert werden. Siehe Abschnitt [Profile synchronisieren](../../integrations/using/synchronizing-profiles.md).
-* Zusätzliche in Tabellen gespeicherte Daten, wie Abmeldungen oder Transaktionen, die mit nms:recipients in der Campaign v7-Datenbank verknüpft sind. Diese Daten können aus nativen Schemata oder benutzerdefinierten Tabellen in Campaign v7 stammen. Sie sind standardmäßig nicht in Campaign Standard verfügbar, da sie nicht synchronisiert werden.
+* Zusätzliche Daten wie Abonnements oder Transaktionen, die in nms-bezogenen Tabellen in :recipients Campaign v7-Datenbank gespeichert sind. Diese Daten können aus nativen Schemata oder benutzerdefinierten Tabellen in Campaign v7 stammen. Sie sind standardmäßig nicht in Campaign Standard verfügbar, da sie nicht synchronisiert werden.
 * Die Berechtigung zur Durchführung von Workflows in sowohl Campaign v7 als auch Campaign Standard.
 * Die Berechtigung zur Erstellung und Durchführung eines Versands in Campaign Standard.
 
@@ -48,9 +47,9 @@ Nachdem die Zielgruppe und ihre zusätzlichen Daten definiert wurden, können si
 >
 >Dies ist ein Beispiel. Je nach Anforderungen können Sie eine Empfängerliste einfach abfragen und in ACS ohne jegliche Weiterverarbeitung freigeben. Sie können zur Erstellung Ihrer endgültigen Zielgruppe auch andere Datenverwaltungsaktivitäten nutzen.
 
-Gehen Sie folgendermaßen vor, um die endgültige Audience und ihre zusätzlichen Daten zu erhalten:
+Gehen Sie folgendermaßen vor, um die endgültige Zielgruppe und ihre zusätzlichen Daten zu erhalten:
 
-1. Erstellen Sie einen neuen Workflow in **[!UICONTROL Profile und Zielgruppen]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Zielgruppen-Workflow]**.
+1. Erstellen Sie einen neuen Workflow in **[!UICONTROL Profile und Zielgruppen]** > **[!UICONTROL Aufträge]** > **[!UICONTROL Zielgruppen-Workflow]**.
 1. Fügen Sie die Aktivität **[!UICONTROL Abfrage]** hinzu und wählen Sie die Empfänger aus, denen Sie die E-Mail senden möchten, wie z. B. alle Empfänger zwischen 18 und 30 Jahren, die in Frankreich leben.
 
    ![](assets/acs_connect_query1.png)
@@ -84,7 +83,7 @@ Gehen Sie folgendermaßen vor, um die endgültige Audience und ihre zusätzliche
    * Wählen Sie rechts im Fenster **[!UICONTROL Hinzufügen]**.
    * Wählen Sie im Fenster **[!UICONTROL Feldauswahl]** die Schaltfläche **[!UICONTROL Erweiterte Auswahl]** aus.
    * Wählen Sie **[!UICONTROL Aggregat]** und danach **[!UICONTROL Zählung]** aus. Markieren Sie die Option **[!UICONTROL Unterschiedlich]** und wählen Sie **[!UICONTROL Weiter]** aus.
-   * Wählen Sie in der Felderliste das für die Funktion **Zählung** verwendete Feld aus. Wählen Sie ein Feld aus, das immer ausgefüllt wird, z. B. die **[!UICONTROL Primärer Schlüssel]** und klicken Sie auf **[!UICONTROL Beenden]**.
+   * Wählen Sie in der Felderliste das für die Funktion **Zählung** verwendete Feld aus. Wählen Sie ein Feld aus, das immer ausgefüllt wird, z. B. **[!UICONTROL Primärschlüssel]**, und klicken Sie auf **[!UICONTROL Beenden]**.
    * Ändern Sie den Ausdruck in der Spalte **[!UICONTROL Alias]**. Mit dem Alias können Sie die hinzugefügte Spalte im endgültigen Versand einfach abrufen. **NBdeliveries**, um die hinzugefügte Spalte im endgültigen Versand einfach abrufen zu können.
    * Wählen Sie **[!UICONTROL Beenden]** aus und speichern Sie die Konfiguration der Aktivität **[!UICONTROL Abfrage]**.
 
@@ -108,7 +107,7 @@ Sobald die Zielpopulation definiert ist, können Sie sie in ACS mit der Aktivit�
 
    Die Zielgruppe und ihre zusätzlichen Daten werden in einer Liste in Campaign v7 gespeichert und sofort als eine Audience vom Typ Liste in Campaign Standard freigegeben. Nur die replizierten Profile werden in ACS freigegeben.
 
-Wenn bei der Aktivität **[!UICONTROL Listen-Update]** ein Fehler auftritt, ist möglicherweise die Synchronisation mit Campaign Standard fehlgeschlagen. Um zu sehen, wo der Fehler liegt, gehen Sie zu **[!UICONTROL Administration]** > **[!UICONTROL ACS Connector]** > **[!UICONTROL Prozesse]** > **[!UICONTROL Prüfung]**. Dieser Ordner enthält Synchronisations-Workflows, die von der Aktivität **[!UICONTROL Listen-Update]** ausgelöst wurden. Weitere Informationen finden Sie im Abschnitt [Fehlerbehebung bei ACS Connector](../../integrations/using/troubleshooting-the-acs-connector.md).
+Wenn bei der Aktivität **[!UICONTROL Listen-Update]** ein Fehler auftritt, ist möglicherweise die Synchronisation mit Campaign Standard fehlgeschlagen. Um zu sehen, wo der Fehler liegt, gehen Sie zu **[!UICONTROL Administration]** > **[!UICONTROL ACS-Connector]** > **[!UICONTROL Prozesse]** > **[!UICONTROL Prüfung]**. Dieser Ordner enthält Synchronisations-Workflows, die von der Aktivität **[!UICONTROL Listen-Update]** ausgelöst wurden. Weitere Informationen finden Sie im Abschnitt [Fehlerbehebung beim ACS-Connector](../../integrations/using/troubleshooting-the-acs-connector.md).
 
 ## Daten in Campaign Standard abrufen und in einem Versand verwenden {#retrieve-the-data-in-campaign-standard-and-use-it-in-a-delivery}
 
@@ -116,7 +115,7 @@ Sobald der Zielgruppen-Workflow in Campaign v7 ausgeführt wird, finden Sie die 
 
 ![](assets/acs_connect_deliveryworkflow_audience.png)
 
-Durch die Erstellung eines Versand-Workflows in Campaign Standard können Sie dann diese Audience sowie die darin enthaltenen zusätzlichen Daten in einem Versand verwenden.
+Durch die Erstellung eines Versand-Workflows in Campaign Standard können Sie dann diese Zielgruppe sowie die darin enthaltenen zusätzlichen Daten in einem Versand verwenden.
 
 1. Erstellen Sie einen neuen Workflow im Menü **[!UICONTROL Marketing-Aktivitäten]**.
 1. Fügen Sie die Aktivität **[!UICONTROL Zielgruppe lesen]** hinzu und wählen Sie die zuvor von Campaign v7 übertragene Audience aus.

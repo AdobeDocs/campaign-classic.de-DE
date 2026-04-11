@@ -4,12 +4,11 @@ title: Aktualisierung auf den neuen Zustellbarkeits-Server
 description: Erfahren Sie, wie Sie eine Aktualisierung auf den neuen Zustellbarkeits-Server von Campaign durchführen
 feature: Technote, Deliverability
 hide: true
-hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: c42d4022587846081442a39d03546c0ef335c7a0
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
-source-wordcount: '997'
-ht-degree: 100%
+source-wordcount: '992'
+ht-degree: 95%
 
 ---
 
@@ -21,7 +20,7 @@ Als Kundin oder Kunde von Campaign Classic müssen Sie den neuen Zustellbarkeits
 
 >[!NOTE]
 >
->Weitere Informationen zu diesen Änderungen finden Sie in den [häufig gestellten Fragen](#faq) oder bei der [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank}.
+>Weitere Informationen zu diesen Änderungen finden Sie in den [FAQ](#faq) oder bei der [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank}.
 >
 
 ## Was hat sich geändert?{#acc-deliverability-changes}
@@ -71,11 +70,11 @@ Zur Integration des neuen Zustellbarkeits-Servers muss Campaign mit Adobe Shared
 
 Als On-Premise-Kunde müssen Sie auch überprüfen, ob für Ihre Organisation ein Campaign-**[!UICONTROL Produktprofil]** vorhanden ist. Gehen Sie dazu wie folgt vor:
 
-1. Verbinden Sie sich als Administrator mit der [Adobe Admin Console](https://adminconsole.adobe.com/){_blank}.
+1. Verbinden Sie sich als Administrator mit [Adobe Admin Console](https://adminconsole.adobe.com/){_blank}.
 1. Rufen Sie den Bereich **Produkte und Services** auf und überprüfen Sie, ob **Adobe Campaign** aufgeführt ist.
-Wenn Sie **Adobe Campaign** nicht sehen können, wenden Sie sich an die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank}, damit dieses Produkt hinzugefügt wird.
+Wenn Sie **Adobe Campaign nicht sehen können** wenden Sie sich an die [Adobe](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank}Kundenunterstützung, damit diese hinzugefügt wird.
 1. Klicken Sie auf **Adobe Campaign** und wählen Sie Ihre Organisation aus.
-   **Achtung**: Wenn Sie mehrere Organisationen haben, achten Sie darauf, dass die richtige ausgewählt ist. Weitere Informationen zu Organisationen finden Sie [auf dieser Seite](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=de#ims-org-id){_blank}.
+   **Achtung**: Wenn Sie mehrere Organisationen haben, achten Sie darauf, dass die richtige ausgewählt ist. Weitere Informationen zu Organisationen [auf dieser Seite](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=de#ims-org-id){_blank}.
 
 1. Überprüfen Sie, ob ein **[!UICONTROL Produktprofil]** vorhanden ist. Wenn nicht, erstellen Sie eines. Für dieses **[!UICONTROL Produktprofil]** ist keine Berechtigung erforderlich.
 
@@ -110,7 +109,7 @@ Um zu überprüfen, ob die Integration erfolgreich war, führen Sie die folgende
 
 ## Häufig gestellte Fragen {#faq}
 
-### Welchen Zeitrahmen gibt es für die Aktualisierung?
+### Welche Timeline gibt es für die Aktualisierung?
 
 Der Wechsel zum neuen Zustellbarkeits-Server, der diese verbesserten Funktionen und höhere Sicherheit bietet, beginnt für gehostete Kunden am 22. Juli (Campaign Managed Services). Alle gehosteten Kunden werden bis Ende August aktualisiert.
 

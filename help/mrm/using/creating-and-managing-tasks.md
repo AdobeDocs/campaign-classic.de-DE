@@ -6,13 +6,12 @@ feature: Resource Management
 audience: campaign
 content-type: reference
 hide: true
-hidefromtoc: true
 topic-tags: tasks--resources-and-budgets
 exl-id: cc1200fa-f6d8-4f41-aed1-d1a7f229447a
-source-git-commit: 942edcf028207eab2ea583949ebc99ab61539ea0
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
-source-wordcount: '3912'
-ht-degree: 100%
+source-wordcount: '3910'
+ht-degree: 99%
 
 ---
 
@@ -42,7 +41,7 @@ Eine Liste der Aufgaben kann über den Tab **[!UICONTROL Kampagnen]** angezeigt 
 
 Hier werden alle Aufgaben des aktuellen Benutzers aufgeführt.
 
-Weitere Informationen hierzu finden Sie unter [Ausführungsstatus einer Aufgabe](#execution-status-of-a-task) und [Fortschrittsstatus einer Aufgabe ](#progress-status-of-a-task).
+Weitere Informationen hierzu finden Sie unter [Ausführungsstatus einer Aufgabe](#execution-status-of-a-task) und [Fortschrittsstatus einer Aufgabe &#x200B;](#progress-status-of-a-task).
 
 ### Aufgaben filtern {#filtering-tasks}
 
@@ -78,7 +77,7 @@ Nach der Erstellung wird die Aufgabe dem Kampagnenkalender und der Aufgabenliste
 
 Geben Sie folgende Parameter an, um sie zu konfigurieren:
 
-* Verantwortlicher und Teilnehmer: siehe [Verantwortlicher und Teilnehmer ](#manager-and-participants).
+* Verantwortlicher und Teilnehmer: siehe [Verantwortlicher und Teilnehmer &#x200B;](#manager-and-participants).
 * Erstellungsplan: Siehe [Ausführungsplan](#execution-schedule).
 * Mittelbindungen: Siehe [Ausgaben und Einnahmen](#expenses-and-revenues).
 
@@ -231,7 +230,7 @@ Verwenden Sie zur Programmierung dieser E-Mail das Feld **[!UICONTROL Erstbenach
 ![](assets/mrm_task_alert_before.png)
 
 * Für Aufgaben in Kampagnen sind Datum und Uhrzeit genau festzulegen.
-* Für Aufgaben in Kampagnenvorlagen wird der Benachrichtigungszeitpunkt in Form des zeitlichen Abstands vom Aufgabenbeginn angegeben (wenn Sie beispielsweise 2T im Feld **[!UICONTROL Erstbenachrichtigung]** eingeben, wird die E-Mail 2 Tage vor Beginn der Aufgabe gesendet).
+* Für Aufgaben in Kampagnenvorlagen wird der Benachrichtigungszeitpunkt in Form des zeitlichen Abstands vom Startdatum der Aufgabe angegeben (wenn Sie beispielsweise 2T im Feld **[!UICONTROL Erstbenachrichtigung]** eingeben, wird die E-Mail 2 Tage vor Beginn der Aufgabe gesendet).
 
 Auch wenn eine Benachrichtigung programmiert wurde, schlägt Adobe Campaign beim Speichern der Aufgabe vor, sofort eine Benachrichtigung zu senden. Die programmierte Benachrichtigung wird auch beim Nutzen dieses Vorschlags gesendet.
 
@@ -282,7 +281,7 @@ Folgende Arten von Aufgaben können geplant werden:
 
 ### Kontrollaufgaben {#control-tasks}
 
-**[!UICONTROL Kontrollaufgaben]** sind mit der Validierung eines Versands verbunden. Diese beinhaltet die Zielgruppen-, Inhalts-, Extraktionsdatei-, Budget- und BAT-Validierung.
+**[!UICONTROL Kontrollaufgaben]** sind mit der Validierung eines Versands verbunden. Diese beinhaltet die Targeting-, Inhalts-, Extraktionsdatei-, Budget- und BAT-Validierung.
 
 ![](assets/s_ncs_user_task_new_control.png)
 
@@ -308,7 +307,7 @@ Aufgaben zur Erstellung einer Marketing-Ressource interagieren mit denen ihnen z
 
 * Die Erarbeitungsplanung einer Ressource und die mit ihr verbundenen Kosten werden über die Aufgabe verwaltet, der sie zugordnet ist.
 * Die Benutzer können wie gewohnt mit der Ressource weiterarbeiten (sie down- und uploaden, sperren und entsperren), ohne dass sich dies auf die Aufgabe auswirkt.
-* Die Validierung und Veröffentlichung der Ressource können über die Aufgabe erfolgen: Wenn die Option **[!UICONTROL Marketing-Ressource veröffentlichen]** aktiv ist, wird die Ressource mit Abschluss der Aufgabe automatisch validiert und veröffentlicht. Wenn die Option nicht aktiv ist, findet keine Interaktion zwischen Aufgabe und Ressource statt: Die Bearbeitung einer von beiden wirkt sich in keiner Weise auf die andere aus.
+* Die Validierung und Veröffentlichung der Ressource können über die Aufgabe erfolgen: Wenn die Option **[!UICONTROL Marketing-Ressource veröffentlichen]** aktiviert ist, wird die Ressource mit Abschluss der Aufgabe automatisch validiert und veröffentlicht. Wenn die Option nicht aktiviert ist, findet keine Interaktion zwischen Aufgabe und Ressource statt: Die Bearbeitung einer von beiden wirkt sich in keiner Weise auf die andere aus.
 
   Sie können eine Reihe miteinander verbundener Aufgaben verwenden, um einen vollständigen Validierungszyklus festzulegen. Überprüfen Sie die Option **[!UICONTROL Marketing-Ressource veröffentlichen]** nur für die letzte Aufgabe: Alle Aufgaben müssen abgeschlossen sein, damit die Ressource veröffentlicht werden kann. Wenn Sie außerdem eine untergeordnete Marketing-Ressourcenaufgabe erstellen, wird die Ressource automatisch in der untergeordneten Aufgabe ausgewählt.
 
@@ -372,9 +371,9 @@ Eine Benachrichtigungsaufgabe kann folgende Status haben:
 
 Bei der Erstellung müssen folgende Elemente der Aufgabe eingegeben werden:
 
-* **[!UICONTROL Zugeordneter Benutzer]**: Es handelt sich um den Benutzer bzw. die Benutzergruppe, die die E-Mail erhält. Wenn die Aufgabe nach dem Versand neu zugeordnet wird, wird die E-Mail nicht mehr an den neu zugeordneten Benutzer versandt (hierzu muss die Aufgabe zurückgesetzt und ihr Beginn angepasst werden).
-* **Beginn der Aufgabe**: Es handelt sich um das Datum, an dem die Benachrichtigungs-E-Mail versandt wird. Dieses Datum muss zum Zeitpunkt der Aufgabenspeicherung zwingend in der Zukunft liegen.
-* **Ende der Aufgabe**: Es handelt sich um das Datum, an dem die Aufgabe den Status **[!UICONTROL Abgeschlossen]** annimmt. Standardmäßig entspricht dieses Datum dem Beginn. Die Angabe einer längeren Dauer ermöglicht es gegebenenfalls, in der Planung die Zeit zu symbolisieren, über die der Benutzer zur Bearbeitung verfügt.
+* **[!UICONTROL Zugeordneter Benutzer]**: Es handelt sich um den Benutzer bzw. die Benutzergruppe, die die E-Mail erhält. Wenn die Aufgabe nach dem Versand neu zugeordnet wird, wird die E-Mail nicht mehr an den neu zugeordneten Benutzer versandt (hierzu muss die Aufgabe zurückgesetzt und ihr Startdatum angepasst werden).
+* **Startdatum der Aufgabe**: Es handelt sich um das Datum, an dem die Benachrichtigungs-E-Mail versandt wird. Dieses Datum muss zum Zeitpunkt der Aufgabenspeicherung zwingend in der Zukunft liegen.
+* **Enddatum der Aufgabe**: Es handelt sich um das Datum, an dem die Aufgabe den Status **[!UICONTROL Abgeschlossen]** annimmt. Standardmäßig entspricht dieses Datum dem Beginn. Die Angabe einer längeren Dauer ermöglicht es gegebenenfalls, in der Planung die Zeit zu symbolisieren, über die der Benutzer zur Bearbeitung verfügt.
 * **[!UICONTROL Beschreibung]**: Der hier eingegebene Text erscheint im Body der Benachrichtigungs-E-Mail.
 
   ![](assets/mrm_task_notif_dashboard_msg.png)
@@ -385,7 +384,7 @@ Sie können der Aufgabe und der Benachrichtigungs-E-Mail einen Anhang hinzufüge
 
 ### Relationen zwischen Aufgaben {#links-between-tasks}
 
-Mit der Schaltfläche **[!UICONTROL Eigenschaften]** in den Aufgaben können Sie die Verknüpfungen zwischen Aufgaben in einer Kampagne definieren. Sie können Aufgaben mithilfe einer Gruppenaufgabe in Unteraufgaben aufteilen (siehe [Gruppierung von Aufgaben ](#linked-tasks)) oder Abhängigkeiten zwischen den Aufgaben definieren (siehe [Abhängigkeit von Aufgaben](#grouping-tasks)).
+Mit der Schaltfläche **[!UICONTROL Eigenschaften]** in den Aufgaben können Sie die Verknüpfungen zwischen Aufgaben in einer Kampagne definieren. Sie können Aufgaben mithilfe einer Gruppenaufgabe in Unteraufgaben aufteilen (siehe [Gruppierung von Aufgaben &#x200B;](#linked-tasks)) oder Abhängigkeiten zwischen den Aufgaben definieren (siehe [Abhängigkeit von Aufgaben](#grouping-tasks)).
 
 #### Gruppierung von Aufgaben {#linked-tasks}
 
@@ -409,9 +408,9 @@ Die Abhängigkeit zwischen den Aufgaben wird mithilfe von Pfeilen im Kampagnen-D
 
 ![](assets/s_ncs_user_task_dependencies_from_board.png)
 
-Bei gruppierten Aufgaben weist Adobe Campaign der untergeordneten Aufgabe automatisch das Enddatum der übergeordneten Aufgabe als Startdatum zu. Wenn beispielsweise eine Aufgabe **Einladung erstellen** am 15. Oktober um 15:30 Uhr endet, beginnt die untergeordnete Aufgabe **Einladung per E-Mail senden** am 15. Oktober um 15:30 Uhr.
+Bei gruppierten Aufgaben weist Adobe Campaign der untergeordneten Aufgabe automatisch das Enddatum der übergeordneten Aufgabe als Startdatum zu. Wenn beispielsweise eine Aufgabe **Einladung erstellen** am 15. Oktober um :30PM endet, beginnt die untergeordnete Aufgabe **Einladungs-E-Mail senden** am 15. Oktober um 3 :30PM.
 
-Wenn Sie das Ende einer übergeordneten Aufgabe verschieben, werden bestimmte ihrer untergeordneten Aufgaben dadurch ebenfalls verschoben: Es handelt sich hierbei um untergeordnete Aufgaben mit dem Status **[!UICONTROL Geplant]**, deren Beginndatum vor dem neuen Enddatum der übergeordneten Aufgabe liegt. Die Dauer der untergeordneten Aufgabe bleibt gleich. Wenn das Beginndatum einer untergeordneten Aufgabe nach dem neuen Enddatum der übergeordneten Aufabe liegt, wird die untergeordnete Aufgabe nicht verschoben.
+Wenn Sie das Ende einer übergeordneten Aufgabe verschieben, werden bestimmte ihrer untergeordneten Aufgaben dadurch ebenfalls verschoben: Es handelt sich hierbei um untergeordnete Aufgaben mit dem Status **[!UICONTROL Geplant]**, deren Startdatum vor dem neuen Enddatum der übergeordneten Aufgabe liegt. Die Dauer der untergeordneten Aufgabe bleibt gleich. Wenn das Startdatum einer untergeordneten Aufgabe nach dem neuen Enddatum der übergeordneten Aufgabe liegt, wird die untergeordnete Aufgabe nicht verschoben.
 
 
 
@@ -429,11 +428,11 @@ Der Status einer Aufgabe kann in der Aufgabenübersicht eingesehen werden. Er wi
 
 Eine Aufgabe kann folgende Status haben: **[!UICONTROL Geplant]**, **[!UICONTROL Gestartet]**, **[!UICONTROL Abgeschlossen]**, **[!UICONTROL Abgebrochen]**, **[!UICONTROL Validierung ausstehend]** und **[!UICONTROL Abgelehnt]**.
 
-* Bei ihrer Erstellung ist eine Aufgabe **[!UICONTROL Geplant]**, sofern ihr Beginn in der Zukunft liegt. Nach der Erstellung behält sie diesen Status, bis der Zeitpunkt ihres Beginns erreicht ist.
+* Bei ihrer Erstellung ist eine Aufgabe **[!UICONTROL Geplant]**, sofern ihr Startdatum in der Zukunft liegt. Nach der Erstellung behält sie diesen Status, bis der Zeitpunkt ihres Beginns erreicht ist.
 * Nach dem Start ist die Aufgabe **[!UICONTROL In Bearbeitung]**. Wenn die verantwortliche Person die Aufgabe schließt, ändert sie sich zu **[!UICONTROL Abgeschlossen]**.
 * Wurde eine Prüferin oder ein Prüfer bestimmt, erhält die Aufgabe den Status **[!UICONTROL Validierung ausstehend]**, sobald sie von der verantwortlichen Person geschlossen wird und bis sie durch die Prüferin bzw. den Prüfer validiert wird. Wenn die Prüferin bzw. der Prüfer die Aufgabe ablehnt, hat sie den Status **[!UICONTROL Abgelehnt]**.
 * Eine Aufgabe kann von ihrem Verantwortlichen über das Aufgaben-Dashboard oder die **[!UICONTROL Aufgabenübersicht]** durch Klick auf die Schaltfläche **[!UICONTROL Abbrechen]** abgebrochen werden.
-* Geben Sie zur Aufgabenplanung einen Beginn an, der in der Zukunft liegt. Daraufhin können Sie den an der Aufgabe beteiligten Adobe Campaign-Benutzern eine Erstbenachrichtigung schicken. Siehe [Vollständiger Lebenszyklus einer Aufgabe](#complete-task-life-cycle).
+* Geben Sie zur Aufgabenplanung ein Startdatum an, das in der Zukunft liegt. Daraufhin können Sie den an der Aufgabe beteiligten Adobe Campaign-Benutzern eine Erstbenachrichtigung schicken. Siehe [Vollständiger Lebenszyklus einer Aufgabe](#complete-task-life-cycle).
 
 >[!NOTE]
 >
@@ -447,7 +446,7 @@ Folgende Fortschrittstatus geben neben dem Ausführungsstatus Auskunft über den
 
 Sie können die Liste der Aufgaben nach Erfüllungs- oder Fortschrittstatus filtern.
 
-Weitere Informationen hierzu finden Sie unter [Zugriff auf Aufgaben ](#accessing-tasks).
+Weitere Informationen hierzu finden Sie unter [Zugriff auf Aufgaben &#x200B;](#accessing-tasks).
 
 ### Vollständiger Lebenszyklus einer Aufgabe {#complete-task-life-cycle}
 
@@ -455,7 +454,7 @@ Im Folgenden werden die Etappen des vollständigen Zyklus einer Aufgabe dargeste
 
 1. Die verantwortliche Person erstellt die Aufgabe und gibt die verschiedenen Felder ein. Weitere Informationen hierzu finden Sie unter [Neue Aufgabe erstellen](#creating-a-new-task).
 
-   Bei Erstellung und Änderung einer **in der Zukunft geplanten** Aufgabe (das Beginndatum der Aufgabe darf noch nicht erreicht sein) können der Verantwortliche sowie alle Beteiligten per E-Mail über die Planung einer neuen Aufgabe informiert werden.
+   Bei Erstellung und Änderung einer **in der Zukunft geplanten** Aufgabe (das Startdatum der Aufgabe darf noch nicht erreicht sein) können der Verantwortliche sowie alle Beteiligten per E-Mail über die Planung einer neuen Aufgabe informiert werden.
 
    ![](assets/s_ncs_user_task_planed_send_message.png)
 
@@ -463,7 +462,7 @@ Im Folgenden werden die Etappen des vollständigen Zyklus einer Aufgabe dargeste
 
    Eine in der Zukunft geplante Aufgabe erhält bei ihrer Erstellung den Status **[!UICONTROL Geplant]**.
 
-1. Wenn der Zeitpunkt des Aufgabenbeginns erreicht ist, werden die verantwortliche Person und die Beteiligten mit einer E-Mail hiervon in Kenntnis gesetzt.  Der Status ändert sich in **[!UICONTROL In Bearbeitung]**.
+1. Wenn das Startdatum der Aufgabe erreicht ist, werden die verantwortliche Person und die Beteiligten mit einer E-Mail hiervon in Kenntnis gesetzt.  Der Status ändert sich in **[!UICONTROL In Bearbeitung]**.
 1. Wenn ein Beteiligter seinen Teil der Aufgabe abgeschlossen hat, kann er die Aufgabe auf zweierlei Weisen erfüllen:
 
    * über die Benachrichtigungs-E-Mail;
@@ -471,7 +470,7 @@ Im Folgenden werden die Etappen des vollständigen Zyklus einer Aufgabe dargeste
 
      ![](assets/s_ncs_user_task_start_rea.png)
 
-1. Jedes Mal, wenn eine Teilnehmerin bzw. ein Teilnehmer einen Vorgang genehmigt, wird der Fortschrittsstatus der Aufgabe aktualisiert.
+1. Nach jeder neuen Validierung wird der Fortschritt der Aufgabe automatisch aktualisiert.
 
    ![](assets/s_ncs_user_task_percentage_done_op.png)
 

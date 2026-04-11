@@ -4,10 +4,9 @@ title: Erstellen von Indikatoren
 description: Erstellen von Indikatoren
 feature: Reporting, Monitoring
 hide: true
-hidefromtoc: true
 exl-id: e4806bb8-de9d-47e4-8b37-d6c0565b7f5a
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '748'
 ht-degree: 100%
 
@@ -101,7 +100,7 @@ Gehen Sie hierzu wie folgt vor:
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**.
 1. Wählen Sie den Kennzahltyp und die anzuwendende Formel aus. Im Beispiel wird die Anzahl an Frauen unter den Empfängern gezählt.
 
-   Die Kennzahl basiert auf dem Faktenschema und verwendet die Funktion **[!UICONTROL Zählung]**.
+   Die Kennzahl basiert auf dem Faktenschema und verwendet den Operator **[!UICONTROL Zählung]**.
 
    ![](assets/s_advuser_cube_wz_11.png)
 

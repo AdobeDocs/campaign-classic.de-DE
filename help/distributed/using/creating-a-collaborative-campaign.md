@@ -4,10 +4,9 @@ title: Erstellen einer partizipativen Kampagne
 description: Erfahren Sie, wie Sie eine partizipative Kampagne erstellen
 feature: Distributed Marketing
 hide: true
-hidefromtoc: true
 exl-id: 17313fe5-ad42-45ca-a35a-1e7aa89380ef
-source-git-commit: 36fe54cf6d4d762d96205bd637311a426c741427
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '990'
 ht-degree: 100%
 

@@ -6,9 +6,8 @@ language: en
 role: User
 feature: Approvals, Campaigns
 hide: true
-hidefromtoc: true
 exl-id: 8cbb2445-f5e4-4a25-ba7e-56e39ca9d3ce
-source-git-commit: df014d3f3029a61176e5117e27f3d2e8228fc407
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '2834'
 ht-degree: 78%
@@ -243,7 +242,7 @@ Die Einstellungen können jedoch für jede Kampagne und jeden Versand überschri
 
 Um die Validierungseinstellungen einer Kampagne zu verändern, klicken Sie auf den Tab **[!UICONTROL Bearbeiten > Eigenschaften]**, öffnen Sie den Link **[!UICONTROL Erweitere Kampagnenparameter...]** und gehen Sie in den Untertab **[!UICONTROL Validierungen]**.
 
-Sie können die zu validierenden Prozesse auswählen und die Auswahl aufheben, damit [!DNL Adobe Campaign] für die Validierung verantwortlichen Benutzer bestimmt werden können. Es kann sich hierbei um einzelne Benutzer, Benutzergruppen oder eine Liste von Benutzern handeln.
+Sie können die zu validierenden Prozesse auswählen und die Auswahl aufheben, damit [!DNL Adobe Campaign] für die Validierung verantwortlichen Benutzer bestimmt werden können. Dabei kann es sich um einzelne Benutzer, eine Benutzergruppe oder eine Benutzerliste handeln.
 
 Um eine Benutzerliste zu erstellen, klicken Sie auf den Link **[!UICONTROL Bearbeiten...]** rechts von dem Feld, in dem der erste Validierungsverantwortliche angegeben wird. Fügen Sie nun so viele zusätzliche Benutzer wie nötig hinzu, wie im folgenden Beispiel:
 
@@ -367,7 +366,7 @@ Mit dieser Option können Sie eine externe Person festlegen, die für die Genehm
 
 ### Validieren einer Extraktionsdatei {#approving-an-extraction-file}
 
-Bei Offline-Sendungen generiert [!DNL Adobe Campaign] eine Extraktionsdatei, die je nach Einrichtung an den Router gesendet wird. Der Inhalt der Datei hängt von der verwendeten Exportvorlage ab.
+Bei Offline-Sendungen generiert [!DNL Adobe Campaign] eine Extraktionsdatei, die je nach Einrichtung an den Router gesendet wird. Ihr Inhalt hängt von der verwendeten Exportvorlage ab.
 
 Sobald Inhalt, Zielgruppenbestimmung und Budget validiert sind, erhält der Versand den Status **[!UICONTROL Extraktion ausstehend]**, bis der Extraktions-Workflow für Kampagnen gestartet wird.
 

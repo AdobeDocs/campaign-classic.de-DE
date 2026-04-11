@@ -4,12 +4,11 @@ title: Technote – Adobe Campaign – Apache-Sicherheits-Update
 description: Adobe Campaign – Sicherheits-Update der Apache-Version
 feature: Technote, Upgrade
 hide: true
-hidefromtoc: true
 exl-id: 3d2f5d1d-4b31-4cc6-b6fb-13589856e00c
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '529'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -20,13 +19,13 @@ ht-degree: 100%
 
 Adobe Campaign arbeitet mit Tools von Drittanbietern zusammen. Diese Kompatibilität wird regelmäßig aktualisiert, damit Sie nur unterstützte Versionen implementieren und von den neuesten Korrekturen und Verbesserungen profitieren können.
 
-Adobe Campaign nutzt Apache Tomcat, das über HTTP als Einstiegspunkt im Programm-Server fungiert und mit dem Apache-Webserver integriert ist. Die Apache Software Foundation hat Apache HTTP Server 2.4.53 veröffentlicht. Diese Version behebt Schwachstellen, die es einem Angreifer ermöglichen könnte, die Kontrolle über ein System zu übernehmen. Weitere Informationen finden Sie unter [Apache 2.4.53 – Ankündigung](https://downloads.apache.org/httpd/Announcement2.4.html){target="_blank"}.
+Adobe Campaign nutzt Apache Tomcat, das über HTTP als Einstiegspunkt im Programm-Server fungiert und mit dem Apache-Webserver integriert ist. Die Apache Software Foundation hat Apache HTTP Server 2.4.53 veröffentlicht. Diese Version behebt Schwachstellen, die es einem Angreifer ermöglichen könnte, die Kontrolle über ein System zu übernehmen. Weitere Informationen finden Sie unter [Apache 2.4.53 - Ankündigung](https://downloads.apache.org/httpd/Announcement2.4.html){target="_blank"}.
 
 Das Adobe Campaign-Team wird bis zum **15. Juni 2022** ein Sicherheits-Upgrade der Apache-Version durchführen, um diese Apache-Sicherheitslücke zu schließen und Ihre Instanzumgebung sicherer zu machen. Dieses Upgrade gilt für alle Kunden von Campaign Classic v7 Managed Services, Campaign v8 und Campaign Standard, die mit einer anfälligen Version von Apache HTTP Server arbeiten. Falls Sie betroffen sind, hat sich Adobe bereits mit Ihnen in Verbindung gesetzt, um Sie über dieses Upgrade zu informieren.
 
 Dieses Upgrade wird voraussichtlich außerhalb Ihrer normalen Geschäftszeiten automatisch ausgeführt, damit Sie den Campaign-Service ohne Unterbrechung weiter verwenden können.
 
-Zuerst werden Ihre Nicht-Produktionsinstanzen von Adobe aktualisiert, danach werden Ihre Produktionsinstanzen aktualisiert. Da es sich um einen automatischen Aktualisierungsprozess durch Adobe handelt, ist von Ihrer Seite aus keine Aktion erforderlich. Sollten dennoch Probleme auftreten, wenden Sie sich bitte an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/de?support-solution=Campaign&amp;lang=de#support).
+Zuerst werden Ihre Nicht-Produktionsinstanzen von Adobe aktualisiert, danach werden Ihre Produktionsinstanzen aktualisiert. Da es sich um einen automatischen Aktualisierungsprozess durch Adobe handelt, ist von Ihrer Seite aus keine Aktion erforderlich. Sollten dennoch Probleme auftreten, wenden Sie sich bitte an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/de?support-solution=Campaign&lang=de#support).
 
 
 >[!NOTE]
@@ -65,4 +64,4 @@ Zuerst werden Ihre Nicht-Produktionsinstanzen von Adobe aktualisiert, danach wer
   Da es sich um die Behebung einer Schwachstelle handelt, empfehlen wir dringend, sich an den vorgegebenen Zeitplan zu halten.
 
 
-Für alle anderen Fragen wenden Sie sich bitte an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/de?support-solution=Campaign&amp;lang=de#support).
+Für alle anderen Fragen wenden Sie sich bitte an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/de?support-solution=Campaign&lang=de#support).
