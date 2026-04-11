@@ -4,12 +4,11 @@ title: Abfrage zu Versandinformationen
 description: Erfahren Sie, wie Sie Versandinformationen abfragen können
 feature: Query Editor, Workflows
 hide: true
-hidefromtoc: true
 exl-id: b699b064-1287-41c9-8d94-1c1aa2c145ab
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
-source-wordcount: '1552'
-ht-degree: 100%
+source-wordcount: '1551'
+ht-degree: 99%
 
 ---
 
@@ -23,7 +22,7 @@ In diesem Beispiel wird die Anzahl der Klicks von Empfängern in einem bestimmte
 
 * Welche Tabelle soll ausgewählt werden?
 
-  Die Trackinglogs der Empfänger (**[!UICONTROL nms:trackingLogRcp]**)
+  Die Trackingtabelle des Empfängerprotokolls (**[!UICONTROL nms:trackingLogRcp]**)
 
 * Felder, die als Ausgabespalten verwendet werden sollen?
 
@@ -35,7 +34,7 @@ In diesem Beispiel wird die Anzahl der Klicks von Empfängern in einem bestimmte
 
 Gehen Sie für dieses Beispiel wie folgt vor:
 
-1. Öffnen Sie das **[!UICONTROL generische Abfragetool]** und wählen Sie das Schema **[!UICONTROL Trackinglogs der Empfänger]** aus.
+1. Öffnen Sie den **[!UICONTROL generischen Abfrage-Editor]** und wählen Sie das Schema **[!UICONTROL Trackinglogs der Empfänger]** aus.
 
    ![](assets/query_editor_tracklog_05.png)
 
@@ -205,7 +204,7 @@ Die folgenden Schritte zeigen die Konfiguration der **[!UICONTROL Aufspaltung]**
 
 1. Konfigurieren Sie im Tab **[!UICONTROL Teilmengen]** die erste Verzweigung der Aufspaltung. Nennen Sie diesen Zweig beispielsweise &quot;**Haben geklickt**&quot;.
 1. Wählen Sie die Option **[!UICONTROL Filterbedingung für die Eingangspopulation hinzufügen]**. Klicken Sie auf **[!UICONTROL Bearbeiten]**.
-1. Doppelklicken Sie im Fenster **[!UICONTROL Zielgruppen- und Filterdimension]** auf den Filter **[!UICONTROL Versandempfänger]**.
+1. Doppelklicken Sie im Fenster **[!UICONTROL Zielgruppenbestimmungs- und Filterdimension]** auf den Filter **[!UICONTROL Versandempfänger]**.
 
    ![](assets/query_editor_ex_05.png)
 
@@ -226,7 +225,7 @@ Die folgenden Schritte zeigen die Konfiguration der **[!UICONTROL Aufspaltung]**
 
    ![](assets/query_editor_ex_07.png)
 
-1. Doppelklicken Sie im Fenster **[!UICONTROL Zielgruppen- und Filterdimension]** auf den Filter **[!UICONTROL Versandempfänger]**.
+1. Doppelklicken Sie im Fenster **[!UICONTROL Zielgruppenbestimmungs- und Filterdimension]** auf den Filter **[!UICONTROL Versandempfänger]**.
 1. Wählen Sie im Fenster **[!UICONTROL Zielelement]** das Verhalten **[!UICONTROL Empfänger, die nicht geklickt haben (E-Mail)]**. Wählen Sie die Option **[!UICONTROL Von der Transition festgelegter Versand]**, wie für den letzten Zweig angezeigt.
 
    Die Konfiguration der **[!UICONTROL Aufspaltung]** ist abgeschlossen.

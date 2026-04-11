@@ -5,10 +5,9 @@ description: Best Practices für Cubes
 feature: Reporting, Monitoring
 badge: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 hide: true
-hidefromtoc: true
 exl-id: 5f22fa2c-b648-4126-9a24-1798adfa8f34
-source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
-workflow-type: ht
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+workflow-type: tm+mt
 source-wordcount: '1580'
 ht-degree: 100%
 
@@ -169,7 +168,7 @@ Gehen Sie wie folgt vor, um eine neue Kennzahl zu definieren:
 
    ![](assets/s_advuser_cube_create_a_measure.png)
 
-1. Wählen Sie je nach gewählter Funktion den Ausdruck aus, auf den sich die Berechnung bezieht.
+1. Wählen Sie je nach gewählter Funktion den Operator aus, auf den sich die Berechnung bezieht.
 
    Über die Schaltfläche **[!UICONTROL Erweiterte Auswahl]** können komplexe Formeln erstellt werden. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign).
 

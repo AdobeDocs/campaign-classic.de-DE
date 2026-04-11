@@ -4,12 +4,11 @@ title: Abfrage mit einer Viele-zu-viele-Beziehung
 description: Erfahren Sie, wie Sie mit einer Viele-zu-viele-Beziehung Abfragen durchführen können
 feature: Query Editor, Workflows
 hide: true
-hidefromtoc: true
 exl-id: e1d40ba1-2493-45c1-bd54-af9cb332028d
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 100%
+source-wordcount: '473'
+ht-degree: 96%
 
 ---
 
@@ -35,7 +34,7 @@ Außerdem wird die Konfiguration eines von einem Sammlungselement (orangefarbene
 
 Gehen Sie wie folgt vor:
 
-1. Öffnen Sie das generische Abfragetool und wählen Sie die Empfängertabelle (**[!UICONTROL nms:recipient]**).
+1. Öffnen Sie den generischen Abfrage-Editor und wählen Sie die Empfängertabellen-**[!UICONTROL (nms:recipient)]**.
 1. Wählen Sie im Fenster **[!UICONTROL Zu extrahierende Daten]** die Felder **[!UICONTROL Primärschlüssel]**, **[!UICONTROL Vorname]**, **[!UICONTROL Nachname]** und **[!UICONTROL E-Mail]**.
 
    ![](assets/query_editor_nveau_33.png)

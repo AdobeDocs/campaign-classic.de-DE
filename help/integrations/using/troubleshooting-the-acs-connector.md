@@ -7,12 +7,11 @@ audience: integrations
 content-type: reference
 topic-tags: acs-connector
 hide: true
-hidefromtoc: true
 exl-id: 4693dca1-ee55-43f0-b3dc-62a5b67a8058
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
-source-wordcount: '903'
-ht-degree: 100%
+source-wordcount: '900'
+ht-degree: 93%
 
 ---
 
@@ -24,7 +23,7 @@ Je nach der Art der Implementierung können verschiedene Probleme auftreten.
 
 * **Was sind die Unterschiede in der Benutzeroberfläche zwischen Campaign Standard und Campaign v7?**
 
-  Campaign Standard und Campaign v7 sind in ihrer Funktion sehr ähnlich. Obwohl die meisten Konzepte dieselben sind, können in manchen Fällen leicht abweichende Begriffe verwendet werden. Hier sind einige der Begriffe, die im Zusammenhang mit dem ACS Connector anders sein können:
+  Campaign Standard und Campaign v7 sind in ihrer Funktion sehr ähnlich. Obwohl die meisten Konzepte dieselben sind, können in manchen Fällen leicht abweichende Begriffe verwendet werden. Hier sind einige der Begriffe, die im Zusammenhang mit dem ACS-Connector anders sein können:
 
 <table> 
  <thead> 
@@ -40,7 +39,7 @@ Je nach der Art der Implementierung können verschiedene Probleme auftreten.
   </tr> 
   <tr> 
    <td> Liste<br /> </td> 
-   <td> audience<br /> </td> 
+   <td> Zielgruppe<br /> </td> 
   </tr> 
   <tr> 
    <td> Kampagnen-Workflows, Zielgruppen-Workflows<br /> </td> 
@@ -75,17 +74,17 @@ Je nach der Art der Implementierung können verschiedene Probleme auftreten.
 
 * **Ich kann die Profilfelder nicht finden, mit denen ich meine Abfrage in Campaign Standard erstelle.**
 
-  Standardmäßig werden 20 Felder der Tabelle nms:recipient mit Campaign Standard synchronisiert. Sehen Sie sich dazu die detaillierte Liste synchronisierter Feldern an. Jedes zusätzliche Feld, das Sie in Campaign Standard abrufen möchten, muss von Ihrem Consultant zugeordnet und konfiguriert werden.
+  Standardmäßig werden 20 Felder aus der nms:recipient-Tabelle mit Campaign Standard synchronisiert. Sehen Sie sich dazu die detaillierte Liste synchronisierter Feldern an. Jedes zusätzliche Feld, das Sie in Campaign Standard abrufen möchten, muss von Ihrem Consultant zugeordnet und konfiguriert werden.
 
   Um zu überprüfen, ob das gewünschte Feld verfügbar ist, sehen Sie sich die Definition der Profilressource in **[!UICONTROL Administration > Entwicklung > Prüfung > Datenschemata]** an.
 
-  Abgesehen davon werden keine Daten standardmäßig nach Campaign Standard synchronisiert, die mit Empfängern verknüpft und in nms:recipients-Empfängertabellen gespeichert sind.
+  Außerdem werden alle an Empfänger angehängten und in mit nms:recipients verknüpften Tabellen gespeicherten Daten nicht standardmäßig mit Campaign Standard synchronisiert.
 
   Um dennoch verknüpfte Daten verwenden zu können, nehmen Sie die Zielgruppenbestimmung in Campaign v7 vor und fügen Sie zusätzliche Daten wie in Abschnitt  [Synchronisieren von Audiences](../../integrations/using/synchronizing-audiences.md) beschrieben hinzu. Andernfalls können Sie sich auch an Ihren Berater wenden, um Anpassungsmöglichkeiten zu prüfen.
 
-* **Ich verwende in Campaign v7 eine andere Profildimension als die Standardtabelle nms:recipient. Wie kann ich diese Profildimension mit Campaign Standard synchronisieren?**
+* **Ich verwende in Campaign v7 eine andere Profildimension als :recipient standardmäßige nms. Wie kann ich diese mit Campaign Standard synchronisieren?**
 
-  Campaign Standard verwendet eine eindeutige Zielgruppen-Ressource namens **Profile**. Die einfache Implementierung der ACS Connector-Funktion beinhaltet ein standardmäßiges Mapping zwischen Campaign v7-Empfängern und Campaign Standard-Profilen.
+  Campaign Standard verwendet eine eindeutige Zielgruppenbestimmungs-Ressource namens **Profile**. Die einfache Implementierung der ACS Connector-Funktion beinhaltet ein standardmäßiges Mapping zwischen Campaign v7-Empfängern und Campaign Standard-Profilen.
 
   Wenn Sie in Campaign v7 eine andere Profildimension oder mehrere Profildimensionen verwenden, müssen alle mit Campaign Standard-Profilen gemappt werden. Wenden Sie sich bitte in dieser Angelegenheit an Ihren Consultant.
 
@@ -93,7 +92,7 @@ Je nach der Art der Implementierung können verschiedene Probleme auftreten.
 
   Zielgruppen finden Sie in Campaign Standard im Menü **[!UICONTROL Zielgruppen]**. Ihr Titel wird im Campaign v7-Workflow in der Aktivität **[!UICONTROL Listen-Update]** spezifiziert. Zielgruppen basieren auf dem Ordner-Mapping, das während der Implementierung definiert wird.
 
-  Zunächst sollten Sie überprüfen, ob der Workflow ohne Fehler abgeschlossen wurde. Wenn bei der Aktivität **[!UICONTROL Listen-Update]** ein Fehler auftritt, ist möglicherweise die Synchronisation mit Campaign Standard fehlgeschlagen. Um zu sehen, wo der Fehler liegt, gehen Sie zu **[!UICONTROL Administration]** > **[!UICONTROL ACS Connector]** > **[!UICONTROL Prozesse]** > **[!UICONTROL Prüfung]**. Dieser Ordner enthält Synchronisations-Workflows, die von der Aktivität **[!UICONTROL Listen-Update]** ausgelöst wurden.
+  Zunächst sollten Sie überprüfen, ob der Workflow ohne Fehler abgeschlossen wurde. Wenn bei der Aktivität **[!UICONTROL Listen-Update]** ein Fehler auftritt, ist möglicherweise die Synchronisation mit Campaign Standard fehlgeschlagen. Um zu sehen, wo der Fehler liegt, gehen Sie zu **[!UICONTROL Administration]** > **[!UICONTROL ACS-Connector]** > **[!UICONTROL Prozesse]** > **[!UICONTROL Prüfung]**. Dieser Ordner enthält Synchronisations-Workflows, die von der Aktivität **[!UICONTROL Listen-Update]** ausgelöst wurden.
 
   Vergewissern Sie sich außerdem, dass die Option **[!UICONTROL In ACS freigeben]** in der Aktivität **[!UICONTROL Listen-Update]** mit einem Häkchen versehen ist und dass der Workflow korrekt ausgeführt wurde.
 
@@ -110,7 +109,7 @@ Je nach der Art der Implementierung können verschiedene Probleme auftreten.
 
 * **Beim Mapping von Ordnern zwischen Campaign v7 und Campaign Standard ist keine Sicherheitsgruppe verfügbar.**
 
-  Synchronisieren Sie zunächst Ihre Sicherheitsgruppen in **[!UICONTROL Administration > ACS Connector > Berechtigungs-Management > Sicherheitsgruppen]**. Damit werden die in Campaign Standard verfügbaren Sicherheitsgruppen überprüft. Danach stehen die Sicherheitsgruppen beim Konfigurieren des Ordner-Mappings zur Verfügung.
+  Synchronisieren Sie zunächst Ihre Sicherheitsgruppen in **[!UICONTROL Administration > ACS-Connector > Berechtigungs-Management > Sicherheitsgruppen]**. Damit werden die in Campaign Standard verfügbaren Sicherheitsgruppen überprüft. Danach stehen die Sicherheitsgruppen beim Konfigurieren des Ordner-Mappings zur Verfügung.
 
 * **Ich kann in Campaign Standard weder ein Profil noch eine Zielgruppe oder Landingpage bearbeiten. Was bedeutet das?**
 
