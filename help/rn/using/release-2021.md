@@ -188,7 +188,7 @@ Weiterführende Informationen finden Sie in der [Campaign-Kompatibilitätsmatrix
 * Debian 8 wird jetzt nicht mehr unterstützt.
 * Nach der Einstellung von Oracle CRM in Version 20.3 wurde das zugehörige externe Konto aus der Benutzeroberfläche entfernt.
 
-Weitere Informationen finden Sie auf der Seite [Eingestellte und entfernte Funktionen ](../../rn/using/deprecated-features.md).
+Weitere Informationen finden Sie auf der Seite [Eingestellte und entfernte Funktionen &#x200B;](../../rn/using/deprecated-features.md).
 
 **Verbesserungen**
 
@@ -258,7 +258,7 @@ Die folgenden Systeme werden jetzt von Campaign unterstützt:
 
 Der Bericht zum **technischen Zustellbarkeits-Monitoring** wird jetzt nicht mehr unterstützt.
 
-Weitere Informationen finden Sie auf der Seite [Eingestellte und entfernte Funktionen ](../../rn/using/deprecated-features.md).
+Weitere Informationen finden Sie auf der Seite [Eingestellte und entfernte Funktionen &#x200B;](../../rn/using/deprecated-features.md).
 
 **Verbesserungen**
 
