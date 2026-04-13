@@ -5,7 +5,7 @@ description: Erfahren Sie mehr über die Workflow-Aktivität "Wiederkehrender Ve
 feature: Workflows
 hide: true
 exl-id: efd2cdfb-2e5f-4672-8be8-a424481b11ed
-source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '290'
 ht-degree: 100%
@@ -54,6 +54,6 @@ Wenn Sie die Ausführung eines wiederkehrenden Versands stoppen möchten, sollte
 
 In diesem Video wird das Konfigurieren eines wiederkehrenden Versands und einer Planungsaktivität erläutert.
 
->[!VIDEO](https://video.tv.adobe.com/v/30201?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25040?quality=12)
 
 Weitere Anleitungsvideos zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).

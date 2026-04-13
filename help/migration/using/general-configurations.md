@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: configuration
 hide: true
 exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
-source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '2571'
 ht-degree: 1%
@@ -21,8 +21,8 @@ In diesem Abschnitt wird die Konfiguration beschrieben, die in Adobe Campaign v7
 
 Achten Sie außerdem auf Folgendes:
 
-* Wenn Sie von Version 5.11 migrieren, müssen Sie auch die in [&#x200B; Abschnitt beschriebene Konfiguration &#x200B;](../../migration/using/configuring-your-platform.md#specific-configurations-in-v5-11).
-* Wenn Sie von v6.02 migrieren, müssen Sie auch die Konfiguration abschließen, die in [diesem Abschnitt) beschrieben &#x200B;](../../migration/using/configuring-your-platform.md#specific-configurations-in-v6-02).
+* Wenn Sie von Version 5.11 migrieren, müssen Sie auch die in [ Abschnitt beschriebene Konfiguration ](../../migration/using/configuring-your-platform.md#specific-configurations-in-v5-11).
+* Wenn Sie von v6.02 migrieren, müssen Sie auch die Konfiguration abschließen, die in [diesem Abschnitt) beschrieben ](../../migration/using/configuring-your-platform.md#specific-configurations-in-v6-02).
 
 ## Zeitzonen {#time-zones}
 

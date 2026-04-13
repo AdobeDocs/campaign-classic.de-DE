@@ -5,7 +5,7 @@ description: Benötigen Sie Unterstützung für Campaign Classic? Hier sind Sie 
 feature: Troubleshooting
 hide: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 100%
@@ -131,7 +131,7 @@ Das neue Ticket-System ist über die [Adobe Admin Console](https://adminconsole.
 
 ### Fragen an Experten
 
-Treten Sie der Campaign Classic-Community bei: Suchen Sie nach Antworten in vorhandenen Fragen oder stellen Sie Ihre Frage der Community. [Reden Sie mit](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=de){_blank}.
+Treten Sie der Campaign Classic-Community bei: Suchen Sie nach Antworten in vorhandenen Fragen oder stellen Sie Ihre Frage der Community. [Reden Sie mit](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){_blank}.
 
 ### Aufrufen des Campaign-Download-Centers
 

@@ -5,7 +5,7 @@ description: Erfahren Sie mehr über die Workflow-Aktivität "Versand".
 feature: Workflows, Channels Activity
 hide: true
 exl-id: 72fbdd1d-a105-4e9f-9e17-2e9d62d2bb80
-source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '1039'
 ht-degree: 96%
@@ -34,7 +34,7 @@ Die Aktivität **Versand** wird je nach Kontext zur Konfiguration oder zum Start
 
      ![](assets/specified_transition_option_exemple.png)
 
-   * Wählen Sie den betreffenden Versand direkt aus. Wählen Sie in diesem Fall einen zuvor erstellten Versand aus der Dropdown-Liste des Felds **[!UICONTROL Versand]** aus.**&#x200B;**
+   * Wählen Sie den betreffenden Versand direkt aus. Wählen Sie in diesem Fall einen zuvor erstellten Versand aus der Dropdown-Liste des Felds **[!UICONTROL Versand]** aus.****
 
      Standardmäßig enthält die Liste die im Ordner **Sendungen** gespeicherten Kommunikationen, die noch nicht abgeschlossen sind. Klicken Sie auf das Symbol **[!UICONTROL Verknüpftes Element auswählen]**, um auf andere Ordner zugreifen zu können.
 
@@ -50,7 +50,7 @@ Die Aktivität **Versand** wird je nach Kontext zur Konfiguration oder zum Start
 
      ![](assets/diffusion_edit_3.png)
 
-   * Erstellen Sie einen neuen Versand. Wählen Sie die gewünschte Versandvorlage aus.**&#x200B;**
+   * Erstellen Sie einen neuen Versand. Wählen Sie die gewünschte Versandvorlage aus.****
 
      ![](assets/diffusion_edit_4.png)
 

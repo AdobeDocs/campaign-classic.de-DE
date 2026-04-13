@@ -7,7 +7,7 @@ feature: Personalization, Multilingual Messages
 role: User
 hide: true
 exl-id: 12595ee4-6a52-4e06-b80d-85fe633a5a11
-source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 100%
@@ -112,6 +112,6 @@ Im folgenden Beispiel erfahren Sie, wie Sie eine mehrsprachige E-Mail erstellen.
 
 Erfahren Sie, wie Sie einem Versand bedingte Inhalte hinzufügen können, beispielsweise einen mehrsprachigen Newsletter.
 
->[!VIDEO](https://video.tv.adobe.com/v/30082?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/24926?quality=12)
 
 Weitere Anleitungsvideos zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).

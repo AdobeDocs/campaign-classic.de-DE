@@ -5,7 +5,7 @@ description: Erfahren Sie, wie Sie Versandinformationen abfragen können
 feature: Query Editor, Workflows
 hide: true
 exl-id: b699b064-1287-41c9-8d94-1c1aa2c145ab
-source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '1551'
 ht-degree: 99%
@@ -58,7 +58,7 @@ Gehen Sie für dieses Beispiel wie folgt vor:
 
      ![](assets/query_editor_nveau_19.png)
 
-1. Wählen Sie das andere Feld aus, das in der Ausgabespalte angezeigt werden soll. Öffnen Sie in der Spalte **[!UICONTROL Verfügbare Felder]** den Knoten **[!UICONTROL Empfänger]** und wählen Sie **[!UICONTROL E-Mail]**. Dies führt zur Zuordnung eines jeden Trackinglogs zum entsprechenden Empfänger.**&#x200B;**&#x200B;**&#x200B;**
+1. Wählen Sie das andere Feld aus, das in der Ausgabespalte angezeigt werden soll. Öffnen Sie in der Spalte **[!UICONTROL Verfügbare Felder]** den Knoten **[!UICONTROL Empfänger]** und wählen Sie **[!UICONTROL E-Mail]**. Dies führt zur Zuordnung eines jeden Trackinglogs zum entsprechenden Empfänger.********
 
    ![](assets/query_editor_nveau_20.png)
 
@@ -86,7 +86,7 @@ Gehen Sie für dieses Beispiel wie folgt vor:
 
      ![](assets/query_editor_nveau_24.png)
 
-   * Zur Suche nach dem Enddatum der gewünschten Trackingperiode ist eine weitere Bedingungszeile erforderlich. **&#x200B;**&#x200B;Im Feld **[!UICONTROL Ausdruck]** wählen Sie wieder **[!UICONTROL Datum (@logDate)]**.
+   * Zur Suche nach dem Enddatum der gewünschten Trackingperiode ist eine weitere Bedingungszeile erforderlich. **** Im Feld **[!UICONTROL Ausdruck]** wählen Sie wieder **[!UICONTROL Datum (@logDate)]**.
 
      Wählen Sie den Operator **[!UICONTROL kleiner als]**. Klicken Sie im Feld **[!UICONTROL Wert]** auf die Schaltfläche **[!UICONTROL Ausdruck bearbeiten]**. Gehen Sie zum Fenster **[!UICONTROL Formeltyp]** und geben Sie in unter **[!UICONTROL Aktuelles Datum abzüglich n Tage]** den Wert „1“ ein.
 
