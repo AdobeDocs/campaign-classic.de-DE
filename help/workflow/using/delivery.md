@@ -34,7 +34,7 @@ Die Aktivität **Versand** wird je nach Kontext zur Konfiguration oder zum Start
 
      ![](assets/specified_transition_option_exemple.png)
 
-   * Wählen Sie den betreffenden Versand direkt aus. Wählen Sie in diesem Fall einen zuvor erstellten Versand aus der Dropdown-Liste des Felds **[!UICONTROL Versand]** aus.****
+   * Wählen Sie den betreffenden Versand direkt aus. Wählen Sie in diesem Fall einen zuvor erstellten Versand aus der Dropdown-Liste des Felds **[!UICONTROL Versand]** aus.**&#x200B;**
 
      Standardmäßig enthält die Liste die im Ordner **Sendungen** gespeicherten Kommunikationen, die noch nicht abgeschlossen sind. Klicken Sie auf das Symbol **[!UICONTROL Verknüpftes Element auswählen]**, um auf andere Ordner zugreifen zu können.
 
@@ -50,7 +50,7 @@ Die Aktivität **Versand** wird je nach Kontext zur Konfiguration oder zum Start
 
      ![](assets/diffusion_edit_3.png)
 
-   * Erstellen Sie einen neuen Versand. Wählen Sie die gewünschte Versandvorlage aus.****
+   * Erstellen Sie einen neuen Versand. Wählen Sie die gewünschte Versandvorlage aus.**&#x200B;**
 
      ![](assets/diffusion_edit_4.png)
 

@@ -58,7 +58,7 @@ Gehen Sie für dieses Beispiel wie folgt vor:
 
      ![](assets/query_editor_nveau_19.png)
 
-1. Wählen Sie das andere Feld aus, das in der Ausgabespalte angezeigt werden soll. Öffnen Sie in der Spalte **[!UICONTROL Verfügbare Felder]** den Knoten **[!UICONTROL Empfänger]** und wählen Sie **[!UICONTROL E-Mail]**. Dies führt zur Zuordnung eines jeden Trackinglogs zum entsprechenden Empfänger.********
+1. Wählen Sie das andere Feld aus, das in der Ausgabespalte angezeigt werden soll. Öffnen Sie in der Spalte **[!UICONTROL Verfügbare Felder]** den Knoten **[!UICONTROL Empfänger]** und wählen Sie **[!UICONTROL E-Mail]**. Dies führt zur Zuordnung eines jeden Trackinglogs zum entsprechenden Empfänger.**&#x200B;**&#x200B;**&#x200B;**
 
    ![](assets/query_editor_nveau_20.png)
 
@@ -86,7 +86,7 @@ Gehen Sie für dieses Beispiel wie folgt vor:
 
      ![](assets/query_editor_nveau_24.png)
 
-   * Zur Suche nach dem Enddatum der gewünschten Trackingperiode ist eine weitere Bedingungszeile erforderlich. **** Im Feld **[!UICONTROL Ausdruck]** wählen Sie wieder **[!UICONTROL Datum (@logDate)]**.
+   * Zur Suche nach dem Enddatum der gewünschten Trackingperiode ist eine weitere Bedingungszeile erforderlich. **&#x200B;**&#x200B;Im Feld **[!UICONTROL Ausdruck]** wählen Sie wieder **[!UICONTROL Datum (@logDate)]**.
 
      Wählen Sie den Operator **[!UICONTROL kleiner als]**. Klicken Sie im Feld **[!UICONTROL Wert]** auf die Schaltfläche **[!UICONTROL Ausdruck bearbeiten]**. Gehen Sie zum Fenster **[!UICONTROL Formeltyp]** und geben Sie in unter **[!UICONTROL Aktuelles Datum abzüglich n Tage]** den Wert „1“ ein.
 
