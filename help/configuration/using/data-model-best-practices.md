@@ -146,7 +146,7 @@ Wenn in Adobe Campaign eine benutzerdefinierte Tabelle mit einem Primärschlüss
 
 Standardmäßig hat eine benutzerdefinierte Sequenz Werte zwischen +1.000 und +2,1BB. Technisch ist es möglich, eine vollständige Bandbreite von 4BB zu erhalten, indem negative IDs aktiviert werden. Dies sollte mit Vorsicht verwendet werden und eine ID geht verloren, wenn von negativen zu positiven Zahlen gewechselt wird: Der Datensatz 0 wird von Adobe Campaign in generierten SQL-Abfragen normalerweise ignoriert.
 
-Weitere Informationen zur Erschöpfung von Sequenzen finden Sie [diesem Video](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html).
+Weitere Informationen zur Erschöpfung von Sequenzen finden Sie [diesem Video](https://helpx.adobe.com/de/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html).
 
 ## Indizes {#indexes}
 

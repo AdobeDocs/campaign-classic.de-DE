@@ -60,7 +60,7 @@ Wenn Sie dieses Ergebnis nicht erhalten, überprüfen Sie in Ihrer Webserver-Kon
 </tr>
 <tr>
 <td>Überprüfen Sie die allgemeine Konfiguration der Sicherheitszonen.</td>
-<td>Weiterführende Informationen zur Konfiguration von Sicherheitszonen finden Sie <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configuring-campaign-server.html#configuring-campaign-server"/> diesem Abschnitt.</a></td>
+<td>Weiterführende Informationen zur Konfiguration von Sicherheitszonen finden Sie <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configuring-campaign-server.html?lang=de#configuring-campaign-server"/> diesem Abschnitt.</a></td>
 </tr>
 <tr>
 <td>Der Befehl nlserver pdump gibt <b>Keine Aufgaben</b> zurück</td>
