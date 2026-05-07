@@ -8,9 +8,9 @@ level: Beginner
 hide: true
 exl-id: 8ed11e96-9f23-4e2e-bae2-25c51cfb549a
 source-git-commit: 4cae5fdb2b78f446f84352046b523d8862e9060c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2391'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ Ab dieser Version funktionieren Tracking-Links für bereits gesendete E-Mails w�
 * Fehlerkorrektur – Benutzende müssen sich jetzt nicht mehr neu authentifizieren, wenn sie in einem Kampagnenbericht auf `Back` klicken. (NEO-65087)
 * Fehlerkorrektur – Im Workflow „Datenbankbereinigung“ tritt jetzt kein Fehler mehr auf, wenn ein Versand vor seinen Testsendungen gelöscht wird. (NEO-48114)
 * Fehlerkorrektur – Beim Herstellen einer Verbindung zur Client Console tritt jetzt auch bei den neuesten Updates der TLS-Überprüfung kein Verbindungsfehler mehr auf. (NEO-50488)
-* Fehlerkorrektur: Bei der HTTP-Proxy-Authentifizierung tritt nach dem Campaign-Postupgrade auf 7.3.1 kein Fehler mehr auf. HTTP-Anfragen in Campaign-Workflows schlagen mit `error 407 – proxy auth required is returned` fehl. (NEO-49624)
+* Es wurde ein Problem behoben, bei dem bei der HTTP-Proxy-Authentifizierung nach Campaign-Postupgrade auf 7.3.1 HTTP-Anfragen in Campaign-Workflows mit `error 407 – proxy auth required is returned` fehlschlugen. (NEO-49624)
 * Behebung eines zeitweiligen Fehlers bei der GPG-Entschlüsselung in **Skript** Workflow-Aktivitäten. Die entsprechende Fehlermeldung lautete: `gpg: decryption failed: No secret key`. (NEO-50257)
   <!--* Workflow temporary tables now have a primary index in Teradata with a Federated Data Access (FDA) connection. (NEO-62575)-->
 
@@ -108,11 +108,11 @@ _7. September 2023_
 * Fehlerkorrektur – Die Versand-Performance wird jetzt nicht mehr durch ein Problem bei der Abfrageverwaltung beeinträchtigt. (NEO-49991)
 * Fehlerkorrektur – Bei der Verwendung von externen Konten in Kampagnen-Workflow-Versandaktivitäten tritt kein Fehler mehr auf, der zu Konfigurationsproblemen mit externen Konten führen konnte. (NEO-49959)
 * Fehlerkorrektur – Beim Versand von Push-Benachrichtigungen treten keine Performance-Probleme mehr auf. (NEO-49953)
-Fehlerkorrektur - Beim Exportieren von Berichten werden japanische Zeichen jetzt korrekt angezeigt (NEO-49308).
+Es wurde ein Problem behoben, bei dem japanische Zeichen beim Export von Berichten falsch angezeigt wurden (NEO-49308).
 * Fehlerkorrektur – Der Tomcat-Fehlerbericht zeigt jetzt nicht mehr allzu viele Fehlerdetails an. (NEO-49029)
 * Fehlerkorrektur – Bei der Verwendung einer großen Anzahl von Angeboten tritt nun kein Versandfehler mehr auf. (NEO-48807)
 * Fehlerkorrektur – Die Workflow-Aktivität **Daten-Update** funktioniert jetzt ordnungsgemäß. (NEO-48140)
-* Fehlerkorrektur - Klick-Tracking-Daten werden jetzt für Sendungen, die ein anderes externes Konto als E-Mail verwenden, synchronisiert. (NEO-47277)
+* Es wurde ein Problem behoben, bei dem Klick-Tracking-Daten für Sendungen mit einem externen Konto, das kein E-Mail-Konto ist, nicht synchronisiert wurden.(NEO-47277)
 * Fehlerkorrektur – Trackinglogs in Echtzeit können jetzt in der Marketing-Instanz von Message Center synchronisiert werden. (NEO-42540)
 * Fehlerkorrektur – Das Workspace-Präfix für Snowflake-Datenbanktabellen wird jetzt im Erkennungsfenster eines Schemas angezeigt. (NEO-40297)
 * Fehlerkorrektur – `<img-amp>`-Tags können jetzt in E-Mail-Inhalten verwendet werden. (NEO-38685)

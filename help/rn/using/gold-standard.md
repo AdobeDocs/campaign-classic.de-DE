@@ -8,9 +8,9 @@ level: Beginner
 hide: true
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2018'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ _Freitag, 27. August 2021_
 
 Build 9032@99a3894 umfasst die folgenden Fehlerkorrekturen:
 
-* Die Tracking-Signaturfunktion wurde verbessert, um Fehler zu vermeiden, die in Zusammenhang mit der Art und Weise stehen, in der Drittanbieter-Tools (E-Mail-Clients, Internet-Browser usw.) Sonderzeichen verarbeiten. URL-Parameter sind jetzt codiert.
+* Die Funktion „Signaturen nachverfolgen“ wurde verbessert, um Fehler im Zusammenhang mit der Verarbeitung von Sonderzeichen durch Drittanbieter-Tools (E-Mail-Clients, Internet-Browser usw.) zu verhindern. URL-Parameter sind jetzt codiert.
 * Fehlerkorrektur – Bei der Datumsauswahl wird in der Konsole keine Blocker-Fehlermeldung mehr angezeigt. (NEO-36345)
 
 ### Version [!DNL Gold Standard] 11{#gs-11}
@@ -208,10 +208,10 @@ _Dienstag, 13. August 2019_
 Der erste Build 19.1.4 enthält die folgenden Fehlerkorrekturen:
 
 * Fehlerkorrektur – In der Planungsaktivität werden jetzt bei der Konfiguration des Assistenten keine unbeabsichtigten Fehlernachrichten mehr erzeugt. Update NEO-11662 wurde rückgängig gemacht. (NEO-17097)
-* Fehlerkorrektur - Eine Regression wird jetzt nicht mehr durch den NEO-12727 verursacht, was dazu führen kann, dass Workflows angehalten werden, wenn eine Testaktivität zweimal ausgeführt wird. (NEO-16835)
-* Fehlerkorrektur - Wenn in API-Aufrufen ein ungültiges oder abgelaufenes Sitzungstoken verwendet wird, wird jetzt kein falscher HTTP-Code mehr zurückgegeben (HTTP 200 OK statt HTTP 403 Verboten). (NEO-16826)
-* Fehlerkorrektur - Der DKIM-Schlüssel ist jetzt nicht mehr in E-Mails eingebettet, was zu Problemen mit der Zustellbarkeit führt. (NEO-16804)
-* Fehlerkorrektur - Die Workflow-Planung funktioniert jetzt problemlos. Workflows waren so geplant, dass sie einmal täglich ausgeführt wurden, ohne die Scheduler-Konfiguration zu berücksichtigen. (NEO-16619, NEO-16426)
+* Es wurde eine durch NEO-12727 verursachte Regression behoben, bei der Workflows angehalten wurden, wenn eine Testaktivität zweimal ausgeführt wurde.(NEO-16835)
+* Es wurde ein Problem behoben, bei dem ein fehlerhafter HTTP-Code zurückgegeben wurde („HTTP 200 OK“ statt „HTTP 403 Verboten“), wenn ein ungültiges oder abgelaufenes Sitzungs-Token in API-Aufrufen verwendet wurde. (NEO-16826)
+* Es wurde ein Problem behoben, bei dem der DKIM-Schlüssel nicht mehr in E-Mails eingebettet war, was zu Zustellbarkeitsproblemen führte. (NEO-16804)
+* Es wurden mehrere Probleme mit der Workflow-Planung behoben. Es war eine einmalige Workflow-Ausführung pro Tag geplant, wobei die Planungskonfiguration nicht berücksichtigt wurde. (NEO-16619, NEO-16426)
 
 
 ## [!DNL Gold Standard] – Kompatibilitätsmatrix{#compatibility-matrix-gs}
@@ -365,7 +365,7 @@ In diesem Abschnitt sind alle Systeme und Komponenten aufgeführt, die für Buil
 <table>
 <tbody>
 <tr>
-<td>Salesforce Connector-API</td>
+<td>Salesforce-Connector-API</td>
 <td>
 <p>API-Version 37</p>
 </td>

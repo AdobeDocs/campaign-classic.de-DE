@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 0cd6bf20-da72-4cf0-9f5d-d4e8acdd324d
 source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2672'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ _7. September 2021_
 
 * Nach seinem End-of-Life wurde Flash aus allen damit verbundenen Campaign-Funktionen und -Komponenten entfernt und durch HTML5 ersetzt. Der Diagrammtyp **Tacho** wurde entfernt. (NEO-30330) [Mehr dazu](../../reporting/using/creating-a-chart.md)
 * Bei der Installation der Client-Konsole unter Windows überprüft das Installationsprogramm jetzt, ob ein übergeordneter Registrierungsknoten vorhanden ist, und erstellt einen, wenn er fehlt. Dadurch werden potenzielle Probleme beim Starten der Konsole verhindert. (NEO-34854)
-* Die Tracking-Signaturfunktion wurde verbessert, um Fehler zu vermeiden, die in Zusammenhang mit der Art und Weise stehen, in der Drittanbieter-Tools (E-Mail-Clients, Internet-Browser usw.) Sonderzeichen verarbeiten. URL-Parameter sind jetzt codiert.
+* Die Funktion „Signaturen nachverfolgen“ wurde verbessert, um Fehler im Zusammenhang mit der Verarbeitung von Sonderzeichen durch Drittanbieter-Tools (E-Mail-Clients, Internet-Browser usw.) zu verhindern. URL-Parameter sind jetzt codiert.
 
 **Sonstige Änderungen**
 
@@ -168,7 +168,7 @@ _5. Juni 2021_
 
 **Verbesserungen bei der Sicherheit**
 
-* Der Zugriff auf die **xtk:session#GetCnxInfo**-API-Methode, die die vollständigen Details zur Datenbankverbindung zurückgibt, ist jetzt nur noch für Admin-Benutzer verfügbar. (NEO-27779)
+* Der Zugriff auf die **xtk:session#GetCnxInfo**-API-Methode, die die vollständigen Details zur Datenbankverbindung zurückgibt, ist jetzt nur noch für Admin-Benutzende verfügbar. (NEO-27779)
 * Die veraltete Funktion decryptString wurde in CRM-bezogenen JavaScript-Dateien durch decryptPassword ersetzt.
 * Die Funktion zum Tracking von Signaturen wurde verbessert, um das Risiko von Tracking-Weiterleitungsfehlern zu verringern, wenn Drittanbieter-Tools (E-Mail-Clients, Internetbrowser, Sicherheits-Tools für sichere Links) den getrackten Link ändern.
 * Fehlerkorrektur – Getrackte URLs funktionieren jetzt auch, wenn sie Großbuchstaben enthalten. Beim Signierungsmechanismus für getrackte URLs wird jetzt zwischen Groß- und Kleinschreibung unterschieden. (NEO-28414)
@@ -188,7 +188,7 @@ Weiterführende Informationen finden Sie in der [Campaign-Kompatibilitätsmatrix
 * Debian 8 wird jetzt nicht mehr unterstützt.
 * Nach der Einstellung von Oracle CRM in Version 20.3 wurde das zugehörige externe Konto aus der Benutzeroberfläche entfernt.
 
-Weitere Informationen finden Sie auf der Seite [Eingestellte und entfernte Funktionen &#x200B;](../../rn/using/deprecated-features.md).
+Weitere Informationen finden Sie auf der Seite [Eingestellte und entfernte Funktionen ](../../rn/using/deprecated-features.md).
 
 **Verbesserungen**
 
@@ -218,7 +218,7 @@ Weitere Informationen finden Sie auf der Seite [Eingestellte und entfernte Funkt
 * Fehlerkorrektur – Die Erstellung des SAP HANA-FDA-Index wird jetzt zuverlässig ausgeführt. (NEO-29664)
 * Fehlerkorrektur – Transaktionsnachrichten verbleiben jetzt nicht mehr im Status **Ausstehend**, wenn SOAP-Aufrufe mit einem Header ausgeführt werden. (NEO-28737)
 * Fehlerkorrektur – Bei der Verwendung des Teradata FDA-Connectors tritt jetzt kein Fehler mehr auf. Das Problem bestand darin, dass alle temporären Tabellen nur auf einem Knoten des Clusters erstellt wurden, was letztendlich den gesamten Spool-Speicherplatz belegen und zu einem Absturz von Teradata führen konnte. Die temporären Tabellen werden jetzt auf vielen Knoten generiert. (NEO-28230)
-* Fehlerkorrektur - Bei der Verwendung von Web-Anwendungen werden von Trackingtags jetzt keine falschen Primärschlüssel mehr im **nms:trackingURL**-Schema erzeugt. (NEO-27931)
+* Es wurde ein Problem behoben, bei dem bei der Verwendung von Web-Anwendungen Trackingtags falsche Primärschlüssel im **nms:trackingURL**-Schema generierten.(NEO-27931)
 * Die Kompatibilität mit ODBC 3.x wurde verbessert, um die Richtigkeit von Fehlermeldungen sicherzustellen.
 * Fehlerkorrektur – Jetzt stürzt die Konsole nicht mehr ab, wenn benutzerdefinierte Inhaltsvorlagen in E-Mail-Sendungen verwendet werden. (NEO-31547)
 * Fehlerkorrektur – Tomcat sendet jetzt auch bei langsamen Verbindungen oder einer großen Antwortgröße gültige Antworten. (NEO-30858)
@@ -258,7 +258,7 @@ Die folgenden Systeme werden jetzt von Campaign unterstützt:
 
 Der Bericht zum **technischen Zustellbarkeits-Monitoring** wird jetzt nicht mehr unterstützt.
 
-Weitere Informationen finden Sie auf der Seite [Eingestellte und entfernte Funktionen &#x200B;](../../rn/using/deprecated-features.md).
+Weitere Informationen finden Sie auf der Seite [Eingestellte und entfernte Funktionen ](../../rn/using/deprecated-features.md).
 
 **Verbesserungen**
 
