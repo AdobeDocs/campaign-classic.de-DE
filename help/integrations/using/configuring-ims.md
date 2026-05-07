@@ -24,7 +24,7 @@ ht-degree: 75%
 
 ## Voraussetzungen {#prerequisites}
 
-* Müssen Sie über einen Organisationsnamen und eine Organisations-ID für Adobe Experience Cloud verfügen. Auf [ Seite erfahren Sie, wie Sie Ihre Organisations-ID ](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=de){_blank}.
+* Müssen Sie über einen Organisationsnamen und eine Organisations-ID für Adobe Experience Cloud verfügen. Auf [&#x200B; Seite erfahren Sie, wie Sie Ihre Organisations-ID &#x200B;](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=de){_blank}.
 * müssen Sie in Experience Cloud Benutzer hinzufügen. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=de){_blank}.
 
 >[!NOTE]
@@ -53,7 +53,7 @@ Folgende Angaben sind erforderlich:
 
   Die **[!UICONTROL Callback-Server]**-Adresse muss in &quot;**&quot;** werden. Dieses Feld entspricht der Zugriffs-URL Ihrer Adobe Campaign-Instanz.
 
-* Organisations-ID: Auf [ Seite erfahren Sie, wie Sie Ihre Organisations-ID ](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=de){_blank}.
+* Organisations-ID: Auf [&#x200B; Seite erfahren Sie, wie Sie Ihre Organisations-ID &#x200B;](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=de){_blank}.
 
 * Zuordnungsmaske: In diesem Feld können Sie die Syntax definieren, mit der Konfigurationsnamen in Enterprise Dashboard mit den Gruppen in Adobe Campaign synchronisiert werden können. Wenn Sie die Syntax „Campaign - tenant_id - (.&#42;)“ verwenden, wird die in Adobe Campaign erstellte Sicherheitsgruppe mit dem Konfigurationsnamen „Campaign - tenant_id - internal_name“ im Enterprise Dashboard verknüpft.
 

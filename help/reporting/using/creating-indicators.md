@@ -93,7 +93,7 @@ Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**, um eine neue Dim
 
 ## Erstellen von Indikatoren {#building-indicators}
 
-Sobald die Dimensionen definiert sind, müssen Sie den Berechnungsmodus für die Werte festlegen, die in den Zellen angezeigt werden sollen. Erstellen Sie hierzu die jeweiligen Kennzahlen auf der gleichnamigen Registerkarte: Die Anzahl der Kennzahlen muss der Anzahl der Spalten entsprechen, die im Bericht angezeigt werden.****
+Sobald die Dimensionen definiert sind, müssen Sie den Berechnungsmodus für die Werte festlegen, die in den Zellen angezeigt werden sollen. Erstellen Sie hierzu die jeweiligen Kennzahlen auf der gleichnamigen Registerkarte: Die Anzahl der Kennzahlen muss der Anzahl der Spalten entsprechen, die im Bericht angezeigt werden.**&#x200B;**
 
 Gehen Sie hierzu wie folgt vor:
 

@@ -18,7 +18,7 @@ ht-degree: 90%
 
 ## E-Mail-Formate für japanische Mobiltelefone {#email-formats-for-japanese-mobiles}
 
-Adobe Campaign verwaltet drei spezifische japanische Formate für E-Mails auf Mobiltelefonen: **Deco-mail** (DoCoMo-Mobilgeräte), **Decore Mail** (Softbank-Mobilgeräte) und **Decoration Mail** (KDDI AU-Mobilgeräte). Diese Formate erzwingen besondere Einschränkungen hinsichtlich Codierung, Struktur und Größe. Weitere Informationen zu Einschränkungen und Empfehlungen finden [ in diesem Abschnitt](#limitations-and-recommendations).
+Adobe Campaign verwaltet drei spezifische japanische Formate für E-Mails auf Mobiltelefonen: **Deco-mail** (DoCoMo-Mobilgeräte), **Decore Mail** (Softbank-Mobilgeräte) und **Decoration Mail** (KDDI AU-Mobilgeräte). Diese Formate erzwingen besondere Einschränkungen hinsichtlich Codierung, Struktur und Größe. Weitere Informationen zu Einschränkungen und Empfehlungen finden [&#x200B; in diesem Abschnitt](#limitations-and-recommendations).
 
 Damit ein Empfänger, der eines dieser Formate verwendet, Nachrichten korrekt angezeigt bekommt, wird empfohlen, das entsprechende Format **[!UICONTROL Deco-mail (DoCoMo)]**, **[!UICONTROL Decore Mail (Softbank)]** oder **[!UICONTROL Decoration Mail (KDDI AU)]** im Empfängerprofil auszuwählen:
 

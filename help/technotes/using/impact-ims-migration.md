@@ -94,7 +94,7 @@ Sie können Benutzende mit nativer Authentifizierung nicht mehr über die Client
 
 Daher wurden diese Aktionen in der Client-Konsole deaktiviert.
 
-Die Administration der Benutzenden erfolgt zentral in der Adobe Admin Console. Die folgenden Aufgaben werden nun ausschließlich über diese Konsole verwaltet. Erfahren Sie in der Dokumentation zu Campaign v8[ wie Sie Benutzer erstellen und Berechtigungen ](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/admin/permissions/manage-permissions){target="_blank"}.
+Die Administration der Benutzenden erfolgt zentral in der Adobe Admin Console. Die folgenden Aufgaben werden nun ausschließlich über diese Konsole verwaltet. Erfahren Sie in der Dokumentation zu Campaign v8[&#x200B; wie Sie Benutzer erstellen und Berechtigungen &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/admin/permissions/manage-permissions){target="_blank"}.
 
 ### Nicht verfügbare Optionen {#unavailable-migration}
 

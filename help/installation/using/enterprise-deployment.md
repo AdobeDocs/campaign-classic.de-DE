@@ -288,6 +288,6 @@ Zusammenfassend sind folgende Etappen zu durchlaufen:
    Weiterführende Informationen hierzu finden Sie in den folgenden Abschnitten:
 
    * Für Linux: [Webserver starten und Konfiguration testen](../../installation/using/integration-into-a-web-server-for-linux.md#launching-the-web-server-and-testing-the-configuration),
-   * Für Windows: [Webserver starten und Konfiguration ](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration).
+   * Für Windows: [Webserver starten und Konfiguration &#x200B;](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration).
 
 1. Adobe Campaign-Server starten.

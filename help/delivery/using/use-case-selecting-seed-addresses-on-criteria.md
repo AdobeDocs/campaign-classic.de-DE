@@ -174,7 +174,7 @@ Sie können jetzt die dynamische Bedingung der Testadressen für den Versand ang
 
    >[!NOTE]
    >
-   >Die zuvor vorgenommene Schemaerweiterung beruht auf dem Empfängerschema **recipient**. Dies gilt auch für die Auflistung, aus der die oben zu sehenden Werte stammen.****
+   >Die zuvor vorgenommene Schemaerweiterung beruht auf dem Empfängerschema **recipient**. Dies gilt auch für die Auflistung, aus der die oben zu sehenden Werte stammen.**&#x200B;**
 
 1. Bestätigen Sie die Aktion mit der Schaltfläche **[!UICONTROL OK]**.
 

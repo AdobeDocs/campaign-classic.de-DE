@@ -99,7 +99,7 @@ Der Inhalt einer Liste kann exportiert werden. So konfigurieren Sie den Export u
 
 ## Für einen Service anmelden {#subscribing-to-a-service}
 
-In den meisten Fällen können Empfänger einen Newsletter über eine spezielle Landingpage abonnieren, wie in [diesem Abschnitt) ](../../delivery/using/managing-subscriptions.md). Die Profile gefilterter Empfänger können jedoch manuell für einen Dienst (Newsletter oder Viraler Dienst) abonniert werden. Gehen Sie dazu wie folgt vor:
+In den meisten Fällen können Empfänger einen Newsletter über eine spezielle Landingpage abonnieren, wie in [diesem Abschnitt) &#x200B;](../../delivery/using/managing-subscriptions.md). Die Profile gefilterter Empfänger können jedoch manuell für einen Dienst (Newsletter oder Viraler Dienst) abonniert werden. Gehen Sie dazu wie folgt vor:
 
 1. Markieren Sie die gewünschten Empfänger und wählen Sie sie mit der rechten Maustaste aus.
 1. Wählen Sie **[!UICONTROL Aktionen > Auswahl für einen Dienst anmelden...]**.
@@ -123,7 +123,7 @@ In der oberen Hälfte des Assistenten werden Informationen bezüglich der Ausfü
 
 Wenn Sie die Option **[!UICONTROL Auftrag nicht in der Datenbank protokollieren]** abwählen, ist die Auswahl oder Erstellung eines Ausführungsordners erforderlich, in dem die den Auftrag betreffenden Protokollnachrichten gespeichert werden.
 
-Im Tab **[!UICONTROL Abonnements]******, zugänglich über die vom Vorgang betroffenen Empfängerprofile oder den Verzeichnisknoten **[!UICONTROL Profile und Zielgruppen > Dienste und Abonnements]** kann das Ergebnis der Anmeldung geprüft werden.
+Im Tab **[!UICONTROL Abonnements]**&#x200B;**&#x200B;**, zugänglich über die vom Vorgang betroffenen Empfängerprofile oder den Verzeichnisknoten **[!UICONTROL Profile und Zielgruppen > Dienste und Abonnements]** kann das Ergebnis der Anmeldung geprüft werden.
 
 ![](assets/s_ncs_user_selection_subscribe_service_4.png)
 

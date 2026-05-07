@@ -115,7 +115,7 @@ Nach der Anreicherung stellen sich die Daten der Workflow-Arbeitstabelle wie fol
 
 In diesem Schritt wird beschrieben, wie die importierten und angereicherten Daten in die Tabelle „Käufe“ geschrieben werden. Dafür müssen wir eine Aktivität vom Typ **Daten-Update** verwenden.
 
-Vor der Aktualisierung sind die Daten der Workflow-Arbeitstabelle mit denen aus der Zielgruppendimension **Verkauf** abzustimmen.****
+Vor der Aktualisierung sind die Daten der Workflow-Arbeitstabelle mit denen aus der Zielgruppendimension **Verkauf** abzustimmen.**&#x200B;**
 
 1. Gehen Sie in den Tab **[!UICONTROL Abstimmung]** der Anreicherung.
 1. Wählen Sie die Zielgruppendimension, im vorliegenden Beispiel also das Schema &#39;Verkauf&#39;, aus.

@@ -166,7 +166,7 @@ Zusammenfassend sind folgende Etappen zu durchlaufen:
 1. Adobe Campaign-Server starten.
 1. Stellen Sie in der Adobe Campaign-Konsole eine Verbindung mit dem **admin** her, melden Sie sich ohne Kennwort an und starten Sie den Bereitstellungsassistenten.
 
-   Weitere Informationen hierzu finden Sie unter &quot;[ einer Instanz](../../installation/using/deploying-an-instance.md).
+   Weitere Informationen hierzu finden Sie unter &quot;[&#x200B; einer Instanz](../../installation/using/deploying-an-instance.md).
 
    Die Konfiguration ist mit der Konfiguration einer eigenständigen Instanz identisch, abgesehen von der Konfiguration des Tracking-Moduls.
 

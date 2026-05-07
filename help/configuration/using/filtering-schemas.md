@@ -109,4 +109,4 @@ Sie können die Systemfilter der vordefinierten Schemata, die aufgrund von Kompa
 
 1. Erstellen Sie eine Erweiterung für das betreffende Schema oder öffnen Sie eine vorhandene Erweiterung.
 1. Fügen Sie ein untergeordnetes Element **`<sysfilter name="<filter name>" _operation="delete"/>`** im Hauptelement hinzu, um die Anwendung des Filters unter demselben Element im Ursprungsschema zu löschen.
-1. Wenn Sie möchten, können Sie einen neuen Filter hinzufügen, wie unter [ beschrieben](#system-filters).
+1. Wenn Sie möchten, können Sie einen neuen Filter hinzufügen, wie unter [&#x200B; beschrieben](#system-filters).

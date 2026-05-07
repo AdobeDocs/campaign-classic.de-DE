@@ -101,7 +101,7 @@ Wenn Sie eine Verbindung zu Hadoop 2.1 herstellen müssen, führen Sie die unten
    User/Password: admin/<your password here>
    ```
 
-1. Erstellen Sie das externe Hadoop-Konto, wie [ diesem Abschnitt beschrieben](#hadoop-external).
+1. Erstellen Sie das externe Hadoop-Konto, wie [&#x200B; diesem Abschnitt beschrieben](#hadoop-external).
 
 ### Hadoop 2.1 für Linux {#for-linux}
 
@@ -188,4 +188,4 @@ Wenn Sie eine Verbindung zu Hadoop 2.1 herstellen müssen, führen Sie die unten
    isql vorac -v
    ```
 
-1. Erstellen Sie das externe Hadoop-Konto, wie [ diesem Abschnitt beschrieben](#hadoop-external).
+1. Erstellen Sie das externe Hadoop-Konto, wie [&#x200B; diesem Abschnitt beschrieben](#hadoop-external).

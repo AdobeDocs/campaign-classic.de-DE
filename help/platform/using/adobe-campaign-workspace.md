@@ -23,7 +23,7 @@ Im zentralen Abschnitt der Startseite finden Sie Links für den Zugriff auf das 
 
 ![](assets/d_ncs_user_interface_home.png)
 
-![](assets/do-not-localize/how-to-video.png)[ Campaign-Arbeitsbereich im Video kennenlernen](#video)
+![](assets/do-not-localize/how-to-video.png) [&#x200B; Campaign-Arbeitsbereich im Video kennenlernen](#video)
 
 >[!NOTE]
 >

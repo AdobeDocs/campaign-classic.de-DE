@@ -37,7 +37,7 @@ F체r jede Kampagne zeigt die Registerkarte **[!UICONTROL Tracking]** alle Auftr�
 
 ## Versandverfolgung {#delivery-tracking}
 
-Eine Liste der Sendungen ist 체ber die gleichnamige Schaltfl채che in der Kampagnen-Rubrik verf체gbar.****
+Eine Liste der Sendungen ist 체ber die gleichnamige Schaltfl채che in der Kampagnen-Rubrik verf체gbar.**&#x200B;**
 
 ![](assets/s_ncs_user_op_del_state_from_homepage.png)
 

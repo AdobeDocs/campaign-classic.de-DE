@@ -40,7 +40,7 @@ Gehen Sie dazu wie folgt vor:
 
 Die Dauer der Speicherung der Ereignisse in der Datenbank kann über den [Bereitstellungsassistenten](../../production/using/database-cleanup-workflow.md#deployment-assistant) konfiguriert werden.
 
-Die Ereignislöschung wird automatisch vom Workflow [Datenbankbereinigung“ ](../../production/using/database-cleanup-workflow.md). Dieser Workflow löscht die in den Ausführungsinstanzen empfangenen und gespeicherten Ereignisse sowie die in einer Kontrollinstanz archivierten Ereignisse.
+Die Ereignislöschung wird automatisch vom Workflow [Datenbankbereinigung“ &#x200B;](../../production/using/database-cleanup-workflow.md). Dieser Workflow löscht die in den Ausführungsinstanzen empfangenen und gespeicherten Ereignisse sowie die in einer Kontrollinstanz archivierten Ereignisse.
 
 Um die Bereinigungsparameter zu ändern, nutzen Sie die aufsteigenden und absteigenden Pfeile.
 
@@ -175,7 +175,7 @@ Auf der Kontrollinstanz müssen Sie Versandvorlagen und externe Konten miteinand
 
 Gehen Sie dazu wie folgt vor:
 
-1. Erstellen Sie auf der ](#execution-instance)Ausführungsinstanz[ für jede Marke ein externes Konto mit demselben internen Namen (Schritt 1).
+1. Erstellen Sie auf der [&#128279;](#execution-instance)Ausführungsinstanz für jede Marke ein externes Konto mit demselben internen Namen (Schritt 1).
 
 1. Erstellen Sie für jede Marke eine Versandvorlage. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=de){target="_blank"}.
 

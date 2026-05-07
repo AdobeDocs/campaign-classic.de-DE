@@ -53,7 +53,7 @@ Transaktionsnachrichtenvorlagen enthalten die für die Personalisierung der Tran
 
 ## Nachrichteninhalt erstellen {#creating-message-content}
 
-Die Definition des Inhalts der Transaktionsnachricht entspricht der für den regulären Versand in Adobe Campaign. So können Sie z. B. für einen E-Mail-Versand Inhalte im HTML- oder Textformat erstellen, Anhänge hinzufügen oder das Versandobjekt personalisieren. Weiterführende Informationen hierzu finden Sie im Kapitel zum [ E-Mail-Versand](../../delivery/using/about-email-channel.md).
+Die Definition des Inhalts der Transaktionsnachricht entspricht der für den regulären Versand in Adobe Campaign. So können Sie z. B. für einen E-Mail-Versand Inhalte im HTML- oder Textformat erstellen, Anhänge hinzufügen oder das Versandobjekt personalisieren. Weiterführende Informationen hierzu finden Sie im Kapitel zum [&#x200B; E-Mail-Versand](../../delivery/using/about-email-channel.md).
 
 >[!IMPORTANT]
 >

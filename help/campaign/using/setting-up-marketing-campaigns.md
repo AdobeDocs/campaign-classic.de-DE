@@ -59,7 +59,7 @@ Um Ihre Ordnerhierarchie für Marketing-Pläne und -Programme zu konfigurieren, 
 
 ### Hinzufügen einer Kampagne {#adding-a-campaign}
 
-Sie können eine Kampagne über die Kampagnenliste erstellen. Klicken Sie auf den Link **[!UICONTROL Kampagnen]** in der gleichnamigen Dashbord-Rubrik, um zu dieser Übersicht zu gelangen.****
+Sie können eine Kampagne über die Kampagnenliste erstellen. Klicken Sie auf den Link **[!UICONTROL Kampagnen]** in der gleichnamigen Dashbord-Rubrik, um zu dieser Übersicht zu gelangen.**&#x200B;**
 
 ![](assets/s_ncs_user_add_an_op_from_list.png)
 

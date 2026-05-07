@@ -40,7 +40,7 @@ Die Vorschau generiert automatisch das erweiterte Schema:
 >
 >Beim Speichern des Quellschemas wird die Generierung des erweiterten Schemas automatisch gestartet.
 
-Wenn Sie die vollständige Struktur eines Schemas überprüfen müssen, können Sie die Registerkarte Vorschau verwenden. Wenn das Schema erweitert wurde, können Sie alle seine Erweiterungen visuell darstellen. Ergänzend zeigt die Registerkarte Dokumentation alle Schemaattribute und -elemente sowie deren Eigenschaften (SQL-Feld, Typ/Länge, Bezeichnung, Beschreibung) an. Die Registerkarte Dokumentation gilt nur für generierte Schemata. Weiterführende Informationen hierzu finden Sie im Abschnitt [Regenerieren ](../../configuration/using/regenerating-schemas.md) Schemata“.
+Wenn Sie die vollständige Struktur eines Schemas überprüfen müssen, können Sie die Registerkarte Vorschau verwenden. Wenn das Schema erweitert wurde, können Sie alle seine Erweiterungen visuell darstellen. Ergänzend zeigt die Registerkarte Dokumentation alle Schemaattribute und -elemente sowie deren Eigenschaften (SQL-Feld, Typ/Länge, Bezeichnung, Beschreibung) an. Die Registerkarte Dokumentation gilt nur für generierte Schemata. Weiterführende Informationen hierzu finden Sie im Abschnitt [Regenerieren &#x200B;](../../configuration/using/regenerating-schemas.md) Schemata“.
 
 ## Beispiel: Vertragstabelle erstellen {#example--creating-a-contract-table}
 

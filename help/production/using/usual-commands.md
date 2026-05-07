@@ -23,7 +23,7 @@ In diesem Abschnitt werden die in Adobe Campaign üblichen Befehle aufgelistet.
 
 Der Befehl **nlserver** ist der Eingabebefehl für die gesamte Adobe Campaign-Anwendung.
 
-Dieser Befehl hat die folgende Syntax: **nlserver **`<command>`****`<arguments>`****
+Dieser Befehl hat die folgende Syntax: **nlserver &#x200B;**`<command>`**&#x200B;**`<arguments>`**&#x200B;**
 
 Der Parameter **`<command>`** entspricht dem Modul .
 

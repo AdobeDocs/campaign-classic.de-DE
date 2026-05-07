@@ -16,7 +16,7 @@ ht-degree: 92%
 
 
 
-Dieses Anwendungsbeispiel zeigt einen Workflow für einen kanalübergreifenden Versand. Das allgemeine Konzept von kanalübergreifenden Sendungen wird in [diesem Abschnitt) ](cross-channel-deliveries.md).
+Dieses Anwendungsbeispiel zeigt einen Workflow für einen kanalübergreifenden Versand. Das allgemeine Konzept von kanalübergreifenden Sendungen wird in [diesem Abschnitt) &#x200B;](cross-channel-deliveries.md).
 
 Das Ziel besteht darin, aus den Empfängern der Datenbank eine Zielgruppe auszuwählen und diese in gesonderte Gruppen zu unterteilen, um der einen Gruppe eine E-Mail und der anderen Gruppe eine SMS zukommen zu lassen.
 

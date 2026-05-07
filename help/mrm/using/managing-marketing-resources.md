@@ -37,7 +37,7 @@ Um eine Ressource auf dem Adobe Campaign-Server verfügbar zu machen, legen Sie 
 
 Über eine Bestätigungsnachricht kann der Upload gestartet werden.
 
-Nach Abschluss des Hochladens wird die Ressource der Liste der verfügbaren Ressourcen hinzugefügt. Sie steht Adobe Campaign-Benutzern zur Verfügung. die Datei auf dem Server aktualisieren.********
+Nach Abschluss des Hochladens wird die Ressource der Liste der verfügbaren Ressourcen hinzugefügt. Sie steht Adobe Campaign-Benutzern zur Verfügung. die Datei auf dem Server aktualisieren.**&#x200B;**&#x200B;**&#x200B;**
 
 ![](assets/s_ncs_user_mkg_resource_extract.png)
 
@@ -163,7 +163,7 @@ Marketing-Ressourcen können mit Kampagnen verknüpft werden, sofern diese Optio
 
 >[!NOTE]
 >
->Erstellung und Konfiguration der Kampagnenvorlagen werden im Abschnitt ](../../campaign/using/marketing-campaign-templates.md#campaign-templates)kampagnenvorlagen[ dargestellt.
+>Erstellung und Konfiguration der Kampagnenvorlagen werden im Abschnitt [&#128279;](../../campaign/using/marketing-campaign-templates.md#campaign-templates)kampagnenvorlagen dargestellt.
 
 Gehen Sie hierzu im Dashboard der Kampagne zum Tab **[!UICONTROL Bearbeiten > Dokumente > Ressourcen]** und klicken Sie auf **[!UICONTROL Hinzufügen]**, um eine Ressource auszuwählen.
 
@@ -195,7 +195,7 @@ Sie können eine Marketing-Ressource mit einem oder mehreren Lagern verknüpfen,
 
 >[!NOTE]
 >
->Nähere Informationen zur Lagerverwaltung in Adobe Campaign erhalten Sie im Abschnitt [Lagerverwaltung ](../../campaign/using/providers-stocks-and-budgets.md#stock-management).
+>Nähere Informationen zur Lagerverwaltung in Adobe Campaign erhalten Sie im Abschnitt [Lagerverwaltung &#x200B;](../../campaign/using/providers-stocks-and-budgets.md#stock-management).
 
 Um eine Marketing-Ressource mit einem Lager zu verknüpfen, bearbeiten Sie die Lagerzuordnung und bearbeiten oder erstellen Sie ein Lager. Fügen Sie eine Lagerposition hinzu und wählen Sie die entsprechende Marketing-Ressource aus.
 

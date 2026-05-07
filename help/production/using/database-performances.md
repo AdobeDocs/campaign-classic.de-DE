@@ -32,7 +32,7 @@ Vergewissern Sie sich, dass die anfängliche Adobe Campaign-Plattformkonfigurati
 
 >[!NOTE]
 >
->Weitere Informationen finden Sie in der Anleitung zur Hardware-Dimensionierung ](https://helpx.adobe.com/de/campaign/kb/hardware-sizing-guide.html) [Adobe Campaign.
+>Weitere Informationen finden Sie in der Anleitung zur Hardware-Dimensionierung [&#128279;](https://helpx.adobe.com/de/campaign/kb/hardware-sizing-guide.html) Adobe Campaign.
 
 ## Platform-Konfiguration {#platform-configuration}
 

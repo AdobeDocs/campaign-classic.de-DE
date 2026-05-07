@@ -31,4 +31,4 @@ Außerdem umfassen die Budgetverwaltungsfunktionen jetzt auch die Verwaltung von
 
 >[!NOTE]
 >
->Weitere Informationen zu MRM für Adobe Campaign und dessen Verwendung finden Sie in der [ zu Campaign v8 ](https://experienceleague.adobe.com/de/docs/campaign/automation/mrm/about-marketing-resource-management){target=_blank}.
+>Weitere Informationen zu MRM für Adobe Campaign und dessen Verwendung finden Sie in der [&#x200B; zu Campaign v8 &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/automation/mrm/about-marketing-resource-management){target=_blank}.

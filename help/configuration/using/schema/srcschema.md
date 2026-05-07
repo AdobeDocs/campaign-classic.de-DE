@@ -47,7 +47,7 @@ Die `<srcschema>` ist das Stammelement eines Schemas. Dies ist der Eingangspunkt
 
 ## Verwendung und Nutzungskontext {#use-and-context-of-use-9}
 
-Die Schemapräsentation ist unter &quot;[ Schemareferenz“ ](../../../configuration/using/about-schema-reference.md) &quot;[&quot; ](../../../configuration/using/schema-structure.md).
+Die Schemapräsentation ist unter &quot;[&#x200B; Schemareferenz“ &#x200B;](../../../configuration/using/about-schema-reference.md) &quot;[&quot; &#x200B;](../../../configuration/using/schema-structure.md).
 
 ## Attributbeschreibung {#attribute-description-14}
 

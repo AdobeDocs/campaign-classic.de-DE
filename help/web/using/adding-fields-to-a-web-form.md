@@ -28,7 +28,7 @@ Folgende Feldtypen sind verfügbar:
 
 * Text-/Zahleneingabe. Siehe [Eingabefelder hinzufügen](#adding-input-fields).
 * Auswahl per Dropdown-Liste. Siehe [Dropdown-Listen hinzufügen](#adding-drop-down-lists).
-* Multiple Choice über Checkboxes. Siehe [Checkboxes hinzufügen ](#adding-checkboxes).
+* Multiple Choice über Checkboxes. Siehe [Checkboxes hinzufügen &#x200B;](#adding-checkboxes).
 * Auswahl über Radiobuttons. Siehe [Radiobuttons hinzufügen](#adding-radio-buttons).
 * Abstimmungsoptionen in einer Tabelle. Siehe [Tabellen hinzufügen](#adding-grids).
 * Zahlen und Daten. Siehe [Datum und Zahlen hinzufügen](#adding-dates-and-numbers).

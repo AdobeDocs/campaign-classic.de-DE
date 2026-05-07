@@ -156,7 +156,7 @@ Sie können beispielsweise das Feld **Kontakt** erstellen. Damit haben Sie die M
 
    >[!CAUTION]
    >
-   >Wenn Sie diese Zeichen in den HTML-Editor eingeben, werden die Felder **&lt;** und **** durch deren Maskierungszeichen ersetzt. In diesem Fall müssen Sie den Quellcode korrigieren, indem Sie auf das Symbol **[!UICONTROL Quellcode anzeigen]** des HTML-Texteditors klicken.
+   >Wenn Sie diese Zeichen in den HTML-Editor eingeben, werden die Felder **&lt;** und **&#x200B;**&#x200B;durch deren Maskierungszeichen ersetzt. In diesem Fall müssen Sie den Quellcode korrigieren, indem Sie auf das Symbol **[!UICONTROL Quellcode anzeigen]** des HTML-Texteditors klicken.
 
 1. Öffnen Sie den Titel **[!UICONTROL Vorschau]** des Formulars, um den in HTML eingegebenen Wert anzuzeigen:
 

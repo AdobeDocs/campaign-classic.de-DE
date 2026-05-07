@@ -23,8 +23,8 @@ Das DCE-Bearbeitungsfenster ist in drei verschiedene Abschnitte unterteilt. Sie 
 ![](assets/dce_decoupe_window_nb.png)
 
 1. Der **Oben**-Bereich ist ein Anzeigebereich für Meldungen an den Benutzer. Diese Meldungen geben den Status der Web-Anwendung für den erstellten Versand sowie Warnungen und Fehlermeldungen im Zusammenhang mit dem Inhalt an. Weitere Informationen hierzu finden Sie unter [HTML-Inhaltsstatus](content-editing-best-practices.md#html-content-statuses).
-1. Der Bereich auf **linken** des Fensters ist der Bereich für die Bearbeitung von Inhalten. Von diesem Bereich aus kann der Benutzer mithilfe der Popup-Symbolleiste direkt mit dem Inhalt interagieren: Einfügen eines Links in ein Bild, Ändern der Schriftart, Löschen eines Felds usw. Weitere Informationen hierzu finden Sie unter [ von Formularen](editing-content.md#editing-forms).
-1. Der Bereich **rechts** Fensters ist der Bereich „Systemsteuerung“. In diesem Bereich werden die verschiedenen Optionen für den Editor gruppiert, insbesondere jene, die mit der Konfiguration der Seitenüberschrift und allgemeiner Optionen für einen Block zusammenhängen: Hinzufügen eines Rahmens, Verknüpfen eines Datenbankfelds mit einem Eingabefeld, Zugreifen auf Web-Seiteneigenschaften usw. Weitere Informationen hierzu finden Sie in den Abschnitten [Globale Optionen](#global-options) und [Bearbeiten von ](editing-content.md)&quot;.
+1. Der Bereich auf **linken** des Fensters ist der Bereich für die Bearbeitung von Inhalten. Von diesem Bereich aus kann der Benutzer mithilfe der Popup-Symbolleiste direkt mit dem Inhalt interagieren: Einfügen eines Links in ein Bild, Ändern der Schriftart, Löschen eines Felds usw. Weitere Informationen hierzu finden Sie unter [&#x200B; von Formularen](editing-content.md#editing-forms).
+1. Der Bereich **rechts** Fensters ist der Bereich „Systemsteuerung“. In diesem Bereich werden die verschiedenen Optionen für den Editor gruppiert, insbesondere jene, die mit der Konfiguration der Seitenüberschrift und allgemeiner Optionen für einen Block zusammenhängen: Hinzufügen eines Rahmens, Verknüpfen eines Datenbankfelds mit einem Eingabefeld, Zugreifen auf Web-Seiteneigenschaften usw. Weitere Informationen hierzu finden Sie in den Abschnitten [Globale Optionen](#global-options) und [Bearbeiten von &#x200B;](editing-content.md)&quot;.
 
 ## Globale Optionen {#global-options}
 
@@ -73,7 +73,7 @@ Im Bereich rechts im Editor werden die wichtigsten Optionen gruppiert, mit denen
 Sie haben folgende Möglichkeiten:
 
 * Anzeige für einen oder mehrere Blöcke festlegen, siehe [Sichtbarkeitsbedingung definieren](editing-content.md#defining-a-visibility-condition),
-* Ränder und Rahmen angeben, siehe [Rahmen und Hintergründe hinzufügen ](editing-content.md#adding-a-border-and-background),
+* Ränder und Rahmen angeben, siehe [Rahmen und Hintergründe hinzufügen &#x200B;](editing-content.md#adding-a-border-and-background),
 * Bildattribute (Größe, Beschriftung) festlegen, siehe [Bildeigenschaften bearbeiten](editing-content.md#editing-image-properties),
 * Datenbank mit einem Formularelement (Eingabefeld, Checkbox) verknüpfen, siehe [Dateneigenschaften für ein Formular ändern](editing-content.md#changing-the-data-properties-for-a-form),
 * Einen Teil eines Formulars obligatorisch machen, siehe [Dateneigenschaften für ein Formular ändern](editing-content.md#changing-the-data-properties-for-a-form),

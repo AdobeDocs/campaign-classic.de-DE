@@ -71,7 +71,7 @@ Gehen Sie hierzu wie folgt vor:
 
    Klicken Sie zur Bestätigung auf **[!UICONTROL Beenden]**.
 
-1. Wählen Sie nun aus der Dropdown-Liste den **[!UICONTROL Operator]****[!UICONTROL gleich aus]**.
+1. Wählen Sie nun aus der Dropdown-Liste den **[!UICONTROL Operator]**&#x200B;**[!UICONTROL gleich aus]**.
 
    ![](assets/s_ncs_user_create_exp_exple02.png)
 

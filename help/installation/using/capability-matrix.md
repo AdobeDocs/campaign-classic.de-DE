@@ -19,7 +19,7 @@ Adobe Campaign Classic bietet verschiedene Module und Optionen. Die Verfügbarke
 
 Auf dieser Seite werden die Hauptunterschiede zwischen gehosteten (Managed Services) und On-Premise-Bereitstellungen angezeigt. Die Besonderheiten von Hybridbereitstellungen hängen von den Elementen ab, die von Adobe gehostet und in Ihren -Standorten gehostet werden.
 
-Die verschiedenen Hosting-Modelle werden [in diesem Abschnitt) ](../../installation/using/hosting-models.md).
+Die verschiedenen Hosting-Modelle werden [in diesem Abschnitt) &#x200B;](../../installation/using/hosting-models.md).
 
 ## Verfügbarkeit pro Bereitstellungsmodell {#capability-matrix}
 

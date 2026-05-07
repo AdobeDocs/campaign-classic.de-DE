@@ -153,7 +153,7 @@ Folgen Sie den unten beschriebenen Schritten, um einem bestehenden Workflow eine
 
    ![](assets/acs_connect_profile_sync_18.png)
 
-1. Wählen Sie mit einem Doppelklick den Kanal **[!UICONTROL E-Mail-Versand]** aus. **** Klicken Sie auf **[!UICONTROL OK]**, um die Nachrichten zu senden.
+1. Wählen Sie mit einem Doppelklick den Kanal **[!UICONTROL E-Mail-Versand]** aus. **&#x200B;**&#x200B;Klicken Sie auf **[!UICONTROL OK]**, um die Nachrichten zu senden.
 
    ![](assets/acs_connect_profile_sync_19.png)
 

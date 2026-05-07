@@ -39,10 +39,10 @@ Konto, mit dem die Anmeldung bei Salesforce CRM erfolgt
 Passwort für die Anmeldung bei Salesforce CRM.
 
    * **[!UICONTROL Client-Kennung]**
-Auf dieser Seite erfahren Sie, wo Sie Ihre Client[Kennung ](https://help.salesforce.com/articleView?id=000205876&type=1).
+Auf dieser Seite erfahren Sie, wo Sie Ihre Client[Kennung &#x200B;](https://help.salesforce.com/articleView?id=000205876&type=1).
 
    * **[!UICONTROL Security-Token]**
-Auf dieser Seite erfahren Sie, wo Sie Ihr Sicherheits[Token ](https://help.salesforce.com/articleView?id=000205876&type=1).
+Auf dieser Seite erfahren Sie, wo Sie Ihr Sicherheits[Token &#x200B;](https://help.salesforce.com/articleView?id=000205876&type=1).
 
    * **[!UICONTROL API-Version]**
 Wählen Sie die Version der API aus.

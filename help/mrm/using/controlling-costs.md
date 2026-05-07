@@ -235,7 +235,7 @@ Im Folgenden wird eine Kampagne mit folgenden Elementen erstellt:
 
 1. Erstellen Sie einen Dienstleister sowie eine Dienstleistungsvorlage mit Kostenstruktur über den Knoten **[!UICONTROL Administration > Kampagnen > Dienstleister]**. Weitere Informationen hierzu finden Sie unter [Erstellen eines Dienstleisters und seiner Kostenkategorien](../../campaign/using/providers-stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
 
-   Erstellen Sie für die Briefpost-Sendungen Kostenkategorien **[!UICONTROL Briefumschläge]** (Typen 114x229 und 162x229), **** und **[!UICONTROL Drucken]** (Typen A3 und A4). Erstellen Sie dann die folgenden Kostenstrukturen:
+   Erstellen Sie für die Briefpost-Sendungen Kostenkategorien **[!UICONTROL Briefumschläge]** (Typen 114x229 und 162x229), **&#x200B;**&#x200B;und **[!UICONTROL Drucken]** (Typen A3 und A4). Erstellen Sie dann die folgenden Kostenstrukturen:
 
    ![](assets/s_user_cost_mgmt_sample_2.png)
 

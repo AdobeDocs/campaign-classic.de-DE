@@ -114,7 +114,7 @@ Bevor Sie Ihren Bericht veröffentlichen, stellen Sie im Tab **[!UICONTROL Vorsc
 
 Wählen Sie entsprechend den Anzeigeparametern des Berichts zwischen den Optionen **[!UICONTROL Global]** und **[!UICONTROL Auswahl]**.
 
-Diese beiden Optionen werden entsprechend den Anzeigeeinstellungen des Berichts ausgewählt. Wenn der gewählte Anzeigeparameter **[!UICONTROL Global]** ist, wählen Sie die gleichnamige Vorschauoption.**** Wenn die Anzeigeeinstellungen **[!UICONTROL Einzelauswahl]** oder **[!UICONTROL Mehrfachauswahl]**, die **[!UICONTROL Auswahl]** Die Vorschauoption muss ausgewählt sein.
+Diese beiden Optionen werden entsprechend den Anzeigeeinstellungen des Berichts ausgewählt. Wenn der gewählte Anzeigeparameter **[!UICONTROL Global]** ist, wählen Sie die gleichnamige Vorschauoption.**&#x200B;** Wenn die Anzeigeeinstellungen **[!UICONTROL Einzelauswahl]** oder **[!UICONTROL Mehrfachauswahl]**, die **[!UICONTROL Auswahl]** Die Vorschauoption muss ausgewählt sein.
 
 Weitere Informationen hierzu finden Sie unter [Anzeigekontext von Berichten](#report-display-context).
 

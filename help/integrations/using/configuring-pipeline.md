@@ -28,7 +28,7 @@ Die Auslöser werden für die Zielgruppenbestimmung eines Kampagnen-Workflows ve
 Bevor Sie mit der Konfiguration beginnen, überprüfen Sie bitte, ob Folgendes vorhanden ist:
 
 * Ein Adobe Developer-Projekt
-* Eine gültige Organisations-ID. Auf [ Seite erfahren Sie, wie Sie Ihre Organisations-ID finden](https://experienceleague.adobe.com/de/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255){_blank}
+* Eine gültige Organisations-ID. Auf [&#x200B; Seite erfahren Sie, wie Sie Ihre Organisations-ID finden](https://experienceleague.adobe.com/de/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255){_blank}
 * Ein Entwicklerzugriff auf die Organisation
 * Eine gültige Trigger-Konfiguration in Adobe Analytics
 

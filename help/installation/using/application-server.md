@@ -29,7 +29,7 @@ Sie müssen zunächst ein JDK auf den Computern installieren, auf denen Sie den 
 
 Die Anwendung wurde für das von Oracle entwickelte Java Development Kit (JDK) sowie für **OpenJDK** genehmigt.
 
-Die unterstützten Versionen werden in der Campaign-[ (Kompatibilitätsmatrix) ](../../rn/using/compatibility-matrix.md).
+Die unterstützten Versionen werden in der Campaign-[&#x200B; (Kompatibilitätsmatrix) &#x200B;](../../rn/using/compatibility-matrix.md).
 
 
 >[!AVAILABILITY]
@@ -91,7 +91,7 @@ Sie können Adobe Campaign verwenden, um Berichte in Microsoft Excel und Adobe P
 
 >[!NOTE]
 >
->Für Linux müssen Sie Schriftarten hinzufügen. Weitere Informationen hierzu finden Sie unter [ für MTA-Statistiken](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#fonts-for-mta-statistics).
+>Für Linux müssen Sie Schriftarten hinzufügen. Weitere Informationen hierzu finden Sie unter [&#x200B; für MTA-Statistiken](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#fonts-for-mta-statistics).
 
 ## SpamAssassin {#spamassassin}
 

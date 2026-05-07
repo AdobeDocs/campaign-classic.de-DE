@@ -36,7 +36,7 @@ Die Konfiguration der Organisations-ID ist nicht gültig.
 
 1. Überprüfen Sie, ob die Organisations-ID (ImsOrgId) in der Datei serverConf.xml festgelegt ist.
 1. Überprüfen Sie, ob eine leere Organisations-ID in der Konfigurationsdatei der Instanz die standardmäßige überschreiben könnte. Wenn vorhanden, entfernen Sie sie.
-1. Überprüfen Sie, ob die Organisations-ID korrekt ist. Auf [ Seite erfahren Sie, wie Sie Ihre Organisations-ID finden](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=de){_blank}
+1. Überprüfen Sie, ob die Organisations-ID korrekt ist. Auf [&#x200B; Seite erfahren Sie, wie Sie Ihre Organisations-ID finden](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=de){_blank}
 
 **Pipelined schlägt fehl mit der Fehlermeldung &quot;invalid key&quot;**
 

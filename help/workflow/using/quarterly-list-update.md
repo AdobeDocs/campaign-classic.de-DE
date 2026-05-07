@@ -34,6 +34,6 @@ Da diese Kampagnen zu Beginn jeder Saison gestartet werden, um relevante sportli
 
    ![](assets/incremental_query_example_2.png)
 
-1. Konfigurieren Sie nun die Aktivität Listen-Update (wie im Abschnitt ](list-update.md)Listen-Update[ beschrieben).
+1. Konfigurieren Sie nun die Aktivität Listen-Update (wie im Abschnitt [&#128279;](list-update.md)Listen-Update beschrieben).
 
 Der Workflow wird daher automatisch kurz vor Beginn jeder Staffel gestartet. Die Liste wird mit neuen geeigneten Empfängern aktualisiert, um die Angebote zu erhalten.

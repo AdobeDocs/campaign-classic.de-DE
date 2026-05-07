@@ -46,7 +46,7 @@ Auf diese Weise können Sie die zugrunde liegende SQL isolieren. Die Abfragespra
 
 Weitere Informationen hierzu finden Sie unter [Beispiel zur Methode „ExecuteQuery“ des Schemas „xtk:queryDef&quot;](../../configuration/using/web-service-calls.md#example-on-the--executequery--method-of-schema--xtk-querydef-).
 
-Die **ExecuteQuery**-Methode wird in [ExecuteQuery (xtk:queryDef) ](#executequery--xtk-querydef-).
+Die **ExecuteQuery**-Methode wird in [ExecuteQuery (xtk:queryDef) &#x200B;](#executequery--xtk-querydef-).
 
 ### Schreiben {#write}
 
@@ -56,7 +56,7 @@ Mit Transaktions-APIs können Sie Abstimmungen über den Befehl **updateOrInsert
 
 Die XML-Struktur bietet eine logische Ansicht der Daten und ermöglicht es Ihnen, die physische Struktur der SQL-Tabelle zu umgehen.
 
-Die Write-Methode wird in [Write/WriteCollection (xtk:session) ](#write---writecollection--xtk-session-).
+Die Write-Methode wird in [Write/WriteCollection (xtk:session) &#x200B;](#write---writecollection--xtk-session-).
 
 ## ExecuteQuery (xtk:queryDef) {#executequery--xtk-querydef-}
 

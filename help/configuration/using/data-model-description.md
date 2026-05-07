@@ -23,7 +23,7 @@ Um Beschreibungen der einzelnen Tabellen aufzurufen, navigieren Sie zu **[!UICON
 
 >[!NOTE]
 >
->Die physische und logische Struktur der in der Anwendung übertragenen Daten wird in XML beschrieben. Sie folgt einer Adobe Campaign-spezifischen Grammatik namens „Schema“. Weitere Informationen zu Adobe Campaign-Schemata finden Sie [ (diesem Abschnitt](../../configuration/using/about-schema-reference.md).
+>Die physische und logische Struktur der in der Anwendung übertragenen Daten wird in XML beschrieben. Sie folgt einer Adobe Campaign-spezifischen Grammatik namens „Schema“. Weitere Informationen zu Adobe Campaign-Schemata finden Sie [&#x200B; (diesem Abschnitt](../../configuration/using/about-schema-reference.md).
 
 ## Beschreibung der Haupttabellen {#description-main-tables}
 

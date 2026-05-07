@@ -37,7 +37,7 @@ Gehen Sie wie folgt vor:
 
    Wählen Sie nun den Filtertyp aus.
 
-   Die Vorgehensweise ist mit der der Abfrageaktivität identisch.****
+   Die Vorgehensweise ist mit der der Abfrageaktivität identisch.**&#x200B;**
 
    >[!NOTE]
    >
@@ -49,7 +49,7 @@ Gehen Sie wie folgt vor:
 
    ![](assets/s_user_segmentation_partage4.png)
 
-1. **** Durch Klick auf die Schaltfläche **[!UICONTROL Hinzufügen]** können Sie weitere Teilmengen definieren.
+1. **&#x200B;**&#x200B;Durch Klick auf die Schaltfläche **[!UICONTROL Hinzufügen]** können Sie weitere Teilmengen definieren.
 
    ![](assets/s_user_segmentation_partage_add.png)
 

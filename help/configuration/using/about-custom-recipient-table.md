@@ -48,7 +48,7 @@ Die Verwendung einer benutzerdefinierten Empfängertabelle weist die folgenden E
 
 * Sie können die im Produkt angebotenen **[!UICONTROL Services und Abonnements]** nicht verwenden.
 
-  Dies bedeutet, dass der in [diesem Abschnitt) beschriebene ](../../delivery/using/managing-subscriptions.md) nicht anwendbar ist.
+  Dies bedeutet, dass der in [diesem Abschnitt) beschriebene &#x200B;](../../delivery/using/managing-subscriptions.md) nicht anwendbar ist.
 
 * Die Verknüpfung mit der **[!UICONTROL Besucher]**-Tabelle funktioniert nicht.
 
@@ -62,7 +62,7 @@ Die Verwendung einer benutzerdefinierten Empfängertabelle weist die folgenden E
 
   >[!NOTE]
   >
-  >Empfängerlisten können weiterhin mithilfe von Workflows erstellt werden. Weitere Informationen hierzu finden Sie unter [ einer Profilliste mit einem Workflow](../../configuration/using/creating-a-profile-list-with-a-workflow.md).
+  >Empfängerlisten können weiterhin mithilfe von Workflows erstellt werden. Weitere Informationen hierzu finden Sie unter [&#x200B; einer Profilliste mit einem Workflow](../../configuration/using/creating-a-profile-list-with-a-workflow.md).
 
 Es wird außerdem empfohlen, die in den verschiedenen vordefinierten Konfigurationen verwendeten Standardwerte zu überprüfen: Je nach den verwendeten Funktionen müssen mehrere Anpassungen vorgenommen werden.
 

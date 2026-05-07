@@ -22,9 +22,9 @@ ht-degree: 73%
 
 Mit einer **[!UICONTROL Abfrageaktivität]** können Sie grundlegende Daten zum Aufbau der Zielpopulation auswählen. Weitere Informationen hierzu finden Sie unter [Abfragen erstellen](query.md#creating-a-query).
 
-Sie können auch mithilfe der folgenden Aktivitäten Daten aus der Datenbank abfragen und weiter filtern: [Inkrementelle Abfrage ](incremental-query.md), [Liste lesen](read-list.md).
+Sie können auch mithilfe der folgenden Aktivitäten Daten aus der Datenbank abfragen und weiter filtern: [Inkrementelle Abfrage &#x200B;](incremental-query.md), [Liste lesen](read-list.md).
 
-Es ist möglich, zusätzliche Daten zu sammeln, die während des gesamten Lebenszyklus des Workflows weitergeleitet und verarbeitet werden. Weitere Informationen hierzu finden Sie unter [Daten hinzufügen ](query.md#adding-data)und [Zusätzliche Daten bearbeiten](#editing-additional-data).
+Es ist möglich, zusätzliche Daten zu sammeln, die während des gesamten Lebenszyklus des Workflows weitergeleitet und verarbeitet werden. Weitere Informationen hierzu finden Sie unter [Daten hinzufügen &#x200B;](query.md#adding-data)und [Zusätzliche Daten bearbeiten](#editing-additional-data).
 
 ### Bearbeiten zusätzlicher Daten {#editing-additional-data}
 
@@ -178,9 +178,9 @@ Zur Konfiguration wählen Sie zunächst die Bedingungen aus:
 
    Weitere Informationen hierzu finden Sie je nach Campaign-Version in den folgenden Abschnitten:
 
-   ![](assets/do-not-localize/v7.jpeg)[Dokumentation zu Campaign v7](../../installation/using/about-fda.md)
+   ![](assets/do-not-localize/v7.jpeg) [Dokumentation zu Campaign v7](../../installation/using/about-fda.md)
 
-   ![](assets/do-not-localize/v8.png)[Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=de)
+   ![](assets/do-not-localize/v8.png) [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=de)
 
 Danach müssen neue Teilmengen hinzugefügt werden:
 

@@ -76,7 +76,7 @@ Standardmäßig wird jede Übersetzungssprache der Web-Anwendung angezeigt. Es g
 
 Gehen Sie zur Dropdown-Liste **[!UICONTROL Sprache]**, um die Übersetzungssprache auszuwählen.
 
-Um nur nicht übersetzte Zeichenfolgen anzuzeigen, wählen **[!UICONTROL Zu übersetzen]** in der Dropdown-]**„Status**[!UICONTROL  aus. Sie können auch nur übersetzte oder genehmigte Zeichenfolgen anzeigen.
+Um nur nicht übersetzte Zeichenfolgen anzuzeigen, wählen **[!UICONTROL Zu übersetzen]** in der Dropdown-**„Status** aus. Sie können auch nur übersetzte oder genehmigte Zeichenfolgen anzeigen.
 
 ### Strings übersetzen {#translating-strings}
 
@@ -169,7 +169,7 @@ wenn die Sprache der erste oder einzige Parameter der URL ist. Beispiel: **https
 &lang=xx
 ```
 
-wenn es in der URL vor der Sprache noch andere Parameter gibt. Beispiel: **https://myserver/webApp/APP34?status=1&amp;lang=en**
+wenn es in der URL vor der Sprache noch andere Parameter gibt. Beispiel: **https://myserver/webApp/APP34?status=1&lang=en**
 
 Die standardmäßig verfügbaren Übersetzungssprachen und Wörterbücher sind unten aufgeführt.
 
@@ -430,7 +430,7 @@ Fügen Sie **?lang=es** oder **?lang=de** hinzu, um den Inhalt auf Spanisch oder
 >[!NOTE]
 >
 >Wenn für diese Webanwendung bereits andere Parameter verwendet werden, fügen Sie **&amp;lang=** hinzu.\
->Beispiel: **https://myserver/webApp/APP34?status=1&amp;lang=en**
+>Beispiel: **https://myserver/webApp/APP34?status=1&lang=en**
 
 ## Erweiterte Übersetzungskonfiguration {#advanced-translation-configuration}
 

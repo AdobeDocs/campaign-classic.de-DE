@@ -26,9 +26,9 @@ Vor der Konfiguration der Aktivität müssen folgende Voraussetzungen gegeben se
 
   Weitere Informationen hierzu finden Sie je nach Campaign-Version in den folgenden Abschnitten:
 
-  ![](assets/do-not-localize/v7.jpeg)[Dokumentation zu Campaign v7](../../installation/using/about-fda.md)
+  ![](assets/do-not-localize/v7.jpeg) [Dokumentation zu Campaign v7](../../installation/using/about-fda.md)
 
-  ![](assets/do-not-localize/v8.png)[Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=de)
+  ![](assets/do-not-localize/v8.png) [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=de)
 
 * Das ausgehende Schema muss in der Datenbank vorhanden und mit einer FDA-Datenbank verknüpft sein.
 * Für den Operator, der den Workflow ausführt, muss die **[!UICONTROL ANGEBOTSAKTIVITÄT SQL-DATEN-MANAGEMENT VERWENDEN (useSqlDmActivity)]** richtig benannt sein. [Weitere Informationen](../../platform/using/access-management-named-rights.md).

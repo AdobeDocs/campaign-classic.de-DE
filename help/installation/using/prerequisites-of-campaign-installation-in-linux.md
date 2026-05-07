@@ -21,7 +21,7 @@ ht-degree: 5%
 
 In diesem Abschnitt werden die vorbereitenden Konfigurationsschritte beschrieben, die vor der Installation von Adobe Campaign erforderlich sind.
 
-Die für die Installation von Adobe Campaign erforderliche technische Konfiguration und Softwarekonfiguration werden in der [Kompatibilitätsmatrix) ](../../rn/using/compatibility-matrix.md).
+Die für die Installation von Adobe Campaign erforderliche technische Konfiguration und Softwarekonfiguration werden in der [Kompatibilitätsmatrix) &#x200B;](../../rn/using/compatibility-matrix.md).
 
 Zur Erinnerung: Die folgenden Komponenten müssen installiert und ordnungsgemäß konfiguriert sein:
 
@@ -168,7 +168,7 @@ Wenn Sie in der Client-Konsole feststellen, dass es unerwartete Zeitverzögerung
 
    Bei der Verwendung der Oracle Instant Client-Version wurden verschiedene Probleme festgestellt. Darüber hinaus ist es unmöglich, die Zeitzonendatei auf dem Instant Client zu ändern.
 
-1. Stellen Sie sicher, dass **Client-Version** und die **Datenbankserver-Version** identisch ****.
+1. Stellen Sie sicher, dass **Client-Version** und die **Datenbankserver-Version** identisch **&#x200B;**.
 
    Das Mischen von Versionen trotz der Kompatibilitätsmatrix von Oracle und der Empfehlung, Client- und Serverversionen aufeinander abzustimmen, verursacht bekanntermaßen Probleme.
 

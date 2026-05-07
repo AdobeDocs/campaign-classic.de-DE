@@ -192,7 +192,7 @@ Sie können eine Kontrollgruppe auf Kampagnenebene erstellen: In letzterem Fall 
 
    ![](assets/s_ncs_user_edit_op_general_tab_exe_target.png)
 
-Das Konfigurationsverfahren wird unter [Extraktion der Kontrollgruppe aus der Hauptzielgruppe](#extracting-the-control-group-from-the-main-target) und [Hinzufügen einer Kontrollgruppe ](#adding-a-population) beschrieben.
+Das Konfigurationsverfahren wird unter [Extraktion der Kontrollgruppe aus der Hauptzielgruppe](#extracting-the-control-group-from-the-main-target) und [Hinzufügen einer Kontrollgruppe &#x200B;](#adding-a-population) beschrieben.
 
 ### Aktivieren der Kontrollgruppe für einen Versand {#activating-the-control-group-for-a-delivery}
 
@@ -211,7 +211,7 @@ Standardmäßig gilt die auf Kampagnenebene definierte Kontrollgruppenkonfigurat
 1. Klicken Sie auf die Registerkarte **[!UICONTROL Kontrollgruppe]** und wählen Sie dann **[!UICONTROL Kontrollgruppe aktivieren und konfigurieren]**.
 1. Klicken Sie auf **[!UICONTROL Bearbeiten...]**, um die Kontrollgruppe zu konfigurieren.
 
-Das Konfigurationsverfahren wird unter [Extraktion der Kontrollgruppe aus der Hauptzielgruppe](#extracting-the-control-group-from-the-main-target) und [Hinzufügen einer Kontrollgruppe ](#adding-a-population) beschrieben.
+Das Konfigurationsverfahren wird unter [Extraktion der Kontrollgruppe aus der Hauptzielgruppe](#extracting-the-control-group-from-the-main-target) und [Hinzufügen einer Kontrollgruppe &#x200B;](#adding-a-population) beschrieben.
 
 ### Extrahieren der Kontrollgruppe aus der Hauptzielgruppe {#extracting-the-control-group-from-the-main-target}
 

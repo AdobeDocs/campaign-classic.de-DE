@@ -20,9 +20,9 @@ Die folgenden Workflows werden standardmäßig mit dem **Angebotsmodul (Interact
 
 Weitere Informationen hierzu finden Sie je nach Campaign-Version in den folgenden Abschnitten:
 
-![](assets/do-not-localize/v7.jpeg)[Dokumentation zu Campaign v7](../../interaction/using/interaction-and-offer-management.md)
+![](assets/do-not-localize/v7.jpeg) [Dokumentation zu Campaign v7](../../interaction/using/interaction-and-offer-management.md)
 
-![](assets/do-not-localize/v8.png)[Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/interaction/interaction.html?lang=de)
+![](assets/do-not-localize/v8.png) [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/interaction/interaction.html?lang=de)
 
 
 <table> 

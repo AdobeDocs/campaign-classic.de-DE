@@ -83,7 +83,7 @@ Gehen Sie wie folgt vor, um ein Datenschema zu erstellen:
 
    ![](assets/s_ncs_content_param_schema_step2.png)
 
-   Weitere Informationen hierzu finden Sie im Abschnitt [Schemabearbeitung ](data-schemas.md#editing-schemas).
+   Weitere Informationen hierzu finden Sie im Abschnitt [Schemabearbeitung &#x200B;](data-schemas.md#editing-schemas).
 
    Für jedes im Inhalt bezeichnete Element muss der entsprechende Datentyp eingefügt werden.
 
@@ -360,7 +360,7 @@ Gehen Sie wie folgt vor:
 
 1. Erstellen Sie im Knoten **[!UICONTROL Administration > Konfiguration > Veröffentlichungsvorlagen]** eine neue Vorlage.
 1. Geben Sie Namen und Titel an und wählen Sie das jeweils zu verwendende Schema und Formular aus.
-1. Geben Sie dann den Namen der Vorlage ein und wählen Sie den gewünschten Rendermodus aus. Im vorliegenden Beispiel handelt es sich gemäß der zuvor erstellten Vorlage um JavaScript.****
+1. Geben Sie dann den Namen der Vorlage ein und wählen Sie den gewünschten Rendermodus aus. Im vorliegenden Beispiel handelt es sich gemäß der zuvor erstellten Vorlage um JavaScript.**&#x200B;**
 
    ![](assets/s_ncs_content_param_form_publish.png)
 

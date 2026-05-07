@@ -70,7 +70,7 @@ So konfigurieren Sie [!DNL Microsoft SQL Server] unter Windows:
 
 1. Überprüfen Sie, ob der SQL Server Native Client v11 im Fenster **[!UICONTROL Neue Daten-Source erstellen]** aufgeführt ist.
 
-1. Wenn der native SQL Server-Client nicht aufgeführt ist, können Sie ihn auf [dieser Seite) ](https://www.microsoft.com/en-my/download/details.aspx?id=36434).
+1. Wenn der native SQL Server-Client nicht aufgeführt ist, können Sie ihn auf [dieser Seite) &#x200B;](https://www.microsoft.com/en-my/download/details.aspx?id=36434).
 
 1. In Adobe Campaign können Sie dann Ihr externes [!DNL Microsoft SQL Server]-Konto konfigurieren. Weiterführende Informationen zur Konfiguration Ihres externen Kontos finden Sie in [diesem Abschnitt](#sql-external).
 
@@ -88,7 +88,7 @@ Sie müssen ein [!DNL Microsoft SQL Server] externes Konto erstellen, um Ihre Ca
 
    ![](assets/sql.png)
 
-1. Konfigurieren Sie die Authentifizierung des externen Microsoft SQL Server ]**-Kontos:**[!UICONTROL 
+1. Konfigurieren Sie die Authentifizierung des externen Microsoft SQL Server **-Kontos:**
 
    * **[!UICONTROL Server]**: URL des [!DNL Microsoft SQL Server].
 

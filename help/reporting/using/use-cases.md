@@ -181,7 +181,7 @@ Sie können Daten über die Symbolleiste oberhalb der Tabelle speichern, exporti
 
    ![](assets/s_ncs_user_report_wizard_from_transision.png)
 
-1. An dieser Stelle können Sie entweder die Option **[!UICONTROL Existierende Analysen und Berichte erneut verwenden]** auswählen und zuvor erstellte Berichte nutzen (siehe [Existierende Analysen und Berichte erneut verwenden ](../../reporting/using/processing-a-report.md#re-using-existing-reports-and-analyses)) oder eine neue deskriptive Analyse erstellen. Lassen Sie dazu die Option **[!UICONTROL Neue deskriptive Analyse basierend auf einer Vorlage]** standardmäßig aktiviert.
+1. An dieser Stelle können Sie entweder die Option **[!UICONTROL Existierende Analysen und Berichte erneut verwenden]** auswählen und zuvor erstellte Berichte nutzen (siehe [Existierende Analysen und Berichte erneut verwenden &#x200B;](../../reporting/using/processing-a-report.md#re-using-existing-reports-and-analyses)) oder eine neue deskriptive Analyse erstellen. Lassen Sie dazu die Option **[!UICONTROL Neue deskriptive Analyse basierend auf einer Vorlage]** standardmäßig aktiviert.
 
    Die weitere Konfiguration entspricht der der zuvor dargestellten deskriptiven Analysen.
 

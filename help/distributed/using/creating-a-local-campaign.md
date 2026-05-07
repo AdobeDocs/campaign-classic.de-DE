@@ -345,7 +345,7 @@ Für jede Lokalstelle werden Validierungsverantwortliche für die Kampagnenbeste
 
 ### Abbruch einer Bestellung {#canceling-an-order}
 
-Die Zentralstelle hat die Möglichkeit, eine Bestellung über die entsprechende Schaltfläche im Dashboard der Bestellung zu löschen und damit abzubrechen.****
+Die Zentralstelle hat die Möglichkeit, eine Bestellung über die entsprechende Schaltfläche im Dashboard der Bestellung zu löschen und damit abzubrechen.**&#x200B;**
 
 ![](assets/mkg_dist_local_op_cancel.png)
 

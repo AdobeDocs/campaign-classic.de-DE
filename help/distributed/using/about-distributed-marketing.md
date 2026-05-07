@@ -26,7 +26,7 @@ Die Zentralstelle stellt Kampagnen bereit, die Lokalstellen nutzen können. Kamp
 
 >[!NOTE]
 >
->Weitere Informationen zum verteilten Marketing für Adobe Campaign und dessen Verwendung finden Sie in der [ zu Campaign v8 ](https://experienceleague.adobe.com/de/docs/campaign/automation/distributed-marketing/about-distributed-marketing){target=_blank}.
+>Weitere Informationen zum verteilten Marketing für Adobe Campaign und dessen Verwendung finden Sie in der [&#x200B; zu Campaign v8 &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/automation/distributed-marketing/about-distributed-marketing){target=_blank}.
 
 <!--
 ## Terminology {#terminology}

@@ -339,7 +339,7 @@ Klicken Sie auf eine PublicId-Kennung, um weitere Details anzuzeigen.
 
 Der technische **[!UICONTROL „Abrechnung]** sendet den Systemaktivitätsbericht per E-Mail an den fakturierungsverantwortlichen Benutzer. Sie wird standardmäßig am 25. jedes Monats in der Marketing-Instanz ausgelöst.
 
-Der technische Workflow befindet sich in einem Unterordner des folgenden Knotens: **Administration** > **** > **Technische Workflows**.
+Der technische Workflow befindet sich in einem Unterordner des folgenden Knotens: **Administration** > **&#x200B;**&#x200B;> **Technische Workflows**.
 
 ![](assets/billing.png)
 

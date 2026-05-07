@@ -16,7 +16,7 @@ ht-degree: 50%
 
 
 
-Zusätzlich zu [ integrierten Berichten ](../../reporting/using/about-campaign-built-in-reports.md) Sie mit Adobe Campaign Berichte in verschiedenen Kontexten und für unterschiedliche Anforderungen erstellen. Die Grundsätze der Verwendung und die Implementierungsmodi werden in diesem Dokument beschrieben.
+Zusätzlich zu [&#x200B; integrierten Berichten &#x200B;](../../reporting/using/about-campaign-built-in-reports.md) Sie mit Adobe Campaign Berichte in verschiedenen Kontexten und für unterschiedliche Anforderungen erstellen. Die Grundsätze der Verwendung und die Implementierungsmodi werden in diesem Dokument beschrieben.
 
 Adobe Campaign ist kein spezielles Reporting-Tool: In Adobe Campaign erstellte Berichte ermöglichen es Ihnen hauptsächlich, aggregierte Daten anzuzeigen. Adobe Campaign-Berichte, die Daten analysieren und darstellen, sind nicht für Datenbankexporte konzipiert.
 

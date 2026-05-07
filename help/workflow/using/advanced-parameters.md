@@ -82,4 +82,4 @@ In diesem Feld können Sie Variablen initialisieren oder Aktivitätseigenschafte
 
 ## Kommentar {#comment}
 
-Hier kann eine Beschreibung eingegeben werden. Es handelt sich um ein freies Textfeld.****
+Hier kann eine Beschreibung eingegeben werden. Es handelt sich um ein freies Textfeld.**&#x200B;**

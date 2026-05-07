@@ -18,7 +18,7 @@ ht-degree: 12%
 >
 >Einige integrierte Schemata dürfen nicht erweitert werden, insbesondere diejenigen, für die die folgenden Einstellungen definiert sind:\
 >**dataSource=„file“** und **mappingType=„xmlFile“**.\
->Folgende Schemata dürfen nicht erweitert werden: **xtk:entityBackupNew**, **xtk:entityBackupOriginal**, **xtk:entityOriginal**, **xtk:form**, **xtk:srcSchema**, **ncm:publishing**, **nms**, **nms:remoteTracking**, **nms:monitoring**,xtk :calendar**,:userAgentRules** xtk **: jst:builder**, xtk **:connections** xtk **,:dbInit** xtk **,:funcList** xtk **,:fusion** xtk **,** xtk **,:navtree** xtkTk **, xtkTk:queryDef** **:resourceMenu** **:schema** **:scriptContext** **:session** **:sqlSchema** **:strings**.
+>Folgende Schemata dürfen nicht erweitert werden: **xtk:entityBackupNew**, **xtk:entityBackupOriginal**, **xtk:entityOriginal**, **xtk:form**, **xtk:srcSchema**, **ncm:publishing**, **nms**, **nms:remoteTracking**, **nms:monitoring**,xtk :calendar&#x200B;**,:userAgentRules** xtk **: jst:builder**, xtk **:connections** xtk **,:dbInit** xtk **,:funcList** xtk **,:fusion** xtk **,** xtk **,:navtree** xtkTk **, xtkTk:queryDef** **:resourceMenu** **:schema** **:scriptContext** **:session** **:sqlSchema** **:strings**.
 >Diese Liste ist nicht vollständig.
 
 Es gibt zwei Methoden zum Erweitern eines vorhandenen Schemas:

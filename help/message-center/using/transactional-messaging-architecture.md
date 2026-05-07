@@ -86,7 +86,7 @@ Wenn Sie jedoch ein Transaktionsnachrichtenprojekt auf dem E-Mail-Kanal gestarte
 >Dieses Verfahren gilt nur für Kunden, die einen Windows NLServer verwenden, der auf demselben Computer installiert ist, auf dem sie arbeiten.
 
 1. Installieren Sie den benötigten Kanal, zum Beispiel den **mobilen Kanal**, mithilfe des Package-Import-Assistenten (**[!UICONTROL Tools > Erweitert > Package importieren... > Adobe Campaign-Package]**).
-1. Führen Sie einen Dateiimport durch (**[!UICONTROL Tools > Erweitert > Package-Import... > Datei]**) und wählen Sie die Datei **datakitnms **`[Your language]`**packagemessageCenter.xml** aus.
+1. Führen Sie einen Dateiimport durch (**[!UICONTROL Tools > Erweitert > Package-Import... > Datei]**) und wählen Sie die Datei **datakitnms &#x200B;**`[Your language]`**packagemessageCenter.xml** aus.
 1. Behalten Sie im Bereich **[!UICONTROL XML-Inhalt der zu importierenden Daten]** nur die Versandvorlage bei, die dem hinzugefügten Kanal entspricht. Wenn Sie beispielsweise den **mobilen Kanal** gewählt haben, behalten Sie nur das Element **Entitäten** bei, das der Vorlage **[!UICONTROL Mobil-Transaktionsnachricht]** (smsTriggerMessage) entspricht. Wenn Sie den **Mobile App-Kanal** hinzugefügt haben, behalten Sie nur die **iOS-Transaktionsnachricht** (iosTriggerMessage) und die **Android-Transaktionsnachricht** (androidTriggerMessage) bei.
 
    ![](assets/messagecenter_install_channel.png)
@@ -140,7 +140,7 @@ In Kombination mit dem Mobile-App-Kanal-Modul können Sie über Benachrichtigung
 Um Transaktionsnachrichten-Module in Verbindung mit dem Mobile-App-Kanal zu nutzen, sind folgende Konfigurationen notwendig:
 
 1. Installieren Sie das Package **Mobile App Channel** in den Kontroll- und Ausführungsinstanzen.
-1. Replizieren Sie den Dienst sowie die Applikationen, die dieser in den Ausführungsinstanzen enthält.****
+1. Replizieren Sie den Dienst sowie die Applikationen, die dieser in den Ausführungsinstanzen enthält.**&#x200B;**
 
 Das betreffende Ereignis muss folgende Elemente enthalten:
 

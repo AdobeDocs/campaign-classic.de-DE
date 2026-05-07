@@ -18,7 +18,7 @@ ht-degree: 86%
 
 Gestaltungsbausteine sind dynamisch und personalisiert und enthalten ein spezifisches Rendering, das Sie in Ihre Sendungen einfügen können. Sie können zum Beispiel ein Logo, eine Grußnachricht oder einen Link zur Mirrorseite hinzufügen. Siehe [Einfügen von Gestaltungsbausteinen](#inserting-personalization-blocks).
 
-![](assets/do-not-localize/how-to-video.png)[ Mehr zu dieser Funktion erfahren Sie im Video.](#personalization-blocks-video).
+![](assets/do-not-localize/how-to-video.png) [&#x200B; Mehr zu dieser Funktion erfahren Sie im Video.](#personalization-blocks-video).
 
 Auf Gestaltungsbausteine kann im Adobe Campaign-Explorer über den Knoten **[!UICONTROL Ressourcen > Kampagnenverwaltung > Gestaltungsbausteine]** zugegriffen werden. Standardmäßig sind verschiedene Bausteine verfügbar (siehe [Native Gestaltungsbausteine](#out-of-the-box-personalization-blocks)).
 

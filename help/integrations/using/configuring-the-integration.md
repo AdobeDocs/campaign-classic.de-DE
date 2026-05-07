@@ -48,7 +48,7 @@ Installieren Sie zunächst das **[!UICONTROL AEM-Integrations]**-Package.
 
 ### Sicherheitszone für AEM-Operator konfigurieren {#configure-the-security-zone-for-aem-operator}
 
-Das Package Integration mit AEM **** legt den **[!UICONTROL aemserver]**-Operator in Campaign fest. Dieser Operator wird verwendet, um den Adobe Experience Manager-Server mit Adobe Campaign zu verbinden.
+Das Package Integration mit AEM **&#x200B;**&#x200B;legt den **[!UICONTROL aemserver]**-Operator in Campaign fest. Dieser Operator wird verwendet, um den Adobe Experience Manager-Server mit Adobe Campaign zu verbinden.
 
 Sie müssen für diesen Operator eine Sicherheitszone konfigurieren, um über Adobe Experience Manager eine Verbindung mit Adobe Campaign herzustellen.
 

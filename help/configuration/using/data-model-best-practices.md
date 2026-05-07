@@ -17,7 +17,7 @@ In diesem Dokument werden die wichtigsten Empfehlungen beim Entwerfen Ihres Adob
 
 Genauere Informationen zu den integrierten Campaign-Tabellen und ihrer Interaktion finden Sie in [diesem Abschnitt](../../configuration/using/about-data-model.md).
 
-Lesen Sie [diese Dokumentation](../../configuration/using/about-schema-reference.md) um mit Campaign-Schemata zu beginnen. Erfahren Sie in diesem Dokument, wie Sie Erweiterungsschemata konfigurieren können, um das konzeptionelle Datenmodell der Adobe Campaign[Datenbank zu ](../../configuration/using/about-schema-edition.md).
+Lesen Sie [diese Dokumentation](../../configuration/using/about-schema-reference.md) um mit Campaign-Schemata zu beginnen. Erfahren Sie in diesem Dokument, wie Sie Erweiterungsschemata konfigurieren können, um das konzeptionelle Datenmodell der Adobe Campaign[Datenbank zu &#x200B;](../../configuration/using/about-schema-edition.md).
 
 ## Überblick {#overview}
 
@@ -39,7 +39,7 @@ Dieser kundenorientierte Ansatz wird in der Grafik unten dargestellt. Die **Empf
 
 Um Beschreibungen der einzelnen Tabellen aufzurufen, navigieren Sie zu **[!UICONTROL &quot;Admin&quot; > &quot;Konfiguration&quot; > &quot;Datenschemata&quot;]**, wählen Sie eine Ressource aus der Liste und klicken Sie auf die Registerkarte **[!UICONTROL Dokumentation]**.
 
-Das standardmäßige Adobe Campaign-Datenmodell wird in [diesem Dokument) ](../../configuration/using/data-model-description.md).
+Das standardmäßige Adobe Campaign-Datenmodell wird in [diesem Dokument) &#x200B;](../../configuration/using/data-model-description.md).
 
 >[!NOTE]
 >

@@ -40,7 +40,7 @@ Sie können einen der folgenden gängigen Browser herunterladen und installieren
 
 Wenn Sie einen anderen Browser verwenden möchten, stellen Sie sicher, dass dieser TLS 1.2 unterstützt.
 
-Ihr Betriebssystem und Ihre Anwendungen müssen auch TLS 1.2 unterstützen. Wenn die Aktualisierung Ihres Browsers Ihr Problem nicht behebt, stellen Sie sicher, dass Ihr Computer die in der [Campaign-Kompatibilitätsmatrix“ aufgeführten Systemanforderungen ](../../rn/using/compatibility-matrix.md).
+Ihr Betriebssystem und Ihre Anwendungen müssen auch TLS 1.2 unterstützen. Wenn die Aktualisierung Ihres Browsers Ihr Problem nicht behebt, stellen Sie sicher, dass Ihr Computer die in der [Campaign-Kompatibilitätsmatrix“ aufgeführten Systemanforderungen &#x200B;](../../rn/using/compatibility-matrix.md).
 
 ## Häufig gestellte Fragen{#faq}
 

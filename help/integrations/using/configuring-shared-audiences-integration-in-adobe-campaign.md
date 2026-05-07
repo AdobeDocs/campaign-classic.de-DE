@@ -62,7 +62,7 @@ URL Ihres Servers, sollte sie wie folgt ausgefüllt werden:
 Informationen dazu, wo Sie Ihre AWS-Zugriffsschlüssel-ID finden, finden Sie auf dieser [Seite](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) .
 
    * **[!UICONTROL Geheimer Zugriffsschlüssel für AWS]**
-Auf dieser Seite erfahren Sie, wo Sie Ihren geheimen Zugriffsschlüssel für AWS [ finden](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/).
+Auf dieser Seite erfahren Sie, wo Sie Ihren geheimen Zugriffsschlüssel für AWS [&#x200B; finden](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/).
 
    * **[!UICONTROL AWS-Region]**
 Weitere Informationen zur Region AWS finden Sie auf dieser [Seite](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/).

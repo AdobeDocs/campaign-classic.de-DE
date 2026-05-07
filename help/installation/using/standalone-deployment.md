@@ -222,13 +222,13 @@ Gehen Sie wie folgt vor:
 
    Führen Sie die Schritte im Assistenten aus und erstellen Sie die mit der Verbindungsinstanz verknüpfte Datenbank.
 
-   Weitere Informationen hierzu finden Sie unter [ und Konfiguration der Datenbank](../../installation/using/creating-and-configuring-the-database.md).
+   Weitere Informationen hierzu finden Sie unter [&#x200B; und Konfiguration der Datenbank](../../installation/using/creating-and-configuring-the-database.md).
 
    Melden Sie sich nach der Erstellung der Datenbank ab.
 
 1. Melden Sie sich über die Option **admin** ohne Kennwort wieder bei der Client-Konsole an und starten Sie den Bereitstellungsassistenten (Menü **[!UICONTROL Tools > Erweitert]**), um die Konfiguration der Instanz abzuschließen.
 
-   Weitere Informationen hierzu finden Sie unter &quot;[ einer Instanz](../../installation/using/deploying-an-instance.md).
+   Weitere Informationen hierzu finden Sie unter &quot;[&#x200B; einer Instanz](../../installation/using/deploying-an-instance.md).
 
    Die wichtigsten festzulegenden Parameter sind:
 

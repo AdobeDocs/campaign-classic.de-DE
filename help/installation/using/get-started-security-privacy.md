@@ -84,7 +84,7 @@ Die Konfiguration muss auf allen Servern durchgeführt werden. Die Konfiguration
 
 * **Schutz ausgehender Verbindungen** und **Befehlsbeschränkung** (Server-seitig)
 
-* Sie können auch zusätzliche HTTP-Kopfzeilen hinzufügen, checkIPConsistent aktivieren, TLS aktivieren, sessionTimeOutSec aktivieren usw. Weitere Informationen finden Sie in der [Dokumentation zur Campaign](../../installation/using/configuring-campaign-server.md)Serverkonfiguration und in der [](../../installation/using/the-server-configuration-file.md)Beschreibung der Serverkonfigurationsdatei“.
+* Sie können auch zusätzliche HTTP-Kopfzeilen hinzufügen, checkIPConsistent aktivieren, TLS aktivieren, sessionTimeOutSec aktivieren usw. Weitere Informationen finden Sie in der [Dokumentation zur Campaign](../../installation/using/configuring-campaign-server.md)Serverkonfiguration und in der [&#128279;](../../installation/using/the-server-configuration-file.md)Beschreibung der Serverkonfigurationsdatei“.
 
 [Mehr dazu](../../installation/using/server-configuration.md)
 
