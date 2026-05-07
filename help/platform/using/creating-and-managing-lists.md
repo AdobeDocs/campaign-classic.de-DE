@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 711b84cd-bac8-4f1a-9999-0124fbfc3a01
 source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
-workflow-type: ht
-source-wordcount: '93'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '104'
+ht-degree: 62%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 100%
 
 
 
-## Definition einer Liste  {#about-lists-in-adobe-campaign}
+## Definition einer Liste {#about-lists-in-adobe-campaign}
 
-Eine Liste ist eine statische Gruppe von Profilen, die als Zielgruppe für Sendungen verwendet oder durch Importe sowie Workflows aktualisiert werden kann. So kann beispielsweise eine mithilfe einer Abfrage aus der Datenbank extrahierte Population in einer Liste gespeichert werden.
+Eine Liste ist ein statischer Satz von Profilen, die als Zielgruppe für Sendungen verwendet oder während des Imports oder Workflows aktualisiert werden können. Beispielsweise kann eine Population, die über eine Abfrage aus der Datenbank extrahiert wird, eine Liste bereitstellen.
 
 Listen werden über den Link **[!UICONTROL Listen]** auf der Registerkarte **[!UICONTROL Profile und Zielgruppen]** erstellt und verwaltet.
 
@@ -139,14 +139,14 @@ A list is a static set of recipients that can be targeted in delivery actions or
 
 Learn how to create an audience by configuring a list of recipients from the Explorer.
 
->[!VIDEO](https://video.tv.adobe.com/v/27502?captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
 
 ### How use a workflow to create a list of recipients {#create-list-in-a-wf-video}
 
 Learn how create a workflow in order to target recipients and how to make it recurring before using the list in an email target.
 
->[!VIDEO](https://video.tv.adobe.com/v/30195?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25603?quality=12)
 
-Additional Campaign Classic how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).
+Additional Campaign Classic how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
 
 -->

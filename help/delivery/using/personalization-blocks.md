@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: 'Gestaltungsbausteine '
+title: Gestaltungsbausteine
 description: Erfahren Sie, wie Sie Gestaltungsbausteine verwenden
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Personalization
@@ -9,14 +9,14 @@ hide: true
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '978'
-ht-degree: 100%
+source-wordcount: '1002'
+ht-degree: 86%
 
 ---
 
-# Gestaltungsbausteine {#personalization-blocks}
+# Gestaltungsbausteine{#personalization-blocks}
 
-Gestaltungsbausteine sind dynamisch und personalisierbar und weisen ein spezifisches Rendering auf. Sie können Gestaltungsbausteine in Nachrichten einfügen, z. B. ein Logo, eine Grußbotschaft oder einen Link zu einer Mirrorseite. Siehe [Einfügen von Gestaltungsbausteinen](#inserting-personalization-blocks).
+Gestaltungsbausteine sind dynamisch und personalisiert und enthalten ein spezifisches Rendering, das Sie in Ihre Sendungen einfügen können. Sie können zum Beispiel ein Logo, eine Grußnachricht oder einen Link zur Mirrorseite hinzufügen. Siehe [Einfügen von Gestaltungsbausteinen](#inserting-personalization-blocks).
 
 ![](assets/do-not-localize/how-to-video.png)[ Mehr zu dieser Funktion erfahren Sie im Video.](#personalization-blocks-video).
 
@@ -41,7 +41,7 @@ Gehen Sie folgendermaßen vor, um Gestaltungsbausteine in eine Nachricht einzuf�
 
    ![](assets/s_ncs_user_personalized_block02.png)
 
-1. Der Gestaltungsbaustein wird in Form eines Scripts eingefügt und in der Personalisierungsphase automatisch an das Empfängerprofil angepasst.
+1. Der Gestaltungsbaustein wird dann als Skript eingefügt. Er wird bei der Personalisierung automatisch an das Empfängerprofil angepasst.
 
    ![](assets/s_ncs_user_personalized_block03.png)
 
@@ -74,11 +74,11 @@ Zu diesem Zweck müssen wir folgende Gestaltungsbausteine einfügen:
 1. Erstellen Sie einen neuen Versand oder öffnen Sie einen existierenden E-Mail-Versand.
 1. Klicken Sie im Versandassistenten auf den **[!UICONTROL Betreff]**, um den Betreff der Nachricht zu bearbeiten und einen Betreff einzugeben.
 1. Fügen Sie die Gestaltungsbausteine in den Nachrichtentext ein. Klicken Sie dazu in das Inhaltsfeld der Nachricht und danach auf die Schaltfläche zum Einfügen von Personalisierungsfeldern. Wählen Sie danach das Menü **[!UICONTROL Einfügen]** aus.
-1. Wählen Sie den ersten einzufügenden Gestaltungsbaustein aus. Wiederholen Sie diesen Vorgang, um die beiden anderen Bausteine einzufügen.
+1. Den ersten einzufügenden Block auswählen. Erneuern Sie das Verfahren, um die beiden anderen Blöcke einzubeziehen.
 
    ![](assets/s_ncs_user_personalized_block_example.png)
 
-1. Klicken Sie nun auf den **[!UICONTROL Vorschau]**-Tab und wählen Sie einen Empfänger aus, um sich das Ergebnis der Personalisierung anzusehen.
+1. Klicken Sie auf **[!UICONTROL Vorschau]**, um das Personalisierungsergebnis anzuzeigen. Sie müssen einen Empfänger auswählen, um die Nachricht dieses Empfängers anzuzeigen.
 
    ![](assets/s_ncs_user_personalized_block_example2.png)
 
@@ -94,7 +94,7 @@ Standardmäßig ist eine Liste mit Gestaltungsbausteinen verfügbar, um den Inha
 
 ![](assets/s_ncs_user_personalized_block_list.png)
 
-* **[!UICONTROL Grußformeln]**: Hiermit werden Grußformeln mit dem Empfängernamen eingefügt, z. B. &quot;Guten Tag, Max Mustermann&quot;.
+* **[!UICONTROL Grußformeln]** : Hiermit werden Grußformeln zum Empfängernamen hinzugefügt. Beispiel: „Sehr geehrter Herr Mustermann,“.
 * **[!UICONTROL Logo einfügen]**: Hiermit wird ein natives Logo eingefügt, das beim Konfigurieren der Instanz definiert wurde.
 * **[!UICONTROL Powered by Adobe Campaign]**: Hiermit wird das Logo &quot;Powered by Adobe Campaign&quot; eingefügt.
 * **[!UICONTROL Mirrorseiten-URL]**: Hiermit wird die Mirrorseiten-URL eingefügt, damit Versanddesigner den Link prüfen können.
@@ -121,7 +121,7 @@ Standardmäßig ist eine Liste mit Gestaltungsbausteinen verfügbar, um den Inha
 
 ## Definieren von benutzerdefinierten Gestaltungsbausteinen {#defining-custom-personalization-blocks}
 
-Sie haben die Möglichkeit, neue Personalisierungsfelder zu konfigurieren, die dann über die entsprechende Schaltfläche ausgehend von der Option **[!UICONTROL Einfügen...]** verfügbar sind. Diese Felder werden in Gestaltungsbausteinen erstellt.
+Über das Symbol Personalisierte Felder können Sie neue Personalisierungsfelder definieren, die über das Menü **[!UICONTROL Einfügen…]** eingefügt werden sollen. Diese Felder werden in Gestaltungsbausteinen definiert.
 
 Gehen Sie im Explorer wie folgt vor, um Gestaltungsbausteine zu erstellen:
 
@@ -131,7 +131,7 @@ Gehen Sie im Explorer wie folgt vor, um Gestaltungsbausteine zu erstellen:
 
    ![](assets/s_ncs_user_personalized_block.png)
 
-   * Benennen Sie den Baustein. Der hier angegebene Titel wird im Einfügefenster der Personalisierungsfelder angezeigt.
+   * Geben Sie den Titel des Bausteins ein. Dieser Titel wird im Einfügefenster des Personalisierungsfelds angezeigt.
    * Wählen Sie die Option **[!UICONTROL Im Personalisierungsmenü anzeigen]**, um den Baustein in der Dropdown-Liste der Personalisierungsfelder verfügbar zu machen.
    * Bei Bedarf können Sie die Option **[!UICONTROL Der Inhalt des Bausteins ist formatabhängig (HTML oder Text)]** ankreuzen, um für jedes Format einen separaten Baustein zu konfigurieren.
 
@@ -139,12 +139,12 @@ Gehen Sie im Explorer wie folgt vor, um Gestaltungsbausteine zu erstellen:
 
      ![](assets/s_ncs_user_personalized_block_b.png)
 
-   * Geben Sie den Inhalt der Gestaltungsbausteine (in HTML, Text, JavaScript usw.) ein und klicken Sie auf **[!UICONTROL Speichern]**.
+   * Inhalt eingeben (in HTML, Text, JavaScript usw.) der Gestaltungsbausteine und klicken Sie auf **[!UICONTROL Speichern]**.
 
 ## Anleitungsvideo {#personalization-blocks-video}
 
 Erfahren Sie, wie Sie dynamische Inhaltsbausteine erstellen und diese zur Personalisierung des Inhalts Ihres E-Mail-Versands verwenden.
 
->[!VIDEO](https://video.tv.adobe.com/v/30080?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/24924?quality=12)
 
 Weitere Anleitungsvideos zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).

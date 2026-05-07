@@ -6,9 +6,9 @@ feature: Reporting, Monitoring
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 exl-id: b30cdeaf-4ad6-473d-bdbc-91984755b609
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: ht
-source-wordcount: '578'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '581'
+ht-degree: 66%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 
 
-Über die oberhalb der Berichtansicht gelegene Symbolleiste können verschiedene Aktionen ausgeführt werden. Diese werden im Folgenden dargestellt.
+Wenn Sie einen Bericht anzeigen, können Sie in der Symbolleiste eine bestimmte Anzahl von Aktionen ausführen. Diese sind im Folgenden aufgeführt.
 
 ![](assets/s_ncs_advuser_report_wizard_2.png)
 
@@ -26,17 +26,17 @@ Die Symbolleiste bietet die Möglichkeit, den Bericht zu exportieren, zu drucken
 
 ## Exportieren eines Berichts {#exporting-a-report}
 
-Wählen Sie in der Dropdown-Liste das Format aus, in dem der Bericht exportiert werden soll: .xls, .pdf oder .ods.
+Wählen Sie aus der Dropdown-Liste das Format aus, in das Sie Ihren Bericht exportieren möchten. (.xls, .pdf oder .ods).
 
 ![](assets/s_ncs_advuser_report_wizard_06.png)
 
 Wenn ein Bericht mehrere Seiten enthält, muss der Vorgang für jede Seite wiederholt werden.
 
-Sie können Ihren Bericht für den Export im PDF-, Excel- oder OpenOffice-Format konfigurieren. Öffnen Sie den Adobe Campaign-Explorer und wählen Sie den betreffenden Bericht aus.
+Sie können Ihren Bericht konfigurieren, um ihn im PDF-, Excel- oder OpenOffice-Format zu exportieren. Öffnen Sie den Adobe Campaign Explorer und wählen Sie den betreffenden Bericht aus.
 
 Die Exportoptionen sind über die **[!UICONTROL Seite]**-Aktivität(en) des Berichts im Tab **[!UICONTROL Erweitert]** zugänglich.
 
-Ändern Sie die Einstellungen von **[!UICONTROL Papier]** und **[!UICONTROL Ränder]** nach Ihren Bedürfnissen. Sie können auch den Export einer Seite nur im PDF-Format zulassen. Deaktivieren Sie hierzu die Option **[!UICONTROL Export in OpenOffice/Excel aktivieren]**.
+Ändern Sie die Einstellungen von **[!UICONTROL Papier]** und **[!UICONTROL Ränder]** Ihren Anforderungen entsprechend. Sie können auch den Export einer Seite nur im PDF-Format autorisieren. Deaktivieren Sie hierzu die Option **[!UICONTROL Export in OpenOffice/Excel aktivieren]**.
 
 ![](assets/s_ncs_advuser_report_wizard_021.png)
 
@@ -59,7 +59,7 @@ Für Berichte vom Typ **[!UICONTROL Liste mit Gruppierung]**, die im Excel-Forma
 
 ### Export verzögern {#postpone-the-export}
 
-Sie haben die Möglichkeit, den Export eines Berichts zu verzögern, z. B. um auf asynchrone Aufrufe zu warten. Geben Sie hierzu den folgenden Parameter im Initialisierungsscript der Seite an:
+Sie können den Export eines Berichts aufschieben, um beispielsweise auf asynchrone Aufrufe zu warten. Geben Sie dazu den folgenden Parameter im Initialisierungsskript der Seite ein:
 
 ```
 document.nl_waitBeforeRender = true;
@@ -71,7 +71,7 @@ Bedienen Sie sich zur Aktivierung des Exports und zur Konvertierung ins PDF-Form
 
 Beim Export von gewissen umfangreichen Berichten kann es zu Problemen bei der Speicherzuteilung kommen.
 
-In einigen Instanzen ist der in der Konfigurationsdatei **serverConf.xml** angegebene Standardwert **maxMB** (**SKMS** bei gehosteten Instanzen) im JavaScript mit 64 MB angegeben. Wenn beim Export von Berichten Fehler bezüglich Speichermangel auftreten, empfiehlt es sich, diesen Wert auf 512 MB zu erhöhen:
+In bestimmten Fällen ist der Standardwert **maxMB** (**SKMS** für gehostete Instanzen) der JavaScript, der in der Konfigurationsdatei **serverConf.xml** angegeben ist, auf 64 MB festgelegt. Wenn beim Exportieren eines Berichts Speicherfehler auftreten, kann es empfohlen werden, diese Zahl auf 512 MB zu erhöhen:
 
 ```
 <javaScript maxMB="512" stackSizeKB="8"/>
@@ -103,10 +103,10 @@ Durch Klick auf das entsprechende Symbol können Sie die existierenden Verläufe
 
 ![](assets/s_ncs_advuser_report_history_06.png)
 
-Die gespeicherten Verläufe können über das Ein-/Ausblende-Symbol angezeigt werden. Klicken Sie auf einen Verlauf, um ihn einzusehen.
+Die Archivierungsdaten werden unter dem Symbol Einblenden/Ausblenden angezeigt. Klicken Sie auf das Archiv, um es anzuzeigen.
 
 ![](assets/s_ncs_advuser_report_history_04.png)
 
-Ein Berichtsarchiv kann gelöscht werden. Gehen Sie dazu zum Adobe Campaign-Knoten, in dem Ihre Berichte gespeichert sind. Klicken Sie auf den Tab **[!UICONTROL Verläufe]**, markieren Sie den betreffenden Verlauf und klicken Sie auf **[!UICONTROL Löschen]**.
+Es ist möglich, ein Berichtsarchiv zu löschen. Wechseln Sie dazu zum Adobe Campaign-Knoten, in dem Ihre Berichte gespeichert sind. Klicken Sie auf den Tab **[!UICONTROL Verläufe]**, markieren Sie den betreffenden Verlauf und klicken Sie auf **[!UICONTROL Löschen]**.
 
 ![](assets/s_ncs_advuser_report_history_01.png)

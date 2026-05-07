@@ -8,7 +8,7 @@ exl-id: 99f82e91-45cd-4dff-b8a4-3ad87f2f9639
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '508'
-ht-degree: 100%
+ht-degree: 67%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 In Workflows genutzte Daten können aus Listen stammen, deren Daten zuvor aufbereitet und strukturiert wurden, beispielsweise in einer früheren Segmentierung oder im Zuge eines Datei-Ladevorgangs.
 
-Die Aktivität **[!UICONTROL Liste lesen]** kopiert Daten aus einer Liste in eine Workflow-Arbeitstabelle (analog zu Daten aus Abfragen). Auf diese Weise stehen sie während der gesamten Workflow-Ausführung zur Verfügung.
+Die Aktivität **[!UICONTROL Liste lesen]** ermöglicht das Kopieren der Daten aus einer Liste in der Workflow-Arbeitstabelle, z. B. von Daten aus einer Abfrage. Sie ist dann im gesamten Workflow verfügbar.
 
 Die zu verarbeitende Liste kann explizit angegeben, von einem Script berechnet oder dynamisch abgerufen werden. Dies hängt von den in der Aktivität **[!UICONTROL Liste lesen]** aktivierten Optionen oder angegebenen Parametern ab.
 
@@ -44,7 +44,7 @@ Im folgenden Beispiel soll eine Datei mit Adressen importiert werden, die grunds
 
 ![](assets/s_advuser_list_read_sample_1.png)
 
-Die im **Premiumkunden**-Ordner enthaltenen Profile sollen im Rahmen einer Marketing-Kampagne kontaktiert werden. Eine externe Liste enthält vom Versand auszuschließende Adressen. Für das vorliegende Beispiel werden nur die E-Mail-Adressen benötigt, um den Ausschluss vorzunehmen.
+Die im Ordner **Neue Kontakte** enthaltenen Profile müssen als Zielgruppe für einen Versand ausgewählt werden. Die aus der Zielgruppe auszuschließenden E-Mail-Adressen werden in einer externen Liste gespeichert. In unserem Beispiel sind nur die Informationen zu E-Mail-Adressen für den Ausschluss erforderlich.
 
 1. Die zum Laden der im **Premiumkunden**-Ordner enthaltenen Empfänger erstellte Abfrage muss die E-Mail-Adressen der Empfänger ausgeben, um die Abstimmung mit der Ausschlussliste zu ermöglichen.
 
@@ -54,7 +54,7 @@ Die im **Premiumkunden**-Ordner enthaltenen Profile sollen im Rahmen einer Marke
 
    ![](assets/s_advuser_list_read_sample_2.png)
 
-1. Konfigurieren Sie die Ausschlussaktivität, indem Sie den Ordner **Premiumkunden** als Hauptmenge angeben. Dies bedeutet, dass dieser Ordner die beizubehaltenden Daten enthält, dass jedoch alle Datensätze, die sowohl in diesem Ordner als auch in einer anderen in die Ausschlussaktivität eingehenden Datei enthalten sind, von der Zielgruppe ausgeschlossen werden.
+1. Um die E-Mail-Adressen der externen Liste von der Hauptzielgruppe auszuschließen, müssen Sie die Ausschlussaktivität konfigurieren und angeben, dass der Ordner **Neue Kontakte** die beizubehaltenden Daten enthält. Die gemeinsamen Daten dieses Sets und aller anderen eingehenden Sets aus der Ausschlussaktivität werden aus der Zielgruppe gelöscht.
 
    ![](assets/s_advuser_list_read_sample_3.png)
 
@@ -68,4 +68,4 @@ Die im **Premiumkunden**-Ordner enthaltenen Profile sollen im Rahmen einer Marke
 
    ![](assets/s_advuser_list_read_sample_4.png)
 
-1. Wählen Sie dann für die Quelle und das Bestimmungsziel das der E-Mail-Adresse entsprechende Feld aus. Die Spalten werden entsprechend zugeordnet und die Empfänger, deren E-Mail-Adresse in der importierten Liste enthalten ist, werden aus der Zielgruppe ausgeschlossen.
+1. Wählen Sie dann das Feld aus, das der E-Mail-Adresse in den beiden Sätzen (Source und Destination) entspricht. Die Spalten werden dann verknüpft und die Empfänger, deren E-Mail-Adresse in der Liste der importierten Adressen enthalten ist, werden aus der Zielgruppe ausgeschlossen.

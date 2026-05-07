@@ -10,8 +10,8 @@ topic-tags: updating-adobe-campaign
 exl-id: c5a9c99a-4078-45d8-847b-6df9047a2fe2
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
-source-wordcount: '2324'
-ht-degree: 37%
+source-wordcount: '2422'
+ht-degree: 34%
 
 ---
 
@@ -29,7 +29,7 @@ Die folgenden Voraussetzungen sind erforderlich:
 * Kenntnis der Systeme und Server
 * Administratorrechte und Berechtigungen
 
-Adobe Campaign Weitere Informationen finden Sie in den folgenden Abschnitten: [Aktualisieren von &#x200B;](../../production/using/upgrading.md), [Migrieren zu einer neuen Version](../../migration/using/about-migration.md).
+Weitere Informationen finden Sie in den folgenden Abschnitten: [Aktualisieren von ](../../production/using/upgrading.md), [Migrieren zu einer neuen Version](../../migration/using/about-migration.md).
 
 Bei gehosteten und hybriden Instanzen müssen Sie das Build-Upgrade an das Team für technische Vorgänge in Adobe anfordern. Weiterführende Informationen hierzu finden Sie im Abschnitt Häufig gestellte Fragen unten auf dieser Seite. Lesen Sie auch die [häufig gestellte Fragen zum Build-Upgrade](../../platform/using/faq-build-upgrade.md).
 
@@ -44,7 +44,7 @@ Für das Build-Upgrade sind die folgenden Ressourcen erforderlich:
 
 * Ein Adobe-Architekt: Zum Verständnis der Datenbankstrukturen (vordefinierte Schemata und alle zusätzlichen Schemata, die hinzugefügt wurden, Kampagnendesigns und alle kritischen Pfadfunktionen, die in einer bestimmten Reihenfolge gestartet und getestet werden müssen).
 * Projektmanager: Für den Fall, dass das Build-Upgrade viele verschiedene Instanzen (Produktion, Staging, Tests) und andere Server und Anwendungen von Drittanbietern (Datenbanken, SFTP-Sites, Messaging-Service-Provider) umfasst, ist es als Best Practice zu betrachten, einen Projektmanager zu haben, der alle Tests koordiniert.
-* ein Adobe-Campaign-Administrator: Er kennt die Konfiguration des Servers, u. a. Anforderungen in Bezug auf Sicherheit, Ordneraufbau, Reporting und den Import und Export. Bitte nehmen Sie kein Build-Upgrade ohne Ihren Administrator vor.
+* Ein Adobe Campaign-Administrator - Ihr Administrator kennt die Serverkonfiguration, einschließlich, aber nicht beschränkt auf: Sicherheit, Ordnerlayout, Berichterstellung und Import-/Exportanforderungen. Führen Sie kein Build-Upgrade ohne Ihren Administrator durch.
 * Ein Adobe Campaign-Benutzer (Marketing-Benutzer): Für ein erfolgreiches Upgrade ist die Fähigkeit des Benutzers erforderlich, seine täglichen Aufgaben erfolgreich auszuführen. Aus diesem Grund sollten Sie immer mindestens einen Ihrer täglichen Benutzer in Ihre Tests der aktualisierten Server einbeziehen.
 
 ### Planung
@@ -115,7 +115,7 @@ Gehen Sie dazu wie folgt vor:
 
 1. Stellen Sie diese Kopien auf allen Instanzen der Zielumgebung wieder her.
 
-1. Führen Sie **Skript &quot;:freezeInstance.js** vor dem Start in der Zielumgebung aus. Dadurch werden alle Prozesse gestoppt, die mit der Außenwelt interagieren: Protokolle, Tracking, Sendungen, Kampagnen-Workflows usw.
+1. Führen Sie das Skript **nms:freezeInstance.js** zur Verätzung in der Zielumgebung aus, bevor Sie sie starten. Dadurch werden alle Prozesse gestoppt, die mit der Außenwelt interagieren: Protokolle, Tracking, Sendungen, Kampagnen-Workflows usw.
 
    ```
    nlserverjavacsriptnms:freezeInstance.js–instance:<dev> -arg:run
@@ -208,7 +208,7 @@ Die folgenden Dienste müssen wieder gestartet werden:
 
 ### Aktualisierung der Client-Konsolen
 
-Die Client-Konsole muss auf demselben Build wie die Server-Instanz erstellt werden.
+Die Client-Konsole muss denselben Build haben wie die Server-Instanz.
 
 Laden Sie auf der Maschine, auf der der Adobe Campaign-Anwendungsserver installiert ist (nlserverweb), diese Datei herunter und kopieren Sie sie:
 
@@ -266,7 +266,7 @@ Im Kontext einer Mid-Sourcing-Umgebung müssen Sie die folgenden zusätzlichen S
 
 ### Konflikte identifizieren
 
-Sie müssen das Synchronisierungsergebnis überprüfen. Dieser Schritt wird nur von On-Premise-Kunden ausgeführt. Für gehostete Kunden übernimmt diese Aufgabe das Hosting-Team. Es gibt zwei Möglichkeiten, das Synchronisationsergebnis anzuzeigen:
+Sie müssen das Synchronisierungsergebnis überprüfen. Dieses Verfahren wird nur von On-Premise-Kunden durchgeführt. Für gehostete Kunden wird dies vom Hosting-Team übernommen. Es gibt zwei Möglichkeiten, das Synchronisierungsergebnis anzuzeigen:
 
 In der Befehlszeilenschnittstelle werden Fehler durch einen dreifachen Chevron &#39;>>>&#39; materialisiert und die Synchronisierung wird automatisch angehalten. Warnungen werden durch einen doppelten Pfeil &quot;>>&quot; materialisiert und müssen nach Abschluss der Synchronisierung aufgelöst werden. Am Ende des Postupgrades wird in der Eingabeaufforderung eine Zusammenfassung angezeigt. Er kann wie folgt aussehen:
 
@@ -289,14 +289,14 @@ Die Datei **postupgrade_ServerVersionNumber_TimeOfPostupgrade.log** enthält das
 
 Konflikte finden sich im Protokoll „postupgrade.log“ auf dem betreffenden Server oder in der Client-Benutzeroberfläche von Campaign (Administration > Konfiguration > Paketverwaltung > Konflikte bearbeiten).
 
-Das Dokument mit der Kennung ‘stockOverview’ vom Typ ‘nms:webApp’ steht im Konflikt mit der neuen Version.
+Das Dokument mit der Kennung „stockOverview“ und dem Typ &quot;:webApp&quot; steht im Konflikt mit der neuen Version.
 
 Wenn ein Konflikt gefunden wird, prüfen Sie, ob Folgendes zutrifft:
 
 * Wurde das Objekt vom Kunden geändert oder personalisiert?
 * Wurde das Objekt innerhalb des Produkts geändert?
 
-Wenn keine dieser Fragen bejaht wird, ist dies eine Falschmeldung und es besteht kein Konflikt. Wenn beide dieser Fragen bejaht werden, besteht tatsächlich ein Konflikt.
+Wenn keine dieser Bedingungen zutrifft, ist dies falsch positiv. Wenn beide Bedingungen zutreffen, wurde ein echter Konflikt gefunden.
 
 **Wurde das Objekt vom Kunden geändert?**
 
@@ -308,7 +308,7 @@ Wenn keine dieser Fragen bejaht wird, ist dies eine Falschmeldung und es besteht
 
 **Wurde das Objekt im neuen Build geändert?**
 
-1. Prüfen Sie die üblichen Verursacher: integrierte Web-Anwendungen oder Berichte (z. B.: &#39;deliveryValidation&#39;, &#39;deliveryOverview&#39;, &#39;budget&#39;).
+1. Irgendwelche „üblichen Verdächtigen?“ Integrierte Web-Anwendungen oder Berichte (z. B.: „deliveryValidation“, „deliveryOverview“, „budget„).
 1. Prüfen Sie die Änderungsprotokolle auf Updates.
 1. Fragen Sie Adobe Campaign-Fachleute.
 1. Führen Sie einen &quot;Diff&quot;-Befehl für den Code aus.
@@ -319,7 +319,7 @@ Gehen Sie wie folgt vor, um einen Konflikt zu lösen:
 
 1. Gehen Sie im Adobe-Campaign-Explorer zu **Administration > Konfiguration > Packageverwaltung > Konflikte bearbeiten**.
 
-1. Wählen Sie in der Liste den Konflikt aus, den Sie auflösen möchten.
+1. Wählen Sie in der Liste den Konflikt aus, den Sie lösen möchten.
 Es gibt drei Optionen zum Beheben von Konflikten: **Neue Version akzeptieren**, **Aktuelle Version beibehalten**, **Code zusammenführen (und als aufgelöst deklarieren)** **Konflikt ignorieren (nicht empfohlen)**.
 
 **Wann kann ich die neue Version akzeptieren?**
@@ -355,8 +355,8 @@ Es gibt drei Optionen zum Beheben von Konflikten: **Neue Version akzeptieren**, 
 Es gibt verschiedene Arten von Zusammenführungen:
 
 1. Einfaches Zusammenführen: Benutzerdefinierte und neue Elemente sind klein und nicht verwandt, und es ist keine Codierung erforderlich.
-1. Keine Änderungen: die neue Version wird akzeptiert, nur letztes Aktualisierungsdatum wurde geändert, nur Kommentare, Tabs, Leerzeichen oder neue Zeilen. Beispiel: irrtümliches Speichern.
-1. Triviale Änderungen: nur eine einzige Zeile wurde geändert. Beispiel: xpathToLoad
+1. Keine Änderungen: Neue Version akzeptieren, nur Datum der letzten Aktualisierung geändert, nur Kommentare, Tabs, Leerzeichen oder neue Zeilen. Beispiel: versehentliches Speichern.
+1. Geringfügige Änderungen: Nur eine Zeile wurde geändert. Beispiel: xpathToLoad
 1. Komplexe Zusammenführung: wenn Kodierung erforderlich ist. Entwicklungsfähigkeiten sind erforderlich. Siehe [Komplexe Zusammenführungen](#complex-merges).
 
 #### Wie erfolgt die Zusammenführung?
@@ -414,9 +414,9 @@ So nehmen Sie eine komplexe Zusammenführung vor:
 >Für komplexe Zusammenführungen sind Entwicklungsfähigkeiten erforderlich.
 >
 
-**Verwandte Themen** 
+**Verwandte Themen**
 
-* [Häufig gestellte Fragen zur Build-Aktualisierung](../../platform/using/faq-build-upgrade.md)
+* [Häufig gestellte Fragen zum Build-Upgrade](../../platform/using/faq-build-upgrade.md)
 * [Versionshinweise zu Campaign Classic](../../rn/using/rn-overview.md)
 * [Hilfe- und Support-Optionen für Campaign Classic](../../support.md)
 * [Campaign-Programm mit jährlichen Aktualisierungen](../../rn/using/rn-overview.md)

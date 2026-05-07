@@ -8,8 +8,8 @@ hide: true
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '983'
-ht-degree: 100%
+source-wordcount: '998'
+ht-degree: 89%
 
 ---
 
@@ -59,19 +59,19 @@ Im unteren Bereich des Fensters haben Sie die Wahl zwischen:
 
 * **[!UICONTROL Empfängerangaben berücksichtigen]** (Standardmodus)
 
-  Das Nachrichtenformat wird anhand der im Empfängerprofil im Feld **[!UICONTROL E-Mail-Format]** gespeicherten Informationen bestimmt. Wenn ein Empfänger ein bestimmtes Format angegeben hat, wird ihm die Nachricht in diesem Format zugestellt. Wenn das Feld leer ist, wird die Nachricht im Multipart-Alternative-Format versandt (siehe unten).
+  Das Nachrichtenformat wird anhand der im Empfängerprofil gespeicherten Daten definiert und standardmäßig im Feld **[!UICONTROL E-Mail-Format]** gespeichert (@emailFormat). Falls ein Empfänger Nachrichten in einem bestimmten Format erhalten möchte, werden sie in diesem Format gesendet. Wenn das Feld nicht ausgefüllt ist, wird eine Multipart-Alternative-Nachricht gesendet (siehe unten).
 
 * **[!UICONTROL E-Mail-Programm des Empfängers das beste Format wählen lassen]**
 
-  Die Nachricht enthält beide Formate: Text und HTML. Das beim Empfänger angezeigte Format hängt von der Konfiguration des E-Mail-Programms ab (Multipart-Alternative).
+  Die Nachricht enthält beide Formate: Text und HTML. Welches Format beim Empfang angezeigt wird, hängt von der Konfiguration des E-Mail-Programms der Empfängerin bzw. des Empfängers ab (Multipart-Alternative).
 
   >[!IMPORTANT]
   >
-  >Bei dieser Option werden beide Versionen des Dokuments gesendet. Der hierdurch erhöhte Kapazitätsverbrauch kann den Versanddurchsatz beeinträchtigen.
+  >Diese Option umfasst beide Versionen der Nachricht. Dies wirkt sich daher auf die Versandrate aus, da die Nachricht größer ist.
 
 * **[!UICONTROL Alle Nachrichten im Textformat senden]**
 
-  Die Nachricht wird im Textformat gesendet. Das HTML-Format wird nicht gesendet, sondern nur für die Mirrorseite verwendet, auf die ein Empfänger gelangt, wenn er auf den entsprechenden Link in der Nachricht klickt.
+  Die Nachricht wird im Textformat gesendet. Das HTML-Format wird nicht gesendet, sondern nur für die Mirrorseite verwendet, wenn der Empfänger auf die Nachricht klickt.
 
 >[!NOTE]
 >
@@ -79,7 +79,7 @@ Im unteren Bereich des Fensters haben Sie die Wahl zwischen:
 
 ## Erzeugen der Mirrorseite {#generating-mirror-page}
 
-Eine Mirrorseite ist eine HTML-Seite, die über einen Webbrowser online abgerufen werden kann und deren Inhalt mit dem der E-Mail identisch ist.
+Die Mirrorseite ist eine HTML-Seite, auf die online über einen Webbrowser zugegriffen werden kann. Ihr Inhalt ist identisch mit dem der E-Mail.
 
 Standardmäßig wird die Mirrorseite automatisch generiert, wenn der entsprechende Link in den Inhalt der E-Mail eingefügt wurde. Weitere Informationen zu Gestaltungsbausteinen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=de){target="_blank"}.
 

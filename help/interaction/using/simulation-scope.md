@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: simulating-offers
 exl-id: 4f6b3de2-3fdf-441d-925d-476e20e75c6f
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '250'
-ht-degree: 100%
+ht-degree: 48%
 
 ---
 
@@ -27,29 +27,29 @@ Folgende Felder müssen zwingend ausgefüllt werden:
 
 * Angebotsumgebung oder -kategorie
 * Platzierung
-* Kontaktdatum - berücksichtigt werden nur Angebote, die zum Kontaktdatum infrage kommen
+* Kontaktdatum. Angebote, die am Kontaktdatum nicht infrage kommen, werden nicht berücksichtigt.
 * Zielpopulation.
 
   Wenn kein Zielgruppenfilter angegeben wird, wird die gesamte Empfängertabelle in der Simulation berücksichtigt.
 
 * Anzahl an zu simulierenden Vorschlägen pro Kontakt.
 
-  Der Empfänger erhält genau so viele Vorschläge, wie angegeben. Bei Angabe von 5 beispielsweise erhält jede Zielperson maximal 5 Angebotsvorschläge.
+  Der Empfänger erhält so viele Vorschläge. Wenn Sie beispielsweise 5 eingeben, erhält jeder Empfänger maximal 5 Angebotsvorschläge.
 
   ![](assets/offer_simulation_009.png)
 
 Zur weiteren Feinabstimmung der in der Simulation zu berücksichtigenden Angebote können Themen angegeben werden. Diese müssen zuvor auf Ebene der Kategorie definiert werden.
 
-Sie haben des Weiteren die Möglichkeit, die Simulation für alle Angebote durchzuführen oder sie auf die publizierten Angebote zu beschränken. Mithilfe diverser Filter lässt sich die Auswahl weiter eingrenzen.
+Sie können die Simulation auch für alle Angebote oder nur für die Online-Angebote durchführen. Einige Filter ermöglichen es Ihnen, Ihre Auswahl bei Bedarf zu ändern.
 
 >[!NOTE]
 >
->Die Angabe des Kontaktdatums ist zwingend erforderlich. Dies erlaubt dem Angebotsmodul eine erste Filterung aus der Gesamtheit der in der Umgebung oder Kategorie enthaltenen Angebote. Ohne Kontaktdatum endet die Simulation mit einem Fehler.
+>Sie müssen ein Kontaktdatum angeben. Auf diese Weise kann das Interaction-Modul die Angebote in der ausgewählten Umgebung oder Kategorie sortieren. Wenn kein Datum konfiguriert ist, gibt die Simulation einen Fehler aus.
 
 ## Berichtsachsen hinzufügen {#adding-reporting-axes}
 
 Im Tab **[!UICONTROL Berechnungen]** können Sie auf die Zielgruppe oder direkt auf die Angebote bezogene Berichtsachsen hinzufügen, um die Analyse der Simulation zu bereichern.
 
-Klicken Sie hierfür auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wählen Sie in der Spalte die Felder aus, die die gewünschten Werte enthalten. Die neuen Achsen werden zur Berechnung der Simulation herangezogen und erscheinen im Analysebericht. Weitere Informationen hierzu finden Sie im Abschnitt [Simulationsverfolgung](../../interaction/using/simulation-tracking.md).
+Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wählen Sie die entsprechenden Felder aus. Achsen werden für die Berechnung der Simulation verwendet und werden im Analysebericht angezeigt. Weitere Informationen hierzu finden Sie im Abschnitt [Simulationsverfolgung](../../interaction/using/simulation-tracking.md).
 
 ![](assets/offer_simulation_011.png)

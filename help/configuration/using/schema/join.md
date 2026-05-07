@@ -6,7 +6,7 @@ feature: Schema Extension
 exl-id: a7ca0300-d250-429c-8ae1-2ae7dee82cf5
 source-git-commit: 254c89490fefa5d405bcecd2f1781df46450a873
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '217'
 ht-degree: 2%
 
 ---
@@ -60,7 +60,7 @@ Relation zwischen dem Feld „E-Mail“ der aktuellen Tabelle und dem Feld &quot
 <join xpath-dst="@compagny-id" xpath-src="@email"/>
 ```
 
-Link zur Tabelle „cus:country“ gefiltert, basierend auf dem Inhalt des Feldes &quot;@country“, das den Wert „en“ enthalten muss:
+Link zur Tabelle „cus:Country&quot; gefiltert, basierend auf dem Inhalt des Feldes &quot;@country“, das den Wert „en“ enthalten muss:
 
 ```
 <element name="StockEN" type="link" label="MyLink" target="cus:Stock">

@@ -6,9 +6,9 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Seed Address
 exl-id: 091648b8-bf2d-4595-8be3-287f1ac48edd
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: ht
-source-wordcount: '925'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '935'
+ht-degree: 92%
 
 ---
 
@@ -26,7 +26,7 @@ Um das Endergebnis der Zusammenarbeit mit ihnen zu teilen, entscheidet der Versa
 Zur Verwendung von dynamischen Bedingungen benötigen Sie:
 
 * einen vollständig konfigurierten Versand,
-* Testadressen mit einem gemeinsamen Wert. Dieser Wert kann aus einem in Adobe Campaign vorhandenen Feld stammen. Im vorliegenden Beispiel besteht die Gemeinsamkeit der Testadressen im Wert &quot;Einkauf&quot; des Felds &quot;Abteilung&quot;, welches nicht standardmäßig in der Anwendung enthalten ist.
+* Testadressen mit einem gemeinsamen Wert. Dieser Wert kann ein Feld sein, das bereits in Adobe Campaign vorhanden ist. In diesem Beispiel verwenden Testadressen im Feld „Abteilung“ den Wert „Einkauf“, der in der Anwendung standardmäßig nicht vorhanden ist.
 
 ## Schritt 1: Erstellen eines Versands {#step-1---creating-a-delivery}
 
@@ -53,7 +53,7 @@ Weitere Informationen zu Schemaerweiterungen finden Sie unter [diesem Abschnitt]
 
    ![](assets/dlv_seeds_usecase_10.png)
 
-1. Wählen Sie **[!UICONTROL Speichern]** aus.
+1. Klicken Sie auf **[!UICONTROL Speichern]**.
 1. Fügen Sie nun die nachfolgenden Zeilen wie auf der Abbildung dargestellt in das Schema ein:
 
    ```
@@ -93,7 +93,7 @@ Weitere Informationen zu Schemaerweiterungen finden Sie unter [diesem Abschnitt]
 
    Nach Abschluss der Aktualisierung können Sie den Assistenten schließen.
 
-1. Trennen Sie die Verbindung und verbinden Sie sich dann erneut mit Adobe Campaign. Die im Testadressen-Schema vorgenommenen Änderungen sind nun wirksam. Damit sie im Eingabefenster der Testadressen sichtbar werden, ist eine Anpassung des **[!UICONTROL entsprechenden Formulars]** erforderlich. Weitere Informationen finden Sie im Abschnitt [Aktualisieren des Eingabeformulars](#updating-the-input-form).
+1. Trennen Sie die Verbindung und stellen Sie erneut eine Verbindung zu Adobe Campaign her. Die im Testadressen-Datenschema vorgenommenen Änderungen sind jetzt wirksam. Damit sie im Eingabefenster der Testadressen sichtbar werden, ist eine Anpassung des **[!UICONTROL entsprechenden Formulars]** erforderlich. Weitere Informationen finden Sie im Abschnitt [Aktualisieren des Eingabeformulars](#updating-the-input-form).
 
 #### Erweitern des Datenschemas ausgehend von einer verknüpften Tabelle {#extending-the-data-schema-from-a-linked-table}
 
@@ -154,7 +154,7 @@ Weitere Informationen finden Sie im Abschnitt [Aktualisieren des Eingabeformular
 
 ## Schritt 3: Definieren der Bedingung {#step-3---defining-the-condition}
 
-Sie können nun die dynamische Bedingung für die Testadressen-Auswahl definieren. Gehen Sie wie folgt vor:
+Sie können jetzt die dynamische Bedingung der Testadressen für den Versand angeben. Gehen Sie dazu wie folgt vor:
 
 1. Öffnen Sie den zuvor erstellten Versand.
 

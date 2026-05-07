@@ -7,9 +7,9 @@ feature: Data Model
 role: User, Developer
 exl-id: 3e28bfee-0321-40f4-9ef6-1bdb5b25041b
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '566'
-ht-degree: 100%
+ht-degree: 87%
 
 ---
 
@@ -29,7 +29,7 @@ Das XML-Dokument eines Datenschemas muss die Wurzel **`<srcschema>`** mit den At
 </srcSchema>
 ```
 
-Der Startpunkt des Schemas ist sein Hauptelement. Es ist leicht identifizierbar, da sein Name mit dem des Schemas identisch ist. Außerdem handelt es sich um das direkte untergeordnete Element der Wurzel. Ausgehend von diesem Element beginnt die Inhaltsbeschreibung.
+Der Einstiegspunkt für das Schema ist sein Hauptelement. Sie ist einfach zu identifizieren, da sie denselben Namen wie das Schema hat und dem Stammelement untergeordnet sein sollte. Die Beschreibung des Inhalts beginnt mit diesem Element.
 
 In einem Content-Management-Schema entspricht das Hauptelement folgendem Muster:
 
@@ -47,7 +47,7 @@ Diese Eigenschaften werden im Schema **ncm:content** beschrieben.
 
 >[!CAUTION]
 >
->Beim Anlegen eines neuen Schemas oder bei einer Schema-Erweiterung müssen Sie für das gesamte Schema den gleichen Wert für die Primärschlüsselfolge (@pkSequence) beibehalten.
+>Beim Anlegen eines neuen Schemas oder bei einer Schema-Erweiterung müssen Sie für das gesamte Schema den gleichen Wert für die Primärschlüsselsequenz (@pkSequence) beibehalten.
 
 ## Datentypen {#data-types}
 
@@ -148,7 +148,7 @@ Das Attribut **ref** des zu referenzierenden Elements muss mit dem Pfad (XPath) 
 </srcSchema>
 ```
 
-Die Struktur des Elements &quot;Kapitel&quot; wird in das Element mit Namen &quot;Segment&quot; ausgegliedert, welches außerhalb des Hauptelements liegt. Die Elemente &quot;Kapitel&quot; und &quot;Anhang&quot; referenzieren beide das Element &quot;Segment&quot;.
+Die Kapitelstruktur wird in das Element mit dem Namen „section“ außerhalb des Hauptelements verschoben. Kapitel und Abschnitt verweisen auf das Element „section“.
 
 ## Compute-String {#compute-string}
 

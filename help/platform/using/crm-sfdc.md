@@ -7,8 +7,8 @@ exl-id: 94a1f00d-e952-4edd-9012-f71c87b897ca
 hide: true
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 100%
+source-wordcount: '361'
+ht-degree: 85%
 
 ---
 
@@ -33,16 +33,16 @@ Gehen Sie wie folgt vor, um CRM-Connector für Salesforce zu konfigurieren:
    Um dieses externe Konto für die gemeinsame Verwendung mit Adobe Campaign zu konfigurieren, müssen Sie die folgenden Informationen eingeben:
 
    * **[!UICONTROL Konto]**
-Konto, mit dem die Anmeldung bei Salesforce CRM erfolgt.
+Konto, mit dem die Anmeldung bei Salesforce CRM erfolgt
 
-   * **[!UICONTROL Passwort]**
-Passwort, mit dem die Anmeldung bei Salesforce CRM erfolgt.
+   * **[!UICONTROL password]**
+Passwort für die Anmeldung bei Salesforce CRM.
 
-   * **[!UICONTROL Clientkennung]**
-Informationen darüber, wo Sie Ihre Client-Kennung finden, erfahren Sie auf dieser [Seite](https://help.salesforce.com/articleView?id=000205876&type=1).
+   * **[!UICONTROL Client-Kennung]**
+Auf dieser Seite erfahren Sie, wo Sie Ihre Client[Kennung ](https://help.salesforce.com/articleView?id=000205876&type=1).
 
-   * **[!UICONTROL Sicherheits-Token]**
-Informationen darüber, wo Sie Ihr Security-Token finden, erfahren Sie auf dieser [Seite](https://help.salesforce.com/articleView?id=000205876&type=1).
+   * **[!UICONTROL Security-Token]**
+Auf dieser Seite erfahren Sie, wo Sie Ihr Sicherheits[Token ](https://help.salesforce.com/articleView?id=000205876&type=1).
 
    * **[!UICONTROL API-Version]**
 Wählen Sie die Version der API aus.

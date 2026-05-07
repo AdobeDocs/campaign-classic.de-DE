@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: managing-environments
 exl-id: 399e9468-bf70-425d-af0b-72c29636b513
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: ht
-source-wordcount: '102'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '104'
+ht-degree: 80%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 
 
-Vordefinierte Filter erleichtern die Erstellung von auf die Zielpopulation anwendbaren Eignungsregeln, die bei der Angebotskonfiguration verwendet werden können. Die Filter beziehen sich jeweils auf eine Umgebung und können Angebotsparameter berücksichtigen.
+Mit vordefinierten Filtern können Sie Eignungsregeln für die Zielpopulation erstellen, die bei der Angebotserstellung einfach wiederverwendet werden können. Vordefinierte Filter sind für jede Umgebung spezifisch und berücksichtigen die Angebotsparameter.
 
 Gehen Sie wie folgt vor, um einen Filter zu erstellen:
 

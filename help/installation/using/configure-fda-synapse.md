@@ -9,8 +9,8 @@ topic-tags: connectors
 exl-id: 59d0277a-7588-4504-94e3-50f87b60da8a
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '757'
-ht-degree: 68%
+source-wordcount: '876'
+ht-degree: 70%
 
 ---
 
@@ -237,6 +237,6 @@ Gehen Sie wie folgt vor, um Ihr [!DNL Azure Synapse] externes Konto zu erstellen
 
 Der Connector unterstützt die folgenden Optionen:
 
-| Option | Beschreibung  |
+| Option | Beschreibung |
 |---|---|
 | Authentifizierung | Vom Connector unterstützte Authentifizierungstyp. Aktuell unterstützter Wert: ActiveDirectoryMSI. </br>Weitere Informationen finden Sie im [SQL-Dokument](https://docs.microsoft.com/en-us/sql/connect/odbc/using-azure-active-directory?view=sql-server-ver15#example-connection-strings) (Beispiel für Verbindungszeichenfolgen Nr. 8). |

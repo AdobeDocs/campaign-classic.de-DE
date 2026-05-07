@@ -8,7 +8,7 @@ exl-id: 5534bd5b-6888-4bf6-8a39-109c6fc0f6c3
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '170'
-ht-degree: 100%
+ht-degree: 51%
 
 ---
 
@@ -22,9 +22,9 @@ Je nach Kampagnentyp und ausgewählten Optionen geschieht dies auf zentraler ode
 
 ## Zugriff auf eine Kampagne {#accessing-the-campaign}
 
-Nach abgeschlossener Validierung und Erreichen des Verfügbarkeitsdatums wird die Kampagne lokal erstellt und die lokalen Benutzer werden über die Verfügbarkeit per E-Mail informiert.
+Sobald die Bestellung genehmigt ist und das Verfügbarkeitsdatum erreicht ist, wird die Kampagne lokal erstellt und kann verwendet werden. Lokale Betreiber werden über die Verfügbarkeit informiert.
 
-Sie wird im Detail der entsprechenden Bestellung angezeigt und kann bearbeitet werden. Über ihr nun vollständiges Dashboard kann die Kampagne lokal verwaltet werden.
+Er wird den Details der entsprechenden Reihenfolge hinzugefügt und kann bearbeitet werden. Das vollständige Dashboard ermöglicht die lokale Verwaltung.
 
 ![](assets/mkg_dist_local_op_edit_new_op1.png)
 
@@ -32,7 +32,7 @@ Auch über die Kampagnenübersicht in der Rubrik **[!UICONTROL Kampagnen]** best
 
 ## Verfügbare Parameter {#available-settings}
 
-Lokalstellen können den Inhalt der Kampagne an die lokalen Bedürfnisse anpassen. Hierzu stehen ihnen alle Elemente des Kampagnen-Dashboards zur Verfügung. Zur lokalen Anpassung werden insbesondere der Zielgruppen-Workflow und gegebenenfalls der Inhalt der Sendungen abgeändert.
+Lokalstellen können den Kampagneninhalt unter Verwendung aller Elemente des Kampagnen-Dashboards an ihre Bedürfnisse anpassen. Ihre Hauptaufgabe besteht darin, den Zielgruppenbestimmungs-Workflow anzupassen und möglicherweise die Versandinhalte zu personalisieren.
 
 ## Kampagnenausführung {#campaign-execution}
 

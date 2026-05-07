@@ -6,9 +6,9 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Reporting, Monitoring
 exl-id: 79d5c901-905b-4a0e-adb9-91fd6acb186f
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: ht
-source-wordcount: '441'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '442'
+ht-degree: 82%
 
 ---
 
@@ -20,7 +20,7 @@ Zusätzlich zu den verschiedenen Diagrammen, die [hier](../../reporting/using/cr
 
 Sie können beispielsweise Container verwenden: Diese ermöglichen es, mehrere Elemente einer Seite zu gruppieren und in Spalten oder Zellen anzuordnen. Nähere Informationen zu ihrer Konfiguration werden in [diesem Abschnitt](../../web/using/defining-web-forms-layout.md#creating-containers) erläutert.
 
-Sie können das Layout des Berichts in der Seite konfigurieren (an der Wurzel des Navigationsbaums) und es für jeden Container überschreiben. Sowohl Seiten als auch Container sind in Spalten organisiert. Nur statische Elemente und Grafiken sind in Zellen organisiert.
+Sie können das Berichtslayout am Stamm der Baumstruktur konfigurieren und für jeden Container überschreiben. Die Seiten werden in Spalten sortiert. Container werden auch in Spalten sortiert. Nur die statischen und grafischen Elemente werden in Zellen sortiert.
 
 ## Definieren der Optionen für jede Seite {#defining-the-options-for-each-page}
 
@@ -62,4 +62,4 @@ Fügen Sie die Kennungen in den HTML-Inhalt des Berichts ein:
 
 Sie werden bei der Anzeige des Berichts automatisch durch den entsprechenden Inhalt ersetzt.
 
-Diese Funktion ermöglicht es, wie bei HTML-Texten die im Bericht verwendeten Texte zu zentralisieren und ihre Übersetzungen zu erzeugen: Die in diesem Tab erstellten Texte werden automatisch von dem in Adobe Campaign integrierten Übersetzungstool abgerufen.
+Wie bei HTML-Texten können Sie bei diesem Betriebsmodus die im Bericht verwendeten Texte zentral zusammenführen und ihre Übersetzung verwalten. Die auf dieser Registerkarte erstellten Texte werden automatisch vom integrierten Übersetzungs-Tool von Adobe Campaign erfasst.

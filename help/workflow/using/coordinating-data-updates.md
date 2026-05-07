@@ -7,8 +7,8 @@ hide: true
 exl-id: 9959e22e-9aa0-410f-b22c-9ca1cac46b97
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '303'
-ht-degree: 100%
+source-wordcount: '304'
+ht-degree: 70%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 Das folgende Anwendungsbeispiel erläutert die Erstellung eines Workflows, mit dem begleitende Aktualisierungen bei der mehrmaligen Ausführung eines Workflows verwaltet werden können.
 
-Dabei muss sichergestellt werden, dass eine Aktualisierung beendet ist, bevor eine weitere durchgeführt wird. Wir werden zu diesem Zweck eine Instanzvariable erstellen und im Workflow testen, ob die Instanz ausgeführt wird, um zu entscheiden, ob die Ausführung des Workflows fortgesetzt und die Aktualisierung durchgeführt werden soll.
+Dadurch soll überprüft werden, ob der Aktualisierungsprozess beendet wurde, bevor ein weiterer Aktualisierungsvorgang ausgeführt wird. Zu diesem Zweck richten wir eine Instanzvariable ein und lassen den Workflow testen, ob die Instanz ausgeführt wird, um zu entscheiden, ob die Ausführung des Workflows fortgesetzt und die Aktualisierung durchgeführt werden soll oder nicht.
 
 ![](assets/uc_dataupdate_wkf.png)
 
@@ -36,11 +36,11 @@ Gehen Sie zur Erstellung des Workflows wie folgt vor:
 
    >[!NOTE]
    >
-   >&quot;isRunning&quot; ist die für dieses Beispiel ausgewählte Instanzvariable, und keine integrierte Variable.
+   >„isRunning“ ist der Name der Instanzvariablen, den wir für dieses Beispiel ausgewählt haben. Dies ist keine integrierte Variable.
 
    ![](assets/uc_dataupdate_test.png)
 
-1. Fügen Sie zur **Nein**-Verzweigung die Aktivität **Ende** hinzu, damit nichts ausgeführt wird, falls der Workflow bereits ausgeführt wird.
+1. Fügen Sie eine **Ende**-Aktivität zur **Nein** Verzweigung hinzu. Auf diese Weise wird nichts ausgeführt, wenn der Workflow bereits ausgeführt wird.
 1. Fügen Sie die gewünschten Aktivitäten zur **Ja**-Verzweigung hinzu. Für unser Beispiel sind dies die Aktivitäten **Abfrage** und **Daten-Update**.
 1. Öffnen Sie die erste Aktivität und fügen Sie den Befehl **instance.vars.isRunning = true** auf dem Tab **[!UICONTROL Erweitert]** hinzu. Auf diese Weise wird die Instanzvariable auf „wird ausgeführt“ gesetzt.
 

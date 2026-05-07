@@ -6,9 +6,9 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Landing Pages, Web Apps
 exl-id: df58221f-f71b-49d5-a6a1-c81ddff27fdb
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: ht
-source-wordcount: '722'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '730'
+ht-degree: 73%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 Adobe Campaign ermöglicht Ihnen, mit Daten aus der Datenbank dynamische und interaktive Webanwendungen zu erstellen und zu veröffentlichen, wobei die Inhalte auf die jeweiligen Benutzerrechte abgestimmt sind.
 
-Sie können Seiten erstellen (z. B. ein Bearbeitungsformular in einem Extranet oder Benachrichtigungsformulare, die Daten aus der Datenbank mit Tabellen, Diagrammen, Formularen usw. beinhalten). Mit dieser Funktion können Sie Webseiten entwerfen und posten, auf denen Benutzer Daten suchen oder eingeben können.
+Sie können Seiten erstellen, z. B. ein Bearbeitungsformular für ein Extranet oder Benachrichtigungsformulare, die Daten aus der Datenbank mit Tabellen, Diagrammen, Eingabeformularen usw. enthalten. Mit dieser Funktion können Sie Web-Seiten entwerfen und posten, auf denen Benutzer Informationen suchen oder eingeben können.
 
 Dabei kann es sich um ein Anmeldeformular handeln, dessen Felder wie unten dargestellt mit Daten aus der Adobe Campaign-Datenbank vorausgefüllt wurden:
 
@@ -45,10 +45,10 @@ Web-Anwendungen in Adobe Campaign bieten folgende Funktionen:
 * Anzeige von Umfragefeldern entsprechend den Antworten. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](form-rendering.md#defining-fields-conditional-display).
 * Zufällige Anzeige von Fragen. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../surveys/using/building-a-survey.md#adding-questions).
 * Bedingte Anzeige von Seiten. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](defining-web-forms-page-sequencing.md#conditional-page-display).
-* Informationsüberprüfung vor der Validierung abhängig vom erwarteten Datentyp (Zahl, E-Mail-Adresse, Datum etc.) und von den Pflichtfeldern. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](form-rendering.md#defining-control-settings).
+* Informationsüberprüfung vor der Validierung abhängig vom erwarteten Datentyp (Nummer, E-Mail-Adresse, Datum usw.) und die Pflichtfelder. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](form-rendering.md#defining-control-settings).
 * Einladungen oder Benachrichtigungen per E-Mail. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](publishing-a-web-form.md#delivering-a-form-via-email).
 * Personalisierung von Fehler- und Beendigungsnachrichten. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](defining-web-forms-properties.md#setting-up-an-error-page).
-* Verwendung von Bildern, Videos, Hypertext-Links, Captcha etc. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](editing-content.md).
+* Verwendung von Bildern, Videos, Hypertext-Links, CAPTCHA usw. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](editing-content.md).
 * Überwachung der Antworten in Echtzeit Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../surveys/using/publish-track-and-use-collected-data.md#response-tracking).
 
 Das optionale Modul zur Umfrageerstellung (**Umfrage**) bietet die folgenden zusätzlichen Funktionen:
@@ -79,10 +79,10 @@ Gehen Sie wie folgt vor, um eine Webanwendung zu erstellen und zu veröffentlich
 
 Die Erstellung von Webanwendungen erfolgt über den Link **[!UICONTROL Webanwendungen]** in den Tabs **[!UICONTROL Kampagnen]** und **[!UICONTROL Profile und Zielgruppen]**.
 
-Gespeichert werden Webanwendungen im Knoten **[!UICONTROL Ressourcen > Online > Webanwendungen]** des Adobe Campaign-Baums. Konfigurationen befinden sich in folgenden Ordnern:
+Web-Anwendungen werden im Knoten **[!UICONTROL Ressourcen > Online > Web]** der Adobe Campaign-Baumstruktur gespeichert. Konfigurationen sind in die folgenden Ordner unterteilt:
 
-* **[!UICONTROL Administration > Konfiguration > Formular-Rendering]**: enthält die Rendering-Vorlagen für Webformulare (Anwendungen und Umfragen). Die Vorlage ermöglicht die Generierung eines Formulars. Zusätzlich wird ein CSS-Stylesheet verwendet, das auf Vorlagenebene überschrieben werden kann. Weitere Informationen hierzu finden Sie auf [dieser Seite](form-rendering.md#selecting-the-form-rendering-template).
-* **[!UICONTROL Ressourcen > Vorlagen > Webanwendungsvorlagen]**: enthält Formularvorlagen. Diese sind zur Erstellung eines Formulars oder einer Webanwendung erforderlich.
+* **[!UICONTROL Administration > Konfiguration > Formularwiedergaben]**: Enthält die Rendering-Vorlagen für die Web-Formularpräsentation (Programme und Umfragen). Mit der Vorlage können Sie das Formular generieren. Außerdem wird ein CSS-Stylesheet verwendet. Dieses Stylesheet kann auf Vorlagenebene überladen werden. Weitere Informationen hierzu finden Sie auf [dieser Seite](form-rendering.md#selecting-the-form-rendering-template).
+* **[!UICONTROL Ressourcen > Vorlagen > Webanwendungsvorlagen]**: enthält Formularvorlagen. Um ein Formular oder eine Web-Anwendung zu erstellen, müssen Sie von einer Vorlage ausgehen.
 
 ## Web-Anwendungsvorlagen {#web-application-templates}
 
@@ -90,7 +90,7 @@ Standardmäßig bietet Adobe Campaign für jede verfügbare Webanwendung eine Vo
 
 >[!NOTE]
 >
->Sie können eine vorhandene Web-Anwendung in eine Vorlage konvertieren. Wählen Sie dazu das Formular aus und klicken Sie mit der rechten Maustaste darauf. Wählen Sie **[!UICONTROL Aktionen > Als Vorlage speichern…]** aus.
+>Sie können eine vorhandene Webanwendung in eine Vorlage konvertieren. Wählen Sie dazu das Formular aus und klicken Sie mit der rechten Maustaste darauf. Wählen Sie **[!UICONTROL Aktionen > Als Vorlage speichern…]** aus.
 
 Sie können neue Vorlagen über den Knoten **[!UICONTROL Ressourcen > Vorlagen > Web-Anwendungsvorlagen]** im Adobe Campaign-Baum erstellen.
 
@@ -100,4 +100,4 @@ Im Erstellungsassistenten können Sie wie unten dargestellt die zu aktivierenden
 
 >[!CAUTION]
 >
->Die verfügbaren Anwendungen hängen von Ihren Optionen und Modulen ab. Nähere Informationen dazu entnehmen Sie bitte Ihrem Lizenzvertrag.
+>Die verfügbaren Anwendungen hängen von Ihren Optionen und Modulen ab. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.

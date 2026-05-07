@@ -10,8 +10,8 @@ topic-tags: troubleshooting
 exl-id: c2470098-62f3-4fee-b1c5-800ed0e91f75
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
-source-wordcount: '327'
-ht-degree: 79%
+source-wordcount: '346'
+ht-degree: 78%
 
 ---
 
@@ -51,7 +51,7 @@ Adobe Campaign kann mit zwei Protokollierungsstufen betrieben werden:
    >
    >Wenn Sie **tracefilter:&#42;** verwenden, werden alle Protokolltypen aktiviert: ncm, rdr, nms, jst, timing, wdbc, ldap, soap, xtk, xtkquery, session, xtkwriter, network, pop3, inmail\
    >Die nützlichsten Protokolltypen sind: **wdbc** (zeigt alle SQL-Abfragen an), **soap** (zeigt alle SOAP-Aufrufe an), **ldap** (zeigt alle LDAP-Abfragen nach der Authentifizierung an), **xtkquery** (zeigt die Liste aller Abfragedef an).\
-   >Sie können sie einzeln verwenden (**z. B. trackFilter:soap,wdbc** ). Sie können sie auch alle aktivieren und bestimmte andere ausschließen: **-tracefilter:&#42;,!soap**
+   >Sie können sie einzeln verwenden (**tracefilter:soap,wdbc** Beispiel). Sie können sie auch alle aktivieren und bestimmte andere ausschließen: **-tracefilter:&#42;,!soap**
 
    Vergewissern Sie sich, dass der Fehler tatsächlich aufgetreten ist, und starten Sie den Prozess auf die normale Weise neu:
 

@@ -10,8 +10,8 @@ exl-id: 0f3a5582-5c90-4393-bee8-d9e2f07e5982
 hide: true
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '119'
-ht-degree: 100%
+source-wordcount: '128'
+ht-degree: 78%
 
 ---
 
@@ -25,13 +25,13 @@ Dies geschieht in einem neuen Fenster.
 
 ![](assets/s_user_recipient_edit.png)
 
-In verschiedenen Tabs werden die Informationen bezüglich eines Profils nach Themen geordnet.
+Die Informationen zu einem Profil werden nach Themen geordnet in verschiedenen Tabs angezeigt.
 
 Tabs und ihr Inhalt sind abhängig von Ihrer Konfiguration und den installierten Packages.
 
 >[!CAUTION]
 >
->Auf das XML-Schema und das den Feldern der Profiltabelle entsprechende Formular kann über den Verzeichnisknoten **[!UICONTROL Administration > Konfiguration > Datenschemata]** zugegriffen werden. Eventuelle Änderungen dieser Schemata sollten von erfahrenen Benutzern vorgenommen werden.
+>Auf das XML-Schema und das Formular, die Felder in der Profiltabelle betreffen, kann über den Knoten **[!UICONTROL Administration > Konfiguration > Datenschemata]** in der Adobe Campaign-Struktur zugegriffen werden. Nur erfahrene Benutzer dürfen Änderungen an diesen Schemata vornehmen.
 >
 >Weiterführende Informationen dazu finden Sie auf [dieser Seite](../../configuration/using/about-schema-edition.md).
 
@@ -106,6 +106,6 @@ The list is configurable, and usually contains: the URL clicked, date and time o
 
 >[!NOTE]
 >
->For more on tracking functionality, please refer to [this page](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}.
+>For more on tracking functionality, please refer to [this page](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}.
 
 -->

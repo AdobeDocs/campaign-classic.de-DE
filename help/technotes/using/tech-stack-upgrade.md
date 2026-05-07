@@ -7,8 +7,8 @@ hide: true
 exl-id: 78949d94-60b3-44f1-8e5a-d61b5b723e87
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 100%
+source-wordcount: '529'
+ht-degree: 98%
 
 ---
 
@@ -70,4 +70,4 @@ Wenn Ihr Campaign-Datenbanksystem PostgreSQL ist, müssen Sie auf **PostgreSQL 1
 * [Upgrade Ihrer Umgebung](../../production/using/build-upgrade.md)
 * [Häufig gestellte Fragen zum Build-Upgrade](../../platform/using/faq-build-upgrade.md)
 * [Herunterladen des neuesten Campaign Classic-Builds](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html)
-* [Neue Client-Konsole für Benutzende verfügbar machen](../../installation/using/client-console-availability-for-windows.md)
+* [Neue Client-Konsole für Benutzer verfügbar machen](../../installation/using/client-console-availability-for-windows.md)

@@ -8,7 +8,7 @@ exl-id: 8549bf8c-ba23-44cb-95f2-c50f2d0f5479
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '105'
-ht-degree: 100%
+ht-degree: 69%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 >[!AVAILABILITY]
 >
->`:warning:` Diese Funktion ist nur in Campaign Classic v7 verfügbar. [Weitere Informationen](../../mrm/using/creating-and-managing-tasks.md)   
+>`:warning:` Diese Funktion ist nur in Campaign Classic v7 verfügbar. [Weitere Informationen](../../mrm/using/creating-and-managing-tasks.md)
 
 In Kampagnen-Workflows können mithilfe einer **[!UICONTROL Aufgabe]** zwei mögliche Szenarien definiert werden: Das erste kommt zum Tragen, wenn die Aufgabe beendet wurde, das zweite, wenn die Aufgabe nicht beendet wurde. Dies ist beispielsweise der Fall, wenn der Benutzer die Erfüllung abgelehnt hat oder wenn sie überfällig ist.
 
@@ -28,4 +28,4 @@ Wie eine Aufgabe konfiguriert und durchgeführt wird, ist in der Dokumentation z
 
 ![](assets/wkf_task_activity.png)
 
-In der Option **[!UICONTROL Ressourcen]** können die für die Erfüllung der Aufgabe verantwortlichen Benutzer sowie Angaben zur Validierungsplanung gemacht werden. Die Zurückweisung durch den Validierungsverantwortlichen zieht nicht automatisch die Zurückweisung der Aufgabe selbst nach sich.
+Mit **[!UICONTROL Option]** Ressourcen“ können Sie mehrere Benutzer sowie einen Validierungsplan für die Aufgabe definieren. Wenn die genehmigende Person ablehnt, führt dies nicht dazu, dass die Aufgabe selbst abgelehnt wird.

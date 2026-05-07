@@ -9,7 +9,7 @@ topic-tags: deployment-types-
 exl-id: 4df126fa-4a6e-46a7-af6e-1e2e97f0072e
 source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: '844'
 ht-degree: 6%
 
 ---
@@ -55,7 +55,7 @@ Diese Art der Konfiguration kann eine große Anzahl von Empfängern (500.000 bis
    * die erste öffentlich zugängliche, zur Verfolgung und zum Verweisen auf den Lastenausgleich über eine virtuelle IP-Adresse (VIP), die dann an die beiden Frontserver verteilt wird,
    * Die zweite wird den internen Benutzern für den Zugriff über die Konsole bereitgestellt und verweist auf denselben Anwendungsserver.
 
-* Firewall konfiguriert, um STMP (25)-, DNS (53)-, HTTP (80)-, HTTPS (443)-, SQL (1521 für Oracle, 5432 für PostgreSQL usw.)-Ports zu öffnen. Weitere Informationen finden Sie im Abschnitt [Datenbankzugriff](../../installation/using/network-configuration.md#database-access).
+* Firewall konfiguriert zum Öffnen von STMP (25), DNS (53), HTTP (80), HTTPS (443), SQL (1521 für Oracle, 5432 für PostgreSQL usw.) Ports. Weitere Informationen finden Sie im Abschnitt [Datenbankzugriff](../../installation/using/network-configuration.md#database-access).
 
 ### Installieren des Anwendungsservers {#installing-the-application-server}
 
@@ -166,7 +166,7 @@ Zusammenfassend sind folgende Etappen zu durchlaufen:
 1. Adobe Campaign-Server starten.
 1. Stellen Sie in der Adobe Campaign-Konsole eine Verbindung mit dem **admin** her, melden Sie sich ohne Kennwort an und starten Sie den Bereitstellungsassistenten.
 
-   Weitere Informationen hierzu finden Sie unter &quot;[&#x200B; einer Instanz](../../installation/using/deploying-an-instance.md).
+   Weitere Informationen hierzu finden Sie unter &quot;[ einer Instanz](../../installation/using/deploying-an-instance.md).
 
    Die Konfiguration ist mit der Konfiguration einer eigenständigen Instanz identisch, abgesehen von der Konfiguration des Tracking-Moduls.
 

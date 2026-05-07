@@ -10,8 +10,8 @@ topic-tags: installing-campaign-in-windows-
 exl-id: 57845eae-1f1a-42f4-b2ba-46d454677ae0
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
-source-wordcount: '346'
-ht-degree: 8%
+source-wordcount: '366'
+ht-degree: 13%
 
 ---
 
@@ -42,7 +42,7 @@ https://<your Adobe Campaign server>:>port number>/nl/jsp/logon.jsp
 
 Für diese Seite sind ein Login und ein Passwort erforderlich, die im Programm definiert sind.
 
-Wie Sie die Konsole installieren, erfahren [&#x200B; (in diesem Abschnitt](../../installation/using/installing-the-client-console.md).
+Wie Sie die Konsole installieren, erfahren [ (in diesem Abschnitt](../../installation/using/installing-the-client-console.md).
 
 ## Endbenutzenden vorschlagen, ihre Client-Konsole zu aktualisieren
 

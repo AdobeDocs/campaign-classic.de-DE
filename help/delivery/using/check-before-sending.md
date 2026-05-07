@@ -9,8 +9,8 @@ hide: true
 exl-id: 50d326b0-3c23-4dbf-9df6-d32b48e30f69
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '911'
-ht-degree: 100%
+source-wordcount: '914'
+ht-degree: 91%
 
 ---
 
@@ -22,7 +22,7 @@ Prüfen Sie vor dem Nachrichtenversand außerdem, ob die Parameter und die Konfi
 
 ## Warum die Validierung wichtig ist {#validation-is-key}
 
-Bevor Sie einen Versand durchführen, müssen Sie sicherstellen, dass Ihre Empfänger tatsächlich die Nachricht erhalten, die Sie ihnen senden möchten. Zu diesem Zweck müssen Sie den Nachrichteninhalt und die Versandparameter validieren.
+Bevor Sie einen Versand durchführen, müssen Sie sicherstellen, dass Ihre Empfänger bzw. Empfängerinnen tatsächlich die Nachricht erhalten, die Sie ihnen senden möchten. Dazu müssen Sie den Nachrichteninhalt und die Versandparameter validieren.
 
 Durch diese Maßnahme können Sie mögliche Fehler erkennen und beheben, bevor Sie den Versand an Ihre Hauptzielgruppe durchführen.
 
@@ -36,7 +36,7 @@ Mit Inbox Rendering können Sie sich eine Vorschau Ihrer Nachrichten in den gän
 
 * Sie können sich ansehen, wie Nachrichten je nach verwendetem Empfangsmedium (Mobilgeräte, Web-Clients etc.) beim Empfänger dargestellt werden.
 
-* Fähigkeiten zum Inbox Rendering sind entscheidend, um festzustellen, ob Ihre E-Mail-Kampagnen erfolgreich durch die Filter der großen ISPs (Internet Service Providers) und Webmail-Dienste befördert werden. Diese Tools senden vorab eine Kopie einer E-Mail an ein Netzwerk von Test-Posteingängen, damit Sie sehen, wie eine Nachricht in diesen Diensten dargestellt wird. Manche dieser Tools bieten auch Berichte und Code-Korrektur-Möglichkeiten, mit denen Sie Fehler rasch erkennen und beheben und so die Zustellbarkeit verbessern können.
+* Inbox Rendering-Funktionen sind entscheidend, um zu ermitteln, ob Ihre E-Mail-Kampagnen erfolgreich über die Filter der wichtigsten ISPs (Internet Service Provider) und Webmail-Services hinauskommen. Solche Tools senden eine Pre-Flight-Kopie einer E-Mail an ein Netzwerk von Test-Posteingängen, sodass Sie sehen können, wie die Nachricht über diese Dienste hinweg angezeigt oder gerendert wird. Sie können auch Berichte und Optionen zur Code-Korrektur enthalten, mit denen Sie schnell Korrekturen zur Verbesserung der Zustellbarkeit ermitteln und vornehmen können.
 
 Weitere Informationen finden Sie in [diesem Abschnitt](inbox-rendering.md).
 
@@ -84,7 +84,7 @@ Sie können die Reihenfolge der Sendungen durch Angabe der Versandpriorität fes
 
 ### Einrichten von IP-Affinitäten
 
-Um den ausgehenden SMTP-Traffic besser zu steuern, können Sie für jede Affinität die Verwendung bestimmter IP-Adressen festlegen. Damit können Sie die Zustellung von E-Mails auf bestimmte Geräte oder IP-Adressen begrenzen. So können Sie beispielsweise eine Affinität pro Land oder Sub-Domain verwenden. Dann können Sie für jedes Land eine Typologie erstellen und jede Affinität mit der entsprechenden Typologie verbinden.
+Um den ausgehenden SMTP-Traffic besser zu steuern, können Sie für jede Affinität die Verwendung bestimmter IP-Adressen festlegen. Damit können Sie die Zustellung von E-Mails auf bestimmte Geräte oder IP-Adressen begrenzen. Sie können beispielsweise eine Affinität pro Land oder Subdomain verwenden. Anschließend können Sie für jedes Land eine Typologie erstellen und jede Affinität mit der entsprechenden Typologie verknüpfen.
 
 Sie haben folgende Möglichkeiten:
 
@@ -94,7 +94,7 @@ Sie haben folgende Möglichkeiten:
 
 * Verbinden Sie in der von Ihnen ausgewählten [Typologie](../../campaign-opt/using/about-campaign-typologies.md) im Feld **[!UICONTROL Verwaltung der IP-Adressen-Affinitäten]** die Sendungen mit dem Versand-Server (MTA), in dem die betreffende Affinität verwaltet wird. [Weitere Informationen](../../campaign-opt/using/applying-rules.md#control-outgoing-smtp-traffic).
 
-* Prüfen Sie nach dem Versand der E-Mail den Header, um festzustellen, von welcher IP-Adresse aus der Versand erfolgte. Ihr E-Mail-Administrator ist Ihnen beim Feststellen der Header-Informationen behilflich.
+* Überprüfen Sie nach dem Versand der E-Mail in der Kopfzeile, von welcher IP-Adresse der Versand gesendet wurde. Ihr E-Mail-Administrator sollte Ihnen beim Abrufen der Kopfzeileninformationen behilflich sein.
 
 * Stellen Sie bei SMS-Sendungen sicher, dass der SMS-Kanal über eine dedizierte Affinität verfügt, die auf **einen** Anwendungs-Server-Container beschränkt ist. [Weitere Informationen](../../installation/using/configure-delivery-settings.md#managing-outbound-smtp-traffic-with-affinities)
 

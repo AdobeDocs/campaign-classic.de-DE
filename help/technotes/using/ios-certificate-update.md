@@ -5,8 +5,8 @@ description: Aktualisierung des Server-Zertifikats des Push-Benachrichtigungs-Se
 feature: Technote, Push
 exl-id: 263fb4b5-ca62-4b92-a82d-8820ee998296
 source-git-commit: 0143e0d6ebcdbd96d183ddd0c7f07beb149a9670
-workflow-type: ht
-source-wordcount: '143'
+workflow-type: tm+mt
+source-wordcount: '160'
 ht-degree: 100%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 Am 17. Oktober 2024 wirkte sich eine Infrastrukturaktualisierung des Push-Benachrichtigungsdienstes von Apple (Apple Push Notification service, APNs) auf den iOS-Kanal von Adobe Campaign Classic aus. Eine Anpassung der Konfiguration des Betriebssystems ist **obligatorisch**, um einen Ausfall des iOS-Push-Kanals zu vermeiden.
 
-Weitere Informationen zu APNs-Änderungen finden Sie [auf dieser Seite](https://developer.apple.com/news/?id=09za8wzy).
+Weitere Informationen zu den APNs-Änderungen finden Sie [auf dieser Seite](https://developer.apple.com/news/?id=09za8wzy).
 
 Als gehosteter Kunde besteht kein Handlungsbedarf: Adobe hat das neue Stammzertifikat bereits in Ihre Umgebung integriert.
 

@@ -9,8 +9,8 @@ topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
 source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
-source-wordcount: '2069'
-ht-degree: 100%
+source-wordcount: '2108'
+ht-degree: 97%
 
 ---
 
@@ -74,7 +74,7 @@ Adobe erstellt vor etwaigen Änderungen ein Backup Ihres Systems. Wenn sich jedo
 
 Kunden wird ein Zeitraum angeboten, innerhalb dessen sie einen Termin auswählen können. Änderungen am Produktionssystem werden nur an Werktagen vorgenommen.
 
-Build-Upgrades können von Montag bis Donnerstag durchgeführt werden. Freitags werden ausschließlich Nicht-Produktionsinstanzen aktualisiert. 
+Build-Upgrades können von Montag bis Donnerstag durchgeführt werden. Freitags werden ausschließlich Nicht-Produktionsinstanzen aktualisiert.
 
 ## Wie lange dauert das Build-Upgrade?
 
@@ -86,7 +86,7 @@ Die Dauer eines Build-Upgrades hängt von mehreren Faktoren ab:
 
 Das Build-Upgrade ist ein zweistufiger Vorgang:
 
-1. Vorbereitung des Systems auf das Upgrade: Unter Berücksichtigung der Gegebenheiten Ihrer Arbeitsumgebung wird in einer Nicht-Produktionsumgebung ein vollständiges Upgrade durchgeführt. Sobald die aktualisierte Umgebung von einem technischen und funktionellen Standpunkt aus grünes Licht erhalten hat, erfolgt der zweite Schritt. Diese Phase kann abhängig von den zuvor genannten Faktoren von einigen Tagen bis zu mehreren Wochen dauern. 
+1. Vorbereitung des Systems auf das Upgrade: Unter Berücksichtigung der Gegebenheiten Ihrer Arbeitsumgebung wird in einer Nicht-Produktionsumgebung ein vollständiges Upgrade durchgeführt. Sobald die aktualisierte Umgebung von einem technischen und funktionellen Standpunkt aus grünes Licht erhalten hat, erfolgt der zweite Schritt. Diese Phase kann abhängig von den zuvor genannten Faktoren von einigen Tagen bis zu mehreren Wochen dauern.
 
 1. Das Upgrade selbst: Die Produktionsumgebung wird aktualisiert. Diese Phase dauert normalerweise einige Stunden. Für sehr komplexe Umgebungen muss mit einer längeren Ausfallzeit gerechnet werden. Zur Absicherung gegenüber Fehlern im Prozess wird eine Rollback-Strategie bestimmt, die im Ernstfall angewendet werden kann.
 
@@ -121,7 +121,7 @@ Upgrades können außerhalb der Geschäftszeiten durchgeführt werden. Es ist ge
 
 ## Welche Kosten sind mit einem Build-Upgrade verbunden?
 
-Für gehostete Kunden fallen für die Installation des Build-Upgrades keine Kosten an. Wenn am System benutzerdefinierte Entwicklungen vorgenommen werden, muss der Kunde Ressourcen bereitstellen, die diese Entwicklungen nach dem Upgrade testen und nötigenfalls etwaige Probleme beheben können. 
+Für gehostete Kunden fallen für die Installation des Build-Upgrades keine Kosten an. Wenn am System benutzerdefinierte Entwicklungen vorgenommen werden, muss der Kunde Ressourcen bereitstellen, die diese Entwicklungen nach dem Upgrade testen und nötigenfalls etwaige Probleme beheben können.
 
 ## Kann während des Upgrade-Prozesses auf die Instanz zugegriffen werden?
 
@@ -145,7 +145,7 @@ Ab Campaign Classic v7.3.5 funktionieren Tracking-Links für E-Mails, die bereit
 
 ## Muss ich während des Build-Upgrades verfügbar sein?
 
-Ja. Kunden sollten Adobe während oder unmittelbar nach dem Upgrade der Produktionsinstanz eine Kontaktperson zur Verfügung stellen.  Adobe kontaktiert diese Person per E-Mail, außer es wurden andere Vereinbarungen getroffen. Dies ermöglicht eine reibungslose Aktualisierung und eine unmittelbare Überprüfung kritischer Aufgaben. Adobe kontaktiert den Kunden, sobald das Build-Upgrade abgeschlossen ist. 
+Ja. Kunden sollten Adobe während oder unmittelbar nach dem Upgrade der Produktionsinstanz eine Kontaktperson zur Verfügung stellen.  Adobe kontaktiert diese Person per E-Mail, außer es wurden andere Vereinbarungen getroffen. Dies ermöglicht eine reibungslose Aktualisierung und eine unmittelbare Überprüfung kritischer Aufgaben. Adobe kontaktiert den Kunden, sobald das Build-Upgrade abgeschlossen ist.
 
 ## Muss ich die Client-Konsole aktualisieren?
 
@@ -153,7 +153,7 @@ Ja. Die Client-Konsole muss denselben Build haben wie die Server-Instanz. Nach d
 
 ## Wie sieht der Rollback-Plan aus? Werden Backups meiner Daten aufbewahrt?
 
-Der Rollback-Plan sieht vor, das System mit der zuletzt verfügbaren Sicherungskopie wiederherzustellen. Sicherungskopien werden für Rechenzentrumskunden sieben Tage lang und für auf Amazon Web Services (AWS) gehostete Kunden 14 Tage lang aufbewahrt. 
+Der Rollback-Plan sieht vor, das System mit der zuletzt verfügbaren Sicherungskopie wiederherzustellen. Sicherungskopien werden für Rechenzentrumskunden sieben Tage lang und für auf Amazon Web Services (AWS) gehostete Kunden 14 Tage lang aufbewahrt.
 
 ## Wie lange dauert das Rollback?
 
@@ -198,9 +198,12 @@ Weitere Informationen finden Sie in den [Hilfe- und Support-Optionen für Campai
 
 * Können Sie sich beim Server anmelden? Stellen Sie sicher, dass die Client-Konsole fehlerfrei funktioniert bzw. keine Fehlerwarnungen angezeigt werden.
 * Achten Sie darauf, dass die Konsole und der Build nach dem Upgrade dieselbe Version aufweisen.
-* Haben Sie Webanwendungen, die Daten zur Campaign-Datenbank hinzufügen? Wenn ja, führen Sie sie aus und überprüfen Sie, ob neue Datensätze per API hinzugefügt werden können.
-* Können Sie eine Test-E-Mail versenden? Erstellen Sie einen neuen Versand mit einer bekannten Vorlage, senden Sie die Nachricht an einen Testempfänger, überprüfen Sie die Personalisierung und stellen Sie sicher, dass der Abmelde-Link und die Mirrorseite funktionieren.
-* Werden alle Ihre kritischen Pfad-Workflows ausgeführt? Überprüfen Sie Workflows, öffnen Sie das Workflow-Protokoll und stellen Sie sicher, dass keine Fehler vorliegen.
+* Haben Sie Webanwendungen, die Daten zur Campaign-Datenbank hinzufügen? Wenn ja, führen Sie sie aus und
+Überprüfen, ob neue Datensätze über die API eingefügt werden können.
+* Können Sie eine Test-E-Mail versenden? Neuen Versand mit einer bekannten Vorlage erstellen und an senden
+Ein Testempfänger, Überprüfung der Personalisierung, Unterlink aufheben, Mirrorseite, alles funktioniert.
+* Werden alle Ihre kritischen Pfad-Workflows ausgeführt? Workflows überprüfen, Workflow-Journal öffnen, überprüfen
+dass keine Fehler vorliegen.
 * Sind alle Ordner vorhanden, sichtbar und aufrufbar? Durchsuchen Sie unterschiedliche Ordner und stellen Sie sicher,
 dass alle Inhalte vorhanden sind und angezeigt werden.
 * Werden Ihre Sendungen mit der richtigen Zeitzone zugestellt?

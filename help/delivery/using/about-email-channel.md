@@ -6,15 +6,15 @@ feature: Email
 role: User
 exl-id: dbdfc04a-691b-470d-b96d-4c8a9531327d
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: ht
-source-wordcount: '348'
+workflow-type: tm+mt
+source-wordcount: '453'
 ht-degree: 100%
 
 ---
 
 # Erste Schritte mit dem E-Mail-Kanal{#about-email-channel}
 
-Mit Adobe Campaign können Sie E-Mail-Sendungen erstellen, um personalisierte E-Mails an die Zielpopulation zu senden. 
+Mit Adobe Campaign können Sie E-Mail-Sendungen erstellen, um personalisierte E-Mails an die Zielpopulation zu senden.
 
 E-Mail bleibt einer der leistungsstärksten und flexibelsten Kanäle, um über Ihre App oder Website hinaus mit Benutzenden zu interagieren. Unabhängig davon, ob Sie personalisierte Inhalte, Ankündigungen oder Werbenachrichten versenden, haben Sie bei E-Mails die volle Kontrolle über die Nachricht und die Zielgruppe. Erfahren Sie in der [Dokumentation zu Adobe Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/emails/email){target=_blank}, wie Sie den E-Mail-Kanal optimal konfigurieren und nutzen: Anpassen von Inhalten, Ansprechen bestimmter Benutzersegmente und Einbinden von umfangreichen Multimedia-Elementen zur Maximierung der Wirkung und Interaktion.
 
@@ -64,7 +64,7 @@ Before starting sending emails:
 
 * Make sure recipient profiles contain at least an email address.
 * Learn more about the Adobe Campaign [Delivery best practices](delivery-best-practices.md).
-* Read out these sections to learn more about Deliverability: [Deliverability management in Campaign](about-deliverability.md) and [Deliverability best practices guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=de).
+* Read out these sections to learn more about Deliverability: [Deliverability management in Campaign](about-deliverability.md) and [Deliverability best practices guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html).
 
 The key steps to send an email are as follows:
 

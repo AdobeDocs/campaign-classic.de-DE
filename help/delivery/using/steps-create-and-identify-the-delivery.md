@@ -1,26 +1,26 @@
 ---
 product: campaign
-title: 'Erstellen und Identifizieren des Versands '
-description: 'Erstellen und Identifizieren des Versands '
+title: Erstellen und Identifizieren des Versands
+description: Erstellen und Identifizieren des Versands
 feature: Channel Configuration
 role: User
 hide: true
 exl-id: 6e37bc14-b1a9-42af-8c28-ae4b5bcaa055
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 100%
+source-wordcount: '285'
+ht-degree: 74%
 
 ---
 
-# Erstellen und Identifizieren des Versands  {#create-and-identify-the-delivery}
+# Erstellen und Identifizieren des Versands {#create-and-identify-the-delivery}
 
 ## Erstellen des Versands {#creating-the-delivery}
 
 Die Erstellung eines Versands ist in der Übersicht oder im Menü **[!UICONTROL Erstellen > Versand]** möglich.
 
 
-Um einen Versand zu erstellen, klicken Sie auf **[!UICONTROL Erstellen]** oberhalb der Versandliste. Bei der Erstellung eines neuen Versands müssen Sie den verwendeten Versandkanal angeben. Wählen Sie im Feld **[!UICONTROL Versandvorlage]** aus der Dropdown-Liste das dem gewünschten Kanal entsprechende Modell aus.
+Um einen Versand zu erstellen, klicken **[!UICONTROL oberhalb]** Versandliste auf „Erstellen“. Beim Erstellen eines neuen Versands müssen Sie den verwendeten Versandkanal angeben. Wählen Sie im Feld **[!UICONTROL Versandvorlage]** aus der Dropdown-Liste das dem gewünschten Kanal entsprechende Modell aus.
 
 ![](assets/s_ncs_user_wizard_email01_1.png)
 
@@ -34,14 +34,14 @@ Sie können neue Versandvorlagen erstellen, um bestimmte Parameter vorab an Ihre
 
 ## Identifizieren des Versands {#identifying-the-delivery}
 
-Zunächst muss der Versand durch Angabe der Parameter identifiziert werden. Gehen Sie dazu wie folgt vor:
+Zur Identifizierung des Versands müssen Parameter ausgefüllt werden. Gehen Sie dazu wie folgt vor:
 
 1. Geben Sie im Feld **[!UICONTROL Titel]** einen Namen für den Versand ein.
 
-   Sie können dem Versand außerdem einen Code zuordnen. Diese Informationen werden in der Versandliste angezeigt, sind für die Empfänger der Nachrichten jedoch nicht sichtbar.
+   Dem Versand kann auch ein Versand-Code zugewiesen werden. Der Name des Versands und sein Code werden in der Versandliste angezeigt, sind für die Empfänger jedoch nicht sichtbar.
 
 1. Geben Sie im Feld **[!UICONTROL Beschreibung]** weitere, den Versand betreffende Informationen ein.
-1. Wählen Sie die Versandart aus. Diese Information ist insbesondere für die Versandverfolgung nützlich, da Sie die Sendungen in Listen und Abfragen nach diesem Kriterium filtern können.
+1. Wählen Sie im entsprechenden Feld die Versandart aus. Diese Information ist insbesondere für die Versandverfolgung nützlich, da Sie die Sendungen in Listen und Abfragen nach diesem Kriterium filtern können.
 
    ![](assets/s_ncs_user_email_del_nature.png)
 
@@ -52,4 +52,4 @@ Der Versandinhalt ist bereit zur Konfiguration. Die Definition des Versandinhalt
 * [Definieren des E-Mail-Inhalts](defining-the-email-content.md)
 * [Definieren des SMS-Inhalts](sms-create.md#defining-the-sms-content)
 * [Definieren des Direkt-Mail-Inhalts](defining-the-direct-mail-content.md)
-* [Push-Benachrichtigungen ](about-mobile-app-channel.md)
+* [Push-Benachrichtigungen](about-mobile-app-channel.md)

@@ -6,9 +6,9 @@ feature: Reporting, Monitoring
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 exl-id: afb11ab5-bd60-4262-9dd1-fcda19cdaca0
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: ht
-source-wordcount: '281'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '286'
+ht-degree: 73%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 
 
-Dieses Kapitel enthält eine Liste der nativen Adobe Campaign-Berichte, ihren Inhalt und den Kontext ihrer Verwendung. Die nachfolgenden Erläuterungen sollen es den Benutzern ermöglichen, standardmäßig in der Plattform verfügbare Berichte zu nutzen und somit unnötigen Konfigurationsaufwand zu vermeiden.
+Dieses Kapitel enthält die Liste der integrierten Berichte von Adobe Campaign, ihren Inhalt und ihren Kontext. Mit den folgenden Informationen können Sie vermeiden, Berichte zu erstellen, die bereits in der Plattform verfügbar sind.
 
 >[!NOTE]
 >
@@ -32,7 +32,7 @@ Folgende Berichttypen stehen zur Verfügung:
 * Versandberichte, siehe [Versandberichte](../../reporting/using/delivery-reports.md).
 * Zusammenfassende Berichte, siehe [Zusammenfassende Berichte](../../reporting/using/cumulative-reports.md).
 
-Der Zugriff auf Berichte ist über die Startseite der Client-Konsole, das Berichts-Dashboard oder die Versandliste möglich. Der Anzeigemodus eines Berichts hängt vom Kontext ab. Die wichtigsten Berichte stehen auf der Startseite zur Verfügung und ermöglichen einen schnellen Zugang zu Versanddaten. Die zugrunde liegende Liste kann Ihren Bedürfnissen entsprechend angepasst werden. Weitere Informationen finden Sie in [diesem Abschnitt](../../reporting/using/about-reports-creation-in-campaign.md).
+Der Zugriff auf Berichte erfolgt über die Startseite der Client-Konsole, das Berichte-Dashboard oder die Versandliste. Der Anzeigemodus eines Berichts hängt vom Kontext ab. Die Liste der Hauptberichte ist auf der Startseite verfügbar und ermöglicht den schnellen Zugriff auf Versanddaten. Diese Liste kann Ihren Bedürfnissen entsprechend geändert werden. Weitere Informationen finden Sie in [diesem Abschnitt](../../reporting/using/about-reports-creation-in-campaign.md).
 
 Zugriff auf native Campaign-Berichte:
 

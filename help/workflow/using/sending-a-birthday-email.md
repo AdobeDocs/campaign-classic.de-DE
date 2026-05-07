@@ -7,8 +7,8 @@ hide: true
 exl-id: 38006cca-e945-4b9d-8e2d-ed537b8541d9
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '933'
-ht-degree: 100%
+source-wordcount: '951'
+ht-degree: 88%
 
 ---
 
@@ -26,7 +26,7 @@ Der Workflow für dieses Anwendungsbeispiel stellt sich wie folgt dar:
 
 In diesem täglich ausgeführten Workflow werden alle Empfänger ausgewählt, deren Geburtstag dem aktuellen Datum entspricht.
 
-![](assets/do-not-localize/how-to-video.png) Dieses Anwendungsbeispiel ist auch als Video unter [Erstellen eines Workflows](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/automating-with-workflows/creating-a-workflow.html?lang=de) verfügbar.
+![](assets/do-not-localize/how-to-video.png) Dieser Anwendungsfall kann auch in Form eines Videos gefunden werden. Weitere Informationen hierzu finden Sie im Video [Erstellen eines Workflows](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/automating-with-workflows/creating-a-workflow.html?lang=de).
 
 Erstellen Sie eine Kampagne und klicken Sie auf den Tab **[!UICONTROL Zielgruppenbestimmungen und Workflows]**. Lesen Sie diesbezüglich auch den Abschnitt [Erstellen einer Hauptzielgruppe im Workflow](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
 
@@ -59,11 +59,11 @@ Gehen Sie hierzu wie folgt vor:
    ![](assets/s_ncs_user_create_exp_exple_a.png)
 
 1. Wählen Sie die Option **[!UICONTROL Formel von einem Ausdruck ausgehend erstellen]** und klicken Sie auf die Schaltfläche **[!UICONTROL Weiter]**.
-1. Wählen Sie aus der Funktionsliste über den Knoten **[!UICONTROL Datum]** mit einem Doppelklick die Funktion **[!UICONTROL Day]** aus. Diese Funktion gibt die Zahl aus, die dem Tag des als Parameter übergebenen Datums entspricht.
+1. Wählen Sie aus der Funktionsliste über den Knoten **[!UICONTROL Datum]** mit einem Doppelklick die Funktion **[!UICONTROL Day]** aus. Diese Funktion gibt die Zahl zurück, die den Tag darstellt, der dem als Parameter übergebenen Datum entspricht.
 
    ![](assets/s_ncs_user_create_exp_exple01.png)
 
-1. Wählen Sie in der Liste der verfügbaren Felder mit einem Doppelklick das **[!UICONTROL Geburtsdatum]** aus. Im oberen Abschnitt des Editors wird nun die folgende Formel angezeigt:
+1. Doppelklicken Sie in der Liste der verfügbaren Felder auf **[!UICONTROL Geburtsdatum]**. Im oberen Bereich des Editors wird dann die folgende Formel angezeigt:
 
    ```
    Day(@birthDate)
@@ -111,7 +111,7 @@ Der Workflow für dieses Anwendungsbeispiel stellt sich wie folgt dar:
 
 
 
-Sollte es sich bei dem laufenden Jahr **nicht um ein Schaltjahr handeln**, müssen bei der Workflow-Ausführung am 1. März auch die Empfänger ausgewählt und zu der Empfängerliste hinzugefügt werden, deren Geburtstag am 29. Februar ist. In allen anderen Fällen ist keinerlei zusätzliche Maßnahme notwendig.
+Wenn das aktuelle Jahr **kein Schaltjahr ist** und der Workflow am 1. März ausgeführt wird, müssen wir alle Empfänger auswählen, die gestern (29. Februar) Geburtstag gehabt hätten, und sie zur Empfängerliste hinzufügen. In allen anderen Fällen sind keine zusätzlichen Maßnahmen erforderlich.
 
 ### &#x200B;1. Schritt: Auswahl der Empfänger, die am aktuellen Datum Geburtstag haben {#step-1--selecting-the-recipients}
 

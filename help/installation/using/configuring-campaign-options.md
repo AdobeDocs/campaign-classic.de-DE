@@ -9,8 +9,8 @@ topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
 source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
-source-wordcount: '3837'
-ht-degree: 1%
+source-wordcount: '3901'
+ht-degree: 2%
 
 ---
 
@@ -57,7 +57,7 @@ Mit **[!UICONTROL Knoten Administration / Plattform]** Optionen können Sie Adob
   </tr>
   <tr> 
    <td> <span class="uicontrol">NMS_ActivateOwnerConfirmation</span> <br /> </td> 
-   <td><p> Ermöglicht es dem für den Versand verantwortlichen Benutzer, den Versand zu bestätigen, wenn in den Versandeigenschaften ein bestimmter Benutzer oder eine Benutzergruppe für den Start eines Versands angegeben wurde.</p><p> Aktivieren Sie dazu die Option, indem Sie als Wert „1“ eingeben. Um diese Option zu deaktivieren, geben Sie „0“ ein.</p><p> Der Bestätigungsprozess für den Versand funktioniert dann standardmäßig: Nur der in den Versandeigenschaften für den Versand angegebene Benutzer oder die Benutzergruppe (oder ein Administrator) kann den Versand bestätigen und durchführen. Weitere Informationen finden Sie <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=de#start-a-delivery" target="_blank">in diesem Abschnitt</a>.</p> </td>
+   <td><p> Ermöglicht es dem für den Versand verantwortlichen Benutzer, den Versand zu bestätigen, wenn in den Versandeigenschaften ein bestimmter Benutzer oder eine Benutzergruppe für den Start eines Versands angegeben wurde.</p><p> Aktivieren Sie dazu die Option, indem Sie als Wert „1“ eingeben. Um diese Option zu deaktivieren, geben Sie „0“ ein.</p><p> Der Bestätigungsprozess für den Versand funktioniert dann standardmäßig: Nur der in den Versandeigenschaften für den Versand angegebene Benutzer oder die Benutzergruppe (oder ein Administrator) kann den Versand bestätigen und durchführen. Siehe <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=de#start-a-delivery" target="_blank">diesen Abschnitt</a>.</p> </td>
 
 <tr> 
    <td> <span class="uicontrol">Nms_DefaultRcpSchema</span> <br /> </td> 
@@ -173,7 +173,7 @@ Mit **[!UICONTROL Knoten Administration / Plattform]** Optionen können Sie Adob
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsInmail_AllowlistEmails</span> <br /> </td> 
-   <td> Liste der autorisierten Weiterleitungs-E-Mail-Adressen (aus dem Modul zur Verarbeitung eingehender E-Mails). Die Adressen müssen durch Kommas getrennt werden (oder *, um alle Adressen zu erlauben). z. B. xyz@abc.com,pqr@abc.com.<br /> </td> 
+   <td> Liste der autorisierten Weiterleitungs-E-Mail-Adressen (aus dem Modul zur Verarbeitung eingehender E-Mails). Die Adressen müssen durch Kommas getrennt werden (oder *, um alle Adressen zu erlauben). E.g. xyz@abc.com,pqr@abc.com.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsLine_AESKey</span> <br /> </td> 
@@ -317,7 +317,7 @@ Mit **[!UICONTROL Knoten Administration / Plattform]** Optionen können Sie Adob
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkImageUrl</span> <br /> </td> 
-   <td> Ermöglicht die Definition des Servers, auf dem die im Versand verwendeten Bilder gespeichert werden, damit der Browser sie abrufen kann.<br /> Für Build-Versionen &lt;= 5098 verwenden wir die URL der Bilder, die auf die Instanz hochgeladen wurden.<br /> Für Build-Versionen &gt; 5098 verwenden wir stattdessen die öffentliche URL des Versands oder die URL <span class="uicontrol">XtkFileRes_Public_URL</span> Option.<br /> </td> 
+   <td> Ermöglicht die Definition des Servers, auf dem die im Versand verwendeten Bilder gespeichert werden, damit der Browser sie abrufen kann.<br /> Für Build-Versionen &lt;= 5098 verwenden wir die URL der Bilder, die auf die Instanz hochgeladen wurden.<br /> Bei Build-Versionen &gt; 5098 verwenden wir stattdessen die öffentliche URL des Versands oder die URL der Option <span class="uicontrol">XtkFileRes_Public</span>URL.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_MediaInstance</span> <br /> </td> 
@@ -657,7 +657,7 @@ Mit **[!UICONTROL Knoten Administration / Plattform]** Optionen können Sie Adob
   </tr> 
     <tr> 
    <td> <span class="uicontrol">WdbcOptions_TempDbName</span> <br /> </td> 
-   <td> Ermöglicht die Konfiguration einer separaten Datenbank für Arbeitstabellen auf Microsoft SQL Server, um Backups und Replikation zu optimieren. Die Option entspricht dem Namen der temporären Datenbank: Wenn angegeben, werden Arbeitstabellen in diese Datenbank geschrieben. Beispiel: 'tempdb.dbo.' (Beachten Sie, dass der Name mit einem Punkt enden muss.) <a href="../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server">Weitere Informationen</a> <br /> </td> 
+   <td> Ermöglicht die Konfiguration einer separaten Datenbank für Arbeitstabellen auf Microsoft SQL Server, um Backups und Replikation zu optimieren. Die Option entspricht dem Namen der temporären Datenbank: Wenn angegeben, werden Arbeitstabellen in diese Datenbank geschrieben. Beispiel: 'tempdb.dbo.' (beachten Sie, dass der Name mit einem Punkt enden muss). <a href="../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server">Weitere Informationen</a> <br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcTimeZone</span> <br /> </td> 
@@ -742,11 +742,11 @@ Mit **[!UICONTROL Knoten Administration / Plattform]** Optionen können Sie Adob
   </tr> 
   <tr> 
    <td> <span class="uicontrol">TNT_EdgeServer</span> <br /> </td> 
-   <td> Für die Integration verwendeter Adobe Target-Server Diese Option ist standardmäßig ausgefüllt. Dieser Wert entspricht dem Adobe Target-Domänenserver, gefolgt vom Wert /m2. Beispiel: tt.omtrdc.net/m2.<br /> Siehe <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">diesen Abschnitt</a>.<br /> </td> 
+   <td> Für die Integration verwendeter Adobe Target-Server Diese Option ist standardmäßig ausgefüllt. Dieser Wert entspricht dem Adobe Target-Domänenserver, gefolgt vom Wert /m2. Beispiel: tt.omtrdc.net/m2.<br /> Weitere Informationen finden Sie in <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">diesem Abschnitt</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">TNT_TENANTName</span> <br /> </td> 
-   <td> Adobe Target-Organisationsname. Dieser Wert entspricht dem Namen des Adobe Target-Clients.<br /> Siehe <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">diesen Abschnitt</a>.<br /> </td> 
+   <td> Adobe Target-Organisationsname. Dieser Wert entspricht dem Namen des Adobe Target-Clients.<br /> Weitere Informationen finden Sie in <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">diesem Abschnitt</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">AAM_DataSourceId</span> <br /> </td> 
@@ -787,7 +787,7 @@ Mit **[!UICONTROL Knoten Administration / Plattform]** Optionen können Sie Adob
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsInteraction_LastPropositionSynchExec_</span> <br /> </td> 
-   <td> '+ [ Schema der Proposition] + „_“ + extAccountSource.@executionInstanceId + „_“ + extAccountTarget.@executionInstanceId<br /> </td> 
+   <td> '+ [ Schema der Vorschläge] + „_“ + extAccountSource.@executionInstanceId + „_“ + extAccountTarget.@executionInstanceId<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsInteraction_SynchWorkflowIds</span> <br /> </td> 

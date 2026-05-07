@@ -6,9 +6,9 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Reporting, Monitoring
 exl-id: dcbf280c-3040-4218-a453-1497662fef2e
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '220'
-ht-degree: 100%
+ht-degree: 71%
 
 ---
 
@@ -24,7 +24,7 @@ Folgende Berichttypen stehen zur Verfügung:
 * Versandberichte, siehe [Versandberichte](../../reporting/using/delivery-reports.md).
 * Zusammenfassende Berichte, siehe [Zusammenfassende Berichte](../../reporting/using/cumulative-reports.md).
 
-Der Zugriff auf Berichte ist über die Startseite der Client-Konsole, das Berichts-Dashboard oder die Versandliste möglich. Der Anzeigemodus eines Berichts hängt vom Kontext ab. Die wichtigsten Berichte stehen auf der Startseite zur Verfügung und ermöglichen einen schnellen Zugang zu Versanddaten. Die zugrunde liegende Liste kann Ihren Bedürfnissen entsprechend angepasst werden. Weitere Informationen finden Sie in [diesem Abschnitt](../../reporting/using/about-reports-creation-in-campaign.md).
+Der Zugriff auf Berichte erfolgt über die Startseite der Client-Konsole, das Berichte-Dashboard oder die Versandliste. Der Anzeigemodus eines Berichts hängt vom Kontext ab. Die Liste der Hauptberichte ist auf der Startseite verfügbar und ermöglicht den schnellen Zugriff auf Versanddaten. Diese Liste kann Ihren Bedürfnissen entsprechend geändert werden. Weitere Informationen finden Sie in [diesem Abschnitt](../../reporting/using/about-reports-creation-in-campaign.md).
 
 
 Im Bericht-Dashboard ermöglicht ein Filterfeld das schnelle Auffinden eines bestimmten Berichts aus der Liste.
@@ -45,6 +45,6 @@ Sie haben folgende Möglichkeiten:
 
 >[!NOTE]
 >
->Teilweise enthalten Berichte Grafiken, wie z. B. Kurven, Histogramme oder Trichter. Durch Überfliegen der Grafik mit der Maus werden die verschiedenen Werte angezeigt.
+>Einige Berichte enthalten Diagramme (Kurve, Balken, funnel usw.). Bewegen Sie den Cursor über ein Diagramm, um dessen Werte anzuzeigen.
 
 Weiterführende Informationen zu diesen Optionen erfahren Sie in [diesem Abschnitt](../../reporting/using/about-adobe-campaign-reporting-tools.md).

@@ -7,9 +7,9 @@ feature: A/B Testing
 role: User
 exl-id: e6f39180-d161-4226-810a-10bb1c3682ca
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '116'
-ht-degree: 100%
+ht-degree: 80%
 
 ---
 
@@ -29,6 +29,6 @@ Nach Verarbeitung der Testsendungen besteht die Möglichkeit im Kampagnen-Dashbo
 
   ![](assets/use_case_abtesting_analysis_003.png)
 
-Im vorliegenden Beispiel hat der Versand A die besseren Öffnungsraten erzielt. Daher wurde der Inhalt A für den endgültigen Versand ausgewählt.
+In unserem Beispiel erzielte Versand B die höchste Öffnungsrate. Das bedeutet, dass Inhalt B für den endgültigen Versand verwendet wird.
 
 ![](assets/use_case_abtesting_analysis_004.png)

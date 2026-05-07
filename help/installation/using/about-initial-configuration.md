@@ -10,8 +10,8 @@ topic-tags: initial-configuration
 exl-id: f77ba178-0dfb-4a2e-b33b-971765d42298
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 10%
+source-wordcount: '197'
+ht-degree: 19%
 
 ---
 
@@ -26,6 +26,6 @@ Nachdem die Adobe Campaign-Installation abgeschlossen ist, müssen Sie sie konfi
 1. Informationen zum Konfigurieren des Adobe Campaign-Servers finden Sie unter [Campaign-Server-Konfiguration](../../installation/using/configuring-campaign-server.md).
 1. Informationen zum Bereitstellen der Instanz finden Sie unter [Bereitstellen einer Instanz](../../installation/using/deploying-an-instance.md).
 
-Das Konfigurieren der Instanz setzt voraus, dass Prozesse (Web, MTA, wfserver usw.) auf dem Server gestartet werden können und Module zum Senden von E-Mails, für das Tracking usw. konfiguriert werden. Für jede Instanz werden Adobe Campaign-Prozesse auf dem Server aktiviert. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#enabling-processes).
+Das Konfigurieren der Instanz setzt die Aktivierung von Prozessen voraus (Web, MTA, Wfserver usw.) wird auf dem Server gestartet und konfiguriert Module für den Versand von E-Mails, für das Tracking usw. Für jede Instanz werden Adobe Campaign-Prozesse auf dem Server aktiviert. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#enabling-processes).
 
 Für jede Instanz können zusätzliche Konfigurationen erforderlich sein (abhängig von den verwendeten Modulen, Ihrer Architektur und Ihren Anforderungen), um den Betrieb von Adobe Campaign zu optimieren.

@@ -6,9 +6,9 @@ feature: Monitoring, Deliverability
 role: User
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
 source-git-commit: 2ebae2b84741bf26dd44c872702dbf3b0ebfc453
-workflow-type: ht
-source-wordcount: '1635'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1771'
+ht-degree: 89%
 
 ---
 
@@ -39,13 +39,13 @@ Asynchrone Fehlermeldungen werden von der Adobe Campaign-Plattform über das Bou
 
 >[!NOTE]
 >
->Für Benutzende von Campaign v8 Managed Cloud Services wird die Konfiguration der Bounce-Postfächer von Adobe durchgeführt und verwaltet. Keine Konfiguration ist erforderlich. 
+>Für Benutzende von Campaign v8 Managed Cloud Services wird die Konfiguration der Bounce-Postfächer von Adobe durchgeführt und verwaltet. Keine Konfiguration ist erforderlich.
 
-### Verwalten der Bounce-E-Mail-Qualifizierung             {#bounce-mail-qualification-management}
+### Verwalten der Bounce-E-Mail-Qualifizierung {#bounce-mail-qualification-management}
 
 Bei On-Premise-Installationen und gehosteten/hybriden Installationen, die den bestehenden Campaign-MTA verwenden, erhält der Adobe Campaign-Versand-Server eine Fehlermeldung vom Messaging-Server oder dem Remote-DNS-Server, wenn der Versand einer E-Mail fehlschlägt. Die Liste der Fehler besteht aus Zeichenfolgen, die in der vom Remote-Server zurückgegebenen Nachricht enthalten sind. Jeder Fehlermeldung sind Fehlertypen und Gründe zugeordnet.
 
-Auf die entsprechende Liste kann im Knoten **[!UICONTROL Administration > Kampagnenverwaltung > Unzustellbarkeitsverwaltung > Versandlogqualifizierung]** zugegriffen werden. Sie enthält alle von Adobe Campaign für die Qualifizierung von fehlgeschlagenen Sendungen verwendeten Regeln. Die Liste erhebt keinen Anspruch auf Vollständigkeit. Sie wird jedoch regelmäßig von Adobe Campaign angereichert und kann auch vom Benutzer ergänzt werden.
+Diese Liste ist über den Knoten **[!UICONTROL Administration > Kampagnenverwaltung > Unzustellbarkeitsverwaltung > Versandlogqualifizierung]** verfügbar. Es enthält alle von Adobe Campaign verwendeten Regeln, um fehlgeschlagene Sendungen zu qualifizieren. Sie ist nicht vollständig und wird regelmäßig von Adobe Campaign aktualisiert und kann auch vom Benutzer verwaltet werden.
 
 ![](assets/tech_quarant_rules_qualif.png)
 
@@ -53,17 +53,17 @@ Die vom Remote-Server beim ersten Auftreten dieses Fehlertyps zurückgegebene Na
 
 ![](assets/tech_quarant_rules_qualif_text.png)
 
-Adobe Campaign filtert diese Nachricht, um den variablen Inhalt (wie IDs, Daten, E-Mail-Adressen, Telefonnummern usw.) zu löschen, und zeigt das gefilterte Ergebnis in der Spalte **[!UICONTROL Text]** an. Die Variablen werden durch **`#xxx#`** ersetzt, mit Ausnahme der Adressen, die durch ersetzt **`*`** werden.
+Adobe Campaign filtert diese Nachricht, um den Inhalt der Variablen zu löschen (z. B. IDs, Daten, E-Mail-Adressen, Telefonnummern usw.) und zeigt das gefilterte Ergebnis in der Spalte &quot;**[!UICONTROL &quot;]**. Die Variablen werden durch **`#xxx#`** ersetzt, mit Ausnahme der Adressen, die durch ersetzt **`*`** werden.
 
 Dadurch können alle Fehlschläge desselben Typs zusammengefasst werden und mehrfache Einträge für ähnliche Fehler in die Versandlogqualifizierungs-Tabelle werden vermieden.
 
 >[!NOTE]
 >
->Im Feld **[!UICONTROL Trefferanzahl]** wird die Anzahl der Vorkommnisse der Nachricht in der Liste angezeigt. Die maximale Anzahl ist 100 000. Sie können das Feld bearbeiten, wenn Sie es beispielsweise zurücksetzen möchten.
+>Das Feld **[!UICONTROL Anzahl der]**&quot; zeigt die Anzahl der Vorkommnisse der Nachricht in der Liste an. Sie ist auf 100.000 Vorkommnisse beschränkt. Sie können das Feld bearbeiten, wenn Sie es beispielsweise zurücksetzen möchten.
 
 Folgende Qualifizierungsstatus von Bounce Messages treten auf:
 
-* **[!UICONTROL Zu qualifizieren]**: Die Bounce-E-Mail konnte nicht automatisch qualifiziert werden und muss dem Zustellbarkeits-Team vorgelegt werden, um die korrekte Steuerung der Zustellbarkeit der Plattform zu gewährleisten. Nicht qualifizierte Bounce-E-Mails werden nicht zur Anreicherung der E-Mail-Regeln herangezogen.
+* **[!UICONTROL Zu qualifizieren]**: Die Bounce Message konnte nicht qualifiziert werden. Dem Zustellbarkeits-Team muss eine Qualifizierung zugewiesen werden, um eine effiziente Zustellbarkeit der Plattform zu gewährleisten. Solange sie nicht qualifiziert ist, wird die Bounce Message nicht zur Anreicherung der Liste der E-Mail-Verwaltungsregeln verwendet.
 * **[!UICONTROL Beibehalten]**: Die Bounce-E-Mail wurde qualifiziert und wird vom Workflow **Zustellbarkeit** verwendet, um mit den existierenden E-Mail-Regeln verglichen zu werden und eventuell die Liste zu ergänzen.
 * **[!UICONTROL Ignorieren]**: Die Bounce-E-Mail wird vom Campaign MTA ignoriert, was bedeutet, dass diese Bounce-E-Mail nie dazu führt, dass die Adresse der Empfängerin bzw. des Empfängers unter Quarantäne gestellt wird. Sie wird vom Workflow **Zustellbarkeit** nicht verwendet und auch nicht an Client-Instanzen gesendet.
 
@@ -75,7 +75,7 @@ Folgende Qualifizierungsstatus von Bounce Messages treten auf:
 
 ### Konfiguration von E-Mail-Verwaltungsregeln {#email-management-rules}
 
-Auf E-Mail-Regeln kann im Knoten **[!UICONTROL Administration > Kampagnen > Unzustellbarkeitsverwaltung]** zugegriffen werden. Im unteren Teil des Fensters können Sie die Details der Regeln sehen.
+Der Zugriff auf E-Mail-Regeln erfolgt über **[!UICONTROL Knoten Administration > Kampagnen-Management > Unzustellbarkeitsverwaltung > E-Mail]** Regelsätze . E-Mail-Verwaltungsregeln werden im unteren Bereich des Fensters angezeigt.
 
 ![](assets/tech_quarant_rules.png)
 
@@ -121,7 +121,7 @@ Bei On-Premise-Installationen ermöglichen MX-Verwaltungsregeln die Regulierung 
 
 Diese Regeln stehen im Bereitstellungsassistenten zur Verfügung und können angepasst werden:
 
-* **[!UICONTROL MX-Verwaltung]**: Diese Regel wird verwendet, um den Fluss ausgehender E-Mails für eine Domain zu steuern. Sie analysiert die Bounce-E-Mails und blockiert bei Bedarf den Versand. 
+* **[!UICONTROL MX-Verwaltung]**: Diese Regel wird verwendet, um den Fluss ausgehender E-Mails für eine Domain zu steuern. Sie analysiert die Bounce-E-Mails und blockiert bei Bedarf den Versand.
 
 * **[!UICONTROL Zeitraum]**: Der Zeitrahmen, in dem Nachrichten gedrosselt oder blockiert werden.
 
@@ -161,7 +161,7 @@ Weitere Informationen finden Sie [auf dieser Seite](communication-channels.md) u
 
 >[!NOTE]
 >
->Für Benutzende von Campaign v8 Managed Cloud Services werden Einstellungen für weitere Zustellversuche und Fehlerschwellenwerte von Adobe basierend auf der IP-Leistung und der Domain-Reputation verwaltet. Keine Konfiguration ist erforderlich. 
+>Für Benutzende von Campaign v8 Managed Cloud Services werden Einstellungen für weitere Zustellversuche und Fehlerschwellenwerte von Adobe basierend auf der IP-Leistung und der Domain-Reputation verwaltet. Keine Konfiguration ist erforderlich.
 
 ### Datenbankbereinigungs-Workflow {#database-cleanup-workflow}
 

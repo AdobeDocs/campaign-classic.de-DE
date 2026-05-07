@@ -6,9 +6,9 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Web Forms
 exl-id: 0cbb8e4c-8cb4-4dd7-ad09-b8b3165c19a8
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: ht
-source-wordcount: '235'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '239'
+ht-degree: 75%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 
 
-Formularvorlagen sind wiederverwendbare Konfigurationen, mit denen Sie neue Formulare erstellen können. Standardmäßig werden Formularvorlagen gemeinsam mit Webanwendungsvorlagen im Knoten **[!UICONTROL Ressourcen > Vorlagen > Webanwendungsvorlagen]** gespeichert.
+Formularvorlagen sind wiederverwendbare Konfigurationen, mit denen Sie neue Formulare erstellen können. Standardmäßig werden Formularvorlagen mit Webanwendungsvorlagen im Knoten **[!UICONTROL Ressourcen > Vorlagen > Webanwendungsvorlagen]** gespeichert.
 
 Hier können Sie entweder neue Vorlagen erstellen oder ein bestehendes Formular in eine Vorlage umwandeln.
 
@@ -26,7 +26,7 @@ Ein Formular kann in eine Vorlage umgewandelt und seine Konfiguration wiederverw
 
 ![](assets/s_ncs_admin_survey_saveastemplate.png)
 
-Dadurch öffnet sich ein Fenster zur Erstellung von Webanwendungen. Dort können Sie den Namen und die Beschreibung der Vorlage eingeben und den Ordner auswählen, in dem sie gespeichert werden soll.
+Diese Aktion öffnet das Fenster zum Erstellen von Web-Anwendungen. Sie können den Namen und die Beschreibung der Vorlage eingeben und den Ordner auswählen, in dem die Vorlage gespeichert werden soll.
 
 ## Neue Formularvorlage erstellen {#create-a-new-form-template}
 

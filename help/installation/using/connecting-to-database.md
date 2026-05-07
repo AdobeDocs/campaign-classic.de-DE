@@ -10,7 +10,7 @@ exl-id: 240d7e11-da3a-4d64-8986-1f1c8ebcea3c
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
 source-wordcount: '687'
-ht-degree: 87%
+ht-degree: 71%
 
 ---
 
@@ -34,7 +34,7 @@ Sie können auf eine gemeinsam genutzte externe Datenbank über Adobe Campaign z
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Neu]** und wählen Sie als Typ **[!UICONTROL Externe Datenbank]** aus.
 1. Definieren Sie die Parameter **[!UICONTROL Verbindung]** für die externe Datenbank.
 
-   Bei Verbindungen zu einer **ODBC**-Datenbank muss das Feld **[!UICONTROL Server]** den Namen der ODBC-Datenquelle und nicht den Server-Namen enthalten. Abhängig von den verwendeten Datenbanken sind möglicherweise zusätzliche Konfigurationen erforderlich. Siehe Abschnitt [Spezifische Konfigurationen nach Datenbanktyp](../../installation/using/configure-fda.md).
+   Bei Verbindungen mit einer Datenbank vom **ODBC**-Typ muss das Feld **[!UICONTROL Server]** den Namen der ODBC-Datenquelle und nicht den Servernamen enthalten. Darüber hinaus können je nach verwendeter Datenbank bestimmte zusätzliche Konfigurationen erforderlich sein. Siehe Abschnitt [Spezifische Konfigurationen nach Datenbanktyp](../../installation/using/configure-fda.md).
 
 1. Klicken Sie nach der Eingabe der Parameter zur Bestätigung auf die Schaltfläche **[!UICONTROL Verbindung testen]**.
 
@@ -62,7 +62,7 @@ Gehen Sie in der Abfrageaktivität zur Erstellung einer periodischen Verbindung 
 
    ![](assets/wf_add_data_local_external_data.png)
 
-1. Wählen Sie aus der Dropdown-Liste die Zieldatenbank-Engine aus. Geben Sie den Namen des Servers und die Authentifizierungsparameter ein.
+1. Wählen Sie die Zieldatenbank-Engine in der Dropdown-Liste aus. Geben Sie den Namen des Servers und die Authentifizierungsparameter an.
 
    Geben Sie auch den Namen der externen Datenbank an.
 
@@ -95,13 +95,13 @@ Gehen Sie in der Abfrageaktivität zur Erstellung einer periodischen Verbindung 
 
 Sie können durch das Konfigurieren eines externen FDA-Kontos eine sichere Verbindung für den Zugriff auf eine externe Datenbank herstellen.
 
-Schreiben Sie zu diesem Zweck &quot;**:ssl**&quot; hinter die Serveradresse und die Adresse des verwendeten Ports. Beispiel: **192.168.0.52:4501:ssl**.
+Fügen Sie dazu nach der Serveradresse und der Adresse des verwendeten Ports &quot;**:ssl**&quot; hinzu. Beispiel: **192.168.0.52:4501:ssl**.
 
 Die Daten werden dadurch unter Verwendung des sicheren SSL-Protokolls gesendet.
 
 ## Zusätzliche Konfigurationen {#additional-configurations}
 
-Nötigenfalls können Sie das Schema zur Datenverarbeitung in einer externe Datenbank erstellen. Ebenso ermöglicht Ihnen Adobe Campaign das Definieren eines Mappings für die Daten in einer externen Tabelle. Diese Konfigurationen sind allgemeiner Art und werden nicht auf einzelne Workflows angewendet.
+Bei Bedarf können Sie das Schema für die Verarbeitung von Daten in einer externen Datenbank erstellen. Ebenso können Sie mit Adobe Campaign die Zuordnung zu den Daten in einer externen Tabelle definieren. Diese Konfigurationen sind allgemein und gelten nicht ausschließlich für Workflows.
 
 >[!NOTE]
 >

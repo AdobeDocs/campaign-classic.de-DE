@@ -16,7 +16,7 @@ ht-degree: 1%
 
 ## Inhaltsmodell {#content-model-10}
 
-Method:==( Hilfe | Parameter)
+Methode:==( Hilfe | Parameter)
 
 ## Attribute {#attributes-10}
 
@@ -32,7 +32,7 @@ Method:==( Hilfe | Parameter)
 
 ## Übergeordnete Elemente {#parents-10}
 
-`<methods>` , `<interface />`
+`<methods>`  ,  `<interface />`
 
 ## Untergeordnetes Element {#children-10}
 

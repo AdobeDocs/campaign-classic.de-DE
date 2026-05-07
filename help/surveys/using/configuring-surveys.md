@@ -6,9 +6,9 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Surveys
 exl-id: 387bc362-4064-4181-9385-8e0c3423ba3e
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '131'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 ## Eigenschaften der Umfrage {#survey-properties}
 
-Online-Umfragen können vollständig konfiguriert und auf Ihre Anforderungen angepasst werden. Geben Sie dazu im Eigenschaftenfenster die entsprechenden Parameter ein.
+Online-Umfragen können vollständig konfiguriert und an Ihre Anforderungen angepasst werden. Die Parameter müssen im Eigenschaftenfenster eingegeben werden.
 
 Die verfügbaren Parameter werden in [diesem Dokument](../../web/using/defining-web-forms-properties.md) erläutert.
 

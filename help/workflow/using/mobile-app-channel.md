@@ -6,8 +6,8 @@ hide: true
 feature: Workflows
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '65'
-ht-degree: 100%
+source-wordcount: '66'
+ht-degree: 51%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 
 
-Der folgende Workflow wird mit dem Modul **Mobile App Channel** installiert. Weiterführende Informationen zum Modul finden Sie in diesem [Abschnitt](../../delivery/using/about-mobile-app-channel.md).
+Der folgende Workflow wird standardmäßig mit dem Modul **Mobile-App** Kanal) installiert. Weiterführende Informationen zu dem Modul finden Sie in diesem [Abschnitt](../../delivery/using/about-mobile-app-channel.md).
 
 <table> 
  <tbody> 
@@ -28,7 +28,7 @@ Der folgende Workflow wird mit dem Modul **Mobile App Channel** installiert. Wei
   <tr> 
    <td> <span class="uicontrol">NMAC-Opt-outs</span> <br /> </td> 
    <td> <span class="uicontrol">mobileAppOptOutMgt</span> <br /> </td> 
-   <td> Dieser Workflow aktualisiert die Abmeldungen von Benachrichtigungen auf Mobile-Geräten. Wird standardmäßig alle sechs Stunden zwischen 1 Uhr und Mitternacht gestartet. Weitere Informationen finden Sie in diesem <a href="../../delivery/using/delivery-failures-quarantine.md#push-notification-quarantines">Abschnitt</a>.<br /> </td> 
+   <td> Dieser Workflow aktualisiert die Abmeldungen von Benachrichtigungen auf Mobilgeräten. Er wird alle 6 Stunden zwischen 1 Uhr morgens und Mitternacht ausgelöst. Weitere Informationen finden Sie in diesem <a href="../../delivery/using/delivery-failures-quarantine.md#push-notification-quarantines">Abschnitt</a>.<br /> </td> 
   </tr> 
  </tbody> 
 </table>

@@ -7,8 +7,8 @@ hide: true
 exl-id: 9c228cdb-331e-476e-a24c-3c7e23add3bf
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '368'
-ht-degree: 91%
+source-wordcount: '377'
+ht-degree: 70%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 91%
 
 
 
-Mit einer Aktion vom Typ **Versand (fortlaufend)** können Sie einem bestehenden Versand Empfänger hinzufügen. Dieser Versandtyp vermeidet, dass Sie jedes Mal einen neuen Versand erstellen müssen: Dieser Modus ist oft effizienter, insbesondere bei Warnungen und Benachrichtigungen mit geringen Volumen, die nach Bedarf gesendet werden.
+Mit **Aktion** fortlaufender Versand“ können Sie einem bestehenden Versand neue Empfänger hinzufügen. Durch diesen Versand müssen Sie nicht jedes Mal einen neuen Versand erstellen. Dieser Modus ist häufig effizienter, insbesondere bei Warnungen oder Benachrichtigungen mit geringem Volumen, die bei Bedarf gesendet werden.
 
 ![](assets/do-not-localize/how-to-video.png) [Funktion im Video kennenlernen](#continuous-delivery-video).
 
@@ -24,7 +24,7 @@ Auf der Ebene der Versandvorlagen können Sie ein Script zur Berechnung der Besc
 
 ![](assets/edit_diffusion_fil.png)
 
-Dank der Option **[!UICONTROL Fehler verarbeiten]** erscheint eine spezifische Transition, wenn ein Fehler auftritt. In diesem Fall wird die Ausführung des Workflows nicht ausgesetzt, sondern fortgeführt.
+Die Option **[!UICONTROL Fehler verarbeiten]** zeigt eine bestimmte Transition an, die aktiviert wird, wenn ein Fehler erzeugt wird. In diesem Fall wechselt der Workflow nicht in den Fehlermodus und wird anschließend ausgeführt.
 
 Dies gilt für Fehler des Dateisystems (Datei kann nicht verschoben werden, Zugriff auf das Verzeichnis nicht möglich usw.).
 
@@ -63,6 +63,6 @@ Bei einem fortlaufenden Versand wird EIN Versand erstellt. Versandlogs (Broadlog
 
 In diesem Video wird gezeigt, wie Sie einen fortlaufenden Versand mit einer inkrementellen Abfrage konfigurieren.
 
->[!VIDEO](https://video.tv.adobe.com/v/30084?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25039?quality=12)
 
 Weitere Anleitungsvideos zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).

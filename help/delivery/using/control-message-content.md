@@ -1,15 +1,15 @@
 ---
 product: campaign
 title: Über die Zustellbarkeit in Adobe Campaign Classic
-description: Erfahren Sie mehr über die Verwaltung der Zustellbarkeit in Adobe Campaign 
+description: Erfahren Sie mehr über die Verwaltung der Zustellbarkeit in Adobe Campaign
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Deliverability
 role: User
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
 source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
-workflow-type: ht
-source-wordcount: '777'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '854'
+ht-degree: 81%
 
 ---
 
@@ -22,7 +22,7 @@ Befolgen Sie beim Entwerfen Ihrer Nachrichteninhalte die folgenden Grundsätze:
 * [Absenderadresse](#sender-address): Die Adresse muss den Absender explizit identifizieren. Die Domain muss im Besitz des Absenders und auf ihn registriert sein. Die Domain-Registrierung darf nicht privat erfolgen.
 * [Personalisierung](#personalization): Die Personalisierung von Inhalten und das Definieren einer Sendezeit pro Empfänger erhöhen die Wahrscheinlichkeit, dass Ihre Nachricht geöffnet wird.
 * Bilder und Text: Achten Sie auf ein angemessenes Verhältnis zwischen Text und Bildern (z. B. 60 % Text und 40 % Bilder).
-* [Abmelde-Link](#opt-out) und Landingpage: Ein Abmelde-Link muss unbedingt vorhanden sein. Er muss gut sichtbar und gültig sein; außerdem muss das Formular funktionieren.
+* [Abmelde-Link](#opt-out) und -Landingpage: Der Abmelde-Link ist unverzichtbar. Er muss gut sichtbar und gültig sein und das Formular muss funktionieren.
 * Vorschau: Verwenden Sie die von Adobe Campaign angebotenen Tools, um den Inhalt Ihrer E-Mails zu überprüfen und zu optimieren ([Inbox Rendering](#message-responsiveness), [SpamAssassin](#spamassassin)).
 
 Weitere Tipps zur Optimierung der Zustellbarkeit beim Entwerfen von Inhalten finden Sie im [Adobe-Handbuch mit den Best Practices zur Zustellbarkeit](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/content-best-practices-for-optimal-delivery.html?lang=de).
@@ -33,9 +33,9 @@ Weitere Tipps zur Optimierung der Zustellbarkeit beim Entwerfen von Inhalten fin
 
 ## Absenderadresse {#sender-address}
 
-Bestimmte Internet-Anbieter überprüfen die Gültigkeit der Absenderadresse (**[!UICONTROL Von]**), bevor sie Nachrichten annehmen. Eine fehlerhafte Adresse kann dazu führen, dass sie vom empfangenden Server abgelehnt wird.
+Bestimmte ISPs überprüfen die Gültigkeit der Absenderadresse (**[!UICONTROL From]**), bevor sie Nachrichten akzeptieren. Eine schlecht formulierte Adresse könnte vom Empfangs-Server abgelehnt werden.
 
-Sie müssen sicherstellen, dass auf Instanzebene (Menü **[!UICONTROL Tools > Erweitert > Bereitstellungassistent...]**) oder in den am häufigsten verwendeten Szenarien eine richtige Adresse angegeben wird.
+Sie müssen sicherstellen, dass auf Instanzebene eine korrekte Adresse angegeben wird (Menü **[!UICONTROL Tools > Erweitert > Bereitstellungsassistent…]**) oder in den am häufigsten verwendeten Szenarien.
 
 Weiterführende Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=de){target="_blank"}.
 
@@ -55,7 +55,7 @@ Weitere Informationen zum Einfügen eines Abmelde-Links finden Sie in der [Dokum
 
 Wenn ein Abmeldeproblem erkannt wird, nachdem der Versand bereits begonnen hat, können Sie diejenigen, die auf den Ausschluss-Link klicken, manuell abmelden (z. B. über die gebündelte Aktualisierung), selbst wenn sie ihre Auswahl nicht bestätigen konnten.
 
-Generell empfehlen wir, Empfänger nicht daran zu hindern, sich abzumelden, indem Sie von ihnen verlangen, Felder wie beispielsweise ihre E-Mail-Adresse oder ihren Namen auszufüllen. Das Formular sollte nur eine einzige Validierungsschaltfläche aufweisen und die Abstimmung sollte ausschließlich in der verschlüsselten Kennung stattfinden.
+Generell sollten Sie nicht versuchen, Empfängerinnen und Empfängern, die sich abmelden möchten, in die Quere zu kommen, indem Sie von ihnen verlangen, Felder wie beispielsweise ihre E-Mail-Adresse oder ihren Namen auszufüllen. Das Formular sollte nur über eine einzige Validierungsschaltfläche verfügen und die Abstimmung sollte nur mit der verschlüsselten Kennung durchgeführt werden.
 
 Das Anfordern einer zusätzlichen Bestätigung ist keine zuverlässige Methode: Ein Benutzer kann zwei E-Mail-Adressen in dasselbe Postfach umgeleitet haben (z. B. Vorname.Nachname@club.com und Vorname.Nachname@internet-club.com). Wenn sich der Empfänger nur an die erste Adresse erinnert und sich über eine an die andere Adresse gesendete Nachricht abmelden möchte, würde das Formular dies ablehnen, da die verschlüsselte Kennung und die eingegebene E-Mail-Adresse nicht übereinstimmen.
 
@@ -69,8 +69,8 @@ Weiterführende Informationen dazu finden Sie im Abschnitt [Inbox Rendering](inb
 
 ## SpamAssassin {#spamassassin}
 
-Adobe Campaign bietet die Möglichkeit der Nutzung von SpamAssassin, einem Filterprogramm, das E-Mails eine Punktzahl zuordnet. Diese gibt Auskunft über die Wahrscheinlichkeit, von Anti-Spam-Programmen als unerwünscht eingestuft zu werden.
+Adobe Campaign kann so konfiguriert werden, dass es mit SpamAssassin funktioniert. Auf diese Weise können E-Mails bewertet werden, um festzustellen, ob eine Nachricht von den Anti-Spam-Tools, die beim Empfang verwendet werden, möglicherweise als Spam eingestuft wird.
 
-Auf diese Weise kann vor dem Versandstart im Tab **[!UICONTROL Vorschau]** das Spam-Risiko ausgewertet werden. Ein Hinweis zeigt die erfolgreiche Durchführung der Anti-Spam-Prüfung an.
+Vor Beginn eines Versands können Sie auf **[!UICONTROL Registerkarte]** Vorschau“ die Risiken bewerten. Eine Warnmeldung gibt das Ergebnis des Tests aus.
 
 Weitere Informationen finden Sie in diesem [Abschnitt](spamassassin.md).

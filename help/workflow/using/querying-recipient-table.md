@@ -8,7 +8,7 @@ exl-id: 5b037798-b092-4c98-9f6a-4af7fc7941c6
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '450'
-ht-degree: 97%
+ht-degree: 64%
 
 ---
 
@@ -41,7 +41,7 @@ Gehen Sie wie folgt vor:
 
    ![](assets/query_editor_03.png)
 
-1. Sortieren Sie die Spalten in der gewünschten Anzeigereihenfolge, hier beispielsweise die Kundennummern in absteigender und die Nachnamen in alphabetischer Reihenfolge. Klicken Sie nun auf **[!UICONTROL Weiter]**.
+1. Sortieren Sie die Spalten, um sie in der richtigen Reihenfolge anzuzeigen. Hier möchten wir die Kontonummern in absteigender Reihenfolge und die Namen in alphabetischer Reihenfolge sortieren. Klicken Sie nun auf **[!UICONTROL Weiter]**.
 
    ![](assets/query_editor_04.png)
 
@@ -52,7 +52,7 @@ Gehen Sie wie folgt vor:
 
    ![](assets/query_editor_05.png)
 
-1. Bei Bedarf können Sie die Schaltfläche **[!UICONTROL Werteverteilung]** auswählen. Dann werden die in der Datenbank enthaltenen E-Mail-Domains und deren Häufigkeit angezeigt. Auch alle anderen Domains werden angezeigt, da der Filter noch nicht aktiv ist.
+1. Klicken Sie bei Bedarf auf die **[!UICONTROL Werteverteilung]**, um eine Verteilung auf der Grundlage der E-Mail-Domain potenzieller Kunden anzuzeigen. Für jede E-Mail-Domain in der Datenbank ist ein Prozentsatz verfügbar. Andere Domains als &quot;orange.co.uk&quot; werden angezeigt, bis der Filter angewendet wird.
 
    Die Zusammenfassung der Abfrage wird unten im Fenster angezeigt, hier also **E-Mail-Domain gleich web.de**.
 
@@ -66,17 +66,17 @@ Gehen Sie wie folgt vor:
 
    ![](assets/query_editor_08.png)
 
-1. Im Fenster **[!UICONTROL Datenformatierung]** können Sie die Anzeigereihenfolge der Ausgabespalten festlegen. Benutzen Sie die Pfeile, um die Zeile &quot;Ort&quot; nach oben unmittelbar unter &quot;Kundennummer&quot; zu verschieben.
+1. Dadurch gelangen Sie zum Fenster **[!UICONTROL Datenformatierung]**. Überprüfen Sie die Spaltenreihenfolge. Verschieben Sie die Spalte „Ort“ nach oben in die Spalte „Kontonummer“.
 
    Entfernen Sie das Kreuz aus der &quot;Vorname&quot;-Checkbox, um dieses Feld im Ergebnis nicht anzuzeigen.
 
    ![](assets/query_editor_nveau_15.png)
 
-1. Im letzten Schritt, der **[!UICONTROL Datenvorschau]**, wird das Abfrageergebnis berechnet. Klicken Sie hierfür auf **[!UICONTROL Datenvorschau starten]**.
+1. Klicken Sie **[!UICONTROL Fenster]** Datenvorschau“ auf **[!UICONTROL Vorschau der Daten starten]**. Diese Funktion berechnet das Ergebnis der Abfrage.
 
    Im Tab **[!UICONTROL Ergebnis in Spalten]** wird das Ergebnis der Abfrage in Spaltenform angezeigt.
 
-   Die Ergebnistabelle enthält alle Empfänger, deren E-Mail-Domain &quot;web.de&quot; ist, und die nicht in Berlin wohnen. Die Vornamen werden nicht angezeigt, da diese Spalte im verangehenden Schritt abgewählt wurde. Die Kundennummern wurden in absteigender Reihenfolge sortiert.
+   Das Ergebnis zeigt alle Empfänger mit der E-Mail-Domain &quot;orange.co.uk&quot;, die nicht in London leben. Die Spalte „Vorname“ wird nicht angezeigt, da sie im vorherigen Schritt deaktiviert wurde. Die Kontonummern werden in absteigender Reihenfolge sortiert.
 
    ![](assets/query_editor_nveau_12.png)
 

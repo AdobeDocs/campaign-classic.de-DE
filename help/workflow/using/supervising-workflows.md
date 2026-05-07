@@ -7,8 +7,8 @@ hide: true
 exl-id: ca6d4bf4-7b3a-4d36-9fc3-0b83531d0132
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '651'
-ht-degree: 100%
+source-wordcount: '655'
+ht-degree: 95%
 
 ---
 
@@ -38,7 +38,7 @@ Um den Status einer Reihe von Workflows zu überwachen, sind folgende Schritte e
 
 ## &#x200B;1. Schritt: Erstellung des Monitoring-Workflows {#step-1--creating-the-monitoring-workflow}
 
-Der zu überwachende Workflow-Ordner ist **CustomWorkflows** im Knoten **Administration > Betreibung > Technische Workflows**. Dieser Ordner enthält diverse geschäftsrelevante Workflows.
+Der Workflow-Ordner, den wir überwachen werden, ist der Ordner **CustomWorkflows**, der im Knoten **Administration > Produktion > Technische Workflows** gespeichert ist. Dieser Ordner enthält eine Reihe von Geschäfts-Workflows.
 
 Der **Monitoring-Workflow** wird im Stammverzeichnis des Ordners der technischen Workflows gespeichert. Das verwendete Label ist **Monitoring**.
 

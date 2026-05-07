@@ -5,9 +5,9 @@ description: Implementierungsschritte für das Campaign Interaction-Modul
 feature: Interaction, Offers
 exl-id: 82b88ab7-6a95-4bb3-b8b3-abea0fdd4ca0
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '288'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -52,7 +52,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->Die im Folgenden beschriebenen Schritte sind von einem **Versandverantwortlichen** durchzuführen. Dieser hat nur auf Angebote in Live-Umgebungen Zugriff.
+>Die folgenden Schritte sollten von einem Profil des **Versandverantwortlichen** ausgeführt werden. Sie können Angebote nur in Live-Umgebungen bearbeiten.
 
 1. Kampagnen erstellen.
 1. Verweis auf ein Angebot in einer Kampagne oder im gebündelten Versand einer Kampagne. Weitere Informationen hierzu finden Sie im Abschnitt [Über ausgehende Kanäle](../../interaction/using/about-outbound-channels.md).

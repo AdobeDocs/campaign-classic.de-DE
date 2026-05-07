@@ -7,7 +7,7 @@ exl-id: a7253ca7-47e5-4def-849d-3ce1c9b948fb
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
 source-wordcount: '195'
-ht-degree: 91%
+ht-degree: 84%
 
 ---
 
@@ -37,7 +37,7 @@ Gehen Sie hierzu wie folgt vor:
 
    Sie können für dieses Versand-Mapping (**trackinglog**) auch auswählen, ob Tracking verwaltet werden soll.
 
-1. Wählen Sie dann die zu berücksichtigenden Erweiterungen. Der Erweiterungstyp hängt von den Parametern und Optionen Ihrer Plattform ab (bitte überprüfen Sie Ihren Lizenzvertrag).
+1. Wählen Sie dann die entsprechenden Erweiterungen aus. Der Erweiterungstyp hängt von den Parametern und Optionen Ihrer Plattform ab (siehe Lizenzvertrag).
 
    ![](assets/wf_new_mapping_define_extensions.png)
 

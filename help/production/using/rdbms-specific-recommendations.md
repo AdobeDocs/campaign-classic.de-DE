@@ -10,8 +10,8 @@ topic-tags: database-maintenance
 exl-id: a586d70b-1b7f-47c2-a821-635098a70e45
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1273'
-ht-degree: 3%
+source-wordcount: '1305'
+ht-degree: 5%
 
 ---
 
@@ -84,7 +84,7 @@ Um Sie beim Einrichten von Wartungsplänen zu unterstützen, werden in diesem Ab
 
 >[!IMPORTANT]
 >
->Adobe empfiehlt dringend, VACUUM FULL nicht auf von Campaign Adobe gehosteten Datenbank-Setups auszuführen. Die empfohlenen Wartungsarbeiten dienen nur als Anleitung für On-Premise-Installationen. Verwenden Sie für benutzerdefinierte Tabellenimplementierungen und Schemata VACUUM FULL auf eigene Gefahr, da VACUUM - ohne Überwachung - ausschließlich Tabellen sperren kann, die zu angehaltenen Abfragen führen, und in einigen Fällen die gesamte Datenbank sperren kann.
+>Adobe empfiehlt dringend, VACUUM FULL nicht auf von Campaign Adobe gehosteten Datenbankeinstellungen auszuführen.Die empfohlenen Wartungsarbeiten sind nur für On-Premise-Installationen. Verwenden Sie für benutzerdefinierte Tabellenimplementierungen und Schemata VACUUM FULL auf eigene Gefahr, da VACUUM - ohne Überwachung - ausschließlich Tabellen sperren kann, die zu angehaltenen Abfragen führen, und in einigen Fällen die gesamte Datenbank sperren kann.
 
 In PostgreSQL können Sie die folgenden typischen Schlüsselwörter verwenden:
 
@@ -157,7 +157,7 @@ PostgreSQL bietet keine einfache Möglichkeit, einen Online-Tabellen-Neuaufbau d
 
 Im Folgenden finden Sie ein Beispiel für die Tabellendefragmentierung mithilfe spezifischer Funktionen zum Generieren der erforderlichen DDL. Mit dem folgenden SQL-Code können Sie zwei neue Funktionen erstellen: **GenRebuildTablePart1** und **GenRebuildTablePart2**, mit denen die erforderliche DDL zum Erstellen einer Tabelle generiert werden kann.
 
-* Mit der ersten Funktion können Sie eine Arbeitstabelle (hier **&#x200B; _tmp**) erstellen, die eine Kopie der ursprünglichen Tabelle ist.
+* Mit der ersten Funktion können Sie eine Arbeitstabelle (hier ** _tmp**) erstellen, die eine Kopie der ursprünglichen Tabelle ist.
 * Die zweite Funktion löscht dann die ursprüngliche Tabelle und benennt die Arbeitstabelle und ihre Indizes um.
 * Die Verwendung von zwei Funktionen anstelle einer bedeutet, dass Sie bei einem Fehler der ersten nicht das Risiko eingehen, die ursprüngliche Tabelle zu löschen.
 
@@ -412,7 +412,7 @@ Wenden Sie sich an Ihren Datenbankadministrator, um mehr über die Verfahren zu 
 
 >[!NOTE]
 >
->Für Microsoft SQL Server können Sie den Wartungsplan verwenden, der auf ([&#x200B; Seite) beschrieben &#x200B;](https://ola.hallengren.com/sql-server-index-and-statistics-maintenance.html).
+>Für Microsoft SQL Server können Sie den Wartungsplan verwenden, der auf ([ Seite) beschrieben ](https://ola.hallengren.com/sql-server-index-and-statistics-maintenance.html).
 
 Das folgende Beispiel betrifft Microsoft SQL Server 2005. Wenn Sie eine andere Version verwenden, wenden Sie sich an Ihren Datenbankadministrator, um mehr über die Wartungsmaßnahmen zu erfahren.
 
@@ -472,7 +472,7 @@ Das folgende Beispiel betrifft Microsoft SQL Server 2005. Wenn Sie eine andere V
 
 >[!NOTE]
 >
->Diese Konfiguration ist optional.
+>Hierbei handelt es sich um eine optionale Konfiguration.
 
 Mit der Option **WdbcOptions_TempDbName** können Sie eine separate Datenbank für Tabellen auf Microsoft SQL Server konfigurieren. Dadurch werden Backups und Replikation optimiert.
 

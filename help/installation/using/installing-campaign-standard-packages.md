@@ -7,8 +7,8 @@ badge-v7-prem: label="Nur On-Premise/Hybrid" type="Caution" url="https://experie
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
 source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
-source-wordcount: '1306'
-ht-degree: 11%
+source-wordcount: '1416'
+ht-degree: 15%
 
 ---
 
@@ -159,7 +159,7 @@ In der folgenden Tabelle sind alle nativen Campaign-Packages aufgeführt.
   </tr> 
   <tr> 
    <td> Zugriff auf externe Daten (Federated Data Access)<br /> </td> 
-   <td> Bietet die Option Federated Data Access (FDA) , um in einer oder mehreren externen Datenbanken gespeicherte Informationen zu verarbeiten, sodass Sie auf externe Daten zugreifen können, ohne die Datenstruktur in Adobe Campaign zu ändern.  Optional. <a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/accessing-an-external-database-fda.html?lang=de" target="_blank">Weitere Informationen</a> <br /> </td> 
+   <td> Bietet die Option Federated Data Access (FDA) , um in einer oder mehreren externen Datenbanken gespeicherte Informationen zu verarbeiten, sodass Sie auf externe Daten zugreifen können, ohne die Datenstruktur in Adobe Campaign zu ändern.  Optional. <a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/accessing-an-external-database-fda.html" target="_blank">Weitere Informationen</a> <br /> </td> 
    <td> Alle<br /> </td> 
   </tr> 
   <tr> 
@@ -174,7 +174,7 @@ In der folgenden Tabelle sind alle nativen Campaign-Packages aufgeführt.
   </tr> 
   <tr> 
    <td> Couponverwaltung<br /> </td> 
-   <td> Erstellt einen Couponsatz, der künftigen Marketing-Angeboten hinzugefügt wird. Optional. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalized-coupons.html?lang=de" target="_blank">Weitere Informationen</a> <br /> </td> 
+   <td> Erstellt einen Couponsatz, der künftigen Marketing-Angeboten hinzugefügt wird. Optional. <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalized-coupons.html" target="_blank">Weitere Informationen</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
@@ -184,7 +184,7 @@ In der folgenden Tabelle sind alle nativen Campaign-Packages aufgeführt.
   </tr> 
   <tr> 
    <td> Zentrales/lokales Marketing (dezentrales Marketing)<br /> </td> 
-   <td> Implementiert Kooperationskampagnen zwischen zentralen Entitäten (Hauptsitz, Marketing-Abteilungen usw.) und lokalen Entitäten (Verkaufsstellen, regionale Agenturen usw.). Optional. <a href="https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html?lang=de" target="_blank">Weitere Informationen</a><br /> </td> 
+   <td> Durchführung von Kooperationskampagnen zwischen zentralen Entitäten (Hauptsitz, Marketing-Abteilungen usw.) und lokalen Stellen (Verkaufsstellen, regionale Agenturen usw.). Optional. <a href="https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html?lang=de" target="_blank">Weitere Informationen</a><br /> </td> 
    <td> Marketing </td> 
   </tr> 
   <tr> 
@@ -242,7 +242,7 @@ In der folgenden Tabelle sind alle nativen Campaign-Packages aufgeführt.
 
 ### Message-Center-Paket {#message-center-package}
 
-Sie müssen vor der Installation von Transaktionsnachrichten (Message-Center-Paket) Versandkanäle (E-Mail, Mobile-Kanal, Mobile-App-Kanal, LINE usw.) installieren. Wenn Sie ein reines E-Mail-Message-Center-Projekt gestartet haben und anschließend einen neuen Kanal hinzufügen müssen, müssen Sie die folgenden Schritte ausführen:
+Sie müssen die Versandkanäle (E-Mail, Mobile-Kanal, Mobile-App-Kanal, LINE usw.) installieren vor der Installation von Transaktionsnachrichten (Message Center-Paket). Wenn Sie ein reines E-Mail-Message-Center-Projekt gestartet haben und anschließend einen neuen Kanal hinzufügen müssen, müssen Sie die folgenden Schritte ausführen:
 
 1. Installieren Sie den neuen Kanal, z. B. **Mobile-Kanal** mithilfe des Package Import-Assistenten ( **[!UICONTROL Tools > Erweitert > Package importieren > Adobe Campaign-Paket]**).
 1. Importieren Sie die Datei **[!UICONTROL Tools > Erweitert > Paket importieren > Datei]** und wählen Sie:

@@ -5,9 +5,9 @@ description: Erfahren Sie, wie Sie in Adobe Campaign Classic eine Transaktionsna
 feature: Transactional Messaging, Message Center, Templates
 exl-id: a52bc140-072e-4f81-b6da-f1b38662bce5
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: ht
-source-wordcount: '511'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '513'
+ht-degree: 83%
 
 ---
 
@@ -53,16 +53,16 @@ Transaktionsnachrichtenvorlagen enthalten die für die Personalisierung der Tran
 
 ## Nachrichteninhalt erstellen {#creating-message-content}
 
-Die Erstellung des Inhalts einer Transaktionsnachricht erfolgt nach dem gleichen Prinzip wie bei einem klassischen Versand in Adobe Campaign. Für einen E-Mail-Versand können Sie zum Beispiel einen Inhalt im HTML- oder Textformat erstellen und Anhänge hinzufügen oder den Betreff des Versands personalisieren. Weiterführende Informationen hierzu finden Sie im Kapitel zum [ E-Mail-Versand](../../delivery/using/about-email-channel.md).
+Die Definition des Inhalts der Transaktionsnachricht entspricht der für den regulären Versand in Adobe Campaign. So können Sie z. B. für einen E-Mail-Versand Inhalte im HTML- oder Textformat erstellen, Anhänge hinzufügen oder das Versandobjekt personalisieren. Weiterführende Informationen hierzu finden Sie im Kapitel zum [ E-Mail-Versand](../../delivery/using/about-email-channel.md).
 
 >[!IMPORTANT]
 >
->In Nachrichten enthaltene Bilder müssen öffentlich zugänglich sein. Adobe Campaign verfügt über keinen Mechanismus zum Online-Stellen der Bilder für Transaktionsnachrichten.\
+>Die in der Nachricht enthaltenen Bilder müssen öffentlich zugänglich sein. Adobe Campaign bietet keinen Mechanismus zum Hochladen von Bildern für Transaktionsnachrichten.\
 >Im Gegensatz zu JSSP oder webApp bietet `<%=` keine standardmäßige Escape-Funktion.
 >
 >In diesem Fall müssen Sie alle Daten, die aus dem Ereignis stammen, ordnungsgemäß maskieren. Dieses Escape-Sequenz hängt davon ab, wie dieses Feld verwendet wird. Verwenden Sie beispielsweise innerhalb einer URL encodeURIComponent. Für eine Anzeige im HTML-Code, können Sie escapeXMLString verwenden.
 
-Integrieren Sie nach der Erstellung des Inhalts die Ereignisinformationen in den Nachrichten-Textkörper, um die Nachricht zu personalisieren. Verwenden Sie hierzu die zur Verfügung stehenden Personalisierungsfelder.
+Nachdem Sie den Nachrichteninhalt definiert haben, können Sie Ereignisinformationen in den Nachrichtentext integrieren und personalisieren. Ereignisinformationen werden mithilfe von Personalisierungs-Tags in den Textkörper eingefügt.
 
 ![](assets/messagecenter_create_content_001.png)
 
@@ -79,7 +79,7 @@ Gehen Sie wie folgt vor, um Personalisierungsfelder in einen E-Mail-Nachrichteni
 
    ![](assets/messagecenter_create_custo_002.png)
 
-1. Ergänzen Sie das Feld unter Einhaltung folgender Syntax: **Elementname**.@**Attributname**. Beispiel:
+1. Füllen Sie das Tag wie folgt aus: **Elementname**.@**Attributname**, wie unten dargestellt.
 
    ![](assets/messagecenter_create_custo_003.png)
 

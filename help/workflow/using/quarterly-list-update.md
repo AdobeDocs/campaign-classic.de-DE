@@ -7,8 +7,8 @@ hide: true
 exl-id: 0d3e7046-313a-42a6-9155-3365e8d60bac
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '285'
-ht-degree: 100%
+source-wordcount: '286'
+ht-degree: 39%
 
 ---
 
@@ -16,24 +16,24 @@ ht-degree: 100%
 
 
 
-Im folgenden Beispiel wird eine [inkrementelle Abfrage](incremental-query.md) verwendet, um eine Empfängerliste automatisch zu aktualisieren. Diese wird regelmäßig im Rahmen saisonaler Marketing-Kampagnen verwendet.
+Im folgenden Beispiel wird eine [inkrementelle Abfrage](incremental-query.md) verwendet, um eine Empfängerliste automatisch zu aktualisieren. Diese Empfänger werden im Rahmen von saisonalen Marketing-Kampagnen angesprochen.
 
-Jeweils zu Beginn einer neuen Saison werden geeignete sportliche Aktivitäten beworben. Dies bedeutet, dass die Listen einmal pro Quartal aktualisiert werden. Die Empfänger sollen jedoch im Rahmen dieser Kampagne nur einmal alle neun Monate angesprochen werden. Auf diese Weise wird eine eventuelle Werbemüdigkeit durch den Empfänger vermieden und sichergestellt, dass er im Laufe der Zeit Angebote für verschiedene Jahreszeiten erhält.
+Da diese Kampagnen zu Beginn jeder Saison gestartet werden, um relevante sportliche Aktivitäten anzubieten, werden diese Listen jedes Quartal aktualisiert. Ein Empfänger darf von dieser Kampagne jedoch nur einmal alle 9 Monate angesprochen werden. Auf diese Weise können Sie die Eignungshäufigkeit des Empfängers ausgleichen und Aktivitäten für verschiedene Jahreszeiten im Laufe der Jahre anbieten.
 
 ![](assets/incremental_query_example.png)
 
 1. Erstellen Sie einen neuen Workflow und positionieren Sie eine inkrementelle Abfrage mit anschließendem Listen-Update im Diagramm.
 1. Konfigurieren Sie in der Aktivität die Registerkarte **[!UICONTROL Inkrementelle Abfrage]** (wie im Abschnitt [Erstellen einer Abfrage](query.md#creating-a-query) beschrieben).
-1. Gehen Sie in den Tab **[!UICONTROL Planung &amp; Verlauf]** und geben Sie einen Verlaufsumfang von 270 Tagen an. Ein bereits angesprochener Empfänger wird innerhalb der nächsten 270 Tage, also ungefähr 9 Monate, nicht mehr im Rahmen dieser Kampagne kontaktiert.
+1. Wählen Sie die Registerkarte **[!UICONTROL Planung und Verlauf]** und geben Sie dann einen Verlauf von 270 Tagen an. Ein bereits kontaktierter Empfänger wird für einen Zeitraum von 270 Tagen bzw. etwa 9 Monaten nicht mehr kontaktiert.
 
    Klicken Sie dann auf die Schaltfläche **[!UICONTROL Ändern...]**.
 
 1. Da die Liste jeweils zu Saisonbeginn aktualisiert werden soll, muss als Häufigkeit **[!UICONTROL Monatlich]** ausgewählt werden.
-1. Wählen Sie im nächsten Bildschirm die Monate März, Juni, September und Dezember aus. Geben Sie als Tag den 20. des Monats an und die Uhrzeit, an der der Workflow gestartet werden soll.
+1. Auf dem nächsten Bildschirm wählen Sie März, Juni, September und Dezember. Wählen Sie den 20. des Monats und dann die Uhrzeit aus, zu der Sie den Workflow starten möchten.
 1. Geben Sie abschließend den Gültigkeitszeitraum der Abfrage an. Im vorliegenden Beispiel wurde **[!UICONTROL Dauerhaft gültig]** ausgewählt.
 
    ![](assets/incremental_query_example_2.png)
 
 1. Konfigurieren Sie nun die Aktivität Listen-Update (wie im Abschnitt ](list-update.md)Listen-Update[ beschrieben).
 
-Der Workflow startet automatisch zu jedem Saisonbeginn und die Liste wird jeweils mit den neuen Angebotsempfängern aktualisiert.
+Der Workflow wird daher automatisch kurz vor Beginn jeder Staffel gestartet. Die Liste wird mit neuen geeigneten Empfängern aktualisiert, um die Angebote zu erhalten.

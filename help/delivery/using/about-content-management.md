@@ -7,9 +7,9 @@ feature: Landing Pages, Email Design
 role: User
 exl-id: 87434cc2-1636-4558-ab60-255b7f873c0c
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: ht
-source-wordcount: '261'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '273'
+ht-degree: 78%
 
 ---
 
@@ -23,7 +23,7 @@ Das Adobe Campaign-Modul Inhaltsverwaltung (Content Manager) ist in für Campa
 
 Das Content-Management-Modul umfasst Funktionen für Arbeitsgruppen, Workflows und Inhaltsaggregationen. Damit können Nachrichten automatisch formatiert werden: E-Mail, Post, SMS, Web usw.
 
-Die Verwendung des Content-Manager-Moduls ermöglicht es Ihnen, den für die Inhaltserstellung zuständigen Benutzern Eingabe- und Auswahlfelder zur Verfügung zu stellen. Das Layout der Inhalte wird automatisch über ein Stylesheet gesteuert.
+Mithilfe des Content Managers in einem Versand können Sie den für die Inhaltserstellung zuständigen Benutzerinnen und Benutzern Eingabe- oder Auswahlfelder anbieten. Das Layout und die Anzeige dieses Inhalts sowie alle vorgenommenen Änderungen werden automatisch über das Stylesheet verwaltet.
 
 ![](assets/s_ncs_content_create_content_sample.png)
 
@@ -35,7 +35,7 @@ Das Content-Management bietet folgende Vorteile:
 
 * Strukturierte Redaktion von Inhalten dank der Eingabe-Schnittstellen,
 * Trennung von Daten und ihrer Darstellung (werden im XML-Format erzeugt),
-* Erzeugung von Dokumenten in diversen Formaten (HTML, TXT, XML usw.) basierend auf Stylesheets, die die Einhaltung des Corporate Designs gewährleisten,
+* Dokumenterstellung in verschiedenen Formaten (HTML, TXT, XML usw.) basierend auf Stylesheets, um die Einhaltung grafischer Charts zu gewährleisten,
 * Abruf und Zusammenstellung von externen Inhalten,
 * Teamwork mit Validierungs-Workflows und Datenkontrolle.
 

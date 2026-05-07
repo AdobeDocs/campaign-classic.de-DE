@@ -9,8 +9,8 @@ topic-tags: prerequisites-and-recommendations-
 exl-id: ec40498e-e673-4792-8dcf-8bb7e852b532
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 52%
+source-wordcount: '450'
+ht-degree: 48%
 
 ---
 
@@ -33,11 +33,11 @@ Die Datenschutzkonfiguration und entsprechende Härtungsmaßnahmen sind zentrale
 
 [Mehr dazu](../../installation/using/privacy.md)
 
-## Zugriffsverwaltung 
+## Zugriffsverwaltung
 
 <img src="assets/do-not-localize/icon_access.svg" width="60px">
 
-Die Zugriffsverwaltung ist ein wichtiger Bestandteil des Sicherheits-Managements. Im Folgenden finden Sie die wichtigsten Best Practices:
+Die Zugriffsverwaltung ist ein wichtiger Bestandteil des Sicherheits-Managements. Im Folgenden finden Sie einige der wichtigsten Best Practices:
 
 * Erstellen Sie eine ausreichende Anzahl von Sicherheitsgruppen.
 * Stellen Sie sicher, dass jeder Benutzer über geeignete Zugriffsberechtigungen verfügt.
@@ -51,7 +51,7 @@ Die Zugriffsverwaltung ist ein wichtiger Bestandteil des Sicherheits-Managements
 
 Bei Entwicklungsaufgaben in Adobe Campaign (Workflows, JavaScript, JSSP usw.) sollten Sie sich grundsätzlich an diesen Leitlinien orientieren:
 
-* auf die Zulassungsliste setzen **Scripting**: SQL-Anweisungen vermeiden, parametrisierte Funktionen anstelle von Zeichenfolgenverkettung verwenden, SQL-Injection vermeiden, indem die zu verwendenden SQL-Funktionen zur hinzufügen.
+* **Scripting**: SQL-Anweisungen vermeiden, parametrisierte Funktionen anstelle von Zeichenfolgenverkettung verwenden, SQL-Injection vermeiden, indem die zu verwendenden SQL-Funktionen zur hinzufügen.
 
 * **Schutz des Datenmodells**: Verwenden Sie spezifische Berechtigungen, um Benutzeraktionen einzuschränken, und fügen Sie Systemfilter hinzu (sysFilter).
 
@@ -84,7 +84,7 @@ Die Konfiguration muss auf allen Servern durchgeführt werden. Die Konfiguration
 
 * **Schutz ausgehender Verbindungen** und **Befehlsbeschränkung** (Server-seitig)
 
-* Sie können auch zusätzliche HTTP-Kopfzeilen hinzufügen, checkIPConsistent aktivieren, TLS aktivieren, sessionTimeOutSec aktivieren usw. Weitere Informationen finden Sie in der [Dokumentation zur Campaign](../../installation/using/configuring-campaign-server.md)Serverkonfiguration und in der [&#128279;](../../installation/using/the-server-configuration-file.md)Beschreibung der Serverkonfigurationsdatei“.
+* Sie können auch zusätzliche HTTP-Kopfzeilen hinzufügen, checkIPConsistent aktivieren, TLS aktivieren, sessionTimeOutSec aktivieren usw. Weitere Informationen finden Sie in der [Dokumentation zur Campaign](../../installation/using/configuring-campaign-server.md)Serverkonfiguration und in der [](../../installation/using/the-server-configuration-file.md)Beschreibung der Serverkonfigurationsdatei“.
 
 [Mehr dazu](../../installation/using/server-configuration.md)
 

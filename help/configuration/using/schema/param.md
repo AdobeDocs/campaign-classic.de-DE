@@ -7,7 +7,7 @@ exl-id: d8960a2e-6900-4346-9f06-e7dd9d7b5139
 source-git-commit: 254c89490fefa5d405bcecd2f1781df46450a873
 workflow-type: tm+mt
 source-wordcount: '177'
-ht-degree: 9%
+ht-degree: 12%
 
 ---
 
@@ -71,12 +71,12 @@ Mit diesem Element können Sie einen Parameter zum Aufrufen einer SOAP-Methode d
    * HTML
    * int64
    * link
-   * lang
+   * Lang
    * Memo
    * MNTOKEN
    * Prozent
    * Primärschlüssel
-   * Short
+   * Kurz
    * Zeichenfolge
    * time
    * timespan

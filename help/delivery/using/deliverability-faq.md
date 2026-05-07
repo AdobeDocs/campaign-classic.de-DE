@@ -6,15 +6,15 @@ feature: Deliverability, Troubleshooting
 role: User
 exl-id: f94897c1-b44c-4100-ac50-a89b13fa6f2f
 source-git-commit: 0c639cc8b9636c190c868980ab5182a0eccb5f74
-workflow-type: ht
-source-wordcount: '662'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '674'
+ht-degree: 72%
 
 ---
 
 # Behebung von Problemen bei der Zustellbarkeit{#deliverability-faq}
 
-Haben Sie ein Problem mit der Zustellbarkeit? Möglicherweise finden Sie hier eine Lösung.
+Haben Sie ein Problem mit der Zustellbarkeit? Vielleicht finden Sie hier die Lösung.
 
 ## MX-Regelfehler {#mx-rule-error}
 
@@ -22,9 +22,9 @@ Haben Sie ein Problem mit der Zustellbarkeit? Möglicherweise finden Sie hier ei
 
 Diese Meldung bedeutet, dass Sie das Limit für einen gewissen MX (Mail eXchanger) erreicht haben und warten müssen, bis Sie wieder eine E-Mail an diesen Anbieter senden können.
 
-In Adobe Campaign gibt es eine Konfiguration bezüglich der Anzahl an E-Mails, die pro Stunde gesendet werden können. Bei dieser Konfiguration ist Vorsicht geboten, weil sich die in der Instanz definierte Anzahl nicht auf die Anzahl tatsächlich gesendeter E-Mails, sondern auf die mit den ISP erfolgten Verbindungen bezieht.
+In Adobe Campaign gibt es eine Konfiguration für die Anzahl der E-Mails pro Stunde, die gesendet werden können. Diese Konfiguration muss mit Vorsicht verwendet werden, da die in der Instanz definierte Zahl die Anzahl der Verbindungen betrifft, die mit dem ISP durchgeführt werden, und nicht die Anzahl der tatsächlich gesendeten E-Mails.
 
-Das heißt, eine Verbindung kann sich einer MX-Regel bedienen, ohne dass der erfolgreiche Versand einer E-Mail erfolgt. In diesem Fall muss eine Konfiguration mit IP oder einer Domain von schwacher Reputation mehrere Verbindungen ausprobieren, bevor die E-Mail erfolgreich versendet wird. Bei jedem Versuch wird ein Guthaben vom Typ &quot;Nachrichten pro Stunde&quot; verbraucht. Dadurch wird die Performance von Marketing-Kampagnen stark beeinflusst.
+Das bedeutet, dass eine Verbindung eine MX-Regel verwenden kann, ohne erfolgreich eine E-Mail zu senden. In diesem Fall muss eine Konfiguration mit einer IP-Adresse oder einer Domain mit geringer Reputation mehrere Verbindungen ausprobieren, bevor eine E-Mail gesendet wird. Für jeden Versuch wird eine Gutschrift pro Stunde verwendet. Dadurch wird die Leistung der Marketing-Kampagne erheblich beeinträchtigt.
 
 Somit ist &quot;Kontingente ausgeschöpft&quot; nicht nur eine Frage der Konfiguration, sondern kann auch mit der Reputation zusammenhängen. Fehlermeldungen im [SMTP-Protokoll](../../production/using/monitoring-processes.md#smtp-errors-per-domain) sollten unbedingt analysiert werden.
 
@@ -34,7 +34,7 @@ Weiterführende Informationen zur MX-Konfiguration finden Sie in [diesem Abschni
 
 **Warum erhalte ich bei einem bestimmten ISP immer dieselbe Fehlermeldung?**
 
-Wenn Sie bei einem ISP immer dieselbe Fehlermeldung erhalten, hat der ISP möglicherweise festgestellt, dass Ihre E-Mail- oder IP-Adresse fehlerhaft ist. Wir empfehlen in diesem Fall folgende Schritte:
+Wenn Sie immer dieselbe Fehlermeldung für einen ISP erhalten, wurde Ihre E-Mail oder IP möglicherweise vom ISP als fehlerhaft erkannt. Führen Sie die folgenden Empfehlungen aus:
 * Prüfen Sie, ob Sie eine große Menge an Fehlschlägen in Verbindung mit nicht bestehenden E-Mail-Adressen erhalten (**Unbekannter Nutzer**).
 * Aktualisieren Sie Ihre Anmeldeformulare und achten Sie auf etwaige Fehler im Domain-Namen (z. B. gmaul.com oder yaho.com).
 * Wenn Fehlermeldungen auftreten, die Ihre E-Mails als Spam einstufen, oder wenn Ihre E-Mails blockiert werden, versuchen Sie, alle Empfänger auszuschließen, die innerhalb von 12 Monaten ab dem Versand ihre E-Mail nicht geöffnet oder darauf geklickt haben.
@@ -73,8 +73,8 @@ Wenn das Problem fortbesteht, kontaktieren Sie die entsprechenden kommerziellen 
 
   Nach der IP-Adressen-Prüfung erhalten Sie eine Liste mit Details zur Blockierungsliste und auch den Namen der Website, von der die IP-Adresse auf die Blockierungsliste gesetzt wurde.
 
-  Durch Anklicken des entsprechenden Links können Sie die Details der Website aufrufen. Dann können Sie diese Website ersuchen, Ihre Website von der Blockierungsliste zu löschen.
+  Durch Auswahl des entsprechenden Links können Sie die Details der Website aufrufen. Dann können Sie diese Website ersuchen, Ihre Website von der Blockierungsliste zu löschen.
 
   >[!NOTE]
   >
-  >Dieser Prozess ist je nach Website unterschiedlich. Auf manchen Websites müssen Sie ein Konto erstellen, während andere nur die Angabe der IP-Adresse verlangen.
+  >Der Löschvorgang kann je nach Website variieren. Bei einigen Sites müssen Sie ein Konto erstellen, während andere nur die IP-Adresse angeben müssen.

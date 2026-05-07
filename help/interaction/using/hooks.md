@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: advanced-parameters
 exl-id: e1d7d7c2-61e7-40d6-a8ce-69bc976f8c73
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: ht
-source-wordcount: '523'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '532'
+ht-degree: 65%
 
 ---
 
@@ -32,7 +32,7 @@ Auf Ebene der Gewichtung ist der Erweiterungspunkt **[!UICONTROL Dynamisches Ang
 
 Dieser Erweiterungspunkt erlaubt die Anreicherung des (durch die native Abfrage geladenen) Kontaktprofils mit zusätzlichen Daten aus externen Systemen.
 
-Die derart abgerufenen Daten müssen in den Knoten der Aufrufdaten (Interaction-Knoten) eingefügt werden. Der Integrator muss zuvor das Aufrufdaten-Schema erweitern, um die Struktur der abgerufenen Daten zu definieren. Der Benutzer kann auf diese Daten auf die gleiche Weise wie auf Standard-Aufrufdaten in Eignungsregeln und bei der Personalisierung zugreifen.
+Erfasste Daten müssen in den Aufruf-Datenknoten (Interaction-Knoten) eingefügt werden. Der Integrator muss das Aufrufdatenschema zuvor erweitert haben, um die Struktur der erfassten Daten zu definieren. Der Benutzer kann auf diese Daten auf die gleiche Weise zugreifen wie für Standardaufrufdaten (auf Eignungsregeln und Personalisierungsebene).
 
 **Eingabeparameter:**
 
@@ -60,7 +60,7 @@ Die derart abgerufenen Daten müssen in den Knoten der Aufrufdaten (Interaction-
 
 ## Vorschlags-Anschlussvorgang {#proposition-post-processing-}
 
-Dieser Erweiterungspunkt ermöglicht es, Kohärenz und Kompatibilität der infrage kommenden Vorschläge innerhalb einer Interaktion zu prüfen. Darüber hinaus erlaubt er die Definition einer neuen Formel zur Berechnung von Scores und Wahrscheinlichkeiten.
+Mit diesem Hook können Sie die Konsistenz und Kompatibilität der geeigneten Vorschläge in einer bestimmten Interaktion überprüfen. Außerdem können Sie eine neue Scoring- oder Wahrscheinlichkeitsberechnungsfunktion definieren.
 
 Anwendungsbeispiel für Kohärenzregeln:
 
@@ -71,15 +71,14 @@ Der Anschlussvorgang wird nach Anwendung der Typologieregeln und der Sortierung 
 
 **Eingabeparameter:**
 
-* aProposition: Tabelle der infrage kommenden Vorschläge. Ein Element dieser Tabelle weist folgende Struktur auf:
+* Vorschlag: Tabelle der zulässigen Vorschläge. Beispiel für die Struktur eines Elements in dieser Tabelle
 
   ```
   { offer_id:1234,
     weight:2}
   ```
 
-* dicOffer (XML): Zusammenstellung aller Attribute der geeigneten Angebote (Angebotscode, Kategoriekennung, vollständiger Titel der Kategorie, Startdatum, Enddatum, Titel, interner Name, Angebotskennung, Zusatzfelder des Angebots). Beispiel:
-
+* dicOffer (XML-Typ): Wörterbuch aller Attribute der geeigneten Angebote (Angebotscode, Kategorie-ID, vollständiger Kategoriename, Startdatum, Enddatum, Titel, interner Name, Angebots-ID, zusätzliche Angebotsfelder). Beispiel
 
   ```
   { "1242": <offer category-id="61242" categoryFullName="/FULL/PATH/TO/CATEGORY/" code="CODE" endDate="" id="62473" label="LABEL" name="OFR38_OE4" product-id="43" startDate=""/>,
@@ -119,7 +118,7 @@ return aReturnedProps;
 
 ## Dynamische Angebote {#dynamic-offer}
 
-Diese Art Erweiterungspunkt ermöglicht die Abfrage eines externes Moduls, um eine Produktliste in Zusammenhang mit einem Angebot auszuwählen. Die Abfrage erfolgt nach Anwendung der Eignungsregeln, aber vor den Typologieregeln.
+Mit diesem Hook können Sie eine externe Engine aufrufen, um eine Liste von Produkten auszuwählen, die mit einem Angebot verknüpft sind. Sie wird im Angebot nach den Eignungsregeln und vor der Anwendung der Typologieregeln konfiguriert.
 
 Der Integrator muss zuvor das Vorschlagsschema **PropositionRcp** um die mit dem Vorschlag zu speichernden zusätzlichen Produktdaten erweitern. Über die Relation **[!UICONTROL Aktueller Vorschlag]** auf der Registerkarte **[!UICONTROL Speicherung]** der Platzierung lässt sich die Speicherung dieser Daten (z. B. Produktnummer) definieren.
 
@@ -134,7 +133,7 @@ Der Integrator muss zuvor das Vorschlagsschema **PropositionRcp** um die mit dem
 
 **Ausgabeparameter:**
 
-Es wird eine Tabelle mit den zu erzeugenden Vorschlägen zurückgegeben. Jedes Element dieser Tabelle enthält folgende Informationen:
+Eine Tabelle mit zu erzeugenden Vorschlägen wird zurückgegeben. Jedes Element dieser Tabelle besteht aus den folgenden Informationen:
 
 * Angebotskennung;
 * zusätzliche Produktdaten (z. B. Produktcode);

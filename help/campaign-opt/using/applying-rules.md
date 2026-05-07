@@ -8,8 +8,8 @@ hide: true
 exl-id: 09ec0fc0-76ed-4c73-8bdf-c931e2103aa9
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1051'
-ht-degree: 100%
+source-wordcount: '1063'
+ht-degree: 80%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 ## Anwenden von Typologien auf Sendungen {#applying-a-typology-to-a-delivery}
 
-Um die von Ihnen erstellten Typologieregeln anzuwenden, müssen Sie sie mit einer Typologie verknüpfen und diese in Ihrer Sendung referenzieren. Gehen Sie hierzu wie folgt vor:
+Um die von Ihnen erstellten Typologieregeln anzuwenden, müssen Sie sie einer Typologie zuordnen und dann auf diese Typologie in Ihrem Versand verweisen. Gehen Sie dazu wie folgt vor:
 
 1. Erstellen Sie eine Kampagnentypologie.
 
@@ -46,7 +46,7 @@ Typologieregeln können demnach so konfiguriert werden, dass sie nur bestimmte S
 
 Um die Anwendungskriterien einer Regel zu bestimmen, klicken Sie auf den Link **[!UICONTROL Anwendungskriterien der Regel bearbeiten]** im Tab **[!UICONTROL Allgemein]**.
 
-Bestimmen Sie nun im Abfrage-Editor die Filterbedingungen. Im unten stehenden Beispiel betrifft die Kapazitätsregel nur Sendungen, die den Begriff &quot;Angebot&quot; im Betreff enthalten, und solche, die vor dem 1. April 2013 erstellt wurden.
+Verwenden Sie dann den Abfrage-Editor, um Filterbedingungen zu definieren. Im folgenden Beispiel betrifft die Kapazitätsregel nur Sendungen, die das Wort „Angebot“ in ihrer Bezeichnung enthalten, oder Sendungen, die vor dem 1. April 2013 erstellt wurden.
 
 ![](assets/campaign_opt_create_capacity_criterion.png)
 
@@ -56,9 +56,9 @@ Bestimmen Sie nun im Abfrage-Editor die Filterbedingungen. Im unten stehenden Be
 
 ## Anpassen der Berechnungsfrequenz {#adjusting-calculation-frequency}
 
-Schlichtungen werden jede Nacht automatisch durch den Datenbankbereinigungs-Workflow neu ausgeführt. Die Werte können jedoch über diesen Zeitraum hinaus gespeichert werden.
+Schlichtungen werden jede Nacht automatisch über den Datenbankbereinigungs-Workflow erneut ausgeführt. Werte können jedoch über diesen Zeitraum hinaus gespeichert werden.
 
-Wenn beispielsweise ein Prozess die Marketing-Datenbank wöchentlich mit Neigungsscores und Kaufdaten der Kunden anreichert, ist es nicht notwendig, auf diesen Werten basierende Daten täglich neu zu berechnen.
+Einige Berechnungen verwenden nämlich Werte, die sich nicht täglich ändern. Es wäre daher überflüssig, die Daten täglich neu zu berechnen und die Datenbank unnötig zu überlasten. Wenn beispielsweise ein Prozess die Marketing-Datenbank wöchentlich mit der Tendenzauswertung und Kaufinformationen der Kundschaft anreichert, müssen die auf diesen Werten basierenden Daten nicht täglich neu berechnet werden.
 
 Geben Sie hierzu im Feld **[!UICONTROL Frequenz]** der Registerkarte **[!UICONTROL Allgemein]** an, wie lange die Berechnungen höchstens beibehalten werden sollen. Der Standardwert **0s** veranlasst, dass die Berechnungen bis zur nächsten Ausführung der täglichen Neuschlichtung gültig bleiben.
 
@@ -84,7 +84,7 @@ Im Standard-Ausführungsmodus werden die Regeln in der folgenden Reihenfolge aus
 1. Druckregeln;
 1. Kapazitätsregeln;
 1. Kontrollregeln, wenn sie am Ende der Zielgruppenbestimmung angewendet werden
-1. Kontrollregeln, wenn sie sich auf den Beginn der Personalisierung beziehen. Wenn die Gültigkeitsfrist der benutzerdefinierten Regeln (Kontrolle/Druck/Kapazität) abgelaufen ist und sie daher neu zu berechnen sind, so werden sie in dieser Phase erneut angewandt.
+1. Kontrollregeln, wenn sie zu Beginn der Personalisierung angewendet werden Wenn die Benutzerregeln (Filter/Druck/Kapazität) abgelaufen sind und neu berechnet werden müssen, werden sie in diesem Schritt angewendet.
 1. Kontrollregeln, wenn sie sich auf das Ende der Personalisierung beziehen.
 
 >[!NOTE]
@@ -115,7 +115,7 @@ Mögliche Werte:
 
 * **[!UICONTROL Zu Beginn der Personalisierung]**
 
-  Diese Phase wird ausgewählt, wenn die Kontrolle die Validierung der Nachrichtenpersonalisierung betrifft. Die Nachrichtenpersonalisierung wird während der Analysephase durchgeführt.
+  Diese Phase muss ausgewählt werden, wenn die Steuerung die Validierung der Nachrichtenpersonalisierung betrifft. Die Nachrichtenpersonalisierung erfolgt während der Analysephase.
 
 * **[!UICONTROL Am Ende der Analyse]**
 
@@ -125,7 +125,7 @@ Mögliche Werte:
 
 ### Ausgehenden SMTP-Traffic steuern {#control-outgoing-smtp-traffic}
 
-Über das Feld **[!UICONTROL Verwaltung der IP-Adressen-Affinitäten]** besteht die Möglichkeit, Sendungen mit dem Versandserver (MTA) zu verbinden, der die betreffende Affinität verwaltet. Auf diese Weise lässt sich die Zustellung der E-Mails für eine Auswahl von Sendungen auf bestimmte Systeme oder IP-Adressen begrenzen.
+Als Option können Sie das Feld **[!UICONTROL Verwalten von IP-Adressen]** verwenden, um Sendungen mit dem Versand-Server (MTA) in dieser Affinität zu verknüpfen. Damit können Sie die Zustellung von E-Mails auf bestimmte Geräte oder IP-Adressen begrenzen.
 
 ![](assets/campaign_opt_select_ip_affinity.png)
 
@@ -136,7 +136,7 @@ Mögliche Werte:
 
 ### Kampagnenoptimierung und dezentrales Marketing {#campaign-optimization-and-distributed-marketing}
 
-Im Tab **[!UICONTROL Dezentrales Marketing]** erfolgt das erneute Mapping der Typologie, die bei der Bestellung einer partizipativen Kampagne angewendet wird. Die an dieser Stelle für eine Lokalstelle festgelegten Typologien/Regeln ersetzen die von der Zentralstelle definierten Typologien/Regeln. Das erneute Mapping ermöglicht die Anpassung der Regeln der Zentralstelle an die der Lokalstellen, die die Kampagne bestellt haben.
+Auf **[!UICONTROL Registerkarte]** Verteiltes Marketing“ können Sie die Neuzuordnung von Typologien und/oder Regeln definieren, die bei der Bestellung und/oder Reservierung einer freigegebenen Kampagne angewendet werden. Typologien/Regeln, die für eine Lokalstelle definiert wurden (und mit denen verknüpft sind, die für die Zentralstelle definiert wurden), ersetzen Regeln/Typologien, die mit der Zentralstelle verknüpft sind. Durch die Neuzuordnung können Sie die Regeln der zentralen Entitäten an die Lokalstellen anpassen, die die Kampagne bestellen.
 
 ![](assets/simu_campaign_opti_distrib_mkg.png)
 

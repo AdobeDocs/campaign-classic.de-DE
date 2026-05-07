@@ -10,8 +10,8 @@ topic-tags: troubleshooting
 exl-id: 33dcfd4b-51fd-44f4-98e0-23eafb79d7da
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
-source-wordcount: '497'
-ht-degree: 8%
+source-wordcount: '527'
+ht-degree: 13%
 
 ---
 
@@ -32,7 +32,7 @@ Vergewissern Sie sich, dass die anfängliche Adobe Campaign-Plattformkonfigurati
 
 >[!NOTE]
 >
->Weitere Informationen finden Sie in der Anleitung zur Hardware-Dimensionierung [&#128279;](https://helpx.adobe.com/de/campaign/kb/hardware-sizing-guide.html) Adobe Campaign.
+>Weitere Informationen finden Sie in der Anleitung zur Hardware-Dimensionierung ](https://helpx.adobe.com/de/campaign/kb/hardware-sizing-guide.html) [Adobe Campaign.
 
 ## Platform-Konfiguration {#platform-configuration}
 

@@ -7,8 +7,8 @@ hide: true
 exl-id: 87d1909c-d2eb-47ce-a860-0e78a64d2914
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '440'
-ht-degree: 100%
+source-wordcount: '441'
+ht-degree: 68%
 
 ---
 
@@ -27,7 +27,7 @@ Folgende Funktionen stehen ihnen hierzu zur Verfügung:
 
 ## Filtern von Kits {#filter-packages}
 
-Im Tab **[!UICONTROL Kampagnen]** können Sie die Liste der **[!UICONTROL Kampagnenkits]** anzeigen, in der alle vorhandenen dezentralen Marketing-Kampagnen neu gruppiert werden können. Sie können diese Liste so filtern, dass nur Kampagnen angezeigt werden, die entweder veröffentlicht, überfällig, zur Validierung ausstehend usw. sind. Klicken Sie dazu auf die Links im oberen Bereich dieser Ansicht oder verwenden Sie den Link **[!UICONTROL Liste filtern]** und wählen Sie den Kampagnenkit-Status aus, der angezeigt werden soll.
+Im Tab **[!UICONTROL Kampagnen]** können Sie die Liste der **[!UICONTROL Kampagnenkits]** anzeigen, in der alle vorhandenen dezentralen Marketing-Kampagnen neu gruppiert werden können. Sie können diese Liste so filtern, dass nur Kampagnen angezeigt werden, die entweder veröffentlicht, verspätet, mit ausstehender Genehmigung usw. sind. Klicken Sie dazu auf die Links im oberen Abschnitt dieser Ansicht oder verwenden Sie den Link **[!UICONTROL Filterliste]** und wählen Sie den Status des Kampagnenkits aus.
 
 ![](assets/mkg_dist_catalog_filter.png)
 
@@ -37,13 +37,13 @@ Die Liste der **[!UICONTROL Kampagnenkits]** zeigt eine kurze Zusammenfassung je
 
 Sie enthält folgende Informationen: Titel, Kampagnentyp, Referenzkampagne des Kits sowie sein Speicherordner.
 
-Klicken Sie zum Öffnen des Kits auf seinen Titel. Daraufhin werden die von den Lokalstellen ausgeführten Bestellungen und ihr Status angezeigt.
+Klicken Sie auf den Paketnamen, um ihn zu bearbeiten. Sie können Bestellungen auch nach Lokalstellen und Status anzeigen.
 
 Diese Informationen werden auch in der Übersicht **[!UICONTROL Kampagnenbestellungen]** angezeigt, die alle erfolgten Bestellungen auflistet.
 
 ![](assets/mkg_dist_catalog_op_command_details.png)
 
-Zentrale Benutzer verfügen über zwei unterschiedliche Möglichkeiten, eine Bestellung zu bearbeiten:
+Der zentrale Benutzer kann die Reihenfolge bearbeiten. Dazu gibt es zwei Möglichkeiten:
 
 1. Sie können auf den Titel der Bestellung klicken, um sie zu öffnen. Daraufhin werden Bestelldetails angezeigt.
 
@@ -83,7 +83,7 @@ Auf Niveau einer **partizipativen Kampagne** hat der Abbruch eines Kits folgende
 
    ![](assets/mkg_dist_mutual_op_cancelled2.png)
 
-Die Zentralstelle kann nach dem Abbruch immer noch auf das Kit zugreifen und es bei Bedarf zurücksetzen. Damit das Kit den Lokalstellen wieder zur Verfügung gestellt werden kann, muss es erneut validiert und gestartet werden. Die Zurücksetzung eines Kampagnenkits wird im Folgenden beschrieben.
+Abgebrochene Pakete können weiterhin von der Zentralstelle aufgerufen und bei Bedarf neu initialisiert werden (siehe unten). Sie werden erst dann wieder den lokalen Entitäten angeboten, wenn sie genehmigt und gestartet wurden. Der Prozess zur Paketneuinitialisierung wird unten angezeigt.
 
 ## Zurücksetzen eines Packages {#reinitializing-a-package}
 
@@ -98,7 +98,7 @@ Das Zurücksetzen eines bereits veröffentlichten Kampagnenkits dient dazu, dies
 
    ![](assets/mkg_dist_mutual_op_reinit2.png)
 
-1. Das Kit erhält den Status **[!UICONTROL In Bearbeitung]**. Es kann nun bearbeitet, validiert und neu in der Kampagnenkit-Liste veröffentlicht werden.
+1. Der Paketstatus ändert sich in **[!UICONTROL In Bearbeitung]**. Ändern, genehmigen und erneut veröffentlichen, um sie in der Liste des Kampagnenkits wiederherzustellen.
 
 >[!NOTE]
 >

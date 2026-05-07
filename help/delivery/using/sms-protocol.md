@@ -6,9 +6,9 @@ feature: SMS
 role: Developer
 exl-id: fded088a-11a2-4b87-a368-7b197334aca4
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
-workflow-type: ht
-source-wordcount: '8457'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '8524'
+ht-degree: 97%
 
 ---
 
@@ -71,7 +71,7 @@ Eine SMS enthält mehr Informationen als Text. Hier ist eine Liste der Informati
 
 ## SMPP-Protokoll {#smpp-protocol}
 
-Adobe Campaign Classic unterstützt Version 3.4 des SMPP-Protokolls. SMPP ist ein weit verbreitetes Protokoll, das den Versand von SMS an einen Provider (SMSC) sowie den Empfang von SMS und Empfangsbestätigungen ermöglicht. Weitere Informationen finden Sie in der [SMPP-Dokumentation](https://smpp.org/SMPP_v3_4_Issue1_2.pdf).
+Adobe Campaign Classic unterstützt das SMPP-Protokoll Version 3.4. Dies ist ein weit verbreitetes Protokoll, das den Versand von SMS an einen Provider (SMSC) und den Empfang von SMS sowie von Quittungen ermöglicht. Weitere Informationen finden Sie in der [SMPP-Dokumentation](https://smpp.org/SMPP_v3_4_Issue1_2.pdf).
 
 Die Netzwerkgeräte auf der Seite des SMS-Dienstleisters werden oft als SMSC bezeichnet.
 
@@ -512,7 +512,8 @@ Beispiel einer Übertragung mit einem maximalen Fenster von 4:
 
 ![](assets/do-not-localize/sms_protocol_2.png)
 
-Das Fenster hilft, den Durchsatz zu erhöhen, wenn die Netzwerkverbindung eine hohe Latenz aufweist.  Der Wert des Fensters muss mindestens der Anzahl der SMS entsprechen, multipliziert mit der Latenz der Verbindung in Sekunden, damit der Connector nie auf ein `SUBMIT_SM_RESP` wartet, bevor die nächste Nachricht gesendet wird.
+Das Fenster hilft, den Durchsatz zu erhöhen, wenn die Netzwerkverbindung eine hohe Latenz aufweist.  Der Wert des Fensters muss mindestens der Anzahl der SMS/s entsprechen, multipliziert mit der Latenz des Links
+In Sekunden, sodass der Connector nie auf einen `SUBMIT_SM_RESP` wartet, bevor er die nächste Nachricht sendet.
 Wenn das Fenster zu groß ist, kann es passieren, dass Sie bei Verbindungsproblemen mehr doppelte Nachrichten senden. Außerdem haben die meisten Provider ein sehr strenges Limit für das Fenster und lehnen Nachrichten ab, die das Limit überschreiten.
 
 Berechnung der optimalen Formel für das Übertragungsfenster:
@@ -559,7 +560,7 @@ Einzelheiten zur Textkodierung finden Sie im Abschnitt [SMS-Textkodierung](sms-p
 
 Mit dieser Einstellung können Sie ein benutzerdefiniertes Kodierungs-Mapping definieren, das von der Spezifikation abweicht. Sie können eine Liste von Kodierungen zusammen mit ihrem `data_coding`-Wert deklarieren.
 
-Der MTA versucht, die Kodierung mit der ersten Kodierung in der Liste durchzuführen. Schlägt dies fehl, wird versucht, die nächste Kodierung in der Liste zu verwenden, usw. Wenn keine Kodierung zum Verschlüsseln der Nachricht verwendet werden kann, tritt ein Fehler auf. Sobald die Kodierung gefunden wurde, erstellt der MTA die `SUBMIT_SM PDU` mit dem kodierten Text und dem `data_coding`-Feld mit dem in der Tabelle angegebenen Wert.
+Der MTA versucht, die Kodierung mit der ersten Kodierung in der Liste durchzuführen. Wenn dies fehlschlägt, wird versucht, die nächste Kodierung auf der Liste zu verwenden, usw. Wenn zur Kodierung der Nachricht keine Kodierung verwendet werden kann, tritt ein Fehler auf. Sobald die Kodierung gefunden wurde, erstellt der MTA die `SUBMIT_SM PDU` mit dem kodierten Text und dem `data_coding`-Feld mit dem in der Tabelle angegebenen Wert.
 
 Die Reihenfolge der Elemente in der Tabelle ist wichtig: Kodierungen werden von oben nach unten ausprobiert. Sie sollten die günstigste oder am meisten empfohlene Kodierung ganz oben auf die Liste setzen, gefolgt von immer teureren Kodierungen.
 
@@ -670,7 +671,7 @@ Dies zeigt das Format der ID an, die im Feld `message_id` der `SUBMIT_SM_RESP PD
 
 * **Dezimalzahl**: Die ID wird als Dezimalzahl in ASCII-Form erwartet. Führende und nachfolgende Leerzeichen und führende Nullen werden bei dieser Einstellung entfernt.
 
-* **Hexadezimalzahl**: Die ID wird als Hexadezimalzahl in ASCII-Form erwartet, ohne führendes 0x und nachgestelltes h. Die ID wird dann in eine Dezimalzahl umgewandelt, bevor sie in der Datenbank gespeichert wird.
+* **Hexadezimalzahl**: Es wird erwartet, dass die ID eine hexadezimale Zahl im ASCII-Format ist, ohne vorangestelltes 0x oder nachgestelltes h. Die ID wird dann in eine Dezimalzahl konvertiert, bevor sie in der Datenbank gespeichert wird.
 
 * **Hexadezimaler String**: Die ID muss ein ASCII-kodierter Text sein, der selbst eine Zeichenfolge ist, die als Hexadezimalwert kodiert wurde. In der PDU finden Sie beispielsweise `0x34 0x31 0x34 0x32 0x34 0x33`, was in ASCII &quot;414243&quot; bedeutet. Diese Zeichenfolge wird dann als hexadezimaler String von Bytes dekodiert und Sie erhalten &quot;ABC&quot;: Die ID &quot;ABC&quot; wird in der Datenbank gespeichert.
 
@@ -718,7 +719,7 @@ Ermöglicht das Hinzufügen eines benutzerdefinierten TLV. Dieses Feld legt den 
 
 Diese Einstellung erlaubt nur das Hinzufügen einer TLV-Option pro Nachricht.
 
-### Automatische Antwort auf MO           {#automatic-reply}
+### Automatische Antwort auf MO {#automatic-reply}
 
 >[!IMPORTANT]
 >
@@ -833,16 +834,16 @@ Auch wenn Sie die Logs nicht selbst überprüfen können, kann die [Adobe-Kunden
 
 ### Testen Ihrer SMS {#test}
 
-* **SMS mit allen möglichen Zeichen senden**
-Wenn Sie SMS mit Nicht-GSM- oder Nicht-ASCII-Zeichen senden müssen, versuchen Sie, einige Nachrichten mit möglichst vielen verschiedenen Zeichen zu senden. Wenn Sie eine benutzerdefinierte Zeichen-Mapping-Tabelle einrichten, senden Sie mindestens eine SMS für alle möglichen `data_coding`-Werte.
+* **Senden von SMS mit allen Arten von Zeichen**
+Wenn Sie SMS mit Nicht-GSM- oder Nicht-ASCII-Zeichen senden müssen, versuchen Sie, einige Nachrichten mit so vielen verschiedenen Zeichen wie möglich zu senden. Wenn Sie eine benutzerdefinierte Zeichen-Mapping-Tabelle einrichten, senden Sie mindestens eine SMS für alle möglichen `data_coding`-Werte.
 
-* **Überprüfen Sie, ob SR ordnungsgemäß verarbeitet werden**
-Die SMS sollte im Versandlog als empfangen markiert sein. Das Versandlog sollte erfolgreich sein und wie folgt aussehen:
+* **Sicherstellen, dass SR ordnungsgemäß verarbeitet werden**
+Die SMS sollte im Versandprotokoll als empfangen markiert sein. Das Versandlog sollte erfolgreich sein und wie folgt aussehen:
   `SR yourProvider stat=DELIVRD err=000|#MESSAGE`
 Vergewissern Sie sich, dass Sie den Namen des Versand-Providers geändert haben. Das Versandlog sollte in Produktionsumgebungen niemals **SR Generic** enthalten.
 
-* **Überprüfen, ob MO verarbeitet werden** 
-Wenn Sie MO verarbeiten müssen (automatische Antworten, MO-Speicherung in der Datenbank usw.), versuchen Sie, einige Tests durchzuführen. Senden Sie einige SMS für alle automatischen Antwortschlüsselwörter und prüfen Sie, ob die Antwort schnell genug ist, also nicht länger als ein paar Sekunden dauert.
+* **Prüfen, ob MO verarbeitet werden**
+Wenn Sie MO verarbeiten müssen (automatische Antworten, Speicherung von MO in der Datenbank usw.) Versuchen Sie, einige Tests durchzuführen. Senden Sie einige SMS für alle automatischen Antwortschlüsselwörter und prüfen Sie, ob die Antwort schnell genug ist, also nicht länger als ein paar Sekunden dauert.
 Prüfen Sie im Protokoll, ob Adobe Campaign mit einem erfolgreichen `DELIVER_SM_RESP` (command_status=0) antwortet.
 
 ### Überprüfen der PDUs {#check-pdus}
@@ -855,7 +856,7 @@ Dieser Schritt ist erforderlich, wenn eine Verbindung zu einem Provider hergeste
 
 Vergewissern Sie sich, dass die `BIND_* PDUs` korrekt gesendet wurden. Am wichtigsten ist es zu prüfen, dass der Provider immer erfolgreiche `BIND_*_RESP PDUs` zurückgibt (command_status = 0).
 
-Vergewissern Sie sich, dass nicht zu viele `BIND_* PDU`s vorhanden sind. Wenn es zu viele sind, kann das darauf hinweisen, dass die Verbindung instabil ist. Weitere Informationen finden Sie im Abschnitt [Probleme mit instabilen Verbindungen](sms-protocol.md#issues-unstable-connection).
+Sieh zu, dass es nicht zu viele `BIND_* PDU` gibt. Wenn es zu viele sind, kann das darauf hinweisen, dass die Verbindung instabil ist. Weitere Informationen finden Sie im Abschnitt [Probleme mit instabilen Verbindungen](sms-protocol.md#issues-unstable-connection).
 
 #### ENQUIRE_LINK {#enquire-link-pdus}
 

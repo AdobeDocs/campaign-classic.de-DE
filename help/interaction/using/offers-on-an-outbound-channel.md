@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: case-study
 exl-id: 77fee343-09d1-4d60-be43-efe02953a70c
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: ht
-source-wordcount: '477'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '478'
+ht-degree: 84%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 ## Angebote per E-Mail versenden {#email-offer-delivery}
 
-Angenommen, Sie verfügen in Ihrer Datenbank über eine Reihe von Angeboten für Reisen nach Afrika. Eignung, Kontexte und Darstellungen der Angebote wurden bereits konfiguriert. Nun soll eine E-Mail-Kampagne zur Unterbreitung der Angebote erstellt werden.
+In unserer Datenbank gibt es eine Kategorie von Reiseangeboten nach Afrika. Die Eignung, der Kontext und die Darstellungen jedes Angebots wurden konfiguriert. Wir möchten nun eine Kampagne erstellen, um unsere Angebote per E-Mail zu präsentieren.
 
 1. Erstellen Sie Ihre Kampagne und den Workflow zur Bestimmung der Zielgruppe.
 
@@ -74,7 +74,7 @@ Angenommen, Sie verfügen in Ihrer Datenbank über eine Reihe von Angeboten für
 
    ![](assets/offer_simulation_example_002.png)
 
-1. Speichern Sie die Simulation. Sie öffnet sich automatisch in einem neuen Tab.
+1. Speichern Sie die Simulation. Dieser wird dann in einer neuen Registerkarte geöffnet.
 
    ![](assets/offer_simulation_example_003.png)
 
@@ -90,7 +90,7 @@ Angenommen, Sie verfügen in Ihrer Datenbank über eine Reihe von Angeboten für
 
    ![](assets/offer_simulation_example_006.png)
 
-1. Geben Sie einen Zeitraum an. Es muss zumindest ein Startdatum definiert werden. Dies ermöglicht es dem Angebotsmodul, die Angebote zu filtern und nur jene zu berücksichtigen, die zum angegebenen Zeitpunkt tatsächlich zur Verfügung stehen werden.
+1. Gültigkeitsdaten eingeben. Sie müssen mindestens ein Startdatum eingeben. Auf diese Weise kann das Angebotsmodul Angebote filtern und diejenigen auswählen, die zu einem bestimmten Datum gültig sind.
 1. Geben Sie bei Bedarf Themen an, um die Anzahl der Angebote zu begrenzen.
 
    Im vorliegenden Beispiel enthält die Kategorie **Finanzdienstleistungen** zwei Unterkategorien mit je einem unterschiedlichen Thema. Die Simulation soll sich nur auf die Kategorie mit dem Anwendungsthema **Kunden > 1 Jahr** beziehen.

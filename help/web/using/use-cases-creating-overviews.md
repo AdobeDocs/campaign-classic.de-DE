@@ -7,17 +7,17 @@ feature: Web Apps
 level: Intermediate, Experienced
 exl-id: a1ac3aab-dc81-4533-9207-26d5dc5e1c88
 source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
-workflow-type: ht
-source-wordcount: '1041'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1046'
+ht-degree: 82%
 
 ---
 
-# Anwendungsbeispiele: Übersichten erstellen {#use-cases-creating-overviews}
+# Anwendungsbeispiele: Übersichten erstellen{#use-cases-creating-overviews}
 
 
 
-Im folgenden Beispiel werden Webanwendungen vom Typ &quot;Übersicht&quot; erstellt, in denen alle Webanwendungen in Ihrer Datenbank angezeigt werden. Konfigurieren Sie dazu die folgenden Elemente:
+Im folgenden Beispiel erstellen wir Web-Anwendungen vom Typ Übersicht , um alle Web-Anwendungen in Ihrer Datenbank anzuzeigen. Konfigurieren Sie die folgenden Elemente:
 
 * Einen Filter für den Ordner (siehe [Ordner-Filter hinzufügen](#adding-a-filter-on-a-folder)),
 * Eine Schaltfläche zum Erstellen einer neuen Webanwendung (siehe [Schaltfläche hinzufügen, um eine neue Webanwendung zu konfigurieren](#adding-a-button-to-configure-a-new-web-application)),
@@ -55,7 +55,7 @@ Im folgenden Beispiel werden Webanwendungen vom Typ &quot;Übersicht&quot; erste
 
 ## Ordner-Filter hinzufügen {#adding-a-filter-on-a-folder}
 
-In der Übersicht haben Sie die Möglichkeit, auf Daten abhängig von ihrem Speicherort im Adobe Campaign-Baum zuzugreifen. Dies wird durch einen Ordner-Filter ermöglicht. Gehen Sie folgendermaßen vor, um einen Ordner-Filter zu Ihrer Übersicht hinzuzufügen.
+In einer Übersicht haben Sie die Möglichkeit, je nach Position in der Adobe Campaign-Baumstruktur auf Daten zuzugreifen. Dies ist ein Filter für einen Ordner. Gehen Sie wie folgt vor, um ihn Ihrer Übersicht hinzuzufügen.
 
 1. Platzieren Sie den Cursor auf den Knoten **[!UICONTROL Seite]** Ihrer Webanwendung und fügen Sie das Element **[!UICONTROL Ordner auswählen]** hinzu (**[!UICONTROL Erweiterte Steuerelemente > Ordner auswählen]**).
 1. Wählen Sie im sich öffnenden Fenster **[!UICONTROL Speicherung]** den Link **[!UICONTROL Variablen bearbeiten...]** aus.
@@ -93,9 +93,9 @@ In der Übersicht haben Sie die Möglichkeit, auf Daten abhängig von ihrem Spei
 
    >[!NOTE]
    >
-   >**nms:webApp** entspricht dem Schema der Webanwendung.
+   >**nms:webApp** entspricht dem Web-Anwendungsschema.
    >
-   >**nms:newWebApp** entspricht dem Assistenten zur Erstellung neuer Web-Anwendungen.
+   >**nms:newWebApp** entspricht dem neuen Assistenten zur Erstellung von Web-Anwendungen.
 
 1. Definieren Sie, dass die URL im selben Fenster erscheinen soll.
 1. Fügen Sie das Webanwendungssymbol im Bildfeld hinzu: **/nms/img/webApp.png**.
@@ -158,11 +158,11 @@ Wenn Sie in der Übersicht eine Liste konfigurieren, können Sie für jeden Eint
 
 >[!NOTE]
 >
->Es dauert fünf Minuten, bis JavaScript-Bibliotheken auf dem Server aktualisiert werden. Sie können den Server auch neu starten, um diese Wartezeit zu verkürzen.
+>Die Aktualisierung von JavaScript-Bibliotheken auf dem Server dauert fünf Minuten. Sie können den Server neu starten, um zu vermeiden, dass auf diese Verzögerung gewartet wird.
 
 ## Liste filtern und aktualisieren {#filtering-and-updating-the-list}
 
-In diesem Abschnitt wird ein Filter zum Anzeigen der Webanwendungen erstellt, die von einem bestimmten Benutzer erzeugt wurden. Dieser Filter wird mit einem Link-Editor erstellt. Wählen Sie zuerst einen Benutzer aus und aktualisieren Sie danach die Liste, um den Filter anzuwenden. Dazu muss auch ein Aktualisieren-Link erstellt werden.
+In diesem Abschnitt erstellen Sie einen Filter, um eine Übersicht über die von einem bestimmten Benutzer erstellten Web-Anwendungen anzuzeigen. Dieser Filter wird mit einem Link-Editor erstellt. Nachdem Sie einen Benutzer ausgewählt haben, aktualisieren Sie die Liste, um Ihren Filter anzuwenden. Dazu muss ein Aktualisierungs-Link erstellt werden.
 
 Diese beiden Elemente werden im selben Container abgelegt, damit sie in der Übersicht gemeinsam dargestellt werden.
 
@@ -205,7 +205,7 @@ Diese beiden Elemente werden im selben Container abgelegt, damit sie in der Übe
 
 >[!CAUTION]
 >
->Der Benutzer der Webanwendung muss sich identifizieren und über die entsprechenden Adobe Campaign-Berechtigungen zum Zugriff auf diese Informationen verfügen.
+>Der Benutzer der Web-Anwendung muss ein identifizierter Benutzer mit den entsprechenden Adobe Campaign-Rechten sein, um auf die Informationen zuzugreifen. Diese Art der Konfiguration funktioniert nicht für anonyme Web-Anwendungen.
 
 ### Aktualisierungs-Link erstellen {#creating-a-refresh-link}
 

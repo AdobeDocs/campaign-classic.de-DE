@@ -8,7 +8,7 @@ exl-id: b0d1cf0e-656e-4d24-9a31-16fef4cd40d0
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '1235'
-ht-degree: 100%
+ht-degree: 84%
 
 ---
 
@@ -53,13 +53,13 @@ Die Elemente selbst werden mithilfe eines dedizierten Schemas erstellt, welches 
 
 ## Schritt 2: Erstellen des Datenschemas {#step-2---creating-the-data-schema}
 
-Ein Datenschema ist ein mit einem Inhalt verknüpftes XML-Dokument zur Beschreibung der Struktur der Inhaltsdaten.
+Ein Datenschema ist ein XML-Dokument, das mit Inhalten verknüpft ist. Es beschreibt die XML-Struktur der Daten in diesem Inhalt.
 
 >[!NOTE]
 >
 >Erstellung und Konfiguration von Datenschemata in Adobe Campaign werden in [diesem Abschnitt](../../configuration/using/about-schema-edition.md) beschrieben.
 >
->Die das Content Management betreffenden Elemente werden im Kapitel [Datenschemata](data-schemas.md) erläutert.
+>Die das Content-Management betreffenden Elemente werden im Kapitel [Datenschemata](data-schemas.md) erläutert.
 
 Gehen Sie wie folgt vor, um ein Datenschema zu erstellen:
 
@@ -67,11 +67,11 @@ Gehen Sie wie folgt vor, um ein Datenschema zu erstellen:
 
    Klicken Sie auf die Schaltfläche **[!UICONTROL Neu]** oberhalb der Datenschemata-Liste.
 
-1. Kreuzen Sie die Option **[!UICONTROL Schema für das Content Management erstellen]** an und klicken Sie auf **[!UICONTROL Weiter]**.
+1. Kreuzen Sie die Option **[!UICONTROL Schema für das Content-Management erstellen]** an und klicken Sie auf **[!UICONTROL Weiter]**.
 
    ![](assets/s_ncs_content_create_schema.png)
 
-1. Geben Sie einen Namen und einen Titel für das Schema an. Sie können ggf. eine Beschreibung und ein spezifisches Bild hinzufügen.
+1. Geben Sie den Namen und den Titel des Schemas in die entsprechenden Felder ein. Sie können bei Bedarf eine Beschreibung hinzufügen und ein bestimmtes Bild verknüpfen.
 
    ![](assets/s_ncs_content_param_schema.png)
 
@@ -165,21 +165,21 @@ Das Schema stellt sich also wie folgt dar:
 
 Formulare ermöglichen die Bearbeitung einer Inhaltsinstanz über eine Eingabeschnittstelle der Adobe Campaign-Clientkonsole.
 
-Die Beschreibung eines Formulars ist ein strukturiertes XML-Dokument, welches die Grammatik des Formularschemas &quot;xtk:form&quot; anwendet.
+Die Beschreibung eines Formulars ist ein strukturiertes XML-Dokument, das die Grammatik des Formularschemas &quot;:form&quot; anwendet.
 
 >[!NOTE]
 >
 >Erstellung und Konfiguration von Formularen in Adobe Campaign werden in [diesem Abschnitt](../../configuration/using/identifying-a-form.md) beschrieben.
 >
->Die das Content Management betreffenden Elemente werden im Kapitel [Formulare](input-forms.md) erläutert.
+>Die das Content-Management betreffenden Elemente werden im Kapitel [Formulare](input-forms.md) erläutert.
 
-Gehen Sie wie folgt vor, um ein Formular für das Content Management zu erstellen:
+Gehen Sie wie folgt vor, um ein Formular für das Content-Management zu erstellen:
 
 1. Markieren Sie im Explorer den Knoten **[!UICONTROL Administration > Konfiguration > Formular]**.
 
    Klicken Sie auf die Schaltfläche **[!UICONTROL Neu]** oberhalb der Formularliste.
 
-1. Geben Sie Namen und Titel des Formulars an und wählen Sie den Typ **[!UICONTROL Content Management]** aus.
+1. Geben Sie Namen und Titel des Formulars an und wählen Sie den Typ **[!UICONTROL Content-Management]** aus.
 
    ![](assets/s_ncs_content_param_form_edit.png)
 
@@ -215,7 +215,7 @@ Gehen Sie wie folgt vor, um ein Formular für das Content Management zu erstelle
 
 ## Schritt 4: Erstellen der Konstruktionsvorlage {#step-4---creating-the-construction-template}
 
-Die XSLT-Programmiersprache ermöglicht die Umwandlung eines XML-Dokuments in ein Ausgabedokument eines anderen Formats. Diese Umwandlung wird in einem XML-Stylesheet beschrieben.
+Mit der XSLT-Sprache können Sie ein XML-Dokument in ein anderes Ausgabedokument umwandeln. Diese Umwandlung wird in XML in einem Dokument beschrieben, das als Stylesheet bezeichnet wird.
 
 Im vorliegenden Beispiel wird ein JavaScript-Template verwendet, um den Aufbau und das Layout des Ausgabedokuments zu definieren.
 
@@ -229,7 +229,7 @@ Gehen Sie wie folgt vor, um ein JavaScript-Template in Adobe Campaign zu erstell
 
    Klicken Sie auf die Schaltfläche **[!UICONTROL Neu]** oberhalb der Template-Liste.
 
-1. Geben Sie einen Namen für das Template ein und wählen Sie das zuvor für das Content Management erstellte Schema aus.
+1. Geben Sie einen Namen für das Template ein und wählen Sie das zuvor für das Content-Management erstellte Schema aus.
 1. Importieren Sie die Inhalte, die in allen Ausgabedokumenten, die das Template verwenden, unveränderlich angezeigt werden sollen.
 
    Fügen Sie unter Beachtung der im Abschnitt [JavaScript-Templates](formatting.md#javascript-templates) dargestellten Syntax die variablen Elemente ein.
@@ -350,7 +350,7 @@ Gehen Sie wie folgt vor, um ein JavaScript-Template in Adobe Campaign zu erstell
 
 ## Schritt 5: Erstellen der Veröffentlichungsvorlage {#step-5---creating-the-publication-template}
 
-In diesem Schritt wird die Vorlage erstellt, die die Relation zwischen Schema, Formular und Umwandlungsvorlage herstellt. In der Veröffentlichungsvorlage können Sie zwischen verschiedenen Ausgabeformaten wählen.
+Der nächste Schritt umfasst die Erstellung einer Vorlage für die Inhaltsveröffentlichung , um das Schema, das Formular und die Inhaltserstellungsvorlage zu verknüpfen. Diese Veröffentlichungsvorlage kann mehrere Ausgabeformate aufweisen.
 
 >[!NOTE]
 >
@@ -366,9 +366,9 @@ Gehen Sie wie folgt vor:
 
    >[!NOTE]
    >
-   >Die Option **[!UICONTROL DOM-Schnittstelle]** ist standardmäßig aktiviert, was bedeutet, dass der Zugriff auf das Dokument nicht über die E4X-Syntax erfolgen kann. Wenn diese Option aktiviert ist, muss die DOM-Schnittstelle verwendet werden. Sie ist auch die empfohlene Syntax.
+   >Die Option **[!UICONTROL DOM-Schnittstelle]** ist standardmäßig aktiviert. Dies bedeutet, dass bei Verwendung der E4X-Syntax auf dieses Dokument nicht zugegriffen werden kann. Wenn diese Option aktiviert ist, muss die DOM-Schnittstelle verwendet werden. Sie entspricht der empfohlenen Syntax.
    >
-   >Wenn Sie dennoch die E4X-Syntax verwenden möchten, deaktivieren Sie diese Option.
+   >Sie können weiterhin die E4X-Syntax verwenden. Wenn ja, deaktivieren Sie diese Option.
 
    Verwenden Sie die **[!UICONTROL Hinzufügen]**-Schaltfläche, wenn Sie weitere Umwandlungsvorlagen erstellen möchten.
 
@@ -396,6 +396,6 @@ Gehen Sie wie folgt vor, um direkt im Versand einen Inhalt zu erstellen:
 
    ![](assets/s_ncs_content_in_delivery_edition_tab.png)
 
-1. Klicken Sie auf den **[!UICONTROL HTML-Vorschau]**-Tab und wählen Sie einen Empfänger aus, um Rendering und Personalisierung zu testen.
+1. Klicken Sie auf die Registerkarte **[!UICONTROL HTML]** Vorschau, um das Rendering anzuzeigen. Sie müssen einen Empfänger auswählen, um die Personalisierung zu testen.
 
    ![](assets/s_ncs_content_use_in_delivery_preview.png)

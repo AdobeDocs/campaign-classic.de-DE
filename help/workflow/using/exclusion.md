@@ -8,7 +8,7 @@ exl-id: f4fe97d9-6571-4aa5-8022-b0af9d5a6a13
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '366'
-ht-degree: 100%
+ht-degree: 46%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 Über eine Aktivität vom Typ **Ausschluss** lassen sich Populationen aus der Hauptzielgruppe extrahieren.
 
-Konfigurieren Sie die Aktivität, indem Sie sie benennen und eine Hauptmenge auswählen. Die Population der Hauptmenge bildet die Grundlage zur Ergebnisfindung. Ausgeschlossen werden die Profile, die sowohl in der Hauptmenge als auch in mindestens einer der eingehenden Aktivitäten enthalten sind.
+Um diese Aktivität zu konfigurieren, geben Sie ihren Titel ein und wählen Sie die Hauptempfängergruppe aus: Mit der Population aus der Hauptgruppe können Sie das Ergebnis konstruieren. Profile, die von der Hauptgruppe und mindestens einer der Eintrittstätigkeiten freigegeben werden, werden ausgeschlossen.
 
 ![](assets/s_user_segmentation_exclu.png)
 
@@ -26,7 +26,7 @@ Konfigurieren Sie die Aktivität, indem Sie sie benennen und eine Hauptmenge aus
 >
 >Weitere Informationen zum Konfigurieren und Verwenden der Ausschlussaktivität finden Sie unter [Populationen ausschließen (Ausschluss)](targeting-data.md#excluding-a-population--exclusion-).
 
-Kreuzen Sie die Option **[!UICONTROL Komplement erzeugen]** an, wenn Sie auch die restliche Population verwenden möchten. Das Komplement enthält in diesem Fall die Hauptmenge abzüglich der Ergebnismenge. Die Ausschlussaktivität weist somit, wie unten abgebildet, zwei ausgehende Transitionen auf:
+Aktivieren Sie die **[!UICONTROL Komplement erzeugen]**, wenn Sie die verbleibende Population nutzen möchten. Das Komplement besteht aus der Haupteinreisepopulation abzüglich der ausreisenden Population. Eine zusätzliche ausgehende Transition wird wie folgt zur Aktivität hinzugefügt:
 
 ![](assets/s_user_segmentation_exclu_compl.png)
 
@@ -34,11 +34,11 @@ Kreuzen Sie die Option **[!UICONTROL Komplement erzeugen]** an, wenn Sie auch di
 
 Gesucht werden Empfänger zwischen 18 und 30 Jahre, die nicht in Berlin leben. Gehen Sie wie folgt vor:
 
-1. Schließen Sie einen **[!UICONTROL Ausschluss]** an zwei Abfragen an. Die erste Abfrage ruft alle Empfänger ab, die in Berlin leben, die zweite alle Empfänger zwischen 18 und 30 Jahre.
+1. Fügen Sie eine Aktivität vom Typ **[!UICONTROL Ausschluss]** nach zwei Abfragen ein und öffnen Sie sie. Die erste Abfrage richtet sich an Empfängerinnen und Empfänger, die in Paris leben. Die zweite Abfrage bezieht sich auf Personen im Alter von 18 bis 30 Jahren.
 1. Geben Sie die Hauptmenge ein. Hier ist die Hauptmenge die Abfrage **18-30 Jahre**. Alle Empfangenden, die in der Ergebnismenge der zweiten Abfrage enthalten sind, werden auf diese Weise vom Endergebnis ausgeschlossen.
-1. Kreuzen Sie die Option **[!UICONTROL Komplement erzeugen]** an, wenn Sie die ausgeschlossenen Elemente weiterverwenden möchten. In diesem Fall enthält das Komplement die Empfänger zwischen 18 und 30 Jahre, die in Berlin leben.
-1. Bestätigen Sie die Konfiguration der Ausschlussaktivität und fügen Sie ein Listen-Update an. Schließen Sie, wenn Sie das Komplement verwenden, auch hier ein Listen-Update an.
-1. Starten Sie den Workflow. Im vorliegenden Beispiel enthält die Ergebnisliste alle Empfänger im Alter von 18 bis 30 Jahre, außer denen, die in Berlin leben. Diese werden in der Komplementliste gespeichert.
+1. Aktivieren Sie die Option **[!UICONTROL Komplement erzeugen]**, wenn Sie die Daten nutzen möchten, die nach dem Ausschluss verbleiben. In diesem Fall besteht das Komplement aus Empfängern im Alter von 18 bis 30 Jahren, die in Paris leben.
+1. Bestätigen Sie die Ausschlusskonfiguration und fügen Sie dann eine Aktivität Liste aktualisieren in das Ergebnis ein. Sie können bei Bedarf auch eine zusätzliche Listenaktualisierung zum Komplement einfügen.
+1. Führt den Workflow aus. In diesem Beispiel besteht das Ergebnis aus Empfängerinnen und Empfängern im Alter von 18 bis 30 Jahren, aber diejenigen, die in Paris leben, werden ausgeschlossen und an das Komplement gesendet.
 
    ![](assets/exclusion_example.png)
 

@@ -10,8 +10,8 @@ topic-tags: initial-configuration
 exl-id: a2126458-2ae5-47c6-ad13-925f0e067ecf
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '325'
-ht-degree: 4%
+source-wordcount: '352'
+ht-degree: 9%
 
 ---
 
@@ -78,7 +78,7 @@ Bei Bedarf kann dieser Vorgang Server-seitig reproduziert werden.
 >Diese Änderung ist ab Campaign v7.4.1 nicht mehr erforderlich.
 >
 
-Aus Sicherheitsgründen empfehlen wir dringend, den Tomcat-Fehlerbericht auszublenden. Gehen Sie dazu wie folgt vor:
+Aus Sicherheitsgründen empfehlen wir dringend, den Tomcat-Fehlerbericht auszublenden. Führen Sie folgende Schritte aus:
 
 1. Öffnen Sie die Datei **server** xml) im Verzeichnis **/tomcat-X/** des Adobe Campaign-Installationsordners: `/usr/local/neolane/nl6/tomcat-X/conf`
 1. Fügen Sie unten nach allen vorhandenen Kontextelementen das folgende Element hinzu:

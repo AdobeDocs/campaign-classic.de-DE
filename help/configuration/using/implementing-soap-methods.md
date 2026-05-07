@@ -7,7 +7,7 @@ role: Developer
 exl-id: 441a0e5c-fa7f-46c8-a65a-5cca4c846d43
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: '418'
 ht-degree: 4%
 
 ---
@@ -31,7 +31,7 @@ Das Erstellen einer Methodenbibliothek umfasst zwei Schritte:
 
 ### Deklaration {#declaration}
 
-Deklarieren Sie zunächst die Methoden in den Schemata (weitere Informationen zum Erstellen und Bearbeiten von Schemata finden Sie [&#x200B; diesem Abschnitt](../../configuration/using/about-schema-edition.md)).
+Deklarieren Sie zunächst die Methoden in den Schemata (weitere Informationen zum Erstellen und Bearbeiten von Schemata finden Sie [ diesem Abschnitt](../../configuration/using/about-schema-edition.md)).
 
 Ihre Deklaration ähnelt der von nativen Methoden, mit dem Unterschied, dass Sie das Attribut „library“ hinzufügen müssen, das den Namen der Methodenbibliothek angibt, in der sich die Definition befindet.
 

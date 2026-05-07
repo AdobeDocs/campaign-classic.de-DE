@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: profile-management
 exl-id: f7dfbc22-4ac3-4b61-927f-34ecc4e35154
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: ht
-source-wordcount: '779'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '797'
+ht-degree: 73%
 
 ---
 
@@ -36,7 +36,7 @@ Sie haben die Wahl zwischen einer gebündelten Aktualisierung der ausgewählten 
 
 ### Gebündelte Aktualisierung {#mass-update}
 
-Für eine gebündelte Aktualisierung wählen Sie die Option **[!UICONTROL Aktionen > Ausgewählte Zeilen gebündelt aktualisieren...]**. Ein Assistent ermöglicht es Ihnen, das Update zu konfigurieren und auszuführen.
+Für die Massenaktualisierung verwenden Sie **[!UICONTROL Aktion > Massenaktualisierung ausgewählter Positionen…]**. Der Assistent unterstützt Sie beim Konfigurieren und Ausführen des Updates.
 
 Im ersten Schritt des Assistenten sind die zu aktualisierenden Felder anzugeben.
 
@@ -56,7 +56,7 @@ Wenn Sie auf die Schaltfläche **[!UICONTROL Werteverteilung]** klicken, wird an
 
 ![](assets/s_ncs_user_update_wizard01_2.png)
 
-Sie haben die Möglichkeit, die Werteverteilung zu filtern oder den zugrunde liegenden Ordner zu ändern. Diese Aktionen dienen jedoch nur konsultativen Zwecken, die Konfiguration des Updates ist davon nicht betroffen.
+Sie können Filter definieren, um die Werteverteilung in diesem Fenster anzuzeigen, oder den aktuellen Ordner ändern, um die Werteverteilung in einem anderen Ordner anzuzeigen. Dies sind schreibgeschützte Aktionen, die sich nicht auf die Konfiguration des definierten Updates auswirken.
 
 ![](assets/s_ncs_user_update_wizard01_3.png)
 
@@ -66,11 +66,11 @@ Schließen Sie das Fenster und klicken Sie auf die Schaltfläche **[!UICONTROL W
 
 In der oberen Hälfte des Assistenten werden Informationen zur Durchführung des Updates angezeigt.
 
-Durch Klick auf die Schaltfläche **[!UICONTROL Stoppen]** kann die Aktualisierung gestoppt werden. Es ist jedoch möglich, dass einzelne Einträge bereits verarbeitet wurden, diese Aktualisierungen werden durch den Abbruch nicht rückgängig gemacht.
+Mit **[!UICONTROL Stopp]** können Sie die Aktualisierung abbrechen, aber bestimmte Datensätze wurden möglicherweise aktualisiert, und durch das Anhalten des Prozesses werden diese Aktualisierungen nicht abgebrochen. Die Fortschrittsleiste zeigt an, wie weit der Vorgang fortgeschritten ist.
 
 ### Daten zusammenführen {#merge-data}
 
-Wählen Sie **[!UICONTROL Ausgewählte Zeilen zusammenführen]** aus, um zwei zuvor ausgewählte Empfängerprofile zusammenzuführen. Ein Assistent ermöglicht es Ihnen, die Zusammenführung zu konfigurieren und zu starten.
+Wählen Sie **[!UICONTROL Ausgewählte Zeilen zusammenführen…]**, um die Zusammenführung zweier Empfängerprofile zu starten. Die zusammenzuführenden Profile müssen ausgewählt werden, bevor Sie die Option auswählen. Ein Assistent ermöglicht es Ihnen, die Zusammenführung zu konfigurieren und zu starten.
 
 Der Assistent zeigt die Werte an, die für jedes in einem oder mehreren Quellprofilen ausgefüllte Feld abgerufen werden sollen. Bei unterschiedlichen Werten in den jeweiligen Quellen werden diese im Abschnitt **[!UICONTROL Konfliktliste]** angezeigt. Sie können dann das Standardprofil mithilfe der Optionsfelder unter der Liste auswählen, wie im folgenden Beispiel gezeigt:
 
@@ -84,14 +84,14 @@ Prüfen Sie die **[!UICONTROL Ergebnis]**-Spalte im oberen und unteren Abschnitt
 
 ## Daten exportieren {#exporting-data}
 
-Der Inhalt einer Liste kann exportiert werden. Um den Export zu konfigurieren und zu starten, gehen Sie folgendermaßen vor:
+Der Inhalt einer Liste kann exportiert werden. So konfigurieren Sie den Export und führen ihn aus:
 
 1. Markieren Sie die zu exportierenden Datensätze.
 1. Wählen Sie sie mit der rechten Maustaste aus und verwenden Sie danach **[!UICONTROL Exportieren...]**.
 
    ![](assets/s_ncs_user_export_list.png)
 
-1. Wählen Sie anschließend die zu extrahierenden Daten aus. Die in der Liste angezeigten Spalten werden dabei automatisch zu den Ausgabespalten hinzugefügt.
+1. Wählen Sie dann die zu extrahierenden Daten aus. Standardmäßig werden alle angezeigten Spalten den Ausgabespalten hinzugefügt.
 
    ![](assets/s_ncs_user_export_list_start.png)
 
@@ -99,7 +99,7 @@ Der Inhalt einer Liste kann exportiert werden. Um den Export zu konfigurieren un
 
 ## Für einen Service anmelden {#subscribing-to-a-service}
 
-Normalerweise melden sich Empfänger über eine spezielle Landingpage für einen Newsletter an, wie in [diesem Abschnitt](../../delivery/using/managing-subscriptions.md) beschrieben. Empfängerprofile können aber auch manuell für einen Dienst (z. B. Newsletter oder viraler Dienst) angemeldet werden. Gehen Sie dazu folgendermaßen vor:
+In den meisten Fällen können Empfänger einen Newsletter über eine spezielle Landingpage abonnieren, wie in [diesem Abschnitt) ](../../delivery/using/managing-subscriptions.md). Die Profile gefilterter Empfänger können jedoch manuell für einen Dienst (Newsletter oder Viraler Dienst) abonniert werden. Gehen Sie dazu wie folgt vor:
 
 1. Markieren Sie die gewünschten Empfänger und wählen Sie sie mit der rechten Maustaste aus.
 1. Wählen Sie **[!UICONTROL Aktionen > Auswahl für einen Dienst anmelden...]**.
@@ -114,7 +114,7 @@ Normalerweise melden sich Empfänger über eine spezielle Landingpage für einen
    >
    >Der Assistent erlaubt auch die Erstellung eines neuen Dienstes. Klicken Sie hierzu auf die Schaltfläche **[!UICONTROL Erstellen]**.
 
-1. Es besteht die Möglichkeit, den Empfängern durch Ankreuzen der Option **[!UICONTROL Benachrichtigung versenden]** die Anmeldung zu bestätigen. Der Inhalt dieser Nachricht wird im dem Dienst zugeordneten Anmeldeszenario konfiguriert.
+1. Sie können **[!UICONTROL eine Bestätigungsnachricht senden]** an Empfänger. Der Inhalt dieser Nachricht kann im Anmeldeszenario konfiguriert werden, das mit dem ausgewählten Service verknüpft ist.
 1. Klicken Sie nun zur Ausführung des Vorgangs auf die Schaltfläche **[!UICONTROL Starten]**.
 
    ![](assets/s_ncs_user_selection_subscribe_service_3.png)

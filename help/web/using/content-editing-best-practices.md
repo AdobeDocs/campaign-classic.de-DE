@@ -6,9 +6,9 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: c1eccb48-59bf-412f-9c18-9cda2a022096
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: ht
-source-wordcount: '563'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '571'
+ht-degree: 81%
 
 ---
 
@@ -39,7 +39,7 @@ Bitte beachten Sie folgende Hinweise, um eine optimale Funktionsweise des Editor
   ![](assets/dce_enchainement.png)
 
 * Achten Sie darauf, dass `<body> </body>` auf der Seite nur einmal vorkommt.
-* Beim Hochladen einer CSS- oder JS-Datei werden die in der ZIP-Datei enthaltenen Bilder nicht hochgeladen. Die in der CSS-Datei vorhandenen Verweise auf diese Bilder werden deshalb nicht aktualisiert.
+* Beim Hochladen einer CSS- oder JS-Datei werden die in der ZIP-Datei enthaltenen Bilder nicht hochgeladen. Die Verweise auf diese Bilder im CSS werden daher nicht aktualisiert.
 
 ## Vom Content Editor unterstützte Formate {#content-editor-supported-formats}
 
@@ -47,7 +47,7 @@ Der Digital Content Editor unterstützt das HTML-Format: Sie können jederzeit i
 
 Die Importfunktion des Digital Content Editors funktioniert mit diesen unterstützten Formaten folgendermaßen:
 
-* CSS: Die in der ZIP-Datei vorhandenen Bilder werden nicht importiert. Die Verweise auf diese Bilder in der CSS-Datei werden nicht aktualisiert.
+* CSS: die in der ZIP-Datei vorhandenen Bilder werden nicht importiert. Die Verweise auf diese Bilder im CSS werden nicht aktualisiert.
 * JS: die in der ZIP-Datei vorhandenen Bilder werden nicht importiert. Die Verweise auf diese Bilder im JS werden nicht aktualisiert.
 * Iframe: Die verknüpften Seiten werden nicht importiert.
 * Landingpages und Webanwendungen: Wenn ein **form**-Tag fehlt, wird eine Warnung angezeigt. Im Nachrichtentext muss immer ein `<form> </form>` vorhanden sein.
@@ -68,11 +68,11 @@ Der Digital Content Editor unterstützt auch die folgenden Code-Seiten:
 
 >[!NOTE]
 >
->Die HTML-Code-Seite muss in einem Meta-Tag (HTML 4 oder HTML 5) oder im BOM definiert sein. Wenn keine Code-Seite verfügbar ist, öffnen Sie die Datei in latin1.
+>Die HTML-Codeseite muss in einem Meta-Tag (HTML 4 oder HTML 5) oder in der Stückliste definiert werden. Wenn keine Codeseite verfügbar ist, öffnen Sie die Datei in latin1.
 
 ## HTML-Inhaltsstatus {#html-content-statuses}
 
-Im oberen Bereich des Editors werden Nachrichten zum Status des Inhalts angezeigt. Die Farbcodes der Nachrichten sind wie folgt:
+Im oberen Bereich des Editors werden Meldungen angezeigt, die sich auf den Status des Inhalts beziehen. Die Farbcodes für die Nachrichten lauten wie folgt:
 
 * **Graue Nachricht:** Informationsnachricht, keine Aktionen sind im Editor erforderlich.
 * **Blaue Nachricht:** Informationsnachricht im Zusammenhang mit dem bearbeiteten Inhalt.

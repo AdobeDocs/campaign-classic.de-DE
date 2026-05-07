@@ -9,9 +9,9 @@ content-type: reference
 level: Intermediate, Experienced
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
 source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
-workflow-type: ht
-source-wordcount: '844'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '865'
+ht-degree: 94%
 
 ---
 
@@ -28,7 +28,7 @@ Die Auslöser werden für die Zielgruppenbestimmung eines Kampagnen-Workflows ve
 Bevor Sie mit der Konfiguration beginnen, überprüfen Sie bitte, ob Folgendes vorhanden ist:
 
 * Ein Adobe Developer-Projekt
-* Eine gültige Organisations-ID – auf [dieser Seite](https://experienceleague.adobe.com/de/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255){_blank} erfahren Sie, wie Sie Ihre Organisations-ID finden
+* Eine gültige Organisations-ID. Auf [ Seite erfahren Sie, wie Sie Ihre Organisations-ID finden](https://experienceleague.adobe.com/de/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255){_blank}
 * Ein Entwicklerzugriff auf die Organisation
 * Eine gültige Trigger-Konfiguration in Adobe Analytics
 
@@ -91,7 +91,7 @@ Die Option kann auch mit einem Platzhalter konfiguriert werden, um alle Auslöse
    }
    ```
 
-### Festlegen des Parameters „Consumer“  {#consumer-parameter}
+### Festlegen des Parameters „Consumer“ {#consumer-parameter}
 
 Die Pipeline funktioniert wie ein Anbieter-Verbraucher-Modell. Nachrichten werden nur von einem einzelnen Verbraucher &quot;konsumiert&quot;; jeder Verbraucher erhält eine eigene Kopie der Nachrichten.
 
@@ -116,7 +116,7 @@ Sie können einige interne Parameter entsprechend Ihren Lastanforderungen änder
 
 Die Liste der optionalen Parameter lautet:
 
-| Option | Beschreibung  |
+| Option | Beschreibung |
 |:-:|:-:|
 | appName (frühere Version) | AppID der OAuth-Anwendung, die in der Legacy-Oath-Anwendung registriert ist, in die der öffentliche Schlüssel hochgeladen wurde. Weitere Informationen hierzu finden Sie auf [dieser Seite](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md). |
 | authGatewayEndpoint(Legacy) | URL zum Abrufen von Gateway-Tokens. Standard: ```https://api.omniture.com``` |
@@ -126,9 +126,9 @@ Die Liste der optionalen Parameter lautet:
 | dumpStatePeriodSec | Der Zeitraum zwischen der Speicherung zweier Kopien des internen Statusprozesses im ```var/INSTANCE/pipelined.json.``` <br> Der interne Status ist hier auch auf Abruf verfügbar: ```http://INSTANCE:7781/pipelined/status``` |
 | forcedPipelineEndpoint | Deaktivieren der Erkennung und Erzwingen des PipelineServicesEndpoint |
 | monitorServerPort | Der Pipelined-Prozess überwacht, dass der Port den internen Statusprozess hier bereitstellt: ```http://INSTANCE:PORT/pipelined/status```. <br>Der Standardwert ist 7781. |
-| pointerFlushMessageCount | Sobald diese Anzahl von Nachrichten verarbeitet wurde, werden die Versätze in der Datenbank gespeichert. <br>Der Standardwert ist 1000. |
+| pointerFlushMessageCount | Wenn diese Anzahl von Nachrichten verarbeitet wird, werden die Offsets in der Datenbank gespeichert. <br> Der Standardwert lautet 1000 |
 | pointerFlushPeriodSec | Nach diesem Zeitraum werden die Versätze in der Datenbank gespeichert. <br>Der Standardwert ist 5 (Sekunden). |
-| processingJSThreads | Anzahl der dedizierten Threads, die Nachrichten mit benutzerdefinierten JS-Connectoren verarbeiten. <br>Der Standardwert ist 4. |
+| processingJSThreads | Anzahl der dedizierten Threads, die Nachrichten mit benutzerdefinierten JS-Connectoren verarbeiten. <br> Der Standardwert ist 4 |
 | processingThreads | Anzahl der dedizierten Threads, die Nachrichten mit nativem Code verarbeiten. <br>Der Standardwert ist 4. |
 | retryPeriodSec | Verzögerung zwischen weiteren Zustellversuchen im Falle von Verarbeitungsfehlern. <br>Der Standardwert ist 30 (Sekunden). |
 | retryValiditySec | Verwerfen der Nachricht, wenn sie nach diesem Zeitraum nicht erfolgreich verarbeitet wurde (zu viele weitere Zustellversuche). <br>Der Standardwert ist 300 (Sekunden). |

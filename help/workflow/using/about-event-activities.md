@@ -8,7 +8,7 @@ exl-id: ed27159e-2fce-4b1c-92e8-581901b82f60
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '105'
-ht-degree: 100%
+ht-degree: 82%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 
 
-Diese Aktivitäten dienen vor allem dem Warten auf bestimmte Ereignisse. Hierbei kann es sich beispielsweise um den Empfang einer Datei, einer E-Mail oder eines Signals handeln.
+Die Hauptaufgabe dieser Aktivitäten besteht darin, auf ein Ereignis zu warten. Es kann sich beispielsweise um den Empfang einer Datei, einer E-Mail oder eines vom Programm gesendeten Signals handeln.
 
 * Datei-Wächter: überwacht ein Verzeichnis und aktiviert die Transition der Aktivität bei jedem neuen Eingang von Dateien. Siehe [Datei-Wächter](file-collector.md).
 * Dateiübertragung: lädt eine Datei auf einen Server. Siehe [Dateiübertragung](file-transfer.md).

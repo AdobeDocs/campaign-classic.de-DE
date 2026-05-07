@@ -6,8 +6,8 @@ feature: Monitoring
 exl-id: ca0c33c5-7350-462a-bc65-4cab51e529d9
 source-git-commit: e60a8391416bc9899548971bddb61705467a80e5
 workflow-type: tm+mt
-source-wordcount: '759'
-ht-degree: 26%
+source-wordcount: '836'
+ht-degree: 30%
 
 ---
 
@@ -42,7 +42,7 @@ Es stehen zusätzliche Möglichkeiten zur Überwachung der verschiedenen Campaig
 
 **Automatische Überwachungstools**
 
-Es stehen mehrere automatische Methoden zur Verfügung. um Sie bei der Überwachung Ihrer Instanz zu unterstützen. Sie können beispielsweise E-Mail-Berichte mit erkannten Anomalien einrichten, eine Liste von Indikatoren im XML-Format abrufen usw. [Klicken Sie hier](../../production/using/monitoring-processes.md#automatic-monitoring), um weitere Informationen zu erhalten.
+Es stehen mehrere automatische Methoden zur Verfügung. um Sie bei der Überwachung Ihrer Instanz zu unterstützen. Sie können beispielsweise E-Mail-Berichte mit festgestellten Anomalien einrichten, eine Liste von Indikatoren im XML-Format abrufen usw. [Hier klicken](../../production/using/monitoring-processes.md#automatic-monitoring) um weitere Informationen zu erhalten.
 
 **Audit-Protokoll**
 
@@ -50,7 +50,7 @@ Das Audit-Protokoll ermöglicht es Ihnen, den vollständigen Verlauf der Änderu
 
 **Control Panel**
 
-Im Control Panel können Sie mehrere Einstellungen Ihrer Instanz verwalten: URL-Berechtigungen verwalten, Details Ihrer Instanz wie die Build-Versionen Ihrer Server überprüfen usw. Das Control Panel ermöglicht Ihnen auch, den verfügbaren Speicherplatz auf den SFTP-Servern zu überwachen, die mit Ihrer Instanz verbunden sind. [Klicken Sie hier](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de), um weitere Informationen zu erhalten.
+Im Control Panel können Sie mehrere Einstellungen Ihrer Instanz verwalten: URL-Berechtigungen verwalten, Details Ihrer Instanz wie die Build-Versionen Ihrer Server überprüfen usw. Außerdem können Sie den verfügbaren Speicherplatz auf den SFTP-Servern überwachen, die mit Ihrer Instanz verbunden sind. [Klicken Sie hier](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de), um weitere Informationen zu erhalten.
 
 >[!NOTE]
 >
@@ -84,7 +84,7 @@ Die Befolgung von Richtlinien und Best Practices bei der Verwendung von Workflow
 * [Best Practices bei der Verwendung von Workflows](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=de){target="_blank"}
 * [Ausführung des Workflows überwachen](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=de){target="_blank"}
 
-### Überwachen von Sendungen {#monitoring-deliveries}
+### Sendungen überwachen {#monitoring-deliveries}
 
 <img src="assets/do-not-localize/icon_send.svg" width="60px">
 
@@ -94,7 +94,7 @@ SMTP-Berichte enthalten Versandstatistiken und SMTP-Fehler nach Domain. [Weitere
 
 **Best Practices**
 
-Informationen zu Best Practices für den Versand und das Design von [&#x200B; finden &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=de){target="_blank"} in der Dokumentation zu Campaign v8 , um die Leistung zu verbessern.
+Informationen zu Best Practices für den Versand und das Design von [ finden ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=de){target="_blank"} in der Dokumentation zu Campaign v8 , um die Leistung zu verbessern.
 
 **Fehlerbehebung beim Versand**
 Bei Problemen mit Sendungen können spezifische Aktionen durchgeführt werden:
@@ -125,7 +125,7 @@ Es wird empfohlen, die Datenbankwartung regelmäßig durchzuführen, um eine üb
 
 *Nur On-Premise- und Hybrid-Hosting-Modelle*
 
-Eine Sicherung ist unerlässlich, um Datenverluste im Falle eines Problems (physisch oder systembedingt) auf einem Computer zu vermeiden. [Klicken Sie hier](../../production/using/backup.md) um weitere Informationen zu erhalten. Das Wiederherstellungsverfahren wird in [diesem Abschnitt](../../production/using/restoration.md) beschrieben.
+Eine Sicherung ist unerlässlich, um Datenverluste im Falle eines Problems (physisch oder systembedingt) auf einem Computer zu vermeiden. [Klicken Sie hier](../../production/using/backup.md), um weitere Informationen zu erhalten. Das Wiederherstellungsverfahren wird in [diesem Abschnitt](../../production/using/restoration.md) beschrieben.
 
 ## Technische Grundsätze für Campaign Classic {#campaign-classic-technical-principles}
 

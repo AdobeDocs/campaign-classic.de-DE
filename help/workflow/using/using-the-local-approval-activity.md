@@ -7,8 +7,8 @@ hide: true
 exl-id: cc29eec9-9c97-4d1b-9567-2581154d7b3f
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1441'
-ht-degree: 100%
+source-wordcount: '1442'
+ht-degree: 82%
 
 ---
 
@@ -20,7 +20,7 @@ Im Rahmen eines Zielgruppen-Workflows ermöglicht die Aktivität **[!UICONTROL L
 
 >[!CAUTION]
 >
->Zur Verwendung dieser Funktion benötigen Sie das Modul Distributed Marketing (Campaign-Option). Bitte prüfen Sie Ihren Lizenzvertrag.
+>Um diese Funktion nutzen zu können, müssen Sie das Modul Dezentrales Marketing erwerben, bei dem es sich um eine Campaign-Option handelt. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
 
 Der Workflow für dieses Anwendungsbeispiel stellt sich wie folgt dar:
 
@@ -32,7 +32,7 @@ Der lokale Validierungsprozess gliedert sich in folgende Schritte:
 
    ![](assets/local_validation_intro_1.png)
 
-1. Die **[!UICONTROL Lokale Validierung]** sendet im Anschluss daran eine E-Mail-Benachrichtigung an alle lokalen Validierungsverantwortlichen. Die Aktivität bleibt im Wartezustand, bis alle Verantwortlichen die ihnen zugewiesenen Empfänger validiert haben.
+1. Die Aktivität **[!UICONTROL Lokale Validierung]** übernimmt dann und sendet eine Benachrichtigungs-E-Mail an jeden lokalen Verantwortlichen. Die Aktivität wird ausgesetzt, bis jeder lokale Verantwortliche die ihm zugewiesenen Empfänger genehmigt hat.
 
    ![](assets/local_validation_intro_4.png)
 
@@ -70,15 +70,15 @@ Weitere Informationen zum Erstellen einer Datenverteilungsvorlage finden Sie unt
    ![](assets/local_validation_data_distribution_3.png)
 
 1. Damit alle Empfänger in der Liste der zu validierenden Empfänger erscheinen, lassen Sie die Option **[!UICONTROL Nachrichten validieren]** angekreuzt.
-1. Behalten Sie im Feld **[!UICONTROL Versandtitel]** den Standardausdruck bei (Compute String des Versands). Auf diese Weise wird in der Feadback-Benachrichtigung der ursprüngliche Versandtitel verwendet.
+1. Im Feld **[!UICONTROL Versandbezeichnung]** haben wir den Standardausdruck (Compute string des Versands) beibehalten. Die Standardbezeichnung des Versands wird in der Feedback-Benachrichtigung verwendet.
 1. Geben Sie im **[!UICONTROL Gruppierungsfeld]** das **[!UICONTROL Geschlecht]** als Kriterium für die Gruppierung der Empfänger in den Benachrichtigungen an.
-1. Im Abschnitt **[!UICONTROL Nachrichten bearbeiten]** haben wir die Web-Anwendung **[!UICONTROL Empfänger bearbeiten]** und den Parameter **[!UICONTROL recipientId]** ausgewählt. Auf diese Weise werden die Empfangenden in den Genhemigungs- und Feedback-Benachrichtigungen anklickbar und leiten auf die entsprechende URL der Web-Anwendung weiter. Der zusätzliche Parameter der URL ist **[!UICONTROL recipientId]**.
-1. Schließen Sie die erweiterten Parameter und gehen Sie in den Tab **[!UICONTROL Verteilung]**. Füllen Sie für jede Domain die folgenden Felder aus:
+1. Im Abschnitt **[!UICONTROL Bearbeiten zielgerichteter Nachrichten]** haben wir die Webanwendung **[!UICONTROL Empfänger bearbeiten]** und den Parameter **[!UICONTROL recipientId]** ausgewählt. In den Validierungs- und Feedback-Benachrichtigungen sind die Empfänger anklickbar und verweisen auf die URL der Web-Anwendung. Der zusätzliche Parameter der URL ist **[!UICONTROL recipientId]**.
+1. Klicken Sie dann auf **[!UICONTROL Registerkarte]** Verteilung“. Geben Sie für jede Domain die folgenden Felder ein:
 
    ![](assets/local_validation_data_distribution_4.png)
 
    * **[!UICONTROL Wert]**: Geben Sie den Domainnamen ein.
-   * **[!UICONTROL Prozent/Feste Größe]**: Geben Sie für jede Domain die Begrenzung ein. Im vorliegenden Beispiel wurde der Versand auf 10 % jeder Domain begrenzt.
+   * **[!UICONTROL Prozentsatz/Behoben]**: Geben Sie für jede Domain den Maximalwert ein. Anzahl der Empfänger, an die der Versand gesendet werden soll. In diesem Beispiel möchten wir den Versand auf 10 % pro Domain beschränken.
    * **[!UICONTROL Titel]**: Vergeben Sie für jede Domain einen Titel, der in den Validierungs- und Feedback-Benachrichtigungen angezeigt wird.
    * **[!UICONTROL Gruppe oder Benutzer]**: Geben Sie den Benutzer oder die Benutzergruppe an, dem die Domain zugewiesen wurde.
 
@@ -147,7 +147,7 @@ Folgende Angaben sind erforderlich:
    Wenn die resultierende Population nicht begrenzt werden soll, ist die Option **[!UICONTROL Explizit]** anzukreuzen und im Feld **[!UICONTROL Datenverteilung]** die zuvor erstellte Verteilungsvorlage anzugeben.
 
 1. Wählen Sie im Bereich **[!UICONTROL Validierungsverwaltung]** die Versandvorlage aus und geben Sie den Betreff für die Benachrichtigungs-E-Mail an. Hier haben wir die Standardvorlage ausgewählt: **[!UICONTROL Benachrichtigung bezüglich lokaler Validierungen]**.
-1. Definieren Sie außerdem den **[!UICONTROL Validierungstyp]**. Im vorliegenden Beispiel wurde die Standardoption beibehalten, d. h. die Validierung muss spätestens 3 Tage nach dem Unterbreitungsdatum erfolgen, andernfalls werden die nicht validierten Empfänger beim Versand nicht berücksichtigt.
+1. Im Abschnitt **[!UICONTROL Validierungsplan]** haben wir die standardmäßige Validierungsfrist (3 Tage) beibehalten und eine Erinnerung hinzugefügt. Der Versand wird 3 Tage nach Beginn der Validierung beendet. Wenn die Validierungsfrist abgelaufen ist, werden nicht validierte Empfänger und Empfängerinnen nicht in der Zielgruppenbestimmung berücksichtigt.
 
 Die von der Aktivität **[!UICONTROL Lokale Validierung]** an lokale Verantwortliche gesendete Benachrichtigung stellt sich wie folgt dar:
 
@@ -177,7 +177,7 @@ Nach Ablauf der in der Warteaktivität definierten Wartezeit sendet die zweite *
 
 ### Validierungs-Tracking durch den Administrator {#approval-tracking-by-the-administrator}
 
-Bei jedem Start der lokalen Validierungsaktivität wird eine Validierungsaufgabe erstellt. Der Administrator hat die Möglichkeit, jede dieser Validierungsaufgaben zu prüfen.
+Bei jedem Start der lokalen Validierungsaktivität wird eine Validierungsaufgabe erstellt. Der Administrator kann jede dieser Genehmigungsaufgaben steuern.
 
 Klicken Sie im Zielgruppen-Workflow Ihrer Kampagne auf den Tab **[!UICONTROL Lokale Validierungsaufgaben]**.
 
@@ -215,6 +215,6 @@ Folgende Informationen stehen zur Verfügung:
 * lokaler Verantwortlicher, der validiert hat, und Validierungsdatum,
 * Anzahl potenziell zu sendender Nachrichten und Anzahl validierter Nachrichten.
 
-Im Tab **[!UICONTROL Zielkontakte]** des Validierungslogs wird die Liste der potenziellen Empfänger und ihr Validierungsstatus angezeigt. Der Status kann an dieser Stelle geändert werden.
+Auf **[!UICONTROL Registerkarte]** Zielgruppe“ des Validierungsprotokolls wird die Liste der Zielgruppenempfänger und deren Validierungsstatus angezeigt. Sie können diesen Status bei Bedarf ändern.
 
 ![](assets/local_validation_admin_6.png)

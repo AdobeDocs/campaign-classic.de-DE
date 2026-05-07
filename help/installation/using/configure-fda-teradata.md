@@ -9,7 +9,7 @@ topic-tags: connectors
 exl-id: 3a5856c3-b642-4722-97ff-6ae7107efdbe
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '1657'
+source-wordcount: '1787'
 ht-degree: 63%
 
 ---
@@ -100,7 +100,7 @@ Sie müssen Treiber für Teradata installieren, damit die Verbindung zu Campaign
 
 Der Connector unterstützt die folgenden Optionen:
 
-| Option | Beschreibung  |
+| Option | Beschreibung |
 |---|---|
 | TD_MAX_SESSIONS | Gibt die maximale Anzahl von Anmeldesessions an, die der Teradata Parallel Transporter für einen Operatorauftrag erhalten kann. |
 | TimeZoneName | Name der Zeitzone des Servers. |
@@ -143,7 +143,7 @@ Gehen Sie wie folgt vor, um das Query Banding zu konfigurieren:
 
 Wenn beim Testen der Verbindung der Fehler **TIM-030008 Datum &#39;2&#39;: fehlende Zeichen (iRc = -53)** auftritt, stellen Sie sicher, dass der ODBC-Treiber korrekt installiert ist und LD_LIBRARY_PATH (Linux)/PATH (Windows) für den Campaign-Server festlegt wurde.
 
-Der Fehler **ODB-240000 ODBC-Fehler: \[Microsoft\]\[ODBC Driver Manager\] Data source name not found and no default driver specified.** tritt unter Windows auf, wenn Sie einen 16.X-Treiber verwenden. Adobe Campaign erwartet, dass die Teradata in ODBCinst.ini &quot;{teradata}&quot; benannt werden.
+Der Fehler **ODB-240000 ODBC-Fehler: \[Microsoft\]\[ODBC Driver Manager\] Data source name not found and no default driver specified.** Tritt unter Windows auf, wenn ein 16.X-Treiber verwendet wird. Adobe Campaign erwartet, dass die Teradata in ODBCinst.ini &quot;{teradata}&quot; benannt werden.
 
 * Ab Campaign 18.10 können Sie ODBCDriverName=&quot;Teradata Database ODBC Driver 16.10“ in die Optionen des externen Kontos einfügen. Die Versionsnummer kann geändert werden. Den genauen Namen finden Sie, indem Sie odbcad32.exe ausführen und auf die Registerkarte Treiber zugreifen.
 

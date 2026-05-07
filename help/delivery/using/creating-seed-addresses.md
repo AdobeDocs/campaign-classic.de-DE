@@ -7,9 +7,9 @@ feature: Seed Address
 role: User, Developer
 exl-id: f7dc97f0-3423-4b6f-88e2-08180f9adf8a
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
-workflow-type: ht
-source-wordcount: '447'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '452'
+ht-degree: 94%
 
 ---
 
@@ -46,7 +46,7 @@ Gehen Sie zur Erstellung von Testadressen wie folgt vor:
 
 ## Testadressenvorlagen erstellen {#creating-seed-address-templates}
 
-Die Erstellung von Adressenvorlagen, die importiert und für jeden Versand angepasst werden können, folgt dem der Definition einer neuen Testadresse. Der einzige Unterschied besteht darin, dass Vorlagen für Testadressen in einem Ordner vom Typ &quot;Vorlagen&quot; gespeichert werden.
+Adressenvorlagen werden importiert und können für jeden Versand geändert werden. Der Vorgang ist derselbe wie bei der Definition einer neuen Testadresse. Der einzige Unterschied besteht darin, dass Adressen von Testadressenvorlagen in einem Ordner vom Typ „Vorlage“ gespeichert werden müssen.
 
 Gehen Sie wie folgt vor, um einen Vorlagenordner zu konfigurieren:
 

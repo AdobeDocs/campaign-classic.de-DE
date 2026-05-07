@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: unitary-interactions
 exl-id: a8face46-a933-4f2c-8299-ccb66f05967d
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: ht
-source-wordcount: '443'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '474'
+ht-degree: 84%
 
 ---
 
@@ -26,7 +26,7 @@ Interactio verfügt standardmäßig über eine vorab konfigurierte Umgebung, in 
 
 Bei der Erstellung einer anonymen Umgebung mithilfe des Assistenten zur Zuordnungserstellung ist im Tab **[!UICONTROL Allgemein]** das Feld **[!UICONTROL Für anonyme eingehende Interaktionen reservierte Umgebung]** bereits angekreuzt.
 
-Die **[!UICONTROL Zielgruppendimension]** wird vorausgefüllt und verweist standardmäßig auf die Besuchertabelle.
+Die **[!UICONTROL Zielgruppendimension]** wird automatisch abgeschlossen. Standardmäßig ist sie mit der Besuchertabelle verknüpft.
 
 Das Feld **[!UICONTROL Besucherordner]** erscheint. Es enthält bereits den Link zum Ordner **[!UICONTROL Besucher]**. In diesem Feld können Sie auswählen, wo Besucherprofile gespeichert werden sollen.
 
@@ -44,7 +44,7 @@ Wenden Sie zum Erstellen von Kategorien und Platzierungen denselben Prozess an w
 
 ## Anonyme Besucher {#anonymous-visitors}
 
-Anonyme Besucher können einem Cookie-Identifizierungsprozess unterzogen werden, wenn sie eine Verbindung herstellen. Diese implizite Erkennung basiert auf dem Navigationsverlauf des Besuchers.
+Anonyme Besucher können einem Cookie-Identifizierungsprozess unterzogen werden, wenn sie eine Verbindung herstellen. Diese implizite Erkennung basiert auf dem Browser-Verlauf des Besuchers.
 
 In diesem Schritt werden die von den Cookies abgerufenen Daten mit denen in Ihrer Datenbank verglichen. In einigen Fällen werden Besucher erkannt (sie werden dann implizit identifiziert), in anderen Fällen werden sie nicht erkannt (und bleiben daher anonym).
 
@@ -54,7 +54,7 @@ Kreuzen Sie in der Platzierung das Feld **[!UICONTROL Person implizit über den 
 
 ## Umgang mit anonymen, nicht identifizierten Besuchern {#processing-unidentified-anonymous-visitors}
 
-Wenn ein Besucher nicht identifiziert werden konnte, können seine Daten in einer bestimmten Platzierung gespeichert werden. Auf diese Weise können ihm spezifische Angebote unterbreitet werden, die speziell für diesen Besuchertyp definierten Typologieregeln entsprechen.
+Wenn nach der Analyse kein anonymer Besucher identifiziert wird, können Sie seine Daten in einem bestimmten Bereich speichern. Auf diese Weise können Sie Angebote vorschlagen, die speziell für diesen Besuchertyp geeignet sind und den angegebenen Typologieregeln entsprechen.
 
 Für nicht identifizierte Kontakte oder solche, die zwar implizit identifiziert werden können, denen Sie aber keine für bekannte Kontakte erstellten Angebote unterbreiten möchten, haben Sie die Möglichkeit, in eine anonyme Umgebung wechseln.
 

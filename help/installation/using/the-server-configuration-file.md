@@ -9,8 +9,8 @@ topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
 source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
-source-wordcount: '8066'
-ht-degree: 6%
+source-wordcount: '8103'
+ht-degree: 8%
 
 ---
 
@@ -103,7 +103,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des **Authentifizierungsknot
    <td> sessionCacheSec<br /> </td> 
    <td> Aufbewahrungsfrist im Cache: Sitzungsinformationen im Cache in Sekunden.<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 600 <br /> </td> 
+   <td> 600<br /> </td> 
   </tr> 
   <tr> 
    <td> sessionTimeOutSec<br /> </td> 
@@ -173,19 +173,19 @@ Im Folgenden finden Sie die verschiedenen Parameter **Knotens „dataStore**. Hi
    <td> formCacheTimeToLive<br /> </td> 
    <td> Gültigkeitsdauer des Formular-Caches: Zeitüberschreitung in Sekunden, nach der ein Eintrag im Cache ungültig wird. O bedeutet, dass Cache-Einträge nur zum Zeitpunkt der Veröffentlichung aktualisiert werden.<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 600 <br /> </td> 
+   <td> 600<br /> </td> 
   </tr> 
   <tr> 
    <td> Hosts<br /> </td> 
    <td> DNS-Masken: Liste der von dieser Instanz bereitgestellten DNS-Masken (durch Kommata getrennt, Platzhalter * und ? Patterns).<br /> </td> 
    <td> String <br /> </td> 
-   <td> "<br /> </td> 
+   <td> '*'<br /> </td> 
   </tr> 
   <tr> 
    <td> interactionCacheTimeToLive<br /> </td> 
    <td> Gültigkeitsdauer des Interaktions-JSSP-Cache: Zeitüberschreitung in Sekunden, nach der ein Cache-Eintrag ungültig wird. Ein negativer Wert bedeutet, dass der Cache immer invalidiert wird. '0', leere oder ungültige Werte werden als 60.<br /> betrachtet </td> 
    <td> Lang<br /> </td> 
-   <td> 300 <br /> </td> 
+   <td> 300<br /> </td> 
   </tr> 
   <tr> 
    <td> lang<br /> </td> 
@@ -203,7 +203,7 @@ Im Folgenden finden Sie die verschiedenen Parameter **Knotens „dataStore**. Hi
    <td> uploadAllowlist<br /> </td> 
    <td> Dateien, die hochgeladen werden dürfen, durch ",“ getrennt Die Zeichenfolge muss ein gültiger regulärer Java-Ausdruck sein. Siehe <a href="file-res-management.md" target="_blank">Einschränken von hochladbaren Dateien</a>.<br /> </td> 
    <td> String <br /> </td> 
-   <td> '.+'-<br /> </td> 
+   <td> '.+' <br /> </td> 
   </tr> 
   <tr> 
    <td> useVault<br /> </td> 
@@ -233,7 +233,7 @@ Im Folgenden finden Sie die verschiedenen Parameter **Knotens „dataStore**. Hi
    <td> viewCacheTimeToLive<br /> </td> 
    <td> Gültigkeitszeitraum des Ansichtscache: Zeitüberschreitung in Sekunden, nach der ein Cache-Eintrag ungültig wird. Ein negativer Wert bedeutet, dass der Cache immer invalidiert wird. '0', leere oder ungültige Werte werden als 60.<br /> betrachtet </td> 
    <td> Lang<br /> </td> 
-   <td> 600 <br /> </td> 
+   <td> 600<br /> </td> 
   </tr> 
   <tr> 
    <td> workingDirectory<br /> </td> 
@@ -410,7 +410,7 @@ Konfigurieren **im Knoten dataStore > dataSource > Pool** die Parameter des zuge
   </tr> 
   <tr> 
    <td> maxCnx<br /> </td> 
-   <td> Maximale Anzahl zulässiger Verbindungen, bevor eine neue Verbindung verweigert wird. Siehe diese <a href="https://helpx.adobe.com/de/campaign/kb/how-to-increase-the-maximum-number-of-database-connections-from-.html">Technote</a>.<br /> </td> 
+   <td> Maximale Anzahl von zulässigen Verbindungen, bevor der Zugriff verweigert wird Siehe diese <a href="https://helpx.adobe.com/campaign/kb/how-to-increase-the-maximum-number-of-database-connections-from-.html">Technote</a>.<br /> </td> 
    <td> Kurz<br /> </td> 
   </tr> 
   <tr> 
@@ -425,7 +425,7 @@ Konfigurieren **im Knoten dataStore > dataSource > Pool** die Parameter des zuge
 
 Im Folgenden finden Sie die verschiedenen Parameter **Knotens „dataStore > virtualDir**. Dies ist die Konfiguration des virtuellen Verzeichnisses für die Zuordnung von echten Verzeichnissen.
 
-Weitere Informationen finden Sie unter &quot;[&#x200B; öffentlicher Ressourcen](file-res-management.md).
+Weitere Informationen finden Sie unter &quot;[ öffentlicher Ressourcen](file-res-management.md).
 
 <table> 
  <thead> 
@@ -533,18 +533,14 @@ Weitere Informationen finden Sie in diesem [Abschnitt](../../installation/using/
    <td> Zeitüberschreitung<br /> </td> 
    <td> Timeout in Millisekunden für eine DNS-Abfrage.<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 5 000 <br /> </td> 
+   <td> 5000<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 >[!NOTE]
 >
->Hinweis zu **nameSevers**: nutzt standardmäßig das Netzwerk
->Parameter der ersten unter Windows deklarierten Netzwerkschnittstelle
->nicht in UNIX definiert. Definiert die Domain Name Servers (DNS)
->wird vom MTA verwendet, um den Mail Exchanger für zu deklarieren.
->Eine Domain.
+>Hinweis zu **nameSevers**: nutzt standardmäßig das Netzwerk>Parameter der ersten unter Windows deklarierten Netzwerkschnittstelle>nicht in UNIX definiert. Definiert die Domain Name Servers (DNS)>wird vom MTA verwendet, um den Mail Exchanger für zu deklarieren.>Eine Domain.
 >
 >Wenn dieser Wert nicht definiert ist, sucht der MTA diese Informationen in der Host-Netzwerkkonfiguration. Wenn mehrere DNS möglich sind, müssen die verschiedenen DNS-Adressen durch ein Komma getrennt werden (Beispiel: 212.155.207.1,212.155.207.2). Wenn Ihr Versand-Server über mehrere Netzwerkschnittstellen verfügt, ist die vom MTA verwendete DNS-Liste die erste. In diesem Fall wird empfohlen, den Parameter **nameServer** anzugeben, um Unklarheiten zu vermeiden.
 
@@ -616,7 +612,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des **htmlToPdf**-Knotens. D
    <td> Zeitüberschreitung<br /> </td> 
    <td> Zeitüberschreitung für eine Konvertierung: Maximale Konvertierungszeit in Sekunden. Bei Überschreitung dieses Grenzwerts wird der Konvertierungsprozess angehalten und ein Fehler ausgegeben.<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 120 <br /> </td> 
+   <td> 120<br /> </td> 
   </tr> 
   <tr> 
    <td> Verbose<br /> </td> 
@@ -628,7 +624,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des **htmlToPdf**-Knotens. D
    <td> waitTime<br /> </td> 
    <td> Verzögerung beim Warten auf einen Prozess: Verzögerung in Sekunden, wenn alle Prozesse gleichzeitig verwendet werden, und beim Warten darauf, dass ein Prozess freigegeben wird. Wenn diese Verzögerung überschritten wird, wird die Konvertierung angehalten und ein Fehler ausgegeben. <br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 15 <br /> </td> 
+   <td> 15<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -759,7 +755,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des **mailExchanger**-Knoten
    <td> mxPort<br /> </td> 
    <td> TCP-Port des SMTP-Servers, der für die E-Mail-Übertragung verwendet wird.<br /> </td> 
    <td> String <br /> </td> 
-   <td> 25 <br /> </td> 
+   <td> 25<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -805,7 +801,7 @@ Im Folgenden finden Sie die verschiedenen Parameter **Knotens &quot;**&quot;. Di
    <td> maxPreparingJobsSec<br /> </td> 
    <td> Maximale Vorbereitungszeit: Dauer in Sekunden, nach der eine Versandaktion nicht mehr in Vorbereitung sein darf.<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 3 600 <br /> </td> 
+   <td> 3600<br /> </td> 
   </tr> 
   <tr> 
    <td> unixScript<br /> </td> 
@@ -840,19 +836,19 @@ Im Folgenden finden Sie die verschiedenen Parameter des **ooconv**-Knotens. Dies
    <td> maxConversions<br /> </td> 
    <td> Maximale Anzahl an Konvertierungen, die ein OpenOffice-Server ausführen darf. Ist diese Anzahl überschritten, wird der Server neu gestartet.<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 1.000 <br /> </td> 
+   <td> 1000<br /> </td> 
   </tr> 
   <tr> 
    <td> maxServerIdleSec<br /> </td> 
    <td> Maximale Inaktivitätsdauer des OpenOffice-Servers vor dem erzwungenen Schließen.<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 7 200 <br /> </td> 
+   <td> 7200<br /> </td> 
   </tr> 
   <tr> 
    <td> portRange<br /> </td> 
    <td> Port-Intervall, auf dem die OpenOffice-Server lauschen.<br /> </td> 
    <td> String <br /> </td> 
-   <td> 8101-8110 <br /> </td> 
+   <td> 8101-8110<br /> </td> 
   </tr> 
   <tr> 
    <td> URL<br /> </td> 
@@ -1092,7 +1088,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des **xtkJobs**-Knotens. Die
    <td> purgeLogsPeriod<br /> </td> 
    <td> Speicherstatus-Aktualisierungszeitraum der Serververarbeitung (in ms).<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 500 <br /> </td> 
+   <td> 500<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1117,7 +1113,7 @@ Weitere Informationen finden Sie unter [Aktivieren der E-Mail-Archivierung (On-P
    <td> acquetlimit<br /> </td> 
    <td> Anzahl der gleichzeitig zu bearbeitenden EMLs<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 100 <br /> </td> 
+   <td> 100<br /> </td> 
   </tr> 
   <tr> 
    <td> archivingType<br /> </td> 
@@ -1165,19 +1161,19 @@ Weitere Informationen finden Sie unter [Aktivieren der E-Mail-Archivierung (On-P
    <td> maxProcessMemoryAlertMb<br /> </td> 
    <td> Warnhinweis bezüglich des Speicherverbrauchs: Warnhinweis bezüglich der RAM-Menge, die von einem bestimmten Prozess verbraucht wird (in MB)<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 1 800 <br /> </td> 
+   <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
    <td> Warnung bezüglich des Speicherverbrauchs: Warnung bezüglich des RAM-Verbrauchs (in MB) durch einen bestimmten Prozess.<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 1 600 <br /> </td> 
+   <td> 1600<br /> </td> 
   </tr> 
   <tr> 
    <td> pollDelay<br /> </td> 
    <td> Intervall in Sekunden zwischen den einzelnen Aktualisierungsereignissen.<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 60 <br /> </td> 
+   <td> 60<br /> </td> 
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
@@ -1225,7 +1221,7 @@ Weitere Informationen finden Sie unter [Aktivieren der E-Mail-Archivierung (On-P
    <td> smtpRelayPort<br /> </td> 
    <td> IP-Port des SMTP-Servers.<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 25 <br /> </td> 
+   <td> 25<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1302,43 +1298,43 @@ Im Folgenden finden Sie die verschiedenen Parameter des **inMail**-Knotens. Dies
    <td> maxMsgPerSession<br /> </td> 
    <td> Maximale Anzahl an Nachrichten, die während einer POP3-Sitzung gelesen werden können.<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 200 <br /> </td> 
+   <td> 200<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
    <td> Warnhinweis bezüglich des Speicherverbrauchs: Warnhinweis bezüglich der RAM-Menge, die von einem bestimmten Prozess verbraucht wird (in MB)<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 1 800 <br /> </td> 
+   <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
    <td> Warnung bezüglich des Speicherverbrauchs: Warnung bezüglich des RAM-Verbrauchs (in MB) durch einen bestimmten Prozess.<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 1 600 <br /> </td> 
+   <td> 1600<br /> </td> 
   </tr> 
   <tr> 
    <td> maxSessionTTLSec<br /> </td> 
    <td> Sitzungsdauer: Maximale Dauer einer Nachrichtenverarbeitungssitzung.<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 100 <br /> </td> 
+   <td> 100<br /> </td> 
   </tr> 
   <tr> 
    <td> popMailPeriodSec<br /> </td> 
    <td> POP3-Abrufintervall<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 300 <br /> </td> 
+   <td> 300<br /> </td> 
   </tr> 
   <tr> 
    <td> popQueueSize<br /> </td> 
    <td> Warteschlangengröße der gelesenen Nachrichten<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 100 <br /> </td> 
+   <td> 100<br /> </td> 
   </tr> 
   <tr> 
    <td> popTimeoutSec<br /> </td> 
    <td> Timeout der POP3-Serververbindung <br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 300 <br /> </td> 
+   <td> 300<br /> </td> 
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
@@ -1350,7 +1346,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des **inMail**-Knotens. Dies
    <td> reloadPeriodSec<br /> </td> 
    <td> Intervall, in der die Konten neu geladen werden, die abgefragt werden sollen.<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 600 <br /> </td> 
+   <td> 600<br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
@@ -1434,13 +1430,13 @@ Weitere Informationen finden Sie unter [Interaction - Datenpuffer](../../install
    <td> maxProcessMemoryAlertMb<br /> </td> 
    <td> Warnhinweis bezüglich des Speicherverbrauchs: Warnhinweis bezüglich der RAM-Menge, die von einem bestimmten Prozess verbraucht wird (in MB)<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 1 800 <br /> </td> 
+   <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
    <td> Warnung bezüglich des Speicherverbrauchs: Warnung bezüglich des RAM-Verbrauchs (in MB) durch einen bestimmten Prozess.<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 1 600 <br /> </td> 
+   <td> 1600<br /> </td> 
   </tr> 
   <tr> 
    <td> maxSharedEntries<br /> </td> 
@@ -1470,13 +1466,13 @@ Weitere Informationen finden Sie unter [Interaction - Datenpuffer](../../install
    <td> statsPeriod<br /> </td> 
    <td> Aggregationsdauer in Sekunden für die Antwortzeit-Statistiken. 0 bedeutet, dass die Speicherung der Statistiken deaktiviert wurde.<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 600 <br /> </td> 
+   <td> 600<br /> </td> 
   </tr> 
   <tr> 
    <td> targetKeySize<br /> </td> 
    <td> Max. Anzahl der Zeichen, die im gemeinsamen Speicher zur Identifizierung von Personen gespeichert sind.<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 16 <br /> </td> 
+   <td> 16<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1529,7 +1525,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des **mta**-Knotens. Dies is
    <td> errorPeriodSec<br /> </td> 
    <td> Häufigkeit der Fehlerstatistiken: Zeit zwischen der Erstellung von Statistiken und der Speicherung in der Datenbank. <br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 300 <br /> </td> 
+   <td> 300<br /> </td> 
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
@@ -1545,7 +1541,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des **mta**-Knotens. Dies is
   </tr> 
   <tr> 
    <td> logLevel<br /> </td> 
-   <td> Zeigt die Ebene der Protokollmeldungen an. Dringlichkeitsstufe der in die Datenbank geschriebenen Protokolle Vom MTA erzeugte Lognachrichten werden nicht immer in die Datenbank geschrieben. Mit diesem Parameter können Sie festlegen, ab welcher Ebene eine Nachricht in die Datenbank geschrieben werden soll. Wenn Sie Ebene 2 definieren, werden auch Nachrichten der Ebenen 1 und 0 geschrieben, während bei der Definition der Ebene 1 nur Nachrichten der Ebenen 1 und 0 geschrieben werden. Mögliche Werte sind: 0 (Fehler), 1 (Warnung), 2 (Info)<br /> </td> 
+   <td> Anzeigelevel der Protokollnachrichten Dringlichkeitsstufe der in die Datenbank geschriebenen Protokolle Vom MTA erzeugte Lognachrichten werden nicht immer in die Datenbank geschrieben. Mit diesem Parameter können Sie festlegen, ab welcher Ebene eine Nachricht in die Datenbank geschrieben werden soll. Wenn Sie Ebene 2 definieren, werden auch Nachrichten der Ebenen 1 und 0 geschrieben, während bei der Definition der Ebene 1 nur Nachrichten der Ebenen 1 und 0 geschrieben werden. Mögliche Werte sind: 0 (Fehler), 1 (Warnung), 2 (Info)<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 2<br /> </td> 
   </tr> 
@@ -1553,25 +1549,25 @@ Im Folgenden finden Sie die verschiedenen Parameter des **mta**-Knotens. Dies is
    <td> maxMemoryMb<br /> </td> 
    <td> Maximale Speichergröße (in MB), die ein MTA-Prozess verwenden kann. Bei Überschreitung dieser Grenze wird der Prozess neu gestartet, sodass der von ihm verwendete Speicher für das System freigegeben wird.<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 1 024 <br /> </td> 
+   <td> 1024<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
    <td> Warnhinweis bezüglich des Speicherverbrauchs: Warnhinweis bezüglich der RAM-Menge, die von einem bestimmten Prozess verbraucht wird (in MB)<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 1 800 <br /> </td> 
+   <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
    <td> Warnung bezüglich des Speicherverbrauchs: Warnung bezüglich des RAM-Verbrauchs (in MB) durch einen bestimmten Prozess.<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 1 600 <br /> </td> 
+   <td> 1600<br /> </td> 
   </tr> 
   <tr> 
    <td> minConnectionsToLog<br /> </td> 
    <td> Zu berücksichtigender Verbindungsschwellenwert Fehlerstatistiken werden für einen bestimmten Pfad nicht erzeugt, wenn die Gesamtzahl an Verbindungen seit der von errorPeriodSec bestimmten Dauer streng kleiner als diese Schwelle ist.<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 100 <br /> </td> 
+   <td> 100<br /> </td> 
   </tr> 
   <tr> 
    <td> minErrorsToLog<br /> </td> 
@@ -1583,7 +1579,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des **mta**-Knotens. Dies is
    <td> minMessagesToLog<br /> </td> 
    <td> Zu berücksichtigender Nachrichtenschwellenwert Fehlerstatistiken werden für einen bestimmten Pfad nicht generiert, wenn die Gesamtzahl an gesendeten Nachrichten seit der von errorPeriodSec bestimmten Dauer streng kleiner als diese Schwelle ist.<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 1.000 <br /> </td> 
+   <td> 1000<br /> </td> 
   </tr> 
   <tr> 
    <td> notifRelay<br /> </td> 
@@ -1601,7 +1597,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des **mta**-Knotens. Dies is
    <td> purgeDataLogDelay<br /> </td> 
    <td> Verzögerung vor dem Löschen archivierter E-Mails: Anzahl der Tage, nach denen archivierte E-Mails in dem in dataLogPath angegebenen Verzeichnis gelöscht werden.<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 15 <br /> </td> 
+   <td> 15<br /> </td> 
   </tr> 
   <tr> 
    <td> retryLostMessages<br /> </td> 
@@ -1625,9 +1621,9 @@ Im Folgenden finden Sie die verschiedenen Parameter des **mta**-Knotens. Dies is
    <td> statServerAddress<br /> </td> 
    <td> Adresse des Servers der Versandstatistik, angegeben als 
     &lt;DNS oder IP&gt; 
-      <code>&lbrack;</code>: 
+      <code>[</code>: 
      &lt;port&gt; 
-       <code>&rbrack;</code>. Siehe 
+       <code>]</code>. Siehe 
       <a href="../../installation/using/email-deliverability.md#coordinates-of-the-statistics-server" target="_blank">Koordinaten des Statistikservers</a>. 
       <br /> 
      </td> 
@@ -1699,13 +1695,13 @@ Konfigurieren Sie im **cache**-Knoten die folgenden Parameter. Dies ist die Konf
    <td> maxSizeOnDiskMb<br /> </td> 
    <td> Maximale Cache-Größe (MB).<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 1 024 <br /> </td> 
+   <td> 1024<br /> </td> 
   </tr> 
   <tr> 
    <td> purgePeriodSec<br /> </td> 
    <td> Bereinigungsfrequenz: Zeitraum in Sekunden zwischen den Ausführungen des Cache-Bereinigungsmechanismus.<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 3 600 <br /> </td> 
+   <td> 3600<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1738,7 +1734,7 @@ Weitere Informationen finden Sie unter [SMTP-](../../installation/using/configur
    <td> Port<br /> </td> 
    <td> IP-Port des SMTP-Servers.<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 25 <br /> </td> 
+   <td> 25<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1761,21 +1757,21 @@ Weitere Informationen finden Sie in diesem [Abschnitt](../../installation/using/
  <tbody> 
   <tr> 
    <td> dataBasePoolPeriodSec<br /> </td> 
-   <td> Intervall, in der die zu sendenden Vorgänge aus der Datenbank abgerufen werden Dieser Wert gibt die Abrufintervall der Datenbank an (in Sekunden). Um die Liste der auf einen Versand wartenden Aufträge zu erhalten, fragt der MTA die Datenbank regelmäßig ab. Wenn kein Auftrag wartet, wird der Abfrageintervall durch diesen Wert definiert. Ist andernfalls ein Auftrag auf einen untergeordneten Server übertragen worden, so verkürzt sich diese Abrufdauer automatisch auf eine Sekunde, sodass ein neuer Auftrag schnellstmöglich, d.h. sobald ein untergeordneter Server wieder verfügbar ist, wieder verarbeitet werden kann. Dies bedeutet nicht, dass die Datenbankabfrage jede Sekunde durchgeführt wird, bis ein untergeordneter Server wieder verfügbar ist. Tatsächlich erfolgt ein Datenbankzugriff nur, wenn mindestens ein untergeordneter Server verfügbar wird.<br /> </td> 
+   <td> Intervall, in der die zu sendenden Aufträge aus der Datenbank abgerufen werden Dieser Wert gibt die Abrufintervall der Datenbank an (in Sekunden). Um die Liste der auf einen Versand wartenden Aufträge zu erhalten, fragt der MTA die Datenbank regelmäßig ab. Wenn kein Auftrag wartet, wird der Abfrageintervall durch diesen Wert definiert. Ist andernfalls ein Auftrag auf einen untergeordneten Server übertragen worden, so verkürzt sich diese Abrufdauer automatisch auf eine Sekunde, sodass ein neuer Auftrag schnellstmöglich, d.h. sobald ein untergeordneter Server wieder verfügbar ist, wieder verarbeitet werden kann. Dies bedeutet nicht, dass die Datenbankabfrage jede Sekunde durchgeführt wird, bis ein untergeordneter Server wieder verfügbar ist. Tatsächlich erfolgt ein Datenbankzugriff nur, wenn mindestens ein untergeordneter Server verfügbar wird.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 30<br /> </td> 
   </tr> 
   <tr> 
    <td> dataBaseRetryDelaySec<br /> </td> 
-   <td> Wartezeit nach fehlgeschlagener Datenbankverbindung. Ein Fehler bei der Datenbankverbindung wird normalerweise vom Datenbankserver selbst verursacht. Der Server kann auch z.B. zu Wartungszwecken angehalten werden. Der Parameter DataBaseRetryDelay definiert die Dauer zwischen zwei Verbindungsversuchen im Falle eines Datenbankverbindungsfehlers.<br /> </td> 
+   <td> Wartezeit nach fehlgeschlagener Verbindung mit der Datenbank Ein Fehler bei der Datenbankverbindung wird normalerweise vom Datenbankserver selbst verursacht. Der Server kann auch z.B. zu Wartungszwecken angehalten werden. Der Parameter DataBaseRetryDelay definiert die Dauer zwischen zwei Verbindungsversuchen im Falle eines Datenbankverbindungsfehlers.<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 60 <br /> </td> 
+   <td> 60<br /> </td> 
   </tr> 
   <tr> 
    <td> domainKeysReloadPeriodSec<br /> </td> 
-   <td> Gültigkeitszeitraum für den Cache privater Schlüssel (DomainKeys). Private Schlüssel, die zum Signieren von E-Mails gemäß der DomainKeys-Empfehlung (http://antispam.yahoo.com/domainkeys) verwendet werden, werden als Optionen in der Datenbank gespeichert. Der Parameter domainKeysReloadPeriodSec definiert, wie viele Sekunden der MTA diese Schlüssel in einem Cache speichern kann. Nach dieser Verzögerung müssen alle Schlüssel aus der Datenbank neu geladen werden.<br /> </td> 
+   <td> Gültigkeit des Cache-Speichers der privaten Schlüssel (DomainKeys). Private Schlüssel, die zum Signieren von E-Mails gemäß der DomainKeys-Empfehlung (http://antispam.yahoo.com/domainkeys) verwendet werden, werden als Optionen in der Datenbank gespeichert. Der Parameter domainKeysReloadPeriodSec definiert, wie viele Sekunden der MTA diese Schlüssel in einem Cache speichern kann. Nach dieser Verzögerung müssen alle Schlüssel aus der Datenbank neu geladen werden.<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 600 <br /> </td> 
+   <td> 600<br /> </td> 
   </tr> 
   <tr> 
    <td> maxSpareServers<br /> </td> 
@@ -1791,7 +1787,7 @@ Weitere Informationen finden Sie in diesem [Abschnitt](../../installation/using/
   </tr> 
   <tr> 
    <td> startSpareServers<br /> </td> 
-   <td> Anzahl der untergeordneten Server beim Start Die Anzahl der untergeordneten Server wird dynamisch überwacht. Beim Starten des MTAs werden so viele untergeordnete Server erstellt, wie in diesem Wert angegeben. Normalerweise können untergeordnete Server nicht schneller als ein Server pro Sekunde gestartet werden, um Host-Ressourcen zu sparen. Beim Start des MTAs wird diese Einschränkung jedoch aufgehoben, sodass untergeordnete Server so bald wie möglich verfügbar sind.<br /> </td> 
+   <td> Anzahl an untergeordneten Servern beim Start Die Anzahl der untergeordneten Server wird dynamisch überwacht. Beim Starten des MTAs werden so viele untergeordnete Server erstellt, wie in diesem Wert angegeben. Normalerweise können untergeordnete Server nicht schneller als ein Server pro Sekunde gestartet werden, um Host-Ressourcen zu sparen. Beim Start des MTAs wird diese Einschränkung jedoch aufgehoben, sodass untergeordnete Server so bald wie möglich verfügbar sind.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 0<br /> </td> 
   </tr> 
@@ -1822,15 +1818,15 @@ Weitere Informationen finden Sie unter [Optimierung des E-Mail-Versands](../../i
   </tr> 
   <tr> 
    <td> idleChildTimeoutSec<br /> </td> 
-   <td> Zeitüberschreitung bis zum Anhalten inaktiver untergeordneter Server. Wenn ein untergeordneter Server länger inaktiv ist als dieser Parameter, wird er automatisch beendet, um Ressourcen freizugeben.<br /> </td> 
+   <td> Timeout inaktiver untergeordneter Sitzungen Wenn ein untergeordneter Server länger inaktiv ist als dieser Parameter, wird er automatisch beendet, um Ressourcen freizugeben.<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 60 <br /> </td> 
+   <td> 60<br /> </td> 
   </tr> 
   <tr> 
    <td> maxAgeSec<br /> </td> 
-   <td> Maximale Aufbewahrungsdauer einer Nachricht Wenn eine vorbereitete Nachricht aufgrund einer Drosselung nicht gesendet werden konnte oder keine Verbindung zum Ziel-MTA herstellen konnte, wird die Nachricht abgebrochen und beim nächsten Versuch verarbeitet.<br /> </td> 
+   <td> Maximale Rückhaltedauer einer Nachricht Wenn eine vorbereitete Nachricht aufgrund einer Drosselung nicht gesendet werden konnte oder keine Verbindung zum Ziel-MTA herstellen konnte, wird die Nachricht abgebrochen und beim nächsten Versuch verarbeitet.<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 600 <br /> </td> 
+   <td> 600<br /> </td> 
   </tr> 
   <tr> 
    <td> maxGCMConnectPerChild<br /> </td> 
@@ -1848,19 +1844,19 @@ Weitere Informationen finden Sie unter [Optimierung des E-Mail-Versands](../../i
    <td> maxWaitingMessages<br /> </td> 
    <td> Ausstehende Nachrichten: Maximale Anzahl von Nachrichten, die im Speicher auf den Versand warten. <br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 2.000<br /> </td> 
+   <td> 2000<br /> </td> 
   </tr> 
   <tr> 
    <td> maxWorkingSetMb<br /> </td> 
    <td> Maximale Speichergröße (in MB), die ein untergeordneter Prozess verwenden kann. Bei Überschreiten dieser Grenze wird der Prozess angehalten, sodass der von ihm verwendete Speicher für das System freigegeben wird. <br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 128 <br /> </td> 
+   <td> 128<br /> </td> 
   </tr> 
   <tr> 
    <td> soapConnectorTimeoutSec<br /> </td> 
    <td> Timeout (in Sekunden), nach dem eine SOAP-Verbindung für einen Versand-Connector unterbrochen wird.<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 600 <br /> </td> 
+   <td> 600<br /> </td> 
   </tr> 
   <tr> 
    <td> startWithFirstMX<br /> </td> 
@@ -1872,7 +1868,7 @@ Weitere Informationen finden Sie unter [Optimierung des E-Mail-Versands](../../i
    <td> timeToLive<br /> </td> 
    <td> Maximale Anzahl aufeinander folgender Versuche bei Wiederaufnahme.<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 48 <br /> </td> 
+   <td> 48<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1911,7 +1907,7 @@ Konfigurieren **im Knoten mta > child > smtp** die folgenden Parameter. Dies ist
    <td> maxSessionsPerChild<br /> </td> 
    <td> Maximale Anzahl an SMTP-Sitzungen pro untergeordnetem Server Um eine Nachricht zuzustellen, initiiert der MTA eine SMTP-Verbindung mit dem Empfänger-MTA. Die maximale Anzahl gleichzeitiger und aktiver SMTP-Sitzungen für einen bestimmten untergeordneten Server ist durch diesen Wert begrenzt. Wenn Sie diesen Wert mit maxSpareServers multiplizieren, erhalten Sie die maximale Anzahl an Nachrichten, die gleichzeitig von einem bestimmten untergeordneten Server verarbeitet werden können.<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 1.000 <br /> </td> 
+   <td> 1000<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -2035,7 +2031,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des **nmac >**. Dadurch wird
    <td> Port<br /> </td> 
    <td> Relais-Port<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 443 <br /> </td> 
+   <td> 443<br /> </td> 
   </tr> 
   <tr> 
    <td> trustedCertsChain<br /> </td> 
@@ -2124,25 +2120,25 @@ Im Folgenden finden Sie die verschiedenen Parameter **Knotens &quot;**&quot;. Di
    <td> maxProcessMemoryAlertMb<br /> </td> 
    <td> Warnhinweis bezüglich des Speicherverbrauchs: Warnhinweis bezüglich der RAM-Menge, die von einem bestimmten Prozess verbraucht wird (in MB)<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 1 800 <br /> </td> 
+   <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
    <td> Warnung bezüglich des Speicherverbrauchs: Warnung bezüglich des RAM-Verbrauchs (in MB) durch einen bestimmten Prozess.<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 1 600 <br /> </td> 
+   <td> 1600<br /> </td> 
   </tr> 
   <tr> 
    <td> monitorServerPort<br /> </td> 
    <td> Status-Server-Port: HTTP-Server-Port, über den Sie den Status des Prozesses abfragen können. Inaktiv bei 0,<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 7 781 <br /> </td> 
+   <td> 7781<br /> </td> 
   </tr> 
   <tr> 
    <td> pointerFlushMessageCount<br /> </td> 
    <td> Der Zeiger wird jedes Mal in der Datenbank gespeichert, wenn diese Anzahl von Nachrichten verarbeitet wird.<br /> </td> 
    <td> <br /> </td> 
-   <td> 1.000 <br /> </td> 
+   <td> 1000<br /> </td> 
   </tr> 
   <tr> 
    <td> pointerFlushPeriodSec<br /> </td> 
@@ -2178,7 +2174,7 @@ Im Folgenden finden Sie die verschiedenen Parameter **Knotens &quot;**&quot;. Di
    <td> retryValiditySec<br /> </td> 
    <td> Nach diesem Zeitraum abbrechen : Ereignis wird abgebrochen, wenn die Verarbeitung nach diesem Zeitraum noch immer fehlschlägt.<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 300 <br /> </td> 
+   <td> 300<br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
@@ -2207,7 +2203,7 @@ Im Folgenden finden Sie die verschiedenen Parameter **Knotens &quot;**&quot;. Di
    <td> replicationActionDelayMin<br /> </td> 
    <td> Reparatur-Modul der Versandaktionen: Verzögerung (in Minuten), nach der die Versandaktionen vom Reparatur-Modul verarbeitet werden können. <br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 60 <br /> </td> 
+   <td> 60<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -2216,7 +2212,7 @@ Im Folgenden finden Sie die verschiedenen Parameter **Knotens &quot;**&quot;. Di
 
 Im Folgenden finden Sie die verschiedenen Parameter des **securityZone**-Knotens.
 
-Weitere Informationen finden Sie unter [&#x200B; von Sicherheitszonen](../../installation/using/security-zones.md).
+Weitere Informationen finden Sie unter [ von Sicherheitszonen](../../installation/using/security-zones.md).
 
 <table> 
  <thead> 
@@ -2314,7 +2310,7 @@ Hier finden Sie die Standardkonfiguration:
 
 Im Folgenden finden Sie die verschiedenen Parameter **Knotens „securityZone > subNetwork**.
 
-Weitere Informationen finden Sie unter [&#x200B; von Sicherheitszonen](../../installation/using/security-zones.md).
+Weitere Informationen finden Sie unter [ von Sicherheitszonen](../../installation/using/security-zones.md).
 
 <table> 
  <thead> 
@@ -2383,13 +2379,13 @@ Im Folgenden finden Sie die verschiedenen Parameter des **sms**-Knotens. Dies is
    <td> dataRetentionDays<br /> </td> 
    <td> Maximale Anzahl an Tagen, die Arbeitsdateien des SMPP-Connectors aufbewahrt werden.<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 60 <br /> </td> 
+   <td> 60<br /> </td> 
   </tr> 
   <tr> 
    <td> dataSizeMo<br /> </td> 
    <td> Maximale Größe der SMPP-Arbeitsdateien in MB.<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 512 <br /> </td> 
+   <td> 512<br /> </td> 
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
@@ -2401,25 +2397,25 @@ Im Folgenden finden Sie die verschiedenen Parameter des **sms**-Knotens. Dies is
    <td> keepAlivePeriod<br /> </td> 
    <td> Intervall des Kontinuitätsrahmens der Sitzung: max. Intervall in Sekunden zwischen zwei Frames, um anzuzeigen, dass die Empfangssitzung noch aktiviert ist.<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 25 <br /> </td> 
+   <td> 25<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
    <td> Warnhinweis bezüglich des Speicherverbrauchs: Warnhinweis bezüglich der RAM-Menge, die von einem bestimmten Prozess verbraucht wird (in MB)<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 1 800 <br /> </td> 
+   <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
    <td> Warnung bezüglich des Speicherverbrauchs: Warnung bezüglich des RAM-Verbrauchs (in MB) durch einen bestimmten Prozess.<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 1 600 <br /> </td> 
+   <td> 1600<br /> </td> 
   </tr> 
   <tr> 
    <td> pollPeriod<br /> </td> 
    <td> Suchfrequenz: Zeitraum der SMS-Kontoabfrage.<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 300 <br /> </td> 
+   <td> 300<br /> </td> 
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
@@ -2431,7 +2427,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des **sms**-Knotens. Dies is
    <td> reloadPeriod<br /> </td> 
    <td> Häufigkeit der Kontoneuladung: Häufigkeit der Datenbankneuladung der abzufragenden Konten.<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 600 <br /> </td> 
+   <td> 600<br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
@@ -2443,13 +2439,13 @@ Im Folgenden finden Sie die verschiedenen Parameter des **sms**-Knotens. Dies is
    <td> srReadDelay<br /> </td> 
    <td> Anzahl der Sekunden, die mit der Verarbeitung der SR in Verzug sind: Nur SRs mit einem Wiederherstellungsdatum, das vor der aktuellen Zeit liegt, minus der von srReadDelay angegebenen Dauer in Sekunden. <br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 600 <br /> </td> 
+   <td> 600<br /> </td> 
   </tr> 
   <tr> 
    <td> Zeitüberschreitung<br /> </td> 
    <td> Kommunikations-Timeout mit SMS-Gateway.<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 300 <br /> </td> 
+   <td> 300<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -2513,13 +2509,13 @@ Im Folgenden finden Sie die verschiedenen Parameter des **stat**-Knotens. Dies i
    <td> maxProcessMemoryAlertMb<br /> </td> 
    <td> Warnhinweis bezüglich des Speicherverbrauchs: Warnhinweis bezüglich der RAM-Menge, die von einem bestimmten Prozess verbraucht wird (in MB)<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 1 800 <br /> </td> 
+   <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
    <td> Warnung bezüglich des Speicherverbrauchs: Warnung bezüglich des RAM-Verbrauchs (in MB) durch einen bestimmten Prozess.<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 1 600 <br /> </td> 
+   <td> 1600<br /> </td> 
   </tr> 
   <tr> 
    <td> Port<br /> </td> 
@@ -2584,19 +2580,19 @@ Im Folgenden finden Sie die verschiedenen Parameter des **syslogd**-Knotens. Die
    <td> maxNumberOfLoginsFiles<br /> </td> 
    <td> Maximale Anzahl an beizubehaltenden logins.log-Dateien <br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 365 <br /> </td> 
+   <td> 365<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
    <td> Warnhinweis bezüglich des Speicherverbrauchs: Warnhinweis bezüglich der RAM-Menge, die von einem bestimmten Prozess verbraucht wird (in MB)<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 1 800 <br /> </td> 
+   <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
    <td> Warnung bezüglich des Speicherverbrauchs: Warnung bezüglich des RAM-Verbrauchs (in MB) durch einen bestimmten Prozess.<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 1 600 <br /> </td> 
+   <td> 1600<br /> </td> 
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
@@ -2649,7 +2645,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des **tracking**-Knotens. Di
    <td> consolidationPeriodSec<br /> </td> 
    <td> Konsolidierungszeitraum<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 300 <br /> </td> 
+   <td> 300<br /> </td> 
   </tr> 
   <tr> 
    <td> dedupOpenPeriodMin<br /> </td> 
@@ -2685,19 +2681,19 @@ Im Folgenden finden Sie die verschiedenen Parameter des **tracking**-Knotens. Di
    <td> logCountPerRequest<br /> </td> 
    <td> Anzahl der pro Aufruf des Remote-Trackingservers abgerufenen Logs.<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 1.000 <br /> </td> 
+   <td> 1000<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
    <td> Warnhinweis bezüglich des Speicherverbrauchs: Warnhinweis bezüglich der RAM-Menge, die von einem bestimmten Prozess verbraucht wird (in MB)<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 1 800 <br /> </td> 
+   <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
    <td> Warnung bezüglich des Speicherverbrauchs: Warnung bezüglich des RAM-Verbrauchs (in MB) durch einen bestimmten Prozess.<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 1 600 <br /> </td> 
+   <td> 1600<br /> </td> 
   </tr> 
   <tr> 
    <td> phishbowlServiceAPIKey<br /> </td> 
@@ -2739,7 +2735,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des **tracking**-Knotens. Di
    <td> userAgentCacheSize<br /> </td> 
    <td> Größe des Browserkennungs-Caches.<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 500 <br /> </td> 
+   <td> 500<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -2786,19 +2782,19 @@ Im Folgenden finden Sie die verschiedenen Parameter **Knotens** trackinglogd“.
    <td> maxLogsSizeOnDiskMb<br /> </td> 
    <td> Maximale Protokollgröße: Maximaler Speicherplatz für Protokolle auf der Festplatte (in MB). Darf nicht weniger als 100 MB sein. <br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 500 <br /> </td> 
+   <td> 500<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
    <td> Warnhinweis bezüglich des Speicherverbrauchs: Warnhinweis bezüglich der RAM-Menge, die von einem bestimmten Prozess verbraucht wird (in MB)<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 1 800 <br /> </td> 
+   <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
    <td> Warnung bezüglich des Speicherverbrauchs: Warnung bezüglich des RAM-Verbrauchs (in MB) durch einen bestimmten Prozess.<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 1 600 <br /> </td> 
+   <td> 1600<br /> </td> 
   </tr> 
   <tr> 
    <td> maxSharedLogs<br /> </td> 
@@ -2828,7 +2824,7 @@ Im Folgenden finden Sie die verschiedenen Parameter **Knotens** trackinglogd“.
    <td> webTrackingParamSize<br /> </td> 
    <td> Maximale Anzahl an Zeichen, die im gemeinsamen Speicher für zusätzliche Webtracking-Parameter gespeichert werden.<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 64 <br /> </td> 
+   <td> 64<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -2859,7 +2855,7 @@ Weitere Informationen finden Sie in diesem [Abschnitt](configuring-campaign-serv
    <td> MaxThreads<br /> </td> 
    <td> Maximale Thread-Anzahl.<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 75 <br /> </td> 
+   <td> 75<br /> </td> 
   </tr> 
   <tr> 
    <td> MinSpareThreads<br /> </td> 
@@ -2883,13 +2879,13 @@ Weitere Informationen finden Sie in diesem [Abschnitt](configuring-campaign-serv
    <td> controlPort<br /> </td> 
    <td> Tomcat Listening Control Port: siehe <a href="configure-tomcat.md" target="_blank">Konfigurieren von Tomcat</a>.<br /> </td> 
    <td> Kurz<br /> </td> 
-   <td> 8 005 <br /> </td> 
+   <td> 8005<br /> </td> 
   </tr> 
   <tr> 
    <td> httpPort<br /> </td> 
    <td> Tomcat HTTP Listening-Port: siehe <a href="configure-tomcat.md" target="_blank">Konfigurieren von Tomcat</a>.<br /> </td> 
    <td> Kurz<br /> </td> 
-   <td> 8 080 <br /> </td> 
+   <td> 8080<br /> </td> 
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
@@ -2901,19 +2897,19 @@ Weitere Informationen finden Sie in diesem [Abschnitt](configuring-campaign-serv
    <td> maxDeliveryQueueSize<br /> </td> 
    <td> Größe der Warteschlange für SubmitDelivery-Aufrufe: Maximale Anzahl von SubmitDelivery SOAP-Aufrufen, die in die Warteschlange gestellt werden können.<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 50 <br /> </td> 
+   <td> 50<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryAlertMb<br /> </td> 
    <td> Warnhinweis bezüglich des Speicherverbrauchs: Warnhinweis bezüglich der RAM-Menge, die von einem bestimmten Prozess verbraucht wird (in MB)<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 1 800 <br /> </td> 
+   <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
    <td> Warnung bezüglich des Speicherverbrauchs: Warnung bezüglich des RAM-Verbrauchs (in MB) durch einen bestimmten Prozess<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 1 600 <br /> </td> 
+   <td> 1600<br /> </td> 
   </tr> 
   <tr> 
    <td> notifRelay<br /> </td> 
@@ -3045,7 +3041,7 @@ Im Folgenden finden Sie die verschiedenen Parameter **Knotens „web > jssp**. D
    <td> timeToLive<br /> </td> 
    <td> Maximale Anzahl der Seiten, die von einem JavaScript-Kontext bereitgestellt werden <br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 1.000 <br /> </td> 
+   <td> 1000<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -3257,7 +3253,7 @@ Hier finden Sie die Standardkonfiguration:
 
 Fügen Sie für jeden HTTP **Header einen Knoten („web“ > „relais** > „responseHeader„) hinzu, um ihn den an das Relais weitergeleiteten Antworten hinzuzufügen.
 
-Weitere Informationen finden Sie unter [&#x200B; von HTTP-Kopfzeilen](../../installation/using/configuring-campaign-server.md#managing-http-headers).
+Weitere Informationen finden Sie unter [ von HTTP-Kopfzeilen](../../installation/using/configuring-campaign-server.md#managing-http-headers).
 
 <table> 
  <thead> 
@@ -3343,7 +3339,7 @@ Weitere Informationen finden Sie in diesem [Abschnitt](../../installation/using/
    <td> maxJobsInCache<br /> </td> 
    <td> Maximale Vorgangsanzahl: Maximale Anzahl von Versandaktionen im Cache. Darf nicht weniger als 50 sein. <br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 100 <br /> </td> 
+   <td> 100<br /> </td> 
   </tr> 
   <tr> 
    <td> showSourceIP<br /> </td> 
@@ -3417,7 +3413,7 @@ Weitere Informationen finden Sie unter [Redundantes Tracking](../../installation
 
 Im Folgenden finden Sie die verschiedenen Parameter **Knotens „web > spamCheck**. Dies ist die Konfiguration der Bewertungsparameter für die Anti-Spam-Punktzahl in E-Mails.
 
-Weitere Informationen finden Sie unter [&#x200B; von SpamAssassin](../../installation/using/configuring-spamassassin.md).
+Weitere Informationen finden Sie unter [ von SpamAssassin](../../installation/using/configuring-spamassassin.md).
 
 <table> 
  <thead> 
@@ -3486,13 +3482,13 @@ Weitere Informationen finden Sie unter [Workflows und Affinitäten mit hoher Ver
    <td> maxProcessMemoryAlertMb<br /> </td> 
    <td> Warnhinweis bezüglich des Speicherverbrauchs: Warnhinweis bezüglich der RAM-Menge, die von einem bestimmten Prozess verbraucht wird (in MB)<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 1 800 <br /> </td> 
+   <td> 1800<br /> </td> 
   </tr> 
   <tr> 
    <td> maxProcessMemoryWarningMb<br /> </td> 
    <td> Warnung bezüglich des Speicherverbrauchs: Warnung bezüglich des RAM-Verbrauchs (in MB) durch einen bestimmten Prozess.<br /> </td> 
    <td> Lang<br /> </td> 
-   <td> 1 600 <br /> </td> 
+   <td> 1600<br /> </td> 
   </tr> 
   <tr> 
    <td> notifRelay<br /> </td> 

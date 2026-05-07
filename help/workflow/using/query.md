@@ -7,8 +7,8 @@ hide: true
 exl-id: 20d03627-cd56-46da-bc02-73b48a02a350
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1693'
-ht-degree: 100%
+source-wordcount: '1710'
+ht-degree: 77%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 ## Erstellen einer Abfrage {#creating-a-query}
 
-Über Abfragen lassen sich Zielgruppen anhand von Filterkriterien bestimmen. Es besteht die Möglichkeit, dem Abfrageergebnis einen Segment-Code zuzuweisen und es mit Zusatzdaten zu ergänzen.
+Mit einer Abfrage können Sie eine Zielgruppe anhand von Kriterien auswählen. Sie können dem Abfrageergebnis einen Segment-Code zuordnen und zusätzliche Daten darin einfügen.
 Weitere Informationen zu Beispielen für Abfragen finden Sie in diesem [Abschnitt](querying-recipient-table.md).
 
 >[!NOTE]
@@ -31,7 +31,7 @@ Weitere Informationen zum Verwenden und Verwalten zusätzlicher Daten finden Sie
 
 Klicken Sie auf den Link **[!UICONTROL Abfrage bearbeiten...]** und gehen Sie wie folgt vor, um Zielgruppenbestimmungstyp, Beschränkungen und Auswahlkriterien der anzusprechenden Population zu definieren:
 
-1. Wählen Sie zunächst Zielgruppen- und Filterdimension aus. Standardmäßig wird die Zielgruppe aus den Empfängern ausgewählt. Die vorgeschlagenen Einschränkungsfilter sind dieselben wie bei der Zielgruppenbestimmung in einem Versand.
+1. Zielgruppenbestimmungs- und Filterdimension auswählen. Standardmäßig wird die Zielgruppe aus den Empfängerinnen und Empfängern ausgewählt. Die Liste der Einschränkungsfilter entspricht der Liste für die Versand-Zielgruppenbestimmung.
 
    Die Zielgruppendimension bezeichnet den Elementtyp, der verwendet werden soll, beispielsweise die mit der Kampagne anzusprechende Population.
 
@@ -53,7 +53,7 @@ Klicken Sie auf den Link **[!UICONTROL Abfrage bearbeiten...]** und gehen Sie wi
 
 1. Wenn Sie in Schritt 1 **[!UICONTROL Filterbedingungen]** ausgewählt haben oder die Option **[!UICONTROL Filter]** > **[!UICONTROL Erweiterter Filter…]** verwenden, müssen Sie später manuell Filterkriterien hinzufügen.
 
-   Darüber hinaus können Sie die gefilterten Daten gruppieren, indem Sie das entsprechende Kästchen aktivieren. Hierzu muss sich die Filterdimension von der Zielgruppendimension der Abfrage unterscheiden.  Weiterführende Informationen finden Sie in [diesem Abschnitt](querying-using-grouping-management.md).
+   Sie können auch Bedingungen für die Datengruppierung hinzufügen, indem Sie das entsprechende Kontrollkästchen aktivieren. Dazu muss sich die Filterdimension von der Zielgruppendimension der Abfrage unterscheiden. Weiterführende Informationen finden Sie in [diesem Abschnitt](querying-using-grouping-management.md).
 
    Sie können auch weitere Kriterien hinzufügen, indem Sie den Expression Builder verwenden und ihn mit den logischen Optionen AND, OR und EXCEPT kombinieren. Sie können dann die **[!UICONTROL Entsprechende SQL-Abfrage...]** für Ihre Kriterienkombination anzeigen. Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign).
 
@@ -63,7 +63,7 @@ Klicken Sie auf den Link **[!UICONTROL Abfrage bearbeiten...]** und gehen Sie wi
 
 ## Hinzufügen von Daten {#adding-data}
 
-Es besteht die Möglichkeit, in Workflows zusätzliche Informationen über die Zielpopulation zu verwenden. Dies können beispielsweise Versicherungsnummern, Abonnements von bestimmten Newslettern oder die Herkunft der Empfänger sein. Diese Informationen können entweder aus der Adobe Campaign-Datenbank oder aus externen Datenbanken stammen.
+Über die zusätzlichen Spalten können Sie zusätzliche Informationen zur Zielpopulation erfassen, z. B. Vertragsnummern, Newsletter-Abonnements oder Herkunft. Diese Daten können in der Adobe Campaign-Datenbank oder in einer externen Datenbank gespeichert werden.
 
 Die Auswahl dieser Zusatzinformationen erfolgt über den Link **[!UICONTROL Daten hinzufügen...]**.
 
@@ -77,11 +77,11 @@ Wählen Sie im ersten Fenster des Assistenten zunächst den Typ der hinzuzufüge
 * Wählen Sie **[!UICONTROL Externe Daten]** aus, um Daten aus einer externen Datenbank hinzuzufügen. Diese Option ist nur verfügbar, wenn Sie die Option **Federated Data Access** erworben haben. Weitere Informationen hierzu finden Sie unter [Zugriff auf eine externe Datenbank (FDA)](accessing-an-external-database-fda.md).
 * Wählen Sie die Option **[!UICONTROL Angebotsvorschlag]** aus, um einen Spaltensatz hinzuzufügen, mit dem Sie den besten, vom Angebotsmodul erzeugten Vorschlag speichern können. Diese Option ist nur verfügbar, wenn Sie das Modul **Interaktion** erworben haben.
 
-Wenn keines der o. g. Module auf Ihrer Plattform installiert ist, überspringt der Assistent das Auswahlfenster. Sie werden direkt zum nächsten Schritt weitergeleitet.
+Wenn kein optionales Modul auf der Plattform installiert ist, wird dieser Schritt nicht angezeigt. Sie werden direkt zur nächsten Stufe weitergeleitet.
 
 Gehen Sie folgendermaßen vor, um Daten aus der Adobe Campaign-Datenbank hinzuzufügen:
 
-1. Wählen Sie den Datentyp aus, der hinzugefügt werden soll. Hierbei kann es sich um Daten der Filterdimension direkt oder Daten aus in Relation zur Filterdimension stehenden Tabellen handeln.
+1. Wählen Sie den Datentyp aus, den Sie hinzufügen möchten. Dabei kann es sich um Daten handeln, die zur Filterdimension gehören, oder um Daten, die in verknüpften Tabellen gespeichert sind.
 
    ![](assets/query_add_columns.png)
 
@@ -103,7 +103,7 @@ Gehen Sie folgendermaßen vor, um eine mit einer Zielpopulation verknüpfte Info
 
    ![](assets/wf_add_data_linked_table.png)
 
-1. Geben Sie bei Bedarf die Anzahl an Sammlungselementen an, die Sie beibehalten möchten, indem Sie aus der Dropdown-Liste des Felds **[!UICONTROL Abgerufene Daten]** den gewünschten Wert auswählen. Standardmäßig werden alle Zeilen der Sammlung abgerufen und nach den im nächsten Schritt definierten Bedingungen gefiltert.
+1. Geben Sie ggf. die Anzahl der Elemente der Sammlung an, die Sie beibehalten möchten, indem Sie einen der Werte im Feld **[!UICONTROL Erfasste Daten]** auswählen. Standardmäßig werden alle Zeilen der Sammlung wiederhergestellt und dann entsprechend den im folgenden Schritt angegebenen Bedingungen gefiltert.
 
    * Wenn nur ein Sammlungselement den Filterbedingungen entspricht, ist die Option **[!UICONTROL Nur eine Zeile]** im Feld **[!UICONTROL Abgerufene Daten]** auszuwählen.
 
@@ -114,19 +114,19 @@ Gehen Sie folgendermaßen vor, um eine mit einer Zielpopulation verknüpfte Info
      >Wenn die ursprüngliche Bedingung nicht respektiert wird, kann das Ergebnis falsch sein (fehlende Zeilen oder Dubletten).
 
    * Wenn Sie mehrere Zeilen abrufen möchten (**[!UICONTROL Zeilenanzahl begrenzen]**), können Sie die Anzahl an abzurufenden Zeilen angeben.
-   * Wenn die abgerufenen Spalten Aggregate enthalten, beispielsweise die Anzahl angegebener Fehler oder der durchschnittliche Warenkorb in einem POS,  können Sie die Option **[!UICONTROL Aggregate]** verwenden.
+   * Wenn die erfassten Spalten Aggregate enthalten, z. B. die Anzahl der deklarierten Fehler, durchschnittliche Kosten für eine Site usw., können Sie den Wert **[!UICONTROL Aggregate]** verwenden.
 
    ![](assets/query_add_collection_param.png)
 
-1. Definieren Sie die Unterauswahl der Sammlungselemente. Beispielsweise die Käufe der letzten 15 Tage.
+1. Geben Sie die Unterauswahl der Sammlung an. Beispiel: Käufe nur in den letzten 15 Tagen.
 
    ![](assets/query_add_columns_collection_filter.png)
 
-1. Wenn Sie die Option **[!UICONTROL Zeilenanzahl begrenzen]** gewählt haben, ist eine Sortierreihenfolge zu definieren. Dies ermöglicht es, die beizubehaltenden Daten zu bezeichnen, wenn die Anzahl an abgerufenen Zeilen die Anzahl an Zeilen übersteigt, die Sie beibehalten möchten.
+1. Wenn Sie die Option **[!UICONTROL Zeilenanzahl begrenzen]** ausgewählt haben, definieren Sie die Reihenfolge, in der die erfassten Daten gefiltert werden sollen. Sobald die Anzahl der abgerufenen Zeilen die Anzahl der Zeilen übersteigt, die Sie beibehalten möchten, können Sie mit der Filterreihenfolge festlegen, welche Zeilen beibehalten werden sollen.
 
 ## Beispiel: Zielgruppenbestimmung anhand einfacher Empfängerattribute {#example--targeting-on-simple-recipient-attributes}
 
-In folgendem Beispiel sollen alle Männer zwischen 18 und 30 Jahre identifiziert werden, die in Deutschland leben. Die Abfrage könnte in einem Workflow Verwendung finden, der ein speziell an diese Zielgruppe gerichtetes Angebot versendet. Gehen Sie wie folgt vor:
+Im folgenden Beispiel soll die Abfrage Männer zwischen 18 und 30 Jahren identifizieren, die in Frankreich leben. Diese Abfrage wird beispielsweise in einem Workflow verwendet, der darauf abzielt, aus ihnen ein exklusives Angebot zu machen.
 
 >[!NOTE]
 >
@@ -134,7 +134,7 @@ In folgendem Beispiel sollen alle Männer zwischen 18 und 30 Jahre identifiziert
 
 1. Benennen Sie die Abfrage und klicken Sie auf den Link **[!UICONTROL Abfrage bearbeiten...]**.
 1. Wählen Sie aus der Liste der verfügbaren Filter die Option **[!UICONTROL Filterbedingungen]** aus.
-1. Konfigurieren Sie die verschiedenen Kriterien für die gesuchte Zielgruppe. Im vorliegenden Beispiel werden die einzelnen Kriterien mit dem Operator UND verknüpft. Die Empfänger müssen also die vier folgenden Bedingungen erfüllen:
+1. Geben Sie die verschiedenen Kriterien für die vorgeschlagene Zielgruppe ein. In diesem Fall werden die Kriterien mithilfe der Option und kombiniert. Um in die Auswahl einbezogen zu werden, müssen die Empfänger die folgenden vier Bedingungen erfüllen:
 
    * Anrede gleich &quot;Herr&quot; (oder **Geschlecht** gleich **Männlich**),
    * Alter kleiner als 30 Jahre.
@@ -152,7 +152,7 @@ In folgendem Beispiel sollen alle Männer zwischen 18 und 30 Jahre identifiziert
    ![](assets/query_example_preview.png)
 
 1. Speichern Sie bei Bedarf die Abfrage und klicken Sie auf **[!UICONTROL Beenden]** > **[!UICONTROL OK]**.
-1. Fahren Sie mit der Bearbeitung Ihres Workflows fort, indem Sie ihm weitere Aktivitäten hinzufügen. Nach dem Start und Abschluss des vorherigen Abfrageschritts wird die Anzahl der gefundenen Empfängerinnen oder Empfänger angezeigt. Weitere Details können per Maus mit dem Popup-Menü angezeigt werden (Rechtsklick auf die Transition > **[!UICONTROL Zielgruppe anzeigen…]**).
+1. Fahren Sie mit der Bearbeitung Ihres Workflows fort, indem Sie ihm weitere Aktivitäten hinzufügen. Sobald er gestartet wurde und der vorherige Abfrageschritt abgeschlossen ist, wird die Anzahl der gefundenen Empfänger angezeigt. Weitere Details können per Maus mit dem Popup-Menü angezeigt werden (Rechtsklick auf die Transition > **[!UICONTROL Zielgruppe anzeigen…]**).
 
    ![](assets/query_example_result.png)
 

@@ -6,9 +6,9 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Templates
 exl-id: e43dd68e-2e95-4367-9029-4622fbcb1759
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: ht
-source-wordcount: '448'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '450'
+ht-degree: 91%
 
 ---
 
@@ -56,7 +56,7 @@ Gehen Sie wie folgt vor:
 
    ![](assets/s_ncs_content_folder_use_a_template.png)
 
-1. Klicken Sie nun auf den Tab **[!UICONTROL HTML-Vorschau]**, um das Rendering zu prüfen. Im vorliegenden Beispiel fehlen die Angaben in den Personalisierungsfeldern, die auf Daten aus der Datenbank zurückgreifen.
+1. Klicken Sie dann auf die Registerkarte **[!UICONTROL HTML]** Vorschau, um das Rendering anzuzeigen. Hier werden die Personalisierungsfelder aus der Datenbank nicht eingegeben.
 
    ![](assets/s_ncs_content_folder_use_a_template_preview.png)
 
@@ -70,7 +70,7 @@ Gehen Sie wie folgt vor:
 
    >[!NOTE]
    >
-   >Sie haben auch die Möglichkeit, die Erzeugung nicht validierter Inhalte zuzulassen. Ändern Sie in diesem Fall die entsprechende Option in der Veröffentlichungsvorlage. Weitere Informationen hierzu finden Sie unter [Erstellung und Konfiguration der Vorlagen](publication-templates.md#creating-and-configuring-the-template).
+   >Sie können die Erstellung nicht genehmigter Inhalte zulassen. Ändern Sie dazu die entsprechende Option in der Veröffentlichungsvorlage. Weitere Informationen hierzu finden Sie unter [Erstellung und Konfiguration der Vorlagen](publication-templates.md#creating-and-configuring-the-template).
 
    HTML- und Text-Inhalte werden standardmäßig im **Veröffentlichungs**-Ordner der Adobe Campaign-Instanz erzeugt. Ausgehend von der Option **NcmPublishingDir** können Sie einen anderen Ordner wählen.
 

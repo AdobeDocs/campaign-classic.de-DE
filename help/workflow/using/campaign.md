@@ -7,7 +7,7 @@ hide: true
 topic-tags: technical-workflows
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '166'
 ht-degree: 100%
 
 ---
@@ -43,7 +43,7 @@ Die folgenden Workflows werden standardmäßig mit dem Modul **Kampagne** instal
   <tr> 
    <td> <span class="uicontrol">Bearbeitungsvorgänge bezüglich Kampagnensendungen</span> <br /> </td> 
    <td> <span class="uicontrol">deliveryMgt</span> <br /> </td> 
-   <td> Dieser Workflow löst die genehmigten Sendungen aus und startet die Nachbearbeitung des Dienstleisters für einen externen Versand. Außerdem werden Validierungsbenachrichtigungen und Erinnerungen gesendet.<br /> </td> 
+   <td> Dieser Workflow startet den Versand der validierten Sendungen und die Anschlussvorgänge des Dienstleisters bei externem Versand. Außerdem werden Validierungsbenachrichtigungen und Erinnerungen gesendet.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Kampagnenvorgänge</span> <br /> </td> 

@@ -7,8 +7,8 @@ feature: Web Forms
 exl-id: 1c66b8e8-7590-4767-9b2f-a9a509df4508
 source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
-source-wordcount: '1373'
-ht-degree: 100%
+source-wordcount: '1379'
+ht-degree: 90%
 
 ---
 
@@ -18,13 +18,13 @@ ht-degree: 100%
 
 ## Formulardaten vorausfüllen {#pre-loading-the-form-data}
 
-Wenn Sie die in der Datenbank gespeicherten Profile mithilfe eines Webformulars aktualisieren möchten, können Sie eine Vorausfüllen-Komponente verwenden. Über diese Komponente können Sie angeben, wie der in der Datenbank zu aktualisierende Datensatz gefunden werden soll.
+Wenn Sie die in der Datenbank gespeicherten Profile über ein Web-Formular aktualisieren möchten, können Sie ein Feld zum Vorausfüllen verwenden. Mit der Option zum Vorausfüllen können Sie angeben, wie der zu aktualisierende Eintrag in der Datenbank gesucht werden soll.
 
 Folgende Identifizierungsmöglichkeiten gibt es:
 
 * **[!UICONTROL Adobe Campaign-Verschlüsselung]**
 
-  Diese Verschlüsselungsmethode verwendet die verschlüsselte Adobe Campaign-Kennung (ID). Diese Methode ist nur für Adobe Campaign-Objekte möglich. Die verschlüsselte Kennung darf außerdem nur von der Adobe Campaign-Plattform generiert werden.
+  Diese Verschlüsselungsmethode verwendet die verschlüsselte Adobe Campaign-Kennung (ID). Diese Methode ist nur auf ein Adobe Campaign-Objekt anwendbar und die verschlüsselte ID kann nur von der Adobe Campaign-Plattform generiert werden.
 
   Wenn Sie diese Methode verwenden, müssen Sie die URL des Formulars anpassen, das an die E-Mail-Adresse gesendet wird. Fügen Sie zu diesem Zweck den Parameter **`<%=escapeUrl(recipient.cryptedId) %>`** hinzu. Weitere Informationen hierzu finden Sie unter [Formular per E-Mail versenden](#delivering-a-form-via-email).
 
@@ -58,9 +58,9 @@ Folgende Identifizierungsmöglichkeiten gibt es:
 
   >[!CAUTION]
   >
-  >Wenn mehrere Felder in der Liste spezifiziert sind, müssen die Daten **ALLER FELDER** mit den in der Datenbank gespeicherten Daten übereinstimmen, damit das Profil aktualisiert wird. Ansonsten wird ein neues Profil erstellt.
+  >Wenn mehrere Felder in der Liste angegeben sind, müssen die **ALLE FELDER** mit den in der Datenbank gespeicherten Daten übereinstimmen, damit das Profil aktualisiert wird. Andernfalls wird ein neues Profil erstellt.
   > 
-  >Diese Funktion ist besonders nützlich für Webanwendungen, aber nicht empfohlen für öffentliche Formulare. Als Zugriffskontrolloption muss &quot;Zugriffskontrolle aktivieren&quot; ausgewählt werden.
+  >Diese Funktion ist besonders für Web-Anwendungen nützlich, wird aber für öffentliche Formulare nicht empfohlen. Die ausgewählte Zugriffssteuerungsoption muss „Zugriffssteuerung aktivieren“ lauten.
 
 Wenn Sie keine Profile aktualisieren möchten, muss die Option **[!UICONTROL Bei nicht angegebener Identifizierung vorausgefüllte Informationen ignorieren]** ausgewählt werden. In diesem Fall wird jedes eingegebene Profil nach Genehmigung des Formulars der Datenbank hinzugefügt. Diese Option wird beispielsweise verwendet, wenn das Formular auf einer Website veröffentlicht wird.
 

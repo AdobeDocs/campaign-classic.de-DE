@@ -9,7 +9,7 @@ exl-id: b5514fa3-1e65-45dc-8e40-d1ba3b673e7a
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '178'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -25,7 +25,7 @@ Folgende Mappings sind vorhanden:
 |---|---|---|
 | Bereich Empfänger | Versand richtet sich an die in der Adobe Campaign-Datenbank enthaltenen Empfänger | nms:recipient |
 | Besuchende | Versand richtet sich an Profile, die beispielsweise durch das Weiterleiten von Nachrichten (Virales Marketing) oder durch soziale Netzwerke (Facebook, X – früher bekannt als Twitter) akquiriert wurden. | mns:visitor |
-| Abonnements     | Versand richtet sich an Abonnenten eines Informationsdienstes wie z. B. einen Newsletter | nms:subscription |
+| Abonnements | Versand richtet sich an Abonnenten eines Informationsdienstes wie z. B. einen Newsletter | nms:subscription |
 | Besucher-Abonnements | Versand richtet sich an Besucher, die einen Informationsdienst beziehen | nms:visitorSub |
 | Service | Veröffentlichen auf einem X-Konto oder einer Facebook-Seite | nms:service |
 | Benutzer | Versand richtet sich an Adobe Campaign-Benutzer | nms:operator |

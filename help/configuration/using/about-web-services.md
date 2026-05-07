@@ -7,8 +7,8 @@ role: Developer
 exl-id: 7aa2aef1-2eb6-48a6-82fa-4451bed66216
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 8%
+source-wordcount: '665'
+ht-degree: 7%
 
 ---
 
@@ -18,12 +18,12 @@ ht-degree: 8%
 
 Der Adobe Campaign-Anwendungsserver wurde für Offenheit und einfache Integration mit immer vielfältigeren und komplexeren Unternehmensinformationssystemen konzipiert.
 
-Adobe Campaign-APIs werden in JavaScript innerhalb des Programms und in SOAP außerhalb desselben verwendet. Sie bilden eine Bibliothek allgemeiner Funktionen, die angereichert werden können. Weitere Informationen finden Sie unter [&#x200B; von SOAP-](../../configuration/using/implementing-soap-methods.md).
+Adobe Campaign-APIs werden in JavaScript innerhalb des Programms und in SOAP außerhalb desselben verwendet. Sie bilden eine Bibliothek allgemeiner Funktionen, die angereichert werden können. Weitere Informationen finden Sie unter [ von SOAP-](../../configuration/using/implementing-soap-methods.md).
 
 >[!IMPORTANT]
 >
 >Die Anzahl der autorisierten Engine-Aufrufe pro Tag hängt von Ihrem Lizenzvertrag ab. Weitere Informationen hierzu finden Sie auf [dieser Seite](https://helpx.adobe.com/de/legal/product-descriptions/adobe-campaign-classic---product-description.html).\
->Eine Liste aller APIs einschließlich ihrer vollständigen Beschreibung finden Sie in [dieser speziellen Dokumentation]&#x200B;(https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=de.
+>Eine Liste aller APIs einschließlich ihrer vollständigen Beschreibung finden Sie in [dieser speziellen Dokumentation]&#x200B;(https://experienceleague.adobe.com/developer/campaign-api/api/index.html.
 
 ## Voraussetzungen {#prerequisites}
 
@@ -38,7 +38,7 @@ Bevor Sie die Adobe Campaign-APIs verwenden, müssen Sie mit den folgenden Theme
 Adobe Campaign verwendet zwei Arten von APIs:
 
 * Generische Datenzugriffs-APIs zur Abfrage von Datenmodelldaten. Näheres hierzu finden Sie unter [Datenorientierte APIs](../../configuration/using/data-oriented-apis.md).
-* Business-orientierte APIs, mit denen Sie auf diese einzelnen Objekte, also Versand, Workflows, Abonnements usw., Aktionen ausführen können. Siehe [Business-orientierte APIs](../../configuration/using/business-oriented-apis.md).
+* Geschäftsspezifische APIs, mit denen Sie auf jedes Objekt reagieren können: Sendungen, Workflows, Abonnements usw. Siehe [Business-orientierte APIs](../../configuration/using/business-oriented-apis.md).
 
 Um APIs entwickeln und mit Adobe Campaign interagieren zu können, müssen Sie mit Ihrem Datenmodell vertraut sein. Mit Adobe Campaign können Sie eine vollständige Beschreibung der Basis generieren. Siehe [Beschreibung des Modells](../../configuration/using/data-oriented-apis.md#description-of-the-model).
 
@@ -65,7 +65,7 @@ Das folgende Schema zeigt die verschiedenen Ressourcen, die bei der Verwendung v
 
 In diesem Beispiel ruft eine SOAP-Abfrage die Methode „ExecuteQuery“ auf, die eine Zeichenfolge als Authentifizierungsparameter (Sitzungs-Token) und einen XML-Inhalt für die Beschreibung der auszuführenden Abfrage benötigt.
 
-Weitere Informationen finden Sie unter [&#x200B; (xtk:queryDef)](../../configuration/using/data-oriented-apis.md#executequery--xtk-querydef-).
+Weitere Informationen finden Sie unter [ (xtk:queryDef)](../../configuration/using/data-oriented-apis.md#executequery--xtk-querydef-).
 
 >[!NOTE]
 >

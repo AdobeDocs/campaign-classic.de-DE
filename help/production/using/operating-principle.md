@@ -10,8 +10,8 @@ topic-tags: production-procedures
 exl-id: 1c032ef9-af11-4947-90c6-76cb9434ae85
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 13%
+source-wordcount: '530'
+ht-degree: 16%
 
 ---
 
@@ -33,7 +33,7 @@ Die Modulverwaltung erfolgt über das Befehlszeilen-Tool **nlserver**, das im **
 
 Die allgemeine Syntax des **nlserver**-Tools lautet wie folgt:
 
-**nlserver `<command>` `<command arguments>`**
+**nlserver `<command>``<command arguments>`**
 
 Um eine Liste der verfügbaren Module zu erhalten, verwenden Sie den Befehl **nlserver**.
 

@@ -7,8 +7,8 @@ hide: true
 exl-id: 975bdc94-5da4-45ae-a3bd-e8674b447098
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '859'
-ht-degree: 100%
+source-wordcount: '870'
+ht-degree: 61%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 100%
 
 
 
-In diesem Anwendungsbeispiel versenden wir eine Nachricht mit Campaign Standard, die einen Link zu einer Webanwendung von Campaign v7 enthält. Wenn der Empfänger den Link in der E-Mail anklickt, öffnet sich die Webanwendung mit einem Formular mit mehreren mit Empfängerdaten vorausgefüllten Feldern sowie einem Anmelde-Link zu einem Newsletter. Der Empfänger kann seine Daten aktualisieren und sich für den Dienst anmelden. Sein Profil wir in Campaign v7 aktualisiert und die Informationen werden nach Campaign Standard repliziert.
+In diesem Anwendungsbeispiel senden wir mithilfe von Campaign Standard eine Mitteilung, die einen Link zu einer Web-Anwendung von Campaign v7 enthält. Wenn der Empfänger auf den Link in der E-Mail klickt, zeigt die Web-Anwendung ein Formular mit mehreren Feldern an, die vorab mit den Empfängerdaten geladen wurden, sowie einen Anmelde-Link zu einem Newsletter. Der Empfänger kann seine Daten aktualisieren und den Dienst abonnieren. Sein Profil wird in Campaign v7 aktualisiert und die Informationen werden in Campaign Standard repliziert.
 
-Wenn Sie über zahlreiche Dienste und Webanwendungen in Campaign v7 verfügen, ist es empfehlenswert, nicht alle nach Campaign Standard zu übertragen. Der ACS-Connector ermöglicht Ihnen, alle bestehenden Campaign v7-Webanwendungen und -Dienste mit einem in Campaign Standard erstellten Versand zu verknüpfen.
+Wenn Sie in Campaign v7 über viele Services und Web-Anwendungen verfügen, sollten Sie diese möglicherweise nicht alle in Campaign Standard neu erstellen. Mit dem ACS-Connector können Sie alle Ihre vorhandenen Web-Anwendungen und -Services von Campaign v7 verwenden und mit einem von Campaign Standard gesendeten Versand verknüpfen.
 
 ## Voraussetzungen {#prerequisites}
 
@@ -30,7 +30,7 @@ Dazu ist Folgendes erforderlich:
 
 ## Erstellen von Web-Programm und -Service {#creating-the-web-application-and-service}
 
-Sie können in Campaign v7 Web-Anwendungen erstellen, mit denen sich Empfangende für einen Dienst anmelden können. Die Web-Anwendung und der Dienst werden in Campaign v7 konzipiert und gespeichert und Sie können diesen Dienst über eine Campaign Standard-Kommunikation aktualisieren. Weiterführende Informationen zu Webanwendungen in Campaign v7 finden Sie in [diesem Abschnitt](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes).
+In Campaign v7 können Sie Web-Anwendungen erstellen, mit denen Empfängerinnen und Empfänger einen Dienst abonnieren können. Die Web-Anwendung und der Service werden in Campaign v7 entwickelt und gespeichert. Sie können diesen Service über eine Campaign Standard-Kommunikation aktualisieren. Weiterführende Informationen zu Webanwendungen in Campaign v7 finden Sie in [diesem Abschnitt](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes).
 
 In Campaign v7 wurden die folgenden Objekte erstellt:
 
@@ -49,7 +49,7 @@ In Campaign v7 wurden die folgenden Objekte erstellt:
 
    ![](assets/acs_connect_lp_3.png)
 
-1. Gehen Sie zu **[!UICONTROL Profile und Zielgruppen > Dienste und Abonnements]** und öffnen Sie den Dienst **[!UICONTROL Newsletter]**. Dieser Dienst wird durch die Campaign Standard-Kommunikation aktualisiert. Sie sehen, dass sich noch kein Empfänger für diesen Dienst angemeldet hat.
+1. Gehen Sie zu **[!UICONTROL Profile und Target > Services und Abonnements]** und öffnen Sie den **[!UICONTROL Newsletter]** Service. Dies ist der Service, der über die Campaign Standard-Kommunikation aktualisiert wird. Sie können sehen, dass noch kein Empfänger diesen Dienst abonniert hat.
 
    ![](assets/acs_connect_lp_5.png)
 
@@ -73,7 +73,7 @@ Um zu überprüfen, ob die Daten korrekt repliziert wurden, gehen Sie in Campaig
 
    ![](assets/acs_connect_lp_8.png)
 
-1. Klicken Sie auf der obersten Leiste auf **[!UICONTROL Marketing-Aktivitäten]** und suchen Sie nach der Campaign v7-Webanwendung. Sie wird in Campaign Standard als Landingpage angezeigt.
+1. Klicken Sie in der oberen Leiste auf **[!UICONTROL Marketing-Aktivitäten]** und suchen Sie nach der Web-Anwendung von Campaign v7. Sie wird in Campaign Standard als Landingpage angezeigt.
 
    ![](assets/acs_connect_lp_9.png)
 
@@ -107,13 +107,13 @@ Die Schritte für die Erstellung, die Konzeption und den Versand der E-Mail erfo
 
 ## Aktualisierte Daten abrufen {#retrieving-the-updated-information}
 
-Wenn der Empfänger seine Daten über die Webanwendung aktualisiert, ruft Adobe Campaign v7 synchron die aktualisierten Daten ab. Diese werden anschließend von Campaign v7 nach Campaign Standard repliziert.
+Wenn der Empfänger seine Daten von über die Web-Anwendung aktualisiert, ruft Adobe Campaign v7 die aktualisierten Informationen synchron ab. Sie wird dann von Campaign v7 nach Campaign Standard repliziert.
 
-1. Gehen Sie in Campaign v7 zu **[!UICONTROL Profile und Zielgruppen > Dienste und Abonnements]** und öffnen Sie den **[!UICONTROL Newsletter]**-Dienst. Sie sehen, dass der Empfänger jetzt in der Abonnentenliste angezeigt wird.
+1. Navigieren Sie in Campaign v7 zu **[!UICONTROL Profile und Zielgruppe > Services und Abonnements]** öffnen Sie den **[!UICONTROL Newsletter]**-Service. Sie können sehen, dass der Empfänger jetzt in der Abonnentenliste angezeigt wird.
 
    ![](assets/acs_connect_lp_16.png)
 
-1. Gehen Sie zu **[!UICONTROL Profile und Zielgruppen > Empfänger]** und wählen Sie den Empfänger aus. Sie sehen, dass die Telefonnummer gespeichert ist.
+1. Gehen Sie **[!UICONTROL Profile und Zielgruppen > Empfänger]** und wählen Sie den Empfänger aus. Sie können sehen, dass die Telefonnummer jetzt gespeichert ist.
 
    ![](assets/acs_connect_lp_17.png)
 
@@ -126,10 +126,10 @@ Wenn der Empfänger seine Daten über die Webanwendung aktualisiert, ruft Adobe 
 
    ![](assets/acs_connect_lp_19.png)
 
-1. Bearbeiten Sie das Profil. Sie sehen, dass die Telefonnummer aktualisiert wurde.
+1. Bearbeiten Sie das Profil. Sie können sehen, dass die Telefonnummer aktualisiert wurde.
 
    ![](assets/acs_connect_lp_20.png)
 
-1. Wählen Sie den Tab **[!UICONTROL Abonnements]** aus. Der Newsletter-Dienst wird angezeigt.
+1. Klicken Sie auf die Registerkarte **[!UICONTROL Abonnements]**. Der Newsletter-Dienst wird jetzt angezeigt.
 
    ![](assets/acs_connect_lp_21.png)

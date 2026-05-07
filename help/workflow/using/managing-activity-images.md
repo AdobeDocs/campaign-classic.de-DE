@@ -7,8 +7,8 @@ hide: true
 exl-id: cafdbc10-9c10-4d42-a485-c9880df8d371
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '174'
-ht-degree: 100%
+source-wordcount: '175'
+ht-degree: 85%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 
 
-Die in Workflow-Diagrammen verwendeten Bilder können angepasst werden. Sie müssen jedoch gewisse Auflagen erfüllen. Gehen Sie wie folgt vor:
+Die in den Diagrammen der verschiedenen Workflows verwendeten Bilder können geändert werden. Sie müssen jedoch bestimmte Auflagen einhalten. Im Folgenden finden Sie die Implementierungsphasen:
 
 * Gehen Sie zur Wahl eines anderen Hintergrundbilds in den betroffenen Workflow und klicken Sie auf die Schaltfläche **[!UICONTROL Eigenschaften]**.
 

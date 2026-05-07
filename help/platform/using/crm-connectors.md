@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: connectors
 exl-id: 7ccab3a4-f323-464a-9ec4-dd597279d0eb
 source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
-workflow-type: ht
-source-wordcount: '134'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '149'
+ht-degree: 71%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 ## Erste Schritte mit CRM-Connectoren {#about-crm-connectors}
 
-Adobe Campaign stellt verschiedene CRM-Connectoren zur Verfügung, die die Verbindung der Adobe Campaign-Plattform mit Drittsystemen ermöglichen. So erlauben die CRM-Connectoren z. B. das Synchronisieren von Kontakten, Konten und Käufen. Zudem vereinfachen sie die Integration Ihres Programms mit bestehenden Systemen von Drittanbietern und Geschäftsprogrammen.
+Adobe Campaign bietet verschiedene CRM-Connectoren für die Verknüpfung Ihrer Adobe Campaign-Plattform mit Ihren Drittanbietersystemen. Mit diesen CRM-Connectoren können Sie Kontakte, Konten, Käufe usw. synchronisieren. Sie erleichtern die Integration Ihres Programms mit verschiedenen Drittanbieter- und Geschäftsanwendungen.
 
 Diese Connectoren ermöglichen eine schnelle und einfache Datenintegration: Adobe Campaign bietet einen dedizierten Assistenten zur Erfassung und Auswahl aus den im CRM verfügbaren Tabellen. Damit ist eine bidirektionale Synchronisation gewährleistet, die sicherstellt, dass die Daten in den Systemen jederzeit aktuell sind.
 

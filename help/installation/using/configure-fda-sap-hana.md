@@ -10,7 +10,7 @@ exl-id: 39bfe775-e182-4a0b-ad3c-b7a901297c90
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
 source-wordcount: '272'
-ht-degree: 63%
+ht-degree: 55%
 
 ---
 
@@ -29,10 +29,10 @@ Die Verbindung mit einer externen SAP-HANA-Datenbank über die FDA-Option erford
 
 1. Installieren Sie entsprechend dem verwendeten Betriebssystem die nötigen ODBC-Treiber für SAP HANA:
 
-   * **hdb_client_linux.tgz für Linux: Dekomprimieren Sie die Datei, führen Sie den hdbinst-Befehl aus und folgen Sie der Anleitung zur Installation der Treiber.**
+   * **hdb_client_linux.tgz** für Linux Nach dem Entpacken starten Sie den Befehl hdbinst und folgen den Anweisungen, um die Installation der Treiber abzuschließen.
    * **hdb_client_windows.zip** für Windows. Entpacken Sie die Datei und starten Sie die ausführbare Datei: **hdbinst.exe**. Folgen Sie den Anweisungen des Assistenten, um die Installation der Treiber abzuschließen.
 
-1. Konfigurieren sie den ODBC-Treiber. Die Konfiguration kann in den Standarddateien ausgeführt werden: /etc/odbc.ini für allgemeine Parameter und /etc/odbcinst.ini zur Deklarierung der Treiber.
+1. Konfigurieren Sie den ODBC-Treiber. Die Konfiguration kann in den Standarddateien durchgeführt werden: /etc/odbc.ini für allgemeine Parameter und /etc/odbcinst.ini für deklarierende Treiber.
 
    * **/etc/odbc.ini**
 
@@ -63,7 +63,7 @@ Die Verbindung mit einer externen SAP-HANA-Datenbank über die FDA-Option erford
 
 ## Externes SAP HANA-Konto{#sap-external}
 
-Mit dem externen Konto SAP HANA können Sie Ihre Campaign-Instanz mit Ihrer externen SAP HANA-Datenbank verbinden.
+Über das externe Konto „SAP HANA“ können Sie Ihre Campaign-Instanz mit Ihrer externen SAP HANA-Datenbank verbinden.
 
 1. Klicken Sie **[!UICONTROL Campaign-]** auf **[!UICONTROL Administration]** &quot;>&quot; **[!UICONTROL Plattform]** &quot;>&quot; **[!UICONTROL Externe Konten]**.
 

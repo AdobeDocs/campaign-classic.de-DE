@@ -7,16 +7,16 @@ feature: A/B Testing
 role: User
 exl-id: 4143d1b7-0e2b-4672-ad57-e4d7f8fea028
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: ht
-source-wordcount: '348'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '349'
+ht-degree: 80%
 
 ---
 
 # A/B-Tests: Erstellen des Skripts {#step-5--creating-the-script}
 
 
-Die Auswahl der Inhaltsversion, die an die verbleibende Population gesendet wird, erfolgt mithilfe eines Scripts. Das Script ruft die Information bezüglich der höchsten Öffnungsrate ab und kopiert den Inhalt der Siegerversion in den endgültigen Versand.
+Die Auswahl der Inhaltsversion, die an die verbleibende Population gesendet wird, erfolgt mithilfe eines Skripts. Dieses Skript ruft die Informationen zum Versand mit der höchsten Öffnungsrate ab und kopiert den Inhalt in den endgültigen Versand.
 
 ## Script-Beispiel {#example-of-a-script}
 
@@ -159,7 +159,7 @@ Im Folgenden werden die verschiedenen Script-Abschnitte und deren Funktionsweise
 
 ## Andere Auswahlkriterien {#other-selection-criteria}
 
-Im zuvor dargestellten Beispiel wird die endgültige Version anhand der Öffnungsraten der Testversionen bestimmt. Es besteht jedoch die Möglichkeit, andere Kriterien zu verwenden und das Script entsprechend anzupassen:
+Im obigen Beispiel können Sie den Inhalt eines Versands anhand der Öffnungsrate von E-Mails auswählen. Sie können ihn anpassen, sodass er sich auf andere versandspezifische Indikatoren stützt:
 
 * Höchste Klickrate: `[indicators/@recipientClickRatio]`,
 * Höchste Reaktionsrate (Öffnung der E-Mail und Klicks in der Nachricht): `[indicators/@reactivity]`,

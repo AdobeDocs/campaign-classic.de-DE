@@ -10,8 +10,8 @@ topic-tags: initial-configuration
 exl-id: 2968d8db-2b4b-48e6-a22e-daba5ffe0576
 source-git-commit: 28279c6ec0eab7f914cf6107cd1ec1cebd05113d
 workflow-type: tm+mt
-source-wordcount: '484'
-ht-degree: 10%
+source-wordcount: '514'
+ht-degree: 14%
 
 ---
 
@@ -88,7 +88,7 @@ Gehen Sie hierzu wie folgt vor:
 
    >[!NOTE]
    >
-   >Weitere Informationen zum **Arbeiten mit Aufzählungen** finden Sie in der [Dokumentation zu Adobe Campaign v8 (Konsole)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
+   >Weitere Informationen zum **Arbeiten mit Auflistungen** finden Sie in der [Dokumentation zu Adobe Campaign v8 (Konsole)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
 
 
    Anschließend können Sie die zu verwendende Affinität auswählen, wie unten für Typologien dargestellt:
@@ -99,7 +99,7 @@ Gehen Sie hierzu wie folgt vor:
    >
    >Weitere Informationen finden Sie unter [Konfiguration des Versand-Servers](../../installation/using/email-deliverability.md#delivery-server-configuration).
 
-**Verwandte Themen** 
+**Verwandte Themen**
 * [Technische E-Mail-Konfigurationen](email-deliverability.md)
 * [MX-Server mit Campaign verwenden](using-mx-servers.md)
 * [E-Mail-BCC konfigurieren](email-archiving.md)

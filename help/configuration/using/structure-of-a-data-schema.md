@@ -7,7 +7,7 @@ role: Developer
 exl-id: 86036f2f-ec7c-413e-b1e1-10a71a06cd6d
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '142'
+source-wordcount: '143'
 ht-degree: 10%
 
 ---
@@ -18,8 +18,8 @@ Die Struktur eines Datenschemas wird in Form einer Baumstruktur angezeigt. Um es
 
 ![](assets/d_ncs_integration_schema_arbo.png)
 
-Standardmäßig werden die Felder zuerst (Aktiv, Aktiviert usw.) und in alphabetischer Reihenfolge angezeigt. Als Nächstes folgen die Strukturierungselemente (Postanschrift, Standort) und schließlich die Links (E-Mail-Informationen, Ordner usw.).
+Standardmäßig werden die Felder zuerst angezeigt (aktiv, aktiviert usw.) und in alphabetischer Reihenfolge. Als Nächstes folgen die Strukturierungselemente (Postanschrift, Standort) und schließlich die Links (E-Mail-Informationen, Ordner usw.).
 
 Primäre Schlüssel werden durch einen roten Schlüssel und Fremdschlüssel durch einen gelben Schlüssel identifiziert.
 
-Relationen werden grafisch danach unterschieden, ob sie zur Tabelle gehören. Diejenigen, die von der Tabelle ausgehen, d. h. die den Fremdschlüssel in der Tabelle haben, werden zuerst angezeigt (E-Mail-Informationen, Ordner, Land). Sammlungslinks, die den Status „umgekehrt“ haben (Abonnement, Bestellungen usw.) werden am Ende angezeigt.
+Relationen werden grafisch danach unterschieden, ob sie zur Tabelle gehören. Diejenigen, die von der Tabelle ausgehen, d. h. die den Fremdschlüssel in der Tabelle haben, werden zuerst angezeigt (E-Mail-Informationen, Ordner, Land). Sammlungslinks für „Umkehren“ (Abonnement, Bestellungen usw.) werden am Ende angezeigt.

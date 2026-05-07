@@ -9,8 +9,8 @@ content-type: reference
 level: Intermediate, Experienced
 exl-id: 13717b3b-d34a-40bc-9c9e-dcf578fc516e
 source-git-commit: d56038fc8baf766667d89bb73747c20ec041124c
-workflow-type: ht
-source-wordcount: '1206'
+workflow-type: tm+mt
+source-wordcount: '1210'
 ht-degree: 100%
 
 ---
@@ -203,7 +203,7 @@ Das Feld &quot;triggerType&quot; gibt an, von welchem Auslöser die Daten stamme
 
 Hier ist ein Beispiel für einen Schema-Code für diese Tabelle:
 
-| Attribut | Typ | Titel | Beschreibung  |
+| Attribut | Typ | Titel | Beschreibung |
 |:-:|:-:|:-:|:-:|
 | pipelineEventId | Lang | Primärschlüssel | Der interne Primärschlüssel des Auslösers. |
 | data | Memo | Auslöserdaten | Der vollständige Inhalt der Auslöserdaten im XML-Format. Für Debugging- und Audit-Zwecke. |

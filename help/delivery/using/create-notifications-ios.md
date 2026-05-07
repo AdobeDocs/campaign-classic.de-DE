@@ -8,8 +8,8 @@ hide: true
 exl-id: 4520504a-0d9f-4ea7-a5a8-0c07948af4f0
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1079'
-ht-degree: 100%
+source-wordcount: '1100'
+ht-degree: 92%
 
 ---
 
@@ -121,7 +121,7 @@ Gehen Sie wie folgt vor, um eine Push-Benachrichtigung für iOS-Geräte zu erste
 
    >[!NOTE]
    >
-   >Der Hinweisstil (Banner oder Hinweis) ist in Adobe Campaign nicht im Vorhinein festgelegt. Er hängt von der vom Benutzer in den iOS-Einstellungen gewählten Konfiguration ab. Adobe Campaign ermöglicht es jedoch, eine Vorschau der Benachrichtigung in jedem Stil anzuzeigen. Verwenden Sie den unten rechts im Bildschirm gelegenen Pfeil, um von einem Stil zum anderen zu wechseln.
+   >Der Benachrichtigungsstil (Banner oder Warnhinweis) ist in Adobe Campaign nicht definiert. Dies hängt von der vom Benutzer in den iOS-Einstellungen ausgewählten Konfiguration ab. Adobe Campaign ermöglicht jedoch die Vorschau jedes Benachrichtigungstyps. Klicken Sie auf den Pfeil unten rechts, um von einem Stil zu einem anderen zu wechseln.
    >
    >In der Vorschau wird das Erscheinungsbild von iOS 10 verwendet.
 
@@ -135,7 +135,7 @@ Nach dem Nachrichtenversand können Sie Ihre Sendungen überwachen und verfolgen
 
 ## Erstellen einer Rich-Benachrichtigung für iOS {#creating-ios-delivery}
 
-iOS 10 oder höher ermöglicht die Erstellung von Rich-Benachrichtigungen. Adobe Campaign kann mithilfe von Variablen Benachrichtigungen versenden, durch die das Gerät eine Rich-Benachrichtigung anzeigen kann.
+Mit iOS 10 oder höher können Rich-Benachrichtigungen generiert werden. Adobe Campaign kann Benachrichtigungen mithilfe von Variablen senden, die es dem Gerät ermöglichen, eine Rich-Benachrichtigung anzuzeigen.
 
 Erstellen Sie dann einen neuen Versand und verknüpfen Sie ihn mit der von Ihnen erstellten Mobile App.
 

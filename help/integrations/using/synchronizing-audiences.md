@@ -7,8 +7,8 @@ hide: true
 exl-id: 88e581cf-43cd-4c43-9347-d016c62fdf42
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1184'
-ht-degree: 98%
+source-wordcount: '1236'
+ht-degree: 70%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 98%
 
 
 
-Sie können mit den erweiterten Funktionen von Campaign v7 eine umfangreiche Liste erstellen und als Zielgruppe direkt und in Echtzeit in Campaign Standard freigeben (einschließlich zusätzlicher Daten). Ihr Campaign-Standard-Benutzer kann dann die Zielgruppe in Adobe Campaign Standard verwenden.
+Mithilfe der erweiterten Funktionen von Campaign v7 können Sie eine umfangreiche Liste erstellen und als Audience direkt und in Echtzeit (einschließlich zusätzlicher Daten) nahtlos mit Campaign Standard teilen. Ihre Campaign Standard-Benutzenden können dann die Zielgruppe in Adobe Campaign Standard verwenden.
 
 Eine komplexe Zielgruppenbestimmung einschließlich zusätzlicher Daten, die nicht in Campaign Standard repliziert werden, kann nur mithilfe von Campaign v7 durchgeführt werden.
 
@@ -45,12 +45,12 @@ Nachdem die Zielgruppe und ihre zusätzlichen Daten definiert wurden, können si
 
 >[!NOTE]
 >
->Dies ist ein Beispiel. Je nach Anforderungen können Sie eine Empfängerliste einfach abfragen und in ACS ohne jegliche Weiterverarbeitung freigeben. Sie können zur Erstellung Ihrer endgültigen Zielgruppe auch andere Datenverwaltungsaktivitäten nutzen.
+>Dies ist ein Beispiel. Je nach Ihren Anforderungen können Sie einfach eine Empfängerliste abfragen und sie ohne weitere Verarbeitung für ACS freigeben. Sie können Ihre endgültige Zielgruppe auch mit anderen Daten-Management-Aktivitäten vorbereiten.
 
 Gehen Sie folgendermaßen vor, um die endgültige Zielgruppe und ihre zusätzlichen Daten zu erhalten:
 
 1. Erstellen Sie einen neuen Workflow in **[!UICONTROL Profile und Zielgruppen]** > **[!UICONTROL Aufträge]** > **[!UICONTROL Zielgruppen-Workflow]**.
-1. Fügen Sie die Aktivität **[!UICONTROL Abfrage]** hinzu und wählen Sie die Empfänger aus, denen Sie die E-Mail senden möchten, wie z. B. alle Empfänger zwischen 18 und 30 Jahren, die in Frankreich leben.
+1. Fügen Sie eine Aktivität **[!UICONTROL Abfrage]** hinzu und wählen Sie die Empfänger aus, an die Sie die endgültige E-Mail senden möchten. Zum Beispiel alle Empfänger zwischen 18 und 30 Jahren, die in Frankreich leben.
 
    ![](assets/acs_connect_query1.png)
 
@@ -78,18 +78,18 @@ Gehen Sie folgendermaßen vor, um die endgültige Zielgruppe und ihre zusätzlic
 
    ![](assets/acs_connect_query6.png)
 
-1. Definieren Sie die Ausgabespalten. In unserem Beispiel ist nur eine einzige Spalte nötig, in der die Anzahl der Sendungen gezählt wird. Gehen Sie dazu folgendermaßen vor:
+1. Definieren Sie die Ausgabespalten. Hier ist die einzige erforderliche Spalte die Spalte, die die Anzahl der Sendungen zählt. Gehen Sie dazu folgendermaßen vor:
 
    * Wählen Sie rechts im Fenster **[!UICONTROL Hinzufügen]**.
    * Wählen Sie im Fenster **[!UICONTROL Feldauswahl]** die Schaltfläche **[!UICONTROL Erweiterte Auswahl]** aus.
    * Wählen Sie **[!UICONTROL Aggregat]** und danach **[!UICONTROL Zählung]** aus. Markieren Sie die Option **[!UICONTROL Unterschiedlich]** und wählen Sie **[!UICONTROL Weiter]** aus.
    * Wählen Sie in der Felderliste das für die Funktion **Zählung** verwendete Feld aus. Wählen Sie ein Feld aus, das immer ausgefüllt wird, z. B. **[!UICONTROL Primärschlüssel]**, und klicken Sie auf **[!UICONTROL Beenden]**.
-   * Ändern Sie den Ausdruck in der Spalte **[!UICONTROL Alias]**. Mit dem Alias können Sie die hinzugefügte Spalte im endgültigen Versand einfach abrufen. **NBdeliveries**, um die hinzugefügte Spalte im endgültigen Versand einfach abrufen zu können.
+   * Ändern Sie den Ausdruck in der Spalte **[!UICONTROL Alias]**. Dieser Alias ermöglicht Ihnen, die hinzugefügte Spalte im endgültigen Versand einfach abzurufen. **NBdeliveries**, um die hinzugefügte Spalte im endgültigen Versand einfach abrufen zu können.
    * Wählen Sie **[!UICONTROL Beenden]** aus und speichern Sie die Konfiguration der Aktivität **[!UICONTROL Abfrage]**.
 
    ![](assets/acs_connect_query7.png)
 
-1. Speichern Sie den Workflow. Im nächsten Abschnitt sehen Sie, wie Sie die Population in ACS freigeben können.
+1. Speichern Sie den Workflow. Im nächsten Abschnitt erfahren Sie, wie Sie die Population für ACS freigeben.
 
 ## Zielgruppe in Campaign Standard freigeben {#share-the-target-with-campaign-standard}
 
@@ -99,13 +99,13 @@ Sobald die Zielpopulation definiert ist, können Sie sie in ACS mit der Aktivit�
 
    Geben Sie den Ordner an, in dem Sie die Liste in Campaign v7 speichern möchten. Listen unterliegen dem während der Implementierung definierten Ordner-Mapping, das sich auf ihre Sichtbarkeit auswirken kann, sobald sie in Campaign Standard freigegeben wurden. Siehe Abschnitt [Konvertierung der Berechtigungen](../../integrations/using/acs-connector-principles-and-data-cycle.md#rights-conversion).
 
-1. Vergewissern Sie sich, dass die Option **[!UICONTROL In ACS freigeben]** mit einem Häkchen versehen ist. Standardmäßig ist diese Option aktiviert.
+1. Stellen Sie sicher **[!UICONTROL dass die Option „Mit ACS]**&quot; aktiviert ist. Sie ist standardmäßig aktiviert.
 
    ![](assets/acs_connect_listupdate1.png)
 
 1. Speichern und starten Sie den Workflow.
 
-   Die Zielgruppe und ihre zusätzlichen Daten werden in einer Liste in Campaign v7 gespeichert und sofort als eine Audience vom Typ Liste in Campaign Standard freigegeben. Nur die replizierten Profile werden in ACS freigegeben.
+   Die Zielgruppe und die zugehörigen zusätzlichen Daten werden in einer Liste in Campaign v7 gespeichert und sofort als Audience-Liste in Campaign Standard freigegeben. Nur die Profile, die repliziert wurden, werden für ACS freigegeben.
 
 Wenn bei der Aktivität **[!UICONTROL Listen-Update]** ein Fehler auftritt, ist möglicherweise die Synchronisation mit Campaign Standard fehlgeschlagen. Um zu sehen, wo der Fehler liegt, gehen Sie zu **[!UICONTROL Administration]** > **[!UICONTROL ACS-Connector]** > **[!UICONTROL Prozesse]** > **[!UICONTROL Prüfung]**. Dieser Ordner enthält Synchronisations-Workflows, die von der Aktivität **[!UICONTROL Listen-Update]** ausgelöst wurden. Weitere Informationen finden Sie im Abschnitt [Fehlerbehebung beim ACS-Connector](../../integrations/using/troubleshooting-the-acs-connector.md).
 
@@ -126,13 +126,13 @@ Durch die Erstellung eines Versand-Workflows in Campaign Standard können Sie da
 1. Öffnen Sie den Versandinhalt.
 1. Personalisierungsfeld hinzufügen; Suchen Sie im Popup den Knoten **[!UICONTROL Zusätzliche Daten (targetData)]**. Dieser Knoten enthält die zusätzlichen Audience-Daten, die im anfänglichen Zielgruppen-Workflow erstellt wurden. Sie können sie wie jedes andere Personalisierungsfeld verwenden.
 
-   In unserem Beispiel beinhalten die zusätzlichen, vom ursprünglichen Zielgruppen-Workflow stammenden Daten die Anzahl der Sendungen an jeden Empfänger in den letzten 365 Tagen. Das im Zielgruppen-Workflow spezifizierte NBdeliveries-Alias ist hier sichtbar.
+   In diesem Beispiel entsprechen die zusätzlichen Daten aus dem ursprünglichen Zielgruppen-Workflow der Anzahl der Sendungen, die in den letzten 365 Tagen an jeden einzelnen Empfänger gesendet wurden. Der im Zielgruppenbestimmungs-Workflow angegebene NB-Versandalias ist hier sichtbar.
 
    ![](assets/acs_connect_deliveryworkflow_targetdata.png)
 
 1. Speichern Sie den Versand und den Workflow.
 
-   Der Workflow kann jetzt ausgeführt werden. Der Versand wird analysiert und kann durchgeführt werden.
+   Der Workflow kann jetzt ausgeführt werden. Der Versand wird analysiert und kann versendet werden.
 
    ![](assets/acs_connect_deliveryworkflow_ready.png)
 
@@ -140,13 +140,13 @@ Durch die Erstellung eines Versand-Workflows in Campaign Standard können Sie da
 
 Sobald der Versand und sein Inhalt vorbereitet sind, führen Sie den Versand aus:
 
-1. Führen Sie den Versand-Workflow aus. In diesem Schritt werden die E-Mails für den Versand vorbereitet.
+1. Führt den Versand-Workflow aus Dieser Schritt bereitet die E-Mail für den Versand vor.
 1. Bestätigen Sie manuell im Versand-Dashboard, dass der Versand durchgeführt werden kann.
 1. Überwachen Sie die Berichte und Logs des Versandes:
 
    * **In Campaign Standard**: die üblichen [Berichte](https://experienceleague.adobe.com/docs/campaign-standard/using/reporting/about-reporting/about-dynamic-reports.html?lang=de) und [Logs](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/monitoring-a-delivery.html?lang=de) in Verbindung mit dem Versand
-   * **in Campaign v7 und Campaign Standard**: Versandkennungen, E-Mail-Broadlogs und E-Mail-Trackinglogs werden mit Campaign v7 synchronisiert. Dies ermöglicht einen umfassenden Überblick Ihrer Marketing-Kampagnen in Campaign v7.
+   * **in Campaign v7 und Campaign Standard**: Versand-IDs, E-Mail-Broadlogs und E-Mail-Trackinglogs werden mit Campaign v7 synchronisiert. Von Campaign v7 aus erhalten Sie dann eine 360-Grad-Ansicht Ihrer Marketing-Kampagnen.
 
-     Quarantänen werden automatisch nach Campaign v7 zurücksynchronisiert. Dadurch können Unzustellbarkeitsinformationen bei der nächsten Zielgruppenbestimmung in Campaign v7 berücksichtigt werden.
+     Quarantänen werden automatisch wieder mit Campaign v7 synchronisiert. Auf diese Weise können nicht zustellbare Informationen für die nächste Zielgruppenbestimmung in Campaign v7 berücksichtigt werden.
 
      Mehr Informationen zur Quarantäneverwaltung in Campaign Standard finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=de).

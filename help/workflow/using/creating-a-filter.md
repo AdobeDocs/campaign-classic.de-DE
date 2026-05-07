@@ -7,8 +7,8 @@ hide: true
 exl-id: 297ea1e1-39ef-4b99-aaaa-9e88611fb1bf
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 100%
+source-wordcount: '229'
+ht-degree: 94%
 
 ---
 
@@ -56,4 +56,4 @@ Die Spalte **[!UICONTROL Berücksichtigt wenn]** ermöglicht die Konfiguration v
 
 Hier ist **$(/tmp/@text)=&#39;Filiale&#39;**.
 
-Der Ausdruck **$(/tmp/@text)!** prüft jede Bedingung, wenn das Eingabefeld nicht leer ist.
+Der Ausdruck **$(/tmp/@text)!=&#39;&#39;** wendet jede Bedingung an, wenn das Eingabefeld nicht leer ist.

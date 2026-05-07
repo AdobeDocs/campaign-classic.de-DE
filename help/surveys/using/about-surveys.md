@@ -6,15 +6,15 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Surveys
 exl-id: 7061a4f1-006f-4f19-8761-918d8930d885
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
-workflow-type: ht
-source-wordcount: '567'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '585'
+ht-degree: 78%
 
 ---
 
 # Erste Schritte mit Umfragen{#about-surveys}
 
-Adobe Campaign enthält ein Grafikmodul zur Definition und Veröffentlichung von Web-Anwendungen. Dies wird verwendet, um Seiten zu erstellen, z. B. ein Bearbeitungsformular für ein Extranet oder Benachrichtigungsformulare, einschließlich Daten aus der Datenbank mit Tabellen, Diagrammen, Formularen usw. Mit dieser Funktion können Sie Web-Seiten entwerfen und posten, auf denen Benutzer Informationen suchen oder eingeben können.
+Adobe Campaign enthält ein Grafikmodul zum Definieren und Veröffentlichen von Web-Anwendungen. Damit werden Seiten erstellt, z. B. ein Bearbeitungsformular für ein Extranet oder Benachrichtigungsformulare, die Daten aus der Datenbank mit Tabellen, Diagrammen, Eingabeformularen usw. enthalten. Verwenden Sie diese Funktion, um Web-Seiten zu entwerfen und zu posten, auf denen Benutzer Informationen suchen oder eingeben können.
 
 >[!AVAILABILITY]
 >
@@ -43,7 +43,7 @@ Verwenden Sie in Adobe Campaign [Web-Anwendungen](../../web/using/about-web-form
 * Personalisierung hinzuzufügen und die Feldposition zu definieren,
 * die Anzeige von Umfragefeldern von den Antworten abhängig zu machen,
 * die Anzeige von Seiten abhängig von einer Bedingung zu machen,
-* Informationen vor der Validierung zu überprüfen, abhängig vom erwarteten Datentyp (Zahl, E-Mail-Adresse, Datum usw.) und von den Pflichtfeldern,
+* Informationen vor der Genehmigung prüfen, je nach Art der erwarteten Daten (Nummer, E-Mail-Adresse, Daten usw.) und Pflichtfelder,
 * E-Mail-Einladungen/Benachrichtigungen zu senden,
 * Fehler- und Endseiten zu personalisieren,
 * Bilder, Videos, Hypertext-Links, Captcha usw. in Formularen hinzuzufügen.
@@ -62,7 +62,7 @@ Das optionale Modul zur Umfrageerstellung bietet eine anwenderfreundliche Benutz
 Führen Sie die folgenden Schritte aus, um eine Umfrage zu erstellen und bereitzustellen und ihre Ergebnisse zu verarbeiten.
 
 1. Erstellen Sie die Seiten der Umfrage und deren Inhalt (Eingabefelder, Dropdown-Listen, Fragen etc.).
-1. Definieren Sie, wie die Antworten gespeichert werden sollen. Ein Zwischenschritt zum Vorausfüllen der Daten kann eingerichtet werden, damit das Formular mit Daten ausgefüllt wird, die sich bereits in der Datenbank befinden. Sie können auch eine Testbox hinzufügen.
+1. Definieren Sie, wie die Antworten gespeichert werden sollen. Es kann ein Schritt zum Vorabladen von Daten eingefügt werden, um das Formular mit Daten vorab zu laden, die sich bereits in der Datenbank befinden. Sie können auch ein Testfeld hinzufügen.
 1. Veröffentlichen Sie die Umfrage und senden Sie sie dann an Empfänger (schließen Sie z. B. den Link in eine Sendung oder auf einer Website ein).
 1. Überwachen Sie die Antworten und prüfen Sie die entsprechenden Berichte.
 
@@ -72,14 +72,14 @@ Weitere Informationen zum Konfigurieren und Festlegen der Abfolge dieser Schritt
 >
 >Aus Datenschutzgründen empfehlen wir die Verwendung von HTTPS für alle externen Ressourcen.
 
-## Einstellungen        {#settings}
+## Einstellungen {#settings}
 
 Umfragen sind standardmäßig im Knoten **[!UICONTROL Ressourcen > Online > Web-Anwendungen]** der Adobe Campaign-Baumstruktur verfügbar.
 
 Einstellungen werden in den folgenden Ordnern gespeichert:
 
 * **[!UICONTROL Administration > Konfiguration > Formular-Rendering]**: enthält die Rendering-Vorlagen für Webformulare (Anwendungen und Umfragen).
-* **[!UICONTROL Ressourcen > Vorlagen > Webanwendungsvorlagen]**: enthält die Formularvorlagen. Zur Erstellung eines Formulars benötigen Sie eine Vorlage.
+* **[!UICONTROL Ressourcen > Vorlagen > Webanwendungsvorlagen]**: enthält die Formularvorlagen. Um ein Formular zu erstellen, müssen Sie mit einer Vorlage beginnen.
 
 >[!NOTE]
 >

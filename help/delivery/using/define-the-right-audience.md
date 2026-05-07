@@ -9,14 +9,14 @@ hide: true
 exl-id: c0533148-b027-4158-9b95-8d2df769e963
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '554'
 ht-degree: 100%
 
 ---
 
-# Festlegen der richtigen Zielgruppe {#define-the-right-audience}
+# Definieren der richtigen Zielgruppe {#define-the-right-audience}
 
-Die Bestimmung der Zielpopulation ist besonders wichtig. Gehen Sie bei der Erstellung Ihrer Kontaktlisten sorgfältig vor, testen Sie Ihre E-Mails in den gängigsten E-Mail-Clients und auf den gängigsten Mobilgeräten und stellen Sie sicher, dass Ihre Verteilerlisten aktuell sind (und keine unbekannten oder veralteten Adressen enthalten). Sie können auch Testsendungen vornehmen, um einen vollständigen Validierungszyklus durchzuführen.
+Die Bestimmung der Zielpopulation ist besonders wichtig. Gehen Sie bei der Erstellung Ihrer Listen sorgfältig vor, testen Sie Ihre E-Mails in den gängigsten E-Mail-Clients sowie auf den gängigsten Mobilgeräten und stellen Sie sicher, dass Ihre E-Mail-Listen aktuell sind (und keine unbekannten oder veralteten Adressen enthalten). Sie können auch Testsendungen vornehmen, um einen vollständigen Validierungszyklus durchzuführen.
 
 Weitere Informationen zu Zielpopulationen finden Sie in diesem Abschnitt der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=de){target="_blank"}.
 
@@ -24,7 +24,7 @@ Weitere Informationen zu Zielpopulationen finden Sie in diesem Abschnitt der [Do
 
 Wenn Ihr Inhalt fertiggestellt ist, müssen Sie sorgfältig auswählen, wer Ihre Nachricht erhalten soll.
 
-Um einen erfolgreichen Versand durchzuführen, müssen Sie möglichst relevanten personalisierten Inhalt an die richtigen Empfänger senden. Mit Adobe Campaign können Sie eine präzise Zielgruppe bestimmen, indem Sie die Empfänger nach Alter, Ort, Einkäufen, Klicks auf frühere Sendungen usw. auswählen. Sie können mit Adobe Campaign auch Testprofile und Kontrollgruppen definieren und Testsendungen durchführen, um sicherzustellen, dass Sie die richtige Zielgruppe erreichen.
+Um einen erfolgreichen Versand durchzuführen, müssen Sie möglichst relevanten personalisierten Inhalt an die richtigen Empfänger senden. Mit Adobe Campaign können Sie eine äußerst präzise Zielgruppe erstellen: Sie können die Empfängerinnen und Empfänger beispielsweise nach Alter, Ort, Kaufverhalten und Klicks auf Links in früheren Sendungen auswählen. Mit Adobe Campaign können Sie Testprofile, Kontrollgruppen und Testadressen definieren, um sicherzustellen, dass Ihre Zielgruppe korrekt ist.
 
 ## Zielgruppen-Mappings {#target-mappings}
 

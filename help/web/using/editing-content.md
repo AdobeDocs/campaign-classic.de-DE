@@ -6,9 +6,9 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: 968430d6-b1dd-47f8-8b31-39aaa18bc05c
 source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
-workflow-type: ht
-source-wordcount: '1254'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1275'
+ht-degree: 80%
 
 ---
 
@@ -30,7 +30,7 @@ Markieren Sie den gewünschten Baustein und geben Sie mit dem Ausdrucks-Editor i
 
 ![](assets/dce_popup_visibilitycondition.png)
 
-Diese Bedingungen übernehmen die XTK-Ausdruckssyntax (z. B. **ctx.recipient.@email != &quot;&quot;** oder **ctx.recipient.@status==&quot;0&quot;**). Standardmäßig werden alle Felder angezeigt.
+Diese Bedingungen übernehmen die XTK-Ausdruckssyntax (z. B. **ctx.recipient.@email != &quot;&quot;** oder **ctx.recipient.@status==„0“**). Standardmäßig werden alle Felder angezeigt.
 
 >[!NOTE]
 >
@@ -38,7 +38,7 @@ Diese Bedingungen übernehmen die XTK-Ausdruckssyntax (z. B. **ctx.recipient.@em
 
 ## Rahmen und Hintergründe hinzufügen {#adding-a-border-and-background}
 
-Sie können zum ausgewählten Baustein einen **Rahmen** hinzufügen. Rahmen werden durch drei Optionen definiert: Stil, Größe und Farbe.
+Sie können einen **Rahmen** zu einem ausgewählten Block hinzufügen. Die Rahmen werden mit drei Optionen definiert: Stil, Größe und Farbe.
 
 ![](assets/dce_popup_border.png)
 
@@ -64,7 +64,7 @@ Standardmäßig werden die in der Tabelle **nms:recipient** verfügbaren Felder 
 
 ![](assets/dce_field_selection.png)
 
-Mit der Option **Pflichtfeld** können Sie festlegen, dass die Seite nur dann validiert wird, wenn das Feld ausgefüllt wurde. Fehlt ein Pflichtfeld, wird eine Fehlermeldung angezeigt.
+Mit **Option** Erforderliches Feld“ können Sie die Genehmigung der Seite nur autorisieren, wenn der Benutzer das Feld ausgefüllt hat. Wenn ein erforderliches Feld nicht ausgefüllt ist, wird eine Fehlermeldung angezeigt.
 
 Für Radiobuttons und Checkboxes ist eine **zusätzliche Konfiguration erforderlich**.
 
@@ -94,7 +94,7 @@ Folgende Optionen stehen zur Auswahl:
 
 ## Eine Aktion zu einer Schaltfläche hinzufügen {#adding-an-action-to-a-button}
 
-Sie können für eine angeklickte Schaltfläche eine Aktion festlegen. Wählen Sie dazu die auszuführende Aktion aus der Dropdown-Liste aus.
+Wenn der/die Benutzende auf eine Schaltfläche klickt, können Sie eine zugehörige Aktion definieren. Wählen Sie dazu die auszuführende Aktion aus der Dropdownliste aus.
 
 ![](assets/dce_sidebar_button.png)
 
@@ -208,7 +208,7 @@ Mit dem Digital Content Editor können Sie **alle Arten von Bildern** bearbeiten
 
 >[!CAUTION]
 >
->Externe Dateien dürfen nicht in einem **Script**-Tag der HTML-Seite aufgerufen werden. Diese Dateien werden nicht in den Adobe Campaign-Server importiert.
+>Externe Dateien dürfen nicht in einem &quot;**&quot;-** der HTML-Seite aufgerufen werden. Der Adobe Campaign-Server erlaubt keinen Import derartiger Dateien.
 
 ### Bild hinzufügen/löschen/duplizieren {#adding---deleting---duplicating-an-image}
 
@@ -241,22 +241,22 @@ Wenn Sie einen Baustein auswählen, der ein Bild enthält, greifen Sie auf die f
 
 ### Personalisierungsfeld einfügen {#inserting-a-personalization-field}
 
-Die Option **Personalisierungsfeld** des Einfügesymbols ermöglicht das Hinzufügen eines Datenbankfelds in den Inhalt, wie etwa den Namen des Empfängers. Diese Option ist nur für Bausteine vom Typ &quot;Text&quot; verfügbar.
+Mit der Option **Personalization** für das Symbol Einfügen können Sie dem Inhalt ein Datenbankfeld hinzufügen, z. B. den Namen des Empfängers. Diese Option ist nur für Textbausteine verfügbar.
 
 ![](assets/dce_toolbar_textblock_persofield.png)
 
-Standardmäßig stammen die dargestellten Felder aus der Tabelle **[!UICONTROL Empfänger]**. Sie können die Eigenschaften der Webanwendung bearbeiten, um eine andere Tabelle auszuwählen.
+Standardmäßig werden die angebotenen Felder aus der Tabelle **[!UICONTROL Empfänger]** entnommen. Bearbeiten Sie bei Bedarf die Eigenschaften der Web-Anwendung, um eine andere Tabelle auszuwählen.
 
-Der Name des Feldes erscheint daraufhin gelb unterlegt im Editor. Er wird zum Zeitpunkt der Personalisierung (z. B. bei der Ansicht einer Landingpage in der Vorschau) durch das für den jeweiligen Empfänger gespeicherte Profil ersetzt.
+Der Feldname wird im Editor angezeigt, gelb hervorgehoben. Er wird durch das Profil des Zielgruppenempfängers ersetzt, wenn die Personalisierung generiert wird (z. B. bei der Vorschau einer Landingpage).
 
 Ein Beispiel wird im Abschnitt [Personalisierungsfeld einfügen](creating-a-landing-page.md#inserting-a-personalization-field) dargestellt.
 
 ### Gestaltungsbaustein einfügen {#inserting-a-personalization-block}
 
-Mit der Option **Gestaltungsbaustein** können Sie dynamische und personalisierte Bausteine in den Inhalt einfügen. So können Sie beispielsweise ein Logo oder eine Grußnachricht hinzufügen. Diese Option ist nicht für Bausteine vom Typ &quot;Text&quot; verfügbar.
+Mit der Option **Personalization-** Block können Sie dynamische und personalisierte Bausteine in den Inhalt einfügen. Sie können beispielsweise ein Logo oder eine Grußbotschaft hinzufügen. Sie ist nicht für Blöcke vom Typ Text verfügbar.
 
 ![](assets/dce_toolbar_textblock_persoblock.png)
 
-Nach dem Einfügen erscheint der Name des Gestaltungsbausteins gelb hinterlegt im Editor. Er wird während der Personalisierung automatisch an das Empfängerprofil angepasst.
+Nach dem Einfügen wird der Personalisierungsblockname im Editor angezeigt, der gelb hervorgehoben ist. Er wird bei der Personalisierung automatisch an das Empfängerprofil angepasst.
 
 Weiterführende Informationen zu integrierten Gestaltungsbausteinen und zum Festlegen von benutzerdefinierten Gestaltungsbausteinen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=de){target="_blank"}.

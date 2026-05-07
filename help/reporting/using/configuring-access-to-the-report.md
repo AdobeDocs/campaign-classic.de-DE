@@ -6,9 +6,9 @@ feature: Reporting, Monitoring
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 exl-id: 1e5ab922-481c-4dce-a05e-a58408002e24
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: ht
-source-wordcount: '809'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '810'
+ht-degree: 81%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 100%
 
 ## Anzeigekontext von Berichten {#report-display-context}
 
-Legen Sie in der Adobe Campaign-Plattform im Tab **[!UICONTROL Anzeige]** den Anzeigekontext des Berichts fest. Der Zugriff auf den Bericht hängt von seinem Auswahltyp, seinen Anzeigebedingungen und den Zugriffsberechtigungen ab.
+Definieren Sie den Anzeigekontext des Berichts in der Adobe Campaign-Plattform mithilfe der Registerkarte **[!UICONTROL Anzeigen]**. Der Zugriff auf einen Bericht hängt von seinem Auswahltyp, seinen Anzeigebedingungen und Zugriffsberechtigungen ab.
 
 ### Auswahltyp {#selection-type}
 
-Der Zugriff auf den Bericht kann auf einen bestimmten Kontext oder eine Platzierung beschränkt werden, zum Beispiel einen Versand, einen einzelnen oder eine Auswahl von Empfängern etc. Dieser Zugriff wird im Abschnitt **[!UICONTROL Auswahltyp]** des **[!UICONTROL Anzeige]**-Tabs konfiguriert.
+Der Zugriff auf den Bericht kann auf einen bestimmten Kontext oder eine Platzierung beschränkt sein, z. B. auf einen Versand, einen Empfänger, eine Auswahl von Empfängern usw. Dieser Zugriff wird im Abschnitt **[!UICONTROL Auswahltyp]** der Registerkarte **[!UICONTROL Anzeigen]** konfiguriert.
 
 ![](assets/s_ncs_advuser_report_visibility_4.png)
 
@@ -54,7 +54,7 @@ Wenn es sich beim Hauptkanal der Kampagne um Briefpost handelt, wird der Bericht
 
 Es besteht die Möglichkeit, den Bericht mit anderen Benutzern zu teilen.
 
-Aktivieren Sie die Option **[!UICONTROL Mit anderen Benutzern geteilter Bericht]**, um den Bericht zugänglich zu machen. Bei Nicht-Aktivieren der Option kann nur der Benutzer, der den Bericht erstellt hat, auf den Bericht zugreifen.
+Um den Bericht barrierefrei zu machen, wählen Sie die Option **[!UICONTROL Bericht für andere Benutzer freigegeben]** aus. Ist diese Option nicht ausgewählt, kann nur der Benutzer, der den Bericht erstellt hat, auf den Bericht zugreifen.
 
 Der Bericht kann auch mit bestimmten Benutzern oder Benutzergruppen geteilt werden, indem sie im Bereich der Berechtigungen hinzugefügt werden.
 
@@ -74,7 +74,7 @@ Um einen Bericht einer Kategorie zuzuordnen, wählen Sie diese im Tab **[!UICONT
 
 ![](assets/report_select_category.png)
 
-Sie können eine neue Kategorie erfassen, die dann in die Liste der verfügbaren Kategorien aufgenommen wird. Die entsprechende Aufzählung wird automatisch aktualisiert.
+Hier können Sie eine neue Kategorie eingeben und sie zur Liste der verfügbaren Kategorien hinzufügen. Die entsprechende Auflistung wird automatisch aktualisiert.
 
 ## Erstellen eines Links zu einem Bericht {#creating-a-link-to-a-report-}
 
@@ -90,14 +90,14 @@ Als Beispiel wird im Folgenden eine Verknüpfung eines Berichts zu einer Empfän
 
    ![](assets/s_ncs_advuser_report_wizard_link_02.png)
 
-1. Geben Sie den Titel an und wählen Sie das Schema aus. Im Beispiel wird die Tabelle der Empfängerlisten gewählt.
+1. Geben Sie einen Titel ein und wählen Sie das Schema aus. In diesem Beispiel wählen wir die Empfängerlisten -Tabelle aus.
 
    ![](assets/s_ncs_advuser_report_wizard_link_03.png)
 
    Dies bedeutet, dass der Bericht von jeder Empfängerliste aus zugänglich sein wird und die Statistiken basierend auf den in der markierten Liste enthaltenen Empfängern berechnet werden.
 
 1. Speichern Sie den Bericht und öffnen Sie ihn.
-1. Geben Sie den Verbindungsschlüssel an. Im Beispiel handelt es sich um den Fremdschlüssel der &#39;Ordner&#39;-Relation.
+1. Geben Sie den Link-Schlüssel ein. In diesem Fall der Fremdschlüssel der &#39;Ordner&#39;-Relation.
 
    ![](assets/s_ncs_advuser_report_wizard_link_04.png)
 

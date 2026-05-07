@@ -6,9 +6,9 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Surveys
 exl-id: 0b5dc602-e16f-4bf1-bd8f-352e0bc78996
 source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
-workflow-type: ht
-source-wordcount: '904'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '909'
+ht-degree: 78%
 
 ---
 
@@ -22,7 +22,7 @@ Zusätzlich zu den Standard-Speichermodi, die für alle Webformulare in Adobe Ca
 
 >[!CAUTION]
 >
->Diese Option ist nur für Webanwendungen vom Typ **Umfrage** verfügbar, nicht aber für andere Typen von Webformularen.
+>Diese Option ist nur für Web **Anwendungen vom Typ &quot;**&quot; verfügbar. Sie wird nicht für andere Arten von Web-Formularen angeboten.
 
 ### In einem archivierten Feld speichern {#storing-in-an-archived-field}
 
@@ -38,7 +38,7 @@ Um eine Einschränkung hinzuzufügen, wählen Sie sie aus der Dropdown-Liste aus
 
 1. Groß- und Kleinschreibung von Buchstaben
 
-   Die eingegebenen Informationen können im Feld in den folgenden Formaten gespeichert werden: durchgehend Großbuchstaben, durchgehend Kleinbuchstaben oder erster Buchstabe groß geschrieben. Durch diese Einschränkung ist der Benutzer nicht gezwungen, die Daten im ausgewählten Format einzugeben, sondern der im Feld eingegebene Inhalt wird bei der Speicherung entsprechend umgewandelt.
+   Die eingegebenen Informationen können in den folgenden Formaten im Feld gespeichert werden: entweder in Großbuchstaben, nur in Kleinbuchstaben oder mit Anfangsgroßbuchstaben. Diese Einschränkung erfordert nicht, dass der Benutzer die Daten im ausgewählten Format eingibt, aber der in das Feld eingegebene Inhalt wird beim Speichern konvertiert.
 
 1. Datenformat
 
@@ -84,11 +84,11 @@ Sie können Empfänger auch auf der Basis ihrer Antworten filtern, sodass nur di
 
 ![](assets/s_ncs_admin_survey_read_responses_wf.png)
 
-Erstellen Sie Ihre Abfrage auf der Basis der gewünschten Profile. Im folgenden Beispiel erfahren Sie, wie Sie über die Abfrage Profile auswählen, die mindestens zwei Verträge besitzen, darunter einen Vertrag vom Typ A.
+Erstellen Sie Ihre Abfrage basierend auf den Profilen, die Sie wiederherstellen möchten. Im folgenden Beispiel können Sie mit der Abfrage Profile mit mindestens zwei Verträgen auswählen, darunter einen Vertrag vom Typ A.
 
 ![](assets/s_ncs_admin_survey_read_responses_edit.png)
 
-Die gegebenen Antworten können in allen Formularen in Feldern oder Titeln verwendet werden. Der in einem archivierten Feld gespeicherte Inhalt muss die folgende Syntax aufweisen:
+Für jedes Formular können die angegebenen Antworten in Feldern oder Beschriftungen verwendet werden. Verwenden Sie die folgende Syntax für Inhalte, die in einem archivierten Feld gespeichert sind:
 
 ```
 <%= ctx.webAppLogRcpData.name of the archived field %
@@ -119,7 +119,7 @@ Sie können sie standardmäßig für alle Umfragen aktivieren (diese Option wird
 
 ## Verwaltung der Punktzahl {#score-management}
 
-Sie können den auf den Formularseiten bereitgestellten Optionen eine Punktzahl zuweisen. Die Punktzahl kann nur mit geschlossenen Fragen verknüpft werden: Checkbox, Wert aus einer Dropdown-Liste, Abonnement usw.
+Sie können den auf den Formularseiten angebotenen Optionen eine Punktzahl zuweisen. Scores können nur mit geschlossenen Fragen verknüpft werden: Kontrollkästchen, Wert aus einer Dropdown-Liste, Abonnement usw.
 
 ![](assets/s_ncs_admin_survey_score_create.png)
 
@@ -133,7 +133,7 @@ Die Punktzahl kann in Tests oder Scripts verwendet werden.
 
 >[!CAUTION]
 >
->Die Punktzahl kann nicht in den Sichtbarkeitsbedingungen für Felder verwendet werden, die sich auf derselben Seite befinden. Sie kann aber auf aufeinanderfolgenden Seiten verwendet werden.
+>Scores können nicht in Sichtbarkeitsbedingungen für Felder auf derselben Seite verwendet werden. Sie können jedoch auf nachfolgenden Seiten verwendet werden.
 
 * Um Punkte in Tests einzubeziehen, verwenden Sie in der Test-Berechnungsformel wie unten gezeigt das Feld **[!UICONTROL Punktzahl]**:
 
@@ -155,7 +155,7 @@ Die Punktzahl kann in Tests oder Scripts verwendet werden.
 
   ![](assets/s_ncs_admin_survey_score_exe.png)
 
-* Auf die anzuzeigende Seite können entsprechend der Punktzahl Bedingungen angewendet werden. Die Konfiguration wird wie folgt durchgeführt:
+* Bedingungen können angewendet werden, damit die Seite entsprechend dem Ergebnis angezeigt wird. Dies ist wie folgt konfiguriert:
 
   ![](assets/s_ncs_admin_survey_score_exd.png)
 

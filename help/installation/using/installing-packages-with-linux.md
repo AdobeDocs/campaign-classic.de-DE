@@ -10,8 +10,8 @@ topic-tags: installing-campaign-in-linux-
 exl-id: f41c7510-5ad7-44f3-9485-01f54994b6cb
 source-git-commit: ab38c7fd45513c6f7a8ecf7ef8601f0b5a4b5757
 workflow-type: tm+mt
-source-wordcount: '1118'
-ht-degree: 2%
+source-wordcount: '1150'
+ht-degree: 4%
 
 ---
 
@@ -222,7 +222,7 @@ Wenn Sie Oracle mit Adobe Campaign verwenden, müssen Sie die Oracle-Client-Eben
 
 * Umgebungsvariablen
 
-  Siehe &quot;[&quot; &#x200B;](#environment-variables).
+  Siehe &quot;[&quot; ](#environment-variables).
 
 * Konfiguration für Adobe Campaign
 

@@ -1,24 +1,24 @@
 ---
 product: campaign
 title: Eignungsunabhängige Kategorien
-description: Eignungsunabhängige Kategorien
+description: Empfehlen einer Kategorie
 feature: Interaction, Offers
 audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: cb062cb2-dfea-46aa-8d9e-580e4dc7bb25
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '170'
-ht-degree: 100%
+ht-degree: 59%
 
 ---
 
-# Empfehlen einer Kategorie{#recommending-a-category}
+# Eignungsunabhängige Kategorien{#recommending-a-category}
 
 
 
-Es kann vorkommen, dass für einen Empfänger aufgrund der definierten Filter und Regeln keins der vorhandenen Angebote infrage kommt. Um sicherzustellen, dass jedem Empfänger trotzdem ein Angebot unterbreitet wird, besteht die Möglichkeit, eine oder mehrere Kategorien systematisch in die Vorschläge einzubeziehen. Im Gegensatz zu den anderen Angeboten dürfen diese &quot;eignungsunabhängigen&quot; Angebote nur eine geringe Gewichtung (jedoch nicht null) aufweisen, damit sie nur dann unterbreitet werden, wenn kein höher gewichtetes Angebot infrage kommt. Außerdem darf für diese Angebote keine Unterbreitungsregel definiert werden, da dies ihre Auswahl verhindern könnte. Wenn für einen Empfänger also kein Angebot mit hoher Gewichtung infrage kommt, wird mindestens ein Angebot aus dieser Kategorie unterbreitet.
+Es kann sein, dass ein Empfänger nicht für alle Angebote geeignet ist. Um sicherzustellen, dass alle Empfänger einen Angebotsvorschlag erhalten, können in den Empfehlungen systematisch eine oder mehrere Angebotskategorien hinzugefügt werden. Im Gegensatz zu den Hauptangeboten müssen diese „Backup“-Angebote ein geringes Gewicht (aber nicht null) haben, sodass sie nur berücksichtigt werden, wenn keine Angebote mit hoher Gewichtung infrage kommen. Darüber hinaus darf auf diese Angebote keine Unterbreitungsregel angewendet werden, um sicherzustellen, dass sie immer in die Empfehlungen aufgenommen werden. Wenn also für einen Vorschlag kein Angebot mit hoher Gewichtung verfügbar ist, erhält der Empfänger mindestens ein Angebot aus dieser Kategorie.
 
 Gehen Sie wie folgt vor, um eine Kategorie immer in die Empfehlungen einzuschließen:
 

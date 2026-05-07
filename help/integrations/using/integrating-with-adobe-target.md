@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: 'Verwenden von Adobe Campaign und Adobe Target '
+title: Verwenden von Adobe Campaign und Adobe Target
 description: Hier erfahren Sie, wie Sie Adobe Campaign mit Adobe Target integrieren
 feature: Target Integration
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: adobe-target
 exl-id: 2e29d090-b87b-4cff-a703-58e1da082f04
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: ht
-source-wordcount: '201'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '209'
+ht-degree: 96%
 
 ---
 
@@ -28,7 +28,7 @@ Die Integration erfolgt beim Öffnen der E-Mail. Wenn der Kunde die E-Mail öffn
 
 >[!NOTE]
 >
->Im Rahmen der Integration werden nur statische Bilder unterstützt. Der weitere Inhalt kann nicht personalisiert werden.
+>Im Rahmen der Integration werden nur statische Bilder unterstützt. Der Rest des Inhalts kann nicht personalisiert werden.
 
 Verschiedene Datentypen können in Verbindung mit Adobe Target zum Einsatz kommen:
 

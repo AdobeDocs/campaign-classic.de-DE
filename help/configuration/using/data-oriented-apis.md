@@ -7,7 +7,7 @@ role: Developer
 exl-id: a392c55e-541a-40b1-a910-4a6dc79abd2d
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '1796'
+source-wordcount: '1803'
 ht-degree: 1%
 
 ---
@@ -46,7 +46,7 @@ Auf diese Weise können Sie die zugrunde liegende SQL isolieren. Die Abfragespra
 
 Weitere Informationen hierzu finden Sie unter [Beispiel zur Methode „ExecuteQuery“ des Schemas „xtk:queryDef&quot;](../../configuration/using/web-service-calls.md#example-on-the--executequery--method-of-schema--xtk-querydef-).
 
-Die **ExecuteQuery**-Methode wird in [ExecuteQuery (xtk:queryDef) &#x200B;](#executequery--xtk-querydef-).
+Die **ExecuteQuery**-Methode wird in [ExecuteQuery (xtk:queryDef) ](#executequery--xtk-querydef-).
 
 ### Schreiben {#write}
 
@@ -56,7 +56,7 @@ Mit Transaktions-APIs können Sie Abstimmungen über den Befehl **updateOrInsert
 
 Die XML-Struktur bietet eine logische Ansicht der Daten und ermöglicht es Ihnen, die physische Struktur der SQL-Tabelle zu umgehen.
 
-Die Write-Methode wird in [Write/WriteCollection (xtk:session) &#x200B;](#write---writecollection--xtk-session-).
+Die Write-Methode wird in [Write/WriteCollection (xtk:session) ](#write---writecollection--xtk-session-).
 
 ## ExecuteQuery (xtk:queryDef) {#executequery--xtk-querydef-}
 
@@ -110,7 +110,7 @@ Die Struktur des XML-Dokuments der Abfrage wird im Schema „xtk:queryDef beschr
 </queryDef>
 ```
 
-Eine Unterabfrage ( `<subquery>` ) kann in einem `<condition> ` definiert werden. Die Syntax für ein   `<subquery> `   -Element basiert auf der Syntax eines    `<querydef>`.
+Eine Unterabfrage ( `<subquery>` ) kann in einem `<condition> ` definiert werden. Die Syntax für ein `<subquery> `-Element basiert auf der Syntax eines `<querydef>`.
 
 Beispiel einer `<subquery>  : </subquery>`
 
@@ -185,7 +185,7 @@ Gibt die Liste der Empfänger zurück, die nach Ordner und E-Mail-Domain gefilte
 
 Ausdrücke können einfache Felder oder komplexe Ausdrücke wie arithmetische Operationen oder die Verkettung von Zeichenfolgen sein.
 
-Um die Anzahl der zurückzugebenden Datensätze zu begrenzen, fügen Sie dem **-Element** Attribut `<querydef>`lineCount) hinzu.
+Um die Anzahl der zurückzugebenden Datensätze zu begrenzen, fügen Sie dem `<querydef>`-Element **Attribut** lineCount) hinzu.
 
 So begrenzen Sie die Anzahl der von der Abfrage zurückgegebenen Datensätze auf 100:
 
@@ -218,7 +218,7 @@ So zählen Sie die Anzahl der Datensätze in einer Abfrage:
 >
 >Auch hier verwenden wir die Bedingung aus dem vorherigen Beispiel. Die `<select>` und -Klauseln werden nicht verwendet. `</select>`
 
-#### Datengruppierung {#data-grouping}
+#### Gruppierung der Daten {#data-grouping}
 
 So rufen Sie E-Mail-Adressen ab, auf die mehrmals verwiesen wird:
 
@@ -369,7 +369,7 @@ Diese Syntax vereinfacht die Abfrage, wenn mehr als zwei Daten in der Bedingung 
 
 Durch die Parameterbindung kann die Engine die Werte der in der Abfrage verwendeten Parameter festlegen. Dies ist sehr nützlich, da die Engine für das Maskieren von Werten zuständig ist und es den zusätzlichen Vorteil eines Cache für die abzurufenden Parameter gibt.
 
-Wenn eine Abfrage erstellt wird, werden die „gebundenen“ Werte durch das Zeichen (? `#[index]#` Sie in ODBC in postgres…) im Hauptteil der SQL-Abfrage.
+Wenn eine Abfrage erstellt wird, werden die „gebundenen“ Werte durch das Zeichen (? in ODBC, `#[index]#` in Postgres…) im Hauptteil der SQL-Abfrage.
 
 ```xml
 <select>

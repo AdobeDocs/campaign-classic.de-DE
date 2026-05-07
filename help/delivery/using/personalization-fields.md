@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: 'Personalisierungsfelder '
+title: Personalisierungsfelder
 description: Erfahren Sie, wie Sie Personalisierungsfelder verwenden
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Personalization
@@ -9,12 +9,12 @@ hide: true
 exl-id: 67fd9a67-cb05-46cd-acd5-e42fde6f4d4f
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1073'
-ht-degree: 100%
+source-wordcount: '1093'
+ht-degree: 78%
 
 ---
 
-# Personalisierungsfelder {#personalization-fields}
+# Personalisierungsfelder{#personalization-fields}
 
 Personalisierungsfelder dienen zur Personalisierung des Inhalts gesendeter Nachrichten auf erster Ebene. Die Felder, die Sie in einen Hauptinhalt einfügen, zeigen die Position an, an der die Daten aus einer ausgewählten Datenquelle eingefügt werden sollen.
 
@@ -30,8 +30,8 @@ So ersetzt Adobe Campaign das Personalisierungsfeld **&lt;%= recipient.LastName 
 
 Je nach ausgewähltem Versandmodus können die Personalisierungsfelder auf zwei verschiedene Datenquellen zurückgreifen:
 
-* Die Adobe Campaign-Datenbank. Dies ist der gängigste Fall. Man spricht von Personalisierungsfeldern des Empfängers. Hierbei kommen sämtliche in der Empfängertabelle enthaltene Felder infrage, gleich ob es sich um Standardfelder (Nachname, Vorname, Anschrift, Geburtsdatum usw.) oder benutzerdefinierte Felder handelt.
-* Eine externe Datei. Hierbei kommen sämtliche in der externen Datei enthaltene Felder infrage.
+* Die Adobe Campaign-Datenbank ist die Datenquelle. Dies ist der häufigste Fall, zum Beispiel mit „Empfänger-Personalisierungsfeldern“. Dies sind alle in der Empfängertabelle definierten Felder, unabhängig davon, ob es sich um Standardfelder handelt (normalerweise: Nachname, Vorname, Adresse, Stadt, Geburtsdatum usw.) oder benutzerdefinierte Felder.
+* Eine externe Datei ist die Datenquelle. Hierbei handelt es sich um alle Felder, die in den Spalten der Datei definiert sind, welche als Eingabe während eines Versands mithilfe der in einer externen Datei gefundenen Daten präsentiert werden.
 
 >[!NOTE]
 >
@@ -47,7 +47,7 @@ Nach der Auswahl der Datenquelle - Empfängerfeld oder Dateifeld - präsentiert 
 
 ## Beispiel für Personalisierungsfelder {#personalization-fields-example}
 
-In unserem Beispiel wird eine E-Mail erstellt, in der der Empfängername im Betreff und das Datum der Profilerstellung im Nachrichten-Textkörper eingefügt werden soll. Gehen Sie wie folgt vor:
+Wir erstellen eine E-Mail, in der wir zunächst den Namen des Empfängers einfügen und dann das Erstellungsdatum des Profils in den Nachrichtentext einfügen. Gehen Sie dazu wie folgt vor:
 
 1. Erstellen Sie einen neuen Versand oder öffnen Sie einen existierenden E-Mail-Versand.
 1. Klicken Sie im Versandassistenten auf den **[!UICONTROL Betreff]**, um den Betreff der Nachricht zu bearbeiten und einen Betreff einzugeben.
@@ -55,9 +55,9 @@ In unserem Beispiel wird eine E-Mail erstellt, in der der Empfängername im Betr
 
    ![](assets/s_ncs_user_insert_custom_field.png)
 
-1. Wiederholen Sie den Vorgang, um den Nachnamen der Empfänger einzufügen. Vergessen Sie die Leerzeichen zwischen den Personalisierungsfeldern nicht.
+1. Wiederholen Sie den Vorgang, um den Namen des Empfängers einzufügen. Fügen Sie Leerzeichen zwischen allen Personalisierungsfeldern ein.
 1. Wählen Sie zur Bestätigung **[!UICONTROL OK]** aus.
-1. Im nächsten Schritt wird der Nachrichten-Textkörper angepasst. Klicken Sie dazu in das Inhaltsfeld der Nachricht und danach auf die Schaltfläche zum Einfügen von Personalisierungsfeldern.
+1. Fügen Sie die Personalisierung in den Nachrichtentext ein. Klicken Sie dazu auf den Nachrichteninhalt und dann auf die Schaltfläche zum Einfügen des Felds.
 1. Wählen Sie **[!UICONTROL Empfänger > Sonstige...]**.
 
    ![](assets/s_ncs_user_insert_custom_field_b.png)
@@ -66,7 +66,7 @@ In unserem Beispiel wird eine E-Mail erstellt, in der der Empfängername im Betr
 
    ![](assets/s_ncs_user_insert_custom_field_c.png)
 
-1. Klicken Sie nun auf den **[!UICONTROL Vorschau]**-Tab und wählen Sie einen Empfänger aus, um sich das Ergebnis der Personalisierung anzusehen.
+1. Klicken Sie auf **[!UICONTROL Vorschau]**, um das Personalisierungsergebnis anzuzeigen. Sie müssen einen Empfänger auswählen, um die Nachricht dieses Empfängers anzuzeigen.
 
    ![](assets/s_ncs_user_insert_custom_field_d.png)
 
@@ -97,9 +97,9 @@ Um diese Option zu verwenden, gehen Sie wie folgt vor:
 
 Nach Abschluss der Analyse werden die Personalisierungsdaten mithilfe eines technischen Workflows, der während der Analyse eingerichtet wird, in einer temporären Tabelle gespeichert.
 
-Dieser Workflow ist nicht in der Adobe Campaign-Benutzeroberfläche sichtbar. Er ist lediglich ein technisches Hilfsmittel, um Personalisierungsdaten rasch zu speichern und zu handhaben.
+Dieser Workflow ist in der Benutzeroberfläche von Adobe Campaign nicht sichtbar. Es soll lediglich ein technisches Mittel zur schnellen Speicherung und Verarbeitung von Personalisierungsdaten sein.
 
-Gehen Sie nach dem Abschluss der Analyse zu den Workflow-**[!UICONTROL Eigenschaften]** und wählen Sie den Tab **[!UICONTROL Variablen]** aus. Dort wird der Name der temporären Tabelle angezeigt. Mit diesem Namen können Sie einen SQL-Aufruf durchführen, um die darin enthaltenen IDs anzuzeigen.
+Nachdem die Analyse abgeschlossen ist, wechseln Sie zum Workflow **[!UICONTROL Eigenschaften]** und wählen Sie die Registerkarte **[!UICONTROL Variablen]** aus. Dort sehen Sie den Namen der temporären Tabelle, mit der Sie einen SQL-Aufruf ausführen können, um die darin enthaltenen IDs anzuzeigen.
 
 ![](assets/perso_optimization_temp_table.png)
 
@@ -141,6 +141,6 @@ Durch Hinzufügen des Objektschemas können Sie die Felder auswählen, die Sie d
 
 Erfahren Sie, wie Sie der Betreffzeile und dem Inhalt eines E-Mail-Versands ein Personalisierungsfeld hinzufügen.
 
->[!VIDEO](https://video.tv.adobe.com/v/30081?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/24925?quality=12)
 
 Weitere Anleitungsvideos zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).

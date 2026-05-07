@@ -8,7 +8,7 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 exl-id: d8cea496-b3f3-420a-bf6e-b7cbb321b30d
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '704'
 ht-degree: 10%
 
 ---
@@ -32,7 +32,7 @@ Diese Funktion ermöglicht es Adobe Campaign, Daten aus einer externen Datenbank
 
 In diesem Abschnitt werden die Schlüsselpunkte beschrieben, mit denen Sie bestehende Tabellen in Adobe Campaign zuordnen können, sowie die Konfiguration, die für die Ausführung von Sendungen auf der Grundlage einer beliebigen Tabelle gelten soll. Schließlich wird beschrieben, wie Benutzenden so praktische Schnittstellen zur Verfügung gestellt werden können, wie sie mit der integrierten Empfängertabelle verfügbar sind. Um das in diesem Abschnitt vorgestellte Material zu verstehen, sind gute Kenntnisse der Prinzipien des Bildschirm- und Schemaentwurfs erforderlich.
 
-## Empfehlungen und Einschränkungen            {#recommendations-and-limitations}
+## Empfehlungen und Einschränkungen {#recommendations-and-limitations}
 
 Die Verwendung einer benutzerdefinierten Empfängertabelle weist die folgenden Einschränkungen auf:
 
@@ -48,7 +48,7 @@ Die Verwendung einer benutzerdefinierten Empfängertabelle weist die folgenden E
 
 * Sie können die im Produkt angebotenen **[!UICONTROL Services und Abonnements]** nicht verwenden.
 
-  Dies bedeutet, dass der in [diesem Abschnitt) beschriebene &#x200B;](../../delivery/using/managing-subscriptions.md) nicht anwendbar ist.
+  Dies bedeutet, dass der in [diesem Abschnitt) beschriebene ](../../delivery/using/managing-subscriptions.md) nicht anwendbar ist.
 
 * Die Verknüpfung mit der **[!UICONTROL Besucher]**-Tabelle funktioniert nicht.
 
@@ -62,7 +62,7 @@ Die Verwendung einer benutzerdefinierten Empfängertabelle weist die folgenden E
 
   >[!NOTE]
   >
-  >Empfängerlisten können weiterhin mithilfe von Workflows erstellt werden. Weitere Informationen hierzu finden Sie unter [&#x200B; einer Profilliste mit einem Workflow](../../configuration/using/creating-a-profile-list-with-a-workflow.md).
+  >Empfängerlisten können weiterhin mithilfe von Workflows erstellt werden. Weitere Informationen hierzu finden Sie unter [ einer Profilliste mit einem Workflow](../../configuration/using/creating-a-profile-list-with-a-workflow.md).
 
 Es wird außerdem empfohlen, die in den verschiedenen vordefinierten Konfigurationen verwendeten Standardwerte zu überprüfen: Je nach den verwendeten Funktionen müssen mehrere Anpassungen vorgenommen werden.
 

@@ -9,8 +9,8 @@ topic-tags: connectors
 exl-id: bdb5e422-ecfe-42eb-bd15-39fe5ec0ff1d
 source-git-commit: 22420452d4df2e8161c91a42ad0d20ceb4796e82
 workflow-type: tm+mt
-source-wordcount: '529'
-ht-degree: 33%
+source-wordcount: '560'
+ht-degree: 35%
 
 ---
 
@@ -91,7 +91,7 @@ Sie müssen ein [!DNL Snowflake] externes Konto erstellen, um Ihre Campaign-Inst
 
 1. Fügen Sie Ihre **[!UICONTROL Server]**-URL und **[!UICONTROL Datenbank]** hinzu.
 
-1. Konfigurieren der Authentifizierung für das externe Snowflake **-Konto:**
+1. Konfigurieren der Authentifizierung für das externe Snowflake ]**-Konto:**[!UICONTROL 
 
    * Für die Konto-/Kennwortauthentifizierung müssen Sie Folgendes angeben:
 
@@ -117,7 +117,7 @@ Sie müssen ein [!DNL Snowflake] externes Konto erstellen, um Ihre Campaign-Inst
 
 Der Connector unterstützt die folgenden Optionen:
 
-| Option | Beschreibung  |
+| Option | Beschreibung |
 |---|---|
 | workschema | Datenbankschema zur Verwendung mit Arbeitstabellen |
 | warehouse | Name des zu verwendenden Standard-Warehouse. Dadurch wird die Standardeinstellung des Benutzers außer Kraft gesetzt. |

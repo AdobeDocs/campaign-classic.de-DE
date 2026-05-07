@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: message-templates
 exl-id: 417004c9-ed96-4b98-a518-a3aa6123ee7b
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: ht
-source-wordcount: '586'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '607'
+ht-degree: 74%
 
 ---
 
@@ -22,7 +22,7 @@ Führen Sie nach Fertigstellung Ihrer [Nachrichtenvorlage](../../message-center/
 
 ## Testadressen in Transaktionsnachrichten verwalten {#managing-seed-addresses-in-transactional-messages}
 
-Testadressen dienen dazu, eine Nachrichtenvorschau zu erzeugen, Testsendungen auszuführen und die Personalisierung der Nachricht vor dem eigentlichen Versand per E-Mail, SMS oder Mobile Apps zu prüfen. Sie werden für jeden Versand separat erstellt und können nicht in mehreren Sendungen verwendet werden.
+Mit einer Testadresse können Sie eine Vorschau Ihrer Nachricht anzeigen, einen Testversand durchführen und die Personalisierung der Nachricht vor dem E-Mail- oder SMS-Versand testen. Testadressen sind mit dem Versand verknüpft und können nicht für andere Sendungen verwendet werden.
 
 Gehen Sie zur Erstellung von Testadressen in einer Transaktionsnachricht wie folgt vor:
 
@@ -38,7 +38,7 @@ Gehen Sie zur Erstellung von Testadressen in einer Transaktionsnachricht wie fol
 
    ![](assets/messagecenter_create_seedaddr_003.png)
 
-1. Geben Sie eine externe Kennung an. Dieses optionale Feld dient dazu, einen allen Anwendungen Ihrer Webseite gemeinsamen, benutzerdefinierten Schlüssel zu vergeben (eindeutige Kennung, Name + E-Mail etc.), um Ihre Profile zu identifizieren. Wenn dieses Feld auch in der Adobe Campaign-Datenbank vorhanden ist, haben Sie die Möglichkeit, Ereignisse mit Profilen der Datenbank abzustimmen.
+1. Externe Kennung eingeben: In diesem optionalen Feld können Sie einen Geschäftsschlüssel eingeben (eindeutige Kennung, Name + E-Mail usw.) Dies ist bei allen Anwendungen auf Ihrer Website üblich, mit denen Ihre Profile identifiziert werden. Wenn dieses Feld auch in der Adobe Campaign-Marketing-Datenbank vorhanden ist, können Sie ein Ereignis mit einem Profil in der Datenbank abstimmen.
 
    ![](assets/messagecenter_create_seedaddr_003bis.png)
 
@@ -60,9 +60,9 @@ Sobald die Adressen erstellt wurden, können Sie eine Vorschau der Nachricht und
 
 ## Personalisierungsdaten {#personalization-data}
 
-Sie können Daten aus der Nachrichtenvorlage verwenden, um die Personalisierung von Transaktionsnachrichten zu testen. Diese Funktion wird verwendet, um eine Vorschau zu erstellen oder einen Testversand durchzuführen. Ebenfalls können Sie anzeigen, wie die Nachricht bei verschiedenen Internet-Anbietern dargestellt wird. Weiterführende Informationen dazu finden Sie im Abschnitt [Inbox Rendering](../../delivery/using/inbox-rendering.md).
+Es ist möglich, Daten in der Nachrichtenvorlage zu verwenden, um die Personalisierung von Transaktionsnachrichten zu testen. Mit dieser Funktion wird eine Vorschau generiert oder ein Testversand gesendet. Ebenfalls können Sie anzeigen, wie die Nachricht bei verschiedenen Internet-Anbietern dargestellt wird. Weiterführende Informationen dazu finden Sie im Abschnitt [Inbox Rendering](../../delivery/using/inbox-rendering.md).
 
-Diese Daten dienen nur dazu, die Nachrichten vor dem eigentlichen Versand zu testen, und entsprechen nicht den tatsächlich verarbeiteten Daten. Ihre XML-Struktur muss jedoch identisch mit der des in der Ausführungsinstanz gespeicherten Ereignisses sein, wie im Folgenden gezeigt:
+Der Zweck dieser Daten besteht darin, Ihre Nachrichten vor ihrem endgültigen Versand zu testen. Diese Nachrichten stimmen nicht mit den tatsächlich zu verarbeitenden Daten überein. Die XML-Struktur muss jedoch identisch mit der des in der Ausführungsinstanz gespeicherten Ereignisses sein, wie unten dargestellt:
 
 ![](assets/messagecenter_create_custo_006.png)
 

@@ -9,8 +9,8 @@ topic-tags: prerequisites-and-recommendations-
 exl-id: 1f96c3df-0ef2-4f5f-9c36-988cbcc0769f
 source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
 workflow-type: tm+mt
-source-wordcount: '761'
-ht-degree: 29%
+source-wordcount: '791'
+ht-degree: 25%
 
 ---
 
@@ -109,7 +109,7 @@ Die vollständige Entität wird vom Bildschirm geladen. Sie können sie auch in 
 
 ## Hinzufügen von Captchas in Webanwendungen
 
-Es ist empfehlenswert, öffentlichen Landingpages und Anmeldeseiten ein Captcha hinzuzufügen. Leider ist dies in DCE-Seiten (Digital Content Editor) nicht einfach. Wir zeigen Ihnen, wie Sie ein v5 Captcha oder ein Google reCAPTCHA hinzufügen.
+Es empfiehlt sich, ein CAPTCHA in öffentlichen Landingpages/Anmeldeseiten hinzuzufügen. Leider ist das Hinzufügen eines Captcha auf DCE-Seiten (Digital Content Editor) nicht einfach. Wir zeigen Ihnen, wie Sie ein v5-Captcha oder ein Google-reCAPTCHA hinzufügen.
 
 Im Allgemeinen können Sie ein CAPTCHA im DCE hinzufügen, indem Sie einen Gestaltungsbaustein erstellen, um ihn einfach in den Seiteninhalt einzufügen. Sie müssen eine &quot;**&quot;-Aktivität** einen &quot;**&quot;**.
 
@@ -230,6 +230,6 @@ Um JSON.parse zu verwenden, müssen Sie &quot;shared/json2.js&quot; in Ihre Weba
 
 ![](assets/scripting-captcha6.png)
 
-Auf die Zulassungsliste setzen Um die Verifizierungs-API-URL verwenden zu können, müssen Sie sie seit Build 8797 der Datei &quot;&quot; in der Datei „serverConf“ hinzufügen, indem Sie im Knoten „urlPermission“ hinzufügen:
+Um die Verifizierungs-API-URL verwenden zu können, müssen Sie sie seit Build 8797 der Datei &quot;&quot; in der Datei „serverConf“ hinzufügen, indem Sie im Knoten „urlPermission“ hinzufügen:
 
 `<url dnsSuffix="www.google.com" urlRegEx="https://www.google.com/recaptcha/api/siteverify"/>`

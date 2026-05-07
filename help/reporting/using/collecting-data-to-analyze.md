@@ -6,9 +6,9 @@ feature: Reporting, Monitoring
 badge: label="v7" type="Informative" tooltip="Gilt nur für Campaign Classic v7"
 exl-id: cf621374-88f9-4def-8bea-87e0ea69ecd3
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '533'
-ht-degree: 100%
+ht-degree: 76%
 
 ---
 
@@ -30,13 +30,13 @@ In jedem Fall werden die Daten über eine Aktivität vom Typ **[!UICONTROL Abfra
 
 ![](assets/reporting_query_edit.png)
 
-Dieser Datenauswahl-Modus empfiehlt sich dann, wenn die Daten des Berichts über die Datenbank abgerufen oder erstellt werden. In bestimmten Fällen ist es auch möglich, die Daten direkt über die im Bericht verwendeten Elemente auszuwählen: Beim Einfügen einer Grafik beispielsweise können Sie die Quelldaten direkt auswählen. Weitere Informationen finden Sie unter [Kontext verwenden](../../reporting/using/using-the-context.md).
+Dieser Datenauswahlmodus ist relevant, wenn die Daten im Bericht mithilfe der Daten in der Datenbank erfasst oder erstellt werden müssen. In einigen Fällen können Sie die Daten auch direkt aus den im Bericht verwendeten Elementen auswählen. Beispielsweise können Sie beim Einfügen eines Diagramms die Quelldaten direkt auswählen. Weitere Informationen finden Sie unter [Kontext verwenden](../../reporting/using/using-the-context.md).
 
 ## Verwenden der Daten aus einem Schema {#using-the-data-from-a-schema}
 
 Um direkt die mit einem Schema der Datenbank verbundenen Daten zu verwenden, wählen Sie die entsprechende Option im Abfrage-Editor aus und konfigurieren Sie die anzuwendende Abfrage.
 
-Im folgenden Beispiel wird die Empfängeranzahl pro Land aus den Profilen der Datenbank abgerufen. Die Daten können dann in Tabellenform in einem Bericht angezeigt werden.
+Im folgenden Beispiel wird die Anzahl der Empfängerinnen und Empfänger für jedes Land unter den Profilen in der Datenbank erfasst. Sie können dann in einem Bericht in Form einer Tabelle angezeigt werden.
 
 ![](assets/reporting_query_from_schema.png)
 
@@ -70,7 +70,7 @@ Um zu vermeiden, dass die Abfragen sich auf die gesamte Datenbank beziehen, müs
 
 Sie können die Option **[!UICONTROL Automatisch mit dem Kontext filtern]** aktivieren, um den Bericht in einem bestimmten Knoten des Navigationsbaums (Liste, Empfänger, Versand) zugänglich zu machen.
 
-Die Option **[!UICONTROL Mit dem Ordner filtern]** ermöglicht es, durch Angabe eines bestimmten Ordners nur dessen Elemente zu berücksichtigen. Auf diese Weise können Sie den Bericht dahingehend konfigurieren, dass nur die Daten eines bestimmten Ordners des Navigationsbaums angezeigt werden, wie im folgenden Beispiel:
+Mit **[!UICONTROL Option „Mit Ordner filtern]** können Sie einen Ordner angeben und nur dessen Inhalt berücksichtigen. Auf diese Weise können Sie die Berichtsdaten so filtern, dass nur die Daten aus einem der Ordner in der Baumstruktur angezeigt werden, wie unten dargestellt:
 
 ![](assets/reporting_control_folder.png)
 

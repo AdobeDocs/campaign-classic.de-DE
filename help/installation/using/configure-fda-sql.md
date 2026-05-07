@@ -6,8 +6,8 @@ feature: Installation, Federated Data Access
 exl-id: 65ab4577-3126-4579-8fcc-e93772ebd1e8
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '507'
-ht-degree: 8%
+source-wordcount: '572'
+ht-degree: 7%
 
 ---
 
@@ -70,7 +70,7 @@ So konfigurieren Sie [!DNL Microsoft SQL Server] unter Windows:
 
 1. Überprüfen Sie, ob der SQL Server Native Client v11 im Fenster **[!UICONTROL Neue Daten-Source erstellen]** aufgeführt ist.
 
-1. Wenn der native SQL Server-Client nicht aufgeführt ist, können Sie ihn auf [dieser Seite) &#x200B;](https://www.microsoft.com/en-my/download/details.aspx?id=36434).
+1. Wenn der native SQL Server-Client nicht aufgeführt ist, können Sie ihn auf [dieser Seite) ](https://www.microsoft.com/en-my/download/details.aspx?id=36434).
 
 1. In Adobe Campaign können Sie dann Ihr externes [!DNL Microsoft SQL Server]-Konto konfigurieren. Weiterführende Informationen zur Konfiguration Ihres externen Kontos finden Sie in [diesem Abschnitt](#sql-external).
 
@@ -88,7 +88,7 @@ Sie müssen ein [!DNL Microsoft SQL Server] externes Konto erstellen, um Ihre Ca
 
    ![](assets/sql.png)
 
-1. Konfigurieren Sie die Authentifizierung des externen Microsoft SQL Server **-Kontos:**
+1. Konfigurieren Sie die Authentifizierung des externen Microsoft SQL Server ]**-Kontos:**[!UICONTROL 
 
    * **[!UICONTROL Server]**: URL des [!DNL Microsoft SQL Server].
 
@@ -110,8 +110,8 @@ Sie müssen ein [!DNL Microsoft SQL Server] externes Konto erstellen, um Ihre Ca
 
 Der Connector unterstützt die folgenden Optionen:
 
-| Option | Beschreibung  |
+| Option | Beschreibung |
 |---|---|
-| Authentifizierung | Vom Connector unterstützte Authentifizierungstyp. Aktuell unterstützter Wert: ActiveDirectoryMSI. <br> Weiterführende Informationen hierzu finden Sie in Beispiel 8 der [Dokumentation zu Microsoft](https://docs.microsoft.com/en-us/sql/connect/odbc/using-azure-active-directory?view=sql-server-ver15#example-connection-strings). |
+| Authentifizierung | Vom Connector unterstützte Authentifizierungstyp. Aktuell unterstützter Wert: ActiveDirectoryMSI. <br> Weitere Informationen hierzu finden Sie in Beispiel 8 der Dokumentation zu [Microsoft](https://docs.microsoft.com/en-us/sql/connect/odbc/using-azure-active-directory?view=sql-server-ver15#example-connection-strings). |
 | Verschlüsseln | Gibt an, ob Verbindungen die TLS-Verschlüsselung über das Netzwerk verwenden. Mögliche Werte sind **ja/obligatorisch (18.0 und höher)**, **nein/optional (18.0 und höher)** und **streng (18.0 und höher)**. Der Standardwert ist in Version 18.0 **Ja** und in früheren Versionen **Nein** festgelegt. <br>Weitere Informationen hierzu finden Sie in der [Dokumentation zu Microsoft](https://docs.microsoft.com/en-us/sql/connect/odbc/dsn-connection-string-attribute?view=azure-sqldw-latest#encrypt). |
 | TrustServerCertificate | Aktiviert die Verschlüsselung mit einem selbstsignierten Serverzertifikat bei Verwendung mit **Encrypt**. <br>Akzeptierte Werte: **ja** oder **nein** (Standardwert, was bedeutet, dass das Serverzertifikat validiert wird). |

@@ -11,8 +11,8 @@ topic-tags: updating-adobe-campaign
 exl-id: 0b71a4d3-b340-4742-bd69-4073ce271cf3
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '91'
-ht-degree: 85%
+source-wordcount: '116'
+ht-degree: 65%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 85%
 
 Wenn Sie von Adobe Campaign v6 auf v7 aktualisieren, empfehlen wir Folgendes.
 
-* Deinstallieren Sie unter Windows für sowohl das Client- als auch das Server-Upgrade Adobe Campaign v6, bevor Sie v7 installieren. Sichern Sie zuvor Ihre Log- und Konfigurationsdateien.
+* Deinstallieren Sie unter Windows für das Client- und das Server-Upgrade Adobe Campaign v6, bevor Sie v7 installieren. Vergessen Sie nicht, Ihre Protokoll- und Konfigurationsdateien vorher zu sichern.
 * Entfernen Sie unter Linux für das Server-Upgrade das Adobe Campaign v6-Package, bevor Sie v7 installieren.
 
 Weitere Informationen zu Migrationsverfahren und Best Practices finden Sie unter:

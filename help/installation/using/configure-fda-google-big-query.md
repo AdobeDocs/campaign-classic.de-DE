@@ -9,7 +9,7 @@ topic-tags: connectors
 exl-id: ebaad59f-0607-4090-92d0-e457fbf9a348
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '1009'
+source-wordcount: '1092'
 ht-degree: 7%
 
 ---
@@ -177,7 +177,7 @@ Das Dienstprogramm für das Massenladen ermöglicht eine schnellere Übertragung
 
 Sie müssen ein [!DNL Google BigQuery] externes Konto erstellen, um Ihre Adobe Campaign Classic-Instanz mit Ihrer [!DNL Google BigQuery] externen Datenbank zu verbinden.
 
-1. Adobe Campaign Classic Klicken Sie im **[!UICONTROL Explorer]** auf **[!UICONTROL Administration]** &quot;>&quot; **[!UICONTROL Plattform]** &quot;>&quot; **[!UICONTROL Externe Konten]**.
+1. Klicken Sie im **[!UICONTROL Explorer]** auf **[!UICONTROL Administration]** &quot;>&quot; **[!UICONTROL Plattform]** &quot;>&quot; **[!UICONTROL Externe Konten]**.
 
 1. Wählen Sie **[!UICONTROL Neu]** aus.
 
@@ -202,7 +202,7 @@ Sie müssen ein [!DNL Google BigQuery] externes Konto erstellen, um Ihre Adobe C
 
 Der Connector unterstützt die folgenden Optionen:
 
-| Option | Beschreibung  |
+| Option | Beschreibung |
 |:-:|:-:|
 | ProxyType | Proxy-Typ, der zum Herstellen einer Verbindung mit BigQuery über ODBC- und SDK-Connectoren verwendet wird. </br>HTTP (Standard), http_no_tunnel, socks4 und socks5 werden derzeit unterstützt. |
 | ProxyHost | Hostname oder IP-Adresse, unter der der Proxy erreichbar ist. |
@@ -210,7 +210,7 @@ Der Connector unterstützt die folgenden Optionen:
 | ProxyUid | Benutzername für den authentifizierten Proxy |
 | proxyPwd | ProxyUid-Kennwort |
 | bqpath | Beachten Sie, dass dies nur für das Tool für Massenladevorgänge gilt (Cloud SDK). </br> Um die Verwendung der PATH-Variablen zu vermeiden oder wenn der Ordner „google-cloud-sdk“ an einen anderen Speicherort verschoben werden muss, können Sie mit dieser Option den genauen Pfad zum Ordner „bin“ des Cloud-SDK auf dem Server angeben. |
-| GCloudConfigName | Beachten Sie, dass dies ab Version 7.3.4 gilt und nur für das Tool für Massenladevorgänge (Cloud SDK).</br> Die Google Cloud SDK verwendet Konfigurationen zum Laden von Daten in BigQuery-Tabellen. Die Konfiguration mit dem Namen `accfda` speichert die Parameter zum Laden der Daten. Diese Option ermöglicht es Benutzenden jedoch, einen anderen Namen für die Konfiguration anzugeben. |
-| GCloudDefaultConfigName | Beachten Sie, dass dies ab Version 7.3.4 gilt und nur für das Tool für Massenladevorgänge (Cloud SDK).</br> Die aktive Google Cloud SDK-Konfiguration kann nicht gelöscht werden, ohne das aktive Tag zuerst an eine neue Konfiguration zu übertragen. Diese temporäre Konfiguration ist erforderlich, um die Hauptkonfiguration zum Laden von Daten neu zu erstellen. Der Standardname für die temporäre Konfiguration lautet `default`. Dieser kann bei Bedarf geändert werden. |
+| GCloudConfigName | Beachten Sie, dass dies ab Version 7.3.4 gilt und nur für das Tool für Massenladevorgänge (Cloud SDK).</br> Google Cloud SDK verwendet Konfigurationen zum Laden von Daten in BigQuery-Tabellen. Die Konfiguration mit dem Namen `accfda` speichert die Parameter zum Laden der Daten. Diese Option ermöglicht es Benutzenden jedoch, einen anderen Namen für die Konfiguration anzugeben. |
+| GCloudDefaultConfigName | Beachten Sie, dass dies ab Version 7.3.4 gilt und nur für das Tool für Massenladevorgänge (Cloud SDK).</br> Die aktive Google Cloud SDK-Konfiguration kann erst gelöscht werden, nachdem das aktive Tag in eine neue Konfiguration übertragen wurde. Diese temporäre Konfiguration ist erforderlich, um die Hauptkonfiguration zum Laden von Daten neu zu erstellen. Der Standardname für die temporäre Konfiguration lautet `default`. Dieser kann bei Bedarf geändert werden. |
 | GCloudRecreateConfig | Beachten Sie, dass dies ab Version 7.3.4 gilt und nur für das Tool für Massenladevorgänge (Cloud SDK).</br> Bei Festlegung auf `false` versucht der Massenlademechanismus nicht, die Google Cloud SDK-Konfigurationen neu zu erstellen, zu löschen oder zu ändern. Stattdessen werden die Daten unter Verwendung der auf dem Computer vorhandenen Konfiguration geladen. Diese Funktion ist nützlich, wenn andere Vorgänge von Google Cloud SDK-Konfigurationen abhängen. </br> Wenn der Benutzer diese Engine-Option ohne ordnungsgemäße Konfiguration aktiviert, gibt der Massenlademechanismus eine Warnmeldung aus: `No active configuration found. Please either create it manually or remove the GCloudRecreateConfig option`. Um weitere Fehler zu vermeiden, wird auf die Verwendung des standardmäßigen Massenlademechanismus zum Einfügen von ODBC-Arrays zurückgegriffen. |
 

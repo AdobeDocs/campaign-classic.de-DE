@@ -9,7 +9,7 @@ topic-tags: deployment-types-
 exl-id: 194366ab-fd9f-4431-9163-ae16c1f96db2
 source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
-source-wordcount: '1079'
+source-wordcount: '1096'
 ht-degree: 4%
 
 ---
@@ -71,7 +71,7 @@ Wenn das Volumen wächst, verschiebt eine Variante dieser Architektur den Datenb
    * das erste Gerät, das der Öffentlichkeit zur Verfolgung und zum Verweisen auf den Computer auf seiner öffentlichen IP-Adresse zur Verfügung gestellt wird;
    * Der zweite Alias, der internen Benutzern für den Konsolenzugriff bereitgestellt wird und auf denselben Computer verweist.
 
-* Firewall konfiguriert, um SMTP (25)-, DNS (53)-, HTTP (80)-, HTTPS (443)-, SQL (1521 für Oracle, 5432 für PostgreSQL usw.)-Ports zu öffnen. Weitere Informationen finden Sie unter [Netzwerkkonfiguration](../../installation/using/network-configuration.md).
+* Firewall konfiguriert, um SMTP (25), DNS (53), HTTP (80), HTTPS (443), SQL (1521 für Oracle, 5432 für PostgreSQL usw.) zu öffnen Ports. Weitere Informationen finden Sie unter [Netzwerkkonfiguration](../../installation/using/network-configuration.md).
 
 In den folgenden Beispielen sind die Parameter der -Instanz:
 
@@ -222,13 +222,13 @@ Gehen Sie wie folgt vor:
 
    Führen Sie die Schritte im Assistenten aus und erstellen Sie die mit der Verbindungsinstanz verknüpfte Datenbank.
 
-   Weitere Informationen hierzu finden Sie unter [&#x200B; und Konfiguration der Datenbank](../../installation/using/creating-and-configuring-the-database.md).
+   Weitere Informationen hierzu finden Sie unter [ und Konfiguration der Datenbank](../../installation/using/creating-and-configuring-the-database.md).
 
    Melden Sie sich nach der Erstellung der Datenbank ab.
 
 1. Melden Sie sich über die Option **admin** ohne Kennwort wieder bei der Client-Konsole an und starten Sie den Bereitstellungsassistenten (Menü **[!UICONTROL Tools > Erweitert]**), um die Konfiguration der Instanz abzuschließen.
 
-   Weitere Informationen hierzu finden Sie unter &quot;[&#x200B; einer Instanz](../../installation/using/deploying-an-instance.md).
+   Weitere Informationen hierzu finden Sie unter &quot;[ einer Instanz](../../installation/using/deploying-an-instance.md).
 
    Die wichtigsten festzulegenden Parameter sind:
 
@@ -239,7 +239,7 @@ Gehen Sie wie folgt vor:
 
      ![](assets/s_ncs_install_deployment_wiz_09.png)
 
-     Da der Adobe Campaign-Server sowohl als Anwendungs- als auch als Weiterleitungsserver verwendet wird, stellt die interne URL zur Erfassung von Trackinglogs und zur Übertragung von URLs eine direkte interne Verbindung zu Tomcat (https://localhost:8080) dar.
+     Da der Adobe Campaign-Server sowohl als Anwendungs- als auch als Weiterleitungsserver verwendet wird, stellt die interne URL zur Erfassung von Trackinglogs und zur Übertragung von URLs eine direkte interne Verbindung zu Tomcat dar (https://localhost:8080).
 
    * Bounce-Management: Geben Sie die Parameter für die Handhabung von Bounce Messages ein (berücksichtigen Sie nicht **Abschnitt** Unverarbeitete Bounce Messages).
    * Zugriff von: Geben Sie die beiden URLs für Berichte an: Web-Formulare und Mirrorseiten.

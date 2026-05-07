@@ -7,7 +7,7 @@ role: Developer
 exl-id: 04b0a0e5-d6df-447c-ac67-66adb1bdf717
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '1037'
+source-wordcount: '1040'
 ht-degree: 0%
 
 ---
@@ -88,7 +88,7 @@ Die hinzuzufügenden Funktionen finden Sie in der **„package“** XML-Format. 
 
 Wenn Sie Funktionen zu mehreren verschiedenen Gruppen hinzufügen möchten, können Sie mehrere `<group>` Elemente in derselben Liste nachverfolgen lassen.
 
-Schließlich kann ein `<group>`-Element die Definition einer oder mehrerer Funktionen enthalten, d. h. den Zweck der Paketdatei. Die `<function>`   -Element wird im folgenden Absatz beschrieben.
+Schließlich kann ein `<group>`-Element die Definition einer oder mehrerer Funktionen enthalten, d. h. den Zweck der Paketdatei. Das `<function>` Element wird im folgenden Absatz beschrieben.
 
 ## Funktionsdeskriptor &lt;function>&lt;/function> {#function-descriptor--function-}
 
@@ -122,7 +122,7 @@ Das Feld **@name** bezieht sich auf den Namen der Funktion, und „args“ ist d
 * Schließlich stellt das **providerPart**-Element die Funktionsimplementierung bereit.
 
    * Das **provider**-Attribut ist obligatorisch. Es gibt die Datenbanksysteme an, für die die Implementierung bereitgestellt wird. Wie im Beispiel gezeigt, können bei unterschiedlichen Ausdruckssyntaxen oder zugrunde liegenden Funktionen alternative Implementierungen je nach Datenbank bereitgestellt werden.
-   * Das Attribut **@body** enthält die Funktionsimplementierung. Hinweis: Diese Implementierung muss ein Ausdruck in der Datenbanksprache sein (kein Code-Block). Je nach Datenbanken können Ausdrücke Unterabfragen sein („(Spalte aus Tabelle auswählen, wobei…)„), die nur einen einzigen Wert zurückgeben. Dies ist beispielsweise der Fall in Oracle (die Abfrage muss in Klammern geschrieben werden).
+   * Das Attribut **@body** enthält die Funktionsimplementierung. Hinweis: Diese Implementierung muss ein Ausdruck in der Datenbanksprache sein (kein Code-Block). Je nach Datenbank können Ausdrücke Unterabfragen sein („(Spalte aus Tabelle auswählen, wobei…)„) Gibt nur einen einzigen Wert zurück. Dies ist beispielsweise der Fall in Oracle (die Abfrage muss in Klammern geschrieben werden).
 
   >[!NOTE]
   >

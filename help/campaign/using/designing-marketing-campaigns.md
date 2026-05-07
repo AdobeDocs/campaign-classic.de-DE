@@ -8,8 +8,8 @@ hide: true
 exl-id: 4e0df18f-3623-4dfb-a2f8-ad293dbc4dd5
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '434'
-ht-degree: 73%
+source-wordcount: '453'
+ht-degree: 49%
 
 ---
 
@@ -45,23 +45,23 @@ Im Folgenden werden Termini dargestellt, die im Zusammenhang mit Campaign von Be
 
 * **Plan**
 
-  Ein Marketing-Plan umfasst unterschiedliche Programme einer bestimmten Kalenderperiode. Er führt das für diesen Zeitraum zugeteilte Budget und kann mit Dokumenten und Zielvorgaben verbunden werden.
+  Der Marketing-Plan kann mehrere Programme enthalten. Er ist an einen Zeitraum im Kalender gebunden, verfügt über zugewiesene Haushaltsmittel und kann auch mit Dokumenten und Zielen verknüpft werden.
 
   Weitere Informationen hierzu finden Sie im Abschnitt [Kampagnenkalender](../../campaign/using/accessing-marketing-campaigns.md#campaign-calendar).
 
 * **Workflow**
 
-  Ein Kampagnen-Workflow enthält dieselben Aktivitäten wie jede andere Art von Workflow, bezieht sich jedoch speziell auf eine Kampagne. Mit ihm können Sendungen für alle verfügbaren Kanäle erstellt und konfiguriert werden.
+  Ein Kampagnen-Workflow enthält dieselben Aktivitäten wie alle Workflows, ist jedoch kampagnenspezifisch. Sendungen können für alle verfügbaren Kanäle erstellt und konfiguriert werden.
 
   Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
 
 * **Einleitung**
 
-  In Kampagnen, Programmen und Plänen kann eine Liste mit Zielvorgaben angegeben werden. Es handelt sich hierbei um quantifizierte, zu erreichende Werte. Am Ende der Kampagne, des Programms oder des Plans ermöglicht das MRM-Modul den Vergleich zwischen Zielvorgaben und Resultaten in dedizierten Berichten.
+  Innerhalb der Kampagne, des Programms oder des Plans können Sie eine Liste der Ziele angeben. Dies sind quantifizierte Werte, die erreicht werden sollen. Am Ende der Kampagne, des Programms oder des Plans ermöglicht das MRM-Modul den Vergleich der Ziele und Ergebnisse in speziellen Berichten.
 
 * **Versandentwurf**
 
-  Ein Versandentwurf ist eine strukturierte Beschreibung eines Versands. Jeder Versand kann einen Entwurf referenzieren, der zum Beispiel passende Angebote, anzuhängende Dokumente oder Links zu Verkaufsstellen enthält. Entsprechend dem ausgewählten Versandentwurf werden die jeweiligen enthaltenen Angebote im Versand verzeichnet.
+  Ein Versandentwurf ist eine strukturierte Beschreibung eines Versands. Jeder Versand kann sich auf einen Versandentwurf beziehen, der beispielsweise die zugehörigen Angebote, anzuhängenden Dokumente oder einen Link zu Geschäften enthält. Ein Angebot kann im Versand entsprechend dem ausgewählten Versandentwurf referenziert werden.
 
   Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
 
@@ -69,6 +69,6 @@ Im Folgenden werden Termini dargestellt, die im Zusammenhang mit Campaign von Be
 
 In diesem Video werden die wichtigsten Konzepte von Marketing-Kampagnen vorgestellt.
 
->[!VIDEO](https://video.tv.adobe.com/v/326572?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/35131?quality=12)
 
 Weitere [!DNL Campaign Classic] Anleitungsvideos finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).

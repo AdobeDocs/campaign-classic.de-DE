@@ -6,9 +6,9 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Web Forms
 exl-id: 364d90af-4b18-4104-8b6a-be80cfde3b0b
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: ht
-source-wordcount: '1079'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1092'
+ht-degree: 73%
 
 ---
 
@@ -25,7 +25,7 @@ Folgende Feldtypen sind verfügbar:
 * Wert auf der Basis der zuvor eingegebenen Antworten (im Kontext des Formulars) oder der Datenbank.
 * Hypertext-Link, HTML, horizontaler Balken. Siehe [HTML-Inhalt einfügen](#inserting-html-content).
 * Bild, das in der Ressourcenbibliothek oder auf einem für Benutzer zugänglichen Server gespeichert ist. Siehe [Bilder einfügen](#inserting-images).
-* Script, das Client- und/oder Server-seitig ausgeführt wird. Es muss in JavaScript verfasst und mit den gängigen Browsern kompatibel sein, um die korrekte Ausführung beim Client zu gewährleisten.
+* Script, das Client- und/oder Server-seitig ausgeführt wird Sie muss in JavaScript geschrieben sein und mit den meisten Browsern kompatibel sein, um eine korrekte Ausführung auf Client-Seite sicherzustellen.
 
   >[!NOTE]
   >
@@ -37,7 +37,7 @@ Sie können in eine Formularseite HTML-Inhalte einfügen, wie z. B. Hypertext-L
 
 Mit dem HTML-Editor können Sie den Inhalt eingeben, der in die Formularseite eingefügt werden soll. Um den Editor zu öffnen, klicken Sie auf **[!UICONTROL Statische Elemente]** > **[!UICONTROL HTML]**.
 
-Sie können Inhalte direkt eingeben und formatieren oder das Fenster mit dem Quellcode öffnen, um externen Code einzukopieren. Wählen Sie dazu das erste Symbol in der Symbolleiste aus, um zum Quellcode-Modus zu wechseln.
+Sie können Ihre Inhalte direkt eingeben und formatieren oder das Quellcodefenster anzeigen, um sie in externe Inhalte einzufügen. Um in den Modus „Quell-Code“ zu wechseln, klicken Sie auf das erste Symbol in der Symbolleiste:
 
 ![](assets/s_ncs_admin_survey_html_editor.png)
 
@@ -47,7 +47,7 @@ Um ein Datenbankfeld einzufügen, verwenden Sie die Personalisierungs-Schaltflä
 
 >[!NOTE]
 >
->Die im HTML-Editor eingegebenen Strings werden nur übersetzt, wenn sie im Unter-Tab **[!UICONTROL Texte]** definiert sind. Ansonsten werden sie nicht erfasst. Weitere Informationen finden Sie unter [Webformular übersetzen](translating-a-web-form.md).
+>Die im HTML-Editor eingegebenen Zeichenfolgen werden nur übersetzt, wenn sie auf der Unterregisterkarte **[!UICONTROL Texte]** definiert sind. Andernfalls werden sie nicht gesammelt. Weitere Informationen finden Sie unter [Webformular übersetzen](translating-a-web-form.md).
 
 ### Links einfügen {#inserting-a-link}
 
@@ -59,7 +59,7 @@ Um einen Hypertext-Link hinzuzufügen, gehen Sie zu **[!UICONTROL Statische Elem
 
 * Im **[!UICONTROL Titel]** wird der Inhalt des Hypertext-Links so dargestellt, wie er auf der Formularseite erscheinen wird.
 * Die **[!UICONTROL URL]** ist die gewünschte Adresse, z. B.: [https://www.adobe.com](https://www.adobe.com) für eine Website oder [info@adobe.com](mailto:info@adobe.com), um eine Nachricht zu senden.
-* Im Feld **[!UICONTROL Fenster]** können Sie im Fall einer Website einen Anzeigemodus für den Link auswählen. Sie können den Link in einem neuen Fenster, dem aktuellen Fenster oder einem anderen Fenster öffnen.
+* Im Feld **[!UICONTROL Fenster]** können Sie den Anzeigemodus für den Link im Fall einer Site auswählen. Sie können den Link in einem neuen Fenster, im aktuellen Fenster oder in einem anderen Fenster öffnen.
 * Sie können eine QuickInfo wie unten gezeigt hinzufügen:
 
   ![](assets/s_ncs_admin_survey_send_an_email.png)
@@ -112,17 +112,17 @@ Sie können auch andere Aktionen für den Link definieren, sodass der Benutzer d
 
 ### HTML-Inhalt personalisieren {#personalizing-html-content}
 
-Sie können den HTML-Inhalt einer Formularseite mit auf einer vorherigen Seite erfassten Daten personalisieren. So können Sie beispielsweise ein Webformular für eine Kfz-Versicherung erstellen, auf deren erster Seite Sie die Möglichkeit bieten, Kontaktinformationen und die Automarke einzugeben.
+Sie können den HTML-Inhalt einer Formularseite mit Daten personalisieren, die auf einer vorherigen Seite aufgezeichnet wurden. Sie können beispielsweise ein Web-Formular für Kfz-Versicherungen erstellen, auf dessen erster Seite Sie Kontaktinformationen und die Marke des Fahrzeugs angeben können.
 
 ![](assets/s_ncs_admin_survey_tag_ctx_1.png)
 
-Mit Personalisierungsfeldern können Sie den Benutzernamen und die ausgewählte Marke nochmals auf der nächsten Seite einfügen. Die zu verwendende Syntax hängt vom Speichermodus der Informationen ab. Weitere Informationen hierzu finden Sie unter [Erfasste Informationen verwenden](web-forms-answers.md#using-collected-information).
+Verwenden Sie Personalisierungsfelder, um den Benutzernamen und die ausgewählte Marke erneut in die nächste Seite einzufügen. Die zu verwendende Syntax hängt vom Informationsspeichermodus ab. Weitere Informationen hierzu finden Sie unter [Erfasste Informationen verwenden](web-forms-answers.md#using-collected-information).
 
 >[!NOTE]
 >
 >Aus Sicherheitsgründen wird der in die Formel **`<%=`** eingegebene Wert durch Maskierungszeichen ersetzt.
 
-In unserem Beispiel werden der Vor- und Nachname des Empfängers in einem Feld der Datenbank gespeichert, während das Automodell in einer Variablen gespeichert wird. Die Syntax der personalisierten Nachricht auf Seite 2 sieht folgendermaßen aus:
+In unserem Beispiel werden der Vor- und Nachname des Empfängers in einem Feld der Datenbank gespeichert, während die Marke seines Autos in einer Variablen gespeichert wird. Die Syntax der auf Seite 2 personalisierten Nachricht sieht wie folgt aus:
 
 ![](assets/webapp_perso_vars_include.png)
 
@@ -168,12 +168,12 @@ Mit diesem Verfahren können Sie den Text von Web-Formularen nur einmal festlege
 
 Um in Formulare Bilder einzufügen, müssen diese auf einem Server gespeichert werden, auf den von außen zugegriffen werden kann.
 
-Wählen Sie das Menü **[!UICONTROL Statische Elemente]** > **[!UICONTROL Bild]** aus. 
+Wählen Sie das Menü **[!UICONTROL Statische Elemente]** > **[!UICONTROL Bild]** aus.
 
 Wählen Sie die Quelle des Bildes aus, das eingefügt werden soll: Es kann in einer öffentlichen Ressourcen-Bibliothek oder auf einem externen, von außen zugreifbaren Server gespeichert sein.
 
 ![](assets/s_ncs_admin_survey_add_img.png)
 
-Wenn das Bild aus einer Bibliothek stammt, wählen Sie es in der Dropdown-Liste des Felds aus. Wenn es in einer externen Datei gespeichert ist, geben Sie den Zugriffspfad ein. Der Titel wird angezeigt, wenn Sie den Cursor über das Bild bewegen (entspricht einem ALT-Feld in HTML) oder wenn das Bild nicht dargestellt wird.
+Wenn es sich um ein Bild aus der Bibliothek handelt, wählen Sie es im Kombinationsfeld des Felds aus. Wenn es sich in einer externen Datei befindet, geben Sie den Zugriffspfad ein. Die Beschriftung wird angezeigt, indem der Cursor über das Bild bewegt wird (entspricht einem ALT-Feld in HTML) oder wenn das Bild nicht angezeigt wird.
 
 Das Bild kann im mittleren Bereich des Editors angezeigt werden.

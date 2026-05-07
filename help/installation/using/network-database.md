@@ -9,8 +9,8 @@ topic-tags: prerequisites-and-recommendations-
 exl-id: 2a66dfaa-7fff-48de-bdd4-62f3ebfbab19
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
-source-wordcount: '132'
-ht-degree: 59%
+source-wordcount: '138'
+ht-degree: 45%
 
 ---
 
@@ -31,7 +31,7 @@ Sie müssen die Best Practices für die Datenbankmodul-Sicherheit anwenden.
 
 ## SSL-/TLS-Konfiguration
 
-Das Zertifikat können Sie mit openssl überprüfen. Die aktive Cipher Suite können Sie mit nmap überprüfen:
+Um das Zertifikat zu überprüfen, können Sie openssl verwenden. Um aktive Chiffren zu überprüfen, können Sie nmap verwenden:
 
 ```
 #!/bin/sh

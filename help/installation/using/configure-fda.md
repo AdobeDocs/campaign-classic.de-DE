@@ -9,8 +9,8 @@ topic-tags: connectors
 exl-id: 0b53b165-a6d8-4604-b3f0-3fa6fce35146
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '346'
-ht-degree: 55%
+source-wordcount: '355'
+ht-degree: 52%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 55%
 
 
 
-Abhängig von der externen Datenbank, auf die Sie von Adobe Campaign aus zugreifen möchten, müssen Sie bestimmte Konfigurationen vornehmen. Hierzu zählen im Prinzip die Einrichtung von Treibern und die Deklaration von Umgebungsvariablen für jedes DBMS auf dem Adobe Campaign-Server.
+Abhängig von der externen Datenbank, auf die Sie von Adobe Campaign aus zugreifen möchten, müssen Sie bestimmte Konfigurationen vornehmen. Bei diesen Konfigurationen müssen im Wesentlichen Treiber installiert und Umgebungsvariablen deklariert werden, die zu jedem RDBMS auf dem Adobe Campaign-Server gehören.
 
 Dazu müssen Sie die jeweilige Client-Ebene in der externen Datenbank auf dem Adobe Campaign-Server installieren.
 
@@ -51,7 +51,7 @@ Folgen Sie den unten stehenden Links, um mehr zu erfahren:
 * Campaign und [Microsoft SQL Server verbinden](../../installation/using/configure-fda-sql.md)
 * Campaign und [Netezza verbinden](../../installation/using/configure-fda-netezza.md)
 * Campaign und [Oracle verbinden](../../installation/using/configure-fda-oracle.md)
-* Campaign und [PostgreSQL) &#x200B;](../../installation/using/configure-fda-postgresql.md)
+* Campaign und [PostgreSQL) ](../../installation/using/configure-fda-postgresql.md)
 * Campaign und [SAP HANA verbinden](../../installation/using/configure-fda-sap-hana.md)
 * Campaign und [Snowflake verbinden](../../installation/using/configure-fda-snowflake.md)
 * Campaign und [Sybase IQ verbinden](../../installation/using/configure-fda-sybase.md)

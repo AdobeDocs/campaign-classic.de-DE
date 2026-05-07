@@ -94,7 +94,7 @@ Die Reihenfolge, in der `<attribute>` Elemente in einer `<srcschema>` definiert 
   Wenn ein Merkmal in einem Schema definiert ist, muss dieses Schema einen Hauptschlüssel haben, der auf einem einzelnen Feld basiert (zusammengesetzte Schlüssel sind nicht zulässig).
 
 * **featureDate (boolesch)**: Mit dem Merkmalsfeld &quot;@feature“ verknüpftes Attribut. Wenn der Wert „true“ lautet, können Sie damit herausfinden, wann der Wert zuletzt aktualisiert wurde.
-* **img (Zeichenfolge)**: Hiermit können Sie einen Pfad für ein Bild definieren, das mit einem Feld verknüpft ist (Namespace + Bildname) (Beispiel: img=„cus:mypicture.jpg„). Physisch muss das Bild auf den Anwendungsserver importiert werden.
+* **img (Zeichenfolge)** Hiermit können Sie einen Pfad für ein Bild definieren, das mit einem Feld verknüpft ist (Namespace + Bildname) (Beispiel: img=„cus:mypicture.jpg„). Physisch muss das Bild auf den Anwendungsserver importiert werden.
 * **label (Zeichenfolge)**: Der dem Feld zugeordnete Titel, der hauptsächlich für die Benutzerin oder den Benutzer in der Benutzeroberfläche bestimmt ist. Auf diese Weise können Sie Namensbeschränkungen vermeiden.
 * **length (Zeichenfolge)**: max. Anzahl der Zeichen für einen Wert des SQL-Feldes vom Typ „Zeichenfolge“. Wenn das Attribut &quot;@length“ nicht angegeben ist, erstellt Adobe Campaign automatisch ein Feld für 255 Zeichen.
 * **Localizable (Boolescher Wert)**: Wenn es aktiviert ist, weist dieses Attribut das Sammlungs-Tool an, den Wert des Attributs &quot;@label“ für die Übersetzung abzurufen (interne Verwendung).
@@ -146,12 +146,12 @@ Die Reihenfolge, in der `<attribute>` Elemente in einer `<srcschema>` definiert 
    * HTML
    * int64
    * link
-   * lang
+   * Lang
    * Memo
    * MNTOKEN
    * Prozent
    * Primärschlüssel
-   * Short
+   * Kurz
    * Zeichenfolge
    * time
    * timespan

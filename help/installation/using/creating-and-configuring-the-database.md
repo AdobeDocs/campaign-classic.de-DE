@@ -10,8 +10,8 @@ topic-tags: initial-configuration
 exl-id: f40bab8c-5064-40d9-beed-101a9f22c094
 source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
-source-wordcount: '1352'
-ht-degree: 1%
+source-wordcount: '1375'
+ht-degree: 2%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 Beim Erstellen einer Datenbank bietet Adobe Campaign zwei verschiedene Optionen:
 
-1. Datenbank erstellen oder wiederverwenden: Wählen Sie diese Option, wenn Sie eine neue Datenbank erstellen oder eine vorhandene wiederverwenden möchten. Siehe [&#x200B; 1: Erstellen/Recycling einer Datenbank](#case-1--creating-recycling-a-database).
+1. Datenbank erstellen oder wiederverwenden: Wählen Sie diese Option, wenn Sie eine neue Datenbank erstellen oder eine vorhandene wiederverwenden möchten. Siehe [ 1: Erstellen/Recycling einer Datenbank](#case-1--creating-recycling-a-database).
 1. Verwenden einer vorhandenen Datenbank: Wählen Sie diese Option, wenn bereits eine leere Datenbank von Ihrem Administrator erstellt wurde und Sie sie verwenden möchten, oder um die Struktur einer vorhandenen Datenbank zu erweitern. Siehe [Fall 2: Verwenden einer vorhandenen Datenbank](#case-2--using-an-existing-database).
 
 Die Konfigurationsschritte werden nachfolgend beschrieben.
@@ -30,7 +30,7 @@ Die Konfigurationsschritte werden nachfolgend beschrieben.
 >
 >Nur die **interne** Kennung kann diese Vorgänge ausführen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
-## 1. Fall: Erstellen/Recycling einer Datenbank {#case-1--creating-recycling-a-database}
+## &#x200B;1. Fall: Erstellen/Recycling einer Datenbank {#case-1--creating-recycling-a-database}
 
 Die Schritte zum Erstellen einer Datenbank oder zum Recycling einer vorhandenen Datenbank werden nachfolgend beschrieben. Einige Konfigurationen hängen von der verwendeten Datenbank-Engine ab:
 
@@ -39,17 +39,17 @@ Die folgenden Schritte sind erforderlich:
 * [Schritt 1: Auswählen der Datenbank-Engine](#step-1---selecting-the-database-engine),
 * [Schritt 2: Herstellen einer Verbindung mit dem Server](#step-2---connecting-to-the-server),
 * [Schritt 3: Verbindung und Merkmale der Datenbank](#step-3---connection-and-characteristics-of-the-database),
-* [Schritt 4: Zu installierende &#x200B;](#step-4---packages-to-install),
+* [Schritt 4: Zu installierende ](#step-4---packages-to-install),
 * [Schritt 5 - Erstellungsschritte](#step-5---creation-steps),
 * [Schritt 6: Erstellen der Datenbank](#step-6---creating-the-database).
 
-### 1. Schritt - Datenbank-Engine auswählen {#step-1---selecting-the-database-engine}
+### &#x200B;1. Schritt - Datenbank-Engine auswählen {#step-1---selecting-the-database-engine}
 
 Wählen Sie in der Dropdown-Liste die Datenbank-Engine aus.
 
 ![](assets/s_ncs_install_db_select_engine.png)
 
-Die unterstützten Datenbanken sind in der Campaign-[&#x200B; (Kompatibilitätsmatrix) &#x200B;](../../rn/using/compatibility-matrix.md).
+Die unterstützten Datenbanken sind in der Campaign-[ (Kompatibilitätsmatrix) ](../../rn/using/compatibility-matrix.md).
 
 Identifizieren Sie den Server und wählen Sie den auszuführenden Vorgangstyp aus. In diesem Fall **[!UICONTROL Erstellen oder recyceln Sie eine Datenbank]**.
 
@@ -111,7 +111,7 @@ Informationen dazu, welche Lösungen und Optionen Sie installieren dürfen, z. B
 
 ![](assets/s_ncs_install_modules.png)
 
-### 5. Schritt - Erstellungsschritte {#step-5---creation-steps}
+### &#x200B;5. Schritt - Erstellungsschritte {#step-5---creation-steps}
 
 Im Fenster **[!UICONTROL Erstellungsschritte]** können Sie das zur Erstellung der Tabellen verwendete SQL-Script anzeigen und bearbeiten.
 
@@ -149,7 +149,7 @@ Beispiel einer Microsoft SQL Server-Konfiguration in der base61-Datenbank, die m
 <dbcnx encrypted="1" login="campaign:myBase" password="myPassword" provider="DB" server="dbServer"/>
 ```
 
-## 2. Fall: Verwenden einer vorhandenen Datenbank {#case-2--using-an-existing-database}
+## &#x200B;2. Fall: Verwenden einer vorhandenen Datenbank {#case-2--using-an-existing-database}
 
 Sowohl die Datenbank als auch der Benutzer müssen vom Datenbankadministrator erstellt und die Zugriffsrechte korrekt konfiguriert worden sein.
 
@@ -159,11 +159,11 @@ Um eine vorhandene Datenbank zu verwenden, gehen Sie wie folgt vor:
 
 * [Schritt 1: Auswählen des Datenbank-](#step-1---choosing-the-database-engine),
 * [Schritt 2: Datenbankverbindungseinstellungen](#step-2---database-connection-settings),
-* [Schritt 3: Zu installierende &#x200B;](#step-3---packages-to-install),
+* [Schritt 3: Zu installierende ](#step-3---packages-to-install),
 * [Schritt 4: Erstellungsschritte](#step-4---creation-steps),
 * [Schritt 5: Erstellen der Datenbank](#step-5---creating-the-database).
 
-### 1. Schritt - Datenbank-Engine auswählen {#step-1---choosing-the-database-engine}
+### &#x200B;1. Schritt - Datenbank-Engine auswählen {#step-1---choosing-the-database-engine}
 
 Wählen Sie die Datenbank-Engine aus der Dropdown-Liste aus.
 
@@ -210,7 +210,7 @@ Informationen dazu, welche Lösungen und Optionen Sie installieren dürfen, z. B
 
 ![](assets/s_ncs_install_modules.png)
 
-### 4. Schritt - Erstellungsschritte {#step-4---creation-steps}
+### &#x200B;4. Schritt - Erstellungsschritte {#step-4---creation-steps}
 
 Im Fenster **[!UICONTROL Erstellungsschritte]** können Sie das zur Erstellung der Tabellen verwendete SQL-Script anzeigen und bearbeiten.
 

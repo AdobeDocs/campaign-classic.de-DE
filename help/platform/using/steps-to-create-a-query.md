@@ -12,7 +12,7 @@ hide: true
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '147'
-ht-degree: 100%
+ht-degree: 83%
 
 ---
 
@@ -31,7 +31,7 @@ Folgende Schritte sind auszuführen, um eine Abfrage in Adobe Campaign zu erstel
 
 >[!NOTE]
 >
->* Alle diese Schritte können im generischen Abfrage-Editor durchgeführt werden. In anderen Anwendungskontexten sind u. U. gewisse Schritte nicht nötig.\
+>* Alle diese Schritte sind im generischen Abfrage-Editor verfügbar. Wenn eine Abfrage in einem anderen Kontext erstellt wird, können einige Schritte ausgeschlossen werden.\
 >Das Abfrage-Tool wird in [diesem Abschnitt](../../workflow/using/query.md) beschrieben.
 >* Weitere Informationen zu Abfragen und wie diese erstellt werden finden Sie in der [Dokumentation zu Campaign v8](../../workflow/using/query.md).
 

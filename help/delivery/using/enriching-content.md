@@ -7,15 +7,15 @@ feature: Data Management
 role: User, Developer
 exl-id: a4472a7c-a16b-4d10-a8ca-f74ca5f62de4
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
-workflow-type: ht
-source-wordcount: '674'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '677'
+ht-degree: 94%
 
 ---
 
 # Anreicherung von Inhalten{#enriching-content}
 
-Aggregatoren ermöglichen die Anreicherung von Inhalten mit externen Daten. Letztere können entweder aus generischen Abfragen oder aus verknüpften Tabellen stammen.
+Aggregatoren ermöglichen es Ihnen, den Inhalt mit externen Daten anzureichern. Diese Daten stammen aus generischen Abfragen oder verknüpften Tabellen.
 
 ## Generische Abfragen {#generic-queries}
 
@@ -43,7 +43,6 @@ Ein Assistent führt Sie durch die einzelnen Schritte zur Konfiguration Ihrer Ab
 
 1. Geben Sie im ersten Schritt den Titel und das Schema an, das die abzurufenden Daten enthält.
 
-
    ![](assets/d_ncs_content_query1.png)
 
    >[!NOTE]
@@ -68,7 +67,7 @@ Relationen ermöglichen den Abruf von externen, mit dem Inhalt verknüpften Date
 
 Man unterscheidet zwischen zwei Typen verknüpfter Daten:
 
-* Inhaltsrelationen: Es handelt sich hier um den nativen Modus des Content-Managements. Der Inhalt der Relation wird automatisch in das XML-Ausgabedokument integriert.
+* Inhaltsverknüpfungen: Dies ist der native Inhaltsverwaltungsmodus. Der Inhalt des Links wird automatisch in das XML-Ausgabedokument integriert.
 * Relationen zu externen Tabellen: Sie ermöglichen den Zugriff auf alle anderen Tabellen der Datenbank, erfordern jedoch die Verwendung eines Aggregators, um die Daten abzurufen.
 
 ### Relation zu einem Inhaltsschema {#link-to-a-content-schema}

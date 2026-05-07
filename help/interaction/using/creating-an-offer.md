@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: c6dd2709-06e3-4227-bbec-99f3d80144fe
 source-git-commit: 192505e1c4d387de55ca18b578b837d237cc0607
-workflow-type: ht
-source-wordcount: '838'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '840'
+ht-degree: 71%
 
 ---
 
@@ -52,7 +52,7 @@ Wählen Sie mithilfe der Dropdown-Listen Start- und Enddatum der Verwendung des 
 
 ![](assets/offer_eligibility_create_002.png)
 
-Außerhalb dieses Zeitraums wird das Angebot nicht vom Angebotsmodul ausgewählt. Wenn Sie auch auf Ebene der Kategorie Verwendungsdaten definiert haben, kommt nur der sich überschneidende Zeitraum zum Tragen.
+Außerhalb dieses Datumsbereichs wird das Angebot nicht von der Interaction -Engine ausgewählt. Falls Sie auch für die Angebotskategorie einen Eignungszeitraum definiert haben, gilt der restriktivste Zeitraum.
 
 ### Zielgruppenfilter {#filters-on-the-target}
 
@@ -68,11 +68,11 @@ Wenn bereits vordefinierte Filter erstellt wurden, können Sie diese in der List
 
 ### Angebotsgewichtung {#offer-weight}
 
-Um dem Angebotsmodul die Möglichkeit zu geben, zwischen verschiedenen für eine Person geeigneten Angeboten zu wählen, ist es empfehlenswert, jedem Angebot eine Gewichtung zuzuweisen. Sie können darüber hinaus Filter auf die Zielgruppe anwenden oder die Platzierung, auf die sich das Gewicht beziehen soll, einschränken. Ein Angebot mit einer höheren Gewichtung wird demzufolge einem Angebot mit niedriger Gewichtung vorgezogen.
+Damit die Engine zwischen mehreren Angeboten wählen kann, für die die Zielgruppe geeignet ist, müssen Sie dem Angebot eine oder mehrere Gewichtungen zuweisen. Sie können bei Bedarf auch Filter auf die Zielgruppe anwenden oder die Platzierung einschränken, auf die die Gewichtung angewendet werden soll. Ein Angebot mit einer höheren Gewichtung wird gegenüber einem Angebot mit weniger Gewichtung bevorzugt.
 
 Es besteht weiterhin die Möglichkeit, für ein Angebot verschiedene Gewichtungen zu definieren, z. B. in Bezug auf einen Zeitraum, eine Zielgruppe oder auch eine Platzierung.
 
-Ein Angebot kann für Kontakte im Alter von 18 bis 25 Jahren eine Gewichtung A aufweisen und eine Gewichtung B für alle Kontakte über 25 Jahre. Einem Angebot, dessen Verwendungszeitraum auf die Sommermonate beschränkt ist, kann im Juli eine Gewichtung A und im August eine Gewichtung B zugewiesen werden.
+Beispielsweise kann ein Angebot für Kontakte im Alter von 18 bis 25 Jahren das Gewicht A und für Kontakte oberhalb dieses Bereichs das Gewicht B aufweisen. Wenn ein Angebot den ganzen Sommer über geeignet ist, kann es auch eine Gewichtung von A im Juli und eine Gewichtung von B im August haben.
 
 >[!NOTE]
 >
@@ -84,7 +84,7 @@ Gehen Sie wie folgt vor, um eine Gewichtung zu konfigurieren:
 
    ![](assets/offer_weight_create_001.png)
 
-1. Geben Sie den Wert der Gewichtung an und benennen Sie sie. Standardmäßig wird der Wert 1 zugeteilt.
+1. Ändern Sie die Bezeichnung und weisen Sie eine Gewichtung zu. Standardmäßig ist es 1.
 
    ![](assets/offer_weight_create_006.png)
 
@@ -110,7 +110,7 @@ Gehen Sie wie folgt vor, um eine Gewichtung zu konfigurieren:
 
    >[!NOTE]
    >
-   >Wenn ein bestimmtes Angebot mit verschiedenen Gewichtungen für einen Kontakt infrage kommt, wählt das Angebotsmodul die höchste Gewichtung aus. Das Angebotsmodul schlägt pro Abfrage einem Kontakt jedes Angebot maximal einmal vor.
+   >Wenn eine Zielgruppe für ein ausgewähltes Angebot mit mehreren Gewichtungen infrage kommt, behält die Engine die beste (höchste) Gewichtung. Beim Aufruf des Angebotsmoduls wird maximal einmal pro Kontakt ein Angebot ausgewählt.
 
 ### Übersicht der für ein Angebot konfigurierten Eignungsregeln {#a-summary-of-offer-eligibility-rules}
 
@@ -129,7 +129,7 @@ Klicken Sie hierfür auf den Link **[!UICONTROL Planung und Eignungsregeln des A
 1. Füllen Sie die diversen zur Verfügung stehenden Felder aus:
 
    * **[!UICONTROL Titel]** : Geben Sie den Titel an, der in Ihrem Angebot angezeigt werden soll. Warnung: Hierbei handelt es sich nicht um den Titel des Angebots, der in der Registerkarte **[!UICONTROL Allgemein]** definiert ist.
-   * **[!UICONTROL Ziel-URL]**: Geben Sie die URL Ihres Angebots an. Um korrekt verarbeitet werden zu können, muss sie zwingend mit &quot;http://&quot; oder &quot;https://&quot; beginnen.
+   * **[!UICONTROL Ziel-URL]** : Geben Sie die URL Ihres Angebots an. Um ordnungsgemäß verarbeitet zu werden, muss es mit &quot;http://&quot; oder &quot;https://&quot; beginnen.
    * **[!UICONTROL Bild-URL]**: Geben Sie die URL oder einen Zugangspfad für das Bild Ihres Angebots an.
    * **[!UICONTROL HTML-Inhalt]**/**[!UICONTROL Textinhalt]**: Geben Sie den Body Ihres Angebots in den Tab Ihrer Wahl ein. Um Tracking zu generieren, muss der **[!UICONTROL HTML-Inhalt]** aus HTML-Elementen bestehen, die in ein `<div>`-Typelement eingeschlossen werden können. Beispielsweise erzeugt ein `<table>`-Element auf der HTML-Seite Folgendes:
 
@@ -160,7 +160,7 @@ Klicken Sie hierfür auf den Link **[!UICONTROL Planung und Eignungsregeln des A
 
 ## Angebotsvorschau {#previewing-the-offer}
 
-Sobald der Angebotsinhalt konfiguriert wurde, können Sie die endgültige Darstellung des Angebots für die Empfänger prüfen. Gehen Sie wie folgt vor:
+Sobald Ihr Angebotsinhalt konfiguriert ist, können Sie das Angebot so anzeigen, wie es für den Empfänger angezeigt wird. Gehen Sie dazu wie folgt vor:
 
 1. Klicken Sie auf den **[!UICONTROL Vorschau]**-Tab.
 
@@ -176,11 +176,11 @@ Sobald der Angebotsinhalt konfiguriert wurde, können Sie die endgültige Darste
 
 ## Angebotshypothese erstellen {#creating-a-hypothesis-on-an-offer}
 
-Sie haben die Möglichkeit, Hypothesen bezüglich Ihrer Angebotsvorschläge zu definieren. Auf diese Weise lässt sich der Einfluss der Angebote auf die Verkaufszahlen des derart beworbenen Produkts ermitteln.
+Sie können Hypothesen zu Ihren Angebotsvorschlägen erstellen. Auf diese Weise können Sie die Auswirkungen Ihrer Angebote auf die für das betreffende Produkt getätigten Käufe ermitteln.
 
 >[!NOTE]
 >
->Die Hypothesen werden mithilfe von Response Manager erstellt. Bitte prüfen Sie Ihren Lizenzvertrag.
+>Diese Hypothesen werden über den Response Manager ausgeführt. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
 
 Die zu einem Angebotsvorschlag definierten Hypothesen können im Tab **[!UICONTROL Messung]** des Angebots eingesehen werden.
 

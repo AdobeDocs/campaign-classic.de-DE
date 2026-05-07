@@ -7,8 +7,8 @@ hide: true
 exl-id: c3de99f8-089f-4c7c-be11-f375a9463eaa
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '397'
-ht-degree: 100%
+source-wordcount: '398'
+ht-degree: 60%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 
 
-Die Dimensionsänderung ermöglicht den Wechsel der Zielgruppendimension im Verlauf der Zielbestimmung. Je nach Datenmodell und Eingangsdimension können Sie beispielsweise von der Dimension &quot;Policen&quot; zur Dimension &quot;Kunden&quot; wechseln.
+Mit der Aktivität Dimensionsänderung können Sie die Zielgruppendimension während des Zielkonstruktionszyklus ändern. Die Achsenverschiebung hängt von der Datenvorlage und der Eingabedimension ab. Auf diese Weise können Sie beispielsweise von der Dimension „Verträge“ zur Dimension „Kunden“ wechseln.
 
 Diese Aktivität bietet des Weiteren die Möglichkeit, Zusatzspalten für die neue Zielgruppe zu definieren.
 
@@ -30,11 +30,11 @@ Gehen Sie wie folgt vor:
 
    ![](assets/s_user_change_dimension_param1.png)
 
-1. Sie können entscheiden, ob alle oder nur bestimmte Elemente in der ausgehenden Transition übermittelt werden sollen. Im vorliegenden Beispiel wird die Anzahl der möglichen Duplikate auf 2 begrenzt.
+1. Bei der Dimensionsänderung können Sie alle Elemente beibehalten oder diejenigen auswählen, die in der Ausgabe beibehalten werden sollen. Im folgenden Beispiel gilt für den Wert max. Anzahl der Duplikate ist auf 2 gesetzt.
 
    ![](assets/s_user_change_dimension_limit.png)
 
-   Wenn Sie nur einen Datensatz beibehalten wollen, erscheint im Arbeitsschema eine Sammlung, welche alle Datensätze, die nicht im Endergebnis enthalten sind, enthält. Anhand dieser Sammlung können Sie, wie bei anderen Sammlungen auch, Aggregate berechnen oder Informationen abrufen.
+   Wenn Sie sich dafür entscheiden, nur einen Datensatz zu behalten, wird im Arbeitsschema eine Sammlung angezeigt: Diese Sammlung stellt alle Datensätze dar, die im Endergebnis nicht angesprochen werden (da nur ein Datensatz beibehalten wird). Wie alle anderen Sammlungen können Sie mit dieser Sammlung Aggregate berechnen oder Informationen in Spalten abrufen.
 
    Wenn Sie beispielsweise von der Dimension **[!UICONTROL Kunden]** zur Dimension **[!UICONTROL Empfänger]** wechseln, können Sie die Kunden eines bestimmten Geschäfts unter Angabe der getätigten Käufe abrufen.
 
@@ -74,7 +74,7 @@ Gehen Sie wie folgt vor:
 
      ![](assets/wf_change-dimension_sample_05.png)
 
-1. Starten Sie den Workflow, um das Ergebnis zu prüfen. Die folgenden Abbildungen zeigen die Tabellen vor und nach der Dimensionsänderung sowie die Struktur der Workflow-Tabellen:
+1. Führen Sie den Workflow aus, um das Ergebnis dieser Konfiguration anzuzeigen. Vergleichen Sie die Daten in den Tabellen vor und nach der Aktivität Dimensionsänderung und vergleichen Sie die Struktur der Workflow-Tabellen, wie in den folgenden Beispielen gezeigt:
 
    ![](assets/wf_change-dimension_sample_06.png)
 

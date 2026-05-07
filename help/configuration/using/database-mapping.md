@@ -7,14 +7,14 @@ role: Developer
 exl-id: 728b509f-2755-48df-8b12-449b7044e317
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '526'
-ht-degree: 46%
+source-wordcount: '527'
+ht-degree: 51%
 
 ---
 
 # Datenbank-Mapping{#database-mapping}
 
-Die SQL-Zuordnung des auf [&#x200B; Seite beschriebenen Beispielschemas &#x200B;](schema-structure.md) das folgende XML-Dokument:
+Die SQL-Zuordnung des auf [ Seite beschriebenen Beispielschemas ](schema-structure.md) das folgende XML-Dokument:
 
 ```sql
 <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">

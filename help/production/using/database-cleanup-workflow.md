@@ -9,8 +9,8 @@ topic-tags: data-processing
 exl-id: 75d3a0af-9a14-4083-b1da-2c1b22f57cbe
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '2916'
-ht-degree: 1%
+source-wordcount: '2949'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 ## Einleitung {#introduction}
 
-Der Workflow **[!UICONTROL Datenbankbereinigung]**, auf den Sie über den Knoten **[!UICONTROL Administration > Produktion > Technische Workflows]** zugreifen können, ermöglicht das Löschen veralteter Daten, um das exponentielle Anwachsen der Datenbank zu verhindern. Der Workflow wird automatisch ohne das Eingreifen der benutzenden Person ausgelöst.
+Der Workflow **[!UICONTROL Datenbankbereinigung]**, auf den Sie über den Knoten **[!UICONTROL Administration > Produktion > Technische Workflows]** zugreifen können, ermöglicht das Löschen veralteter Daten, um das exponentielle Anwachsen der Datenbank zu vermeiden. Der Workflow wird automatisch ohne Benutzereingriff ausgelöst.
 
 ![Bereinigung](assets/ncs_cleanup_workflow.png)
 
@@ -32,7 +32,7 @@ Die Datenbankbereinigung wird auf zwei Ebenen konfiguriert: im Workflow-Planer u
 
 >[!NOTE]
 >
->Weitere Informationen zur Planung finden Sie in der [&#x200B; zu Campaign v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html?lang=de){target="_blank"}.
+>Weitere Informationen zur Planung finden Sie in der [ zu Campaign v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html?lang=de){target="_blank"}.
 
 Standardmäßig ist der Workflow **[!UICONTROL Datenbankbereinigung]** so konfiguriert, dass er täglich um 4 Uhr morgens startet. Mit der -Planung können Sie die Häufigkeit der Workflow-Auslösung ändern. Die folgenden Häufigkeiten sind verfügbar:
 
@@ -49,7 +49,7 @@ Standardmäßig ist der Workflow **[!UICONTROL Datenbankbereinigung]** so konfig
 
 ### Bereitstellungsassistent {#deployment-assistant}
 
-Über **[!UICONTROL Menü]** Tools > Erweitert **[!UICONTROL können Sie mit dem Bereitstellungsassistenten]**, wie lange Daten gespeichert werden sollen. Werte werden in Tagen ausgedrückt. Wenn diese Werte nicht geändert werden, verwendet der Workflow die Standardwerte.
+Über **[!UICONTROL Menü**[!UICONTROL  Tools > Erweitert ]**können Sie mit dem Bereitstellungsassistenten]**, wie lange Daten gespeichert werden sollen. Werte werden in Tagen ausgedrückt. Wenn diese Werte nicht geändert werden, verwendet der Workflow die Standardwerte.
 
 ![](assets/ncs_cleanup_deployment-wizard.png)
 
@@ -57,10 +57,10 @@ Die Felder des Fensters **[!UICONTROL Bereinigen von Daten]** entsprechen den fo
 
 * Konsolidiertes Tracking: **NmsCleanup_TrackingStatPurgeDelay** (siehe [Bereinigung von Trackinglogs](#cleanup-of-tracking-logs))
 * Versandlogs: **NmsCleanup_BroadLogPurgeDelay** (siehe [Bereinigung von Versandlogs](#cleanup-of-delivery-logs))
-* Trackinglogs: **NmsCleanup_TrackingLogPurgeDelay** (siehe &quot;[&#x200B; von Trackinglogs](#cleanup-of-tracking-logs))
+* Trackinglogs: **NmsCleanup_TrackingLogPurgeDelay** (siehe &quot;[ von Trackinglogs](#cleanup-of-tracking-logs))
 * Gelöschte Sendungen: **NmsCleanup_RecycledDeliveryPurgeDelay** (siehe [Bereinigung von zu löschenden oder wiederzuverwendenden Sendungen](#cleanup-of-deliveries-to-be-deleted-or-recycled))
 * Importzurückweisungen: **NmsCleanup_RejectsPurgeDelay** (siehe [Bereinigung von durch Importe generierten Zurückweisungen](#cleanup-of-rejects-generated-by-imports-))
-* Besucherprofile: **NmsCleanup_VisitorPurgeDelay** (siehe &quot;[&#x200B; von Besuchern](#cleanup-of-visitors))
+* Besucherprofile: **NmsCleanup_VisitorPurgeDelay** (siehe &quot;[ von Besuchern](#cleanup-of-visitors))
 * Angebotsvorschläge: **NmsCleanup_PropositionPurgeDelay** (siehe [Bereinigung von Vorschlägen](#cleanup-of-propositions))
 
   >[!NOTE]
@@ -74,7 +74,7 @@ Die Felder des Fensters **[!UICONTROL Bereinigen von Daten]** entsprechen den fo
   >
   >Die Felder **[!UICONTROL Ereignisse]** und **[!UICONTROL Ereignisse mit Verlauf]** sind nur verfügbar, wenn das Modul **Message Center** installiert ist.
 
-* Audit-Protokoll: **XtkCleanup_AuditTrailPurgeDelay** (siehe &quot;[&#x200B; des Audit-Protokolls](#cleanup-of-audit-trail))
+* Audit-Protokoll: **XtkCleanup_AuditTrailPurgeDelay** (siehe &quot;[ des Audit-Protokolls](#cleanup-of-audit-trail))
 
 Alle Aufgaben, die vom Workflow **[!UICONTROL Datenbankbereinigung]** ausgeführt werden, werden im folgenden Abschnitt beschrieben.
 
@@ -91,7 +91,7 @@ Die Workflow-Engine startet den Datenbankbereinigungsprozess zu dem in der Workf
 
 ### Zu löschende Listen {#lists-to-delete-cleanup}
 
-Die erste Aufgabe, die vom Workflow **[!UICONTROL Datenbankbereinigung]** ausgeführt wird, löscht alle Gruppen mit dem **deleteStatus != 0** Attribut aus der **NmsGroup**. Mit diesen Gruppen verknüpfte Datensätze, die in anderen Tabellen vorhanden sind, werden ebenfalls gelöscht.
+Die erste Aufgabe, die vom Workflow **[!UICONTROL Datenbankbereinigung]** ausgeführt wird, löscht alle Gruppen mit dem Attribut **deleteStatus != 0** aus der **NmsGroup**. Mit diesen Gruppen verknüpfte Datensätze, die in anderen Tabellen vorhanden sind, werden ebenfalls gelöscht.
 
 1. Zu löschende Listen werden mithilfe der folgenden SQL-Abfrage wiederhergestellt:
 

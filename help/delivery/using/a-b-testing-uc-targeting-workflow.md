@@ -7,15 +7,15 @@ feature: A/B Testing
 role: User
 exl-id: aa21fa33-aef9-484a-b454-0cd5a6868a98
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: ht
-source-wordcount: '180'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '198'
+ht-degree: 78%
 
 ---
 
 # A/B-Tests: Erstellen eines Zielgruppenbestimmungs-Workflows {#step-1--creating-a-targeting-workflow}
 
-Zielgruppen-Workflows werden im Rahmen von Kampagnen auf der Registerkarte **[!UICONTROL Zielgruppenbestimmungen und Workflows]** erstellt. Im vorliegenden Beispiel enthält der Workflow eine **[!UICONTROL Abfrage]**, eine **[!UICONTROL Aufspaltung]** mit je einem angeschlossenen **[!UICONTROL E-Mail-Versand]**, eine **[!UICONTROL Warten]**-Aktivität, eine **[!UICONTROL JavaScript-Code]**-Aktivität und einen **[!UICONTROL Versand]**.
+Sie müssen Ihren Workflow auf der Registerkarte **[!UICONTROL Zielgruppenbestimmungen und Workflows]** einer Kampagne erstellen. Sie besteht aus einer **[!UICONTROL Abfrage]**-Aktivität, einer **[!UICONTROL Aufspaltung]**-Aktivität, die mit zwei **[!UICONTROL E-Mail-Versand]**-Aktivitäten, einer **[!UICONTROL Warten]**-Aktivität, einer **[!UICONTROL JavaScript-Code]**-Aktivität und einer **[!UICONTROL Versand]**-Aktivität verknüpft ist.
 
 1. Erstellen Sie eine Kampagne, falls noch nicht geschehen. Weiterführende Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=de){target=_blank}.
 

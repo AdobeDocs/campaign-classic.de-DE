@@ -6,9 +6,9 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Web Apps
 exl-id: 4bff6b55-3335-433e-a2ff-5d8c83e8f0d3
 source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
-workflow-type: ht
-source-wordcount: '676'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '719'
+ht-degree: 59%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 100%
 
 
 
-Adobe Campaign ermöglicht Ihnen, das Tracking des Verhaltens von Endbenutzern im Web zu stoppen, die sich vom Tracking mittels Cookies oder Web-Beacons abmelden. Die Funktion bietet auch die Möglichkeit, dem Endbenutzer ein Banner mit dieser Option anzuzeigen. Diese Banner können zu Webanwendungen oder Landingpages hinzugefügt werden.
+Mit Adobe Campaign können Sie das Tracking des Webverhaltens von Endbenutzern stoppen, die sich vom Verhaltens-Tracking über Cookies oder Web-Beacons abmelden. Die Funktion bietet die Möglichkeit, ein Banner anzuzeigen, um Endbenutzern diese Option anzuzeigen. Sie können diese Banner zu Web-Anwendungen oder Landingpages hinzufügen.
 
-Wenn sich ein Endbenutzer entscheidet, das Verhaltens-Tracking per Cookies oder Web-Beacons zu deaktivieren, wird diese Information mit JavaScript-APIs an den Adobe Campaign-Trackingserver gesendet. Beachten Sie, dass in manchen Ländern gesetzlich vorgeschrieben ist, dass Kunden den Endbenutzern eine Anmeldemöglichkeit bereitstellen müssen, bevor sie eine Abmeldemöglichkeit anbieten können (bzw. andere gesetzliche Anforderungen bestehen) und dass es in der Verantwortung des Kunden liegt, diese Gesetze einzuhalten.
+Wenn sich ein Endanwender gegen das Verhaltens-Tracking über Cookies oder Web-Beacons entscheidet, werden diese Informationen mit JavaScript-APIs an den Adobe Campaign-Tracking-Server übertragen. Bitte beachten Sie, dass in einigen Gerichtsbarkeiten der Kunde möglicherweise Endbenutzern eine Opt-in-Option vorlegen muss, bevor eine Opt-out-Option angeboten werden kann (oder andere rechtliche Anforderungen hat). Der Kunde ist dafür verantwortlich, die geltenden Gesetze einzuhalten.
 
 >[!NOTE]
 >
@@ -28,7 +28,7 @@ Wenn sich ein Endbenutzer entscheidet, das Verhaltens-Tracking per Cookies oder 
 
 Banner, die in Webanwendungen oder Landingpages angezeigt werden sollen, müssen konfiguriert werden.
 
-Adobe Campaign stellt ein Musterbanner bereit, das Sie an Ihre Anforderungen anpassen müssen. Diese Bannerversion wird im Inhaltsmodell-Ordner als Gestaltungsbaustein angezeigt. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=de){target="_blank"}.
+Adobe Campaign wird mit einem Beispielbanner bereitgestellt, das Sie an Ihre Anforderungen anpassen müssen. Diese Bannerversion wird als Gestaltungsbaustein im Ordner „Inhaltsmodell“ angezeigt. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=de){target="_blank"}.
 
 >[!IMPORTANT]
 >
@@ -63,15 +63,15 @@ Das Standardbanner hat folgende Struktur:
       
 ```
 
-Ersetzen Sie **Please insert your message here** durch den Baustein, der Ihre Trackinginformation enthält. Dieser Austausch sollte in dem neuen, mit dem Opt-out-Banner verbundenen Gestaltungsbaustein ausgeführt werden.
+Sie müssen den **Bitte fügen Sie Ihre Nachricht hier ein** durch den Block mit Ihren Tracking-Informationen ersetzen. Diese Ersetzung sollte in Ihrem neuen Personalisierungsblock im Zusammenhang mit dem Opt-out-Banner ausgeführt werden.
 
-Das Banner wird mit einer spezifischen CSS-Datei bereitgestellt. Sie können die Stile aber überschreiben, wenn Sie eine Web-Seite erstellen und konfigurieren. Mehr dazu erfahren Sie auf [dieser Seite](content-editor-interface.md).
+Das Banner wird mit einer bestimmten CSS-Datei bereitgestellt. Sie können die Stile jedoch beim Erstellen und Konfigurieren einer Web-Seite überschreiben. Mehr dazu erfahren Sie auf [dieser Seite](content-editor-interface.md).
 
 ## Opt-out-Cookie mit einer API einrichten {#setting-the-opt-out-cookie-using-api}
 
 Adobe Campaign beinhaltet APIs, mit denen Sie den Cookie-Wert verwalten und Benutzereinstellungen abrufen können.
 
-Der Cookie-Name ist **acoptout**. Die allgemeinen Werte sind:
+Der Cookie-Name lautet **acoptout**. Die gemeinsamen Werte sind:
 
 * 0: Besucher hat Webtracking erlaubt (Standardwert)
 * 1: Besucher verbietet Webtracking
@@ -79,9 +79,9 @@ Der Cookie-Name ist **acoptout**. Die allgemeinen Werte sind:
 
 Die verfügbaren clientseitigen APIs zur individuellen Anpassung des Banners sind:
 
-* **NL.ClientWebTracking.allow()**: Stellt den Opt-out-Cookie-Wert so ein, dass Webtracking erlaubt ist. Webtracking ist standardmäßig erlaubt.
-* **NL.ClientWebTracking.forbid()**: Stellt den Opt-out-Cookie-Wert so ein, dass Webtracking verboten ist. Der Besucher muss eine Eingabe vornehmen, damit Webtracking verboten wird.
-* **NL.ClientWebTracking.closeOptOutBanner(bannerDomElt)**: Schließt das Opt-out-Cookie-Banner, nachdem der Besucher auf die Annehmen- oder Ablehnen-Schaltfläche geklickt hat (während der Klick-Event-Bubbling-Phase).
+* **NL.ClientWebTracking.allow()**: Setzt den Wert des Opt-out-Cookies, um Webtracking zu ermöglichen. Webtracking ist standardmäßig zulässig.
+* **NL.ClientWebTracking.forbid()**: Setzt den Opt-out-Cookie-Wert auf „Webtracking verbieten“. Beim Webtracking muss eine Benutzereingabe verboten sein.
+* **NL.ClientWebTracking.closeOptOutBanner(bannerDomElt)**: Schließt das Opt-out-Cookie-Banner, nachdem auf die Schaltfläche Akzeptieren oder Ablehnen geklickt wurde. (während der Bubbling-Phase des Klickereignisses)
 
   bannerDomElt {DOMElement} ist das Stamm-DOM-Element des Cookie-Banners, das entfernt werden muss
 
@@ -106,7 +106,7 @@ Zum Schreiben einer JSSP (JavaScript Server Page) stehen serverseitige APIs zur 
 
 * **NL.ServerWebTracking.renderOptOutBanner(escapeJs)**
 
-  Rendert das Markup für das Opt-out-Banner, indem es in die JSSP eingefügt wird. Es wird in der JSSP unverändert zwischen &lt;% %> eingefügt.
+  Rendert das Markup für das Opt-out-Banner durch Einfügen in die JSSP-Seite. Sie wird wie in JSSP zwischen &lt;% %> aufgerufen.
 
   **escapeJs{Boolean}**: „true“, wenn das erzeugte Markup escapt werden muss, damit es in JavaScript verwendet werden kann
 

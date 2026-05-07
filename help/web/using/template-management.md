@@ -6,9 +6,9 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Web Apps, Web Forms, Landing Pages, Delivery Templates
 exl-id: 69805e60-8fc6-45d1-9087-5f7d949cc76a
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: ht
-source-wordcount: '123'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '124'
+ht-degree: 77%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 Der Digital Content Editor bietet **Standardvorlagen** für Webanwendungen und Sendungen.
 
-Bei der Erstellung einer Webanwendung vom Typ &quot;Landingpage&quot; können Sie eine dieser Vorlagen auswählen. Sie können auch eine außerhalb von Adobe Campaign erstellte HTML-Vorlage importieren.
+Beim Erstellen einer Web-Anwendung vom Typ Landingpage kann der Benutzer eine dieser Vorlagen auswählen. Sie können auch eine HTML-Vorlage importieren, die außerhalb von Adobe Campaign erstellt wurde.
 
 ![](assets/dce_popup_templatechoice.png)
 

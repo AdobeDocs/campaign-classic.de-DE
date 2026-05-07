@@ -6,8 +6,8 @@ feature: Schema Extension
 exl-id: 60f15ae5-b2bd-48f9-aa45-8f795a3071aa
 source-git-commit: 254c89490fefa5d405bcecd2f1781df46450a873
 workflow-type: tm+mt
-source-wordcount: '2029'
-ht-degree: 0%
+source-wordcount: '2035'
+ht-degree: 1%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## Inhaltsmodell {#content-model-4}
 
-element:==(attribute | Compute-String | dbindex | Standard | Element | Hilfe | beitreten | Schlüssel | sysFilter | translatedDefault)
+element:==(attribute | compute-string | dbindex | default | element | help | join | key | sysFilter | translatedDefault)
 
 ## Attribute {#attributes-4}
 
@@ -46,7 +46,7 @@ _operation (Zeichenfolge), Advanced (Boolescher Wert), Aggregat (Zeichenfolge), 
 In Adobe Campaign gibt es vier Arten von `<element>`:
 
 * `<element>` : definiert den Namen der SQL-Tabelle, die dem Schema entspricht.
-* `<element>` : definiert eine Gruppe von `<element>`   oder   `<attribute>`    -Elemente.
+* `<element>` : definiert eine Gruppe von `<element>` oder `<attribute>`.
 * Link-`<element>` : definiert einen Link. Diese Elemente müssen das Attribut &quot;@type=link“ enthalten.
 * XML-`<element>` : definiert ein Feld vom Typ „mData“. Dieses Element muss das Attribut &quot;@type=xml“ enthalten.
 
@@ -65,7 +65,7 @@ In Adobe Campaign gibt es vier Arten von `<element>`:
    * „delete“: Löschung. Dies bedeutet, dass Adobe Campaign Elemente wiederherstellt und löscht.
 
 * **Erweitert (Boolesch)**: Wenn diese Option aktiviert ist (@advanced=„true„), können Sie das Attribut in der Liste der verfügbaren Felder ausblenden, die zum Konfigurieren einer Liste in einem Formular verfügbar sind.
-* **Aggregat (Zeichenfolge)**: dient dem Kopieren der Definition einer `<element>` über ein anderes Schema. Dieses Attribut erhält eine Schemadeklaration in Form eines „namespace:name“.
+* **Aggregat (Zeichenfolge)**: dient dem Kopieren der Definition einer `<element>` über ein anderes Schema. Dieses Attribut erhält eine Schemadeklaration in Form eines „Namespace:name.
 * **applicableIf (Zeichenfolge)**: Bedingung für die Anwendung des Index. Dieses Attribut erhält einen XTK-Ausdruck.
 * **autopk (Boolescher Wert)**: Wenn diese Option aktiviert ist (autopk=„true„), wird automatisch ein eindeutiger Schlüssel definiert. Diese Option kann nur für das Hauptelement des Schemas verwendet werden. Achtung: Adobe Campaign garantiert nur, dass der generierte Schlüssel eindeutig ist. Es ist nicht garantiert, dass die Schlüsselwerte aufeinander folgend und inkrementell sind.
 * **dataPolicy (Zeichenfolge)**: Ermöglicht es Ihnen, Validierungseinschränkungen für die im SQL-Feld zulässigen Werte anzugeben. Die Werte für dieses Attribut sind:
@@ -108,7 +108,7 @@ In Adobe Campaign gibt es vier Arten von `<element>`:
 * **folderModel (Zeichenfolge)**: definiert den Ordnertyp, der die Entitätsspeicherung ermöglicht. Dieses Attribut wird nur definiert, wenn &quot;@folderLink“ vorhanden ist.
 * **folderProcess (Zeichenfolge)**: definiert die Relation, unter der Entitätsmodellinstanzen gespeichert werden. Dieses Attribut wird nur definiert, wenn &quot;@folderLink“ vorhanden ist.
 * **fullLoad (Boolesch)** Dieses Attribut erzwingt die Anzeige aller Datensätze in einer Tabelle während der Feldauswahl in einem Formular.
-* **img (Zeichenfolge)**: Empfängt den Pfad eines mit einem Element verknüpften Bildes. Der Wert dieses Attributs ist vom Typ „namespace:image name“. Beispiel: img=„cus:myImage.jpg“. Physisch muss das Bild auf den Anwendungsserver importiert werden.
+* **img (Zeichenfolge)**: Empfängt den Pfad eines mit einem Element verknüpften Bildes. Der Wert dieses Attributs ist vom Typ &quot;:image&quot;. Beispiel: img=„cus:myImage.jpg“. Physisch muss das Bild auf den Anwendungsserver importiert werden.
 * **integrity (Zeichenfolge)**: Referenzintegrität der Entität der Quelltabelle zur Zieltabelle.
 
   Folgende Werte sind verfügbar:
@@ -190,12 +190,12 @@ In Adobe Campaign gibt es vier Arten von `<element>`:
    * HTML
    * int64
    * link
-   * lang
+   * Lang
    * Memo
    * MNTOKEN
    * Prozent
    * Primärschlüssel
-   * Short
+   * Kurz
    * Zeichenfolge
    * time
    * timespan

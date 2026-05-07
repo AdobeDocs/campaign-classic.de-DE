@@ -9,8 +9,8 @@ topic-tags: starting-with-adobe-campaign
 exl-id: a93bac61-f615-4178-bc12-0f056e48687d
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '663'
-ht-degree: 100%
+source-wordcount: '670'
+ht-degree: 84%
 
 ---
 
@@ -62,11 +62,11 @@ Führen Sie zuerst die Authentifizierung über die API durch.
 
 1. Laden Sie die **xtk:session**-WSDL über diese URL herunter: **`<server url>`/nl/jsp/schemawsdl.jsp?schema=xtk:session**.
 
-1. Verwenden Sie die Anmeldemethode und geben Sie in der Anfrage einen Benutzernamen und ein Passwort als Parameter ein. Sie erhalten eine Antwort mit einem Sitzungs-Token. In unserem Beispiel wird SoapUI verwendet.
+1. Verwenden Sie die „Anmelden“-Methode und übergeben Sie einen Benutzernamen und ein Kennwort als Parameter in der Anfrage. Sie erhalten eine Antwort mit einem Sitzungs-Token. Im Folgenden finden Sie ein Beispiel zur Verwendung von SoapUI.
 
    ![](assets/do-not-localize/privacy-api.png)
 
-1. Verwenden Sie dieses Sitzungs-Token zur Authentifizierung für alle folgenden API-Aufrufe. Das Token ist 24 Stunden lang gültig.
+1. Verwenden Sie das zurückgegebene Sitzungs-Token als Authentifizierung für alle Subsequenz-API-Aufrufe. Er läuft nach 24 Stunden ab.
 
 Rufen Sie dann die Datenschutz-API auf:
 
@@ -80,8 +80,8 @@ Rufen Sie dann die Datenschutz-API auf:
 
    Beachten Sie bei der Durchführung der oben erläuterten Schritte Folgendes:
 
-   * Sie können eine **queryDef** im Schema **nms:gdprRequest** verwenden, um den Status der Zugriffsanfrage zu überprüfen.
-   * Mit einer **queryDef** im Schema **nms:gdprRequestData** können Sie das Ergebnis der Zugriffsanfrage abrufen.
+   * Sie können ein **queryDef** im **nms:gdprRequest**-Schema verwenden, um den Status der Zugriffsanfrage zu überprüfen.
+   * Sie können ein **queryDef** im **nms:gdprRequestData**-Schema verwenden, um das Ergebnis der Zugriffsanfrage abzurufen.
    * Um die XML-Datei von **&quot;$(serverUrl)&#39;/nms/gdpr.jssp?id=&#39;@id&quot;** herunterladen zu können, müssen Sie angemeldet sein und der Zugriff muss von einer in der Zulassungsliste enthaltenen IP-Adresse erfolgen. Erstellen Sie dazu ein Web-Programm für den Zugriff auf die von der JSSP generierte Datei.
 
 ## Die API über ein JS abrufen {#invoking-api-from-js}

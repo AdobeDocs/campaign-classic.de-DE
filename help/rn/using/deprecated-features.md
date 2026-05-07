@@ -8,8 +8,8 @@ level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
-source-wordcount: '1675'
-ht-degree: 98%
+source-wordcount: '1767'
+ht-degree: 93%
 
 ---
 
@@ -83,7 +83,7 @@ In diesem Abschnitt werden Funktionen und Leistungsmerkmale aufgelistet, die aus
     <tr>
   <td>Bericht zum technischen Zustellbarkeits-Monitoring<br></td>
    <td><p>Der Bericht zum technischen Zustellbarkeits-Monitoring ist nicht mehr verfügbar. Er wurde mit Campaign-Version 21.1.3 eingestellt.</p>
-   <!--p>If needed, you can receive this report daily by email until the feature removal date. To request it, open a specific <a href="https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">Support Case</a> and specify the name of the instance and the email address(es) to send the report to.</p--> 
+   <!--p>If needed, you can receive this report daily by email until the feature removal date. To request it, open a specific <a href="https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">Support Case</a> and specify the name of the instance and the email address(es) to send the report to.</p--> 
   </td>
  </tr>
   <tr>
@@ -95,7 +95,7 @@ In diesem Abschnitt werden Funktionen und Leistungsmerkmale aufgelistet, die aus
   </td>
   </tr>
    <td>Reporting<br></td>
-   <td><p>Nach dem End-of-Life von Adobe Flash Player sind der Tacho-Bericht und die Rendering-Engine für Grafiken nicht mehr verfügbar. <a href="../../reporting/using/creating-a-new-report.md">Weitere Informationen</a>   </p>
+   <td><p>Nach dem End-of-Life von Adobe Flash Player sind der Tacho-Bericht und die Rendering-Engine für Grafiken nicht mehr verfügbar. <a href="../../reporting/using/creating-a-new-report.md">Weitere Informationen</a></p>
   </tr>
   <tr>  
    <td>Fax-Kanal<br></td>
@@ -108,7 +108,7 @@ In diesem Abschnitt werden Funktionen und Leistungsmerkmale aufgelistet, die aus
   </tr>
    <tr> 
    <td>Windows NT-Authentifizierung<br></td>
-   <td><p>Ab Campaign-Version 20.3 wurde die Windows NT-Authentifizierung bei der Konfiguration einer neuen Datenbank mit einem Microsoft SQL Server aus den verfügbaren Authentifizierungsmechanismen entfernt. <a href="../../installation/using/creating-and-configuring-the-database.md#step-1---selecting-the-database-engine">Weitere Informationen</a></p></td>
+   <td><p>Ab Campaign Version 20.3 wurde die Windows NT-Authentifizierung aus den verfügbaren Authentifizierungsmethoden entfernt, wenn eine neue Datenbank mit einem Microsoft SQL Server konfiguriert wird. <a href="../../installation/using/creating-and-configuring-the-database.md#step-1---selecting-the-database-engine">Weitere Informationen</a></p></td>
   </tr>
    <tr> 
    <td>Dateibasierte E-Mail-Archivierung<br></td>
@@ -137,7 +137,7 @@ In diesem Abschnitt werden Funktionen und Leistungsmerkmale aufgelistet, die aus
   <tr> 
    <td>decryptString-API</td>
    <td><p>Ab Campaign-Version 18.6 ist die <em>decryptString</em>-API bei neuen Installationen aus Sicherheitsgründen standardmäßig nicht mehr verfügbar.</p> 
-   <p>Im Zusammenhang mit einem Postupgrade auf Version 18.6 (und höher) ist diese API nicht mehr aktiv; sie wurde durch die <em>decryptPassword</em>-Funktion ersetzt. <a href="https://experienceleague.adobe.com/developer/campaign-api/api/f-decryptPassword.html?lang=de&hl=decrypt">Weitere Informationen</a></p></td>
+   <p>Im Zusammenhang mit einem Postupgrade auf Version 18.6 (und höher) ist diese API nicht mehr aktiv; sie wurde durch die <em>decryptPassword</em>-Funktion ersetzt. <a href="https://experienceleague.adobe.com/developer/campaign-api/api/f-decryptPassword.html?hl=decrypt">Weitere Informationen</a></p></td>
   </tr> 
    <tr> 
    <td>Mobiler Kanal – MMS- und WAP-Push-Benachrichtigungen</td>
@@ -188,7 +188,7 @@ Die Client Console von Adobe Campaign Classic kann in den folgenden Systemen nic
 
    * CentOS 6. [Weitere Informationen](https://wiki.centos.org/Download)
    * Debian 7. [Weitere Informationen](https://wiki.debian.org/DebianReleases)
-   * RHEL 6.x. [Weitere Infos](https://access.redhat.com/support/policy/updates/errata)
+   * RHEL 6.x. [Weitere Informationen](https://access.redhat.com/support/policy/updates/errata)
    * Windows Server 2008. [Weitere Informationen](https://support.microsoft.com/en-us/lifecycle/search/1163)
    * SLES 11. [Weitere Informationen](https://www.suse.com/lifecycle)
 
@@ -196,7 +196,7 @@ Die Client Console von Adobe Campaign Classic kann in den folgenden Systemen nic
 
 Ab der Frühlingsversion 19.1 ist Adobe Campaign nicht mehr mit dem folgenden Webserver kompatibel.
 
-* Apache 2.2. [Weitere Infos](https://httpd.apache.org/)
+* Apache 2.2. [Weitere Informationen](https://httpd.apache.org/)
 * Microsoft IIS 7. [Weitere Informationen](https://support.microsoft.com/de-de/lifecycle/search/810)
 
 ### Tools {#tools-eol}
@@ -237,7 +237,7 @@ Campaign Classic ist mit den folgenden Servern in Federated Data Access (FDA) ni
 * Netezza 6.02, 7.0. Netezza hat das Ende des Lebenszyklus erreicht.
 * AsterData 5.0. AsterData hat das Ende des Lebenszyklus erreicht.
 * Sybase IQ 15.2, 15.4, 15.5 und Sybase ASE 15.0.
-* Hadoop über HiveSQL: Hadoop 2.7.3, HiveSQL 1.2.1. Adobe Campaign Classic unterstützt die aufgelisteten Versionen von Hadoop über HiveSQL durch Federated Data Access (FDA) weiterhin, aber diese Versionen werden zusammengeführt mit: HortonWorks (HDP 2.4.x, 2.5.x, 2.6.x) und HDInsight 3.4 (HDP 2.4), 3.5 (HDP 2.5), 3.6 (HDP 2.6)
+* Hadoop über HiveSQL: Hadoop 2.7.3, HiveSQL 1.2.1. Adobe Campaign Classic unterstützt die aufgelisteten Versionen von Hadoop weiterhin über HiveSQL über Federated Data Access (FDA), diese Versionen werden jedoch zusammengeführt mit: HortonWorks (HDP 2.4.X, 2.5.x, 2.6.x) und HDInsight 3.4 (HDP 2.4), 3.5 (HDP 2.5), 3.6 (HDP 2.6)
 
 **RDBMS-SERVER**
 

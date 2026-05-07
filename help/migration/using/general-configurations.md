@@ -10,7 +10,7 @@ hide: true
 exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '2571'
+source-wordcount: '2600'
 ht-degree: 1%
 
 ---
@@ -21,8 +21,8 @@ In diesem Abschnitt wird die Konfiguration beschrieben, die in Adobe Campaign v7
 
 Achten Sie außerdem auf Folgendes:
 
-* Wenn Sie von Version 5.11 migrieren, müssen Sie auch die in [&#x200B; Abschnitt beschriebene Konfiguration &#x200B;](../../migration/using/configuring-your-platform.md#specific-configurations-in-v5-11).
-* Wenn Sie von v6.02 migrieren, müssen Sie auch die Konfiguration abschließen, die in [diesem Abschnitt) beschrieben &#x200B;](../../migration/using/configuring-your-platform.md#specific-configurations-in-v6-02).
+* Wenn Sie von Version 5.11 migrieren, müssen Sie auch die in [ Abschnitt beschriebene Konfiguration ](../../migration/using/configuring-your-platform.md#specific-configurations-in-v5-11).
+* Wenn Sie von v6.02 migrieren, müssen Sie auch die Konfiguration abschließen, die in [diesem Abschnitt) beschrieben ](../../migration/using/configuring-your-platform.md#specific-configurations-in-v6-02).
 
 ## Zeitzonen {#time-zones}
 
@@ -151,7 +151,7 @@ Bestimmte vordefinierte Schemata wurden geändert und sind jetzt standardmäßig
 
 ### SessionToken-Parameter {#sessiontoken-parameter}
 
-In v5 funktionierte der **sessiontoken**-Parameter sowohl Client-seitig (Liste der Übersichtstypen wie Bildschirme, Link-Editor usw.) als auch Server-seitig (Webanwendungen, Berichte, JSP, JSSP usw.). In v7 funktioniert es nur auf der Server-Seite. Wenn Sie zur vollen Funktionalität wie in Version 5 zurückkehren möchten, müssen Sie die Links mit diesem Parameter ändern und über die Verbindungsseite übergeben:
+In Version 5 funktionierte der **sessiontoken**-Parameter Client-seitig (Liste der Übersichtstypen, Link-Editor usw.) und Server-seitig (Web-Anwendungen, Berichte, JSP, JSSP usw.). In v7 funktioniert es nur auf der Server-Seite. Wenn Sie zur vollen Funktionalität wie in Version 5 zurückkehren möchten, müssen Sie die Links mit diesem Parameter ändern und über die Verbindungsseite übergeben:
 
 Link-Beispiel:
 
@@ -196,9 +196,9 @@ Beispiel:
 
 In Adobe Campaign v7 ist ein neuerer JavaScript-Interpreter integriert. Diese Aktualisierung kann jedoch zu Fehlfunktionen bestimmter Skripte führen. Da die vorherige Engine erlaubter war, würden bestimmte Syntaxen funktionieren, was bei der neuen Version der Engine nicht mehr der Fall ist.
 
-Das **[!UICONTROL myObject.@attribute]** Die Syntax ist jetzt nur noch für XML-Objekte gültig. Diese Syntax kann für die Personalisierung von Sendungen und das Content-Management verwendet werden. Wenn Sie diese Art der Syntax für ein Nicht-XML-Objekt verwenden, funktionieren die Personalisierungsfunktionen nicht mehr.
+Die Syntax **[!UICONTROL myObject.@attribute]** ist jetzt nur noch für XML-Objekte gültig. Diese Syntax kann für die Personalisierung von Sendungen und das Content-Management verwendet werden. Wenn Sie diese Art der Syntax für ein Nicht-XML-Objekt verwenden, funktionieren die Personalisierungsfunktionen nicht mehr.
 
-Für alle anderen Objekttypen lautet die Syntax jetzt **[!UICONTROL myObject`[`„attribute“`]`]**. Beispiel: ein Nicht-XML-Objekt, das die folgende Syntax verwendet: **[!UICONTROL employee.@sn]**, muss jetzt die folgende Syntax verwenden: **[!UICONTROL employee`[`„sn“`]`]**.
+Für alle anderen Objekttypen lautet die Syntax jetzt **[!UICONTROL myObject`[`„attribute“`]`]**. Beispielsweise muss ein Nicht-XML-Objekt, das die folgende Syntax verwendet hat: **[!UICONTROL employee.@sn]**, jetzt die folgende Syntax verwenden: **[!UICONTROL employee`[`„sn“`]`]**.
 
 * Frühere Syntax:
 
@@ -390,7 +390,7 @@ Der Alias ist optional
 
 **Tipps und Tricks**
 
-Referenzieren eines „Feld“-Felds der `<subQuery>` in einem `<queryDef>`-Element   -Element verwenden, die folgende Syntax verwenden: `[../@field]`
+Verwenden Sie in einem `<subQuery>`-Element die folgende Syntax, um auf ein Feld des `<queryDef>`-Hauptelements zu verweisen: `[../@field]`
 
 Beispiel:
 

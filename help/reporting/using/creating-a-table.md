@@ -6,9 +6,9 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Reporting, Monitoring
 exl-id: 05f76bdf-6dcd-4360-9e72-0ba6a4dd0d5e
 source-git-commit: f90df5a5e5b3a2317d86ff2919560ded38f44f44
-workflow-type: ht
-source-wordcount: '2661'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '2672'
+ht-degree: 80%
 
 ---
 
@@ -22,7 +22,7 @@ Sie können eine Tabelle zu einem Bericht hinzufügen, um Daten anzuzeigen. Dabe
 
 ## Erstellen einer Liste mit Gruppe {#creating-a-list-with-group}
 
-Eine **[!UICONTROL Liste mit Gruppierung]** ermöglicht es, bestimmte Daten in der Tabelle zusammenzufassen und Statistiken über die enthaltenen Daten zu erzeugen. Sie können beispielsweise Summen und Zwischensummen erstellen. Jede Gruppierung enthält eine Header-, Detail- und Footer-Zeile.
+Mit **[!UICONTROL Tabelle vom Typ „Liste mit]**&quot; können Sie Daten in der Tabelle gruppieren und Statistiken dazu erstellen. Sie können beispielsweise Gesamtwerte und Zwischensummen für die Daten erstellen. Jede Gruppe verfügt über ihre eigene Kopf- und Fußzeile.
 
 >[!CAUTION]
 >
@@ -30,7 +30,7 @@ Eine **[!UICONTROL Liste mit Gruppierung]** ermöglicht es, bestimmte Daten in d
 
 ### Grundprinzip {#operating-principle}
 
-Es besteht die Möglichkeit, dass Sie mehrere Datenkategorien gleichzeitig zu analysieren haben. Eine Liste mit Gruppierung ermöglicht es Ihnen, bestimmte Daten zusammenzufassen und Statistiken über unterschiedliche Gruppen in der gleichen Tabelle zu erzeugen. Erstellen Sie hierzu eine Gruppierung in der Tabelle.
+Es kann vorkommen, dass Sie mehrere Datenkategorien gleichzeitig analysieren müssen. Mithilfe einer Liste mit Gruppen können Sie Daten kombinieren und Statistiken zu verschiedenen Datengruppen innerhalb derselben Tabelle erstellen. Dazu können Sie eine Gruppe in der Tabelle erstellen.
 
 Im unten stehenden Beispiel werden mithilfe der Gruppierung die Gesamtheit aller Kampagnen der Datenbank, die Sendungen und die Anzahl der pro Versand und pro Kampagne versendeten Nachrichten angezeigt.
 
@@ -53,7 +53,7 @@ Im Folgenden werden die Etappen zur Erstellung einer Tabelle vom Typ &quot;Liste
    Diese Etappe ist zwingend erforderlich, um die Felder der Quelltabelle zu finden und sie in die Zellen der Tabelle einzufügen.
 
 1. Erstellen Sie die Tabelle und Ihren Inhalt.
-1. Überprüfen Sie im Tab **[!UICONTROL Vorschau]** den erstellten Bericht. Er kann nun veröffentlicht und bei Bedarf in einem anderen Format exportiert werden. Weitere Informationen hierzu finden Sie unter [Exportieren eines Berichts](../../reporting/using/actions-on-reports.md#exporting-a-report).
+1. Den fertigen Bericht auf der Registerkarte **[!UICONTROL Vorschau]** anzeigen. Sie können dann den Bericht veröffentlichen und ihn bei Bedarf in ein anderes Format exportieren. Weitere Informationen hierzu finden Sie unter [Exportieren eines Berichts](../../reporting/using/actions-on-reports.md#exporting-a-report).
 
 ### Hinzufügen von Zeilen und Spalten {#adding-lines-and-columns}
 
@@ -111,7 +111,7 @@ Wählen Sie den Menüpunkt **[!UICONTROL Ausdruck]**, um die anzuzeigenden Werte
 
   Gehen Sie hierzu vor wie beim Einfügen eines Datenbank-Felds, aber wählen Sie keinen Ausdruck aus. Erfassen Sie den Titel im Feld **[!UICONTROL Titel]**. Er wird genau so angezeigt.
 
-* Berechnen Sie ein Aggregat (Durchschnitt, Summe etc.) und lassen Sie es in einer Zelle anzeigen.
+* Berechnung eines Aggregats (Durchschnitt, Summe usw.) und in der Zelle anzeigen.
 
   Nutzen Sie hierzu den Menüpunkt **[!UICONTROL Aggregate]** und wählen Sie die gewünschte Funktion aus.
 
@@ -125,7 +125,7 @@ Um das Zellenformat zu definieren, ermöglicht der Menüpunkt **[!UICONTROL Zell
 
 Diese Optionen erlauben es, die spätere Darstellung des Berichts anzupassen und die Lesbarkeit der enthaltenen Informationen zu optimieren.
 
-Das Feld **[!UICONTROL Zeilenumbruch]** ist im Rahmen eines Datenexports im Excel-Format von Nutzen: Wählen Sie den Wert **[!UICONTROL Ja]** aus, um den Zeilenumbruch zu forcieren. Dieser Wert wird beim Export berücksichtigt. Weitere Informationen hierzu finden Sie unter [Exportieren eines Berichts](../../reporting/using/actions-on-reports.md#exporting-a-report).
+Verwenden Sie das Feld **[!UICONTROL Zeilenumbruch]** beim Exportieren von Daten nach Excel: Wählen Sie den **[!UICONTROL Ja]**-Wert aus, um den Zeilenumbruch zu erzwingen. Dieser Wert wird beim Exportieren beibehalten. Weitere Informationen hierzu finden Sie unter [Exportieren eines Berichts](../../reporting/using/actions-on-reports.md#exporting-a-report).
 
 Über das Fenster **[!UICONTROL Zellen formatieren]** erhalten Sie Zugriff auf den folgenden Tab:
 
@@ -192,13 +192,13 @@ Im nachstehenden Beispiel wird durch Klick auf die Zelle die zweite Seite des Be
 
 ![](assets/s_advuser_ergo_listgroup_015.png)
 
-Mit dem Tab **Mehr** kann das Layout der Daten ausgewählt werden, zum Beispiel eine Farbplakette oder ein Bargraph. Die Farbplakette wird genutzt, wenn die Tabelle als Legende einer Grafik angezeigt wird. Weitere Informationen finden Sie im Implementierungsbeispiel: [5. Schritt - Zweite Seite konfigurieren](#step-5---create-the-second-page)
+Auf **Registerkarte** Extra“ können Sie visuelle Elemente mit Ihren Daten verknüpfen, z. B. farbige Markierungen oder eine Werteleiste. Die farbige Markierung wird verwendet, wenn die Tabelle als Legende in einem Diagramm angezeigt wird. Weitere Informationen finden Sie im Implementierungsbeispiel: [5. Schritt - Zweite Seite konfigurieren](#step-5---create-the-second-page)
 
 ![](assets/s_advuser_ergo_listgroup_016.png)
 
 ## Anwendungsbeispiel: Bericht mit einer Liste mit Gruppierung erstellen {#use-case--create-a-report-with-a-group-list}
 
-In diesem Beispiel wird ein zweiseitiger Bericht erstellt: Die erste Seite soll die Liste und die Summe der Sendungen pro Kampagne sowie die Anzahl der gesendeten Nachrichten enthalten. Der Titel der Sendungen erhält die Form eines anklickbaren Links und wird den Zugriff auf die zweite Seite des Berichts ermöglichen, um die Aufschlüsselung der gesendeten Nachrichten des gewählten Versands pro E-Mail-Domain in einer Tabelle und einer Grafik einzusehen. Auf der zweiten Seite soll die Tabelle als Legende der Grafik dienen.
+In diesem Beispiel wird ein zweiseitiger Bericht erstellt: Die erste Seite enthält die Liste und die Gesamtzahl der Sendungen pro Kampagne sowie die Anzahl der gesendeten Nachrichten. Versandnamen sind anklickbare Links und ermöglichen es Ihnen, zur zweiten Seite des Berichts zu gehen, um die Aufschlüsselung der Sendungen pro E-Mail-Domain für den ausgewählten Versand mit einer Tabelle und einem Diagramm anzuzeigen. Auf der zweiten Seite dient die Tabelle als Legende für das Diagramm.
 
 ![](assets/reporting_quick_start_report-final.png)
 
@@ -216,7 +216,7 @@ Positionieren Sie im Bericht die ersten Komponenten zur Erstellung des Inhalts: 
 
 ### &#x200B;2. Schritt – Erste Abfrage konfigurieren {#step-2---create-the-first-query}
 
-Die erste Abfrage soll die Sendungen aller Kampagnen abrufen.
+Mit der ersten Abfrage können Sie die mit den einzelnen Kampagnen verknüpften Sendungen abrufen. Ziel ist es, einen Bericht über die verschiedenen Sendungen der Adobe Campaign-Datenbank anzuzeigen, die mit jeder Kampagne verknüpft sind.
 
 Doppelklicken Sie auf die erste Abfrage, um sie zu öffnen, und konfigurieren Sie sie folgenderweise:
 
@@ -259,7 +259,7 @@ Doppelklicken Sie auf die erste Abfrage, um sie zu öffnen, und konfigurieren Si
 
 ### &#x200B;3. Schritt – Erste Seite konfigurieren {#step-3--create-the-first-page}
 
-In diesem Schritt wird die erste Seite des Berichts konfiguriert. Gehen Sie wie folgt vor:
+In diesem Schritt konfigurieren wir die erste Seite des Berichts. Gehen Sie wie folgt vor, um ihn zu konfigurieren:
 
 1. Öffnen Sie die **[!UICONTROL Seite]**-Aktivität und vergeben Sie einen Titel, hier zum Beispiel **Sendungen**.
 
@@ -295,7 +295,7 @@ In diesem Schritt wird die erste Seite des Berichts konfiguriert. Gehen Sie wie 
 
    ![](assets/s_advuser_report_listgroup_011.png)
 
-1. Bearbeiten Sie das Format der Zelle und öffnen Sie den Tab **[!UICONTROL Klick]**. Konfigurieren Sie die entsprechenden Optionen dahingehend, dass beim Klick auf den Namen eines Versands sich dieser im selben Fenster öffnet.
+1. Bearbeiten Sie das Format dieser Zelle und öffnen Sie die Registerkarte **[!UICONTROL Klick]**. Konfigurieren Sie die entsprechenden Optionen so, dass beim Klicken auf den Namen eines Versands dieser im selben Fenster geöffnet wird.
 
    ![](assets/s_advuser_report_listgroup_0111.png)
 
@@ -339,7 +339,7 @@ In diesem Schritt wird die erste Seite des Berichts konfiguriert. Gehen Sie wie 
 
    ![](assets/s_advuser_report_listgroup_025.png)
 
-   Es wird empfohlen, stets im **[!UICONTROL Vorschau]**-Tab zu überprüfen, ob die Tabellendaten korrekt ausgewählt und konfiguriert wurden. Nach der Überprüfung können Sie Ihre Tabelle formatieren.
+   Es wird empfohlen, die Registerkarte **[!UICONTROL Vorschau]** zu verwenden, um sicherzustellen, dass die Daten in Ihrer Tabelle ordnungsgemäß ausgewählt und konfiguriert sind. Danach können Sie mit der Formatierung Ihrer Tabelle fortfahren.
 
 1. Wählen Sie für die Zellen, die die Gesamtanzahl pro Kampagne und die Summen der verarbeiteten Nachrichten anzeigen, den Stil **[!UICONTROL Fett]** aus.
 
@@ -359,13 +359,13 @@ In diesem Schritt wird die erste Seite des Berichts konfiguriert. Gehen Sie wie 
 
 ### &#x200B;4. Schritt – Zweite Abfrage erstellen {#step-4---create-the-second-query}
 
-Es werden eine zweite Abfrage und eine zweite Seite hinzugefügt, um die Details eines Versands anzuzeigen, wenn er vom Benutzer des Berichts angeklickt wird. Bevor Sie die Abfrage hinzufügen, öffnen Sie die bereits erstellte Seite und aktivieren Sie die ausgehende Transition, um sie mit der Abfrage verbinden zu können.
+Wir möchten eine zweite Abfrage und eine zweite Seite hinzufügen, um die Details eines Versands anzuzeigen, wenn der Benutzer des Berichts auf diesen klickt. Bevor Sie die Abfrage hinzufügen, bearbeiten Sie die von Ihnen erstellte Seite und aktivieren Sie die ausgehende Transition, sodass sie mit der Abfrage verknüpft werden kann.
 
 1. Fügen Sie die neue Abfrage nach der **[!UICONTROL Seite]**-Aktivität ein und wählen Sie als Quellschema die **[!UICONTROL Versandlogs der Empfänger]** aus.
 
    ![](assets/reporting_quick_start_query-2.png)
 
-1. Öffnen Sie die Abfrage und bestimmen Sie die Ausgabespalten. Um die Anzahl an Sendungen je E-Mail-Domain anzuzeigen, gehen Sie wie folgt vor:
+1. Bearbeiten Sie die Abfrage und definieren Sie die Ausgabespalten. Um die Anzahl der Sendungen pro E-Mail-Domain anzuzeigen, gehen Sie folgendermaßen vor:
 
    * Konfigurieren Sie die Zählung der Versandlogs über deren Primärschlüssel:
 
@@ -433,7 +433,7 @@ Es werden eine zweite Abfrage und eine zweite Seite hinzugefügt, um die Details
    ![](assets/s_advuser_report_listgroup_0201.png)
 
 1. Wählen Sie im Abschnitt **[!UICONTROL Grafiktyp]** die Variable **[!UICONTROL E-Mail-Domain]**.
-1. Fügen Sie anschließend die auszuführende Berechnung hinzu: Wählen Sie Summe als Funktion.
+1. Fügen Sie anschließend die auszuführende Berechnung hinzu: Wählen Sie Summe als Operator.
 
    ![](assets/s_advuser_report_listgroup_0202.png)
 
@@ -453,7 +453,7 @@ Die erste Seite des Berichts zeigt die Liste aller in der Datenbank enthaltenen 
 
 ![](assets/s_advuser_report_listgroup_021.png)
 
-Durch Klick auf den Link einer der Sendungen wird die Aufschlüsselung dieses Versands pro E-Mail-Domain angezeigt. Von der zweiten Seite des Berichts können Sie über die entsprechende Schaltfläche auf die vorhergehende Seite zurückkehren.
+Wenn Sie auf den Link eines dieser Sendungen klicken, wird das Diagramm mit der Aufschlüsselung der E-Mail-Domains für diesen Versand angezeigt. Sie befinden sich nun auf der zweiten Seite des Berichts und können durch Klicken auf die entsprechende Schaltfläche zur vorherigen Seite zurückkehren.
 
 ![](assets/s_advuser_report_listgroup_022.png)
 

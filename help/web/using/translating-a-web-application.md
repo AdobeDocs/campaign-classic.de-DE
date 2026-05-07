@@ -6,9 +6,9 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Web Apps
 exl-id: 82c5c610-8161-4686-aa79-1b690e763765
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '384'
-ht-degree: 100%
+ht-degree: 50%
 
 ---
 
@@ -31,7 +31,7 @@ So kennzeichnen Sie die zu übersetzenden Strings:
    ![](assets/dce_translation_3.png)
 
 1. Wählen Sie einen HTML-Baustein aus.
-1. In den Baustein-Parametern auf der rechten Seite können Sie über die Option **[!UICONTROL Lokalisierung]** den Inhalt des ausgewählten Bausteins kennzeichnen. Standardmäßig ist nur der Seitentitel zur Übersetzung ausgewählt.
+1. Im Parameterblock auf der rechten Seite können Sie mit der Option **[!UICONTROL Lokalisierung]** den Inhalt des ausgewählten Blocks kennzeichnen. Standardmäßig wird nur der Seitentitel übersetzt.
 
    ![](assets/dce_translation_1.png)
 
@@ -41,21 +41,21 @@ So kennzeichnen Sie die zu übersetzenden Strings:
 
    Es gibt drei Fälle:
 
-   * Wenn der ausgewählte Baustein mehrere Strings/Bausteine enthält, wird er als ein einzelner zu übersetzender String gekennzeichnet. Der String enthält dann den HTML-Code der Elemente innerhalb dieses Bausteins.
-   * Wenn Sie einen Baustein kennzeichnen möchten, der mehrere Strings enthält und mindestens einer dieser Strings bereits gekennzeichnet ist, wird ein Warnhinweis angezeigt. Sie haben dann die Möglichkeit, die Kennzeichnung von dem einzelnen String zu entfernen und dem gesamten Baustein hinzuzufügen.
+   * Wenn ein ausgewählter Block mehrere Zeichenfolgen/Blöcke enthält, wird er als eine einzige zu übersetzende Zeichenfolge gekennzeichnet. Die Zeichenfolge enthält dann den HTML-Code der Elemente innerhalb dieses Blocks.
+   * Wenn Sie einen Block mit mehreren Zeichenfolgen kennzeichnen möchten und bereits mindestens eine dieser Zeichenfolgen gekennzeichnet ist, wird eine Warnung angezeigt. Anschließend können Sie das Flag aus der isolierten Zeichenfolge entfernen und den gesamten Block hinzufügen.
 
      ![](assets/dce_translation_4.png)
 
-   * Wenn Sie die Kennzeichnung von einem String entfernen möchten, der in einem bereits gekennzeichneten Baustein enthalten ist, können Sie die Übersetzungsoption für den String nicht direkt ändern. Sie können jedoch auf den Baustein zugreifen, der den String enthält, und die Übersetzungsoption dort ändern.
+   * Wenn Sie die Markierung aus einer Zeichenfolge entfernen möchten, die sich in einem bereits markierten Block befindet, können Sie die Option für die Zeichenfolgenübersetzung nicht direkt ändern. Sie können jedoch auf den Block zugreifen, der die Zeichenfolge enthält, um sie zu ändern.
 
      ![](assets/dce_translation_2.png)
 
 1. Nachdem Sie die Strings fertig gekennzeichnet haben, kehren Sie zur Webanwendung zurück und wählen Sie den Tab **[!UICONTROL Übersetzungen]** aus.
-1. Wählen Sie **[!UICONTROL Zu übersetzende Strings abrufen]** aus. Die im DCE gekennzeichneten Strings werden daraufhin zu den Strings der Webanwendung hinzugefügt.
+1. Wählen Sie **[!UICONTROL Sammeln der zu übersetzenden Zeichenfolgen]**. Die in DCE gekennzeichneten Zeichenfolgen werden den Zeichenfolgen der Webanwendung hinzugefügt.
 
    >[!NOTE]
    >
-   >Nach dem Erfassen der Strings werden diese auch dann nicht aus der Liste entfernt, wenn Sie die Übersetzungskennzeichnung im DCE entfernen. Die Strings bleiben im Übersetzungsspeicher.
+   >Nachdem die Zeichenfolgen erfasst wurden, werden sie nicht mehr aus der Liste entfernt, wenn Sie die Übersetzungs-Markierung in DCE entfernen. Auf diese Weise können sie im Translation Memory gespeichert werden.
 
 1. Übersetzen und validieren Sie die Strings.
 

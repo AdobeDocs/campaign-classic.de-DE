@@ -7,8 +7,8 @@ feature: Reporting, Monitoring
 exl-id: 848d67c7-d1dc-4eba-bcb8-672e76d8ce87
 source-git-commit: 5e062f9dbdf6c148e442ac10dbb12cf72ba0179b
 workflow-type: tm+mt
-source-wordcount: '1666'
-ht-degree: 100%
+source-wordcount: '1673'
+ht-degree: 83%
 
 ---
 
@@ -18,11 +18,11 @@ Um einen deskriptiven Analysebericht zu erstellen, befolgen Sie die Schritte des
 
 ## Analysieren von Daten in der Datenbank {#analyzing-data-in-the-database}
 
-Der Assistent für deskriptive Analysen kann über das Menü **[!UICONTROL Werkzeuge > Deskriptive Analyse]** gestartet werden: In diesem Fall bezieht sich die Analyse standardmäßig auf die Empfängertabelle (**nms:recipient**). Die Gesamtheit der Daten in Adobe Campaign dient als Basis.
+Der Assistenten für deskriptive Analysen kann über das Menü **[!UICONTROL Tools > Deskriptive Analyse]** gestartet werden: In diesem Fall betrifft die Analyse standardmäßig Empfänger (**nms:recipient**). Die Gesamtheit der Daten in Adobe Campaign dient als Basis.
 
 ![](assets/reporting_descriptive_wz_launch.png)
 
-Wenn Sie eine andere Tabelle als die Standard-Empfängertabelle (**nms:recipient**) analysieren möchten, klicken Sie auf den Link **[!UICONTROL Erweiterte Einstellungen…]** im letzten Schritt des Assistenten und wählen Sie die Ihren Einstellungen entsprechende Tabelle aus, in diesem Fall **cus:individual**:
+Um eine andere Tabelle als die Standard-Empfängertabelle zu analysieren (**nms:recipient**), klicken Sie auf den Link **[!UICONTROL Erweiterte Einstellungen…]** im letzten Schritt des Assistenten und wählen Sie die Tabelle aus, die Ihren Einstellungen entspricht, in diesem Fall **cus:individual**:
 
 ![](assets/reporting_descriptive_other_schema.png)
 
@@ -42,9 +42,9 @@ Dort kann er über einen Rechtsklick auf die jeweilige Auswahl gestartet werden.
 
 ![](assets/reporting_descriptive_from_recipients.png)
 
-* Um eine Gruppe von **Empfängern** zu analysieren, markieren Sie diese und öffnen Sie per Rechtsklick das Kontextmenü. Wählen Sie **[!UICONTROL Aktionen > Analysieren...]** wie im oben stehenden Beispiel. Wenn auf die Empfängerliste ein Filter angewendet wurde, wird nur der gefilterte Inhalt analysiert.
+* Wählen Sie für eine Gruppe **Empfänger** die zu analysierenden Empfänger aus, klicken Sie mit der rechten Maustaste und wählen Sie **[!UICONTROL Aktionen > Erkunden…]**, wie oben dargestellt. Wenn ein Filter auf die Empfängerliste angewendet wird, wird nur der Inhalt analysiert.
 
-  Mit der Tastenkombination STRG+A können alle Empfänger des Ordners oder des aktuellen Filters ausgewählt werden. Hierbei werden auch die nicht auf dem Bildschirm sichtbaren Empfänger ausgewählt.
+  Um alle Empfänger im Ordner oder im aktuellen Filter auszuwählen, verwenden Sie den Tastaturbefehl Strg+A. Das bedeutet, dass auch nicht angezeigte Empfänger ausgewählt werden.
 
   Der Abschnitt [Qualitative Datenanalyse](../../reporting/using/use-cases.md#qualitative-data-analysis) enthält ein Beispiel einer deskriptiven Analyse der Empfänger.
 
@@ -82,7 +82,7 @@ Die vorgeschlagenen Optionen können abhängig vom Inhalt dieses Felds variieren
   >
   >Diese Option sollte mit Vorsicht angewandt werden, da sie Performance und Lesbarkeit des Berichts stark beeinträchtigen kann.
 
-* **[!UICONTROL Automatisch]**: Die n am meisten vertretenen Werte werden angezeigt. Sie werden automatisch berechnet und bilden in Abhängigkeit von der angegebenen Klassenanzahl einen bestimmten Prozentsatz der gewünschten Variablen ab. Wenn es sich um numerische Werte handelt, verteilt Adobe Campaign die Daten automatisch in n Klassen.
+* **[!UICONTROL Auto]** : Mit dieser Option können Sie die n am häufigsten dargestellten Werte anzeigen. Sie werden automatisch berechnet und stellen jeweils einen Prozentsatz der Variablen im Verhältnis zur Anzahl der Klassen dar. Für numerische Werte generiert Adobe Campaign automatisch n Klassen, nach denen die Daten sortiert werden.
 * **[!UICONTROL Manuell]**: Diese Option funktioniert wie die Option **[!UICONTROL Automatisch]**, mit dem Unterschied, dass die Werte benutzerdefiniert werden können. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Hinzufügen]** rechts neben der Wertetabelle.
 
   Die Werte können vor der Benutzerdefinierung automatisch von Adobe Campaign initialisiert werden: Geben Sie hierzu die Anzahl an zu erzeugenden Klassen an und klicken Sie auf den Link **[!UICONTROL Initialiseren mit]**, wie im nachstehenden Beispiel:
@@ -97,11 +97,11 @@ Die vorgeschlagenen Optionen können abhängig vom Inhalt dieses Felds variieren
 
   ![](assets/reporting_descriptive_group_by_year.png)
 
-* **[!UICONTROL Modulo]**: Erstellt bei numerischen Variablen Wertegruppen mit einem Intervall, dessen Größe im gleichnamigen Feld bezeichnet wird. Ein Modulo mit einem Wert von 10 erlaubt beispielsweise die Erstellung eines Intervalls von 10.
+* **[!UICONTROL Modulo]** : dient der Erstellung von Wertegruppen für numerische Werte. Beispielsweise können Sie mit einem Modulo mit dem Wert 10 ein Intervall von Werten erstellen, die 10 mal 10 ändern.
 
   ![](assets/reporting_descriptive_initialize_modulo.png)
 
-  Im unten stehenden Beispiel wird die Verteilung der Empfänger nach Altersgruppen dargestellt.
+  Im unten stehenden Beispiel wird die Aufschlüsselung der Empfänger nach Altersgruppen dargestellt.
 
   ![](assets/reporting_descriptive_initialize_modulo_result.png)
 
@@ -183,11 +183,11 @@ Folgende Funktionen stehen zur Auswahl:
 
 Im letzten Schritt des Assistenten wird der Bericht angezeigt, d. h. die zuvor konfigurierte Tabelle und/oder Grafik.
 
-Wenn der Bericht eine Tabelle enthält, ist die Ergebniszelle der Berechnung eingefärbt. Die Intensität der Farbe ist umso stärker, je höher das Ergebnis ausfällt.
+Wenn der Bericht eine Tabelle enthält, ist die Zelle für das Berechnungsergebnis farbig. Je höher das Ergebnis, desto intensiver die Farbe.
 
 ![](assets/report_compute_data_sample1.png)
 
-Die Darstellung der Ergebnisse kann angepasst werden. Klicken Sie hierzu mit der rechten Maustaste auf die betroffene Variable und wählen Sie den gewünschten Eintrag im Kontextmenü aus.
+Es ist möglich, das Layout der Ergebnisse zu ändern. Klicken Sie dazu mit der rechten Maustaste auf die betreffende Variable und wählen Sie die Eingabe aus dem Kontextmenü.
 
 ![](assets/s_ncs_user_report_wizard_029.png)
 
@@ -209,7 +209,7 @@ Zunächst muss eine Variable ausgewählt werden, auf die sich die Berechnungen b
 
 ![](assets/s_ncs_user_report_wizard_017.png)
 
-Adobe Campaign bietet standardmäßig eine Reihe von Statistiken zur Analyse der ausgewählten Daten. Sie können die Liste bei Bedarf bearbeiten und Statistiken hinzufügen, verändern oder löschen.
+Standardmäßig bietet Adobe Campaign eine Reihe von Statistiken, die für die ausgewählten Daten berechnet werden. Sie können diese Liste je nach Bedarf ändern, hinzufügen oder Statistiken löschen.
 
 Folgende Funktionen stehen zur Auswahl:
 

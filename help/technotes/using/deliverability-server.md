@@ -7,8 +7,8 @@ hide: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '992'
-ht-degree: 95%
+source-wordcount: '1058'
+ht-degree: 93%
 
 ---
 
@@ -49,7 +49,7 @@ Zur Integration des neuen Zustellbarkeits-Servers muss Campaign mit Adobe Shared
 
 >[!AVAILABILITY]
 >
-> Die Anmeldedaten für Service-Konten (JWT) werden von Adobe demnächst eingestellt. Campaign-Integrationen mit Adobe-Lösungen und -Apps müssen jetzt mit OAuth-Server-to-Server-Anmeldedaten arbeiten. </br>
+> Die Berechtigung für das Service-Konto (JWT) wird von Adobe nicht mehr unterstützt. Campaign-Integrationen mit Adobe-Lösungen und -Programmen müssen jetzt auf OAuth-Server-zu-Server-Anmeldedaten angewiesen sein. </br>
 >
 > * Wenn Sie eingehende Integrationen in Campaign implementiert haben, müssen Sie Ihr technisches Konto migrieren, wie in [dieser Dokumentation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank) beschrieben. Bestehende [Anmeldedaten für Service-Konten (JWT)](../../integrations/using/oauth-technical-account.md) sind noch bis zum 27. Januar 2025 gültig. </br>
 >
@@ -92,7 +92,7 @@ Auf [dieser Seite](../../integrations/using/oauth-technical-account.md#oauth-ser
 
 ### Schritt 2: Hinzufügen der Projektanmeldedaten in Adobe Campaign {#add-credentials-campaign}
 
-Führen Sie die Schritte aus, die auf [dieser Seite](../../integrations/using/oauth-technical-account.md#add-credentials) beschrieben werden, um Ihre OAuth-Projektanmeldedaten in Adobe Campaign hinzuzufügen.
+Führen Sie die Schritte aus, die auf [dieser Seite](../../integrations/using/oauth-technical-account.md#add-credentials) beschrieben sind, um Ihre OAuth-Projektanmeldedaten in Adobe Campaign hinzuzufügen.
 
 ### Schritt 3: Überprüfen Sie Ihre Konfiguration
 

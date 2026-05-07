@@ -7,8 +7,8 @@ hide: true
 exl-id: 8025d207-3bc0-400f-b6a4-a72765e5a9d2
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '645'
-ht-degree: 100%
+source-wordcount: '657'
+ht-degree: 80%
 
 ---
 
@@ -33,7 +33,7 @@ Die weitere Konfiguration hängt von der gewählten Aktion ab.
 
 1. **Dateiempfang**
 
-   Zum Empfang von auf einem Remote-Server gespeicherten Dateien ist im Feld **[!UICONTROL Aktion]** die Option **[!UICONTROL Dateiempfang]** auszuwählen und die URL anzugeben.
+   Um auf einem Remote-Server gespeicherte Dateien zu empfangen, wählen Sie **[!UICONTROL Datei herunterladen]** im Feld **[!UICONTROL Aktion]** aus. Die URL muss im entsprechenden Feld angegeben werden.
 
    ![](assets/file_transfert_edit.png)
 
@@ -53,19 +53,19 @@ Die weitere Konfiguration hängt von der gewählten Aktion ab.
 
    ![](assets/file_transfert_source.png)
 
-   Mithilfe der Pfeile kann die Reihenfolge der Tabs angepasst werden. Die Dateien werden in dieser Reihenfolge an den Server übertragen.
+   Mit den Pfeilen können Sie die Reihenfolge der Registerkarten ändern. Dies bezieht sich auf die Reihenfolge, in der Dateien an den Server gesendet werden.
 
-   Bei Auswahl der Option **[!UICONTROL Verlauf der übertragenen Dateien speichern]** werden die verschiedenen Übertragungen im Verzeichnis protokolliert.
+   Mit **[!UICONTROL Option „Verlauf der gesendeten Dateien]**&quot; können Sie die gesendeten Dateien verfolgen. Auf diesen Verlauf kann über das Verzeichnis zugegriffen werden.
 
 1. **Existenztest einer Datei**
 
-   Um das Vorhandensein einer Datei zu prüfen, wählen Sie im Feld **[!UICONTROL Aktion]** die Option **[!UICONTROL Existenztest einer Datei]** aus. Die Konfiguration des Remote-Servers entspricht der für das Herunterladen einer Datei. Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](#properties).
+   Um das Vorhandensein einer Datei zu testen, wählen Sie die Option **[!UICONTROL Testen, um zu sehen, ob]** Datei vorhanden ist **[!UICONTROL im Feld Aktion]** aus. Die Konfiguration des Remote-Servers entspricht der Konfiguration für den Datei-Download. Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](#properties).
 
    ![](assets/file_transfert_edit_test.png)
 
 1. **Dateiauflistung**
 
-   Um eine Liste der vorhandenen Dateien zu erhalten, wählen Sie im Feld **[!UICONTROL Aktion]** die Option **[!UICONTROL Dateiauflistung]** aus. Die Konfiguration des Remote-Servers entspricht der für das Herunterladen einer Datei. Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](#properties).
+   Um die Dateien aufzulisten, wählen Sie die Option **[!UICONTROL Dateiauflistung]** aus dem Feld **[!UICONTROL Aktion]** aus. Die Konfiguration des Remote-Servers entspricht der für den Empfang von Dateien. Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](#properties).
 
    Die Option **[!UICONTROL Alle Dateien auflisten]**, die bei Auswahl der Aktion **[!UICONTROL Dateiauflistung]** erscheint, ermöglicht es, alle auf dem Server befindlichen Dateien in der Ereignisvariable **vars.filenames** zu erfassen. Die Dateinamen werden durch `\n`-Zeichen getrennt angegeben.
 

@@ -10,14 +10,14 @@ topic-tags: production-procedures
 exl-id: 12a255fe-66f9-40ce-b19e-c24322c2e009
 source-git-commit: b7dedddc080d1ea8db700fabc9ee03238b3706cc
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '449'
 ht-degree: 96%
 
 ---
 
 # Administration{#administration}
 
-Der automatische Start der Adobe Campaign-Module (**web**, **mta**, **wfserver** usw.) wird vom Server **nlserver** bereitgestellt.
+Automatisches Starten der Adobe Campaign-Module (**web**, **mta**, **wfserver** usw.) wird vom Server **nlserver** bereitgestellt.
 
 Bei der Installation von Adobe Campaign wird der Rechner automatisch so konfiguriert, dass der **nlserver** -Dienst während der Startsequenz Beginn wird.
 
@@ -52,7 +52,7 @@ Im Folgenden finden Sie eine Liste der üblichen Verwaltungsbefehle, auf die unt
   >    * einen anderen Wert, wenn ein Fehler auftritt.
   >
 
-* Beginn/Stopp eines Multi-Instanz- oder Mono-Instanzmoduls (**web**, **trackinglogd**, **syslogd**, **mta**, **wfserver**&#x200B;**&#x200B;**,inmail):
+* Beginn/Stopp eines Multi-Instanz- oder Mono-Instanzmoduls (**web**, **trackinglogd**, **syslogd**, **mta**, **wfserver******,inmail):
 
   **nlserver-Beginn`<module>[@<instance>]`**
 

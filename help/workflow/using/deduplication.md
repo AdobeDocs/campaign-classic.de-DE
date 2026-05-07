@@ -7,8 +7,8 @@ hide: true
 exl-id: 38add4fe-6238-45de-863e-895ebca189b7
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1171'
-ht-degree: 100%
+source-wordcount: '1192'
+ht-degree: 84%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 
 
-Die Deduplizierung dient der Identifizierung von Duplikaten in der oder den eingehenden Aktivitäten. Zur Identifizierung können beispielsweise die E-Mail-Adresse, eine Telefonnummer oder andere Felder herangezogen werden.
+Die Deduplizierung dient der Identifizierung von Dubletten in der oder den eingehenden Aktivitäten. Die Deduplizierung kann für die E-Mail-Adresse, Telefonnummer oder ein anderes Feld durchgeführt werden.
 
 Die Aktivität **[!UICONTROL Deduplizierung]** wird zum Entfernen von Duplikat-Zeilen aus einem Datensatz verwendet. Die folgenden Datensätze können beispielsweise als Duplikate betrachtet werden, da sie dieselbe E-Mail-Adresse und dieselbe Mobil- und/oder Festnetztelefonnummer haben.
 
@@ -43,7 +43,7 @@ Komplement:
 
 ## Best Practices {#best-practices}
 
-Bei der Deduplizierung werden die eingehenden Datenströme getrennt verarbeitet. Wenn also ein Empfänger &#39;A&#39; sowohl im Ergebnis der Abfrage 1 als auch im Ergebnis der Abfrage 2 enthalten ist, wird er nicht dedupliziert.
+Während der Deduplizierung werden eingehende Flüsse separat verarbeitet. Wenn beispielsweise Empfänger A im Ergebnis von Abfrage 1 sowie im Ergebnis von Abfrage 2 gefunden wird, werden sie nicht dedupliziert.
 
 In diesem Fall ist wie folgt vorzugehen:
 
@@ -101,11 +101,11 @@ Die Aktivität ist zu benennen, Deduplizierungsmethode und -bedingungen sind anz
 
    Die konfigurierten Deduplizierungsparameter werden zusammenfassend angezeigt.
 
-   Im unteren Bereich des Fensters können Sie den Titel der ausgehenden Transition anpassen und einen Segment-Code angeben, der dem Ergebnis zugeordnet wird. Dieser Code kann im weiteren Verlauf als Kriterium bei der Zielgruppenbestimmung herangezogen werden.
+   Im unteren Bereich des Aktivitäts-Editors können Sie den Titel für die ausgehende Transition des grafischen Objekts ändern und einen Segment-Code eingeben, der mit dem Ergebnis der Aktivität verknüpft wird. Dieser Code kann später als Targeting-Kriterium verwendet werden.
 
    ![](assets/s_user_segmentation_dedup_param8.png)
 
-1. Kreuzen Sie die Option **[!UICONTROL Komplement erzeugen]** an, wenn Sie auch die restliche Population im weiteren Verlauf des Workflows verwenden möchten. Das Komplement enthält in diesem Fall alle Duplikate und die Aktivität weist somit, wie unten abgebildet, eine zusätzliche Transition auf:
+1. Aktivieren Sie die **[!UICONTROL Komplement erzeugen]**, wenn Sie die verbleibende Population nutzen möchten. Das Komplement besteht aus allen Duplikaten. Eine zusätzliche Transition wird wie folgt zur Aktivität hinzugefügt:
 
    ![](assets/s_user_segmentation_dedup_param9.png)
 
@@ -121,7 +121,7 @@ Die identifizierten Duplikate werden für eine eventuelle spätere Verwendung in
 
 1. Positionnieren Sie die erforderlichen Aktivitäten wie oben abgebildet im Workflow-Diagramm.
 
-   Die Vereinigungsaktivität dient hier der Zusammenführung der verschiedenen Abfrageergebnisse in einer ausgehenden Transition. Auf diese Weise erfolgt die Deduplizierung nicht separat für jede Abfrage, sondern gebündelt für alle Ergebnisse. Weitere Informationen zu diesem Thema finden Sie unter [Best Practices](#best-practices).
+   Die Aktivität Vereinigung wird hier verwendet, um die drei Abfragen zu einem einzigen Übergang zu „vereinheitlichen“. Deduplizierung funktioniert daher nicht für jede einzelne Abfrage, sondern für die gesamte Abfrage. Weitere Informationen zu diesem Thema finden Sie unter [Best Practices](#best-practices).
 
 1. Öffnen Sie die Deduplizierungsaktivität und klicken Sie auf den Link **[!UICONTROL Konfiguration bearbeiten...]**, um die Deduplizierungsmethode zu bestimmen.
 1. Wählen Sie im sich öffnenden Fenster die Option **[!UICONTROL Datenbankschema]** aus.
@@ -133,7 +133,7 @@ Die identifizierten Duplikate werden für eine eventuelle spätere Verwendung in
 1. Geben Sie an, dass nur ein Datensatz beibehalten werden soll, wenn dieselbe E-Mail-Adresse für mehrere Empfänger identifiziert wurde.
 1. Wählen Sie als Deduplizierungsmethode **[!UICONTROL Automatische Auswahl]**, damit der beizubehaltende Datensatz zufällig bestimmt wird. Klicken Sie abschließend auf **[!UICONTROL Beenden]**.
 
-Bei Ausführung des Workflows werden die als Duplikate identifizierten Empfänger von der Ergebnismenge (und somit vom Versand) ausgeschlossen und in der Liste der Duplikate gespeichert. Diese Liste kann erneut verwendet werden, um die Identifizierung der Duplikate nicht wiederholt vornehmen zu müssen.
+Beim Ausführen des Workflows werden alle als Duplikate identifizierten Empfänger aus dem Ergebnis (und somit dem Versand) ausgeschlossen und der Duplikatliste hinzugefügt. Diese Liste kann erneut verwendet werden, anstatt die Duplikate erneut identifizieren zu müssen.
 
 ## Zusammenführen von Feldern zu einem einzigen Datensatz {#merging-fields-into-single-record}
 

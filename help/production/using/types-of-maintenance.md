@@ -10,8 +10,8 @@ topic-tags: database-maintenance
 exl-id: 08e179aa-fd83-4c0a-879e-ab7aec168d92
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '505'
-ht-degree: 4%
+source-wordcount: '528'
+ht-degree: 7%
 
 ---
 
@@ -81,7 +81,7 @@ Es stehen verschiedene Strategien zur Verfügung:
    <td> Duplizieren, umbenennen und ablegen<br /> </td> 
    <td> Dadurch wird eine Kopie einer Tabelle und ihrer Indizes erstellt, die vorhandene Tabelle wird dann gelöscht und die Kopie wird umbenannt, um sie zu ersetzen.<br /> </td> 
    <td> Diese Methode ist schneller als der erste Ansatz, da sie weniger IOs generiert (keine Kopie als Datei und aus dieser Datei gelesen).<br /> </td> 
-   <td> benötigt doppelt so viel Platz.<br /> Alle aktiven Prozesse, die während des Vorgangs in die Tabelle schreiben, müssen angehalten werden. Lesevorgänge sind jedoch davon nicht betroffen, da die Tabelle im letzten Moment nach dem Umbau ausgetauscht wird. <br /> </td> 
+   <td> Erfordert doppelt so viel Platz.<br /> Alle aktiven Prozesse, die während des Vorgangs in die Tabelle schreiben, müssen angehalten werden. Lesevorgänge sind jedoch davon nicht betroffen, da die Tabelle im letzten Moment nach dem Umbau ausgetauscht wird. <br /> </td> 
   </tr> 
  </tbody> 
 </table>

@@ -6,9 +6,9 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Web Forms
 exl-id: c5b5c398-c13b-4ebe-88b2-8ff84741422e
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: ht
-source-wordcount: '748'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '751'
+ht-degree: 75%
 
 ---
 
@@ -20,7 +20,7 @@ Das Formular kann eine oder mehrere Seiten enthalten. Es wird mithilfe eines Dia
 
 ## Die Schaltflächen &quot;Weiter&quot; und &quot;Zurück&quot; {#about-previous-page-and-next-page}
 
-Sie können für jede Seite die Schaltflächen **[!UICONTROL Weiter]** oder **[!UICONTROL Zurück]** löschen. Wählen Sie dazu die entsprechende Seite und danach die Option **[!UICONTROL Weiter zur nächsten Seite nicht zulassen]** oder **[!UICONTROL Rückkehr zur vorhergehenden Seite nicht zulassen]** aus .
+Für jede Seite können Sie die Schaltflächen **[!UICONTROL Weiter]** oder **[!UICONTROL Zurück]** löschen. Wählen Sie dazu die betroffene Seite aus und wählen Sie die Option **[!UICONTROL Nächste Seite deaktivieren]** oder **[!UICONTROL Rückkehr zur vorherigen Seite nicht zulassen]** .
 
 ![](assets/s_ncs_admin_survey_no_next_page.png)
 
@@ -40,7 +40,7 @@ Folgende Zielorte sind möglich:
 
   ![](assets/s_ncs_admin_jump_param2.png)
 
-* Der Zielort kann in einer Variablen gespeichert sein. Wählen Sie ihn in diesem Fall aus der Dropdown-Liste wie unten gezeigt aus.
+* Das Ziel kann in einer Variablen gespeichert werden. Wählen Sie ihn in diesem Fall wie unten dargestellt aus der Dropdown-Liste aus:
 
   ![](assets/s_ncs_admin_jump_param3.png)
 
@@ -50,7 +50,7 @@ Folgende Zielorte sind möglich:
 
 ## Beispiel: Zugriff auf ein anderes Formular entsprechend einem URL-Parameter {#example--accessing-another-form-according-to-a-parameter-of-the-url}
 
-Im folgenden Beispiel soll ein Webformular konfiguriert werden, das nach der Validierung abhängig vom Parameter der URL ein anderes Formular anzeigt. Gehen Sie dazu folgendermaßen vor:
+Im folgenden Beispiel möchten wir ein Web-Formular konfigurieren, das nach der Genehmigung ein anderes Formular anzeigt, das durch einen Parameter der URL bestimmt wird. Gehen Sie hierzu wie folgt vor:
 
 1. Fügen Sie am Ende eines Formulars einen Sprung ein. Dieser ersetzt die **[!UICONTROL Ende]**-Komponente.
 
@@ -80,7 +80,7 @@ Sie können Links zu anderen Formularseiten einfügen. Fügen Sie dazu ein stati
 
 ### Anzeige anhand von Antworten {#display-based-on-responses}
 
-Mit der Komponente **[!UICONTROL Test]** können Sie die Reihenfolge der Formularseiten entsprechend bestimmter Bedingungen ändern. Sie können mehrere Verzweigungen definieren, die je nach Testergebnis aktiviert werden. Dadurch werden abhängig von den Benutzerantworten unterschiedliche Seiten angezeigt.
+Mit **[!UICONTROL Feld &quot;]**&quot; können Sie die Sequenzierung von Seiten in einem Formular Bedingungen unterwerfen. Je nach Testergebnissen können Sie damit verschiedene Verzweigungslinien definieren. Auf diese Weise können Sie je nach den Antworten der Benutzer unterschiedliche Seiten anzeigen.
 
 Beispielsweise können Sie Kunden, die zuvor eine Online-Bestellung aufgegeben haben, eine andere Seite anzeigen wie jenen, die über zehn Bestellungen aufgegeben haben. Fügen Sie dazu auf der ersten Formularseite ein Eingabefeld vom Typ **[!UICONTROL Zahl]** ein, in dem der Benutzer angeben kann, wie viele Bestellungen er bereits aufgegeben hat.
 
@@ -96,11 +96,11 @@ In unserem Beispiel soll eine Variable verwendet werden:
 
 ![](assets/s_ncs_admin_survey_test_ex1.png)
 
-Fügen Sie im Diagramm des Formulars eine Test-Komponente ein, um die Bedingungen zu definieren. Für jede Bedingung wird am Ausgang der Test-Komponente eine neue Abzweigung hinzugefügt.
+Fügen Sie im Diagramm des Formulars ein Testfeld ein, um die Bedingungen zu definieren. Für jede Bedingung wird eine neue Verzweigung an der Ausgabe der Testbox hinzugefügt.
 
 ![](assets/s_ncs_admin_survey_test_ex2.png)
 
-Wählen Sie die Option **[!UICONTROL Standard-Verzweigung aktivieren]** aus, um eine Transition für Fälle hinzuzufügen, bei denen keine der Bedingungen wahr ist. Diese Option ist nicht nötig, wenn alle möglichen Fälle in den definierten Bedingungen berücksichtigt werden.
+Wählen Sie die **[!UICONTROL Standardverzweigung aktivieren]**, um eine Transition für den Fall hinzuzufügen, dass keine der Bedingungen erfüllt ist. Diese Option ist nicht erforderlich, wenn alle möglichen Fälle von den definierten Bedingungen abgedeckt werden.
 
 Definieren Sie dann die Seitenreihenfolge, wenn eine der Bedingungen wahr ist, zum Beispiel:
 
