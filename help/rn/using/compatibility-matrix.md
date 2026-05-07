@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: 66387e2e008051901fe3385f571d7fe798829100
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '912'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -249,7 +249,7 @@ Unten finden Sie die mit Adobe Campaign kompatiblen CRM-Systeme (Customer Relati
 <tbody>
 <tr>
 <td>
-<p>Salesforce Connector-API</p>
+<p>Salesforce-Connector-API</p>
 </td>
 <td>
 <p>API-Version 49</p>
@@ -453,7 +453,7 @@ Microsoft Edge WebView2 kann von der [Microsoft-Entwickler-Site](https://www.ado
 
 Sie können Campaign zum [Senden von Push-Benachrichtigungen](../../delivery/using/about-mobile-app-channel.md) über das Adobe Experience Platform Mobile SDK verwenden, indem Sie die Adobe Campaign-Erweiterung in der Datenerfassungs-Benutzeroberfläche konfigurieren.
 
-Der Campaign-SDK ist [veraltet](deprecated-features.md) ab Campaign v7.4. Um einen reibungslosen Übergang für die bestehende Implementierung auf AEP Mobile SDK sicherzustellen, können Sie es weiterhin auf den unten aufgeführten Betriebssystemen verwenden<!--, using the associated [mobile SDK](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)-->.
+Das Campaign-SDK ist ab Campaign v7.4 [veraltet](deprecated-features.md). Um einen reibungslosen Übergang für die bestehende Implementierung auf das AEP Mobile SDK sicherzustellen, können Sie es weiterhin unter den unten aufgeführten Betriebssystemen verwenden<!--, using the associated [mobile SDK](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)-->.
 
 
 <table>
