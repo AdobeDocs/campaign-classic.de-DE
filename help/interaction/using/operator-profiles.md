@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: managing-environments
 exl-id: e11fb28c-d530-45a2-862a-ff1c20975577
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '408'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 
 
-In Interaction werden zwei verschiedene Profile benötigt: ein angebotsverantwortlicher und ein versandverantwortlicher Benutzer. Die entsprechenden Benutzer haben jeweils nur auf bestimmte Bereiche des Navigationsbaums Zugriff.
+Es gibt zwei Typen von Benutzern, die Interaction verwenden: Angebotsverantwortliche und Versandverantwortliche. Sie haben jeweils spezifische Rechte, die ihnen nur Zugriff auf einige Teile des Baums und der Plattform gewähren.
 
 * **[!UICONTROL Angebotsverantwortlicher]**: erstellt und verwaltet Angebote. Beachten Sie, dass, wenn Angebote im Workflow verwendet werden, der Benutzer in der Benutzergruppe **[!UICONTROL Administrator]** oder **[!UICONTROL Angebotsverantwortliche Benutzer]** sein muss, um den Workflow auszuführen.
 * **[!UICONTROL Versandverantwortlicher]**: validiert und verwendet Angebote.

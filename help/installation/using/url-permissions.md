@@ -10,8 +10,8 @@ topic-tags: additional-configurations
 exl-id: 6fe8da3b-57b9-4a69-8602-a03993630b27
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 25%
+source-wordcount: '380'
+ht-degree: 33%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 25%
 
 
 
-Die Standardliste der URLs, die von JavaScript-Codes (Workflows usw.) von Ihren Campaign Classic-Instanzen aufgerufen werden können, ist begrenzt. Diese URLs ermöglichen das ordnungsgemäße Funktionieren der Instanzen.
+Die Standardliste der URLs, die von JavaScript-Codes (Workflows usw.) aufgerufen werden können durch Ihre Campaign Classic-Instanzen ist eingeschränkt. Diese URLs ermöglichen das ordnungsgemäße Funktionieren der Instanzen.
 
 Standardmäßig sind Instanzen nicht berechtigt, eine Verbindung zu externen URLs herzustellen. Es ist jedoch möglich, der Liste der autorisierten URLs einige externe URLs hinzuzufügen, damit Ihre Instanz eine Verbindung zu ihnen herstellen kann. Dadurch können Sie zwischen Ihren Campaign-Instanzen und externen Systemen, wie z. B. SFTP-Servern oder Websites, eine Verbindung herstellen, um den Datei- und/oder Datentransfer zu ermöglichen.
 
@@ -29,7 +29,7 @@ Standardmäßig sind Instanzen nicht berechtigt, eine Verbindung zu externen URL
 >
 >Wenn Sie als **gehosteter** Kunde auf das [Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de) zugreifen können, können Sie die Benutzeroberfläche zum Self-Service für URL-Berechtigungen verwenden. [Weitere Informationen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=de)
 >
->Andere **hybride/gehostete** Kunden müssen sich an das Adobe auf die Zulassungsliste setzen-Supportteam wenden, um IP zur hinzuzufügen.
+>Andere **hybride/gehostete** Kunden müssen sich an das Adobe-Supportteam wenden, um IP zur hinzuzufügen.
 >
 
 Bei **Hybrid**- und **On-Premise**-Bereitstellungen muss der Administrator auf eine neue **urlPermission** in der Datei **serverConf.xml** verweisen.
@@ -37,8 +37,8 @@ Bei **Hybrid**- und **On-Premise**-Bereitstellungen muss der Administrator auf e
 
 Es stehen drei Verbindungsschutzmodi zur Verfügung:
 
-* auf die Zulassungsliste setzen **Sperren**: Alle URLs, die nicht zur gehören, werden mit einer Fehlermeldung blockiert. Dies ist der Standardmodus nach einem Postupgrade.
-* auf die Zulassungsliste setzen **Permissive**: Alle URLs, die nicht zur gehören, sind zulässig.
+* **Sperren**: Alle URLs, die nicht zur gehören, werden mit einer Fehlermeldung blockiert. Dies ist der Standardmodus nach einem Postupgrade.
+* **Permissive**: Alle URLs, die nicht zur gehören, sind zulässig.
 * **Warnung**: Alle URLs, die nicht zur Zulassungsliste gehören, sind zulässig, aber der JS-Interpreter gibt eine Warnung aus, damit der Administrator sie erfassen kann. Dieser Modus fügt JST-310027 Warnmeldungen hinzu.
 
 ```

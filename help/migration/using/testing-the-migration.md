@@ -10,7 +10,7 @@ hide: true
 exl-id: 228ee9e4-46a0-4d82-b8ba-b019bc0e7cac
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '722'
 ht-degree: 0%
 
 ---
@@ -97,7 +97,7 @@ Verschiedene Optionen ermöglichen es Ihnen, die Auswirkungen einer Migration zu
 
 ### Verifizierungsprozess {#verification-process}
 
-Dieser Prozess ist standardmäßig im Postupgrade-Befehl integriert und ermöglicht die Anzeige von Warnungen und Fehlern, die zu einem Fehlschlagen der Migration führen können. **Wenn Fehler angezeigt werden, wurde die Migration nicht ausgeführt.** Wenn dies eintritt, korrigieren Sie alle Fehler und starten Sie das Postupgrade erneut.
+Dieser Prozess ist standardmäßig im Postupgrade-Befehl integriert und ermöglicht die Anzeige von Warnungen und Fehlern, die zu einem Fehlschlagen der Migration führen können. **Wenn Fehler angezeigt werden, wurde die Migration nicht ausgeführt.** Korrigieren Sie in diesem Fall alle Fehler und starten Sie das Postupgrade erneut.
 
 Sie können den Verifizierungsprozess eigenständig (ohne Migration) mit dem Befehl starten:
 

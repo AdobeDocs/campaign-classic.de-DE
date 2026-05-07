@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 73b90d79-88b6-4aaf-8103-4564de5e06be
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: ht
-source-wordcount: '834'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '841'
+ht-degree: 80%
 
 ---
 
@@ -60,7 +60,7 @@ Dies sind die Tabellen, die bei der Durchführung von Datenschutzanfragen standa
 * Abonnements (subscription)
 * Angebotsvorschlag für einen Empfänger (propositionRcp)
 
-Wenn Sie benutzerdefinierte Tabellen erstellt haben, für die eine Relation zur Empfängertabelle (Typ &quot;own&quot;) besteht, werden auch diese berücksichtigt. Wenn Sie beispielsweise eine Transaktionen-Tabelle haben, für die eine Relation mit der Empfängertabelle vorhanden ist, und eine Transaktionendetails-Tabelle, für die eine Relation mit der Transaktionen-Tabelle besteht, werden beide berücksichtigt.
+Wenn Sie benutzerdefinierte Tabellen mit einer Relation zur Empfängertabelle (vom Typ „own„) erstellt haben, werden diese ebenfalls berücksichtigt. Wenn Sie beispielsweise eine mit der Empfängertabelle verknüpfte Transaktionstabelle und eine mit der Transaktionstabelle verknüpfte Transaktionsdetailtabelle haben, werden beide berücksichtigt.
 
 >[!IMPORTANT]
 >
@@ -77,7 +77,7 @@ Dies sind die unterschiedlichen Status einer Datenschutzanfrage:
 * **[!UICONTROL Verarbeitung läuft]** / **[!UICONTROL Erneuter Versuch läuft]**: Der Workflow verarbeitet gerade die Anfrage.
 * **[!UICONTROL Ausstehende löschen]**: Der Workflow hat alle zu löschenden Empfängerdaten identifiziert.
 * **[!UICONTROL Löschvorgang läuft]**: Der Workflow führt gerade die Löschung durch.
-* **[!UICONTROL Löschbestätigung steht aus]**: (Löschanfrage im zweistufigen Prozessmodus) Der Workflow hat die Zugriffsanfrage verarbeitet. Für die Löschung ist eine manuelle Bestätigung erforderlich. Die Schaltfläche ist 15 Tage lang verfügbar.
+* **[!UICONTROL Löschbestätigung ausstehend]** (Löschanfrage im 2-stufigen Prozessmodus): Der Workflow hat die Zugriffsanfrage verarbeitet. Zum Löschen wird eine manuelle Bestätigung angefordert. Die Schaltfläche ist 15 Tage lang verfügbar.
 * **[!UICONTROL Beendet]**: Die Verarbeitung der Anfrage wurde ohne Fehler abgeschlossen.
 * **[!UICONTROL Fehler]**: Workflow ist fehlerhaft. Die Ursache wird in der Liste der Datenschutzanfragen in der Spalte **[!UICONTROL Anfragestatus]** angezeigt. Beispielsweise bedeutet **[!UICONTROL Fehlerdaten nicht gefunden]**, dass in der Datenbank keine Empfängerdaten gefunden wurden, die dem **[!UICONTROL Abstimmwert]** der betroffenen Person entsprechen.
 
@@ -95,7 +95,7 @@ Wenn der zweistufige Modus aktiviert ist, ändert sich der Status einer neuen L�
 
 ## JSSP-URL {#jspp-url}
 
-Bei der Verarbeitung von Zugriffsanfragen erzeugt Adobe Campaign JSSP, mit deren Hilfe die Empfängerdaten aus der Datenbank abgerufen und in eine auf einem lokalen Gerät gespeicherte XML-Datei exportiert werden. Die JSSP-URL ist folgendermaßen definiert:
+Bei der Verarbeitung von Zugriffsanfragen generiert Adobe Campaign ein JSSP, das die Empfängerdaten aus der Datenbank abruft und in eine auf dem lokalen Computer gespeicherte XML-Datei exportiert. Die JSSP-URL wird wie folgt definiert:
 
 ```
 "$(serverUrl)+'/nms/gdpr.jssp?id='+@id"
@@ -105,7 +105,7 @@ wobei @id die Kennung der Datenschutzanfrage ist.
 
 Die URL wird im Feld **[!UICONTROL &quot;Speicherort der Datei&quot; (@urlFile)]** des Schemas der **[!UICONTROL Datenschutzanfragen (gdprRequest)]** gespeichert.
 
-Die Daten sind in der Datenbank 90 Tage lang verfügbar. Wenn die Anfrage durch den technischen Workflow bereinigt wird, werden die Daten aus der Datenbank entfernt und die URL wird ungültig. Achten Sie deshalb darauf, dass die URL noch gültig ist, wenn Sie die Daten von einer Website herunterladen.
+Die Informationen sind 90 Tage lang in der Datenbank verfügbar. Sobald der technische Workflow die Anfrage bereinigt hat, werden die Informationen aus der Datenbank entfernt und die URL wird veraltet. Bitte überprüfen Sie, ob die URL noch gültig ist, bevor Sie die Daten von einer Web-Seite herunterladen.
 
 Hier ist ein Beispiel für die Datendatei einer betroffenen Person:
 

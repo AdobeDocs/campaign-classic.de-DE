@@ -6,9 +6,9 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Web Forms
 exl-id: 23ca17f8-de1a-4f9c-8357-3965dc3329b1
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: ht
-source-wordcount: '538'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '539'
+ht-degree: 73%
 
 ---
 
@@ -24,13 +24,13 @@ Sie können für jede Seite des Formulars Container mit der Schaltfläche **[!UI
 
 ![](assets/s_ncs_admin_survey_containers_add.png)
 
-Mit Containern können Sie die Elemente einer Seite gruppieren, ohne einen Titel zum endgültigen Rendering hinzuzufügen. Die Elemente sind im Container-Unterverzeichnis zusammengefasst. Mit Standard-Containern können Sie das Layout verwalten.
+Verwenden Sie einen Container, um Elemente der Seite zu gruppieren, ohne dem endgültigen Rendering eine Bezeichnung hinzuzufügen. Elemente werden in der Container-Unterstruktur gruppiert. Mit Standard-Containern können Sie das Layout verwalten.
 
 Beispiel:
 
 ![](assets/s_ncs_admin_survey_containers_std_arbo.png)
 
-Die Position der Titel wird auf die Elemente angewendet, die sich in der Hierarchie unter dem Container befinden. Bei Bedarf kann die Position in jedem Element überschrieben werden. Zum Ändern des Layouts können Spalten hinzugefügt oder entfernt werden. Siehe [Die Felder auf der Seite positionieren](#positioning-the-fields-on-the-page).
+Die Position von Beschriftungen wird auf Elemente angewendet, die in der Hierarchie unter dem Container platziert werden. Bei Bedarf kann es für jedes Element überladen werden. Spalten hinzufügen oder entfernen, um das Layout zu ändern. Siehe [Die Felder auf der Seite positionieren](#positioning-the-fields-on-the-page).
 
 Im obigen Beispiel wird das Rendering wie folgt ausgeführt:
 
@@ -42,11 +42,11 @@ Das Layout des Web-Formulars wird in jedem Container Seite für Seite definiert 
 
 Seiten sind in Spalten unterteilt: Jede Seite enthält eine bestimmte Anzahl von Spalten. Jedes Feld der Seite belegt **n** Zellen. Container umfassen auch eine gewisse Anzahl von Spalten und die in ihnen enthaltenen Felder haben eine bestimmte Anzahl von Zellen.
 
-Standardmäßig werden Seiten auf einer einzigen Spalte erstellt und jedes Element hat eine einzige Zelle. Das bedeutet, dass Felder untereinander angezeigt werden, wobei jedes wie unten dargestellt eine ganze Zeile umfasst:
+Standardmäßig werden Seiten auf einer einzelnen Spalte erstellt, und jedes Element belegt eine Zelle. Dies bedeutet, dass die Felder nacheinander angezeigt werden, wobei jedes eine ganze Zeile einnimmt, wie unten dargestellt:
 
 ![](assets/s_ncs_admin_survey_container_ex.png)
 
-Im folgenden Beispiel wurde die Standardkonfiguration beibehalten. Die Seite umfasst eine einzige Spalte mit vier Containern.
+Im folgenden Beispiel wurde die Standardkonfiguration beibehalten. Die Seite nimmt eine einzige Spalte ein, die vier Container enthält.
 
 ![](assets/s_ncs_admin_survey_container_ex0.png)
 
@@ -64,7 +64,7 @@ Sie können die Anzeigeparameter anpassen, um das folgende Rendering zu erhalten
 
 Im obigen Rendering-Beispiel belegt jedes Eingabefeld, jeder Titel und jedes Bild eine einzige Zelle in den Spalten der Container.
 
-Sie können die Formatierung in jedem Container ändern. In unserem Beispiel können Sie den Inhalt von Container 4 auf zwei Spalten aufteilen und die Elemente verteilen.
+Sie können die Formatierung in jedem Container ändern. In unserem Beispiel können Sie den Inhalt von Container 4 auf zwei Spalten verteilen und die Elemente verteilen.
 
 ![](assets/s_ncs_admin_survey_container_ex2_rend.png)
 

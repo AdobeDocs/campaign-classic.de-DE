@@ -5,9 +5,9 @@ description: Erfahren Sie mehr über die Funktionsweise von Transaktionsnachrich
 feature: Transactional Messaging, Message Center
 exl-id: dc52e789-d0bf-4e8f-b448-9d69a2762cc1
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: ht
-source-wordcount: '645'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '664'
+ht-degree: 88%
 
 ---
 
@@ -24,11 +24,11 @@ Bei einer Transaktionsnachricht handelt es sich um eine individuell zugeschnitte
 
 Transaktionsnachrichten zeichnen sich durch Skalierbarkeit aus und sind rund um die Uhr verfügbar.
 
-* **Wann wird diese Nachricht gesendet?** Da diese Nachricht wichtige Informationen enthält, erwartet der Benutzer, dass sie in Echtzeit gesendet wird. Folglich muss die Verzögerung zwischen der Auslösung des Ereignisses und dem Eintreffen der Nachricht sehr kurz sein.
+* **Wann ist es fällig?** Da diese Nachricht wichtige Informationen enthält, erwartet der Benutzer, dass sie in Echtzeit gesendet wird. Folglich muss die Verzögerung zwischen der Auslösung des Ereignisses und dem Eintreffen der Nachricht sehr kurz sein.
 
 * **Warum ist das wichtig?** Im Allgemeinen hat eine Transaktionsnachricht hohe Öffnungsraten. Sie sollte daher sorgfältig gestaltet werden, da sie einen starken Einfluss auf das Kundenverhalten und die Kundenbeziehung im Allgemeinen haben kann.
 
-* **Beispiel?** Es kann sich um eine Begrüßungsnachricht nach der Erstellung eines Kontos, eine Bestätigung, dass eine Bestellung versandt wurde, eine Rechnung, eine Nachricht zur Bestätigung einer Passwortänderung, eine Benachrichtigung nach dem Besuch einer Website durch einen Kunden, eine Kommunikation bezüglich der Nichtverfügbarkeit eines Produkts, einen Kontoauszug usw. handeln.
+* **Zum Beispiel?** Es kann sich um eine Begrüßungsnachricht nach der Erstellung eines Kontos, eine Bestätigung, dass eine Bestellung versandt wurde, eine Rechnung, eine Nachricht zur Bestätigung einer Passwortänderung, eine Benachrichtigung nach dem Besuch einer Website durch einen Kunden, eine Kommunikation bezüglich der Nichtverfügbarkeit eines Produkts, einen Kontoauszug usw. handeln.
 
 >[!IMPORTANT]
 >

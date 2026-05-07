@@ -9,12 +9,12 @@ hide: true
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1774'
-ht-degree: 100%
+source-wordcount: '2018'
+ht-degree: 93%
 
 ---
 
-# [!DNL Gold Standard]-Versionen {#gold-standard}
+# [!DNL Gold Standard]-Versionen{#gold-standard}
 
 
 
@@ -37,7 +37,7 @@ _Freitag, 27. August 2021_
 
 Build 9032@99a3894 umfasst die folgenden Fehlerkorrekturen:
 
-* Die Tracking-Signatur-Funktion wurde verbessert. So sollen Fehler verhindert werden, die in Zusammenhang damit stehen, wie Drittanbieter-Tools (E-Mail-Clients, Internet-Browser) Sonderzeichen verarbeiten. URL-Parameter sind jetzt codiert.
+* Die Tracking-Signaturfunktion wurde verbessert, um Fehler zu vermeiden, die in Zusammenhang mit der Art und Weise stehen, in der Drittanbieter-Tools (E-Mail-Clients, Internet-Browser usw.) Sonderzeichen verarbeiten. URL-Parameter sind jetzt codiert.
 * Fehlerkorrektur – Bei der Datumsauswahl wird in der Konsole keine Blocker-Fehlermeldung mehr angezeigt. (NEO-36345)
 
 ### Version [!DNL Gold Standard] 11{#gs-11}
@@ -114,14 +114,10 @@ Build 9032@800be2e umfasst die folgenden Fehlerkorrekturen:
 Die folgenden Fehlerkorrekturen beziehen sich auf den Sicherheitsmechanismus von Trackinglinks (weitere Informationen finden Sie in der [Checkliste für Sicherheit und Datenschutz](https://helpx.adobe.com/de/campaign/kb/acc-security.html#signature-mechanism)):
 
 * Fehlerkorrektur – Tracking von &quot;Benachrichtigungsklicks&quot; (iOS- und Android-Push-Benachrichtigungen) funktioniert jetzt. (NEO-25965)
-* Fehlerkorrektur – Tracking-URLs können geöffnet/geklickt werden, wenn bestimmte veraltete Outlook-Versionen verwendet werden. (NEO-25688)
+* Fehlerkorrektur – Tracking-URLs können geöffnet/geklickt werden, wenn bestimmte veraltete Outlook-Versionen verwendet werden.  (NEO-25688)
 * Fehlerkorrektur – Tracking von URLs mithilfe von Fragmenten in Personalisierungsparametern (Anker-Tags mit Rautenzeichen) funktioniert jetzt. (NEO-25774)
 * Fehlerkorrektur – Es wurde ein Problem mit dem Anti-Phishing-Dienst behoben. (NEO-25283)
 * Fehlerkorrektur – Es wurde ein Problem beim Tracking mit spezifischen benutzerdefinierten Tracking-Formeln behoben. (NEO-25277)
-
-
-
-
 
 ### Version [!DNL Gold Standard] 8{#gs-8}
 
@@ -212,10 +208,10 @@ _Dienstag, 13. August 2019_
 Der erste Build 19.1.4 enthält die folgenden Fehlerkorrekturen:
 
 * Fehlerkorrektur – In der Planungsaktivität werden jetzt bei der Konfiguration des Assistenten keine unbeabsichtigten Fehlernachrichten mehr erzeugt. Update NEO-11662 wurde rückgängig gemacht. (NEO-17097)
-* Regressionskorrektur – Jetzt tritt kein durch NEO-12727 verursachter Fehler mehr auf, bei dem Workflows angehalten wurden, wenn eine Testaktivität zweimal ausgeführt wird. (NEO-16835)
-* Fehlerkorrektur – Jetzt wird kein fehlerhafter HTTP-Code mehr zurückgegeben (HTTP 200 OK statt HTTP 403 Forbidden), wenn ein ungültiges oder abgelaufenes Sitzungstoken in API-Aufrufen verwendet wird. (NEO-16826)
-* Fehlerkorrektur – Der DKIM-Schlüssel wird jetzt in E-Mails eingebettet, sodass der Versand fehlerfrei funktioniert. (NEO-16804)
-* Fehlerkorrektur – Die Workflow-Planung funktioniert jetzt wieder einwandfrei, sodass Workflows entsprechend ihrer Konfiguration ausgeführt werden. (NEO-16619, NEO-16426)
+* Fehlerkorrektur - Eine Regression wird jetzt nicht mehr durch den NEO-12727 verursacht, was dazu führen kann, dass Workflows angehalten werden, wenn eine Testaktivität zweimal ausgeführt wird. (NEO-16835)
+* Fehlerkorrektur - Wenn in API-Aufrufen ein ungültiges oder abgelaufenes Sitzungstoken verwendet wird, wird jetzt kein falscher HTTP-Code mehr zurückgegeben (HTTP 200 OK statt HTTP 403 Verboten). (NEO-16826)
+* Fehlerkorrektur - Der DKIM-Schlüssel ist jetzt nicht mehr in E-Mails eingebettet, was zu Problemen mit der Zustellbarkeit führt. (NEO-16804)
+* Fehlerkorrektur - Die Workflow-Planung funktioniert jetzt problemlos. Workflows waren so geplant, dass sie einmal täglich ausgeführt wurden, ohne die Scheduler-Konfiguration zu berücksichtigen. (NEO-16619, NEO-16426)
 
 
 ## [!DNL Gold Standard] – Kompatibilitätsmatrix{#compatibility-matrix-gs}

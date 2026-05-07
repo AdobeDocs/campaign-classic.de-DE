@@ -10,8 +10,8 @@ topic-tags: additional-configurations
 exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '1481'
-ht-degree: 19%
+source-wordcount: '1542'
+ht-degree: 11%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 19%
 
 Jeder Operator muss mit einer Zone verknüpft sein, um sich bei einer Instanz anmelden zu können, und die IP des Operators muss in die Adressen oder Adresssätze aufgenommen werden, die in der Sicherheitszone definiert sind. Die Konfiguration der Sicherheitszone erfolgt in der Konfigurationsdatei des Adobe Campaign-Servers.
 
-Operatoren werden über ihr Profil in der Konsole mit einer Sicherheitszone verknüpft, auf die über den Knoten **[!UICONTROL Administration > Zugriffsverwaltung > Operatoren]** zugegriffen werden kann. [Weitere Informationen](#linking-a-security-zone-to-an-operator).
+Operatoren werden über ihr Profil in der Konsole mit einer Sicherheitszone verknüpft, auf die über den Knoten **[!UICONTROL Administration > Zugriffe > Operatoren]** zugegriffen werden kann. [Weitere Informationen](#linking-a-security-zone-to-an-operator).
 
 >[!NOTE]
 >
@@ -29,7 +29,7 @@ Operatoren werden über ihr Profil in der Konsole mit einer Sicherheitszone verk
 >
 >Wenn Sie als **gehosteter** Kunde auf das [Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de) zugreifen können, können Sie die Self-Service-Oberfläche der Sicherheitszone verwenden. [Weitere Informationen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=de)
 >
->Andere **hybride/gehostete** Kunden müssen sich an das Adobe auf die Zulassungsliste setzen-Supportteam wenden, um IP zur hinzuzufügen.
+>Andere **hybride/gehostete** Kunden müssen sich an das Adobe-Supportteam wenden, um IP zur hinzuzufügen.
 >
 
 ## Sicherheitszonen erstellen {#creating-security-zones}
@@ -235,7 +235,7 @@ Sobald die Zonen definiert und die Auflistung **[!UICONTROL Sicherheitszone]** k
 * Legen Sie nach Möglichkeit alle „allowHTTP“, „showErrors“ auf „false“ fest (nicht für „localhost„) und überprüfen Sie sie.
 
    * allowHTTP = &quot;false&quot;: zwingt Benutzer, HTTPS zu verwenden.
-   * showErrors = &quot;false&quot;: verbirgt technische Fehler (einschließlich SQL-Fehler). Dies verhindert die Anzeige übermäßig vieler Informationen, schränkt aber auch die Fähigkeit des Benutzers ein, Probleme zu lösen (ohne vom Administrator zusätzliche Informationen einzuholen).
+   * showErrors = „false“: Blendet technische Fehler (einschließlich SQL-Fehler) aus. Es verhindert die Anzeige zu vieler Informationen, verringert jedoch die Fähigkeit des Marketing-Experten, Fehler zu beheben (ohne zusätzliche Informationen von einem Administrator anzufordern)
 
 * Setzen Sie allowDebug nur für IPs, die von Marketing-Benutzern/Administratoren verwendet werden und Umfragen, WebApps und Berichte erstellen (in der Vorschau anzeigen), auf „true“. Mit diesem Flag können diese IPs Relay-Regeln anzeigen und debuggen.
 
@@ -253,11 +253,11 @@ Sobald die Zonen definiert und die Auflistung **[!UICONTROL Sicherheitszone]** k
 
 * Legen Sie nie allowEmptyPassword, allowUserPassword, allowSQLInjection auf „true“ fest.
 
-   * **allowEmptyPassword** ermöglicht Benutzern, ein leeres Passwort zu haben. Ist dies bei Ihnen der Fall, weisen Sie alle Benutzer an, bis zu einer bestimmten Deadline ein Passwort zu erstellen. Sobald diese Frist abgelaufen ist, ändern Sie dieses Attribut auf &quot;false&quot;.
+   * **allowEmptyPassword**: Weist Benutzern ein leeres Kennwort zu. Wenn dies der Fall ist, benachrichtigen Sie alle Ihre Benutzer, um sie aufzufordern, ein Passwort mit einer Frist festzulegen. Nach Ablauf dieser Frist ändern Sie dieses Attribut in „false“.
 
-   * **allowUserPassword** ermöglicht es Benutzern, ihre Zugangsdaten als Parameter zu senden (sodass sie via Apache/IIS/Proxy gespeichert werden). Diese Funktion diente in der Vergangenheit zur Vereinfachung der API-Nutzung. In Ihrem Cookbook (oder in der Spezifikation) können Sie nachsehen, ob die Funktion von Drittanwendungen genutzt wird. Ist dies der Fall, weisen Sie den Administrator dieser Drittanwendungen an, die Verwendung unserer API zu ändern und die Funktion nicht mehr zu nutzen.
+   * **allowUserPassword** : Ermöglicht Benutzern das Senden ihrer Anmeldeinformationen als Parameter (sodass sie von Apache/IIS/Proxy protokolliert werden). Diese Funktion wurde in der Vergangenheit verwendet, um die API-Nutzung zu vereinfachen. Sie können in Ihrem Cookbook (oder in der Spezifikation) nachsehen, ob einige Drittanbieterprogramme dies verwenden. Wenn ja, müssen Sie sie benachrichtigen, damit sie die Art und Weise, wie sie unsere API verwenden, ändern und diese Funktion so bald wie möglich entfernen können.
 
-   * **allowSQLInjection** : Ermöglicht Benutzern das Durchführen von SQL-Injektionen mithilfe einer alten Syntax. Dieses Attribut sollte auf „false“ gesetzt werden. Mit /nl/jsp/ping.jsp?zones=true können Sie die Konfiguration Ihrer Sicherheitszone überprüfen. Auf dieser Seite wird der aktive Status von Sicherheitsmaßnahmen (mit diesen Sicherheits-Flags berechnet) für die aktuelle IP-Adresse angezeigt.
+   * **allowSQLInjection** : Ermöglicht Benutzern das Durchführen von SQL-Injektionen mithilfe einer alten Syntax. Dieses Attribut sollte auf „false“ gesetzt werden. Sie können /nl/jsp/ping.jsp?zones=true verwenden, um die Konfiguration Ihrer Sicherheitszone zu überprüfen. Auf dieser Seite wird der aktive Status der Sicherheitsmaßnahmen (berechnet mit diesen Sicherheitsflags) für die aktuelle IP-Adresse angezeigt.
 
 * HttpOnly cookie/useSecurityToken: siehe Flag **sessionTokenOnly**.
 

@@ -14,7 +14,7 @@ ht-degree: 21%
 
 # Schemareferenz {#schema-reference}
 
-Beim Bearbeiten eines Schemas ist ein auf dem Quellschema (xtk) basierendes :srcSchema verfügbar. Einige Fehler können auch beim Aktualisieren der Datenbank mithilfe des Assistenten zum Aktualisieren der Datenbankstruktur erkannt werden.
+Beim Bearbeiten eines Schemas ist ein auf dem Quellschema (xtk) basierendes :srcSchema verfügbar. Einige Fehler können auch beim Aktualisieren der Datenbank mithilfe von „Datenbankstruktur aktualisieren…“ erkannt werden Assistent.
 
 Standardmäßig sind in Adobe Campaign-Schemata alle booleschen Typattribute „false“. Um sie zu aktivieren, müssen Sie das Attribut im Schema angeben und seinen Wert auf „true“ festlegen.
 

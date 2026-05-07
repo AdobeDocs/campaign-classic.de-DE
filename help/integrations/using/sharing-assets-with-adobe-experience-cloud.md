@@ -10,14 +10,14 @@ topic-tags: asset-sharing
 exl-id: b28aa5a5-afba-458b-8a85-375493c6c836
 source-git-commit: a38d53f4b37aadbc53446b5e399af2eae56c12af
 workflow-type: tm+mt
-source-wordcount: '167'
-ht-degree: 100%
+source-wordcount: '190'
+ht-degree: 84%
 
 ---
 
 # Freigeben von Assets mit Adobe Experience Cloud{#sharing-assets-with-adobe-experience-cloud}
 
-[Experience Cloud Assets](https://experienceleague.adobe.com/de/docs/core-services/interface/services/audiences/overview){target="_blank"} enthält einen zentralen Speicher mit einsatzbereiten Assets, die Sie in verschiedenen Lösungen verwenden können. Ein Asset ist eine digitale Dokument-, Bild-, Video- oder Audiodatei.
+[Experience Cloud Assets](https://experienceleague.adobe.com/de/docs/core-services/interface/services/audiences/overview){target="_blank"} bietet ein zentrales Repository Marketing-fähiger Assets, die Sie in allen Lösungen gemeinsam nutzen können. Ein Asset ist ein digitales Dokument, Bild, Video oder Audiodatei.
 
 Die Asset-Dienste sind:
 
@@ -26,7 +26,7 @@ Die Asset-Dienste sind:
 
 Bei der Bearbeitung eines E-Mail-Versands oder einer Landingpage in Adobe Campaign können Sie Assets von Ihren Adobe-Experience-Cloud-Bibliotheken einfügen. Abhängig von den von Ihnen verwendeten Lösungen können diese Assets in Adobe Experience Manager Assets gespeichert werden.
 
-Die verfügbaren Bibliotheken werden in [diesem Dokument](https://experienceleague.adobe.com/de/docs/core-services/interface/services/assets/experience-cloud-assets) erläutert{target="_blank"}.
+Die verfügbaren Bibliotheken werden in [diesem Dokument](https://experienceleague.adobe.com/de/docs/core-services/interface/services/assets/experience-cloud-assets){target="_blank"} erläutert.
 
 Weitere Informationen zu den Besonderheiten der einzelnen Bibliotheken finden Sie unter [Konfigurieren des Zugriffs auf Assets](../../integrations/using/configuring-access-to-assets.md).
 

@@ -9,8 +9,8 @@ hide: true
 exl-id: 8cbb2445-f5e4-4a25-ba7e-56e39ca9d3ce
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '2834'
-ht-degree: 78%
+source-wordcount: '2841'
+ht-degree: 66%
 
 ---
 
@@ -77,7 +77,7 @@ Wenn kein Prüfer angegeben ist, ist der Kampagnenverantwortliche für die Valid
 
 ### Validierung über das Dashboard {#approval-via-the-dashboard}
 
-Um einen Auftrag über Konsole oder Webschnittstelle zu validieren, klicken Sie auf den entsprechenden Link im Kampagnen-Dashboard. Die Validierung kann auch über die Versandverfolgung oder das Versand-Dashboard erfolgen.
+Um einen Vorgang über die Konsole oder die Web-Schnittstelle zu genehmigen, klicken Sie auf den entsprechenden Link im Kampagnen-Dashboard. Vorgänge können auch über die Versandverfolgung oder das Versand-Dashboard validiert werden.
 
 ![Validierungsaktionen des Kampagnen-Dashboards in der Konsole](assets/s_user_validation_from_console.png)
 
@@ -143,19 +143,19 @@ Bei der Erstellung eines Zielgruppen-Workflows vermeidet die manuelle Validierun
 
 Über eine Bestätigungsnachricht können die Validierungen der ausgewählten Aufgräge für diesen Versand erlaubt werden.
 
-Daraufhin werden die Validierungsschaltflächen im Dashboard der Kampagne (für diesen Versand), im Dashboard des Versands sowie in der Versandverfolgung angezeigt. Wenn die Benachrichtigungen aktiviert wurden, werden diese parallel versendet.
+Die Validierungsschaltflächen werden dann im Kampagnen-Dashboard (für diesen Versand), im Versand-Dashboard und im Versand-Tracking angezeigt. Wenn Benachrichtigungen aktiviert sind, werden sie parallel gesendet.
 
 Diese Art der Validierungsaktivierung ermöglicht es, die Zielgruppenbestimmungsrecherchen zu bearbeiten, ohne die validierenden Benutzer fälschlicherweise zu benachrichtigen.
 
 ## Benachrichtigungen {#notifications}
 
-Benachrichtigungen sind spezifische E-Mails, die den validierungsverantwortlichen Benutzern gesendet werden, um diese über Prozesse mit ausstehender Validierung zu informieren. Der in der Nachricht enthaltene Link führt zu einer Webschnittstelle, in der sich der Benutzer identifizieren muss. Nach der Anmeldung kann er die betreffenden Elemente einsehen, den Prozess validieren oder nicht und seine Entscheidung mit einem Kommentar begründen.
+Benachrichtigungen sind spezifische E-Mail-Nachrichten, die an Validierungsverantwortliche gesendet werden, um sie darüber zu informieren, dass eine Genehmigung für einen Prozess aussteht. Wenn der Benutzer auf den Link in der Nachricht klickt, wird eine Authentifizierungsseite angezeigt, und nach der Anmeldung kann der Benutzer die Informationen einsehen und den Auftrag genehmigen oder ablehnen. Im Genehmigungsfenster kann auch ein Kommentar eingegeben werden.
 
 Der Inhalt der E-Mail-Benachrichtigungen kann angepasst werden. Siehe [Inhalt der Benachrichtigungen](#notification-content).
 
 ### Aktivieren/Deaktivieren von Benachrichtigungen {#enabling-disabling-notification}
 
-Benachrichtigungs-E-Mails werden automatisch versendet, wenn die Validierung des entsprechenden Vorgangs in der Kampagnenvorlage, der Kampagne selbst oder dem betreffenden Versand aktiviert wurde. Die Benachrichtigungen können jedoch auch deaktiviert werden, um nur Validierungen über die Konsole zu erlauben.
+Benachrichtigungs-E-Mails werden automatisch versendet, wenn die Validierung des entsprechenden Auftrags in der Kampagnenvorlage, der Kampagne selbst oder im betreffenden Versand aktiviert wurde. Benachrichtigungen können jedoch deaktiviert werden, um nur Validierungen über die Konsole zu erlauben.
 
 Öffnen Sie hierzu das Fenster der Validierungseinstellungen der Kampagne oder der betreffenden Kampagnenvorlage (Tab **[!UICONTROL Bearbeiten > Eigenschaften]** > **[!UICONTROL Erweiterte Kampagneneigenschaften...]** > **[!UICONTROL Validierungen]**) und aktivieren Sie die Option **[!UICONTROL Keine Benachrichtigungen senden]**.
 
@@ -202,7 +202,7 @@ Folgende Validierungsvorgänge stehen für Kampagnensendungen zur Verfügung:
 
   >[!NOTE]
   >
-  >Die Budgetvalidierung ist nur verfügbar, wenn die Zielgruppenbestimmungs-Validierung im Fenster der Validierungseinstellungen aktiviert wurde. Der Link zur Budgetvalidierung wird erst nach der Zielgruppenanalyse und zur gleichen Zeit wie der Link zur Zielgruppenvalidierung angezeigt.
+  >Die Budgetvalidierung ist nur verfügbar, wenn die Zielgruppenvalidierung im Fenster der Validierungseinstellungen aktiviert ist. Der Link zur Budgetvalidierung wird erst nach der Zielgruppenanalyse angezeigt. Außerdem wird dieser Link zusammen mit dem Link für die Zielgruppenvalidierung angezeigt.
 
   Wenn die Optionen **[!UICONTROL Inhaltsbearbeitung zuweisen]** oder **[!UICONTROL Externe Inhaltsvalidierung]** im Fenster der Validierungseinstellungen ausgewählt sind, werden im Dashboard die entsprechenden Links **[!UICONTROL Inhalt unterbreiten]** und **[!UICONTROL Externe Inhaltsvalidierung]** angezeigt.
 
@@ -222,11 +222,11 @@ Folgende Validierungsvorgänge stehen für Kampagnensendungen zur Verfügung:
 
   >[!NOTE]
   >
-  >Die Vorschau der Extraktionsdatei basiert nur auf einer Datenstichprobe. Sie lädt nicht die gesamte Ausgabedatei.
+  >Die Vorschau der Extraktionsdatei bezieht sich nur auf ein Datenbeispiel. Es wird nicht die gesamte Ausgabedatei geladen.
 
 * **Validierung der Sendungen**
 
-  Die Option **[!UICONTROL Individuelle Validierung jedes zugeordneten Versands aktivieren]** wird dann genutzt, wenn einem Hauptversand Nebensendungen zugeordnet sind. Diese Option ist standardmäßig deaktiviert, dies ermöglicht eine globale Validierung des Hauptversands. Bei Aktivierung der Option muss jeder Versand einzeln validiert werden.
+  Die **[!UICONTROL Individuelle Validierung jedes zugeordneten Versands aktivieren]** wird für einen Hauptversand verwendet, der mit sekundären Sendungen verknüpft ist. Standardmäßig ist diese Option nicht aktiviert, sodass eine Gesamtvalidierung des Hauptversands durchgeführt werden kann. Wenn diese Option aktiviert ist, muss jeder Versand einzeln validiert werden.
 
   ![Option zur individuellen Validierung der zugeordneten Sendungen](assets/s_ncs_user_task_valid_associate.png)
 
@@ -251,7 +251,7 @@ Um eine Benutzerliste zu erstellen, klicken Sie auf den Link **[!UICONTROL Bearb
 >[!NOTE]
 >
 >* Wenn eine Liste von Validierungsverantwortlichen definiert ist, wird ein Auftrag validiert, sobald ein Validierungsverantwortlicher ihn akzeptiert hat. Der entsprechende Validierungs-Link wird dann nicht mehr im Dashboard angezeigt. Wenn das Senden von Benachrichtigungen aktiviert ist und ein anderer Validierungsverantwortlicher auf den Validierungs-Link in der Benachrichtigung klickt, wird ihm mitgeteilt, dass ein anderer Validierungsverantwortlicher den Auftrag bereits validiert hat.
->* Im unteren Abschnitt des Fensters der Validierungseinstellungen kann eine Validierungsplanung für die jeweilige Kampagne festgelegt werden. Standardmäßig haben Validierungsverantwortliche nach dem Unterbreitungsdatum 3 Tage Zeit, um einen Vorgang zu validieren.
+>* Im unteren Bereich des Bearbeitungsfensters für Validierungsverantwortliche können Sie einen Validierungsplan für die Kampagne definieren. Standardmäßig haben Validierungsverantwortliche ab dem Unterbreitungsdatum drei Tage Zeit, um einen Prozess zu validieren. Es ist möglich, eine Erinnerung zu konfigurieren, die automatisch vor Ablauf der Validierungsfrist an die betroffenen Benutzer gesendet wird.
 >* Es besteht die Möglichkeit, den betreffenden Benutzern vor dem Ende der Validierungsfrist eine automatische Erinnerung zu senden.
 >
 
@@ -269,7 +269,7 @@ Um die Validierungsdaten und automatische Erinnerungen jeden Versands einzusehen
 
 >[!CAUTION]
 >
->Zur Validierung eines Inhalts ist ein Testversandzyklus obligatorisch. Mit Testsendungen können Sie die Anzeige von Informationen sowie Personalisierungsdaten validieren und die Funktionsfähigkeit von Links überprüfen. Erfahren Sie, wie Sie einen Korrekturabzug in [Korrekturabzug erstellen](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof) erstellen.
+>Um einen Inhalt zu genehmigen, ist ein Testversandzyklus obligatorisch. Mit Testsendungen können Sie die Anzeige von Informationen und Personalisierungsdaten validieren und prüfen, ob Links funktionieren. Erfahren Sie, wie Sie einen Korrekturabzug in [Korrekturabzug erstellen](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof) erstellen.
 >
 >Die im Folgenden beschriebenen Funktionen für die Inhaltsvalidierung beziehen sich auf den Testversand.
 
@@ -353,14 +353,14 @@ Diese Option ermöglicht die Bestimmung einer für die Inhaltsbearbeitung verant
 
 #### Externe Inhaltsvalidierung {#external-content-approval}
 
-Mit dieser Option können Sie eine externe Person festlegen, die für die Genehmigung des Versand-Renderings zuständig ist, wie beispielsweise für die Konsistenz der Markenkommunikation, die Tarife, usw. Wenn die Option **[!UICONTROL Externe Inhaltsvalidierung]** im Fenster der Validierungseinstellungen aktiviert ist, werden zwischen der Inhaltsvalidierung durch die Inhaltsverantwortlichen und dem Benachrichtigungsversand an die Kampagnenverantwortlichen mehrere Validierungsetappen hinzugefügt:
+Mit dieser Option können Sie einen externen Benutzer definieren, der für die Validierung des Versand-Renderings zuständig ist, z. B. für die Markenkommunikation, die Konsistenz der Tarife usw. Wenn die Option **[!UICONTROL Externe Inhaltsvalidierung]** im Fenster der Validierungseinstellungen ausgewählt ist, werden mehrere Validierungsschritte zwischen der Inhaltsvalidierung und dem Versand der Benachrichtigung an den Kampagnenverantwortlichen hinzugefügt:
 
 1. Der externe Inhaltsverantwortliche wird per E-Mail benachrichtigt, sobald der Inhalt intern validiert wurde und die externe Validierung erfolgen muss.
 1. Die Benachrichtigungs-E-Mail enthält Links zu den Testsendungen, die der Überprüfung der Darstellung des Versandinhalts dienen, und eine Schaltfläche, über die der Versandinhalt validiert oder abgelehnt werden kann.
 
    >[!NOTE]
    >
-   >Diese Links sind nur verfügbar, wenn eine oder mehrere Testsendungen durchgeführt wurden. Die Darstellung des Versandinhalts kann andernfalls nur über die Konsole oder die Webschnittstelle überprüft werden.
+   >Diese Links sind nur verfügbar, wenn eine oder mehrere Testsendungen durchgeführt wurden. Andernfalls ist das Versand-Rendering nur über die Konsole oder die Web-Schnittstelle verfügbar.
 
    ![E-Mail zur Genehmigung externer Inhalte mit Korrekturabzugs-Links](assets/s_user_validation_external_content.png)
 

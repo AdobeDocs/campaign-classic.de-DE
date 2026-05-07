@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: 464a6548-1b91-4e09-b620-3b820ef69653
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: ht
-source-wordcount: '133'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '134'
+ht-degree: 78%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 Ein Angebotskatalog besteht aus diversen Angebotskategorien, die entweder Unterkategorien oder direkt Angebote enthalten.
 
-Ein Angebotskatalog ist jeweils nur einer Umgebung zugeordnet. Die im Katalog enthaltenen Angebote können demzufolge nur für die in der entsprechenden Umgebung definierten Platzierungen verwendet werden.
+Ein Angebotskatalog ist Teil einer einzigen Umgebung, die zuvor festzulegen ist. Die in diesem Katalog enthaltenen Angebote können nur mit den in dieser Umgebung angegebenen Platzierungen verknüpft werden.
 
 Die Angebotsverwaltung geschieht ausgehend vom Navigationsbaum des Adobe Campaign-Explorers.
 

@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Allgemeine Beispiele für den Import
-description: Erfahren Sie mehr über allgemeine Importe, die Sie mit Importvorgängen durchführen können
+description: Erfahren Sie mehr über allgemeine Importe, die Sie mit Importaufträgen durchführen können
 feature: Data Management
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 audience: platform
@@ -10,8 +10,8 @@ topic-tags: importing-and-exporting-data
 exl-id: 4582b524-2b6d-484c-bace-29d2e69f60e9
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '1119'
-ht-degree: 100%
+source-wordcount: '1118'
+ht-degree: 90%
 
 ---
 
@@ -52,7 +52,7 @@ Gehen Sie wie folgt vor, um eine als Textdatei vorliegende Empfängerliste in di
 
 1. Vorlage auswählen
 
-   * Klicken Sie auf den Link **[!UICONTROL Vorgänge]** im Menü **[!UICONTROL Profile und Zielgruppen]** der Adobe Campaign-Startseite. Klicken Sie über der Auftragsliste auf **[!UICONTROL Neuer Import]**.
+   * Klicken Sie auf den Link **[!UICONTROL Aufträge]** im Menü **[!UICONTROL Profile und Zielgruppen]** der Adobe Campaign-Startseite. Klicken Sie über der Auftragsliste auf **[!UICONTROL Neuer Import]**.
    * Behalten Sie die standardmäßig vorgeschlagene Vorlage **[!UICONTROL Neuer Textimport]** bei.
    * Passen Sie Titel und Beschreibung an.
    * Wählen Sie die Option **[!UICONTROL Einfacher Import]**.
@@ -73,7 +73,7 @@ Gehen Sie wie folgt vor, um eine als Textdatei vorliegende Empfängerliste in di
 
 1. Abstimmung
 
-   * Markieren Sie im Elementpfad die Tabelle der **Empfänger (nms:recipient)**.
+   * Navigieren Sie zur **Empfänger (nms:recipient)** Tabelle.
    * Wählen Sie in der Dropdown-Liste des Felds Abstimmoptionen **[!UICONTROL Einfügen]** aus und behalten Sie die anderen Standardeinstellungen bei.
 
      ![](assets/s_ncs_user_import_example04_01.png)
@@ -104,7 +104,7 @@ Gehen Sie wie folgt vor, um eine als Textdatei vorliegende Empfängerliste in di
 
 ## Aktualisieren und Hinzufügen von Empfängern {#example--update-and-insert-recipients}
 
-Gehen Sie wie folgt vor, um ausgehend von einer Textdatei existierende Datensätze zu aktualisieren und neue Datensätze in der Datenbank zu erstellen:
+Wir möchten die vorhandenen Datensätze in der Datenbank aktualisieren und neue aus einer Textdatei erstellen. Im Folgenden finden Sie ein Beispiel für das Verfahren:
 
 1. Vorlage auswählen
 
@@ -146,7 +146,7 @@ Gehen Sie wie folgt vor, um ausgehend von einer Textdatei existierende Datensät
 
 Ziel ist es, vereinzelte Felder einer Datenbanktabelle durch in einer Textdatei enthaltene Daten anzureichern, wobei jedoch die bereits in der Datenbank enthaltenen Werte Vorrang haben sollen.
 
-Im folgenden Beispiel enthalten teilweise die Felder der Textdatei Werte, während die entsprechenden Felder in der Datenbank leer sind oder andere Werte aufweisen.
+In diesem Beispiel können Sie sehen, dass bestimmte Felder in Ihrer Textdatei einen Wert aufweisen, während die entsprechenden Felder in der Datenbank leer sind. Andere Felder enthalten einen anderen Wert als der in der Datenbank enthaltene.
 
 * Inhalt der zu importierenden Textdatei
 
@@ -197,7 +197,7 @@ Gehen Sie wie folgt vor:
 
 Ziel ist es, vereinzelte Felder einer Datenbanktabelle durch in einer Textdatei enthaltene Daten anzureichern, wobei die in der Textdatei enthaltenen Werte Vorrang vor bereits in der Datenbank enthaltenen Werten haben sollen.
 
-Im folgenden Beispiel enthalten teilweise die Felder der Datenbank Werte, während die entsprechenden Felder in der Textdatei leer sind oder andere Werte aufweisen.
+In diesem Beispiel sehen Sie, dass bestimmte Felder in Ihrer Textdatei einen leeren Wert aufweisen, während die entsprechenden Felder in der Datenbank nicht leer sind. Andere Felder enthalten einen anderen Wert als der in der Datenbank.
 
 * Inhalt der zu importierenden Textdatei
 

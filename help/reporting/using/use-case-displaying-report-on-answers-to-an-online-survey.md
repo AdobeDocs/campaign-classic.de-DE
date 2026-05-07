@@ -7,8 +7,8 @@ feature: Reporting, Monitoring, Surveys
 exl-id: 6be12518-86d1-4a13-bbc2-b2ec5141b505
 source-git-commit: 0d8cef312371192ee97f88eb33276df9d7fb11f6
 workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 100%
+source-wordcount: '518'
+ht-degree: 74%
 
 ---
 
@@ -30,7 +30,7 @@ Voraussetzung für die Durchführung dieses Anwendungsbeispiels sind ein Fragebo
 
 >[!NOTE]
 >
->Dieses Anwendungsbeispiel kann nur durchgeführt werden, wenn Sie die Option **Survey Manager** erworben haben. Überprüfen Sie Ihren Lizenzvertrag.
+>Dieser Anwendungsfall kann nur implementiert werden, wenn Sie die Option **Umfrage-Manager** erhalten haben. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
 
 ## Schritt 1: Erstellung des Workflows für Datenabruf und -speicherung {#step-1---creating-the-data-collection-and-storage-workflow}
 
@@ -42,7 +42,7 @@ Gehen Sie wie folgt vor, um die Antworten der Umfrage abzurufen:
 
    ![](../../surveys/using/assets/reporting_usecase_1_01.png)
 
-1. Wählen Sie die zu extrahierenden Spalten aus (hier: Alle archivierten Felder). Die Antworten werden in diesen Feldern gespeichert.
+1. Zu extrahierende Spalten auswählen (in diesem Fall: Alle archivierten Felder auswählen). Dies sind die Felder, die die Antworten enthalten.
 
    ![](../../surveys/using/assets/reporting_usecase_1_02.png)
 
@@ -50,7 +50,7 @@ Gehen Sie wie folgt vor, um die Antworten der Umfrage abzurufen:
 
    ![](../../surveys/using/assets/reporting_usecase_1_04.png)
 
-   Geben Sie in dieser Aktivität die zu aktualisierende Liste an und deaktivieren Sie die Option **[!UICONTROL Wenn sie existiert, Liste leeren und erneut verwenden]**: Die Antworten werden so der existierenden Tabelle hinzugefügt. Dies ermöglicht es, die Liste in einem Cube zu referenzieren: Das mit der Liste verknüpfte Schema wird nicht bei jeder Aktualisierung neu erzeugt, dadurch wird die Vollständigkeit des diese Liste verwendenden Cubes garantiert.
+   Geben Sie in dieser Aktivität die zu aktualisierende Liste an und deaktivieren Sie die Option **[!UICONTROL Löschen und ggf. erneut verwenden der Liste (andernfalls zur Liste hinzufügen)]** : Antworten werden der vorhandenen Tabelle hinzugefügt. Mit dieser Option können Sie auf die Liste in einem Cube verweisen. Das mit der Liste verknüpfte Schema wird nicht bei jeder Aktualisierung neu generiert, was die Integrität des Cubes garantiert, der diese Liste verwendet.
 
    ![](../../surveys/using/assets/reporting_usecase_1_03.png)
 
@@ -72,7 +72,7 @@ Im vorliegenden Beispiel basiert der Cube auf den Daten der Liste, die im zuvor 
 
 ![](../../surveys/using/assets/reporting_usecase_2_01.png)
 
-Definieren Sie die im Bericht anzuzeigenden Dimensionen und Kennzahlen. Im Beispiel werden das Vertragsdatum und das Land des Teilnehmers angezeigt.
+Definieren Sie die Dimensionen und Kennzahlen, die im Bericht angezeigt werden sollen. Hier möchten wir das Vertragsdatum und das Land des Befragten anzeigen.
 
 ![](../../surveys/using/assets/reporting_usecase_2_02.png)
 

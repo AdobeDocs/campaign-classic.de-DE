@@ -6,8 +6,8 @@ hide: true
 feature: Workflows
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 100%
+source-wordcount: '232'
+ht-degree: 61%
 
 ---
 
@@ -20,9 +20,9 @@ Die folgenden Workflows werden standardmäßig mit dem Add-on **Message Center �
 
 Weitere Informationen hierzu finden Sie je nach Campaign-Version in den folgenden Abschnitten:
 
-![](assets/do-not-localize/v7.jpeg)[Dokumentation zu Campaign v7](../../message-center/using/about-transactional-messaging.md)
+![](assets/do-not-localize/v7.jpeg) [Dokumentation zu Campaign v7](../../message-center/using/about-transactional-messaging.md)
 
-![](assets/do-not-localize/v8.png)[Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/transactional.html?lang=de)
+![](assets/do-not-localize/v8.png) [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/transactional.html?lang=de)
 
 <table> 
  <tbody> 
@@ -36,12 +36,12 @@ Weitere Informationen hierzu finden Sie je nach Campaign-Version in den folgende
    <td> <span class="uicontrol">updateEventsStatus</span> <br /> </td> 
    <td> Mit diesem Workflow können Sie Ereignissen einen Status zuweisen. Folgende Ereignisstatus stehen zur Verfügung:<br /> 
     <ul> 
-     <li> <p><strong>Ausstehend</strong>: Das Ereignis befindet sich in der Warteschlange. Ihm wurde noch keine Nachrichtenvorlage zugeordnet.</p> </li> 
+     <li> <p><strong>Ausstehend</strong>: Das Ereignis befindet sich in einer Warteschlange. Es wurde noch keine Nachrichtenvorlage damit verknüpft.</p> </li> 
      <li> <p><strong>Versand ausstehend</strong>: Das Ereignis befindet sich in der Warteschlange. Ihm wurde eine Nachrichtenvorlage zugeordnet und die Versandverarbeitung ist in Gang.</p> </li> 
-     <li> <p><strong>Gesendet</strong>: Dieser Status wird aus den Versandlogs übernommen. Er bedeutet, dass die Nachricht gesendet wurde.</p> </li> 
-     <li> <p><strong>Vom Versand ignoriert</strong>: Dieser Status wird aus den Versandlogs übernommen. Er bedeutet, dass der Versand ignoriert wurde.</p> </li> 
-     <li> <p><strong>Versandfehler</strong>: Dieser Status wird aus den Versandlogs übernommen. Er bedeutet, dass der Versand fehlgeschlagen ist.</p> </li> 
-     <li> <p><strong>Ereignis wurde nicht berücksichtigt</strong>: Dem Ereignis konnte keine Nachrichtenvorlage zugeordnet werden. Es erfolgt kein weiterer Verarbeitungsversuch.</p> </li> 
+     <li> <p><strong>Gesendet</strong>: Dieser Status wird aus den Versandlogs kopiert. Dies bedeutet, dass der Versand durchgeführt wurde.</p> </li> 
+     <li> <p><strong>Vom Versand ignoriert</strong> Dieser Status wird aus den Versandlogs kopiert. Dies bedeutet, dass der Versand ignoriert wurde.</p> </li> 
+     <li> <p><strong>Versandfehler</strong> Dieser Status wird aus den Versandlogs übernommen. Dies bedeutet, dass der Versand fehlgeschlagen ist.</p> </li> 
+     <li> <p><strong>Ereignis wurde nicht </strong>: Das Ereignis konnte keiner Nachrichtenvorlage zugeordnet werden. Das Ereignis wird nicht erneut verarbeitet.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 

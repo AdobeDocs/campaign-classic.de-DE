@@ -6,9 +6,9 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Web Forms
 exl-id: 723a6c47-5323-4914-a014-58be493852cc
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: ht
-source-wordcount: '1051'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1055'
+ht-degree: 84%
 
 ---
 
@@ -83,9 +83,9 @@ Damit können Sie die folgenden Eigenschaften definieren:
 
 ### Header und Footer definieren {#defining-headers-and-footers}
 
-Die Felder sind in einer Baumstruktur angeordnet, deren Wurzel denselben Namen hat wie die Seite. Wählen Sie die Wurzel aus, um den Namen zu ändern.
+Die Felder werden in einer Baumstruktur nacheinander ausgefüllt, deren Stamm denselben Namen wie die Seite hat. Wählen Sie diese Option aus, um den Namen zu ändern.
 
-Geben Sie im Formulareigenschaften-Fenster auf der Registerkarte **[!UICONTROL Seite]** den Titel des Fensters ein. Sie können zum Seiten-Header und -Footer einen vordefinierten Inhalt hinzufügen (diese Information wird dann auf jeder Seite gezeigt). Dieser Inhalt wird wie unten gezeigt in den jeweiligen Bereich des Tabs **[!UICONTROL Texte]** eingegeben:
+Der Titel des Fensters muss auf der Registerkarte **[!UICONTROL Seite]** des Fensters mit den Formulareigenschaften eingegeben werden. Sie können der Kopf- und Fußzeile auch einen Content-Set hinzufügen (diese Informationen werden auf jeder Seite angezeigt). Dieser Inhalt wird wie unten gezeigt in den jeweiligen Bereich des Tabs **[!UICONTROL Texte]** eingegeben:
 
 ![](assets/s_ncs_admin_survey_titles_config.png)
 
@@ -133,7 +133,7 @@ Der Benutzer muss in diesem Fall eine ganze Zahl im Formularfeld eingeben.
 
 ## Bedingte Anzeige von Feldern definieren {#defining-fields-conditional-display}
 
-Sie können festlegen, dass die Felder auf einer Seite auf der Basis der Werte angezeigt werden, die der Benutzer auswählt. Dies gilt für ein einziges Feld oder eine Feldergruppe (wenn die Felder in einem Container zusammengefasst sind).
+Sie können die Anzeige von Feldern auf der Seite so konfigurieren, dass sie auf der Grundlage der vom Benutzer ausgewählten Werte angezeigt werden. Dies kann auf ein Feld oder eine Gruppe von Feldern angewendet werden (wenn sie in einem Container gruppiert sind).
 
 Sie können für jedes Element der Seite die Anzeigebedingungen im Bereich **[!UICONTROL Sichtbarkeit]** definieren.
 
@@ -145,7 +145,7 @@ Im Feldauswahl-Fenster können Sie aus folgenden Daten auswählen:
 
 ![](assets/s_ncs_admin_survey_condition_select.png)
 
-* Der Hauptbaum enthält die Parameter des Formulars. Die Standardparameter sind Kennung (entspricht der verschlüsselten Kennung des Empfängers), Sprache und Ursprung.
+* Die Hauptstruktur enthält die Parameter des Formularkontexts. Die Standardparameter sind die Kennung (die mit der verschlüsselten Kennung des Empfängers übereinstimmt), Sprache und Herkunft.
 
   Weiterführende Informationen hierzu finden Sie auf dieser [Seite](defining-web-forms-properties.md#form-url-parameters).
 
@@ -161,7 +161,7 @@ Sie können auch mit dem Objekt **[!UICONTROL Test]** eine Bedingung für die An
 
 ## Elemente aus einem vorhandenen Formular importieren {#importing-elements-from-an-existing-form}
 
-Sie haben die Möglichkeit, Felder oder Container aus anderen Webformularen zu importieren. Damit können Sie eine Bibliothek aus wiederverwendbaren Bausteinen erstellen, die in Formulare eingefügt werden können, z. B. Adressbaustein, Newsletter-Abonnement-Bereich etc.
+Es ist möglich, Felder oder Container aus anderen Web-Formularen zu importieren. Auf diese Weise können Sie eine Bibliothek wiederverwendbarer Blöcke erstellen, die in Formulare eingefügt werden, z. B. in den Block Adresse, den Newsletter-Abonnementbereich usw.
 
 Gehen Sie wie folgt vor, um ein Element in ein Formular zu importieren:
 

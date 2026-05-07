@@ -6,8 +6,8 @@ feature: SMS
 role: User
 exl-id: 6fc2ab09-8ea7-4865-88ad-bd45eee68958
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: ht
-source-wordcount: '382'
+workflow-type: tm+mt
+source-wordcount: '484'
 ht-degree: 100%
 
 ---
@@ -38,8 +38,7 @@ Die wichtigsten Schritte zur Erstellung eines SMS-Versands finden Sie in der **D
 * [Erstellen eines SMS-Versands](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/sms/create-sms/create-sms){target="_blank"}: Entdecken Sie die verschiedenen Schritte, die zum Erstellen eines neuen SMS-Versands erforderlich sind.
 * [Definieren des Inhalts](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/sms/create-sms/sms-content){target="_blank"}: Erfahren Sie, wie Sie den Inhalt Ihrer SMS-Nachrichten personalisieren können.
 * [Auswählen der Zielgruppe](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/sms/create-sms/sms-audience){target="_blank"}: Die Hauptzielgruppe wird aus der Adobe Campaign-Datenbank extrahiert. Sie kann auch in einer externen Datei gespeichert werden.
-* [SMS-Testversand](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/sms/validate-sms/sms-proofs): Die Einrichtung eines Validierungszyklus für den Versand ist unerlässlich.
-Vergewissern Sie sich, dass Ihr Inhalt genehmigt wurde, bevor dieser an Ihre Zielgruppe gesendet wird.
+* [SMS-Testversand](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/sms/validate-sms/sms-proofs): Die Einrichtung eines Validierungszyklus für den Versand ist unerlässlich. Vergewissern Sie sich, dass Ihr Inhalt genehmigt wurde, bevor dieser an Ihre Zielgruppe gesendet wird.
 * [Senden an die Zielgruppe](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/sms/validate-sms/sms-send.html?lang=de): Nach Validierung Ihrer SMS können Sie diese nun an die entsprechende Zielgruppe senden.
 * [Überwachen und Nachverfolgen einer SMS](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/sms/sms-monitor): Es ist wichtig, den Versand Ihrer SMS zu überwachen, um die Effizienz Ihrer Marketing-Kampagnen sicherzustellen.
 

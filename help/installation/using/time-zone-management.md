@@ -10,8 +10,8 @@ topic-tags: additional-configurations
 exl-id: e5ed96cc-3fc7-4af4-a29e-5a4c81f4fe39
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '970'
-ht-degree: 2%
+source-wordcount: '1000'
+ht-degree: 4%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 ## Grundprinzip {#operating-principle}
 
-Mit Adobe Campaign können Sie Termine in Abhängigkeit von ihrer Zeitzone angeben. Dies ermöglicht es internationalen Anwendern, weltweit an verschiedenen Zeitzonen zu arbeiten. Jedes Land, das dieselbe Instanz verwendet, kann die Ausführung von Kampagnen, Tracking, Archivierung usw. verwalten Abhängig von der Ortszeit.
+Mit Adobe Campaign können Sie Termine in Abhängigkeit von ihrer Zeitzone angeben. Dies ermöglicht es internationalen Anwendern, weltweit an verschiedenen Zeitzonen zu arbeiten. Jedes Land, das dieselbe Instanz verwendet, kann die Ausführung von Kampagnen, Tracking, Archivierung usw. je nach lokaler Zeit verwalten.
 
 Damit die Adobe Campaign-Plattform international genutzt werden kann, müssen alle von den Systemen verwendeten Daten mit einer Zeitzone verknüpft werden können. Ein Datum, dessen Zeitzone bekannt ist, kann somit in eine beliebige andere Zeitzone oder unabhängig von der Zeitzone importiert werden.
 

@@ -10,8 +10,8 @@ topic-tags: prerequisites-and-recommendations-
 exl-id: 8a0426c1-9e8d-4053-bc2b-6a550e2eed2f
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
-source-wordcount: '282'
-ht-degree: 6%
+source-wordcount: '310'
+ht-degree: 11%
 
 ---
 
@@ -84,4 +84,4 @@ Es wird empfohlen, bei der Installation der Datenbank-Engine die UTF-8-Unterstü
 
 **Verwandtes Thema**
 
-* [Option „Nicht protokolliert“ in Adobe Campaign Classic-Tabellen](https://helpx.adobe.com/campaign/kb/unlogged-tables-classic.html)
+* [Nicht protokollierte Option in Adobe Campaign Classic-Tabellen](https://helpx.adobe.com/campaign/kb/unlogged-tables-classic.html)

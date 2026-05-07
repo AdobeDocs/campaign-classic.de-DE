@@ -9,7 +9,7 @@ exl-id: 0d22b0bc-8fbc-4269-af9e-cee27e29bb27
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '70'
-ht-degree: 38%
+ht-degree: 65%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 38%
 
 
 
-Mit einem Eingabeformular können Sie eine Instanz, die mit einem Datenschema verknüpft ist, über die Adobe Campaign-Client-Konsole bearbeiten.
+Mit einem Formular können Sie eine Instanz, die mit einem Datenschema verknüpft ist, über die Adobe Campaign-Client-Konsole bearbeiten.
 
 Das Formular wird anhand seines Namens und seines Namespace identifiziert.
 

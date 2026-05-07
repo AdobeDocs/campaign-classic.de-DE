@@ -9,8 +9,8 @@ topic-tags: data-processing
 exl-id: 75d3a0af-9a14-4083-b1da-2c1b22f57cbe
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '2916'
-ht-degree: 1%
+source-wordcount: '2949'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 ## Einleitung {#introduction}
 
-Der Workflow **[!UICONTROL Datenbankbereinigung]**, auf den Sie über den Knoten **[!UICONTROL Administration > Produktion > Technische Workflows]** zugreifen können, ermöglicht das Löschen veralteter Daten, um das exponentielle Anwachsen der Datenbank zu verhindern. Der Workflow wird automatisch ohne das Eingreifen der benutzenden Person ausgelöst.
+Der Workflow **[!UICONTROL Datenbankbereinigung]**, auf den Sie über den Knoten **[!UICONTROL Administration > Produktion > Technische Workflows]** zugreifen können, ermöglicht das Löschen veralteter Daten, um das exponentielle Anwachsen der Datenbank zu vermeiden. Der Workflow wird automatisch ohne Benutzereingriff ausgelöst.
 
 ![Bereinigung](assets/ncs_cleanup_workflow.png)
 
@@ -49,7 +49,7 @@ Standardmäßig ist der Workflow **[!UICONTROL Datenbankbereinigung]** so konfig
 
 ### Bereitstellungsassistent {#deployment-assistant}
 
-Über **[!UICONTROL Menü]** Tools > Erweitert **[!UICONTROL können Sie mit dem Bereitstellungsassistenten]**, wie lange Daten gespeichert werden sollen. Werte werden in Tagen ausgedrückt. Wenn diese Werte nicht geändert werden, verwendet der Workflow die Standardwerte.
+Über **[!UICONTROL Menü**&#x200B;[!UICONTROL &#x200B; Tools > Erweitert &#x200B;]&#x200B;**können Sie mit dem Bereitstellungsassistenten]**, wie lange Daten gespeichert werden sollen. Werte werden in Tagen ausgedrückt. Wenn diese Werte nicht geändert werden, verwendet der Workflow die Standardwerte.
 
 ![](assets/ncs_cleanup_deployment-wizard.png)
 
@@ -91,7 +91,7 @@ Die Workflow-Engine startet den Datenbankbereinigungsprozess zu dem in der Workf
 
 ### Zu löschende Listen {#lists-to-delete-cleanup}
 
-Die erste Aufgabe, die vom Workflow **[!UICONTROL Datenbankbereinigung]** ausgeführt wird, löscht alle Gruppen mit dem **deleteStatus != 0** Attribut aus der **NmsGroup**. Mit diesen Gruppen verknüpfte Datensätze, die in anderen Tabellen vorhanden sind, werden ebenfalls gelöscht.
+Die erste Aufgabe, die vom Workflow **[!UICONTROL Datenbankbereinigung]** ausgeführt wird, löscht alle Gruppen mit dem Attribut **deleteStatus != 0** aus der **NmsGroup**. Mit diesen Gruppen verknüpfte Datensätze, die in anderen Tabellen vorhanden sind, werden ebenfalls gelöscht.
 
 1. Zu löschende Listen werden mithilfe der folgenden SQL-Abfrage wiederhergestellt:
 

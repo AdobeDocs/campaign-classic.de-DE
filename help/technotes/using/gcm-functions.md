@@ -5,9 +5,9 @@ description: Neue GCM-basierte Funktionen
 feature: Technote
 exl-id: 154dee7a-a1e9-40a2-bfa5-3641382d0574
 source-git-commit: b6d64f66d287dba79be5eddec48ee852c2c7740c
-workflow-type: ht
-source-wordcount: '578'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '582'
+ht-degree: 99%
 
 ---
 
@@ -25,7 +25,7 @@ Neue Funktionen
 
 Legacy-Funktionen, die für GCM verwendet werden können:
 
-* [DecryptString-JavaScript-Funktion ](#decryptString-javascript)
+* [DecryptString-JavaScript-Funktion](#decryptString-javascript)
 * [DecryptPassword-JavaScript-Funktion](#decryptPassword-javascript)
 
 [Eingestellte Funktionen](#depracated-functions)

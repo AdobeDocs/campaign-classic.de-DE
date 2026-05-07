@@ -8,8 +8,8 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 exl-id: e61f2b63-06d3-4b8c-867f-1c729176d2da
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '2412'
-ht-degree: 85%
+source-wordcount: '2429'
+ht-degree: 87%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 85%
 
 Die Beschreibung eines Formulars ist ein strukturiertes XML-Dokument, das die Grammatik des Formularschemas (**):form**.
 
-Das XML-Dokument eines Formulars muss das `<form>` Stammelement mit den Attributen **name** und **namespace** zum Ausfüllen des Formularnamens und des Namespace enthalten.
+Das XML-Dokument eines Formulars muss das `<form>`-Stammelement mit den Attributen **name** und **namespace** zur Befüllung des Formularnamens und des Namespace enthalten.
 
 ```xml
 <form name="form_name" namespace="name_space">
@@ -63,7 +63,7 @@ Das Eingabefeld passt sich automatisch dem gewählten Datentyp an und verwendet 
 
 >[!NOTE]
 >
->Sie können das in seinem Datenschema definierte Label überschreiben, indem Sie dem **das** label`<input>`-Attribut hinzufügen:\
+>Sie können das in seinem Datenschema definierte Label überschreiben, indem Sie dem `<input>` das **label**-Attribut hinzufügen:\
 >`<input label="Email address" xpath="@name" />`
 
 Standardmäßig wird jedes Feld, je nach Datentyp, einzeilig über den gesamten verfügbaren Platz angezeigt.
@@ -187,7 +187,7 @@ Der Haupt-Container wird durch das Attribut **type=&quot;Notebook&quot;** defini
 
 >[!NOTE]
 >
->Eine **style=„down|up**(default)**&quot;**-Funktion erzwingt die vertikale Positionierung von Registerkartenbeschriftungen unter oder über dem Steuerelement. Diese Funktion ist optional.
+>Eine **style=„down|up**(default)**&quot;**-Funktion erzwingt die vertikale Positionierung von Registerkartenbeschriftungen unter oder über dem Steuerelement. Hierbei handelt es sich um eine optionale Funktion.
 >`<container style="down" type="notebook">  … </container>`
 
 #### Symbolliste {#icon-list}
@@ -235,7 +235,7 @@ Ein Container für die Sichtbarkeit wird durch das Attribut **type=&quot;visible
 Beispiele für die Bedingungssyntax:
 
 * **visibleIf=&quot;@email=&#39;peter.martinezATneeolane.net&#39;&quot;**: prüft Gleichheit bei Daten vom Typ Zeichenfolge. Der Vergleichswert muss in Anführungszeichen gesetzt werden.
-* **visibleIf=&quot;@gender >= 1 and @gender != 2&quot;**: Bedingung für einen numerischen Wert.
+* **visibleIf=&quot;@gender >= 1 und @gender != 2“**: Bedingung für einen numerischen Wert.
 * **visibleIf=&quot;@boolean1=true oder @boolean2=false&quot;**: Testen von booleschen Feldern.
 
 #### Container wird aktiviert {#enabling-container}
@@ -464,7 +464,7 @@ Das Einfügen und Bearbeiten der Daten in einer Liste kann in einem separaten Be
 </input>
 ```
 
-Das Bearbeitungsformular wird aus dem `<form>` Element unter „Listendefinition“ heraus ausgefüllt. Seine Struktur ist identisch mit der Struktur eines Eingabeformulars. Die Schaltfläche **[!UICONTROL Detail]** wird automatisch hinzugefügt, wenn das Attribut **zoom=&quot;true&quot;** im **`<input>`**-Tag der Liste ausgefüllt ist. Mit diesem Attribut können Sie das Bearbeitungsformular der ausgewählten Zeile starten.
+Das Bearbeitungsformular wird aus dem Element `<form>` unter &quot;Listendefinition&quot; heraus ausgefüllt. Seine Struktur ist identisch mit der Struktur eines Eingabeformulars. Die Schaltfläche **[!UICONTROL Detail]** wird automatisch hinzugefügt, wenn das Attribut **zoom=&quot;true&quot;** im **`<input>`**-Tag der Liste ausgefüllt ist. Mit diesem Attribut können Sie das Bearbeitungsformular der ausgewählten Zeile starten.
 
 >[!NOTE]
 >
@@ -585,7 +585,7 @@ Der Kontext des Formulars kann beim Initialisieren und Schließen des Formulars 
 
 >[!NOTE]
 >
->Die Tags `<enter>` und `<leave>` können auf den `<container>` von Seiten verwendet werden (vom Typ „notebook“ und „iconbox„).
+>Die Tags `<enter>` und `<leave>` können auf den `<container>`-Seiten (vom Typ &quot;notebook&quot; und &quot;iconbox&quot;) verwendet werden.
 
 ### Sprache von Ausdrücken {#expression-language-}
 

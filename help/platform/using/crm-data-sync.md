@@ -7,8 +7,8 @@ exl-id: 7f9eda15-76e8-40a1-8302-004cea085778
 hide: true
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1620'
-ht-degree: 100%
+source-wordcount: '1628'
+ht-degree: 85%
 
 ---
 
@@ -41,7 +41,7 @@ Wählen Sie zunächst das externe Konto aus, das dem CRM-System entspricht, mit 
 
 ![](assets/crm_task_select_obj.png)
 
-Die Konfiguration der Aktivität hängt von der gewählten Option ab und wird im Folgenden dargestellt:
+Die Konfiguration dieser Aktivität hängt von dem auszuführenden Prozess ab. Die verschiedenen Konfigurationen werden im Folgenden beschrieben.
 
 ## Import aus dem CRM {#importing-from-the-crm}
 
@@ -63,7 +63,7 @@ Gehen Sie zur Konfiguration der **[!UICONTROL CRM-Connector]**-Aktivität wie fo
 
    >[!IMPORTANT]
    >
-   >Um die Objekte aus dem CRM-System mit denen in der Adobe Campaign-Anwendung zu verknüpfen, wird die Kennung des CRM-Datensatzes benötigt. Diese wird automatisch bei Bestätigung des Dialogfensters hinzugefügt.
+   >Die Kennung des CRM-Datensatzes ist für die Verknüpfung von Objekten im CRM und in Adobe Campaign obligatorisch. Es wird automatisch hinzugefügt, wenn das Feld genehmigt wird.
    >
    >Außerdem ist das Datum der letzten CRM-seitigen Änderung erforderlich, um einen inkrementellen Datenimport zu ermöglichen.
 
@@ -91,7 +91,7 @@ Das Datum der letzten Synchronisation wird in einer im Konfigurationsfenster ang
 
 >[!NOTE]
 >
->Dieser Hinweis gilt nur für die allgemeine **[!UICONTROL CRM-Connector]**-Aktivität. Für andere CRM-Aktivitäten läuft der Prozess automatisch ab.
+>Dieser Hinweis gilt nur für die generische Aktivität **[!UICONTROL CRM-Connector]**. Für andere CRM-Aktivitäten erfolgt der Prozess automatisch.
 >
 >Diese Option muss manuell unter **[!UICONTROL Administration]** > **[!UICONTROL Plattform]** > **[!UICONTROL Optionen]** erstellt und ausgefüllt werden. Es muss sich um eine Textoption handeln, deren Wert dem folgenden Format entspricht: **`yyyy/MM/dd hh:mm:ss`**.
 > 
@@ -104,7 +104,7 @@ Unten stehende Felder kommen (in der angegebenen Reihenfolge) zur Anwendung:
 * Bei Microsoft Dynamics: **modifiedon**,
 * Bei Salesforce.com: **LastModifiedDate**, **SystemModstamp**.
 
-Die Aktivierung der Option **[!UICONTROL Automatischer Index]** erzeugt drei Variablen, die im Synchronisations-Workflow über eine **[!UICONTROL JavaScript]**-Aktivität genutzt werden können. Diese Variablen sind:
+Durch Aktivieren der Option **[!UICONTROL Automatischer Index]** werden drei Variablen generiert, die im Synchronisations-Workflow über eine Aktivität vom Typ **[!UICONTROL JavaScript-]** verwendet werden können. Diese Aktivitäten sind:
 
 * **vars.crmOptionName**: entspricht dem Datum des letzten Imports.
 * **vars.crmStartImport**: entspricht dem Startdatum des letzten Datenabrufs (einschließlich).
@@ -120,10 +120,10 @@ Um eine effiziente Funktionsweise mit den diversen CRM-Systemen sicherzustellen,
 
 * Jedes Filterniveau darf nur einen Operatortyp verwenden.
 * Der AND-NOT-Operator wird nicht unterstützt.
-* Vergleiche dürfen sich nur auf Werte vom Typ &quot;ist leer&quot;/&quot;ist nicht leer&quot; oder auf Zahlen beziehen. Der Wert (rechte Spalte) wird ausgewertet und das Ergebnis muss eine Zahl sein. JOIN-Vergleiche werden nicht unterstützt.
+* Vergleiche dürfen nur Nullwerte (&#39;is empty&#39;/&#39;is not empty&#39; type) oder Zahlen betreffen. Das bedeutet, dass der Wert (rechte Spalte) bewertet wird und das Ergebnis dieser Bewertung eine Zahl sein muss. Vergleiche von JOIN-Typen werden daher nicht unterstützt.
 * Der in der rechten Spalte angegebene Wert wird in JavaScript ausgewertet.
 * Vergleiche vom Typ JOIN werden nicht unterstützt.
-* Der Ausdruck (linke Spalte) muss zwingend ein Feld sein. Er darf weder eine Kombination aus mehreren Ausdrücken, noch eine Ziffer usw. sein.
+* Der Ausdruck in der linken Spalte muss ein -Feld sein. Es kann sich nicht um eine Kombination aus mehreren Ausdrücken, einer Zahl usw. handeln.
 
 So wären z. B. folgende Filterbedingungen im Rahmen eines CRM-Imports UNGÜLTIG, da der ODER-Operator auf demselben Niveau wie die UND-Operatoren verwendet wird:
 
@@ -187,7 +187,7 @@ Gehen Sie für einen Export bei der Konfiguration der **[!UICONTROL CRM-Connecto
 
    >[!NOTE]
    >
-   >Die Liste der zu exportierenden Datensätze und das Exportergebnis werden in einer temporären Datei gespeichert, die zugänglich bleibt, solange der Workflow nicht abgeschlossen oder neu gestartet wurde. Dies gewährleistet, dass der Vorgang im Falle von Fehlern wieder aufgenommen werden kann, ohne Gefahr zu laufen, einen Datensatz mehrmals zu exportieren oder Daten zu verlieren.
+   >Die Liste der zu exportierenden Einträge und das Ergebnis des Exports werden in einer temporären Datei gespeichert, auf die zugegriffen werden kann, bis der Workflow abgeschlossen oder neu gestartet wurde. Auf diese Weise können Sie den Prozess im Falle von Fehlern erneut starten, ohne das Risiko einzugehen, denselben Datensatz mehrmals zu exportieren oder Daten zu verlieren.
 
 ## Ergänzende Konfigurationen {#additional-configurations}
 
@@ -199,7 +199,7 @@ Wählen Sie hierzu in der entsprechenden Spalte die anzuwendende Konvertierung a
 
 ![](assets/crm_task_import.png)
 
-Im **[!UICONTROL Standard]**-Modus entspricht die Konvertierung zumeist einem einfachen Kopieren/Einfügen der Daten. Die verschiedenen Zeitzonen werden in jedem Fall berücksichtigt.
+Der **[!UICONTROL Standard]**-Modus wendet die automatische Datenkonvertierung an, die in den meisten Fällen einer Kopie/Einfügung der Daten entspricht. Die Zeitzonenverwaltung wird jedoch angewendet.
 
 Darüber hinaus sind folgende Konvertierungen möglich:
 
@@ -237,13 +237,13 @@ Gehen Sie hierzu wie folgt vor:
 
 1. Wählen Sie den Vorgang vom Typ **[!UICONTROL Import der im CRM gelöschten Objekte]** aus.
 1. Gehen Sie zur Dropdown-Liste **[!UICONTROL Remote-Objekt]** und wählen Sie das vom Prozess betroffene Objekt aus. Das Objekt entspricht einer der Tabellen, die bei der Connector-Konfiguration in Adobe Campaign erstellt wurden.
-1. Bestimmen Sie durch Eingabe von **[!UICONTROL Startdatum]** und **[!UICONTROL Enddatum]** den Zeitraum, für den gelöschte Objekte importiert werden sollen. Der Zeitraum versteht sich einschließlich Start- und Enddatum.
+1. Geben Sie den zu berücksichtigenden Löschzeitraum in den Feldern **[!UICONTROL Startdatum]** und **[!UICONTROL Enddatum]** an. Diese Daten werden in den Zeitraum einbezogen.
 
    ![](assets/crm_import_deleted_obj.png)
 
    >[!IMPORTANT]
    >
-   >Der Löschzeitraum für die zu importierenden Objekte muss die Einschränkungen des jeweiligen CRM-Systems berücksichtigen. So ist es z. B. in Salesforce.com nicht möglich, Daten abzurufen, die vor mehr als 30 Tagen gelöscht wurden.
+   >Der Zeitraum für die Löschung des Elements muss mit den CRM-spezifischen Einschränkungen übereinstimmen. Das bedeutet, dass für Salesforce.com beispielsweise Elemente, die vor mehr als 30 Tagen gelöscht wurden, nicht wiederhergestellt werden können.
 
 ## Löschung von Objekten im CRM {#deleting-objects-in-the-crm}
 

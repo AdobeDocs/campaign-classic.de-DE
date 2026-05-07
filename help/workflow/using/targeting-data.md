@@ -7,8 +7,8 @@ hide: true
 exl-id: 74b82019-bdab-4442-84cf-5ad18d0db788
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '2026'
-ht-degree: 100%
+source-wordcount: '2039'
+ht-degree: 73%
 
 ---
 
@@ -22,9 +22,9 @@ ht-degree: 100%
 
 Mit einer **[!UICONTROL Abfrageaktivität]** können Sie grundlegende Daten zum Aufbau der Zielpopulation auswählen. Weitere Informationen hierzu finden Sie unter [Abfragen erstellen](query.md#creating-a-query).
 
-Sie können auch mithilfe der folgenden Aktivitäten Daten aus der Datenbank abfragen und weiter filtern: [Inkrementelle Abfrage ](incremental-query.md), [Liste lesen](read-list.md).
+Sie können auch mithilfe der folgenden Aktivitäten Daten aus der Datenbank abfragen und weiter filtern: [Inkrementelle Abfrage &#x200B;](incremental-query.md), [Liste lesen](read-list.md).
 
-Es ist möglich, zusätzliche Daten zu sammeln, die während des gesamten Lebenszyklus des Workflows weitergeleitet und verarbeitet werden. Weitere Informationen hierzu finden Sie unter [Daten hinzufügen ](query.md#adding-data)und [Zusätzliche Daten bearbeiten](#editing-additional-data).
+Es ist möglich, zusätzliche Daten zu sammeln, die während des gesamten Lebenszyklus des Workflows weitergeleitet und verarbeitet werden. Weitere Informationen hierzu finden Sie unter [Daten hinzufügen &#x200B;](query.md#adding-data)und [Zusätzliche Daten bearbeiten](#editing-additional-data).
 
 ### Bearbeiten zusätzlicher Daten {#editing-additional-data}
 
@@ -42,7 +42,7 @@ Kreuzen Sie den gewünschten Formeltyp an, beispielsweise Aggregat.
 
 ![](assets/query_add_an_output_column_formula.png)
 
-Über die Option **[!UICONTROL Unterelement hinzufügen]** können die berechneten Daten in die Sammlung eingefügt werden. Sie können also aus der Sammlung stammende Zusatzdaten auswählen oder aus den Sammlungselementen Aggregate berechnen.
+Mit **[!UICONTROL Option „Unterelement hinzufügen]** können Sie berechnete Daten an die Sammlung anhängen. Auf diese Weise können Sie zusätzliche Daten aus der Sammlung auswählen oder Aggregatberechnungen für Sammlungselemente definieren.
 
 ![](assets/query_add_columns_subscription_sub-element.png)
 
@@ -60,19 +60,19 @@ Mit den gesammelten zusätzlichen Daten können Sie die Datenfilterung in der Da
 
 ### Vereinheitlichen von Daten {#homogenizing-data}
 
-Mit den Aktivitäten vom Typ **[!UICONTROL Vereinigung]** und **[!UICONTROL Schnittmenge]** haben Sie die Möglichkeit, nur gemeinsame Zusatzdaten auszuwählen, um eine konsistente Datenbasis zu erhalten. In diesem Fall enthält die resultierende temporäre Arbeitstabelle dieser Aktivität nur die Zusatzdaten, die in allen eingehenden Teilmengen vorkommen.
+Bei Aktivitäten vom Typ **[!UICONTROL Vereinigung]** oder **[!UICONTROL Schnittmenge]** können Sie festlegen, dass nur gemeinsame Zusatzdaten beibehalten werden, um eine konsistente Datenbasis zu erhalten. In diesem Fall enthält die resultierende temporäre Arbeitstabelle dieser Aktivität nur die Zusatzdaten, die in allen eingehenden Mengen enthalten sind.
 
 ![](assets/option-common_additionnal_col_only.png)
 
 ### Mit Zusatzdaten abstimmen {#reconciliation-with-additional-data}
 
-In den Aktivitäten **[!UICONTROL Vereinigung]**, **[!UICONTROL Schnittmenge]** etc. besteht die Möglichkeit, die zur Abstimmung zu verwendenden Spalten aus den Zusatzdaten auszuwählen. Konfigurieren Sie hierzu die Abstimmung über eine Auswahl an Spalten und geben Sie die Hauptmenge an. Wählen Sie dann im unteren Fensterbereich wie dargestellt die entsprechenden Spalten aus:
+Während der Datenabstimmungsphasen (**[!UICONTROL Vereinigung]**, **[!UICONTROL Schnittmenge]** usw.) können Sie die für die Datenabstimmung zu verwendenden Spalten aus den zusätzlichen Spalten auswählen. Konfigurieren Sie dazu eine Abstimmung über eine Auswahl von Spalten und geben Sie die Hauptmenge an. Wählen Sie dann die Spalten in der unteren Spalte des Fensters aus, wie im folgenden Beispiel gezeigt:
 
 ![](assets/select-column-and-join.png)
 
 ### Erstellen von Teilmengen {#creating-subsets}
 
-Über die **[!UICONTROL Aufspaltungsaktivität]** lassen sich anhand von Extraktionsabfragen entsprechende Teilmengen erstellen. Aktivieren Sie hierfür in jeder Teilmenge die Option zur Erstellung von Filterbedingungen für die Population und definieren Sie im sich öffnenden Abfragefenster die Kriterien zur Zielgruppensegmentierung.
+Mit **[!UICONTROL Aktivität „Aufspaltung]** können Sie Teilmengen aus Kriterien erstellen, die über Extraktionsabfragen definiert wurden. Wenn Sie für jede Teilmenge eine Filterbedingung für die Population bearbeiten, greifen Sie dann auf die Standardabfrageaktivität zu, mit der Sie die Zielgruppensegmentierungsbedingungen definieren können.
 
 Sie können eine Zielgruppe in mehrere Teilmengen unterteilen, indem Sie als Filterbedingungen nur zusätzliche Daten oder aber diese zusätzlich zu den Zielgruppendaten verwenden. Sie können auch externe Daten nutzen, wenn Sie die Option **Federated Data Access** besitzen.
 
@@ -82,7 +82,7 @@ Weitere Informationen hierzu finden Sie unter [Teilmengen mithilfe der Aufspaltu
 
 ### Kombinieren mehrerer Zielgruppen (Vereinigung) {#combining-several-targets--union-}
 
-Über die Vereinigungsaktivität lassen sich die Ergebnisse verschiedener Aktivitäten in einer Transition zusammenfassen. Dabei müssen die Mengen nicht zwingend homogen sein.
+Die Aktivität Vereinigung ermöglicht es, das Ergebnis mehrerer Aktivitäten innerhalb einer Transition zu kombinieren. Sets müssen nicht unbedingt homogen sein.
 
 ![](assets/join_reconciliation_options.png)
 
@@ -96,7 +96,7 @@ Zur Abstimmung der Daten stehen folgende Optionen zur Verfügung:
 
   Diese Option ermöglicht die Abstimmung der Datensätze über alle den verschiedenen Zielpopulationen gemeinsamen Spalten.
 
-  Spalten werden in Adobe Campaign anhand der Spaltentitel identifiziert. Dabei werden geringfügige Unterschiede akzeptiert. Der Spaltentitel &#39;Email&#39; wird als identisch mit dem Titel &#39;@email&#39; gewertet.
+  Adobe Campaign identifiziert Spalten anhand ihres Namens. Eine Toleranzschwelle wird akzeptiert: Beispielsweise kann eine Spalte „E-Mail“ als identisch mit einer Spalte &quot;@email“ erkannt werden.
 
 * **[!UICONTROL Auswahl an Spalten]**
 
@@ -110,7 +110,7 @@ Zur Abstimmung der Daten stehen folgende Optionen zur Verfügung:
   >
   >Die Populationen werden im Rahmen der Abstimmung nicht auf Duplikate geprüft.
 
-  Sie können die Populationsgröße auf eine gewisse Anzahl an Datensätzen begrenzen. Kreuzen Sie hierfür die entsprechende Option an und geben Sie die Anzahl an beizubehaltenden Datensätzen an.
+  Sie können die Populationsgröße auf eine bestimmte Anzahl von Datensätzen beschränken. Klicken Sie dazu auf die entsprechende Option und geben Sie die Anzahl der beizubehaltenden Datensätze an.
 
   Geben Sie außerdem die Priorität der Eingangspopulationen an. Im unteren Bereich des Fensters werden die in die Vereinigungsaktivität eingehenden Transitionen aufgelistet. Die Reihenfolge kann mithilfe der blauen Pfeile rechts verändert werden.
 
@@ -122,7 +122,7 @@ Zur Abstimmung der Daten stehen folgende Optionen zur Verfügung:
 
 ![](assets/traitements.png)
 
-Über die Schnittmengenaktivität lassen sich die Datensätze abrufen, die in allen eingehenden Populationen enthalten sind. Die Abstimmparameter dieser Aktivität sind dieselben wie im Abschnitt für die Vereinigung beschrieben.
+Über die Schnittmenge lassen sich nur die Zeilen abrufen, die alle Populationen der eingehenden Transitionen gemeinsam haben. Diese Tätigkeit ist wie die Unionstätigkeit zu konfigurieren.
 
 Es ist außerdem möglich, nur eine Auswahl an Spalten oder nur die Spalten, die in allen eingehenden Populationen enthalten sind, abzurufen.
 
@@ -130,9 +130,9 @@ Die Schnittmengenaktivität wird im Abschnitt [Schnittmenge](intersection.md) de
 
 ### Ausschließen von Populationen (Ausschluss) {#excluding-a-population--exclusion-}
 
-Über die Ausschlussaktivität lassen sich Elemente aus einer Zielgruppe ausschließen, die auch in mindestens einer anderen Zielgruppenpopulation enthalten sind. Die Zielgruppendimension am Aktivitätsausgang entspricht der der Hauptmenge.
+Mithilfe der Ausschlussaktivität können Sie die Elemente einer Zielgruppe aus einer anderen Zielpopulation ausschließen. Die Zielgruppendimension der Ausgabe dieser Aktivität ist die der Hauptgruppe.
 
-Bei Bedarf können eingehende Tabellen angepasst werden. Um eine Zielgruppe aus einer anderen Dimension auszuschließen, muss diese Zielgruppe zur selben Zielgruppendimension wie die Hauptzielgruppe zurückgeführt werden. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Hinzufügen]** und geben Sie die Bedingungen der Dimensionsänderung an.
+Bei Bedarf können eingehende Tabellen bearbeitet werden. Um eine Zielgruppe aus einer anderen Dimension auszuschließen, muss diese Zielgruppe tatsächlich auf dieselbe Zielgruppendimension wie die Hauptzielgruppe zurückgesetzt werden. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Hinzufügen]** und geben Sie die Bedingungen der Dimensionsänderung an.
 
 Die Abstimmung der Daten kann über die Kennungen, eine Achsenänderung oder einen Join erfolgen. Ein Beispiel finden Sie unter [Verwendung von Daten aus einer Liste: Liste lesen](../../platform/using/import-export-workflows.md#using-data-from-a-list--read-list).
 
@@ -154,7 +154,7 @@ Zur Konfiguration wählen Sie zunächst die Bedingungen aus:
 
    Bei der Erstellung von Teilmengen werden die zuvor definierten Filterparameter genutzt.
 
-   Kreuzen Sie zur Definition von Filterbedingungen die Option **[!UICONTROL Filterbedingung für Eingangspopulation hinzufügen]** an und klicken Sie auf den Link **[!UICONTROL Bearbeiten...]**. Geben Sie dann die Kriterien zur Erstellung der Teilmenge an.
+   Um Filterbedingungen zu definieren, wählen Sie die Option **[!UICONTROL Filterbedingung für die eingehende Population hinzufügen]** und klicken Sie auf den Link **[!UICONTROL Bearbeiten…]**. Geben Sie dann die Filterbedingungen für die Erstellung dieser Teilmenge an.
 
    ![](assets/split-subset-config-all-data.png)
 
@@ -178,9 +178,9 @@ Zur Konfiguration wählen Sie zunächst die Bedingungen aus:
 
    Weitere Informationen hierzu finden Sie je nach Campaign-Version in den folgenden Abschnitten:
 
-   ![](assets/do-not-localize/v7.jpeg)[Dokumentation zu Campaign v7](../../installation/using/about-fda.md)
+   ![](assets/do-not-localize/v7.jpeg) [Dokumentation zu Campaign v7](../../installation/using/about-fda.md)
 
-   ![](assets/do-not-localize/v8.png)[Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=de)
+   ![](assets/do-not-localize/v8.png) [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=de)
 
 Danach müssen neue Teilmengen hinzugefügt werden:
 
@@ -192,7 +192,7 @@ Danach müssen neue Teilmengen hinzugefügt werden:
 
    ![](assets/wf_split_edit_filtering.png)
 
-1. Bei Bedarf kann die Filterdimension für jede Teilmenge individuell angepasst werden. Auf diese Weise können Sie etwa mithilfe derselben Aktivität „Aufspaltung“ eine Teilmenge für alle Kundinnen und Kunden mit einer Gold-Karte aufbauen, eine zweite für alle Empfängerinnen und Empfänger, die auf den letzten Newsletter geklickt haben, und eine dritte für Kundinnen und Kunden zwischen 18 und 25 Jahren, die in den letzten 30 Tagen einen Kauf in einem Ihrer Geschäfte getätigt haben. Wählen Sie dazu die Option **[!UICONTROL Spezifische Filterdimension verwenden]** und wählen Sie den Kontext der Datenfilterung aus.
+1. Bei Bedarf können Sie die Filterdimension für jede Teilmenge einzeln ändern. Auf diese Weise können Sie ein Set für alle Gold-Karteninhaber erstellen: einen für alle Empfänger, die auf den neuesten Newsletter geklickt haben, und einen dritten für Personen im Alter von 18 bis 25 Jahren, die innerhalb der letzten 30 Tage einen Kauf im Geschäft getätigt haben, wobei alle die gleiche Aufspaltungsaktivität verwenden. Wählen Sie dazu die Option **[!UICONTROL Spezifische Filterdimension verwenden]** und wählen Sie den Kontext der Datenfilterung aus.
 
    ![](assets/wf_split_change_dimension.png)
 
@@ -204,7 +204,7 @@ Nach der Erstellung von Teilmengen zeigt die Aufspaltungsaktivität standardmä�
 
 ![](assets/wf_split_multi_outputs.png)
 
-Sie können alle Teilmengen in einer einzelnen ausgehenden Transition gruppieren. In diesem Fall ist die Verknüpfung mit den entsprechenden Teilmengen beispielsweise im Segment-Code sichtbar. Wählen Sie dazu die Option **[!UICONTROL Alle Teilmengen in derselben Tabelle erzeugen]**.
+Sie können alle diese Teilmengen in einer einzigen Ausgabetransition gruppieren. In diesem Fall wird beispielsweise der Link zu den entsprechenden Teilmengen im Segment-Code angezeigt. Wählen Sie dazu die Option **[!UICONTROL Alle Teilmengen in derselben Tabelle erzeugen]**.
 
 ![](assets/wf_split_select_option_single_output.png)
 
@@ -232,7 +232,7 @@ Nach Identifizierung und Aufbereitung der Daten können diese in folgenden Konte
 
 ## Daten-Management {#data-management}
 
-In Adobe Campaign umfasst das Data Management eine Reihe von Aktivitäten, die mithilfe effizienterer und flexiblerer Tools komplexe Zielgruppenbestimmungen und Anreicherungen ermöglichen. Auf diese Weise ist es möglich, eine kohärente und individuelle Kommunikation mit Kontakten zu gewährleisten, indem beispielsweise Informationen zu Verträgen, Abonnements oder Reaktionen auf vorhergehende Sendungen verwendet werden. Das Data Management erlaubt es darüber hinaus, den Lebenszyklus von Daten während der Segmentierungsprozesse zu verfolgen, insbesondere werden:
+In Adobe Campaign kombiniert das Daten-Management eine Reihe von Aktivitäten zur Lösung komplexer Zielgruppenbestimmungsprobleme, indem effizientere und flexiblere Tools bereitgestellt werden. Auf diese Weise können Sie für alle Kommunikationen mit einem Kontakt eine konsistente Verwaltung einrichten, indem Sie Informationen zu seinen Verträgen, Abonnements, Reaktionszeiten auf Sendungen usw. verwenden. Mit dem Daten-Management können Sie den Datenlebenszyklus während der Segmentierungsvorgänge verfolgen, insbesondere:
 
 * Zielbestimmungen vereinfacht, u. a. durch Einschluss von nicht im Datamart modelisierten Daten (Erstellung neuer Tabellen: lokale Erweiterung auf jeden Zielgruppen-Workflow in Abhängigkeit von seiner Konfiguration);
 * Zwischenergebnisse gespeichert und weitergegeben (interessant im Zuge der Zielbestimmung oder der Datenbankadministration);
@@ -241,14 +241,14 @@ In Adobe Campaign umfasst das Data Management eine Reihe von Aktivitäten, die m
 Hierfür bietet Adobe Campaign:
 
 * Datenerfassungsaktivitäten: [Dateiübertragung](file-transfer.md), [Laden (Datei)](data-loading-file.md), [Laden (DBMS)](data-loading-rdbms.md), [Daten-Update](update-data.md). Dieser erste Schritt der Datenerfassung bereitet die Daten so vor, dass sie in anderen Aktivitäten verarbeitet werden können. Mehrere Parameter müssen überwacht werden, um sicherzustellen, dass der Workflow korrekt ausgeführt wird und die erwarteten Ergebnisse liefert. Wenn Sie beispielsweise Daten importieren, muss der Primärschlüssel (Pkey) für diese Daten für jeden Datensatz eindeutig sein.
-* Aktivitäten mit Data Management-Optionen ([Abfrage](query.md), [Vereinigung](union.md), [Schnittmenge](intersection.md), [Aufspaltung](split.md)). Dies ermöglicht beispielsweise die Konfiguration einer Vereinigung oder einer Schnittmenge mit Daten, die unterschiedliche Zielgruppendimensionen aufweisen, vorausgesetzt eine Abstimmung der Daten ist möglich.
+* Zielgruppenbestimmungsaktivitäten wurden um Datenverwaltungsoptionen erweitert: [Abfrage](query.md), [Vereinigung](union.md), [Schnittmenge](intersection.md) [Aufspaltung](split.md). Auf diese Weise können Sie eine Vereinigung oder Schnittmenge zwischen Daten aus verschiedenen Zielgruppendimensionen konfigurieren, sofern eine Datenabstimmung möglich ist.
 * Formatierungsaktivitäten: [Anreicherung](enrichment.md), [Dimensionsänderung](change-dimension.md).
 
 >[!CAUTION]
 >
 >In Workflows löst bei in Relation stehenden Tabellen das Löschen eines Elements der Quelltabelle nicht das Löschen der verbundenen Elemente aus.
 >  
->Zum Beispiel zieht das Löschen eines Empfängers mithilfe eines Workflows nicht das Löschen seines Versandverlaufs nach sich. Wird ein Empfänger jedoch direkt im &#39;Empfänger&#39;-Ordner des Navigationsbaums gelöscht, werden auch alle anderen auf ihn bezogenen Daten gelöscht.
+>Wenn Sie beispielsweise einen Empfänger über einen Workflow löschen, werden nicht alle Versandverläufe des Empfängers gelöscht. Wenn Sie einen Empfänger jedoch direkt im Ordner „Empfänger“ löschen, werden alle mit diesem Empfänger verknüpften Daten gelöscht.
 
 ### Anreichern und Ändern von Daten {#enriching-and-modifying-data}
 

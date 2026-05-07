@@ -8,7 +8,7 @@ exl-id: 5e77d196-5c71-438e-8dae-10c6a6e4f29c
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '533'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
@@ -26,7 +26,7 @@ Auf das Instanz-Monitoring-Dashboard können Sie über den Tab **[!UICONTROL Mon
 
 ![](assets/monitoring_technical_workflows1.png)
 
-Prüfen Sie unter &quot;System Indicators&quot; und &quot;core files&quot;, ob Indikatoren rot hervorgehoben sind. Gehen Sie in diesem Fall folgendermaßen vor:
+Stellen Sie unter Systemindikatoren und Kerndateien sicher, dass keine Indikatoren rot hervorgehoben sind. Wenn dies der Fall ist und es einige sind, sollten Sie:
 
 * Prüfen Sie, ob die erforderlichen Prozesse immer aktiv sind.
 * Vergewissern Sie sich, dass keiner der Prozesse veraltet ist.
@@ -85,7 +85,7 @@ Alle benutzerdefinierten technischen Workflows sollten in einem Arbeitsblatt mit
 
 ## Planung und Automatisierung der Überwachung {#planning-and-automation-of-monitoring}
 
-Durch die Planung der Workflow-Überwachung kann die Überwachung effizienter gestaltet werden. Manche Aufgaben müssen täglich ausgeführt werden, während andere wöchentlich oder monatlich erfolgen.
+Die Planung der Workflow-Überwachung verbessert ihre Effizienz. Einige Aufgaben müssen täglich ausgeführt werden, während andere Aufgaben wöchentlich oder monatlich ausgeführt werden können.
 
 Die Überwachung kann möglichst effizient gestaltet werden, indem Workflows in Ordnern angeordnet werden, die nach der wiederkehrenden Aufgabe benannt und nach dem Ausführungszeitpunkt sortiert sind.
 

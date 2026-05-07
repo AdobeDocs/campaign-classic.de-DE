@@ -9,8 +9,8 @@ topic-tags: connectors
 exl-id: e3a97e55-dd8b-41e1-b48c-816d973f62a8
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '600'
-ht-degree: 74%
+source-wordcount: '645'
+ht-degree: 67%
 
 ---
 
@@ -40,7 +40,7 @@ Die Verbindung mit einer externen Hadoop-Datenbank über die FDA-Option erforder
 
 1. In Campaign Classic können Sie dann Ihr externes [!DNL Hadoop]-Konto konfigurieren. Weiterführende Informationen zur Konfiguration Ihres externen Kontos finden Sie in [diesem Abschnitt](#hadoop-external).
 
-## Externes Hadoop-Konto {#hadoop-external}
+## Externes Konto „Hadoop“ {#hadoop-external}
 
 Über das externe [!DNL Hadoop]-Konto können Sie Ihre Campaign-Instanz mit Ihrer externen Hadoop-Datenbank verbinden.
 
@@ -131,7 +131,7 @@ Wenn Sie eine Verbindung zu Hadoop 2.1 herstellen müssen, führen Sie die unten
    SQLSETPOSIROW Size.: 8
    ```
 
-1. Erstellen Sie den DSN (Data Source Name) und bearbeiten Sie die Datei odbc.ini. Erstellen Sie dann einen DSN für Ihre Hive-Verbindung.
+1. Erstellen Sie die DSN-Daten (Source-Name) und bearbeiten Sie die Datei „odbc.ini“. Erstellen Sie dann ein DSN für Ihre Hive-Verbindung.
 
    Hier ist ein Beispiel für HDInsight zur Herstellung einer Verbindung mit der Bezeichnung &quot;viral&quot;:
 
@@ -154,9 +154,9 @@ Wenn Sie eine Verbindung zu Hadoop 2.1 herstellen müssen, führen Sie die unten
 
    >[!NOTE]
    >
-   >Der Parameter **UseNativeQuery** ist dabei sehr wichtig. Campaign unterstützt Hive und funktioniert nur dann ordnungsgemäß, wenn UseNativeQuery eingerichtet ist. Üblicherweise formuliert der Treiber oder Hive SQL Connector Abfragen um und ändert die Spaltenanordnung.
+   >Der Parameter **UseNativeQuery** hier ist sehr wichtig. Campaign ist hive-fähig und funktioniert nur, wenn UseNativeQuery festgelegt ist. Normalerweise schreibt der Treiber oder Hive SQL-Connector Abfragen neu und manipuliert die Spaltenreihenfolge.
 
-   Die Authentifizierungseinstellungen hängen von der Hive-/Hadoop-Konfiguration ab. Verwenden Sie beispielsweise für HD Insight AuthMech=6 für die Benutzer-/Passwort-Authentifizierung, wie [hier) &#x200B;](https://www.simba.com/products/Spark/doc/ODBC_InstallGuide/unix/content/odbc/hi/configuring/authenticating/azuresvc.htm).
+   Die Authentifizierungseinstellungen hängen von der Hive-/Hadoop-Konfiguration ab. Verwenden Sie beispielsweise für HD Insight AuthMech=6 für die Benutzer-/Kennwortauthentifizierung, wie [hier](https://www.simba.com/products/Spark/doc/ODBC_InstallGuide/unix/content/odbc/hi/configuring/authenticating/azuresvc.htm) beschrieben.
 
 1. Exportieren Sie die Variablen.
 

@@ -5,8 +5,8 @@ description: Über die Angebotssimulation
 feature: Interaction, Offers
 exl-id: facaa88e-1fa2-4189-9d8f-348aaef3e235
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: ht
-source-wordcount: '248'
+workflow-type: tm+mt
+source-wordcount: '275'
 ht-degree: 100%
 
 ---
@@ -49,7 +49,6 @@ Gehen Sie wie folgt vor, um eine Angebotssimulation zu erstellen:
    ![](assets/offer_simulation_004.png)
 
 1. Fügen Sie gegebenenfalls Berichtsachsen hinzu, um den Bericht **[!UICONTROL Angebotsverteilung nach Ranking]** anzureichern (optional).
-
 
    Weitere Informationen hierzu finden Sie unter [Berichtsachsen hinzufügen](../../interaction/using/simulation-scope.md#adding-reporting-axes).
 

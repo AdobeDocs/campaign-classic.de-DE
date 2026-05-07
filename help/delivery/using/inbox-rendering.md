@@ -7,9 +7,9 @@ feature: Inbox Rendering, Monitoring, Email Rendering
 role: User
 exl-id: a3294e70-ac96-4e51-865f-b969624528ce
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: ht
-source-wordcount: '896'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '952'
+ht-degree: 72%
 
 ---
 
@@ -19,13 +19,13 @@ ht-degree: 100%
 
 Bevor Sie die Schaltfläche **Senden** betätigen, sollten Sie sicherstellen, dass Ihre Nachricht den Empfängern in unterschiedlichen Webclients, Webmails und Geräten optimal dargestellt wird.
 
-Zu diesem Zweck nutzt Adobe Campaign die webbasierte E-Mail-Test-Software [Litmus](https://litmus.com/email-testing), mit der die Darstellung der Seiten sichtbar und in einem Bericht verfügbar gemacht werden kann. Dadurch haben Sie die Möglichkeit, sich die gesendete Nachricht als Vorschau in den unterschiedlichen Umgebungen der Empfänger anzusehen und die Kompatibilität mit den wichtigsten Desktops und Anwendungen zu überprüfen.
+Um dies zu ermöglichen, nutzt Adobe Campaign die [Litmus](https://litmus.com/email-testing) Web-basierte E-Mail-Testlösung, um die Renderings zu erfassen und in einem dedizierten Bericht verfügbar zu machen. Auf diese Weise können Sie eine Vorschau der gesendeten Nachricht in den verschiedenen Kontexten anzeigen, in denen sie empfangen werden kann, und die Kompatibilität mit den wichtigsten Desktops und Anwendungen überprüfen.
 
 >[!CAUTION]
 >Inbox Rendering ist nicht kompatibel mit dem [wiederkehrenden Versand](communication-channels.md#recurring-delivery).
 >
 
-Litmus verfügt über zahlreiche Funktionen zur E-Mail-Validierung und Vorschau. Autoren von E-Mail-Inhalten können Nachrichten in der Vorschau in über 70 E-Mail-Rendering-Systemen betrachten, wie z. B. im Gmail-Posteingang oder im Apple Mail Client.
+Litmus ist eine funktionsreiche E-Mail-Validierungs- und Vorschau-Anwendung. Damit können Ersteller von E-Mail-Inhalten ihren Nachrichteninhalt in über 70 E-Mail-Renderern in der Vorschau anzeigen, z. B. im Gmail-Posteingang oder im Apple Mail-Client.
 
 Die für das **Inbox Rendering** in Adobe Campaign verfügbaren Clients für Mobilgeräte, SMS und Webmail finden Sie auf der Litmus-[Website](https://litmus.com/email-testing) (wählen Sie dazu die Option zum **Anzeigen aller E-Mail-Clients** aus).
 
@@ -33,7 +33,7 @@ Die für das **Inbox Rendering** in Adobe Campaign verfügbaren Clients für Mob
 >
 >Zum Testen der Personalisierung in Sendungen ist kein Inbox Rendering nötig. Die Personalisierung kann auch mit Adobe Campaign-Tools wie der **[!UICONTROL Vorschau]** und mit Testsendungen überprüft werden. Weiterführende Informationen dazu finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=de){target="_blank"}.
 
-## Inbox Rendering aktivieren{#activating-inbox-rendering}
+## Inbox Rendering aktivieren {#activating-inbox-rendering}
 
 [!BADGE Hybrid und On-Premise]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"}
 
@@ -72,13 +72,13 @@ Gehen Sie bei On-Premise-Installationen wie folgt vor, um das Inbox Rendering zu
 
 ## Über Litmus-Token {#about-litmus-tokens}
 
-Da Litmus ein Dienst eines Drittanbieters ist, wird für jede Nutzung eine Gebühr erhoben. Jedes Mal, wenn ein Benutzer die Litmus-Funktion aufruft, wird ein bestimmter Betrag vom Guthaben abgezogen.
+Da Litmus ein Drittanbieterdienst ist, funktioniert es nach einem Kredit-pro-Nutzung-Modell. Jedes Mal, wenn ein Benutzer die Litmus-Funktion aufruft, wird eine Gutschrift abgezogen.
 
 In Adobe Campaign entspricht das Guthaben der Anzahl der verfügbaren Renderings (auch Tokens genannt).
 
 >[!NOTE]
 >
->Die Anzahl der verfügbaren Litmus-Token hängt von der von Ihnen erworbenen Campaign-Lizenz ab. Diese Information können Sie Ihrem Lizenzabkommen entnehmen.
+>Die Anzahl der verfügbaren Litmus-Token hängt von der von Ihnen erworbenen Campaign-Lizenz ab. Überprüfen Sie Ihre Lizenzvereinbarung.
 
 Jedes Mal, wenn Sie in einem Versand die Funktion **[!UICONTROL Inbox Rendering]** verwenden, wird die verfügbare Anzahl der Token um jeweils eins verringert.
 
@@ -94,7 +94,7 @@ Die Anzahl der restlichen verfügbaren Token wird im [Inbox-Rendering-Bericht](#
 
 ![](assets/s_tn_inbox_rendering_tokens.png)
 
-Normalerweise wird die Inbox-Rendering-Funktion zum Testen des HTML-Gerüsts einer neu erstellten E-Mail verwendet. Pro Rendering sind ca. 70 Token erforderlich (abhängig von der Anzahl der getesteten Umgebungen). In manchen Fällen sind aber mehrere Inbox-Rendering-Berichte erforderlich, um Ihren Versand vollständig zu testen. Es könnte deshalb eine größere Anzahl von Token nötig sein, um mehrere Prüfungen durchzuführen.
+Normalerweise wird die Rendering-Funktion für den Posteingang verwendet, um das HTML-Framework einer neu entworfenen E-Mail zu testen. Für jedes Rendering sind etwa 70 Token erforderlich (je nach der Anzahl der Umgebungen, in denen im Allgemeinen getestet wird). In einigen Fällen benötigen Sie jedoch möglicherweise mehrere Inbox Rendering-Berichte, um Ihren Versand vollständig zu testen. Daher kann es mehr Token erfordern, um mehrere Prüfungen durchzuführen.
 
 ## Inbox-Rendering-Bericht aufrufen {#accessing-the-inbox-rendering-report}
 
@@ -107,9 +107,9 @@ Weiterführende Informationen zur Erstellung, Konzeption und Ausrichtung eines V
 
    ![](assets/s_tn_inbox_rendering_button.png)
 
-   Ein Testversand wird durchgeführt. Die Rendering-Miniaturansichten können wenige Minuten nach dem Versand der E-Mails in diesem Testversand aufgerufen werden. Weitere Informationen zum Durchführen eines Testversands finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=de){target="_blank"}.
+   Ein Testversand wird durchgeführt. Die Rendering-Miniaturen können in diesem Korrekturabzug einige Minuten nach dem Senden der E-Mails aufgerufen werden. Weitere Informationen zum Durchführen eines Testversands finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=de){target="_blank"}.
 
-1. Nach dem Absenden erscheint der Testversand in der Versandliste. Dort kann er durch einen Doppelklick geöffnet werden.
+1. Nach dem Versand wird der Testversand in der Versandliste angezeigt. Doppelklicken Sie darauf.
 
    ![](assets/s_tn_inbox_rendering_delivery_list.png)
 
@@ -121,7 +121,7 @@ Weiterführende Informationen zur Erstellung, Konzeption und Ausrichtung eines V
 
 ## Inbox-Rendering-Bericht {#inbox-rendering-report}
 
-Dieser Bericht enthält Informationen zum Inbox Rendering, d. h. zur Darstellung der E-Mail in der Inbox der Empfangenden. Die Renderings können unterschiedlich aussehen, je nachdem, ob die E-Mail in einem Browser, auf einem Mobilgerät oder über eine E-Mail-Anwendung geöffnet wird.
+Dieser Bericht zeigt die Inbox Renderings so an, wie sie dem Empfänger angezeigt werden. Die Renderings können je nachdem, wie der Empfänger den E-Mail-Versand öffnet, unterschiedlich sein: im Browser, auf einem Mobilgerät oder über eine E-Mail-Anwendung.
 
 Im oberen Bereich wird in einer grafischen, farbcodierten Darstellung die Aufteilung der Anzahl der empfangenen, unerwünschten (Spam) und nicht empfangenen Nachrichten angezeigt und die Anzahl der Nachrichten, deren Empfang aussteht.
 

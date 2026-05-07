@@ -6,9 +6,9 @@ feature: SMS
 role: User
 exl-id: 442672ee-5037-49b7-a06f-3a99920ce2b6
 source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
-workflow-type: ht
-source-wordcount: '896'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '914'
+ht-degree: 74%
 
 ---
 
@@ -27,7 +27,7 @@ The detailed process when validating and sending a delivery is presented in the 
 
 ## Erweiterte Parameter {#advanced-parameters}
 
-Die Schaltfläche **[!UICONTROL Eigenschaften]** gibt Zugriff auf erweiterte Versandparameter. Der Abschnitt **[!UICONTROL SMS-Parameter]** im **[!UICONTROL Senden]**-Tab ermöglicht spezifische Konfigurationen.
+Die **[!UICONTROL Eigenschaften]** ermöglicht den Zugriff auf den erweiterten Versandparameter. Die für SMS-Sendungen spezifischen Parameter finden Sie **[!UICONTROL Abschnitt „SMS]** Parameter“ auf der Registerkarte **[!UICONTROL Versand]**.
 
 Folgende Optionen stehen zur Verfügung:
 
@@ -39,7 +39,7 @@ Folgende Optionen stehen zur Verfügung:
 
   >[!IMPORTANT]
   >
-  >Überprüfen Sie die gültige Rechtslage Ihres Landes bezüglich der Änderung des Absendernamens. Stellen Sie außerdem sicher, dass Ihr Provider diese Funktionalität anbietet.
+  >Überprüfen Sie die Gesetze in Ihrem Land bezüglich der Bearbeitung von Absendernamen. Sie sollten auch mit Ihrem Operator überprüfen, ob er diese Funktion anbietet.
 
 * **Übermittlungsmodus**: Art der SMS-Übermittlung.
 * **Priorität**: Einer Nachricht zugewiesene Wichtigkeit. **[!UICONTROL Normal]** ist standardmäßig ausgewählt. Fragen Sie Ihren Provider nach den Kosten für mit der Priorität **[!UICONTROL Hoch]** versendete SMS.
@@ -55,7 +55,7 @@ Folgende Optionen stehen zur Verfügung:
 
 ![](assets/s_user_mobile_sms_adv_smpp.png)
 
-* **Maximale Anzahl an SMS pro Nachricht**: ermöglicht die Angabe der maximalen SMS-Anzahl pro Nachricht, wobei 0 für eine SMS steht. Wenn die Nachricht mehr als die angegebene Anzahl an SMS benötigt, wird sie nicht gesendet.
+* **Maximale Anzahl von SMS pro Nachricht**: Mit dieser Option können Sie die Anzahl der SMS festlegen, die zum Senden einer Nachricht verwendet werden soll. Wenn die Zahl auf 0 gesetzt ist, können Sie eine SMS verwenden, um Ihre Nachricht zu versenden. Wenn die Anzahl der SMS beispielsweise auf 1 oder 2 eingestellt ist und die Nachricht diesen Schwellenwert überschreitet, wird sie nicht gesendet.
 
 <!--
 ## Monitor and track SMS {#monitoring-and-tracking-sms-deliveries}
@@ -69,13 +69,13 @@ After sending messages, you can monitor and track your deliveries. For more on t
 
 ## Eingehende Nachrichten verarbeiten {#processing-inbound-messages}
 
-Das Modul **nlserver sms** ruft in regelmäßigen Abständen den Verarbeitungsfortschritt der Sendungen, Empfangsbestätigungen und Empfängerabmeldungen ab.
+Das **nlserver sms**-Modul fragt den SMS-Router in regelmäßigen Abständen ab. Auf diese Weise kann Adobe Campaign den Fortschritt von Sendungen verfolgen und Statusberichte sowie Abmeldeanfragen von Empfängern verarbeiten.
 
 * **Empfangsbestätigungen**: Der Status Ihrer Sendungen kann in den Versandlogs eingesehen werden.
 
   >[!NOTE]
   >
-  >Jede gesendete SMS ist mit einem externen Konto über den Primärschlüssel des letzteren verbunden. Dies bedeutet, dass
+  >Jede gesendete SMS ist mit einem externen Konto und seinem Primärschlüssel verknüpft. Auf diese Weise:
   >
   > * Empfangsbestätigungen eines externen Kontos für gelöschte SMS nicht korrekt verarbeitet werden können.
   > * ein SMS-Konto nur mit einem externen Konto verknüpft sein darf, damit die Empfangsbestätigungen korrekt zugeordnet werden können
@@ -84,7 +84,7 @@ Das Modul **nlserver sms** ruft in regelmäßigen Abständen den Verarbeitungsfo
 
 ## InSMS-Schema {#insms-schema}
 
-Das InSMS-Schema enthält Informationen zu eingehenden SMS. Die Beschreibung dieser Felder findet sich in ihren jeweiligen desc-Attributen.
+Das InSMS-Schema enthält Informationen zu eingehenden SMS. Eine Beschreibung dieser Felder ist über das Attribut desc verfügbar.
 
 * **message**: Inhalt der erhaltenen SMS.
 * **origin**: Mobiltelefonnummer des Nachrichtenabsenders.
@@ -120,7 +120,7 @@ Der Absendername für diese Art von Nachrichten besteht aus einer kurzen Nummer 
 >
 >Das folgende detaillierte Verfahren gilt nur für SMPP-Connectoren, mit Ausnahme des Connectors „Erweitertes allgemeines SMPP“. Weitere Informationen hierzu finden Sie im Abschnitt [Externes SMPP-Konto erstellen](sms-set-up.md#creating-an-smpp-external-account).
 >
->Sie betrifft die Zertifizierung durch amerikanische Provider bezüglich in den USA zu versendender Marketing-Kampagnen. Insbesondere müssen diese SMS dem Abonnenten, der ein entsprechendes Schlüsselwort gesendet hat, unverzüglich zugestellt werden.
+>Es ist Teil des Zertifizierungsprozesses, der von amerikanischen Betreibern für Marketingkampagnen in den USA durchgeführt wird. Diese Antworten auf Abonnenten-SMS-Nachrichten, die das Keyword enthalten, müssen sofort nach Erhalt einer Nachricht von ihnen an den Abonnenten zurückgesendet werden.
 
 1. Erstellen Sie eine XML-Datei nach folgendem Muster:
 
@@ -165,6 +165,6 @@ Der Absendername für diese Art von Nachrichten besteht aus einer kurzen Nummer 
 
 >[!IMPORTANT]
 >
->Für diese Arten von Benachrichtigungen wird kein Verlauf erstellt. Sie sind also nicht im Versand-Dashboard enthalten. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}.
+>Diese Arten von automatischen Nachrichten behalten keinen Verlauf. Daher werden sie nicht im Versand-Dashboard angezeigt. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}.
 >
 >Diese Nachrichten werden in den kommerziellen Druckregeln nicht berücksichtigt. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/pressure-rules.html?lang=de){target="_blank"}.

@@ -6,9 +6,9 @@ feature: SMS, Troubleshooting
 role: User
 exl-id: 841f0c2f-90ef-4db0-860a-75fc7c48804a
 source-git-commit: f660dcbb111e73f12737d96ebf9be2aeccbca8ee
-workflow-type: ht
-source-wordcount: '3044'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '3072'
+ht-degree: 96%
 
 ---
 
@@ -96,7 +96,7 @@ Eine Verbindung wird als instabil angesehen, wenn eine der folgenden Situationen
 
 * Das `enquire_link`-Zeitlimit wird entweder auf der Adobe Campaign-Seite oder auf der Provider-Seite überschritten. In diesem Fall wird möglicherweise `ENQUIRE_LINK_RESP` mit einem Fehler-Code ungleich Null angezeigt.
 
-* Es gibt viele `BIND PDU`s. Abhängig von der Anzahl der Verbindungen sollten an einem Tag nicht mehr als ein paar vorhanden sein. Mehr als 1 BIND PDU pro Stunde ist alarmierend.
+* Es gibt viele `BIND PDU`. Abhängig von der Anzahl der Verbindungen sollten an einem Tag nicht mehr als ein paar Verbindungen vorhanden sein. Mehr als 1 BIND PDU pro Stunde ist alarmierend.
 
 Beheben von Problemen mit der Verbindungsstabilität:
 
@@ -178,7 +178,7 @@ Wenn Sie alle Probleme behoben haben, die Puffer des Providers jedoch noch einig
 
 ## Problem bei der Versandvorbereitung, die Empfänger unter Quarantäne nicht ausschließt (durch die automatische Antwortfunktion in Quarantäne gestellt) {#issue-delivery-preparation}
 
-* Überprüfen Sie, ob die Telefonnummern in der Quarantänetabelle und im Versand-Log im exakt gleichen Format vorliegen. Ist dies nicht der Fall, gehen Sie zu diesem [Abschnitt](sms-protocol.md#automatic-reply), wenn Sie Probleme mit dem &quot;+&quot;-Präfix des internationalen Telefonnummernformats haben.
+* Überprüfen Sie, ob das Telefonnummernformat in der Quarantänetabelle und im Versandlog genau identisch sind. Ist dies nicht der Fall, gehen Sie zu diesem [Abschnitt](sms-protocol.md#automatic-reply), wenn Sie Probleme mit dem &quot;+&quot;-Präfix des internationalen Telefonnummernformats haben.
 
 * Prüfen Sie die Kurzwahlnummern. Es kann zu Ausschlüssen kommen, wenn die Kurzwahlnummer des Empfängers entweder dieselbe ist, wie im externen Konto definiert, oder wenn sie leer ist (leer = beliebige Kurzwahlnummer). Wenn nur eine Kurzwahlnummer für die gesamte Adobe Campaign-Instanz verwendet wird, ist es einfacher, alle Felder mit **Kurzwahlnummern** leer zu lassen.
 
@@ -315,14 +315,14 @@ Vier geöffnete Verbindungen für den SMS-Prozess und zwei pro untergeordnetem M
 
 Um die Unterschiede zwischen den Status **Gesendet**, **Dem Dienstleister übermittelt** und **Auf Mobiltelefon erhalten** zu verstehen, siehe die detaillierten Definitionen unten:
 
-* **Auf Mobiltelefon erhalten**:
-Die Nachricht wurde erfolgreich an das Gerät der oder des Benutzenden zugestellt, was sowohl durch den Versandstatus „Mobile Terminated“ (MT) als auch durch einen Statusbericht (SR) bestätigt wird.
+* **Auf Mobilgerät erhalten**:
+Die Nachricht wurde erfolgreich an das Gerät des Benutzers gesendet. Die Bestätigung wurde sowohl vom Versand über Mobilgerät (MT) als auch von einem Statusbericht (SR) bereitgestellt.
 
 * **Gesendet**:
-Die Nachricht wurde erfolgreich durch den Schritt „Mobile Terminated“ (MT) verarbeitet, aber ein Statusbericht (SR), der den Versand an das Mobilgerät bestätigt, wurde noch nicht empfangen.
+Die Nachricht wurde erfolgreich über den Schritt Mobilgerät beendet (MT) verarbeitet, aber es wurde noch kein Statusbericht (SR) empfangen, der den Versand an das Mobilgerät bestätigt.
 
-* **Dem Dienstleister übermittelt**:
-Die Nachricht wurde mit dem `SUBMIT_SM command` an den Dienstleister gesendet, aber es wurde noch keine `SUBMIT_SM_RESP`-Bestätigung vom Dienstleister empfangen.
+* **An den Provider gesendet**:
+Die Nachricht wurde über den `SUBMIT_SM command` an den Provider gesendet, es wurde jedoch keine `SUBMIT_SM_RESP` vom Provider empfangen.
 
 Nachrichten können im Status **Gesendet** verbleiben, da die Transition zu **Empfangen** von einem Statusbericht (SR) vom Gerät der oder des Benutzenden abhängt. Wenn die oder der Benutzende schlechten Mobilfunkempfang oder andere Verbindungsprobleme hat, kann es sein, dass sie bzw. er die Nachricht nicht sofort erhält. In solchen Fällen liegt es in der Verantwortung des Dienstleisters, den Versand zu wiederholen oder zu erklären, warum kein SR generiert wurde. Stellt der Dienstleister Unstimmigkeiten fest, muss er sicherstellen, dass das Verhalten von Campaign den Erwartungen entsprach.
 

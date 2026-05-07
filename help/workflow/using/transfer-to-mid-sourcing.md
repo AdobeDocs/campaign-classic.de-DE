@@ -6,8 +6,8 @@ hide: true
 feature: Workflows
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '107'
-ht-degree: 100%
+source-wordcount: '115'
+ht-degree: 78%
 
 ---
 
@@ -28,7 +28,7 @@ Die folgenden Workflows werden standardmäßig mit dem Modul **Sendung an Mid-So
   <tr> 
    <td> <span class="uicontrol">Mid-Sourcing (Versandzähler)</span> <br /> </td> 
    <td> <span class="uicontrol">defaultMidSourcingDlv</span> <br /> </td> 
-   <td> <p>Dieser Workflow ruft Informationen bezüglich der Zählung von Sendungen vom Mid-Sourcing-Server ab. Zu diesen Informationen gehören allgemeine Versandindikatoren wie etwa die Anzahl der Sendungen.</p> <p>Trackinginformationen wie Öffnungen sind nicht enthalten.</p> <p>Dieser Workflow wird standardmäßig alle zehn Minuten gestartet.</p> </td> 
+   <td> <p>Dieser Workflow erfasst Zählinformationen für Sendungen auf dem Mid-Sourcing-Server. Zu den Zählungsinformationen gehören allgemeine Versandindikatoren wie die Anzahl der gesendeten Sendungen usw.</p> <p>Trackinginformationen wie Öffnungen sind nicht enthalten.</p> <p>Dieser Workflow wird standardmäßig alle zehn Minuten gestartet.</p> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Mid-Sourcing (Versandlogs)</span> <br /> </td> 

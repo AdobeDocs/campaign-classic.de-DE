@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: ht
-source-wordcount: '2226'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '2269'
+ht-degree: 97%
 
 ---
 
@@ -41,7 +41,7 @@ Die globalen Auswirkungen auf die Datenbank und Infrastruktur sind nachstehend a
 
 * **Gibt es Unterschiede in der Größe des Pakets zwischen dem alten Rechenzentrum und der Public Cloud?**
 
-  Wir stellen in der Public Cloud (AWS) neue Paketdefinitionen bereit, die auf der aktuellen Datenbankgröße, der Festplattengröße usw. basieren. Wenn beispielsweise ein Kunde in alten Rechenzentren genau einen Anwendungs-Sserver hat, kann er je nach Paketdefinitionen zwei Anwendungs-Server in der Public Cloud (AWS) verwenden.
+  Wir stellen in der Public Cloud (AWS) neue Paketdefinitionen bereit, die auf der aktuellen Datenbankgröße, der Festplattengröße usw. basieren. Wenn beispielsweise ein Kunde in alten Rechenzentren über einen Anwendungs-Server verfügt, kann er je nach Paketdefinitionen über zwei Anwendungs-Server in der Public Cloud (AWS) verfügen.
 
 * **Wird sich die Build-Nummer oder die Campaign-Version ändern?**
 
@@ -97,7 +97,7 @@ Die globalen Auswirkungen auf IPs, Blockierungsliste, Subdomains und URLs sind u
 
   Zunächst prüft das Adobe-Zustellbarkeits-Team den Zustellbarkeitsstatus der Plattform und empfiehlt einen Plan für den Wechsel zu den neuen IPs.
 
-  Nach der Migration ist kein Warm-up erforderlich. Sollte jedoch in Ausnahmefällen ein Warm-up nötig sein, nimmt die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/de?support-solution=Campaign&lang=de#support) Kontakt zu den jeweiligen Kunden auf.
+  Nach der Migration ist kein Warm-up erforderlich. Sollte jedoch in Ausnahmefällen ein Warm-up nötig sein, nimmt die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/de?support-solution=Campaign#support) Kontakt zu den jeweiligen Kunden auf.
 
   Es ist jedoch geplant, diesen Vorgang für Ihr Unternehmen transparent zu gestalten, anders als beim während des Go-Live erfolgten ursprünglichen Ramp-up.
 
@@ -125,7 +125,7 @@ Die Migration zur Public Cloud beinhaltet neue IPs für Adobe Campaign-Anwendu
 
 Betrachten wir die beiden Fälle:
 
-* Eingehender Traffic: Die gesamte Netzwerkaktivität, die von Ihren Systemen oder Drittanbietern an Adobe Campaign-Servern initiiert wird. Die Konfiguration wird von Adobe vorgenommen und dann während der Migration von der bestehenden Cloud in die Public Cloud kopiert. Die Konnektivität für eingehenden Traffic bleibt dann wie nach der Migration erhalten und es werden keine Maßnahmen seitens des Kunden erwartet. 
+* Eingehender Traffic: Die gesamte Netzwerkaktivität, die von Ihren Systemen oder Drittanbietern an Adobe Campaign-Servern initiiert wird. Die Konfiguration wird von Adobe vorgenommen und dann während der Migration von der bestehenden Cloud in die Public Cloud kopiert. Die Konnektivität für eingehenden Traffic bleibt dann wie nach der Migration erhalten und es werden keine Maßnahmen seitens des Kunden erwartet.
 
 * Ausgehender Traffic: Die gesamte Netzwerkaktivität, die von Adobe Campaign-Servern an Ihr Informationssystem oder Drittanbieter initiiert wird (z. B. SMS-Anbieter). Je nach den in Ihrem Unternehmen geltenden Sicherheitsrichtlinien kann das Ändern von IP-Adressen einen Zulassungslisten-Vorgang Ihres Informationssystems oder eines anderen Dritten erforderlich machen.
 

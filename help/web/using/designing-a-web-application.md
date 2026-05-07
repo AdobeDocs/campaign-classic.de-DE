@@ -6,9 +6,9 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Web Apps
 exl-id: dcdf6afc-321e-4027-a350-fff6bbf22e71
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: ht
-source-wordcount: '299'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '309'
+ht-degree: 80%
 
 ---
 
@@ -24,7 +24,7 @@ Web-Anwendungen werden nach dem gleichen Prinzip wie [Web-Formulare](about-web-f
 
 ## Grafiken in eine Web-Anwendung einfügen {#inserting-charts-in-a-web-application}
 
-Sie können Grafiken in Webanwendungen einfügen. Verwenden Sie dazu die Grafiken-Dropdown-Liste in der Symbolleiste und wählen Sie die Art der einzufügenden Grafik aus.
+Sie können Diagramme in Web-Anwendungen einbeziehen. Verwenden Sie dazu die Dropdown-Liste der Diagramme in der Taskleiste, um den Typ des einzufügenden Diagramms auszuwählen.
 
 ![](assets/s_ncs_admin_webapps_bar_graph.png)
 
@@ -56,7 +56,7 @@ Webanwendungen mit Bearbeitungsformularen für ein Extranet besitzen folgende Me
 
 * Eine Option zum Vorausfüllen
 
-  In den meisten Fällen müssen die Daten, die angezeigt werden sollen, vorausgefüllt werden. Da sich die Benutzer, die auf diese Formulare zugreifen, über eine Zugriffskontrolle identifizieren müssen, muss das Vorausfüllen nicht unbedingt verschlüsselt erfolgen.
+  In den meisten Fällen müssen die anzuzeigenden Daten vorgeladen werden. Da die Benutzer, die auf diese Formulare zugreifen, (über eine Zugriffssteuerung) identifiziert werden, ist das Vorabladen nicht unbedingt verschlüsselt.
 
 * Eine Option zum Speichern
 * Eine Option zum Hinzufügen von Seiten

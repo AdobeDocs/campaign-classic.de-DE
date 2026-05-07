@@ -8,8 +8,8 @@ level: Beginner
 exl-id: a06b1365-d487-4df1-8f4a-7268b871a427
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '615'
-ht-degree: 1%
+source-wordcount: '637'
+ht-degree: 3%
 
 ---
 
@@ -50,7 +50,7 @@ Bevor Sie als On-Premise-Kunde mit der Bereitstellung von Campaign Classic begin
 * Weitere Informationen zu Empfehlungen zu Datenbank-Engines [in diesem Abschnitt](../../installation/using/database.md).
 * Überprüfen Sie, ob die erforderlichen Datenbankzugriffsebenen auf dem Server installiert sind und über das Adobe Campaign-Konto zugänglich sind. [Weitere Informationen](../../installation/using/application-server.md).
 * Konfigurieren Sie Ihre Netzwerke, da einige Prozesse mit anderen kommunizieren oder auf das LAN und das Internet zugreifen müssen. Dies bedeutet, dass einige TCP-Ports für diese Prozesse offen sein müssen. [Weitere Informationen](../../installation/using/network-configuration.md) über die Anforderungen an die Netzwerkkonfiguration.
-* Lesen Sie [Campaign-Sicherheits- und Datenschutz-Checkliste](https://experienceleague.adobe.com/de/docs/campaign-classic/using/installing-campaign-classic/security-privacy/get-started-security-privacy).
+* Lesen Sie [Campaign-Sicherheits- und Datenschutz-Checkliste](https://helpx.adobe.com/de/campaign/kb/acc-security.html).
 * Lesen Sie die allgemeinen Richtlinien für die Schätzung der Hardwareanforderungen für die On-Premise-Bereitstellung [in diesem Artikel](https://helpx.adobe.com/de/campaign/kb/hardware-sizing-guide.html).
 
 ## Hybrid

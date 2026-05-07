@@ -9,8 +9,8 @@ topic-tags: connectors
 exl-id: 8b2a9c73-807a-4936-9fd6-9d26c805a31f
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
-source-wordcount: '371'
-ht-degree: 23%
+source-wordcount: '396'
+ht-degree: 26%
 
 ---
 
@@ -167,7 +167,7 @@ Sie müssen ein [!DNL Vertica Analytics] externes Konto erstellen, um Ihre Campa
 
 Der Connector unterstützt die folgenden Optionen:
 
-| Option | Beschreibung  |
+| Option | Beschreibung |
 |---|---|
-| TimeZoneName | Standardmäßig leer, d. h. die Systemzeitzone des Campaign Classic-App-Servers wird verwendet. Mit der Option können Sie den Sitzungsparameter TIMEZONE erzwingen. |
+| TimeZoneName | Standardmäßig leer, d. h. die Systemzeitzone des Campaign Classic-App-Servers wird verwendet. Mit dieser Option können Sie den Sitzungsparameter TIMEZONE erzwingen. |
 

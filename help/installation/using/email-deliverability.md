@@ -10,8 +10,8 @@ topic-tags: additional-configurations
 exl-id: 515adad2-6129-450a-bb9e-fc80127835af
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '3163'
-ht-degree: 17%
+source-wordcount: '3230'
+ht-degree: 13%
 
 ---
 
@@ -51,7 +51,7 @@ Das **mta**-Modul verteilt Nachrichten an seine untergeordneten **mtachild**-Mod
 Zusammenfassend sind folgende Etappen zu durchlaufen:
 
 1. Der **mta** wählt geeignete Nachrichten aus und weist ihnen ein verfügbares **mtachild** zu.
-1. Der **mtachild** lädt alle zum Erstellen der Nachricht erforderlichen Informationen (Inhalt, Personalisierungselemente, Anhänge, Bilder usw.) und leitet die Nachricht an den **E-Mail-Traffic-Shaper** weiter.
+1. **mtachild** lädt alle zum Erstellen der Nachricht erforderlichen Informationen (Inhalt, Personalisierungselemente, Anhänge, Bilder usw.) und leitet die Nachricht an den **E-Mail Traffic Shaper** weiter.
 1. Sobald der E-Mail-Traffic-Shaper die Autorisierung des Statistikservers (**smtp stat**) erhält, wird die Nachricht an den Empfänger gesendet.
 
 ![](assets/s_ncs_install_email_traffic_shaper.png)
@@ -105,7 +105,7 @@ Wenn eine Nachricht gesendet wird, gibt es drei mögliche Ergebnisse:
 
 Abgebrochene Nachrichten werden an den **mta** zurückgegeben und werden nicht mehr vom **mtachild** verwaltet.
 
-Der **mta** entscheidet über das Verfahren für diese Nachricht (Wiederherstellung, Verlassen, Quarantäne usw.) je nach Antwort-Code und Regeln.
+Der **mta** entscheidet über das Verfahren für diese Nachricht (Wiederherstellung, Verlassen, Quarantäne usw.) abhängig vom Antwort-Code und den Regeln.
 
 ### Nachricht ausstehend {#message-pending}
 
@@ -147,11 +147,11 @@ MX-Regeln (Mail eXchanger) dienen zur Verwaltung der Kommunikation zwischen eine
 
 Diese Regeln werden jeden Morgen um 6 Uhr (Serverzeit) automatisch neu geladen, um die Client-Instanz regelmäßig bereitzustellen.
 
-Je nach Materialkapazitäten und internen Richtlinien akzeptieren ISP eine vordefinierte Anzahl an Verbindungen und Nachrichten pro Stunde. Diese Variablen können unter Umständen automatisch durch ISP-Systeme abgeändert werden, was von der Reputation der IP- und Sender-Domain abhängt. Über die Zustellbarkeitsplattform werden in Adobe Campaign pro ISP mehr als 150 spezifische Regeln und zusätzlich eine allgemeine Regel für andere Domains verwaltet.
+Abhängig von den materiellen Kapazitäten und der internen Richtlinie akzeptiert ein ISP eine vordefinierte Anzahl von Verbindungen und Nachrichten pro Stunde. Diese Variablen können vom ISP-System abhängig von der Reputation der IP-Adresse und der sendenden Domain automatisch geändert werden. Über die Zustellbarkeitsplattform verwaltet Adobe Campaign mehr als 150 spezifische Regeln durch den ISP sowie eine generische Regel für andere Domains.
 
 Die maximale Verbindungsanzahl hängt nicht ausschließlich von der Anzahl der durch den MTA verwendeten öffentlichen IP-Adressen ab.
 
-Wenn Sie z. B. fünf Verbindungen in den MX-Regeln festgelegt und zwei öffentliche IPs konfiguriert haben, könnte man annehmen, dass Sie für diese Domain nicht mehr als zehn Verbindungen gleichzeitig geöffnet haben können. Dem ist aber nicht so, tatsächlich bezieht sich die maximale Verbindungsanzahl auf einen Pfad, der eine Kombination aus einer unserer öffentlichen MTA-IPs und einer öffentlichen IP des Client-MTAs darstellt.
+Wenn Sie z. B. 5 Verbindungen in den MX-Regeln zugelassen und 2 öffentliche IPs konfiguriert haben, kann es vorkommen, dass nicht mehr als 10 Verbindungen gleichzeitig in dieser Domain geöffnet werden können. Dies stimmt nicht, tatsächlich bezieht sich die maximale Anzahl von Verbindungen auf einen Pfad und einen Pfad, der eine Kombination aus einer unserer öffentlichen MTA-IPs und einer öffentlichen IP des MTA des Kunden ist.
 
 Im folgenden Beispiel hat der Benutzer zwei konfigurierte öffentliche IP-Adressen und yahoo.com als Domain.
 
@@ -162,7 +162,7 @@ user:~ user$ host -t mx yahoo.com
                 yahoo.com mail is handled by 1 mta7.am0.yahoodns.net.
 ```
 
-Aus den MX-Einträgen von yahoo.com geht hervor, dass yahoo.com drei Mail Exchanger aufweist. Um eine Verbindung zum Client-MX (Peer-MX) herzustellen, fragt der MTA dessen IP-Adresse im DNS ab.
+MX-Einträge für yahoo.com sagen uns, dass yahoo.com 3 Mail-Austauscher hat. Um den Peer Mail Exchanger zu verbinden, fordert der MTA seine IP-Adresse vom DNS an.
 
 ```
 user:~ user$ host -t a mta5.am0.yahoodns.net
@@ -194,7 +194,7 @@ user:~ user$ host -t a mta6.am0.yahoodns.net
 
 4 dieser 8 IP-Adressen werden bereits im MTA5 verwendet (98.136.216.26, 98.138.112.38, 63.250.192.46 und 98.136.217.203). Mit diesem Eintrag kann der Benutzer vier neue IP-Adressen verwenden. Der dritte MX-Eintrag tut dasselbe.
 
-Insgesamt stehen dem Benutzer sechzehn Remote-IP-Adressen zur Verfügung. In Kombination mit den zwei lokalen öffentlichen IPs stehen zweiunddreißig Pfade zum Erreichen der E-Mail-Server von yahoo.com zur Verfügung.
+Insgesamt haben wir 16 Remote-IP-Adressen. In Kombination mit unseren 2 lokalen öffentlichen IPs haben wir 32 Pfade, um yahoo.com Mailserver zu erreichen.
 
 >[!NOTE]
 >
@@ -231,7 +231,7 @@ Um die Konfiguration neu zu laden, ohne den Statistikserver neu zu starten, verw
 
 >[!NOTE]
 >
->Diese Befehlszeile ist **nlserver restart** vorzuziehen. Sie beugt dem Verlust vor dem Neustart abgerufener statistischer Daten vor und verhindert Spitzenbelastungszeiten, die im Widerspruch zu den in den MX-Regeln definierten Kontingenten stehen können.
+>Diese Befehlszeile wird gegenüber &quot;**Neustart“**. Es verhindert, dass vor dem Neustart erfasste Statistiken verloren gehen, und vermeidet Spitzen bei der Verwendung, die sich gegen in den MX-Regeln definierte Kontingente richten können.
 
 ### MX-Regeln konfigurieren {#configuring-mx-rules}
 
@@ -395,14 +395,14 @@ Die Parameter lauten wie folgt:
 
 Im vorherigen Beispiel werden die Adressen unter normalen Bedingungen wie folgt verteilt:
 
-* „1“: 5 / (5+5+1) = 45 %
-* „2“: 5 / (5+5+1) = 45 %
-* „3“: 1 / (5+5+1) = 10%
+* &quot;1&quot;: 5 / (5+5+1) = 45%
+* &quot;2&quot;: 5 / (5+5+1) = 45%
+* &quot;3&quot;: 1 / (5+5+1) = 10%
 
 Wenn beispielsweise die erste Adresse nicht für eine bestimmte MX verwendet werden kann, werden Nachrichten wie folgt gesendet:
 
-* „2“: 5 / (5+1) = 83%
-* „3“: 1 / (5+1) = 17%
+* &quot;2&quot;: 5 / (5+1) = 83%
+* &quot;3&quot;: 1 / (5+1) = 17%
 
 * **includeDomains**: Hiermit können Sie diese IP-Adresse für E-Mails reservieren, die zu einer bestimmten Domain gehören. Dies ist eine Liste von Masken, die einen oder mehrere Platzhalter (&#39;&#42;&#39;) enthalten können. Wenn das Attribut nicht angegeben ist, können alle Domains diese IP-Adresse verwenden.
 

@@ -7,8 +7,8 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 exl-id: 8b51d0fc-1692-41cd-9aa8-3bb8f4ee454e
 source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 100%
+source-wordcount: '639'
+ht-degree: 95%
 
 ---
 
@@ -100,7 +100,7 @@ Mit **[!UICONTROL Antwort-HTTP-Headers]** können Sie Clickjacking verhindern, w
 
 ## Variablen hinzufügen {#adding-variables}
 
-Der Tab **[!UICONTROL Variablen]** enthält die Liste der im Bericht konfigurierten Variablen. Diese werden im Kontext des Berichts aufgeführt und können in den Berechnungen verwendet werden.
+Die **[!UICONTROL Variablen]** enthält die Liste der im Bericht konfigurierten Variablen. Diese Variablen werden im Kontext des Berichts bereitgestellt und können in Berechnungen verwendet werden.
 
 Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**, um eine neue Variable zu erstellen.
 

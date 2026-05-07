@@ -6,9 +6,9 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Surveys
 exl-id: bd94c41a-813a-4ddb-a2bd-c3deab022482
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: ht
-source-wordcount: '635'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '644'
+ht-degree: 66%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 
 
-In diesem Beispiel soll den in der Datenbank befindlichen Empfängern ein Gewinnspiel angeboten werden. Das Webformular soll einen Bereich zur Eingabe der Antworten besitzen und einen anderen zur Eingabe der E-Mail-Adresse eines Freundes.
+In diesem Beispiel möchten wir den Empfängern in der Datenbank einen Wettbewerb anbieten. Das Web-Formular enthält einen Abschnitt für die Eingabe von Antworten und einen weiteren für den Verweis auf einen Freund durch Eingabe seiner E-Mail-Adresse.
 
 ![](assets/s_ncs_admin_survey_viral_sample_0.png)
 
@@ -28,7 +28,7 @@ Um den Freunde-Werben-Bereich zu konfigurieren und zu erstellen, gehen Sie folge
 
    ![](assets/s_ncs_admin_survey_viral_sample_2.png)
 
-   Im Feld **Ihre Nachricht** kann der Werber eine Nachricht für den Angeworbenen eingeben. Der Werber muss auch seinen **Nachnamen**, **Vornamen** und seine **E-Mail-Adresse** eingeben.
+   Im **Ihre Nachricht** können Sie eine Nachricht für den Schiedsrichter eingeben. Der Referrer muss auch seinen **Nachnamen**, **Vornamen** und **E-Mail** eingeben.
 
    Die in den Feldern eingegebenen Informationen werden in einer speziellen Tabelle, der Besuchertabelle, gespeichert.
 
@@ -36,7 +36,7 @@ Um den Freunde-Werben-Bereich zu konfigurieren und zu erstellen, gehen Sie folge
    >
    >Solange der Angeworbene noch nicht sein Einverständnis gegeben hat, können Sie ihn nicht gemeinsam mit den Werbern in der Datenbank speichern. Er wird deshalb vorübergehend in der **Besuchertabelle** (**nms:visitor**) gespeichert, die für virale Marketing-Kampagnen verwendet wird. Diese Tabelle wird regelmäßig durch **Bereinigungsprozesse** geleert.
    >
-   >In diesem Beispiel möchten wir Angeworbene dazu bewegen, an dem von den Werbern empfohlenen Gewinnspiel teilzunehmen. Zusätzlich möchten wir ihnen ein Abonnement für eines unserer Informationsdienste anbieten. Wenn sie sich dazu anmelden, können sie in der Datenbank gespeichert werden.
+   >In diesem Beispiel möchten wir Empfängerinnen und Empfänger ansprechen, damit sie an dem von ihrem Referrer empfohlenen Wettbewerb teilnehmen. In dieser Nachricht möchten wir ihnen jedoch auch ein Abonnement für einen unserer Informationsdienste anbieten. Wenn sie sich anmelden, können sie in der Datenbank gespeichert werden.
 
    ![](assets/s_ncs_admin_survey_viral_sample_5.png)
 
@@ -56,7 +56,7 @@ Um den Freunde-Werben-Bereich zu konfigurieren und zu erstellen, gehen Sie folge
    ctx.recipient.visitor.@referrerLastName = ctx.recipient.@lastName
    ```
 
-   Der Nachname, der Vorname und die E-Mail-Adresse, die in den Identifizierungsbereich der Seite eingegeben werden, werden als Nachname, Vorname und E-Mail-Adresse des Werbers identifiziert. Diese Felder werden schließlich in den Hauptteil der Nachricht eingefügt, die dem Angeworbenen gesendet werden.
+   Nachname, Vorname und E-Mail-Adresse, die im Seitenidentifizierungsblock eingegeben wurden, werden als Nachname, Vorname und E-Mail-Adresse des Referrers identifiziert. Diese Felder werden erneut in den Nachrichtentext eingefügt, der an den Schiedsrichter gesendet wird.
 
    Der APP5-Wert entspricht dem internen Namen des Webformulars: Mit dieser Information können Sie den Ursprung des Angeworbenen ermitteln, d. h. den Besucher mit dem zu seiner Erstellung verwendeten Webformular verbinden.
 
@@ -76,7 +76,7 @@ Um den Freunde-Werben-Bereich zu konfigurieren und zu erstellen, gehen Sie folge
 
      ![](assets/s_ncs_admin_survey_viral_sample_7b.png)
 
-   * Die Kontaktinformationen des Angeworbenen sowie die Informationen des Werbers werden der Besuchertabelle entnommen. Diese Informationen werden über die Personalisierungs-Schaltfläche eingefügt.
+   * Die Kontaktinformationen des Referrers sowie die Referrer-Informationen werden der Besuchertabelle entnommen. Sie wird mithilfe der Schaltfläche Personalisierung eingefügt.
 
      ![](assets/s_ncs_admin_survey_viral_sample_7a.png)
 
@@ -125,4 +125,4 @@ Um den Freunde-Werben-Bereich zu konfigurieren und zu erstellen, gehen Sie folge
 
    ![](assets/s_ncs_admin_survey_viral_sample_9.png)
 
-   Sein Profil enthält die vom Werber eingegebenen Informationen. Diese werden entsprechend den Konfigurationen des Formularskripts gespeichert. Wenn der Angeworbene den Newsletter abonniert, werden seine Informationen in der Empfängertabelle gespeichert.
+   Ihr Profil enthält die Informationen, die von der verweisenden Stelle eingegeben wurden. Er wird basierend auf den im Formularskript eingegebenen Konfigurationen gespeichert. Wenn sich der Empfänger für den Newsletter entscheidet, wird er in der Empfängertabelle gespeichert.

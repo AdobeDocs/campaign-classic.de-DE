@@ -8,8 +8,8 @@ level: Beginner
 exl-id: 0cd6bf20-da72-4cf0-9f5d-d4e8acdd324d
 source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
-source-wordcount: '2581'
-ht-degree: 97%
+source-wordcount: '2672'
+ht-degree: 96%
 
 ---
 
@@ -49,7 +49,7 @@ _7. September 2021_
 
 * Nach seinem End-of-Life wurde Flash aus allen damit verbundenen Campaign-Funktionen und -Komponenten entfernt und durch HTML5 ersetzt. Der Diagrammtyp **Tacho** wurde entfernt. (NEO-30330) [Mehr dazu](../../reporting/using/creating-a-chart.md)
 * Bei der Installation der Client-Konsole unter Windows überprüft das Installationsprogramm jetzt, ob ein übergeordneter Registrierungsknoten vorhanden ist, und erstellt einen, wenn er fehlt. Dadurch werden potenzielle Probleme beim Starten der Konsole verhindert. (NEO-34854)
-* Die Tracking-Signatur-Funktion wurde verbessert. So sollen Fehler verhindert werden, die in Zusammenhang damit stehen, wie Drittanbieter-Tools (E-Mail-Clients, Internet-Browser) Sonderzeichen verarbeiten. URL-Parameter sind jetzt codiert.
+* Die Tracking-Signaturfunktion wurde verbessert, um Fehler zu vermeiden, die in Zusammenhang mit der Art und Weise stehen, in der Drittanbieter-Tools (E-Mail-Clients, Internet-Browser usw.) Sonderzeichen verarbeiten. URL-Parameter sind jetzt codiert.
 
 **Sonstige Änderungen**
 
@@ -317,4 +317,4 @@ XTK-170024 The temporary 'temp:deliveryEmail-all' schema is not defined in the c
 The maximum number of connections has been reached (50) by connections pool 'nms:extAccount:acsDefaultRelayAccount XXX'. The server is overloaded. Please try again later.
 ```
 
-* Fehlerkorrektur – Beim SMS-Versand tritt jetzt kein Fehler mehr auf, wenn Verbindungsprobleme zwischen Server und Provider bestehen. Zuvor wurde die Verbindung vom untergeordneten MTA-Element automatisch deaktiviert. Adobe Campaign Classic versuchte erst wieder, eine neue Verbindung herzustellen, wenn ein neues untergeordnetes Element gestartet wurde. 
+* Fehlerkorrektur – Beim SMS-Versand tritt jetzt kein Fehler mehr auf, wenn Verbindungsprobleme zwischen Server und Provider bestehen. Zuvor wurde die Verbindung vom untergeordneten MTA-Element automatisch deaktiviert. Adobe Campaign Classic versuchte erst wieder, eine neue Verbindung herzustellen, wenn ein neues untergeordnetes Element gestartet wurde.

@@ -5,9 +5,9 @@ description: Erfahren Sie, wie Sie Ihren Kontakten die besten Angebote auf der G
 feature: Interaction, Offers
 exl-id: 62b8fdcd-8423-496c-8407-ab89a3a70721
 source-git-commit: de9ff0b50d819038c97e8515ddb7d6cfeb4547a1
-workflow-type: ht
-source-wordcount: '268'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '293'
+ht-degree: 46%
 
 ---
 
@@ -15,13 +15,13 @@ ht-degree: 100%
 
 
 
-Interaction ermöglicht es, Kontaktpunkte mit Kunden oder Interessenten in Echtzeit zu nutzen und ihnen auf sie zugeschnittene Angebot zu unterbreiten. Hierbei kann es sich um einfache Informationsnachrichten oder um Sonder- oder Serviceangebote handeln.
+Interaction ermöglicht es Ihnen, während einer Interaktion mit einem bestimmten Kontakt (einem Kunden oder einer Zielgruppe) in Echtzeit zu reagieren, indem Sie ihm ein oder mehrere angepasste Angebote unterbreiten. Dabei kann es sich beispielsweise um einfache Kommunikationsnachrichten, Sonderangebote für ein oder mehrere Produkte oder einen Service handeln.
 
 Angebote können sowohl bei eingehenden Kontakten (über eine Website, einen Anruf im Callcenter) als auch ausgehenden Kontakten (E-Mail-, Briefpost- oder SMS-Versand im Rahmen einer Marketing-Kampagne) unterbreitet werden.
 
-Konkret geschieht dies über die Erstellung eines Angebotskatalogs, aus dem bei Inbound- oder Outbound-Kontakten das im aktuellen Kontext beste Angebot für den Kunden oder Interessenten ausgewählt wird. Dabei stellen Eignungsregeln sicher, dass ein Angebot wirklich auf den jeweiligen Empfänger zugeschnitten ist. Darüber hinaus ermöglichen Prioritätsregeln die Auswahl des besten Angebots aus einer Reihe von geeigneten Angeboten. Unterbreitungsregeln schließlich berücksichtigen vorhergehende Interaktionen mit einem Kontakt, damit bereits unterbreitete Angebote nicht erneut vorgeschlagen werden.
+Sie können einen Angebotskatalog erstellen, der mit eingehenden und ausgehenden Kanälen verbunden ist, um das beste Angebot auszuwählen, das einem Kontakt in einem bestimmten Kontext gesendet werden soll. Die Angebotsrelevanz für einen Empfänger wird anhand von Eignungsregeln definiert. Die Auswahl eines Angebots aus einem Paket relevanter Angebote wird mithilfe von Prioritätsregeln bestimmt. Die Regeln zur Angebotsunterbreitung berücksichtigen den Austauschverlauf des Kontakts und helfen zu vermeiden, dass der Kontakt nicht mehrmals dasselbe Angebot erhält.
 
-Neben der Verwaltung des Angebotskatalogs bietet Interaction die Möglichkeit, Eignungsregeln und ihnen zugeordnete Anwendungsthemen zu definieren. Der Inhalt der Angebote kann je nach Kanal mithilfe der verschiedenen Darstellungen personalisiert werden. Das Simulationsmodul erlaubt es Ihnen zudem, vor Unterbreitung eines Angebots seine voraussichtliche Wirkung einzuschätzen.
+Interaction ermöglicht Ihnen die Erstellung und Verwaltung eines Angebotskatalogs sowie die Konfiguration der Eignungsregeln und der mit ihnen verknüpften Anwendungsthemen. Je nach ausgewähltem Kanal kann der Angebotsinhalt mithilfe verschiedener Rendering-Funktionen personalisiert werden. Schließlich können Sie das Simulationsmodul verwenden, um die Wirkung einer Angebotsunterbreitung zu berechnen.
 
 ![](assets/Offermgt2.png)
 

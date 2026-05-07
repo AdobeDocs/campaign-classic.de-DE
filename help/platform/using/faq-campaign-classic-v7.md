@@ -6,10 +6,11 @@ feature: Overview, Troubleshooting
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-source-git-commit: 8d9bb9d2ff4450646bbf218804b8c8b4459b5a91
+exl-id: 89356b5a-d99c-43d1-892b-5a1d003e76cc
+source-git-commit: c1796e5f827b79f72a07eb07886d345d3b897f86
 workflow-type: tm+mt
-source-wordcount: '1350'
-ht-degree: 81%
+source-wordcount: '1522'
+ht-degree: 80%
 
 ---
 
@@ -29,7 +30,7 @@ Hier finden Sie Antworten auf Fragen zu Hosting-Modellen, Bereitstellungsuntersc
 
 Adobe Campaign Classic v7 bietet drei Bereitstellungsmodelle:
 
-* **Gehostet (Managed Services)**: Vollständig von Adobe auf Adobe-Infrastruktur verwaltet 
+* **Gehostet (Managed Services)**: Vollständig von Adobe auf Adobe-Infrastruktur verwaltet
 * **On-Premise**: In Ihrer eigenen Infrastruktur installiert und verwaltet
 * **Hybrid**: Mid-Sourcing-Architektur mit einer Mischung aus Cloud- und On-Premise-Komponenten
 
@@ -41,7 +42,7 @@ Jedes Bereitstellungsmodell verfügt über verschiedene Funktionen und Managemen
 
 +++
 
-+++ Was sind die Unterschiede zwischen der On-Premise- und der gehosteten Version? {#what-are-the-differences-when-working-on-premise-vs-in-a-hosted-environment}
++++ Was sind die Unterschiede zwischen der On-Premise- und der gehosteten Umgebung? {#what-are-the-differences-when-working-on-premise-vs-in-a-hosted-environment}
 
 Adobe Campaign Classic v7 verfügt über eine Reihe von Modulen und Optionen. Die Verfügbarkeit dieser Module und ihre Konfiguration können von der [Art der Bereitstellung](../../installation/using/hosting-models.md) Ihrer Installation abhängen: gehostet (Managed Services), hybrid oder On-Premise.
 
@@ -94,8 +95,8 @@ Campaign v8 ist die strategische Plattform von Adobe, die sich ideal für Untern
 
 Mehr dazu:
 
-* [Campaign v8 – Überblick](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html?lang=de){target="_blank"}
-* [Wechseln von Campaign Classic v7 zu v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/v7-to-v8.html?lang=de){target="_blank"}
+* [Übersicht über Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html?lang=de){target="_blank"}
+* [Wechsel von Campaign Classic v7 zu v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/v7-to-v8.html?lang=de){target="_blank"}
 * [Ausführliche Sammlung häufig gestellter Fragen zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html?lang=de){target="_blank"}
 
 **Ausführliche Antworten auf häufig gestellte Fragen zu Campaign bezüglich Workflows, Sendungen, Zielgruppen, Berichten, Personalisierung und mehr** finden Sie in der [ausführlichen Sammlung häufig gestellter Fragen zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html?lang=de){target="_blank"}.

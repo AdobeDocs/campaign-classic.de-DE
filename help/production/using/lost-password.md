@@ -10,8 +10,8 @@ topic-tags: troubleshooting
 exl-id: 064eb41f-6685-4ac1-adc5-40f9d5a2f96d
 source-git-commit: 8aceafa362b80f6e34edfd91a71551a58501a3d0
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 12%
+source-wordcount: '255'
+ht-degree: 21%
 
 ---
 
@@ -33,7 +33,7 @@ Wenn ein Adobe Campaign-Benutzer sein Kennwort verliert, können Sie es ändern.
 
 >[!NOTE]
 >
->Dieses Verfahren gilt nur für Benutzer, die eine Verbindung zu Campaign mit nativer Authentifizierung herstellen. Informationen zur Adobe IMS-Authentifizierung finden Sie [dieser Dokumentation](https://helpx.adobe.com/ie/manage-account/using/change-or-reset-password.html){target="_blank"}.
+>Dieses Verfahren gilt nur für Benutzer, die eine Verbindung zu Campaign mit nativer Authentifizierung herstellen. Informationen zur Adobe IMS-Authentifizierung finden Sie in [dieser Dokumentation](https://helpx.adobe.com/ie/manage-account/using/change-or-reset-password.html){target="_blank"}.
 
 Gehen Sie wie folgt vor, um ein Campaign-Kennwort zurückzusetzen:
 

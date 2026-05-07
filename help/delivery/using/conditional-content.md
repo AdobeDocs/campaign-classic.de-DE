@@ -9,14 +9,14 @@ hide: true
 exl-id: 12595ee4-6a52-4e06-b80d-85fe633a5a11
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '509'
-ht-degree: 100%
+source-wordcount: '517'
+ht-degree: 88%
 
 ---
 
 # Bedingter Inhalt{#conditional-content}
 
-Die Konfiguration bedingter Inhalte erlaubt eine dynamische Personalisierung, beispielsweise auf der Basis des Empfängerprofils. Dabei werden Textbausteine und/oder Bilder ersetzt, wenn eine bestimmte Bedingung erfüllt ist.
+Durch die Konfiguration bedingter Inhalte können Sie beispielsweise eine dynamische Personalisierung erstellen, die auf dem Empfängerprofil basiert. Textblöcke und/oder Bilder werden ersetzt, wenn eine bestimmte Bedingung erfüllt ist.
 
 ![](assets/do-not-localize/how-to-video.png) [Mehr zu dieser Funktion erfahren Sie im Video.](#conditionnal-content-video).
 
@@ -25,7 +25,7 @@ Die Konfiguration bedingter Inhalte erlaubt eine dynamische Personalisierung, be
 
 Im folgenden Beispiel erfahren Sie, wie Sie eine Nachricht erstellen und entsprechend dem Geschlecht und den Interessen des Empfängers dynamisch personalisieren können.
 
-* Anzeige von „Herr“ oder „Frau“ entsprechend dem Wert im Feld **[!UICONTROL Geschlecht]** der Datenquelle (männlich bzw. weiblich).
+* Anzeige von „Mr.“ oder „ms.“ entsprechend dem Wert im Feld **[!UICONTROL Geschlecht]** der Datenquelle (männlich bzw. weiblich).
 * Individuell auf den Empfänger zugeschnittene Zusammenstellung eines Newsletters oder eines Angebots in Abhängigkeit von seinen angegebenen oder erkannten Interessen:
 
    * Interessen 1 -- > Baustein 1
@@ -39,7 +39,7 @@ Gehen Sie wie folgt vor, um einen von einem Feldwert abhängigen bedingten Inhal
 
    ![](assets/s_ncs_user_conditional_content02.png)
 
-   Die Personalisierungselemente werden in den Nachrichten-Textkörper eingefügt.
+   Die Personalisierungselemente werden in den Nachrichtentext eingefügt. Jetzt müssen Sie sie konfigurieren.
 
 1. Konfigurieren Sie nun den **If**-Ausdruck.
 
@@ -50,7 +50,7 @@ Gehen Sie wie folgt vor, um einen von einem Feldwert abhängigen bedingten Inhal
      ![](assets/s_ncs_user_conditional_content03.png)
 
    * Ersetzen Sie **`<value>`** durch den Wert des Feldes, für das die Bedingung erfüllt wird. Dieser Wert muss in Anführungszeichen gesetzt werden.
-   * Fügen Sie anschließend den Inhalt ein, der bei Erfüllung der Bedingung für den Versand genutzt werden soll. Hierbei kann es sich um einen Text, ein Bild, ein Formular, einen Link usw. handeln.
+   * Geben Sie den Inhalt an, der eingefügt werden soll, wenn die Bedingung erfüllt ist. Diese kann aus Text, einem Bild, einem Formular, einem Hypertext-Link usw. bestehen.
 
      ![](assets/s_ncs_user_conditional_content04.png)
 

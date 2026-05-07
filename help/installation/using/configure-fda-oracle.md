@@ -9,8 +9,8 @@ topic-tags: connectors
 exl-id: 320bfbb4-533b-4c45-a46f-c3c8dd68221f
 source-git-commit: f032ed3bdc0b402c8281bc34e6cb29f3c575aaf9
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 70%
+source-wordcount: '363'
+ht-degree: 58%
 
 ---
 
@@ -44,7 +44,7 @@ Die Verbindung zu einer externen Oracle-Datenbank über die FDA-Option erfordert
 
    >[!NOTE]
    >
-   >Diese Werte (vor allem ORACLE_HOME) hängen von Ihren Installationsverzeichnissen ab. Prüfen Sie Ihren Navigationsbaums, bevor Sie diese Werte referenzieren.
+   >Diese Werte (insbesondere ORACLE_HOME) hängen von den Installations-Repositorys ab. Stellen Sie sicher, dass Sie Ihre Baumstruktur überprüfen, bevor Sie auf diese Werte verweisen.
 
 1. Installieren Sie die für Oracle nötigen Bibliotheken:
 
@@ -71,9 +71,9 @@ Die Verbindung zu einer externen Oracle-Datenbank über die FDA-Option erfordert
 
 1. Installieren Sie den Oracle-Client.
 
-1. Erstellen Sie im Ordner unter C:\Oracle eine **tnsnames.ora**-Datei, die Ihre TNS-Definition enthält.
+1. Erstellen Sie im Ordner C:Oracle eine Datei **tnsnames.ora**, die Ihre TNS-Definition enthält.
 
-1. Fügen Sie eine TNS_ADMIN-Umgebungsvariable mit C:\Oracle als Wert hinzu und starten Sie das Gerät neu.
+1. Fügen Sie eine Umgebungsvariable TNS_ADMIN mit dem Wert C:Oracle hinzu und starten Sie den Computer neu.
 
 1. In Campaign Classic können Sie dann Ihr externes [!DNL Oracle]-Konto konfigurieren. Weiterführende Informationen zur Konfiguration Ihres externen Kontos finden Sie in [diesem Abschnitt](#oracle-external).
 

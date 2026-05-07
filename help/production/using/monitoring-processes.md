@@ -10,8 +10,8 @@ topic-tags: production-procedures
 exl-id: 1f5d8c7e-6f9b-46cd-a9b4-a3b48afb1794
 source-git-commit: 1be1528d657537786c430ea9c8bdb3aad58ba20d
 workflow-type: tm+mt
-source-wordcount: '3816'
-ht-degree: 1%
+source-wordcount: '3857'
+ht-degree: 2%
 
 ---
 
@@ -34,7 +34,7 @@ Auf der angezeigten Seite können Sie den Status der verbundenen Instanz anzeige
 
 Weitere Möglichkeiten zur Überwachung von Campaign-Prozessen finden Sie auf [dieser Seite](../../production/using/monitoring-guidelines.md).
 
-### Logbuch {#log-journal}
+### Protokoll {#log-journal}
 
 Um das Protokoll anzuzeigen, das mit einem Prozess verbunden ist, klicken Sie auf den Prozess, **mta** und wählen Sie dann **[!UICONTROL Protokoll öffnen]** aus.
 
@@ -281,7 +281,7 @@ Die Liste der Indikatoren für diesen Bericht ist unter dem Diagramm zu sehen.
 
    * Blaue Kurve: Warteschlange aktiver Nachrichten. Diese Nachrichten werden so schnell wie möglich gesendet.
 
-   * Kaki-Kurve: die „verzögerte“ Warteschlange. Diese Nachrichten können derzeit aufgrund von Einschränkungen oder aufgrund fehlender Zielgruppenverbindung nicht zurückgegeben werden. Weitere Zustellversuche erfolgen alle 5 Sekunden, 10 Sekunden, 20 Sekunden, 40 Sekunden, 2 Minuten usw. für die definierte **MaxAgeSec** Zeit vor dem Abbruch.
+   * Kaki-Kurve: die „verzögerte“ Warteschlange. Diese Nachrichten können derzeit aufgrund von Einschränkungen oder aufgrund fehlender Zielgruppenverbindung nicht zurückgegeben werden. Weitere Zustellversuche werden alle 5 Sekunden, 10 Sekunden, 20 Sekunden, 40 Sekunden, 2 Minuten usw. für die definierte Zeit **MaxAgeSec** durchgeführt, bevor sie abgebrochen werden.
 
 1. Dieses Diagramm zeigt ein Detail der abgebrochenen Nachrichten (rote Kurve im 2. Diagramm): Es zeigt den Anteil der abgebrochenen Nachrichten ohne erneute Zustellversuche (violett) im Vergleich zu den Nachrichten, deren Versand fehlgeschlagen ist (rot). Auf diese Weise können Sie den Anteil der Nachrichten anzeigen, die innerhalb des gewährten Zeitraums aufgrund von Einschränkungen durch den Statistikserver (Drosselung) oder aufgrund der Nichtverfügbarkeit des Remote-Servers nicht verarbeitet wurden.
 1. SMTP-Verbindungen, die offen sind oder geöffnet werden
@@ -553,7 +553,7 @@ Dieses Element wird verwendet, um die Konfiguration von E-Mails auszufüllen, d.
 * **mailServer**: SMTP-Server zum Senden von E-Mails (z. B.: smtp.domain.net).
 * **mailFrom**: E-Mail-Adresse des Absenders des Berichts (z. B.: monitoring@domain.net).
 * **recipientList**: Die Liste der E-Mail-Adressen, die von überwachten Empfängern verwendet werden. Adressen müssen durch Kommas getrennt sein (keine Leerzeichen).
-* Der **Nacht**-Modus (optional) wird verwendet, um den Versand von E-Mails zwischen den angegebenen Zeiträumen zu vermeiden. Stattdessen werden die Daten konsolidiert und nach der Endzeit (standardmäßig 7:00 Uhr) wird eine E-Mail zu den Aktivitäten der Nacht gesendet.
+* Der **Nacht**-Modus (optional) wird verwendet, um den Versand von E-Mails zwischen den angegebenen Zeiträumen zu vermeiden. Stattdessen werden die Daten konsolidiert und nach der Endzeit (standardmäßig 7) wird eine E:00Mail zu den Aktivitäten der Nacht gesendet.
 * Mit **Unterelement** buildRange“ (optional) können Sie eine Mindest- und eine Höchstbuildnummer angeben. Ein Fehler wird für alle Computer generiert, deren Build-Nummer nicht in diesen Bereich fällt
 
   ```
@@ -592,7 +592,7 @@ Dieses Element konfiguriert die Überwachung eines bestimmten Servers auf dem Ho
 * **alias** (optional): Name des überwachten Computers, wie er im Bericht angezeigt wird.
 * **sessionToken**: Bietet Anmeldeauthentifizierung über ein autorisiertes Sitzungs-Token.
 
-  Adobe Campaign Um das Sitzungs-Token zu konfigurieren, wählen Sie in der **-Konsole den** Monitoring“ aus. Geben **auf der Registerkarte** Zugriffsrechte“ die IP-Adressen der Computer an, die zur Überwachung dieser Instanz berechtigt sind. Sie können dann von diesen Computern aus über die Überwachungs-ID eine Verbindung zur Überwachungs **Seite herstellen** ohne ein Kennwort angeben zu müssen.
+  Um das Sitzungs-Token zu konfigurieren, wählen Sie in der **-Konsole den** Monitoring“ aus. Geben **auf der Registerkarte** Zugriffsrechte“ die IP-Adressen der Computer an, die zur Überwachung dieser Instanz berechtigt sind. Sie können dann von diesen Computern aus über die Überwachungs-ID eine Verbindung zur Überwachungs **Seite herstellen** ohne ein Kennwort angeben zu müssen.
 
   ![](assets/ncs_operators_rights_02.png)
 

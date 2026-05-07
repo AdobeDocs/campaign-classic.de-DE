@@ -5,9 +5,9 @@ description: Erfahren Sie die wichtigsten Schritte zum Erstellen eines neuen Ber
 feature: Reporting, Monitoring
 exl-id: 4c2aad47-0e2d-4d0b-8898-b437f4a05e11
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
-workflow-type: ht
-source-wordcount: '961'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '967'
+ht-degree: 68%
 
 ---
 
@@ -39,7 +39,7 @@ Gehen Sie wie folgt vor, um einen Bericht zu erstellen:
 
 ## Modellieren des Diagramms {#modelizing-the-chart}
 
-Nach der Speicherung des Berichts wird dieser angezeigt. Sie können nun das Diagramm Ihres Berichts erstellen.
+Nach dem Speichern des Berichts sollte dies angezeigt werden. Jetzt können Sie das Diagramm Ihres Berichts erstellen.
 
 ![](assets/s_ncs_user_report_wizard_021.png)
 
@@ -53,17 +53,17 @@ Diese werden untereinander durch Pfeile - sogenannte Transitionen - verbunden.
 
 Um den Bericht entsprechend seiner Art und seines Verwendungskontexts zu konstruieren, müssen zunächst die nützlichen Elemente und ihre logische Aneinanderreihung identifiziert werden.
 
-1. Nutzen Sie die **[!UICONTROL Beginn]**-Aktivität, um den ersten, zur Erstellung des Berichts auszuführenden Vorgang darzustellen. Diese Aktivität kann in jedem Bericht nur einmal verwendet werden.
+1. Verwenden Sie die **[!UICONTROL Start]**-Aktivität, um den ersten zum Erstellen des Berichts auszuführenden Prozess zu materialisieren. Pro Bericht kann nur eine dieser Aktivitäten verwendet werden.
 
    Wenn das Diagramm eine Schleife enthält, ist die &quot;Beginn&quot;-Aktivität obligatorisch.
 
-1. Fügen Sie eine oder mehrere **[!UICONTROL Abfrage]**-Aktivitäten hinzu, um die für die Erstellung des Berichts nützlichen Daten abzurufen. Die Daten können direkt über eine Abfrage eines Schemas der Datenbank, eine importierte Liste oder einen existierenden Cube abgerufen werden.
+1. Fügen Sie eine oder mehrere **[!UICONTROL Abfrage]**-Aktivitäten hinzu, um Daten zu erfassen, die für die Erstellung des Berichts nützlich sind. Die Daten können entweder direkt über eine Abfrage eines Schemas der Datenbank oder über eine importierte Liste oder einen vorhandenen Cube erfasst werden.
 
    Weitere Informationen finden Sie unter [Erfassen der zu analysierenden Daten](../../reporting/using/collecting-data-to-analyze.md).
 
    Diese Daten werden je nach Seitenkonfiguration im Bericht angezeigt oder nicht.
 
-1. Positionieren Sie eine oder mehrere **[!UICONTROL Seite]**-Aktivitäten im Diagramm, um die grafische Darstellung der abgerufenen Daten zu konfigurieren. Sie können Tabellen, Grafiken sowie Eingabefelder einfügen und die Anzeige einer oder mehrerer Seiten oder bestimmter Seitenelemente an Bedingungen knüpfen. Der angezeigte Inhalt ist vollständig konfigurierbar.
+1. Platzieren Sie eine oder mehrere **[!UICONTROL Seiten]**-Aktivitäten, um die grafische Darstellung der erfassten Daten zu definieren. Sie können Tabellen, Diagramme und Eingabefelder einfügen und die Anzeige einer oder mehrerer Seiten oder Elemente der Seite konfigurieren. Der angezeigte Inhalt ist vollständig konfigurierbar.
 
    Weitere Informationen finden Sie unter [Statische Elemente](#static-elements).
 
@@ -75,7 +75,7 @@ Um den Bericht entsprechend seiner Art und seines Verwendungskontexts zu konstru
 
    Weitere Informationen finden Sie unter [Script-Aktivität](../../reporting/using/advanced-functionalities.md#script-activity).
 
-1. Schließlich haben Sie die Möglichkeit, die Lesbarkeit komplexer Berichte durch das Einfügen einer oder mehrerer **[!UICONTROL Sprung]**-Aktivitäten zu verbessern. Diese ermöglichen den Übergang von einer Aktivität zu einer anderen, ohne die Transition im Bericht zu materialisieren. Die **[!UICONTROL Sprung]**-Aktivität kann auch genutzt werden, um einen anderen Bericht anzuzeigen.
+1. Um die Lektüre komplexer Berichte zu vereinfachen, können Sie eine oder mehrere Aktivitäten vom Typ **[!UICONTROL Sprung]** einfügen. Auf diese Weise können Sie von einer Aktivität zur anderen wechseln, ohne den Übergang im Bericht zu materialisieren. Die **[!UICONTROL Sprung]**-Aktivität kann auch genutzt werden, um einen anderen Bericht anzuzeigen.
 
    Weitere Informationen finden Sie unter [Sprung-Aktivität](../../reporting/using/advanced-functionalities.md#jump-activity).
 
@@ -83,7 +83,7 @@ Der Ausführungsmodus eines Berichts entspricht nicht dem eines Workflows. Beisp
 
 ![](assets/reporting_graph_sample_ko.png)
 
-Es ist jedoch möglich, mehrere Zweige zu positionieren, wobei nur einer von ihnen ausgeführt wird:
+Sie können jedoch mehrere Verzweigungen platzieren. Nur einer von ihnen wird ausgeführt:
 
 ![](assets/reporting_graph_sample_ok.png)
 
@@ -95,7 +95,7 @@ Doppelklicken Sie auf das Symbol einer Aktivität, um sie zu konfigurieren.
 
 Der angezeigte Inhalt wird in Aktivitäten vom Typ **Seite** bestimmt.
 
-Ein Bericht kann eine oder mehrere Seiten enthalten. Die Seiten werden mithilfe eines dedizierten Editors erstellt, über den ein Navigationsbaum, Eingabefelder, Auswahlfelder, statische Elemente, Diagramme oder Tabellen eingefügt werden können. Die Anordnung der Elemente erfolgt anhand von Containern. Weitere Informationen finden Sie unter [Elemente anordnen](../../reporting/using/element-layout.md).
+Ein Bericht kann eine oder mehrere Seiten enthalten. Seiten werden über einen speziellen Editor erstellt, mit dem Sie Eingabefelder, Auswahlfelder, statische Elemente, Diagramme oder Tabellen in eine Baumstruktur einfügen können. Mithilfe von Containern können Sie das Layout definieren. Weitere Informationen finden Sie unter [Elemente anordnen](../../reporting/using/element-layout.md).
 
 Über die Schaltfläche &quot;Auswahldialog&quot; lassen sich verschiedene Komponenten (Radiobutton, Checkbox etc.) in die Seite einfügen.
 
@@ -116,7 +116,7 @@ Eine **[!UICONTROL Seite]** kann folgende Elemente enthalten:
 * **[!UICONTROL Eingabedialoge]** vom Typ Text oder Zahl.
 * **[!UICONTROL Auswahldialoge]** vom Typ Dropdown-Liste, Checkbox, Radiobutton, Multiple Choice, Datum oder Matrix.
 * **[!UICONTROL Erweiterte Dialoge]** vom Typ Link-Editor, Konstante, Ordnerauswahl.
-* Wert, Link, HTML, Bild usw. **[!UICONTROL Statische Elemente]**.
+* Wert, Link, HTML, Bild usw **[!UICONTROL (statische Elemente]**.
 * **[!UICONTROL Container]** zur Anordnung der Komponenten.
 
 Die Konfiguration einer Seite und ihrer Elemente wird in [diesem Abschnitt](../../web/using/about-web-forms.md) erläutert.
@@ -137,11 +137,11 @@ Anhand von Eingabe- und Auswahldialogen können die im Bericht angezeigten Infor
 
 Die Erstellung und Konfiguration von Eingabe- und Auswahlfeldern werden in [diesem Abschnitt](../../web/using/about-web-forms.md) beschrieben.
 
-Sie können ein oder mehrere Eingabedialoge in Ihre Berichte integrieren. Dieser Dialogtyp ermöglicht es Ihnen beispielsweise, die angezeigten Informationen nach einem eingegebenen Wert zu filtern.
+Sie können ein oder mehrere Eingabedialoge in Ihre Berichte integrieren. Mit dieser Art von Steuerung können Sie die angezeigten Informationen nach einem eingegebenen Wert filtern.
 
 ![](assets/reporting_control_text.png)
 
-Sie können auch eine oder mehrere Auswahldialoge in Ihre Berichte integrieren. Dieser Dialogtyp ermöglicht es Ihnen, die angezeigten Informationen nach einem oder mehreren Werten zu filtern, zum Beispiel:
+Sie können auch ein oder mehrere Auswahlsteuerelemente in Ihre Berichte integrieren. Mit dieser Art von Steuerung können Sie die im Bericht enthaltenen Informationen anhand der ausgewählten Werte filtern, z. B.:
 
 * über Radiobuttons und Checkboxen:
 
@@ -155,7 +155,7 @@ Sie können auch eine oder mehrere Auswahldialoge in Ihre Berichte integrieren. 
 
   ![](assets/reporting_control_date.png)
 
-Sie können einen oder mehrere erweiterte Dialoge in Ihre Berichte integrieren. Dieser Dialogtyp bietet die Möglichkeit, einen Link oder eine Konstante einzufügen oder einen Ordner auszuwählen.
+Schließlich können Sie ein oder mehrere erweiterte Steuerelemente in Ihre Berichte integrieren. Mit dieser Art von Steuerung können Sie einen Link, eine Konstante oder einen Ordner einfügen.
 
 Im folgenden Beispiel wird der Bericht dahingehend konfiguriert, dass nur die Daten eines bestimmten Ordners des Navigationsbaums angezeigt werden:
 

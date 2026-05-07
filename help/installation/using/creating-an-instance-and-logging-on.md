@@ -9,8 +9,8 @@ topic-tags: initial-configuration
 exl-id: a025026e-688e-4ec1-abc4-40ee040d2b3b
 source-git-commit: c38150aa8de90f314e1f2a43c6751d4db4059533
 workflow-type: tm+mt
-source-wordcount: '599'
-ht-degree: 9%
+source-wordcount: '614'
+ht-degree: 14%
 
 ---
 
@@ -32,7 +32,7 @@ Beim Starten der Adobe Campaign-Konsole greifen Sie auf eine Anmeldeseite zu.
 
 Gehen Sie wie folgt vor, um eine neue Instanz zu erstellen:
 
-1. Klicken Sie auf den Link in der oberen rechten Ecke der Felder mit den Anmeldedaten, um auf das Fenster für die Verbindungskonfiguration zuzugreifen. Dieser Link kann entweder **[!UICONTROL Neu…]** oder ein vorhandener Instanzname sein.
+1. Klicken Sie in der oberen rechten Ecke der Felder mit den Anmeldedaten auf den Link, um das Fenster für die Verbindungskonfiguration aufzurufen. Dieser Link kann entweder **[!UICONTROL Neu…]** oder ein vorhandener Instanzname sein.
 
    ![](assets/s_ncs_install_define_connection_01.png)
 

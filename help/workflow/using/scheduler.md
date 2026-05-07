@@ -7,8 +7,8 @@ hide: true
 exl-id: 30a9bd2a-afb1-481c-ab5f-5acebd9cbb5a
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '339'
-ht-degree: 100%
+source-wordcount: '341'
+ht-degree: 88%
 
 ---
 
@@ -44,7 +44,7 @@ In den folgenden Schritten des Assistenten lassen sich die Frequenz der Ausführ
 
    ![](assets/s_user_segmentation_scheduler2.png)
 
-1. Geben Sie die Tage und Uhrzeit der Ausführung an. Die zur Verfügung stehenden Parameter hängen von der im ersten Schritt ausgewählten Häufigkeit ab. Wenn Sie die Aktivität mehrmals täglich aktivieren, sind folgende Optionen verfügbar:
+1. Geben Sie die Aktivierungszeiten und -tage an. Die Parameter für diesen Schritt hängen von der im vorherigen Schritt ausgewählten Häufigkeit ab. Wenn Sie die Aktivität mehrmals täglich starten möchten, stehen Ihnen folgende Konfigurationsoptionen zur Verfügung:
 
    ![](assets/s_user_segmentation_scheduler3.png)
 

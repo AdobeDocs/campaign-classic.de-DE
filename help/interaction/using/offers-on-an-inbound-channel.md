@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: case-study
 exl-id: 90afced3-465d-4370-8a33-51a7e4356135
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: ht
-source-wordcount: '2163'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '2168'
+ht-degree: 87%
 
 ---
 
@@ -87,7 +87,7 @@ Das Ergebnis ist eine Navigationsstruktur, welche Ihre neue Umgebung enthält:
 ### Erstellung einer Angebotskategorie und eines Themas {#creating-an-offer-category-and-a-theme}
 
 1. Markieren Sie in der zuvor erstellten Umgebung den Knoten **[!UICONTROL Angebotskatalog]**.
-1. Klicken Sie mit der rechten Maustaste und wählen Sie im Kontextmenü die Option **[!UICONTROL Angebotskategorie-Ordner hinzufügen]****[!UICONTROL aus]**.
+1. Klicken Sie mit der rechten Maustaste und wählen Sie im Kontextmenü die Option **[!UICONTROL Angebotskategorie-Ordner hinzufügen]**&#x200B;**[!UICONTROL aus]**.
 
    Nennen Sie die neue Kategorie, beispielsweise **Finanzprodukte**.
 
@@ -116,7 +116,7 @@ Das Ergebnis ist eine Navigationsstruktur, welche Ihre neue Umgebung enthält:
 
    ![](assets/offer_inbound_anonymous_example_016.png)
 
-1. Konfigurieren Sie nun den Angebotsinhalt im entsprechenden Tab.****
+1. Konfigurieren Sie nun den Angebotsinhalt im entsprechenden Tab.**&#x200B;**
 
    >[!NOTE]
    >
@@ -153,7 +153,7 @@ Besucht er wiederholt die Startseite, wird ihm alternativ das eine oder das ande
 
 ## In eine anonyme Umgebung wechseln, wenn ein Kontakt nicht identifiziert wurde {#switching-to-an-anonymous-environment-in-case-of-unidentified-contacts}
 
-Neobank möchte auf seiner Website Marketing-Angebote für zwei verschiedene Zielgruppen präsentieren: Für anonyme Besucher sollen allgemeine Produkte angezeigt werden. Wenn sich einer der Besucher als registrierter Kunde erweist, sollen ihm, sobald er sich in seinem Konto anmeldet, personalisierte Angebote unterbreitet werden.
+Das Unternehmen Neobank möchte Marketingangebote für zwei verschiedene Zielgruppen erstellen. Es möchte allgemeine Angebote für seine anonymen Website-Browser anzeigen. Sollte sich herausstellen, dass es sich bei einem dieser Nutzer um einen Kunden mit von der Neobank bereitgestellten Kennungen handelt, möchte das Unternehmen, dass er nach der Anmeldung personalisierte Angebote erhält.
 
 Es wird von folgendem Szenario ausgegangen:
 
@@ -173,7 +173,7 @@ Es wird von folgendem Szenario ausgegangen:
 
    ![](assets/offer_inbound_fallback_example_053.png)
 
-Für dieses Anwendungsbeispiel müssen Sie neben der üblichen Umgebung für identifizierte über eine zweite für anonyme Kontakte verfügen. Die Umgebung für identifizierte Kontakte wird dahingehend konfiguriert, dass sie automatisch zur Umgebung für anonyme Kontakte wechselt, wenn der Besucher sich nicht anmeldet, also nicht identifiziert werden kann.
+Um diese Fallstudie zu implementieren, benötigen Sie zwei Angebotsumgebungen: eine für anonyme Interaktionen und eine mit speziell für identifizierte Kontakte konfigurierten Angeboten. Die identifizierte Angebotsumgebung wird so konfiguriert, dass sie automatisch in die anonyme Angebotsumgebung wechselt, wenn der Kontakt nicht angemeldet und daher nicht identifiziert ist.
 
 Gehen Sie wie folgt vor:
 
@@ -203,7 +203,7 @@ Gehen Sie wie folgt vor:
 
 ### Konfiguration der Platzierungen für die anonyme Umgebung {#configuring-offer-spaces-for-the-anonymous-environment}
 
-Die auf der Website zu unterbreitenden Angebote stammen aus zwei verschiedenen Kategorien: **Premium** und **Partner**. Im vorliegenden Beispiel wird für jede Kategorie eine spezifische Platzierung erstellt.
+Die Angebote, die auf der Website präsentiert werden müssen, gehören zu zwei verschiedenen Kategorien: **Bestes Angebot** und **Partner**. In diesem Beispiel wird für jede Kategorie eine eigene Platzierung erstellt.
 
 Gehen Sie wie folgt vor, um die Platzierung der Kategorie **Premium** zu erstellen:
 
@@ -230,7 +230,7 @@ Gehen Sie wie folgt vor, um die Platzierung der Kategorie **Premium** zu erstell
 
 ### Erstellung der Angebotskategorien in der anonymen Umgebung {#creating-offer-categories-in-an-anonymous-environment}
 
-Erstellen Sie zwei Angebotskategorien: **Premium** und **Partner**. Jede Kategorie soll zwei Angebote für anonyme Kontakte enthalten.
+Erstellen Sie zunächst zwei Angebotskategorien: die Kategorie **Bestes Angebot** und die Kategorie **Partner**. Jede Kategorie enthält zwei Angebote für anonyme Kontakte.
 
 1. Markieren Sie hierfür in der anonymen Umgebung, die Sie zuvor erstellt haben, den Knoten **[!UICONTROL Angebotskatalog]**.
 1. Klicken Sie mit der rechten Maustaste und wählen Sie im Kontextmenü die Option **[!UICONTROL Angebotskategorie-Ordner hinzufügen]** aus. Nennen Sie die Kategorie **Premium**.
@@ -253,7 +253,7 @@ Erstellen Sie nun jeweils zwei Angebote in jeder der zuvor erstellten Kategorien
 
    ![](assets/offer_inbound_fallback_example_030.png)
 
-1. Konfigurieren Sie nun den Angebotsinhalt im entsprechenden Tab.****
+1. Konfigurieren Sie nun den Angebotsinhalt im entsprechenden Tab.**&#x200B;**
 
    ![](assets/offer_inbound_fallback_example_032.png)
 
@@ -262,7 +262,7 @@ Erstellen Sie nun jeweils zwei Angebote in jeder der zuvor erstellten Kategorien
    ![](assets/offer_inbound_fallback_example_031.png)
 
 1. Markieren Sie die Kategorie **Partner** und erstellen Sie das erste anonyme Angebot der Kategorie.
-1. Konfigurieren Sie nun den Angebotsinhalt im entsprechenden Tab.****
+1. Konfigurieren Sie nun den Angebotsinhalt im entsprechenden Tab.**&#x200B;**
 
    ![](assets/offer_inbound_fallback_example_033.png)
 
@@ -282,7 +282,7 @@ Erstellen Sie nun jeweils zwei Angebote in jeder der zuvor erstellten Kategorien
 
 ### Konfiguration der Platzierungen für die identifizierte Umgebung {#configure-the-offer-spaces-in-the-identified-environment}
 
-Die auf der Webseite zu unterbreitenden Angebote für identifizierte Kontakte stammen aus zwei verschiedenen Kategorien: **Premium** und **Partner**. Im vorliegenden Beispiel wird für jede Kategorie eine spezifische Platzierung erstellt.
+Die Angebote, die Sie auf der Website präsentieren werden, stammen aus zwei verschiedenen Kategorien: **Bestes Angebot** und **Partner**. In diesem Beispiel möchten wir für jede Kategorie einen eigenen Bereich erstellen.
 
 Erstellen Sie die beiden Platzierungen auf die gleiche Weise wie die anonymen Platzierungen. Siehe [Konfiguration der Platzierungen für die anonyme Umgebung](#configuring-offer-spaces-for-the-anonymous-environment).
 
@@ -301,7 +301,7 @@ Erstellen Sie die beiden Platzierungen auf die gleiche Weise wie die anonymen Pl
 
 ### Definition der erweiterten Parameter der identifizierten Umgebung {#specifying-the-advanced-settings-of-the-identified-offer-spaces}
 
-Im vorliegenden Beispiel soll der Kontakt über seine E-Mail-Adresse in der Adobe Campaign-Datenbank identifiziert werden. Fügen Sie die E-Mail-Adresse des Empfängers wie folgt in die Platzierung ein:
+In diesem Beispiel erfolgt die Kontaktidentifizierung über die E-Mail-Adresse in der Adobe Campaign-Datenbank. Gehen Sie wie folgt vor, um die Empfänger-E-Mail dem Bereich hinzuzufügen:
 
 1. Gehen Sie in der identifizierten Umgebung in den Platzierungsknoten.
 1. Wählen Sie die Platzierung **Premium** aus und klicken Sie auf **[!UICONTROL Erweiterte Parameter...]**.
@@ -342,7 +342,7 @@ Erstellen Sie nun in jeder Kategorie zwei Angebote, d. h. vier Angebote insgesam
 
    ![](assets/offer_inbound_fallback_example_012.png)
 
-1. Konfigurieren Sie nun den Angebotsinhalt im entsprechenden Tab.****
+1. Konfigurieren Sie nun den Angebotsinhalt im entsprechenden Tab.**&#x200B;**
 
    ![](assets/offer_inbound_fallback_example_013.png)
 
@@ -403,7 +403,7 @@ Gehen Sie wie folgt vor, um die Platzierungen der Angebote in der HTML-Seite der
 
    Die URL enthält den internen Namen (**liveRcp**) der identifizierten Umgebung.
 
-Bei Aufruf der Webseite löst das Script die Abfrage des Angebotsmoduls aus, damit der Angebotsinhalt in den hierfür vorgesehenen Platzierungen angezeigt wird. Mit nur einer Abfrage des Adobe Campaign-Servers erkennt das Angebotsmodul die auszuwählende Umgebung, Platzierung und Angebotskategorie.
+Wenn Sie die Web-Seite öffnen, können Sie mit dem Script die Interaction-Engine aufrufen, um den Inhalt der Angebote in den relevanten Bereichen der Web-Seite anzuzeigen. In einem einzigen Aufruf an den Adobe Campaign-Server legt die Engine die Umgebung, die Platzierung und die zu wählenden Kategorien fest.
 
 In diesem Beispiel erkennt die Engine die identifizierte Umgebung (**EnvNeobankIdnRecip**). Sie identifiziert die Platzierung (**OSWebBestOfferIdentified**) und die **Premium**-Kategorie (**CatBestOffer**) für die erste und zweite Platzierung der Web-Seite sowie die Platzierung (**OSWebPartnerIdentified**) und die **Partner**-Kategorie (**CatPartner**) für die dritte Platzierung der Web-Seite.
 

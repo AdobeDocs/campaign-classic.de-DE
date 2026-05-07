@@ -10,8 +10,8 @@ topic-tags: data-processing
 exl-id: 2c933fc5-1c0a-4c2f-9ff2-90d09a79c55a
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '1318'
-ht-degree: 4%
+source-wordcount: '1340'
+ht-degree: 5%
 
 ---
 
@@ -37,7 +37,7 @@ Gehen Sie hierzu wie folgt vor:
 
 1. eine Kopie der Datenbanken auf allen Instanzen in der Quellumgebung erstellen,
 1. Stellen Sie diese Kopien auf allen Instanzen der Zielumgebung wieder her.
-1. Führen Sie **Skript &quot;:freezeInstance.js** vor dem Start in der Zielumgebung aus.
+1. Führen Sie das Skript **nms:freezeInstance.js** zur Verätzung in der Zielumgebung aus, bevor Sie sie starten.
 
    Dieser Prozess hat keine Auswirkungen auf die Server und deren Konfiguration.
 
@@ -145,7 +145,7 @@ Sie können auch überprüfen, ob noch keine Systemprozesse ausgeführt werden.
 Gehen Sie dazu wie folgt vor:
 
 * In Windows: Öffnen Sie den **Task-Manager** und stellen Sie sicher, dass keine **nlserver.exe**-Prozesse vorhanden sind.
-* Unter Linux: **ps aux | grep nlserver** Befehl ein und stellen Sie sicher, dass es keine **nlserver**-Prozesse gibt.
+* Führen Sie unter Linux den Befehl **ps aux | grep nlserver** aus und überprüfen Sie, ob keine **nlserver**-Prozesse vorhanden sind.
 
 ### Schritt 4: Wiederherstellen der Datenbanken in der Zielumgebung (dev) {#step-4---restore-the-databases-in-the-target-environment--dev-}
 

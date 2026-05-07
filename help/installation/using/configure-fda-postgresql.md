@@ -6,8 +6,8 @@ feature: Installation, Instance Settings
 exl-id: 2c678f45-2555-4647-9885-bd002db7df37
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '359'
-ht-degree: 11%
+source-wordcount: '402'
+ht-degree: 10%
 
 ---
 
@@ -73,7 +73,7 @@ Sie müssen ein [!DNL PostgreSQL] externes Konto erstellen, um Ihre Campaign-Ins
 
 Der Connector unterstützt die folgenden Optionen:
 
-| Option | Beschreibung  |
+| Option | Beschreibung |
 |:-:|:-:|
 | PGSQL_CONNECT_TIMEOUT | Maximale Wartezeit auf Verbindung in Sekunden. <br>Weiterführende Informationen hierzu finden Sie in der [Dokumentation zu PostgreSQL](https://www.postgresql.org/docs/12/libpq-connect.html#LIBPQ-CONNECT-CONNECT-TIMEOUT). |
 | PGSQL_KEEPALIVES_IDLE | Anzahl der Sekunden Inaktivität, nach denen das TCP eine Keepalive-Nachricht an den Server senden sollte. <br>Weiterführende Informationen hierzu finden Sie in der [Dokumentation zu PostgreSQL](https://www.postgresql.org/docs/12/libpq-connect.html#LIBPQ-KEEPALIVES-IDLE). |

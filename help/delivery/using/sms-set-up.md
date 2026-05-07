@@ -7,9 +7,9 @@ role: User, Developer, Admin
 level: Experienced
 exl-id: a2783a5e-6d38-41a1-b5c6-24ab489116f8
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: ht
-source-wordcount: '1838'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1842'
+ht-degree: 89%
 
 ---
 
@@ -58,7 +58,7 @@ Gehen Sie dazu wie folgt vor:
 
    Der von Ihnen ausgewählte Provider nennt Ihnen danach den Wert für das Feld **[!UICONTROL Name der SMSC-Implementierung]**.
 
-   Sie können die Anzahl der Verbindungen mit dem Dienstleister per untergeordnetem MTA definieren. Standardmäßig ist 1 eingestellt.
+   Sie können die Anzahl der Verbindungen zum Provider pro untergeordnetem MTA-Element definieren. Standardmäßig ist dies auf 1 festgelegt.
 
 1. Standardmäßig kommt in Bezug auf die maximal zulässige Zeichenanzahl einer SMS der Mobilfunkstandard GSM zur Anwendung.
 
@@ -76,7 +76,7 @@ Gehen Sie dazu wie folgt vor:
 
    Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](#about-character-transliteration).
 
-1. Auf der Registerkarte **[!UICONTROL Durchsatz und Dauer]** können Sie den maximalen Durchsatz für ausgehende Nachrichten (&quot;MT&quot;, Mobile Terminated) festlegen. Bei Angabe von &quot;0&quot; im entsprechenden Feld ist der Durchsatz unbegrenzt.
+1. Auf der Registerkarte **[!UICONTROL Durchsatz und Verzögerungen]** können Sie den maximalen Durchsatz ausgehender Nachrichten („MT“, Mobile beendet) in MT pro Sekunde angeben. Bei Angabe von &quot;0&quot; im entsprechenden Feld ist der Durchsatz unbegrenzt.
 
    Werte, die eine Dauer angeben, sind in Sekunden auszudrücken.
 
@@ -84,7 +84,7 @@ Gehen Sie dazu wie folgt vor:
 
    Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](#about-text-encodings).
 
-1. Im Tab **[!UICONTROL SMSC-Besonderheiten]** ist die Option **[!UICONTROL Vollständige Telefonnummer senden]** standardmäßig deaktiviert. Aktivieren Sie sie nicht, wenn Sie die Konformität mit dem SMPP-Protokoll wahren und nur Zahlen an den Server des SMS-Anbieters (SMSC) übertragen möchten.
+1. Auf der Registerkarte **[!UICONTROL SMSC]** Besonderheiten“ ist die Option **[!UICONTROL Vollständige Telefonnummer senden]** standardmäßig deaktiviert. Aktivieren Sie sie nicht, wenn Sie das SMPP-Protokoll einhalten und nur Ziffern an den Server des SMS-Anbieters (SMSC) übertragen möchten.
 
    Bei gewissen Anbietern ist die Verwendung des Vorzeichens &#39;+&#39; jedoch erforderlich, sodass es ratsam ist, mit Ihrem Anbieter Kontakt aufzunehmen, der Sie bei Bedarf dazu auffordern wird, diese Option zu aktivieren.
 
@@ -111,7 +111,7 @@ Die Transliteration von Zeichen ist standardmäßig deaktiviert. Es wird empfohl
 
 Sollte Ihre SMS jedoch eine hohe Anzahl an Zeichen enthalten, die dem Unicode-Zeichensatz entstammen, können Sie diese Option wählen, um Ihre Versandkosten zu begrenzen.
 
-Die folgende Tabelle zeigt den vom GSM-Standard unterstützten Zeichensatz. Jedes im Nachrichteninhalt enthaltene Zeichen, das nicht in der unten stehenden Tabelle aufgeführt ist, führt zur Konvertierung der gesamten Nachricht in das Binärformat (Unicode), sobald sie 70 Zeichen überschreitet.
+In der folgenden Tabelle sind die Zeichen aufgeführt, die vom GSM-Standard berücksichtigt werden. Jedes im Nachrichteninhalt enthaltene Zeichen, das nicht in der unten stehenden Tabelle aufgeführt ist, führt zur Konvertierung der gesamten Nachricht in das Binärformat (Unicode) und zur Splittung der SMS in Teilnachrichten, sobald sie 70 Zeichen überschreitet.
 
 **Einfache Zeichen**
 
@@ -315,7 +315,7 @@ Sie können **data_codings** deklarieren. Durch Angabe von nur einer Kodierung i
 >
 >Die Reihenfolge der Deklarierung ist entscheidend. Wir empfehlen Ihnen, die Liste aufsteigend nach den entstehenden **Kosten** zu ordnen, um die Kodierungen zu favorisieren, die eine größere Anzahl von Zeichen pro SMS erlauben.
 >
->Deklarieren Sie nur die Kodierungen, die Sie tatsächlich verwenden möchten. Deklarieren Sie hingegen keine vom SMSC angebotenen Kodierungen in der Liste, die nicht Ihrer Verwendung entsprechen.
+>Deklarieren Sie nur die Kodierungen, die Sie tatsächlich verwenden möchten. Wenn einige der vom SMSC bereitgestellten Kodierungen nicht Ihrem Verwendungszweck entsprechen sollten, deklarieren Sie sie nicht in der Liste.
 
 ## Automatische Antwort {#automatic-reply}
 
@@ -329,7 +329,7 @@ Im Bereich **[!UICONTROL Automatische Antwort auf MO]** können Sie Benachrichti
 
 Geben Sie für jedes Schlüsselwort eine Kurzwahlnummer (short code) an, d. h. eine als Absendername fungierende Nummer, die gewöhnlich für den Nachrichtenversand verwendet wird, sowie die an den Abonnenten zu sendende Nachricht.
 
-Es besteht die Möglichkeit, jeder automatischen Antwort eine Aktion zuzuordnen: **[!UICONTROL Unter Quarantäne stellen]** oder **[!UICONTROL Aus der Quarantäne entfernen]**. Wenn beispielsweise das Wort &quot;STOP&quot; gesendet wird, erhält der Abonnent automatisch eine Abmeldebestätigung und sein Profil wird unter Quarantäne gestellt.
+Sie können eine Aktion auch mit Ihrer automatischen Antwort verknüpfen: **[!UICONTROL In Quarantäne senden]** oder **[!UICONTROL Aus Quarantäne entfernen]**. Wenn ein Empfänger beispielsweise das Keyword „STOP“ sendet, erhält er automatisch eine Abmeldebestätigung und wird unter Quarantäne gestellt.
 
 ![](assets/extended_smpp_reply.png)
 
@@ -339,7 +339,7 @@ Die Empfänger sind in der Tabelle **[!UICONTROL Adressen unzustellbarer Sendung
 
 * Lassen Sie die Spalte **[!UICONTROL Kurzwahlnummer]** leer, wenn unabhängig von der Kurzwahlnummer dieselbe Nachricht gesendet werden soll.
 * Lassen Sie die Spalte **[!UICONTROL Schlüsselwort]** leer, wenn unabhängig vom Schlüsselwort dieselbe Nachricht gesendet werden soll.
-* Lassen Sie die Spalte **[!UICONTROL Antwort]** leer, wenn nur eine Aktion ausgeführt, aber keine Antwort gesendet werden soll. Dies ermöglicht beispielsweise die Entlassung eines Abonnenten aus der Quarantäne, wenn er ein anderes Schlüsselwort als &quot;STOP&quot; sendet.
+* Um eine Aktion auszuführen, ohne eine Antwort zu senden, lassen Sie die Spalte **[!UICONTROL Antwort]** leer. Auf diese Weise können Sie beispielsweise einen Benutzer, der mit einer anderen Nachricht als „STOP“ antwortet, aus der Quarantäne entfernen.
 
 Wenn Sie mehrere externe Konten mit dem Connector „Erweitertes allgemeines SMPP“ mit demselben Provider-Konto haben, kann das folgende Problem auftreten: Wenn Sie eine Antwort an eine Kurzwahlnummer senden, kann sie auf einer Ihrer externen Kontoverbindungen empfangen werden. Folglich ist die automatische Antwort, die gesendet wird, möglicherweise nicht die erwartete Nachricht.
 Um dies zu vermeiden, wenden Sie je nach verwendetem Provider eine der folgenden Lösungen an:

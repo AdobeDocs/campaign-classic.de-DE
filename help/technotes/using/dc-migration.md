@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 2b282221-d048-4f6e-b52e-f8e584af2c0e
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
-workflow-type: ht
-source-wordcount: '1533'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1557'
+ht-degree: 97%
 
 ---
 
@@ -76,9 +76,9 @@ Das Programm verfolgt drei Hauptziele:
 
 ## Informationen zur Migration
 
-Zu Beginn dieses Vorgangs erhalten Kunden, für die eine Migration vorgesehen ist, eine E-Mail-Mitteilung von Adobe mit einem Zeitplan und einem Zugriff auf die Dokumentation. 
+Zu Beginn dieses Vorgangs erhalten Kunden, für die eine Migration vorgesehen ist, eine E-Mail-Mitteilung von Adobe mit einem Zeitplan und einem Zugriff auf die Dokumentation. Mit dieser Benachrichtigung erhalten Sie die geplante Migration Ihres Kontos.
 
-Sie können die Migration durch das [Erstellen eines neuen Support-Tickets bei der Kundenunterstützung](https://experienceleague.adobe.com/de?support-solution=Campaign#support) einleiten. Geben Sie in der Betreffzeile „Migrate to AWS“ (Migration zu AWS) ein.
+Sie können die Migration durch das [Erstellen eines neuen Support-Tickets bei der Kundenunterstützung](https://experienceleague.adobe.com/de?support-solution=Campaign&lang=de#support) einleiten. Geben Sie in der Betreffzeile „Migrate to AWS“ (Migration zu AWS) ein.
 
 ### Ist diese Migration obligatorisch?
 
@@ -135,7 +135,7 @@ Typische Fälle:
 * HTTP, beide Richtungen möglich
 * SMPP (Verbindung zum SMS-Anbieter), Campaign als Client, Änderung der Quell-IP
 
-Im Allgemeinen bedeutet dies, dass der Client mögliche IP-Einschränkungen für seine Firewalls überprüfen und entsprechend anpassen sollte.*
+Im Allgemeinen bedeutet dies, dass der Kunde mögliche IP-Einschränkungen seiner Firewalls überprüfen und entsprechend anpassen sollte.*
 
 **Campaign-Server**
 
@@ -156,7 +156,7 @@ Das bedeutet, dass die Änderung für Benutzer und im Fall von Implementierungen
 
 **IPs für den E-Mail-Versand**
 
-Zunächst wird der Zustellbarkeitsstatus der Plattform durch das Adobe-Zustellbarkeits-Team geprüft und ein Plan für den Wechsel zu den neuen IPs empfohlen. 
+Zunächst wird der Zustellbarkeitsstatus der Plattform durch das Adobe-Zustellbarkeits-Team geprüft und ein Plan für den Wechsel zu den neuen IPs empfohlen.
 
 Adobe stellt dieselbe Anzahl von IPs im neuen Rechenzentrum bereit.
 
@@ -181,7 +181,7 @@ Empfehlungen:
 
 **Ausführungen anhalten**
 
-Adobe empfiehlt, alle Ausführungen (Sendungen und Workflows) zu verlangsamen und im Idealfall anzuhalten, bevor die Anwendung im alten Rechenzentrum heruntergefahren wird. Auf diese Weise wird der Neustart auf der Public Cloud (AWS) vereinfacht, da es den Prozessen Zeit gibt, ordnungsgemäß zu pausieren und den Status der laufenden Ausführung zu speichern. 
+Adobe empfiehlt, alle Ausführungen (Sendungen und Workflows) zu verlangsamen und im Idealfall anzuhalten, bevor die Anwendung im alten Rechenzentrum heruntergefahren wird. Auf diese Weise wird der Neustart auf der Public Cloud (AWS) vereinfacht, da es den Prozessen Zeit gibt, ordnungsgemäß zu pausieren und den Status der laufenden Ausführung zu speichern.
 
 **Während der Migration**
 

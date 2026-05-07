@@ -9,15 +9,15 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 4596638c-d75a-4e07-a2d8-5befcaad3430
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: ht
-source-wordcount: '542'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '639'
+ht-degree: 94%
 
 ---
 
 # Komprimieren oder Verschlüsseln von Dateien {#zipping-or-encrypting-a-file}
 
-Mit Adobe Campaign können Sie komprimierte oder verschlüsselte Dateien exportieren. Wenn Sie einen Export über die Aktivität **[!UICONTROL Extraktion (Datei)]** planen, können Sie eine Nachbearbeitung definieren, um die Datei zu komprimieren oder zu verschlüsseln.
+Adobe Campaign ermöglicht den Export komprimierter oder verschlüsselter Dateien. Beim Definieren eines Exports über eine **[!UICONTROL Datenextraktionsaktivität (Datei)]** können Sie eine Nachbearbeitung definieren, um die Datei zu komprimieren oder zu verschlüsseln.
 
 Gehen Sie dazu folgendermaßen vor:
 
@@ -42,7 +42,7 @@ Sie können dann auf der Registerkarte **[!UICONTROL Script]** der Aktivität od
 
 In diesem Anwendungsfall wird ein Workflow erstellt, um Daten mit einem im Control Panel installierten Schlüssel zu verschlüsseln und zu exportieren.
 
-![](assets/do-not-localize/how-to-video.png) [Entdecken Sie diese Funktion im Video](#video).
+![](assets/do-not-localize/how-to-video.png) [Funktion im Video kennenlernen](#video).
 
 Die Schritte zum Ausführen dieses Anwendungsfalls lauten wie folgt:
 

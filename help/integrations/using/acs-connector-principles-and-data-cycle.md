@@ -7,8 +7,8 @@ hide: true
 exl-id: 689b6117-5143-4f85-8582-2c74cae72ca2
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '2089'
-ht-degree: 100%
+source-wordcount: '2130'
+ht-degree: 53%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 
 
-Der ACS-Connector ist das Bindeglied zwischen Adobe Campaign v7 und Adobe Campaign Standard. Diese in Campaign v7 integrierte Funktion repliziert automatisch Daten nach Campaign Standard und vereint somit das Beste beider Anwendungen. Campaign v7 verfügt über fortschrittliche Tools zur Verwaltung der primären Marketing-Datenbank. Durch die Replikation der Daten von Campaign v7 nach Campaign Standard können diese in einer benutzerfreundlichen Umgebung verwendet werden.
+Der ACS-Connector ist eine Brücke zwischen Adobe Campaign v7 und Adobe Campaign Standard. Hierbei handelt es sich um eine integrierte Funktion in Campaign v7, mit der Daten automatisch in Campaign Standard repliziert werden, sodass die Vorzüge beider Anwendungen kombiniert werden können. Campaign v7 verfügt über erweiterte Tools zur Verwaltung der primären Marketing-Datenbank. Die Datenreplikation von Campaign v7 ermöglicht es Campaign Standard, die umfangreichen Daten in einer benutzerfreundlichen Umgebung zu nutzen.
 
 ![](assets/acs_connect_puzzle_link_01.png)
 
@@ -24,13 +24,13 @@ In Kombination mit dem ACS-Connector richtet sich Campaign Standard wie bisher a
 
 >[!IMPORTANT]
 >
->Der ACS-Connector ist nur als Teil des Adobe Campaign Prime-Angebots erhältlich. Mehr zur Lizenzierung von Adobe Campaign Prime erfahren Sie bei Ihrem Kundenbetreuer.
+>Der ACS-Connector ist nur als Teil des Adobe Campaign Prime-Angebots verfügbar. Weitere Informationen zur Lizenzierung von Adobe Campaign Prime erhalten Sie von Ihrem Account Manager.
 >
->Der ACS-Connector ist nur für gehostete und Hybridarchitekturen verfügbar, nicht aber für vollständige On-Premise-Installationen.
+>Der ACS-Connector ist nur für gehostete und hybride Architekturen verfügbar. Sie ist nicht für vollständige On-Premise-Installationen verfügbar.
 >
->Um diese Funktion verwenden zu können, stellen Sie mithilfe einer Adobe ID (IMS) eine Verbindung zu Campaign her. Siehe [Verbindung mit Adobe ID](../../integrations/using/about-adobe-id.md).
+>Um diese Funktion verwenden zu können, müssen Sie eine Verbindung zu Campaign mit einer Adobe ID (IMS) herstellen. Siehe [Herstellen einer Verbindung über eine Adobe ID](../../integrations/using/about-adobe-id.md).
 
-In diesem Dokument wird der ACS-Connector beschrieben. In den folgenden Abschnitten erhalten Sie Informationen über die Replikation von Daten und eine Anleitung zur Verwendung replizierter Profile.
+In diesem Dokument werden die Funktionen des ACS-Connectors vorgestellt. Die folgenden Abschnitte enthalten Informationen zur Replikation von Daten durch die Funktion und Anweisungen zur Arbeit mit replizierten Profilen.
 
 * [Prozesse](#process): Überblick über den ACS-Connector und die Verwaltung der Datenreplikation
 * [Implementierung](#implementation): Erste Schritte mit dem ACS-Connector und eine Anleitung zur Replikation einfacher und erweiterter Datensätze
@@ -56,13 +56,13 @@ Der ACS-Connector repliziert regelmäßig die folgenden Elemente von Campaign v7
 * **Dienste**
 * **Landingpages**
 
-Standardmäßig erfolgt die periodische Replikation für den ACS-Connector alle 15 Minuten. Dieser Zeitraum kann auf Ihre Bedürfnisse angepasst werden. Wenn Sie diese Einstellung ändern möchten, kontaktieren Sie Ihren Consultant.
+Standardmäßig wird für den ACS-Connector alle 15 Minuten eine Replikation durchgeführt. Die Zeitspanne der periodischen Replikation kann Ihren Anforderungen entsprechend angepasst werden. Wenden Sie sich an Ihren Berater, wenn Änderungen erforderlich sind.
 
-Die Datenreplikation von Empfängern, Abonnements, Diensten und Landingpages ist inkrementell, d. h. dass nur neue Empfänger und Änderungen an vorhandenen Empfängern von Campaign v7 nach Campaign Standard repliziert werden. Die Replikation einer Zielgruppe findet jedoch in einer einzigen Instanz statt. Sie können eine Zielgruppe in Campaign v7 erstellen und sie einmal nach Campaign Standard replizieren. Die Replikation erfolgt sofort und kann nicht so konfiguriert werden, dass regelmäßig Aktualisierungen durchgeführt werden. Anweisungen finden Sie unter [Synchronisieren von Zielgruppen](../../integrations/using/synchronizing-audiences.md).
+Die Datenreplikation für Empfänger, Abonnements, Services und Landingpages ist inkrementell, d. h. nur neue Empfänger und Änderungen an bestehenden Empfängern werden von Campaign v7 nach Campaign Standard repliziert. Die Replikation für eine Zielgruppe erfolgt jedoch in einer einzigen Instanz. Sie können eine Zielgruppe in Campaign v7 erstellen und sie dann einmal in Campaign Standard replizieren. Die Replikation erfolgt sofort und kann nicht für regelmäßige Aktualisierungen konfiguriert werden. Anweisungen finden Sie unter [Synchronisieren von Zielgruppen](../../integrations/using/synchronizing-audiences.md).
 
 >[!NOTE]
 >
->Die erstmalige Replikation einer großen Datenbank erfordert Geduld, da sie mehrere Stunden dauern kann. Die darauf folgenden Replikationen sind jedoch inkrementell und erfolgen wesentlich schneller.
+>Bitte haben Sie etwas Geduld mit der ersten Replikation einer großen Datenbank, da dies mehrere Stunden dauern kann. Nachfolgende Replikationen sind jedoch inkrementell und viel schneller.
 
 Der ACS-Connector repliziert regelmäßig die folgenden Elemente von Campaign Standard nach Campaign v7:
 
@@ -82,7 +82,7 @@ Die Replikation von Versandkennungen und E-Mail-Logs ermöglicht den Zugriff auf
 
 Der ACS-Connector synchronisiert Quarantänen zwischen Campaign v7 und Campaign Standard.
 
-Beispiel: Ein von Campaign v7 nach Campaign Standard repliziertes Profil enthält eine E-Mail-Adresse. Wenn die E-Mail-Adresse von Campaign Standard unter Quarantäne gestellt wird, werden diese Daten während der nächsten Synchronisation an Campaign v7 übermittelt. Weiterführende Informationen zu Quarantänen finden Sie unter [Quarantäne-Verwaltung](../../delivery/using/delivery-failures-quarantine.md) und [Quarantäne in Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=de).
+Ein Profil, das von Campaign v7 nach Campaign Standard repliziert wurde, enthält beispielsweise eine E-Mail-Adresse. Wenn die E-Mail-Adresse von Campaign Standard unter Quarantäne gestellt wird, werden die Daten bei der nächsten Synchronisierung an Campaign v7 übergeben. Weiterführende Informationen zu Quarantänen finden Sie unter [Quarantäne-Verwaltung](../../delivery/using/delivery-failures-quarantine.md) und [Quarantäne in Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=de).
 
 ### Verwenden von replizierten Profilen {#using-replicated-profiles}
 
@@ -92,36 +92,36 @@ Anweisungen zum Durchführen eines Versands in Campaign Standard mit replizierte
 
 ### Einschränkungen {#limitations}
 
-Replizierte Profile sind zwar unmittelbar für Sendungen verfügbar, unterliegen aber gewissen Einschränkungen in Campaign Standard. Beachten Sie die unten aufgeführten Informationen, um entsprechende Fälle ordnungsgemäß zu handhaben.
+Replizierte Profile stehen für Sendungen jederzeit zur Verfügung, weisen jedoch in Campaign Standard gewisse Einschränkungen auf. Sehen Sie sich die folgenden Elemente an, um zu erfahren, wie Sie sie am besten verwalten.
 
-* **Schreibgeschützte Profile für Campaign Standard**: Replizierte Profile können in Campaign Standard nicht geändert werden. Die Empfänger können jedoch in Campaign v7 bearbeitet werden. Diese Änderungen werden dann automatisch vom ACS-Connector nach Campaign Standard übertragen.
-* **In Campaign Standard erstellte Profile**: Der ACS-Connector repliziert Empfängerdaten in nur eine Richtung, nämlich von Campaign v7 nach Campaign Standard. Deshalb werden von Campaign Standard stammende Profile nicht nach Campaign v7 repliziert.
-* **Grundlegende Empfängerdaten für Campaign Standard**: Der ACS-Connector repliziert für Campaign Standard geeignete Daten. Dazu zählen der Empfängername, die Adresse, die E-Mail-Adresse, die Mobiltelefonnummer, die Privatnummer und sonstige relevante Kontaktinformationen. Wenn Sie für Ihren Workflow zusätzliche in Campaign v7 verfügbare Empfängerfelder und benutzerdefinierte Tabellen für die Zielgruppenbestimmung benötigen, wenden Sie sich bitte an Ihren Consultant.
-* **Importieren unter Quarantäne gestellter Profile**: Listen mit Profilen, die nicht kontaktiert werden möchten, können in Campaign v7 oder Campaign Standard als unter Quarantäne gestellte Profile importiert werden. Der Status der Profile ist in der Quarantänesynchronisation zwischen den Anwendungen enthalten, weshalb diese Profile nicht in Sendungen eingeschlossen werden.
-* **Abmelden von einem Dienst in Campaign Standard**: Abmeldungen von einem Dienst werden nicht von Campaign Standard nach Campaign v7 synchronisiert. Sie können jedoch einen Versand in Campaign Standard so konfigurieren, dass der Abmelde-Link zu Campaign v7 weist. Dann wird das Profil eines Empfängers, der auf den Abmelde-Link klickt, in Campaign v7 aktualisiert und diese Daten werden anschließend nach Campaign Standard repliziert. Siehe [Ändern des Abmelde-Links](../../integrations/using/synchronizing-profiles.md#changing-the-unsubscription-link).
+* **Schreibgeschützte Profile für Campaign Standard**: Replizierte Profile sind in Campaign Standard schreibgeschützt. Sie können jedoch Empfänger in Campaign v7 bearbeiten, und die Änderungen werden in Campaign Standard automatisch vom ACS-Connector aktualisiert.
+* **In Campaign Standard erstellte Profile**: Der ACS-Connector repliziert Empfängerdaten in eine Richtung, von Campaign v7 nach Campaign Standard. Daher werden Profile, die aus Campaign Standard stammen, nicht nach Campaign v7 repliziert.
+* **Grundlegende Empfängerdaten für Campaign Standard**: Der ACS-Connector repliziert Empfängerdaten, die für Campaign Standard geeignet sind. Dazu gehören Namen, Adressen, E-Mail-Adressen, Mobiltelefonnummern, private Telefonnummern und andere relevante Kontaktinformationen der Empfänger. Wenn zusätzliche Empfängerfelder und benutzerdefinierte Zielgruppentabellen, die in Campaign v7 verfügbar sind, für Ihren Workflow von entscheidender Bedeutung sind, wenden Sie sich an Ihren Berater.
+* **Importieren von unter Quarantäne gestellten Profilen**: Listen von Profilen, die nicht kontaktiert werden möchten, können als unter Quarantäne gestellte Profile in Campaign v7 oder Campaign Standard importiert werden. Der Status der Profile wird bei der Quarantänesynchronisierung zwischen den Anwendungen berücksichtigt und wird nicht in Sendungen verwendet.
+* **Abo eines Services in Campaign Standard kündigen**: Die Möglichkeit, das Abo eines Versands zu kündigen, wird nicht von Campaign Standard mit Campaign v7 synchronisiert. Sie können jedoch einen Campaign Standard-Versand so konfigurieren, dass sein Abmelde-Link an Campaign v7 weitergeleitet wird. Das Profil eines Empfängers, der auf den Abmelde-Link klickt, wird in Campaign v7 aktualisiert und die Daten werden nach Campaign Standard repliziert. Siehe [Ändern des Abmelde-Links](../../integrations/using/synchronizing-profiles.md#changing-the-unsubscription-link).
 * Nur E-Mail-Broadlogs und -Trackinglogs werden von Campaign Standard nach Campaign v7 repliziert.
 
 ### Fakturierung {#billing}
 
-Die Fakturierung ist von Ihrer Wahl des Programms für den Versand – Campaign v7 oder Campaign Standard – nicht betroffen. Rechnungsinformationen werden zwischen Campaign v7 und Campaign Standard abgestimmt, d. h. wenn Sie über beide Programme Sendungen an denselben Empfänger durchführen, wird er dennoch nur als ein aktives Profil gewertet.
+Die Fakturierung ist von Ihrer Wahl des Programms für den Versand, Campaign v7 oder Campaign Standard, nicht betroffen. Rechnungsinformationen werden zwischen Campaign v7 und Campaign Standard abgestimmt. Wenn Sie also über beide Programme Sendungen an denselben Empfänger durchführen, wird er dennoch als ein aktives Profil gezählt.
 
 ## Umsetzung {#implementation}
 
-Für den ACS-Connector gibt es zwei Arten von Implementierungen. Beide müssen unbedingt vom Adobe Campaign-Team durchgeführt werden.
+Für den ACS-Connector gibt es zwei Arten von Implementierungen. Beide werden immer vom Adobe Campaign Consulting-Team durchgeführt.
 
 >[!IMPORTANT]
 >
 >Dieser Abschnitt richtet sich ausschließlich an Spezialisten, die einen allgemeinen Überblick über den Implementierungsvorgang und seine wichtigsten Schritte erhalten sollen.
 >
->Versuchen Sie unter keinen Umständen, diese Schritte selbst durchzuführen. Sie dürfen ausschließlich von Adobe Campaign-Consultants vorgenommen werden.
+>Versuchen Sie auf keinen Fall, diese Implementierungen selbst durchzuführen. Es ist ausschließlich den Adobe Campaign-Beratern vorbehalten.
 
-Mit der **einfachen Implementierung** können Sie Empfänger (vordefinierte Felder), Dienste und Abonnements, Web-Anwendungen und Zielgruppen replizieren. Diese Replikation erfolgt in nur einer Richtung von Campaign v7 nach Campaign Standard.
+Mit **einfachen Implementierung** können Sie Empfänger (vordefinierte Felder), Services und Abonnements, Web-Anwendungen und Zielgruppen replizieren. Dies ist eine unidirektionale Replikation von Campaign v7 nach Campaign Standard.
 
 Die **erweiterte Implementierung** kann für komplexere Anwendungsfälle verwendet werden, beispielsweise wenn Sie zusätzliche Empfängerfelder oder benutzerdefinierte Empfängertabellen verwenden (z. B. eine Transaktionstabelle). Siehe [Erweiterte Implementierung](#advanced-implementation).
 
 ### Installieren des Package {#installing-the-package}
 
-Damit Sie diese Funktion verwenden können, muss das **[!UICONTROL ACS-Connector]**-Paket installiert sein. Dies wird vom technischen Adobe-Administrator oder Consultant vorgenommen.
+Um die Funktion verwenden zu können **[!UICONTROL muss das Paket]** ACS-Connector“ installiert sein. Dies wird immer vom technischen Administrator oder Berater von Adobe durchgeführt.
 
 Alle mit dem ACS-Connector in Verbindung stehenden technischen Elemente sind im Knoten **[!UICONTROL Administration > ACS-Connector]** des Explorers verfügbar.
 
@@ -131,14 +131,14 @@ Nach der Installation des Pakets sind zwei technische Workflows unter **[!UICONT
 
 >[!IMPORTANT]
 >
->Versuchen Sie niemals, diese Workflows zu verändern. Diese Workflows sollten niemals eine Fehlermeldung aufweisen oder ausgesetzt werden. Wenden Sie sich in diesem Fall an Ihren Adobe Campaign-Consultant.
+>Versuchen Sie niemals, diese Workflows zu ändern. Sie sollten nie einen Fehler machen oder angehalten werden. Wenden Sie sich in diesem Fall an Ihren Adobe Campaign-Berater.
 
 ![](assets/acs_connect_implementation_3.png)
 
 * **[!UICONTROL `[ACS] Quarantine synchronization`]** (quarantineSync): Dieser Workflow synchronisiert alle Quarantäneinformationen. Alle neuen Quarantänen in Campaign v7 werden nach Campaign Standard repliziert. Alle neuen Quarantänen in Campaign Standard werden nach Campaign v7 repliziert. Dadurch wird sichergestellt, dass alle Ausschlussregeln zwischen Campaign v7 und Campaign Standard synchronisiert werden.
 * **[!UICONTROL `[ACS] Security group synchronization`]** (securityGroupSync): Dieser Workflow dient der Konvertierung von Berechtigungen. Siehe [Konvertierung der Berechtigungen](#rights-conversion).
 
-Die folgenden Replikations-Workflows sind als gebrauchsfertige Vorlagen verfügbar. Sie müssen von Ihrem Adobe Campaign-Consultant implementiert werden.
+Die folgenden Replikations-Workflows sind als „ready to be used“-Vorlagen verfügbar. Sie müssen von Ihrem Adobe Campaign-Berater implementiert werden.
 
 ![](assets/acs_connect_implementation_2.png)
 
@@ -157,9 +157,9 @@ Die folgenden Replikations-Workflows sind als gebrauchsfertige Vorlagen verfügb
 
 ### Standard-Empfängerfelder {#default-recipient-fields}
 
-Etwaige zusätzliche Felder oder benutzerdefinierte Tabellen (z. B. Transaktionstabelle) werden nicht standardmäßig repliziert. Dazu ist eine erweiterte Konfiguration erforderlich. Siehe [Erweiterte Implementierung](#advanced-implementation).
+Wenn Sie zusätzliche Felder oder benutzerdefinierte Tabellen (z. B. Transaktionstabelle) haben, werden diese standardmäßig nicht repliziert. Es muss eine erweiterte Konfiguration durchgeführt werden. Siehe [Erweiterte Implementierung](#advanced-implementation).
 
-Unten finden Sie die Liste mit den vordefinierten Empfängerfeldern, die bei der einfachen Implementierung repliziert werden:
+Unten finden Sie die Liste der Empfängerfelder, die mit der Basisimplementierung repliziert werden. Dies sind die vordefinierten Felder:
 
 <table> 
  <tbody> 
@@ -268,9 +268,9 @@ Unten finden Sie die Liste mit den vordefinierten Empfängerfeldern, die bei der
 
 ### Konvertierung der Berechtigungen {#rights-conversion}
 
-Berechtigungen werden in Campaign v7 und Campaign Standard unterschiedlich gehandhabt. In Campaign v7 erfolgt die Berechtigungsverwaltung ordnerbasiert, während sie in Campaign Standard auf Zugriffsrechten auf Einheiten basiert (Unternehmens-/geografische Einheiten). Jeder Benutzer von Campaign Standard gehört einer bestimmten Sicherheitsgruppe an, in der die jeweiligen Einschränkungsinformationen enthalten sind. Deshalb muss das Berechtigungssystem von Campaign v7 in jenes von Campaign Standard konvertiert werden. Für die Durchführung dieser Berechtigungskonvertierung gibt es mehrere Möglichkeiten. Unten finden Sie ein Beispiel dafür.
+Die Rechte werden in Campaign v7 und Campaign Standard unterschiedlich gehandhabt. In Campaign v7 basiert die Rechteverwaltung auf Ordnern, während sie in Campaign Standard auf Einheitenzugriff basiert (organisatorische/geografische Einheiten). Ein Campaign Standard-Benutzer gehört zur Sicherheitsgruppe, die den Einschränkungskontext enthält. Daher muss das Rechtesystem von Campaign v7 konvertiert werden, damit es dem von Campaign Standard entspricht. Es gibt mehrere Möglichkeiten, die Rechtekonvertierung durchzuführen. Nachfolgend finden Sie ein Beispiel für die Implementierung.
 
-1. Verwenden Sie unter **[!UICONTROL Administration > ACS-Connector > Berechtigungs-Management > Sicherheitsgruppen]** die Schaltfläche **[!UICONTROL Synchronisieren]**, um alle Sicherheitsgruppen in Campaign Standard abzurufen. Native Gruppen von Campaign Standard sind dabei ausgeschlossen.
+1. Verwenden Sie unter **[!UICONTROL Administration > ACS Connector > Rights Management >]** die Schaltfläche **[!UICONTROL Synchronisieren]**, um alle Campaign Standard-Sicherheitsgruppen abzurufen. Vorkonfigurierte Campaign Standard-Gruppen sind ausgeschlossen.
 
    ![](assets/acs_connect_implementation_4.png)
 
@@ -286,9 +286,9 @@ In diesem Abschnitt werden einige Möglichkeiten beschrieben, die die erweiterte
 
 >[!IMPORTANT]
 >
->Diese Informationen sind nur als allgemeine Richtlinien zu verstehen. Wenden Sie sich bitte bezüglich der Implementierung an Ihren Adobe Campaign-Consultant.
+>Diese Informationen können nur als allgemeine Richtlinien verwendet werden. Wenden Sie sich für die Implementierung an Ihren Adobe Campaign-Berater.
 
-Mit der erweiterten Implementierung werden entsprechend den Kundenbedürfnissen benutzerdefinierte Replikations-Workflows hinzugefügt. Hier sind einige Beispiele:
+Die erweiterte Implementierung fügt je nach Kundenanforderungen benutzerdefinierte Replikations-Workflows hinzu. Im Folgenden finden Sie einige Beispiele:
 
 * Versandreplikation
 * Kampagnenreplikation
@@ -299,7 +299,7 @@ Mit der erweiterten Implementierung werden entsprechend den Kundenbedürfnissen 
 
 **Replizieren erweiterter Empfängerfelder**
 
-Mit der einfachen Implementierung werden die vordefinierten Empfängerfelder repliziert. Wenn Sie benutzerdefinierte, zum Empfängerschema hinzugefügte Felder replizieren möchten, müssen Sie diese identifizieren.
+Bei der einfachen Implementierung werden die vordefinierten Empfängerfelder repliziert. Wenn Sie benutzerdefinierte Felder replizieren möchten, die Sie dem Empfängerschema hinzugefügt haben, müssen Sie sie identifizieren.
 
 1. Erstellen Sie unter **[!UICONTROL Administration > ACS-Connector > Daten-Mapping]** ein Zielgruppenbestimmungs-Mapping auf die Tabelle **[!UICONTROL nms:recipient]**.
 
@@ -317,7 +317,7 @@ Mit der einfachen Implementierung werden die vordefinierten Empfängerfelder rep
 
 **Replizieren benutzerdefinierter Profiltabellen**
 
-Mit der einfachen Implementierung wird die vordefinierte Empfängertabelle repliziert. Wenn Sie benutzerdefinierte Empfängertabellen hinzugefügt haben, identifizieren Sie sie folgendermaßen:
+Mit der Basisimplementierung wird die vordefinierte Empfängertabelle repliziert. Wenn Sie benutzerdefinierte Empfängertabellen hinzugefügt haben, können Sie sie folgendermaßen identifizieren.
 
 1. Erstellen Sie unter **[!UICONTROL Administration > ACS-Connector > Daten-Mapping]** ein Zielgruppenbestimmungs-Mapping auf Ihre benutzerdefinierte Profiltabelle.
 

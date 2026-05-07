@@ -6,9 +6,9 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Reporting, Monitoring
 exl-id: dfa9d329-1086-4f6d-9d03-df159cad5495
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: ht
-source-wordcount: '460'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '462'
+ht-degree: 83%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 
 
-Sie können Ihren Bericht ganz nach Bedarf personalisieren und konfigurieren. Bearbeiten Sie dazu die Eigenschaften. Auf Berichteigenschaften können Sie mit der Schaltfläche **[!UICONTROL Eigenschaften]** über dem Diagramm für Aktivitätsabfolgen zugreifen.
+Sie können Ihren Bericht vollständig an Ihre Anforderungen anpassen und konfigurieren. Bearbeiten Sie dazu die Eigenschaften. Auf Berichteigenschaften können Sie mit der Schaltfläche **[!UICONTROL Eigenschaften]** über dem Diagramm für Aktivitätsabfolgen zugreifen.
 
 ![](assets/s_ncs_advuser_report_properties_01.png)
 
@@ -57,7 +57,7 @@ Die Sprachen, in die der Bericht übersetzt werden soll, können konfiguriert we
 
 ![](assets/s_ncs_advuser_report_properties_06.png)
 
-Die Arbeitssprache entspricht der Sprache, in der Sie den Bericht verfassen. Beim Hinzufügen einer Sprache erscheint ein Untertab der Bearbeitungsseite des Berichts.
+Die Bearbeitungssprache ist die Sprache, in der Sie schreiben. Wenn Sie eine Sprache hinzufügen, wird die Unterregisterkarte auf der Seite zur Berichtsbearbeitung angezeigt.
 
 ![](assets/s_ncs_advuser_report_properties_05a.png)
 
@@ -67,10 +67,10 @@ Die Arbeitssprache entspricht der Sprache, in der Sie den Bericht verfassen. Bei
 
 ## Personalisieren des HTML-Renderings {#personalizing-html-rendering}
 
-Im Tab **[!UICONTROL Rendering]** haben Sie die Möglichkeit, den Anzeigemodus der Daten auf der Seite anzupassen. Folgende Elemente können ausgewählt werden:
+Auf der Registerkarte **[!UICONTROL Rendering]** können Sie den Datenanzeigemodus für die Seite personalisieren. Sie können Folgendes auswählen:
 
 * Die Navigation im Bericht: über Schaltflächen oder Links.
-* Die Standardposition der Titel der Berichtelemente. Die Position kann auf Ebene jedes Elements überschrieben werden.
+* Die Standardposition von Beschriftungen für Berichtselemente. Diese Position kann für jedes Element überladen werden.
 * Die Vorlage oder das Thema, das zur Erzeugung der Berichtseiten verwendet wird.
 
 ![](assets/s_ncs_advuser_report_properties_08.png)

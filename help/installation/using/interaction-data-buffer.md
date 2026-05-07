@@ -9,8 +9,8 @@ topic-tags: additional-configurations
 exl-id: 7250b885-0606-466a-bfc2-6dd3cc5a012d
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '299'
-ht-degree: 4%
+source-wordcount: '301'
+ht-degree: 3%
 
 ---
 
@@ -24,7 +24,7 @@ In Adobe Campaign wurde eine **Datenpufferzone** im Interaction -Modul eingefüh
 
 Sie betrifft nur eingehende Interaktionen, entweder durch einen Aufruf (mit oder ohne Aufrufdaten) oder durch eine Statusaktualisierung (updateStatus).
 
-Um beim Schreiben von Vorschlägen für einen Empfänger eine Warteschlange zu vermeiden, generiert ein neuer Prozess eine **Datenpufferzone** mit der Vorschläge **(asynchron)** werden können. Diese Datenpufferzone wird regelmäßig gelesen und geleert. Der Standardzeitraum beträgt etwa eine Sekunde. Die Vorschlagsschreibungen werden daher gruppiert.
+Um beim Schreiben von Vorschlägen für einen Empfänger eine Warteschlange zu vermeiden, generiert ein neuer Prozess eine **Datenpufferzone** mit der Vorschläge **(asynchron)** werden können. Diese Datenpufferzone wird regelmäßig gelesen und geleert. Der Standardzeitraum beträgt etwa eine Sekunde.Die Vorschlagstexte sind daher gruppiert.
 
 >[!NOTE]
 >

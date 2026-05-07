@@ -10,8 +10,8 @@ topic-tags: response-manager
 exl-id: 1a115ca9-2532-4bd3-be77-814e43250c51
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '803'
-ht-degree: 100%
+source-wordcount: '796'
+ht-degree: 35%
 
 ---
 
@@ -19,11 +19,11 @@ ht-degree: 100%
 
 
 
-Dieses Kapitel richtet sich an die für die Konfiguration der Reaktionsverwaltung zuständigen Benutzer. Die Umsetzung dieser Konfiguration erfordert Kenntnisse über Schemaerweiterung, Workflow-Erstellung und -Verwaltung sowie SQL-Programmierung.
+Dieser Abschnitt richtet sich an Personen, die für die Konfiguration der Reaktionsverwaltung zuständig sind. Sie setzt ein gewisses Maß an Wissen über die Erweiterung von Schemata, die Definition von Workflows und die SQL-Programmierung voraus.
 
-Es wird erklärt, wie die Standard-Datenmodelle den Besonderheiten einer Adobe Campaign-externen Transaktionstabelle mittels der Individuentabelle angepasst werden. Diese Individuentabelle kann der in Adobe Campaign verfügbaren Empfängertabelle oder einer anderen Tabelle entsprechen.
+Auf diese Weise können Sie verstehen, wie Sie das Standarddatenmodell an die spezifische Natur einer Transaktionstabelle außerhalb von Adobe Campaign mit der Individuentabelle anpassen. Diese Individuentabelle kann mit der Individuentabelle in Adobe Campaign oder mit einer anderen Tabelle übereinstimmen
 
-Messhypothesen werden vom Kampagnenvorgänge-Workflow **[!UICONTROL operationMgt]** gestartet. Jede Hypothese repräsentiert einen separaten Prozess, der asynchron ausgeführt wird und über einen Ausführungsstatus verfügt (In Bearbeitung, Ausstehend, Abgeschlossen etc.). Er unterliegt einer Steuerung, die Prioritätseinschränkungen, Begrenzungen der Anzahl simultaner Prozesse, Zeitpunkte mit geringer Auslastung und die automatische Ausführung mit Ausführungsfrequenz berücksichtigt und verwaltet.
+Die Messhypothese wird durch den Vorgangsprozess-Workflow ( **[!UICONTROL operationMgt]** ) gestartet. Jede Hypothese stellt einen separaten Prozess dar, der asynchron mit einem Ausführungsstatus ausgeführt wird (bearbeitet, ausstehend, beendet, fehlgeschlagen usw.) und wird von einer Planung gesteuert, die Prioritätsbeschränkungen, die Begrenzung der Anzahl der gleichzeitigen Prozesse, die Seite mit geringer Aktivität und die automatische Ausführung mit Häufigkeit verwaltet.
 
 ## Schemata konfigurieren {#configuring-schemas}
 
@@ -35,33 +35,33 @@ Vor dem Einsatz des Reaktionsmoduls ist eine Anwendungsintegration erforderlich,
 
 ### Standardschemata {#standard-schemas}
 
-Das anwendungseigene Schema **[!UICONTROL nms:remaMatch]** enthält die Tabelle der Reaktionslogs d. h. die Relation zwischen Individuen, Hypothese und Transaktionstabelle. Dieses Schema ist als Erbschema für die endgültige Zieltabelle der Reaktionslogs zu verwenden.
+Das vorkonfigurierte Schema **[!UICONTROL nms:remaMatch]** enthält die Reaktionslog-Tabelle, d. h. die Beziehung zwischen Personen, Hypothese und Transaktionstabelle. Dieses Schema wird als Vererbungsschema für die endgültige Zieltabelle der Reaktionslogs verwendet.
 
-Das ebenfalls anwendungseigene Schema **[!UICONTROL nms:remaMatchRcp]** enthält Reaktionslogs der Adobe Campaign-Empfänger (**[!UICONTROL nms:recipient]**). Um das Schema zu verwenden, muss es zunächst erweitert werden, um anschließend mit der Transaktionstabelle (Bestelldaten) verknüpft werden zu können.
+Das **[!UICONTROL nms:remaMatchRcp]**-Schema wird standardmäßig bereitgestellt und enthält die Speicherung von Reaktionslogs für Adobe Campaign-Empfänger ( **[!UICONTROL nms:recipient]** ). Damit sie verwendet werden kann, muss sie erweitert werden, um einer Transaktionstabelle (mit Käufen usw.) zugeordnet zu werden.
 
 ### Transaktionstabellen und -details {#transaction-tables-and-transaction-details}
 
 Die Transaktionstabelle muss über eine direkte Relation mit den Individuen verfügen.
 
-Sie haben darüber hinaus die Möglichkeit, eine die Details der Transaktionen enthaltende Tabelle hinzuzufügen, die selbst nicht direkt mit den Individuen verbunden ist.
+Sie können auch eine Tabelle mit Transaktionsdetails hinzufügen. Dies steht in keinem direkten Zusammenhang mit Einzelpersonen.
 
-Im Fall eines Kassenzettels zum Beispiel ist eine Transaktionstabelle mit dem Kontakt verbunden (die Kassenzettel-Tabelle) und eine zweite Tabelle (die Detailtabelle), welche die Kassenzettelzeilen enthält, ist nur mit der Kassenzettel-Tabelle verbunden. So kann die Hypothese direkt auf Ebene der mit der Kassenzettel-Tabelle verbundenen Detailtabelle (Kassenzettelzeilen) konfiguriert werden.
+Wenn wir z.B. einen Wareneingang nehmen, ist eine Transaktionstabelle mit einem Kontakt (Wareneingangstabelle) verknüpft und eine Wareneingangspositionstabelle nur mit der Wareneingangstabelle (Detailtabelle). Anschließend können Sie die Hypothese direkt auf der Ebene konfigurieren, auf der die Zahlungsposition mit der Zahlungstabelle verknüpft ist.
 
 >[!NOTE]
 >
->Wenn Sie die Kennung der Zettelzeilen, die das in der Hypothese erwartete Verhalten beschreibt, beibehalten möchten, können Sie das Schema nms:remaMatchRcp erweitern, um die Kennung hinzuzufügen (in diesem Fall wird diesen Feldern keine ROI-Berechnung zugeordnet).
+>Wenn Sie die Wareneingangskennung beibehalten möchten, die das erwartete Verhalten in den Hypothesen beschreibt, können Sie die Tabellenvorlage nms:remaMatchRcp erweitern, um ihr die Kennung hinzuzufügen (in diesem Fall ist keine ROI-Berechnung mit diesen Feldern verknüpft).
 
 Es wird zudem dringend empfohlen, ein Ereignisdatum hinzuzufügen.
 
-Die folgende Grafik stellt die Relationen der unterschiedlichen Tabellen nach erfolgter Konfiguration dar:
+Das folgende Schema stellt die Relationen der unterschiedlichen Tabellen nach erfolgter Konfiguration dar:
 
 ![](assets/response_data_model.png)
 
 ### Reaktionsverwaltung und Empfänger {#response-management-with-adobe-campaign-recipients}
 
-In diesem Beispiel wird unter Verwendung der in Adobe Campaign integrierten Empfängertabelle (**[!UICONTROL nms:recipients]**) eine Tabelle mit Käufen in die Reaktionsverwaltung integriert.
+In diesem Beispiel wird unter Verwendung der in Adobe Campaign integrierten Empfängertabelle (nms) eine Tabelle mit Käufen in **[!UICONTROL Reaktionsverwaltungsmodul:recipient]**.
 
-Die Tabelle der Antwort-Logs eines **[!UICONTROL nms:remaMatchRcp]**-Empfängers wird erweitert, um einen Link zum Bestelltabelle-Schema hinzuzufügen. Im folgenden Beispiel heißt die Bestelltabelle **demo:purchase**.
+Die Tabelle mit Antwortprotokollen bei einem **[!UICONTROL nms:remaMatchRcp]**-Empfänger wird erweitert, um einen Link zum Kauftabellen-Schema hinzuzufügen. Im folgenden Beispiel wird die Kauftabelle als &quot;**&quot;:purchase**.
 
 1. Gehen Sie im Adobe Campaign-Explorer in den Knoten **[!UICONTROL Administration]** > **[!UICONTROL Kampagnen]** > **[!UICONTROL Zielgruppen-Mappings]**.
 1. Machen Sie einen Rechtsklick auf **Empfänger** und wählen Sie **[!UICONTROL Aktionen]** und **[!UICONTROL Optionen der Zielgruppendimension ändern...]** aus.
@@ -74,7 +74,7 @@ Die Tabelle der Antwort-Logs eines **[!UICONTROL nms:remaMatchRcp]**-Empfängers
 
 1. Stellen Sie sicher, dass in der Kategorie **[!UICONTROL Reaktionsverwaltung]** die Option **[!UICONTROL Speicherschema für Reaktionen erzeugen]** aktiviert ist.
 
-   Klicken Sie anschließend auf den Link **[!UICONTROL Zusätzliche Felder konfigurieren...]**, um die zugeordnete Transaktionstabelle auszuwählen und der Erweiterung des Schemas nms:remaMatchRcp die gewünschten Felder hinzuzufügen.
+   Klicken Sie dann auf **[!UICONTROL Zusätzliche Felder definieren…]**, um die zugehörigen Transaktionstabellen auszuwählen und die gewünschten Felder zur Erweiterung des nms:remaMatchRcp-Schemas hinzuzufügen.
 
    ![](assets/delivery_mapping3.png)
 
@@ -104,13 +104,13 @@ name="remaMatchRcp" namespace="cus">
 
 ### Reaktionsverwaltung mit einer benutzerdefinierten Empfängertabelle {#response-management-with-a-personalized-recipient-table}
 
-In diesem Beispiel wird unter Verwendung einer Individuentabelle, also nicht der Adobe Campaign-Empfängertabelle, eine Tabelle mit Bestelldaten in die Reaktionsverwaltung integriert.
+In diesem Beispiel wird unter Verwendung einer Individuentabelle, also nicht der Adobe Campaign-Empfängertabelle, eine Tabelle mit Kaufdaten in die Reaktionsverwaltung integriert.
 
-* Erstellung eines neuen Reaktionslog-Schemas basierend auf dem Schema **[!UICONTROL nms:remaMatch]**.
+* Erstellen Sie ein neues Reaktionslog-Schema, das vom **[!UICONTROL nms:remaMatch]**-Schema abgeleitet ist.
 
-  Da es sich nicht um die Adobe Campaign-Empfängertabelle handelt, ist es notwendig, ein neues Reaktionslog-Schema auf Grundlage des **[!UICONTROL nms:remaMatch]**-Schemas zu erstellen. Anschließend müssen die Relationen zu den Versandlogs und der die Bestelldaten enthaltenden Transaktionstabelle hinzugefügt werden.
+  Da sich die Individuentabelle von der Empfängertabelle in Adobe Campaign unterscheidet, muss ein neues Schema der Antwortprotokolle basierend auf dem Schema **[!UICONTROL nms:remaMatch]** erstellt werden. Anschließend müssen die Relationen zu den Versandlogs und der die Bestelldaten enthaltenden Transaktionstabelle hinzugefügt werden.
 
-  Im folgenden Beispiel werden das Schema **demo:broadLogPers** und die Transaktionstabelle **demo:purchase** verwendet:
+  Im folgenden Beispiel verwenden wir das Schema **demo:broadLogPers** und die Transaktionstabelle **demo:purchase**:
 
   ```
   <srcSchema desc="Linking of a recipient transaction to a hypothesis"    
@@ -129,9 +129,9 @@ In diesem Beispiel wird unter Verwendung einer Individuentabelle, also nicht der
   </srcSchema>
   ```
 
-* Änderung des Hypothesenformulars im Schema **[!UICONTROL nms:remaHypothesis]**.
+* Ändern Sie das Hypothesenformular im **[!UICONTROL nms:remaHypothesis]**-Schema.
 
-  Standardmäßig wird die Liste der Reaktionslogs in den Empfängerlogs angezeigt. Um die neuen, in der vorhergehenden Etappe erstellten Reaktionslogs anzuzeigen, muss daher das Hypothesenformular geändert werden.
+  Standardmäßig ist die Liste der Antwortprotokolle in den Empfängerprotokollen sichtbar. Sie müssen daher das Hypothesenformular ändern, um die im vorherigen Schritt erstellten neuen Antwortprotokolle anzeigen zu können.
 
   Beispiel:
 
@@ -148,11 +148,11 @@ In diesem Beispiel wird unter Verwendung einer Individuentabelle, also nicht der
 
 ## Indikatoren verwalten {#managing-indicators}
 
-Die Option Response Manager wird mit einer Liste vordefinierter Indikatoren geliefert. Sie haben jedoch die Möglichkeit, andere Indikatoren mit benutzerdefinierten Messungen hinzuzufügen.
+Das Modul Antwort-Manager enthält eine Liste vordefinierter Indikatoren. Sie können jedoch weitere personalisierte Messindikatoren hinzufügen.
 
 Erweitern Sie hierzu die Hypothesentabelle, indem Sie zwei Felder für jeden neuen Indikator hinzufügen:
 
-* das erste für die Zielgruppe,
+* das erste für die Zielpopulation,
 * das zweite für die Kontrollgruppe.
 
 Beispiel:

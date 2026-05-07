@@ -10,7 +10,7 @@ exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '415'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -37,7 +37,7 @@ Im Rahmen einer Promotion-Initiative für Campaign v8 haben wir mit der Neuorga
 
 Die Veröffentlichungsstatus wurden gekürzt und vereinfacht. [Weitere Informationen](rn-overview.md)
 
-Die Installation von Linux-Paketen wurde für Version 7.4.1 aktualisiert. [Weitere Informationen](../../installation/using/installing-packages-with-linux.md)
+Die Installation von Linux-Paketen wurde für Version 7.4.1 aktualisiert. [Weitere Informationen](../../installation/using/installing-packages-with-linux.md)
 
 ### Juni 2024 {#june-2024}
 

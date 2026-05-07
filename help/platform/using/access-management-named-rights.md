@@ -8,14 +8,14 @@ level: Beginner
 exl-id: 07470a91-d8d2-4c41-9555-05522c8068f0
 source-git-commit: 02ecc0e6bb3bd361f512baeefc9e0f2271063387
 workflow-type: tm+mt
-source-wordcount: '665'
-ht-degree: 83%
+source-wordcount: '711'
+ht-degree: 76%
 
 ---
 
 # Spezifische Berechtigungen zum Einrichten von Zugriffsberechtigungen verwenden{#named-rights}
 
-Adobe Campaign bietet standardmäßig eine Reihe von spezifischen Berechtigungen, die Benutzern und Gruppen bestimmte Rechte einräumen. Diese Berechtigungen können über den Verzeichnisknoten **[!UICONTROL Administration > Zugriffe > Spezifische Berechtigungen]** bearbeitet werden.
+Standardmäßig bietet Adobe Campaign eine Reihe von spezifischen Berechtigungen, mit denen Sie die den Benutzenden und Benutzergruppen zugewiesenen Berechtigungen definieren können. Diese Berechtigungen können über den Verzeichnisknoten **[!UICONTROL Administration > Zugriffsverwaltung > Spezifische Berechtigungen]** bearbeitet werden.
 
 ![](assets/s_ncs_admin_named_rights.png)
 
@@ -25,7 +25,7 @@ Es handelt sich um folgende Berechtigungen:
 
   >[!IMPORTANT]
   >
-  >**Nach der Migration zu IMS:** Nach der Migration zu Adobe Identity Management System (IMS) gewähren alle Produktprofile oder spezifischen Berechtigungen, die das Wort „admin“ im Namen enthalten (z. B. „administrators“, „admin“, „admins“ usw.), automatisch Zugriff auf das Campaign Control Panel. Es wird empfohlen, in spezifischen Berechtigungen oder Rollennamen nicht „admin“ zu verwenden, es sei denn, Sie möchten, dass diese Benutzer Zugriff auf das Control Panel haben. Erfahren Sie mehr über [IMS-Migration](../../technotes/using/migrate-users-to-ims.md) und [Verwalten des Control Panel-Zugriffs](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=de){target="_blank"}.
+  >**Nach der Migration zu IMS:** Sobald Sie zu Adobe Identity Management System (IMS) migriert haben, alle Produktprofile oder spezifischen Berechtigungen, die das Wort „admin“ im Namen enthalten (z. B. „administrators“, „admin“, „admins“ usw.) gewährt automatisch Zugriff auf das Campaign Control Panel. Es wird empfohlen, in spezifischen Berechtigungen oder Rollennamen nicht „admin“ zu verwenden, es sei denn, Sie möchten, dass diese Benutzer Zugriff auf das Control Panel haben. Erfahren Sie mehr über [IMS-Migration](../../technotes/using/migrate-users-to-ims.md) und [Verwalten des Control Panel-Zugriffs](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=de){target="_blank"}.
 
 * **[!UICONTROL VALIDIERUNGSADMINISTRATION]**: Sie können verschiedene Validierungsschritte innerhalb von Workflows und Sendungen festlegen, um sicherzustellen, dass der aktuelle Status durch einen zugewiesenen Benutzer oder eine zugewiesene Gruppe validiert wurde. Benutzer mit der Berechtigung **[!UICONTROL VALIDIERUNGSADMINISTRATION]** können Validierungsschritte festlegen und auch einen Benutzer oder eine Benutzergruppe zuweisen, der bzw. die diese Schritte validieren soll.
 

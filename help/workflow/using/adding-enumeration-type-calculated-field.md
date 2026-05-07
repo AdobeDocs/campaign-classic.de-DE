@@ -10,8 +10,8 @@ hide: true
 exl-id: 3f606d3a-0af5-4315-bb08-1b21a71f1721
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '518'
-ht-degree: 97%
+source-wordcount: '519'
+ht-degree: 63%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 97%
 
 
 
-In der folgenden Abfrage wird ein **[!UICONTROL berechnetes Aufzählungsfeld]** hinzugefügt. In der Ergebnisanzeige soll eine Spalte erzeugt werden, die das Geschlecht der Empfänger anzeigt: männlich (1), weiblich (2) oder unbestimmt (0).
+Hier möchten wir eine Abfrage mit einem berechneten Feld vom Typ **[!UICONTROL Auflistungen]** erstellen. Dieses Feld generiert eine zusätzliche Spalte im Datenvorschaufenster. In dieser Spalte werden die numerischen Werte angegeben, die als Ergebnis für jeden Empfänger (0, 1 und 2) zurückgegeben werden. Jedem Wert in der neuen Spalte wird ein Geschlecht zugewiesen: „Männlich“ für „1“, „Weiblich“ für „2“ oder „Nicht angegeben“, wenn der Wert „0“ ist.
 
 * Welche Tabelle soll ausgewählt werden?
 
@@ -56,7 +56,7 @@ Gehen Sie wie folgt vor:
 
    ![](assets/query_editor_nveau_76.png)
 
-   Konfigurieren Sie **Quellwert** und **Zielwert**. Der Zielwert erleichtert die Lesbarkeit des Abfrageergebnisses, d. h. des Geschlechts der Empfänger (0, 1 oder 2).
+   Definieren der **Source**- und **Destination**-Werte: Der Zielwert erleichtert das Lesen des Abfrageergebnisses. Diese Abfrage sollte das Empfängergeschlecht zurückgeben, und das Ergebnis ist entweder 0, 1 oder 2.
 
    Klicken Sie für jedes Quell- und Zielwertpaar auf **[!UICONTROL Hinzufügen]** rechts oberhalb der **[!UICONTROL Liste der Aufzählungswerte]**:
 
@@ -80,10 +80,10 @@ Gehen Sie wie folgt vor:
 
    ![](assets/query_editor_nveau_78.png)
 
-   Wenn Sie beispielsweise in der **[!UICONTROL Liste der Aufzählungswerte]** das Geschlecht „2“ nicht eingeben und die Funktion **[!UICONTROL Warnhinweis generieren und fortfahren]** des Feldes **[!UICONTROL Andernfalls]** ausgewählt ist, erhalten Sie ein Warnprotokoll. Dieses Protokoll zeigt an, dass das Geschlecht „2“ (weiblich) nicht eingegeben wurde. Dieser Hinweis wird im Bereich **[!UICONTROL Beim Export erzeugte Logs]** des Datenvorschaufensters angezeigt.
+   Wenn Sie beispielsweise in der **[!UICONTROL Liste der Auflistungswerte]** kein Geschlecht „2“ eingeben und die Funktion **[!UICONTROL Warnung erzeugen und fortfahren]** des Felds **[!UICONTROL In anderen]**) ausgewählt ist, erhalten Sie ein Warnprotokoll. Dieses Protokoll gibt an, dass Geschlecht „2“ (Weiblich) nicht eingegeben wurde. Dieser Hinweis wird im Bereich **[!UICONTROL Beim Export erzeugte Logs]** des Datenvorschaufensters angezeigt.
 
    ![](assets/query_editor_nveau_79.png)
 
-   Nehmen wir ein anderes Beispiel und gehen wir davon aus, dass der Aufzählungswert „2“ nicht eingegeben wurde. Wählen Sie die Funktion **[!UICONTROL Fehler erzeugen und Zeile zurückweisen]**: Sämtliche Empfangenden des Geschlechts „2“ werden als Fehler ausgegeben und alle anderen Informationen der Zeile (Nachname, Vorname usw.) werden nicht exportiert. Im Feld **[!UICONTROL Beim Export erzeugte Logs]** des Datenvorschaufensters wird eine entsprechende Fehlernachricht ausgegeben. Dieses Protokoll zeigt an, dass der Aufzählungswert „2“ nicht eingegeben wurde.
+   Nehmen wir ein anderes Beispiel und gehen wir davon aus, dass der Aufzählungswert „2“ nicht eingegeben wurde. Wählen Sie die Funktion **[!UICONTROL Fehler erzeugen und Zeile ablehnen]** aus: Alle Empfänger mit „Geschlecht 2“ melden Anomalien und die anderen Informationen in der Zeile (Vor- und Nachname usw.) wird nicht exportiert. Im Feld **[!UICONTROL Beim Export erzeugte Logs]** des Datenvorschaufensters wird eine entsprechende Fehlernachricht ausgegeben. Dieses Protokoll zeigt an, dass der Aufzählungswert „2“ nicht eingegeben wurde.
 
    ![](assets/query_editor_nveau_80.png)

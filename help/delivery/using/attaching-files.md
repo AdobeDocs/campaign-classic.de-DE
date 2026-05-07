@@ -9,8 +9,8 @@ hide: true
 exl-id: db65e83e-276f-4163-98c3-3658a48acffc
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1082'
-ht-degree: 100%
+source-wordcount: '1085'
+ht-degree: 85%
 
 ---
 
@@ -65,7 +65,7 @@ Sobald Sie die Datei ausgewählt haben, wird sie auf den Server geladen, um zum 
 
 ## Berechneten Anhang erstellen {#creating-a-calculated-attachment}
 
-Bei berechneten Anhängen ist es möglich, den Titel des Anhangs zum Zeitpunkt der Analyse oder des Versandstarts zu berechnen. Außerdem können so Empfänger-spezifische Titel erstellt werden. Darüber hinaus besteht die Möglichkeit, die Anhänge als personalisierte PDF-Dateien zu versenden.
+Wenn Sie einen berechneten Anhang erstellen, kann der Name des Anhangs bei der Analyse oder beim Versand jeder Nachricht berechnet werden und vom Empfänger abhängen. Es kann auch personalisiert und in PDF konvertiert werden.
 
 ![](assets/s_ncs_user_wizard_attachment.png)
 
@@ -89,7 +89,7 @@ Folgende Optionen stehen zur Verfügung:
 Wenn der Anhang eine lokale Datei ist, wählen Sie die Option **[!UICONTROL Dateiname wird bei der Erstellung der Versandvorlage angegeben]**. Die Datei wird lokal ausgewählt und auf den Server geladen. Gehen Sie wie folgt vor:
 
 1. Geben Sie im Feld **[!UICONTROL Lokale Datei]** den gewünschten Anhang an.
-1. Vergeben Sie gegebenenfalls einen Titel. Der Titel ersetzt den Dateinamen bei der Anzeige in Messaging-Systemen. Wenn nicht anders angeben, wird standardmäßig der Dateiname verwendet.
+1. Vergeben Sie gegebenenfalls einen Titel. Die Bezeichnung ersetzt den Dateinamen, wenn er in Messaging-Systemen angezeigt wird. Wenn nichts angegeben ist, wird standardmäßig der Dateiname verwendet.
 
    ![](assets/s_ncs_user_wizard_email_calc_attachement_02.png)
 
@@ -110,7 +110,7 @@ Gehen Sie wie folgt vor, um diese Art von Anhang zu konfigurieren:
 1. Wählen Sie die hochzuladende Datei aus.
 1. Vergeben Sie gegebenenfalls einen Titel.
 1. Wählen Sie die Option **[!UICONTROL Datei auf den Server laden]**, klicken Sie auf den Link **[!UICONTROL Auf dem Server aktualisieren]** und starten Sie den Upload in dem sich öffnenden Fenster.
-1. Sie können eine Vorschau erstellen, indem Sie auf einen Empfänger klicken.
+1. Sie können eine Vorschau anzeigen. Wählen Sie dazu einen Empfänger aus.
 
    ![](assets/s_ncs_user_wizard_email_calc_attachement_07.png)
 
@@ -147,14 +147,14 @@ Sie können den Namen des Anhangs während der Versandvorbereitung berechnen las
 
 ### Personalisierte Datei anhängen {#attach-a-personalized-file}
 
-Bei der Auswahl des Anhangs können Sie die Option **[!UICONTROL Dateiname wird bei der Absendung für jede Nachricht berechnet (kann vom Empfänger abhängen)]** auswählen. Dann können Sie die Personalisierungsdaten des Empfängers dem Namen der zu sendenden Datei zuordnen.
+Bei der Auswahl des Anhangs können Sie die Option **[!UICONTROL Der Dateiname wird für jeden Empfänger während des Versands berechnet (kann vom Empfänger abhängen)]** auswählen. Anschließend können Sie die Personalisierungsdaten der Empfänger dem Namen der zu sendenden Datei zuordnen.
 
 >[!NOTE]
 >
 >Diese Option ist nur für Sendungen vorgesehen, die durch einen externen Vorgang oder einen Workflow abgeschickt werden.
 
 1. Geben Sie den Titel an, der für den Anhang verwendet werden soll.
-1. Geben Sie den Pfad und den genauen Namen der Datei im Editor an. Wenn der Dateiname je nach Empfänger angepasst werden soll, können Sie die entsprechenden Personalisierungsfelder einfügen.
+1. Geben Sie den Pfad und den genauen Namen der Datei im Eingabefenster an. Wenn der Dateiname personalisiert ist, können Sie die Personalisierungsfelder für die entsprechenden Werte verwenden.
 
    ![](assets/s_ncs_user_wizard_email_calc_attachement_010.png)
 
@@ -187,6 +187,6 @@ Im **[!UICONTROL Erweitert]**-Tab können Sie für Anhänge die folgenden Option
 * Auswahl der Empfänger, die den Anhang erhalten sollen. Kreuzen Sie die Option **[!UICONTROL Empfängerfilter bezüglich des Anhangs aktivieren]** an und geben Sie im Eingabefenster in Form eines JavaScripts das Auswahlkriterium an.
 * Erstellung eines Scripts, um den Dateinamen zu personalisieren.
 
-  Geben Sie unter Verwendung der Dropdown-Liste mit den Personalisierungsfeldern im Eingabefenster den gewünschten Text ein. In unten stehendem Beispiel wurde der Dateiname mit dem Tagesdatum und dem Nachnamen des Empfängers personalisiert.
+  Geben Sie Ihren Text im Fenster ein und verwenden Sie die Personalisierungsfelder in der Dropdown-Liste. Im folgenden Beispiel wird der Dateiname so personalisiert, dass er das heutige Datum und den Namen des Empfängers enthält.
 
   ![](assets/s_ncs_user_wizard_email_calc_attachement_09.png)

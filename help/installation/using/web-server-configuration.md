@@ -9,8 +9,8 @@ topic-tags: prerequisites-and-recommendations-
 exl-id: fc0d3f16-5f62-473d-a1de-aab574eff734
 source-git-commit: dba90a154e08400ae6ab6478623a50d48d72207c
 workflow-type: tm+mt
-source-wordcount: '285'
-ht-degree: 32%
+source-wordcount: '332'
+ht-degree: 29%
 
 ---
 
@@ -81,5 +81,5 @@ Unten finden Sie einige der wichtigsten Best Practices in Bezug auf die Konfigur
 
 Verwandte Themen:
 
-* [Übersicht über die Adobe Marketing Cloud-Konformität](https://experienceleague.adobe.com/de/docs/experience-platform/landing/governance-privacy-security/overview#privacy)
+* [Adobe Marketing Cloud-Compliance - Übersicht](https://experienceleague.adobe.com/de/docs/experience-platform/landing/governance-privacy-security/overview#privacy)
 * [Adobe Campaign-Sicherheitsübersicht](https://experienceleague.adobe.com/de/docs/experience-platform/landing/governance-privacy-security/overview#security)

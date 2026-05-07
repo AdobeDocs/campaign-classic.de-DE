@@ -9,8 +9,8 @@ topic-tags: connectors
 exl-id: 0fdf8259-5cab-4a9d-adb3-6c55ec5c8851
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '329'
-ht-degree: 66%
+source-wordcount: '330'
+ht-degree: 45%
 
 ---
 
@@ -31,11 +31,11 @@ Für die Verbindung mit einer externen Sybase IQ-Datenbank in FDA sind zusätzli
 >
 >Stellen Sie vor dem Start sicher **dass sich das Paket** unixodbc“ auf dem Server befindet.
 
-1. Installieren Sie **iq_odbc**. Nach Abschluss der Installation wird möglicherweise ein Fehler angezeigt, der ignoriert werden kann.
+1. Installieren Sie **iq_odbc**. Am Ende der Installation kann ein Fehler auftreten. Dieser Fehler kann ignoriert werden.
 
-1. Installieren Sie **iq_client_common**. Nach Abschluss der Installation wird möglicherweise ein Java-Fehler angezeigt, der ignoriert werden kann.
+1. Installieren Sie **iq_client_common**. Am Ende der Installation kann ein Java-Fehler auftreten. Dieser Fehler kann ignoriert werden.
 
-1. Konfigurieren sie den ODBC-Treiber. Die Konfiguration kann in den Standarddateien ausgeführt werden: /etc/odbc.ini für allgemeine Parameter und /etc/odbcinst.ini zur Deklarierung der Treiber:
+1. Konfigurieren Sie den ODBC-Treiber. Die Konfiguration kann in den Standarddateien durchgeführt werden: /etc/odbc.ini für allgemeine Parameter und /etc/odbcinst.ini für deklarierende Treiber:
 
    * **/etc/odbc.ini** (ersetzen Sie Werte wie `<server_alias>`-Zeichen durch Ihre eigenen):
 

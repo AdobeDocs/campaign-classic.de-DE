@@ -7,8 +7,8 @@ hide: true
 exl-id: b6005eae-5fbc-4e22-ab3a-c9b7ed6506f6
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '538'
-ht-degree: 100%
+source-wordcount: '546'
+ht-degree: 62%
 
 ---
 
@@ -16,15 +16,15 @@ ht-degree: 100%
 
 
 
-Die **HTTP-Übertragung** lädt Dateien über eine explizite URL, ein externes Konto oder eine Adobe Campaign-Instanz unter Verwendung des Hypertext Transfer Protocols (HTTP). Sowohl die GET- als auch die POST-Methode können zur Anwendung kommen.
+Die **HTTP-Übertragung** lädt Dateien über eine explizite URL, ein externes Konto oder eine Adobe Campaign-Instanz herunter. Das HTTP-Protokoll wird verwendet. Dabei kann es sich um einen GET- oder POST-Download handeln.
 
 ## Eigenschaften {#properties}
 
 1. **Auswahl der Webdatei**
 
-   Die Angabe der zu übertragenden Datei kann entweder über eine explizite URL, über ein externes HTTP-Konto oder über eine Adobe Campaign-Instanz erfolgen. Folgende Parameter stehen zur Verfügung:
+   Um die herunterzuladende Datei anzugeben, können Sie die Datei-URL eingeben, das externe HTTP-Konto verwenden, in dem die Datei gespeichert ist, oder die Datei über eine Adobe Campaign-Instanz laden. Die verfügbaren Parameter werden nachfolgend beschrieben:
 
-   * **[!UICONTROL Explizite URL]**: Die URL wird im entsprechenden Feld angegeben. Die URL kann Variablen enthalten.
+   * Um die URL der herunterzuladenden Datei direkt einzugeben, wählen Sie die Option **[!UICONTROL Explizite URL]** und geben Sie die URL in das entsprechende Feld ein. Diese URL kann mit Variablendaten erstellt werden.
 
      ![](assets/download_web_edit.png)
 
@@ -50,9 +50,9 @@ Die **HTTP-Übertragung** lädt Dateien über eine explizite URL, ein externes K
    * **[!UICONTROL Anzahl Dateien]**: Geben Sie die Anzahl an Dateien an, die maximal im Speicherverzeichnis beibehalten werden soll.
    * **[!UICONTROL Maximale Größe (in MB)]**: Geben Sie die Größe an, die das Speicherverzeichnis nicht überschreiten darf (in Megabytes).
 
-   Jede Datei wird mindestens 24 Stunden aufbewahrt, bevor Sie den Bereinigungsregeln unterzogen wird. Die Bereinigung erfolgt zu Beginn der Aktivität und berücksichtigt daher nicht die Dateien der aktuellen Workflow-Ausführung.
+   Jede Datei wird 24 Stunden lang aufbewahrt, bevor sie den definierten Bereinigungsregeln unterliegt. Die Bereinigung erfolgt unmittelbar vor Beginn der Aktivität und berücksichtigt daher nicht die laufende Workflow-Datei.
 
-   Die Löschung beginnt jeweils mit den ältesten Dateien und endet mit den neuesten. Die ältesten Dateien werden gelöscht bis beide Bereinigungsregeln geprüft wurden. Wenn beispielsweise die maximale Anzahl auf 100 begrenzt wurde, enthält das Speicherverzeichnis stets die 100 vor Beginn des Workflows neuesten Dateien, zuzüglich der vom laufenden Workflow übertragenen Dateien.
+   Dateien werden in Abhängigkeit ihres Alters (vom ältesten zum neuesten) gelöscht. Die ältesten Dateien werden bereinigt, bis beide Bereinigungsregeln überprüft wurden. Wenn also ein Limit von 100 Dateien definiert ist, bedeutet dies, dass das Speicherverzeichnis immer die 100 neuesten Dateien vor Beginn des Workflows sowie diejenigen enthält, die im laufenden Workflow verarbeitet werden.
 
    Wenn Sie für die Optionen **[!UICONTROL Anzahl Dateien]** und **[!UICONTROL Maximale Größe (in MB)]** keine Grenzwerte vorschreiben möchten, können Sie jeweils den Wert 0 angeben.
 

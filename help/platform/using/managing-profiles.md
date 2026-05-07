@@ -10,8 +10,8 @@ exl-id: e1d0556a-6f30-4863-9025-eb9c1b8b53d3
 hide: true
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '141'
-ht-degree: 100%
+source-wordcount: '164'
+ht-degree: 43%
 
 ---
 
@@ -21,11 +21,11 @@ ht-degree: 100%
 
 ## Empfängerknoten im Navigationsbaum {#recipient-tree}
 
-Erweiterte Funktionalitäten zur Empfängerverwaltung stehen über den Navigationsbaum zur Verfügung. Klicken Sie hierfür auf der Adobe Campaign-Startseite auf die **[!UICONTROL Explorer]**-Schaltfläche in der Symbolleiste.
+Um auf die erweiterten Empfängerverwaltungsfunktionen zugreifen zu können, müssen Sie die Adobe Campaign-Baumstruktur bearbeiten. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Explorer]** in der Symbolleiste.
 
-Der Empfängerordner befindet sich standardmäßig im Knoten **[!UICONTROL Profile und Zielgruppen]** des Adobe Campaign-Navigationsbaums. Sie können von diesem Knoten ausgehend weitere Ordner oder Unterordner erstellen, um Empfängerprofile zu speichern.
+Standardmäßig werden Empfänger im Knoten **[!UICONTROL Profile und Zielgruppen]** der Adobe Campaign-Baumstruktur gespeichert. Vom selben Knoten aus können Sie einen oder mehrere Ordner und Unterordner erstellen, um Empfängerprofile zu speichern.
 
-Jeder Knoten entspricht einem Ordner. Die Daten eines Ordners sind als in sich abgeschlossen zu betrachten. Somit würde sich z. B. die Deduplizierung im Falle von mehreren Empfängerordnern als schwierig erweisen.
+Jeder Knoten fällt mit einem Ordner zusammen. Die Daten jedes Ordners müssen als voneinander getrennt betrachtet werden. Dies bedeutet, dass die Verwaltung von Dubletten für mehrere Empfängerordner schwieriger ist.
 
 >[!NOTE]
 >

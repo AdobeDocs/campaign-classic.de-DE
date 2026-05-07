@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Voraussetzungen für die Campaign-Installation unter Linux
-description: Voraussetzungen für die Installation von Kampagne unter Linux
+description: Voraussetzungen für die Campaign-Installation unter Linux
 feature: Installation, Instance Settings
 badge-v7-prem: label="Nur On-Premise/Hybrid" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=de" tooltip="Gilt nur für Hybrid- und On-Premise-Bereitstellungen"
 audience: installation
@@ -10,8 +10,8 @@ topic-tags: installing-campaign-in-linux-
 exl-id: acbd2873-7b1c-4d81-bc62-cb1246c330af
 source-git-commit: f032ed3bdc0b402c8281bc34e6cb29f3c575aaf9
 workflow-type: tm+mt
-source-wordcount: '829'
-ht-degree: 3%
+source-wordcount: '854'
+ht-degree: 5%
 
 ---
 
@@ -35,11 +35,11 @@ Zur Erinnerung: Die folgenden Komponenten müssen installiert und ordnungsgemä�
 
 ### Bibliotheken {#libraries}
 
-Um Adobe Campaign unter Linux zu installieren, stellen Sie sicher, dass Sie über die erforderlichen Bibliotheken verfügen.
+Stellen Sie zum Installieren von Adobe Campaign unter Linux sicher, dass Sie über die erforderlichen Bibliotheken verfügen.
 
-* Bibliothek C muss den TLS-Modus (Thread Local Storage) unterstützen können. Dieser Modus ist in den meisten Fällen aktiv, außer bei einigen Kerneln, für die die Xen-Unterstützung deaktiviert wurde.
+* Bibliothek C muss den TLS-Modus (Thread Local Storage) unterstützen. Dieser Modus ist in den meisten Fällen aktiv, mit Ausnahme einiger Kernels, für die die Xen-Unterstützung deaktiviert wurde.
 
-  Um dies zu überprüfen, können Sie z. B. den **Befehl uname -a | grep xen** verwenden.
+  Um dies zu überprüfen, können Sie den Befehl **uname -a | grep xen** zum Beispiel verwenden.
 
   Wenn der Befehl keine leere Zeile zurückgibt, bedeutet dies, dass die Konfiguration korrekt ist.
 
@@ -51,7 +51,7 @@ Um Adobe Campaign unter Linux zu installieren, stellen Sie sicher, dass Sie übe
 
 ### SELinux {#selinux}
 
-Bei der Verwendung muss das SELinux-Modul ordnungsgemäß konfiguriert sein.
+Wenn das SELinux-Modul verwendet wird, muss es ordnungsgemäß konfiguriert sein.
 
 Melden Sie sich dazu als root an und geben Sie den folgenden Befehl ein:
 
@@ -95,9 +95,9 @@ dnf install xorg-x11-fonts-misc xorg-x11-fonts-75dpi dejavu-lgc-sans-fonts  deja
 
 ### Schriftarten für japanische Instanzen {#fonts-for-japanese-instances}
 
-Schriftarten bestimmter Zeichen sind erforderlich, damit die Japanisch Instanzen in bestellen Berichten in das PDF-Format exportieren können.
+Für japanische Instanzen sind die Schriftarten bestimmter Zeichen erforderlich, um die Berichte in das PDF-Format zu exportieren.
 
-Fügen Sie in Debian den folgenden Befehl hinzu:
+Fügen Sie in Debian den Befehl hinzu:
 
 ```
 apt install fonts-ipafont
@@ -110,7 +110,7 @@ dnf install epel-release # if required
 dnf install vlgothic-fonts
 ```
 
-### LibreOffice für Debian installieren {#installing-libreoffice-for-debian}
+### Installieren von LibreOffice für Debian {#installing-libreoffice-for-debian}
 
 Für Debian sind die folgenden Konfigurationen erforderlich:
 
@@ -120,7 +120,7 @@ Für Debian sind die folgenden Konfigurationen erforderlich:
    apt-get install libreoffice-writer libreoffice-calc libreoffice-java-common
    ```
 
-1. Installieren die folgenden Schriftarten aus (optional, aber für Japanisch Instanzen dringend empfohlen):
+1. Installieren Sie die folgenden Schriftarten (optional, wird aber für japanische Instanzen dringend empfohlen):
 
    ```
    apt-get install fonts-ipafont
@@ -128,15 +128,15 @@ Für Debian sind die folgenden Konfigurationen erforderlich:
 
 ### Installieren von LibreOffice für CentOS {#installing-libreoffice-for-centos}
 
-Die folgenden Konfigurationen sind für CentOS notwendig:
+Die folgenden Konfigurationen sind mit CentOS erforderlich:
 
 ```
 yum install libreoffice-headless libreoffice-writer libreoffice-calc
 ```
 
-## Zugriffsschichten auf Datenbanken {#database-access-layers}
+## Datenbankzugriffsebenen {#database-access-layers}
 
-Die Zugriffsschichten für die Datenbank-Engine, die Sie verwenden, müssen auf Ihrem Server installiert sein und über die Adobe Campaign Konto zugänglich sein. Versionen und Installationsmodi können je nach verwendeter Datenbank-Engine variieren.
+Die Zugriffsebenen für die von Ihnen verwendete Datenbank-Engine müssen auf Ihrem Server installiert sein und über das Adobe Campaign-Konto zugänglich sein. Versionen und Installationsmodi können je nach verwendeter Datenbank-Engine variieren.
 
 Die unterstützte Pilotversion wird in [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md) erläutert.
 
@@ -150,13 +150,13 @@ Die Verwendung von PostgreSQL mit Adobe Campaign erfordert auch die Installation
 
 ### Oracle {#oracle}
 
-Rufen Sie die Bibliothek Version für 64-Bit-Debian ab, z.B.: libclntsh.so, libclntsh.so.19.1 **,** libclntsh.so.18.1 **,** libclntsh.so.12.1 **,** libclntsh.so.11.1 **oder** libclntsh.so.10.1 **.**&#x200B;**&#x200B;**
+Rufen Sie die Bibliotheksversion für 64-Bit-Debian ab, d. h.: **libclntsh.so**, **libclntsh.so.19.1**, **libclntsh.so.18.1**, **libclntsh.so.12.1**, **libclntsh.so.11.1** oder **libclntsh.so.10.1**.
 
-Sie können ein Linux-RPM-Paket vom Oracle Technology Network erhalten.
+Sie können ein Linux RPM-Paket über das Oracle Technology Network erhalten.
 
 >[!NOTE]
 >
->Wenn Sie den Oracle-Client bereits installiert haben, aber die globale Umgebung (für Instanz: /etc/Profil) nicht richtig konfiguriert ist, können Sie dem **nl6/customer.sh-Skript** fehlende Informationen hinzufügen Weitere Informationen hierzu finden Sie unter [Umgebung Variablen](../../installation/using/installing-packages-with-linux.md#environment-variables).
+>Wenn Sie den Oracle-Client bereits installiert haben, die globale Umgebung (z. B.: /etc/profile) jedoch nicht ordnungsgemäß konfiguriert ist, können Sie dem Skript **nl6/customer.sh** fehlende Informationen hinzufügen. Weitere Informationen hierzu finden Sie unter [Umgebungsvariablen](../../installation/using/installing-packages-with-linux.md#environment-variables).
 
 **Fehlerbehebung und Best Practices**
 
@@ -168,7 +168,7 @@ Wenn Sie in der Client-Konsole feststellen, dass es unerwartete Zeitverzögerung
 
    Bei der Verwendung der Oracle Instant Client-Version wurden verschiedene Probleme festgestellt. Darüber hinaus ist es unmöglich, die Zeitzonendatei auf dem Instant Client zu ändern.
 
-1. Stellen Sie sicher, dass die Client-**und die**&#x200B;**Datenbankserverversion** identisch **&#x200B;**&#x200B;sind.
+1. Stellen Sie sicher, dass **Client-Version** und die **Datenbankserver-Version** identisch **&#x200B;**.
 
    Das Mischen von Versionen trotz der Kompatibilitätsmatrix von Oracle und der Empfehlung, Client- und Serverversionen aufeinander abzustimmen, verursacht bekanntermaßen Probleme.
 

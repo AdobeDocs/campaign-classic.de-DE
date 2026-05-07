@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 8e20391d-3628-4d0c-b413-c34e046ae810
 source-git-commit: bf45c8bcdd41e614f9be09bc0fd6385707159841
-workflow-type: ht
-source-wordcount: '387'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '410'
+ht-degree: 94%
 
 ---
 
@@ -48,10 +48,10 @@ Die [Kompatibilitätsmatrix für Adobe Campaign](compatibility-matrix.md) wurde 
 
   Um die Kontinuität der Dienste sicherzustellen, ist Campaign v7.4 mit folgenden Funktionen ausgestattet:
 
-   * ein neues Campaign SDK 1.0.27 für iOS, kompatibel mit iOS 16 und 17, und die neuesten [Anforderungen für Apple iOS-Datenschutzanfragen](https://developer.apple.com/news/?id=r1henawx){target="_blank"}.
+   * eine neue Campaign SDK 1.0.27 für iOS, kompatibel mit iOS 16 und 17 und den neuesten [Apple iOS-Datenschutzanfragen](https://developer.apple.com/news/?id=r1henawx){target="_blank"}.
    * ein neues Campaign SDK für Android 14.
 
-### Sonstige Änderungen  {#release-7-4-1-other}
+### Sonstige Änderungen {#release-7-4-1-other}
 
 Ab Version 7.4.1 sind XML-Bibliotheken für RPM Linux-Pakete nicht mehr in Campaign enthalten. Wenn Sie On-Premise- oder Hybrid-Kundin bzw. -Kunde sind, müssen Ihre Admins diese Bibliotheken installieren. [Weitere Informationen](../../installation/using/installing-packages-with-linux.md)
 

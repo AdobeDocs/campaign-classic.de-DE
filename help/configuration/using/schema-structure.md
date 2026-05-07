@@ -11,7 +11,7 @@ topic-tags: schema-reference
 exl-id: 3405efb8-a37c-4622-a271-63d7a4148751
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '1515'
+source-wordcount: '1523'
 ht-degree: 65%
 
 ---
@@ -310,7 +310,7 @@ Der Wert muss ein mit der XPath-Sprache kompatibler Ausdruck sein. Weitere Infor
   >
   >Navigieren Sie in der Adobe Campaign-Client-Konsole zum Ordner **[!UICONTROL Administration > Zähler]** des Explorers, um die Zähler zu verwalten.
 
-Um einen Standardwert mit einem Feld zu verknüpfen, können Sie die `<default>` oder `<sqldefault>` verwenden   Feld.
+Um einen Standardwert mit einem Feld zu verknüpfen, können Sie das Feld `<default>` oder `<sqldefault>` verwenden.
 
 `<default>` : ermöglicht es Ihnen, das Feld beim Erstellen von Entitäten mit einem Standardwert vorauszufüllen. Der Wert wird kein SQL-Standardwert sein.
 

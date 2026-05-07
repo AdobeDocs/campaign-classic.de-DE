@@ -7,21 +7,21 @@ feature: A/B Testing
 role: User
 exl-id: 4eb139a0-5342-4084-9f6d-d736e05bf1c6
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: ht
-source-wordcount: '265'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '267'
+ht-degree: 65%
 
 ---
 
 # AB-Tests: A/B-Tests für diesen Anwendungsfall {#ab-testing-use-case}
 
-Im vorliegenden Anwendungsbeispiel wird ein Zielgruppen-Workflow verwendet, um zwei Inhaltsversionen zu vergleichen. Der Text ist jeweils derselbe, nur die Aufmachung unterscheidet sich.
+In diesem Anwendungsbeispiel werden wir zwei E-Mail-Versandinhalte mithilfe eines Zielgruppen-Workflows vergleichen. Nachricht und Text sind bei beiden Sendungen identisch, nur das Layout ändert sich.
 
-Die Zielpopulation wird in drei Gruppen aufgeteilt: zwei Testgruppen und die restliche Population. An jede Testgruppe wird eine andere Version des Versands gesendet.
+Die Zielpopulation wird in drei Gruppen unterteilt: zwei Testgruppen und die restliche Population. An jede Testgruppe wird eine andere Version des Versands gesendet.
 
 Nach dem Versand ist eine 5-tägige Wartezeit konfiguriert, bevor die Ergebnisse der besten Öffnungsraten gesammelt werden. Der Inhalt des Versands mit der höchsten Punktzahl wird dann von einem Script wiederhergestellt und an die Population gesendet, die nicht als Testgruppe verwendet wurde.
 
-Die Auswahl der Siegerversion kann je nach Bedarf nach verschiedenen Kriterien erfolgen. Hierbei kann es sich beispielsweise um die Öffnungsrate, Klickrate, Anmelderate oder Reaktivität handeln.
+Bitte beachten Sie, dass die Kriterien, die entscheiden, welcher Versand der beste ist, an Ihre Bedürfnisse angepasst werden können. Dabei kann es sich um die Öffnungsrate, die Clickthrough-Rate, die Abonnementrate, die Reaktionsrate usw. handeln.
 
 Darüber hinaus betrifft der in diesem Anwendungsfall beschriebene Test nur zwei Sendungen, Sie können aber so viele Versionen wie nötig testen. Fügen Sie dem Workflow einfach Aktivitäten hinzu.
 

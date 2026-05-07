@@ -6,8 +6,8 @@ feature: Monitoring, Email
 role: User
 exl-id: 43779505-9917-4e99-af25-b00a9d29a645
 source-git-commit: ba53107ce06c0484070cbe0943ba439d33d5f710
-workflow-type: ht
-source-wordcount: '1267'
+workflow-type: tm+mt
+source-wordcount: '1364'
 ht-degree: 100%
 
 ---
@@ -96,17 +96,17 @@ Wenn der trackinglogd-Prozess nicht in der Liste angezeigt wird, starten Sie ihn
 
 **Überprüfen Sie, ob der technische Tracking-Workflow kürzlich ausgeführt wurde**
 
-Sie finden den technischen Tracking-Workflow in den Ordnern „Administration“ > „Produktion“ > „Technische Workflows“. 
+Sie finden den technischen Tracking-Workflow in den Ordnern „Administration“ > „Produktion“ > „Technische Workflows“.
 
 ### Erweiterte Problembehebung {#advanced-troubleshooting}
 
-+++Der Tracking-Workflow schlägt fehl. 
++++Der Tracking-Workflow schlägt fehl.
 
 >[!NOTE]
 >
 >Nur für Windows verfügbar
 
-Die beschädigte Trackinglog-Datei .../nl6/var/&lt;Instanzname>/redir/log/0x0000 log kann den Tracking-Workflow stoppen. Mit den folgenden Befehlen können Sie beschädigte Zeilen leicht erkennen und entfernen, um den Tracking-Workflow fortzusetzen. 
+Die beschädigte Trackinglog-Datei .../nl6/var/&lt;Instanzname>/redir/log/0x0000 log kann den Tracking-Workflow stoppen. Mit den folgenden Befehlen können Sie beschädigte Zeilen leicht erkennen und entfernen, um den Tracking-Workflow fortzusetzen.
 
 **Ich weiß, in welcher Datei die beschädigte Zeile enthalten ist**
 

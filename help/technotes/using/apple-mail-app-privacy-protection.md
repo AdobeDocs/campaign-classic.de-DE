@@ -5,8 +5,8 @@ feature: Technote, Privacy, Privacy Tools
 description: Erfahren Sie, wie sich die Apple-Funktion zum Schutz der Privatsphäre bei E-Mails auf Ihre Kampagnen auswirken kann.
 exl-id: e044b35a-b49f-408a-900d-2afe8ff10212
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: ht
-source-wordcount: '2105'
+workflow-type: tm+mt
+source-wordcount: '2140'
 ht-degree: 100%
 
 ---
@@ -402,7 +402,7 @@ Sie können eine inkrementelle Abfrage verwenden, um nur noch nicht exportierte 
 
 Sie können Workflows verwenden, um zu bestimmen, ob eine Empfängerin bzw. ein Empfänger die Mail-App von Apple verwendet. Sie können Trackinglogs nach Gerät aufteilen. Sie können beispielsweise Abfragefilter verwenden, um Einträge nach iOS-Gerät aufzuschlüsseln:
 
-| Anwendung | Betriebssystem oder Gerät | Abfragefilter |
+| Anwendung | Betriebssystem oder Gerät  | Abfragefilter |
 | --- | --- | --- |
 | Apple Mail | iOS 15 | `operating System (Browser) contains 'iOS 15' and browser (Browser) contains 'ApplewebKit'` |
 | Apple Mail | iOS 14 oder iOS 13 | `browser contains 'AppleWebKit' and operating System of browser contains 'iOS 14' or operating System of browser contains 'iOS 13'` |

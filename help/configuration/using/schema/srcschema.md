@@ -9,7 +9,7 @@ topic-tags: schema-reference
 exl-id: bc4329b4-d272-4d32-bdaa-290cb9912af4
 source-git-commit: 254c89490fefa5d405bcecd2f1781df46450a873
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '459'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ## Inhaltsmodell {#content-model-14}
 
-srcSchema:==(attribute | createdBy | Daten | Element | Auflistung | Hilfe | Schnittstelle | Methoden | modifiedBy)
+srcSchema:==(attribute | createdBy | data | element | enumeration | help | interface | methods | modifiedBy)
 
 ## Attribute {#attributes-14}
 
@@ -55,7 +55,7 @@ Die Schemapräsentation ist unter &quot;[&#x200B; Schemareferenz“ &#x200B;](..
 * **createdBy-id (long)**: Bezeichner des Benutzers, der das Schema erstellt hat.
 * **desc (Zeichenfolge)**: Schemabeschreibung
 * **entitySchema (Zeichenfolge)**: Basisschema, auf dem Syntax und Genehmigung basieren (standardmäßig für Adobe Campaign: xtk:srcSchema). Wenn Sie das aktuelle Schema speichern, genehmigt Adobe Campaign dessen Grammatik anhand des im @xtkschema deklarierten Schemas.
-* **extendedSchema (Zeichenfolge)**: Empfängt den Namen des vordefinierten Schemas, auf dem die aktuelle Schemaerweiterung basiert. Das Formular lautet „namespace:name“.
+* **extendedSchema (Zeichenfolge)**: Empfängt den Namen des vordefinierten Schemas, auf dem die aktuelle Schemaerweiterung basiert. Das Formular lautet „namespace:name.
 * **img (Zeichenfolge)**: Symbol, das mit dem Schema verknüpft ist (kann im Assistenten zur Schemaerstellung definiert werden).
 * **label (Zeichenfolge)**: Schemakennzeichnung.
 * **labelSingular (Zeichenfolge)**: Bezeichnung (im Singular) für die Anzeige in der Benutzeroberfläche.
@@ -73,11 +73,11 @@ Die Schemapräsentation ist unter &quot;[&#x200B; Schemareferenz“ &#x200B;](..
 * **namespace (String)**: Namespace des Schemas (Standard: nms, xtk, nl). Beim Erstellen eines neuen Schemas für ein Projekt empfehlen wir die Verwendung eines dedizierten Namespace.
 * **useRecycleBin (Boolescher Wert**: Aktiviert die Papierkorb-Funktion in der Anwendung. Gelöschte Datensätze werden vor dem endgültigen Löschen in den Papierkorb gelegt. Diese Funktion ist nur im Modus „Versand“ verfügbar.
 * **view (boolean)**: Wenn es aktiviert ist (@view=„true„), wird das Schema als Ansicht verwendet. Der Assistent zum Aktualisieren der Datenbankstruktur berücksichtigt das Schema nicht. Diese Option wird hauptsächlich zum Referenzieren externer Tabellen verwendet.
-* **xtkSchema (Zeichenfolge)**: Name des Schemas, das die Schemagrammatik definiert (standardmäßig xtk:srcSchema).
+* **xtkSchema (Zeichenfolge)**: Name des Schemas, das die Schemagrammatik definiert (:srcSchema).
 
 ## Beispiele {#examples-11}
 
-`<srcschema>` des vorkonfigurierten Schemas „nms:delivery“
+`<srcschema>` des vorkonfigurierten Schemas :deliverynms)
 
 ```
 <srcSchema desc="Defines all the settings of a delivery (or delivery template)."  

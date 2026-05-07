@@ -9,8 +9,8 @@ hide: true
 exl-id: 8ed11e96-9f23-4e2e-bae2-25c51cfb549a
 source-git-commit: 4cae5fdb2b78f446f84352046b523d8862e9060c
 workflow-type: tm+mt
-source-wordcount: '2336'
-ht-degree: 100%
+source-wordcount: '2391'
+ht-degree: 97%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 _5. Dezember 2023_
 
-### Verbesserungen bei der Sicherheit  {#release-7-3-5-security}
+### Verbesserungen bei der Sicherheit {#release-7-3-5-security}
 
 
 * Mit Campaign Classic v7.3.5 wurde der Authentifizierungsprozess verbessert und sicherer gemacht. Technische Benutzende sollten sich jetzt über das Adobe Identity Management System (IMS) mit Campaign verbinden. Erfahren Sie in [dieser Technote](../../technotes/using/ims-migration.md), wie Sie Ihre vorhandenen technischen Konten migrieren können.
@@ -42,7 +42,7 @@ Ab dieser Version funktionieren Tracking-Links für bereits gesendete E-Mails w�
 * Fehlerkorrektur – Benutzende müssen sich jetzt nicht mehr neu authentifizieren, wenn sie in einem Kampagnenbericht auf `Back` klicken. (NEO-65087)
 * Fehlerkorrektur – Im Workflow „Datenbankbereinigung“ tritt jetzt kein Fehler mehr auf, wenn ein Versand vor seinen Testsendungen gelöscht wird. (NEO-48114)
 * Fehlerkorrektur – Beim Herstellen einer Verbindung zur Client Console tritt jetzt auch bei den neuesten Updates der TLS-Überprüfung kein Verbindungsfehler mehr auf. (NEO-50488)
-* Fehlerkorrektur – Bei der HTTP-Proxy-Authentifizierung nach dem Campaign-Postupgrade auf 7.3.1 schlagen jetzt HTTP-Anforderungen in Campaign-Workflows nicht mehr mit `error 407 – proxy auth required is returned` fehl. (NEO-49624)
+* Fehlerkorrektur: Bei der HTTP-Proxy-Authentifizierung tritt nach dem Campaign-Postupgrade auf 7.3.1 kein Fehler mehr auf. HTTP-Anfragen in Campaign-Workflows schlagen mit `error 407 – proxy auth required is returned` fehl. (NEO-49624)
 * Behebung eines zeitweiligen Fehlers bei der GPG-Entschlüsselung in **Skript** Workflow-Aktivitäten. Die entsprechende Fehlermeldung lautete: `gpg: decryption failed: No secret key`. (NEO-50257)
   <!--* Workflow temporary tables now have a primary index in Teradata with a Federated Data Access (FDA) connection. (NEO-62575)-->
 
@@ -62,7 +62,7 @@ Ab dieser Version funktionieren Tracking-Links für bereits gesendete E-Mails w�
 
 _7. September 2023_
 
-### Verbesserungen bei der Sicherheit  {#release-7-3-4-security}
+### Verbesserungen bei der Sicherheit {#release-7-3-4-security}
 
 * Die Sicherheit in IMS-APIs wurde verbessert. Kundensensible Informationen (d. h. Zugriffstoken) wurden aus den URL-Parametern entfernt. Diese Anmeldedaten werden jetzt in der Post-Daten- oder Autorisierungs-Kopfzeile gesendet, um einen sichereren Kommunikationsprozess zu gewährleisten. (NEO-63045)
 * Die Sicherheit von Web-Apps wurde verbessert, um DDoS-Angriffe zu verhindern. (NEO-50757)
@@ -108,11 +108,11 @@ _7. September 2023_
 * Fehlerkorrektur – Die Versand-Performance wird jetzt nicht mehr durch ein Problem bei der Abfrageverwaltung beeinträchtigt. (NEO-49991)
 * Fehlerkorrektur – Bei der Verwendung von externen Konten in Kampagnen-Workflow-Versandaktivitäten tritt kein Fehler mehr auf, der zu Konfigurationsproblemen mit externen Konten führen konnte. (NEO-49959)
 * Fehlerkorrektur – Beim Versand von Push-Benachrichtigungen treten keine Performance-Probleme mehr auf. (NEO-49953)
-Fehlerkorrektur – Japanische Zeichen werden beim Exportieren von Berichten jetzt korrekt angezeigt (NEO-49308).
+Fehlerkorrektur - Beim Exportieren von Berichten werden japanische Zeichen jetzt korrekt angezeigt (NEO-49308).
 * Fehlerkorrektur – Der Tomcat-Fehlerbericht zeigt jetzt nicht mehr allzu viele Fehlerdetails an. (NEO-49029)
 * Fehlerkorrektur – Bei der Verwendung einer großen Anzahl von Angeboten tritt nun kein Versandfehler mehr auf. (NEO-48807)
 * Fehlerkorrektur – Die Workflow-Aktivität **Daten-Update** funktioniert jetzt ordnungsgemäß. (NEO-48140)
-* Fehlerkorrektur – Klick-Tracking-Daten können jetzt für Sendungen auch mit einem externen Konto synchronisiert werden, das sich von der E-Mail-Adresse unterscheidet.(NEO-47277)
+* Fehlerkorrektur - Klick-Tracking-Daten werden jetzt für Sendungen, die ein anderes externes Konto als E-Mail verwenden, synchronisiert. (NEO-47277)
 * Fehlerkorrektur – Trackinglogs in Echtzeit können jetzt in der Marketing-Instanz von Message Center synchronisiert werden. (NEO-42540)
 * Fehlerkorrektur – Das Workspace-Präfix für Snowflake-Datenbanktabellen wird jetzt im Erkennungsfenster eines Schemas angezeigt. (NEO-40297)
 * Fehlerkorrektur – `<img-amp>`-Tags können jetzt in E-Mail-Inhalten verwendet werden. (NEO-38685)
@@ -193,7 +193,7 @@ Weiterführende Informationen finden Sie in der [Campaign-Kompatibilitätsmatrix
 
 Weitere Informationen finden Sie auf der Seite [Eingestellte und entfernte Funktionen](deprecated-features.md).
 
-### Sonstige Änderungen   {#release-7-3-2-other}
+### Sonstige Änderungen  {#release-7-3-2-other}
 
 <!--* Web logs have been improved: `logonEscalation` warnings are now only displayed for users with admin privileges. (NEO-47167)-->
 * Um Fehler zu vermeiden, wird der Workflow zum **Erfassen von Daten für den Heatmap-Service** (collectDataHeatMapService) jetzt standardmäßig angehalten. (NEO-33959)

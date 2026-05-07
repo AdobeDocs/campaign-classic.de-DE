@@ -7,8 +7,8 @@ hide: true
 exl-id: 5354d608-2fea-45f9-a0aa-11c7e965ab04
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 100%
+source-wordcount: '417'
+ht-degree: 77%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 ## Datenbank aktualisieren {#updating-the-database}
 
-Alle in Workflows erfassten Daten können zur Aktualisierung der Datenbank oder in Sendungen verwendet werden, um beispielsweise die Möglichkeiten der Inhaltspersonalisierung zu ergänzen (Einfügung der Anzahl von Versicherungspolicen, des durchschnittlichen Warenkorbs im vergangenen Jahr etc.) oder das Populations-Targeting zu verfeinern (eine Nachricht an die Mitversicherten adressieren, die 1.000 besten Kunden ansprechen etc.). Diese Daten können auch exportiert oder in einer Liste archiviert werden.
+Alle erfassten Daten können zur Aktualisierung der Datenbank oder in Sendungen verwendet werden. Sie können beispielsweise die Möglichkeiten der Personalisierung von Nachrichteninhalten anreichern (einschließlich der Anzahl der Verträge in der Nachricht, Angabe des durchschnittlichen Warenkorbs im letzten Jahr usw.) oder die Zielgruppenbestimmung detaillierter darstellen (eine Nachricht an die Mitversicherten senden, die 1.000 besten Abonnenten von Online-Diensten ansprechen usw.). Diese Daten können auch exportiert oder in einer Liste archiviert werden.
 
 ### Listen und direkte Aktualisierungen {#lists-and-direct-updates}
 
@@ -26,7 +26,7 @@ Zur Aktualisierung der Adobe Campaign-Datenbank und von Listen stehen zwei dediz
 
 * Über die Aktivität **[!UICONTROL Listen-Update]** können Arbeitstabellen in einer Datenliste gespeichert werden.
 
-  Hierbei kann eine existierende Liste verwendet oder eine neue erstellt werden. In diesem Fall werden ihr Name und gegebenenfalls ihr Speicherverzeichnis berechnet.
+  Sie können eine vorhandene Liste auswählen oder erstellen. In diesem Fall werden der Name und ggf. der Datensatzordner berechnet.
 
   ![](assets/s_user_create_list.png)
 

@@ -6,9 +6,9 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Reporting, Monitoring
 exl-id: a19e2843-d3f9-48c3-af72-cc1bc54f6360
 source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
-workflow-type: ht
-source-wordcount: '531'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '532'
+ht-degree: 92%
 
 ---
 
@@ -22,7 +22,7 @@ Wenn Sie Daten in Form von **[!UICONTROL Tabellen]** oder **[!UICONTROL Diagramm
 
 ### Filtern von Daten {#filtering-data}
 
-Die Nutzung einer Aktivität vom Typ **[!UICONTROL Abfrage]** bei der Erstellung eines Berichts ist nicht obligatorisch. Die Daten können alternativ direkt in den Tabellen und Grafiken des Berichts gefiltert werden.
+Die Verwendung **[!UICONTROL Aktivität vom]** „Abfrage“ ist beim Erstellen eines Berichts nicht erforderlich. Daten können direkt in den Tabellen und Diagrammen gefiltert werden, aus denen der Bericht besteht.
 
 Wählen Sie in diesem Fall die im Bericht anzuzeigenden Daten direkt in der **[!UICONTROL Seite]**-Aktivität des Berichts aus.
 
@@ -80,7 +80,7 @@ Erstellen Sie in einer Abfrage-Aktivität zum Beispiel folgende Abfrage über di
 
 Geben Sie anschließend die Quelle der Daten Ihres Berichts im Feld **[!UICONTROL Kontextdaten]** an.
 
-Die Platzierung der Daten wird automatisch abgeleitet. Bei Bedarf können Sie den Pfad der Daten forcieren.
+Der Datenspeicherort wird automatisch abgeleitet. Bei Bedarf können Sie den Datenpfad erzwingen.
 
 ![](assets/s_ncs_advuser_report_datasource_4.png)
 

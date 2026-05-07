@@ -10,8 +10,8 @@ topic-tags: initial-configuration
 exl-id: 236afdfe-fb23-4ebb-b000-76e14bf01d9e
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '653'
-ht-degree: 2%
+source-wordcount: '675'
+ht-degree: 5%
 
 ---
 
@@ -25,11 +25,11 @@ Verwenden Sie das **uploadWhiteList**-Attribut, um die Dateitypen einzuschränke
 
 Dieses Attribut ist im **dataStore** der Datei **serverConf.xml** verfügbar. Alle in der Datei **serverConf.xml** verfügbaren Parameter werden in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md) aufgeführt.
 
-Der Standardwert dieses Attributs ist **.+** und ermöglicht den Upload beliebiger Dateitypen.
+Der Standardwert dieses Attributs ist **.+** und ermöglicht das Hochladen eines beliebigen Dateityps.
 
 Um die möglichen Formate zu begrenzen, ersetzen Sie den Attributwert durch einen gültigen regulären Java-Ausdruck. Sie können mehrere Werte eingeben, indem Sie sie durch ein Komma trennen.
 
-Beispiel: **uploadWhiteList=&quot;.&#42;.png,.&#42;.jpg“** ermöglicht das Hochladen von PNG- und JPG-Formaten auf den Server. Andere Formate werden nicht akzeptiert.
+Zum Beispiel: **uploadWhiteList=&quot;.&#42;.png,.&#42;.jpg“** ermöglicht das Hochladen von PNG- und JPG-Formaten auf den Server. Andere Formate werden nicht akzeptiert.
 
 Sie können das Hochladen wichtiger Dateien auch verhindern, indem Sie den Webserver konfigurieren. [Weitere Informationen](web-server-configuration.md)
 

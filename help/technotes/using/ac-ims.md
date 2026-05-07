@@ -4,14 +4,14 @@ description: Informationen zur Migration Ihres Authentifizierungsprozesses zum A
 exl-id: 84853dbe-8b6f-4875-b29a-c1b755423a3c
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '454'
-ht-degree: 100%
+source-wordcount: '479'
+ht-degree: 72%
 
 ---
 
 # Migrieren zum Adobe Identity Management System (IMS) {#migrate-to-ims}
 
-Im Rahmen der Bemühungen, die Sicherheit und den Authentifizierungsprozess zu verbessern, empfiehlt Adobe Campaign dringend, den Authentifizierungsmodus für Endbenutzende von der nativen Authentifizierung mit Login/Passwort auf das [Adobe Identity Management System (IMS)](https://helpx.adobe.com/de/enterprise/using/identity.html) zu migrieren{target="_blank"}. 
+Im Rahmen der Bemühungen um eine Verbesserung des Sicherheits- und Authentifizierungsprozesses empfiehlt Adobe Campaign dringend, den Authentifizierungsmodus für Endbenutzer von der nativen Anmelde-/Kennwortauthentifizierung zum [Adobe Identity Management System (IMS) zu &#x200B;](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"}.
 
 Darüber hinaus ruft die Adobe Campaign-Client-Anwendung die Campaign-APIs jetzt direkt über das technische IMS-Konto-Token auf. Sie müssen Ihre technischen Benutzenden zur Adobe Developer Console migrieren.
 
@@ -22,7 +22,7 @@ Darüber hinaus ruft die Adobe Campaign-Client-Anwendung die Campaign-APIs jetzt
 
 ## Migrationsschritte {#ims-steps}
 
-Die Migration zum [Adobe Identity Management System (IMS)](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"} ist ein Sicherheitskriterium, um Ihre Umgebungen sicher und standardisiert zu gestalten, da die meisten anderen Adobe Experience Cloud-Lösungen und -Anwendungen bereits mit IMS laufen.
+Die Migration auf das [Adobe Identity Management System (IMS](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"} ist eine Sicherheitsanforderung, um Ihre Umgebungen sicher und standardisiert zu gestalten, da die meisten anderen Adobe Experience Cloud-Lösungen und -Apps bereits auf IMS installiert sind.
 
 Adobe unterstützt Sie bei dieser Migration. In den folgenden Artikeln finden Sie detaillierten Kontext und Schritt-für-Schritt-Anweisungen:
 
@@ -46,17 +46,17 @@ Diese Campaign-Versionen werden in den [Versionshinweisen](../../rn/using/latest
 
 ### Wann kann ich die Migration starten? {#ims-migration-start}
 
-Eine Empfehlung für die Migration zum [Adobe Identity Management System (IMS)](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"} ist, Ihre Umgebung auf Campaign Classic v7.4.1 (oder eine [mit der IMS-Migration kompatible Version](#ims-versions)) zu aktualisieren.
+Eine Empfehlung für die Migration auf [Adobe Identity Management System (IMS)](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"} besteht darin, Ihre Umgebung auf Campaign Classic v7.4.1 (oder eine mit der IMS[Migration kompatible Version) &#x200B;](#ims-versions) aktualisieren.
 
 Sie können die IMS-Migration in Ihrer Staging-Umgebung starten, sobald sie auf Campaign Classic v7.3.5 aktualisiert wurde, und entsprechend für die Produktionsumgebung planen.
 
 ### Was passiert nach einem Build-Upgrade auf Campaign Classic v7.4.1? {#ims-migration-after-upgrade}
 
-Nachdem Ihre Umgebungen auf Campaign Classic v7.4.1 (oder eine [mit der IMS-Migration kompatiblen Version](#ims-versions)) aktualisiert wurden, können Sie mit der Transition auf das [Adobe Identity Management System (IMS)](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"} beginnen.
+Nachdem Ihre Umgebungen auf Campaign Classic v7.4.1 (oder eine mit der [IMS-Migration kompatible Version](#ims-versions)) aktualisiert wurden, können Sie den Wechsel zu [Adobe Identity Management System (IMS) &#x200B;](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"}.
 
 ### Wann ist die Migration abgeschlossen? {#ims-migration-end}
 
-Nachdem die Migration der Endbenutzenden und der technischen Benutzenden auf das Adobe Identity Management System (IMS) abgeschlossen ist, müssen Sie Ihre Umgebung aktualisieren, um die Optionen zu entfernen, die für die native Authentifizierung spezifisch und bei der IMS-Authentifizierung nicht mehr anwendbar sind. Dieses Update ist erst ab Campaign v7.4.1 verfügbar. [Weitere Informationen](impact-ims-migration.md)
+Nachdem die Migration der Endbenutzenden und der technischen Benutzenden auf das Adobe Identity Management System (IMS) abgeschlossen ist, müssen Sie Ihre Umgebung aktualisieren, um die Optionen zu entfernen, die für die native Authentifizierung spezifisch und bei der IMS-Authentifizierung nicht mehr anwendbar sind. Dieses Update ist nur ab Campaign v7.4.1 verfügbar. [Weitere Informationen](impact-ims-migration.md)
 
 
 
@@ -65,4 +65,4 @@ Nachdem die Migration der Endbenutzenden und der technischen Benutzenden auf das
 * [Migration von Endbenutzenden zu IMS](migrate-users-to-ims.md)
 * [Migration von technischen Benutzenden zur Adobe Developer Console](ims-migration.md)
 * [Neueste Versionshinweise zu Adobe Campaign Classic v7](../../rn/using/latest-release.md)
-* [Was ist das Adobe Identity Management System (IMS)?](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"}
+* [Was ist Adobe Identity Management System (IMS)?](https://helpx.adobe.com/de/enterprise/using/identity.html){target="_blank"}

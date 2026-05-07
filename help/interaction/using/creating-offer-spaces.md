@@ -1,30 +1,30 @@
 ---
 product: campaign
 title: Erstellen von Angebotsplatzierungen
-description: Angebotsplatzierungen
+description: Erstellen von Angebotsplatzierungen
 feature: Interaction, Offers
 audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: bdda98f7-a083-4f3b-b691-c28ec79af780
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: ht
-source-wordcount: '1037'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1038'
+ht-degree: 69%
 
 ---
 
-# Erstellen von Angebotsplatzierungen{#creating-offer-spaces}
+# Angebotsplatzierungen{#creating-offer-spaces}
 
 
 
-Die Erstellung von Platzierungen erfolgt in der Design-Umgebung. Sie erfordert ein Benutzerprofil vom Typ **Technischer Administrator** mit Zugriff auf den Platzierungs-Unterordner. Die Platzierungen eines Angebots werden automatisch in die Live-Umgebung dupliziert, sobald das entsprechende Angebot validiert wurde.
+Die Erstellung einer Platzierung darf nur von einem **technischen Administrator** mit Zugriff auf den Unterordner der Platzierung durchgeführt werden. Platzierungen können nur in der Design-Umgebung erstellt werden und werden bei der Angebotsvalidierung automatisch in die Live-Umgebung dupliziert.
 
 Der Inhalt der im Katalog enthaltenen Angebote wird in den Platzierungen konfiguriert. Standardmäßig kann der Content **[!UICONTROL die folgenden Felder enthalten: Titel]**, **[!UICONTROL Ziel-URL]**, **[!UICONTROL Bild-URL]**, **[!UICONTROL HTML-Inhalt]** und **[!UICONTROL Textinhalt]**. Die Feldsequenz wird in der Angebotsplatzierung konfiguriert.
 
 In den erweiterten Parametern können Sie Identifikationsschlüssel für Kontakte definieren. Diese können aus mehreren Elementen (z. B. Name und E-Mail-Adresse) zusammengesetzt sein. Die Vorgehensweise wird im Abschnitt [Angebote für identifizierte Kontakte](../../interaction/using/integration-via-javascript-client-side.md#presenting-an-identified-offer) erläutert.
 
-Die HTML- oder XML-Darstellungen werden über Rendering-Funktionen definiert. Die in der jeweiligen Rendering-Funktion definierte Reihenfolge der Felder muss mit der im Inhalt definierten übereinstimmen.
+Das HTML- oder XML-Rendering wird über eine Rendering-Funktion erstellt. Die Reihenfolge der in der Rendering-Funktion definierten Felder muss mit der im Content konfigurierten Sequenz übereinstimmen.
 
 ![](assets/offer_space_create_009.png)
 
@@ -55,13 +55,13 @@ Gehen Sie wie folgt vor, um eine neue Platzierung zu erstellen:
 
    >[!NOTE]
    >
-   >Dieser Parameter wird bei der Vorschau verwendet und verhindert die Veröffentlichung der Platzierungen, falls eines der Pflichtfelder nicht ausgefüllt wurde. Wenn ein Angebot jedoch bereits für eine Platzierung freigegeben wurde, wird diese Bedingung nicht berücksichtigt.
+   >Diese Konfiguration wird für die Vorschau verwendet und macht die Platzierungen bei der Veröffentlichung ungültig, wenn eines der obligatorischen Elemente im betreffenden Angebot fehlt. Wenn jedoch ein Angebot bereits auf einer Platzierung live ist, werden diese Kriterien nicht berücksichtigt.
 
    ![](assets/offer_space_create_005.png)
 
 1. Klicken Sie auf **[!UICONTROL Funktionen bearbeiten...]**, um eine Rendering-Funktion zu erstellen.
 
-   Diese Funktionen dienen der Erzeugung der Angebotsdarstellung in einer Platzierung. Sie haben die Wahl zwischen verschiedenen Formaten: HTML oder Text für ausgehende Interaktionen und XML für eingehende Interaktionen.
+   Diese Funktionen werden verwendet, um Angebotsdarstellungen in einer Platzierung zu generieren. Es gibt verschiedene mögliche Formate: HTML oder Text für ausgehende Interaktionen und XML für eingehende Interaktionen.
 
    ![](assets/offer_space_create_006.png)
 
@@ -70,15 +70,15 @@ Gehen Sie wie folgt vor, um eine neue Platzierung zu erstellen:
 
    ![](assets/offer_space_create_007.png)
 
-Für eingehende Interaktionen können die XML-Rendering-Funktionen, für ausgehende die HTML- und Text-Rendering-Funktionen überschrieben werden. Weitere Informationen finden Sie unter [Über Inbound-Kanäle](../../interaction/using/about-inbound-channels.md).
+Bei Bedarf können Sie die XML-Rendering-Funktionen für eingehende Interaktionen überschreiben. Sie können auch die HTML- und Text-Rendering-Funktionen für ausgehende Interaktionen überschreiben. Weitere Informationen finden Sie unter [Über Inbound-Kanäle](../../interaction/using/about-inbound-channels.md).
 
 ## Vorschlagsstatus {#offer-proposition-statuses}
 
-Angebotsvorschläge können je nach Interaktion mit der Zielpopulation verschiedene Status aufweisen. Interaction enthält hierfür werksmäßig eine Reihe von Werten, die dem Angebotsvorschlag über seinen Lebenszyklus hinweg zugewiesen werden können. Es ist jedoch an Ihnen, die Plattform dahingehend zu konfigurieren, dass der bei Angebotsvorschlagserzeugung zugewiesene Status bei Annahme des Vorschlags durch einen Kontakt wechselt.
+Ein Angebotsvorschlag kann je nach Interaktion mit der Zielpopulation verschiedene Status aufweisen. Interaction enthält eine Reihe von Werten, die während des gesamten Lebenszyklus auf den Angebotsvorschlag angewendet werden können. Sie müssen die Plattform jedoch so konfigurieren, dass sich der Status ändert, wenn der Angebotsvorschlag erstellt und akzeptiert wird.
 
 >[!NOTE]
 >
->Die Aktualisierung des Vorschlagsstatus geschieht zeitverzögert. Sie erfolgt durch den Tracking-Workflow, der stündlich startet.
+>Der Status des Angebotsvorschlags wird nicht sofort aktualisiert. der vom stündlich ausgelösten Tracking-Workflow ausgeführt wird.
 
 ### Werksmäßig enthaltene Status {#status-list}
 
@@ -112,7 +112,7 @@ Gehen Sie dazu wie folgt vor:
 
 ### Konfiguration des Status bei Annahme des Vorschlags {#configuring-the-status-when-the-proposition-is-accepted}
 
-Konfigurieren Sie den bei Annahme eines Vorschlags anzuzeigenden Status, indem Sie einen der werksmäßig gelieferten Werte auswählen. Sobald ein Empfänger auf einen der im Angebot enthaltenen Links klickt, wird das Angebotsmodul abgefragt und dadurch der Statuswechsel ausgelöst.
+Sobald ein Angebotsvorschlag akzeptiert wurde, können Sie einen der standardmäßig bereitgestellten Werte verwenden, um den neuen Vorschlagsstatus zu konfigurieren. Die Aktualisierung ist wirksam, wenn ein Empfänger auf einen Link im Angebot klickt, wodurch das Interaction-Modul aufgerufen wird.
 
 Gehen Sie dazu wie folgt vor:
 
@@ -123,7 +123,7 @@ Gehen Sie dazu wie folgt vor:
 
 **Eingehende Interaktionen**
 
-Über den Tab **[!UICONTROL Speicherung]** können Sie nur die Status für **unterbreitete** und **akzeptierte** Angebotsvorschläge definieren. Für eingehende Interaktionen sollte der Status von Angebotsvorschlägen nicht über die Schnittstelle, sondern direkt in der URL definiert werden, über die das Angebotsmodul aufgerufen wird. Auf diese Weise können Sie festlegen, welche Status in anderen Szenarien angewendet werden (z. B. wenn ein Angebotsvorschlag abgelehnt wird).
+Auf der Registerkarte **[!UICONTROL Speicherung]** können Sie nur Status für **vorgeschlagene** und **akzeptierte** Angebotsvorschläge definieren. Für eingehende Interaktionen sollte der Status der Angebotsvorschläge direkt in der URL für den Aufruf des Angebotsmoduls angegeben werden und nicht über die Schnittstelle. Auf diese Weise können Sie festlegen, welcher Status in anderen Fällen angewendet werden soll, z. B. wenn ein Angebotsvorschlag abgelehnt wird.
 
 ```
 <BASE_URL>?a=UpdateStatus&p=<PRIMARY_KEY_OF_THE_PROPOSITION>&st=<NEW_STATUS_OF_THE_PROPOSITION>&r=<REDIRECT_URL>
@@ -153,7 +153,7 @@ Bei ausgehenden Interaktionen besteht die Möglichkeit, dem Angebotsvorschlag au
 
 ## Angebotsvorschau in der Platzierung {#offer-preview-per-space}
 
-Im Vorschau-Tab können Sie die für einen Empfänger infrage kommenden Angebote einer einzelnen Platzierung ansehen. In unten stehenden Beispiel kommen für den ausgewählten Empfänger drei Vorschläge für die Briefpost-Platzierung infrage:
+Auf dieser Registerkarte können Sie die Angebote anzeigen, die basierend auf einer zuvor ausgewählten Methode für den Empfänger infrage kommen. Beim folgenden Beispiel kommt der Empfänger für drei Angebote per Briefpost infrage.
 
 ![](assets/offer_space_overview_002.png)
 

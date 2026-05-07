@@ -8,7 +8,7 @@ exl-id: 729a2010-c2d8-481b-8c9e-780b9e5f97ef
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '300'
-ht-degree: 100%
+ht-degree: 86%
 
 ---
 
@@ -18,13 +18,13 @@ ht-degree: 100%
 
 ## SQL-Code {#sql-code}
 
-Die Aktivität **[!UICONTROL SQL-Code]** führt ein SQL-Script in Form eines JST-Templates aus.
+Eine **[!UICONTROL SQL-Code]**-Aktivität führt ein SQL-Script aus. Das Skript ist eine JST-Vorlage.
 
 ![](assets/sql_code.png)
 
 * **[!UICONTROL Script]**
 
-  Das Script wird in den zentralen Bereich des Editors eingefügt. Da es sich beim Script um ein JST-Template handelt, kann es dem Workflow-Kontext entsprechend konfiguriert werden.
+  Der zentrale Bereich des Editors enthält das auszuführende Script. Dieses Skript ist eine JST-Vorlage und kann daher entsprechend dem Workflow-Kontext konfiguriert werden.
 
 * **[!UICONTROL Fehler verarbeiten]**
 

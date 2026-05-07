@@ -6,9 +6,9 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Web Apps
 exl-id: 5ccf5a21-48aa-4c0d-8cc8-457eb07d9f74
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: ht
-source-wordcount: '368'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '375'
+ht-degree: 63%
 
 ---
 
@@ -26,7 +26,7 @@ Gehen Sie zum Tab **Kampagnen** und wählen Sie das Menü **[!UICONTROL Webanwen
 >
 >Schützen Sie stets die Seiten, die möglicherweise personenbezogene Daten enthalten. Konsultieren Sie diesbezüglich die [Checkliste für Sicherheit und Datenschutz](https://helpx.adobe.com/de/campaign/kb/acc-security.html#privacy).
 
-Diese Vorlage bestimmt den Typ der Webanwendung. Sie können Folgendes erstellen:
+Diese Vorlage bestimmt den Typ der Web-Anwendung. Sie können Folgendes erstellen:
 
 1. Webformulare (+ Profiländerung)
 
@@ -34,11 +34,11 @@ Diese Vorlage bestimmt den Typ der Webanwendung. Sie können Folgendes erstellen
 
 1. Web-Anwendungen
 
-   Mit Adobe Campaign können Sie Web-Anwendungen erstellen und z. B. auf einer Web-Plattform oder im Extranet veröffentlichen. Dadurch haben Sie die Möglichkeit, Daten in Adobe Campaign zu bearbeiten und zu speichern. Den Datenzugriff können Sie beschränken, sodass nur authentifizierte Benutzer (über eine Zugriffskontrolle) darauf Zugriff haben. Zusätzlich können Sie das Vorausfüllen von Daten entsprechend verschiedener Kriterien einrichten. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](about-web-applications.md).
+   Mit Adobe Campaign können Sie Web-Anwendungen erstellen, die beispielsweise auf einer Web-Plattform oder einem Extranet bereitgestellt werden. Auf diese Weise können Sie Daten bearbeiten und Informationen in Adobe Campaign aufzeichnen. In diesem Fall können Sie den Zugriff der Benutzer auf authentifizierte Benutzer (über die Zugriffssteuerung) beschränken und das Vorabladen von Daten auf der Grundlage verschiedener Kriterien einrichten. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](about-web-applications.md).
 
 1. Landingpages
 
-   Eine Landingpage ist eine HTML-Seite, deren Inhalt auf einer Website bereitsteht und über die Benutzer Informationen eingeben können, die im Datenbankprofil von Adobe Campaign gespeichert werden. Der Inhalt einer solchen Seite wird normalerweise von einer spezialisierten Web-Agentur erstellt und danach in Adobe Campaign zur Publikation, Verwaltung und Nachverfolgung importiert. Weitere Informationen hierzu finden Sie auf [dieser Seite](creating-a-landing-page.md).
+   Eine Landingpage ist eine HTML-Seite, deren Inhalt auf einer Website verfügbar ist und auf der Benutzer Informationen eingeben können, die in der Adobe Campaign-Datenbank gespeichert werden sollen. Der Inhalt dieser Art von Seite wird in der Regel von einer spezialisierten Web-Agentur erstellt, bevor er zur Veröffentlichung, Verwaltung und Nachverfolgung in Adobe Campaign importiert wird. Weitere Informationen hierzu finden Sie auf [dieser Seite](creating-a-landing-page.md).
 
 1. Umfragen
 
@@ -46,7 +46,7 @@ Diese Vorlage bestimmt den Typ der Webanwendung. Sie können Folgendes erstellen
 
    >[!CAUTION]
    >
-   >**Survey Manager** ist ein optionales Modul von Adobe Campaign. Nähere Informationen dazu entnehmen Sie bitte Ihrem Lizenzvertrag.
+   >**Survey Manager** ist ein optionales Adobe Campaign-Modul. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
 
 1. Facebook-Anwendungen
 
@@ -54,6 +54,6 @@ Diese Vorlage bestimmt den Typ der Webanwendung. Sie können Folgendes erstellen
 
    >[!CAUTION]
    >
-   >**Social Marketing** ist ein optionales Modul von Adobe Campaign. Nähere Informationen dazu entnehmen Sie bitte Ihrem Lizenzvertrag.
+   >**Social Marketing** ist ein optionales Adobe Campaign-Modul. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
 
 Der Seitenkonfigurationsmodus und verfügbare Konfigurationen können für mehrere Typen von Webanwendungen identisch sein. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](about-web-forms.md).

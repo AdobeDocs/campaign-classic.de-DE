@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: d585a5d4-ea33-43c8-aa37-4d892025374a
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: ht
-source-wordcount: '1087'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1178'
+ht-degree: 84%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 Wenn Dateien und Daten für ETL-Zwecke verwaltet werden, werden diese Dateien auf einem von Adobe bereitgestellten gehosteten SFTP-Server gespeichert. Richten Sie sich bei Verwendung von SFTP-Servern nach den im Folgenden aufgeführten Empfehlungen.
 
-* Verwenden Sie eine schlüsselbasierte Authentifizierung anstelle einer passwortbasierten Authentifizierung, um das Ablaufen von Passwörtern zu vermeiden (Passwörter haben eine Gültigkeitsdauer von 90 Tagen). Außerdem ermöglicht die schlüsselbasierte Authentifizierung die Erstellung mehrerer Schlüssel, wenn beispielsweise mehrere Entitäten verwaltet werden. Im Gegensatz dazu erfordert die passwortbasierte Authentifizierung, dass das Passwort mit allen verwalteten Entitäten geteilt wird.
+* Verwenden Sie statt der Kennwortauthentifizierung eine schlüsselbasierte Authentifizierung, um den Ablauf von Kennwörtern zu vermeiden (Kennwörter haben eine Gültigkeitsdauer von 90 Tagen). Darüber hinaus können Sie mit der schlüsselbasierten Authentifizierung mehrere Schlüssel generieren, z. B. beim Verwalten mehrerer Entitäten. Im Gegenteil: Bei der Kennwortauthentifizierung müssen Sie das Kennwort für alle Entitäten freigeben, die Sie verwalten.
 
   Das unterstützte Schlüsselformat ist SSH-2 RSA 2048. Zum Generieren von SSH-Schlüsseln wird für Windows PuTTYgen und für Linux ssh-keygen verwendet. Sie können öffentliche SSH-Schlüssel über das Campaign Control Panel hochladen. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/control-panel/using/sftp-management/key-management){target="_blank"}
 
@@ -29,7 +29,7 @@ Wenn Dateien und Daten für ETL-Zwecke verwaltet werden, werden diese Dateien au
 
 * Beseitigen Sie Fehler/Ausnahmen.
 
-* Standardmäßig sind alle von Ihnen erstellten Ordner im Lese-/Schreibmodus ausschließlich für Ihre Kennung verfügbar. Wenn Sie Ordner erstellen, auf die Campaign Zugriff haben soll, konfigurieren Sie sie mit Lese-/Schreibrechten für die gesamte Gruppe. Andernfalls ist es für Workflows unmöglich, Dateien zu erstellen oder zu löschen, da sie aus Sicherheitsgründen innerhalb derselben Gruppe unter einer anderen Kennung ausgeführt werden.
+* Standardmäßig befinden sich alle Ordner, die Sie erstellen, nur für Ihre Kennung im Lese-/Schreibmodus. Achten Sie beim Erstellen von Ordnern, auf die Campaign zugreifen muss, darauf, diese mit Lese-/Schreibrechten für die gesamte Gruppe zu konfigurieren. Andernfalls können Workflows aus Sicherheitsgründen möglicherweise keine Dateien erstellen/löschen, da sie unter einer anderen Kennung innerhalb derselben Gruppe ausgeführt werden.
 
 * Die öffentlichen IPs, mit denen Sie die SFTP-Verbindung aufbauen, müssen in der Campaign-Instanz auf der Zulassungsliste stehen. Die öffentlichen IPs können über das Control Panel hinzugefügt werden. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/control-panel/using/sftp-management/ip-range-allow-listing){target="_blank"}
 
@@ -49,7 +49,7 @@ Um solche Probleme zu vermeiden, empfiehlt Adobe, die unten stehenden Best Pract
 >
 >* Beachten Sie, dass Ihre Instanz mit der [aktuellen GA-Version](../../rn/using/rn-overview.md) aktualisiert sein muss. Erfahren Sie in [diesem Abschnitt](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version){target="_blank"}, wie Sie Ihre Version überprüfen.
 
-* Die Größe des Servers variiert je nach Ihrer Lizenz. Achten Sie in jedem Fall darauf, dass die Datengröße möglichst gering ist und bewahren Sie Daten nur so lange auf, wie dies erforderlich ist (15 Tage ist das obere Zeitlimit).
+* Die Servergrößenfunktionen variieren je nach Ihrer Lizenz. In jedem Fall sollten Sie die Mindestdaten so lange wie möglich aufbewahren und die Daten nur so lange wie erforderlich aufbewahren (15 Tage sind die maximale Zeitspanne).
 
 * Verwenden Sie Workflows, um Daten ordnungsgemäß zu löschen (verwalten Sie die Beibehaltung von Daten innerhalb der Workflows, die die Daten nutzen).
 
@@ -85,7 +85,7 @@ Im Folgenden finden Sie die Informationen, die Sie prüfen und dem Adobe-Support
 
    Geben Sie in jedem Fall im Supportticket die Antwort an, die Sie auf den Befehl erhalten haben.
 
-1. Überprüfen Sie, ob der ausgehende Port 22 dort geöffnet ist, wo Sie versuchen, die SFTP-Verbindung aufzubauen. Verwenden Sie dazu den folgenden Befehl:
+1. Überprüfen Sie, ob der ausgehende Port 22 an der Site geöffnet ist, von der aus Sie versuchen, die SFTP-Verbindung zu initiieren. Verwenden Sie dazu den folgenden Befehl:
 
    ```xml
    bash-3.2$ nc -vz <SFTP_URL> 22

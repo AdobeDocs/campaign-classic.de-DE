@@ -10,8 +10,8 @@ topic-tags: additional-configurations
 exl-id: 0533cd50-3aa4-4160-9152-e916e149e77f
 source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
-source-wordcount: '1232'
-ht-degree: 1%
+source-wordcount: '1258'
+ht-degree: 2%
 
 ---
 
@@ -182,4 +182,4 @@ In diesem Abschnitt finden Sie einige einfache Anwendungsfälle, in denen Sie en
 
    Gruppen werden nie im laufenden Betrieb erstellt, weder durch Adobe Campaign noch durch LDAP. Sie müssen einzeln erstellt werden, sowohl in Adobe Campaign als auch im LDAP-Verzeichnis.
 
-   Die Namen der Gruppen im LDAP-Verzeichnis müssen mit den Namen der Adobe Campaign-Gruppen übereinstimmen. Die Zuordnungsmaske wird im letzten Konfigurationsschritt des Bereitstellungsassistenten definiert: Adobe Campaign_(.&#42;), zum Beispiel.
+   Die Namen der Gruppen im LDAP-Verzeichnis müssen mit den Namen der Adobe Campaign-Gruppen übereinstimmen. Die Zuordnungsmaske wird im letzten Konfigurationsschritt des Bereitstellungsassistenten definiert, z. B.: Adobe Campaign_(.&#42;).

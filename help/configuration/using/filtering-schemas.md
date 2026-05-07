@@ -7,8 +7,8 @@ role: Developer
 exl-id: 009bed25-cd35-437c-b789-5b58a6d2d7c6
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '382'
-ht-degree: 65%
+source-wordcount: '387'
+ht-degree: 61%
 
 ---
 
@@ -42,7 +42,7 @@ Diese Filter werden auf der **Hauptelementebene** der Schemata eingegeben und k�
 
 * Schränken Sie die LESE- und SCHREIB-Berechtigungen ein:
 
-  Hier wird der Filter verwendet, um sowohl LESE- als auch SCHREIB-Berechtigungen für das Schema für alle Operatoren zu verbieten. Nur das **interne** Konto, dargestellt durch den Ausdruck &quot;$(loginId)!=0&quot;, hat diese Berechtigungen.
+  Hier wird der Filter verwendet, um sowohl LESE- als auch SCHREIB-Berechtigungen für das Schema für alle Operatoren zu verbieten. Nur das **interne** Konto, dargestellt durch den Ausdruck &quot;$(loginId)!=0“, verfügt über diese Berechtigungen.
 
   ```
   <sysFilter name="readAccess"> 

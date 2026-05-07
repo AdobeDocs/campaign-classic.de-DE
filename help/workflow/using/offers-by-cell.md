@@ -7,8 +7,8 @@ hide: true
 exl-id: 72b17b48-093a-4eb9-a848-3c1570e49b61
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '159'
-ht-degree: 100%
+source-wordcount: '162'
+ht-degree: 80%
 
 ---
 
@@ -27,7 +27,7 @@ Gehen Sie dazu wie folgt vor:
 1. Definieren Sie nun auf der Registerkarte **[!UICONTROL Segmente]** über die Schaltfläche **[!UICONTROL Hinzufügen]** die verschiedenen Segmente:
 
    * Konfigurieren Sie anhand der verfügbaren Filter und Begrenzungen die Population des Segments.
-   * Wählen Sie dann das Angebot aus, das Sie dem Segment unterbreiten möchten. Es stehen die Angebote zur Verfügung, die der Konfiguration der zuvor ausgewählten Platzierung entsprechen.
+   * Wählen Sie als Nächstes das Angebot aus, das Sie der Untergruppe unterbreiten möchten. Die verfügbaren Angebote sind diejenigen, die für die Platzierung infrage kommen, die im vorherigen Schritt ausgewählt wurde.
 
      ![](assets/int_offer_per_cell1.png)
 

@@ -7,8 +7,8 @@ role: User
 exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
 source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
-source-wordcount: '1011'
-ht-degree: 100%
+source-wordcount: '1113'
+ht-degree: 94%
 
 ---
 
@@ -34,7 +34,7 @@ Weitere Informationen zu Kommunikationskanälen finden Sie in der [Dokumentation
 
 Die wichtigsten Informationen zu Erstellung, Inhalt und Zielgruppe eines Versands finden Sie in der **Dokumentation zu Campaign v8**:
 
-* [Erstellen des Versands](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=de#create-the-delivery){target="_blank"}: Auf dieser Seite erfahren Sie, wie Sie einen einmaligen Versand erstellen. 
+* [Erstellen des Versands](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=de#create-the-delivery){target="_blank"}: Auf dieser Seite erfahren Sie, wie Sie einen einmaligen Versand erstellen.
 * [Definieren des Inhalts](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/create-message#content-of-the-delivery){target="_blank"}: Konfigurieren Sie den spezifischen Versandinhalt für jeden Kanal.
 * [Angeben der Zielgruppe](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=de#target-population){target="_blank"}: Definieren Sie verschiedene Typen von Zielgruppen: Hauptzielgruppe, Testversand-Zielgruppe, Testadressen und Kontrollgruppen.
 * [Arbeiten mit Versandvorlagen](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=de){target="_blank"}: Erfahren Sie, wie Sie Vorlagen definieren, um die Versanderstellung zu erleichtern.
@@ -72,9 +72,9 @@ Diese Option ist derzeit nur verfügbar, wenn folgende Bedingungen erfüllt sind
 
 **Konfigurieren der Analysepriorität**
 
-Wenn Ihr Versand Teil einer Kampagne ist, bietet der **[!UICONTROL Erweitert]**-Tab eine zusätzliche Option, die die Hierarchisierung der Sendungen innerhalb der Kampagne ermöglicht.
+Wenn der Versand Teil einer Kampagne ist, bietet die Registerkarte **[!UICONTROL Erweitert]** eine zusätzliche Option. Auf diese Weise können Sie die Verarbeitungsreihenfolge für Sendungen in derselben Kampagne organisieren.
 
-Jeder Versand wird analysiert, bevor die Nachrichten abgeschickt werden. Die Analysedauer hängt von der Größe der Extraktionsdatei des Versands ab. Je größer die Datei, desto länger die Analyse. Nachfolgende Sendungen werden verzögert.
+Vor dem Versand wird jeder Versand analysiert. Die Analysedauer hängt von der Versandextraktionsdatei ab. Je größer die Datei ist, desto länger dauert die Analyse, sodass die folgenden Sendungen warten.
 
 Die Optionen im Bereich **[!UICONTROL Nachrichtenvorbereitung durch die Steuerung]** erlauben die Priorisierung der Versandanalysen eines Kampagnen-Workflows.
 
@@ -98,7 +98,7 @@ Vorübergehend nicht zustellbare Nachrichten aufgrund eines **Softbounce** oder 
 >
 >Bei gehosteten oder hybriden Installationen werden die Einstellungen für den erneuten Versuch im Versand nicht mehr von Campaign verwendet, wenn Sie auf den [Enhanced MTA](sending-with-enhanced-mta.md) aktualisiert haben. Weitere Zustellversuche aufgrund von Softbounces sowie die Zeitdauer zwischen ihnen werden durch den Enhanced MTA bestimmt, basierend auf Typ und Prioritätsstufe der Bounce-Antworten, die von der E-Mail-Domain der Nachricht zurückgegeben werden.
 
-Bei On-Premise-Installationen und gehosteten/hybriden Installationen, die den bestehenden Campaign-MTA verwenden, gibt der zentrale Abschnitt der Registerkarte **[!UICONTROL Versand]** für die Versandparameter an, wie viele weitere Versuche am Tag nach dem Versand durchgeführt werden sollen, und den Mindestzeitabstand zwischen den Versuchen. 
+Bei On-Premise-Installationen und gehosteten/hybriden Installationen, die den bestehenden Campaign-MTA verwenden, gibt der zentrale Abschnitt der Registerkarte **[!UICONTROL Versand]** für die Versandparameter an, wie viele weitere Versuche am Tag nach dem Versand durchgeführt werden sollen, und den Mindestzeitabstand zwischen den Versuchen.
 
 ![](assets/s_ncs_user_wizard_retry_param.png)
 
@@ -110,7 +110,7 @@ Nach dem Start des Versands können die Nachrichten (und alle weiteren Zustellve
 
 ![](assets/s_ncs_user_email_del_valid_period.png)
 
-* Im Feld **[!UICONTROL Versandlaufzeit]** kann die Zeitspanne angegeben werden, in der erneute globale Zustellversuche unternommen werden. Dies bedeutet konkret, dass Adobe Campaign die Nachrichten ab dem Startdatum versendet und bis zum Ablauf der angegebenen Spanne nicht zustellbare Nachrichten in regelmäßigen Abständen erneut sendet.
+* Im Feld **[!UICONTROL Versandlaufzeit]** kann die Zeitspanne angegeben werden, in der weitere globale Zustellversuche unternommen werden. Dies bedeutet, dass Adobe Campaign die Nachrichten ab dem Startdatum versendet und dann nur für Nachrichten, die einen Fehler zurückgeben, regelmäßige, konfigurierbare weitere Zustellversuche durchführt, bis die Gültigkeitsgrenze erreicht ist.
 
   Sie können alternativ auch ein genaues Datum angeben. Markieren Sie dazu die Option **[!UICONTROL Gültigkeit explizit festlegen]**. In diesem Fall kann mit den Versand- und Gültigkeitsdaten auch eine bestimmte Uhrzeit konfiguriert werden. Standardmäßig wird die aktuelle Uhrzeit eingesetzt, sie kann jedoch direkt im Eingabefeld angepasst werden.
 

@@ -10,8 +10,8 @@ topic-tags: production-procedures
 exl-id: 472ccc04-e68e-4ccb-90e9-7d626a4e794f
 source-git-commit: b8a6a0db27826309456c285c08d4f1d85de70283
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 7%
+source-wordcount: '458'
+ht-degree: 11%
 
 ---
 
@@ -160,7 +160,7 @@ So ändern Sie das **internal**-Kennwort: **nlserver config -internalPassword**
 >[!NOTE]
 >
 >* Im Allgemeinen können Sie den Befehl **config“ verwenden, anstatt die Konfigurationsdateien manuell** ändern
->* Um die Liste der Parameter zu erhalten, verwenden Sie das **-?**: **nlserver config -?**
+>* Um die Liste der Parameter abzurufen, verwenden Sie die **-?** Parameter: **nlserver config -?**
 >* Bei einer Oracle-Datenbank darf das Konto nicht angegeben werden. Die Syntax sieht wie folgt aus:
 >
 >  `nlserver config -setdblogin:Oracle:test6@dbserver`
@@ -172,6 +172,6 @@ Im Folgenden finden Sie ein Beispiel für MSSQL:
 nlserver config -setdblogin:mssql:<login>/"<password>"@<server> -instance:<instance_name> 
 ```
 
-* -Anmeldung (z. B. account:user) und -Server finden Sie im dataSource-Knoten der Datei config-&lt;instance_name>.xml.
+* -Anmeldung (z. B. Konto:user) und -Server finden Sie im dataSource-Knoten der Datei config-&lt;instance_name>.xml .
 * Das Kennwort muss in Anführungszeichen eingeschlossen werden.
 

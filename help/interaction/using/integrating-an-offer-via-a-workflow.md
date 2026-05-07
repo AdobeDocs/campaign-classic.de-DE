@@ -8,13 +8,13 @@ content-type: reference
 topic-tags: delivering-an-offer
 exl-id: 33d318f3-1eb4-4c74-8c20-8b9f0442c7c3
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: ht
-source-wordcount: '1095'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1128'
+ht-degree: 80%
 
 ---
 
-# Integrieren eines Angebots über einen Workflow{#integrating-an-offer-via-a-workflow}
+# Integration über Workflows{#integrating-an-offer-via-a-workflow}
 
 
 
@@ -37,7 +37,7 @@ Die in Kampagnen-Workflows zur Verfügung stehende Versandentwurfsaktivität erl
 1. Füllen Sie die verfügbaren Felder Ihrem Versand entsprechend aus.
 1. Sie haben zwei Möglichkeiten:
 
-   * Versand mit Abfrage an das Angebotsmodul: Kreuzen Sie in diesem Fall die Option **[!UICONTROL Anzahl der ausgewählten Vorschläge begrenzen]** an. Konfigurieren Sie die Platzierung und die Anzahl an zu unterbreitenden Angeboten.
+   * Wenn das Angebotsmodul aufgerufen werden soll, aktivieren Sie das Kontrollkästchen **[!UICONTROL Anzahl der ausgewählten Vorschläge]**. Geben Sie die Platzierung und die Anzahl der Vorschläge an, die im Versand unterbreitet werden sollen.
 
      Gewichtung und Eignungsregeln der Angebote werden vom Angebotsmodul berücksichtigt.
 
@@ -45,7 +45,7 @@ Die in Kampagnen-Workflows zur Verfügung stehende Versandentwurfsaktivität erl
 
    >[!NOTE]
    >
-   >Die Vorschau berücksichtigt die im Versand konfigurierte Anzahl an Angeboten. Bei Ausführung des Workflows hingegen wird die im Versandentwurf konfigurierte Anzahl verwendet.
+   >Die Vorschau berücksichtigt die Anzahl der im Versand angegebenen Angebote. Beim Ausführen eines Workflows wird die im Versandentwurf angegebene Zahl berücksichtigt.
 
    ![](assets/int_compo_offre_wf1.png)
 
@@ -77,9 +77,9 @@ Konfigurieren Sie Ihre Abfrage (siehe [Dokumentation zu Campaign v8](https://exp
    ![](assets/int_enrichment_offer2.png)
 
 1. Geben Sie eine Kennung und einen Titel für den hinzuzufügenden Vorschlag an.
-1. Konfigurieren Sie die Angebotsauswahl. Zwei Optionen stehen zur Auswahl:
+1. Geben Sie die Angebotsauswahl an. Hierfür gibt es zwei mögliche Optionen:
 
-   * **[!UICONTROL Suche nach dem besten Angebot in einer Kategorie]**: Markieren Sie diese Option und geben Sie die verschiedenen Parameter der Abfrage des Angebotsmoduls an (Platzierung, Kategorie oder Themen, Kontaktdatum, Anzahl beizubehaltender Angebote). Das Modul berechnet automatisch die den Parametern entsprechenden hinzuzufügenden Angebote. Wir empfehlen, entweder das Feld **[!UICONTROL Kategorie]** oder das Feld **[!UICONTROL Thema]** vollständig auszufüllen, und nicht beide gleichzeitig.
+   * **[!UICONTROL Suche nach dem besten Angebot in einer Kategorie]** : Wenn Sie diese Option aktivieren, geben Sie die Aufrufparameter des Angebotsmoduls an (Platzierung, Kategorie oder Themen, Kontaktdatum, Anzahl der beizubehaltenden Angebote). Das Modul berechnet automatisch die hinzuzufügenden Angebote, die den Parametern entsprechen. Wir empfehlen, entweder das Feld **[!UICONTROL Kategorie]** oder das Feld **[!UICONTROL Thema]** vollständig auszufüllen, und nicht beide gleichzeitig.
 
      ![](assets/int_enrichment_offer3.png)
 
@@ -101,11 +101,11 @@ Gehen Sie dazu wie folgt vor:
 
 1. Klicken Sie im Tab **[!UICONTROL Anreicherung]** der Aktivität auf den Link **[!UICONTROL Daten hinzufügen...]**.
 1. Wählen Sie im folgenden Fenster den Datentyp **[!UICONTROL Relation]** aus.
-1. Definieren Sie nun den Relationstyp und das Ziel der Relation. Im vorliegenden Beispiel handelt es sich beim Ziel um das Angebotsschema.
+1. Wählen Sie die Art des Links, den Sie erstellen möchten, sowie seine Zielgruppe aus. In diesem Fall ist das Angebotsschema die Zielgruppe.
 
    ![](assets/int_enrichment_link1.png)
 
-1. Definieren Sie die Art der Relation zwischen den Daten der Eingangstabelle der Aktivität &quot;Anreicherung&quot; (hier die Empfängertabelle) und der Angebotstabelle. Sie können beispielsweise einem Empfänger einen Angebots-Code zuordnen.
+1. Relation zwischen den Daten der Eingangstabelle der Aktivität Anreicherung (hier die Empfängertabelle) und der Angebotstabelle Sie können beispielsweise einen Angebots-Code mit einem Empfänger verknüpfen.
 
    ![](assets/int_enrichment_link2.png)
 
@@ -119,7 +119,6 @@ Gehen Sie dazu wie folgt vor:
 
 Standardmäßig werden Ranking und Gewichtung bei Verwendung der Aktivität **Anreicherung** nicht in der Vorschlagstabelle gespeichert.
 
-
 >[!NOTE]
 >
 >Die Aktivität **[!UICONTROL Angebotsmodul]** speichert diese Informationen standardmäßig.
@@ -132,7 +131,6 @@ Gehen Sie wie folgt vor, wenn Sie diese Informationen dennoch speichern möchten
    ![](assets/ita_enrichment_rankweight_1.png)
 
 1. Fügen Sie für das Ranking die Spalte **[!UICONTROL @rank]** und für die Gewichtung die Spalte **[!UICONTROL @weight]** hinzu.
-
 
    ![](assets/ita_enrichment_rankweight_2.png)
 
@@ -151,7 +149,7 @@ Das Prinzip dieser Aktivität entspricht dem der Anreicherung. Auch hier werden 
 Nach der Konfiguration Ihrer Abfrage (siehe [Workflow](../../workflow/using/query.md)-Handbuch):
 
 1. Platzieren Sie im Anschluss an die Abfrage ein **[!UICONTROL Angebotsmodul]** und öffnen Sie es zur weiteren Bearbeitung.
-1. Konfigurieren Sie die verschiedenen Parameter der Abfrage des Angebotsmoduls (Platzierung, Kategorie oder Themen, Kontaktdatum, Anzahl beizubehaltender Angebote). Das Modul berechnet automatisch die den Parametern entsprechenden Angebote.
+1. Füllen Sie die verschiedenen verfügbaren Felder aus, um die Parameter der Abfrage des Angebotsmoduls anzugeben (Platzierung, Kategorie oder Themen, Kontaktdatum, Anzahl beizubehaltender Angebote). Das Modul berechnet automatisch die hinzuzufügenden Angebote, die den Parametern entsprechen.
 
    >[!NOTE]
    >
@@ -172,7 +170,7 @@ Gehen Sie dazu wie folgt vor:
 1. Definieren Sie nun auf der Registerkarte **[!UICONTROL Segmente]** über die Schaltfläche **[!UICONTROL Hinzufügen]** die verschiedenen Segmente:
 
    * Konfigurieren Sie anhand der verfügbaren Filter und Begrenzungen die Population des Segments.
-   * Wählen Sie dann das Angebot aus, das Sie dem Segment unterbreiten möchten. Es stehen die Angebote zur Verfügung, die der Konfiguration der zuvor ausgewählten Platzierung entsprechen.
+   * Wählen Sie dann das Angebot aus, das Sie der Untergruppe unterbreiten möchten. Die verfügbaren Angebote sind diejenigen, die in der im vorherigen Schritt ausgewählten Angebotsumgebung geeignet sind.
 
      ![](assets/int_offer_per_cell1.png)
 

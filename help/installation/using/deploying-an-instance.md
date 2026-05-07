@@ -10,8 +10,8 @@ topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
 source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
 workflow-type: tm+mt
-source-wordcount: '3547'
-ht-degree: 6%
+source-wordcount: '3629'
+ht-degree: 7%
 
 ---
 
@@ -236,7 +236,7 @@ Es gibt drei mögliche Architekturtypen für die Implementierung des Trackings:
 
 1. **Unterstützung für das Tracking in einer vorhandenen Instanz hinzufügen**
 
-   Diese Auswahl gilt, wenn die Instanz bereits für andere Anforderungen (MTA-Server usw.) auf Servern erstellt wurde, die als Tracking-Server verwendet werden.
+   Diese Auswahl gilt, wenn die Instanz bereits für andere Anforderungen erstellt wurde (MTA-Server usw.) auf Servern, die als Tracking-Server verwendet werden.
 
    ![](assets/s_ncs_install_deployment_wiz_11.png)
 
@@ -476,7 +476,7 @@ Das Statusattribut kann einen von drei Werten aufweisen:
 
 * normal: Vorhandenes Verhalten (ohne Synchronisierung)
 
-* Blacklist: Die URL wird der Blockierungsliste hinzugefügt, wenn ein 404-Fehler zurückgegeben wird. Auf die Blockierungsliste setzen Die Dauer (in Sekunden) der URL in der wird durch ein **timeout“-** definiert, dessen Standardwert 60s ist.
+* Blacklist: Die URL wird der Blockierungsliste hinzugefügt, wenn ein 404-Fehler zurückgegeben wird. Die Dauer (in Sekunden) der URL in der wird durch ein **timeout“-** definiert, dessen Standardwert 60s ist.
 
 Die vorkonfigurierte Konfiguration der Synchronisierung ist:
 

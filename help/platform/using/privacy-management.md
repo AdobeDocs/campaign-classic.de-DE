@@ -10,7 +10,7 @@ topic-tags: starting-with-adobe-campaign
 exl-id: 23c873fd-9016-4d32-842c-772cfff0e23e
 source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '916'
 ht-degree: 100%
 
 ---
@@ -41,7 +41,7 @@ It also contains information on important features to manage Privacy ([Consent, 
 
 Die Funktionen von Adobe Campaign helfen Ihnen bei der Einhaltung der folgenden Verordnungen:
 
-* Die **DSGVO** (Datenschutz-Grundverordnung) ist das Datenschutzgesetz der Europäischen Union (EU), in dem die Anforderungen an den Datenschutz in den Ländern der EU harmonisiert und neu geregelt werden. 
+* Die **DSGVO** (Datenschutz-Grundverordnung) ist das Datenschutzgesetz der Europäischen Union (EU), in dem die Anforderungen an den Datenschutz in den Ländern der EU harmonisiert und neu geregelt werden.
 * Der **CCPA** (California Consumer Privacy Act) gibt in Kalifornien ansässigen Personen neue Rechte in Bezug auf ihre personenbezogenen Daten und verpflichtet bestimmte in Kalifornien tätige Unternehmen zur Einhaltung von Datenschutzvorschriften.
 * Der **PDPA** (Personal Data Protection Act) ist das neue Datenschutzgesetz, in dem die Anforderungen an den Datenschutz in Thailand harmonisiert und neu geregelt werden.
 * Der **LGPD** (Lei Geral de Proteção de Dados) gilt für alle Unternehmen, die in Brasilien personenbezogene Daten sammeln oder verarbeiten.
@@ -54,7 +54,7 @@ Alle diese Verordnungen gelten für Adobe Campaign-Kundinnen und -Kunden, die ü
 
 >[!NOTE]
 >
->Weitere Informationen zu personenbezogenen Daten und zu den verschiedenen Entitäten, die Daten verwalten (Datenverantwortliche, Auftragsverarbeiter und betroffene Personen), finden Sie unter [Personenbezogene Daten und Personas](../../platform/using/privacy-and-recommendations.md#personal-data).
+>Weitere Informationen zu personenbezogenen Daten und zu den verschiedenen Entitäten, die Daten verwalten (Datenverantwortlicher, Auftragsverarbeiter und betroffene Person), finden Sie unter [Personenbezogene Daten und Personas](../../platform/using/privacy-and-recommendations.md#personal-data).
 
 ## Recht auf Zugriff und Recht auf Vergessenwerden {#right-access-forgotten}
 
@@ -82,7 +82,7 @@ Zusätzlich zu den neuen Funktionen für das **Recht auf Zugriff** und das **Rec
 
 ### Einverständnisverwaltung {#consent-management}
 
-Einverständnis bedeutet die Zustimmung des Datensubjekts zur Verarbeitung seiner personenbezogenen Daten. Der Datenverantwortliche ist dafür zuständig, das erforderliche Einverständnis für diese Verarbeitung einzuholen. Adobe Campaign stellt zwar Funktionen bereit, die den Kunden bei der Verwaltung der Einverständniserklärungen unterstützen, Adobe ist jedoch nicht für das Einverständnis als solches verantwortlich. Kunden sollten ihre Rechtsabteilung zurate ziehen, um Prozesse und Verfahren für das Einholen des Einverständnisses auszuarbeiten.
+Eine Einwilligung bedeutet, dass die betroffene Person mit der Verarbeitung der sie betreffenden personenbezogenen Daten einverstanden ist. Die Einholung der erforderlichen Einwilligung für diese Verarbeitung liegt in der Verantwortung der oder des Datenverantwortlichen. Während Adobe Campaign möglicherweise einige Funktionen bereitstellt, um Kundinnen und Kunden bei der Verwaltung des Einverständnisses im Zusammenhang mit dem Service zu unterstützen, ist Adobe nicht für das Einverständnis verantwortlich. Kundinnen und Kunden sollten mit ihrer eigenen Rechtsabteilung zusammenarbeiten, um ihre eigenen Prozesse und Vorgehensweisen für die erforderliche Zustimmung zu bestimmen.
 
 Die Funktionen, die bei der Verwaltung bestimmter Aspekte des Einverständnisses helfen, waren bei Adobe Campaign schon immer von zentraler Bedeutung. Mithilfe des Abonnementverwaltungsprozesses können Kunden nachverfolgen, welche Empfänger sich für welche Arten von Abonnements angemeldet haben, ob Newsletter, tägliche oder wöchentliche Promotions oder andere Marketing-Programme.
 

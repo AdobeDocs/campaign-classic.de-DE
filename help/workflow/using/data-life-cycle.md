@@ -7,8 +7,8 @@ hide: true
 exl-id: 366acc1e-d769-4053-9fa1-f47182627c07
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 100%
+source-wordcount: '548'
+ht-degree: 82%
 
 ---
 
@@ -40,7 +40,7 @@ Wählen Sie im Kontextmenü die entsprechende Option aus:
 
   Weitere Informationen hierzu finden Sie in diesem [Abschnitt](../../reporting/using/using-the-descriptive-analysis-wizard.md).
 
-Die Zielgruppendaten werden bei Ausführung des Workflows bereinigt. Nur die letzte Arbeitstabelle ist zugänglich. Sie haben die Möglichkeit, den Workflow dahingehend zu konfigurieren, dass alle Arbeitstabellen beibehalten werden. Aktivieren Sie hierzu in den Workflow-Eigenschaften die Option **[!UICONTROL Zwischen zwei Ausführungen die ermittelte Population festhalten]**.
+Die Zielgruppendaten werden bei Ausführung des Workflows gelöscht. Nur die letzte Arbeitstabelle ist zugänglich. Sie haben die Möglichkeit, den Workflow dahingehend zu konfigurieren, dass alle Arbeitstabellen beibehalten werden. Aktivieren Sie hierzu in den Workflow-Eigenschaften die Option **[!UICONTROL Zwischen zwei Ausführungen die ermittelte Population festhalten]**.
 
 Bei großen Datenmengen sollte diese Option jedoch nicht aktiviert werden.
 
@@ -50,13 +50,13 @@ Bei großen Datenmengen sollte diese Option jedoch nicht aktiviert werden.
 
 Die in den Arbeitstabellen des Workflows gespeicherten Daten können insbesondere in Personalisierungsfeldern verwendet werden.
 
-Auf diese Weise können Sie in einem Versand mithilfe einer Liste gesammelte oder aus Umfrageantworten stammende Informationen verwenden. Dies geschieht über folgende Syntax:
+Auf diese Weise können Sie Daten verwenden, die über eine Liste oder auf der Grundlage von Antworten auf eine Umfrage in einem Versand erfasst wurden. Verwenden Sie dazu die folgende Syntax:
 
 ```
 %= targetData.FIELD %
 ```
 
-Personalisierungsinformationen vom Typ **[!UICONTROL Erweiterung des Zieldatensatzes]** (targetData) stehen nur in Zielgruppen-Workflows zur Verfügung. Dies bedeutet, dass die Versandzielgruppe im Workflow zu bestimmen und in der in den Versand eingehenden Transition zu übermitteln ist.
+Personalisierungselemente vom **[!UICONTROL Erweiterung des Zieldatensatzes]** (targetData) sind für Zielgruppen-Workflows nicht verfügbar. Die Versandzielgruppe muss im Workflow erstellt und in der eingehenden Transition des Versands spezifiziert werden.
 
 Wenn Sie Testsendungen durchführen möchten, muss die Testversand-Zielgruppe daher im Modus **[!UICONTROL Adressersetzung]** konzipiert werden, damit die Personalisierungsdaten ausgefüllt werden können. Weitere Informationen finden Sie in diesem Abschnitt der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=de#target-population){target="_blank"}.
 
@@ -110,7 +110,7 @@ Gehen Sie wie folgt vor:
 
    ![](assets/wf-targetdata-sample-6.png)
 
-   Daten vom Typ **[!UICONTROL Erweiterung des Zieldatensatzes]** (targetData) werden wie andere Personalisierungsfelder auch in Sendungen eingefügt. D. h. sie können u. a. in Nachrichtenbetreffs, Linktiteln oder Links selbst verwendet werden.
+   **[!UICONTROL Erweiterung des Zieldatensatzes]** (targetData) werden Daten mit denselben Eigenschaften wie bei allen Personalisierungsfeldern in Sendungen eingefügt. Sie können auch im Betreff, in Link-Kennzeichnungen oder in den Links selbst verwendet werden.
 
    Die in der ersten Aktivität des Workflows erhobenen Empfänger erhalten somit die folgende Nachricht:
 

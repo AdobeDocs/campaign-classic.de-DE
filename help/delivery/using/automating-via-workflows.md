@@ -7,9 +7,9 @@ feature: Workflows
 role: User
 exl-id: bc6ebf5d-cc21-4750-9713-2bf259e7d6bf
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: ht
-source-wordcount: '1213'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1241'
+ht-degree: 79%
 
 ---
 
@@ -34,7 +34,7 @@ Vier Aktivitätseigenschaften sind zu konfigurieren:
 
 * **Wird durch die Transition angegeben**
 
-  Der zu verwendende Inhalt wurde zuvor erstellt, die Bearbeitungsvorgänge beziehen sich auf die Inhaltsinstanz, welche vom Eingangsereignis übernommen wurde. Auf die Kennung des Inhalts kann über die Variable &quot;contentId&quot; des Ereignisses zugegriffen werden.
+  Der zu verwendende Inhalt wurde zuvor erstellt. Die Prozesse beziehen sich auf die vom eingehenden Ereignis propagierte Inhaltsinstanz. Der Zugriff auf die Inhaltskennung erfolgt über die Variable „contentId“ des Ereignisses.
 
 * **Explizit**
 
@@ -42,11 +42,11 @@ Vier Aktivitätseigenschaften sind zu konfigurieren:
 
 * **Wird durch ein Script erstellt**
 
-  Wählt eine Inhaltsinstanz ausgehend von einem JavaScript-Template aus. Der auszuwertende Code ermöglicht den Abruf der Inhaltskennung.
+  Wählt eine auf einer JavaScript-Vorlage basierende Inhaltsinstanz aus. Mit dem auszuwertenden Code können Sie die Inhaltskennung abrufen.
 
 * **Neu, basierend auf einer Veröffentlichungsvorlage erstellt**
 
-  Erstellt einen neuen Inhalt ausgehend von einer Veröffentlichungsvorlage. Die Inhaltsinstanz wird im angegebenen Ordner „Inhaltskanal“ gespeichert.
+  Erstellt einen neuen Inhalt über eine Veröffentlichungsvorlage. Die Inhaltsinstanz wird im befüllten Ordner „String“ gespeichert.
 
 ### Inhalt aktualisieren {#update-the-content}
 
@@ -56,7 +56,7 @@ Vier Aktivitätseigenschaften sind zu konfigurieren:
 
 * **Zugriff auf Daten eines XML-Streams**
 
-  Der Inhalt wird mit einem XML-Stream aktualisiert, der aus einer externen Quelle stammt. Zum Download der Daten muss die entsprechende URL angegeben werden.
+  Der Inhalt wird über einen XML-Feed aus einer externen Quelle aktualisiert. Um Daten herunterzuladen, muss eine URL eingegeben werden.
 
   Mithilfe eines XSL-Stylesheets können dann die eingehenden XML-Daten umgewandelt werden.
 
@@ -64,17 +64,17 @@ Vier Aktivitätseigenschaften sind zu konfigurieren:
 
 * **Speichern**
 
-  Speichert den erstellten oder geänderten Inhalt. Die Kennung des Inhalts wird in der Variablen &quot;contentID&quot; des ausgehenden Ereignisses übernommen.
+  Speichert den erstellten oder geänderten Inhalt. Die Kennung des gespeicherten Inhalts wird in die Variable „contentId“ des ausgehenden Ereignisses übertragen.
 
 * **Erzeugen**
 
-  Erzeugt die Ausgabedateien für jede Veröffentlichungsvorlage mit Typ &quot;Datei&quot;. Die ausgehende Transition wird für jede erzeugte Datei aktiviert, wobei die in der Variablen &quot;contentID&quot; gespeicherte Inhaltskennung und der in der Variable &quot;filename&quot; gespeicherte Dateiname als Parameter übergeben werden.
+  Erzeugt die Ausgabedateien für jede Umwandlungsvorlage mit einer Publikation vom Typ „Datei“. Die ausgehende Transition wird für jede erzeugte Datei mit den folgenden Parametern aktiviert: die Kennung des in der Variablen „contentId“ gespeicherten Inhalts und der Dateiname in der Variablen „filename“.
 
 ### Transition {#transition}
 
-Die Option **Ausgehende Transition erzeugen** fügt der Aktivität **[!UICONTROL Content-Management]** eine Transition hinzu, damit der Workflow mit einer neuen Aktivität fortgesetzt werden kann. Wenn Sie diese Option ankreuzen, ist die Angabe eines Titels für die Transition erforderlich.
+Mit **Option „Ausgabetransition erzeugen** können Sie eine Ausgabetransition zur Aktivität **[!UICONTROL Content-Management“ hinzufügen]** um eine neue Aktivität mit der Workflow-Ausführung zu verknüpfen. Wenn Sie diese Option aktivieren, geben Sie einen Titel für die Transition ein.
 
-## Beispiele      {#examples}
+## Beispiele {#examples}
 
 ### Inhaltserstellung und -versand automatisieren {#automating-content-creation-and-delivery}
 
@@ -150,7 +150,7 @@ Die Konfiguration des Versands erfolgt in der **Versand**-Aktion:
 
 Bei Erstellung eines neuen Versands ist die Angabe der Vorlage erforderlich.
 
-Hier werden die Umwandlungsvorlagen aus der Veröffentlichungsvorlage als Versandvorlage verwendet. Bei der Inhaltserzeugung werden die HTML- und Text-Vorlagen genutzt, wenn sie keine verknüpfte Versandvorlage haben oder mit derselben Vorlage wie der in der Aktivität angegebenen referenziert sind.
+Die Versandvorlage der Aktivität wird zur Auswahl der Umwandlungsvorlagen der Veröffentlichungsvorlage verwendet. Bei der Inhaltserstellung werden alle HTML- und Textvorlagen ohne Versandvorlagen berücksichtigt oder diejenigen, auf die mit derselben Vorlage wie die Aktivität verwiesen wird.
 
 Empfänger und Inhalt des Versands
 
@@ -188,7 +188,6 @@ Die Aktivität endet mit der Erzeugung des Inhalts unter Verwendung des angegebe
 
 Die Aktivität **JavaScript-Code** ruft den kompletten Namen jeder erzeugten Datei ab.
 
-
 ![](assets/d_ncs_content_workflow9.png)
 
 ### Versand und Inhalt erstellen {#creating-the-delivery-and-its-content}
@@ -225,7 +224,7 @@ Wenn Ihr Versandinhalt in Amazon Simple Storage Service (S3) Buckets verfügbar 
 
 ## Halbautomatische Aktualisierung {#semi-automatic-update}
 
-Inhaltsdaten können in einem halbautomatischen Modus aktualisiert werden. Die Daten der Aktualisierung stammen aus einem XML-Stream, auf den über eine URL zugegriffen wird.
+Inhaltsdaten können im „halbautomatischen“ Modus aktualisiert werden. Die Daten werden von einem XML-Feed über eine URL abgerufen.
 
 Die Aktivierung des Datenabrufs geschieht manuell über ein Formular.
 

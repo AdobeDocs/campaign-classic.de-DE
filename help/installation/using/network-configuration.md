@@ -10,8 +10,8 @@ topic-tags: prerequisites-and-recommendations-
 exl-id: b86236ae-95e9-4406-b60f-6d90ad0d4a01
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '704'
-ht-degree: 3%
+source-wordcount: '725'
+ht-degree: 6%
 
 ---
 
@@ -233,7 +233,7 @@ Für die Integration zwischen Adobe Campaign und Adobe Experience Manager müsse
    <td> Beschreibung<br /> </td> 
   </tr> 
   <tr> 
-   <td> 80 <br /> </td> 
+   <td> 80<br /> </td> 
    <td> AEM-Verbindung zu Adobe Campaign<br /> </td> 
   </tr> 
   <tr> 

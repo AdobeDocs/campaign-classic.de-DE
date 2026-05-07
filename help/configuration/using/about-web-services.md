@@ -7,8 +7,8 @@ role: Developer
 exl-id: 7aa2aef1-2eb6-48a6-82fa-4451bed66216
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 8%
+source-wordcount: '665'
+ht-degree: 7%
 
 ---
 
@@ -38,7 +38,7 @@ Bevor Sie die Adobe Campaign-APIs verwenden, müssen Sie mit den folgenden Theme
 Adobe Campaign verwendet zwei Arten von APIs:
 
 * Generische Datenzugriffs-APIs zur Abfrage von Datenmodelldaten. Näheres hierzu finden Sie unter [Datenorientierte APIs](../../configuration/using/data-oriented-apis.md).
-* Business-orientierte APIs, mit denen Sie auf diese einzelnen Objekte, also Versand, Workflows, Abonnements usw., Aktionen ausführen können. Siehe [Business-orientierte APIs](../../configuration/using/business-oriented-apis.md).
+* Geschäftsspezifische APIs, mit denen Sie auf jedes Objekt reagieren können: Sendungen, Workflows, Abonnements usw. Siehe [Business-orientierte APIs](../../configuration/using/business-oriented-apis.md).
 
 Um APIs entwickeln und mit Adobe Campaign interagieren zu können, müssen Sie mit Ihrem Datenmodell vertraut sein. Mit Adobe Campaign können Sie eine vollständige Beschreibung der Basis generieren. Siehe [Beschreibung des Modells](../../configuration/using/data-oriented-apis.md#description-of-the-model).
 

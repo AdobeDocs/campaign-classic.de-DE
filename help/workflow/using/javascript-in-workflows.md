@@ -7,8 +7,8 @@ hide: true
 exl-id: 7213ea64-3dec-4b16-9d93-4ae941ddfaa7
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1702'
-ht-degree: 100%
+source-wordcount: '1832'
+ht-degree: 99%
 
 ---
 
@@ -619,9 +619,9 @@ In diesem Video wird ein Beispiel für die Verwendung einer nicht statischen API
 
 * [Beispiele für SOAP-Aufrufe](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=de)
 * Methoden:
-   * [Create](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html?lang=de)
+   * [Erstellen](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html?lang=de)
    * [DeleteCollection](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html?lang=de)
    * [ExecuteQuery](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html?lang=de)
    * [PostEvent](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html?lang=de)
-   * [Write](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-Write.html?lang=de)
+   * [Schreiben](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-Write.html?lang=de)
 * [logInfo-Funktion](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html?lang=de)

@@ -8,7 +8,7 @@ exl-id: 12b173e9-5068-4d45-9e1e-2aecc9866e9c
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '673'
-ht-degree: 100%
+ht-degree: 64%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 Ziel des folgenden Anwendungsbeispiels ist es, die zuletzt zur Datenbank hinzugefügten Empfänger zu identifizieren.
 
-Hierfür wird das Datum der Empfängererstellung in der Datenbank mit dem letzten bekannten Datum, an dem ein Empfänger erstellt wurde, mithilfe eines Aggregats verglichen. Auf diese Weise werden alle an diesem Datum erstellten Empfänger abgerufen.
+Mithilfe des folgenden Prozesses wird das Erstellungsdatum der Empfänger in der Datenbank mit dem letzten bekannten Datum verglichen, an dem ein Empfänger mithilfe eines Aggregats erstellt wurde. Alle am selben Tag erstellten Empfänger werden ebenfalls ausgewählt.
 
 Die Konfiguration eines Empfängerfilters vom Typ **Erstellungsdatum = max (Erstellungsdatum)** ist mithilfe des folgenden Workflows möglich:
 
@@ -31,16 +31,16 @@ Die Konfiguration eines Empfängerfilters vom Typ **Erstellungsdatum = max (Erst
 
 ## &#x200B;1. Schritt: Berechnung des Aggregats {#step-1--calculating-the-aggregate-result}
 
-1. Erstellen Sie eine Abfrage. Ziel ist die Berechnung des letzten bekannten Erstellungsdatums aus allen in der Datenbank enthaltenen Empfängern. Die Abfrage enthält somit keinen Filter.
+1. Erstellen Sie eine Abfrage. Hier besteht das Ziel darin, das letzte bekannte Erstellungsdatum aus allen Empfängern in der Datenbank zu berechnen. Die Abfrage enthält daher keinen Filter.
 1. Klicken Sie auf den Link **[!UICONTROL Daten hinzufügen...]**.
 1. Wählen Sie in den aufeinanderfolgenden Fenstern die Optionen **[!UICONTROL Daten in Relation mit der Filterdimension]** und **[!UICONTROL Daten der Filterdimension]**.
 1. Definieren Sie im Fenster **[!UICONTROL Hinzuzufügende Daten]** eine neue Spalte zur Berechnung des maximalen Werts im Feld **Erstellungsdatum** der Empfängertabelle. Verwenden Sie hierzu den Ausdruckseditor oder geben Sie direkt **max(@created)** in der **[!UICONTROL Ausdruck]**-Spalte ein. Klicken Sie dann auf **[!UICONTROL Beenden]**.
 
    ![](assets/datamanagement_usecase_2.png)
 
-1. Klicken Sie auf **[!UICONTROL Zusätzliche Daten bearbeiten...]** und dann auf **[!UICONTROL Erweiterte Parameter…]**. Aktivieren Sie die Option **[!UICONTROL Automatisches Hinzufügen der Primärschlüssel der Zielgruppendimension deaktivieren]**.
+1. Klicken Sie **[!UICONTROL Zusätzliche Daten bearbeiten]** und dann **[!UICONTROL Erweiterte Parameter…]**. Aktivieren Sie **[!UICONTROL Option „Automatisches Hinzufügen der Primärschlüssel der Zielgruppendimension deaktivieren]**.
 
-   Diese Option ermöglicht es, nicht alle Empfänger als Ergebnis auszugeben und nur die Daten beizubehalten, die explizit hinzugefügt wurden. Hier handelt es sich um das Datum, an dem zuletzt ein Empfänger erstellt wurde.
+   Diese Option stellt sicher, dass nicht alle Empfänger angezeigt werden und dass explizit hinzugefügte Daten nicht beibehalten werden. In diesem Fall bezieht er sich auf das letzte Datum, an dem ein Empfänger erstellt wurde.
 
    Lassen Sie die Option **[!UICONTROL Duplikate löschen (DISTINCT)]** angekreuzt.
 
@@ -51,7 +51,7 @@ Verwenden Sie die Schema-Bearbeitung, um die auf Empfänger bezogene Abfrage mit
 1. Wählen Sie als Hauptmenge die Abfrage bezüglich der Empfänger aus.
 1. Fügen Sie im **[!UICONTROL Relationen]**-Tab eine neue Relation hinzu und konfigurieren Sie sie wie folgt:
 
-   * Wählen Sie das temporäre Schema des Aggregats aus. Die Daten dieses Schemas werden zur Hauptmenge hinzugefügt.
+   * Wählen Sie das temporäre Schema für das Aggregat aus. Die Daten für dieses Schema werden den Mitgliedern der Hauptmenge hinzugefügt.
    * Aktivieren Sie die Option **[!UICONTROL Einfachen Join verwenden]**, um das Ergebnis des Aggregats zu jedem Empfänger der Hauptmenge zuzuordnen.
    * Geben Sie schließlich an, dass es sich bei der Relation um eine **[!UICONTROL 1:1-Relation]** handelt.
 
@@ -59,15 +59,15 @@ Verwenden Sie die Schema-Bearbeitung, um die auf Empfänger bezogene Abfrage mit
 
 Auf diese Weise wird das Ergebnis des Aggregats mit jedem einzelnen der Empfänger verknüpft.
 
-## &#x200B;3. Schritt: Filterung der Empfänger mithilfe des Aggregats  {#step-3--filtering-recipients-using-the-aggregate-}
+## &#x200B;3. Schritt: Filterung der Empfänger mithilfe des Aggregats {#step-3--filtering-recipients-using-the-aggregate-}
 
-Nach Erzeugung der Relation sind die Empfänger und das Aggregat Teil desselben temporären Schemas. Dadurch ist es nun möglich, einen Filter auf das Schema anzuwenden, der den Vergleich zwischen dem Erstellungsdatum der Empfänger und dem letzten Erstellungsdatum (durch das Aggregat berechnet) vornimmt. Hierzu wird eine Aufspaltung verwendet.
+Sobald die Relation hergestellt wurde, bilden das Aggregatergebnis und die Empfänger einen Teil desselben temporären Schemas. Es ist daher möglich, einen Filter für das Schema zu erstellen, um das Erstellungsdatum der Empfänger und das letzte bekannte Erstellungsdatum, dargestellt durch die Aggregationsfunktion, zu vergleichen. Dieser Filter wird mithilfe einer Aufspaltungsaktivität ausgeführt.
 
 1. Wählen Sie im **[!UICONTROL Allgemein]**-Tab **Empfänger** als Zielgruppendimension und **Schema-Bearbeitung** als Filterdimension aus (um das Schema der eingehenden Transition zu filtern).
 1. Gehen Sie in den **[!UICONTROL Teilmengen]**-Tab, kreuzen Sie die Option **[!UICONTROL Filterbedingung für die Eingangspopulation hinzufügen]** an und klicken Sie auf **[!UICONTROL Bearbeiten...]**.
 1. Setzen Sie im Ausdruckseditor das Erstellungsdatum der Empfänger mit dem vom Aggregat berechneten Datum gleich.
 
-   Datumsfelder werden in der Datenbank in der Regel auf die Millisekunde genau gespeichert. Die Datumsangaben müssen daher auf den ganzen Tag ausgedehnt werden, um nicht nur die Empfänger abzurufen, die in derselben Millisekunde erstellt wurden.
+   Die Datumsfelder in der Datenbank werden im Allgemeinen in der Millisekunde gespeichert. Sie müssen diese daher für den gesamten Tag verlängern, um zu vermeiden, dass nur die Empfänger abgerufen werden, die in derselben Millisekunde erstellt wurden.
 
    Im Ausdruckseditor steht hierzu die Funktion **ToDate** zur Verfügung, die Datumsangaben mit Uhrzeit in einfache Daten konvertiert.
 

@@ -7,17 +7,17 @@ feature: Subscriptions
 role: User
 exl-id: eb72f19a-7669-4596-bf9b-8c0ce22b67bf
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: ht
-source-wordcount: '167'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '168'
+ht-degree: 60%
 
 ---
 
 # Über Services und Abonnements{#about-services-and-subscriptions}
 
-Adobe Campaign ermöglicht die Erstellung und Verwaltung von Informations-Services wie z. B. Newslettern. Die Möglichkeiten sind überaus vielfältig. So können beispielsweise produkt- oder themenspezifische Newsletter ebenso verwaltet werden wie interne und externe Echtzeit-Benachrichtigungen. Weiterführende Informationen finden Sie im Abschnitt [Abonnements verwalten](managing-subscriptions.md).
+Mit Adobe Campaign können Sie Informations-Services wie Newsletter erstellen und verwalten und die Abonnements für diese Services verwalten. Dabei können mehrere Services parallel definiert werden, z. B. spezialisierte Newsletter für bestimmte Kategorien, Themen oder Bereiche einer Website, Abonnements zu verschiedenen Arten von Warnmeldungen und Echtzeitbenachrichtigungen. Weiterführende Informationen finden Sie im Abschnitt [Abonnements verwalten](managing-subscriptions.md).
 
-Sie können Ihren Empfängern gestatten, die Nachrichten mit anderen Kontakten ihrer sozialen oder professionellen Netzwerke zu teilen, indem Sie entsprechende Links einfügen. Die Teilvorgänge und Zugriffe auf die betreffenden Web-Seiten lassen sich verfolgen. Weiterführende Informationen finden Sie unter [Virale Marketing-Strategien](viral-and-social-marketing.md).
+Sie können es Ihren Versandempfängern auch ermöglichen, sie mit Mitgliedern ihres sozialen oder beruflichen Netzwerks zu teilen. Fügen Sie dazu die entsprechenden Links in Ihren Versand ein. Sie können diesen Freigabeprozess sowie die Anzahl der Besuche auf den betroffenen Seiten verfolgen. Weiterführende Informationen finden Sie unter [Virale Marketing-Strategien](viral-and-social-marketing.md).
 
 >[!NOTE]
 >

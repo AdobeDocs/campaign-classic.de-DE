@@ -1,17 +1,17 @@
 ---
 product: campaign
-title: 'Zugriffsverwaltung '
+title: Zugriffsverwaltung
 description: Weitere Informationen zu Best Practices für die Zugriffsverwaltung
 feature: Installation, Access Management, Permissions
 exl-id: af88e4e7-0ee3-48b4-9db4-7dd390d9d46a
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 16%
+source-wordcount: '377'
+ht-degree: 8%
 
 ---
 
-# Zugriffsverwaltung  {#access-management}
+# Zugriffsverwaltung {#access-management}
 
 
 
@@ -37,7 +37,7 @@ Erstellen Sie genügend Sicherheitsgruppen, um Ihren Benutzern gerade genug Rech
 
 Verwenden Sie keinen Admin-Operator (oder geben Sie ihn nicht frei). Erstellen Sie einen Benutzer pro physischem Benutzer (für eine genaue Prüfung/Protokollierung). Fügen Sie Ihre neu benannten Administratoren zur Administratorgruppe hinzu. Wenn Sie den Administrator-Operator nicht verwenden, löschen Sie ihn nicht und deaktivieren Sie ihn nicht: Dieser Operator wird intern verwendet, um die Verarbeitung auszuführen. Sie können jedoch seinen [Zugriff auf die Client-Konsole](../../platform/using/access-management.md) verbieten und seine Sicherheitszone (auf localhost) einschränken.
 
-Nehmen Sie nicht zu viele Benutzer in die Administrator-Gruppe auf (bzw. Benutzer mit spezifischen Administratorberechtigungen). Diese Benutzer verfügen über umfassende Rechte (sie können alle SQL-Anweisungen und Befehle auf dem Server ausführen etc.).
+Vermeiden Sie es, zu viele Benutzer in der Administratorgruppe (oder mit spezifischen Administratorrechten) hinzuzufügen. Sie sind sehr leistungsstarke Operatoren (sie können alle SQL-Anweisungen ausführen, Befehle auf dem Server ausführen usw.).
 
 Adobe Campaign bietet drei allgemeine Berechtigungen über [spezifische Berechtigungen](../../platform/using/access-management.md#named-rights):
 

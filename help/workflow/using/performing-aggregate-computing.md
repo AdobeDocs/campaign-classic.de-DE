@@ -7,8 +7,8 @@ hide: true
 exl-id: 5b05788f-498b-4a84-bdde-2852900f0129
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 98%
+source-wordcount: '245'
+ht-degree: 62%
 
 ---
 
@@ -37,17 +37,17 @@ Gehen Sie wie folgt vor:
    ![](assets/query_editor_nveau_27.png)
 
 1. In diesem Beispiel ist keine **[!UICONTROL Sortierung]** erforderlich. Sie können somit direkt auf **[!UICONTROL Weiter]** klicken.
-1. Konfigurieren Sie nun die Filterbedingung. Hier soll die Auswahl auf Empfänger beschränkt werden, die in Berlin wohnen.
+1. Konfigurieren Sie einen Datenfilter. Hier möchten Sie die Auswahl auf Kontakte beschränken, die in London leben.
 
    ![](assets/query_editor_22.png)
 
    >[!NOTE]
    >
-   >Bei der Angabe von Werten ist die Groß- und Kleinschreibung zu beachten. Wenn Sie z. B. &#39;berlin&#39; eingeben, die Stadt Berlin in der Empfängerliste jedoch großgeschrieben ist, wird die Abfrage keine Ergebnisse ausgeben.
+   >Bei Werten wird zwischen Groß- und Kleinschreibung unterschieden. Wenn der Wert „London“ in die Bedingung ohne Großbuchstaben eingegeben wird und die Empfängerliste das Wort „London“ mit einem Großbuchstaben enthält, schlägt die Abfrage fehl.
 
 1. Auch im Fenster **[!UICONTROL Datenformatierung]** können Sie direkt auf **[!UICONTROL Weiter]** klicken.
 1. Klicken Sie anschließend auf **[!UICONTROL Datenvorschau starten]**.
 
-   Bei einer Sortierung nach Geschlecht sind drei verschiedene Werte möglich: **2** für weiblich, **1** für männlich und **0**, wenn das Geschlecht nicht angegeben wurde. Diese Liste enthält 31 Frauen, 38 Männer und 1 Person ohne Geschlechtsangabe.
+   Es gibt drei separate Werte für jede Sortierung nach Geschlecht: **2** für weiblich, **1** für männlich und **0** wenn das Geschlecht unbekannt ist. In diesem Beispiel enthält die Liste 10 Frauen, 16 Männer und 2 Personen, deren Geschlecht nicht bekannt ist.
 
    ![](assets/query_editor_agregat_04.png)

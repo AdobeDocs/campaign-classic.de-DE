@@ -10,8 +10,8 @@ topic-tags: troubleshooting
 exl-id: b5aa5663-1902-4f50-9202-783e73a28838
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '668'
-ht-degree: 10%
+source-wordcount: '778'
+ht-degree: 24%
 
 ---
 
@@ -118,6 +118,6 @@ Um dies zu überprüfen und bei Bedarf das Modul zu starten, gehen Sie wie folgt
 
 Wenn ein Workflow fehlschlägt, führen Sie die folgenden Schritte aus:
 
-1. Überprüfen Sie das Workflow-Journal. Weitere Informationen hierzu finden Sie in der [&#x200B; zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=de){target="_blank"}.
+1. Überprüfen Sie das Workflow-Journal. Weiterführende Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=de){target="_blank"}.
 1. Überwachen technischer Workflows. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-technical-workflows.html?lang=de){target="_blank"}.
 1. Suchen Sie nach Fehlern bei den einzelnen Workflow-Aktivitäten.

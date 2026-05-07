@@ -7,8 +7,8 @@ hide: true
 exl-id: c166409b-e040-491e-840a-a41310935d75
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '140'
-ht-degree: 85%
+source-wordcount: '150'
+ht-degree: 20%
 
 ---
 
@@ -16,13 +16,13 @@ ht-degree: 85%
 
 
 
-Die Option **Distributed Marketing** von Adobe Campaign ermöglicht es, partizipative Kampagnen zwischen Zentralstellen (z. B. dem Unternehmenssitz, der Marketing-Abteilung etc.) und Lokalstellen (z. B. Verkaufsstellen, regionalen Zweigstellen etc.) einzurichten. Die Zusammenarbeit basiert auf einem kollaborativen Arbeitsbereich, der **[!UICONTROL Kampagnenkit-Liste]**, an dem Kampagnenmodelle und -instanzen, die von Zentralstellen erstellt wurden, Lokalstellen zur Verfügung gestellt werden.
+Adobe Campaign bietet eine **dezentrales Marketing**-Anwendung zur Implementierung von Kooperationskampagnen zwischen Zentralstellen (Hauptsitz, Marketing-Abteilungen usw.) und lokalen Stellen (Verkaufsstellen, regionale Agenturen usw.). Diese Zusammenarbeit basiert auf einem gemeinsamen Arbeitsbereich, auch Kampagnenkit-**[!UICONTROL genannt,]** dem den lokalen Entitäten die zentral erstellten Kampagnenvorlagen und Instanzen angeboten werden.
 
-Kampagnen präsentieren sich in Form von sogenannten Kits, welche auf eine lokale oder eine partizipative Nutzung ausgelegt sein können. Zur Teilnahme müssen die Lokalstellen die gewünschten Kampagne bestellen. Diese werden erst durch die Validierung der Bestellung seitens der Zentralstelle tatsächlich verfügbar.
+Die Zentralstelle stellt Kampagnen bereit, die Lokalstellen nutzen können. Kampagnen werden durch Pakete materialisiert, die entweder lokale oder partizipative Kampagnen darstellen. Um eine Kampagne verwenden zu können, muss sie von der Lokalstelle bestellt und anschließend genehmigt werden.
 
 >[!CAUTION]
 >
->Distributed Marketing ist eine Option von **Campaign**. Bitte überprüfen Sie Ihren Lizenzvertrag.
+>Das Modul Dezentrales Marketing ist eine Option **Kampagne**. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
 
 >[!NOTE]
 >

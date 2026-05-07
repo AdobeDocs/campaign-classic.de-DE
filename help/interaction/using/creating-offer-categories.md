@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: ed97a1b5-c870-4b67-98b6-16adc316fd46
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: ht
-source-wordcount: '289'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '292'
+ht-degree: 60%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 100%
 
 
 
-Angebotskategorien werden ausschließlich in der **[!UICONTROL Design-Umgebung]** erstellt. Sie werden automatisch für die **[!UICONTROL Live-Umgebung]** freigegeben (d. h. zur Unterbreitung verfügbar gemacht), wenn die enthaltenen Angebote oder ihre Änderungen validiert wurden. Standardmäßig ist in der **[!UICONTROL Design-Umgebung]** bereits eine Kategorie (der Angebotskatalog) enthalten. Sie haben die Möglichkeit, Unterkategorien zu erstellen, um die Angebote zu ordnen und zu hierarchisieren.
+Die Erstellung von Angebotskategorien kann nur in der Umgebung **[!UICONTROL Design]** erfolgen. Sie werden automatisch in der **[!UICONTROL Live]**-Umgebung bereitgestellt, sobald die darin enthaltenen erstellten/geänderten Angebote validiert wurden. Standardmäßig enthält die Umgebung **[!UICONTROL Design]** eine Kategorie, in der alle Angebote empfangen werden sollen. Unterkategorien können erstellt werden, um den Katalogangeboten eine Hierarchie hinzuzufügen.
 
-Für jede Kategorie können verschiedene Verwendungsdaten konfiguriert werden. Nach Ablauf des angegebenen Zeitraums stehen die in der Kategorie enthaltenen Angebote nicht mehr zur Unterbreitung zur Verfügung. Sie haben weiterhin die Möglichkeit, Angeboten einer bestimmten Kategorie bei der Auswahl durch das Angebotsmodul den Vorzug einzuräumen, beispielsweise um ein Produkt zeitlich begrenzt besonders hervorzuheben. Definieren Sie hierfür in der Kategorie einen Gewichtfaktor für den gewünschten Zeitraum. Innerhalb dieses Zeitraums wird die Gewichtung der in der Kategorie enthaltenen Angebote mit dem Faktor multipliziert.
+Für jede Kategorie können Sie ein Eignungsdatum festlegen, d. h. einen Zeitraum, nach dem die in der Kategorie enthaltenen Angebote ihrer Zielgruppe nicht mehr unterbreitet werden dürfen. Wenn Sie möchten, dass die Angebote einer bestimmten Kategorie von der Angebotsmodul-Engine als Priorität ausgewählt werden, um beispielsweise ein Produkt besser verfügbar zu machen, können Sie deren Gewichtung für einen bestimmten Zeitraum erhöhen, indem Sie eine Multiplikationsgewichtung zur Kategorie hinzufügen.
 
 Gehen Sie wie folgt vor, um eine neue Kategorie zu erstellen:
 

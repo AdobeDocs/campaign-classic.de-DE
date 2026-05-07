@@ -7,9 +7,9 @@ feature: A/B Testing
 role: User
 exl-id: 1ca01cab-734a-4299-b112-04eec51222fb
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: ht
-source-wordcount: '204'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '206'
+ht-degree: 82%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 100%
 
 ## Konfigurieren der Aufspaltungsaktivität {#configuring-the-split-activity}
 
-Mithilfe dieser Aktivität werden die drei Populationen erstellt: A, B und Rest. Dank der Zufallsauswahl erhält jeweils nur ein Teil jeder Population den entsprechenden Versand.
+Mithilfe dieser Aktivität können Sie mehrere Populationen erstellen: die Population, die Versand A erhält, die Population, die Versand B erhält, und die verbleibende Population. Durch die Auswahl per Zufallsauswahl können Sie nur einen Teil der Population jedes Versands auswählen.
 
 1. Erstellung der Testpopulation A:
 

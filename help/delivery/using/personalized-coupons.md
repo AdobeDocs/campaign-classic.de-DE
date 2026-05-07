@@ -9,14 +9,14 @@ hide: true
 exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '991'
-ht-degree: 100%
+source-wordcount: '1004'
+ht-degree: 72%
 
 ---
 
 # Personalisierte Gutscheine{#personalized-coupons}
 
-Durch das Hinzufügen von Coupons zu Ihren Sendungen können Sie Ihren Empfängerinnen und Empfängern Produkte und Dienstleistungen mit einem Mehrwert anbieten. Mit dem Campaign-Couponmodul können Sie Coupons erstellen und zu einem späteren Zeitpunkt Marketing-Angeboten bei deren Erstellung zuweisen. Da Coupons nur für einen ausgewählten Zeitraum gültig sind, ist ein zugewiesener Coupon eindeutig mit einer bestimmten Versandnachricht verknüpft. Zusätzlich wird von Campaign vor dem Versand bestätigt, dass genügend Coupons für die Anzahl der Nachrichten vorhanden sind.
+Durch das Hinzufügen von Gutscheinen zu Ihren Sendungen können Ihre Empfänger einen größeren Nutzen für Produkte und Services erzielen. Mit dem Campaign-Couponmodul können Sie eine Reihe von Gutscheinen erstellen, die Sie künftigen Marketing-Angeboten hinzufügen möchten. Wenn Sie bereit sind, einen Versand zu erstellen, weisen Sie die entsprechenden Coupons zu. Da Gutscheine für einen bestimmten Zeitraum gültig sind, ist ein zugewiesener Gutschein eindeutig mit seiner Versandnachricht verknüpft. Außerdem bestätigt Campaign, dass ausreichend Coupons für die Anzahl der Nachrichten vorhanden sind, bevor der Versand durchgeführt wird.
 
 >[!AVAILABILITY]
 >
@@ -49,7 +49,7 @@ Bevor Sie die folgenden Schritte ausführen, entscheiden Sie sich für einen Gut
 
    **[!UICONTROL Anonyme Gutscheine]**: Anonyme Gutscheine sind für alle Empfänger gleich. Bestätigen Sie im Menü **Coupontyp** Ihre Auswahl eines anonymen Gutscheins und wählen Sie danach **Speichern**, um den Gutschein zu erstellen.
 
-   **[!UICONTROL Individuelle Gutscheine]**: Individuelle Gutscheine können mit zusätzlichen Couponcodes weiter personalisiert werden. Beispiel: Für den Ausverkauf in einem Sportgeschäft wird ein individueller Gutschein erstellt. Doch die Empfängerliste ist lang und die Empfänger sind an unterschiedlichen Sportarten interessiert. Deshalb können Sie dem individuellen Gutschein einen Codenamen für die jeweilige Sportart hinzufügen (z. B. Fußball, Baseball) und die Codes an die entsprechenden Empfänger senden.
+   **[!UICONTROL Individuelle Gutscheine]** : Ein individueller Gutschein kann mit zusätzlichen Gutscheincodes weiter personalisiert werden. Beispielsweise wird ein individueller Gutschein für einen Verkauf in einem Sportartikelgeschäft erstellt. Die Empfängerliste ist jedoch lang, und sie zeigen nicht die gleiche Begeisterung für eine einzige Sportart. Sie können den einzelnen Gutscheinen je nach Sport Codenamen hinzufügen (z. B. Fußball, Fußball, Baseball usw.) und senden jeden Code an die entsprechenden Empfänger.
 
    1. Bei der Auswahl individueller Gutscheine erscheint links unten ein neuer Coupons-Tab. Wählen Sie in diesem **[!UICONTROL Coupons]**-Tab **[!UICONTROL Hinzufügen]** aus.
    1. Geben Sie für den individuellen Gutschein einen eindeutigen Code ein, wenn Sie vom Pop-up dazu aufgefordert werden.
@@ -65,7 +65,7 @@ Bevor Sie die folgenden Schritte ausführen, entscheiden Sie sich für einen Gut
 
 ![](assets/deliv_coup_03.png)
 
-Der Coupons-Tab erscheint nur bei individuellen Gutscheinen. Nach der Verknüpfung eines Gutscheins mit einem Versand werden im Coupons-Tab folgende Informationen angezeigt:
+Die Registerkarte „Gutscheine“ ist nur bei individuellen Gutscheinen verfügbar. Nachdem ein Gutschein mit einem Versand verknüpft wurde, enthält die Registerkarte Gutscheine die folgenden Details:
 
 * **[!UICONTROL Status]**: Verfügbarkeit des Gutscheins
 * **[!UICONTROL Eingelöst am]**: das Datum, an dem der Gutschein eingelöst wurde
@@ -153,11 +153,11 @@ So prüfen Sie, ob der Versand erfolgreich war:
 >
 >Standardmäßig verwendet das Modul zur Couponverwaltung eine **nms:recipient**-Tabelle. [Weitere Informationen](../../configuration/using/about-data-model.md#default-recipient-table).
 >
-> [Auf dieser Seite](../../configuration/using/about-custom-recipient-table.md) erfahren Sie, wie Sie eine benutzerdefinierte Empfängertabelle verwenden.
+>[Auf dieser Seite](../../configuration/using/about-custom-recipient-table.md) erfahren Sie, wie Sie eine benutzerdefinierte Empfängertabelle verwenden.
 
 ## Verwalten bei unzureichender Anzahl von Gutscheinen {#managing-insufficient-coupons}
 
-Die Versandanalyse wird angehalten, wenn es weniger Gutscheine als Nachrichten gibt. In diesem Fall können Sie zusätzliche Gutscheine importieren oder die Anzahl der Nachrichten beschränken. Im Folgenden erfahren Sie, wie Sie die Anzahl der Nachrichten beschränken können.
+Die Versandanalyse wird angehalten, wenn weniger Coupons als Nachrichten vorhanden sind. In diesem Fall können Sie weitere Coupons importieren oder die Anzahl der Nachrichten einschränken. Folgen Sie den unten stehenden Anweisungen, wenn Sie die Anzahl der Nachrichten begrenzen möchten.
 
 1. Gehen Sie zum E-Mail-Versand-Fenster.
 1. Wählen Sie **[!UICONTROL An]**.
@@ -166,10 +166,10 @@ Die Versandanalyse wird angehalten, wenn es weniger Gutscheine als Nachrichten g
    ![](assets/deliv_coup_18.png)
 
 1. Wählen Sie im Bereich für die Einstellungen der Ausschlüsse **[!UICONTROL Bearbeiten]** aus.
-1. Geben Sie die Anzahl der zu sendenden Nachrichten in **[!UICONTROL Begrenzung des Versands auf]** ein und bestätigen Sie mit **[!UICONTROL OK]**. Jetzt können Sie den Versand starten.
+1. Geben Sie die Anzahl der Nachrichten ein, die Sie senden möchten **[!UICONTROL Begrenzung des Versands auf … Nachrichten]** und klicken Sie auf **[!UICONTROL OK]**. Sie können den Versand durchführen.
 
    ![](assets/deliv_coup_19.png)
 
 >[!NOTE]
 >
->Bei der Verwaltung einer beschränkten Anzahl von Gutscheinen können Sie Ihren Versand durch einen Versand-Workflow gemäß Ihren Kriterien aufteilen. Diese Vorgehensweise ist empfehlenswert, wenn Sie Gutscheine an eine ausgewählte Population senden möchten, ohne die Zielgruppe einzuschränken.
+>Bei der Verwaltung einer begrenzten Anzahl von Gutscheinen ermöglicht ein Versand-Workflow die Aufteilung des Versands anhand Ihrer Kriterien. Dies ist eine gute Option, wenn Sie Coupons an eine ausgewählte Population senden möchten, ohne die Zielgruppe einzuschränken.

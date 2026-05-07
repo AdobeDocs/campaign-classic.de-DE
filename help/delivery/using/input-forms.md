@@ -8,8 +8,8 @@ role: User, Developer
 exl-id: 8ec52c96-44a2-4544-93b6-9ba251510682
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '843'
-ht-degree: 100%
+source-wordcount: '845'
+ht-degree: 86%
 
 ---
 
@@ -31,7 +31,7 @@ Das XML-Dokument eines Formulars muss die Wurzel **`<form>`** mit den Attributen
 
 Standardmäßig ist ein Formular mit dem Datenschema verknüpft, das denselben Namen und denselben Namespace aufweist. Um ein Formular mit einem anderen Namen zu verknüpfen, geben Sie den Schemaschlüssel im Attribut **entity-schema** des **`<form>`**-Elements ein.
 
-Nachfolgend wird die Struktur eines Formulars anhand des Datenschemas &quot;cus:Buch&quot; verdeutlicht:
+Um die Struktur eines Formulars zu veranschaulichen, wird eine Schnittstelle anhand unseres Beispielschemas „cus“ :book:
 
 ![](assets/d_ncs_content_form1.png)
 
@@ -73,7 +73,7 @@ Standardmäßig wird jedes Feld, je nach Datentyp, einzeilig über den gesamten 
 
 ## Formatierung {#formatting}
 
-Die Anordnung der Steuerelemente untereinander ähnelt dem in einer HTML-Tabelle verwendeten Layout. Sie haben die Möglichkeit, ein Steuerelement in mehrere Spalten aufzuteilen, Elemente zu verschachteln oder die Verwendung des vorhandenen Platzes zu definieren. Es ist jedoch zu beachten, dass nur die Proportionen der Elemente zueinander und ihre Anordnung konfiguriert werden können. Die Angabe fester Größen für einzelne Elemente ist nicht möglich.
+Die Anordnung der Bedienelemente zueinander ähnelt der in HTML-Tabellen verwendeten Anordnung, mit der Möglichkeit, eine Steuerung in mehrere Spalten zu unterteilen, Verschlusselemente zu bilden oder die Belegung des verfügbaren Platzes festzulegen. Beachten Sie jedoch, dass durch die Formatierung nur die Verteilung der Proportionen zulässig ist; Sie können keine festen Abmessungen für ein Objekt angeben.
 
 Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../configuration/using/form-structure.md#formatting).
 
@@ -102,7 +102,7 @@ Die Spalten werden als untergeordnete Elemente der Liste (**`<input>`**) definie
 >
 >Die Schaltflächen zum Sortieren (Pfeil nach oben und Pfeil nach unten) werden automatisch hinzugefügt, wenn das Attribut **ordered=&quot;true&quot;** das Sammlungselement im Datenschema begleitet.
 
-Standardmäßig werden die Schaltflächen der Symbolleiste vertikal ausgerichtet. Sie können jedoch auch horizontal angezeigt werden:
+Standardmäßig werden die Schaltflächen der Symbolleiste vertikal ausgerichtet. Sie können auch horizontal ausgerichtet werden:
 
 ![](assets/d_ncs_content_form5.png)
 
@@ -146,7 +146,7 @@ Dies ist in folgenden Fällen zu empfehlen:
 
 Die Definition des Bearbeitungsformulars erfolgt über das **`<form>`**-Element unter dem Listenelement. Seine Struktur ist identisch mit der Struktur eines Eingabeformulars.
 
-Die **[!UICONTROL Detail]**-Schaltfläche wird automatisch hinzugefügt, wenn das Attribut **zoom=&quot;true&quot;** in der Definition der Liste angegeben ist. Sie ermöglicht den Aufruf des Bearbeitungsformulars in der ausgewählten Zeile.
+Eine **[!UICONTROL Detail]**-Schaltfläche wird automatisch hinzugefügt, wenn das **zoom=„true“**-Attribut in die Listendefinition eingegeben wird. Auf diese Weise können Sie das Bearbeitungsformular in der ausgewählten Zeile öffnen.
 
 >[!NOTE]
 >

@@ -6,9 +6,9 @@ feature: Reporting, Monitoring
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 exl-id: d32b614f-82c1-4363-816c-4ebedaa5cfe9
 source-git-commit: f90df5a5e5b3a2317d86ff2919560ded38f44f44
-workflow-type: ht
-source-wordcount: '562'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '565'
+ht-degree: 85%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 
 
-Adobe Campaign bietet die Möglichkeit, in der Datenbank verfügbare Daten abzurufen und in Form verschiedener Grafiken darzustellen. Die grundlegenden Konfigurationen hierzu werden im Folgenden beschrieben.
+Die Daten in der Datenbank können auch erfasst und in einem Diagramm angezeigt werden. Adobe Campaign bietet eine Reihe grafischer Darstellungen. Ihre Konfiguration wird unten beschrieben.
 
 Grafiken werden wie Tabellen direkt in eine Berichtseite eingefügt, über das Kontextmenü oder die Symbolleiste.
 
@@ -28,7 +28,7 @@ Gehen Sie wie folgt vor, um eine Grafik in einem Bericht zu erstellen:
 
    ![](assets/s_advuser_report_page_activity_04.png)
 
-1. Geben Sie den Namen der Grafik sowie die zugeordnete Legende an. Bei Bedarf können Sie die Position der Legende über die entsprechende Dropdown-Liste verändern.
+1. Geben Sie einen Namen und eine Beschriftung ein. Bei Bedarf können Sie die Position der Beschriftung mithilfe der Dropdown-Liste ändern.
 
    ![](assets/s_ncs_advuser_report_wizard_018.png)
 
@@ -50,7 +50,7 @@ Gehen Sie wie folgt vor, um eine Grafik in einem Bericht zu erstellen:
 
 ## Grafiktypen und ihre Parameter {#chart-types-and-variants}
 
-Adobe Campaign bietet drei verschiedene grafische Darstellungstypen, die im Nachstehenden vorgestellt werden.
+Adobe Campaign bietet verschiedene Arten von grafischen Darstellungen. Sie werden im Folgenden beschrieben.
 
 Der Grafiktyp wird beim Einfügen in die Seite ausgewählt.
 
@@ -132,7 +132,7 @@ Sie können in den Grafiken Statistiken über die abgerufenen Daten anzeigen.
 
 Diese Statistiken werden im Bereich **[!UICONTROL Serienparameter]** des Tabs **[!UICONTROL Daten]** definiert.
 
-Um eine neue Statistik zu erstellen, klicken Sie auf das Symbol **[!UICONTROL Hinzufügen]** und konfigurieren Sie das entsprechende Fenster. In der folgenden Grafik werden die möglichen Berechnungsarten abgebildet:
+Um eine neue Statistik zu erstellen, klicken Sie auf das Symbol **[!UICONTROL Hinzufügen]** und konfigurieren Sie das entsprechende Fenster. Die verfügbaren Berechnungstypen werden im Folgenden beschrieben.
 
 ![](assets/reporting_add_statistics.png)
 

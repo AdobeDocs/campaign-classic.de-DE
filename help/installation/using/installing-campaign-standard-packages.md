@@ -7,8 +7,8 @@ badge-v7-prem: label="Nur On-Premise/Hybrid" type="Caution" url="https://experie
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
 source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
-source-wordcount: '1306'
-ht-degree: 11%
+source-wordcount: '1416'
+ht-degree: 15%
 
 ---
 
@@ -184,7 +184,7 @@ In der folgenden Tabelle sind alle nativen Campaign-Packages aufgeführt.
   </tr> 
   <tr> 
    <td> Zentrales/lokales Marketing (dezentrales Marketing)<br /> </td> 
-   <td> Implementiert Kooperationskampagnen zwischen zentralen Entitäten (Hauptsitz, Marketing-Abteilungen usw.) und lokalen Entitäten (Verkaufsstellen, regionale Agenturen usw.). Optional. <a href="https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html?lang=de" target="_blank">Weitere Informationen</a><br /> </td> 
+   <td> Durchführung von Kooperationskampagnen zwischen zentralen Entitäten (Hauptsitz, Marketing-Abteilungen usw.) und lokalen Stellen (Verkaufsstellen, regionale Agenturen usw.). Optional. <a href="https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html?lang=de" target="_blank">Weitere Informationen</a><br /> </td> 
    <td> Marketing </td> 
   </tr> 
   <tr> 
@@ -242,7 +242,7 @@ In der folgenden Tabelle sind alle nativen Campaign-Packages aufgeführt.
 
 ### Message-Center-Paket {#message-center-package}
 
-Sie müssen vor der Installation von Transaktionsnachrichten (Message-Center-Paket) Versandkanäle (E-Mail, Mobile-Kanal, Mobile-App-Kanal, LINE usw.) installieren. Wenn Sie ein reines E-Mail-Message-Center-Projekt gestartet haben und anschließend einen neuen Kanal hinzufügen müssen, müssen Sie die folgenden Schritte ausführen:
+Sie müssen die Versandkanäle (E-Mail, Mobile-Kanal, Mobile-App-Kanal, LINE usw.) installieren vor der Installation von Transaktionsnachrichten (Message Center-Paket). Wenn Sie ein reines E-Mail-Message-Center-Projekt gestartet haben und anschließend einen neuen Kanal hinzufügen müssen, müssen Sie die folgenden Schritte ausführen:
 
 1. Installieren Sie den neuen Kanal, z. B. **Mobile-Kanal** mithilfe des Package Import-Assistenten ( **[!UICONTROL Tools > Erweitert > Package importieren > Adobe Campaign-Paket]**).
 1. Importieren Sie die Datei **[!UICONTROL Tools > Erweitert > Paket importieren > Datei]** und wählen Sie:

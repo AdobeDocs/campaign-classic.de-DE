@@ -9,7 +9,7 @@ topic-tags: installing-campaign-in-windows-
 exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '1152'
+source-wordcount: '1187'
 ht-degree: 31%
 
 ---
@@ -144,7 +144,7 @@ Sie können so viele Verbindungen wie erforderlich hinzufügen, um z. B. Verbind
 
 >[!NOTE]
 >
->Die Schaltfläche **[!UICONTROL Hinzufügen]** erlaubt die Erstellung von **[!UICONTROL Ordnern]**, in die Sie Ihre verschiedenen Verbindungen per Drag-and-Drop verschieben können.
+>Mit **[!UICONTROL Schaltfläche]** können Sie **[!UICONTROL Ordner]** erstellen, um alle Verbindungen zu organisieren. Ziehen Sie einfach jede Verbindung per Drag-and-Drop in einen Ordner.
 
 ### Bei Adobe Campaign anmelden
 
@@ -164,7 +164,7 @@ Gehen Sie wie folgt vor, um sich bei einer vorhandenen Instanz anzumelden:
 >
 >Bei den Build-Versionen 7.3 von Campaign Classic kann es vorkommen, dass die Adobe Campaign-Client-Konsole während der Proxy-Authentifizierung zweimal nach den Proxy-Anmeldedaten fragt. Dies liegt daran, dass Microsoft Edge WebView2 im Gegensatz zum Internet Explorer keine Proxy-Anmeldedaten im Cache/Kennwortspeicher speichert.
 
-**Verwandte Themen** 
+**Verwandte Themen**
 
 * [Instanz erstellen und anmelden](../../installation/using/creating-an-instance-and-logging-on.md).
 * [Kompatibilitätsmatrix](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html)
@@ -173,6 +173,6 @@ Gehen Sie wie folgt vor, um sich bei einer vorhandenen Instanz anzumelden:
 
 In diesem Video wird gezeigt, wie Sie den Adobe Campaign-Client installieren und einrichten.
 
->[!VIDEO](https://video.tv.adobe.com/v/38268?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/38268?captions=ger&quality=12)
 
 Weitere Anleitungsvideos zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).

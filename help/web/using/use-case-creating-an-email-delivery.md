@@ -6,9 +6,9 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: e2679f12-459b-466d-9c82-60a28363b104
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: ht
-source-wordcount: '796'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '804'
+ht-degree: 92%
 
 ---
 
@@ -39,7 +39,7 @@ Um einen neuen Versand zu erstellen, platzieren Sie den Cursor auf dem Tab **Kam
 
 ## Schritt 2: Auswählen einer Vorlage {#step-2---selecting-a-template}
 
-Wählen Sie eine Versandvorlage aus und geben Sie Ihrem Versand eine Bezeichnung. Diese Bezeichnung ist nur für Benutzer der Adobe Campaign-Konsole sichtbar, nicht aber für die Empfänger. Diese Bezeichnung wird in der Liste der Sendungen angezeigt. Bestätigen Sie die Angaben mit der Schaltfläche **[!UICONTROL Fortfahren]**.
+Wählen Sie eine Versandvorlage aus und benennen Sie Ihren Versand. Dieser Name ist nur für Benutzende der Adobe Campaign-Konsole sichtbar, nicht für Ihre Empfängerinnen und Empfänger. Diese Überschrift wird jedoch in Ihrer Versandliste angezeigt. Bestätigen Sie die Angaben mit der Schaltfläche **[!UICONTROL Fortfahren]**.
 
 ![](assets/dce_delivery_model.png)
 
@@ -55,7 +55,7 @@ Darüber hinaus besteht die Möglichkeit, außerhalb von Adobe Campaign erstellt
 
 ![](assets/dce_select_from_file_template.png)
 
-Sie können diesen Inhalt als Vorlage zur späteren Verwendung speichern. Nachdem eine personalisierte Inhaltsvorlage erstellt wurde, können Sie sich eine Vorschau davon in der Liste der Vorlagen ansehen. Konsultieren Sie diesbezüglich die [Vorlagenverwaltung](template-management.md).
+Sie können diesen Inhalt als Vorlage für die zukünftige Verwendung speichern. Nachdem Sie eine personalisierte Inhaltsvorlage erstellt haben, können Sie sie aus der Liste der Vorlagen in der Vorschau anzeigen. Konsultieren Sie diesbezüglich die [Vorlagenverwaltung](template-management.md).
 
 >[!CAUTION]
 >

@@ -8,14 +8,14 @@ hide: true
 exl-id: d943898c-06fe-451d-aa28-8a95665f4112
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 100%
+source-wordcount: '200'
+ht-degree: 86%
 
 ---
 
 # Arbeiten mit Versandvorlagen {#about-templates}
 
-Eine Versandkonfiguration kann in einer Vorlage gespeichert werden, um zu einem späteren Zeitpunkt erneut verwendet zu werden. Dabei kann die Vorlage eine partielle oder komplette Konfiguration aufweisen.
+Eine Versandkonfiguration kann in einer Versandvorlage gespeichert werden, um sie wiederzuverwenden. Die Vorlage kann eine vollständige oder teilweise Konfiguration des Versands enthalten.
 
 ![](assets/s_user_template_list.png)
 

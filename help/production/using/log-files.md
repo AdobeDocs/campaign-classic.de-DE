@@ -10,8 +10,8 @@ topic-tags: production-procedures
 exl-id: c9d427da-6965-4945-90f0-d0770701d55e
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 5%
+source-wordcount: '470'
+ht-degree: 8%
 
 ---
 
@@ -40,7 +40,7 @@ Protokolldateien für mehrere Instanzen sind in der folgenden Tabelle aufgeführ
 | web.log | Web-Modulprotokolle (Client-Konsole, Berichte, SOAP-API usw.) |
 | webmdl.log | Protokolle aus dem Umleitungsmodul |
 | watchdog.log | Protokolle aus dem Adobe Campaign-Prozessüberwachungsmodul |
-| trackinglogd.log | Trackinglogs          |
+| trackingLog.log | Trackinglogs |
 
 Die Protokolldateien der Mono-Instanz sind in der folgenden Tabelle aufgeführt:
 

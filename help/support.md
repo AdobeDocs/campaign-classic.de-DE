@@ -7,8 +7,8 @@ hide: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '632'
-ht-degree: 100%
+source-wordcount: '842'
+ht-degree: 98%
 
 ---
 
@@ -62,7 +62,7 @@ Support erhalten Sie über unsere häufig gestellten Fragen, Best Practices, Onl
         <li><a href="platform/using/import-export-workflows.md">Importieren von Daten mit Workflows</a></li>
         <li><a href="delivery/using/steps-sending-the-delivery.md">Senden von Nachrichten in mehreren Schüben</a></li>
         <li><a href="delivery/using/defining-the-email-content.md">Gestalten von E-Mail-Inhalten</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=de" target="_blank">Best Practices beim Versand</a></li>
+        <li><a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=de" target="_blank">Best Practices für den Versand</a></li>
         </ul>
     </td>
     <td valign="top">
@@ -111,16 +111,16 @@ Das Control Panel ist direkt über Adobe Experience Cloud verfügbar. Es steht n
 ### Sub-Domains und Zertifikate
 
 Sie können Ihre Sub-Domains und deren Zertifikate überwachen. Weitere Informationen finden Sie auf den folgenden Seiten:
-* [Sub-Domain-Branding](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/subdomains-branding.html?lang=de)
-* [Einrichten einer neuen Sub-Domain](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=de)
+* [Subdomain-Branding](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/subdomains-branding.html?lang=de)
+* [Einrichten einer neuen Subdomain](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=de)
 * [Überwachen von SSL-Zertifikaten](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html?lang=de)
 
 ### Instanzeneinstellungen
 
 Erfahren Sie, wie Sie die Einstellungen Ihrer Campaign Classic-Instanzen im Control Panel verwalten. Weitere Informationen finden Sie auf den folgenden Seiten:
-* [Fügen Sie IP-Adressen zur Zulassungsliste hinzu](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=de), um auf Ihre Campaign-Instanzen zuzugreifen 
+* [Fügen Sie IP-Adressen zur Zulassungsliste hinzu](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=de), um auf Ihre Campaign-Instanzen zuzugreifen
 * [Verwalten von URL-Berechtigungen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=de)
-* [Aufrufen der Instanzdetails](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html?lang=de)
+* [Zugriff auf Instanzdetails](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html?lang=de)
 * [Verwalten von GPG-Schlüsseln für die Datenverschlüsselung](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=de)
 
 ## Hilfe anfordern {#support}

@@ -8,8 +8,8 @@ hide: true
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1629'
-ht-degree: 100%
+source-wordcount: '1649'
+ht-degree: 90%
 
 ---
 
@@ -93,11 +93,11 @@ Dies bietet die Möglichkeit, den Versand auf einen späteren Zeitpunkt zu versc
 
 * Bei Wahl der Option **[!UICONTROL Versand planen (keine automatische Ausführung)]** können Sie zudem die Analyse des Versands terminieren.
 
-  In diesem Fall erhält der Versand den Status **[!UICONTROL Zielgruppenbestimmung ausstehend]** und die Analyse wird zum angegebenen Zeitpunkt gestartet.
+  Wenn diese Konfiguration gespeichert wird, ändert sich der Versand in den Status **[!UICONTROL Targeting ausstehend]**. Die Analyse wird am angegebenen Datum gestartet.
 
 * Bei Wahl der Option **[!UICONTROL Versand planen (automatische Ausführung am geplanten Datum)]** wird nur das Kontaktdatum angegeben.
 
-  Klicken Sie auf die Schaltfläche **[!UICONTROL Senden]**, wählen Sie **[!UICONTROL Versand terminieren]**, starten Sie die Analyse und bestätigen Sie den Versand. Auf diese Weise wird die Analyse durchgeführt und die Zielgruppe vorbereitet. Am angegebenen Stichtag werden die Nachrichten dann automatisch versendet.
+  Klicken Sie auf **[!UICONTROL Senden]** und wählen Sie **[!UICONTROL Versand]**, starten Sie dann die Analyse und bestätigen Sie den Versand. Wenn die Analyse abgeschlossen ist, ist die Versandzielgruppe bereit und die Nachrichten werden automatisch am angegebenen Datum gesendet.
 
 Datum und Uhrzeit beziehen sich jeweils auf den aktuellen Benutzer. Die unter dem Eingabefeld des Kontaktdatums situierte Dropdown-Liste **[!UICONTROL Zeitzone]** ermöglicht es, die oberhalb eingegebene Uhrzeit der ausgewählten Zeitzone anzupassen.
 
@@ -107,11 +107,11 @@ Wenn Sie also beispielsweise einen Versand für 8 Uhr Brüsseler Zeit terminiere
 
 ## Versenden in mehreren Schüben {#sending-using-multiple-waves}
 
-Um eine gleichmäßige Auslastung sicherzustellen, können Sie Sendungen in mehrere Schübe unterteilen. Konfigurieren Sie die Anzahl der Schübe und ihre Größe in Bezug auf den gesamten Versand.
+Um die Auslastung auszugleichen, können Sie Sendungen in mehrere Batches unterteilen. Konfigurieren Sie die Anzahl der Batches und ihre Größe in Bezug auf den gesamten Versand.
 
 >[!NOTE]
 >
->Sie können nur die Größe und die Zeitverzögerung zwischen zwei aufeinanderfolgenden Schüben definieren. Die Empfängerauswahlkriterien für jeden Schub können nicht konfiguriert werden.
+>Sie können nur die Größe und die Verzögerung zwischen zwei aufeinander folgenden Schüben definieren. Die Empfängerauswahlkriterien für jede Welle können nicht konfiguriert werden.
 
 1. Öffnen Sie das Versandeigenschaftenfenster und wählen Sie den **[!UICONTROL Versand]**-Tab aus.
 1. Wählen Sie die Option **[!UICONTROL In mehreren Schüben versenden]** aus und danach den Link **[!UICONTROL Definition der Schübe...]**.
@@ -130,7 +130,7 @@ Um eine gleichmäßige Auslastung sicherzustellen, können Sie Sendungen in mehr
 
      Geben Sie in der Spalte **[!UICONTROL Start]** die Verzögerung zwischen dem Start zweier aufeinanderfolgender Schübe an. Geben Sie in der Spalte **[!UICONTROL Größe]** eine feste Zahl oder einen Prozentsatz ein.
 
-     Im unten stehenden Beispiel beinhaltet der erste Schub 25 % der Gesamtzahl der im Versand enthaltenen Nachrichten und beginnt unmittelbar. Die nächsten drei Schübe vervollständigen den Versand und starten in Intervallen von je sechs Stunden.
+     Im folgenden Beispiel stellt die erste Welle 25 % der Gesamtzahl der im Versand enthaltenen Nachrichten dar und beginnt sofort. Die beiden nächsten Schübe vervollständigen den Versand und starten in Sechs-Stunden-Intervallen.
 
      ![](assets/s_ncs_user_wizard_waves_create.png)
 
@@ -138,7 +138,7 @@ Um eine gleichmäßige Auslastung sicherzustellen, können Sie Sendungen in mehr
 
    >[!IMPORTANT]
    >
-   >Achten Sie darauf, dass die letzten Schübe nicht die Versandgültigkeit überschreiten, die im Tab **[!UICONTROL Gültigkeit]** festgelegt wird. Ansonsten werden manche Nachrichten nicht gesendet.
+   >Stellen Sie sicher, dass die letzten Schübe die Versandfrist nicht überschreiten, die auf der Registerkarte **[!UICONTROL Gültigkeit]** definiert ist. Andernfalls werden einige Nachrichten möglicherweise nicht gesendet.
    >
    >Planen Sie bei der Konfiguration der letzten Schübe auch genügend Zeit für zusätzliche Versuche ein. Siehe [diesen Abschnitt](steps-sending-the-delivery.md#configuring-retries).
 
@@ -152,7 +152,7 @@ Im Folgenden finden Sie die häufigsten Anwendungsbeispiele für Schübe.
 
   Wenn E-Mails über eine neue Plattform versendet werden, sind ISPs normalerweise misstrauisch gegenüber den neuen IP-Adressen. Das plötzliche Versenden großer Mengen an E-Mails veranlasst ISPs oft dazu, sie als Spam zu qualifizieren.
 
-  Um zu verhindern, dass Ihre Sendungen als Spam eingestuft werden, können Sie das gesendete Volumen schrittweise mithilfe von Schüben erhöhen. Damit gewährleisten Sie eine problemlose Entwicklung in der Anfangsphase und die Verringerung der Anzahl der ungültigen Adressen.
+  Um zu vermeiden, dass Sie als Spam gekennzeichnet werden, können Sie die Anzahl der über Wellen gesendeten Nachrichten schrittweise erhöhen. Dies gewährleistet eine reibungslose Anlaufphase, da die Gesamtrate ungültiger Adressen verringert wird.
 
   Verwenden Sie dazu die Option **[!UICONTROL Schübe in einem Kalender definieren]**. Wählen Sie beispielsweise für den ersten Schub 10 %, für den zweiten 15 % usw. aus.
 
@@ -176,7 +176,7 @@ Vorübergehend nicht zustellbare Nachrichten aufgrund eines **Softbounce** oder 
 >
 >Bei gehosteten oder hybriden Installationen werden die Einstellungen für den erneuten Versuch im Versand nicht mehr von Campaign verwendet, wenn Sie auf den [Enhanced MTA](sending-with-enhanced-mta.md) aktualisiert haben. Weitere Zustellversuche aufgrund von Softbounces sowie die Zeitdauer zwischen ihnen werden durch den Enhanced MTA bestimmt, basierend auf Typ und Prioritätsstufe der Bounce-Antworten, die von der E-Mail-Domain der Nachricht zurückgegeben werden.
 
-Bei On-Premise-Installationen und gehosteten/hybriden Installationen, die den bestehenden Campaign-MTA verwenden, gibt der zentrale Abschnitt der Registerkarte **[!UICONTROL Versand]** für die Versandparameter an, wie viele weitere Versuche am Tag nach dem Versand durchgeführt werden sollen, und den Mindestzeitabstand zwischen den Versuchen. 
+Bei On-Premise-Installationen und gehosteten/hybriden Installationen, die den bestehenden Campaign-MTA verwenden, gibt der zentrale Abschnitt der Registerkarte **[!UICONTROL Versand]** für die Versandparameter an, wie viele weitere Versuche am Tag nach dem Versand durchgeführt werden sollen, und den Mindestzeitabstand zwischen den Versuchen.
 
 ![](assets/s_ncs_user_wizard_retry_param.png)
 
@@ -188,7 +188,7 @@ Nach dem Start des Versands können die Nachrichten (und alle weiteren Zustellve
 
 ![](assets/s_ncs_user_email_del_valid_period.png)
 
-* Im Feld **[!UICONTROL Versandlaufzeit]** kann die Zeitspanne angegeben werden, in der erneute globale Zustellversuche unternommen werden. Dies bedeutet konkret, dass Adobe Campaign die Nachrichten ab dem Startdatum versendet und bis zum Ablauf der angegebenen Spanne nicht zustellbare Nachrichten in regelmäßigen Abständen erneut sendet.
+* Im Feld **[!UICONTROL Versandlaufzeit]** kann die Zeitspanne angegeben werden, in der weitere globale Zustellversuche unternommen werden. Dies bedeutet, dass Adobe Campaign die Nachrichten ab dem Startdatum versendet und dann nur für Nachrichten, die einen Fehler zurückgeben, regelmäßige, konfigurierbare weitere Zustellversuche durchführt, bis die Gültigkeitsgrenze erreicht ist.
 
   Sie können alternativ auch ein genaues Datum angeben. Markieren Sie dazu die Option **[!UICONTROL Gültigkeit explizit festlegen]**. In diesem Fall kann mit den Versand- und Gültigkeitsdaten auch eine bestimmte Uhrzeit konfiguriert werden. Standardmäßig wird die aktuelle Uhrzeit eingesetzt, sie kann jedoch direkt im Eingabefeld angepasst werden.
 

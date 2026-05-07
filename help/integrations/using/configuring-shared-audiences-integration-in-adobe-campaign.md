@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: audience-sharing
 exl-id: a3e26cff-9609-4d91-8976-9213a30c3fd2
 source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
-workflow-type: ht
-source-wordcount: '609'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '675'
+ht-degree: 86%
 
 ---
 
@@ -51,21 +51,21 @@ Gehen Sie folgendermaßen vor, um die externen Konten in Adobe Campaign zu konfi
 
 1. Geben Sie die folgenden Details an:
 
-   * **[!UICONTROL AWS-S3-Konto-Server]**
-URL Ihres Servers; sollte wie folgt ausgefüllt werden:
+   * **[!UICONTROL AWS S3-Kontoserver]**
+URL Ihres Servers, sollte sie wie folgt ausgefüllt werden:
 
      ```
      <S3bucket name>.s3.amazonaws.com/<s3object path>
      ```
 
-   * **[!UICONTROL Kennung des AWS-Zugriffsschlüssels]**
-Informationen dazu, wo Sie Ihre Kennung des AWS-Zugangsschlüssels finden, erhalten Sie auf [dieser Seite](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys).
+   * **[!UICONTROL AWS-Zugriffsschlüssel-ID]**
+Informationen dazu, wo Sie Ihre AWS-Zugriffsschlüssel-ID finden, finden Sie auf dieser [Seite](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) .
 
    * **[!UICONTROL Geheimer Zugriffsschlüssel für AWS]**
-Informationen dazu, wo Sie Ihren geheimen Zugriffsschlüssel für AWS finden, erhalten Sie auf [dieser Seite](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/).
+Auf dieser Seite erfahren Sie, wo Sie Ihren geheimen Zugriffsschlüssel für AWS [&#x200B; finden](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/).
 
-   * **[!UICONTROL AWS-Region]** 
-Weitere Informationen zur AWS-Region finden Sie auf [dieser Seite](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/).
+   * **[!UICONTROL AWS-Region]**
+Weitere Informationen zur Region AWS finden Sie auf dieser [Seite](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/).
 
    ![](assets/aam_config_2.png)
 
@@ -75,7 +75,7 @@ Ihre externen Konten sind somit konfiguriert.
 
 ## Schritt 2: Konfigurieren Sie die Datenquellen. {#step-2--configure-the-data-source}
 
-Die **Empfänger - Besucher-ID** wird innerhalb von Audience Manager erstellt. Dies ist eine native Datenquelle, die standardmäßig für die Besucher-ID konfiguriert wird. In Campaign erstellte Segmente werden ebenfalls Teil dieser Datenquelle sein.
+Der **Empfänger - Besucher-ID** wird in Audience Manager erstellt. Dies ist eine vorkonfigurierte Datenquelle, die standardmäßig für die Besucher-ID konfiguriert ist. Die in Campaign erstellten Segmente werden Teil dieser Datenquelle sein.
 
 So konfigurieren Sie die Datenquelle **[!UICONTROL Empfänger - Besucher-ID]**:
 
@@ -85,7 +85,7 @@ So konfigurieren Sie die Datenquelle **[!UICONTROL Empfänger - Besucher-ID]**:
 
    ![](assets/aam_config_3.png)
 
-## Schritt 3: Konfigurieren Sie den Campaign Tracking Server.  {#step-3--configure-campaign-tracking-server}
+## Schritt 3: Konfigurieren Sie den Campaign Tracking Server. {#step-3--configure-campaign-tracking-server}
 
 Für die Konfiguration der Integration mit Audience Manager muss auch der Campaign Tracking Server konfiguriert werden.
 

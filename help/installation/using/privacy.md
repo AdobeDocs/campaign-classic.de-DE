@@ -6,8 +6,8 @@ feature: Installation, Privacy, Privacy Tools, URL Personalization
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
 source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
-source-wordcount: '827'
-ht-degree: 21%
+source-wordcount: '906'
+ht-degree: 23%
 
 ---
 
@@ -155,7 +155,7 @@ Gehen Sie dazu wie folgt vor:
 
 Wir empfehlen On-Premise-Kunden dringend, die Seiten zu schützen, die möglicherweise personenbezogene Daten (PI) enthalten, wie Mirror-Seiten, Web-Anwendungen usw.
 
-Ziel dieses Verfahrens ist es, dass diese Seiten nicht indexiert werden, um ein mögliches Sicherheitsrisiko zu verhindern. Hier finden Sie einige hilfreiche Artikel:
+Ziel dieses Verfahrens ist es, zu verhindern, dass diese Seiten indiziert werden, und so ein potenzielles Sicherheitsrisiko zu vermeiden. Im Folgenden finden Sie einige nützliche Artikel:
 
 * [https://developers.google.com/search/reference/robots_txt](https://developers.google.com/search/reference/robots_txt)
 * [https://developers.google.com/search/reference/robots_meta_tag](https://developers.google.com/search/reference/robots_meta_tag)

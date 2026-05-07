@@ -6,8 +6,8 @@ hide: true
 exl-id: 58e54f67-dc87-42f1-8426-6f801e8e4fb6
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '124'
-ht-degree: 100%
+source-wordcount: '135'
+ht-degree: 56%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 Beim Filtern von Daten wird ein kleinerer Teil Ihrer Datenmenge ausgewählt, nämlich nur die Einträge, die bestimmten Kriterien entsprechen. Diese Teilmenge wird für bestimmte Aktionen (Aktualisierungen, Erstellung von Zielgruppen) oder Analysen verwendet.
 
-Beim Navigieren im Adobe Campaign-**[!UICONTROL Explorer]** (zugänglich über die entsprechende Schaltfläche auf der Startseite) werden die Informationen der Datenbank in Form von Listen angezeigt. Diese Listen können so konfiguriert werden, dass nur die für Benutzende nützlichen Elemente angezeigt werden. Auf den gefilterten Daten können dann Aktionen gestartet werden. Die Filterkonfiguration ermöglicht eine **[!UICONTROL dynamische]** Auswahl von Daten einer Liste. Bei Datenänderungen werden die gefilterten Daten automatisch aktualisiert.
+Beim Navigieren in der Adobe Campaign-Baumstruktur (über das **[!UICONTROL Explorer]**-Menü auf der Startseite) werden die in der Datenbank enthaltenen Daten in Listen angezeigt. Diese Listen können so konfiguriert werden, dass nur die vom Operator benötigten Daten angezeigt werden. Anschließend können Aktionen für die gefilterten Daten gestartet werden. Mit der Filterkonfiguration können Sie Daten aus einer Liste **[!UICONTROL dynamisch)]**. Beim Ändern der Daten werden die gefilterten Daten aktualisiert.
 
 Weitere Informationen über **Filter und deren Verwendung** finden Sie in der [Dokumentation zu Campaign v8 (Konsole)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/audience/create-audiences/create-filters){target=_blank}.
 

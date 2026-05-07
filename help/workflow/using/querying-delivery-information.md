@@ -7,8 +7,8 @@ hide: true
 exl-id: b699b064-1287-41c9-8d94-1c1aa2c145ab
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1551'
-ht-degree: 99%
+source-wordcount: '1559'
+ht-degree: 77%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 99%
 
 ## Anzahl der Klicks für einen bestimmten Versand {#number-of-clicks-for-a-specific-delivery}
 
-In diesem Beispiel wird die Anzahl der Klicks von Empfängern in einem bestimmten Zeitraum gesucht. Die Klicks werden in den Trackinglogs der Empfänger gespeichert. Letztere werden über die E-Mail-Adresse identifiziert. Diese Abfrage basiert auf der Tabelle **[!UICONTROL Trackinglogs der Empfänger]**.
+In diesem Beispiel möchten wir die Anzahl der Klicks für einen bestimmten Versand abrufen. Diese Klicks werden mithilfe der über einen bestimmten Zeitraum erfassten Empfänger-Trackinglogs aufgezeichnet. Der Empfänger wird über seine E-Mail-Adresse identifiziert. Diese Abfrage verwendet die **[!UICONTROL Empfänger-Trackinglogs]**-Tabelle.
 
 * Welche Tabelle soll ausgewählt werden?
 
@@ -46,7 +46,7 @@ Gehen Sie für dieses Beispiel wie folgt vor:
 
      ![](assets/query_editor_tracklog_06.png)
 
-   * Verwenden Sie im Fenster **[!UICONTROL Formeltyp]** eine Aggregatfunktion. In diesem Fall ist das die Zählung des Primärschlüssels.
+   * Führen Sie im Fenster **[!UICONTROL Formeltyp]** einen Prozess für die Aggregatfunktion aus. Dieser Prozess ist eine Anzahl von Primärschlüsseln.
 
      Wählen Sie im Abschnitt **[!UICONTROL Aggregat]** die Option **[!UICONTROL Aggregatfunktionen]** und klicken Sie auf **[!UICONTROL Zählung]**.
 
@@ -74,7 +74,7 @@ Gehen Sie für dieses Beispiel wie folgt vor:
 
      ![](assets/query_editor_nveau_22.png)
 
-   * Drei Filterbedingungen sind erforderlich, um die Ergebnisse wie gewünscht einzuschränken: zwei Datumsfilter zur Eingrenzung des Zeitraums zwischen 15 Tagen vor dem aktuellen Datum und 1 Tag vor dem aktuellen Datum sowie eine weitere Bedingung, um nur Logs bezüglich bestimmter Sendungen zu erfassen.
+   * Trackinglogs über einen bestimmten Zeitraum für einen bestimmten Versand wiederherstellen Drei Filterbedingungen sind erforderlich: zwei Datumsbedingungen, um den Suchzeitraum zwischen 2 Wochen vor dem aktuellen Datum und dem Tag vor dem aktuellen Datum festzulegen, und eine weitere Bedingung, um die Suche auf einen bestimmten Versand zu beschränken.
 
      Konfigurieren Sie im Fenster **[!UICONTROL Zielelement]** das Datum, ab dem die Trackinglogs berücksichtigt werden sollen. Wählen Sie **[!UICONTROL Hinzufügen]** aus. Eine Bedingungszeile wird angezeigt. Bearbeiten Sie die Spalte **[!UICONTROL Ausdruck]**, indem Sie auf die Schaltfläche **[!UICONTROL Ausdruck bearbeiten]** klicken. Wählen Sie im Fenster **[!UICONTROL Feldauswahl]** das Feld **[!UICONTROL Datum (@logDate)]**.
 
@@ -113,7 +113,7 @@ Gehen Sie für dieses Beispiel wie folgt vor:
 
    ![](assets/query_editor_tracklog_04.png)
 
-   Die höchste Loganzahl für einen Benutzer beträgt bei diesem Versand 8. 20 verschiedene Benutzer haben die E-Mail dieses Versands geöffnet oder auf einen Link geklickt.
+   Die höchste Anzahl an Logs für einen Benutzer ist 6 für diesen Versand. 5 verschiedene Benutzer haben die Versand-E-Mail geöffnet oder auf einen der Links in der E-Mail geklickt.
 
 ## Empfänger, die keine Nachricht geöffnet haben {#recipients-who-did-not-open-any-delivery}
 
@@ -142,7 +142,7 @@ Gehen Sie wie folgt vor:
    ![](assets/query_open_3.png)
 
 1. Um als Wert die letzten sieben Tage festzulegen, wählen Sie im Feld **[!UICONTROL Wert]** die Schaltfläche **[!UICONTROL Ausdruck bearbeiten]** aus.
-1. Wählen Sie in der Kategorie **[!UICONTROL Funktion]** die Option **[!UICONTROL Aktuelles Datum abzüglich n Tage]** aus und fügen Sie die gewünschte Anzahl der Tage ein. In unserem Fall sind das die letzten sieben Tage.
+1. Wählen Sie in der Kategorie **[!UICONTROL Funktion]** die Option **[!UICONTROL Aktuelles Datum minus n Tage]** und fügen Sie die Anzahl der Tage hinzu, die Sie ansprechen möchten. Hier möchten wir die letzten 7 Tage ins Visier nehmen.
 
    ![](assets/query_open_4.png)
 
@@ -188,13 +188,13 @@ In einem Workflow ermöglichen die Aktivitäten **[!UICONTROL Abfrage]** und **[
 
 * Kontext
 
-  Ein Versand zum Thema &quot;Sommersport-Angebote&quot;. Vier Tage nach dem Versand werden zwei weitere Sendungen geschaltet: &quot;Wassersport-Angebote&quot; und ein Erinnerungsschreiben bezüglich des ersten Sommersport-Angebots.
+  Versand eines „Sommersportangebots“. Vier Tage nach dem Versand werden zwei weitere Sendungen durchgeführt. Eines davon ist „Wassersportangebot“, das andere ist eine Folgemaßnahme zur ersten „Sommersportangebot“.
 
-  Der Versand &quot;Wassersport-Angebote&quot; richtet sich an Empfänger, die in der ersten E-Mail auf Inhalte zum Thema Wassersport geklickt haben. Diese Klicks zeugen vom Interesse der Empfänger. Ähnliche Angebote könnten daher ebenfalls für diese Interessenten infrage kommen. Empfänger hingegen, die die &quot;Sommersport-Angebote&quot;-E-Mail nicht angeklickt haben, bekommen dieselben Angebote wie zuvor.
+  Der Versand „Wassersportangebot“ wird an Empfänger gesendet, die im ersten Versand auf den Link „Wassersport“ geklickt haben. Diese Klicks zeigen, dass der Empfänger an dem Thema interessiert ist. Es ist sinnvoll, sie auf ähnliche Angebote auszurichten. Empfänger, die das „Sommersportangebot“ nicht angeklickt haben, erhalten jedoch wieder denselben Inhalt.
 
 Die folgenden Schritte zeigen die Konfiguration der **[!UICONTROL Aufspaltung]** unter Berücksichtigung von zwei Verhaltensmustern:
 
-1. Ziehen Sie die Aktivität **[!UICONTROL Aufspaltung]** in den Workflow. Sie steuert die Zuordnung der Empfänger des ersten Versands zu einer der zwei folgenden Sendungen. Dies geschieht in Abhängigkeit vom Verhalten der Empfänger infolge des ersten Versands.
+1. Fügen Sie das Feld **[!UICONTROL Aufspaltung]** in den Workflow ein. In diesem Feld werden die Empfänger des ersten Versands in die nächsten beiden Sendungen unterteilt. Die Aufschlüsselung erfolgt basierend auf den Filterbedingungen, die mit dem Empfängerverhalten während des ersten Versands verknüpft sind.
 
    ![](assets/query_editor_ex_09.png)
 
@@ -210,13 +210,13 @@ Die folgenden Schritte zeigen die Konfiguration der **[!UICONTROL Aufspaltung]**
 
 1. Wählen Sie im **[!UICONTROL Zielelement]**-Fenster das auf diesen Zweig zutreffende Verhalten: **[!UICONTROL Empfänger, die geklickt haben (E-Mail)]**.
 
-   Kreuzen Sie unterhalb die Option **[!UICONTROL Von der Transition festgelegter Versand]** an. Hierdurch werden automatisch alle vom ersten Versand angesprochenen Empfänger abgerufen.
+   Wählen Sie unten die Option **[!UICONTROL Versand durch die Transition angegeben]** aus. Mit dieser Funktion werden die beim ersten Versand angesprochenen Personen automatisch wiederhergestellt.
 
    Die Empfänger dieses Zweigs bekommen also den Versand &quot;Wassersport-Angebote&quot;.
 
    ![](assets/query_editor_ex_08.png)
 
-1. Definieren Sie die zweite Verzweigung. Dieser Zweig enthält die Folgenachrichten-E-Mail mit demselben Inhalt wie der erste Versand. Gehen Sie zur Registerkarte **[!UICONTROL Teilmengen]** und klicken Sie auf **[!UICONTROL Hinzufügen]**, um sie zu erstellen.
+1. Definieren Sie den zweiten Zweig. Diese Verzweigung enthält die Folgenachricht mit demselben Inhalt wie beim ersten Versand. Gehen Sie zur Registerkarte **[!UICONTROL Teilmengen]** und klicken Sie auf **[!UICONTROL Hinzufügen]**, um sie zu erstellen.
 
    ![](assets/query_editor_ex_06.png)
 

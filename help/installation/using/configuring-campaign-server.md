@@ -10,8 +10,8 @@ topic-tags: additional-configurations
 exl-id: 46c8ed46-0947-47fb-abda-6541b12b6f0c
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '1571'
-ht-degree: 2%
+source-wordcount: '1632'
+ht-degree: 5%
 
 ---
 
@@ -25,7 +25,7 @@ In diesem Kapitel werden Server-seitige Konfigurationen beschrieben, die entspre
 
 Diese Verfahren sind auf On **Premise-/**&#x200B;**Hybrid** Bereitstellungen beschränkt und erfordern Administratorberechtigungen.
 
-Bei **gehosteten** können Server-seitige Einstellungen nur von Adobe konfiguriert werden. Auf die Zulassungsliste setzen Einige Einstellungen können jedoch im Control Panel von [&#x200B; eingerichtet werden](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=de) z. B. die IP-Dateiverwaltung oder URL-Berechtigungen. [Weitere Informationen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=de).
+Bei **gehosteten** können Server-seitige Einstellungen nur von Adobe konfiguriert werden. Einige Einstellungen können jedoch im Control Panel von [&#x200B; eingerichtet werden](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=de) z. B. die IP-Dateiverwaltung oder URL-Berechtigungen. [Weitere Informationen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=de).
 
 Weitere Informationen finden Sie in den folgenden Abschnitten:
 

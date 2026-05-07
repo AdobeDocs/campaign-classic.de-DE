@@ -8,8 +8,8 @@ hide: true
 exl-id: 94aa4628-d973-433d-b963-b078e2d6672b
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '454'
-ht-degree: 100%
+source-wordcount: '473'
+ht-degree: 75%
 
 ---
 
@@ -45,7 +45,7 @@ Um den Inhalt der SMS zu erstellen, gehen Sie wie folgt vor:
 
    ![](assets/s_ncs_user_wizard_sms01_139.png)
 
-   Sie können nun den personalisierten Nachrichteninhalt sowie die Anzeige der SMS auf dem rechts im Bild angezeigten Mobiltelefondisplay prüfen. Klicken Sie auf das Display, um die Nachricht mit der Maus zu scrollen.
+   Sie können die SMS-Nachricht genehmigen. Sie können den Inhalt der SMS auch auf dem Mobiltelefonbildschirm anzeigen, der rechts neben dem Inhaltseditor angezeigt wird. Klicken Sie auf den Bildschirm und verwenden Sie die Maus, um durch den Inhalt zu scrollen.
 
    ![](assets/s_ncs_user_wizard_sms01_140.png)
 
@@ -55,9 +55,9 @@ Um den Inhalt der SMS zu erstellen, gehen Sie wie folgt vor:
 
    >[!NOTE]
    >
-   >Bei Verwendung der Codepage „Latin-1 (ISO-8859-1)“ ist die Länge von SMS auf 160, bei Unicode auf 70 Zeichen begrenzt. Gewisse Sonderzeichen können die Länge der Nachricht beeinflussen. Weitere Informationen zur Nachrichtenlänge finden Sie im Abschnitt [Transliteration von SMS-Zeichen](#about-character-transliteration).
+   >SMS-Nachrichten sind auf eine Länge von 160 Zeichen beschränkt, wenn die Code-Seite Latin-1 (ISO-8859-1) verwendet wird. Wenn die Nachricht in Unicode geschrieben ist, darf sie 70 Zeichen nicht überschreiten. Bestimmte Sonderzeichen können sich auf die Nachrichtenlänge auswirken. Weitere Informationen zur Nachrichtenlänge finden Sie im Abschnitt [Transliteration von SMS-Zeichen](#about-character-transliteration).
    >
-   >Wenn die Nachricht Personalisierungsfelder oder bedingte Inhalte enthält, kann die Länge von Empfänger zu Empfänger variieren. Daher sollte die Länge jeweils nach erfolgter Personalisierung ausgewertet werden.
+   >Wenn Personalisierungsfelder oder bedingte Inhaltsfelder vorhanden sind, variiert die Größe der Nachricht von einem Empfänger zum anderen. Die Länge der Nachricht muss nach der Personalisierung ausgewertet werden.
    >
    >Während der Analysephase wird die Nachrichtenlänge geprüft und im Falle eines Überschreitens ein Warnhinweis erzeugt.
 

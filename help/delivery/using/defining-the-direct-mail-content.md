@@ -10,7 +10,7 @@ exl-id: 585b2017-9408-4953-8505-2f6d9db8032f
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '192'
-ht-degree: 100%
+ht-degree: 72%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 ## Extraktionsdatei {#extraction-file}
 
-Im Feld **[!UICONTROL Datei]** ist der Name der die extrahierten Daten enthaltenden Datei anzugeben. Die Schaltfläche rechts ermöglicht die Verwendung von Personalisierungsfeldern, um den Namen zu erstellen.
+Der Name der Datei, die die extrahierten Daten enthält, wird im Feld **[!UICONTROL Datei]** definiert. Über die Schaltfläche rechts neben dem Feld können Sie Personalisierungsfelder verwenden, um den Dateinamen zu erstellen.
 
 Standardmäßig wird die Extraktionsdatei erstellt und auf dem Server gespeichert. Sie können es auf Ihrem Computer speichern. Um dies zu tun, aktivieren Sie die Option **[!UICONTROL Nach dem Export erzeugte Datei herunterladen]**. In diesem Fall sind der Pfad zum lokalen Speicherverzeichnis und der Dateiname anzugeben.
 

@@ -10,8 +10,8 @@ topic-tags: troubleshooting
 exl-id: fe69efda-a052-4f67-9c13-665f011d0a2b
 source-git-commit: 8b38d825aa9b0595226a444e0e463362468d51b3
 workflow-type: tm+mt
-source-wordcount: '738'
-ht-degree: 15%
+source-wordcount: '805'
+ht-degree: 21%
 
 ---
 
@@ -71,7 +71,7 @@ Im Folgenden finden Sie eine Liste von Best Practices und Artikeln zur Zustellba
   >Die Beauftragung des Zustellbarkeits-Teams ist vertraglich geregelt. Kundinnen und Kunden sollten sich an den Adobe-Support wenden, um diesbezügliche Informationen zu erhalten.
 
 * Einrichtung der IP-Affinität: Eine falsche Einrichtung der IP-Affinität kann die E-Mails ganz stoppen (falscher Benutzer-/Affinitätsname in der Konfiguration) oder den Durchsatz reduzieren (geringe Anzahl von IPs in der Affinität). Mehr dazu erfahren Sie auf [dieser Seite](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use).
-* E-Mail-Größe: Die E-Mail-Größe spielt eine wichtige Rolle im Durchsatz. Die empfohlene maximale E-Mail-Größe beträgt 60 KB. Mehr dazu erfahren Sie [Seite](https://helpx.adobe.com/de/legal/product-descriptions/campaign.html). Überprüfen Sie im [Versanddurchsatz](../../reporting/using/global-reports.md#delivery-throughput) die Anzahl der pro Stunde übertragenen Bytes.
+* E-Mail-Größe: Die E-Mail-Größe spielt eine wichtige Rolle im Durchsatz. Die empfohlene maximale E-Mail-Größe beträgt 60 KB. Mehr dazu erfahren Sie auf [dieser Seite](https://helpx.adobe.com/de/legal/product-descriptions/campaign.html). Überprüfen Sie im [Versanddurchsatz](../../reporting/using/global-reports.md#delivery-throughput) die Anzahl der pro Stunde übertragenen Bytes.
 * Große Anzahl ungültiger Empfänger: Wenn eine große Anzahl ungültiger Empfänger vorhanden ist, kann dies den Durchsatz beeinträchtigen. Der MTA versucht weiterhin, E-Mails an ungültige Empfänger zu senden. Stellen Sie sicher, dass Ihre Datenbank gut gepflegt ist.
 * Umfang der Personalisierung: Wenn ein Versand in &quot;Personalization in Bearbeitung“ bleibt, überprüfen Sie die in Personalisierungsblöcken verwendete JavaScript.
 

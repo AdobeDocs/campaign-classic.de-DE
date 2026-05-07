@@ -10,18 +10,18 @@ topic-tags: administration-basics
 exl-id: d3369b63-a29b-43b7-b2ad-d36d4f46c82e
 source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
-source-wordcount: '127'
-ht-degree: 100%
+source-wordcount: '135'
+ht-degree: 79%
 
 ---
 
-# Daten-Packages {#working-with-data-packages}
+# Daten-Packages{#working-with-data-packages}
 
 
 
 ## Über Daten-Packages {#about-data-packages}
 
-Adobe Campaign ermöglicht den Export oder Import von Plattformkonfigurationen und Daten mithilfe eines Package-Systems. Packages können unterschiedliche Konfigurationen und gefilterte oder ungefilterte Elemente enthalten.
+Mit Adobe Campaign können Sie die Plattformkonfiguration und -daten über ein Paketsystem exportieren oder importieren. Pakete können verschiedene Arten von Konfigurationen, Elementen, gefiltert oder nicht enthalten.
 
 Datenpackages ermöglichen den Austausch von Entitäten innerhalb der Adobe Campaign-Datenbank über XML-Dateien. Jede in einem Package enthaltene Entität wird mit der Gesamtheit ihrer Daten dargestellt.
 

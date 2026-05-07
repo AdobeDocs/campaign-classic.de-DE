@@ -7,8 +7,8 @@ badge-v7-prem: label="Nur On-Premise/Hybrid" type="Caution" url="https://experie
 exl-id: 80d388fd-873c-4a08-b8b6-697988f2a18c
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 27%
+source-wordcount: '198'
+ht-degree: 35%
 
 ---
 

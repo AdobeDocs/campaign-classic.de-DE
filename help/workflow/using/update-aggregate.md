@@ -8,7 +8,7 @@ exl-id: d2b26af0-30a1-4852-acd5-996795f198a1
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '127'
-ht-degree: 100%
+ht-degree: 40%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 100%
 
 
 
-Aggregate dienen Berichtszwecken und werden auf Cube-Niveau definiert. Bei der Konfiguration von Aggregaten steht die Registerkarte **[!UICONTROL Workflow]** zur Verfügung.
+Aggregate dienen Berichtszwecken und werden auf Cube-Ebene definiert. Bei **[!UICONTROL Konfiguration eines Aggregats ist]** Registerkarte „Workflow“ verfügbar.
 
-Diese Vorgehensweise empfiehlt sich insbesondere bei der Verarbeitung von großen Datenvolumen. Aggregate werden automatisch entsprechend den in der dedizierten Workflow-Aktivität definierten Parametern aktualisiert, damit neu abgerufene Daten bei der Kennzahlenberechnung berücksichtigt werden können.
+Aggregate sind bei der Bearbeitung großer Datenmengen nützlich. Sie werden automatisch auf der Grundlage der im entsprechenden Workflow-Feld definierten Einstellungen aktualisiert, um die zuletzt erfassten Daten in die Indikatoren zu integrieren
 
 Aggregate werden im entsprechenden Tab des Cubes definiert.
 
@@ -27,7 +27,7 @@ Aggregate werden im entsprechenden Tab des Cubes definiert.
 
 In der **[!UICONTROL Aggregat-Update]**-Aktivität besteht die Wahl zwischen einer vollständigen oder teilweisen Aktualisierung.
 
-Standardmäßig wird das Aggregat bei jeder Ausführung vollständig aktualisiert. Bei Auswahl der teilweisen Aktualisierung sind mithilfe des entsprechenden Links die Aktualisierungsbedingungen zu definieren.
+Standardmäßig wird bei jeder Berechnung eine vollständige Aktualisierung durchgeführt. Um eine partielle Aktualisierung zu aktivieren, wählen Sie die entsprechende Option aus und definieren Sie die Aktualisierungsbedingungen.
 
 ![](assets/s_advuser_cube_agregate_05.png)
 

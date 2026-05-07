@@ -8,13 +8,13 @@ content-type: reference
 topic-tags: advanced-parameters
 exl-id: 49ac279b-bc67-4311-b0a4-0e23f2a99c52
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: ht
-source-wordcount: '126'
+workflow-type: tm+mt
+source-wordcount: '131'
 ht-degree: 100%
 
 ---
 
-# Erstellen einer Testumgebung{#creating-a-test-environment}
+# Erstellung einer Testumgebung{#creating-a-test-environment}
 
 
 

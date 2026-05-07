@@ -7,7 +7,7 @@ hide: true
 exl-id: efd2cdfb-2e5f-4672-8be8-a424481b11ed
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '290'
+source-wordcount: '298'
 ht-degree: 100%
 
 ---
@@ -28,7 +28,7 @@ Gehen Sie dazu wie folgt vor:
 
 1. Konfigurieren Sie die Versandvorlage.
 
-Die zur Konfiguration dieser Aktivität verfügbaren Optionen entsprechen denen einer Versandvorlage. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../delivery/using/about-templates.md).
+Die zur Konfiguration dieser Aktivität verfügbaren Optionen entsprechen denen einer Versandvorlage. Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](../../delivery/using/about-templates.md).
 
 >[!CAUTION]
 >

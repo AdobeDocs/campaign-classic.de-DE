@@ -7,8 +7,8 @@ hide: true
 exl-id: 6f246d56-01c8-43f5-b12b-c40d258b93c8
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '192'
-ht-degree: 100%
+source-wordcount: '198'
+ht-degree: 59%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 
 
-Eine Aktivität vom Typ **Test** aktiviert die erste Transition, die die mit ihr verbundene Bedingung erfüllt. Wenn keine Bedingung erfüllt ist und die Option **[!UICONTROL Standard-Verzweigung verwenden]** angekreuzt ist, wird der Standardübergang aktiviert.
+Eine **Test**-Aktivität aktiviert die erste Transition, die die damit verbundene Bedingung erfüllt. Wenn keine Bedingung erfüllt ist und die Option **[!UICONTROL Standardverzweigung verwenden]** aktiviert ist, wird die Standardüberblendung aktiviert.
 
 Eine Bedingung ist ein JavaScript-Ausdruck, der als &#39;true&#39; oder &#39;false&#39; ausgewertet werden muss. Um den Ausdruck einzugeben, klicken Sie auf das Symbol rechts neben dem Namen der Bedingung und wählen Sie **[!UICONTROL Bearbeiten…]**.
 
@@ -28,4 +28,4 @@ Im Editor können auch direkt Variablen eingegeben werden. Weitere Informationen
 
 Bedingungen können im Bearbeitungsfenster der Aktivitätseigenschaften hinzugefügt, gelöscht oder geordnet oder über die Transition geändert werden.
 
-Wenn ein Berechnungsergebnis in verschiedenen Bedingungen verwendet werden soll, kann die Berechnung im Initialisierungsscript der Aktivität erfolgen. Das Ergebnis ist dann in einer Variablen der Aufgabe zu speichern, damit es für die Bedingungsscripts verfügbar ist (task.vars.xxx).
+Soll das Ergebnis einer Berechnung unter verschiedenen Bedingungen wiederverwendet werden, so ist es möglich, es im Initialisierungsskript der Aktivität zu berechnen. Das Ergebnis muss in einer Variablen der Aufgabe gespeichert werden, auf die die Bedingungsskripte zugreifen können (task.vars.xxx).

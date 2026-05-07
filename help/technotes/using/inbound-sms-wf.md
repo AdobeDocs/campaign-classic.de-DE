@@ -5,8 +5,8 @@ description: Workflow-Aktivität für eingehende SMS für Mid-Sourcing-Infrastru
 feature: Technote, SMS
 exl-id: 756039b2-5f57-4dc5-8166-a421206b886b
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
-workflow-type: ht
-source-wordcount: '423'
+workflow-type: tm+mt
+source-wordcount: '440'
 ht-degree: 100%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 100%
 
    Sichern Sie den entsprechenden Optionszeiger im folgenden Format: `SMS_MO_INDEX_{internal name of the workflow}_{name of the insms workflow activity}_{internal name of the external account to access the mid}`.
 
-[Weitere Informationen zum Backup](../../production/using/backup.md)
+   [Weitere Informationen zum Backup](../../production/using/backup.md)
 
 1. (**OPTIONAL**), wenn Sie bereits eine Planung verwenden, öffnen Sie den Workflow und konfigurieren Sie ihn wie folgt neu:
 

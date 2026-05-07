@@ -6,9 +6,9 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Seed Address
 exl-id: 3f567b2d-6f98-4831-af84-7db17fd12c6e
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: ht
-source-wordcount: '462'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '471'
+ht-degree: 93%
 
 ---
 
@@ -80,7 +80,7 @@ Damit diese Änderung des Datenschemas im **Eingabeformular** für Testadressen 
 
    ![](assets/dlv_seeds_usecase_28.png)
 
-   Eines der beiden Personalisierungsfelder bleibt leer. Da die Testadresse keinen Wert im entsprechenden Feld aufweist, wird in der HTML-Vorschau kein Wert angezeigt.
+   Sie können sehen, dass eines der Personalisierungsfelder leer ist. Da die Testadresse keine Daten für dieses Feld enthält, kann die HTML-Inhaltsvorschau keinen Wert anzeigen.
 
    Die zufällige Wertersetzung erfolgt erst **zum Zeitpunkt der Absendung**.
 

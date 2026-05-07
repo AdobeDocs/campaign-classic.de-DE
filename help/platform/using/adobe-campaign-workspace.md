@@ -7,9 +7,9 @@ role: Developer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
 source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
-workflow-type: ht
-source-wordcount: '1185'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1335'
+ht-degree: 91%
 
 ---
 
@@ -23,11 +23,11 @@ Im zentralen Abschnitt der Startseite finden Sie Links für den Zugriff auf das 
 
 ![](assets/d_ncs_user_interface_home.png)
 
-![](assets/do-not-localize/how-to-video.png)[ Campaign-Arbeitsbereich im Video kennenlernen](#video)
+![](assets/do-not-localize/how-to-video.png) [&#x200B; Campaign-Arbeitsbereich im Video kennenlernen](#video)
 
 >[!NOTE]
 >
->Die in Ihrer Instanz verfügbaren Adobe Campaign-Funktionen hängen von den installierten Modulen und Add-ons ab. Je nach Ihren Berechtigungen und Konfigurationen sind manche möglicherweise nicht verfügbar.
+>Die in Ihrer Instanz verfügbaren Adobe Campaign-Funktionen hängen von den installierten Modulen und Add-ons ab. Einige von ihnen sind möglicherweise auch nicht verfügbar, je nach Ihren Berechtigungen und bestimmten Konfigurationen.
 >
 >Prüfen Sie Ihren Lizenzvertrag oder kontaktieren Sie Ihren Adobe-Kundenbetreuer, bevor Sie Module oder Add-ons installieren.
 
@@ -89,7 +89,7 @@ Listen z. B. sind somit über den Link **[!UICONTROL Listen]** verfügbar, der s
 
   ![](assets/d_ncs_user_interface_back_home_buttons.png)
 
-* Bei der Auswahl eines Menüs oder einer Verknüpfung mit einer Webanwendung, einem Programm, einem Versand, einem Bericht o. Ä. öffnet sich die Seite in einem neuen Tab. Dies ermöglicht das Wechseln zwischen verschiedenen Ansichten durch die Auswahl des entsprechenden Tabs.
+* Bei Menüs oder Tastenkombinationen für einen Bildschirm (z. B. Web-Anwendung, Programm, Versand, Bericht usw.) wird die entsprechende Seite in einer anderen Registerkarte angezeigt. Auf diese Weise können Sie mithilfe der Registerkarten von einer Seite zur anderen navigieren.
 
   ![](assets/d_ncs_user_interface_tabs.png)
 
@@ -97,7 +97,7 @@ Listen z. B. sind somit über den Link **[!UICONTROL Listen]** verfügbar, der s
 
 In jeder Rubrik können Sie sich innerhalb der verschiedenen Elemente bewegen. Nutzen Sie hierzu die im Abschnitt **[!UICONTROL Navigation]** zur Verfügung stehenden Verknüpfungen. Der Link **[!UICONTROL Andere Optionen]** erlaubt den Zugriff auf alle anderen Seiten, unabhängig von der aktuellen Rubrik.
 
-Sie können ein neues Element (Versand, Web-Anwendung, Workflow usw.) mithilfe der Tastaturbefehle im Abschnitt **[!UICONTROL Erstellen]** auf der linken Bildschirmseite erstellen. Die Schaltfläche **[!UICONTROL Erstellen]** rechts oberhalb der Liste erlaubt das Hinzufügen eines neuen Listenelements.
+Sie können ein neues Element erstellen (Versand, Web-Anwendung, Workflow usw.), mithilfe der Tastaturbefehle im Abschnitt **[!UICONTROL Erstellen]** auf der linken Bildschirmseite. Die Schaltfläche **[!UICONTROL Erstellen]** rechts oberhalb der Liste erlaubt das Hinzufügen eines neuen Listenelements.
 
 Nutzen Sie beispielsweise auf der Seite der Sendungen die Schaltfläche **[!UICONTROL Erstellen]**, um einen neuen Versand anzulegen.
 
@@ -110,14 +110,14 @@ Auf den Adobe Campaign-Explorer kann über das entsprechende Symbol in der Symbo
 
 Weitere Informationen zum Adobe Campaign-Explorer finden Sie auf folgenden Seiten in der **Dokumentation zu Campaign v8 (Konsole)**:
 
-* [Campaign-Benutzeroberfläche – Überblick](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}
+* [Übersicht über die Campaign-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}
 
 * [Einstellungen der Campaign-Benutzeroberfläche](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/configuration/ui-settings){target=_blank}
 
 * [Verwalten von Ordnern und Ansichten im Explorer](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}
 
 
-## Arbeiten mit Daten  {#work-with-data}
+## Arbeiten mit Daten {#work-with-data}
 
 ### Filtern von Daten {#filters}
 

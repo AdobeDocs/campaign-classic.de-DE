@@ -1,16 +1,16 @@
 ---
 product: campaign
 title: Umgebung – Übersicht
-description: Umgebung – Übersicht
+description: Umgebungen – Übersicht
 feature: Interaction, Offers
 audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: ba588591-5171-4c35-bc8c-3979274e21b2
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
-workflow-type: ht
-source-wordcount: '73'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '101'
+ht-degree: 74%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 Dieses Kapitel beschreibt die Konfiguration und Verwendung der Angebotsumgebungen in Interaction.
 
-Hierbei kommen verschiedene Benutzerprofile zum Einsatz. Stellen Sie zunächst also sicher, dass die erforderlichen Profile existieren, oder erstellen Sie sie wie im Anschluss beschrieben.
+An der Verwaltung und Verwendung von Angeboten sind verschiedene Benutzerprofile beteiligt. Der erste Schritt besteht daher darin, sicherzustellen, dass diese Profile vorhanden sind, und falls nicht, sie zu erstellen.
 
 >[!IMPORTANT]
 >

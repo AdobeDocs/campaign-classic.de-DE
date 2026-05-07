@@ -7,7 +7,7 @@ exl-id: 4cd67278-2623-4508-9a9f-9007c6a5f8ac
 source-git-commit: 254c89490fefa5d405bcecd2f1781df46450a873
 workflow-type: tm+mt
 source-wordcount: '198'
-ht-degree: 8%
+ht-degree: 11%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 8%
 
 ## Inhaltsmodell {#content-model-5}
 
-enumeration:==(help| Wert)
+enumeration:==(help| value)
 
 ## Attribute {#attributes-5}
 
@@ -68,12 +68,12 @@ Auflistungen werden zu Beginn eines Schemas definiert (bevor das Hauptelement de
    * HTML
    * int64
    * link
-   * lang
+   * Lang
    * Memo
    * MNTOKEN
    * Prozent
    * Primärschlüssel
-   * Short
+   * Kurz
    * Zeichenfolge
    * time
    * timespan

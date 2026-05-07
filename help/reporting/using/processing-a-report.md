@@ -6,9 +6,9 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Reporting, Monitoring
 exl-id: d133efec-33e1-4711-a90f-e40385059386
 source-git-commit: 5e062f9dbdf6c148e442ac10dbb12cf72ba0179b
-workflow-type: ht
-source-wordcount: '891'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '905'
+ht-degree: 83%
 
 ---
 
@@ -46,7 +46,7 @@ Sie können die Anzeige und Anordnung Ihrer Daten in den Grafiken und Tabellen a
 
 ### Anzeigemodus des Analyseberichts {#analysis-report-display-mode}
 
-Wenn Sie einen Bericht basierend auf der Vorlage **[!UICONTROL Qualitative Verteilung]** erstellen, sind die Anzeigemodi Tabelle und Grafik standardmäßig ausgewählt. Wenn Sie nur einen der beiden Anzeigemodi verwenden möchten, wählen Sie den anderen ab: Nur der Tab des beibehaltenen Anzeigemodus bleibt verfügbar.
+Wenn Sie einen Bericht mit der Vorlage **[!UICONTROL Qualitative Verteilung]** erstellen, sind standardmäßig die Anzeigemodi Tabelle und Diagramm ausgewählt. Wenn Sie nur einen Anzeigemodus verwenden möchten, deaktivieren Sie das entsprechende Kontrollkästchen. Dies bedeutet, dass nur die Registerkarte des aktivierten Anzeigemodus verfügbar ist.
 
 ![](assets/s_ncs_advuser_report_display_01.png)
 
@@ -72,7 +72,7 @@ Wenn Sie die Anzeigeoption der Titel und Zwischensummen jedoch abwählen, ersche
 
 ![](assets/s_ncs_advuser_report_display_08.png)
 
-Die Statistiken werden standardmäßig in Zeilen angezeigt. Um die Ausrichtung zu ändern, wählen Sie die gewünschte Option in der Dropdown-Liste aus.
+Standardmäßig werden die Statistiken online angezeigt. Um die Ausrichtung zu ändern, wählen Sie die entsprechende Option in der Dropdown-Liste aus.
 
 ![](assets/s_ncs_advuser_report_wizard_035a.png)
 
@@ -82,7 +82,7 @@ Im nachstehenden Beispiel werden die Statistiken in Spalten angezeigt:
 
 ### Anordnung der Daten in Analyseberichten {#analysis-report-data-layout}
 
-Die Anordnung der Daten kann direkt in den Analyse-Tabellen angepasst werden. Machen Sie hierzu einen Rechtsklick auf die betreffende Variable. Wählen Sie eine der folgenden, im Kontextmenü verfügbaren Optionen aus:
+Sie können das Daten-Layout direkt in den beschreibenden Analysetabellen personalisieren. Klicken Sie dazu mit der rechten Maustaste auf die Variable, mit der Sie arbeiten möchten. Wählen Sie die verfügbaren Optionen aus dem Dropdown-Menü aus:
 
 * **[!UICONTROL Pivotieren]**: ändert die Achse der ausgewählten Variable;
 * **[!UICONTROL Nach oben]**/**[!UICONTROL Nach unten]**: kehrt die Zeilen-Reihenfolge der Variablen in um;
@@ -106,7 +106,7 @@ Folgende Optionen stehen zur Verfügung:
 * Im oberen Abschnitt des Fensters kann der Anzeigebereich der Grafik verändert werden.
 * Standardmäßig werden die Titel in der Grafik angezeigt. Um sie auszublenden, deaktivieren Sie die Option **[!UICONTROL Werte anzeigen]**.
 * Die Option **[!UICONTROL Werte kumulieren]** ermöglicht das Addieren der unterschiedlichen, von einer Serie zur anderen zurückgegebenen Werte.
-* Die Legende der Grafik kann durch Deaktivieren der entsprechenden Option ausgeblendet werden. Die Legende wird standardmäßig außerhalb der Grafik oben rechts angezeigt.
+* Sie können entscheiden, ob die Diagrammlegende angezeigt werden soll oder nicht: Deaktivieren Sie zum Ausblenden die entsprechende Option. Standardmäßig wird die Legende außerhalb des Diagramms in der oberen rechten Ecke angezeigt.
 
   Die Legende kann auch über der Grafik angezeigt werden, um den Anzeigebereich zu sparen. Wählen Sie dazu die Option **[!UICONTROL In die Grafik einschließen]**
 
@@ -131,7 +131,7 @@ Informationen zum Speichern deskriptiver Analysen finden Sie unter [Analyseberic
 Um einen deskriptiven Analysebericht zu erstellen, muss der Assistent für deskriptive Analysen über einen Workflow oder das Menü **[!UICONTROL Werkzeuge > Deskriptive Analyse]** ausgeführt werden.
 
 1. Wählen Sie **[!UICONTROL Existierende Analysen und Berichte]** aus und klicken Sie auf **[!UICONTROL Weiter]**.
-1. Die Liste der verfügbaren Berichte wird angezeigt. Klicken Sie auf den Berichttitel, um ihn zu erzeugen.
+1. Auf diese Weise können Sie auf die Liste der verfügbaren Berichte zugreifen. Wählen Sie den Bericht aus, den Sie generieren möchten.
 
    ![](assets/s_ncs_user_report_wizard_01.png)
 

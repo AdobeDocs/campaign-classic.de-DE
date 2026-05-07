@@ -7,9 +7,9 @@ feature: Templates
 role: User, Developer
 exl-id: ade3f1d1-2235-4148-9b6f-721d3f521a15
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '247'
-ht-degree: 100%
+ht-degree: 79%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 Für jeden Inhalt muss eine Veröffentlichungsvorlage mit entsprechenden Umwandlungsvorlagen erstellt werden.
 
-Die Struktur der Inhalte wird in XML-Dokumenten festgeschrieben. Die eigentliche Erstellung des Inhalts erfolgt über Eingabeschnittstellen in der Adobe Campaign-Clientkonsole oder über einen Web-Browser. Inhalte können außerdem automatisch durch Abruf von XML-Streams oder durch Aggregation von Daten aus einer Datenbank eingefügt werden.
+Ein Inhaltsbaustein ist zur Datenspeicherung in einem XML-Dokument strukturiert. Eine Bearbeitungsschnittstelle wird verwendet, um den Inhalt über die Adobe Campaign-Client-Konsole oder einen Webbrowser einzugeben. Der Inhalt kann auch automatisch über die Erfassung von XML-Datenflüssen oder aggregierten Daten in einer Datenbank eingegeben werden.
 
 Es ist die Kombination aus einem XML-Dokument mit XSL-Stylesheets oder JavaScript-Templates, die die automatische Umwandlung des Inhalts in die verschiedenen Formate (HTML, Text) der Veröffentlichungsvorlage ermöglicht.
 

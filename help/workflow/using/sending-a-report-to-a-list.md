@@ -7,8 +7,8 @@ hide: true
 exl-id: cb24aea5-f3c7-4b17-8899-1792ea18c235
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '728'
-ht-degree: 100%
+source-wordcount: '735'
+ht-degree: 94%
 
 ---
 
@@ -74,7 +74,7 @@ Weiterführende Informationen zum Erstellen von Listen finden Sie in diesem [Abs
 
 ## &#x200B;3. Schritt: Erstellung des Workflows {#step-3--creating-the-workflow}
 
-Für das Anwendungsbeispiel ist ein Workflow mit drei Aktivitäten zu erstellen:
+Für diesen Anwendungsfall wurde der folgende Workflow erstellt. Es hat drei Aktivitäten:
 
 * **[!UICONTROL Planung]**, um die Workflow-Ausführung jeden Monat zu wiederholen,
 * **[!UICONTROL JavaScript-Code]**, um den Bericht im PDF-Format zu erzeugen,
@@ -112,7 +112,7 @@ Für das Anwendungsbeispiel ist ein Workflow mit drei Aktivitäten zu erstellen:
    Hierbei werden folgende Variablen verwendet:
 
    * **var reportName**: der interne Name des Berichts in doppelten Anführungszeichen. Im vorliegenden Beispiel lautet der interne Name des **Trackingindikatoren**-Berichts &quot;deliveryFeedback&quot;.
-   * **var path**: Speicherpfad der Datei (&quot;tmp/files/&quot;), Name des Anhangs (&quot;deliveryFeedback&quot;) und Dateiendung (&quot;.pdf&quot;). Im vorliegenden Beispiel ist der Name des Anhangs mit dem internen Namen des Berichts identisch. Die Werte müssen in Anführungszeichen gesetzt und durch das Zeichen &quot;+&quot; verbunden werden.
+   * **var path**: Geben Sie den Speicherpfad der Datei („tmp/files/„), den Namen, den Sie der Datei geben möchten („deliveryFeedback„), und die Dateierweiterung (“.pdf„) ein. In diesem Fall haben wir den internen Namen als Dateinamen verwendet. Die Werte müssen zwischen doppelten Anführungszeichen stehen und durch ein „+“-Zeichen getrennt werden.
 
      >[!CAUTION]
      >

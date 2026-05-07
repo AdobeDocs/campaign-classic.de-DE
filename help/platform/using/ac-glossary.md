@@ -9,8 +9,8 @@ hide: true
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '6200'
-ht-degree: 100%
+source-wordcount: '6654'
+ht-degree: 95%
 
 ---
 
@@ -47,7 +47,8 @@ Learn more about [ACS Connector](../../integrations/using/acs-connector-principl
 
 Eine Aktivität ist ein Element in einer Liste, das einem Workflow hinzugefügt wird, um eine Ausführungsfunktion zu definieren. Die Aktivität ist ein Container, der eine Aufgabe ausführt. In einem Workflow kann eine einzelne Aktivität verschiedene Aufgaben auslösen. Dies ist insbesondere bei Schleifen oder (periodisch) wiederkehrenden Aktionen der Fall.
 
-Weitere Informationen zu Workflow-Aktivitäten finden Sie in der [Dokumentation zu Campaign v8]&#x200B;(https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/activities.html?lang=de){target="_blank"}.
+Weitere Informationen zu Workflow-Aktivitäten finden Sie in der [ zu Campaign v8]&#x200B;(https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/activities
+.html){target="_blank"}.
 +++
 
 +++**Aktives Profil**
@@ -178,7 +179,7 @@ Weitere Informationen zum [Datenmodell](../../configuration/using/about-data-mod
 
 +++**Datenbankbereinigungs-Workflow**
 
-Der Workflow zur Datenbankbereinigung löscht veraltete Daten, um das exponentielle Anwachsen der Datenbank zu vermeiden. Der Workflow wird automatisch ohne Benutzereingriff ausgelöst.
+Der Datenbankbereinigungs-Workflow löscht veraltete Daten, um das exponentielle Anwachsen der Datenbank zu vermeiden. Der Workflow wird automatisch ohne Benutzereingriff ausgelöst.
 
 Weitere Informationen zum [Workflow zur Datenbankbereinigung](../../production/using/database-cleanup-workflow.md).
 +++
@@ -206,7 +207,7 @@ Weitere Informationen zur [Zustellbarkeit](../../delivery/using/about-deliverabi
 
 +++**Versand**
 
-Ein Versand ist ein spezielles Marketing-Kommunikationselement, das über einen bestimmten Kanal an eine Zielgruppe gesendet wird (E-Mail, SMS, Push-Benachrichtigung usw.).   In der Marketing-Terminologie wird dies auch als „Touchpoint“ bezeichnet.
+Ein Versand ist ein spezielles Marketing-Kommunikationselement, das über einen bestimmten Kanal an eine Zielgruppe gesendet wird (E-Mail, SMS, Push-Benachrichtigung usw.). In der Marketing-Terminologie wird dies auch als „Touchpoint“ bezeichnet.
 
 Weitere Informationen zum [Versand](../../delivery/using/communication-channels.md).
 +++
@@ -241,7 +242,7 @@ Learn more about [Deliverability](../../delivery/using/about-deliverability.md).
 
 *Kontext: Briefpost*
 
-Ein Versandentwurf ist ein strukturierter Satz von Elementen (Dokumente, Gutscheine usw.), die für eine bestimmte Kampagne von der Firma erstellt wurden. Er wird im Zusammenhang mit Briefpost-Sendungen verwendet.
+Ein Versandentwurf ist ein strukturierter Satz von Elementen (Dokumente, Geschäfte, Werbegutscheine usw.), vom Unternehmen und für eine bestimmte Kampagne erstellt. Er wird im Zusammenhang mit Briefpost-Sendungen verwendet.
 
 Weitere Informationen zu [Briefpost](../../delivery/using/about-direct-mail-channel.md).
 +++
@@ -264,7 +265,7 @@ Weitere Informationen über [deskriptive Analyse](../../reporting/using/about-de
 
 *Kontext: verteiltes Marketing*
 
-Das Add-on „Verteiltes Marketing“ bietet Campaign-Benutzenden einen gemeinsamen Arbeitsbereich zur Implementierung von Kampagnen wichtiger Abteilungen (Hauptsitz, Marketing-Abteilungen usw.) und lokalen Einrichtungen (Verkaufsstellen, regionale Agenturen usw.). Diese Zusammenarbeit basiert auf einem gemeinsamen Arbeitsbereich, auch **Kampagnenkit-Liste** genannt, wobei den lokalen Entitäten die zentral entworfenen Kampagnenvorlagen und Instanzen angeboten werden.
+Das Add-on Verteiltes Marketing bietet Campaign-Benutzenden einen gemeinsamen Arbeitsbereich zur Implementierung von Kampagnen zentraler Entitäten (Hauptsitz, Marketing-Abteilungen usw.) und lokalen Stellen (Verkaufsstellen, regionale Agenturen usw.). Diese Zusammenarbeit basiert auf einem gemeinsamen Arbeitsbereich, auch **Kampagnenkit-Liste** genannt, wobei den lokalen Entitäten die zentral entworfenen Kampagnenvorlagen und Instanzen angeboten werden.
 
 Weitere Informationen zum verteilten Marketing finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html?lang=de){target="_blank"}.
 +++
@@ -455,7 +456,7 @@ Weitere Informationen zur [Hybrid-Bereitstellung](../../installation/using/hosti
 Der Authentifizierungsmodus bezieht sich auf den Status eines Kontakts. Er kann explizit, implizit oder anonym sein.
 
 * **Explizit**: Der Kontakt konnte identifiziert werden, da er sich mit seinen Kundendaten in der Kanalschnittstelle angemeldet hat.
-* **Implizit**: Der Kontakt konnte mithilfe eines Cookies (Sitzungs- oder permanenter Cookie) identifiziert werden. Er kann entweder wie ein anonymer oder wie ein identifizierter Kontakt gehandhabt werden.
+* **implizit**: Der Kontakt konnte durch ein Cookie (permanent oder Sitzungsinstanz) identifiziert werden. Sie können als anonymer oder identifizierter Kontakt verarbeitet werden.
 * **Anonym**: Der Kontakt konnte nicht identifiziert werden.
 
 Weitere Informationen zu [Campaign Interaction](../../interaction/using/interaction-and-offer-management.md).
@@ -591,8 +592,8 @@ Weitere Informationen zum [Angebotskatalog](../../interaction/using/offer-catalo
 
 Bei einem Angebotskontakt handelt es sich um einen Kontakt aus einer eingehenden Interaktion. Bei der Verarbeitung der Modulaufrufe wird der Kontakt mit einer Zielgruppendimension verknüpft. Nicht identifizierbare anonyme Kontakte werden der Zielgruppendimension der Besucher zugeordnet. Es gibt zwei Arten von Kontakten: identifizierte und anonyme Kontakte.
 
-* **Identifizierter Kontakt**: Kontakt, der sich explizit im Kanal identifiziert hat (z. B. durch Angabe einer Benutzerkennung und eines Kennworts). Bei ausgehenden Interaktionen wird der Kontakt automatisch identifiziert.
-* **Anonymer Kontakt**: Kontakt, der sich nicht explizit im Kanal identifiziert hat, der jedoch mithilfe eines Cookies implizit identifiziert werden kann. Diese Art von Kontakten tritt nur bei eingehenden Interaktionen auf.
+* **Identifizierter Kontakt**: Kontakt, der sich explizit im Kanal identifiziert hat. Bei ausgehenden Interaktionen wird der Kontakt automatisch identifiziert.
+* **Anonymer Kontakt**: Kontakt, der sich nicht explizit im Kanal identifiziert hat, der jedoch mithilfe eines Cookies implizit identifiziert werden kann. Diese Terminologie wird nur für eingehende Interaktionen verwendet.
 
 Weitere Informationen über [Campaign Interaction](../../interaction/using/interaction-and-offer-management.md).
 +++
@@ -682,7 +683,7 @@ Weitere Informationen über [Campaign Interaction](../../interaction/using/inter
 
 *Kontext: Campaign Interaction*
 
-Mit einer Angebotssimulation können Benutzende die Bereitstellung des Angebots in einem bestimmten Umfang testen (Versanddatum, Zielsegment, Anzahl der Angebote, Thema usw.), bevor sie die Angebote tatsächlich versenden. Eine Simulation kann verwendet werden, um Angebotsprioritäten und Eignungsregeln anzupassen und so die Effektivität des Angebots zu maximieren.
+Mit einer Angebotssimulation können Benutzende die Angebotsverteilung über einen bestimmten Bereich testen (Versanddatum, Zielsegment, Anzahl der Angebote, Thema usw.), vor dem tatsächlichen Versand der Angebote. Eine Simulation kann verwendet werden, um Angebotsprioritäten und Eignungsregeln anzupassen und so die Effektivität des Angebots zu maximieren.
 
 Weitere Informationen über [Angebotssimulationen](../../interaction/using/about-offers-simulation.md).
 +++
@@ -851,7 +852,7 @@ Weitere Informationen zu [Push](../../delivery/using/about-mobile-app-channel.md
 
 +++**Empfangende**
 
-In Adobe Campaign sind Empfangende die Standardprofile, die für den Versand von Sendungen (E-Mails, SMS usw.) an Ihre Kundschaft vorgesehen sind. Die in der Datenbank gespeicherten Empfängerdaten ermöglichen die Filterung der Zielgruppe und das Hinzufügen von Personalisierungsdaten. In der Regel handelt es sich hierbei um personenbezogene, Kontakt-, demografische und Transaktionsdaten. Es kann sich jedoch um jede Art von Daten handeln, die Marketing- und Analysefunktionen unterstützen.
+In Adobe Campaign sind Empfänger die Standardprofile, an die Sendungen gesendet werden (E-Mails, SMS usw.) an Ihre Kunden. Die in der Datenbank gespeicherten Empfängerdaten ermöglichen die Filterung der Zielgruppe und das Hinzufügen von Personalisierungsdaten. In der Regel handelt es sich hierbei um personenbezogene, Kontakt-, demografische und Transaktionsdaten. Es kann sich jedoch um jede Art von Daten handeln, die Marketing- und Analysefunktionen unterstützen.
 
 Weitere Informationen über [Empfangende](../../configuration/using/about-data-model.md).
 +++
@@ -889,7 +890,7 @@ Weitere Informationen über die [Schemaerweiterung](../../configuration/using/ex
 
 +++**Testadressen**
 
-Testadressen ermöglichen den Versand an Empfangende, die nicht den vorliegenden Zielgruppenkriterien entsprechen. Auf diese Weise können Empfangende, die außerhalb des Versandperimeters liegen, die Nachricht so wie jede(r) andere Empfangende innerhalb der Zielgruppe erhalten. Sie werden zur Zielgruppe einer Nachricht hinzugefügt, um Missbrauch bei der Nutzung Ihrer Empfängerdatenbank zu erkennen oder den Versand sicherzustellen.
+Testadressen ermöglichen die Auswahl von Empfängern, die nicht den definierten Zielgruppenkriterien entsprechen. Auf diese Weise können Empfänger, die außerhalb des Versandbereichs liegen, den Versand wie jeder andere Zielgruppenempfänger erhalten. Sie werden zur Zielgruppe einer Nachricht hinzugefügt, um Missbrauch bei der Nutzung Ihrer Empfängerdatenbank zu erkennen oder den Versand sicherzustellen.
 
 Weitere Informationen zu [Testadressen](../../delivery/using/about-seed-addresses.md).
 +++
@@ -952,7 +953,8 @@ Weitere Informationen über Zielgruppen-Mappings finden Sie in der [Dokumentatio
 
 Zielgruppenbestimmungs-Aktivitäten sind Workflow-Aktivitäten, die der Erstellung von Zielgruppen und der Verwendung bzw. Filterung von Populationen dienen. Benutzende können damit eine oder mehrere Zielpopulationen definieren, welche im Anschluss durch Schnittmengen-, Vereinigungs- und Ausschlussaktivitäten aufgeteilt oder zusammengefasst werden können.
 
-Weitere Informationen zu Zielgruppenaktivitäten finden Sie in der [Dokumentation zu Campaign v8]&#x200B;(https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/targeting-activities.html?lang=de){target="_blank"}.
+Weitere Informationen zu Zielgruppenaktivitäten finden Sie in der [ zu Campaign v8]&#x200B;(https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/targeting-activities
+.html){target="_blank"}.
 +++
 
 +++**Zielgruppendimension**
@@ -1008,8 +1010,7 @@ Learn more about [Total database storage](../../workflow/using/about-workflows.m
 
 +++**Trackinglogs**
 
-Der technische Tracking-Workflow ruft die Tracking-Daten ab, sobald der Versand ausgeführt und das Tracking aktiviert wurde.
-Diese Daten finden Sie auf der Registerkarte &quot;Tracking&quot; Ihres Versands. Dort finden Sie Informationen zu Öffnungsvorgängen und Klicks auf eine E-Mail sowie andere Interaktionen mit einer empfangenen Nachricht.
+Der technische Tracking-Workflow ruft die Tracking-Daten ab, sobald der Versand ausgeführt und das Tracking aktiviert wurde. Diese Daten finden Sie auf der Registerkarte &quot;Tracking&quot; Ihres Versands. Dort finden Sie Informationen zu Öffnungsvorgängen und Klicks auf eine E-Mail sowie andere Interaktionen mit einer empfangenen Nachricht.
 
 Erfahren Sie mehr zu [Trackinglogs in Campaign v8](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/send/tracking-logs){target="_blank"}.
 +++
@@ -1070,14 +1071,14 @@ Weitere Informationen zum [Einzelmodus](../../interaction/using/about-inbound-ch
 
 +++**Web-Anwendungen**
 
-Web-Anwendungen sind dynamische und interaktive Anwendungsseiten, die von der Campaign-Instanz gehostet werden. Sie enthalten Daten aus der Datenbank und Inhalte, die an die Rechte des/der verbundenen Benutzenden angepasst sind. Sie haben damit beispielsweise die Möglichkeit, ein Bearbeitungsformular in einem Extranet zu erstellen oder Benachrichtigungsformulare, die Daten aus der Datenbank mit Tabellen, Diagrammen, Eingabeformularen usw. enthalten. Mit dieser Funktion können Sie Web-Seiten erstellen und veröffentlichen, auf denen Benutzer Daten suchen oder eingeben können.
+Web-Anwendungen sind dynamische und interaktive Anwendungsseiten, die von der Campaign-Instanz gehostet werden. Sie enthalten Daten aus der Datenbank und Inhalte, die an die Rechte des/der verbundenen Benutzenden angepasst sind. Sie können beispielsweise ein Bearbeitungsformular in einem Extranet oder Benachrichtigungsformulare erstellen, die Daten aus der Datenbank mit Tabellen, Diagrammen, Eingabeformularen usw. enthalten. Mit dieser Funktion können Sie Web-Seiten entwerfen und posten, auf denen Benutzer Informationen suchen oder eingeben können.
 
 Weitere Informationen zu [Web-Anwendungen](../../web/using/about-web-applications.md).
 +++
 
 +++**Workflow**
 
-Ein Workflow ist eine visuelle Darstellung des Ausführungsflusses einer Kampagne. Damit können Sie das gesamte Spektrum an Prozessen und Aufgaben in den verschiedenen Modulen des Anwendungs-Servers koordinieren. In dieser vielseitigen grafischen Umgebung können Sie Prozesse erstellen, wie etwa die Segmentierung, die Kampagnenausführung, die Dateiverarbeitung und den Eingriff durch Personen. Die Ausführung und Nachverfolgung dieser Prozesse erfolgt durch die Workflow-Engine.
+Ein Workflow ist eine visuelle Darstellung des Ausführungsflusses einer Kampagne. Damit können Sie das gesamte Spektrum an Prozessen und Aufgaben in den verschiedenen Modulen des Anwendungs-Servers koordinieren. In dieser grafischen Umgebung können Sie Prozesse wie Segmentierung, Kampagnenausführung, Dateiverarbeitung, Beteiligung von Personen usw. entwerfen. Die Workflow-Engine führt diese Prozesse aus und verfolgt sie.
 
 Weitere Informationen zu [Workflows](../../workflow/using/about-workflows.md)
 +++

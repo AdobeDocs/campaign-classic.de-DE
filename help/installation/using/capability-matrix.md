@@ -6,8 +6,8 @@ feature: Installation, Architecture
 exl-id: a2c425a8-9bde-4259-9140-5ada5397ed5f
 source-git-commit: 8b38d825aa9b0595226a444e0e463362468d51b3
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 32%
+source-wordcount: '323'
+ht-degree: 43%
 
 ---
 
@@ -41,7 +41,7 @@ Die verschiedenen Hosting-Modelle werden [in diesem Abschnitt) &#x200B;](../../i
 
 ## Federated Data Access{#fda}
 
-Adobe Campaign bietet die Option **Federated Data Access** (FDA) zur Verarbeitung von Informationen, die in einer oder mehreren externen Datenbanken gespeichert sind: Sie können auf externe Daten zugreifen, ohne die Datenstruktur in Adobe Campaign ändern zu müssen. [Weitere Informationen](../../installation/using/about-fda.md)
+Adobe Campaign bietet die Option **Federated Data Access** (FDA), um in externen Datenbanken gespeicherte Informationen nutzen zu können. Auf diese Weise ist der Zugriff auf externe Daten möglich, ohne die Datenstruktur in Adobe Campaign zu verändern. [Weitere Informationen](../../installation/using/about-fda.md)
 
 >[!CAUTION]
 >

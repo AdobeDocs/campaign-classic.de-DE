@@ -6,8 +6,8 @@ feature: Reporting, Monitoring
 exl-id: 71d24f03-d41d-49bc-b9a5-8237902f7d6a
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 100%
+source-wordcount: '350'
+ht-degree: 53%
 
 ---
 
@@ -15,17 +15,17 @@ ht-degree: 100%
 
 
 
-Die Analyse von Daten aus der Datenbank ist mithilfe des Moduls **Marketing Analytics** möglich. Damit können Daten analysiert und gemessen, Statistiken berechnet sowie die Erstellung und Berechnung von Berichten vereinfacht und optimiert werden. Ergänzend bietet Marketing Analytics die Möglichkeit, Berichte zu erstellen und darin Zielpopulationen zu konstruieren. Letztere können daraufhin in Listen gespeichert und z. B. als Zielgruppen von Sendungen in Adobe Campaign genutzt werden.
+Die Untersuchung von Daten in der Datenbank wird über das Modul **Marketing Analytics** angeboten. Sie ermöglicht die Analyse und Messung von Daten, die Berechnung von Statistiken sowie die Vereinfachung und Optimierung der Berichterstellung und -berechnung. Darüber hinaus können Sie mit Marketing Analytics Berichte erstellen und Zielpopulationen erstellen. Sobald diese identifiziert sind, werden sie in Listen gespeichert, die in Adobe Campaign verwendet werden können (Zielgruppenbestimmung, Segmentierung usw.).
 
-Cubes werden zur Erzeugung von bestimmten nativen Berichten genutzt, insbesondere in den Versandberichten (Versand-, Klick-, Öffnungsverfolgung etc.). Auf Cubes basierende Berichte dürfen standardmäßig nur für Datenvolumen unter 5 Millionen Zeilen genutzt werden.
+Cubes werden für die Erstellung bestimmter integrierter Berichte verwendet, einschließlich Versandberichte (Versand-Tracking, Klicks, Öffnungen usw.). Cube-basierte Berichte dürfen nur als Standard für Datenmengen unter 5 Millionen Faktenzeilen verwendet werden.
 
 Dies ermöglicht es, die Kapazitäten zur Datenexploration und -analyse optimal zu nutzen. Gleichzeitig wird die Konfiguration der Berichte und Tabellen für den Endbenutzer vereinfacht: Es muss nur ein existierender, vollständig konfigurierter Cube bei der Bericht- oder Tabellenerstellung ausgewählt werden, um dessen Berechnungen, Kennzahlen und Statistiken zu übernehmen.
 
-Nach ihrer Erstellung und Konfiguration werden die Cubes in den Abfrage-Aktivitäten der Berichte und Webanwendungen genutzt. Sie können außerdem in Pivot-Tabellen verwendet und verändert werden.
+Nachdem sie erstellt und konfiguriert wurden, werden Cubes in Berichtsabfragefeldern und Web-Anwendungen verwendet. Sie können in Pivot-Tabellen verwendet und bearbeitet werden.
 
 >[!CAUTION]
 >
->**Marketing Analytics** ist ein Adobe Campaign-Modul. Es muss auf Ihrer Instanz installiert sein, damit Sie die unten beschriebenen Funktionen nutzen können.
+>**Marketing Analytics** ist ein Adobe Campaign-Modul. Damit Sie die unten beschriebenen Funktionen verwenden können, muss sie auf Ihrer -Instanz installiert sein.
 
 Verwenden Sie das Marketing Analytics-Modul von Campaign, um:
 
@@ -45,4 +45,4 @@ Verwenden Sie das Marketing Analytics-Modul von Campaign, um:
 1. Die Erstellung von Abfragen über in einem Cube berechnete und aggregierte Daten.
 1. Die Identifizierung von Populationen und deren Referenzierung in Listen.
 
-Wie Sie Cubes erstellen und verwalten, erfahren Sie in der [Dokumentation zu Adobe Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/analytics/reports/cubes/gs-cubes.html?lang=de){target="_blank"}.
+Wie Sie Cubes erstellen und verwalten, erfahren Sie in der Dokumentation zu [Adobe Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/analytics/reports/cubes/gs-cubes.html?lang=de){target="_blank"}.

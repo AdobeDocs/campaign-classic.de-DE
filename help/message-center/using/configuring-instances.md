@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: instance-configuration
 exl-id: 23a384d1-27ce-46c2-98c3-0fb60a5c50ee
 source-git-commit: 221e2ccdaadf793212fcacdf5e13823f1505f4dc
-workflow-type: ht
-source-wordcount: '1292'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1312'
+ht-degree: 94%
 
 ---
 
@@ -33,7 +33,7 @@ Alle Schritte für die Konfiguration und Verbindung der Kontroll- und Ausführun
 
 >[!IMPORTANT]
 >
->Die Kontroll- und die Ausführungsinstanz(en) müssen auf unterschiedlichen Computern installiert werden. Sie können nicht auf derselben Campaign-Instanz ausgeführt werden.
+>Die Kontroll- und die Ausführungsinstanz(en) müssen auf unterschiedlichen Computern installiert werden. Sie können nicht dieselbe Campaign-Instanz verwenden.
 
 ## Kontrollinstanz konfigurieren {#control-instance}
 
@@ -45,7 +45,7 @@ Wenn Sie mehrere Ausführungsinstanzen verwenden, müssen Sie so viele externe K
 >
 >Wenn Ausführungsinstanzen von mehreren Kontrollinstanzen verwendet werden, können die Daten nach Ordner und Benutzer unterteilt werden. Weiterführende Informationen hierzu finden Sie unter [Mehrere Kontrollinstanzen verwenden](#using-several-control-instances).
 
-### Externes Konto erstellen
+### Erstellen eines externen Kontos
 
 >[!NOTE]
 >
@@ -120,7 +120,7 @@ Die Kennung kann auch **automatisch** zugeordnet werden. Rufen Sie dazu die **Ko
 
 ![](assets/messagecenter_create_extaccount_006bis.png)
 
-## Ausführungsinstanzen konfigurieren  {#execution-instance}
+## Ausführungsinstanzen konfigurieren {#execution-instance}
 
 >[!NOTE]
 >
@@ -153,7 +153,7 @@ Wenn Sie mehrere Ausführungsinstanzen verwenden, wiederholen Sie diese Schritte
 
 ## Mehrere Kontrollinstanzen verwenden {#using-several-control-instances}
 
-Mehrere Kontrollinstanzen können einen Ausführungs-Cluster gemeinsam nutzen. Die für diesen Architekturtyp erforderlichen Konfigurationen werden im Folgenden dargestellt.
+Sie können einen Ausführungs-Cluster für verschiedene Kontrollinstanzen freigeben. Dieser Architekturtyp erfordert die folgende Konfiguration.
 
 Nehmen wir an, Ihr Unternehmen verwaltet zwei Marken mit jeweils einer eigenen Kontrollinstanz: **Kontrolle 1** und **Kontrolle 2**. Außerdem gehen wir in diesem Beispiel von zwei Ausführungsinstanzen aus. Entsprechend müssen Sie für jede Kontrollinstanz einen eigenen Message Center-Benutzer eingeben: einen **mc1**-Benutzer für die Instanz **Kontrolle 1** und einen **mc2**-Benutzer für die Instanz **Kontrolle 2**.
 
@@ -195,7 +195,7 @@ Damit mehrere Kontrollinstanzen verwendet werden können, muss diese Konfigurati
 
    >[!NOTE]
    >
-   >Die Benutzer **mc1** und **mc2** müssen über die Berechtigung **[!UICONTROL Message-Center-Ausführung]** verfügen. Sie dürfen jedoch keinen Zugriff auf die Adobe Campaign-Client-Konsole haben. Ein Benutzer muss stets einer Sicherheitszone zugeordnet werden. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/security-zones.md).
+   >**mc1** und **mc2** Benutzer müssen über **[!UICONTROL Message Center-]** verfügen und sie können nicht auf die Adobe Campaign-Client-Konsole zugreifen. Ein Operator muss immer mit einer Sicherheitszone verknüpft sein. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/security-zones.md).
 
 1. Kreuzen Sie für jeden Benutzer die Option **[!UICONTROL Beschränken auf Daten in den Unterordnern von]** an und wählen Sie den dem jeweiligen Benutzer entsprechenden Ordner aus (**Ordner 1** für den Benutzer **mc1** und **Order 2** für den Benutzer **mc2**).
 

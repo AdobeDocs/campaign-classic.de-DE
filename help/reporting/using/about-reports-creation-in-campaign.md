@@ -7,9 +7,9 @@ level: Intermediate, Experienced
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 exl-id: 262c1469-94b4-4f81-9f6f-5c7f481765da
 source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '179'
-ht-degree: 100%
+ht-degree: 82%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 
 
-Um Statistiken über Daten Ihrer Campaign-Datenbank zu erzeugen, können Sie Berichte erstellen und ihren Inhalt sowie ihre Darstellung nach Bedarf anpassen. Die Berichte können gegebenenfalls mit anderen Benutzern geteilt werden.
+Um Statistiken zu den Daten in Ihrer Campaign-Datenbank zu erstellen, können Sie Berichte erstellen und ihren Inhalt sowie ihr Layout Ihren Bedürfnissen entsprechend anpassen. Diese Berichte können für andere Benutzer freigegeben werden.
 
 >[!NOTE]
 >

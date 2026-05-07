@@ -32,7 +32,7 @@ Kunden, deren Umgebung auf einer der folgenden Versionen basiert, sind mögliche
 * Campaign 21.1.1 (Build 9277) bis Version 21.1.2 (Build 9282). [Mehr dazu](../../rn/using/latest-release.md)
 * Campaign 20.3.1 (Build 9228) bis Version 20.3.3 (Build 9234).
 * Campaign 20.2.1 (Build 9178) bis Version 20.2.4 (Build 9187).
-* Campaign 20.1.1 (Build 9122) bis Version 21.1.3 (Build 9124). 
+* Campaign 20.1.1 (Build 9122) bis Version 21.1.3 (Build 9124).
 * Campaign 19.2.2 (Build 9080) bis Version 19.2.3 (Build 9081).
 * Campaign 19.1.5 (Build 9033) bis Version 19.1.7 (Build 9036).
 

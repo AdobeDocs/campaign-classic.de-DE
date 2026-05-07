@@ -10,8 +10,8 @@ exl-id: 0ba8a3d0-36d7-42f3-b281-0255e49b5fa3
 hide: true
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '533'
-ht-degree: 100%
+source-wordcount: '545'
+ht-degree: 65%
 
 ---
 
@@ -38,15 +38,15 @@ Sie können den Navigationsbaum des Explorers anpassen. Erfahren Sie [in diesem 
 
 ### Definition einer Ansicht {#about-views}
 
-Es besteht außerdem die Möglichkeit, Ansichten zu erstellen, um den Datenzugriff einzuschränken und den Inhalt des Navigationsbaums Ihren Bedürfnissen entsprechend zu organisieren. Es ist darüber hinaus möglich, den jeweiligen Ansichten Berechtigungen zuzuordnen.
+Darüber hinaus können Sie Ansichten erstellen, um den Zugriff auf Daten zu beschränken und den Inhalt der Baumstruktur entsprechend Ihren Anforderungen zu organisieren. Anschließend können Sie den Ansichten Rechte zuweisen.
 
-Eine Ansicht ist ein Ordner, der in einem oder mehreren anderen Ordnern des gleichen Typs gespeicherte Datensätze anzeigt. Wenn Sie beispielsweise einen Kampagnen-Ordner erstellen, der eine Ansicht ist, zeigt dieser standardmäßig alle in der Datenbank vorhandenen Kampagnen an, unabhängig von ihrer Herkunft. Ansichten bieten zudem die Möglichkeit, die enthaltenen Daten zu filtern.
+Eine Ansicht ist ein Ordner, der Datensätze anzeigt, die physisch in einem oder mehreren anderen Ordnern desselben Typs gespeichert sind. Wenn Sie beispielsweise einen Kampagnenordner als Ansicht erstellen, werden alle in der Datenbank vorhandenen Kampagnen unabhängig von ihrer Herkunft standardmäßig angezeigt. Diese Daten können dann gefiltert werden.
 
-Wenn ein Ordner zu einer Ansicht gemacht wird, werden alle dem Ordnertyp entsprechenden Daten, die in der Datenbank vorhanden sind, unabhängig von ihrer tatsächlichen Ordnerzuordnung angezeigt. Anschließend können sie gefiltert werden, um die Liste der angezeigten Daten einzuschränken.
+Wenn Sie einen Ordner in eine Ansicht konvertieren, werden alle Daten, die dem in der Datenbank vorhandenen Ordnertyp entsprechen, in der Ansicht angezeigt, unabhängig vom Ordner, in dem er gespeichert ist. Sie können sie dann filtern, um die Liste der angezeigten Daten einzuschränken.
 
 >[!IMPORTANT]
 >
->Ansichten fassen Daten zusammen und verleihen Zugriff auf sie. Die Daten sind jedoch nicht physisch im Ordner der Ansicht gespeichert. Der Benutzer muss über die der gewünschten Aktion entsprechenden Berechtigungen über den oder die Herkunftsordner der Daten verfügen (mindestens Lesezugriff).
+>Die Ansichten enthalten Daten und bieten Zugriff darauf, aber die Daten werden nicht physisch im Ansichtsordner gespeichert. Der Benutzer muss über die entsprechenden Berechtigungen für die gewünschte Aktion in den Datenquellenordnern verfügen (mindestens Lesezugriff).
 >
 >Um Zugriff auf eine Ansicht ohne Zugriff auf den Herkunftsordner zu verleihen, darf kein Lesezugriff auf den übergeordneten Knoten des Herkunftsordners gegeben werden.
 
@@ -68,7 +68,7 @@ Im folgenden Beispiel werden wir neue Ordner erstellen, um bestimmte Daten darzu
 
    ![Screenshot, in dem mit rechts auf die Eigenschaften geklickt wird](assets/s_ncs_user_add_folder_exple.png)
 
-1. Wählen Sie auf der Registerkarte **[!UICONTROL Einschränkung]** die Option **[!UICONTROL Dieser Ordner ist eine Ansicht]**: Nun werden alle Sendungen der Datenbank in diesem Ordner angezeigt.
+1. Wählen Sie auf **[!UICONTROL Registerkarte]** Einschränkung **[!UICONTROL die Option „Dieser Ordner ist eine Ansicht]** aus. Alle Sendungen in der Datenbank werden dann angezeigt.
 
    ![Screenshot, in dem das Ansichtsfeld ausgewählt wird](assets/s_ncs_user_add_folder_exple01.png)
 

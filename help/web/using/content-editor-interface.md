@@ -6,9 +6,9 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: cb76f3dc-7f3a-49de-89cb-c106865ecb17
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: ht
-source-wordcount: '546'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '551'
+ht-degree: 56%
 
 ---
 
@@ -18,13 +18,13 @@ ht-degree: 100%
 
 ## Bearbeitungsfenster {#editing-window}
 
-Das Bearbeitungsfenster des DCE besteht aus drei Bereichen. Darin können Sie den Inhalt ansehen, ändern und dessen Status überprüfen.
+Das DCE-Bearbeitungsfenster ist in drei verschiedene Abschnitte unterteilt. Sie ermöglichen es Ihnen, den Status des Inhalts anzuzeigen, zu ändern und zu überprüfen.
 
 ![](assets/dce_decoupe_window_nb.png)
 
-1. Im **oberen** Bereich werden Nachrichten für den Benutzer angezeigt. Hier sind Hinweise zum Status der Webanwendung oder zum gerade erstellten Versand sowie Warnhinweise und Fehlernachrichten in Verbindung mit dem Inhalt zu sehen. Weitere Informationen hierzu finden Sie unter [HTML-Inhaltsstatus](content-editing-best-practices.md#html-content-statuses).
-1. Der **linke** Bereich des Fensters ermöglicht die Bearbeitung des Inhalts. Hier kann der Benutzer direkt über die sich öffnende Symbolleiste z. B. einen Link in ein Bild einfügen, die Schriftart ändern und ein Feld löschen. Weitere Informationen hierzu finden Sie unter [Formulare bearbeiten](editing-content.md#editing-forms).
-1. Im **rechten** Bereich des Fensters befindet sich das Steuerfeld. In diesem Bereich werden die Optionen des Editors gruppiert dargestellt, vor allem jene zur Konfiguration der Seitenüberschrift und allgemeine Optionen für Bausteine. Hier können Sie beispielsweise einen Rand hinzufügen, ein Datenbankfeld mit einem Eingabefeld verknüpfen und auf die Eigenschaften einer Web-Seite zugreifen. Weitere Informationen hierzu finden Sie in den Abschnitten [Globale Optionen](#global-options) und [Inhalt bearbeiten](editing-content.md).
+1. Der **Oben**-Bereich ist ein Anzeigebereich für Meldungen an den Benutzer. Diese Meldungen geben den Status der Web-Anwendung für den erstellten Versand sowie Warnungen und Fehlermeldungen im Zusammenhang mit dem Inhalt an. Weitere Informationen hierzu finden Sie unter [HTML-Inhaltsstatus](content-editing-best-practices.md#html-content-statuses).
+1. Der Bereich auf **linken** des Fensters ist der Bereich für die Bearbeitung von Inhalten. Von diesem Bereich aus kann der Benutzer mithilfe der Popup-Symbolleiste direkt mit dem Inhalt interagieren: Einfügen eines Links in ein Bild, Ändern der Schriftart, Löschen eines Felds usw. Weitere Informationen hierzu finden Sie unter [&#x200B; von Formularen](editing-content.md#editing-forms).
+1. Der Bereich **rechts** Fensters ist der Bereich „Systemsteuerung“. In diesem Bereich werden die verschiedenen Optionen für den Editor gruppiert, insbesondere jene, die mit der Konfiguration der Seitenüberschrift und allgemeiner Optionen für einen Block zusammenhängen: Hinzufügen eines Rahmens, Verknüpfen eines Datenbankfelds mit einem Eingabefeld, Zugreifen auf Web-Seiteneigenschaften usw. Weitere Informationen hierzu finden Sie in den Abschnitten [Globale Optionen](#global-options) und [Bearbeiten von &#x200B;](editing-content.md)&quot;.
 
 ## Globale Optionen {#global-options}
 
@@ -46,7 +46,7 @@ Dort finden Sie vier Symbole:
   >
   >Bei der Auswahl eines neuen Inhalts wird der aktuelle Inhalt automatisch ersetzt.
 
-* Mit dem Symbol **Als Vorlage speichern** können Sie den aktuellen Inhalt als Vorlage speichern. Geben Sie den Titel und den internen Namen der Vorlage ein. Vorlagen werden im Knoten **[!UICONTROL Ressourcen > Vorlagen > Inhaltsvorlagen]** gespeichert.
+* Mit **Symbol „Als** speichern“ können Sie den aktuellen Inhalt als Vorlage speichern. Sie müssen den Titel und den internen Namen für die Vorlage eingeben. Vorlagen werden im Knoten **[!UICONTROL Ressourcen > Vorlagen > Inhaltsvorlagen]** gespeichert.
 
   ![](assets/dce_popup_savetemplate.png)
 
@@ -66,14 +66,14 @@ Dort finden Sie vier Symbole:
 
 ## Optionen für Bausteine {#block-options}
 
-Im rechten Bereich des Editors befinden sich die wichtigsten Optionen zum Bearbeiten des Inhalts. Diese Optionen werden nur angezeigt, wenn ein Baustein ausgewählt wird. Die Art der Optionen hängt vom ausgewählten Baustein ab.
+Im Bereich rechts im Editor werden die wichtigsten Optionen gruppiert, mit denen Sie auf den Inhalt reagieren können. Um diese Optionen anzuzeigen, müssen Sie einen Block auswählen: Die Art dieser Optionen hängt vom ausgewählten Block ab.
 
 ![](assets/dce_right_section.png)
 
 Sie haben folgende Möglichkeiten:
 
 * Anzeige für einen oder mehrere Blöcke festlegen, siehe [Sichtbarkeitsbedingung definieren](editing-content.md#defining-a-visibility-condition),
-* Ränder und Rahmen angeben, siehe [Rahmen und Hintergründe hinzufügen ](editing-content.md#adding-a-border-and-background),
+* Ränder und Rahmen angeben, siehe [Rahmen und Hintergründe hinzufügen &#x200B;](editing-content.md#adding-a-border-and-background),
 * Bildattribute (Größe, Beschriftung) festlegen, siehe [Bildeigenschaften bearbeiten](editing-content.md#editing-image-properties),
 * Datenbank mit einem Formularelement (Eingabefeld, Checkbox) verknüpfen, siehe [Dateneigenschaften für ein Formular ändern](editing-content.md#changing-the-data-properties-for-a-form),
 * Einen Teil eines Formulars obligatorisch machen, siehe [Dateneigenschaften für ein Formular ändern](editing-content.md#changing-the-data-properties-for-a-form),

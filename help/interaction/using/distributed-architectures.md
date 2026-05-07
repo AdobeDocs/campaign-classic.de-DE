@@ -9,8 +9,8 @@ topic-tags: advanced-parameters
 exl-id: 083be073-aad4-4c81-aff2-77f5ef3e80db
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 100%
+source-wordcount: '1030'
+ht-degree: 45%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 ## Funktionsprinzip {#principle}
 
-Um eine optimale Skalierbarkeit und einen Rund-um-die-Uhr-Betrieb des eingehenden Kanals zu gewährleisten, unterstützt Interaction verteilte Architekturmodelle. Diese Art Architektur, die auch bei Message Center zum Einsatz kommt, arbeitet mit mehreren Instanzen:
+Um die Skalierbarkeit zu unterstützen und rund um die Uhr Service für den eingehenden Kanal zu bieten, können Sie Interaction mit einer verteilten Architektur verwenden. Diese Art von Architektur wird bereits mit Message Center verwendet und besteht aus mehreren Instanzen:
 
 * einer oder mehrerer Kontrollinstanzen für den ausgehenden Kanal, welche die Marketing-Datenbank und die Design-Umgebung beherbergen;
 * einer oder mehrerer Ausführungsinstanzen für den eingehenden Kanal.
@@ -29,11 +29,11 @@ Um eine optimale Skalierbarkeit und einen Rund-um-die-Uhr-Betrieb des eingehende
 
 >[!NOTE]
 >
->Ausführungsinstanzen sind dem eingehenden Kanal vorbehalten. Sie enthalten die Live-Version des Angebotskatalogs. Jede Ausführungsinstanz ist unabhängig und einem Kontaktsegment gewidmet (beispielsweise eine Instanz pro Land). Die Abfragen des Angebotsmoduls werden direkt von den Ausführungsinstanzen aus durchgeführt (eine URL je Ausführungsinstanz). Da keine automatische Synchronisation zwischen den verschiedenen Ausführungsinstanzen erfolgt, müssen Interaktionen eines Kontakts immer an dieselbe Instanz gesendet werden.
+>Kontrollinstanzen sind dem eingehenden Kanal vorbehalten und enthalten die Online-Version des Katalogs. Jede Ausführungsinstanz ist unabhängig und einem Kontaktsegment gewidmet (z. B. einer Ausführungsinstanz pro Land). Aufrufe des Angebotsmoduls müssen direkt an der Ausführung durchgeführt werden (eine spezifische URL pro Ausführungsinstanz). Da die Synchronisation zwischen Instanzen nicht automatisch erfolgt, müssen Interaktionen desselben Kontakts über dieselbe Instanz gesendet werden.
 
 ## Vorschlagssynchronisation {#proposition-synchronization}
 
-Die Synchronisation von Vorschlägen erfolgt in Packages. In den Ausführungsinstanzen werden alle Katalogobjekte durch Voranstellung des Namens des externen Kontos gekennzeichnet. Dies ermöglicht die Unterstützung mehrerer Kontrollinstanzen (z. B. Design- und Live-Instanzen) auf derselben Ausführungsinstanz.
+Die Angebotssynchronisierung erfolgt über Pakete. In Ausführungsinstanzen wird allen Katalogobjekten der externe Kontoname vorangestellt. Dies bedeutet, dass mehrere Kontrollinstanzen (z. B. Entwicklungs- und Produktionsinstanzen) auf derselben Ausführungsinstanz unterstützt werden können.
 
 >[!IMPORTANT]
 >
@@ -45,27 +45,27 @@ In der Design-Umgebung gelöschte Angebote werden in allen Live-Instanzen deakti
 
 ![](assets/interaction_powerbooster_schema2.png)
 
-Für jedes externe Konto und jede Umgebung wird ein Synchronisations-Workflow erstellt. Die Synchronisationshäufigkeit kann individuell angepasst werden.
+Für jede Umgebung und jedes externe Konto wird ein Workflow für die Vorschlagssynchronisierung erstellt. Die Synchronisierungsfrequenz kann für jede Umgebung und jedes externe Konto angepasst werden.
 
 ## Einschränkungen {#limitations}
 
 * Wenn Sie die Funktion zum Wechsel von einer anonymen in eine identifizierte Umgebung (fall back) nutzen möchten, müssen sich die beiden betroffenen Umgebungen in derselben Ausführungsinstanz befinden.
-* Die Synchronisation von verschiedenen Ausführungsinstanzen erfolgt nicht in Echtzeit. Alle Interaktionen eines spezifischen Kontakts müssen immer an dieselbe Instanz gesendet werden. Die Kontrollinstanz ist dem ausgehenden Kanal vorbehalten (keine Echtzeit-Verarbeitung).
-* Die Marketing-Datenbank wird nicht automatisch synchronisiert. Aus diesem Grund müssen die im Zusammenhang mit den Eignungsregeln und Gewichtungen verwendeten Marketingdaten in die Ausführungsinstanzen dupliziert werden. Dieser Prozess ist im Verlauf der Integrationsphase zu entwickeln.
+* Die Synchronisierung zwischen mehreren Ausführungsinstanzen wird nicht in Echtzeit durchgeführt. Interaktionen desselben Kontakts müssen an dieselbe Instanz gesendet werden. Die Kontrollinstanz muss dem ausgehenden Kanal zugeordnet sein (keine Echtzeit).
+* Die Marketing-Datenbank wird nicht automatisch synchronisiert. Die in den Gewichtungs- und Eignungsregeln verwendeten Marketing-Daten müssen in Ausführungsinstanzen dupliziert werden. Dieser Prozess ist nicht standardmäßig, Sie müssen ihn während der Integrationsphase entwickeln.
 * Die Synchronisation von Vorschlägen erfolgt ausschließlich über FDA-Verbindung.
 * Falls Sie Interaction und Message Center auf derselben Instanz verwenden, erfolgt die Synchronisation in beiden Fällen über das FDA-Protokoll.
 
 ## Package-Konfiguration {#packages-configuration}
 
-Eventuelle Schemaerweiterungen in direktem Zusammenhang mit **Interaktion** (beispielsweise Angebots-, Vorschlags- oder Empfängerschema) sind auf den Ausführungsinstanzen bereitzustellen.
+Eventuelle Schemaerweiterungen in direktem Zusammenhang mit **Interaktion** (Angebote, Vorschläge, Empfänger usw.) Muss auf den Ausführungsinstanzen bereitgestellt werden.
 
-Das Interaction-Package muss auf allen Instanzen installiert werden (Kontroll- und Ausführungsinstanzen). Zwei weitere Packages sind je nach Instanzart zu installieren, eins auf den Kontrollinstanzen, das zweite auf allen Ausführungsinstanzen.
+Das Package Interaction muss auf allen Instanzen installiert sein (Kontrolle und Ausführung). Zwei zusätzliche Pakete sind verfügbar: ein Paket, das auf den Kontrollinstanzen installiert werden soll, und ein weiteres, das auf jeder Ausführungsinstanz installiert werden soll.
 
 >[!NOTE]
 >
->Wenn Sie das Package installieren, werden die Felder vom Typ **long** der Tabelle **nms:proposition**, z. B. die Vorschlagskennung, zu Feldern vom Typ **int64**. Weiterführende Informationen zu Datentypen finden Sie in diesem [Abschnitt](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data).
+>Wenn Sie das Paket installieren **werden die Felder vom** long **der Tabelle nms:proposition**, z. B. die Vorschlagskennung, zu Feldern vom Typ **int64**. Weiterführende Informationen zu Datentypen finden Sie in diesem [Abschnitt](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data).
 
-Für jede Instanz muss außerdem die Aufbewahrungsdauer der Daten konfiguriert werden (im Fenster **[!UICONTROL Datenbereinigung]** des Bereitstellungassistenten). Bei den Ausführungsinstanzen muss diese Dauer der Verlaufstiefe entsprechen, die für die Berechnung der Eignungs- bzw. Typologieregeln (beweglicher Zeitraum) erforderlich ist.
+Die Aufbewahrungsdauer der Daten muss für jede Instanz konfiguriert werden (über das Fenster **[!UICONTROL Datenbereinigung]** im Bereitstellungsassistenten). Bei Ausführungsinstanzen muss dieser Zeitraum der historischen Tiefe entsprechen, die für die Berechnung von Typologieregeln (beweglicher Zeitraum) und Eignungsregeln erforderlich ist.
 
 Bei den Kontrollinstanzen müssen Sie darüber hinaus:
 
@@ -79,7 +79,7 @@ Bei den Kontrollinstanzen müssen Sie darüber hinaus:
    * Geben Sie die Verbindungsparameter zur Ausführungsinstanz an.
    * Jeder Ausführungsinstanz muss eine Kennung zugeordnet werden. Dies geschieht durch Klick auf die Schaltfläche **[!UICONTROL Verbindung initialisieren]**.
    * Kreuzen Sie die verwendete Anwendung an: **[!UICONTROL Message Center]**, **[!UICONTROL Interaction]** oder beide.
-   * Geben Sie das genutzte FDA-Konto an. Benutzer müssen in den Ausführungsinstanzen erstellt werden und über die folgenden Lese- und Schreibberechtigungen in den entsprechenden Instanzen verfügen:
+   * Geben Sie das verwendete FDA-Konto ein. Auf den Ausführungsinstanzen muss ein Benutzer erstellt werden, der über die folgenden Lese- und Schreibrechte für die Datenbank der betreffenden Instanz verfügt:
 
      ```
      grant SELECT ON nmspropositionrcp, nmsoffer, nmsofferspace, xtkoption, xtkfolder TO user;
@@ -99,9 +99,9 @@ Bei den Kontrollinstanzen müssen Sie darüber hinaus:
 
      >[!NOTE]
      >
-     >Sollten Fehler auftreten, sind die technischen Workflows zur Vorschlagssynchronisation und Angebotsbenachrichtigung zu prüfen.
+     >Wenn ein Fehler auftritt, können Sie die Synchronisierungs-Workflows und Angebotsbenachrichtigungen einsehen. Diese sind in den technischen Workflows der Anwendung zu finden.
 
-Wenn aus Optimierungsgründen nur ein Teil der Marketing-Datenbank auf den Ausführungsinstanzen dupliziert wird, können Sie ein mit der Umgebung verknüpftes eingeschränktes Schema angeben, damit Benutzer nur die in den Ausführungsinstanzen verfügbaren Daten verwenden können. Sie können ein Angebot mit Daten erstellen, die in Ausführungsinstanzen nicht verfügbar sind. Dazu müssen Sie die Regel für die anderen Kanäle deaktivieren, indem Sie diese Regel auf den ausgehenden Kanal (**[!UICONTROL Wird berücksichtigt, wenn]** -Feld).
+Wenn aus Optimierungsgründen nur ein Teil der Marketing-Datenbank in den Ausführungsinstanzen dupliziert wird, können Sie ein eingeschränktes, mit der Umgebung verknüpftes Schema angeben, damit die Benutzer nur Daten verwenden können, die in den Ausführungsinstanzen verfügbar sind. Sie können ein Angebot mit Daten erstellen, die in Ausführungsinstanzen nicht verfügbar sind. Dazu müssen Sie die Regel für die anderen Kanäle deaktivieren, indem Sie diese Regel auf den ausgehenden Kanal (**[!UICONTROL Wird berücksichtigt, wenn]** -Feld).
 
 ![](assets/ita_filtering.png)
 
@@ -123,14 +123,14 @@ Die folgende Option steht für Ausführungsinstanzen zur Verfügung:
 
 ## Package-Installation {#packages-installation}
 
-Im Zusammenhang mit der Installation der Kontroll- und -Ausführungs-Packages erhöht sich die Größe der Vorschlagskennungen in der Datenbank von 32 auf 64 Bits.
+Wenn Ihre Instanz zuvor nicht über das Interaction -Package verfügt hat, ist keine Migration erforderlich. Standardmäßig liegt die Vorschlagstabelle nach der Installation der Pakete in 64 Bit vor.
 
 >[!IMPORTANT]
 >
 >Je nach Anzahl an existierenden Vorschlägen in Ihrer Instanz kann dieser Vorgang sehr zeitintensiv sein.
 
-* Wenn Ihre Instanz keine oder nur wenige Vorschläge enthält, ist kein manueller Eingriff in Bezug auf die Vorschlagstabelle erforderlich. Die Änderung erfolgt zum Zeitpunkt der Package-Installation.
-* Wenn Ihre Instanz eine große Anzahl an Vorschlägen enthält, wird empfohlen, die Struktur der Vorschlagstabelle vor Installation der Ausführungs- und Kontroll-Packages anzupassen. Die diesbezüglichen Abfragen sind vorzugsweise zu einem Zeitpunkt mit geringer Auslastung auszuführen.
+* Wenn Ihre Instanz nur über wenige oder gar keine Vorschläge verfügt, ist keine manuelle Änderung der Vorschlagstabelle erforderlich. Die Änderung wird vorgenommen, wenn Pakete installiert werden.
+* Wenn Ihre Instanz viele Vorschläge hat, ist es besser, die Struktur der Vorschlagstabelle zu ändern, bevor Sie die Steuerungspakete installieren und ausführen. Es wird empfohlen, die Abfragen während eines Zeitraums mit geringer Aktivität auszuführen.
 
 >[!NOTE]
 >
@@ -138,7 +138,7 @@ Im Zusammenhang mit der Installation der Kontroll- und -Ausführungs-Packages er
 
 ### PostgreSQL {#postgresql}
 
-Zwei Methoden stehen zur Verfügung. Die erste, die eine Arbeitstabelle verwendet, ist geringfügig schneller.
+Es gibt zwei Methoden. Der erste (mit einer Arbeitstabelle) ist etwas schneller.
 
 **Arbeitstabellen**
 
@@ -168,7 +168,7 @@ ALTER TABLE nmspropositionrcp
 
 ### Oracle {#oracle}
 
-Die Änderung der Größe eines **Number**-Typs zieht keine Änderung der Werte oder Indexe nach sich. Sie ist somit augenblicklich.
+Das Bearbeiten der Größe eines **Zahl**-Typs führt nicht dazu, dass Werte oder der Index neu geschrieben werden. Es handelt sich also um eine sofortige Maßnahme.
 
 Die auszuführende Abfrage stellt sich wie folgt dar:
 

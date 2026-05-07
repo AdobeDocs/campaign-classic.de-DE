@@ -6,8 +6,8 @@ hide: true
 feature: Workflows
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '145'
-ht-degree: 100%
+source-wordcount: '152'
+ht-degree: 86%
 
 ---
 
@@ -16,14 +16,14 @@ ht-degree: 100%
 
 
 
-Der folgende Workflow ist so geplant, dass er stündlich ausgeführt wird. Er wird standardmäßig mit dem Modul **Message Center – Kontrolle** installiert.
+Der folgende Workflow ist so geplant, dass er stündlich ausgeführt wird. Sie wird standardmäßig mit dem Modul **Message Center -**) installiert.
 
 
 Weitere Informationen hierzu finden Sie je nach Campaign-Version in den folgenden Abschnitten:
 
-![](assets/do-not-localize/v7.jpeg)[Dokumentation zu Campaign v7](../../message-center/using/about-transactional-messaging.md)
+![](assets/do-not-localize/v7.jpeg) [Dokumentation zu Campaign v7](../../message-center/using/about-transactional-messaging.md)
 
-![](assets/do-not-localize/v8.png)[Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/transactional.html?lang=de)
+![](assets/do-not-localize/v8.png) [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/transactional.html?lang=de)
 
 
 <table> 

@@ -10,8 +10,8 @@ topic-tags: tasks--resources-and-budgets
 exl-id: 222853c5-c754-4c0b-8ee4-a64b2f8677a4
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '804'
-ht-degree: 100%
+source-wordcount: '808'
+ht-degree: 72%
 
 ---
 
@@ -19,13 +19,13 @@ ht-degree: 100%
 
 
 
-Adobe Campaign-Benutzer haben die Möglichkeit, über Diskussionsforen Informationen auszutauschen. Die folgenden Elemente bieten ihr eigenes Forum: Pläne, Programme, Kampagnen, Ressourcen, Simulationen und Lager. Jeder Benutzer verfügt zudem über ein persönliches Forum. Alle Diskussionen sind öffentlich, auch die der Benutzer-Foren.
+Adobe Campaign-Benutzende können Diskussionsforen verwenden, um Informationen auszutauschen. Die folgenden Elemente verfügen jeweils über ein eigenes Forum: Pläne, Programme, Kampagnen, Ressourcen, Simulationen, Lager. Jeder Benutzer hat auch ein persönliches Forum. Alle Diskussionen sind öffentlich, auch in persönlichen Foren.
 
 Benutzer können Foren abonnieren, um per E-Mail über jede gepostete Nachricht informiert zu werden.
 
 ## Zugriff auf ein Forum {#accessing-a-forum}
 
-Um auf das Forum einer Kampagne, eines Benutzers usw. zuzugreifen, klicken Sie auf die Schaltfläche **[!UICONTROL Forum]** rechts oben im jeweiligen Dashboard. Nach dem Titel der Schaltfläche wird in Klammern die Gesamtzahl aller Nachrichten des Forums angegeben.
+Um auf das Forum einer Kampagne, eines Benutzers usw. zuzugreifen, klicken Sie auf das Dashboard **[!UICONTROL Forum]** oben rechts. Über diesen Link erhalten Sie auch die Gesamtzahl der Nachrichten im Forum.
 
 ![](assets/mrm_forum_access_link.png)
 
@@ -61,8 +61,8 @@ Gehen Sie ins Fenster **[!UICONTROL Diskussionsforum]**:
 
 1. Bei Bedarf:
 
-   * Wenn Sie möchten, dass eine nicht abonnierte Person an der Diskussion teilnimmt, nutzen Sie das Feld **[!UICONTROL Zu benachrichtigender Benutzer]**. Der eingetragene Benutzer erhält eine Benachrichtigungs-E-Mail speziell für diese Nachricht, er wird nicht automatisch zum Abonnent. Um mehrere Benutzer zu benachrichtigen, wählen Sie eine Benutzergruppe aus.
-   * Über das Feld **[!UICONTROL Durchsuchen]** können Sie der Nachricht ein Dokument anhängen. Das angehängte Dokument wird auch der Benachrichtigungs-E-Mail hinzugefügt. Jeder Nachricht kann nur eine Datei angehängt werden. Verwenden Sie eine komprimierte Datei, um mehrere Dokumente zu senden.
+   * Wenn Sie möchten, dass jemand an der Diskussion teilnimmt, der das Forum nicht abonniert hat, verwenden Sie das Feld **[!UICONTROL Benutzer zur Benachrichtigung]**. Der Benutzer erhält eine Benachrichtigungs-E-Mail für diese spezifische Nachricht (er wird das Forum nicht abonniert). Um mehrere Benutzende zu benachrichtigen, wählen Sie eine Benutzergruppe aus.
+   * Um der Nachricht einen Anhang hinzuzufügen, klicken Sie auf **[!UICONTROL Durchsuchen]**. Der Anhang wird auch der Benachrichtigungs-E-Mail hinzugefügt. Anhänge können nur einzeln gesendet werden: Um mehrere Dateien zu senden, müssen Sie sie komprimieren.
 
 1. Klicken Sie auf **[!UICONTROL Nachricht erstellen]**, um eine Nachricht im Forum zu posten.
 
@@ -72,7 +72,7 @@ Gehen Sie ins Fenster **[!UICONTROL Diskussionsforum]**:
 
 ## Posts im persönlichen Benutzerforum eines Benutzers {#posting-to-the-personal-forum-of-an-operator}
 
-Sie haben die Möglichkeit, eine Nachricht im persönlichen Forum eines Benutzers zu posten, wenn sich diese zum Beispiel nicht auf eine bestimmte Kampagne bezieht, Sie jedoch den Diskussionsverlauf in Adobe Campaign verfolgen möchten. Die persönlichen Benutzerforen sind öffentlich, alle Benutzer können die darin enthaltenen Nachrichten lesen. Der jeweilige Benutzer wird per E-Mail über jede in seinem Forum gepostete Nachricht informiert.
+Sie können eine Nachricht im Benutzerforum posten, wenn Ihre Nachricht beispielsweise keine bestimmte Kampagne betrifft, Sie aber trotzdem den Überblick über die Unterhaltung in Adobe Campaign behalten möchten. Persönliche Foren sind öffentlich und alle Benutzer werden Ihre Nachricht sehen. Der Benutzer erhält jedes Mal eine Nachricht, wenn jemand etwas in seinem persönlichen Forum postet.
 
 Es gibt folgende Möglichkeiten, auf ein Benutzerforum zuzugreifen:
 
@@ -81,7 +81,7 @@ Es gibt folgende Möglichkeiten, auf ein Benutzerforum zuzugreifen:
 
 ## Forum abonnieren {#subscribing-to-a-forum}
 
-Sie können ein Forum abonnieren, um den enthaltenen Diskussionen zu folgen und über jede im Forum gepostete Nachricht per E-Mail informiert zu werden. Die E-Mail enthält sowohl die Nachricht als auch mögliche Anhänge. Sie können direkt auf die Nachricht antworten, indem Sie in den E-Mail-Body klicken und sich anschließend über den Adobe Campaign-Webzugriff anmelden. Wenn Sie ein Forum abonnieren, ist dies für alle Benutzer sichtbar.
+Wenn Sie ein Forum abonnieren, können Sie Diskussionen verfolgen. Sie erhalten jedes Mal eine E-Mail-Benachrichtigung, wenn eine Nachricht im Forum gepostet wird. Diese E-Mail enthält den Nachrichtentext und alle Anhänge. Um eine Nachricht zu beantworten, klicken Sie auf den E-Mail-Text und melden Sie sich in der Web-Oberfläche von Adobe Campaign an. Wenn Sie ein Forum abonnieren, sind diese Informationen für alle sichtbar.
 
 * Um ein Forum zu abonnieren, klicken Sie auf die Schaltfläche **[!UICONTROL Forum abonnieren]** rechts oberhalb der Diskussionsliste.
 

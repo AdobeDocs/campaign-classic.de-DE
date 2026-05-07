@@ -8,8 +8,8 @@ hide: true
 exl-id: 32696bbf-1415-4214-837f-5437fdb8b4d4
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1009'
-ht-degree: 100%
+source-wordcount: '1012'
+ht-degree: 85%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 
 
-Marketing Analytics ermöglicht es, auf vereinfachte Weise Berichte zu erstellen und Daten aus der Datenbank mithilfe von Cubes zu identifizieren und auszuwählen. Folgende Möglichkeiten stehen zur Verfügung:
+Marketing Analytics erleichtert die Erstellung von Berichten und die Identifizierung und Auswahl von Daten aus der Datenbank mithilfe von Cubes. Dies ermöglicht Folgendes:
 
 * Erstellung von Cube-basierten Berichten. Der Prozess wird hier detailliert beschrieben: [Erkunden der Daten in einem Bericht](#exploring-the-data-in-a-report).
 * Sammeln Sie die Daten in der Datenbank und gruppieren Sie sie in Listen, um beispielsweise Zielgruppen und Sendungen zu identifizieren und zu erstellen. Weitere Informationen finden Sie unter [Erstellen von Zielpopulationen](#building-a-target-population).
@@ -43,7 +43,7 @@ Die Standardanzeige beinhaltet die ersten beiden Dimensionen des Cubes (in unser
 
 ![](assets/s_advuser_cube_in_report_03.png)
 
-1. Um eine Dimension hinzuzufügen, klicken Sie auf die Schaltfläche Hinzufügen der betreffenden Zeile oder Spalte.
+1. Wählen Sie die Dimensionen aus, die Sie in den Zeilen und Spalten der Tabelle anzeigen möchten. Ziehen Sie dazu die verfügbaren Dimensionen wie unten dargestellt per Drag-and-Drop:
 1. Wählen Sie die der Tabelle hinzuzufügende Dimension aus den verfügbaren Dimensionen aus:
 
    ![](assets/s_advuser_cube_in_report_04.png)
@@ -78,7 +78,7 @@ Die Standardanzeige beinhaltet die ersten beiden Dimensionen des Cubes (in unser
 
 Geben Sie nach der Positionierung der Zeilen und Spalten die anzuzeigenden Kennzahlen sowie ihren Anzeigemodus an.
 
-Standardmäßig wird nur eine Kennzahl angezeigt. Um Kennzahlen hinzuzufügen oder zu konfigurieren, gehen Sie wie folgt vor:
+Standardmäßig wird nur eine Kennzahl angezeigt. So fügen Sie Kennzahlen hinzu oder konfigurieren sie:
 
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Kennzahlen]**.
 
@@ -88,7 +88,7 @@ Standardmäßig wird nur eine Kennzahl angezeigt. Um Kennzahlen hinzuzufügen od
 
    ![](assets/s_advuser_cube_in_report_08.png)
 
-   Wählen Sie die Informationen aus, die Sie anzeigen möchten, und geben Sie den zu verwendenden Formatierungstyp an. Die Liste der Optionen hängt vom konfigurierten Kennzahlentyp ab.
+   Wählen Sie die anzuzeigenden Informationen und die Art der Formatierung aus. Die Liste der Optionen hängt vom konfigurierten Kennzahlentyp ab.
 
    ![](assets/s_advuser_cube_in_report_09.png)
 
@@ -108,9 +108,9 @@ Standardmäßig wird nur eine Kennzahl angezeigt. Um Kennzahlen hinzuzufügen od
 
      Für diese Kennzahlen stehen folgende Operatoren zur Verfügung: Summe, Differenz, Produkt und Rate.
 
-   * Anteil: ermöglicht die Berechnung der Anzahl an für eine gegebene Dimension gemessenen Datensätzen. Der Anteil kann in Bezug auf eine Dimension oder eine Unter-Dimension berechnet werden.
+   * Proportion : Mit dieser Kennzahl können Sie die Anzahl der für eine bestimmte Dimension gemessenen Datensätze berechnen. Sie können die Proportionalität anhand einer Dimension oder Unterdimension berechnen.
    * Abweichung: ermöglicht die Berechnung der Abweichungen der Werte einer Ebene.
-   * Abweichung vom Durchschnitt: ermöglicht die Berechnung der Abweichungen in jeder Gruppe von entsprechenden Zellen in Bezug auf den Wertedurschnitt. Sie können zum Beispiel die jeweilige Einkaufsmenge der existierenden Segmente vergleichen.
+   * Standardabweichung: Mit dieser Kennzahl können Sie Abweichungen innerhalb jeder Zellengruppe im Vergleich zum Durchschnitt der Werte berechnen. Sie können beispielsweise das Kaufvolumen für alle vorhandenen Segmente vergleichen.
 
    Die erstellte Kennzahl wird dem Bericht hinzugefügt.
 

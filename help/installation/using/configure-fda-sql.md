@@ -6,8 +6,8 @@ feature: Installation, Federated Data Access
 exl-id: 65ab4577-3126-4579-8fcc-e93772ebd1e8
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '507'
-ht-degree: 8%
+source-wordcount: '572'
+ht-degree: 7%
 
 ---
 
@@ -110,8 +110,8 @@ Sie müssen ein [!DNL Microsoft SQL Server] externes Konto erstellen, um Ihre Ca
 
 Der Connector unterstützt die folgenden Optionen:
 
-| Option | Beschreibung  |
+| Option | Beschreibung |
 |---|---|
-| Authentifizierung | Vom Connector unterstützte Authentifizierungstyp. Aktuell unterstützter Wert: ActiveDirectoryMSI. <br> Weiterführende Informationen hierzu finden Sie in Beispiel 8 der [Dokumentation zu Microsoft](https://docs.microsoft.com/en-us/sql/connect/odbc/using-azure-active-directory?view=sql-server-ver15#example-connection-strings). |
+| Authentifizierung | Vom Connector unterstützte Authentifizierungstyp. Aktuell unterstützter Wert: ActiveDirectoryMSI. <br> Weitere Informationen hierzu finden Sie in Beispiel 8 der Dokumentation zu [Microsoft](https://docs.microsoft.com/en-us/sql/connect/odbc/using-azure-active-directory?view=sql-server-ver15#example-connection-strings). |
 | Verschlüsseln | Gibt an, ob Verbindungen die TLS-Verschlüsselung über das Netzwerk verwenden. Mögliche Werte sind **ja/obligatorisch (18.0 und höher)**, **nein/optional (18.0 und höher)** und **streng (18.0 und höher)**. Der Standardwert ist in Version 18.0 **Ja** und in früheren Versionen **Nein** festgelegt. <br>Weitere Informationen hierzu finden Sie in der [Dokumentation zu Microsoft](https://docs.microsoft.com/en-us/sql/connect/odbc/dsn-connection-string-attribute?view=azure-sqldw-latest#encrypt). |
 | TrustServerCertificate | Aktiviert die Verschlüsselung mit einem selbstsignierten Serverzertifikat bei Verwendung mit **Encrypt**. <br>Akzeptierte Werte: **ja** oder **nein** (Standardwert, was bedeutet, dass das Serverzertifikat validiert wird). |

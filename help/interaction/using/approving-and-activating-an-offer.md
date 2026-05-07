@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: cf7649fe-f62a-4dfa-a19e-9c1ca545e3e3
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: ht
-source-wordcount: '669'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '672'
+ht-degree: 78%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 
 
-Nach Erstellung seines Inhalts muss ein Angebot validiert werden, um in die Live-Umgebung dupliziert zu werden und somit zur Unterbreitung zur Verfügung zu stehen. Die Validierung bezieht sich sowohl auf den Inhalt als auch auf die Eignung des Angebots.
+Sobald der Angebotsinhalt abgeschlossen ist, müssen Sie ihn genehmigen, damit er in die Live-Umgebung dupliziert und bereitgestellt werden kann. Die Validierung betrifft den Angebotsinhalt und seine Eignung.
 
 Ein Banner im Dashboard zeigt den Validierungsstatus an.
 
@@ -29,7 +29,7 @@ Ein Banner im Dashboard zeigt den Validierungsstatus an.
 
 Die Validierung des Angebotsinhalts besteht darin, die Darstellung(en) des Angebots auszuwählen, die in der Live-Umgebung zur Verfügung gestellt werden sollen.
 
-Ein Angebotsinhalt hat pro Platzierung eine Darstellung. Da jede Platzierung ihre eigene Struktur und eigene Rendering-Funktionen aufweist, kann die Darstellung eines Angebots je nach Platzierung variieren.
+Der Inhalt eines Angebots hat eine Darstellung pro Platzierung. Da jede Platzierung über eine eigene Struktur und eigene Rendering-Funktionen verfügt, kann die Angebotsdarstellung variieren.
 
 Sie haben daher die Möglichkeit, den Inhalt eines Angebots für gewisse Platzierungen zu validieren, ihn für andere jedoch abzulehnen.
 
@@ -53,7 +53,7 @@ Gehen Sie wie folgt vor, um den Inhalt eines Angebots zu validieren:
 
    >[!NOTE]
    >
-   >Die Kennzeichnung **[!UICONTROL Inhalt validiert]** bedeutet nicht, dass alle Angebotsdarstellungen aktiviert und validiert wurden. Sie bedeutet, dass der Inhaltsvalidierungsprozess abgeschlossen ist, unabhängig davon, ob alle Angebote aktiviert/validiert wurden oder nicht.
+   >Die Erwähnung **[!UICONTROL Inhalt genehmigt]** bedeutet nicht, dass alle Angebotsdarstellungen aktiviert und genehmigt wurden. Dies bedeutet, dass der Inhaltsgenehmigungsprozess abgeschlossen wurde, unabhängig davon, ob alle Angebote aktiviert/genehmigt wurden oder nicht.
 
 ## Angebotseignungen validieren {#approving-offer-eligibility}
 
@@ -99,7 +99,7 @@ Der Validierungsverlauf kann im Dashboard nachvollzogen werden. Klicken Sie hier
 
 ## Validierungen zurücksetzen {#restart-the-approval}
 
-Sie haben die Möglichkeit, eine bereits erfolgte Validierung zurückzusetzen. Gehen Sie wie folgt vor:
+Sobald die Genehmigung gestartet wurde, kann sie neu gestartet werden. Befolgen Sie dazu die folgenden Anweisungen:
 
 1. Klicken Sie im Dashboard auf den Link **[!UICONTROL Inhalt validiert]**.
 1. Markieren Sie im sich öffnenden **[!UICONTROL Bearbeiten]**-Fenster die Validierung, die rückgängig gemacht werden soll, und klicken Sie auf den Link **[!UICONTROL Validierung zurücksetzen, um sie erneut durchzuführen]**.
@@ -129,6 +129,6 @@ Sie können darüber hinaus auch ganze Angebotskategorien deaktivieren. Gehen Si
 
 >[!NOTE]
 >
->Wenn Sie ein freigegebenes Angebot löschen, wird es automatisch in der Live-Umgebung deaktiviert. Nach Ablauf der Beibehaltungsdauer der Vorschläge werden die deaktivierten Angebote aus der Live-Umgebung gelöscht.
+>Wenn ein Angebot in einer Design-Umgebung gelöscht wird, wird es in der verknüpften Online-Umgebung automatisch deaktiviert. Nach einer Aufbewahrungsfrist für Vorschläge werden die deaktivierten Angebote aus der Online-Umgebung gelöscht.
 
 ![](assets/offer_preview_deactivate.png)

@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: response-manager
 exl-id: 1dc6d03b-698c-4750-9563-0676fcd185df
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
-workflow-type: ht
-source-wordcount: '485'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '487'
+ht-degree: 81%
 
 ---
 
@@ -25,7 +25,7 @@ Das Ergebnis der Hypothesenberechnungen kann auf unterschiedlichen Ebenen der Ad
 
 ### Indikatoren {#indicators}
 
-Nach Berechnung der Hypothese werden mehrere Messindikatoren automatisch aktualisiert. Diese sind im Tab **[!UICONTROL Allgemein]** der Hypothese verfügbar.
+Nach der Berechnung der Hypothese werden mehrere Messindikatoren automatisch aktualisiert. Diese sind auf der Registerkarte **[!UICONTROL Allgemein]** der Hypothese verfügbar.
 
 ![](assets/response_hypothesis_delivery_example_010.png)
 
@@ -71,10 +71,10 @@ Sie können die durch die Hypothesen generierten Empfängerreaktionen im Tab **[
 
 Im **[!UICONTROL Hypothesenbericht]** können Sie die Ergebnisse der Hypothesen zu Kampagnen und Sendungen einsehen. Dieser Bericht enthält die von der Hypothese berechneten Indikatoren (weitere Informationen finden Sie unter [Indikatoren](#indicators)).
 
-* **In der Kampagne**: Klicken Sie auf den Link **[!UICONTROL Berichte]** der betreffenden Kampagne und wählen Sie den **[!UICONTROL Hypothesenbericht]** aus. Dieser Bericht enthält die Liste der Sendungen der Kampagne sowie die für jeden Versand berechneten Hypothesen.
+* **Auf Kampagnenebene**: Klicken Sie auf den Link **[!UICONTROL Berichte]** der entsprechenden Kampagne und wählen Sie den **[!UICONTROL Hypothesenbericht]**. Dieser Bericht enthält die Liste der in Campaign durchgeführten Sendungen sowie die für jeden Versand berechneten Hypothesen.
 
   ![](assets/response_hypothesis_campaign_report_001.png)
 
-* **Im Versand**: Öffnen Sie den betreffenden Versand, klicken Sie auf die Schaltfläche **[!UICONTROL Berichte]** im Tab **[!UICONTROL Zusammenfassung]** und wählen Sie den **[!UICONTROL Hypothesenbericht]** aus. Der Bericht enthält alle für den Versand berechneten Hypothesen.
+* **Auf Versandebene**: Um auf den Bericht zuzugreifen, öffnen Sie den betreffenden Versand, klicken Sie auf der Registerkarte **[!UICONTROL Zusammenfassung]** auf **[!UICONTROL Berichte]** und wählen Sie den **[!UICONTROL Hypothesenbericht]**. Wenn mehrere Hypothesen für denselben Versand berechnet wurden, enthält der Bericht alle Hypothesen.
 
   ![](assets/response_hypothesis_delivery_report_001.png)

@@ -10,8 +10,8 @@ topic-tags: database-maintenance
 exl-id: a586d70b-1b7f-47c2-a821-635098a70e45
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1273'
-ht-degree: 3%
+source-wordcount: '1305'
+ht-degree: 5%
 
 ---
 
@@ -84,7 +84,7 @@ Um Sie beim Einrichten von Wartungsplänen zu unterstützen, werden in diesem Ab
 
 >[!IMPORTANT]
 >
->Adobe empfiehlt dringend, VACUUM FULL nicht auf von Campaign Adobe gehosteten Datenbank-Setups auszuführen. Die empfohlenen Wartungsarbeiten dienen nur als Anleitung für On-Premise-Installationen. Verwenden Sie für benutzerdefinierte Tabellenimplementierungen und Schemata VACUUM FULL auf eigene Gefahr, da VACUUM - ohne Überwachung - ausschließlich Tabellen sperren kann, die zu angehaltenen Abfragen führen, und in einigen Fällen die gesamte Datenbank sperren kann.
+>Adobe empfiehlt dringend, VACUUM FULL nicht auf von Campaign Adobe gehosteten Datenbankeinstellungen auszuführen.Die empfohlenen Wartungsarbeiten sind nur für On-Premise-Installationen. Verwenden Sie für benutzerdefinierte Tabellenimplementierungen und Schemata VACUUM FULL auf eigene Gefahr, da VACUUM - ohne Überwachung - ausschließlich Tabellen sperren kann, die zu angehaltenen Abfragen führen, und in einigen Fällen die gesamte Datenbank sperren kann.
 
 In PostgreSQL können Sie die folgenden typischen Schlüsselwörter verwenden:
 
@@ -472,7 +472,7 @@ Das folgende Beispiel betrifft Microsoft SQL Server 2005. Wenn Sie eine andere V
 
 >[!NOTE]
 >
->Diese Konfiguration ist optional.
+>Hierbei handelt es sich um eine optionale Konfiguration.
 
 Mit der Option **WdbcOptions_TempDbName** können Sie eine separate Datenbank für Tabellen auf Microsoft SQL Server konfigurieren. Dadurch werden Backups und Replikation optimiert.
 

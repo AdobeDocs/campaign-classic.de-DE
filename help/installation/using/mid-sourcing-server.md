@@ -10,8 +10,8 @@ topic-tags: additional-configurations
 exl-id: 3e55d7f5-2858-4390-bba9-8fb5be0c3d98
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1062'
-ht-degree: 3%
+source-wordcount: '1149'
+ht-degree: 6%
 
 ---
 
@@ -141,7 +141,7 @@ Das Attribut &#39;@name&#39; muss die folgenden Regeln einhalten:
 
 „affinity_name“ bezieht sich auf den beliebigen Namen, der der Affinität gegeben wurde. Dieser Name muss eindeutig sein. Zulässige Zeichen sind `[a-z]` `[A-Z]` `[0-9]`. Ziel ist es, eine Gruppe von öffentlichen IP-Adressen zu deklarieren.
 
-„affinity_group“ bezieht sich auf die Unteraffinität, die in dem Zielgruppen-Mapping deklariert wurde, das in jedem der Sendungen verwendet wird. Der letzte Teil, der das &quot;.“ wird ignoriert, wenn keine Unteraffinität vorliegt. Zulässige Zeichen sind `[a-z]` `[A-Z]` `[0-9]`.
+„affinity_group“ bezieht sich auf die Unteraffinität, die in dem Zielgruppen-Mapping deklariert wurde, das in jedem der Sendungen verwendet wird. Der letzte Teil, der &quot;.“ enthält, wird ignoriert, wenn keine Unteraffinität vorliegt. Zulässige Zeichen sind `[a-z]` `[A-Z]` `[0-9]`.
 
 Sie müssen den Server anhalten und dann neu starten, damit die Änderung übernommen wird.
 

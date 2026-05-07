@@ -9,8 +9,8 @@ topic-tags: connectors
 exl-id: ef2b98bd-441e-4e59-bb41-4e835e250663
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '269'
-ht-degree: 27%
+source-wordcount: '274'
+ht-degree: 28%
 
 ---
 
@@ -78,7 +78,7 @@ Mit dem externen Konto [!DNL Amazon Redshift] können Sie Ihre Campaign-Instanz 
 
 1. Konfigurieren Sie das externe Konto **[!UICONTROL Amazon Redshift]**. Sie müssen Folgendes angeben:
 
-   * **[!UICONTROL Type]**: Amazon Redshift
+   * **[!UICONTROL Typ]**: Amazon Redshift
 
    * **[!UICONTROL Server]**: Name des DNS
 

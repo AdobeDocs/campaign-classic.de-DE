@@ -9,7 +9,7 @@ topic-tags: prerequisites-and-recommendations-
 exl-id: e1aff73a-54fb-444e-b183-df11c9b3df31
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '628'
+source-wordcount: '633'
 ht-degree: 24%
 
 ---
@@ -43,12 +43,12 @@ Wenn Sie unterschiedliche Host-Namen verwenden (einen öffentlichen und einen f�
 
 ## Schutz vor ausgehenden Verbindungen
 
-Die Standardliste der URLs, die von JavaScript-Codes (Workflows usw.) aufgerufen werden können, ist begrenzt. Um eine neue URL zuzulassen, muss der Administrator in der Datei „serverConf[xml“ darauf &#x200B;](../../installation/using/the-server-configuration-file.md).
+Die Standardliste der URLs, die von JavaScript-Codes (Workflows usw.) aufgerufen werden können ist begrenzt. Um eine neue URL zuzulassen, muss der Administrator in der Datei „serverConf[xml“ darauf &#x200B;](../../installation/using/the-server-configuration-file.md).
 
 Es gibt drei Modi für den Verbindungsschutz:
 
-* auf die Zulassungsliste setzen **Sperren** : Alle URLs, die nicht zur gehören, werden mit einer Fehlermeldung blockiert. Dies ist der Standardmodus nach einem Postupgrade.
-* auf die Zulassungsliste setzen **Permissive** : Alle URLs, die nicht zur gehören, sind zulässig.
+* **Sperren** : Alle URLs, die nicht zur gehören, werden mit einer Fehlermeldung blockiert. Dies ist der Standardmodus nach einem Postupgrade.
+* **Permissive** : Alle URLs, die nicht zur gehören, sind zulässig.
 * **Warnung** : Alle URLs, die sich nicht auf der Zulassungsliste befinden, sind zulässig, aber der JS-Interpreter gibt eine Warnung aus, damit der Administrator sie erfassen kann. Dieser Modus fügt JST-310027 Warnmeldungen hinzu.
 
 ```

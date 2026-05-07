@@ -6,9 +6,9 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Reporting, Monitoring
 exl-id: e326e32e-7bb0-46ff-9ba5-94ccd1169af2
 source-git-commit: 5e062f9dbdf6c148e442ac10dbb12cf72ba0179b
-workflow-type: ht
-source-wordcount: '1436'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1443'
+ht-degree: 92%
 
 ---
 
@@ -32,7 +32,7 @@ Markieren Sie hierzu die betreffenden Sendungen und wählen Sie per Rechtsklick 
 
 Im ersten Schritt des Assistenten können Sie die zu verwendende deskriptive Analysevorlage auswählen. Standardmäßig bietet Adobe Campaign zwei Vorlagen: **[!UICONTROL Qualitative Verteilung]** und **[!UICONTROL Quantitative Verteilung]**. Lesen Sie diesbezüglich den Abschnitt [Vorlage „Quantitative Verteilung“ konfigurieren](../../reporting/using/using-the-descriptive-analysis-wizard.md#configuring-the-qualitative-distribution-template). Die verschiedenen Renderings werden im Abschnitt [Über die deskriptive Analyse](../../reporting/using/about-descriptive-analysis.md) dargestellt.
 
-Wählen Sie für das Beispiel die Vorlage **[!UICONTROL Qualitative Verteilung]** und eine Anzeige mit Grafik und Tabelle aus. Nennen Sie den Bericht &quot;Meine deskriptive Analyse&quot; und klicken Sie auf die Schaltfläche **[!UICONTROL Weiter]**.
+Wählen Sie für das Beispiel die Vorlage **[!UICONTROL Qualitative Verteilung]** und eine Anzeige mit Grafik und Tabelle aus (Array). Nennen Sie den Bericht &quot;Meine deskriptive Analyse&quot; und klicken Sie auf die Schaltfläche **[!UICONTROL Weiter]**.
 
 ![](assets/reporting_descriptive_quickstart_step_1.png)
 
@@ -40,7 +40,7 @@ Wählen Sie für das Beispiel die Vorlage **[!UICONTROL Qualitative Verteilung]*
 
 Im nächsten Schritt werden die in der Tabelle anzuzeigenden Daten ausgewählt.
 
-Klicken Sie auf den Link **[!UICONTROL Hinzufügen]**, um die Variable auszuwählen, die die anzuzeigenden Daten enthält. In unserem Beispiel sollen die Wohnorte der Versandempfänger in Zeilen angezeigt werden:
+Klicken Sie auf den **[!UICONTROL Hinzufügen…]**, um die Variable auszuwählen, die die anzuzeigenden Daten enthält. Hier möchten wir die Städte unserer Versandempfänger in einer Zeile anzeigen:
 
 ![](assets/reporting_descriptive_quickstart_step_2.png)
 
@@ -181,19 +181,19 @@ Sie können Daten über die Symbolleiste oberhalb der Tabelle speichern, exporti
 
    ![](assets/s_ncs_user_report_wizard_from_transision.png)
 
-1. An dieser Stelle können Sie entweder die Option **[!UICONTROL Existierende Analysen und Berichte erneut verwenden]** auswählen und zuvor erstellte Berichte nutzen (siehe [Existierende Analysen und Berichte erneut verwenden ](../../reporting/using/processing-a-report.md#re-using-existing-reports-and-analyses)) oder eine neue deskriptive Analyse erstellen. Lassen Sie dazu die Option **[!UICONTROL Neue deskriptive Analyse basierend auf einer Vorlage]** standardmäßig aktiviert.
+1. An dieser Stelle können Sie entweder die Option **[!UICONTROL Existierende Analysen und Berichte erneut verwenden]** auswählen und zuvor erstellte Berichte nutzen (siehe [Existierende Analysen und Berichte erneut verwenden &#x200B;](../../reporting/using/processing-a-report.md#re-using-existing-reports-and-analyses)) oder eine neue deskriptive Analyse erstellen. Lassen Sie dazu die Option **[!UICONTROL Neue deskriptive Analyse basierend auf einer Vorlage]** standardmäßig aktiviert.
 
    Die weitere Konfiguration entspricht der der zuvor dargestellten deskriptiven Analysen.
 
 ### Empfehlungen zur Analyse von Zielgruppen {#target-analyze-recommendations}
 
-Die Analyse einer Population in einem Workflow setzt voraus, dass die Population noch in der Transition präsent ist. Wenn der Workflow gestartet wurde, kann es sein, dass die Transition und damit die Population bereinigt wird. Sie haben folgende Möglichkeiten, eine Analyse durchzuführen:
+Die Analyse einer Population in einem Workflow setzt voraus, dass die Population in der Transition noch vorhanden ist. Wenn der Workflow gestartet wird, wird das die Population betreffende Ergebnis möglicherweise aus der Transition gelöscht. Zum Ausführen einer Analyse haben Sie folgende Möglichkeiten:
 
 * die Transition von ihrer Zielaktivität lösen und den Workflow starten, um sie zu aktivieren. Sobald die Transition blinkt, können Sie den Assistenten wie gewohnt starten.
 
   ![](assets/s_ncs_user_report_wizard_018.png)
 
-* in den Eigenschaften des Workflows die Option **[!UICONTROL Zwischen zwei Ausführungen die ermittelte Population festhalten]** aktivieren. Auf diese Weise können Sie auch nach Abschluss des Workflows eine Analyse auf der Transition Ihrer Wahl starten.
+* Ändern Sie die Eigenschaften des Workflows, indem Sie die Option **[!UICONTROL Zwischen zwei Ausführungen die ermittelte Population festhalten]** auswählen. Auf diese Weise können Sie eine Analyse der Transition Ihrer Wahl starten, selbst wenn der Workflow abgeschlossen ist.
 
   ![](assets/s_ncs_user_report_wizard_020.png)
 
@@ -246,7 +246,7 @@ Gehen Sie hierzu wie folgt vor:
 
    ![](assets/reporting_descriptive_sample_tracking_6.png)
 
-1. Fügen Sie eine letzte Statistik hinzu und wählen Sie die Funktion **[!UICONTROL Berechnetes Feld]** aus, um die Reaktionsrate zu messen.
+1. Fügen Sie eine letzte Statistik hinzu und wählen Sie den Operator **[!UICONTROL Berechnetes Feld]** aus, um die Reaktionsrate zu messen.
 
    ![](assets/reporting_descriptive_sample_tracking_7.png)
 
