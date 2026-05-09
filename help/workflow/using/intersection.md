@@ -5,7 +5,7 @@ description: Schnittmenge
 feature: Workflows, Targeting Activity
 hide: true
 exl-id: f426bf02-9899-49eb-b699-728d51b57c64
-source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
+source-git-commit: 036c937224135f7b372010736f2040a8a6c69b4c
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 70%
@@ -63,3 +63,4 @@ Jedes eingehende Ereignis muss eine durch diese Parameter definierte Zielgruppe 
 * recCount
 
 Anhand der drei Werte lässt sich die durch die Schnittmenge ermittelte Zielgruppe identifizieren. **[!UICONTROL tableName]** ist der Name der Tabelle, die die Zielgruppenidentifizierungen enthält, **[!UICONTROL schema]** ist das Schema der Population, (i. d. R. **[!UICONTROL nms:recipient]**) und **[!UICONTROL recCount]** ist die Anzahl an Elementen in der Tabelle.
+
