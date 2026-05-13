@@ -6,9 +6,16 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 0cd6bf20-da72-4cf0-9f5d-d4e8acdd324d
-source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
-workflow-type: ht
-source-wordcount: '2672'
+TQID: https://experienceleague.adobe.com/AmqYU4ywJ6B6sus7q6BAHsG7cPGLZRH4m12hoqw68as
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+subfeature_v2: id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+workflow-type: tm+mt
+source-wordcount: 2672
 ht-degree: 100%
 
 ---
@@ -218,7 +225,7 @@ Weitere Informationen finden Sie auf der Seite [Eingestellte und entfernte Funkt
 * Fehlerkorrektur – Die Erstellung des SAP HANA-FDA-Index wird jetzt zuverlässig ausgeführt. (NEO-29664)
 * Fehlerkorrektur – Transaktionsnachrichten verbleiben jetzt nicht mehr im Status **Ausstehend**, wenn SOAP-Aufrufe mit einem Header ausgeführt werden. (NEO-28737)
 * Fehlerkorrektur – Bei der Verwendung des Teradata FDA-Connectors tritt jetzt kein Fehler mehr auf. Das Problem bestand darin, dass alle temporären Tabellen nur auf einem Knoten des Clusters erstellt wurden, was letztendlich den gesamten Spool-Speicherplatz belegen und zu einem Absturz von Teradata führen konnte. Die temporären Tabellen werden jetzt auf vielen Knoten generiert. (NEO-28230)
-* Es wurde ein Problem behoben, bei dem bei der Verwendung von Web-Anwendungen Trackingtags falsche Primärschlüssel im **nms:trackingURL**-Schema generierten.(NEO-27931)
+* Es wurde ein Problem behoben, bei dem bei der Verwendung von Web-Anwendungen Trackingtags falsche Primärschlüssel im **nms:trackingURL**-Schema generierten. (NEO-27931)
 * Die Kompatibilität mit ODBC 3.x wurde verbessert, um die Richtigkeit von Fehlermeldungen sicherzustellen.
 * Fehlerkorrektur – Jetzt stürzt die Konsole nicht mehr ab, wenn benutzerdefinierte Inhaltsvorlagen in E-Mail-Sendungen verwendet werden. (NEO-31547)
 * Fehlerkorrektur – Tomcat sendet jetzt auch bei langsamen Verbindungen oder einer großen Antwortgröße gültige Antworten. (NEO-30858)

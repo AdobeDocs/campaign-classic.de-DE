@@ -4,9 +4,14 @@ title: Best Practices für Datenmodelle
 description: Erfahren Sie, wie Sie mit dem Campaign Classic-Datenmodell arbeiten
 feature: Data Model
 exl-id: 9c59b89c-3542-4a17-a46f-3a1e58de0748
-source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
+TQID: https://experienceleague.adobe.com/O5LgBFV-0Mw3nzVyD2mxCCPxjZ07Ss9sS4K5MrdYdns
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a658c786-869b-4194-a780-2594d663addaid: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+subfeature_v2: id: a1681cd8-6b2e-4955-9113-33b5f7a22b8cid: af6750fd-3c1b-4ad2-9fe3-99e81510998did: bec93d13-829e-414d-9c2b-71b3974944a0id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d095671a-1355-40aa-8b5f-06c33c68080bid: df401a2a-327d-468c-a5e4-b7b7ccd071a0id: e0eb8757-182f-49f3-94a4-1587d16f5094id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: eddd9b14-83bd-4ff4-9072-54a4a484abb7id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '4095'
+source-wordcount: 4095
 ht-degree: 54%
 
 ---
@@ -17,7 +22,7 @@ In diesem Dokument werden die wichtigsten Empfehlungen beim Entwerfen Ihres Adob
 
 Genauere Informationen zu den integrierten Campaign-Tabellen und ihrer Interaktion finden Sie in [diesem Abschnitt](../../configuration/using/about-data-model.md).
 
-Lesen Sie [diese Dokumentation](../../configuration/using/about-schema-reference.md) um mit Campaign-Schemata zu beginnen. Erfahren Sie in diesem Dokument, wie Sie Erweiterungsschemata konfigurieren können, um das konzeptionelle Datenmodell der Adobe Campaign[Datenbank zu &#x200B;](../../configuration/using/about-schema-edition.md).
+Lesen Sie [diese Dokumentation](../../configuration/using/about-schema-reference.md) um mit Campaign-Schemata zu beginnen. Erfahren Sie in diesem Dokument, wie Sie Erweiterungsschemata konfigurieren können, um das konzeptionelle Datenmodell der Adobe Campaign[Datenbank zu ](../../configuration/using/about-schema-edition.md).
 
 ## Überblick {#overview}
 
@@ -39,7 +44,7 @@ Dieser kundenorientierte Ansatz wird in der Grafik unten dargestellt. Die **Empf
 
 Um Beschreibungen der einzelnen Tabellen aufzurufen, navigieren Sie zu **[!UICONTROL &quot;Admin&quot; > &quot;Konfiguration&quot; > &quot;Datenschemata&quot;]**, wählen Sie eine Ressource aus der Liste und klicken Sie auf die Registerkarte **[!UICONTROL Dokumentation]**.
 
-Das standardmäßige Adobe Campaign-Datenmodell wird in [diesem Dokument) &#x200B;](../../configuration/using/data-model-description.md).
+Das standardmäßige Adobe Campaign-Datenmodell wird in [diesem Dokument) ](../../configuration/using/data-model-description.md).
 
 >[!NOTE]
 >
@@ -146,7 +151,7 @@ Wenn in Adobe Campaign eine benutzerdefinierte Tabelle mit einem Primärschlüss
 
 Standardmäßig hat eine benutzerdefinierte Sequenz Werte zwischen +1.000 und +2,1BB. Technisch ist es möglich, eine vollständige Bandbreite von 4BB zu erhalten, indem negative IDs aktiviert werden. Dies sollte mit Vorsicht verwendet werden und eine ID geht verloren, wenn von negativen zu positiven Zahlen gewechselt wird: Der Datensatz 0 wird von Adobe Campaign in generierten SQL-Abfragen normalerweise ignoriert.
 
-Weitere Informationen zur Erschöpfung von Sequenzen finden Sie [diesem Video](https://helpx.adobe.com/de/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html).
+Weitere Informationen zur Erschöpfung von Sequenzen finden Sie [diesem Video](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html).
 
 ## Indizes {#indexes}
 

@@ -5,9 +5,13 @@ description: Adobe Campaign – Sicherheits-Update der Apache-Version
 feature: Technote, Upgrade
 hide: true
 exl-id: 3d2f5d1d-4b31-4cc6-b6fb-13589856e00c
-source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
+TQID: https://experienceleague.adobe.com/iTszfeybA8gTvgRCpTAXNEKQIbTeGHUDx-1plG77NUo
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616a
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: 549
 ht-degree: 93%
 
 ---
@@ -25,7 +29,7 @@ Das Adobe Campaign-Team wird bis zum **15. Juni 2022** ein Sicherheits-Upgrade d
 
 Dieses Upgrade wird voraussichtlich außerhalb Ihrer normalen Geschäftszeiten automatisch ausgeführt, damit Sie den Campaign-Service ohne Unterbrechung weiter verwenden können.
 
-Zuerst werden Ihre Nicht-Produktionsinstanzen von Adobe aktualisiert, danach werden Ihre Produktionsinstanzen aktualisiert. Da es sich um einen automatischen Aktualisierungsprozess durch Adobe handelt, ist von Ihrer Seite aus keine Aktion erforderlich. Sollten dennoch Probleme auftreten, wenden Sie sich bitte an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/de?support-solution=Campaign&lang=de#support).
+Zuerst werden Ihre Nicht-Produktionsinstanzen von Adobe aktualisiert, danach werden Ihre Produktionsinstanzen aktualisiert. Da es sich um einen automatischen Aktualisierungsprozess durch Adobe handelt, ist von Ihrer Seite aus keine Aktion erforderlich. Sollten dennoch Probleme auftreten, wenden Sie sich bitte an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign&lang=de#support).
 
 
 >[!NOTE]
@@ -56,7 +60,7 @@ Zuerst werden Ihre Nicht-Produktionsinstanzen von Adobe aktualisiert, danach wer
 
 * **Welche Validierungen müssen von den Kunden ausgeführt werden?**
 
-  Für dieses Sicherheits-Update sind keine spezifischen Tests erforderlich. Falls ein Problem festgestellt wird, wenden Sie sich bitte an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/de?support-solution=Campaign#support).
+  Für dieses Sicherheits-Update sind keine spezifischen Tests erforderlich. Falls ein Problem festgestellt wird, wenden Sie sich bitte an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign&lang=de#support).
 
 
 * **Kann ich eine Änderung des geplanten Zeitfensters für das Sicherheits-Update anfordern?**
@@ -64,4 +68,4 @@ Zuerst werden Ihre Nicht-Produktionsinstanzen von Adobe aktualisiert, danach wer
   Da es sich um die Behebung einer Schwachstelle handelt, empfehlen wir dringend, sich an den vorgegebenen Zeitplan zu halten.
 
 
-Für alle anderen Fragen wenden Sie sich bitte an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/de?support-solution=Campaign#support).
+Für alle anderen Fragen wenden Sie sich bitte an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign#support).

@@ -8,9 +8,12 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: fe69efda-a052-4f67-9c13-665f011d0a2b
-source-git-commit: 8b38d825aa9b0595226a444e0e463362468d51b3
+TQID: https://experienceleague.adobe.com/THf7A2u5ktNphqdI8K8ePzLNqCdyCmcqWN0OpYJfVh0
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: 805
 ht-degree: 21%
 
 ---
@@ -19,7 +22,7 @@ ht-degree: 21%
 
 Zunächst sollten Sie überprüfen, ob der neueste Build installiert ist. Dadurch wird sichergestellt, dass Sie über die neuesten Funktionen und Fehlerbehebungen verfügen.
 
-Weitere Informationen zum Inhalt [&#x200B; einzelnen Versionen finden &#x200B;](../../rn/using/latest-release.md) in den Versionshinweisen .
+Weitere Informationen zum Inhalt [ einzelnen Versionen finden ](../../rn/using/latest-release.md) in den Versionshinweisen .
 
 ## Hardware und Infrastruktur {#hardware-and-infrastructure}
 
@@ -71,7 +74,7 @@ Im Folgenden finden Sie eine Liste von Best Practices und Artikeln zur Zustellba
   >Die Beauftragung des Zustellbarkeits-Teams ist vertraglich geregelt. Kundinnen und Kunden sollten sich an den Adobe-Support wenden, um diesbezügliche Informationen zu erhalten.
 
 * Einrichtung der IP-Affinität: Eine falsche Einrichtung der IP-Affinität kann die E-Mails ganz stoppen (falscher Benutzer-/Affinitätsname in der Konfiguration) oder den Durchsatz reduzieren (geringe Anzahl von IPs in der Affinität). Mehr dazu erfahren Sie auf [dieser Seite](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use).
-* E-Mail-Größe: Die E-Mail-Größe spielt eine wichtige Rolle im Durchsatz. Die empfohlene maximale E-Mail-Größe beträgt 60 KB. Mehr dazu erfahren Sie auf [dieser Seite](https://helpx.adobe.com/de/legal/product-descriptions/campaign.html). Überprüfen Sie im [Versanddurchsatz](../../reporting/using/global-reports.md#delivery-throughput) die Anzahl der pro Stunde übertragenen Bytes.
+* E-Mail-Größe: Die E-Mail-Größe spielt eine wichtige Rolle im Durchsatz. Die empfohlene maximale E-Mail-Größe beträgt 60 KB. Mehr dazu erfahren Sie auf [dieser Seite](https://helpx.adobe.com/legal/product-descriptions/campaign.html). Überprüfen Sie im [Versanddurchsatz](../../reporting/using/global-reports.md#delivery-throughput) die Anzahl der pro Stunde übertragenen Bytes.
 * Große Anzahl ungültiger Empfänger: Wenn eine große Anzahl ungültiger Empfänger vorhanden ist, kann dies den Durchsatz beeinträchtigen. Der MTA versucht weiterhin, E-Mails an ungültige Empfänger zu senden. Stellen Sie sicher, dass Ihre Datenbank gut gepflegt ist.
 * Umfang der Personalisierung: Wenn ein Versand in &quot;Personalization in Bearbeitung“ bleibt, überprüfen Sie die in Personalisierungsblöcken verwendete JavaScript.
 

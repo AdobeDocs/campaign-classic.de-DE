@@ -7,9 +7,14 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 89356b5a-d99c-43d1-892b-5a1d003e76cc
-source-git-commit: c1796e5f827b79f72a07eb07886d345d3b897f86
+TQID: https://experienceleague.adobe.com/FL-v5m07U-OzscVIiQONAa-RMu323ZpTuBrL29ukMc4
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: d5ef99fa-df0c-4153-bf94-105ad0724167
+subfeature_v2: id: eb007b6d-6e57-46ab-9485-3f24d6102304
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '1522'
+source-wordcount: 1522
 ht-degree: 80%
 
 ---
@@ -20,7 +25,7 @@ ht-degree: 80%
 >
 >In diesen häufig gestellten Fragen werden spezifische Fragen zur Architektur von Adobe Campaign Classic v7, zu Bereitstellungsmodellen und zu v7-spezifischen Funktionen behandelt.
 >
->**Umfassende Antworten auf häufig gestellte Fragen zu Campaign** (Workflows, Sendungen, Zielgruppen, Berichte, Personalisierung usw.) finden Sie in der [**ausführlichen Sammlung häufig gestellter Fragen zu Campaign v8**](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/new/campaign-faq-comprehensive){target="_blank"}, die detaillierte Antworten nach Thema gruppiert enthalten.
+>**Umfassende Antworten auf häufig gestellte Fragen zu Campaign** (Workflows, Sendungen, Zielgruppen, Berichte, Personalisierung usw.) finden Sie in der [**ausführlichen Sammlung häufig gestellter Fragen zu Campaign v8**](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-faq-comprehensive){target="_blank"}, die detaillierte Antworten nach Thema gruppiert enthalten.
 
 ## Architektur und Bereitstellung von Campaign Classic v7 {#v7-architecture}
 
@@ -69,7 +74,7 @@ Die Migration zu Adobe Managed Services bietet mehr Skalierbarkeit und Sicherhei
 
 **Erste Schritte:** Wenden Sie sich an Ihre Adobe-Support-Fachkraft, die Ihre Umgebung bewertet und einen detaillierten Migrationsplan mit Adobe Professional Services erstellt.
 
-Erfahren Sie mehr zur [Migration zu Managed Services](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic-blogs/migrate-your-adobe-campaign-v7-onprem-hybrid-environment-to/ba-p/681605?profile.language=de){target="_blank"}.
+Erfahren Sie mehr zur [Migration zu Managed Services](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic-blogs/migrate-your-adobe-campaign-v7-onprem-hybrid-environment-to/ba-p/681605){target="_blank"}.
 
 +++
 
@@ -253,7 +258,7 @@ In der [**ausführlichen Sammlung häufig gestellter Fragen zu Campaign v8**](ht
 
 **Community und Support:**
 
-* [Campaign-Community-Foren](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=de){target="_blank"}
+* [Campaign-Community-Foren](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){target="_blank"}
 * [Adobe-Support](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}
 
 +++

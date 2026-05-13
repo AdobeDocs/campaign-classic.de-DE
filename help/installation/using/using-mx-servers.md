@@ -8,9 +8,11 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 47f50bf5-4d5b-4c07-af71-de4390177cf5
-source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+TQID: https://experienceleague.adobe.com/iXiiqwE6-FqHpRFes1bzJ5mLc3-z-HQBUR7ASL5A1G8
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '864'
+source-wordcount: 864
 ht-degree: 5%
 
 ---
@@ -90,4 +92,4 @@ Der Modus Benutzerdefiniert ist für fortgeschrittene Clients gedacht, die ihre 
 * [MX-Konfiguration](../../installation/using/email-deliverability.md#mx-configuration)
 * [Technische E-Mail-Konfiguration](../../installation/using/email-deliverability.md)
 * [Ursachen für das Fehlschlagen von Sendungen](../../delivery/using/delivery-failures-quarantine.md)
-* [Campaign Classic - Technische Empfehlungen](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=de)
+* [Campaign Classic - Technische Empfehlungen](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html)

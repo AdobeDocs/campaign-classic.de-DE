@@ -7,9 +7,12 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: e1aff73a-54fb-444e-b183-df11c9b3df31
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+TQID: https://experienceleague.adobe.com/geVW1WFvlnZJmiLeaI01ww-TsQvEN3-zpr57jmz2Miw
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080bid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '633'
+source-wordcount: 633
 ht-degree: 24%
 
 ---
@@ -33,7 +36,7 @@ Adobe Campaign schränkt die Dateigröße nicht ein. Sie können dies jedoch tun
 
 ## Relais
 
-Weitere Informationen finden [&#x200B; auf &#x200B;](../../installation/using/configuring-campaign-server.md#dynamic-page-security-and-relays) Seite.
+Weitere Informationen finden [ auf ](../../installation/using/configuring-campaign-server.md#dynamic-page-security-and-relays) Seite.
 
 Standardmäßig werden alle dynamischen Seiten automatisch an den lokalen Tomcat-Server des Computers weitergeleitet, dessen Web-Modul gestartet wird. Sie können sich dafür entscheiden, einige nicht weiterzuleiten. Wenn Sie einige Adobe Campaign-Module (z. B. WebApp, Interaction, einige JSP) nicht verwenden, können Sie diese aus den Relay-Regeln entfernen.
 
@@ -43,7 +46,7 @@ Wenn Sie unterschiedliche Host-Namen verwenden (einen öffentlichen und einen f�
 
 ## Schutz vor ausgehenden Verbindungen
 
-Die Standardliste der URLs, die von JavaScript-Codes (Workflows usw.) aufgerufen werden können ist begrenzt. Um eine neue URL zuzulassen, muss der Administrator in der Datei „serverConf[xml“ darauf &#x200B;](../../installation/using/the-server-configuration-file.md).
+Die Standardliste der URLs, die von JavaScript-Codes (Workflows usw.) aufgerufen werden können ist begrenzt. Um eine neue URL zuzulassen, muss der Administrator in der Datei „serverConf[xml“ darauf ](../../installation/using/the-server-configuration-file.md).
 
 Es gibt drei Modi für den Verbindungsschutz:
 
@@ -65,7 +68,7 @@ Bestehende Kunden, die von einer Migration kommen, können den Warnmodus eine We
 
 ## Einschränkung der Befehle (serverseitig)
 
-Mehrere Befehle sind in der -Blockierungsliste enthalten und können nicht mit der execCommand-Funktion ausgeführt werden. Ein spezieller Unix-Benutzer bietet zusätzliche Sicherheit, um externe Befehle auszuführen. Bei gehosteten Installationen wird diese Einschränkung automatisch angewendet. Bei On-Premise-Installationen können Sie diese Einschränkung manuell einrichten, indem Sie den Anweisungen auf [&#x200B; Seite &#x200B;](../../installation/using/configuring-campaign-server.md#restricting-authorized-external-commands). Darüber hinaus sind **[!UICONTROL Script]**- und **[!UICONTROL Externe Aufgabe]**-Workflow-Aktivitäten nicht verfügbar (neu installierte Instanzen).
+Mehrere Befehle sind in der -Blockierungsliste enthalten und können nicht mit der execCommand-Funktion ausgeführt werden. Ein spezieller Unix-Benutzer bietet zusätzliche Sicherheit, um externe Befehle auszuführen. Bei gehosteten Installationen wird diese Einschränkung automatisch angewendet. Bei On-Premise-Installationen können Sie diese Einschränkung manuell einrichten, indem Sie den Anweisungen auf [ Seite ](../../installation/using/configuring-campaign-server.md#restricting-authorized-external-commands). Darüber hinaus sind **[!UICONTROL Script]**- und **[!UICONTROL Externe Aufgabe]**-Workflow-Aktivitäten nicht verfügbar (neu installierte Instanzen).
 
 ## Sonstige Konfigurationen
 

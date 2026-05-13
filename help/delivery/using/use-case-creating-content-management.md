@@ -5,9 +5,14 @@ description: 'Anwendungsfall: Erstellen des Content-Managements'
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Delivery Templates
 exl-id: b0d1cf0e-656e-4d24-9a31-16fef4cd40d0
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+TQID: https://experienceleague.adobe.com/8N-zb5Qx4LHl9iDh0fdAQfzVmA7Lsc5gIwT8tuu0Dfc
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+subfeature_v2: id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '1235'
+source-wordcount: 1235
 ht-degree: 84%
 
 ---
@@ -83,7 +88,7 @@ Gehen Sie wie folgt vor, um ein Datenschema zu erstellen:
 
    ![](assets/s_ncs_content_param_schema_step2.png)
 
-   Weitere Informationen hierzu finden Sie im Abschnitt [Schemabearbeitung &#x200B;](data-schemas.md#editing-schemas).
+   Weitere Informationen hierzu finden Sie im Abschnitt [Schemabearbeitung ](data-schemas.md#editing-schemas).
 
    Für jedes im Inhalt bezeichnete Element muss der entsprechende Datentyp eingefügt werden.
 
@@ -360,7 +365,7 @@ Gehen Sie wie folgt vor:
 
 1. Erstellen Sie im Knoten **[!UICONTROL Administration > Konfiguration > Veröffentlichungsvorlagen]** eine neue Vorlage.
 1. Geben Sie Namen und Titel an und wählen Sie das jeweils zu verwendende Schema und Formular aus.
-1. Geben Sie dann den Namen der Vorlage ein und wählen Sie den gewünschten Rendermodus aus. Im vorliegenden Beispiel handelt es sich gemäß der zuvor erstellten Vorlage um JavaScript.**&#x200B;**
+1. Geben Sie dann den Namen der Vorlage ein und wählen Sie den gewünschten Rendermodus aus. Im vorliegenden Beispiel handelt es sich gemäß der zuvor erstellten Vorlage um JavaScript.****
 
    ![](assets/s_ncs_content_param_form_publish.png)
 

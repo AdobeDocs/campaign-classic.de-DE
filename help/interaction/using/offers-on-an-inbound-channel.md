@@ -8,9 +8,12 @@ audience: interaction
 content-type: reference
 topic-tags: case-study
 exl-id: 90afced3-465d-4370-8a33-51a7e4356135
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+TQID: https://experienceleague.adobe.com/HkXtRV9hn2hZSZyxx86o2muGafhdhWuLp-uYBe4xTaU
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '2168'
+source-wordcount: 2168
 ht-degree: 87%
 
 ---
@@ -87,7 +90,7 @@ Das Ergebnis ist eine Navigationsstruktur, welche Ihre neue Umgebung enthält:
 ### Erstellung einer Angebotskategorie und eines Themas {#creating-an-offer-category-and-a-theme}
 
 1. Markieren Sie in der zuvor erstellten Umgebung den Knoten **[!UICONTROL Angebotskatalog]**.
-1. Klicken Sie mit der rechten Maustaste und wählen Sie im Kontextmenü die Option **[!UICONTROL Angebotskategorie-Ordner hinzufügen]**&#x200B;**[!UICONTROL aus]**.
+1. Klicken Sie mit der rechten Maustaste und wählen Sie im Kontextmenü die Option **[!UICONTROL Angebotskategorie-Ordner hinzufügen]****[!UICONTROL aus]**.
 
    Nennen Sie die neue Kategorie, beispielsweise **Finanzprodukte**.
 
@@ -116,7 +119,7 @@ Das Ergebnis ist eine Navigationsstruktur, welche Ihre neue Umgebung enthält:
 
    ![](assets/offer_inbound_anonymous_example_016.png)
 
-1. Konfigurieren Sie nun den Angebotsinhalt im entsprechenden Tab.**&#x200B;**
+1. Konfigurieren Sie nun den Angebotsinhalt im entsprechenden Tab.****
 
    >[!NOTE]
    >
@@ -253,7 +256,7 @@ Erstellen Sie nun jeweils zwei Angebote in jeder der zuvor erstellten Kategorien
 
    ![](assets/offer_inbound_fallback_example_030.png)
 
-1. Konfigurieren Sie nun den Angebotsinhalt im entsprechenden Tab.**&#x200B;**
+1. Konfigurieren Sie nun den Angebotsinhalt im entsprechenden Tab.****
 
    ![](assets/offer_inbound_fallback_example_032.png)
 
@@ -262,7 +265,7 @@ Erstellen Sie nun jeweils zwei Angebote in jeder der zuvor erstellten Kategorien
    ![](assets/offer_inbound_fallback_example_031.png)
 
 1. Markieren Sie die Kategorie **Partner** und erstellen Sie das erste anonyme Angebot der Kategorie.
-1. Konfigurieren Sie nun den Angebotsinhalt im entsprechenden Tab.**&#x200B;**
+1. Konfigurieren Sie nun den Angebotsinhalt im entsprechenden Tab.****
 
    ![](assets/offer_inbound_fallback_example_033.png)
 
@@ -342,7 +345,7 @@ Erstellen Sie nun in jeder Kategorie zwei Angebote, d. h. vier Angebote insgesam
 
    ![](assets/offer_inbound_fallback_example_012.png)
 
-1. Konfigurieren Sie nun den Angebotsinhalt im entsprechenden Tab.**&#x200B;**
+1. Konfigurieren Sie nun den Angebotsinhalt im entsprechenden Tab.****
 
    ![](assets/offer_inbound_fallback_example_013.png)
 

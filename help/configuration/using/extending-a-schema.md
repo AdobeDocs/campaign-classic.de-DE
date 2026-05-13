@@ -5,9 +5,14 @@ description: Erfahren Sie, wie Sie ein Schema erweitern
 role: Developer
 feature: Schema Extension
 exl-id: 6e3e666d-6ab3-4346-93ca-fb0155a4660d
-source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
+TQID: https://experienceleague.adobe.com/w-Pe9dOgxIRB0KnOggStMDqzaNkCFGsh-5sOISc-t2E
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+subfeature_v2: id: a72a22e0-8c8d-4019-ba42-3f2644aa91a3id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: 304
 ht-degree: 12%
 
 ---
@@ -18,7 +23,7 @@ ht-degree: 12%
 >
 >Einige integrierte Schemata dürfen nicht erweitert werden, insbesondere diejenigen, für die die folgenden Einstellungen definiert sind:\
 >**dataSource=„file“** und **mappingType=„xmlFile“**.\
->Folgende Schemata dürfen nicht erweitert werden: **xtk:entityBackupNew**, **xtk:entityBackupOriginal**, **xtk:entityOriginal**, **xtk:form**, **xtk:srcSchema**, **ncm:publishing**, **nms**, **nms:remoteTracking**, **nms:monitoring**,xtk :calendar&#x200B;**,:userAgentRules** xtk **: jst:builder**, xtk **:connections** xtk **,:dbInit** xtk **,:funcList** xtk **,:fusion** xtk **,** xtk **,:navtree** xtkTk **, xtkTk:queryDef** **:resourceMenu** **:schema** **:scriptContext** **:session** **:sqlSchema** **:strings**.
+>Folgende Schemata dürfen nicht erweitert werden: **xtk:entityBackupNew**, **xtk:entityBackupOriginal**, **xtk:entityOriginal**, **xtk:form**, **xtk:srcSchema**, **ncm:publishing**, **nms**, **nms:remoteTracking**, **nms:monitoring**,xtk :calendar**,:userAgentRules** xtk **: jst:builder**, xtk **:connections** xtk **,:dbInit** xtk **,:funcList** xtk **,:fusion** xtk **,** xtk **,:navtree** xtkTk **, xtkTk:queryDef** **:resourceMenu** **:schema** **:scriptContext** **:session** **:sqlSchema** **:strings**.
 >Diese Liste ist nicht vollständig.
 
 Es gibt zwei Methoden zum Erweitern eines vorhandenen Schemas:

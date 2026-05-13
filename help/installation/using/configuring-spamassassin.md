@@ -8,9 +8,12 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 1f1004e2-dcd2-4ec5-98ec-720c205646d5
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+TQID: https://experienceleague.adobe.com/vdeIEtt5-uhrKN-DcrRJQRmKV2zGin7BuXkPia4b25g
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '1029'
+source-wordcount: 1029
 ht-degree: 4%
 
 ---
@@ -50,7 +53,7 @@ Gehen Sie wie folgt vor, um SpamAssassin unter Windows zu installieren und zu ko
 
 ### Installieren von SpamAssassin {#installing-spamassassin}
 
-1. Stellen Sie mithilfe Ihrer Benutzeranmeldeinformationen eine Verbindung [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html)Portal) her. Weitere Informationen zur Software-Verteilung finden [&#x200B; auf dieser Seite &#x200B;](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de).
+1. Stellen Sie mithilfe Ihrer Benutzeranmeldeinformationen eine Verbindung [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html)Portal) her. Weitere Informationen zur Software-Verteilung finden [ auf dieser Seite ](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de).
 1. Laden Sie die Datei **Neolane Spam Assassin (Windows-Installation) (2.0)** (neolane_spamassassin.2.0.zip) herunter.
 1. Kopieren Sie diese Datei auf den Adobe Campaign-Server und entpacken Sie sie dann.
 
@@ -74,7 +77,7 @@ Gehen Sie wie folgt vor, um SpamAssassin unter Windows zu installieren und zu ko
 
 1. Um zu überprüfen, ob die SpamAssassin-Installation erfolgreich war, verwenden Sie den GTUBE-Test (Generic Test for Unsolicited Bulk Email) mit dem folgenden Verfahren:
 
-   1. C:\TestSpamMail.txt Erstellen Sie eine Textdatei und speichern Sie sie unter **&#x200B;**.
+   1. C:\TestSpamMail.txt Erstellen Sie eine Textdatei und speichern Sie sie unter ****.
    1. Fügen Sie den folgenden Inhalt in die Datei ein:
 
       ```
@@ -171,7 +174,7 @@ cpan Mail::SpamAssassin
 
 ### Filterregeln aktualisieren {#updating-filter-rules}
 
-Filterregeln können automatisch mit dem Tool **sa-update** aktualisiert werden. Weitere Informationen finden Sie auf der offiziellen SpamAssassin[&#128279;](https://spamassassin.apache.org/)Website https://spamassassin.apache.org/.
+Filterregeln können automatisch mit dem Tool **sa-update** aktualisiert werden. Weitere Informationen finden Sie auf der offiziellen SpamAssassin](https://spamassassin.apache.org/)Website [https://spamassassin.apache.org/.
 
 In Debian werden Aktualisierungen automatisch jeden Tag durchgeführt.
 

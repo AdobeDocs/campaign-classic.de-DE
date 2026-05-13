@@ -7,9 +7,11 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 194366ab-fd9f-4431-9163-ae16c1f96db2
-source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
+TQID: https://experienceleague.adobe.com/AgGQgham1xWf9U5mAAc-Eul-izsp-tW6aNNPMobLvT4
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '1096'
+source-wordcount: 1096
 ht-degree: 4%
 
 ---
@@ -222,13 +224,13 @@ Gehen Sie wie folgt vor:
 
    Führen Sie die Schritte im Assistenten aus und erstellen Sie die mit der Verbindungsinstanz verknüpfte Datenbank.
 
-   Weitere Informationen hierzu finden Sie unter [&#x200B; und Konfiguration der Datenbank](../../installation/using/creating-and-configuring-the-database.md).
+   Weitere Informationen hierzu finden Sie unter [ und Konfiguration der Datenbank](../../installation/using/creating-and-configuring-the-database.md).
 
    Melden Sie sich nach der Erstellung der Datenbank ab.
 
 1. Melden Sie sich über die Option **admin** ohne Kennwort wieder bei der Client-Konsole an und starten Sie den Bereitstellungsassistenten (Menü **[!UICONTROL Tools > Erweitert]**), um die Konfiguration der Instanz abzuschließen.
 
-   Weitere Informationen hierzu finden Sie unter &quot;[&#x200B; einer Instanz](../../installation/using/deploying-an-instance.md).
+   Weitere Informationen hierzu finden Sie unter &quot;[ einer Instanz](../../installation/using/deploying-an-instance.md).
 
    Die wichtigsten festzulegenden Parameter sind:
 

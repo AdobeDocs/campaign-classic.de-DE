@@ -5,9 +5,12 @@ description: Erfahren Sie mehr über die Workflow-Aktivität "Aufspaltung".
 feature: Workflows, Targeting Activity
 hide: true
 exl-id: 4204350a-c2d2-4033-9bdf-87b49d8211b9
-source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
+TQID: https://experienceleague.adobe.com/mddmI88wgsUP0rd5vhnJYn83gXqwTLPkQRPmvuOX3GY
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '2172'
+source-wordcount: 2172
 ht-degree: 76%
 
 ---
@@ -37,7 +40,7 @@ Gehen Sie wie folgt vor:
 
    Wählen Sie nun den Filtertyp aus.
 
-   Die Vorgehensweise ist mit der der Abfrageaktivität identisch.**&#x200B;**
+   Die Vorgehensweise ist mit der der Abfrageaktivität identisch.****
 
    >[!NOTE]
    >
@@ -49,7 +52,7 @@ Gehen Sie wie folgt vor:
 
    ![](assets/s_user_segmentation_partage4.png)
 
-1. **&#x200B;**&#x200B;Durch Klick auf die Schaltfläche **[!UICONTROL Hinzufügen]** können Sie weitere Teilmengen definieren.
+1. **** Durch Klick auf die Schaltfläche **[!UICONTROL Hinzufügen]** können Sie weitere Teilmengen definieren.
 
    ![](assets/s_user_segmentation_partage_add.png)
 

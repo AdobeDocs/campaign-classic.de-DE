@@ -5,9 +5,12 @@ description: Anwendungsfälle für das Analyse-Reporting
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Reporting, Monitoring
 exl-id: e326e32e-7bb0-46ff-9ba5-94ccd1169af2
-source-git-commit: 5e062f9dbdf6c148e442ac10dbb12cf72ba0179b
+TQID: https://experienceleague.adobe.com/oSrEh9-C6tDQ59-reQaLJf0BiCLgJX-G0P4ga5M5ElI
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '1443'
+source-wordcount: 1443
 ht-degree: 92%
 
 ---
@@ -181,7 +184,7 @@ Sie können Daten über die Symbolleiste oberhalb der Tabelle speichern, exporti
 
    ![](assets/s_ncs_user_report_wizard_from_transision.png)
 
-1. An dieser Stelle können Sie entweder die Option **[!UICONTROL Existierende Analysen und Berichte erneut verwenden]** auswählen und zuvor erstellte Berichte nutzen (siehe [Existierende Analysen und Berichte erneut verwenden &#x200B;](../../reporting/using/processing-a-report.md#re-using-existing-reports-and-analyses)) oder eine neue deskriptive Analyse erstellen. Lassen Sie dazu die Option **[!UICONTROL Neue deskriptive Analyse basierend auf einer Vorlage]** standardmäßig aktiviert.
+1. An dieser Stelle können Sie entweder die Option **[!UICONTROL Existierende Analysen und Berichte erneut verwenden]** auswählen und zuvor erstellte Berichte nutzen (siehe [Existierende Analysen und Berichte erneut verwenden ](../../reporting/using/processing-a-report.md#re-using-existing-reports-and-analyses)) oder eine neue deskriptive Analyse erstellen. Lassen Sie dazu die Option **[!UICONTROL Neue deskriptive Analyse basierend auf einer Vorlage]** standardmäßig aktiviert.
 
    Die weitere Konfiguration entspricht der der zuvor dargestellten deskriptiven Analysen.
 

@@ -7,9 +7,16 @@ role: User
 level: Beginner
 hide: true
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
-source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
-workflow-type: ht
-source-wordcount: '2018'
+TQID: https://experienceleague.adobe.com/AItPQMVIh2I-clE0UymqzG13gYHFKd0z2LW-gk9rJik
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a4671286-a59f-47e3-b97b-90627a1977d5id: a7760dfc-5c44-4d77-bb68-c50b1e265c93
+subfeature_v2: id: ac9c0a9c-8a76-4419-bd64-9c34c5782666id: fb2a841f-c522-491f-9901-a1b939d252df
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+workflow-type: tm+mt
+source-wordcount: 2018
 ht-degree: 100%
 
 ---
@@ -208,7 +215,7 @@ _Dienstag, 13. August 2019_
 Der erste Build 19.1.4 enthält die folgenden Fehlerkorrekturen:
 
 * Fehlerkorrektur – In der Planungsaktivität werden jetzt bei der Konfiguration des Assistenten keine unbeabsichtigten Fehlernachrichten mehr erzeugt. Update NEO-11662 wurde rückgängig gemacht. (NEO-17097)
-* Es wurde eine durch NEO-12727 verursachte Regression behoben, bei der Workflows angehalten wurden, wenn eine Testaktivität zweimal ausgeführt wurde.(NEO-16835)
+* Es wurde eine durch NEO-12727 verursachte Regression behoben, bei der Workflows angehalten wurden, wenn eine Testaktivität zweimal ausgeführt wurde. (NEO-16835)
 * Es wurde ein Problem behoben, bei dem ein fehlerhafter HTTP-Code zurückgegeben wurde („HTTP 200 OK“ statt „HTTP 403 Verboten“), wenn ein ungültiges oder abgelaufenes Sitzungs-Token in API-Aufrufen verwendet wurde. (NEO-16826)
 * Es wurde ein Problem behoben, bei dem der DKIM-Schlüssel nicht mehr in E-Mails eingebettet war, was zu Zustellbarkeitsproblemen führte. (NEO-16804)
 * Es wurden mehrere Probleme mit der Workflow-Planung behoben. Es war eine einmalige Workflow-Ausführung pro Tag geplant, wobei die Planungskonfiguration nicht berücksichtigt wurde. (NEO-16619, NEO-16426)

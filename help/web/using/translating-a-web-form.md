@@ -5,9 +5,13 @@ description: Übersetzen eines Web-Formulars
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 feature: Web Forms
 exl-id: 72959141-ca18-4512-80c7-239efd31f711
-source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
+TQID: https://experienceleague.adobe.com/3oyhvCWX30kK7dtytjLYvO5Xnbu2-I7FGeJPcjcreho
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '1689'
+source-wordcount: 1689
 ht-degree: 78%
 
 ---
@@ -76,7 +80,7 @@ Standardmäßig wird jede Übersetzungssprache der Web-Anwendung angezeigt. Es g
 
 Gehen Sie zur Dropdown-Liste **[!UICONTROL Sprache]**, um die Übersetzungssprache auszuwählen.
 
-Um nur nicht übersetzte Zeichenfolgen anzuzeigen, wählen **[!UICONTROL Zu übersetzen]** in der Dropdown-**„Status** aus. Sie können auch nur übersetzte oder genehmigte Zeichenfolgen anzeigen.
+Um nur nicht übersetzte Zeichenfolgen anzuzeigen, wählen **[!UICONTROL Zu übersetzen]** in der Dropdown-]**„Status**[!UICONTROL  aus. Sie können auch nur übersetzte oder genehmigte Zeichenfolgen anzeigen.
 
 ### Strings übersetzen {#translating-strings}
 
@@ -169,7 +173,7 @@ wenn die Sprache der erste oder einzige Parameter der URL ist. Beispiel: **https
 &lang=xx
 ```
 
-wenn es in der URL vor der Sprache noch andere Parameter gibt. Beispiel: **https://myserver/webApp/APP34?status=1&lang=en**
+wenn es in der URL vor der Sprache noch andere Parameter gibt. Beispiel: **https://myserver/webApp/APP34?status=1&amp;lang=en**
 
 Die standardmäßig verfügbaren Übersetzungssprachen und Wörterbücher sind unten aufgeführt.
 
@@ -430,7 +434,7 @@ Fügen Sie **?lang=es** oder **?lang=de** hinzu, um den Inhalt auf Spanisch oder
 >[!NOTE]
 >
 >Wenn für diese Webanwendung bereits andere Parameter verwendet werden, fügen Sie **&amp;lang=** hinzu.\
->Beispiel: **https://myserver/webApp/APP34?status=1&lang=en**
+>Beispiel: **https://myserver/webApp/APP34?status=1&amp;lang=en**
 
 ## Erweiterte Übersetzungskonfiguration {#advanced-translation-configuration}
 

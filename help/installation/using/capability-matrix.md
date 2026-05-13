@@ -4,9 +4,11 @@ title: Campaign On-Premise-, Hybrid- und Hosted-Funktionsmatrix
 description: Die wichtigsten Unterschiede zwischen gehosteten und On-Premise-Bereitstellungen
 feature: Installation, Architecture
 exl-id: a2c425a8-9bde-4259-9140-5ada5397ed5f
-source-git-commit: 8b38d825aa9b0595226a444e0e463362468d51b3
+TQID: https://experienceleague.adobe.com/kHWVPyk02eyH47xBzGgik3fq6BSHGKpDXPMrEuVaYM8
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: 323
 ht-degree: 43%
 
 ---
@@ -19,7 +21,7 @@ Adobe Campaign Classic bietet verschiedene Module und Optionen. Die Verfügbarke
 
 Auf dieser Seite werden die Hauptunterschiede zwischen gehosteten (Managed Services) und On-Premise-Bereitstellungen angezeigt. Die Besonderheiten von Hybridbereitstellungen hängen von den Elementen ab, die von Adobe gehostet und in Ihren -Standorten gehostet werden.
 
-Die verschiedenen Hosting-Modelle werden [in diesem Abschnitt) &#x200B;](../../installation/using/hosting-models.md).
+Die verschiedenen Hosting-Modelle werden [in diesem Abschnitt) ](../../installation/using/hosting-models.md).
 
 ## Verfügbarkeit pro Bereitstellungsmodell {#capability-matrix}
 
