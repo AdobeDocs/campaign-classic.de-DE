@@ -6,8 +6,10 @@ feature: Distributed Marketing
 hide: true
 exl-id: c166409b-e040-491e-840a-a41310935d75
 TQID: https://experienceleague.adobe.com/1T-VO8AH7Rhk9HAhMufgPSSh4lNIC-D65ldnJIfDFvA
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616a
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: a075b2c1-7748-4328-b7f6-343aa314616a
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
 source-wordcount: 150
@@ -29,7 +31,7 @@ Die Zentralstelle stellt Kampagnen bereit, die Lokalstellen nutzen können. Kamp
 
 >[!NOTE]
 >
->Weitere Informationen zum verteilten Marketing für Adobe Campaign und dessen Verwendung finden Sie in der [ zu Campaign v8 ](https://experienceleague.adobe.com/de/docs/campaign/automation/distributed-marketing/about-distributed-marketing){target=_blank}.
+>Weitere Informationen zum verteilten Marketing für Adobe Campaign und dessen Verwendung finden Sie in der [&#x200B; zu Campaign v8 &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/automation/distributed-marketing/about-distributed-marketing){target=_blank}.
 
 <!--
 ## Terminology {#terminology}

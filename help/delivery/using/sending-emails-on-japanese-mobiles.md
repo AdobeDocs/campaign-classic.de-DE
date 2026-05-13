@@ -8,8 +8,10 @@ role: User
 hide: true
 exl-id: 44634227-2340-49c4-b330-740c739ea551
 TQID: https://experienceleague.adobe.com/-IaAfjCvy9znHFt89tg-gGkcbAHpJExugPFr9T6RwWA
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
 source-wordcount: 782
@@ -21,7 +23,7 @@ ht-degree: 90%
 
 ## E-Mail-Formate für japanische Mobiltelefone {#email-formats-for-japanese-mobiles}
 
-Adobe Campaign verwaltet drei spezifische japanische Formate für E-Mails auf Mobiltelefonen: **Deco-mail** (DoCoMo-Mobilgeräte), **Decore Mail** (Softbank-Mobilgeräte) und **Decoration Mail** (KDDI AU-Mobilgeräte). Diese Formate erzwingen besondere Einschränkungen hinsichtlich Codierung, Struktur und Größe. Weitere Informationen zu Einschränkungen und Empfehlungen finden [ in diesem Abschnitt](#limitations-and-recommendations).
+Adobe Campaign verwaltet drei spezifische japanische Formate für E-Mails auf Mobiltelefonen: **Deco-mail** (DoCoMo-Mobilgeräte), **Decore Mail** (Softbank-Mobilgeräte) und **Decoration Mail** (KDDI AU-Mobilgeräte). Diese Formate erzwingen besondere Einschränkungen hinsichtlich Codierung, Struktur und Größe. Weitere Informationen zu Einschränkungen und Empfehlungen finden [&#x200B; in diesem Abschnitt](#limitations-and-recommendations).
 
 Damit ein Empfänger, der eines dieser Formate verwendet, Nachrichten korrekt angezeigt bekommt, wird empfohlen, das entsprechende Format **[!UICONTROL Deco-mail (DoCoMo)]**, **[!UICONTROL Decore Mail (Softbank)]** oder **[!UICONTROL Decoration Mail (KDDI AU)]** im Empfängerprofil auszuwählen:
 

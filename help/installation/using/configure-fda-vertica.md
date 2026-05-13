@@ -8,8 +8,10 @@ content-type: reference
 topic-tags: connectors
 exl-id: 8b2a9c73-807a-4936-9fd6-9d26c805a31f
 TQID: https://experienceleague.adobe.com/R0BzuzvaCahMWtHor24mNcwEiK7LtT97hpRMyOXNljg
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2:
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
 source-wordcount: 396
@@ -154,7 +156,7 @@ Sie müssen ein [!DNL Vertica Analytics] externes Konto erstellen, um Ihre Campa
 
 1. Wählen Sie **[!UICONTROL Externe Datenbank]** als **[!UICONTROL Typ]** Ihres externen Kontos aus.
 
-1. Konfigurieren Sie das externe Konto {]**}Vertica Analytics. Sie müssen Folgendes angeben:**[!UICONTROL 
+1. Konfigurieren Sie das externe Konto {**}Vertica Analytics. Sie müssen Folgendes angeben:**
 
    * **[!UICONTROL Typ]**: [!DNL Vertica Analytics]
 

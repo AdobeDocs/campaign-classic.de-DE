@@ -9,8 +9,10 @@ topic-tags: migrating-to-adobe-campaign-7
 hide: true
 exl-id: 3743d018-3316-4ce3-ae1c-25760aaf5785
 TQID: https://experienceleague.adobe.com/PnBnslBSLLV6MNF9KlyJQ-n2jGA-r4N6KASrrG3-65k
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
 source-wordcount: 1133
@@ -302,7 +304,7 @@ In dieser Phase muss der IIS-Server angehalten werden. Siehe [Service stoppen](#
 
      ![](assets/_migration_iis_4.png)
 
-   * Geben Sie den Namen der Site ein, z. B. {0 **Adobe Campaign v7.**
+   * Geben Sie den Namen der Site ein, z. B. &lbrace;0 **Adobe Campaign v7.**
    * Der Zugriffspfad zum Basisverzeichnis der Website wird nicht verwendet, aber das Feld **[!UICONTROL Physikalischer Zugriffspfad]** muss eingegeben werden. Geben Sie den standardmäßigen IIS-Zugriffspfad ein: **C:\inetpub\wwwroot**.
    * Klicken Sie auf **[!UICONTROL Verbinden als…]** und stellen Sie sicher, dass die Option **[!UICONTROL Anwendungsbenutzer]** ausgewählt ist.
    * Sie können die Standardwerte in den Feldern **[!UICONTROL IP-Adresse]** und **[!UICONTROL Port]** beibehalten. Wenn Sie andere Werte verwenden möchten, stellen Sie sicher, dass die IP-Adresse und/oder der Port verfügbar sind.
@@ -339,7 +341,7 @@ In dieser Phase muss der IIS-Server angehalten werden. Siehe [Service stoppen](#
      >
      >Wenn die Baumstruktur nicht angezeigt wird, starten Sie IIS neu.
      >
-     >Die folgenden IIS-Konfigurationsschritte werden in [ Abschnitt ](../../installation/using/integration-into-a-web-server-for-windows.md#configuring-the-iis-web-server).
+     >Die folgenden IIS-Konfigurationsschritte werden in [&#x200B; Abschnitt &#x200B;](../../installation/using/integration-into-a-web-server-for-windows.md#configuring-the-iis-web-server).
 
 <!--
 ## Security zones {#security-zones}

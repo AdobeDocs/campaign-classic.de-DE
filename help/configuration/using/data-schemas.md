@@ -6,11 +6,17 @@ feature: Schema Extension
 role: Developer
 exl-id: d4446035-3988-4d89-b7df-7b8528c2e371
 TQID: https://experienceleague.adobe.com/4iwfPoaz5-vnbH-mPd819bB6rxGGdqGjJPwQ-kqCl-c
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2: id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
-subfeature_v2: id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+subfeature_v2:
+  - id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
 source-wordcount: 413
@@ -46,7 +52,7 @@ Die Vorschau generiert automatisch das erweiterte Schema:
 >
 >Beim Speichern des Quellschemas wird die Generierung des erweiterten Schemas automatisch gestartet.
 
-Wenn Sie die vollständige Struktur eines Schemas überprüfen müssen, können Sie die Registerkarte Vorschau verwenden. Wenn das Schema erweitert wurde, können Sie alle seine Erweiterungen visuell darstellen. Ergänzend zeigt die Registerkarte Dokumentation alle Schemaattribute und -elemente sowie deren Eigenschaften (SQL-Feld, Typ/Länge, Bezeichnung, Beschreibung) an. Die Registerkarte Dokumentation gilt nur für generierte Schemata. Weiterführende Informationen hierzu finden Sie im Abschnitt [Regenerieren ](../../configuration/using/regenerating-schemas.md) Schemata“.
+Wenn Sie die vollständige Struktur eines Schemas überprüfen müssen, können Sie die Registerkarte Vorschau verwenden. Wenn das Schema erweitert wurde, können Sie alle seine Erweiterungen visuell darstellen. Ergänzend zeigt die Registerkarte Dokumentation alle Schemaattribute und -elemente sowie deren Eigenschaften (SQL-Feld, Typ/Länge, Bezeichnung, Beschreibung) an. Die Registerkarte Dokumentation gilt nur für generierte Schemata. Weiterführende Informationen hierzu finden Sie im Abschnitt [Regenerieren &#x200B;](../../configuration/using/regenerating-schemas.md) Schemata“.
 
 ## Beispiel: Vertragstabelle erstellen {#example--creating-a-contract-table}
 

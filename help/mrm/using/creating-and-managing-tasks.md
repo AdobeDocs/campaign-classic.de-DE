@@ -9,9 +9,12 @@ hide: true
 topic-tags: tasks--resources-and-budgets
 exl-id: cc1200fa-f6d8-4f41-aed1-d1a7f229447a
 TQID: https://experienceleague.adobe.com/Mv-2GGcnP----L-D2h5DDz3StnT5rH4TlnQdxn9bdnY
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616a
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: a075b2c1-7748-4328-b7f6-343aa314616a
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
 source-wordcount: 3919
@@ -45,7 +48,7 @@ Eine Liste der Aufgaben kann über den Tab **[!UICONTROL Kampagnen]** angezeigt 
 
 Hier werden alle Aufgaben des aktuellen Benutzers aufgeführt.
 
-Weitere Informationen hierzu finden Sie unter [Ausführungsstatus einer Aufgabe](#execution-status-of-a-task) und [Fortschrittsstatus einer Aufgabe ](#progress-status-of-a-task).
+Weitere Informationen hierzu finden Sie unter [Ausführungsstatus einer Aufgabe](#execution-status-of-a-task) und [Fortschrittsstatus einer Aufgabe &#x200B;](#progress-status-of-a-task).
 
 ### Aufgaben filtern {#filtering-tasks}
 
@@ -81,7 +84,7 @@ Nach der Erstellung wird die Aufgabe dem Kampagnenkalender und der Aufgabenliste
 
 Geben Sie folgende Parameter an, um sie zu konfigurieren:
 
-* Verantwortlicher und Teilnehmer: siehe [Verantwortlicher und Teilnehmer ](#manager-and-participants).
+* Verantwortlicher und Teilnehmer: siehe [Verantwortlicher und Teilnehmer &#x200B;](#manager-and-participants).
 * Erstellungsplan: Siehe [Ausführungsplan](#execution-schedule).
 * Mittelbindungen: Siehe [Ausgaben und Einnahmen](#expenses-and-revenues).
 
@@ -388,7 +391,7 @@ Sie können der Aufgabe und der Benachrichtigungs-E-Mail einen Anhang hinzufüge
 
 ### Relationen zwischen Aufgaben {#links-between-tasks}
 
-Mit der Schaltfläche **[!UICONTROL Eigenschaften]** in den Aufgaben können Sie die Verknüpfungen zwischen Aufgaben in einer Kampagne definieren. Sie können Aufgaben mithilfe einer Gruppenaufgabe in Unteraufgaben aufteilen (siehe [Gruppierung von Aufgaben ](#linked-tasks)) oder Abhängigkeiten zwischen den Aufgaben definieren (siehe [Abhängigkeit von Aufgaben](#grouping-tasks)).
+Mit der Schaltfläche **[!UICONTROL Eigenschaften]** in den Aufgaben können Sie die Verknüpfungen zwischen Aufgaben in einer Kampagne definieren. Sie können Aufgaben mithilfe einer Gruppenaufgabe in Unteraufgaben aufteilen (siehe [Gruppierung von Aufgaben &#x200B;](#linked-tasks)) oder Abhängigkeiten zwischen den Aufgaben definieren (siehe [Abhängigkeit von Aufgaben](#grouping-tasks)).
 
 #### Gruppierung von Aufgaben {#linked-tasks}
 
@@ -448,7 +451,7 @@ Zusätzlich zum Ausführungsstatus kann eine Aufgabe mit einem Fortschrittsstatu
 
 Sie können die Liste der Aufgaben nach Erfüllungs- oder Fortschrittstatus filtern.
 
-Weitere Informationen hierzu finden Sie unter [Zugriff auf Aufgaben ](#accessing-tasks).
+Weitere Informationen hierzu finden Sie unter [Zugriff auf Aufgaben &#x200B;](#accessing-tasks).
 
 ### Vollständiger Lebenszyklus einer Aufgabe {#complete-task-life-cycle}
 

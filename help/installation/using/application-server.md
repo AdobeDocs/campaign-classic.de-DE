@@ -9,7 +9,8 @@ content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 87103c31-1530-4f8d-ab3a-6ff73093b80c
 TQID: https://experienceleague.adobe.com/QB-FFljzZBWLM17tjDhPD-zk5w96W1RfIMKX-IGDEBA
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
 source-wordcount: 677
@@ -31,7 +32,7 @@ Sie müssen zunächst ein JDK auf den Computern installieren, auf denen Sie den 
 
 Die Anwendung wurde für das von Oracle entwickelte Java Development Kit (JDK) sowie für **OpenJDK** genehmigt.
 
-Die unterstützten Versionen werden in der Campaign-[ (Kompatibilitätsmatrix) ](../../rn/using/compatibility-matrix.md).
+Die unterstützten Versionen werden in der Campaign-[&#x200B; (Kompatibilitätsmatrix) &#x200B;](../../rn/using/compatibility-matrix.md).
 
 
 >[!AVAILABILITY]
@@ -93,7 +94,7 @@ Sie können Adobe Campaign verwenden, um Berichte in Microsoft Excel und Adobe P
 
 >[!NOTE]
 >
->Für Linux müssen Sie Schriftarten hinzufügen. Weitere Informationen hierzu finden Sie unter [ für MTA-Statistiken](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#fonts-for-mta-statistics).
+>Für Linux müssen Sie Schriftarten hinzufügen. Weitere Informationen hierzu finden Sie unter [&#x200B; für MTA-Statistiken](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#fonts-for-mta-statistics).
 
 ## SpamAssassin {#spamassassin}
 

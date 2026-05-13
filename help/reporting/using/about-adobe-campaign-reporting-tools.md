@@ -6,9 +6,14 @@ feature: Reporting, Monitoring
 badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Campaign v8"
 exl-id: 1ef30004-e1b0-4dde-8104-0ee9e8aa9d8b
 TQID: https://experienceleague.adobe.com/4D-bCeMQakNjr7OXhiZ1u0Sfp5MZWwzZzHtykBfFzZ8
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616a
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: a075b2c1-7748-4328-b7f6-343aa314616a
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
 source-wordcount: 362
@@ -20,7 +25,7 @@ ht-degree: 50%
 
 
 
-Zusätzlich zu [ integrierten Berichten ](../../reporting/using/about-campaign-built-in-reports.md) Sie mit Adobe Campaign Berichte in verschiedenen Kontexten und für unterschiedliche Anforderungen erstellen. Die Grundsätze der Verwendung und die Implementierungsmodi werden in diesem Dokument beschrieben.
+Zusätzlich zu [&#x200B; integrierten Berichten &#x200B;](../../reporting/using/about-campaign-built-in-reports.md) Sie mit Adobe Campaign Berichte in verschiedenen Kontexten und für unterschiedliche Anforderungen erstellen. Die Grundsätze der Verwendung und die Implementierungsmodi werden in diesem Dokument beschrieben.
 
 Adobe Campaign ist kein spezielles Reporting-Tool: In Adobe Campaign erstellte Berichte ermöglichen es Ihnen hauptsächlich, aggregierte Daten anzuzeigen. Adobe Campaign-Berichte, die Daten analysieren und darstellen, sind nicht für Datenbankexporte konzipiert.
 

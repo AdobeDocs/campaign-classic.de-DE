@@ -9,8 +9,10 @@ topic-tags: tasks--resources-and-budgets
 hide: true
 exl-id: 8cf4d30d-f914-438d-8836-030202b6a449
 TQID: https://experienceleague.adobe.com/a2eozRiOohzkY4Jbpn7DDm-kKQ0-198CCT182A-xVPo
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
 source-wordcount: 212
@@ -34,4 +36,4 @@ Außerdem umfassen die Budgetverwaltungsfunktionen jetzt auch die Verwaltung von
 
 >[!NOTE]
 >
->Weitere Informationen zu MRM für Adobe Campaign und dessen Verwendung finden Sie in der [ zu Campaign v8 ](https://experienceleague.adobe.com/de/docs/campaign/automation/mrm/about-marketing-resource-management){target=_blank}.
+>Weitere Informationen zu MRM für Adobe Campaign und dessen Verwendung finden Sie in der [&#x200B; zu Campaign v8 &#x200B;](https://experienceleague.adobe.com/de/docs/campaign/automation/mrm/about-marketing-resource-management){target=_blank}.

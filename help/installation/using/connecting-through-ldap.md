@@ -9,8 +9,10 @@ content-type: reference
 topic-tags: additional-configurations
 exl-id: 0533cd50-3aa4-4160-9152-e916e149e77f
 TQID: https://experienceleague.adobe.com/GMKB83dj65iqnlu97uX-d672TWOysjd4gspRLEfz-y8
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
 source-wordcount: 1258
@@ -26,7 +28,7 @@ ht-degree: 2%
 >
 >* Die LDAP-Konfiguration ist nur für On-Premise- oder Hybridinstallationen möglich.
 >
->* Stellen Sie sicher, dass Ihr System und Ihre OpenSSL-Versionen mit Campaign kompatibel sind, indem Sie die [Kompatibilitätsmatrix) ](../../rn/using/compatibility-matrix.md). Veraltete Versionen können sich auf Ihre LDAP-Authentifizierung auswirken.
+>* Stellen Sie sicher, dass Ihr System und Ihre OpenSSL-Versionen mit Campaign kompatibel sind, indem Sie die [Kompatibilitätsmatrix) &#x200B;](../../rn/using/compatibility-matrix.md). Veraltete Versionen können sich auf Ihre LDAP-Authentifizierung auswirken.
 >
 
 Die LDAP-Konfiguration wird im Bereitstellungsassistenten ausgeführt. Die **[!UICONTROL LDAP-Integration]** Option muss im ersten Konfigurationsschritt ausgewählt werden. Siehe [Bereitstellungsassistent](../../installation/using/deploying-an-instance.md#deployment-assistant).

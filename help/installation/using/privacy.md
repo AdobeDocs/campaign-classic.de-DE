@@ -5,10 +5,21 @@ description: Best Practices für die Sicherheit für Datenschutz und Personalisi
 feature: Installation, Privacy, Privacy Tools, URL Personalization
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
 TQID: https://experienceleague.adobe.com/8u-ItsbouC0wIsamVYfyzQR1o-z-jY90Z3pKem-yarc
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2: id: a7760dfc-5c44-4d77-bb68-c50b1e265c93
-subfeature_v2: id: ac72e249-ebbf-4bb6-96c9-596af925419aid: ac9c0a9c-8a76-4419-bd64-9c34c5782666id: fb2a841f-c522-491f-9901-a1b939d252df
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094id: eddd9b14-83bd-4ff4-9072-54a4a484abb7id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: a7760dfc-5c44-4d77-bb68-c50b1e265c93
+subfeature_v2:
+  - id: ac72e249-ebbf-4bb6-96c9-596af925419a
+  - id: ac9c0a9c-8a76-4419-bd64-9c34c5782666
+  - id: fb2a841f-c522-491f-9901-a1b939d252df
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
 source-wordcount: 906
@@ -30,7 +41,7 @@ Wenn Sie personalisierte Links zu Ihrem Inhalt hinzufügen, achten Sie darauf, d
 
 ### Empfehlung
 
-Um zu validieren und sicherzustellen, dass Sie die oben genannten Funktionen nicht verwenden, führen Sie eine Abfrage in der Tracking-URL-Tabelle über [Campaign Generic Query Editor) ](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign) oder erstellen Sie einen Workflow mit Filterkriterien in der Abfrageaktivität. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=de){target="_blank"}.
+Um zu validieren und sicherzustellen, dass Sie die oben genannten Funktionen nicht verwenden, führen Sie eine Abfrage in der Tracking-URL-Tabelle über [Campaign Generic Query Editor) &#x200B;](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign) oder erstellen Sie einen Workflow mit Filterkriterien in der Abfrageaktivität. Weitere Informationen finden Sie in der [Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=de){target="_blank"}.
 
 Beispiel:
 

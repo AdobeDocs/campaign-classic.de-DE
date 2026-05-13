@@ -5,9 +5,12 @@ description: Erfahren Sie, wie Sie Ihre Instanz mit dem Audit-Protokoll von Camp
 feature: Audit Trail, Monitoring, Workflows
 exl-id: 8508d879-fb38-4b1f-9f55-0341bb8d0c67
 TQID: https://experienceleague.adobe.com/y8kDwxCY0MkBcDPUPY7hmFlpJc3l3qsEiDRhhMGqT00
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616a
-topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: a075b2c1-7748-4328-b7f6-343aa314616a
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
 source-wordcount: 448
@@ -51,7 +54,7 @@ In Adobe Campaign erhalten Sie **[!UICONTROL Audit-Protokoll]** Zugriff auf den 
 
   Weiterführende Informationen zu Workflows finden Sie auf [dieser Seite](../../workflow/using/about-workflows.md).
 
-  Weitere Informationen zum Überwachen von Workflows finden Sie in der [ zu Campaign v8 ](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=de){target="_blank"}.
+  Weitere Informationen zum Überwachen von Workflows finden Sie in der [&#x200B; zu Campaign v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=de){target="_blank"}.
 
 
 * Das **Audit-Protokoll für Optionen** ermöglicht Ihnen die Überprüfung der Aktivitäten und der letzten Änderungen an Ihren Optionen.

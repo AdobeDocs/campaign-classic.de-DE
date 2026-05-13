@@ -6,7 +6,8 @@ feature: Workflows
 hide: true
 exl-id: 21c97eb3-60cd-4d19-bc0f-5ba9ec17e70a
 TQID: https://experienceleague.adobe.com/AhEp-fucKo-UN8M9kzPxqpbHU2ichyv1LHa-qeN9qRc
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
 source-wordcount: 374
@@ -97,7 +98,7 @@ for each (var item in items){
 
 >[!NOTE]
 >
->Mit dem Befehl **[!UICONTROL &lt;%= item.target.recipient.@fieldName %>]** können Sie eines der Felder hinzufügen, die der Instanzvariablen über die Aktivität **[!UICONTROL JavaScript-Code}]** wurden.\
+>Mit dem Befehl **[!UICONTROL &lt;%= item.target.recipient.@fieldName %>]** können Sie eines der Felder hinzufügen, die der Instanzvariablen über die Aktivität **[!UICONTROL JavaScript-Code&rbrace;]** wurden.\
 >Sie können beliebig viele Felder hinzufügen, vorausgesetzt diese wurden in den JavaScript-Code eingefügt.
 
 ![](assets/uc_operator_8.png)

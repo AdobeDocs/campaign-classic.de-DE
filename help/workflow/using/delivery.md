@@ -6,9 +6,13 @@ feature: Workflows, Channels Activity
 hide: true
 exl-id: 72fbdd1d-a105-4e9f-9e17-2e9d62d2bb80
 TQID: https://experienceleague.adobe.com/WKtg0nyzpu1XCBJzXnDEKXY8KgcLhsSrQVDvHJAiPKw
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: c5474392-5419-4296-9e41-f6f4ce4f6e9b
-topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: a075b2c1-7748-4328-b7f6-343aa314616a
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+topic_v2:
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
 source-wordcount: 1045
@@ -38,7 +42,7 @@ Mit **Aktivität** Versand“ können Sie eine Versandaktion erstellen. Sie kann
 
      ![](assets/specified_transition_option_exemple.png)
 
-   * Wählen Sie den betreffenden Versand direkt aus. Wählen Sie in diesem Fall einen zuvor erstellten Versand aus der Dropdown-Liste des Felds **[!UICONTROL Versand]** aus.****
+   * Wählen Sie den betreffenden Versand direkt aus. Wählen Sie in diesem Fall einen zuvor erstellten Versand aus der Dropdown-Liste des Felds **[!UICONTROL Versand]** aus.**&#x200B;**
 
      Standardmäßig enthält die Liste die im Ordner **Sendungen** gespeicherten Kommunikationen, die noch nicht abgeschlossen sind. Klicken Sie auf das Symbol **[!UICONTROL Verknüpftes Element auswählen]**, um auf andere Ordner zugreifen zu können.
 
@@ -54,7 +58,7 @@ Mit **Aktivität** Versand“ können Sie eine Versandaktion erstellen. Sie kann
 
      ![](assets/diffusion_edit_3.png)
 
-   * Erstellen Sie einen neuen Versand. Wählen Sie die gewünschte Versandvorlage aus.****
+   * Erstellen Sie einen neuen Versand. Wählen Sie die gewünschte Versandvorlage aus.**&#x200B;**
 
      ![](assets/diffusion_edit_4.png)
 

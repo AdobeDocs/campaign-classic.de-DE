@@ -9,9 +9,15 @@ content-type: reference
 topic-tags: audience-sharing
 exl-id: a3e26cff-9609-4d91-8976-9213a30c3fd2
 TQID: https://experienceleague.adobe.com/e9fIzwdGvuV9a-LRdXFLcghMGf79KQcoMT37K37ZOOE
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2: id: c5474392-5419-4296-9e41-f6f4ce4f6e9bid: d5ef99fa-df0c-4153-bf94-105ad0724167
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d095671a-1355-40aa-8b5f-06c33c68080bid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+  - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
 source-wordcount: 675
@@ -66,7 +72,7 @@ URL Ihres Servers, sollte sie wie folgt ausgefüllt werden:
 Informationen dazu, wo Sie Ihre AWS-Zugriffsschlüssel-ID finden, finden Sie auf dieser [Seite](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) .
 
    * **[!UICONTROL Geheimer Zugriffsschlüssel für AWS]**
-Auf dieser Seite erfahren Sie, wo Sie Ihren geheimen Zugriffsschlüssel für AWS [ finden](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/).
+Auf dieser Seite erfahren Sie, wo Sie Ihren geheimen Zugriffsschlüssel für AWS [&#x200B; finden](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/).
 
    * **[!UICONTROL AWS-Region]**
 Weitere Informationen zur Region AWS finden Sie auf dieser [Seite](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/).
