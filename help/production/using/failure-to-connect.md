@@ -8,9 +8,15 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 3c793dc1-9654-4289-a3d2-30c3078fd848
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+TQID: https://experienceleague.adobe.com/zQXUUtLQveDPTu8blS48gCzTl8lv09vlJXAtjAjgtW4
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: 417
 ht-degree: 11%
 
 ---
@@ -43,19 +49,19 @@ Sie können die folgenden Tests versuchen. Wenn der Verbindungsfehler weiterhin 
 </tr>
 <tr> 
 <td>Antwortet der Webserver?</td> 
-<td>Stellen Sie mithilfe eines Webbrowsers eine Verbindung zur Adobe Campaign-Server-Zugriffs-URL her: <b>http(s):// &lt;urlserver&gt;</b>. Wenn er nicht reagiert, wird der Webserver auf dem Computer angehalten. Wenden Sie sich an den Systemadministrator Ihrer Hostfirma, um den Dienst neu zu starten.</td>
+<td>Stellen Sie mithilfe eines Webbrowsers eine Verbindung zur Adobe Campaign-Serverzugriffs-URL her<b> (http(s):// &lt;urlserver&gt;</b>. Wenn er nicht reagiert, wird der Webserver auf dem Computer angehalten. Wenden Sie sich an den Systemadministrator Ihrer Hostfirma, um den Dienst neu zu starten.</td>
 </tr>
 <tr> 
 <td>Wurde Adobe Campaign korrekt integriert?</td> 
-<td>Melden Sie sich bei der URL: <b>http(s)://&lt;urlserver&gt;/r/test</b> an. Der Server sollte den folgenden Nachrichtentyp zurückgeben: &lt;redir status='OK' date='YYYY/MM/DD HH:MM:SS' build='XXXX' host='&lt;hostname&gt;' localHost='&lt;server&gt;'/&gt;
+<td>Melden Sie sich bei der URL <b>http(s)://&lt;urlserver&gt;/r/test</b> an. Der Server sollte den folgenden Nachrichtentyp zurückgeben: &lt;redir status='OK' date='YYYY/MM/DD HH:MM:SS' build='XXXX' host='&lt;hostname&gt;' localHost='&lt;server&gt;'/&gt;
 Wenn Sie dieses Ergebnis nicht erhalten, überprüfen Sie in Ihrer Webserver-Konfiguration, ob die Integration berücksichtigt wird.</td>
 </tr>
 <tr> 
-<td>Stellen Sie eine Verbindung mit der folgenden URL her: <b>http(s)://&lt;URLSERVER&gt;/nl/jsp/logon.jsp</b></td>
+<td>Stellen Sie eine Verbindung mit der folgenden URL her<b> (http(s)://&lt;URLSERVER&gt;/nl/jsp/logon.jsp</b></td>
 <td>Wenn Sie einen Tomcat-Java-Fehler erhalten, überprüfen Sie, ob die JAVA-Integration korrekt durchgeführt wurde. Es ist in die Datei [Pfad des Programms]/nl6/customer.sh integriert</td>
 </tr>
 <tr> 
-<td>Stellen Sie eine Verbindung mit der folgenden URL her: <b>http(s)://&lt;URLSERVER&gt;/nl/jsp/logon.jsp</b></td>
+<td>Stellen Sie eine Verbindung mit der folgenden URL her<b> (http(s)://&lt;URLSERVER&gt;/nl/jsp/logon.jsp</b></td>
 <td>Wenn Sie eine leere Seite erhalten, überprüfen Sie, ob das Adobe Campaign Web-Modul gestartet wurde. Der Befehl nlserver pdump sollte den Anwendungsserver für Adobe Campaign Classic (7.X YY.R build XXX@SHA1) von TT/MM/JJJJ zurückgeben. Wenn nicht, starten Sie das Modul mit dem Befehl nlserver start web</td>
 </tr>
 <tr>
