@@ -18,7 +18,7 @@ subfeature_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+source-git-commit: 8f9e8344b77e50bd2823cc7fa3922466e515327f
 workflow-type: tm+mt
 source-wordcount: 763
 ht-degree: 6%
@@ -34,7 +34,7 @@ Sie können diesen integrierten Tomcat-Server verwenden, um HTTP-Anfragen zu bea
 In diesem Fall:
 
 * Der standardmäßige Überwachungs-Port ist 8080. Informationen zu Änderungen finden Sie [diesem Abschnitt](../../installation/using/configure-tomcat.md).
-* Die Client-Konsolen stellen dann über eine URL wie ```https:// `<computer>`:8080``` eine Verbindung her.
+* Die Client-Konsolen stellen dann über eine URL wie `https://` `<computer>` `:8080` eine Verbindung her.
 
 Aus Sicherheits- und Verwaltungsgründen empfehlen wir jedoch die Verwendung eines dedizierten Webservers als Haupteinstiegspunkt für den HTTP-Traffic, wenn der Computer, auf dem Adobe Campaign ausgeführt wird, im Internet verfügbar ist und Sie den Zugriff auf die Konsole außerhalb Ihres Netzwerks öffnen möchten.
 
