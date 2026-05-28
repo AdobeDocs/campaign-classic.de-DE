@@ -9,18 +9,12 @@ content-type: reference
 level: Intermediate, Experienced
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
 TQID: https://experienceleague.adobe.com/0Sv4efbYyu1kT-sDs4CYjDBP3RphjlqPTerDrNxN93I
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: d5ef99fa-df0c-4153-bf94-105ad0724167
-subfeature_v2:
-  - id: c3bf7e1e-1db5-4c72-9293-e2f0b1ab73d0
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: d5ef99fa-df0c-4153-bf94-105ad0724167
+subfeature_v2: id: c3bf7e1e-1db5-4c72-9293-e2f0b1ab73d0
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 8f9e8344b77e50bd2823cc7fa3922466e515327f
 workflow-type: tm+mt
 source-wordcount: 865
 ht-degree: 94%
@@ -40,7 +34,7 @@ Die Auslöser werden für die Zielgruppenbestimmung eines Kampagnen-Workflows ve
 Bevor Sie mit der Konfiguration beginnen, überprüfen Sie bitte, ob Folgendes vorhanden ist:
 
 * Ein Adobe Developer-Projekt
-* Eine gültige Organisations-ID. Auf [&#x200B; Seite erfahren Sie, wie Sie Ihre Organisations-ID finden](https://experienceleague.adobe.com/de/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255){_blank}
+* Eine gültige Organisations-ID. Auf [ Seite erfahren Sie, wie Sie Ihre Organisations-ID finden](https://experienceleague.adobe.com/de/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255){_blank}
 * Ein Entwicklerzugriff auf die Organisation
 * Eine gültige Trigger-Konfiguration in Adobe Analytics
 
@@ -131,13 +125,13 @@ Die Liste der optionalen Parameter lautet:
 | Option | Beschreibung |
 |:-:|:-:|
 | appName (frühere Version) | AppID der OAuth-Anwendung, die in der Legacy-Oath-Anwendung registriert ist, in die der öffentliche Schlüssel hochgeladen wurde. Weitere Informationen hierzu finden Sie auf [dieser Seite](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md). |
-| authGatewayEndpoint(Legacy) | URL zum Abrufen von Gateway-Tokens. Standard: ```https://api.omniture.com``` |
-| authPrivateKey(Legacy) | Der öffentliche Teil des privaten Schlüssels, der in die Legacy-Oath-Anwendung hochgeladen wurde; AES-verschlüsselt mit der XtkKey-Option: ```cryptString("PRIVATE_KEY")``` |
+| authGatewayEndpoint(Legacy) | URL zum Abrufen von Gateway-Tokens. Standard: `https://api.omniture.com` |
+| authPrivateKey(Legacy) | Der öffentliche Teil des privaten Schlüssels, der in die Legacy-Oath-Anwendung hochgeladen wurde; AES-verschlüsselt mit der XtkKey-Option: `cryptString("PRIVATE_KEY")` |
 | disableAuth(Legacy) | Deaktivieren der Authentifizierung; Verbindungen ohne Gateway-Tokens werden nur von einigen Endpunkten der Entwicklungs-Pipeline akzeptiert. |
-| discoverPipelineEndpoint | URL zum Auffinden des Pipeline-Dienstendpunkts, der für diesen Mandanten verwendet werden soll. Standard: ```https://producer-pipeline-pnw.adobe.net``` |
-| dumpStatePeriodSec | Der Zeitraum zwischen der Speicherung zweier Kopien des internen Statusprozesses im ```var/INSTANCE/pipelined.json.``` <br> Der interne Status ist hier auch auf Abruf verfügbar: ```http://INSTANCE:7781/pipelined/status``` |
+| discoverPipelineEndpoint | URL zum Auffinden des Pipeline-Dienstendpunkts, der für diesen Mandanten verwendet werden soll. Standard: `https://producer-pipeline-pnw.adobe.net` |
+| dumpStatePeriodSec | Der Zeitraum zwischen der Speicherung zweier Kopien des internen Statusprozesses im `var/INSTANCE/pipelined.json.` <br> Der interne Status ist hier auch auf Abruf verfügbar: `http://INSTANCE:7781/pipelined/status` |
 | forcedPipelineEndpoint | Deaktivieren der Erkennung und Erzwingen des PipelineServicesEndpoint |
-| monitorServerPort | Der Pipelined-Prozess überwacht, dass der Port den internen Statusprozess hier bereitstellt: ```http://INSTANCE:PORT/pipelined/status```. <br>Der Standardwert ist 7781. |
+| monitorServerPort | Der Pipelined-Prozess überwacht, dass der Port den internen Statusprozess hier bereitstellt: `http://INSTANCE:PORT/pipelined/status`. <br>Der Standardwert ist 7781. |
 | pointerFlushMessageCount | Wenn diese Anzahl von Nachrichten verarbeitet wird, werden die Offsets in der Datenbank gespeichert. <br> Der Standardwert lautet 1000 |
 | pointerFlushPeriodSec | Nach diesem Zeitraum werden die Versätze in der Datenbank gespeichert. <br>Der Standardwert ist 5 (Sekunden). |
 | processingJSThreads | Anzahl der dedizierten Threads, die Nachrichten mit benutzerdefinierten JS-Connectoren verarbeiten. <br> Der Standardwert ist 4 |
