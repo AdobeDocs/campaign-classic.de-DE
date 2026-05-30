@@ -420,7 +420,7 @@ Konfigurieren **im Knoten dataStore > dataSource > Pool** die Parameter des zuge
   </tr> 
   <tr> 
    <td> maxCnx<br /> </td> 
-   <td> Maximale Anzahl von zulässigen Verbindungen, bevor der Zugriff verweigert wird Siehe diese <a href="https://helpx.adobe.com/campaign/kb/how-to-increase-the-maximum-number-of-database-connections-from-.html">Technote</a>.<br /> </td> 
+   <td> Maximale Anzahl von zulässigen Verbindungen, bevor der Zugriff verweigert wird Siehe diese <a href="https://helpx.adobe.com/de/campaign/kb/how-to-increase-the-maximum-number-of-database-connections-from-.html">Technote</a>.<br /> </td> 
    <td> Kurz<br /> </td> 
   </tr> 
   <tr> 
