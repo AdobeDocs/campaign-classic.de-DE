@@ -8,17 +8,13 @@ content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
 TQID: https://experienceleague.adobe.com/BZ4rjzbXYikNoGAVHq4Gy7tY8OugKDgsmVLkKuIB9tw
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: b12f6872-9271-4369-85e5-86969a0b99a2
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: b12f6872-9271-4369-85e5-86969a0b99a2
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d095671a-1355-40aa-8b5f-06c33c68080b
+subfeature_v2: []
+source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 8103
+source-wordcount: 8061
 ht-degree: 8%
 
 ---
@@ -419,7 +415,7 @@ Konfigurieren **im Knoten dataStore > dataSource > Pool** die Parameter des zuge
   </tr> 
   <tr> 
    <td> maxCnx<br /> </td> 
-   <td> Maximale Anzahl von zulässigen Verbindungen, bevor der Zugriff verweigert wird Siehe diese <a href="https://helpx.adobe.com/de/campaign/kb/how-to-increase-the-maximum-number-of-database-connections-from-.html">Technote</a>.<br /> </td> 
+   <td> Maximale Anzahl von zulässigen Verbindungen, bevor der Zugriff verweigert wird Siehe diese <a href="https://helpx.adobe.com/campaign/kb/how-to-increase-the-maximum-number-of-database-connections-from-.html">Technote</a>.<br /> </td> 
    <td> Kurz<br /> </td> 
   </tr> 
   <tr> 
@@ -434,7 +430,7 @@ Konfigurieren **im Knoten dataStore > dataSource > Pool** die Parameter des zuge
 
 Im Folgenden finden Sie die verschiedenen Parameter **Knotens „dataStore > virtualDir**. Dies ist die Konfiguration des virtuellen Verzeichnisses für die Zuordnung von echten Verzeichnissen.
 
-Weitere Informationen finden Sie unter &quot;[&#x200B; öffentlicher Ressourcen](file-res-management.md).
+Weitere Informationen finden Sie unter &quot;[ öffentlicher Ressourcen](file-res-management.md).
 
 <table> 
  <thead> 
@@ -549,7 +545,7 @@ Weitere Informationen finden Sie in diesem [Abschnitt](../../installation/using/
 
 >[!NOTE]
 >
->Hinweis zu **nameSevers**: nutzt standardmäßig das Netzwerk>Parameter der ersten unter Windows deklarierten Netzwerkschnittstelle>nicht in UNIX definiert. Definiert die Domain Name Servers (DNS)>wird vom MTA verwendet, um den Mail Exchanger für zu deklarieren.>Eine Domain.
+>Hinweis unter **nameSevers**: Verwendet standardmäßig die Netzwerk>Parameter der ersten unter Windows deklarierten Netzwerkschnittstelle, > unter UNIX nicht definiert. Definiert die Domain Name Servers (DNS), > vom MTA verwendet werden, um den E-Mail-Austauscher für eine Domain >.
 >
 >Wenn dieser Wert nicht definiert ist, sucht der MTA diese Informationen in der Host-Netzwerkkonfiguration. Wenn mehrere DNS möglich sind, müssen die verschiedenen DNS-Adressen durch ein Komma getrennt werden (Beispiel: 212.155.207.1,212.155.207.2). Wenn Ihr Versand-Server über mehrere Netzwerkschnittstellen verfügt, ist die vom MTA verwendete DNS-Liste die erste. In diesem Fall wird empfohlen, den Parameter **nameServer** anzugeben, um Unklarheiten zu vermeiden.
 
@@ -1630,9 +1626,9 @@ Im Folgenden finden Sie die verschiedenen Parameter des **mta**-Knotens. Dies is
    <td> statServerAddress<br /> </td> 
    <td> Adresse des Servers der Versandstatistik, angegeben als 
     &lt;DNS oder IP&gt; 
-      <code>&lbrack;</code>: 
+      <code>[</code>: 
      &lt;port&gt; 
-       <code>&rbrack;</code>. Siehe 
+       <code>]</code>. Siehe 
       <a href="../../installation/using/email-deliverability.md#coordinates-of-the-statistics-server" target="_blank">Koordinaten des Statistikservers</a>. 
       <br /> 
      </td> 
@@ -2221,7 +2217,7 @@ Im Folgenden finden Sie die verschiedenen Parameter **Knotens &quot;**&quot;. Di
 
 Im Folgenden finden Sie die verschiedenen Parameter des **securityZone**-Knotens.
 
-Weitere Informationen finden Sie unter [&#x200B; von Sicherheitszonen](../../installation/using/security-zones.md).
+Weitere Informationen finden Sie unter [ von Sicherheitszonen](../../installation/using/security-zones.md).
 
 <table> 
  <thead> 
@@ -2319,7 +2315,7 @@ Hier finden Sie die Standardkonfiguration:
 
 Im Folgenden finden Sie die verschiedenen Parameter **Knotens „securityZone > subNetwork**.
 
-Weitere Informationen finden Sie unter [&#x200B; von Sicherheitszonen](../../installation/using/security-zones.md).
+Weitere Informationen finden Sie unter [ von Sicherheitszonen](../../installation/using/security-zones.md).
 
 <table> 
  <thead> 
@@ -3262,7 +3258,7 @@ Hier finden Sie die Standardkonfiguration:
 
 Fügen Sie für jeden HTTP **Header einen Knoten („web“ > „relais** > „responseHeader„) hinzu, um ihn den an das Relais weitergeleiteten Antworten hinzuzufügen.
 
-Weitere Informationen finden Sie unter [&#x200B; von HTTP-Kopfzeilen](../../installation/using/configuring-campaign-server.md#managing-http-headers).
+Weitere Informationen finden Sie unter [ von HTTP-Kopfzeilen](../../installation/using/configuring-campaign-server.md#managing-http-headers).
 
 <table> 
  <thead> 
@@ -3422,7 +3418,7 @@ Weitere Informationen finden Sie unter [Redundantes Tracking](../../installation
 
 Im Folgenden finden Sie die verschiedenen Parameter **Knotens „web > spamCheck**. Dies ist die Konfiguration der Bewertungsparameter für die Anti-Spam-Punktzahl in E-Mails.
 
-Weitere Informationen finden Sie unter [&#x200B; von SpamAssassin](../../installation/using/configuring-spamassassin.md).
+Weitere Informationen finden Sie unter [ von SpamAssassin](../../installation/using/configuring-spamassassin.md).
 
 <table> 
  <thead> 

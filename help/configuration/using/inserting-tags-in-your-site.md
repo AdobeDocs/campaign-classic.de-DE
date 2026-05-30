@@ -6,11 +6,11 @@ feature: Configuration
 role: Developer
 exl-id: e7fcec75-82fe-45ff-8d45-7d6e95baeb14
 TQID: https://experienceleague.adobe.com/Z8FQ1ukAxvRBTBFOxf2-lZF2-cqIIgA4H0bYDc9uTe4
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+feature_v2: []
+subfeature_v2: []
+source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
 source-wordcount: 331
 ht-degree: 0%
@@ -130,7 +130,7 @@ Wenn Ihre Web-Seiten dynamisch generiert werden, können Sie das Web-Tracking-Ta
 
 Wenn Sie die an den Weiterleitungsserver gesendeten Informationen steuern möchten, ist es am zuverlässigsten, die HTTP-Abfrage mithilfe einer Seitengenerierungssprache selbst synchron durchzuführen.
 
-Die von Ihnen erstellte URL muss den unter (Webtracking[Tag: Definition) definierten Syntaxregeln &#x200B;](../../configuration/using/web-tracking-tag-definition.md).
+Die von Ihnen erstellte URL muss den unter (Webtracking[Tag: Definition) definierten Syntaxregeln ](../../configuration/using/web-tracking-tag-definition.md).
 
 ![](assets/d_ncs_integration_webtracking_structure3.png)
 

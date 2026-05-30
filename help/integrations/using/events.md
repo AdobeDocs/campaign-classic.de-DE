@@ -9,22 +9,15 @@ content-type: reference
 level: Intermediate, Experienced
 exl-id: 13717b3b-d34a-40bc-9c9e-dcf578fc516e
 TQID: https://experienceleague.adobe.com/zoNgRb4L1EWAtQsLDNs6YNlakXeRXMn6DE2McoCemGU
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-  - id: b12f6872-9271-4369-85e5-86969a0b99a2
-  - id: d5ef99fa-df0c-4153-bf94-105ad0724167
-subfeature_v2:
-  - id: c3bf7e1e-1db5-4c72-9293-e2f0b1ab73d0
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: b12f6872-9271-4369-85e5-86969a0b99a2id: d5ef99fa-df0c-4153-bf94-105ad0724167
+subfeature_v2: id: cbcf4d90-26be-46e2-b16a-aebc529dc41eid: df0d6518-6f49-46e2-b46e-3bcc513f553fid: eb007b6d-6e57-46ab-9485-3f24d6102304id: b1fd1501-3105-4d6b-b4d4-9af53126df75
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 1210
-ht-degree: 100%
+source-wordcount: 1015
+ht-degree: 93%
 
 ---
 
@@ -92,8 +85,8 @@ Beispiel:
 >
 >Es handelt sich hierbei um ein spezifisches Beispiel aus verschiedenen möglichen Implementierungen.
 
-Der Inhalt wird für jeden Auslöser in Adobe Analytics im JSON-Format definiert.
-Zum Beispiel im Auslöser &quot;logoUpload_uploading_Visits&quot;:
+Der Inhalt wird für jeden Trigger im JSON-Format in Adobe Analytics definiert.
+Beispiel: In einem Trigger „LogoUpload_Upload_Visits“:
 
 * **[!UICONTROL eVar01]** kann die Käufer-ID im Zeichenfolgenformat (&quot;String&quot;) enthalten, die zur Abstimmung mit Adobe Campaign-Empfängern verwendet wird. <br>Sie muss abgestimmt werden, um die Käufer-ID zu ermitteln, die den Primärschlüssel darstellt.
 
@@ -137,8 +130,8 @@ Derzeit gibt es keine Möglichkeit, unterschiedliche Warteschlangen für separat
 
 ### Protokollierung und Fehlerbehandlung {#logging-error-handling}
 
-Logs wie &quot;logInfo()&quot; werden an das [!DNL pipelined]-Log weitergeleitet. Fehler wie &quot;logError()&quot; werden in das [!DNL pipelined]-Log geschrieben und führen dazu, dass das Ereignis in eine Warteschlange für erneute Versuche gestellt wird. In diesem Fall sollten Sie das pipelined-Log überprüfen.
-Bei fehlerhaften Nachrichten werden im Zeitraum, der in den [!DNL pipelined]-Optionen festgelegt ist, mehrmals erneute Versuche ausgeführt.
+Protokolle wie logInfo() werden an das [!DNL pipelined] weitergeleitet. Fehler wie logError() werden in das [!DNL pipelined]-Protokoll geschrieben und führen dazu, dass das Ereignis in eine Warteschlange für weitere Zustellversuche gestellt wird. In diesem Fall sollten Sie das Pipeline-Protokoll überprüfen.
+Bei fehlerhaften Nachrichten wird in der in den [!DNL pipelined] Optionen festgelegten Dauer mehrmals ein neuer Zustellversuch unternommen.
 
 Zu Debugging- und Überwachungszwecken werden die vollständigen Auslöserdaten im Feld &quot;data&quot; der Auslösertabelle im XML-Format geschrieben. Alternativ dazu sind die Auslöserdaten auch in &quot;logInfo()&quot; verfügbar.
 
@@ -163,8 +156,8 @@ function processPipelineMessage(xmlTrigger)
  }
 ```
 
-Gehen Sie beim Analysieren sorgfältig vor, um Fehler zu vermeiden.
-Da dieser Code für alle Auslöser verwendet wird, sind die meisten Daten nicht erforderlich. Sie können daher leer bleiben, wenn nicht vorhanden.
+Seien Sie beim Analysieren vorsichtig, um Fehler zu vermeiden.
+Da dieser Code für alle Trigger verwendet wird, sind die meisten Daten nicht erforderlich. Daher kann es leer gelassen werden, wenn es nicht vorhanden ist.
 
 ### Speichern des Auslösers {#storing-triggers-js}
 
@@ -210,9 +203,9 @@ Um eine schnellere Verarbeitung zu ermöglichen, werden mehrere Threads des Skri
 
 ### Pipeline-Ereignisschema {#pipeline-event-schema}
 
-Ereignisse werden in einer Datenbanktabelle gespeichert. Sie werden in Marketing-Kampagnen verwendet, um mithilfe von Auslösern Zielkunden zu bestimmen und E-Mails anzureichern.
-Zwar kann jeder Auslöser eine eigene Datenstruktur aufweisen, doch lassen sich alle Auslöser in einer einzigen Tabelle speichern.
-Das Feld &quot;triggerType&quot; gibt an, von welchem Auslöser die Daten stammen.
+Ereignisse werden in einer Datenbanktabelle gespeichert. Er wird von Marketing-Kampagnen verwendet, um Kundinnen und Kunden anzusprechen und E-Mails mithilfe von Triggern anzureichern.
+Obwohl jeder Trigger eine eigene Datenstruktur haben kann, können alle Trigger in einer einzigen Tabelle zusammengefasst werden.
+Das Feld triggerType gibt an, von welchem Trigger die Daten stammen.
 
 Hier ist ein Beispiel für einen Schema-Code für diese Tabelle:
 
@@ -243,8 +236,8 @@ Die Ereignisse können mit einem einfachen Formular, das auf dem Ereignisschema 
 
 Bei der Abstimmung gleicht Adobe Analytics den Kunden mit der Adobe Campaign-Datenbank ab. Das Kriterium für die Abstimmung kann beispielsweise &quot;shopper_id&quot; sein.
 
-Aus Performance-Gründen muss die Abstimmung von einem Workflow im Batch-Modus vorgenommen werden.
-Die Häufigkeit muss für eine optimale Arbeitslast auf 15 Minuten gesetzt werden. Die Verzögerung zwischen dem Empfang eines Ereignisses in Adobe Campaign und dessen Verarbeitung durch einen Marketing-Workflow beträgt daher bis zu 15 Minuten.
+Aus Leistungsgründen muss der Abgleich im Batch-Modus durch einen Workflow erfolgen.
+Die Häufigkeit muss auf 15 Minuten eingestellt sein, um die Arbeitslast zu optimieren. Infolgedessen beträgt die Verzögerung zwischen dem Ereignisempfang in Adobe Campaign und der Verarbeitung durch einen Marketing-Workflow bis zu 15 Minuten.
 
 ### Optionen zur Abstimmung von Einheiten in JavaScript {#options-unit-reconciliation}
 
@@ -258,5 +251,5 @@ Trigger werden innerhalb der jeweiligen Stunde verarbeitet. Das Volumen kann etw
 
 ### Kampagnen-Workflow {#campaign-workflow}
 
-Der Kampagnen-Workflow für Auslöser ähnelt oft anderen wiederkehrenden Kampagnen, die bereits verwendet wurden.
-Beispielsweise kann er mit einer Abfrage nach den Auslösern starten, um nach bestimmten Ereignissen zu suchen, die während des letzten Tages stattgefunden haben. Diese Zielgruppe wird zum Senden der E-Mail genutzt. Anreicherungen oder Daten können vom Auslöser übernommen werden. Sie können vom Marketing-Team sicher verwendet werden, da keine Konfiguration erforderlich ist.
+Der Kampagnen-Workflow für Trigger ähnelt häufig anderen wiederkehrenden Kampagnen, die verwendet wurden.
+Sie kann beispielsweise mit einer Abfrage der Trigger beginnen, die im letzten Tag nach bestimmten Ereignissen suchen. Diese Zielgruppe wird zum Senden der E-Mail verwendet. Anreicherungen oder Daten können vom Trigger stammen. Es kann vom Marketing sicher verwendet werden, da es keine Konfiguration erfordert.

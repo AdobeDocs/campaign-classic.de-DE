@@ -6,13 +6,11 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Web Forms
 exl-id: 72959141-ca18-4512-80c7-239efd31f711
 TQID: https://experienceleague.adobe.com/3oyhvCWX30kK7dtytjLYvO5Xnbu2-I7FGeJPcjcreho
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
-topic_v2:
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: c5474392-5419-4296-9e41-f6f4ce4f6e9bid: a4671286-a59f-47e3-b97b-90627a1977d5
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+subfeature_v2: id: f391046b-0cf3-4e76-bd3b-97fe06654506id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281id: d7be2b01-dc9c-40f7-aace-a151707504ed
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
 source-wordcount: 1689
 ht-degree: 78%
@@ -83,7 +81,7 @@ Standardmäßig wird jede Übersetzungssprache der Web-Anwendung angezeigt. Es g
 
 Gehen Sie zur Dropdown-Liste **[!UICONTROL Sprache]**, um die Übersetzungssprache auszuwählen.
 
-Um nur nicht übersetzte Zeichenfolgen anzuzeigen, wählen **[!UICONTROL Zu übersetzen]** in der Dropdown-**„Status** aus. Sie können auch nur übersetzte oder genehmigte Zeichenfolgen anzeigen.
+Um nur nicht übersetzte Zeichenfolgen anzuzeigen, wählen **[!UICONTROL Zu übersetzen]** in der Dropdown-]**„Status**[!UICONTROL  aus. Sie können auch nur übersetzte oder genehmigte Zeichenfolgen anzeigen.
 
 ### Strings übersetzen {#translating-strings}
 
@@ -176,7 +174,7 @@ wenn die Sprache der erste oder einzige Parameter der URL ist. Beispiel: **https
 &lang=xx
 ```
 
-wenn es in der URL vor der Sprache noch andere Parameter gibt. Beispiel: **https://myserver/webApp/APP34?status=1&lang=en**
+wenn es in der URL vor der Sprache noch andere Parameter gibt. Beispiel: **https://myserver/webApp/APP34?status=1&amp;lang=en**
 
 Die standardmäßig verfügbaren Übersetzungssprachen und Wörterbücher sind unten aufgeführt.
 
@@ -437,7 +435,7 @@ Fügen Sie **?lang=es** oder **?lang=de** hinzu, um den Inhalt auf Spanisch oder
 >[!NOTE]
 >
 >Wenn für diese Webanwendung bereits andere Parameter verwendet werden, fügen Sie **&amp;lang=** hinzu.\
->Beispiel: **https://myserver/webApp/APP34?status=1&lang=en**
+>Beispiel: **https://myserver/webApp/APP34?status=1&amp;lang=en**
 
 ## Erweiterte Übersetzungskonfiguration {#advanced-translation-configuration}
 

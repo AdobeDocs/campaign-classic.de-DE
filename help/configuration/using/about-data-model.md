@@ -6,22 +6,15 @@ feature: Data Model, Configuration
 role: Developer
 exl-id: 655b5928-b005-442f-b026-2f1b0c1abb99
 TQID: https://experienceleague.adobe.com/jyvz5WCdNhYtusE-HwPRwXNlr9Wh0swcQoOT05lkOYA
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-  - id: b12f6872-9271-4369-85e5-86969a0b99a2
-  - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
-subfeature_v2:
-  - id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: b12f6872-9271-4369-85e5-86969a0b99a2id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+subfeature_v2: id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 1002
-ht-degree: 25%
+source-wordcount: 921
+ht-degree: 20%
 
 ---
 
@@ -47,9 +40,9 @@ Das Datenmodell enthält auch einen Teil, der dem Speichern aller Marketing-Akti
 
 Ein anderer Teil des Datenmodells ermöglicht es, vorübergehend alle Protokolle zu speichern, die mit der Ausführung der Kampagnen verbunden sind.
 
-Versand-Logs sind sämtliche Nachrichten, die über alle Kanäle hinweg an Empfänger oder Geräte gesendet werden. Die Haupttabelle der Versandlogs (**NmsBroadLog**) enthält die Versandlogs für alle Empfänger.
+Versandlogs sind alle Nachrichten, die über alle Kanäle hinweg an Empfänger oder Geräte gesendet werden. Die Haupttabelle der Versandlogs (**NmsBroadLog**) enthält die Versandlogs für alle Empfänger.
 Die Haupt-Trackinglog-Tabelle (**NmsTrackingLog**) speichert die Trackinglogs für alle Empfänger. Die Trackinglogs beziehen sich auf Reaktionen von Empfängern wie E-Mail-Öffnungen und Klicks. Jede Reaktion entspricht einem Trackinglog.
-Versand-Logs und Trackinglogs werden nach einem bestimmten Zeitraum gelöscht, der in Adobe Campaign angegeben und änderbar ist. Daher wird dringend empfohlen, die Logs regelmäßig zu exportieren.
+Versandlogs und Trackinglogs werden nach einem bestimmten Zeitraum gelöscht, der in Adobe Campaign angegeben ist und geändert werden kann. Daher wird dringend empfohlen, die Protokolle regelmäßig zu exportieren.
 
 ### Technische Tabellen {#technical-tables}
 
@@ -78,7 +71,7 @@ Da die Empfängertabelle Teil des Produkts ist, ändern sich sowohl die Tabelle 
 
 Wenn Sie mit Adobe Campaign beginnen, müssen Sie das Standarddatenmodell evaluieren, um zu prüfen, welche Tabelle am besten zur Speicherung Ihrer Marketing-Daten geeignet ist.
 
-Bei Bedarf können Sie die standardmäßige Empfängertabelle mit den vordefinierten Feldern verwenden, wie in ([&#x200B; Abschnitt) &#x200B;](#default-recipient-table).
+Bei Bedarf können Sie die standardmäßige Empfängertabelle mit den vordefinierten Feldern verwenden, wie in ([ Abschnitt) ](#default-recipient-table).
 
 Bei Bedarf können Sie sie mit zwei Verfahren erweitern:
 
@@ -93,15 +86,15 @@ Weitere Informationen zum Konfigurieren von Erweiterungsschemata zur Erweiterung
 
 ## Verwenden einer benutzerdefinierten Empfängertabelle {#custom-recipient-table}
 
-Beim Entwerfen Ihres Adobe Campaign-Datenmodells können Sie die [integrierte Empfängertabelle) verwenden &#x200B;](#default-recipient-table) oder eine [benutzerdefinierte Empfängertabelle) &#x200B;](../../configuration/using/about-custom-recipient-table.md), um Ihre Marketing-Profile zu speichern.
+Beim Entwerfen Ihres Adobe Campaign-Datenmodells können Sie die [integrierte Empfängertabelle) verwenden ](#default-recipient-table) oder eine [benutzerdefinierte Empfängertabelle) ](../../configuration/using/about-custom-recipient-table.md), um Ihre Marketing-Profile zu speichern.
 
 Wenn Ihr Datenmodell nicht zur empfängerorientierten Struktur passt, können Sie in Adobe Campaign andere Tabellen als Zielgruppendimension einrichten. Dies kann beispielsweise relevant sein, wenn Sie Haushalte, Konten (wie Mobiltelefone) und Unternehmen/Websites anstatt nur Empfänger ansprechen möchten.
 
 >[!NOTE]
 >
->In diesem Fall müssen Sie ein neues „Zielgruppen[Mapping“ &#x200B;](../../configuration/using/target-mapping.md).
+>In diesem Fall müssen Sie ein neues „Zielgruppen[Mapping“ ](../../configuration/using/target-mapping.md).
 
-Alle Prinzipien und Schritte, die bei der Verwendung einer benutzerdefinierten Empfängertabelle erforderlich sind, werden in [diesem Abschnitt) &#x200B;](../../configuration/using/about-custom-recipient-table.md).
+Alle Prinzipien und Schritte, die bei der Verwendung einer benutzerdefinierten Empfängertabelle erforderlich sind, werden in [diesem Abschnitt) ](../../configuration/using/about-custom-recipient-table.md).
 
 Die Verwendung einer benutzerdefinierten Empfängertabelle bietet folgende Vorteile:
 
@@ -128,6 +121,6 @@ Weitere Informationen zum Campaign-Datenmodell finden Sie in den folgenden Absch
   ![](assets/data-model_documentation-tab.png)
 
 
-* **Campaign-Schemata** - Die physische und logische Struktur der im Programm übertragenen Daten wird in XML beschrieben. Sie folgt einer Adobe Campaign-spezifischen Grammatik namens „Schema“. Weitere Informationen zu Adobe Campaign-Schemata finden Sie [&#x200B; (diesem Abschnitt](../../configuration/using/about-schema-reference.md).
+* **Campaign-Schemata** - Die physische und logische Struktur der im Programm übertragenen Daten wird in XML beschrieben. Sie folgt einer Adobe Campaign-spezifischen Grammatik namens „Schema“. Weitere Informationen zu Adobe Campaign-Schemata finden Sie [ (diesem Abschnitt](../../configuration/using/about-schema-reference.md).
 
 * **Best Practices für Datenmodelle** - Erfahren Sie mehr über die Architektur von Campaign-Datenmodellen und die zugehörigen Best Practices in [diesem Abschnitt](../../configuration/using/data-model-best-practices.md#data-model-architecture).
