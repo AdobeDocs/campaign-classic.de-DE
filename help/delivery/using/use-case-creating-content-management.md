@@ -6,10 +6,19 @@ badge-v8: label="Gilt auch für v8" type="Positive" tooltip="Gilt auch für Camp
 feature: Delivery Templates
 exl-id: b0d1cf0e-656e-4d24-9a31-16fef4cd40d0
 TQID: https://experienceleague.adobe.com/8N-zb5Qx4LHl9iDh0fdAQfzVmA7Lsc5gIwT8tuu0Dfc
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2: id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9id: c5474392-5419-4296-9e41-f6f4ce4f6e9bid: b631758a-142d-425f-b9aa-f756d85cb979id: c858a28b-ea19-49b0-8d48-828717fad89c
-subfeature_v2: id: c8da4fdd-eb94-4751-a43c-f82733fb2d6eid: e739ee2b-6228-412e-878f-45de0791417d
-topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+  - id: b631758a-142d-425f-b9aa-f756d85cb979
+  - id: c858a28b-ea19-49b0-8d48-828717fad89c
+subfeature_v2:
+  - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+  - id: e739ee2b-6228-412e-878f-45de0791417d
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
 source-wordcount: 1235
@@ -88,7 +97,7 @@ Gehen Sie wie folgt vor, um ein Datenschema zu erstellen:
 
    ![](assets/s_ncs_content_param_schema_step2.png)
 
-   Weitere Informationen hierzu finden Sie im Abschnitt [Schemabearbeitung ](data-schemas.md#editing-schemas).
+   Weitere Informationen hierzu finden Sie im Abschnitt [Schemabearbeitung &#x200B;](data-schemas.md#editing-schemas).
 
    Für jedes im Inhalt bezeichnete Element muss der entsprechende Datentyp eingefügt werden.
 
@@ -365,7 +374,7 @@ Gehen Sie wie folgt vor:
 
 1. Erstellen Sie im Knoten **[!UICONTROL Administration > Konfiguration > Veröffentlichungsvorlagen]** eine neue Vorlage.
 1. Geben Sie Namen und Titel an und wählen Sie das jeweils zu verwendende Schema und Formular aus.
-1. Geben Sie dann den Namen der Vorlage ein und wählen Sie den gewünschten Rendermodus aus. Im vorliegenden Beispiel handelt es sich gemäß der zuvor erstellten Vorlage um JavaScript.****
+1. Geben Sie dann den Namen der Vorlage ein und wählen Sie den gewünschten Rendermodus aus. Im vorliegenden Beispiel handelt es sich gemäß der zuvor erstellten Vorlage um JavaScript.**&#x200B;**
 
    ![](assets/s_ncs_content_param_form_publish.png)
 

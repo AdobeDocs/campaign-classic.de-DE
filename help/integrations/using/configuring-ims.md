@@ -9,7 +9,11 @@ content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: b70ca220-1c81-4b23-b07a-a2cd694877fe
 feature_v2: []
-subfeature_v2: id: cbcf4d90-26be-46e2-b16a-aebc529dc41eid: df0d6518-6f49-46e2-b46e-3bcc513f553fid: eb007b6d-6e57-46ab-9485-3f24d6102304id: b1fd1501-3105-4d6b-b4d4-9af53126df75
+subfeature_v2:
+  - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+  - id: df0d6518-6f49-46e2-b46e-3bcc513f553f
+  - id: eb007b6d-6e57-46ab-9485-3f24d6102304
+  - id: b1fd1501-3105-4d6b-b4d4-9af53126df75
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
 source-wordcount: 361
@@ -26,7 +30,7 @@ ht-degree: 69%
 
 ## Voraussetzungen {#prerequisites}
 
-* Müssen Sie über einen Organisationsnamen und eine Organisations-ID für Adobe Experience Cloud verfügen. Auf [ Seite erfahren Sie, wie Sie Ihre Organisations-ID ](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=de){_blank}.
+* Müssen Sie über einen Organisationsnamen und eine Organisations-ID für Adobe Experience Cloud verfügen. Auf [&#x200B; Seite erfahren Sie, wie Sie Ihre Organisations-ID &#x200B;](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=de){_blank}.
 * müssen Sie in Experience Cloud Benutzer hinzufügen. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=de){_blank}.
 
 >[!NOTE]
@@ -55,7 +59,7 @@ Folgende Angaben sind erforderlich:
 
   Die **[!UICONTROL Callback-Server]**-Adresse muss in &quot;**&quot;** werden. Dieses Feld entspricht der Zugriffs-URL Ihrer Adobe Campaign-Instanz.
 
-* Organisations-ID: Auf [ Seite erfahren Sie, wie Sie Ihre Organisations-ID ](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=de){_blank}.
+* Organisations-ID: Auf [&#x200B; Seite erfahren Sie, wie Sie Ihre Organisations-ID &#x200B;](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=de){_blank}.
 
 * Zuordnungsmaske: In diesem Feld können Sie die Syntax definieren, mit der Konfigurationsnamen in Enterprise Dashboard mit den Gruppen in Adobe Campaign synchronisiert werden können. Wenn Sie die Syntax „Campaign - tenant_id - (.&#42;)“ verwenden, wird die in Adobe Campaign erstellte Sicherheitsgruppe mit dem Konfigurationsnamen „Campaign - tenant_id - internal_name“ im Enterprise Dashboard verknüpft.
 

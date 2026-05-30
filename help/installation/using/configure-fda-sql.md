@@ -5,8 +5,11 @@ description: Erfahren Sie, wie Sie den Zugriff auf Microsoft SQL Server konfigur
 feature: Installation, Federated Data Access
 exl-id: 65ab4577-3126-4579-8fcc-e93772ebd1e8
 TQID: https://experienceleague.adobe.com/i9yR7cCPf8T0XbYKVESpx1tf1Yd1ji0RmVdxCjomWD4
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080bid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
@@ -75,7 +78,7 @@ So konfigurieren Sie [!DNL Microsoft SQL Server] unter Windows:
 
 1. Überprüfen Sie, ob der SQL Server Native Client v11 im Fenster **[!UICONTROL Neue Daten-Source erstellen]** aufgeführt ist.
 
-1. Wenn der native SQL Server-Client nicht aufgeführt ist, können Sie ihn auf [dieser Seite) ](https://www.microsoft.com/en-my/download/details.aspx?id=36434).
+1. Wenn der native SQL Server-Client nicht aufgeführt ist, können Sie ihn auf [dieser Seite) &#x200B;](https://www.microsoft.com/en-my/download/details.aspx?id=36434).
 
 1. In Adobe Campaign können Sie dann Ihr externes [!DNL Microsoft SQL Server]-Konto konfigurieren. Weiterführende Informationen zur Konfiguration Ihres externen Kontos finden Sie in [diesem Abschnitt](#sql-external).
 
@@ -93,7 +96,7 @@ Sie müssen ein [!DNL Microsoft SQL Server] externes Konto erstellen, um Ihre Ca
 
    ![](assets/sql.png)
 
-1. Konfigurieren Sie die Authentifizierung des externen Microsoft SQL Server ]**-Kontos:**[!UICONTROL 
+1. Konfigurieren Sie die Authentifizierung des externen Microsoft SQL Server **-Kontos:**
 
    * **[!UICONTROL Server]**: URL des [!DNL Microsoft SQL Server].
 

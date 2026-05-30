@@ -6,9 +6,12 @@ feature: API
 role: Developer
 exl-id: 7aa2aef1-2eb6-48a6-82fa-4451bed66216
 TQID: https://experienceleague.adobe.com/fZRtM-J9LP9AqvrRMeyzErpCXsfBbC1UIUpskV4PEqU
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2: id: b12f6872-9271-4369-85e5-86969a0b99a2
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: b12f6872-9271-4369-85e5-86969a0b99a2
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
@@ -23,7 +26,7 @@ ht-degree: 7%
 
 Der Adobe Campaign-Anwendungsserver wurde für Offenheit und einfache Integration mit immer vielfältigeren und komplexeren Unternehmensinformationssystemen konzipiert.
 
-Adobe Campaign-APIs werden in JavaScript innerhalb des Programms und in SOAP außerhalb desselben verwendet. Sie bilden eine Bibliothek allgemeiner Funktionen, die angereichert werden können. Weitere Informationen finden Sie unter [ von SOAP-](../../configuration/using/implementing-soap-methods.md).
+Adobe Campaign-APIs werden in JavaScript innerhalb des Programms und in SOAP außerhalb desselben verwendet. Sie bilden eine Bibliothek allgemeiner Funktionen, die angereichert werden können. Weitere Informationen finden Sie unter [&#x200B; von SOAP-](../../configuration/using/implementing-soap-methods.md).
 
 >[!IMPORTANT]
 >
@@ -70,7 +73,7 @@ Das folgende Schema zeigt die verschiedenen Ressourcen, die bei der Verwendung v
 
 In diesem Beispiel ruft eine SOAP-Abfrage die Methode „ExecuteQuery“ auf, die eine Zeichenfolge als Authentifizierungsparameter (Sitzungs-Token) und einen XML-Inhalt für die Beschreibung der auszuführenden Abfrage benötigt.
 
-Weitere Informationen finden Sie unter [ (xtk:queryDef)](../../configuration/using/data-oriented-apis.md#executequery--xtk-querydef-).
+Weitere Informationen finden Sie unter [&#x200B; (xtk:queryDef)](../../configuration/using/data-oriented-apis.md#executequery--xtk-querydef-).
 
 >[!NOTE]
 >

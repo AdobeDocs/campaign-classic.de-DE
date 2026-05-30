@@ -8,9 +8,11 @@ content-type: reference
 topic-tags: deployment-types-
 exl-id: 4df126fa-4a6e-46a7-af6e-1e2e97f0072e
 TQID: https://experienceleague.adobe.com/qg59AtZmUGDO0bLwykBdMxL9pEUDwsyxn98faauXCdc
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
 feature_v2: []
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
@@ -171,7 +173,7 @@ Zusammenfassend sind folgende Etappen zu durchlaufen:
 1. Adobe Campaign-Server starten.
 1. Stellen Sie in der Adobe Campaign-Konsole eine Verbindung mit dem **admin** her, melden Sie sich ohne Kennwort an und starten Sie den Bereitstellungsassistenten.
 
-   Weitere Informationen hierzu finden Sie unter &quot;[ einer Instanz](../../installation/using/deploying-an-instance.md).
+   Weitere Informationen hierzu finden Sie unter &quot;[&#x200B; einer Instanz](../../installation/using/deploying-an-instance.md).
 
    Die Konfiguration ist mit der Konfiguration einer eigenständigen Instanz identisch, abgesehen von der Konfiguration des Tracking-Moduls.
 

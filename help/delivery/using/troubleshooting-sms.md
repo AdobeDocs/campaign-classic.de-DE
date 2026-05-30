@@ -6,11 +6,21 @@ feature: SMS, Troubleshooting
 role: User
 exl-id: 841f0c2f-90ef-4db0-860a-75fc7c48804a
 TQID: https://experienceleague.adobe.com/h0vsbqdwW-21Ay-v8v8eUQzHyDkCVZoxXWHx5m1Qd7g
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11
-feature_v2: id: b631758a-142d-425f-b9aa-f756d85cb979id: c858a28b-ea19-49b0-8d48-828717fad89c
-subfeature_v2: id: e95a583b-fcfa-4524-8666-46a29c828119id: c8da4fdd-eb94-4751-a43c-f82733fb2d6eid: d5bbe3da-ba85-4242-817e-54f7c4b943e0id: f4da0e76-df77-451e-ad61-21afb7bd8810
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+feature_v2:
+  - id: b631758a-142d-425f-b9aa-f756d85cb979
+  - id: c858a28b-ea19-49b0-8d48-828717fad89c
+subfeature_v2:
+  - id: e95a583b-fcfa-4524-8666-46a29c828119
+  - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+  - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+  - id: f4da0e76-df77-451e-ad61-21afb7bd8810
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
 source-wordcount: 2904
@@ -50,7 +60,7 @@ Sie müssen sich an den Provider wenden, um potenzielle Konflikte auf seiner Sei
    * Einige der externen Konten verwenden dieselbe Kombination aus Anmelde-/Kennwort.
 Der Anbieter kann nicht erkennen, von welchem externen Konto das `BIND PDU` stammt, daher behandeln er alle Verbindungen aus mehreren Konten als eine einzige. Möglicherweise haben sie MO und SR nach dem Zufallsprinzip über die beiden Konten weitergeleitet, was Probleme verursacht.
 Wenn der Anbieter mehrere Kurzwahlnummern für dieselbe Anmelde-/Kennwortkombination unterstützt, müssen Sie ihn fragen, wo er diese Kurzwahlnummer in die `BIND PDU` einfügen soll. Beachten Sie, dass diese Informationen in der `BIND PDU` und nicht in `SUBMIT_SM` platziert werden müssen, da die `BIND PDU` der einzige Ort ist, der das korrekte Routing von MOs ermöglicht.
-Informationen dazu, welches Feld im `BIND PDU` verfügbar ist[ finden Sie im obigen Abschnitt ](sms-protocol.md#information-pdu)Informationen zu jeder Art von PDUs“. Normalerweise fügen Sie den Kurzwahlcode in `address_range` hinzu, dies erfordert jedoch spezielle Unterstützung vom Anbieter. Kontaktieren Sie sie, um zu erfahren, wie sie mehrere Kurzwahlnummern unabhängig voneinander weiterleiten möchten.
+Informationen dazu, welches Feld im `BIND PDU` verfügbar ist[&#x200B; finden Sie im obigen Abschnitt &#x200B;](sms-protocol.md#information-pdu)Informationen zu jeder Art von PDUs“. Normalerweise fügen Sie den Kurzwahlcode in `address_range` hinzu, dies erfordert jedoch spezielle Unterstützung vom Anbieter. Kontaktieren Sie sie, um zu erfahren, wie sie mehrere Kurzwahlnummern unabhängig voneinander weiterleiten möchten.
 Adobe Campaign unterstützt die Verarbeitung mehrerer Kurzwahlnummern im selben externen Konto.
 
 ## Problem mit dem externen Konto im Allgemeinen {#external-account-issues}

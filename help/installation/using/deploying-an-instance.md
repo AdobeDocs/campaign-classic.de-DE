@@ -9,10 +9,18 @@ content-type: reference
 topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
 TQID: https://experienceleague.adobe.com/M1uqZA6cfopJkJ-pg3m-1R-eBbM55zv7R-FSxOfFUwI
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2: id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
-subfeature_v2: id: b5852c32-876b-41ae-92a7-9f588865ae52id: e656c701-3899-4db3-989c-de0980ddfffaid: eff19c99-440a-4318-b319-444edc4d8d8f
-topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080bid: eddd9b14-83bd-4ff4-9072-54a4a484abb7id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+subfeature_v2:
+  - id: b5852c32-876b-41ae-92a7-9f588865ae52
+  - id: e656c701-3899-4db3-989c-de0980ddfffa
+  - id: eff19c99-440a-4318-b319-444edc4d8d8f
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
 source-wordcount: 3629
@@ -387,7 +395,7 @@ In einem Versand können Sie Bilder verwenden, die in der öffentlichen Ressourc
 
   Dieser Wert kann für jeden Versand überschrieben werden.
 
-* Für öffentliche Ressourcen ist die URL **https://** server **/res/** instance ****wobei **instance**der Name der Tracking-Instanz ist.
+* Für öffentliche Ressourcen ist die URL **https://** server **/res/** instance **&#x200B;**&#x200B;wobei **instance**&#x200B;der Name der Tracking-Instanz ist.
 
 ### Erkennung der Bilder einer Sendung {#delivery-image-detection}
 
@@ -399,7 +407,7 @@ Im Feld **URL-Masken** können Sie die Liste der URL-Masken angeben, die beim au
 
 Sie können mehrere URL-Masken mithilfe eines Kommas angeben, um jede davon zu trennen.
 
-* Informationen zur Verwendung und Verwaltung von Bildern in E-Mails finden Sie in der [ zu Campaign v8 ](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=de#adding-images){target="_blank"}.
+* Informationen zur Verwendung und Verwaltung von Bildern in E-Mails finden Sie in der [&#x200B; zu Campaign v8 &#x200B;](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=de#adding-images){target="_blank"}.
 * Im Versandassistenten haben die von diesen URLs aufgerufenen Bilder den Status „Ignoriert“.
 
 ### Veröffentlichungsmodi {#publication-modes}
@@ -410,7 +418,7 @@ Die folgenden Veröffentlichungsmodi sind verfügbar:
 
 * Trackingserver
 
-  Die Ressourcen werden automatisch auf die verschiedenen Tracking-Server kopiert. Sie werden im Schritt „Tracking[Konfiguration“ ](#tracking-configuration).
+  Die Ressourcen werden automatisch auf die verschiedenen Tracking-Server kopiert. Sie werden im Schritt „Tracking[Konfiguration“ &#x200B;](#tracking-configuration).
 
 * Andere Adobe Campaign-Server
 
@@ -453,7 +461,7 @@ Bei einer Veröffentlichung auf einem Adobe Campaign-Server ohne manuelles Verö
 
 >[!NOTE]
 >
->Es ist möglich, das Verzeichnis der öffentlichen Ressourcenspeicher zu ändern. Weitere Informationen hierzu finden Sie unter &quot;[ öffentlicher Ressourcen](#managing-public-resources).
+>Es ist möglich, das Verzeichnis der öffentlichen Ressourcenspeicher zu ändern. Weitere Informationen hierzu finden Sie unter &quot;[&#x200B; öffentlicher Ressourcen](#managing-public-resources).
 
 ### Synchronisieren von öffentlichen Ressourcen {#synchronizing-public-resources}
 

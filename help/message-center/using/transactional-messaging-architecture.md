@@ -5,8 +5,10 @@ description: In diesem Abschnitt werden die Transaktionsnachrichten-Architektur 
 feature: Transactional Messaging, Message Center, Architecture
 exl-id: 0a059397-b037-405b-b9c1-94a4a072674d
 TQID: https://experienceleague.adobe.com/37Nw8x5SwRELOeJd8BXvE-tcN66Kb1vraEgkkzeaKI8
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
@@ -91,7 +93,7 @@ Wenn Sie jedoch ein Transaktionsnachrichtenprojekt auf dem E-Mail-Kanal gestarte
 >Dieses Verfahren gilt nur für Kunden, die einen Windows NLServer verwenden, der auf demselben Computer installiert ist, auf dem sie arbeiten.
 
 1. Installieren Sie den benötigten Kanal, zum Beispiel den **mobilen Kanal**, mithilfe des Package-Import-Assistenten (**[!UICONTROL Tools > Erweitert > Package importieren... > Adobe Campaign-Package]**).
-1. Führen Sie einen Dateiimport durch (**[!UICONTROL Tools > Erweitert > Package-Import... > Datei]**) und wählen Sie die Datei **datakitnms **`[Your language]`**packagemessageCenter.xml** aus.
+1. Führen Sie einen Dateiimport durch (**[!UICONTROL Tools > Erweitert > Package-Import... > Datei]**) und wählen Sie die Datei **datakitnms &#x200B;**`[Your language]`**packagemessageCenter.xml** aus.
 1. Behalten Sie im Bereich **[!UICONTROL XML-Inhalt der zu importierenden Daten]** nur die Versandvorlage bei, die dem hinzugefügten Kanal entspricht. Wenn Sie beispielsweise den **mobilen Kanal** gewählt haben, behalten Sie nur das Element **Entitäten** bei, das der Vorlage **[!UICONTROL Mobil-Transaktionsnachricht]** (smsTriggerMessage) entspricht. Wenn Sie den **Mobile App-Kanal** hinzugefügt haben, behalten Sie nur die **iOS-Transaktionsnachricht** (iosTriggerMessage) und die **Android-Transaktionsnachricht** (androidTriggerMessage) bei.
 
    ![](assets/messagecenter_install_channel.png)
@@ -145,7 +147,7 @@ In Kombination mit dem Mobile-App-Kanal-Modul können Sie über Benachrichtigung
 Um Transaktionsnachrichten-Module in Verbindung mit dem Mobile-App-Kanal zu nutzen, sind folgende Konfigurationen notwendig:
 
 1. Installieren Sie das Package **Mobile App Channel** in den Kontroll- und Ausführungsinstanzen.
-1. Replizieren Sie den Dienst sowie die Applikationen, die dieser in den Ausführungsinstanzen enthält.****
+1. Replizieren Sie den Dienst sowie die Applikationen, die dieser in den Ausführungsinstanzen enthält.**&#x200B;**
 
 Das betreffende Ereignis muss folgende Elemente enthalten:
 

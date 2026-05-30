@@ -8,8 +8,10 @@ content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
 TQID: https://experienceleague.adobe.com/TSJbp95dm2tysQBxN7E7JktnHmMJndR1hXVvKkLzRIg
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
@@ -37,7 +39,7 @@ Bitte überprüfen Sie die folgenden Details, um zu verstehen, was für Ihre Imp
 
 >[!CAUTION]
 >
->* Die Campaign-Client-Konsole und der Campaign-Anwendungs **Server müssen auf derselben Produktversion ausgeführt**. Adobe empfiehlt außerdem dringend die Verwendung **desselben Produkt-Builds**. In diesem Abschnitt erfahren Sie, wie Sie Ihre Campaign-Client- und -Server[Versionen ](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+>* Die Campaign-Client-Konsole und der Campaign-Anwendungs **Server müssen auf derselben Produktversion ausgeführt**. Adobe empfiehlt außerdem dringend die Verwendung **desselben Produkt-Builds**. In diesem Abschnitt erfahren Sie, wie Sie Ihre Campaign-Client- und -Server[Versionen &#x200B;](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 >
 >* Der Zugriff auf den Installationsordner, in dem die Konsole installiert wird, sollte auf den vorgesehenen Benutzer beschränkt sein, sodass Schreibberechtigungen entsprechend eingeschränkt werden.
 
@@ -55,7 +57,7 @@ Als gehosteter Kunde haben Sie zwei Möglichkeiten, Ihre Client-Konsole(en) zu i
 
 1. Adobe kann direkt bereitstellen. Sobald die Konsole aktualisiert wurde, werden Benutzer in einem Popup-Fenster aufgefordert, die neueste Version der Client-Konsole herunterzuladen.
 
-1. Sie können von „Software Distribution“ auf [ Client-Konsole(en) ](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html)
+1. Sie können von „Software Distribution“ auf [&#x200B; Client-Konsole(en) &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html)
 
    **Benutzende benötigen Administratorzugriff, um die Aktualisierung abzuschließen. Wenn die Benutzer keine Administratorrechte haben, muss ein Systemadministrator eine Bereitstellung für alle Client-Konsolen durchführen**
 
