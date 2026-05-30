@@ -15,17 +15,15 @@ feature_v2:
 subfeature_v2:
   - id: c3bf7e1e-1db5-4c72-9293-e2f0b1ab73d0
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
-  - id: e3988c18-3cfa-4f16-b812-ac2d2b1056fa
-  - id: eff19c99-440a-4318-b319-444edc4d8d8f
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 1058
-ht-degree: 93%
+source-wordcount: 1044
+ht-degree: 95%
 
 ---
 
@@ -66,7 +64,7 @@ Zur Integration des neuen Zustellbarkeits-Servers muss Campaign mit Adobe Shared
 
 >[!AVAILABILITY]
 >
-> Die Berechtigung für das Service-Konto (JWT) wird von Adobe nicht mehr unterstützt. Campaign-Integrationen mit Adobe-Lösungen und -Programmen müssen jetzt auf OAuth-Server-zu-Server-Anmeldedaten angewiesen sein. </br>
+> Die Anmeldedaten für Service-Konten (JWT) werden von Adobe demnächst eingestellt. Campaign-Integrationen mit Adobe-Lösungen und -Apps müssen jetzt mit OAuth-Server-to-Server-Anmeldedaten arbeiten. </br>
 >
 > * Wenn Sie eingehende Integrationen in Campaign implementiert haben, müssen Sie Ihr technisches Konto migrieren, wie in [dieser Dokumentation](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#_blank) beschrieben. Bestehende [Anmeldedaten für Service-Konten (JWT)](../../integrations/using/oauth-technical-account.md) sind noch bis zum 27. Januar 2025 gültig. </br>
 >
@@ -88,7 +86,7 @@ Zur Integration des neuen Zustellbarkeits-Servers muss Campaign mit Adobe Shared
 Als On-Premise-Kunde müssen Sie auch überprüfen, ob für Ihre Organisation ein Campaign-**[!UICONTROL Produktprofil]** vorhanden ist. Gehen Sie dazu wie folgt vor:
 
 1. Verbinden Sie sich als Administrator mit [Adobe Admin Console](https://adminconsole.adobe.com/){_blank}.
-1. Rufen Sie den Bereich **Produkte und Services** auf und überprüfen Sie, ob **Adobe Campaign** aufgeführt ist.
+1. Rufen Sie den Abschnitt **Produkte und Services** auf und überprüfen Sie, ob **Adobe Campaign** aufgeführt ist.
 Wenn Sie **Adobe Campaign nicht sehen können** wenden Sie sich an die [Adobe](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank}Kundenunterstützung, damit diese hinzugefügt wird.
 1. Klicken Sie auf **Adobe Campaign** und wählen Sie Ihre Organisation aus.
    **Achtung**: Wenn Sie mehrere Organisationen haben, achten Sie darauf, dass die richtige ausgewählt ist. Weitere Informationen zu Organisationen [auf dieser Seite](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=de#ims-org-id){_blank}.

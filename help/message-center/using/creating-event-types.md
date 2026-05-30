@@ -14,7 +14,8 @@ feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+subfeature_v2: []
+source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
 source-wordcount: 192
 ht-degree: 100%
@@ -53,7 +54,7 @@ Gehen Sie wie folgt vor, um Ereignistypen für die Verarbeitung in Adobe Campaig
 
 >[!NOTE]
 >
->Weitere Informationen zum **Arbeiten mit Auflistungen** finden Sie in der [Dokumentation zu Adobe Campaign v8 (Konsole)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
+>Weitere Informationen zum **Arbeiten mit Aufzählungen** finden Sie in der [Dokumentation zu Adobe Campaign v8 (Konsole)](https://experienceleague.adobe.com/de/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}.
 
 
 

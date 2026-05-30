@@ -16,9 +16,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+subfeature_v2: []
+source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 8103
+source-wordcount: 8061
 ht-degree: 8%
 
 ---
@@ -549,7 +550,7 @@ Weitere Informationen finden Sie in diesem [Abschnitt](../../installation/using/
 
 >[!NOTE]
 >
->Hinweis zu **nameSevers**: nutzt standardmäßig das Netzwerk>Parameter der ersten unter Windows deklarierten Netzwerkschnittstelle>nicht in UNIX definiert. Definiert die Domain Name Servers (DNS)>wird vom MTA verwendet, um den Mail Exchanger für zu deklarieren.>Eine Domain.
+>Hinweis unter **nameSevers**: Verwendet standardmäßig die Netzwerk>Parameter der ersten unter Windows deklarierten Netzwerkschnittstelle, > unter UNIX nicht definiert. Definiert die Domain Name Servers (DNS), > vom MTA verwendet werden, um den E-Mail-Austauscher für eine Domain >.
 >
 >Wenn dieser Wert nicht definiert ist, sucht der MTA diese Informationen in der Host-Netzwerkkonfiguration. Wenn mehrere DNS möglich sind, müssen die verschiedenen DNS-Adressen durch ein Komma getrennt werden (Beispiel: 212.155.207.1,212.155.207.2). Wenn Ihr Versand-Server über mehrere Netzwerkschnittstellen verfügt, ist die vom MTA verwendete DNS-Liste die erste. In diesem Fall wird empfohlen, den Parameter **nameServer** anzugeben, um Unklarheiten zu vermeiden.
 

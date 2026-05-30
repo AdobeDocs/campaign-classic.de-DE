@@ -8,10 +8,16 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: b70ca220-1c81-4b23-b07a-a2cd694877fe
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+feature_v2: []
+subfeature_v2:
+  - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+  - id: df0d6518-6f49-46e2-b46e-3bcc513f553f
+  - id: eb007b6d-6e57-46ab-9485-3f24d6102304
+  - id: b1fd1501-3105-4d6b-b4d4-9af53126df75
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 75%
+source-wordcount: 361
+ht-degree: 69%
 
 ---
 
@@ -19,8 +25,8 @@ ht-degree: 75%
 
 >[!IMPORTANT]
 >
->Bei Campaign-gehosteten und Managed Services-Benutzerinnen und Benutzern ist Adobe Eigentümer ihrer Adobe IMS-Implementierung. Die unten beschriebenen Schritte gelten nur für On-Premise- und Hybrid-Kundinnen und -Kunden.
-> Die Adobe IMS-Implementierung darf nur von technischen Adobe-Admins durchgeführt werden. Wenden Sie sich an den Adobe-Support, um mit der Implementierung zu beginnen.
+>Als Benutzer von Campaign Hosted oder Managed Services gehört Ihre Adobe IMS-Implementierung zu Adobe. Die unten beschriebenen Schritte gelten nur für On-Premise- und Hybrid-Kunden.
+> Die Adobe IMS-Implementierung darf nur von technischen Administratoren bzw. Administratorinnen von Adobe durchgeführt werden. Wenden Sie sich an Ihren Adobe-Support-Mitarbeiter, um den Implementierungsprozess zu starten.
 
 ## Voraussetzungen {#prerequisites}
 

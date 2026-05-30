@@ -14,16 +14,19 @@ product_v2:
 feature_v2:
   - id: d5ef99fa-df0c-4153-bf94-105ad0724167
 subfeature_v2:
-  - id: c3bf7e1e-1db5-4c72-9293-e2f0b1ab73d0
+  - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+  - id: df0d6518-6f49-46e2-b46e-3bcc513f553f
+  - id: eb007b6d-6e57-46ab-9485-3f24d6102304
+  - id: b1fd1501-3105-4d6b-b4d4-9af53126df75
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 418
-ht-degree: 100%
+source-wordcount: 392
+ht-degree: 95%
 
 ---
 
@@ -37,8 +40,8 @@ ht-degree: 100%
 
 [!DNL Triggers] führen nach der Aktion einer Benutzerin oder eines Benutzers in einem kurzen Zeitraum Marketing-Aktionen aus. Die typische Reaktionszeit beträgt weniger als eine Stunde.
 
-Dadurch werden flexiblere Integrationen möglich, da der Konfigurationsaufwand minimal ist und keine Drittanbieter beteiligt sind.
-Unterstützt werden auch große Traffic-Volumen, ohne dass die Performance von Marketing-Aktivitäten leidet. Beispielsweise kann die Integration eine Million Auslöser pro Stunde verarbeiten.
+Dies ermöglicht agilere Integrationen, da die Konfiguration minimal ist und kein Drittanbieter beteiligt ist.
+Außerdem wird ein hohes Traffic-Volumen unterstützt, ohne dass die Leistung der Marketing-Aktivitäten beeinträchtigt wird. Beispielsweise kann die Integration eine Million Trigger pro Stunde verarbeiten.
 
 ![](assets/do-not-localize/book.png) Entdecken Sie, wie Sie [einen Experience Cloud-Trigger erstellen](https://experienceleague.adobe.com/docs/experience-cloud/triggers/create.html?lang=de) und kritische Verbraucherverhaltensweisen identifizieren, definieren und überwachen können.
 

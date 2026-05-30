@@ -13,10 +13,18 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+feature_v2:
+  - id: b631758a-142d-425f-b9aa-f756d85cb979
+  - id: c858a28b-ea19-49b0-8d48-828717fad89c
+subfeature_v2:
+  - id: e95a583b-fcfa-4524-8666-46a29c828119
+  - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+  - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+  - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 3072
-ht-degree: 96%
+source-wordcount: 2904
+ht-degree: 95%
 
 ---
 
@@ -46,14 +54,14 @@ Nachdem Sie jedes Konto einzeln geprüft haben, gibt es zwei mögliche Szenarien
 
   Es gibt einen Konflikt zwischen den Konten. Wie bereits erwähnt, behandelt Adobe Campaign die Konten einzeln, aber der Provider behandelt sie möglicherweise als ein einziges Konto.
 
-   * Sie verwenden unterschiedliche Anmelde-/Kennwortkombinationen für alle Ihre Konten.
-Sie müssen den Provider kontaktieren, um potenzielle Konflikte auf dessen Seite zu diagnostizieren.
+   * Sie verwenden verschiedene Anmelde-/Passwortkombinationen zwischen all Ihren Konten.
+Sie müssen sich an den Provider wenden, um potenzielle Konflikte auf seiner Seite zu diagnostizieren.
 
-   * Einige der externen Konten verwenden dieselbe Anmelde-/Kennwortkombination.
-Der Anbieter kann nicht feststellen, von welchem externen Konto die `BIND PDU` stammt, also behandelt er alle Verbindungen von mehreren Konten als eine einzige. Möglicherweise wurden MO und SR wahllos über die beiden Konten geleitet, was zu Problemen führt.
-Wenn der Provider mehrere Kurzwahlnummern für dieselbe Anmelde-/Kennwortkombination unterstützt, müssen Sie ihn fragen, wo diese Kurzwahlnummer in die `BIND PDU` eingefügt werden soll. Beachten Sie, dass diese Information in die `BIND PDU` und nicht in `SUBMIT_SM` eingefügt werden muss, da nur in der `BIND PDU` eine korrekte Weiterleitung von MOs möglich ist.
-Siehe den Abschnitt [Informationen in den verschiedenen PDU-Arten](sms-protocol.md#information-pdu) weiter oben, um zu erfahren, welches Feld in `BIND PDU` verfügbar ist. Normalerweise fügen Sie die Kurzwahlnummer in `address_range` hinzu. Dies erfordert jedoch besondere Unterstützung durch den Provider. Wenden Sie sich an diesen, um zu erfahren, wie er mehrere Kurzwahlnummern unabhängig voneinander weiterleiten wird.
-Adobe Campaign unterstützt die Verarbeitung mehrerer Kurzwahlnummern in demselben externen Konto.
+   * Einige der externen Konten verwenden dieselbe Kombination aus Anmelde-/Kennwort.
+Der Anbieter kann nicht erkennen, von welchem externen Konto das `BIND PDU` stammt, daher behandeln er alle Verbindungen aus mehreren Konten als eine einzige. Möglicherweise haben sie MO und SR nach dem Zufallsprinzip über die beiden Konten weitergeleitet, was Probleme verursacht.
+Wenn der Anbieter mehrere Kurzwahlnummern für dieselbe Anmelde-/Kennwortkombination unterstützt, müssen Sie ihn fragen, wo er diese Kurzwahlnummer in die `BIND PDU` einfügen soll. Beachten Sie, dass diese Informationen in der `BIND PDU` und nicht in `SUBMIT_SM` platziert werden müssen, da die `BIND PDU` der einzige Ort ist, der das korrekte Routing von MOs ermöglicht.
+Informationen dazu, welches Feld im `BIND PDU` verfügbar ist[&#x200B; finden Sie im obigen Abschnitt &#x200B;](sms-protocol.md#information-pdu)Informationen zu jeder Art von PDUs“. Normalerweise fügen Sie den Kurzwahlcode in `address_range` hinzu, dies erfordert jedoch spezielle Unterstützung vom Anbieter. Kontaktieren Sie sie, um zu erfahren, wie sie mehrere Kurzwahlnummern unabhängig voneinander weiterleiten möchten.
+Adobe Campaign unterstützt die Verarbeitung mehrerer Kurzwahlnummern im selben externen Konto.
 
 ## Problem mit dem externen Konto im Allgemeinen {#external-account-issues}
 

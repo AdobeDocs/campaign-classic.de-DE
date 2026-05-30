@@ -19,7 +19,9 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+subfeature_v2:
+  - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
 source-wordcount: 2269
 ht-degree: 97%
@@ -64,7 +66,7 @@ Die globalen Auswirkungen auf die Datenbank und Infrastruktur sind nachstehend a
 
 * **Was ist der Plan zur Behebung von Problemen nach der Migration?**
 
-  Vor der Migration der Produktionssysteme sind umfangreiche Tests geplant. Bei Problemen bleibt die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/de?support-solution=Campaign&lang=de#support) der Hauptansprechpartner. Adobe hat ein Experten-Team zusammengestellt, das bei Bedarf zusätzliche Unterstützung bietet.
+  Vor der Migration der Produktionssysteme sind umfangreiche Tests geplant. Bei Problemen bleibt die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/de?support-solution=Campaign#support) der Hauptansprechpartner. Adobe hat ein Experten-Team zusammengestellt, das bei Bedarf zusätzliche Unterstützung bietet.
 
 ## Auswirkungen auf die Zustellbarkeit
 

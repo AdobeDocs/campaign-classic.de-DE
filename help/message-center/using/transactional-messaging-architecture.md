@@ -9,7 +9,9 @@ product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+feature_v2: []
+subfeature_v2: []
+source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
 source-wordcount: 1226
 ht-degree: 85%
@@ -30,7 +32,7 @@ Transaktionsnachrichten basieren auf einer Architektur, die sich aus mehreren In
 
 | Kontrollinstanz | Ausführungsinstanz |
 |--- |--- |
-| Adobe Campaign-Benutzer melden sich bei der Kontrollinstanz an, um folgende Aktionen auszuführen: <ul><li>Erstellen der Transaktionsnachrichtenvorlagen</li><li>Erstellen der Nachrichtenvorschau mithilfe einer Liste von Testadressen</li><li>Berichtanzeige</li><li>Überwachen der Ausführungsinstanzen</li></ul> | Ausführungsinstanzen dienen zur Ausführung folgender Aktionen: <ul><li>Empfangen von Ereignissen</li><li>Verknüpfen der Ereignisse mit Transaktionsnachrichtenvorlagen</li><li>Versenden einer personalisierten Nachricht an die einzelnen Empfänger</li></ul> |
+| Adobe Campaign-Benutzer melden sich bei der Kontrollinstanz an, um folgende Aktionen auszuführen: <ul><li>Erstellen der Transaktionsnachrichtenvorlagen</li><li>Erstellen der Nachrichtenvorschau mithilfe einer Liste von Testadressen</li><li>Anzeigen von Berichten</li><li>Überwachen der Ausführungsinstanzen</li></ul> | Ausführungsinstanzen dienen zur Ausführung folgender Aktionen: <ul><li>Empfangen von Ereignissen</li><li>Verknüpfen der Ereignisse mit Transaktionsnachrichtenvorlagen</li><li>Versenden einer personalisierten Nachricht an die einzelnen Empfänger</li></ul> |
 
 ## Installieren von Instanzen {#installing-instances}
 

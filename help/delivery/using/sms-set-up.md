@@ -18,10 +18,18 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+feature_v2:
+  - id: b631758a-142d-425f-b9aa-f756d85cb979
+  - id: c858a28b-ea19-49b0-8d48-828717fad89c
+subfeature_v2:
+  - id: e95a583b-fcfa-4524-8666-46a29c828119
+  - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+  - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+  - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 1842
-ht-degree: 89%
+source-wordcount: 1801
+ht-degree: 86%
 
 ---
 
@@ -46,7 +54,7 @@ Folgende Voraussetzungen müssen gegeben sein, um Sendungen an Mobiltelefone ric
 >Die Verwendung desselben Kontos und Kennworts für mehrere externe SMS-Konten kann zu Konflikten und Überschneidungen zwischen den Konten führen. Siehe die [Seite zur SMS-Fehlerbehebung](troubleshooting-sms.md#external-account-conflict).
 
 Um eine SMS an ein Mobiltelefon zu senden, müssen Sie zunächst Ihr externes SMPP-Konto erstellen.
-Weiterführende Informationen zum SMS-Protokoll und dessen Einstellungen finden Sie auf dieser [Seite](sms-protocol.md).
+Weiterführende Informationen zum SMS-Protokoll und zu Einstellungen finden Sie auf [Seite](sms-protocol.md).
 
 Gehen Sie dazu wie folgt vor:
 
@@ -353,8 +361,8 @@ Die Empfänger sind in der Tabelle **[!UICONTROL Adressen unzustellbarer Sendung
 * Lassen Sie die Spalte **[!UICONTROL Schlüsselwort]** leer, wenn unabhängig vom Schlüsselwort dieselbe Nachricht gesendet werden soll.
 * Um eine Aktion auszuführen, ohne eine Antwort zu senden, lassen Sie die Spalte **[!UICONTROL Antwort]** leer. Auf diese Weise können Sie beispielsweise einen Benutzer, der mit einer anderen Nachricht als „STOP“ antwortet, aus der Quarantäne entfernen.
 
-Wenn Sie mehrere externe Konten mit dem Connector „Erweitertes allgemeines SMPP“ mit demselben Provider-Konto haben, kann das folgende Problem auftreten: Wenn Sie eine Antwort an eine Kurzwahlnummer senden, kann sie auf einer Ihrer externen Kontoverbindungen empfangen werden. Folglich ist die automatische Antwort, die gesendet wird, möglicherweise nicht die erwartete Nachricht.
-Um dies zu vermeiden, wenden Sie je nach verwendetem Provider eine der folgenden Lösungen an:
+Wenn Sie über mehrere externe Konten verfügen, die den erweiterten allgemeinen SMPP-Connector mit demselben Anbieterkonto verwenden, kann das folgende Problem auftreten: Wenn Sie eine Antwort auf eine Kurzwahlnummer senden, kann diese über jede Ihrer externen Kontoverbindungen empfangen werden. Daher konnte die automatisch gesendete Antwort nicht die erwartete Nachricht sein.
+Um dies zu vermeiden, wenden Sie je nach verwendetem Anbieter eine der folgenden Lösungen an:
 
 * Erstellen Sie für jedes externe Konto ein Provider-Konto.
 * Verwenden Sie das Feld **[!UICONTROL Systemtyp]** im Tab **[!UICONTROL Mobiltelefon]** > **[!UICONTROL Verbindungsparameter]**, um jede Kurzwahlnummer zu unterscheiden. Bitten Sie Ihren Provider um einen anderen Wert für jedes Konto.

@@ -12,7 +12,9 @@ feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+subfeature_v2:
+  - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
 source-wordcount: 549
 ht-degree: 93%
@@ -63,7 +65,7 @@ Zuerst werden Ihre Nicht-Produktionsinstanzen von Adobe aktualisiert, danach wer
 
 * **Welche Validierungen müssen von den Kunden ausgeführt werden?**
 
-  Für dieses Sicherheits-Update sind keine spezifischen Tests erforderlich. Falls ein Problem festgestellt wird, wenden Sie sich bitte an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/de?support-solution=Campaign&lang=de#support).
+  Für dieses Sicherheits-Update sind keine spezifischen Tests erforderlich. Falls ein Problem festgestellt wird, wenden Sie sich bitte an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/de?support-solution=Campaign#support).
 
 
 * **Kann ich eine Änderung des geplanten Zeitfensters für das Sicherheits-Update anfordern?**
