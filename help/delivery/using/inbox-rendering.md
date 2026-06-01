@@ -22,7 +22,7 @@ subfeature_v2:
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: 709336f05e114ae380d71381bef4b2e7a776b402
 workflow-type: tm+mt
 source-wordcount: 952
 ht-degree: 72%
@@ -141,7 +141,7 @@ Dieser Bericht zeigt die Inbox Renderings so an, wie sie dem Empfänger angezeig
 
 Im oberen Bereich wird in einer grafischen, farbcodierten Darstellung die Aufteilung der Anzahl der empfangenen, unerwünschten (Spam) und nicht empfangenen Nachrichten angezeigt und die Anzahl der Nachrichten, deren Empfang aussteht.
 
-![](assets/s_tn_inbox_rendering_summary.png){width="40%" align="left"}
+![](assets/s_tn_inbox_rendering_summary.png){width="40%"}
 
 Bewegen Sie den Mauszeiger über das Diagramm, um Informationen zu jeder Farbe aufzurufen. Klicken Sie auf ein Element in der Liste, um die entsprechende Kategorie im Diagramm auszublenden oder anzuzeigen.
 
