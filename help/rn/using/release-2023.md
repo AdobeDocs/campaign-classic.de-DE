@@ -26,9 +26,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 2384
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -61,7 +61,7 @@ Ab dieser Version funktionieren Tracking-Links für bereits gesendete E-Mails w�
 * Fehlerkorrektur – Im Workflow „Datenbankbereinigung“ tritt jetzt kein Fehler mehr auf, wenn ein Versand vor seinen Testsendungen gelöscht wird. (NEO-48114)
 * Fehlerkorrektur – Beim Herstellen einer Verbindung zur Client Console tritt jetzt auch bei den neuesten Updates der TLS-Überprüfung kein Verbindungsfehler mehr auf. (NEO-50488)
 * Es wurde ein Problem behoben, bei dem bei der HTTP-Proxy-Authentifizierung nach Campaign-Postupgrade auf 7.3.1 HTTP-Anfragen in Campaign-Workflows mit `error 407 – proxy auth required is returned` fehlschlugen. (NEO-49624)
-* Fehlerkorrektur - Bei der GPG-Entschlüsselung in **Script**-Workflow-Aktivitäten tritt jetzt kein Fehler mehr auf. Die zugehörige Fehlermeldung war: `gpg: decryption failed: No secret key`. (NEO-50257)
+* Es wurde ein zeitweiliger Fehler bei der GPG-Entschlüsselung in Workflow-Aktivitäten vom Typ **Skript** behoben. Mit diesem Fehler war folgende Meldung verbunden: `gpg: decryption failed: No secret key`. (NEO-50257)
   <!--* Workflow temporary tables now have a primary index in Teradata with a Federated Data Access (FDA) connection. (NEO-62575)-->
 
 

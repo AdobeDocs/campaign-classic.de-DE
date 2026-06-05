@@ -25,9 +25,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 2663
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -176,7 +176,7 @@ _5. Juni 2021_
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>Sie können jetzt Ihre Adobe Campaign Classic-Instanz mit Ihrer externen Google BigQuery-Datenbank verbinden. Diese Verbindung wird über ein neues externes Konto verwaltet.
+<td> <p>Jetzt können Sie Ihre Adobe Campaign Classic-Instanz mit Ihrer externen Google BigQuery-Datenbank verbinden. Diese Verbindung wird über ein neues externes Konto verwaltet.
 </p>
 <p>Weitere Informationen finden Sie im <a href="../../installation/using/configure-fda-google-big-query.md">entsprechenden Handbuch</a>.</p>
 </td> 
@@ -206,7 +206,7 @@ Weiterführende Informationen finden Sie in der [Campaign-Kompatibilitätsmatrix
 * Debian 8 wird jetzt nicht mehr unterstützt.
 * Nach der Einstellung von Oracle CRM in Version 20.3 wurde das zugehörige externe Konto aus der Benutzeroberfläche entfernt.
 
-Weitere Informationen finden Sie auf der Seite [Eingestellte und entfernte Funktionen &#x200B;](../../rn/using/deprecated-features.md).
+Weitere Informationen finden Sie auf der Seite [Eingestellte und entfernte Funktionen ](../../rn/using/deprecated-features.md).
 
 **Verbesserungen**
 
@@ -276,7 +276,7 @@ Die folgenden Systeme werden jetzt von Campaign unterstützt:
 
 Der Bericht zum **technischen Zustellbarkeits-Monitoring** wird jetzt nicht mehr unterstützt.
 
-Weitere Informationen finden Sie auf der Seite [Eingestellte und entfernte Funktionen &#x200B;](../../rn/using/deprecated-features.md).
+Weitere Informationen finden Sie auf der Seite [Eingestellte und entfernte Funktionen ](../../rn/using/deprecated-features.md).
 
 **Verbesserungen**
 
