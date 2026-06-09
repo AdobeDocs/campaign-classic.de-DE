@@ -10,9 +10,9 @@ feature_v2: []
 subfeature_v2:
   - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 899
+source-git-commit: c372a3d67ec413fa8cf9fdbb4530762a8f2f5177
+workflow-type: tm+mt
+source-wordcount: 895
 ht-degree: 100%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 ### Build 9391 {#build-9391}
 
-[!BADGE Eingeschränkte Verfügbarkeit]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=de#rn-statuses" tooltip="Eingeschränkte Verfügbarkeit"}
+[!BADGE Veraltet]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=de#rn-statuses" tooltip="Veraltet"}
 
 _12. Mai 2025_
 
@@ -34,7 +34,7 @@ Dieser Build umfasst die folgenden Fehlerkorrekturen:
 
 ### Build 9390 {#build-9390}
 
-[!BADGE Allgemeine Verfügbarkeit]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=de#rn-statuses" tooltip="Allgemeine Verfügbarkeit"}
+[!BADGE Veraltet]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=de#rn-statuses" tooltip="Veraltet"}
 
 _2. April 2025_
 

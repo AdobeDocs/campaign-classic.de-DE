@@ -21,10 +21,10 @@ feature_v2: []
 subfeature_v2:
   - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 378
-ht-degree: 100%
+source-git-commit: a35dcdddded4483beefc126ee3d603bab36bf9c9
+workflow-type: tm+mt
+source-wordcount: 417
+ht-degree: 93%
 
 ---
 
@@ -32,9 +32,19 @@ ht-degree: 100%
 
 Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der **aktuellen Version Campaign Classic v7** aufgelistet. Jeder neue Build weist einen Status auf, der durch eine bestimmte Farbe dargestellt wird. Sie erfahren mehr über den Build-Status von Campaign Classic v7 auf [dieser Seite](rn-overview.md).
 
-## Version 7.4.3 – Build 9394 {#release-7-4-3}
+## Version 7.4.3 {#release-7-4-3}
+
+### Build 9396 {#build-9396}
 
 [!BADGE Allgemeine Verfügbarkeit]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=de#rn-statuses" tooltip="Allgemeine Verfügbarkeit"}
+
+_9. Juni 2026_
+
+Dieser Build enthält Sicherheitskorrekturen. Dies ist der empfohlene allgemeine Verfügbarkeits-Build und ersetzt die vorherigen Campaign Classic v7-Builds.
+
+### Build 9394 {#build-9394}
+
+[!BADGE Veraltet]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=de#rn-statuses" tooltip="Veraltet"}
 
 >[!CAUTION]
 >
@@ -42,11 +52,11 @@ Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der
 
 _31. März 2026_
 
-### Verbesserungen bezüglich der Sicherheit {#security-7-4-3}
+#### Verbesserungen bezüglich der Sicherheit {#security-7-4-3}
 
 * Um optimale Sicherheit, Stabilität und Compliance zu gewährleisten, wurde Debian auf Version 13 und PostgreSQL auf Version 17 aktualisiert. Weitere Informationen finden Sie in der [Kompatibilitätsmatrix](compatibility-matrix.md).
 
-### Fehlerbehebungen {#fixes-7-4-3}
+#### Fehlerbehebungen {#fixes-7-4-3}
 
 >[!NOTE]
 >

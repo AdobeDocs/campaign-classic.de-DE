@@ -18,10 +18,10 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
-workflow-type: ht
-source-wordcount: 326
-ht-degree: 100%
+source-git-commit: a35dcdddded4483beefc126ee3d603bab36bf9c9
+workflow-type: tm+mt
+source-wordcount: 330
+ht-degree: 93%
 
 ---
 
@@ -36,9 +36,9 @@ Hier erhalten Sie einen Einblick in die neuesten Produktverbesserungen bei Adobe
 >[!BEGINTABS]
 
 
->[!TAB Die Version April 2025 ist live.]
+>[!TAB Version Juni 2026 ist live!]
 
-Entdecken Sie Updates, Verbesserungen und Fehlerbehebungen in der Version April 2025: Campaign Classic v7.4.2.
+Der Campaign Classic v7.4.3 - Build Juni 2026 enthält Sicherheitsaktualisierungen zusätzlich zur vorherigen Version.
 
 [![Bild](assets/do-not-localize/learn-more-button.svg)](rn/using/latest-release.md)
 
