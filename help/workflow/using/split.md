@@ -6,16 +6,11 @@ feature: Workflows, Targeting Activity
 hide: true
 exl-id: 4204350a-c2d2-4033-9bdf-87b49d8211b9
 TQID: https://experienceleague.adobe.com/mddmI88wgsUP0rd5vhnJYn83gXqwTLPkQRPmvuOX3GY
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
 feature_v2: []
-subfeature_v2:
-  - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
-  - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
-  - id: d1110311-2ca4-442b-be37-088a6db845ee
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+subfeature_v2: id: ee25c34b-ea50-427b-9369-ba0a160f7d70id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22fid: d1110311-2ca4-442b-be37-088a6db845ee
+source-git-commit: c35995a47788db080636c66827a4bd6dc98806cf
 workflow-type: tm+mt
 source-wordcount: 2172
 ht-degree: 76%
@@ -47,7 +42,7 @@ Gehen Sie wie folgt vor:
 
    Wählen Sie nun den Filtertyp aus.
 
-   Die Vorgehensweise ist mit der der Abfrageaktivität identisch.**&#x200B;**
+   Die Vorgehensweise ist mit der der Abfrageaktivität identisch.****
 
    >[!NOTE]
    >
@@ -59,7 +54,7 @@ Gehen Sie wie folgt vor:
 
    ![](assets/s_user_segmentation_partage4.png)
 
-1. **&#x200B;**&#x200B;Durch Klick auf die Schaltfläche **[!UICONTROL Hinzufügen]** können Sie weitere Teilmengen definieren.
+1. **** Durch Klick auf die Schaltfläche **[!UICONTROL Hinzufügen]** können Sie weitere Teilmengen definieren.
 
    ![](assets/s_user_segmentation_partage_add.png)
 
@@ -248,3 +243,4 @@ Jedes eingehende Ereignis muss eine durch diese Parameter definierte Zielgruppe 
 Anhand der drei Werte lässt sich die durch den Ausschluss ermittelte Zielgruppe identifizieren. **[!UICONTROL tableName]** ist der Name der Tabelle, die die Zielgruppen-IDs enthält, **[!UICONTROL schema]** ist das Schema der Population, (i. d. R. nms:recipient) und **[!UICONTROL recCount]** ist die Anzahl der Elemente in der Tabelle.
 
 Die Transition des Komplements weist die gleichen Parameter auf.
+
